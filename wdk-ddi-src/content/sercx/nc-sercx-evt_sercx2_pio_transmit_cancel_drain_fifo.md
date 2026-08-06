@@ -4,7 +4,6 @@ title: EVT_SERCX2_PIO_TRANSMIT_CANCEL_DRAIN_FIFO (sercx.h)
 description: The EvtSerCx2PioTransmitCancelDrainFifo event callback function is called by version 2 of the serial framework extension (SerCx2) to cancel a previous request to drain the transmit FIFO in the serial controller hardware.
 old-location: serports\evtsercx2piotransmitcanceldrainfifo.htm
 tech.root: serports
-ms.assetid: DAAE9C91-F83F-4D14-8851-7B5DEEA340B3
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX2_PIO_TRANSMIT_CANCEL_DRAIN_FIFO callback function"]
 ms.keywords: 2/EvtSerCx2PioTransmitCancelDrainFifo, EVT_SERCX2_PIO_TRANSMIT_CANCEL_DRAIN_FIFO, EVT_SERCX2_PIO_TRANSMIT_CANCEL_DRAIN_FIFO callback, EvtSerCx2PioTransmitCancelDrainFifo, EvtSerCx2PioTransmitCancelDrainFifo callback function [Serial Ports], serports.evtsercx2piotransmitcanceldrainfifo
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
- - EvtSerCx2PioTransmitCancelDrainFifo
+ - EVT_SERCX2_PIO_TRANSMIT_CANCEL_DRAIN_FIFO
 ---
 
 # EVT_SERCX2_PIO_TRANSMIT_CANCEL_DRAIN_FIFO callback function
@@ -50,9 +49,9 @@ The <i>EvtSerCx2PioTransmitCancelDrainFifo</i> event callback function is called
 
 ## -parameters
 
-### -param PioTransmit 
+### -param PioTransmit [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitcreate">SerCx2PioTransmitCreate</a> method to create this object.
 
 ## -returns
@@ -124,3 +123,4 @@ The <b>EVT_SERCX2_PIO_TRANSMIT_CANCEL_DRAIN_FIFO</b> function type is defined in
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitdrainfifocomplete">SerCx2PioTransmitDrainFifoComplete</a>
+

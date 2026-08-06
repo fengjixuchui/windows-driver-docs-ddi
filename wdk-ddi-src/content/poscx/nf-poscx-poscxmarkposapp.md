@@ -2,10 +2,8 @@
 UID: NF:poscx.PosCxMarkPosApp
 title: PosCxMarkPosApp function (poscx.h)
 description: PosCxMarkPosApp marks the open instance as associated or not associated with a point-of-service application.
-old-location: pos\poscxmarkposapp.htm
 tech.root: pos
-ms.assetid: 6BFFD014-E9DC-495C-9810-0D23BD93C41A
-ms.date: 02/23/2018
+ms.date: 03/07/2023
 keywords: ["PosCxMarkPosApp function"]
 ms.keywords: PosCxMarkPosApp, PosCxMarkPosApp function, pos.poscxmarkposapp, poscx/PosCxMarkPosApp
 req.header: poscx.h
@@ -27,7 +25,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: 
-req.product: Windows 10 or later.
 f1_keywords:
  - PosCxMarkPosApp
  - poscx/PosCxMarkPosApp
@@ -42,9 +39,6 @@ api_name:
  - PosCxMarkPosApp
 ---
 
-# PosCxMarkPosApp function
-
-
 ## -description
 
 PosCxMarkPosApp marks the open instance as associated or not associated with a point-of-service application.
@@ -53,32 +47,23 @@ This optional method provides value if the driver implements multiple device int
 
 ## -parameters
 
-### -param device 
+### -param device [in]
 
-[in]
 A handle to a framework device object that represents the device.
 
-### -param fileObject 
+### -param fileObject [in]
 
-[in]
-A handle to a framework file object that identifies the caller, usually acquired with <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestgetfileobject">WdfRequestGetFileObject</a>.
+A handle to a framework file object that identifies the caller, usually acquired with [WdfRequestGetFileObject](../wdfrequest/nf-wdfrequest-wdfrequestgetfileobject.md).
 
-### -param isPosApp 
+### -param isPosApp [in]
 
-[in]
 Specifies if the open instance is associated with a point-of-service application. Set to TRUE if it is associated with a point-of-service application. Otherwise, set to FALSE.
 
 ## -returns
 
 Possible return values are:
 
-<table>
-<tr>
-<td><b>STATUS_SUCCESS</b></td>
-<td>Completed successfully.</td>
-</tr>
-<tr>
-<td><b>INVALID_PARAMETER</b></td>
-<td>The specified <i>fileObject</i> is invalid.</td>
-</tr>
-</table>
+| Value | Description |
+|---|---|
+| **STATUS_SUCCESS** | Completed successfully. |
+| **INVALID_PARAMETER** | The specified *fileObject* is invalid. |

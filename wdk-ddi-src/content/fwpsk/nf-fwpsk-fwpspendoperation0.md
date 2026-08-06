@@ -4,7 +4,6 @@ title: FwpsPendOperation0 function (fwpsk.h)
 description: The FwpsPendOperation0 function is called by a callout to suspend packet processing pending completion of another operation.Note  FwpsPendOperation0 is a specific version of FwpsPendOperation.
 old-location: netvista\fwpspendoperation0.htm
 tech.root: netvista
-ms.assetid: 03423785-83c5-4908-8c06-3be1b226c29e
 ms.date: 05/02/2018
 keywords: ["FwpsPendOperation0 function"]
 ms.keywords: FwpsPendOperation0, FwpsPendOperation0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsPendOperation0, netvista.fwpspendoperation0, wfp_ref_2_funct_3_fwps_J-Q_4e19462a-e31a-4d06-af83-68b11a00dd7a.xml
@@ -54,18 +53,18 @@ The
 
 ## -parameters
 
-### -param completionHandle 
+### -param completionHandle [in]
 
-[in]
+
 A completion handle that is required to pend the current filtering operation. This parameter is
      obtained from the 
      <b>completionHandle</b> member of the 
      <a href="/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_incoming_metadata_values0_">FWPS_INCOMING_METADATA_VALUES0</a> structure passed into the callout driver's 
      <a href="/windows-hardware/drivers/ddi/_netvista/">classifyFn</a> function.
 
-### -param completionContext 
+### -param completionContext [out]
 
-[out]
+
 The handle to the completion context of this pend operation. When the callout is ready to resume
      packet processing, it calls the 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscompleteoperation0">FwpsCompleteOperation0</a> function

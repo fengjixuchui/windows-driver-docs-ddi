@@ -4,7 +4,6 @@ title: WdfRequestGetRequestorMode function (wdfrequest.h)
 description: The WdfRequestGetRequestorMode method returns the processor access mode of the originator of a specified I/O request.
 old-location: wdf\wdfrequestgetrequestormode.htm
 tech.root: wdf
-ms.assetid: 63fc77c8-756c-4872-b608-539d8419154b
 ms.date: 02/26/2018
 keywords: ["WdfRequestGetRequestorMode function"]
 ms.keywords: DFRequestObjectRef_3c672bff-3d8a-402a-8a0c-19eb4d39e37e.xml, WdfRequestGetRequestorMode, WdfRequestGetRequestorMode method, kmdf.wdfrequestgetrequestormode, wdf.wdfrequestgetrequestormode, wdfrequest/WdfRequestGetRequestorMode
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,9 +54,9 @@ The <b>WdfRequestGetRequestorMode</b> method returns the processor access mode o
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
 ## -returns

@@ -1,10 +1,10 @@
 ---
 UID: NS:ntddk._WHEA_MSR_DUMP_SECTION
 title: WHEA_MSR_DUMP_SECTION
+tech.root: whea
 ms.date: 04/28/2020
-ms.topic: language-reference
 targetos: Windows
-description: 
+description: "Learn more about: WHEA_MSR_DUMP_SECTION"
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -28,6 +28,7 @@ api_location:
  - ntddk.h
 api_name:
  - _WHEA_MSR_DUMP_SECTION
+ - PWHEA_MSR_DUMP_SECTION
  - WHEA_MSR_DUMP_SECTION
 f1_keywords:
  - _WHEA_MSR_DUMP_SECTION

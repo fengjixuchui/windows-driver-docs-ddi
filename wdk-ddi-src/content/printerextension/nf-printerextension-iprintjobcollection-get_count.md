@@ -2,17 +2,15 @@
 UID: NF:printerextension.IPrintJobCollection.get_Count
 title: IPrintJobCollection::get_Count (printerextension.h)
 description: Gets the number of jobs in the print queue.
-old-location: print\iprintjobcollection_count.htm
 tech.root: print
-ms.assetid: B44C8023-CB5F-4381-8A75-CA086E989BAC
-ms.date: 04/20/2018
+ms.date: 07/29/2022
 keywords: ["IPrintJobCollection::get_Count"]
 ms.keywords: Count property [Print Devices], Count property [Print Devices],IPrintJobCollection interface, IPrintJobCollection interface [Print Devices],Count property, IPrintJobCollection.Count, IPrintJobCollection.get_Count, IPrintJobCollection::Count, IPrintJobCollection::get_Count, get_Count, print.iprintjobcollection_count, printerextension/IPrintJobCollection::Count, printerextension/IPrintJobCollection::get_Count
 req.header: printerextension.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Windows 8.1
-req.target-min-winversvr: Windows Server 2012 R2
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 
@@ -38,12 +36,8 @@ api_type:
 api_location:
  - Printerextension.h
 api_name:
- - IPrintJobCollection.Count
- - IPrintJobCollection.get_Count
+ - IPrintJobCollection::get_Count
 ---
-
-# IPrintJobCollection::get_Count
-
 
 ## -description
 
@@ -53,6 +47,14 @@ This property is read-only.
 
 ## -parameters
 
+### -param pulCount
+
+Defines the **ULONG** parameter *pulCount*.
+
+## -returns
+
+Returns an **HRESULT** value. If the property call was not successful, it returns the appropriate **HRESULT** error code.
+
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjobcollection">IPrintJobCollection</a>
+[IPrintJobCollection](./nn-printerextension-iprintjobcollection.md)

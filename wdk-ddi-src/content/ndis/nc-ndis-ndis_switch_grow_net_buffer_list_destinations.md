@@ -4,7 +4,6 @@ title: NDIS_SWITCH_GROW_NET_BUFFER_LIST_DESTINATIONS (ndis.h)
 description: The GrowNetBufferListDestinations function adds space for additional Hyper-V extensible switch destination ports to a packet that is specified by a NET_BUFFER_LIST structure.
 old-location: netvista\grownetbufferlistdestinations.htm
 tech.root: netvista
-ms.assetid: 9A79F41F-566F-4844-BF1A-E8889E6FDCE8
 ms.date: 05/02/2018
 keywords: ["NDIS_SWITCH_GROW_NET_BUFFER_LIST_DESTINATIONS callback function"]
 ms.keywords: GrowNetBufferListDestinations, GrowNetBufferListDestinations callback function [Network Drivers Starting with Windows Vista], NDIS_SWITCH_GROW_NET_BUFFER_LIST_DESTINATIONS, NDIS_SWITCH_GROW_NET_BUFFER_LIST_DESTINATIONS callback, ndis/GrowNetBufferListDestinations, netvista.grownetbufferlistdestinations
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - GrowNetBufferListDestinations
+ - NDIS_SWITCH_GROW_NET_BUFFER_LIST_DESTINATIONS
 ---
 
 # NDIS_SWITCH_GROW_NET_BUFFER_LIST_DESTINATIONS callback function
@@ -46,30 +45,30 @@ api_name:
 
 ## -description
 
-The <i>GrowNetBufferListDestinations</i> function adds space for additional Hyper-V extensible switch destination ports to a packet that is specified by a <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure.
+The <i>GrowNetBufferListDestinations</i> function adds space for additional Hyper-V extensible switch destination ports to a packet that is specified by a <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure.
 
 ## -parameters
 
-### -param NdisSwitchContext 
+### -param NdisSwitchContext [in]
 
-[in]
+
 An NDIS_SWITCH_CONTEXT value that contains the handle of the extensible switch module to which the Hyper-V extensible switch extension is attached. When the extension calls <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfgetoptionalswitchhandlers">NdisFGetOptionalSwitchHandlers</a>,  this handle is returned through the <i>NdisSwitchContext</i> parameter.
 
 ### -param NetBufferList
 
-A pointer to a linked list of <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures.  
+A pointer to a linked list of <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures.  
 
 <div class="alert"><b>Note</b>  This structure must contain  an extensible switch forwarding context. If the extension created or cloned the  packet, it must have previously allocated this structure by calling the <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_allocate_net_buffer_list_forwarding_context">AllocateNetBufferListForwardingContext</a> function. For more information about the extensible switch forwarding context, see <a href="/windows-hardware/drivers/network/hyper-v-extensible-switch-forwarding-context">Hyper-V Extensible Switch Forwarding Context</a>.</div>
 <div> </div>
 
-### -param NumberOfNewDestinations 
+### -param NumberOfNewDestinations [in]
 
-[in]
+
 A UINT32 value that specifies the number of new destination ports to be  added for the packet.
 
-### -param Destinations 
+### -param Destinations [out]
 
-[out]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_forwarding_destination_array">NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</a> structure. This structure specifies the extensible switch destination ports of the packet.
 
 ## -returns
@@ -82,7 +81,7 @@ The extensible switch extension calls the <i>GrowNetBufferListDestinations</i> f
 
 For more information on how to add destination ports to a packet, see <a href="/windows-hardware/drivers/network/adding-extensible-switch-destination-port-data-to-a-packet">Adding Extensible Switch Destination Port Data to a Packet</a>.
 
-<div class="alert"><b>Note</b>  If the <i>NetBufferList</i> parameter contains a pointer to a linked-list of multiple <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures, space for additional destination ports is only added to the first  <b>NET_BUFFER_LIST</b> structure in the list.</div>
+<div class="alert"><b>Note</b>  If the <i>NetBufferList</i> parameter contains a pointer to a linked-list of multiple <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures, space for additional destination ports is only added to the first  <b>NET_BUFFER_LIST</b> structure in the list.</div>
 <div> </div>
 
 ## -see-also
@@ -103,11 +102,11 @@ For more information on how to add destination ports to a packet, see <a href="/
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a>
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 
@@ -116,3 +115,4 @@ For more information on how to add destination ports to a packet, see <a href="/
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_update_net_buffer_list_destinations">UpdateNetBufferListDestinations</a>
+

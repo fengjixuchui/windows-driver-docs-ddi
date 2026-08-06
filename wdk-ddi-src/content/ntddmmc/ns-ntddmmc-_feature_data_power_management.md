@@ -4,7 +4,6 @@ title: _FEATURE_DATA_POWER_MANAGEMENT (ntddmmc.h)
 description: The FEATURE_DATA_POWER_MANAGEMENT structure holds information about the Power Management feature.
 old-location: storage\feature_data_power_management.htm
 tech.root: storage
-ms.assetid: 0b3f23d1-1081-4fb9-86af-6dbf7bfeb3b7
 ms.date: 03/29/2018
 keywords: ["FEATURE_DATA_POWER_MANAGEMENT structure"]
 ms.keywords: "*PFEATURE_DATA_POWER_MANAGEMENT, FEATURE_DATA_POWER_MANAGEMENT, FEATURE_DATA_POWER_MANAGEMENT structure [Storage Devices], PFEATURE_DATA_POWER_MANAGEMENT, PFEATURE_DATA_POWER_MANAGEMENT structure pointer [Storage Devices], _FEATURE_DATA_POWER_MANAGEMENT, ntddmmc/FEATURE_DATA_POWER_MANAGEMENT, ntddmmc/PFEATURE_DATA_POWER_MANAGEMENT, storage.feature_data_power_management, structs-CD-ROM_b2dfa21c-3dd3-40fd-9605-05c36c4b9fc8.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddmmc.h
 api_name:
+ - _FEATURE_DATA_POWER_MANAGEMENT
+ - PFEATURE_DATA_POWER_MANAGEMENT
  - FEATURE_DATA_POWER_MANAGEMENT
 ---
 
@@ -71,3 +72,4 @@ When queried, devices supporting this feature must return the information indica
 
 
 <a href="/windows-hardware/drivers/ddi/ntddmmc/ne-ntddmmc-_feature_number">FEATURE_NUMBER</a>
+

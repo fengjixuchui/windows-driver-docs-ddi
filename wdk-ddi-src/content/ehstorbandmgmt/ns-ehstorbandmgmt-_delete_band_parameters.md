@@ -4,7 +4,6 @@ title: _DELETE_BAND_PARAMETERS (ehstorbandmgmt.h)
 description: A configured band is deleted according to the parameters in a DELETE_BAND_PARAMETERS structure. This structure is input for an IOCTL_EHSTOR_BANDMGMT_DELETE_BAND request.
 old-location: storage\delete_band_parameters.htm
 tech.root: storage
-ms.assetid: 6C96CF49-A7B2-4A99-8C7A-FC1C8C389C18
 ms.date: 03/29/2018
 keywords: ["DELETE_BAND_PARAMETERS structure"]
 ms.keywords: "*PDELETE_BAND_PARAMETERS, DELBAND_ERASE_BEFORE_DELETE, DELETE_BAND_PARAMETERS, DELETE_BAND_PARAMETERS structure [Storage Devices], PDELETE_BAND_PARAMETERS, PDELETE_BAND_PARAMETERS structure pointer [Storage Devices], _DELETE_BAND_PARAMETERS, ehstorbandmgmt/DELETE_BAND_PARAMETERS, ehstorbandmgmt/PDELETE_BAND_PARAMETERS, storage.delete_band_parameters"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - EhStorBandMgmt.h
 api_name:
+ - _DELETE_BAND_PARAMETERS
+ - PDELETE_BAND_PARAMETERS
  - DELETE_BAND_PARAMETERS
 ---
 
@@ -139,3 +140,4 @@ If <b>DELBAND_ERASE_BEFORE_DELETE</b> is set in <b>Flags</b>, then an authentica
 
 
 <a href="/windows-hardware/drivers/ddi/ehstorbandmgmt/ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_erase_band">IOCTL_EHSTOR_BANDMGMT_ERASE_BAND</a>
+

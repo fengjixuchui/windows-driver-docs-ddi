@@ -4,7 +4,6 @@ title: MINIPORT_PROCESS_SG_LIST (ndis.h)
 description: A bus-master miniport driver provides a MiniportProcessSGList function to process scatter/gather lists for network data.
 old-location: netvista\miniportprocesssglist.htm
 tech.root: netvista
-ms.assetid: ddd5d14f-f886-40d0-9fc8-eeb37da63ebd
 ms.date: 05/02/2018
 keywords: ["MINIPORT_PROCESS_SG_LIST callback function"]
 ms.keywords: MINIPORT_PROCESS_SG_LIST, MINIPORT_PROCESS_SG_LIST callback, MiniportProcessSGList, MiniportProcessSGList callback function [Network Drivers Starting with Windows Vista], ndis/MiniportProcessSGList, ndis_sgdma_ref_e9dec598-19ce-4d50-98e3-508ffbb444bc.xml, netvista.miniportprocesssglist
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportProcessSGList
+ - MINIPORT_PROCESS_SG_LIST
 ---
 
 # MINIPORT_PROCESS_SG_LIST callback function
@@ -53,27 +52,27 @@ A bus-master miniport driver provides a
 
 ## -parameters
 
-### -param pDO 
+### -param pDO [in]
 
-[in]
+
 Miniport drivers should ignore this parameter.
 
-### -param Reserved 
+### -param Reserved [in]
 
-[in]
+
 Miniport drivers should ignore this parameter.
 
-### -param pSGL 
+### -param pSGL [in]
 
-[in]
+
 A pointer to a scatter/gather list buffer. This is not necessarily the same buffer as the one the
      driver specified in the call to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismallocatenetbuffersglist">
      NdisMAllocateNetBufferSGList</a> function
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to a context area that the miniport driver created prior to calling 
      <b>NdisMAllocateNetBufferSGList</b>.
 
@@ -84,8 +83,8 @@ Miniport drivers call the
     NdisMRegisterScatterGatherDma</a> function to register a 
     <i>MiniportProcessSGList</i> function. When a miniport driver calls 
     <b>NdisMAllocateNetBufferSGList</b> to create a scatter/gather list, NDIS calls HAL to create the list.
-    After creating the list, NDIS calls the miniport driver's 
-    <i>MiniportProcessSGList</i> function.
+
+NDIS calls the miniport driver's <i>MiniportProcessSGList</i> function if <b>NdisMAllocateNetBufferSGList</b> is successful.  However, a success return from that function does not guarantee the callback was already invoked; it can be invoked asynchronously.
 
 When NDIS calls 
     <i>MiniportProcessSGList</i>, the driver can send the NET_BUFFER structure to the hardware. MiniportProcessSGList submits the physical addresses of the scatter/gather list to the NIC's DMA
@@ -137,3 +136,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterscattergatherdma">
    NdisMRegisterScatterGatherDma</a>
+

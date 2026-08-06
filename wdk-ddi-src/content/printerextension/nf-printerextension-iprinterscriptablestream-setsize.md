@@ -2,17 +2,15 @@
 UID: NF:printerextension.IPrinterScriptableStream.SetSize
 title: IPrinterScriptableStream::SetSize (printerextension.h)
 description: Sets the size of the scriptable stream, in bytes.
-old-location: print\iprinterscriptablestream__setsize.htm
 tech.root: print
-ms.assetid: 4A05474B-9856-48B0-9289-D87B8FF54B2F
-ms.date: 04/20/2018
+ms.date: 08/02/2022
 keywords: ["IPrinterScriptableStream::SetSize"]
 ms.keywords: IPrinterScriptableStream interface [Print Devices],SetSize method, IPrinterScriptableStream.SetSize, IPrinterScriptableStream::SetSize, SetSize, SetSize method [Print Devices], SetSize method [Print Devices],IPrinterScriptableStream interface, print.iprinterscriptablestream__setsize, printerextension/IPrinterScriptableStream::SetSize
 req.header: printerextension.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 
@@ -38,11 +36,8 @@ api_type:
 api_location:
  - Printerextension.h
 api_name:
- - IPrinterScriptableStream.SetSize
+ - IPrinterScriptableStream::SetSize
 ---
-
-# IPrinterScriptableStream::SetSize
-
 
 ## -description
 
@@ -50,15 +45,14 @@ Sets the size of the scriptable stream, in bytes.
 
 ## -parameters
 
-### -param lSize 
+### -param lSize [in]
 
-[in]
 The new size in bytes.
 
 ## -returns
 
-This method returns an <b>HRESULT</b> value.
+This method returns an **HRESULT** value.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablestream">IPrinterScriptableStream</a>
+[IPrinterScriptableStream](./nn-printerextension-iprinterscriptablestream.md)

@@ -4,8 +4,7 @@ title: PWINDBG_GET_SYMBOL (wdbgexts.h)
 description: The PWINDBG_GET_SYMBOL (GetSymbol) function locates the symbol nearest to address.
 old-location: debugger\getsymbol.htm
 tech.root: debugger
-ms.assetid: bec1b12f-0bf7-4cdd-86fe-baec2316d3c8
-ms.date: 05/03/2018
+ms.date: 05/27/2022
 keywords: ["PWINDBG_GET_SYMBOL callback function"]
 ms.keywords: GetSymbol, GetSymbol callback function [Windows Debugging], PWINDBG_GET_SYMBOL, PWINDBG_GET_SYMBOL callback, WdbgExts_Ref_a892aa24-d1ee-43f4-8fd5-ea8d00aa678a.xml, debugger.getsymbol, wdbgexts/GetSymbol
 req.header: wdbgexts.h
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdbgexts.h
 api_name:
- - GetSymbol
+ - PWINDBG_GET_SYMBOL
 ---
 
 # PWINDBG_GET_SYMBOL callback function
@@ -56,7 +55,7 @@ Specifies an address near the symbol you want located.
 
 ### -param pchBuffer
 
-Receives the name of the symbol found.
+Receives the name of the symbol found. This buffer must be at least 256 characters in length. 
 
 ### -param pDisplacement
 

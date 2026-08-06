@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_CREATEOVERLAY
 title: DXGKDDI_CREATEOVERLAY (d3dkmddi.h)
 description: The DxgkDdiCreateOverlay function enables the overlay hardware if the hardware is capable.
 old-location: display\dxgkddicreateoverlay.htm
-ms.assetid: 1ccdd16d-fd76-4039-b538-86c77b4e8cbb
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_CREATEOVERLAY callback function"]
 ms.keywords: DXGKDDI_CREATEOVERLAY, DXGKDDI_CREATEOVERLAY callback, DmFunctions_61539b38-d12a-4642-926c-70c1cf1df34b.xml, DxgkDdiCreateOverlay, DxgkDdiCreateOverlay callback function [Display Devices], d3dkmddi/DxgkDdiCreateOverlay, display.dxgkddicreateoverlay
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiCreateOverlay
-product:
- - Windows
+ - DXGKDDI_CREATEOVERLAY
 ---
 
 # DXGKDDI_CREATEOVERLAY callback function
@@ -52,13 +49,13 @@ The <i>DxgkDdiCreateOverlay</i> function enables the overlay hardware if the har
 
 ## -parameters
 
-### -param hAdapter
+### -param hAdapter [in]
 
-[in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
+A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
 
-### -param pCreateOverlay
+### -param pCreateOverlay [in/out]
 
-[in/out] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_createoverlay">DXGKARG_CREATEOVERLAY</a> structure that describes the overlay.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_createoverlay">DXGKARG_CREATEOVERLAY</a> structure that describes the overlay.
 
 ## -returns
 
@@ -83,3 +80,4 @@ The <i>DxgkDdiCreateOverlay</i> function enables the overlay hardware if the har
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a>
+

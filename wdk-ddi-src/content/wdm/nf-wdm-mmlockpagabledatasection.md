@@ -4,7 +4,6 @@ title: MmLockPagableDataSection function (wdm.h)
 description: The MmLockPagableDataSection routine locks an entire section of driver data into system space.
 old-location: kernel\mmlockpagabledatasection.htm
 tech.root: kernel
-ms.assetid: 9bf21128-acf3-4d7d-83c5-a32ac54e78ca
 ms.date: 04/30/2018
 keywords: ["MmLockPagableDataSection function"]
 ms.keywords: MmLockPagableDataSection, MmLockPagableDataSection routine [Kernel-Mode Driver Architecture], k106_05a47a6d-54f2-48d3-abba-ba3864aaa94b.xml, kernel.mmlockpagabledatasection, wdm/MmLockPagableDataSection
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>MmLockPagableDataSection</b> routine locks an entire section of driver da
 
 ## -parameters
 
-### -param AddressWithinSection 
+### -param AddressWithinSection [in]
 
-[in]
+
 Specifies the symbolic address of one item of data within the pageable section.
 
 ## -returns

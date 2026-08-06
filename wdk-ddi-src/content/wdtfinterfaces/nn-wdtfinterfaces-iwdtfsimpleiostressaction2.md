@@ -4,7 +4,6 @@ title: IWDTFSimpleIOStressAction2 (wdtfinterfaces.h)
 description: Defines operations for a simple asynchronous I/O functionality test.
 old-location: dtf\iwdtfsimpleiostressaction2.htm
 tech.root: dtf
-ms.assetid: dc594873-2347-4ad8-9748-2d5a1fa4d8a7
 ms.date: 04/04/2018
 keywords: ["IWDTFSimpleIOStressAction2 interface"]
 ms.keywords: IWDTFSimpleIOStressAction2, IWDTFSimpleIOStressAction2 interface [Windows Device Testing Framework], IWDTFSimpleIOStressAction2 interface [Windows Device Testing Framework],described, Microsoft.WDTF.IWDTFSimpleIOStressAction2, dtf.iwdtfsimpleiostressaction2, wdtfinterfaces/IWDTFSimpleIOStressAction2
@@ -50,8 +49,8 @@ Defines operations for a simple asynchronous I/O functionality test.
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDTFSimpleIOStressAction2</b> interface inherits from <b>IWDTFActionWithCustomActions2</b>. <b>IWDTFSimpleIOStressAction2</b> also has these types of members:
+The <b>IWDTFSimpleIOStressAction2</b> interface inherits from <b>IWDTFActionWithCustomActions2</b>. <b>IWDTFSimpleIOStressAction2</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li><a href="/">Methods</a></li>
 </ul>
 

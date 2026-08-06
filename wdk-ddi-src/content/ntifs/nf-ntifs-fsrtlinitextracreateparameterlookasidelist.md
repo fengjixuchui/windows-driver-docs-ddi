@@ -4,7 +4,6 @@ title: FsRtlInitExtraCreateParameterLookasideList function (ntifs.h)
 description: The FsRtlInitExtraCreateParameterLookasideList routine initializes a paged or nonpaged pool lookaside list used for the allocation of one or more extra create parameter context structures (ECPs) of fixed size.
 old-location: ifsk\fsrtlinitextracreateparameterlookasidelist.htm
 tech.root: ifsk
-ms.assetid: 30ad87de-a371-415b-b77f-513369fed098
 ms.date: 04/16/2018
 keywords: ["FsRtlInitExtraCreateParameterLookasideList function"]
 ms.keywords: FsRtlInitExtraCreateParameterLookasideList, FsRtlInitExtraCreateParameterLookasideList routine [Installable File System Drivers], fsrtlref_4b4e21ec-cfcc-45b7-bcb9-74dbc7c486ac.xml, ifsk.fsrtlinitextracreateparameterlookasidelist, ntifs/FsRtlInitExtraCreateParameterLookasideList
@@ -50,24 +49,24 @@ The <b>FsRtlInitExtraCreateParameterLookasideList</b> routine initializes a page
 
 ## -parameters
 
-### -param Lookaside 
+### -param Lookaside [in, out]
 
-[in, out]
+
 Pointer to an opaque <a href="/windows-hardware/drivers/kernel/eprocess">PAGED_LOOKASIDE_LIST</a> or <a href="/windows-hardware/drivers/kernel/eprocess">NPAGED_LOOKASIDE_LIST</a> lookaside list-head structure. For a paged or nonpaged lookaside list, the list-head structure must be allocated from nonpaged pool.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Defines pool allocation options. If the <i>Flags</i> parameter contains the FSRTL_ECP_LOOKASIDE_FLAG_NONPAGED_POOL bit flag value, <b>FsRtlInitExtraCreateParameterLookasideList</b> initializes a lookaside list for nonpaged ECP entries of the specified size. Otherwise, <b>FsRtlInitExtraCreateParameterLookasideList</b> initializes a lookaside list for paged ECP entries of the specified size.
 
-### -param Size 
+### -param Size [in]
 
-[in]
+
 Specifies the size, in bytes, for all ECP entries in the lookaside list.
 
-### -param Tag 
+### -param Tag [in]
 
-[in]
+
 Specifies the pool tag to use when allocating lookaside list ECP entries. For more information about pool tags, see the <i>Tag</i> parameter of <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag">ExAllocatePoolWithTag</a>.
 
 ## -remarks

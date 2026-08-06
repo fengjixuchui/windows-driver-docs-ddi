@@ -4,7 +4,6 @@ title: SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG_INIT function (sercx.h)
 description: The SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG_INIT function initializes a SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG structure.
 old-location: serports\sercx2_custom_receive_transaction_config_init.htm
 tech.root: serports
-ms.assetid: DB8A5E89-771C-45E8-8F90-708CDAD50BBF
 ms.date: 04/23/2018
 keywords: ["SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG_INIT function"]
 ms.keywords: 2/SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG_INIT, SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG_INIT, SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG_INIT function [Serial Ports], serports.sercx2_custom_receive_transaction_config_init
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level.
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,24 +49,24 @@ The <b>SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG_INIT</b> function initializes a 
 
 ## -parameters
 
-### -param Config 
+### -param Config [out]
 
-[out]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/sercx/ns-sercx-_sercx2_custom_receive_transaction_config">SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG</a> structure that is to be initialized.
 
-### -param EvtSerCx2CustomReceiveTransactionStart 
+### -param EvtSerCx2CustomReceiveTransactionStart [in]
 
-[in]
+
 The value to load into the <b>EvtSerCx2CustomReceiveTransactionStart</b> member of the <b>SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG</b> structure. For more information, see the description of this member in <a href="/windows-hardware/drivers/ddi/sercx/ns-sercx-_sercx2_custom_receive_transaction_config">SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG</a>.
 
-### -param EvtSerCx2CustomReceiveTransactionEnableNewDataNotification 
+### -param EvtSerCx2CustomReceiveTransactionEnableNewDataNotification [in, optional]
 
-[in, optional]
+
 The value to load into the <b>EvtSerCx2CustomReceiveTransactionEnableNewDataNotification</b> member of the <b>SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG</b> structure. For more information, see the description of this member in <a href="/windows-hardware/drivers/ddi/sercx/ns-sercx-_sercx2_custom_receive_transaction_config">SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG</a>.
 
-### -param EvtSerCx2CustomReceiveTransactionQueryProgress 
+### -param EvtSerCx2CustomReceiveTransactionQueryProgress [in]
 
-[in]
+
 The value to load into the <b>EvtSerCx2CustomReceiveTransactionQueryProgress</b> member of the <b>SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG</b> structure. For more information, see the description of this member in <a href="/windows-hardware/drivers/ddi/sercx/ns-sercx-_sercx2_custom_receive_transaction_config">SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG</a>.
 
 ## -remarks

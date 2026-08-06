@@ -4,7 +4,6 @@ title: _WINBIO_SET_INDICATOR (winbio_ioctl.h)
 description: The WINBIO_SET_INDICATOR structure is the IN payload for IOCTL_BIOMETRIC_SET_INDICATOR.
 old-location: biometric\winbio_set_indicator.htm
 tech.root: biometric
-ms.assetid: c4410845-3c7b-445e-80ec-25694b122a0e
 ms.date: 02/20/2018
 keywords: ["WINBIO_SET_INDICATOR structure"]
 ms.keywords: "*PWINBIO_SET_INDICATOR, PWINBIO_SET_INDICATOR, PWINBIO_SET_INDICATOR structure pointer [Biometric Devices], WINBIO_SET_INDICATOR, WINBIO_SET_INDICATOR structure [Biometric Devices], _WINBIO_SET_INDICATOR, biometric.winbio_set_indicator, biometric_ref_2ee60af8-1872-4932-9db7-9c3c27e29ddf.xml, winbio_ioctl/PWINBIO_SET_INDICATOR, winbio_ioctl/WINBIO_SET_INDICATOR"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - winbio_ioctl.h
 api_name:
+ - _WINBIO_SET_INDICATOR
+ - PWINBIO_SET_INDICATOR
  - WINBIO_SET_INDICATOR
 ---
 
@@ -76,3 +77,4 @@ Possible values are shown in the following table.
 
 
 <a href="/windows-hardware/drivers/ddi/winbio_ioctl/ns-winbio_ioctl-_winbio_get_indicator">WINBIO_GET_INDICATOR</a>
+

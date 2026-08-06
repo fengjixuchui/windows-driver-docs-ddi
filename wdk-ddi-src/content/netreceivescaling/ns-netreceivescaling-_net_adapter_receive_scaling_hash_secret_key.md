@@ -3,17 +3,16 @@ UID: NS:netreceivescaling._NET_ADAPTER_RECEIVE_SCALING_HASH_SECRET_KEY
 title: _NET_ADAPTER_RECEIVE_SCALING_HASH_SECRET_KEY (netreceivescaling.h)
 description: The NET_ADAPTER_RECEIVE_SCALING_HASH_SECRET_KEY structure contains secret key data to verify RSS hash calculations.
 tech.root: netvista
-ms.assetid: c00bfa60-8d5a-41e1-bc04-bdbad9d3ddc2
 ms.date: 07/13/2018
 keywords: ["NET_ADAPTER_RECEIVE_SCALING_HASH_SECRET_KEY structure"]
 ms.keywords: _NET_ADAPTER_RECEIVE_SCALING_HASH_SECRET_KEY, *PNET_ADAPTER_RECEIVE_SCALING_HASH_SECRET_KEY, NET_ADAPTER_RECEIVE_SCALING_HASH_SECRET_KEY,
 req.header: netreceivescaling.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.27
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -34,6 +33,7 @@ api_location:
  - netreceivescaling.h
 api_name:
  - _NET_ADAPTER_RECEIVE_SCALING_HASH_SECRET_KEY
+ - NET_ADAPTER_RECEIVE_SCALING_HASH_SECRET_KEY
 ---
 
 # _NET_ADAPTER_RECEIVE_SCALING_HASH_SECRET_KEY structure
@@ -62,3 +62,4 @@ NetAdapterCx provides the secret key to NIC client drivers when it invokes the *
 [NetAdapterCx Receive Side Scaling](/windows-hardware/drivers/netcx/netadaptercx-receive-side-scaling-rss-)
 
 [NET_ADAPTER_RECEIVE_SCALING_HASH_TYPE](ne-netreceivescaling-_net_adapter_receive_scaling_hash_type.md)
+

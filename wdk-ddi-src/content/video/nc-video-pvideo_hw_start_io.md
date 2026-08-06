@@ -4,7 +4,6 @@ title: PVIDEO_HW_START_IO (video.h)
 description: HwVidStartIO processes the specified VRP.
 old-location: display\hwvidstartio.htm
 tech.root: display
-ms.assetid: 82951291-cf3e-486b-ad0e-f347fefe0370
 ms.date: 05/10/2018
 keywords: ["PVIDEO_HW_START_IO callback function"]
 ms.keywords: HwVidStartIO, HwVidStartIO callback function [Display Devices], PVIDEO_HW_START_IO, PVIDEO_HW_START_IO callback, VideoMiniport_Functions_5dd4317e-f80d-4f93-86b5-b7c83aca2546.xml, display.hwvidstartio, video/HwVidStartIO
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - video.h
 api_name:
- - HwVidStartIO
+ - PVIDEO_HW_START_IO
 ---
 
 # PVIDEO_HW_START_IO callback function
@@ -103,3 +102,4 @@ However, every miniport driver's <i>HwVidStartIO</i> function must complete each
 
 
 <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportsynchronizeexecution">VideoPortSynchronizeExecution</a>
+

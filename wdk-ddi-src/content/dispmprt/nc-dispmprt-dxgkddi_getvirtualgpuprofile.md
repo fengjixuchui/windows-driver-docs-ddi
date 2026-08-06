@@ -3,7 +3,6 @@ UID: NC:dispmprt.DXGKDDI_GETVIRTUALGPUPROFILE
 title: DXGKDDI_GETVIRTUALGPUPROFILE
 description: Returns information about the vGPU profile, which is supported by the physical GPU when it is divided into given number of partitions.
 tech.root: display
-ms.assetid: b1540828-63bb-491d-b0e0-c54089ffd85f
 ms.date: 04/04/2019
 keywords: ["DXGKDDI_GETVIRTUALGPUPROFILE callback function"]
 req.header: dispmprt.h
@@ -36,8 +35,6 @@ api_location:
  - dispmprt.h
 api_name:
  - DXGKDDI_GETVIRTUALGPUPROFILE
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,13 +48,13 @@ Returns information about the vGPU profile, which is supported by the physical G
 
 ## -parameters
 
-### -param Context
+### -param Context [in]
 
-[in] The miniport context that is returned by the driver in the [DXGKDDI_GPU_PARTITION_INTERFACE](ns-dispmprt-_dxgkddi_gpu_partition_interface.md) structure.
+The miniport context that is returned by the driver in the [DXGKDDI_GPU_PARTITION_INTERFACE](ns-dispmprt-_dxgkddi_gpu_partition_interface.md) structure.
 
-### -param pArgs 
+### -param pArgs [in, out]
 
-[in, out] A pointer to the DXGKARG_GETVIRTUALGPUPROFILE structure.
+A pointer to the DXGKARG_GETVIRTUALGPUPROFILE structure.
 
 ## -returns
 

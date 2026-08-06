@@ -4,7 +4,6 @@ title: EVT_WDF_WORKITEM (wdfworkitem.h)
 description: A driver's EvtWorkItem event callback function performs the work that is associated with a specified work item.
 old-location: wdf\evtworkitem.htm
 tech.root: wdf
-ms.assetid: 2a2811de-9024-40a8-b8af-b61ca4100218
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_WORKITEM callback function"]
 ms.keywords: DFWorkItemObjectRef_e799d95c-bbde-402a-8ba6-6e03256772ff.xml, EVT_WDF_WORKITEM, EVT_WDF_WORKITEM callback, EvtWorkItem, EvtWorkItem callback function, kmdf.evtworkitem, wdf.evtworkitem, wdfworkitem/EvtWorkItem
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfworkitem.h
 api_name:
- - EvtWorkItem
+ - EVT_WDF_WORKITEM
 ---
 
 # EVT_WDF_WORKITEM callback function
@@ -52,9 +51,9 @@ A driver's <i>EvtWorkItem</i> event callback function performs the work that is 
 
 ## -parameters
 
-### -param WorkItem 
+### -param WorkItem [in]
 
-[in]
+
 A handle to a framework work-item object.
 
 ## -remarks
@@ -80,3 +79,4 @@ The <i>EvtWorkItem</i> callback function runs at IRQL = PASSIVE_LEVEL in the con
 
 
 <a href="/windows-hardware/drivers/ddi/wdfworkitem/nf-wdfworkitem-wdfworkitemenqueue">WdfWorkItemEnqueue</a>
+

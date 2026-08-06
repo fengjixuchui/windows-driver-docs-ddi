@@ -4,14 +4,13 @@ title: FsRtlLookupPerFileContext function (ntifs.h)
 description: The FsRtlLookupPerFileContext routine returns a pointer to a FSRTL_PER_FILE_CONTEXT object that is associated with a specified file.
 old-location: ifsk\fsrtllookupperfilecontext.htm
 tech.root: ifsk
-ms.assetid: b15598bd-8362-44f1-83ce-b4282d6604b0
 ms.date: 04/16/2018
 keywords: ["FsRtlLookupPerFileContext function"]
 ms.keywords: FsRtlLookupPerFileContext, FsRtlLookupPerFileContext routine [Installable File System Drivers], fsrtlref_ab859bb7-ea43-4d55-ab37-feebddd270ff.xml, ifsk.fsrtllookupperfilecontext, ntifs/FsRtlLookupPerFileContext
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating system.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=  APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,19 +49,19 @@ The <b>FsRtlLookupPerFileContext </b>routine returns a pointer to a <a href="/pr
 
 ## -parameters
 
-### -param PerFileContextPointer 
+### -param PerFileContextPointer [in]
 
-[in]
+
 A pointer to an opaque pointer that is used by the file system runtime library (FSRTL) package to track file contexts. To retrieve this pointer from a file object, use the <a href="/previous-versions/ff546051(v=vs.85)">FsRtlGetPerFileContextPointer</a> macro.
 
-### -param OwnerId 
+### -param OwnerId [in, optional]
 
-[in, optional]
+
 A pointer to a filter driver-allocated variable that uniquely identifies the owner of the per-file context structure.  The format of this variable is filter driver-specific. This parameter is optional, but must be non-<b>NULL</b> if <i>InstanceId</i> is non-<b>NULL</b>.
 
-### -param InstanceId 
+### -param InstanceId [in, optional]
 
-[in, optional]
+
 A pointer to a filter driver-allocated variable that can be used to distinguish among per-file context structures that are created by the same filter driver. The format of this variable is filter driver-specific. This parameter is optional.
 
 ## -returns

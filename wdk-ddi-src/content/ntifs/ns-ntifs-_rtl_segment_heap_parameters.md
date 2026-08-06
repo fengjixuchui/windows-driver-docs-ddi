@@ -2,7 +2,6 @@
 UID: NS:ntifs._RTL_SEGMENT_HEAP_PARAMETERS
 title: _RTL_SEGMENT_HEAP_PARAMETERS (ntifs.h)
 description: The RTL_SEGMENT_HEAP_PARAMETERS structure contains the segment heap parameters.
-ms.assetid: e80c7205-d460-4335-8124-53112d5d7619
 ms.date: 10/19/2018
 tech.root: ifsk
 keywords: ["RTL_SEGMENT_HEAP_PARAMETERS structure"]
@@ -35,6 +34,8 @@ api_location:
  - ntifs.h
 api_name:
  - _RTL_SEGMENT_HEAP_PARAMETERS
+ - PRTL_SEGMENT_HEAP_PARAMETERS
+ - RTL_SEGMENT_HEAP_PARAMETERS
 ---
 
 # _RTL_SEGMENT_HEAP_PARAMETERS structure

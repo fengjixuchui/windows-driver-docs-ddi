@@ -4,7 +4,6 @@ title: IInterruptSync::CallSynchronizedRoutine (portcls.h)
 description: The CallSynchronizedRoutine method calls a routine that is not an interrupt service routine (ISR) but whose execution needs to be synchronized with ISRs.
 old-location: audio\iinterruptsync_callsynchronizedroutine.htm
 tech.root: audio
-ms.assetid: 9895ee9a-4d8c-4cd4-8df4-fedaf864a178
 ms.date: 05/08/2018
 keywords: ["IInterruptSync::CallSynchronizedRoutine"]
 ms.keywords: CallSynchronizedRoutine, CallSynchronizedRoutine method [Audio Devices], CallSynchronizedRoutine method [Audio Devices],IInterruptSync interface, IInterruptSync interface [Audio Devices],CallSynchronizedRoutine method, IInterruptSync.CallSynchronizedRoutine, IInterruptSync::CallSynchronizedRoutine, audio.iinterruptsync_callsynchronizedroutine, audmp-routines_985e70ee-3e6b-4514-adb5-1b37f92c9ae4.xml, portcls/IInterruptSync::CallSynchronizedRoutine
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IInterruptSync.CallSynchronizedRoutine
+ - IInterruptSync::CallSynchronizedRoutine
 ---
 
 # IInterruptSync::CallSynchronizedRoutine
@@ -50,14 +49,14 @@ The <code>CallSynchronizedRoutine</code> method calls a routine that is not an i
 
 ## -parameters
 
-### -param Routine 
+### -param Routine [in]
 
-[in]
+
 Pointer to the routine that is to be called. This routine will run exclusive of the object's ISR and all other routines that are synchronized through the object. Even on multiple-processor machines, routines that are synchronized by a given object will not run concurrently. This parameter is a function pointer of type PINTERRUPTSYNCROUTINE (see <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iinterruptsync">IInterruptSync</a>).
 
-### -param DynamicContext 
+### -param DynamicContext [in]
 
-[in]
+
 A context value to be passed to the routine.
 
 ## -returns
@@ -81,3 +80,4 @@ Callers of <code>CallSynchronizedRoutine</code> must be running at an IRQL that 
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewinterruptsync">PcNewInterruptSync</a>
+

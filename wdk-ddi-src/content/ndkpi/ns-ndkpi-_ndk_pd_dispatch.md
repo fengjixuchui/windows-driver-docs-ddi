@@ -4,7 +4,6 @@ title: _NDK_PD_DISPATCH (ndkpi.h)
 description: The NDK_PD_DISPATCH structure specifies dispatch function entry points for the NDK protection domain (PD) object.
 old-location: netvista\ndk_pd_dispatch.htm
 tech.root: netvista
-ms.assetid: 3BAD6CF9-8DCD-470F-9C2E-C7C9C0B29ADA
 ms.date: 05/02/2018
 keywords: ["NDK_PD_DISPATCH structure"]
 ms.keywords: NDK_PD_DISPATCH, NDK_PD_DISPATCH structure [Network Drivers Starting with Windows Vista], _NDK_PD_DISPATCH, ndkpi/NDK_PD_DISPATCH, netvista.ndk_pd_dispatch
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
+ - _NDK_PD_DISPATCH
  - NDK_PD_DISPATCH
 ---
 
@@ -123,3 +123,4 @@ The <b>NDK_PD_DISPATCH</b> structure is used in the <a href="/windows-hardware/d
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_pd">NDK_PD</a>
+

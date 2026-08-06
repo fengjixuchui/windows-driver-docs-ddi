@@ -1,8 +1,7 @@
 ---
 UID: NS:d3d12umddi.D3D12DDI_COMMAND_LIST_FUNCS_3D_0040
 title: D3D12DDI_COMMAND_LIST_FUNCS_3D_0040 (d3d12umddi.h)
-description: The command list functions for 3D.
-ms.assetid: e2a303e2-7780-4feb-8a65-4535cee8a41a
+description: The D3D12DDI_COMMAND_LIST_FUNCS_3D_0040 structure contains command list functions for 3D.
 ms.date: 10/19/2018
 keywords: ["D3D12DDI_COMMAND_LIST_FUNCS_3D_0040 structure"]
 ms.keywords: D3D12DDI_COMMAND_LIST_FUNCS_3D_0040, D3D12DDI_COMMAND_LIST_FUNCS_3D_0040,
@@ -32,8 +31,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - D3D12DDI_COMMAND_LIST_FUNCS_3D_0040
-product:
- - Windows
 ---
 
 # D3D12DDI_COMMAND_LIST_FUNCS_3D_0040 structure

@@ -4,7 +4,6 @@ title: _D3DDDICB_OFFERALLOCATIONS (d3dumddi.h)
 description: Defines the video memory allocations that the driver offers for reuse. Used with the pfnOfferAllocationsCb function.
 old-location: display\d3dddicb_offerallocations.htm
 tech.root: display
-ms.assetid: 26f3cd7b-ae2e-4632-bfb2-e62839346f83
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_OFFERALLOCATIONS structure"]
 ms.keywords: D3DDDICB_OFFERALLOCATIONS, D3DDDICB_OFFERALLOCATIONS structure [Display Devices], _D3DDDICB_OFFERALLOCATIONS, d3dumddi/D3DDDICB_OFFERALLOCATIONS, display.d3dddicb_offerallocations
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dumddi.h
 api_name:
+ - _D3DDDICB_OFFERALLOCATIONS
  - D3DDDICB_OFFERALLOCATIONS
 ---
 
@@ -52,25 +52,25 @@ Defines the video memory allocations that the driver offers for reuse. Used with
 
 ## -struct-fields
 
-### -field pResources
+### -field pResources [in]
 
-[in] An array of Direct3D runtime handles to resources to offer.
+An array of Direct3D runtime handles to resources to offer.
 
 If the user-mode driver uses the array specified by <b>HandleList</b> to offer a list of allocations, it must set <b>pResources</b> to <b>NULL</b>. Conversely, if the driver uses the array specified by <b>pResources</b> to offer a list of resources, it must set <b>HandleList</b> to <b>NULL</b>.
 
-### -field HandleList
+### -field HandleList [in]
 
-[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to allocations to offer.
+An array of D3DKMT_HANDLE data types that represent kernel-mode handles to allocations to offer.
 
 If resources were created with the <b>D3D10_DDI_BIND_PRESENT</b> flag value set in <i>pCreateResource</i>-><b>BindFlags</b>, offer the resources by their allocation handles, not by their resource handles.
 
-### -field NumAllocations
+### -field NumAllocations [in]
 
-[in] The number of items in the <b>pResources</b> or <b>HandleList</b> members, whichever is not <b>NULL</b>.
+The number of items in the <b>pResources</b> or <b>HandleList</b> members, whichever is not <b>NULL</b>.
 
-### -field Priority
+### -field Priority [in]
 
-[in] The priority, of type  <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddi_offer_priority">D3DDDI_OFFER_PRIORITY</a>, with which to offer the allocations for reuse.
+The priority, of type  <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddi_offer_priority">D3DDDI_OFFER_PRIORITY</a>, with which to offer the allocations for reuse.
 
 <div class="alert"><b>Note</b>  Do not set this member to a value of <b>D3DDDI_OFFER_PRIORITY_NONE</b>.</div>
 <div> </div>
@@ -86,3 +86,4 @@ If resources were created with the <b>D3D10_DDI_BIND_PRESENT</b> flag value set 
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_offerallocationscb">pfnOfferAllocationsCb</a>
+

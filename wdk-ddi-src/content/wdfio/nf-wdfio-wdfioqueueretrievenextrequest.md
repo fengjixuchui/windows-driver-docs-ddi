@@ -4,7 +4,6 @@ title: WdfIoQueueRetrieveNextRequest function (wdfio.h)
 description: The WdfIoQueueRetrieveNextRequest method retrieves the next available I/O request from a specified I/O queue.
 old-location: wdf\wdfioqueueretrievenextrequest.htm
 tech.root: wdf
-ms.assetid: 1cde2e20-5ce6-4c5b-b40c-0b04da76980c
 ms.date: 02/26/2018
 keywords: ["WdfIoQueueRetrieveNextRequest function"]
 ms.keywords: DFQueueObjectRef_93fbecf2-1bfa-426c-9739-153d79d0ac27.xml, WdfIoQueueRetrieveNextRequest, WdfIoQueueRetrieveNextRequest method, kmdf.wdfioqueueretrievenextrequest, wdf.wdfioqueueretrievenextrequest, wdfio/WdfIoQueueRetrieveNextRequest
@@ -55,14 +54,14 @@ The <b>WdfIoQueueRetrieveNextRequest</b> method retrieves the next available I/O
 
 ## -parameters
 
-### -param Queue 
+### -param Queue [in]
 
-[in]
+
 A handle to a framework queue object.
 
-### -param OutRequest 
+### -param OutRequest [out]
 
-[out]
+
 A pointer to a location that receives a handle to a framework request object. If the queue is empty or the last request has been retrieved, this parameter receives <b>NULL</b>.
 
 ## -returns

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols2.GetSymbolOptions
 title: IDebugSymbols2::GetSymbolOptions (dbgeng.h)
-description: The GetSymbolOptions method returns the engine's global symbol options.
+description: The GetSymbolOptions method returns the engine's global symbol options. This method belongs to the IDebugSymbols2 interface.
 old-location: debugger\getsymboloptions.htm
 tech.root: debugger
-ms.assetid: a9da40fa-59b7-4d2b-978f-1785a51eeaed
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols2::GetSymbolOptions"]
 ms.keywords: GetSymbolOptions, GetSymbolOptions method [Windows Debugging], GetSymbolOptions method [Windows Debugging],IDebugSymbols interface, GetSymbolOptions method [Windows Debugging],IDebugSymbols2 interface, GetSymbolOptions method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],GetSymbolOptions method, IDebugSymbols2 interface [Windows Debugging],GetSymbolOptions method, IDebugSymbols2.GetSymbolOptions, IDebugSymbols2::GetSymbolOptions, IDebugSymbols3 interface [Windows Debugging],GetSymbolOptions method, IDebugSymbols3::GetSymbolOptions, IDebugSymbols::GetSymbolOptions, IDebugSymbols_70c05823-d1a1-4769-8584-e191255c4deb.xml, dbgeng/IDebugSymbols2::GetSymbolOptions, dbgeng/IDebugSymbols3::GetSymbolOptions, dbgeng/IDebugSymbols::GetSymbolOptions, debugger.getsymboloptions
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.GetSymbolOptions
- - IDebugSymbols2.GetSymbolOptions
- - IDebugSymbols3.GetSymbolOptions
+ - IDebugSymbols2::GetSymbolOptions
 ---
 
 # IDebugSymbols2::GetSymbolOptions
@@ -52,9 +49,9 @@ The <b>GetSymbolOptions</b> method returns the engine's global symbol options.
 
 ## -parameters
 
-### -param Options 
+### -param Options [out]
 
-[out]
+
 Receives the symbol options bit-set.  For a description of the bit flags, see <a href="/windows-hardware/drivers/debugger/symbol-options">Setting Symbol Options</a>.
 
 ## -returns
@@ -106,3 +103,4 @@ For more information about symbols, see <a href="/windows-hardware/drivers/debug
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-setsymboloptions">SetSymbolOptions</a>
+

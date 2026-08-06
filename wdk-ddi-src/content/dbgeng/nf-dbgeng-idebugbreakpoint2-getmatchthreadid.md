@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugBreakpoint2.GetMatchThreadId
 title: IDebugBreakpoint2::GetMatchThreadId (dbgeng.h)
-description: The GetMatchThreadId method returns the engine thread ID of the thread that can trigger a breakpoint.
+description: The GetMatchThreadId method returns the engine thread ID of the thread that can trigger a breakpoint. This method belongs to the IDebugBreakpoint2 interface.
 old-location: debugger\getmatchthreadid.htm
 tech.root: debugger
-ms.assetid: 0f0f7248-de85-4757-8006-48444af8edac
 ms.date: 05/03/2018
 keywords: ["IDebugBreakpoint2::GetMatchThreadId"]
 ms.keywords: ComOther_6a9afca5-8445-48d9-8e28-8d38e6cf2658.xml, GetMatchThreadId, GetMatchThreadId method [Windows Debugging], GetMatchThreadId method [Windows Debugging],IDebugBreakpoint interface, GetMatchThreadId method [Windows Debugging],IDebugBreakpoint2 interface, IDebugBreakpoint interface [Windows Debugging],GetMatchThreadId method, IDebugBreakpoint2 interface [Windows Debugging],GetMatchThreadId method, IDebugBreakpoint2.GetMatchThreadId, IDebugBreakpoint2::GetMatchThreadId, IDebugBreakpoint::GetMatchThreadId, dbgeng/IDebugBreakpoint2::GetMatchThreadId, dbgeng/IDebugBreakpoint::GetMatchThreadId, debugger.getmatchthreadid
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugBreakpoint.GetMatchThreadId
- - IDebugBreakpoint2.GetMatchThreadId
+ - IDebugBreakpoint2::GetMatchThreadId
 ---
 
 # IDebugBreakpoint2::GetMatchThreadId
@@ -51,9 +49,9 @@ The <b>GetMatchThreadId</b> method returns the engine thread ID of the thread th
 
 ## -parameters
 
-### -param Id 
+### -param Id [out]
 
-[out]
+
 The engine thread ID of the thread that can trigger this breakpoint.
 
 ## -returns
@@ -97,3 +95,4 @@ If you have set a thread for the breakpoint, the breakpoint can be triggered onl
 The <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getparameters">GetParameters</a> method also returns the engine thread ID of the thread that can trigger the breakpoint.
 
 For more information about breakpoint properties, see <a href="/windows-hardware/drivers/debugger/controlling-breakpoint-flags-and-parameters">Controlling Breakpoint Flags and Parameters</a>.
+

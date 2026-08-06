@@ -4,7 +4,6 @@ title: IPrintCoreUI2::DrvUpdateUISetting (prcomoem.h)
 description: The IPrintCoreUI2::DrvUpdateUISetting method is provided by the Windows XP Pscript5 driver so that Pscript5 user interface plug-ins can notify the driver of a modified user interface option.
 old-location: print\iprintcoreui2_drvupdateuisetting.htm
 tech.root: print
-ms.assetid: 64cbb304-51f6-4db4-93cb-a64ea5e03599
 ms.date: 04/20/2018
 keywords: ["IPrintCoreUI2::DrvUpdateUISetting"]
 ms.keywords: DrvUpdateUISetting, DrvUpdateUISetting method [Print Devices], DrvUpdateUISetting method [Print Devices],IPrintCoreUI2 interface, IPrintCoreUI2 interface [Print Devices],DrvUpdateUISetting method, IPrintCoreUI2.DrvUpdateUISetting, IPrintCoreUI2::DrvUpdateUISetting, prcomoem/IPrintCoreUI2::DrvUpdateUISetting, print.iprintcoreui2_drvupdateuisetting, print_unidrv-pscript_ui_47ba2d93-a51d-4140-8932-9c4caee1ca21.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Prcomoem.h
 api_name:
- - IPrintCoreUI2.DrvUpdateUISetting
+ - IPrintCoreUI2::DrvUpdateUISetting
 ---
 
 # IPrintCoreUI2::DrvUpdateUISetting
@@ -166,3 +165,4 @@ This method is inherited from the <a href="/windows-hardware/drivers/print/iprin
 
 
 <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-documentpropertysheets">IPrintOemUI::DocumentPropertySheets</a>
+

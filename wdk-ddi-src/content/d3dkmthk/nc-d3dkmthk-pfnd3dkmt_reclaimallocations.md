@@ -1,9 +1,8 @@
 ---
 UID: NC:d3dkmthk.PFND3DKMT_RECLAIMALLOCATIONS
 title: PFND3DKMT_RECLAIMALLOCATIONS (d3dkmthk.h)
-description: Reclaims video memory allocations.
+description: The PFND3DKMT_RECLAIMALLOCATIONS callback function reclaims the video memory allocations specified in a D3DKMT_RECLAIMALLOCATIONS structure.
 old-location: display\d3dkmtreclaimallocations.htm
-ms.assetid: 3bfb2a82-9451-4365-b113-6311c3f13fe6
 ms.date: 05/10/2018
 keywords: ["PFND3DKMT_RECLAIMALLOCATIONS callback function"]
 ms.keywords: D3DKMTReclaimAllocations, D3DKMTReclaimAllocations callback function [Display Devices], PFND3DKMT_RECLAIMALLOCATIONS, PFND3DKMT_RECLAIMALLOCATIONS callback, d3dkmthk/D3DKMTReclaimAllocations, display.d3dkmtreclaimallocations
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
- - D3DKMTReclaimAllocations
+ - PFND3DKMT_RECLAIMALLOCATIONS
 ---
 
 # PFND3DKMT_RECLAIMALLOCATIONS callback function
@@ -50,11 +49,11 @@ Reclaims video memory allocations.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in, out]
 
 *pData* 
 
-[in, out] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_reclaimallocations">D3DKMT_RECLAIMALLOCATIONS</a> structure that defines memory allocations to reclaim.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_reclaimallocations">D3DKMT_RECLAIMALLOCATIONS</a> structure that defines memory allocations to reclaim.
 
 ## -returns
 
@@ -73,3 +72,4 @@ Returns one of the following values:
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_reclaimallocations">D3DKMT_RECLAIMALLOCATIONS</a>
+

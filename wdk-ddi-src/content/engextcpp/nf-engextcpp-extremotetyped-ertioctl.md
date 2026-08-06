@@ -1,10 +1,9 @@
 ---
 UID: NF:engextcpp.ExtRemoteTyped.ErtIoctl
 title: ExtRemoteTyped::ErtIoctl method (engextcpp.h)
-description: The ExtRemoteTyped class provides the ability to manipulate typed data on the target.
+description: The ErtIoctl method of the ExtRemoteTyped class. The ExtRemoteTyped class provides the ability to manipulate typed data on the target.
 old-location: debugger\extremotetyped.htm
 tech.root: debugger
-ms.assetid: 1f5d71a5-fa60-4819-9838-2b035ef21374
 ms.date: 08/09/2018
 keywords: ["ExtRemoteTyped::ErtIoctl method"]
 ms.keywords: ExtRemoteTyped class [Windows Debugging], described, ExtRemoteTyped::Copy, Copy, ErtIoctl, ExtRemoteTyped, engextcpp/ExtRemoteTyped, debugger.extremotetyped, ExtRemoteTyped class [Windows Debugging], Clear, EngExtCpp_Ref_04970dac-e759-4a04-a1e0-8dab752c1418.xml, ExtRemoteTyped::ErtIoctl, ExtRemoteTyped::Clear
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteTyped
+ - ExtRemoteTyped::ErtIoctl
 ---
 
 # ExtRemoteTyped::ErtIoctl method
@@ -51,6 +50,26 @@ The ErtIoctl method is part of the <b>ExtRemoteTyped</b> class. The <b>ExtRemote
 <b>ExtRemoteTyped</b> is a subclass of <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a>.
 
 ## -parameters
+
+### -param Message
+
+### -param Op
+
+### -param Flags
+
+### -param InStr
+
+### -param In64
+
+### -param Ret
+
+### -param StrBuffer
+
+### -param StrBufferChars
+
+### -param Out32
+
+### -returns
 
 ## -see-also
 

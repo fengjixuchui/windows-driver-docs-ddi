@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_35
+UID: NS:ksmedia.KSRTAUDIO_SETWRITEPACKET_INFO
 title: KSRTAUDIO_SETWRITEPACKET_INFO (ksmedia.h)
 description: The KSRTAUDIO_SETWRITEPACKET_INFO structure describes information associated with an audio packet.
 old-location: audio\ksrtaudio_setwritepacket_info.htm
 tech.root: audio
-ms.assetid: 641DE2B5-7903-4D25-A280-F2BCCE8B1500
 ms.date: 05/08/2018
 keywords: ["KSRTAUDIO_SETWRITEPACKET_INFO structure"]
 ms.keywords: "*PKSRTAUDIO_SETWRITEPACKET_INFO, KSRTAUDIO_SETWRITEPACKET_INFO, KSRTAUDIO_SETWRITEPACKET_INFO structure [Audio Devices], PKSRTAUDIO_SETWRITEPACKET_INFO, PKSRTAUDIO_SETWRITEPACKET_INFO structure pointer [Audio Devices], audio.ksrtaudio_setwritepacket_info, ksmedia/KSRTAUDIO_SETWRITEPACKET_INFO, ksmedia/PKSRTAUDIO_SETWRITEPACKET_INFO"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSRTAUDIO_SETWRITEPACKET_INFO
  - KSRTAUDIO_SETWRITEPACKET_INFO
 ---
 
@@ -71,3 +71,4 @@ The length of the EOS packet if <i>KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM</i> is s
 ## -see-also
 
 <a href="/windows-hardware/drivers/audio/ksproperty-rtaudio-setwritepacket">KSPROPERTY_RTAUDIO_SETWRITEPACKET</a>
+

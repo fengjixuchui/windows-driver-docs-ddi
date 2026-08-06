@@ -4,14 +4,13 @@ title: DXGKDDI_REMOVE_DEVICE (dispmprt.h)
 description: The DxgkDdiRemoveDevice function frees any resources allocated during DxgkDdiAddDevice.
 old-location: display\dxgkddiremovedevice.htm
 tech.root: display
-ms.assetid: 0d5f96e8-dcb3-49e5-8347-ba20d757618b
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_REMOVE_DEVICE callback function"]
 ms.keywords: DXGKDDI_REMOVE_DEVICE, DXGKDDI_REMOVE_DEVICE callback, DmFunctions_b8ab26af-93dd-4e49-b2a2-9c620678457d.xml, DxgkDdiRemoveDevice, DxgkDdiRemoveDevice callback function [Display Devices], display.dxgkddiremovedevice, dispmprt/DxgkDdiRemoveDevice
 req.header: dispmprt.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
- - DxgkDdiRemoveDevice
+ - DXGKDDI_REMOVE_DEVICE
 ---
 
 # DXGKDDI_REMOVE_DEVICE callback function
@@ -50,9 +49,9 @@ The <i>DxgkDdiRemoveDevice</i> function frees any resources allocated during <a 
 
 ## -parameters
 
-### -param MiniportDeviceContext 
+### -param MiniportDeviceContext [in]
 
-[in]
+
 A handle to a context block associated with a display adapter. The display miniport driver's <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.
 
 ## -returns
@@ -68,3 +67,4 @@ A handle to a context block associated with a display adapter. The display minip
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a>
+

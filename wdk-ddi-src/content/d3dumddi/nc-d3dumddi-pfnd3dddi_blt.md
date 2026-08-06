@@ -1,10 +1,9 @@
 ---
 UID: NC:d3dumddi.PFND3DDDI_BLT
 title: PFND3DDDI_BLT (d3dumddi.h)
-description: The Blt function copies the contents of a source surface to a destination surface.
+description: The PFND3DDDI_BLT callback function copies the contents of a source surface to a destination surface.
 old-location: display\blt.htm
 tech.root: display
-ms.assetid: e87576c6-0173-4d8e-bbaf-b82e2907140a
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_BLT callback function"]
 ms.keywords: Blt, Blt callback function [Display Devices], PFND3DDDI_BLT, PFND3DDDI_BLT callback, UserModeDisplayDriver_Functions_d2dfd3c9-e7e0-4953-bc88-3d3330aff161.xml, d3dumddi/Blt, display.blt
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - Blt
-product:
- - Windows
+ - PFND3DDDI_BLT
 ---
 
 # PFND3DDDI_BLT callback function
@@ -56,7 +53,7 @@ The <b>Blt</b> function copies the contents of a source surface to a destination
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -108,3 +105,4 @@ The Direct3D runtime can call the user-mode display driver's <b>Blt</b> function
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_rendercb">pfnRenderCb</a>
+

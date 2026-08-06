@@ -4,7 +4,6 @@ title: IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink (wudfddi.h)
 description: The RetrieveSymbolicLink method retrieves the symbolic link name that the operating system assigned to a device interface.
 old-location: wdf\iwdfremoteinterfaceinitialize_retrievesymboliclink.htm
 tech.root: wdf
-ms.assetid: e3203542-177c-440a-8d41-4d70d77f804d
 ms.date: 02/26/2018
 keywords: ["IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink"]
 ms.keywords: IWDFRemoteInterfaceInitialize interface,RetrieveSymbolicLink method, IWDFRemoteInterfaceInitialize.RetrieveSymbolicLink, IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink, RetrieveSymbolicLink, RetrieveSymbolicLink method, RetrieveSymbolicLink method,IWDFRemoteInterfaceInitialize interface, UMDFIoTargetObjectRef_e76cdd61-351a-43f9-93a6-6991159e3d53.xml, umdf.iwdfremoteinterfaceinitialize_retrievesymboliclink, wdf.iwdfremoteinterfaceinitialize_retrievesymboliclink, wudfddi/IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFRemoteInterfaceInitialize.RetrieveSymbolicLink
+ - IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink
 ---
 
 # IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink
@@ -52,14 +51,14 @@ The <b>RetrieveSymbolicLink</b> method retrieves the symbolic link name that the
 
 ## -parameters
 
-### -param pSymbolicLink 
+### -param pSymbolicLink [out, optional]
 
-[out, optional]
+
 A pointer to a buffer that receives a <b>null</b>-terminated Unicode character string that represents the symbolic link name. Set this pointer to <b>NULL</b> to obtain the required buffer size.
 
-### -param pdwSymbolicLinkLengthInChars 
+### -param pdwSymbolicLinkLengthInChars [in, out]
 
-[in, out]
+
 A pointer to a caller-allocated location. On input, this location must contain the caller-supplied length of the buffer that <i>pSymbolicLink</i> points to. On output, the location receives the length, in characters, of the symbolic link name, including the <b>NULL</b> terminating character.
 
 ## -returns
@@ -141,7 +140,6 @@ Error:
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfremoteinterfaceinitialize">IWDFRemoteInterfaceInitialize</a>
@@ -149,3 +147,4 @@ Error:
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfremoteinterfaceinitialize-getinterfaceguid">IWDFRemoteInterfaceInitialize::GetInterfaceGuid</a>
+

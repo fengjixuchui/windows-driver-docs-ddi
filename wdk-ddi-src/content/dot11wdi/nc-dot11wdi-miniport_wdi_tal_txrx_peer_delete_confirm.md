@@ -4,7 +4,6 @@ title: MINIPORT_WDI_TAL_TXRX_PEER_DELETE_CONFIRM (dot11wdi.h)
 description: The MiniportWdiTalTxRxPeerDeleteConfirm handler function is invoked after the completion of a PeerDeleteIndication call which did not return success.
 old-location: netvista\miniportwditaltxrxpeerdeleteconfirm.htm
 tech.root: netvista
-ms.assetid: 993C600F-E2FA-46D7-AE66-77048B481660
 ms.date: 05/02/2018
 keywords: ["MINIPORT_WDI_TAL_TXRX_PEER_DELETE_CONFIRM callback function"]
 ms.keywords: MINIPORT_WDI_TAL_TXRX_PEER_DELETE_CONFIRM, MINIPORT_WDI_TAL_TXRX_PEER_DELETE_CONFIRM callback, MiniportWdiTalTxRxPeerDeleteConfirm, MiniportWdiTalTxRxPeerDeleteConfirm callback function [Network Drivers Starting with Windows Vista], dot11wdi/MiniportWdiTalTxRxPeerDeleteConfirm, netvista.miniportwditaltxrxpeerdeleteconfirm
@@ -38,13 +37,16 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
- - MiniportWdiTalTxRxPeerDeleteConfirm
+ - MINIPORT_WDI_TAL_TXRX_PEER_DELETE_CONFIRM
 ---
 
 # MINIPORT_WDI_TAL_TXRX_PEER_DELETE_CONFIRM callback function
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The 
   MiniportWdiTalTxRxPeerDeleteConfirm handler function is invoked after the completion of a  <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_peer_delete_ind">PeerDeleteIndication</a> call which did not return success.  This is called after a successful <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tx_abort">MiniportWdiTxAbort</a> (or <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_tx_abort_confirm">TxAbortConfirm</a>) and after all outstanding TX frames for the peer are completed.  After this call, the mapping between the peer Id and MAC address is no longer valid and the peer Id and MAC address may be used for future <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_peer_create_ind">PeerCreateIndication</a> calls.
@@ -55,19 +57,19 @@ This is a WDI miniport handler inside <a href="/windows-hardware/drivers/ddi/dot
 
 ## -parameters
 
-### -param MiniportTalTxRxContext 
+### -param MiniportTalTxRxContext [in]
 
-[in]
+
 TAL device handle returned by the IHV miniport in <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tal_txrx_initialize">MiniportWdiTalTxRxInitialize</a>.
 
-### -param PortId 
+### -param PortId [in]
 
-[in]
+
 Port ID associated with the peer.
 
-### -param PeerId 
+### -param PeerId [in]
 
-[in]
+
 Peer ID for the peer.
 
 ## -see-also
@@ -105,3 +107,4 @@ Peer ID for the peer.
 
 
 <a href="/windows-hardware/drivers/network/wdi-port-id">WDI_PORT_ID</a>
+

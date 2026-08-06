@@ -4,7 +4,6 @@ title: IPrintOemDriverUni::DrvUniTextOut (prcomoem.h)
 description: The IPrintOemDriverUni::DrvUniTextOut method is provided by the Unidrv driver so that a rendering plug-in using a device-managed drawing surface can easily output text strings.
 old-location: print\iprintoemdriveruni_drvunitextout.htm
 tech.root: print
-ms.assetid: f8c21813-9bfd-46a5-abb2-78ac2f2301af
 ms.date: 04/20/2018
 keywords: ["IPrintOemDriverUni::DrvUniTextOut"]
 ms.keywords: DrvUniTextOut, DrvUniTextOut method [Print Devices], DrvUniTextOut method [Print Devices],IPrintOemDriverUni interface, IPrintOemDriverUni interface [Print Devices],DrvUniTextOut method, IPrintOemDriverUni.DrvUniTextOut, IPrintOemDriverUni::DrvUniTextOut, prcomoem/IPrintOemDriverUni::DrvUniTextOut, print.iprintoemdriveruni_drvunitextout, print_unidrv-pscript_rendering_a67dafd9-26b4-43ad-82f9-e53caca33053.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemDriverUni.DrvUniTextOut
+ - IPrintOemDriverUni::DrvUniTextOut
 ---
 
 # IPrintOemDriverUni::DrvUniTextOut
@@ -141,3 +140,4 @@ The <code>IPrintOemDriverUni::DrvUniTextOut</code> method is provided by Unidrv 
 If <code>IPrintOemDriverUni::DrvUniTextOut</code> cannot create the text string, either because the font is not available or is rotated, it calls the rendering plug-in's <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-textoutasbitmap">IPrintOemUni::TextOutAsBitmap</a> method, which draws the text string as a bitmap.
 
 For more information, see <a href="/windows-hardware/drivers/print/handling-device-managed-surfaces">Handling Device-Managed Surfaces</a>.
+

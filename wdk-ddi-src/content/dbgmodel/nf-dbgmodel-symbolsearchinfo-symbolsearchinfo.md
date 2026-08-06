@@ -1,9 +1,8 @@
 ---
 UID: NF:dbgmodel.SymbolSearchInfo.SymbolSearchInfo
-title: SymbolSearchInfo function (dbgmodel.h)
-description: The search record passed to EnumerateChildrenEx in order to restrict symbol searches.
-ms.assetid: ba74703e-32e0-46eb-a219-b8804c21d8b2
-ms.date: 10/04/2018
+title: SymbolSearchInfo ULONG function (dbgmodel.h)
+description: The SymbolSearchInfo function (dbgmodel.h) constructs a SymbolSearchInfo, a search record passed to EnumerateChildrenEx to restrict symbol searches. Does not take any parameters.
+ms.date: 05/25/2022
 keywords: ["SymbolSearchInfo function"]
 ms.keywords: SymbolSearchInfo
 req.header: dbgmodel.h
@@ -36,15 +35,14 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - SymbolSearchInfo
+ - SymbolSearchInfo::SymbolSearchInfo
 ---
 
-# SymbolSearchInfo function (dbgmodel.h)
-
+# SymbolSearchInfo ULONG function (dbgmodel.h)
 
 ## -description
 
-The search record passed to EnumerateChildrenEx in order to restrict symbol searches.
+The search record passed to EnumerateChildrenEx in order to restrict symbol searches. This form of the function does not take any parameters.
 
 A given kind of symbol (as indicated by the SymbolKind enumeration) searched may have its own derived type.
 
@@ -54,11 +52,11 @@ A given kind of symbol (as indicated by the SymbolKind enumeration) searched may
 
 The derived size.
 
-## -returns
+## -remarks
+
+### Returns
 
 This function is a constructor and does not return a value.
-
-## -remarks
 
 ## -see-also
 

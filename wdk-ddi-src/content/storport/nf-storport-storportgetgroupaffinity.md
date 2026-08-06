@@ -4,7 +4,6 @@ title: StorPortGetGroupAffinity function (storport.h)
 description: The StorPortGetGroupAffinity routine constructs a mask of the active processors in a requested group.
 old-location: storage\storportgetgroupaffinity.htm
 tech.root: storage
-ms.assetid: eec0c985-fb59-4190-afb8-5eb62ac1edea
 ms.date: 03/29/2018
 keywords: ["StorPortGetGroupAffinity function"]
 ms.keywords: StorPortGetGroupAffinity, StorPortGetGroupAffinity routine [Storage Devices], storage.storportgetgroupaffinity, storport/StorPortGetGroupAffinity, storprt_9fdfdc84-3e8f-4227-9799-4ccf08f802df.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,19 +49,19 @@ The <b>StorPortGetGroupAffinity</b> routine constructs a mask of the active proc
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param GroupNumber 
+### -param GroupNumber [in]
 
-[in]
+
 The group from which to return the processor mask.
 
-### -param GroupAffinityMask 
+### -param GroupAffinityMask [out]
 
-[out]
+
 A pointer to a variable that holds the affinity mask of the given group.
 
 ## -returns

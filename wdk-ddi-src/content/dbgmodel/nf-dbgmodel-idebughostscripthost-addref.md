@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostScriptHost.AddRef
 title: IDebugHostScriptHost::AddRef (dbgmodel.h)
-description: Increments the reference count for an interface on an object. This method should be called for every new copy of a pointer to an interface on an object.
-ms.assetid: 6157bf00-27c6-4c39-a142-7d1f4bd56138
+description: "The IDebugHostScriptHost::AddRef method increments the reference count for an interface on an object."
 ms.date: 09/21/2018
 keywords: ["IDebugHostScriptHost::AddRef"]
 ms.keywords: IDebugHostScriptHost::AddRef, AddRef, IDebugHostScriptHost.AddRef, IDebugHostScriptHost::AddRef, IDebugHostScriptHost.AddRef
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostScriptHost.AddRef
+ - IDebugHostScriptHost::AddRef
 ---
 
 # IDebugHostScriptHost::AddRef
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IDebugHostScriptHost interface](nn-dbgmodel-idebughostscripthost.md)
+

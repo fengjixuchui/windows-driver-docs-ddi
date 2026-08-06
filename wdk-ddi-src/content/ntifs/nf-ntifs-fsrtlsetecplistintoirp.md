@@ -4,7 +4,6 @@ title: FsRtlSetEcpListIntoIrp function (ntifs.h)
 description: The FsRtlSetEcpListIntoIrp routine attaches an extra create parameter (ECP) context structure list to an IRP_MJ_CREATE operation.
 old-location: ifsk\fsrtlsetecplistintoirp.htm
 tech.root: ifsk
-ms.assetid: 370da53a-3c20-4e45-8732-8f08aa2d96ae
 ms.date: 04/16/2018
 keywords: ["FsRtlSetEcpListIntoIrp function"]
 ms.keywords: FsRtlSetEcpListIntoIrp, FsRtlSetEcpListIntoIrp routine [Installable File System Drivers], fsrtlref_b292fe42-cbfa-430d-abca-528482cecbed.xml, ifsk.fsrtlsetecplistintoirp, ntifs/FsRtlSetEcpListIntoIrp
@@ -50,14 +49,14 @@ The <b>FsRtlSetEcpListIntoIrp</b> routine attaches an extra create parameter (EC
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in, out]
 
-[in, out]
+
 A pointer to the IRP for an IRP_MJ_CREATE operation to which the ECP context structure list is to be attached.
 
-### -param EcpList 
+### -param EcpList [in]
 
-[in]
+
 Pointer to an ECP list that contains one or more ECP context structures. These structures will be attached to the IRP to which the <i>Irp</i> parameter points.
 
 ## -returns

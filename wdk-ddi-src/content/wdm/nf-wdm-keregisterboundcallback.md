@@ -4,7 +4,6 @@ title: KeRegisterBoundCallback function (wdm.h)
 description: The KeRegisterBoundCallback routine registers a routine to be called whenever a user-mode bound exception occurs.
 old-location: kernel\keregisterboundcallback.htm
 tech.root: kernel
-ms.assetid: 0985589E-074A-45C8-9F8A-384DC42EC884
 ms.date: 04/30/2018
 keywords: ["KeRegisterBoundCallback function"]
 ms.keywords: KeRegisterBoundCallback, KeRegisterBoundCallback routine [Kernel-Mode Driver Architecture], kernel.keregisterboundcallback, wdm/KeRegisterBoundCallback
@@ -50,9 +49,9 @@ The <b>KeRegisterBoundCallback</b> routine registers a routine to be called when
 
 ## -parameters
 
-### -param CallbackRoutine 
+### -param CallbackRoutine [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-bound_callback">BoundCallback</a> function.
 
 ## -returns

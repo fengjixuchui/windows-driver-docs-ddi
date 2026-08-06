@@ -1,17 +1,15 @@
 ---
 UID: NF:ntifs.FsRtlIssueDeviceIoControl
 title: FsRtlIssueDeviceIoControl function (ntifs.h)
-description: The FsRtlIssueDeviceIoControl routine sends a synchronous device I/O control request to a target device object.
-old-location: ifsk\fsrtlissuedeviceiocontrol.htm
+description: Learn more about the FsRtlIssueDeviceIoControl routine.
 tech.root: ifsk
-ms.assetid: 3BB31389-EB1B-4443-9FCF-70B420D71126
-ms.date: 04/16/2018
+ms.date: 07/06/2023
 keywords: ["FsRtlIssueDeviceIoControl function"]
-ms.keywords: FsRtlIssueDeviceIoControl, FsRtlIssueDeviceIoControl routine [Installable File System Drivers], ifsk.fsrtlissuedeviceiocontrol, ntifs/FsRtlIssueDeviceIoControl
+ms.keywords: FsRtlIssueDeviceIoControl, ifsk.fsrtlissuedeviceiocontrol, ntifs/FsRtlIssueDeviceIoControl
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -44,56 +42,48 @@ api_name:
 
 # FsRtlIssueDeviceIoControl function
 
-
 ## -description
 
-The <b>FsRtlIssueDeviceIoControl</b> routine sends a synchronous device I/O control request to a target device object.
+The **FsRtlIssueDeviceIoControl** routine sends a synchronous device I/O control request to a target device object.
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
 The target device object.
 
-### -param IoCtl 
+### -param IoCtl [in]
 
-[in]
 The IOCTL control code to issue.
 
 ### -param Flags
 
-<p>The desired IRP flags to set for IOCTL request.</p>
+The desired IRP flags to set for IOCTL request.
 
-### -param InputBuffer 
+### -param InputBuffer [in, optional]
 
-[in, optional]
 An optional buffer containing the input data for the request.
 
-### -param InputBufferLength 
+### -param InputBufferLength [in]
 
-[in]
-The length, in bytes, of the input data in <i>InputBuffer</i>.
+The length, in bytes, of the input data in **InputBuffer**.
 
-### -param OutputBuffer 
+### -param OutputBuffer [out, optional]
 
-[out, optional]
 An optional caller-supplied output buffer for returned data.
 
-### -param OutputBufferLength 
+### -param OutputBufferLength [in]
 
-[in]
-The length, in bytes, of the output data buffer at <i>OutputBuffer</i>.
+The length, in bytes, of the output data buffer at **OutputBuffer**.
 
-### -param IosbInformation 
+### -param IosbInformation [in]
 
-[in]
-A pointer to a <b>ULONG</b> status value to receive the information field value set in the I/O status block at completion of the request.
+A pointer to a ULONG status value to receive the information field value set in the I/O status block at completion of the request.
 
 ## -returns
 
-<b>FsRtlIssueDeviceIoControl</b> returns <b>STATUS_SUCCESS</b> or an another <b>NTSTATUS</b> value returned in the status block from the I/O operation.
+**FsRtlIssueDeviceIoControl** returns STATUS_SUCCESS or another NTSTATUS value returned in the status block from the I/O operation.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdeviceiocontrolfile">FltDeviceIoControlFile</a>
+[**FltDeviceIoControlFile**](../fltkernel/nf-fltkernel-fltdeviceiocontrolfile.md)

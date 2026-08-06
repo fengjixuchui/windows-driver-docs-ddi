@@ -1,10 +1,9 @@
 ---
 UID: NC:ks.PFNQUERYREFERENCESTRING
 title: PFNQUERYREFERENCESTRING (ks.h)
-description: This routine creates a buffer from the paged pool and copies the reference string associated with the PDO into this buffer. It is the caller's responsibility to free the buffer using ExFreePool.
+description: The PFNQUERYREFERENCESTRING callback function (ks.h) copies the reference string associated with the PDO into a buffer that is created and freed by the caller.
 old-location: stream\kstrqueryreferencestring.htm
 tech.root: stream
-ms.assetid: 08fd750f-19cc-4d78-a26b-9f790c5c3acf
 ms.date: 04/23/2018
 keywords: ["PFNQUERYREFERENCESTRING callback function"]
 ms.keywords: KStrQueryReferenceString, KStrQueryReferenceString routine [Streaming Media Devices], PFNQUERYREFERENCESTRING, ks/KStrQueryReferenceString, ksfunc_ce750f42-efeb-4861-b451-ef0f8be40f9a.xml, stream.kstrqueryreferencestring
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - KStrQueryReferenceString
+ - PFNQUERYREFERENCESTRING
 ---
 
 # PFNQUERYREFERENCESTRING callback function (ks.h)
@@ -50,14 +49,14 @@ This routine creates a buffer from the paged pool and copies the reference strin
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to a device extension of the device's PDO.
 
-### -param String 
+### -param String [in, out]
 
-[in, out]
+
 Pointer to a string containing the reference string associated with the PDO.
 
 ## -returns
@@ -67,3 +66,4 @@ None.
 ## -remarks
 
 The driver can access this method through the <b>QueryReferenceString</b> member of the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-bus_interface_reference">BUS_INTERFACE_REFERENCE</a> structure.
+

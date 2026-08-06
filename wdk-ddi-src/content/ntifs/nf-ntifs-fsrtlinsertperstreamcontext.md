@@ -4,14 +4,13 @@ title: FsRtlInsertPerStreamContext function (ntifs.h)
 description: The FsRtlInsertPerStreamContext routine associates a file system filter driver's per-stream context structure with a file stream.
 old-location: ifsk\fsrtlinsertperstreamcontext.htm
 tech.root: ifsk
-ms.assetid: d1592021-7765-4553-bcb0-9124af44123f
 ms.date: 04/16/2018
 keywords: ["FsRtlInsertPerStreamContext function"]
 ms.keywords: FsRtlInsertPerStreamContext, FsRtlInsertPerStreamContext routine [Installable File System Drivers], fsrtlref_91ced881-cdb2-41ca-b569-992d6b43e2f4.xml, ifsk.fsrtlinsertperstreamcontext, ntifs/FsRtlInsertPerStreamContext
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
+req.target-min-winverclnt: Windows 2000 SP4 Update Rollup; Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -54,9 +53,9 @@ The <b>FsRtlInsertPerStreamContext</b> routine associates a file system filter d
 
 <p>Pointer to the FSRTL_ADVANCED_FCB_HEADER structure for the file stream. To get this pointer from a file object, use the <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlgetperstreamcontextpointer"><b>FsRtlGetPerStreamContextPointer</b></a> macro. </p>
 
-### -param Ptr 
+### -param Ptr [in]
 
-[in]
+
 Pointer to a FSRTL_PER_STREAM_CONTEXT structure that the filter driver has allocated and initialized. To initialize this structure, use the <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlinitperstreamcontext">FsRtlInitPerStreamContext</a> macro.
 
 ## -returns

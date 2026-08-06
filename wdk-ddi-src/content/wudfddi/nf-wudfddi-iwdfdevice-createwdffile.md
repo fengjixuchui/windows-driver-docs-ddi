@@ -4,7 +4,6 @@ title: IWDFDevice::CreateWdfFile (wudfddi.h)
 description: The CreateWdfFile method creates a file object for a driver to use.
 old-location: wdf\iwdfdevice_createwdffile.htm
 tech.root: wdf
-ms.assetid: b356e3ac-451d-4a10-94e2-d03fcf76cb29
 ms.date: 02/26/2018
 keywords: ["IWDFDevice::CreateWdfFile"]
 ms.keywords: CreateWdfFile, CreateWdfFile method, CreateWdfFile method,IWDFDevice interface, IWDFDevice interface,CreateWdfFile method, IWDFDevice.CreateWdfFile, IWDFDevice::CreateWdfFile, UMDFDeviceObjectRef_d5f035e1-d7ea-474e-9dc4-bc6b64baea2c.xml, umdf.iwdfdevice_createwdffile, wdf.iwdfdevice_createwdffile, wudfddi/IWDFDevice::CreateWdfFile
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice.CreateWdfFile
+ - IWDFDevice::CreateWdfFile
 ---
 
 # IWDFDevice::CreateWdfFile
@@ -52,14 +51,14 @@ The <b>CreateWdfFile</b> method creates a file object for a driver to use.
 
 ## -parameters
 
-### -param pcwszFileName 
+### -param pcwszFileName [in, optional]
 
-[in, optional]
+
 A pointer to a <b>NULL</b>-terminated string that contains the name of the file to create a file object from. This parameter is optional. The driver can pass <b>NULL</b> if the driver does not have to create the file object from a file name. If the driver must supply a name, the string that the driver passes must not contain any path separator characters ("/" or "\\").
 
-### -param ppFile 
+### -param ppFile [out]
 
-[out]
+
 A pointer to a buffer that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdrivercreatedfile">IWDFDriverCreatedFile</a> interface for the driver-created file object.
 
 ## -returns
@@ -79,3 +78,4 @@ For information about when a UMDF driver might use <b>CreateWdfFile</b> to preve
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdrivercreatedfile">IWDFDriverCreatedFile</a>
+

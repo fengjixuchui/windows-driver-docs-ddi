@@ -4,7 +4,6 @@ title: _FEATURE_DATA_DISC_CONTROL_BLOCKS (ntddmmc.h)
 description: The FEATURE_DATA_DISC_CONTROL_BLOCKS structure holds an array of the data reported for the Disc Control Block feature.
 old-location: storage\feature_data_disc_control_blocks.htm
 tech.root: storage
-ms.assetid: ed39e714-38c5-45cf-b1f0-dd00b4d49895
 ms.date: 03/29/2018
 keywords: ["FEATURE_DATA_DISC_CONTROL_BLOCKS structure"]
 ms.keywords: "*PFEATURE_DATA_DISC_CONTROL_BLOCKS, FEATURE_DATA_DISC_CONTROL_BLOCKS, FEATURE_DATA_DISC_CONTROL_BLOCKS structure [Storage Devices], PFEATURE_DATA_DISC_CONTROL_BLOCKS, PFEATURE_DATA_DISC_CONTROL_BLOCKS structure pointer [Storage Devices], _FEATURE_DATA_DISC_CONTROL_BLOCKS, ntddmmc/FEATURE_DATA_DISC_CONTROL_BLOCKS, ntddmmc/PFEATURE_DATA_DISC_CONTROL_BLOCKS, storage.feature_data_disc_control_blocks, structs-CD-ROM_313fa292-b1c4-408d-94e9-491cb3d0aa0f.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddmmc.h
 api_name:
+ - _FEATURE_DATA_DISC_CONTROL_BLOCKS
+ - PFEATURE_DATA_DISC_CONTROL_BLOCKS
  - FEATURE_DATA_DISC_CONTROL_BLOCKS
 ---
 
@@ -77,3 +78,4 @@ This structure holds data for the feature named "Disc Control Blocks" by the <i>
 
 
 <a href="/windows-hardware/drivers/ddi/ntddmmc/ne-ntddmmc-_feature_number">FEATURE_NUMBER</a>
+

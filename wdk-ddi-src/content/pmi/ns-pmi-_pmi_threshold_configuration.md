@@ -4,7 +4,6 @@ title: _PMI_THRESHOLD_CONFIGURATION (pmi.h)
 description: The PMI_THRESHOLD_CONFIGURATION structure contains information about the threshold configuration of the power meter.
 old-location: powermeter\pmi_threshold_configuration.htm
 tech.root: powermeter
-ms.assetid: f2a76389-575d-425b-afe6-27fb93e101eb
 ms.date: 05/08/2018
 keywords: ["PMI_THRESHOLD_CONFIGURATION structure"]
 ms.keywords: "*PPMI_THRESHOLD_CONFIGURATION, PMI_THRESHOLD_CONFIGURATION, PMI_THRESHOLD_CONFIGURATION structure [Power Metering and Budgeting Devices], PPMI_THRESHOLD_CONFIGURATION, PPMI_THRESHOLD_CONFIGURATION structure pointer [Power Metering and Budgeting Devices], PowerMeterRef_0c5ec9e4-4a74-4fcc-b134-e66cd14f0352.xml, _PMI_THRESHOLD_CONFIGURATION, pmi/PMI_THRESHOLD_CONFIGURATION, pmi/PPMI_THRESHOLD_CONFIGURATION, powermeter.pmi_threshold_configuration"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pmi.h
 api_name:
+ - _PMI_THRESHOLD_CONFIGURATION
+ - PPMI_THRESHOLD_CONFIGURATION
  - PMI_THRESHOLD_CONFIGURATION
 ---
 
@@ -82,3 +83,4 @@ Power levels that are monitored by the power meter drop below the <b>UpperThresh
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/pmi/ni-pmi-ioctl_pmi_register_event_notify">IOCTL_PMI_REGISTER_EVENT_NOTIFY</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols.AppendSymbolPath
 title: IDebugSymbols::AppendSymbolPath (dbgeng.h)
-description: The AppendSymbolPath method appends directories to the symbol path.
+description: The AppendSymbolPath method appends directories to the symbol path. This method belongs to the IDebugSymbols interface.
 old-location: debugger\appendsymbolpath.htm
 tech.root: debugger
-ms.assetid: 99a0ded5-2a73-40c9-99f4-82d31395aa62
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols::AppendSymbolPath"]
 ms.keywords: AppendSymbolPath, AppendSymbolPath method [Windows Debugging], AppendSymbolPath method [Windows Debugging],IDebugSymbols interface, AppendSymbolPath method [Windows Debugging],IDebugSymbols2 interface, AppendSymbolPath method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],AppendSymbolPath method, IDebugSymbols.AppendSymbolPath, IDebugSymbols2 interface [Windows Debugging],AppendSymbolPath method, IDebugSymbols2::AppendSymbolPath, IDebugSymbols3 interface [Windows Debugging],AppendSymbolPath method, IDebugSymbols3::AppendSymbolPath, IDebugSymbols::AppendSymbolPath, IDebugSymbols_cc73a8f6-3cf1-40a1-8cb5-712eeca0b883.xml, dbgeng/IDebugSymbols2::AppendSymbolPath, dbgeng/IDebugSymbols3::AppendSymbolPath, dbgeng/IDebugSymbols::AppendSymbolPath, debugger.appendsymbolpath
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSymbols.AppendSymbolPath
- - IDebugSymbols2.AppendSymbolPath
- - IDebugSymbols3.AppendSymbolPath
+ - IDebugSymbols::AppendSymbolPath
 ---
 
 # IDebugSymbols::AppendSymbolPath
@@ -52,9 +49,9 @@ The <b>AppendSymbolPath</b>  method appends directories to the symbol path.
 
 ## -parameters
 
-### -param Addition 
+### -param Addition [in]
 
-[in]
+
 Specifies the directories to append to the symbol path.  This is a string that contains symbol path elements separated by semicolons (;).  Each symbol path element can specify either a directory or a symbol server.
 
 ## -returns
@@ -103,3 +100,4 @@ For more information about manipulating the symbol path, see <a href="/windows-h
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-setsymbolpath">SetSymbolPath</a>
+

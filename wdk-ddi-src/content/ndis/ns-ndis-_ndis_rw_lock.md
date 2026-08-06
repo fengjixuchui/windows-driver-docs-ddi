@@ -4,8 +4,7 @@ title: _NDIS_RW_LOCK (ndis.h)
 description: The NDIS_RW_LOCK structure defines the attributes of a read/write lock.
 old-location: netvista\ndis_rw_lock.htm
 tech.root: netvista
-ms.assetid: b44e62ec-d36a-46df-846c-3f1cf6cef003
-ms.date: 05/02/2018
+ms.date: 12/02/2021
 keywords: ["NDIS_RW_LOCK structure"]
 ms.keywords: "*PNDIS_RW_LOCK, NDIS_RW_LOCK, NDIS_RW_LOCK structure [Network Drivers Starting with Windows Vista], PNDIS_RW_LOCK, PNDIS_RW_LOCK structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RW_LOCK, ndis/NDIS_RW_LOCK, ndis/PNDIS_RW_LOCK, ndis_processor_group_ref_4680aefb-5db5-4e48-aec2-a7c6769892aa.xml, netvista.ndis_rw_lock"
 req.header: ndis.h
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_RW_LOCK
+ - PNDIS_RW_LOCK
  - NDIS_RW_LOCK
 ---
 
@@ -55,6 +56,39 @@ The <b>NDIS_RW_LOCK</b> structure defines the attributes of a read/write lock. T
 
 ## -struct-fields
 
+### -field SpinLock
+
+Reserved.
+
+### -field Context
+
+Reserved.
+
+### -field Reserved
+
+Reserved.
+
+### -field RefCount
+
+Reserved.
+
+### -field RefCountEx
+
+Reserved.
+
+### -field RefCountLock
+
+Reserved.
+
+### -field SharedRefCount
+
+Reserved.
+
+### -field WriterWaiting
+
+Reserved.
+
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/drivers/ff567279(v=vs.85)">NDIS_RW_LOCK_EX</a>
+

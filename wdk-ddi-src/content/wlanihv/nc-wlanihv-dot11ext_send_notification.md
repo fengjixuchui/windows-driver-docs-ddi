@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_SEND_NOTIFICATION
 title: DOT11EXT_SEND_NOTIFICATION (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_SEND_NOTIFICATION callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extsendnotification.htm
 tech.root: netvista
-ms.assetid: 8191b375-537e-44df-920e-077c77ed2354
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_SEND_NOTIFICATION callback"]
 ms.keywords: DOT11EXT_SEND_NOTIFICATION, Dot11ExtSendNotification, Dot11ExtSendNotification callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_163e65f4-108a-4d10-bcf7-b487bd3cc0c9.xml, netvista.dot11extsendnotification, wlanihv/Dot11ExtSendNotification
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_SEND_NOTIFICATION
  - wlanihv/DOT11EXT_SEND_NOTIFICATION
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtSendNotification
+ - DOT11EXT_SEND_NOTIFICATION
 ---
 
 # DOT11EXT_SEND_NOTIFICATION callback
@@ -55,17 +53,17 @@ The IHV Extensions DLL calls the
 
 ## -parameters
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the wireless LAN (WLAN) adapter. This handle
      value was specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param pNotificationData 
+### -param pNotificationData [in]
 
-[in]
+
 A pointer to an
      <a href="/windows/win32/api/l2cmn/ns-l2cmn-l2_notification_data">L2_NOTIFICATION_DATA</a> structure.
 
@@ -105,3 +103,4 @@ If the IHV Extensions DLL allocated memory for the notification data referenced 
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+

@@ -4,7 +4,6 @@ title: _FLT_RELATED_OBJECTS (fltkernel.h)
 description: The FLT_RELATED_OBJECTS structure contains opaque pointers for the objects associated with an operation.
 old-location: ifsk\flt_related_objects.htm
 tech.root: ifsk
-ms.assetid: dd1730f5-58ff-4d0d-9a00-17cd1fe36c5f
 ms.date: 04/16/2018
 keywords: ["FLT_RELATED_OBJECTS structure"]
 ms.keywords: "*PFLT_RELATED_OBJECTS, FLT_RELATED_OBJECTS, FLT_RELATED_OBJECTS structure [Installable File System Drivers], FltSystemStructures_24fcdf06-9d2e-41bf-89f8-08cb37782089.xml, PFLT_RELATED_OBJECTS, PFLT_RELATED_OBJECTS structure pointer [Installable File System Drivers], _FLT_RELATED_OBJECTS, fltkernel/FLT_RELATED_OBJECTS, fltkernel/PFLT_RELATED_OBJECTS, ifsk.flt_related_objects"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - fltkernel.h
 api_name:
+ - _FLT_RELATED_OBJECTS
+ - PFLT_RELATED_OBJECTS
  - FLT_RELATED_OBJECTS
 ---
 
@@ -151,3 +152,4 @@ To retrieve pointers to a minifilter driver's contexts for the objects in an FLT
 
 
 <a href="/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_pre_operation_callback">PFLT_PRE_OPERATION_CALLBACK</a>
+

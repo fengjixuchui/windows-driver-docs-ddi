@@ -4,7 +4,6 @@ title: FltGetTopInstance function (fltkernel.h)
 description: The FltGetTopInstance routine returns an opaque instance pointer for the minifilter driver instance that is attached at the top of the instance stack for a given volume.
 old-location: ifsk\fltgettopinstance.htm
 tech.root: ifsk
-ms.assetid: 5c805b9d-0b9a-4fbb-8b96-3ac11a6e4898
 ms.date: 04/16/2018
 keywords: ["FltGetTopInstance function"]
 ms.keywords: FltApiRef_e_to_o_3f4205c4-12aa-43d4-b67f-258665d81164.xml, FltGetTopInstance, FltGetTopInstance routine [Installable File System Drivers], fltkernel/FltGetTopInstance, ifsk.fltgettopinstance
@@ -50,14 +49,14 @@ The <b>FltGetTopInstance</b> routine returns an opaque instance pointer for the 
 
 ## -parameters
 
-### -param Volume 
+### -param Volume [in]
 
-[in]
+
 Opaque pointer for the volume.
 
-### -param Instance 
+### -param Instance [out]
 
-[out]
+
 Pointer to a caller-allocated variable that receives an opaque instance pointer for the bottom instance for this volume. This parameter is required and cannot be <b>NULL</b>.
 
 ## -returns

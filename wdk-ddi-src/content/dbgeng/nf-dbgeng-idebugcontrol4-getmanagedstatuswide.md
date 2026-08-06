@@ -4,7 +4,6 @@ title: IDebugControl4::GetManagedStatusWide (dbgeng.h)
 description: Provides feedback as a Unicode character string on the engine's use of the runtime debugging APIs provided by the common language runtime (CLR).
 old-location: debugger\idebugcontrol4_getmanagedstatuswide.htm
 tech.root: debugger
-ms.assetid: 5854BB6A-EB5F-493A-96E4-0DF298EC0332
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::GetManagedStatusWide"]
 ms.keywords: GetManagedStatusWide, GetManagedStatusWide method [Windows Debugging], GetManagedStatusWide method [Windows Debugging],IDebugControl4 interface, IDebugControl4 interface [Windows Debugging],GetManagedStatusWide method, IDebugControl4.GetManagedStatusWide, IDebugControl4::GetManagedStatusWide, dbgeng/IDebugControl4::GetManagedStatusWide, debugger.idebugcontrol4_getmanagedstatuswide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.GetManagedStatusWide
+ - IDebugControl4::GetManagedStatusWide
 ---
 
 # IDebugControl4::GetManagedStatusWide
@@ -51,29 +50,29 @@ api_name:
 
 ## -parameters
 
-### -param Flags 
+### -param Flags [out, optional]
 
-[out, optional]
+
 A pointer to flags from the debugging APIs.
 
-### -param WhichString 
+### -param WhichString [in]
 
-[in]
+
 A value that controls which string to use.
 
-### -param String 
+### -param String [out]
 
-[out]
+
 A pointer to a Unicode character string from the debugging APIs.
 
-### -param StringSize 
+### -param StringSize [in]
 
-[in]
+
 The size of the string.
 
-### -param StringNeeded 
+### -param StringNeeded [out, optional]
 
-[out, optional]
+
 A pointer to an output string.
 
 ## -returns
@@ -104,3 +103,4 @@ Managed debugging support relies on debugging functionality provided by the CLR.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol4">IDebugControl4</a>
+

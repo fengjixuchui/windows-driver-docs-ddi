@@ -4,7 +4,6 @@ title: PFND3DDDI_DEALLOCATE2CB (d3dumddi.h)
 description: The pfnDeallocate2Cb user mode callback function releases allocations for a kernel-mode resource object if the resource object was created.
 old-location: display\pfndeallocate2cb.htm
 tech.root: display
-ms.assetid: 68C7EC44-D744-4C69-86D9-35B3B089875A
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DEALLOCATE2CB callback function"]
 ms.keywords: PFND3DDDI_DEALLOCATE2CB, PFND3DDDI_DEALLOCATE2CB callback, d3dumddi/pfnDeallocate2Cb, display.pfndeallocate2cb, pfnDeallocate2Cb, pfnDeallocate2Cb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnDeallocate2Cb
-product:
- - Windows
+ - PFND3DDDI_DEALLOCATE2CB
 ---
 
 # PFND3DDDI_DEALLOCATE2CB callback function
@@ -58,7 +55,7 @@ The <b>pfnDeallocate2Cb</b> user mode callback function releases allocations for
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -87,3 +84,4 @@ If an application or UMD would like to ensure allocation memory is reclaimed pri
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_deallocatecb">pfnDeallocateCb</a>
+

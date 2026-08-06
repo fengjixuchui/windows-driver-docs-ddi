@@ -4,7 +4,6 @@ title: IDebugRegisters2::SetValues2 (dbgeng.h)
 description: The SetValues2 method sets the value of several of the target's registers.
 old-location: debugger\setvalues2.htm
 tech.root: debugger
-ms.assetid: 9505a0ce-4f4e-43af-97a2-653b5776c423
 ms.date: 05/03/2018
 keywords: ["IDebugRegisters2::SetValues2"]
 ms.keywords: IDebugRegisters2 interface [Windows Debugging],SetValues2 method, IDebugRegisters2.SetValues2, IDebugRegisters2::SetValues2, IDebugRegisters_4e5c8f37-a5ad-4083-adb9-e75ec18542b2.xml, SetValues2, SetValues2 method [Windows Debugging], SetValues2 method [Windows Debugging],IDebugRegisters2 interface, dbgeng/IDebugRegisters2::SetValues2, debugger.setvalues2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugRegisters2.SetValues2
+ - IDebugRegisters2::SetValues2
 ---
 
 # IDebugRegisters2::SetValues2
@@ -50,9 +49,9 @@ The <b>SetValues2</b> method sets the value of several of the target's <a href="
 
 ## -parameters
 
-### -param Source 
+### -param Source [in]
 
-[in]
+
 Specifies the register source to query.
 
 The possible values are listed in the following table.
@@ -96,24 +95,24 @@ Fetch register information from the current scope's register context.
 </tr>
 </table>
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of registers for which to set the values.
 
-### -param Indices 
+### -param Indices [in, optional]
 
-[in, optional]
+
 Specifies an array that contains the indices of the registers for which to set the values.  The number of elements in this array is <i>Count</i>.  If <i>Indices</i> is <b>NULL</b>, <i>Start</i> is used instead.
 
-### -param Start 
+### -param Start [in]
 
-[in]
+
 If <i>Indices</i> is <b>NULL</b>, the registers will be set consecutively starting at this index.  Otherwise, it is ignored.
 
-### -param Values 
+### -param Values [in]
 
-[in]
+
 An array that contains the values to which to set the registers.  The number of elements that this array holds is <i>Count</i>.  See <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_value">DEBUG_VALUE</a> for a description of this parameter type.
 
 ## -returns
@@ -161,3 +160,4 @@ For an overview of the <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-i
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugregisters2-setvalues">SetValues</a>
+

@@ -4,7 +4,6 @@ title: IWDFInterrupt::Enable (wudfddi.h)
 description: The Enable method enables a specified device interrupt by calling the driver's OnInterruptEnable callback function.
 old-location: wdf\iwdfinterrupt_enable.htm
 tech.root: wdf
-ms.assetid: 605C58C2-9A4F-4185-BB5C-95C9F5180C05
 ms.date: 02/26/2018
 keywords: ["IWDFInterrupt::Enable"]
 ms.keywords: Enable, Enable method, Enable method,IWDFInterrupt interface, IWDFInterrupt interface,Enable method, IWDFInterrupt.Enable, IWDFInterrupt::Enable, umdf.iwdfinterrupt_enable, wdf.iwdfinterrupt_enable, wudfddi/IWDFInterrupt::Enable
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFInterrupt.Enable
+ - IWDFInterrupt::Enable
 ---
 
 # IWDFInterrupt::Enable
@@ -68,7 +67,6 @@ The following code example enables the device interrupt that is associated with 
 pIWdfInterrupt->Enable();
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfinterrupt">IWDFInterrupt</a>
@@ -76,3 +74,4 @@ pIWdfInterrupt->Enable();
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfinterrupt-disable">IWDFInterrupt::Disable</a>
+

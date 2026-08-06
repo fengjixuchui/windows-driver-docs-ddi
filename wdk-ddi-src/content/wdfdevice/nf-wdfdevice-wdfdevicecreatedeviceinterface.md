@@ -4,7 +4,6 @@ title: WdfDeviceCreateDeviceInterface function (wdfdevice.h)
 description: The WdfDeviceCreateDeviceInterface method creates a device interface for a specified device.
 old-location: wdf\wdfdevicecreatedeviceinterface.htm
 tech.root: wdf
-ms.assetid: cdfe1932-ee3d-41ea-8d7b-85c17c0f1722
 ms.date: 03/24/2020
 keywords: ["WdfDeviceCreateDeviceInterface function"]
 ms.keywords: DFDeviceObjectGeneralRef_467c4866-4ba7-4450-9aec-e63c3172d604.xml, WdfDeviceCreateDeviceInterface, WdfDeviceCreateDeviceInterface method, kmdf.wdfdevicecreatedeviceinterface, wdf.wdfdevicecreatedeviceinterface, wdfdevice/WdfDeviceCreateDeviceInterface
@@ -55,19 +54,19 @@ The <b>WdfDeviceCreateDeviceInterface</b> method creates a device interface for 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param InterfaceClassGUID 
+### -param InterfaceClassGUID [in]
 
-[in]
+
 A pointer to a GUID that identifies the device interface class.
 
-### -param ReferenceString 
+### -param ReferenceString [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that describes a reference string for the device interface. The string must not contain any path separator characters ("/" or "\\").  This parameter is optional and can be <b>NULL</b>.   For more information, see the following Remarks section.
 
 ## -returns

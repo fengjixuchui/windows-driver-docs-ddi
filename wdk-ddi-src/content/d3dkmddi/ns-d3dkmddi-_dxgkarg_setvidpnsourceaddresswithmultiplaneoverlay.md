@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY
 title: _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY (d3dkmddi.h)
 description: Contains arguments for the DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay function.
 old-location: display\dxgkarg_setvidpnsourceaddresswithmultiplaneoverlay.htm
-ms.assetid: 12266cb0-20c1-4077-b3c5-fb902f3805d3
 ms.date: 05/10/2018
 keywords: ["DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY structure"]
 ms.keywords: DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY, DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY structure [Display Devices], _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY, d3dkmddi/DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY, display.dxgkarg_setvidpnsourceaddresswithmultiplaneoverlay
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmddi.h
 api_name:
+ - _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY
  - DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY
 ---
 
@@ -52,17 +52,17 @@ Contains arguments for the <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3
 
 ## -struct-fields
 
-### -field ContextCount
+### -field ContextCount [in]
 
-[in] The number of contexts in the array that the <b>Context</b> member specifies.
+The number of contexts in the array that the <b>Context</b> member specifies.
 
-### -field Context
+### -field Context [in]
 
-[in] An array of handles to the contexts that contributed to a display operation.
+An array of handles to the contexts that contributed to a display operation.
 
-### -field Flags
+### -field Flags [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_setvidpnsourceaddress_flags">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a> structure that identifies the type of display operation to perform.
+A <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_setvidpnsourceaddress_flags">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a> structure that identifies the type of display operation to perform.
 
 ### -field VidPnSourceId
 
@@ -91,3 +91,4 @@ Must be supported by WDDM 1.3 and later drivers. Available starting with Windows
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_setvidpnsourceaddresswithmultiplaneoverlay">DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay</a>
+

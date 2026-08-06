@@ -4,7 +4,6 @@ title: AtaPortRegistryControllerKeyRead function (irb.h)
 description: The AtaPortRegistryControllerKeyRead routine reads the data that is associated with the indicated value name under the registry key HKLM\CurrentControlSet\Services\<service name>\ControllerN, where N is the number of the controller.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
 old-location: storage\ataportregistrycontrollerkeyread.htm
 tech.root: storage
-ms.assetid: 7db22027-49ac-4ee5-8da7-bbd16c97a35b
 ms.date: 03/29/2018
 keywords: ["AtaPortRegistryControllerKeyRead function"]
 ms.keywords: AtaPortRegistryControllerKeyRead, AtaPortRegistryControllerKeyRead routine [Storage Devices], atartns_eea8e60c-8cbd-4632-b5a4-17639f02f4d8.xml, irb/AtaPortRegistryControllerKeyRead, storage.ataportregistrycontrollerkeyread
@@ -51,24 +50,24 @@ The <b>AtaPortRegistryControllerKeyRead</b> routine reads the data that is assoc
 
 ## -parameters
 
-### -param ChannelExtension 
+### -param ChannelExtension [in]
 
-[in]
+
 A pointer to the channel extension.
 
-### -param ControllerNumber 
+### -param ControllerNumber [in]
 
-[in]
+
 Contains the controller number.
 
-### -param ValueName 
+### -param ValueName [in]
 
-[in]
+
 Contains the name of the registry value to read.
 
-### -param ValueType 
+### -param ValueType [in]
 
-[in]
+
 Indicates the type of the data that is contained in the registry value. This parameter should be assigned one of values indicated in the following table.
 
 <table>
@@ -108,9 +107,9 @@ A null-terminated, Unicode string.
 </tr>
 </table>
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 A pointer to the buffer where the results are to be copied.
 
 ### -param BufferLength

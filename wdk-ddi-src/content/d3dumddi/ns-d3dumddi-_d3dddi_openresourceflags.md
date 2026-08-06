@@ -4,7 +4,6 @@ title: _D3DDDI_OPENRESOURCEFLAGS (d3dumddi.h)
 description: The D3DDDI_OPENRESOURCEFLAGS structure identifies the type of resource to open.
 old-location: display\d3dddi_openresourceflags.htm
 tech.root: display
-ms.assetid: f65fda13-3d05-4e1b-b0c7-01e43a9bf09e
 ms.date: 05/10/2018
 keywords: ["D3DDDI_OPENRESOURCEFLAGS structure"]
 ms.keywords: D3DDDI_OPENRESOURCEFLAGS, D3DDDI_OPENRESOURCEFLAGS structure [Display Devices], D3D_other_Structs_918a41c9-09de-4916-a0d6-fd69f7c431c2.xml, _D3DDDI_OPENRESOURCEFLAGS, d3dumddi/D3DDDI_OPENRESOURCEFLAGS, display.d3dddi_openresourceflags
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDI_OPENRESOURCEFLAGS
  - D3DDDI_OPENRESOURCEFLAGS
 ---
 
@@ -75,3 +75,4 @@ A member in the union that is contained in D3DDDI_OPENRESOURCEFLAGS that can hol
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_openresource">D3DDDIARG_OPENRESOURCE</a>
+

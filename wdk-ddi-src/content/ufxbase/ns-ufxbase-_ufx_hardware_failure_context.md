@@ -4,7 +4,6 @@ title: _UFX_HARDWARE_FAILURE_CONTEXT (ufxbase.h)
 description: The UFX_HARDWARE_FAILURE_CONTEXT structure is used to define controller-specific hardware failure properties.
 old-location: buses\ufx_hardware_failure_context.htm
 tech.root: usbref
-ms.assetid: CA0268F3-44F0-4F64-A88D-9A2BBDE768EA
 ms.date: 05/07/2018
 keywords: ["UFX_HARDWARE_FAILURE_CONTEXT structure"]
 ms.keywords: "*PUFX_HARDWARE_FAILURE_CONTEXT, PUFX_HARDWARE_FAILURE_CONTEXT, PUFX_HARDWARE_FAILURE_CONTEXT structure pointer [Buses], UFX_HARDWARE_FAILURE_CONTEXT, UFX_HARDWARE_FAILURE_CONTEXT structure [Buses], _UFX_HARDWARE_FAILURE_CONTEXT, buses.ufx_hardware_failure_context, ufxbase/PUFX_HARDWARE_FAILURE_CONTEXT, ufxbase/UFX_HARDWARE_FAILURE_CONTEXT"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ufxbase.h
 api_name:
+ - _UFX_HARDWARE_FAILURE_CONTEXT
+ - PUFX_HARDWARE_FAILURE_CONTEXT
  - UFX_HARDWARE_FAILURE_CONTEXT
 ---
 
@@ -69,3 +70,4 @@ A variable-length array of data associated with the hardware failure.
 ## -remarks
 
 In cases where the function controller has experienced a fatal error, the client driver may allocate a variable-length <b>UFX_HARDWARE_FAILURE_CONTEXT</b> structure, set the <b>Size</b> field to the allocated size, set the <b>ExceptionCode</b> field to a value indicating the type of hardware error (as defined by the client driver) and fill in any associated information in the <b>Data</b> array.  It may then pass this structure to the <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicenotifyhardwarefailure">UfxDeviceNotifyHardwareFailure</a> UFX function. UFX will in turn pass this structure to the client driver’s <a href="/windows-hardware/drivers/ddi/ufxclient/nc-ufxclient-evt_ufx_device_controller_reset">EVT_UFX_DEVICE_CONTROLLER_RESET</a> event callback function (if it exists).
+

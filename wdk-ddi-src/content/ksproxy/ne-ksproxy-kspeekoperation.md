@@ -1,10 +1,9 @@
 ---
-UID: NE:ksproxy.__unnamed_enum_6
+UID: NE:ksproxy.KSPEEKOPERATION
 title: KSPEEKOPERATION (ksproxy.h)
-description: 
+description: "Learn more about: KSPEEKOPERATION enumeration"
 old-location: stream\kspeekoperation.htm
 tech.root: stream
-ms.assetid: 057E822B-0C55-4E4A-9207-48FB583E8EAF
 ms.date: 04/23/2018
 keywords: ["KSPEEKOPERATION enumeration"]
 ms.keywords: KSPEEKOPERATION, KSPEEKOPERATION enumeration [Streaming Media Devices], KsPeekOperation_AddRef, KsPeekOperation_PeekOnly, ksproxy/KSPEEKOPERATION, ksproxy/KsPeekOperation_AddRef, ksproxy/KsPeekOperation_PeekOnly, stream.kspeekoperation

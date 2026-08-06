@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILPOSITIONINFO_V2
 title: RILPOSITIONINFO_V2 (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILPOSITIONINFO_V2 structure for internal use only. Don't use this structure in your code."
 old-location: netvista\rilpositioninfo_v2_2.htm
 tech.root: netvista
-ms.assetid: f91d95bf-715d-484b-b44e-19bd2250d304
 ms.date: 02/26/2018
 keywords: ["RILPOSITIONINFO_V2 structure"]
 ms.keywords: "*LPRILPOSITIONINFO, *LPRILPOSITIONINFO_V2, RILPOSITIONINFO, RILPOSITIONINFO_V2, RILPOSITIONINFO_V2 structure [Network Drivers Starting with Windows Vista], netvista.rilpositioninfo_v2_2, rilapitypes/RILPOSITIONINFO_V2"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: RILPOSITIONINFO_V2, *LPRILPOSITIONINFO_V2, RILPOSITIONINFO, *LPRILPOSITIONINFO
-req.product: Windows 10 or later.
 f1_keywords:
  - RILPOSITIONINFO_V2
  - rilapitypes/RILPOSITIONINFO_V2
@@ -42,6 +40,7 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILPOSITIONINFO_V2
+ - LPRILPOSITIONINFO_V2
 ---
 
 # RILPOSITIONINFO_V2 structure (rilapitypes.h)

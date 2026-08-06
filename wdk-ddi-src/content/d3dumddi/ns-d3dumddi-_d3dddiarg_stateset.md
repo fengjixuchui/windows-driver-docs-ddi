@@ -4,7 +4,6 @@ title: _D3DDDIARG_STATESET (d3dumddi.h)
 description: The D3DDDIARG_STATESET structure describes how to set a state block.
 old-location: display\d3dddiarg_stateset.htm
 tech.root: display
-ms.assetid: 0e2d7e78-bdf1-4582-a95c-1cbdd498c200
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_STATESET structure"]
 ms.keywords: D3DDDIARG_STATESET, D3DDDIARG_STATESET structure [Display Devices], UMDisplayDriver_param_Structs_926f9aca-1ecc-4086-88b7-0d07df9a05ae.xml, _D3DDDIARG_STATESET, d3dumddi/D3DDDIARG_STATESET, display.d3dddiarg_stateset
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_STATESET
  - D3DDDIARG_STATESET
 ---
 
@@ -52,9 +52,9 @@ The D3DDDIARG_STATESET structure describes how to set a state block.
 
 ## -struct-fields
 
-### -field Operation
+### -field Operation [in]
 
-[in] The operation to perform, which can be one of the following values.
+The operation to perform, which can be one of the following values.
 
 | **Value** | **Meaning** | 
 |:--|:--|
@@ -65,9 +65,9 @@ The D3DDDIARG_STATESET structure describes how to set a state block.
 | D3DHAL_STATESETEND | End the state block that is referenced by the handle in hStateSet. | 
 | D3DHAL_STATESETEXECUTE | Run the state block that is referenced by the handle in hStateSet. |
 
-### -field StateBlockType
+### -field StateBlockType [in]
 
-[in] A D3DSTATEBLOCKTYPE-typed value that indicates the type of state that the driver should record. This member can be one of the following values.
+A D3DSTATEBLOCKTYPE-typed value that indicates the type of state that the driver should record. This member can be one of the following values.
 
 | **Value** | **Meaning** | 
 |:--|:--|
@@ -76,9 +76,9 @@ The D3DDDIARG_STATESET structure describes how to set a state block.
 | D3DSBT_VERTEXSTATE | The driver should capture only vertex state.<br/>When capturing vertex state in pure device mode, the driver should capture (record) all lights that have been used before the state block was created, the current vertex shader handle, the current vertex shader constants, and the following vertex processing-related render states and texture stage states:<br/>D3DRENDERSTATE_SHADEMODE D3DRENDERSTATE_SPECULARENABLE D3DRENDERSTATE_CULLMODE D3DRENDERSTATE_FOGENABLE D3DRENDERSTATE_FOGCOLOR D3DRENDERSTATE_FOGTABLEMODE D3DRENDERSTATE_FOGSTART D3DRENDERSTATE_FOGEND D3DRENDERSTATE_FOGDENSITY D3DRENDERSTATE_RANGEFOGENABLE D3DRENDERSTATE_AMBIENT D3DRENDERSTATE_COLORVERTEX D3DRENDERSTATE_FOGVERTEXMODE D3DRENDERSTATE_CLIPPING D3DRENDERSTATE_LIGHTING D3DRENDERSTATE_NORMALIZENORMALS D3DRENDERSTATE_LOCALVIEWER D3DRENDERSTATE_EMISSIVEMATERIALSOURCE D3DRENDERSTATE_AMBIENTMATERIALSOURCE D3DRENDERSTATE_DIFFUSEMATERIALSOURCE D3DRENDERSTATE_SPECULARMATERIALSOURCE D3DRENDERSTATE_VERTEXBLEND D3DRENDERSTATE_CLIPPLANEENABLE D3DRS_SOFTWAREVERTEXPROCESSING D3DRS_POINTSIZE D3DRS_POINTSIZE_MIN D3DRS_POINTSPRITEENABLE D3DRS_POINTSCALEENABLE D3DRS_POINTSCALE_A D3DRS_POINTSCALE_B D3DRS_POINTSCALE_C D3DRS_MULTISAMPLEANTIALIAS D3DRS_MULTISAMPLEMASK D3DRS_PATCHEDGESTYLE D3DRS_PATCHSEGMENTS D3DRS_POINTSIZE_MAX D3DRS_INDEXEDVERTEXBLENDENABLE D3DRS_TWEENFACTOR D3DTSS_TEXCOORDINDEX D3DTSS_TEXTURETRANSFORMFLAGS | 
 | NULL | No predefined state group is specified. |
 
-### -field hStateSet
+### -field hStateSet [in/out]
 
-[in/out] A handle to the state block that is manipulated by the operation that is specified in the <b>Operation</b> member.
+A handle to the state block that is manipulated by the operation that is specified in the <b>Operation</b> member.
 
 A state-block handle is passed in a call to the user-mode display driver's <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_stateset">StateSet</a> function when <b>Operation</b> is set to D3DHAL_STATESETEXECUTE.
 
@@ -93,3 +93,4 @@ The <b>StateBlockType</b> member is valid only for D3DHAL_STATESETBEGIN, D3DHAL_
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_stateset">StateSet</a>
+

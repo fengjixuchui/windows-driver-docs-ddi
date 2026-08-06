@@ -4,7 +4,6 @@ title: KeTryToAcquireGuardedMutex function (wdm.h)
 description: The KeTryToAcquireGuardedMutex routine acquires a guarded mutex, if available.
 old-location: kernel\ketrytoacquireguardedmutex.htm
 tech.root: kernel
-ms.assetid: 5fa704ec-5068-42e9-8d52-2f775fd0e5c9
 ms.date: 04/30/2018
 keywords: ["KeTryToAcquireGuardedMutex function"]
 ms.keywords: KeTryToAcquireGuardedMutex, KeTryToAcquireGuardedMutex routine [Kernel-Mode Driver Architecture], k105_4761d5a7-fc37-45de-a35e-7da9a99258b6.xml, kernel.ketrytoacquireguardedmutex, wdm/KeTryToAcquireGuardedMutex
@@ -50,9 +49,9 @@ The <b>KeTryToAcquireGuardedMutex</b> routine acquires a guarded mutex, if avail
 
 ## -parameters
 
-### -param Mutex 
+### -param Mutex [in, out]
 
-[in, out]
+
 Pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">KGUARDED_MUTEX</a> structure for the guarded mutex.
 
 ## -returns

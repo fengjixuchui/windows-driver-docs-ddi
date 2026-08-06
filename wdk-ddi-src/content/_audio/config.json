@@ -1,6 +1,21 @@
 {
   "tech": "audio",
   "headers": [
+    "a2dpsidebandaudio",
+    "acxcircuit.h",
+    "acxdevice.h",
+    "acxdataformat.h",
+    "acxdriver.h",
+    "acxelements.h",
+    "acxevents.h",
+    "acxfuncenum.h",
+    "acxmanager.h",
+    "acxmisc.h",
+    "acxpin.h",
+    "acxrequest.h",
+    "acxstreams.h",
+    "acxtargets.h",
+    "audiosensors.h",
     "bthhfpddi.h",
     "dmusicks.h",
     "dmusprop.h",
@@ -11,6 +26,7 @@
     "ksmedia.h",
     "portcls.h",
     "sidebandaudio.h",
+    "soundwireclass.h",
     "usbsidebandaudio.h"
   ],
   "displayName": "Audio"

@@ -4,7 +4,6 @@ title: _HDAUDIO_STREAM_FORMAT (hdaudio.h)
 description: The HDAUDIO_STREAM_FORMAT structure describes the data format of a capture or render stream.
 old-location: audio\hdaudio_stream_format.htm
 tech.root: audio
-ms.assetid: 475b7774-51ce-410d-aba8-a2317f44ce03
 ms.date: 05/08/2018
 keywords: ["HDAUDIO_STREAM_FORMAT structure"]
 ms.keywords: "*PHDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT, HDAUDIO_STREAM_FORMAT structure [Audio Devices], PHDAUDIO_STREAM_FORMAT, PHDAUDIO_STREAM_FORMAT structure pointer [Audio Devices], _HDAUDIO_STREAM_FORMAT, aud-prop2_80d1ef47-903a-4f6e-95c7-e30f07b105fe.xml, audio.hdaudio_stream_format, hdaudio/HDAUDIO_STREAM_FORMAT, hdaudio/PHDAUDIO_STREAM_FORMAT"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hdaudio.h
 api_name:
+ - _HDAUDIO_STREAM_FORMAT
+ - PHDAUDIO_STREAM_FORMAT
  - HDAUDIO_STREAM_FORMAT
 ---
 
@@ -91,3 +92,4 @@ This structure is similar to the <a href="/windows-hardware/drivers/ddi/ksmedia/
 
 
 <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_converter_format">HDAUDIO_CONVERTER_FORMAT</a>
+

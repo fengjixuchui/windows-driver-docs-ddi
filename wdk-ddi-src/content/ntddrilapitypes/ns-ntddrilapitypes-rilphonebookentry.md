@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILPHONEBOOKENTRY
 title: RILPHONEBOOKENTRY (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILPHONEBOOKENTRY structure for internal use only. Don't use the RILPHONEBOOKENTRY structure in your code."
 old-location: netvista\rilphonebookentry.htm
 tech.root: netvista
-ms.assetid: 2741d992-624a-4fd1-a1b5-57fb39c42f84
 ms.date: 05/02/2018
 keywords: ["RILPHONEBOOKENTRY structure"]
 ms.keywords: "*LPRILPHONEBOOKENTRY, RILPHONEBOOKENTRY, RILPHONEBOOKENTRY structure [Network Drivers Starting with Windows Vista], netvista.rilphonebookentry, ntddrilapitypes/RILPHONEBOOKENTRY"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILPHONEBOOKENTRY
+ - LPRILPHONEBOOKENTRY
 ---
 
 # RILPHONEBOOKENTRY structure (ntddrilapitypes.h)

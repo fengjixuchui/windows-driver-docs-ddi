@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl.SetExecutionStatus
 title: IDebugControl::SetExecutionStatus (dbgeng.h)
-description: The SetExecutionStatus method requests that the debugger engine enter an executable state. Actual execution will not occur until the next time WaitForEvent is called.
+description: The SetExecutionStatus method requests that the debugger engine enter an executable state. Actual execution doesn't happen until the next time WaitForEvent is called.
 old-location: debugger\setexecutionstatus.htm
 tech.root: debugger
-ms.assetid: f3468fe5-31b4-4bf6-b0e3-ee27ecfd8e06
 ms.date: 05/03/2018
 keywords: ["IDebugControl::SetExecutionStatus"]
 ms.keywords: IDebugControl interface [Windows Debugging],SetExecutionStatus method, IDebugControl.SetExecutionStatus, IDebugControl2 interface [Windows Debugging],SetExecutionStatus method, IDebugControl2::SetExecutionStatus, IDebugControl3 interface [Windows Debugging],SetExecutionStatus method, IDebugControl3::SetExecutionStatus, IDebugControl::SetExecutionStatus, IDebugControl_b89bf576-8a07-49a8-8373-0b915300d36a.xml, SetExecutionStatus, SetExecutionStatus method [Windows Debugging], SetExecutionStatus method [Windows Debugging],IDebugControl interface, SetExecutionStatus method [Windows Debugging],IDebugControl2 interface, SetExecutionStatus method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::SetExecutionStatus, dbgeng/IDebugControl3::SetExecutionStatus, dbgeng/IDebugControl::SetExecutionStatus, debugger.setexecutionstatus
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.SetExecutionStatus
- - IDebugControl2.SetExecutionStatus
- - IDebugControl3.SetExecutionStatus
+ - IDebugControl::SetExecutionStatus
 ---
 
 # IDebugControl::SetExecutionStatus
@@ -52,9 +49,9 @@ The <b>SetExecutionStatus</b> method requests that the debugger engine enter an 
 
 ## -parameters
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 Specifies the mode for the engine to use when executing.  Possible values are those values in the table in <a href="/windows-hardware/drivers/debugger/debug-status-xxx">DEBUG_STATUS_XXX</a> whose precedence lies between DEBUG_STATUS_GO and DEBUG_STATUS_STEP_INTO.
 
 ## -returns
@@ -131,3 +128,4 @@ For more information, see <a href="/windows-hardware/drivers/debugger/target-inf
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
+

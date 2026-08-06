@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_GETSHAREDRESOURCEADAPTERLUID
 title: _D3DKMT_GETSHAREDRESOURCEADAPTERLUID (d3dkmthk.h)
 description: Provides information that describes a shared resource and the graphics adapter that the resource was created on.
 old-location: display\d3dkmt_getsharedresourceadapterluid.htm
-ms.assetid: b7f9413b-3d57-47c4-a8a4-3288cb03af21
 ms.date: 05/10/2018
 keywords: ["D3DKMT_GETSHAREDRESOURCEADAPTERLUID structure"]
 ms.keywords: D3DKMT_GETSHAREDRESOURCEADAPTERLUID, D3DKMT_GETSHAREDRESOURCEADAPTERLUID structure [Display Devices], _D3DKMT_GETSHAREDRESOURCEADAPTERLUID, d3dkmthk/D3DKMT_GETSHAREDRESOURCEADAPTERLUID, display.d3dkmt_getsharedresourceadapterluid
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
+ - _D3DKMT_GETSHAREDRESOURCEADAPTERLUID
  - D3DKMT_GETSHAREDRESOURCEADAPTERLUID
 ---
 
@@ -52,15 +52,15 @@ Provides information that describes a shared resource and the graphics adapter t
 
 ## -struct-fields
 
-### -field hGlobalShare
+### -field hGlobalShare [in]
 
-[in] A handle to the shared resource.
+A handle to the shared resource.
 
-### -field hNtHandle
+### -field hNtHandle [in]
 
-[in] An NT handle to the process.
+An NT handle to the process.
 
-### -field AdapterLuid
+### -field AdapterLuid [out]
 
-[out] A LUID that serves as an identifier for the device that the resource indicated by <b>hGlobalShare</b> was created on. <b>LUID</b> is defined in Dxgi.h.
+A LUID that serves as an identifier for the device that the resource indicated by <b>hGlobalShare</b> was created on. <b>LUID</b> is defined in Dxgi.h.
 

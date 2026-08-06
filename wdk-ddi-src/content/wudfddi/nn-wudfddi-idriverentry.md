@@ -4,7 +4,6 @@ title: IDriverEntry (wudfddi.h)
 description: The IDriverEntry interface exposes the user-mode driver's main entry and exit points.
 old-location: wdf\idriverentry.htm
 tech.root: wdf
-ms.assetid: eae6f032-2f31-43e1-9ac0-38ccc4840580
 ms.date: 02/26/2018
 keywords: ["IDriverEntry interface"]
 ms.keywords: IDriverEntry, IDriverEntry interface, IDriverEntry interface,described, UMDFDriverObjectRef_83709367-02f2-433f-a20b-b98eff736657.xml, umdf.idriverentry, wdf.idriverentry, wudfddi/IDriverEntry
@@ -52,7 +51,7 @@ The <b>IDriverEntry</b> interface exposes the user-mode driver's main entry and 
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDriverEntry</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IDriverEntry</b> also has these types of members:
+The <b>IDriverEntry</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IDriverEntry</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>

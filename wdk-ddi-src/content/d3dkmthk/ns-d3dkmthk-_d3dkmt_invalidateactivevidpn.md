@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_INVALIDATEACTIVEVIDPN
 title: _D3DKMT_INVALIDATEACTIVEVIDPN (d3dkmthk.h)
 description: The D3DKMT_INVALIDATEACTIVEVIDPN structure describes parameters that invalidate the active video present network (VidPN) currently in use.
 old-location: display\d3dkmt_invalidateactivevidpn.htm
-ms.assetid: 51fb1993-b9f3-436a-9a6d-7d4f9bf26083
 ms.date: 05/10/2018
 keywords: ["D3DKMT_INVALIDATEACTIVEVIDPN structure"]
 ms.keywords: D3DKMT_INVALIDATEACTIVEVIDPN, D3DKMT_INVALIDATEACTIVEVIDPN structure [Display Devices], OpenGL_Structs_6610529b-39db-4fc4-981a-96a6b3bf7543.xml, _D3DKMT_INVALIDATEACTIVEVIDPN, d3dkmthk/D3DKMT_INVALIDATEACTIVEVIDPN, display.d3dkmt_invalidateactivevidpn
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_INVALIDATEACTIVEVIDPN
  - D3DKMT_INVALIDATEACTIVEVIDPN
 ---
 
@@ -52,18 +52,19 @@ The D3DKMT_INVALIDATEACTIVEVIDPN structure describes parameters that invalidate 
 
 ## -struct-fields
 
-### -field hAdapter
+### -field hAdapter [in]
 
-[in] A handle to the graphics adapter that the VidPN exists on.
+A handle to the graphics adapter that the VidPN exists on.
 
-### -field pPrivateDriverData
+### -field pPrivateDriverData [in]
 
-[in] A pointer to a buffer that contains the display mode (for example, clone-view mode) that the OpenGL installable client driver (ICD) requests for the new VidPN.
+A pointer to a buffer that contains the display mode (for example, clone-view mode) that the OpenGL installable client driver (ICD) requests for the new VidPN.
 
-### -field PrivateDriverDataSize
+### -field PrivateDriverDataSize [in]
 
-[in] The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to.
+The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtinvalidateactivevidpn">D3DKMTInvalidateActiveVidPn</a>
+

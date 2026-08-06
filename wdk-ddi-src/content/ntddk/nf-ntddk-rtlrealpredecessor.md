@@ -4,7 +4,6 @@ title: RtlRealPredecessor function (ntddk.h)
 description: The RtlRealPredecessor routine returns a pointer to the predecessor of the specified node in the splay link tree.
 old-location: ifsk\rtlrealpredecessor.htm
 tech.root: ifsk
-ms.assetid: 8cb981a4-7dea-4d42-bbde-35cf5494494b
 ms.date: 04/16/2018
 keywords: ["RtlRealPredecessor function"]
 ms.keywords: RtlRealPredecessor, RtlRealPredecessor routine [Installable File System Drivers], ifsk.rtlrealpredecessor, ntddk/RtlRealPredecessor, rtlref_1c872dd0-50cb-48ff-a7e4-e3c88b3b087f.xml
@@ -50,9 +49,9 @@ The <b>RtlRealPredecessor</b> routine returns a pointer to the predecessor of th
 
 ## -parameters
 
-### -param Links 
+### -param Links [in]
 
-[in]
+
 Pointer to the node. The node must have been initialized by calling <b>RtlInitializeSplayLinks</b>.
 
 ## -returns

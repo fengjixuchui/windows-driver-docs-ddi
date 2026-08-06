@@ -4,7 +4,6 @@ title: FwpsStreamContinue0 function (fwpsk.h)
 description: The FwpsStreamContinue0 function resumes the processing of an inbound data stream that was previously deferred.Note  FwpsStreamContinue0 is a specific version of FwpsStreamContinue.
 old-location: netvista\fwpsstreamcontinue0.htm
 tech.root: netvista
-ms.assetid: 26cf2630-9602-4c70-a326-11e72f188ef9
 ms.date: 05/02/2018
 keywords: ["FwpsStreamContinue0 function"]
 ms.keywords: FwpsStreamContinue0, FwpsStreamContinue0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsStreamContinue0, netvista.fwpsstreamcontinue0, wfp_ref_2_funct_3_fwps_R-Z_c2e0bb3b-854a-4e88-9378-e78e48cb19f2.xml
@@ -54,26 +53,26 @@ The
 
 ## -parameters
 
-### -param flowId 
+### -param flowId [in]
 
-[in]
+
 A run-time identifier that specifies the data flow that is being resumed. The run-time identifier
      for a data flow is provided to a callout driver through the FWPS_METADATA_FIELD_FLOW_HANDLE metadata
      value that the filter engine provided to the callout driver's 
      <a href="/windows-hardware/drivers/ddi/_netvista/">classifyFn</a> callout function.
 
-### -param calloutId 
+### -param calloutId [in]
 
-[in]
+
 The run-time identifier for the callout that deferred the inbound data stream. This identifier was
      returned when the callout driver called either the 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister0">FwpsCalloutRegister0</a> or 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister1">FwpsCalloutRegister1</a> functions to
      register the callout with the filter engine.
 
-### -param layerId 
+### -param layerId [in]
 
-[in]
+
 The run-time identifier for the filtering layer at which the data stream is being processed. This
      value must be either FWPS_LAYER_STREAM_V4 or FWPS_LAYER_STREAM_V6. The run-time identifier for the layer
      at which the data stream is being processed is provided to a callout in the 
@@ -82,9 +81,9 @@ The run-time identifier for the filtering layer at which the data stream is bein
      the filter engine passed to the callout driver's 
      <a href="/windows-hardware/drivers/ddi/_netvista/">classifyFn</a> callout function.
 
-### -param streamFlags 
+### -param streamFlags [in]
 
-[in]
+
 Flags that specify characteristics of the inbound data stream that is being resumed. A callout
      driver should specify the same stream flags that were set in the 
      <b>streamFlags</b> member of the 

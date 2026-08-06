@@ -1,10 +1,9 @@
 ---
 UID: NE:ntddrilapitypes.RILCALLINFOMULTIPARTY
 title: RILCALLINFOMULTIPARTY (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILCALLINFOMULTIPARTY enumeration for internal use only. Don't use the RILCALLINFOMULTIPARTY enumeration in your code."
 old-location: netvista\rilcallinfomultiparty.htm
 tech.root: netvista
-ms.assetid: 4a343e55-9150-4411-bf37-f410b94ca0aa
 ms.date: 05/02/2018
 keywords: ["RILCALLINFOMULTIPARTY enumeration"]
 ms.keywords: RILCALLINFOMULTIPARTY, RILCALLINFOMULTIPARTY enumeration [Network Drivers Starting with Windows Vista], RIL_CALL_MAX, RIL_CALL_MULTIPARTY, netvista.rilcallinfomultiparty, ntddrilapitypes/RILCALLINFOMULTIPARTY, ntddrilapitypes/RIL_CALL_MAX, ntddrilapitypes/RIL_CALL_MULTIPARTY

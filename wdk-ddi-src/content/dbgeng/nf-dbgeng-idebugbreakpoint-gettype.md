@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugBreakpoint.GetType
 title: IDebugBreakpoint::GetType (dbgeng.h)
-description: The GetType method returns the type of the breakpoint and the type of the processor that a breakpoint is set for.
+description: The GetType method returns the type of the breakpoint and processor that a breakpoint is set for. This method belongs to the IDebugBreakpoint interface.
 old-location: debugger\gettype.htm
 tech.root: debugger
-ms.assetid: c6aa6560-3183-4e3a-a625-80d1c5072af5
 ms.date: 05/03/2018
 keywords: ["IDebugBreakpoint::GetType"]
 ms.keywords: ComOther_3305c400-f816-463b-a643-4495bf546460.xml, GetType, GetType method [Windows Debugging], GetType method [Windows Debugging],IDebugBreakpoint interface, GetType method [Windows Debugging],IDebugBreakpoint2 interface, IDebugBreakpoint interface [Windows Debugging],GetType method, IDebugBreakpoint.GetType, IDebugBreakpoint2 interface [Windows Debugging],GetType method, IDebugBreakpoint2::GetType, IDebugBreakpoint::GetType, dbgeng/IDebugBreakpoint2::GetType, dbgeng/IDebugBreakpoint::GetType, debugger.gettype
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugBreakpoint.GetType
- - IDebugBreakpoint2.GetType
+ - IDebugBreakpoint::GetType
 ---
 
 # IDebugBreakpoint::GetType
@@ -51,9 +49,9 @@ The <b>GetType</b> method returns the type of the breakpoint and the type of the
 
 ## -parameters
 
-### -param BreakType 
+### -param BreakType [out]
 
-[out]
+
 The type of the breakpoint.  The type can be one of the following  values.
 
 <table>
@@ -83,9 +81,9 @@ Processor breakpoint
 </tr>
 </table>
 
-### -param ProcType 
+### -param ProcType [out]
 
-[out]
+
 The type of the processor that the breakpoint is set for.
 
 ## -returns
@@ -118,3 +116,4 @@ If changes are made to the breakpoint, the processor type might change.
 The <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getparameters">GetParameters</a> method also returns the information that is returned in <i>BreakType</i> and <i>ProcType</i>.
 
 For more information about breakpoint types, see <a href="/windows-hardware/drivers/debugger/breakpoints3">Breakpoints</a>.
+

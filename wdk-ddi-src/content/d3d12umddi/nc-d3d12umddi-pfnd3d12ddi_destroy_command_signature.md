@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_DESTROY_COMMAND_SIGNATURE
 title: PFND3D12DDI_DESTROY_COMMAND_SIGNATURE (d3d12umddi.h)
 description: Destroys a command signature.
-ms.assetid: c114db95-eabb-4bd0-af4f-d4b72032442b
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_DESTROY_COMMAND_SIGNATURE callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_DESTROY_COMMAND_SIGNATURE
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ Destroys a command signature.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 A command signature handle.
 

@@ -4,7 +4,6 @@ title: SerCxProgressReceive function (sercx.h)
 description: The SerCxProgressReceive method reports the progress of the current read (receive) operation.
 old-location: serports\sercxprogressreceive.htm
 tech.root: serports
-ms.assetid: A1773CCB-971E-4439-A11F-82761FF8AF71
 ms.date: 04/23/2018
 keywords: ["SerCxProgressReceive function"]
 ms.keywords: 1/SerCxProgressReceive, SerCxProgressReceive, SerCxProgressReceive method [Serial Ports], serports.sercxprogressreceive
@@ -50,19 +49,19 @@ The <b>SerCxProgressReceive</b> method reports the progress of the current read 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the serial controller.
 
-### -param BytesReceived 
+### -param BytesReceived [in]
 
-[in]
+
 The number of bytes of data that the caller loaded into the receive buffer that was obtained by the latest call to the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercxretrievereceivebuffer">SerCxRetrieveReceiveBuffer</a> method.
 
-### -param ReceiveStatus 
+### -param ReceiveStatus [in]
 
-[in]
+
 The current status of the receive operation. Set this parameter to one of the following values:
 
 <ul>

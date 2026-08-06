@@ -4,7 +4,6 @@ title: wiasGetContextFromName function (wiamdef.h)
 description: The wiasGetContextFromName function retrieves the item context for an item name.
 old-location: image\wiasgetcontextfromname.htm
 tech.root: image
-ms.assetid: d15bf48e-132d-4f89-8f19-64f57deed500
 ms.date: 05/03/2018
 keywords: ["wiasGetContextFromName function"]
 ms.keywords: image.wiasgetcontextfromname, wiamdef/wiasGetContextFromName, wiasFncs_ba1c88a2-aadc-4c2f-bb5f-88433d1e1760.xml, wiasGetContextFromName, wiasGetContextFromName function [Imaging Devices]
@@ -50,23 +49,23 @@ The **wiasGetContextFromName** function retrieves the item context for an item n
 
 ## -parameters
 
-### -param pWiasContext 
+### -param pWiasContext [in]
 
-[in]
+
 Pointer to a WIA item context.
 
 ### -param lFlags
 
 Reserved for system use and should be set to 0.
 
-### -param bstrName 
+### -param bstrName [in]
 
-[in]
+
 Specifies the name of the context that is being searched for.
 
-### -param ppWiasContext 
+### -param ppWiasContext [out]
 
-[out]
+
 Pointer to a memory location that receives the address of the WIA item context.
 
 ## -returns

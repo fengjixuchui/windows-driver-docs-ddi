@@ -4,7 +4,6 @@ title: KeSetPriorityThread function (wdm.h)
 description: The KeSetPriorityThread routine sets the run-time priority of a driver-created thread.
 old-location: kernel\kesetprioritythread.htm
 tech.root: kernel
-ms.assetid: 400176a1-9192-424b-be37-9386cc3ffbb2
 ms.date: 04/30/2018
 keywords: ["KeSetPriorityThread function"]
 ms.keywords: KeSetPriorityThread, KeSetPriorityThread routine [Kernel-Mode Driver Architecture], k105_b767dc2c-39ec-41de-8888-177d83de67c4.xml, kernel.kesetprioritythread, wdm/KeSetPriorityThread
@@ -50,14 +49,14 @@ The <b>KeSetPriorityThread</b> routine sets the run-time priority of a driver-cr
 
 ## -parameters
 
-### -param Thread 
+### -param Thread [in, out]
 
-[in, out]
+
 Pointer to the driver-created thread.
 
-### -param Priority 
+### -param Priority [in]
 
-[in]
+
 Specifies the priority of the driver-created thread, usually to the real-time priority value, LOW_REALTIME_PRIORITY. The value LOW_PRIORITY is reserved for system use.
 
 ## -returns

@@ -4,7 +4,6 @@ title: KsGateCaptureThreshold function (ks.h)
 description: The KsGateCaptureThreshold function is used to capture an ON input of an AND gate specified by Gate.
 old-location: stream\ksgatecapturethreshold.htm
 tech.root: stream
-ms.assetid: 24a7745d-28f8-4f5a-9f51-37ad2d0ffa0b
 ms.date: 04/23/2018
 keywords: ["KsGateCaptureThreshold function"]
 ms.keywords: KsGateCaptureThreshold, KsGateCaptureThreshold function [Streaming Media Devices], avfunc_9fd4ddfc-f715-45da-936e-9527b8ec4a25.xml, ks/KsGateCaptureThreshold, stream.ksgatecapturethreshold
@@ -50,9 +49,9 @@ The<b> KsGateCaptureThreshold</b> function is used to capture an ON input of an 
 
 ## -parameters
 
-### -param Gate 
+### -param Gate [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksgate">KSGATE</a> structure representing the AND gate for which to capture an ON input synchronously.
 
 ## -returns

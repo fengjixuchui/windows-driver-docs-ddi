@@ -4,7 +4,6 @@ title: EVT_UCX_ROOTHUB_GET_20PORT_INFO (ucxroothub.h)
 description: The client driver's implementation that UCX calls when it receives a request for information about USB 2.0 ports on the root hub.
 old-location: buses\evt_ucx_roothub_get_20port_info.htm
 tech.root: usbref
-ms.assetid: c4a328fb-ffbf-4da4-b52d-6cea58e56b5e
 ms.date: 05/07/2018
 keywords: ["EVT_UCX_ROOTHUB_GET_20PORT_INFO callback function"]
 ms.keywords: EVT_UCX_ROOTHUB_GET_20PORT_INFO, EVT_UCX_ROOTHUB_GET_20PORT_INFO callback, EvtUcxRootHubGet20PortInfo, EvtUcxRootHubGet20PortInfo callback function [Buses], PEVT_UCX_ROOTHUB_GET_20PORT_INFO, PEVT_UCX_ROOTHUB_GET_20PORT_INFO callback function pointer [Buses], buses.evt_ucx_roothub_get_20port_info, ucxroothub/EvtUcxRootHubGet20PortInfo
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ucxroothub.h
 api_name:
- - PEVT_UCX_ROOTHUB_GET_20PORT_INFO
+ - EVT_UCX_ROOTHUB_GET_20PORT_INFO
 ---
 
 # EVT_UCX_ROOTHUB_GET_20PORT_INFO callback function
@@ -50,14 +49,14 @@ The client driver's implementation that UCX calls when it receives a request for
 
 ## -parameters
 
-### -param UcxRootHub 
+### -param UcxRootHub [in]
 
-[in]
+
 A handle to a UCX object that represents the root hub.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A structure of type <a href="/windows-hardware/drivers/ddi/ucxroothub/ns-ucxroothub-_roothub_20port_info">_ROOTHUB_20PORT_INFO</a>.
 
 ## -remarks
@@ -134,7 +133,7 @@ RootHub_EvtRootHubGet20PortInfoEnd:
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ucxroothub/ns-ucxroothub-_roothub_20ports_info">_ROOTHUB_20PORTS_INFO</a>
+

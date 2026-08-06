@@ -3,17 +3,16 @@ UID: NS:netdevice._NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS
 title: NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS (netdevice.h)
 description: The NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS structure contains function pointers for a client driver's power policy callback functions.
 tech.root: netvista
-ms.assetid: 883af9ab-2f90-4e0f-bb01-3358e568eb17
 ms.date: 10/11/2019
 keywords: ["NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS structure"]
 ms.keywords: NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS, NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS,
 req.header: netdevice.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: 
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - netdevice.h
 api_name:
+ - _NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS
  - NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS
-product:
- - Windows
 ---
 
 # NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS structure
@@ -78,3 +76,4 @@ Call [**NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS_INIT**](../netdevice/nf-netdevic
 [*EvtNetDevicePreviewPowerOffload*](../netdevice/nc-netdevice-evt_net_device_preview_power_offload.md)
 
 [**NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS_INIT**](../netdevice/nf-netdevice-net_device_power_policy_event_callbacks_init.md)
+

@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILGSMNMR
 title: RILGSMNMR (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILGSMNMR structure for internal use only. Don't use this structure in your code."
 old-location: netvista\rilgsmnmr_2.htm
 tech.root: netvista
-ms.assetid: 9689a069-1235-4898-9610-3023f6e80dda
 ms.date: 02/26/2018
 keywords: ["RILGSMNMR structure"]
 ms.keywords: "*LPRILGSMNMR, RILGSMNMR, RILGSMNMR structure [Network Drivers Starting with Windows Vista], netvista.rilgsmnmr_2, rilapitypes/RILGSMNMR"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: RILGSMNMR, *LPRILGSMNMR
-req.product: Windows 10 or later.
 f1_keywords:
  - RILGSMNMR
  - rilapitypes/RILGSMNMR
@@ -42,6 +40,7 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILGSMNMR
+ - LPRILGSMNMR
 ---
 
 # RILGSMNMR structure (rilapitypes.h)

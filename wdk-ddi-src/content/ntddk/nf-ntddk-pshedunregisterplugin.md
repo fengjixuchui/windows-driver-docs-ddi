@@ -1,9 +1,8 @@
 ---
 UID: NF:ntddk.PshedUnregisterPlugin
 title: PshedUnregisterPlugin function
-description: Reserved for system use.
-tech.root: 
-ms.assetid: e54fa0d5-8279-4aac-b44c-a5e627b8ce40
+description: "Microsoft reserves the PshedUnregisterPlugin function for internal use only. Don't use this function in your code."
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["PshedUnregisterPlugin function"]
 ms.keywords: PshedUnregisterPlugin
@@ -37,8 +36,6 @@ api_location:
  - ntddk.h
 api_name:
  - PshedUnregisterPlugin
-product:
- - Windows
 ---
 
 # PshedUnregisterPlugin function
@@ -46,13 +43,13 @@ product:
 
 ## -description
 
-Reserved for system use.
+When registering a V2 plugin (**WHEA_PLUGIN_REGISTRATION_PACKET_V2**) this interface allows the plugin to unregister from the system so the driver can be stopped.
 
 ## -parameters
 
 ### -param PluginHandle
 
-TBD
+Specifies the plugin to unload. Use the [PluginHandle](./ns-ntddk-whea_pshed_plugin_registration_packet_v2.md) that the packet contains after registering a V2 plugin.
 
 ## -returns
 

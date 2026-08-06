@@ -1,10 +1,9 @@
 ---
 UID: NC:d3dumddi.PFND3DDDI_OFFERALLOCATIONSCB
 title: PFND3DDDI_OFFERALLOCATIONSCB (d3dumddi.h)
-description: Called by the user-mode display driver to offer video memory allocations for reuse.
+description: The PFND3DDDI_OFFERALLOCATIONSCB callback function is called by the user-mode display driver to offer video memory allocations for reuse.
 old-location: display\pfnofferallocationscb.htm
 tech.root: display
-ms.assetid: D711C545-BDEE-4EE5-B80A-75F01FAA0C33
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_OFFERALLOCATIONSCB callback function"]
 ms.keywords: PFND3DDDI_OFFERALLOCATIONSCB, d3dumddi/pfnOfferAllocationsCb, display.pfnofferallocationscb, pfnOfferAllocationsCb, pfnOfferAllocationsCb callback, pfnOfferAllocationsCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnOfferAllocationsCb
-product:
- - Windows
+ - PFND3DDDI_OFFERALLOCATIONSCB
 ---
 
 # PFND3DDDI_OFFERALLOCATIONSCB callback function
@@ -56,7 +53,7 @@ Called by the user-mode display driver   to offer  video memory allocations for 
 
 A handle to the display device (graphics context). The Direct3D runtime passed the user-mode driver this handle as the <b>hDevice</b> member of the <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_createdevice">D3DDDIARG_CREATEDEVICE</a> structure at device creation.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -97,3 +94,4 @@ After the driver calls <b>pfnOfferAllocationsCb</b> to offer an allocation to re
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_reclaimallocationscb">pfnReclaimAllocationsCb</a>
+

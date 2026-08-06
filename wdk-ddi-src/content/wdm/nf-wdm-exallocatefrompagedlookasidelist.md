@@ -4,7 +4,6 @@ title: ExAllocateFromPagedLookasideList function (wdm.h)
 description: The ExAllocateFromPagedLookasideList routine returns a pointer to a paged entry from the given lookaside list, or it returns a pointer to a newly allocated paged entry.
 old-location: kernel\exallocatefrompagedlookasidelist.htm
 tech.root: kernel
-ms.assetid: f0c86720-4914-47b1-abb1-151196cc2a68
 ms.date: 04/30/2018
 keywords: ["ExAllocateFromPagedLookasideList function"]
 ms.keywords: ExAllocateFromPagedLookasideList, ExAllocateFromPagedLookasideList routine [Kernel-Mode Driver Architecture], k102_96e03fc6-f951-4c96-8de4-32d67e85ec02.xml, kernel.exallocatefrompagedlookasidelist, wdm/ExAllocateFromPagedLookasideList
@@ -50,9 +49,9 @@ The <b>ExAllocateFromPagedLookasideList</b> routine returns a pointer to a paged
 
 ## -parameters
 
-### -param Lookaside 
+### -param Lookaside [in, out]
 
-[in, out]
+
 A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">PAGED_LOOKASIDE_LIST</a> structure for the lookaside list, which the caller already initialized with <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializepagedlookasidelist">ExInitializePagedLookasideList</a>.
 
 ## -returns
@@ -60,6 +59,9 @@ A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">PAGED_LOOKA
 <b>ExAllocateFromPagedLookasideList</b> returns a pointer to an entry if one can be allocated. Otherwise, it returns <b>NULL</b>.
 
 ## -remarks
+
+> [!CAUTION]
+> Starting in Windows 11, version 22H2, this function changed from inline to exported. As a result, if you build your driver targeting the latest version of Windows, it will fail to load in older OS versions. To change the target OS version in Visual Studio, select Configuration Properties->Driver Settings->General.
 
 If the given lookaside list is not empty, <b>ExAllocateFromPagedLookasideList</b> removes the first entry from the list and returns a pointer to this entry. Otherwise, <b>ExAllocateFromPagedLookasideList</b> either calls the <i>Allocate</i> routine specified at list initialization or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag">ExAllocatePoolWithTag</a> to return an entry pointer.
 

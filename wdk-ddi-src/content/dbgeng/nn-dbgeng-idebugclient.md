@@ -4,7 +4,6 @@ title: IDebugClient (dbgeng.h)
 description: IDebugClient interface
 old-location: debugger\idebugclient.htm
 tech.root: debugger
-ms.assetid: 2e47f7ae-2017-4f05-9a06-6c09bb401e21
 ms.date: 05/03/2018
 keywords: ["IDebugClient interface"]
 ms.keywords: IDebugClient, IDebugClient interface [Windows Debugging], IDebugClient interface [Windows Debugging],described, IDebugClient_3f5f6372-0e7d-4050-b09a-b7776ff8bf7c.xml, dbgeng/IDebugClient, debugger.idebugclient
@@ -39,10 +38,6 @@ api_location:
  - dbgeng.h
 api_name:
  - IDebugClient
- - IDebugClient.GetOutputWidth
- - IDebugClient.SetOutputWidth
- - IDebugClient.GetOutputLinePrefix
- - IDebugClient.SetOutputLinePrefix
 ---
 
 # IDebugClient interface
@@ -52,10 +47,8 @@ api_name:
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugClient</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IDebugClient</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IDebugClient</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IDebugClient</b> also has these types of members:
+
 
 ## -see-also
 
@@ -72,3 +65,4 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugClient</b> interface in
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient5">IDebugClient5</a>
+

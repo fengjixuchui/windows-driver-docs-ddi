@@ -4,7 +4,6 @@ title: MINIPORT_WDI_RX_RESUME (dot11wdi.h)
 description: The MiniportWdiRxResume handler function is issued by the RxMgr after it returns a pause status to a data indication.
 old-location: netvista\miniportwdirxresume.htm
 tech.root: netvista
-ms.assetid: 483C59C3-8F9C-48A5-B5E4-34A60BAE1B1A
 ms.date: 05/02/2018
 keywords: ["MINIPORT_WDI_RX_RESUME callback function"]
 ms.keywords: MINIPORT_WDI_RX_RESUME, MINIPORT_WDI_RX_RESUME callback, MiniportWdiRxResume, MiniportWdiRxResume callback function [Network Drivers Starting with Windows Vista], dot11wdi/MiniportWdiRxResume, netvista.miniportwdirxresume
@@ -38,13 +37,16 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
- - MiniportWdiRxResume
+ - MINIPORT_WDI_RX_RESUME
 ---
 
 # MINIPORT_WDI_RX_RESUME callback function
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The 
   MiniportWdiRxResume handler function is issued by the RxMgr after it returns a pause status to a data indication. The RxEngine can  immediately resume creating data indications, either in the same context as the MiniportWdiRxResume or from a different thread.
@@ -70,3 +72,4 @@ TAL device handle returned by the IHV miniport in <a href="/windows-hardware/dri
 
 
 <a href="/windows-hardware/drivers/network/wdi-rx-path">WDI RX path</a>
+

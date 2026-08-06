@@ -4,7 +4,6 @@ title: DXGKCB_MIRACAST_SEND_MESSAGE_CALLBACK (dispmprt.h)
 description: Called in kernel mode when the message that was sent to the user-mode driver with a call to the DxgkCbMiracastSendMessage function has completed or has been canceled.
 old-location: display\dxgkcbmiracastsendmessage.htm
 tech.root: display
-ms.assetid: E8C3B9E3-854C-488D-809B-0F0893591352
 ms.date: 05/10/2018
 keywords: ["DXGKCB_MIRACAST_SEND_MESSAGE_CALLBACK callback function"]
 ms.keywords: DXGKCB_MIRACAST_SEND_MESSAGE, DXGKCB_MIRACAST_SEND_MESSAGE callback, DxgkCbMiracastSendMessage, DxgkCbMiracastSendMessage callback function [Display Devices], display.dxgkcbmiracastsendmessage, dispmprt/DxgkCbMiracastSendMessage
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dispmprt.h
 api_name:
- - DxgkCbMiracastSendMessageCallback
+ - DXGKCB_MIRACAST_SEND_MESSAGE_CALLBACK
 ---
 
 # DXGKCB_MIRACAST_SEND_MESSAGE_CALLBACK callback function
@@ -75,3 +74,4 @@ The operating system guarantees that this function follows the zero level synchr
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_miracast_create_context">DxgkDdiMiracastCreateContext</a>
+

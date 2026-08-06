@@ -4,8 +4,8 @@ title: _FILE_POSITION_INFORMATION (wdm.h)
 description: The FILE_POSITION_INFORMATION structure is used as an argument to routines that query or set file information.
 old-location: kernel\file_position_information.htm
 tech.root: kernel
-ms.assetid: 04f01faf-599e-4c62-82ce-c147b4820c8f
 ms.date: 04/30/2018
+author: lorihollasch
 keywords: ["FILE_POSITION_INFORMATION structure"]
 ms.keywords: "*PFILE_POSITION_INFORMATION, FILE_POSITION_INFORMATION, FILE_POSITION_INFORMATION structure [Kernel-Mode Driver Architecture], PFILE_POSITION_INFORMATION, PFILE_POSITION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _FILE_POSITION_INFORMATION, kernel.file_position_information, kstruct_b_5edd5ea9-9229-4764-86aa-24054a1ec9b9.xml, wdm/FILE_POSITION_INFORMATION, wdm/PFILE_POSITION_INFORMATION"
 req.header: wdm.h
@@ -42,6 +42,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _FILE_POSITION_INFORMATION
+ - PFILE_POSITION_INFORMATION
  - FILE_POSITION_INFORMATION
 ---
 
@@ -71,3 +73,4 @@ If the file was opened or created with the FILE_NO_INTERMEDIATE_BUFFERING option
 
 
 <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntsetinformationfile">ZwSetInformationFile</a>
+

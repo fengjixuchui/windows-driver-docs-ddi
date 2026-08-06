@@ -4,7 +4,6 @@ title: PFND3DDDI_CREATESYNCHRONIZATIONOBJECTCB (d3dumddi.h)
 description: The pfnCreateSynchronizationObjectCb function creates a synchronization object that a device context can signal and wait for.
 old-location: display\pfncreatesynchronizationobjectcb.htm
 tech.root: display
-ms.assetid: 1b87d3cc-685a-4768-b4fd-dbe0a0cbec37
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CREATESYNCHRONIZATIONOBJECTCB callback function"]
 ms.keywords: D3Druntime_Functions_6c4f40ee-12b2-47a8-bbec-8591b730bef5.xml, PFND3DDDI_CREATESYNCHRONIZATIONOBJECTCB, PFND3DDDI_CREATESYNCHRONIZATIONOBJECTCB callback, d3dumddi/pfnCreateSynchronizationObjectCb, display.pfncreatesynchronizationobjectcb, pfnCreateSynchronizationObjectCb, pfnCreateSynchronizationObjectCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnCreateSynchronizationObjectCb
-product:
- - Windows
+ - PFND3DDDI_CREATESYNCHRONIZATIONOBJECTCB
 ---
 
 # PFND3DDDI_CREATESYNCHRONIZATIONOBJECTCB callback function
@@ -56,7 +53,7 @@ The <b>pfnCreateSynchronizationObjectCb</b> function creates a synchronization o
 
 A handle to the display device (that is, the graphics context) that will own the synchronization object that <b>pfnCreateSynchronizationObjectCb</b> creates.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -119,3 +116,4 @@ The <b>pfnCreateSynchronizationObjectCb</b> function returns a kernel-mode handl
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_waitforsynchronizationobjectcb">pfnWaitForSynchronizationObjectCb</a>
+

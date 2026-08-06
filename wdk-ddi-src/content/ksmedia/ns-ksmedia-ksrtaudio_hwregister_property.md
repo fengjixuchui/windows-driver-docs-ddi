@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_28
+UID: NS:ksmedia.KSRTAUDIO_HWREGISTER_PROPERTY
 title: KSRTAUDIO_HWREGISTER_PROPERTY (ksmedia.h)
 description: The KSRTAUDIO_HWREGISTRY_PROPERTY structure appends a register base address to a KSPROPERTY structure.
 old-location: audio\ksrtaudio_hwregister_property.htm
 tech.root: audio
-ms.assetid: 200577b9-44de-45ca-8b4f-904eabb1a4ce
 ms.date: 05/08/2018
 keywords: ["KSRTAUDIO_HWREGISTER_PROPERTY structure"]
 ms.keywords: "*PKSRTAUDIO_HWREGISTER_PROPERTY, KSRTAUDIO_HWREGISTER_PROPERTY, KSRTAUDIO_HWREGISTER_PROPERTY structure [Audio Devices], PKSRTAUDIO_HWREGISTER_PROPERTY, PKSRTAUDIO_HWREGISTER_PROPERTY structure pointer [Audio Devices], aud-prop_d554442a-4677-4fc6-a305-ef02d5caffef.xml, audio.ksrtaudio_hwregister_property, ksmedia/KSRTAUDIO_HWREGISTER_PROPERTY, ksmedia/PKSRTAUDIO_HWREGISTER_PROPERTY"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSRTAUDIO_HWREGISTER_PROPERTY
  - KSRTAUDIO_HWREGISTER_PROPERTY
 ---
 
@@ -54,7 +54,7 @@ The KSRTAUDIO_HWREGISTRY_PROPERTY structure appends a register base address to a
 
 ### -field Property
 
-A <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure that the client initializes appropriately prior to calling KSPROPERTY_RTAUDIO_POSITIONREGISTER or KSPROPERTY_RTAUDIO_CLOCKREGISTER.
+A <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure that the client initializes appropriately prior to calling KSPROPERTY_RTAUDIO_POSITIONREGISTER or KSPROPERTY_RTAUDIO_CLOCKREGISTER.
 
 ### -field BaseAddress
 
@@ -66,7 +66,7 @@ The client uses the KSRTAUDIO_HWREGISTER_PROPERTY structure to request the hardw
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -79,3 +79,4 @@ The client uses the KSRTAUDIO_HWREGISTER_PROPERTY structure to request the hardw
 
 
 <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_hwregister">KSRTAUDIO_HWREGISTER</a>
+

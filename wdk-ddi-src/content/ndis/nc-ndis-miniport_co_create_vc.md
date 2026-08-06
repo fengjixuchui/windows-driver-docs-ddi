@@ -4,7 +4,6 @@ title: MINIPORT_CO_CREATE_VC (ndis.h)
 description: The MiniportCoCreateVc function is required for connection-oriented miniports.
 old-location: netvista\miniportcocreatevc.htm
 tech.root: netvista
-ms.assetid: 99eaba29-ce17-4e79-878e-5fdf7411e56c
 ms.date: 05/02/2018
 keywords: ["MINIPORT_CO_CREATE_VC callback function"]
 ms.keywords: MINIPORT_CO_CREATE_VC, MINIPORT_CO_CREATE_VC callback, MiniportCoCreateVc, MiniportCoCreateVc callback function [Network Drivers Starting with Windows Vista], condis_miniport_ref_73192f8d-af71-40f8-8118-52124bc38e94.xml, ndis/MiniportCoCreateVc, netvista.miniportcocreatevc
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportCoCreateVc
+ - MINIPORT_CO_CREATE_VC
 ---
 
 # MINIPORT_CO_CREATE_VC callback function
@@ -55,9 +54,9 @@ The
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 Specifies the handle to a miniport driver-allocated context area in which the miniport driver
      maintains state information about this instance of the adapter. The miniport driver provided this handle
      to NDIS by calling 
@@ -66,15 +65,15 @@ Specifies the handle to a miniport driver-allocated context area in which the mi
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">
      MiniportInitializeEx</a> function.
 
-### -param NdisVcHandle 
+### -param NdisVcHandle [in]
 
-[in]
+
 Specifies a handle, supplied by NDIS, that uniquely identifies the VC being created. This handle
      is opaque to the miniport driver and reserved for NDIS library use.
 
-### -param MiniportVcContext 
+### -param MiniportVcContext [out]
 
-[out]
+
 Specifies, on output, a handle to a miniport driver-supplied context area in which the miniport
      driver maintains state about the VC.
 
@@ -170,3 +169,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+

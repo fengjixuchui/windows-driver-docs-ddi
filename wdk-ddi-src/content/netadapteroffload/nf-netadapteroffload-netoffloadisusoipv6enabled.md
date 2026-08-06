@@ -1,0 +1,66 @@
+---
+UID: NF:netadapteroffload.NetOffloadIsUsoIPv6Enabled
+title: NetOffloadIsUsoIPv6Enabled function (netadapteroffload.h)
+description: The NetOffloadIsUsoIPv6Enabled function determines whether a net adapter has UDP send offload (USO) enabled for IPv6 packets.
+tech.root: netvista
+ms.date: 10/09/2020
+keywords: ["NetOffloadIsUsoIPv6Enabled function"]
+ms.keywords: NetOffloadIsUsoIPv6Enabled
+req.header: netadapteroffload.h
+req.include-header: netadaptercx.h
+req.target-type: 
+req.target-min-winverclnt: Windows 11
+req.target-min-winversvr: Windows Server 2022
+req.kmdf-ver: 1.29
+req.umdf-ver: 2.33 
+req.lib: netadaptercxstub.lib
+req.dll: 
+req.irql: PASSIVE_LEVEL
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.idl: 
+req.max-support: 
+req.namespace: 
+req.assembly: 
+req.type-library: 
+targetos: Windows
+f1_keywords:
+ - NetOffloadIsUsoIPv6Enabled
+ - netadapteroffload/NetOffloadIsUsoIPv6Enabled
+topic_type:
+ - apiref
+api_type:
+ - LibDef
+api_location:
+ - netadaptercxstub.lib
+api_name:
+ - NetOffloadIsUsoIPv6Enabled
+---
+
+# NetOffloadIsUsoIPv6Enabled function
+
+
+## -description
+
+The **NetOffloadIsUsoIPv6Enabled** function determines whether a net adapter has UDP send offload (USO) enabled for IPv6 packets.
+
+## -parameters
+
+### -param Offload [_In_]
+
+A NETOFFLOAD object that represents the net adapter's generic send offload (GSO) capabilities.
+
+## -returns
+
+Returns **TRUE** if USO is enabled for IPv6 packets, or **FALSE** if it is not.
+
+## -remarks
+
+Client drivers typically call this function during their [*EVT_NET_ADAPTER_OFFLOAD_SET_GSO*](nc-netadapteroffload-evt_net_adapter_offload_set_gso.md) callback to test whether an updated set of active GSO capabilities includes USO for IPv6 packets.
+
+## -see-also
+
+[Generic Segmentation Offload](/windows-hardware/drivers/netcx/gso-offload)
+
+[*EVT_NET_ADAPTER_OFFLOAD_SET_GSO*](nc-netadapteroffload-evt_net_adapter_offload_set_gso.md)
+

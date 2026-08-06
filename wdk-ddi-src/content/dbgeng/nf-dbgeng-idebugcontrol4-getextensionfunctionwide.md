@@ -4,7 +4,6 @@ title: IDebugControl4::GetExtensionFunctionWide (dbgeng.h)
 description: The GetExtensionFunctionWide method returns a pointer to an extension function from an extension library.
 old-location: debugger\getextensionfunctionwide.htm
 tech.root: debugger
-ms.assetid: 351859d5-89fb-4756-a75b-fd4048cb20ef
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::GetExtensionFunctionWide"]
 ms.keywords: GetExtensionFunctionWide, GetExtensionFunctionWide method [Windows Debugging], GetExtensionFunctionWide method [Windows Debugging],IDebugControl4 interface, IDebugControl4 interface [Windows Debugging],GetExtensionFunctionWide method, IDebugControl4.GetExtensionFunctionWide, IDebugControl4::GetExtensionFunctionWide, dbgeng/IDebugControl4::GetExtensionFunctionWide, debugger.getextensionfunctionwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.GetExtensionFunctionWide
+ - IDebugControl4::GetExtensionFunctionWide
 ---
 
 # IDebugControl4::GetExtensionFunctionWide
@@ -50,19 +49,19 @@ The <b>GetExtensionFunctionWide</b>  method returns a pointer to an extension fu
 
 ## -parameters
 
-### -param Handle 
+### -param Handle [in]
 
-[in]
+
 Specifies the handle of the extension library that contains the extension function.  If <i>Handle</i> is zero, the engine will walk the extension library chain searching for the extension function.
 
-### -param FuncName 
+### -param FuncName [in]
 
-[in]
+
 Specifies the name of the extension function to return.  When searching the extension libraries for the function, the debugger engine will prepend "_EFN_" to the name.  For example, if <i>FuncName</i> is "SampleFunction", the engine will search the extension libraries for "_EFN_SampleFunction".
 
-### -param Function 
+### -param Function [out]
 
-[out]
+
 Receives the extension function.
 
 ## -returns
@@ -110,3 +109,4 @@ For more information on using extension functions, see <a href="/windows-hardwar
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol4">IDebugControl4</a>
+

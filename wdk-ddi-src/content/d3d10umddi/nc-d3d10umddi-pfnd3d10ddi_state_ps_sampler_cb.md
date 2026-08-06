@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_STATE_PS_SAMPLER_CB
 title: PFND3D10DDI_STATE_PS_SAMPLER_CB (d3d10umddi.h)
 description: The pfnStatePsSamplerCb function causes the Microsoft Direct3D 10 runtime to refresh the pixel shader stage's bound samplers.
 old-location: display\pfnstatepssamplercb.htm
-ms.assetid: 8cf25918-1acf-40b6-be51-2c1afc419f2a
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_STATE_PS_SAMPLER_CB callback function"]
 ms.keywords: PFND3D10DDI_STATE_PS_SAMPLER_CB, PFND3D10DDI_STATE_PS_SAMPLER_CB callback, d3d10state_functions_2e14a132-dd8b-4a78-905e-b2d74d9e669d.xml, d3d10umddi/pfnStatePsSamplerCb, display.pfnstatepssamplercb, pfnStatePsSamplerCb, pfnStatePsSamplerCb callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - pfnStatePsSamplerCb
+ - PFND3D10DDI_STATE_PS_SAMPLER_CB
 ---
 
 # PFND3D10DDI_STATE_PS_SAMPLER_CB callback function
@@ -50,19 +49,19 @@ The <b>pfnStatePsSamplerCb</b> function causes the Microsoft Direct3D 10 runtime
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hRuntimeDevice* [in]
 
 A handle to a context for the core Direct3D 10 runtime. This handle is supplied to the driver in a call to the driver's <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdevice">CreateDevice(D3D10)</a> function.
 
-### -param Arg2
+### -param unnamedParam2
 
 *Count* [in]
 
 The total number of samplers. The number can be -1, which specifies that the Direct3D runtime will use its high watermarks to substitute an optimal value (which is typically less than the maximum valid value for <i>Count</i>). However, no non-NULL binding exists in a slot larger than the optimal <i>Count</i> value.
 
-### -param Arg3
+### -param unnamedParam3
 
 *Base* [in]
 
@@ -75,3 +74,4 @@ The beginning sampler for which the runtime should refresh state.
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddi_corelayer_devicecallbacks">D3D10DDI_CORELAYER_DEVICECALLBACKS</a>
+

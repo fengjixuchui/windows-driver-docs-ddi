@@ -4,7 +4,6 @@ title: EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD (ufxclient.h)
 description: The client driver's implementation to create a default control endpoint.
 old-location: buses\evt_ufx_device_default_endpoint_add.htm
 tech.root: usbref
-ms.assetid: 37AF38A2-F761-4DBC-A7E7-FC4BDA544A31
 ms.date: 05/07/2018
 keywords: ["EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD callback function"]
 ms.keywords: EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD, EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD callback, EvtUfxDeviceDefaultEndpointAdd, EvtUfxDeviceDefaultEndpointAdd callback function [Buses], PFN_UFX_DEVICE_DEFAULT_ENDPOINT_ADD, PFN_UFX_DEVICE_DEFAULT_ENDPOINT_ADD callback function pointer [Buses], buses.evt_ufx_device_default_endpoint_add, ufxclient/EvtUfxDeviceDefaultEndpointAdd
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ufxclient.h
 api_name:
- - PFN_UFX_DEVICE_DEFAULT_ENDPOINT_ADD
+ - EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD
 ---
 
 # EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD callback function
@@ -50,19 +49,19 @@ The client driver's implementation to create a default control endpoint.
 
 ## -parameters
 
-#### - EndpointInit [in, out]
+### -param unnamedParam1 [in]
 
-A pointer to an  UFXENDPOINT_INIT opaque structure that contains the endpoint descriptor required  to create an endpoint object.
+The handle to a  USB device object that the client driver received in a previous call to  the <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
 
 
-#### - MaxPacketSize [in]
+### -param unnamedParam2 [in]
 
 The default maximum packet size that can be sent from or to this endpoint.
 
 
-#### - UfxDevice [in]
+### -param unnamedParam3 [in, out]
 
-The handle to a  USB device object that the client driver received in a previous call to  the <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
+A pointer to an  UFXENDPOINT_INIT opaque structure that contains the endpoint descriptor required  to create an endpoint object.
 
 ## -remarks
 
@@ -128,7 +127,6 @@ End:
 
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>
@@ -136,3 +134,4 @@ End:
 
 
 <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdeviceeventcomplete">UfxDeviceEventComplete</a>
+

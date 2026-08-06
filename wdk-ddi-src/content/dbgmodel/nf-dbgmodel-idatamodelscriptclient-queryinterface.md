@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelScriptClient.QueryInterface
 title: IDataModelScriptClient::QueryInterface (dbgmodel.h)
-description: Retrieves pointers to the supported interfaces on an object. This method calls IUnknown::AddRef on the pointer it returns.
-ms.assetid: 8ef6ec72-872e-4b95-9c9f-e34e001e1072
+description: "The IDataModelScriptClient::QueryInterface method retrieves pointers to the supported interfaces on an object."
 ms.date: 08/20/2018
 keywords: ["IDataModelScriptClient::QueryInterface"]
 ms.keywords: IDataModelScriptClient::QueryInterface, QueryInterface, IDataModelScriptClient.QueryInterface, IDataModelScriptClient::QueryInterface, IDataModelScriptClient.QueryInterface
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelScriptClient.QueryInterface
+ - IDataModelScriptClient::QueryInterface
 ---
 
 # IDataModelScriptClient::QueryInterface
@@ -69,3 +68,4 @@ Standard COM method.
 ## -see-also
 
 [IDataModelScriptClient interface](nn-dbgmodel-idatamodelscriptclient.md)
+

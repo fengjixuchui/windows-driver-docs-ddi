@@ -4,15 +4,14 @@ title: FsRtlCreateSectionForDataScan function (ntifs.h)
 description: The FsRtlCreateSectionForDataScan routine creates a section object.
 old-location: ifsk\fsrtlcreatesectionfordatascan.htm
 tech.root: ifsk
-ms.assetid: 2bf6fb1b-e2d6-496d-808e-e739951cc7c5
 ms.date: 04/16/2018
 keywords: ["FsRtlCreateSectionForDataScan function"]
 ms.keywords: FsRtlCreateSectionForDataScan, FsRtlCreateSectionForDataScan routine [Installable File System Drivers], fsrtlref_5117d865-19da-4ec5-8b20-cccab94eb013.xml, ifsk.fsrtlcreatesectionfordatascan, ntifs/FsRtlCreateSectionForDataScan
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: The FsRtlCreateSectionForDataScan routine is available on Microsoft Windows Server 2003 SP1 and later, the Update Rollup for Windows 2000 Service Pack 4 (SP4), and the Filter Manager Rollup for Windows XP Service Pack 2 (SP2).
-req.target-min-winversvr: 
+req.target-min-winverclnt: Update Rollup for Windows 2000 Service Pack 4 (SP4); Filter Manager Rollup for Windows XP Service Pack 2 (SP2).
+req.target-min-winversvr: Microsoft Windows Server 2003 SP1
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 
@@ -50,29 +49,29 @@ The <b>FsRtlCreateSectionForDataScan</b> routine creates a section object. Use t
 
 ## -parameters
 
-### -param SectionHandle 
+### -param SectionHandle [out]
 
-[out]
+
 Pointer to a caller-allocated variable that receives an opaque handle to the section object.
 
-### -param SectionObject 
+### -param SectionObject [out]
 
-[out]
+
 Pointer to a caller-allocated variable that receives an opaque pointer to the section object.
 
-### -param SectionFileSize 
+### -param SectionFileSize [out, optional]
 
-[out, optional]
+
 Pointer to a caller-allocated variable that receives the size, in bytes, of the file at the time the section object was created. This parameter is optional and can be <b>NULL</b>.
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 File object for an open file.  The section object will be backed by the specified file. This parameter is required and cannot be <b>NULL</b>.
 
-### -param DesiredAccess 
+### -param DesiredAccess [in]
 
-[in]
+
 Specifies the desired access for the section object as one or more of the following <a href="/windows-hardware/drivers/kernel/access-mask">ACCESS_MASK</a> flags. 
 
 <table>
@@ -122,19 +121,19 @@ All actions defined by the previous flags as well as that defined by STANDARD_RI
 </tr>
 </table>
 
-### -param ObjectAttributes 
+### -param ObjectAttributes [in, optional]
 
-[in, optional]
+
 Pointer to an <a href="/windows/win32/api/ntdef/ns-ntdef-_object_attributes">OBJECT_ATTRIBUTES</a> structure that specifies the object name and other attributes. Use the <a href="/windows/win32/api/ntdef/nf-ntdef-initializeobjectattributes">InitializeObjectAttributes</a> macro to initialize this structure. Because <b>FsRtlCreateSectionForDataScan</b> inserts this object into the process handle table, the caller must specify the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>.
 
-### -param MaximumSize 
+### -param MaximumSize [in, optional]
 
-[in, optional]
+
 This parameter is reserved for future use.
 
-### -param SectionPageProtection 
+### -param SectionPageProtection [in]
 
-[in]
+
 Specifies the protection to place on each page in the section. Specify one of the following values. This parameter is required and cannot be zero. 
 
 <table>
@@ -164,9 +163,9 @@ Enables both read and write access to the committed region of pages.
 </tr>
 </table>
 
-### -param AllocationAttributes 
+### -param AllocationAttributes [in]
 
-[in]
+
 Bitmasks of the SEC_<i>XXX</i> flags determine the allocation attributes of the section. Specify one or more of the following values. This parameter is required and cannot be zero. 
 
 <table>
@@ -196,9 +195,9 @@ The file specified by the <i>FileObject</i> parameter is a mapped file.
 </tr>
 </table>
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 This parameter is reserved for future use.
 
 ## -returns

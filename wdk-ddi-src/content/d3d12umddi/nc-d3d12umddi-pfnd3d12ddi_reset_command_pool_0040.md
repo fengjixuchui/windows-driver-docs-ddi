@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_RESET_COMMAND_POOL_0040
 title: PFND3D12DDI_RESET_COMMAND_POOL_0040 (d3d12umddi.h)
 description: Implemented by the client driver to reset a command pool.
-ms.assetid: 1b95c84d-7bde-43c6-9494-aabd25d114ad
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_RESET_COMMAND_POOL_0040 callback function"]
 req.header: d3d12umddi.h
@@ -35,8 +34,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_RESET_COMMAND_POOL_0040
-product:
- - Windows
 ---
 
 # PFND3D12DDI_RESET_COMMAND_POOL_0040 callback function
@@ -48,11 +45,11 @@ Implemented by the client driver to reset a command pool.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 A handle to the command pool to reset.
 

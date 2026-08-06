@@ -4,7 +4,6 @@ title: NdisReadNetworkAddress function (ndis.h)
 description: The NdisReadNetworkAddress function returns the software-configurable network address that was stored in the registry for a NIC when it was installed in the machine.
 old-location: netvista\ndisreadnetworkaddress.htm
 tech.root: netvista
-ms.assetid: 42519c60-6dc6-4c20-a2e8-954d9610a982
 ms.date: 05/02/2018
 keywords: ["NdisReadNetworkAddress function"]
 ms.keywords: NdisReadNetworkAddress, NdisReadNetworkAddress function [Network Drivers Starting with Windows Vista], ndis/NdisReadNetworkAddress, ndis_configuration_ref_459fbfae-4235-4f60-9b10-02c60defc236.xml, netvista.ndisreadnetworkaddress
@@ -53,9 +52,9 @@ The
 
 ## -parameters
 
-### -param Status 
+### -param Status [out]
 
-[out]
+
 A pointer to a caller-supplied variable in which this function returns the status of the call as
      one of the following:
      
@@ -76,22 +75,22 @@ The caller can use the address returned at
 There was no NIC address information available in the caller's registry 
        <b>Parameters</b> key or the value stored was not a string.
 
-### -param NetworkAddress 
+### -param NetworkAddress [out]
 
-[out]
+
 A pointer to a caller-supplied variable in which this function returns a pointer to a buffer that contains the
      network address (typically the MAC address), stored as a sequence of byte integers, if the call is successful.
 
-### -param NetworkAddressLength 
+### -param NetworkAddressLength [out]
 
-[out]
+
 A pointer to a caller-supplied variable in which this function returns the number of bytes that
      are returned at 
      <i>NetworkAddress</i>.
 
-### -param ConfigurationHandle 
+### -param ConfigurationHandle [in]
 
-[in]
+
 The configuration handle returned by the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenconfigurationex">
      NdisOpenConfigurationEx</a> function.

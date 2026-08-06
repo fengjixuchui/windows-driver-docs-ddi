@@ -4,7 +4,6 @@ title: NDK_FN_DISCONNECT (ndkpi.h)
 description: The NdkDisconnect (NDK_FN_DISCONNECT) function starts a disconnect on an NDK connection.
 old-location: netvista\ndk_fn_disconnect.htm
 tech.root: netvista
-ms.assetid: 40622358-F4CA-4DF2-BDA4-E93C4DDB1AF6
 ms.date: 05/02/2018
 keywords: ["NDK_FN_DISCONNECT callback function"]
 ms.keywords: NDK_FN_DISCONNECT, NDK_FN_DISCONNECT callback, NdkDisconnect, NdkDisconnect callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkDisconnect, netvista.ndk_fn_disconnect
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkDisconnect
+ - NDK_FN_DISCONNECT
 ---
 
 # NDK_FN_DISCONNECT callback function
@@ -50,19 +49,19 @@ The <i>NdkDisconnect</i> (<i>NDK_FN_DISCONNECT</i>) function starts a  disconnec
 
 ## -parameters
 
-### -param pNdkConnector 
+### -param pNdkConnector [in]
 
-[in]
+
 A pointer to a connector object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_connector">NDK_CONNECTOR</a>).
 
-### -param RequestCompletion 
+### -param RequestCompletion [in]
 
-[in]
+
 A pointer to a request completion callback routine <i>NdkRequestCompletion</i> (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_request_completion">NDK_FN_REQUEST_COMPLETION</a>).
 
-### -param RequestContext 
+### -param RequestContext [in, optional]
 
-[in, optional]
+
 A context value to pass to the <i>Context</i> parameter of the  callback function that is specified in the <i>RequestCompletion</i> parameter.
 
 ## -returns
@@ -142,3 +141,4 @@ An error occurred.
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_request_completion">NDK_FN_REQUEST_COMPLETION</a>
+

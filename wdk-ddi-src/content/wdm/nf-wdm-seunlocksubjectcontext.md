@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.SeUnlockSubjectContext
 title: SeUnlockSubjectContext function (wdm.h)
-description: The SeUnlockSubjectContext routine unlocks the tokens of a captured subject context that were locked by a call to SeLockSubjectContext.
+description: The SeUnlockSubjectContext routine in wdm.h unlocks the tokens of a captured subject context that were locked by a call to SeLockSubjectContext.
 old-location: ifsk\seunlocksubjectcontext.htm
 tech.root: ifsk
-ms.assetid: 5b0dda8f-52de-462b-8dab-8aed86e5dc0e
 ms.date: 04/16/2018
 keywords: ["SeUnlockSubjectContext function"]
 ms.keywords: SeUnlockSubjectContext, SeUnlockSubjectContext routine [Installable File System Drivers], ifsk.seunlocksubjectcontext, ntifs/SeUnlockSubjectContext, seref_a07c19ad-03a8-403d-9844-9e85862377ab.xml
@@ -50,9 +49,9 @@ The <b>SeUnlockSubjectContext</b> routine unlocks the tokens of a captured subje
 
 ## -parameters
 
-### -param SubjectContext 
+### -param SubjectContext [in]
 
-[in]
+
 Pointer to a SECURITY_SUBJECT_CONTEXT structure whose tokens are to be unlocked.
 
 ## -remarks

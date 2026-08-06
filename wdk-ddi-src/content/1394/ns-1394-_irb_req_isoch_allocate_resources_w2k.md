@@ -1,10 +1,9 @@
 ---
 UID: NS:1394._IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K
 title: _IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K (1394.h)
-description: This structure contains the fields necessary for the 1394 bus driver to carry out a IsochAllocateResources request.
+description: The IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K structure contains the fields necessary for the 1394 bus driver to carry out an IsochAllocateResources request.
 old-location: ieee\irb_req_isoch_allocate_resources_w2k.htm
 tech.root: IEEE
-ms.assetid: 1192D655-7900-40B2-9D5F-480ACDB94624
 ms.date: 02/15/2018
 keywords: ["IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K structure"]
 ms.keywords: 1394/IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K, IEEE.irb_req_isoch_allocate_resources_w2k, IRB_REQ_ISOCH_ALLOCATE_RESOURCES, IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K, IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K structure [Buses], _IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K
  - IRB_REQ_ISOCH_ALLOCATE_RESOURCES_W2K
 ---
 
@@ -201,3 +201,4 @@ Specifies the number of quadlets to strip from the beginning of every packet in 
 ### -field hResource
 
 Specifies a handle to the resource.
+

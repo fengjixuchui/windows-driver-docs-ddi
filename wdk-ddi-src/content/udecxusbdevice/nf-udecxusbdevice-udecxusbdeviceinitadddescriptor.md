@@ -4,7 +4,6 @@ title: UdecxUsbDeviceInitAddDescriptor function (udecxusbdevice.h)
 description: Adds a USB descriptor to the initialization parameters used to create a virtual USB device.
 old-location: buses\udecxusbdeviceinitadddescriptor.htm
 tech.root: usbref
-ms.assetid: BC43B6AB-E34C-45A9-B666-1B323104FC48
 ms.date: 05/07/2018
 keywords: ["UdecxUsbDeviceInitAddDescriptor function"]
 ms.keywords: UdecxUsbDeviceInitAddDescriptor, UdecxUsbDeviceInitAddDescriptor function [Buses], buses.udecxusbdeviceinitadddescriptor, udecxusbdevice/UdecxUsbDeviceInitAddDescriptor
@@ -51,19 +50,19 @@ Adds a USB descriptor to the initialization parameters used to create a virtual 
 
 ## -parameters
 
-### -param UdecxUsbDeviceInit 
+### -param UdecxUsbDeviceInit [in, out]
 
-[in, out]
+
 A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>.
 
-### -param Descriptor 
+### -param Descriptor [in]
 
-[in]
+
 A caller-allocated buffer that contains the USB descriptor to add to the device.
 
-### -param DescriptorLength 
+### -param DescriptorLength [in]
 
-[in]
+
 The length of the descriptor buffer.
 
 ## -returns

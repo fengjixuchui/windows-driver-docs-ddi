@@ -4,7 +4,6 @@ title: _DXVADDI_VIDEOSAMPLEFLAGS (d3dumddi.h)
 description: The DXVADDI_VIDEOSAMPLEFLAGS structure identifies changes in the current sample frame from the previous sample frame.
 old-location: display\dxvaddi_videosampleflags.htm
 tech.root: display
-ms.assetid: 1dca2b12-0542-43a9-abff-203ea34cff90
 ms.date: 05/10/2018
 keywords: ["DXVADDI_VIDEOSAMPLEFLAGS structure"]
 ms.keywords: DXVA2_Structs_8e0fce9f-8473-4bbc-9403-fb8755090a7d.xml, DXVADDI_VIDEOSAMPLEFLAGS, DXVADDI_VIDEOSAMPLEFLAGS structure [Display Devices], _DXVADDI_VIDEOSAMPLEFLAGS, d3dumddi/DXVADDI_VIDEOSAMPLEFLAGS, display.dxvaddi_videosampleflags
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVADDI_VIDEOSAMPLEFLAGS
  - DXVADDI_VIDEOSAMPLEFLAGS
 ---
 
@@ -93,3 +93,4 @@ A member in the union that is contained in DXVADDI_VIDEOSAMPLEFLAGS that can hol
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_videosample">DXVADDI_VIDEOSAMPLE</a>
+

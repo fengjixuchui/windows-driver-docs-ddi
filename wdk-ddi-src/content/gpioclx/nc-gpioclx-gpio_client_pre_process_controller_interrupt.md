@@ -4,7 +4,6 @@ title: GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT (gpioclx.h)
 description: The CLIENT_PreProcessControllerInterrupt event callback function performs any pre-processing of a general-purpose I/O (GPIO) interrupt that must be done immediately if the ISR is scheduled to run at a later time.
 old-location: gpio\client_preprocesscontrollerinterrupt.htm
 tech.root: GPIO
-ms.assetid: BC97E260-D77C-4ACD-B431-0CE6D745B37B
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT callback function"]
 ms.keywords: CLIENT_PreProcessControllerInterrupt, CLIENT_PreProcessControllerInterrupt callback, CLIENT_PreProcessControllerInterrupt callback function [Parallel Ports], GPIO.client_preprocesscontrollerinterrupt, GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT, gpioclx/CLIENT_PreProcessControllerInterrupt
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_PreProcessControllerInterrupt
+ - GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT
 ---
 
 # GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT callback function
@@ -50,14 +49,14 @@ The <i>CLIENT_PreProcessControllerInterrupt</i> event callback function performs
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param BankId 
+### -param BankId [in]
 
-[in]
+
 The bank that contains the interrupting GPIO pin. If N is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to N–1. The GPIO framework extension previously obtained the number of banks in the controller from the <a href="/windows-hardware/drivers/ddi/gpioclx/nc-gpioclx-gpio_client_query_controller_basic_information">CLIENT_QueryControllerBasicInformation</a> event callback function. For more information, see Remarks in <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_client_controller_basic_information">CLIENT_CONTROLLER_BASIC_INFORMATION</a>.
 
 ### -param EnabledMask
@@ -111,3 +110,4 @@ The GPIO_CLIENT_PRE_PROCESS_CONTROLLER_INTERRUPT function type is defined in the
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/nf-gpioclx-gpio_clx_registerclient">GPIO_CLX_RegisterClient</a>
+

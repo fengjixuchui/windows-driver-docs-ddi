@@ -4,7 +4,6 @@ title: IDebugClient6::SetEventContextCallbacks (dbgeng.h)
 description: Registers an event callbacks object with this client.
 old-location: debugger\idebugclient6_seteventcontextcallbacks.htm
 tech.root: debugger
-ms.assetid: 246573DB-5FEB-4068-8DB8-950F5EDFD1A9
 ms.date: 05/03/2018
 keywords: ["IDebugClient6::SetEventContextCallbacks"]
 ms.keywords: IDebugClient6 interface [Windows Debugging],SetEventContextCallbacks method, IDebugClient6.SetEventContextCallbacks, IDebugClient6::SetEventContextCallbacks, SetEventContextCallbacks, SetEventContextCallbacks method [Windows Debugging], SetEventContextCallbacks method [Windows Debugging],IDebugClient6 interface, dbgeng/IDebugClient6::SetEventContextCallbacks, debugger.idebugclient6_seteventcontextcallbacks
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient6.SetEventContextCallbacks
+ - IDebugClient6::SetEventContextCallbacks
 ---
 
 # IDebugClient6::SetEventContextCallbacks
@@ -50,9 +49,9 @@ Registers an event callbacks object with this client.
 
 ## -parameters
 
-### -param Callbacks 
+### -param Callbacks [in, optional]
 
-[in, optional]
+
 The interface pointer to the event callbacks object.
 
 ## -returns
@@ -68,3 +67,4 @@ This event interface replaces the use of <a href="/windows-hardware/drivers/ddi/
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-seteventcallbacks">IDebugClient::SetEventCallbacks</a>
+

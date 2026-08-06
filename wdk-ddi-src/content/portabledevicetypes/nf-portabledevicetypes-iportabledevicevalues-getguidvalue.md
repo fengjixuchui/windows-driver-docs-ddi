@@ -4,7 +4,6 @@ title: IPortableDeviceValues::GetGuidValue (portabledevicetypes.h)
 description: Retrieves a GUID value (type VT_CLSID) specified by a key.
 old-location: wpddk\iportabledevicevalues_getguidvalue.htm
 tech.root: wpd_dk
-ms.assetid: c7da2e62-6d80-47d8-8f4e-2bbcbf730cef
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::GetGuidValue"]
 ms.keywords: GetGuidValue, GetGuidValue method, GetGuidValue method,IPortableDeviceValues interface, IPortableDeviceValues interface,GetGuidValue method, IPortableDeviceValues.GetGuidValue, IPortableDeviceValues::GetGuidValue, IPortableDeviceValuesGetGuidValue, portabledevicetypes/IPortableDeviceValues::GetGuidValue, wpddk.iportabledevicevalues_getguidvalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.GetGuidValue
+ - IPortableDeviceValues::GetGuidValue
 ---
 
 # IPortableDeviceValues::GetGuidValue
@@ -51,14 +50,14 @@ Retrieves a <b>GUID</b> value (type VT_CLSID) specified by a key.
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> key that specifies the item to retrieve.
 
-### -param pValue 
+### -param pValue [out]
 
-[out]
+
 Pointer to the retrieved <b>GUID</b> value.
 
 ## -returns
@@ -116,3 +115,4 @@ None.
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-setguidvalue">IPortableDeviceValues::SetGuidValue</a>
+

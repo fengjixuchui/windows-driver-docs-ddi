@@ -4,7 +4,6 @@ title: FltIsCallbackDataDirty function (fltkernel.h)
 description: The FltIsCallbackDataDirty routine tests the FLTFL_CALLBACK_DATA_DIRTY flag in a callback data structure.
 old-location: ifsk\fltiscallbackdatadirty.htm
 tech.root: ifsk
-ms.assetid: 128cab09-cbce-4a6f-9c57-5c8eda4477b3
 ms.date: 04/16/2018
 keywords: ["FltIsCallbackDataDirty function"]
 ms.keywords: FltApiRef_e_to_o_89035d79-bcf8-4f8d-8030-8a805e1a44df.xml, FltIsCallbackDataDirty, FltIsCallbackDataDirty routine [Installable File System Drivers], fltkernel/FltIsCallbackDataDirty, ifsk.fltiscallbackdatadirty
@@ -50,9 +49,9 @@ The <b>FltIsCallbackDataDirty</b> routine tests the  FLTFL_CALLBACK_DATA_DIRTY f
 
 ## -parameters
 
-### -param Data 
+### -param Data [in]
 
-[in]
+
 Pointer to a callback data structure (<a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data">FLT_CALLBACK_DATA</a>).
 
 ## -returns

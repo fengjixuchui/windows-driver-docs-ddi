@@ -4,7 +4,6 @@ title: IPortWaveRTStream (portcls.h)
 description: The IPortWaveRTStream interface is supported in Windows Vista and later operating systems, and it is a stream-specific interface that provides helper methods for use by the WaveRT miniport driver.
 old-location: audio\iportwavertstream.htm
 tech.root: audio
-ms.assetid: ca5039ff-d34a-4a61-b288-64f0c1f31b91
 ms.date: 05/08/2018
 keywords: ["IPortWaveRTStream interface"]
 ms.keywords: IPortWaveRTStream, IPortWaveRTStream interface [Audio Devices], IPortWaveRTStream interface [Audio Devices],described, audio.iportwavertstream, audmp-routines_485f04fa-bdd1-4b92-bb3b-4f8653393811.xml, portcls/IPortWaveRTStream
@@ -56,7 +55,5 @@ The methods in the <code>IPortWaveRTStream</code> interface are based on, and ar
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortWaveRTStream</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPortWaveRTStream</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IPortWaveRTStream</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPortWaveRTStream</b> also has these types of members:
+

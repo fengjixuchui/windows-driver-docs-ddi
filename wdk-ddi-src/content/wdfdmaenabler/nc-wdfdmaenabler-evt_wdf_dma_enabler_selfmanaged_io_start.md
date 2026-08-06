@@ -4,7 +4,6 @@ title: EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START (wdfdmaenabler.h)
 description: A driver's EvtDmaEnablerSelfManagedIoStart event callback function starts a DMA device's self-managed I/O operations.
 old-location: wdf\evtdmaenablerselfmanagediostart.htm
 tech.root: wdf
-ms.assetid: 397791c1-c394-48ae-b6cf-42f4494438f1
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START callback function"]
 ms.keywords: DFDmaObjectRef_6ccb5cb2-c30f-4ae0-a47e-cb58e24de25b.xml, EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START, EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START callback, EvtDmaEnablerSelfManagedIoStart, EvtDmaEnablerSelfManagedIoStart callback function, kmdf.evtdmaenablerselfmanagediostart, wdf.evtdmaenablerselfmanagediostart, wdfdmaenabler/EvtDmaEnablerSelfManagedIoStart
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfDmaEnabler.h
 api_name:
- - EvtDmaEnablerSelfManagedIoStart
+ - EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START
 ---
 
 # EVT_WDF_DMA_ENABLER_SELFMANAGED_IO_START callback function
@@ -52,9 +51,9 @@ A driver's <i>EvtDmaEnablerSelfManagedIoStart</i> event callback function starts
 
 ## -parameters
 
-### -param DmaEnabler 
+### -param DmaEnabler [in]
 
-[in]
+
 A handle to a DMA enabler object.
 
 ## -returns
@@ -80,3 +79,4 @@ The <i>EvtDmaEnablerSelfManagedIoStart</i> callback function is called at IRQL =
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdmaenabler/nf-wdfdmaenabler-wdfdmaenablercreate">WdfDmaEnablerCreate</a>
+

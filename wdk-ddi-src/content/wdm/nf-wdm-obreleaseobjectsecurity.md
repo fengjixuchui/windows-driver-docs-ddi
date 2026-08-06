@@ -4,7 +4,6 @@ title: ObReleaseObjectSecurity function (wdm.h)
 description: The ObReleaseObjectSecurity routine is the reciprocal to ObGetObjectSecurity.
 old-location: kernel\obreleaseobjectsecurity.htm
 tech.root: kernel
-ms.assetid: d4f9d02a-2541-445a-95f1-e08ebb0c8a39
 ms.date: 04/30/2018
 keywords: ["ObReleaseObjectSecurity function"]
 ms.keywords: ObReleaseObjectSecurity, ObReleaseObjectSecurity routine [Kernel-Mode Driver Architecture], k107_b43166d5-3dac-420a-803e-053b272d3405.xml, kernel.obreleaseobjectsecurity, wdm/ObReleaseObjectSecurity
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ The <b>ObReleaseObjectSecurity</b> routine is the reciprocal to <b>ObGetObjectSe
 
 ## -parameters
 
-### -param SecurityDescriptor 
+### -param SecurityDescriptor [in]
 
-[in]
+
 Pointer to the buffered <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor">SECURITY_DESCRIPTOR</a> to be released. The caller obtained this parameter from <b>ObGetObjectSecurity</b>
 
-### -param MemoryAllocated 
+### -param MemoryAllocated [in]
 
-[in]
+
 Specifies the value also obtained from <b>ObGetObjectSecurity</b>.
 
 ## -remarks

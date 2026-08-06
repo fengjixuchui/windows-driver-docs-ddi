@@ -4,7 +4,6 @@ title: WdfRegistryAssignString function (wdfregistry.h)
 description: The WdfRegistryAssignString method assigns a string to a specified value name in the registry. The string is contained in a specified framework string object.
 old-location: wdf\wdfregistryassignstring.htm
 tech.root: wdf
-ms.assetid: e84ee541-4347-4385-9742-5cc0c6c5017f
 ms.date: 02/26/2018
 keywords: ["WdfRegistryAssignString function"]
 ms.keywords: DFRegKeyObjectRef_6b8641ef-885d-47f5-ad8b-afdd57a75c84.xml, WdfRegistryAssignString, WdfRegistryAssignString method, kmdf.wdfregistryassignstring, wdf.wdfregistryassignstring, wdfregistry/WdfRegistryAssignString
@@ -55,19 +54,19 @@ The <b>WdfRegistryAssignString</b> method assigns a string to a specified value 
 
 ## -parameters
 
-### -param Key 
+### -param Key [in]
 
-[in]
+
 A handle to a registry-key object that represents an opened registry key.
 
-### -param ValueName 
+### -param ValueName [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a value name.
 
-### -param String 
+### -param String [in]
 
-[in]
+
 A handle to a framework string object that contains a string.
 
 ## -returns

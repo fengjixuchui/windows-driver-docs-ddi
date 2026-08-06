@@ -4,7 +4,6 @@ title: WdfDmaEnablerGetFragmentLength function (wdfdmaenabler.h)
 description: The WdfDmaEnablerGetFragmentLength method returns the maximum transfer length that the operating system supports for a single DMA transfer.
 old-location: wdf\wdfdmaenablergetfragmentlength.htm
 tech.root: wdf
-ms.assetid: f7481655-4413-4937-8a0a-99ca07d5b7b0
 ms.date: 02/26/2018
 keywords: ["WdfDmaEnablerGetFragmentLength function"]
 ms.keywords: DFDmaObjectRef_7c147fef-46f6-49aa-b8a9-9ef1a82ef963.xml, WdfDmaEnablerGetFragmentLength, WdfDmaEnablerGetFragmentLength method, kmdf.wdfdmaenablergetfragmentlength, wdf.wdfdmaenablergetfragmentlength, wdfdmaenabler/WdfDmaEnablerGetFragmentLength
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfDmaEnablerGetFragmentLength</b> method returns the maximum transfer le
 
 ## -parameters
 
-### -param DmaEnabler 
+### -param DmaEnabler [in]
 
-[in]
+
 A handle to a DMA enabler object that the driver obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfdmaenabler/nf-wdfdmaenabler-wdfdmaenablercreate">WdfDmaEnablerCreate</a>.
 
-### -param DmaDirection 
+### -param DmaDirection [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfdmaenabler/ne-wdfdmaenabler-_wdf_dma_direction">WDF_DMA_DIRECTION</a>-typed value that specifies the direction of the DMA transfer operation. For more information, see the following Remarks section.
 
 ## -returns

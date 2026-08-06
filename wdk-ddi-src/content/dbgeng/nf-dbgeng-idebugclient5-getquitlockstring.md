@@ -4,7 +4,6 @@ title: IDebugClient5::GetQuitLockString (dbgeng.h)
 description: Gets a quit lock string.
 old-location: debugger\idebugclient5_getquitlockstring.htm
 tech.root: debugger
-ms.assetid: 986C866E-D5AC-47CD-A666-EDF739E91761
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::GetQuitLockString"]
 ms.keywords: GetQuitLockString, GetQuitLockString method [Windows Debugging], GetQuitLockString method [Windows Debugging],IDebugClient5 interface, IDebugClient5 interface [Windows Debugging],GetQuitLockString method, IDebugClient5.GetQuitLockString, IDebugClient5::GetQuitLockString, dbgeng/IDebugClient5::GetQuitLockString, debugger.idebugclient5_getquitlockstring
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient5.GetQuitLockString
+ - IDebugClient5::GetQuitLockString
 ---
 
 # IDebugClient5::GetQuitLockString
@@ -50,19 +49,19 @@ Gets a quit lock string.
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 The buffer in which to write the string.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 The size of the buffer.
 
-### -param StringSize 
+### -param StringSize [out, optional]
 
-[out, optional]
+
 A pointer to the string size.
 
 ## -returns
@@ -80,3 +79,4 @@ The quit lock string
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient5">IDebugClient5</a>
+

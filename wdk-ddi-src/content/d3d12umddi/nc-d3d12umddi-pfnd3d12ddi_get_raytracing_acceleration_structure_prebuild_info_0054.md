@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_GET_RAYTRACING_ACCELERATION_STRUCTURE_PREBUILD_INFO_0054
 title: PFND3D12DDI_GET_RAYTRACING_ACCELERATION_STRUCTURE_PREBUILD_INFO_0054 (d3d12umddi.h)
 description: Queries the driver for resource requirements to build an acceleration structure.
-ms.assetid: 09c3edcb-ed66-41ed-9db1-edca88369c43
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_GET_RAYTRACING_ACCELERATION_STRUCTURE_PREBUILD_INFO_0054 callback function"]
 req.header: d3d12umddi.h
@@ -48,17 +47,17 @@ Queries the driver for resource requirements to build an acceleration structure.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in]
 
-[in] A handle to the device.
+A handle to the device.
 
-### -param Arg2
+### -param unnamedParam2 [in]
 
-[in] Pointer to a [D3D12DDI_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_INPUTS_0054](ns-d3d12umddi-d3d12ddi_build_raytracing_acceleration_structure_inputs_0054.md) structure that contains the inputs.
+Pointer to a [D3D12DDI_BUILD_RAYTRACING_ACCELERATION_STRUCTURE_INPUTS_0054](ns-d3d12umddi-d3d12ddi_build_raytracing_acceleration_structure_inputs_0054.md) structure that contains the inputs.
 
-### -param Arg3
+### -param unnamedParam3 [out]
 
-[out] Pointer to a [D3D12DDI_RAYTRACING_ACCELERATION_STRUCTURE_PREBUILD_INFO_0054](ns-d3d12umddi-d3d12ddi_raytracing_acceleration_structure_prebuild_info_0054.md) structure that contains prebuild info.
+Pointer to a [D3D12DDI_RAYTRACING_ACCELERATION_STRUCTURE_PREBUILD_INFO_0054](ns-d3d12umddi-d3d12ddi_raytracing_acceleration_structure_prebuild_info_0054.md) structure that contains prebuild info.
 
 ## -prototype
 

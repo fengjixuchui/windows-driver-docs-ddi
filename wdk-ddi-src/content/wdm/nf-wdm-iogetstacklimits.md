@@ -4,7 +4,6 @@ title: IoGetStackLimits function (wdm.h)
 description: The IoGetStackLimits routine returns the boundaries of the current thread's stack frame.
 old-location: kernel\iogetstacklimits.htm
 tech.root: kernel
-ms.assetid: aaa10cb2-16cb-40a8-ad72-9715da311957
 ms.date: 04/30/2018
 keywords: ["IoGetStackLimits function"]
 ms.keywords: IoGetStackLimits, IoGetStackLimits routine [Kernel-Mode Driver Architecture], k104_2688546a-d427-4d20-bc67-278b0fc20f45.xml, kernel.iogetstacklimits, wdm/IoGetStackLimits
@@ -50,14 +49,14 @@ The <b>IoGetStackLimits</b> routine returns the boundaries of the current thread
 
 ## -parameters
 
-### -param LowLimit 
+### -param LowLimit [out]
 
-[out]
+
 Pointer to a caller-supplied variable in which this routine returns the lower offset of the current thread's stack frame.
 
-### -param HighLimit 
+### -param HighLimit [out]
 
-[out]
+
 Pointer to a caller-supplied variable in which this routine returns the higher offset of the current thread's stack frame.
 
 ## -remarks

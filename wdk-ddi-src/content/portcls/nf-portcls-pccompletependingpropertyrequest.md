@@ -4,7 +4,6 @@ title: PcCompletePendingPropertyRequest function (portcls.h)
 description: The PcCompletePendingPropertyRequest function is called to complete a pending property request.
 old-location: audio\pccompletependingpropertyrequest.htm
 tech.root: audio
-ms.assetid: a4b59403-9a2f-4857-947b-dff8e3ea079c
 ms.date: 05/08/2018
 keywords: ["PcCompletePendingPropertyRequest function"]
 ms.keywords: PcCompletePendingPropertyRequest, PcCompletePendingPropertyRequest function [Audio Devices], audio.pccompletependingpropertyrequest, audpc-routines_934503ea-325f-4e57-ba45-e8834a64cefa.xml, portcls/PcCompletePendingPropertyRequest
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Portcls.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,14 +50,14 @@ The <b>PcCompletePendingPropertyRequest</b> function is called to complete a pen
 
 ## -parameters
 
-### -param PropertyRequest 
+### -param PropertyRequest [in]
 
-[in]
+
 Pointer to the property request that was passed to the property handler. The request is a structure of type <a href="/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcproperty_request">PCPROPERTY_REQUEST</a>.
 
-### -param NtStatus 
+### -param NtStatus [in]
 
-[in]
+
 Specifies the completion status of the request. See the list of NTSTATUS values defined in header file ntstatus.h.
 
 ## -returns

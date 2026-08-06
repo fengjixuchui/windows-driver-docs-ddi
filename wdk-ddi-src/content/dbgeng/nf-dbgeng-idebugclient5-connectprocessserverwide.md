@@ -4,7 +4,6 @@ title: IDebugClient5::ConnectProcessServerWide (dbgeng.h)
 description: The ConnectProcessServerWide method connects to a process server.
 old-location: debugger\connectprocessserverwide.htm
 tech.root: debugger
-ms.assetid: 42979da6-d044-4d52-858f-98871c3941bc
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::ConnectProcessServerWide"]
 ms.keywords: ConnectProcessServerWide, ConnectProcessServerWide method [Windows Debugging], ConnectProcessServerWide method [Windows Debugging],IDebugClient5 interface, IDebugClient5 interface [Windows Debugging],ConnectProcessServerWide method, IDebugClient5.ConnectProcessServerWide, IDebugClient5::ConnectProcessServerWide, dbgeng/IDebugClient5::ConnectProcessServerWide, debugger.connectprocessserverwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient5.ConnectProcessServerWide
+ - IDebugClient5::ConnectProcessServerWide
 ---
 
 # IDebugClient5::ConnectProcessServerWide
@@ -50,14 +49,14 @@ The <b>ConnectProcessServerWide</b> method connects to a <a href="/windows-hardw
 
 ## -parameters
 
-### -param RemoteOptions 
+### -param RemoteOptions [in]
 
-[in]
+
 Specifies how the <a href="/windows-hardware/drivers/debugger/d">debugger engine</a> will connect with the process server.  These are the same options passed to the <b>-premote</b> option on the WinDbg and CDB command lines.  For details on the syntax of this string, see <a href="/windows-hardware/drivers/debugger/activating-a-smart-client">Activating a Smart Client</a>.
 
-### -param Server 
+### -param Server [out]
 
-[out]
+
 Receives a handle for the process server.  This handle is used when creating or attaching to processes by using the process server.
 
 ## -returns
@@ -125,3 +124,4 @@ For more information about process servers and remote debugging, see <a href="/w
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-startprocessserver">StartProcessServer</a>
+

@@ -4,7 +4,6 @@ title: WdfUsbTargetPipeGetType function (wdfusb.h)
 description: The WdfUsbTargetPipeGetType method returns the type of a specified USB pipe.
 old-location: wdf\wdfusbtargetpipegettype.htm
 tech.root: wdf
-ms.assetid: d02af0c8-f963-4bec-a8b6-fe334fd75a68
 ms.date: 02/26/2018
 keywords: ["WdfUsbTargetPipeGetType function"]
 ms.keywords: DFUsbRef_de8bc76f-0be3-46bb-a959-b3115e91b472.xml, WdfUsbTargetPipeGetType, WdfUsbTargetPipeGetType method, kmdf.wdfusbtargetpipegettype, wdf.wdfusbtargetpipegettype, wdfusb/WdfUsbTargetPipeGetType
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,9 +54,9 @@ The <b>WdfUsbTargetPipeGetType</b> method returns the type of a specified USB pi
 
 ## -parameters
 
-### -param Pipe 
+### -param Pipe [in]
 
-[in]
+
 A handle to a framework pipe object that was obtained by calling <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbinterfacegetconfiguredpipe">WdfUsbInterfaceGetConfiguredPipe</a>.
 
 ## -returns

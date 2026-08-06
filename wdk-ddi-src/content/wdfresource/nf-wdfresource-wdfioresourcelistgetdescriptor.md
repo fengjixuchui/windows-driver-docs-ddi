@@ -4,7 +4,6 @@ title: WdfIoResourceListGetDescriptor function (wdfresource.h)
 description: The WdfIoResourceListGetDescriptor method returns a pointer to a resource descriptor that is contained in a resource requirements list's logical configuration.
 old-location: wdf\wdfioresourcelistgetdescriptor.htm
 tech.root: wdf
-ms.assetid: 1722e6f6-7509-4ae1-b394-3c69f4596e6d
 ms.date: 02/26/2018
 keywords: ["WdfIoResourceListGetDescriptor function"]
 ms.keywords: DFResourceObjectRef_6cb56ab5-abf5-4915-a48f-a3c91d657806.xml, WdfIoResourceListGetDescriptor, WdfIoResourceListGetDescriptor method, kmdf.wdfioresourcelistgetdescriptor, wdf.wdfioresourcelistgetdescriptor, wdfresource/WdfIoResourceListGetDescriptor
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfIoResourceListGetDescriptor</b> method returns a pointer to a resource
 
 ## -parameters
 
-### -param ResourceList 
+### -param ResourceList [in]
 
-[in]
+
 A handle to a framework resource-range-list object that represents a logical configuration of hardware resources for a device.
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 A zero-based value that is used as an index into the logical configuration that <i>ResourceList</i> specifies.
 
 ## -returns

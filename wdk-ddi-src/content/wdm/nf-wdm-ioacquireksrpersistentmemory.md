@@ -1,11 +1,9 @@
 ---
 UID: NF:wdm.IoAcquireKsrPersistentMemory
 title: IoAcquireKsrPersistentMemory function
-description: TBD
+description: "Microsoft reserves the IoAcquireKsrPersistentMemory function for internal use only. Don't use this function in your code."
 tech.root: kernel
-ms.assetid: 44f12973-4385-4a1e-ac93-68f51d4aacfc
 ms.date: 03/24/2020
-ms.topic: function
 ms.keywords: IoAcquireKsrPersistentMemory
 req.header: wdm.h
 req.include-header: 
@@ -33,15 +31,12 @@ api_location:
  - wdm.h
 api_name:
  - IoAcquireKsrPersistentMemory
-product:
- - Windows
 f1_keywords:
  - IoAcquireKsrPersistentMemory
  - wdm/IoAcquireKsrPersistentMemory
 ---
 
 # IoAcquireKsrPersistentMemory function
-
 
 ## -description
 
@@ -59,9 +54,6 @@ Reserved for system use.
 
 ## -returns
 
-This function returns NTSTATUS.
-
 ## -remarks
 
 ## -see-also
-

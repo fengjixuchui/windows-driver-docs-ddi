@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostType.GetTypeKind
 title: IDebugHostType::GetTypeKind (dbgmodel.h)
-description: The GetTypeKind method returns what kind of type (pointer, array, intrinsic, etc...) the symbol refers to.
-ms.assetid: e91dc827-48b6-4295-abe8-78ff7bb25b29
+description: "The IDebugHostType::GetTypeKind method, when called on a type, gets the kind of type specified by the TypeKind enumeration."
 ms.date: 09/10/2018
 keywords: ["IDebugHostType::GetTypeKind"]
 ms.keywords: IDebugHostType::GetTypeKind, GetTypeKind, IDebugHostType.GetTypeKind, IDebugHostType::GetTypeKind, IDebugHostType.GetTypeKind
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostType.GetTypeKind
+ - IDebugHostType::GetTypeKind
 ---
 
 # IDebugHostType::GetTypeKind

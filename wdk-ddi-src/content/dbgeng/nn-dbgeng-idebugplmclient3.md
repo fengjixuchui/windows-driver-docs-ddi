@@ -1,10 +1,9 @@
 ---
 UID: NN:dbgeng.IDebugPlmClient3
 title: IDebugPlmClient3 (dbgeng.h)
-description: This interface supports Process Lifecycle Management (PLM) for the debug client.
+description: The IDebugPlmClient3 (dbgeng.h) interface defines methods that support Process Lifecycle Management (PLM) for the debug client.
 old-location: debugger\idebugplmclient3.htm
 tech.root: debugger
-ms.assetid: 5B0580FF-0829-406A-B511-C0CD91A08D5F
 ms.date: 05/03/2018
 keywords: ["IDebugPlmClient3 interface"]
 ms.keywords: IDebugPlmClient3, IDebugPlmClient3 interface [Windows Debugging], IDebugPlmClient3 interface [Windows Debugging],described, dbgeng/IDebugPlmClient3, debugger.idebugplmclient3
@@ -50,7 +49,5 @@ This interface supports Process Lifecycle Management (PLM) for the debug client.
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugPlmClient3</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IDebugPlmClient3</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IDebugPlmClient3</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IDebugPlmClient3</b> also has these types of members:
+

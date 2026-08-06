@@ -4,7 +4,6 @@ title: PSCSIWMI_SET_DATABLOCK (scsiwmi.h)
 description: A miniport driver's HwScsiWmiSetDataBlock routine is called to change all data items in a single instance of a data block.
 old-location: storage\hwscsiwmisetdatablock.htm
 tech.root: storage
-ms.assetid: 5523d4d6-8eb5-48eb-a652-6612101b8422
 ms.date: 03/29/2018
 keywords: ["PSCSIWMI_SET_DATABLOCK callback function"]
 ms.keywords: HwScsiWmiSetDataBlock, HwScsiWmiSetDataBlock callback function [Storage Devices], PSCSIWMI_SET_DATABLOCK, PSCSIWMI_SET_DATABLOCK callback, Scsimini_b75fb6d1-48dc-4fcb-ae05-bf278c382ecf.xml, scsiwmi/HwScsiWmiSetDataBlock, storage.hwscsiwmisetdatablock
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - scsiwmi.h
 api_name:
- - HwScsiWmiSetDataBlock
+ - PSCSIWMI_SET_DATABLOCK
 ---
 
 # PSCSIWMI_SET_DATABLOCK callback function
@@ -51,34 +50,34 @@ A miniport driver's <b>HwScsiWmiSetDataBlock</b> routine is called to change all
 
 ## -parameters
 
-### -param DeviceContext 
+### -param DeviceContext [in]
 
-[in]
+
 Points to the miniport driver-defined context value passed to <a href="/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmidispatchfunction">ScsiPortWmiDispatchFunction</a>.
 
-### -param RequestContext 
+### -param RequestContext [in]
 
-[in]
+
 Points to the SCSIWMI_REQUEST_CONTEXT structure that the miniport driver passed to <a href="/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmidispatchfunction">ScsiPortWmiDispatchFunction</a>.
 
-### -param GuidIndex 
+### -param GuidIndex [in]
 
-[in]
+
 Specifies the data block by its index into the list of GUIDs in the SCSI_WMILIB_CONTEXT structure that the miniport driver passed to <a href="/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmidispatchfunction">ScsiPortWmiDispatchFunction</a>.
 
-### -param InstanceIndex 
+### -param InstanceIndex [in]
 
-[in]
+
 If the block specified by <i>GuidIndex</i> has multiple instances, <i>InstanceIndex</i> specifies the instance.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size in bytes of the buffer at <i>Buffer</i>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Points to a buffer that contains new values for the instance.
 
 ## -returns
@@ -108,3 +107,4 @@ The miniport driver should call <a href="/windows-hardware/drivers/ddi/scsiwmi/n
 
 
 <a href="/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmipostprocess">ScsiPortWmiPostProcess</a>
+

@@ -4,7 +4,6 @@ title: _NDIS_QOS_CLASSIFICATION_ELEMENT (ntddndis.h)
 description: The NDIS_QOS_CLASSIFICATION_ELEMENT structure specifies an NDIS Quality of Service (QoS) traffic classification for a network adapter that supports the IEEE 802.1 Data Center Bridging (DCB) interface.Each traffic classification specifies the following:A classification condition that is based on a data pattern within the egress packet data.Starting with NDIS 6.30, classification conditions are based on a 16-bit value, such as a UDP or TCP destination port or a media access control (MAC) EtherType.A classification action that defines the traffic class to be used to handle the egress packet.Starting with NDIS 6.30, classification actions specify an 802.1p priority level.For example, a traffic classification could specify that all egress packets for destination TCP port number 3260 (condition) are assigned an 802.1p priority level 3 (action).
 old-location: netvista\ndis_qos_classification_element.htm
 tech.root: netvista
-ms.assetid: 2677dc3a-7685-40bf-94c3-2efecf21e9a8
 ms.date: 05/02/2018
 keywords: ["NDIS_QOS_CLASSIFICATION_ELEMENT structure"]
 ms.keywords: NDIS_QOS_CLASSIFICATION_ELEMENT, NDIS_QOS_CLASSIFICATION_ELEMENT structure [Network Drivers Starting with Windows Vista], PNDIS_QOS_CLASSIFICATION_ELEMENT, PNDIS_QOS_CLASSIFICATION_ELEMENT structure pointer [Network Drivers Starting with Windows Vista], _NDIS_QOS_CLASSIFICATION_ELEMENT, netvista.ndis_qos_classification_element, ntddndis/NDIS_QOS_CLASSIFICATION_ELEMENT, ntddndis/PNDIS_QOS_CLASSIFICATION_ELEMENT
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_QOS_CLASSIFICATION_ELEMENT
+ - PNDIS_QOS_CLASSIFICATION_ELEMENT
  - NDIS_QOS_CLASSIFICATION_ELEMENT
 ---
 
@@ -74,7 +75,7 @@ For example, a traffic classification could specify that all egress packets for 
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_QOS_CLASSIFICATION_ELEMENT. To specify the version of the <b>NDIS_QOS_CLASSIFICATION_ELEMENT</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
 
@@ -108,25 +109,25 @@ If this flag is set, the miniport driver accepts the traffic classification para
 
 A <b>USHORT</b> value that specifies the type of the data pattern that is contained in the <b>ConditionField</b> member. For example, the data pattern type could specify a destination UDP port whose value is specified by the <b>ConditionField</b> member.
 
-For more information, see <a href="https://docs.microsoft.com/">Guidelines for Setting the ConditionSelector and ConditionField Members</a>.
+For more information, see <a href="/">Guidelines for Setting the ConditionSelector and ConditionField Members</a>.
 
 ### -field ConditionField
 
 A <b>USHORT</b> value that contains the data pattern whose type is specified by the  <b>ConditionSelector</b> member. 
 
-For more information, see <a href="https://docs.microsoft.com/">Guidelines for Setting the ConditionSelector and ConditionField Members</a>.
+For more information, see <a href="/">Guidelines for Setting the ConditionSelector and ConditionField Members</a>.
 
 ### -field ActionSelector
 
 A <b>USHORT</b> value that specifies the type of action data that is contained in the <b>ActionField</b> member.  Starting with NDIS 6.30, the action data type specifies an 802.1p priority level whose value is specified by the <b>ConditionField</b> member.
 
-For more information, see <a href="https://docs.microsoft.com/">Guidelines for Setting the ActionSelector and ActionField Members</a>.
+For more information, see <a href="/">Guidelines for Setting the ActionSelector and ActionField Members</a>.
 
 ### -field ActionField
 
 A <b>USHORT</b> value that contains an action value whose type is specified by the  <b>ActionSelector</b> member.  
 
-For more information, see <a href="https://docs.microsoft.com/">Guidelines for Setting the ActionSelector and ActionField Members</a>.
+For more information, see <a href="/">Guidelines for Setting the ActionSelector and ActionField Members</a>.
 
 ## -remarks
 
@@ -262,7 +263,7 @@ For more information on NDIS QoS traffic classes, see <a href="/windows-hardware
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -287,3 +288,4 @@ For more information on NDIS QoS traffic classes, see <a href="/windows-hardware
 
 
 <a href="/windows-hardware/drivers/network/oid-qos-remote-parameters">OID_QOS_REMOTE_PARAMETERS</a>
+

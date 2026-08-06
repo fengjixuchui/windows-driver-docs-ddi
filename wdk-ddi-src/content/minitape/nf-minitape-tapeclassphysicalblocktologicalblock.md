@@ -4,7 +4,6 @@ title: TapeClassPhysicalBlockToLogicalBlock function (minitape.h)
 description: The TapeClassPhysicalBlockToLogicalBlock routine translates a physical block address to a pseudological block address. This routine is for SCSI-1 devices.
 old-location: storage\tapeclassphysicalblocktologicalblock.htm
 tech.root: storage
-ms.assetid: fc95f5c8-2892-479d-ac25-32c07e9c7aab
 ms.date: 03/29/2018
 keywords: ["TapeClassPhysicalBlockToLogicalBlock function"]
 ms.keywords: TapeClassPhysicalBlockToLogicalBlock, TapeClassPhysicalBlockToLogicalBlock routine [Storage Devices], minitape/TapeClassPhysicalBlockToLogicalBlock, storage.tapeclassphysicalblocktologicalblock, tapeclas_94d20234-ee4d-4096-b856-f5196b606e2d.xml
@@ -51,24 +50,24 @@ The <b>TapeClassPhysicalBlockToLogicalBlock</b> routine translates a physical bl
 
 ## -parameters
 
-### -param DensityCode 
+### -param DensityCode [in]
 
-[in]
+
 Specifies the tape media density code. This routine supports tapes with the following density codes: QIC_24, QIC_120, QIC_150, QIC_525, QIC_1000, QIC_2GB, QIC_1350, and QIC_2100.
 
-### -param PhysicalBlockAddress 
+### -param PhysicalBlockAddress [in]
 
-[in]
+
 Specifies the physical block address obtained by a SCSI READ POSITION command.
 
-### -param BlockLength 
+### -param BlockLength [in]
 
-[in]
+
 Specifies the logical block size, in bytes.
 
-### -param FromBOT 
+### -param FromBOT [in]
 
-[in]
+
 <b>TRUE</b> indicates that the logical block calculation should start at the beginning of the tape and account for the physical device header. <b>FALSE</b> indicates that the tape has two partitions, that the block address is on the directory partition, and therefore no physical device header needs to be factored into the calculation.
 
 ## -returns

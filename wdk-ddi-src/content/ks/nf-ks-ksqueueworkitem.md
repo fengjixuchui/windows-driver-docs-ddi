@@ -4,7 +4,6 @@ title: KsQueueWorkItem function (ks.h)
 description: The KsQueueWorkItem function queues the specified work item with a worker previous created by the KsRegisterWorker function.
 old-location: stream\ksqueueworkitem.htm
 tech.root: stream
-ms.assetid: a700979e-aee4-4bce-8f98-b44b864fbb43
 ms.date: 04/23/2018
 keywords: ["KsQueueWorkItem function"]
 ms.keywords: KsQueueWorkItem, KsQueueWorkItem function [Streaming Media Devices], ks/KsQueueWorkItem, ksfunc_abb711a0-0862-4d91-b2e1-3af290f1112f.xml, stream.ksqueueworkitem
@@ -51,14 +50,14 @@ The <b>KsQueueWorkItem</b> function queues the specified work item with a worker
 
 ## -parameters
 
-### -param Worker 
+### -param Worker [in]
 
-[in]
+
 Specifies the previously allocated worker.
 
-### -param WorkItem 
+### -param WorkItem [in]
 
-[in]
+
 Specifies the initialized work item to queue. This work item is only associated with the worker as long as the worker is on a queue. The work item must have been initialized by <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateworkitem">IoAllocateWorkItem</a>.
 
 ## -returns

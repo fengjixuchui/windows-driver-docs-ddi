@@ -4,7 +4,6 @@ title: IPortClsNotifications (portcls.h)
 description: An interface implemented by ports to provide notification helpers to miniports to support audio module communication.
 old-location: audio\iportclsnotifications.htm
 tech.root: audio
-ms.assetid: 03F65E4E-C942-4748-8D3E-938A6AC51B2A
 ms.date: 05/08/2018
 keywords: ["IPortClsNotifications interface"]
 ms.keywords: IPortClsNotifications, IPortClsNotifications interface [Audio Devices], IPortClsNotifications interface [Audio Devices],described, audio.iportclsnotifications, portcls/IPortClsNotifications
@@ -57,7 +56,5 @@ The miniport audio driver will call into their port to create and send the notif
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortClsNotifications</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPortClsNotifications</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IPortClsNotifications</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPortClsNotifications</b> also has these types of members:
+

@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_CALCPRIVATEVIDEODECODERSIZE_0032
 title: PFND3D12DDI_CALCPRIVATEVIDEODECODERSIZE_0032 (d3d12umddi.h)
-description: Used to calculate the size of a video decoder.
+description: The PFND3D12DDI_CALCPRIVATEVIDEODECODERSIZE_0032 callback function calculates the size of a video decoder.
 old-location: display\pfnd3d12ddi_calcprivatevideodecodersize_0032.htm
-ms.assetid: 90F05A41-692B-4301-81F3-56035072C8A3
 ms.date: 04/16/2018
 keywords: ["PFND3D12DDI_CALCPRIVATEVIDEODECODERSIZE_0032 callback function"]
 ms.keywords: PFND3D12DDI_CALCPRIVATEVIDEODECODERSIZE_0032, PFND3D12DDI_CALCPRIVATEVIDEODECODERSIZE_0032 entry, PFND3D12DDI_CALCPRIVATEVIDEODECODERSIZE_0032 entry point [Display Devices], d3d12umddi/PFND3D12DDI_CALCPRIVATEVIDEODECODERSIZE_0032, display.pfnd3d12ddi_calcprivatevideodecodersize_0032
@@ -39,8 +38,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CALCPRIVATEVIDEODECODERSIZE_0032
-product:
- - Windows
 ---
 
 # PFND3D12DDI_CALCPRIVATEVIDEODECODERSIZE_0032 callback function
@@ -56,9 +53,9 @@ Used to calculate the size of a video decoder. The D3D runtime allocates memory 
 
 The hardware device being processed.
 
-### -param pArgs
+### -param pArgs [in]
 
-[in] The arguments used to create a video decoder.
+The arguments used to create a video decoder.
 
 ## -returns
 

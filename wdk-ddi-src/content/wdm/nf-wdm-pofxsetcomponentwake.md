@@ -4,7 +4,6 @@ title: PoFxSetComponentWake function (wdm.h)
 description: The PoFxSetComponentWake routine indicates whether the driver arms the specified component to wake whenever the component enters the idle condition.
 old-location: kernel\pofxsetcomponentwake.htm
 tech.root: kernel
-ms.assetid: BE2E35B0-1C34-4740-ABED-4E96F8908174
 ms.date: 04/30/2018
 keywords: ["PoFxSetComponentWake function"]
 ms.keywords: PoFxSetComponentWake, PoFxSetComponentWake routine [Kernel-Mode Driver Architecture], kernel.pofxsetcomponentwake, wdm/PoFxSetComponentWake
@@ -50,19 +49,19 @@ The <b>PoFxSetComponentWake</b> routine indicates whether the driver arms the sp
 
 ## -parameters
 
-### -param Handle 
+### -param Handle [in]
 
-[in]
+
 A handle that represents the registration of the device with the power management framework (PoFx). The device driver previously received this handle from the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxregisterdevice">PoFxRegisterDevice</a> routine.
 
-### -param Component 
+### -param Component [in]
 
-[in]
+
 The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_po_fx_device_v1">PO_FX_DEVICE</a> structure that the device driver used to register the device with PoFx. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
 
-### -param WakeHint 
+### -param WakeHint [in]
 
-[in]
+
 Whether the driver arms the component to wake whenever the component enters the idle condition. If TRUE, the driver arms the component to wake. If FALSE, the driver does not arm the component to wake.
 
 ## -remarks

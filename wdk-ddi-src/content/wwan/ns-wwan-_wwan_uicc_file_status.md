@@ -3,7 +3,6 @@ UID: NS:wwan._WWAN_UICC_FILE_STATUS
 title: _WWAN_UICC_FILE_STATUS (wwan.h)
 description: The WWAN_UICC_FILE_STATUS structure describes the status of a UICC file.
 tech.root: netvista
-ms.assetid: A5B1B756-4E1C-42AA-84AA-CEA847D94708
 ms.date: 04/09/2019
 keywords: ["WWAN_UICC_FILE_STATUS structure"]
 ms.keywords: _WWAN_UICC_FILE_STATUS, WWAN_UICC_FILE_STATUS, *PWWAN_UICC_FILE_STATUS,
@@ -37,6 +36,8 @@ api_location:
  - wwan.h
 api_name:
  - _WWAN_UICC_FILE_STATUS
+ - PWWAN_UICC_FILE_STATUS
+ - WWAN_UICC_FILE_STATUS
 ---
 
 # _WWAN_UICC_FILE_STATUS structure
@@ -74,7 +75,7 @@ A [**WWAN_UICC_FILE_STRUCTURE**](../wwan/ne-wwan-_wwan_uicc_file_structure.md) v
 
 ### -field ItemCount
 
-The number of items in the UICC file. For transparent and TLV viles, this is set to **1**.
+The number of items in the UICC file. For transparent and TLV files, this is set to **1**.
 
 ### -field ItemSize
 
@@ -95,3 +96,4 @@ This structure is used in the [**NDIS_WWAN_UICC_FILE_STATUS**](../ndiswwan/ns-nd
 [OID_WWAN_UICC_FILE_STATUS](/windows-hardware/drivers/network/oid-wwan-uicc-file-status)
 
 [**NDIS_WWAN_UICC_FILE_STATUS**](../ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_file_status.md)
+

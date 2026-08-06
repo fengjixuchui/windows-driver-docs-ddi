@@ -2,7 +2,6 @@
 UID: NI:d3dkmthk.IOCTL_INTERNAL_GRAPHICSPOWER_REGISTER
 title: IOCTL_INTERNAL_GRAPHICSPOWER_REGISTER (d3dkmthk.h)
 description: For internal use only. Do not use.
-ms.assetid: 4f49199d-f3ba-455e-bda4-17d816e929ff
 ms.date: 10/19/2018
 keywords: ["IOCTL_INTERNAL_GRAPHICSPOWER_REGISTER IOCTL"]
 req.header: d3dkmthk.h
@@ -47,29 +46,27 @@ dev_langs:
 
 ## -ioctlparameters
 
+### -ioctl-major-code
+
+[IRP_MJ_INTERNAL_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
+
 ### -input-buffer
 
-<text></text>
 
 ### -input-buffer-length 
 
-<text></text>
 
 ### -output-buffer
 
-<text></text>
 
 ### -output-buffer-length 
 
-<text></text>
 
 ### -in-out-buffer
 
-<text></text>
 
 ### -inout-buffer-length 
 
-<text></text>
 
 ### -status-block
 

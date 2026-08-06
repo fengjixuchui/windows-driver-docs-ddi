@@ -4,7 +4,6 @@ title: _USBDEVICE_RESET (ucxusbdevice.h)
 description: Contains parameters for a request to reset the specified device. This structure is passed by UCX in request parameters (Parameters.Others.Arg1) of a framework request object of the EVT_UCX_USBDEVICE_RESET callback function.
 old-location: buses\_usbdevice_reset.htm
 tech.root: usbref
-ms.assetid: 4C07239D-89AE-4A9F-B7EB-CFFE6D47F10B
 ms.date: 05/07/2018
 keywords: ["USBDEVICE_RESET structure"]
 ms.keywords: "*PUSBDEVICE_RESET, P_USBDEVICE_RESET, P_USBDEVICE_RESET structure pointer [Buses], USBDEVICE_RESET, USBDEVICE_RESET structure [Buses], _USBDEVICE_RESET, buses._usbdevice_reset, ucxusbdevice/P_USBDEVICE_RESET, ucxusbdevice/_USBDEVICE_RESET"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ucxusbdevice.h
 api_name:
+ - _USBDEVICE_RESET
+ - PUSBDEVICE_RESET
  - USBDEVICE_RESET
 ---
 
@@ -73,3 +74,4 @@ A pointer to an array of handles to endpoints to disable.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ucxusbdevice/nc-ucxusbdevice-evt_ucx_usbdevice_reset">EVT_UCX_USBDEVICE_RESET</a>
+

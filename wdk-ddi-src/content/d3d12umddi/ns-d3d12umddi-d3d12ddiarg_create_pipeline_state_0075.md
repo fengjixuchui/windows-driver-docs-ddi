@@ -2,11 +2,9 @@
 UID: NS:d3d12umddi.D3D12DDIARG_CREATE_PIPELINE_STATE_0075
 title: D3D12DDIARG_CREATE_PIPELINE_STATE_0075
 ms.date: 03/24/2020
-ms.topic: language-reference
 targetos: Windows
-ms.assetid: 68a5bb92-22cf-4f87-aae6-8e5fc78c0e75
 tech.root: display
-description: Creates a pipeline state.
+description: The D3D12DDIARG_CREATE_PIPELINE_STATE_0075 structure creates a graphics pipeline state object.
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 

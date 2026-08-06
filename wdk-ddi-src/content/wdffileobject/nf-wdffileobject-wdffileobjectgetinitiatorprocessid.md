@@ -4,7 +4,6 @@ title: WdfFileObjectGetInitiatorProcessId function (wdffileobject.h)
 description: The WdfFileObjectGetInitiatorProcessId function retrieves the initiator process ID that is associated with a specified framework file object.
 old-location: wdf\wdffileobjectgetinitiatorprocessid.htm
 tech.root: wdf
-ms.assetid: 59E15EAA-4934-48D9-A9E3-7CDEEAE01985
 ms.date: 02/26/2018
 keywords: ["WdfFileObjectGetInitiatorProcessId function"]
 ms.keywords: WdfFileObjectGetInitiatorProcessId, WdfFileObjectGetInitiatorProcessId function, wdf.wdffileobjectgetinitiatorprocessid, wdffileobject/WdfFileObjectGetInitiatorProcessId
@@ -52,9 +51,9 @@ The <b>WdfFileObjectGetInitiatorProcessId</b> function retrieves the initiator p
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 A handle to a framework file object.
 
 ## -returns

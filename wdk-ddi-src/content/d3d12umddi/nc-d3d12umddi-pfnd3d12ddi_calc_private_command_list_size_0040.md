@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_CALC_PRIVATE_COMMAND_LIST_SIZE_0040
 title: PFND3D12DDI_CALC_PRIVATE_COMMAND_LIST_SIZE_0040 (d3d12umddi.h)
 description: The CalcPrivateCommandListSize function determines the size of the user-mode display driver's private region of memory for a command list.
-ms.assetid: e49f46eb-58ad-4bf8-820a-2e33cfd099fb
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CALC_PRIVATE_COMMAND_LIST_SIZE_0040 callback function"]
 req.header: d3d12umddi.h
@@ -35,8 +34,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CALC_PRIVATE_COMMAND_LIST_SIZE_0040
-product:
- - Windows
 ---
 
 # PFND3D12DDI_CALC_PRIVATE_COMMAND_LIST_SIZE_0040 callback function
@@ -48,11 +45,11 @@ The CalcPrivateCommandListSize function determines the size of the user-mode dis
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 Pointer to a D3D12DDIARG_CREATE_COMMAND_LIST_0040 structure that describes the parameters that the user-mode display driver uses to calculate the size of the memory region.
 

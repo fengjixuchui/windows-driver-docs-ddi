@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_DESTROY_COMMAND_POOL_0040
 title: PFND3D12DDI_DESTROY_COMMAND_POOL_0040 (d3d12umddi.h)
 description: Implemented by the client driver to clean up command pool resources.
-ms.assetid: 3a43d9fa-07c8-441e-8d2f-d4354db225a9
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_DESTROY_COMMAND_POOL_0040 callback function"]
 req.header: d3d12umddi.h
@@ -35,8 +34,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_DESTROY_COMMAND_POOL_0040
-product:
- - Windows
 ---
 
 # PFND3D12DDI_DESTROY_COMMAND_POOL_0040 callback function
@@ -48,11 +45,11 @@ Implemented by the client driver to clean up command pool resources.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 A handle to a command pool.
 

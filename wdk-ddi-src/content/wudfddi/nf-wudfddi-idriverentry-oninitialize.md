@@ -4,7 +4,6 @@ title: IDriverEntry::OnInitialize (wudfddi.h)
 description: The OnInitialize method performs any operations that are necessary to initialize a driver.
 old-location: wdf\idriverentry_oninitialize.htm
 tech.root: wdf
-ms.assetid: c676588e-348b-4840-9873-6b1bb2454987
 ms.date: 02/26/2018
 keywords: ["IDriverEntry::OnInitialize"]
 ms.keywords: IDriverEntry interface,OnInitialize method, IDriverEntry.OnInitialize, IDriverEntry::OnInitialize, OnInitialize, OnInitialize method, OnInitialize method,IDriverEntry interface, UMDFDriverObjectRef_01ebb7b4-69bb-4597-b21a-d3ff6cf3bc24.xml, umdf.idriverentry_oninitialize, wdf.idriverentry_oninitialize, wudfddi/IDriverEntry::OnInitialize
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IDriverEntry.OnInitialize
+ - IDriverEntry::OnInitialize
 ---
 
 # IDriverEntry::OnInitialize
@@ -52,9 +51,9 @@ The <b>OnInitialize</b> method performs any operations that are necessary to ini
 
 ## -parameters
 
-### -param pWdfDriver 
+### -param pWdfDriver [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdriver">IWDFDriver</a> interface for the framework driver object that represents the driver that is loaded in the host process.
 
 ## -returns
@@ -72,3 +71,4 @@ The framework creates a new driver object for each driver that is loaded in the 
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdriver">IWDFDriver</a>
+

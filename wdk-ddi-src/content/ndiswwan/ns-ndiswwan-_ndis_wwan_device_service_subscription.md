@@ -4,7 +4,6 @@ title: _NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION (ndiswwan.h)
 description: The NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION structures encapsulates the data for NDIS_STATUS_WWAN_ DEVICE_SERVICE_SUBSCRIPTION.
 old-location: netvista\ndis_wwan_device_service_subscription.htm
 tech.root: netvista
-ms.assetid: 65B9739B-98C6-441E-B15A-67C32A5FB232
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION structure"]
 ms.keywords: "*PNDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION, NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION, NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION, PNDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION, ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION, netvista.ndis_wwan_device_service_subscription"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION
+ - PNDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION
  - NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION
 ---
 
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_DEVICE_SERVICE_SUBSCRIPTION)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field uStatus
 
@@ -123,3 +124,4 @@ This member points to the list of the GUIDs by using the WWAN_LIST_HEADER struct
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_list_header">WWAN_LIST_HEADER</a>
+

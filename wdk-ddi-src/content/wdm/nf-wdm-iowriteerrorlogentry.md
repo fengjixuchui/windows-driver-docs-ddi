@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.IoWriteErrorLogEntry
 title: IoWriteErrorLogEntry function (wdm.h)
-description: The IoWriteErrorLogEntry routine queues a given error log packet to the system error logging thread.
+description: The IoWriteErrorLogEntry routine in wdm.h queues a given error log packet to the system error logging thread.
 old-location: kernel\iowriteerrorlogentry.htm
 tech.root: kernel
-ms.assetid: 1259c344-584c-410a-a152-5de1f433082c
 ms.date: 04/30/2018
 keywords: ["IoWriteErrorLogEntry function"]
 ms.keywords: IoWriteErrorLogEntry, IoWriteErrorLogEntry routine [Kernel-Mode Driver Architecture], k104_1822a499-059a-41c8-b97b-aa3a5bfd22e3.xml, kernel.iowriteerrorlogentry, wdm/IoWriteErrorLogEntry
@@ -50,9 +49,9 @@ The <b>IoWriteErrorLogEntry</b> routine queues a given error log packet to the s
 
 ## -parameters
 
-### -param ElEntry 
+### -param ElEntry [in]
 
-[in]
+
 Pointer to the error log packet the driver has allocated with <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateerrorlogentry">IoAllocateErrorLogEntry</a> and filled in by the caller.
 
 ## -remarks

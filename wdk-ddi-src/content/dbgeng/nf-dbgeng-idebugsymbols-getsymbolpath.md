@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols.GetSymbolPath
 title: IDebugSymbols::GetSymbolPath (dbgeng.h)
-description: The GetSymbolPath method returns the symbol path.
+description: The GetSymbolPath method returns the symbol path. This method belongs to the IDebugSymbols interface.
 old-location: debugger\getsymbolpath.htm
 tech.root: debugger
-ms.assetid: bee6d7c5-b866-4b48-859e-9acb2219e7c1
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols::GetSymbolPath"]
 ms.keywords: GetSymbolPath, GetSymbolPath method [Windows Debugging], GetSymbolPath method [Windows Debugging],IDebugSymbols interface, GetSymbolPath method [Windows Debugging],IDebugSymbols2 interface, GetSymbolPath method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],GetSymbolPath method, IDebugSymbols.GetSymbolPath, IDebugSymbols2 interface [Windows Debugging],GetSymbolPath method, IDebugSymbols2::GetSymbolPath, IDebugSymbols3 interface [Windows Debugging],GetSymbolPath method, IDebugSymbols3::GetSymbolPath, IDebugSymbols::GetSymbolPath, IDebugSymbols_b13afb68-0f30-477d-be1b-a2b49ae40081.xml, dbgeng/IDebugSymbols2::GetSymbolPath, dbgeng/IDebugSymbols3::GetSymbolPath, dbgeng/IDebugSymbols::GetSymbolPath, debugger.getsymbolpath
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.GetSymbolPath
- - IDebugSymbols2.GetSymbolPath
- - IDebugSymbols3.GetSymbolPath
+ - IDebugSymbols::GetSymbolPath
 ---
 
 # IDebugSymbols::GetSymbolPath
@@ -52,19 +49,19 @@ The <b>GetSymbolPath</b>  method returns the symbol path.
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Receives the symbol path.  This is a string that contains symbol path elements separated by semicolons (<b>;</b>).  Each symbol path element can specify either a directory or a symbol server.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size, in characters, of the <i>Buffer</i> buffer.
 
-### -param PathSize 
+### -param PathSize [out, optional]
 
-[out, optional]
+
 Receives the size, in characters, of the symbol path.
 
 ## -returns
@@ -123,3 +120,4 @@ For more information about manipulating the symbol path, see <a href="/windows-h
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-setsymbolpath">SetSymbolPath</a>
+

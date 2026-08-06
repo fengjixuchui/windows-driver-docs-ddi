@@ -4,7 +4,6 @@ title: StorPortGetSystemPortNumber function (storport.h)
 description: The StorPortGetSystemPortNumber routine retrieves the system assigned port number for a storage adapter.
 old-location: storage\storportgetsystemportnumber.htm
 tech.root: storage
-ms.assetid: D1205C85-6F23-4D08-A146-2FA8C00FD6E9
 ms.date: 03/29/2018
 keywords: ["StorPortGetSystemPortNumber function"]
 ms.keywords: StorPortGetSystemPortNumber, StorPortGetSystemPortNumber routine [Storage Devices], storage.storportgetsystemportnumber, storport/StorPortGetSystemPortNumber
@@ -50,14 +49,14 @@ The <b>StorPortGetSystemPortNumber</b> routine retrieves the system assigned por
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param Address 
+### -param Address [in, out]
 
-[in, out]
+
 A pointer to a storage address structure formatted as <a href="/windows-hardware/drivers/ddi/scsi/ns-scsi-_stor_addr_btl8">STOR_ADDR_BTL8</a>. On return, the <b>Port</b> member of this structure will contain the port value assigned to the adapter.
 
 ## -returns

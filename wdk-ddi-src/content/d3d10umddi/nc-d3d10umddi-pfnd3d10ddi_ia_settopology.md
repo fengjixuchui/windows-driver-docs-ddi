@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d10umddi.PFND3D10DDI_IA_SETTOPOLOGY
 title: PFND3D10DDI_IA_SETTOPOLOGY (d3d10umddi.h)
-description: The IaSetTopology function sets the primitive topology to enable drawing for the input assember.
+description: The IaSetTopology function sets the primitive topology to enable drawing for the input assembler.
 old-location: display\iasettopology.htm
-ms.assetid: c2ee9c8b-7e33-4fc9-9bd3-2b2984e94390
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_IA_SETTOPOLOGY callback function"]
 ms.keywords: IaSetTopology, IaSetTopology callback function [Display Devices], PFND3D10DDI_IA_SETTOPOLOGY, PFND3D10DDI_IA_SETTOPOLOGY callback, UserModeDisplayDriverDx10_Functions_9c7ceca5-4745-4550-832d-d85cdcfecf81.xml, d3d10umddi/IaSetTopology, display.iasettopology
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - IaSetTopology
+ - PFND3D10DDI_IA_SETTOPOLOGY
 ---
 
 # PFND3D10DDI_IA_SETTOPOLOGY callback function
@@ -46,17 +45,17 @@ api_name:
 
 ## -description
 
-The <i>IaSetTopology</i> function sets the primitive topology to enable drawing for the input assember.
+The <i>IaSetTopology</i> function sets the primitive topology to enable drawing for the input assembler.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *PrimitiveTopology* [in]
 
@@ -81,3 +80,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

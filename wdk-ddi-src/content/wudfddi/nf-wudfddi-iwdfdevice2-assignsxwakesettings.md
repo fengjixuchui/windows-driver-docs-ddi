@@ -4,7 +4,6 @@ title: IWDFDevice2::AssignSxWakeSettings (wudfddi.h)
 description: The AssignSxWakeSettings method provides driver-supplied information about a device's ability to trigger a wake signal while both the device and the system are in a low-power state.
 old-location: wdf\iwdfdevice2_assignsxwakesettings.htm
 tech.root: wdf
-ms.assetid: 32d3b680-298b-443e-a2c4-db8fc057bf75
 ms.date: 02/26/2018
 keywords: ["IWDFDevice2::AssignSxWakeSettings"]
 ms.keywords: AssignSxWakeSettings, AssignSxWakeSettings method, AssignSxWakeSettings method,IWDFDevice2 interface, IWDFDevice2 interface,AssignSxWakeSettings method, IWDFDevice2.AssignSxWakeSettings, IWDFDevice2::AssignSxWakeSettings, UMDFDeviceObjectRef_7e411333-6c21-4ed6-af60-b78f3a32bd65.xml, umdf.iwdfdevice2_assignsxwakesettings, wdf.iwdfdevice2_assignsxwakesettings, wudfddi/IWDFDevice2::AssignSxWakeSettings
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice2.AssignSxWakeSettings
+ - IWDFDevice2::AssignSxWakeSettings
 ---
 
 # IWDFDevice2::AssignSxWakeSettings
@@ -52,19 +51,19 @@ The <b>AssignSxWakeSettings</b> method provides driver-supplied information abou
 
 ## -parameters
 
-### -param DxState 
+### -param DxState [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wudfddi/ne-wudfddi-_device_power_state">DEVICE_POWER_STATE</a>-typed enumerator that identifies the low <a href="/windows-hardware/drivers/kernel/device-power-states">device power state</a> that the device will enter when the system power state drops to a wakeable low-power state. The value of <i>DxState</i> cannot be <b>PowerDeviceD0</b>. DEVICE_POWER_STATE values are defined in wdm.h.
 
-### -param UserControlOfWakeSettings 
+### -param UserControlOfWakeSettings [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_power_policy_sx_wake_user_control">WDF_POWER_POLICY_SX_WAKE_USER_CONTROL</a>-typed enumerator that indicates whether users have the ability to modify the device's wake settings.
 
-### -param Enabled 
+### -param Enabled [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdftypes/ne-wdftypes-_wdf_tri_state">WDF_TRI_STATE</a>-typed enumerator that indicates whether the device can wake the system (that is, restore the system to S0) when the system is in a low-power state. This member can have one of the following values:
 
 <b>WdfTrue</b> - Waking the system is enabled.
@@ -190,7 +189,6 @@ The following code example obtains the <a href="/windows-hardware/drivers/ddi/wu
     SAFE_RELEASE(pIWDFDevice2);
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice2">IWDFDevice2</a>
@@ -198,3 +196,4 @@ The following code example obtains the <a href="/windows-hardware/drivers/ddi/wu
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice2-assigns0idlesettings">IWDFDevice2::AssignS0IdleSettings</a>
+

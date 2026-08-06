@@ -4,7 +4,6 @@ title: _NDIS_PROTOCOL_PAUSE_PARAMETERS (ndis.h)
 description: NDIS passes an NDIS_PROTOCOL_PAUSE_PARAMETERS structure to a protocol driver when it calls the ProtocolNetPnPEvent function to indicate a NetEventPause event.
 old-location: netvista\ndis_protocol_pause_parameters.htm
 tech.root: netvista
-ms.assetid: 7754d47f-9e21-44c7-8a6f-141d18623ddf
 ms.date: 05/02/2018
 keywords: ["NDIS_PROTOCOL_PAUSE_PARAMETERS structure"]
 ms.keywords: "*PNDIS_PROTOCOL_PAUSE_PARAMETERS, NDIS_PROTOCOL_PAUSE_PARAMETERS, NDIS_PROTOCOL_PAUSE_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_PROTOCOL_PAUSE_PARAMETERS, PNDIS_PROTOCOL_PAUSE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_PROTOCOL_PAUSE_PARAMETERS, ndis/NDIS_PROTOCOL_PAUSE_PARAMETERS, ndis/PNDIS_PROTOCOL_PAUSE_PARAMETERS, netvista.ndis_protocol_pause_parameters, protocol_structures_ref_0b5004b2-d77f-427a-8473-f0ffb13a09f4.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_PROTOCOL_PAUSE_PARAMETERS
+ - PNDIS_PROTOCOL_PAUSE_PARAMETERS
  - NDIS_PROTOCOL_PAUSE_PARAMETERS
 ---
 
@@ -60,7 +61,7 @@ NDIS passes an NDIS_PROTOCOL_PAUSE_PARAMETERS structure to a protocol driver whe
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_PROTOCOL_PAUSE_PARAMETERS structure. NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -87,8 +88,9 @@ To specify the pause parameters for a binding, NDIS passes a pointer to an
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_net_pnp_event">ProtocolNetPnPEvent</a>
+

@@ -4,7 +4,6 @@ title: _NDIS_WWAN_SET_RADIO_STATE (ndiswwan.h)
 description: The NDIS_WWAN_SET_RADIO_STATE structure represents the power action to take on the MB device's radio.
 old-location: netvista\ndis_wwan_set_radio_state.htm
 tech.root: netvista
-ms.assetid: 4fe42397-1c95-4017-8d7b-14eda11c7b74
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_SET_RADIO_STATE structure"]
 ms.keywords: "*PNDIS_WWAN_SET_RADIO_STATE, NDIS_WWAN_SET_RADIO_STATE, NDIS_WWAN_SET_RADIO_STATE structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SET_RADIO_STATE, PNDIS_WWAN_SET_RADIO_STATE structure pointer [Network Drivers Starting with Windows Vista], WwanRef_b5525c3b-fbf3-4423-b691-464ed9a7a65a.xml, _NDIS_WWAN_SET_RADIO_STATE, ndiswwan/NDIS_WWAN_SET_RADIO_STATE, ndiswwan/PNDIS_WWAN_SET_RADIO_STATE, netvista.ndis_wwan_set_radio_state"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_SET_RADIO_STATE
+ - PNDIS_WWAN_SET_RADIO_STATE
  - NDIS_WWAN_SET_RADIO_STATE
 ---
 
@@ -103,7 +104,7 @@ sizeof(NDIS_WWAN_SET_RADIO_STATE)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field RadioAction
 
@@ -146,8 +147,9 @@ This parameter allows Windows to turn the radio power on and off. Be aware that 
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ne-wwan-_wwan_radio">WWAN_RADIO</a>
+

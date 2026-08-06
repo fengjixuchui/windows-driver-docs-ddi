@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_VIDPNSOURCEMODESET_RELEASEMODEINFO
 title: DXGKDDI_VIDPNSOURCEMODESET_RELEASEMODEINFO (d3dkmddi.h)
 description: The pfnReleaseModeInfo function releases a D3DKMDT_VIDPN_SOURCE_MODE structure that the VidPN manager previously provided to the display miniport driver.
 old-location: display\dxgk_vidpnsourcemodeset_interface_pfnreleasemodeinfo.htm
-ms.assetid: 614283cc-90bf-44f2-bab2-1aeec5e7de01
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_VIDPNSOURCEMODESET_RELEASEMODEINFO callback function"]
 ms.keywords: DXGKDDI_VIDPNSOURCEMODESET_RELEASEMODEINFO, DXGKDDI_VIDPNSOURCEMODESET_RELEASEMODEINFO callback, VidPnFunctions_4516c897-bcf8-4a32-9517-45c86690d746.xml, d3dkmddi/pfnReleaseModeInfo, display.dxgk_vidpnsourcemodeset_interface_pfnreleasemodeinfo, pfnReleaseModeInfo, pfnReleaseModeInfo callback function [Display Devices]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - pfnReleaseModeInfo
-product:
- - Windows
+ - DXGKDDI_VIDPNSOURCEMODESET_RELEASEMODEINFO
 ---
 
 # DXGKDDI_VIDPNSOURCEMODESET_RELEASEMODEINFO callback function
@@ -52,13 +49,13 @@ The <b>pfnReleaseModeInfo</b> function releases a <a href="/windows-hardware/dri
 
 ## -parameters
 
-### -param hVidPnSourceModeSet
+### -param hVidPnSourceModeSet [in]
 
-[in] A handle to a VidPN source mode set object. The display miniport driver previously obtained this handle by calling the <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_acquiresourcemodeset">pfnAcquireSourceModeSet</a> function of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpn_interface">DXGK_VIDPN_INTERFACE</a> interface.
+A handle to a VidPN source mode set object. The display miniport driver previously obtained this handle by calling the <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_acquiresourcemodeset">pfnAcquireSourceModeSet</a> function of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpn_interface">DXGK_VIDPN_INTERFACE</a> interface.
 
-### -param pVidPnSourceModeInfo
+### -param pVidPnSourceModeInfo [in]
 
-[in] A pointer to the D3DKMDT_VIDPN_SOURCE_MODE structure that is to be released.
+A pointer to the D3DKMDT_VIDPN_SOURCE_MODE structure that is to be released.
 
 ## -returns
 
@@ -115,3 +112,4 @@ The D3DKMDT_HVIDPNSOURCEMODESET data type is defined in <i>D3dkmdt.h</i>.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_acquirepinnedmodeinfo">pfnAcquirePinnedModeInfo</a>
+

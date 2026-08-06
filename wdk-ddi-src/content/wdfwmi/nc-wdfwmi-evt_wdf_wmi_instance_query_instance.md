@@ -4,7 +4,6 @@ title: EVT_WDF_WMI_INSTANCE_QUERY_INSTANCE (wdfwmi.h)
 description: A driver's EvtWmiInstanceQueryInstance callback function copies a WMI provider's instance data into a buffer for delivery to a WMI client.
 old-location: wdf\evtwmiinstancequeryinstance.htm
 tech.root: wdf
-ms.assetid: 13eed838-2943-4bb4-915f-6a84f0f95851
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_WMI_INSTANCE_QUERY_INSTANCE callback function"]
 ms.keywords: DFWMIRef_424a0070-8839-4d3f-b285-166b23ac03f7.xml, EVT_WDF_WMI_INSTANCE_QUERY_INSTANCE, EVT_WDF_WMI_INSTANCE_QUERY_INSTANCE callback, EvtWmiInstanceQueryInstance, EvtWmiInstanceQueryInstance callback function, kmdf.evtwmiinstancequeryinstance, wdf.evtwmiinstancequeryinstance, wdfwmi/EvtWmiInstanceQueryInstance
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfWMI.h
 api_name:
- - EvtWmiInstanceQueryInstance
+ - EVT_WDF_WMI_INSTANCE_QUERY_INSTANCE
 ---
 
 # EVT_WDF_WMI_INSTANCE_QUERY_INSTANCE callback function
@@ -52,24 +51,24 @@ A driver's <i>EvtWmiInstanceQueryInstance</i> callback function copies a WMI pro
 
 ## -parameters
 
-### -param WmiInstance 
+### -param WmiInstance [in]
 
-[in]
+
 A handle to a WMI instance object.
 
-### -param OutBufferSize 
+### -param OutBufferSize [in]
 
-[in]
+
 The size, in bytes, of the output buffer that <i>OutBuffer</i> points to.
 
-### -param OutBuffer 
+### -param OutBuffer [in]
 
-[in]
+
 A pointer to the output buffer.
 
-### -param BufferUsed 
+### -param BufferUsed [out]
 
-[out]
+
 A pointer to a location that receives the number of bytes that the driver places in the output buffer. If the output buffer size that the <i>OutBufferSize</i> parameter specifies is too small, the driver sets this location to the required buffer size.
 
 ## -returns
@@ -119,3 +118,4 @@ For more information about WMI, see <a href="/windows-hardware/drivers/wdf/suppo
 
 
 <a href="/windows-hardware/drivers/ddi/wdfwmi/nf-wdfwmi-wdfwmiinstancecreate">WdfWmiInstanceCreate</a>
+

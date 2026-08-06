@@ -4,7 +4,6 @@ title: _CLIENT_CONTROLLER_BASIC_INFORMATION (gpioclx.h)
 description: The CLIENT_CONTROLLER_BASIC_INFORMATION structure contains general-purpose I/O (GPIO) controller hardware attributes and configuration information.
 old-location: gpio\client_controller_basic_information.htm
 tech.root: GPIO
-ms.assetid: CE92249C-99B5-411E-B0D7-C1FF4824949E
 ms.date: 02/15/2018
 keywords: ["CLIENT_CONTROLLER_BASIC_INFORMATION structure"]
 ms.keywords: "*PCLIENT_CONTROLLER_BASIC_INFORMATION, CLIENT_CONTROLLER_BASIC_INFORMATION, CLIENT_CONTROLLER_BASIC_INFORMATION structure [Parallel Ports], GPIO.client_controller_basic_information, PCLIENT_CONTROLLER_BASIC_INFORMATION, PCLIENT_CONTROLLER_BASIC_INFORMATION structure pointer [Parallel Ports], _CLIENT_CONTROLLER_BASIC_INFORMATION, gpioclx/CLIENT_CONTROLLER_BASIC_INFORMATION, gpioclx/PCLIENT_CONTROLLER_BASIC_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
+ - _CLIENT_CONTROLLER_BASIC_INFORMATION
+ - PCLIENT_CONTROLLER_BASIC_INFORMATION
  - CLIENT_CONTROLLER_BASIC_INFORMATION
 ---
 
@@ -109,3 +110,4 @@ Typically, a bank in a GPIO controller device can be turned on and off independe
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_controller_attribute_flags">CONTROLLER_ATTRIBUTE_FLAGS</a>
+

@@ -4,7 +4,6 @@ title: IPortableDeviceValues::GetValue (portabledevicetypes.h)
 description: The GetValue interface retrieves a PROPVARIANT value that is specified by a key.
 old-location: wpddk\iportabledevicevalues_getvalue.htm
 tech.root: wpd_dk
-ms.assetid: 3c078259-98e8-4874-aa5e-060f0da1a246
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::GetValue"]
 ms.keywords: GetValue, GetValue method, GetValue method,IPortableDeviceValues interface, IPortableDeviceValues interface,GetValue method, IPortableDeviceValues.GetValue, IPortableDeviceValues::GetValue, IPortableDeviceValuesGetValue, portabledevicetypes/IPortableDeviceValues::GetValue, wpddk.iportabledevicevalues_getvalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.GetValue
+ - IPortableDeviceValues::GetValue
 ---
 
 # IPortableDeviceValues::GetValue
@@ -51,14 +50,14 @@ The GetValue interface retrieves a <b>PROPVARIANT</b> value that is specified by
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> key that specifies the item to retrieve.
 
-### -param pValue 
+### -param pValue [out]
 
-[out]
+
 A pointer to the retrieved <b>PROPVARIANT</b> value. The caller must release the memory by calling <b>PropVariantClear</b> when the call is complete.
 
 ## -returns
@@ -111,3 +110,4 @@ When the VARTYPE for <i>pValue</i> is VT_VECTOR or VT_UI1, retrieving a <b>NULL<
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-setvalue">IPortableDeviceValues::SetValue</a>
+

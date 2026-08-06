@@ -1,10 +1,9 @@
 ---
 UID: NF:portabledevicetypes.IPortableDeviceValues.GetBufferValue
 title: IPortableDeviceValues::GetBufferValue (portabledevicetypes.h)
-description: The GetBufferValue interface retrieves a byte array value (type VT_VECTOR | VT_UI1) that is specified by a key.
+description: The GetBufferValue interface retrieves a byte array value (type VT_VECTOR or VT_UI1) that is specified by a key.
 old-location: wpddk\iportabledevicevalues_getbuffervalue.htm
 tech.root: wpd_dk
-ms.assetid: 3ce1e4c4-21e0-4e4f-8cf2-3f78b47ee817
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::GetBufferValue"]
 ms.keywords: GetBufferValue, GetBufferValue method, GetBufferValue method,IPortableDeviceValues interface, IPortableDeviceValues interface,GetBufferValue method, IPortableDeviceValues.GetBufferValue, IPortableDeviceValues::GetBufferValue, IPortableDeviceValuesGetBufferValue, portabledevicetypes/IPortableDeviceValues::GetBufferValue, wpddk.iportabledevicevalues_getbuffervalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.GetBufferValue
+ - IPortableDeviceValues::GetBufferValue
 ---
 
 # IPortableDeviceValues::GetBufferValue
@@ -47,23 +46,23 @@ api_name:
 
 ## -description
 
-The GetBufferValue interface retrieves a <b>byte array</b> value (type VT_VECTOR | VT_UI1) that is specified by a key.
+The GetBufferValue interface retrieves a <b>byte array</b> value (type VT_VECTOR or VT_UI1) that is specified by a key.
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> key that specifies the item to retrieve.
 
-### -param ppValue 
+### -param ppValue [out]
 
-[out]
+
 A pointer to the retrieved <b>BYTE*</b> value. The caller must free the memory by calling <b>CoTaskMemFree</b>.
 
-### -param pcbValue 
+### -param pcbValue [out]
 
-[out]
+
 A pointer to the size of <i>ppValue</i>, in bytes.
 
 ## -returns
@@ -132,3 +131,4 @@ Retrieving a <b>NULL</b> buffer or a zero-sized buffer is not supported  and wil
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-setbuffervalue">IPortableDeviceValues::SetBufferValue</a>
+

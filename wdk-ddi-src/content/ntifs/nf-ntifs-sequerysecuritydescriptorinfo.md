@@ -4,7 +4,6 @@ title: SeQuerySecurityDescriptorInfo function (ntifs.h)
 description: The SeQuerySecurityDescriptorInfo routine retrieves a copy of an object's security descriptor.
 old-location: ifsk\sequerysecuritydescriptorinfo.htm
 tech.root: ifsk
-ms.assetid: 4803e816-c59a-42b2-adc1-7a197ae16d42
 ms.date: 04/16/2018
 keywords: ["SeQuerySecurityDescriptorInfo function"]
 ms.keywords: SeQuerySecurityDescriptorInfo, SeQuerySecurityDescriptorInfo routine [Installable File System Drivers], ifsk.sequerysecuritydescriptorinfo, ntifs/SeQuerySecurityDescriptorInfo, seref_c8ecba25-bc67-4314-a262-3dbae1407205.xml
@@ -50,9 +49,9 @@ The <b>SeQuerySecurityDescriptorInfo</b> routine retrieves a copy of an object's
 
 ## -parameters
 
-### -param SecurityInformation 
+### -param SecurityInformation [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ifs/security-information">SECURITY_INFORMATION</a> value specifying which security information is being queried. 
 
 <table>
@@ -102,19 +101,19 @@ Indicates the system ACL (SACL) of the object is being queried. Requires ACCESS_
 </tr>
 </table>
 
-### -param SecurityDescriptor 
+### -param SecurityDescriptor [out]
 
-[out]
+
 Caller-allocated user buffer that <b>SeQuerySecurityDescriptorInfo</b> fills with a copy of the specified security descriptor in self-relative format.
 
-### -param Length 
+### -param Length [in, out]
 
-[in, out]
+
 Pointer to a variable that specifies the size, in bytes, of the buffer pointed to by <i>SecurityDescriptor</i>. Upon return, <b>SeQuerySecurityDescriptorInfo</b> sets this variable to the number of bytes required to store the requested information.
 
-### -param ObjectsSecurityDescriptor 
+### -param ObjectsSecurityDescriptor [in, out]
 
-[in, out]
+
 Pointer to a pointer to an object's security descriptor. The security descriptor must be in self-relative format.
 
 ## -returns
@@ -154,7 +153,7 @@ A security descriptor can be in absolute or self-relative format. A security des
 
 Because the security descriptor is returned in self-relative format, the caller of <b>SeQuerySecurityDescriptorInfo</b> should cast the value returned in the <i>SecurityDescriptor</i> parameter to type PISECURITY_DESCRIPTOR_RELATIVE. 
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

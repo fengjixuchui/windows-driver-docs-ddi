@@ -4,7 +4,6 @@ title: IDebugSymbols3::GetSourcePathWide (dbgeng.h)
 description: The GetSourcePathWide method returns the source path.
 old-location: debugger\getsourcepathwide.htm
 tech.root: debugger
-ms.assetid: 6c9c8270-78c4-4bc2-a0e4-5c5e245326ad
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::GetSourcePathWide"]
 ms.keywords: GetSourcePathWide, GetSourcePathWide method [Windows Debugging], GetSourcePathWide method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],GetSourcePathWide method, IDebugSymbols3.GetSourcePathWide, IDebugSymbols3::GetSourcePathWide, dbgeng/IDebugSymbols3::GetSourcePathWide, debugger.getsourcepathwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols3.GetSourcePathWide
+ - IDebugSymbols3::GetSourcePathWide
 ---
 
 # IDebugSymbols3::GetSourcePathWide
@@ -50,19 +49,19 @@ The <b>GetSourcePathWide</b>  method returns the source path.
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Receives the source path.  This is a string that contains source path elements separated by semicolons (<b>;</b>).  Each source path element can specify either a directory or a source server.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size, in characters, of the <i>Buffer</i> buffer.
 
-### -param PathSize 
+### -param PathSize [out, optional]
 
-[out, optional]
+
 Receives the size, in characters, of the source path.
 
 ## -returns
@@ -119,3 +118,4 @@ For more information about manipulating the source path, see <a href="/windows-h
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-setsourcepath">SetSourcePath</a>
+

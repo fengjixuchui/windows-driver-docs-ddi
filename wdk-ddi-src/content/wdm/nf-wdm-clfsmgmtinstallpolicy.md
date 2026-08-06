@@ -4,7 +4,6 @@ title: ClfsMgmtInstallPolicy function (wdm.h)
 description: The ClfsMgmtInstallPolicy routine adds a CLFS_MGMT_POLICY structure to a physical log.
 old-location: kernel\clfsmgmtinstallpolicy.htm
 tech.root: kernel
-ms.assetid: 0a492a86-e732-4302-b35d-9b2a5eb05445
 ms.date: 04/30/2018
 keywords: ["ClfsMgmtInstallPolicy function"]
 ms.keywords: ClfsMgmtInstallPolicy, ClfsMgmtInstallPolicy routine [Kernel-Mode Driver Architecture], Clfs_management_44c8b983-a3bb-4fe3-9022-3e669ba5af2b.xml, kernel.clfsmgmtinstallpolicy, wdm/ClfsMgmtInstallPolicy
@@ -51,19 +50,19 @@ The <b>ClfsMgmtInstallPolicy</b> routine adds a <a href="/windows-hardware/drive
 
 ## -parameters
 
-### -param LogFile 
+### -param LogFile [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">LOG_FILE_OBJECT</a> structure that represents the CLFS log that this instance of the <b>CLFS_MGMT_POLICY</b> structure will apply to. The policy applies to all streams within the log, even if a single stream within the log was specified.
 
-### -param Policy 
+### -param Policy [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_clfs_mgmt_policy">CLFS_MGMT_POLICY</a> structure that contains the policy to be installed.
 
-### -param PolicyLength 
+### -param PolicyLength [in]
 
-[in]
+
 The length, in bytes, of the structure pointed to by the <i>Policy</i> parameter.
 
 ## -returns

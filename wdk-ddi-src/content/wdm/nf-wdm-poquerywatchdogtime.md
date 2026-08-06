@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.PoQueryWatchdogTime
 title: PoQueryWatchdogTime function (wdm.h)
-description: The PoQueryWatchdogTime routine indicates whether the power manager has enabled a watchdog time-out counter for any power IRP that is currently assigned to the device stack.
+description: The PoQueryWatchdogTime routine in wdm.h indicates whether the power manager has enabled a time-out counter for any power IRP assigned to the device stack.
 old-location: kernel\poquerywatchdogtime.htm
 tech.root: kernel
-ms.assetid: 4833d4e2-295a-4d38-9ebf-8af68eeff948
 ms.date: 04/30/2018
 keywords: ["PoQueryWatchdogTime function"]
 ms.keywords: PoQueryWatchdogTime, PoQueryWatchdogTime routine [Kernel-Mode Driver Architecture], kernel.poquerywatchdogtime, portn_1fe369ed-f8f0-4459-943f-a624764c279b.xml, wdm/PoQueryWatchdogTime
@@ -50,14 +49,14 @@ The <b>PoQueryWatchdogTime</b> routine indicates whether the power manager has e
 
 ## -parameters
 
-### -param Pdo 
+### -param Pdo [in]
 
-[in]
+
 A pointer to a physical device object (PDO). This parameter points to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure that represents a physical device.
 
-### -param SecondsRemaining 
+### -param SecondsRemaining [out]
 
-[out]
+
 A pointer to a location into which the routine writes the time, in seconds, that remains before the next power watchdog time-out is set to occur.
 
 ## -returns
@@ -72,7 +71,7 @@ For example, a driver that experiences delays when shutting down a device can ca
 
 The power manager sets a watchdog time-out counter when it issues a power IRP to the device stack. The time-out period for this counter is typically several minutes. If a device in the stack is unresponsive and causes the IRP to stall for the time-out period, the power manager treats this condition as an unrecoverable error and initiates a controlled shutdown of the operating system.
 
-If more than one power watchdog time-out is currently enabled, the routine sets *<i>SecondsRemaining</i> to the time that remains to the next time-out.
+If more than one power watchdog time-out is currently enabled, the routine sets **SecondsRemaining* to the time that remains to the next time-out.
 
 ## -see-also
 

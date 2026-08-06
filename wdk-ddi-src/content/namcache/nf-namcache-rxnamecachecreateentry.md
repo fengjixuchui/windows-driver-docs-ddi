@@ -4,7 +4,6 @@ title: RxNameCacheCreateEntry function (namcache.h)
 description: RxNameCacheCreateEntry allocates and initializes a NAME_CACHE structure with the given name string.
 old-location: ifsk\rxnamecachecreateentry.htm
 tech.root: ifsk
-ms.assetid: 1cfe2d2d-99fa-4dc2-b517-5026fd72d5d4
 ms.date: 04/16/2018
 keywords: ["RxNameCacheCreateEntry function"]
 ms.keywords: RxNameCacheCreateEntry, RxNameCacheCreateEntry function [Installable File System Drivers], ifsk.rxnamecachecreateentry, namcache/RxNameCacheCreateEntry, rxref_a1245999-8aba-4012-a143-609517c2686b.xml
@@ -50,20 +49,20 @@ api_name:
 
 ## -parameters
 
-### -param NameCacheCtl 
+### -param NameCacheCtl [in]
 
-[in]
+
 A pointer to the NAME_CACHE_CONTROL structure from which to allocate the entry.
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 A pointer to the Unicode name string with which to initialize the name cache entry.
 
-### -param CaseInsensitive 
+### -param CaseInsensitive [in]
 
-[in]
-A Boolean value that indicates if case insensitive comparions should be used when comparing the <i>Name</i> parameter.
+
+A Boolean value that indicates if case insensitive comparisons should be used when comparing the <i>Name</i> parameter.
 
 ## -returns
 

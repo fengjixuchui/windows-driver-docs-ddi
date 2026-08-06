@@ -4,7 +4,6 @@ title: _DMUS_KERNEL_EVENT (dmusicks.h)
 description: The DMUS_KERNEL_EVENT structure is used to package time-stamped music events.
 old-location: audio\dmus_kernel_event.htm
 tech.root: audio
-ms.assetid: 652f64e2-310b-46c9-8b00-c827a7475b07
 ms.date: 05/08/2018
 keywords: ["DMUS_KERNEL_EVENT structure"]
 ms.keywords: "*PDMUS_KERNEL_EVENT, DMUS_KERNEL_EVENT, DMUS_KERNEL_EVENT structure [Audio Devices], PDMUS_KERNEL_EVENT, PDMUS_KERNEL_EVENT structure pointer [Audio Devices], _DMUS_KERNEL_EVENT, aud-prop_b0db54b3-fff3-46f2-abd7-beb4fe189f8f.xml, audio.dmus_kernel_event, dmusicks/DMUS_KERNEL_EVENT, dmusicks/PDMUS_KERNEL_EVENT"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dmusicks.h
 api_name:
+ - _DMUS_KERNEL_EVENT
+ - PDMUS_KERNEL_EVENT
  - DMUS_KERNEL_EVENT
 ---
 
@@ -152,3 +153,4 @@ Presentation time does not advance during the states KSSTATE_PAUSE and KSSTATE_S
 
 
 <a href="/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-imxf-putmessage">IMXF::PutMessage</a>
+

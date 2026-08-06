@@ -1,9 +1,8 @@
 ---
 UID: NI:sidebandaudio.IOCTL_SBAUD_STREAM_START
 title: IOCTL_SBAUD_STREAM_START (sidebandaudio.h)
-description: 
-ms.assetid: 65009cf5-5f6b-4dfc-b3d9-fade63426bf9
-ms.date: 10/05/2018
+description: "On transition up to KSSTATE_RUN, send IOCTL_SBAUD_STREAM_START."
+ms.date: 07/12/2023
 keywords: ["IOCTL_SBAUD_STREAM_START IOCTL"]
 req.header: sidebandaudio.h
 req.include-header: 
@@ -35,45 +34,57 @@ api_name:
 
 # IOCTL_SBAUD_STREAM_START IOCTL
 
-### Major Code:  [IRP_MJ_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-device-control)
-
-
 ## -description
 
-This control codes used by an audio driver when cooperating with the Audio class drivers to operate a Sideband connection.
+On transition up to KSSTATE_RUN, send **IOCTL_SBAUD_STREAM_START**. This control code is used by an audio driver when cooperating with the audio class drivers to operate a sideband connection.
 
 ## -ioctlparameters
 
+### -ioctl-major-code
+
+[IRP_MJ_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-device-control)
+
 ### -input-buffer
 
-<text></text>
+A 0 based endpoint index value based on the number of Audio endpoints as reported by the <a href="/windows-hardware/drivers/ddi/sidebandaudio/ni-sidebandaudio-ioctl_sbaud_get_device_descriptor">IOCTL_SBAUD_GET_DEVICE_DESCRIPTOR</a>.
 
-### -input-buffer-length 
+This is a ULONG value from 0 to (N-1) where N is the number of Endpoints for the device.
 
-<text></text>
+### -input-buffer-length
+
+Size of ULONG.
 
 ### -output-buffer
 
-<text></text>
-
-### -output-buffer-length 
-
-<text></text>
+### -output-buffer-length
 
 ### -in-out-buffer
 
-<text></text>
-
-### -inout-buffer-length 
-
-<text></text>
+### -inout-buffer-length
 
 ### -status-block
 
-Irp->IoStatus.Status is set to STATUS_SUCCESS if the request is successful.
-Otherwise, Status to the appropriate error condition as a NTSTATUS code. 
-For more information, see [NTSTATUS Values](/windows-hardware/drivers/kernel/ntstatus-values).
+Irp->IoStatus.Status is set to STATUS_SUCCESS if the request is successful. Otherwise, Status to the appropriate error condition as a NTSTATUS code. For more information, see [NTSTATUS Values](/windows-hardware/drivers/kernel/ntstatus-values).
 
 ## -remarks
 
+This IOCTL can only be called from kernel mode.
+
+This is one of the IOCTLs used for KS pin state transitions. The audio driver sends these requests on certain KS pin state transitions.
+
+- On first transition above KSSTATE_STOP (normally to KSSTATE_ACQUIRE), send [IOCTL_SBAUD_STREAM_OPEN](/windows-hardware/drivers/ddi/sidebandaudio/ni-sidebandaudio-ioctl_sbaud_stream_open).
+- On transition up to KSSTATE_RUN, send [IOCTL_SBAUD_STREAM_START](/windows-hardware/drivers/ddi/sidebandaudio/ni-sidebandaudio-ioctl_sbaud_stream_start).
+- On transition below KSSTATE_RUN, send [IOCTL_SBAUD_STREAM_SUSPEND](/windows-hardware/drivers/ddi/sidebandaudio/ni-sidebandaudio-ioctl_sbaud_stream_suspend).
+- On closure of KS pin, send [IOCTL_SBAUD_STREAM_CLOSE](/windows-hardware/drivers/ddi/sidebandaudio/ni-sidebandaudio-ioctl_sbaud_stream_close).
+
+## -requirements
+
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Header** | sidebandaudio.h |
+
 ## -see-also
+
+[Introduction to I/O Control Codes](/windows-hardware/drivers/kernel/introduction-to-i-o-control-codes)
+
+[sidebandaudio.h](index.md)

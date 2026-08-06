@@ -4,7 +4,6 @@ title: IOCTL_HID_READ_REPORT (hidport.h)
 description: The IOCTL_HID_READ_REPORT request transfers an input report from a HIDClass device into the HID class driver's buffer.
 old-location: hid\ioctl_hid_read_report.htm
 tech.root: hid
-ms.assetid: 83a7cf49-6879-4e91-b398-d97d4b69e5b1
 ms.date: 04/30/2018
 keywords: ["IOCTL_HID_READ_REPORT IOCTL"]
 ms.keywords: IOCTL_HID_READ_REPORT, IOCTL_HID_READ_REPORT control, IOCTL_HID_READ_REPORT control code [Human Input Devices], hid.ioctl_hid_read_report, hidioreq_e75980f5-3db7-4e29-b25a-9d3c3260d0f6.xml, hidport/IOCTL_HID_READ_REPORT
@@ -51,6 +50,8 @@ The IOCTL_HID_READ_REPORT request transfers an input report from a HIDClass devi
 For general information about HIDClass devices, see <a href="/windows-hardware/drivers/hid/hid-collections">HID Collections</a>.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 
@@ -126,4 +127,4 @@ IOCTL_HID_READ_REPORT  is typically used for continuously completing input repor
 
 
 
-<a href="/previous-versions/hh439646(v=vs.85)">IOCTL_HID_WRITE_REPORT</a>
+<a href="/windows-hardware/drivers/ddi/hidport/ni-hidport-ioctl_hid_write_report">IOCTL_HID_WRITE_REPORT</a>

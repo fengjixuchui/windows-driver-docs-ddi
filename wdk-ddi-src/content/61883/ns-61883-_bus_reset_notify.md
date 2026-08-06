@@ -4,7 +4,6 @@ title: _BUS_RESET_NOTIFY (61883.h)
 description: This structure is used to register or deregister the PBUS_RESET_ROUTINE callback.
 old-location: ieee\bus_reset_notify.htm
 tech.root: IEEE
-ms.assetid: 9CF14B12-D94F-486D-A5FC-E7CC2730D8E9
 ms.date: 02/15/2018
 keywords: ["BUS_RESET_NOTIFY structure"]
 ms.keywords: "*PBUS_RESET_NOTIFY, 61883/BUS_RESET_NOTIFY, 61883/PBUS_RESET_NOTIFY, BUS_RESET_NOTIFY, BUS_RESET_NOTIFY structure [Buses], IEEE.bus_reset_notify, PBUS_RESET_NOTIFY, PBUS_RESET_NOTIFY structure pointer [Buses], _BUS_RESET_NOTIFY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _BUS_RESET_NOTIFY
+ - PBUS_RESET_NOTIFY
  - BUS_RESET_NOTIFY
 ---
 
@@ -73,7 +74,6 @@ Void
  );
 ```
 
-
 ### -field Context
 
 Pointer to a caller-defined context for the function at <b>pfnNotify</b>. The IEC-61883 protocol driver calls this function after a reset of the 1394 bus.
@@ -87,3 +87,4 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp->IoStatu
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_av_61883_request">AV_61883_REQUEST</a>
+

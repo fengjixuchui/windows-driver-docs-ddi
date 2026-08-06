@@ -4,7 +4,6 @@ title: RtlDowncaseUnicodeString function (ntifs.h)
 description: The RtlDowncaseUnicodeString routine converts the specified Unicode source string to lowercase. The translation conforms to the current system locale information.
 old-location: ifsk\rtldowncaseunicodestring.htm
 tech.root: ifsk
-ms.assetid: c611b051-45fe-4509-bf2c-7059d578ea05
 ms.date: 04/16/2018
 keywords: ["RtlDowncaseUnicodeString function"]
 ms.keywords: RtlDowncaseUnicodeString, RtlDowncaseUnicodeString routine [Installable File System Drivers], ifsk.rtldowncaseunicodestring, ntifs/RtlDowncaseUnicodeString, rtlref_140e7faa-096a-49df-a2b7-87776cfc5b38.xml
@@ -54,14 +53,14 @@ The <b>RtlDowncaseUnicodeString</b> routine converts the specified Unicode sourc
 
 Pointer to a caller-allocated buffer to receive the converted Unicode string. If <i>AllocateDestinationString</i> is <b>FALSE</b>, the caller must also allocate a buffer for the <b>Buffer</b> member of <i>DestinationString</i> to hold the Unicode data. If <i>AllocateDestinationString</i> is <b>TRUE</b>, <b>RtlDowncaseUnicodeString</b> allocates a buffer large enough to hold the string, passes a pointer to it in <b>Buffer</b>, and updates the length and maximum length members of <i>DestinationString</i> accordingly.
 
-### -param SourceString 
+### -param SourceString [in]
 
-[in]
+
 Pointer to the source Unicode string to be converted to lowercase.
 
-### -param AllocateDestinationString 
+### -param AllocateDestinationString [in]
 
-[in]
+
 Set to <b>TRUE</b> if <b>RtlDowncaseUnicodeString</b> should allocate the buffer space for the <i>DestinationString</i>, <b>FALSE</b> otherwise. If this parameter is <b>TRUE</b>, the caller is responsible for freeing the buffer when it is no longer needed by calling <b>RtlFreeUnicodeString</b>.
 
 ## -returns
@@ -74,7 +73,7 @@ If caller sets <i>AllocateDestinationString</i> to <b>TRUE</b>, <b>RtlDowncaseUn
 
 <b>RtlDowncaseUnicodeString</b> does not modify the source string.
 
-For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/index">Strings</a>.
+For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/_kernel/#run-time-library-rtl-routines">Run-Time Library (RTL) Routines</a>.
 
 ## -see-also
 

@@ -3,7 +3,6 @@ UID: NS:ndiswwan._NDIS_WWAN_MODEM_LOGGING_CONFIG
 title: _NDIS_WWAN_MODEM_LOGGING_CONFIG (ndiswwan.h)
 description: The NDIS_WWAN_MODEM_LOGGING_CONFIG structure describes the current modem logging configuration for a modem.
 tech.root: netvista
-ms.assetid: 04E5AFB1-0280-4862-B147-579B064AFF31
 ms.date: 04/11/2019
 keywords: ["NDIS_WWAN_MODEM_LOGGING_CONFIG structure"]
 ms.keywords: _NDIS_WWAN_MODEM_LOGGING_CONFIG, NDIS_WWAN_MODEM_LOGGING_CONFIG, *PNDIS_WWAN_MODEM_LOGGING_CONFIG,
@@ -37,6 +36,8 @@ api_location:
  - ndiswwan.h
 api_name:
  - _NDIS_WWAN_MODEM_LOGGING_CONFIG
+ - PNDIS_WWAN_MODEM_LOGGING_CONFIG
+ - NDIS_WWAN_MODEM_LOGGING_CONFIG
 ---
 
 # _NDIS_WWAN_MODEM_LOGGING_CONFIG structure
@@ -58,7 +59,7 @@ The header with type, revision, and size information about the **NDIS_WWAN_MODEM
 | Revision | NDIS_WWAN_MODEM_LOGGING_CONFIG_REVISION_1 |
 | Size | sizeof(NDIS_WWAN_MODEM_LOGGING_CONFIG) |
 
-For more information about these members, see [**NDIS_OBJECT_HEADER**](../ntddndis/ns-ntddndis-_ndis_object_header.md).
+For more information about these members, see [**NDIS_OBJECT_HEADER**](../objectheader/ns-objectheader-ndis_object_header.md).
 
 ### -field uStatus
 
@@ -88,3 +89,4 @@ This structure is used in the [NDIS_STATUS_WWAN_MODEM_LOGGING_CONFIG](/windows-h
 [NDIS_STATUS_WWAN_MODEM_LOGGING_CONFIG](/windows-hardware/drivers/network/ndis-status-wwan-modem-logging-config)
 
 [**WWAN_MODEM_LOGGING_CONFIG**](../wwan/ns-wwan-_wwan_modem_logging_config.md)
+

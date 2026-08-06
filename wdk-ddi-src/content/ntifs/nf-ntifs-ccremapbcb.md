@@ -4,14 +4,13 @@ title: CcRemapBcb function (ntifs.h)
 description: The CcRemapBcb routine maps a buffer control block (BCB) an additional time to preserve it through several calls that perform additional maps and unpins.
 old-location: ifsk\ccremapbcb.htm
 tech.root: ifsk
-ms.assetid: e8855baf-ce75-4a4c-bbbe-d1a7e5a65907
 ms.date: 04/16/2018
 keywords: ["CcRemapBcb function"]
 ms.keywords: CcRemapBcb, CcRemapBcb routine [Installable File System Drivers], ccref_64bd8036-ecdd-48bd-8894-fea7f28cc3be.xml, ifsk.ccremapbcb, ntifs/CcRemapBcb
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available on Microsoft Windows 2000 and later.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,9 +49,9 @@ The <b>CcRemapBcb</b> routine maps a buffer control block (BCB) an additional ti
 
 ## -parameters
 
-### -param Bcb 
+### -param Bcb [in]
 
-[in]
+
 Pointer to the BCB to be remapped.
 
 ## -returns

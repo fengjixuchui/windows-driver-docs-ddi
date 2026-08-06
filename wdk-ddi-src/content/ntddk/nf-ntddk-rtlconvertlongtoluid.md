@@ -4,7 +4,6 @@ title: RtlConvertLongToLuid function (ntddk.h)
 description: The RtlConvertLongToLuid routine converts a long integer to a locally unique identifier (LUID), which is used by the system to represent a security privilege.
 old-location: kernel\rtlconvertlongtoluid.htm
 tech.root: kernel
-ms.assetid: bc03feaf-ee98-4b47-a659-809b5b8b9364
 ms.date: 04/30/2018
 keywords: ["RtlConvertLongToLuid function"]
 ms.keywords: RtlConvertLongToLuid, RtlConvertLongToLuid routine [Kernel-Mode Driver Architecture], k109_be3bfbe0-7a0b-43e3-a22e-2cd6e5a92f2e.xml, kernel.rtlconvertlongtoluid, ntddk/RtlConvertLongToLuid
@@ -50,9 +49,9 @@ The <b>RtlConvertLongToLuid</b> routine converts a long integer to a locally uni
 
 ## -parameters
 
-### -param Long 
+### -param Long [in]
 
-[in]
+
 Specifies the long integer to convert.
 
 ## -returns
@@ -69,11 +68,11 @@ Specifies the long integer to convert.
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlconvertulongtoluid">RtlConvertULongToLuid</a>
+<a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlconvertulongtoluid">RtlConvertUlongToLuid</a>
 
 
 
-<a href="/windows-hardware/drivers/kernel/mm-bad-pointer">RtlEqualLuid</a>
+[RtlEqualLuid](../wdm/nf-wdm-rtlequalluid.md)
 
 
 

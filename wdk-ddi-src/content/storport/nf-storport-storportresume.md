@@ -4,7 +4,6 @@ title: StorPortResume function (storport.h)
 description: The StorPortResume routine resumes a paused adapter.
 old-location: storage\storportresume.htm
 tech.root: storage
-ms.assetid: 2a1e380b-ddad-495b-a921-ebd85525d1a6
 ms.date: 03/29/2018
 keywords: ["StorPortResume function"]
 ms.keywords: StorPortResume, StorPortResume routine [Storage Devices], storage.storportresume, storport/StorPortResume, storprt_3970ca06-96f5-4d0a-84b0-781145133788.xml
@@ -51,9 +50,9 @@ The <b>StorPortResume</b> routine resumes a paused adapter.
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
 
 ## -returns

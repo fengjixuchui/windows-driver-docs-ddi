@@ -4,7 +4,6 @@ title: IStiDevice::GetLastError (sti.h)
 description: The IStiDevice::GetLastError method returns the last known error associated with a still image device.
 old-location: image\istidevice_getlasterror.htm
 tech.root: image
-ms.assetid: 20ad609d-454a-4d43-a58e-184cbb8e8da7
 ms.date: 05/03/2018
 keywords: ["IStiDevice::GetLastError"]
 ms.keywords: GetLastError, GetLastError method [Imaging Devices], GetLastError method [Imaging Devices],IStiDevice interface, IStiDevice interface [Imaging Devices],GetLastError method, IStiDevice.GetLastError, IStiDevice::GetLastError, image.istidevice_getlasterror, sti/IStiDevice::GetLastError, stifnc_9c8050a1-8e9a-4b24-a461-bc567602900d.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - sti.h
 api_name:
- - IStiDevice.GetLastError
+ - IStiDevice::GetLastError
 ---
 
 # IStiDevice::GetLastError
@@ -50,9 +49,9 @@ The <b>IStiDevice::GetLastError</b> method returns the last known error associat
 
 ## -parameters
 
-### -param pdwLastDeviceError 
+### -param pdwLastDeviceError [out]
 
-[out]
+
 Caller-supplied pointer to a buffer in which the error code will be stored.
 
 ## -returns
@@ -62,3 +61,4 @@ If the operation succeeds, the method returns S_OK. Otherwise, it returns one of
 ## -remarks
 
 Before calling IStiDevice::GetLastError, clients of the IStiDevice COM interface must call <a href="/previous-versions/windows/hardware/drivers/ff543778(v=vs.85)">IStillImage::CreateDevice</a> to obtain an IStiDevice interface pointer, which provides access to a specified device.
+

@@ -4,7 +4,6 @@ title: IDebugFailureAnalysis2::SetString (extsfns.h)
 description: The SetString method searches a DebugFailureAnalysis object for the first FA entry that has a specified tag. If it finds an FA entry with the specified tag, it sets (overwrites) the data block of the FA entry to a specified string value.
 old-location: debugger\idebugfailureanalysis2_setstring.htm
 tech.root: debugger
-ms.assetid: 38B63AFF-BE37-45FB-9FD2-A49F216E1B81
 ms.date: 05/03/2018
 keywords: ["IDebugFailureAnalysis2::SetString"]
 ms.keywords: IDebugFailureAnalysis2 interface [Windows Debugging],SetString method, IDebugFailureAnalysis2.SetString, IDebugFailureAnalysis2::SetString, SetString, SetString method [Windows Debugging], SetString method [Windows Debugging],IDebugFailureAnalysis2 interface, debugger.idebugfailureanalysis2_setstring, extsfns/IDebugFailureAnalysis2::SetString
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - extsfns.h
 api_name:
- - IDebugFailureAnalysis2.SetString
+ - IDebugFailureAnalysis2::SetString
 ---
 
 # IDebugFailureAnalysis2::SetString
@@ -54,9 +53,9 @@ The <b>SetString</b> method searches a <a href="/windows-hardware/drivers/ddi/ex
 
 A value in the <a href="/windows-hardware/drivers/debugger/writing-an-analysis-extension-to-extend--analyze">FA_TAG</a> enumeration.
 
-### -param Str 
+### -param Str [in]
 
-[in]
+
 A pointer to a null-terminated ANSI string to be written to the data block of the new or existing <a href="/windows-hardware/drivers/debugger/failure-analysis-entries">FA entry</a>.
 
 ## -returns
@@ -74,11 +73,6 @@ If this method does not find an <a href="/windows-hardware/drivers/debugger/fail
 <a href="/windows-hardware/drivers/print/iprinterbidischemaresponses-addstring">AddString</a>
 
 
-
-<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis2-getstring">GetString</a>
-
-
-
 <a href="/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfailureanalysis2">IDebugFailureAnalysis2</a>
 
 
@@ -88,3 +82,4 @@ If this method does not find an <a href="/windows-hardware/drivers/debugger/fail
 
 
 <a href="/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin">_EFN_Analyze</a>
+

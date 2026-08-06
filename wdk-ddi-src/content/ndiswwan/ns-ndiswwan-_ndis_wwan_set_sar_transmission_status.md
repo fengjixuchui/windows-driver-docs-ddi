@@ -3,7 +3,6 @@ UID: NS:ndiswwan._NDIS_WWAN_SET_SAR_TRANSMISSION_STATUS
 title: _NDIS_WWAN_SET_SAR_TRANSMISSION_STATUS (ndiswwan.h)
 description: The NDIS_WWAN_SET_SAR_TRANSMISSION_STATUS structure sets Specific Absorption Rate (SAR) transmission status in a mobile broadband (MBB) modem.
 tech.root: netvista
-ms.assetid: ee6af893-986d-4286-8c74-37dabc5ac834
 ms.date: 08/20/2018
 keywords: ["NDIS_WWAN_SET_SAR_TRANSMISSION_STATUS structure"]
 ms.keywords: _NDIS_WWAN_SET_SAR_TRANSMISSION_STATUS, NDIS_WWAN_SET_SAR_TRANSMISSION_STATUS, *PNDIS_WWAN_SET_SAR_TRANSMISSION_STATUS,
@@ -37,6 +36,8 @@ api_location:
  - ndiswwan.h
 api_name:
  - _NDIS_WWAN_SET_SAR_TRANSMISSION_STATUS
+ - PNDIS_WWAN_SET_SAR_TRANSMISSION_STATUS
+ - NDIS_WWAN_SET_SAR_TRANSMISSION_STATUS
 ---
 
 # _NDIS_WWAN_SET_SAR_TRANSMISSION_STATUS structure
@@ -58,7 +59,7 @@ The header with type, revision, and size information about the **NDIS_WWAN_SET_S
 | Revision | NDIS_WWAN_SET_SAR_TRANSMISSION_STATUS_REVISION_1 |
 | Size | sizeof(NDIS_WWAN_SET_SAR_TRANSMISSION_STATUS) |
 
-For more information about these members, see [**NDIS_OBJECT_HEADER**](../ntddndis/ns-ntddndis-_ndis_object_header.md).
+For more information about these members, see [**NDIS_OBJECT_HEADER**](../objectheader/ns-objectheader-ndis_object_header.md).
 
 ### -field SetTransmissionStatus
 
@@ -77,3 +78,4 @@ This structure is used in an [OID_WWAN_SAR_TRANSMISSION_STATUS](/windows-hardwar
 [NDIS_STATUS_WWAN_SAR_TRANSMISSION_STATUS](/windows-hardware/drivers/network/ndis-status-wwan-sar-transmission-status)
 
 [**WWAN_SET_SAR_TRANSMISSION_STATUS**](../wwan/ns-wwan-_wwan_set_sar_transmission_status.md)
+

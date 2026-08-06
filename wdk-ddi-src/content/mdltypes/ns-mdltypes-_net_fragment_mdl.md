@@ -3,7 +3,6 @@ UID: NS:mdltypes._NET_FRAGMENT_MDL
 title: NET_FRAGMENT_MDL (mdltypes.h)
 description: The NET_FRAGMENT_MDL structure contains DMA MDL information for a NET_FRAGMENT.
 tech.root: netvista
-ms.assetid: DA25E9D1-BCAC-4B48-9F13-A5C673CF40D3
 ms.date: 09/26/2019
 keywords: ["NET_FRAGMENT_MDL structure"]
 ms.keywords: NET_FRAGMENT_MDL, NET_FRAGMENT_MDL,
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - mdltypes.h
 api_name:
+ - _NET_FRAGMENT_MDL
  - NET_FRAGMENT_MDL
-product:
- - Windows
 ---
 
 # NET_FRAGMENT_MDL structure
@@ -67,3 +65,4 @@ To obtain this structure, call [**NetExtensionGetFragmentMdl**](../mdl/nf-mdl-ne
 [**NET_FRAGMENT**](../fragment/ns-fragment-_net_fragment.md)
 
 [**NetExtensionGetFragmentMdl**](../mdl/nf-mdl-netextensiongetfragmentmdl.md)
+

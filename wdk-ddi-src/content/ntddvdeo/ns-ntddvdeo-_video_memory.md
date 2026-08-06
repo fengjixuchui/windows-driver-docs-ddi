@@ -4,7 +4,6 @@ title: _VIDEO_MEMORY (ntddvdeo.h)
 description: The VIDEO_MEMORY structure holds the address of a requested block of kernel-mode video memory.
 old-location: display\video_memory.htm
 tech.root: display
-ms.assetid: 3d8b3b45-90d9-4e64-a52d-253c9cb86588
 ms.date: 05/10/2018
 keywords: ["VIDEO_MEMORY structure"]
 ms.keywords: "*PVIDEO_MEMORY, PVIDEO_MEMORY, PVIDEO_MEMORY structure pointer [Display Devices], VIDEO_MEMORY, VIDEO_MEMORY structure [Display Devices], Video_Structs_85973586-1583-46cb-93a7-c8d37ba4ef5f.xml, _VIDEO_MEMORY, display.video_memory, ntddvdeo/PVIDEO_MEMORY, ntddvdeo/VIDEO_MEMORY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddvdeo.h
 api_name:
+ - _VIDEO_MEMORY
+ - PVIDEO_MEMORY
  - VIDEO_MEMORY
 ---
 
@@ -79,3 +80,4 @@ For structures used in mapping into user-mode video memory, see <a href="/window
 
 
 <a href="/windows-hardware/drivers/ddi/ntddvdeo/ns-ntddvdeo-_video_memory_information">VIDEO_MEMORY_INFORMATION</a>
+

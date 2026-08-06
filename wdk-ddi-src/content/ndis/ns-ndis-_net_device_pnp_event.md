@@ -4,7 +4,6 @@ title: _NET_DEVICE_PNP_EVENT (ndis.h)
 description: The NET_DEVICE_PNP_EVENT structure defines device plug and play (PnP) events for miniport adapters.
 old-location: netvista\net_device_pnp_event.htm
 tech.root: netvista
-ms.assetid: 79298332-2d34-4ef3-ad43-5d218e3f6612
 ms.date: 05/02/2018
 keywords: ["NET_DEVICE_PNP_EVENT structure"]
 ms.keywords: "*PNET_DEVICE_PNP_EVENT, NET_DEVICE_PNP_EVENT, NET_DEVICE_PNP_EVENT structure [Network Drivers Starting with Windows Vista], PNET_DEVICE_PNP_EVENT, PNET_DEVICE_PNP_EVENT structure pointer [Network Drivers Starting with Windows Vista], _NET_DEVICE_PNP_EVENT, miniport_structures_ref_42938d80-a578-40a4-ba12-0285d7c258eb.xml, ndis/NET_DEVICE_PNP_EVENT, ndis/PNET_DEVICE_PNP_EVENT, netvista.net_device_pnp_event"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NET_DEVICE_PNP_EVENT
+ - PNET_DEVICE_PNP_EVENT
  - NET_DEVICE_PNP_EVENT
 ---
 
@@ -58,7 +59,7 @@ The <b>NET_DEVICE_PNP_EVENT</b> structure defines device plug and play (PnP) eve
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      <b>NET_DEVICE_PNP_EVENT</b> structure. NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_DEFAULT</b>, the 
@@ -146,4 +147,5 @@ To provide a device PnP event notification, NDIS passes a pointer to a <b>NET_DE
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
+

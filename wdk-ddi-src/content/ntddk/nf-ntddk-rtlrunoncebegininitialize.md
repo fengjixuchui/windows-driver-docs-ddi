@@ -4,7 +4,6 @@ title: RtlRunOnceBeginInitialize function (ntddk.h)
 description: The RtlRunOnceBeginInitialize routine begins a one-time initialization.
 old-location: kernel\rtlrunoncebegininitialize.htm
 tech.root: kernel
-ms.assetid: ed96b2ec-95ea-47a6-a3b0-f4d018e0c8e2
 ms.date: 04/30/2018
 keywords: ["RtlRunOnceBeginInitialize function"]
 ms.keywords: RtlRunOnceBeginInitialize, RtlRunOnceBeginInitialize routine [Kernel-Mode Driver Architecture], k109_f7299ad8-4567-4ad8-a13c-2329a12af6ea.xml, kernel.rtlrunoncebegininitialize, ntddk/RtlRunOnceBeginInitialize
@@ -50,14 +49,14 @@ The <b>RtlRunOnceBeginInitialize</b> routine begins a one-time initialization.
 
 ## -parameters
 
-### -param RunOnce 
+### -param RunOnce [in, out]
 
-[in, out]
+
 Pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">RTL_RUN_ONCE</a> one-time initialization structure.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Drivers can optionally specify one or more of the following flags:
 
 
@@ -72,12 +71,12 @@ Perform initialization asynchronously. The driver can perform multiple completio
 
 #### RTL_RUN_ONCE_CHECK_ONLY
 
-Do not begin initialization, but check to determine if initialization has already occurred. If <b>RtlRunOnceBeginInitialize</b> returns STATUS_SUCCESS, the initialization succeeded, and *<i>Context</i> contains the initialized data.
+Do not begin initialization, but check to determine if initialization has already occurred. If <b>RtlRunOnceBeginInitialize</b> returns STATUS_SUCCESS, the initialization succeeded, and **Context* contains the initialized data.
 
-### -param Context 
+### -param Context [out]
 
-[out]
-Specifies a pointer to a PVOID variable that receives the initialized data. The value of *<i>Context</i> is valid only when the routine returns STATUS_SUCCESS.
+
+Specifies a pointer to a PVOID variable that receives the initialized data. The value of **Context* is valid only when the routine returns STATUS_SUCCESS.
 
 ## -returns
 

@@ -3,7 +3,6 @@ UID: NE:ucmucsispec._UCSI_COMMAND
 title: _UCSI_COMMAND (ucmucsispec.h)
 tech.root: usbref
 description: See Table 4-51, Command Code.
-ms.assetid: d2570837-3a83-4bc4-a222-bfa867826837
 ms.date: 09/30/2018
 keywords: ["UCSI_COMMAND enumeration"]
 ms.keywords: _UCSI_COMMAND, UCSI_COMMAND,
@@ -32,6 +31,7 @@ api_location:
  - ucmucsispec.h
 api_name:
  - _UCSI_COMMAND
+ - UCSI_COMMAND
 ---
 
 # _UCSI_COMMAND enumeration
@@ -39,7 +39,7 @@ api_name:
 
 ## -description
 
-See Table 4-51: Command Code, in [UCSI spec version 1.1](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
+See Table 4-51: Command Code, in [UCSI spec version 1.2](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
 
 ## -enum-fields
 

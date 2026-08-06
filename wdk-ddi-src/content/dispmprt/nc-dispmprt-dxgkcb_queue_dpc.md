@@ -4,14 +4,13 @@ title: DXGKCB_QUEUE_DPC (dispmprt.h)
 description: The DxgkCbQueueDpc function queues a deferred procedure call (DPC) for execution at IRQL DISPATCH_LEVEL.
 old-location: display\dxgkcbqueuedpc.htm
 tech.root: display
-ms.assetid: c8c26675-8b87-4818-ad51-4e0a341965d0
 ms.date: 05/10/2018
 keywords: ["DXGKCB_QUEUE_DPC callback function"]
 ms.keywords: DXGKCB_QUEUE_DPC, DXGKCB_QUEUE_DPC callback, DpFunctions_0d1685f8-bd6f-45cc-a958-54330281a44f.xml, DxgkCbQueueDpc, DxgkCbQueueDpc callback function [Display Devices], display.dxgkcbqueuedpc, dispmprt/DxgkCbQueueDpc
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
- - DxgkCbQueueDpc
+ - DXGKCB_QUEUE_DPC
 ---
 
 # DXGKCB_QUEUE_DPC callback function
@@ -50,9 +49,9 @@ The <b>DxgkCbQueueDpc</b> function queues a deferred procedure call (DPC) for ex
 
 ## -parameters
 
-### -param DeviceHandle 
+### -param DeviceHandle [in]
 
-[in]
+
 A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device">DxgkDdiStartDevice</a>.
 
 ## -returns
@@ -83,3 +82,4 @@ For more information on the use of this function, see these topics:
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_dpc_routine">DxgkDdiDpcRoutine</a>
+

@@ -2,7 +2,6 @@
 UID: NE:d3dkmthk._D3DKMT_ESCAPE_PFN_CONTROL_COMMAND
 title: _D3DKMT_ESCAPE_PFN_CONTROL_COMMAND (d3dkmthk.h)
 description: Escape function pointer control commands.
-ms.assetid: 67570b6b-4143-468a-b93f-f8c031bfaed5
 ms.date: 10/19/2018
 keywords: ["D3DKMT_ESCAPE_PFN_CONTROL_COMMAND enumeration"]
 ms.keywords: _D3DKMT_ESCAPE_PFN_CONTROL_COMMAND, D3DKMT_ESCAPE_PFN_CONTROL_COMMAND,
@@ -32,6 +31,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_ESCAPE_PFN_CONTROL_COMMAND
+ - D3DKMT_ESCAPE_PFN_CONTROL_COMMAND
 dev_langs:
  - c++
 ---

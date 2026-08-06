@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3DWDDM2_0DDI_VIDEODECODERSUBMITBUFFERS1
 title: PFND3DWDDM2_0DDI_VIDEODECODERSUBMITBUFFERS1 (d3d10umddi.h)
 description: VideoDecoderSubmitBuffers1 submits one or more buffers for decoding.
 old-location: display\videodecodersubmitbuffers1.htm
-ms.assetid: 708A7F64-F8A8-4D0B-A824-CC8DD158216A
 ms.date: 05/10/2018
 keywords: ["PFND3DWDDM2_0DDI_VIDEODECODERSUBMITBUFFERS1 callback function"]
 ms.keywords: PFND3DWDDM2_0DDI_VIDEODECODERSUBMITBUFFERS1, PFND3DWDDM2_0DDI_VIDEODECODERSUBMITBUFFERS1 callback, d3d10umddi/pfnVideoDecoderSubmitBuffers1, display.videodecodersubmitbuffers1, pfnVideoDecoderSubmitBuffers1, pfnVideoDecoderSubmitBuffers1 callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoDecoderSubmitBuffers1
-product:
- - Windows
+ - PFND3DWDDM2_0DDI_VIDEODECODERSUBMITBUFFERS1
 ---
 
 # PFND3DWDDM2_0DDI_VIDEODECODERSUBMITBUFFERS1 callback function
@@ -92,3 +89,4 @@ The <b>pBufferDesc</b> member points to an array of one or more <a href="/window
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3dwddm2_0ddi_video_decoder_buffer_desc1">D3DWDDM2_0DDI_VIDEO_DECODER_BUFFER_DESC1</a>
+

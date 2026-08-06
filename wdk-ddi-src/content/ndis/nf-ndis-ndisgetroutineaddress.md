@@ -4,7 +4,6 @@ title: NdisGetRoutineAddress function (ndis.h)
 description: The NdisGetRoutineAddress function returns the address of a routine given the routine's name.
 old-location: netvista\ndisgetroutineaddress.htm
 tech.root: netvista
-ms.assetid: 98257b56-e586-41e7-80c3-f9f96d471125
 ms.date: 05/02/2018
 keywords: ["NdisGetRoutineAddress function"]
 ms.keywords: NdisGetRoutineAddress, NdisGetRoutineAddress function [Network Drivers Starting with Windows Vista], ndis/NdisGetRoutineAddress, ndis_sysinfo_ref_d2259157-f4fd-4fd8-b86e-f685ab4213d5.xml, netvista.ndisgetroutineaddress
@@ -52,9 +51,9 @@ The
 
 ## -parameters
 
-### -param NdisRoutineName 
+### -param NdisRoutineName [in]
 
-[in]
+
 A pointer to a 
      <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that specifies the
      string that contains the name of a routine.

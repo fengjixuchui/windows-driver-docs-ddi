@@ -4,7 +4,6 @@ title: IDebugSymbols3::GetSymbolEntryByToken (dbgeng.h)
 description: Looks up a symbol by using a managed metadata token.
 old-location: debugger\idebugsymbols3_getsymbolentrybytoken.htm
 tech.root: debugger
-ms.assetid: C5BAED6C-223F-4D1B-A9A4-323C93DD5AD9
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::GetSymbolEntryByToken"]
 ms.keywords: GetSymbolEntryByToken, GetSymbolEntryByToken method [Windows Debugging], GetSymbolEntryByToken method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],GetSymbolEntryByToken method, IDebugSymbols3.GetSymbolEntryByToken, IDebugSymbols3::GetSymbolEntryByToken, dbgeng/IDebugSymbols3::GetSymbolEntryByToken, debugger.idebugsymbols3_getsymbolentrybytoken
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSymbols3.GetSymbolEntryByToken
+ - IDebugSymbols3::GetSymbolEntryByToken
 ---
 
 # IDebugSymbols3::GetSymbolEntryByToken
@@ -50,19 +49,19 @@ Looks up a symbol by using a managed metadata token.
 
 ## -parameters
 
-### -param ModuleBase 
+### -param ModuleBase [in]
 
-[in]
+
 The base of the module.
 
-### -param Token 
+### -param Token [in]
 
-[in]
+
 The token to use to look up the symbol.
 
-### -param Id 
+### -param Id [out]
 
-[out]
+
 A pointer to the module as a <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_module_and_id">DEBUG_MODULE_AND_ID</a> structure.
 
 ## -returns
@@ -76,3 +75,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

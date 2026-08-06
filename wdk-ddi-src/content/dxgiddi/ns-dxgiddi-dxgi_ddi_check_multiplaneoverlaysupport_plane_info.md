@@ -1,10 +1,9 @@
 ---
 UID: NS:dxgiddi.DXGI_DDI_CHECK_MULTIPLANEOVERLAYSUPPORT_PLANE_INFO
 title: DXGI_DDI_CHECK_MULTIPLANEOVERLAYSUPPORT_PLANE_INFO (dxgiddi.h)
-description: Specifies the support attributes that the hardware provides for multiplane overlays.
+description: The DXGI_DDI_CHECK_MULTIPLANEOVERLAYSUPPORT_PLANE_INFO structure specifies the support attributes that the hardware provides for multiplane overlays.
 old-location: display\dxgi_ddi_check_multiplaneoverlaysupport_plane_info.htm
 tech.root: display
-ms.assetid: 3a1e41b5-cd62-436b-a4ed-6dee99c03cac
 ms.date: 05/10/2018
 keywords: ["DXGI_DDI_CHECK_MULTIPLANEOVERLAYSUPPORT_PLANE_INFO structure"]
 ms.keywords: DXGI_DDI_CHECK_MULTIPLANEOVERLAYSUPPORT_PLANE_INFO, DXGI_DDI_CHECK_MULTIPLANEOVERLAYSUPPORT_PLANE_INFO structure [Display Devices], DXGI_DDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO, DXGI_DDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO structure [Display Devices], display.dxgi_ddi_check_multiplaneoverlaysupport_plane_info, dxgiddi/DXGI_DDI_CHECK_MULTIPLANEOVERLAYSUPPORT_PLANE_INFO
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Dxgiddi.h
 api_name:
+ - DXGI_DDI_CHECK_MULTIPLANEOVERLAYSUPPORT_PLANE_INFO
  - DXGI_DDI_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE_INFO
 ---
 
@@ -63,3 +63,4 @@ The zero-based index into the resource, which is specified by the handle in the 
 ### -field PlaneAttributes
 
 A <a href="/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi_ddi_multiplane_overlay_attributes">DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES</a> structure that specifies overlay plane attributes.
+

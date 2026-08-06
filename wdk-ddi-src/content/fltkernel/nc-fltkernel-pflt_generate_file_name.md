@@ -4,7 +4,6 @@ title: PFLT_GENERATE_FILE_NAME (fltkernel.h)
 description: A minifilter driver that provides file names for the filter manager's name cache can register a routine of type PFLT_GENERATE_FILE_NAME as the minifilter driver's GenerateFileNameCallback routine.
 old-location: ifsk\pflt_generate_file_name.htm
 tech.root: ifsk
-ms.assetid: 04e7e4db-2cf6-4312-8964-2c69c96953a3
 ms.date: 04/16/2018
 keywords: ["PFLT_GENERATE_FILE_NAME callback function"]
 ms.keywords: FltCallbacks_0075602c-1093-445c-a949-ea282cf736e7.xml, GenerateFileNameCallback, GenerateFileNameCallback routine [Installable File System Drivers], PFLT_GENERATE_FILE_NAME, fltkernel/GenerateFileNameCallback, ifsk.pflt_generate_file_name
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - fltkernel.h
 api_name:
- - GenerateFileNameCallback
+ - PFLT_GENERATE_FILE_NAME
 ---
 
 # PFLT_GENERATE_FILE_NAME callback function
@@ -50,40 +49,43 @@ A minifilter driver that provides file names for the filter manager's name cache
 
 ## -parameters
 
-### -param Instance 
+### -param Instance [in]
 
-[in]
+
 Opaque instance pointer for the minifilter driver instance that this callback routine is registered for.
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 A pointer to a file object for the file whose name is being requested.
 
-### -param CallbackData 
+### -param CallbackData [in, optional]
 
-[in, optional]
+
 A pointer to the callback data structure for the operation during which this name is being requested. This parameter is <b>NULL</b> when <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetfilenameinformationunsafe">FltGetFileNameInformationUnsafe</a> is called to retrieve the name of the file.
 
-### -param NameOptions 
+### -param NameOptions [in]
 
-[in]
+
 
 <a href="/windows-hardware/drivers/ifs/flt-file-name-options">FLT_FILE_NAME_OPTIONS</a> value that specifies the name format, query method, and flags for this file name information query.
 
-### -param CacheFileNameInformation 
+### -param CacheFileNameInformation [out]
 
-[out]
+
 A pointer to a Boolean value specifying whether this name can be cached. Set to <b>TRUE</b> on output if the name can be cached; set to <b>FALSE</b> otherwise.
 
-### -param FileName 
+### -param FileName [out]
 
-[out]
+
 A pointer to a filter manager-allocated <a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_name_control">FLT_NAME_CONTROL</a> structure to receive the file name on output.
 
 ## -returns
 
 This callback routine returns STATUS_SUCCESS or an appropriate NTSTATUS value.
+
+Filters should not return STATUS_NOT_IMPLEMENTED or STATUS_NOT_SUPPORTED.
+
 
 ## -remarks
 
@@ -187,3 +189,4 @@ After it generates the file name information, the minifilter driver must call <a
 
 
 <a href="/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_normalize_name_component_ex">PFLT_NORMALIZE_NAME_COMPONENT_EX</a>
+

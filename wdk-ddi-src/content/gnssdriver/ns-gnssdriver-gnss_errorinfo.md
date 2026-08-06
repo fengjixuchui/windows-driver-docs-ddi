@@ -1,10 +1,9 @@
 ---
-UID: NS:gnssdriver.__unnamed_struct_27
+UID: NS:gnssdriver.GNSS_ERRORINFO
 title: GNSS_ERRORINFO (gnssdriver.h)
 description: This structure contains error information.
 old-location: gnss\gnss_errorinfo.htm
 tech.root: gnss
-ms.assetid: 754CD1DD-88E6-4E02-8E24-1939222FE326
 ms.date: 08/20/2020
 keywords: ["GNSS_ERRORINFO structure"]
 ms.keywords: "*PGNSS_ERRORINFO, GNSS_ERRORINFO, GNSS_ERRORINFO structure [Sensor Devices], PGNSS_ERRORINFO, PGNSS_ERRORINFO structure pointer [Sensor Devices], gnss.gnss_errorinfo, gnssdriver/GNSS_ERRORINFO, gnssdriver/PGNSS_ERRORINFO"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - gnssdriver.h
 api_name:
+ - PGNSS_ERRORINFO
  - GNSS_ERRORINFO
 ---
 
@@ -77,3 +77,4 @@ ErrorDescription[256] - Clear-text description of the error (not-localized) that
 ### -field Unused
 
 Unused[512] - Padding buffer
+

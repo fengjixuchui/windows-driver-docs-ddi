@@ -4,7 +4,6 @@ title: PPARALLEL_CLEAR_CHIP_MODE (parallel.h)
 description: The PPARALLEL_CLEAR_CHIP_MODE-typed callback routine clears the operating mode of a parallel port by resetting the communication mode of the host chipset to IEEE 1284-compatibility mode.
 old-location: parports\pparallel_clear_chip_mode.htm
 tech.root: parports
-ms.assetid: 398d38a0-2337-4f8e-bd30-d6546516b945
 ms.date: 02/15/2018
 keywords: ["PPARALLEL_CLEAR_CHIP_MODE callback"]
 ms.keywords: "(*PPARALLEL_CLEAR_CHIP_MODE), (*PPARALLEL_CLEAR_CHIP_MODE) callback function [Parallel Ports], cisspd_d5564f9d-0941-4f80-9fa7-5acacaaf47a9.xml, parallel/(*PPARALLEL_CLEAR_CHIP_MODE), parports.pparallel_clear_chip_mode"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - parallel.h
 api_name:
- - (*PPARALLEL_CLEAR_CHIP_MODE)
+ - PPARALLEL_CLEAR_CHIP_MODE
 ---
 
 # PPARALLEL_CLEAR_CHIP_MODE callback
@@ -50,14 +49,14 @@ The <i>PPARALLEL_CLEAR_CHIP_MODE</i>-typed callback routine clears the operating
 
 ## -parameters
 
-### -param ClearChipContext 
+### -param ClearChipContext [in]
 
-[in]
+
 Pointer to the device extension of a parallel port's functional device object (<a href="/windows-hardware/drivers/">FDO</a>).
 
-### -param ChipMode 
+### -param ChipMode [in]
 
-[in]
+
 Specifies the current operating mode of the parallel port.
 
 For more information about operating modes, see the modes that are defined for the enhanced capabilities register (ECR) in the <i>parallel.h</i> file that is included in the Microsoft Windows Driver Kit (WDK).
@@ -131,3 +130,4 @@ For more information, see <a href="/previous-versions/ff544801(v=vs.85)">Setting
 
 
 <a href="..\parallel\nc-parallel-pparallel_set_chip_mode.md">PPARALLEL_SET_CHIP_MODE</a>
+

@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._WHEAP_FOUND_ERROR_IN_BANK_EVENT
 title: WHEAP_FOUND_ERROR_IN_BANK_EVENT
-description: 
-tech.root: 
-ms.assetid: 06ec284c-a570-4690-837d-baf7eca613d7
+description: "Learn more about: WHEAP_FOUND_ERROR_IN_BANK_EVENT structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEAP_FOUND_ERROR_IN_BANK_EVENT structure"]
 ms.keywords: WHEAP_FOUND_ERROR_IN_BANK_EVENT, WHEAP_FOUND_ERROR_IN_BANK_EVENT, *PWHEAP_FOUND_ERROR_IN_BANK_EVENT,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEAP_FOUND_ERROR_IN_BANK_EVENT
+ - PWHEAP_FOUND_ERROR_IN_BANK_EVENT
  - WHEAP_FOUND_ERROR_IN_BANK_EVENT
-product:
- - Windows
 ---
 
 # WHEAP_FOUND_ERROR_IN_BANK_EVENT structure

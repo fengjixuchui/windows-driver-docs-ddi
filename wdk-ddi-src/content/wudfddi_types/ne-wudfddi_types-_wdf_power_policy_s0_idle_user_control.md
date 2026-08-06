@@ -1,10 +1,9 @@
 ---
 UID: NE:wudfddi_types._WDF_POWER_POLICY_S0_IDLE_USER_CONTROL
 title: _WDF_POWER_POLICY_S0_IDLE_USER_CONTROL (wudfddi_types.h)
-description: The WDF_POWER_POLICY_S0_IDLE_USER_CONTROL enumeration identifies whether a user can control a device's behavior when the device is idle and the system is in its working (S0) state.
+description: Learn how the WDF_POWER_POLICY_S0_IDLE_USER_CONTROL enumeration identifies whether a user can control a device's behavior when the device is idle and the system is in its working (S0) state.
 old-location: wdf\wdf_power_policy_s0_idle_user_control.htm
 tech.root: wdf
-ms.assetid: ee51c436-2d1c-49d0-ab76-337317eeeeda
 ms.date: 02/26/2018
 keywords: ["WDF_POWER_POLICY_S0_IDLE_USER_CONTROL enumeration"]
 ms.keywords: DFDeviceObjectGeneralRef_3d85e623-4e88-4e66-a21d-489aebd13ddf.xml, IdleAllowUserControl, IdleDoNotAllowUserControl, IdleUserControlInvalid, WDF_POWER_POLICY_S0_IDLE_USER_CONTROL, WDF_POWER_POLICY_S0_IDLE_USER_CONTROL enumeration, _WDF_POWER_POLICY_S0_IDLE_USER_CONTROL, kmdf.wdf_power_policy_s0_idle_user_control, wdf.wdf_power_policy_s0_idle_user_control, wdfdevice/IdleAllowUserControl, wdfdevice/IdleDoNotAllowUserControl, wdfdevice/IdleUserControlInvalid, wdfdevice/WDF_POWER_POLICY_S0_IDLE_USER_CONTROL, wudfddi_types/IdleAllowUserControl, wudfddi_types/IdleDoNotAllowUserControl, wudfddi_types/IdleUserControlInvalid, wudfddi_types/WDF_POWER_POLICY_S0_IDLE_USER_CONTROL
@@ -41,6 +40,7 @@ api_location:
  - wdfdevice.h
  - wudfddi_types.h
 api_name:
+ - _WDF_POWER_POLICY_S0_IDLE_USER_CONTROL
  - WDF_POWER_POLICY_S0_IDLE_USER_CONTROL
 ---
 
@@ -76,3 +76,4 @@ Users control a device's idle behavior by modifying information on a <a href="/w
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a>
+

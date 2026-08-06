@@ -4,7 +4,6 @@ title: IPortableDeviceValues::SetErrorValue (portabledevicetypes.h)
 description: Adds a new HRESULT value (type VT_ERROR) or overwrites an existing one.
 old-location: wpddk\iportabledevicevalues_seterrorvalue.htm
 tech.root: wpd_dk
-ms.assetid: 58e21e7c-bb66-4088-b011-a2e3df28944c
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::SetErrorValue"]
 ms.keywords: IPortableDeviceValues interface,SetErrorValue method, IPortableDeviceValues.SetErrorValue, IPortableDeviceValues::SetErrorValue, IPortableDeviceValuesSetErrorValue, SetErrorValue, SetErrorValue method, SetErrorValue method,IPortableDeviceValues interface, portabledevicetypes/IPortableDeviceValues::SetErrorValue, wpddk.iportabledevicevalues_seterrorvalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.SetErrorValue
+ - IPortableDeviceValues::SetErrorValue
 ---
 
 # IPortableDeviceValues::SetErrorValue
@@ -51,14 +50,14 @@ Adds a new <b>HRESULT</b> value (type VT_ERROR) or overwrites an existing one.
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> that specifies the item to create or overwrite.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 An <b>HRESULT</b> that contains the new value.
 
 ## -returns
@@ -94,3 +93,4 @@ If an existing value has the same key specified by the <i>key</i> parameter, it 
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-geterrorvalue">IPortableDeviceValues::GetErrorValue</a>
+

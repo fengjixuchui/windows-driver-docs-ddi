@@ -1,10 +1,9 @@
 ---
 UID: NS:pep_x._PEP_ACPI_SPB_SPI_RESOURCE
 title: _PEP_ACPI_SPB_SPI_RESOURCE (pep_x.h)
-description: The PEP_ACPI_SPB_SPI_RESOURCE structure describes an ACPI SPI serial bus resource.
+description: Learn how the PEP_ACPI_SPB_SPI_RESOURCE structure describes an ACPI SPI serial bus resource.
 old-location: kernel\pep_acpi_spb_spi_resource.htm
 tech.root: kernel
-ms.assetid: 75CD5462-8382-4E83-ADC1-3E1B811A0D60
 ms.date: 04/30/2018
 keywords: ["PEP_ACPI_SPB_SPI_RESOURCE structure"]
 ms.keywords: "*PPEP_ACPI_SPB_SPI_RESOURCE, PEP_ACPI_SPB_SPI_RESOURCE, PEP_ACPI_SPB_SPI_RESOURCE structure [Kernel-Mode Driver Architecture], PPEP_ACPI_SPB_SPI_RESOURCE, PPEP_ACPI_SPB_SPI_RESOURCE structure pointer [Kernel-Mode Driver Architecture], _PEP_ACPI_SPB_SPI_RESOURCE, kernel.pep_acpi_spb_spi_resource, pepfx/PEP_ACPI_SPB_SPI_RESOURCE, pepfx/PPEP_ACPI_SPB_SPI_RESOURCE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_ACPI_SPB_SPI_RESOURCE
+ - PPEP_ACPI_SPB_SPI_RESOURCE
  - PEP_ACPI_SPB_SPI_RESOURCE
 ---
 
@@ -85,3 +86,4 @@ line, or other line selection mechanism.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_acpi_spb_resource">PEP_ACPI_SPB_RESOURCE</a>
+

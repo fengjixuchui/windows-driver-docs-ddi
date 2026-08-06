@@ -4,7 +4,6 @@ title: AtaPortInitializeQueueTag function (irb.h)
 description: The AtaPortInitializeQueueTag routine initializes the queue tag list for the specified device.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\ataportinitializequeuetag.htm
 tech.root: storage
-ms.assetid: f6d40f3e-4bc9-4b30-97ac-600a33280305
 ms.date: 03/29/2018
 keywords: ["AtaPortInitializeQueueTag function"]
 ms.keywords: AtaPortInitializeQueueTag, AtaPortInitializeQueueTag routine [Storage Devices], atartns_2dd092e5-f635-4da7-8444-ffef8e5c75db.xml, irb/AtaPortInitializeQueueTag, storage.ataportinitializequeuetag
@@ -58,19 +57,19 @@ The <b>AtaPortInitializeQueueTag</b> routine initializes the queue tag list for 
 
 <p>A pointer to the channel extension.</p>
 
-### -param TargetId 
+### -param TargetId [in]
 
-[in]
+
 Specifies the target identifier of the device.
 
-### -param Lun 
+### -param Lun [in]
 
-[in]
+
 Specifies the logical unit number (LUN) of the device.
 
-### -param MaxQueueTag 
+### -param MaxQueueTag [in]
 
-[in]
+
 Specifies the maximum allowed value for the queue tag.
 
 ## -returns

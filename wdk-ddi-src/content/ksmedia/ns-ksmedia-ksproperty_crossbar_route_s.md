@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_143
+UID: NS:ksmedia.KSPROPERTY_CROSSBAR_ROUTE_S
 title: KSPROPERTY_CROSSBAR_ROUTE_S (ksmedia.h)
 description: The KSPROPERTY_CROSSBAR_ROUTE_S structure describes whether a particular routing is possible and specifies the current routing for a pin.
 old-location: stream\ksproperty_crossbar_route_s.htm
 tech.root: stream
-ms.assetid: 0db68fcd-8661-41d2-ac95-e9b6033e6aa8
 ms.date: 04/23/2018
 keywords: ["KSPROPERTY_CROSSBAR_ROUTE_S structure"]
 ms.keywords: "*PKSPROPERTY_CROSSBAR_ROUTE_S, KSPROPERTY_CROSSBAR_ROUTE_S, KSPROPERTY_CROSSBAR_ROUTE_S structure [Streaming Media Devices], PKSPROPERTY_CROSSBAR_ROUTE_S, PKSPROPERTY_CROSSBAR_ROUTE_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_CROSSBAR_ROUTE_S, ksmedia/PKSPROPERTY_CROSSBAR_ROUTE_S, stream.ksproperty_crossbar_route_s, vidcapstruct_a1d08316-6a91-4f40-93d2-b371c6e35eff.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_CROSSBAR_ROUTE_S
  - KSPROPERTY_CROSSBAR_ROUTE_S
 ---
 
@@ -54,7 +54,7 @@ The KSPROPERTY_CROSSBAR_ROUTE_S structure describes whether a particular routing
 
 ### -field Property
 
-Specifies an initialized <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+Specifies an initialized <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 ### -field IndexInputPin
 
@@ -74,7 +74,7 @@ If the value of <b>IndexInputPin</b> is (-1) on an audio output pin, then the au
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -83,3 +83,4 @@ If the value of <b>IndexInputPin</b> is (-1) on an audio output pin, then the au
 
 
 <a href="/windows-hardware/drivers/stream/propsetid-vidcap-crossbar">PROPSETID_VIDCAP_CROSSBAR</a>
+

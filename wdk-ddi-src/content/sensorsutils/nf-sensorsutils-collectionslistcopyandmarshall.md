@@ -2,7 +2,6 @@
 UID: NF:sensorsutils.CollectionsListCopyAndMarshall
 title: CollectionsListCopyAndMarshall function (sensorsutils.h)
 description: This routine copies and marshalls a collection list from source to target.
-ms.assetid: 63abf500-d6c8-428c-b359-2041ee49091c
 ms.date: 08/07/2018
 keywords: ["CollectionsListCopyAndMarshall function"]
 tech.root: sensors
@@ -48,13 +47,13 @@ This routine copies and marshalls a collection list from source to target.
 
 ## -parameters
 
-### -param Target
+### -param Target [in]
 
-[in] A pointer to a collection list.
+A pointer to a collection list.
 
-### -param Source
+### -param Source [out]
 
-[out] A pointer to a collection list.
+A pointer to a collection list.
 
 ## -returns
 

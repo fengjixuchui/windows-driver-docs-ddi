@@ -4,7 +4,6 @@ title: PshedFreeMemory function (ntddk.h)
 description: The PshedFreeMemory function frees a block of memory that was previously allocated by calling the PshedAllocateMemory function.
 old-location: whea\pshedfreememory.htm
 tech.root: whea
-ms.assetid: e0784b46-9929-480c-88d0-9983d80fd753
 ms.date: 02/20/2018
 keywords: ["PshedFreeMemory function"]
 ms.keywords: PshedFreeMemory, PshedFreeMemory function [WHEA Drivers and Applications], ntddk/PshedFreeMemory, whea.pshedfreememory, whearef_e17812c6-f817-490d-b1f7-bf5fa16d769b.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Pshed.lib
 req.dll: Pshed.dll
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>PshedFreeMemory</b> function frees a block of memory that was previously 
 
 ## -parameters
 
-### -param Address 
+### -param Address [in]
 
-[in]
+
 A pointer to the block of memory being freed.
 
 ## -returns

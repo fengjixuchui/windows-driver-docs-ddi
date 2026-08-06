@@ -1,10 +1,9 @@
 ---
-UID: NS:winsplp.__unnamed_struct_0
+UID: NS:winsplp.BranchOfficeJobDataPrinted
 title: BranchOfficeJobDataPrinted (winsplp.h)
 description: Contains the necessary data for logging a branch office job completed event on a remote server. This is based on standard job-related data available to the spooler.
 old-location: print\branchofficejobdataprinted.htm
 tech.root: print
-ms.assetid: 77737A33-9592-43A3-B12A-5BFDCA0209BE
 ms.date: 04/20/2018
 keywords: ["BranchOfficeJobDataPrinted structure"]
 ms.keywords: "*PBranchOfficeJobDataPrinted, BranchOfficeJobDataPrinted, BranchOfficeJobDataPrinted structure [Print Devices], PBranchOfficeJobDataPrinted, PBranchOfficeJobDataPrinted structure pointer [Print Devices], print.branchofficejobdataprinted, winsplp/BranchOfficeJobDataPrinted, winsplp/PBranchOfficeJobDataPrinted"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Winsplp.h
 api_name:
+ - PBranchOfficeJobDataPrinted
  - BranchOfficeJobDataPrinted
 ---
 

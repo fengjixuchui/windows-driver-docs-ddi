@@ -3,7 +3,6 @@ UID: NS:ucmucsispec._UCSI_CCI
 title: _UCSI_CCI (ucmucsispec.h)
 tech.root: usbref
 description: Used in GET_CONNECTOR_CAPABILITY command. See Table 4-16.
-ms.assetid: 85084e92-dcf2-4f51-a26f-3616d949e92b
 ms.date: 09/30/2018
 keywords: ["UCSI_CCI structure"]
 ms.keywords: _UCSI_CCI, UCSI_CCI, *PUCSI_CCI,
@@ -37,6 +36,8 @@ api_location:
  - ucmucsispec.h
 api_name:
  - _UCSI_CCI
+ - PUCSI_CCI
+ - UCSI_CCI
 ---
 
 # _UCSI_CCI structure
@@ -44,7 +45,7 @@ api_name:
 
 ## -description
 
-Used in the GET_CONNECTOR_CAPABILITY command. See Table 4-16 in [UCSI spec version 1.1](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
+Used in the GET_CONNECTOR_CAPABILITY command. See Table 4-16 in [UCSI spec version 1.2](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
 
 ## -struct-fields
 

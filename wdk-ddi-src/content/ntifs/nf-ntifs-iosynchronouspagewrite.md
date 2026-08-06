@@ -1,11 +1,10 @@
 ---
 UID: NF:ntifs.IoSynchronousPageWrite
 title: IoSynchronousPageWrite function (ntifs.h)
-description: Reserved for system use.
+description: "Microsoft reserves the IoSynchronousPageWrite function for internal use only. Don't use this function in your code."
 old-location: ifsk\iosynchronouspagewrite.htm
 tech.root: ifsk
-ms.assetid: 3d66b517-91cd-44f7-8dfe-853468c49352
-ms.date: 04/16/2018
+ms.date: 05/24/2022
 keywords: ["IoSynchronousPageWrite function"]
 ms.keywords: IoSynchronousPageWrite, IoSynchronousPageWrite function [Installable File System Drivers], ifsk.iosynchronouspagewrite, ioref_9ed81b03-18f6-4641-8f4e-b12c4afcfc5d.xml, ntifs/IoSynchronousPageWrite
 req.header: ntifs.h
@@ -43,16 +42,15 @@ api_name:
 
 # IoSynchronousPageWrite function
 
-
 ## -description
 
-The <b>IoSynchronousPageWrite</b> routine is reserved for system use. See <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-cccopywrite">CcCopyWrite</a>, <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccpreparemdlwrite">CcPrepareMdlWrite</a>, and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuildsynchronousfsdrequest">IoBuildSynchronousFsdRequest</a>.
+The **IoSynchronousPageWrite** routine is reserved for system use. See [**CcCopyWrite**](nf-ntifs-cccopywrite.md), [**CcPrepareMdlWrite**](nf-ntifs-ccpreparemdlwrite.md), and [**IoBuildSynchronousFsdRequest**](../wdm/nf-wdm-iobuildsynchronousfsdrequest.md).
 
 ## -parameters
 
 ### -param FileObject
 
-<p>Reserved.</p>
+Reserved.
 
 ### -param MemoryDescriptorList
 
@@ -67,5 +65,9 @@ Reserved.
 Reserved.
 
 ### -param IoStatusBlock
+
+Reserved.
+
+## -returns
 
 Reserved.

@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILADDCALLFORWARDINGPARAMS
 title: RILADDCALLFORWARDINGPARAMS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILADDCALLFORWARDINGPARAMS structure for internal use only. "
 old-location: netvista\riladdcallforwardingparams.htm
 tech.root: netvista
-ms.assetid: 8918552d-6a7b-414a-ab0c-a5690f109db4
 ms.date: 05/02/2018
 keywords: ["RILADDCALLFORWARDINGPARAMS structure"]
 ms.keywords: "*LPRILADDCALLFORWARDINGPARAMS, RILADDCALLFORWARDINGPARAMS, RILADDCALLFORWARDINGPARAMS structure [Network Drivers Starting with Windows Vista], netvista.riladdcallforwardingparams, ntddrilapitypes/RILADDCALLFORWARDINGPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILADDCALLFORWARDINGPARAMS
+ - LPRILADDCALLFORWARDINGPARAMS
 ---
 
 # RILADDCALLFORWARDINGPARAMS structure (rilapitypes.h)

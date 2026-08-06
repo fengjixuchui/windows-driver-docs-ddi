@@ -4,7 +4,6 @@ title: USBD_QueryBusTime function (usbdlib.h)
 description: The USBD_QueryBusTime routine has been deprecated in Windows XP and later operating systems. Do not use.
 old-location: buses\usbd_querybustime.htm
 tech.root: usbref
-ms.assetid: ae59daf6-da7b-4b04-bb5c-dfd353b937a0
 ms.date: 05/07/2018
 keywords: ["USBD_QueryBusTime function"]
 ms.keywords: USBD_QueryBusTime, USBD_QueryBusTime routine [Buses], buses.usbd_querybustime, usbdlib/USBD_QueryBusTime, usbfunc_2911ce15-3106-4c66-95c8-52ff57318131.xml
@@ -53,14 +52,14 @@ See URB_FUNCTION_GET_CURRENT_FRAME_NUMBER for equivalent functionality that is s
 
 ## -parameters
 
-### -param RootHubPdo 
+### -param RootHubPdo [in]
 
-[in]
+
 Obsolete.
 
-### -param CurrentFrame 
+### -param CurrentFrame [out]
 
-[out]
+
 Obsolete.
 
 ## -returns

@@ -4,7 +4,6 @@ title: _DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA (d3dumddi.h)
 description: The DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA structure describes stream-state data that specifies the pixel aspect ratio.
 old-location: display\dxvahdddi_stream_state_aspect_ratio_data.htm
 tech.root: display
-ms.assetid: 12d33e2d-63d3-4cc8-9b50-5156132b2e72
 ms.date: 05/10/2018
 keywords: ["DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA structure"]
 ms.keywords: DXVA2_Structs_daab6809-2f81-4892-9f56-c57254047627.xml, DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA, DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA structure [Display Devices], _DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA, d3dumddi/DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA, display.dxvahdddi_stream_state_aspect_ratio_data
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
  - DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA
 ---
 
@@ -52,17 +52,17 @@ The DXVAHDDDI_STREAM_STATE_ASPECT_RATIO_DATA structure describes stream-state da
 
 ## -struct-fields
 
-### -field Enable
+### -field Enable [in]
 
-[in] A Boolean value that specifies whether the pixel aspect ratios are available. The default value is <b>FALSE</b>, which indicates that the pixel aspect ratios are not available.
+A Boolean value that specifies whether the pixel aspect ratios are available. The default value is <b>FALSE</b>, which indicates that the pixel aspect ratios are not available.
 
-### -field SourceAspectRatio
+### -field SourceAspectRatio [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvahdddi_rational">DXVAHDDDI_RATIONAL</a> structure that specifies the pixel aspect ratio of the source. The default is (1, 1).
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvahdddi_rational">DXVAHDDDI_RATIONAL</a> structure that specifies the pixel aspect ratio of the source. The default is (1, 1).
 
-### -field DestinationAspectRatio
+### -field DestinationAspectRatio [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvahdddi_rational">DXVAHDDDI_RATIONAL</a> structure that specifies the pixel aspect ratio of the destination. The default is (1, 1).
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvahdddi_rational">DXVAHDDDI_RATIONAL</a> structure that specifies the pixel aspect ratio of the destination. The default is (1, 1).
 
 ## -remarks
 
@@ -75,3 +75,4 @@ Pixel aspect ratios (0, any value) and (any value, 0) are invalid and causes the
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvahdddi_rational">DXVAHDDDI_RATIONAL</a>
+

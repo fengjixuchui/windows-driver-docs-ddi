@@ -4,7 +4,6 @@ title: _BTH_DEVICE_INFO_LIST (bthioctl.h)
 description: The BTH_DEVICE_INFO_LIST structure contains output information about all cached, previously discovered remote devices.
 old-location: bltooth\bth_device_info_list.htm
 tech.root: bltooth
-ms.assetid: ad4888fc-3d90-4920-bf84-aea18841d238
 ms.date: 04/27/2018
 keywords: ["BTH_DEVICE_INFO_LIST structure"]
 ms.keywords: "*PBTH_DEVICE_INFO_LIST, BTH_DEVICE_INFO_LIST, BTH_DEVICE_INFO_LIST structure [Bluetooth Devices], PBTH_DEVICE_INFO_LIST, PBTH_DEVICE_INFO_LIST structure pointer [Bluetooth Devices], _BTH_DEVICE_INFO_LIST, bltooth.bth_device_info_list, bth_structs_230962ed-c458-4c9e-a317-e2508b07c059.xml, bthioctl/BTH_DEVICE_INFO_LIST, bthioctl/PBTH_DEVICE_INFO_LIST"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - bthioctl.h
 api_name:
+ - _BTH_DEVICE_INFO_LIST
+ - PBTH_DEVICE_INFO_LIST
  - BTH_DEVICE_INFO_LIST
 ---
 
@@ -83,3 +84,4 @@ The
 
 
 <a href="/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_get_device_info">IOCTL_BTH_GET_DEVICE_INFO</a>
+

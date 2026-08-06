@@ -4,7 +4,6 @@ title: _REG_RESTORE_KEY_INFORMATION (wdm.h)
 description: The REG_RESTORE_KEY_INFORMATION structure contains the information for a registry key that is about to be restored.
 old-location: kernel\reg_restore_key_information.htm
 tech.root: kernel
-ms.assetid: df9180d8-37aa-4b75-a8c6-a786901bd8a6
 ms.date: 04/30/2018
 keywords: ["REG_RESTORE_KEY_INFORMATION structure"]
 ms.keywords: "*PREG_RESTORE_KEY_INFORMATION, PREG_RESTORE_KEY_INFORMATION, PREG_RESTORE_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], REG_RESTORE_KEY_INFORMATION, REG_RESTORE_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], _REG_RESTORE_KEY_INFORMATION, kernel.reg_restore_key_information, kstruct_d_493707cd-b5e8-4f28-b080-b3639060b5e9.xml, wdm/PREG_RESTORE_KEY_INFORMATION, wdm/REG_RESTORE_KEY_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _REG_RESTORE_KEY_INFORMATION
+ - PREG_RESTORE_KEY_INFORMATION
  - REG_RESTORE_KEY_INFORMATION
 ---
 
@@ -56,7 +57,7 @@ The <b>REG_RESTORE_KEY_INFORMATION</b> structure contains the information for a 
 
 ### -field Object
 
-A pointer to a registry key object for the key whose name is about to be changed.
+A pointer to a registry key object for the key that is about to be restored.
 
 ### -field FileHandle
 
@@ -96,8 +97,6 @@ This member is reserved for future use. This member is defined for Windows Vista
 
 ## -remarks
 
-Note that when a key is restored, only the last component of the path can be changed.
-
 The REG_REFRESH_HIVE flag is opaque and a filter should not attempt to change it.
 
 For more information about registry filtering operations, see <a href="/windows-hardware/drivers/kernel/filtering-registry-calls">Filtering Registry Calls</a>.
@@ -109,3 +108,4 @@ For more information about registry filtering operations, see <a href="/windows-
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-ex_callback_function">RegistryCallback</a>
+

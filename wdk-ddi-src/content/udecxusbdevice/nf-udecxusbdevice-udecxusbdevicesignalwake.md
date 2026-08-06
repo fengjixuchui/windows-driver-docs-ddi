@@ -4,7 +4,6 @@ title: UdecxUsbDeviceSignalWake function (udecxusbdevice.h)
 description: Initiates wake up from a low link power state for a virtual USB 2.0 device.
 old-location: buses\udecxusbdevicesignalwake.htm
 tech.root: usbref
-ms.assetid: BF8C1D85-6C88-4F4C-ADDB-CCE603D420F2
 ms.date: 05/07/2018
 keywords: ["UdecxUsbDeviceSignalWake function"]
 ms.keywords: UdecxUsbDeviceSignalWake, UdecxUsbDeviceSignalWake function [Buses], buses.udecxusbdevicesignalwake, udecxusbdevice/UdecxUsbDeviceSignalWake
@@ -51,9 +50,9 @@ Initiates wake up from a low link power state for a virtual USB 2.0 device.
 
 ## -parameters
 
-### -param UdecxUsbDevice 
+### -param UdecxUsbDevice [in]
 
-[in]
+
 A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.
 
 ## -remarks

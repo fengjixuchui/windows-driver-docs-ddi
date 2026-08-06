@@ -4,7 +4,6 @@ title: NtSetInformationEnlistment function (wdm.h)
 description: The ZwSetInformationEnlistment routine sets information for a specified enlistment object.
 old-location: kernel\zwsetinformationenlistment.htm
 tech.root: kernel
-ms.assetid: c87547b0-a16e-48b5-91ca-c414c5317ac6
 ms.date: 04/30/2018
 keywords: ["NtSetInformationEnlistment function"]
 ms.keywords: NtSetInformationEnlistment, ZwSetInformationEnlistment, ZwSetInformationEnlistment routine [Kernel-Mode Driver Architecture], kernel.zwsetinformationenlistment, ktm_ref_3e37f795-0826-43df-bb96-14f1031437da.xml, wdm/NtSetInformationEnlistment, wdm/ZwSetInformationEnlistment
@@ -38,7 +37,6 @@ api_type:
 api_location:
  - NtosKrnl.exe
 api_name:
- - ZwSetInformationEnlistment
  - NtSetInformationEnlistment
 ---
 
@@ -51,26 +49,26 @@ The <b>ZwSetInformationEnlistment</b> routine sets information for a specified <
 
 ## -parameters
 
-### -param EnlistmentHandle 
+### -param EnlistmentHandle [in]
 
-[in]
+
 A handle to an enlistment object that was obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment">ZwCreateEnlistment</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a>. The handle must have ENLISTMENT_SET_INFORMATION access to the object.
 
-### -param EnlistmentInformationClass 
+### -param EnlistmentInformationClass [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_enlistment_information_class">ENLISTMENT_INFORMATION_CLASS</a>-typed enumeration value that specifies the type of information to be set. This value must be <b>EnlistmentRecoveryInformation</b>.
 
 The enumeration's <b>EnlistmentBasicInformation</b> and <b>EnlistmentFullInformation</b> values are not used with <b>ZwSetInformationEnlistment</b>.
 
-### -param EnlistmentInformation 
+### -param EnlistmentInformation [in]
 
-[in]
+
 A pointer to a caller-allocated buffer that contains caller-defined recovery information for the enlistment.
 
-### -param EnlistmentInformationLength 
+### -param EnlistmentInformationLength [in]
 
-[in]
+
 The length, in bytes, of the buffer that the <i>EnlistmentInformation</i> parameter points to.
 
 ## -returns
@@ -173,3 +171,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntqueryinformationenlistment">ZwQueryInformationEnlistment</a>
+

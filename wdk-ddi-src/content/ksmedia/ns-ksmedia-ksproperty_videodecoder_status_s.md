@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_112
+UID: NS:ksmedia.KSPROPERTY_VIDEODECODER_STATUS_S
 title: KSPROPERTY_VIDEODECODER_STATUS_S (ksmedia.h)
 description: The KSPROPERTY_VIDEODECODER_STATUS_S structure describes the present status of a video decoding device, such as number of lines in the incoming analog signal and whether the signal is locked in.
 old-location: stream\ksproperty_videodecoder_status_s.htm
 tech.root: stream
-ms.assetid: 12b92834-dcab-4723-91e5-9b7ab0bdd719
 ms.date: 04/23/2018
 keywords: ["KSPROPERTY_VIDEODECODER_STATUS_S structure"]
 ms.keywords: "*PKSPROPERTY_VIDEODECODER_STATUS_S, KSPROPERTY_VIDEODECODER_STATUS_S, KSPROPERTY_VIDEODECODER_STATUS_S structure [Streaming Media Devices], PKSPROPERTY_VIDEODECODER_STATUS_S, PKSPROPERTY_VIDEODECODER_STATUS_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_VIDEODECODER_STATUS_S, ksmedia/PKSPROPERTY_VIDEODECODER_STATUS_S, stream.ksproperty_videodecoder_status_s, vidcapstruct_c030337a-0c67-4848-84cb-109367a78e07.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_VIDEODECODER_STATUS_S
  - KSPROPERTY_VIDEODECODER_STATUS_S
 ---
 
@@ -54,7 +54,7 @@ The KSPROPERTY_VIDEODECODER_STATUS_S structure describes the present status of a
 
 ### -field Property
 
-Specifies an initialized <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+Specifies an initialized <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 ### -field NumberOfLines
 
@@ -70,8 +70,9 @@ The KSPROPERTY_VIDEODECODER_STATUS_S structure retrieves information about the v
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
 <a href="/windows-hardware/drivers/stream/ksproperty-videodecoder-status">KSPROPERTY_VIDEODECODER_STATUS</a>
+

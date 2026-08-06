@@ -4,7 +4,6 @@ title: PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTCB (d3dumddi.h)
 description: The pfnWaitForSynchronizationObjectCb function inserts a wait for the specified synchronization objects in the specified context DMA stream.
 old-location: display\pfnwaitforsynchronizationobjectcb.htm
 tech.root: display
-ms.assetid: d33ca665-897d-4e99-b9a6-b794127fecfd
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTCB callback function"]
 ms.keywords: D3Druntime_Functions_14f8a273-a662-41d3-b79b-1c779c5853a1.xml, PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTCB, PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTCB callback, d3dumddi/pfnWaitForSynchronizationObjectCb, display.pfnwaitforsynchronizationobjectcb, pfnWaitForSynchronizationObjectCb, pfnWaitForSynchronizationObjectCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnWaitForSynchronizationObjectCb
-product:
- - Windows
+ - PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTCB
 ---
 
 # PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTCB callback function
@@ -56,7 +53,7 @@ The <b>pfnWaitForSynchronizationObjectCb</b> function inserts a wait for the spe
 
 A handle to a display device (that is, the graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -86,3 +83,4 @@ For a code example of how to use the <b>pfnWaitForSynchronizationObjectCb</b> fu
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddicb_waitforsynchronizationobject">D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT</a>
+

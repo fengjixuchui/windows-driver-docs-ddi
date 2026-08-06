@@ -4,7 +4,6 @@ title: wiasReadPropFloat function (wiamdef.h)
 description: The wiasReadPropFloat function retrieves a floating-point property value from a WIA item.
 old-location: image\wiasreadpropfloat.htm
 tech.root: image
-ms.assetid: 042ef9d9-a980-41eb-a396-e03658ea072a
 ms.date: 05/03/2018
 keywords: ["wiasReadPropFloat function"]
 ms.keywords: image.wiasreadpropfloat, wiamdef/wiasReadPropFloat, wiasFncs_9b143e96-64a5-4de3-b40d-c542bc440dc0.xml, wiasReadPropFloat, wiasReadPropFloat function [Imaging Devices]
@@ -50,23 +49,23 @@ The <b>wiasReadPropFloat </b>function retrieves a floating-point property value 
 
 ## -parameters
 
-### -param pWiasContext 
+### -param pWiasContext [in]
 
-[in]
+
 Pointer to a WIA item context.
 
 ### -param propid
 
 Specifies the property identifier.
 
-### -param pfVal 
+### -param pfVal [out]
 
-[out]
+
 Pointer to a memory location that receives the floating-point value of the property.
 
-### -param pfValOld 
+### -param pfValOld [out, optional]
 
-[out, optional]
+
 Pointer to a memory location that receives the former floating-point value of the property. If this information is not needed, set this parameter to <b>NULL</b>.
 
 ### -param bMustExist

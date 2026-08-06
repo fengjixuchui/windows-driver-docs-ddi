@@ -4,7 +4,6 @@ title: PFND3DDDI_CLOSEADAPTER (d3dumddi.h)
 description: The CloseAdapter function releases resources for a graphics adapter object.
 old-location: display\closeadapter.htm
 tech.root: display
-ms.assetid: 9dc7f71a-753d-41ca-8eaa-bff6536e834f
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CLOSEADAPTER callback function"]
 ms.keywords: CloseAdapter, CloseAdapter callback function [Display Devices], PFND3DDDI_CLOSEADAPTER, PFND3DDDI_CLOSEADAPTER callback, UserModeDisplayDriver_Functions_ccc1793f-15b1-480f-8835-38326b749308.xml, d3dumddi/CloseAdapter, display.closeadapter
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - CloseAdapter
-product:
- - Windows
+ - PFND3DDDI_CLOSEADAPTER
 ---
 
 # PFND3DDDI_CLOSEADAPTER callback function
@@ -81,3 +78,4 @@ Before <b>CloseAdapter</b> closes the graphics adapter object, all of the displa
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_openadapter">OpenAdapter</a>
+

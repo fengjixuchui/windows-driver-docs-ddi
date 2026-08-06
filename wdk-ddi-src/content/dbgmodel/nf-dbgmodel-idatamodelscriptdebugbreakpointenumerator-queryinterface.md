@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelScriptDebugBreakpointEnumerator.QueryInterface
 title: IDataModelScriptDebugBreakpointEnumerator::QueryInterface (dbgmodel.h)
-description: Retrieves pointers to the supported interfaces on an object. This method calls IUnknown::AddRef on the pointer it returns.
-ms.assetid: d44a0cdb-77d2-4208-b780-bd9662577dc5
+description: "The IDataModelScriptDebugBreakpointEnumerator::QueryInterface method retrieves pointers to the supported interfaces on an object."
 ms.date: 09/10/2018
 keywords: ["IDataModelScriptDebugBreakpointEnumerator::QueryInterface"]
 ms.keywords: IDataModelScriptDebugBreakpointEnumerator::QueryInterface, QueryInterface, IDataModelScriptDebugBreakpointEnumerator.QueryInterface, IDataModelScriptDebugBreakpointEnumerator::QueryInterface, IDataModelScriptDebugBreakpointEnumerator.QueryInterface
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelScriptDebugBreakpointEnumerator.QueryInterface
+ - IDataModelScriptDebugBreakpointEnumerator::QueryInterface
 ---
 
 # IDataModelScriptDebugBreakpointEnumerator::QueryInterface
@@ -69,3 +68,4 @@ Standard COM method.
 ## -see-also
 
 [IDataModelScriptDebugBreakpointEnumerator interface](nn-dbgmodel-idatamodelscriptdebugbreakpointenumerator.md)
+

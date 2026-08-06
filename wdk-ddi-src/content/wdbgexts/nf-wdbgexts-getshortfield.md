@@ -4,7 +4,6 @@ title: GetShortField function (wdbgexts.h)
 description: The GetShortField function reads the value of a member in a structure if its size is less than or equal to 8 bytes, or initializes a structure so it can be read later.
 old-location: debugger\getshortfield.htm
 tech.root: debugger
-ms.assetid: f5f00e88-b758-4f37-9fe5-5db8f20835b1
 ms.date: 05/03/2018
 keywords: ["GetShortField function"]
 ms.keywords: GetShortField, GetShortField function [Windows Debugging], WdbgExts_Ref_ef67af78-e72f-440c-9ef3-d84b8cca12dc.xml, debugger.getshortfield, wdbgexts/GetShortField
@@ -50,9 +49,9 @@ The <b>GetShortField</b> function reads the value of a member in a structure if 
 
 ## -parameters
 
-### -param TypeAddress 
+### -param TypeAddress [in]
 
-[in]
+
 The meaning of this parameter depends on the value of <i>StoreAddress</i>.
 
 
@@ -69,9 +68,9 @@ Specifies the address of the structure in the target's memory.  This address is 
 
 <i>TypeAddress</i> is ignored.  The value of <i>TypeAddress</i> from the last call when <i>StoreAddress</i> was non-zero is used to specify the address of the structure in the target's memory.
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 The meaning of this parameter depends on the value of <i>StoreAddress</i>.
 
 
@@ -88,9 +87,9 @@ Specifies the name of the type of the structure at <i>TypeAddress</i>.
 
 Specifies the name of the member in the structure to read.  The address and type of the structure are remembered from a previous call to this function with <i>StoreAddress</i> not equal to zero.  Submembers can be specified by using a period-separated path, for example, "myfield.mysubfield".
 
-### -param StoreAddress 
+### -param StoreAddress [in]
 
-[in]
+
 Specifies the mode of this function.
 
 
@@ -150,7 +149,7 @@ This function does not need to be called directly.  The macros <a href="/previou
 <div> </div>
 The <b>ReadField</b> and <b>ReadFieldStr</b> macros read a field whose size is less than 8 bytes from a structure initialized with <a href="/previous-versions/ff550953(v=vs.85)">InitTypeRead</a> or <a href="/previous-versions/ff550957(v=vs.85)">InitTypeReadPhysical</a>. 
 
-<pre class="syntax" xml:space="preserve"><code>#define ReadField(Field) \
+<pre class="syntax"><code>#define ReadField(Field) \
     GetShortField(0, #Field, 0)
 
 #define ReadFieldStr(FieldStr) \
@@ -180,7 +179,7 @@ If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are w
 
 The <a href="/previous-versions/ff550953(v=vs.85)">InitTypeRead</a> macro initializes a structure so that its members can be read using <a href="/previous-versions/ff553539(v=vs.85)">ReadField</a>.
 
-<pre class="syntax" xml:space="preserve"><code>#define InitTypeRead(
+<pre class="syntax"><code>#define InitTypeRead(
     Addr,
     Type
 );</code></pre>
@@ -200,7 +199,7 @@ If this macro succeeds, it returns the value zero.  If it fails because the call
 
 The <b>InitTypeReadPhysical</b> and <b>InitTypeStrReadPhysical</b> macros initialize a structure in physical memory so that its members can be read using <a href="/previous-versions/ff553539(v=vs.85)">ReadField</a>.
 
-<pre class="syntax" xml:space="preserve"><code>#define InitTypeReadPhysical(
+<pre class="syntax"><code>#define InitTypeReadPhysical(
     Addr,
     Type,
     TypeStr
@@ -225,7 +224,7 @@ If this macro succeeds, it returns the value zero.  If it fails because the call
 
 The <a href="/previous-versions/ff550953(v=vs.85)">InitTypeRead</a> macro initializes a structure so that its members can be read using <a href="/previous-versions/ff553539(v=vs.85)">ReadField</a>.
 
-<pre class="syntax" xml:space="preserve"><code>#define InitTypeRead(
+<pre class="syntax"><code>#define InitTypeRead(
     Addr,
     TypeStr
 );</code></pre>

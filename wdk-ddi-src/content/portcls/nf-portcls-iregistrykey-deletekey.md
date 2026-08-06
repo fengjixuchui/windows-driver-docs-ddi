@@ -4,7 +4,6 @@ title: IRegistryKey::DeleteKey (portcls.h)
 description: The DeleteKey method deletes the registry key.
 old-location: audio\iregistrykey_deletekey.htm
 tech.root: audio
-ms.assetid: 2930b049-7572-4ee5-bef1-fd4485e5f644
 ms.date: 05/08/2018
 keywords: ["IRegistryKey::DeleteKey"]
 ms.keywords: DeleteKey, DeleteKey method [Audio Devices], DeleteKey method [Audio Devices],IRegistryKey interface, IRegistryKey interface [Audio Devices],DeleteKey method, IRegistryKey.DeleteKey, IRegistryKey::DeleteKey, audio.iregistrykey_deletekey, audmp-routines_b5556b44-0bf4-47d2-8bbd-65d12c393341.xml, portcls/IRegistryKey::DeleteKey
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IRegistryKey.DeleteKey
+ - IRegistryKey::DeleteKey
 ---
 
 # IRegistryKey::DeleteKey
@@ -83,3 +82,4 @@ A caller deletes an <b>IRegistryKey</b> object's registry key by calling the <co
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-zwdeletekey">ZwDeleteKey</a>
+

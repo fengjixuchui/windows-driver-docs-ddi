@@ -4,7 +4,6 @@ title: EVT_UCX_USBDEVICE_DISABLE (ucxusbdevice.h)
 description: The client driver's implementation that UCX calls to release controller resources associated with the device and its default endpoint.
 old-location: buses\evt_ucx_usbdevice_disable.htm
 tech.root: usbref
-ms.assetid: 85aa1d5e-e660-4fd7-a58d-8d32bbd966f2
 ms.date: 05/07/2018
 keywords: ["EVT_UCX_USBDEVICE_DISABLE callback function"]
 ms.keywords: EVT_UCX_USBDEVICE_DISABLE, EVT_UCX_USBDEVICE_DISABLE callback, EvtUcxUsbDeviceDisable, EvtUcxUsbDeviceDisable callback function [Buses], PEVT_UCX_USBDEVICE_DISABLE, PEVT_UCX_USBDEVICE_DISABLE callback function pointer [Buses], buses.evt_ucx_usbdevice_disable, ucxusbdevice/EvtUcxUsbDeviceDisable
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ucxusbdevice.h
 api_name:
- - PEVT_UCX_USBDEVICE_DISABLE
+ - EVT_UCX_USBDEVICE_DISABLE
 ---
 
 # EVT_UCX_USBDEVICE_DISABLE callback function
@@ -50,14 +49,14 @@ The client driver's implementation that UCX calls to release controller resource
 
 ## -parameters
 
-### -param UcxController 
+### -param UcxController [in]
 
-[in]
+
  A handle to the UCX controller that the client driver received in a previous call to  the <a href="/previous-versions/windows/hardware/drivers/mt188033(v=vs.85)">UcxControllerCreate</a> method.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A structure of type <a href="/windows-hardware/drivers/ddi/ucxusbdevice/ns-ucxusbdevice-_usbdevice_disable">USBDEVICE_DISABLE</a>.
 
 ## -remarks
@@ -101,7 +100,7 @@ UsbDevice_EvtUcxUsbDeviceDisable(
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ucxusbdevice/nf-ucxusbdevice-ucxusbdevicecreate">UcxUsbDeviceCreate</a>
+

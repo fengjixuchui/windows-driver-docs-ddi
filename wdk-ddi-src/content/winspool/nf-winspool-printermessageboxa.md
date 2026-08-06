@@ -1,15 +1,13 @@
 ---
 UID: NF:winspool.PrinterMessageBoxA
 title: PrinterMessageBoxA function (winspool.h)
-description: 
-old-location: print\printermessageboxa.htm
+description: This topic describes the PrinterMessageBoxA function.
 tech.root: print
-ms.assetid: 6C238FF8-1EBC-4E3B-9184-D82F5A39DA2F
-ms.date: 04/20/2018
+ms.date: 04/20/2022
 keywords: ["PrinterMessageBoxA function"]
 ms.keywords: PrinterMessageBoxA, PrinterMessageBoxA function [Print Devices], print.printermessageboxa, winspool/PrinterMessageBoxA
 req.header: winspool.h
-req.include-header: 
+req.include-header: Winspool.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -30,6 +28,8 @@ req.typenames:
 f1_keywords:
  - PrinterMessageBoxA
  - winspool/PrinterMessageBoxA
+ - PrinterMessageBox
+ - winspool/PrinterMessageBox
 topic_type:
  - APIRef
  - kbSyntax
@@ -39,32 +39,39 @@ api_location:
  - Winspool.h
 api_name:
  - PrinterMessageBoxA
+ - PrinterMessageBox
 ---
-
-# PrinterMessageBoxA function
-
 
 ## -description
 
+This topic describes the **PrinterMessageBoxA** function.
+
 ## -parameters
 
-### -param hPrinter 
+### -param hPrinter [in]
 
-[in]
+Defines the **HANDLE** parameter *hPrinter*.
 
 ### -param Error
 
-### -param hWnd 
+Defines the **DWORD** parameter *Error*.
 
-[in]
+### -param hWnd [in]
 
-### -param pText 
+Defines the **HWND** parameter *hWnd*.
 
-[in]
+### -param pText [in]
 
-### -param pCaption 
+Defines the **LPSTR** parameter *pText*.
 
-[in]
+### -param pCaption [in]
+
+Defines the **LPSTR** parameter *pCaption*.
 
 ### -param dwType
 
+Defines the **DWORD** parameter *dwType*.
+
+## -returns
+
+DWORD

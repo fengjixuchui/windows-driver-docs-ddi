@@ -4,7 +4,6 @@ title: _ISCSI_TargetPortalGroup (iscsidef.h)
 description: The ISCSI_TargetPortalGroup structure provides a definition of a target portal group.
 old-location: storage\iscsi_targetportalgroup.htm
 tech.root: storage
-ms.assetid: 28f48224-90b8-45f5-b69d-6bb6a34f64e0
 ms.date: 03/29/2018
 keywords: ["ISCSI_TargetPortalGroup structure"]
 ms.keywords: "*PISCSI_TargetPortalGroup, ISCSI_TargetPortalGroup, ISCSI_TargetPortalGroup structure [Storage Devices], PISCSI_TargetPortalGroup, PISCSI_TargetPortalGroup structure pointer [Storage Devices], _ISCSI_TargetPortalGroup, iscsidef/ISCSI_TargetPortalGroup, iscsidef/PISCSI_TargetPortalGroup, storage.iscsi_targetportalgroup, structs-iSCSI_27b8d554-5021-49d0-837c-302e7ac033ed.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsidef.h
 api_name:
+ - _ISCSI_TargetPortalGroup
+ - PISCSI_TargetPortalGroup
  - ISCSI_TargetPortalGroup
 ---
 
@@ -69,3 +70,4 @@ A variable-length array of <a href="/windows-hardware/drivers/ddi/iscsidef/ns-is
 
 
 <a href="/windows-hardware/drivers/storage/iscsi-targetportalgroup-wmi-class">ISCSI_TargetPortalGroup WMI Class</a>
+

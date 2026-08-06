@@ -4,7 +4,6 @@ title: MINIPORT_WDI_START_ADAPTER_OPERATION (dot11wdi.h)
 description: The MiniportWdiStartAdapterOperation handler function can be used by the IHV driver to perform any additional MiniportInitializeEx tasks.
 old-location: netvista\miniportwdistartoperation.htm
 tech.root: netvista
-ms.assetid: B74F44E4-AD7A-46EE-81B0-E2BD2FB79A5B
 ms.date: 05/02/2018
 keywords: ["MINIPORT_WDI_START_ADAPTER_OPERATION callback function"]
 ms.keywords: "(*MINIPORT_WDI_START_OPERATION_HANDLER), (*MINIPORT_WDI_START_OPERATION_HANDLER) callback function [Network Drivers Starting with Windows Vista], MINIPORT_WDI_START_ADAPTER_OPERATION, MINIPORT_WDI_START_ADAPTER_OPERATION callback, MiniportWdiStartAdapterOperation, MiniportWdiStartAdapterOperation callback function [Network Drivers Starting with Windows Vista], dot11wdi/MiniportWdiStartAdapterOperation, netvista.miniportwdistartoperation"
@@ -38,13 +37,16 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
- - (*MINIPORT_WDI_START_OPERATION_HANDLER)
+ - MINIPORT_WDI_START_ADAPTER_OPERATION
 ---
 
 # MINIPORT_WDI_START_ADAPTER_OPERATION callback function
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The MiniportWdiStartAdapterOperation handler function can be used by the IHV driver to perform any additional <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a> tasks. The IHV miniport can also use it as a hint that the Microsoft component has finished initializing the miniport and the miniport can start any needed background activities.
 
@@ -54,9 +56,9 @@ This is an optional WDI miniport handler inside <a href="/windows-hardware/drive
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 The handle to the context area that the miniport driver allocated.
 
 ## -returns
@@ -99,3 +101,4 @@ An appropriate NDIS_STATUS code in the case of a failure.
 
 
 <a href="/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_ndis_miniport_driver_wdi_characteristics">NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS</a>
+

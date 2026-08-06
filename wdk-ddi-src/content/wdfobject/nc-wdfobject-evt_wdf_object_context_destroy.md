@@ -4,7 +4,6 @@ title: EVT_WDF_OBJECT_CONTEXT_DESTROY (wdfobject.h)
 description: A driver's EvtDestroyCallback event callback function performs operations that are associated with the deletion of a framework object.
 old-location: wdf\evtdestroycallback.htm
 tech.root: wdf
-ms.assetid: 4c3b08d2-bb25-40bd-b2fc-1b9ea2d452b3
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_OBJECT_CONTEXT_DESTROY callback function"]
 ms.keywords: DFGenObjectRef_a9194b33-b67b-43bb-8d50-d918576769c0.xml, EVT_WDF_OBJECT_CONTEXT_DESTROY, EVT_WDF_OBJECT_CONTEXT_DESTROY callback, EvtDestroyCallback, EvtDestroyCallback callback function, kmdf.evtdestroycallback, wdf.evtdestroycallback, wdfobject/EvtDestroyCallback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfobject.h
 api_name:
- - EvtDestroyCallback
+ - EVT_WDF_OBJECT_CONTEXT_DESTROY
 ---
 
 # EVT_WDF_OBJECT_CONTEXT_DESTROY callback function
@@ -52,9 +51,9 @@ A driver's <i>EvtDestroyCallback</i> event callback function performs operations
 
 ## -parameters
 
-### -param Object 
+### -param Object [in]
 
-[in]
+
 A handle to a framework object.
 
 ## -remarks
@@ -65,7 +64,7 @@ The framework calls the <i>EvtDestroyCallback</i> callback function after the ob
 
 The <i>EvtDestroyCallback</i> can access the object context but cannot call any methods on the object.
 
-If a driver supplies both an <a href="/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup">EvtCleanupCallback</a> callback function and an <i>EvtDestroyCallback</i> callback function for a object, the framework calls the <i>EvtCleanupCallback</i> callback function first.
+If a driver supplies both an <a href="/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup">EvtCleanupCallback</a> callback function and an <i>EvtDestroyCallback</i> callback function for an object, the framework calls the <i>EvtCleanupCallback</i> callback function first.
 
 When an object is deleted, the framework also deletes the object's children. The framework calls the child objects' <a href="/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup">EvtCleanupCallback</a> callback functions before calling the parent object's <i>EvtCleanupCallback</i> callback function. Next, if the child's reference count is zero, the framework calls the child object's <i>EvtDestroyCallback</i> callback function. Finally, if the parent's reference count is zero, the framework calls the parent object's <i>EvtDestroyCallback</i> callback function.
 
@@ -141,3 +140,4 @@ EVT_WDF_OBJECT_CONTEXT_DESTROY
 
 
 <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a>
+

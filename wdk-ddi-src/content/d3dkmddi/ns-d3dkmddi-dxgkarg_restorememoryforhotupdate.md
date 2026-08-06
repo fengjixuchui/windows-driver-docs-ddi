@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGKARG_RESTOREMEMORYFORHOTUPDATE
 title: DXGKARG_RESTOREMEMORYFORHOTUPDATE
 description: Arguments used to restore memory for driver hot update.
 tech.root: display
-ms.assetid: 758482bb-b832-4749-9a3b-17670fc65156
 ms.date: 04/04/2019
 keywords: ["DXGKARG_RESTOREMEMORYFORHOTUPDATE structure"]
 ms.keywords: DXGKARG_RESTOREMEMORYFORHOTUPDATE, DXGKARG_RESTOREMEMORYFORHOTUPDATE,
@@ -34,6 +33,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_RESTOREMEMORYFORHOTUPDATE
  - DXGKARG_RESTOREMEMORYFORHOTUPDATE
 dev_langs:
  - c++
@@ -48,13 +48,13 @@ Arguments used to restore memory for driver hot update.
 
 ## -struct-fields
 
-### -field Flags
+### -field Flags [in]
 
-[in] A [DXGK_RESTOREMEMORYFORHOTUPDATEFLAGS](ns-d3dkmddi-dxgk_restorememoryforhotupdateflags.md) structure. When the flag is set, all other input data is set to NULL. The driver can delete all memory, allocated during restore operation.
+A [DXGK_RESTOREMEMORYFORHOTUPDATEFLAGS](ns-d3dkmddi-dxgk_restorememoryforhotupdateflags.md) structure. When the flag is set, all other input data is set to NULL. The driver can delete all memory, allocated during restore operation.
 
-### -field pDataMdl
+### -field pDataMdl [in]
 
-[in] The MDL (memory descriptor list), which describes the memory pages to restore.
+The MDL (memory descriptor list), which describes the memory pages to restore.
 
 If the driver returns STATUS_SUCCESS from this function, the driver assumes the ownership of the MDL. The driver can keep the pointer to the MDL until it is no longer used. After that the driver must free the MDL pages and the MDL itself by calling [MmFreePagesFromMdl(pDataMdl)](../wdm/nf-wdm-mmfreepagesfrommdl.md) and [ExFreePool(pDataMdl)](../wdm/nf-wdm-exfreepool.md).
 
@@ -74,15 +74,16 @@ pBuffer = MmMapLockedPagesSpecifyCache(
 pBuffer = MmGetSystemAddressForMdlSafe(pMdl, NormalPagePriority | MdlMappingNoExecute);
 ```
 
-### -field MetaDataSize
+### -field MetaDataSize [in]
 
-[in] The number of bytes in the buffer that *pMetaData* points to.
+The number of bytes in the buffer that *pMetaData* points to.
 
-### -field pMetaData
+### -field pMetaData [in]
 
  
-[in] A virtual memory pointer to the metadata that is associated with the memory block.
+A virtual memory pointer to the metadata that is associated with the memory block.
 
 ## -remarks
 
 ## -see-also
+

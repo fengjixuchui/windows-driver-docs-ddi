@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddscsi._NV_FEATURE_PARAMETER
-title: _NV_FEATURE_PARAMETER (ntddscsi.h)
+title: NV_FEATURE_PARAMETER (ntddscsi.h)
 description: The NV_FEATURE_PARAMETER structure is used in conjunction with the IOCTL_SCSI_MINIPORT_NVCACHE request to get NV Cache Manager feature support information from the device.
 old-location: storage\nv_feature_parameter.htm
 tech.root: storage
-ms.assetid: 06b07b50-577c-4762-aea6-38bd1ada8973
 ms.date: 03/29/2018
 keywords: ["NV_FEATURE_PARAMETER structure"]
 ms.keywords: "*PNV_FEATURE_PARAMETER, NV_FEATURE_PARAMETER, NV_FEATURE_PARAMETER structure [Storage Devices], PNV_FEATURE_PARAMETER, PNV_FEATURE_PARAMETER structure pointer [Storage Devices], _NV_FEATURE_PARAMETER, ntddscsi/NV_FEATURE_PARAMETER, ntddscsi/PNV_FEATURE_PARAMETER, storage.nv_feature_parameter, structs-nvcache_ac844d4b-783b-4248-8699-353eef5a3d52.xml"
@@ -42,17 +41,19 @@ api_type:
 api_location:
  - ntddscsi.h
 api_name:
+ - _NV_FEATURE_PARAMETER
+ - PNV_FEATURE_PARAMETER
  - NV_FEATURE_PARAMETER
 ---
 
-# _NV_FEATURE_PARAMETER structure
+# NV_FEATURE_PARAMETER structure
 
 
 ## -description
 
-The NV_FEATURE_PARAMETER structure is used in conjunction with the <a href="/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_miniport_nvcache">IOCTL_SCSI_MINIPORT_NVCACHE</a> request to get NV Cache Manager feature support information from the device. The NV Cache Manager feature parameters structure is returned by the miniport driver upon the successful return from the NRB_NVCACHE_INFO function, as requested in the Function field of the <a href="/windows-hardware/drivers/ddi/ntddscsi/ns-ntddscsi-_nvcache_request_block">NVCACHE_REQUEST_BLOCK</a> structure.
+The NV_FEATURE_PARAMETER structure is used in conjunction with the [**IOCTL_SCSI_MINIPORT_NVCACHE**](./ni-ntddscsi-ioctl_scsi_miniport_nvcache.md) request to get NV Cache Manager feature support information from the device. The NV Cache Manager feature parameters structure is returned by the miniport driver upon the successful return from the NRB_NVCACHE_INFO function, as requested in the Function field of the [**NVCACHE_REQUEST_BLOCK**](./ns-ntddscsi-_nvcache_request_block.md) structure.
 
-The values in these fields come from the IDENTIFY DEVICE command in section 7.16 of the <a href="https://go.microsoft.com/fwlink/p/?linkid=74996">ATA8-ACS specification</a>.
+The values in these fields come from the IDENTIFY DEVICE command in section 7.16 of the ATA8-ACS specification.
 
 ## -struct-fields
 
@@ -98,4 +99,7 @@ Taken from word 219, bits 0 through 7 of the IDENTIFY DEVICE data, this field co
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddscsi/ns-ntddscsi-_nvcache_request_block">NVCACHE_REQUEST_BLOCK</a>
+[**IOCTL_SCSI_MINIPORT_NVCACHE**](./ni-ntddscsi-ioctl_scsi_miniport_nvcache.md)
+
+[**NVCACHE_REQUEST_BLOCK**](./ns-ntddscsi-_nvcache_request_block.md)
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:ntddk.IoDecrementKeepAliveCount
 title: IoDecrementKeepAliveCount function (ntddk.h)
-description: The IoDecrementKeepAliveCount routine decrements a reference count associated with an Windows app on a specific device.
+description: The IoDecrementKeepAliveCount routine decrements a reference count associated with a Windows app on a specific device.
 old-location: kernel\iodecrementkeepalivecount.htm
 tech.root: kernel
-ms.assetid: 2A8BC777-291C-4EC4-8EF9-AA78C6295700
 ms.date: 04/30/2018
 keywords: ["IoDecrementKeepAliveCount function"]
 ms.keywords: IoDecrementKeepAliveCount, IoDecrementKeepAliveCount routine [Kernel-Mode Driver Architecture], kernel.iodecrementkeepalivecount, ntddk/IoDecrementKeepAliveCount
@@ -46,18 +45,18 @@ api_name:
 
 ## -description
 
-The <b>IoDecrementKeepAliveCount</b> routine decrements a reference count associated with an Windows app on a specific device. This routine is called by a kernel mode driver when the app's I/O process has completed.  If the app's reference count drops to 0, Windows can suspend the app.
+The <b>IoDecrementKeepAliveCount</b> routine decrements a reference count associated with a Windows app on a specific device. This routine is called by a kernel mode driver when the app's I/O process has completed.  If the app's reference count drops to 0, Windows can suspend the app.
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in, out]
 
-[in, out]
+
 The file object handle to the device.
 
-### -param Process 
+### -param Process [in, out]
 
-[in, out]
+
 The process associated with the device.
 
 ## -returns

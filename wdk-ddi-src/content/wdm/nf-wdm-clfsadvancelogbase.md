@@ -4,7 +4,6 @@ title: ClfsAdvanceLogBase function (wdm.h)
 description: The ClfsAdvanceLogBase routine sets the base LSN of a CLFS stream.
 old-location: kernel\clfsadvancelogbase.htm
 tech.root: kernel
-ms.assetid: 00f776f7-83c5-4856-a1d3-8b76122d3986
 ms.date: 04/30/2018
 keywords: ["ClfsAdvanceLogBase function"]
 ms.keywords: ClfsAdvanceLogBase, ClfsAdvanceLogBase routine [Kernel-Mode Driver Architecture], Clfs_d8f1a522-ef50-47fe-bd39-f18f2f176a3b.xml, kernel.clfsadvancelogbase, wdm/ClfsAdvanceLogBase
@@ -51,19 +50,19 @@ The <b>ClfsAdvanceLogBase</b> routine sets the base LSN of a CLFS stream.
 
 ## -parameters
 
-### -param pvMarshalContext 
+### -param pvMarshalContext [in, out]
 
-[in, out]
+
 A pointer to an opaque context that represents a marshalling area associated with a CLFS stream. The caller previously obtained this pointer by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfscreatemarshallingarea">ClfsCreateMarshallingArea</a>.
 
-### -param plsnBase 
+### -param plsnBase [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_lsn">CLFS_LSN</a> structure that contains the new base LSN. This parameter must be the LSN of one of the records in the stream. Also, this parameter must be greater than or equal to the stream's current base LSN and less than or equal to the stream's current last LSN.
 
-### -param fFlags 
+### -param fFlags [in]
 
-[in]
+
 This parameter is reserved for system use. Callers must set this parameter to zero.
 
 ## -returns

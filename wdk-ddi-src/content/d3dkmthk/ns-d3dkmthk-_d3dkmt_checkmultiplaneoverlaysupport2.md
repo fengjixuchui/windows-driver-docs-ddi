@@ -1,9 +1,8 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT2
-title: _D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT2 (d3dkmthk.h)
-description: Check for multiplane overlay support.
-ms.assetid: be3459f5-1d74-46d5-b8a6-b8709fd189e4
-ms.date: 10/19/2018
+title: D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT2 (d3dkmthk.h)
+description: Learn more about the D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT2 structure.
+ms.date: 10/05/2023
 keywords: ["D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT2 structure"]
 ms.keywords: _D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT2, D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT2,
 req.header: d3dkmthk.h
@@ -35,45 +34,43 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT2
+ - D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT2
 dev_langs:
  - c++
 ---
 
-# _D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT2 structure
-
+# D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT2 structure
 
 ## -description
 
-Check for multiplane overlay support.
+The **D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT2** structure is passed to [**D3DKMTCheckMultiPlaneOverlaySupport2**](nf-d3dkmthk-d3dkmtcheckmultiplaneoverlaysupport2.md) to check for multiplane overlay support.
 
 ## -struct-fields
 
 ### -field hAdapter
 
-A handle to the graphics adapter.
+[in] A handle to the graphics adapter.
 
 ### -field hDevice
 
-A handle to the device.
+[in] A handle to the device.
 
 ### -field PlaneCount
 
-The number of resources to pin.
+[in] The number of overlay planes that **pOverlayPlanes** points to.
 
 ### -field pOverlayPlanes
 
-Array of pointers to overlay planes.
+[in] Pointer to an array of [**D3DKMT_CHECK_MULTIPLANE_OVERLAY_PLANE2**](ns-d3dkmthk-_d3dkmt_check_multiplane_overlay_plane2.md) structures that describe the overlay planes.
 
 ### -field Supported
 
-Indicates support.
+[out] Boolean value that indicates support.
 
 ### -field ReturnInfo
 
- 
-The return info.
-
-## -remarks
+[out] A [**D3DKMT_CHECK_MULTIPLANE_OVERLAY_SUPPORT_RETURN_INFO**](ns-d3dkmthk-d3dkmt_check_multiplane_overlay_support_return_info.md) structure in which details are returned when **Supported** is FALSE.
 
 ## -see-also
 
+[**D3DKMTCheckMultiPlaneOverlaySupport2**](nf-d3dkmthk-d3dkmtcheckmultiplaneoverlaysupport2.md)

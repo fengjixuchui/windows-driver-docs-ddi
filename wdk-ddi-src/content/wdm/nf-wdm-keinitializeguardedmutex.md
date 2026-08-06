@@ -4,7 +4,6 @@ title: KeInitializeGuardedMutex function (wdm.h)
 description: The KeInitializeGuardedMutex routine initializes a guarded mutex.
 old-location: kernel\keinitializeguardedmutex.htm
 tech.root: kernel
-ms.assetid: 28d45b36-c20d-40a5-bdf9-5fb754e36e74
 ms.date: 04/30/2018
 keywords: ["KeInitializeGuardedMutex function"]
 ms.keywords: KeInitializeGuardedMutex, KeInitializeGuardedMutex routine [Kernel-Mode Driver Architecture], k105_e9686411-583c-43bb-b7e6-b5248bed72f8.xml, kernel.keinitializeguardedmutex, wdm/KeInitializeGuardedMutex
@@ -50,9 +49,9 @@ The <b>KeInitializeGuardedMutex</b> routine initializes a guarded mutex.
 
 ## -parameters
 
-### -param Mutex 
+### -param Mutex [out]
 
-[out]
+
 Pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">KGUARDED_MUTEX</a> structure to initialize. The storage must be 4-byte aligned on 32-bit platforms, and 8-byte aligned on 64-bit platforms.
 
 ## -remarks

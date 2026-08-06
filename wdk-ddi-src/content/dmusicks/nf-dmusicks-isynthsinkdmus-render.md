@@ -4,7 +4,6 @@ title: ISynthSinkDMus::Render (dmusicks.h)
 description: The Render method renders wave data into a destination sink.
 old-location: audio\isynthsinkdmus_render.htm
 tech.root: audio
-ms.assetid: 731abdaf-f84b-4d4b-a6e0-ee11899fba27
 ms.date: 05/08/2018
 keywords: ["ISynthSinkDMus::Render"]
 ms.keywords: ISynthSinkDMus interface [Audio Devices],Render method, ISynthSinkDMus.Render, ISynthSinkDMus::Render, Render, Render method [Audio Devices], Render method [Audio Devices],ISynthSinkDMus interface, audio.isynthsinkdmus_render, audmp-routines_ada0270e-6234-4508-a323-f4bdaee295ce.xml, dmusicks/ISynthSinkDMus::Render
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dmusicks.h
 api_name:
- - ISynthSinkDMus.Render
+ - ISynthSinkDMus::Render
 ---
 
 # ISynthSinkDMus::Render
@@ -50,19 +49,19 @@ The <code>Render</code> method renders wave data into a destination sink.
 
 ## -parameters
 
-### -param pBuffer 
+### -param pBuffer [in]
 
-[in]
+
 Pointer to the buffer that the synth sink wants data written to
 
-### -param dwLength 
+### -param dwLength [in]
 
-[in]
+
 Specifies the length (in bytes) of the data to be rendered.
 
-### -param llPosition 
+### -param llPosition [in]
 
-[in]
+
 Specifies the position (in bytes) in the PCM buffer at which to begin rendering. Rendering continues from this position for the number of bytes specified in <i>dwLength</i>.
 
 ## -remarks

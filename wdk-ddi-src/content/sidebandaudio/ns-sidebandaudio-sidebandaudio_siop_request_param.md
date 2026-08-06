@@ -1,9 +1,8 @@
 ---
-UID: NS:sidebandaudio.__unnamed_union_1
+UID: NS:sidebandaudio.SIDEBANDAUDIO_SIOP_REQUEST_PARAM
 title: SIDEBANDAUDIO_SIOP_REQUEST_PARAM (sidebandaudio.h)
-description: Describes the variable I/O parameter.
-ms.assetid: 02dcc788-480c-44d9-811f-56ac20077ffa
-ms.date: 09/07/2018
+description: The SIDEBANDAUDIO_SIOP_REQUEST_PARAM structure describes the variable SIOP request parameter.
+ms.date: 07/21/2023
 keywords: ["SIDEBANDAUDIO_SIOP_REQUEST_PARAM structure"]
 ms.keywords: SIDEBANDAUDIO_SIOP_REQUEST_PARAM, SIDEBANDAUDIO_SIOP_REQUEST_PARAM, *PSIDEBANDAUDIO_SIOP_REQUEST_PARAM,
 req.header: sidebandaudio.h
@@ -34,15 +33,15 @@ api_type:
 api_location:
  - sidebandaudio.h
 api_name:
+ - PSIDEBANDAUDIO_SIOP_REQUEST_PARAM
  - SIDEBANDAUDIO_SIOP_REQUEST_PARAM
 ---
 
 # SIDEBANDAUDIO_SIOP_REQUEST_PARAM structure
 
-
 ## -description
 
-Describes the variable I/O parameter.
+The **SIDEBANDAUDIO_SIOP_REQUEST_PARAM** structure describes the variable SIOP request parameter.
 
 ## -struct-fields
 
@@ -52,15 +51,24 @@ Describes the variable I/O parameter.
 
 ### -field RequestedSiop
 
-TBD
+The requested SIOP in the form of a [SIDEBANDAUDIO_IO_PARAM_HEADER structure](ns-sidebandaudio-sidebandaudio_io_param_header.md).
 
 ### -field Alignment
 
-TBD
+Allows for byte alignment.
+
+## -union-fields
 
 ## -remarks
 
+## -requirements
+
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Header** | sidebandaudio.h |
+
 ## -see-also
 
-[sidebandaudio.h](index.md)
+[SIDEBANDAUDIO_IO_PARAM_HEADER structure](ns-sidebandaudio-sidebandaudio_io_param_header.md)
 
+[sidebandaudio.h](index.md)

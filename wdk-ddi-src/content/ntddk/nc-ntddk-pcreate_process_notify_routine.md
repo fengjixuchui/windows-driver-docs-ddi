@@ -4,7 +4,6 @@ title: PCREATE_PROCESS_NOTIFY_ROUTINE (ntddk.h)
 description: Process-creation callback implemented by a driver to track the system-wide creation and deletion of processes against the driver's internal state.
 old-location: kernel\pcreate_process_notify_routine.htm
 tech.root: kernel
-ms.assetid: 2C5B3C90-04A9-48CF-9162-0E069A483C5F
 ms.date: 04/30/2018
 keywords: ["PCREATE_PROCESS_NOTIFY_ROUTINE callback function"]
 ms.keywords: PCREATE_PROCESS_NOTIFY_ROUTINE, PCREATE_PROCESS_NOTIFY_ROUTINE callback, SetCreateProcessNotifyRoutine, SetCreateProcessNotifyRoutine callback function [Kernel-Mode Driver Architecture], kernel.pcreate_process_notify_routine, ntddk/SetCreateProcessNotifyRoutine
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ntddk.h
 api_name:
- - SetCreateProcessNotifyRoutine
+ - PCREATE_PROCESS_NOTIFY_ROUTINE
 ---
 
 # PCREATE_PROCESS_NOTIFY_ROUTINE callback function
@@ -47,23 +46,25 @@ api_name:
 ## -description
 
 Process-creation callback implemented by a driver  to track the system-wide creation and deletion of processes against the driver's internal state.
-<div class="alert"><b>Warning</b>  The actions that  you can perform in this routine are restricted for safe calls. See <a href="/windows-hardware/drivers/kernel/windows-kernel-mode-process-and-thread-manager#best">Best Practices</a>. </div><div> </div>
+
+> [!WARNING]
+> The actions that you can perform in this routine are restricted for safe calls. See <a href="/windows-hardware/drivers/kernel/windows-kernel-mode-process-and-thread-manager#best">Best Practices</a>.
 
 ## -parameters
 
-### -param ParentId 
+### -param ParentId [in]
 
-[in]
+
 The process ID of the parent process.
 
-### -param ProcessId 
+### -param ProcessId [in]
 
-[in]
+
 The process ID of the process.
 
-### -param Create 
+### -param Create [in]
 
-[in]
+
 Indicates whether the process was created (<b>TRUE</b>) or deleted (<b>FALSE</b>).
 
 ## -remarks
@@ -77,3 +78,4 @@ A driver's process-notify routine is also called with <i>Create</i> set to <b>FA
 ## -see-also
 
 <b>PsSetCreateProcessNotifyRoutine</b>
+

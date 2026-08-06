@@ -4,7 +4,6 @@ title: EVT_WDF_DMA_TRANSACTION_CONFIGURE_DMA_CHANNEL (wdfdmatransaction.h)
 description: A driver's EvtDmaTransactionConfigureDmaChannel event callback function configures the DMA adapter for a system-mode DMA enabler.
 old-location: wdf\evtdmatransactionconfiguredmachannel.htm
 tech.root: wdf
-ms.assetid: 405D1D3F-FC01-4223-8E28-B3FD3F0516F7
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DMA_TRANSACTION_CONFIGURE_DMA_CHANNEL callback function"]
 ms.keywords: EVT_WDF_DMA_TRANSACTION_CONFIGURE_DMA_CHANNEL, EVT_WDF_DMA_TRANSACTION_CONFIGURE_DMA_CHANNEL callback, EvtDmaTransactionConfigureDmaChannel, EvtDmaTransactionConfigureDmaChannel callback function, kmdf.evtdmatransactionconfiguredmachannel, wdf.evtdmatransactionconfiguredmachannel, wdfdmatransaction/EvtDmaTransactionConfigureDmaChannel
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfDmaTransaction.h
 api_name:
- - EvtDmaTransactionConfigureDmaChannel
+ - EVT_WDF_DMA_TRANSACTION_CONFIGURE_DMA_CHANNEL
 ---
 
 # EVT_WDF_DMA_TRANSACTION_CONFIGURE_DMA_CHANNEL callback function
@@ -53,34 +52,34 @@ api_name:
 
 ## -parameters
 
-### -param DmaTransaction 
+### -param DmaTransaction [in]
 
-[in]
+
 A handle to a DMA transaction object representing the transaction that is being executed.
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to the framework device object that the driver specified when it called <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioncreate">WdfDmaTransactionCreate</a>.
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 The context pointer that the driver specified in a previous call to <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactionsetchannelconfigurationcallback">WdfDmaTransactionSetChannelConfigurationCallback</a>.
 
-### -param Mdl 
+### -param Mdl [in, optional]
 
-[in, optional]
+
 A pointer to a single memory descriptor list (MDL) or MDL chain that describes the buffer associated with the current transfer, or NULL if the last transfer has been completed and the adapter is being freed.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 A byte offset into the buffer specified in the <i>Mdl</i> parameter where the current transfer starts.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The number of bytes being transferred in the current transfer.
 
 ## -returns
@@ -106,3 +105,4 @@ If the driver experiences an error while configuring the channel, it can stop th
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactionsetchannelconfigurationcallback">WdfDmaTransactionSetChannelConfigurationCallback</a>
+

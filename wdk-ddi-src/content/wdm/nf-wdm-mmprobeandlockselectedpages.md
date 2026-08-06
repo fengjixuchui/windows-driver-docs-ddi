@@ -4,7 +4,6 @@ title: MmProbeAndLockSelectedPages function (wdm.h)
 description: The MmProbeAndLockSelectedPages routine probes the selected virtual memory pages, makes them resident, and locks them in memory.
 old-location: kernel\mmprobeandlockselectedpages_.htm
 tech.root: kernel
-ms.assetid: 1DA632FF-FD5F-4C4C-8B8E-5AC26069094A
 ms.date: 04/30/2018
 keywords: ["MmProbeAndLockSelectedPages function"]
 ms.keywords: MmProbeAndLockSelectedPages, MmProbeAndLockSelectedPages , MmProbeAndLockSelectedPages routine [Kernel-Mode Driver Architecture], kernel.mmprobeandlockselectedpages_, wdm/MmProbeAndLockSelectedPages
@@ -50,24 +49,24 @@ The <b>MmProbeAndLockSelectedPages</b> routine probes the selected virtual memor
 
 ## -parameters
 
-### -param MemoryDescriptorList 
+### -param MemoryDescriptorList [in, out]
 
-[in, out]
+
 A pointer to a memory descriptor list (MDL) that specifies a virtual memory buffer. If the routine successfully locks the pages in memory, the MDL is updated to describe the underlying physical pages.
 
-### -param SegmentArray 
+### -param SegmentArray [in]
 
-[in]
+
 A pointer to an array of buffer segments that contain the virtual memory pages.
 
-### -param AccessMode 
+### -param AccessMode [in]
 
-[in]
+
 Specifies the access mode in which to probe the arguments, either KernelMode or UserMode.
 
-### -param Operation 
+### -param Operation [in]
 
-[in]
+
 Specifies the type of operation for which the caller wants the access rights probed and the pages locked. Set this parameter to IoReadAccess, IoWriteAccess, or IoModifyAccess. IoReadAccess indicates that the driver can examine the contents of the buffer but cannot change the contents. IoWriteAccess and IoModifyAccess, which are equivalent, indicate that the driver has both read and write access to the buffer.
 
 ## -remarks

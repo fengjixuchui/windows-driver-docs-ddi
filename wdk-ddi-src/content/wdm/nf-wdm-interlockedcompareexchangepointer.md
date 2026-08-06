@@ -4,7 +4,6 @@ title: InterlockedCompareExchangePointer function (wdm.h)
 description: The InterlockedCompareExchangePointer routine performs an atomic operation that compares the input pointer value pointed to by Destination with the pointer value Comperand.
 old-location: kernel\interlockedcompareexchangepointer.htm
 tech.root: kernel
-ms.assetid: 3b96076f-a7f7-4705-bbee-595ee4d9f789
 ms.date: 04/30/2018
 keywords: ["InterlockedCompareExchangePointer function"]
 ms.keywords: InterlockedCompareExchangePointer, InterlockedCompareExchangePointer routine [Kernel-Mode Driver Architecture], k102_ffaadb46-ece2-40fb-9e87-1c7ea3af275e.xml, kernel.interlockedcompareexchangepointer, wdm/InterlockedCompareExchangePointer
@@ -50,28 +49,27 @@ The <b>InterlockedCompareExchangePointer</b> routine performs an atomic operatio
 
 ## -parameters
 
-### -param Destination 
+### -param Destination [in, out]
 
-[in, out]
-A pointer to a PVOID value. If (*<i>Destination</i>) = <i>Comperand</i>, then the routine sets (*<i>Destination</i>) to <i>Exchange</i>.
+A pointer to a PVOID value. If (**Destination*) = *Comperand*, then the routine sets (**Destination*) to *Exchange*.
 
-### -param Exchange 
+### -param Exchange [in]
 
-[in]
-Specifies the PVOID value to set (*<i>Destination</i>) to.
 
-### -param Comperand
+Specifies the PVOID value to set (**Destination*) to.
 
-[in]
-Specifies the PVOID value to compare with (*<i>Destination</i>).
+### -param Comperand [in]
+
+
+Specifies the PVOID value to compare with (**Destination*).
 
 ## -returns
 
-<b>InterlockedCompareExchangePointer</b> returns the original value of the pointer at *<i>Destination</i> (that is, the value of this pointer at entry to the routine).
+<b>InterlockedCompareExchangePointer</b> returns the original value of the pointer at **Destination* (that is, the value of this pointer at entry to the routine).
 
 ## -remarks
 
-If <i>Comperand</i> is equal to *<i>Destination</i>, then *<i>Destination</i> is set to equal <i>Exchange</i>. Otherwise, *<i>Destination</i> is unchanged.
+If <i>Comperand</i> is equal to **Destination*, then **Destination* is set to equal <i>Exchange</i>. Otherwise, **Destination* is unchanged.
 
 <b>InterlockedCompareExchangePointer</b> provides a fast, atomic way to synchronize the testing and updating of a pointer variable that is shared by multiple threads. If the input value pointed to by <i>Destination</i> equals the value of <i>Comperand</i>, the value pointed to by <i>Destination</i> is set to the value of <i>Exchange</i>.
 

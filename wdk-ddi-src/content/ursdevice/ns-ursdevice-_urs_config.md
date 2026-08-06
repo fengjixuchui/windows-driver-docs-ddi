@@ -4,7 +4,6 @@ title: _URS_CONFIG (ursdevice.h)
 description: Contains pointers to event callback functions implemented by the URS client driver for a USB dual-role controller. Initialize this structure by calling URS_CONFIG_INIT.
 old-location: buses\urs_config.htm
 tech.root: usbref
-ms.assetid: 3857CA53-6992-410A-96D1-EEA9CC586EDF
 ms.date: 05/07/2018
 keywords: ["URS_CONFIG structure"]
 ms.keywords: "*PURS_CONFIG, PURS_CONFIG, PURS_CONFIG structure pointer [Buses], URS_CONFIG, URS_CONFIG structure [Buses], _URS_CONFIG, buses.urs_config, ursdevice/PURS_CONFIG, ursdevice/URS_CONFIG"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ursdevice.h
 api_name:
+ - _URS_CONFIG
+ - PURS_CONFIG
  - URS_CONFIG
 ---
 
@@ -77,3 +78,4 @@ A pointer to an <a href="/windows-hardware/drivers/ddi/ursdevice/nc-ursdevice-ev
 
 
 <a href="/windows-hardware/drivers/ddi/ursdevice/nf-ursdevice-ursdeviceinitialize">UrsDeviceInitialize</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILUMTSMRL
 title: RILUMTSMRL (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILUMTSMRL structure for internal use only. Don't use this structure in your code."
 old-location: netvista\rilumtsmrl_2.htm
 tech.root: netvista
-ms.assetid: 38235a1e-c9fd-4d4d-96a2-18559e4cf655
 ms.date: 02/26/2018
 keywords: ["RILUMTSMRL structure"]
 ms.keywords: "*LPRILUMTSMRL, RILUMTSMRL, RILUMTSMRL structure [Network Drivers Starting with Windows Vista], netvista.rilumtsmrl_2, rilapitypes/RILUMTSMRL"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: RILUMTSMRL, *LPRILUMTSMRL
-req.product: Windows 10 or later.
 f1_keywords:
  - RILUMTSMRL
  - rilapitypes/RILUMTSMRL
@@ -42,6 +40,7 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILUMTSMRL
+ - LPRILUMTSMRL
 ---
 
 # RILUMTSMRL structure (rilapitypes.h)

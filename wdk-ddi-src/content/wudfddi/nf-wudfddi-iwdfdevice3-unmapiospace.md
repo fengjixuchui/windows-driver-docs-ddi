@@ -4,7 +4,6 @@ title: IWDFDevice3::UnmapIoSpace (wudfddi.h)
 description: The UnmapIoSpace method unmaps a specified range of physical addresses previously mapped by MapIoSpace method.
 old-location: wdf\iwdfdevice3_unmapiospace.htm
 tech.root: wdf
-ms.assetid: E95AC8E6-222A-4C88-8EBD-6BD7F22B9F18
 ms.date: 02/26/2018
 keywords: ["IWDFDevice3::UnmapIoSpace"]
 ms.keywords: IWDFDevice3 interface,UnmapIoSpace method, IWDFDevice3.UnmapIoSpace, IWDFDevice3::UnmapIoSpace, UnmapIoSpace, UnmapIoSpace method, UnmapIoSpace method,IWDFDevice3 interface, umdf.iwdfdevice3_unmapiospace, wdf.iwdfdevice3_unmapiospace, wudfddi/IWDFDevice3::UnmapIoSpace
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice3.UnmapIoSpace
+ - IWDFDevice3::UnmapIoSpace
 ---
 
 # IWDFDevice3::UnmapIoSpace
@@ -52,14 +51,14 @@ The <b>UnmapIoSpace</b> method unmaps a specified range of physical addresses pr
 
 ## -parameters
 
-### -param PseudoBaseAddress 
+### -param PseudoBaseAddress [in]
 
-[in]
+
 Pointer to the pseudo base address obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice3-mapiospace">MapIoSpace</a> method to which the physical address range was mapped.
 
-### -param NumberOfBytes 
+### -param NumberOfBytes [in]
 
-[in]
+
 Specifies the number of bytes that were mapped.
 
 ## -remarks
@@ -78,3 +77,4 @@ See example code in <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iw
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a>
+

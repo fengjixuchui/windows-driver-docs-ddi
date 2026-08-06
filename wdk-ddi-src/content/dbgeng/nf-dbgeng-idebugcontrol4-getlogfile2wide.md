@@ -4,7 +4,6 @@ title: IDebugControl4::GetLogFile2Wide (dbgeng.h)
 description: The GetLogFile2Wide method returns the name of the currently open log file.
 old-location: debugger\getlogfile2wide.htm
 tech.root: debugger
-ms.assetid: 8c11811f-c3d3-494b-98d7-15540d5afb24
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::GetLogFile2Wide"]
 ms.keywords: GetLogFile2Wide, GetLogFile2Wide method [Windows Debugging], GetLogFile2Wide method [Windows Debugging],IDebugControl4 interface, IDebugControl4 interface [Windows Debugging],GetLogFile2Wide method, IDebugControl4.GetLogFile2Wide, IDebugControl4::GetLogFile2Wide, dbgeng/IDebugControl4::GetLogFile2Wide, debugger.getlogfile2wide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.GetLogFile2Wide
+ - IDebugControl4::GetLogFile2Wide
 ---
 
 # IDebugControl4::GetLogFile2Wide
@@ -50,24 +49,24 @@ The <b>GetLogFile2Wide</b>  method returns the name of the currently open log fi
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Receives the name of the currently open log file.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size, in characters, of the <i>Buffer</i> buffer.
 
-### -param FileSize 
+### -param FileSize [out, optional]
 
-[out, optional]
+
 Receives the size, in characters, of the name of the log file.  If <i>FileSize</i> is <b>NULL</b>, this information is not returned.
 
-### -param Flags 
+### -param Flags [out]
 
-[out]
+
 Receives the bit-flags that were used when opening the log file.  See the <i>Flags</i> parameter of <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol4-openlogfile2">OpenLogFile2</a> for a description of these flags.
 
 ## -returns
@@ -137,3 +136,4 @@ For more information about log files, see <a href="/windows-hardware/drivers/deb
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol4-openlogfile2">OpenLogFile2</a>
+

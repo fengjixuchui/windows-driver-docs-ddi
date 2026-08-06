@@ -1,11 +1,10 @@
 ---
 UID: NF:dbgeng.IDebugSystemObjects3.GetCurrentProcessExecutableName
 title: IDebugSystemObjects3::GetCurrentProcessExecutableName (dbgeng.h)
-description: The GetCurrentProcessExecutableName method returns the name of executable file loaded in the current process.
+description: The GetCurrentProcessExecutableName method returns the name of executable file loaded in the current process. This method belongs to IDebugSystemObjects3.
 old-location: debugger\getcurrentprocessexecutablename.htm
 tech.root: debugger
-ms.assetid: ea968316-a53d-4ab1-966a-5c699ffb8f2a
-ms.date: 05/03/2018
+ms.date: 02/06/2022
 keywords: ["IDebugSystemObjects3::GetCurrentProcessExecutableName"]
 ms.keywords: GetCurrentProcessExecutableName, GetCurrentProcessExecutableName method [Windows Debugging], GetCurrentProcessExecutableName method [Windows Debugging],IDebugSystemObjects interface, GetCurrentProcessExecutableName method [Windows Debugging],IDebugSystemObjects2 interface, GetCurrentProcessExecutableName method [Windows Debugging],IDebugSystemObjects3 interface, GetCurrentProcessExecutableName method [Windows Debugging],IDebugSystemObjects4 interface, IDebugSystemObjects interface [Windows Debugging],GetCurrentProcessExecutableName method, IDebugSystemObjects2 interface [Windows Debugging],GetCurrentProcessExecutableName method, IDebugSystemObjects2::GetCurrentProcessExecutableName, IDebugSystemObjects3 interface [Windows Debugging],GetCurrentProcessExecutableName method, IDebugSystemObjects3.GetCurrentProcessExecutableName, IDebugSystemObjects3::GetCurrentProcessExecutableName, IDebugSystemObjects4 interface [Windows Debugging],GetCurrentProcessExecutableName method, IDebugSystemObjects4::GetCurrentProcessExecutableName, IDebugSystemObjects::GetCurrentProcessExecutableName, IDebugSystemObjects_2659a668-4ecb-44de-b287-b4adc830f8c4.xml, dbgeng/IDebugSystemObjects2::GetCurrentProcessExecutableName, dbgeng/IDebugSystemObjects3::GetCurrentProcessExecutableName, dbgeng/IDebugSystemObjects4::GetCurrentProcessExecutableName, dbgeng/IDebugSystemObjects::GetCurrentProcessExecutableName, debugger.getcurrentprocessexecutablename
 req.header: dbgeng.h
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSystemObjects.GetCurrentProcessExecutableName
- - IDebugSystemObjects2.GetCurrentProcessExecutableName
- - IDebugSystemObjects3.GetCurrentProcessExecutableName
- - IDebugSystemObjects4.GetCurrentProcessExecutableName
+ - IDebugSystemObjects3::GetCurrentProcessExecutableName
 ---
 
 # IDebugSystemObjects3::GetCurrentProcessExecutableName
@@ -53,20 +49,20 @@ The <b>GetCurrentProcessExecutableName</b>  method returns the name of executabl
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Receives the name of the executable file.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
-Specifies the size in characters of the buffer <i>Buffer</i>.
 
-### -param ExeSize 
+Specifies the size in characters of the buffer <i>Buffer</i>. This size includes the space for the '\0' terminating character.
 
-[out, optional]
-Receives the size in characters of the name of the executable file.  If <i>ExeSize</i> is <b>NULL</b>, this information is not returned.
+### -param ExeSize [out, optional]
+
+
+Receives the size in characters of the name of the executable file. This size includes the space for the '\0' terminating character. If <i>ExeSize</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
 
@@ -108,3 +104,4 @@ These methods are only available in user-mode debugging.
 If the engine cannot determine the name of the executable file, it writes the string "?NoImage?" to the buffer.
 
 For more information about processes, see <a href="/windows-hardware/drivers/debugger/threads-and-processes">Threads and Processes</a>.
+

@@ -4,7 +4,6 @@ title: PcRegisterSubdevice function (portcls.h)
 description: The PcRegisterSubdevice function registers a subdevice to make it available for use by clients.
 old-location: audio\pcregistersubdevice.htm
 tech.root: audio
-ms.assetid: 97461adf-053b-484b-9425-b23ac6deb1bd
 ms.date: 05/08/2018
 keywords: ["PcRegisterSubdevice function"]
 ms.keywords: PcRegisterSubdevice, PcRegisterSubdevice function [Audio Devices], audio.pcregistersubdevice, audpc-routines_ba884bcc-8193-4434-9747-d2bce0156eb8.xml, portcls/PcRegisterSubdevice
@@ -51,19 +50,19 @@ The <b>PcRegisterSubdevice</b> function registers a subdevice to make it availab
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the adapter driver's device object. This is a system structure of type <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a>.
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 Pointer to a null-terminated Unicode string that specifies the name of the subdevice. The string buffer that the <i>Name</i> parameter points to must remain valid for the lifetime of the device object. The string contains a short name that distinguishes the subdevice from any other subdevices registered on the same device. Each of the device's subdevices must have a unique name.
 
-### -param Unknown 
+### -param Unknown [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iport">IPort</a> interface of the port driver object that is bound to the subdevice.
 
 ## -returns

@@ -4,7 +4,6 @@ title: _WHEA_ERROR_SOURCE_DESCRIPTOR (ntddk.h)
 description: The WHEA_ERROR_SOURCE_DESCRIPTOR structure describes an error source.
 old-location: whea\whea_error_source_descriptor.htm
 tech.root: whea
-ms.assetid: 59ee6d51-c60a-4a71-b831-1b9437a69d34
 ms.date: 02/20/2018
 keywords: ["WHEA_ERROR_SOURCE_DESCRIPTOR structure"]
 ms.keywords: "*PWHEA_ERROR_SOURCE_DESCRIPTOR, PWHEA_ERROR_SOURCE_DESCRIPTOR, PWHEA_ERROR_SOURCE_DESCRIPTOR structure pointer [WHEA Drivers and Applications], WHEA_ERROR_SOURCE_DESCRIPTOR, WHEA_ERROR_SOURCE_DESCRIPTOR structure [WHEA Drivers and Applications], _WHEA_ERROR_SOURCE_DESCRIPTOR, ntddk/PWHEA_ERROR_SOURCE_DESCRIPTOR, ntddk/WHEA_ERROR_SOURCE_DESCRIPTOR, whea.whea_error_source_descriptor, whearef_eb6a1167-cf15-4a53-b885-c3d5c4353510.xml"
@@ -43,6 +42,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_ERROR_SOURCE_DESCRIPTOR
+ - PWHEA_ERROR_SOURCE_DESCRIPTOR
  - WHEA_ERROR_SOURCE_DESCRIPTOR
 ---
 
@@ -161,6 +162,8 @@ A <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_generic_error_desc
 
 ### -field Info.GenErrDescriptorV2
 
+A [WHEA_GENERIC_ERROR_DESCRIPTOR_V2](ns-ntddk-whea_generic_error_descriptor_v2.md) structure.
+
 ### -field Info.DeviceDriverDescriptor
 
 A [WHEA_DEVICE_DRIVER_DESCRIPTOR](ns-ntddk-whea_device_driver_descriptor.md) structure.
@@ -258,3 +261,4 @@ A user-mode WHEA management application can control the error sources in the sys
 
 
 <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_xpf_nmi_descriptor">WHEA_XPF_NMI_DESCRIPTOR</a>
+

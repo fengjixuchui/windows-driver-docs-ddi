@@ -4,7 +4,6 @@ title: StorPortFreeMdl function (storport.h)
 description: The StorPortFreeMdl routine frees a memory descriptor list (MDL) describing non-paged pool memory.
 old-location: storage\storportfreemdl.htm
 tech.root: storage
-ms.assetid: 5cbdda76-c02d-4fd4-8fa9-a783375ea292
 ms.date: 03/29/2018
 keywords: ["StorPortFreeMdl function"]
 ms.keywords: StorPortFreeMdl, StorPortFreeMdl routine [Storage Devices], storage.storportfreemdl, storport/StorPortFreeMdl, storprt_c7f2c49d-a04e-428c-8c94-4ba20526a1fe.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ The <b>StorPortFreeMdl</b> routine frees a memory descriptor list (MDL) describi
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param Mdl 
+### -param Mdl [in]
 
-[in]
+
 A pointer to the MDL to be freed.
 
 ## -returns

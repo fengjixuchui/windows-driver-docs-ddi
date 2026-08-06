@@ -1,13 +1,12 @@
 ---
 UID: NC:ntddk._WHEA_ERROR_SOURCE_RECOVER
-title: _WHEA_ERROR_SOURCE_RECOVER
-description: 
-tech.root: 
-ms.assetid: 4af06800-2c68-4f0f-8774-96486a84bb9b
-ms.date: 08/19/2019
+title: WHEA_ERROR_SOURCE_RECOVER
+description: WHEA_ERROR_SOURCE_RECOVER is reserved for system use.
+tech.root: whea
+ms.date: 01/19/2023
 keywords: ["WHEA_ERROR_SOURCE_RECOVER callback function"]
 req.header: ntddk.h
-req.include-header: 
+req.include-header: Ntddk.h
 req.target-type: 
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -24,7 +23,6 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 targetos: Windows
-ms.custom: 19H1
 f1_keywords:
  - _WHEA_ERROR_SOURCE_RECOVER
  - ntddk/_WHEA_ERROR_SOURCE_RECOVER
@@ -36,12 +34,7 @@ api_location:
  - ntddk.h
 api_name:
  - _WHEA_ERROR_SOURCE_RECOVER
-product:
- - Windows
 ---
-
-# _WHEA_ERROR_SOURCE_RECOVER callback function
-
 
 ## -description
 
@@ -49,9 +42,9 @@ Reserved for system use.
 
 ## -parameters
 
-### -param RecoveryContext: 
+### -param RecoveryContext
 
-### -param Severity: 
+### -param Severity
 
 ## -returns
 
@@ -60,4 +53,3 @@ Reserved for system use.
 ## -remarks
 
 ## -see-also
-

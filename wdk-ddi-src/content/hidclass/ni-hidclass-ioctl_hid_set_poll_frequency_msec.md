@@ -4,7 +4,6 @@ title: IOCTL_HID_SET_POLL_FREQUENCY_MSEC (hidclass.h)
 description: The IOCTL_HID_SET_POLL_FREQUENCY_MSEC request sets the polling frequency, in milliseconds, for a top-level collection.
 old-location: hid\ioctl_hid_set_poll_frequency_msec.htm
 tech.root: hid
-ms.assetid: 308c07da-8528-4219-ae48-5d20438a183c
 ms.date: 04/30/2018
 keywords: ["IOCTL_HID_SET_POLL_FREQUENCY_MSEC IOCTL"]
 ms.keywords: IOCTL_HID_SET_POLL_FREQUENCY_MSEC, IOCTL_HID_SET_POLL_FREQUENCY_MSEC control, IOCTL_HID_SET_POLL_FREQUENCY_MSEC control code [Human Input Devices], hid.ioctl_hid_set_poll_frequency_msec, hidclass/IOCTL_HID_SET_POLL_FREQUENCY_MSEC, hidioreq_6492a059-8c30-440f-ae98-95d071545408.xml
@@ -57,6 +56,8 @@ Polling may be limited if there are multiple top-level collections.
 For general information about HIDClass devices, see <a href="/windows-hardware/drivers/hid/hid-collections">HID Collections</a>.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

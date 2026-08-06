@@ -4,7 +4,6 @@ title: _SCSI_PASS_THROUGH_DIRECT (ntddscsi.h)
 description: The SCSI_PASS_THROUGH_DIRECT structure is used in conjunction with an IOCTL_SCSI_PASS_THROUGH_DIRECT request to instruct the port driver to send an embedded SCSI command to the target device.
 old-location: storage\scsi_pass_through_direct.htm
 tech.root: storage
-ms.assetid: 306babe7-393f-4b4a-9d8a-4c973cb3eaa2
 ms.date: 03/29/2018
 keywords: ["SCSI_PASS_THROUGH_DIRECT structure"]
 ms.keywords: "*PSCSI_PASS_THROUGH_DIRECT, PSCSI_PASS_THROUGH_DIRECT, PSCSI_PASS_THROUGH_DIRECT structure pointer [Storage Devices], SCSI_PASS_THROUGH_DIRECT, SCSI_PASS_THROUGH_DIRECT structure [Storage Devices], _SCSI_PASS_THROUGH_DIRECT, ntddscsi/PSCSI_PASS_THROUGH_DIRECT, ntddscsi/SCSI_PASS_THROUGH_DIRECT, storage.scsi_pass_through_direct, structs-scsibus_64c46eef-e5bc-4e81-a479-2bdbd93605e7.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddscsi.h
 api_name:
+ - _SCSI_PASS_THROUGH_DIRECT
+ - PSCSI_PASS_THROUGH_DIRECT
  - SCSI_PASS_THROUGH_DIRECT
 ---
 
@@ -130,3 +131,4 @@ The members of SCSI_PASS_THROUGH_DIRECT correspond roughly to the members of a [
 [SCSI_PASS_THROUGH](./ns-ntddscsi-_scsi_pass_through.md)
 
 [SCSI_REQUEST_BLOCK](../srb/ns-srb-_scsi_request_block.md)
+

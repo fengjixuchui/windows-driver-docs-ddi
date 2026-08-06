@@ -4,7 +4,6 @@ title: IMiniportAudioEngineNode::SetGfxState (portcls.h)
 description: Sets the state of the global effects (GFX) node in the audio engine.
 old-location: audio\iminiportaudioenginenode_setgfxstate.htm
 tech.root: audio
-ms.assetid: B073D354-14FB-477E-BBD7-8BD282696EF4
 ms.date: 05/08/2018
 keywords: ["IMiniportAudioEngineNode::SetGfxState"]
 ms.keywords: IMiniportAudioEngineNode interface [Audio Devices],SetGfxState method, IMiniportAudioEngineNode.SetGfxState, IMiniportAudioEngineNode::SetGfxState, SetGfxState, SetGfxState method [Audio Devices], SetGfxState method [Audio Devices],IMiniportAudioEngineNode interface, audio.iminiportaudioenginenode_setgfxstate, portcls/IMiniportAudioEngineNode::SetGfxState
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportAudioEngineNode.SetGfxState
+ - IMiniportAudioEngineNode::SetGfxState
 ---
 
 # IMiniportAudioEngineNode::SetGfxState
@@ -50,14 +49,14 @@ Sets the state of the global effects (GFX) node in the audio engine.
 
 ## -parameters
 
-### -param ulNodeId 
+### -param ulNodeId [in]
 
-[in]
+
 The ID of the GFX node.
 
-### -param bEnable 
+### -param bEnable [in]
 
-[in]
+
 The state of the GFX node.
 
 ## -returns
@@ -67,3 +66,4 @@ The state of the GFX node.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportaudioenginenode">IMiniportAudioEngineNode</a>
+

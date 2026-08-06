@@ -4,7 +4,6 @@ title: KeSetSystemAffinityThreadEx function (wdm.h)
 description: The KeSetSystemAffinityThreadEx routine sets the system affinity of the current thread.
 old-location: kernel\kesetsystemaffinitythreadex.htm
 tech.root: kernel
-ms.assetid: db7980c1-3da6-408e-a3a4-509bc9c0ef2e
 ms.date: 04/30/2018
 keywords: ["KeSetSystemAffinityThreadEx function"]
 ms.keywords: KeSetSystemAffinityThreadEx, KeSetSystemAffinityThreadEx routine [Kernel-Mode Driver Architecture], k105_7718d4aa-a4f5-44ff-9663-c5f91810644f.xml, kernel.kesetsystemaffinitythreadex, wdm/KeSetSystemAffinityThreadEx
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <= DISPATCH_LEVEL (see Remarks section).
+req.irql: <= DISPATCH_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>KeSetSystemAffinityThreadEx</b> routine sets the system affinity of the c
 
 ## -parameters
 
-### -param Affinity 
+### -param Affinity [in]
 
-[in]
+
 A [**KAFFINITY**](/windows-hardware/drivers/kernel/interrupt-affinity-and-priority#about-kaffinity)-typed variable that specifies the new system affinity of the current thread.
 
 ## -returns

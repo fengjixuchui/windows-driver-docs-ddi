@@ -1,9 +1,8 @@
 ---
 UID: NC:winppi.EMFPLAYPROC
 title: EMFPLAYPROC (winppi.h)
-description: 
-ms.assetid: 3c04887d-df3a-4084-965f-ac007e984aad
-ms.date: 10/19/2018
+description: "Learn more about: EMFPLAYPROC callback function"
+ms.date: 11/18/2020
 keywords: ["EMFPLAYPROC callback function"]
 req.header: winppi.h
 req.include-header: 
@@ -24,6 +23,7 @@ req.assembly:
 req.type-library: 
 targetos: Windows
 ms.custom: RS5
+tech.root: print
 f1_keywords:
  - EMFPLAYPROC
  - winppi/EMFPLAYPROC
@@ -35,22 +35,19 @@ api_location:
  - winppi.h
 api_name:
  - EMFPLAYPROC
-product:
- - Windows
 ---
 
 # EMFPLAYPROC callback function
-
 
 ## -description
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
-### -param Arg2
+### -param unnamedParam2
 
-### -param Arg3
+### -param unnamedParam3
 
 ## -returns
 
@@ -76,4 +73,3 @@ int Emfplayproc
 ## -remarks
 
 ## -see-also
-

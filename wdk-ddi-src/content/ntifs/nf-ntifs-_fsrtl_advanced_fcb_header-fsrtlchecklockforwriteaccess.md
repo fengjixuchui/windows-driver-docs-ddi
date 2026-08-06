@@ -4,7 +4,6 @@ title: FsRtlCheckLockForWriteAccess function (ntifs.h)
 description: The FsRtlCheckLockForWriteAccess routine determines whether the process associated with a given IRP has write access to a locked region of a file.
 old-location: ifsk\fsrtlchecklockforwriteaccess.htm
 tech.root: ifsk
-ms.assetid: 549da751-6a28-4d54-995f-dabb9e29ab09
 ms.date: 04/16/2018
 keywords: ["FsRtlCheckLockForWriteAccess function"]
 ms.keywords: FsRtlCheckLockForWriteAccess, FsRtlCheckLockForWriteAccess routine [Installable File System Drivers], fsrtlref_460451fb-37b9-4c7e-bf53-8d72c7e73a55.xml, ifsk.fsrtlchecklockforwriteaccess, ntifs/FsRtlCheckLockForWriteAccess
@@ -53,14 +52,14 @@ The <b>FsRtlCheckLockForWriteAccess</b> routine determines whether the process a
 
 ## -parameters
 
-### -param FileLock 
+### -param FileLock [in]
 
-[in]
+
 Pointer to the FILE_LOCK structure for the file. This structure must have been initialized by a previous call to <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlallocatefilelock">FsRtlAllocateFileLock</a> or <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializefilelock">FsRtlInitializeFileLock</a>.
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Pointer to the IRP. Must be an IRP for a write operation.
 
 ## -returns

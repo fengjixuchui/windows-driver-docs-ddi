@@ -4,7 +4,6 @@ title: RemoveHeadList function (wdm.h)
 description: The RemoveHeadList routine removes an entry from the beginning of a doubly linked list of LIST_ENTRY structures.
 old-location: kernel\removeheadlist.htm
 tech.root: kernel
-ms.assetid: 8748451c-3e57-4acf-b1e6-b80fe7f461d8
 ms.date: 04/30/2018
 keywords: ["RemoveHeadList function"]
 ms.keywords: RemoveHeadList, RemoveHeadList routine [Kernel-Mode Driver Architecture], k109_f16481a9-4fd3-4b81-9fd3-aa77b20f9873.xml, kernel.removeheadlist, wdm/RemoveHeadList
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level (See Remarks section)
+req.irql: Any level (see Remarks section)
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>RemoveHeadList</b> routine removes an entry from the beginning of a doubl
 
 ## -parameters
 
-### -param ListHead 
+### -param ListHead [in, out]
 
-[in, out]
+
 Pointer to the <a href="/windows/win32/api/ntdef/ns-ntdef-list_entry">LIST_ENTRY</a> structure that serves as the list header.
 
 ## -returns

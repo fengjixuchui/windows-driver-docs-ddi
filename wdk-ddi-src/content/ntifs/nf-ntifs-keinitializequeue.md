@@ -4,7 +4,6 @@ title: KeInitializeQueue function (ntifs.h)
 description: The KeInitializeQueue routine initializes a queue object on which threads can wait for entries.
 old-location: ifsk\keinitializequeue.htm
 tech.root: ifsk
-ms.assetid: 8dd47333-679a-482b-bd45-1e73505b3fea
 ms.date: 04/16/2018
 keywords: ["KeInitializeQueue function"]
 ms.keywords: KeInitializeQueue, KeInitializeQueue routine [Installable File System Drivers], ifsk.keinitializequeue, keref_85ea0829-c42c-4411-8ad9-a32d8eb0a40f.xml, ntifs/KeInitializeQueue
@@ -50,9 +49,9 @@ The <b>KeInitializeQueue</b> routine initializes a queue object on which threads
 
 ## -parameters
 
-### -param Queue 
+### -param Queue [out]
 
-[out]
+
 Pointer to a KQUEUE structure for which the caller must provide resident storage in nonpaged pool. This structure is defined as follows:
 
 
@@ -123,9 +122,9 @@ Pointer to the first entry in the thread list.
 </tr>
 </table>
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 The maximum number of threads for which the waits on the queue object can be satisfied concurrently. If this parameter is not supplied, the number of processors in the machine is used.
 
 ## -remarks

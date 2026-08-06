@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols2.GetModuleByOffset
 title: IDebugSymbols2::GetModuleByOffset (dbgeng.h)
-description: The GetModuleByOffset method searches through the target's modules for one whose memory allocation includes the specified location.
+description: The IDebugSymbols2::GetModuleByOffset method searches through the target's modules for one whose memory allocation includes the specified location.
 old-location: debugger\getmodulebyoffset.htm
 tech.root: debugger
-ms.assetid: ff51d0d1-47f1-4df6-b671-d74f791d778b
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols2::GetModuleByOffset"]
 ms.keywords: GetModuleByOffset, GetModuleByOffset method [Windows Debugging], GetModuleByOffset method [Windows Debugging],IDebugSymbols interface, GetModuleByOffset method [Windows Debugging],IDebugSymbols2 interface, GetModuleByOffset method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],GetModuleByOffset method, IDebugSymbols2 interface [Windows Debugging],GetModuleByOffset method, IDebugSymbols2.GetModuleByOffset, IDebugSymbols2::GetModuleByOffset, IDebugSymbols3 interface [Windows Debugging],GetModuleByOffset method, IDebugSymbols3::GetModuleByOffset, IDebugSymbols::GetModuleByOffset, IDebugSymbols_2f5375ce-a9f1-4e86-ab82-7f35edc716c2.xml, dbgeng/IDebugSymbols2::GetModuleByOffset, dbgeng/IDebugSymbols3::GetModuleByOffset, dbgeng/IDebugSymbols::GetModuleByOffset, debugger.getmodulebyoffset
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.GetModuleByOffset
- - IDebugSymbols2.GetModuleByOffset
- - IDebugSymbols3.GetModuleByOffset
+ - IDebugSymbols2::GetModuleByOffset
 ---
 
 # IDebugSymbols2::GetModuleByOffset
@@ -52,24 +49,24 @@ The <b>GetModuleByOffset</b> method searches through the target's <a href="/wind
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies a location in the target's virtual address space which is inside the desired module's memory allocation -- for example, the address of a symbol belonging to the module.
 
-### -param StartIndex 
+### -param StartIndex [in]
 
-[in]
+
 Specifies the index to start searching from.
 
-### -param Index 
+### -param Index [out, optional]
 
-[out, optional]
+
 Receives the index of the module.  If <i>Index</i> is <b>NULL</b>, this information is not returned.
 
-### -param Base 
+### -param Base [out, optional]
 
-[out, optional]
+
 Receives the location in the target's memory address space of the base of the module.  If <i>Base</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -119,3 +116,4 @@ For more information about modules, see <a href="/windows-hardware/drivers/debug
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

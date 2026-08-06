@@ -4,7 +4,6 @@ title: IPortableDevicePropVariantCollection::Add (portabledevicetypes.h)
 description: Adds an item to the collection.
 old-location: wpddk\iportabledevicepropvariantcollection_add.htm
 tech.root: wpd_dk
-ms.assetid: 38cd7931-f0c4-4905-94b3-3196a40b367c
 ms.date: 02/15/2018
 keywords: ["IPortableDevicePropVariantCollection::Add"]
 ms.keywords: Add, Add method, Add method,IPortableDevicePropVariantCollection interface, IPortableDevicePropVariantCollection interface,Add method, IPortableDevicePropVariantCollection.Add, IPortableDevicePropVariantCollection::Add, IPortableDevicePropVariantCollectionAdd, portabledevicetypes/IPortableDevicePropVariantCollection::Add, wpddk.iportabledevicepropvariantcollection_add
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDevicePropVariantCollection.Add
+ - IPortableDevicePropVariantCollection::Add
 ---
 
 # IPortableDevicePropVariantCollection::Add
@@ -51,9 +50,9 @@ Adds an item to the collection.
 
 ## -parameters
 
-### -param pValue 
+### -param pValue [in]
 
-[in]
+
 Pointer to a new <b>PROPVARIANT</b> object to add to the collection. This method copies the <b>PROPVARIANT</b> to the collection. You can release your local copy of the variable by calling <b>PropVariantClear</b> after calling this method.
 
 ## -returns
@@ -87,3 +86,4 @@ If a caller tries to add an item of a different <b>VARTYPE</b> contained in the 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicepropvariantcollection">IPortableDevicePropVariantCollection Interface</a>
+

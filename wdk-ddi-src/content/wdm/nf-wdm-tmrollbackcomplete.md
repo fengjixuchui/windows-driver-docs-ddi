@@ -4,7 +4,6 @@ title: TmRollbackComplete function (wdm.h)
 description: The TmRollbackComplete routine notifies KTM that the calling resource manager has finished rolling back a transaction's data.
 old-location: kernel\tmrollbackcomplete.htm
 tech.root: kernel
-ms.assetid: 626bae87-8e5c-4d2a-8942-bddb2f6baa6b
 ms.date: 04/30/2018
 keywords: ["TmRollbackComplete function"]
 ms.keywords: TmRollbackComplete, TmRollbackComplete routine [Kernel-Mode Driver Architecture], kernel.tmrollbackcomplete, ktm_ref_57ef03c4-5d49-4871-a1ef-c6083c9680a8.xml, wdm/TmRollbackComplete
@@ -52,14 +51,14 @@ The <b>TmRollbackComplete</b> routine notifies KTM that the calling resource man
 
 ## -parameters
 
-### -param Enlistment 
+### -param Enlistment [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/kernel/enlistment-objects">enlistment object</a>. Your component can receive this pointer as input to a <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-ptm_rm_notification">ResourceManagerNotification</a> callback routine. Alternatively, your component can call <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle">ObReferenceObjectByHandle</a> and supply the object handle that a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment">ZwCreateEnlistment</a>, <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-tmcreateenlistment">TmCreateEnlistment</a>, or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a> provided.
 
-### -param TmVirtualClock 
+### -param TmVirtualClock [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/kernel/using-virtual-clock-values">virtual clock value</a>. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

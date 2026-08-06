@@ -4,7 +4,6 @@ title: TmReferenceEnlistmentKey function (wdm.h)
 description: The TmReferenceEnlistmentKey routine increments the reference count for the key of a specified enlistment object and retrieves the key.
 old-location: kernel\tmreferenceenlistmentkey.htm
 tech.root: kernel
-ms.assetid: c4fd9a56-8743-4099-b261-43c1afc2a5f1
 ms.date: 04/30/2018
 keywords: ["TmReferenceEnlistmentKey function"]
 ms.keywords: TmReferenceEnlistmentKey, TmReferenceEnlistmentKey routine [Kernel-Mode Driver Architecture], kernel.tmreferenceenlistmentkey, ktm_ref_9e57ee05-1004-4d3d-9fa6-9eb473057bbf.xml, wdm/TmReferenceEnlistmentKey
@@ -52,14 +51,14 @@ The <b>TmReferenceEnlistmentKey</b> routine increments the reference count for t
 
 ## -parameters
 
-### -param Enlistment 
+### -param Enlistment [in]
 
-[in]
+
 A pointer to an enlistment object. Your component can receive this pointer as input to a <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-ptm_rm_notification">ResourceManagerNotification</a> callback routine. Alternatively, your component can call <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle">ObReferenceObjectByHandle</a> and supply the object handle that a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment">ZwCreateEnlistment</a>, <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-tmcreateenlistment">TmCreateEnlistment</a>, or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a> provided.
 
-### -param Key 
+### -param Key [out]
 
-[out]
+
 A pointer to a variable that receives the enlistment object's enlistment key. The caller assigns an enlistment key when it calls <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment">ZwCreateEnlistment</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-tmcreateenlistment">TmCreateEnlistment</a>.
 
 ## -returns

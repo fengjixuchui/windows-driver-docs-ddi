@@ -4,14 +4,13 @@ title: DXGKDDI_UNLOAD (dispmprt.h)
 description: The DxgkDdiUnload function frees any resources allocated during execution of the display miniport driver's DriverEntry function.
 old-location: display\dxgkddiunload.htm
 tech.root: display
-ms.assetid: 336fa87a-6c3e-4337-90d9-b0ebeb355e68
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_UNLOAD callback function"]
 ms.keywords: DXGKDDI_UNLOAD, DXGKDDI_UNLOAD callback, DmFunctions_b7f60489-c7e7-4bd1-bf17-ff193bc7d614.xml, DxgkDdiUnload, DxgkDdiUnload callback function [Display Devices], display.dxgkddiunload, dispmprt/DxgkDdiUnload
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dispmprt.h
 api_name:
- - DxgkDdiUnload
+ - DXGKDDI_UNLOAD
 ---
 
 # DXGKDDI_UNLOAD callback function
@@ -57,3 +56,4 @@ Typically, there will be nothing to do in <i>DxgkDdiUnload</i>.
 ## -see-also
 
 <a href="/windows-hardware/drivers/display/driverentry-of-display-miniport-driver">DriverEntry of Display Miniport Driver</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILMESSAGEINFO
 title: RILMESSAGEINFO (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILMESSAGEINFO structure for internal use only. Don't use the RILMESSAGEINFO structure in your code."
 old-location: netvista\rilmessageinfo.htm
 tech.root: netvista
-ms.assetid: 689b4abc-13ee-4d4a-8b2e-bb0be7cc6672
 ms.date: 05/02/2018
 keywords: ["RILMESSAGEINFO structure"]
 ms.keywords: "*LPRILMESSAGEINFO, RILMESSAGEINFO, RILMESSAGEINFO structure [Network Drivers Starting with Windows Vista], netvista.rilmessageinfo, ntddrilapitypes/RILMESSAGEINFO"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILMESSAGEINFO
+ - LPRILMESSAGEINFO
 ---
 
 # RILMESSAGEINFO structure (ntddrilapitypes.h)

@@ -1,10 +1,9 @@
 ---
 UID: NF:wdfcompanion.WDF_TASK_QUEUE_CONFIG_INIT
 title: WDF_TASK_QUEUE_CONFIG_INIT function (wdfcompanion.h)
-description: For internal use only.
+description: This WDF_TASK_QUEUE_CONFIG_INIT function article is for internal use only.
 old-location: wdf\wdf_task_queue_config_init.htm
 tech.root: wdf
-ms.assetid: 51c43509-074c-4118-afe5-2e568d733751
 ms.date: 02/26/2018
 keywords: ["WDF_TASK_QUEUE_CONFIG_INIT function"]
 ms.keywords: WDF_TASK_QUEUE_CONFIG_INIT, WDF_TASK_QUEUE_CONFIG_INIT method, wdf.wdf_task_queue_config_init, wdfcompanion/WDF_TASK_QUEUE_CONFIG_INIT
@@ -50,15 +49,15 @@ api_name:
 
 ## -parameters
 
-### -param Config 
+### -param Config [out]
 
-[out]
 
-### -param TaskQueueId 
 
-[in]
+### -param TaskQueueId [in]
 
-### -param DispatchType 
 
-[in]
+
+### -param DispatchType [in]
+
+
 

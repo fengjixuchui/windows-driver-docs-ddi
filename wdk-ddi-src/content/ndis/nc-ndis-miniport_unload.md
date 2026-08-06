@@ -4,7 +4,6 @@ title: MINIPORT_UNLOAD (ndis.h)
 description: NDIS calls a miniport driver's MiniportDriverUnload function to request the driver to release resources before the system completes a driver unload operation.
 old-location: netvista\miniportdriverunload.htm
 tech.root: netvista
-ms.assetid: 25c803cf-f8a6-4e41-a731-c3ae7f1db211
 ms.date: 05/02/2018
 keywords: ["MINIPORT_UNLOAD callback function"]
 ms.keywords: MINIPORT_UNLOAD, MINIPORT_UNLOAD callback, MiniportDriverUnload, MiniportDriverUnload callback function [Network Drivers Starting with Windows Vista], miniport_functions_ref_8f9795d0-00aa-4059-8dbf-8f7eed303cae.xml, ndis/MiniportDriverUnload, netvista.miniportdriverunload
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportDriverUnload
+ - MINIPORT_UNLOAD
 ---
 
 # MINIPORT_UNLOAD callback function
@@ -54,9 +53,9 @@ NDIS calls a miniport driver's
 
 ## -parameters
 
-### -param DriverObject 
+### -param DriverObject [in]
 
-[in]
+
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object">DRIVER_OBJECT</a> structure that is the driver's
      driver object.
@@ -152,3 +151,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload">Unload</a>
+

@@ -3,7 +3,6 @@ UID: NS:ntddstor._DEVICE_DSM_DEFINITION
 title: _DEVICE_DSM_DEFINITION (ntddstor.h)
 description: The DEVICE_DSM_DEFINITION structure contains the properties for a data set management (DSM) action.
 tech.root: storage
-ms.assetid: a43aff7d-1731-469d-8681-8c8aaaeff1a1
 ms.date: 08/23/2019
 keywords: ["DEVICE_DSM_DEFINITION structure"]
 ms.keywords: _DEVICE_DSM_DEFINITION, DEVICE_DSM_DEFINITION, *PDEVICE_DSM_DEFINITION,
@@ -36,6 +35,8 @@ api_location:
  - ntddstor.h
 api_name:
  - _DEVICE_DSM_DEFINITION
+ - PDEVICE_DSM_DEFINITION
+ - DEVICE_DSM_DEFINITION
 ---
 
 # _DEVICE_DSM_DEFINITION structure
@@ -90,3 +91,4 @@ See [Data Set Management Overview](/windows-hardware/drivers/storage/data-set-ma
 [DSM_DEVICE_INPUT](./ns-ntddstor-_device_manage_data_set_attributes.md)
 
 [IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES](./ni-ntddstor-ioctl_storage_manage_data_set_attributes.md)
+

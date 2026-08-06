@@ -1,9 +1,9 @@
 ---
 UID: NS:d3d9types._D3DCOLORVALUE
 title: _D3DCOLORVALUE (d3d9types.h)
-description: 
-ms.assetid: fcd9bc0c-b625-4e74-a007-77ffe7866571
+description: "Learn more about: _D3DCOLORVALUE structure"
 ms.date: 10/19/2018
+tech.root: display
 keywords: ["D3DCOLORVALUE structure"]
 ms.keywords: _D3DCOLORVALUE, D3DCOLORVALUE,
 req.header: d3d9types.h
@@ -34,6 +34,7 @@ api_location:
  - d3d9types.h
 api_name:
  - _D3DCOLORVALUE
+ - D3DCOLORVALUE
 dev_langs:
  - c++
 ---

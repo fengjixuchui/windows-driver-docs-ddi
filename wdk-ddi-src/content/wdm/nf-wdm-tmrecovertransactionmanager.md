@@ -4,7 +4,6 @@ title: TmRecoverTransactionManager function (wdm.h)
 description: The TmRecoverTransactionManager routine reconstructs the state of the transaction manager object (including all transactions, enlistments, and resource managers) from the recovery information that is in the log stream.
 old-location: kernel\tmrecovertransactionmanager.htm
 tech.root: kernel
-ms.assetid: 67b18170-a17f-44fd-a5ab-12bccf2082fe
 ms.date: 04/30/2018
 keywords: ["TmRecoverTransactionManager function"]
 ms.keywords: TmRecoverTransactionManager, TmRecoverTransactionManager routine [Kernel-Mode Driver Architecture], kernel.tmrecovertransactionmanager, ktm_ref_1917a36a-c7bd-4a00-b054-bb710b7c0e93.xml, wdm/TmRecoverTransactionManager
@@ -52,14 +51,14 @@ The <b>TmRecoverTransactionManager</b> routine reconstructs the state of the tra
 
 ## -parameters
 
-### -param Tm 
+### -param Tm [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/kernel/transaction-manager-objects">transaction manager object</a>. To obtain this pointer, your TPS component must call <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle">ObReferenceObjectByHandle</a> and supply the object handle that a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreatetransactionmanager">ZwCreateTransactionManager</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopentransactionmanager">ZwOpenTransactionManager</a> provided.
 
-### -param TargetVirtualClock 
+### -param TargetVirtualClock [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/kernel/using-virtual-clock-values">virtual clock value</a>. This parameter is optional and can be <b>NULL</b>. For more information about this parameter, see the following Remarks section. For Windows Vista, this parameter must be <b>NULL</b>.
 
 ## -returns

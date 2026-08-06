@@ -4,7 +4,6 @@ title: IWDFIoTargetStateManagement::Stop (wudfddi.h)
 description: The Stop method stops sending queued requests to a local I/O target.
 old-location: wdf\iwdfiotargetstatemanagement_stop.htm
 tech.root: wdf
-ms.assetid: c0d5ea59-c1df-403b-9e74-b1ab60761640
 ms.date: 02/26/2018
 keywords: ["IWDFIoTargetStateManagement::Stop"]
 ms.keywords: IWDFIoTargetStateManagement interface,Stop method, IWDFIoTargetStateManagement.Stop, IWDFIoTargetStateManagement::Stop, Stop, Stop method, Stop method,IWDFIoTargetStateManagement interface, UMDFIoTargetObjectRef_e3b5b892-9d72-49ad-8d58-9cf751f831ad.xml, umdf.iwdfiotargetstatemanagement_stop, wdf.iwdfiotargetstatemanagement_stop, wudfddi/IWDFIoTargetStateManagement::Stop
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoTargetStateManagement.Stop
+ - IWDFIoTargetStateManagement::Stop
 ---
 
 # IWDFIoTargetStateManagement::Stop
@@ -52,9 +51,9 @@ The <b>Stop</b> method stops sending queued requests to a <a href="/windows-hard
 
 ## -parameters
 
-### -param Action 
+### -param Action [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfiotarget/ne-wdfiotarget-_wdf_io_target_sent_io_action">WDF_IO_TARGET_SENT_IO_ACTION</a>-typed value that identifies how to handle sent I/O when the I/O target object is stopped.
 
 ## -returns
@@ -110,7 +109,6 @@ CMyDevice::OnD0Exit(
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotargetstatemanagement">IWDFIoTargetStateManagement</a>
@@ -118,3 +116,4 @@ CMyDevice::OnD0Exit(
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfremotetarget-stop">IWDFRemoteTarget::Stop</a>
+

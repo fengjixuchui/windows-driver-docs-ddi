@@ -4,7 +4,6 @@ title: NdisClModifyCallQoS function (ndis.h)
 description: NdisClModifyCallQoS requests a change in the quality of service on a connection.
 old-location: netvista\ndisclmodifycallqos.htm
 tech.root: netvista
-ms.assetid: c31449a6-e275-480c-83ea-8575fda73cd9
 ms.date: 05/02/2018
 keywords: ["NdisClModifyCallQoS function"]
 ms.keywords: NdisClModifyCallQoS, NdisClModifyCallQoS function [Network Drivers Starting with Windows Vista], condis_client_ref_55b0158f-e91e-4be8-818b-ade726db0f61.xml, ndis/NdisClModifyCallQoS, netvista.ndisclmodifycallqos
@@ -51,17 +50,17 @@ api_name:
 
 ## -parameters
 
-### -param NdisVcHandle 
+### -param NdisVcHandle [in]
 
-[in]
+
 Specifies the handle to the VC for which the client wants to modify the QoS. The client originally
      obtained this handle by calling 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscocreatevc">NdisCoCreateVc</a>, and, more recently,
      retrieved this handle from its per-VC state area.
 
-### -param CallParameters 
+### -param CallParameters [in]
 
-[in]
+
 Pointer to a structure of type CO_CALL_PARAMETERS that specifies the new QoS requested by the
      caller.
 

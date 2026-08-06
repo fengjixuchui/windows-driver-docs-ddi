@@ -4,7 +4,6 @@ title: IDE_HW_STARTIO (irb.h)
 description: The IdeHwStartIo miniport driver routine processes the synchronized aspects of an I/O request.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\idehwstartio.htm
 tech.root: storage
-ms.assetid: 9172e62e-263c-471c-bcc2-9be4e1d6b1a2
 ms.date: 03/29/2018
 keywords: ["IDE_HW_STARTIO callback function"]
 ms.keywords: IDE_HW_STARTIO, IdeHwStartIo, IdeHwStartIo routine [Storage Devices], atartns_5be92425-7e5b-4a9b-9673-baea4aace64a.xml, irb/IdeHwStartIo, storage.idehwstartio
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - irb.h
 api_name:
- - IdeHwStartIo
+ - IDE_HW_STARTIO
 ---
 
 # IDE_HW_STARTIO callback function
@@ -51,14 +50,14 @@ The <b><i>IdeHwStartIo</i></b> miniport driver routine processes the synchronize
 
 ## -parameters
 
-### -param ChannelExtension 
+### -param ChannelExtension [in]
 
-[in]
+
 A pointer to the miniport driver per channel device extension.
 
-### -param Irb 
+### -param Irb [in]
 
-[in]
+
 A pointer to a structure of type <a href="/windows-hardware/drivers/ddi/irb/ns-irb-_ide_request_block">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) to process.
 
 ## -returns
@@ -80,3 +79,4 @@ After this routine returns, the miniport driver should be prepared to receive th
 
 
 <a href="/windows-hardware/drivers/ddi/irb/nc-irb-ide_hw_buildio">IdeHwBuildIo</a>
+

@@ -4,7 +4,6 @@ title: _NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES (ndis.h)
 description: An NDIS miniport driver sets up an NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES structure to define task offload and connection offload attributes, if any, that are associated with a miniport adapter.
 old-location: netvista\ndis_miniport_adapter_offload_attributes.htm
 tech.root: netvista
-ms.assetid: 9ce875fc-ed3f-43e9-bfbc-081f02cb1999
 ms.date: 05/02/2018
 keywords: ["NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES structure"]
 ms.keywords: "*PNDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], PNDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES, PNDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], _NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES, miniport_structures_ref_71ee0bdb-903e-4554-915b-010abe803fb3.xml, ndis/NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES, ndis/PNDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES, netvista.ndis_miniport_adapter_offload_attributes"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES
+ - PNDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES
  - NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES
 ---
 
@@ -58,7 +59,7 @@ An NDIS miniport driver sets up an NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES stru
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_MINIPORT_ADAPTER_OFFLOAD_ATTRIBUTES, the 
@@ -73,7 +74,7 @@ A pointer to an
 
 ### -field HardwareOffloadCapabilities
 
-A pointer to an NDIS_OFFLOAD structure that indicates all the task offload capabilites that are
+A pointer to an NDIS_OFFLOAD structure that indicates all the task offload capabilities that are
      supported by the miniport adapter. These capabilities include capabilities that are currently disabled
      by standardized keywords in the registry.
 
@@ -87,7 +88,7 @@ A pointer to an
 ### -field TcpConnectionOffloadHardwareCapabilities
 
 A pointer to an NDIS_TCP_CONNECTION_OFFLOAD structure that indicates all the connection offload
-     capabilites that are supported by the miniport adapter. These capabilities include capabilities that are
+     capabilities that are supported by the miniport adapter. These capabilities include capabilities that are
      currently disabled by standardized keywords in the registry.
 
 ## -remarks
@@ -107,7 +108,7 @@ A miniport driver that supports task offload or connection offload passes a poin
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -124,3 +125,4 @@ A miniport driver that supports task offload or connection offload passes a poin
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSystemObjects.GetCurrentProcessId
 title: IDebugSystemObjects::GetCurrentProcessId (dbgeng.h)
-description: The GetCurrentProcessId method returns the engine process ID for the current process.
+description: The GetCurrentProcessId method returns the engine process ID for the current process. This method belongs to the IDebugSystemObjects interface.
 old-location: debugger\getcurrentprocessid.htm
 tech.root: debugger
-ms.assetid: 5b256ccb-8f03-4936-8e03-9955c81384a5
 ms.date: 05/03/2018
 keywords: ["IDebugSystemObjects::GetCurrentProcessId"]
 ms.keywords: GetCurrentProcessId, GetCurrentProcessId method [Windows Debugging], GetCurrentProcessId method [Windows Debugging],IDebugSystemObjects interface, GetCurrentProcessId method [Windows Debugging],IDebugSystemObjects2 interface, GetCurrentProcessId method [Windows Debugging],IDebugSystemObjects3 interface, GetCurrentProcessId method [Windows Debugging],IDebugSystemObjects4 interface, IDebugSystemObjects interface [Windows Debugging],GetCurrentProcessId method, IDebugSystemObjects.GetCurrentProcessId, IDebugSystemObjects2 interface [Windows Debugging],GetCurrentProcessId method, IDebugSystemObjects2::GetCurrentProcessId, IDebugSystemObjects3 interface [Windows Debugging],GetCurrentProcessId method, IDebugSystemObjects3::GetCurrentProcessId, IDebugSystemObjects4 interface [Windows Debugging],GetCurrentProcessId method, IDebugSystemObjects4::GetCurrentProcessId, IDebugSystemObjects::GetCurrentProcessId, IDebugSystemObjects_9ae912e7-68db-45d0-8129-f55e5b3ee462.xml, dbgeng/IDebugSystemObjects2::GetCurrentProcessId, dbgeng/IDebugSystemObjects3::GetCurrentProcessId, dbgeng/IDebugSystemObjects4::GetCurrentProcessId, dbgeng/IDebugSystemObjects::GetCurrentProcessId, debugger.getcurrentprocessid
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSystemObjects.GetCurrentProcessId
- - IDebugSystemObjects2.GetCurrentProcessId
- - IDebugSystemObjects3.GetCurrentProcessId
- - IDebugSystemObjects4.GetCurrentProcessId
+ - IDebugSystemObjects::GetCurrentProcessId
 ---
 
 # IDebugSystemObjects::GetCurrentProcessId
@@ -53,9 +49,9 @@ The <b>GetCurrentProcessId</b> method returns the engine process ID for the curr
 
 ## -parameters
 
-### -param Id 
+### -param Id [out]
 
-[out]
+
 Receives the engine process ID for the current process.
 
 ## -returns
@@ -83,3 +79,4 @@ The method was successful.
 ## -remarks
 
 For more information about processes, see <a href="/windows-hardware/drivers/debugger/threads-and-processes">Threads and Processes</a>.
+

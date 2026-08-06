@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_MONITORFREQUENCYRANGESET_GETNUMFREQUENCYRANGES
 title: DXGKDDI_MONITORFREQUENCYRANGESET_GETNUMFREQUENCYRANGES (d3dkmddi.h)
 description: The pfnGetNumFrequencyRanges returns the number of frequency range descriptors in a specified monitor frequency range set object.
 old-location: display\dxgk_monitorfrequencyrangeset_interface_pfngetnumfrequencyranges.htm
-ms.assetid: ba70c191-832f-4dd1-b949-cb47cf736c6e
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_MONITORFREQUENCYRANGESET_GETNUMFREQUENCYRANGES callback function"]
 ms.keywords: DXGKDDI_MONITORFREQUENCYRANGESET_GETNUMFREQUENCYRANGES, DXGKDDI_MONITORFREQUENCYRANGESET_GETNUMFREQUENCYRANGES callback, VidPnFunctions_9840ad40-d098-4215-b3da-2de345970fe6.xml, d3dkmddi/pfnGetNumFrequencyRanges, display.dxgk_monitorfrequencyrangeset_interface_pfngetnumfrequencyranges, pfnGetNumFrequencyRanges, pfnGetNumFrequencyRanges callback function [Display Devices]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - pfnGetNumFrequencyRanges
-product:
- - Windows
+ - DXGKDDI_MONITORFREQUENCYRANGESET_GETNUMFREQUENCYRANGES
 ---
 
 # DXGKDDI_MONITORFREQUENCYRANGESET_GETNUMFREQUENCYRANGES callback function
@@ -52,13 +49,13 @@ The <b>pfnGetNumFrequencyRanges</b> returns the number of frequency range descri
 
 ## -parameters
 
-### -param hMonitorFrequencyRangeSet
+### -param hMonitorFrequencyRangeSet [in]
 
-[in] A handle to a monitor frequency range set object. The display miniport driver previously obtained this handle by calling the <b>pfnGetMonitorFrequencyRangeSet</b> function of the <a href="/windows-hardware/drivers/ddi/index">Monitor interface</a>.
+A handle to a monitor frequency range set object. The display miniport driver previously obtained this handle by calling the <b>pfnGetMonitorFrequencyRangeSet</b> function of the <a href="/windows-hardware/drivers/ddi/index">Monitor interface</a>.
 
-### -param pNumMonitorFrequencyRanges
+### -param pNumMonitorFrequencyRanges [out]
 
-[out] A pointer to a SIZE_T-typed variable that receives the number of descriptors in the set.
+A pointer to a SIZE_T-typed variable that receives the number of descriptors in the set.
 
 ## -returns
 
@@ -69,3 +66,4 @@ The <b>pfnGetNumFrequencyRanges</b> function returns one of the following values
 |STATUS_SUCCESS|The function succeeded.|
 |STATUS_INVALID_PARAMETER|An invalid parameter was supplied.|
 |STATUS_INVALID_MONITOR_FREQUENCYRANGESET|The handle supplied in hMonitorFrequencyRangeSet was invalid.|
+

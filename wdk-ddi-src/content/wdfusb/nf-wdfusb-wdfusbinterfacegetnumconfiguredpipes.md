@@ -4,7 +4,6 @@ title: WdfUsbInterfaceGetNumConfiguredPipes function (wdfusb.h)
 description: The WdfUsbInterfaceGetNumConfiguredPipes method returns the number of pipes that are configured for a specified USB device interface.
 old-location: wdf\wdfusbinterfacegetnumconfiguredpipes.htm
 tech.root: wdf
-ms.assetid: dbc929a9-696b-42e1-9888-9e8c0b1e01c9
 ms.date: 02/26/2018
 keywords: ["WdfUsbInterfaceGetNumConfiguredPipes function"]
 ms.keywords: DFUsbRef_4273baba-c0e8-4bda-b6da-c9c9f00cabf9.xml, WdfUsbInterfaceGetNumConfiguredPipes, WdfUsbInterfaceGetNumConfiguredPipes method, kmdf.wdfusbinterfacegetnumconfiguredpipes, wdf.wdfusbinterfacegetnumconfiguredpipes, wdfusb/WdfUsbInterfaceGetNumConfiguredPipes
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,9 +54,9 @@ The <b>WdfUsbInterfaceGetNumConfiguredPipes</b> method returns the number of pip
 
 ## -parameters
 
-### -param UsbInterface 
+### -param UsbInterface [in]
 
-[in]
+
 A handle to a USB interface object that was obtained by calling <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>.
 
 ## -returns

@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGK_CONTEXTINFO
 title: _DXGK_CONTEXTINFO (d3dkmddi.h)
 description: The DXGK_CONTEXTINFO structure describes a device context.
 old-location: display\dxgk_contextinfo.htm
-ms.assetid: 52c98ca7-8024-42d6-9001-1a7a69d24a95
 ms.date: 05/10/2018
 keywords: ["DXGK_CONTEXTINFO structure"]
 ms.keywords: DXGK_CONTEXTINFO, DXGK_CONTEXTINFO structure [Display Devices], DmStructs_e95e533c-2156-4384-9e7e-718e7d61c458.xml, _DXGK_CONTEXTINFO, d3dkmddi/DXGK_CONTEXTINFO, display.dxgk_contextinfo
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_CONTEXTINFO
  - DXGK_CONTEXTINFO
 ---
 
@@ -158,3 +158,4 @@ If the driver sets <b>DmaBufferSegmentSet</b> to 0, the video memory manager all
 
 
 <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a>
+

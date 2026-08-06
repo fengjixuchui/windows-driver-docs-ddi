@@ -4,7 +4,6 @@ title: _PCEVENT_REQUEST (portcls.h)
 description: The PCEVENT_REQUEST structure specifies an event request.
 old-location: audio\pcevent_request.htm
 tech.root: audio
-ms.assetid: b28bd1c2-9fbe-4427-a4ba-5b79a338e913
 ms.date: 05/08/2018
 keywords: ["PCEVENT_REQUEST structure"]
 ms.keywords: "*PPCEVENT_REQUEST, PCEVENT_REQUEST, PCEVENT_REQUEST structure [Audio Devices], PPCEVENT_REQUEST, PPCEVENT_REQUEST structure pointer [Audio Devices], _PCEVENT_REQUEST, audio.pcevent_request, audpc-struct_d60c4cf4-11e2-44b7-842a-65d965c8c422.xml, portcls/PCEVENT_REQUEST, portcls/PPCEVENT_REQUEST"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - portcls.h
 api_name:
+ - _PCEVENT_REQUEST
+ - PPCEVENT_REQUEST
  - PCEVENT_REQUEST
 ---
 
@@ -169,3 +170,4 @@ The handler can call <a href="/windows/win32/api/unknwn/nf-unknwn-iunknown-query
 
 
 <a href="/previous-versions/ff537695(v=vs.85)">PCFILTER_NODE</a>
+

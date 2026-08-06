@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILPHONEBOOKADDITIONALNUMBERINFO
 title: RILPHONEBOOKADDITIONALNUMBERINFO (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILPHONEBOOKADDITIONALNUMBERINFO structure in your code."
 old-location: netvista\rilphonebookadditionalnumberinfo.htm
 tech.root: netvista
-ms.assetid: bc4026e5-6613-4787-9218-22d1d3e447c3
 ms.date: 05/02/2018
 keywords: ["RILPHONEBOOKADDITIONALNUMBERINFO structure"]
 ms.keywords: "*LPRILPHONEBOOKADDITIONALNUMBERINFO, RILPHONEBOOKADDITIONALNUMBERINFO, RILPHONEBOOKADDITIONALNUMBERINFO structure [Network Drivers Starting with Windows Vista], netvista.rilphonebookadditionalnumberinfo, ntddrilapitypes/RILPHONEBOOKADDITIONALNUMBERINFO"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILPHONEBOOKADDITIONALNUMBERINFO
+ - LPRILPHONEBOOKADDITIONALNUMBERINFO
 ---
 
 # RILPHONEBOOKADDITIONALNUMBERINFO structure (ntddrilapitypes.h)

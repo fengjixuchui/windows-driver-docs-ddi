@@ -4,7 +4,6 @@ title: tagKS_DATAFORMAT_VIDEOINFOHEADER2 (ksmedia.h)
 description: The KS_DATAFORMAT_VIDEOINFOHEADER2 structure describes a video stream that includes settings for bob or weave.
 old-location: stream\ks_dataformat_videoinfoheader2.htm
 tech.root: stream
-ms.assetid: 92deaecd-69d7-4e64-bdb0-a2736add0c2f
 ms.date: 04/23/2018
 keywords: ["tagKS_DATAFORMAT_VIDEOINFOHEADER2 structure"]
 ms.keywords: "*PKS_DATAFORMAT_VIDEOINFOHEADER2, KS_DATAFORMAT_VIDEOINFOHEADER2, KS_DATAFORMAT_VIDEOINFOHEADER2 structure [Streaming Media Devices], PKS_DATAFORMAT_VIDEOINFOHEADER2, PKS_DATAFORMAT_VIDEOINFOHEADER2 structure pointer [Streaming Media Devices], ksmedia/KS_DATAFORMAT_VIDEOINFOHEADER2, ksmedia/PKS_DATAFORMAT_VIDEOINFOHEADER2, stream.ks_dataformat_videoinfoheader2, tagKS_DATAFORMAT_VIDEOINFOHEADER2, vidcapstruct_cadaf63f-50d5-41c5-926b-81724dddb890.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - tagKS_DATAFORMAT_VIDEOINFOHEADER2
+ - PKS_DATAFORMAT_VIDEOINFOHEADER2
  - KS_DATAFORMAT_VIDEOINFOHEADER2
 ---
 
@@ -81,3 +82,4 @@ Minidrivers that do not need to specify bob or weave settings may use the <a hre
 
 
 <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagks_videoinfoheader2">KS_VIDEOINFOHEADER2</a>
+

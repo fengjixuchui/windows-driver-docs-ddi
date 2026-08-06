@@ -4,7 +4,6 @@ title: IoInitializeRemoveLock macro (wdm.h)
 description: The IoInitializeRemoveLock routine initializes a remove lock for a device object.
 old-location: kernel\ioinitializeremovelock.htm
 tech.root: kernel
-ms.assetid: d85bab78-0e9e-4e71-a09b-40954df81c87
 ms.date: 04/30/2018
 keywords: ["IoInitializeRemoveLock macro"]
 ms.keywords: IoInitializeRemoveLock, IoInitializeRemoveLock routine [Kernel-Mode Driver Architecture], k104_b9b844b1-4bb4-4a52-8274-c5a3441f6267.xml, kernel.ioinitializeremovelock, wdm/IoInitializeRemoveLock
@@ -50,26 +49,28 @@ The <b>IoInitializeRemoveLock</b> routine initializes a remove lock for a device
 
 ## -parameters
 
-### -param Lock 
+### -param Lock [in]
 
-[in]
+
 Pointer to a caller-supplied <b>IO_REMOVE_LOCK</b> structure that this routine initializes with information about the lock, including a counter and a synchronization event. A driver writer must allocate this structure as part of the device object's device extension.
 
-### -param Tag 
+### -param Tag [in]
 
-[in]
+
 Specifies a tag to identify the creator of the lock. Driver writers typically use a 4-character string, specified in reverse order, like the tags used for <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag">ExAllocatePoolWithTag</a>.
 
 The I/O system uses this parameter if <a href="/windows-hardware/drivers/what-s-new-in-driver-development">Driver Verifier</a> is enabled. The caller should always supply a nonzero tag value for this parameter.
 
-### - param Maxmin 
-[in]
+### -param Maxmin [in]
+
+
 Specifies the maximum number of minutes that this lock should be held. A value of zero means there is no limit. This value is typically used during debugging to identify a driver routine that holds the lock longer than expected.
 
 The I/O system uses this parameter if Driver Verifier is enabled. 
 
-### - param HighWater 
-[in]
+### -param HighWater [in]
+
+
 Specifies the maximum number of outstanding acquisitions allowed on the lock. Use 0 to specify no maximum. <i>HighWatermark</i> must be <= 0x7FFFFFFF.
 
 The I/O system uses this parameter if Driver Verifier is enabled.

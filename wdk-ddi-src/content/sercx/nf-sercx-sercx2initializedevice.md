@@ -4,7 +4,6 @@ title: SerCx2InitializeDevice function (sercx.h)
 description: The SerCx2InitializeDevice method finishes initializing the framework device object for the serial controller.
 old-location: serports\sercx2initializedevice.htm
 tech.root: serports
-ms.assetid: C0D20E2D-5895-4FD1-9F03-9E5D1C783992
 ms.date: 04/23/2018
 keywords: ["SerCx2InitializeDevice function"]
 ms.keywords: 2/SerCx2InitializeDevice, SerCx2InitializeDevice, SerCx2InitializeDevice method [Serial Ports], serports.sercx2initializedevice
@@ -50,14 +49,14 @@ The <b>SerCx2InitializeDevice</b> method finishes initializing the framework dev
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the serial controller. For more information, see Remarks.
 
-### -param Config 
+### -param Config [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/sercx/ns-sercx-_sercx2_config">SERCX2_CONFIG</a> structure that contains pointers to a set of event callback functions that are implemented by the serial controller driver. Version 2 of the serial framework controller (SerCx2) calls these functions to configure the serial controller and to perform basic operations that are independent of the I/O transaction types (PIO, system DMA, or custom) that the driver  supports.
 
 ## -returns

@@ -1,8 +1,7 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_MULTIPLANE_OVERLAY2
 title: _D3DKMT_MULTIPLANE_OVERLAY2 (d3dkmthk.h)
-description: Multiplane overlay structure.
-ms.assetid: 134dae27-808d-48c3-8d3e-9fac505e1915
+description: The _D3DKMT_MULTIPLANE_OVERLAY2 structure contains information that is used to define a multiplane overlay.
 ms.date: 10/19/2018
 keywords: ["D3DKMT_MULTIPLANE_OVERLAY2 structure"]
 ms.keywords: _D3DKMT_MULTIPLANE_OVERLAY2, D3DKMT_MULTIPLANE_OVERLAY2,
@@ -35,6 +34,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_MULTIPLANE_OVERLAY2
+ - D3DKMT_MULTIPLANE_OVERLAY2
 dev_langs:
  - c++
 ---

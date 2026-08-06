@@ -4,7 +4,6 @@ title: PROTOCOL_CL_OPEN_AF_COMPLETE_EX (ndis.h)
 description: The ProtocolClOpenAfCompleteEx function completes the opening of an address family (AF) that was started when a CoNDIS client called the NdisClOpenAddressFamilyEx function.Note  You must declare the function by using the PROTOCOL_CL_OPEN_AF_COMPLETE_EX type. For more information, see the following Examples section.
 old-location: netvista\protocolclopenafcompleteex.htm
 tech.root: netvista
-ms.assetid: 03ddbbfd-8fe8-44b6-8d3e-12a7bf6f8f6b
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CL_OPEN_AF_COMPLETE_EX callback function"]
 ms.keywords: PROTOCOL_CL_OPEN_AF_COMPLETE_EX, PROTOCOL_CL_OPEN_AF_COMPLETE_EX callback, ProtocolClOpenAfCompleteEx, ProtocolClOpenAfCompleteEx callback function [Network Drivers Starting with Windows Vista], condis_client_ref_8b7e876e-d2b2-4676-8120-aa18f717cca2.xml, ndis/ProtocolClOpenAfCompleteEx, netvista.protocolclopenafcompleteex
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolClOpenAfCompleteEx
+ - PROTOCOL_CL_OPEN_AF_COMPLETE_EX
 ---
 
 # PROTOCOL_CL_OPEN_AF_COMPLETE_EX callback function
@@ -55,17 +54,17 @@ The
 
 ## -parameters
 
-### -param ProtocolAfContext 
+### -param ProtocolAfContext [in]
 
-[in]
+
 A client-supplied handle to its context area for an address AF. The client allocated this context
      area and passed this handle to NDIS in its call to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclopenaddressfamilyex">
      NdisClOpenAddressFamilyEx</a> function.
 
-### -param NdisAfHandle 
+### -param NdisAfHandle [in]
 
-[in]
+
 An NDIS-supplied handle to an AF, if 
      <i>Status</i> is NDIS_STATUS_SUCCESS. Otherwise, this parameter is <b>NULL</b>. This handle represents an
      association that NDIS established between the client and a call manager that is bound to a CoNDIS
@@ -74,9 +73,9 @@ An NDIS-supplied handle to an AF, if
      <b>NdisCl<i>Xxx</i></b> and 
      <b>NdisCo<i>Xxx</i></b> functions.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 The final status of the client's call to 
      <b>NdisClOpenAddressFamilyEx</b>, which can be any of the following: 
      
@@ -230,3 +229,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_af_register_notify">ProtocolCoAfRegisterNotify</a>
+

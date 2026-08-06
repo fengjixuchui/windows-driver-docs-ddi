@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugDataSpaces.WriteIo
 title: IDebugDataSpaces::WriteIo (dbgeng.h)
-description: The WriteIo method writes to the system and bus I/O memory.
+description: The WriteIo method writes to the system and bus I/O memory. This method belongs to the IDebugDataSpaces interface.
 old-location: debugger\writeio.htm
 tech.root: debugger
-ms.assetid: 3bc84b15-7c13-4ad9-b9a1-6abd5a7389eb
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces::WriteIo"]
 ms.keywords: IDebugDataSpaces interface [Windows Debugging],WriteIo method, IDebugDataSpaces.WriteIo, IDebugDataSpaces2 interface [Windows Debugging],WriteIo method, IDebugDataSpaces2::WriteIo, IDebugDataSpaces3 interface [Windows Debugging],WriteIo method, IDebugDataSpaces3::WriteIo, IDebugDataSpaces4 interface [Windows Debugging],WriteIo method, IDebugDataSpaces4::WriteIo, IDebugDataSpaces::WriteIo, IDebugDataSpaces_d36b33ec-db19-4df1-8813-b77f22705279.xml, WriteIo, WriteIo method [Windows Debugging], WriteIo method [Windows Debugging],IDebugDataSpaces interface, WriteIo method [Windows Debugging],IDebugDataSpaces2 interface, WriteIo method [Windows Debugging],IDebugDataSpaces3 interface, WriteIo method [Windows Debugging],IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces2::WriteIo, dbgeng/IDebugDataSpaces3::WriteIo, dbgeng/IDebugDataSpaces4::WriteIo, dbgeng/IDebugDataSpaces::WriteIo, debugger.writeio
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugDataSpaces.WriteIo
- - IDebugDataSpaces2.WriteIo
- - IDebugDataSpaces3.WriteIo
- - IDebugDataSpaces4.WriteIo
+ - IDebugDataSpaces::WriteIo
 ---
 
 # IDebugDataSpaces::WriteIo
@@ -53,39 +49,39 @@ The <b>WriteIo</b> method writes to the system and bus I/O memory.
 
 ## -parameters
 
-### -param InterfaceType 
+### -param InterfaceType [in]
 
-[in]
+
 Specifies the interface type of the I/O bus.  This parameter may take values in the INTERFACE_TYPE enumeration defined in wdm.h.
 
-### -param BusNumber 
+### -param BusNumber [in]
 
-[in]
+
 Specifies the system-assigned number of the bus.  This is usually zero, unless the system has more than one bus of the same interface type.
 
-### -param AddressSpace 
+### -param AddressSpace [in]
 
-[in]
+
 Set to one.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the location of the requested data.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Specifies the data to write to the I/O bus.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size in bytes of the buffer <i>Buffer</i>.  This is the maximum number of bytes that will be written.
 
-### -param BytesWritten 
+### -param BytesWritten [out, optional]
 
-[out, optional]
+
 Receives the number of bytes written to I/O bus.  If <i>BytesWritten</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -113,3 +109,4 @@ The method was successful.
 ## -remarks
 
 This method is only available in kernel-mode debugging.
+

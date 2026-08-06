@@ -1,10 +1,9 @@
 ---
 UID: NF:ntifs.SeAuditHardLinkCreation
 title: SeAuditHardLinkCreation function (ntifs.h)
-description: Reserved for system use.
+description: "Microsoft reserves the SeAuditHardLinkCreation function for internal use only. Don't use this function in your code."
 old-location: ifsk\seaudithardlinkcreation.htm
 tech.root: ifsk
-ms.assetid: f032afe5-da68-4763-a4f0-6e61869223e1
 ms.date: 04/16/2018
 keywords: ["SeAuditHardLinkCreation function"]
 ms.keywords: SeAuditHardLinkCreation, SeAuditHardLinkCreation function [Installable File System Drivers], ifsk.seaudithardlinkcreation, ntifs/SeAuditHardLinkCreation, seref_da710638-38e7-4305-9102-7cfbc4299f94.xml
@@ -22,8 +21,8 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
-req.dll: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
 req.irql: 
 targetos: Windows
 req.typenames: 

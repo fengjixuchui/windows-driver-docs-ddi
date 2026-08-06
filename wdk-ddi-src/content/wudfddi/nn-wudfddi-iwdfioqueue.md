@@ -4,7 +4,6 @@ title: IWDFIoQueue (wudfddi.h)
 description: The IWDFIoQueue interface exposes an I/O queue object.
 old-location: wdf\iwdfioqueue.htm
 tech.root: wdf
-ms.assetid: 9a3ec86a-6a1d-4c65-a65a-7cb85bbd1ab8
 ms.date: 02/26/2018
 keywords: ["IWDFIoQueue interface"]
 ms.keywords: IWDFIoQueue, IWDFIoQueue interface, IWDFIoQueue interface,described, UMDFQueueObjectRef_57878b3d-0771-425d-b8ca-3e4713c96fcc.xml, umdf.iwdfioqueue, wdf.iwdfioqueue, wudfddi/IWDFIoQueue
@@ -52,7 +51,7 @@ The <b>IWDFIoQueue</b> interface exposes an I/O queue object.
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFIoQueue</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a>. <b>IWDFIoQueue</b> also has these types of members:
+The <b>IWDFIoQueue</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a>. <b>IWDFIoQueue</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>

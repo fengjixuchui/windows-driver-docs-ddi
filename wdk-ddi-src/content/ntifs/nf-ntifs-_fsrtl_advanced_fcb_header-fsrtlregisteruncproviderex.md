@@ -4,14 +4,13 @@ title: FsRtlRegisterUncProviderEx function (ntifs.h)
 description: The FsRtlRegisterUncProviderEx routine registers a network redirector as a universal naming convention (UNC) provider with the system multiple UNC provider (MUP).
 old-location: ifsk\fsrtlregisteruncproviderex.htm
 tech.root: ifsk
-ms.assetid: 5b7302c1-2f31-4b9f-bddb-7b35bbee4a2c
 ms.date: 04/16/2018
 keywords: ["FsRtlRegisterUncProviderEx function"]
 ms.keywords: FsRtlRegisterUncProviderEx, FsRtlRegisterUncProviderEx routine [Installable File System Drivers], fsrtlref_ae033ff2-3d3a-468c-973d-d6a78a2293a2.xml, ifsk.fsrtlregisteruncproviderex, ntifs/FsRtlRegisterUncProviderEx
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Windows Vista and later versions.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -53,24 +52,24 @@ The <b>FsRtlRegisterUncProviderEx</b> routine registers a network redirector as 
 
 ## -parameters
 
-### -param MupHandle 
+### -param MupHandle [out]
 
-[out]
+
 A pointer to a location in which to return a MUP handle to be used when calling <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlderegisteruncprovider">FsRtlDeregisterUncProvider</a> to deregister the network redirector. The returned handle is valid only if <b>FsRtlRegisterUncProviderEx</b> returns STATUS_SUCCESS.
 
-### -param RedirDevName 
+### -param RedirDevName [in]
 
-[in]
+
 A pointer to a Unicode string that contains the device name of the network redirector. MUP uses this device name to create a symbolic link in the Object Manager namespace whose target is \Device\Mup.
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 A pointer to an unnamed device object that represents the network redirector.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A bitmask that indicates features supported by the network redirector. A network redirector sets a bit to indicate that a feature is supported. The <i>Flags</i> parameter has two options: 
 
 FSRTL_UNC_PROVIDER_FLAGS_MAILSLOTS_SUPPORTED

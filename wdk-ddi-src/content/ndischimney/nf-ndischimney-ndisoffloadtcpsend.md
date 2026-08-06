@@ -4,7 +4,6 @@ title: NdisOffloadTcpSend function (ndischimney.h)
 description: A protocol driver or intermediate driver calls the NdisOffloadTcpSend function to transmit data on an offloaded TCP connection.
 old-location: netvista\ndisoffloadtcpsend.htm
 tech.root: netvista
-ms.assetid: a2743bbb-a6fa-4b7e-8087-132e221a5624
 ms.date: 05/02/2018
 keywords: ["NdisOffloadTcpSend function"]
 ms.keywords: NdisOffloadTcpSend, NdisOffloadTcpSend function [Network Drivers Starting with Windows Vista], ndischimney/NdisOffloadTcpSend, netvista.ndisoffloadtcpsend, tcp_chim_ndis_func_51f71d27-0877-4046-b80d-8c05765d8e69.xml
@@ -54,23 +53,23 @@ A protocol driver or intermediate driver calls the
 
 ## -parameters
 
-### -param NdisOffloadHandle 
+### -param NdisOffloadHandle [in]
 
-[in]
+
 A handle to an 
      <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_offload_handle">NDIS_OFFLOAD_HANDLE</a> structure in the
      caller's context for the offloaded TCP connection. For more information, see 
      <a href="/windows-hardware/drivers/network/referencing-offloaded-state-through-an-intermediate-driver">
      Referencing Offloaded State Through an Intermediate Driver</a>.
 
-### -param NetBufferList 
+### -param NetBufferList [in]
 
-[in]
+
 A pointer to a 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure. This structure
+     <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure. This structure
      can be a stand-alone structure or the first structure in a linked list of NET_BUFFER_LIST structures.
      Each NET_BUFFER_LIST structure in the list describes a list of 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a> structures. Each NET_BUFFER structure
+     <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a> structures. Each NET_BUFFER structure
      in the list points to a chain of memory descriptor lists (MDLs). The MDLs contain the data to be
      transmitted. The NET_BUFFER_LIST and associated structures are locked so that they remain resident in
      physical memory. However, they are not mapped into system memory.
@@ -123,11 +122,11 @@ When the underlying driver or offload target subsequently completes the send ope
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a>
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 

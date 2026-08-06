@@ -1,8 +1,7 @@
 ---
 UID: NS:d3dkmdt._DXGK_GPUVERSION
 title: _DXGK_GPUVERSION (d3dkmdt.h)
-description: Used to collect the bios version and gpu architecture name once during GPU initialization.
-ms.assetid: 1b39af84-37f3-4fe3-b11f-c68cfa4af63c
+description: The DXGK_GPUVERSION structure is used to collect the BIOS version and GPU architecture name during GPU initialization.
 ms.date: 10/19/2018
 keywords: ["DXGK_GPUVERSION structure"]
 ms.keywords: _DXGK_GPUVERSION, DXGK_GPUVERSION,
@@ -34,8 +33,7 @@ api_location:
  - d3dkmdt.h
 api_name:
  - _DXGK_GPUVERSION
-product:
- - Windows
+ - DXGK_GPUVERSION
 ---
 
 # _DXGK_GPUVERSION structure

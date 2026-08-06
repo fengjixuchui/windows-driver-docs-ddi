@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols3.GetOffsetByName
 title: IDebugSymbols3::GetOffsetByName (dbgeng.h)
-description: The GetOffsetByName method returns the location of a symbol identified by name.
+description: The GetOffsetByName method returns the location of a symbol identified by name. This method belongs to the IDebugSymbols3 interface.
 old-location: debugger\getoffsetbyname.htm
 tech.root: debugger
-ms.assetid: b6915215-3654-446b-b30d-b891f439a379
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::GetOffsetByName"]
 ms.keywords: GetOffsetByName, GetOffsetByName method [Windows Debugging], GetOffsetByName method [Windows Debugging],IDebugSymbols interface, GetOffsetByName method [Windows Debugging],IDebugSymbols2 interface, GetOffsetByName method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],GetOffsetByName method, IDebugSymbols2 interface [Windows Debugging],GetOffsetByName method, IDebugSymbols2::GetOffsetByName, IDebugSymbols3 interface [Windows Debugging],GetOffsetByName method, IDebugSymbols3.GetOffsetByName, IDebugSymbols3::GetOffsetByName, IDebugSymbols::GetOffsetByName, IDebugSymbols_ef72e546-d27f-4cdf-9eeb-53151680c2d1.xml, dbgeng/IDebugSymbols2::GetOffsetByName, dbgeng/IDebugSymbols3::GetOffsetByName, dbgeng/IDebugSymbols::GetOffsetByName, debugger.getoffsetbyname
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.GetOffsetByName
- - IDebugSymbols2.GetOffsetByName
- - IDebugSymbols3.GetOffsetByName
+ - IDebugSymbols3::GetOffsetByName
 ---
 
 # IDebugSymbols3::GetOffsetByName
@@ -52,14 +49,14 @@ The <b>GetOffsetByName</b>  method returns the location of a symbol identified b
 
 ## -parameters
 
-### -param Symbol 
+### -param Symbol [in]
 
-[in]
+
 Specifies the name of the symbol to locate.  The name may be qualified by a module name (for example, <b>mymodule!main</b>).
 
-### -param Offset 
+### -param Offset [out]
 
-[out]
+
 Receives the location in the target's memory address space of the base of the symbol's memory allocation.
 
 ## -returns
@@ -131,3 +128,4 @@ For more information about symbols and symbol names, see <a href="/windows-hardw
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

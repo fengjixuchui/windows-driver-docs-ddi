@@ -4,7 +4,6 @@ title: WdfFdoInitQueryPropertyEx function (wdffdo.h)
 description: The WdfFdoInitQueryPropertyEx method retrieves a specified device property.
 old-location: wdf\wdffdoinitquerypropertyex.htm
 tech.root: wdf
-ms.assetid: C8377EE4-A7A1-4063-A7DC-53D0D8C6E0C3
 ms.date: 02/26/2018
 keywords: ["WdfFdoInitQueryPropertyEx function"]
 ms.keywords: WdfFdoInitQueryPropertyEx, WdfFdoInitQueryPropertyEx method, wdf.wdffdoinitquerypropertyex, wdffdo/WdfFdoInitQueryPropertyEx
@@ -55,38 +54,38 @@ The <b>WdfFdoInitQueryPropertyEx</b> method retrieves a specified device propert
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure that the driver obtained from its <a href="/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add">EvtDriverDeviceAdd</a> callback function.
 
-### -param DeviceProperty 
+### -param DeviceProperty [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_property_data">WDF_DEVICE_PROPERTY_DATA</a> structure that identifies the device property to be retrieved.
 
-### -param BufferLength 
+### -param BufferLength [in]
 
-[in]
+
 The size, in bytes, of the buffer that is pointed to by <i>PropertyBuffer</i>.
 
-### -param PropertyBuffer 
+### -param PropertyBuffer [out]
 
-[out]
+
 A caller-supplied pointer to a caller-allocated buffer that receives the requested information. The pointer can be <b>NULL</b> if the <i>BufferLength</i> parameter is zero.
 
-### -param ResultLength 
+### -param ResultLength [out]
 
-[out]
+
 A caller-supplied location that, on return, contains the 
                   size, in bytes, of the information that the method stored in 
                   <i>PropertyBuffer</i>. If the function's return value is 
                   <b>STATUS_BUFFER_TOO_SMALL</b>, this location receives the required 
                   buffer size.
 
-### -param Type 
+### -param Type [out]
 
-[out]
+
 A pointer to a <b>DEVPROPTYPE</b> variable that, on return, contains the property type value
                   of the property 
                   data stored in <i>PropertyBuffer</i>.

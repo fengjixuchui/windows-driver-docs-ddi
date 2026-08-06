@@ -4,7 +4,6 @@ title: _NDIS_WDI_INIT_PARAMETERS (dot11wdi.h)
 description: The NDIS_WDI_INIT_PARAMETERS structure specifies the WDI functions provided by the operating system and called by the IHV WDI driver.
 old-location: netvista\ndis_wdi_init_parameters.htm
 tech.root: netvista
-ms.assetid: 871D266C-55DF-4113-9714-92AB129303E5
 ms.date: 05/02/2018
 keywords: ["NDIS_WDI_INIT_PARAMETERS structure"]
 ms.keywords: "*PNDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS, NDIS_WDI_INIT_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_WDI_INIT_PARAMETERS, PNDIS_WDI_INIT_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WDI_INIT_PARAMETERS, dot11wdi/NDIS_WDI_INIT_PARAMETERS, dot11wdi/PNDIS_WDI_INIT_PARAMETERS, netvista.ndis_wdi_init_parameters"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
+ - _NDIS_WDI_INIT_PARAMETERS
+ - PNDIS_WDI_INIT_PARAMETERS
  - NDIS_WDI_INIT_PARAMETERS
 ---
 
@@ -50,6 +51,9 @@ api_name:
 
 ## -description
 
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
+
 The NDIS_WDI_INIT_PARAMETERS structure specifies the WDI functions provided by the operating system and called by the IHV WDI driver.
 
 ## -struct-fields
@@ -57,7 +61,7 @@ The NDIS_WDI_INIT_PARAMETERS structure specifies the WDI functions provided by t
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_WDI_INIT_PARAMETERS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_WDI_INIT_PARAMETERS.
@@ -102,3 +106,4 @@ The entry point of the <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11w
 ### -field UeIdleNotificationComplete
 
 The entry point of the <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_idle_notification_complete">NdisWdiIdleNotificationComplete</a> callback function.
+

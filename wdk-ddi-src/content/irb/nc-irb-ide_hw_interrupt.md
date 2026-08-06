@@ -4,7 +4,6 @@ title: IDE_HW_INTERRUPT (irb.h)
 description: The IdeHwInterrupt miniport driver routine handles interrupts from the host bus adapter (HBA) to which the controller for the miniport driver is connected.
 old-location: storage\idehwinterrupt.htm
 tech.root: storage
-ms.assetid: a061d993-78fc-45d8-857b-7269c3593847
 ms.date: 03/29/2018
 keywords: ["IDE_HW_INTERRUPT callback function"]
 ms.keywords: IDE_HW_INTERRUPT, IdeHwInterrupt, IdeHwInterrupt routine [Storage Devices], atartns_6568f61d-e6f7-4d16-98ed-72c13aac0fe7.xml, irb/IdeHwInterrupt, storage.idehwinterrupt
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - irb.h
 api_name:
- - IdeHwInterrupt
+ - IDE_HW_INTERRUPT
 ---
 
 # IDE_HW_INTERRUPT callback function
@@ -51,9 +50,9 @@ The <b><i>IdeHwInterrupt</i></b> miniport driver routine handles interrupts from
 
 ## -parameters
 
-### -param ChannelExtension 
+### -param ChannelExtension [in]
 
-[in]
+
 A pointer to the channel extension.
 
 ## -returns
@@ -121,3 +120,4 @@ The worker routine must clear the interrupt on the HBA before it returns <b>TRUE
 
 
 <a href="/windows-hardware/drivers/ddi/irb/nf-irb-ataportrequestworkerroutine">AtaPortRequestWorkerRoutine</a>
+

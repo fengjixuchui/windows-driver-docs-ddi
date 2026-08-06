@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.READ_REGISTER_ULONG64
 title: READ_REGISTER_ULONG64 function (wdm.h)
-description: The READ_REGISTER_ULONG64 function reads a ULONG64 value from the specified register address.
+description: The READ_REGISTER_ULONG64 function (wdm.h) reads a ULONG64 value from the specified register address.
 tech.root: kernel
-ms.assetid: D8AB8735-8909-463E-B10E-1FE5FD557FBB
-ms.date: 09/15/2020
+ms.date: 09/07/2021
 keywords: ["READ_REGISTER_ULONG64 function"]
 ms.keywords: READ_REGISTER_ULONG64, READ_REGISTER_ULONG64 function
 req.header: wdm.h
@@ -45,14 +44,13 @@ api_name:
 
 ## -description
 
+The **READ_REGISTER_ULONG64** routine dereferences the supplied pointer, inserts a memory barrier, and reads a ULONG64 value from the specified register address.
 
-The <b>READ_REGISTER_ULONG64</b> macro reads a ULONG64 value from the specified register address.
+### -parameters
 
-## -parameters
+### -param Register [in]
 
-### -param Register 
 
-[in]
 Pointer to the register address, which must be a mapped range in memory space.
 
 ## -returns
@@ -61,4 +59,8 @@ Pointer to the register address, which must be a mapped range in memory space.
 
 ## -remarks
 
-Callers of the **READ_REGISTER_ULONG64** macro can be running at any IRQL, assuming the *Register* address is resident, mapped device memory. 
+This routine inserts a memory barrier into your code. This barrier guarantees that every operation that appears in the source code before the call to this routine will complete before any operation that appears after the call.
+
+For more info about memory barriers, see [**KeMemoryBarrier**](./nf-wdm-kememorybarrier.md).
+
+Callers of the **READ_REGISTER_ULONG64** macro can be running at any IRQL, assuming the *Register* address is resident, mapped device memory.

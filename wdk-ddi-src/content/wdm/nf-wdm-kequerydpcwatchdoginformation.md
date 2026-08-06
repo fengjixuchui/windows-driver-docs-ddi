@@ -4,7 +4,6 @@ title: KeQueryDpcWatchdogInformation function (wdm.h)
 description: The KeQueryDpcWatchdogInformation routine returns the deferred procedure call (DPC) watchdog timer values for the current processor.
 old-location: kernel\kequerydpcwatchdoginformation.htm
 tech.root: kernel
-ms.assetid: d776b815-815b-491d-b84b-5bf1944c9fac
 ms.date: 07/28/2020
 keywords: ["KeQueryDpcWatchdogInformation function"]
 ms.keywords: KeQueryDpcWatchdogInformation, KeQueryDpcWatchdogInformation routine [Kernel-Mode Driver Architecture], k105_0a2f37cc-0062-4315-b7f1-9bbe814d69b4.xml, kernel.kequerydpcwatchdoginformation, wdm/KeQueryDpcWatchdogInformation
@@ -50,9 +49,9 @@ The <b>KeQueryDpcWatchdogInformation</b> routine returns the deferred procedure 
 
 ## -parameters
 
-### -param WatchdogInformation 
+### -param WatchdogInformation [out]
 
-[out]
+
 A pointer to a caller-supplied <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_kdpc_watchdog_information">KDPC_WATCHDOG_INFORMATION</a> structure. The routine writes the current DPC watchdog timer values to this structure.
 
 ## -returns

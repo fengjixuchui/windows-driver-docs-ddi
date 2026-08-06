@@ -4,7 +4,6 @@ title: _WWAN_NETWORK_IDLE_HINT (wwan.h)
 description: The WWAN_NETWORK_IDLE_HINT structure contains a hint for the network interface regarding whether data is expected to be active or idle on the interface.
 old-location: netvista\wwan_network_idle_hint.htm
 tech.root: netvista
-ms.assetid: 954DE5B5-F08F-4805-8CA0-8C42CB1750FA
 ms.date: 05/02/2018
 keywords: ["WWAN_NETWORK_IDLE_HINT structure"]
 ms.keywords: "*PWWAN_NETWORK_IDLE_HINT, PWWAN_NETWORK_IDLE_HINT, PWWAN_NETWORK_IDLE_HINT structure pointer [Network Drivers Starting with Windows Vista], WWAN_NETWORK_IDLE_HINT, WWAN_NETWORK_IDLE_HINT structure [Network Drivers Starting with Windows Vista], _WWAN_NETWORK_IDLE_HINT, netvista.wwan_network_idle_hint, wwan/PWWAN_NETWORK_IDLE_HINT, wwan/WWAN_NETWORK_IDLE_HINT"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_NETWORK_IDLE_HINT
+ - PWWAN_NETWORK_IDLE_HINT
  - WWAN_NETWORK_IDLE_HINT
 ---
 
@@ -65,3 +66,4 @@ If TRUE, this is a hint that the network interface should utilize mechanisms for
 
 
 <a href="/windows-hardware/drivers/network/oid-wwan-network-idle-hint">OID_WWAN_NETWORK_IDLE_HINT</a>
+

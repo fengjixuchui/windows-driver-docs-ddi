@@ -1,10 +1,9 @@
 ---
 UID: NC:drmk.PFNDRMGETCONTENTRIGHTS
 title: PFNDRMGETCONTENTRIGHTS (drmk.h)
-description: This callback function is reserved for system use.
+description: "Microsoft reserves the PFNDRMGETCONTENTRIGHTS callback function for internal use only. Don't use this function in your code."
 old-location: audio\pfndrmgetcontentrights.htm
 tech.root: audio
-ms.assetid: 1230C71C-9C1A-4F1F-8AA7-C814249675B5
 ms.date: 05/08/2018
 keywords: ["PFNDRMGETCONTENTRIGHTS callback function"]
 ms.keywords: DRMGetContentRights, DRMGetContentRights callback function [Audio Devices], PFNDRMGETCONTENTRIGHTS, PFNDRMGETCONTENTRIGHTS callback, PfnDRMGetContentRights, PfnDRMGetContentRights callback function [Audio Devices], audio.pfndrmgetcontentrights, drmk/PfnDRMGetContentRights
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Drmk.h
 api_name:
- - DRMGetContentRights
+ - PFNDRMGETCONTENTRIGHTS
 ---
 
 # PFNDRMGETCONTENTRIGHTS callback function
@@ -50,14 +49,14 @@ This callback function is reserved for system use.
 
 ## -parameters
 
-### -param ContentId 
+### -param ContentId [in]
 
-[in]
+
 This parameter is reserved for system use.
 
-### -param DrmRights 
+### -param DrmRights [out]
 
-[out]
+
 This parameter is reserved for system use.
 
 ## -returns

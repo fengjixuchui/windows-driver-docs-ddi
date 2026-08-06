@@ -3,7 +3,6 @@ UID: NS:mbbcx._MBB_DEVICE_CONFIG
 title: _MBB_DEVICE_CONFIG (mbbcx.h)
 description: The MBB_DEVICE_CONFIG structure contains pointers to a client driver's MBBCx-specific callback functions. The client driver must supply an initialized MBB_DEVICE_CONFIG structure as an input parameter to MbbDeviceInitialize.
 tech.root: netvista
-ms.assetid: cfe5c009-9245-4d41-992d-5cc5ce2ab711
 ms.date: 07/02/2018
 keywords: ["MBB_DEVICE_CONFIG structure"]
 ms.keywords: _MBB_DEVICE_CONFIG, MBB_DEVICE_CONFIG, *PMBB_DEVICE_CONFIG,
@@ -37,6 +36,8 @@ api_location:
  - mbbcx.h
 api_name:
  - _MBB_DEVICE_CONFIG
+ - PMBB_DEVICE_CONFIG
+ - MBB_DEVICE_CONFIG
 ---
 
 # _MBB_DEVICE_CONFIG structure
@@ -70,7 +71,7 @@ A pointer to the client driver's implementation of the [*EVT_MBB_DEVICE_CREATE_A
 
 ## -remarks
 
-Call [**MBB_DEVICE_CONFIG_INIT**](nf-mbbcx-mbb_device_config_init.md) to intialize this structure.
+Call [**MBB_DEVICE_CONFIG_INIT**](nf-mbbcx-mbb_device_config_init.md) to initialize this structure.
 
 ## -see-also
 

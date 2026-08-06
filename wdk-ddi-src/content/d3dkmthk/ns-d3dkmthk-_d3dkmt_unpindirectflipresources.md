@@ -1,16 +1,13 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_UNPINDIRECTFLIPRESOURCES
-title: _D3DKMT_UNPINDIRECTFLIPRESOURCES (d3dkmthk.h)
+title: D3DKMT_UNPINDIRECTFLIPRESOURCES (d3dkmthk.h)
 description: Arguments used to unpin direct flip resources.
-ms.assetid: 90139b21-7e55-404b-9c14-34d8946a9709
-ms.date: 10/19/2018
-keywords: ["D3DKMT_UNPINDIRECTFLIPRESOURCES structure"]
-ms.keywords: _D3DKMT_UNPINDIRECTFLIPRESOURCES, D3DKMT_UNPINDIRECTFLIPRESOURCES,
+ms.date: 07/17/2024
 req.header: d3dkmthk.h
 req.include-header: 
 req.target-type: 
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
 req.kmdf-ver: 
 req.umdf-ver: 
 req.lib: 
@@ -35,33 +32,31 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_UNPINDIRECTFLIPRESOURCES
+ - D3DKMT_UNPINDIRECTFLIPRESOURCES
 dev_langs:
  - c++
 ---
 
-# _D3DKMT_UNPINDIRECTFLIPRESOURCES structure
-
+# D3DKMT_UNPINDIRECTFLIPRESOURCES structure
 
 ## -description
 
-Arguments used to unpin direct flip resources.
+The **D3DKMT_UNPINDIRECTFLIPRESOURCES** structure contains arguments used to unpin direct flip resources.
 
 ## -struct-fields
 
-### -field hDevice
+### -field hDevice [in]
 
-[in] A handle to the device.
+A handle to the device.
 
-### -field ResourceCount
+### -field ResourceCount [in]
 
-[in] The number of resources to unpin.
+The number of resources to unpin.
 
-### -field pResourceList
+### -field pResourceList [in]
 
- 
-[in] An array of resource handles to unpin.
+An array of resource handles to unpin.
 
 ## -remarks
 
 ## -see-also
-

@@ -4,7 +4,6 @@ title: PROTOCOL_CM_NOTIFY_CLOSE_AF_COMPLETE (ndis.h)
 description: The ProtocolCmNotifyCloseAfComplete function indicates that a client has completed the closing of an address family (AF) that a stand-alone call manager or miniport call manager (MCM) started by calling the NdisCmNotifyCloseAddressFamily or NdisMCmNotifyCloseAddressFamily function, respectively.Note  You must declare the function by using the PROTOCOL_CM_NOTIFY_CLOSE_AF_COMPLETE type. For more information, see the following Examples section.
 old-location: netvista\protocolcmnotifycloseafcomplete.htm
 tech.root: netvista
-ms.assetid: c5bdedee-dacd-4f4d-a3d1-f1cb71a68001
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CM_NOTIFY_CLOSE_AF_COMPLETE callback function"]
 ms.keywords: PROTOCOL_CM_NOTIFY_CLOSE_AF_COMPLETE, PROTOCOL_CM_NOTIFY_CLOSE_AF_COMPLETE callback, ProtocolCmNotifyCloseAfComplete, ProtocolCmNotifyCloseAfComplete callback function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_f10e7b00-20f8-4bb0-a4c0-94855572fc08.xml, ndis/ProtocolCmNotifyCloseAfComplete, netvista.protocolcmnotifycloseafcomplete
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolCmNotifyCloseAfComplete
+ - PROTOCOL_CM_NOTIFY_CLOSE_AF_COMPLETE
 ---
 
 # PROTOCOL_CM_NOTIFY_CLOSE_AF_COMPLETE callback function
@@ -58,15 +57,15 @@ The
 
 ## -parameters
 
-### -param CallMgrAfContext 
+### -param CallMgrAfContext [in]
 
-[in]
+
 A handle to the call manager's AF context area that the call manager supplied to NDIS in the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_open_af">ProtocolCmOpenAf</a> function.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 The clients final status for the AF close notification. 
      <i>Status</i> can be one of the following:
      
@@ -146,3 +145,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_open_af">ProtocolCmOpenAf</a>
+

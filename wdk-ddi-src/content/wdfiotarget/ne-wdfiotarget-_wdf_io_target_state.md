@@ -4,7 +4,6 @@ title: _WDF_IO_TARGET_STATE (wdfiotarget.h)
 description: The WDF_IO_TARGET_STATE enumeration specifies the states that an I/O target can be in.
 old-location: wdf\wdf_io_target_state.htm
 tech.root: wdf
-ms.assetid: 0189a83d-da46-49f1-99b8-8fb920009804
 ms.date: 02/26/2018
 keywords: ["WDF_IO_TARGET_STATE enumeration"]
 ms.keywords: "*PWDF_IO_TARGET_STATE, DFIOTargetRef_0dbd75b8-eb70-4996-8a13-80fb90f86dca.xml, PWDF_IO_TARGET_STATE, PWDF_IO_TARGET_STATE enumeration pointer, WDF_IO_TARGET_STATE, WDF_IO_TARGET_STATE enumeration, WdfIoTargetClosed, WdfIoTargetClosedForQueryRemove, WdfIoTargetDeleted, WdfIoTargetPurged, WdfIoTargetStarted, WdfIoTargetStateUndefined, WdfIoTargetStopped, _WDF_IO_TARGET_STATE, kmdf.wdf_io_target_state, wdf.wdf_io_target_state, wdfiotarget/PWDF_IO_TARGET_STATE, wdfiotarget/WDF_IO_TARGET_STATE, wdfiotarget/WdfIoTargetClosed, wdfiotarget/WdfIoTargetClosedForQueryRemove, wdfiotarget/WdfIoTargetDeleted, wdfiotarget/WdfIoTargetPurged, wdfiotarget/WdfIoTargetStarted, wdfiotarget/WdfIoTargetStateUndefined, wdfiotarget/WdfIoTargetStopped, wudfddi_types/PWDF_IO_TARGET_STATE, wudfddi_types/WDF_IO_TARGET_STATE, wudfddi_types/WdfIoTargetClosed, wudfddi_types/WdfIoTargetClosedForQueryRemove, wudfddi_types/WdfIoTargetDeleted, wudfddi_types/WdfIoTargetPurged, wudfddi_types/WdfIoTargetStarted, wudfddi_types/WdfIoTargetStateUndefined, wudfddi_types/WdfIoTargetStopped"
@@ -43,6 +42,8 @@ api_location:
  - wdfiotarget.h
  - wudfddi_types.h
 api_name:
+ - _WDF_IO_TARGET_STATE
+ - PWDF_IO_TARGET_STATE
  - WDF_IO_TARGET_STATE
 ---
 
@@ -57,7 +58,7 @@ The <b>WDF_IO_TARGET_STATE</b> enumeration specifies the states that an I/O targ
 
 ## -enum-fields
 
-### -field WdfIoTargetStateUndefined
+### -field WdfIoTargetStateUndefined:0
 
 Reserved for internal use.
 
@@ -94,3 +95,4 @@ For more information about states for I/O targets, see <a href="/windows-hardwar
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetgetstate">WdfIoTargetGetState</a>
+

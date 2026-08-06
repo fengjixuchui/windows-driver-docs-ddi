@@ -4,7 +4,6 @@ title: IDebugClient5::GetNumberEventCallbacks (dbgeng.h)
 description: The GetNumberEventCallbacks method returns the number of event callbacks that are interested in the given events.
 old-location: debugger\getnumbereventcallbacks.htm
 tech.root: debugger
-ms.assetid: 02001bad-bafe-432d-bc07-011cb6981ae6
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::GetNumberEventCallbacks"]
 ms.keywords: GetNumberEventCallbacks, GetNumberEventCallbacks method [Windows Debugging], GetNumberEventCallbacks method [Windows Debugging],IDebugClient5 interface, IDebugClient5 interface [Windows Debugging],GetNumberEventCallbacks method, IDebugClient5.GetNumberEventCallbacks, IDebugClient5::GetNumberEventCallbacks, IDebugClient_976101a5-6218-475a-b8e9-e7091e2524d6.xml, dbgeng/IDebugClient5::GetNumberEventCallbacks, debugger.getnumbereventcallbacks
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient5.GetNumberEventCallbacks
+ - IDebugClient5::GetNumberEventCallbacks
 ---
 
 # IDebugClient5::GetNumberEventCallbacks
@@ -50,14 +49,14 @@ The <b>GetNumberEventCallbacks</b> method returns the number of event callbacks 
 
 ## -parameters
 
-### -param EventFlags 
+### -param EventFlags [in]
 
-[in]
+
 Specifies a set of events used to filter out some of the event callbacks; only event callbacks that have indicated an interest in one of the events in <i>EventFlags</i> will be counted.  See <a href="/previous-versions/ff541478(v=vs.85)">DEBUG_EVENT_XXX</a> for a list of the events.
 
-### -param Count 
+### -param Count [out]
 
-[out]
+
 Receives the number of event callbacks that are interested in at least one of the events in <i>EventFlags</i>.
 
 ## -returns
@@ -111,3 +110,4 @@ For more information about callbacks, see <a href="/windows-hardware/drivers/deb
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-seteventcallbacks">SetEventCallbacks</a>
+

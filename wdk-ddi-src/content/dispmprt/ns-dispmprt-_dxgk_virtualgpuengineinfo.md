@@ -3,11 +3,8 @@ UID: NS:dispmprt._DXGK_VIRTUALGPUENGINEINFO
 title: _DXGK_VIRTUALGPUENGINEINFO
 description: The virtual GPU engine info.
 tech.root: display
-ms.assetid: aa646d1b-2a8c-4d5a-9cdd-2d7fc4ae68c8
 ms.date: 04/04/2019
 keywords: ["DXGK_VIRTUALGPUENGINEINFO structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _DXGK_VIRTUALGPUENGINEINFO, DXGK_VIRTUALGPUENGINEINFO, *PDXGK_VIRTUALGPUENGINEINFO,
 req.header: dispmprt.h
 req.include-header: 
@@ -39,8 +36,8 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGK_VIRTUALGPUENGINEINFO
-product:
- - Windows
+ - PDXGK_VIRTUALGPUENGINEINFO
+ - DXGK_VIRTUALGPUENGINEINFO
 dev_langs:
  - c++
 ---

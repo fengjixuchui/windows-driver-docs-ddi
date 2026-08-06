@@ -4,7 +4,6 @@ title: PREGISTER_NOTIFICATION_EVENT (hdaudio.h)
 description: The RegisterNotificationEvent routine registers a kernel event so that it can receive DMA progress notifications.The function pointer type for a RegisterNotificationEvent routine is defined as follows.
 old-location: audio\registernotificationevent.htm
 tech.root: audio
-ms.assetid: 44702d79-80ac-411f-ae47-bf60b9cb541d
 ms.date: 05/08/2018
 keywords: ["PREGISTER_NOTIFICATION_EVENT callback function"]
 ms.keywords: PREGISTER_NOTIFICATION_EVENT, PREGISTER_NOTIFICATION_EVENT callback, RegisterNotificationEvent, RegisterNotificationEvent callback function [Audio Devices], aud-prop2_fa7a1f01-c553-40df-971b-932f8da48353.xml, audio.registernotificationevent, hdaudio/RegisterNotificationEvent
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Hdaudio.h
 api_name:
- - RegisterNotificationEvent
+ - PREGISTER_NOTIFICATION_EVENT
 ---
 
 # PREGISTER_NOTIFICATION_EVENT callback function
@@ -52,19 +51,19 @@ The function pointer type for a <i>RegisterNotificationEvent</i> routine is defi
 
 ## -parameters
 
-### -param _context 
+### -param _context [in]
 
-[in]
+
 Specifies the context value from the Context member of the <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a> structure.
 
-### -param Handle 
+### -param Handle [in]
 
-[in]
+
 Handle that identifies the DMA engine. This handle value was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_capture_dma_engine">AllocateCaptureDmaEngine</a> or <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_render_dma_engine">AllocateRenderDmaEngine</a>.
 
-### -param NotificationEvent 
+### -param NotificationEvent [in]
 
-[in]
+
 A pointer to a kernel event that must be notified as DMA progresses.  Depending on the notification count parameter that is used with <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_dma_buffer_with_notification">AllocateDmaBufferWithNotification</a>, the registered event is signaled one or two times for every time that the DMA passes through the audio buffer.
 
 ## -returns
@@ -94,3 +93,4 @@ A pointer to a kernel event that must be notified as DMA progresses.  Depending 
 
 
 <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-punregister_notification_event">UnregisterNotificationEvent</a>
+

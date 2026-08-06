@@ -4,14 +4,13 @@ title: _D3DKMDT_STAGINGSURFACEDATA (d3dkmdt.h)
 description: The D3DKMDT_STAGINGSURFACEDATA structure describes the lockable staging surface that data is transferred into from an application's back buffer.
 old-location: display\d3dkmdt_stagingsurfacedata.htm
 tech.root: display
-ms.assetid: 6de0bd43-8f19-47f7-adbf-76ea312bd990
 ms.date: 05/10/2018
 keywords: ["D3DKMDT_STAGINGSURFACEDATA structure"]
 ms.keywords: D3DKMDT_STAGINGSURFACEDATA, D3DKMDT_STAGINGSURFACEDATA structure [Display Devices], DmStructs_94b90abc-85db-4439-a20b-9edeb1a69733.xml, _D3DKMDT_STAGINGSURFACEDATA, d3dkmdt/D3DKMDT_STAGINGSURFACEDATA, display.d3dkmdt_stagingsurfacedata
 req.header: d3dkmdt.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmdt.h
 api_name:
+ - _D3DKMDT_STAGINGSURFACEDATA
  - D3DKMDT_STAGINGSURFACEDATA
 ---
 
@@ -52,17 +52,17 @@ The D3DKMDT_STAGINGSURFACEDATA structure describes the lockable staging surface 
 
 ## -struct-fields
 
-### -field Width
+### -field Width [in]
 
-[in] The width of the staging buffer, in pixels.
+The width of the staging buffer, in pixels.
 
-### -field Height
+### -field Height [in]
 
-[in] The height of the staging buffer, in pixels.
+The height of the staging buffer, in pixels.
 
-### -field Pitch
+### -field Pitch [out]
 
-[out] The width of the staging buffer, in bytes. The driver must return the pitch value because the staging buffer is lockable.
+The width of the staging buffer, in bytes. The driver must return the pitch value because the staging buffer is lockable.
 
 ## -remarks
 
@@ -103,3 +103,4 @@ This staging surface is always created as an 8-bits-per-color RGB pixel format (
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_present">Present</a>
+

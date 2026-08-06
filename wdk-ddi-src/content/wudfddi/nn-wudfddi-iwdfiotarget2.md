@@ -4,7 +4,6 @@ title: IWDFIoTarget2 (wudfddi.h)
 description: To obtain the IWDFIoTarget2 interface, drivers call IWDFIoTarget::QueryInterface.
 old-location: wdf\iwdfiotarget2.htm
 tech.root: wdf
-ms.assetid: 52ce1c63-b2cf-4eda-b056-4f1f999110c5
 ms.date: 02/26/2018
 keywords: ["IWDFIoTarget2 interface"]
 ms.keywords: IWDFIoTarget2, IWDFIoTarget2 interface, IWDFIoTarget2 interface,described, UMDFIoTargetObjectRef_7639fcef-e463-4500-94a0-132b63e1e564.xml, umdf.iwdfiotarget2, wdf.iwdfiotarget2, wudfddi/IWDFIoTarget2
@@ -52,7 +51,7 @@ To obtain the <b>IWDFIoTarget2</b> interface, drivers call <b>IWDFIoTarget::Quer
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFIoTarget2</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotarget">IWDFIoTarget</a>. <b>IWDFIoTarget2</b> also has these types of members:
+The <b>IWDFIoTarget2</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotarget">IWDFIoTarget</a>. <b>IWDFIoTarget2</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>

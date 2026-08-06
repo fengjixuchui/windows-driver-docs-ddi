@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_COPY_DESCRIPTORS_SIMPLE_0003
 title: PFND3D12DDI_COPY_DESCRIPTORS_SIMPLE_0003 (d3d12umddi.h)
 description: Copies a descriptor.
-ms.assetid: 25baad7c-0250-45bd-8257-6d6ffc35810f
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_COPY_DESCRIPTORS_SIMPLE_0003 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_COPY_DESCRIPTORS_SIMPLE_0003
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,7 +48,7 @@ Copies a descriptor.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 

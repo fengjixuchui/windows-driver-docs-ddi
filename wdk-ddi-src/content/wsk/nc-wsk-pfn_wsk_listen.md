@@ -4,7 +4,6 @@ title: PFN_WSK_LISTEN (wsk.h)
 description: The WskListen function enables a stream socket to listen for incoming connections at the socket's bound address.
 old-location: netvista\wsklisten.htm
 tech.root: netvista
-ms.assetid: 854C2DA1-1763-4354-8B9D-9AE0C60D8F31
 ms.date: 05/02/2018
 keywords: ["PFN_WSK_LISTEN callback function"]
 ms.keywords: PFN_WSK_LISTEN, PFN_WSK_LISTEN callback, WskListen, WskListen callback function [Network Drivers Starting with Windows Vista], netvista.wsklisten, wsk/WskListen
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wsk.h
 api_name:
- - WskListen
+ - PFN_WSK_LISTEN
 ---
 
 # PFN_WSK_LISTEN callback function
@@ -50,16 +49,16 @@ api_name:
 
 ## -parameters
 
-### -param Socket 
+### -param Socket [in]
 
-[in]
+
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_socket">WSK_SOCKET</a> structure that specifies the socket
      object for the stream socket that is listening for an incoming connection. This socket must have previously been bound to a local transport address by calling <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_bind">WskBind</a>.
 
-### -param Irp 
+### -param Irp [in, out]
 
-[in, out]
+
 A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the listen operation
      asynchronously. For more information about using IRPs with WSK functions, see 
      <a href="/windows-hardware/drivers/network/using-irps-with-winsock-kernel-functions">Using IRPs with Winsock
@@ -148,3 +147,4 @@ A WSK application can call the <b>WskListen</b> function only on a stream socket
 
 
 <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_close_socket">WskCloseSocket</a>
+

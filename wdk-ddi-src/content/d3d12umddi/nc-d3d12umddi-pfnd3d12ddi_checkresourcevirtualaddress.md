@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_CHECKRESOURCEVIRTUALADDRESS
 title: PFND3D12DDI_CHECKRESOURCEVIRTUALADDRESS (d3d12umddi.h)
 description: Check resource virtual address.
-ms.assetid: e54aa0b0-c2ef-44db-9053-3ceeb71cf9a8
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CHECKRESOURCEVIRTUALADDRESS callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CHECKRESOURCEVIRTUALADDRESS
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ Check resource virtual address.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 ## -returns
 

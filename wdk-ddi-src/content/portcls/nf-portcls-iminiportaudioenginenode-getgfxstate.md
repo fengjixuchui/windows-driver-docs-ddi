@@ -4,7 +4,6 @@ title: IMiniportAudioEngineNode::GetGfxState (portcls.h)
 description: Gets the state of the global effects (GFX) node in the audio engine.
 old-location: audio\iminiportaudioenginenode_getgfxstate.htm
 tech.root: audio
-ms.assetid: C2D4EB3E-0A39-4458-B0E7-C6D943AB4203
 ms.date: 05/08/2018
 keywords: ["IMiniportAudioEngineNode::GetGfxState"]
 ms.keywords: GetGfxState, GetGfxState method [Audio Devices], GetGfxState method [Audio Devices],IMiniportAudioEngineNode interface, IMiniportAudioEngineNode interface [Audio Devices],GetGfxState method, IMiniportAudioEngineNode.GetGfxState, IMiniportAudioEngineNode::GetGfxState, audio.iminiportaudioenginenode_getgfxstate, portcls/IMiniportAudioEngineNode::GetGfxState
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IMiniportAudioEngineNode.GetGfxState
+ - IMiniportAudioEngineNode::GetGfxState
 ---
 
 # IMiniportAudioEngineNode::GetGfxState
@@ -50,14 +49,14 @@ Gets the state of the global effects (GFX) node in the audio engine.
 
 ## -parameters
 
-### -param ulNodeId 
+### -param ulNodeId [in]
 
-[in]
+
 The ID of the GFX node.
 
-### -param pbEnable 
+### -param pbEnable [out]
 
-[out]
+
 Pointer to a <b>BOOL</b> data type.
 
 ## -returns
@@ -67,3 +66,4 @@ Pointer to a <b>BOOL</b> data type.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportaudioenginenode">IMiniportAudioEngineNode</a>
+

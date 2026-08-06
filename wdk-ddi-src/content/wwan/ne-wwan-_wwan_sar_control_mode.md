@@ -3,7 +3,6 @@ UID: NE:wwan._WWAN_SAR_CONTROL_MODE
 title: _WWAN_SAR_CONTROL_MODE (wwan.h)
 description: The WWAN_SAR_CONTROL_MODE enumeration specifies how the SAR back off mechanism is controlled.
 tech.root: netvista
-ms.assetid: a951b293-b261-4daa-aeb6-7a037ea5fc47
 ms.date: 08/20/2018
 keywords: ["WWAN_SAR_CONTROL_MODE enumeration"]
 ms.keywords: _WWAN_SAR_CONTROL_MODE, WWAN_SAR_CONTROL_MODE, *PWWAN_SAR_CONTROL_MODE,
@@ -34,6 +33,8 @@ api_location:
  - wwan.h
 api_name:
  - _WWAN_SAR_CONTROL_MODE
+ - PWWAN_SAR_CONTROL_MODE
+ - WWAN_SAR_CONTROL_MODE
 ---
 
 # _WWAN_SAR_CONTROL_MODE enumeration
@@ -66,3 +67,4 @@ This enumeration is used in the [**WWAN_SAR_CONFIG_INFO**](ns-wwan-_wwan_sar_con
 [**WWAN_SAR_CONFIG_INFO**](ns-wwan-_wwan_sar_config_info.md)
 
 [**WWAN_SET_SAR_CONFIG**](ns-wwan-_wwan_set_sar_config.md)
+

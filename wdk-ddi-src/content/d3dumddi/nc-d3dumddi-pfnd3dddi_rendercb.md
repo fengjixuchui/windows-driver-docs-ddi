@@ -4,7 +4,6 @@ title: PFND3DDDI_RENDERCB (d3dumddi.h)
 description: The pfnRenderCb function submits the current command buffer for rendering to the display miniport driver.
 old-location: display\pfnrendercb.htm
 tech.root: display
-ms.assetid: f242162e-6237-469c-b178-5a51dcf69e32
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_RENDERCB callback function"]
 ms.keywords: D3Druntime_Functions_487738b4-19e4-464f-80cc-d3b83eef1c6f.xml, PFND3DDDI_RENDERCB, PFND3DDDI_RENDERCB callback, d3dumddi/pfnRenderCb, display.pfnrendercb, pfnRenderCb, pfnRenderCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnRenderCb
-product:
- - Windows
+ - PFND3DDDI_RENDERCB
 ---
 
 # PFND3DDDI_RENDERCB callback function
@@ -56,7 +53,7 @@ The <b>pfnRenderCb</b> function submits the current command buffer for rendering
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -166,3 +163,4 @@ VOID CD3DContext::SubmitDXVABuffer(DWORD Size) {
 
 
 <a href="/previous-versions/ff568895(v=vs.85)">pfnCreateContextCb</a>
+

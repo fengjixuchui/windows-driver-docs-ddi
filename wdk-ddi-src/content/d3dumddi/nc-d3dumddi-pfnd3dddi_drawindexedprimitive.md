@@ -4,7 +4,6 @@ title: PFND3DDDI_DRAWINDEXEDPRIMITIVE (d3dumddi.h)
 description: The DrawIndexedPrimitive function draws indexed primitives that the Microsoft Direct3D runtime has not transformed the index data in.
 old-location: display\drawindexedprimitive.htm
 tech.root: display
-ms.assetid: 12bb6274-d042-43bb-b9f5-1417f42da729
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DRAWINDEXEDPRIMITIVE callback function"]
 ms.keywords: DrawIndexedPrimitive, DrawIndexedPrimitive callback function [Display Devices], PFND3DDDI_DRAWINDEXEDPRIMITIVE, PFND3DDDI_DRAWINDEXEDPRIMITIVE callback, UserModeDisplayDriver_Functions_427fa7b5-5b52-4314-b097-aea6d27cb535.xml, d3dumddi/DrawIndexedPrimitive, display.drawindexedprimitive
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - DrawIndexedPrimitive
-product:
- - Windows
+ - PFND3DDDI_DRAWINDEXEDPRIMITIVE
 ---
 
 # PFND3DDDI_DRAWINDEXEDPRIMITIVE callback function
@@ -56,7 +53,7 @@ The <b>DrawIndexedPrimitive</b> function draws indexed primitives that the Micro
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -77,3 +74,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dd
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_drawindexedprimitive2">DrawIndexedPrimitive2</a>
+

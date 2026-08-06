@@ -4,7 +4,6 @@ title: _SetPersistentEntry_IN (hbapiwmi.h)
 description: The SetPersistentEntry_IN structure is used by a WMI client to deliver the input parameter data of the SetPersistentEntry WMI method to the HBA miniport driver.
 old-location: storage\setpersistententry_in.htm
 tech.root: storage
-ms.assetid: f088a623-e6e8-4810-a7ab-90348f669dac
 ms.date: 03/29/2018
 keywords: ["SetPersistentEntry_IN structure"]
 ms.keywords: "*PSetPersistentEntry_IN, PSetPersistentEntry_IN, PSetPersistentEntry_IN structure pointer [Storage Devices], SetPersistentEntry_IN, SetPersistentEntry_IN structure [Storage Devices], _SetPersistentEntry_IN, hbapiwmi/PSetPersistentEntry_IN, hbapiwmi/SetPersistentEntry_IN, storage.setpersistententry_in, structs-Fibre_7382da5e-059a-4e11-9db7-dbc3dae24928.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hbapiwmi.h
 api_name:
+ - _SetPersistentEntry_IN
+ - PSetPersistentEntry_IN
  - SetPersistentEntry_IN
 ---
 
@@ -69,3 +70,4 @@ The WMI tool suite generates a declaration of the SetPersistentEntry_IN structur
 ## -see-also
 
 <a href="/windows-hardware/drivers/storage/setpersistententry">SetPersistentEntry</a>
+

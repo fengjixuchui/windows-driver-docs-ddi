@@ -2,9 +2,7 @@
 UID: NS:d3d12umddi.D3D12DDI_DISPATCH_MESH_ARGUMENTS
 title: D3D12DDI_DISPATCH_MESH_ARGUMENTS
 ms.date: 03/24/2020
-ms.topic: language-reference
 targetos: Windows
-ms.assetid: c541dbc0-e49d-418d-a21d-de2e67c14c5f
 tech.root: display
 description: Mesh shader threadgroups.
 req.construct-type: structure
@@ -57,7 +55,7 @@ Tread group count in the Z direction.
 
 ## -remarks
 
-The total number of threads is **ThreadGroupCountX * ThreadGroupCountY * ThreadGroupCountZ**.
+The total number of threads is **ThreadGroupCountX \* ThreadGroupCountY \* ThreadGroupCountZ**.
 
 See the [Mesh Shader Specification](https://microsoft.github.io/DirectX-Specs/d3d/MeshShader.html) for more information.
 

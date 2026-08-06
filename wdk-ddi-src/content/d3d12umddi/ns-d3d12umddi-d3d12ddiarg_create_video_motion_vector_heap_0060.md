@@ -3,11 +3,8 @@ UID: NS:d3d12umddi.D3D12DDIARG_CREATE_VIDEO_MOTION_VECTOR_HEAP_0060
 title: D3D12DDIARG_CREATE_VIDEO_MOTION_VECTOR_HEAP_0060
 description: Arguments used to create a video motion vector heap.
 tech.root: display
-ms.assetid: ec111d01-4b9b-4944-bf67-52c704007084
 ms.date: 04/04/2019
 keywords: ["D3D12DDIARG_CREATE_VIDEO_MOTION_VECTOR_HEAP_0060 structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: D3D12DDIARG_CREATE_VIDEO_MOTION_VECTOR_HEAP_0060, D3D12DDIARG_CREATE_VIDEO_MOTION_VECTOR_HEAP_0060,
 req.header: d3d12umddi.h
 req.include-header: 
@@ -35,8 +32,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - D3D12DDIARG_CREATE_VIDEO_MOTION_VECTOR_HEAP_0060
-product:
- - Windows
 dev_langs:
  - c++
 ---

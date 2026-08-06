@@ -4,7 +4,6 @@ title: PFND3DDDI_SETDISPLAYMODECB (d3dumddi.h)
 description: The pfnSetDisplayModeCb function sets the allocation that is used to scan out to the display.
 old-location: display\pfnsetdisplaymodecb.htm
 tech.root: display
-ms.assetid: a1f58757-809d-4351-8b1a-fd4420981c24
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETDISPLAYMODECB callback function"]
 ms.keywords: D3Druntime_Functions_717329e1-853d-498e-8792-ba6468825cbb.xml, PFND3DDDI_SETDISPLAYMODECB, PFND3DDDI_SETDISPLAYMODECB callback, d3dumddi/pfnSetDisplayModeCb, display.pfnsetdisplaymodecb, pfnSetDisplayModeCb, pfnSetDisplayModeCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnSetDisplayModeCb
-product:
- - Windows
+ - PFND3DDDI_SETDISPLAYMODECB
 ---
 
 # PFND3DDDI_SETDISPLAYMODECB callback function
@@ -56,7 +53,7 @@ The <b>pfnSetDisplayModeCb</b> function sets the allocation that is used to scan
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -124,3 +121,4 @@ HRESULT CD3DContext::SetDisplayMode(CONST D3DDDIARG_SETDISPLAYMODE* pSetDisplayM
 
 
 <a href="/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi1_1_ddi_base_functions">SetDisplayModeDXGI</a>
+

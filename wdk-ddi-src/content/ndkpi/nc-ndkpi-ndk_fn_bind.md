@@ -4,7 +4,6 @@ title: NDK_FN_BIND (ndkpi.h)
 description: The NdkBind (NDK_FN_BIND) function binds a memory window to a specific sub-region of a memory region (MR).
 old-location: netvista\ndk_fn_bind.htm
 tech.root: netvista
-ms.assetid: F363C538-A5D7-4A08-B7CD-CA7D7346AC10
 ms.date: 05/02/2018
 keywords: ["NDK_FN_BIND callback function"]
 ms.keywords: NDK_FN_BIND, NDK_FN_BIND callback, NDK_OP_FLAG_ALLOW_REMOTE_READ, NDK_OP_FLAG_ALLOW_REMOTE_WRITE, NDK_OP_FLAG_DEFER, NDK_OP_FLAG_READ_FENCE, NDK_OP_FLAG_SILENT_SUCCESS, NdkBind, NdkBind callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkBind, netvista.ndk_fn_bind
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkBind
+ - NDK_FN_BIND
 ---
 
 # NDK_FN_BIND callback function
@@ -50,41 +49,41 @@ The <i>NdkBind</i> (<i>NDK_FN_BIND</i>) function binds a memory window to a spec
 
 ## -parameters
 
-### -param pNdkQp 
+### -param pNdkQp [in]
 
-[in]
+
 A pointer to an NDK queue pair (QP) object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_qp">NDK_QP</a>).
 
-### -param RequestContext 
+### -param RequestContext [in, optional]
 
-[in, optional]
+
 A context value to return in the <b>RequestContext</b> member of the <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_result">NDK_RESULT</a> structure for this request.
 
-### -param pMr 
+### -param pMr [in]
 
-[in]
+
 A pointer to an NDK memory region (MR) object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_mr">NDK_MR</a>).
 
-### -param pMw 
+### -param pMw [in]
 
-[in]
+
 A pointer to an NDK memory window (MW) object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_mw">NDK_MW</a>).
 
-### -param VirtualAddress 
+### -param VirtualAddress [in]
 
-[in]
+
 A virtual address that must be greater than or equal to the virtual address of the MDL for the MR and less than the virtual address of the MDL for the MR plus the value in the <i>Length</i> parameter.
 
-Use the <a href="/windows-hardware/drivers/kernel/mm-bad-pointer">MmGetMdlVirtualAddress</a> macro to obtain the virtual address of the MDL for the MR.
+Use the [MmGetMdlVirtualAddress](../wdm/nf-wdm-mmgetmdlvirtualaddress.md) macro to obtain the virtual address of the MDL for the MR.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The length of the MR to bind to the MW.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A bitwise OR of flags which specifies the operations that are allowed. The following flags are supported:
 
 <table>
@@ -220,7 +219,7 @@ This function does not support a zero-based virtual address.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/kernel/mm-bad-pointer">MmGetMdlVirtualAddress</a>
+[MmGetMdlVirtualAddress](../wdm/nf-wdm-mmgetmdlvirtualaddress.md)
 
 
 
@@ -249,3 +248,4 @@ This function does not support a zero-based virtual address.
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_result">NDK_RESULT</a>
+

@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_22
+UID: NS:ks.KSP_TIMEFORMAT
 title: KSP_TIMEFORMAT (ks.h)
 description: The KSP_TIMEFORMAT structure corresponds to KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT.
 old-location: stream\ksp_timeformat.htm
 tech.root: stream
-ms.assetid: 18ce5fc5-927c-4261-8966-bb12849b95c9
 ms.date: 04/23/2018
 keywords: ["KSP_TIMEFORMAT structure"]
 ms.keywords: "*PKSP_TIMEFORMAT, KSP_TIMEFORMAT, KSP_TIMEFORMAT structure [Streaming Media Devices], PKSP_TIMEFORMAT, PKSP_TIMEFORMAT structure pointer [Streaming Media Devices], ks-struct_086a975b-f249-44e9-b1fa-4a945509722e.xml, ks/KSP_TIMEFORMAT, ks/PKSP_TIMEFORMAT, stream.ksp_timeformat"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSP_TIMEFORMAT
  - KSP_TIMEFORMAT
 ---
 
@@ -54,7 +54,7 @@ The KSP_TIMEFORMAT structure corresponds to <a href="/windows-hardware/drivers/s
 
 ### -field Property
 
-Specifies a <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure.
+Specifies a <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure.
 
 ### -field SourceFormat
 
@@ -75,3 +75,4 @@ The fields of the structure correspond one to one with DirectShow's IMediaSeekin
 ## -see-also
 
 <a href="/windows-hardware/drivers/stream/ksproperty-mediaseeking-converttimeformat">KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT</a>
+

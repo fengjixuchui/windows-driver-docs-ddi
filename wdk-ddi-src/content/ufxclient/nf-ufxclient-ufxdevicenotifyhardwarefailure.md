@@ -4,7 +4,6 @@ title: UfxDeviceNotifyHardwareFailure function (ufxclient.h)
 description: Notifies UFX about a non-recoverable hardware failure in the controller.
 old-location: buses\ufxdevicenotifyhardwarefailure.htm
 tech.root: usbref
-ms.assetid: 2EEA262C-5186-4450-A01D-212278ED710B
 ms.date: 05/07/2018
 keywords: ["UfxDeviceNotifyHardwareFailure function"]
 ms.keywords: UfxDeviceNotifyHardwareFailure, UfxDeviceNotifyHardwareFailure method [Buses], buses.ufxdevicenotifyhardwarefailure, ufxclient/UfxDeviceNotifyHardwareFailure
@@ -50,14 +49,14 @@ Notifies UFX about a non-recoverable hardware failure in the controller.
 
 ## -parameters
 
-### -param UfxDevice 
+### -param UfxDevice [in]
 
-[in]
+
 A handle to a UFX device object that the driver created by calling <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
 
-### -param HardwareFailureContext 
+### -param HardwareFailureContext [in, optional]
 
-[in, optional]
+
 Optional pointer to a client driver-defined <a href="/windows-hardware/drivers/ddi/ufxbase/ns-ufxbase-_ufx_hardware_failure_context">UFX_HARDWARE_FAILURE_CONTEXT</a> structure containing controller-specific information about the hardware failure.
 
 ## -remarks

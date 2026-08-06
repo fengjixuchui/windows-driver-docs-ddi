@@ -1,11 +1,9 @@
 ---
-UID: NE:minitape.__unnamed_enum_0
+UID: NE:minitape.STOR_POWER_ACTION
 title: STOR_POWER_ACTION (minitape.h)
-description: The STOR_POWER_ACTION enumerator indicates the power state that the system is about to enter during a power transition.
-old-location: storage\stor_power_action.htm
+description: The STOR_POWER_ACTION (minitape.h) contains values that indicate the power state that the system is about to enter during a power transition.
 tech.root: storage
-ms.assetid: ffc7c1ec-faec-4383-ab69-844cf68d054f
-ms.date: 03/29/2018
+ms.date: 09/26/2022
 keywords: ["STOR_POWER_ACTION enumeration"]
 ms.keywords: "*PSTOR_POWER_ACTION, PSTOR_POWER_ACTION, PSTOR_POWER_ACTION enumeration pointer [Storage Devices], STOR_POWER_ACTION, STOR_POWER_ACTION enumeration [Storage Devices], StorPowerActionHibernate, StorPowerActionNone, StorPowerActionReserved, StorPowerActionShutdown, StorPowerActionShutdownOff, StorPowerActionShutdownReset, StorPowerActionSleep, StorPowerActionWarmEject, storage.stor_power_action, storport/PSTOR_POWER_ACTION, storport/STOR_POWER_ACTION, storport/StorPowerActionHibernate, storport/StorPowerActionNone, storport/StorPowerActionReserved, storport/StorPowerActionShutdown, storport/StorPowerActionShutdownOff, storport/StorPowerActionShutdownReset, storport/StorPowerActionSleep, storport/StorPowerActionWarmEject, structs-storport_53754a67-bd34-4f06-92ba-2f45d7fa66a9.xml"
 req.header: minitape.h
@@ -40,15 +38,13 @@ api_type:
 api_location:
  - storport.h
 api_name:
+ - PSTOR_POWER_ACTION
  - STOR_POWER_ACTION
 ---
 
-# STOR_POWER_ACTION enumeration (minitape.h)
-
-
 ## -description
 
-The STOR_POWER_ACTION enumerator indicates the power state that the system is about to enter during a power transition.
+The **STOR_POWER_ACTION** enumerator indicates the power state that the system is about to enter during a power transition.
 
 ## -enum-fields
 
@@ -86,4 +82,4 @@ The system is preparing for ejection.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/storport/ns-storport-_scsi_power_request_block">SCSI_POWER_REQUEST_BLOCK</a>
+[SCSI_POWER_REQUEST_BLOCK](/windows-hardware/drivers/ddi/storport/ns-storport-_scsi_power_request_block)

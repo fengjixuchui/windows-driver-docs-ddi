@@ -1,10 +1,9 @@
 ---
-UID: NS:winspool.__unnamed_struct_1
+UID: NS:winspool.PrintNamedProperty
 title: PrintNamedProperty (winspool.h)
-description: 
+description: "Learn more about: PrintNamedProperty structure"
 old-location: print\printnamedproperty.htm
 tech.root: print
-ms.assetid: F7692594-DE13-4242-926C-F2706FF95E77
 ms.date: 04/20/2018
 keywords: ["PrintNamedProperty structure"]
 ms.keywords: PrintNamedProperty, PrintNamedProperty structure [Print Devices], print.printnamedproperty, winspool/PrintNamedProperty

@@ -4,7 +4,6 @@ title: WdfRequestRetrieveInputBuffer function (wdfrequest.h)
 description: The WdfRequestRetrieveInputBuffer method retrieves an I/O request's input buffer.
 old-location: wdf\wdfrequestretrieveinputbuffer.htm
 tech.root: wdf
-ms.assetid: fa02a787-502c-48a3-a5e1-710d7513c42e
 ms.date: 02/26/2018
 keywords: ["WdfRequestRetrieveInputBuffer function"]
 ms.keywords: DFRequestObjectRef_7b0c1902-f3a3-4b89-8a9d-3e05e1639fd3.xml, WdfRequestRetrieveInputBuffer, WdfRequestRetrieveInputBuffer method, kmdf.wdfrequestretrieveinputbuffer, wdf.wdfrequestretrieveinputbuffer, wdfrequest/WdfRequestRetrieveInputBuffer
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,23 +54,23 @@ The <b>WdfRequestRetrieveInputBuffer</b> method retrieves an I/O request's input
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
 ### -param MinimumRequiredLength
 
 <p>The minimum buffer size, in bytes, that the driver needs to process the I/O request.</p>
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 A pointer to a location that receives the buffer's address.
 
-### -param Length 
+### -param Length [out, optional]
 
-[out, optional]
+
 A pointer to a location that receives the buffer's size, in bytes. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

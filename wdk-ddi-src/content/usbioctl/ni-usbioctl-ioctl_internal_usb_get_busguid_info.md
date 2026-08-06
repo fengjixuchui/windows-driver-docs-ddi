@@ -4,7 +4,6 @@ title: IOCTL_INTERNAL_USB_GET_BUSGUID_INFO (usbioctl.h)
 description: The IOCTL_INTERNAL_USB_GET_BUSGUID_INFO IOCTL has been deprecated. Do not use.
 old-location: buses\ioctl_internal_usb_get_busguid_info.htm
 tech.root: usbref
-ms.assetid: 79a09c8d-ddea-4335-ac90-11438f4bede6
 ms.date: 05/07/2018
 keywords: ["IOCTL_INTERNAL_USB_GET_BUSGUID_INFO IOCTL"]
 ms.keywords: IOCTL_INTERNAL_USB_GET_BUSGUID_INFO, IOCTL_INTERNAL_USB_GET_BUSGUID_INFO control, IOCTL_INTERNAL_USB_GET_BUSGUID_INFO control code [Buses], buses.ioctl_internal_usb_get_busguid_info, usbioctl/IOCTL_INTERNAL_USB_GET_BUSGUID_INFO
@@ -49,6 +48,10 @@ api_name:
  The <b>IOCTL_INTERNAL_USB_GET_BUSGUID_INFO</b> IOCTL has been deprecated. Do not use.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
+
+[IRP_MJ_INTERNAL_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
 ### -input-buffer
 

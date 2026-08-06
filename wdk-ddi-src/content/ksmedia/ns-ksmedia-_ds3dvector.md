@@ -4,7 +4,6 @@ title: _DS3DVECTOR (ksmedia.h)
 description: The DS3DVECTOR structure contains three-dimensional position coordinates, position vector components, or velocity vector components.
 old-location: audio\ds3dvector.htm
 tech.root: audio
-ms.assetid: 828bb255-4640-4508-866e-e3641ca05773
 ms.date: 05/08/2018
 keywords: ["DS3DVECTOR structure"]
 ms.keywords: "*PDS3DVECTOR, DS3DVECTOR, DS3DVECTOR structure [Audio Devices], PDS3DVECTOR, PDS3DVECTOR structure pointer [Audio Devices], _DS3DVECTOR, aud-prop_3e17b5ec-c2fc-4e6c-bff1-27be36e376c9.xml, audio.ds3dvector, ksmedia/DS3DVECTOR, ksmedia/PDS3DVECTOR"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - _DS3DVECTOR
+ - PDS3DVECTOR
  - DS3DVECTOR
 ---
 
@@ -89,3 +90,4 @@ Specifies the z-component of the vector.
 
 
 <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksds3d_listener_orientation">KSDS3D_LISTENER_ORIENTATION</a>
+

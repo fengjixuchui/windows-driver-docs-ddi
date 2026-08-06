@@ -4,7 +4,6 @@ title: _NDIS_NIC_SWITCH_CAPABILITIES (ntddndis.h)
 description: The NDIS_NIC_SWITCH_CAPABILITIES structure specifies the capabilities of a NIC switch on the network adapter.
 old-location: netvista\ndis_nic_switch_capabilities.htm
 tech.root: netvista
-ms.assetid: bc4b56bd-583f-4b41-b5a7-90958ce65f42
 ms.date: 05/16/2019
 keywords: ["NDIS_NIC_SWITCH_CAPABILITIES structure"]
 ms.keywords: "*PNDIS_NIC_SWITCH_CAPABILITIES, NDIS_NIC_SWITCH_CAPABILITIES, NDIS_NIC_SWITCH_CAPABILITIES structure [Network Drivers Starting with Windows Vista], PNDIS_NIC_SWITCH_CAPABILITIES, PNDIS_NIC_SWITCH_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], _NDIS_NIC_SWITCH_CAPABILITIES, netvista.ndis_nic_switch_capabilities, ntddndis/NDIS_NIC_SWITCH_CAPABILITIES, ntddndis/PNDIS_NIC_SWITCH_CAPABILITIES, virtual_machine_queue_ref_b71fb086-5613-4ebb-ac19-97bd3bd9c55f.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_NIC_SWITCH_CAPABILITIES
+ - PNDIS_NIC_SWITCH_CAPABILITIES
  - NDIS_NIC_SWITCH_CAPABILITIES
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_NIC_SWITCH_CAPABILITIES</b> structure specifies the capabilities of 
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_NIC_SWITCH_CAPABILITIES</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_NIC_SWITCH_CAPABILITIES</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_NIC_SWITCH_CAPABILITIES</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to one of the following values: 
 
@@ -227,7 +228,7 @@ If this flag is set, available nondefault VPorts are created and assigned to the
 <div> </div>
 If this flag is not set, the creation and assignment of nondefault VPorts is reserved for VF assignment.  Additional nondefault VPorts  can be created and assigned to the PF. 
 
-For more information about VMQ, see <a href="/windows-hardware/drivers/network/virtual-machine-queue--vmq-">Virtual Machine Queue (VMQ)</a>.
+For more information about VMQ, see <a href="/windows-hardware/drivers/network/virtual-machine-queue-architecture">Virtual Machine Queue (VMQ)</a>.
 
 For more information about VPorts, see <a href="/windows-hardware/drivers/network/managing-virtual-ports">Managing Virtual Ports</a>.
 
@@ -393,7 +394,7 @@ OID query requests of <a href="/windows-hardware/drivers/network/oid-nic-switch-
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -406,3 +407,4 @@ OID query requests of <a href="/windows-hardware/drivers/network/oid-nic-switch-
 
 
 <a href="/windows-hardware/drivers/network/oid-nic-switch-hardware-capabilities">OID_NIC_SWITCH_HARDWARE_CAPABILITIES</a>
+

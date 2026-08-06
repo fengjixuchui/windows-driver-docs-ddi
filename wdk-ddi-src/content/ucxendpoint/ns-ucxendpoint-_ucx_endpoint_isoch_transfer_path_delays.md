@@ -4,7 +4,6 @@ title: _UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS (ucxendpoint.h)
 description: Stores the isochronous transfer path delay values.
 old-location: buses\ucx_endpoint_isoch_transfer_path_delays.htm
 tech.root: usbref
-ms.assetid: 5001C27B-EA5F-43C4-AD59-84B42041262E
 ms.date: 05/07/2018
 keywords: ["UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS structure"]
 ms.keywords: "*PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS structure pointer [Buses], UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS structure [Buses], _UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, buses.ucx_endpoint_isoch_transfer_path_delays, ucxendpoint/PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS, ucxendpoint/UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ucxendpoint.h
 api_name:
+ - _UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS
+ - PUCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS
  - UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS
 ---
 
@@ -65,3 +66,4 @@ The maximum delay in milliseconds from the time an isochronous transfer is compl
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ucxendpoint/nc-ucxendpoint-evt_ucx_endpoint_get_isoch_transfer_path_delays">EVT_UCX_ENDPOINT_GET_ISOCH_TRANSFER_PATH_DELAYS</a>
+

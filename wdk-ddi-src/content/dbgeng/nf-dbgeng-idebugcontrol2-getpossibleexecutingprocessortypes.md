@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl2.GetPossibleExecutingProcessorTypes
 title: IDebugControl2::GetPossibleExecutingProcessorTypes (dbgeng.h)
-description: The GetPossibleExecutingProcessorTypes method returns the processor types that are supported by the computer running the current target.
+description: Learn about the GetPossibleExecutingProcessorTypes method, which returns the processor types that are supported by the computer running the current target.
 old-location: debugger\getpossibleexecutingprocessortypes.htm
 tech.root: debugger
-ms.assetid: fb11b655-2528-447f-9f5e-3c9e4e040156
 ms.date: 05/03/2018
 keywords: ["IDebugControl2::GetPossibleExecutingProcessorTypes"]
 ms.keywords: GetPossibleExecutingProcessorTypes, GetPossibleExecutingProcessorTypes method [Windows Debugging], GetPossibleExecutingProcessorTypes method [Windows Debugging],IDebugControl interface, GetPossibleExecutingProcessorTypes method [Windows Debugging],IDebugControl2 interface, GetPossibleExecutingProcessorTypes method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],GetPossibleExecutingProcessorTypes method, IDebugControl2 interface [Windows Debugging],GetPossibleExecutingProcessorTypes method, IDebugControl2.GetPossibleExecutingProcessorTypes, IDebugControl2::GetPossibleExecutingProcessorTypes, IDebugControl3 interface [Windows Debugging],GetPossibleExecutingProcessorTypes method, IDebugControl3::GetPossibleExecutingProcessorTypes, IDebugControl::GetPossibleExecutingProcessorTypes, IDebugControl_582811e7-4eb0-4b94-a5d0-8c903ea8c2fe.xml, dbgeng/IDebugControl2::GetPossibleExecutingProcessorTypes, dbgeng/IDebugControl3::GetPossibleExecutingProcessorTypes, dbgeng/IDebugControl::GetPossibleExecutingProcessorTypes, debugger.getpossibleexecutingprocessortypes
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.GetPossibleExecutingProcessorTypes
- - IDebugControl2.GetPossibleExecutingProcessorTypes
- - IDebugControl3.GetPossibleExecutingProcessorTypes
+ - IDebugControl2::GetPossibleExecutingProcessorTypes
 ---
 
 # IDebugControl2::GetPossibleExecutingProcessorTypes
@@ -52,19 +49,19 @@ The <b>GetPossibleExecutingProcessorTypes</b> method returns the processor types
 
 ## -parameters
 
-### -param Start 
+### -param Start [in]
 
-[in]
+
 Specifies the index of the first processor type to return.  The processor types are indexed by numbers zero through to the number of processor types supported by the current target minus one.  The number of processor types supported by the current target can be found using <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getnumberpossibleexecutingprocessortypes">GetNumberPossibleExecutingProcessorTypes</a>.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies how many processor types to return.
 
-### -param Types 
+### -param Types [out]
 
-[out]
+
 Receives the list of processor types.  The number of elements this array holds is <i>Count</i>.  For a description of the processor types see <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getactualprocessortype">GetActualProcessorType</a>.
 
 ## -returns
@@ -112,3 +109,4 @@ For more information, see <a href="/windows-hardware/drivers/debugger/target-inf
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
+

@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_OPENSYNCHRONIZATIONOBJECT
 title: _D3DKMT_OPENSYNCHRONIZATIONOBJECT (d3dkmthk.h)
 description: The D3DKMT_OPENSYNCHRONIZATIONOBJECT structure describes a synchronization object that the D3DKMTOpenSynchronizationObject function opens.
 old-location: display\d3dkmt_opensynchronizationobject.htm
-ms.assetid: 58e71ce5-29d0-4ee2-8d91-02230021110d
 ms.date: 05/10/2018
 keywords: ["D3DKMT_OPENSYNCHRONIZATIONOBJECT structure"]
 ms.keywords: D3DKMT_OPENSYNCHRONIZATIONOBJECT, D3DKMT_OPENSYNCHRONIZATIONOBJECT structure [Display Devices], OpenGL_Structs_61f9f676-2b21-4cb3-8c6a-9f25ce3ac2bc.xml, _D3DKMT_OPENSYNCHRONIZATIONOBJECT, d3dkmthk/D3DKMT_OPENSYNCHRONIZATIONOBJECT, display.d3dkmt_opensynchronizationobject
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_OPENSYNCHRONIZATIONOBJECT
  - D3DKMT_OPENSYNCHRONIZATIONOBJECT
 ---
 
@@ -52,18 +52,19 @@ The D3DKMT_OPENSYNCHRONIZATIONOBJECT structure describes a synchronization objec
 
 ## -struct-fields
 
-### -field hSharedHandle
+### -field hSharedHandle [in]
 
-[in] A shared handle to the synchronization object to be opened.
+A shared handle to the synchronization object to be opened.
 
-### -field hSyncObject
+### -field hSyncObject [out]
 
-[out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the kernel-mode synchronization object in the current process.
+A D3DKMT_HANDLE data type that represents a kernel-mode handle to the kernel-mode synchronization object in the current process.
 
-### -field Reserved
+### -field Reserved [in]
 
-[in] An array of 64-bit values that are reserved for future use.
+An array of 64-bit values that are reserved for future use.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtopensynchronizationobject">D3DKMTOpenSynchronizationObject</a>
+

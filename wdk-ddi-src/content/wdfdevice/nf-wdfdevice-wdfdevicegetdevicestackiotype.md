@@ -4,7 +4,6 @@ title: WdfDeviceGetDeviceStackIoType function (wdfdevice.h)
 description: The WdfDeviceGetDeviceStackIoType method retrieves the buffer access methods that the framework is using for a device.
 old-location: wdf\wdfdevicegetdevicestackiotype.htm
 tech.root: wdf
-ms.assetid: E697F53C-2642-4E3F-AA8C-D0802B39D187
 ms.date: 02/26/2018
 keywords: ["WdfDeviceGetDeviceStackIoType function"]
 ms.keywords: WdfDeviceGetDeviceStackIoType, WdfDeviceGetDeviceStackIoType method, wdf.wdfdevicegetdevicestackiotype, wdfdevice/WdfDeviceGetDeviceStackIoType
@@ -52,19 +51,19 @@ The <b>WdfDeviceGetDeviceStackIoType</b> method retrieves the buffer access meth
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param ReadWriteIoType 
+### -param ReadWriteIoType [out]
 
-[out]
+
 A pointer to a driver-allocated location that receives a <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_device_io_type">WDF_DEVICE_IO_TYPE</a>-typed value. This value identifies the buffer access method that the framework is using for a device's read and write requests.
 
-### -param IoControlIoType 
+### -param IoControlIoType [out]
 
-[out]
+
 A pointer to a driver-allocated location that receives a <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_device_io_type">WDF_DEVICE_IO_TYPE</a>-typed value. This value that identifies the buffer access method that the framework is using for a device's I/O control requests.
 
 ## -remarks

@@ -4,7 +4,6 @@ title: RxSpinDownMRxDispatcher function (rxworkq.h)
 description: RxSpinDownMRxDispatcher tears down the dispatcher context for a network mini-redirector.
 old-location: ifsk\rxspindownmrxdispatcher.htm
 tech.root: ifsk
-ms.assetid: 0ec10c43-df57-4661-9106-8edc6b76f5d7
 ms.date: 04/16/2018
 keywords: ["RxSpinDownMRxDispatcher function"]
 ms.keywords: RxSpinDownMRxDispatcher, RxSpinDownMRxDispatcher function [Installable File System Drivers], ifsk.rxspindownmrxdispatcher, rxref_aa43a136-8df7-45f1-bf52-48792c094f31.xml, rxworkq/RxSpinDownMRxDispatcher
@@ -50,9 +49,9 @@ api_name:
 
 ## -parameters
 
-### -param pMRxDeviceObject 
+### -param pMRxDeviceObject [in, out]
 
-[in, out]
+
 A pointer to the device object of the corresponding network mini-redirector driver.
 
 ## -returns
@@ -63,7 +62,7 @@ A pointer to the device object of the corresponding network mini-redirector driv
 
 The <b>RxSpinDownMRxDispatcher</b> routine will set a tear down request into the driver device object of the network mini-redirector driver (the <b>DispatcherContext.pTearDownEvent</b> member of the device object is set to <b>&TearDownEvent</b>) and wait for the driver to tear down any outstanding worker threads. 
 
-The <b>RxSpinDownMRxDispatcher</b> routine is also called internally by the <b>RxStopMiniRdr</b> and <b>RxpUnregisterMinirdr</b> routines.
+The <b>RxSpinDownMRxDispatcher</b> routine is also called internally by the <b>RxStopMinirdr</b> and <b>RxpUnregisterMinirdr</b> routines.
 
 ## -see-also
 

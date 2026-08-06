@@ -4,7 +4,6 @@ title: EVT_UFX_DEVICE_ENDPOINT_ADD (ufxclient.h)
 description: The client driver's implementation to create a default endpoint object.
 old-location: buses\evt_ufx_device_endpoint_add.htm
 tech.root: usbref
-ms.assetid: F366990E-7FE3-401B-B8BE-E71EAFD3AC58
 ms.date: 05/07/2018
 keywords: ["EVT_UFX_DEVICE_ENDPOINT_ADD callback function"]
 ms.keywords: EVT_UFX_DEVICE_ENDPOINT_ADD, EVT_UFX_DEVICE_ENDPOINT_ADD callback, EvtUfxDeviceEndpointAdd, EvtUfxDeviceEndpointAdd callback function [Buses], PFN_UFX_DEVICE_ENDPOINT_ADD, PFN_UFX_DEVICE_ENDPOINT_ADD callback function pointer [Buses], buses.evt_ufx_device_endpoint_add, ufxclient/EvtUfxDeviceEndpointAdd
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ufxclient.h
 api_name:
- - PFN_UFX_DEVICE_ENDPOINT_ADD
+ - EVT_UFX_DEVICE_ENDPOINT_ADD
 ---
 
 # EVT_UFX_DEVICE_ENDPOINT_ADD callback function
@@ -50,19 +49,19 @@ The client driver's implementation to create a default endpoint object.
 
 ## -parameters
 
-#### - EndpointDescriptor [in]
+### -param unnamedParam1 [in]
+
+The handle to a  USB device object that the client driver received in a previous call to  the <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
+
+
+### -param unnamedParam2 [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_endpoint_descriptor">USB_ENDPOINT_DESCRIPTOR</a> structure that contains descriptor data.
 
 
-#### - EndpointInit [in, out]
+### -param unnamedParam3 [in, out]
 
 A pointer to an  UFXENDPOINT_INIT opaque structure that contains the endpoint descriptor required  to create an endpoint object.
-
-
-#### - UfxDevice [in]
-
-The handle to a  USB device object that the client driver received in a previous call to  the <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
 
 ## -returns
 
@@ -100,14 +99,14 @@ Arguments:
 
     UfxDevice - UFXDEVICE object representing the device.
 
-    EndpointDescriptor - Cosntant Pointer to Endpoint descriptor for the
+    EndpointDescriptor - Constant Pointer to Endpoint descriptor for the
         newly reported endpoint.
 
     EndpointInit - Pointer to the Opaque UFXENDPOINT_INIT object
 
 Return Value:
 
-    STATUS_SUCCESS on success, or an appropirate NTSTATUS message on failure.
+    STATUS_SUCCESS on success, or an appropriate NTSTATUS message on failure.
 
 --*/
 {
@@ -195,7 +194,6 @@ End:
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>
@@ -203,3 +201,4 @@ End:
 
 
 <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdeviceeventcomplete">UfxDeviceEventComplete</a>
+

@@ -4,7 +4,6 @@ title: ExtExtension::GetArgStr (engextcpp.h)
 description: The GetArgStr method returns a named string argument from the command line used to invoke the current extension command.
 old-location: debugger\getargstr.htm
 tech.root: debugger
-ms.assetid: a875b832-11dc-4cba-8fce-019bbb9ec7f2
 ms.date: 05/03/2018
 keywords: ["ExtExtension::GetArgStr"]
 ms.keywords: EngExtCpp_Ref_0a1f3246-41a5-4a2f-8656-45f8c17b6418.xml, ExtExtension class [Windows Debugging],GetArgStr method, ExtExtension.GetArgStr, ExtExtension::GetArgStr, GetArgStr, GetArgStr method [Windows Debugging], GetArgStr method [Windows Debugging],ExtExtension class, debugger.getargstr
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Engextcpp.hpp
 api_name:
- - ExtExtension.GetArgStr
+ - ExtExtension::GetArgStr
 ---
 
 # ExtExtension::GetArgStr
@@ -50,14 +49,14 @@ The <b>GetArgStr</b> method returns a named string argument from the command lin
 
 ## -parameters
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 Specifies the name of the argument.  The command-line description used in <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-ext_command">EXT_COMMAND</a> must specify that the type of this argument is string.
 
-### -param Required 
+### -param Required [in]
 
-[in]
+
 Specifies if the argument is required.  If <i>Required</i> is <code>true</code> and the argument was not present on the command line, <b>ExtInvalidArgumentException</b> is thrown.  You do not need to set this parameter; if it is not set <i>Required</i> defaults to <code>true</code>.
 
 ## -returns
@@ -79,3 +78,4 @@ This method should only be called during the execution of an extension command p
 
 
 <a href="/previous-versions/ff543981(v=vs.85)">ExtExtension</a>
+

@@ -4,7 +4,6 @@ title: IDebugSymbols3::GetModuleByModuleNameWide (dbgeng.h)
 description: The GetModuleByModuleNameWide method searches through the target's modules for one with the specified name.
 old-location: debugger\getmodulebymodulenamewide.htm
 tech.root: debugger
-ms.assetid: 66ec7c51-3d2c-4a25-a356-4df06ee1b1f5
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::GetModuleByModuleNameWide"]
 ms.keywords: GetModuleByModuleNameWide, GetModuleByModuleNameWide method [Windows Debugging], GetModuleByModuleNameWide method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],GetModuleByModuleNameWide method, IDebugSymbols3.GetModuleByModuleNameWide, IDebugSymbols3::GetModuleByModuleNameWide, dbgeng/IDebugSymbols3::GetModuleByModuleNameWide, debugger.getmodulebymodulenamewide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols3.GetModuleByModuleNameWide
+ - IDebugSymbols3::GetModuleByModuleNameWide
 ---
 
 # IDebugSymbols3::GetModuleByModuleNameWide
@@ -50,24 +49,24 @@ The <b>GetModuleByModuleNameWide</b>  method searches through the target's <a hr
 
 ## -parameters
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 Specifies the name of the desired module.
 
-### -param StartIndex 
+### -param StartIndex [in]
 
-[in]
+
 Specifies the index to start searching from.
 
-### -param Index 
+### -param Index [out, optional]
 
-[out, optional]
+
 Receives the index of the first module with the name <i>Name</i>.  If <i>Index</i> is <b>NULL</b>, this information is not returned.
 
-### -param Base 
+### -param Base [out, optional]
 
-[out, optional]
+
 Receives the location in the target's memory address space of the base of the module.  If <i>Base</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -116,3 +115,4 @@ For more information about modules, see <a href="/windows-hardware/drivers/debug
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

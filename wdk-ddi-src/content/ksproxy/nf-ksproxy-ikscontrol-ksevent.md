@@ -4,7 +4,6 @@ title: IKsControl::KsEvent (ksproxy.h)
 description: The KsEvent method enables or disables an event, along with any other defined support operations available on an event set.
 old-location: stream\ikscontrol_ksevent.htm
 tech.root: stream
-ms.assetid: b1ff6569-9568-40d8-b2a9-e63ce44720a2
 ms.date: 04/23/2018
 keywords: ["IKsControl::KsEvent"]
 ms.keywords: IKsControl interface [Streaming Media Devices],KsEvent method, IKsControl.KsEvent, IKsControl::KsEvent, KsEvent, KsEvent method [Streaming Media Devices], KsEvent method [Streaming Media Devices],IKsControl interface, ksproxy/IKsControl::KsEvent, ksproxy_d7ef7fda-b615-4aa9-8528-aa66de81da5b.xml, stream.ikscontrol_ksevent
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ksproxy.h
 api_name:
- - IKsControl.KsEvent
+ - IKsControl::KsEvent
 ---
 
 # IKsControl::KsEvent (ksproxy.h)
@@ -50,29 +49,29 @@ The <b>KsEvent</b> method enables or disables an event, along with any other def
 
 ## -parameters
 
-### -param Event 
+### -param Event [in, optional]
 
-[in, optional]
-Pointer to a <a href="/previous-versions/ff561744(v=vs.85)">KSEVENT</a> structure that describes an event to enable the event and <b>NULL</b> to disable the event.
 
-### -param EventLength 
+Pointer to a <a href="/windows-hardware/drivers/stream/ksevent-structure">KSEVENT</a> structure that describes an event to enable the event and <b>NULL</b> to disable the event.
 
-[in]
+### -param EventLength [in]
+
+
 Size, in bytes, of the buffer at <i>Event</i> when the event is enabled and zero when the event is disabled.
 
-### -param EventData 
+### -param EventData [in, out]
 
-[in, out]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata">KSEVENTDATA</a> structure that contains data for the event and buffer space that receives data for the event.
 
-### -param DataLength 
+### -param DataLength [in]
 
-[in]
+
 Size, in bytes, of the buffer at <i>EventData</i>.
 
-### -param BytesReturned 
+### -param BytesReturned [in, out]
 
-[in, out]
+
 Pointer to a variable that receives the size, in bytes, of the data that <b>KsEvent</b> stores in the buffer at <i>EventData</i>.
 
 ## -returns
@@ -87,7 +86,7 @@ The <i>EventData</i> parameter of <b>IKsControl::KsEvent</b> contains a handle i
 
 ## -see-also
 
-<a href="/previous-versions/ff561744(v=vs.85)">KSEVENT</a>
+<a href="/windows-hardware/drivers/stream/ksevent-structure">KSEVENT</a>
 
 
 
@@ -100,3 +99,4 @@ The <i>EventData</i> parameter of <b>IKsControl::KsEvent</b> contains a handle i
 
 
 <a href="/windows-hardware/drivers/ddi/ks/nf-ks-kspingenerateevents">KsPinGenerateEvents</a>
+

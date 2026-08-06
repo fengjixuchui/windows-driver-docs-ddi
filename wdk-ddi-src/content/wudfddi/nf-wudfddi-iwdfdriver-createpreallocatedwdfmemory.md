@@ -4,7 +4,6 @@ title: IWDFDriver::CreatePreallocatedWdfMemory (wudfddi.h)
 description: The CreatePreallocatedWdfMemory method creates a framework memory object for the specified buffer.
 old-location: wdf\iwdfdriver_createpreallocatedwdfmemory.htm
 tech.root: wdf
-ms.assetid: 9c24f42b-0f1d-4b93-99af-f4a5069b5223
 ms.date: 02/26/2018
 keywords: ["IWDFDriver::CreatePreallocatedWdfMemory"]
 ms.keywords: CreatePreallocatedWdfMemory, CreatePreallocatedWdfMemory method, CreatePreallocatedWdfMemory method,IWDFDriver interface, IWDFDriver interface,CreatePreallocatedWdfMemory method, IWDFDriver.CreatePreallocatedWdfMemory, IWDFDriver::CreatePreallocatedWdfMemory, UMDFDriverObjectRef_273a5206-8415-4251-88e8-6f20c29f50e2.xml, umdf.iwdfdriver_createpreallocatedwdfmemory, wdf.iwdfdriver_createpreallocatedwdfmemory, wudfddi/IWDFDriver::CreatePreallocatedWdfMemory
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDriver.CreatePreallocatedWdfMemory
+ - IWDFDriver::CreatePreallocatedWdfMemory
 ---
 
 # IWDFDriver::CreatePreallocatedWdfMemory
@@ -52,30 +51,30 @@ The <b>CreatePreallocatedWdfMemory</b> method creates a <a href="/windows-hardwa
 
 ## -parameters
 
-### -param pBuff 
+### -param pBuff [in]
 
-[in]
+
 A pointer to a driver-supplied data buffer for the memory object.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 
 The size, in bytes, of data that <i>pBuff</i> points to.
 
-### -param pCallbackInterface 
+### -param pCallbackInterface [in, optional]
 
-[in, optional]
+
 A pointer to the <b>IUnknown</b> interface that the framework uses to determine the object-related event callback functions that the driver subscribes to on the newly created memory object. This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require notification. The <b>IUnknown</b> interface is used for object cleanup and disposal. If the driver passes a valid pointer, the framework will call <b>QueryInterface</b> on the <b>IUnknown</b> interface for the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iobjectcleanup">IObjectCleanup</a> interface. If the framework obtains the driver's <b>IObjectCleanup</b> interface, the framework can subsequently call the driver's <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iobjectcleanup-oncleanup">IObjectCleanup::OnCleanup</a> method to notify the driver that the memory object is cleaned up.
 
-### -param pParentObject 
+### -param pParentObject [in, optional]
 
-[in, optional]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a> interface for the parent object of the created memory object. If <b>NULL</b>, the driver object becomes the default parent.
 
-### -param ppWdfMemory 
+### -param ppWdfMemory [out]
 
-[out]
+
 A pointer to a buffer that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfmemory">IWDFMemory</a> interface for the newly created WDF memory object.
 
 ## -returns
@@ -133,7 +132,6 @@ The following code example shows how to create a memory object for a buffer.
     }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iobjectcleanup">IObjectCleanup</a>
@@ -157,3 +155,4 @@ The following code example shows how to create a memory object for a buffer.
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a>
+

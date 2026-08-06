@@ -4,7 +4,6 @@ title: PFND3DDDI_ENCRYPTIONBLT (d3dumddi.h)
 description: The EncryptionBlt function reads encrypted data from a protected surface.
 old-location: display\encryptionblt.htm
 tech.root: display
-ms.assetid: a92bfff7-8af6-48c3-9e7f-95b9426aaaf2
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_ENCRYPTIONBLT callback function"]
 ms.keywords: EncryptionBlt, EncryptionBlt callback function [Display Devices], PFND3DDDI_ENCRYPTIONBLT, PFND3DDDI_ENCRYPTIONBLT callback, UserModeDisplayDriver_Functions_49cc68db-1210-44e5-80f1-347210dc6cf3.xml, d3dumddi/EncryptionBlt, display.encryptionblt
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - EncryptionBlt
-product:
- - Windows
+ - PFND3DDDI_ENCRYPTIONBLT
 ---
 
 # PFND3DDDI_ENCRYPTIONBLT callback function
@@ -56,7 +53,7 @@ The <i>EncryptionBlt</i> function reads encrypted data from a protected surface.
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -91,3 +88,4 @@ The Direct3D runtime verifies that the destination surface specified by the <b>D
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

@@ -4,7 +4,6 @@ title: IWDFIoTargetStateManagement::Remove (wudfddi.h)
 description: The Remove method removes a local I/O target.
 old-location: wdf\iwdfiotargetstatemanagement_remove.htm
 tech.root: wdf
-ms.assetid: 28a802b3-f916-4455-a93a-868393a570cf
 ms.date: 02/26/2018
 keywords: ["IWDFIoTargetStateManagement::Remove"]
 ms.keywords: IWDFIoTargetStateManagement interface,Remove method, IWDFIoTargetStateManagement.Remove, IWDFIoTargetStateManagement::Remove, Remove, Remove method, Remove method,IWDFIoTargetStateManagement interface, UMDFIoTargetObjectRef_aad5b1f1-14c0-442f-a289-be006b20816e.xml, umdf.iwdfiotargetstatemanagement_remove, wdf.iwdfiotargetstatemanagement_remove, wudfddi/IWDFIoTargetStateManagement::Remove
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoTargetStateManagement.Remove
+ - IWDFIoTargetStateManagement::Remove
 ---
 
 # IWDFIoTargetStateManagement::Remove
@@ -52,10 +51,10 @@ The <b>Remove</b> method removes a <a href="/windows-hardware/drivers/wdf/genera
 
 ## -parameters
 
-### -param bIsSurpriseRemove 
+### -param bIsSurpriseRemove [in]
 
-[in]
-A BOOL value which, if <b>TRUE</b>, specifies that the device was unexpectly removed ("surprise removal").   However, the framework ignores this parameter.
+
+A BOOL value which, if <b>TRUE</b>, specifies that the device was unexpectedly removed ("surprise removal").   However, the framework ignores this parameter.
 
 ## -returns
 
@@ -68,3 +67,4 @@ Although the <b>Remove</b> method is available, drivers do not need to call it. 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotargetstatemanagement">IWDFIoTargetStateManagement</a>
+

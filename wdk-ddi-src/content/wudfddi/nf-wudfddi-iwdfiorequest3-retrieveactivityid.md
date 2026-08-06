@@ -4,7 +4,6 @@ title: IWDFIoRequest3::RetrieveActivityId (wudfddi.h)
 description: The RetrieveActivityId method retrieves the current activity identifier associated with an I/O request.
 old-location: wdf\iwdfiorequest3_retrieveactivityid.htm
 tech.root: wdf
-ms.assetid: A90FCF3C-B648-4E97-887E-FCE58D7FA13A
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequest3::RetrieveActivityId"]
 ms.keywords: IWDFIoRequest3 interface,RetrieveActivityId method, IWDFIoRequest3.RetrieveActivityId, IWDFIoRequest3::RetrieveActivityId, RetrieveActivityId, RetrieveActivityId method, RetrieveActivityId method,IWDFIoRequest3 interface, umdf.iwdfiorequest3_retrieveactivityid, wdf.iwdfiorequest3_retrieveactivityid, wudfddi/IWDFIoRequest3::RetrieveActivityId
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequest3.RetrieveActivityId
+ - IWDFIoRequest3::RetrieveActivityId
 ---
 
 # IWDFIoRequest3::RetrieveActivityId
@@ -54,9 +53,9 @@ api_name:
 
 ## -parameters
 
-### -param ActivityId 
+### -param ActivityId [out]
 
-[out]
+
 A pointer to a location to store the retrieved GUID.
 
 ## -returns
@@ -119,7 +118,6 @@ pNewRequest3->Release();
 
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest3">IWDFIoRequest3</a>
@@ -127,3 +125,4 @@ pNewRequest3->Release();
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest3-setactivityid">IWDFIoRequest3::SetActivityId</a>
+

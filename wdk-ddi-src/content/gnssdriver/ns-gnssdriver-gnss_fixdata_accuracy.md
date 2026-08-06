@@ -1,10 +1,9 @@
 ---
-UID: NS:gnssdriver.__unnamed_struct_12
+UID: NS:gnssdriver.GNSS_FIXDATA_ACCURACY
 title: GNSS_FIXDATA_ACCURACY (gnssdriver.h)
-description: This structure defines the accuracy details of a fix.
+description: The GNSS_FIXDATA_ACCURACY structure defines the accuracy details of a fix.
 old-location: gnss\gnss_fixdata_accuracy.htm
 tech.root: gnss
-ms.assetid: 3C08FE5D-1385-4FE3-98C9-9FC530C6C755
 ms.date: 02/15/2018
 keywords: ["GNSS_FIXDATA_ACCURACY structure"]
 ms.keywords: "*PGNSS_FIXDATA_ACCURACY, GNSS_FIXDATA_ACCURACY, GNSS_FIXDATA_ACCURACY structure [Sensor Devices], PGNSS_FIXDATA_ACCURACY, PGNSS_FIXDATA_ACCURACY structure pointer [Sensor Devices], gnss.gnss_fixdata_accuracy, gnssdriver/GNSS_FIXDATA_ACCURACY, gnssdriver/PGNSS_FIXDATA_ACCURACY"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - gnssdriver.h
 api_name:
+ - PGNSS_FIXDATA_ACCURACY
  - GNSS_FIXDATA_ACCURACY
 ---
 
@@ -48,7 +48,7 @@ api_name:
 
 ## -description
 
-This structure defines the accuracy details of a fix.
+The **GNSS_FIXDATA_ACCURACY** structure defines the accuracy details of a fix.
 
 ## -struct-fields
 
@@ -66,15 +66,15 @@ Accuracy reported with 95% confidence.
 
 ### -field HorizontalErrorMajorAxis
 
-Horizontal uncertainty ellipse semi-major axis with  95% confidence accuracy.
+Horizontal uncertainty ellipse semi-major axis with 95% confidence accuracy.
 
 ### -field HorizontalErrorMinorAxis
 
-Horizontal uncertainty ellipse semi-minor axis with  95% confidence accuracy.
+Horizontal uncertainty ellipse semi-minor axis with 95% confidence accuracy.
 
 ### -field HorizontalErrorAngle
 
-Horizontal uncertainty ellipse orientation angle with  95% confidence accuracy.
+Horizontal uncertainty ellipse orientation angle with 95% confidence accuracy.
 
 ### -field HeadingAccuracy
 

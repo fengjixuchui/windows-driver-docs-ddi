@@ -1,10 +1,9 @@
 ---
 UID: NF:knetpwrdepbroker.NpdBrokerInitialize
 title: NpdBrokerInitialize function (knetpwrdepbroker.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the NpdBrokerInitialize function for internal use only. Don't use this function in your code."
 old-location: netvista\npdbrokerinitialize.htm
 tech.root: netvista
-ms.assetid: 7B23A6DF-2B78-48DF-BDD4-451A19521CAC
 ms.date: 05/02/2018
 keywords: ["NpdBrokerInitialize function"]
 ms.keywords: NpdBrokerInitialize, NpdBrokerInitialize function [Network Drivers Starting with Windows Vista], knetpwrdepbroker/NpdBrokerInitialize, netvista.npdbrokerinitialize
@@ -50,13 +49,16 @@ This topic supports the Windows driver infrastructure and is not intended to be 
 
 ## -parameters
 
-### -param ulClientID 
+### -param ulClientID [in]
 
-[in]
+
 Reserved.
 
-### -param phBroker 
+### -param phBroker [out]
 
-[out]
+
 Reserved.
 
+## -returns
+
+Returns STATUS_SUCCESS if the operation completes successfully.

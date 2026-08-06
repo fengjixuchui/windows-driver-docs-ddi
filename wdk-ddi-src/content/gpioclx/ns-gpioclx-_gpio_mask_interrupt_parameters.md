@@ -4,7 +4,6 @@ title: _GPIO_MASK_INTERRUPT_PARAMETERS (gpioclx.h)
 description: The GPIO_MASK_INTERRUPT_PARAMETERS structure describes a set of general-purpose I/O (GPIO) interrupt pins to mask.
 old-location: gpio\gpio_mask_interrupt_parameters.htm
 tech.root: GPIO
-ms.assetid: E7975BAE-4255-4D07-A747-481D210D1244
 ms.date: 02/15/2018
 keywords: ["GPIO_MASK_INTERRUPT_PARAMETERS structure"]
 ms.keywords: "*PGPIO_MASK_INTERRUPT_PARAMETERS, GPIO.gpio_mask_interrupt_parameters, GPIO_MASK_INTERRUPT_PARAMETERS, GPIO_MASK_INTERRUPT_PARAMETERS structure [Parallel Ports], PGPIO_MASK_INTERRUPT_PARAMETERS, PGPIO_MASK_INTERRUPT_PARAMETERS structure pointer [Parallel Ports], _GPIO_MASK_INTERRUPT_PARAMETERS, gpioclx/GPIO_MASK_INTERRUPT_PARAMETERS, gpioclx/PGPIO_MASK_INTERRUPT_PARAMETERS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
+ - _GPIO_MASK_INTERRUPT_PARAMETERS
+ - PGPIO_MASK_INTERRUPT_PARAMETERS
  - GPIO_MASK_INTERRUPT_PARAMETERS
 ---
 
@@ -83,3 +84,4 @@ GPIO controllers that have memory-mapped registers are expected to always succee
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/nc-gpioclx-gpio_client_query_controller_basic_information">CLIENT_QueryControllerBasicInformation</a>
+

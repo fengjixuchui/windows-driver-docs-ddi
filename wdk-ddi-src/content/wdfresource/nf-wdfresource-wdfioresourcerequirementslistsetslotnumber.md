@@ -4,7 +4,6 @@ title: WdfIoResourceRequirementsListSetSlotNumber function (wdfresource.h)
 description: The WdfIoResourceRequirementsListSetSlotNumber method assigns a slot number to a resource requirements list.
 old-location: wdf\wdfioresourcerequirementslistsetslotnumber.htm
 tech.root: wdf
-ms.assetid: 1dc18c48-2331-4980-b741-59a73d3edaa6
 ms.date: 02/26/2018
 keywords: ["WdfIoResourceRequirementsListSetSlotNumber function"]
 ms.keywords: DFResourceObjectRef_a4c6729c-ba18-49e0-8e8c-94c70c5c9e8a.xml, WdfIoResourceRequirementsListSetSlotNumber, WdfIoResourceRequirementsListSetSlotNumber method, kmdf.wdfioresourcerequirementslistsetslotnumber, wdf.wdfioresourcerequirementslistsetslotnumber, wdfresource/WdfIoResourceRequirementsListSetSlotNumber
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfIoResourceRequirementsListSetSlotNumber</b> method assigns a slot numb
 
 ## -parameters
 
-### -param RequirementsList 
+### -param RequirementsList [in]
 
-[in]
+
 A handle to a framework resource-requirements-list object that represents a device's resource requirements list.
 
-### -param SlotNumber 
+### -param SlotNumber [in]
 
-[in]
+
 A value that identifies the bus slot number to which the device is connected.
 
 ## -remarks

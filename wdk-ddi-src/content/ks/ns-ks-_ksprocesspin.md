@@ -4,7 +4,6 @@ title: _KSPROCESSPIN (ks.h)
 description: The KSPROCESSPIN structure describes the process state of a specific pin.
 old-location: stream\ksprocesspin.htm
 tech.root: stream
-ms.assetid: a1625eb2-a38b-4517-b873-f33b5ced8705
 ms.date: 04/23/2018
 keywords: ["KSPROCESSPIN structure"]
 ms.keywords: "*PKSPROCESSPIN, KSPROCESSPIN, KSPROCESSPIN structure [Streaming Media Devices], PKSPROCESSPIN, PKSPROCESSPIN structure pointer [Streaming Media Devices], _KSPROCESSPIN, avstruct_a374bc58-a61f-4d3b-9b20-de14b7cc423f.xml, ks/KSPROCESSPIN, ks/PKSPROCESSPIN, stream.ksprocesspin"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - _KSPROCESSPIN
+ - PKSPROCESSPIN
  - KSPROCESSPIN
 ---
 
@@ -117,3 +118,4 @@ Most clients are concerned with the members <b>Pin</b>, <b>Data</b>, <b>BytesAva
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksstream_pointer">KSSTREAM_POINTER</a>
+

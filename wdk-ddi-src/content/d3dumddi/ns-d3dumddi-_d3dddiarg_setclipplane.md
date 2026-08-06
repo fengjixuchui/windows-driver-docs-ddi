@@ -4,7 +4,6 @@ title: _D3DDDIARG_SETCLIPPLANE (d3dumddi.h)
 description: The D3DDDIARG_SETCLIPPLANE structure describes a clip plane.
 old-location: display\d3dddiarg_setclipplane.htm
 tech.root: display
-ms.assetid: 94e942a4-de66-47a3-89bf-fbec2a408775
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_SETCLIPPLANE structure"]
 ms.keywords: D3DDDIARG_SETCLIPPLANE, D3DDDIARG_SETCLIPPLANE structure [Display Devices], UMDisplayDriver_param_Structs_3371265a-3cb5-4aee-b019-14ef454e9d6d.xml, _D3DDDIARG_SETCLIPPLANE, d3dumddi/D3DDDIARG_SETCLIPPLANE, display.d3dddiarg_setclipplane
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_SETCLIPPLANE
  - D3DDDIARG_SETCLIPPLANE
 ---
 
@@ -52,13 +52,13 @@ The D3DDDIARG_SETCLIPPLANE structure describes a clip plane.
 
 ## -struct-fields
 
-### -field Index
+### -field Index [in]
 
-[in] The index of the clipping plane for which the plane equation coefficients are set.
+The index of the clipping plane for which the plane equation coefficients are set.
 
-### -field Plane
+### -field Plane [in]
 
-[in] A four-element array of the coefficients A, B, C, and D, in that order, in the general plane equation for the clipping plane.
+A four-element array of the coefficients A, B, C, and D, in that order, in the general plane equation for the clipping plane.
 
 ## -remarks
 
@@ -67,3 +67,4 @@ The general plane equation in standard form is A<i>x</i> + B<i>y</i> + C<i>z</i>
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_setclipplane">SetClipPlane</a>
+

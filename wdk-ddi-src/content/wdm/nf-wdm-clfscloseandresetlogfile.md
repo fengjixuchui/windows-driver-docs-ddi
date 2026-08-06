@@ -4,7 +4,6 @@ title: ClfsCloseAndResetLogFile function (wdm.h)
 description: The ClfsCloseAndResetLogFile routine releases all references to a specified log file object and marks its associated stream for reset.
 old-location: kernel\clfscloseandresetlogfile.htm
 tech.root: kernel
-ms.assetid: 5b52a012-1e3e-4d1f-8780-a7015b2f3c5f
 ms.date: 04/30/2018
 keywords: ["ClfsCloseAndResetLogFile function"]
 ms.keywords: ClfsCloseAndResetLogFile, ClfsCloseAndResetLogFile routine [Kernel-Mode Driver Architecture], Clfs_79ba6a07-3da2-40e8-9e7c-6b299ef55d63.xml, kernel.clfscloseandresetlogfile, wdm/ClfsCloseAndResetLogFile
@@ -51,9 +50,9 @@ The <b>ClfsCloseAndResetLogFile</b> routine releases all references to a specifi
 
 ## -parameters
 
-### -param plfoLog 
+### -param plfoLog [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">LOG_FILE_OBJECT</a> structure for which references will be released. The caller previously obtained this pointer by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfscreatelogfile">ClfsCreateLogFile</a>.
 
 ## -returns
@@ -62,7 +61,7 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">L
 
 ## -remarks
 
-<b>ClfsCloseAndResetLogFile</b> releases all references, acquired by CLFS, to the specified log file object. Typically, the client will not have acquired any additional references to the log file object. However, if the client has obtained additional refereces, it is the client's responsibility to release them.
+<b>ClfsCloseAndResetLogFile</b> releases all references, acquired by CLFS, to the specified log file object. Typically, the client will not have acquired any additional references to the log file object. However, if the client has obtained additional references, it is the client's responsibility to release them.
 
 <b>ClfsCloseAndResetLogFile</b> causes the specified log file object's reference count to drop to zero, at which time the log file object is closed (that is, its memory is deallocated). The stream represented by the log file object might not be reset, however, because there could be other log file objects that represent the same stream. The stream is reset after all log file objects that represent the stream are closed (for example by calls to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfscloselogfileobject">ClfsCloseLogFileObject</a>).
 

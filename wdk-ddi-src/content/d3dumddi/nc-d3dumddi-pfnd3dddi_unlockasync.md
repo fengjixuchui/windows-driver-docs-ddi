@@ -4,7 +4,6 @@ title: PFND3DDDI_UNLOCKASYNC (d3dumddi.h)
 description: The UnlockAsync function unlocks a resource or a surface within the resource that the LockAsync function previously locked.
 old-location: display\unlockasync.htm
 tech.root: display
-ms.assetid: 6af04c22-e559-4328-a20a-034b443fddc6
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_UNLOCKASYNC callback function"]
 ms.keywords: PFND3DDDI_UNLOCKASYNC, PFND3DDDI_UNLOCKASYNC callback, UnlockAsync, UnlockAsync callback function [Display Devices], UserModeDisplayDriver_Functions_f2270e47-4bf2-4486-8e6b-919daabd7c48.xml, d3dumddi/UnlockAsync, display.unlockasync
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - UnlockAsync
-product:
- - Windows
+ - PFND3DDDI_UNLOCKASYNC
 ---
 
 # PFND3DDDI_UNLOCKASYNC callback function
@@ -56,7 +53,7 @@ The <i>UnlockAsync</i> function unlocks a resource or a surface within the resou
 
 A handle to a display device (that is, the graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -101,3 +98,4 @@ If a user-mode display driver exposes a DDI version of 0x0000000B or greater (th
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_unlockcb">pfnUnlockCb</a>
+

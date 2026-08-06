@@ -4,7 +4,6 @@ title: MINIPORT_DIRECT_OID_REQUEST (ndis.h)
 description: NDIS calls a miniport driver's MiniportDirectOidRequest function to handle a direct OID request to query or set information in the driver.
 old-location: netvista\miniportdirectoidrequest.htm
 tech.root: netvista
-ms.assetid: 60daba60-3e04-4e98-a458-4dc263f17761
 ms.date: 05/02/2018
 keywords: ["MINIPORT_DIRECT_OID_REQUEST callback function"]
 ms.keywords: MINIPORT_DIRECT_OID_REQUEST, MINIPORT_DIRECT_OID_REQUEST callback, MiniportDirectOidRequest, MiniportDirectOidRequest callback function [Network Drivers Starting with Windows Vista], ndis/MiniportDirectOidRequest, ndis_request_direct_ref_8650027d-37db-4165-9bf6-c239b6db2919.xml, netvista.miniportdirectoidrequest
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportDirectOidRequest
+ - MINIPORT_DIRECT_OID_REQUEST
 ---
 
 # MINIPORT_DIRECT_OID_REQUEST callback function
@@ -54,18 +53,18 @@ NDIS calls a miniport driver's
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 A handle to a context area that the miniport driver allocated in its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a> function.
      The miniport driver uses this context area to maintain state information for a miniport adapter.
 
-### -param OidRequest 
+### -param OidRequest [in]
 
-[in]
+
 A pointer to an 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure that contains
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure that contains
      both the buffer and the request packet for the miniport driver to handle. Depending on the request, the
      driver returns requested information in the structure that is provided.
 
@@ -204,7 +203,7 @@ The miniport driver will provide an OID completion status with a subsequent stat
        miniport driver cannot return NDIS_STATUS_INDICATION_REQUIRED unless the particular OID allows it. To
        determine if this status is allowed, see the OID reference page.. For more information about
        NDIS_STATUS_INDICATION_REQUIRED, see 
-       <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> and 
+       <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> and 
        <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication">NDIS_STATUS_INDICATION</a>.
 
 </td>
@@ -310,7 +309,7 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 
@@ -328,3 +327,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a>
+

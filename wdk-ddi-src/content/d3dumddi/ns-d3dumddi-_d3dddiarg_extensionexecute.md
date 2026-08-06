@@ -4,7 +4,6 @@ title: _D3DDDIARG_EXTENSIONEXECUTE (d3dumddi.h)
 description: The D3DDDIARG_EXTENSIONEXECUTE structure describes a Microsoft DirectX Video Acceleration (VA) extension operation to perform.
 old-location: display\d3dddiarg_extensionexecute.htm
 tech.root: display
-ms.assetid: adc3e8a0-b261-47dc-ada2-bd21cb3ca954
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_EXTENSIONEXECUTE structure"]
 ms.keywords: D3DDDIARG_EXTENSIONEXECUTE, D3DDDIARG_EXTENSIONEXECUTE structure [Display Devices], UMDisplayDriver_param_Structs_99780923-fb21-4c84-bced-973ebfe44b1a.xml, _D3DDDIARG_EXTENSIONEXECUTE, d3dumddi/D3DDDIARG_EXTENSIONEXECUTE, display.d3dddiarg_extensionexecute
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_EXTENSIONEXECUTE
  - D3DDDIARG_EXTENSIONEXECUTE
 ---
 
@@ -52,25 +52,25 @@ The D3DDDIARG_EXTENSIONEXECUTE structure describes a Microsoft DirectX Video Acc
 
 ## -struct-fields
 
-### -field hExtension
+### -field hExtension [in]
 
-[in] A handle to the DirectX VA extension device. The user-mode display driver returns this handle in a call to its <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createextensiondevice">CreateExtensionDevice</a> function.
+A handle to the DirectX VA extension device. The user-mode display driver returns this handle in a call to its <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createextensiondevice">CreateExtensionDevice</a> function.
 
-### -field Function
+### -field Function [in]
 
-[in] A specific operation to perform. The possible values for this member are defined by the extension device.
+A specific operation to perform. The possible values for this member are defined by the extension device.
 
-### -field pPrivateInput
+### -field pPrivateInput [in]
 
-[in] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_privatedata">DXVADDI_PRIVATEDATA</a> structure that contains data that the driver requires to perform the extension operation.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_privatedata">DXVADDI_PRIVATEDATA</a> structure that contains data that the driver requires to perform the extension operation.
 
-### -field pPrivateOutput
+### -field pPrivateOutput [in]
 
-[in] A pointer to a DXVADDI_PRIVATEDATA structure that contains data about the extension operation that the driver returns.
+A pointer to a DXVADDI_PRIVATEDATA structure that contains data about the extension operation that the driver returns.
 
-### -field NumBuffers
+### -field NumBuffers [in]
 
-[in] The number of buffers in the list that is pointed to by <b>pBuffers</b>.
+The number of buffers in the list that is pointed to by <b>pBuffers</b>.
 
 ### -field pBuffers
 
@@ -91,3 +91,4 @@ The D3DDDIARG_EXTENSIONEXECUTE structure describes a Microsoft DirectX Video Acc
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_extensionexecute">ExtensionExecute</a>
+

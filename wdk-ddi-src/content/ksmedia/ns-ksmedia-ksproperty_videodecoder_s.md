@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_114
+UID: NS:ksmedia.KSPROPERTY_VIDEODECODER_S
 title: KSPROPERTY_VIDEODECODER_S (ksmedia.h)
 description: The KSPROPERTY_VIDEODECODER_S structure describes property settings in the PROPSETID_VIDCAP_VIDEODECODER property set.
 old-location: stream\ksproperty_videodecoder_s.htm
 tech.root: stream
-ms.assetid: 9444835d-0290-49e7-8f49-a1506ce282cd
 ms.date: 04/23/2018
 keywords: ["KSPROPERTY_VIDEODECODER_S structure"]
 ms.keywords: "*PKSPROPERTY_VIDEODECODER_S, KSPROPERTY_VIDEODECODER_S, KSPROPERTY_VIDEODECODER_S structure [Streaming Media Devices], PKSPROPERTY_VIDEODECODER_S, PKSPROPERTY_VIDEODECODER_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_VIDEODECODER_S, ksmedia/PKSPROPERTY_VIDEODECODER_S, stream.ksproperty_videodecoder_s, vidcapstruct_fbca2e77-2e08-4a96-932d-706a7e8b9a2a.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_VIDEODECODER_S
  - KSPROPERTY_VIDEODECODER_S
 ---
 
@@ -54,7 +54,7 @@ The KSPROPERTY_VIDEODECODER_S structure describes property settings in the PROPS
 
 ### -field Property
 
-Specifies an initialized <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+Specifies an initialized <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 ### -field Value
 
@@ -66,7 +66,7 @@ The KSPROPERTY_VIDEODECODER_S structure is shared among the KSPROPERTY_VIDEODECO
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -79,3 +79,4 @@ The KSPROPERTY_VIDEODECODER_S structure is shared among the KSPROPERTY_VIDEODECO
 
 
 <a href="/windows-hardware/drivers/stream/ksproperty-videodecoder-vcr-timing">KSPROPERTY_VIDEODECODER_VCR_TIMING</a>
+

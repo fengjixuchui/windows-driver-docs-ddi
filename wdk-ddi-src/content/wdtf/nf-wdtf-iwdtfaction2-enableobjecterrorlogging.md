@@ -4,7 +4,6 @@ title: IWDTFAction2::EnableObjectErrorLogging (wdtf.h)
 description: Enables object error logging for the action.
 old-location: dtf\iwdtfaction2_enableobjecterrorlogging.htm
 tech.root: dtf
-ms.assetid: 684e3c82-65f1-43fd-858a-461760dcaa8d
 ms.date: 04/04/2018
 keywords: ["IWDTFAction2::EnableObjectErrorLogging"]
 ms.keywords: EnableObjectErrorLogging, EnableObjectErrorLogging method [Windows Device Testing Framework], EnableObjectErrorLogging method [Windows Device Testing Framework],IWDTFAction2 interface, IWDTFAction2 interface [Windows Device Testing Framework],EnableObjectErrorLogging method, IWDTFAction2.EnableObjectErrorLogging, IWDTFAction2::EnableObjectErrorLogging, Microsoft.WDTF.IWDTFAction2.EnableObjectErrorLogging, Microsoft::WDTF::IWDTFAction2::EnableObjectErrorLogging, dtf.iwdtfaction2_enableobjecterrorlogging, wdtf/IWDTFAction2::EnableObjectErrorLogging
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFAction2.EnableObjectErrorLogging
+ - IWDTFAction2::EnableObjectErrorLogging
 ---
 
 # IWDTFAction2::EnableObjectErrorLogging
@@ -55,3 +54,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtfaction2">IWDTFAction2</a>
+

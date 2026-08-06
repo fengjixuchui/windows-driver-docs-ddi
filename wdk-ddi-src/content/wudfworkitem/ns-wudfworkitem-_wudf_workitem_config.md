@@ -4,7 +4,6 @@ title: _WUDF_WORKITEM_CONFIG (wudfworkitem.h)
 description: The WUDF_WORKITEM_CONFIG structure contains information that is associated with a work item.
 old-location: wdf\wudf_workitem_config.htm
 tech.root: wdf
-ms.assetid: 877C6641-30F9-44BC-9286-3B1D880482C9
 ms.date: 02/26/2018
 keywords: ["WUDF_WORKITEM_CONFIG structure"]
 ms.keywords: "*PWUDF_WORKITEM_CONFIG, PWUDF_WORKITEM_CONFIG, PWUDF_WORKITEM_CONFIG structure pointer, WUDF_WORKITEM_CONFIG, WUDF_WORKITEM_CONFIG structure, _WUDF_WORKITEM_CONFIG, umdf.wudf_workitem_config, wdf.wudf_workitem_config, wudfworkitem/PWUDF_WORKITEM_CONFIG, wudfworkitem/WUDF_WORKITEM_CONFIG"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wudfworkitem.h
 api_name:
+ - _WUDF_WORKITEM_CONFIG
+ - PWUDF_WORKITEM_CONFIG
  - WUDF_WORKITEM_CONFIG
 ---
 
@@ -87,3 +88,4 @@ Setting the <b>AutomaticSerialization</b> member of <b>WUDF_WORKITEM_CONFIG</b> 
 
 
 <a href="/windows-hardware/drivers/ddi/wudfworkitem/nf-wudfworkitem-wudf_workitem_config_init">WUDF_WORKITEM_CONFIG_INIT</a>
+

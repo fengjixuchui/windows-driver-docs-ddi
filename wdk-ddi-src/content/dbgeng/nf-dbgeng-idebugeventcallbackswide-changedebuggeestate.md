@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugEventCallbacksWide.ChangeDebuggeeState
 title: IDebugEventCallbacksWide::ChangeDebuggeeState (dbgeng.h)
-description: The ChangeDebuggeeState callback method is called by the engine when it makes or detects changes to the target.
+description: The ChangeDebuggeeState callback method is called by the engine when it makes or detects changes to the target. This method belongs to IDebugEventCallbacksWide.
 old-location: debugger\idebugeventcallbackswide_changedebuggeestate.htm
 tech.root: debugger
-ms.assetid: ffb5925a-6bbd-41f5-b8b8-e8c7189d57ac
 ms.date: 05/03/2018
 keywords: ["IDebugEventCallbacksWide::ChangeDebuggeeState"]
 ms.keywords: ChangeDebuggeeState, ChangeDebuggeeState method [Windows Debugging], ChangeDebuggeeState method [Windows Debugging],IDebugEventCallbacksWide interface, IDebugEventCallbacksWide interface [Windows Debugging],ChangeDebuggeeState method, IDebugEventCallbacksWide.ChangeDebuggeeState, IDebugEventCallbacksWide::ChangeDebuggeeState, dbgeng/IDebugEventCallbacksWide::ChangeDebuggeeState, debugger.idebugeventcallbackswide_changedebuggeestate
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugEventCallbacksWide.ChangeDebuggeeState
+ - IDebugEventCallbacksWide::ChangeDebuggeeState
 ---
 
 # IDebugEventCallbacksWide::ChangeDebuggeeState
@@ -50,9 +49,9 @@ The <b>ChangeDebuggeeState</b> callback method is called by the engine when it m
 
 ## -parameters
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies the type of changes made to the target.  <i>Flags</i> may take one of the following values:
 
 <table>
@@ -92,9 +91,9 @@ The target's data space has changed.
 </tr>
 </table>
 
-### -param Argument 
+### -param Argument [in]
 
-[in]
+
 Provides additional information about the change in the target. The interpretation of the value of <i>Argument</i> depends on the value of <i>Flags</i>:
 
 <dl>
@@ -192,3 +191,4 @@ The return value is ignored by the engine unless it indicates a remote procedure
 The engine calls <b>ChangeDebuggeeState</b> only if the DEBUG_EVENT_CHANGE_DEBUGGEE_STATE flag is set in the mask returned by <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugeventcallbackswide-getinterestmask">IDebugEventCallbacksWide::GetInterestMask</a>.
 
 For more information about handling events, see <a href="/windows-hardware/drivers/debugger/monitoring-events">Monitoring Events</a>.  For information about managing the target's memory, including registers and data spaces, see <a href="/windows-hardware/drivers/debugger/memory-access">Memory Access</a>.  For information about the target's virtual and physical memory, see <a href="/windows-hardware/drivers/debugger/virtual-and-physical-memory">Virtual and Physical Memory</a>.  For information about the target's control memory, I/O ports, MSR, and bus memory, see <a href="/windows-hardware/drivers/debugger/other-data-spaces">Other Data Spaces</a>.
+

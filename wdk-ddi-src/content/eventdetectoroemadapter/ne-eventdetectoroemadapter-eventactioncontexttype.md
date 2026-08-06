@@ -3,7 +3,6 @@ UID: NE:eventdetectoroemadapter.__MIDL___MIDL_itf_eventdetectoroemadapter_0000_0
 title: EVENTACTIONCONTEXTTYPE
 description: Enumeration the types of context associated with an action.
 tech.root: audio
-ms.assetid: 5d763702-145b-40e9-9f34-8c7137d7e6cc
 ms.date: 02/25/2019
 keywords: ["EVENTACTIONCONTEXTTYPE enumeration"]
 ms.keywords: EVENTACTIONCONTEXTTYPE, EVENTACTIONCONTEXTTYPE,
@@ -31,9 +30,8 @@ api_type:
 api_location:
  - eventdetectoroemadapter.h
 api_name:
+ - __MIDL___MIDL_itf_eventdetectoroemadapter_0000_0000_0006
  - EVENTACTIONCONTEXTTYPE
-product:
- - Windows
 ---
 
 # EVENTACTIONCONTEXTTYPE enumeration
@@ -47,7 +45,7 @@ Enumeration the types of context associated with an action.
 
 ### -field EVENTACTIONCONTEXTTYPE_None 
 
-0 - no additional conxt provided
+0 - no additional context provided
 
 ### -field EVENTACTIONCONTEXTTYPE_Confidence 
 
@@ -70,3 +68,4 @@ This enumeration is the part of the Event Detector OEM interface to be used for 
 - [eventdetectoroemadapter](../eventdetectoroemadapter/index.md)
 
 - [Audio](../_audio/index.md)
+

@@ -4,7 +4,6 @@ title: _D3DDDIARG_UPDATEPALETTE (d3dumddi.h)
 description: The D3DDDIARG_UPDATEPALETTE structure describes parameters that are used to update a texture palette.
 old-location: display\d3dddiarg_updatepalette.htm
 tech.root: display
-ms.assetid: 6637c102-4e77-4030-9bb5-ab9fb4bac2c7
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_UPDATEPALETTE structure"]
 ms.keywords: D3DDDIARG_UPDATEPALETTE, D3DDDIARG_UPDATEPALETTE structure [Display Devices], UMDisplayDriver_param_Structs_abbbfa0f-d2f6-4985-a189-56e4592c1c1e.xml, _D3DDDIARG_UPDATEPALETTE, d3dumddi/D3DDDIARG_UPDATEPALETTE, display.d3dddiarg_updatepalette
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_UPDATEPALETTE
  - D3DDDIARG_UPDATEPALETTE
 ---
 
@@ -52,17 +52,17 @@ The D3DDDIARG_UPDATEPALETTE structure describes parameters that are used to upda
 
 ## -struct-fields
 
-### -field PaletteHandle
+### -field PaletteHandle [in]
 
-[in] A handle to the palette to be altered.
+A handle to the palette to be altered.
 
-### -field StartIndex
+### -field StartIndex [in]
 
-[in] The index in the palette beyond which data is updated.
+The index in the palette beyond which data is updated.
 
-### -field NumEntries
+### -field NumEntries [in]
 
-[in] The number of PALETTEENTRY structures that are being updated. For more information about PALETTEENTRY, see the Microsoft Windows SDK documentation.
+The number of PALETTEENTRY structures that are being updated. For more information about PALETTEENTRY, see the Microsoft Windows SDK documentation.
 
 ## -remarks
 
@@ -71,3 +71,4 @@ The Microsoft Direct3D runtime passes palette data for updating to the <i>pPalet
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_updatepalette">UpdatePalette</a>
+

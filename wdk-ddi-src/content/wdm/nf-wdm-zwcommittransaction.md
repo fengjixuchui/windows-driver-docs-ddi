@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.ZwCommitTransaction
 title: ZwCommitTransaction function (wdm.h)
-description: The ZwCommitTransaction routine initiates a commit operation for a specified transaction.
+description: Learn how the ZwCommitTransaction routine initiates a commit operation for a specified transaction.
 old-location: kernel\zwcommittransaction.htm
 tech.root: kernel
-ms.assetid: 145646f3-ff90-41d6-bf76-947cdf93b489
 ms.date: 04/30/2018
 keywords: ["ZwCommitTransaction function"]
 ms.keywords: NtCommitTransaction, ZwCommitTransaction, ZwCommitTransaction routine [Kernel-Mode Driver Architecture], kernel.zwcommittransaction, ktm_ref_bb49aa00-dbb3-4533-83c1-1cfc56073d8a.xml, wdm/NtCommitTransaction, wdm/ZwCommitTransaction
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - ZwCommitTransaction
- - NtCommitTransaction
 ---
 
 # ZwCommitTransaction function
@@ -51,14 +49,14 @@ The <b>ZwCommitTransaction</b> routine initiates a commit operation for a specif
 
 ## -parameters
 
-### -param TransactionHandle 
+### -param TransactionHandle [in]
 
-[in]
+
 A handle to a <a href="/windows-hardware/drivers/kernel/transaction-objects">transaction object</a>. Your component receives this handle from <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreatetransaction">ZwCreateTransaction</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopentransaction">ZwOpenTransaction</a>. The handle must have TRANSACTION_COMMIT access to the object.
 
-### -param Wait 
+### -param Wait [in]
 
-[in]
+
 A Boolean value that the caller sets to <b>TRUE</b> for synchronous operation or <b>FALSE</b> for asynchronous operation. If this parameter is <b>TRUE</b>, the call returns after the commit operation is complete.
 
 ## -returns
@@ -188,3 +186,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopentransaction">ZwOpenTransaction</a>
+

@@ -1,11 +1,10 @@
 ---
 UID: NS:ntddrilapitypes.RILRTTDATA
 title: RILRTTDATA (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILRTTDATA structure for internal use only. Don't use the RILRTTDATA structure in your code."
 old-location: netvista\rilrttdata.htm
 tech.root: netvista
-ms.assetid: 037831c7-d0ef-4cbc-a414-a77010e228a5
-ms.date: 05/02/2018
+ms.date: 12/03/2021
 keywords: ["RILRTTDATA structure"]
 ms.keywords: "*LPRILRTTDATA, RILRTTDATA, RILRTTDATA structure [Network Drivers Starting with Windows Vista], netvista.rilrttdata, ntddrilapitypes/RILRTTDATA"
 req.header: ntddrilapitypes.h
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILRTTDATA
+ - LPRILRTTDATA
 ---
 
 # RILRTTDATA structure (ntddrilapitypes.h)
@@ -60,3 +60,10 @@ This topic supports the Windows driver infrastructure and is not intended to be 
 
 ### -field wszRTTData
 
+### -field dwRTTRefNum
+
+### -field dwTotalMsgSize
+
+### -field dwCurrentMsgSeqNum
+
+### -field dwHighestMsgSeqNum

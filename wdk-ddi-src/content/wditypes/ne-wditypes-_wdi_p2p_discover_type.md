@@ -4,7 +4,6 @@ title: _WDI_P2P_DISCOVER_TYPE (wditypes.h)
 description: The WDI_P2P_DISCOVER_TYPE enumeration defines the Wi-Fi Direct discovery types.
 old-location: netvista\wdi_p2p_discover_type.htm
 tech.root: netvista
-ms.assetid: AE9910F7-A3B8-4C13-A5DC-7B9600C8C873
 ms.date: 05/02/2018
 keywords: ["WDI_P2P_DISCOVER_TYPE enumeration"]
 ms.keywords: WDI_P2P_DISCOVER_TYPE, WDI_P2P_DISCOVER_TYPE enumeration [Device and Driver Installation], WDI_P2P_DISCOVER_TYPE_AUTO, WDI_P2P_DISCOVER_TYPE_FIND_ONLY, WDI_P2P_DISCOVER_TYPE_SCAN_ONLY, WDI_P2P_DISCOVER_TYPE_SCAN_SOCIAL_CHANNELS, _WDI_P2P_DISCOVER_TYPE, netvista.wdi_p2p_discover_type, netvista.wifi_p2p_discover_type, wditypes/WDI_P2P_DISCOVER_TYPE, wditypes/WDI_P2P_DISCOVER_TYPE_AUTO, wditypes/WDI_P2P_DISCOVER_TYPE_FIND_ONLY, wditypes/WDI_P2P_DISCOVER_TYPE_SCAN_ONLY, wditypes/WDI_P2P_DISCOVER_TYPE_SCAN_SOCIAL_CHANNELS
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_P2P_DISCOVER_TYPE
  - WDI_P2P_DISCOVER_TYPE
 ---
 
@@ -47,6 +47,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_P2P_DISCOVER_TYPE enumeration defines the Wi-Fi Direct discovery types.
 
@@ -70,3 +73,4 @@ Port must perform device discovery by scanning only Wi-Fi Direct social channels
 
 ### -field WDI_P2P_DISCOVER_TYPE_MAX_VALUE
 
+The maximum value for this type.

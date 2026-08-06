@@ -1,11 +1,9 @@
 ---
-UID: NS:scsi.__unnamed_struct_15
+UID: NS:scsi.BLOCK_DEVICE_RANGE_DESCRIPTOR
 title: BLOCK_DEVICE_RANGE_DESCRIPTOR (scsi.h)
-description: The BLOCK_DEVICE_RANGE_DESCRIPTOR structure describes a range of logical blocks associated with various fragments of a file for an offload copy operation.
-old-location: storage\block_device_range_descriptor.htm
+description: The BLOCK_DEVICE_RANGE_DESCRIPTOR structure (scsi.h) describes a range of logical blocks associated with the fragments of a file.
 tech.root: storage
-ms.assetid: 6B262D38-8BD6-43B5-96AB-6D311B8EBA88
-ms.date: 03/29/2018
+ms.date: 09/20/2022
 keywords: ["BLOCK_DEVICE_RANGE_DESCRIPTOR structure"]
 ms.keywords: "*PBLOCK_DEVICE_RANGE_DESCRIPTOR, BLOCK_DEVICE_RANGE_DESCRIPTOR, BLOCK_DEVICE_RANGE_DESCRIPTOR structure [Storage Devices], PBLOCK_DEVICE_RANGE_DESCRIPTOR, PBLOCK_DEVICE_RANGE_DESCRIPTOR structure pointer [Storage Devices], scsi/BLOCK_DEVICE_RANGE_DESCRIPTOR, scsi/PBLOCK_DEVICE_RANGE_DESCRIPTOR, storage.block_device_range_descriptor"
 req.header: scsi.h
@@ -40,15 +38,13 @@ api_type:
 api_location:
  - scsi.h
 api_name:
+ - PBLOCK_DEVICE_RANGE_DESCRIPTOR
  - BLOCK_DEVICE_RANGE_DESCRIPTOR
 ---
 
-# BLOCK_DEVICE_RANGE_DESCRIPTOR structure (scsi.h)
-
-
 ## -description
 
-The <b>BLOCK_DEVICE_RANGE_DESCRIPTOR</b> structure describes a range of logical blocks associated with various fragments of a file for an offload copy operation.
+The **BLOCK_DEVICE_RANGE_DESCRIPTOR** structure describes a range of logical blocks associated with various fragments of a file for an offload copy operation.
 
 ## -struct-fields
 
@@ -66,14 +62,13 @@ Reserved bytes.
 
 ## -remarks
 
-If <i>TransferLength</i> is set to 0, the range descriptor is considered valid and does not cause an error when included in a token parameter list. No operation will be performed for this descriptor.
+If *TransferLength* is set to 0, the range descriptor is considered valid and does not cause an error when included in a token parameter list. No operation will be performed for this descriptor.
 
 All multibyte values are in big endian format. Prior to setting, these values must be converted from the endian format of the current platform.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/storport/ns-storport-populate_token_header">POPULATE_TOKEN_HEADER</a>
+[**POPULATE_TOKEN_HEADER**](../storport/ns-storport-populate_token_header.md)
 
+[**WRITE_USING_TOKEN_HEADER**](../minitape/ns-minitape-write_using_token_header.md)
 
-
-<a href="/windows-hardware/drivers/ddi/minitape/ns-minitape-write_using_token_header">WRITE_USING_TOKEN_HEADER</a>

@@ -1,11 +1,9 @@
 ---
 UID: NF:printoem.OEMDisablePDEV
 title: OEMDisablePDEV function (printoem.h)
-description: This function is obsolete.
-old-location: print\oemdisablepdev.htm
+description: This function (OEMDisablePDEV) is obsolete.
 tech.root: print
-ms.assetid: a58d333f-f092-4f7a-b6ae-ebba4f894678
-ms.date: 11/18/2019
+ms.date: 08/12/2022
 keywords: ["OEMDisablePDEV function"]
 ms.keywords: OEMDisablePDEV, OEMDisablePDEV function [Print Devices], print.oemdisablepdev, print_obsoletefunctions_d0b9c4d2-19f5-4702-a99d-5549ae1b5b3d.xml, printoem/OEMDisablePDEV
 req.header: printoem.h
@@ -40,9 +38,6 @@ api_location:
 api_name:
  - OEMDisablePDEV
 ---
-
-# OEMDisablePDEV function
-
 
 ## -description
 

@@ -4,7 +4,6 @@ title: HWN_CLIENT_INITIALIZE_DEVICE (hwnclx.h)
 description: Implemented by the client driver and is invoked as a result of a call to EVT_WDF_DEVICE_PREPARE_HARDWARE.
 old-location: gpiobtn\hwn_client_initialize_device.htm
 tech.root: gpiobtn
-ms.assetid: d08b2435-fb6f-49cd-8da3-c49676623357
 ms.date: 02/15/2018
 keywords: ["HWN_CLIENT_INITIALIZE_DEVICE callback"]
 ms.keywords: "*PHWN_CLIENT_INITIALIZE_DEVICE, *PHWN_CLIENT_INITIALIZE_DEVICE callback function pointer, HWN_CLIENT_INITIALIZE_DEVICE, HwnClientInitializeDevice, HwnClientInitializeDevice callback function, gpiobtn.hwn_client_initialize_device, hwnclx/HwnClientInitializeDevice"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Hwnclx.h
 api_name:
- - PHWN_CLIENT_INITIALIZE_DEVICE
+ - HWN_CLIENT_INITIALIZE_DEVICE
 ---
 
 # HWN_CLIENT_INITIALIZE_DEVICE callback
@@ -50,24 +49,24 @@ Implemented by the client driver and is invoked as a result of a call to <a href
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 Handle to the client drivers framework device object.
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to the client driver's context information. This memory space is available for use by the client driver. It is allocated as part of the framework object context space by <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>. For more information, see <a href="/windows-hardware/drivers/gpiobtn/create-a-hardware-notification-client-driver">HWN_CLIENT_REGISTRATION_PACKET</a> and  <a href="/windows-hardware/drivers/wdf/framework-object-context-space">Framework Object Context Space</a>.
 
-### -param ResourcesRaw 
+### -param ResourcesRaw [in]
 
-[in]
+
 Handle to a framework resource-list object that identifies the raw hardware resources that the Plug and Play manager has assigned to the device.
 
-### -param ResourcesTranslated 
+### -param ResourcesTranslated [in]
 
-[in]
+
 Handle to a framework resource-list object that identifies the translated hardware resources that the Plug and Play manager has assigned to the device.
 
 ## -returns
@@ -100,4 +99,5 @@ Register your implementation of this callback function by setting the appropriat
 
 
 
-<a href="/windows-hardware/drivers/ddi/index">Hardware notifications reference</a>
+<a href="/windows-hardware/drivers/ddi/_gpio">Hardware notifications reference</a>
+

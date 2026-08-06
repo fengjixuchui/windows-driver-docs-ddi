@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_SETCONSTANTBUFFERS
 title: PFND3D10DDI_SETCONSTANTBUFFERS (d3d10umddi.h)
 description: The CsSetConstantBuffers function sets constant buffers for a compute shader.
 old-location: display\cssetconstantbuffers.htm
-ms.assetid: 159ee0ac-7ddf-4ffd-a07f-3d58130b90e8
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_SETCONSTANTBUFFERS callback function"]
 ms.keywords: CsSetConstantBuffers, CsSetConstantBuffers callback function [Display Devices], PFND3D10DDI_SETCONSTANTBUFFERS, PFND3D10DDI_SETCONSTANTBUFFERS callback, UserModeDisplayDriverDx11_Functions_ae0b7e35-f8c5-428d-97d0-e22d5b609c72.xml, d3d10umddi/CsSetConstantBuffers, display.cssetconstantbuffers
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CsSetConstantBuffers
+ - PFND3D10DDI_SETCONSTANTBUFFERS
 ---
 
 # PFND3D10DDI_SETCONSTANTBUFFERS callback function
@@ -50,21 +49,21 @@ The <b>CsSetConstantBuffers</b> function sets constant buffers for a compute sha
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param StartSlot
+### -param StartSlot [in]
 
-[in] The starting constant buffer to set.
+The starting constant buffer to set.
 
-### -param NumBuffers 
+### -param NumBuffers [in]
 
-[in] The total number of buffers to set.
+The total number of buffers to set.
 
-### -param Arg4
+### -param unnamedParam4
 
 *phBuffers* [in]
 
@@ -97,3 +96,4 @@ The <b>DsSetConstantBuffers</b> function sets constant buffers for a domain shad
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

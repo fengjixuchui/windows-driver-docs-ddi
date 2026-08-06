@@ -1,10 +1,9 @@
 ---
-UID: NE:61883.__unnamed_enum_2
+UID: NE:61883.CMP_PLUG_TYPE
 title: CMP_PLUG_TYPE (61883.h)
 description: This enumeration specifies the type of a plug.
 old-location: ieee\cmp_plug_type.htm
 tech.root: IEEE
-ms.assetid: 97A19F3D-5669-4E4B-A377-7BE5A84DF63A
 ms.date: 02/15/2018
 keywords: ["CMP_PLUG_TYPE enumeration"]
 ms.keywords: 61883/CMP_PLUG_TYPE, 61883/CMP_PlugIn, 61883/CMP_PlugOut, CMP_PLUG_TYPE, CMP_PLUG_TYPE enumeration [Buses], CMP_PlugIn, CMP_PlugOut, IEEE.cmp_plug_type
@@ -61,3 +60,4 @@ An in plug.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_av_61883_request">AV_61883_REQUEST</a>
+

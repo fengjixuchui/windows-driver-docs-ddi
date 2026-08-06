@@ -4,7 +4,6 @@ title: NdisAllocateMemoryWithTagPriority function (ndis.h)
 description: NDIS drivers call the NdisAllocateMemoryWithTagPriority function to allocate a pool of memory from the non-paged pool.
 old-location: netvista\ndisallocatememorywithtagpriority.htm
 tech.root: netvista
-ms.assetid: aac4049c-a876-4bbb-ba3b-fa36c299e1c7
 ms.date: 05/02/2018
 keywords: ["NdisAllocateMemoryWithTagPriority function"]
 ms.keywords: NdisAllocateMemoryWithTagPriority, NdisAllocateMemoryWithTagPriority function [Network Drivers Starting with Windows Vista], ndis/NdisAllocateMemoryWithTagPriority, ndis_memory_ref_1b725109-fc0d-4f5f-8c88-d7a21a1f4c01.xml, netvista.ndisallocatememorywithtagpriority
@@ -53,9 +52,9 @@ NDIS drivers call the
 
 ## -parameters
 
-### -param NdisHandle 
+### -param NdisHandle [in]
 
-[in]
+
 An NDIS handle that the caller obtained during initialization. For example, a miniport driver can
      use the NDIS handle that it obtained from the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver">
@@ -79,21 +78,21 @@ An NDIS handle that the caller obtained during initialization. For example, a mi
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach">FilterAttach</a>
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The size to be allocated, in bytes.
 
-### -param Tag 
+### -param Tag [in]
 
-[in]
+
 A string, delimited by single quotation marks, with up to four characters, usually specified in
      reversed order. The NDIS-supplied default tag for this call is 'maDN', but the caller can override this
      default by supplying an explicit value.
 
-### -param Priority 
+### -param Priority [in]
 
-[in]
+
 The importance of this request. For more information, see 
      <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtagpriority">
      ExAllocatePoolWithTagPriority</a>.

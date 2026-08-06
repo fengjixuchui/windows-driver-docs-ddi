@@ -4,7 +4,6 @@ title: _D3DDDIARG_DESTROYAUTHENICATEDCHANNEL (d3dumddi.h)
 description: The D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL structure contains the handle to an authenticated channel that is destroyed in a call to the DestroyAuthenticatedChannel function.
 old-location: display\d3dddiarg_destroyauthenticatedchannel.htm
 tech.root: display
-ms.assetid: 3b953c73-a033-465a-a041-7c21ee307c32
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_DESTROYAUTHENICATEDCHANNEL structure"]
 ms.keywords: D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL, D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL structure [Display Devices], UMDisplayDriver_param_Structs_be6187b3-2d01-450e-90a7-d01a97aba764.xml, _D3DDDIARG_DESTROYAUTHENICATEDCHANNEL, d3dumddi/D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL, display.d3dddiarg_destroyauthenticatedchannel
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_DESTROYAUTHENICATEDCHANNEL
  - D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL
 ---
 
@@ -52,10 +52,11 @@ The D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL structure contains the handle to an au
 
 ## -struct-fields
 
-### -field hChannel
+### -field hChannel [in]
 
-[in] The handle to the authenticated channel that the driver destroys.
+The handle to the authenticated channel that the driver destroys.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_destroyauthenticatedchannel">DestroyAuthenticatedChannel</a>
+

@@ -4,7 +4,6 @@ title: SerCx2PioTransmitReady function (sercx.h)
 description: The SerCx2PioTransmitReady method notifies version 2 of the serial framework extension (SerCx2) that the transmit FIFO in the serial controller hardware is ready to accept more data.
 old-location: serports\sercx2piotransmitready.htm
 tech.root: serports
-ms.assetid: 58E663DC-8A2B-4017-A54F-4C127AE567CE
 ms.date: 04/23/2018
 keywords: ["SerCx2PioTransmitReady function"]
 ms.keywords: 2/SerCx2PioTransmitReady, SerCx2PioTransmitReady, SerCx2PioTransmitReady method [Serial Ports], serports.sercx2piotransmitready
@@ -50,9 +49,9 @@ The <b>SerCx2PioTransmitReady</b> method notifies version 2 of the serial framew
 
 ## -parameters
 
-### -param PioTransmit 
+### -param PioTransmit [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitcreate">SerCx2PioTransmitCreate</a> method to create this object.
 
 ## -remarks

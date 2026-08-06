@@ -1,9 +1,9 @@
 ---
 UID: NE:d3d9types._D3DZBUFFERTYPE
 title: _D3DZBUFFERTYPE (d3d9types.h)
-description: 
-ms.assetid: 1a8382b7-a271-4a4c-8d0f-71c0f1ff9f3c
+description: "Learn more about: _D3DZBUFFERTYPE enumeration"
 ms.date: 10/19/2018
+tech.root: display
 keywords: ["D3DZBUFFERTYPE enumeration"]
 ms.keywords: _D3DZBUFFERTYPE, D3DZBUFFERTYPE,
 req.header: d3d9types.h
@@ -31,6 +31,7 @@ api_location:
  - d3d9types.h
 api_name:
  - _D3DZBUFFERTYPE
+ - D3DZBUFFERTYPE
 dev_langs:
  - c++
 ---

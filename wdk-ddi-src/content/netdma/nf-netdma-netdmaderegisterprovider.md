@@ -4,7 +4,6 @@ title: NetDmaDeregisterProvider function (netdma.h)
 description: The NetDmaDeregisterProvider function deregisters a DMA provider.
 old-location: netvista\netdmaderegisterprovider.htm
 tech.root: netvista
-ms.assetid: 8832adbc-c2ab-4742-94a0-4e33d03eaaf1
 ms.date: 05/02/2018
 keywords: ["NetDmaDeregisterProvider function"]
 ms.keywords: NetDmaDeregisterProvider, NetDmaDeregisterProvider function [Network Drivers Starting with Windows Vista], netdma/NetDmaDeregisterProvider, netdma_ref_0fac8a7e-7721-4854-8d0e-6926243ff2ea.xml, netvista.netdmaderegisterprovider
@@ -53,9 +52,9 @@ in Windows 8 and later.</div><div> </div>The
 
 ## -parameters
 
-### -param NetDmaProviderHandle 
+### -param NetDmaProviderHandle [in]
 
-[in]
+
 A handle that identifies a DMA provider. The DMA provider driver received this handle from the
      NetDMA interface in a call to the 
      <a href="/windows-hardware/drivers/ddi/netdma/nf-netdma-netdmaregisterprovider">

@@ -4,7 +4,6 @@ title: GPIO_CLIENT_WRITE_PINS_MASK (gpioclx.h)
 description: The CLIENT_WriteGpioPinsUsingMask event callback function writes to a set of general-purpose I/O (GPIO) pins that are configured as data outputs.
 old-location: gpio\client_writegpiopinsusingmask.htm
 tech.root: GPIO
-ms.assetid: 6B3667AA-4658-4EDE-A8E1-925064BCD249
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_WRITE_PINS_MASK callback function"]
 ms.keywords: CLIENT_WriteGpioPinsUsingMask, CLIENT_WriteGpioPinsUsingMask callback, CLIENT_WriteGpioPinsUsingMask callback function [Parallel Ports], GPIO.client_writegpiopinsusingmask, GPIO_CLIENT_WRITE_PINS_MASK, gpioclx/CLIENT_WriteGpioPinsUsingMask
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_WriteGpioPinsUsingMask
+ - GPIO_CLIENT_WRITE_PINS_MASK
 ---
 
 # GPIO_CLIENT_WRITE_PINS_MASK callback function
@@ -50,14 +49,14 @@ The <i>CLIENT_WriteGpioPinsUsingMask</i> event callback function writes to a set
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param WriteParameters 
+### -param WriteParameters [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_write_pins_mask_parameters">GPIO_WRITE_PINS_MASK_PARAMETERS</a> structure that describes a bank of GPIO pins and that contains the data to write to these pins.
 
 ## -returns
@@ -122,3 +121,4 @@ The GPIO_CLIENT_WRITE_PINS_MASK function type is defined in the Gpioclx.h header
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_write_pins_mask_parameters">GPIO_WRITE_PINS_MASK_PARAMETERS</a>
+

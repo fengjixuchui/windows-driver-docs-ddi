@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_NEGOTIATEAUTHENTICATEDCHANNELKEYEXCHANGE
 title: PFND3D11_1DDI_NEGOTIATEAUTHENTICATEDCHANNELKEYEXCHANGE (d3d10umddi.h)
 description: Establishes a session key for an authenticated channel.
 old-location: display\negotiateauthenticatedchannelkeyexchange.htm
-ms.assetid: a54a26d2-d38c-4e82-a3e9-7a17c0afff27
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_NEGOTIATEAUTHENTICATEDCHANNELKEYEXCHANGE callback function"]
 ms.keywords: PFND3D11_1DDI_NEGOTIATEAUTHENTICATEDCHANNELKEYEXCHANGE, PFND3D11_1DDI_NEGOTIATEAUTHENTICATEDCHANNELKEYEXCHANGE callback, d3d10umddi/pfnNegotiateAuthenticatedChannelKeyExchange, display.negotiateauthenticatedchannelkeyexchange, pfnNegotiateAuthenticatedChannelKeyExchange, pfnNegotiateAuthenticatedChannelKeyExchange callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnNegotiateAuthenticatedChannelKeyExchange
-product:
- - Windows
+ - PFND3D11_1DDI_NEGOTIATEAUTHENTICATEDCHANNELKEYEXCHANGE
 ---
 
 # PFND3D11_1DDI_NEGOTIATEAUTHENTICATEDCHANNELKEYEXCHANGE callback function
@@ -90,3 +87,4 @@ The key exchange for an authenticated channel is identical to the key exchange f
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createauthenticatedchannel">CreateAuthenticatedChannel(D3D11_1)</a>
+

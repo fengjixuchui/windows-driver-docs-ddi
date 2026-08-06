@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_CALCPRIVATEBLENDSTATESIZE
 title: PFND3D10DDI_CALCPRIVATEBLENDSTATESIZE (d3d10umddi.h)
 description: The CalcPrivateBlendStateSize function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for a blend state.
 old-location: display\calcprivateblendstatesize.htm
-ms.assetid: c13862b0-3136-4a95-bb00-6057f2934068
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_CALCPRIVATEBLENDSTATESIZE callback function"]
 ms.keywords: CalcPrivateBlendStateSize, CalcPrivateBlendStateSize callback function [Display Devices], PFND3D10DDI_CALCPRIVATEBLENDSTATESIZE, PFND3D10DDI_CALCPRIVATEBLENDSTATESIZE callback, UserModeDisplayDriverDx10_Functions_bb7c2ca6-61c8-4f54-a635-4ec9fb539837.xml, d3d10umddi/CalcPrivateBlendStateSize, display.calcprivateblendstatesize
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CalcPrivateBlendStateSize
-product:
- - Windows
+ - PFND3D10DDI_CALCPRIVATEBLENDSTATESIZE
 ---
 
 # PFND3D10DDI_CALCPRIVATEBLENDSTATESIZE callback function
@@ -52,13 +49,13 @@ The <b>CalcPrivateBlendStateSize</b> function determines the size of the user-mo
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pBlendDesc* [in]
 
@@ -77,3 +74,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10_ddi_blend_desc">D3D10_DDI_BLEND_DESC</a>
+

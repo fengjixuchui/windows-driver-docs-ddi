@@ -4,14 +4,13 @@ title: StorPortMarkDumpMemory function (storport.h)
 description: A miniport should mark memory used for the dump file or the hibernation file.
 old-location: storage\storportmarkdumpmemory.htm
 tech.root: storage
-ms.assetid: DE17FF55-A573-41FE-8979-1DB32AD5B7C0
 ms.date: 03/29/2018
 keywords: ["StorPortMarkDumpMemory function"]
 ms.keywords: MARK_DUMP_MEMORY_FLAG_PHYSICAL_ADDRESS, StorPortMarkDumpMemory, StorPortMarkDumpMemory routine [Storage Devices], storage.storportmarkdumpmemory, storport/StorPortMarkDumpMemory
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,24 +49,24 @@ A miniport should mark memory used for the dump file or the hibernation file. Ma
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param Address 
+### -param Address [in]
 
-[in]
+
 The starting address of the memory range to mark.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The length of the marked memory range.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Dump memory marking flags. The *Flags* parameter must be 0 or contain only the following value.
 
 | Value | Meaning |

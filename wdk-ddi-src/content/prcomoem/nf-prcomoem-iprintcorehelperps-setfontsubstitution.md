@@ -4,7 +4,6 @@ title: IPrintCoreHelperPS::SetFontSubstitution (prcomoem.h)
 description: The IPrintCoreHelperPS::SetFontSubstitution method specifies the device font to print in place of a given TrueType font.
 old-location: print\iprintcorehelperps_setfontsubstitution.htm
 tech.root: print
-ms.assetid: 2f3b47db-8e4e-4a76-a08a-acd2b903247e
 ms.date: 04/20/2018
 keywords: ["IPrintCoreHelperPS::SetFontSubstitution"]
 ms.keywords: IPrintCoreHelperPS interface [Print Devices],SetFontSubstitution method, IPrintCoreHelperPS.SetFontSubstitution, IPrintCoreHelperPS::SetFontSubstitution, SetFontSubstitution, SetFontSubstitution method [Print Devices], SetFontSubstitution method [Print Devices],IPrintCoreHelperPS interface, prcomoem/IPrintCoreHelperPS::SetFontSubstitution, print.iprintcorehelperps_setfontsubstitution, print_unidrv-pscript_allplugins_53cc5ca8-5c27-4fd8-b316-58753a996bda.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Prcomoem.h
 api_name:
- - IPrintCoreHelperPS.SetFontSubstitution
+ - IPrintCoreHelperPS::SetFontSubstitution
 ---
 
 # IPrintCoreHelperPS::SetFontSubstitution
@@ -50,14 +49,14 @@ The <b>IPrintCoreHelperPS::SetFontSubstitution</b> method specifies the device f
 
 ## -parameters
 
-### -param pszTrueTypeFontName 
+### -param pszTrueTypeFontName [in]
 
-[in]
+
 A pointer to a null-terminated Unicode string that contains a valid TrueType font name. This parameter must not be <b>NULL</b>.
 
-### -param pszDevFontName 
+### -param pszDevFontName [in]
 
-[in]
+
 A pointer to a null-terminated Unicode string that contains the name of the device font.
 
 ## -returns
@@ -141,3 +140,4 @@ To obtain a list of valid device fonts, create an information context for the cu
 
 
 <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintcorehelperps-getfontsubstitution">IPrintCoreHelperPS::GetFontSubstitution</a>
+

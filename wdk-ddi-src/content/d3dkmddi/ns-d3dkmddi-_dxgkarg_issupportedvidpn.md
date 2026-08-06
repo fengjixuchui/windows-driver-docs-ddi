@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGKARG_ISSUPPORTEDVIDPN
 title: _DXGKARG_ISSUPPORTEDVIDPN (d3dkmddi.h)
 description: The DXGKARG_ISSUPPORTEDVIDPN structure contains arguments for the DxgkDdiIsSupportedVidPn function. The DxgkDdiIsSupportedVidPn function determines whether a specified video present network (VidPN) is supported on a display adapter.
 old-location: display\dxgkarg_issupportedvidpn.htm
-ms.assetid: 37f9f40d-6d32-4eeb-8161-282a84ee89dc
 ms.date: 05/10/2018
 keywords: ["DXGKARG_ISSUPPORTEDVIDPN structure"]
 ms.keywords: "*INOUT_PDXGKARG_ISSUPPORTEDVIDPN, DXGKARG_ISSUPPORTEDVIDPN, DXGKARG_ISSUPPORTEDVIDPN structure [Display Devices], DmStructs_03198868-50e6-47a1-9119-0fa3bff21ec0.xml, _DXGKARG_ISSUPPORTEDVIDPN, d3dkmddi/DXGKARG_ISSUPPORTEDVIDPN, display.dxgkarg_issupportedvidpn"
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_ISSUPPORTEDVIDPN
  - DXGKARG_ISSUPPORTEDVIDPN
 ---
 
@@ -63,3 +63,4 @@ A Boolean variable that receives <b>TRUE</b> if the VidPN is supported and <b>FA
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_issupportedvidpn">DxgkDdiIsSupportedVidPn</a>
+

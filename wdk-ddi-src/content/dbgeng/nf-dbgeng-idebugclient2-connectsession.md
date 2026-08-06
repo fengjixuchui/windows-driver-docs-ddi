@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient2.ConnectSession
 title: IDebugClient2::ConnectSession (dbgeng.h)
-description: The ConnectSession method joins the client to an existing debugger session.
+description: The ConnectSession method joins the client to an existing debugger session. This method belongs to the IDebugClient2 interface.
 old-location: debugger\connectsession.htm
 tech.root: debugger
-ms.assetid: 4531bf2f-ef3b-4d4f-b922-3a01a9468ac9
 ms.date: 05/03/2018
 keywords: ["IDebugClient2::ConnectSession"]
 ms.keywords: ConnectSession, ConnectSession method [Windows Debugging], ConnectSession method [Windows Debugging],IDebugClient interface, ConnectSession method [Windows Debugging],IDebugClient2 interface, ConnectSession method [Windows Debugging],IDebugClient3 interface, ConnectSession method [Windows Debugging],IDebugClient4 interface, ConnectSession method [Windows Debugging],IDebugClient5 interface, IDebugClient interface [Windows Debugging],ConnectSession method, IDebugClient2 interface [Windows Debugging],ConnectSession method, IDebugClient2.ConnectSession, IDebugClient2::ConnectSession, IDebugClient3 interface [Windows Debugging],ConnectSession method, IDebugClient3::ConnectSession, IDebugClient4 interface [Windows Debugging],ConnectSession method, IDebugClient4::ConnectSession, IDebugClient5 interface [Windows Debugging],ConnectSession method, IDebugClient5::ConnectSession, IDebugClient::ConnectSession, IDebugClient_b6ec9f48-f400-4a91-bf23-dc40dd702a15.xml, dbgeng/IDebugClient2::ConnectSession, dbgeng/IDebugClient3::ConnectSession, dbgeng/IDebugClient4::ConnectSession, dbgeng/IDebugClient5::ConnectSession, dbgeng/IDebugClient::ConnectSession, debugger.connectsession
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.ConnectSession
- - IDebugClient2.ConnectSession
- - IDebugClient3.ConnectSession
- - IDebugClient4.ConnectSession
- - IDebugClient5.ConnectSession
+ - IDebugClient2::ConnectSession
 ---
 
 # IDebugClient2::ConnectSession
@@ -54,9 +49,9 @@ The <b>ConnectSession</b> method joins the client to an existing debugger sessio
 
 ## -parameters
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies a bit-set of option flags for connecting to the session.  The possible values of these flags are:
 
 <table>
@@ -86,9 +81,9 @@ Do not output a message notifying other clients that this client has connected.
 </tr>
 </table>
 
-### -param HistoryLimit 
+### -param HistoryLimit [in]
 
-[in]
+
 Specifies the maximum number of characters from the session's history to send to this client's output upon connection.
 
 ## -returns
@@ -152,3 +147,4 @@ For more information about debugging clients, see Debugging Server and Debugging
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-startserver">StartServer</a>
+

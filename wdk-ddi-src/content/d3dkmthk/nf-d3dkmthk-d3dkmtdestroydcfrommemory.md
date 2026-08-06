@@ -3,14 +3,13 @@ UID: NF:d3dkmthk.D3DKMTDestroyDCFromMemory
 title: D3DKMTDestroyDCFromMemory function (d3dkmthk.h)
 description: The D3DKMTDestroyDCFromMemory function releases the display context.
 old-location: display\d3dkmtdestroydcfrommemory.htm
-ms.assetid: 1c34db7b-6153-40ec-9a9f-72b9c04c9f12
-ms.date: 05/10/2018
+ms.date: 02/23/2022
 keywords: ["D3DKMTDestroyDCFromMemory function"]
 ms.keywords: D3DKMTDestroyDCFromMemory, D3DKMTDestroyDCFromMemory function [Display Devices], OpenGL_Functions_2c70707b-7052-4f5f-8715-e2e61a7ab267.xml, d3dkmthk/D3DKMTDestroyDCFromMemory, display.d3dkmtdestroydcfrommemory
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -46,30 +45,27 @@ api_name:
 
 # D3DKMTDestroyDCFromMemory function
 
-
 ## -description
 
-The <b>D3DKMTDestroyDCFromMemory</b> function releases the display context.
+The **D3DKMTDestroyDCFromMemory** function releases the display context.
 
 ## -parameters
 
-### -param D3DKMT_DESTROYDCFROMMEMORY
+### -param unnamedParam1 [in]
 
-*pData* [in]
-
- A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_destroydcfrommemory">D3DKMT_DESTROYDCFROMMEMORY</a> structure that contains handles to the display context and bitmap.
+A pointer to a [D3DKMT_DESTROYDCFROMMEMORY](ns-d3dkmthk-_d3dkmt_destroydcfrommemory.md) structure that contains handles to the display context and bitmap.
 
 ## -returns
 
-<b>D3DKMTDestroyDCFromMemory</b> returns one of the following values:
+**D3DKMTDestroyDCFromMemory** returns one of the following values:
 
-|Return code|Description|
-|--- |--- |
-|STATUS_SUCCESS|The device context was successfully released.|
-|STATUS_INVALID_PARAMETER|Parameters were validated and determined to be incorrect.|
+| Return code | Description |
+|--|--|
+| STATUS_SUCCESS | The device context was successfully released. |
+| STATUS_INVALID_PARAMETER | Parameters were validated and determined to be incorrect. |
 
-This function might also return other <b>NTSTATUS</b> values.
+This function might also return other **NTSTATUS** values.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_destroydcfrommemory">D3DKMT_DESTROYDCFROMMEMORY</a>
+[D3DKMT_DESTROYDCFROMMEMORY](ns-d3dkmthk-_d3dkmt_destroydcfrommemory.md)

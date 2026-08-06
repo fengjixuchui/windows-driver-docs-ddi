@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_CRYPTOSESSIONGETHANDLE
 title: PFND3D11_1DDI_CRYPTOSESSIONGETHANDLE (d3d10umddi.h)
 description: Returns a handle for a cryptographic session.
 old-location: display\cryptosessiongethandle.htm
-ms.assetid: 30700af0-79e8-4808-bec8-94f5e5152bcc
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_CRYPTOSESSIONGETHANDLE callback function"]
 ms.keywords: CryptoSessionGetHandle, CryptoSessionGetHandle callback function [Display Devices], PFND3D11_1DDI_CRYPTOSESSIONGETHANDLE, PFND3D11_1DDI_CRYPTOSESSIONGETHANDLE callback, d3d10umddi/CryptoSessionGetHandle, display.cryptosessiongethandle
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - CryptoSessionGetHandle
-product:
- - Windows
+ - PFND3D11_1DDI_CRYPTOSESSIONGETHANDLE
 ---
 
 # PFND3D11_1DDI_CRYPTOSESSIONGETHANDLE callback function
@@ -87,3 +84,4 @@ This function allows the driver to define its own handle to its state data for t
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createcryptosession">CreateCryptoSession</a>
+

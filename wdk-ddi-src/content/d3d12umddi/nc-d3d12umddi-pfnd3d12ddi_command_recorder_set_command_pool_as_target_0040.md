@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_COMMAND_RECORDER_SET_COMMAND_POOL_AS_TARGET_0040
 title: PFND3D12DDI_COMMAND_RECORDER_SET_COMMAND_POOL_AS_TARGET_0040 (d3d12umddi.h)
 description: Implemented by the client driver to set the command pool as a target for the command recorder.
-ms.assetid: 1b264f1f-635b-44dd-aa4c-0e28ca010a2b
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_COMMAND_RECORDER_SET_COMMAND_POOL_AS_TARGET_0040 callback function"]
 req.header: d3d12umddi.h
@@ -35,8 +34,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_COMMAND_RECORDER_SET_COMMAND_POOL_AS_TARGET_0040
-product:
- - Windows
 ---
 
 # PFND3D12DDI_COMMAND_RECORDER_SET_COMMAND_POOL_AS_TARGET_0040 callback function
@@ -48,15 +45,15 @@ Implemented by the client driver to set the command pool as a target for the com
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 A handle to the command recorder.
 
-### -param Arg3
+### -param unnamedParam3
 
 A handle to the command pool.
 

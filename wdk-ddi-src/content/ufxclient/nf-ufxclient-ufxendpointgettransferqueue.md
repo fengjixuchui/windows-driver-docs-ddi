@@ -4,7 +4,6 @@ title: UfxEndpointGetTransferQueue function (ufxclient.h)
 description: Returns the transfer queue previously created by UfxEndpointCreate.
 old-location: buses\ufxendpointgettransferqueue.htm
 tech.root: usbref
-ms.assetid: 74E78EC9-4D2B-4CA4-AC00-03EB7433617C
 ms.date: 05/07/2018
 keywords: ["UfxEndpointGetTransferQueue function"]
 ms.keywords: UfxEndpointGetTransferQueue, UfxEndpointGetTransferQueue method [Buses], buses.ufxendpointgettransferqueue, ufxclient/UfxEndpointGetTransferQueue
@@ -50,9 +49,9 @@ Returns the transfer queue previously created by <a href="/windows-hardware/driv
 
 ## -parameters
 
-### -param UfxEndpoint 
+### -param UfxEndpoint [in]
 
-[in]
+
 A handle to an endpoint object returned from a previous call to <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxendpointcreate">UfxEndpointCreate</a>.
 
 ## -returns
@@ -61,7 +60,7 @@ A handle to a framework queue object.
 
 ## -remarks
 
-For an code example that shows how to create an endpoint object and initialize its context, see the Remarks section of <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxendpointcreate">UfxEndpointCreate</a>.
+For a code example that shows how to create an endpoint object and initialize its context, see the Remarks section of <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxendpointcreate">UfxEndpointCreate</a>.
 
 ## -see-also
 

@@ -4,7 +4,6 @@ title: _NDK_SGE (ndkpi.h)
 description: The NDK_SGE structure specifies the local buffers for NDK work requests.
 old-location: netvista\ndk_sge.htm
 tech.root: netvista
-ms.assetid: D64DD5F0-2BCA-4A6B-A7BA-04A2B8E3B9FE
 ms.date: 05/02/2018
 keywords: ["NDK_SGE structure"]
 ms.keywords: NDK_SGE, NDK_SGE structure [Network Drivers Starting with Windows Vista], _NDK_SGE, ndkpi/NDK_SGE, netvista.ndk_sge
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
+ - _NDK_SGE
  - NDK_SGE
 ---
 
@@ -113,3 +113,4 @@ When an <b>NDK_SGE</b> structure is used in a work request with the <b>NDK_OP_FL
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_logical_address_mapping">NDK_LOGICAL_ADDRESS_MAPPING</a>
+

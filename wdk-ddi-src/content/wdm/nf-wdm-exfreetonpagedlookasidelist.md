@@ -4,7 +4,6 @@ title: ExFreeToNPagedLookasideList function (wdm.h)
 description: The ExFreeToNPagedLookasideList routine returns a nonpaged entry to the given lookaside list or to nonpaged pool.
 old-location: kernel\exfreetonpagedlookasidelist.htm
 tech.root: kernel
-ms.assetid: 8abd72f1-0537-4624-b3d4-2de51c4d4daa
 ms.date: 04/30/2018
 keywords: ["ExFreeToNPagedLookasideList function"]
 ms.keywords: ExFreeToNPagedLookasideList, ExFreeToNPagedLookasideList routine [Kernel-Mode Driver Architecture], k102_30577c54-40a4-41a3-abc2-f3cdcd45ef1b.xml, kernel.exfreetonpagedlookasidelist, wdm/ExFreeToNPagedLookasideList
@@ -50,17 +49,20 @@ The <b>ExFreeToNPagedLookasideList</b> routine returns a nonpaged entry to the g
 
 ## -parameters
 
-### -param Lookaside 
+### -param Lookaside [in, out]
 
-[in, out]
+
 A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">NPAGED_LOOKASIDE_LIST</a> structure for the lookaside list, which the caller already initialized with <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializenpagedlookasidelist">ExInitializeNPagedLookasideList</a>.
 
-### -param Entry 
+### -param Entry [in]
 
-[in]
+
 A pointer to the entry to be freed. The caller obtained this pointer from a preceding call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatefromnpagedlookasidelist">ExAllocateFromNPagedLookasideList</a>.
 
 ## -remarks
+
+> [!CAUTION]
+> Starting in Windows 11, version 22H2, this function changed from inline to exported. As a result, if you build your driver targeting the latest version of Windows, it will fail to load in older OS versions. To change the target OS version in Visual Studio, select Configuration Properties->Driver Settings->General.
 
 <b>ExFreeToNPagedLookasideList</b> is the reciprocal of <b>ExAllocateFromNPagedLookasideList</b>. It releases a caller-allocated entry back to the caller's lookaside list or to nonpaged pool when that entry is no longer in use.
 

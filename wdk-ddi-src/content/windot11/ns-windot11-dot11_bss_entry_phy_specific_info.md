@@ -1,11 +1,10 @@
 ---
 UID: NS:windot11.DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO
 title: DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_bss_entry_phy_specific_info.htm
 tech.root: netvista
-ms.assetid: 85bcd355-633b-4d3f-a387-1e3b2ac3a013
-ms.date: 02/16/2018
+ms.date: 12/28/2021
 keywords: ["DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO structure"]
 ms.keywords: "*PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO union [Network Drivers Starting with Windows Vista], Native_802.11_data_types_bd52a4e6-211b-4bb7-9398-22545a3a70c3.xml, PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO union pointer [Network Drivers Starting with Windows Vista], netvista.dot11_bss_entry_phy_specific_info, windot11/DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO, windot11/PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO"
 req.header: windot11.h
@@ -41,8 +40,7 @@ api_location:
  - windot11.h
 api_name:
  - DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO
-product:
- - Windows 10 or later.
+ - PDOT11_BSS_ENTRY_PHY_SPECIFIC_INFO
 ---
 
 # DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO structure
@@ -51,7 +49,7 @@ product:
 ## -description
 
 > [!IMPORTANT]
-> The [Native 802.11 Wireless LAN](/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)) interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see [WLAN Universal Windows driver model](/windows-hardware/drivers/network/wifi-universal-driver-model).
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
 
 The DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO union specifies the attributes of the PHY which received an IEEE 802.11 Beacon or Response Frame during the Native 802.11 miniport driver's last scan operation.
 
@@ -68,26 +66,27 @@ The channel center frequency of the band on which the 802.11 Probe-Response or B
 
 The FHSS parameters, as specified by the following members:
 
-#### uHopPattern
+### -field FHSS.uHopPattern
 
 The current hopping pattern used by the layer management entity (LME) of the PHY to determine the hopping sequence. For more information about how the hopping sequence is determined, refer to Clause 14.9.2.20 of the IEEE 802.11-2012 standard.
 
 > [!NOTE]
 > This member is only valid for FHSS PHY types.
 
-#### uHopSet
+### -field FHSS.uHopSet
 
 The current set of patterns used by the LME of the PHY to determine the hopping sequence. For more information about the hopping pattern sets, refer to Clause 14.9.2.19 of the IEEE 802.11-2012 standard.
 
 > [!NOTE]
 > This member is only valid for FHSS PHY types.
 
-#### uDwellTime
+### -field FHSS.uDwellTime
 
 The maximum amount of time that the PHY can use when transmitting on a single channel. The value of **uDwellTime** is in units of 802.11 time units (TU). One TU is 1024 microseconds.
 
 > [!NOTE]
 > This member is only valid for FHSS PHY types.
+
 
 ## -syntax
 
@@ -109,3 +108,4 @@ The DOT11_BSS_ENTRY_PHY_SPECIFIC_INFO union is a member of the [DOT11_BSS_ENTRY]
 ## -see-also
 
 [DOT11_BSS_ENTRY](../windot11/ns-windot11-dot11_bss_entry.md)
+

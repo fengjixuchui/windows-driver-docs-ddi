@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._WHEA_ERROR_SOURCE_CONFIGURATION
 title: WHEA_ERROR_SOURCE_CONFIGURATION
-description: 
-tech.root: 
-ms.assetid: 36c92190-6c01-43a7-99d5-c858c3ee321f
+description: "Learn more about: WHEA_ERROR_SOURCE_CONFIGURATION structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEA_ERROR_SOURCE_CONFIGURATION structure"]
 ms.keywords: WHEA_ERROR_SOURCE_CONFIGURATION, WHEA_ERROR_SOURCE_CONFIGURATION, *PWHEA_ERROR_SOURCE_CONFIGURATION,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_ERROR_SOURCE_CONFIGURATION
+ - PWHEA_ERROR_SOURCE_CONFIGURATION
  - WHEA_ERROR_SOURCE_CONFIGURATION
-product:
- - Windows
 ---
 
 # WHEA_ERROR_SOURCE_CONFIGURATION structure
@@ -62,7 +61,7 @@ Reserved for system use.
 
 ### -field Uninitialize
 
-### -field Ready
+### -field Reserved
 
 ## -remarks
 

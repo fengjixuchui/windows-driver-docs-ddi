@@ -4,7 +4,6 @@ title: IMiniportTopology::Init (portcls.h)
 description: The Init method initializes the topology miniport object.
 old-location: audio\iminiporttopology_init.htm
 tech.root: audio
-ms.assetid: c8c53792-8c1a-466a-9f0f-8c12f9e7b50e
 ms.date: 05/08/2018
 keywords: ["IMiniportTopology::Init"]
 ms.keywords: IMiniportTopology interface [Audio Devices],Init method, IMiniportTopology.Init, IMiniportTopology::Init, Init, Init method [Audio Devices], Init method [Audio Devices],IMiniportTopology interface, audio.iminiporttopology_init, audmp-routines_c87a11c3-aed3-4516-b3bf-5d32423fa293.xml, portcls/IMiniportTopology::Init
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportTopology.Init
+ - IMiniportTopology::Init
 ---
 
 # IMiniportTopology::Init
@@ -50,19 +49,19 @@ The <code>Init</code> method initializes the topology miniport object.
 
 ## -parameters
 
-### -param UnknownAdapter 
+### -param UnknownAdapter [in]
 
-[in]
+
 Pointer to the <b>IUnknown</b> interface of the adapter object whose miniport object is being initialized. This parameter is optional and can be specified as <b>NULL</b>. For more information, see the following Remarks section.
 
-### -param ResourceList 
+### -param ResourceList [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iresourcelist">IResourceList</a> interface of the resource list object that is to be supplied to the miniport driver during initialization. After passing this reference to the miniport driver, the port driver is free to examine the contents of the resource list but will not modify the contents of this list. For more information, see the following Remarks section.
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iporttopology">IPortTopology</a> object that is bound to this miniport object. The caller specifies a valid, non-<b>NULL</b> pointer value for this parameter.
 
 ## -returns
@@ -90,3 +89,4 @@ The <i>UnknownAdapter</i>, <i>ResourceList</i>, and <i>Port</i> parameters follo
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iresourcelist">IResourceList</a>
+

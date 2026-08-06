@@ -4,7 +4,6 @@ title: NetDmaInterruptDpc function (netdma.h)
 description: The NetDmaInterruptDpc function notifies the NetDMA interface that a DMA transfer deferred procedure call (DPC) has completed on a DMA channel.
 old-location: netvista\netdmainterruptdpc.htm
 tech.root: netvista
-ms.assetid: 93d7e4dd-70ee-4490-bffd-9b07511ee9fe
 ms.date: 05/02/2018
 keywords: ["NetDmaInterruptDpc function"]
 ms.keywords: NetDmaInterruptDpc, NetDmaInterruptDpc function [Network Drivers Starting with Windows Vista], netdma/NetDmaInterruptDpc, netdma_ref_112a0d48-213e-4b5c-a776-11d5dcb83e1b.xml, netvista.netdmainterruptdpc
@@ -54,17 +53,17 @@ in Windows 8 and later.</div><div> </div>The
 
 ## -parameters
 
-### -param NetDmaChannelHandle 
+### -param NetDmaChannelHandle [in]
 
-[in]
+
 A handle that identifies the DMA channel. The DMA provider driver received this handle from NetDMA
      in a call to the 
      <a href="/windows-hardware/drivers/ddi/netdma/nc-netdma-dma_channel_allocate_handler">
      ProviderAllocateDmaChannel</a> function.
 
-### -param DmaDescriptor 
+### -param DmaDescriptor [in, optional]
 
-[in, optional]
+
 A pointer to the last DMA descriptor that was processed.
 
 ## -returns

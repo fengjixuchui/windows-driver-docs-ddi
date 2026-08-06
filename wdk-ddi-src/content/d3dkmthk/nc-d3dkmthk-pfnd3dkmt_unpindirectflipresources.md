@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_UNPINDIRECTFLIPRESOURCES
 title: PFND3DKMT_UNPINDIRECTFLIPRESOURCES (d3dkmthk.h)
 description: The PFND3DKMT_UNPINDIRECTFLIPRESOURCES callback function unpins direct flip resources.
-ms.assetid: 4b2692d3-7747-490e-9f90-45f8d4cfbf72
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_UNPINDIRECTFLIPRESOURCES callback function"]
 req.header: d3dkmthk.h
@@ -36,7 +35,6 @@ api_location:
  - d3dkmthk.h
 api_name:
  - PFND3DKMT_UNPINDIRECTFLIPRESOURCES
- - D3DKMTUnpinDirectFlipResources
 dev_langs:
  - c++
 ---
@@ -50,7 +48,7 @@ The PFND3DKMT_UNPINDIRECTFLIPRESOURCES callback function unpins direct flip reso
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *\_In\_* *pResources*
 

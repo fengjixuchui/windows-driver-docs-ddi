@@ -2,7 +2,7 @@
 UID: NF:ntddk.PsGetThreadServerSilo
 title: PsGetThreadServerSilo function (ntddk.h)
 description: Determines whether the given thread is a silo.
-ms.assetid: 021c4a39-c2fd-4f6d-8299-0f36fab0a69f
+tech.root: kernel
 ms.date: 09/30/2018
 keywords: ["PsGetThreadServerSilo function"]
 ms.keywords: PsGetThreadServerSilo
@@ -47,13 +47,13 @@ Determines whether the given thread is a silo.
 
 ## -parameters
 
-### -param Thread
+### -param Thread [In]
 
-[In] A pointer to the job being examined.
+A pointer to the thread being examined.
 
 ## -returns
 
-Returns TRUE if the job is a silo, FALSE otherwise.
+Returns a pointer to the server silo for the thread or NULL.
 
 ## -remarks
 

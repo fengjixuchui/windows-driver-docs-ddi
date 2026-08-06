@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_GetSubscriberNumbers
 title: RIL_GetSubscriberNumbers function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_GetSubscriberNumbers function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_getsubscribernumbers.htm
 tech.root: netvista
-ms.assetid: 31634cee-0d8e-4eed-b127-906da6a7b8fe
 ms.date: 05/02/2018
 keywords: ["RIL_GetSubscriberNumbers function"]
 ms.keywords: RIL_GetSubscriberNumbers, RIL_GetSubscriberNumbers method [Network Drivers Starting with Windows Vista], netvista.ril_getsubscribernumbers, rilapi/RIL_GetSubscriberNumbers

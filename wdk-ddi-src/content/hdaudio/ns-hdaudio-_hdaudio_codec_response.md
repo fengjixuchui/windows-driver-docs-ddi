@@ -4,7 +4,6 @@ title: _HDAUDIO_CODEC_RESPONSE (hdaudio.h)
 description: The HDAUDIO_CODEC_RESPONSE structure specifies either a response to a codec command or an unsolicited response from a codec.
 old-location: audio\hdaudio_codec_response.htm
 tech.root: audio
-ms.assetid: 56b9cdb5-2734-45b5-aeaf-ae6d606d1a5c
 ms.date: 05/08/2018
 keywords: ["HDAUDIO_CODEC_RESPONSE structure"]
 ms.keywords: "*PHDAUDIO_CODEC_RESPONSE, HDAUDIO_CODEC_RESPONSE, HDAUDIO_CODEC_RESPONSE structure [Audio Devices], PHDAUDIO_CODEC_RESPONSE, PHDAUDIO_CODEC_RESPONSE structure pointer [Audio Devices], _HDAUDIO_CODEC_RESPONSE, aud-prop2_2cf51d01-4493-439c-9a5f-30b86d76502b.xml, audio.hdaudio_codec_response, hdaudio/HDAUDIO_CODEC_RESPONSE, hdaudio/PHDAUDIO_CODEC_RESPONSE"
@@ -42,11 +41,12 @@ api_type:
 api_location:
  - hdaudio.h
 api_name:
+ - _HDAUDIO_CODEC_RESPONSE
+ - PHDAUDIO_CODEC_RESPONSE
  - HDAUDIO_CODEC_RESPONSE
 ---
 
 # _HDAUDIO_CODEC_RESPONSE structure
-
 
 ## -description
 
@@ -56,78 +56,43 @@ The HDAUDIO_CODEC_RESPONSE structure specifies either a response to a codec comm
 
 ### -field Unsolicited
 
+Specifies a 32-bit unsolicited response value that consists of a 26-bit response value and a 6-bit tag value.
+
 ### -field Unsolicited.Response
+
+Specifies a 21-bit unsolicited response value.
 
 ### -field Unsolicited.SubTag
 
+Specifies a 5-bit SubTag.
+
 ### -field Unsolicited.Tag
+
+Specifies a 6-bit tag value for an unsolicited response.
 
 ### -field Response
 
-### -field SDataIn
+Specifies a response value.
+
+#### -field SDataIn
+
+Specifies the 4-bit codec address (SDI line) of the codec that generates the response.
 
 ### -field IsUnsolicitedResponse
 
+Specifies whether the response is unsolicited. If 1, the response is unsolicited. If 0, the response is solicited (that is, a response to a codec command).
+
 ### -field HasFifoOverrun
 
+Specifies whether a FIFO overrun occurred in the response input ring buffer (RIRB). If 1, a FIFO overrun occurred. If 0, a FIFO overrun did not occur.
+
 ### -field IsValid
+
+Specifies whether the response is valid. If 1, the response is valid. If 0, it is not valid.
 
 ### -field CompleteResponse
 
 Specifies a complete, 64-bit response summary that consists of a 32-bit response, 4-bit codec address, three status bits, and 25 unused bits (set to zero). This value is mostly used in debug messages.
-
-
-#### - ( unnamed struct )
-
-Specifies a 26-bit unsolicited response value.
-
-
-
-#### Unsolicited
-
-Specifies a 32-bit unsolicited response value that consists of a 26-bit response value and a 6-bit tag value.
-
-
-
-##### Response
-
-Specifies a 26-bit unsolicited response value.
-
-
-
-##### Tag
-
-Specifies a 6-bit tag value for an unsolicited response.
-
-
-
-#### Response
-
-Specifies a 26-bit unsolicited response value.
-
-
-
-#### SDataIn
-
-Specifies the 4-bit codec address (SDI line) of the codec that generates the response.
-
-
-
-#### IsUnsolicitedResponse
-
-Specifies whether the response is unsolicited. If 1, the response is unsolicited. If 0, the response is solicited (that is, a response to a codec command).
-
-
-
-#### HasFifoOverrun
-
-Specifies whether a FIFO overrun occurred in the response input ring buffer (RIRB). If 1, a FIFO overrun occurred. If 0, a FIFO overrun did not occur.
-
-
-
-#### IsValid
-
-Specifies whether the response is valid. If 1, the response is valid. If 0, it is not valid.
 
 ## -remarks
 
@@ -162,3 +127,4 @@ The unnamed 25-bitfield between the <b>UnsolicitedResponse</b> and <b>HasFifoOve
 
 
 <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-ptransfer_codec_verbs">TransferCodecVerbs</a>
+

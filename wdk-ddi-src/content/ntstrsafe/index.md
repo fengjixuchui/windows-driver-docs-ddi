@@ -1,17 +1,17 @@
 ---
+description: "Learn more about: Ntstrsafe.h header"
 UID: NA:ntstrsafe
 title: Ntstrsafe.h header
 ms.assetid: 65f21332-b24f-3667-9a7a-dd2844d95ae9
 ms.date: 05/09/2018
 keywords: ["Ntstrsafe.h header"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 tech.root: kernel
 f1_keywords:
  - ntstrsafe
  - ntstrsafe/ntstrsafe
+api_name:
+ - ntstrsafe
 ---
 
 # Ntstrsafe.h header
@@ -32,3 +32,4 @@ Unicode strings are specified within [**UNICODE_STRING**](/windows/win32/api/ntd
 For more information, see:
 
 - [Using Safe String Functions](/windows-hardware/drivers/kernel/using-safe-string-functions)
+

@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGK_COLORIMETRY
 title: _DXGK_COLORIMETRY (d3dkmddi.h)
 description: Describes colorimetry and closely related fields used to describe overrides from the descriptor retrieved from the display device.
 old-location: display\dxgk_colorimetry.htm
-ms.assetid: F3F9B6EC-B978-4C87-8AE0-8F6BC73099D2
 ms.date: 05/10/2018
 keywords: ["DXGK_COLORIMETRY structure"]
 ms.keywords: "*PDXGK_COLORIMETRY, DXGK_COLORIMETRY, DXGK_COLORIMETRY structure [Display Devices], PDXGK_COLORIMETRY, PDXGK_COLORIMETRY structure pointer [Display Devices], _DXGK_COLORIMETRY, d3dkmddi/DXGK_COLORIMETRY, d3dkmddi/PDXGK_COLORIMETRY, display.dxgk_colorimetry"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_COLORIMETRY
+ - PDXGK_COLORIMETRY
  - DXGK_COLORIMETRY
 ---
 
@@ -95,7 +96,7 @@ Indicates support for specific colorimetry and EOTF capabilities using bit-field
 
 ## -remarks
 
-This struct is used both for querying overrides from the driver, and for the OS reporting the final set of values it has selected.  Overrides are supported for integrated displays using this structure which is embedded within the DXGK_QUERYINTEGRATEDDISPLAYOUT struct and for external displays where this stuct is used as the output buffer is for an adapter query type DXGKQAITYPE_QUERYCOLORIMETRYOVERRIDES.  The selected and adjusted overrides are reported back to the driver using DxgkDdiSetTargetAdjustedColorimetry.
+This struct is used both for querying overrides from the driver, and for the OS reporting the final set of values it has selected.  Overrides are supported for integrated displays using this structure which is embedded within the DXGK_QUERYINTEGRATEDDISPLAYOUT struct and for external displays where this struct is used as the output buffer is for an adapter query type DXGKQAITYPE_QUERYCOLORIMETRYOVERRIDES.  The selected and adjusted overrides are reported back to the driver using DxgkDdiSetTargetAdjustedColorimetry.
 
 
 

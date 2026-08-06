@@ -4,7 +4,6 @@ title: _ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER (acpiioct.h)
 description: The ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure contains output arguments from the IOCTL_ACPI_GET_DEVICE_INFORMATION control method.
 old-location: acpi\acpi_device_information_output_buffer.htm
 tech.root: acpi
-ms.assetid: 15AA7E06-DD7F-46B4-B2C2-604EA5150F7D
 ms.date: 08/26/2020
 keywords: ["ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure"]
 ms.keywords: "*PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure [ACPI Devices], PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure pointer [ACPI Devices], _ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, acpi.acpi_device_information_output_buffer, acpi.acpi_get_device_information_output_buffer, acpiioct/ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, acpiioct/PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Acpiioct.h
 api_name:
+ - _ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER
+ - PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER
  - ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER
 ---
 
@@ -147,3 +148,4 @@ A string of **InstanceIDLength** in length which contains a number that uniquely
 ## -see-also
 
 [IOCTL_ACPI_GET_DEVICE_INFORMATION](./ni-acpiioct-ioctl_acpi_get_device_information.md)
+

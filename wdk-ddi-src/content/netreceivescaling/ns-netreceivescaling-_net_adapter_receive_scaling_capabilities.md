@@ -3,17 +3,16 @@ UID: NS:netreceivescaling._NET_ADAPTER_RECEIVE_SCALING_CAPABILITIES
 title: _NET_ADAPTER_RECEIVE_SCALING_CAPABILITIES (netreceivescaling.h)
 description: The NET_ADAPTER_RECEIVE_SCALING_CAPABILITIES structure describes a net adapter's receive side scaling (RSS) capabilities.
 tech.root: netvista
-ms.assetid: d6076d3f-2f62-4b81-88b1-801e1612a28c
 ms.date: 07/13/2018
 keywords: ["NET_ADAPTER_RECEIVE_SCALING_CAPABILITIES structure"]
 ms.keywords: _NET_ADAPTER_RECEIVE_SCALING_CAPABILITIES, NET_ADAPTER_RECEIVE_SCALING_CAPABILITIES,
 req.header: netreceivescaling.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: 
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.27
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -34,6 +33,7 @@ api_location:
  - netreceivescaling.h
 api_name:
  - _NET_ADAPTER_RECEIVE_SCALING_CAPABILITIES
+ - NET_ADAPTER_RECEIVE_SCALING_CAPABILITIES
 ---
 
 # _NET_ADAPTER_RECEIVE_SCALING_CAPABILITIES structure
@@ -55,7 +55,7 @@ The number of hardware receive queues. This member must be a power of 2.
 
 ### -field IndirectionTableSize
 
-The number of indirection table entries. This member must be a power of 2.
+The number of indirection table entries. This member must be a minimum of 128 and a power of 2.
 
 ### -field UnhashedTargetIndex
 
@@ -131,3 +131,4 @@ The **NET_ADAPTER_RECEIVE_SCALING_CAPABILITIES** structure is an input parameter
 [NetAdapterSetReceiveScalingCapabilities](nf-netreceivescaling-netadaptersetreceivescalingcapabilities.md)
 
 [NetAdapterCx Receive Side Scaling](/windows-hardware/drivers/netcx/netadaptercx-receive-side-scaling-rss-)
+

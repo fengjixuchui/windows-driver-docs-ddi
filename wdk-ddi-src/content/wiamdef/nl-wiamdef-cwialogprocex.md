@@ -1,9 +1,8 @@
 ---
 UID: NL:wiamdef.CWiaLogProcEx
 title: CWiaLogProcEx (wiamdef.h)
-description: 
-ms.assetid: 40432fb3-ec6f-44ac-a757-0de2b99320fb
-ms.date: 10/19/2018
+description: "Learn more about: CWiaLogProcEx class"
+ms.date: 11/18/2020
 keywords: ["CWiaLogProcEx class"]
 req.header: wiamdef.h
 req.include-header: 
@@ -20,6 +19,7 @@ req.assembly:
 req.type-library: 
 targetos: Windows
 ms.custom: RS5
+tech.root: image
 f1_keywords:
  - CWiaLogProcEx
  - wiamdef/CWiaLogProcEx
@@ -31,16 +31,12 @@ api_location:
  - wiamdef.h
 api_name:
  - CWiaLogProcEx
-product:
- - Windows
 ---
 
 # CWiaLogProcEx class
-
 
 ## -description
 
 ## -remarks
 
 ## -see-also
-

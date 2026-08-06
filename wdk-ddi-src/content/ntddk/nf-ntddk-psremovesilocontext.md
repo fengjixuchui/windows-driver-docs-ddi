@@ -4,7 +4,6 @@ title: PsRemoveSiloContext function (ntddk.h)
 description: This routine removes an object that was inserted in the Silo.
 old-location: kernel\psremovesilocontext.htm
 tech.root: kernel
-ms.assetid: 3323EF1B-9EB3-4D56-A9A5-0A8397F8A235
 ms.date: 04/30/2018
 keywords: ["PsRemoveSiloContext function"]
 ms.keywords: PsRemoveSiloContext, PsRemoveSiloContext routine [Kernel-Mode Driver Architecture], kernel.psremovesilocontext, ntddk/PsRemoveSiloContext
@@ -50,14 +49,14 @@ This routine removes an object that was inserted in the <i>Silo</i>.
 
 ## -parameters
 
-### -param Silo 
+### -param Silo [in]
 
-[in]
+
 The silo from which the object is to be removed. This parameter is required and it cannot be <b>NULL</b>.
 
-### -param ContextSlot 
+### -param ContextSlot [in]
 
-[in]
+
 A slot allocated by the <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psallocsilocontextslot">PsAllocSiloContextSlot</a> routine.
 
 ### -param RemovedSiloContext

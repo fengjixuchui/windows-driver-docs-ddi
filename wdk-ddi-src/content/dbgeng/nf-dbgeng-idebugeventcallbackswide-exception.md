@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugEventCallbacksWide.Exception
 title: IDebugEventCallbacksWide::Exception (dbgeng.h)
-description: The Exception callback method is called by the engine when an exceptiondebugging event occurs in the target.
+description: The Exception callback method is called by the engine when an exception debugging event occurs in the target.
 old-location: debugger\idebugeventcallbackswide_exception.htm
 tech.root: debugger
-ms.assetid: 02f5bec1-f2d2-4b72-bd9e-b30315c334da
 ms.date: 05/03/2018
 keywords: ["IDebugEventCallbacksWide::Exception"]
 ms.keywords: Exception, Exception method [Windows Debugging], Exception method [Windows Debugging],IDebugEventCallbacksWide interface, IDebugEventCallbacksWide interface [Windows Debugging],Exception method, IDebugEventCallbacksWide.Exception, IDebugEventCallbacksWide::Exception, dbgeng/IDebugEventCallbacksWide::Exception, debugger.idebugeventcallbackswide_exception
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugEventCallbacksWide.Exception
+ - IDebugEventCallbacksWide::Exception
 ---
 
 # IDebugEventCallbacksWide::Exception
@@ -46,18 +45,18 @@ api_name:
 
 ## -description
 
-The <b>Exception</b> callback method is called by the engine when an <a href="/windows-hardware/drivers/">exception</a>debugging event occurs in the target.
+The <b>Exception</b> callback method is called by the engine when an <a href="/windows-hardware/drivers/">exception</a> debugging event occurs in the target.
 
 ## -parameters
 
-### -param Exception 
+### -param Exception [in]
 
-[in]
+
 Specifies the nature of the exception.  EXCEPTION_RECORD64 is defined in Winnt.h.
 
-### -param FirstChance 
+### -param FirstChance [in]
 
-[in]
+
 Specifies whether this exception has been previously encountered.  A nonzero value means that this is the first time the exception has been encountered ("first chance").  A zero value means that the exception has already been offered to all possible handlers, and each one declined to handle it ("second chance").
 
 ## -returns
@@ -71,3 +70,4 @@ This method is only called by the engine if the DEBUG_EVENT_EXCEPTION flag is se
 Because the structure that <i>Exception</i> points to might be deleted after this method returns, implementations of <b>IDebugEventCallbacksWide</b> should not access this structure after returning.
 
 For more information about handling events, see <a href="/windows-hardware/drivers/debugger/monitoring-events">Monitoring Events</a>.
+

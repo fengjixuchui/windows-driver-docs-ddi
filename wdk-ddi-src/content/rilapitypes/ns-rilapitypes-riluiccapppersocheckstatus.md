@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILUICCAPPPERSOCHECKSTATUS
 title: RILUICCAPPPERSOCHECKSTATUS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILUICCAPPPERSOCHECKSTATUS structure for internal use only."
 old-location: netvista\riluiccapppersocheckstatus.htm
 tech.root: netvista
-ms.assetid: 6438f692-75b0-4a41-a2f9-68b0fe3f23cf
 ms.date: 05/02/2018
 keywords: ["RILUICCAPPPERSOCHECKSTATUS structure"]
 ms.keywords: "*LPRILUICCAPPPERSOCHECKSTATUS, RILUICCAPPPERSOCHECKSTATUS, RILUICCAPPPERSOCHECKSTATUS structure [Network Drivers Starting with Windows Vista], netvista.riluiccapppersocheckstatus, ntddrilapitypes/RILUICCAPPPERSOCHECKSTATUS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILUICCAPPPERSOCHECKSTATUS
+ - LPRILUICCAPPPERSOCHECKSTATUS
 ---
 
 # RILUICCAPPPERSOCHECKSTATUS structure (rilapitypes.h)

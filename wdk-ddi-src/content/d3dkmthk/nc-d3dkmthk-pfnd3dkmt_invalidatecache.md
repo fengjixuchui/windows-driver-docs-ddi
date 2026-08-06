@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_INVALIDATECACHE
 title: PFND3DKMT_INVALIDATECACHE (d3dkmthk.h)
 description: Pfnd3dkmtInvalidatecache invalidates cache.
-ms.assetid: ce64469b-aff9-44d2-9c6f-a9f5affe6412
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_INVALIDATECACHE callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ Pfnd3dkmtInvalidatecache invalidates cache.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_INVALIDATECACHE](ns-d3dkmthk-_d3dkmt_invalidatecache.md) structure.
 

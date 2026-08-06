@@ -2,8 +2,7 @@
 UID: NS:uart._UART_HARDWARE_ACCESS
 title: _UART_HARDWARE_ACCESS (uart.h)
 description: Contains I/O functions and the function pointers used by the serial drivers to access the device hardware.
-tech.root: serports
-ms.assetid: c666e70b-c456-4fb8-baa7-487936801181
+tech.root: uart
 ms.date: 10/19/2018
 keywords: ["UART_HARDWARE_ACCESS structure"]
 ms.keywords: _UART_HARDWARE_ACCESS, UART_HARDWARE_ACCESS, *PUART_HARDWARE_ACCESS,
@@ -36,6 +35,8 @@ api_location:
  - uart.h
 api_name:
  - _UART_HARDWARE_ACCESS
+ - PUART_HARDWARE_ACCESS
+ - UART_HARDWARE_ACCESS
 ---
 
 # _UART_HARDWARE_ACCESS structure
@@ -107,3 +108,10 @@ A pointer to a [**UART_HARDWARE_WRITE_ULONG64**](nc-uart-uart_hardware_write_ulo
 
 ## -see-also
 
+[**UART_HARDWARE_DRIVER**](ns-uart-_uart_hardware_driver.md)
+
+[**_CPPORT**](ns-uart-_cpport.md)
+
+[**UART_STATUS**](ne-uart-uart_status.md)
+
+[**uart.h**](index.md)

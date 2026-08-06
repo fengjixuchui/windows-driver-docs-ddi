@@ -4,7 +4,6 @@ title: IPrintCorePS2::GetOptions (prcomoem.h)
 description: The IPrintCorePS2::GetOptions method retrieves the driver's current feature settings in the format of a list of feature/option keyword pairs.
 old-location: print\iprintcoreps2_getoptions.htm
 tech.root: print
-ms.assetid: 8f5df76b-57c9-4c5a-9ca2-f02c8d903a8b
 ms.date: 04/20/2018
 keywords: ["IPrintCorePS2::GetOptions"]
 ms.keywords: GetOptions, GetOptions method [Print Devices], GetOptions method [Print Devices],IPrintCorePS2 interface, IPrintCorePS2 interface [Print Devices],GetOptions method, IPrintCorePS2.GetOptions, IPrintCorePS2::GetOptions, prcomoem/IPrintCorePS2::GetOptions, print.iprintcoreps2_getoptions, print_unidrv-pscript_rendering_5efb04dd-f01b-4da4-9ac3-34a3e62a1ec3.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintCorePS2.GetOptions
+ - IPrintCorePS2::GetOptions
 ---
 
 # IPrintCorePS2::GetOptions
@@ -50,39 +49,39 @@ The <code>IPrintCorePS2::GetOptions</code> method retrieves the driver's current
 
 ## -parameters
 
-### -param pdevobj 
+### -param pdevobj [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/printoem/ns-printoem-_devobj">DEVOBJ</a> structure.
 
-### -param dwFlags 
+### -param dwFlags [in]
 
-[in]
+
 Is reserved and must be set to zero.
 
-### -param pmszFeaturesRequested 
+### -param pmszFeaturesRequested [in]
 
-[in]
+
 Pointer to caller-supplied buffer containing a list of feature keywords (in MULTI_SZ format) whose settings are requested. Set this parameter to <b>NULL</b> to obtain settings for all features.
 
-### -param cbIn 
+### -param cbIn [in]
 
-[in]
+
 Specifies the size, in bytes, of the buffer pointed to by <i>pmszFeaturesRequested</i>. The size includes the last MULTI_SZ null character.
 
-### -param pmszFeatureOptionBuf 
+### -param pmszFeatureOptionBuf [out]
 
-[out]
+
 Pointer to a caller-supplied buffer that receives a list of feature/option keyword pairs (in MULTI_SZ format) obtained from the driver settings. Each feature/option keyword pair contains the feature keyword name, a null character, the option keyword name, and another null character. The list is terminated by two NULL characters.
 
-### -param cbSize 
+### -param cbSize [in]
 
-[in]
+
 Specifies the size, in bytes, of the buffer pointed to by <i>pmszFeatureOptionBuf</i>.
 
-### -param pcbNeeded 
+### -param pcbNeeded [out]
 
-[out]
+
 Pointer to a memory location that receives the actual size, in bytes, of the requested data.
 
 ## -returns
@@ -161,7 +160,7 @@ This method supports both <a href="/windows-hardware/drivers/">document-sticky</
 
 If a requested feature keyword is not recognized, or the feature is recognized but there is currently no option selection for it, the feature is ignored and the feature/option keyword pair is not placed in the output buffer.
 
-To reduce the need to make two calls per data access, pass the method an output buffer of a fixed size (1 KB, for example), and then check the function return value. If the method returns S_OK, the buffer already contains the data of interest. If the method returns E_OUTOFMEMORY, the value in *<i>pcbNeeded</i> is the buffer size needed to hold the data of interest. The caller should then allocate a buffer of that larger size and proceed with a second call to the method.
+To reduce the need to make two calls per data access, pass the method an output buffer of a fixed size (1 KB, for example), and then check the function return value. If the method returns S_OK, the buffer already contains the data of interest. If the method returns E_OUTOFMEMORY, the value in **pcbNeeded* is the buffer size needed to hold the data of interest. The caller should then allocate a buffer of that larger size and proceed with a second call to the method.
 
 This method is supported for any Pscript5 render plug-in.
 
@@ -186,3 +185,4 @@ For more information, see <a href="/windows-hardware/drivers/print/using-getopti
 
 
 <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemps-enablepdev">IPrintOemPS::EnablePDEV</a>
+

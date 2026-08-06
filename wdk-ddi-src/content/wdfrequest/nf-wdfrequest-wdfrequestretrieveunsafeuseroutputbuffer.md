@@ -4,7 +4,6 @@ title: WdfRequestRetrieveUnsafeUserOutputBuffer function (wdfrequest.h)
 description: The WdfRequestRetrieveUnsafeUserOutputBuffer method retrieves an I/O request's output buffer, if the request's technique for accessing data buffers is neither buffered nor direct I/O.
 old-location: wdf\wdfrequestretrieveunsafeuseroutputbuffer.htm
 tech.root: wdf
-ms.assetid: 7969f683-3426-4863-8afe-d9cbe490a4b5
 ms.date: 02/26/2018
 keywords: ["WdfRequestRetrieveUnsafeUserOutputBuffer function"]
 ms.keywords: DFRequestObjectRef_3f483887-e2fa-413d-b147-9f18fc092800.xml, WdfRequestRetrieveUnsafeUserOutputBuffer, WdfRequestRetrieveUnsafeUserOutputBuffer method, kmdf.wdfrequestretrieveunsafeuseroutputbuffer, wdf.wdfrequestretrieveunsafeuseroutputbuffer, wdfrequest/WdfRequestRetrieveUnsafeUserOutputBuffer
@@ -53,24 +52,24 @@ The <b>WdfRequestRetrieveUnsafeUserOutputBuffer</b> method retrieves an I/O requ
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
-### -param MinimumRequiredLength 
+### -param MinimumRequiredLength [in]
 
-[in]
+
 The minimum buffer size, in bytes, that the driver needs to process the I/O request.
 
-### -param OutputBuffer 
+### -param OutputBuffer [out]
 
-[out]
+
 A pointer to a location that receives the buffer's address.
 
-### -param Length 
+### -param Length [out, optional]
 
-[out, optional]
+
 A pointer to a location that receives the buffer's size, in bytes. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

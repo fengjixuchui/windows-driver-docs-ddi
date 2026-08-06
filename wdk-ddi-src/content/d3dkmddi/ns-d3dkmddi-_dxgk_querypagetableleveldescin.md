@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGK_QUERYPAGETABLELEVELDESCIN
 title: _DXGK_QUERYPAGETABLELEVELDESCIN (d3dkmddi.h)
 description: The DXGK_QUERYPAGETABLELEVELDESCIN structure is used to request page level descriptors from the Dxgkrnl Interface.
 old-location: display\dxgk_querypagetableleveldescin.htm
-ms.assetid: 1B13BBB1-4184-4166-A61F-CC266D0391BF
 ms.date: 05/10/2018
 keywords: ["DXGK_QUERYPAGETABLELEVELDESCIN structure"]
 ms.keywords: DXGK_QUERYPAGETABLELEVELDESCIN, DXGK_QUERYPAGETABLELEVELDESCIN structure [Display Devices], _DXGK_QUERYPAGETABLELEVELDESCIN, d3dkmddi/DXGK_QUERYPAGETABLELEVELDESCIN, display.dxgk_querypagetableleveldescin
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_QUERYPAGETABLELEVELDESCIN
  - DXGK_QUERYPAGETABLELEVELDESCIN
 ---
 
@@ -64,9 +64,10 @@ A zero-based page table level index for the information requested.
 
 To get page table level descriptors Dxgkrnl calls <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo">DxgkDdiQueryAdapterInfo</a> with the following parameters:
 
-<pre class="syntax" xml:space="preserve"><code>DXGKARG_QUERYADAPTERINFO::Type = DXGKQAITYPE_PAGETABLELEVELDESC;
+<pre class="syntax"><code>DXGKARG_QUERYADAPTERINFO::Type = DXGKQAITYPE_PAGETABLELEVELDESC;
 DXGKARG_QUERYADAPTERINFO::pInputData = DXGK_QUERYPAGETABLELEVELDESCIN 
 DXGKARG_QUERYADAPTERINFO::InputDataSize = sizeof(QUERYPAGETABLELEVELDESCIN)
 DXGKARG_QUERYADAPTERINFO::pOutputData = pointer to DXGK_PAGE_TABLE_LEVEL_DESC
 DXGKARG_QUERYADAPTERINFO::OutputDataSize = sizeof(DXGK_PAGE_TABLE_LEVEL_DESC);
 </code></pre>
+

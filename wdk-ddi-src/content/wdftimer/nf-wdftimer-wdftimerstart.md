@@ -4,7 +4,6 @@ title: WdfTimerStart function (wdftimer.h)
 description: The WdfTimerStart method starts a timer's clock.
 old-location: wdf\wdftimerstart.htm
 tech.root: wdf
-ms.assetid: 32c40be2-dee0-4ac7-9f78-a64b9f985f51
 ms.date: 02/26/2018
 keywords: ["WdfTimerStart function"]
 ms.keywords: DFTimerObjectRef_42b50b58-85f6-4f1b-9824-f1c9ed675371.xml, WdfTimerStart, WdfTimerStart method, kmdf.wdftimerstart, wdf.wdftimerstart, wdftimer/WdfTimerStart
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfTimerStart</b> method starts a timer's clock.
 
 ## -parameters
 
-### -param Timer 
+### -param Timer [in]
 
-[in]
+
 A handle to a framework timer object that was obtained by calling <a href="/windows-hardware/drivers/ddi/wdftimer/nf-wdftimer-wdftimercreate">WdfTimerCreate</a>.
 
-### -param DueTime 
+### -param DueTime [in]
 
-[in]
+
 A time period, in system time units (100-nanosecond intervals). The framework calls the driver's <a href="/windows-hardware/drivers/ddi/wdftimer/nc-wdftimer-evt_wdf_timer">EvtTimerFunc</a> callback function when the specified time period elapses. The time period value can be negative or positive as follows:
 <ul>
 <li>

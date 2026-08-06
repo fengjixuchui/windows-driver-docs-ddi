@@ -4,7 +4,6 @@ title: tagKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING (ksmedia.h)
 description: The KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING is a property payload structure for video processing settings related to white balance, exposure mode, and focus mode.
 old-location: stream\kscamera_extendedprop_videoprocsetting.htm
 tech.root: stream
-ms.assetid: D4239E72-C57A-45BC-881C-08FF6263874E
 ms.date: 04/23/2018
 keywords: ["tagKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING structure"]
 ms.keywords: "*PKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING, KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING, KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING structure [Streaming Media Devices], KSCAMERA_EXTENDEDPROP_WBPRESET_CANDLELIGHT, KSCAMERA_EXTENDEDPROP_WBPRESET_CLOUDY, KSCAMERA_EXTENDEDPROP_WBPRESET_DAYLIGHT, KSCAMERA_EXTENDEDPROP_WBPRESET_FLASH, KSCAMERA_EXTENDEDPROP_WBPRESET_FLUORESCENT, KSCAMERA_EXTENDEDPROP_WBPRESET_TUNGSTEN, KSCAMERA_EXTENDEDPROP_WHITEBALANCE_PRESET, KSCAMERA_EXTENDEDPROP_WHITEBALANCE_TEMPERATURE, PKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING, PKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING structure pointer [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING, ksmedia/PKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING, stream.kscamera_extendedprop_videoprocsetting, tagKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ksmedia.h
 api_name:
+ - tagKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING
+ - PKSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING
  - KSCAMERA_EXTENDEDPROP_VIDEOPROCSETTING
 ---
 
@@ -96,7 +97,7 @@ Using the [KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE](/windows-hardware
 
 Using the [KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE](/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-whitebalancemode) property, when **Mode** is set to KSCAMERA_EXTENDEDPROP_WHITEBALANCE_TEMPERATURE, the **VideoProc.Value.ul** value is a temperature value in degrees Kelvin.
 
-Using the  [KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE](/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-exposuremode) property, when used for manually setting exposure, KSCAMERA_EXTENDEDPROP_VIDEOPROCFLAG_MANUAL, the **VideoProc.Value.ul** value is a the exposure time in 100 nanosecond units.
+Using the  [KSPROPERTY_CAMERACONTROL_EXTENDED_EXPOSUREMODE](/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-exposuremode) property, when used for manually setting exposure, KSCAMERA_EXTENDEDPROP_VIDEOPROCFLAG_MANUAL, the **VideoProc.Value.ul** value is the exposure time in 100 nanosecond units.
 
 Using the [KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE](/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-focusmode) property, this member contains the focal length value for manual focus mode,  KSCAMERA_EXTENDEDPROP_VIDEOPROCFLAG_MANUAL.
 
@@ -111,3 +112,4 @@ Reserved.
 [KSPROPERTY_CAMERACONTROL_EXTENDED_FOCUSMODE](/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-focusmode)
 
 [KSPROPERTY_CAMERACONTROL_EXTENDED_WHITEBALANCEMODE](/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-whitebalancemode)
+

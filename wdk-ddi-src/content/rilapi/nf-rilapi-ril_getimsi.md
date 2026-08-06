@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_GetIMSI
 title: RIL_GetIMSI function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_GetIMSI function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_getimsi.htm
 tech.root: netvista
-ms.assetid: 2bc038bb-fe8a-4a22-b4e2-d6dcf2589a12
 ms.date: 05/02/2018
 keywords: ["RIL_GetIMSI function"]
 ms.keywords: RIL_GetIMSI, RIL_GetIMSI method [Network Drivers Starting with Windows Vista], netvista.ril_getimsi, rilapi/RIL_GetIMSI

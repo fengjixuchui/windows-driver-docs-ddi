@@ -1,18 +1,18 @@
 ---
+description: "Learn more about: Ucmucsippm.h header"
 UID: NA:ucmucsippm
 title: Ucmucsippm.h header
 ms.assetid: 6839a2d9-d025-3af4-9d57-2d591f143ae1
 ms.date: 09/30/2018
 keywords: ["Ucmucsippm.h header"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 tech.root: usbref
 ms.custom: RS5
 f1_keywords:
  - ucmucsippm
  - ucmucsippm/ucmucsippm
+api_name:
+ - ucmucsippm
 ---
 
 # Ucmucsippm.h header
@@ -27,3 +27,4 @@ This header provides declarations for UCM-UCSI Platform Policy Manager (PPM) abs
 For more information, see:
 - [Write a UcmUcsi client driver](/windows-hardware/drivers/usbcon/write-a-ucsi-driver)
 - [Universal Serial Bus (USB)](/windows-hardware/drivers/usbcon)
+

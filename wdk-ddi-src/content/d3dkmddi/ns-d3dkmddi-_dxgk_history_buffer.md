@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGK_HISTORY_BUFFER
 title: _DXGK_HISTORY_BUFFER (d3dkmddi.h)
 description: Specifies a history buffer that stores time stamps that record GPU activity throughout the execution lifetime of a direct memory access (DMA) buffer.
 old-location: display\dxgk_history_buffer.htm
-ms.assetid: 66088355-A110-4295-81D9-542491E2D6E4
 ms.date: 05/10/2018
 keywords: ["DXGK_HISTORY_BUFFER structure"]
 ms.keywords: DXGK_HISTORY_BUFFER, DXGK_HISTORY_BUFFER structure [Display Devices], _DXGK_HISTORY_BUFFER, d3dkmddi/DXGK_HISTORY_BUFFER, display.dxgk_history_buffer
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmddi.h
 api_name:
+ - _DXGK_HISTORY_BUFFER
  - DXGK_HISTORY_BUFFER
 ---
 
@@ -77,3 +77,4 @@ The driver specifies the precision of time stamps with the <a href="/windows-har
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_history_buffer_header">DXGK_HISTORY_BUFFER_HEADER</a>
+

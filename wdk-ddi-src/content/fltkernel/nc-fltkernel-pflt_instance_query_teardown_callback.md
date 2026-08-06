@@ -4,7 +4,6 @@ title: PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK (fltkernel.h)
 description: A minifilter driver can register a routine of type PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK as the minifilter driver's InstanceQueryTeardownCallback routine.
 old-location: ifsk\pflt_instance_query_teardown_callback.htm
 tech.root: ifsk
-ms.assetid: 5aa41472-cb1d-49ba-a546-ec42bb859552
 ms.date: 04/16/2018
 keywords: ["PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK callback function"]
 ms.keywords: FltCallbacks_2ef837ae-a56a-4e66-a8d3-1f049f7bad45.xml, InstanceQueryTeardownCallback, InstanceQueryTeardownCallback routine [Installable File System Drivers], PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK, fltkernel/InstanceQueryTeardownCallback, ifsk.pflt_instance_query_teardown_callback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - fltkernel.h
 api_name:
- - InstanceQueryTeardownCallback
+ - PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK
 ---
 
 # PFLT_INSTANCE_QUERY_TEARDOWN_CALLBACK callback function
@@ -50,14 +49,14 @@ A minifilter driver can register a routine of type <i>PFLT_INSTANCE_QUERY_TEARDO
 
 ## -parameters
 
-### -param FltObjects 
+### -param FltObjects [in]
 
-[in]
+
 Pointer to an <a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_related_objects">FLT_RELATED_OBJECTS</a> structure that contains opaque pointers for the objects related to the current operation.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Bitmask of flags that describe why the given instance query teardown callback routine was called. No flags are currently defined.
 
 ## -returns
@@ -123,3 +122,4 @@ If a minifilter driver does not define an <i>InstanceQueryTeardownCallback</i> r
 
 
 <a href="/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_instance_teardown_callback">PFLT_INSTANCE_TEARDOWN_CALLBACK</a>
+

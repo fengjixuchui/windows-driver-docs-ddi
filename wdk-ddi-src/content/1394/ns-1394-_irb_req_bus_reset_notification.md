@@ -4,7 +4,6 @@ title: _IRB_REQ_BUS_RESET_NOTIFICATION (1394.h)
 description: This structure contains the fields necessary for the 1394 bus driver to carry out a bus reset notification request.
 old-location: ieee\irb_req_bus_reset_notification.htm
 tech.root: IEEE
-ms.assetid: 3EF9BB26-81B2-4ED7-A934-AF3E73B650A0
 ms.date: 02/15/2018
 keywords: ["IRB_REQ_BUS_RESET_NOTIFICATION structure"]
 ms.keywords: 1394/IRB_REQ_BUS_RESET_NOTIFICATION, IEEE.irb_req_bus_reset_notification, IRB_REQ_BUS_RESET_NOTIFICATION, IRB_REQ_BUS_RESET_NOTIFICATION structure [Buses], _IRB_REQ_BUS_RESET_NOTIFICATION
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _IRB_REQ_BUS_RESET_NOTIFICATION
  - IRB_REQ_BUS_RESET_NOTIFICATION
 ---
 
@@ -73,9 +73,9 @@ void BusResetNotificationRoutine(IN PVOID Context);
  
 ```
 
-
 ### -field ResetContext
 
 Specifies the argument to be passed to the notification routine.
 
 When the EXTENDED_NOTIFICATION_ROUTINE flag is specified, <b>ResetContext</b> points to a <a href="/windows-hardware/drivers/ddi/1394/ns-1394-_bus_reset_data">BUS_RESET_DATA</a> structure.
+

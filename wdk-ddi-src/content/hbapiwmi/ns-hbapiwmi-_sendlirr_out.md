@@ -4,7 +4,6 @@ title: _SendLIRR_OUT (hbapiwmi.h)
 description: The SendLIRR_OUT structure is used to report the output parameter data of the SendLIRR WMI method to the WMI client.
 old-location: storage\sendlirr_out.htm
 tech.root: storage
-ms.assetid: 842842c2-ed79-4c8a-b9c1-d73c47998f91
 ms.date: 03/29/2018
 keywords: ["SendLIRR_OUT structure"]
 ms.keywords: "*PSendLIRR_OUT, PSendLIRR_OUT, PSendLIRR_OUT structure pointer [Storage Devices], SendLIRR_OUT, SendLIRR_OUT structure [Storage Devices], _SendLIRR_OUT, hbapiwmi/PSendLIRR_OUT, hbapiwmi/SendLIRR_OUT, storage.sendlirr_out, structs-Fibre_193ae454-313d-4ada-a161-39c403226edf.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hbapiwmi.h
 api_name:
+ - _SendLIRR_OUT
+ - PSendLIRR_OUT
  - SendLIRR_OUT
 ---
 
@@ -77,3 +78,4 @@ The WMI tool suite generates a declaration of the SendLIRR_OUT structure in <i>H
 ## -see-also
 
 <a href="/windows-hardware/drivers/storage/sendlirr">SendLIRR</a>
+

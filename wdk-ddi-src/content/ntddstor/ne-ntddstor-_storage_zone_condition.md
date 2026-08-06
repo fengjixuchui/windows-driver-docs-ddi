@@ -1,10 +1,9 @@
 ---
 UID: NE:ntddstor._STORAGE_ZONE_CONDITION
 title: _STORAGE_ZONE_CONDITION (ntddstor.h)
-description: Note  This structure is for internal use only and should not be called from your code. .
+description: "Microsoft reserves the STORAGE_ZONE_CONDITION enumeration for internal use only. Don't use this enumeration in your code."
 old-location: storage\storage_zone_condition.htm
 tech.root: storage
-ms.assetid: 57FF3890-6B37-45EB-BB02-22B2ADDFAA90
 ms.date: 03/29/2018
 keywords: ["STORAGE_ZONE_CONDITION enumeration"]
 ms.keywords: "*PSTORAGE_ZONE_CONDITION, PSTORAGE_ZONE_CONDITION, PSTORAGE_ZONE_CONDITION enumeration pointer [Storage Devices], STORAGE_ZONE_CONDITION, STORAGE_ZONE_CONDITION enumeration [Storage Devices], ZoneConditionClosed, ZoneConditionConventional, ZoneConditionEmpty, ZoneConditionExplicitlyOpened, ZoneConditionFull, ZoneConditionImplicitlyOpened, ZoneConditionOffline, ZoneConditionReadOnly, _STORAGE_ZONE_CONDITION, ntddstor/PSTORAGE_ZONE_CONDITION, ntddstor/STORAGE_ZONE_CONDITION, ntddstor/ZoneConditionClosed, ntddstor/ZoneConditionConventional, ntddstor/ZoneConditionEmpty, ntddstor/ZoneConditionExplicitlyOpened, ntddstor/ZoneConditionFull, ntddstor/ZoneConditionImplicitlyOpened, ntddstor/ZoneConditionOffline, ntddstor/ZoneConditionReadOnly, storage.storage_zone_condition"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddstor.h
 api_name:
+ - _STORAGE_ZONE_CONDITION
+ - PSTORAGE_ZONE_CONDITION
  - STORAGE_ZONE_CONDITION
 ---
 

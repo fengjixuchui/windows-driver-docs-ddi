@@ -2,7 +2,6 @@
 UID: NS:usbpmapi._USBPM_HUB_CONNECTOR_HANDLES
 title: _USBPM_HUB_CONNECTOR_HANDLES (usbpmapi.h)
 description: Stores the connector handles for all connectors on a hub.
-ms.assetid: 09998d82-882c-4e6d-83ab-ee356198aff7
 ms.date: 09/30/2018
 keywords: ["USBPM_HUB_CONNECTOR_HANDLES structure"]
 tech.root: usbref
@@ -37,6 +36,8 @@ api_location:
  - usbpmapi.h
 api_name:
  - _USBPM_HUB_CONNECTOR_HANDLES
+ - PUSBPM_HUB_CONNECTOR_HANDLES
+ - USBPM_HUB_CONNECTOR_HANDLES
 ---
 
 # _USBPM_HUB_CONNECTOR_HANDLES structure

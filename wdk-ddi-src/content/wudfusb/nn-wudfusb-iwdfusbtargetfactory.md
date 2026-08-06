@@ -4,7 +4,6 @@ title: IWDFUsbTargetFactory (wudfusb.h)
 description: The IWDFUsbTargetFactory interface is a factory interface that is used to create a USB target device object.
 old-location: wdf\iwdfusbtargetfactory.htm
 tech.root: wdf
-ms.assetid: 00f89160-b880-4882-bf2e-28e9ed15f844
 ms.date: 02/26/2018
 keywords: ["IWDFUsbTargetFactory interface"]
 ms.keywords: IWDFUsbTargetFactory, IWDFUsbTargetFactory interface, IWDFUsbTargetFactory interface,described, UMDFDeviceObjectRef_71a85574-e7e1-483e-8d16-06cb784ff30e.xml, umdf.iwdfusbtargetfactory, wdf.iwdfusbtargetfactory, wudfusb/IWDFUsbTargetFactory
@@ -52,7 +51,7 @@ The <b>IWDFUsbTargetFactory</b> interface is a factory interface that is used to
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFUsbTargetFactory</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IWDFUsbTargetFactory</b> also has these types of members:
+The <b>IWDFUsbTargetFactory</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IWDFUsbTargetFactory</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>

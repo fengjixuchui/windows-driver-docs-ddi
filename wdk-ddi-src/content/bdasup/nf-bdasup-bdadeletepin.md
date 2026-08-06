@@ -4,7 +4,6 @@ title: BdaDeletePin function (bdasup.h)
 description: The BdaDeletePin function deletes a pin from the specified filter.
 old-location: stream\bdadeletepin.htm
 tech.root: stream
-ms.assetid: 32ff70d7-980c-4c80-8ebc-af2121bc64df
 ms.date: 04/23/2018
 keywords: ["BdaDeletePin function"]
 ms.keywords: BdaDeletePin, BdaDeletePin function [Streaming Media Devices], bdaref_36a08eca-6cfb-4647-8252-05b6c8e0b8e1.xml, bdasup/BdaDeletePin, stream.bdadeletepin
@@ -51,14 +50,14 @@ The <b>BdaDeletePin</b> function deletes a pin from the specified filter.
 
 ## -parameters
 
-### -param pKSFilter 
+### -param pKSFilter [in]
 
-[in]
+
 Points to the filter in which to delete a pin.
 
-### -param pulPinId 
+### -param pulPinId [out, optional]
 
-[out, optional]
+
 Points to a variable that contains the identifier for the pin to delete.
 
 ## -returns

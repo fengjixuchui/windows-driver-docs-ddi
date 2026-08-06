@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILCHANGEUICCLOCKPASSWORDPARAMS
 title: RILCHANGEUICCLOCKPASSWORDPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILCHANGEUICCLOCKPASSWORDPARAMS structure in your code."
 old-location: netvista\rilchangeuicclockpasswordparams.htm
 tech.root: netvista
-ms.assetid: 00e2fe6f-fd8b-45d1-9fd2-d90c515c3571
 ms.date: 05/02/2018
 keywords: ["RILCHANGEUICCLOCKPASSWORDPARAMS structure"]
 ms.keywords: "*LPRILCHANGEUICCLOCKPASSWORDPARAMS, RILCHANGEUICCLOCKPASSWORDPARAMS, RILCHANGEUICCLOCKPASSWORDPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilchangeuicclockpasswordparams, ntddrilapitypes/RILCHANGEUICCLOCKPASSWORDPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILCHANGEUICCLOCKPASSWORDPARAMS
+ - LPRILCHANGEUICCLOCKPASSWORDPARAMS
 ---
 
 # RILCHANGEUICCLOCKPASSWORDPARAMS structure (ntddrilapitypes.h)

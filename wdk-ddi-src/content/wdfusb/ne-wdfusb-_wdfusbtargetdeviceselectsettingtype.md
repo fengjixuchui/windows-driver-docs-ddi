@@ -4,7 +4,6 @@ title: _WdfUsbTargetDeviceSelectSettingType (wdfusb.h)
 description: The WdfUsbTargetDeviceSelectSettingType enumeration defines techniques for specifying an alternate setting for a USB interface.
 old-location: wdf\wdfusbtargetdeviceselectsettingtype.htm
 tech.root: wdf
-ms.assetid: 3bbe3da6-f069-4965-ae60-2d755d7557c1
 ms.date: 02/26/2018
 keywords: ["WdfUsbTargetDeviceSelectSettingType enumeration"]
 ms.keywords: DFUsbRef_2c08813e-959f-48db-92d5-3aece2d8e856.xml, WdfUsbInterfaceSelectSettingTypeDescriptor, WdfUsbInterfaceSelectSettingTypeSetting, WdfUsbInterfaceSelectSettingTypeUrb, WdfUsbTargetDeviceSelectSettingType, WdfUsbTargetDeviceSelectSettingType enumeration, _WdfUsbTargetDeviceSelectSettingType, kmdf.wdfusbtargetdeviceselectsettingtype, wdf.wdfusbtargetdeviceselectsettingtype, wdfusb/WdfUsbInterfaceSelectSettingTypeDescriptor, wdfusb/WdfUsbInterfaceSelectSettingTypeSetting, wdfusb/WdfUsbInterfaceSelectSettingTypeUrb, wdfusb/WdfUsbTargetDeviceSelectSettingType
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfusb.h
 api_name:
+ - _WdfUsbTargetDeviceSelectSettingType
  - WdfUsbTargetDeviceSelectSettingType
 ---
 
@@ -54,15 +54,15 @@ The <b>WdfUsbTargetDeviceSelectSettingType</b> enumeration defines techniques fo
 
 ## -enum-fields
 
-### -field WdfUsbInterfaceSelectSettingTypeDescriptor
+### -field WdfUsbInterfaceSelectSettingTypeDescriptor:0x10
 
 Specify an interface's alternate setting by providing a <a href="/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_interface_descriptor">USB_INTERFACE_DESCRIPTOR</a> structure.
 
-### -field WdfUsbInterfaceSelectSettingTypeSetting
+### -field WdfUsbInterfaceSelectSettingTypeSetting:0x11
 
 Specify an interface's alternate setting by providing a setting index value.
 
-### -field WdfUsbInterfaceSelectSettingTypeUrb
+### -field WdfUsbInterfaceSelectSettingTypeUrb:0x12
 
 Specify an interface's alternate setting by providing a <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_urb">URB</a>.
 
@@ -81,3 +81,4 @@ The <b>WdfUsbTargetDeviceSelectSettingType</b> enumeration is used in the <a hre
 
 
 <a href="/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_interface_select_setting_params">WDF_USB_INTERFACE_SELECT_SETTING_PARAMS</a>
+

@@ -1,11 +1,9 @@
 ---
 UID: NF:winddiui.DrvSplWritePrinter
 title: DrvSplWritePrinter function (winddiui.h)
-description: 
-old-location: print\drvsplwriteprinter.htm
+description: This topic describes the DrvSplWritePrinter function.
 tech.root: print
-ms.assetid: c42bb90a-3c38-4c0c-b523-10e740a027c4
-ms.date: 04/20/2018
+ms.date: 04/19/2022
 keywords: ["DrvSplWritePrinter function"]
 ms.keywords: DrvSplWritePrinter, DrvSplWritePrinter function [Print Devices], print.drvsplwriteprinter, print_interface-graphics_a59ea0df-c5d8-4a84-8b57-21dfa4f382c4.xml, winddiui/DrvSplWritePrinter
 req.header: winddiui.h
@@ -41,18 +39,28 @@ api_name:
  - DrvSplWritePrinter
 ---
 
-# DrvSplWritePrinter function
-
-
 ## -description
+
+This topic describes the **DrvSplWritePrinter** function.
 
 ## -parameters
 
 ### -param hDriver
 
+Defines the **HANDLE** parameter *hDriver*.
+
 ### -param pBuf
+
+Defines the **LPVOID** parameter *pBuf*.
 
 ### -param cbBuf
 
+Defines the **DWORD** parameter *cbBuf*.
+
 ### -param pcWritten
 
+Defines the **LPDWORD** parameter *pcWritten*.
+
+## -returns
+
+BOOL

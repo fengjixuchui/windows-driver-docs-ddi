@@ -2,7 +2,6 @@
 UID: NS:d3dkmthk._D3DKMT_VA_RANGE_DESC
 title: _D3DKMT_VA_RANGE_DESC (d3dkmthk.h)
 description: The virtual address (VA) range description.
-ms.assetid: 96c89737-4994-46fe-af09-16339226675c
 ms.date: 10/19/2018
 keywords: ["D3DKMT_VA_RANGE_DESC structure"]
 ms.keywords: _D3DKMT_VA_RANGE_DESC, D3DKMT_VA_RANGE_DESC,
@@ -35,6 +34,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_VA_RANGE_DESC
+ - D3DKMT_VA_RANGE_DESC
 dev_langs:
  - c++
 ---
@@ -48,46 +48,46 @@ The virtual address (VA) range description.
 
 ## -struct-fields
 
-### -field VadAddress
+### -field VadAddress [in]
 
-[in] The video acceleration display (VAD) address.
+The video acceleration display (VAD) address.
 
-### -field VaRangeIndex
+### -field VaRangeIndex [in]
 
-[in] The virtual address range index.
+The virtual address range index.
 
-### -field PhysicalAdapterIndex
+### -field PhysicalAdapterIndex [in]
 
-[in] The physical adapter index in the LDA (linked display adapter) chain.
+The physical adapter index in the LDA (linked display adapter) chain.
 
-### -field StartAddress
+### -field StartAddress [out]
 
-[out] The start address.
+The start address.
 
-### -field EndAddress
+### -field EndAddress [out]
 
-[out] The end address.
+The end address.
 
-### -field DriverProtection
+### -field DriverProtection [out]
 
-[out] The driver protection.
+The driver protection.
 
-### -field OwnerType
+### -field OwnerType [out]
 
-[out] A VIDMM_VAD_OWNER_TYPE owner type.
+A VIDMM_VAD_OWNER_TYPE owner type.
 
-### -field pOwner
+### -field pOwner [out]
 
-[out] Pointer to the owner.
+Pointer to the owner.
 
-### -field OwnerOffset
+### -field OwnerOffset [out]
 
-[out] The owner offset.
+The owner offset.
 
-### -field Protection
+### -field Protection [out]
 
  
-[out] A D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE protection type.
+A D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE protection type.
 
 ## -remarks
 

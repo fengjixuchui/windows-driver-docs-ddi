@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.InterlockedExchange
 title: InterlockedExchange function (wdm.h)
-description: The InterlockedExchange routine sets an integer variable to a given value as an atomic operation.
+description: The InterlockedExchange function (wdm.h) sets an integer variable to a given value as an atomic operation.
 old-location: kernel\interlockedexchange.htm
 tech.root: kernel
-ms.assetid: c9bee5b0-eeaf-4c82-9f02-d00cf9202f78
 ms.date: 04/30/2018
 keywords: ["InterlockedExchange function"]
 ms.keywords: InterlockedExchange, InterlockedExchange routine [Kernel-Mode Driver Architecture], k102_ae8d85b7-040e-4c44-9476-68d6919a50e4.xml, kernel.interlockedexchange, wdm/InterlockedExchange
@@ -55,14 +54,14 @@ The <b>InterlockedExchange</b> routine sets an integer variable to a given value
 
 ## -parameters
 
-### -param Target 
+### -param Target [in, out]
 
-[in, out]
+
 A pointer to a variable to be set to the supplied <i>Value</i> as an atomic operation.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies the value to which the variable will be set.
 
 ## -returns

@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_6
+UID: NS:ks.KSMULTIPLE_ITEM
 title: KSMULTIPLE_ITEM (ks.h)
 description: The KSMULTIPLE_ITEM structure is a generic header for property data that can contain multiple entries.
 old-location: stream\ksmultiple_item.htm
 tech.root: stream
-ms.assetid: f8a15cb0-92c5-4637-934e-021fa7969208
 ms.date: 04/23/2018
 keywords: ["KSMULTIPLE_ITEM structure"]
 ms.keywords: "*PKSMULTIPLE_ITEM, KSMULTIPLE_ITEM, KSMULTIPLE_ITEM structure [Streaming Media Devices], PKSMULTIPLE_ITEM, PKSMULTIPLE_ITEM structure pointer [Streaming Media Devices], ks-struct_65ad7181-a002-4f51-8215-c82e7a1ee07c.xml, ks/KSMULTIPLE_ITEM, ks/PKSMULTIPLE_ITEM, stream.ksmultiple_item"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSMULTIPLE_ITEM
  - KSMULTIPLE_ITEM
 ---
 
@@ -66,8 +66,9 @@ Specifies the number of buffers that follow this header.
 
 
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
 <a href="/windows-hardware/drivers/stream/avstream-property-sets">Kernel Streaming Property Sets</a>
+

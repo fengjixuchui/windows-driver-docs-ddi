@@ -1,8 +1,7 @@
 ---
 UID: NS:ucmucsispec._UCSI_SET_NOTIFICATION_ENABLE_COMMAND
 title: _UCSI_SET_NOTIFICATION_ENABLE_COMMAND (ucmucsispec.h)
-description: Used in the SET_NOTIFICATION_ENABLE command. See Table 4-9.
-ms.assetid: bb43d333-b0a4-4c5a-9932-cdae5da2ce61
+description: Learn how UCSI_SET_NOTIFICATION_ENABLE_COMMAND is used in the SET_NOTIFICATION_ENABLE command. See Table 4-9.
 tech.root: usbref
 ms.date: 09/30/2018
 keywords: ["UCSI_SET_NOTIFICATION_ENABLE_COMMAND structure"]
@@ -37,6 +36,8 @@ api_location:
  - ucmucsispec.h
 api_name:
  - _UCSI_SET_NOTIFICATION_ENABLE_COMMAND
+ - PUCSI_SET_NOTIFICATION_ENABLE_COMMAND
+ - UCSI_SET_NOTIFICATION_ENABLE_COMMAND
 ---
 
 # _UCSI_SET_NOTIFICATION_ENABLE_COMMAND structure
@@ -44,7 +45,7 @@ api_name:
 
 ## -description
 
-Used in the SET_NOTIFICATION_ENABLE command. See Table 4-9 in [UCSI spec version 1.1](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
+Used in the SET_NOTIFICATION_ENABLE command. See Table 4-9 in [UCSI spec version 1.2](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
 
 ## -struct-fields
 

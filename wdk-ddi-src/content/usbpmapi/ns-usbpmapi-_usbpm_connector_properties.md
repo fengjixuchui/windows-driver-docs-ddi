@@ -2,7 +2,6 @@
 UID: NS:usbpmapi._USBPM_CONNECTOR_PROPERTIES
 title: _USBPM_CONNECTOR_PROPERTIES (usbpmapi.h)
 description: Describes the properties of a connector.
-ms.assetid: f07a2985-d569-4fe2-9a37-c95e7d664d28
 ms.date: 09/30/2018
 keywords: ["USBPM_CONNECTOR_PROPERTIES structure"]
 tech.root: usbref
@@ -36,6 +35,8 @@ api_type:
 api_location:
  - usbpmapi.h
 api_name:
+ - _USBPM_CONNECTOR_PROPERTIES
+ - PUSBPM_CONNECTOR_PROPERTIES
  - USBPM_CONNECTOR_PROPERTIES
 ---
 
@@ -44,7 +45,7 @@ api_name:
 
 ## -description
 
-Describes the properties of a connector. This structure is used in the [**UsbPm_RetrieveCoonnectorProperties**](nf-usbpmapi-usbpm_retrieveconnectorproperties.md) call.
+Describes the properties of a connector. This structure is used in the [**UsbPm_RetrieveConnectorProperties**](nf-usbpmapi-usbpm_retrieveconnectorproperties.md) call.
 
 ## -struct-fields
 

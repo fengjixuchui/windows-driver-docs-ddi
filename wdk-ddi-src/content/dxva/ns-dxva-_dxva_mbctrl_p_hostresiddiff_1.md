@@ -4,7 +4,6 @@ title: _DXVA_MBctrl_P_HostResidDiff_1 (dxva.h)
 description: The DXVA_MBctrl_P_HostResidDiff_1 structure is sent once per macroblock by the host decoder to the accelerator to specify macroblock control commands for most nonintra picture cases when using host-based IDCT.
 old-location: display\dxva_mbctrl_p_hostresiddiff_1.htm
 tech.root: display
-ms.assetid: be67b423-32a1-4f30-9f2c-fa6347cc960f
 ms.date: 05/10/2018
 keywords: ["DXVA_MBctrl_P_HostResidDiff_1 structure"]
 ms.keywords: "*LPDXVA_MBctrl_P_HostResidDiff_1, DXVA_MBctrl_P_HostResidDiff_1, DXVA_MBctrl_P_HostResidDiff_1 structure [Display Devices], _DXVA_MBctrl_P_HostResidDiff_1, display.dxva_mbctrl_p_hostresiddiff_1, dxva/DXVA_MBctrl_P_HostResidDiff_1, dxvaref_a97c973f-9673-4049-badd-648b1d0cc39c.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - dxva.h
 api_name:
+ - _DXVA_MBctrl_P_HostResidDiff_1
  - DXVA_MBctrl_P_HostResidDiff_1
 ---
 
@@ -65,7 +65,7 @@ Specifies the type of macroblock being processed. The following bits define the 
 | 15 to 12 | MvertFieldSel_3 (bit 15, the most significant bit) through MvertFieldSel_0 (bit 12)<br/>Specifies vertical field selection for corresponding motion vectors sent later in the macroblock control command. For frame-based motion with a frame picture structure (for example, for H.261 and H.263), these bits must all be zero. The use of these bits is the same as that specified for the corresponding bits in Section 6.3.17.2 of MPEG-2. | 
 | 11 | Reserved Bit. Must be zero. | 
 | 10 | *HostResidDiff*<br/>Specifies whether spatial-domain residual difference decoded blocks are sent or whether transform coefficients are sent for off-host IDCT for the current macroblock.<br/>The HostResidDif flag is always equal to 1 in this structure. This flag must be zero if bConfigResidDiffHost is zero. This flag must be 1 if bConfigResidDiffAccelerator is zero. | 
-| 9 and 8 | *MotionType*<br/>Specifies the motion type in the picture. For example, for frame-based motion with a frame picture structure (as in H.261), bit 9 must be 1 and bit 8 must be zero.<br/>The use of these bits corresponds directly to the use of frame_motion_type or field_motion_type bits in Section 6.3.17.1 and Tables 6-17 and 6-18 of MPEG-2 videowhen these bits are present in MPEG-2. The use of these bits are further explained in the following Remarks section. | 
+| 9 and 8 | *MotionType*<br/>Specifies the motion type in the picture. For example, for frame-based motion with a frame picture structure (as in H.261), bit 9 must be 1 and bit 8 must be zero.<br/>The use of these bits corresponds directly to the use of frame_motion_type or field_motion_type bits in Section 6.3.17.1 and Tables 6-17 and 6-18 of MPEG-2 video when these bits are present in MPEG-2. The use of these bits are further explained in the following Remarks section. | 
 | 7 and 6 | *MBscanMethod*<br/>This variable has no meaning and these bits should be set to zero in this structure. | 
 | 5 | *FieldResidual*<br/>Indicates whether the residual difference blocks use a field IDCT structure as specified in MPEG-2.<br/>Must be 1 if the bPicStructure member of [DXVA_PictureParameters](./ns-dxva-_dxva_pictureparameters.md)  is 1 or 2. When used for MPEG-2, FieldResidual must be zero if the frame_pred_frame_DCT variable in the MPEG-2 syntax is 1, and must be equal to the dct_type variable in the MPEG-2 syntax if dct_type is present for the macroblock. | 
 | 4 | *H261LoopFilter*<br/>Specifies whether the H.261 loop filter (Section 3.2.3 of H.261) is active for the current macroblock prediction. The H.261 loop filter is a separable 1/4, 1/2, 1/4 filter applied both horizontally and vertically to all six blocks in an H.261 macroblock, except at block edges where one of the taps would fall outside the block. In such cases, the filter is changed to have coefficients 0, 1, 0. Full arithmetic precision is retained with rounding to 8-bit integers at the output of the 2-D filter process (half-integer or higher values being rounded up). | 
@@ -127,3 +127,4 @@ Valid combinations of <i>IntraMacroblock</i>, <i>MotionForward</i>, <i>MotionBac
 
 
 <a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_pictureparameters">DXVA_PictureParameters</a>
+

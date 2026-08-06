@@ -4,8 +4,7 @@ title: ExGetFirmwareType function (wdm.h)
 description: Returns the system firmware type.
 old-location: kernel\exgetfirmwaretype.htm
 tech.root: kernel
-ms.assetid: b8a420d5-7741-4676-9956-dcf996125c6d
-ms.date: 04/30/2018
+ms.date: 10/28/2021
 keywords: ["ExGetFirmwareType function"]
 ms.keywords: ExGetFirmwareType, ExGetFirmwareType function [Kernel-Mode Driver Architecture], kernel.exgetfirmwaretype, wdm/ExGetFirmwareType
 req.header: wdm.h
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe (kernel mode)
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -47,6 +46,7 @@ api_name:
 ## -description
 
 Returns the system firmware type.
+
 
 ## -returns
 

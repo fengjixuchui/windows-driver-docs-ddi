@@ -4,7 +4,6 @@ title: PrintDocumentOnPrintProcessor function (winsplp.h)
 description: A print processor's PrintDocumentOnPrintProcessor function converts a print job from a spooled format into raw data that can be sent to a print monitor.
 old-location: print\printdocumentonprintprocessor.htm
 tech.root: print
-ms.assetid: 1360a699-e312-40be-bf2f-b73b1419cfc5
 ms.date: 04/20/2018
 keywords: ["PrintDocumentOnPrintProcessor function"]
 ms.keywords: PrintDocumentOnPrintProcessor, PrintDocumentOnPrintProcessor function [Print Devices], print.printdocumentonprintprocessor, spoolfnc_38f81d3c-62d9-4804-ad89-120c9a333a09.xml, winsplp/PrintDocumentOnPrintProcessor
@@ -51,14 +50,14 @@ A print processor's <code>PrintDocumentOnPrintProcessor</code> function converts
 
 ## -parameters
 
-### -param hPrintProcessor 
+### -param hPrintProcessor [in]
 
-[in]
+
 Caller-supplied print processor handle. This is the handle returned by a previous call to <a href="/windows-hardware/drivers/ddi/winsplp/nf-winsplp-openprintprocessor">OpenPrintProcessor</a>.
 
-### -param pDocumentName 
+### -param pDocumentName [in]
 
-[in]
+
 Caller-supplied pointer to the document name.
 
 ## -returns

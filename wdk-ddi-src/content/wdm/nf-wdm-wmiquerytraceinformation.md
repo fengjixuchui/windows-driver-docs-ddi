@@ -4,7 +4,6 @@ title: WmiQueryTraceInformation function (wdm.h)
 description: The WmiQueryTraceInformation routine returns information about a WMI event trace.
 old-location: kernel\wmiquerytraceinformation.htm
 tech.root: kernel
-ms.assetid: 8a6a930a-4267-47be-be00-ab9c102560c4
 ms.date: 04/30/2018
 keywords: ["WmiQueryTraceInformation function"]
 ms.keywords: WmiQueryTraceInformation, WmiQueryTraceInformation routine [Kernel-Mode Driver Architecture], k902_c4cd7b60-d605-465f-b018-f82b6d1144de.xml, kernel.wmiquerytraceinformation, wdm/WmiQueryTraceInformation
@@ -50,29 +49,29 @@ The <b>WmiQueryTraceInformation</b> routine returns information about a <a href=
 
 ## -parameters
 
-### -param TraceInformationClass 
+### -param TraceInformationClass [in]
 
-[in]
+
 Specifies a <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_trace_information_class">TRACE_INFORMATION_CLASS</a> enumerator that indicates the type of information to return about an event trace.
 
-### -param TraceInformation 
+### -param TraceInformation [out]
 
-[out]
+
 A pointer to a caller-allocated output buffer where the routine returns the event trace information specified by <i>TraceInformationClass</i>.
 
-### -param TraceInformationLength 
+### -param TraceInformationLength [in]
 
-[in]
+
 Specifies the size, in bytes, of the <i>TraceInformation</i> buffer.
 
-### -param RequiredLength 
+### -param RequiredLength [out, optional]
 
-[out, optional]
+
 A pointer to the value returned by the routine that specifies the required size, in bytes, of the <i>TraceInformation</i> buffer. The caller should set <i>RequiredLength</i> to <b>NULL</b> if it does not use the required length information.
 
-### -param Buffer 
+### -param Buffer [in, optional]
 
-[in, optional]
+
 A pointer to the query-specific input information that a caller supplies. If caller-supplied information is not required, the caller should set <i>Buffer</i> to <b>NULL</b>.
 
 ## -returns
@@ -337,7 +336,7 @@ If the caller supplies a non-<b>NULL</b> <i>RequiredLength</i> pointer, <b>WmiQu
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiwriteevent">IoWmiWriteEvent</a>
+<a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiwriteevent">IoWMIWriteEvent</a>
 
 
 

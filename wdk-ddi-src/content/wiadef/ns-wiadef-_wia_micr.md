@@ -4,7 +4,6 @@ title: _WIA_MICR (wiadef.h)
 description: The WIA_MICR structure stores header information for the MICR metadata report of one scan job (one call to IWiaMiniDrv::drvAcquireItemData).
 old-location: image\wia_micr.htm
 tech.root: image
-ms.assetid: CAD08405-698C-4C3A-A03F-827837199CC8
 ms.date: 05/03/2018
 keywords: ["WIA_MICR structure"]
 ms.keywords: WIA_MICR, WIA_MICR structure [Imaging Devices], _WIA_MICR, image.wia_micr, wiadef/WIA_MICR
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wiadef.h
 api_name:
+ - _WIA_MICR
  - WIA_MICR
 ---
 
@@ -81,3 +81,4 @@ Placeholder for a sequence of <b>Count</b> contiguous <a href="/windows-hardware
 ## -remarks
 
 The header must be followed by a sequence of MICR information structures, one for each decoded MICR code, in the order the MICR codes were found and decoded.
+

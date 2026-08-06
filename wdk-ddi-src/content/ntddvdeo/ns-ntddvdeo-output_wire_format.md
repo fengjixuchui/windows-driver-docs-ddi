@@ -3,7 +3,6 @@ UID: NS:ntddvdeo._OUTPUT_WIRE_FORMAT
 title: OUTPUT_WIRE_FORMAT
 description: Output wire format.
 tech.root: display
-ms.assetid: 8ae6f264-f122-475d-81ea-032042c55337
 ms.date: 04/04/2019
 keywords: ["OUTPUT_WIRE_FORMAT structure"]
 ms.keywords: OUTPUT_WIRE_FORMAT, OUTPUT_WIRE_FORMAT,
@@ -34,6 +33,7 @@ api_type:
 api_location:
  - ntddvdeo.h
 api_name:
+ - _OUTPUT_WIRE_FORMAT
  - OUTPUT_WIRE_FORMAT
 dev_langs:
  - c++

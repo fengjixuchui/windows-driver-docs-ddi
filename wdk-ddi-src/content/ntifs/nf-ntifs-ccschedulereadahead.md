@@ -4,7 +4,6 @@ title: CcScheduleReadAhead function (ntifs.h)
 description: The CcScheduleReadAhead routine performs read-ahead (also called &#0034;lazy read&#0034;) on a cached file. CcScheduleReadAhead should never be called directly. The CcReadAhead macro should be called instead.
 old-location: ifsk\ccschedulereadahead.htm
 tech.root: ifsk
-ms.assetid: 57fbe32d-ffc8-449e-be7f-2d2a8f2a7a66
 ms.date: 04/16/2018
 keywords: ["CcScheduleReadAhead function"]
 ms.keywords: CcScheduleReadAhead, CcScheduleReadAhead routine [Installable File System Drivers], ccref_ae4b3e52-9f23-499f-86f1-81e813484007.xml, ifsk.ccschedulereadahead, ntifs/CcScheduleReadAhead
@@ -50,19 +49,19 @@ The <b>CcScheduleReadAhead</b> routine performs read-ahead (also called "lazy re
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to a file object for the file on which read-ahead is to be performed.
 
-### -param FileOffset 
+### -param FileOffset [in]
 
-[in]
+
 Pointer to a variable that specifies the starting byte offset within the cached file where the last read occurred.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Length in bytes of the range that was last read.
 
 ## -remarks

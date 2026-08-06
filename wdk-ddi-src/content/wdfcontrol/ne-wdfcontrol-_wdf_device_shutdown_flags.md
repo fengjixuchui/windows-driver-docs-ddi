@@ -4,7 +4,6 @@ title: _WDF_DEVICE_SHUTDOWN_FLAGS (wdfcontrol.h)
 description: The WDF_DEVICE_SHUTDOWN_FLAGS enumeration defines flags that identify types of shutdown notifications that a driver can receive.
 old-location: wdf\wdf_device_shutdown_flags.htm
 tech.root: wdf
-ms.assetid: e394f8de-7257-4baa-9057-bd4bad34212d
 ms.date: 02/26/2018
 keywords: ["WDF_DEVICE_SHUTDOWN_FLAGS enumeration"]
 ms.keywords: DFDeviceObjectControllerDevObjRef_67312956-1032-4272-9b69-ed1674b5e951.xml, WDF_DEVICE_SHUTDOWN_FLAGS, WDF_DEVICE_SHUTDOWN_FLAGS enumeration, WdfDeviceLastChanceShutdown, WdfDeviceShutdown, _WDF_DEVICE_SHUTDOWN_FLAGS, kmdf.wdf_device_shutdown_flags, wdf.wdf_device_shutdown_flags, wdfcontrol/WDF_DEVICE_SHUTDOWN_FLAGS, wdfcontrol/WdfDeviceLastChanceShutdown, wdfcontrol/WdfDeviceShutdown
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfcontrol.h
 api_name:
+ - _WDF_DEVICE_SHUTDOWN_FLAGS
  - WDF_DEVICE_SHUTDOWN_FLAGS
 ---
 
@@ -54,11 +54,11 @@ The <b>WDF_DEVICE_SHUTDOWN_FLAGS</b> enumeration defines flags that identify typ
 
 ## -enum-fields
 
-### -field WdfDeviceShutdown
+### -field WdfDeviceShutdown:0x01
 
 The driver is notified when the system is losing its power, but before file systems are flushed.
 
-### -field WdfDeviceLastChanceShutdown
+### -field WdfDeviceLastChanceShutdown:0x02
 
 The driver is notified when the system is losing its power, and after all file systems have been flushed.
 
@@ -69,3 +69,4 @@ The <b>WDF_DEVICE_SHUTDOWN_FLAGS</b> enumeration is used as an input parameter t
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfcontrol/nf-wdfcontrol-wdfcontroldeviceinitsetshutdownnotification">WdfControlDeviceInitSetShutdownNotification</a>
+

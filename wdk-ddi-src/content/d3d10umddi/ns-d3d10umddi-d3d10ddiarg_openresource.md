@@ -3,7 +3,6 @@ UID: NS:d3d10umddi.D3D10DDIARG_OPENRESOURCE
 title: D3D10DDIARG_OPENRESOURCE (d3d10umddi.h)
 description: The D3D10DDIARG_OPENRESOURCE structure contains information for opening a shared resource.
 old-location: display\d3d10ddiarg_openresource.htm
-ms.assetid: acd1a957-9a1f-48a5-849b-e0cb9f8e05b6
 ms.date: 05/10/2018
 keywords: ["D3D10DDIARG_OPENRESOURCE structure"]
 ms.keywords: D3D10DDIARG_OPENRESOURCE, D3D10DDIARG_OPENRESOURCE structure [Display Devices], UMDisplayDriver_Dx10param_Structs_bb0f1769-190c-4500-8efa-9ed3eab771f7.xml, d3d10umddi/D3D10DDIARG_OPENRESOURCE, display.d3d10ddiarg_openresource
@@ -50,9 +49,9 @@ The D3D10DDIARG_OPENRESOURCE structure contains information for opening a shared
 
 ## -struct-fields
 
-### -field NumAllocations
+### -field NumAllocations [in]
 
-[in] The number of elements in the array that the <b>pOpenAllocationInfo</b> member specifies. <b>NumAllocations</b> represents the number of allocations to open.
+The number of elements in the array that the <b>pOpenAllocationInfo</b> member specifies. <b>NumAllocations</b> represents the number of allocations to open.
 
 ### -field pOpenAllocationInfo2
 
@@ -60,27 +59,27 @@ This member is reserved and should be set to zero.
 
 This member is available beginning with Windows 7.
 
-### -field pOpenAllocationInfo
+### -field pOpenAllocationInfo [in]
+
+An array of <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_openallocationinfo">D3DDDI_OPENALLOCATIONINFO</a> structures that describe the allocations in the resource to open.
 
 [in] An array of <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_openallocationinfo">D3DDDI_OPENALLOCATIONINFO</a> structures that describe the allocations in the resource to open.
 
-[in] An array of <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_openallocationinfo">D3DDDI_OPENALLOCATIONINFO</a> structures that describe the allocations in the resource to open.
+### -field hKMResource [in]
 
-### -field hKMResource
-
-[in] A D3D10DDI_HKMRESOURCE data type that represents a kernel-mode handle to the resource that is associated with the allocations. 
+A D3D10DDI_HKMRESOURCE data type that represents a kernel-mode handle to the resource that is associated with the allocations. 
 
 This kernel-mode handle represents an existing shared resource that was previously created through a call to the user-mode display driver's <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createresource">CreateResource(D3D10)</a> function. 
 
 The user-mode display driver can insert the kernel-mode resource handle in the command stream for subsequent use by the display miniport driver.
 
-### -field pPrivateDriverData
+### -field pPrivateDriverData [in]
 
-[in] A pointer to private data that was passed to the display miniport driver when the resource was created. This data is per resource and not per allocation like the private data in each allocation's <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_openallocationinfo">D3DDDI_OPENALLOCATIONINFO</a> structure.
+A pointer to private data that was passed to the display miniport driver when the resource was created. This data is per resource and not per allocation like the private data in each allocation's <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_openallocationinfo">D3DDDI_OPENALLOCATIONINFO</a> structure.
 
-### -field PrivateDriverDataSize
+### -field PrivateDriverDataSize [in]
 
-[in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
+The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
 
 ## -see-also
 

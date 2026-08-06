@@ -1,9 +1,9 @@
 ---
 UID: NS:acpitabl._PCC_REDUCED_2_SUBSPACE
-title: _PCC_REDUCED_2_SUBSPACE (acpitabl.h)
-ms.date: 08/12/2020
+title: PCC_REDUCED_2_SUBSPACE (acpitabl.h)
+ms.date: 11/11/2022
 ms.keywords: _PCC_REDUCED_2_SUBSPACE, PCC_REDUCED_2_SUBSPACE, *PPCC_REDUCED_2_SUBSPACE
-description: Contains information about the the ACPI Platform Communication Channel (PCC) HW-reduced Type 2 subspace.
+description: Contains information about the ACPI Platform Communication Channel (PCC) HW-reduced Type 2 subspace.
 tech.root: acpi
 req.construct-type: structure
 req.ddi-compliance: 
@@ -29,6 +29,7 @@ api_location:
  - acpitabl.h
 api_name:
  - _PCC_REDUCED_2_SUBSPACE
+ - PPCC_REDUCED_2_SUBSPACE
  - PCC_REDUCED_2_SUBSPACE
 f1_keywords:
  - _PCC_REDUCED_2_SUBSPACE
@@ -39,12 +40,9 @@ f1_keywords:
  - acpitabl/PCC_REDUCED_2_SUBSPACE
 ---
 
-# _PCC_REDUCED_2_SUBSPACE structure
-
-
 ## -description
 
-The **PCC_REDUCED_2_SUBSPACE** structure contains information about the the ACPI Platform Communication Channel (PCC) HW-reduced Type 2 subspace.
+The **PCC_REDUCED_2_SUBSPACE** structure contains information about the ACPI Platform Communication Channel (PCC) HW-reduced Type 2 subspace.
 
 ## -struct-fields
 
@@ -123,4 +121,3 @@ The platform interrupt ack write mask.
 ## -remarks
 
 ## -see-also
-

@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3DWDDM2_2DDI_DESTROY_SHADERCACHE_SESSION
 title: PFND3DWDDM2_2DDI_DESTROY_SHADERCACHE_SESSION (d3d10umddi.h)
 description: The pfnDestroyShaderCacheSession callback function destroys a shader cache session.
 old-location: display\pfnd3dwddm2_2ddi_destroy_shadercache_session.htm
-ms.assetid: 1C6AFC89-F740-4309-9389-BFB5C62FCA77
 ms.date: 05/10/2018
 keywords: ["PFND3DWDDM2_2DDI_DESTROY_SHADERCACHE_SESSION callback function"]
 ms.keywords: PFND3DWDDM2_2DDI_DESTROY_SHADERCACHE_SESSION, PFND3DWDDM2_2DDI_DESTROY_SHADERCACHE_SESSION callback, d3d10umddi/pfnDestroyShaderCacheSession, display.pfnd3dwddm2_2ddi_destroy_shadercache_session, pfnDestroyShaderCacheSession, pfnDestroyShaderCacheSession callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - pfnDestroyShaderCacheSession
+ - PFND3DWDDM2_2DDI_DESTROY_SHADERCACHE_SESSION
 ---
 
 # PFND3DWDDM2_2DDI_DESTROY_SHADERCACHE_SESSION callback function
@@ -50,13 +49,13 @@ The <i>pfnDestroyShaderCacheSession</i> callback function destroys a shader cach
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice*
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hCacheSession*
 
@@ -69,3 +68,4 @@ Access this callback function by using the <a href="/windows-hardware/drivers/dd
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3dwddm2_2ddi_devicefuncs">D3DWDDM2_2DDI_DEVICEFUNCS</a>
+

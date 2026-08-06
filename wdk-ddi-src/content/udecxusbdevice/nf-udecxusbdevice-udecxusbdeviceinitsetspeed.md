@@ -4,7 +4,6 @@ title: UdecxUsbDeviceInitSetSpeed function (udecxusbdevice.h)
 description: Sets the USB speed of the virtual USB device to create.
 old-location: buses\udecxusbdeviceinitsetspeed.htm
 tech.root: usbref
-ms.assetid: D7EF9B82-5156-4F27-AA52-94C113C81D3A
 ms.date: 05/07/2018
 keywords: ["UdecxUsbDeviceInitSetSpeed function"]
 ms.keywords: UdecxUsbDeviceInitSetSpeed, UdecxUsbDeviceInitSetSpeed function [Buses], buses.udecxusbdeviceinitsetspeed, udecxusbdevice/UdecxUsbDeviceInitSetSpeed
@@ -51,14 +50,14 @@ Sets the USB speed of the virtual USB device to create.
 
 ## -parameters
 
-### -param UdecxUsbDeviceInit 
+### -param UdecxUsbDeviceInit [in, out]
 
-[in, out]
+
 A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>.
 
-### -param UsbDeviceSpeed 
+### -param UsbDeviceSpeed [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/udecxusbdevice/ne-udecxusbdevice-_udecx_usb_device_speed">UDECX_USB_DEVICE_SPEED</a>-type value that indicates the USB speed to set.
 
 ## -remarks

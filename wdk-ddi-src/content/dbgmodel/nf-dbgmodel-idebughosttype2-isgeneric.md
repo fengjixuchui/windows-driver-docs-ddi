@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostType2.IsGeneric
 title: IDebugHostType2::IsGeneric (dbgmodel.h)
-description: Returns whether the type is a generic or template.
-ms.assetid: 8c7c9c95-b15e-482f-84a7-9bfb9ea83c17
+description: "The IDebugHostType2::IsGeneric method, when called on a type, gets whether the type is a generic or template."
 ms.date: 10/04/2018
 keywords: ["IDebugHostType2::IsGeneric"]
 ms.keywords: IDebugHostType2::IsGeneric, IsGeneric, IDebugHostType2.IsGeneric, IDebugHostType2::IsGeneric, IDebugHostType2.IsGeneric
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostType2.IsGeneric
+ - IDebugHostType2::IsGeneric
 ---
 
 # IDebugHostType2::IsGeneric

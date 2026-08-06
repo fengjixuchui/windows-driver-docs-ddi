@@ -4,7 +4,6 @@ title: IPrintOemUni::EnablePDEV (prcomoem.h)
 description: The IPrintOemUni::EnablePDEV method allows a rendering plug-in for Unidrv to create its own PDEV structure.
 old-location: print\iprintoemuni_enablepdev.htm
 tech.root: print
-ms.assetid: 93028b21-7995-42cd-af14-97e74ae75092
 ms.date: 04/20/2018
 keywords: ["IPrintOemUni::EnablePDEV"]
 ms.keywords: EnablePDEV, EnablePDEV method [Print Devices], EnablePDEV method [Print Devices],IPrintOemUni interface, IPrintOemUni interface [Print Devices],EnablePDEV method, IPrintOemUni.EnablePDEV, IPrintOemUni::EnablePDEV, prcomoem/IPrintOemUni::EnablePDEV, print.iprintoemuni_enablepdev, print_unidrv-pscript_rendering_ec7d7a16-5eae-4d4e-8596-7463d967120e.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Prcomoem.h
 api_name:
- - IPrintOemUni.EnablePDEV
+ - IPrintOemUni::EnablePDEV
 ---
 
 # IPrintOemUni::EnablePDEV
@@ -86,9 +85,9 @@ Caller-supplied pointer to a <a href="/windows/win32/api/winddi/ns-winddi-devinf
 
 Caller-supplied pointer to a <a href="/windows/win32/api/winddi/ns-winddi-drvenabledata">DRVENABLEDATA</a> structure containing the addresses of the printer driver's graphics DDI hooking functions. For more information, see the following Remarks section.
 
-### -param pDevOem 
+### -param pDevOem [out]
 
-[out]
+
 Receives a method-supplied pointer to a private PDEV structure. (For more information, see the following Remarks section.)
 
 ## -returns
@@ -142,3 +141,4 @@ The <b>pdevOEM</b> member of the DEVOBJ structure is not used with the <code>IPr
 The structures pointed to by the <i>phsurfPatterns</i>, <i>pGdiInfo</i>, and <i>pDevInfo</i> parameter values are the same ones that Unidrv's <b>DrvEnablePDEV</b> function receives. The rendering plug-in can modify the structure contents as necessary. It can supply surface fill patterns by obtaining HSURF-typed surface handles and placing them in the buffer pointed to by <i>phsurfPatterns</i>. Fill pattern types and handle order are listed in the description of <a href="/windows/win32/api/winddi/nf-winddi-drvenablepdev">DrvEnablePDEV</a>.
 
 The <a href="/windows/win32/api/winddi/ns-winddi-drvenabledata">DRVENABLEDATA</a> structure pointed to by <i>pded</i> contains the addresses of graphics DDI functions provided Unidrv's printer graphics DLL. You are allowed to provide customized hooking functions in your plug-in for these graphics DDI functions. The DRVENABLEDATA structure's contents enable your customized hooking functions to call back to the driver's graphics DDI functions. For more information, see <a href="/windows-hardware/drivers/print/customized-graphics-ddi-functions">Customized Graphics DDI Functions</a>.
+

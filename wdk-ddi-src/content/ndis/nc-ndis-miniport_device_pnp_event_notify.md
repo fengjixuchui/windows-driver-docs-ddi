@@ -4,7 +4,6 @@ title: MINIPORT_DEVICE_PNP_EVENT_NOTIFY (ndis.h)
 description: NDIS calls a miniport driver's MiniportDevicePnPEventNotify function to notify the driver of Plug and Play (PnP) events.
 old-location: netvista\miniportdevicepnpeventnotify.htm
 tech.root: netvista
-ms.assetid: e41240c0-17be-42ef-a72c-c5311115cf64
 ms.date: 05/02/2018
 keywords: ["MINIPORT_DEVICE_PNP_EVENT_NOTIFY callback function"]
 ms.keywords: MINIPORT_DEVICE_PNP_EVENT_NOTIFY, MINIPORT_DEVICE_PNP_EVENT_NOTIFY callback, MiniportDevicePnPEventNotify, MiniportDevicePnPEventNotify callback function [Network Drivers Starting with Windows Vista], miniport_functions_ref_5f503cae-149c-447c-b3f5-cb09d2c47ad7.xml, ndis/MiniportDevicePnPEventNotify, netvista.miniportdevicepnpeventnotify
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportDevicePnPEventNotify
+ - MINIPORT_DEVICE_PNP_EVENT_NOTIFY
 ---
 
 # MINIPORT_DEVICE_PNP_EVENT_NOTIFY callback function
@@ -54,16 +53,16 @@ NDIS calls a miniport driver's
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 A handle to a context area that the miniport driver allocated in its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a> function.
-     The miniport driver uses this context area to maintain state information for an miniport adapter.
+     The miniport driver uses this context area to maintain state information for a miniport adapter.
 
-### -param NetDevicePnPEvent 
+### -param NetDevicePnPEvent [in]
 
-[in]
+
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_device_pnp_event">NET_DEVICE_PNP_EVENT</a> structure that
      describes a device Plug and Play event.
@@ -172,3 +171,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/network/oid-pnp-set-power">OID_PNP_SET_POWER</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:portabledevicetypes.IPortableDeviceValues.Clear
 title: IPortableDeviceValues::Clear (portabledevicetypes.h)
-description: Deletes all items from the collection.
+description: Learn how this method deletes all items from the collection.
 old-location: wpddk\iportabledevicevalues_clear.htm
 tech.root: wpd_dk
-ms.assetid: 0978d4cd-3ed1-478b-b5ea-8fe21811526c
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::Clear"]
 ms.keywords: Clear, Clear method, Clear method,IPortableDeviceValues interface, IPortableDeviceValues interface,Clear method, IPortableDeviceValues.Clear, IPortableDeviceValues::Clear, IPortableDeviceValuesClear, portabledevicetypes/IPortableDeviceValues::Clear, wpddk.iportabledevicevalues_clear
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.Clear
+ - IPortableDeviceValues::Clear
 ---
 
 # IPortableDeviceValues::Clear
@@ -78,3 +77,4 @@ This method frees the memory for all dynamically allocated items in the collecti
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues">IPortableDeviceValues Interface</a>
+

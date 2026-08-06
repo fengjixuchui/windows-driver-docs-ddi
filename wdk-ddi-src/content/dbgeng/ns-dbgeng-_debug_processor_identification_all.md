@@ -4,7 +4,6 @@ title: _DEBUG_PROCESSOR_IDENTIFICATION_ALL (dbgeng.h)
 description: This union contains relevant information for a processor the supported processors.
 old-location: debugger\debug_processor_identification_all.htm
 tech.root: debugger
-ms.assetid: 2C4C03BC-0D84-4151-B1A1-FE76F0355CD6
 ms.date: 05/03/2018
 keywords: ["DEBUG_PROCESSOR_IDENTIFICATION_ALL structure"]
 ms.keywords: "*PDEBUG_PROCESSOR_IDENTIFICATION_ALL, DEBUG_PROCESSOR_IDENTIFICATION_ALL, DEBUG_PROCESSOR_IDENTIFICATION_ALL union [Windows Debugging], _DEBUG_PROCESSOR_IDENTIFICATION_ALL, dbgeng/DEBUG_PROCESSOR_IDENTIFICATION_ALL, debugger.debug_processor_identification_all"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - DbgEng.h
 api_name:
+ - _DEBUG_PROCESSOR_IDENTIFICATION_ALL
+ - PDEBUG_PROCESSOR_IDENTIFICATION_ALL
  - DEBUG_PROCESSOR_IDENTIFICATION_ALL
 ---
 
@@ -60,11 +61,11 @@ An Alpha processor as a <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-
 
 ### -field Amd64
 
-An AMD64 processor as a <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_processor_identification_amd64">DEBUG_PROCESSOR_IDENTIFICATION_AMD64</a> stuct.
+An AMD64 processor as a <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_processor_identification_amd64">DEBUG_PROCESSOR_IDENTIFICATION_AMD64</a> struct.
 
 ### -field Ia64
 
-An Italium architecture processor as a <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_processor_identification_ia64">DEBUG_PROCESSOR_IDENTIFICATION_IA64</a> stuct.
+An Itanium architecture processor as a <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_processor_identification_ia64">DEBUG_PROCESSOR_IDENTIFICATION_IA64</a> struct.
 
 ### -field X86
 
@@ -101,3 +102,4 @@ An ARM64 processor as a <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_processor_identification_x86">DEBUG_PROCESSOR_IDENTIFICATION_X86</a>
+

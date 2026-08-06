@@ -4,7 +4,6 @@ title: PPARALLEL_FREE_ROUTINE (parallel.h)
 description: The PPARALLEL_FREE_ROUTINE-typed callback routine frees a parallel port. The system-supplied function driver for parallel ports supplies this routine.
 old-location: parports\pparallel_free_routine.htm
 tech.root: parports
-ms.assetid: 730872ee-3dfd-48c7-a86e-1a420e59471f
 ms.date: 02/15/2018
 keywords: ["PPARALLEL_FREE_ROUTINE callback"]
 ms.keywords: "(*PPARALLEL_FREE_ROUTINE), (*PPARALLEL_FREE_ROUTINE) callback function [Parallel Ports], cisspd_5f5bcbed-0df6-4b2a-ab88-a26f48976ad7.xml, parallel/(*PPARALLEL_FREE_ROUTINE), parports.pparallel_free_routine"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - parallel.h
 api_name:
- - (*PPARALLEL_FREE_ROUTINE)
+ - PPARALLEL_FREE_ROUTINE
 ---
 
 # PPARALLEL_FREE_ROUTINE callback
@@ -50,9 +49,9 @@ The <i>PPARALLEL_FREE_ROUTINE</i>-typed callback routine frees a parallel port. 
 
 ## -parameters
 
-### -param FreeContext 
+### -param FreeContext [in]
 
-[in]
+
 Pointer to the device extension of a parallel port's functional device object (<a href="/windows-hardware/drivers/">FDO</a>).
 
 ## -prototype
@@ -86,3 +85,4 @@ For more information, see <a href="/previous-versions/ff544809(v=vs.85)">Synchro
 
 
 <a href="..\parallel\nc-parallel-pparallel_query_waiters_routine.md">PPARALLEL_QUERY_WAITERS_ROUTINE</a>
+

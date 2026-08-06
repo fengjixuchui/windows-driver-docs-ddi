@@ -4,7 +4,6 @@ title: WdfDmaTransactionSetDeviceAddressOffset function (wdfdmatransaction.h)
 description: The WdfDmaTransactionSetDeviceAddressOffset method specifies the offset of the register that the system DMA controller will access when performing the DMA operation.
 old-location: wdf\wdfdmatransactionsetdeviceaddressoffset.htm
 tech.root: wdf
-ms.assetid: A45231E0-0807-41AA-B20F-6335067BE99A
 ms.date: 02/26/2018
 keywords: ["WdfDmaTransactionSetDeviceAddressOffset function"]
 ms.keywords: WdfDmaTransactionSetDeviceAddressOffset, WdfDmaTransactionSetDeviceAddressOffset method, kmdf.wdfdmatransactionsetdeviceaddressoffset, wdf.wdfdmatransactionsetdeviceaddressoffset, wdfdmatransaction/WdfDmaTransactionSetDeviceAddressOffset
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ api_name:
 
 ## -parameters
 
-### -param DmaTransaction 
+### -param DmaTransaction [in]
 
-[in]
+
 A handle to a DMA transaction object that specifies the transaction to modify.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 The offset of the register, from the <b>DeviceAddress</b> specified in <a href="/windows-hardware/drivers/ddi/wdfdmaenabler/ns-wdfdmaenabler-_wdf_dma_system_profile_config">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>, to or from which DMA should be performed.
 
 ## -remarks

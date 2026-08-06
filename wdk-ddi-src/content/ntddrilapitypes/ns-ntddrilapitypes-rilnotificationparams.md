@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILNOTIFICATIONPARAMS
 title: RILNOTIFICATIONPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILNOTIFICATIONPARAMS structure in your code."
 old-location: netvista\rilnotificationparams.htm
 tech.root: netvista
-ms.assetid: c89c7df3-7ccb-46db-adcc-22c49cae5108
 ms.date: 05/02/2018
 keywords: ["RILNOTIFICATIONPARAMS structure"]
 ms.keywords: "*LPRILNOTIFICATIONPARAMS, RILNOTIFICATIONPARAMS, RILNOTIFICATIONPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilnotificationparams, ntddrilapitypes/RILNOTIFICATIONPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILNOTIFICATIONPARAMS
+ - LPRILNOTIFICATIONPARAMS
 ---
 
 # RILNOTIFICATIONPARAMS structure (ntddrilapitypes.h)

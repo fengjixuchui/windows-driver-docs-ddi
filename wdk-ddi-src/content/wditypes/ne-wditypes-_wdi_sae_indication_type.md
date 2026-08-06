@@ -3,7 +3,6 @@ UID: NE:wditypes._WDI_SAE_INDICATION_TYPE
 title: WDI_SAE_INDICATION_TYPE
 description: The WDI_SAE_INDICATION_TYPE enumeration defines the type of information needed to continue SAE authentication with the BSSID, or notification that authentication cannot continue.
 tech.root: netvista
-ms.assetid: 685c8f66-5b3a-4bb5-8579-18197e661e73
 ms.date: 02/14/2019
 keywords: ["WDI_SAE_INDICATION_TYPE enumeration"]
 ms.keywords: WDI_SAE_INDICATION_TYPE, WDI_SAE_INDICATION_TYPE,
@@ -30,6 +29,7 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_SAE_INDICATION_TYPE
  - WDI_SAE_INDICATION_TYPE
 ---
 
@@ -37,6 +37,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The **WDI_SAE_INDICATION_TYPE** enumeration defines the type of information needed to continue SAE authentication with the BSSID, or notification that authentication cannot continue.
 
@@ -71,3 +74,4 @@ This enumeration is a value in the [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_N
 [WPA3-SAE Authentication](/windows-hardware/drivers/network/wpa3-sae-authentication)
 
 [NDIS_STATUS_WDI_INDICATION_SAE_AUTH_PARAMS_NEEDED](/windows-hardware/drivers/network/ndis-status-wdi-indication-sae-auth-params-needed)
+

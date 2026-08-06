@@ -4,7 +4,6 @@ title: IDD_CX_CLIENT_CONFIG_INIT function (iddcx.h)
 description: Initializes the IDD_CX_CLIENT_CONFIG structure.
 old-location: display\idd_cx_client_config_init.htm
 tech.root: display
-ms.assetid: 0b2cf0d6-1d69-4917-9e97-f8f2563e6d3c
 ms.date: 05/10/2018
 keywords: ["IDD_CX_CLIENT_CONFIG_INIT function"]
 ms.keywords: IDD_CX_CLIENT_CONFIG_INIT, IDD_CX_CLIENT_CONFIG_INIT method [Display Devices], display.idd_cx_client_config_init, iddcx/IDD_CX_CLIENT_CONFIG_INIT
@@ -50,8 +49,8 @@ Initializes the IDD_CX_CLIENT_CONFIG structure.
 
 ## -parameters
 
-### -param Config 
+### -param Config [out]
 
-[out]
+
 A pointer to the driver-allocated IDD_CX_CLIENT_CONFIG structure.
 

@@ -4,14 +4,13 @@ title: FsRtlNotifyCleanupAll function (ntifs.h)
 description: The FsRtlNotifyCleanupAll routine removes all members of the specified notification list.
 old-location: ifsk\fsrtlnotifycleanupall.htm
 tech.root: ifsk
-ms.assetid: 850728bd-6758-4c21-9bfd-10a0f3d006d6
 ms.date: 04/16/2018
 keywords: ["FsRtlNotifyCleanupAll function"]
 ms.keywords: FsRtlNotifyCleanupAll, FsRtlNotifyCleanupAll routine [Installable File System Drivers], fsrtlref_f0eea2f1-9bc9-41e1-843c-a69b3e63f452.xml, ifsk.fsrtlnotifycleanupall, ntifs/FsRtlNotifyCleanupAll
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later version of the Windows operating system.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 ms.custom: RS5
@@ -53,14 +52,14 @@ The <b>FsRtlNotifyCleanupAll</b> routine removes all members of the specified no
 
 ## -parameters
 
-### -param NotifySync 
+### -param NotifySync [in]
 
-[in]
+
 A pointer to the opaque synchronization object for <i>NotifyList</i>.
 
-### -param NotifyList 
+### -param NotifyList [in]
 
-[in]
+
 A pointer to the head of the notify list to be cleaned up. Each element in the list is an opaque notify structure.
 
 ## -remarks

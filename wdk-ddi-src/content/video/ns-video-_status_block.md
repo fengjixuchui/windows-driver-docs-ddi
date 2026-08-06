@@ -4,7 +4,6 @@ title: _STATUS_BLOCK (video.h)
 description: The STATUS_BLOCK structure is a substructure within the VIDEO_REQUEST_PACKET structure. A miniport driver's HwVidStartIO function must set the status block of each VRP that it gets.
 old-location: display\status_block.htm
 tech.root: display
-ms.assetid: 8e3126df-d081-4545-a5db-8637ee27f15b
 ms.date: 05/10/2018
 keywords: ["STATUS_BLOCK structure"]
 ms.keywords: "*PSTATUS_BLOCK, PSTATUS_BLOCK, PSTATUS_BLOCK structure pointer [Display Devices], STATUS_BLOCK, STATUS_BLOCK structure [Display Devices], Video_Structs_90f8dc6a-a666-4976-bc71-edf43b31b6e4.xml, _STATUS_BLOCK, display.status_block, video/PSTATUS_BLOCK, video/STATUS_BLOCK"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - video.h
 api_name:
+ - _STATUS_BLOCK
+ - PSTATUS_BLOCK
  - STATUS_BLOCK
 ---
 
@@ -129,3 +130,4 @@ Supplies additional information about the completed operation. The meaning of th
 
 
 <a href="/windows-hardware/drivers/ddi/video/ns-video-_video_request_packet">VIDEO_REQUEST_PACKET</a>
+

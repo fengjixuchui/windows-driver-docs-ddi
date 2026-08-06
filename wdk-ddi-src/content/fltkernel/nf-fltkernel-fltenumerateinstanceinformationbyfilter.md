@@ -4,7 +4,6 @@ title: FltEnumerateInstanceInformationByFilter function (fltkernel.h)
 description: The FltEnumerateInstanceInformationByFilter routine provides information about instances of a given minifilter driver.
 old-location: ifsk\fltenumerateinstanceinformationbyfilter.htm
 tech.root: ifsk
-ms.assetid: c5590897-45cf-4712-b980-b99aaacfba88
 ms.date: 04/16/2018
 keywords: ["FltEnumerateInstanceInformationByFilter function"]
 ms.keywords: FltApiRef_e_to_o_89f20331-46dd-42f8-bbf5-42650766bdc8.xml, FltEnumerateInstanceInformationByFilter, FltEnumerateInstanceInformationByFilter routine [Installable File System Drivers], fltkernel/FltEnumerateInstanceInformationByFilter, ifsk.fltenumerateinstanceinformationbyfilter
@@ -51,19 +50,19 @@ The <b>FltEnumerateInstanceInformationByFilter</b> routine provides information 
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in]
 
-[in]
+
 Opaque filter pointer for the caller.
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 Zero-based index of the instance for which the information is requested.
 
-### -param InformationClass 
+### -param InformationClass [in]
 
-[in]
+
 Type of information requested. This parameter can have one of the following values. 
 
 <table>
@@ -113,19 +112,19 @@ The buffer pointed to by the <i>Buffer</i> parameter receives an <a href="/windo
 </tr>
 </table>
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 Pointer to a caller-allocated buffer that receives the requested information. The type of the information returned in the buffer is defined by the <i>InformationClass</i> parameter.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Size, in bytes, of the buffer that the <i>Buffer</i> parameter points to. The caller should set this parameter according to the given <i>InformationClass</i> value.
 
-### -param BytesReturned 
+### -param BytesReturned [out]
 
-[out]
+
 Pointer to a caller-allocated variable that receives the number of bytes returned in the buffer that <i>Buffer </i>points to. If the input value of <i>BufferSize</i> is too small, <b>FltEnumerateInstanceInformationByFilter</b> returns STATUS_BUFFER_TOO_SMALL and sets this variable to the number of bytes required to store the requested information. This parameter is required and cannot be <b>NULL</b>.
 
 ## -returns

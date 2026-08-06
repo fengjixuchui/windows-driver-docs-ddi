@@ -4,7 +4,6 @@ title: NtSetInformationResourceManager function (wdm.h)
 description: The ZwSetInformationResourceManager routine is not used.
 old-location: kernel\zwsetinformationresourcemanager.htm
 tech.root: kernel
-ms.assetid: 0a0d86c7-1d42-4312-a4f9-9b9ea092ebec
 ms.date: 04/30/2018
 keywords: ["NtSetInformationResourceManager function"]
 ms.keywords: NtSetInformationResourceManager, ZwSetInformationResourceManager, function [Kernel-Mode Driver Architecture], kernel.zwsetinformationresourcemanager, ktm_ref_6b15a16a-ffed-4f3e-9ca3-370b85896dc2.xml, wdm/, wdm/NtSetInformationResourceManager
@@ -38,7 +37,6 @@ api_type:
 api_location:
  - wdm.h
 api_name:
- - ZwSetInformationResourceManager
  - NtSetInformationResourceManager
 ---
 
@@ -80,3 +78,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 ## -see-also
 
 <a href="/windows-hardware/drivers/kernel/using-nt-and-zw-versions-of-the-native-system-services-routines">Using Nt and Zw Versions of the Native System Services Routines</a>
+

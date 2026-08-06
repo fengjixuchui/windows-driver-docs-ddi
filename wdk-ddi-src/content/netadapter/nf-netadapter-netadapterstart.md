@@ -3,8 +3,7 @@ UID: NF:netadapter.NetAdapterStart
 title: NetAdapterStart function (netadapter.h)
 description: The NetAdapterStart function starts a NETADAPTER object.
 tech.root: netvista
-ms.assetid: 7fd514f2-7f1e-449f-9037-636f1c3599d6
-ms.date: 08/03/2018
+ms.date: 03/30/2022
 keywords: ["NetAdapterStart function"]
 ms.keywords: NetAdapterStart
 req.header: netadapter.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.25
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: netadaptercxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -47,7 +46,7 @@ The **NetAdapterStart** function starts a NETADAPTER object.
 
 ## -parameters
 
-### -param Adapter
+### -param Adapter [_In_]
 
 The **NETADAPTER** object created by a prior call to [**NetAdapterCreate**](nf-netadapter-netadaptercreate.md).
 

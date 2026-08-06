@@ -4,7 +4,6 @@ title: wiasIsPropChanged function (wiamdef.h)
 description: The wiasIsPropChanged function tests whether a specified property has been changed by an application.
 old-location: image\wiasispropchanged.htm
 tech.root: image
-ms.assetid: 4b8f140c-ca4f-48fd-bee4-35d5a7beea52
 ms.date: 05/03/2018
 keywords: ["wiasIsPropChanged function"]
 ms.keywords: image.wiasispropchanged, wiamdef/wiasIsPropChanged, wiasFncs_11e49124-0147-4140-ba56-879ae3fcbf46.xml, wiasIsPropChanged, wiasIsPropChanged function [Imaging Devices]
@@ -54,14 +53,14 @@ The **wiasIsPropChanged** function tests whether a specified property has been c
 
 Specifies the property identifier of the property to be checked.
 
-### -param pContext 
+### -param pContext [in]
 
-[in]
+
 Pointer to a [WIA_PROPERTY_CONTEXT](../wiamindr_lh/ns-wiamindr_lh-_wia_property_context.md) structure that contains the current property context.
 
-### -param pbChanged 
+### -param pbChanged [out]
 
-[out]
+
 Pointer to a memory location that receives a BOOL value. The BOOL value is **TRUE** if the property changed, and **FALSE** if the property did not change.
 
 ## -returns

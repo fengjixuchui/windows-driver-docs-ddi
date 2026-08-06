@@ -4,7 +4,6 @@ title: RtlStringCbCopyUnicodeString function (ntstrsafe.h)
 description: The RtlStringCbCopyUnicodeString function copies the contents of a UNICODE_STRING structure to a specified destination.
 old-location: kernel\rtlstringcbcopyunicodestring.htm
 tech.root: kernel
-ms.assetid: 87b123ff-0188-4d45-b455-d1ec9def4d63
 ms.date: 04/30/2018
 keywords: ["RtlStringCbCopyUnicodeString function"]
 ms.keywords: RtlStringCbCopyUnicodeString, RtlStringCbCopyUnicodeString function [Kernel-Mode Driver Architecture], kernel.rtlstringcbcopyunicodestring, ntstrsafe/RtlStringCbCopyUnicodeString, safestrings_1c916f4b-b084-4587-a867-998b789bd2fa.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,19 +50,19 @@ The <b>RtlStringCbCopyUnicodeString</b> function copies the contents of a <a hre
 
 ## -parameters
 
-### -param pszDest 
+### -param pszDest [out]
 
-[out]
+
 A pointer to a buffer that receives the copied string. The string that the <i>SourceString</i> parameter's <b>UNICODE_STRING</b> structure points to is copied to the buffer at <i>pszDest</i> and terminated with a null character.
 
-### -param cbDest 
+### -param cbDest [in]
 
-[in]
+
 The size, in bytes, of the destination buffer that <i>pszDest</i> points to. The buffer must be large enough to contain the string and the terminating null character. The maximum number of bytes in the buffer is NTSTRSAFE_UNICODE_STRING_MAX_CCH * <b>sizeof</b>(WCHAR).
 
-### -param SourceString 
+### -param SourceString [in]
 
-[in]
+
 A pointer to a <b>UNICODE_STRING</b> structure that contains the string to be copied. The maximum number of bytes in the string is NTSTRSAFE_UNICODE_STRING_MAX_CCH * <b>sizeof</b>(WCHAR).
 
 ## -returns

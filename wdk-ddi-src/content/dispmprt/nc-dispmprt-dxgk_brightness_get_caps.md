@@ -4,7 +4,6 @@ title: DXGK_BRIGHTNESS_GET_CAPS (dispmprt.h)
 description: Retrieves brightness control capabilities of an integrated display panel.
 old-location: display\dxgkddigetbrightnesscaps.htm
 tech.root: display
-ms.assetid: 3418dd2b-63cb-411f-9bae-390148885907
 ms.date: 05/10/2018
 keywords: ["DXGK_BRIGHTNESS_GET_CAPS callback function"]
 ms.keywords: DXGK_BRIGHTNESS_GET_CAPS, DXGK_BRIGHTNESS_GET_CAPS callback, DxgkDdiGetBrightnessCaps, DxgkDdiGetBrightnessCaps callback function [Display Devices], display.dxgkddigetbrightnesscaps, dispmprt/DxgkDdiGetBrightnessCaps
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dispmprt.h
 api_name:
- - DxgkDdiGetBrightnessCaps
+ - DXGK_BRIGHTNESS_GET_CAPS
 ---
 
 # DXGK_BRIGHTNESS_GET_CAPS callback function
@@ -50,13 +49,13 @@ Retrieves brightness control capabilities of an integrated display panel.
 
 ## -parameters
 
-### -param Context
+### -param Context [in]
 
-[in] A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.
+A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.
 
-### -param BrightnessCaps
+### -param BrightnessCaps [in]
 
-[in] A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt-_dxgk_brightness_caps.md">DXGK_BRIGHTNESS_CAPS</a> structure that represents the brightness control capabilities of the display panel.
+A pointer to a <a href="..\d3dkmdt\ns-d3dkmdt-_dxgk_brightness_caps.md">DXGK_BRIGHTNESS_CAPS</a> structure that represents the brightness control capabilities of the display panel.
 
 ## -returns
 

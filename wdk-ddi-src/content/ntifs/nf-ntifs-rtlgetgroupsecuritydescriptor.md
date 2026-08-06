@@ -4,14 +4,13 @@ title: RtlGetGroupSecurityDescriptor function (ntifs.h)
 description: The RtlGetGroupSecurityDescriptor routine returns the primary group information for a given security descriptor.
 old-location: ifsk\rtlgetgroupsecuritydescriptor.htm
 tech.root: ifsk
-ms.assetid: a2fbb125-42cf-4c33-83bb-3fc875712be3
 ms.date: 04/16/2018
 keywords: ["RtlGetGroupSecurityDescriptor function"]
 ms.keywords: RtlGetGroupSecurityDescriptor, RtlGetGroupSecurityDescriptor routine [Installable File System Drivers], ifsk.rtlgetgroupsecuritydescriptor, ntifs/RtlGetGroupSecurityDescriptor, rtlref_6ff72a5f-d1ef-4fac-bdd0-4a612c0018ca.xml
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows Server 2003 SP1 and later.
+req.target-min-winverclnt: Windows Server 2003 SP1
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,19 +49,19 @@ The <b>RtlGetGroupSecurityDescriptor</b> routine returns the primary group infor
 
 ## -parameters
 
-### -param SecurityDescriptor 
+### -param SecurityDescriptor [in]
 
-[in]
+
 Pointer to the security descriptor whose primary group information is to be returned.
 
-### -param Group 
+### -param Group [out]
 
-[out]
+
 Pointer to a variable that receives a pointer to the security identifier (<a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_sid">SID</a>) for the primary group. If the security descriptor does not contain a primary group, <i>*Group</i> receives <b>NULL</b>.
 
-### -param GroupDefaulted 
+### -param GroupDefaulted [out]
 
-[out]
+
 Pointer to a Boolean variable that receives the value of the SE_GROUP_DEFAULTED flag in the security descriptor's SECURITY_DESCRIPTOR_CONTROL structure. This value is valid only if <i>*Group</i> receives a non-<b>NULL</b> value.
 
 ## -returns

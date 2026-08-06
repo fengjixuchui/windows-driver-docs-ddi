@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_SET_AUTH_ALGORITHM
 title: DOT11EXT_SET_AUTH_ALGORITHM (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_SET_AUTH_ALGORITHM callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extsetauthalgorithm.htm
 tech.root: netvista
-ms.assetid: 49fbdd9d-4352-48b5-81bc-3092eef2e255
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_SET_AUTH_ALGORITHM callback"]
 ms.keywords: DOT11EXT_SET_AUTH_ALGORITHM, Dot11ExtSetAuthAlgorithm, Dot11ExtSetAuthAlgorithm callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_85806dab-a810-4b45-9c94-7b0b7e40a6a2.xml, netvista.dot11extsetauthalgorithm, wlanihv/Dot11ExtSetAuthAlgorithm
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_SET_AUTH_ALGORITHM
  - wlanihv/DOT11EXT_SET_AUTH_ALGORITHM
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtSetAuthAlgorithm
+ - DOT11EXT_SET_AUTH_ALGORITHM
 ---
 
 # DOT11EXT_SET_AUTH_ALGORITHM callback
@@ -55,17 +53,17 @@ The IHV Extensions DLL calls the
 
 ## -parameters
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the WLAN adapter. This handle value was
      specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param dwAuthAlgo 
+### -param dwAuthAlgo [in]
 
-[in]
+
 A
      <a href="..\wlantypes\ne-wlantypes-_dot11_auth_algorithm.md">DOT11_AUTH_ALGORITHM</a> enumerator value
      that identifies the authentication algorithm.
@@ -120,3 +118,4 @@ DWORD WINAPI * Dot11ExtSetAuthAlgorithm(
 
 <a href="/previous-versions/windows/embedded/gg157261(v=winembedded.80)">
    OID_DOT11_SUPPORTED_UNICAST_ALGORITHM_PAIR</a>
+

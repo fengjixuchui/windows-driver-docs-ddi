@@ -4,7 +4,6 @@ title: _D3DLIGHTINGCAPS (d3dcaps.h)
 description: Obsolete in DirectX 8.0 and later versions; see Remarks. The D3DLIGHTINGCAPS structure describes the lighting capabilities of a device.
 old-location: display\d3dlightingcaps.htm
 tech.root: display
-ms.assetid: ea8ba463-e8dd-4952-bcad-6fe565fe3292
 ms.date: 05/10/2018
 keywords: ["D3DLIGHTINGCAPS structure"]
 ms.keywords: "*LPD3DLIGHTINGCAPS, D3DLIGHTINGCAPS, D3DLIGHTINGCAPS structure [Display Devices], LPD3DLIGHTINGCAPS, LPD3DLIGHTINGCAPS structure pointer [Display Devices], _D3DLIGHTINGCAPS, d3dcaps/D3DLIGHTINGCAPS, d3dcaps/LPD3DLIGHTINGCAPS, d3dstrct_98470d9f-b4ed-49ee-9c0f-34c991916de3.xml, display.d3dlightingcaps"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - d3dcaps.h
 api_name:
+ - _D3DLIGHTINGCAPS
+ - LPD3DLIGHTINGCAPS
  - D3DLIGHTINGCAPS
 ---
 
@@ -96,3 +97,4 @@ This structure is a member of the <a href="/windows-hardware/drivers/ddi/d3dhal/
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_d3ddevicedesc_v1">D3DDEVICEDESC_V1</a>
+

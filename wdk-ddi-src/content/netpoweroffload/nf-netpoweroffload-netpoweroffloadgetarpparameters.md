@@ -3,7 +3,6 @@ UID: NF:netpoweroffload.NetPowerOffloadGetArpParameters
 title: NetPowerOffloadGetArpParameters function (netpoweroffload.h)
 description: The NetPowerOffloadGetArpParameters function gets parameters for an IPv4 ARP low power protocol offload to a net adapter.
 tech.root: netvista
-ms.assetid: 5fe9b65f-29b2-494c-be8e-569a5b1e28fc
 ms.date: 10/03/2019
 keywords: ["NetPowerOffloadGetArpParameters function"]
 ms.keywords: NetPowerOffloadGetArpParameters
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: netadaptercxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -37,8 +36,6 @@ api_location:
  - netadaptercxstub.lib
 api_name:
  - NetPowerOffloadGetArpParameters
-product:
- - Windows
 ---
 
 # NetPowerOffloadGetArpParameters function
@@ -50,17 +47,14 @@ The **NetPowerOffloadGetArpParameters** function gets parameters for an IPv4 ARP
 
 ## -parameters
 
-### -param PowerOffload
+### -param PowerOffload [_In_]
 
 The NETPOWEROFFLOAD object that represents this ARP protocol offload.
 
-### -param Parameters
+### -param Parameters [_Inout_]
 
 A pointer to a driver-allocated and initialized [**NET_POWER_OFFLOAD_ARP_PARAMETERS**](../netpoweroffload/ns-netpoweroffload-_net_power_offload_arp_parameters.md) structure that receives the ARP parameter information.
 
-## -returns
-
-This function does not return a value.
 
 ## -remarks
 

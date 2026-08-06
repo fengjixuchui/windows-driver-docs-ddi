@@ -4,7 +4,6 @@ title: PFND3DDDI_VALIDATEDEVICE (d3dumddi.h)
 description: The ValidateDevice function returns the number of passes in which the hardware can perform the blending operations that are specified in the current state.
 old-location: display\validatedevice.htm
 tech.root: display
-ms.assetid: 058696e0-be4a-45f3-b3e8-55abccdce3ce
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_VALIDATEDEVICE callback function"]
 ms.keywords: PFND3DDDI_VALIDATEDEVICE, PFND3DDDI_VALIDATEDEVICE callback, UserModeDisplayDriver_Functions_37e253ca-1d0f-4896-aaad-4c36053877c5.xml, ValidateDevice, ValidateDevice callback function [Display Devices], d3dumddi/ValidateDevice, display.validatedevice
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - ValidateDevice
-product:
- - Windows
+ - PFND3DDDI_VALIDATEDEVICE
 ---
 
 # PFND3DDDI_VALIDATEDEVICE callback function
@@ -56,7 +53,7 @@ The <i>ValidateDevice</i> function returns the number of passes in which the har
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -73,3 +70,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dd
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

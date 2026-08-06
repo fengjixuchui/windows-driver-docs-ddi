@@ -4,7 +4,6 @@ title: SeRegisterLogonSessionTerminatedRoutine function (ntifs.h)
 description: The SeRegisterLogonSessionTerminatedRoutine routine registers a callback routine to be called when a logon session terminates. A logon session terminates when the last token referencing the logon session is deleted.
 old-location: ifsk\seregisterlogonsessionterminatedroutine.htm
 tech.root: ifsk
-ms.assetid: 6cba6db5-b91f-46f0-939e-b02693c81438
 ms.date: 04/16/2018
 keywords: ["SeRegisterLogonSessionTerminatedRoutine function"]
 ms.keywords: SeRegisterLogonSessionTerminatedRoutine, SeRegisterLogonSessionTerminatedRoutine routine [Installable File System Drivers], ifsk.seregisterlogonsessionterminatedroutine, ntifs/SeRegisterLogonSessionTerminatedRoutine, seref_7188551f-9c46-472f-8976-67ee53b994c5.xml
@@ -50,9 +49,9 @@ The <b>SeRegisterLogonSessionTerminatedRoutine</b> routine registers a callback 
 
 ## -parameters
 
-### -param CallbackRoutine 
+### -param CallbackRoutine [in]
 
-[in]
+
 Address of routine to call when a logon session terminates.
 
 ## -returns
@@ -103,7 +102,7 @@ A list entry could not be allocated for the callback routine.
 
 Each call to <b>SeRegisterLogonSessionTerminatedRoutine</b> must be matched by a subsequent call to <b>SeUnregisterLogonSessionTerminatedRoutine</b>.
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

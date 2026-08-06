@@ -1,9 +1,8 @@
 ---
 UID: NS:wdm._KBUGCHECK_REASON_CALLBACK_RECORD
 title: KBUGCHECK_REASON_CALLBACK_RECORD
-description: 
-tech.root: 
-ms.assetid: 0c64f4d8-df1a-4d8f-a7af-d58bc48ef96e
+description: "Learn more about: KBUGCHECK_REASON_CALLBACK_RECORD structure"
+tech.root: devtest
 ms.date: 05/08/2019
 keywords: ["KBUGCHECK_REASON_CALLBACK_RECORD structure"]
 ms.keywords: KBUGCHECK_REASON_CALLBACK_RECORD, KBUGCHECK_REASON_CALLBACK_RECORD, *PKBUGCHECK_REASON_CALLBACK_RECORD,
@@ -35,9 +34,9 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _KBUGCHECK_REASON_CALLBACK_RECORD
+ - PKBUGCHECK_REASON_CALLBACK_RECORD
  - KBUGCHECK_REASON_CALLBACK_RECORD
-product:
- - Windows
 ---
 
 # KBUGCHECK_REASON_CALLBACK_RECORD structure
@@ -66,3 +65,4 @@ For more information about how this structure is used, see <a href="/windows-har
 ## -see-also
 
 <a href="/windows-hardware/drivers/kernel/writing-a-bug-check-callback-routine">Writing a Bug Check Callback Routine</a>.
+

@@ -4,7 +4,6 @@ title: _WDF_INTERRUPT_POLARITY (wdfinterrupt.h)
 description: The WDF_INTERRUPT_POLARITY enumeration type is used to specify an interrupt signal's polarity.
 old-location: wdf\wdf_interrupt_polarity.htm
 tech.root: wdf
-ms.assetid: 6621a1ec-1d4e-4801-9418-d09a0073686a
 ms.date: 02/26/2018
 keywords: ["WDF_INTERRUPT_POLARITY enumeration"]
 ms.keywords: "*PWDF_INTERRUPT_POLARITY, DFInterruptObjectRef_979c7766-edd8-421b-8885-8000d60da78d.xml, PWDF_INTERRUPT_POLARITY, PWDF_INTERRUPT_POLARITY enumeration pointer, WDF_INTERRUPT_POLARITY, WDF_INTERRUPT_POLARITY enumeration, WdfInterruptActiveHigh, WdfInterruptActiveLow, WdfInterruptPolarityUnknown, _WDF_INTERRUPT_POLARITY, kmdf.wdf_interrupt_polarity, wdf.wdf_interrupt_polarity, wdfinterrupt/PWDF_INTERRUPT_POLARITY, wdfinterrupt/WDF_INTERRUPT_POLARITY, wdfinterrupt/WdfInterruptActiveHigh, wdfinterrupt/WdfInterruptActiveLow, wdfinterrupt/WdfInterruptPolarityUnknown"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdfinterrupt.h
 api_name:
+ - _WDF_INTERRUPT_POLARITY
+ - PWDF_INTERRUPT_POLARITY
  - WDF_INTERRUPT_POLARITY
 ---
 
@@ -56,7 +57,7 @@ The <b>WDF_INTERRUPT_POLARITY</b> enumeration type is used to specify an interru
 
 ## -enum-fields
 
-### -field WdfInterruptPolarityUnknown
+### -field WdfInterruptPolarityUnknown:0
 
 The interrupt signal's polarity is unknown.
 
@@ -75,3 +76,4 @@ The <b>WDF_INTERRUPT_POLARITY</b> enumeration type is used to specify a member o
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfinterrupt/ns-wdfinterrupt-_wdf_interrupt_info">WDF_INTERRUPT_INFO</a>
+

@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_UPDATEOVERLAY
 title: DXGKDDI_UPDATEOVERLAY (d3dkmddi.h)
 description: The DxgkDdiUpdateOverlay function modifies the overlay hardware.
 old-location: display\dxgkddiupdateoverlay.htm
-ms.assetid: b131dbb9-1e11-4d04-97cb-e15ec2b025c7
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_UPDATEOVERLAY callback function"]
 ms.keywords: DXGKDDI_UPDATEOVERLAY, DXGKDDI_UPDATEOVERLAY callback, DmFunctions_cc73fb5c-c4b9-476a-9227-fe2d15e288ea.xml, DxgkDdiUpdateOverlay, DxgkDdiUpdateOverlay callback function [Display Devices], d3dkmddi/DxgkDdiUpdateOverlay, display.dxgkddiupdateoverlay
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiUpdateOverlay
-product:
- - Windows
+ - DXGKDDI_UPDATEOVERLAY
 ---
 
 # DXGKDDI_UPDATEOVERLAY callback function
@@ -52,13 +49,13 @@ The <i>DxgkDdiUpdateOverlay</i> function modifies the overlay hardware.
 
 ## -parameters
 
-### -param hOverlay
+### -param hOverlay [in]
 
-[in] A handle to the overlay to modify. The display miniport driver's <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createoverlay">DxgkDdiCreateOverlay</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <b>hOverlay</b> member of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_createoverlay">DXGKARG_CREATEOVERLAY</a> structure that <i>pCreateOverlay</i> points to.
+A handle to the overlay to modify. The display miniport driver's <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createoverlay">DxgkDdiCreateOverlay</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <b>hOverlay</b> member of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_createoverlay">DXGKARG_CREATEOVERLAY</a> structure that <i>pCreateOverlay</i> points to.
 
-### -param pUpdateOverlay
+### -param pUpdateOverlay [in]
 
-[in] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_updateoverlay">DXGKARG_UPDATEOVERLAY</a> structure that describes how to modify the overlay hardware.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_updateoverlay">DXGKARG_UPDATEOVERLAY</a> structure that describes how to modify the overlay hardware.
 
 ## -returns
 
@@ -87,3 +84,4 @@ The <i>DxgkDdiUpdateOverlay</i> function modifies the overlay hardware.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createoverlay">DxgkDdiCreateOverlay</a>
+

@@ -4,7 +4,6 @@ title: EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_START (sercx.h)
 description: The EvtSerCx2CustomReceiveTransactionStart event callback function is called by version 2 of the serial framework extension (SerCx2) to start a custom-receive transaction.
 old-location: serports\evtsercx2customreceivetransactionstart.htm
 tech.root: serports
-ms.assetid: F90250CC-EDBF-4DB7-B889-4BF6325FB0CD
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_START callback function"]
 ms.keywords: 2/EvtSerCx2CustomReceiveTransactionStart, EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_START, EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_START callback, EvtSerCx2CustomReceiveTransactionStart, EvtSerCx2CustomReceiveTransactionStart callback function [Serial Ports], serports.evtsercx2customreceivetransactionstart
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
- - EvtSerCx2CustomReceiveTransactionStart
+ - EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_START
 ---
 
 # EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_START callback function
@@ -50,29 +49,29 @@ The <i>EvtSerCx2CustomReceiveTransactionStart</i> event callback function is cal
 
 ## -parameters
 
-### -param CustomReceiveTransaction 
+### -param CustomReceiveTransaction [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2CUSTOMRECEIVETRANSACTION</a> handle to a custom-receive-transaction object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customreceivetransactioncreate">SerCx2CustomReceiveTransactionCreate</a> method to create this object.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to the framework request object associated with the custom-receive transaction. The driver is responsible for completing this request. This request might not be the <a href="/windows-hardware/drivers/ifs/irp-mj-read">IRP_MJ_READ</a> request sent by the client, and thus the serial controller driver should not try to use this request to access the read buffer. This request is primarily used for cancellation, completion, and queue forwarding (if needed). To access the read buffer for the client's read request, use the <i>Mdl</i>, <i>Offset</i>, and <i>Length</i> parameters.
 
-### -param Mdl 
+### -param Mdl [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl">MDL</a> that describes the memory pages that are spanned by the read buffer for the custom-receive transaction. The scatter/gather list for the data transfer will use the region of this memory that is specified by the <i>Offset</i> and <i>Length</i> parameters.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 The starting offset for the data transfer. This parameter is a byte offset from the start of the buffer region described by the MDL. If the MDL specifies a total of N bytes of buffer space, possible values of <i>Offset</i> are in the range 0 to N–1.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The size, in bytes, of the data transfer. If the MDL specifies a total of N bytes of buffer space, possible values of <i>Length</i> are in the range 1 to N–<i>Offset</i>.
 
 ## -remarks
@@ -150,3 +149,4 @@ The <b>EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_START</b> function type is defined 
 
 
 <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestmarkcancelableex">WdfRequestMarkCancelableEx</a>
+

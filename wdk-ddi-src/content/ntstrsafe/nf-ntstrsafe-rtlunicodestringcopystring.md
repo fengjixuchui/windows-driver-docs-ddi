@@ -4,7 +4,6 @@ title: RtlUnicodeStringCopyString function (ntstrsafe.h)
 description: The RtlUnicodeStringCopyString function copies a string into a UNICODE_STRING structure.
 old-location: kernel\rtlunicodestringcopystring.htm
 tech.root: kernel
-ms.assetid: 7b33a311-7f00-4936-b4a9-727f66c12ef0
 ms.date: 04/30/2018
 keywords: ["RtlUnicodeStringCopyString function"]
 ms.keywords: RtlUnicodeStringCopyString, RtlUnicodeStringCopyString function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringcopystring, ntstrsafe/RtlUnicodeStringCopyString, safestrings_6c994257-53af-4692-88a9-41b38ffd6bcd.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,14 +50,14 @@ The <b>RtlUnicodeStringCopyString</b> function copies a string into a <a href="/
 
 ## -parameters
 
-### -param DestinationString 
+### -param DestinationString [out]
 
-[out]
+
 A pointer to a <b>UNICODE_STRING</b> structure that receives the copied string. The string that the <i>pszSrc </i>parameter points to (excluding the terminating null) is copied into the buffer that the <i>DestinationString</i> parameter's <b>UNICODE_STRING</b> structure points to. The maximum number of bytes in the string is NTSTRSAFE_UNICODE_STRING_MAX_CCH * <b>sizeof</b>(WCHAR).
 
-### -param pszSrc 
+### -param pszSrc [in]
 
-[in]
+
 A pointer to a null-terminated string. This string will be copied into the buffer that the <i>DestinationString </i>parameter's <b>UNICODE_STRING</b> structure points to.
 
 ## -returns
@@ -77,7 +76,7 @@ A pointer to a null-terminated string. This string will be copied into the buffe
 </dl>
 </td>
 <td width="60%">
-This <i>success</i> status means that source data was present, the string was copied without truncation, and the resultant destination buffer is null-terminated.
+This <i>success</i> status means that source data was present and the string was copied without truncation.
 
 </td>
 </tr>

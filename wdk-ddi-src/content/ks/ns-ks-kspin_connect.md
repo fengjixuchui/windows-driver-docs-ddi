@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_33
+UID: NS:ks.KSPIN_CONNECT
 title: KSPIN_CONNECT (ks.h)
 description: Clients use the KSPIN_CONNECT structure to describe the connection they request from a driver in a KsCreatePin call.
 old-location: stream\kspin_connect.htm
 tech.root: stream
-ms.assetid: 62ce7a36-87ce-40d1-bdd4-8a4f4bc60b00
 ms.date: 04/23/2018
 keywords: ["KSPIN_CONNECT structure"]
 ms.keywords: "*PKSPIN_CONNECT, KSPIN_CONNECT, KSPIN_CONNECT structure [Streaming Media Devices], PKSPIN_CONNECT, PKSPIN_CONNECT structure pointer [Streaming Media Devices], ks-struct_07642f18-c766-4649-b97a-12582aa0fffb.xml, ks/KSPIN_CONNECT, ks/PKSPIN_CONNECT, stream.kspin_connect"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSPIN_CONNECT
  - KSPIN_CONNECT
 ---
 
@@ -54,11 +54,11 @@ Clients use the KSPIN_CONNECT structure to describe the connection they request 
 
 ### -field Interface
 
-Specifies the <a href="/previous-versions/ff563537(v=vs.85)">KSPIN_INTERFACE</a> to use for this connection.
+Specifies the <a href="/windows-hardware/drivers/stream/kspin-interface-structure">KSPIN_INTERFACE</a> to use for this connection.
 
 ### -field Medium
 
-A structure of type <a href="/previous-versions/ff563538(v=vs.85)">KSPIN_MEDIUM</a> that specifies the medium to use for this connection.
+A structure of type <a href="/windows-hardware/drivers/stream/kspin-medium-structure">KSPIN_MEDIUM</a> that specifies the medium to use for this connection.
 
 ### -field PinId
 
@@ -78,7 +78,7 @@ If the KSPIN_CONNECT.PinToHandle element is not <b>NULL</b>, IRP_MJ_CREATE instr
 
 ## -see-also
 
-<a href="/previous-versions/ff563537(v=vs.85)">KSPIN_INTERFACE</a>
+<a href="/windows-hardware/drivers/stream/kspin-interface-structure">KSPIN_INTERFACE</a>
 
 
 
@@ -87,3 +87,4 @@ If the KSPIN_CONNECT.PinToHandle element is not <b>NULL</b>, IRP_MJ_CREATE instr
 
 
 <a href="/windows-hardware/drivers/ddi/ks/nf-ks-kscreatepin">KsCreatePin</a>
+

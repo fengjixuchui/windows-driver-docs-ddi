@@ -4,7 +4,6 @@ title: FsRtlCurrentOplockH function (ntifs.h)
 description: A file system or filter driver calls FsRtlCurrentOplockH to determine whether there are any CACHE_HANDLE_LEVEL opportunistic locks (oplocks) on a file.
 old-location: ifsk\fsrtlcurrentoplockh.htm
 tech.root: ifsk
-ms.assetid: 98eb2bef-18ac-449f-b180-7b0f768cc093
 ms.date: 04/16/2018
 keywords: ["FsRtlCurrentOplockH function"]
 ms.keywords: FsRtlCurrentOplockH, FsRtlCurrentOplockH function [Installable File System Drivers], fsrtlref_4997ca62-379d-45d8-bc22-32efd2076692.xml, ifsk.fsrtlcurrentoplockh, ntifs/FsRtlCurrentOplockH
@@ -50,9 +49,9 @@ A file system or filter driver calls <b>FsRtlCurrentOplockH</b> to determine whe
 
 ## -parameters
 
-### -param Oplock 
+### -param Oplock [in]
 
-[in]
+
 An opaque opportunistic lock pointer for the file. This pointer must have been initialized by a previous call to <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializeoplock">FsRtlInitializeOplock</a>.
 
 ## -returns

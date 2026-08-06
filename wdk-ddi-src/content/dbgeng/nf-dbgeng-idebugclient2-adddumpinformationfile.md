@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient2.AddDumpInformationFile
 title: IDebugClient2::AddDumpInformationFile (dbgeng.h)
-description: The AddDumpInformationFile method registers additional files containing supporting information that will be used when opening a dump file. The Unicode version of this method is AddDumpInformationFileWide.
+description: The IDebugClient2::AddDumpInformationFile method registers additional files containing supporting information that will be used when opening a dump file.
 old-location: debugger\adddumpinformationfile.htm
 tech.root: debugger
-ms.assetid: c111eb7e-7c42-4848-89d3-177f240fff7f
 ms.date: 05/03/2018
 keywords: ["IDebugClient2::AddDumpInformationFile"]
 ms.keywords: AddDumpInformationFile, AddDumpInformationFile method [Windows Debugging], AddDumpInformationFile method [Windows Debugging],IDebugClient2 interface, AddDumpInformationFile method [Windows Debugging],IDebugClient3 interface, AddDumpInformationFile method [Windows Debugging],IDebugClient4 interface, AddDumpInformationFile method [Windows Debugging],IDebugClient5 interface, IDebugClient2 interface [Windows Debugging],AddDumpInformationFile method, IDebugClient2.AddDumpInformationFile, IDebugClient2::AddDumpInformationFile, IDebugClient3 interface [Windows Debugging],AddDumpInformationFile method, IDebugClient3::AddDumpInformationFile, IDebugClient4 interface [Windows Debugging],AddDumpInformationFile method, IDebugClient4::AddDumpInformationFile, IDebugClient5 interface [Windows Debugging],AddDumpInformationFile method, IDebugClient5::AddDumpInformationFile, IDebugClient_11398d02-21c4-4ec5-9e1c-8e7e87808c35.xml, dbgeng/IDebugClient2::AddDumpInformationFile, dbgeng/IDebugClient3::AddDumpInformationFile, dbgeng/IDebugClient4::AddDumpInformationFile, dbgeng/IDebugClient5::AddDumpInformationFile, debugger.adddumpinformationfile
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient2.AddDumpInformationFile
- - IDebugClient3.AddDumpInformationFile
- - IDebugClient4.AddDumpInformationFile
- - IDebugClient5.AddDumpInformationFile
+ - IDebugClient2::AddDumpInformationFile
 ---
 
 # IDebugClient2::AddDumpInformationFile
@@ -53,14 +49,14 @@ The <b>AddDumpInformationFile</b> method registers additional files containing s
 
 ## -parameters
 
-### -param InfoFile 
+### -param InfoFile [in]
 
-[in]
+
 Specifies the name of the file containing the supporting information.
 
-### -param Type 
+### -param Type [in]
 
-[in]
+
 Specifies the type of the file <i>InfoFile</i>.  Currently, only files containing paging file information are supported, and <i>Type</i> must be set to DEBUG_DUMP_FILE_PAGE_FILE_DUMP.
 
 ## -returns
@@ -126,3 +122,4 @@ For more information about crash dump files, see <a href="/windows-hardware/driv
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-opendumpfilewide">OpenDumpFileWide</a>
+

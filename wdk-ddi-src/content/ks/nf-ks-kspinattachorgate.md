@@ -4,7 +4,6 @@ title: KsPinAttachOrGate function (ks.h)
 description: The KsPinAttachOrGate function connects Pin as an input to a previously initialized OR gate, and connects OrGate as an input to the relevant filter's AND gate.
 old-location: stream\kspinattachorgate.htm
 tech.root: stream
-ms.assetid: 14fb5b30-7169-4d8a-ad72-d0ee86da7f98
 ms.date: 04/23/2018
 keywords: ["KsPinAttachOrGate function"]
 ms.keywords: KsPinAttachOrGate, KsPinAttachOrGate function [Streaming Media Devices], avfunc_bcc291d4-ee61-4196-88df-b7aef567a06b.xml, ks/KsPinAttachOrGate, stream.kspinattachorgate
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ks.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section)
+req.irql: PASSIVE_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,14 +50,14 @@ The<b> KsPinAttachOrGate</b> function connects <i>Pin</i> as an input to a previ
 
 ## -parameters
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a> structure to use an input to the OR gate.
 
-### -param OrGate 
+### -param OrGate [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksgate">KSGATE</a> structure that is the previously initialized OR gate to connect to the relevant filter's AND gate. If this optional parameter is NULL, any <b>KSGATE</b> currently attached to the pin is detached.
 
 ## -remarks

@@ -4,7 +4,6 @@ title: WDF_QUERY_INTERFACE_CONFIG_INIT function (wdfqueryinterface.h)
 description: The WDF_QUERY_INTERFACE_CONFIG_INIT function initializes a driver's WDF_QUERY_INTERFACE_CONFIG structure.
 old-location: wdf\wdf_query_interface_config_init.htm
 tech.root: wdf
-ms.assetid: 509f4fa5-37c8-4098-aade-767aad5d6d6a
 ms.date: 02/26/2018
 keywords: ["WDF_QUERY_INTERFACE_CONFIG_INIT function"]
 ms.keywords: DFDeviceObjectDriverDefIntRef_d7e26200-d711-4c81-92d6-d2c2c1f052b0.xml, WDF_QUERY_INTERFACE_CONFIG_INIT, WDF_QUERY_INTERFACE_CONFIG_INIT function, kmdf.wdf_query_interface_config_init, wdf.wdf_query_interface_config_init, wdfqueryinterface/WDF_QUERY_INTERFACE_CONFIG_INIT
@@ -52,24 +51,24 @@ The <b>WDF_QUERY_INTERFACE_CONFIG_INIT</b> function initializes a driver's <a hr
 
 ## -parameters
 
-### -param InterfaceConfig 
+### -param InterfaceConfig [out]
 
-[out]
+
 A pointer to the driver's <a href="/windows-hardware/drivers/ddi/wdfqueryinterface/ns-wdfqueryinterface-_wdf_query_interface_config">WDF_QUERY_INTERFACE_CONFIG</a> structure.
 
-### -param Interface 
+### -param Interface [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface">INTERFACE</a> structure.
 
-### -param InterfaceType 
+### -param InterfaceType [in]
 
-[in]
+
 A pointer to the GUID that identifies the interface.
 
-### -param EvtDeviceProcessQueryInterfaceRequest 
+### -param EvtDeviceProcessQueryInterfaceRequest [in, optional]
 
-[in, optional]
+
 A pointer to the driver's <a href="/windows-hardware/drivers/ddi/wdfqueryinterface/nc-wdfqueryinterface-evt_wdf_device_process_query_interface_request">EvtDeviceProcessQueryInterfaceRequest</a> event callback function, which is called when another driver requests the interface.
 
 ## -remarks

@@ -4,7 +4,6 @@ title: EVT_WDF_USB_READER_COMPLETION_ROUTINE (wdfusb.h)
 description: A driver's EvtUsbTargetPipeReadComplete event callback function informs the driver that a continuous reader has successfully completed a read request.
 old-location: wdf\evtusbtargetpipereadcomplete.htm
 tech.root: wdf
-ms.assetid: da762d78-6d73-4ab9-83a8-297c6f48855b
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_USB_READER_COMPLETION_ROUTINE callback function"]
 ms.keywords: DFUsbRef_6c37ab84-2c88-41d5-8a63-3e74207083ed.xml, EVT_WDF_USB_READER_COMPLETION_ROUTINE, EVT_WDF_USB_READER_COMPLETION_ROUTINE callback, EvtUsbTargetPipeReadComplete, EvtUsbTargetPipeReadComplete callback function, kmdf.evtusbtargetpipereadcomplete, wdf.evtusbtargetpipereadcomplete, wdfusb/EvtUsbTargetPipeReadComplete
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfUsb.h
 api_name:
- - EvtUsbTargetPipeReadComplete
+ - EVT_WDF_USB_READER_COMPLETION_ROUTINE
 ---
 
 # EVT_WDF_USB_READER_COMPLETION_ROUTINE callback function
@@ -52,24 +51,24 @@ A driver's <i>EvtUsbTargetPipeReadComplete</i> event callback function informs t
 
 ## -parameters
 
-### -param Pipe 
+### -param Pipe [in]
 
-[in]
+
 A handle to a framework pipe object.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A handle to a framework memory object that represents a buffer that contains data from the device.
 
-### -param NumBytesTransferred 
+### -param NumBytesTransferred [in]
 
-[in]
+
 The number of bytes of data that are in the read buffer.
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Driver-defined context information that the driver specified in the <b>EvtUsbTargetPipeReadCompleteContext</b> member of the pipe's <a href="/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_continuous_reader_config">WDF_USB_CONTINUOUS_READER_CONFIG</a> structure.
 
 ## -remarks
@@ -119,3 +118,4 @@ For more information about the <i>EvtUsbTargetPipeReadComplete</i> callback func
 
 
 <a href="/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorygetbuffer">WdfMemoryGetBuffer</a>
+

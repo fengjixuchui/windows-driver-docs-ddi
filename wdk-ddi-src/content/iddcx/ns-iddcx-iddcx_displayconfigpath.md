@@ -1,14 +1,10 @@
 ---
 UID: NS:iddcx.IDDCX_DISPLAYCONFIGPATH
 title: IDDCX_DISPLAYCONFIGPATH
-author: windows-driver-content
 description: IDDCX_DISPLAYCONFIGPATH contains display monitor configuration for a path.
 tech.root: display
-ms.assetid: 5dce6205-f03c-4ca5-8f40-09a24eacbd13
 ms.date: 09/20/2020
 keywords: ["IDDCX_DISPLAYCONFIGPATH structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: IDDCX_DISPLAYCONFIGPATH, ,
 req.header: iddcx.h
 req.include-header: 
@@ -36,8 +32,6 @@ api_location:
  - iddcx.h
 api_name:
  - IDDCX_DISPLAYCONFIGPATH
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -56,7 +50,7 @@ Size, in bytes, of this structure.
 
 ### -field MonitorObject
 
-Monitor object handle that the driver provides to identify the monitor this path is targeted at.
+An [**IDDCX_MONITOR**](/windows-hardware/drivers/display/iddcx-objects) object handle that the driver provides to identify the monitor this path is targeted at.
 
 ### -field Position
 
@@ -83,7 +77,7 @@ The V Sync divider value for the specified **RefreshRate**.
 
 ### -field MonitorScaleFactor
 
-The requested monitor DPI for this path. Note that this value is just a hint and OS may override the value to ensure the DPI configuration of the session is valid. Valid values are 100 to 500 inclusive.
+The requested monitor DPI for this path. This value is just a hint and OS may override the value to ensure the DPI configuration of the session is valid. Valid values are 100 to 500 inclusive.
 
 ### -field PhysicalWidthOverride
 

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl2.CloseLogFile
 title: IDebugControl2::CloseLogFile (dbgeng.h)
-description: The CloseLogFile method closes the currently-open log file.
+description: The CloseLogFile method closes the currently-open log file. This method belongs to the IDebugControl2 interface.
 old-location: debugger\closelogfile.htm
 tech.root: debugger
-ms.assetid: 86ae188b-379c-474e-9f21-60286af19656
 ms.date: 05/03/2018
 keywords: ["IDebugControl2::CloseLogFile"]
 ms.keywords: CloseLogFile, CloseLogFile method [Windows Debugging], CloseLogFile method [Windows Debugging],IDebugControl interface, CloseLogFile method [Windows Debugging],IDebugControl2 interface, CloseLogFile method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],CloseLogFile method, IDebugControl2 interface [Windows Debugging],CloseLogFile method, IDebugControl2.CloseLogFile, IDebugControl2::CloseLogFile, IDebugControl3 interface [Windows Debugging],CloseLogFile method, IDebugControl3::CloseLogFile, IDebugControl::CloseLogFile, IDebugControl_988fe3ac-a51d-4757-995d-40fe9d66aa02.xml, dbgeng/IDebugControl2::CloseLogFile, dbgeng/IDebugControl3::CloseLogFile, dbgeng/IDebugControl::CloseLogFile, debugger.closelogfile
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugControl.CloseLogFile
- - IDebugControl2.CloseLogFile
- - IDebugControl3.CloseLogFile
+ - IDebugControl2::CloseLogFile
 ---
 
 # IDebugControl2::CloseLogFile
@@ -110,3 +107,4 @@ For more about log files, see <a href="/windows-hardware/drivers/debugger/using-
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol4-openlogfile2">OpenLogFile2</a>
+

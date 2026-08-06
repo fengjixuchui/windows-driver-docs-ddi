@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl2.OutputTextReplacements
 title: IDebugControl2::OutputTextReplacements (dbgeng.h)
-description: The OutputTextReplacements method prints all the currently defined user-named aliases to the debugger's output stream.
+description: The IDebugControl2::OutputTextReplacements method prints all the currently defined user-named aliases to the debugger's output stream.
 old-location: debugger\outputtextreplacements.htm
 tech.root: debugger
-ms.assetid: ea01fa02-8f4b-45c3-9690-30c8a1e6b4e5
 ms.date: 05/03/2018
 keywords: ["IDebugControl2::OutputTextReplacements"]
 ms.keywords: IDebugControl2 interface [Windows Debugging],OutputTextReplacements method, IDebugControl2.OutputTextReplacements, IDebugControl2::OutputTextReplacements, IDebugControl3 interface [Windows Debugging],OutputTextReplacements method, IDebugControl3::OutputTextReplacements, IDebugControl_57964e7b-e11a-446f-afab-7d3326fab695.xml, OutputTextReplacements, OutputTextReplacements method [Windows Debugging], OutputTextReplacements method [Windows Debugging],IDebugControl2 interface, OutputTextReplacements method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::OutputTextReplacements, dbgeng/IDebugControl3::OutputTextReplacements, debugger.outputtextreplacements
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl2.OutputTextReplacements
- - IDebugControl3.OutputTextReplacements
+ - IDebugControl2::OutputTextReplacements
 ---
 
 # IDebugControl2::OutputTextReplacements
@@ -51,14 +49,14 @@ The <b>OutputTextReplacements</b> method prints all the currently defined user-n
 
 ## -parameters
 
-### -param OutputControl 
+### -param OutputControl [in]
 
-[in]
+
 Specifies the output control to use when printing the aliases.  For possible values, see <a href="/windows-hardware/drivers/debugger/debug-outctl-xxx">DEBUG_OUTCTL_XXX</a>.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Must be set to DEBUG_OUT_TEXT_REPL_DEFAULT.
 
 ## -returns
@@ -114,3 +112,4 @@ For an overview of aliases used by the <a href="/windows-hardware/drivers/debugg
 
 
 <a href="/windows-hardware/drivers/debugger/al--list-aliases-">al (List Aliases)</a>
+

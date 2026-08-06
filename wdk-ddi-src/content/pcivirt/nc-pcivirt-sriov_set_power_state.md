@@ -4,7 +4,6 @@ title: SRIOV_SET_POWER_STATE (pcivirt.h)
 description: Sets the power state of the specified PCI Express SR-IOV Virtual Function (VF).
 old-location: pci\sriov_set_power_state.htm
 tech.root: PCI
-ms.assetid: d43a21cb-5cee-4e72-8f0c-7aa8b2453507
 ms.date: 02/24/2018
 keywords: ["SRIOV_SET_POWER_STATE callback"]
 ms.keywords: PCI.sriov_set_power_state, SRIOV_SET_POWER_STATE, SRIOV_SET_POWER_STATE callback function [Buses], pcivirt/SRIOV_SET_POWER_STATE
@@ -50,24 +49,24 @@ Sets the power state of the specified PCI Express SR-IOV Virtual Function (VF).
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to a driver-defined context.
 
-### -param VfIndex 
+### -param VfIndex [in]
 
-[in]
+
 A zero-based index of the VF to which this power state set operation applies.
 
-### -param PowerState 
+### -param PowerState [in]
 
-[in]
+
 A <a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>-type value that indicates the <b>Dx</b> power state to set.
 
-### -param Wake 
+### -param Wake [in]
 
-[in]
+
 A boolean value that indicates whether to arm the device for a wake signal (PME for PCI Express devices), as it goes into the low power state. TRUE  indicates the device is armed; FALSE otherwise. This value must be FALSE if <i>PowerState</i> is <b>PowerDeviceD0</b>.
 
 ## -returns

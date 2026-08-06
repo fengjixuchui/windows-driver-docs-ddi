@@ -4,7 +4,6 @@ title: _BTHX_SCO_SUPPORT (bthxddi.h)
 description: The BTHX_SCO_SUPPORT enumeration lists the different types of SCO supported by the transport driver.
 old-location: bltooth\bthx_sco_support.htm
 tech.root: bltooth
-ms.assetid: A9B303C7-868D-47EB-8279-9F655F58630C
 ms.date: 04/27/2018
 keywords: ["BTHX_SCO_SUPPORT enumeration"]
 ms.keywords: "*PBTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT, BTHX_SCO_SUPPORT enumeration [Bluetooth Devices], ScoSupportHCI, ScoSupportHCIBypass, ScoSupportNone, _BTHX_SCO_SUPPORT, bltooth.bthx_sco_support, bthxddi/BTHX_SCO_SUPPORT, bthxddi/ScoSupportHCI, bthxddi/ScoSupportHCIBypass, bthxddi/ScoSupportNone"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - BthXDDI.h
 api_name:
+ - _BTHX_SCO_SUPPORT
+ - PBTHX_SCO_SUPPORT
  - BTHX_SCO_SUPPORT
 ---
 
@@ -74,3 +75,4 @@ The output buffer of this IOCTL is defined by the <a href="/windows-hardware/dri
 BTHX_SCO_SUPPORT structure.
 
 The transport driver must specify <b>ScoSupportHCIBypass</b>.
+

@@ -4,14 +4,13 @@ title: FsRtlFastCheckLockForRead function (ntifs.h)
 description: The FsRtlFastCheckLockForRead routine determines whether the specified process has read access to a locked byte range of a file.
 old-location: ifsk\fsrtlfastchecklockforread.htm
 tech.root: ifsk
-ms.assetid: c3003169-8437-4f43-b777-fcb4d43d4d72
 ms.date: 04/16/2018
 keywords: ["FsRtlFastCheckLockForRead function"]
 ms.keywords: FsRtlFastCheckLockForRead, FsRtlFastCheckLockForRead routine [Installable File System Drivers], fsrtlref_b0a3dc82-d734-44b8-8762-7e10478f60c6.xml, ifsk.fsrtlfastchecklockforread, ntifs/FsRtlFastCheckLockForRead
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later versions of Windows operating systems.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -53,34 +52,34 @@ The <b>FsRtlFastCheckLockForRead</b> routine determines whether the specified pr
 
 ## -parameters
 
-### -param FileLock 
+### -param FileLock [in]
 
-[in]
+
 A pointer to the FILE_LOCK structure for the file. This structure must have been initialized by a previous call to <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlallocatefilelock">FsRtlAllocateFileLock</a> or <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializefilelock">FsRtlInitializeFileLock</a>.
 
-### -param StartingByte 
+### -param StartingByte [in]
 
-[in]
+
 A pointer to a variable that specifies the starting byte offset within the file of the byte range to check.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 A pointer to a variable that specifies the length, in bytes, of the range to check.
 
-### -param Key 
+### -param Key [in]
 
-[in]
+
 The key for the byte range lock.
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 A pointer to the file object for the file.
 
-### -param ProcessId 
+### -param ProcessId [in]
 
-[in]
+
 A pointer to the EPROCESS for the process.
 
 ## -returns

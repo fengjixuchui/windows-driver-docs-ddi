@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_SETVIDPNSOURCEOWNER
 title: _D3DKMT_SETVIDPNSOURCEOWNER (d3dkmthk.h)
 description: The D3DKMT_SETVIDPNSOURCEOWNER structure describes the parameters for setting or releasing the video present source in the path of a video present network (VidPN) topology that owns the VidPN.
 old-location: display\d3dkmt_setvidpnsourceowner.htm
-ms.assetid: 9154848b-ecbe-4f21-9d27-9013f97c5dde
 ms.date: 05/10/2018
 keywords: ["D3DKMT_SETVIDPNSOURCEOWNER structure"]
 ms.keywords: D3DKMT_SETVIDPNSOURCEOWNER, D3DKMT_SETVIDPNSOURCEOWNER structure [Display Devices], OpenGL_Structs_942045f1-1a3a-4c4a-b533-ec70fcad6d8f.xml, _D3DKMT_SETVIDPNSOURCEOWNER, d3dkmthk/D3DKMT_SETVIDPNSOURCEOWNER, display.d3dkmt_setvidpnsourceowner
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_SETVIDPNSOURCEOWNER
  - D3DKMT_SETVIDPNSOURCEOWNER
 ---
 
@@ -52,13 +52,13 @@ The D3DKMT_SETVIDPNSOURCEOWNER structure describes the parameters for setting or
 
 ## -struct-fields
 
-### -field hDevice
+### -field hDevice [in]
 
-[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that acquires or releases the VidPN source owner.
+A D3DKMT_HANDLE data type that represents a kernel-mode handle to the device that acquires or releases the VidPN source owner.
 
-### -field pType
+### -field pType [in]
 
-[in] An array of owner types. Elements of the array can contain the following values from the D3DKMT_VIDPNSOURCEOWNER_TYPE enumeration type.
+An array of owner types. Elements of the array can contain the following values from the D3DKMT_VIDPNSOURCEOWNER_TYPE enumeration type.
 
 |Value|Meaning|
 |--- |--- |
@@ -67,9 +67,9 @@ The D3DKMT_SETVIDPNSOURCEOWNER structure describes the parameters for setting or
 |D3DKMT_VIDPNSOURCEOWNER_EXCLUSIVE (2)|An exclusive owner without shared GDI primary.|
 |D3DKMT_VIDPNSOURCEOWNER_EXCLUSIVEGDI (3)|An exclusive owner with shared GDI primary. This owner must exclusively own all of the VidPn sources. This type is available only to legacy devices.|
 
-### -field pVidPnSourceId
+### -field pVidPnSourceId [in]
 
-[in] An array of zero-based identification numbers of the video present sources in paths of a video present network (VidPN) topology.
+An array of zero-based identification numbers of the video present sources in paths of a video present network (VidPN) topology.
 
 ### -field VidPnSourceCount
 
@@ -78,3 +78,4 @@ The number of valid entries in the array that <b>pVidPnSourceId</b> specifies.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtsetvidpnsourceowner">D3DKMTSetVidPnSourceOwner</a>
+

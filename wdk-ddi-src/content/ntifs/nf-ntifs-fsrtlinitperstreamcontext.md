@@ -4,14 +4,13 @@ title: FsRtlInitPerStreamContext macro (ntifs.h)
 description: The FsRtlInitPerStreamContext macro initializes a filter driver context structure.
 old-location: ifsk\fsrtlinitperstreamcontext.htm
 tech.root: ifsk
-ms.assetid: eea0c2d7-0338-4f34-acae-6ab869011696
 ms.date: 04/16/2018
 keywords: ["FsRtlInitPerStreamContext macro"]
 ms.keywords: FsRtlInitPerStreamContext, FsRtlInitPerStreamContext function [Installable File System Drivers], fsrtlref_13a48f5e-d3e7-49fa-8c4c-bb2d061f2b2a.xml, ifsk.fsrtlinitperstreamcontext, ntifs/FsRtlInitPerStreamContext
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Desktop
-req.target-min-winverclnt: The FsRtlInitPerStreamContext macro is available on Microsoft Windows XP and later, and on the Update Rollup for Windows 2000 Service Pack 4 (SP4).
+req.target-min-winverclnt: Windows XP; Update Rollup for Windows 2000 Service Pack 4 (SP4)
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -66,7 +65,7 @@ The <b>FsRtlInitPerStreamContext</b> macro initializes a filter driver context s
 
 <p>Pointer to a callback routine that frees the per-stream context structure. Callers must specify a non-<b>NULL</b> value for this parameter. This routine and its parameters are defined as follows: </p>
   <div class="code">
-    <span codelanguage="">
+    <span>
       <table>
         <tr>
           <th></th>

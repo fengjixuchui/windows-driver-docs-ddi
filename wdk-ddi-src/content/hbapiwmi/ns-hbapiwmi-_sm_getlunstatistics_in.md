@@ -4,7 +4,6 @@ title: _SM_GetLUNStatistics_IN (hbapiwmi.h)
 description: The SM_GetLUNStatistics_IN structure is used to provide input parameters to the SM_GetLUNStatistics_IN method.
 old-location: storage\sm_getlunstatistics_in.htm
 tech.root: storage
-ms.assetid: c551a376-2148-4fc4-ba4e-9c1ce1eea1d8
 ms.date: 03/29/2018
 keywords: ["SM_GetLUNStatistics_IN structure"]
 ms.keywords: "*PSM_GetLUNStatistics_IN, PSM_GetLUNStatistics_IN, PSM_GetLUNStatistics_IN structure pointer [Storage Devices], SM_GetLUNStatistics_IN, SM_GetLUNStatistics_IN structure [Storage Devices], _SM_GetLUNStatistics_IN, hbapiwmi/PSM_GetLUNStatistics_IN, hbapiwmi/SM_GetLUNStatistics_IN, storage.sm_getlunstatistics_in, structs-Fibre_537f91a2-0183-4e6d-a3ef-22474349e6e7.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hbapiwmi.h
 api_name:
+ - _SM_GetLUNStatistics_IN
+ - PSM_GetLUNStatistics_IN
  - SM_GetLUNStatistics_IN
 ---
 
@@ -61,3 +62,4 @@ A structure of type <a href="/previous-versions/ff557191(v=vs.85)">HBA_ScsiId</a
 ## -remarks
 
 When the WMI tool suite compiles the MS_SM_TargetInformationMethods WMI class, it generates a declaration of the SM_GetLUNStatistics_IN structure in <i>Hbapiwmi.h</i>.
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols4.GetLineByInlineContext
 title: IDebugSymbols4::GetLineByInlineContext (dbgeng.h)
-description: Gets a line by inline context.
+description: The GetLineByInlineContext method gets a line by inline context. This method belongs to the IDebugSymbols4 interface.
 old-location: debugger\idebugsymbols4_getlinebyinlinecontext.htm
 tech.root: debugger
-ms.assetid: AFDB4DB4-3C63-44A0-88D7-C8047ECB2261
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols4::GetLineByInlineContext"]
 ms.keywords: GetLineByInlineContext, GetLineByInlineContext method [Windows Debugging], GetLineByInlineContext method [Windows Debugging],IDebugSymbols4 interface, IDebugSymbols4 interface [Windows Debugging],GetLineByInlineContext method, IDebugSymbols4.GetLineByInlineContext, IDebugSymbols4::GetLineByInlineContext, dbgeng/IDebugSymbols4::GetLineByInlineContext, debugger.idebugsymbols4_getlinebyinlinecontext
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSymbols4.GetLineByInlineContext
+ - IDebugSymbols4::GetLineByInlineContext
 ---
 
 # IDebugSymbols4::GetLineByInlineContext
@@ -50,39 +49,39 @@ Gets a line by inline context.
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 An offset for the line.
 
-### -param InlineContext 
+### -param InlineContext [in]
 
-[in]
+
 The inline context.
 
-### -param Line 
+### -param Line [out, optional]
 
-[out, optional]
+
 A pointer to the returned line.
 
-### -param FileBuffer 
+### -param FileBuffer [out]
 
-[out]
+
 A pointer to an output buffer.
 
-### -param FileBufferSize 
+### -param FileBufferSize [in]
 
-[in]
+
 The size of the file buffer.
 
-### -param FileSize 
+### -param FileSize [out, optional]
 
-[out, optional]
+
 A pointer to the length of the file.
 
-### -param Displacement 
+### -param Displacement [out, optional]
 
-[out, optional]
+
 A pointer to the displacement value of the file.
 
 ## -returns
@@ -92,3 +91,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols4">IDebugSymbols4</a>
+

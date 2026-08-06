@@ -4,7 +4,6 @@ title: _KSDEVICE_PROFILE_INFO (ksmedia.h)
 description: The KSDEVICE_PROFILE_INFO is a generic structure designed to handle profile information for various device types.
 old-location: stream\ksdevice_profile_info.htm
 tech.root: stream
-ms.assetid: 32C894CA-B644-4221-97B6-A21F2A459DE6
 ms.date: 04/23/2018
 keywords: ["KSDEVICE_PROFILE_INFO structure"]
 ms.keywords: "*PKSDEVICE_PROFILE_INFO, KSDEVICE_PROFILE_INFO, KSDEVICE_PROFILE_INFO structure [Streaming Media Devices], PKSDEVICE_PROFILE_INFO, PKSDEVICE_PROFILE_INFO structure pointer [Streaming Media Devices], _KSDEVICE_PROFILE_INFO, ksmedia/KSDEVICE_PROFILE_INFO, ksmedia/PKSDEVICE_PROFILE_INFO, stream.ksdevice_profile_info"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - _KSDEVICE_PROFILE_INFO
+ - PKSDEVICE_PROFILE_INFO
  - KSDEVICE_PROFILE_INFO
 ---
 
@@ -91,3 +92,4 @@ An array of **KSCAMERA_PROFILE_CONCURRENCYINFO** structures describing the concu
 If **CountOfConcurrency** is 0, this parameter must be **NULL**.
 
 If **CountOfConcurrency** is greater than 0, this parameter must not be **NULL**.
+

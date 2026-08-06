@@ -4,7 +4,6 @@ title: IoCsqRemoveIrp function (wdm.h)
 description: The IoCsqRemoveIrp routine removes a particular IRP from the queue.
 old-location: kernel\iocsqremoveirp.htm
 tech.root: kernel
-ms.assetid: 72a6327c-01b2-479c-a2eb-f58180193d50
 ms.date: 04/30/2018
 keywords: ["IoCsqRemoveIrp function"]
 ms.keywords: IoCsqRemoveIrp, IoCsqRemoveIrp routine [Kernel-Mode Driver Architecture], k104_9a940115-fcbd-4e46-b7a5-10dc7fad7bda.xml, kernel.iocsqremoveirp, wdm/IoCsqRemoveIrp
@@ -50,14 +49,14 @@ The <b>IoCsqRemoveIrp</b> routine removes a particular IRP from the queue.
 
 ## -parameters
 
-### -param Csq 
+### -param Csq [in, out]
 
-[in, out]
+
 Pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">IO_CSQ</a> structure for the driver's cancel-safe IRP queue. This structure must have been initialized by <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinitialize">IoCsqInitialize</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinitializeex">IoCsqInitializeEx</a>.
 
-### -param Context 
+### -param Context [in, out]
 
-[in, out]
+
 Pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">IO_CSQ_IRP_CONTEXT</a> structure that identifies the IRP to remove. The <b>IO_CSQ_IRP_CONTEXT</b> structure is initialized by <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinsertirp">IoCsqInsertIrp</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iocsqinsertirpex">IoCsqInsertIrpEx</a> when the IRP is first inserted in the queue.
 
 ## -returns

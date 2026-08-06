@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_GetMsgInUiccStatus
 title: RIL_GetMsgInUiccStatus function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_GetMsgInUiccStatus function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_getmsginuiccstatus.htm
 tech.root: netvista
-ms.assetid: 9cf60a9b-cb1e-46a5-b8d8-c7fc2c6f2cf3
 ms.date: 05/02/2018
 keywords: ["RIL_GetMsgInUiccStatus function"]
 ms.keywords: RIL_GetMsgInUiccStatus, RIL_GetMsgInUiccStatus method [Network Drivers Starting with Windows Vista], netvista.ril_getmsginuiccstatus, rilapi/RIL_GetMsgInUiccStatus

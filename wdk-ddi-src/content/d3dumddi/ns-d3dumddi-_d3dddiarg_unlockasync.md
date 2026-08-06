@@ -4,7 +4,6 @@ title: _D3DDDIARG_UNLOCKASYNC (d3dumddi.h)
 description: The D3DDDIARG_UNLOCKASYNC structure describes a resource or a surface within the resource to unlock.
 old-location: display\d3dddiarg_unlockasync.htm
 tech.root: display
-ms.assetid: 27d4a7fa-ac2a-4049-8c9f-5ac9338c70b3
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_UNLOCKASYNC structure"]
 ms.keywords: D3DDDIARG_UNLOCKASYNC, D3DDDIARG_UNLOCKASYNC structure [Display Devices], UMDisplayDriver_param_Structs_1b08f2e6-73cd-4390-a9a2-54e604ca5012.xml, _D3DDDIARG_UNLOCKASYNC, d3dumddi/D3DDDIARG_UNLOCKASYNC, display.d3dddiarg_unlockasync
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_UNLOCKASYNC
  - D3DDDIARG_UNLOCKASYNC
 ---
 
@@ -52,18 +52,19 @@ The D3DDDIARG_UNLOCKASYNC structure describes a resource or a surface within the
 
 ## -struct-fields
 
-### -field hResource
+### -field hResource [in]
 
-[in] A handle to the resource to be unlocked.
+A handle to the resource to be unlocked.
 
-### -field SubResourceIndex
+### -field SubResourceIndex [in]
 
-[in] The zero-based index into the resource that <b>hResource</b> specifies. This index indicates the subresource or surface to be unlocked.
+The zero-based index into the resource that <b>hResource</b> specifies. This index indicates the subresource or surface to be unlocked.
 
-### -field Flags
+### -field Flags [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_unlockasyncflags">D3DDDI_UNLOCKASYNCFLAGS</a> structure that indicates, in bit-field flags, how to unlock the resource.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_unlockasyncflags">D3DDDI_UNLOCKASYNCFLAGS</a> structure that indicates, in bit-field flags, how to unlock the resource.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_unlockasync">UnlockAsync</a>
+

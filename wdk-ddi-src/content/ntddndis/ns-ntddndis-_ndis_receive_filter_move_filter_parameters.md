@@ -4,7 +4,6 @@ title: _NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS (ntddndis.h)
 description: The NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS structure specifies the parameters for moving a previously created receive filter. A receive filter is moved from a receive queue on a virtual port (VPort) to a receive queue on another VPort.
 old-location: netvista\ndis_receive_filter_move_filter_parameters.htm
 tech.root: netvista
-ms.assetid: 4045d8ed-bf8d-4dc1-80c3-a77499a7bf4e
 ms.date: 05/02/2018
 keywords: ["NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS structure"]
 ms.keywords: "*PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, netvista.ndis_receive_filter_move_filter_parameters, ntddndis/NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS, ntddndis/PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS
+ - PNDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS
  - NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS</b> structure specifies the pa
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_RECEIVE_FILTER_MOVE_FILTER_PARAMETERS</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
 
@@ -106,8 +107,9 @@ This structure is used in OID set requests of <a href="/windows-hardware/drivers
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/network/oid-receive-filter-move-filter">OID_RECEIVE_FILTER_MOVE_FILTER</a>
+

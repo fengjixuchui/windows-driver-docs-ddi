@@ -4,7 +4,6 @@ title: FltGetNewSystemBufferAddress function (fltkernel.h)
 description: The FltGetNewSystemBufferAddress function retrieves the AssociatedIrp.SystemBuffer buffer, which the file system has allocated. A minifilter driver's post-callback routine calls this function.
 old-location: ifsk\fltgetnewsystembufferaddress.htm
 tech.root: ifsk
-ms.assetid: 83a5e9b7-1731-422f-a0df-c1efbc8cad81
 ms.date: 04/16/2018
 keywords: ["FltGetNewSystemBufferAddress function"]
 ms.keywords: FltApiRef_e_to_o_a9a2a8aa-92e5-4843-a1e9-5b1a15d870fa.xml, FltGetNewSystemBufferAddress, FltGetNewSystemBufferAddress function [Installable File System Drivers], fltkernel/FltGetNewSystemBufferAddress, ifsk.fltgetnewsystembufferaddress
@@ -50,9 +49,9 @@ The <b>FltGetNewSystemBufferAddress</b> function retrieves the AssociatedIrp.Sys
 
 ## -parameters
 
-### -param CallbackData 
+### -param CallbackData [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data">FLT_CALLBACK_DATA</a> structure that represents an I/O operation.
 
 ## -returns

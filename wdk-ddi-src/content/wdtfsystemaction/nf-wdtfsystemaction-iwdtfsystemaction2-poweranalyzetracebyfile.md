@@ -4,7 +4,6 @@ title: IWDTFSystemAction2::PowerAnalyzeTraceByFile (wdtfsystemaction.h)
 description: Analyzes a power trace session that has already been collected and stored in the associated trace message (.etl) log file. This method will only work on Windows 8 and above.
 old-location: dtf\iwdtfsystemaction2_poweranalyzetracebyfile.htm
 tech.root: dtf
-ms.assetid: B8C422C0-7E42-4BE7-8919-A4ABF33E8D5E
 ms.date: 04/04/2018
 keywords: ["IWDTFSystemAction2::PowerAnalyzeTraceByFile"]
 ms.keywords: IWDTFSystemAction2 interface [Windows Device Testing Framework],PowerAnalyzeTraceByFile method, IWDTFSystemAction2.PowerAnalyzeTraceByFile, IWDTFSystemAction2::PowerAnalyzeTraceByFile, Microsoft.WDTF.IWDTFSystemAction2.PowerAnalyzeTraceByFile, Microsoft::WDTF::IWDTFSystemAction2::PowerAnalyzeTraceByFile, PowerAnalyzeTraceByFile, PowerAnalyzeTraceByFile method [Windows Device Testing Framework], PowerAnalyzeTraceByFile method [Windows Device Testing Framework],IWDTFSystemAction2 interface, dtf.iwdtfsystemaction2_poweranalyzetracebyfile, wdtfsystemaction/IWDTFSystemAction2::PowerAnalyzeTraceByFile
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTFSystemAction.Interop.dll
 api_name:
- - IWDTFSystemAction2.PowerAnalyzeTraceByFile
+ - IWDTFSystemAction2::PowerAnalyzeTraceByFile
 ---
 
 # IWDTFSystemAction2::PowerAnalyzeTraceByFile
@@ -51,9 +50,9 @@ Analyzes a power trace session that has already been collected and stored in the
 
 ## -parameters
 
-### -param EventFilePath 
+### -param EventFilePath [in]
 
-[in]
+
 Specifies the location to store the trace message (.etl)
     log file.
 
@@ -64,3 +63,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtfsystemaction/nn-wdtfsystemaction-iwdtfsystemaction2">IWDTFSystemAction2</a>
+

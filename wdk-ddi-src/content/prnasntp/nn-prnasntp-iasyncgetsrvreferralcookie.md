@@ -1,10 +1,9 @@
 ---
 UID: NN:prnasntp.IAsyncGetSrvReferralCookie
 title: IAsyncGetSrvReferralCookie (prnasntp.h)
-description: 
+description: "Learn more about: IAsyncGetSrvReferralCookie interface"
 old-location: print\iasyncgetsrvreferralcookie.htm
 tech.root: print
-ms.assetid: F22F5706-7238-43C1-B1F6-E41A0F9F3665
 ms.date: 04/20/2018
 keywords: ["IAsyncGetSrvReferralCookie interface"]
 ms.keywords: IAsyncGetSrvReferralCookie, IAsyncGetSrvReferralCookie interface [Print Devices], IAsyncGetSrvReferralCookie interface [Print Devices],described, print.iasyncgetsrvreferralcookie, prnasntp/IAsyncGetSrvReferralCookie

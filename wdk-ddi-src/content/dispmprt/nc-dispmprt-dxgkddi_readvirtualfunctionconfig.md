@@ -3,7 +3,6 @@ UID: NC:dispmprt.DXGKDDI_READVIRTUALFUNCTIONCONFIG
 title: DXGKDDI_READVIRTUALFUNCTIONCONFIG
 description: This routine supplies the non-privileged virtual machine with the contents of a PCI Express SR-IOV Virtual Function’s configuration space values.
 tech.root: display
-ms.assetid: 5c812c6f-6adf-41f4-bb88-19375373e1f7
 ms.date: 04/04/2019
 keywords: ["DXGKDDI_READVIRTUALFUNCTIONCONFIG callback function"]
 req.header: dispmprt.h
@@ -36,8 +35,6 @@ api_location:
  - dispmprt.h
 api_name:
  - DXGKDDI_READVIRTUALFUNCTIONCONFIG
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,13 +48,13 @@ This routine supplies the non-privileged virtual machine with the contents of a 
 
 ## -parameters
 
-### -param Context
+### -param Context [in]
 
-[in] The miniport context that is returned by the driver in the [DXGKDDI_SRIOV_INTERFACE](ns-dispmprt-_dxgkddi_sriov_interface.md) structure.
+The miniport context that is returned by the driver in the [DXGKDDI_SRIOV_INTERFACE](ns-dispmprt-_dxgkddi_sriov_interface.md) structure.
 
-### -param pArgs
+### -param pArgs [in, out]
 
-[in, out] A pointer to the DXGKARG_READVIRTUALFUNCTIONCONFIG structure.
+A pointer to the DXGKARG_READVIRTUALFUNCTIONCONFIG structure.
 
 ## -returns
 

@@ -1,10 +1,9 @@
 ---
 UID: NS:oemrilapitypes.RILDEVSPECIFICGETTOKEN
 title: RILDEVSPECIFICGETTOKEN (oemrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILDEVSPECIFICGETTOKEN structure for internal use only. Don't use this structure in your code."
 old-location: netvista\rildevspecificgettoken.htm
 tech.root: netvista
-ms.assetid: b0a534e0-1527-4ef3-a53f-c18cacbb5445
 ms.date: 05/02/2018
 keywords: ["RILDEVSPECIFICGETTOKEN structure"]
 ms.keywords: "*LPRILDEVSPECIFICGETTOKEN, LPRILDEVSPECIFICGETTOKEN, LPRILDEVSPECIFICGETTOKEN structure pointer [Network Drivers Starting with Windows Vista], RILDEVSPECIFICGETTOKEN, RILDEVSPECIFICGETTOKEN structure [Network Drivers Starting with Windows Vista], netvista.rildevspecificgettoken, oemrilapitypes/LPRILDEVSPECIFICGETTOKEN, oemrilapitypes/RILDEVSPECIFICGETTOKEN"
@@ -41,6 +40,7 @@ api_location:
  - oemrilapitypes.h
 api_name:
  - RILDEVSPECIFICGETTOKEN
+ - LPRILDEVSPECIFICGETTOKEN
 ---
 
 # RILDEVSPECIFICGETTOKEN structure

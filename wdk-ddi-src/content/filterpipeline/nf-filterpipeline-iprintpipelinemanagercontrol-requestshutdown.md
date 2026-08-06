@@ -4,7 +4,6 @@ title: IPrintPipelineManagerControl::RequestShutdown (filterpipeline.h)
 description: The RequestShutdown method requests that a pipeline be shut down.
 old-location: print\iprintpipelinemanagercontrol_requestshutdown.htm
 tech.root: print
-ms.assetid: dfb0d7d1-4e82-4471-814b-4b8c4929c709
 ms.date: 04/20/2018
 keywords: ["IPrintPipelineManagerControl::RequestShutdown"]
 ms.keywords: IPrintPipelineManagerControl interface [Print Devices],RequestShutdown method, IPrintPipelineManagerControl.RequestShutdown, IPrintPipelineManagerControl::RequestShutdown, RequestShutdown, RequestShutdown method [Print Devices], RequestShutdown method [Print Devices],IPrintPipelineManagerControl interface, filterpipeline/IPrintPipelineManagerControl::RequestShutdown, filterpipeline_b16337ab-92e1-4e5e-be84-bddf89bff0a1.xml, print.iprintpipelinemanagercontrol_requestshutdown
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - filterpipeline.h
 api_name:
- - IPrintPipelineManagerControl.RequestShutdown
+ - IPrintPipelineManagerControl::RequestShutdown
 ---
 
 # IPrintPipelineManagerControl::RequestShutdown
@@ -50,14 +49,14 @@ The <code>RequestShutdown</code> method requests that a pipeline be shut down.
 
 ## -parameters
 
-### -param hrReason 
+### -param hrReason [in]
 
-[in]
+
 An <b>HRESULT</b> value that indicates the reason for the lack of memory.
 
-### -param pReason 
+### -param pReason [in]
 
-[in]
+
 Not used. Set to <b>NULL</b>.
 
 ## -returns
@@ -67,3 +66,4 @@ Not used. Set to <b>NULL</b>.
 ## -remarks
 
 A filter that uses the <a href="/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-ixpsdocumentconsumer">IXpsDocumentConsumer</a> interface must call <code>IPrintPipelineManagerControl::RequestShutdown</code> before it calls <a href="/windows-hardware/drivers/ddi/filterpipeline/nf-filterpipeline-ixpsdocumentconsumer-closesender">IXpsDocumentConsumer::CloseSender</a> to shut down the pipeline. Calling <b>IXpsDocumentConsumer::CloseSender</b> first can produce an invalid XPS document and cause an error.
+

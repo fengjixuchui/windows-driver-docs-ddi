@@ -2,8 +2,7 @@
 UID: NE:dbgmodel.SymbolSearchOptions
 title: SymbolSearchOptions (dbgmodel.h)
 description: Symbols search options.
-ms.assetid: b6a5df9d-42b8-4d3b-b9a7-84b89d8826be
-ms.date: 07/16/2018
+ms.date: 08/10/2023
 keywords: ["SymbolSearchOptions enumeration"]
 ms.keywords: SymbolSearchOptions, ,
 req.header: dbgmodel.h
@@ -34,24 +33,29 @@ api_name:
 
 # SymbolSearchOptions enumeration
 
-
 ## -description
 
 Symbols search options.
 
 ## -enum-fields
 
-### -field SymbolSearchNone 
+### -field SymbolSearchNone
 
-SymbolSearchNone: No options set
+No options set
 
 SymbolSearchNone = 0x00000000,
 
-### -field SymbolSearchCompletion 
+### -field SymbolSearchCompletion
 
-SymbolSearchCompletion: Search for symbols starting with the specified name rather than symbols of the exact specified name.
+Search for symbols starting with the specified name rather than symbols of the exact specified name.
 
 SymbolSearchCompletion = 0x00000001
+
+### -field SymbolSearchCaseInsensitive
+
+Search for symbols using case-insensitive rules.
+
+SymbolSearchCaseInsensitive = 0x00000002
 
 ## -remarks
 

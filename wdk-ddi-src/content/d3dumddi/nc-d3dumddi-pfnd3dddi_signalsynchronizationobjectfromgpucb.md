@@ -4,7 +4,6 @@ title: PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTFROMGPUCB (d3dumddi.h)
 description: pfnSignalSynchronizationObjectFromGpuCb is used to signal a monitored fence.
 old-location: display\pfnsignalsynchronizationobjectfromgpucb.htm
 tech.root: display
-ms.assetid: 46F23D7A-5C7A-4BCC-A575-5D47F590B07C
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTFROMGPUCB callback function"]
 ms.keywords: PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTFROMGPUCB, PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTFROMGPUCB callback, d3dumddi/pfnSignalSynchronizationObjectFromGpuCb, display.pfnsignalsynchronizationobjectfromgpucb, pfnSignalSynchronizationObjectFromGpuCb, pfnSignalSynchronizationObjectFromGpuCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnSignalSynchronizationObjectFromGpuCb
-product:
- - Windows
+ - PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTFROMGPUCB
 ---
 
 # PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTFROMGPUCB callback function
@@ -56,7 +53,7 @@ product:
 
 A handle to the display device.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -85,3 +82,4 @@ This function semantics are similar to existing <a href="/windows-hardware/drive
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_signalsynchronizationobjectfromgpu2cb">pfnSignalSynchronizationObjectFromGpu2Cb</a>
+

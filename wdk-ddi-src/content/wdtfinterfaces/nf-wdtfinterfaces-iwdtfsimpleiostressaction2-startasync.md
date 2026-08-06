@@ -4,7 +4,6 @@ title: IWDTFSimpleIOStressAction2::StartAsync (wdtfinterfaces.h)
 description: Asynchronously signals a start event to occur.
 old-location: dtf\iwdtfsimpleiostressaction2_startasync.htm
 tech.root: dtf
-ms.assetid: 6ebb27ae-50ef-4644-869f-9755e65eada9
 ms.date: 04/04/2018
 keywords: ["IWDTFSimpleIOStressAction2::StartAsync"]
 ms.keywords: IWDTFSimpleIOStressAction2 interface [Windows Device Testing Framework],StartAsync method, IWDTFSimpleIOStressAction2.StartAsync, IWDTFSimpleIOStressAction2::StartAsync, Microsoft.WDTF.IWDTFSimpleIOStressAction2.StartAsync, Microsoft::WDTF::IWDTFSimpleIOStressAction2::StartAsync, StartAsync, StartAsync method [Windows Device Testing Framework], StartAsync method [Windows Device Testing Framework],IWDTFSimpleIOStressAction2 interface, dtf.iwdtfsimpleiostressaction2_startasync, wdtfinterfaces/IWDTFSimpleIOStressAction2::StartAsync
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTFInterfaces.Interop.dll
 api_name:
- - IWDTFSimpleIOStressAction2.StartAsync
+ - IWDTFSimpleIOStressAction2::StartAsync
 ---
 
 # IWDTFSimpleIOStressAction2::StartAsync
@@ -55,3 +54,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtfinterfaces/nn-wdtfinterfaces-iwdtfsimpleiostressaction2">IWDTFSimpleIOStressAction2</a>
+

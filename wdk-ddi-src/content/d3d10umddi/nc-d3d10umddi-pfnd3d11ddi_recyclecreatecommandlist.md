@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_RECYCLECREATECOMMANDLIST
 title: PFND3D11DDI_RECYCLECREATECOMMANDLIST (d3d10umddi.h)
 description: The RecycleCreateCommandList function creates a command list and makes a previously unused DDI handle completely valid again.
 old-location: display\recyclecreatecommandlist.htm
-ms.assetid: c387545e-2891-401d-b7ca-ee7549a52603
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_RECYCLECREATECOMMANDLIST callback function"]
 ms.keywords: PFND3D11DDI_RECYCLECREATECOMMANDLIST, PFND3D11DDI_RECYCLECREATECOMMANDLIST callback, RecycleCreateCommandList, RecycleCreateCommandList callback function [Display Devices], UserModeDisplayDriverDx11_Functions_ae724488-211a-4590-abcc-f2c8f954531e.xml, d3d10umddi/RecycleCreateCommandList, display.recyclecreatecommandlist
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - RecycleCreateCommandList
-product:
- - Windows
+ - PFND3D11DDI_RECYCLECREATECOMMANDLIST
 ---
 
 # PFND3D11DDI_RECYCLECREATECOMMANDLIST callback function
@@ -52,25 +49,25 @@ The <i>RecycleCreateCommandList</i> function creates a command list and makes a 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCreateCommandList* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11ddiarg_createcommandlist">D3D11DDIARG_CREATECOMMANDLIST</a> structure that describes the parameters that the user-mode display driver uses to create a command list.
 
-### -param Arg3
+### -param unnamedParam3
 
 *hCommandList* [in]
 
 A handle to the driver's private data for the command list.
 
-### -param Arg4
+### -param unnamedParam4
 
 *hRTCommandList* [in]
 
@@ -110,3 +107,4 @@ For more information about <i>RecycleCreateCommandList</i>, see <a href="/window
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10_2ddi_getcaps">GetCaps(D3D10_2)</a>
+

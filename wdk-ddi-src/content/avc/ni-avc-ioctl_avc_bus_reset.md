@@ -4,7 +4,6 @@ title: IOCTL_AVC_BUS_RESET (avc.h)
 description: The IOCTL_AVC_BUS_RESET I/O control code allows the caller to complete any previous IOCTL_AVC_UPDATE_VIRTUAL_SUBUNIT_INFO and IOCTL_AVC_REMOVE_VIRTUAL_SUBUNIT_INFO control requests that did not use the AVC_SUBUNIT_ADDR_TRIGGERBUSRESET flag.
 old-location: stream\ioctl_avc_bus_reset.htm
 tech.root: stream
-ms.assetid: 8f87ee5f-74bb-446f-8be3-214cc2c01c1b
 ms.date: 04/23/2018
 keywords: ["IOCTL_AVC_BUS_RESET IOCTL"]
 ms.keywords: IOCTL_AVC_BUS_RESET, IOCTL_AVC_BUS_RESET control, IOCTL_AVC_BUS_RESET control code [Streaming Media Devices], avc/IOCTL_AVC_BUS_RESET, avcref_4be76d4b-17fe-4ae6-a078-ebb079499d55.xml, stream.ioctl_avc_bus_reset
@@ -53,6 +52,8 @@ For driver-to-driver communication, it is a METHOD_BUFFERED IOCTL, so set the IR
 This request causes <i>avc.sys</i> to invalidate its device relations, which results in the PnP manager asking for an updated list of child device objects (virtual subunits). If there are no new or removed child device objects, no action will be taken. If there are new or removed child device objects, their drivers will be loaded or unloaded, and a 1394 bus reset will be triggered for each PDO as each is started or removed.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

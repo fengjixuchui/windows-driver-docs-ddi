@@ -1,10 +1,9 @@
 ---
-UID: NE:winsplp.__unnamed_enum_1
+UID: NE:winsplp.UI_TYPE
 title: UI_TYPE (winsplp.h)
-description: 
+description: "Learn more about: UI_TYPE enumeration"
 old-location: print\ui_type.htm
 tech.root: print
-ms.assetid: 99C87D65-C633-4AA2-95DF-6AE74428C71D
 ms.date: 04/20/2018
 keywords: ["UI_TYPE enumeration"]
 ms.keywords: UI_TYPE, UI_TYPE enumeration [Print Devices], kMessageBox, print.ui_type, winsplp/UI_TYPE, winsplp/kMessageBox

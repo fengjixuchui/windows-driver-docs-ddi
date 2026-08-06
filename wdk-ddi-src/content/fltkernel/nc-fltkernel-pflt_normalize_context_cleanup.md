@@ -4,7 +4,6 @@ title: PFLT_NORMALIZE_CONTEXT_CLEANUP (fltkernel.h)
 description: A minifilter driver that provides file names for the filter manager's name cache can register a routine of type PFLT_NORMALIZE_CONTEXT_CLEANUP as the minifilter driver's NormalizeContextCleanupCallback routine.
 old-location: ifsk\pflt_normalize_context_cleanup.htm
 tech.root: ifsk
-ms.assetid: 968cfc99-4862-41f7-bf7e-d579a3e8061f
 ms.date: 04/16/2018
 keywords: ["PFLT_NORMALIZE_CONTEXT_CLEANUP callback function"]
 ms.keywords: FltCallbacks_3391a3bd-55a2-4f87-b116-78c2e4f93b88.xml, NormalizeContextCleanupCallback, NormalizeContextCleanupCallback routine [Installable File System Drivers], PFLT_NORMALIZE_CONTEXT_CLEANUP, fltkernel/NormalizeContextCleanupCallback, ifsk.pflt_normalize_context_cleanup
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - fltkernel.h
 api_name:
- - NormalizeContextCleanupCallback
+ - PFLT_NORMALIZE_CONTEXT_CLEANUP
 ---
 
 # PFLT_NORMALIZE_CONTEXT_CLEANUP callback function
@@ -50,9 +49,9 @@ A minifilter driver that provides file names for the filter manager's name cache
 
 ## -parameters
 
-### -param NormalizationContext 
+### -param NormalizationContext [in, optional]
 
-[in, optional]
+
 Pointer to minifilter driver-provided context information to be passed in any calls to the <a href="/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_normalize_name_component">PFLT_NORMALIZE_NAME_COMPONENT</a> callback routine that are made to normalize multiple components in the same file name path.
 
 ## -remarks
@@ -86,3 +85,4 @@ The filter manager calls this callback routine to allow the minifilter driver to
 
 
 <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a>
+

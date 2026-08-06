@@ -2,8 +2,7 @@
 UID: NC:uart.UART_HARDWARE_READ_USHORT
 title: UART_HARDWARE_READ_USHORT (uart.h)
 description: Reads a USHORT value from the specified port or register.
-tech.root: serports
-ms.assetid: d516dfad-577b-4c6b-87df-ab6c7ce5c7f8
+tech.root: uart
 ms.date: 10/19/2018
 keywords: ["UART_HARDWARE_READ_USHORT callback function"]
 req.header: uart.h
@@ -77,3 +76,4 @@ Register your implementation of this callback function by setting the **ReadPort
 
 ## -see-also
 
+[**uart.h**](index.md)

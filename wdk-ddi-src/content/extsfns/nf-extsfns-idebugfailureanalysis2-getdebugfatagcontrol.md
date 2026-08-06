@@ -4,7 +4,6 @@ title: IDebugFailureAnalysis2::GetDebugFATagControl (extsfns.h)
 description: The GetDebugFATagControl method gets a pointer to an IDebugFAEntryTags interface, which provides access to the tags in a DebugFailureAnalysisTags object.
 old-location: debugger\idebugfailureanalysis2_getdebugfatagcontrol.htm
 tech.root: debugger
-ms.assetid: AC69BCF1-B5C2-4A2F-AEF0-1BC4EBD0BE66
 ms.date: 05/03/2018
 keywords: ["IDebugFailureAnalysis2::GetDebugFATagControl"]
 ms.keywords: GetDebugFATagControl, GetDebugFATagControl method [Windows Debugging], GetDebugFATagControl method [Windows Debugging],IDebugFailureAnalysis2 interface, IDebugFailureAnalysis2 interface [Windows Debugging],GetDebugFATagControl method, IDebugFailureAnalysis2.GetDebugFATagControl, IDebugFailureAnalysis2::GetDebugFATagControl, debugger.idebugfailureanalysis2_getdebugfatagcontrol, extsfns/IDebugFailureAnalysis2::GetDebugFATagControl
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - extsfns.h
 api_name:
- - IDebugFailureAnalysis2.GetDebugFATagControl
+ - IDebugFailureAnalysis2::GetDebugFATagControl
 ---
 
 # IDebugFailureAnalysis2::GetDebugFATagControl
@@ -50,9 +49,9 @@ The <b>GetDebugFATagControl</b> method gets a pointer to an <a href="/windows-ha
 
 ## -parameters
 
-### -param FATagControl 
+### -param FATagControl [out]
 
-[out]
+
 A pointer to a variable that receives a pointer to the <a href="/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfaentrytags">IDebugFAEntryTags</a> interface.
 
 ## -returns
@@ -70,3 +69,4 @@ This method does not return a value.
 
 
 <a href="/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin">_EFN_Analyze</a>
+

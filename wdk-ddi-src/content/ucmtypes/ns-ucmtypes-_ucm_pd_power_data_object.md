@@ -4,7 +4,6 @@ title: _UCM_PD_POWER_DATA_OBJECT (ucmtypes.h)
 description: Describes a Power Data Object. For information about these members, see the Power Delivery specification.
 old-location: buses\ucm_pd_power_data_object.htm
 tech.root: usbref
-ms.assetid: C54750A9-EE64-4FE7-9ED6-EC9709A82C43
 ms.date: 05/07/2018
 keywords: ["UCM_PD_POWER_DATA_OBJECT structure"]
 ms.keywords: "*PUCM_PD_POWER_DATA_OBJECT, PUCM_PD_POWER_DATA_OBJECT, PUCM_PD_POWER_DATA_OBJECT union pointer [Buses], UCM_PD_POWER_DATA_OBJECT, UCM_PD_POWER_DATA_OBJECT union [Buses], _UCM_PD_POWER_DATA_OBJECT, buses.ucm_pd_power_data_object, ucmtypes/PUCM_PD_POWER_DATA_OBJECT, ucmtypes/UCM_PD_POWER_DATA_OBJECT"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ucmtypes.h
 api_name:
+ - _UCM_PD_POWER_DATA_OBJECT
+ - PUCM_PD_POWER_DATA_OBJECT
  - UCM_PD_POWER_DATA_OBJECT
 ---
 
@@ -122,7 +123,7 @@ Describes the maximum current in multiples of 10 mA.
 
 ### -field VariableSupplyNonBatteryPdo.MinimumVoltageIn50mV
 
-Desribes the minimum voltage in multiples of 50 mV.
+Describes the minimum voltage in multiples of 50 mV.
 
 ### -field VariableSupplyNonBatteryPdo.MaximumVoltageIn50mV
 

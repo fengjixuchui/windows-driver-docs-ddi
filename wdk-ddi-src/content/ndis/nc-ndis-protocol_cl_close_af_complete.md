@@ -4,7 +4,6 @@ title: PROTOCOL_CL_CLOSE_AF_COMPLETE (ndis.h)
 description: The ProtocolClCloseAfComplete function is used by connection-oriented NDIS clients.
 old-location: netvista\protocolclcloseafcomplete.htm
 tech.root: netvista
-ms.assetid: 7597e124-34e4-4326-98b3-c65dbe90ae6f
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CL_CLOSE_AF_COMPLETE callback function"]
 ms.keywords: PROTOCOL_CL_CLOSE_AF_COMPLETE, PROTOCOL_CL_CLOSE_AF_COMPLETE callback, ProtocolClCloseAfComplete, ProtocolClCloseAfComplete callback function [Network Drivers Starting with Windows Vista], condis_client_ref_27fe2447-59c5-4922-b6be-67911961f0e4.xml, ndis/ProtocolClCloseAfComplete, netvista.protocolclcloseafcomplete
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolClCloseAfComplete
+ - PROTOCOL_CL_CLOSE_AF_COMPLETE
 ---
 
 # PROTOCOL_CL_CLOSE_AF_COMPLETE callback function
@@ -56,9 +55,9 @@ The
 
 ## -parameters
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 Specifies the final status of the client-initiated request to close the address family, which can
      be one of the following:
      
@@ -82,9 +81,9 @@ Either the AF has associated VC(s) and/or registered SAP(s) that the client must
        <b>NdisClCloseAddressFamily</b> twice because NDIS discovered that the AF state was marked as
        "closing."
 
-### -param ProtocolAfContext 
+### -param ProtocolAfContext [in]
 
-[in]
+
 Specifies the client-supplied handle to its per-AF context area. The client originally set up this
      context area and passed this handle to NDIS with 
      <b>NdisClOpenAddressFamilyEx</b>.
@@ -160,3 +159,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_unbind_adapter_ex">ProtocolUnbindAdapterEx</a>
+

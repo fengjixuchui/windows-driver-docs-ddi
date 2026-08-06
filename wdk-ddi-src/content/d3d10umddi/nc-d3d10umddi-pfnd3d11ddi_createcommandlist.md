@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_CREATECOMMANDLIST
 title: PFND3D11DDI_CREATECOMMANDLIST (d3d10umddi.h)
 description: The CreateCommandList function creates a command list.
 old-location: display\createcommandlist.htm
-ms.assetid: 583bde52-ba21-44ce-9f48-8ace6f7a70cc
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_CREATECOMMANDLIST callback function"]
 ms.keywords: CreateCommandList, CreateCommandList callback function [Display Devices], PFND3D11DDI_CREATECOMMANDLIST, PFND3D11DDI_CREATECOMMANDLIST callback, UserModeDisplayDriverDx11_Functions_4383a01d-9aee-4c8e-8a54-f7463e8995d9.xml, d3d10umddi/CreateCommandList, display.createcommandlist
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CreateCommandList
-product:
- - Windows
+ - PFND3D11DDI_CREATECOMMANDLIST
 ---
 
 # PFND3D11DDI_CREATECOMMANDLIST callback function
@@ -52,25 +49,25 @@ The <b>CreateCommandList</b> function creates a command list.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCreateCommandList* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11ddiarg_createcommandlist">D3D11DDIARG_CREATECOMMANDLIST</a> structure that describes the parameters that the user-mode display driver uses to create a command list.
 
-### -param Arg3
+### -param unnamedParam3
 
 *hCommandList* [in]
 
 A handle to the driver's private data for the command list.
 
-### -param Arg4
+### -param unnamedParam4
 
 *hRTCommandList* [in]
 
@@ -111,3 +108,4 @@ The driver can pass E_OUTOFMEMORY (if the driver runs out of memory) or D3DDDIER
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NI:usbfnioctl.IOCTL_INTERNAL_USBFN_RESERVED
 title: IOCTL_INTERNAL_USBFN_RESERVED (usbfnioctl.h)
-description: Do not use.
+description: Do not use this (IOCTL_INTERNAL_USBFN_RESERVED) article.
 old-location: buses\ioctl_internal_usbfn_reserved.htm
 tech.root: usbref
-ms.assetid: F6935F5F-B6A8-4495-835D-151A26633F04
 ms.date: 05/07/2018
 keywords: ["IOCTL_INTERNAL_USBFN_RESERVED IOCTL"]
 ms.keywords: IOCTL_INTERNAL_USBFN_RESERVED, IOCTL_INTERNAL_USBFN_RESERVED control, IOCTL_INTERNAL_USBFN_RESERVED control code [Buses], buses.ioctl_internal_usbfn_reserved, usbfnioctl/IOCTL_INTERNAL_USBFN_RESERVED
@@ -49,6 +48,10 @@ api_name:
 Do not use.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
+
+[IRP_MJ_INTERNAL_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
 ### -input-buffer
 

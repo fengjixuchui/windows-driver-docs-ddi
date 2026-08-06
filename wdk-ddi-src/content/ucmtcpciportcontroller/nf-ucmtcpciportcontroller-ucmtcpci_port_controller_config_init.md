@@ -4,7 +4,6 @@ title: UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT function (ucmtcpciportcontroller.h)
 description: Initializes the UCMTCPCI_PORT_CONTROLLER_CONFIG structure.
 old-location: buses\ucmtcpci_port_controller_config_init.htm
 tech.root: usbref
-ms.assetid: 8e9718e1-2f7c-4322-a34d-2faa45f4f97e
 ms.date: 05/07/2018
 keywords: ["UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT function"]
 ms.keywords: UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT, UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT method [Buses], buses.ucmtcpci_port_controller_config_init, ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_CONFIG_INIT
@@ -50,19 +49,19 @@ api_name:
 
 ## -parameters
 
-### -param Config 
+### -param Config [out]
 
-[out]
+
 A pointer to the driver-allocated <a href="/windows-hardware/drivers/ddi/ucmtcpciportcontroller/ns-ucmtcpciportcontroller-_ucmtcpci_port_controller_config">UCMTCPCI_PORT_CONTROLLER_CONFIG</a> structure.
 
-### -param Identification 
+### -param Identification [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ucmtcpciportcontroller/ns-ucmtcpciportcontroller-_ucmtcpci_port_controller_identification">UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION</a> structure.
 
-### -param Capabilities 
+### -param Capabilities [in]
 
-[in]
+
  A pointer to the 
                  <a href="/windows-hardware/drivers/ddi/ucmtcpciportcontroller/ns-ucmtcpciportcontroller-_ucmtcpci_port_controller_capabilities">UCMTCPCI_PORT_CONTROLLER_CAPABILITIES</a> structure.
 

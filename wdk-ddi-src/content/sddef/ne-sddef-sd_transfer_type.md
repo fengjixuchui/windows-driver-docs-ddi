@@ -1,10 +1,9 @@
 ---
-UID: NE:sddef.__unnamed_enum_2
+UID: NE:sddef.SD_TRANSFER_TYPE
 title: SD_TRANSFER_TYPE (sddef.h)
 description: The SD_TRANSFER_TYPE enumeration specifies the type of a Secure Digital (SD) data transfer.
 old-location: sd\sd_transfer_type.htm
 tech.root: SD
-ms.assetid: 5ae1c898-d06e-42ff-bddb-42d6748dac0f
 ms.date: 02/15/2018
 keywords: ["SD_TRANSFER_TYPE enumeration"]
 ms.keywords: SD.sd_transfer_type, SDTT_CMD_ONLY, SDTT_MULTI_BLOCK, SDTT_MULTI_BLOCK_NO_CMD12, SDTT_SINGLE_BLOCK, SDTT_UNSPECIFIED, SD_TRANSFER_TYPE, SD_TRANSFER_TYPE enumeration [Buses], sd-structs_5a149cc8-e6ba-4700-ad7c-148429d9731f.xml, sddef/SDTT_CMD_ONLY, sddef/SDTT_MULTI_BLOCK, sddef/SDTT_MULTI_BLOCK_NO_CMD12, sddef/SDTT_SINGLE_BLOCK, sddef/SDTT_UNSPECIFIED, sddef/SD_TRANSFER_TYPE
@@ -68,8 +67,9 @@ Indicates that the request reads or writes multiple blocks of data. The I/O bloc
 
 ### -field SDTT_MULTI_BLOCK_NO_CMD12
 
-Indicates that the request reads or writes multiple blocks of data. The transfer terminates automatically and does not require termination by a CMD12 command. For a description of the CMD12 command, see the <i>MultiMedia Card</i> specification.
+Indicates that the request reads or writes multiple blocks of data. The transfer terminates automatically and does not require termination by a CMD12 command. For a description of the CMD12 command, see the *MultiMedia Card* specification.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/sddef/ns-sddef-_sdcmd_descriptor">SDCMD_DESCRIPTOR</a>
+[**SDCMD_DESCRIPTOR**](ns-sddef-_sdcmd_descriptor.md)
+

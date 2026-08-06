@@ -3,7 +3,6 @@ UID: NS:wwan._WWAN_UICC_RESPONSE
 title: _WWAN_UICC_RESPONSE (wwan.h)
 description: The WWAN_UICC_RESPONSE structure describes a UICC response to a file read or write operation.
 tech.root: netvista
-ms.assetid: 30E5B8D7-B104-469D-B3F0-7FE8C2BE295A
 ms.date: 04/10/2019
 keywords: ["WWAN_UICC_RESPONSE structure"]
 ms.keywords: _WWAN_UICC_RESPONSE, WWAN_UICC_RESPONSE, *PWWAN_UICC_RESPONSE,
@@ -37,6 +36,8 @@ api_location:
  - wwan.h
 api_name:
  - _WWAN_UICC_RESPONSE
+ - PWWAN_UICC_RESPONSE
+ - WWAN_UICC_RESPONSE
 ---
 
 # _WWAN_UICC_RESPONSE structure
@@ -81,3 +82,4 @@ This structure is used in the [**NDIS_WWAN_UICC_RESPONSE**](../ndiswwan/ns-ndisw
 [OID_WWAN_UICC_ACCESS_RECORD](/windows-hardware/drivers/network/oid-wwan-uicc-access-record)
 
 [**NDIS_WWAN_UICC_RESPONSE**](../ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_response.md)
+

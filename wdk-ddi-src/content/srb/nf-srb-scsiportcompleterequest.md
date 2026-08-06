@@ -4,7 +4,6 @@ title: ScsiPortCompleteRequest function (srb.h)
 description: The ScsiPortCompleteRequest routine completes all of the active requests for the given SCSI bus, controller, or LU, including a request being processed by the calling miniport driver routine.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
 old-location: storage\scsiportcompleterequest.htm
 tech.root: storage
-ms.assetid: 9cd17a86-6652-414d-a80d-2e61c0ac99b6
 ms.date: 03/29/2018
 keywords: ["ScsiPortCompleteRequest function"]
 ms.keywords: ScsiPortCompleteRequest, ScsiPortCompleteRequest routine [Storage Devices], scsiprt_be6690c0-6cfa-4a71-9877-176ed2c742e8.xml, srb/ScsiPortCompleteRequest, storage.scsiportcompleterequest
@@ -52,29 +51,29 @@ The <b>ScsiPortCompleteRequest</b> routine completes all of the active requests 
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension->HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="/windows-hardware/drivers/ddi/srb/nf-srb-scsiportinitialize">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device.
 
-### -param PathId 
+### -param PathId [in]
 
-[in]
+
 Identifies the SCSI bus; SP_UNTAGGED indicates all buses controlled by the HBA.
 
-### -param TargetId 
+### -param TargetId [in]
 
-[in]
+
 Identifies the target controller or device on the given buses; SP_UNTAGGED indicates all targets on the bus.
 
-### -param Lun 
+### -param Lun [in]
 
-[in]
+
 Identifies the logical unit for the given target controller or device; SP_UNTAGGED indicates all logical units for the given target controllers on the given buses.
 
-### -param SrbStatus 
+### -param SrbStatus [in]
 
-[in]
+
 Specifies the completion status to be set in the <b>SrbStatus </b>member of each SRB.
 
 ## -returns

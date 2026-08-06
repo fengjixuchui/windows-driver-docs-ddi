@@ -4,7 +4,6 @@ title: WdfDeviceInitSetRemoveLockOptions function (wdfdevice.h)
 description: The WdfDeviceInitSetRemoveLockOptions method causes the framework to acquire a remove lock before delivering an IRP of any type to the driver.
 old-location: wdf\wdfdeviceinitsetremovelockoptions.htm
 tech.root: wdf
-ms.assetid: 0BCF4141-BE4E-42C0-8986-BE039B27F5D5
 ms.date: 02/26/2018
 keywords: ["WdfDeviceInitSetRemoveLockOptions function"]
 ms.keywords: WdfDeviceInitSetRemoveLockOptions, WdfDeviceInitSetRemoveLockOptions method, kmdf.wdfdeviceinitsetremovelockoptions, wdf.wdfdeviceinitsetremovelockoptions, wdfdevice/WdfDeviceInitSetRemoveLockOptions
@@ -54,14 +53,14 @@ api_name:
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A caller-supplied pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
-### -param Options 
+### -param Options [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_remove_lock_options">WDF_REMOVE_LOCK_OPTIONS</a> structure.
 
 ## -remarks
@@ -80,7 +79,7 @@ Starting in KMDF 1.11, the driver can optionally call <b>WdfDeviceInitSetRemoveL
 
 If your driver has kernel-mode clients that send I/O unsynchronized with the PnP state of your device, you may experience crashes due to I/O IRPs arriving after the framework device object has been removed. In this case, you can call <b>WdfDeviceInitSetRemoveLockOptions</b>. Then, when a client sends an I/O request to your device:
 
-* If the device has not yet been removed, the remove lock is acquired successfully and the request is delivered. If removal happens later, the framework calls [**IoReleaseRemoveLockAndWait**](/windows-hardware/drivers/ddi/wdm/nf-wdm-ioreleaseremovelockandwait) which blocks until all successful lock acquisitions are released (I/O requests are completed).
+* If the device has not yet been removed, the remove lock is acquired successfully and the request is delivered. If removal happens later, the framework calls [**IoReleaseRemoveLockAndWait**](../wdm/nf-wdm-ioreleaseremovelockandwait.md) which blocks until all successful lock acquisitions are released (I/O requests are completed).
 * If the device has already processed IRP_MN_REMOVE_DEVICE, but there is an outstanding reference to a WDM device object preventing the device from being released, the remove lock is not acquired and the framework completes the request immediately.
 
 <div class="alert"><b>Note</b>  <b>WdfDeviceInitSetRemoveLockOptions</b> is not supported on control objects.</div>

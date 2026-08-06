@@ -4,7 +4,6 @@ title: USBCAMD_AdapterReceivePacket function (usbcamdi.h)
 description: The USBCAMD_AdapterReceivePacket function allows USBCAMD to process an adapter-based stream request block (SRB).
 old-location: stream\usbcamd_adapterreceivepacket.htm
 tech.root: stream
-ms.assetid: 12a5ca64-7187-4a70-83ca-0ade6a8b1343
 ms.date: 04/23/2018
 keywords: ["USBCAMD_AdapterReceivePacket function"]
 ms.keywords: USBCAMD_AdapterReceivePacket, USBCAMD_AdapterReceivePacket function [Streaming Media Devices], stream.usbcamd_adapterreceivepacket, usbcamdi/USBCAMD_AdapterReceivePacket, usbcmdpr_ad9c24d0-76a2-43a4-9634-a70e9260d907.xml
@@ -51,24 +50,24 @@ The <b>USBCAMD_AdapterReceivePacket</b> function allows USBCAMD to process an ad
 
 ## -parameters
 
-### -param Srb 
+### -param Srb [in]
 
-[in]
+
 Pointer to the SRB passed to the camera minidriver's <a href="/windows-hardware/drivers/ddi/usbcamdi/nc-usbcamdi-padapter_receive_packet_routine">AdapterReceivePacket</a> callback function.
 
-### -param DeviceData 
+### -param DeviceData [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/usbcamdi/ns-usbcamdi-_usbcamd_device_data">USBCAMD_DEVICE_DATA</a> structure that contains entry points to the camera minidriver's callback functions.
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the device's physical device object (PDO).
 
-### -param NeedsCompletion 
+### -param NeedsCompletion [in]
 
-[in]
+
 Specifies if USBCAMD is to process and complete the SRB request. Specify <b>TRUE</b> if USBCAMD is to complete the SRB request Specify <b>FALSE</b> to make USBCAMD ignore the SRB request and return the device context pointer.
 
 ## -returns

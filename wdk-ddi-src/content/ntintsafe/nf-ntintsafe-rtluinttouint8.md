@@ -4,7 +4,6 @@ title: RtlUIntToUInt8 function (ntintsafe.h)
 description: Converts a value of type UINT to a value of type UINT8.
 old-location: kernel\rtluinttouint8.htm
 tech.root: kernel
-ms.assetid: 39D4AE72-EF60-455E-A7C2-F2896E304897
 ms.date: 04/30/2018
 keywords: ["RtlUIntToUInt8 function"]
 ms.keywords: RtlUIntToUInt8, RtlUIntToUInt8 function [Kernel-Mode Driver Architecture], kernel.rtluinttouint8, ntintsafe/RtlUIntToUInt8
@@ -50,14 +49,14 @@ Converts a value of type <b>UINT</b> to a value of type <b>UINT8</b>.
 
 ## -parameters
 
-### -param uOperand 
+### -param uOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pui8Result 
+### -param pui8Result [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

@@ -4,7 +4,6 @@ title: KsPinDataIntersectionEx function (ks.h)
 description: The KsPinDataIntersectionEx function handles the KSPROPERTY_PIN_DATAINTERSECTION through a callback function.
 old-location: stream\kspindataintersectionex.htm
 tech.root: stream
-ms.assetid: 4d471d91-7b2c-441d-a640-4f66ef7f1b2f
 ms.date: 04/23/2018
 keywords: ["KsPinDataIntersectionEx function"]
 ms.keywords: KsPinDataIntersectionEx, KsPinDataIntersectionEx function [Streaming Media Devices], ks/KsPinDataIntersectionEx, ksfunc_22cbace6-b96b-44d7-9c30-24580f37dd58.xml, stream.kspindataintersectionex
@@ -50,44 +49,44 @@ The <b>KsPinDataIntersectionEx</b> function handles the <a href="/windows-hardwa
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Specifies the IRP that describes the property request.
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 Specifies the specific property that is being queried.
 
-### -param Data 
+### -param Data [out]
 
-[out]
+
 Specifies the pin property-specific data.
 
-### -param DescriptorsCount 
+### -param DescriptorsCount [in]
 
-[in]
+
 Specifies the number of descriptor structures.
 
-### -param Descriptor 
+### -param Descriptor [in]
 
-[in]
+
 Specifies the pointer to the list of pin information structures.
 
-### -param DescriptorSize 
+### -param DescriptorSize [in]
 
-[in]
+
 Size of the descriptor structures, in bytes.
 
-### -param IntersectHandler 
+### -param IntersectHandler [in, optional]
 
-[in, optional]
+
 Contains the optional minidriver-defined <a href="/previous-versions/windows/hardware/drivers/ff567185(v=vs.85)">KStrIntersectHandlerEx</a> callback function to compare data ranges.
 
-### -param HandlerContext 
+### -param HandlerContext [in, optional]
 
-[in, optional]
+
 Optional context that is supplied to the handler.
 
 ## -returns

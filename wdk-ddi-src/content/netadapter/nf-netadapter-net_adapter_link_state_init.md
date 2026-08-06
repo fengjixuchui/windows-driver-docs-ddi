@@ -3,8 +3,7 @@ UID: NF:netadapter.NET_ADAPTER_LINK_STATE_INIT
 title: NET_ADAPTER_LINK_STATE_INIT function (netadapter.h)
 description: Initializes a NET_ADAPTER_LINK_STATE structure.
 tech.root: netvista
-ms.assetid: 6cb7595b-d33f-40fb-a1da-319b31bbeadc
-ms.date: 02/06/2018
+ms.date: 07/23/2025
 keywords: ["NET_ADAPTER_LINK_STATE_INIT function"]
 ms.keywords: NET_ADAPTER_LINK_STATE_INIT
 req.header: netadapter.h
@@ -13,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: Windows 10
 req.target-min-winversvr: Windows Server 2016
 req.kmdf-ver: 1.21
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
@@ -50,29 +49,29 @@ Initializes a [NET_ADAPTER_LINK_STATE](ns-netadapter-_net_adapter_link_state.md)
 
 ## -parameters
 
-### -param LinkState
+### -param LinkState [_Out_]
 
 A pointer to a driver-allocated [NET_ADAPTER_LINK_STATE](ns-netadapter-_net_adapter_link_state.md) structure.
 
-### -param LinkSpeed
+### -param LinkSpeed [_In_]
 
 The link speed of the adapter in bits per second.
 
-### -param MediaConnectState
+### -param MediaConnectState [_In_]
 
 The media connect state for the network adapter.
 
-### -param MediaDuplexState
+### -param MediaDuplexState [_In_]
 
 The media duplex state for the network adapter.
 
-### -param SupportedPauseFunctions
+### -param SupportedPauseFunctions [_In_]
 
 Support for the IEEE 802.3 pause frames specified by a [**NET_ADAPTER_PAUSE_FUNCTION_TYPE**](../netadapter/ne-netadapter-_net_adapter_pause_function_type.md) value.
 
-### -param AutoNegotiationFlags
+### -param AutoNegotiationFlags [_In_]
 
-The auto-negotiation settings for the network adapter. For more info, see [NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES](../ndis/ns-ndis-_ndis_miniport_adapter_general_attributes.md).
+The auto-negotiation settings for the network adapter. For more info, see [NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES](../miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes.md).
 
 ## -remarks
 
@@ -82,7 +81,7 @@ An initialized **NET_ADAPTER_LINK_STATE** structure is an input parameter value 
 
 ## -see-also
 
-[NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES](../ndis/ns-ndis-_ndis_miniport_adapter_general_attributes.md)
+[NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES](../miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes.md)
 
 [NetAdapterSetLinkState](nf-netadapter-netadaptersetlinkstate.md)
 

@@ -4,7 +4,6 @@ title: FltLoadFilter function (fltkernel.h)
 description: The FltLoadFilter routine dynamically loads a minifilter driver into the currently running system.
 old-location: ifsk\fltloadfilter.htm
 tech.root: ifsk
-ms.assetid: aecf5f5f-c0b7-487a-9db0-d01212aef094
 ms.date: 04/16/2018
 keywords: ["FltLoadFilter function"]
 ms.keywords: FltApiRef_e_to_o_3cdd26c1-dc25-4fa0-8ea1-a1458742cd45.xml, FltLoadFilter, FltLoadFilter routine [Installable File System Drivers], fltkernel/FltLoadFilter, ifsk.fltloadfilter
@@ -50,9 +49,9 @@ The <b>FltLoadFilter</b> routine dynamically loads a minifilter driver into the 
 
 ## -parameters
 
-### -param FilterName 
+### -param FilterName [in]
 
-[in]
+
 Pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure containing the service name for the minifilter driver.
 
 ## -returns

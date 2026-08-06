@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.ZwOpenTransaction
 title: ZwOpenTransaction function (wdm.h)
-description: The ZwOpenTransaction routine obtains a handle to an existing transaction object.
+description: Learn how the ZwOpenTransaction routine obtains a handle to an existing transaction object.
 old-location: kernel\zwopentransaction.htm
 tech.root: kernel
-ms.assetid: 5ffa50af-24e6-4dab-81cc-6ac26356e9c6
 ms.date: 04/30/2018
 keywords: ["ZwOpenTransaction function"]
 ms.keywords: NtOpenTransaction, ZwOpenTransaction, ZwOpenTransaction routine [Kernel-Mode Driver Architecture], kernel.zwopentransaction, ktm_ref_ed0e1a06-e5e2-4328-aeeb-d56a78d6a757.xml, wdm/NtOpenTransaction, wdm/ZwOpenTransaction
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - ZwOpenTransaction
- - NtOpenTransaction
 ---
 
 # ZwOpenTransaction function
@@ -51,29 +49,29 @@ The <b>ZwOpenTransaction</b> routine obtains a handle to an existing <a href="/w
 
 ## -parameters
 
-### -param TransactionHandle 
+### -param TransactionHandle [out]
 
-[out]
+
 A pointer to a caller-allocated variable that receives a handle to the transaction object if <b>ZwOpenTransaction</b> returns STATUS_SUCCESS.
 
-### -param DesiredAccess 
+### -param DesiredAccess [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/kernel/access-mask">ACCESS_MASK</a> value that specifies the caller's requested access to the transaction object. For information about how to specify this parameter, see the <i>DesiredAccess</i> parameter of <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreatetransaction">ZwCreateTransaction</a>.
 
-### -param ObjectAttributes 
+### -param ObjectAttributes [in, optional]
 
-[in, optional]
+
 A pointer to an <a href="/windows/win32/api/ntdef/ns-ntdef-_object_attributes">OBJECT_ATTRIBUTES</a> structure that specifies the object's attributes. Use the <a href="/windows/win32/api/ntdef/nf-ntdef-initializeobjectattributes">InitializeObjectAttributes</a> routine to initialize this structure, but specify only that routine's <i>InitializedAttributes</i> and <i>Attributes</i> parameters. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE flag in the <i>Attributes</i> parameter. The <i>ObjectAttributes</i> parameter is optional and can be <b>NULL</b>.
 
-### -param Uow 
+### -param Uow [in]
 
-[in]
+
 A pointer to a GUID that is a transaction object's <a href="/windows-hardware/drivers/kernel/ktm-objects">unit of work (UOW) identifier</a>. This GUID identifies the transaction object to open.
 
-### -param TmHandle 
+### -param TmHandle [in, optional]
 
-[in, optional]
+
 A handle to a <a href="/windows-hardware/drivers/kernel/transaction-manager-objects">transaction manager object</a>. If this parameter is not <b>NULL</b>, KTM searches only for transaction objects that belong to the specified transaction manager object. If this parameter is <b>NULL</b>, KTM searches all transaction objects.
 
 ## -returns
@@ -186,3 +184,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntrollbacktransaction">ZwRollbackTransaction</a>
+

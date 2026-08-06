@@ -4,7 +4,6 @@ title: FltRegisterFilter function (fltkernel.h)
 description: FltRegisterFilter registers a minifilter driver.
 old-location: ifsk\fltregisterfilter.htm
 tech.root: ifsk
-ms.assetid: 46e96f85-d368-40cd-9530-81959d20b750
 ms.date: 04/16/2018
 keywords: ["FltRegisterFilter function"]
 ms.keywords: FltApiRef_p_to_z_41e3002c-d720-4e0f-81cb-36cbc215cdba.xml, FltRegisterFilter, FltRegisterFilter function [Installable File System Drivers], fltkernel/FltRegisterFilter, ifsk.fltregisterfilter
@@ -50,19 +49,19 @@ api_name:
 
 ## -parameters
 
-### -param Driver 
+### -param Driver [in]
 
-[in]
+
 A pointer to the driver object for the minifilter driver. This should be the same driver object pointer that was passed as input to the minifilter driver's <b>DriverEntry</b> routine.
 
-### -param Registration 
+### -param Registration [in]
 
-[in]
+
 A pointer to a caller-allocated minifilter driver registration structure (<a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_registration">FLT_REGISTRATION</a>).
 
-### -param RetFilter 
+### -param RetFilter [out]
 
-[out]
+
 A pointer to a caller-allocated variable that receives an opaque filter pointer for the caller.
 
 ## -returns
@@ -140,7 +139,7 @@ The filter instance is not registered.
 
 Every minifilter driver must call <b>FltRegisterFilter</b> from its <b>DriverEntry</b> routine to add itself to the global list of registered minifilter drivers and to provide the Filter Manager with a list of callback functions and other information about the minifilter driver. 
 
-<b>FltRegisterFilter</b> returns an opaque filter pointer for the minifilter driver in *<i>RetFilter</i>. This pointer value uniquely identifies the minifilter driver and remains constant as long as the minifilter driver is loaded. The minifilter driver should save this pointer, because it is a required parameter for <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltstartfiltering">FltStartFiltering</a> and <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltunregisterfilter">FltUnregisterFilter</a>. 
+<b>FltRegisterFilter</b> returns an opaque filter pointer for the minifilter driver in **RetFilter*. This pointer value uniquely identifies the minifilter driver and remains constant as long as the minifilter driver is loaded. The minifilter driver should save this pointer, because it is a required parameter for <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltstartfiltering">FltStartFiltering</a> and <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltunregisterfilter">FltUnregisterFilter</a>. 
 
 After calling <b>FltRegisterFilter</b>, a minifilter driver typically calls <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltstartfiltering">FltStartFiltering</a> to begin filtering I/O operations. 
 

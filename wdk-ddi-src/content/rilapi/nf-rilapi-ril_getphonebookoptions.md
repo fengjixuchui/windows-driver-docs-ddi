@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_GetPhonebookOptions
 title: RIL_GetPhonebookOptions function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_GetPhonebookOptions function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_getphonebookoptions.htm
 tech.root: netvista
-ms.assetid: 7d8ff1cc-e5d6-473b-bc16-e87468bb546c
 ms.date: 05/02/2018
 keywords: ["RIL_GetPhonebookOptions function"]
 ms.keywords: RIL_GetPhonebookOptions, RIL_GetPhonebookOptions method [Network Drivers Starting with Windows Vista], netvista.ril_getphonebookoptions, rilapi/RIL_GetPhonebookOptions

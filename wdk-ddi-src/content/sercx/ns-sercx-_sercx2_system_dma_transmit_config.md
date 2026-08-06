@@ -4,7 +4,6 @@ title: _SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG (sercx.h)
 description: The SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG structure contains information that version 2 of the serial framework extension (SerCx2) uses to configure a new system-DMA-transmit object.
 old-location: serports\sercx2_system_dma_transmit_config.htm
 tech.root: serports
-ms.assetid: AAC70470-B58E-44F1-9CC5-4E0C25539639
 ms.date: 04/23/2018
 keywords: ["SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG structure"]
 ms.keywords: "*PSERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, 2/PSERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, 2/SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, PSERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, PSERCX2_SYSTEM_DMA_TRANSMIT_CONFIG structure pointer [Serial Ports], SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG structure [Serial Ports], _SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG, serports.sercx2_system_dma_transmit_config"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
+ - _SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG
+ - PSERCX2_SYSTEM_DMA_TRANSMIT_CONFIG
  - SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG
 ---
 
@@ -100,7 +101,7 @@ If <b>Exclusive</b> is <b>TRUE</b>, the <b>MinimumTransferUnitOverride</b>, <b>A
 
 ### -field EvtSerCx2SystemDmaTransmitInitializeTransaction
 
-A pointer to the driver-implemented <a href="/windows-hardware/drivers/ddi/sercx/nc-sercx-evt_sercx2_system_dma_transmit_initialize_transaction">EvtSerCx2SystemDmaTransmitInitializeTransaction</a> event callbackcallback function.  This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.
+A pointer to the driver-implemented <a href="/windows-hardware/drivers/ddi/sercx/nc-sercx-evt_sercx2_system_dma_transmit_initialize_transaction">EvtSerCx2SystemDmaTransmitInitializeTransaction</a> event callback function.  This member is optional and can be set to <b>NULL</b> to indicate that the driver does not implement the function.
 
 ### -field EvtSerCx2SystemDmaTransmitCleanupTransaction
 
@@ -169,3 +170,4 @@ The <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2systemdmatransmi
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdmaenabler/nf-wdfdmaenabler-wdfdmaenablersetmaximumscattergatherelements">WdfDmaEnablerSetMaximumScatterGatherElements</a>
+

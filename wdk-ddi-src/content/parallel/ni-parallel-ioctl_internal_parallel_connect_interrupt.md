@@ -4,7 +4,6 @@ title: IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT (parallel.h)
 description: The IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT request connects an optional interrupt service routine and an optional deferred port check routine to a parallel port.
 old-location: parports\ioctl_internal_parallel_connect_interrupt.htm
 tech.root: parports
-ms.assetid: 8cf5f2fc-e298-4f5b-bca4-3034e8a4a061
 ms.date: 02/15/2018
 keywords: ["IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT IOCTL"]
 ms.keywords: IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT, IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT control code [Parallel Ports], cisspd_b43103ce-7b3e-413b-914c-fbaf1d7789ee.xml, parallel/IOCTL_INTERNAL_PARALLEL_CONNECT_INTERRUPT, parports.ioctl_internal_parallel_connect_interrupt
@@ -58,6 +57,10 @@ The connect interrupt request returns information that the driver can use in the
 <div class="alert"><b>Note</b>    Microsoft does not recommend using a client-supplied interrupt routine. The use of interrupts might cause system instability. By default, the connect interrupt request is disabled. For more information, see <a href="/previous-versions/ff543934(v=vs.85)">Connecting an Interrupt Service Routine to a ParallelPort</a>.</div><div> </div>
 
 ## -ioctlparameters
+
+### -ioctl-major-code
+
+[IRP_MJ_INTERNAL_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
 ### -input-buffer
 

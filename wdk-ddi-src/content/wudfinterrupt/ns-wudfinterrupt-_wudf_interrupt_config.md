@@ -4,7 +4,6 @@ title: _WUDF_INTERRUPT_CONFIG (wudfinterrupt.h)
 description: The WUDF_INTERRUPT_CONFIG structure contains configuration information for a device interrupt.
 old-location: wdf\wudf_interrupt_config.htm
 tech.root: wdf
-ms.assetid: 7A849A10-2C47-42E2-8BEB-E1D979D3C893
 ms.date: 02/26/2018
 keywords: ["WUDF_INTERRUPT_CONFIG structure"]
 ms.keywords: "*PWUDF_INTERRUPT_CONFIG, PWUDF_INTERRUPT_CONFIG, PWUDF_INTERRUPT_CONFIG structure pointer, WUDF_INTERRUPT_CONFIG, WUDF_INTERRUPT_CONFIG structure, _WUDF_INTERRUPT_CONFIG, umdf.wudf_interrupt_config, wdf.wudf_interrupt_config, wudfinterrupt/PWUDF_INTERRUPT_CONFIG, wudfinterrupt/WUDF_INTERRUPT_CONFIG"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wudfinterrupt.h
 api_name:
+ - _WUDF_INTERRUPT_CONFIG
+ - PWUDF_INTERRUPT_CONFIG
  - WUDF_INTERRUPT_CONFIG
 ---
 
@@ -117,3 +118,4 @@ UMDF supports edge-triggered, line-based interrupts and message-signaled interru
 
 
 <a href="/windows-hardware/drivers/ddi/wudfinterrupt/nf-wudfinterrupt-wudf_interrupt_config_init">WUDF_INTERRUPT_CONFIG_INIT</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:wiautil.wiauRegOpenDataW
 title: wiauRegOpenDataW function (wiautil.h)
-description: The wiauRegOpenData function opens the DeviceData registry key.
+description: Learn how the wiauRegOpenData function opens the DeviceData registry key.
 old-location: image\wiauregopendata.htm
 tech.root: image
-ms.assetid: f289dfa8-26e4-426b-8058-8c2464e47e2a
 ms.date: 05/03/2018
 keywords: ["wiauRegOpenDataW function"]
 ms.keywords: image.wiauregopendata, wiauFncs_1718e270-b13c-4325-bb4a-a872becaa8bb.xml, wiauRegOpenData, wiauRegOpenData function [Imaging Devices], wiauRegOpenDataA, wiauRegOpenDataW, wiautil/wiauRegOpenData
@@ -30,6 +29,8 @@ req.typenames:
 f1_keywords:
  - wiauRegOpenDataW
  - wiautil/wiauRegOpenDataW
+ - wiauRegOpenData
+ - wiautil/wiauRegOpenData
 topic_type:
  - APIRef
  - kbSyntax
@@ -38,6 +39,7 @@ api_type:
 api_location:
  - wiautil.h
 api_name:
+ - wiauRegOpenDataW
  - wiauRegOpenData
 ---
 
@@ -50,14 +52,14 @@ The <b>wiauRegOpenData</b> function opens the <b>DeviceData</b> registry key.
 
 ## -parameters
 
-### -param hkeyAncestor 
+### -param hkeyAncestor [in]
 
-[in]
+
 Specifies the key handle of the parent. This parameter should be set to the value used in the call to the <a href="/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-initialize">IStiUSD::Initialize</a> method.
 
-### -param phkeyDeviceData 
+### -param phkeyDeviceData [in, out]
 
-[in, out]
+
 Pointer to a memory location that receives the opened key handle.
 
 ## -returns
@@ -71,3 +73,4 @@ Call this function only in the STI <a href="/windows-hardware/drivers/ddi/stiusd
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-initialize">IStiUSD::Initialize</a>
+

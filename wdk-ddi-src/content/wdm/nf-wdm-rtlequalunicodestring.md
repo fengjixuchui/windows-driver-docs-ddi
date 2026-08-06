@@ -4,7 +4,6 @@ title: RtlEqualUnicodeString function (wdm.h)
 description: The RtlEqualUnicodeString routine compares two Unicode strings to determine whether they are equal.
 old-location: kernel\rtlequalunicodestring.htm
 tech.root: kernel
-ms.assetid: ba50fcac-acb1-43de-aacc-b47845f19f44
 ms.date: 04/30/2018
 keywords: ["RtlEqualUnicodeString function"]
 ms.keywords: RtlEqualUnicodeString, RtlEqualUnicodeString routine [Kernel-Mode Driver Architecture], k109_59d7c507-968a-4cf5-b1f0-91c8cd7ccb64.xml, kernel.rtlequalunicodestring, wdm/RtlEqualUnicodeString
@@ -51,19 +50,19 @@ The <b>RtlEqualUnicodeString</b> routine compares two Unicode strings to determi
 
 ## -parameters
 
-### -param String1 
+### -param String1 [in]
 
-[in]
+
 Pointer to the first Unicode string.
 
-### -param String2 
+### -param String2 [in]
 
-[in]
+
 Pointer to the second Unicode string.
 
-### -param CaseInSensitive 
+### -param CaseInSensitive [in]
 
-[in]
+
 If <b>TRUE</b>, case should be ignored when doing the comparison.
 
 ## -returns

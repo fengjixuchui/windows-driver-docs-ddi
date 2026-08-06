@@ -1,9 +1,8 @@
 ---
 UID: NS:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_BLEND
 title: _DXGK_MULTIPLANE_OVERLAY_BLEND (d3dkmddi.h)
-description: Identifies a blend operation to be performed on an overlay plane.
+description: The DXGK_MULTIPLANE_OVERLAY_BLEND structure identifies a blend operation to be performed on an overlay plane.
 old-location: display\dxgk_multiplane_overlay_blend.htm
-ms.assetid: e489919c-c0a7-4792-9758-ce7b587b13cc
 ms.date: 05/10/2018
 keywords: ["DXGK_MULTIPLANE_OVERLAY_BLEND structure"]
 ms.keywords: DXGK_MULTIPLANE_OVERLAY_BLEND, DXGK_MULTIPLANE_OVERLAY_BLEND structure [Display Devices], _DXGK_MULTIPLANE_OVERLAY_BLEND, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_BLEND, display.dxgk_multiplane_overlay_blend
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmddi.h
 api_name:
+ - _DXGK_MULTIPLANE_OVERLAY_BLEND
  - DXGK_MULTIPLANE_OVERLAY_BLEND
 ---
 

@@ -1,10 +1,9 @@
 ---
 UID: NF:wudfddi_hwaccess.READ_REGISTER_BUFFER_ULONG64
 title: READ_REGISTER_BUFFER_ULONG64 function (wudfddi_hwaccess.h)
-description: The READ_REGISTER_BUFFER_ULONG64 function reads a number of ULONG64 values from the specified register address into a buffer.
+description: The READ_REGISTER_BUFFER_ULONG64 function (wudfddi_hwaccess.h) reads a number of ULONG64 values from the specified register address into a buffer.
 old-location: wdf\read_register_buffer_ulong64.htm
 tech.root: wdf
-ms.assetid: 8961126F-FE54-4369-A929-6CC4BDC67598
 ms.date: 02/26/2018
 keywords: ["READ_REGISTER_BUFFER_ULONG64 function"]
 ms.keywords: READ_REGISTER_BUFFER_ULONG64, READ_REGISTER_BUFFER_ULONG64 function, umdf.read_register_buffer_ulong64, wdf.read_register_buffer_ulong64, wudfddi_hwaccess/READ_REGISTER_BUFFER_ULONG64
@@ -52,24 +51,24 @@ The <b>READ_REGISTER_BUFFER_ULONG64</b> function reads a number of ULONG64 value
 
 ## -parameters
 
-### -param pDevice 
+### -param pDevice [in]
 
-[in]
+
 Specifies a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a> interface for the device object of the device to access.
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the register, which must be a mapped range in memory space.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 A pointer to a buffer into which an array of ULONG64 values is read.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of ULONG64 values to be read into the buffer.
 
 ## -remarks

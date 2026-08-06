@@ -4,7 +4,6 @@ title: USBD_ParseDescriptors function (usbdlib.h)
 description: The USBD_ParseDescriptors routine searches a given configuration descriptor and returns a pointer to the first descriptor that matches the search criteria.
 old-location: buses\usbd_parsedescriptors.htm
 tech.root: usbref
-ms.assetid: d6d90a4a-a67d-4ef3-82b8-7146970e30f3
 ms.date: 05/07/2018
 keywords: ["USBD_ParseDescriptors function"]
 ms.keywords: USBD_ParseDescriptors, USBD_ParseDescriptors routine [Buses], buses.usbd_parsedescriptors, usbdlib/USBD_ParseDescriptors, usbfunc_a66c16e5-451c-4d5b-a621-4c4969200acd.xml
@@ -51,24 +50,24 @@ api_name:
 
 ## -parameters
 
-### -param DescriptorBuffer 
+### -param DescriptorBuffer [in]
 
-[in]
+
 Pointer to a configuration descriptor that contains the descriptor for which to search.
 
-### -param TotalLength 
+### -param TotalLength [in]
 
-[in]
+
 Specifies the size, in bytes, of the buffer pointed to by <i>DescriptorBuffer</i>.
 
-### -param StartPosition 
+### -param StartPosition [in]
 
-[in]
+
 Pointer to the address within the configuration descriptor, provided at <i>DescriptorBuffer</i>, to begin searching from. To search from the beginning of the configuration descriptor, the parameters <i>DescriptorBuffer</i> and <i>StartPosition</i> must be the same address.
 
-### -param DescriptorType 
+### -param DescriptorType [in]
 
-[in]
+
 Specifies the descriptor type code as assigned by USB. The following values are valid for USB-defined descriptor types:
 
 

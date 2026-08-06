@@ -4,7 +4,6 @@ title: IPnpCallback (wudfddi.h)
 description: The IPnpCallback interface is a Plug and Play (PnP) and power management (PM) interface.
 old-location: wdf\ipnpcallback.htm
 tech.root: wdf
-ms.assetid: b6ab28e1-08d5-49ee-931a-8e2fe68bd75e
 ms.date: 02/26/2018
 keywords: ["IPnpCallback interface"]
 ms.keywords: IPnpCallback, IPnpCallback interface, IPnpCallback interface,described, UMDFDeviceObjectRef_1e101e13-802b-4196-a76c-ed4103d6fbe3.xml, umdf.ipnpcallback, wdf.ipnpcallback, wudfddi/IPnpCallback
@@ -52,9 +51,9 @@ The <b>IPnpCallback</b> interface is a Plug and Play (PnP) and power management 
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPnpCallback</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPnpCallback</b> also has these types of members:
+The <b>IPnpCallback</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPnpCallback</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>
 
 ## -remarks

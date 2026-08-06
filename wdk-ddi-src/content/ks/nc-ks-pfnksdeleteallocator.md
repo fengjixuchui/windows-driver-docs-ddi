@@ -4,7 +4,6 @@ title: PFNKSDELETEALLOCATOR (ks.h)
 description: An AVStream minidriver's AVStrMiniDeleteAllocator routine deletes the allocator that is associated with a pin.
 old-location: stream\avstrminideleteallocator.htm
 tech.root: stream
-ms.assetid: 867da1f8-061b-4fc1-8e20-3ebc43300f15
 ms.date: 04/23/2018
 keywords: ["PFNKSDELETEALLOCATOR callback function"]
 ms.keywords: AVStrMiniDeleteAllocator, AVStrMiniDeleteAllocator routine [Streaming Media Devices], PFNKSDELETEALLOCATOR, avstclbk_32e3c0fd-c437-45e0-8e5e-72f2f628ee51.xml, ks/AVStrMiniDeleteAllocator, stream.avstrminideleteallocator
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - AVStrMiniDeleteAllocator
+ - PFNKSDELETEALLOCATOR
 ---
 
 # PFNKSDELETEALLOCATOR callback function
@@ -50,9 +49,9 @@ An AVStream minidriver's <i>AVStrMiniDeleteAllocator</i> routine deletes the all
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to the allocator's context structure created by <a href="/windows-hardware/drivers/ddi/ks/nc-ks-pfnkspininitializeallocator">AVStrMiniInitializeAllocator</a>.
 
 ## -remarks
@@ -74,3 +73,4 @@ For more information, see <a href="/windows-hardware/drivers/stream/ks-allocator
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin_dispatch">KSPIN_DISPATCH</a>
+

@@ -1,10 +1,9 @@
 ---
-UID: NE:ks.__unnamed_enum_35
+UID: NE:ks.KSIRP_REMOVAL_OPERATION
 title: KSIRP_REMOVAL_OPERATION (ks.h)
-description: 
+description: "Learn more about: KSIRP_REMOVAL_OPERATION enumeration"
 old-location: stream\ksirp_removal_operation.htm
 tech.root: stream
-ms.assetid: 10AC7347-6C6B-4A37-9298-B773ADCB3FDA
 ms.date: 04/23/2018
 keywords: ["KSIRP_REMOVAL_OPERATION enumeration"]
 ms.keywords: KSIRP_REMOVAL_OPERATION, KSIRP_REMOVAL_OPERATION enumeration [Streaming Media Devices], KsAcquireAndRemove, KsAcquireAndRemoveOnlySingleItem, KsAcquireOnly, KsAcquireOnlySingleItem, ks/KSIRP_REMOVAL_OPERATION, ks/KsAcquireAndRemove, ks/KsAcquireAndRemoveOnlySingleItem, ks/KsAcquireOnly, ks/KsAcquireOnlySingleItem, stream.ksirp_removal_operation

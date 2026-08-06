@@ -4,7 +4,6 @@ title: _FEATURE_DATA_FIRMWARE_DATE (ntddmmc.h)
 description: The FEATURE_DATA_FIRMWARE_DATE structure holds the date information associated with the Firmware Information feature.
 old-location: storage\feature_data_firmware_date.htm
 tech.root: storage
-ms.assetid: 1f6c6a37-9510-47bc-b507-b3fd7477b432
 ms.date: 03/29/2018
 keywords: ["FEATURE_DATA_FIRMWARE_DATE structure"]
 ms.keywords: "*PFEATURE_DATA_FIRMWARE_DATE, FEATURE_DATA_FIRMWARE_DATE, FEATURE_DATA_FIRMWARE_DATE structure [Storage Devices], PFEATURE_DATA_FIRMWARE_DATE, PFEATURE_DATA_FIRMWARE_DATE structure pointer [Storage Devices], _FEATURE_DATA_FIRMWARE_DATE, ntddmmc/FEATURE_DATA_FIRMWARE_DATE, ntddmmc/PFEATURE_DATA_FIRMWARE_DATE, storage.feature_data_firmware_date, structs-CD-ROM_5e7edafb-823d-4e78-a601-a8f29c62ee4e.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddmmc.h
 api_name:
+ - _FEATURE_DATA_FIRMWARE_DATE
+ - PFEATURE_DATA_FIRMWARE_DATE
  - FEATURE_DATA_FIRMWARE_DATE
 ---
 
@@ -93,3 +94,4 @@ The structure holds the date information associated with the feature named "Firm
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntddmmc/ns-ntddmmc-_feature_header">FEATURE_HEADER</a>
+

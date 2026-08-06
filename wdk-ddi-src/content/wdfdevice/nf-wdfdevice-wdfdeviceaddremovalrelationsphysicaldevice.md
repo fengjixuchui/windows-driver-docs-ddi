@@ -4,7 +4,6 @@ title: WdfDeviceAddRemovalRelationsPhysicalDevice function (wdfdevice.h)
 description: The WdfDeviceAddRemovalRelationsPhysicalDevice method indicates that a specified device must be removed when another specified device is removed.
 old-location: wdf\wdfdeviceaddremovalrelationsphysicaldevice.htm
 tech.root: wdf
-ms.assetid: 4638905f-cefb-4bf0-aa00-64f2f096dc22
 ms.date: 02/26/2018
 keywords: ["WdfDeviceAddRemovalRelationsPhysicalDevice function"]
 ms.keywords: DFDeviceObjectGeneralRef_5e16c670-eb46-4c83-88e0-32eb41aeeac3.xml, WdfDeviceAddRemovalRelationsPhysicalDevice, WdfDeviceAddRemovalRelationsPhysicalDevice method, kmdf.wdfdeviceaddremovalrelationsphysicaldevice, wdf.wdfdeviceaddremovalrelationsphysicaldevice, wdfdevice/WdfDeviceAddRemovalRelationsPhysicalDevice
@@ -53,14 +52,14 @@ The <b>WdfDeviceAddRemovalRelationsPhysicalDevice</b> method indicates that a sp
 
 ## -parameters
 
-### -param Device
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param PhysicalDevice
+### -param PhysicalDevice [in]
 
-[in]
+
 A pointer to a caller-supplied <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure that represents a physical device object (PDO).
 
 ## -returns

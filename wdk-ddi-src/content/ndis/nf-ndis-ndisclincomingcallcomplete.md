@@ -4,7 +4,6 @@ title: NdisClIncomingCallComplete function (ndis.h)
 description: NdisClIncomingCallComplete returns a client's acceptance or rejection of an offered incoming call, for which the client's ProtocolClIncomingCall function previously returned NDIS_STATUS_PENDING.
 old-location: netvista\ndisclincomingcallcomplete.htm
 tech.root: netvista
-ms.assetid: b3931dd7-319e-4ef8-9812-6dc3f2e41b2c
 ms.date: 05/02/2018
 keywords: ["NdisClIncomingCallComplete function"]
 ms.keywords: NdisClIncomingCallComplete, NdisClIncomingCallComplete function [Network Drivers Starting with Windows Vista], condis_client_ref_93263dd6-f55a-4923-8173-b3617f40353a.xml, ndis/NdisClIncomingCallComplete, netvista.ndisclincomingcallcomplete
@@ -54,25 +53,25 @@ api_name:
 
 ## -parameters
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 Is set to NDIS_STATUS_SUCCESS if the client accepts the offered call. Otherwise, this parameter
      can be set to any NDIS_STATUS_<i>XXX</i> except NDIS_STATUS_PENDING to indicate the client-determined reason for rejecting the
      call.
 
-### -param NdisVcHandle 
+### -param NdisVcHandle [in]
 
-[in]
+
 Specifies the handle to the VC that was created by the call manager to represent the incoming
      call. The client obtained this handle from it per-VC state designated by the 
      <i>ProtocolVcContext</i> passed as an input parameter to its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cl_incoming_call">
      ProtocolClIncomingCall</a> function.
 
-### -param CallParameters 
+### -param CallParameters [in]
 
-[in]
+
 Pointer to a structure of type 
      <a href="/previous-versions/windows/hardware/network/ff545384(v=vs.85)">CO_CALL_PARAMETERS</a>, specifying the call
      parameters for the incoming call.

@@ -1,17 +1,16 @@
 ---
 UID: NS:storport._STOR_DEVICE_CAPABILITIES_EX
 title: _STOR_DEVICE_CAPABILITIES_EX (storport.h)
-description: The STOR_DEVICE_CAPABILITIES_EX structure reports device capabilities to the Storport driver in response to a capabilities query in a SCSI request block (SRB) with a function of SRB_FUNCTION_PNP.
+description: The _STOR_DEVICE_CAPABILITIES_EX structure (storport.h) contains extended device capabilities information relevant to storage devices.
 old-location: storage\stor_device_capabilities_ex.htm
 tech.root: storage
-ms.assetid: 6DCD1F8A-45E3-4084-9688-AE59597D65AF
 ms.date: 03/29/2018
 keywords: ["STOR_DEVICE_CAPABILITIES_EX structure"]
 ms.keywords: "*PSTOR_DEVICE_CAPABILITIES_EX, PSTOR_DEVICE_CAPABILITIES_EX, PSTOR_DEVICE_CAPABILITIES_EX structure pointer [Storage Devices], STOR_DEVICE_CAPABILITIES_EX, STOR_DEVICE_CAPABILITIES_EX structure [Storage Devices], _STOR_DEVICE_CAPABILITIES_EX, storage.stor_device_capabilities_ex, storport/PSTOR_DEVICE_CAPABILITIES_EX, storport/STOR_DEVICE_CAPABILITIES_EX"
 req.header: storport.h
 req.include-header: Storport.h, Minitape.h, Srb.h
 req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,10 +41,13 @@ api_type:
 api_location:
  - storport.h
 api_name:
+ - _STOR_DEVICE_CAPABILITIES_EX
+ - PSTOR_DEVICE_CAPABILITIES_EX
  - STOR_DEVICE_CAPABILITIES_EX
 ---
 
 # _STOR_DEVICE_CAPABILITIES_EX structure (storport.h)
+
 
 ## -description
 
@@ -146,3 +148,4 @@ The eject, removal, and install characteristics for the device are set in the **
 [**SCSI_PNP_REQUEST_BLOCK**](ns-storport-_scsi_pnp_request_block.md)
 
 [**StorPortInitialize**](nf-storport-storportinitialize.md)
+

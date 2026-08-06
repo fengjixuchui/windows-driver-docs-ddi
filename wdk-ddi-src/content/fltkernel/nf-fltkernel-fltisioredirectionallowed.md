@@ -4,7 +4,6 @@ title: FltIsIoRedirectionAllowed function (fltkernel.h)
 description: The FltIsIoRedirectionAllowed routine determines whether I/O can be redirected from the specified source filter instance to another specified filter instance.
 old-location: ifsk\fltisioredirectionallowed.htm
 tech.root: ifsk
-ms.assetid: 79a59e86-9ee2-4cfa-b495-5248f227d24b
 ms.date: 04/16/2018
 keywords: ["FltIsIoRedirectionAllowed function"]
 ms.keywords: FltIsIoRedirectionAllowed, FltIsIoRedirectionAllowed routine [Installable File System Drivers], fltkernel/FltIsIoRedirectionAllowed, ifsk.fltisioredirectionallowed
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,19 +49,19 @@ The <b>FltIsIoRedirectionAllowed</b> routine determines whether I/O can be redir
 
 ## -parameters
 
-### -param SourceInstance 
+### -param SourceInstance [in]
 
-[in]
+
 The filter instance on the source device stack.
 
-### -param TargetInstance 
+### -param TargetInstance [in]
 
-[in]
+
 The filter instance on the target device stack.
 
-### -param RedirectionAllowed 
+### -param RedirectionAllowed [out]
 
-[out]
+
 A value of <b>TRUE</b> if all I/O to the source device stack can be redirected to the target device stack by changing the filter instance referenced, otherwise <b>FALSE</b>.
 
 ## -returns

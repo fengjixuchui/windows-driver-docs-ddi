@@ -4,8 +4,8 @@ title: _FILE_NETWORK_OPEN_INFORMATION (wdm.h)
 description: The FILE_NETWORK_OPEN_INFORMATION structure is used as an argument to ZwQueryInformationFile.
 old-location: kernel\file_network_open_information.htm
 tech.root: kernel
-ms.assetid: 742fa221-70c8-410a-a582-aedf28872ada
 ms.date: 04/30/2018
+author: lorihollasch
 keywords: ["FILE_NETWORK_OPEN_INFORMATION structure"]
 ms.keywords: "*PFILE_NETWORK_OPEN_INFORMATION, FILE_NETWORK_OPEN_INFORMATION, FILE_NETWORK_OPEN_INFORMATION structure [Kernel-Mode Driver Architecture], PFILE_NETWORK_OPEN_INFORMATION, PFILE_NETWORK_OPEN_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _FILE_NETWORK_OPEN_INFORMATION, kernel.file_network_open_information, kstruct_b_761510b6-751c-457d-a516-cce0d9fa3027.xml, wdm/FILE_NETWORK_OPEN_INFORMATION, wdm/PFILE_NETWORK_OPEN_INFORMATION"
 req.header: wdm.h
@@ -42,6 +42,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _FILE_NETWORK_OPEN_INFORMATION
+ - PFILE_NETWORK_OPEN_INFORMATION
  - FILE_NETWORK_OPEN_INFORMATION
 ---
 
@@ -64,7 +66,7 @@ Specifies the time that the file was last accessed.
 
 ### -field LastWriteTime
 
-Specifies he time that the file was last written to.
+Specifies the time that the file was last written to.
 
 ### -field ChangeTime
 
@@ -93,3 +95,4 @@ This structure must be aligned on a LONGLONG (8-byte) boundary.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryinformationfile">ZwQueryInformationFile</a>
+

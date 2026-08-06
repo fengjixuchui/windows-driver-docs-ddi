@@ -3,17 +3,16 @@ UID: NE:netadapter._NET_ADAPTER_AUTO_NEGOTIATION_FLAGS
 title: _NET_ADAPTER_AUTO_NEGOTIATION_FLAGS (netadapter.h)
 description: Specifies the auto-negotiation settings for the NIC driver.
 tech.root: netvista
-ms.assetid: b7ae57e6-d3ce-409f-a737-ca303d1a58b1
-ms.date: 09/27/2019
+ms.date: 03/30/2022
 keywords: ["NET_ADAPTER_AUTO_NEGOTIATION_FLAGS enumeration"]
 ms.keywords: _NET_ADAPTER_AUTO_NEGOTIATION_FLAGS, NET_ADAPTER_AUTO_NEGOTIATION_FLAGS,
 req.header: netadapter.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: 
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.21
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.ddi-compliance: 
 req.max-support: 
 req.alt-api: 
@@ -32,6 +31,7 @@ api_type:
 api_location:
  - netadapter.h
 api_name:
+ - _NET_ADAPTER_AUTO_NEGOTIATION_FLAGS
  - NET_ADAPTER_AUTO_NEGOTIATION_FLAGS
 ---
 
@@ -44,23 +44,23 @@ Specifies the auto-negotiation settings for the NIC driver.
 
 ## -enum-fields
 
-### -field NetAdapterAutoNegotiationFlagNone : 
+### -field NetAdapterAutoNegotiationFlagNone:0x00000000
 
 No flags are set.
 
-### -field NetAdapterAutoNegotiationFlagXmitLinkSpeedAutoNegotiated : 
+### -field NetAdapterAutoNegotiationFlagXmitLinkSpeedAutoNegotiated:0x00000001
 
 The adapter has auto-negotiated the transmit link speed with the link partner.
 
-### -field NetAdapterAutoNegotiationFlagRcvLinkSpeedautoNegotiated : 
+### -field NetAdapterAutoNegotiationFlagRcvLinkSpeedautoNegotiated:0x00000002
 
 The adapter has auto-negotiated the receive link speed with the link partner.
 
-### -field NetAdapterAutoNegotiationFlagDuplexAutoNegotiated : 
+### -field NetAdapterAutoNegotiationFlagDuplexAutoNegotiated:0x00000004 
 
 The adapter has auto-negotiated the duplex state with the link partner.
 
-### -field NetAdapterAutoNegotiationFlagPauseFunctionsAutoNegotiated : 
+### -field NetAdapterAutoNegotiationFlagPauseFunctionsAutoNegotiated:0x00000008 
 
 The adapter has auto-negotiated the pause functions with the link partner.
 

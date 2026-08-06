@@ -3,17 +3,16 @@ UID: NS:netadapter._NET_ADAPTER_WAKE_BITMAP_CAPABILITIES
 title: NET_ADAPTER_WAKE_BITMAP_CAPABILITIES (netadapter.h)
 description: The NET_ADAPTER_WAKE_BITMAP_CAPABILITIES structure describes a net adapter's wake on LAN (WoL) capabilities for waking from a bitmap pattern.
 tech.root: netvista
-ms.assetid: 0d68d5a2-5d25-4f33-96b5-57774a6f441e
 ms.date: 10/24/2019
 keywords: ["NET_ADAPTER_WAKE_BITMAP_CAPABILITIES structure"]
 ms.keywords: NET_ADAPTER_WAKE_BITMAP_CAPABILITIES, NET_ADAPTER_WAKE_BITMAP_CAPABILITIES,
 req.header: netadapter.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: 
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - netadapter.h
 api_name:
+ - _NET_ADAPTER_WAKE_BITMAP_CAPABILITIES
  - NET_ADAPTER_WAKE_BITMAP_CAPABILITIES
-product:
- - Windows
 ---
 
 # NET_ADAPTER_WAKE_BITMAP_CAPABILITIES structure
@@ -77,3 +75,4 @@ Call [**NET_ADAPTER_WAKE_BITMAP_CAPABILITIES_INIT**](../netadapter/nf-netadapter
 [**NetAdapterWakeSetBitmapCapabilities**](../netadapter/nf-netadapter-netadapterwakesetbitmapcapabilities.md)
 
 [**NetAdapterStart**](../netadapter/nf-netadapter-netadapterstart.md)
+

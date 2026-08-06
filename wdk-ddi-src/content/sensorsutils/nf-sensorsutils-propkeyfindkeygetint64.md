@@ -1,8 +1,7 @@
 ---
 UID: NF:sensorsutils.PropKeyFindKeyGetInt64
 title: PropKeyFindKeyGetInt64 function (sensorsutils.h)
-description: This routine gets a INT64 value from a PROPVARIANT within a collection list based on the PROPERTYKEY.
-ms.assetid: 61811522-9d31-4246-8cdd-71be1a8ff43e
+description: This routine gets an INT64 value from a PROPVARIANT within a collection list based on the PROPERTYKEY.
 ms.date: 08/08/2018
 keywords: ["PropKeyFindKeyGetInt64 function"]
 tech.root: sensors
@@ -37,8 +36,6 @@ api_location:
  - sensorsutils.h
 api_name:
  - PropKeyFindKeyGetInt64
-product:
- - Windows
 ---
 
 # PropKeyFindKeyGetInt64 function
@@ -46,21 +43,21 @@ product:
 
 ## -description
 
-This routine gets a INT64 value from a PROPVARIANT within a collection list based on the PROPERTYKEY.
+This routine gets an INT64 value from a PROPVARIANT within a collection list based on the PROPERTYKEY.
 
 ## -parameters
 
-### -param pList
+### -param pList [in]
 
-[in] Pointer to the list of PROPVARIANT collection.
+Pointer to the list of PROPVARIANT collection.
 
-### -param pKey
+### -param pKey [in]
 
-[in] Pointer to a PROPERTYKEY for the target PROPVARIANT.
+Pointer to a PROPERTYKEY for the target PROPVARIANT.
 
-### -param pRetValue
+### -param pRetValue [out]
 
-[out] Pointer to the output buffer.
+Pointer to the output buffer.
 
 ## -returns
 

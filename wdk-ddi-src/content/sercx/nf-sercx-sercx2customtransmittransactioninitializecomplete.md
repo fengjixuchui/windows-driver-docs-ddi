@@ -4,7 +4,6 @@ title: SerCx2CustomTransmitTransactionInitializeComplete function (sercx.h)
 description: The SerCx2CustomTransmitTransactionInitializeComplete method informs version 2 of the serial framework extension (SerCx2) that the serial driver has finished initializing the serial controller and associated hardware in preparation for a new custom-transmit transaction.
 old-location: serports\sercx2customtransmittransactioninitializecomplete.htm
 tech.root: serports
-ms.assetid: 5C2BF433-11C0-425A-B14A-7A0275F7DF51
 ms.date: 04/23/2018
 keywords: ["SerCx2CustomTransmitTransactionInitializeComplete function"]
 ms.keywords: 2/SerCx2CustomTransmitTransactionInitializeComplete, SerCx2CustomTransmitTransactionInitializeComplete, SerCx2CustomTransmitTransactionInitializeComplete method [Serial Ports], serports.sercx2customtransmittransactioninitializecomplete
@@ -50,14 +49,14 @@ The <b>SerCx2CustomTransmitTransactionInitializeComplete</b> method informs vers
 
 ## -parameters
 
-### -param CustomTransmitTransaction 
+### -param CustomTransmitTransaction [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2CUSTOMTRANSMITTRANSACTION</a> handle to a custom-transmit object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customtransmittransactioncreate">SerCx2CustomTransmitTransactionCreate</a> method to create this object.
 
-### -param InitSuccess 
+### -param InitSuccess [in]
 
-[in]
+
 Whether the initialization was successful. If <b>TRUE</b>, the initialization succeeded. If <b>FALSE</b>, the initialization failed.
 
 ## -remarks

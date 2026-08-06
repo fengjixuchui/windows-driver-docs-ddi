@@ -3,7 +3,6 @@ UID: NE:wditypes._WDI_OS_POWER_MANAGEMENT_FLAGS
 title: _WDI_OS_POWER_MANAGEMENT_FLAGS (wditypes.h)
 description: The WDI_OS_POWER_MANAGEMENT_FLAGS enumeration defines supported enablement scenarios of the NIC Auto Power Saver (NAPS) OS power management feature.
 tech.root: netvista
-ms.assetid: 5caa9b1f-cafa-42d0-8402-86799fd8885f
 ms.date: 03/30/2018
 keywords: ["WDI_OS_POWER_MANAGEMENT_FLAGS enumeration"]
 ms.keywords: _WDI_OS_POWER_MANAGEMENT_FLAGS, WDI_OS_POWER_MANAGEMENT_FLAGS,
@@ -31,12 +30,16 @@ api_location:
  - wditypes.hpp
 api_name:
  - _WDI_OS_POWER_MANAGEMENT_FLAGS
+ - WDI_OS_POWER_MANAGEMENT_FLAGS
 ---
 
 # _WDI_OS_POWER_MANAGEMENT_FLAGS enumeration
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The **WDI_OS_POWER_MANAGEMENT_FLAGS** enumeration defines supported enablement scenarios of the NIC Auto Power Saver (NAPS) OS power management feature.
 
@@ -59,3 +62,4 @@ Enable NAPS mode for screen on *S0* system power state (if supported by hardware
 This enumeration is used as the value type in [WDI_TLV_OS_POWER_MANAGEMENT_FEATURES](/windows-hardware/drivers/network/wdi-tlv-os-power-management-features).
 
 ## -see-also
+

@@ -1,13 +1,10 @@
 ---
 UID: NS:d3d12umddi.D3D12DDI_VIDEO_MOTION_ESTIMATOR_DATA_0060
 title: D3D12DDI_VIDEO_MOTION_ESTIMATOR_DATA_0060
-description: The video capability check for motion estimation.
+description: The D3D12DDI_VIDEO_MOTION_ESTIMATOR_DATA_0060 structure contains motion estimation data used for a video capability check.
 tech.root: display
-ms.assetid: e7494c78-bd0b-4da1-bf73-c88519454686
 ms.date: 04/04/2019
 keywords: ["D3D12DDI_VIDEO_MOTION_ESTIMATOR_DATA_0060 structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: D3D12DDI_VIDEO_MOTION_ESTIMATOR_DATA_0060, D3D12DDI_VIDEO_MOTION_ESTIMATOR_DATA_0060,
 req.header: d3d12umddi.h
 req.include-header: 
@@ -35,8 +32,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - D3D12DDI_VIDEO_MOTION_ESTIMATOR_DATA_0060
-product:
- - Windows
 dev_langs:
  - c++
 ---

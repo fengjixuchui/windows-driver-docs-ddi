@@ -2,7 +2,6 @@
 UID: NS:dispmprt._DXGK_DSI_PACKET
 title: DXGK_DSI_PACKET
 ms.date: 03/24/2020
-ms.topic: language-reference
 targetos: Windows
 description: An OEM panel driver uses DXGK_DSI_PACKET structures to transmit Digital Serial Interface (DSI) packets to the bus driver (graphics kernel).
 tech.root: display
@@ -29,6 +28,7 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGK_DSI_PACKET
+ - PDXGK_DSI_PACKET
  - DXGK_DSI_PACKET
 f1_keywords:
  - _DXGK_DSI_PACKET

@@ -4,7 +4,6 @@ title: ConfigurePortUI function (winsplp.h)
 description: A port monitor UI DLL's ConfigurePortUI function obtains port configuration information from the user and sends it to the port monitor server DLL.
 old-location: print\configureportui.htm
 tech.root: print
-ms.assetid: fef58485-db4e-4bad-a21b-376e8d83f243
 ms.date: 02/02/2018
 keywords: ["ConfigurePortUI function"]
 ms.keywords: pfnConfigurePortUI function [Print Devices], winsplp/pfnConfigurePortUI, ConfigurePortUI, print.configureportui, spoolfnc_5b799b7f-667a-4c5a-855e-554daa2695ea.xml, pfnConfigurePortUI
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: NOTIFICATION_CONFIG_FLAGS
-req.product: Windows 10 or later.
 f1_keywords:
  - ConfigurePortUI
  - winsplp/ConfigurePortUI
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - winsplp.h
 api_name:
- - pfnConfigurePortUI
+ - ConfigurePortUI
 ---
 
 # ConfigurePortUI function
@@ -51,19 +49,19 @@ A port monitor UI DLL's <b>ConfigurePortUI</b> function obtains port configurati
 
 ## -parameters
 
-### -param pszServer 
+### -param pszServer [in, optional]
 
-[in, optional]
+
 Caller-supplied pointer to a string representing a server name, or <b>NULL</b> if the printer is local. (The port monitor can ignore this parameter.)
 
-### -param hWnd 
+### -param hWnd [in]
 
-[in]
+
 Caller-supplied handle of the window that should be used as the parent for dialog boxes. If <b>NULL</b>, no dialog boxes should be displayed.
 
-### -param pszPortName 
+### -param pszPortName [in]
 
-[in]
+
 Caller-supplied pointer to a string representing the name of the port to be configured.
 
 ## -returns
@@ -131,3 +129,4 @@ Call ClosePrinter, specifying the handle received from OpenPrinter. This causes 
 
 
 <a href="/previous-versions/ff564255(v=vs.85)">XcvData</a>
+

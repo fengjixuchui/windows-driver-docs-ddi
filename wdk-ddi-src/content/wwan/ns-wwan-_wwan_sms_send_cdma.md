@@ -4,7 +4,6 @@ title: _WWAN_SMS_SEND_CDMA (wwan.h)
 description: The WWAN_SMS_SEND_CDMA structure represents a CDMA-based SMS text message to send.
 old-location: netvista\wwan_sms_send_cdma.htm
 tech.root: netvista
-ms.assetid: e05b7391-7852-45c7-aed0-36c95b4e475b
 ms.date: 05/02/2018
 keywords: ["WWAN_SMS_SEND_CDMA structure"]
 ms.keywords: "*PWWAN_SMS_SEND_CDMA, PWWAN_SMS_SEND_CDMA, PWWAN_SMS_SEND_CDMA structure pointer [Network Drivers Starting with Windows Vista], WWAN_SMS_SEND_CDMA, WWAN_SMS_SEND_CDMA structure [Network Drivers Starting with Windows Vista], WwanRef_0b4ec978-8685-46a6-b1dd-556606660614.xml, _WWAN_SMS_SEND_CDMA, netvista.wwan_sms_send_cdma, wwan/PWWAN_SMS_SEND_CDMA, wwan/WWAN_SMS_SEND_CDMA"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_SMS_SEND_CDMA
+ - PWWAN_SMS_SEND_CDMA
  - WWAN_SMS_SEND_CDMA
 ---
 
@@ -70,17 +71,9 @@ The language used in CDMA message. This is an indicator of the language used in 
 A NULL-terminated string with a maximum length of 15 digits that represents a mobile number. The
      number can be in any of the following formats:
      
+* "+ \0"
+* "\0"
 
-<ul>
-<li>
-"+ <International Country Code> <Mobile Number>\0"
-
-</li>
-<li>
-"<Mobile Number>\0"
-
-</li>
-</ul>
 If 
      <b>MsgStatus</b> is 
      <i>WwanMsgStatusDraft</i> or 
@@ -120,3 +113,4 @@ The encoded content that represents the CDMA-based SMS text message.
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_sms_send">WWAN_SMS_SEND</a>
+

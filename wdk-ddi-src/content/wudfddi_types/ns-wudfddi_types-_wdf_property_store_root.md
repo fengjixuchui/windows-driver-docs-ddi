@@ -4,7 +4,6 @@ title: _WDF_PROPERTY_STORE_ROOT (wudfddi_types.h)
 description: The WDF_PROPERTY_STORE_ROOT structure contains information that identifies a UMDF property store.
 old-location: wdf\wdf_property_store_root.htm
 tech.root: wdf
-ms.assetid: 431ae991-35e0-4cf7-a3e0-57591abfe5c5
 ms.date: 02/26/2018
 keywords: ["WDF_PROPERTY_STORE_ROOT structure"]
 ms.keywords: "*PWDF_PROPERTY_STORE_ROOT, PWDF_PROPERTY_STORE_ROOT, PWDF_PROPERTY_STORE_ROOT structure pointer, WDF_PROPERTY_STORE_ROOT, WDF_PROPERTY_STORE_ROOT structure, _WDF_PROPERTY_STORE_ROOT, umdf.wdf_property_store_root, umdfstructs_7024c360-9ab7-4eea-ba66-c45c5912dfaa.xml, wdf.wdf_property_store_root, wudfddi_types/PWDF_PROPERTY_STORE_ROOT, wudfddi_types/WDF_PROPERTY_STORE_ROOT"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wudfddi_types.h
 api_name:
+ - _WDF_PROPERTY_STORE_ROOT
+ - PWDF_PROPERTY_STORE_ROOT
  - WDF_PROPERTY_STORE_ROOT
 ---
 
@@ -183,3 +184,4 @@ For more information about these registry keys, see <a href="/windows-hardware/d
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfpropertystorefactory-retrievedevicepropertystore">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a>
+

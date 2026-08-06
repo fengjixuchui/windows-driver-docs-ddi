@@ -4,7 +4,6 @@ title: KeReleaseInterruptSpinLock function (wdm.h)
 description: The KeReleaseInterruptSpinLock routine releases an interrupt spin lock acquired by KeAcquireInterruptSpinLock.
 old-location: kernel\kereleaseinterruptspinlock.htm
 tech.root: kernel
-ms.assetid: 291442df-21e1-4acf-a107-0a18f28e30ad
 ms.date: 04/30/2018
 keywords: ["KeReleaseInterruptSpinLock function"]
 ms.keywords: KeReleaseInterruptSpinLock, KeReleaseInterruptSpinLock routine [Kernel-Mode Driver Architecture], k105_673f3ed1-bb95-413b-b56b-e9fdea636e8f.xml, kernel.kereleaseinterruptspinlock, wdm/KeReleaseInterruptSpinLock
@@ -50,14 +49,14 @@ The <b>KeReleaseInterruptSpinLock</b> routine releases an interrupt spin lock ac
 
 ## -parameters
 
-### -param Interrupt 
+### -param Interrupt [in, out]
 
-[in, out]
+
 Specifies the value of the <i>Interrupt</i> parameter passed to <a href="/previous-versions/windows/hardware/drivers/ff551914(v=vs.85)">KeAcquireInterruptSpinLock</a>.
 
-### -param OldIrql 
+### -param OldIrql [in]
 
-[in]
+
 Specifies the IRQL value returned by <b>KeAcquireInterruptSpinLock</b>.
 
 ## -remarks

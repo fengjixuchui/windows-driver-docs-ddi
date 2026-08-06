@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d10umddi.PFND3D10DDI_CREATERESOURCE
 title: PFND3D10DDI_CREATERESOURCE (d3d10umddi.h)
-description: Creates a resource.
+description: The PFND3D10DDI_CREATERESOURCE callback function creates a user-mode display driver resource.
 old-location: display\createresource_d3d10_.htm
-ms.assetid: c21839f0-8302-49f9-a2b4-4009fbd2d88c
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_CREATERESOURCE callback function"]
 ms.keywords: CreateResource, CreateResource callback function [Display Devices], PFND3D10DDI_CREATERESOURCE, PFND3D10DDI_CREATERESOURCE callback, UserModeDisplayDriverDx10_Functions_8cad56f3-3374-45ac-8934-60802fea0764.xml, d3d10umddi/CreateResource, display.createresource_d3d10_
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CreateResource
-product:
- - Windows
+ - PFND3D10DDI_CREATERESOURCE
 ---
 
 # PFND3D10DDI_CREATERESOURCE callback function
@@ -52,25 +49,25 @@ Creates a resource.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCreateResource* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddiarg_createresource">D3D10DDIARG_CREATERESOURCE</a> structure that describes the parameters that the user-mode display driver uses to create a resource.
 
-### -param Arg3
+### -param unnamedParam3
 
 *hResource* [in]
 
 A handle to the driver's private data for the resource.
 
-### -param Arg4
+### -param unnamedParam4
 
 *hRTResource* [in]
 
@@ -123,3 +120,4 @@ Additionally, to support stereo presentation, the <a href="/windows-hardware/dri
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

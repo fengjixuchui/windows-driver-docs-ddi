@@ -4,7 +4,6 @@ title: IDebugClient5::GetOutputCallbacksWide (dbgeng.h)
 description: The GetOutputCallbacksWide method returns the output callbacks object registered with the client.
 old-location: debugger\getoutputcallbackswide.htm
 tech.root: debugger
-ms.assetid: b93f756b-50b1-450f-8d70-5d1633b61fcf
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::GetOutputCallbacksWide"]
 ms.keywords: GetOutputCallbacksWide, GetOutputCallbacksWide method [Windows Debugging], GetOutputCallbacksWide method [Windows Debugging],IDebugClient5 interface, IDebugClient5 interface [Windows Debugging],GetOutputCallbacksWide method, IDebugClient5.GetOutputCallbacksWide, IDebugClient5::GetOutputCallbacksWide, dbgeng/IDebugClient5::GetOutputCallbacksWide, debugger.getoutputcallbackswide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient5.GetOutputCallbacksWide
+ - IDebugClient5::GetOutputCallbacksWide
 ---
 
 # IDebugClient5::GetOutputCallbacksWide
@@ -50,9 +49,9 @@ The <b>GetOutputCallbacksWide</b> method returns the <a href="/windows-hardware/
 
 ## -parameters
 
-### -param Callbacks 
+### -param Callbacks [out]
 
-[out]
+
 Receives an interface pointer to the <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugoutputcallbacks">IDebugOutputCallbacks</a> object registered with the client.
 
 ## -returns
@@ -98,3 +97,4 @@ For more information about callbacks, see <a href="/windows-hardware/drivers/deb
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-setoutputcallbacks">SetOutputCallbacks</a>
+

@@ -4,7 +4,6 @@ title: IoRemoveLinkShareAccess function (wdm.h)
 description: The IoRemoveLinkShareAccess routine removes the access and link share-access information for a given open instance of a file object.
 old-location: kernel\ioremovelinkshareaccess.htm
 tech.root: kernel
-ms.assetid: FFCD4705-4E5D-4D4E-9E6D-D06A7D21DC17
 ms.date: 04/30/2018
 keywords: ["IoRemoveLinkShareAccess function"]
 ms.keywords: IoRemoveLinkShareAccess, IoRemoveLinkShareAccess function [Kernel-Mode Driver Architecture], kernel.ioremovelinkshareaccess, wdm/IoRemoveLinkShareAccess
@@ -51,19 +50,19 @@ The <b>IoRemoveLinkShareAccess</b> routine removes the access and link share-acc
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to the file object, which usually is being closed by the current thread.
 
-### -param ShareAccess 
+### -param ShareAccess [in, out]
 
-[in, out]
+
 A pointer to the common share-access data structure that is associated with <i>FileObject</i>. Drivers should treat this structure as opaque.
 
-### -param LinkShareAccess 
+### -param LinkShareAccess [in, out, optional]
 
-[in, out, optional]
+
 A pointer to the common link share-access data structure (<a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_link_share_access">LINK_SHARE_ACCESS</a>) that is associated with <i>FileObject</i>. Drivers should treat this structure as opaque.
 
 ## -remarks

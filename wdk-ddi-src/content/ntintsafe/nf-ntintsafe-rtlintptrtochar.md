@@ -4,7 +4,6 @@ title: RtlIntPtrToChar function (ntintsafe.h)
 description: Converts a value of type INT_PTR to a value of type CHAR.
 old-location: kernel\rtlintptrtochar.htm
 tech.root: kernel
-ms.assetid: 96FC52D7-E383-451A-BB30-9C677F254DE2
 ms.date: 04/30/2018
 keywords: ["RtlIntPtrToChar function"]
 ms.keywords: RtlIntPtrToChar, RtlIntPtrToChar function [Kernel-Mode Driver Architecture], kernel.rtlintptrtochar, ntintsafe/RtlIntPtrToChar
@@ -50,14 +49,14 @@ Converts a value of type <b>INT_PTR</b> to a value of type <b>CHAR</b>.
 
 ## -parameters
 
-### -param iOperand 
+### -param iOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pch 
+### -param pch [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

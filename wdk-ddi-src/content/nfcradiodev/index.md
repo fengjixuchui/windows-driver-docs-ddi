@@ -1,17 +1,17 @@
 ---
+description: "Learn more about: Nfcradiodev.h header"
 UID: NA:nfcradiodev
 title: Nfcradiodev.h header
 ms.assetid: a2e40268-54ff-3618-9467-4f9e48215b04
 ms.date: 05/09/2018
 keywords: ["Nfcradiodev.h header"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 tech.root: nfpdrivers
 f1_keywords:
  - nfcradiodev
  - nfcradiodev/nfcradiodev
+api_name:
+ - nfcradiodev
 ---
 
 # Nfcradiodev.h header

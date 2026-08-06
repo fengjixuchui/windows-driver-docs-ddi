@@ -1,9 +1,8 @@
 ---
 UID: NC:d3dkmthk.PFND3DKMT_OFFERALLOCATIONS
 title: PFND3DKMT_OFFERALLOCATIONS (d3dkmthk.h)
-description: Offers video memory allocations for reuse.
+description: The PFND3DKMT_OFFERALLOCATIONS callback offers video memory allocations for reuse. The function returns STATUS_SUCCESS if allocations were successfully offered.
 old-location: display\d3dkmtofferallocations.htm
-ms.assetid: 3cc84381-fa1e-4c6c-bb5b-459a93676cfd
 ms.date: 05/10/2018
 keywords: ["PFND3DKMT_OFFERALLOCATIONS callback function"]
 ms.keywords: D3DKMTOfferAllocations, D3DKMTOfferAllocations callback function [Display Devices], PFND3DKMT_OFFERALLOCATIONS, PFND3DKMT_OFFERALLOCATIONS callback, d3dkmthk/D3DKMTOfferAllocations, display.d3dkmtofferallocations
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
- - D3DKMTOfferAllocations
+ - PFND3DKMT_OFFERALLOCATIONS
 ---
 
 # PFND3DKMT_OFFERALLOCATIONS callback function
@@ -50,11 +49,11 @@ Offers video memory allocations for reuse.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in]
 
 *pData* 
 
-[in] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_offerallocations">D3DKMT_OFFERALLOCATIONS</a> structure that defines memory allocations that the driver offers for reuse.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_offerallocations">D3DKMT_OFFERALLOCATIONS</a> structure that defines memory allocations that the driver offers for reuse.
 
 ## -returns
 
@@ -73,3 +72,4 @@ Returns one of the following values:
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_offerallocations">D3DKMT_OFFERALLOCATIONS</a>
+

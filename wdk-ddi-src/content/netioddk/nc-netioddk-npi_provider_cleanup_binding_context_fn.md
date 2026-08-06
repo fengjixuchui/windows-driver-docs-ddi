@@ -4,7 +4,6 @@ title: NPI_PROVIDER_CLEANUP_BINDING_CONTEXT_FN (netioddk.h)
 description: A provider module's ProviderCleanupBindingContext callback function performs any necessary cleanup and deallocation of the provider module's binding context after the provider module and a client module have detached from one another.
 old-location: netvista\providercleanupbindingcontext.htm
 tech.root: netvista
-ms.assetid: 0af476f6-0113-4aeb-b7d6-8e0e64a89bd0
 ms.date: 05/02/2018
 keywords: ["NPI_PROVIDER_CLEANUP_BINDING_CONTEXT_FN callback function"]
 ms.keywords: NPI_PROVIDER_CLEANUP_BINDING_CONTEXT_FN, NPI_PROVIDER_CLEANUP_BINDING_CONTEXT_FN callback, PNPI_PROVIDER_CLEANUP_BINDING_CONTEXT_FN, PNPI_PROVIDER_CLEANUP_BINDING_CONTEXT_FN callback function [Network Drivers Starting with Windows Vista], ProviderCleanupBindingContext, ProviderCleanupBindingContext callback function [Network Drivers Starting with Windows Vista], netioddk/ProviderCleanupBindingContext, netvista.providercleanupbindingcontext, nmrref_9723dfb1-96dd-410c-a5cd-1adfb6aa9544.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - netioddk.h
 api_name:
- - PNPI_PROVIDER_CLEANUP_BINDING_CONTEXT_FN
+ - NPI_PROVIDER_CLEANUP_BINDING_CONTEXT_FN
 ---
 
 # NPI_PROVIDER_CLEANUP_BINDING_CONTEXT_FN callback function
@@ -53,9 +52,9 @@ A provider module's
 
 ## -parameters
 
-### -param ProviderBindingContext 
+### -param ProviderBindingContext [in]
 
-[in]
+
 A pointer to the provider module's context for the binding between the provider module and the
      client module from which it has detached. The provider module's 
      <a href="/windows-hardware/drivers/ddi/netioddk/nc-netioddk-npi_provider_attach_client_fn">ProviderAttachClient</a> callback
@@ -100,3 +99,4 @@ The NMR calls a provider module's
 
 
 <a href="/windows-hardware/drivers/ddi/netioddk/nc-netioddk-npi_provider_detach_client_fn">ProviderDetachClient</a>
+

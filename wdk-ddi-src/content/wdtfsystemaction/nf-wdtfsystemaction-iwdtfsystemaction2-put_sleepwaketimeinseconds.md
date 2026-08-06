@@ -1,11 +1,10 @@
 ---
 UID: NF:wdtfsystemaction.IWDTFSystemAction2.put_SleepWakeTimeInSeconds
 title: IWDTFSystemAction2::put_SleepWakeTimeInSeconds (wdtfsystemaction.h)
-description: Gets or sets the time in seconds when the system will wake from the sleep state.
+description: Sets or gets the time in seconds when the system will wake from the sleep state.
 old-location: dtf\iwdtfsystemaction2_sleepwaketimeinseconds.htm
 tech.root: dtf
-ms.assetid: 90b9742d-966b-4502-92ec-670c663d9a76
-ms.date: 04/04/2018
+ms.date: 08/10/2023
 keywords: ["IWDTFSystemAction2::put_SleepWakeTimeInSeconds"]
 ms.keywords: IWDTFSystemAction2 interface [Windows Device Testing Framework],SleepWakeTimeInSeconds property, IWDTFSystemAction2.SleepWakeTimeInSeconds, IWDTFSystemAction2.put_SleepWakeTimeInSeconds, IWDTFSystemAction2::SleepWakeTimeInSeconds, IWDTFSystemAction2::get_SleepWakeTimeInSeconds, IWDTFSystemAction2::put_SleepWakeTimeInSeconds, Microsoft.WDTF.IWDTFSystemAction2.SleepWakeTimeInSeconds, Microsoft::WDTF::IWDTFSystemAction2::SleepWakeTimeInSeconds, SleepWakeTimeInSeconds property [Windows Device Testing Framework], SleepWakeTimeInSeconds property [Windows Device Testing Framework],IWDTFSystemAction2 interface, dtf.iwdtfsystemaction2_sleepwaketimeinseconds, put_SleepWakeTimeInSeconds, wdtfsystemaction/IWDTFSystemAction2::SleepWakeTimeInSeconds, wdtfsystemaction/IWDTFSystemAction2::get_SleepWakeTimeInSeconds, wdtfsystemaction/IWDTFSystemAction2::put_SleepWakeTimeInSeconds
 req.header: wdtfsystemaction.h
@@ -38,13 +37,10 @@ api_type:
 api_location:
  - WDTFSystemAction.Interop.dll
 api_name:
- - IWDTFSystemAction2.SleepWakeTimeInSeconds
- - IWDTFSystemAction2.get_SleepWakeTimeInSeconds
- - IWDTFSystemAction2.put_SleepWakeTimeInSeconds
+ - IWDTFSystemAction2::put_SleepWakeTimeInSeconds
 ---
 
 # IWDTFSystemAction2::put_SleepWakeTimeInSeconds
-
 
 ## -description
 
@@ -53,6 +49,14 @@ Gets or sets the time in seconds when the system will wake from the sleep state.
 This property is read/write.
 
 ## -parameters
+
+### -param  nWakeTimeInSeconds [in]
+
+The time in seconds when the system will wake from the sleep state.
+
+## -returns
+
+If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
 
 ## -see-also
 

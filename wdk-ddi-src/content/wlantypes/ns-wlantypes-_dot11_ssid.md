@@ -1,10 +1,9 @@
 ---
 UID: NS:wlantypes._DOT11_SSID
 title: _DOT11_SSID (wlantypes.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_SSID structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_ssid.htm
 tech.root: netvista
-ms.assetid: f032b0db-92a0-40ff-a80d-e263d7b2dc67
 ms.date: 02/16/2018
 keywords: ["DOT11_SSID structure"]
 ms.keywords: "*PDOT11_SSID, DOT11_SSID, DOT11_SSID structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_e25f30a3-b1f8-43ca-a685-6bc4909028d1.xml, PDOT11_SSID, PDOT11_SSID structure pointer [Network Drivers Starting with Windows Vista], _DOT11_SSID, netvista.dot11_ssid, wlantypes/DOT11_SSID, wlantypes/PDOT11_SSID"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DOT11_SSID, *PDOT11_SSID
-req.product: Windows 10 or later.
 f1_keywords:
  - _DOT11_SSID
  - wlantypes/_DOT11_SSID
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wlantypes.h
 api_name:
+ - _DOT11_SSID
+ - PDOT11_SSID
  - DOT11_SSID
 ---
 
@@ -113,3 +113,4 @@ A
 
 
 <a href="/windows-hardware/drivers/network/ndis-status-dot11-roaming-start">NDIS_STATUS_DOT11_ROAMING_START</a>
+

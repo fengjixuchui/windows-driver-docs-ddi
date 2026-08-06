@@ -4,7 +4,6 @@ title: _SYNTHCAPS (dmusprop.h)
 description: The SYNTHCAPS structure specifies the capabilities of a synthesizer.
 old-location: audio\synthcaps.htm
 tech.root: audio
-ms.assetid: d9d7327f-a413-4828-b204-e08198d0fe9e
 ms.date: 05/08/2018
 keywords: ["SYNTHCAPS structure"]
 ms.keywords: "*PSYNTHCAPS, PSYNTHCAPS, PSYNTHCAPS structure pointer [Audio Devices], SYNTHCAPS, SYNTHCAPS structure [Audio Devices], _SYNTHCAPS, aud-prop_609e484a-6bcb-4ea2-9ca5-fa640c4d9ba8.xml, audio.synthcaps, dmusprop/PSYNTHCAPS, dmusprop/SYNTHCAPS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dmusprop.h
 api_name:
+ - _SYNTHCAPS
+ - PSYNTHCAPS
  - SYNTHCAPS
 ---
 
@@ -193,3 +194,4 @@ In this example, the 0xFFFFFFFF values indicate that the handler has no way of k
 
 
 <a href="/previous-versions/ff537389(v=vs.85)">KSPROPERTY_SYNTH_CAPS</a>
+

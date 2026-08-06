@@ -1,11 +1,9 @@
 ---
 UID: NF:winsplp.SplDeleteSpoolerPortEnd
 title: SplDeleteSpoolerPortEnd function (winsplp.h)
-description: 
-old-location: print\spldeletespoolerportend.htm
+description: Describes the SplDeleteSpoolerPortEnd function.
 tech.root: print
-ms.assetid: 947391B5-5355-4ADB-B26E-A51FE0B0B85F
-ms.date: 04/20/2018
+ms.date: 07/27/2022
 keywords: ["SplDeleteSpoolerPortEnd function"]
 ms.keywords: SplDeleteSpoolerPortEnd, SplDeleteSpoolerPortEnd function [Print Devices], print.spldeletespoolerportend, winsplp/SplDeleteSpoolerPortEnd
 req.header: winsplp.h
@@ -41,18 +39,20 @@ api_name:
  - SplDeleteSpoolerPortEnd
 ---
 
-# SplDeleteSpoolerPortEnd function
-
-
 ## -description
+
+Describes the **SplDeleteSpoolerPortEnd** function.
 
 ## -parameters
 
-### -param pName 
+### -param pName [in]
 
-[in]
+Defines the **PCWSTR** parameter *pName*.
 
-### -param bDeletePort 
+### -param bDeletePort [in]
 
-[in]
+Defines the **BOOL** parameter *bDeletePort*.
 
+## -returns
+
+Returns a **BOOL** value.

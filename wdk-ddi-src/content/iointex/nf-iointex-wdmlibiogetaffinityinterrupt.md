@@ -4,7 +4,6 @@ title: WdmlibIoGetAffinityInterrupt function (iointex.h)
 description: The WdmlibIoGetAffinityInterrupt function gets the group affinity of an interrupt object.
 old-location: kernel\wdmlibiogetaffinityinterrupt.htm
 tech.root: kernel
-ms.assetid: E9E80EB4-C20B-4025-957B-32DC6FAE7F38
 ms.date: 04/30/2018
 keywords: ["WdmlibIoGetAffinityInterrupt function"]
 ms.keywords: IoGetAffinityInterrupt, WdmlibIoGetAffinityInterrupt, WdmlibIoGetAffinityInterrupt function [Kernel-Mode Driver Architecture], iointex/IoGetAffinityInterrupt, iointex/WdmlibIoGetAffinityInterrupt, kernel.wdmlibiogetaffinityinterrupt
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - WdmlibIoGetAffinityInterrupt
- - IoGetAffinityInterrupt
 ---
 
 # WdmlibIoGetAffinityInterrupt function
@@ -51,14 +49,14 @@ The <b>WdmlibIoGetAffinityInterrupt</b> function gets the group affinity of an i
 
 ## -parameters
 
-### -param InterruptObject 
+### -param InterruptObject [in]
 
-[in]
+
 A pointer to an interrupt object. This parameter points to a <a href="/windows-hardware/drivers/kernel/eprocess">KINTERRUPT</a> structure that represents a registration by a driver to receive device interrupts. The structure is opaque. The caller obtained this pointer value in a previous call to the <a href="/windows-hardware/drivers/ddi/iointex/nf-iointex-wdmlibioconnectinterruptex">WdmlibIoConnectInterruptEx</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterrupt">IoConnectInterrupt</a> routine.
 
-### -param GroupAffinity 
+### -param GroupAffinity [out]
 
-[out]
+
 A pointer to a caller-allocated buffer into which the routine writes a <a href="/windows-hardware/drivers/ddi/miniport/ns-miniport-_group_affinity">GROUP_AFFINITY</a> structure that specifies the group affinity of the interrupt object that <i>InterruptObject</i> points to. This buffer must be large enough to contain the structure.
 
 ## -returns
@@ -110,3 +108,4 @@ In Windows 7, <a href="/windows-hardware/drivers/ddi/iointex/nf-iointex-wdmlibio
 
 
 <a href="/windows-hardware/drivers/ddi/iointex/nf-iointex-wdmlibioconnectinterruptex">WdmlibIoConnectInterruptEx</a>
+

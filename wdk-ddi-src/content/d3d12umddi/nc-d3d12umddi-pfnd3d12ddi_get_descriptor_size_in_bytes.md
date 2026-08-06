@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_GET_DESCRIPTOR_SIZE_IN_BYTES
 title: PFND3D12DDI_GET_DESCRIPTOR_SIZE_IN_BYTES (d3d12umddi.h)
 description: Gets the size of the handle for a given type of descriptor heap.
-ms.assetid: 3387f063-96f5-4d77-b006-924738808d51
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_GET_DESCRIPTOR_SIZE_IN_BYTES callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_GET_DESCRIPTOR_SIZE_IN_BYTES
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ The PFND3D12DDI_GET_DESCRIPTOR_SIZE_IN_BYTES callback function gets the size of 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 The D3D12DDI_DESCRIPTOR_HEAP_TYPE-typed value that specifies the type of descriptor heap to get the size of the handle increment for.
 

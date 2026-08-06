@@ -4,7 +4,6 @@ title: IMiniportStreamAudioEngineNode::SetStreamCurrentWritePosition (portcls.h)
 description: Sets the current cursor position in the audio data stream that is being captured from the endpoint.
 old-location: audio\iminiportstreamaudioenginenode_setstreamcurrentwriteposition.htm
 tech.root: audio
-ms.assetid: A277FC29-AB92-4D67-9E53-F8E8B36053F9
 ms.date: 05/08/2018
 keywords: ["IMiniportStreamAudioEngineNode::SetStreamCurrentWritePosition"]
 ms.keywords: IMiniportStreamAudioEngineNode interface [Audio Devices],SetStreamCurrentWritePosition method, IMiniportStreamAudioEngineNode.SetStreamCurrentWritePosition, IMiniportStreamAudioEngineNode::SetStreamCurrentWritePosition, SetStreamCurrentWritePosition, SetStreamCurrentWritePosition method [Audio Devices], SetStreamCurrentWritePosition method [Audio Devices],IMiniportStreamAudioEngineNode interface, audio.iminiportstreamaudioenginenode_setstreamcurrentwriteposition, portcls/IMiniportStreamAudioEngineNode::SetStreamCurrentWritePosition
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IMiniportStreamAudioEngineNode.SetStreamCurrentWritePosition
+ - IMiniportStreamAudioEngineNode::SetStreamCurrentWritePosition
 ---
 
 # IMiniportStreamAudioEngineNode::SetStreamCurrentWritePosition
@@ -50,9 +49,9 @@ Sets the current cursor position in the audio data stream that is being captured
 
 ## -parameters
 
-### -param ulCurrentWritePosition 
+### -param ulCurrentWritePosition [in]
 
-[in]
+
 The current cursor position in the audio data stream.
 
 ## -returns
@@ -62,3 +61,4 @@ The current cursor position in the audio data stream.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportstreamaudioenginenode">IMiniportStreamAudioEngineNode</a>
+

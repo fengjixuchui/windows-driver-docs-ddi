@@ -4,7 +4,6 @@ title: VideoPortAllocateContiguousMemory function (video.h)
 description: The VideoPortAllocateContiguousMemory function is obsolete in Windows 2000 and later.
 old-location: display\videoportallocatecontiguousmemory.htm
 tech.root: display
-ms.assetid: ba23f4d4-7e3d-4bfc-acf7-68dab01d2f61
 ms.date: 05/10/2018
 keywords: ["VideoPortAllocateContiguousMemory function"]
 ms.keywords: VideoPortAllocateContiguousMemory, VideoPortAllocateContiguousMemory function [Display Devices], VideoPort_Functions_5aed176c-b0d1-4b0d-8d0d-7689bc31d661.xml, display.videoportallocatecontiguousmemory, video/VideoPortAllocateContiguousMemory
@@ -52,19 +51,19 @@ The <b>VideoPortAllocateContiguousMemory</b> function is <b>obsolete</b> in Wind
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's device extension.
 
-### -param NumberOfBytes 
+### -param NumberOfBytes [in]
 
-[in]
+
 Specifies the size in bytes of the block of contiguous memory to be allocated.
 
-### -param HighestAcceptableAddress 
+### -param HighestAcceptableAddress [in]
 
-[in]
+
 Specifies the highest valid physical address the miniport driver can use. For example, if a device can only reference physical memory in the lower 16MB, this value would be set to 0x00000000FFFFFF.
 
 ## -returns

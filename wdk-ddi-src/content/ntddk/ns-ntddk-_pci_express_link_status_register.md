@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddk._PCI_EXPRESS_LINK_STATUS_REGISTER
 title: _PCI_EXPRESS_LINK_STATUS_REGISTER (ntddk.h)
-description: The PCI_EXPRESS_LINK_STATUS_REGISTER structure describes a PCI Express (PCIe) link status register of a PCIe capability structure.
+description: The _PCI_EXPRESS_LINK_STATUS_REGISTER structure (ntddk.h) describes a PCI Express (PCIe) link status register of a PCIe capability structure.
 old-location: pci\pci_express_link_status_register.htm
 tech.root: PCI
-ms.assetid: c3431e89-4a47-44e6-98d8-eae444ea1915
 ms.date: 02/24/2018
 keywords: ["PCI_EXPRESS_LINK_STATUS_REGISTER structure"]
 ms.keywords: "*PPCI_EXPRESS_LINK_STATUS_REGISTER, PCI.pci_express_link_status_register, PCI_EXPRESS_LINK_STATUS_REGISTER, PCI_EXPRESS_LINK_STATUS_REGISTER union [Buses], PPCI_EXPRESS_LINK_STATUS_REGISTER, PPCI_EXPRESS_LINK_STATUS_REGISTER union pointer [Buses], _PCI_EXPRESS_LINK_STATUS_REGISTER, ntddk/PCI_EXPRESS_LINK_STATUS_REGISTER, ntddk/PPCI_EXPRESS_LINK_STATUS_REGISTER, pci_struct_41d11df3-521f-4709-a30e-be70ad36db8f.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _PCI_EXPRESS_LINK_STATUS_REGISTER
+ - PPCI_EXPRESS_LINK_STATUS_REGISTER
  - PCI_EXPRESS_LINK_STATUS_REGISTER
 ---
 
@@ -50,7 +51,28 @@ api_name:
 
 ## -description
 
-The PCI_EXPRESS_LINK_STATUS_REGISTER structure describes a PCI Express (PCIe) link status register of a PCIe capability structure.
+The **PCI_EXPRESS_LINK_STATUS_REGISTER** structure describes a PCI Express (PCIe) link status register of a PCIe capability structure.
+
+## -syntax
+
+```cpp
+typedef union _PCI_EXPRESS_LINK_STATUS_REGISTER {
+
+    struct {
+
+        USHORT LinkSpeed:4;
+        USHORT LinkWidth:6;
+        USHORT Undefined:1;
+        USHORT LinkTraining:1;
+        USHORT SlotClockConfig:1;
+        USHORT DataLinkLayerActive:1;
+        USHORT Rsvd:2;
+    } DUMMYSTRUCTNAME;
+
+    USHORT AsUSHORT;
+
+} PCI_EXPRESS_LINK_STATUS_REGISTER, *PPCI_EXPRESS_LINK_STATUS_REGISTER;
+```
 
 ## -struct-fields
 
@@ -58,17 +80,17 @@ The PCI_EXPRESS_LINK_STATUS_REGISTER structure describes a PCI Express (PCIe) li
 
 ### -field AsUSHORT
 
-A USHORT representation of the contents of the PCI_EXPRESS_LINK_STATUS_REGISTER structure.
+A **USHORT** representation of the contents of the **PCI_EXPRESS_LINK_STATUS_REGISTER** structure.
 
 
-#### - DataLinkLayerActive
+### -field DUMMYSTRUCTNAME.DataLinkLayerActive
 
 A single bit that indicates that the data link control and management state machine is in the data link active state.
 
 
-#### - LinkSpeed
+### -field DUMMYSTRUCTNAME.LinkSpeed
 
-The negotiated link speed of the PCIe link.  Possible values are:
+The negotiated link speed of the PCIe link. The encoded value specifies a Bit Location in the SupportedLinkSpeedsVector (Link Capabilities 2 Register) that corresponds to the negotiated link speed. Supported values are:
 
 <table>
 <tr>
@@ -77,11 +99,23 @@ The negotiated link speed of the PCIe link.  Possible values are:
 </tr>
 <tr>
 <td><b>1</b></td>
-<td>2.5 gigabits per second.</td>
+<td>2.5 GT/s (SupportedLinkSpeedsVector field bit 0)</td>
 </tr>
 <tr>
 <td><b>2</b></td>
-<td>5.0 gigabits per second.</td>
+<td>5.0 GT/s (SupportedLinkSpeedsVector field bit 1)</td>
+</tr>
+<tr>
+<td><b>3</b></td>
+<td>8.0 GT/s (SupportedLinkSpeedsVector field bit 2)</td>
+</tr>
+<tr>
+<td><b>4</b></td>
+<td>16.0 GT/s (SupportedLinkSpeedsVector field bit 3)</td>
+</tr>
+<tr>
+<td><b>5</b></td>
+<td>32.0 GT/s (SupportedLinkSpeedsVector field bit 4)</td>
 </tr>
 <tr>
 <td>All other values</td>
@@ -91,12 +125,12 @@ The negotiated link speed of the PCIe link.  Possible values are:
  
 
 
-#### - LinkTraining
+### -field DUMMYSTRUCTNAME.LinkTraining
 
 A single bit that indicates that the link is in the configuration or recovery state, or that a 1 was written to the retrain link bit of the PCIe link control register and the training has not yet begun. This member is not applicable to endpoint devices and upstream ports of switches.
 
 
-#### - LinkWidth
+### -field DUMMYSTRUCTNAME.LinkWidth
 
 The negotiated link width (number of lanes) of the PCIe link. Possible values are:
 
@@ -141,17 +175,17 @@ The negotiated link width (number of lanes) of the PCIe link. Possible values ar
  
 
 
-#### - Rsvd
+### -field DUMMYSTRUCTNAME.Rsvd
 
 Reserved.
 
 
-#### - SlotClockConfig
+### -field DUMMYSTRUCTNAME.SlotClockConfig
 
 A single bit that indicates that the component uses the same physical reference clock that the hardware platform provides on the PCIe slot connector. If this bit is clear, the component uses an independent clock irrespective of the presence of a reference clock on the PCIe slot connector.
 
 
-#### - Undefined
+### -field DUMMYSTRUCTNAME.Undefined
 
 Reserved. Device drivers and other system software should ignore any value read from this bit.
 
@@ -174,10 +208,13 @@ typedef union _PCI_EXPRESS_LINK_STATUS_REGISTER {
 
 ## -remarks
 
-The PCI_EXPRESS_LINK_STATUS_REGISTER structure is available in Windows Server 2008 and later versions of Windows.
+The **PCI_EXPRESS_LINK_STATUS_REGISTER** structure is available in Windows Server 2008 and later versions of Windows.
 
-A PCI_EXPRESS_LINK_STATUS_REGISTER structure is contained in the <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_pci_express_capability">PCI_EXPRESS_CAPABILITY</a> structure.
+A **PCI_EXPRESS_LINK_STATUS_REGISTER** structure is contained in the [PCI_EXPRESS_CAPABILITY_REGISTER](ns-ntddk-_pci_express_capability.md) structure.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_pci_express_capability">PCI_EXPRESS_CAPABILITY</a>
+[PCI_EXPRESS_CAPABILITY_REGISTER](ns-ntddk-_pci_express_capability.md)
+
+[PCI_EXPRESS_LINK_STATUS_2_REGISTER](ns-ntddk-pci_express_link_status_2_register.md)
+

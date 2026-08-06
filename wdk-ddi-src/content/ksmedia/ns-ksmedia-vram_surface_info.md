@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_83
+UID: NS:ksmedia.VRAM_SURFACE_INFO
 title: VRAM_SURFACE_INFO (ksmedia.h)
 description: The VRAM_SURFACE_INFO structure describes a region of system or display memory into which an AVStream minidriver captures audio or video data.
 old-location: stream\vram_surface_info.htm
 tech.root: stream
-ms.assetid: 6fce78f7-a23e-4651-b6d8-b3d5387ccc27
 ms.date: 04/30/2019
 keywords: ["VRAM_SURFACE_INFO structure"]
 ms.keywords: "*PVRAM_SURFACE_INFO, PVRAM_SURFACE_INFO, PVRAM_SURFACE_INFO structure pointer [Streaming Media Devices], VRAM_SURFACE_INFO, VRAM_SURFACE_INFO structure [Streaming Media Devices], avstruct_ac2ca5de-0eea-453b-b3fd-79874fd2242a.xml, ksmedia/PVRAM_SURFACE_INFO, ksmedia/VRAM_SURFACE_INFO, stream.vram_surface_info"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PVRAM_SURFACE_INFO
  - VRAM_SURFACE_INFO
 ---
 
@@ -99,3 +99,4 @@ The data in these members persists for the lifetime of the stream header. When a
 
 
 <a href="/windows-hardware/drivers/stream/ksproperty-map-capture-handle-to-vram-address">KSPROPERTY_MAP_CAPTURE_HANDLE_TO_VRAM_ADDRESS</a>
+

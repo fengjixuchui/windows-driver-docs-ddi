@@ -4,7 +4,6 @@ title: EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE (ucxusbdevice.h)
 description: The client driver's implementation that UCX calls to configure endpoints in the controller.
 old-location: buses\evt_ucx_usbdevice_endpoints_configure.htm
 tech.root: usbref
-ms.assetid: 2f374912-985d-47e0-9fda-b43242375cb5
 ms.date: 05/07/2018
 keywords: ["EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE callback function"]
 ms.keywords: EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE, EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE callback, EvtUcxUsbDeviceEndpointsConfigure, EvtUcxUsbDeviceEndpointsConfigure callback function [Buses], PEVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE, PEVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE callback function pointer [Buses], buses.evt_ucx_usbdevice_endpoints_configure, ucxusbdevice/EvtUcxUsbDeviceEndpointsConfigure
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ucxusbdevice.h
 api_name:
- - PEVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE
+ - EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE
 ---
 
 # EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE callback function
@@ -50,14 +49,14 @@ The client driver's implementation that UCX calls to configure endpoints in the 
 
 ## -parameters
 
-### -param UcxController 
+### -param UcxController [in]
 
-[in]
+
  A handle to the UCX controller that the client driver received in a previous call to  the <a href="/previous-versions/windows/hardware/drivers/mt188033(v=vs.85)">UcxControllerCreate</a> method.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 Contains a structure of type <a href="/windows-hardware/drivers/ddi/ucxendpoint/ns-ucxendpoint-_endpoints_configure">ENDPOINTS_CONFIGURE</a> structure.
 
 ## -remarks
@@ -99,7 +98,6 @@ UsbDevice_EvtUcxUsbDeviceEndpointsConfigure(
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ucxendpoint/ns-ucxendpoint-_endpoints_configure">ENDPOINTS_CONFIGURE</a>
@@ -107,3 +105,4 @@ UsbDevice_EvtUcxUsbDeviceEndpointsConfigure(
 
 
 <a href="/windows-hardware/drivers/ddi/ucxusbdevice/nf-ucxusbdevice-ucxusbdevicecreate">UcxUsbDeviceCreate</a>
+

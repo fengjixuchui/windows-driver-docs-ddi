@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_SETGAMMARAMP
 title: PFND3DKMT_SETGAMMARAMP (d3dkmthk.h)
 description: The PFND3DKMT_SETGAMMARAMP callback function sets the gamma ramp.
-ms.assetid: 504b7ebc-5814-4c59-b9f4-0964e1e51f00
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_SETGAMMARAMP callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The PFND3DKMT_SETGAMMARAMP callback function sets the gamma ramp.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_SETGAMMARAMP](ns-d3dkmthk-_d3dkmt_setgammaramp.md) structure.
 

@@ -4,14 +4,13 @@ title: _DXGK_DEVICE_DESCRIPTOR (dispmprt.h)
 description: The DXGK_DEVICE_DESCRIPTOR structure is used by the display port driver to request that the display miniport driver return all or a portion of a monitor's Extended Display Identification Data (EDID).
 old-location: display\dxgk_device_descriptor.htm
 tech.root: display
-ms.assetid: b6d89426-54d3-4f90-8687-c60e515b4d62
 ms.date: 05/10/2018
 keywords: ["DXGK_DEVICE_DESCRIPTOR structure"]
 ms.keywords: "*PDXGK_DEVICE_DESCRIPTOR, DXGK_DEVICE_DESCRIPTOR, DXGK_DEVICE_DESCRIPTOR structure [Display Devices], DmStructs_d66c7175-e264-49f4-94ce-f4a92a678010.xml, PDXGK_DEVICE_DESCRIPTOR, PDXGK_DEVICE_DESCRIPTOR structure pointer [Display Devices], _DXGK_DEVICE_DESCRIPTOR, display.dxgk_device_descriptor, dispmprt/DXGK_DEVICE_DESCRIPTOR, dispmprt/PDXGK_DEVICE_DESCRIPTOR"
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
+ - _DXGK_DEVICE_DESCRIPTOR
+ - PDXGK_DEVICE_DESCRIPTOR
  - DXGK_DEVICE_DESCRIPTOR
 ---
 
@@ -81,3 +82,4 @@ The display port driver passes a DXGK_DEVICE_DESCRIPTOR structure to <a href="/w
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_device_descriptor">DxgkDdiQueryDeviceDescriptor</a>
+

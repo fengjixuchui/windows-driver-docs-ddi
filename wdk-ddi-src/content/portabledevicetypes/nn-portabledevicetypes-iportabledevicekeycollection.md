@@ -4,7 +4,6 @@ title: IPortableDeviceKeyCollection (portabledevicetypes.h)
 description: Holds a collection of PROPERTYKEY values. This interface can be retrieved from a method or, if a new object is required, call CoCreate with CLSID_PortableDeviceKeyCollection.
 old-location: wpddk\iportabledevicekeycollection.htm
 tech.root: wpd_dk
-ms.assetid: 50ce4946-18a7-4b63-ba5a-c5684dd0b79c
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceKeyCollection interface"]
 ms.keywords: IPortableDeviceKeyCollection, IPortableDeviceKeyCollection interface, IPortableDeviceKeyCollection interface,described, IPortableDeviceKeyCollectionInterface, portabledevicetypes/IPortableDeviceKeyCollection, wpddk.iportabledevicekeycollection
@@ -51,10 +50,8 @@ Holds a collection of <b>PROPERTYKEY</b> values. This interface can be retrieved
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortableDeviceKeyCollection</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPortableDeviceKeyCollection</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IPortableDeviceKeyCollection</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPortableDeviceKeyCollection</b> also has these types of members:
+
 
 ## -see-also
 

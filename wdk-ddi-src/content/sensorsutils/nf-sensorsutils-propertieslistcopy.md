@@ -2,7 +2,6 @@
 UID: NF:sensorsutils.PropertiesListCopy
 title: PropertiesListCopy function (sensorsutils.h)
 description: This routine copies a properties list from source to target.
-ms.assetid: 75d16f0b-ded0-49fe-b2a3-ee751f05391c
 ms.date: 08/08/2018
 keywords: ["PropertiesListCopy function"]
 tech.root: sensors
@@ -37,8 +36,6 @@ api_location:
  - sensorsutils.h
 api_name:
  - PropertiesListCopy
-product:
- - Windows
 ---
 
 # PropertiesListCopy function
@@ -50,13 +47,13 @@ This routine copies a properties list from source to target.
 
 ## -parameters
 
-### -param Target
+### -param Target [in]
 
-[in] Pointer to a collection list to copy to.
+Pointer to a collection list to copy to.
 
-### -param Source
+### -param Source [in]
 
-[in] Pointer to a collection list to copy.
+Pointer to a collection list to copy.
 
 ## -returns
 

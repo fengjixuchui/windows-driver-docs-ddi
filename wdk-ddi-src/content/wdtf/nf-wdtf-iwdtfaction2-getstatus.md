@@ -4,7 +4,6 @@ title: IWDTFAction2::GetStatus (wdtf.h)
 description: Returns the status code for the last operation.
 old-location: dtf\iwdtfaction2_getstatus.htm
 tech.root: dtf
-ms.assetid: 39e5bfb8-83fe-4b68-814d-933a26d6d567
 ms.date: 04/04/2018
 keywords: ["IWDTFAction2::GetStatus"]
 ms.keywords: GetStatus, GetStatus method [Windows Device Testing Framework], GetStatus method [Windows Device Testing Framework],IWDTFAction2 interface, IWDTFAction2 interface [Windows Device Testing Framework],GetStatus method, IWDTFAction2.GetStatus, IWDTFAction2::GetStatus, Microsoft.WDTF.IWDTFAction2.GetStatus, Microsoft::WDTF::IWDTFAction2::GetStatus, dtf.iwdtfaction2_getstatus, wdtf/IWDTFAction2::GetStatus
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFAction2.GetStatus
+ - IWDTFAction2::GetStatus
 ---
 
 # IWDTFAction2::GetStatus
@@ -50,9 +49,9 @@ Returns the status code for the last operation.
 
 ## -parameters
 
-### -param pResult 
+### -param pResult [out, retval]
 
-[out, retval]
+
 The status code for the last operation.
 
 ## -returns
@@ -62,3 +61,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtfaction2">IWDTFAction2</a>
+

@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_69
+UID: NS:ksmedia.KSAC3_ALTERNATE_AUDIO
 title: KSAC3_ALTERNATE_AUDIO (ksmedia.h)
 description: The KSAC3_ALTERNATE_AUDIO structure specifies whether the two mono channels in an AC-3-encoded stream should be interpreted as a stereo pair or as two independent program channels.
 old-location: audio\ksac3_alternate_audio.htm
 tech.root: audio
-ms.assetid: 9b97deb9-7e64-49a1-8278-08084c8b7c84
 ms.date: 08/20/2020
 keywords: ["KSAC3_ALTERNATE_AUDIO structure"]
 ms.keywords: "*PKSAC3_ALTERNATE_AUDIO, KSAC3_ALTERNATE_AUDIO, KSAC3_ALTERNATE_AUDIO structure [Audio Devices], PKSAC3_ALTERNATE_AUDIO, PKSAC3_ALTERNATE_AUDIO structure pointer [Audio Devices], aud-prop_172c7e1b-4c53-4836-82c2-37590cf87744.xml, audio.ksac3_alternate_audio, ksmedia/KSAC3_ALTERNATE_AUDIO, ksmedia/PKSAC3_ALTERNATE_AUDIO"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSAC3_ALTERNATE_AUDIO
  - KSAC3_ALTERNATE_AUDIO
 ---
 
@@ -75,3 +75,4 @@ For more information about the encoding of AC-3 program channels, see the AC-3 s
 ## -see-also
 
 [KSPROPERTY_AC3_ALTERNATE_AUDIO](/windows-hardware/drivers/audio/ksproperty-ac3-alternate-audio)
+

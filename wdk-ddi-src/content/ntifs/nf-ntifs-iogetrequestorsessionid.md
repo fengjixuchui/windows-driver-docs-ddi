@@ -4,14 +4,13 @@ title: IoGetRequestorSessionId function (ntifs.h)
 description: The IoGetRequestorSessionId routine returns the session ID for the process that originally requested a given I/O operation.
 old-location: ifsk\iogetrequestorsessionid.htm
 tech.root: ifsk
-ms.assetid: 9e13cf62-d71e-4878-becd-d34beb2f59b3
-ms.date: 04/16/2018
+ms.date: 08/26/2021
 keywords: ["IoGetRequestorSessionId function"]
 ms.keywords: IoGetRequestorSessionId, IoGetRequestorSessionId routine [Installable File System Drivers], ifsk.iogetrequestorsessionid, ioref_fe60ee3b-1b5b-4d9c-a4f2-456e05575349.xml, ntifs/IoGetRequestorSessionId
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows Server 2003 SP1 and later.
+req.target-min-winverclnt: Windows Server 2003 SP1
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -43,31 +42,24 @@ api_name:
 
 # IoGetRequestorSessionId function
 
-
 ## -description
 
-The <b>IoGetRequestorSessionId</b> routine returns the session ID for the process that originally requested a given I/O operation.
+The **IoGetRequestorSessionId** routine returns the session ID for the process that originally requested a given I/O operation.
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
 A pointer to the I/O request packet (IRP) for the I/O operation.
 
-### -param pSessionId 
+### -param pSessionId [out]
 
-[out]
-A pointer to a caller-allocated variable that receives the session ID for the process that requested the I/O operation. If the call to <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iogetrequestorprocessid">IoGetRequestorProcessId</a> fails, this variable is set to -1.
+A pointer to a caller-allocated variable that receives the session ID for the process that requested the I/O operation. If the call fails (STATUS_UNSUCCESSFUL), this parameter is set to -1.
 
 ## -returns
 
-<a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iogetrequestorprocessid">IoGetRequestorProcessId</a> returns STATUS_SUCCESS if the session ID is successfully returned, STATUS_UNSUCCESSFUL otherwise. STATUS_UNSUCCESSFUL is an error NTSTATUS value.
+**IoGetRequestorSessionId** returns STATUS_SUCCESS if the session ID is successfully returned, and returns STATUS_UNSUCCESSFUL otherwise. STATUS_UNSUCCESSFUL is an error NTSTATUS value.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iogetrequestorprocess">IoGetRequestorProcess</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iogetrequestorprocessid">IoGetRequestorProcessId</a>
+[**IoGetRequestorProcess**](nf-ntifs-iogetrequestorprocess.md)

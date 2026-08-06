@@ -4,7 +4,6 @@ title: _WDF_SYNCHRONIZATION_SCOPE (wdfobject.h)
 description: The WDF_SYNCHRONIZATION_SCOPE enumeration type specifies how the framework will synchronize execution of an object's event callback functions.
 old-location: wdf\wdf_synchronization_scope.htm
 tech.root: wdf
-ms.assetid: a251bf5c-c09b-4097-a9ed-82f2312ac408
 ms.date: 02/26/2018
 keywords: ["WDF_SYNCHRONIZATION_SCOPE enumeration"]
 ms.keywords: DFGenObjectRef_62dd47ff-1d2a-454e-9083-cbf68f1679d2.xml, WDF_SYNCHRONIZATION_SCOPE, WDF_SYNCHRONIZATION_SCOPE enumeration, WdfSynchronizationScopeDevice, WdfSynchronizationScopeInheritFromParent, WdfSynchronizationScopeInvalid, WdfSynchronizationScopeNone, WdfSynchronizationScopeQueue, _WDF_SYNCHRONIZATION_SCOPE, kmdf.wdf_synchronization_scope, wdf.wdf_synchronization_scope, wdfobject/WDF_SYNCHRONIZATION_SCOPE, wdfobject/WdfSynchronizationScopeDevice, wdfobject/WdfSynchronizationScopeInheritFromParent, wdfobject/WdfSynchronizationScopeInvalid, wdfobject/WdfSynchronizationScopeNone, wdfobject/WdfSynchronizationScopeQueue
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfobject.h
 api_name:
+ - _WDF_SYNCHRONIZATION_SCOPE
  - WDF_SYNCHRONIZATION_SCOPE
 ---
 
@@ -54,7 +54,7 @@ The WDF_SYNCHRONIZATION_SCOPE enumeration type specifies how the framework will 
 
 ## -enum-fields
 
-### -field WdfSynchronizationScopeInvalid
+### -field WdfSynchronizationScopeInvalid:0x00
 
 Reserved for system use.
 
@@ -113,3 +113,4 @@ For more information about synchronization of a driver's event callback function
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a>
+

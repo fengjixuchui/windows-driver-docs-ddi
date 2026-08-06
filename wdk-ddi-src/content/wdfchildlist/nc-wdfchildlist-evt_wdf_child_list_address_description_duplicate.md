@@ -4,7 +4,6 @@ title: EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_DUPLICATE (wdfchildlist.h)
 description: A driver's EvtChildListAddressDescriptionDuplicate event callback function duplicates a child address description.
 old-location: wdf\evtchildlistaddressdescriptionduplicate.htm
 tech.root: wdf
-ms.assetid: 3b99401c-5a36-4ccd-b3a4-c5687310c29b
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_DUPLICATE callback function"]
 ms.keywords: DFDeviceObjectChildListRef_5ade5582-8a35-49cb-a291-e6d972822138.xml, EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_DUPLICATE, EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_DUPLICATE callback, EvtChildListAddressDescriptionDuplicate, EvtChildListAddressDescriptionDuplicate callback function, kmdf.evtchildlistaddressdescriptionduplicate, wdf.evtchildlistaddressdescriptionduplicate, wdfchildlist/EvtChildListAddressDescriptionDuplicate
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfChildlist.h
 api_name:
- - EvtChildListAddressDescriptionDuplicate
+ - EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_DUPLICATE
 ---
 
 # EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_DUPLICATE callback function
@@ -52,19 +51,19 @@ A driver's <i>EvtChildListAddressDescriptionDuplicate</i> event callback functio
 
 ## -parameters
 
-### -param ChildList 
+### -param ChildList [in]
 
-[in]
+
 A handle to a framework child-list object.
 
-### -param SourceAddressDescription 
+### -param SourceAddressDescription [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_address_description_header">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a> structure that identifies the source location of the child address description.
 
-### -param DestinationAddressDescription 
+### -param DestinationAddressDescription [out]
 
-[out]
+
 A pointer to a WDF_CHILD_ADDRESS_DESCRIPTION_HEADER structure that identifies the destination location of the child address description.
 
 ## -returns
@@ -156,3 +155,4 @@ For more information about dynamic enumeration, see <a href="/windows-hardware/d
 
 
 <a href="/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitsetdefaultchildlistconfig">WdfFdoInitSetDefaultChildListConfig</a>
+

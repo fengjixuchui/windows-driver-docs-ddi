@@ -4,7 +4,6 @@ title: WdfPdoInitSetEventCallbacks function (wdfpdo.h)
 description: The WdfPdoInitSetEventCallbacks method registers a bus driver's event callback functions.
 old-location: wdf\wdfpdoinitseteventcallbacks.htm
 tech.root: wdf
-ms.assetid: 7ce47eab-c1d7-4a0d-accb-c8a925aa3d1d
 ms.date: 02/26/2018
 keywords: ["WdfPdoInitSetEventCallbacks function"]
 ms.keywords: DFDeviceObjectFdoPdoRef_00002737-467e-4449-8c6c-498860a18747.xml, WdfPdoInitSetEventCallbacks, WdfPdoInitSetEventCallbacks method, kmdf.wdfpdoinitseteventcallbacks, wdf.wdfpdoinitseteventcallbacks, wdfpdo/WdfPdoInitSetEventCallbacks
@@ -53,14 +52,14 @@ The <b>WdfPdoInitSetEventCallbacks</b> method registers a bus driver's event cal
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
-### -param DispatchTable 
+### -param DispatchTable [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfpdo/ns-wdfpdo-_wdf_pdo_event_callbacks">WDF_PDO_EVENT_CALLBACKS</a> structure.
 
 ## -remarks

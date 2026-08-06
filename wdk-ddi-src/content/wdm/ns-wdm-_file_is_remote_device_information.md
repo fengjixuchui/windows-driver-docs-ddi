@@ -4,8 +4,8 @@ title: _FILE_IS_REMOTE_DEVICE_INFORMATION (wdm.h)
 description: The FILE_IS_REMOTE_DEVICE_INFORMATION structure is used as an argument to the ZwQueryInformationFile routine.
 old-location: kernel\file_is_remote_device_information.htm
 tech.root: kernel
-ms.assetid: E1A82D24-A981-414A-83D8-E71F97E0301A
 ms.date: 04/30/2018
+author: lorihollasch
 keywords: ["FILE_IS_REMOTE_DEVICE_INFORMATION structure"]
 ms.keywords: "*PFILE_IS_REMOTE_DEVICE_INFORMATION, FILE_IS_REMOTE_DEVICE_INFORMATION, FILE_IS_REMOTE_DEVICE_INFORMATION structure [Kernel-Mode Driver Architecture], PFILE_IS_REMOTE_DEVICE_INFORMATION, PFILE_IS_REMOTE_DEVICE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _FILE_IS_REMOTE_DEVICE_INFORMATION, kernel.file_is_remote_device_information, wdm/FILE_IS_REMOTE_DEVICE_INFORMATION, wdm/PFILE_IS_REMOTE_DEVICE_INFORMATION"
 req.header: wdm.h
@@ -42,6 +42,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _FILE_IS_REMOTE_DEVICE_INFORMATION
+ - PFILE_IS_REMOTE_DEVICE_INFORMATION
  - FILE_IS_REMOTE_DEVICE_INFORMATION
 ---
 
@@ -61,3 +63,4 @@ A value that indicates whether the file system that contains the file is a remot
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryinformationfile">ZwQueryInformationFile</a>
+

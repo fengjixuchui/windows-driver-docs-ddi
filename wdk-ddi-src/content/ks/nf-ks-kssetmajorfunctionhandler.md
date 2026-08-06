@@ -4,7 +4,6 @@ title: KsSetMajorFunctionHandler function (ks.h)
 description: The KsSetMajorFunctionHandler function sets the handler for a specified major function to use the internal dispatching.
 old-location: stream\kssetmajorfunctionhandler.htm
 tech.root: stream
-ms.assetid: 22c1957d-089a-4504-b92c-9268a37ac265
 ms.date: 04/23/2018
 keywords: ["KsSetMajorFunctionHandler function"]
 ms.keywords: KsSetMajorFunctionHandler, KsSetMajorFunctionHandler function [Streaming Media Devices], ks/KsSetMajorFunctionHandler, ksfunc_e8761f66-4ca5-4465-bf7b-f6d2ab1d2355.xml, stream.kssetmajorfunctionhandler
@@ -47,18 +46,18 @@ api_name:
 
 ## -description
 
-The **KsSetMajorFunctionHandler** function sets the handler for a specified major function to use the internal dispatching. It routes through a KSDISPATCH_TABLE contained in the opaque object header to be the first element within a structure pointed to by an **FsContext** within a file object. The dispatching assumes the table and **FsContext** structure are initialized by the device using **KsAllocateObjectHeader**.
+The **KsSetMajorFunctionHandler** function sets the handler for a specified major function to use the internal dispatching. It routes through a KSDISPATCH_TABLE contained in the opaque object header to be the first element within a structure pointed to by a **FsContext** within a file object. The dispatching assumes the table and **FsContext** structure are initialized by the device using **KsAllocateObjectHeader**.
 
 ## -parameters
 
-### -param DriverObject 
+### -param DriverObject [in]
 
-[in]
+
 Specifies the driver object whose major function is to be handled.
 
-### -param MajorFunction 
+### -param MajorFunction [in]
 
-[in]
+
 Specifies the major function identifier to be handled. This sets the major function pointer in the driver object to an internal function that then dispatches to the **KSDISPATCH_TABLE** function. The pointer to this table is assumed to be the first element in a structure pointed to by **FsContext** in the file object of the specific IRP being dispatched. The valid major function identifiers are as listed.
 
 | Identifier | Description |

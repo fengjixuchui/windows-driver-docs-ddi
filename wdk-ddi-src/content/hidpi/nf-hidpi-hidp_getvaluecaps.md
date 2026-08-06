@@ -4,7 +4,6 @@ title: HidP_GetValueCaps function (hidpi.h)
 description: The HidP_GetValueCaps routine returns a value capability array that describes all the HID control values in a top-level collection for a specified type of HID report.
 old-location: hid\hidp_getvaluecaps.htm
 tech.root: hid
-ms.assetid: 74c26072-3b41-4d5c-96a1-d9c5b37ed97a
 ms.date: 04/30/2018
 keywords: ["HidP_GetValueCaps function"]
 ms.keywords: HidP_GetValueCaps, HidP_GetValueCaps routine [Human Input Devices], hid.hidp_getvaluecaps, hidfunc_e600ab99-103c-43dd-b37b-fe35a96b2482.xml, hidpi/HidP_GetValueCaps
@@ -51,24 +50,24 @@ The <b>HidP_GetValueCaps</b> routine returns a <a href="/windows-hardware/driver
 
 ## -parameters
 
-### -param ReportType 
+### -param ReportType [in]
 
-[in]
+
 Specifies a <a href="/windows-hardware/drivers/ddi/hidpi/ne-hidpi-_hidp_report_type">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.
 
-### -param ValueCaps 
+### -param ValueCaps [out]
 
-[out]
+
 Pointer to a caller-allocated buffer in which the routine returns a value capability array for the specified report type.
 
-### -param ValueCapsLength 
+### -param ValueCapsLength [in, out]
 
-[in, out]
+
 Specifies the length, on input, in array elements, of the <i>ValueCaps </i>buffer. On output, the routine sets <i>ValueCapsLength</i> to the number of elements that the it actually returns.
 
-### -param PreparsedData 
+### -param PreparsedData [in]
 
-[in]
+
 Pointer to a top-level collection's <a href="/windows-hardware/drivers/hid/preparsed-data">preparsed data</a>.
 
 ## -returns

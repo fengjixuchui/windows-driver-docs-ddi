@@ -4,7 +4,6 @@ title: MINIPORT_CO_ACTIVATE_VC (ndis.h)
 description: The MiniportCoActivateVc function is required for connection-oriented miniports.
 old-location: netvista\miniportcoactivatevc.htm
 tech.root: netvista
-ms.assetid: 243a1236-4b8a-4f00-9f14-3142fa81c362
 ms.date: 05/02/2018
 keywords: ["MINIPORT_CO_ACTIVATE_VC callback function"]
 ms.keywords: MINIPORT_CO_ACTIVATE_VC, MINIPORT_CO_ACTIVATE_VC callback, MiniportCoActivateVc, MiniportCoActivateVc callback function [Network Drivers Starting with Windows Vista], condis_miniport_ref_b93127ea-bac1-48d1-b7fd-3c7f40cbcbdb.xml, ndis/MiniportCoActivateVc, netvista.miniportcoactivatevc
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportCoActivateVc
+ - MINIPORT_CO_ACTIVATE_VC
 ---
 
 # MINIPORT_CO_ACTIVATE_VC callback function
@@ -55,16 +54,16 @@ The
 
 ## -parameters
 
-### -param MiniportVcContext 
+### -param MiniportVcContext [in]
 
-[in]
+
 Specifies the handle to a miniport driver-allocated context area in which the miniport driver
      maintains its per-VC state. The miniport driver supplied this handle to NDIS from its 
      <i>MiniportCoCreateVc</i> function.
 
-### -param CallParameters 
+### -param CallParameters [in, out]
 
-[in, out]
+
 Specifies the call parameters, as specified by the call manager, to be established for this VC. On
      output, the miniport driver returns altered call parameters if certain flags are set in the 
      <a href="/previous-versions/windows/hardware/network/ff545384(v=vs.85)">CO_CALL_PARAMETERS</a> structure.
@@ -194,3 +193,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcoactivatevccomplete">NdisMCoActivateVcComplete</a>
+

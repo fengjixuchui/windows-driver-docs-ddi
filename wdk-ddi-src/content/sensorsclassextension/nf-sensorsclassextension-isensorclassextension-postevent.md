@@ -4,7 +4,6 @@ title: ISensorClassExtension::PostEvent (sensorsclassextension.h)
 description: The ISensorClassExtension::PostEvent method raises one or more driver events in the sensor class extension.
 old-location: sensors\isensorclassextension_postevent.htm
 tech.root: sensors
-ms.assetid: 201a4558-8755-4a28-9982-c02ce5b5d8e7
 ms.date: 05/03/2018
 keywords: ["ISensorClassExtension::PostEvent"]
 ms.keywords: ISensorClassExtension interface [Sensor Devices],PostEvent method, ISensorClassExtension.PostEvent, ISensorClassExtension::PostEvent, PostEvent, PostEvent method [Sensor Devices], PostEvent method [Sensor Devices],ISensorClassExtension interface, sensors.isensorclassextension_postevent, sensorsclassextension/ISensorClassExtension::PostEvent
@@ -39,7 +38,7 @@ api_location:
  - SensorsClassExtension.lib
  - SensorsClassExtension.dll
 api_name:
- - PostEvent
+ - ISensorClassExtension::PostEvent
 ---
 
 # ISensorClassExtension::PostEvent
@@ -97,3 +96,4 @@ Raise state change events by calling <a href="/windows-hardware/drivers/ddi/sens
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/sensorsclassextension/nn-sensorsclassextension-isensorclassextension">ISensorClassExtension</a>
+

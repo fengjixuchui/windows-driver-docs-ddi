@@ -4,7 +4,6 @@ title: _PEP_UNMASKED_INTERRUPT_INFORMATION (pepfx.h)
 description: The PEP_UNMASKED_INTERRUPT_INFORMATION structure contains information about an interrupt source.
 old-location: kernel\pep_unmasked_interrupt_information.htm
 tech.root: kernel
-ms.assetid: 1DD9A0A2-7D19-419A-8653-C16FDB28299E
 ms.date: 04/30/2018
 keywords: ["PEP_UNMASKED_INTERRUPT_INFORMATION structure"]
 ms.keywords: "*PPEP_UNMASKED_INTERRUPT_INFORMATION, PEP_UNMASKED_INTERRUPT_INFORMATION, PEP_UNMASKED_INTERRUPT_INFORMATION structure [Kernel-Mode Driver Architecture], PPEP_UNMASKED_INTERRUPT_INFORMATION, PPEP_UNMASKED_INTERRUPT_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _PEP_UNMASKED_INTERRUPT_INFORMATION, kernel.pep_unmasked_interrupt_information, pepfx/PEP_UNMASKED_INTERRUPT_INFORMATION, pepfx/PPEP_UNMASKED_INTERRUPT_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_UNMASKED_INTERRUPT_INFORMATION
+ - PPEP_UNMASKED_INTERRUPT_INFORMATION
  - PEP_UNMASKED_INTERRUPT_INFORMATION
 ---
 
@@ -107,3 +108,4 @@ This structure is used by the <a href="/windows-hardware/drivers/ddi/pepfx/nc-pe
 
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_unmasked_interrupt_flags">PEP_UNMASKED_INTERRUPT_FLAGS</a>
+

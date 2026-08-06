@@ -4,7 +4,6 @@ title: _WWAN_SET_UICC_RESET (wwan.h)
 description: The WWAN_SET_UICC_RESET structure represents the passthrough action the MB host specifies for a modem miniport adapter after it resets a UICC smart card.
 old-location: netvista\wwan_set_uicc_reset.htm
 tech.root: netvista
-ms.assetid: 33711459-70C8-43D2-974D-B90EC0DD8ED6
 ms.date: 05/02/2018
 keywords: ["WWAN_SET_UICC_RESET structure"]
 ms.keywords: "*PWWAN_SET_UICC_RESET, PWWAN_SET_UICC_RESET, PWWAN_SET_UICC_RESET structure pointer [Network Drivers Starting with Windows Vista], WWAN_SET_UICC_RESET, WWAN_SET_UICC_RESET structure [Network Drivers Starting with Windows Vista], _WWAN_SET_UICC_RESET, netvista.wwan_set_uicc_reset, wwan/PWWAN_SET_UICC_RESET, wwan/WWAN_SET_UICC_RESET"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_SET_UICC_RESET
+ - PWWAN_SET_UICC_RESET
  - WWAN_SET_UICC_RESET
 ---
 
@@ -50,13 +51,17 @@ api_name:
 
 ## -description
 
-The <b>WWAN_SET_UICC_RESET</b> structure represents the passthrough action the MB host specifies for a modem miniport adapter after it resets a  UICC smart card.
+The <b>WWAN_SET_UICC_RESET</b> structure represents the passthrough action the MB host specifies for a modem miniport adapter after it resets a UICC smart card.
 
 ## -struct-fields
 
 ### -field PassThroughAction
 
 The passthrough action specified by the host. For more info, see <a href="/windows-hardware/drivers/ddi/wwan/ne-wwan-_wwan_uicc_passthrough_action">WWAN_UICC_PASSTHROUGH_ACTION</a>.
+
+### -field SlotId
+
+A ULONG value that identifies the SIM slot of the operation. For single SIM devices this value is 0. For dual SIM devices this value is [0..1].
 
 ## -see-also
 
@@ -69,3 +74,4 @@ The passthrough action specified by the host. For more info, see <a href="/windo
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ne-wwan-_wwan_uicc_passthrough_action">WWAN_UICC_PASSTHROUGH_ACTION</a>
+

@@ -4,7 +4,6 @@ title: FltQueryInformationFile function (fltkernel.h)
 description: FltQueryInformationFile retrieves information for a given file.
 old-location: ifsk\fltqueryinformationfile.htm
 tech.root: ifsk
-ms.assetid: f80750fb-4561-4617-bc54-1360b2e93a68
 ms.date: 04/16/2018
 keywords: ["FltQueryInformationFile function"]
 ms.keywords: FltApiRef_p_to_z_f6c70c3b-4b99-4ae9-ba01-789c4d3ab1c3.xml, FltQueryInformationFile, FltQueryInformationFile function [Installable File System Drivers], fltkernel/FltQueryInformationFile, ifsk.fltqueryinformationfile
@@ -50,34 +49,34 @@ api_name:
 
 ## -parameters
 
-### -param Instance 
+### -param Instance [in]
 
-[in]
+
 Opaque instance pointer for the caller. This parameter is required and cannot be **NULL**.
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 File object pointer for the file. This parameter is required and cannot be **NULL**.
 
-### -param FileInformation 
+### -param FileInformation [out]
 
-[out]
+
 Pointer to a caller-allocated buffer that receives information about the file. The *FileInformationClass* parameter specifies the type of information. This parameter is required and cannot be **NULL**.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Size, in bytes, of the *FileInformation* buffer.
 
-### -param FileInformationClass 
+### -param FileInformationClass [in]
 
-[in]
+
 A [FILE_INFORMATION_CLASS](../wdm/ne-wdm-_file_information_class.md) value that specifies the type of file information to be returned in the *FileInformation* buffer.
 
-### -param LengthReturned 
+### -param LengthReturned [out, optional]
 
-[out, optional]
+
 Pointer to a caller-allocated variable that receives the size, in bytes, of the information returned in the *FileInformation* buffer. This parameter is optional and can be **NULL**.
 
 ## -returns
@@ -108,7 +107,7 @@ A minifilter driver calls **FltQueryInformationFile** to retrieve information fo
 
 **FltQueryInformationFile** returns zero in any member of a FILE_*XXX*_INFORMATION structure that is not supported by a particular file system. 
 
-Callers of **FltQueryInformationFile** must be running at IRQL = PASSIVE_LEVEL and [with APCs enabled](/windows-hardware/drivers/kernel/disabling-apcs).
+Callers of **FltQueryInformationFile** must be running at IRQL = PASSIVE_LEVEL and [with special kernel APCs enabled](/windows-hardware/drivers/kernel/disabling-apcs).
 
 **NOTE:**
 Do not call this routine with a non-NULL top level IRP value, as this can cause a system deadlock.

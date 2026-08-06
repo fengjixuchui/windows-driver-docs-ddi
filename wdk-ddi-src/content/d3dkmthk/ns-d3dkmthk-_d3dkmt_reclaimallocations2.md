@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_RECLAIMALLOCATIONS2
 title: _D3DKMT_RECLAIMALLOCATIONS2 (d3dkmthk.h)
 description: D3DKMT_RECLAIMALLOCATIONS2 describes video memory resources that are to be reclaimed and that the driver previously offered for reuse. Used with the D3DKMTReclaimAllocations2 function.
 old-location: display\d3dkmt_reclaimallocations2.htm
-ms.assetid: 7980F1FD-D7C2-4C74-8652-89FD38BE4D1F
 ms.date: 05/10/2018
 keywords: ["D3DKMT_RECLAIMALLOCATIONS2 structure"]
 ms.keywords: D3DKMT_RECLAIMALLOCATIONS2, D3DKMT_RECLAIMALLOCATIONS2 structure [Display Devices], _D3DKMT_RECLAIMALLOCATIONS2, d3dkmthk/D3DKMT_RECLAIMALLOCATIONS2, display.d3dkmt_reclaimallocations2
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
+ - _D3DKMT_RECLAIMALLOCATIONS2
  - D3DKMT_RECLAIMALLOCATIONS2
 ---
 
@@ -52,31 +52,31 @@ api_name:
 
 ## -struct-fields
 
-### -field hPagingQueue
+### -field hPagingQueue [in]
 
-[in] A handle to the device that created the allocations.
+A handle to the device that created the allocations.
 
-### -field NumAllocations
+### -field NumAllocations [in]
 
-[in] The number of items in the <b>pResources</b>, <b>HandleList</b>, or  <b>pDiscarded</b> members, whichever is not <b>NULL</b>.
+The number of items in the <b>pResources</b>, <b>HandleList</b>, or  <b>pDiscarded</b> members, whichever is not <b>NULL</b>.
 
-### -field pResources
+### -field pResources [in]
 
-[in] An array of <b>D3DKMT_HANDLE</b> data types that represent Direct3D runtime resource handles.
+An array of <b>D3DKMT_HANDLE</b> data types that represent Direct3D runtime resource handles.
 
-### -field HandleList
+### -field HandleList [in]
 
-[in] An array of <b>D3DKMT_HANDLE</b> data types that represent kernel-mode handles to the allocations that are to be reclaimed.
+An array of <b>D3DKMT_HANDLE</b> data types that represent kernel-mode handles to the allocations that are to be reclaimed.
 
 If <b>HandleList</b> is not <b>NULL</b>, the <b>pResources</b> member must be <b>NULL</b>.
 
-### -field pResults
+### -field pResults [in]
 
-[in] Required array of values specifying whether the surface is valid, discarded, or list commitment.
+Required array of values specifying whether the surface is valid, discarded, or list commitment.
 
-### -field pDiscarded
+### -field pDiscarded [out]
 
-[out] Optional array of boolean variables specifying whether each resource or allocation was discarded.
+Optional array of boolean variables specifying whether each resource or allocation was discarded.
 
 *pResults*
 
@@ -87,3 +87,4 @@ If <b>HandleList</b> is not <b>NULL</b>, the <b>pResources</b> member must be <b
 ### -field PagingFenceValue
 
 The paging fence to synchronize against before submitting work to the GPU which references any of the resources or allocations in the provided arrays.
+

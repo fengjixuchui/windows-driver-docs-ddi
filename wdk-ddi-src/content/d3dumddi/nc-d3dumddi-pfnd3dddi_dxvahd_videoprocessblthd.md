@@ -4,7 +4,6 @@ title: PFND3DDDI_DXVAHD_VIDEOPROCESSBLTHD (d3dumddi.h)
 description: The VideoProcessBltHD function processes video input streams and composes to an output surface.
 old-location: display\videoprocessblthd.htm
 tech.root: display
-ms.assetid: 62451fc4-92cc-4553-80cc-0843cf734a62
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DXVAHD_VIDEOPROCESSBLTHD callback function"]
 ms.keywords: PFND3DDDI_DXVAHD_VIDEOPROCESSBLTHD, PFND3DDDI_DXVAHD_VIDEOPROCESSBLTHD callback, UserModeDisplayDriver_Functions_72b2babe-fc93-4960-93d3-6bc2022227c8.xml, VideoProcessBltHD, VideoProcessBltHD callback function [Display Devices], d3dumddi/VideoProcessBltHD, display.videoprocessblthd
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - VideoProcessBltHD
-product:
- - Windows
+ - PFND3DDDI_DXVAHD_VIDEOPROCESSBLTHD
 ---
 
 # PFND3DDDI_DXVAHD_VIDEOPROCESSBLTHD callback function
@@ -52,9 +49,9 @@ The <i>VideoProcessBltHD</i> function processes video input streams and composes
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
-### -param Arg2
+### -param unnamedParam2
 
 *hDevice* [in]
 
@@ -77,3 +74,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dd
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_dxvahd_videoprocessblthd">D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD</a>
+

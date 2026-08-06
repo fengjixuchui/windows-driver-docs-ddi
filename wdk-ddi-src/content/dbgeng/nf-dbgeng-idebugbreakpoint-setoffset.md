@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugBreakpoint.SetOffset
 title: IDebugBreakpoint::SetOffset (dbgeng.h)
-description: The SetOffset method sets the location that triggers a breakpoint.
+description: The SetOffset method sets the location that triggers a breakpoint. This method belongs to the IDebugBreakpoint interface.
 old-location: debugger\setoffset.htm
 tech.root: debugger
-ms.assetid: 25898500-f16e-4838-854f-5eb299727e2b
 ms.date: 05/03/2018
 keywords: ["IDebugBreakpoint::SetOffset"]
 ms.keywords: ComOther_bb0d9a70-c4b5-4883-9dab-37bf04848d8c.xml, IDebugBreakpoint interface [Windows Debugging],SetOffset method, IDebugBreakpoint.SetOffset, IDebugBreakpoint2 interface [Windows Debugging],SetOffset method, IDebugBreakpoint2::SetOffset, IDebugBreakpoint::SetOffset, SetOffset, SetOffset method [Windows Debugging], SetOffset method [Windows Debugging],IDebugBreakpoint interface, SetOffset method [Windows Debugging],IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint2::SetOffset, dbgeng/IDebugBreakpoint::SetOffset, debugger.setoffset
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugBreakpoint.SetOffset
- - IDebugBreakpoint2.SetOffset
+ - IDebugBreakpoint::SetOffset
 ---
 
 # IDebugBreakpoint::SetOffset
@@ -51,9 +49,9 @@ The <b>SetOffset</b> method sets the location that triggers a breakpoint.
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 The location on the target that triggers the breakpoint.
 
 ## -returns
@@ -93,3 +91,4 @@ This method can also return other error values.  For more information, see <a hr
 ## -remarks
 
 For more information about how to use breakpoints, see <a href="/windows-hardware/drivers/debugger/using-breakpoints2">Using Breakpoints</a>.
+

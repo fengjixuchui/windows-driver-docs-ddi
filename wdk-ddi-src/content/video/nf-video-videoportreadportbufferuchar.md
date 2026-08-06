@@ -4,7 +4,6 @@ title: VideoPortReadPortBufferUchar function (video.h)
 description: The VideoPortReadPortBufferUchar function reads a number of bytes from a mapped I/O port and writes them into a buffer.
 old-location: display\videoportreadportbufferuchar.htm
 tech.root: display
-ms.assetid: 7eda10df-56f8-4bb5-8f36-6246e51c1638
 ms.date: 05/10/2018
 keywords: ["VideoPortReadPortBufferUchar function"]
 ms.keywords: VideoPortReadPortBufferUchar, VideoPortReadPortBufferUchar function [Display Devices], VideoPort_Functions_b3c67bc0-e12c-4625-bba6-d7fb64e0c824.xml, display.videoportreadportbufferuchar, video/VideoPortReadPortBufferUchar
@@ -54,9 +53,9 @@ The <b>VideoPortReadPortBufferUchar</b> function reads a number of bytes from a 
 
 Pointer to the I/O port. The given <i>Port</i> must be in a mapped I/O-space range returned by <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportgetdevicebase">VideoPortGetDeviceBase</a>.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 Pointer to a buffer into which the UCHAR values are written.
 
 ### -param Count

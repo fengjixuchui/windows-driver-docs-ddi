@@ -2,10 +2,9 @@
 UID: NF:wdm.ExAllocatePoolQuotaUninitialized
 title: ExAllocatePoolQuotaUninitialized
 tech.root: kernel
-ms.date: 03/01/2020
-ms.topic: language-reference
+ms.date: 01/05/2023
 targetos: Windows
-description: 
+description: The ExAllocatePoolQuotaUninitialized routine allocates pool memory, charging the quota against the current process.
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: HwStorPortProhibitedDDIs, SpNoWait, StorPortStartIo
@@ -42,9 +41,9 @@ dev_langs:
 
 ## -description
 
-This routine is a wrapper and replacement option for [**ExAllocatePoolWithQuotaTag**](nf-wdm-exallocatepoolwithquotatag.md). There is no difference in functionality.
-
 The **ExAllocatePoolQuotaUninitialized** routine allocates pool memory, charging the quota against the current process.
+
+This routine is a wrapper and replacement option for [**ExAllocatePoolWithQuotaTag**](nf-wdm-exallocatepoolwithquotatag.md). There is no difference in functionality.
 
 ## -parameters
 
@@ -72,13 +71,12 @@ If the request cannot be satisfied, **ExAllocatePoolQuotaUninitialized** raises 
 
 This routine is called by highest-level drivers that allocate memory to satisfy a request in the context of the process that originally made the I/O request. Lower-level drivers call [**ExAllocatePoolUninitialized**](nf-wdm-exallocatepooluninitialized.md) instead. 
 
-> [!NOTE]
-> Memory that **ExAllocatePoolQuotaUninitialized** allocates is uninitialized. A kernel-mode driver must first zero this memory if it is going to make it visible to user-mode software (to avoid leaking potentially privileged contents)
+Memory that **ExAllocatePoolQuotaUninitialized** allocates is uninitialized. A kernel-mode driver must first zero this memory if it is going to make it visible to user-mode software (to avoid leaking potentially privileged contents)
 
-See the Remarks section of [**ExAllocatePoolWithQuotaTag**](nf-wdm-exallocatepoolwithquotatag.md) for additional guidance.
+See the **Remarks** section of [**ExAllocatePoolWithQuotaTag**](nf-wdm-exallocatepoolwithquotatag.md) for additional guidance.
 
 ## -see-also
 
-* [**ExAllocatePoolQuotaZero**](nf-wdm-exallocatepoolquotazero.md)
-* [**ExAllocatePoolWithQuotaTag**](nf-wdm-exallocatepoolwithquotatag.md)
+[**ExAllocatePoolQuotaZero**](nf-wdm-exallocatepoolquotazero.md)
 
+[**ExAllocatePoolWithQuotaTag**](nf-wdm-exallocatepoolwithquotatag.md)

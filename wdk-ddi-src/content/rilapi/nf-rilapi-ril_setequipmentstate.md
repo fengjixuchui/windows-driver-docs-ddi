@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_SetEquipmentState
 title: RIL_SetEquipmentState function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_SetEquipmentState function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_setequipmentstate.htm
 tech.root: netvista
-ms.assetid: 52b76027-5562-403b-9993-40d3d9a33e35
 ms.date: 05/02/2018
 keywords: ["RIL_SetEquipmentState function"]
 ms.keywords: RIL_SetEquipmentState, RIL_SetEquipmentState method [Network Drivers Starting with Windows Vista], netvista.ril_setequipmentstate, rilapi/RIL_SetEquipmentState

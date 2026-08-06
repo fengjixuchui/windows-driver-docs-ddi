@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_GETMULTISAMPLEMETHODLIST
 title: _D3DKMT_GETMULTISAMPLEMETHODLIST (d3dkmthk.h)
 description: The D3DKMT_GETMULTISAMPLEMETHODLIST structure describes parameters to retrieve the list of multiple-sample methods for an allocation.
 old-location: display\d3dkmt_getmultisamplemethodlist.htm
-ms.assetid: 138f6f75-3986-42f8-840c-d48edb271203
 ms.date: 05/10/2018
 keywords: ["D3DKMT_GETMULTISAMPLEMETHODLIST structure"]
 ms.keywords: D3DKMT_GETMULTISAMPLEMETHODLIST, D3DKMT_GETMULTISAMPLEMETHODLIST structure [Display Devices], OpenGL_Structs_ccb62d63-4a70-4fb4-b6db-d8a5e585b222.xml, _D3DKMT_GETMULTISAMPLEMETHODLIST, d3dkmthk/D3DKMT_GETMULTISAMPLEMETHODLIST, display.d3dkmt_getmultisamplemethodlist
 req.header: d3dkmthk.h
 req.include-header: D3dumddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_GETMULTISAMPLEMETHODLIST
  - D3DKMT_GETMULTISAMPLEMETHODLIST
 ---
 
@@ -52,33 +52,33 @@ The D3DKMT_GETMULTISAMPLEMETHODLIST structure describes parameters to retrieve t
 
 ## -struct-fields
 
-### -field hAdapter
+### -field hAdapter [in]
 
-[in] A handle to the graphics adapter.
+A handle to the graphics adapter.
 
-### -field VidPnSourceId
+### -field VidPnSourceId [in]
 
-[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the allocation is on.
+The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the allocation is on.
 
-### -field Width
+### -field Width [in]
 
-[in] The width of the allocation, in pixels.
+The width of the allocation, in pixels.
 
-### -field Height
+### -field Height [in]
 
-[in] The height of the allocation, in pixels.
+The height of the allocation, in pixels.
 
-### -field Format
+### -field Format [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the allocation.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the allocation.
 
-### -field pMethodList
+### -field pMethodList [out]
 
-[out] An array of <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_multisamplemethod">D3DKMT_MULTISAMPLEMETHOD</a> structures that describe the list of multiple-sampling methods used for the allocation; otherwise, this member is <b>NULL</b>.
+An array of <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_multisamplemethod">D3DKMT_MULTISAMPLEMETHOD</a> structures that describe the list of multiple-sampling methods used for the allocation; otherwise, this member is <b>NULL</b>.
 
-### -field MethodCount
+### -field MethodCount [in/out]
 
-[in/out] On input, the number of elements that the array that is specified by <b>pMethodList</b> can hold. On output, this member specifies the required number of elements that the array that is specified by <b>pMethodList</b> should hold.
+On input, the number of elements that the array that is specified by <b>pMethodList</b> can hold. On output, this member specifies the required number of elements that the array that is specified by <b>pMethodList</b> should hold.
 
 ## -remarks
 
@@ -95,3 +95,4 @@ If the runtime returns a non-<b>NULL</b> value in <b>pMethodList</b>, the runtim
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_multisamplemethod">D3DKMT_MULTISAMPLEMETHOD</a>
+

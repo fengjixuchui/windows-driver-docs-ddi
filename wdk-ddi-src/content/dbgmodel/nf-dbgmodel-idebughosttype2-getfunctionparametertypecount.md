@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostType2.GetFunctionParameterTypeCount
 title: IDebugHostType2::GetFunctionParameterTypeCount (dbgmodel.h)
-description: The GetFunctionParameterTypeCount method returns the number of arguments that the function takes.
-ms.assetid: 262bfb7d-2a10-49f0-860a-f885bbe184e9
+description: "The IDebugHostType2::GetFunctionParameterTypeCount method, when called on a type for a function, gets the number of arguments that the function takes."
 ms.date: 09/20/2018
 keywords: ["IDebugHostType2::GetFunctionParameterTypeCount"]
 ms.keywords: IDebugHostType2::GetFunctionParameterTypeCount, GetFunctionParameterTypeCount, IDebugHostType2.GetFunctionParameterTypeCount, IDebugHostType2::GetFunctionParameterTypeCount, IDebugHostType2.GetFunctionParameterTypeCount
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostType2.GetFunctionParameterTypeCount
+ - IDebugHostType2::GetFunctionParameterTypeCount
 ---
 
 # IDebugHostType2::GetFunctionParameterTypeCount
@@ -46,13 +45,13 @@ api_name:
 
 The GetFunctionParameterTypeCount method returns the number of arguments that the function takes. 
 
-Note that the C/C++ ellipsis based variable argument marker is not considered in this count. The presence of such must be detected via the GetFunctionVarArgsKind method. This will only include arguments before the ellipsis.
+Note that the C/C++ ellipsis based variable argument marker is not considered in this count. The presence of such must be detected via the [GetFunctionVarArgsKind method](nf-dbgmodel-idebughosttype2-getfunctionvarargskind.md). This will only include arguments before the ellipsis.
 
 ## -parameters
 
 ### -param count
 
-The number of arguments to the function (ignoring the variable argument ellipsis) will be returned here. The types of each individual argument may be acquired via the GetFunctionParameterTypeAt method.
+The number of arguments to the function (ignoring the variable argument ellipsis) will be returned here. The types of each individual argument may be acquired via the [GetFunctionParameterTypeAt method](nf-dbgmodel-idebughosttype2-getfunctionparametertypeat.md).
 
 ## -returns
 

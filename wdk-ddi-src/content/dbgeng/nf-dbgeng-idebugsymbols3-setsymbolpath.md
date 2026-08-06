@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols3.SetSymbolPath
 title: IDebugSymbols3::SetSymbolPath (dbgeng.h)
-description: The SetSymbolPath method sets the symbol path.
+description: The SetSymbolPath method sets the symbol path. This method belongs to the IDebugSymbols3 interface.
 old-location: debugger\setsymbolpath.htm
 tech.root: debugger
-ms.assetid: c003fb1d-b24b-4e79-b8f4-6ff425f77554
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::SetSymbolPath"]
 ms.keywords: IDebugSymbols interface [Windows Debugging],SetSymbolPath method, IDebugSymbols2 interface [Windows Debugging],SetSymbolPath method, IDebugSymbols2::SetSymbolPath, IDebugSymbols3 interface [Windows Debugging],SetSymbolPath method, IDebugSymbols3.SetSymbolPath, IDebugSymbols3::SetSymbolPath, IDebugSymbols::SetSymbolPath, IDebugSymbols_b699ac62-be52-4f79-9762-8ed1274dfb41.xml, SetSymbolPath, SetSymbolPath method [Windows Debugging], SetSymbolPath method [Windows Debugging],IDebugSymbols interface, SetSymbolPath method [Windows Debugging],IDebugSymbols2 interface, SetSymbolPath method [Windows Debugging],IDebugSymbols3 interface, dbgeng/IDebugSymbols2::SetSymbolPath, dbgeng/IDebugSymbols3::SetSymbolPath, dbgeng/IDebugSymbols::SetSymbolPath, debugger.setsymbolpath
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.SetSymbolPath
- - IDebugSymbols2.SetSymbolPath
- - IDebugSymbols3.SetSymbolPath
+ - IDebugSymbols3::SetSymbolPath
 ---
 
 # IDebugSymbols3::SetSymbolPath
@@ -52,9 +49,9 @@ The <b>SetSymbolPath</b>  method sets the symbol path.
 
 ## -parameters
 
-### -param Path 
+### -param Path [in]
 
-[in]
+
 Specifies the new symbol path.  This is a string that contains symbol path elements separated by semicolons (;).  Each symbol path element can specify either a directory or a symbol server.
 
 ## -returns
@@ -102,3 +99,4 @@ For more information about manipulating the symbol path, see <a href="/windows-h
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

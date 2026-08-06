@@ -4,7 +4,6 @@ title: _FA_ENTRY (extsfns.h)
 description: A DebugFailureAnalysis object has a collection of failure analysis entries (FA entries). Each FA entry is represented by an FA_ENTRY structure. For more information, see Failure Analysis Entries, Tags, and Data Types.
 old-location: debugger\fa_entry.htm
 tech.root: debugger
-ms.assetid: 912DCC1E-2C81-4702-8E12-6331DFB298F0
 ms.date: 05/03/2018
 keywords: ["FA_ENTRY structure"]
 ms.keywords: "*PFA_ENTRY, FA_ENTRY, FA_ENTRY structure [Windows Debugging], _FA_ENTRY, debugger.fa_entry, extsfns/FA_ENTRY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - extsfns.h
 api_name:
+ - _FA_ENTRY
+ - PFA_ENTRY
  - FA_ENTRY
 ---
 
@@ -81,3 +82,4 @@ The size of the <a href="/windows-hardware/drivers/debugger/failure-analysis-ent
 
 
 <a href="/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin">_EFN_Analyze</a>
+

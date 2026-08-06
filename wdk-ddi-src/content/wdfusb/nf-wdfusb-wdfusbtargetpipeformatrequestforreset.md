@@ -4,7 +4,6 @@ title: WdfUsbTargetPipeFormatRequestForReset function (wdfusb.h)
 description: The WdfUsbTargetPipeFormatRequestForReset method builds a reset request for a specified USB pipe, but it does not send the request.
 old-location: wdf\wdfusbtargetpipeformatrequestforreset.htm
 tech.root: wdf
-ms.assetid: 10f5296c-6be2-4f88-952b-b23e518b844a
 ms.date: 02/26/2018
 keywords: ["WdfUsbTargetPipeFormatRequestForReset function"]
 ms.keywords: DFUsbRef_5a1aa46c-9d8a-4e6b-9003-723a65c314f3.xml, WdfUsbTargetPipeFormatRequestForReset, WdfUsbTargetPipeFormatRequestForReset method, kmdf.wdfusbtargetpipeformatrequestforreset, wdf.wdfusbtargetpipeformatrequestforreset, wdfusb/WdfUsbTargetPipeFormatRequestForReset
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfUsbTargetPipeFormatRequestForReset</b> method builds a reset request f
 
 ## -parameters
 
-### -param Pipe 
+### -param Pipe [in]
 
-[in]
+
 A handle to a framework pipe object that was obtained by calling <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbinterfacegetconfiguredpipe">WdfUsbInterfaceGetConfiguredPipe</a>.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object. For more information, see the following Remarks section.
 
 ## -returns

@@ -4,7 +4,6 @@ title: NdisMFreeNetBufferSGList function (ndis.h)
 description: Bus-master miniport drivers call the NdisMFreeNetBufferSGList function to free scatter/gather list resources that were allocated by calling the NdisMAllocateNetBufferSGList function.
 old-location: netvista\ndismfreenetbuffersglist.htm
 tech.root: netvista
-ms.assetid: 22945e04-9feb-4f4b-9ca6-916dab372a64
 ms.date: 05/02/2018
 keywords: ["NdisMFreeNetBufferSGList function"]
 ms.keywords: NdisMFreeNetBufferSGList, NdisMFreeNetBufferSGList function [Network Drivers Starting with Windows Vista], ndis/NdisMFreeNetBufferSGList, ndis_sgdma_ref_e2f486cf-eba4-410d-ac18-724efb32fd59.xml, netvista.ndismfreenetbuffersglist
@@ -62,24 +61,24 @@ Bus-master miniport drivers call the
 
 ## -parameters
 
-### -param NdisMiniportDmaHandle 
+### -param NdisMiniportDmaHandle [in]
 
-[in]
+
 A handle to a context area that NDIS uses to manage a DMA resource. The caller obtained this
      handle by calling the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterscattergatherdma">
      NdisMRegisterScatterGatherDma</a> function.
 
-### -param pSGL 
+### -param pSGL [in]
 
-[in]
+
 A pointer to a miniport driver scatter/gather list buffer.
 
-### -param NetBuffer 
+### -param NetBuffer [in]
 
-[in]
+
 A pointer to the 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a> structure associated with the
+     <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a> structure associated with the
      specified scatter/gather list buffer.
 
 ## -remarks
@@ -92,7 +91,7 @@ Bus-master miniport drivers must call the
     scatter/gather list. Do not call 
     <b>NdisMFreeNetBufferSGList</b> while the driver or hardware is still accessing the memory that is
     described by the 
-    <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a> structure that is associated with the
+    <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a> structure that is associated with the
     scatter/gather list.
 
 Miniport drivers can free the buffer that was specified in the 
@@ -112,7 +111,7 @@ Before accessing received data, miniport drivers must call <b>NdisMFreeNetBuffer
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a>
 
 
 

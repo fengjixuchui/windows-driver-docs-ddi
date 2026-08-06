@@ -4,7 +4,6 @@ title: NdisOpenConfigurationKeyByIndex function (ndis.h)
 description: The NdisOpenConfigurationKeyByIndex function opens a subkey of a given open registry key that is designated by a caller-supplied handle.
 old-location: netvista\ndisopenconfigurationkeybyindex.htm
 tech.root: netvista
-ms.assetid: e405853a-cf25-4214-82a9-bc3d76334413
 ms.date: 05/02/2018
 keywords: ["NdisOpenConfigurationKeyByIndex function"]
 ms.keywords: NdisOpenConfigurationKeyByIndex, NdisOpenConfigurationKeyByIndex function [Network Drivers Starting with Windows Vista], ndis/NdisOpenConfigurationKeyByIndex, ndis_configuration_ref_71c37932-c758-475c-9c84-c176c6c40cf8.xml, netvista.ndisopenconfigurationkeybyindex
@@ -53,9 +52,9 @@ The
 
 ## -parameters
 
-### -param Status 
+### -param Status [out]
 
-[out]
+
 A pointer to a caller-supplied variable in which this function returns the status of its attempt
      to open the designated registry key. Possible return values are one of the following:
      
@@ -76,33 +75,33 @@ NDIS has initialized accessed to the subkey specified by
 
 The key could not be opened.
 
-### -param ConfigurationHandle 
+### -param ConfigurationHandle [in]
 
-[in]
+
 The handle to a registry key for which a subkey is to be opened. Typically, 
      <i>ConfigurationHandle</i> is returned by the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenconfigurationex">
      NdisOpenConfigurationEx</a> function.
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 The index of the subkey to be opened. This zero-based value designates the subkey to be opened
      under the key already opened with 
      <i>ConfigurationHandle</i> .
 
-### -param KeyName 
+### -param KeyName [out]
 
-[out]
+
 A pointer to an NDIS_STRING type containing a caller-supplied buffer in which this functions
      returns a counted string in the system-default character set. This string specifies the name of the
      opened subkey if the call succeeds. For Microsoft Windows 2000 and later drivers, this string contains
      Unicode characters. That is, for Windows 2000 and later, NDIS defines the NDIS_STRING type as a 
      <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> type.
 
-### -param KeyHandle 
+### -param KeyHandle [out]
 
-[out]
+
 A pointer to a caller-supplied variable in which this function returns a handle to the opened
      subkey if the call succeeds.
 

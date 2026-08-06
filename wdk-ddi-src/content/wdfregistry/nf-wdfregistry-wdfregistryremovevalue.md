@@ -4,7 +4,6 @@ title: WdfRegistryRemoveValue function (wdfregistry.h)
 description: The WdfRegistryRemoveValue method removes a specified value and its data from a specified registry key.
 old-location: wdf\wdfregistryremovevalue.htm
 tech.root: wdf
-ms.assetid: 485583b2-2736-4ecf-b58c-65b4d4f47a20
 ms.date: 02/26/2018
 keywords: ["WdfRegistryRemoveValue function"]
 ms.keywords: DFRegKeyObjectRef_2928cd6b-7fb0-46aa-bcc4-4def625bb2fe.xml, WdfRegistryRemoveValue, WdfRegistryRemoveValue method, kmdf.wdfregistryremovevalue, wdf.wdfregistryremovevalue, wdfregistry/WdfRegistryRemoveValue
@@ -55,14 +54,14 @@ The <b>WdfRegistryRemoveValue</b> method removes a specified value and its data 
 
 ## -parameters
 
-### -param Key 
+### -param Key [in]
 
-[in]
+
 A handle to a registry-key object that represents an opened registry key.
 
-### -param ValueName 
+### -param ValueName [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a value name.
 
 ## -returns

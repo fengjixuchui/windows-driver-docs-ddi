@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient2.CreateClient
 title: IDebugClient2::CreateClient (dbgeng.h)
-description: The CreateClient method creates a new client object for the current thread.
+description: The CreateClient method creates a new client object for the current thread. This method belongs to the IDebugClient2 interface.
 old-location: debugger\createclient.htm
 tech.root: debugger
-ms.assetid: 61733b3e-87e9-4bb1-bed0-44efeffd7e4f
 ms.date: 05/03/2018
 keywords: ["IDebugClient2::CreateClient"]
 ms.keywords: CreateClient, CreateClient method [Windows Debugging], CreateClient method [Windows Debugging],IDebugClient interface, CreateClient method [Windows Debugging],IDebugClient2 interface, CreateClient method [Windows Debugging],IDebugClient3 interface, CreateClient method [Windows Debugging],IDebugClient4 interface, CreateClient method [Windows Debugging],IDebugClient5 interface, IDebugClient interface [Windows Debugging],CreateClient method, IDebugClient2 interface [Windows Debugging],CreateClient method, IDebugClient2.CreateClient, IDebugClient2::CreateClient, IDebugClient3 interface [Windows Debugging],CreateClient method, IDebugClient3::CreateClient, IDebugClient4 interface [Windows Debugging],CreateClient method, IDebugClient4::CreateClient, IDebugClient5 interface [Windows Debugging],CreateClient method, IDebugClient5::CreateClient, IDebugClient::CreateClient, IDebugClient_baa33ba0-bc95-4bfb-b8bf-b91598833599.xml, dbgeng/IDebugClient2::CreateClient, dbgeng/IDebugClient3::CreateClient, dbgeng/IDebugClient4::CreateClient, dbgeng/IDebugClient5::CreateClient, dbgeng/IDebugClient::CreateClient, debugger.createclient
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.CreateClient
- - IDebugClient2.CreateClient
- - IDebugClient3.CreateClient
- - IDebugClient4.CreateClient
- - IDebugClient5.CreateClient
+ - IDebugClient2::CreateClient
 ---
 
 # IDebugClient2::CreateClient
@@ -54,9 +49,9 @@ The <b>CreateClient</b> method creates a new client object for the current threa
 
 ## -parameters
 
-### -param Client 
+### -param Client [out]
 
-[out]
+
 Receives an interface pointer for the new client.
 
 ## -returns
@@ -114,3 +109,4 @@ For more information about client objects and how they are used in the debugger 
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient5">IDebugClient5</a>
+

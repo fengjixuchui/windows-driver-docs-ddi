@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient5.SetOutputMask
 title: IDebugClient5::SetOutputMask (dbgeng.h)
-description: The SetOutputMask method sets the output mask for the client.
+description: The SetOutputMask method sets the output mask for the client. This method belongs to the IDebugClient5 interface.
 old-location: debugger\setoutputmask.htm
 tech.root: debugger
-ms.assetid: 8fef4def-9735-4623-841b-a18995d4d403
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::SetOutputMask"]
 ms.keywords: IDebugClient interface [Windows Debugging],SetOutputMask method, IDebugClient2 interface [Windows Debugging],SetOutputMask method, IDebugClient2::SetOutputMask, IDebugClient3 interface [Windows Debugging],SetOutputMask method, IDebugClient3::SetOutputMask, IDebugClient4 interface [Windows Debugging],SetOutputMask method, IDebugClient4::SetOutputMask, IDebugClient5 interface [Windows Debugging],SetOutputMask method, IDebugClient5.SetOutputMask, IDebugClient5::SetOutputMask, IDebugClient::SetOutputMask, IDebugClient_85242101-702d-4c9a-b71a-5eddd76a4fa6.xml, SetOutputMask, SetOutputMask method [Windows Debugging], SetOutputMask method [Windows Debugging],IDebugClient interface, SetOutputMask method [Windows Debugging],IDebugClient2 interface, SetOutputMask method [Windows Debugging],IDebugClient3 interface, SetOutputMask method [Windows Debugging],IDebugClient4 interface, SetOutputMask method [Windows Debugging],IDebugClient5 interface, dbgeng/IDebugClient2::SetOutputMask, dbgeng/IDebugClient3::SetOutputMask, dbgeng/IDebugClient4::SetOutputMask, dbgeng/IDebugClient5::SetOutputMask, dbgeng/IDebugClient::SetOutputMask, debugger.setoutputmask
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.SetOutputMask
- - IDebugClient2.SetOutputMask
- - IDebugClient3.SetOutputMask
- - IDebugClient4.SetOutputMask
- - IDebugClient5.SetOutputMask
+ - IDebugClient5::SetOutputMask
 ---
 
 # IDebugClient5::SetOutputMask
@@ -54,9 +49,9 @@ The <b>SetOutputMask</b> method sets the output mask for the client.
 
 ## -parameters
 
-### -param Mask 
+### -param Mask [in]
 
-[in]
+
 Specifies the new output mask for the client.  See <a href="/windows-hardware/drivers/debugger/debug-output-xxx">DEBUG_OUTPUT_XXX</a> for a description of the possible values for <i>Mask</i>.
 
 ## -returns
@@ -112,3 +107,4 @@ For an overview of output in the debugger engine, see <a href="/windows-hardware
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-setotheroutputmask">SetOtherOutputMask</a>
+

@@ -4,7 +4,6 @@ title: _SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG (sercx.h)
 description: The SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG structure contains information that version 2 of the serial framework extension (SerCx2) uses to configure a new custom-receive-transaction object.
 old-location: serports\sercx2_custom_receive_transaction_config.htm
 tech.root: serports
-ms.assetid: 7D9E4F33-FCEE-4783-AE33-DCD3CB0286AE
 ms.date: 04/23/2018
 keywords: ["SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG structure"]
 ms.keywords: "*PSERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG, 2/PSERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG, 2/SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG, PSERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG, PSERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG structure pointer [Serial Ports], SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG, SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG structure [Serial Ports], _SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG, serports.sercx2_custom_receive_transaction_config"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
+ - _SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG
+ - PSERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG
  - SERCX2_CUSTOM_RECEIVE_TRANSACTION_CONFIG
 ---
 
@@ -109,3 +110,4 @@ The <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customreceivetra
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customreceivetransactioncreate">SerCx2CustomReceiveTransactionCreate</a>
+

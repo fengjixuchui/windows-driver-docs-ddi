@@ -4,7 +4,6 @@ title: KsFilterFactoryGetSymbolicLink function (ks.h)
 description: The KsFilterFactoryGetSymbolicLink function returns the symbolic link associated with a given filter factory.
 old-location: stream\ksfilterfactorygetsymboliclink.htm
 tech.root: stream
-ms.assetid: db657820-75b7-49fe-904d-05f8bc45b8c5
 ms.date: 04/23/2018
 keywords: ["KsFilterFactoryGetSymbolicLink function"]
 ms.keywords: KsFilterFactoryGetSymbolicLink, KsFilterFactoryGetSymbolicLink function [Streaming Media Devices], avfunc_066ba440-b7d8-4c75-99bd-7b7cb38e4d70.xml, ks/KsFilterFactoryGetSymbolicLink, stream.ksfilterfactorygetsymboliclink
@@ -51,9 +50,9 @@ The<b> KsFilterFactoryGetSymbolicLink</b> function returns the symbolic link ass
 
 ## -parameters
 
-### -param FilterFactory 
+### -param FilterFactory [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilterfactory">KSFILTERFACTORY</a> structure for which to acquire the symbolic link.
 
 ## -returns

@@ -4,7 +4,6 @@ title: PFND3DDDI_DESTROYCRYPTOSESSION (d3dumddi.h)
 description: The DestroyCryptoSession function releases resources for the encryption session that the CreateCryptoSession function creates.
 old-location: display\destroycryptosession.htm
 tech.root: display
-ms.assetid: 4035ef73-e1a2-49e4-808d-c40c980393a4
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DESTROYCRYPTOSESSION callback function"]
 ms.keywords: DestroyCryptoSession, DestroyCryptoSession callback function [Display Devices], PFND3DDDI_DESTROYCRYPTOSESSION, PFND3DDDI_DESTROYCRYPTOSESSION callback, UserModeDisplayDriver_Functions_c1fa988d-a8b7-4538-94cd-d364873f4216.xml, d3dumddi/DestroyCryptoSession, display.destroycryptosession
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - DestroyCryptoSession
-product:
- - Windows
+ - PFND3DDDI_DESTROYCRYPTOSESSION
 ---
 
 # PFND3DDDI_DESTROYCRYPTOSESSION callback function
@@ -56,7 +53,7 @@ The <b>DestroyCryptoSession</b> function releases resources for the encryption s
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -78,3 +75,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dd
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_destroycryptosession">D3DDDIARG_DESTROYCRYPTOSESSION</a>
+

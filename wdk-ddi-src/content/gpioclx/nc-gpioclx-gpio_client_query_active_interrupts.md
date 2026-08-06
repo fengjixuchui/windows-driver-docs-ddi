@@ -4,7 +4,6 @@ title: GPIO_CLIENT_QUERY_ACTIVE_INTERRUPTS (gpioclx.h)
 description: The CLIENT_QueryActiveInterrupts event callback function queries the state of a set of general-purpose I/O (GPIO) pins that are configured as interrupt inputs.
 old-location: gpio\client_queryactiveinterrupts.htm
 tech.root: GPIO
-ms.assetid: 9B47A7B2-90C3-480F-85D8-44DD7E9F0BFA
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_QUERY_ACTIVE_INTERRUPTS callback function"]
 ms.keywords: CLIENT_QueryActiveInterrupts, CLIENT_QueryActiveInterrupts callback, CLIENT_QueryActiveInterrupts callback function [Parallel Ports], GPIO.client_queryactiveinterrupts, GPIO_CLIENT_QUERY_ACTIVE_INTERRUPTS, gpioclx/CLIENT_QueryActiveInterrupts
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_QueryActiveInterrupts
+ - GPIO_CLIENT_QUERY_ACTIVE_INTERRUPTS
 ---
 
 # GPIO_CLIENT_QUERY_ACTIVE_INTERRUPTS callback function
@@ -50,14 +49,14 @@ The <i>CLIENT_QueryActiveInterrupts</i> event callback function queries the stat
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param QueryActiveParameters 
+### -param QueryActiveParameters [in, out]
 
-[in, out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_query_active_interrupts_parameters">GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS</a> structure that, on entry, describes the GPIO interrupt pins to query, and, on exit, contains the active and enabled interrupt state of these pins.
 
 ## -returns
@@ -124,3 +123,4 @@ The GPIO_CLIENT_QUERY_ACTIVE_INTERRUPTS function type is defined in the Gpioclx.
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_query_active_interrupts_parameters">GPIO_QUERY_ACTIVE_INTERRUPTS_PARAMETERS</a>
+

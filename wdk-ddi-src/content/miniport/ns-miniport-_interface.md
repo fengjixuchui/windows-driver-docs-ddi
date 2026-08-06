@@ -1,10 +1,9 @@
 ---
 UID: NS:miniport._INTERFACE
 title: _INTERFACE (miniport.h)
-description: The INTERFACE structure describes an interface that is exported by a driver for use by other drivers.
+description: The _INTERFACE structure (miniport.h) describes an interface that is exported by a driver for use by other drivers.
 old-location: kernel\interface.htm
 tech.root: kernel
-ms.assetid: d853643d-d3e8-40cc-a8a8-848f36f3bdae
 ms.date: 04/30/2018
 keywords: ["INTERFACE structure"]
 ms.keywords: "*PINTERFACE, INTERFACE, INTERFACE structure [Kernel-Mode Driver Architecture], PINTERFACE, PINTERFACE structure pointer [Kernel-Mode Driver Architecture], _INTERFACE, kernel.interface, kstruct_b_667d57fa-a959-4904-a15e-af4d4f44988e.xml, wdm/INTERFACE, wdm/PINTERFACE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _INTERFACE
+ - PINTERFACE
  - INTERFACE
 ---
 
@@ -93,3 +94,4 @@ Each driver that imports the interface (whether by sending <b>IRP_MN_QUERY_INTER
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pinterface_reference">InterfaceReference</a>
+

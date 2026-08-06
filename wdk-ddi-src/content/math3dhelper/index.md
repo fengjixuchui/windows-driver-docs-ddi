@@ -1,18 +1,18 @@
 ---
+description: "Learn more about: Math3dhelper.h header"
 UID: NA:math3dhelper
 title: Math3dhelper.h header
 ms.assetid: 7becfbc9-ce8a-436a-95fa-b67bf84583d3
 ms.date: 07/30/2018
 keywords: ["Math3dhelper.h header"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
 tech.root: sensors
-ms.topic: portal
 ms.custom: RS5
 f1_keywords:
  - math3dhelper
  - math3dhelper/math3dhelper
+api_name:
+ - math3dhelper
 ---
 
 # Math3dhelper.h header

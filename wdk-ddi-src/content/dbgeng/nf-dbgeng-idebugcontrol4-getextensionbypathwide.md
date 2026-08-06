@@ -4,7 +4,6 @@ title: IDebugControl4::GetExtensionByPathWide (dbgeng.h)
 description: The GetExtensionByPathWide method returns the handle for an already loaded extension library.
 old-location: debugger\getextensionbypathwide.htm
 tech.root: debugger
-ms.assetid: 85257190-2b39-487d-ada6-4c8cd0b1450f
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::GetExtensionByPathWide"]
 ms.keywords: GetExtensionByPathWide, GetExtensionByPathWide method [Windows Debugging], GetExtensionByPathWide method [Windows Debugging],IDebugControl4 interface, IDebugControl4 interface [Windows Debugging],GetExtensionByPathWide method, IDebugControl4.GetExtensionByPathWide, IDebugControl4::GetExtensionByPathWide, dbgeng/IDebugControl4::GetExtensionByPathWide, debugger.getextensionbypathwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.GetExtensionByPathWide
+ - IDebugControl4::GetExtensionByPathWide
 ---
 
 # IDebugControl4::GetExtensionByPathWide
@@ -50,14 +49,14 @@ The <b>GetExtensionByPathWide</b>  method returns the handle for an already load
 
 ## -parameters
 
-### -param Path 
+### -param Path [in]
 
-[in]
+
 Specifies the fully qualified path and file name of the extension library.
 
-### -param Handle 
+### -param Handle [out]
 
-[out]
+
 Receives the handle of the extension library.
 
 ## -returns
@@ -95,3 +94,4 @@ For more information on using extension libraries, see <a href="/windows-hardwar
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol4">IDebugControl4</a>
+

@@ -4,7 +4,6 @@ title: IMiniportWavePciStream::GetAllocatorFraming (portcls.h)
 description: The GetAllocatorFraming method gets the preferred allocator-framing parameters for the stream.
 old-location: audio\iminiportwavepcistream_getallocatorframing.htm
 tech.root: audio
-ms.assetid: 0b140ddc-52b5-4aee-afeb-5b2be57fe7b7
 ms.date: 05/08/2018
 keywords: ["IMiniportWavePciStream::GetAllocatorFraming"]
 ms.keywords: GetAllocatorFraming, GetAllocatorFraming method [Audio Devices], GetAllocatorFraming method [Audio Devices],IMiniportWavePciStream interface, IMiniportWavePciStream interface [Audio Devices],GetAllocatorFraming method, IMiniportWavePciStream.GetAllocatorFraming, IMiniportWavePciStream::GetAllocatorFraming, audio.iminiportwavepcistream_getallocatorframing, audmp-routines_aef1d53f-2db6-4372-90fa-fb501c199e41.xml, portcls/IMiniportWavePciStream::GetAllocatorFraming
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWavePciStream.GetAllocatorFraming
+ - IMiniportWavePciStream::GetAllocatorFraming
 ---
 
 # IMiniportWavePciStream::GetAllocatorFraming
@@ -50,9 +49,9 @@ The <code>GetAllocatorFraming</code> method gets the preferred allocator-framing
 
 ## -parameters
 
-### -param AllocatorFraming 
+### -param AllocatorFraming [out]
 
-[out]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksallocator_framing">KSALLOCATOR_FRAMING</a> structure into which the method writes the miniport driver's allocator-framing preferences for this stream.
 
 ## -returns
@@ -72,3 +71,4 @@ See the discussion of allocator framing in <a href="/windows-hardware/drivers/au
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksallocator_framing">KSALLOCATOR_FRAMING</a>
+

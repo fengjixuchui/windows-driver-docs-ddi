@@ -4,7 +4,6 @@ title: WdfIoTargetGetState function (wdfiotarget.h)
 description: The WdfIoTargetGetState method returns state information for a local or remote I/O target.
 old-location: wdf\wdfiotargetgetstate.htm
 tech.root: wdf
-ms.assetid: 38e22922-d9de-4dfd-9da9-c131b789f5d6
 ms.date: 02/26/2018
 keywords: ["WdfIoTargetGetState function"]
 ms.keywords: DFIOTargetRef_a11b8879-0766-4071-b1bd-c4cd43a0973b.xml, WdfIoTargetGetState, WdfIoTargetGetState method, kmdf.wdfiotargetgetstate, wdf.wdfiotargetgetstate, wdfiotarget/WdfIoTargetGetState
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,9 +54,9 @@ The <b>WdfIoTargetGetState</b> method returns state information for a local or r
 
 ## -parameters
 
-### -param IoTarget 
+### -param IoTarget [in]
 
-[in]
+
 A handle to a local or remote I/O target object that was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicegetiotarget">WdfDeviceGetIoTarget</a> or <a href="/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetcreate">WdfIoTargetCreate</a> or from a method that a specialized I/O target supplies.
 
 ## -returns

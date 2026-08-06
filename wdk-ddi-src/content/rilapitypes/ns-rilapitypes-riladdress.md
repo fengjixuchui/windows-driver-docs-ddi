@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILADDRESS
 title: RILADDRESS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILADDRESS structure for internal use only. Don't use this structure in your code."
 old-location: netvista\riladdress_2.htm
 tech.root: netvista
-ms.assetid: 45888814-28c4-4cbc-ace8-7b4aa682b91b
 ms.date: 02/26/2018
 keywords: ["RILADDRESS structure"]
 ms.keywords: "*LPRILADDRESS, RILADDRESS, RILADDRESS structure [Network Drivers Starting with Windows Vista], netvista.riladdress_2, rilapitypes/RILADDRESS"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: RILADDRESS, *LPRILADDRESS
-req.product: Windows 10 or later.
 f1_keywords:
  - RILADDRESS
  - rilapitypes/RILADDRESS
@@ -42,6 +40,7 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILADDRESS
+ - LPRILADDRESS
 ---
 
 # RILADDRESS structure (rilapitypes.h)

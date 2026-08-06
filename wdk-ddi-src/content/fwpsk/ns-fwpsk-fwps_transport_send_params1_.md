@@ -4,7 +4,6 @@ title: FWPS_TRANSPORT_SEND_PARAMS1_ (fwpsk.h)
 description: The FWPS_TRANSPORT_SEND_PARAMS1 structure defines properties of an outbound transport layer packet.Note  FWPS_TRANSPORT_SEND_PARAMS1 is the specific version of FWPS_TRANSPORT_SEND_PARAMS used in Windows 7 and later.
 old-location: netvista\fwps_transport_send_params1.htm
 tech.root: netvista
-ms.assetid: 8d5653e4-a755-4066-b25a-f8f589821412
 ms.date: 05/02/2018
 keywords: ["FWPS_TRANSPORT_SEND_PARAMS1_ structure"]
 ms.keywords: FWPS_TRANSPORT_SEND_PARAMS1, FWPS_TRANSPORT_SEND_PARAMS1 structure [Network Drivers Starting with Windows Vista], FWPS_TRANSPORT_SEND_PARAMS1_, fwpsk/FWPS_TRANSPORT_SEND_PARAMS1, netvista.fwps_transport_send_params1, wfp_ref_3_struct_3_fwps_P-Z_55024e38-5ae1-4a2c-8595-2722e481a947.xml
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - fwpsk.h
 api_name:
+ - FWPS_TRANSPORT_SEND_PARAMS1_
  - FWPS_TRANSPORT_SEND_PARAMS1
 ---
 
@@ -95,14 +95,9 @@ typedef struct {
 ```
 
 
-### -field OPTIONAL
-
- 
 
 
-
-
-#### - controlData
+### -field controlData
 
 An optional pointer to a buffer that contains socket control data specified by the 
       <a href="/windows/win32/api/winsock2/nf-winsock2-wsasendmsg">WSASendMsg</a> function. For information about the <b>WSACMSGHDR</b> type, see 
@@ -121,18 +116,18 @@ If socket control data is not <b>NULL</b>, it must be deep-copied in the callout
       function is called.
 
 
-#### - controlDataLength
+### -field controlDataLength
 
 The length, in bytes, of the 
      <b>controlData</b> member.
 
 
-#### - headerIncludeHeader
+### -field headerIncludeHeader
 
 The transport header to include.
 
 
-#### - headerIncludeHeaderLength
+### -field headerIncludeHeaderLength
 
 The length, in bytes, of the 
      <b>headerIncludeHeader</b> member.
@@ -158,3 +153,4 @@ The length, in bytes, of the
 
 
 <a href="/windows-hardware/drivers/ddi/_netvista/">classifyFn</a>
+

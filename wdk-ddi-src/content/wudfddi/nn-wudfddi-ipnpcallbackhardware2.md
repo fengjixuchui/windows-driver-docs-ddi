@@ -4,7 +4,6 @@ title: IPnpCallbackHardware2 (wudfddi.h)
 description: The IPnpCallbackHardware2 interface exposes callback methods related to hardware.
 old-location: wdf\ipnpcallbackhardware2.htm
 tech.root: wdf
-ms.assetid: C0DB967F-0A1A-4749-B902-EBA0D59A3E45
 ms.date: 02/26/2018
 keywords: ["IPnpCallbackHardware2 interface"]
 ms.keywords: IPnpCallbackHardware2, IPnpCallbackHardware2 interface, IPnpCallbackHardware2 interface,described, umdf.ipnpcallbackhardware2, wdf.ipnpcallbackhardware2, wudfddi/IPnpCallbackHardware2
@@ -52,9 +51,9 @@ api_name:
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPnpCallbackHardware2</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPnpCallbackHardware2</b> also has these types of members:
+The <b>IPnpCallbackHardware2</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPnpCallbackHardware2</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>
 
 ## -see-also

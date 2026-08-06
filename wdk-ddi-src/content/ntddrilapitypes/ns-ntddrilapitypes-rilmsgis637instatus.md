@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILMSGIS637INSTATUS
 title: RILMSGIS637INSTATUS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILMSGIS637INSTATUS structure for internal use only. Don't use the RILMSGIS637INSTATUS structure in your code."
 old-location: netvista\rilmsgis637instatus.htm
 tech.root: netvista
-ms.assetid: ba87baa2-7d96-4418-bfbc-411bb4cda3fb
 ms.date: 05/02/2018
 keywords: ["RILMSGIS637INSTATUS structure"]
 ms.keywords: "*LPRILMSGIS637INSTATUS, RILMSGIS637INSTATUS, RILMSGIS637INSTATUS structure [Network Drivers Starting with Windows Vista], netvista.rilmsgis637instatus, ntddrilapitypes/RILMSGIS637INSTATUS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILMSGIS637INSTATUS
+ - LPRILMSGIS637INSTATUS
 ---
 
 # RILMSGIS637INSTATUS structure (ntddrilapitypes.h)

@@ -4,7 +4,6 @@ title: PROTOCOL_CO_OID_REQUEST_COMPLETE (ndis.h)
 description: The ProtocolCoOidRequestComplete function completes the processing of an asynchronous CoNDIS OID request.Note  You must declare the function by using the PROTOCOL_CO_OID_REQUEST_COMPLETE type.
 old-location: netvista\protocolcooidrequestcomplete.htm
 tech.root: netvista
-ms.assetid: 16883c64-3cc6-4f50-8be7-7c58c422a717
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CO_OID_REQUEST_COMPLETE callback function"]
 ms.keywords: PROTOCOL_CO_OID_REQUEST_COMPLETE, PROTOCOL_CO_OID_REQUEST_COMPLETE callback, ProtocolCoOidRequestComplete, ProtocolCoOidRequestComplete callback function [Network Drivers Starting with Windows Vista], condis_request_ref_14f11d94-41dd-44b1-9117-20c8d22278aa.xml, ndis/ProtocolCoOidRequestComplete, netvista.protocolcooidrequestcomplete
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolCoOidRequestComplete
+ - PROTOCOL_CO_OID_REQUEST_COMPLETE
 ---
 
 # PROTOCOL_CO_OID_REQUEST_COMPLETE callback function
@@ -54,9 +53,9 @@ The
 
 ## -parameters
 
-### -param ProtocolAfContext 
+### -param ProtocolAfContext [in]
 
-[in]
+
 A handle that identifies an address family (AF) context area. If the driver is a client, it
      supplied this handle when it called the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclopenaddressfamilyex">
@@ -64,30 +63,30 @@ A handle that identifies an address family (AF) context area. If the driver is a
      manager or miniport call manager (MCM), it supplied this handle from its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_open_af">ProtocolCmOpenAf</a> function.
 
-### -param ProtocolVcContext 
+### -param ProtocolVcContext [in]
 
-[in]
+
 A handle that identifies the active virtual connection (VC) that the driver requested or set
      information for, if the request was VC-specific. Otherwise, this parameter is <b>NULL</b>.
 
-### -param ProtocolPartyContext 
+### -param ProtocolPartyContext [in]
 
-[in]
+
 A handle that identifies the party on a multipoint VC that the driver requested or set information
      for, if the request is party-specific. Otherwise, this parameter is <b>NULL</b>.
 
-### -param OidRequest 
+### -param OidRequest [in, out]
 
-[in, out]
+
 A pointer to the driver-supplied 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure that was
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure that was
      previously passed to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscooidrequest">NdisCoOidRequest</a> or 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmoidrequest">NdisMCmOidRequest</a> function.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 The final status of the request. The target driver or NDIS determines this final status. This
      parameter determines what 
      <i>ProtocolCoOidRequestComplete</i> does with the information at 
@@ -135,7 +134,7 @@ If
       <i>Status</i> is NDIS_STATUS_SUCCESS, the 
       <b>BytesRead</b> or 
       <b>BytesWritten</b> member of the 
-      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure that the 
+      <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure that the 
       <i>OidRequest</i> parameter points to specifies how much information was transferred
       from the buffer in the 
       <b>InformationBuffer</b> member of NDIS_OID_REQUEST to the target driver or how much information was
@@ -159,7 +158,7 @@ If
 In these circumstances, 
       <i>ProtocolCoOidRequestComplete</i> can allocate sufficient buffer space for the
       request, set up another 
-      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure with the
+      <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure with the
       required value for 
       <b>InformationBufferLength</b>, and retry the OID request.
 
@@ -229,7 +228,7 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 
@@ -262,3 +261,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_open_af">ProtocolCmOpenAf</a>
+

@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_RECYCLECREATEDEFERREDCONTEXT
 title: PFND3D11DDI_RECYCLECREATEDEFERREDCONTEXT (d3d10umddi.h)
 description: The RecycleCreateDeferredContext function clears out the pipeline state for a deferred context.
 old-location: display\recyclecreatedeferredcontext.htm
-ms.assetid: c9e08048-683a-4f43-b3b8-1914c2933a5c
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_RECYCLECREATEDEFERREDCONTEXT callback function"]
 ms.keywords: PFND3D11DDI_RECYCLECREATEDEFERREDCONTEXT, PFND3D11DDI_RECYCLECREATEDEFERREDCONTEXT callback, RecycleCreateDeferredContext, RecycleCreateDeferredContext callback function [Display Devices], UserModeDisplayDriverDx11_Functions_aaffc9d1-e821-41f9-badc-79d53a667644.xml, d3d10umddi/RecycleCreateDeferredContext, display.recyclecreatedeferredcontext
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - RecycleCreateDeferredContext
-product:
- - Windows
+ - PFND3D11DDI_RECYCLECREATEDEFERREDCONTEXT
 ---
 
 # PFND3D11DDI_RECYCLECREATEDEFERREDCONTEXT callback function
@@ -52,13 +49,13 @@ The <i>RecycleCreateDeferredContext</i> function clears out the pipeline state f
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCreateDeferredContext* [in]
 
@@ -94,3 +91,4 @@ For more information about <i>RecycleCreateDeferredContext</i>, see <a href="/wi
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10_2ddi_getcaps">GetCaps(D3D10_2)</a>
+

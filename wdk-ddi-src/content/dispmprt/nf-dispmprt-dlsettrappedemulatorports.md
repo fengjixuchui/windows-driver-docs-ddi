@@ -1,9 +1,8 @@
 ---
 UID: NF:dispmprt.DlSetTrappedEmulatorPorts
 title: DlSetTrappedEmulatorPorts function
-description: 
+description: "Learn more about: DlSetTrappedEmulatorPorts function"
 tech.root: display
-ms.assetid: 8a7ee6f8-a1cb-4a92-b6df-cb0c8679599c
 ms.date: 04/04/2019
 keywords: ["DlSetTrappedEmulatorPorts function"]
 ms.keywords: DlSetTrappedEmulatorPorts
@@ -38,8 +37,6 @@ api_location:
  - Displib.dll
 api_name:
  - DlSetTrappedEmulatorPorts
-product:
- - Windows
 dev_langs:
  - c++
 ---

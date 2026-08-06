@@ -4,7 +4,6 @@ title: IPrintOemUI::QueryColorProfile (prcomoem.h)
 description: The IPrintOemUI::QueryColorProfile method allows a user interface plug-in to specify an ICC profile to use for color management.
 old-location: print\iprintoemui_querycolorprofile.htm
 tech.root: print
-ms.assetid: ce1131f9-4b9c-4f20-afc9-514ccbc7ecf7
 ms.date: 04/20/2018
 keywords: ["IPrintOemUI::QueryColorProfile"]
 ms.keywords: IPrintOemUI interface [Print Devices],QueryColorProfile method, IPrintOemUI.QueryColorProfile, IPrintOemUI::QueryColorProfile, QueryColorProfile, QueryColorProfile method [Print Devices], QueryColorProfile method [Print Devices],IPrintOemUI interface, prcomoem/IPrintOemUI::QueryColorProfile, print.iprintoemui_querycolorprofile, print_unidrv-pscript_ui_7541a49f-f14c-4c73-88d7-80f316ae3602.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemUI.QueryColorProfile
+ - IPrintOemUI::QueryColorProfile
 ---
 
 # IPrintOemUI::QueryColorProfile
@@ -189,3 +188,4 @@ If you provide a user interface plug-in, the printer driver's <b>DrvQueryColorPr
 If <code>IPrintOemUI::QueryColorProfile</code> methods are exported by multiple user interface plug-ins, the methods are called in the order that the plug-ins are specified for installation.
 
 For more information about creating and installing user interface plug-ins, see <a href="/windows-hardware/drivers/print/customizing-microsoft-s-printer-drivers">Customizing Microsoft's Printer Drivers</a>.
+

@@ -4,7 +4,6 @@ title: _WHEA_X86_REGISTER_STATE (ntddk.h)
 description: The WHEA_X86_REGISTER_STATE structure describes the state of an x86 processor's registers.
 old-location: whea\whea_x86_register_state.htm
 tech.root: whea
-ms.assetid: 64079b03-9771-4940-a19e-a29389cbf2fe
 ms.date: 02/20/2018
 keywords: ["WHEA_X86_REGISTER_STATE structure"]
 ms.keywords: "*PWHEA_X86_REGISTER_STATE, PWHEA_X86_REGISTER_STATE, PWHEA_X86_REGISTER_STATE structure pointer [WHEA Drivers and Applications], WHEA_X86_REGISTER_STATE, WHEA_X86_REGISTER_STATE structure [WHEA Drivers and Applications], _WHEA_X86_REGISTER_STATE, ntddk/PWHEA_X86_REGISTER_STATE, ntddk/WHEA_X86_REGISTER_STATE, whea.whea_x86_register_state, whearef_330404b2-bd6e-4220-97c6-8bacc803eb78.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_X86_REGISTER_STATE
+ - PWHEA_X86_REGISTER_STATE
  - WHEA_X86_REGISTER_STATE
 ---
 
@@ -161,3 +162,4 @@ If the <b>RegisterContextType</b> member of a <a href="/windows-hardware/drivers
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_xpf_context_info">WHEA_XPF_CONTEXT_INFO</a>
+

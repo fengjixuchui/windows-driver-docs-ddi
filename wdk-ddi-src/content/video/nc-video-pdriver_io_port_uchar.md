@@ -4,7 +4,6 @@ title: PDRIVER_IO_PORT_UCHAR (video.h)
 description: SvgaHwIoPortUchar traps an I/O port to which a full-screen MS-DOS application in an x86-based machine is sending UCHAR-sized data.
 old-location: display\svgahwioportuchar.htm
 tech.root: display
-ms.assetid: 91e2dc51-0f3a-4cda-abe6-72893fd4da79
 ms.date: 05/10/2018
 keywords: ["PDRIVER_IO_PORT_UCHAR callback function"]
 ms.keywords: PDRIVER_IO_PORT_UCHAR, PDRIVER_IO_PORT_UCHAR callback, SvgaHwIoPortUchar, SvgaHwIoPortUchar callback function [Display Devices], VideoMiniport_Functions_d926584b-82e3-463e-ad50-b04d065a1d9d.xml, display.svgahwioportuchar, video/SvgaHwIoPortUchar
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - video.h
 api_name:
- - SvgaHwIoPortUchar
+ - PDRIVER_IO_PORT_UCHAR
 ---
 
 # PDRIVER_IO_PORT_UCHAR callback function
@@ -117,3 +116,4 @@ If one or more application-issued x86 <b>IN</b> or <b>OUT</b> instructions might
 
 
 <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportsettrappedemulatorports">VideoPortSetTrappedEmulatorPorts</a>
+

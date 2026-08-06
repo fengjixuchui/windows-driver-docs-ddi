@@ -4,7 +4,6 @@ title: _D3DDDI_PATCHLOCATIONLIST (d3dukmdt.h)
 description: The D3DDDI_PATCHLOCATIONLIST structure describes the location of an allocation to patch (that is, assign a physical address to the allocation).
 old-location: display\d3dddi_patchlocationlist.htm
 tech.root: display
-ms.assetid: 88cdbf2d-4b66-47c1-97e1-e3b8377ac526
 ms.date: 05/10/2018
 keywords: ["D3DDDI_PATCHLOCATIONLIST structure"]
 ms.keywords: D3DDDI_PATCHLOCATIONLIST, D3DDDI_PATCHLOCATIONLIST structure [Display Devices], D3D_other_Structs_30473342-0122-445f-81c0-9cf5c62c771e.xml, _D3DDDI_PATCHLOCATIONLIST, d3dukmdt/D3DDDI_PATCHLOCATIONLIST, display.d3dddi_patchlocationlist
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dukmdt.h
 api_name:
+ - _D3DDDI_PATCHLOCATIONLIST
  - D3DDDI_PATCHLOCATIONLIST
 ---
 
@@ -52,41 +52,41 @@ The D3DDDI_PATCHLOCATIONLIST structure describes the location of an allocation t
 
 ## -struct-fields
 
-### -field AllocationIndex
+### -field AllocationIndex [in]
 
-[in] An index of the element in the allocation list that specifies the allocation that is referenced by the patch location.
+An index of the element in the allocation list that specifies the allocation that is referenced by the patch location.
 
-### -field SlotId
+### -field SlotId [in/out]
 
-[in/out] A UINT that identifies the slot where the allocation will reside. Resources with identical slot identifiers can replace each other.
+A UINT that identifies the slot where the allocation will reside. Resources with identical slot identifiers can replace each other.
 
 Setting this member is equivalent to setting bits in the first 24 bits of the 32-bit <b>Value</b> member (0x00FFFFFF).
 
-### -field Reserved
+### -field Reserved [in]
 
-[in] This member is reserved and should be set to zero. 
+This member is reserved and should be set to zero. 
 
 Setting this member to zero is equivalent to setting the remaining 8 bits (0xFF000000) of the 32-bit <b>Value</b> member to zeros.
 
-### -field Value
+### -field Value [in]
 
-[in] A 32-bit value that identifies the location of an allocation to patch.
+A 32-bit value that identifies the location of an allocation to patch.
 
-### -field DriverId
+### -field DriverId [in/out]
 
-[in/out] The driver-defined identifier of the allocation specification.
+The driver-defined identifier of the allocation specification.
 
-### -field AllocationOffset
+### -field AllocationOffset [in/out]
 
-[in/out] The starting offset, in bytes, within the allocation that is referenced.
+The starting offset, in bytes, within the allocation that is referenced.
 
-### -field PatchOffset
+### -field PatchOffset [in/out]
 
-[in/out] The offset, in bytes, into the DMA buffer that must be patched.
+The offset, in bytes, into the DMA buffer that must be patched.
 
-### -field SplitOffset
+### -field SplitOffset [in/out]
 
-[in/out] The offset, in bytes, where the DMA buffer must be split if the allocation cannot be brought into video memory.
+The offset, in bytes, where the DMA buffer must be split if the allocation cannot be brought into video memory.
 
 ## -see-also
 
@@ -107,3 +107,4 @@ Setting this member to zero is equivalent to setting the remaining 8 bits (0xFF0
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_rendercb">pfnRenderCb</a>
+

@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_25
+UID: NS:ksmedia.KSRTAUDIO_BUFFER
 title: KSRTAUDIO_BUFFER (ksmedia.h)
 description: The KSRTAUDIO_BUFFER structure specifies the buffer address, size, and a call memory barrier flag for a cyclic audio data buffer.
 old-location: audio\ksrtaudio_buffer.htm
 tech.root: audio
-ms.assetid: b80efaf0-ecee-40cd-befb-2139a20840a5
 ms.date: 05/08/2018
 keywords: ["KSRTAUDIO_BUFFER structure"]
 ms.keywords: "*PKSRTAUDIO_BUFFER, KSRTAUDIO_BUFFER, KSRTAUDIO_BUFFER structure [Audio Devices], PKSRTAUDIO_BUFFER, PKSRTAUDIO_BUFFER structure pointer [Audio Devices], aud-prop_50b4ab60-2e9a-444b-98d3-984d9084ab0b.xml, audio.ksrtaudio_buffer, ksmedia/KSRTAUDIO_BUFFER, ksmedia/PKSRTAUDIO_BUFFER"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSRTAUDIO_BUFFER
  - KSRTAUDIO_BUFFER
 ---
 
@@ -79,3 +79,4 @@ The <a href="/windows-hardware/drivers/audio/ksproperty-rtaudio-buffer">KSPROPER
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_memory_caching_type">MEMORY_CACHING_TYPE</a>
+

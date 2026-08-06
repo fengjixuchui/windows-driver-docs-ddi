@@ -1,16 +1,15 @@
 ---
 UID: NS:d3dkmddi._DXGK_ALLOCATIONINFOFLAGS
-title: _DXGK_ALLOCATIONINFOFLAGS (d3dkmddi.h)
+title: DXGK_ALLOCATIONINFOFLAGS (d3dkmddi.h)
 description: The DXGK_ALLOCATIONINFOFLAGS structure identifies properties for an allocation. The display miniport driver specifies these flags for the video memory manager.
 old-location: display\dxgk_allocationinfoflags.htm
-ms.assetid: 04bd00c3-83a8-44bb-9493-cf7f43f10602
-ms.date: 08/05/2020
+ms.date: 08/24/2022
 keywords: ["DXGK_ALLOCATIONINFOFLAGS structure"]
 ms.keywords: DXGK_ALLOCATIONINFOFLAGS, DXGK_ALLOCATIONINFOFLAGS structure [Display Devices], DmStructs_4e6e499c-8427-4c0f-977d-92f648ab027e.xml, _DXGK_ALLOCATIONINFOFLAGS, d3dkmddi/DXGK_ALLOCATIONINFOFLAGS, display.dxgk_allocationinfoflags
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,14 +39,15 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_ALLOCATIONINFOFLAGS
  - DXGK_ALLOCATIONINFOFLAGS
 ---
 
-# _DXGK_ALLOCATIONINFOFLAGS structure
+# DXGK_ALLOCATIONINFOFLAGS structure
 
 ## -description
 
-The DXGK_ALLOCATIONINFOFLAGS structure identifies properties for an allocation.
+The **DXGK_ALLOCATIONINFOFLAGS** structure identifies properties for an allocation.
 
 ## -struct-fields
 
@@ -177,7 +177,7 @@ Supported starting with Windows 10.
 
 ### -field ExplicitResidencyNotification
 
-When this flags is specified, the driver receives a **NotifyResidency** paging buffer operation when the allocation residency is changed (evicted, commited). The flag can only be set when the **AccessedPhysically** flag is set.
+When this flags is specified, the driver receives a **NotifyResidency** paging buffer operation when the allocation residency is changed (evicted, committed). The flag can only be set when the **AccessedPhysically** flag is set.
 
 Setting this member is equivalent to setting the seventeenth bit of the 32-bit **Value** member (0x00010000).
 
@@ -193,85 +193,59 @@ When this member is set, the video memory manager will try to allocate the virtu
 
 ### -field Reserved
 
-[in] This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting 4 bits, from the sixteenth bit to the nineteenth bit (0x00078000), of the 32-bit **Value** member to zeros.
+Reserved for system use. Available starting with Windows 10.
 
 ### -field DXGK_ALLOC_RESERVED16
 
-[in] This member is reserved and should be set to zero.
-
-Supported starting with Windows 8.
+[in] This member is reserved and should be set to zero. Supported starting with Windows 8.
 
 ### -field DXGK_ALLOC_RESERVED15
 
-[in] This member is reserved and should be set to zero.
-
-Supported starting with Windows 8.
+[in] This member is reserved and should be set to zero. Supported starting with Windows 8.
 
 ### -field DXGK_ALLOC_RESERVED14
 
-[in] This member is reserved and should be set to zero.
-
-Supported starting with Windows 8.
+[in] This member is reserved and should be set to zero. Supported starting with Windows 8.
 
 ### -field DXGK_ALLOC_RESERVED13
 
-[in] This member is reserved and should be set to zero.
-
-Supported starting with Windows 8.
+[in] This member is reserved and should be set to zero. Supported starting with Windows 8.
 
 ### -field DXGK_ALLOC_RESERVED12
 
-[in] This member is reserved and should be set to zero.
-
-Supported starting with Windows 8.
+[in] This member is reserved and should be set to zero. Supported starting with Windows 8.
 
 ### -field DXGK_ALLOC_RESERVED11
 
-[in] This member is reserved and should be set to zero.
-
-Supported starting with Windows 8.
+[in] This member is reserved and should be set to zero. Supported starting with Windows 8.
 
 ### -field DXGK_ALLOC_RESERVED10
 
-[in] This member is reserved and should be set to zero.
-
-Supported starting with Windows 8.
+[in] This member is reserved and should be set to zero. Supported starting with Windows 8.
 
 ### -field DXGK_ALLOC_RESERVED9
 
-[in] This member is reserved and should be set to zero.
-
-Supported starting with Windows 8.
+[in] This member is reserved and should be set to zero. Supported starting with Windows 8.
 
 ### -field DXGK_ALLOC_RESERVED4
 
-[in] This member is reserved and should be set to zero.
-
-Supported starting with Windows 8.
+[in] This member is reserved and should be set to zero. Supported starting with Windows 8.
 
 ### -field DXGK_ALLOC_RESERVED3
 
-[in] This member is reserved and should be set to zero.
-
-Supported starting with Windows 8.
+[in] This member is reserved and should be set to zero. Supported starting with Windows 8.
 
 ### -field DXGK_ALLOC_RESERVED2
 
-[in] This member is reserved and should be set to zero.
-
-Supported starting with Windows 8.
+[in] This member is reserved and should be set to zero. Supported starting with Windows 8.
 
 ### -field DXGK_ALLOC_RESERVED1
 
-[in] This member is reserved and should be set to zero.
-
-Supported starting with Windows 8.
+[in] This member is reserved and should be set to zero. Supported starting with Windows 8.
 
 ### -field DXGK_ALLOC_RESERVED0
 
-[in] This member is reserved and should be set to zero.
-
-Supported starting with Windows 8.
+[in] This member is reserved and should be set to zero. Supported starting with Windows 8.
 
 ### -field Value
 

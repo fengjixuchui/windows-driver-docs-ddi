@@ -4,7 +4,6 @@ title: IDebugDataSpaces4::GetOffsetInformation (dbgeng.h)
 description: The GetOffsetInformation method provides general information about an address in a process's data space.
 old-location: debugger\getoffsetinformation.htm
 tech.root: debugger
-ms.assetid: 5ef00c92-7b32-473a-8401-4c02e864c181
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces4::GetOffsetInformation"]
 ms.keywords: GetOffsetInformation, GetOffsetInformation method [Windows Debugging], GetOffsetInformation method [Windows Debugging],IDebugDataSpaces4 interface, IDebugDataSpaces4 interface [Windows Debugging],GetOffsetInformation method, IDebugDataSpaces4.GetOffsetInformation, IDebugDataSpaces4::GetOffsetInformation, IDebugDataSpaces_c434b12b-78ff-4f6a-ac69-6069dd273ba8.xml, dbgeng/IDebugDataSpaces4::GetOffsetInformation, debugger.getoffsetinformation
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugDataSpaces4.GetOffsetInformation
+ - IDebugDataSpaces4::GetOffsetInformation
 ---
 
 # IDebugDataSpaces4::GetOffsetInformation
@@ -50,14 +49,14 @@ The <b>GetOffsetInformation</b> method provides general information about an add
 
 ## -parameters
 
-### -param Space 
+### -param Space [in]
 
-[in]
+
 Specifies the data space to which the <i>Offset </i>parameter applies.  The allowed values depend on the <i>Which</i> parameter.
 
-### -param Which 
+### -param Which [in]
 
-[in]
+
 Specifies which information about the data is being queried.  This determines the possible values for <i>Space</i> and the type of the data returned in <i>Buffer</i>.  Possible values are:
 
 
@@ -107,24 +106,24 @@ The debugger engine reads the target's virtual memory at <i>Offset </i>offset fr
 </tr>
 </table>
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the offset in the target's data space for which the information is returned.
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Specifies the buffer to receive the information.  The type of the data returned depends on the value of <i>Which</i>.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size, in bytes, of the <i>Buffer </i>buffer.
 
-### -param InfoSize 
+### -param InfoSize [out, optional]
 
-[out, optional]
+
 Receives the size, in bytes, of the information that is returned.  If <i>InfoSize</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -148,3 +147,4 @@ The method was successful.
 </td>
 </tr>
 </table>
+

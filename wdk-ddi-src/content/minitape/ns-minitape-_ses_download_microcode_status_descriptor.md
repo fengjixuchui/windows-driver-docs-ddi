@@ -1,10 +1,9 @@
 ---
 UID: NS:minitape._SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR
 title: _SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR (minitape.h)
-description: The SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure specifies the status and additional status of a download microcode.
+description: The _SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure (minitape.h) specifies the status and additional status of a download microcode.
 old-location: storage\ses_download_microcode_status_descriptor.htm
 tech.root: storage
-ms.assetid: af686e7a-9426-4151-8ac4-d95ae1689b4c
 ms.date: 03/29/2018
 keywords: ["SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure"]
 ms.keywords: "*PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure pointer [Storage Devices], SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR structure [Storage Devices], _SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, scsi/PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, scsi/SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR, storage.ses_download_microcode_status_descriptor"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - scsi.h
 api_name:
+ - _SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR
+ - PSES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR
  - SES_DOWNLOAD_MICROCODE_STATUS_DESCRIPTOR
 ---
 
@@ -327,3 +328,4 @@ enclosure services process expects in the <i>BufferOffset</i> field in <a href="
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/minitape/ns-minitape-_ses_download_microcode_control_diagnostic_page">SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE</a>
+

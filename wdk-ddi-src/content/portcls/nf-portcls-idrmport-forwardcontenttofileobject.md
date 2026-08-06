@@ -3,7 +3,6 @@ UID: NF:portcls.IDrmPort.ForwardContentToFileObject
 title: IDrmPort::ForwardContentToFileObject (portcls.h)
 description: The ForwardContentToFileObject method is obsolete and is maintained only to support existing drivers.
 tech.root: audio
-ms.assetid: 74e03ac6-5a4a-431b-b395-6410c775bec5
 ms.date: 02/20/2019
 keywords: ["IDrmPort::ForwardContentToFileObject"]
 ms.keywords: IDrmPort::ForwardContentToFileObject, ForwardContentToFileObject, IDrmPort.ForwardContentToFileObject, IDrmPort::ForwardContentToFileObject, IDrmPort.ForwardContentToFileObject
@@ -35,9 +34,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IDrmPort.ForwardContentToFileObject
-product:
- - Windows
+ - IDrmPort::ForwardContentToFileObject
 ---
 
 # IDrmPort::ForwardContentToFileObject
@@ -68,3 +65,4 @@ See comments in [DrmForwardContentToFileObject](../drmk/nf-drmk-drmforwardconten
 ## -see-also
 
 [IDrmPort](nn-portcls-idrmport.md)
+

@@ -4,7 +4,6 @@ title: IMiniportMidi::Init (portcls.h)
 description: The Init method initializes the MIDI miniport object.
 old-location: audio\iminiportmidi_init.htm
 tech.root: audio
-ms.assetid: 2afec522-5a40-4db2-9f37-ee7a9b64e823
 ms.date: 05/08/2018
 keywords: ["IMiniportMidi::Init"]
 ms.keywords: IMiniportMidi interface [Audio Devices],Init method, IMiniportMidi.Init, IMiniportMidi::Init, Init, Init method [Audio Devices], Init method [Audio Devices],IMiniportMidi interface, audio.iminiportmidi_init, audmp-routines_44f5f136-811f-46ec-aa4d-64fba408acbf.xml, portcls/IMiniportMidi::Init
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportMidi.Init
+ - IMiniportMidi::Init
 ---
 
 # IMiniportMidi::Init
@@ -50,24 +49,24 @@ The <code>Init</code> method initializes the MIDI miniport object.
 
 ## -parameters
 
-### -param UnknownAdapter 
+### -param UnknownAdapter [in]
 
-[in]
+
 Pointer to the <b>IUnknown</b> interface of the adapter object whose miniport object is being initialized. This parameter is optional and can be specified as <b>NULL</b>. For more information, see the following Remarks section.
 
-### -param ResourceList 
+### -param ResourceList [in]
 
-[in]
+
 Pointer to <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iresourcelist">IResourceList</a> interface of the resource list object that is to be supplied to the miniport driver during initialization. After passing this reference to the miniport driver, the port driver is free to examine the contents of the resource list but will not modify the contents of this list. For more information, see the following Remarks section.
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iportmidi">IPortMidi</a> object that is bound to this miniport object. The caller specifies a valid, non-<b>NULL</b> pointer value for this parameter.
 
-### -param ServiceGroup 
+### -param ServiceGroup [out]
 
-[out]
+
 Output pointer for the service group. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iservicegroup">IServiceGroup</a> interface of the miniport driver's service group object. This is the service group that is being registered for interrupt notification. The caller specifies a valid, non-<b>NULL</b> pointer value for this parameter.
 
 ## -returns
@@ -121,3 +120,4 @@ The <i>UnknownAdapter</i>, <i>ResourceList</i>, <i>Port</i>, and <i>ServiceGroup
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-pcnewinterruptsync">PcNewInterruptSync</a>
+

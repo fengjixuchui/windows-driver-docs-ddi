@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_RELEASEKEYEDMUTEX
 title: PFND3DKMT_RELEASEKEYEDMUTEX (d3dkmthk.h)
 description: The PFND3DKMT_RELEASEKEYEDMUTEX callback function releases a keyed mutex object.
-ms.assetid: a738d7b0-4526-4549-9371-e67036b2eae8
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_RELEASEKEYEDMUTEX callback function"]
 req.header: d3dkmthk.h
@@ -36,8 +35,6 @@ api_location:
  - d3dkmthk.h
 api_name:
  - PFND3DKMT_RELEASEKEYEDMUTEX
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,7 +48,7 @@ The PFND3DKMT_RELEASEKEYEDMUTEX callback function releases a keyed mutex object.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_RELEASEKEYEDMUTEX](ns-d3dkmthk-_d3dkmt_releasekeyedmutex.md) structure.
 

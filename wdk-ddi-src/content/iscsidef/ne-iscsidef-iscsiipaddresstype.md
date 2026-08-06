@@ -1,10 +1,9 @@
 ---
-UID: NE:iscsidef.__unnamed_enum_0
+UID: NE:iscsidef.ISCSIIPADDRESSTYPE
 title: ISCSIIPADDRESSTYPE (iscsidef.h)
 description: The ISCSIIPADDRESSTYPE enumeration indicates formats for an IP address.
 old-location: storage\iscsiipaddresstype.htm
 tech.root: storage
-ms.assetid: a92f7048-ca8a-450c-93ab-6ea040412198
 ms.date: 03/29/2018
 keywords: ["ISCSIIPADDRESSTYPE enumeration"]
 ms.keywords: "*PISCSIIPADDRESSTYPE, ISCSIIPADDRESSTYPE, ISCSIIPADDRESSTYPE enumeration [Storage Devices], ISCSI_IP_ADDRESS_EMPTY, ISCSI_IP_ADDRESS_IPV4, ISCSI_IP_ADDRESS_IPV6, ISCSI_IP_ADDRESS_TEXT, PISCSIIPADDRESSTYPE, PISCSIIPADDRESSTYPE enumeration pointer [Storage Devices], iscsidef/ISCSIIPADDRESSTYPE, iscsidef/ISCSI_IP_ADDRESS_EMPTY, iscsidef/ISCSI_IP_ADDRESS_IPV4, iscsidef/ISCSI_IP_ADDRESS_IPV6, iscsidef/ISCSI_IP_ADDRESS_TEXT, iscsidef/PISCSIIPADDRESSTYPE, storage.iscsiipaddresstype, structs-iSCSI_3e947807-84e7-4886-aae9-95b8d1b508ab.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - iscsidef.h
 api_name:
+ - PISCSIIPADDRESSTYPE
  - ISCSIIPADDRESSTYPE
 ---
 
@@ -71,3 +71,4 @@ No address is specified.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/iscsidef/ns-iscsidef-_iscsi_ip_address">ISCSI_IP_Address</a>
+

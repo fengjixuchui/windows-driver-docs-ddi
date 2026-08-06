@@ -4,14 +4,13 @@ title: _FILE_LEVEL_TRIM (ntifs.h)
 description: The FILE_LEVEL_TRIM structure contains an array of byte ranges to trim for a file.
 old-location: ifsk\file_level_trim.htm
 tech.root: ifsk
-ms.assetid: 72FD2A3B-B246-41BA-BEB6-169C214C32D7
 ms.date: 04/16/2018
 keywords: ["FILE_LEVEL_TRIM structure"]
 ms.keywords: "*PFILE_LEVEL_TRIM, FILE_LEVEL_TRIM, FILE_LEVEL_TRIM structure [Installable File System Drivers], PFILE_LEVEL_TRIM, PFILE_LEVEL_TRIM structure pointer [Installable File System Drivers], _FILE_LEVEL_TRIM, ifsk.file_level_trim, ntifs/FILE_LEVEL_TRIM, ntifs/PFILE_LEVEL_TRIM"
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntifs.h
 api_name:
+ - _FILE_LEVEL_TRIM
+ - PFILE_LEVEL_TRIM
  - FILE_LEVEL_TRIM
 ---
 
@@ -73,3 +74,4 @@ Array of trim ranges for a file.
 
 
 <a href="/windows-hardware/drivers/ifs/fsctl-file-level-trim">FSCTL_FILE_LEVEL_TRIM</a>
+

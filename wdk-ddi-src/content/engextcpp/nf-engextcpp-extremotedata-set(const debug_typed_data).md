@@ -1,10 +1,9 @@
 ---
 UID: NF:engextcpp.ExtRemoteData.Set(constDEBUG_TYPED_DATA)
 title: ExtRemoteData::Set(const DEBUG_TYPED_DATA) (engextcpp.h)
-description: The Set method sets the region of the target's memory represented by the ExtRemoteData object.
+description: The Set(constDEBUG_TYPED_DATA) method sets the region of the target's memory represented by the ExtRemoteData object.
 old-location: debugger\extremotedata_set_typed.htm
 tech.root: debugger
-ms.assetid: a335f881-7b6f-4069-87fe-c036867b0c77
 ms.date: 05/03/2018
 keywords: ["ExtRemoteData::Set(const DEBUG_TYPED_DATA)"]
 ms.keywords: ExtRemoteData class [Windows Debugging],Set method, ExtRemoteData.Set, ExtRemoteData.Set(const DEBUG_TYPED_DATA), ExtRemoteData.Set(const DEBUG_TYPED_DATA*), ExtRemoteData::Set, ExtRemoteData::Set(const DEBUG_TYPED_DATA), Set, Set method [Windows Debugging], Set method [Windows Debugging],ExtRemoteData class, debugger.extremotedata_set_typed
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteData.Set
+ - ExtRemoteData::Set
 ---
 
 # ExtRemoteData::Set(const DEBUG_TYPED_DATA)
@@ -51,9 +50,9 @@ The <b>Set</b> method sets the region of the target's memory represented by the 
 
 ## -parameters
 
-### -param Typed 
+### -param Typed [in]
 
-[in]
+
 Specifies the region of memory by using a <a href="/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_debug_typed_data">DEBUG_TYPED_DATA</a> structure.
 
 ## -remarks
@@ -75,3 +74,4 @@ The <b>Set</b> method will read the contents of the specified region of  memory 
 
 
 <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotedata-set">ExtRemoteData::Set (Offset, Bytes)</a>
+

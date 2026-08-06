@@ -4,7 +4,6 @@ title: RtlFindClearRuns function (wdm.h)
 description: The RtlFindClearRuns routine finds the specified number of runs of clear bits within a given bitmap.
 old-location: kernel\rtlfindclearruns.htm
 tech.root: kernel
-ms.assetid: ad44c7ba-1d8e-4ba4-8d1b-83ff8b2e3d06
 ms.date: 04/30/2018
 keywords: ["RtlFindClearRuns function"]
 ms.keywords: RtlFindClearRuns, RtlFindClearRuns routine [Kernel-Mode Driver Architecture], k109_10c01954-483b-4ec8-a54d-50928663dc16.xml, kernel.rtlfindclearruns, wdm/RtlFindClearRuns
@@ -50,24 +49,24 @@ The <b>RtlFindClearRuns</b> routine finds the specified number of runs of clear 
 
 ## -parameters
 
-### -param BitMapHeader 
+### -param BitMapHeader [in]
 
-[in]
-A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-### -param RunArray 
+A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-[out]
+### -param RunArray [out]
+
+
 Pointer to the first element in a caller-allocated array for the bit position and length of each clear run found in the given bitmap variable.
 
-### -param SizeOfRunArray 
+### -param SizeOfRunArray [in]
 
-[in]
+
 Specifies the maximum number of clear runs to satisfy this request.
 
-### -param LocateLongestRuns 
+### -param LocateLongestRuns [in]
 
-[in]
+
 If <b>TRUE</b>, specifies that the routine is to search the entire bitmap for the longest clear runs it can find. Otherwise, the routine stops searching when it has found the number of clear runs specified by <i>SizeOfRunArray</i>.
 
 ## -returns
@@ -82,7 +81,7 @@ Callers of <b>RtlFindClearRuns</b> must be running at IRQL <= APC_LEVEL if the m
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a>
+<a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a>
 
 
 

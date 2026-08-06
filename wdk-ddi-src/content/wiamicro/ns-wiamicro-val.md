@@ -4,7 +4,6 @@ title: VAL (wiamicro.h)
 description: The VAL structure is used by the microdriver and WIA Flatbed driver to pass information between each other.
 old-location: image\val.htm
 tech.root: image
-ms.assetid: 9c9cf520-3249-4c1e-9d0d-e07f7127117e
 ms.date: 05/03/2018
 keywords: ["VAL structure"]
 ms.keywords: "*PVAL, MicroDrv_397b66fc-2f8e-434e-88ac-24b5cdd415d5.xml, PVAL, PVAL structure pointer [Imaging Devices], VAL, VAL structure [Imaging Devices], image.val, wiamicro/PVAL, wiamicro/VAL"
@@ -41,6 +40,7 @@ api_location:
  - wiamicro.h
 api_name:
  - VAL
+ - PVAL
 ---
 
 # VAL structure
@@ -87,3 +87,4 @@ Reserved. Do not use.
 ### -field szVal
 
 Specifies the device name in ASCII form. If needed for interrupt checking, the microdriver can use this name to pass to [CreateFile](/windows/win32/api/fileapi/nf-fileapi-createfilea) in order to obtain a file handle to the device.
+

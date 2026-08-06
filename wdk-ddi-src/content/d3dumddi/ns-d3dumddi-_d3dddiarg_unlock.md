@@ -4,7 +4,6 @@ title: _D3DDDIARG_UNLOCK (d3dumddi.h)
 description: The D3DDDIARG_UNLOCK structure describes a resource or a surface within the resource to unlock.
 old-location: display\d3dddiarg_unlock.htm
 tech.root: display
-ms.assetid: e6e0b0fd-be80-4c44-9d7d-1b9476b44b65
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_UNLOCK structure"]
 ms.keywords: D3DDDIARG_UNLOCK, D3DDDIARG_UNLOCK structure [Display Devices], UMDisplayDriver_param_Structs_ae4773cf-d43a-4468-8d6b-a4c4fa9b55fa.xml, _D3DDDIARG_UNLOCK, d3dumddi/D3DDDIARG_UNLOCK, display.d3dddiarg_unlock
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_UNLOCK
  - D3DDDIARG_UNLOCK
 ---
 
@@ -52,17 +52,17 @@ The D3DDDIARG_UNLOCK structure describes a resource or a surface within the reso
 
 ## -struct-fields
 
-### -field hResource
+### -field hResource [in]
 
-[in] A handle to the resource to be unlocked.
+A handle to the resource to be unlocked.
 
-### -field SubResourceIndex
+### -field SubResourceIndex [in]
 
-[in] The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the subresource or surface to be unlocked.
+The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the subresource or surface to be unlocked.
 
-### -field Flags
+### -field Flags [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_unlockflags">D3DDDI_UNLOCKFLAGS</a> structure that indicates, in bit-field flags, how to unlock the resource.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_unlockflags">D3DDDI_UNLOCKFLAGS</a> structure that indicates, in bit-field flags, how to unlock the resource.
 
 ## -see-also
 
@@ -71,3 +71,4 @@ The D3DDDIARG_UNLOCK structure describes a resource or a surface within the reso
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_unlock">Unlock</a>
+

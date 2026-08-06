@@ -4,7 +4,6 @@ title: _SetInitiatorNodeName_IN (iscsiop.h)
 description: The SetInitiatorNodeName_IN structure holds the input data for the SetInitiatorNodeName method.
 old-location: storage\setinitiatornodename_in.htm
 tech.root: storage
-ms.assetid: 58af1872-23bf-44f2-9ef4-271f0ddef5d5
 ms.date: 03/29/2018
 keywords: ["SetInitiatorNodeName_IN structure"]
 ms.keywords: "*PSetInitiatorNodeName_IN, PSetInitiatorNodeName_IN, PSetInitiatorNodeName_IN structure pointer [Storage Devices], SetInitiatorNodeName_IN, SetInitiatorNodeName_IN structure [Storage Devices], _SetInitiatorNodeName_IN, iscsiop/PSetInitiatorNodeName_IN, iscsiop/SetInitiatorNodeName_IN, storage.setinitiatornodename_in, structs-iSCSI_fac4e524-8266-4135-9211-564d1ea2a952.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsiop.h
 api_name:
+ - _SetInitiatorNodeName_IN
+ - PSetInitiatorNodeName_IN
  - SetInitiatorNodeName_IN
 ---
 
@@ -69,3 +70,4 @@ It is optional that you implement this class.
 
 
 <a href="/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_setinitiatornodename_out">SetInitiatorNodeName_OUT</a>
+

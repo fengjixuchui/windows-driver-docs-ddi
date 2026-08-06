@@ -4,7 +4,6 @@ title: _NDIS_TIMER_CHARACTERISTICS (ndis.h)
 description: The NDIS_TIMER_CHARACTERISTICS structure defines characteristics of a one-shot or periodic timer.
 old-location: netvista\ndis_timer_characteristics.htm
 tech.root: netvista
-ms.assetid: 9a62e94c-f635-4ab7-b439-b98c60ba2854
 ms.date: 05/02/2018
 keywords: ["NDIS_TIMER_CHARACTERISTICS structure"]
 ms.keywords: "*PNDIS_TIMER_CHARACTERISTICS, NDIS_TIMER_CHARACTERISTICS, NDIS_TIMER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], PNDIS_TIMER_CHARACTERISTICS, PNDIS_TIMER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_TIMER_CHARACTERISTICS, ndis/NDIS_TIMER_CHARACTERISTICS, ndis/PNDIS_TIMER_CHARACTERISTICS, ndis_timer_ref_af673f64-aa72-4767-81a0-5df465a52c81.xml, netvista.ndis_timer_characteristics"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_TIMER_CHARACTERISTICS
+ - PNDIS_TIMER_CHARACTERISTICS
  - NDIS_TIMER_CHARACTERISTICS
 ---
 
@@ -58,7 +59,7 @@ The NDIS_TIMER_CHARACTERISTICS structure defines characteristics of a one-shot o
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_TIMER_CHARACTERISTICS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_TIMER_CHARACTERISTICS, the 
@@ -91,7 +92,7 @@ To allocate and initialize a timer object, NDIS drivers call the
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -104,3 +105,4 @@ To allocate and initialize a timer object, NDIS drivers call the
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_timer_function">NetTimerCallback</a>
+

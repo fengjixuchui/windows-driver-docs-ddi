@@ -4,7 +4,6 @@ title: IMiniportWaveRTInputStream::GetReadPacket (portcls.h)
 description: Returns information about captured data.
 old-location: audio\iminiportwavertinputstream_getreadpacket.htm
 tech.root: audio
-ms.assetid: F26F6820-B761-4DF3-B7D7-9C1B174DEEA2
 ms.date: 05/08/2018
 keywords: ["IMiniportWaveRTInputStream::GetReadPacket"]
 ms.keywords: GetReadPacket, GetReadPacket method [Audio Devices], GetReadPacket method [Audio Devices],IMiniportWaveRTInputStream interface, IMiniportWaveRTInputStream interface [Audio Devices],GetReadPacket method, IMiniportWaveRTInputStream.GetReadPacket, IMiniportWaveRTInputStream::GetReadPacket, audio.iminiportwavertinputstream_getreadpacket, portcls/IMiniportWaveRTInputStream::GetReadPacket
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Passive level
+req.irql: PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWaveRTInputStream.GetReadPacket
+ - IMiniportWaveRTInputStream::GetReadPacket
 ---
 
 # IMiniportWaveRTInputStream::GetReadPacket
@@ -50,24 +49,24 @@ Returns information about captured data.
 
 ## -parameters
 
-### -param PacketNumber 
+### -param PacketNumber [out]
 
-[out]
+
 Returns the packet number relative to the start of capture.
 
-### -param Flags 
+### -param Flags [out]
 
-[out]
+
 Reserved for future use. Must be set to 0.
 
-### -param PerformanceCounterValue 
+### -param PerformanceCounterValue [out]
 
-[out]
+
 Returns the performance counter value corresponding to the sampling instant of the first sample in the packet.
 
-### -param MoreData 
+### -param MoreData [out]
 
-[out]
+
  Returns <b>TRUE</b> if there is more data ready immediately. The OS may optionally immediately call this routine again after processing the packet to get the next packet information. If the driver returns <b>FALSE</b>, then capture is operating at real time.
 
 ## -returns
@@ -89,3 +88,4 @@ The packet size is the WaveRT buffer size divided by the NotificationCount passe
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertinputstream">IMiniportWaveRTInputStream</a>
+

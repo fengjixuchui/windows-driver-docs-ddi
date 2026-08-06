@@ -4,7 +4,6 @@ title: _SILO_DRIVER_CAPABILITIES (ehstorioctl.h)
 description: This structure is used to specify the capabilities and support for IOCTL redirection of a storage silo driver. SILO_DRIVER_CAPABILITIES is included in the system buffer of an IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES request.
 old-location: storage\silo_driver_capabilities.htm
 tech.root: storage
-ms.assetid: E2CD35A6-0FF2-4ABA-850E-12683C5F0D8D
 ms.date: 03/29/2018
 keywords: ["SILO_DRIVER_CAPABILITIES structure"]
 ms.keywords: "*PSILO_DRIVER_CAPABILITIES, CAP_BANDING_SUPPORT, CAP_ON_DEMAND_AUTHENTICATION, PSILO_DRIVER_CAPABILITIES, PSILO_DRIVER_CAPABILITIES structure pointer [Storage Devices], SILO_DRIVER_CAPABILITIES, SILO_DRIVER_CAPABILITIES structure [Storage Devices], _SILO_DRIVER_CAPABILITIES, ehstorioctl/PSILO_DRIVER_CAPABILITIES, ehstorioctl/SILO_DRIVER_CAPABILITIES, storage.silo_driver_capabilities"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - EhStorIoctl.h
 api_name:
+ - _SILO_DRIVER_CAPABILITIES
+ - PSILO_DRIVER_CAPABILITIES
  - SILO_DRIVER_CAPABILITIES
 ---
 
@@ -91,7 +92,7 @@ The silo driver supports banding of LBA ranges.
 
 ### -field MaxLbaFilterCount
 
-Maximum number of LBA filter entries the silo driver can provide in a <a href="/windows-hardware/drivers/ddi/ehstorioctl/ni-ehstorioctl-ioctl_ehstor_driver_update_lba_filter_table">IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE</a> request.
+Maximum number of LBA filter entries the silo driver can provide in an <a href="/windows-hardware/drivers/ddi/ehstorioctl/ni-ehstorioctl-ioctl_ehstor_driver_update_lba_filter_table">IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE</a> request.
 
 ### -field RedirectedIoctlListCount
 
@@ -118,3 +119,4 @@ To receive band management requests from the enhanced storage class driver, a si
 
 
 <a href="/windows-hardware/drivers/ddi/ehstorioctl/ni-ehstorioctl-ioctl_ehstor_driver_update_lba_filter_table">IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE</a>
+

@@ -1,17 +1,17 @@
 ---
+description: "Learn more about: Dot11Wdi.h header"
 UID: NA:dot11wdi
 title: Dot11Wdi.h header
 ms.assetid: b9b9a3d0-411a-3f22-b90a-dd065eaf4aa0
 ms.date: 05/09/2018
 keywords: ["Dot11Wdi.h header"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 tech.root: netvista
 f1_keywords:
  - dot11wdi
  - dot11wdi/dot11wdi
+api_name:
+ - dot11wdi
 ---
 
 # Dot11Wdi.h header
@@ -19,7 +19,7 @@ f1_keywords:
 
 ## -description
 
-This header is used by netvista. For more information, see:
+This header is used by network. For more information, see:
 
-- [Networking drivers for Windows Vista and later](../_netvista/index.md)
+- [Network](../_netvista/index.md)
 

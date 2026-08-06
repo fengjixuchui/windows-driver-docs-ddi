@@ -1,8 +1,7 @@
 ---
 UID: NN:dbgmodel.IDebugHostModule2
 title: IDebugHostModule2 (dbgmodel.h)
-description: An (IDebugHostSymbol derived) interface to a particular module.
-ms.assetid: d0afd86c-b48e-46ce-8eeb-248705d7e467
+description: The IDebugHostModule2 (dbgmodel.h) interface is an IDebugHostSymbol derived interface that provides access to a particular module.
 ms.date: 06/11/2019
 keywords: ["IDebugHostModule2 interface"]
 req.header: dbgmodel.h
@@ -36,7 +35,6 @@ api_name:
 
 # IDebugHostModule2 interface
 
-
 ## -description
 
 An ([IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md) derived) interface to a particular module.
@@ -45,7 +43,7 @@ This version 2 of the interface supports all of the previous methods with identi
 
 ## -inheritance
 
-IDebugHostModule2 interits from [IDebugHostModule](nn-dbgmodel-idebughostmodule.md).
+IDebugHostModule2 inherits from [IDebugHostModule](nn-dbgmodel-idebughostmodule.md).
 
 ## -remarks
 

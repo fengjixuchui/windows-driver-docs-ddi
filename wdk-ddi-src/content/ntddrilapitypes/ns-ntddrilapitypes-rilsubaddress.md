@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILSUBADDRESS
 title: RILSUBADDRESS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILSUBADDRESS structure for internal use only. Don't use the RILSUBADDRESS structure in your code."
 old-location: netvista\rilsubaddress.htm
 tech.root: netvista
-ms.assetid: 0a1f9e89-df17-4802-9685-06a2eedbc0e5
 ms.date: 05/02/2018
 keywords: ["RILSUBADDRESS structure"]
 ms.keywords: "*LPRILSUBADDRESS, RILSUBADDRESS, RILSUBADDRESS structure [Network Drivers Starting with Windows Vista], netvista.rilsubaddress, ntddrilapitypes/RILSUBADDRESS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSUBADDRESS
+ - LPRILSUBADDRESS
 ---
 
 # RILSUBADDRESS structure (ntddrilapitypes.h)

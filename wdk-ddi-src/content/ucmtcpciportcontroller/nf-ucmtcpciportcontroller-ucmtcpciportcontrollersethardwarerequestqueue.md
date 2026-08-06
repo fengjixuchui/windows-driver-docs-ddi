@@ -4,7 +4,6 @@ title: UcmTcpciPortControllerSetHardwareRequestQueue function (ucmtcpciportcontr
 description: Assigns a framework queue object to which the UcmTcpciCx dispatches hardware requests for the port controller.
 old-location: buses\ucmtcpciportcontrollersethardwarerequestqueue.htm
 tech.root: usbref
-ms.assetid: 47142adb-4d22-41eb-b455-93409bbffffb
 ms.date: 05/07/2018
 keywords: ["UcmTcpciPortControllerSetHardwareRequestQueue function"]
 ms.keywords: UcmTcpciPortControllerSetHardwareRequestQueue, UcmTcpciPortControllerSetHardwareRequestQueue method [Buses], buses.ucmtcpciportcontrollersethardwarerequestqueue, ucmtcpciportcontroller/UcmTcpciPortControllerSetHardwareRequestQueue
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:

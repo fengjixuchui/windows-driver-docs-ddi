@@ -3,7 +3,6 @@ UID: NS:returncontexttypes._NET_FRAGMENT_RETURN_CONTEXT
 title: NET_FRAGMENT_RETURN_CONTEXT (returncontexttypes.h)
 description: The NET_FRAGMENT_RETURN_CONTEXT structure contains return context information for a [**NET_FRAGMENT**](../fragment/ns-fragment-_net_fragment.md).
 tech.root: netvista
-ms.assetid: 5795F982-866D-4731-BE0E-A085B0254CDF
 ms.date: 09/26/2019
 keywords: ["NET_FRAGMENT_RETURN_CONTEXT structure"]
 ms.keywords: NET_FRAGMENT_RETURN_CONTEXT, NET_FRAGMENT_RETURN_CONTEXT,
@@ -13,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - returncontexttypes.h
 api_name:
+ - _NET_FRAGMENT_RETURN_CONTEXT
  - NET_FRAGMENT_RETURN_CONTEXT
-product:
- - Windows
 ---
 
 # NET_FRAGMENT_RETURN_CONTEXT structure
@@ -65,3 +63,4 @@ To obtain this structure, call [**NetExtensionGetFragmentReturnContext**](../ret
 [**NET_FRAGMENT**](../fragment/ns-fragment-_net_fragment.md)
 
 [**NetExtensionGetFragmentReturnContext**](../returncontext/nf-returncontext-netextensiongetfragmentreturncontext.md)
+

@@ -4,7 +4,6 @@ title: PcInitializeAdapterDriver function (portcls.h)
 description: The PcInitializeAdapterDriver function binds an adapter driver to the PortCls system driver.
 old-location: audio\pcinitializeadapterdriver.htm
 tech.root: audio
-ms.assetid: c9d019da-a05b-4c60-99e9-06b8537fa78e
 ms.date: 05/08/2018
 keywords: ["PcInitializeAdapterDriver function"]
 ms.keywords: PcInitializeAdapterDriver, PcInitializeAdapterDriver function [Audio Devices], audio.pcinitializeadapterdriver, audpc-routines_57c7e54d-ab27-4752-b13b-9d7de107322c.xml, portcls/PcInitializeAdapterDriver
@@ -51,19 +50,19 @@ The <b>PcInitializeAdapterDriver</b> function binds an adapter driver to the Por
 
 ## -parameters
 
-### -param DriverObject 
+### -param DriverObject [in]
 
-[in]
+
 Pointer to the driver object, which is a system structure of type <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object">DRIVER_OBJECT</a>. This pointer is passed as a parameter to the adapter's <a href="/windows-hardware/drivers/storage/driverentry-of-ide-controller-minidriver">DriverEntry</a> function.
 
-### -param RegistryPathName 
+### -param RegistryPathName [in]
 
-[in]
+
 Specifies the registry path name that is to be passed as a parameter to the adapter's <a href="/windows-hardware/drivers/storage/driverentry-of-ide-controller-minidriver">DriverEntry</a> function.
 
-### -param AddDevice 
+### -param AddDevice [in]
 
-[in]
+
 Pointer to the adapter's <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_add_device">AddDevice</a> function. This is a pointer of type PDRIVER_ADD_DEVICE, which is defined in ntddk.h to be:
 
 

@@ -4,7 +4,6 @@ title: IoReadDiskSignature function (ntddk.h)
 description: The IoReadDiskSignature routine reads the disk signature information for the partition table of a disk.
 old-location: storage\ioreaddisksignature.htm
 tech.root: storage
-ms.assetid: c56d767f-598c-46b8-bab1-ce4de0780076
 ms.date: 03/29/2018
 keywords: ["IoReadDiskSignature function"]
 ms.keywords: IoReadDiskSignature, IoReadDiskSignature routine [Storage Devices], ntddk/IoReadDiskSignature, rtns-disk_4bd8bcea-c43a-45ea-a074-013b8eb30e01.xml, storage.ioreaddisksignature
@@ -50,19 +49,19 @@ The <b>IoReadDiskSignature</b> routine reads the disk signature information for 
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Specifies the device object for the disk to read.
 
-### -param BytesPerSector 
+### -param BytesPerSector [in]
 
-[in]
+
 Specifies the number of bytes per sector of the disk.
 
-### -param Signature 
+### -param Signature [out]
 
-[out]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_disk_signature">DISK_SIGNATURE</a> structure the routine uses to return the disk signature information.
 
 ## -returns

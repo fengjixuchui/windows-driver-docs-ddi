@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelConcept.QueryInterface
 title: IDataModelConcept::QueryInterface (dbgmodel.h)
-description: Retrieves pointers to the supported interfaces on an object. This method calls IUnknown::AddRef on the pointer it returns.
-ms.assetid: 932cbd0c-97e5-4cf1-8f6c-2dc0f6893d4a
+description: "The IDataModelConcept::QueryInterface method retrieves pointers to the supported interfaces on an object."
 ms.date: 09/11/2018
 keywords: ["IDataModelConcept::QueryInterface"]
 ms.keywords: IDataModelConcept::QueryInterface, QueryInterface, IDataModelConcept.QueryInterface, IDataModelConcept::QueryInterface, IDataModelConcept.QueryInterface
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelConcept.QueryInterface
+ - IDataModelConcept::QueryInterface
 ---
 
 # IDataModelConcept::QueryInterface
@@ -69,3 +68,4 @@ Standard COM method.
 ## -see-also
 
 [IDataModelConcept interface](nn-dbgmodel-idatamodelconcept.md)
+

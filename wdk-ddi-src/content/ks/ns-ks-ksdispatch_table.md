@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_78
+UID: NS:ks.KSDISPATCH_TABLE
 title: KSDISPATCH_TABLE (ks.h)
 description: The KSDISPATCH_TABLE structure contains pointers to minidriver implemented IRP dispatch routines.
 old-location: stream\ksdispatch_table.htm
 tech.root: stream
-ms.assetid: baa45ce7-3dcd-4383-99f2-aeb664a03190
 ms.date: 04/23/2018
 keywords: ["KSDISPATCH_TABLE structure"]
 ms.keywords: "*PKSDISPATCH_TABLE, KSDISPATCH_TABLE, KSDISPATCH_TABLE structure [Streaming Media Devices], PKSDISPATCH_TABLE, PKSDISPATCH_TABLE structure pointer [Streaming Media Devices], ks-struct_c1daf962-90e2-495e-9531-c23716ee9d68.xml, ks/KSDISPATCH_TABLE, ks/PKSDISPATCH_TABLE, stream.ksdispatch_table"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSDISPATCH_TABLE
  - KSDISPATCH_TABLE
 ---
 
@@ -105,3 +105,4 @@ For more information about minidriver implemented IRP dispatch routines, see <a 
 
 
 <a href="/windows-hardware/drivers/ddi/ks/nf-ks-kssetmajorfunctionhandler">KsSetMajorFunctionHandler</a>
+

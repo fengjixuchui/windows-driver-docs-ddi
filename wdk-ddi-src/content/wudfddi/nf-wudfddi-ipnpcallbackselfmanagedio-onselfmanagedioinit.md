@@ -4,7 +4,6 @@ title: IPnpCallbackSelfManagedIo::OnSelfManagedIoInit (wudfddi.h)
 description: The OnSelfManagedIoInit method initializes a device's self-managed I/O operations.
 old-location: wdf\ipnpcallbackselfmanagedio_onselfmanagedioinit.htm
 tech.root: wdf
-ms.assetid: 41b12fef-dbc7-4b91-a2d3-9fb1aafff237
 ms.date: 02/26/2018
 keywords: ["IPnpCallbackSelfManagedIo::OnSelfManagedIoInit"]
 ms.keywords: IPnpCallbackSelfManagedIo interface,OnSelfManagedIoInit method, IPnpCallbackSelfManagedIo.OnSelfManagedIoInit, IPnpCallbackSelfManagedIo::OnSelfManagedIoInit, OnSelfManagedIoInit, OnSelfManagedIoInit method, OnSelfManagedIoInit method,IPnpCallbackSelfManagedIo interface, UMDFDeviceObjectRef_17a86796-71ff-4ca3-897b-da7780614f24.xml, umdf.ipnpcallbackselfmanagedio_onselfmanagedioinit, wdf.ipnpcallbackselfmanagedio_onselfmanagedioinit, wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoInit
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IPnpCallbackSelfManagedIo.OnSelfManagedIoInit
+ - IPnpCallbackSelfManagedIo::OnSelfManagedIoInit
 ---
 
 # IPnpCallbackSelfManagedIo::OnSelfManagedIoInit
@@ -52,9 +51,9 @@ The <b>OnSelfManagedIoInit</b> method initializes a device's self-managed I/O op
 
 ## -parameters
 
-### -param pWdfDevice 
+### -param pWdfDevice [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice">IWDFDevice</a> interface for the device object of the device for which the self-managed I/O operations are initialized.
 
 ## -returns
@@ -81,3 +80,4 @@ A driver registers the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createdevice">IWDFDriver::CreateDevice</a>
+

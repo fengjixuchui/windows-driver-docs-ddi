@@ -4,7 +4,6 @@ title: EVT_SENSOR_DRIVER_GET_DATA_THRESHOLDS (sensorscx.h)
 description: This callback function returns the thresholds that are associated with a sensor.
 old-location: sensors\evtsensorgetdatathresholds.htm
 tech.root: sensors
-ms.assetid: 8D496490-2BB8-49A4-B575-101E61599A65
 ms.date: 05/03/2018
 keywords: ["EVT_SENSOR_DRIVER_GET_DATA_THRESHOLDS callback function"]
 ms.keywords: EVT_SENSOR_DRIVER_GET_DATA_THRESHOLDS, EVT_SENSOR_DRIVER_GET_DATA_THRESHOLDS callback, EvtSensorGetDataThresholds, EvtSensorGetDataThresholds callback function [Sensor Devices], sensors.evtsensorgetdatathresholds, sensorscx/EvtSensorGetDataThresholds
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - SensorsCx.h
 api_name:
- - EvtSensorGetDataThresholds
+ - EVT_SENSOR_DRIVER_GET_DATA_THRESHOLDS
 ---
 
 # EVT_SENSOR_DRIVER_GET_DATA_THRESHOLDS callback function
@@ -50,13 +49,13 @@ This callback function returns the thresholds that are associated with a sensor.
 
 ## -parameters
 
-### -param Sensor
+### -param Sensor [in]
 
-[in] A reference to a sensor object.
+A reference to a sensor object.
 
-### -param pThresholds
+### -param pThresholds [out]
 
-[out] A list of threshold properties and their values associated with the <b>Sensor</b>. For more information, see <a href="/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list">SENSOR_COLLECTION_LIST</a>.
+A list of threshold properties and their values associated with the <b>Sensor</b>. For more information, see <a href="/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list">SENSOR_COLLECTION_LIST</a>.
 
 ### -param pSize
 
@@ -77,3 +76,4 @@ This function must be implemented by the driver and is called by the class exten
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list">SENSOR_COLLECTION_LIST</a>
+

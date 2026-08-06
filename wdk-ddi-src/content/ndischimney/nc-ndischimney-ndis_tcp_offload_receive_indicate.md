@@ -4,7 +4,6 @@ title: NDIS_TCP_OFFLOAD_RECEIVE_INDICATE (ndischimney.h)
 description: An offload target calls the NdisTcpOffloadReceiveHandler function to indicate that received network data is available for consumption by a client application.
 old-location: netvista\ndistcpoffloadreceivehandler.htm
 tech.root: netvista
-ms.assetid: a45dede9-6559-4207-a49f-d9627054433a
 ms.date: 05/02/2018
 keywords: ["NDIS_TCP_OFFLOAD_RECEIVE_INDICATE callback function"]
 ms.keywords: NDIS_TCP_OFFLOAD_RECEIVE_INDICATE, NDIS_TCP_OFFLOAD_RECEIVE_INDICATE callback, NdisTcpOffloadReceiveHandler, NdisTcpOffloadReceiveHandler callback function [Network Drivers Starting with Windows Vista], ndischimney/NdisTcpOffloadReceiveHandler, netvista.ndistcpoffloadreceivehandler, tcp_chim_ndis_func_c79b9638-b69d-49de-b33b-95c0136a45f8.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndischimney.h
 api_name:
- - NdisTcpOffloadReceiveHandler
+ - NDIS_TCP_OFFLOAD_RECEIVE_INDICATE
 ---
 
 # NDIS_TCP_OFFLOAD_RECEIVE_INDICATE callback function
@@ -54,23 +53,23 @@ An offload target calls the
 
 ## -parameters
 
-### -param NdisOffloadHandle 
+### -param NdisOffloadHandle [in]
 
-[in]
+
 A handle that identifies the offloaded TCP connection on which the indication is being made. When
      the connection was offloaded, this handle was supplied in the 
      <b>NdisOffloadHandle</b> member of the 
      <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_miniport_offload_block_list">
      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure that was associated with the connection state.
 
-### -param NetBufferList 
+### -param NetBufferList [in]
 
-[in]
+
 A pointer to a 
-      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure. Each 
+      <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure. Each 
       <b>NET_BUFFER_LIST</b> structure
       describes a list of 
-      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a> structures. Each 
+      <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a> structures. Each 
       <b>NET_BUFFER</b> structure in the list maps to a
       chain of 
       <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl">memory descriptor lists (MDLs)</a>. The MDLs contain the
@@ -78,18 +77,18 @@ A pointer to a
       memory.
 
 The 
-      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure
+      <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure
       specified by 
       <i>NetBufferList</i> must be a stand-alone structure and cannot be the first
       structure in a linked list of 
       <b>NET_BUFFER_LIST</b> structures.
       Offload targets can work around this limitation by chaining as many MDLs as necessary to the same 
-      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a> in an offload receive
+      <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a> in an offload receive
       indication.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 The offload target must supply the following status value:
      
 
@@ -104,9 +103,9 @@ This indicates that the host stack can retain ownership of the NET_BUFFER_LIST s
        <a href="/windows-hardware/drivers/ddi/ndischimney/nc-ndischimney-w_tcp_offload_receive_return_handler">
        MiniportTcpOffloadReceiveReturn</a> function of the offload target.
 
-### -param BytesConsumed 
+### -param BytesConsumed [out]
 
-[out]
+
 A pointer to a ULONG-typed variable that receives the number of bytes that were consumed by the
      client application.
 
@@ -188,7 +187,7 @@ Zero-byte receive requests
 The host stack can post a zero-byte receive request to enable receive indications by the offload
       target. A zero-byte receive request is one in which the value of the 
       <b>DataLength</b> member (for more information, see 
-      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a> structure) is zero. A
+      <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a> structure) is zero. A
       zero-byte receive request does not consume any buffered data.
 
 </li>
@@ -286,12 +285,13 @@ In the
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a>
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a>
+

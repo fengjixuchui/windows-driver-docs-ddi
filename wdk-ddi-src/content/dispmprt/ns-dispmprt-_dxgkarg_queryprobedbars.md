@@ -3,11 +3,8 @@ UID: NS:dispmprt._DXGKARG_QUERYPROBEDBARS
 title: _DXGKARG_QUERYPROBEDBARS
 description: Query probed base address registers (BARS).
 tech.root: display
-ms.assetid: 5f7eb745-1ff6-4c6c-9935-7d85e754459c
 ms.date: 04/04/2019
 keywords: ["DXGKARG_QUERYPROBEDBARS structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _DXGKARG_QUERYPROBEDBARS, DXGKARG_QUERYPROBEDBARS, *PDXGKARG_QUERYPROBEDBARS,
 req.header: dispmprt.h
 req.include-header: 
@@ -39,8 +36,8 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGKARG_QUERYPROBEDBARS
-product:
- - Windows
+ - PDXGKARG_QUERYPROBEDBARS
+ - DXGKARG_QUERYPROBEDBARS
 dev_langs:
  - c++
 ---

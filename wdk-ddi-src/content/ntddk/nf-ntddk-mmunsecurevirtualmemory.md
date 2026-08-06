@@ -4,7 +4,6 @@ title: MmUnsecureVirtualMemory function (ntddk.h)
 description: The MmUnsecureVirtualMemory routine unsecures a memory address range secured by the MmSecureVirtualMemory routine.
 old-location: kernel\mmunsecurevirtualmemory.htm
 tech.root: kernel
-ms.assetid: 979eef24-e53b-476c-b9db-e56c43630913
 ms.date: 04/30/2018
 keywords: ["MmUnsecureVirtualMemory function"]
 ms.keywords: MmUnsecureVirtualMemory, MmUnsecureVirtualMemory routine [Kernel-Mode Driver Architecture], k106_0bfc6e9e-a4e9-4868-b1fb-da6714146dbf.xml, kernel.mmunsecurevirtualmemory, ntddk/MmUnsecureVirtualMemory
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>MmUnsecureVirtualMemory</b> routine unsecures a memory address range secu
 
 ## -parameters
 
-### -param SecureHandle 
+### -param SecureHandle [in]
 
-[in]
+
 Specifies the value returned by <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmsecurevirtualmemory">MmSecureVirtualMemory</a> for the memory address range.
 
 ## -see-also

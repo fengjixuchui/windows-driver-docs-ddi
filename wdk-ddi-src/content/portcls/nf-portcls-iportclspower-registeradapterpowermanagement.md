@@ -4,7 +4,6 @@ title: IPortClsPower::RegisterAdapterPowerManagement (portcls.h)
 description: The RegisterAdapterPowerManagement method registers the power management interface of the adapter with PortCls.
 old-location: audio\iportclspower_registeradapterpowermanagement.htm
 tech.root: audio
-ms.assetid: f4eb9d18-4352-47e2-bd5f-256e1fa831d3
 ms.date: 05/08/2018
 keywords: ["IPortClsPower::RegisterAdapterPowerManagement"]
 ms.keywords: IPortClsPower interface [Audio Devices],RegisterAdapterPowerManagement method, IPortClsPower.RegisterAdapterPowerManagement, IPortClsPower::RegisterAdapterPowerManagement, RegisterAdapterPowerManagement, RegisterAdapterPowerManagement method [Audio Devices], RegisterAdapterPowerManagement method [Audio Devices],IPortClsPower interface, audio.iportclspower_registeradapterpowermanagement, audmp-routines_9c179fd9-d332-478d-a114-469dc1c746fc.xml, portcls/IPortClsPower::RegisterAdapterPowerManagement
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL.
+req.irql: PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IPortClsPower.RegisterAdapterPowerManagement
+ - IPortClsPower::RegisterAdapterPowerManagement
 ---
 
 # IPortClsPower::RegisterAdapterPowerManagement
@@ -50,14 +49,14 @@ The <code>RegisterAdapterPowerManagement</code> method registers the power manag
 
 ## -parameters
 
-### -param _pUnknown 
+### -param _pUnknown [in]
 
-[in]
+
 Specifies a pointer to <b>IUnknown</b>. . PortCls queries this <b>IUnknown</b> object for the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iadapterpowermanagement">IAdapterPowerManagement</a> or the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iadapterpowermanagement2">IAdapterPowerManagement2</a> interface of the adapter.
 
-### -param _DeviceObject 
+### -param _DeviceObject [in]
 
-[in]
+
 Specifies a pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
 
 ## -returns
@@ -83,3 +82,4 @@ When the <code>RegisterAdapterPowerManagement</code> method registers the power 
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iportclspower">IPortClsPower</a>
+

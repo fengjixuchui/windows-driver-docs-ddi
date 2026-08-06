@@ -4,7 +4,6 @@ title: IStillImageW::GetHwNotificationState (sti.h)
 description: The IStillImage::GetHwNotificationState method indicates whether applications will be notified when Still Image Device Events occur on a specified device.
 old-location: image\istillimage_gethwnotificationstate.htm
 tech.root: image
-ms.assetid: 8c97c4f0-3cb8-4457-8389-02d9fba51400
 ms.date: 05/03/2018
 keywords: ["IStillImageW::GetHwNotificationState"]
 ms.keywords: GetHwNotificationState, GetHwNotificationState method [Imaging Devices], GetHwNotificationState method [Imaging Devices],IStillImageW interface, IStillImageW interface [Imaging Devices],GetHwNotificationState method, IStillImageW.GetHwNotificationState, IStillImageW::GetHwNotificationState, image.istillimage_gethwnotificationstate, sti/IStillImageW::GetHwNotificationState, stifnc_9dab6727-1954-4054-b918-be9666c05301.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - sti.h
 api_name:
- - IStillImageW.GetHwNotificationState
+ - IStillImageW::GetHwNotificationState
 ---
 
 # IStillImageW::GetHwNotificationState
@@ -50,14 +49,14 @@ The <b>IStillImage::GetHwNotificationState</b> method indicates whether applicat
 
 ## -parameters
 
-### -param pwszDeviceName 
+### -param pwszDeviceName [in]
 
-[in]
+
 Caller-supplied pointer to a string representing an internal device name, obtained by calling <a href="/previous-versions/windows/hardware/drivers/ff543790(v=vs.85)">IStillImage::GetSTILaunchInformation</a> or <a href="/previous-versions/windows/hardware/drivers/ff543784(v=vs.85)">IStillImage::GetDeviceList</a>.
 
-### -param pbCurrentState 
+### -param pbCurrentState [out]
 
-[out]
+
 Receives <b>TRUE</b> if event notification is enabled, or <b>FALSE</b> otherwise.
 
 ## -returns
@@ -75,3 +74,4 @@ Before calling <b>IStillImage::GetHwNotificationState</b>, clients of the <b>ISt
 
 
 <a href="/windows-hardware/drivers/ddi/_image/index">IStillImageW</a>
+

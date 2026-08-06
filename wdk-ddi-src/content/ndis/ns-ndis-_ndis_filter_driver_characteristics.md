@@ -4,7 +4,6 @@ title: _NDIS_FILTER_DRIVER_CHARACTERISTICS (ndis.h)
 description: To specify its driver characteristics, a filter driver initializes an NDIS_FILTER_DRIVER_CHARACTERISTICS structure and passes it to NDIS.
 old-location: netvista\ndis_filter_driver_characteristics.htm
 tech.root: netvista
-ms.assetid: 1eb2bae0-70b9-4bc0-9d93-4fc9467f9532
 ms.date: 05/03/2019
 keywords: ["NDIS_FILTER_DRIVER_CHARACTERISTICS structure"]
 ms.keywords: "*PNDIS_FILTER_DRIVER_CHARACTERISTICS, NDIS_FILTER_DRIVER_CHARACTERISTICS, NDIS_FILTER_DRIVER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], PNDIS_FILTER_DRIVER_CHARACTERISTICS, PNDIS_FILTER_DRIVER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_FILTER_DRIVER_CHARACTERISTICS, filter_structures_ref_8fc4ed95-82fe-47bd-849d-f9733647cacd.xml, ndis/NDIS_FILTER_DRIVER_CHARACTERISTICS, ndis/PNDIS_FILTER_DRIVER_CHARACTERISTICS, netvista.ndis_filter_driver_characteristics"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_FILTER_DRIVER_CHARACTERISTICS
+ - PNDIS_FILTER_DRIVER_CHARACTERISTICS
  - NDIS_FILTER_DRIVER_CHARACTERISTICS
 ---
 
@@ -58,7 +59,7 @@ To specify its driver characteristics, a filter driver initializes an
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      filter driver characteristics structure (NDIS_FILTER_DRIVER_CHARACTERISTICS). Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_FILTER_DRIVER_CHARACTERISTICS.
@@ -109,148 +110,26 @@ The major version of NDIS that the driver is using. The current value is
 
 The minor NDIS version. The following are the available minor version value settings.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>0</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>20</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.20
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>30</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.30
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>40</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.40
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>50</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.50
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>51</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.51
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>60</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.60
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>70</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.70
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>80</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.80
-
-</td>
-</tr>
-
-<tr>
-<td width="40%">
-<dl>
-<dt>81</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.81
-
-</td>
-</tr>
-
-<tr>
-<td width="40%">
-<dl>
-<dt>82</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.82
-
-</td>
-</tr>
-
-<tr>
-<td width="40%">
-<dl>
-<dt>83</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.83
-
-</td>
-</tr>
-
-</table>
+|Value|Meaning|
+|--- |--- |
+|0|NDIS 6|
+|20|NDIS 6.20|
+|30|NDIS 6.30|
+|40|NDIS 6.40|
+|50|NDIS 6.50|
+|51|NDIS 6.51|
+|60|NDIS 6.60|
+|70|NDIS 6.70|
+|80|NDIS 6.80|
+|81|NDIS 6.81|
+|82|NDIS 6.82|
+|83|NDIS 6.83|
+|84|NDIS 6.84|
+|85|NDIS 6.85|
+|86|NDIS 6.86|
+|87|NDIS 6.87|
+|88|NDIS 6.88|
+|89|NDIS 6.89|
 
 ### -field MajorDriverVersion
 
@@ -264,7 +143,13 @@ Reserved for the minor version number of the filter driver. Filter drivers can s
 
 ### -field Flags
 
-Reserved for NDIS.
+The following flag is supported in NDIS 6.89 and higher:
+
+|Value|Meaning|
+|--- |--- |
+|NDIS_FILTER_DRIVER_UDP_RSC_NOT_SUPPORTED 0x00000008| The driver opt-outs of URO support. |
+
+In NDIS 6.88 and below, **Flags** is reserved for NDIS. 
 
 ### -field FriendlyName
 
@@ -512,8 +397,9 @@ A filter driver calls the
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfregisterfilterdriver">NdisFRegisterFilterDriver</a>
+

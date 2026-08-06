@@ -4,7 +4,6 @@ title: PopEntryList function (wdm.h)
 description: The PopEntryList routine removes the first entry from a singly linked list of SINGLE_LIST_ENTRY structures.
 old-location: kernel\popentrylist.htm
 tech.root: kernel
-ms.assetid: b24ec573-4164-4016-a19d-574ebd75ec8f
 ms.date: 04/30/2018
 keywords: ["PopEntryList function"]
 ms.keywords: PopEntryList, PopEntryList routine [Kernel-Mode Driver Architecture], k109_a5d1634c-e1ab-43ac-ab3f-d0993263f5bb.xml, kernel.popentrylist, wdm/PopEntryList
@@ -50,9 +49,9 @@ The <b>PopEntryList</b> routine removes the first entry from a singly linked lis
 
 ## -parameters
 
-### -param ListHead 
+### -param ListHead [in, out]
 
-[in, out]
+
 Pointer to the <a href="/windows/win32/api/ntdef/ns-ntdef-single_list_entry">SINGLE_LIST_ENTRY</a> structure that represents the head of the list. On return, <i>ListHead</i>-><b>Next</b> points to the beginning of the list with the first entry removed.
 
 ## -returns

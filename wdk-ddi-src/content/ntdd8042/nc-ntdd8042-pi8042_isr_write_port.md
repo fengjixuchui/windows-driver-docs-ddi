@@ -4,7 +4,6 @@ title: PI8042_ISR_WRITE_PORT (ntdd8042.h)
 description: The PI8042_ISR_WRITE_PORT-typed callback routine writes data to an i8042 port. I8042prt provides this callback.
 old-location: hid\pi8042_isr_write_port.htm
 tech.root: hid
-ms.assetid: deded3fb-f0b3-4af5-b8b4-03658293b0fc
 ms.date: 04/30/2018
 keywords: ["PI8042_ISR_WRITE_PORT callback function"]
 ms.keywords: I8042IsrWritePort, I8042IsrWritePort callback function [Human Input Devices], PI8042_ISR_WRITE_PORT, PI8042_ISR_WRITE_PORT callback, hid.pi8042_isr_write_port, i8042ref_775d438e-5883-455b-86c4-2ce28099598f.xml, ntdd8042/I8042IsrWritePort
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ntdd8042.h
 api_name:
- - I8042IsrWritePort
+ - PI8042_ISR_WRITE_PORT
 ---
 
 # PI8042_ISR_WRITE_PORT callback function
@@ -50,14 +49,14 @@ The PI8042_ISR_WRITE_PORT-typed callback routine writes data to an i8042 port. I
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to the function device object that represents a keyboard or mouse device.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies the data to write to an i8042 port.
 
 ## -remarks
@@ -81,3 +80,4 @@ The PI8042_ISR_WRITE_PORT callback runs in kernel mode at the same IRQL as the I
 
 
 <a href="/windows-hardware/drivers/ddi/ntdd8042/ni-ntdd8042-ioctl_internal_i8042_hook_mouse">IOCTL_INTERNAL_I8042_HOOK_MOUSE</a>
+

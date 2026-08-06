@@ -4,7 +4,6 @@ title: RtlDeleteElementGenericTableAvl function (ntddk.h)
 description: The RtlDeleteElementGenericTableAvl routine deletes an element from a generic table.
 old-location: ifsk\rtldeleteelementgenerictableavl.htm
 tech.root: ifsk
-ms.assetid: 700412A3-5905-4401-BA65-C2DE1613398D
 ms.date: 04/16/2018
 keywords: ["RtlDeleteElementGenericTableAvl function"]
 ms.keywords: RtlDeleteElementGenericTableAvl, RtlDeleteElementGenericTableAvl routine [Installable File System Drivers], ifsk.rtldeleteelementgenerictableavl, ntddk/RtlDeleteElementGenericTableAvl
@@ -50,14 +49,14 @@ The <b>RtlDeleteElementGenericTableAvl</b> routine deletes an element from a gen
 
 ## -parameters
 
-### -param Table 
+### -param Table [in]
 
-[in]
+
 A pointer to the generic table (<a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_rtl_avl_table">RTL_AVL_TABLE</a>). The table must have been initialized by calling <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlinitializegenerictableavl">RtlInitializeGenericTableAvl</a>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to a caller-allocated buffer containing a value that uniquely identifies the element to be deleted.
 
 ## -returns

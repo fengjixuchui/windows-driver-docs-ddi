@@ -4,7 +4,6 @@ title: _HW_STREAM_INFORMATION (strmini.h)
 description: The HW_STREAM_INFORMATION structure describes the kernel streaming semantics supported by individual streams, as part of an HW_STREAM_DESCRIPTOR structure.
 old-location: stream\hw_stream_information.htm
 tech.root: stream
-ms.assetid: d1163185-4cae-4f14-ae99-78795da89fb8
 ms.date: 04/23/2018
 keywords: ["HW_STREAM_INFORMATION structure"]
 ms.keywords: "*PHW_STREAM_INFORMATION, HW_STREAM_INFORMATION, HW_STREAM_INFORMATION structure [Streaming Media Devices], PHW_STREAM_INFORMATION, PHW_STREAM_INFORMATION structure pointer [Streaming Media Devices], _HW_STREAM_INFORMATION, strclass-struct_df196092-33e4-4b19-b45c-0986b262f2e9.xml, stream.hw_stream_information, strmini/HW_STREAM_INFORMATION, strmini/PHW_STREAM_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - strmini.h
 api_name:
+ - _HW_STREAM_INFORMATION
+ - PHW_STREAM_INFORMATION
  - HW_STREAM_INFORMATION
 ---
 
@@ -108,7 +109,7 @@ The number of entries in the array that begins at the address in the <b>Mediums<
 
 ### -field Mediums
 
-Pointer to the beginning of the array of <a href="/previous-versions/ff563538(v=vs.85)">KSPIN_MEDIUM</a> structures supported by this stream. If the minidriver does not specify a medium, the class driver uses the KSMEDIUMSETID_STANDARD, KSMEDIUM_TYPE_ANYINSTANCE medium as the default.
+Pointer to the beginning of the array of <a href="/windows-hardware/drivers/stream/kspin-medium-structure">KSPIN_MEDIUM</a> structures supported by this stream. If the minidriver does not specify a medium, the class driver uses the KSMEDIUMSETID_STANDARD, KSMEDIUM_TYPE_ANYINSTANCE medium as the default.
 
 ### -field BridgeStream
 
@@ -133,3 +134,4 @@ Note that the class driver does not use this data to handle the <a href="/window
 
 
 <a href="/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_stream_header">HW_STREAM_HEADER</a>
+

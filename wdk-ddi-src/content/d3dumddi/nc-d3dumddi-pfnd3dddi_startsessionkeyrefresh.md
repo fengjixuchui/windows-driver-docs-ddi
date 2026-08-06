@@ -4,7 +4,6 @@ title: PFND3DDDI_STARTSESSIONKEYREFRESH (d3dumddi.h)
 description: The StartSessionKeyRefresh function returns a random number that the driver's FinishSessionKeyRefresh function subsequently uses to perform an exclusive OR operation (XOR) with the session key.
 old-location: display\startsessionkeyrefresh.htm
 tech.root: display
-ms.assetid: 986d8f46-3b4f-41b2-938e-4f3adbfe057a
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_STARTSESSIONKEYREFRESH callback function"]
 ms.keywords: PFND3DDDI_STARTSESSIONKEYREFRESH, PFND3DDDI_STARTSESSIONKEYREFRESH callback, StartSessionKeyRefresh, StartSessionKeyRefresh callback function [Display Devices], UserModeDisplayDriver_Functions_c68a1081-f350-4439-8c1c-91d9c54469bd.xml, d3dumddi/StartSessionKeyRefresh, display.startsessionkeyrefresh
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - StartSessionKeyRefresh
-product:
- - Windows
+ - PFND3DDDI_STARTSESSIONKEYREFRESH
 ---
 
 # PFND3DDDI_STARTSESSIONKEYREFRESH callback function
@@ -56,7 +53,7 @@ The <i>StartSessionKeyRefresh</i> function returns a random number that the driv
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -86,3 +83,4 @@ When the runtime subsequently calls the driver's <a href="/windows-hardware/driv
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_finishsessionkeyrefresh">FinishSessionKeyRefresh</a>
+

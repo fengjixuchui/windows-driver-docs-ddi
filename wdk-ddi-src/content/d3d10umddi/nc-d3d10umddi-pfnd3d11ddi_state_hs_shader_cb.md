@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_STATE_HS_SHADER_CB
 title: PFND3D11DDI_STATE_HS_SHADER_CB (d3d10umddi.h)
 description: The pfnStateHsShaderCb function causes the Microsoft Direct3D 11 runtime to refresh the hull shader.
 old-location: display\pfnstatehsshadercb.htm
-ms.assetid: 74b243a2-722b-4eec-b382-936a6f2f990e
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_STATE_HS_SHADER_CB callback function"]
 ms.keywords: PFND3D11DDI_STATE_HS_SHADER_CB, PFND3D11DDI_STATE_HS_SHADER_CB callback, d3d10umddi/pfnStateHsShaderCb, d3d11state_functions_b16162bf-d379-49de-bc4a-85d7df7e95bf.xml, display.pfnstatehsshadercb, pfnStateHsShaderCb, pfnStateHsShaderCb callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - pfnStateHsShaderCb
+ - PFND3D11DDI_STATE_HS_SHADER_CB
 ---
 
 # PFND3D11DDI_STATE_HS_SHADER_CB callback function
@@ -50,7 +49,7 @@ The <b>pfnStateHsShaderCb</b> function causes the Microsoft Direct3D 11 runtime 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hRuntimeDevice* [in]
 
@@ -63,3 +62,4 @@ A handle to a context for the core Direct3D runtime. This handle is supplied to 
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11ddi_corelayer_devicecallbacks">D3D11DDI_CORELAYER_DEVICECALLBACKS</a>
+

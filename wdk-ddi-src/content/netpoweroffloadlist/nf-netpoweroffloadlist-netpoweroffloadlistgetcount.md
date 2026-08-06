@@ -3,8 +3,7 @@ UID: NF:netpoweroffloadlist.NetPowerOffloadListGetCount
 title: NetPowerOffloadListGetCount function (netpoweroffloadlist.h)
 description: The NetPowerOffloadListGetCount function gets the number of low power protocol offloads to a net adapter.
 tech.root: netvista
-ms.assetid: 30c4d484-07c2-42ab-bce7-42d2f73968e4
-ms.date: 10/03/2019
+ms.date: 04/01/2022
 keywords: ["NetPowerOffloadListGetCount function"]
 ms.keywords: NetPowerOffloadListGetCount
 req.header: netpoweroffloadlist.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -37,8 +36,6 @@ api_location:
  - netadaptercxstub.lib
 api_name:
  - NetPowerOffloadListGetCount
-product:
- - Windows
 ---
 
 # NetPowerOffloadListGetCount function
@@ -50,7 +47,7 @@ The **NetPowerOffloadListGetCount** function gets the number of low power protoc
 
 ## -parameters
 
-### -param List
+### -param List [_In_]
 
 A pointer to a driver-allocated and initialized [**NET_POWER_OFFLOAD_LIST**](../netpoweroffloadlist/ns-netpoweroffloadlist-_net_power_offload_list.md) structure.
 

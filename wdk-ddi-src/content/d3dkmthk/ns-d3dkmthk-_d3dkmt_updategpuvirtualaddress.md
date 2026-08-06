@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_UPDATEGPUVIRTUALADDRESS
 title: _D3DKMT_UPDATEGPUVIRTUALADDRESS (d3dkmthk.h)
 description: D3DKMT_UPDATEGPUVIRTUALADDRESS is used with UpdateGpuVirtualAddress to allow the driver to specify a number of mapping operations to be applied to the process virtual address space in a single batch of page table updates.
 old-location: display\d3dkmt_updategpuvirtualaddress.htm
-ms.assetid: B6586406-6CAD-479F-AE41-93EFBA195B99
 ms.date: 05/10/2018
 keywords: ["D3DKMT_UPDATEGPUVIRTUALADDRESS structure"]
 ms.keywords: D3DKMT_UPDATEGPUVIRTUALADDRESS, D3DKMT_UPDATEGPUVIRTUALADDRESS structure [Display Devices], _D3DKMT_UPDATEGPUVIRTUALADDRESS, d3dkmthk/D3DKMT_UPDATEGPUVIRTUALADDRESS, display.d3dkmt_updategpuvirtualaddress
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_UPDATEGPUVIRTUALADDRESS
  - D3DKMT_UPDATEGPUVIRTUALADDRESS
 ---
 
@@ -58,7 +58,7 @@ A handle to the device.
 
 ### -field hContext
 
-A handle to a context that the map operation will be synchronized against. This also determines which kernel context the map operation will be executed against. In an linked display adapter (LDA) configuration <b>hContext</b> defines a physical GPU whose page tables are modified.
+A handle to a context that the map operation will be synchronized against. This also determines which kernel context the map operation will be executed against. In a linked display adapter (LDA) configuration <b>hContext</b> defines a physical GPU whose page tables are modified.
 
 ### -field hFenceObject
 
@@ -99,3 +99,4 @@ This member is reserved and should be set to zero.
 ### -field Flags.Value
 
 The consolidated value of the <b>Flags</b> union.
+

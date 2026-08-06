@@ -4,7 +4,6 @@ title: SerCxCompleteWait function (sercx.h)
 description: The SerCxCompleteWait method notifies the serial framework extension (SerCx) that an event in the current wait mask has occurred.
 old-location: serports\sercxcompletewait.htm
 tech.root: serports
-ms.assetid: 9318AB76-48ED-49FF-A4ED-17A07D43A0F8
 ms.date: 04/23/2018
 keywords: ["SerCxCompleteWait function"]
 ms.keywords: 1/SerCxCompleteWait, SerCxCompleteWait, SerCxCompleteWait method [Serial Ports], serports.sercxcompletewait
@@ -50,14 +49,14 @@ The <b>SerCxCompleteWait</b> method notifies the serial framework extension (Ser
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the serial controller.
 
-### -param Event 
+### -param Event [in]
 
-[in]
+
 The type of event that is ending the current wait operation.  This parameter is a wait mask value. Each event type corresponds to a particular bit in the wait mask. This bit is set to indicate that the corresponding event has occurred. For more information about the types of events that can be specified by a wait mask, see <a href="/windows-hardware/drivers/serports/peripheral-drivers-for-devices-on-sercx2-managed-serial-ports">SERIAL_EV_XXX</a>.
 
 ## -returns

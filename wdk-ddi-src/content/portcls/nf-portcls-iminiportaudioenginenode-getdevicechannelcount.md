@@ -4,7 +4,6 @@ title: IMiniportAudioEngineNode::GetDeviceChannelCount (portcls.h)
 description: Gets a count of the number of channels supported by the audio device.
 old-location: audio\iminiportaudioenginenode_getdevicechannelcount.htm
 tech.root: audio
-ms.assetid: 978193AE-55CD-4255-8722-A1E008E98F08
 ms.date: 05/08/2018
 keywords: ["IMiniportAudioEngineNode::GetDeviceChannelCount"]
 ms.keywords: GetDeviceChannelCount, GetDeviceChannelCount method [Audio Devices], GetDeviceChannelCount method [Audio Devices],IMiniportAudioEngineNode interface, IMiniportAudioEngineNode interface [Audio Devices],GetDeviceChannelCount method, IMiniportAudioEngineNode.GetDeviceChannelCount, IMiniportAudioEngineNode::GetDeviceChannelCount, audio.iminiportaudioenginenode_getdevicechannelcount, portcls/IMiniportAudioEngineNode::GetDeviceChannelCount
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IMiniportAudioEngineNode.GetDeviceChannelCount
+ - IMiniportAudioEngineNode::GetDeviceChannelCount
 ---
 
 # IMiniportAudioEngineNode::GetDeviceChannelCount
@@ -50,19 +49,19 @@ Gets a count of the number of channels supported by the audio device.
 
 ## -parameters
 
-### -param ulNodeId 
+### -param ulNodeId [in]
 
-[in]
+
 The ID of the node that represents the audio device.
 
-### -param targetType 
+### -param targetType [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/ddi/portcls/ne-portcls-echanneltargettype">eChannelTargetType</a> enumerated value that specifies the types of target nodes in the channels. For example, there could be Volume, Mute or PeakMeter nodes.
 
-### -param pulChannelCount 
+### -param pulChannelCount [out]
 
-[out]
+
 The number of channels supported by the audio device.
 
 ## -returns
@@ -78,3 +77,4 @@ returns an appropriate error code.
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/ne-portcls-echanneltargettype">eChannelTargetType</a>
+

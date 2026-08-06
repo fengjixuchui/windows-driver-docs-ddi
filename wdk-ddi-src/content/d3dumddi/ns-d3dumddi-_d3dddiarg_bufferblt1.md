@@ -4,7 +4,6 @@ title: _D3DDDIARG_BUFFERBLT1 (d3dumddi.h)
 description: Describes the parameters of a buffer bit-block transfer (bitblt) operation.
 old-location: display\d3dddiarg_bufferblt1.htm
 tech.root: display
-ms.assetid: 1dd2bf12-741b-4f3a-9c80-367b5d5036b5
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_BUFFERBLT1 structure"]
 ms.keywords: D3DDDIARG_BUFFERBLT1, D3DDDIARG_BUFFERBLT1 structure [Display Devices], _D3DDDIARG_BUFFERBLT1, d3dumddi/D3DDDIARG_BUFFERBLT1, display.d3dddiarg_bufferblt1
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dumddi.h
 api_name:
+ - _D3DDDIARG_BUFFERBLT1
  - D3DDDIARG_BUFFERBLT1
 ---
 
@@ -75,3 +75,4 @@ A value that specifies characteristics of a copy operation as a bitwise OR of th
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-d3dddi_copy_flags">D3DDDI_COPY_FLAGS</a>
+

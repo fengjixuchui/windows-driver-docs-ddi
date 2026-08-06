@@ -4,7 +4,6 @@ title: IKsPinFactory::KsPinFactory (ksproxy.h)
 description: The KsPinFactory method retrieves the identifier of a pin factory.
 old-location: stream\ikspinfactory_kspinfactory.htm
 tech.root: stream
-ms.assetid: 939ea77d-f194-4751-b02b-80d5e83c46f4
 ms.date: 04/23/2018
 keywords: ["IKsPinFactory::KsPinFactory"]
 ms.keywords: IKsPinFactory interface [Streaming Media Devices],KsPinFactory method, IKsPinFactory.KsPinFactory, IKsPinFactory::KsPinFactory, KsPinFactory, KsPinFactory method [Streaming Media Devices], KsPinFactory method [Streaming Media Devices],IKsPinFactory interface, ksproxy/IKsPinFactory::KsPinFactory, ksproxy_80504e51-334d-4dd8-a6ce-73de9b3b3729.xml, stream.ikspinfactory_kspinfactory
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ksproxy.h
 api_name:
- - IKsPinFactory.KsPinFactory
+ - IKsPinFactory::KsPinFactory
 ---
 
 # IKsPinFactory::KsPinFactory
@@ -50,9 +49,9 @@ The <b>KsPinFactory</b> method retrieves the identifier of a pin factory.
 
 ## -parameters
 
-### -param PinFactory 
+### -param PinFactory [out]
 
-[out]
+
 Pointer to a variable that receives the identifier of the pin factory.
 
 ## -returns
@@ -62,3 +61,4 @@ Returns NOERROR if successful; otherwise, returns an error code.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ksproxy/nn-ksproxy-ikspinfactory">IKsPinFactory</a>
+

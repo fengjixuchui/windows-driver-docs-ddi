@@ -4,7 +4,6 @@ title: IDebugControl3::WaitForEvent (dbgeng.h)
 description: The WaitForEvent method waits for an event that breaks into the debugger engine application.
 old-location: debugger\waitforevent.htm
 tech.root: debugger
-ms.assetid: b7038bcf-2469-4d5f-ac73-0c7835da23c3
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::WaitForEvent"]
 ms.keywords: IDebugControl interface [Windows Debugging],WaitForEvent method, IDebugControl2 interface [Windows Debugging],WaitForEvent method, IDebugControl2::WaitForEvent, IDebugControl3 interface [Windows Debugging],WaitForEvent method, IDebugControl3.WaitForEvent, IDebugControl3::WaitForEvent, IDebugControl::WaitForEvent, IDebugControl_19a7d8b3-1f16-400e-bf8f-c782d48b2cf5.xml, WaitForEvent, WaitForEvent method [Windows Debugging], WaitForEvent method [Windows Debugging],IDebugControl interface, WaitForEvent method [Windows Debugging],IDebugControl2 interface, WaitForEvent method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::WaitForEvent, dbgeng/IDebugControl3::WaitForEvent, dbgeng/IDebugControl::WaitForEvent, debugger.waitforevent
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.WaitForEvent
- - IDebugControl2.WaitForEvent
- - IDebugControl3.WaitForEvent
+ - IDebugControl3::WaitForEvent
 ---
 
 # IDebugControl3::WaitForEvent
@@ -52,14 +49,14 @@ api_name:
 
 ## -parameters
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Set to zero.  There are currently no flags that can be used in this parameter.
 
-### -param Timeout 
+### -param Timeout [in]
 
-[in]
+
 Specifies how many milliseconds to wait before this method will return.  If <i>Timeout</i> is INFINITE, this method will not return until an event that breaks into the debugger engine application occurs or an exit interrupt is issued.  If the current session has a live kernel target, <i>Timeout</i> must be set to INFINITE.
 
 ## -returns
@@ -153,3 +150,4 @@ For more information about using <b>WaitForEvent</b> to control the execution fl
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
+

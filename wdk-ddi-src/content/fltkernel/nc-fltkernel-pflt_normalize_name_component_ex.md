@@ -4,7 +4,6 @@ title: PFLT_NORMALIZE_NAME_COMPONENT_EX (fltkernel.h)
 description: A minifilter driver that provides file names for the filter manager's name cache can register a routine of type PFLT_NORMALIZE_NAME_COMPONENT_EX as the minifilter driver's NormalizeNameComponentExCallback callback routine.
 old-location: ifsk\pflt_normalize_name_component_ex.htm
 tech.root: ifsk
-ms.assetid: 7c2bc90a-c724-4787-b604-f7257a83aae7
 ms.date: 04/16/2018
 keywords: ["PFLT_NORMALIZE_NAME_COMPONENT_EX callback function"]
 ms.keywords: FltCallbacks_d5ac42d8-4a17-49c0-b46f-f0c055ded4f3.xml, NormalizeNameComponentExCallback, NormalizeNameComponentExCallback routine [Installable File System Drivers], PFLT_NORMALIZE_NAME_COMPONENT_EX, fltkernel/NormalizeNameComponentExCallback, ifsk.pflt_normalize_name_component_ex
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - fltkernel.h
 api_name:
- - NormalizeNameComponentExCallback
+ - PFLT_NORMALIZE_NAME_COMPONENT_EX
 ---
 
 # PFLT_NORMALIZE_NAME_COMPONENT_EX callback function
@@ -50,49 +49,49 @@ A minifilter driver that provides file names for the filter manager's name cache
 
 ## -parameters
 
-### -param Instance 
+### -param Instance [in]
 
-[in]
+
 Opaque instance pointer for the minifilter driver instance that this callback routine is registered for.
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to the file object for the file whose name is being requested or the file that is the target of the <a href="/windows-hardware/drivers/ifs/irp-mj-set-information">IRP_MJ_SET_INFORMATION</a> operation if the FLTFL_NORMALIZE_NAME_DESTINATION_FILE_NAME flag is set.  See the <i>Flags</i> parameter below for more information.
 
-### -param ParentDirectory 
+### -param ParentDirectory [in]
 
-[in]
+
 Pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains the name of the parent directory for this name component.
 
-### -param VolumeNameLength 
+### -param VolumeNameLength [in]
 
-[in]
+
 Length, in bytes, of the parent directory name that is stored in the structure that the <i>ParentDirectory</i> parameter points to.
 
-### -param Component 
+### -param Component [in]
 
-[in]
+
 Pointer to a UNICODE_STRING structure that contains the name component to be expanded.
 
-### -param ExpandComponentName 
+### -param ExpandComponentName [out]
 
-[out]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_names_information">FILE_NAMES_INFORMATION</a> structure that receives the expanded (normalized) file name information for the name component.
 
-### -param ExpandComponentNameLength 
+### -param ExpandComponentNameLength [in]
 
-[in]
+
 Length, in bytes, of the buffer that the <i>ExpandComponentName</i> parameter points to.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Name normalization flags.  FLTFL_NORMALIZE_NAME_CASE_SENSITIVE specifies that the name to be normalized is case-sensitive.  FLTFL_NORMALIZE_NAME_DESTINATION_FILE_NAME specifies that the callback routine has been called to service an <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetdestinationfilenameinformation">FltGetDestinationFileNameInformation</a> routine call.  If the FLTFL_NORMALIZE_NAME_DESTINATION_FILE_NAME flag is set, <i>FileObject</i> represents the file/directory that is the target of the IRP_MJ_SET_INFORMATION operation. If the FLTFL_NORMALIZE_NAME_DESTINATION_FILE_NAME flag is not set, <i>FileObject</i> represents the file/directory whose name is being requested.
 
-### -param NormalizationContext 
+### -param NormalizationContext [in, out]
 
-[in, out]
+
 Pointer to minifilter driver-provided context information to be passed in any subsequent calls to this callback routine that are made to normalize the remaining components in the same file name path.
 
 ## -returns
@@ -154,3 +153,4 @@ If the minifilter driver uses the <i>NormalizationContext</i> parameter, it shou
 
 
 <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a>
+

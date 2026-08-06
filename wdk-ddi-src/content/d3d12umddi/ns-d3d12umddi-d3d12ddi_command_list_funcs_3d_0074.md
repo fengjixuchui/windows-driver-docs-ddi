@@ -1,9 +1,7 @@
 ---
 UID: NS:d3d12umddi.D3D12DDI_COMMAND_LIST_FUNCS_3D_0074
 title: D3D12DDI_COMMAND_LIST_FUNCS_3D_0074
-ms.date: 03/24/2020
-ms.topic: language-reference
-ms.assetid: 0bd7af69-da02-4566-90d4-714ebf402b03
+ms.date: 10/17/2022
 tech.root: display
 targetos: Windows
 description: The command list 3D functions for version Direct3D 12 Release 7, Build rev 4.
@@ -39,7 +37,7 @@ dev_langs:
 
 ## -description
 
-The command list 3D functions for version Direct3D 12 Release 7, Build rev 4.
+**D3D12DDI_COMMAND_LIST_FUNCS_3D_0074** is used to provide pointers to the user-mode driver's command list 3D DDI functions for version Direct3D 12 Release 7, Build rev 4.
 
 ## -struct-fields
 
@@ -313,9 +311,14 @@ Sets the screen space image.
 
 ### -field pfnDispatchMesh
 
-Dispatch mesh. See the [D3D Sampler Feedback Specification](https://microsoft.github.io/DirectX-Specs/d3d/SamplerFeedback.html) for more information.
+Pointer to a [**PFND3D12DDI_DISPATCH_MESH_0074**](nc-d3d12umddi-pfnd3d12ddi_dispatch_mesh_0074.md) callback function.
 
 ## -remarks
 
+The graphics kernel calls the user mode-driver's [**PFND3D12DDI_FILLDDITTABLE**](nc-d3d12umddi-pfnd3d12ddi_fillddittable.md) callback with a [**tableType**](ne-d3d12umddi-d3d12ddi_table_type.md) value of **D3D12DDI_TABLE_TYPE_COMMAND_LIST_3D** to obtain the UMD's 3D command list functions for this DDI version.
+
 ## -see-also
 
+[**D3D12DDI_TABLE_TYPE**](ne-d3d12umddi-d3d12ddi_table_type.md)
+
+[**PFND3D12DDI_FILLDDITTABLE**](nc-d3d12umddi-pfnd3d12ddi_fillddittable.md)

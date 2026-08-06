@@ -4,7 +4,6 @@ title: _IRB_REQ_SET_DEVICE_XMIT_PROPERTIES (1394.h)
 description: This structure contains the fields necessary to carry out a SetDeviceXmitProperties request.
 old-location: ieee\irb_req_set_device_xmit_properties.htm
 tech.root: IEEE
-ms.assetid: 1E99F892-CD7C-411D-8832-08F988B9F2D7
 ms.date: 02/15/2018
 keywords: ["IRB_REQ_SET_DEVICE_XMIT_PROPERTIES structure"]
 ms.keywords: 1394/IRB_REQ_SET_DEVICE_XMIT_PROPERTIES, IEEE.irb_req_set_device_xmit_properties, IRB_REQ_SET_DEVICE_XMIT_PROPERTIES, IRB_REQ_SET_DEVICE_XMIT_PROPERTIES structure [Buses], _IRB_REQ_SET_DEVICE_XMIT_PROPERTIES
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _IRB_REQ_SET_DEVICE_XMIT_PROPERTIES
  - IRB_REQ_SET_DEVICE_XMIT_PROPERTIES
 ---
 
@@ -106,3 +106,4 @@ Specifies the priority.
 ## -remarks
 
 By default, the maximum permitted transmission speed is the physical maximum. A driver should use this request to lower the maximum permitted speed.
+

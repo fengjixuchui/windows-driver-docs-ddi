@@ -4,7 +4,6 @@ title: PoFxActivateComponent function (wdm.h)
 description: The PoFxActivateComponent routine increments the activation reference count on the specified component.
 old-location: kernel\pofxactivatecomponent.htm
 tech.root: kernel
-ms.assetid: B964B836-68C1-4254-963C-8D46ACE64107
 ms.date: 04/30/2018
 keywords: ["PoFxActivateComponent function"]
 ms.keywords: PO_FX_FLAG_ASYNC_ONLY, PO_FX_FLAG_BLOCKING, PoFxActivateComponent, PoFxActivateComponent routine [Kernel-Mode Driver Architecture], kernel.pofxactivatecomponent, wdm/PoFxActivateComponent
@@ -50,19 +49,19 @@ The <b>PoFxActivateComponent</b> routine increments the activation reference cou
 
 ## -parameters
 
-### -param Handle 
+### -param Handle [in]
 
-[in]
+
 A handle that represents the registration of the device with the power management framework (PoFx). The device driver previously received this handle from the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxregisterdevice">PoFxRegisterDevice</a> routine.
 
-### -param Component 
+### -param Component [in]
 
-[in]
+
 The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_po_fx_device_v1">PO_FX_DEVICE</a> structure that the device driver used to register the device with PoFx. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 The flags for the activation operation. Set this member to zero or to one of the following flag <b>PO_FX_FLAG_<i>XXX</i></b> bits:
 
 These two flag bits are mutually exclusive. For more information, see Remarks.

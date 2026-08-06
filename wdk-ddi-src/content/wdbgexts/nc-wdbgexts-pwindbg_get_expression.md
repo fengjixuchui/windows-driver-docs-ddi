@@ -4,8 +4,7 @@ title: PWINDBG_GET_EXPRESSION (wdbgexts.h)
 description: The PWINDBG_GET_EXPRESSION (GetExpression) function returns the value of expression. The expression is evaluated using the current expression evaluator, and can contain aliases.
 old-location: debugger\getexpression.htm
 tech.root: debugger
-ms.assetid: 20d75838-6dbf-49a2-a0c9-a0c1ae74d7a6
-ms.date: 05/03/2018
+ms.date: 07/26/2023
 keywords: ["PWINDBG_GET_EXPRESSION callback function"]
 ms.keywords: GetExpression, GetExpression callback function [Windows Debugging], PWINDBG_GET_EXPRESSION, PWINDBG_GET_EXPRESSION callback, WdbgExts_Ref_666ae7de-7842-4ba8-9352-e79aefe24ba7.xml, debugger.getexpression, wdbgexts/GetExpression
 req.header: wdbgexts.h
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - wdbgexts.h
 api_name:
- - GetExpression
+ - PWINDBG_GET_EXPRESSION
 ---
 
 # PWINDBG_GET_EXPRESSION callback function
-
 
 ## -description
 
@@ -50,9 +48,7 @@ The <b>PWINDBG_GET_EXPRESSION</b> (<b>GetExpression</b>) function returns the va
 
 ## -parameters
 
-### -param lpExpression
-
-#### - expression [in]
+### -param lpExpression [in]
 
 Specifies the expression to evaluate.
 

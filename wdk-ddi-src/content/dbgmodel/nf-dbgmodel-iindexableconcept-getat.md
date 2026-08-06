@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.IIndexableConcept.GetAt
 title: IIndexableConcept::GetAt (dbgmodel.h)
 description: The GetAt method retrieves the value at a particular N-dimensional index from within the indexed object.
-ms.assetid: a2ad86e3-55ea-49ad-88a5-745a69741e17
 ms.date: 09/19/2018
 keywords: ["IIndexableConcept::GetAt"]
 ms.keywords: IIndexableConcept::GetAt, GetAt, IIndexableConcept.GetAt, IIndexableConcept::GetAt, IIndexableConcept.GetAt
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IIndexableConcept.GetAt
+ - IIndexableConcept::GetAt
 ---
 
 # IIndexableConcept::GetAt
@@ -58,11 +57,11 @@ The number of dimensions that the object is being indexed in.
 
 ### -param indexers
 
-An array (sized according to the indexerCount) of indicies indicating where inside the instance object to access.
+An array (sized according to the indexerCount) of indices indicating where inside the instance object to access.
 
 ### -param object
 
-The value of the element at the specified indicies is returned here. If the method fails, extended error information may be returned here as an error object.
+The value of the element at the specified indices is returned here. If the method fails, extended error information may be returned here as an error object.
 
 ### -param metadata
 

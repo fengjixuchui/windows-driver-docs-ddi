@@ -4,7 +4,6 @@ title: IPrintOemDriverUni::DrvGetGPDData (prcomoem.h)
 description: The IPrintOemDriverUni::DrvGetGPDData method is provided by the Unidrv driver so that rendering plug-ins can obtain data defined in a printer's GPD file.
 old-location: print\iprintoemdriveruni_drvgetgpddata.htm
 tech.root: print
-ms.assetid: cebe8972-4e5a-4382-ac1b-4c326dea46b1
 ms.date: 04/20/2018
 keywords: ["IPrintOemDriverUni::DrvGetGPDData"]
 ms.keywords: DrvGetGPDData, DrvGetGPDData method [Print Devices], DrvGetGPDData method [Print Devices],IPrintOemDriverUni interface, IPrintOemDriverUni interface [Print Devices],DrvGetGPDData method, IPrintOemDriverUni.DrvGetGPDData, IPrintOemDriverUni::DrvGetGPDData, prcomoem/IPrintOemDriverUni::DrvGetGPDData, print.iprintoemdriveruni_drvgetgpddata, print_unidrv-pscript_rendering_3efd30f6-350c-411f-a036-f6fe3525132d.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemDriverUni.DrvGetGPDData
+ - IPrintOemDriverUni::DrvGetGPDData
 ---
 
 # IPrintOemDriverUni::DrvGetGPDData
@@ -138,3 +137,4 @@ The method is not implemented.
 ## -remarks
 
 If the buffer specified by <i>pBuffer</i> and <i>cbSize</i> is too small to receive the requested information, Unidrv supplies the required buffer size in the location pointed to by <i>pcbNeeded</i>, returns E_FAIL, and sets the error code to ERROR_INSUFFICIENT_BUFFER.
+

@@ -4,14 +4,13 @@ title: ZwOpenDirectoryObject function (ntifs.h)
 description: The ZwOpenDirectoryObject routine opens an existing directory object.
 old-location: kernel\zwopendirectoryobject.htm
 tech.root: kernel
-ms.assetid: ddff6e6e-d22f-4e22-af13-aca889eee0d4
 ms.date: 04/30/2018
 keywords: ["ZwOpenDirectoryObject function"]
 ms.keywords: NtCreateDirectoryObject, ZwOpenDirectoryObject, ZwOpenDirectoryObject routine [Kernel-Mode Driver Architecture], k111_a3aca9ff-bf76-4cd0-a15d-565201c1e132.xml, kernel.zwopendirectoryobject, ntifs/NtCreateDirectoryObject, ntifs/ZwOpenDirectoryObject
 req.header: ntifs.h
 req.include-header: Ntdef.h, Ntifs.h, Fltkernel.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winverclnt: Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - ZwOpenDirectoryObject
- - NtCreateDirectoryObject
 ---
 
 # ZwOpenDirectoryObject function
@@ -51,14 +49,14 @@ The <b>ZwOpenDirectoryObject</b> routine opens an existing directory object.
 
 ## -parameters
 
-### -param DirectoryHandle 
+### -param DirectoryHandle [out]
 
-[out]
+
 Handle for the newly opened directory object.
 
-### -param DesiredAccess 
+### -param DesiredAccess [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/kernel/access-mask">ACCESS_MASK</a> structure specifying the requested types of access being requested for this directory object. A caller can specify one or a combination of the following.
 
 <table>
@@ -121,9 +119,9 @@ All of the preceding rights plus STANDARD_RIGHTS_REQUIRED.
 
 These requested access types are compared with the object's discretionary access-control list (<a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_acl">DACL</a>) to determine which accesses are granted or denied.
 
-### -param ObjectAttributes 
+### -param ObjectAttributes [in]
 
-[in]
+
 Specified attributes for the directory object supplied by the caller. This parameter is initialized by calling the <b>InitializeObjectAttributes</b> macro.
 
 ## -returns
@@ -214,7 +212,7 @@ The <b>ZwOpenDirectoryObject</b> routine is called after the <b>InitializeObject
 
 A directory object is created using the <b>ZwCreateDirectoryObject </b>routine<b>. </b>Any handle obtained by calling <b>ZwOpenDirectoryObject</b> must eventually be released by calling <b>ZwClose</b>. 
 
-For more information about security and access control, see the documentation on these topics in the Windows SDK. 
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK. 
 
 <div class="alert"><b>Note</b>  If the call to the <b>ZwCreateDirectoryObject </b>function occurs in user mode, you should use the name "<b>NtCreateDirectoryObject</b>" instead of "<b>ZwCreateDirectoryObject</b>".</div>
 <div> </div>
@@ -243,3 +241,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatedirectoryobject">ZwCreateDirectoryObject</a>
+

@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_RESOURCEUPDATESUBRESOURCEUP
 title: PFND3D11_1DDI_RESOURCEUPDATESUBRESOURCEUP (d3d10umddi.h)
 description: Updates a destination subresource region that stores constant buffers from a source system-memory region. Implemented by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
 old-location: display\defaultconstantbufferupdatesubresourceup_d3d11_1_.htm
-ms.assetid: 67FCC9A4-B3C5-46FC-83ED-CFFB8186328F
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_RESOURCEUPDATESUBRESOURCEUP callback function"]
 ms.keywords: DefaultConstantBufferUpdateSubresourceUP(D3D11_1), DefaultConstantBufferUpdateSubresourceUP(D3D11_1) callback function [Display Devices], PFND3D11_1DDI_RESOURCEUPDATESUBRESOURCEUP, PFND3D11_1DDI_RESOURCEUPDATESUBRESOURCEUP callback, d3d10umddi/DefaultConstantBufferUpdateSubresourceUP(D3D11_1), display.defaultconstantbufferupdatesubresourceup_d3d11_1_
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - DefaultConstantBufferUpdateSubresourceUP(D3D11_1)
+ - PFND3D11_1DDI_RESOURCEUPDATESUBRESOURCEUP
 ---
 
 # PFND3D11_1DDI_RESOURCEUPDATESUBRESOURCEUP callback function
@@ -50,43 +49,43 @@ updates a destination subresource region that stores constant buffers from a sou
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hDstResource*
 
 A handle to the destination resource to copy to.
 
-### -param Arg3
+### -param unnamedParam3
 
 *DstSubresource*
 
 An index that indicates the destination subresource to copy to.
 
-### -param Arg4
+### -param unnamedParam4
 
 *pDstBox* [in, optional]
 
-A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10_ddi_box">D3D10_DDI_BOX</a> structure that specifies the region of the destination subresource to copy data to. If <i>pDstBox</i> is <b>NULL</b>, the driver should copy to the entire destination subresouce.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10_ddi_box">D3D10_DDI_BOX</a> structure that specifies the region of the destination subresource to copy data to. If <i>pDstBox</i> is <b>NULL</b>, the driver should copy to the entire destination subresource.
 
-### -param Arg5
+### -param unnamedParam5
 
 *pSysMemUP* [in]
 
-A pointer to the beginning address of the source data that <b>DefaultConstantBufferUpdateSubresourceUP(D3D11_1)</b> uses to update the destination subresouce.
+A pointer to the beginning address of the source data that <b>DefaultConstantBufferUpdateSubresourceUP(D3D11_1)</b> uses to update the destination subresource.
 
-### -param Arg6
+### -param unnamedParam6
 
 *RowPitch*
 
 The offset, in bytes, to move to the next row of source data.
 
-### -param Arg7
+### -param unnamedParam7
 
 *DepthPitch*
 
@@ -118,3 +117,4 @@ The driver should not encounter any error, except for <b>D3DDDIERR_DEVICEREMOVED
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

@@ -2,7 +2,6 @@
 UID: NF:sensorsutils.CollectionsListAllocateBufferAndSerialize
 title: CollectionsListAllocateBufferAndSerialize function (sensorsutils.h)
 description: This routine allocates a buffer and then serializes a sensor collection list to it.
-ms.assetid: be6b18b4-97cf-4206-ad98-57a045ecd11f
 ms.date: 08/07/2018
 keywords: ["CollectionsListAllocateBufferAndSerialize function"]
 tech.root: sensors
@@ -37,8 +36,6 @@ api_location:
  - sensorsutils.h
 api_name:
  - CollectionsListAllocateBufferAndSerialize
-product:
- - Windows
 ---
 
 # CollectionsListAllocateBufferAndSerialize function
@@ -50,17 +47,17 @@ This routine allocates a buffer and then serializes a sensor collection list to 
 
 ## -parameters
 
-### -param SourceCollection
+### -param SourceCollection [in]
 
-[in] Pointer to a collection list.
+Pointer to a collection list.
 
-### -param pTargetBufferSizeInBytes
+### -param pTargetBufferSizeInBytes [out]
 
-[out] The allocated buffer size (in bytes).
+The allocated buffer size (in bytes).
 
-### -param pTargetBuffer
+### -param pTargetBuffer [out]
 
-[out] Pointer to the allocated buffer, to hold the serialized data.
+Pointer to the allocated buffer, to hold the serialized data.
 
 ## -returns
 

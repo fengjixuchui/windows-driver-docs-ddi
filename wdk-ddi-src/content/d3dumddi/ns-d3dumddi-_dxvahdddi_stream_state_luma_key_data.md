@@ -4,7 +4,6 @@ title: _DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA (d3dumddi.h)
 description: The DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA structure describes stream-state data that specifies the luma key of the input. The driver assumes that a pixel that has a luma value within the luma-key range is transparent.
 old-location: display\dxvahdddi_stream_state_luma_key_data.htm
 tech.root: display
-ms.assetid: bd620f6d-6c19-41d4-a68c-3dcf2eec93ae
 ms.date: 05/10/2018
 keywords: ["DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA structure"]
 ms.keywords: DXVA2_Structs_a76427d8-e062-4fae-9350-f68d162effef.xml, DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA, DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA structure [Display Devices], _DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA, d3dumddi/DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA, display.dxvahdddi_stream_state_luma_key_data
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA
  - DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA
 ---
 
@@ -52,17 +52,17 @@ The DXVAHDDDI_STREAM_STATE_LUMA_KEY_DATA structure describes stream-state data t
 
 ## -struct-fields
 
-### -field Enable
+### -field Enable [in]
 
-[in] A Boolean value that specifies whether the luma key is enabled. The default value is <b>FALSE</b>, which indicates that the luma key is disabled.
+A Boolean value that specifies whether the luma key is enabled. The default value is <b>FALSE</b>, which indicates that the luma key is disabled.
 
-### -field Lower
+### -field Lower [in]
 
-[in] A FLOAT value in the 0.0 to 1.0 range that describes the lower luma-key value. The default value is 0.0.
+A FLOAT value in the 0.0 to 1.0 range that describes the lower luma-key value. The default value is 0.0.
 
-### -field Upper
+### -field Upper [in]
 
-[in] A FLOAT value in the 0.0 to 1.0 range that describes the upper luma-key value. The default value is 0.0.
+A FLOAT value in the 0.0 to 1.0 range that describes the upper luma-key value. The default value is 0.0.
 
 ## -remarks
 
@@ -85,3 +85,4 @@ If the driver does not set the DXVAHDDDI_INPUT_FORMAT_CAPS_RGB_LUMA_KEY value in
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_dxvahd_setvideoprocessstreamstate">SetVideoProcessStreamState</a>
+

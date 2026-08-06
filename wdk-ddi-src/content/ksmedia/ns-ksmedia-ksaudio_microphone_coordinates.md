@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_9
+UID: NS:ksmedia.KSAUDIO_MICROPHONE_COORDINATES
 title: KSAUDIO_MICROPHONE_COORDINATES (ksmedia.h)
 description: The KSAUDIO_MICROPHONE_COORDINATES structure specifies the type and the coordinates of a single microphone in the microphone array.
 old-location: audio\ksaudio_microphone_coordinates.htm
 tech.root: audio
-ms.assetid: 443fb3c0-0e75-4abc-b44f-047752b3cab7
 ms.date: 08/20/2020
 keywords: ["KSAUDIO_MICROPHONE_COORDINATES structure"]
 ms.keywords: "*PKSAUDIO_MICROPHONE_COORDINATES, KSAUDIO_MICROPHONE_COORDINATES, KSAUDIO_MICROPHONE_COORDINATES structure [Audio Devices], PKSAUDIO_MICROPHONE_COORDINATES, PKSAUDIO_MICROPHONE_COORDINATES structure pointer [Audio Devices], aud-prop_85a5f68f-13f2-4465-bb16-4d30e9c9d731.xml, audio.ksaudio_microphone_coordinates, ksmedia/KSAUDIO_MICROPHONE_COORDINATES, ksmedia/PKSAUDIO_MICROPHONE_COORDINATES"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSAUDIO_MICROPHONE_COORDINATES
  - KSAUDIO_MICROPHONE_COORDINATES
 ---
 
@@ -101,3 +101,4 @@ Now assume that there are three microphones in the array, as shown in the preced
 If one of the microphones, for example **Mic 1**, happens to be dipped downward, or raised up, then this microphone would also have a vertical angle between its center line and the projection of its center line onto the x-y plane. This angle is represented by *wVerticalAngle*.
 
 For more information about how to process a microphone array in Windows, see the [Microphone array support in Windows](/previous-versions/windows/hardware/design/dn613960(v=vs.85)) white paper.
+

@@ -4,7 +4,6 @@ title: IFileCallbackClose (wudfddi.h)
 description: The framework can notify a driver when the driver should perform a close operation. The driver can handle the notification by registering the IFileCallbackClose interface.
 old-location: wdf\ifilecallbackclose.htm
 tech.root: wdf
-ms.assetid: 22ecfb7b-daba-4321-bca5-4460ead8e3cd
 ms.date: 02/26/2018
 keywords: ["IFileCallbackClose interface"]
 ms.keywords: IFileCallbackClose, IFileCallbackClose interface, IFileCallbackClose interface,described, UMDFFileObjectRef_52a9bb2c-0bf7-49db-80f0-7df5f4f131f6.xml, umdf.ifilecallbackclose, wdf.ifilecallbackclose, wudfddi/IFileCallbackClose
@@ -54,7 +53,7 @@ A driver registers the <b>IFileCallbackClose</b> interface when it calls the <a 
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IFileCallbackClose</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IFileCallbackClose</b> also has these types of members:
+The <b>IFileCallbackClose</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IFileCallbackClose</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>

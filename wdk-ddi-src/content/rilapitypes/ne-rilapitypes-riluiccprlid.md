@@ -1,11 +1,10 @@
 ---
 UID: NE:rilapitypes.RILUICCPRLID
 title: RILUICCPRLID (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this enumeration in your code. Microsoft reserves the RILUICCPRLID enumeration for internal use only."
 old-location: netvista\riluiccprlid.htm
 tech.root: netvista
-ms.assetid: fab3455a-c09f-4a08-a76d-4d80468accd2
-ms.date: 05/02/2018
+ms.date: 12/10/2021
 keywords: ["RILUICCPRLID enumeration"]
 ms.keywords: RILUICCPRLID, RILUICCPRLID enumeration [Network Drivers Starting with Windows Vista], netvista.riluiccprlid, ntddrilapitypes/RILUICCPRLID
 req.header: rilapitypes.h
@@ -50,3 +49,4 @@ This topic supports the Windows driver infrastructure and is not intended to be 
 
 ## -enum-fields
 
+### -field RIL_UICC_PRLID_UNSPECIFIED

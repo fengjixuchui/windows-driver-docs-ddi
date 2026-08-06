@@ -4,8 +4,7 @@ title: _NFC_CX_NFCIP_TGT_MODE_CONFIG (nfccx.h)
 description: The NFC_CX_NFCIP_TGT_MODE_CONFIG enumeration specifies NFC-IP target mode.
 old-location: nfpdrivers\nfc_cx_nfcip_tgt_mode_config.htm
 tech.root: nfpdrivers
-ms.assetid: E689992B-C767-4942-871D-D6EEDA35F0E7
-ms.date: 02/15/2018
+ms.date: 08/02/2022
 keywords: ["NFC_CX_NFCIP_TGT_MODE_CONFIG enumeration"]
 ms.keywords: "*PNFC_CX_NFCIP_TGT_MODE_CONFIG, NFC_CX_NFCIP_DEFAULT, NFC_CX_NFCIP_NFC_A, NFC_CX_NFCIP_NFC_ACTIVE, NFC_CX_NFCIP_NFC_ACTIVE_A, NFC_CX_NFCIP_NFC_ACTIVE_F_212, NFC_CX_NFCIP_NFC_ACTIVE_F_424, NFC_CX_NFCIP_NFC_F_212, NFC_CX_NFCIP_NFC_F_424, NFC_CX_NFCIP_TGT_MODE_CONFIG, NFC_CX_NFCIP_TGT_MODE_CONFIG enumeration [Near-Field Proximity Drivers], PNFC_CX_NFCIP_TGT_MODE_CONFIG, _NFC_CX_NFCIP_TGT_MODE_CONFIG, nfccx/NFC_CX_NFCIP_DEFAULT, nfccx/NFC_CX_NFCIP_NFC_A, nfccx/NFC_CX_NFCIP_NFC_ACTIVE, nfccx/NFC_CX_NFCIP_NFC_ACTIVE_A, nfccx/NFC_CX_NFCIP_NFC_ACTIVE_F_212, nfccx/NFC_CX_NFCIP_NFC_ACTIVE_F_424, nfccx/NFC_CX_NFCIP_NFC_F_212, nfccx/NFC_CX_NFCIP_NFC_F_424, nfccx/NFC_CX_NFCIP_TGT_MODE_CONFIG, nfpdrivers.nfc_cx_nfcip_tgt_mode_config"
 req.header: nfccx.h
@@ -42,11 +41,12 @@ api_type:
 api_location:
  - nfccx.h
 api_name:
+ - _NFC_CX_NFCIP_TGT_MODE_CONFIG
+ - PNFC_CX_NFCIP_TGT_MODE_CONFIG
  - NFC_CX_NFCIP_TGT_MODE_CONFIG
 ---
 
 # _NFC_CX_NFCIP_TGT_MODE_CONFIG enumeration
-
 
 ## -description
 
@@ -64,33 +64,7 @@ The NFC_CX_NFCIP_TGT_MODE_CONFIG enumeration specifies NFC-IP target mode.
 
 ### -field NFC_CX_NFCIP_TGT_DEFAULT
 
-#### - NFC_CX_NFCIP_DEFAULT
-
-
-#### - NFC_CX_NFCIP_NFC_A
-
-
-#### - NFC_CX_NFCIP_NFC_ACTIVE
-
-
-#### - NFC_CX_NFCIP_NFC_ACTIVE_A
-
-
-#### - NFC_CX_NFCIP_NFC_ACTIVE_F_212
-
-
-#### - NFC_CX_NFCIP_NFC_ACTIVE_F_424
-
-
-#### - NFC_CX_NFCIP_NFC_F_212
-
-
-#### - NFC_CX_NFCIP_NFC_F_424
-
 ## -see-also
 
-<a href="/windows-hardware/drivers/nfc/nfc-class-extension-">NFC class extension design guide</a>
-
-
-
-<a href="/windows-hardware/drivers/nfc/">Near field communication (NFC) design guide</a>
+- [NFC class extension design guide](/windows-hardware/drivers/nfc/nfc-class-extension-)
+- [Near field communication (NFC) design guide](/windows-hardware/drivers/nfc/)

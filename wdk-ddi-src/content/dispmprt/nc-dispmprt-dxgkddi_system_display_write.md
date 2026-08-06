@@ -4,7 +4,6 @@ title: DXGKDDI_SYSTEM_DISPLAY_WRITE (dispmprt.h)
 description: Called by the operating system to request the display miniport driver to write an image block to the display device.
 old-location: display\dxgkddisystemdisplaywrite.htm
 tech.root: display
-ms.assetid: 5C0F9878-522C-4DDE-A790-54C94880F119
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_SYSTEM_DISPLAY_WRITE callback function"]
 ms.keywords: DXGKDDI_SYSTEM_DISPLAY_WRITE, DXGKDDI_SYSTEM_DISPLAY_WRITE callback, DxgkDdiSystemDisplayWrite, DxgkDdiSystemDisplayWrite callback function [Display Devices], display.dxgkddisystemdisplaywrite, dispmprt/DxgkDdiSystemDisplayWrite
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
- - DxgkDdiSystemDisplayWrite
+ - DXGKDDI_SYSTEM_DISPLAY_WRITE
 ---
 
 # DXGKDDI_SYSTEM_DISPLAY_WRITE callback function
@@ -52,39 +51,39 @@ Starting with Windows 8, the operating system calls this function during a bugc
 
 ## -parameters
 
-### -param MiniportDeviceContext 
+### -param MiniportDeviceContext [in]
 
-[in]
+
 A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem.
 
-### -param Source 
+### -param Source [in]
 
-[in]
+
 A pointer to the start address of the source image to be written to the bugcheck screen that displays information about the system stop error.
 
-### -param SourceWidth 
+### -param SourceWidth [in]
 
-[in]
+
 A UINT value that specifies the width, in units of pixels, of the specified source image.
 
-### -param SourceHeight 
+### -param SourceHeight [in]
 
-[in]
+
 A UINT value that specifies the height, in units of pixels, of the specified source image.
 
-### -param SourceStride 
+### -param SourceStride [in]
 
-[in]
+
 A UINT value that specifies the number of bytes for each line of the specified source image.
 
-### -param PositionX 
+### -param PositionX [in]
 
-[in]
+
 A UINT value that specifies the starting X coordinate that the specified source image should be written to on the display device.
 
-### -param PositionY 
+### -param PositionY [in]
 
-[in]
+
 A UINT value that specifies the starting Y coordinate that the specified source image should be written to on the display device.
 
 ## -remarks
@@ -128,3 +127,4 @@ Windows kernel-mode functions might not be available while this function is bein
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_system_display_enable">DxgkDdiSystemDisplayEnable</a>
+

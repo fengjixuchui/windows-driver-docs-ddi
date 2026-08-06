@@ -4,7 +4,6 @@ title: RtlShortToChar function (ntintsafe.h)
 description: Converts a value of type SHORT to a value of type CHAR.
 old-location: kernel\rtlshorttochar.htm
 tech.root: kernel
-ms.assetid: AC7D5479-7C68-445A-9788-F5E96D6BB41E
 ms.date: 04/30/2018
 keywords: ["RtlShortToChar function"]
 ms.keywords: RtlShortToChar, RtlShortToChar function [Kernel-Mode Driver Architecture], kernel.rtlshorttochar, ntintsafe/RtlShortToChar
@@ -50,14 +49,14 @@ Converts a value of type <b>SHORT</b> to a value of type <b>CHAR</b>.
 
 ## -parameters
 
-### -param sOperand 
+### -param sOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pch 
+### -param pch [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

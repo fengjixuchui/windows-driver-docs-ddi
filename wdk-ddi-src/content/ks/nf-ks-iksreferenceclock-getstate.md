@@ -4,7 +4,6 @@ title: IKsReferenceClock::GetState (ks.h)
 description: The IKsReferenceClock::GetState method queries the associated reference clock for its current streaming state.
 old-location: stream\iksreferenceclock_getstate.htm
 tech.root: stream
-ms.assetid: 5a77a8bc-b477-41b3-bc4e-07c6c14291a1
 ms.date: 04/23/2018
 keywords: ["IKsReferenceClock::GetState"]
 ms.keywords: GetState, GetState method [Streaming Media Devices], GetState method [Streaming Media Devices],IKsReferenceClock interface, IKsReferenceClock interface [Streaming Media Devices],GetState method, IKsReferenceClock.GetState, IKsReferenceClock::GetState, avintfc_e2017894-2e83-4091-84b7-5ea793076b29.xml, ks/IKsReferenceClock::GetState, stream.iksreferenceclock_getstate
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - IKsReferenceClock.GetState
+ - IKsReferenceClock::GetState
 ---
 
 # IKsReferenceClock::GetState
@@ -50,9 +49,9 @@ The <b>IKsReferenceClock::GetState</b> method queries the associated reference c
 
 ## -parameters
 
-### -param State 
+### -param State [out]
 
-[out]
+
 Points to a <a href="/windows-hardware/drivers/ddi/ks/ne-ks-ksstate">KSSTATE</a> structure that indicates the streaming state of the underlying clock.
 
 ## -returns
@@ -72,3 +71,4 @@ AVStream uses the <a href="/windows-hardware/drivers/stream/ksproperty-clock-sta
 
 
 <a href="/windows-hardware/drivers/ddi/ks/nf-ks-kspingetreferenceclockinterface">KsPinGetReferenceClockInterface</a>
+

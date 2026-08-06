@@ -1,10 +1,9 @@
 ---
 UID: NS:nfcsedev._SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD
 title: _SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD (nfcsedev.h)
-description: "."
+description: The _SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD structure contains a unique connection identifier and NFC Forum RF technology and protocol types.
 old-location: nfpdrivers\secure_element_hce_activation_payload.htm
 tech.root: nfpdrivers
-ms.assetid: 2FFEB2DB-7506-4CDB-BD5F-41D2E4212017
 ms.date: 02/15/2018
 keywords: ["SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD structure"]
 ms.keywords: "*PSECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD, PSECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD, PSECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD structure pointer [Near-Field Proximity Drivers], SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD, SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD structure [Near-Field Proximity Drivers], _SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD, nfcsedev/PSECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD, nfcsedev/SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD, nfpdrivers.secure_element_hce_activation_payload"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - nfcsedev.h
 api_name:
+ - _SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD
+ - PSECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD
  - SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD
 ---
 
@@ -54,7 +55,7 @@ api_name:
 
 ### -field bConnectionId
 
-Unique identifer for current connection.
+Unique identifier for current connection.
 
 ### -field eRfTechType
 

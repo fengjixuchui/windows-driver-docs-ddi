@@ -3,8 +3,7 @@ UID: NF:netadapteroffload.NetAdapterOffloadSetRscCapabilities
 title: NetAdapterOffloadSetRscCapabilities function (netadapteroffload.h)
 description: The NetAdapterOffloadSetRscCapabilities function sets the hardware receive segment coalescence (RSC) offload capabilities of a network adapter.
 tech.root: netvista
-ms.assetid: d3e3c034-55cc-4324-8e03-b158f1ed8b03
-ms.date: 11/07/2019
+ms.date: 03/30/2022
 keywords: ["NetAdapterOffloadSetRscCapabilities function"]
 ms.keywords: NetAdapterOffloadSetRscCapabilities
 req.header: netadapteroffload.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: netadaptercxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -37,8 +36,6 @@ api_location:
  - netadaptercxstub.lib
 api_name:
  - NetAdapterOffloadSetRscCapabilities
-product:
- - Windows
 ---
 
 # NetAdapterOffloadSetRscCapabilities function
@@ -50,17 +47,13 @@ The **NetAdapterOffloadSetRscCapabilities** function sets the hardware receive s
 
 ## -parameters
 
-### -param Adapter
+### -param Adapter [_In_]
 
 A handle to a NETADAPTER object that the client driver obtained from a previous call to [**NetAdapterCreate**](../netadapter/nf-netadapter-netadaptercreate.md).
 
-### -param HardwareCapabilities
+### -param HardwareCapabilities [_In_]
 
 A pointer to a driver-allocated and initialized [**NET_ADAPTER_OFFLOAD_RSC_CAPABILITIES**](../netadapteroffload/ns-netadapteroffload-_net_adapter_offload_rsc_capabilities.md) structure that describes the hardware's RSC offload capabilities.
-
-## -returns
-
-This function does not return a value.
 
 ## -remarks
 
@@ -68,7 +61,7 @@ Client drivers typically call this function from within their [*EvtDevicePrepare
 
 ## -see-also
 
-[NetAdapterCx hardware offloads](/windows-hardware/drivers/netcx/netadaptercx-hardware-offloads)
+[Receive Segment Coalescing offload](/windows-hardware/drivers/netcx/rsc-offload)
 
 [**NetAdapterCreate**](../netadapter/nf-netadapter-netadaptercreate.md)
 

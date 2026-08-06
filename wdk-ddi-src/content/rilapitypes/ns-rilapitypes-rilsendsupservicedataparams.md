@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILSENDSUPSERVICEDATAPARAMS
 title: RILSENDSUPSERVICEDATAPARAMS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILSENDSUPSERVICEDATAPARAMS structure for internal use only."
 old-location: netvista\rilsendsupservicedataparams.htm
 tech.root: netvista
-ms.assetid: a48c9543-602f-4f3c-876e-9acc76ca1a6b
 ms.date: 05/02/2018
 keywords: ["RILSENDSUPSERVICEDATAPARAMS structure"]
 ms.keywords: "*LPRILSENDSUPSERVICEDATAPARAMS, RILSENDSUPSERVICEDATAPARAMS, RILSENDSUPSERVICEDATAPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsendsupservicedataparams, ntddrilapitypes/RILSENDSUPSERVICEDATAPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSENDSUPSERVICEDATAPARAMS
+ - LPRILSENDSUPSERVICEDATAPARAMS
 ---
 
 # RILSENDSUPSERVICEDATAPARAMS structure (rilapitypes.h)

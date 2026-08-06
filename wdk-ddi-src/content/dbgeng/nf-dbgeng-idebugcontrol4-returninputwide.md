@@ -4,7 +4,6 @@ title: IDebugControl4::ReturnInputWide (dbgeng.h)
 description: The ReturnInputWide method is used by IDebugInputCallbacks objects to send an input string to the engine following a request for input.
 old-location: debugger\returninputwide.htm
 tech.root: debugger
-ms.assetid: 6e7f0995-14d0-4dd3-b598-2f988a2ec4fd
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::ReturnInputWide"]
 ms.keywords: IDebugControl4 interface [Windows Debugging],ReturnInputWide method, IDebugControl4.ReturnInputWide, IDebugControl4::ReturnInputWide, ReturnInputWide, ReturnInputWide method [Windows Debugging], ReturnInputWide method [Windows Debugging],IDebugControl4 interface, dbgeng/IDebugControl4::ReturnInputWide, debugger.returninputwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.ReturnInputWide
+ - IDebugControl4::ReturnInputWide
 ---
 
 # IDebugControl4::ReturnInputWide
@@ -50,9 +49,9 @@ The <b>ReturnInputWide</b>  method is used by <b>IDebugInputCallbacks</b> object
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Specifies the input string being sent to the engine.
 
 ## -returns
@@ -92,3 +91,4 @@ This method may also return error values.  See <a href="/windows-hardware/driver
 ## -remarks
 
 For an overview of input in the debugger engine, see <a href="/windows-hardware/drivers/debugger/input-and-output">Input and Output</a>.
+

@@ -4,7 +4,6 @@ title: IFixedDocumentSequence::GetUri (filterpipeline.h)
 description: The GetUri method gets the URI of the fixed document sequence.
 old-location: print\ifixeddocumentsequence_geturi.htm
 tech.root: print
-ms.assetid: 45017249-2ea5-43f6-9712-787f52cb6e4b
 ms.date: 04/20/2018
 keywords: ["IFixedDocumentSequence::GetUri"]
 ms.keywords: GetUri, GetUri method [Print Devices], GetUri method [Print Devices],IFixedDocumentSequence interface, IFixedDocumentSequence interface [Print Devices],GetUri method, IFixedDocumentSequence.GetUri, IFixedDocumentSequence::GetUri, filterpipeline/IFixedDocumentSequence::GetUri, filterpipeline_6d286919-21a8-40e8-8c6b-dd035ffe0ae1.xml, print.ifixeddocumentsequence_geturi
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - filterpipeline.h
 api_name:
- - IFixedDocumentSequence.GetUri
+ - IFixedDocumentSequence::GetUri
 ---
 
 # IFixedDocumentSequence::GetUri
@@ -50,9 +49,9 @@ The <b>GetUri</b> method gets the URI of the fixed document sequence.
 
 ## -parameters
 
-### -param uri 
+### -param uri [out]
 
-[out]
+
 The URI of the fixed document sequence.
 
 ## -returns

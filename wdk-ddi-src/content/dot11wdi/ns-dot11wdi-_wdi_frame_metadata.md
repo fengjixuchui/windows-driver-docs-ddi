@@ -4,7 +4,6 @@ title: _WDI_FRAME_METADATA (dot11wdi.h)
 description: The WDI_FRAME_METADATA structure defines the frame metadata.
 old-location: netvista\wdi_frame_metadata.htm
 tech.root: netvista
-ms.assetid: 34733e8f-cbe0-4fcd-abcf-6791e298282f
 ms.date: 05/02/2018
 keywords: ["WDI_FRAME_METADATA structure"]
 ms.keywords: "*PWDI_FRAME_METADATA, PWDI_FRAME_METADATA, PWDI_FRAME_METADATA structure pointer [Network Drivers Starting with Windows Vista], WDI_FRAME_METADATA, WDI_FRAME_METADATA structure [Network Drivers Starting with Windows Vista], _WDI_FRAME_METADATA, dot11wdi/PWDI_FRAME_METADATA, dot11wdi/WDI_FRAME_METADATA, netvista.wdi_frame_metadata, netvista.wifi_frame_metadata"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
+ - _WDI_FRAME_METADATA
+ - PWDI_FRAME_METADATA
  - WDI_FRAME_METADATA
 ---
 
@@ -49,6 +50,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The 
   WDI_FRAME_METADATA structure defines the frame metadata.
@@ -91,7 +95,7 @@ RX metadata.
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 
@@ -104,3 +108,4 @@ RX metadata.
 
 
 <a href="/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_tx_metadata">WDI_TX_METADATA</a>
+

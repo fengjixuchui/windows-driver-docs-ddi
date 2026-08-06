@@ -4,7 +4,6 @@ title: _KEY_NODE_INFORMATION (wdm.h)
 description: The KEY_NODE_INFORMATION structure defines the basic information available for a registry (sub)key.
 old-location: kernel\key_node_information.htm
 tech.root: kernel
-ms.assetid: 2eed1a3d-fc40-4416-ad61-d82bf4fb69a1
 ms.date: 04/30/2018
 keywords: ["KEY_NODE_INFORMATION structure"]
 ms.keywords: "*PKEY_NODE_INFORMATION, KEY_NODE_INFORMATION, KEY_NODE_INFORMATION structure [Kernel-Mode Driver Architecture], PKEY_NODE_INFORMATION, PKEY_NODE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _KEY_NODE_INFORMATION, kernel.key_node_information, kstruct_c_a41bb6c8-4e12-4aac-94cf-a24d32727c5e.xml, wdm/KEY_NODE_INFORMATION, wdm/PKEY_NODE_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _KEY_NODE_INFORMATION
+ - PKEY_NODE_INFORMATION
  - KEY_NODE_INFORMATION
 ---
 
@@ -113,3 +114,4 @@ The <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-zwenumeratekey">ZwEnumerat
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-zwquerykey">ZwQueryKey</a>
+

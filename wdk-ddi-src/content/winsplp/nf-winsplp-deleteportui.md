@@ -4,7 +4,6 @@ title: DeletePortUI function (winsplp.h)
 description: A port monitor UI DLL's DeletePortUI function deletes a printer port.
 old-location: print\deleteportui.htm
 tech.root: print
-ms.assetid: a556ec29-9149-4185-b4b3-9aae803e62f7
 ms.date: 04/20/2018
 keywords: ["DeletePortUI function"]
 ms.keywords: DeletePortUI, pfnDeletePortUI, pfnDeletePortUI function [Print Devices], print.deleteportui, spoolfnc_9b9b8660-cc30-49ea-aea1-163eef7ab973.xml, winsplp/pfnDeletePortUI
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - winsplp.h
 api_name:
- - pfnDeletePortUI
+ - DeletePortUI
 ---
 
 # DeletePortUI function
@@ -50,19 +49,19 @@ A port monitor UI DLL's <b>DeletePortUI</b> function deletes a printer port.
 
 ## -parameters
 
-### -param pszServer 
+### -param pszServer [in, optional]
 
-[in, optional]
+
 Caller-supplied pointer to a string representing a server name, or <b>NULL</b> if the printer is local. (The port monitor can ignore this parameter.)
 
-### -param hWnd 
+### -param hWnd [in]
 
-[in]
+
 Caller-supplied handle of the window that should be used as the parent for dialog boxes. If <b>NULL</b>, no dialog boxes should be displayed.
 
-### -param pszPortName 
+### -param pszPortName [in]
 
-[in]
+
 Caller-supplied pointer to a string representing the name of the port to be deleted.
 
 ## -returns
@@ -127,3 +126,4 @@ Call <b>ClosePrinter</b>, specifying the handle received from <b>OpenPrinter</b>
 
 
 <a href="/windows-hardware/drivers/ddi/winsplp/nf-winsplp-xcvopenport">XcvOpenPort</a>
+

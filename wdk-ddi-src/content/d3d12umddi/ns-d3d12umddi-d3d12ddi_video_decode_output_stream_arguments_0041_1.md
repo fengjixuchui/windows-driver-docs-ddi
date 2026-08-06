@@ -1,8 +1,7 @@
 ---
 UID: NS:d3d12umddi.D3D12DDI_VIDEO_DECODE_OUTPUT_STREAM_ARGUMENTS_0041_1
 title: D3D12DDI_VIDEO_DECODE_OUTPUT_STREAM_ARGUMENTS_0041_1 (d3d12umddi.h)
-description: Output stream arguments for video decode.
-ms.assetid: 97cff37b-60b5-45b4-8e73-c19187c46e9e
+description: The D3D12DDI_VIDEO_DECODE_OUTPUT_STREAM_ARGUMENTS_0041_1 structure specifies the output stream arguments for video decode.
 ms.date: 10/19/2018
 keywords: ["D3D12DDI_VIDEO_DECODE_OUTPUT_STREAM_ARGUMENTS_0041_1 structure"]
 ms.keywords: D3D12DDI_VIDEO_DECODE_OUTPUT_STREAM_ARGUMENTS_0041_1, D3D12DDI_VIDEO_DECODE_OUTPUT_STREAM_ARGUMENTS_0041_1,
@@ -32,8 +31,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - D3D12DDI_VIDEO_DECODE_OUTPUT_STREAM_ARGUMENTS_0041_1
-product:
- - Windows
 ---
 
 # D3D12DDI_VIDEO_DECODE_OUTPUT_STREAM_ARGUMENTS_0041_1 structure

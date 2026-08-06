@@ -4,7 +4,6 @@ title: IPortableDeviceKeyCollection::RemoveAt (portabledevicetypes.h)
 description: Removes the element stored at the location specified by the given index.
 old-location: wpddk\iportabledevicekeycollection_removeat.htm
 tech.root: wpd_dk
-ms.assetid: 22ecf577-9ed5-4bc6-bbad-650133f418c0
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceKeyCollection::RemoveAt"]
 ms.keywords: IPortableDeviceKeyCollection interface,RemoveAt method, IPortableDeviceKeyCollection.RemoveAt, IPortableDeviceKeyCollection::RemoveAt, IPortableDeviceKeyCollectionRemoveAt, RemoveAt, RemoveAt method, RemoveAt method,IPortableDeviceKeyCollection interface, portabledevicetypes/IPortableDeviceKeyCollection::RemoveAt, wpddk.iportabledevicekeycollection_removeat
@@ -40,7 +39,7 @@ api_location:
  - PortableDeviceGUIDs.lib
  - PortableDeviceGUIDs.dll
 api_name:
- - IPortableDeviceKeyCollection.RemoveAt
+ - IPortableDeviceKeyCollection::RemoveAt
 ---
 
 # IPortableDeviceKeyCollection::RemoveAt
@@ -52,9 +51,9 @@ Removes the element stored at the location specified by the given index.
 
 ## -parameters
 
-### -param dwIndex 
+### -param dwIndex [in]
 
-[in]
+
 Specifies the index of the element to be removed.
 
 ## -returns
@@ -97,3 +96,4 @@ You must specify a zero-based index.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicekeycollection">IPortableDeviceKeyCollection Interface</a>
+

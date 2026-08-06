@@ -4,7 +4,6 @@ title: StorPortGetSystemAddress function (storport.h)
 description: The StorPortGetSystemAddress routine returns a virtual address in system space for the data buffer of the specified SCSI request block (SRB).
 old-location: storage\storportgetsystemaddress.htm
 tech.root: storage
-ms.assetid: 28bb26bd-7259-4664-8092-6b9a917c1a91
 ms.date: 03/29/2018
 keywords: ["StorPortGetSystemAddress function"]
 ms.keywords: StorPortGetSystemAddress, StorPortGetSystemAddress routine [Storage Devices], storage.storportgetsystemaddress, storport/StorPortGetSystemAddress, storprt_6e6713c8-a235-43b8-a325-2d4b8fca8f35.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,19 +49,19 @@ The <b>StorPortGetSystemAddress</b> routine returns a virtual address in system 
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param Srb 
+### -param Srb [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/srb/ns-srb-_scsi_request_block">SCSI_REQUEST_BLOCK</a> structure.
 
-### -param SystemAddress 
+### -param SystemAddress [out]
 
-[out]
+
 A pointer to receive the virtual address of the data buffer.
 
 ## -returns

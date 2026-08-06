@@ -1,11 +1,9 @@
 ---
 UID: NF:ksproxy.IKsPinPipe.KsGetPipe
 title: IKsPinPipe::KsGetPipe (ksproxy.h)
-description: Not recommended for application use.
-old-location: stream\ikspinpipe_ksgetpipe.htm
+description: The KsGetPipe method is not recommended for application use. This method belongs to the IKsPinPipe interface.
 tech.root: stream
-ms.assetid: 5672C7E2-83AA-4BDC-BE60-E2BC54BD636F
-ms.date: 04/23/2018
+ms.date: 06/11/2021
 keywords: ["IKsPinPipe::KsGetPipe"]
 ms.keywords: IKsPinPipe interface [Streaming Media Devices],KsGetPipe method, IKsPinPipe.KsGetPipe, IKsPinPipe::KsGetPipe, KsGetPipe, KsGetPipe method [Streaming Media Devices], KsGetPipe method [Streaming Media Devices],IKsPinPipe interface, ksproxy/IKsPinPipe::KsGetPipe, stream.ikspinpipe_ksgetpipe
 req.header: ksproxy.h
@@ -38,15 +36,12 @@ api_type:
 api_location:
  - ksproxy.h
 api_name:
- - IKsPinPipe.KsGetPipe
+ - IKsPinPipe::KsGetPipe
 ---
 
 # IKsPinPipe::KsGetPipe
 
-
 ## -description
-
-<p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 Not recommended for application use.
 
@@ -56,8 +51,8 @@ Not recommended for application use.
 
 ## -returns
 
-If this method succeeds, it returns <b xmlns:loc="https://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="https://microsoft.com/wdcml/l10n">HRESULT</b> error code.
+If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ksproxy/nn-ksproxy-ikspinpipe">IKsPinPipe</a>
+[IKsPinPipe](./nn-ksproxy-ikspinpipe.md)

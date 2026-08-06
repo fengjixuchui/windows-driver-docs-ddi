@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_57
+UID: NS:ksmedia.SYSAUDIO_CREATE_VIRTUAL_SOURCE
 title: SYSAUDIO_CREATE_VIRTUAL_SOURCE (ksmedia.h)
 description: The SYSAUDIO_CREATE_VIRTUAL_SOURCE structure is used to create a mixer-line virtual source such as a volume control or mute.
 old-location: audio\sysaudio_create_virtual_source.htm
 tech.root: audio
-ms.assetid: c9024cf0-aa0c-4652-89c1-3f2e6f622b3d
 ms.date: 04/30/2019
 keywords: ["SYSAUDIO_CREATE_VIRTUAL_SOURCE structure"]
 ms.keywords: "*PSYSAUDIO_CREATE_VIRTUAL_SOURCE, PSYSAUDIO_CREATE_VIRTUAL_SOURCE, PSYSAUDIO_CREATE_VIRTUAL_SOURCE structure pointer [Audio Devices], SYSAUDIO_CREATE_VIRTUAL_SOURCE, SYSAUDIO_CREATE_VIRTUAL_SOURCE structure [Audio Devices], aud-prop_b5e1f1ed-6007-4f2a-89eb-dcabeb0777e6.xml, audio.sysaudio_create_virtual_source, ksmedia/PSYSAUDIO_CREATE_VIRTUAL_SOURCE, ksmedia/SYSAUDIO_CREATE_VIRTUAL_SOURCE"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PSYSAUDIO_CREATE_VIRTUAL_SOURCE
  - SYSAUDIO_CREATE_VIRTUAL_SOURCE
 ---
 
@@ -54,7 +54,7 @@ The SYSAUDIO_CREATE_VIRTUAL_SOURCE structure is used to create a mixer-line virt
 
 ### -field Property
 
-Specifies the property. This parameter is a structure of type <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>.
+Specifies the property. This parameter is a structure of type <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>.
 
 ### -field PinCategory
 
@@ -70,8 +70,9 @@ This structure is used by the <a href="/windows-hardware/drivers/audio/kspropert
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
 <a href="/windows-hardware/drivers/audio/ksproperty-sysaudio-create-virtual-source">KSPROPERTY_SYSAUDIO_CREATE_VIRTUAL_SOURCE</a>
+

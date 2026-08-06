@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_WAITFORIDLE
 title: PFND3DKMT_WAITFORIDLE (d3dkmthk.h)
 description: The PFND3DKMT_WAITFORIDLE callback function waits for a display device to be idle.
-ms.assetid: a9d632cc-0f23-4a65-a036-afac2739319c
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_WAITFORIDLE callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The PFND3DKMT_WAITFORIDLE callback function waits for a display device to be idl
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_WAITFORIDLE](ns-d3dkmthk-_d3dkmt_waitforidle.md) structure.
 

@@ -2,8 +2,7 @@
 UID: NF:ucmucsidevice.UcmUcsiDeviceInitInitialize
 title: UcmUcsiDeviceInitInitialize function (ucmucsidevice.h)
 tech.root: usbref
-description: Intializes the **WDFDEVICE_INIT** provided by the framework.
-ms.assetid: 83e766bc-b500-44d0-bc15-270d0cb3e31d
+description: Initializes the **WDFDEVICE_INIT** provided by the framework.
 ms.date: 09/30/2018
 keywords: ["UcmUcsiDeviceInitInitialize function"]
 ms.keywords: UcmUcsiDeviceInitInitialize
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - UcmUcsiCxStub.lib
 api_name:
- - UcmUcsiDeviceInitialize
+ - UcmUcsiDeviceInitInitialize
 ---
 
 # UcmUcsiDeviceInitInitialize function
@@ -44,7 +43,7 @@ api_name:
 
 ## -description
 
-Intializes the [**WDFDEVICE_INIT**](/windows-hardware/drivers/wdf/wdfdevice_init) provided by the framework.
+Initializes the [**WDFDEVICE_INIT**](/windows-hardware/drivers/wdf/wdfdevice_init) provided by the framework.
 
 ## -parameters
 
@@ -61,3 +60,4 @@ Returns STATUS_SUCCESS if the operation succeeds. Otherwise, returns an appropri
 The client driver must call this function after calling [**WdfDeviceInitSetPnpPowerEventCallbacks**](../wdfdevice/nf-wdfdevice-wdfdeviceinitsetpnppowereventcallbacks.md). This function initializes the UCSI extension (UcmUcsiCx) with the framework **WDFDEVICE_INIT** structure that contains pointers to PnP and power callback functions implemented by the client driver.
 
 ## -see-also
+

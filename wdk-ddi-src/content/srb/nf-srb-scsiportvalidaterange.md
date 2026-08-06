@@ -4,7 +4,6 @@ title: ScsiPortValidateRange function (srb.h)
 description: The ScsiPortValidateRange routine indicates whether the specified access range values have already been claimed in the registry by another driver.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
 old-location: storage\scsiportvalidaterange.htm
 tech.root: storage
-ms.assetid: a9ad58c2-16fc-410a-abc7-01c3f2354b88
 ms.date: 03/29/2018
 keywords: ["ScsiPortValidateRange function"]
 ms.keywords: ScsiPortValidateRange, ScsiPortValidateRange routine [Storage Devices], scsiprt_a5bae9f5-7912-4607-890d-ca08fda0c19c.xml, srb/ScsiPortValidateRange, storage.scsiportvalidaterange
@@ -52,34 +51,34 @@ The <b>ScsiPortValidateRange</b> routine indicates whether the specified access 
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension->HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="/windows-hardware/drivers/ddi/srb/nf-srb-scsiportinitialize">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device.
 
-### -param BusType 
+### -param BusType [in]
 
-[in]
+
 Specifies the value of the <b>AdapterInterfaceType</b> member in the PORT_CONFIGURATION_INFORMATION structure when <i>HwScsiFindAdapter</i> is called.
 
-### -param SystemIoBusNumber 
+### -param SystemIoBusNumber [in]
 
-[in]
+
 Specifies the value of the <b>SystemIoBusNumber</b> member in the configuration information when <i>HwScsiFindAdapter</i> is called.
 
-### -param IoAddress 
+### -param IoAddress [in]
 
-[in]
+
 Specifies a bus-relative base address for the range of ports or device memory to be validated <i>before</i> the miniport driver's <i>HwScsiFindAdapter</i> routine attempts to map the access range for the adapter at that address.
 
-### -param NumberOfBytes 
+### -param NumberOfBytes [in]
 
-[in]
+
 Specifies the size in bytes or number of elements in the range.
 
-### -param InIoSpace 
+### -param InIoSpace [in]
 
-[in]
+
 Indicates when TRUE that the range is in I/O space, rather than in memory. When <b>FALSE</b>, the range is in memory space.
 
 ## -returns

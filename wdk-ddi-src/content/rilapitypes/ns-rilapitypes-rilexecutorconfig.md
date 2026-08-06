@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILEXECUTORCONFIG
 title: RILEXECUTORCONFIG (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILEXECUTORCONFIG structure for internal use only."
 old-location: netvista\rilexecutorconfig.htm
 tech.root: netvista
-ms.assetid: d53c3df2-fd75-4008-a740-0afa293e36eb
 ms.date: 05/02/2018
 keywords: ["RILEXECUTORCONFIG structure"]
 ms.keywords: "*LPRILEXECUTORCONFIG, RILEXECUTORCONFIG, RILEXECUTORCONFIG structure [Network Drivers Starting with Windows Vista], netvista.rilexecutorconfig, ntddrilapitypes/RILEXECUTORCONFIG"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILEXECUTORCONFIG
+ - LPRILEXECUTORCONFIG
 ---
 
 # RILEXECUTORCONFIG structure (rilapitypes.h)

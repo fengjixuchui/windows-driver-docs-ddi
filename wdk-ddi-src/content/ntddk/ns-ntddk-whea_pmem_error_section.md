@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._WHEA_PMEM_ERROR_SECTION
 title: WHEA_PMEM_ERROR_SECTION
-description: 
-tech.root: 
-ms.assetid: 3f846ba4-7f55-4825-8f2b-e80971c8f099
+description: "Learn more about: WHEA_PMEM_ERROR_SECTION structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEA_PMEM_ERROR_SECTION structure"]
 ms.keywords: WHEA_PMEM_ERROR_SECTION, WHEA_PMEM_ERROR_SECTION, *PWHEA_PMEM_ERROR_SECTION,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_PMEM_ERROR_SECTION
+ - PWHEA_PMEM_ERROR_SECTION
  - WHEA_PMEM_ERROR_SECTION
-product:
- - Windows
 ---
 
 # WHEA_PMEM_ERROR_SECTION structure

@@ -4,7 +4,6 @@ title: _PO_FX_DEVICE_V1 (wdm.h)
 description: The PO_FX_DEVICE structure describes the power attributes of a device to the power management framework (PoFx).
 old-location: kernel\po_fx_device.htm
 tech.root: kernel
-ms.assetid: E2413C3A-79D3-47E3-A664-80869A721F37
 ms.date: 04/30/2018
 keywords: ["PO_FX_DEVICE_V1 structure"]
 ms.keywords: "*PPO_FX_DEVICE, *PPO_FX_DEVICE_V1, PO_FX_DEVICE, PO_FX_DEVICE structure [Kernel-Mode Driver Architecture], PO_FX_DEVICE_V1, PO_FX_DEVICE_V1 structure [Kernel-Mode Driver Architecture], PPO_FX_DEVICE_V1, PPO_FX_DEVICE_V1 structure pointer [Kernel-Mode Driver Architecture], _PO_FX_DEVICE_V1, kernel.po_fx_device, wdm/PO_FX_DEVICE, wdm/PO_FX_DEVICE_V1, wdm/PPO_FX_DEVICE_V1"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _PO_FX_DEVICE_V1
+ - PPO_FX_DEVICE_V1
  - PO_FX_DEVICE_V1
 ---
 
@@ -94,11 +95,6 @@ A pointer to a caller-allocated device context. This pointer is passed as a para
 
 This member is the first element in an array of one or more <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_po_fx_component_v1">PO_FX_COMPONENT</a> elements. If the array contains more than one element, the additional elements immediately follow the <b>PO_FX_DEVICE</b> structure. The array contains one element for each component in the device.  The Fx power state of each component can be controlled independently of the Fx power states of the other components in the device. The <b>ANYSIZE_ARRAY</b> constant is defined to be 1 in the Ntdef.h header file.
 
-
-#### - Flags
-
-Set to 0. Currently, no flags are defined for this member.
-
 ## -remarks
 
 To register a device with PoFx, a driver calls the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxregisterdevice">PoFxRegisterDevice</a> routine and supplies, as a parameter, a pointer to a <b>PO_FX_DEVICE</b> structure that describes the device.
@@ -146,3 +142,4 @@ A device driver is not required to implement all six callback routines. The driv
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_power_control_callback">PowerControlCallback</a>
+

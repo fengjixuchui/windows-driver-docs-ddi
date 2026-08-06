@@ -4,7 +4,6 @@ title: IWDFDeviceInitialize::SetPnpCapability (wudfddi.h)
 description: The SetPnpCapability method sets the specified Plug and Play (PnP) capability of a device to the specified state.
 old-location: wdf\iwdfdeviceinitialize_setpnpcapability.htm
 tech.root: wdf
-ms.assetid: 82892740-12f6-469b-a65c-6905d32c0b0d
 ms.date: 02/26/2018
 keywords: ["IWDFDeviceInitialize::SetPnpCapability"]
 ms.keywords: IWDFDeviceInitialize interface,SetPnpCapability method, IWDFDeviceInitialize.SetPnpCapability, IWDFDeviceInitialize::SetPnpCapability, SetPnpCapability, SetPnpCapability method, SetPnpCapability method,IWDFDeviceInitialize interface, UMDFDeviceObjectRef_516aeba5-c0c2-40a0-a9e6-d1a983835a94.xml, umdf.iwdfdeviceinitialize_setpnpcapability, wdf.iwdfdeviceinitialize_setpnpcapability, wudfddi/IWDFDeviceInitialize::SetPnpCapability
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDeviceInitialize.SetPnpCapability
+ - IWDFDeviceInitialize::SetPnpCapability
 ---
 
 # IWDFDeviceInitialize::SetPnpCapability
@@ -52,14 +51,14 @@ The <b>SetPnpCapability</b> method sets the specified Plug and Play (PnP) capabi
 
 ## -parameters
 
-### -param Capability 
+### -param Capability [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_pnp_capability">WDF_PNP_CAPABILITY</a>-typed value that identifies the PnP capability to set.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 A WDF_TRI_STATE-typed value that identifies how to set the PnP capability that is specified by <i>Capability</i>. The following table shows the possible values.
 
 <table>
@@ -110,3 +109,4 @@ Set the capability.
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_pnp_capability">WDF_PNP_CAPABILITY</a>
+

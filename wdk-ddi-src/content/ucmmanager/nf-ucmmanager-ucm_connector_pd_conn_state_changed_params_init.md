@@ -4,7 +4,6 @@ title: UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS_INIT function (ucmmanager.h)
 description: Initializes a UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS structure.
 old-location: buses\ucm_connector_pd_conn_state_changed_params_init.htm
 tech.root: usbref
-ms.assetid: 177AF27E-3EBA-4D43-BAF2-11834784F762
 ms.date: 05/07/2018
 keywords: ["UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS_INIT function"]
 ms.keywords: UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS_INIT, UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS_INIT function [Buses], buses.ucm_connector_pd_conn_state_changed_params_init, ucmmanager/UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS_INIT
@@ -50,14 +49,14 @@ Initializes a <a href="/windows-hardware/drivers/ddi/ucmmanager/ns-ucmmanager-_u
 
 ## -parameters
 
-### -param Params 
+### -param Params [out]
 
-[out]
+
 Pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/ucmmanager/ns-ucmmanager-_ucm_connector_pd_conn_state_changed_params">UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS</a> structure to initialize.
 
-### -param PdConnState 
+### -param PdConnState [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/ucmtypes/ne-ucmtypes-_ucm_pd_conn_state">UCM_PD_CONN_STATE</a>-typed flag that indicates the connection state of the partner port.
 
 ## -see-also

@@ -3,7 +3,6 @@ UID: NC:d3dkmddi.DXGKDDI_SETROOTPAGETABLE
 title: DXGKDDI_SETROOTPAGETABLE (d3dkmddi.h)
 description: DxgkDdiSetRootPageTable sets the root page table for the given context. This function is used to notify a context when its associated root page table is resized or moved in memory.
 old-location: display\dxgkddisetrootpagetable.htm
-ms.assetid: BC9E7A2D-690D-4EC2-8D16-22C5FEBA574A
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_SETROOTPAGETABLE callback function"]
 ms.keywords: DXGKDDI_SETROOTPAGETABLE, DXGKDDI_SETROOTPAGETABLE callback, DxgkDdiSetRootPageTable, DxgkDdiSetRootPageTable callback function [Display Devices], d3dkmddi/DxgkDdiSetRootPageTable, display.dxgkddisetrootpagetable, dispmprt/DxgkDdiSetRootPageTable
@@ -39,9 +38,7 @@ api_location:
  - dispmprt.h
  - d3dkmddi.h
 api_name:
- - DxgkDdiSetRootPageTable
-product:
- - Windows
+ - DXGKDDI_SETROOTPAGETABLE
 ---
 
 # DXGKDDI_SETROOTPAGETABLE callback function
@@ -67,3 +64,4 @@ The <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_setroot
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_setrootpagetable">DXGKARG_SETROOTPAGETABLE</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NI:ntddvdeo.IOCTL_VIDEO_SET_POWER_MANAGEMENT
 title: IOCTL_VIDEO_SET_POWER_MANAGEMENT (ntddvdeo.h)
-description: This IOCTL is obsolete in Windows 2000 and later, and is no longer supported.
+description: Learn how IOCTL is obsolete in Windows 2000 and later, and is no longer supported.
 old-location: display\ioctl_video_set_power_management.htm
 tech.root: display
-ms.assetid: 76b643db-318c-4dd4-bc45-e9da27ecb283
 ms.date: 05/10/2018
 keywords: ["IOCTL_VIDEO_SET_POWER_MANAGEMENT IOCTL"]
 ms.keywords: IOCTL_VIDEO_SET_POWER_MANAGEMENT, IOCTL_VIDEO_SET_POWER_MANAGEMENT control, IOCTL_VIDEO_SET_POWER_MANAGEMENT control code [Display Devices], Video_IOCTLs_36fe9d13-31c0-435c-939c-af0ce6d5b380.xml, display.ioctl_video_set_power_management, ntddvdeo/IOCTL_VIDEO_SET_POWER_MANAGEMENT
@@ -51,6 +50,8 @@ This IOCTL is <b>obsolete</b> in Windows 2000 and later, and is no longer suppor
 Resets the power-consumption level of the adapter to the specified state. As long as the state is <b>VideoPowerOff</b>, the port driver intercepts and fails all IOCTL_VIDEO_<i>XXX</i> requests to the miniport driver until the next IOCTL_VIDEO_SET_POWER_MANAGEMENT request that resets the state to a power-on condition.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

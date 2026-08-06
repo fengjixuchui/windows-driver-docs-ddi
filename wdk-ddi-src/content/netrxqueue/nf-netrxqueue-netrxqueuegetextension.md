@@ -3,7 +3,6 @@ UID: NF:netrxqueue.NetRxQueueGetExtension
 title: NetRxQueueGetExtension function (netrxqueue.h)
 description: The NetRxQueueGetExtension function retrieves a packet extension for all packets in a receive (Rx) queue.
 tech.root: netvista
-ms.assetid: a3581073-6875-478b-88c6-ca753cca08b2
 ms.date: 01/31/2019
 keywords: ["NetRxQueueGetExtension function"]
 ms.keywords: NetRxQueueGetExtension
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.29
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -28,13 +27,13 @@ targetos: Windows
 f1_keywords:
  - NetRxQueueGetExtension
  - netrxqueue/NetRxQueueGetExtension
-topictype:
+topic_type:
  - apiref
-apitype:
+api_type:
  - DllExport
-apilocation:
+api_location:
  - NtosKrnl.exe
-apiname:
+api_name:
  - NetRxQueueGetExtension
 ---
 
@@ -47,15 +46,15 @@ The **NetRxQueueGetExtension** function retrieves a packet extension for all pac
 
 ## -parameters
 
-### -param PacketQueue
+### -param PacketQueue [_In_]
 
 The receive queue object.
 
-### -param Query
+### -param Query [_In_]
 
 A pointer to a driver-allocated and initialized [**NET_EXTENSION_QUERY**](../netadapterpacket/ns-netadapterpacket-_net_extension_query.md) structure that contains information about the desired packet extension.
 
-### -param Extension
+### -param Extension [_Out_]
 
 A handle to a driver-allocated [**NET_EXTENSION**](../extension/ns-extension-_net_extension.md) structure that receives the packet extension.
 

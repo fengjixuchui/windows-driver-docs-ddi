@@ -4,7 +4,6 @@ title: RtlUnalignedStringCbLengthW function (ntstrsafe.h)
 description: The RtlUnalignedStringCbLengthW function is a version of the RtlStringCbLength function that accepts an unaligned pointer to a string of Unicode characters.
 old-location: kernel\rtlunalignedstringcblength.htm
 tech.root: kernel
-ms.assetid: 03f49658-ec51-4869-bba8-832c6856c4b0
 ms.date: 04/30/2018
 keywords: ["RtlUnalignedStringCbLengthW function"]
 ms.keywords: RtlUnalignedStringCbLength, RtlUnalignedStringCbLengthW, RtlUnalignedStringCbLengthW function [Kernel-Mode Driver Architecture], kernel.rtlunalignedstringcblength, ntstrsafe/RtlUnalignedStringCbLengthW, safestrings_6724eedb-4d8d-490a-aac8-81c5c95ca3df.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,19 +50,19 @@ The <b>RtlUnalignedStringCbLengthW</b> function is a version of the <a href="/wi
 
 ## -parameters
 
-### -param psz 
+### -param psz [in]
 
-[in]
+
 Supplies a pointer to a buffer that contains a null-terminated string whose length <b>RtlUnalignedStringCbLengthW</b>  will check.
 
-### -param cbMax 
+### -param cbMax [in]
 
-[in]
+
 Supplies the maximum number of bytes that are allowed in the buffer that <i>psz</i> points to, including the terminating NULL character. This value cannot exceed NTSTRSAFE_MAX_CCH * sizeof(WCHAR).
 
-### -param pcbLength 
+### -param pcbLength [out, optional]
 
-[out, optional]
+
 Optional. If the caller supplies a non-<b>NULL</b> address pointer, the function loads the address with the length, in bytes, of the string that is contained in the buffer that <i>psz</i> points to. The length does not include the string's terminating NULL character.
 
 ## -returns

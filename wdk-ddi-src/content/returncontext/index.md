@@ -1,20 +1,18 @@
 ---
+description: "Learn more about: Returncontext.h header"
 UID: NA:returncontext
 title: Returncontext.h header
 ms.assetid: 54F42043-0F6B-45EC-9E91-90505DB1575D
 ms.date: 09/20/2019
 keywords: ["Returncontext.h header"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 tech.root: netvista
 ms.custom: Vb
-product:
- - Windows
 f1_keywords:
  - returncontext
  - returncontext/returncontext
+api_name:
+ - returncontext
 ---
 
 # Returncontext.h header
@@ -22,7 +20,7 @@ f1_keywords:
 
 ## -description
 
-This header is used by netvista. For more information, see:
+This header is used by network. For more information, see:
 
-- [Networking drivers for Windows Vista and later](../_netvista/index.md)
+- [Network](../_netvista/index.md)
 

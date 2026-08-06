@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILSETCALLFORWARDINGSTATUSPARAMS
 title: RILSETCALLFORWARDINGSTATUSPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILSETCALLFORWARDINGSTATUSPARAMS structure in your code."
 old-location: netvista\rilsetcallforwardingstatusparams.htm
 tech.root: netvista
-ms.assetid: 7863a72d-e3cc-4627-a956-7e5a080c4aad
 ms.date: 05/02/2018
 keywords: ["RILSETCALLFORWARDINGSTATUSPARAMS structure"]
 ms.keywords: "*LPRILSETCALLFORWARDINGSTATUSPARAMS, RILSETCALLFORWARDINGSTATUSPARAMS, RILSETCALLFORWARDINGSTATUSPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsetcallforwardingstatusparams, ntddrilapitypes/RILSETCALLFORWARDINGSTATUSPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSETCALLFORWARDINGSTATUSPARAMS
+ - LPRILSETCALLFORWARDINGSTATUSPARAMS
 ---
 
 # RILSETCALLFORWARDINGSTATUSPARAMS structure (ntddrilapitypes.h)

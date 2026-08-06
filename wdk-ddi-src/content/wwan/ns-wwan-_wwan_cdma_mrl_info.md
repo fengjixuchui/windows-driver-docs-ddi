@@ -4,7 +4,6 @@ title: _WWAN_CDMA_MRL_INFO (wwan.h)
 description: The WWAN_CDMA_MRL_INFO structure represents information about a CDMA serving cell or neighboring cell.
 old-location: netvista\wwan_cdma_mrl_info.htm
 tech.root: netvista
-ms.assetid: D8633E80-C7A3-4050-8E8E-8AE459F905D5
 ms.date: 05/02/2018
 keywords: ["WWAN_CDMA_MRL_INFO structure"]
 ms.keywords: "*PWWAN_CDMA_MRL_INFO, PWWAN_CDMA_MRL_INFO, PWWAN_CDMA_MRL_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_CDMA_MRL_INFO, WWAN_CDMA_MRL_INFO structure [Network Drivers Starting with Windows Vista], _WWAN_CDMA_MRL_INFO, netvista.wwan_cdma_mrl_info, wwan/PWWAN_CDMA_MRL_INFO, wwan/WWAN_CDMA_MRL_INFO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_CDMA_MRL_INFO
+ - PWWAN_CDMA_MRL_INFO
  - WWAN_CDMA_MRL_INFO
 ---
 
@@ -105,3 +106,4 @@ The Signal Strength of the pilot (0-63). Use 0xFFFFFFFF when this information is
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_cdma_mrl">WWAN_CDMA_MRL</a>
+

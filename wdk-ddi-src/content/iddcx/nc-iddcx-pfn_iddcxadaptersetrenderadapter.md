@@ -1,14 +1,10 @@
 ---
 UID: NC:iddcx.PFN_IDDCXADAPTERSETRENDERADAPTER
 title: PFN_IDDCXADAPTERSETRENDERADAPTER
-description: PFN_IDDCXADAPTERSETRENDERADAPTER is a pointer to a system-implemented function that sets the preferred render adapter on which to render the swapchains for the specified adapter.
+description: PFN_IDDCXADAPTERSETRENDERADAPTER is a pointer to an OS callback function that sets the preferred render adapter on which to render the swapchains for the specified adapter.
 tech.root: display
-ms.assetid: 0a4cd4b6-a6a2-4f23-9775-bddab232fded
-ms.author: windowsdriverdev
-ms.date: 09/24/2020
+ms.date: 08/26/2022
 keywords: ["PFN_IDDCXADAPTERSETRENDERADAPTER callback pointer"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: iddcx.h
 req.include-header: 
 req.target-type: 
@@ -39,8 +35,6 @@ api_location:
  - iddcx.h
 api_name:
  - PFN_IDDCXADAPTERSETRENDERADAPTER
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -49,13 +43,13 @@ dev_langs:
 
 ## -description
 
-**PFN_IDDCXADAPTERSETRENDERADAPTER** is a pointer to a system-implemented function that sets the preferred render adapter on which to render the swapchains for the specified adapter.
+**PFN_IDDCXADAPTERSETRENDERADAPTER** is a pointer to an OS callback function that sets the preferred render adapter on which to render the swapchains for the specified adapter.
 
 ## -parameters
 
 ### -param DriverGlobals
 
-[in] Pointer to an [**IDD_DRIVER_GLOBALS**](/windows-hardware/drivers/ddi/iddcx/ns-iddcx-idd_driver_globals) structure containing system-defined per-driver data.
+[in] Pointer to an [**IDD_DRIVER_GLOBALS**](./ns-iddcx-idd_driver_globals.md) structure containing system-defined per-driver data.
 
 ### -param AdapterObject
 
@@ -65,9 +59,13 @@ dev_langs:
 
 [in] Input arguments.
 
+## -returns
+
+None.
+
 ## -remarks
 
-An indirect display driver (IDD) should call [**IddCxAdapterSetRenderAdapter**](nf-iddcx-iddcxadaptersetrenderadapter.md) to set their rendering adapter preference. IDDs should not directly call the function that **PFN_IDDCXADAPTERSETRENDERADAPTER** points to.
+An indirect display driver (IDD) should not use this pointer to directly call the function that it points to. IDDs should instead call [**IddCxAdapterSetRenderAdapter**](nf-iddcx-iddcxadaptersetrenderadapter.md).
 
 ## -see-also
 

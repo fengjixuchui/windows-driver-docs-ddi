@@ -4,7 +4,6 @@ title: EVT_UDECX_USB_DEVICE_DEFAULT_ENDPOINT_ADD (udecxusbdevice.h)
 description: The USB device emulation class extension (UdeCx) invokes this callback function to request the client driver to create the default control endpoint on the virtual USB device.
 old-location: buses\evt_udecx_usb_device_default_endpoint_add.htm
 tech.root: usbref
-ms.assetid: 575FA7CD-3F29-40A6-9625-EB8183AA05BA
 ms.date: 05/07/2018
 keywords: ["EVT_UDECX_USB_DEVICE_DEFAULT_ENDPOINT_ADD callback function"]
 ms.keywords: EVT_UDECX_USB_DEVICE_DEFAULT_ENDPOINT_ADD, EVT_UDECX_USB_DEVICE_DEFAULT_ENDPOINT_ADD callback, EvtUsbDeviceDefaultEndpointAdd, EvtUsbDeviceDefaultEndpointAdd callback function [Buses], buses.evt_udecx_usb_device_default_endpoint_add, udecxusbdevice/EvtUsbDeviceDefaultEndpointAdd
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - UdecxUsbDevice.h
 api_name:
- - EvtUsbDeviceDefaultEndpointAdd
+ - EVT_UDECX_USB_DEVICE_DEFAULT_ENDPOINT_ADD
 ---
 
 # EVT_UDECX_USB_DEVICE_DEFAULT_ENDPOINT_ADD callback function
@@ -50,14 +49,14 @@ The USB device emulation class extension (UdeCx) invokes this callback function 
 
 ## -parameters
 
-### -param UdecxUsbDevice 
+### -param UdecxUsbDevice [in]
 
-[in]
+
 A handle to the UDE device object for which the client driver creates the default endpoint. The driver created this object in a previous call to <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.
 
-### -param UdecxEndpointInit 
+### -param UdecxEndpointInit [in]
 
-[in]
+
 A pointer to an <b>UDECXUSBENDPOINT_INIT</b> structure that the client driver retrieved in the previous call to <a href="/windows-hardware/drivers/ddi/udecxusbendpoint/nf-udecxusbendpoint-udecxusbsimpleendpointinitallocate">UdecxUsbSimpleEndpointInitAllocate</a>.
 
 ## -returns
@@ -75,3 +74,4 @@ If the operation is successful, the callback function must return STATUS_SUCCESS
 
 
 <a href="/windows-hardware/drivers/usbcon/">Write a UDE client driver</a>
+

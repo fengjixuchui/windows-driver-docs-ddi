@@ -4,7 +4,6 @@ title: VideoPortDDCMonitorHelper function (video.h)
 description: Queries a monitor for EDID information using the DDC protocol.
 old-location: display\videoportddcmonitorhelper.htm
 tech.root: display
-ms.assetid: 2e4bd9c7-73be-47bc-b4e7-daea7781c46b
 ms.date: 05/10/2018
 keywords: ["VideoPortDDCMonitorHelper function"]
 ms.keywords: VideoPortDDCMonitorHelper, VideoPortDDCMonitorHelper function [Display Devices], VideoPort_Functions_dc0bda84-97c5-49ba-9084-04149f9be157.xml, display.videoportddcmonitorhelper, video/VideoPortDDCMonitorHelper
@@ -50,24 +49,24 @@ Queries a monitor for <a href="/windows-hardware/drivers/">EDID</a> information 
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the miniport driver's device extension.
 
-### -param DDCControl 
+### -param DDCControl [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/video/ns-video-_ddc_control">DDC_CONTROL</a> structure.
 
-### -param EdidBuffer 
+### -param EdidBuffer [in, out]
 
-[in, out]
+
 A pointer to a buffer in which the video port driver returns the <a href="/windows-hardware/drivers/">EDID</a> structure. For ACPI devices, the first four bytes are preset by the video port driver to indicate an attempt to read the <i>EDID</i>.
 
-### -param EdidBufferSize 
+### -param EdidBufferSize [in]
 
-[in]
+
 The size in bytes of the buffer to which <i>EdidBuffer</i> points.
 
 ## -returns

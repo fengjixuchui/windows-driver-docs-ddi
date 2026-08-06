@@ -4,7 +4,6 @@ title: FILTER_RESTART (ndis.h)
 description: The FilterRestart function initiates a restart operation for the specified filter module.Note  You must declare the function by using the FILTER_RESTART type.
 old-location: netvista\filterrestart.htm
 tech.root: netvista
-ms.assetid: 4a917824-eef1-4945-b45e-1c940bc8a50d
 ms.date: 05/02/2018
 keywords: ["FILTER_RESTART callback function"]
 ms.keywords: FILTER_RESTART, FILTER_RESTART callback, FilterRestart, FilterRestart callback function [Network Drivers Starting with Windows Vista], filter_functions_ref_784a21e4-a3d3-4ada-9555-b712595f0a24.xml, ndis/FilterRestart, netvista.filterrestart
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - FilterRestart
+ - FILTER_RESTART
 ---
 
 # FILTER_RESTART callback function
@@ -53,17 +52,14 @@ The
 
 ## -parameters
 
-### -param FilterModuleContext 
+### -param FilterModuleContext [in]
 
-[in]
+
 A handle to the context area for the filter module that the filter driver should restart. The
      filter driver created and initialized this context area in the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach">FilterAttach</a> function.
 
-### -param RestartParameters
-
-#### - FilterRestartParameters 
-[in]
+### -param RestartParameters [in]
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_filter_restart_parameters">
      NDIS_FILTER_RESTART_PARAMETERS</a> structure that defines the restart parameters for the filter
@@ -215,7 +211,7 @@ Should, if the
       requires. To make sure that the NDIS_RESTART_GENERAL_ATTRIBUTES structure contains the required
       information, you should check the 
       <b>Revision</b> member in the 
-      <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure that is
+      <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure that is
       specified in the 
       <b>Header</b> member of the NDIS_RESTART_GENERAL_ATTRIBUTES structure.
 
@@ -290,7 +286,7 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -334,3 +330,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 <a href="/windows-hardware/drivers/network/oid-gen-miniport-restart-attributes">
    OID_GEN_MINIPORT_RESTART_ATTRIBUTES</a>
+

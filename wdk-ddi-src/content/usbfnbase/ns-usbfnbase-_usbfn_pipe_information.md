@@ -4,7 +4,6 @@ title: _USBFN_PIPE_INFORMATION (usbfnbase.h)
 description: Describes attributes of a pipe associated with an endpoint on a specific interface.
 old-location: buses\usbfn_pipe_information.htm
 tech.root: usbref
-ms.assetid: F8BBD279-3694-4559-83B3-9312EF4153C0
 ms.date: 05/07/2018
 keywords: ["USBFN_PIPE_INFORMATION structure"]
 ms.keywords: "*PUSBFN_PIPE_INFORMATION, PUSBFN_PIPE_INFORMATION, PUSBFN_PIPE_INFORMATION structure pointer [Buses], USBFN_PIPE_INFORMATION, USBFN_PIPE_INFORMATION structure [Buses], _USBFN_PIPE_INFORMATION, buses.usbfn_pipe_information, usbfnbase/PUSBFN_PIPE_INFORMATION, usbfnbase/USBFN_PIPE_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - usbfnbase.h
 api_name:
+ - _USBFN_PIPE_INFORMATION
+ - PUSBFN_PIPE_INFORMATION
  - USBFN_PIPE_INFORMATION
 ---
 
@@ -65,3 +66,4 @@ The pipe identifier (ID).
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_endpoint_descriptor">USB_ENDPOINT_DESCRIPTOR</a>
+

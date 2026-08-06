@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGKARG_CREATEDEVICE
 title: _DXGKARG_CREATEDEVICE (d3dkmddi.h)
 description: The DXGKARG_CREATEDEVICE structure describes a graphics context device.
 old-location: display\dxgkarg_createdevice.htm
-ms.assetid: 88d20349-4039-4a5d-a1fd-0488148c623d
 ms.date: 05/10/2018
 keywords: ["DXGKARG_CREATEDEVICE structure"]
 ms.keywords: "*INOUT_PDXGKARG_CREATEDEVICE, DXGKARG_CREATEDEVICE, DXGKARG_CREATEDEVICE structure [Display Devices], DmStructs_76bb50f9-b0d8-415c-b183-ad780ebcabc6.xml, _DXGKARG_CREATEDEVICE, d3dkmddi/DXGKARG_CREATEDEVICE, display.dxgkarg_createdevice"
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_CREATEDEVICE
  - DXGKARG_CREATEDEVICE
 ---
 
@@ -89,3 +89,4 @@ Supported starting with Windows 10.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createdevice">DxgkDdiCreateDevice</a>
+

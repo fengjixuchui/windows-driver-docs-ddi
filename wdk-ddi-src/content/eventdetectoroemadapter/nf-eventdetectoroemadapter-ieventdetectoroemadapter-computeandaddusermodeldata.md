@@ -3,7 +3,6 @@ UID: NF:eventdetectoroemadapter.IEventDetectorOemAdapter.ComputeAndAddUserModelD
 title: IEventDetectorOemAdapter::ComputeAndAddUserModelData
 description: Adds the user specific model data to an existing model data blob.
 tech.root: audio
-ms.assetid: ab85e416-ed92-4956-9e51-5f7044fae368
 ms.date: 02/25/2019
 keywords: ["IEventDetectorOemAdapter::ComputeAndAddUserModelData"]
 ms.keywords: IEventDetectorOemAdapter::ComputeAndAddUserModelData, ComputeAndAddUserModelData, IEventDetectorOemAdapter.ComputeAndAddUserModelData, IEventDetectorOemAdapter::ComputeAndAddUserModelData, IEventDetectorOemAdapter.ComputeAndAddUserModelData
@@ -36,9 +35,7 @@ api_type:
 api_location:
  - eventdetectoroemadapter.h
 api_name:
- - IEventDetectorOemAdapter.ComputeAndAddUserModelData
-product:
- - Windows
+ - IEventDetectorOemAdapter::ComputeAndAddUserModelData
 ---
 
 # IEventDetectorOemAdapter::ComputeAndAddUserModelData
@@ -89,3 +86,4 @@ This function is the part of the Event Detector OEM interface to be used for har
 - [eventdetectoroemadapter](../eventdetectoroemadapter/index.md)
 
 - [Audio](../_audio/index.md)
+

@@ -4,7 +4,6 @@ title: WdfDriverCreate function (wdfdriver.h)
 description: The WdfDriverCreate method creates a framework driver object for the calling driver.
 old-location: wdf\wdfdrivercreate.htm
 tech.root: wdf
-ms.assetid: 2b8cea0f-bca0-4ffa-834b-d7c079cf93d8
 ms.date: 02/26/2018
 keywords: ["WdfDriverCreate function"]
 ms.keywords: DFDriverObjectRef_10e33793-b3e1-4938-9b82-439451aceb86.xml, WdfDriverCreate, WdfDriverCreate method, kmdf.wdfdrivercreate, wdf.wdfdrivercreate, wdfdriver/WdfDriverCreate
@@ -55,29 +54,29 @@ The <b>WdfDriverCreate</b> method creates a framework driver object for the call
 
 ## -parameters
 
-### -param DriverObject 
+### -param DriverObject [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object">DRIVER_OBJECT</a> structure that represents a Windows Driver Model (WDM) driver object. The driver receives this pointer as input to its <a href="/windows-hardware/drivers/storage/driverentry-of-ide-controller-minidriver">DriverEntry</a> routine.
 
-### -param RegistryPath 
+### -param RegistryPath [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains the registry path string that the driver received as input to its <a href="/windows-hardware/drivers/storage/driverentry-of-ide-controller-minidriver">DriverEntry</a> routine.
 
-### -param DriverAttributes 
+### -param DriverAttributes [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure. (The structure's <b>ParentObject</b> member must be <b>NULL</b>.) This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param DriverConfig 
+### -param DriverConfig [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfdriver/ns-wdfdriver-_wdf_driver_config">WDF_DRIVER_CONFIG</a> structure.
 
-### -param Driver 
+### -param Driver [out, optional]
 
-[out, optional]
+
 A pointer to a location that receives a handle to the new framework driver object. This parameter is optional and can be WDF_NO_HANDLE.
 
 ## -returns

@@ -4,7 +4,6 @@ title: SerCx2SaveReceiveFifoOnD0Exit function (sercx.h)
 description: The SerCx2SaveReceiveFifoOnD0Exit method informs version 2 of the serial framework extension (SerCx2) that the receive FIFO of the serial controller hardware contains data that should be saved before the serial controller enters a device low-power state.
 old-location: serports\sercx2savereceivefifoond0exit.htm
 tech.root: serports
-ms.assetid: 689306DE-F83A-4C5D-B79A-DEBF2D5E79B3
 ms.date: 04/23/2018
 keywords: ["SerCx2SaveReceiveFifoOnD0Exit function"]
 ms.keywords: 2/SerCx2SaveReceiveFifoOnD0Exit, SerCx2SaveReceiveFifoOnD0Exit, SerCx2SaveReceiveFifoOnD0Exit method [Serial Ports], serports.sercx2savereceivefifoond0exit
@@ -50,14 +49,14 @@ The <b>SerCx2SaveReceiveFifoOnD0Exit</b> method informs version 2 of the serial 
 
 ## -parameters
 
-### -param PioReceive 
+### -param PioReceive [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIORECEIVE</a> handle to a PIO-receive object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2pioreceivecreate">SerCx2PioReceiveCreate</a> method to create this object.
 
-### -param FifoSize 
+### -param FifoSize [in]
 
-[in]
+
 The number of bytes of unread data that the transmit FIFO contains.
 
 ## -remarks

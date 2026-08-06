@@ -4,7 +4,6 @@ title: MINIPORT_PNP_IRP (ndis.h)
 description: The MiniportPnpIrp function enables a miniport driver to optionally manage its Plug and Play (PnP) resources.
 old-location: netvista\miniportstartdevice.htm
 tech.root: netvista
-ms.assetid: ccccb2c5-16ba-4463-bb35-1dc3dcc61a2f
 ms.date: 05/02/2018
 keywords: ["MINIPORT_PNP_IRP callback function"]
 ms.keywords: "(*MINIPORT_PNP_IRP_HANDLER), (*MINIPORT_PNP_IRP_HANDLER) callback function [Network Drivers Starting with Windows Vista], MINIPORT_PNP_IRP, MINIPORT_PNP_IRP callback, MiniportPnpIrp, MiniportPnpIrp callback function [Network Drivers Starting with Windows Vista], ndis/MiniportPnpIrp, ndis_msix_ref_421866fc-9921-4101-87b5-3d48e064f855.xml, netvista.miniportstartdevice"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - (*MINIPORT_PNP_IRP_HANDLER)
+ - MINIPORT_PNP_IRP
 ---
 
 # MINIPORT_PNP_IRP callback function
@@ -60,15 +59,15 @@ The <i>MiniportPnpIrp</i> function enables a miniport driver to optionally manag
 
 ## -parameters
 
-### -param MiniportAddDeviceContext 
+### -param MiniportAddDeviceContext [in]
 
-[in]
+
 A handle for a driver-allocated context area that the miniport driver registered with NDIS in the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_add_device">MiniportAddDevice</a> function.
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 If this function is defined as <i>
    MiniportFilterResourceRequirements</i>, this parameter is a pointer to the <a href="/windows-hardware/drivers/kernel/irp-mn-filter-resource-requirements">
      IRP_MN_FILTER_RESOURCE_REQUIREMENTS</a> for the driver to handle.
@@ -350,3 +349,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismconfigmsixtableentry">NdisMConfigMSIXTableEntry</a>
+

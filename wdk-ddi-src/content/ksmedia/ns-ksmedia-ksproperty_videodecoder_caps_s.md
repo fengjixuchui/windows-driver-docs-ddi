@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_111
+UID: NS:ksmedia.KSPROPERTY_VIDEODECODER_CAPS_S
 title: KSPROPERTY_VIDEODECODER_CAPS_S (ksmedia.h)
 description: The KSPROPERTY_VIDEODECODER_CAPS_S structure describes the hardware capabilities of the video decoder device.
 old-location: stream\ksproperty_videodecoder_caps_s.htm
 tech.root: stream
-ms.assetid: af81a053-8c09-411c-a437-21859ea867b2
 ms.date: 04/30/2019
 keywords: ["KSPROPERTY_VIDEODECODER_CAPS_S structure"]
 ms.keywords: "*PKSPROPERTY_VIDEODECODER_CAPS_S, KSPROPERTY_VIDEODECODER_CAPS_S, KSPROPERTY_VIDEODECODER_CAPS_S structure [Streaming Media Devices], PKSPROPERTY_VIDEODECODER_CAPS_S, PKSPROPERTY_VIDEODECODER_CAPS_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_VIDEODECODER_CAPS_S, ksmedia/PKSPROPERTY_VIDEODECODER_CAPS_S, stream.ksproperty_videodecoder_caps_s, vidcapstruct_091e360d-7c9a-4ffc-a7b5-aa634847bbed.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_VIDEODECODER_CAPS_S
  - KSPROPERTY_VIDEODECODER_CAPS_S
 ---
 
@@ -54,7 +54,7 @@ The KSPROPERTY_VIDEODECODER_CAPS_S structure describes the hardware capabilities
 
 ### -field Property
 
-Specifies an initialized <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+Specifies an initialized <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 ### -field StandardsSupported
 
@@ -74,7 +74,7 @@ Specifies the number of horizontal sync pulses the video decoder produces during
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -91,3 +91,4 @@ Specifies the number of horizontal sync pulses the video decoder produces during
 
 
 <a href="/windows-hardware/drivers/stream/propsetid-vidcap-videodecoder">PROPSETID_VIDCAP_VIDEODECODER</a>
+

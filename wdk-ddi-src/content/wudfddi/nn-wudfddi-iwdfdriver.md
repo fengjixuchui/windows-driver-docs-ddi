@@ -4,7 +4,6 @@ title: IWDFDriver (wudfddi.h)
 description: The IWDFDriver interface exposes the framework driver object that represents the driver image that is loaded in the host process.
 old-location: wdf\iwdfdriver.htm
 tech.root: wdf
-ms.assetid: ada475ae-e697-475c-b461-8e3a36ae9ab1
 ms.date: 02/26/2018
 keywords: ["IWDFDriver interface"]
 ms.keywords: IWDFDriver, IWDFDriver interface, IWDFDriver interface,described, UMDFDriverObjectRef_2bce205e-d670-4dae-870a-f5b01c3ea49e.xml, umdf.iwdfdriver, wdf.iwdfdriver, wudfddi/IWDFDriver
@@ -52,7 +51,7 @@ The <b>IWDFDriver</b> interface exposes the framework driver object that represe
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFDriver</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a>. <b>IWDFDriver</b> also has these types of members:
+The <b>IWDFDriver</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a>. <b>IWDFDriver</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>

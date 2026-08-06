@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_DESTROYVIDEOPROCESSORENUM
 title: PFND3D11_1DDI_DESTROYVIDEOPROCESSORENUM (d3d10umddi.h)
 description: Releases resources for the video processor enumeration object that were created through a call to the CreateVideoProcessorEnum function.
 old-location: display\destroyvideoprocessorenum.htm
-ms.assetid: a4325993-aa87-466e-8e89-40bede1e0306
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_DESTROYVIDEOPROCESSORENUM callback function"]
 ms.keywords: PFND3D11_1DDI_DESTROYVIDEOPROCESSORENUM, PFND3D11_1DDI_DESTROYVIDEOPROCESSORENUM callback, d3d10umddi/pfnDestroyVideoProcessorEnum, display.destroyvideoprocessorenum, pfnDestroyVideoProcessorEnum, pfnDestroyVideoProcessorEnum callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnDestroyVideoProcessorEnum
+ - PFND3D11_1DDI_DESTROYVIDEOPROCESSORENUM
 ---
 
 # PFND3D11_1DDI_DESTROYVIDEOPROCESSORENUM callback function
@@ -50,13 +49,13 @@ Releases resources for the video processor enumeration object that were created 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hProcessorEnum* [in]
 
@@ -65,3 +64,4 @@ A handle to the driver's private data for the video processor enumeration object
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessorenum">CreateVideoProcessorEnum</a>
+

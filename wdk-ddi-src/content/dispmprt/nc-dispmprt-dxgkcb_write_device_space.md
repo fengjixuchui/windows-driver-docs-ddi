@@ -4,14 +4,13 @@ title: DXGKCB_WRITE_DEVICE_SPACE (dispmprt.h)
 description: The DxgkCbWriteDeviceSpace function writes to a device configuration space or the expansion ROM of a display adapter.
 old-location: display\dxgkcbwritedevicespace.htm
 tech.root: display
-ms.assetid: 797d6b0c-91a4-4923-ad40-937cfde50067
 ms.date: 05/10/2018
 keywords: ["DXGKCB_WRITE_DEVICE_SPACE callback function"]
 ms.keywords: DXGKCB_WRITE_DEVICE_SPACE, DXGKCB_WRITE_DEVICE_SPACE callback, DpFunctions_947b42ba-4121-4f21-b361-29a63278feb0.xml, DxgkCbWriteDeviceSpace, DxgkCbWriteDeviceSpace callback function [Display Devices], display.dxgkcbwritedevicespace, dispmprt/DxgkCbWriteDeviceSpace
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
- - DxgkCbWriteDeviceSpace
+ - DXGKCB_WRITE_DEVICE_SPACE
 ---
 
 # DXGKCB_WRITE_DEVICE_SPACE callback function
@@ -50,14 +49,14 @@ The <b>DxgkCbWriteDeviceSpace</b> function writes to a device configuration spac
 
 ## -parameters
 
-### -param DeviceHandle 
+### -param DeviceHandle [in]
 
-[in]
+
 A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device">DxgkDdiStartDevice</a>.
 
-### -param DataType 
+### -param DataType [in]
 
-[in]
+
 The type of write transaction to be performed. This parameter must be one of the following values, which are defined in <i>Dispmprt.h</i>:
 
 
@@ -86,24 +85,24 @@ Write to the configuration space of a memory controller hub that is a peer to th
 
 Write to the display adapter's expansion ROM.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to a buffer that supplies the data to be written to the configuration space.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 The offset, in bytes, into the configuration space, at which the write transaction begins.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The number of bytes to be written.
 
-### -param BytesWritten 
+### -param BytesWritten [out]
 
-[out]
+
 A pointer to a ULONG-typed variable that receives the number of bytes actually written.
 
 ## -returns
@@ -119,3 +118,4 @@ A pointer to a ULONG-typed variable that receives the number of bytes actually w
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkcb_read_device_space">DxgkCbReadDeviceSpace</a>
+

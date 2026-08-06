@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGK_QUERYSEGMENTIN4
 title: _DXGK_QUERYSEGMENTIN4 (d3dkmddi.h)
 description: The DXGK_QUERYSEGMENTIN4 structure is used to specify the adapter to query.
 old-location: display\dxgk_querysegmentin4.htm
-ms.assetid: B78E5AEF-DC31-44B2-92D8-DE7C83726E29
 ms.date: 05/10/2018
 keywords: ["DXGK_QUERYSEGMENTIN4 structure"]
 ms.keywords: DXGK_QUERYSEGMENTIN4, DXGK_QUERYSEGMENTIN4 structure [Display Devices], _DXGK_QUERYSEGMENTIN4, d3dkmddi/DXGK_QUERYSEGMENTIN4, display.dxgk_querysegmentin4
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_QUERYSEGMENTIN4
  - DXGK_QUERYSEGMENTIN4
 ---
 
@@ -59,3 +59,4 @@ A zero-based physical adapter index in a linked display adapter  (LDA) link. Zer
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_querysegmentout4">DXGK_QUERYSEGMENTOUT4</a>
+

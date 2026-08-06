@@ -4,7 +4,6 @@ title: IPortClsPower::UnregisterAdapterPowerManagement (portcls.h)
 description: The UnregisterAdapterPowerManagement method unregisters the adapter's power management interface with PortCls.
 old-location: audio\iportclspower_unregisteradapterpowermanagement.htm
 tech.root: audio
-ms.assetid: 4c8734b1-d7f5-476b-a85f-1d3f4df888b9
 ms.date: 05/08/2018
 keywords: ["IPortClsPower::UnregisterAdapterPowerManagement"]
 ms.keywords: IPortClsPower interface [Audio Devices],UnregisterAdapterPowerManagement method, IPortClsPower.UnregisterAdapterPowerManagement, IPortClsPower::UnregisterAdapterPowerManagement, UnregisterAdapterPowerManagement, UnregisterAdapterPowerManagement method [Audio Devices], UnregisterAdapterPowerManagement method [Audio Devices],IPortClsPower interface, audio.iportclspower_unregisteradapterpowermanagement, audmp-routines_3dca5fa9-542d-437d-a2d9-9eef51b5f2ea.xml, portcls/IPortClsPower::UnregisterAdapterPowerManagement
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL.
+req.irql: PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IPortClsPower.UnregisterAdapterPowerManagement
+ - IPortClsPower::UnregisterAdapterPowerManagement
 ---
 
 # IPortClsPower::UnregisterAdapterPowerManagement
@@ -50,9 +49,9 @@ The <code>UnregisterAdapterPowerManagement</code> method unregisters the adapter
 
 ## -parameters
 
-### -param _DeviceObject 
+### -param _DeviceObject [in]
 
-[in]
+
 Specifies a pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
 
 ## -returns
@@ -74,3 +73,4 @@ The <code>UnregisterAdapterPowerManagement</code> method unregisters the adapter
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclspower-registeradapterpowermanagement">IPortClsPower::RegisterAdapterPowerManagement</a>
+

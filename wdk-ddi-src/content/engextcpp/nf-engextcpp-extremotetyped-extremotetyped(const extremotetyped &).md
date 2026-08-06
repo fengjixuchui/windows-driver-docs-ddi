@@ -4,7 +4,6 @@ title: ExtRemoteTyped::ExtRemoteTyped(const ExtRemoteTyped &) (engextcpp.h)
 description: The ExtRemoteTyped copy constructor creates a new instance of the ExtRemoteTyped class.
 old-location: debugger\extremotetyped_extremotetyped_extremotetyped.htm
 tech.root: debugger
-ms.assetid: 8a5ee124-d5ce-431d-9f7f-ff7894f0c28c
 ms.date: 05/03/2018
 keywords: ["ExtRemoteTyped::ExtRemoteTyped(const ExtRemoteTyped &)"]
 ms.keywords: ExtRemoteTyped, ExtRemoteTyped class [Windows Debugging],ExtRemoteTyped constructor, ExtRemoteTyped constructor [Windows Debugging], ExtRemoteTyped constructor [Windows Debugging],ExtRemoteTyped class, ExtRemoteTyped.ExtRemoteTyped, ExtRemoteTyped.ExtRemoteTyped(ExtRemoteTyped&), ExtRemoteTyped.ExtRemoteTyped(const ExtRemoteTyped &), ExtRemoteTyped::ExtRemoteTyped, ExtRemoteTyped::ExtRemoteTyped(const ExtRemoteTyped &), debugger.extremotetyped_extremotetyped_extremotetyped
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteTyped.ExtRemoteTyped
+ - ExtRemoteTyped::ExtRemoteTyped
 ---
 
 # ExtRemoteTyped::ExtRemoteTyped(const ExtRemoteTyped &)
@@ -51,9 +50,9 @@ The <b>ExtRemoteTyped</b> copy constructor creates a new instance of the <b>ExtR
 
 ## -parameters
 
-### -param Typed 
+### -param Typed [in, ref]
 
-[in, ref]
+
 An existing <a href="/windows-hardware/drivers/ddi/engextcpp/nl-engextcpp-extremotetyped">ExtRemoteTyped</a> object.
 
 ## -see-also
@@ -107,3 +106,4 @@ An existing <a href="/windows-hardware/drivers/ddi/engextcpp/nl-engextcpp-extrem
 
 
 <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotetypedlist-extremotetypedlist(extremotedata__pcstr_pcstr_ulong64_ulong_pulong64_bool)">ExtRemoteTypedList</a>
+

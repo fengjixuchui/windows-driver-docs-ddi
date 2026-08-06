@@ -4,7 +4,6 @@ title: USBD_UrbFree function (usbdlib.h)
 description: The USBD_UrbFree routine releases the URB that is allocated by USBD_UrbAllocate, USBD_IsochUrbAllocate, USBD_SelectConfigUrbAllocateAndBuild, or USBD_SelectInterfaceUrbAllocateAndBuild.
 old-location: buses\usbd_urbfree.htm
 tech.root: usbref
-ms.assetid: DD80BAA0-EC01-4231-827A-962580D1E201
 ms.date: 06/24/2019
 keywords: ["USBD_UrbFree function"]
 ms.keywords: USBD_UrbFree, USBD_UrbFree routine [Buses], buses.usbd_urbfree, usbdlib/USBD_UrbFree
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Usbdex.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -52,14 +51,14 @@ The <b>USBD_UrbFree</b> routine releases the <a href="/windows-hardware/drivers/
 
 ## -parameters
 
-### -param USBDHandle 
+### -param USBDHandle [in]
 
-[in]
+
 USBD handle that is retrieved by the client driver in a previous call to  the <a href="/windows-hardware/drivers/ddi/usbdlib/nf-usbdlib-usbd_createhandle">USBD_CreateHandle</a> routine.
 
-### -param Urb 
+### -param Urb [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_urb">URB</a> structure to be released.
 
 ## -remarks

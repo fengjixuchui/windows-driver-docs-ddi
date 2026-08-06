@@ -4,7 +4,6 @@ title: _GET_LOCAL_HOST_INFO5 (1394.h)
 description: The GET_LOCAL_HOST_INFO5 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request using u.GetLocalHostInformation.nLevel = GET_HOST_CONFIG_ROM.
 old-location: ieee\get_local_host_info5.htm
 tech.root: IEEE
-ms.assetid: a0cdf40e-627e-4d39-9c7b-6defcc2f29c3
 ms.date: 02/15/2018
 keywords: ["GET_LOCAL_HOST_INFO5 structure"]
 ms.keywords: "*PGET_LOCAL_HOST_INFO5, 1394/GET_LOCAL_HOST_INFO5, 1394/PGET_LOCAL_HOST_INFO5, 1394stct_7be8f02e-9734-40ae-9337-91d9026ec65d.xml, GET_LOCAL_HOST_INFO5, GET_LOCAL_HOST_INFO5 structure [Buses], IEEE.get_local_host_info5, PGET_LOCAL_HOST_INFO5, PGET_LOCAL_HOST_INFO5 structure pointer [Buses], _GET_LOCAL_HOST_INFO5"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _GET_LOCAL_HOST_INFO5
+ - PGET_LOCAL_HOST_INFO5
  - GET_LOCAL_HOST_INFO5
 ---
 
@@ -50,7 +51,7 @@ api_name:
 
 ## -description
 
-The GET_LOCAL_HOST_INFO5 structure contains the data returned by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a> request using <b>u.GetLocalHostInformation.nLevel</b> = GET_HOST_CONFIG_ROM.
+The GET_LOCAL_HOST_INFO5 structure contains the data returned by a <a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_GET_LOCAL_HOST_INFO</a> request using <b>u.GetLocalHostInformation.nLevel</b> = GET_HOST_CONFIG_ROM.
 
 ## -struct-fields
 
@@ -68,5 +69,5 @@ When submitted in a REQUEST_GET_LOCAL_HOST_INFO request, if the <b>ConfigRomLeng
 
 ## -see-also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_GET_LOCAL_HOST_INFO</a>
 

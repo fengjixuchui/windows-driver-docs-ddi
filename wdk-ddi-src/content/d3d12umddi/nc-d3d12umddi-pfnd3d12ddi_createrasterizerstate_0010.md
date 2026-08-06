@@ -1,8 +1,7 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_CREATERASTERIZERSTATE_0010
 title: PFND3D12DDI_CREATERASTERIZERSTATE_0010 (d3d12umddi.h)
-description: Creates a rasterizer state.
-ms.assetid: c35b4b71-e223-485f-88e4-479663f46aef
+description: The PFND3D12DDI_CREATERASTERIZERSTATE_0010 callback function creates a user-mode display driver rasterizer state.
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CREATERASTERIZERSTATE_0010 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CREATERASTERIZERSTATE_0010
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,15 +48,15 @@ Creates a rasterizer state.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 Pointer to a D3D12DDI_RASTERIZER_DESC_0010 structure.
 
-### -param Arg3
+### -param unnamedParam3
 
 A handle to a rasterizer state.
 

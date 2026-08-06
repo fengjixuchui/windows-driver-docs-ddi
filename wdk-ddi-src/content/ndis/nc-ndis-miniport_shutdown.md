@@ -4,7 +4,6 @@ title: MINIPORT_SHUTDOWN (ndis.h)
 description: NDIS calls a miniport driver's MiniportShutdownEx function when the system is shutting down.
 old-location: netvista\miniportshutdownex.htm
 tech.root: netvista
-ms.assetid: 7c88ff02-e791-4642-ad40-78f2ef2cba7d
 ms.date: 05/02/2018
 keywords: ["MINIPORT_SHUTDOWN callback function"]
 ms.keywords: MINIPORT_SHUTDOWN, MINIPORT_SHUTDOWN callback, MiniportShutdownEx, MiniportShutdownEx callback function [Network Drivers Starting with Windows Vista], miniport_functions_ref_1ef84db9-b4af-4e59-9bb8-6f467a0866d5.xml, ndis/MiniportShutdownEx, netvista.miniportshutdownex
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportShutdownEx
+ - MINIPORT_SHUTDOWN
 ---
 
 # MINIPORT_SHUTDOWN callback function
@@ -53,16 +52,16 @@ NDIS calls a miniport driver's
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 A handle to a context area that the miniport driver allocated in its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a> function.
      The driver uses this context area to maintain state information for a miniport adapter.
 
-### -param ShutdownAction 
+### -param ShutdownAction [in]
 
-[in]
+
 The reason why NDIS called the shutdown function. The following values are valid:
      
 
@@ -179,3 +178,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetbusdata">NdisMSetBusData</a>
+

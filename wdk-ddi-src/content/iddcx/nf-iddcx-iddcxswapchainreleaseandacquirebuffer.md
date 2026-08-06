@@ -1,11 +1,9 @@
 ---
 UID: NF:iddcx.IddCxSwapChainReleaseAndAcquireBuffer
 title: IddCxSwapChainReleaseAndAcquireBuffer function (iddcx.h)
-description: An OS callback function the driver calls when it wants to release the current buffer in the swap chain and acquire a new one.
-old-location: display\iddcxswapchainreleaseandacquirebuffer.htm
+description: Learn more about the IddCxSwapChainReleaseAndAcquireBuffer function.
 tech.root: display
-ms.assetid: f9b0cf3f-cbb6-4b44-81c1-b60ae525ec17
-ms.date: 05/10/2018
+ms.date: 09/22/2023
 keywords: ["IddCxSwapChainReleaseAndAcquireBuffer function"]
 ms.keywords: IddCxSwapChainReleaseAndAcquireBuffer, IddCxSwapChainReleaseAndAcquireBuffer method [Display Devices], display.iddcxswapchainreleaseandacquirebuffer, iddcx/IddCxSwapChainReleaseAndAcquireBuffer
 req.header: iddcx.h
@@ -24,7 +22,7 @@ req.assembly:
 req.type-library: 
 req.lib: IddCxStub.lib
 req.dll: IddCx.dll
-req.irql: _Must_inspect_result_
+req.irql: 
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -43,23 +41,26 @@ api_name:
 
 # IddCxSwapChainReleaseAndAcquireBuffer function
 
-
 ## -description
 
-                An OS callback function the driver calls when it wants to release the current buffer in the swap chain and acquire a new one
+An indirect display driver calls **IddCxSwapChainReleaseAndAcquireBuffer** to release the current buffer in the swap chain and acquire a new one. IDDs that report [FP16 support](ne-iddcx-iddcx_adapter_flags.md) must call [**IddCxSwapChainReleaseAndAcquireBuffer2**](nf-iddcx-iddcxswapchainreleaseandacquirebuffer2.md) instead.
 
 ## -parameters
 
-### -param SwapChainObject 
+### -param SwapChainObject
 
-[in]
-The swap-chain object passed to the <a href="/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_assign_swapchain">EVT_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN</a> call.
+[in] The swap-chain object previously passed by the OS to the driver in a [**EVT_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN**](nc-iddcx-evt_idd_cx_monitor_assign_swapchain.md) call.
 
-### -param pOutArgs 
+### -param pOutArgs
 
-[out]
-Output arguments of function
+[out] Pointer to an [**IDARG_OUT_RELEASEANDACQUIREBUFFER**](ns-iddcx-idarg_out_releaseandacquirebuffer.md) structure in which the output arguments of the function are returned.
 
 ## -returns
 
-(NTSTATUS) The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS</a> error code.
+**IddCxSwapChainReleaseAndAcquireBuffer** returns S_OK on success; otherwise it returns an appropriate error code.
+
+## -see-also
+
+[**IDARG_OUT_RELEASEANDACQUIREBUFFER**](ns-iddcx-idarg_out_releaseandacquirebuffer.md)
+
+[**IddCxSwapChainReleaseAndAcquireBuffer2**](nf-iddcx-iddcxswapchainreleaseandacquirebuffer2.md)

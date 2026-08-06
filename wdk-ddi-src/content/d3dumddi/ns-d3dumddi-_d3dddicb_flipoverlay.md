@@ -4,7 +4,6 @@ title: _D3DDDICB_FLIPOVERLAY (d3dumddi.h)
 description: The D3DDDICB_FLIPOVERLAY structure describes a new allocation to display for the overlay.
 old-location: display\d3dddicb_flipoverlay.htm
 tech.root: display
-ms.assetid: 709583a5-5367-4187-a560-29b2c8eedbf4
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_FLIPOVERLAY structure"]
 ms.keywords: D3DDDICB_FLIPOVERLAY, D3DDDICB_FLIPOVERLAY structure [Display Devices], D3D_param_Structs_cb3914df-9c6b-43f0-a8fa-a2f06f5b2abd.xml, _D3DDDICB_FLIPOVERLAY, d3dumddi/D3DDDICB_FLIPOVERLAY, display.d3dddicb_flipoverlay
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDICB_FLIPOVERLAY
  - D3DDDICB_FLIPOVERLAY
 ---
 
@@ -52,21 +52,21 @@ The D3DDDICB_FLIPOVERLAY structure describes a new allocation to display for the
 
 ## -struct-fields
 
-### -field hKernelOverlay
+### -field hKernelOverlay [in]
 
-[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createoverlaycb">pfnCreateOverlayCb</a> function and that identifies the kernel-mode overlay object to be flipped.
+A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createoverlaycb">pfnCreateOverlayCb</a> function and that identifies the kernel-mode overlay object to be flipped.
 
-### -field hSource
+### -field hSource [in]
 
-[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the source allocation to be displayed.
+A D3DKMT_HANDLE data type that represents a kernel-mode handle to the source allocation to be displayed.
 
-### -field pPrivateDriverData
+### -field pPrivateDriverData [in]
 
-[in] A pointer to a block of private data, which is passed from the user-mode display driver to the display miniport driver.
+A pointer to a block of private data, which is passed from the user-mode display driver to the display miniport driver.
 
-### -field PrivateDriverDataSize
+### -field PrivateDriverDataSize [in]
 
-[in] The size, in bytes, of the block of private data that is pointed to by <b>pPrivateDriverData</b>.
+The size, in bytes, of the block of private data that is pointed to by <b>pPrivateDriverData</b>.
 
 ## -see-also
 
@@ -75,3 +75,4 @@ The D3DDDICB_FLIPOVERLAY structure describes a new allocation to display for the
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_flipoverlaycb">pfnFlipOverlayCb</a>
+

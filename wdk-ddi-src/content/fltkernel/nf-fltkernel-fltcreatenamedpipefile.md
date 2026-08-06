@@ -4,7 +4,6 @@ title: FltCreateNamedPipeFile function (fltkernel.h)
 description: Minifilter drivers call FltCreateNamedPipeFile to create a new pipe or open an existing pipe.
 old-location: ifsk\fltcreatenamedpipefile.htm
 tech.root: ifsk
-ms.assetid: F4F3A591-B4BE-4367-A76A-820552F9B3B5
 ms.date: 04/16/2018
 keywords: ["FltCreateNamedPipeFile function"]
 ms.keywords: FILE_PIPE_BYTE_STREAM_MODE, FILE_PIPE_BYTE_STREAM_TYPE, FILE_PIPE_COMPLETE_OPERATION, FILE_PIPE_MESSAGE_MODE, FILE_PIPE_MESSAGE_TYPE, FILE_PIPE_QUEUE_COMPLETION, FltCreateNamedPipeFile, FltCreateNamedPipeFile function [Installable File System Drivers], fltkernel/FltCreateNamedPipeFile, ifsk.fltcreatenamedpipefile
@@ -51,29 +50,29 @@ Minifilter drivers call <b>FltCreateNamedPipeFile</b> to create a new pipe or op
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in]
 
-[in]
+
 An opaque filter pointer for the caller.
 
-### -param Instance 
+### -param Instance [in, optional]
 
-[in, optional]
+
 An opaque instance pointer for the minifilter driver instance that the create request is to be sent to. The instance must be attached to the volume for the named pipe file system. This parameter is optional and can be <b>NULL</b>. If this parameter is <b>NULL</b>, the request is sent to the device object at the top of the file system driver stack for the volume. If it is non-<b>NULL</b>, the request is sent only to minifilter driver instances that are attached below the specified instance.
 
-### -param FileHandle 
+### -param FileHandle [out]
 
-[out]
+
 A pointer to a caller-allocated variable that receives the file handle if the call to  <b>FltCreateNamedPipeFile</b> is successful.
 
-### -param FileObject 
+### -param FileObject [out, optional]
 
-[out, optional]
+
 A pointer to a caller-allocated variable that receives the file object pointer if the call to <b>FltCreateNamedPipeFile</b> is successful. This parameter is optional and can be <b>NULL</b>.
 
-### -param DesiredAccess 
+### -param DesiredAccess [in]
 
-[in]
+
 A bitmask of flags that specify the type of access that the caller requires to the file or directory. The set of system-defined <i>DesiredAccess</i> flags determines the following specific access rights for file objects. 
 
 <table>
@@ -213,9 +212,9 @@ STANDARD_RIGHTS_WRITE, FILE_WRITE_DATA, FILE_APPEND_DATA, and SYNCHRONIZE.
 </tr>
 </table>
 
-### -param ObjectAttributes 
+### -param ObjectAttributes [in]
 
-[in]
+
 A pointer to an opaque <a href="/windows/win32/api/ntdef/ns-ntdef-_object_attributes">OBJECT_ATTRIBUTES</a> structure that is already initialized with <a href="/windows/win32/api/ntdef/nf-ntdef-initializeobjectattributes">InitializeObjectAttributes</a>. If the caller is running in the system process context, this parameter can be <b>NULL</b>. Otherwise, the caller must set the OBJ_KERNEL_HANDLE attribute in the call to <b>InitializeObjectAttributes</b>. Members of this structure for a file object are listed in the following table. 
 
 <table>
@@ -259,7 +258,7 @@ An optional handle to a directory, obtained by a preceding call to <a href="/win
 
 </td>
 <td>
-An optional security descriptor (<a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor">SECURITY_DESCRIPTOR</a>) to be applied to a pipe. <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_acl">ACLs</a> specified by such a security descriptor are only applied to the pipe when it is created. If the value is <b>NULL</b> when a pipe is created, the ACL placed on the pipe is dependant on the named pipe file system and may allow a client with any access to create an instance.
+An optional security descriptor (<a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor">SECURITY_DESCRIPTOR</a>) to be applied to a pipe. <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_acl">ACLs</a> specified by such a security descriptor are only applied to the pipe when it is created. If the value is <b>NULL</b> when a pipe is created, the ACL placed on the pipe is dependent on the named pipe file system and may allow a client with any access to create an instance.
 
 </td>
 </tr>
@@ -275,18 +274,18 @@ A set of flags that controls the file object attributes. If the caller is runnin
 </tr>
 </table>
 
-### -param IoStatusBlock 
+### -param IoStatusBlock [out]
 
-[out]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the requested operation. On return from <b>FltCreateNamedPipeFile</b>, the <b>Information</b> member of the variable contains one of the following values:
 
 FILE_CREATED
 
 FILE_OPENED
 
-### -param ShareAccess 
+### -param ShareAccess [in]
 
-[in]
+
 The type of share access to the file that the caller requires as one or a combination of the following flags. For the greatest chance of avoiding sharing violation errors, specify all of the following share access flags. 
 
 <table>
@@ -316,9 +315,9 @@ The file can be opened for write access by other threads' calls to <b>FltCreateN
 </tr>
 </table>
 
-### -param CreateDisposition 
+### -param CreateDisposition [in]
 
-[in]
+
 A value that determines the action to be taken, depending on whether the file already exists. The value can be any of those described in the following table. 
 
 <table>
@@ -358,9 +357,9 @@ If the file already exists, open it. If it does not, create the file.
 </tr>
 </table>
 
-### -param CreateOptions 
+### -param CreateOptions [in]
 
-[in]
+
 The options to be applied when creating or opening the pipe, as a compatible combination of the following flags. 
 
 <table>
@@ -400,9 +399,9 @@ All operations on the pipe are performed synchronously. Waits in the system to s
 </tr>
 </table>
 
-### -param NamedPipeType 
+### -param NamedPipeType [in]
 
-[in]
+
 Type of named pipe to create. Can be one of the following values:
 
 <table>
@@ -432,9 +431,9 @@ The data is written to the pipe as a message.
 </tr>
 </table>
 
-### -param ReadMode 
+### -param ReadMode [in]
 
-[in]
+
 The mode to read from the pipe.
 
 <table>
@@ -464,9 +463,9 @@ The pipe data is read as messages. To use this mode, <i>NamedPipeType</i> must b
 </tr>
 </table>
 
-### -param CompletionMode 
+### -param CompletionMode [in]
 
-[in]
+
 The completion mode for pipe reads and writes.
 
 <table>
@@ -496,9 +495,9 @@ The pipe read and write requests are completed immediately.
 </tr>
 </table>
 
-### -param MaximumInstances 
+### -param MaximumInstances [in]
 
-[in]
+
 The maximum number of instances allowed for this named pipe.
 
 ### -param InboundQuota
@@ -509,14 +508,14 @@ The maximum number of instances allowed for this named pipe.
 
 <p>The number of bytes to reserve for the output buffer.</p>
 
-### -param DefaultTimeout 
+### -param DefaultTimeout [in, optional]
 
-[in, optional]
+
 The default timeout in 100-nanosecond increments. This value is expressed as a negative integer. For example, 250 milliseconds is specified as –10 * 1000 * 250.
 
-### -param DriverContext 
+### -param DriverContext [in, optional]
 
-[in, optional]
+
 An optional pointer to an <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_io_driver_create_context">IO_DRIVER_CREATE_CONTEXT</a> structure already initialized by <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioinitializedrivercreatecontext">IoInitializeDriverCreateContext</a>.
 
 ## -returns

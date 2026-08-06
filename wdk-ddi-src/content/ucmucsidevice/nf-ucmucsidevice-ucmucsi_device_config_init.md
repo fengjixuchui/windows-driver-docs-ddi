@@ -3,7 +3,6 @@ UID: NF:ucmucsidevice.UCMUCSI_DEVICE_CONFIG_INIT
 title: UCMUCSI_DEVICE_CONFIG_INIT function (ucmucsidevice.h)
 tech.root: usbref
 description: Initializes a **UCMUCSI_DEVICE_CONFIG** structure.
-ms.assetid: a70f1d65-e06e-48ed-be3d-f099fa01d475
 ms.date: 09/30/2018
 keywords: ["UCMUCSI_DEVICE_CONFIG_INIT function"]
 ms.keywords: UCMUCSI_DEVICE_CONFIG_INIT
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - UcmUcsiCxStub.lib
 api_name:
- - UcmUcsiDeviceInitialize
+ - UCMUCSI_DEVICE_CONFIG_INIT
 ---
 
 # UCMUCSI_DEVICE_CONFIG_INIT function
@@ -63,3 +62,4 @@ The client driver must call this initialization function before calling [**UcmUc
 [**UCMUCSI_DEVICE_CONFIG**](ns-ucmucsidevice-_ucmucsi_device_config.md)
 
 [**WdfDeviceCreate**](../wdfdevice/nf-wdfdevice-wdfdevicecreate.md)
+

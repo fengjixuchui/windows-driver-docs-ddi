@@ -1,10 +1,9 @@
 ---
 UID: NS:irb._IDE_CHANNEL_INTERFACE
-title: _IDE_CHANNEL_INTERFACE (irb.h)
+title: IDE_CHANNEL_INTERFACE (irb.h)
 description: The IDE_CHANNEL_INTERFACE structure contains interface information for the indicated channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\ide_channel_interface.htm
 tech.root: storage
-ms.assetid: 0a742dc2-fa1a-4b93-a136-52f4571bde22
 ms.date: 03/29/2018
 keywords: ["IDE_CHANNEL_INTERFACE structure"]
 ms.keywords: "*PIDE_CHANNEL_INTERFACE, IDE_CHANNEL_INTERFACE, IDE_CHANNEL_INTERFACE structure [Storage Devices], PIDE_CHANNEL_INTERFACE, PIDE_CHANNEL_INTERFACE structure pointer [Storage Devices], _IDE_CHANNEL_INTERFACE, irb/IDE_CHANNEL_INTERFACE, irb/PIDE_CHANNEL_INTERFACE, storage.ide_channel_interface, structs-ATA_8641c5e5-fe37-4576-a500-1f6a2cdbb23b.xml"
@@ -42,16 +41,19 @@ api_type:
 api_location:
  - irb.h
 api_name:
+ - _IDE_CHANNEL_INTERFACE
+ - PIDE_CHANNEL_INTERFACE
  - IDE_CHANNEL_INTERFACE
 ---
 
-# _IDE_CHANNEL_INTERFACE structure
-
+# IDE_CHANNEL_INTERFACE structure
 
 ## -description
 
 The IDE_CHANNEL_INTERFACE structure contains interface information for the indicated channel.
-<div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="/windows-hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="/windows-hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
+
+> [!NOTE]
+> The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](/windows-hardware/drivers/storage/storport-driver) and [Storport miniport](/windows-hardware/drivers/storage/storport-miniport-drivers) driver models.
 
 ## -struct-fields
 
@@ -65,44 +67,46 @@ The port driver sets this field to the number assigned for this channel. For non
 
 ### -field Reserved
 
-Reserved for future use. The miniport driver must not use this field.
+Reserved. The miniport driver must not use this field.
 
 ### -field ReservedUlong
 
-####
+Reserved. The miniport driver must not use this field.
 
 ### -field IdeHwInitialize
 
+The miniport's [**IdeHwInitialize**](nc-irb-ide_hw_initialize.md) routine.
+
 ### -field IdeHwBuildIo
+
+The miniport's [**IdeHwBuildIo**](nc-irb-ide_hw_buildio.md) routine.
 
 ### -field IdeHwStartIo
 
+The miniport's [**IdeHwStartIo**](nc-irb-ide_hw_startio.md) routine.
+
 ### -field IdeHwInterrupt
+
+The miniport's [**IdeHwInterrupt**](nc-irb-ide_hw_interrupt.md) routine.
 
 ### -field IdeHwReset
 
+The miniport's [**IdeHwReset**](nc-irb-ide_hw_reset.md) routine.
+
 ### -field IdeHwControl
+
+The miniport's [**IdeHwControl**](nc-irb-ide_hw_control.md) routine.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/irb/nc-irb-ide_hw_buildio">IdeHwBuildIo</a>
+[**IdeHwBuildIo**](nc-irb-ide_hw_buildio.md)
 
+[**IdeHwControl**](nc-irb-ide_hw_control.md)
 
+[**IdeHwInitialize**](nc-irb-ide_hw_initialize.md)
 
-<a href="/windows-hardware/drivers/ddi/irb/nc-irb-ide_hw_control">IdeHwControl</a>
+[**IdeHwInterrupt**](nc-irb-ide_hw_interrupt.md)
 
+[**IdeHwReset**](nc-irb-ide_hw_reset.md)
 
-
-<a href="/windows-hardware/drivers/ddi/irb/nc-irb-ide_hw_initialize">IdeHwInitialize</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/irb/nc-irb-ide_hw_interrupt">IdeHwInterrupt</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/irb/nc-irb-ide_hw_reset">IdeHwReset</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/irb/nc-irb-ide_hw_startio">IdeHwStartIo</a>
+[**IdeHwStartIo**](nc-irb-ide_hw_startio.md)

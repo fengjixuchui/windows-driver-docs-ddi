@@ -4,7 +4,6 @@ title: ExtExtension::SetUnnamedArg (engextcpp.h)
 description: The SetUnnamedArg method sets an unnamed argument for the current extension command.
 old-location: debugger\setunnamedarg.htm
 tech.root: debugger
-ms.assetid: cf518a6b-275f-4f9c-9aa8-e2e96c468ff9
 ms.date: 05/03/2018
 keywords: ["ExtExtension::SetUnnamedArg"]
 ms.keywords: EngExtCpp_Ref_662530e0-caca-43f0-8b46-b21c8a1f00da.xml, ExtExtension class [Windows Debugging],SetUnnamedArg method, ExtExtension.SetUnnamedArg, ExtExtension::SetUnnamedArg, SetUnnamedArg, SetUnnamedArg method [Windows Debugging], SetUnnamedArg method [Windows Debugging],ExtExtension class, debugger.setunnamedarg
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Engextcpp.hpp
 api_name:
- - ExtExtension.SetUnnamedArg
+ - ExtExtension::SetUnnamedArg
 ---
 
 # ExtExtension::SetUnnamedArg
@@ -50,14 +49,14 @@ The <b>SetUnnamedArg</b> method sets an unnamed argument for the current extensi
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 Specifies the index of the argument.  <i>Index</i> should be between zero and the number of unnamed arguments, as specified in the command-line description used in <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-ext_command">EXT_COMMAND</a>, minus one (unnamed arguments - 1).
 
-### -param StrArg 
+### -param StrArg [in, optional]
 
-[in, optional]
+
 A string that specifies the value of the unnamed argument.
 
 If the argument is of type <b>string</b>, a pointer to the first non-space character is saved as the argument.  In this case, <i>StrArg</i> must not be <b>NULL</b>.
@@ -66,14 +65,14 @@ If the argument is of type <b>expression</b>, <i>StrArg</i> is evaluated using t
 
 If the argument is of type <b>Boolean</b>, <i>StrArg</i> is ignored and can be <b>NULL</b>.
 
-### -param NumArg 
+### -param NumArg [in]
 
-[in]
+
 Specifies the value of an unnamed expression argument.  <i>NumArg</i> is only used if the argument is of type <b>expression</b> and <i>StrArg</i> is <b>NULL</b>.
 
-### -param OnlyIfUnset 
+### -param OnlyIfUnset [in]
 
-[in]
+
 Specifies what happens if the argument is already set.  If <i>OnlyIfUnset</i> is <code>true</code> and the argument has already been set, the argument will not be changed.  If <i>OnlyIfUnset</i> is <code>false</code> and the argument has already been set, the argument will be changed.
 
 ## -returns
@@ -93,3 +92,4 @@ This method should only be called during the execution of an extension command p
 
 
 <a href="/previous-versions/ff543981(v=vs.85)">ExtExtension</a>
+

@@ -4,7 +4,6 @@ title: IServiceGroup::RemoveMember (portcls.h)
 description: The RemoveMember method removes the specified member from the service group.
 old-location: audio\iservicegroup_removemember.htm
 tech.root: audio
-ms.assetid: f257c861-036b-44d1-9f99-dc5c0ab6e715
 ms.date: 05/08/2018
 keywords: ["IServiceGroup::RemoveMember"]
 ms.keywords: IServiceGroup interface [Audio Devices],RemoveMember method, IServiceGroup.RemoveMember, IServiceGroup::RemoveMember, RemoveMember, RemoveMember method [Audio Devices], RemoveMember method [Audio Devices],IServiceGroup interface, audio.iservicegroup_removemember, audmp-routines_0b3fd59f-9233-4344-aa0c-f58505eee693.xml, portcls/IServiceGroup::RemoveMember
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IServiceGroup.RemoveMember
+ - IServiceGroup::RemoveMember
 ---
 
 # IServiceGroup::RemoveMember
@@ -50,9 +49,9 @@ The <code>RemoveMember</code> method removes the specified member from the servi
 
 ## -parameters
 
-### -param pServiceSink 
+### -param pServiceSink [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iservicesink">IServiceSink</a> interface of the member that is to be removed
 
 ## -remarks
@@ -66,3 +65,4 @@ The <code>RemoveMember</code> method removes a service sink that was previously 
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iservicesink">IServiceSink</a>
+

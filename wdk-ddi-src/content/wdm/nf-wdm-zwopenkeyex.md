@@ -4,7 +4,6 @@ title: ZwOpenKeyEx function (wdm.h)
 description: The ZwOpenKeyEx routine opens an existing registry key.
 old-location: kernel\zwopenkeyex.htm
 tech.root: kernel
-ms.assetid: 05057ae7-0f91-4f5a-8c72-652ec04ee3ab
 ms.date: 04/30/2018
 keywords: ["ZwOpenKeyEx function"]
 ms.keywords: ZwOpenKeyEx, ZwOpenKeyEx routine [Kernel-Mode Driver Architecture], k111_4e01a648-6ffc-418f-821c-9a4ef821dc3b.xml, kernel.zwopenkeyex, wdm/ZwOpenKeyEx
@@ -50,24 +49,24 @@ The <b>ZwOpenKeyEx</b> routine opens an existing registry key.
 
 ## -parameters
 
-### -param KeyHandle 
+### -param KeyHandle [out]
 
-[out]
+
 A pointer to a HANDLE variable into which the routine writes the handle to the key.
 
-### -param DesiredAccess 
+### -param DesiredAccess [in]
 
-[in]
+
 Specifies the type of access to the key that the caller requests. This parameter is an <a href="/windows-hardware/drivers/kernel/access-mask">ACCESS_MASK</a> value. For more information, see the description of the <i>DesiredAccess</i> parameter of the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatekey">ZwCreateKey</a> routine.
 
-### -param ObjectAttributes 
+### -param ObjectAttributes [in]
 
-[in]
+
 A pointer to the object attributes of the key being opened. This parameter points to an <a href="/windows/win32/api/ntdef/ns-ntdef-_object_attributes">OBJECT_ATTRIBUTES</a> structure that must have been previously initialized by the <a href="/windows/win32/api/ntdef/nf-ntdef-initializeobjectattributes">InitializeObjectAttributes</a> routine. The caller must specify the name of the registry key as the <i>ObjectName</i> parameter in the call to <b>InitializeObjectAttributes</b>. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>.
 
-### -param OpenOptions 
+### -param OpenOptions [in]
 
-[in]
+
 Specifies the options to apply when opening the key. Set this parameter to zero or to the bitwise OR of one or more of the following REG_OPTION_<i>XXX</i> flag bits:
 
 <table>

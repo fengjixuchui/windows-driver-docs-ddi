@@ -4,7 +4,6 @@ title: WdfIoResourceRequirementsListAppendIoResList function (wdfresource.h)
 description: The WdfIoResourceRequirementsListAppendIoResList method adds a logical configuration to the end of a resource requirements list.
 old-location: wdf\wdfioresourcerequirementslistappendioreslist.htm
 tech.root: wdf
-ms.assetid: efb3617d-86be-4380-ad1a-0a333d248168
 ms.date: 02/26/2018
 keywords: ["WdfIoResourceRequirementsListAppendIoResList function"]
 ms.keywords: DFResourceObjectRef_1d064295-4660-4112-9512-9c5ff7196485.xml, WdfIoResourceRequirementsListAppendIoResList, WdfIoResourceRequirementsListAppendIoResList method, kmdf.wdfioresourcerequirementslistappendioreslist, wdf.wdfioresourcerequirementslistappendioreslist, wdfresource/WdfIoResourceRequirementsListAppendIoResList
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfIoResourceRequirementsListAppendIoResList</b> method adds a <a href="/
 
 ## -parameters
 
-### -param RequirementsList 
+### -param RequirementsList [in]
 
-[in]
+
 A handle to a framework resource-requirements-list object that represents a device's resource requirements list.
 
-### -param IoResList 
+### -param IoResList [in]
 
-[in]
+
 A handle to a framework resource-range-list object that represents a logical configuration of hardware resources for a device.
 
 ## -returns

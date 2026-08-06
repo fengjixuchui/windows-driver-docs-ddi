@@ -1,10 +1,9 @@
 ---
 UID: NF:ntstrsafe.RtlStringCbVPrintfW
 title: RtlStringCbVPrintfW function (ntstrsafe.h)
-description: The RtlStringCbVPrintfW and RtlStringCbVPrintfA functions create a byte-counted text string, with formatting that is based on supplied formatting information.
+description: Learn how the RtlStringCbVPrintfW and RtlStringCbVPrintfA functions create a byte-counted text string, with formatting that is based on supplied formatting information.
 old-location: kernel\rtlstringcbvprintf.htm
 tech.root: kernel
-ms.assetid: 9dfd1894-c9b5-43c2-8377-c28577898754
 ms.date: 04/30/2018
 keywords: ["RtlStringCbVPrintfW function"]
 ms.keywords: RtlStringCbVPrintf, RtlStringCbVPrintfA, RtlStringCbVPrintfW, RtlStringCbVPrintfW function [Kernel-Mode Driver Architecture], kernel.rtlstringcbvprintf, ntstrsafe/RtlStringCbVPrintfA, ntstrsafe/RtlStringCbVPrintfW, safestrings_8b0897a4-24fb-4375-80aa-4148ca6815ce.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -40,8 +39,6 @@ api_location:
  - Ntstrsafe.dll
 api_name:
  - RtlStringCbVPrintfW
- - RtlStringCbVPrintfA
- - RtlStringCbVPrintfW
 ---
 
 # RtlStringCbVPrintfW function
@@ -53,28 +50,28 @@ The <b>RtlStringCbVPrintfW</b> and <b>RtlStringCbVPrintfA</b> functions create a
 
 ## -parameters
 
-### -param pszDest 
+### -param pszDest [out]
 
-[out]
+
 A pointer to a caller-supplied buffer that receives a formatted, null-terminated string. The function creates this string from both the formatting string that is supplied by <i>pszFormat</i> and the arguments supplied by <i>argList</i>.
 
-### -param cbDest 
+### -param cbDest [in]
 
-[in]
+
 The size of the destination buffer, in bytes. The buffer must be large enough to contain the formatted string plus the terminating null character.
 
 For Unicode strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * sizeof(WCHAR). 
 
 For ANSI strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * sizeof(char).
 
-### -param pszFormat 
+### -param pszFormat [in]
 
-[in]
+
 A pointer to a null-terminated text string that contains <b>printf</b>-styled <a href="/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions">formatting directives</a>.
 
-### -param argList 
+### -param argList [in]
 
-[in]
+
 A <b>va_list</b>-typed argument list. Arguments contained in the argument list will be interpreted by using the formatting string that is supplied by <i>pszFormat</i>.
 
 ## -returns
@@ -211,3 +208,4 @@ For more information about the safe string functions, see <a href="/windows-hard
 
 
 <a href="/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcchvprintfa">RtlStringCchVPrintf</a>
+

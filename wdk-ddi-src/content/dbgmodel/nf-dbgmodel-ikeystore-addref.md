@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IKeyStore.AddRef
 title: IKeyStore::AddRef (dbgmodel.h)
-description: Increments the reference count for an interface on an object. This method should be called for every new copy of a pointer to an interface on an object.
-ms.assetid: 8811a6c4-3d71-499f-a5a0-c568eb8e5764
+description: "The IKeyStore::AddRef method increments the reference count for an interface on an object."
 ms.date: 08/13/2018
 keywords: ["IKeyStore::AddRef"]
 ms.keywords: IKeyStore::AddRef, AddRef, IKeyStore.AddRef, IKeyStore::AddRef, IKeyStore.AddRef
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IKeyStore.AddRef
+ - IKeyStore::AddRef
 ---
 
 # IKeyStore::AddRef
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IKeyStore interface](nn-dbgmodel-ikeystore.md)
+

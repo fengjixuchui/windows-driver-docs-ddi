@@ -4,7 +4,6 @@ title: PPUT_DMA_ADAPTER (wdm.h)
 description: The PutDmaAdapter routine frees a DMA_ADAPTER structure previously allocated by IoGetDmaAdapter.
 old-location: kernel\putdmaadapter.htm
 tech.root: kernel
-ms.assetid: 05a76baf-e5f7-41ca-ac9f-4538cd3e0292
 ms.date: 04/30/2018
 keywords: ["PPUT_DMA_ADAPTER callback function"]
 ms.keywords: PPUT_DMA_ADAPTER, PPUT_DMA_ADAPTER callback, PutDmaAdapter, PutDmaAdapter callback function [Kernel-Mode Driver Architecture], kdma_49fe7ec6-e0a3-445e-9275-08b94ca2cf48.xml, kernel.putdmaadapter, wdm/PutDmaAdapter
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdm.h
 api_name:
- - PutDmaAdapter
+ - PPUT_DMA_ADAPTER
 ---
 
 # PPUT_DMA_ADAPTER callback function
@@ -50,9 +49,9 @@ The <b>PutDmaAdapter</b> routine frees a <a href="/windows-hardware/drivers/ddi/
 
 ## -parameters
 
-### -param DmaAdapter 
+### -param DmaAdapter [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_adapter">DMA_ADAPTER</a> structure to be released.
 
 ## -remarks
@@ -77,3 +76,4 @@ A driver must call <b>PutDmaAdapter</b> when it receives a PnP <a href="/windows
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter">IoGetDmaAdapter</a>
+

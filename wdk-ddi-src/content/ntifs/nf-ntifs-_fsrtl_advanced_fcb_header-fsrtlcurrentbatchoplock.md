@@ -4,7 +4,6 @@ title: FsRtlCurrentBatchOplock function (ntifs.h)
 description: A file system or filter driver calls FsRtlCurrentBatchOplock to determine whether there are any batch or filter opportunistic locks (oplocks) on a file.
 old-location: ifsk\fsrtlcurrentbatchoplock.htm
 tech.root: ifsk
-ms.assetid: cfa02246-12ac-4229-bcdb-4792eb5cb0e7
 ms.date: 04/16/2018
 keywords: ["FsRtlCurrentBatchOplock function"]
 ms.keywords: FsRtlCurrentBatchOplock, FsRtlCurrentBatchOplock function [Installable File System Drivers], fsrtlref_d5d16133-2531-4e50-85b7-381740d45d9a.xml, ifsk.fsrtlcurrentbatchoplock, ntifs/FsRtlCurrentBatchOplock
@@ -50,9 +49,9 @@ A file system or filter driver calls <b>FsRtlCurrentBatchOplock</b> to determine
 
 ## -parameters
 
-### -param Oplock 
+### -param Oplock [in]
 
-[in]
+
 Opaque opportunistic lock pointer for the file. This pointer must have been initialized by a previous call to <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializeoplock">FsRtlInitializeOplock</a>.
 
 ## -returns

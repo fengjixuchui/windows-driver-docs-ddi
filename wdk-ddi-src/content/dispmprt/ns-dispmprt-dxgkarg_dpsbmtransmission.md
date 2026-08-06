@@ -2,7 +2,6 @@
 UID: NS:dispmprt._DXGKARG_DPSBMTRANSMISSION
 title: DXGKARG_DPSBMTRANSMISSION
 ms.date: 03/24/2020
-ms.topic: language-reference
 targetos: Windows
 description: The DXGKARG_DPSBMTRANSMISSION structure is a parameter for the DXGKDDI_DPSBMTRANSMISSION callback.
 tech.root: display
@@ -29,6 +28,7 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGKARG_DPSBMTRANSMISSION
+ - PDXGKARG_DPSBMTRANSMISSION
  - DXGKARG_DPSBMTRANSMISSION
 f1_keywords:
  - _DXGKARG_DPSBMTRANSMISSION

@@ -4,7 +4,6 @@ title: IOCTL_STORAGE_GET_MEDIA_SERIAL_NUMBER (ntddstor.h)
 description: Queries the USB generic parent driver for the serial number of a USB device.
 old-location: storage\ioctl_storage_get_media_serial_number.htm
 tech.root: storage
-ms.assetid: aa903b7e-e844-466e-85b1-33fe6ba40689
 ms.date: 03/29/2018
 keywords: ["IOCTL_STORAGE_GET_MEDIA_SERIAL_NUMBER IOCTL"]
 ms.keywords: IOCTL_STORAGE_GET_MEDIA_SERIAL_NUMBER, IOCTL_STORAGE_GET_MEDIA_SERIAL_NUMBER control, IOCTL_STORAGE_GET_MEDIA_SERIAL_NUMBER control code [Storage Devices], k307_dd8dcdec-9756-435c-abbb-14dd1a64ee11.xml, ntddstor/IOCTL_STORAGE_GET_MEDIA_SERIAL_NUMBER, storage.ioctl_storage_get_media_serial_number
@@ -49,6 +48,8 @@ api_name:
 Queries the USB generic parent driver for the serial number of a USB device. If a USB device has a CSM-1 content security interface, a USB client driver can query for its serial number using this request. USB client drivers that help implement a digital rights management (DRM) system can use this information to ensure that only legitimate customers have access to digitized intellectual property.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

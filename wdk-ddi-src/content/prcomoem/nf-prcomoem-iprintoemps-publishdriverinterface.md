@@ -4,7 +4,6 @@ title: IPrintOemPS::PublishDriverInterface (prcomoem.h)
 description: The IPrintOemPS::PublishDriverInterface method allows a rendering plug-in for Pscript5 to obtain the Pscript5 driver's IPrintCorePS2, IPrintOemDriverPS, or IPrintCoreHelperPS interface.
 old-location: print\iprintoemps_publishdriverinterface.htm
 tech.root: print
-ms.assetid: f878a674-7c08-4a7a-ab00-6c79f02566be
 ms.date: 04/20/2018
 keywords: ["IPrintOemPS::PublishDriverInterface"]
 ms.keywords: IPrintOemPS interface [Print Devices],PublishDriverInterface method, IPrintOemPS.PublishDriverInterface, IPrintOemPS::PublishDriverInterface, PublishDriverInterface, PublishDriverInterface method [Print Devices], PublishDriverInterface method [Print Devices],IPrintOemPS interface, prcomoem/IPrintOemPS::PublishDriverInterface, print.iprintoemps_publishdriverinterface, print_unidrv-pscript_rendering_b7e2dc4b-ecc1-41bd-853d-4099614b5cae.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemPS.PublishDriverInterface
+ - IPrintOemPS::PublishDriverInterface
 ---
 
 # IPrintOemPS::PublishDriverInterface
@@ -114,3 +113,4 @@ If the plug-in fails all calls to <code>IPrintOemPS::PublishDriverInterface</cod
 
 
 <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemps-getinfo">IPrintOemPS::GetInfo</a>
+

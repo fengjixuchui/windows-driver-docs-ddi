@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILC2KMRL
 title: RILC2KMRL (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILC2KMRL structure for internal use only. Don't use this structure in your code."
 old-location: netvista\rilc2kmrl_2.htm
 tech.root: netvista
-ms.assetid: a06d81d1-9ecc-41da-b0ad-fa878fac382b
 ms.date: 02/26/2018
 keywords: ["RILC2KMRL structure"]
 ms.keywords: "*LPRILC2KMRL, RILC2KMRL, RILC2KMRL structure [Network Drivers Starting with Windows Vista], netvista.rilc2kmrl_2, rilapitypes/RILC2KMRL"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: RILC2KMRL, *LPRILC2KMRL
-req.product: Windows 10 or later.
 f1_keywords:
  - RILC2KMRL
  - rilapitypes/RILC2KMRL
@@ -42,6 +40,7 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILC2KMRL
+ - LPRILC2KMRL
 ---
 
 # RILC2KMRL structure (rilapitypes.h)

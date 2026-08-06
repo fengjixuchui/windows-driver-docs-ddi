@@ -4,7 +4,6 @@ title: NdisCancelTimerObject function (ndis.h)
 description: The NdisCancelTimerObject function cancels a timer object that is associated with a previous call to the NdisSetTimerObject function.
 old-location: netvista\ndiscanceltimerobject.htm
 tech.root: netvista
-ms.assetid: b66652b7-2e02-49f5-a7e3-60ff35363a19
 ms.date: 05/02/2018
 keywords: ["NdisCancelTimerObject function"]
 ms.keywords: NdisCancelTimerObject, NdisCancelTimerObject function [Network Drivers Starting with Windows Vista], ndis/NdisCancelTimerObject, ndis_timer_ref_39b68ae4-4fd7-4609-aebc-e2be21bead04.xml, netvista.ndiscanceltimerobject
@@ -53,9 +52,9 @@ The
 
 ## -parameters
 
-### -param TimerObject 
+### -param TimerObject [in]
 
-[in]
+
 A handle to a timer object that NDIS provides when a driver calls the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatetimerobject">
      NdisAllocateTimerObject</a> function.

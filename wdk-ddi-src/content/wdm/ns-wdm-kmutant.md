@@ -1,9 +1,8 @@
 ---
 UID: NS:wdm._KMUTANT
-title: KMUTANT
-description: 
-tech.root: 
-ms.assetid: 86af2b66-bf49-4ec4-8258-0093583b14f0
+title: KMUTANT structure
+description: "Learn more about: KMUTANT structure"
+tech.root: kernel
 ms.date: 08/19/2019
 keywords: ["KMUTANT structure"]
 ms.keywords: KMUTANT, KMUTANT, *PKMUTANT, *PRKMUTANT, KMUTEX, *PKMUTEX, *PRKMUTEX,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _KMUTANT
+ - PKMUTANT
  - KMUTANT
-product:
- - Windows
 ---
 
 # KMUTANT structure
@@ -54,11 +53,18 @@ product:
 
 ### -field OwnerThread
 
-### -field Abandoned
-
 ### -field ApcDisable
+
+### -field DUMMYUNIONNAME
+
+### -field DUMMYUNIONNAME.MutantFlags
+
+### -field DUMMYUNIONNAME.DUMMYSTRUCTNAME
+
+### -field DUMMYUNIONNAME.DUMMYSTRUCTNAME.Abandoned
+
+### -field DUMMYUNIONNAME.DUMMYSTRUCTNAME.Spare1
 
 ## -remarks
 
 ## -see-also
-

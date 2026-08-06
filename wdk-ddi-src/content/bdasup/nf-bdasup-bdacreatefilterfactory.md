@@ -4,7 +4,6 @@ title: BdaCreateFilterFactory function (bdasup.h)
 description: The BdaCreateFilterFactory function adds the specified filter descriptor as a filter factory to the specified device and associates the filter factory with the specified BDA template topology.
 old-location: stream\bdacreatefilterfactory.htm
 tech.root: stream
-ms.assetid: bce1a41a-03fa-4f41-aeba-e18c85b07e00
 ms.date: 04/23/2018
 keywords: ["BdaCreateFilterFactory function"]
 ms.keywords: BdaCreateFilterFactory, BdaCreateFilterFactory function [Streaming Media Devices], bdaref_187ab038-cc22-4f82-a9c9-b326b77fef64.xml, bdasup/BdaCreateFilterFactory, stream.bdacreatefilterfactory
@@ -51,19 +50,19 @@ The <b>BdaCreateFilterFactory</b> function adds the specified filter descriptor 
 
 ## -parameters
 
-### -param pKSDevice 
+### -param pKSDevice [in]
 
-[in]
+
 Points to the BDA device to which to add the filter factory with associated BDA template topology.
 
-### -param pFilterDescriptor 
+### -param pFilterDescriptor [in]
 
-[in]
+
 Points to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter_descriptor">KSFILTER_DESCRIPTOR</a> structure that describes a filter for the BDA device. Note that not all of the template pin and node types may be exposed as pin and node factories when the filter is first initialized.
 
-### -param pBdaFilterTemplate 
+### -param pBdaFilterTemplate [in]
 
-[in]
+
 Points to a <a href="/windows-hardware/drivers/ddi/bdasup/ns-bdasup-_bda_filter_template">BDA_FILTER_TEMPLATE</a> structure that describes a BDA template topology.
 
 ## -returns

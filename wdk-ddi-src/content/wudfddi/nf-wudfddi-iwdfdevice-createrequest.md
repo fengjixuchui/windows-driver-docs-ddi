@@ -4,7 +4,6 @@ title: IWDFDevice::CreateRequest (wudfddi.h)
 description: The CreateRequest method creates an unformatted request object.
 old-location: wdf\iwdfdevice_createrequest.htm
 tech.root: wdf
-ms.assetid: 031ce604-9d6f-4fdd-bacc-d1897f260a14
 ms.date: 02/26/2018
 keywords: ["IWDFDevice::CreateRequest"]
 ms.keywords: CreateRequest, CreateRequest method, CreateRequest method,IWDFDevice interface, IWDFDevice interface,CreateRequest method, IWDFDevice.CreateRequest, IWDFDevice::CreateRequest, UMDFDeviceObjectRef_9eb18b05-e5fc-48cf-907b-ed7d188eac4b.xml, umdf.iwdfdevice_createrequest, wdf.iwdfdevice_createrequest, wudfddi/IWDFDevice::CreateRequest
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice.CreateRequest
+ - IWDFDevice::CreateRequest
 ---
 
 # IWDFDevice::CreateRequest
@@ -52,19 +51,19 @@ The <b>CreateRequest</b> method creates an unformatted request object.
 
 ## -parameters
 
-### -param pCallbackInterface 
+### -param pCallbackInterface [in, optional]
 
-[in, optional]
+
 A pointer to the <b>IUnknown</b> interface that the framework uses to determine the object-related event callback functions that the driver subscribes to on the newly created request object. This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require notification. If the driver passes a valid pointer, the framework will call <b>QueryInterface</b> on the <b>IUnknown</b> interface for the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iobjectcleanup">IObjectCleanup</a> interface. If the framework obtains the driver's <b>IObjectCleanup</b> interface, the framework can subsequently call the driver's <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iobjectcleanup-oncleanup">IObjectCleanup::OnCleanup</a> method to notify the driver that the request object is cleaned up.
 
-### -param pParentObject 
+### -param pParentObject [in, optional]
 
-[in, optional]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a> interface for the parent object of the created I/O request object. If <b>NULL</b>, the device object becomes the default parent.
 
-### -param ppRequest 
+### -param ppRequest [out]
 
-[out]
+
 A pointer to a variable that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest">IWDFIoRequest</a> interface for the new request object.
 
 ## -returns
@@ -147,7 +146,6 @@ CUmdfHidDevice::SendInterruptPipeRead(
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice">IWDFDevice</a>
@@ -171,3 +169,4 @@ CUmdfHidDevice::SendInterruptPipeRead(
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a>
+

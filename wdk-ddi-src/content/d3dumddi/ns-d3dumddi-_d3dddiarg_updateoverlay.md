@@ -4,7 +4,6 @@ title: _D3DDDIARG_UPDATEOVERLAY (d3dumddi.h)
 description: The D3DDDIARG_UPDATEOVERLAY structure describes an overlay to modify.
 old-location: display\d3dddiarg_updateoverlay.htm
 tech.root: display
-ms.assetid: e49f48fd-f2e8-4ccc-813f-f624e06ab365
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_UPDATEOVERLAY structure"]
 ms.keywords: D3DDDIARG_UPDATEOVERLAY, D3DDDIARG_UPDATEOVERLAY structure [Display Devices], UMDisplayDriver_param_Structs_6c415566-a5f5-4efc-820b-7eb466b59149.xml, _D3DDDIARG_UPDATEOVERLAY, d3dumddi/D3DDDIARG_UPDATEOVERLAY, display.d3dddiarg_updateoverlay
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_UPDATEOVERLAY
  - D3DDDIARG_UPDATEOVERLAY
 ---
 
@@ -52,13 +52,13 @@ The D3DDDIARG_UPDATEOVERLAY structure describes an overlay to modify.
 
 ## -struct-fields
 
-### -field hOverlay
+### -field hOverlay [in]
 
-[in] A handle to the overlay to modify.
+A handle to the overlay to modify.
 
-### -field OverlayInfo
+### -field OverlayInfo [in]
 
-[in] A pointer to the <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_overlayinfo">D3DDDI_OVERLAYINFO</a> structure that describes the modification for the overlay.
+A pointer to the <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_overlayinfo">D3DDDI_OVERLAYINFO</a> structure that describes the modification for the overlay.
 
 ## -see-also
 
@@ -67,3 +67,4 @@ The D3DDDIARG_UPDATEOVERLAY structure describes an overlay to modify.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_updateoverlay">UpdateOverlay</a>
+

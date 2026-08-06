@@ -4,7 +4,6 @@ title: RxCeAllocateIrpWithMDL function (rxce.h)
 description: RxCeAllocateIrpWithMDL allocates an IRP and associates it with an existing memory descriptor list.
 old-location: ifsk\rxceallocateirpwithmdl.htm
 tech.root: ifsk
-ms.assetid: ffc6332b-7daa-4b23-8cf4-6077f7d1d40a
 ms.date: 04/16/2018
 keywords: ["RxCeAllocateIrpWithMDL function"]
 ms.keywords: RxCeAllocateIrpWithMDL, RxCeAllocateIrpWithMDL function [Installable File System Drivers], ifsk.rxceallocateirpwithmdl, rxce/RxCeAllocateIrpWithMDL, rxref_8cb4dfd0-5789-4359-ad9f-bd1a9d460eb3.xml
@@ -50,19 +49,19 @@ api_name:
 
 ## -parameters
 
-### -param StackSize 
+### -param StackSize [in]
 
-[in]
+
 The stack size to allocate for the IRP.
 
-### -param ChargeQuota 
+### -param ChargeQuota [in]
 
-[in]
+
 This parameter should be set to <b>FALSE</b> by intermediate drivers. This can be set to <b>TRUE</b> only by highest-level drivers that are called in the context of the thread that originates the I/O request for which the driver is allocating another IRP.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to the buffer that contains the memory descriptor list to be associated with this IRP.
 
 ## -returns

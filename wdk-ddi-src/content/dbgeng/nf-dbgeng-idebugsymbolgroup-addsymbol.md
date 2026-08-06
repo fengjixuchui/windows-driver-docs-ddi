@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbolGroup.AddSymbol
 title: IDebugSymbolGroup::AddSymbol (dbgeng.h)
-description: The AddSymbol method adds a symbol to a symbol group.
+description: The AddSymbol method adds a symbol to a symbol group. This method belongs to the IDebugSymbolGroup interface.
 old-location: debugger\addsymbol.htm
 tech.root: debugger
-ms.assetid: b77de459-b5ac-4752-89eb-f24fdde36134
 ms.date: 05/03/2018
 keywords: ["IDebugSymbolGroup::AddSymbol"]
 ms.keywords: AddSymbol, AddSymbol method [Windows Debugging], AddSymbol method [Windows Debugging],IDebugSymbolGroup interface, AddSymbol method [Windows Debugging],IDebugSymbolGroup2 interface, ComOther_936851e7-6a8b-4b42-b339-9c8aa096d684.xml, IDebugSymbolGroup interface [Windows Debugging],AddSymbol method, IDebugSymbolGroup.AddSymbol, IDebugSymbolGroup2 interface [Windows Debugging],AddSymbol method, IDebugSymbolGroup2::AddSymbol, IDebugSymbolGroup::AddSymbol, dbgeng/IDebugSymbolGroup2::AddSymbol, dbgeng/IDebugSymbolGroup::AddSymbol, debugger.addsymbol
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSymbolGroup.AddSymbol
- - IDebugSymbolGroup2.AddSymbol
+ - IDebugSymbolGroup::AddSymbol
 ---
 
 # IDebugSymbolGroup::AddSymbol
@@ -51,14 +49,14 @@ The <b>AddSymbol</b>  method adds a symbol to a <a href="/windows-hardware/drive
 
 ## -parameters
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 The symbol's name.  <i>Name</i> is examined as an expression to determine the symbol's <a href="/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-get_type">type</a>.  This expression can include pointer, array, and structure dereferencing (for example, <b>*my_pointer</b>, <b>my_array[1]</b>, or <b>my_struct.some_field</b>).
 
-### -param Index 
+### -param Index [in, out]
 
-[in, out]
+
 The index of the entry in the symbol group.  When you are calling <b>AddSymbol</b> or <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbolgroup2-addsymbolwide">AddSymbolWide</a>, <i>Index</i> should point to the index of the symbol that you want. Or, if <i>Index</i> points to DEBUG_ANY_ID, the symbol is appended to the end of the list.   
 
 When this method returns, <i>Index</i> points to the actual index of the symbol.  The index of a symbol is an identification number. The index ranges from zero through the number of symbols in the symbol group minus one.
@@ -113,3 +111,4 @@ For more information about symbol groups, see <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbolgroup2-removesymbolbyname">RemoveSymbolByName</a>
+

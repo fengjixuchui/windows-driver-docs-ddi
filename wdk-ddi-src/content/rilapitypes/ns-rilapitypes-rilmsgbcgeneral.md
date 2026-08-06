@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILMSGBCGENERAL
 title: RILMSGBCGENERAL (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILMSGBCGENERAL structure for internal use only."
 old-location: netvista\rilmsgbcgeneral.htm
 tech.root: netvista
-ms.assetid: d1570dc0-1587-4d02-a655-724c999d10a2
 ms.date: 05/02/2018
 keywords: ["RILMSGBCGENERAL structure"]
 ms.keywords: "*LPRILMSGBCGENERAL, RILMSGBCGENERAL, RILMSGBCGENERAL structure [Network Drivers Starting with Windows Vista], netvista.rilmsgbcgeneral, ntddrilapitypes/RILMSGBCGENERAL"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILMSGBCGENERAL
+ - LPRILMSGBCGENERAL
 ---
 
 # RILMSGBCGENERAL structure (rilapitypes.h)

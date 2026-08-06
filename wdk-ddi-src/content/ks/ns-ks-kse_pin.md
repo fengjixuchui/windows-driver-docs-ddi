@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_27
+UID: NS:ks.KSE_PIN
 title: KSE_PIN (ks.h)
-description: 
+description: "Learn more about: KSE_PIN structure"
 old-location: stream\kse_pin.htm
 tech.root: stream
-ms.assetid: 6936F732-ECAA-4CA7-B2AF-CA22A5C93FC9
 ms.date: 04/23/2018
 keywords: ["KSE_PIN structure"]
 ms.keywords: "*PKSE_PIN, KSE_PIN, KSE_PIN structure [Streaming Media Devices], PKSE_PIN, PKSE_PIN structure pointer [Streaming Media Devices], ks/KSE_PIN, ks/PKSE_PIN, stream.kse_pin"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Ks.h
 api_name:
+ - PKSE_PIN
  - KSE_PIN
 ---
 

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugDataSpaces2.GetVirtualTranslationPhysicalOffsets
 title: IDebugDataSpaces2::GetVirtualTranslationPhysicalOffsets (dbgeng.h)
-description: The GetVirtualTranslationPhysicalOffsets method returns the physical addresses of the system paging structures at different levels of the paging hierarchy.
+description: This method returns the physical addresses of the system paging structures at different levels of the paging hierarchy.
 old-location: debugger\getvirtualtranslationphysicaloffsets.htm
 tech.root: debugger
-ms.assetid: 40438ee7-2e58-4048-8739-75f21179c22c
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces2::GetVirtualTranslationPhysicalOffsets"]
 ms.keywords: GetVirtualTranslationPhysicalOffsets, GetVirtualTranslationPhysicalOffsets method [Windows Debugging], GetVirtualTranslationPhysicalOffsets method [Windows Debugging],IDebugDataSpaces2 interface, GetVirtualTranslationPhysicalOffsets method [Windows Debugging],IDebugDataSpaces3 interface, GetVirtualTranslationPhysicalOffsets method [Windows Debugging],IDebugDataSpaces4 interface, IDebugDataSpaces2 interface [Windows Debugging],GetVirtualTranslationPhysicalOffsets method, IDebugDataSpaces2.GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces2::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces3 interface [Windows Debugging],GetVirtualTranslationPhysicalOffsets method, IDebugDataSpaces3::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces4 interface [Windows Debugging],GetVirtualTranslationPhysicalOffsets method, IDebugDataSpaces4::GetVirtualTranslationPhysicalOffsets, IDebugDataSpaces_661959c5-a514-4651-8eaa-fd4c4fb94bd7.xml, dbgeng/IDebugDataSpaces2::GetVirtualTranslationPhysicalOffsets, dbgeng/IDebugDataSpaces3::GetVirtualTranslationPhysicalOffsets, dbgeng/IDebugDataSpaces4::GetVirtualTranslationPhysicalOffsets, debugger.getvirtualtranslationphysicaloffsets
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugDataSpaces2.GetVirtualTranslationPhysicalOffsets
- - IDebugDataSpaces3.GetVirtualTranslationPhysicalOffsets
- - IDebugDataSpaces4.GetVirtualTranslationPhysicalOffsets
+ - IDebugDataSpaces2::GetVirtualTranslationPhysicalOffsets
 ---
 
 # IDebugDataSpaces2::GetVirtualTranslationPhysicalOffsets
@@ -52,24 +49,24 @@ The <b>GetVirtualTranslationPhysicalOffsets</b> method returns the physical addr
 
 ## -parameters
 
-### -param Virtual 
+### -param Virtual [in]
 
-[in]
+
 Specifies the location in the target's virtual address space to translate.
 
-### -param Offsets 
+### -param Offsets [out, optional]
 
-[out, optional]
+
 Receives the physical addresses for the system paging structures.  If it is set to <b>NULL</b>, this information is not returned.
 
-### -param OffsetsSize 
+### -param OffsetsSize [in]
 
-[in]
+
 Specifies the number of elements the array <i>Offsets</i> holds.  This is the maximum number of addresses that will be returned.
 
-### -param Levels 
+### -param Levels [out, optional]
 
-[out, optional]
+
 Receives the number of levels in the paging hierarchy for the specified address.  If this is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -114,3 +111,4 @@ Translating a virtual address to a physical address requires Windows  to walk do
 The address at the last level of the hierarchy is the physical address corresponding to the specified virtual address.  This is what <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugdataspaces4-virtualtophysical">VirtualToPhysical</a> would return.
 
 For details on how virtual addresses are translated into physical addresses, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich.
+

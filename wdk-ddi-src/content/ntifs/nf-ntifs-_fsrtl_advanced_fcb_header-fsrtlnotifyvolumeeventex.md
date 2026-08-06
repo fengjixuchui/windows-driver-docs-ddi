@@ -4,14 +4,13 @@ title: FsRtlNotifyVolumeEventEx function (ntifs.h)
 description: The FsRtlNotifyVolumeEventEx routine notifies any registered applications that a volume event is occurring. Volume events include the volume being locked, unlocked, mounted, or made read-only.
 old-location: ifsk\fsrtlnotifyvolumeeventex.htm
 tech.root: ifsk
-ms.assetid: 0792e139-0217-4882-b2df-e69452118fc9
 ms.date: 04/16/2018
 keywords: ["FsRtlNotifyVolumeEventEx function"]
 ms.keywords: FsRtlNotifyVolumeEventEx, FsRtlNotifyVolumeEventEx routine [Installable File System Drivers], fsrtlref_421ebbf6-0678-4b66-a7c3-00f5914ea05c.xml, ifsk.fsrtlnotifyvolumeeventex, ntifs/FsRtlNotifyVolumeEventEx
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later version of the Windows operating system.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 ms.custom: RS5
@@ -53,19 +52,19 @@ The <b>FsRtlNotifyVolumeEventEx</b> routine notifies any registered applications
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">FILE_OBJECT</a> that specifies a volume.
 
-### -param EventCode 
+### -param EventCode [in]
 
-[in]
+
 An event code for the event that is occurring. For a table of event codes, see <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyvolumeevent">FsRtlNotifyVolumeEvent</a>.
 
-### -param Event 
+### -param Event [in]
 
-[in]
+
 A pointer to the initialized custom notification structure (<a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_target_device_custom_notification">TARGET_DEVICE_CUSTOM_NOTIFICATION</a>) to use.
 
 ## -returns

@@ -4,7 +4,6 @@ title: _HUB_INFO_FROM_PARENT (ucxroothub.h)
 description: Describes information about a hub from its parent device.
 old-location: buses\_hub_info_from_parent.htm
 tech.root: usbref
-ms.assetid: 6259CC70-A54B-4A44-B38B-D24C296C8EA0
 ms.date: 05/07/2018
 keywords: ["HUB_INFO_FROM_PARENT structure"]
 ms.keywords: "*PHUB_INFO_FROM_PARENT, HUB_INFO_FROM_PARENT, HUB_INFO_FROM_PARENT structure [Buses], P_HUB_INFO_FROM_PARENT, P_HUB_INFO_FROM_PARENT structure pointer [Buses], _HUB_INFO_FROM_PARENT, buses._hub_info_from_parent, ucxroothub/P_HUB_INFO_FROM_PARENT, ucxroothub/_HUB_INFO_FROM_PARENT"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ucxroothub.h
 api_name:
+ - _HUB_INFO_FROM_PARENT
+ - PHUB_INFO_FROM_PARENT
  - HUB_INFO_FROM_PARENT
 ---
 
@@ -110,8 +111,9 @@ A bitwise-OR of <a href="/windows-hardware/drivers/ddi/ucxroothub/ns-ucxroothub-
 
 ### -field SublinkSpeedAttr
 
-A pointer to a <b>USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_SPEED</b> structure that describes the USB 3.1capability's sublink speed attributes. For structure declaration, see Usbspec.h
+A pointer to a <b>USB_DEVICE_CAPABILITY_SUPERSPEEDPLUS_SPEED</b> structure that describes the USB 3.1 capability's sublink speed attributes. For structure declaration, see Usbspec.h
 
 ### -field SublinkSpeedAttrCount
 
 The count of sublink speed attributes.
+

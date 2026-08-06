@@ -4,7 +4,6 @@ title: IDebugSymbols3::GetSymbolEntryOffsetRegions (dbgeng.h)
 description: Returns all the memory regions known to be associated with a symbol.
 old-location: debugger\idebugsymbols3_getsymbolentryoffsetregions.htm
 tech.root: debugger
-ms.assetid: 986774F6-5256-4703-990A-EAB4AB09AF55
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::GetSymbolEntryOffsetRegions"]
 ms.keywords: GetSymbolEntryOffsetRegions, GetSymbolEntryOffsetRegions method [Windows Debugging], GetSymbolEntryOffsetRegions method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],GetSymbolEntryOffsetRegions method, IDebugSymbols3.GetSymbolEntryOffsetRegions, IDebugSymbols3::GetSymbolEntryOffsetRegions, dbgeng/IDebugSymbols3::GetSymbolEntryOffsetRegions, debugger.idebugsymbols3_getsymbolentryoffsetregions
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSymbols3.GetSymbolEntryOffsetRegions
+ - IDebugSymbols3::GetSymbolEntryOffsetRegions
 ---
 
 # IDebugSymbols3::GetSymbolEntryOffsetRegions
@@ -51,29 +50,29 @@ Returns all the memory regions known to be associated
 
 ## -parameters
 
-### -param Id 
+### -param Id [in]
 
-[in]
+
 The ID of a module as a pointer to a <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_module_and_id">DEBUG_MODULE_AND_ID</a> structure.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A bit-set that contains options that affect the behavior of this method.
 
-### -param Regions 
+### -param Regions [out]
 
-[out]
+
 The memory regions associated with the symbol.
 
-### -param RegionsCount 
+### -param RegionsCount [in]
 
-[in]
+
 The number of regions associated with the symbol.
 
-### -param RegionsAvail 
+### -param RegionsAvail [out, optional]
 
-[out, optional]
+
 A pointer to the number of regions available to the symbol.
 
 ## -returns
@@ -98,3 +97,4 @@ The quality of information returned is highly
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-getsourceentryoffsetregions">IDebugSymbols3::GetSourceEntryOffsetRegions</a>
+

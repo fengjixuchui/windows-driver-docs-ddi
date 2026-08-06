@@ -4,7 +4,6 @@ title: IOCTL_SERIAL_SET_LINE_CONTROL (ntddser.h)
 description: The IOCTL_SERIAL_SET_LINE_CONTROL request sets the line control register (LCR). The line control register controls the data size, the number of stop bits, and the parity.
 old-location: serports\ioctl_serial_set_line_control.htm
 tech.root: serports
-ms.assetid: 0883b10c-1900-42b1-afc9-1e61effed111
 ms.date: 04/23/2018
 keywords: ["IOCTL_SERIAL_SET_LINE_CONTROL IOCTL"]
 ms.keywords: IOCTL_SERIAL_SET_LINE_CONTROL, IOCTL_SERIAL_SET_LINE_CONTROL control, IOCTL_SERIAL_SET_LINE_CONTROL control code [Serial Ports], ntddser/IOCTL_SERIAL_SET_LINE_CONTROL, serports.ioctl_serial_set_line_control, serref_70796be3-dbb8-4918-899d-d3750813aad3.xml
@@ -51,6 +50,8 @@ The <b>IOCTL_SERIAL_SET_LINE_CONTROL</b> request sets the line control register 
 To obtain the value of the line control register, a client can use an <a href="/windows-hardware/drivers/ddi/ntddser/ni-ntddser-ioctl_serial_get_line_control">IOCTL_SERIAL_GET_LINE_CONTROL</a> request.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

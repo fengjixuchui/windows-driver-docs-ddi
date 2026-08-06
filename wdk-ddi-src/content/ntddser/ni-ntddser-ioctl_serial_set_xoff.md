@@ -4,7 +4,6 @@ title: IOCTL_SERIAL_SET_XOFF (ntddser.h)
 description: The IOCTL_SERIAL_SET_XOFF request emulates the reception of an XOFF (transmit off) character.
 old-location: serports\ioctl_serial_set_xoff.htm
 tech.root: serports
-ms.assetid: cfddecbd-e225-484f-ba5c-6223a724b414
 ms.date: 04/23/2018
 keywords: ["IOCTL_SERIAL_SET_XOFF IOCTL"]
 ms.keywords: IOCTL_SERIAL_SET_XOFF, IOCTL_SERIAL_SET_XOFF control, IOCTL_SERIAL_SET_XOFF control code [Serial Ports], ntddser/IOCTL_SERIAL_SET_XOFF, serports.ioctl_serial_set_xoff, serref_a2b3591a-cd26-4073-a7ab-af7f2b3f43b6.xml
@@ -49,6 +48,8 @@ api_name:
 The <b>IOCTL_SERIAL_SET_XOFF</b> request emulates the reception of an XOFF (transmit off) character. The request stops reception of data. If automatic XON/XOFF flow control is not set, then a client <u>must</u> use a subsequent <a href="/windows-hardware/drivers/ddi/ntddser/ni-ntddser-ioctl_serial_set_xon">IOCTL_SERIAL_SET_XON</a> request to restart reception of data.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

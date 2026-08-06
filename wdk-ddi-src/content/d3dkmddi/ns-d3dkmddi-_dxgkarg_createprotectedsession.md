@@ -1,9 +1,8 @@
 ---
 UID: NS:d3dkmddi._DXGKARG_CREATEPROTECTEDSESSION
 title: _DXGKARG_CREATEPROTECTEDSESSION (d3dkmddi.h)
-description: Used to create a protected session.
+description: The DXGKARG_CREATEPROTECTEDSESSION structure contains data that is used to create a protected session.
 old-location: display\dxgkarg_createprotectedsession.htm
-ms.assetid: 37A9A957-344F-48F6-93DE-D81DE5C20076
 ms.date: 05/10/2018
 keywords: ["DXGKARG_CREATEPROTECTEDSESSION structure"]
 ms.keywords: "*INOUT_PDXGKARG_CREATEPROTECTEDSESSION, DXGKARG_CREATEPROTECTEDSESSION, DXGKARG_CREATEPROTECTEDSESSION structure [Display Devices], _DXGKARG_CREATEPROTECTEDSESSION, d3dkmddi/DXGKARG_CREATEPROTECTEDSESSION, display.dxgkarg_createprotectedsession"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_CREATEPROTECTEDSESSION
  - DXGKARG_CREATEPROTECTEDSESSION
 ---
 

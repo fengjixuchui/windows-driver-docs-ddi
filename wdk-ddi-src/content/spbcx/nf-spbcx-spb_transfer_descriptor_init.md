@@ -4,7 +4,6 @@ title: SPB_TRANSFER_DESCRIPTOR_INIT function (spbcx.h)
 description: The SPB_TRANSFER_DESCRIPTOR_INIT function initializes an SPB_TRANSFER_DESCRIPTOR structure.
 old-location: spb\spb_transfer_descriptor_init.htm
 tech.root: SPB
-ms.assetid: 96A069B5-BD89-4B8E-88D9-57944F4C9DB8
 ms.date: 04/30/2018
 keywords: ["SPB_TRANSFER_DESCRIPTOR_INIT function"]
 ms.keywords: SPB.spb_transfer_descriptor_init, SPB_TRANSFER_DESCRIPTOR_INIT, SPB_TRANSFER_DESCRIPTOR_INIT function [Buses], spbcx/SPB_TRANSFER_DESCRIPTOR_INIT
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any IRQL
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>SPB_TRANSFER_DESCRIPTOR_INIT</b> function initializes an  <a href="/windo
 
 ## -parameters
 
-### -param Descriptor 
+### -param Descriptor [out]
 
-[out]
+
 A pointer to the <b>SPB_TRANSFER_DESCRIPTOR</b> structure that is to be initialized.
 
 ## -remarks

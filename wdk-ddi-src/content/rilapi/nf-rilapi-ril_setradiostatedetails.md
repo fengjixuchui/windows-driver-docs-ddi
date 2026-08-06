@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_SetRadioStateDetails
 title: RIL_SetRadioStateDetails function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_SetRadioStateDetails function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_setradiostatedetails.htm
 tech.root: netvista
-ms.assetid: 5936bbbe-452c-4d68-ad22-e65671351f78
 ms.date: 05/02/2018
 keywords: ["RIL_SetRadioStateDetails function"]
 ms.keywords: RIL_SetRadioStateDetails, RIL_SetRadioStateDetails method [Network Drivers Starting with Windows Vista], netvista.ril_setradiostatedetails, rilapi/RIL_SetRadioStateDetails

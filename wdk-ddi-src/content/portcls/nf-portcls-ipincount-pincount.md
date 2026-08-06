@@ -4,7 +4,6 @@ title: IPinCount::PinCount (portcls.h)
 description: The PinCount method queries the miniport driver for its pin count.
 old-location: audio\ipincount_pincount.htm
 tech.root: audio
-ms.assetid: 8b7a49cc-5061-475b-ac03-cbf43954c413
 ms.date: 05/08/2018
 keywords: ["IPinCount::PinCount"]
 ms.keywords: IPinCount interface [Audio Devices],PinCount method, IPinCount.PinCount, IPinCount::PinCount, PinCount, PinCount method [Audio Devices], PinCount method [Audio Devices],IPinCount interface, audio.ipincount_pincount, audmp-routines_bded3ce8-936c-4391-901f-df6b2061c7c3.xml, portcls/IPinCount::PinCount
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IPinCount.PinCount
+ - IPinCount::PinCount
 ---
 
 # IPinCount::PinCount
@@ -50,34 +49,34 @@ The <code>PinCount</code> method queries the miniport driver for its pin count.
 
 ## -parameters
 
-### -param PinId 
+### -param PinId [in]
 
-[in]
+
 Specifies the pin ID. If a filter contains <i>n</i> pin factories, valid pin IDs range from 0 to <i>n</i>-1.
 
-### -param FilterNecessary 
+### -param FilterNecessary [in, out]
 
-[in, out]
+
 Specifies the minimum number of pins that the pin factory should instantiate before the filter can perform I/O operations.
 
-### -param FilterCurrent 
+### -param FilterCurrent [in, out]
 
-[in, out]
+
 Specifies the current number of pin instances. This number counts the pins that the pin factory has already instantiated on the filter.
 
-### -param FilterPossible 
+### -param FilterPossible [in, out]
 
-[in, out]
+
 Specifies the maximum number of pins that the pin factory can instantiate on the filter. Set to KSINSTANCE_INDETERMINATE if there is no maximum.
 
-### -param GlobalCurrent 
+### -param GlobalCurrent [in, out]
 
-[in, out]
+
 Specifies the current number of pins that the pin factory has instantiated on the driver.
 
-### -param GlobalPossible 
+### -param GlobalPossible [in, out]
 
-[in, out]
+
 Specifies the maximum number of pins that the pin factory can instantiate on the driver. Set to KSINSTANCE_INDETERMINATE if there is no maximum.
 
 ## -remarks
@@ -153,3 +152,4 @@ The <code>PinCount</code> method is called at IRQL PASSIVE_LEVEL. The code for t
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/ns-portcls-pcpin_descriptor">PCPIN_DESCRIPTOR</a>
+

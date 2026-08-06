@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES
 title: _DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES (d3dkmddi.h)
 description: DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES describes the operation used copy page table entries from one location to another.
 old-location: display\dxgk_buildpagingbuffer_copypagetableentries.htm
-ms.assetid: 627FB3E6-3C5D-4104-B129-08D3EC0B963E
 ms.date: 05/10/2018
 keywords: ["DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES structure"]
 ms.keywords: DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES, DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES structure [Display Devices], _DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES, d3dkmddi/DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES, display.dxgk_buildpagingbuffer_copypagetableentries
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES
  - DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES
 ---
 
@@ -67,3 +67,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_buildpagingbuffer_copy_range">DXGK_BUILDPAGINGBUFFER_COPY_RANGE</a>
+

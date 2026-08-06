@@ -4,7 +4,6 @@ title: W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER (ndischimney.h)
 description: NDIS calls the MiniportTcpOffloadReceiveReturn function to return ownership of NET_BUFFER_LIST and associated structures to an offload target.
 old-location: netvista\miniporttcpoffloadreceivereturn.htm
 tech.root: netvista
-ms.assetid: b746f58d-d029-4fcd-a59d-baba037fc38e
 ms.date: 05/02/2018
 keywords: ["W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER callback function"]
 ms.keywords: MiniportTcpOffloadReceiveReturn, MiniportTcpOffloadReceiveReturn callback function [Network Drivers Starting with Windows Vista], W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER, W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER callback, ndischimney/MiniportTcpOffloadReceiveReturn, netvista.miniporttcpoffloadreceivereturn, tcp_chim_miniport_func_c6477511-6f31-4a37-9b28-d157e1fa09af.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndischimney.h
 api_name:
- - MiniportTcpOffloadReceiveReturn
+ - W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER
 ---
 
 # W_TCP_OFFLOAD_RECEIVE_RETURN_HANDLER callback function
@@ -50,14 +49,14 @@ api_name:
 
 NDIS calls the 
   <i>MiniportTcpOffloadReceiveReturn</i> function to return ownership of 
-  <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> and associated structures to
+  <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> and associated structures to
   an offload target.
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 The handle to an offload-target allocated context area in which the offload target maintains state
      information about this instance of the adapter. The miniport driver provided this handle to NDIS when it
      called 
@@ -66,11 +65,11 @@ The handle to an offload-target allocated context area in which the offload targ
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">
      MiniportInitializeEx</a> function.
 
-### -param NetBufferList 
+### -param NetBufferList [in]
 
-[in]
+
 A pointer to a 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure. This structure
+     <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure. This structure
      can be a stand-alone structure or the first structure in a linked list of NET_BUFFER_LIST structures.
      The linked list can contain NET_BUFFER_LIST structures from one or more calls to the 
      <a href="/windows-hardware/drivers/ddi/ndischimney/nc-ndischimney-ndis_tcp_offload_receive_indicate">
@@ -107,11 +106,11 @@ Note that the offload target driver should not unload and the offload target ada
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a>
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 
@@ -124,3 +123,4 @@ Note that the offload target driver should not unload and the offload target ada
 
 
 <a href="/windows-hardware/drivers/ddi/ndischimney/nc-ndischimney-ndis_tcp_offload_receive_indicate">NdisTcpOffloadReceiveHandler</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_INIT_ADAPTER
 title: DOT11EXTIHV_INIT_ADAPTER (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_INIT_ADAPTER callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvinitadapter.htm
 tech.root: netvista
-ms.assetid: 96dc1718-ee35-440a-94e8-eba4a41c9559
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_INIT_ADAPTER callback"]
 ms.keywords: DOT11EXTIHV_INIT_ADAPTER, Dot11ExtIhvInitAdapter, Dot11ExtIhvInitAdapter callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_c2fbb863-6b05-4444-90f1-37f375db9b9e.xml, netvista.dot11extihvinitadapter, wlanihv/Dot11ExtIhvInitAdapter
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_INIT_ADAPTER
  - wlanihv/DOT11EXTIHV_INIT_ADAPTER
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtIhvInitAdapter
+ - DOT11EXTIHV_INIT_ADAPTER
 ---
 
 # DOT11EXTIHV_INIT_ADAPTER callback
@@ -53,25 +51,25 @@ api_name:
 
 ## -parameters
 
-### -param pDot11Adapter 
+### -param pDot11Adapter [in]
 
-[in]
+
 A pointer to a
      <a href="..\wlclient\ns-wlclient-_dot11_adapter.md">DOT11_ADAPTER</a> structure, which identifies the
      adapter to be initialized.
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 A handle assigned by the operating system for the adapter. The IHV Extensions DLL must use this
      handle value when calling any IHV Extensibility function that declares an
      <i>hDot11SvcHandle</i> parameter, such as
      <a href="..\wlanihv\nc-wlanihv-dot11ext_pre_associate_completion.md">
      Dot11ExtPreAssociateCompletion</a>.
 
-### -param phIhvExtAdapter 
+### -param phIhvExtAdapter [out]
 
-[out]
+
 A pointer to a handle variable. The IHV Extensions DLL must assign a unique handle value for the
      adapter and set *
      <i>phIhvExtAdapter</i> to the handle value. The operating system uses this handle value when it calls any
@@ -130,3 +128,4 @@ For more information about WLAN adapter initialization, see
 
 
 <a href="..\wlclient\ns-wlclient-_dot11_adapter.md">DOT11_ADAPTER</a>
+

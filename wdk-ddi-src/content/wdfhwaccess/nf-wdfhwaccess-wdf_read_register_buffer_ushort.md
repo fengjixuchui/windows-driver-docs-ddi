@@ -4,7 +4,6 @@ title: WDF_READ_REGISTER_BUFFER_USHORT function (wdfhwaccess.h)
 description: The WDF_READ_REGISTER_BUFFER_USHORT function reads a number of USHORT values from the specified register address into a buffer.
 old-location: wdf\wdf_read_register_buffer_ushort.htm
 tech.root: wdf
-ms.assetid: BA47B3D0-9515-40C6-B23D-A2D9FC993FB3
 ms.date: 02/26/2018
 keywords: ["WDF_READ_REGISTER_BUFFER_USHORT function"]
 ms.keywords: WDF_READ_REGISTER_BUFFER_USHORT, WDF_READ_REGISTER_BUFFER_USHORT function, wdf.wdf_read_register_buffer_ushort, wdfhwaccess/WDF_READ_REGISTER_BUFFER_USHORT
@@ -52,23 +51,23 @@ The <b>WDF_READ_REGISTER_BUFFER_USHORT</b> function reads a number of USHORT val
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the register, which must be a mapped range in memory space.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 A pointer to a buffer into which an array of USHORT values is read.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of USHORT values to be read into the buffer.
 

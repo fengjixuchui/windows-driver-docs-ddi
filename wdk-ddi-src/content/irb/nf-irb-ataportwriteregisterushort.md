@@ -4,7 +4,6 @@ title: AtaPortWriteRegisterUshort function (irb.h)
 description: The AtaPortWriteRegisterUshort routine transfers a USHORT value to the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\ataportwriteregisterushort.htm
 tech.root: storage
-ms.assetid: 26acd4ce-b5e8-405a-bc9f-b08627f4830f
 ms.date: 03/29/2018
 keywords: ["AtaPortWriteRegisterUshort function"]
 ms.keywords: AtaPortWriteRegisterUshort, AtaPortWriteRegisterUshort routine [Storage Devices], atartns_09e1e2b6-ad88-4af7-9623-f9e441e491cb.xml, irb/AtaPortWriteRegisterUshort, storage.ataportwriteregisterushort
@@ -54,14 +53,14 @@ The <b>AtaPortWriteRegisterUshort</b> routine transfers a USHORT value to the HB
 
 ## -parameters
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the destination register. The address value that is assigned to this parameter must be within the range of mapped I/O space addresses that are obtained by a call to <a href="/windows-hardware/drivers/ddi/irb/nf-irb-ataportgetdevicebase">AtaPortGetDeviceBase</a>.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies the value to write to the register for the HBA.
 
 ## -see-also

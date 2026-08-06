@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_CREATE_META_COMMAND_0052
 title: PFND3D12DDI_CREATE_META_COMMAND_0052 (d3d12umddi.h)
-description: Creates a meta-command.
-ms.assetid: 9fafcd8c-e783-4d28-af99-b784cb687430
-ms.date: 10/19/2018
+description: Learn more about the PFND3D12DDI_CREATE_META_COMMAND_0052 callback function.
+ms.date: 12/15/2023
 keywords: ["PFND3D12DDI_CREATE_META_COMMAND_0052 callback function"]
 req.header: d3d12umddi.h
 req.include-header: 
@@ -36,14 +35,11 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CREATE_META_COMMAND_0052
-product:
- - Windows
 dev_langs:
  - c++
 ---
 
 # PFND3D12DDI_CREATE_META_COMMAND_0052 callback function
-
 
 ## -description
 
@@ -51,7 +47,7 @@ Creates a meta-command.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
@@ -71,11 +67,11 @@ The creation parameters.
 
 The size of the creation parameters.
 
-### -param Arg6
+### -param unnamedParam6
 
 Handle to a meta-command.
 
-### -param Arg7
+### -param unnamedParam7
 
 A meta-command.
 
@@ -112,3 +108,8 @@ The runtime will validate the meta-command guid via an approved list. This check
 
 ## -see-also
 
+[**PFND3D12DDI_DESTROY_META_COMMAND_0052**](nc-d3d12umddi-pfnd3d12ddi_destroy_meta_command_0052.md)
+
+[**PFND3D12DDI_EXECUTE_META_COMMAND_0052**](nc-d3d12umddi-pfnd3d12ddi_execute_meta_command_0052.md)
+
+[**PFND3D12DDI_INITIALIZE_META_COMMAND_0052**](nc-d3d12umddi-pfnd3d12ddi_initialize_meta_command_0052.md)

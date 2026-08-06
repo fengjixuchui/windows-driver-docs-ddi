@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostType.GetMemberType
 title: IDebugHostType::GetMemberType (dbgmodel.h)
-description: For types which are pointer-to-member (as indicated by a type kind of TypeMemberPointer), the GetMemberType method returns the class the pointer is a pointer-to-member of.
-ms.assetid: baa26552-7b8d-444f-984a-51e9af4c4336
+description: "The IDebugHostType::GetMemberType method, when called on a type for a pointer to a module member, gets the class of the module member."
 ms.date: 08/22/2018
 keywords: ["IDebugHostType::GetMemberType"]
 ms.keywords: IDebugHostType::GetMemberType, GetMemberType, IDebugHostType.GetMemberType, IDebugHostType::GetMemberType, IDebugHostType.GetMemberType
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostType.GetMemberType
+ - IDebugHostType::GetMemberType
 ---
 
 # IDebugHostType::GetMemberType

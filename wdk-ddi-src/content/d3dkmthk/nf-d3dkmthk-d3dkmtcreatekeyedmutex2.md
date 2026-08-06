@@ -1,9 +1,8 @@
 ---
 UID: NF:d3dkmthk.D3DKMTCreateKeyedMutex2
 title: D3DKMTCreateKeyedMutex2 function (d3dkmthk.h)
-description: Creates a keyed mutex object that includes private data.
+description: The D3DKMTCreateKeyedMutex2 function creates a keyed mutex object that includes private data. The function returns STATUS_SUCCESS on successful creation.
 old-location: display\d3dkmtcreatekeyedmutex2.htm
-ms.assetid: fedd7aa0-366c-4083-b6d2-692332813b3f
 ms.date: 05/10/2018
 keywords: ["D3DKMTCreateKeyedMutex2 function"]
 ms.keywords: D3DKMTCreateKeyedMutex2, D3DKMTCreateKeyedMutex2 callback function [Display Devices], PFND3DKMT_CREATEKEYEDMUTEX2, PFND3DKMT_CREATEKEYEDMUTEX2 callback, d3dkmthk/D3DKMTCreateKeyedMutex2, display.d3dkmtcreatekeyedmutex2
@@ -50,7 +49,7 @@ Creates a keyed mutex object that includes private data.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in, out]
 

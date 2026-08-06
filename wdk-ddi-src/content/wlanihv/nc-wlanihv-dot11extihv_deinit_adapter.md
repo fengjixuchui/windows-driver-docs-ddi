@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_DEINIT_ADAPTER
 title: DOT11EXTIHV_DEINIT_ADAPTER (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_DEINIT_ADAPTER callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvdeinitadapter.htm
 tech.root: netvista
-ms.assetid: bf2e7ed3-cefc-47f3-a21b-aea3f0e569fe
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_DEINIT_ADAPTER callback"]
 ms.keywords: DOT11EXTIHV_DEINIT_ADAPTER, Dot11ExtIhvDeinitAdapter, Dot11ExtIhvDeinitAdapter callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_5816e619-b6ca-4515-8bf6-99d053c108b0.xml, netvista.dot11extihvdeinitadapter, wlanihv/Dot11ExtIhvDeinitAdapter
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_DEINIT_ADAPTER
  - wlanihv/DOT11EXTIHV_DEINIT_ADAPTER
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtIhvDeinitAdapter
+ - DOT11EXTIHV_DEINIT_ADAPTER
 ---
 
 # DOT11EXTIHV_DEINIT_ADAPTER callback
@@ -53,9 +51,9 @@ api_name:
 
 ## -parameters
 
-### -param hIhvExtAdapter 
+### -param hIhvExtAdapter [in, optional]
 
-[in, optional]
+
 The handle used by the IHV Extensions DLL to reference the WLAN adapter. This handle value was
      specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
@@ -100,3 +98,4 @@ For more information about operations that are performed when the WLAN adapter i
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_GetDialedIdSettings
 title: RIL_GetDialedIdSettings function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_GetDialedIdSettings function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_getdialedidsettings.htm
 tech.root: netvista
-ms.assetid: 088fd502-a209-4fec-bec0-9f47f61022ee
 ms.date: 05/02/2018
 keywords: ["RIL_GetDialedIdSettings function"]
 ms.keywords: RIL_GetDialedIdSettings, RIL_GetDialedIdSettings method [Network Drivers Starting with Windows Vista], netvista.ril_getdialedidsettings, rilapi/RIL_GetDialedIdSettings

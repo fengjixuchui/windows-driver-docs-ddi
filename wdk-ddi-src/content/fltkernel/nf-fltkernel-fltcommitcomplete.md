@@ -4,7 +4,6 @@ title: FltCommitComplete function (fltkernel.h)
 description: The FltCommitComplete routine acknowledges a TRANSACTION_NOTIFY_COMMIT notification.
 old-location: ifsk\fltcommitcomplete.htm
 tech.root: ifsk
-ms.assetid: 26c553d1-5a71-4e96-a5ef-56e8e364faca
 ms.date: 04/16/2018
 keywords: ["FltCommitComplete function"]
 ms.keywords: FltApiRef_a_to_d_fc4b72a5-52df-47f9-b119-68ccb02b14bc.xml, FltCommitComplete, FltCommitComplete routine [Installable File System Drivers], fltkernel/FltCommitComplete, ifsk.fltcommitcomplete
@@ -51,19 +50,19 @@ The <b>FltCommitComplete</b> routine acknowledges a TRANSACTION_NOTIFY_COMMIT no
 
 ## -parameters
 
-### -param Instance 
+### -param Instance [in]
 
-[in]
+
 Opaque instance pointer for the caller.
 
-### -param Transaction 
+### -param Transaction [in]
 
-[in]
+
 Opaque transaction pointer for the transaction.
 
-### -param TransactionContext 
+### -param TransactionContext [in, optional]
 
-[in, optional]
+
 Pointer to the minifilter driver's context for the transaction. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

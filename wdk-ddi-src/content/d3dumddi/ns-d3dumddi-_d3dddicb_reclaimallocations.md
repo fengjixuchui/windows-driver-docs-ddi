@@ -4,7 +4,6 @@ title: _D3DDDICB_RECLAIMALLOCATIONS (d3dumddi.h)
 description: Describes video memory resources that are to be reclaimed and that the user-mode display driver previously offered for reuse. Used with the pfnReclaimAllocationsCb function.
 old-location: display\d3dddicb_reclaimallocations.htm
 tech.root: display
-ms.assetid: 61c8fdbf-b003-4caa-af13-ba6f1e22400c
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_RECLAIMALLOCATIONS structure"]
 ms.keywords: D3DDDICB_RECLAIMALLOCATIONS, D3DDDICB_RECLAIMALLOCATIONS structure [Display Devices], _D3DDDICB_RECLAIMALLOCATIONS, d3dumddi/D3DDDICB_RECLAIMALLOCATIONS, display.d3dddicb_reclaimallocations
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dumddi.h
 api_name:
+ - _D3DDDICB_RECLAIMALLOCATIONS
  - D3DDDICB_RECLAIMALLOCATIONS
 ---
 
@@ -52,34 +52,34 @@ Describes video memory resources that are to be reclaimed and that the user-mode
 
 ## -struct-fields
 
-### -field pResources
+### -field pResources [in]
 
-[in] A pointer to an array of handles to the resources that are to be reclaimed.
+A pointer to an array of handles to the resources that are to be reclaimed.
 
 If <b>pResources</b> is not <b>NULL</b>, the <b>HandleList</b> member must be <b>NULL</b>.
 
 <div class="alert"><b>Note</b>  If resources were created with the <b>D3D10_DDI_BIND_PRESENT</b> flag value set in <i>pCreateResource</i>-><b>BindFlags</b>, the driver must not use the <b>pResources</b> member to reclaim by resource handles. Instead, the driver must reclaim the resources by using allocation handles specified by <b>HandleList</b>.</div>
 <div> </div>
 
-### -field HandleList
+### -field HandleList [in]
 
-[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the allocations that are to be reclaimed.
+An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the allocations that are to be reclaimed.
 
 If <b>HandleList</b> is not <b>NULL</b>, the <b>pResources</b> member must be <b>NULL</b>.
 
-### -field pDiscarded
+### -field pDiscarded [out]
 
-[out] An  array of Boolean values that specify whether each resource or allocation was discarded.
+An  array of Boolean values that specify whether each resource or allocation was discarded.
 
 Each Boolean value in this array corresponds to a resource at the same index location in the arrays pointed to by <b>pResources</b> or   <b>HandleList.</b>
 
-The DirectX graphics kernel subsystem sets each Boolean value to <b>TRUE</b> if the correponding resource was discarded, or to <b>FALSE</b> if not.
+The DirectX graphics kernel subsystem sets each Boolean value to <b>TRUE</b> if the corresponding resource was discarded, or to <b>FALSE</b> if not.
 
 The value of <b>pDiscarded</b> can be <b>NULL</b>. If the driver sets it to <b>NULL</b>, the content of the resource or allocation can be assumed to be lost. If the driver does not need the content of the resource or allocation, setting <b>pDiscarded</b> to <b>NULL</b> might improve performance.
 
-### -field NumAllocations
+### -field NumAllocations [in]
 
-[in] The number of items in the <b>pResources</b>, <b>HandleList</b>, or  <b>pDiscarded</b> members, whichever is not <b>NULL</b>.
+The number of items in the <b>pResources</b>, <b>HandleList</b>, or  <b>pDiscarded</b> members, whichever is not <b>NULL</b>.
 
 ## -see-also
 
@@ -92,3 +92,4 @@ The value of <b>pDiscarded</b> can be <b>NULL</b>. If the driver sets it to <b>N
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_reclaimallocationscb">pfnReclaimAllocationsCb</a>
+

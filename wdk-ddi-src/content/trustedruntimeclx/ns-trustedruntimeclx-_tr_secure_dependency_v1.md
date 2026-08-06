@@ -1,9 +1,8 @@
 ---
 UID: NS:trustedruntimeclx._TR_SECURE_DEPENDENCY_V1
 title: _TR_SECURE_DEPENDENCY_V1 (trustedruntimeclx.h)
-description: 
-ms.assetid: 9459802b-4a38-43d3-a4b3-3d3dcb0627c7
-ms.date: 10/19/2018
+description: "Learn more about: _TR_SECURE_DEPENDENCY_V1 structure"
+ms.date: 11/20/2020
 keywords: ["TR_SECURE_DEPENDENCY_V1 structure"]
 ms.keywords: _TR_SECURE_DEPENDENCY_V1, TR_SECURE_DEPENDENCY_V1, *PTR_SECURE_DEPENDENCY_V1, *PTR_SECURE_DEPENDENCY, TR_SECURE_DEPENDENCY
 req.header: trustedruntimeclx.h
@@ -21,6 +20,7 @@ req.max-support:
 req.typenames: TR_SECURE_DEPENDENCY_V1, *PTR_SECURE_DEPENDENCY_V1
 targetos: Windows
 ms.custom: RS5
+tech.root: treedrv
 f1_keywords:
  - _TR_SECURE_DEPENDENCY_V1
  - trustedruntimeclx/_TR_SECURE_DEPENDENCY_V1
@@ -36,6 +36,8 @@ api_location:
  - trustedruntimeclx.h
 api_name:
  - _TR_SECURE_DEPENDENCY_V1
+ - PTR_SECURE_DEPENDENCY_V1
+ - TR_SECURE_DEPENDENCY_V1
 ---
 
 # _TR_SECURE_DEPENDENCY_V1 structure

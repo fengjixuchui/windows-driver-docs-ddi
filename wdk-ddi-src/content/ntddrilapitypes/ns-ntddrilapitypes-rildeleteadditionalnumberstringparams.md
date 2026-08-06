@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILDELETEADDITIONALNUMBERSTRINGPARAMS
 title: RILDELETEADDITIONALNUMBERSTRINGPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILDELETEADDITIONALNUMBERSTRINGPARAMS structure in your code."
 old-location: netvista\rildeleteadditionalnumberstringparams.htm
 tech.root: netvista
-ms.assetid: 89ae70b9-56d9-4169-8bbd-0eb2d916a928
 ms.date: 05/02/2018
 keywords: ["RILDELETEADDITIONALNUMBERSTRINGPARAMS structure"]
 ms.keywords: "*LPRILDELETEADDITIONALNUMBERSTRINGPARAMS, RILDELETEADDITIONALNUMBERSTRINGPARAMS, RILDELETEADDITIONALNUMBERSTRINGPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rildeleteadditionalnumberstringparams, ntddrilapitypes/RILDELETEADDITIONALNUMBERSTRINGPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILDELETEADDITIONALNUMBERSTRINGPARAMS
+ - LPRILDELETEADDITIONALNUMBERSTRINGPARAMS
 ---
 
 # RILDELETEADDITIONALNUMBERSTRINGPARAMS structure (ntddrilapitypes.h)

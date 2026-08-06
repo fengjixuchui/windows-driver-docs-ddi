@@ -4,7 +4,6 @@ title: _VIDEO_X86_BIOS_ARGUMENTS (video.h)
 description: The VIDEO_x86_BIOS_ARGUMENTS structure is used to support full-screen MS-DOS application INT10 calls. It contains seven of the high-end x86 microprocessor registers.
 old-location: display\video_x86_bios_arguments.htm
 tech.root: display
-ms.assetid: c0404803-d8a5-4698-a725-12c659cbcaab
 ms.date: 05/10/2018
 keywords: ["VIDEO_X86_BIOS_ARGUMENTS structure"]
 ms.keywords: "*PVIDEO_X86_BIOS_ARGUMENTS, PVIDEO_X86_BIOS_ARGUMENTS, PVIDEO_X86_BIOS_ARGUMENTS structure pointer [Display Devices], VIDEO_X86_BIOS_ARGUMENTS, VIDEO_X86_BIOS_ARGUMENTS structure [Display Devices], VIDEO_x86_BIOS_ARGUMENTS, VIDEO_x86_BIOS_ARGUMENTS structure [Display Devices], Video_Structs_6e82199c-1448-483c-ab53-73590564b165.xml, _VIDEO_X86_BIOS_ARGUMENTS, display.video_x86_bios_arguments, video/PVIDEO_X86_BIOS_ARGUMENTS, video/VIDEO_X86_BIOS_ARGUMENTS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - video.h
 api_name:
+ - _VIDEO_X86_BIOS_ARGUMENTS
+ - PVIDEO_X86_BIOS_ARGUMENTS
  - VIDEO_X86_BIOS_ARGUMENTS
 ---
 
@@ -79,3 +80,4 @@ A miniport driver should <i>not</i> set a segment:offset-type pointer in any mem
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportint10">VideoPortInt10</a>
+

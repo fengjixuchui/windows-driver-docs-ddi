@@ -4,7 +4,6 @@ title: SpbRequestGetController function (spbcx.h)
 description: The SpbRequestGetController method returns the WDFDEVICE handle to the device object for the SPB controller that the specified I/O request was sent to.
 old-location: spb\spbrequestgetcontroller.htm
 tech.root: SPB
-ms.assetid: 0CD692E2-B2D6-4786-8C0B-C0DCAFCF6259
 ms.date: 04/30/2018
 keywords: ["SpbRequestGetController function"]
 ms.keywords: SPB.spbrequestgetcontroller, SpbRequestGetController, SpbRequestGetController method [Buses], spbcx/SpbRequestGetController
@@ -51,9 +50,9 @@ The <b>SpbRequestGetController</b> method returns the WDFDEVICE handle to the de
 
 ## -parameters
 
-### -param SpbRequest 
+### -param SpbRequest [in]
 
-[in]
+
 The <a href="/windows-hardware/drivers/spb/spbcx-object-handles">SPBREQUEST</a> handle to the I/O request from which to retrieve the WDFDEVICE handle. The SPB controller driver previously received this handle through one of its registered <a href="/previous-versions/hh450911(v=vs.85)">event callback functions</a>.
 
 ## -returns

@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_CALC_PRIVATE_PIPELINE_STATE_SIZE_0033
 title: PFND3D12DDI_CALC_PRIVATE_PIPELINE_STATE_SIZE_0033 (d3d12umddi.h)
-description: Used to calculate the pipeline state size.
+description: The PFND3D12DDI_CALC_PRIVATE_PIPELINE_STATE_SIZE_0033 callback function calculates the pipeline state size.
 old-location: display\pfnd3d12ddi_calc_private_pipeline_state_size_0033_.htm
-ms.assetid: C119B295-CBCF-46B3-BC8D-3C8AC058F6D8
 ms.date: 05/10/2018
 keywords: ["PFND3D12DDI_CALC_PRIVATE_PIPELINE_STATE_SIZE_0033 callback function"]
 ms.keywords: PFND3D12DDI_CALC_PRIVATE_PIPELINE_STATE_SIZE_0033, PFND3D12DDI_CALC_PRIVATE_PIPELINE_STATE_SIZE_0033  entry, PFND3D12DDI_CALC_PRIVATE_PIPELINE_STATE_SIZE_0033 entry point [Display Devices], d3d12umddi/PFND3D12DDI_CALC_PRIVATE_PIPELINE_STATE_SIZE_0033, display.pfnd3d12ddi_calc_private_pipeline_state_size_0033_
@@ -39,8 +38,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CALC_PRIVATE_PIPELINE_STATE_SIZE_0033
-product:
- - Windows
 ---
 
 # PFND3D12DDI_CALC_PRIVATE_PIPELINE_STATE_SIZE_0033 callback function
@@ -52,13 +49,13 @@ Used to calculate the pipeline state size.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice*
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *d3d12ddiarg_create_pipeline_state_0033* [in]
 

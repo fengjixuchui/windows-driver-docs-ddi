@@ -4,7 +4,6 @@ title: KeDelayExecutionThread function (wdm.h)
 description: The KeDelayExecutionThread routine puts the current thread into an alertable or nonalertable wait state for a specified interval.
 old-location: kernel\kedelayexecutionthread.htm
 tech.root: kernel
-ms.assetid: fe8dc704-3baf-4955-85fe-bba19181dbbf
 ms.date: 04/30/2018
 keywords: ["KeDelayExecutionThread function"]
 ms.keywords: KeDelayExecutionThread, KeDelayExecutionThread routine [Kernel-Mode Driver Architecture], k105_2335c373-d2b6-49bf-b329-92ab442ccade.xml, kernel.kedelayexecutionthread, wdm/KeDelayExecutionThread
@@ -50,19 +49,19 @@ The <b>KeDelayExecutionThread</b> routine puts the current thread into an alerta
 
 ## -parameters
 
-### -param WaitMode 
+### -param WaitMode [in]
 
-[in]
+
 Specifies the processor mode in which the caller is waiting, which can be either <b>KernelMode</b> or <b>UserMode</b>. Lower-level drivers should specify <b>KernelMode</b>.
 
-### -param Alertable 
+### -param Alertable [in]
 
-[in]
+
 Specifies <b>TRUE</b> if the wait is alertable. Lower-level drivers should specify <b>FALSE</b>.
 
-### -param Interval 
+### -param Interval [in]
 
-[in]
+
 Specifies the absolute or relative time, in units of 100 nanoseconds, for which the wait is to occur. A negative value indicates relative time. Absolute expiration times track any changes in system time; relative expiration times are not affected by system time changes.
 
 ## -returns

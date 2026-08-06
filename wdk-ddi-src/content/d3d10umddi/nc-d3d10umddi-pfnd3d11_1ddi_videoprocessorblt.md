@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORBLT
 title: PFND3D11_1DDI_VIDEOPROCESSORBLT (d3d10umddi.h)
 description: Performs a video processing operation on one or more input samples and writes the result to a Direct3D surface.
 old-location: display\videoprocessorblt.htm
-ms.assetid: 7a3e17cb-0397-4051-8443-fb2edf3b4cff
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_VIDEOPROCESSORBLT callback function"]
 ms.keywords: PFND3D11_1DDI_VIDEOPROCESSORBLT, PFND3D11_1DDI_VIDEOPROCESSORBLT callback, d3d10umddi/pfnVideoProcessorBlt, display.videoprocessorblt, pfnVideoProcessorBlt, pfnVideoProcessorBlt callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoProcessorBlt
-product:
- - Windows
+ - PFND3D11_1DDI_VIDEOPROCESSORBLT
 ---
 
 # PFND3D11_1DDI_VIDEOPROCESSORBLT callback function
@@ -52,31 +49,31 @@ Performs a video processing operation on one or more input samples and writes th
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hVideoProcessor* [in]
 
 A handle to the video processor object that was created through a call to the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a> function.
 
-### -param Arg3
+### -param unnamedParam3
 
 *hOutputView* [in]
 
 A handle to the resource for the output view of the video processor. This handle was created through a call to the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessorOutputView</a> function.
 
-### -param Arg4
+### -param unnamedParam4
 
 *OutputFrame* [in]
 
 The zero-based index of the output video frame.
 
-### -param Arg5
+### -param unnamedParam5
 
 *StreamCount* [in]
 
@@ -89,7 +86,7 @@ The number of input streams to process in the array referenced by the <i>pStream
 </div>
 <div> </div>
 
-### -param Arg6
+### -param unnamedParam6
 
 *pStream* [in]
 
@@ -170,3 +167,4 @@ If multiple input streams are enabled and the video processor is enabled to prod
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorsetstreamstereoformat">VideoProcessorSetStreamStereoFormat</a>
+

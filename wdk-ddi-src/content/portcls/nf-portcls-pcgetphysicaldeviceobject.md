@@ -4,7 +4,6 @@ title: PcGetPhysicalDeviceObject function (portcls.h)
 description: The PcGetPhysicalDeviceObject function enables audio miniport drivers to retrieve the underlying physical device object of the audio device.
 old-location: audio\pcgetphysicaldeviceobject.htm
 tech.root: audio
-ms.assetid: A7917082-4C3F-445A-AD26-32DE670754E5
 ms.date: 05/08/2018
 keywords: ["PcGetPhysicalDeviceObject function"]
 ms.keywords: PcGetPhysicalDeviceObject, PcGetPhysicalDeviceObject function [Audio Devices], audio.pcgetphysicaldeviceobject, portcls/PcGetPhysicalDeviceObject
@@ -51,14 +50,14 @@ The <b>PcGetPhysicalDeviceObject</b> function enables audio miniport drivers to 
 
 ## -parameters
 
-### -param pDeviceObject 
+### -param pDeviceObject [in]
 
-[in]
+
 Pointer to the device object for the device.
 
-### -param ppPhysicalObject 
+### -param ppPhysicalObject [out]
 
-[out]
+
 Pointer to the physical object for the device.
 
 ## -returns

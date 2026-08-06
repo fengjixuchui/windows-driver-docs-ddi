@@ -4,7 +4,6 @@ title: ISensorDriver::OnSetProperties (sensorsclassextension.h)
 description: The ISensorDriver::OnSetProperties method specifies values for the specified list of properties.
 old-location: sensors\isensordriver_onsetproperties.htm
 tech.root: sensors
-ms.assetid: 7c3cca5b-1d08-42dc-8dc4-42eb1160b8bb
 ms.date: 05/03/2018
 keywords: ["ISensorDriver::OnSetProperties"]
 ms.keywords: ISensorDriver interface [Sensor Devices],OnSetProperties method, ISensorDriver.OnSetProperties, ISensorDriver::OnSetProperties, OnSetProperties, OnSetProperties method [Sensor Devices], OnSetProperties method [Sensor Devices],ISensorDriver interface, Sensor_IFaces_1b27ccef-2b50-4942-b8fa-9126e2624b27.xml, sensors.isensordriver_onsetproperties, sensorsclassextension/ISensorDriver::OnSetProperties
@@ -39,7 +38,7 @@ api_location:
  - SensorsClassExtension.lib
  - SensorsClassExtension.dll
 api_name:
- - ISensorDriver.OnSetProperties
+ - ISensorDriver::OnSetProperties
 ---
 
 # ISensorDriver::OnSetProperties
@@ -51,24 +50,24 @@ The <b>ISensorDriver::OnSetProperties</b> method specifies values for the specif
 
 ## -parameters
 
-### -param pClientFile 
+### -param pClientFile [in]
 
-[in]
+
 Pointer to an <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile">IWDFFile</a> interface that represents the file object for the application specifying property values.
 
-### -param pwszSensorID 
+### -param pwszSensorID [in]
 
-[in]
+
 <b>LPWSTR</b> that contains the ID for the sensor for which the client application is specifying property values.
 
-### -param pPropertiesToSet 
+### -param pPropertiesToSet [in]
 
-[in]
+
 Pointer to an <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues">IPortableDeviceValues</a> interface that contains the list of properties to set and their values.
 
-### -param ppResults 
+### -param ppResults [out]
 
-[out]
+
 Address of an <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues">IPortableDeviceValues</a> pointer that receives the list of properties that have been set successfully and their new values. If a property was not set, the new value contains an HRESULT error code.
 
 ## -returns
@@ -95,3 +94,4 @@ The sensor class extension is responsible for freeing any <b>PROPVARIANT</b> str
 
 
 <a href="/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-ongetproperties">ISensorDriver::OnGetProperties</a>
+

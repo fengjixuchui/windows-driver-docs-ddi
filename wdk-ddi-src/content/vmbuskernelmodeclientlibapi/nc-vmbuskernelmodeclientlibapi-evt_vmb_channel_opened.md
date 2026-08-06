@@ -4,7 +4,6 @@ title: EVT_VMB_CHANNEL_OPENED (vmbuskernelmodeclientlibapi.h)
 description: The EvtVmbChannelOpened callback function is invoked when the client endpoint in the guest virtual machine opens a channel which has been offered to it.
 old-location: netvista\evt_vmb_channel_opened.htm
 tech.root: netvista
-ms.assetid: 4E35AAA4-B9BA-4248-BBE6-FB576CAFD046
 ms.date: 05/02/2018
 keywords: ["EVT_VMB_CHANNEL_OPENED callback function"]
 ms.keywords: EVT_VMB_CHANNEL_OPENED, EVT_VMB_CHANNEL_OPENED callback, EvtVmbChannelOpened, EvtVmbChannelOpened callback function [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_OPENED, PFN_VMB_CHANNEL_OPENED callback function pointer [Network Drivers Starting with Windows Vista], netvista.evt_vmb_channel_opened, vmbuskernelmodeclientlibapi/EvtVmbChannelOpened
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - VmbusKernelModeClientLibApi.h
 api_name:
- - PFN_VMB_CHANNEL_OPENED
+ - EVT_VMB_CHANNEL_OPENED
 ---
 
 # EVT_VMB_CHANNEL_OPENED callback function
@@ -53,9 +52,9 @@ channel which has been offered to it.
 
 ## -parameters
 
-### -param Channel 
+### -param Channel [in]
 
-[in]
+
 The channel that the guest virtual machine opens.
 
 ## -returns
@@ -87,3 +86,4 @@ rolls back to a state where no traffic flows.
 
 
 <a href="/windows-hardware/drivers/ddi/vmbuskernelmodeclientlibapi/nf-vmbuskernelmodeclientlibapi-vmbchannelenable">VmbChannelEnable</a>
+

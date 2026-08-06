@@ -4,7 +4,6 @@ title: RtlUInt8Add function (ntintsafe.h)
 description: Adds two values of type UINT8.
 old-location: kernel\rtluint8add.htm
 tech.root: kernel
-ms.assetid: E93C8C7A-13E5-4089-931C-C56055FA3C90
 ms.date: 04/30/2018
 keywords: ["RtlUInt8Add function"]
 ms.keywords: RtlUInt8Add, RtlUInt8Add function [Kernel-Mode Driver Architecture], kernel.rtluint8add, ntintsafe/RtlUInt8Add
@@ -50,19 +49,19 @@ Adds two values of type <b>UINT8</b>.
 
 ## -parameters
 
-### -param u8Augend 
+### -param u8Augend [in]
 
-[in]
+
 The first value in the equation.
 
-### -param u8Addend 
+### -param u8Addend [in]
 
-[in]
+
 The value to add to <i>u8Augend</i>.
 
-### -param pu8Result 
+### -param pu8Result [out]
 
-[out]
+
 A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

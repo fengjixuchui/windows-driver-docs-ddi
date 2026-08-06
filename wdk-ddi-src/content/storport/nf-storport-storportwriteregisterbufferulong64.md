@@ -1,17 +1,16 @@
 ---
 UID: NF:storport.StorPortWriteRegisterBufferUlong64
 title: StorPortWriteRegisterBufferUlong64 macro (storport.h)
-description: This StorPortWriteRegisterBufferUlong64 routine writes a number of ULONG64 values from a the specified 64-bit register address.
+description: This StorPortWriteRegisterBufferUlong64 routine writes a number of ULONG64 values from a specified 64-bit register address.
 old-location: storage\storportwriteregisterbufferulong64.htm
 tech.root: storage
-ms.assetid: 3C36DB8F-46C2-4E81-B2F3-6DE78D91566E
 ms.date: 03/29/2018
 keywords: ["StorPortWriteRegisterBufferUlong64 macro"]
 ms.keywords: StorPortWriteRegisterBufferUlong64, StorPortWriteRegisterBufferUlong64 routine [Storage Devices], storage.storportwriteregisterbufferulong64, storport/StorPortWriteRegisterBufferUlong64
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -46,7 +45,7 @@ api_name:
 
 ## -description
 
-This <b>StorPortWriteRegisterBufferUlong64</b> routine writes a number of <b>ULONG64</b> values from a the specified 64-bit register address.
+This <b>StorPortWriteRegisterBufferUlong64</b> routine writes a number of <b>ULONG64</b> values from a specified 64-bit register address.
 
 ## -parameters
 

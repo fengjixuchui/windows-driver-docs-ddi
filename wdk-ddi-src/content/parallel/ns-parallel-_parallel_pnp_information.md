@@ -4,7 +4,6 @@ title: _PARALLEL_PNP_INFORMATION (parallel.h)
 description: The PARALLEL_PNP_INFORMATION structure specifies information about the capabilities of a parallel port.
 old-location: parports\parallel_pnp_information.htm
 tech.root: parports
-ms.assetid: 9288fc11-e19b-46dd-95e4-6de8c7cdc61d
 ms.date: 02/15/2018
 keywords: ["PARALLEL_PNP_INFORMATION structure"]
 ms.keywords: "*PPARALLEL_PNP_INFORMATION, PARALLEL_PNP_INFORMATION, PARALLEL_PNP_INFORMATION structure [Parallel Ports], PPARALLEL_PNP_INFORMATION, PPARALLEL_PNP_INFORMATION structure pointer [Parallel Ports], _PARALLEL_PNP_INFORMATION, cisspd_71ac405c-ab56-434c-a945-9afee36c0972.xml, parallel/PARALLEL_PNP_INFORMATION, parallel/PPARALLEL_PNP_INFORMATION, parports.parallel_pnp_information"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - parallel.h
 api_name:
+ - _PARALLEL_PNP_INFORMATION
+ - PPARALLEL_PNP_INFORMATION
  - PARALLEL_PNP_INFORMATION
 ---
 
@@ -211,3 +212,4 @@ For more information, see <a href="/previous-versions/ff544223(v=vs.85)">Obtaini
 
 
 <a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_pnp_info.md">IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO</a>
+

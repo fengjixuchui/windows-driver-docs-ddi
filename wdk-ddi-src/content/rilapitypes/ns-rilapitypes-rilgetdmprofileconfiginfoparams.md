@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILGETDMPROFILECONFIGINFOPARAMS
 title: RILGETDMPROFILECONFIGINFOPARAMS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILGETDMPROFILECONFIGINFOPARAMS structure for internal use only."
 old-location: netvista\rilgetdmprofileconfiginfoparams.htm
 tech.root: netvista
-ms.assetid: df62bc19-81c7-4d80-88ed-5e8a8438d269
 ms.date: 05/02/2018
 keywords: ["RILGETDMPROFILECONFIGINFOPARAMS structure"]
 ms.keywords: "*LPRILGETDMPROFILECONFIGINFOPARAMS, RILGETDMPROFILECONFIGINFOPARAMS, RILGETDMPROFILECONFIGINFOPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilgetdmprofileconfiginfoparams, ntddrilapitypes/RILGETDMPROFILECONFIGINFOPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILGETDMPROFILECONFIGINFOPARAMS
+ - LPRILGETDMPROFILECONFIGINFOPARAMS
 ---
 
 # RILGETDMPROFILECONFIGINFOPARAMS structure (rilapitypes.h)

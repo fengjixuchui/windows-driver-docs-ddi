@@ -1,10 +1,9 @@
 ---
 UID: NC:drmk.PFNDRMDESTROYCONTENT
 title: PFNDRMDESTROYCONTENT (drmk.h)
-description: This callback function is reserved for system use.
+description: "Microsoft reserves the PFNDRMDESTROYCONTENT callback function for internal use only. Don't use this function in your code."
 old-location: audio\pfndrmdestroycontent.htm
 tech.root: audio
-ms.assetid: 24B98C91-9EB3-4D00-8D58-F6C96610946A
 ms.date: 05/08/2018
 keywords: ["PFNDRMDESTROYCONTENT callback function"]
 ms.keywords: DRMDestroyContent, DRMDestroyContent callback function [Audio Devices], PFNDRMDESTROYCONTENT, PFNDRMDESTROYCONTENT callback, PfnDRMDestroyContent, PfnDRMDestroyContent callback function [Audio Devices], audio.pfndrmdestroycontent, drmk/PfnDRMDestroyContent
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Drmk.h
 api_name:
- - DRMDestroyContent
+ - PFNDRMDESTROYCONTENT
 ---
 
 # PFNDRMDESTROYCONTENT callback function
@@ -50,9 +49,9 @@ This callback function is reserved for system use.
 
 ## -parameters
 
-### -param ContentId 
+### -param ContentId [in]
 
-[in]
+
 This parameter is reserved for system use.
 
 ## -returns

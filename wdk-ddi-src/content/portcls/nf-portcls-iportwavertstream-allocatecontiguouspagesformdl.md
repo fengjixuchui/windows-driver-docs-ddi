@@ -4,7 +4,6 @@ title: IPortWaveRTStream::AllocateContiguousPagesForMdl (portcls.h)
 description: The AllocateContiguousPagesForMdl method allocates a list of contiguous, nonpaged, physical memory pages and returns a pointer to a memory descriptor list (MDL) that describes them.
 old-location: audio\iportwavertstream_allocatecontiguouspagesformdl.htm
 tech.root: audio
-ms.assetid: 976f7e83-9b2a-4e1b-ab76-76d8e9711bff
 ms.date: 05/08/2018
 keywords: ["IPortWaveRTStream::AllocateContiguousPagesForMdl"]
 ms.keywords: AllocateContiguousPagesForMdl, AllocateContiguousPagesForMdl method [Audio Devices], AllocateContiguousPagesForMdl method [Audio Devices],IPortWaveRTStream interface, IPortWaveRTStream interface [Audio Devices],AllocateContiguousPagesForMdl method, IPortWaveRTStream.AllocateContiguousPagesForMdl, IPortWaveRTStream::AllocateContiguousPagesForMdl, audio.iportwavertstream_allocatecontiguouspagesformdl, audmp-routines_92ff395d-072b-4a11-b856-3afc1a024289.xml, portcls/IPortWaveRTStream::AllocateContiguousPagesForMdl
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Passive level
+req.irql: PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IPortWaveRTStream.AllocateContiguousPagesForMdl
+ - IPortWaveRTStream::AllocateContiguousPagesForMdl
 ---
 
 # IPortWaveRTStream::AllocateContiguousPagesForMdl
@@ -50,19 +49,19 @@ The <code>AllocateContiguousPagesForMdl</code> method allocates a list of contig
 
 ## -parameters
 
-### -param LowAddress 
+### -param LowAddress [in]
 
-[in]
+
 Specifies the low end of the address range from which the storage for the MDL can be allocated.
 
-### -param HighAddress 
+### -param HighAddress [in]
 
-[in]
+
 Specifies the high end of the address range from which the storage for the MDL can be allocated.
 
-### -param TotalBytes 
+### -param TotalBytes [in]
 
-[in]
+
 Specifies the total number of bytes to allocate for the MDL. This method always allocates an integral number of memory pages.
 
 ## -returns
@@ -88,3 +87,4 @@ The <code>AllocateContiguousPagesforMdl</code> method allocates memory pages tha
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-iportwavertstream-mapallocatedpages">IPortWaveRTStream::MapAllocatedPages</a>
+

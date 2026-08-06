@@ -4,7 +4,6 @@ title: _NDK_CQ_DISPATCH (ndkpi.h)
 description: The NDK_CQ_DISPATCH structure specifies dispatch function entry points for the NDK completion queue (CQ) object.
 old-location: netvista\ndk_cq_dispatch.htm
 tech.root: netvista
-ms.assetid: 632E4FE8-BA03-4232-80E1-5EB3CC760D14
 ms.date: 05/02/2018
 keywords: ["NDK_CQ_DISPATCH structure"]
 ms.keywords: NDK_CQ_DISPATCH, NDK_CQ_DISPATCH structure [Network Drivers Starting with Windows Vista], PNDK_CQ_DISPATCH, PNDK_CQ_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], _NDK_CQ_DISPATCH, ndkpi/NDK_CQ_DISPATCH, ndkpi/PNDK_CQ_DISPATCH, netvista.ndk_cq_dispatch
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
+ - _NDK_CQ_DISPATCH
  - NDK_CQ_DISPATCH
 ---
 
@@ -113,3 +113,4 @@ The <b>NDK_CQ_DISPATCH</b> structure is used in the <a href="/windows-hardware/d
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_resize_cq">NDK_FN_RESIZE_CQ</a>
+

@@ -4,7 +4,6 @@ title: IWDFDevice::GetDefaultIoQueue (wudfddi.h)
 description: The GetDefaultIoQueue method retrieves the interface of the default I/O queue for a device.
 old-location: wdf\iwdfdevice_getdefaultioqueue.htm
 tech.root: wdf
-ms.assetid: 9e998e54-b4c9-41ed-bba8-6f11c013f681
 ms.date: 02/26/2018
 keywords: ["IWDFDevice::GetDefaultIoQueue"]
 ms.keywords: GetDefaultIoQueue, GetDefaultIoQueue method, GetDefaultIoQueue method,IWDFDevice interface, IWDFDevice interface,GetDefaultIoQueue method, IWDFDevice.GetDefaultIoQueue, IWDFDevice::GetDefaultIoQueue, UMDFDeviceObjectRef_b4c10b3b-eba4-4e6c-8f9e-80c32705f43d.xml, umdf.iwdfdevice_getdefaultioqueue, wdf.iwdfdevice_getdefaultioqueue, wudfddi/IWDFDevice::GetDefaultIoQueue
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice.GetDefaultIoQueue
+ - IWDFDevice::GetDefaultIoQueue
 ---
 
 # IWDFDevice::GetDefaultIoQueue
@@ -52,9 +51,9 @@ The <b>GetDefaultIoQueue</b> method retrieves the interface of the default I/O q
 
 ## -parameters
 
-### -param ppWdfIoQueue 
+### -param ppWdfIoQueue [out]
 
-[out]
+
 A pointer to a variable that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfioqueue">IWDFIoQueue</a> interface for the default I/O queue object.
 
 ## -remarks
@@ -68,3 +67,4 @@ For more information about queue objects, see <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfioqueue">IWDFIoQueue</a>
+

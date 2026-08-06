@@ -4,7 +4,6 @@ title: NdisFillMemory macro (ndis.h)
 description: The NdisFillMemory function fills a caller-supplied buffer with the given character.
 old-location: netvista\ndisfillmemory.htm
 tech.root: netvista
-ms.assetid: 6d974c56-5925-4ad5-a3c0-0c17e8488431
 ms.date: 05/02/2018
 keywords: ["NdisFillMemory macro"]
 ms.keywords: NdisFillMemory, NdisFillMemory macro [Network Drivers Starting with Windows Vista], ndis/NdisFillMemory, ndis_memory_ref_c1411624-0e7b-40e2-9812-4426b2a9f2bc.xml, netvista.ndisfillmemory
@@ -51,19 +50,19 @@ The
 
 ## -parameters
 
-### -param Destination 
+### -param Destination [in]
 
-[in]
+
 A pointer to the buffer to be filled.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The number of bytes to be filled.
 
-### -param Fill 
+### -param Fill [in]
 
-[in]
+
 The value to fill the buffer.
 
 ## -remarks

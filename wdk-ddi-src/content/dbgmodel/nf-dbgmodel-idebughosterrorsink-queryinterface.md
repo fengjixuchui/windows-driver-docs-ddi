@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostErrorSink.QueryInterface
 title: IDebugHostErrorSink::QueryInterface (dbgmodel.h)
-description: Retrieves pointers to the supported interfaces on an object. This method calls IUnknown::AddRef on the pointer it returns.
-ms.assetid: 3166599e-94ec-4ca7-b883-b8353ced57f0
+description: "The IDebugHostErrorSink::QueryInterface method retrieves pointers to the supported interfaces on an object."
 ms.date: 09/12/2018
 keywords: ["IDebugHostErrorSink::QueryInterface"]
 ms.keywords: IDebugHostErrorSink::QueryInterface, QueryInterface, IDebugHostErrorSink.QueryInterface, IDebugHostErrorSink::QueryInterface, IDebugHostErrorSink.QueryInterface
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostErrorSink.QueryInterface
+ - IDebugHostErrorSink::QueryInterface
 ---
 
 # IDebugHostErrorSink::QueryInterface
@@ -69,3 +68,4 @@ Standard COM method.
 ## -see-also
 
 [IDebugHostErrorSink interface](nn-dbgmodel-idebughosterrorsink.md)
+

@@ -4,7 +4,6 @@ title: _DOT11_MAC_PARAMETERS (windot11.h)
 description: The DOT11_MAC_PARAMETERS is the optional input for an OID_DOT11_CREATE_MAC request. The device role is defined in an operation mode bitmask included in this structure.
 old-location: netvista\dot11_mac_parameters.htm
 tech.root: netvista
-ms.assetid: 53114ABE-33F2-4DA2-ABE0-2547547AA6AD
 ms.date: 02/16/2018
 keywords: ["DOT11_MAC_PARAMETERS structure"]
 ms.keywords: "*PDOT11_MAC_PARAMETERS, DOT11_MAC_PARAMETERS, DOT11_MAC_PARAMETERS structure [Network Drivers Starting with Windows Vista], PDOT11_MAC_PARAMETERS, PDOT11_MAC_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], Revision, Size, Type, _DOT11_MAC_PARAMETERS, netvista.dot11_mac_parameters, windot11/DOT11_MAC_PARAMETERS, windot11/PDOT11_MAC_PARAMETERS"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - Windot11.h
 api_name:
+ - _DOT11_MAC_PARAMETERS
+ - PDOT11_MAC_PARAMETERS
  - DOT11_MAC_PARAMETERS
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_MAC_PARAMETERS structure
@@ -52,13 +51,16 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The <b>DOT11_MAC_PARAMETERS</b> is the optional input for an <a href="/windows-hardware/drivers/network/oid-dot11-create-mac">OID_DOT11_CREATE_MAC</a> request. The device role is defined in an operation mode bitmask included in this structure.
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The <b>DOT11_MAC_PARAMETERS</b> is the optional input for an <a href="/windows-hardware/drivers/network/oid-dot11-create-mac">OID_DOT11_CREATE_MAC</a> request. The device role is defined in an operation mode bitmask included in this structure.
 
 ## -struct-fields
 
 ### -field Header
 
-The object header identifying the type and revision of this structure. The required member settings of <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> are the following:
+The object header identifying the type and revision of this structure. The required member settings of <a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a> are the following:
 
 
 
@@ -117,4 +119,5 @@ typedef struct _DOT11_MAC_PARAMETERS {
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+

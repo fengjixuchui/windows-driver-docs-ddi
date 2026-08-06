@@ -4,7 +4,6 @@ title: _TOPOLOGY_MAP (1394.h)
 description: The TOPOLOGY_MAP structure is used to store an IEEE 1394 bus topology map. The relations between devices are found in the port members of the entries in TOP_Self_ID_Array.
 old-location: ieee\topology_map.htm
 tech.root: IEEE
-ms.assetid: 0a4c7ffc-94f9-4068-b650-1da43e45d0ad
 ms.date: 02/15/2018
 keywords: ["TOPOLOGY_MAP structure"]
 ms.keywords: "*PTOPOLOGY_MAP, 1394/PTOPOLOGY_MAP, 1394/TOPOLOGY_MAP, 1394stct_4afaf64f-e60c-4521-91c7-82abefd49b55.xml, IEEE.topology_map, PTOPOLOGY_MAP, PTOPOLOGY_MAP structure pointer [Buses], TOPOLOGY_MAP, TOPOLOGY_MAP structure [Buses], _TOPOLOGY_MAP"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _TOPOLOGY_MAP
+ - PTOPOLOGY_MAP
  - TOPOLOGY_MAP
 ---
 
@@ -84,4 +85,5 @@ All data will be in big-endian format.
 
 ## -see-also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537646">REQUEST_GET_SPEED_TOPOLOGY_MAPS</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_GET_SPEED_TOPOLOGY_MAPS</a>
+

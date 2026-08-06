@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols.GetSourcePath
 title: IDebugSymbols::GetSourcePath (dbgeng.h)
-description: The GetSourcePath method returns the source path.
+description: The GetSourcePath method returns the source path. This method belongs to the IDebugSymbols interface.
 old-location: debugger\getsourcepath.htm
 tech.root: debugger
-ms.assetid: 93a1efce-5f93-4a09-aa61-ffbd3d619176
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols::GetSourcePath"]
 ms.keywords: GetSourcePath, GetSourcePath method [Windows Debugging], GetSourcePath method [Windows Debugging],IDebugSymbols interface, GetSourcePath method [Windows Debugging],IDebugSymbols2 interface, GetSourcePath method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],GetSourcePath method, IDebugSymbols.GetSourcePath, IDebugSymbols2 interface [Windows Debugging],GetSourcePath method, IDebugSymbols2::GetSourcePath, IDebugSymbols3 interface [Windows Debugging],GetSourcePath method, IDebugSymbols3::GetSourcePath, IDebugSymbols::GetSourcePath, IDebugSymbols_cbdf5e16-41ba-4134-b41b-81164dfc07a0.xml, dbgeng/IDebugSymbols2::GetSourcePath, dbgeng/IDebugSymbols3::GetSourcePath, dbgeng/IDebugSymbols::GetSourcePath, debugger.getsourcepath
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.GetSourcePath
- - IDebugSymbols2.GetSourcePath
- - IDebugSymbols3.GetSourcePath
+ - IDebugSymbols::GetSourcePath
 ---
 
 # IDebugSymbols::GetSourcePath
@@ -52,19 +49,19 @@ The <b>GetSourcePath</b>  method returns the source path.
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Receives the source path.  This is a string that contains source path elements separated by semicolons (<b>;</b>).  Each source path element can specify either a directory or a source server.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size, in characters, of the <i>Buffer</i> buffer.
 
-### -param PathSize 
+### -param PathSize [out, optional]
 
-[out, optional]
+
 Receives the size, in characters, of the source path.
 
 ## -returns
@@ -129,3 +126,4 @@ For more information about manipulating the source path, see <a href="/windows-h
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-setsourcepath">SetSourcePath</a>
+

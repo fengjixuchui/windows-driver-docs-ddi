@@ -4,7 +4,6 @@ title: _WINBIO_CALIBRATION_INFO (winbio_ioctl.h)
 description: The IOCTL_BIOMETRIC_CALIBRATE IOCTL returns the WINBIO_CALIBRATION_INFO structure as output.
 old-location: biometric\winbio_calibration_info.htm
 tech.root: biometric
-ms.assetid: 12ea0460-30c1-4ce0-9a3b-c59a71493fe7
 ms.date: 02/20/2018
 keywords: ["WINBIO_CALIBRATION_INFO structure"]
 ms.keywords: "*PWINBIO_CALIBRATION_INFO, PWINBIO_CALIBRATION_INFO, PWINBIO_CALIBRATION_INFO structure pointer [Biometric Devices], WINBIO_CALIBRATION_INFO, WINBIO_CALIBRATION_INFO structure [Biometric Devices], _WINBIO_CALIBRATION_INFO, biometric.winbio_calibration_info, biometric_ref_15065b26-3c1d-49f5-8546-b8962f848072.xml, winbio_ioctl/PWINBIO_CALIBRATION_INFO, winbio_ioctl/WINBIO_CALIBRATION_INFO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - winbio_ioctl.h
 api_name:
+ - _WINBIO_CALIBRATION_INFO
+ - PWINBIO_CALIBRATION_INFO
  - WINBIO_CALIBRATION_INFO
 ---
 
@@ -71,3 +72,4 @@ The status detail of the I/O operation.  This is where WINBIO error and informat
 ### -field CalibrationData
 
 A structure of type <a href="/windows-hardware/drivers/ddi/winbio_ioctl/ns-winbio_ioctl-_winbio_data">WINBIO_DATA</a> that contains calibration data specific to this sensor.  This member is optional.
+

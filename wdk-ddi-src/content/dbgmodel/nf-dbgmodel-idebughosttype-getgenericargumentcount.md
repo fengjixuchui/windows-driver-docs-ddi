@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostType.GetGenericArgumentCount
 title: IDebugHostType::GetGenericArgumentCount (dbgmodel.h)
-description: Returns the number of arguments to the generic/template.
-ms.assetid: 1451041e-41f1-47d2-a259-dbdfb46cf8b8
+description: "The IDebugHostType::GetGenericArgumentCount method, when called on a type, gets the number of generic arguments to the type."
 ms.date: 09/11/2018
 keywords: ["IDebugHostType::GetGenericArgumentCount"]
 ms.keywords: IDebugHostType::GetGenericArgumentCount, GetGenericArgumentCount, IDebugHostType.GetGenericArgumentCount, IDebugHostType::GetGenericArgumentCount, IDebugHostType.GetGenericArgumentCount
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostType.GetGenericArgumentCount
+ - IDebugHostType::GetGenericArgumentCount
 ---
 
 # IDebugHostType::GetGenericArgumentCount

@@ -4,7 +4,6 @@ title: _NDIS_IF_PROVIDER_CHARACTERISTICS (ndis.h)
 description: The NDIS_IF_PROVIDER_CHARACTERISTICS structure defines NDIS network interface provider entry points and other provider characteristics.
 old-location: netvista\ndis_if_provider_characteristics.htm
 tech.root: netvista
-ms.assetid: f295bea2-20d8-4c71-b78b-77d43840be2a
 ms.date: 05/02/2018
 keywords: ["NDIS_IF_PROVIDER_CHARACTERISTICS structure"]
 ms.keywords: "*PNDIS_IF_PROVIDER_CHARACTERISTICS, NDIS_IF_PROVIDER_CHARACTERISTICS, NDIS_IF_PROVIDER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], PNDIS_IF_PROVIDER_CHARACTERISTICS, PNDIS_IF_PROVIDER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_IF_PROVIDER_CHARACTERISTICS, ndis/NDIS_IF_PROVIDER_CHARACTERISTICS, ndis/PNDIS_IF_PROVIDER_CHARACTERISTICS, net_if_struct_ref_44fd781f-d830-4a18-86e9-b16eb3367d6a.xml, netvista.ndis_if_provider_characteristics"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_IF_PROVIDER_CHARACTERISTICS
+ - PNDIS_IF_PROVIDER_CHARACTERISTICS
  - NDIS_IF_PROVIDER_CHARACTERISTICS
 ---
 
@@ -58,7 +59,7 @@ The NDIS_IF_PROVIDER_CHARACTERISTICS structure defines NDIS network interface pr
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      interface provider characteristics structure (NDIS_IF_PROVIDER_CHARACTERISTICS). The driver sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -97,7 +98,7 @@ To register as an interface provider, the driver passes a pointer to the initial
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -110,3 +111,4 @@ To register as an interface provider, the driver passes a pointer to the initial
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-if_set_object">ProviderSetObject</a>
+

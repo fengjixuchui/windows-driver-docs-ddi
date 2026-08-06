@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3DWDDM2_0DDI_GETRESOURCELAYOUT
 title: PFND3DWDDM2_0DDI_GETRESOURCELAYOUT (d3d10umddi.h)
 description: The pfnGetResourceLayout callback function supports getting resource layout information.
 old-location: display\pfnd3dwddm2_0ddi_getresourcelayout.htm
-ms.assetid: 0158F1B4-AA6E-41F9-BAEF-A3C688758205
 ms.date: 05/10/2018
 keywords: ["PFND3DWDDM2_0DDI_GETRESOURCELAYOUT callback function"]
 ms.keywords: PFND3DWDDM2_0DDI_GETRESOURCELAYOUT, PFND3DWDDM2_0DDI_GETRESOURCELAYOUT callback, d3d10umddi/pfnGetResourceLayout, display.pfnd3dwddm2_0ddi_getresourcelayout, pfnGetResourceLayout, pfnGetResourceLayout callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - pfnGetResourceLayout
+ - PFND3DWDDM2_0DDI_GETRESOURCELAYOUT
 ---
 
 # PFND3DWDDM2_0DDI_GETRESOURCELAYOUT callback function
@@ -50,13 +49,13 @@ The <i>pfnGetResourceLayout</i> callback function supports getting resource layo
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hResource*
 
@@ -66,24 +65,24 @@ A resource handle.
 
 The subresource count.
 
-### -param Arg4
+### -param unnamedParam4
 
 *Handle* [out]
 
 A kernel handle.
 
-### -param Arg5
+### -param unnamedParam5
 
 *TextureLayout* [out]
 
 A pointer to a texture layout.
 
-### -param pMipLevelSwizzleTransition 
+### -param pMipLevelSwizzleTransition [out]
 
-[out]
+
 A pointer to a MIP level swizzle transition.
 
-### -param Arg7
+### -param unnamedParam7
 
 *SubresourceLayout* [out, optional]
 

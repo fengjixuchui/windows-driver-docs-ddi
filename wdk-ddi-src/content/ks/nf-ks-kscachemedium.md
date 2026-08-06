@@ -4,7 +4,6 @@ title: KsCacheMedium function (ks.h)
 description: The KsCacheMedium function improves graph building performance of pins that use Mediums to define connectivity.
 old-location: stream\kscachemedium.htm
 tech.root: stream
-ms.assetid: d0e9c146-5d73-49e8-92a8-c453f5bbbfe9
 ms.date: 04/23/2018
 keywords: ["KsCacheMedium function"]
 ms.keywords: KsCacheMedium, KsCacheMedium function [Streaming Media Devices], ks/KsCacheMedium, ksfunc_19ac113f-3eb8-4073-90b0-786cc82cdf37.xml, stream.kscachemedium
@@ -51,19 +50,19 @@ The <b>KsCacheMedium</b> function improves graph building performance of pins th
 
 ## -parameters
 
-### -param SymbolicLink 
+### -param SymbolicLink [in]
 
-[in]
+
 The symbolic link used to open the device interface.
 
-### -param Medium 
+### -param Medium [in]
 
-[in]
+
 Points to the medium to cache.
 
-### -param PinDirection 
+### -param PinDirection [in]
 
-[in]
+
 Contains the direction of the Pin.  1 is output, 0 is input.
 
 ## -returns

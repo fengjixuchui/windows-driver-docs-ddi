@@ -4,7 +4,6 @@ title: _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1 (acpiioct.h)
 description: The ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER structure is used as input to an IOCTL_ACPI_EVAL_METHOD request and to an IOCTL_ACPI_ASYNC_EVAL_METHOD request. The structure supplies the name of a control method and an input argument of type ULONG.
 old-location: acpi\acpi_eval_input_buffer_simple_integer.htm
 tech.root: acpi
-ms.assetid: 524e3533-e43c-44eb-b677-dbd023ab5abc
 ms.date: 02/15/2018
 keywords: ["ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1 structure"]
 ms.keywords: "*PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1, ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1 structure [ACPI Devices], P_ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1, P_ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1 structure pointer [ACPI Devices], _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1, _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1 structure [ACPI Devices], acpi-meth-eval-ref_d9366d11-027b-42e3-bb47-c3b14da27ba4.xml, acpi.acpi_eval_input_buffer_simple_integer, acpiioct/ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1, acpiioct/P_ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1"
@@ -43,6 +42,8 @@ api_location:
  - Acpiioct.h
 api_name:
  - _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1
+ - PACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1
+ - ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1
 ---
 
 # _ACPI_EVAL_INPUT_BUFFER_SIMPLE_INTEGER_V1 structure
@@ -99,3 +100,4 @@ For more information about how to use this structure, see <a href="/windows-hard
 
 
 <a href="/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_eval_method">IOCTL_ACPI_EVAL_METHOD</a>
+

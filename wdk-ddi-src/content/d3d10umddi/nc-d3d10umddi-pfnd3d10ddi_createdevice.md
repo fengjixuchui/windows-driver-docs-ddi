@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_CREATEDEVICE
 title: PFND3D10DDI_CREATEDEVICE (d3d10umddi.h)
 description: The CreateDevice(D3D10) function creates a graphics context that is referenced in subsequent calls.
 old-location: display\createdevice_d3d10_.htm
-ms.assetid: c69eedb1-c975-412c-aa9f-cf64a702f937
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_CREATEDEVICE callback function"]
 ms.keywords: CreateDevice, CreateDevice callback function [Display Devices], PFND3D10DDI_CREATEDEVICE, PFND3D10DDI_CREATEDEVICE callback, UserModeDisplayDriverDx10_Functions_4d3d9d4c-e03b-46a9-a62a-cb49f071c0a2.xml, d3d10umddi/CreateDevice, display.createdevice_d3d10_
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CreateDevice
-product:
- - Windows
+ - PFND3D10DDI_CREATEDEVICE
 ---
 
 # PFND3D10DDI_CREATEDEVICE callback function
@@ -52,13 +49,13 @@ The <b>CreateDevice(D3D10)</b> function creates a graphics context that is refer
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hAdapter* [in]
 
 A handle to the graphics adapter object that was created with the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_openadapter">OpenAdapter10</a> function.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCreateData* [in, out]
 
@@ -95,3 +92,4 @@ Generally, devices are independent of each other, so that resources that are cre
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_openadapter">OpenAdapter10</a>
+

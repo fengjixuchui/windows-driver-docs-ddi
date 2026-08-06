@@ -3,7 +3,6 @@ UID: NS:wwan._WWAN_SET_SAR_CONFIG
 title: _WWAN_SET_SAR_CONFIG (wwan.h)
 description: The WWAN_SET_SAR_CONFIG structure describes Specific Absorption Rate (SAR) information that a mobile broadband (MB) modem should use to set its SAR configuration.
 tech.root: netvista
-ms.assetid: a4703e73-677a-42ea-8f8b-dbd77957ef6e
 ms.date: 08/20/2018
 keywords: ["WWAN_SET_SAR_CONFIG structure"]
 ms.keywords: _WWAN_SET_SAR_CONFIG, WWAN_SET_SAR_CONFIG, *PWWAN_SET_SAR_CONFIG,
@@ -37,6 +36,8 @@ api_location:
  - wwan.h
 api_name:
  - _WWAN_SET_SAR_CONFIG
+ - PWWAN_SET_SAR_CONFIG
+ - WWAN_SET_SAR_CONFIG
 ---
 
 # _WWAN_SET_SAR_CONFIG structure
@@ -78,3 +79,4 @@ This structure is used in the [**NDIS_WWAN_SET_SAR_CONFIG**](../ndiswwan/ns-ndis
 [**WWAN_SAR_BACKOFF_STATE**](ne-wwan-_wwan_sar_backoff_state.md)
 
 [**WWAN_LIST_HEADER**](ns-wwan-_wwan_list_header.md)
+

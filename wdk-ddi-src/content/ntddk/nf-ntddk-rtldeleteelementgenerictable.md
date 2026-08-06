@@ -4,7 +4,6 @@ title: RtlDeleteElementGenericTable function (ntddk.h)
 description: The RtlDeleteElementGenericTable routine deletes an element from a generic table.
 old-location: ifsk\rtldeleteelementgenerictable.htm
 tech.root: ifsk
-ms.assetid: 3bf33ebb-bdb1-487d-b10f-1f00227d7128
 ms.date: 04/16/2018
 keywords: ["RtlDeleteElementGenericTable function"]
 ms.keywords: RtlDeleteElementGenericTable, RtlDeleteElementGenericTable routine [Installable File System Drivers], ifsk.rtldeleteelementgenerictable, ntddk/RtlDeleteElementGenericTable, rtlref_914df898-52aa-48cd-80ae-f57ffc5e60dd.xml
@@ -50,14 +49,14 @@ The <b>RtlDeleteElementGenericTable</b> routine deletes an element from a generi
 
 ## -parameters
 
-### -param Table 
+### -param Table [in]
 
-[in]
+
 A pointer to the generic table (<a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_rtl_generic_table">RTL_GENERIC_TABLE</a>). The table must have been initialized by calling <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlinitializegenerictable">RtlInitializeGenericTable</a>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to a caller-allocated buffer containing a value that uniquely identifies the element to be deleted.
 
 ## -returns

@@ -4,7 +4,6 @@ title: FltFindExtraCreateParameter function (fltkernel.h)
 description: The FltFindExtraCreateParameter routine searches a given ECP list for an ECP context structure of a given type and returns a pointer to this structure if it is found.
 old-location: ifsk\fltfindextracreateparameter.htm
 tech.root: ifsk
-ms.assetid: bfa38f16-55cf-40a9-b271-65d784d5156e
 ms.date: 04/16/2018
 keywords: ["FltFindExtraCreateParameter function"]
 ms.keywords: FltApiRef_e_to_o_6f7f8d49-a0b3-4a32-9a51-d31ab84baf8a.xml, FltFindExtraCreateParameter, FltFindExtraCreateParameter routine [Installable File System Drivers], fltkernel/FltFindExtraCreateParameter, ifsk.fltfindextracreateparameter
@@ -50,29 +49,29 @@ The <b>FltFindExtraCreateParameter</b> routine searches a given ECP list for an 
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in]
 
-[in]
+
 Opaque filter pointer for the minifilter driver. This pointer uniquely identifies the minifilter driver and remains constant as long as the minifilter driver is loaded.
 
-### -param EcpList 
+### -param EcpList [in]
 
-[in]
+
 Pointer to the ECP list structure in which to search for the ECP context structure (given by the <i>EcpType</i> parameter).
 
-### -param EcpType 
+### -param EcpType [in]
 
-[in]
+
 Pointer to a GUID that uniquely identifies each ECP context structure.  This GUID value is used by the <b>FltFindExtraCreateParamter</b> routine to determine if the ECP context structure exists in the ECP list (given by the <i>EcpList</i> parameter).
 
-### -param EcpContext 
+### -param EcpContext [out, optional]
 
-[out, optional]
+
 Optional parameter that receives a pointer to the found ECP context structure.  If the ECP context structure is not found in the ECP list, <i>EcpContext</i> is set to <b>NULL</b>.  If <i>EcpContext</i> is set to <b>NULL</b> by the caller, the return value of this routine can be used to determine if the ECP context structure is in the ECP list.
 
-### -param EcpContextSize 
+### -param EcpContextSize [out, optional]
 
-[out, optional]
+
 Optional parameter that receives the size, in bytes, of the found ECP context structure.  If the ECP context structure is not found in the ECP list, <i>EcpContextSize</i> is set to zero.
 
 ## -returns

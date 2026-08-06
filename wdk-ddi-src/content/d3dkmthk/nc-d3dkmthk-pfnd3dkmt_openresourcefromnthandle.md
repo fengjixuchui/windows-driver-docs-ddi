@@ -1,9 +1,8 @@
 ---
 UID: NC:d3dkmthk.PFND3DKMT_OPENRESOURCEFROMNTHANDLE
 title: PFND3DKMT_OPENRESOURCEFROMNTHANDLE (d3dkmthk.h)
-description: Opens a shared resource from an NT handle.
+description: PFND3DKMT_OPENRESOURCEFROMNTHANDLE opens a shared resource from an NT handle. The callback returns STATUS_SUCCESS if the resource was successfully opened.
 old-location: display\d3dkmtopenresourcefromnthandle.htm
-ms.assetid: d5a66102-782a-482e-8119-48015820d0c7
 ms.date: 05/10/2018
 keywords: ["PFND3DKMT_OPENRESOURCEFROMNTHANDLE callback function"]
 ms.keywords: D3DKMTOpenResourceFromNtHandle, D3DKMTOpenResourceFromNtHandle callback function [Display Devices], PFND3DKMT_OPENRESOURCEFROMNTHANDLE, PFND3DKMT_OPENRESOURCEFROMNTHANDLE callback, d3dkmthk/D3DKMTOpenResourceFromNtHandle, display.d3dkmtopenresourcefromnthandle
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
- - D3DKMTOpenResourceFromNtHandle
+ - PFND3DKMT_OPENRESOURCEFROMNTHANDLE
 ---
 
 # PFND3DKMT_OPENRESOURCEFROMNTHANDLE callback function
@@ -50,11 +49,11 @@ Opens a shared resource from an NT handle.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in, out]
 
 *pData* 
 
-[in, out] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_openresourcefromnthandle">D3DKMT_OPENRESOURCEFROMNTHANDLE</a> structure that describes information required to open a shared resource.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_openresourcefromnthandle">D3DKMT_OPENRESOURCEFROMNTHANDLE</a> structure that describes information required to open a shared resource.
 
 ## -returns
 
@@ -78,3 +77,4 @@ The NT handle to the process, which is used as the <b>hNtHandle</b> member of th
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtshareobjects">D3DKMTShareObjects</a>
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_openresourcefromnthandle">D3DKMT_OPENRESOURCEFROMNTHANDLE</a>
+

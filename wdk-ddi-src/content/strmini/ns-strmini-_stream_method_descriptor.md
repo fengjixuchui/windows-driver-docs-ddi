@@ -1,10 +1,9 @@
 ---
 UID: NS:strmini._STREAM_METHOD_DESCRIPTOR
 title: _STREAM_METHOD_DESCRIPTOR (strmini.h)
-description: 
+description: "Learn more about: _STREAM_METHOD_DESCRIPTOR structure"
 old-location: stream\stream_method_descriptor.htm
 tech.root: stream
-ms.assetid: 2C35EF9F-143C-4DE2-93D0-5BCF8AADF11B
 ms.date: 04/23/2018
 keywords: ["STREAM_METHOD_DESCRIPTOR structure"]
 ms.keywords: "*PSTREAM_METHOD_DESCRIPTOR, PSTREAM_METHOD_DESCRIPTOR, PSTREAM_METHOD_DESCRIPTOR structure pointer [Streaming Media Devices], STREAM_METHOD_DESCRIPTOR, STREAM_METHOD_DESCRIPTOR structure [Streaming Media Devices], _STREAM_METHOD_DESCRIPTOR, stream.stream_method_descriptor, strmini/PSTREAM_METHOD_DESCRIPTOR, strmini/STREAM_METHOD_DESCRIPTOR"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Strmini.h
 api_name:
+ - _STREAM_METHOD_DESCRIPTOR
+ - PSTREAM_METHOD_DESCRIPTOR
  - STREAM_METHOD_DESCRIPTOR
 ---
 

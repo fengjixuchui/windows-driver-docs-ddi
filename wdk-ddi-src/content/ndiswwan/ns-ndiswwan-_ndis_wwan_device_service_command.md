@@ -4,7 +4,6 @@ title: _NDIS_WWAN_DEVICE_SERVICE_COMMAND (ndiswwan.h)
 description: The NDIS_WWAN_DEVICE_SERVICE_COMMAND structure describes device service command data.
 old-location: netvista\ndis_wwan_device_service_command.htm
 tech.root: netvista
-ms.assetid: 372625F8-0219-4867-909D-ACCC82F6B97C
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_DEVICE_SERVICE_COMMAND structure"]
 ms.keywords: "*PNDIS_WWAN_DEVICE_SERVICE_COMMAND, NDIS_WWAN_DEVICE_SERVICE_COMMAND, NDIS_WWAN_DEVICE_SERVICE_COMMAND structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_DEVICE_SERVICE_COMMAND, PNDIS_WWAN_DEVICE_SERVICE_COMMAND structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_DEVICE_SERVICE_COMMAND, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_COMMAND, ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_COMMAND, netvista.ndis_wwan_device_service_command"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_DEVICE_SERVICE_COMMAND
+ - PNDIS_WWAN_DEVICE_SERVICE_COMMAND
  - NDIS_WWAN_DEVICE_SERVICE_COMMAND
 ---
 
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_DEVICE_SERVICE_COMMAND)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field Command
 
@@ -111,3 +112,4 @@ The device service command.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_device_service_command">WWAN_DEVICE_SERVICE_COMMAND</a>
+

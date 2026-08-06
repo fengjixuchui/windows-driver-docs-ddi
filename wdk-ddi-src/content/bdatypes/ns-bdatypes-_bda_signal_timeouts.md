@@ -1,10 +1,9 @@
 ---
 UID: NS:bdatypes._BDA_SIGNAL_TIMEOUTS
 title: _BDA_SIGNAL_TIMEOUTS (bdatypes.h)
-description: 
+description: "Learn more about: _BDA_SIGNAL_TIMEOUTS structure"
 old-location: stream\bda_signal_timeouts.htm
 tech.root: stream
-ms.assetid: CFEF848D-8268-4FFC-A629-D122021D8411
 ms.date: 04/23/2018
 keywords: ["BDA_SIGNAL_TIMEOUTS structure"]
 ms.keywords: "*PBDA_SIGNAL_TIMEOUTS, BDA_SIGNAL_TIMEOUTS, BDA_SIGNAL_TIMEOUTS structure [Streaming Media Devices], PBDA_SIGNAL_TIMEOUTS, PBDA_SIGNAL_TIMEOUTS structure pointer [Streaming Media Devices], _BDA_SIGNAL_TIMEOUTS, bdatypes/BDA_SIGNAL_TIMEOUTS, bdatypes/PBDA_SIGNAL_TIMEOUTS, stream.bda_signal_timeouts"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Bdatypes.h
 api_name:
+ - _BDA_SIGNAL_TIMEOUTS
+ - PBDA_SIGNAL_TIMEOUTS
  - BDA_SIGNAL_TIMEOUTS
 ---
 

@@ -4,7 +4,6 @@ title: _IRB_REQ_ASYNC_READ (1394.h)
 description: This structure contains the fields necessary for the 1394 stack to carry out an asynchronous read request.
 old-location: ieee\irb_req_async_read.htm
 tech.root: IEEE
-ms.assetid: C88A1F30-FC6B-4EC4-8F10-F507E17CF01D
 ms.date: 02/15/2018
 keywords: ["IRB_REQ_ASYNC_READ structure"]
 ms.keywords: 1394/IRB_REQ_ASYNC_READ, IEEE.irb_req_async_read, IRB_REQ_ASYNC_READ, IRB_REQ_ASYNC_READ structure [Buses], _IRB_REQ_ASYNC_READ
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _IRB_REQ_ASYNC_READ
  - IRB_REQ_ASYNC_READ
 ---
 
@@ -132,3 +132,4 @@ Reserved. Drivers must set this to zero.
 ### -field ElapsedTime
 
 Elapsed time in nanoseconds. Only valid for flag ASYNC_FLAGS_PING.
+

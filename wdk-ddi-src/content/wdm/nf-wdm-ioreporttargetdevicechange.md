@@ -4,7 +4,6 @@ title: IoReportTargetDeviceChange function (wdm.h)
 description: The IoReportTargetDeviceChange routine notifies the PnP manager that a custom event has occurred on a device.
 old-location: kernel\ioreporttargetdevicechange.htm
 tech.root: kernel
-ms.assetid: b0107cb1-4828-4ede-813e-934b929c9874
 ms.date: 04/30/2018
 keywords: ["IoReportTargetDeviceChange function"]
 ms.keywords: IoReportTargetDeviceChange, IoReportTargetDeviceChange routine [Kernel-Mode Driver Architecture], k104_489fe1b0-1d73-4ed6-99ab-ae8f4bee52d1.xml, kernel.ioreporttargetdevicechange, wdm/IoReportTargetDeviceChange
@@ -50,14 +49,14 @@ The <b>IoReportTargetDeviceChange</b> routine notifies the PnP manager that a cu
 
 ## -parameters
 
-### -param PhysicalDeviceObject 
+### -param PhysicalDeviceObject [in]
 
-[in]
+
 Pointer to the PDO of the device being reported.
 
-### -param NotificationStructure 
+### -param NotificationStructure [in]
 
-[in]
+
 Pointer to a caller-supplied <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_target_device_custom_notification">TARGET_DEVICE_CUSTOM_NOTIFICATION</a> structure describing the custom event. The PnP manager sends this structure to drivers that registered for notification of the event.
 
 <i>NotificationStructure</i>.<b>FileObject</b> must be <b>NULL</b>. <i>NotificationStructure</i>.<b>Event</b> must contain the custom GUID for the event. The other fields of the <i>NotificationStructure</i> must be filled in as appropriate for the custom event.

@@ -1,9 +1,8 @@
 ---
 UID: NC:dispmprt.DXGKDDI_QUERYPROBEDBARS
 title: DXGKDDI_QUERYPROBEDBARS
-description: 
+description: "Learn more about: DXGKDDI_QUERYPROBEDBARS callback function"
 tech.root: display
-ms.assetid: 939bdb9f-a18f-4d49-8cbc-9b1c487e45c1
 ms.date: 04/04/2019
 keywords: ["DXGKDDI_QUERYPROBEDBARS callback function"]
 req.header: dispmprt.h
@@ -36,8 +35,6 @@ api_location:
  - dispmprt.h
 api_name:
  - DXGKDDI_QUERYPROBEDBARS
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,13 +48,13 @@ This routine allows a non-privileged virtual machine to find out what would have
 
 ## -parameters
 
-### -param Context
+### -param Context [in]
 
-[in] The miniport context that is returned by the driver in the [DXGKDDI_SRIOV_INTERFACE](ns-dispmprt-_dxgkddi_sriov_interface.md) structure.
+The miniport context that is returned by the driver in the [DXGKDDI_SRIOV_INTERFACE](ns-dispmprt-_dxgkddi_sriov_interface.md) structure.
 
-### -param pArgs
+### -param pArgs [in, out]
 
-[in, out] Pointer to the DXGKARG_QUERYPROBEDBARS structure.
+Pointer to the DXGKARG_QUERYPROBEDBARS structure.
 
 ## -prototype
 

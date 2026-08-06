@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_SET_PIPELINE_STACK_SIZE_0054
 title: PFND3D12DDI_SET_PIPELINE_STACK_SIZE_0054 (d3d12umddi.h)
 description: Sets the current pipeline stack size.
-ms.assetid: 0925f8dc-0a20-43e5-8d2e-d47005e3b392
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_SET_PIPELINE_STACK_SIZE_0054 callback function"]
 req.header: d3d12umddi.h
@@ -49,11 +48,11 @@ SetPipelineStackSize sets the current pipeline stack size.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the state object.
 
-### -param Arg2
+### -param unnamedParam2
 
 Stack size in bytes to use during pipeline execution for each shader thread (of which there can be many thousands in flight on the GPU).
 

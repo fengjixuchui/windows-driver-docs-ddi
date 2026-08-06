@@ -4,7 +4,6 @@ title: _AddTarget_OUT (hbapiwmi.h)
 description: The AddTarget_OUT structure is used by a WMI provider to report the output parameter data of the AddTarget WMI method to the WMI client.
 old-location: storage\addtarget_out.htm
 tech.root: storage
-ms.assetid: 1e0f19df-1705-4a70-a47c-0569907330a4
 ms.date: 03/29/2018
 keywords: ["AddTarget_OUT structure"]
 ms.keywords: "*PAddTarget_OUT, AddTarget_OUT, AddTarget_OUT structure [Storage Devices], PAddTarget_OUT, PAddTarget_OUT structure pointer [Storage Devices], _AddTarget_OUT, hbapiwmi/AddTarget_OUT, hbapiwmi/PAddTarget_OUT, storage.addtarget_out, structs-Fibre_b3dd963b-2fd1-4fbe-bfe3-b363a95f1a51.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hbapiwmi.h
 api_name:
+ - _AddTarget_OUT
+ - PAddTarget_OUT
  - AddTarget_OUT
 ---
 
@@ -61,3 +62,4 @@ Contains the status of the operation. For a list of allowed values and their des
 ## -see-also
 
 <a href="/windows-hardware/drivers/storage/addtarget">AddTarget</a>
+

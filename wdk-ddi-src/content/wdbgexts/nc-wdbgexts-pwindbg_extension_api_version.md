@@ -4,7 +4,6 @@ title: PWINDBG_EXTENSION_API_VERSION (wdbgexts.h)
 description: The PWINDBG_EXTENSION_API_VERSION (ExtensionApiVersion) callback function returns version information about the extension DLL.
 old-location: debugger\extensionapiversion.htm
 tech.root: debugger
-ms.assetid: 1bc24b16-7dbf-4c95-87ac-c9b38e6a4c59
 ms.date: 05/03/2018
 keywords: ["PWINDBG_EXTENSION_API_VERSION callback function"]
 ms.keywords: ExtensionApiVersion, ExtensionApiVersion callback function [Windows Debugging], PWINDBG_EXTENSION_API_VERSION, PWINDBG_EXTENSION_API_VERSION callback, WdbgExts_Callbacks_1aa063c9-a47d-4c18-a643-007f635b8cff.xml, debugger.extensionapiversion, wdbgexts/ExtensionApiVersion
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdbgexts.h
 api_name:
- - ExtensionApiVersion
+ - PWINDBG_EXTENSION_API_VERSION
 ---
 
 # PWINDBG_EXTENSION_API_VERSION callback function
@@ -47,8 +46,6 @@ api_name:
 ## -description
 
 The <i>PWINDBG_EXTENSION_API_VERSION</i> (<b>ExtensionApiVersion</b>) callback function returns version information about the extension DLL.
-
-## -parameters
 
 ## -returns
 
@@ -65,3 +62,4 @@ The debugger uses the <b>MajorVersion</b> and <b>MinorVersion</b> fields of the 
 The <b>Revision</b> field of the returned <b>EXT_API_VERSION</b> structure should be EXT_API_VERSION_NUMBER64 if you are using 64-bit pointers in your code, or EXT_API_VERSION_NUMBER32 if you are using 32-bit pointers. It is recommended that you always use 64-bit pointers in your code, since the debugger will automatically resize these pointers when necessary. See <a href="/windows-hardware/drivers/debugger/32-bit-pointers-and-64-bit-pointers">32-Bit Pointers and 64-Bit Pointers</a> for details.
 
 For more details, see <a href="/windows-hardware/drivers/debugger/using-wdbgexts-extension-callbacks">Using WdbgExts Extension Callbacks</a>.
+

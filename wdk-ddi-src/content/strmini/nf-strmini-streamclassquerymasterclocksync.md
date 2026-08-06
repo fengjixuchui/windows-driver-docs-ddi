@@ -4,7 +4,6 @@ title: StreamClassQueryMasterClockSync function (strmini.h)
 description: The minidriver may call the StreamClassQueryMasterClockSync routine to synchronously query a stream's master clock.
 old-location: stream\streamclassquerymasterclocksync.htm
 tech.root: stream
-ms.assetid: db58103d-8862-4be1-bca2-9d59d392591c
 ms.date: 04/23/2018
 keywords: ["StreamClassQueryMasterClockSync function"]
 ms.keywords: StreamClassQueryMasterClockSync, StreamClassQueryMasterClockSync routine [Streaming Media Devices], strclass-routines_32944030-bbcb-4f21-98cd-09c77ad3cd53.xml, stream.streamclassquerymasterclocksync, strmini/StreamClassQueryMasterClockSync
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Stream.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL (See Remarks section)
+req.irql: <= DISPATCH_LEVEL (See Remarks section)
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,14 +50,14 @@ The minidriver may call the <b>StreamClassQueryMasterClockSync</b> routine to sy
 
 ## -parameters
 
-### -param MasterClockHandle 
+### -param MasterClockHandle [in]
 
-[in]
+
 Specifies the handle for the master clock that is being queried. The class driver passes this in the SRB_INDICATE_MASTER_CLOCK request to the minidriver's <a href="/previous-versions/ff568467(v=vs.85)">StrMiniReceiveStreamControlPacket</a> routine.
 
-### -param TimeContext 
+### -param TimeContext [in, out]
 
-[in, out]
+
 Specifies the <a href="/windows-hardware/drivers/ddi/strmini/ns-strmini-_hw_time_context">HW_TIME_CONTEXT</a> structure that the class driver passes to the master clock's <a href="/windows-hardware/drivers/ddi/strmini/nc-strmini-phw_query_clock_routine">StrMiniClock</a> routine. Before calling this routine, the minidriver must fill in the <b>HwDeviceExtension</b>, <b>HwStreamObject</b>, and <b>Function</b> members of <i>TimeContext</i>. <b>StreamClassQueryMasterClockSync</b> completes the <b>Time</b> and <b>SystemTime</b> members.
 
 ## -returns

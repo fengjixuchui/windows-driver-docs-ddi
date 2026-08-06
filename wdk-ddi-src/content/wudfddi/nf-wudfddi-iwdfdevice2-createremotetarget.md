@@ -4,7 +4,6 @@ title: IWDFDevice2::CreateRemoteTarget (wudfddi.h)
 description: The CreateRemoteTarget method creates a remote target object that represents a remote I/O target.
 old-location: wdf\iwdfdevice2_createremotetarget.htm
 tech.root: wdf
-ms.assetid: 0b11d913-f488-4237-85e3-4469eefc0b91
 ms.date: 02/26/2018
 keywords: ["IWDFDevice2::CreateRemoteTarget"]
 ms.keywords: CreateRemoteTarget, CreateRemoteTarget method, CreateRemoteTarget method,IWDFDevice2 interface, IWDFDevice2 interface,CreateRemoteTarget method, IWDFDevice2.CreateRemoteTarget, IWDFDevice2::CreateRemoteTarget, UMDFDeviceObjectRef_877f2d10-92a7-4e04-b07e-683b728c691a.xml, umdf.iwdfdevice2_createremotetarget, wdf.iwdfdevice2_createremotetarget, wudfddi/IWDFDevice2::CreateRemoteTarget
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice2.CreateRemoteTarget
+ - IWDFDevice2::CreateRemoteTarget
 ---
 
 # IWDFDevice2::CreateRemoteTarget
@@ -52,19 +51,19 @@ The <b>CreateRemoteTarget</b> method creates a remote target object that represe
 
 ## -parameters
 
-### -param pCallbackInterface 
+### -param pCallbackInterface [in, optional]
 
-[in, optional]
+
 A pointer to an optional, driver-supplied callback interface. The <b>IUnknown::QueryInterface</b> method of this interface must return a pointer to the driver's <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iremotetargetcallbackremoval">IRemoteTargetCallbackRemoval</a> interface, if the driver supports that interface. This parameter is optional and can be <b>NULL</b>.
 
-### -param pParentObject 
+### -param pParentObject [in, optional]
 
-[in, optional]
+
 A pointer to a framework object. If the driver provides this optional pointer, the specified object becomes the parent of the new remote target object. If this parameter is <b>NULL</b>, the device object that provides the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice2">IWDFDevice2</a> interface becomes the parent. The framework will delete the remote target object when it deletes the parent object.
 
-### -param ppRemoteTarget 
+### -param ppRemoteTarget [out]
 
-[out]
+
 A pointer to a location that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfremotetarget">IWDFRemoteTarget</a> interface of the new remote target object.
 
 ## -returns
@@ -129,3 +128,4 @@ For code examples that use <b>CreateRemoteTarget</b>, see the code examples at <
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfremotetarget-openremoteinterface">IWDFRemoteTarget::OpenRemoteInterface</a>
+

@@ -4,7 +4,6 @@ title: EVT_SERCX_TRANSMIT (sercx.h)
 description: The EvtSerCxTransmit event callback function prepares the serial controller device (UART) to do a write (transmit) operation.
 old-location: serports\evtsercxtransmit.htm
 tech.root: serports
-ms.assetid: B32335E4-3BDF-4161-9BE2-CF3557D76988
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX_TRANSMIT callback function"]
 ms.keywords: 1/EvtSerCxTransmit, EVT_SERCX_TRANSMIT, EVT_SERCX_TRANSMIT callback, EvtSerCxTransmit, EvtSerCxTransmit callback function [Serial Ports], serports.evtsercxtransmit
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 1.0\Sercx.h
 api_name:
- - EvtSerCxTransmit
+ - EVT_SERCX_TRANSMIT
 ---
 
 # EVT_SERCX_TRANSMIT callback function
@@ -50,14 +49,14 @@ The <i>EvtSerCxTransmit</i> event callback function prepares the serial controll
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the serial controller.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The number of bytes to be transmitted. The controller driver can use this value as a hint to decide whether to use PIO or DMA to perform the data transfer.
 
 ## -returns
@@ -120,3 +119,4 @@ For more information about SDV requirements for function declarations, see <a hr
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdpc/nf-wdfdpc-wdfdpcenqueue">WdfDpcEnqueue</a>
+

@@ -2,8 +2,7 @@
 UID: NS:uart._UART_HARDWARE_DRIVER
 title: _UART_HARDWARE_DRIVER (uart.h)
 description: Contains function pointers for interacting with a specific type of UART hardware.
-tech.root: serports
-ms.assetid: 8c521dda-f906-44a8-b0cc-283bd1afacf6
+tech.root: uart
 ms.date: 10/19/2018
 keywords: ["UART_HARDWARE_DRIVER structure"]
 ms.keywords: _UART_HARDWARE_DRIVER, UART_HARDWARE_DRIVER, *PUART_HARDWARE_DRIVER,
@@ -36,10 +35,11 @@ api_location:
  - uart.h
 api_name:
  - _UART_HARDWARE_DRIVER
+ - PUART_HARDWARE_DRIVER
+ - UART_HARDWARE_DRIVER
 ---
 
 # _UART_HARDWARE_DRIVER structure
-
 
 ## -description
 
@@ -53,7 +53,7 @@ A pointer to a [**UART_INITIALIZE_PORT**](nc-uart-uart_initialize_port.md) callb
 
 ### -field SetBaud
 
-A pointer to a [**UART_SET_BAUD**](ns-uart-_uart_hardware_driver.md) callback function that sets the baud rate of the UART hardware to the specified value.
+A pointer to a [**UART_SET_BAUD**](nc-uart-uart_set_baud.md) callback function that sets the baud rate of the UART hardware to the specified value.
 
 ### -field GetByte
 
@@ -67,7 +67,16 @@ A pointer to a [**UART_PUT_BYTE**](nc-uart-uart_put_byte.md) callback function t
 
 A pointer to a [**UART_RX_READY**](nc-uart-uart_rx_ready.md) callback function that determines whether there is data pending in the UART hardware.
 
+### -field SetPowerD0
+
+For information about Windows power states, see [Device Power States](/windows-hardware/drivers/kernel/device-power-states)
+
+### -field SetPowerD3
+
+For information about Windows power states, see [Device Power States](/windows-hardware/drivers/kernel/device-power-states)
+
 ## -remarks
 
 ## -see-also
 
+[**uart.h**](index.md)

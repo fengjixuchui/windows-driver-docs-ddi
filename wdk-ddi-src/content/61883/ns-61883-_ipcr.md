@@ -4,7 +4,6 @@ title: _IPCR (61883.h)
 description: The IPCR structure contains initialization values for an input plug.
 old-location: ieee\ipcr.htm
 tech.root: IEEE
-ms.assetid: 81c89fbc-5d58-4983-b591-765a7818b932
 ms.date: 02/15/2018
 keywords: ["IPCR structure"]
 ms.keywords: "*PIPCR, 61883/IPCR, 61883/PIPCR, 61883_structures_e7226c37-f3b1-4e57-977a-6fb25c853f19.xml, IEEE.ipcr, IPCR, IPCR structure [Buses], PIPCR, PIPCR structure pointer [Buses], _IPCR"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _IPCR
+ - PIPCR
  - IPCR
 ---
 
@@ -81,3 +82,4 @@ Indicates, when one, that the corresponding input plug is on-line. When zero it 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_av_pcr">AV_PCR</a>
+

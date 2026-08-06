@@ -4,7 +4,6 @@ title: NdisIfDeregisterProvider function (ndis.h)
 description: The NdisIfDeregisterProvider function deregisters an interface provider that was previously registered by a call to the NdisIfRegisterProvider function.
 old-location: netvista\ndisifderegisterprovider.htm
 tech.root: netvista
-ms.assetid: 90e921e3-b384-495b-8cb6-74596d060ec0
 ms.date: 05/02/2018
 keywords: ["NdisIfDeregisterProvider function"]
 ms.keywords: NdisIfDeregisterProvider, NdisIfDeregisterProvider function [Network Drivers Starting with Windows Vista], ndis/NdisIfDeregisterProvider, net_if_functions_ref_7e9c9d72-3b55-4001-9848-c79608608c82.xml, netvista.ndisifderegisterprovider
@@ -55,9 +54,9 @@ The
 
 ## -parameters
 
-### -param NdisProviderHandle 
+### -param NdisProviderHandle [in]
 
-[in]
+
 A handle that identifies the network interface provider. The caller obtained this handle from a
      previous call to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisifregisterprovider">

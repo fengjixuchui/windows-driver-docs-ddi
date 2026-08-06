@@ -4,7 +4,6 @@ title: IWDFDevice3::CreateWorkItem (wudfddi.h)
 description: The CreateWorkItem method creates a framework work-item object, which can subsequently be added to the framework’s work-item queue.
 old-location: wdf\iwdfdevice3_createworkitem.htm
 tech.root: wdf
-ms.assetid: B34EABF4-C659-4DB4-AEC6-94F544D79221
 ms.date: 02/26/2018
 keywords: ["IWDFDevice3::CreateWorkItem"]
 ms.keywords: CreateWorkItem, CreateWorkItem method, CreateWorkItem method,IWDFDevice3 interface, IWDFDevice3 interface,CreateWorkItem method, IWDFDevice3.CreateWorkItem, IWDFDevice3::CreateWorkItem, umdf.iwdfdevice3_createworkitem, wdf.iwdfdevice3_createworkitem, wudfddi/IWDFDevice3::CreateWorkItem
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice3.CreateWorkItem
+ - IWDFDevice3::CreateWorkItem
 ---
 
 # IWDFDevice3::CreateWorkItem
@@ -52,19 +51,19 @@ The <b>CreateWorkItem</b> method creates a framework work-item object, which can
 
 ## -parameters
 
-### -param pConfig 
+### -param pConfig [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wudfworkitem/ns-wudfworkitem-_wudf_workitem_config">WUDF_WORKITEM_CONFIG</a> structure that the driver must have already initialized by calling <a href="/windows-hardware/drivers/ddi/wudfworkitem/nf-wudfworkitem-wudf_workitem_config_init">WUDF_WORKITEM_CONFIG_INIT</a>.
 
-### -param pParentObject 
+### -param pParentObject [in, optional]
 
-[in, optional]
+
 A pointer to the parent object interface or NULL.
 
-### -param ppWorkItem 
+### -param ppWorkItem [out]
 
-[out]
+
 A pointer to a buffer that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfworkitem">IWDFWorkItem</a> interface for the new WorkItem object.
 
 ## -returns
@@ -91,7 +90,6 @@ hr = m_IWdfDevice3->CreateWorkItem(&config,
 
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a>
@@ -111,3 +109,4 @@ hr = m_IWdfDevice3->CreateWorkItem(&config,
 
 
 <a href="/windows-hardware/drivers/ddi/wudfworkitem/nf-wudfworkitem-wudf_workitem_config_init">WUDF_WORKITEM_CONFIG_INIT</a>
+

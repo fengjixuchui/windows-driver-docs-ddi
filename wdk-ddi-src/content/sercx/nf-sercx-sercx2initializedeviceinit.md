@@ -4,7 +4,6 @@ title: SerCx2InitializeDeviceInit function (sercx.h)
 description: The SerCx2InitializeDeviceInit method enables version 2 of the serial framework extension (SerCx2) to register extension-specific properties with the driver framework during the creation of the framework device object for the serial controller.
 old-location: serports\sercx2initializedeviceinit.htm
 tech.root: serports
-ms.assetid: E63B234D-07B7-467D-A13B-157781513F22
 ms.date: 04/23/2018
 keywords: ["SerCx2InitializeDeviceInit function"]
 ms.keywords: 2/SerCx2InitializeDeviceInit, SerCx2InitializeDeviceInit, SerCx2InitializeDeviceInit method [Serial Ports], serports.sercx2initializedeviceinit
@@ -50,9 +49,9 @@ The <b>SerCx2InitializeDeviceInit</b> method enables version 2 of the serial fra
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in, out]
 
-[in, out]
+
 A pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure, which is an opaque structure that stores information that the Kernel Mode Driver Framework (KMDF) uses to create a framework device object. The serial controller driver receives a pointer to this structure as an input parameter to the driver's <a href="/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add">EvtDriverDeviceAdd</a> callback function.
 
 ## -returns

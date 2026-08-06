@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_PINDIRECTFLIPRESOURCES
 title: PFND3DKMT_PINDIRECTFLIPRESOURCES (d3dkmthk.h)
 description: The PFND3DKMT_PINDIRECTFLIPRESOURCES callback function pins direct flip resources.
-ms.assetid: 7cb8aa84-fd33-4667-af4d-6ceb20e5edf5
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_PINDIRECTFLIPRESOURCES callback function"]
 req.header: d3dkmthk.h
@@ -36,7 +35,6 @@ api_location:
  - d3dkmthk.h
 api_name:
  - PFND3DKMT_PINDIRECTFLIPRESOURCES
- - D3DKMTPinDirectFlipResources
 dev_langs:
  - c++
 ---
@@ -50,7 +48,7 @@ The PFND3DKMT_PINDIRECTFLIPRESOURCES callback function pins direct flip resource
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *\_In\_* *pResources*
 

@@ -4,7 +4,6 @@ title: IPrintReadStream::ReadBytes (filterpipeline.h)
 description: The ReadBytes method reads a number of bytes into a buffer.
 old-location: print\iprintreadstream_readbytes.htm
 tech.root: print
-ms.assetid: 41ba600d-8b89-4e07-950a-a2518c2572a6
 ms.date: 04/20/2018
 keywords: ["IPrintReadStream::ReadBytes"]
 ms.keywords: IPrintReadStream interface [Print Devices],ReadBytes method, IPrintReadStream.ReadBytes, IPrintReadStream::ReadBytes, ReadBytes, ReadBytes method [Print Devices], ReadBytes method [Print Devices],IPrintReadStream interface, filterpipeline/IPrintReadStream::ReadBytes, filterpipeline_92cb33c3-6229-47ca-b3da-2f4c268f8b7b.xml, print.iprintreadstream_readbytes
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - filterpipeline.h
 api_name:
- - IPrintReadStream.ReadBytes
+ - IPrintReadStream::ReadBytes
 ---
 
 # IPrintReadStream::ReadBytes
@@ -50,24 +49,24 @@ The <code>ReadBytes</code> method reads a number of bytes into a buffer.
 
 ## -parameters
 
-### -param pvBuffer 
+### -param pvBuffer [out]
 
-[out]
+
 A pointer to the buffer that the bytes will be read into..
 
-### -param cbRequested 
+### -param cbRequested [in]
 
-[in]
+
 The number of bytes that are requested for the read.
 
-### -param pcbRead 
+### -param pcbRead [out]
 
-[out]
+
 A pointer to the number of bytes actually read.
 
-### -param pbEndOfFile 
+### -param pbEndOfFile [out]
 
-[out]
+
 A pointer to a <b>BOOL</b> value that indicates whether the end of file (EOF) was read.
 
 ## -returns

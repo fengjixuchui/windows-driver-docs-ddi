@@ -1,9 +1,8 @@
 ---
 UID: NC:d3dkmddi.DXGKDDI_RESUMECONTEXT
 title: DXGKDDI_RESUMECONTEXT (d3dkmddi.h)
-description: Resumes a context. A context is created in a resumed state by default.
-ms.assetid: 57730d60-f6d7-4c86-92c5-dcd33108e99b
-ms.date: 10/19/2018
+description: Learn more about the DXGKDDI_RESUMECONTEXT callback function.
+ms.date: 04/08/2024
 keywords: ["DXGKDDI_RESUMECONTEXT callback function"]
 req.header: d3dkmddi.h
 req.include-header: 
@@ -42,49 +41,28 @@ dev_langs:
 
 # DXGKDDI_RESUMECONTEXT callback function
 
-
 ## -description
 
-Resumes a context. A context is created in a resumed state by default.
+**DxgkddiResumeContext** resumes a context. A context is created in a resumed state by default.
 
 ## -parameters
 
 ### -param hAdapter
 
-The hardware context to be resumed.
+[in] The hardware context to be resumed.
 
 ### -param pResumeContext
 
-Pointer a [DXGKARG_RESUMECONTEXT](ns-d3dkmddi-_dxgkarg_resumecontext.md) structure that contains information to resume the content.
+[in] Pointer a [**DXGKARG_RESUMECONTEXT**](ns-d3dkmddi-_dxgkarg_resumecontext.md) structure that contains information to resume the content.
 
 ## -returns
 
-Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate NTSTATUS Values error code.
-
-## -prototype
-
-```cpp
-//Declaration
-
-DXGKDDI_RESUMECONTEXT DxgkddiResumecontext;
-
-// Definition
-
-NTSTATUS DxgkddiResumecontext
-(
-	IN_CONST_HANDLE hAdapter
-	IN_CONST_PDXGKARG_RESUMECONTEXT pResumeContext
-)
-{...}
-
-DXGKDDI_RESUMECONTEXT *PDXGKDDI_RESUMECONTEXT
-
-
-```
+**DxgkddiResumeContext** returns STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate NTSTATUS error code.
 
 ## -remarks
 
-Register your implementation of this callback function by setting the appropriate member of DXGKARG_RESUMECONTEXT and then calling DxgkDdiResumeContext.
+Register your implementation of this callback function by setting it in [**DRIVER_INITIALIZATION_DATA**](/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_driver_initialization_data).
 
 ## -see-also
 
+[**DxgkddiSuspendContext**](nc-d3dkmddi-dxgkddi_suspendcontext.md)

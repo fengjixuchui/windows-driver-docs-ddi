@@ -4,7 +4,6 @@ title: ClfsDeleteLogFile function (wdm.h)
 description: The ClfsDeleteLogFile routine marks a CLFS stream for deletion.
 old-location: kernel\clfsdeletelogfile.htm
 tech.root: kernel
-ms.assetid: a8c90199-e938-45bb-9356-48591e127eed
 ms.date: 04/30/2018
 keywords: ["ClfsDeleteLogFile function"]
 ms.keywords: ClfsDeleteLogFile, ClfsDeleteLogFile routine [Kernel-Mode Driver Architecture], Clfs_0b23f7ac-c175-4eaf-b6c9-9b23b6ebe7e3.xml, kernel.clfsdeletelogfile, wdm/ClfsDeleteLogFile
@@ -51,9 +50,9 @@ The <b>ClfsDeleteLogFile</b> routine marks a CLFS stream for deletion.
 
 ## -parameters
 
-### -param puszLogFileName 
+### -param puszLogFileName [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that supplies the name of the CLFS stream to be deleted. 
 
 If the stream to be deleted is the only stream of a dedicated log, the name has the form log:<i>physical log name</i>, where <i>physical log name</i> is the path name of the physical log on the underlying file system.
@@ -64,25 +63,20 @@ If the stream to be deleted is one of the streams of a multiplexed log, the name
 
 Reserved.
 
-### -param fLogOptionFlag 
+### -param fLogOptionFlag [in]
 
-[in]
+
 A value that indicates the relationship between CLFS and the component that is deleting the log. For a list of possible values, see the description of the <i>fLogOptionFlag</i> parameter of the <b>ClfsCreateLogFile</b> routine.
 
-### -param pvContext 
+### -param pvContext [in, optional]
 
-[in, optional]
+
 A pointer to a context. The way the context is interpreted depends on the value passed in <i>fLogOptionFlag</i>.
 
-### -param cbContext 
+### -param cbContext [in]
 
-[in]
+
 The size, in bytes, of the context pointed to by <i>pvContex</i>t. If <i>pvContext</i> is not <b>NULL</b>, this parameter must be greater than zero.
-
-
-#### - psdLogFile [in, optional]
-
-A pointer to a <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor">SECURITY_DESCRIPTOR</a> structure that supplies the security attributes for accessing the stream. This parameter can be <b>NULL</b>.
 
 ## -returns
 

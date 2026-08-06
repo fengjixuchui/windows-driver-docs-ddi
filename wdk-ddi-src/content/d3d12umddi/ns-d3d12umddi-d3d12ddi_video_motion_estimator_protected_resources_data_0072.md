@@ -2,9 +2,7 @@
 UID: NS:d3d12umddi.D3D12DDI_VIDEO_MOTION_ESTIMATOR_PROTECTED_RESOURCES_DATA_0072
 title: D3D12DDI_VIDEO_MOTION_ESTIMATOR_PROTECTED_RESOURCES_DATA_0072
 ms.date: 03/24/2020
-ms.topic: language-reference
 targetos: Windows
-ms.assetid: 82053dcb-bf13-4b34-a920-cda01f911db6
 tech.root: display
 description: Data structure used to check for video motion estimator protected resource support capabilities on a given node index.
 req.construct-type: structure
@@ -43,13 +41,13 @@ Data structure used to check for video motion estimator protected resource suppo
 
 ## -struct-fields
 
-### -field NodeIndex
+### -field NodeIndex [in]
 
-[in] In multi-adapter operation, this indicates which physical adapter of the device this operation applies to.
+In multi-adapter operation, this indicates which physical adapter of the device this operation applies to.
 
-### -field SupportFlags
+### -field SupportFlags [out]
 
-[out] A [**D3D12DDI_VIDEO_PROTECTED_RESOURCE_SUPPORT_FLAGS_0072**](ne-d3d12umddi-d3d12ddi_video_protected_resource_support_flags_0072.md) value in which to return the video motion estimator protected resource support level.
+A [**D3D12DDI_VIDEO_PROTECTED_RESOURCE_SUPPORT_FLAGS_0072**](ne-d3d12umddi-d3d12ddi_video_protected_resource_support_flags_0072.md) value in which to return the video motion estimator protected resource support level.
 
 ## -remarks
 

@@ -4,7 +4,6 @@ title: _AV_PCR (61883.h)
 description: The AV_PCR structure specifies settings for an input or output plug.
 old-location: ieee\av_pcr.htm
 tech.root: IEEE
-ms.assetid: f6d3f95b-7484-4a6b-9b7e-69f6172b7a12
 ms.date: 02/15/2018
 keywords: ["AV_PCR structure"]
 ms.keywords: "*PAV_PCR, 61883/AV_PCR, 61883/PAV_PCR, 61883_structures_d8602c71-aca5-427d-a8bf-d1da914ebacc.xml, AV_PCR, AV_PCR structure [Buses], IEEE.av_pcr, PAV_PCR, PAV_PCR structure pointer [Buses], _AV_PCR"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _AV_PCR
+ - PAV_PCR
  - AV_PCR
 ---
 
@@ -68,8 +69,6 @@ Reserved for internal use.
 
 ## -see-also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536961">Av61883_CreatePlug</a>
+<a href="/windows-hardware/drivers/ddi/61883/ns-61883-_av_61883_request">AV_61883_REQUEST structure</a>
 
 
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536995">Av61883_SetPlug</a>

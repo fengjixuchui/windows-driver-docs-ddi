@@ -1,9 +1,8 @@
 ---
 UID: NF:storport.StorPortLogTelemetryEx
 title: StorPortLogTelemetryEx function
-description: The StorPortLogTelemetry routine logs a miniport telemetry event to help diagnose or collect any useful information.
+description: Learn how the StorPortLogTelemetry routine logs a miniport telemetry event to help diagnose or collect any useful information.
 tech.root: storage
-ms.assetid: a4b538e9-f121-4081-9b01-2a9b38c1e266
 ms.date: 03/05/2019
 keywords: ["StorPortLogTelemetryEx function"]
 ms.keywords: StorPortLogTelemetryEx, STOR_TELEMETRY_CATEGORY, STORPORT_TELEMETRY_EVENT, StorPortLogTelemetry
@@ -37,8 +36,6 @@ api_location:
  - storport.h
 api_name:
  - StorPortLogTelemetryEx
-product:
- - Windows
 dev_langs:
  - c++
 ---

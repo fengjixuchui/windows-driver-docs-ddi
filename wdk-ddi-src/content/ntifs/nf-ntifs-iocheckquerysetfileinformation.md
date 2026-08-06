@@ -1,10 +1,9 @@
 ---
 UID: NF:ntifs.IoCheckQuerySetFileInformation
 title: IoCheckQuerySetFileInformation function (ntifs.h)
-description: Reserved for system use.
+description: "Microsoft reserves the IoCheckQuerySetFileInformation function for internal use only. Don't use this function in your code."
 old-location: ifsk\iocheckquerysetfileinformation.htm
 tech.root: ifsk
-ms.assetid: c68cbdb4-bdf8-4c18-8f96-7274021f9ac2
 ms.date: 05/30/2019
 keywords: ["IoCheckQuerySetFileInformation function"]
 ms.keywords: IoCheckQuerySetFileInformation, IoCheckQuerySetFileInformation function [Installable File System Drivers], ifsk.iocheckquerysetfileinformation, ioref_22478455-1bd1-46cb-8ac2-05e4857c9524.xml, ntifs/IoCheckQuerySetFileInformation

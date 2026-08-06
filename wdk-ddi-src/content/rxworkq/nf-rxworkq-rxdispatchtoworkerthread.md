@@ -4,7 +4,6 @@ title: RxDispatchToWorkerThread function (rxworkq.h)
 description: RxDispatchToWorkerThread invokes a routine in the context of a worker thread. The memory for the WORK_QUEUE_ITEM is allocated by this routine.
 old-location: ifsk\rxdispatchtoworkerthread.htm
 tech.root: ifsk
-ms.assetid: 426d28fa-abfe-44d9-9b15-119f92367b40
 ms.date: 04/16/2018
 keywords: ["RxDispatchToWorkerThread function"]
 ms.keywords: RxDispatchToWorkerThread, RxDispatchToWorkerThread routine [Installable File System Drivers], ifsk.rxdispatchtoworkerthread, rxref_4ac4f78d-fd07-4d80-a4db-8215322d6c89.xml, rxworkq/RxDispatchToWorkerThread
@@ -50,14 +49,14 @@ api_name:
 
 ## -parameters
 
-### -param pMRxDeviceObject 
+### -param pMRxDeviceObject [in]
 
-[in]
+
 A pointer to the device object of the corresponding network mini-redirector driver.
 
-### -param WorkQueueType 
+### -param WorkQueueType [in]
 
-[in]
+
 The type of the work queue representing the priority of the task. The <i>WorkQueueType</i> parameter can be one of can be one of the following enumerations for WORK_QUEUE_TYPE:
 
 
@@ -80,14 +79,14 @@ Insert the WORK_QUEUE_ITEM into the queue from which a system thread with a vari
 
 Insert the WORK_QUEUE_ITEM into the queue from which a system thread will process the work item so that the routine to be invoked is not blocked.
 
-### -param Routine 
+### -param Routine [in]
 
-[in]
+
 A pointer to the routine to be invoked.
 
-### -param pContext 
+### -param pContext [in]
 
-[in]
+
 A pointer to a context parameter associated with the work item to complete that is passed to the driver.
 
 ## -returns

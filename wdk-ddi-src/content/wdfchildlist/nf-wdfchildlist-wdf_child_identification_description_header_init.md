@@ -4,7 +4,6 @@ title: WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT function (wdfchildlist.h
 description: The WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT function initializes a WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER structure.
 old-location: wdf\wdf_child_identification_description_header_init.htm
 tech.root: wdf
-ms.assetid: 5c0d7abf-05e3-45fc-b5a4-db6f79a94a87
 ms.date: 02/26/2018
 keywords: ["WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT function"]
 ms.keywords: DFDeviceObjectChildListRef_dbb576dd-7020-4c96-8f3a-568fd58f6cf5.xml, WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT, WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT function, kmdf.wdf_child_identification_description_header_init, wdf.wdf_child_identification_description_header_init, wdfchildlist/WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT
@@ -52,14 +51,14 @@ The <b>WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER_INIT</b> function initializes
 
 ## -parameters
 
-### -param Header 
+### -param Header [out]
 
-[out]
+
 A pointer to a driver-allocated WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER structure.
 
-### -param IdentificationDescriptionSize 
+### -param IdentificationDescriptionSize [in]
 
-[in]
+
 The size, in bytes, of a driver-defined structure that contains device identification information. For more information about specifying the size value, see <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a>.
 
 ## -remarks

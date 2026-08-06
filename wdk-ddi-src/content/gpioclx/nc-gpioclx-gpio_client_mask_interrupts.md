@@ -4,7 +4,6 @@ title: GPIO_CLIENT_MASK_INTERRUPTS (gpioclx.h)
 description: The CLIENT_MaskInterrupts event callback function masks interrupts on a set of general-purpose I/O (GPIO) pins that are configured as interrupt inputs.
 old-location: gpio\client_maskinterrupts.htm
 tech.root: GPIO
-ms.assetid: 0E0480BA-0F9D-4AD4-8FEC-35B3757494B9
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_MASK_INTERRUPTS callback function"]
 ms.keywords: CLIENT_MaskInterrupts, CLIENT_MaskInterrupts callback, CLIENT_MaskInterrupts callback function [Parallel Ports], GPIO.client_maskinterrupts, GPIO_CLIENT_MASK_INTERRUPTS, gpioclx/CLIENT_MaskInterrupts
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_MaskInterrupts
+ - GPIO_CLIENT_MASK_INTERRUPTS
 ---
 
 # GPIO_CLIENT_MASK_INTERRUPTS callback function
@@ -50,14 +49,14 @@ The <i>CLIENT_MaskInterrupts</i> event callback function masks interrupts on a s
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param MaskParameters 
+### -param MaskParameters [in, out]
 
-[in, out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_mask_interrupt_parameters">GPIO_MASK_INTERRUPT_PARAMETERS</a> structure that, on entry, describes the GPIO interrupt pins to mask, and, on exit, contains the status of the mask operation.
 
 ## -returns
@@ -122,3 +121,4 @@ The GPIO_CLIENT_MASK_INTERRUPTS function type is defined in the Gpioclx.h header
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_mask_interrupt_parameters">GPIO_MASK_INTERRUPT_PARAMETERS</a>
+

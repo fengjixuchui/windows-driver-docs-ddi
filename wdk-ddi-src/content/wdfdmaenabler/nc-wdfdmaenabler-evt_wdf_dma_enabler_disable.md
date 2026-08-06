@@ -4,7 +4,6 @@ title: EVT_WDF_DMA_ENABLER_DISABLE (wdfdmaenabler.h)
 description: A driver's EvtDmaEnablerDisable event callback function disables a device's DMA capability before the device leaves its working (D0) state.
 old-location: wdf\evtdmaenablerdisable.htm
 tech.root: wdf
-ms.assetid: 0a39e19b-9720-4641-83f0-654a5f116432
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DMA_ENABLER_DISABLE callback function"]
 ms.keywords: DFDmaObjectRef_f8cd455b-22a3-47d4-b430-a4e8139aa96e.xml, EVT_WDF_DMA_ENABLER_DISABLE, EVT_WDF_DMA_ENABLER_DISABLE callback, EvtDmaEnablerDisable, EvtDmaEnablerDisable callback function, kmdf.evtdmaenablerdisable, wdf.evtdmaenablerdisable, wdfdmaenabler/EvtDmaEnablerDisable
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfDmaEnabler.h
 api_name:
- - EvtDmaEnablerDisable
+ - EVT_WDF_DMA_ENABLER_DISABLE
 ---
 
 # EVT_WDF_DMA_ENABLER_DISABLE callback function
@@ -52,9 +51,9 @@ A driver's <i>EvtDmaEnablerDisable</i> event callback function disables a device
 
 ## -parameters
 
-### -param DmaEnabler 
+### -param DmaEnabler [in]
 
-[in]
+
 A handle to a DMA enabler object.
 
 ## -returns
@@ -78,3 +77,4 @@ For more information about the <i>EvtDmaEnablerDisable</i> callback function, se
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdmaenabler/nf-wdfdmaenabler-wdfdmaenablercreate">WdfDmaEnablerCreate</a>
+

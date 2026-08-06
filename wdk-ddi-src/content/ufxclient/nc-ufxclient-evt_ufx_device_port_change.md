@@ -4,7 +4,6 @@ title: EVT_UFX_DEVICE_PORT_CHANGE (ufxclient.h)
 description: The client driver's implementation to update the type of the new port to which the USB device is connected.
 old-location: buses\evt_ufx_device_port_change.htm
 tech.root: usbref
-ms.assetid: A231F47E-C7A2-4C21-99F8-EC856C6F6D88
 ms.date: 05/07/2018
 keywords: ["EVT_UFX_DEVICE_PORT_CHANGE callback function"]
 ms.keywords: EVT_UFX_DEVICE_PORT_CHANGE, EVT_UFX_DEVICE_PORT_CHANGE callback, EvtUfxDevicePortChange, EvtUfxDevicePortChange callback function [Buses], PFN_UFX_DEVICE_PORT_CHANGE, PFN_UFX_DEVICE_PORT_CHANGE callback function pointer [Buses], buses.evt_ufx_device_port_change, ufxclient/EvtUfxDevicePortChange
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ufxclient.h
 api_name:
- - PFN_UFX_DEVICE_PORT_CHANGE
+ - EVT_UFX_DEVICE_PORT_CHANGE
 ---
 
 # EVT_UFX_DEVICE_PORT_CHANGE callback function
@@ -50,14 +49,14 @@ The client driver's implementation to update the type of the new port to which t
 
 ## -parameters
 
-#### - NewPort [in]
-
-A USBFN_PORT_STATE-typed flag that indicates the type of the new port.
-
-
-#### - UfxDevice [in]
+### -param unnamedParam1 [in]
 
 The handle to a  USB device object that the client driver received in a previous call to  the <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
+
+
+### -param unnamedParam2 [in]
+
+A USBFN_PORT_STATE-typed flag that indicates the type of the new port.
 
 ## -remarks
 
@@ -116,7 +115,6 @@ Arguments:
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>
@@ -124,3 +122,4 @@ Arguments:
 
 
 <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdeviceeventcomplete">UfxDeviceEventComplete</a>
+

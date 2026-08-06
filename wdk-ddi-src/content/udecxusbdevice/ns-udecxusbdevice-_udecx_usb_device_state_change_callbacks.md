@@ -4,7 +4,6 @@ title: _UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS (udecxusbdevice.h)
 description: Initializes a UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS structure with pointers to callback functions that are implemented by a UDE client for a virtual USB device.
 old-location: buses\udecx_usb_device_state_change_callbacks.htm
 tech.root: usbref
-ms.assetid: 9847A6E1-9551-4F0A-8B50-BB191B0181EF
 ms.date: 05/07/2018
 keywords: ["UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS structure"]
 ms.keywords: "*PUDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS, PUDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS, PUDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS structure pointer [Buses], UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS, UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS structure [Buses], _UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS, buses.udecx_usb_device_state_change_callbacks, udecxusbdevice/PUDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS, udecxusbdevice/UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - UdecxUsbDevice.h
 api_name:
+ - _UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS
+ - PUDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS
  - UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS
 ---
 
@@ -85,3 +86,4 @@ A pointer to an <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nc-udecxus
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdeviceinitsetstatechangecallbacks">UdecxUsbDeviceInitSetStateChangeCallbacks</a>
+

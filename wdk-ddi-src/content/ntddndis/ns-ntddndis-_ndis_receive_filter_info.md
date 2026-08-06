@@ -4,7 +4,6 @@ title: _NDIS_RECEIVE_FILTER_INFO (ntddndis.h)
 description: The NDIS_RECEIVE_FILTER_INFO structure contains information about a receive filter that is currently configured on a miniport driver.
 old-location: netvista\ndis_receive_filter_info.htm
 tech.root: netvista
-ms.assetid: 12029cfd-58d0-4621-8cbc-c07e68db61b8
 ms.date: 05/02/2018
 keywords: ["NDIS_RECEIVE_FILTER_INFO structure"]
 ms.keywords: "*PNDIS_RECEIVE_FILTER_INFO, NDIS_RECEIVE_FILTER_INFO, NDIS_RECEIVE_FILTER_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_RECEIVE_FILTER_INFO, PNDIS_RECEIVE_FILTER_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_FILTER_INFO, netvista.ndis_receive_filter_info, ntddndis/NDIS_RECEIVE_FILTER_INFO, ntddndis/PNDIS_RECEIVE_FILTER_INFO, virtual_machine_queue_ref_4c711292-ce17-4eb9-a051-c32f8ad6f49e.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_RECEIVE_FILTER_INFO
+ - PNDIS_RECEIVE_FILTER_INFO
  - NDIS_RECEIVE_FILTER_INFO
 ---
 
@@ -68,7 +69,7 @@ NDIS receive filters are used in the following NDIS interfaces:
 </li>
 <li>
 
-<a href="/windows-hardware/drivers/network/virtual-machine-queue--vmq-">Virtual Machine Queue (VMQ)</a>. For more information about how to use receive filters in this interface, see <a href="/windows-hardware/drivers/network/setting-and-clearing-vmq-filters">Setting and Clearing VMQ Filters</a>.
+<a href="/windows-hardware/drivers/network/virtual-machine-queue-architecture">Virtual Machine Queue (VMQ)</a>. For more information about how to use receive filters in this interface, see <a href="/windows-hardware/drivers/network/setting-and-clearing-vmq-filters">Setting and Clearing VMQ Filters</a>.
 
 </li>
 </ul>
@@ -78,7 +79,7 @@ NDIS receive filters are used in the following NDIS interfaces:
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_RECEIVE_FILTER_INFO</b> structure. The driver sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT.
@@ -120,7 +121,7 @@ The <b>NDIS_RECEIVE_FILTER_INFO</b> structure is used with the
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -130,3 +131,4 @@ The <b>NDIS_RECEIVE_FILTER_INFO</b> structure is used with the
 
 
 <a href="/windows-hardware/drivers/network/oid-receive-filter-enum-filters">OID_RECEIVE_FILTER_ENUM_FILTERS</a>
+

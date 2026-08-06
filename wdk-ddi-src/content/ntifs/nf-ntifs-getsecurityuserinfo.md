@@ -4,14 +4,13 @@ title: GetSecurityUserInfo function (ntifs.h)
 description: The GetSecurityUserInfo function retrieves information about a logon session.
 old-location: ifsk\getsecurityuserinfo.htm
 tech.root: ifsk
-ms.assetid: 2f26ff14-dd2c-4e80-aea5-38a7dd16d904
 ms.date: 04/16/2018
 keywords: ["GetSecurityUserInfo function"]
 ms.keywords: GetSecurityUserInfo, GetSecurityUserInfo function [Installable File System Drivers], IFSMiscRef_e375e4a8-9702-41b8-b848-0dcbc0a7d9bd.xml, ifsk.getsecurityuserinfo, ntifs/GetSecurityUserInfo
 req.header: ntifs.h
 req.include-header: Ntifs.h, FltKernel.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Microsoft Windows 2000 and later.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -51,19 +50,19 @@ The <b>GetSecurityUserInfo</b> function retrieves information about a logon <a h
 
 ## -parameters
 
-### -param LogonId 
+### -param LogonId [in, optional]
 
-[in, optional]
+
 An optional pointer to an <a href="/windows/win32/secgloss/l-gly">LUID</a> containing the logon session for which information is to be retrieved. If <i>LogonId</i> is <b>NULL</b>, information for the logon session of the calling thread is returned.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 This parameter is currently not used.
 
-### -param UserInformation 
+### -param UserInformation [out]
 
-[out]
+
 A pointer to a location which contains a pointer to a <a href="/windows/win32/api/ntsecpkg/ns-ntsecpkg-security_user_data">SecurityUserData</a> structure. If the function call succeeds, the user information is returned in this structure. The caller is responsible for freeing this buffer by calling the <a href="/windows/win32/api/ntsecapi/nf-ntsecapi-lsafreereturnbuffer">LsaFreeReturnBuffer</a> function.
 
 ## -returns

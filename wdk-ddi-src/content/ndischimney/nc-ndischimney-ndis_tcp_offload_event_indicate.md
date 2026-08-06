@@ -4,7 +4,6 @@ title: NDIS_TCP_OFFLOAD_EVENT_INDICATE (ndischimney.h)
 description: An offload target calls the NdisTcpOffloadEventHandler function to indicate an event that pertains to an offloaded TCP connection.
 old-location: netvista\ndistcpoffloadeventhandler.htm
 tech.root: netvista
-ms.assetid: b62e8a07-fe7b-4c52-8795-19e4bb889b6e
 ms.date: 05/02/2018
 keywords: ["NDIS_TCP_OFFLOAD_EVENT_INDICATE callback function"]
 ms.keywords: NDIS_TCP_OFFLOAD_EVENT_INDICATE, NDIS_TCP_OFFLOAD_EVENT_INDICATE callback, NdisTcpOffloadEventHandler, NdisTcpOffloadEventHandler callback function [Network Drivers Starting with Windows Vista], ndischimney/NdisTcpOffloadEventHandler, netvista.ndistcpoffloadeventhandler, tcp_chim_ndis_func_24cca7c4-aa36-4ff3-8896-93bd0b8517af.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndischimney.h
 api_name:
- - NdisTcpOffloadEventHandler
+ - NDIS_TCP_OFFLOAD_EVENT_INDICATE
 ---
 
 # NDIS_TCP_OFFLOAD_EVENT_INDICATE callback function
@@ -54,18 +53,18 @@ An offload target calls the
 
 ## -parameters
 
-### -param NdisOffloadHandle 
+### -param NdisOffloadHandle [in]
 
-[in]
+
 A handle that identifies the offloaded TCP connection on which the indication is being made. When
      the connection was offloaded, this handle was supplied in the 
      <b>NdisOffloadHandle</b> member of the 
      <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_miniport_offload_block_list">
      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure that was associated with the connection state.
 
-### -param EventType 
+### -param EventType [in]
 
-[in]
+
 The event being indicated as one of the following <b>TCP_OFFLOAD_EVENT_TYPE</b> values:
      
 
@@ -98,9 +97,9 @@ Indicates that the remote host has initiated an abortive disconnect by sending a
 
 Indicates a change in the preferred send backlog size.
 
-### -param EventSpecificInformation 
+### -param EventSpecificInformation [in]
 
-[in]
+
 Specifies additional information about the event being indicated as follows:
      
 
@@ -174,7 +173,7 @@ Call the
 <li>
 Complete all outstanding send requests and disconnect requests on the connection with
       NDIS_STATUS_REQUEST_ABORTED. The offload target writes this status value to the 
-      <b>Status</b> member of each <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure in the linked list that it passes to the 
+      <b>Status</b> member of each <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure in the linked list that it passes to the 
       <a href="/windows-hardware/drivers/ddi/ndischimney/nc-ndischimney-ndis_tcp_offload_send_complete">
       NdisTcpOffloadSendComplete</a> function or to the 
       <a href="/windows-hardware/drivers/ddi/ndischimney/nc-ndischimney-ndis_tcp_offload_disconnect_complete">
@@ -448,3 +447,4 @@ The offload target should implement a throttling mechanism to ensure that, if th
 
 <a href="/windows-hardware/drivers/network/responding-to-the-reception-of-a-fin-or-rst-segment">Responding to
      the Reception of a FIN or RST Segment</a>
+

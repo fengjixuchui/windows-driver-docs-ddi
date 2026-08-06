@@ -4,7 +4,6 @@ title: FltRollbackEnlistment function (fltkernel.h)
 description: The FltRollbackEnlistment routine rolls back or aborts a transaction on behalf of a minifilter driver.
 old-location: ifsk\fltrollbackenlistment.htm
 tech.root: ifsk
-ms.assetid: a63ebd95-801b-4de2-963e-392e6d90eb9f
 ms.date: 04/16/2018
 keywords: ["FltRollbackEnlistment function"]
 ms.keywords: FltApiRef_p_to_z_f59e0c07-d415-440b-aec8-89c330679e0d.xml, FltRollbackEnlistment, FltRollbackEnlistment routine [Installable File System Drivers], fltkernel/FltRollbackEnlistment, ifsk.fltrollbackenlistment
@@ -50,19 +49,19 @@ The <b>FltRollbackEnlistment</b> routine rolls back or aborts a transaction on b
 
 ## -parameters
 
-### -param Instance 
+### -param Instance [in]
 
-[in]
+
 Opaque instance pointer for the caller.
 
-### -param Transaction 
+### -param Transaction [in]
 
-[in]
+
 Opaque transaction pointer for the transaction.
 
-### -param TransactionContext 
+### -param TransactionContext [in, optional]
 
-[in, optional]
+
 Pointer to the minifilter driver's transaction context.
 
 ## -returns

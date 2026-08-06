@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_CHECKCOUNTER
 title: PFND3D10DDI_CHECKCOUNTER (d3d10umddi.h)
 description: The CheckCounter function retrieves information that describes a counter.
 old-location: display\checkcounter.htm
-ms.assetid: 592a5146-a2fe-41d1-854b-df27a97bd513
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_CHECKCOUNTER callback function"]
 ms.keywords: CheckCounter, CheckCounter callback function [Display Devices], PFND3D10DDI_CHECKCOUNTER, PFND3D10DDI_CHECKCOUNTER callback, UserModeDisplayDriverDx10_Functions_450a0976-fc56-4a5a-8a01-9c9d1041b628.xml, d3d10umddi/CheckCounter, display.checkcounter
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CheckCounter
+ - PFND3D10DDI_CHECKCOUNTER
 ---
 
 # PFND3D10DDI_CHECKCOUNTER callback function
@@ -50,19 +49,19 @@ The <b>CheckCounter</b> function retrieves information that describes a counter.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *Query* [in]
 
 A <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d10ddi_query">D3D10DDI_QUERY</a>-typed value that identifies the counter identifier that information is retrieved for.
 
-### -param Arg3
+### -param unnamedParam3
 
 *pCounterType* [out]
 
@@ -75,43 +74,43 @@ A pointer to a variable that receives one of the following values from the D3D10
 |D3D10DDI_COUNTER_TYPE_UINT32|32-bit value|
 |D3D10DDI_COUNTER_TYPE_UINT64|64-bit value|
 
-### -param Arg4
+### -param unnamedParam4
 
 *pDescription* [out]
 
 A pointer that the driver returns a NULL-terminated string to that contains the description of what the counter identifier measures.
 
-### -param Arg5
+### -param unnamedParam5
 
 *pActiveCounters* [out]
 
 A pointer to a variable that receives the number of simultaneously active counters that are allocated for the creation of the counter identifier that <i>Query</i> identifies.
 
-### -param pNameLength 
+### -param pNameLength [in, out]
 
-[in, out]
+
 A pointer to a variable that receives the size, in bytes, of the NULL-terminated string that the <i>pName</i> parameter specifies.
 
-### -param Arg7
+### -param unnamedParam7
 
 *pName* [out]
 
 A pointer that the driver returns a NULL-terminated string to that contains the name of the counter identifier.
 
-### -param pUnitsLength 
+### -param pUnitsLength [in, out]
 
-[in, out]
+
 A pointer to a variable that receives the size, in bytes, of the NULL-terminated string that the <i>pUnits</i> parameter specifies.
 
-### -param Arg9
+### -param unnamedParam9
 
 *pUnits* [out]
 
 A pointer that the driver returns a NULL-terminated string to that contains the name of the units that the counter identifier measures.
 
-### -param pDescriptionLength 
+### -param pDescriptionLength [in, out]
 
-[in, out]
+
 A pointer to a variable that receives the size, in bytes, of the NULL-terminated string that the <i>pDescription</i> parameter specifies.
 
 ## -remarks
@@ -137,3 +136,4 @@ The driver's <b>CheckCounter</b> function cannot call the <a href="/windows-hard
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

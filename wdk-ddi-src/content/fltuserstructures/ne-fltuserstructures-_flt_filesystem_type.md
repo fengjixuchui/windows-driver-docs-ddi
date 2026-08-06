@@ -1,17 +1,15 @@
 ---
 UID: NE:fltuserstructures._FLT_FILESYSTEM_TYPE
-title: _FLT_FILESYSTEM_TYPE (fltuserstructures.h)
-description: The FLT_FILESYSTEM_TYPE enumeration identifies the type of file system being used on a volume.
-old-location: ifsk\flt_filesystem_type.htm
+title: FLT_FILESYSTEM_TYPE (fltuserstructures.h)
+description: Learn more about the FLT_FILESYSTEM_TYPE enumeration.
 tech.root: ifsk
-ms.assetid: b4bdfa93-3db5-4dfa-b539-112927cbedb0
 ms.date: 04/16/2018
 keywords: ["FLT_FILESYSTEM_TYPE enumeration"]
 ms.keywords: "*PFLT_FILESYSTEM_TYPE, FLT_FILESYSTEM_TYPE, FLT_FILESYSTEM_TYPE enumeration [Installable File System Drivers], FLT_FSTYPE_BSUDF, FLT_FSTYPE_CDFS, FLT_FSTYPE_CSVFS, FLT_FSTYPE_EXFAT, FLT_FSTYPE_FAT, FLT_FSTYPE_FS_REC, FLT_FSTYPE_GPFS, FLT_FSTYPE_INCD, FLT_FSTYPE_INCD_FAT, FLT_FSTYPE_LANMAN, FLT_FSTYPE_MSFS, FLT_FSTYPE_MS_NETWARE, FLT_FSTYPE_MUP, FLT_FSTYPE_NETWARE, FLT_FSTYPE_NFS, FLT_FSTYPE_NPFS, FLT_FSTYPE_NTFS, FLT_FSTYPE_OPENAFS, FLT_FSTYPE_PSFS, FLT_FSTYPE_RAW, FLT_FSTYPE_RDPDR, FLT_FSTYPE_REFS, FLT_FSTYPE_ROXIO_UDF1, FLT_FSTYPE_ROXIO_UDF2, FLT_FSTYPE_ROXIO_UDF3, FLT_FSTYPE_RSFX, FLT_FSTYPE_TACIT, FLT_FSTYPE_UDFS, FLT_FSTYPE_UNKNOWN, FLT_FSTYPE_WEBDAV, PFLT_FILESYSTEM_TYPE, PFLT_FILESYSTEM_TYPE enumeration pointer [Installable File System Drivers], _FLT_FILESYSTEM_TYPE, fltuserstructures/FLT_FILESYSTEM_TYPE, fltuserstructures/FLT_FSTYPE_BSUDF, fltuserstructures/FLT_FSTYPE_CDFS, fltuserstructures/FLT_FSTYPE_CSVFS, fltuserstructures/FLT_FSTYPE_EXFAT, fltuserstructures/FLT_FSTYPE_FAT, fltuserstructures/FLT_FSTYPE_FS_REC, fltuserstructures/FLT_FSTYPE_GPFS, fltuserstructures/FLT_FSTYPE_INCD, fltuserstructures/FLT_FSTYPE_INCD_FAT, fltuserstructures/FLT_FSTYPE_LANMAN, fltuserstructures/FLT_FSTYPE_MSFS, fltuserstructures/FLT_FSTYPE_MS_NETWARE, fltuserstructures/FLT_FSTYPE_MUP, fltuserstructures/FLT_FSTYPE_NETWARE, fltuserstructures/FLT_FSTYPE_NFS, fltuserstructures/FLT_FSTYPE_NPFS, fltuserstructures/FLT_FSTYPE_NTFS, fltuserstructures/FLT_FSTYPE_OPENAFS, fltuserstructures/FLT_FSTYPE_PSFS, fltuserstructures/FLT_FSTYPE_RAW, fltuserstructures/FLT_FSTYPE_RDPDR, fltuserstructures/FLT_FSTYPE_REFS, fltuserstructures/FLT_FSTYPE_ROXIO_UDF1, fltuserstructures/FLT_FSTYPE_ROXIO_UDF2, fltuserstructures/FLT_FSTYPE_ROXIO_UDF3, fltuserstructures/FLT_FSTYPE_RSFX, fltuserstructures/FLT_FSTYPE_TACIT, fltuserstructures/FLT_FSTYPE_UDFS, fltuserstructures/FLT_FSTYPE_UNKNOWN, fltuserstructures/FLT_FSTYPE_WEBDAV, fltuserstructures/PFLT_FILESYSTEM_TYPE, ifsk.flt_filesystem_type"
 req.header: fltuserstructures.h
 req.include-header: FltUser.h, FltKernel.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating system.
+req.target-min-winverclnt: Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,15 +40,16 @@ api_type:
 api_location:
  - fltUserStructures.h
 api_name:
+ - _FLT_FILESYSTEM_TYPE
+ - PFLT_FILESYSTEM_TYPE
  - FLT_FILESYSTEM_TYPE
 ---
 
-# _FLT_FILESYSTEM_TYPE enumeration
-
+# FLT_FILESYSTEM_TYPE enumeration
 
 ## -description
 
-The <b>FLT_FILESYSTEM_TYPE</b> enumeration identifies the type of file system being used on a volume.
+The **FLT_FILESYSTEM_TYPE** enumeration identifies the type of file system being used on a volume.
 
 ## -enum-fields
 
@@ -174,22 +173,20 @@ Microsoft ReFS file system. File system namespace: \FileSystem\refs.
 
  OpenAFS file system. File system namespace: \FileSystem\AFSRedirector.
 
+### -field FLT_FSTYPE_CIMFS
+
+Microsoft Composite Image file system. File system namespace: \FileSystem\cimfs.
+
 ## -remarks
 
-New file systems that are not part of the <b>FLT_FILESYSTEM_TYPE</b> enumeration are treated as <b>FLT_FSTYPE_UNKNOWN</b>.
+New file systems that are not part of the **FLT_FILESYSTEM_TYPE** enumeration are treated as **FLT_FSTYPE_UNKNOWN**.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/fltuserstructures/ns-fltuserstructures-_filter_volume_standard_information">FILTER_VOLUME_STANDARD_INFORMATION</a>
+[**FILTER_VOLUME_STANDARD_INFORMATION**](ns-fltuserstructures-_filter_volume_standard_information.md)
 
+[**FltGetFileSystemType**](../fltkernel/nf-fltkernel-fltgetfilesystemtype.md)
 
+[**INSTANCE_AGGREGATE_STANDARD_INFORMATION**](ns-fltuserstructures-_instance_aggregate_standard_information.md)
 
-<a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetfilesystemtype">FltGetFileSystemType</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/fltuserstructures/ns-fltuserstructures-_instance_aggregate_standard_information">INSTANCE_AGGREGATE_STANDARD_INFORMATION</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_instance_setup_callback">PFLT_INSTANCE_SETUP_CALLBACK</a>
+[**PFLT_INSTANCE_SETUP_CALLBACK**](../fltkernel/nc-fltkernel-pflt_instance_setup_callback.md)

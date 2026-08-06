@@ -4,7 +4,6 @@ title: _NDIS_SWITCH_PORT_STATE (ntddndis.h)
 description: The NDIS_SWITCH_PORT_STATE enumeration specifies the current state of the Hyper-V extensible switch port.
 old-location: netvista\ndis_switch_port_state.htm
 tech.root: netvista
-ms.assetid: BEF37F32-036D-4381-93B3-C159ABCFC3F9
 ms.date: 05/02/2018
 keywords: ["NDIS_SWITCH_PORT_STATE enumeration"]
 ms.keywords: NDIS_SWITCH_PORT_STATE, NDIS_SWITCH_PORT_STATE enumeration [Network Drivers Starting with Windows Vista], NdisSwitchPortStateCreated, NdisSwitchPortStateDeleted, NdisSwitchPortStateTeardown, NdisSwitchPortStateUnknown, _NDIS_SWITCH_PORT_STATE, netvista.ndis_switch_port_state, ntddndis/NDIS_SWITCH_PORT_STATE, ntddndis/NdisSwitchPortStateCreated, ntddndis/NdisSwitchPortStateDeleted, ntddndis/NdisSwitchPortStateTeardown, ntddndis/NdisSwitchPortStateUnknown
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_SWITCH_PORT_STATE
  - NDIS_SWITCH_PORT_STATE
 ---
 
@@ -70,7 +70,7 @@ This value specifies that the port has been deleted.
 
 ## -remarks
 
-The <b>PortState</b>  member of the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_parameters">NDIS_SWITCH_PORT_PARAMETER</a> structure is an <b>NDIS_SWITCH_PORT_STATE</b> enumeration data type. 
+The <b>PortState</b>  member of the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_parameters">NDIS_SWITCH_PORT_PARAMETERS</a> structure is an <b>NDIS_SWITCH_PORT_STATE</b> enumeration data type. 
 
 
 For more information about extensible switch port states, see <a href="/windows-hardware/drivers/network/overview-of-hyper-v-extensible-switch-ports">Overview of Hyper-V Extensible Switch Ports</a>.
@@ -81,4 +81,5 @@ For more information about extensible switch port states, see <a href="/windows-
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_parameters">NDIS_SWITCH_PORT_PARAMETER</a>
+<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_parameters">NDIS_SWITCH_PORT_PARAMETERS</a>
+

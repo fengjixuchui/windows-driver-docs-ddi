@@ -4,7 +4,6 @@ title: SpbRequestGetTarget function (spbcx.h)
 description: The SpbRequestGetTarget method retrieves the SPBTARGET handle from the specified I/O request.
 old-location: spb\spbrequestgettarget.htm
 tech.root: SPB
-ms.assetid: 2F89C886-99FF-4D6C-B52F-6422DB9E76AE
 ms.date: 04/30/2018
 keywords: ["SpbRequestGetTarget function"]
 ms.keywords: SPB.spbrequestgettarget, SpbRequestGetTarget, SpbRequestGetTarget method [Buses], spbcx/SpbRequestGetTarget
@@ -51,9 +50,9 @@ The <b>SpbRequestGetTarget</b> method retrieves the SPBTARGET handle from the sp
 
 ## -parameters
 
-### -param SpbRequest 
+### -param SpbRequest [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/spb/spbcx-object-handles">SPBREQUEST</a> handle to the I/O request. The SPB controller driver previously received this handle through one of its registered <a href="/previous-versions/hh450911(v=vs.85)">event callback functions</a>.
 
 ## -returns

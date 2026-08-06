@@ -4,7 +4,6 @@ title: _ClearCache_OUT (iscsiop.h)
 description: The ClearCache_OUT structure holds the output data for the ClearCache method.
 old-location: storage\clearcache_out.htm
 tech.root: storage
-ms.assetid: ab97d0b0-00fc-499c-9b1b-83731fe8e935
 ms.date: 03/29/2018
 keywords: ["ClearCache_OUT structure"]
 ms.keywords: "*PClearCache_OUT, ClearCache_OUT, ClearCache_OUT structure [Storage Devices], PClearCache_OUT, PClearCache_OUT structure pointer [Storage Devices], _ClearCache_OUT, iscsiop/ClearCache_OUT, iscsiop/PClearCache_OUT, storage.clearcache_out, structs-iSCSI_e96c134a-dfb1-474a-b730-1fb6e8d8f86f.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsiop.h
 api_name:
+ - _ClearCache_OUT
+ - PClearCache_OUT
  - ClearCache_OUT
 ---
 
@@ -73,3 +74,4 @@ You must implement this method.
 
 
 <a href="/windows-hardware/drivers/storage/msiscsi-securityconfigoperations-wmi-class">MSiSCSI_SecurityConfigOperations WMI Class</a>
+

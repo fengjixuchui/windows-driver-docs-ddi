@@ -4,7 +4,6 @@ title: EVT_WDFDEVICE_WDM_IRP_PREPROCESS (wdfdevice.h)
 description: A driver's EvtDeviceWdmIrpPreprocess event callback function receives an IRP before the framework processes the IRP.
 old-location: wdf\evtdevicewdmirppreprocess.htm
 tech.root: wdf
-ms.assetid: aff9cb60-d61b-47a8-aae4-6ffd2a1b7a9a
 ms.date: 02/26/2018
 keywords: ["EVT_WDFDEVICE_WDM_IRP_PREPROCESS callback function"]
 ms.keywords: DFDeviceObjectGeneralRef_7329adf6-5814-40cb-ac9b-a7fb67b5f05c.xml, EVT_WDFDEVICE_WDM_IRP_PREPROCESS, EVT_WDFDEVICE_WDM_IRP_PREPROCESS callback, EvtDeviceWdmIrpPreprocess, EvtDeviceWdmIrpPreprocess callback function, kmdf.evtdevicewdmirppreprocess, wdf.evtdevicewdmirppreprocess, wdfdevice/EvtDeviceWdmIrpPreprocess
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfdevice.h
 api_name:
- - EvtDeviceWdmIrpPreprocess
+ - EVT_WDFDEVICE_WDM_IRP_PREPROCESS
 ---
 
 # EVT_WDFDEVICE_WDM_IRP_PREPROCESS callback function
@@ -52,14 +51,14 @@ A driver's <i>EvtDeviceWdmIrpPreprocess</i> event callback function receives an 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Irp 
+### -param Irp [in, out]
 
-[in, out]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp">IRP</a> structure.
 
 ## -returns
@@ -111,3 +110,4 @@ The <i>EvtDeviceWdmIrpPreprocess</i> callback function is called at the IRQL of 
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicewdmdispatchpreprocessedirp">WdfDeviceWdmDispatchPreprocessedIrp</a>
+

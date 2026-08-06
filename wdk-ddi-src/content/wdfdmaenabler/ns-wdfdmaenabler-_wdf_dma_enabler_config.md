@@ -4,7 +4,6 @@ title: _WDF_DMA_ENABLER_CONFIG (wdfdmaenabler.h)
 description: The WDF_DMA_ENABLER_CONFIG structure supplies characteristics for a DMA enabler object.
 old-location: wdf\wdf_dma_enabler_config.htm
 tech.root: wdf
-ms.assetid: 60702ce0-c15b-49ad-b983-af68086710b2
 ms.date: 02/26/2018
 keywords: ["WDF_DMA_ENABLER_CONFIG structure"]
 ms.keywords: "*PWDF_DMA_ENABLER_CONFIG, DFDmaObjectRef_854b91a3-b389-47a9-bc88-d4796025f73e.xml, PWDF_DMA_ENABLER_CONFIG, PWDF_DMA_ENABLER_CONFIG structure pointer, WDF_DMA_ENABLER_CONFIG, WDF_DMA_ENABLER_CONFIG structure, _WDF_DMA_ENABLER_CONFIG, kmdf.wdf_dma_enabler_config, wdf.wdf_dma_enabler_config, wdfdmaenabler/PWDF_DMA_ENABLER_CONFIG, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdfdmaenabler.h
 api_name:
+ - _WDF_DMA_ENABLER_CONFIG
+ - PWDF_DMA_ENABLER_CONFIG
  - WDF_DMA_ENABLER_CONFIG
 ---
 
@@ -93,17 +94,17 @@ A pointer to the driver's <a href="/windows-hardware/drivers/ddi/wdfdmaenabler/n
 A pointer to the driver's <a href="/windows-hardware/drivers/ddi/wdfdmaenabler/nc-wdfdmaenabler-evt_wdf_dma_enabler_selfmanaged_io_stop">EvtDmaEnablerSelfManagedIoStop</a> event callback function, or <b>NULL</b>.
 
 
-#### - AddressWidthOverride
+### -field AddressWidthOverride
 
 Set to zero to accept the address width specified in <b>Profile</b>. A driver can override the <b>Profile</b>  address width by setting this member to a value between 24  and 63. If your driver specifies a system-mode DMA profile, <b>AddressWidthOverride</b> must be zero. If your driver specifies a 32-bit DMA profile, <b>AddressWidthOverride</b> cannot be greater than 32. The <b>AddressWidthOverride</b> member is available in version 1.11 and later versions of KMDF. See more information in <b>Remarks</b>.
 
 
-#### - Flags
+### -field Flags
 
 A bitwise OR of one or more values from the <a href="/windows-hardware/drivers/ddi/wdfdmaenabler/ne-wdfdmaenabler-_wdf_dma_enabler_config_flags">WDF_DMA_ENABLER_CONFIG_FLAGS</a> enumeration. The <b>Flags</b> member is available in version 1.11 and in later versions of KMDF.
 
 
-#### - WdmDmaVersionOverride
+### -field WdmDmaVersionOverride
 
 Set to zero to accept the default DMA version. To request DMA version 3, set to 3. The <b>WdmDmaVersionOverride</b> member is available in version 1.11 and in later versions of KMDF. DMA version 3 is available starting in Windows 8.
 
@@ -156,3 +157,4 @@ On Windows 7 and Windows Vista, when the driver provides a nonzero value for <
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactionsetmaximumlength">WdfDmaTransactionSetMaximumLength</a>
+

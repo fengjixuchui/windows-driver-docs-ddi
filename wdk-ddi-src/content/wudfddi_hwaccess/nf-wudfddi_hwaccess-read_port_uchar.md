@@ -4,7 +4,6 @@ title: READ_PORT_UCHAR function (wudfddi_hwaccess.h)
 description: The READ_PORT_UCHAR function reads a byte from the specified port address.
 old-location: wdf\read_port_uchar.htm
 tech.root: wdf
-ms.assetid: B72EDABF-B5A5-4887-A8D6-77F4047CEDA8
 ms.date: 02/26/2018
 keywords: ["READ_PORT_UCHAR function"]
 ms.keywords: READ_PORT_UCHAR, READ_PORT_UCHAR function, umdf.read_port_uchar, wdf.read_port_uchar, wudfddi_hwaccess/READ_PORT_UCHAR
@@ -52,14 +51,14 @@ The <b>READ_PORT_UCHAR</b>  function reads a byte from the specified port addres
 
 ## -parameters
 
-### -param pDevice 
+### -param pDevice [in]
 
-[in]
+
 Specifies a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a> interface for the device object of the device to access.
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Specifies the port address, which must be a mapped memory range in I/O space.
 
 ## -returns

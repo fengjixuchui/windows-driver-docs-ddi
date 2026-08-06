@@ -4,7 +4,6 @@ title: NdisMOidRequestComplete function (ndis.h)
 description: Miniport drivers call the NdisMOidRequestComplete function to return the final status of an OID request for which the driver's MiniportOidRequest function returned NDIS_STATUS_PENDING.
 old-location: netvista\ndismoidrequestcomplete.htm
 tech.root: netvista
-ms.assetid: 30d060d0-05a3-42b5-b5ff-2f2b12873ca9
 ms.date: 05/02/2018
 keywords: ["NdisMOidRequestComplete function"]
 ms.keywords: NdisMOidRequestComplete, NdisMOidRequestComplete function [Network Drivers Starting with Windows Vista], ndis/NdisMOidRequestComplete, ndis_request_ref_b5524732-acaf-4d0d-a261-3f8a8b739ecc.xml, netvista.ndismoidrequestcomplete
@@ -54,25 +53,25 @@ Miniport drivers call the
 
 ## -parameters
 
-### -param MiniportAdapterHandle 
+### -param MiniportAdapterHandle [in]
 
-[in]
+
 A miniport adapter handle that NDIS passed to the 
      <i>MiniportAdapterHandle</i> parameter of the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">
      MiniportInitializeEx</a> function.
 
-### -param OidRequest 
+### -param OidRequest [in]
 
-[in]
+
 A pointer to a buffer that is formatted as an 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure. The miniport
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure. The miniport
      driver obtained this pointer as an input parameter to its 
      <i>MiniportOidRequest</i> function.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 The final status of the request operation, either NDIS_STATUS_SUCCESS,
      NDIS_STATUS_REQUEST_ABORTED, or any driver-determined NDIS_STATUS_<i>XXX</i><u>except</u> NDIS_STATUS_PENDING. For more information about OID status values, see 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request">MiniportOidRequest</a>.
@@ -106,7 +105,7 @@ A call to
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 

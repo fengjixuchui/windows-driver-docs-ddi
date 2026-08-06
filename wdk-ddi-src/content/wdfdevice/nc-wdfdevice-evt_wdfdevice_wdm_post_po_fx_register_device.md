@@ -4,7 +4,6 @@ title: EVT_WDFDEVICE_WDM_POST_PO_FX_REGISTER_DEVICE (wdfdevice.h)
 description: The EvtDeviceWdmPostPoFxRegisterDevice callback function performs device-specific operations after the framework has registered with the power framework.
 old-location: wdf\evtdevicewdmpostpofxregisterdevice.htm
 tech.root: wdf
-ms.assetid: 4CE227F5-9ED4-4484-AFBF-44D1260EB99D
 ms.date: 02/26/2018
 keywords: ["EVT_WDFDEVICE_WDM_POST_PO_FX_REGISTER_DEVICE callback function"]
 ms.keywords: EVT_WDFDEVICE_WDM_POST_PO_FX_REGISTER_DEVICE, EVT_WDFDEVICE_WDM_POST_PO_FX_REGISTER_DEVICE callback, EvtDeviceWdmPostPoFxRegisterDevice, EvtDeviceWdmPostPoFxRegisterDevice callback function, kmdf.evtdevicewdmpostpofxregisterdevice, wdf.evtdevicewdmpostpofxregisterdevice, wdfdevice/EvtDeviceWdmPostPoFxRegisterDevice
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfdevice.h
 api_name:
- - EvtDeviceWdmPostPoFxRegisterDevice
+ - EVT_WDFDEVICE_WDM_POST_PO_FX_REGISTER_DEVICE
 ---
 
 # EVT_WDFDEVICE_WDM_POST_PO_FX_REGISTER_DEVICE callback function
@@ -54,14 +53,14 @@ api_name:
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param PoHandle 
+### -param PoHandle [in]
 
-[in]
+
 A handle that represents the device’s registration with the power framework.
 
 ## -returns
@@ -91,3 +90,4 @@ A KMDF driver for a multiple component device does not provide <i>EvtDeviceWdmPo
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicewdmassignpowerframeworksettings">WdfDeviceWdmAssignPowerFrameworkSettings</a>
+

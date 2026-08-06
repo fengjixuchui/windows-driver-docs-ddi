@@ -4,7 +4,6 @@ title: IWDFNamedPropertyStore2::DeleteNamedValue (wudfddi.h)
 description: The DeleteNamedValue method deletes a value name from the registry.
 old-location: wdf\iwdfnamedpropertystore2_deletenamedvalue.htm
 tech.root: wdf
-ms.assetid: ce0953d3-054f-446b-9f69-58f4580740f3
 ms.date: 02/26/2018
 keywords: ["IWDFNamedPropertyStore2::DeleteNamedValue"]
 ms.keywords: DeleteNamedValue, DeleteNamedValue method, DeleteNamedValue method,IWDFNamedPropertyStore2 interface, IWDFNamedPropertyStore2 interface,DeleteNamedValue method, IWDFNamedPropertyStore2.DeleteNamedValue, IWDFNamedPropertyStore2::DeleteNamedValue, UMDFPropertyStoreObjectRef_9363c14f-0ff0-4c2f-910a-916b3cb9d664.xml, umdf.iwdfnamedpropertystore2_deletenamedvalue, wdf.iwdfnamedpropertystore2_deletenamedvalue, wudfddi/IWDFNamedPropertyStore2::DeleteNamedValue
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFNamedPropertyStore2.DeleteNamedValue
+ - IWDFNamedPropertyStore2::DeleteNamedValue
 ---
 
 # IWDFNamedPropertyStore2::DeleteNamedValue
@@ -52,9 +51,9 @@ The <b>DeleteNamedValue</b> method deletes a value name from the registry.
 
 ## -parameters
 
-### -param pwszName 
+### -param pwszName [in]
 
-[in]
+
 A pointer to a <b>null</b>-terminated string that contains a registry value name.
 
 ## -returns
@@ -112,7 +111,6 @@ CMyDevice::OnCleanup(
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfnamedpropertystore2">IWDFNamedPropertyStore2</a>
@@ -120,3 +118,4 @@ CMyDevice::OnCleanup(
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfpropertystorefactory-retrievedevicepropertystore">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a>
+

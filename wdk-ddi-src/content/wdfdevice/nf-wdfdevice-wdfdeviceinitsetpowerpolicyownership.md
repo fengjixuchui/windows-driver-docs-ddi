@@ -4,7 +4,6 @@ title: WdfDeviceInitSetPowerPolicyOwnership function (wdfdevice.h)
 description: The WdfDeviceInitSetPowerPolicyOwnership method establishes whether the calling driver is, or is not, the power policy owner for a specified device.
 old-location: wdf\wdfdeviceinitsetpowerpolicyownership.htm
 tech.root: wdf
-ms.assetid: 4db198f5-9472-476d-bb0c-4858a3f98672
 ms.date: 02/26/2018
 keywords: ["WdfDeviceInitSetPowerPolicyOwnership function"]
 ms.keywords: DFDeviceObjectGeneralRef_0c94f8f0-3b23-404a-83c2-1742785ff17d.xml, WdfDeviceInitSetPowerPolicyOwnership, WdfDeviceInitSetPowerPolicyOwnership method, kmdf.wdfdeviceinitsetpowerpolicyownership, wdf.wdfdeviceinitsetpowerpolicyownership, wdfdevice/WdfDeviceInitSetPowerPolicyOwnership
@@ -55,14 +54,14 @@ The <b>WdfDeviceInitSetPowerPolicyOwnership</b> method establishes whether the c
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A caller-supplied pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
-### -param IsPowerPolicyOwner 
+### -param IsPowerPolicyOwner [in]
 
-[in]
+
 A Boolean value that indicates whether the calling driver is the power policy owner. If <b>TRUE</b>, the calling driver is the power policy owner. If <b>FALSE</b>, it is not the power policy owner.
 
 ## -remarks

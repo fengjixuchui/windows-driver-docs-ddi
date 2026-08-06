@@ -4,7 +4,6 @@ title: _SMARTCARD_EXTENSION (smclib.h)
 description: The SMARTCARD_EXTENSION structure is used by both the smart card reader driver and the smart card driver library to access all other smart card data structures.
 old-location: smartcrd\smartcard_extension.htm
 tech.root: smartcrd
-ms.assetid: 057d82a8-ce5d-416f-b753-297dcbac27b8
 ms.date: 02/22/2018
 keywords: ["SMARTCARD_EXTENSION structure"]
 ms.keywords: "*PSMARTCARD_EXTENSION, PSMARTCARD_EXTENSION, PSMARTCARD_EXTENSION structure pointer [Smart Card Reader Devices], SMARTCARD_EXTENSION, SMARTCARD_EXTENSION structure [Smart Card Reader Devices], _SMARTCARD_EXTENSION, scstruct_399a1231-e161-450e-b5e2-6fc6035c865f.xml, smartcrd.smartcard_extension, smclib/PSMARTCARD_EXTENSION, smclib/SMARTCARD_EXTENSION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - smclib.h
 api_name:
+ - _SMARTCARD_EXTENSION
+ - PSMARTCARD_EXTENSION
  - SMARTCARD_EXTENSION
 ---
 
@@ -127,7 +128,7 @@ Contains the capabilities of the keyboard reader.
 
 ### -field ReaderExtension
 
-Contains data that is specifc to the smart card reader.
+Contains data that is specific to the smart card reader.
 
 ### -field SmartcardReply
 
@@ -253,7 +254,7 @@ The corresponding WDM driver library adds a pointer to the request in <b>Smartca
 
 Because this call can have an indefinite duration and the caller can terminate the request before it is complete, it is important to mark this IRP as cancelable.
 
-<pre xml:space="preserve"><code>MyDriverCardSupervision(
+<pre><code>MyDriverCardSupervision(
 SmartcardExtension, 
 OtherParameters)
 //
@@ -480,3 +481,4 @@ You must copy the SCARD_IO_REQUEST structure to the <i>ReplyBuffer</i> parameter
 </td>
 </tr>
 </table>
+

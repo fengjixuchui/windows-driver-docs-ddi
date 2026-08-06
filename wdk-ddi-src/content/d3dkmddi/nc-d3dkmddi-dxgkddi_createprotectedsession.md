@@ -1,9 +1,8 @@
 ---
 UID: NC:d3dkmddi.DXGKDDI_CREATEPROTECTEDSESSION
 title: DXGKDDI_CREATEPROTECTEDSESSION (d3dkmddi.h)
-description: Used to create a protected session.
+description: The DXGKDDI_CREATEPROTECTEDSESSION callback function creates a protected session and returns STATUS_SUCCESS on successful completion.
 old-location: display\dxgkddi_createprotectedsession.htm
-ms.assetid: 0FAE7AA0-839D-4D21-BC10-46B2B651979F
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_CREATEPROTECTEDSESSION callback function"]
 ms.keywords: DXGKDDI_CREATEPROTECTEDSESSION, DXGKDDI_CREATEPROTECTEDSESSION callback, DXGKDDI_CREATEPROTECTEDSESSION callback function [Display Devices], d3dkmddi/DXGKDDI_CREATEPROTECTEDSESSION, display.dxgkddi_createprotectedsession
@@ -39,8 +38,6 @@ api_location:
  - d3dkmddi.h
 api_name:
  - DXGKDDI_CREATEPROTECTEDSESSION
-product:
- - Windows
 ---
 
 # DXGKDDI_CREATEPROTECTEDSESSION callback function

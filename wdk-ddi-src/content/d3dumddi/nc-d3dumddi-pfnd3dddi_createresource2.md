@@ -4,7 +4,6 @@ title: PFND3DDDI_CREATERESOURCE2 (d3dumddi.h)
 description: Creates a resource. Implemented by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
 old-location: display\createresource2.htm
 tech.root: display
-ms.assetid: a8326707-cffc-4a20-ad3d-c7862661f513
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CREATERESOURCE2 callback function"]
 ms.keywords: CreateResource2, CreateResource2 callback function [Display Devices], PFND3DDDI_CREATERESOURCE2, PFND3DDDI_CREATERESOURCE2 callback, d3dumddi/CreateResource2, display.createresource2
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3dumddi.h
 api_name:
- - CreateResource2
-product:
- - Windows
+ - PFND3DDDI_CREATERESOURCE2
 ---
 
 # PFND3DDDI_CREATERESOURCE2 callback function
@@ -52,11 +49,11 @@ Creates a resource. Implemented by Windows Display Driver Model (WDDM) 1.2 and l
 
 ## -parameters
 
-### -param hDevice
+### -param hDevice [in]
 
-[in] A handle to the display device (graphics context) that is used to create the resource.
+A handle to the display device (graphics context) that is used to create the resource.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pResource2* [in, out]
 
@@ -173,3 +170,4 @@ If the runtime requests to create a vertex or index buffer and if the user-mode 
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_deallocatecb">pfnDeallocateCb</a>
+

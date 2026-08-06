@@ -4,14 +4,13 @@ title: _DXGKMDT_OPM_HDCP_FLAG (d3dkmdt.h)
 description: The DXGKMDT_OPM_HDCP_FLAG enumeration identifies whether a protected output's physical connector is connected to a High-bandwidth Digital Content Protection (HDCP) repeater.
 old-location: display\dxgkmdt_opm_hdcp_flag.htm
 tech.root: display
-ms.assetid: 479a5913-eee6-4f39-9e51-d04708658bc2
 ms.date: 05/10/2018
 keywords: ["DXGKMDT_OPM_HDCP_FLAG enumeration"]
 ms.keywords: DXGKMDT_OPM_HDCP_FLAG, DXGKMDT_OPM_HDCP_FLAG enumeration [Display Devices], DXGKMDT_OPM_HDCP_FLAG_NONE, DXGKMDT_OPM_HDCP_FLAG_REPEATER, DmEnums_4969beac-7f4f-4bef-bd67-65599816c9ee.xml, _DXGKMDT_OPM_HDCP_FLAG, d3dkmdt/DXGKMDT_OPM_HDCP_FLAG, d3dkmdt/DXGKMDT_OPM_HDCP_FLAG_NONE, d3dkmdt/DXGKMDT_OPM_HDCP_FLAG_REPEATER, display.dxgkmdt_opm_hdcp_flag
 req.header: d3dkmdt.h
-req.include-header: D3dkmdt.h
+req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmdt.h
 api_name:
+ - _DXGKMDT_OPM_HDCP_FLAG
  - DXGKMDT_OPM_HDCP_FLAG
 ---
 
@@ -73,3 +73,4 @@ An HDCP repeater is a device that allows multiple monitors to display the video 
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_get_copp_compatible_information">DxgkDdiOPMGetCOPPCompatibleInformation</a>
+

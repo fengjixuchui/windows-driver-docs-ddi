@@ -4,7 +4,6 @@ title: FltSetInformationFile function (fltkernel.h)
 description: FltSetInformationFile sets information for a given file.
 old-location: ifsk\fltsetinformationfile.htm
 tech.root: ifsk
-ms.assetid: 8d0a91ef-9fb0-45a6-979a-614aed1703a5
 ms.date: 04/16/2018
 keywords: ["FltSetInformationFile function"]
 ms.keywords: FltApiRef_p_to_z_310caf59-cf9a-488a-8632-f0d8d5e14769.xml, FltSetInformationFile, FltSetInformationFile function [Installable File System Drivers], fltkernel/FltSetInformationFile, ifsk.fltsetinformationfile
@@ -50,29 +49,29 @@ api_name:
 
 ## -parameters
 
-### -param Instance 
+### -param Instance [in]
 
-[in]
+
 Opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>.
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 File object pointer for the file. This parameter is required and cannot be <b>NULL</b>.
 
-### -param FileInformation 
+### -param FileInformation [in]
 
-[in]
+
 Pointer to a caller-allocated buffer that contains information to be set for the file. The <i>FileInformationClass</i> parameter specifies the type of information. This parameter is required and cannot be <b>NULL</b>.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Size, in bytes, of the <i>FileInformation</i> buffer.
 
-### -param FileInformationClass 
+### -param FileInformationClass [in]
 
-[in]
+
 Specifies the type of information to be set for the file. The following values are defined. 
 
 <table>

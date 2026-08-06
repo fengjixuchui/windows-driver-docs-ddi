@@ -4,7 +4,6 @@ title: _TAL_TXRX_PARAMETERS (dot11wdi.h)
 description: The TAL_TXRX_PARAMETERS structure defines the TAL TXRX parameters.
 old-location: netvista\tal_txrx_parameters.htm
 tech.root: netvista
-ms.assetid: 44f5c907-7368-43ea-b581-3b9ecf25c611
 ms.date: 05/02/2018
 keywords: ["TAL_TXRX_PARAMETERS structure"]
 ms.keywords: "*PTAL_TXRX_PARAMETERS, PTAL_TXRX_PARAMETERS, PTAL_TXRX_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], TAL_TXRX_PARAMETERS, TAL_TXRX_PARAMETERS structure [Network Drivers Starting with Windows Vista], _TAL_TXRX_PARAMETERS, dot11wdi/PTAL_TXRX_PARAMETERS, dot11wdi/TAL_TXRX_PARAMETERS, netvista.tal_txrx_parameters"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
+ - _TAL_TXRX_PARAMETERS
+ - PTAL_TXRX_PARAMETERS
  - TAL_TXRX_PARAMETERS
 ---
 
@@ -49,6 +50,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The 
   TAL_TXRX_PARAMETERS structure defines the TAL TXRX parameters.

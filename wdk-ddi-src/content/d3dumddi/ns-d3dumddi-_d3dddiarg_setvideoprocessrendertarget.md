@@ -4,7 +4,6 @@ title: _D3DDDIARG_SETVIDEOPROCESSRENDERTARGET (d3dumddi.h)
 description: The D3DDDIARG_SETVIDEOPROCESSRENDERTARGET structure describes the render target surface for video processing.
 old-location: display\d3dddiarg_setvideoprocessrendertarget.htm
 tech.root: display
-ms.assetid: f92aebbf-f163-45fa-ad8e-c13a36f08458
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_SETVIDEOPROCESSRENDERTARGET structure"]
 ms.keywords: D3DDDIARG_SETVIDEOPROCESSRENDERTARGET, D3DDDIARG_SETVIDEOPROCESSRENDERTARGET structure [Display Devices], UMDisplayDriver_param_Structs_8a00fe2d-be28-4577-831f-45fbdcfbbb1d.xml, _D3DDDIARG_SETVIDEOPROCESSRENDERTARGET, d3dumddi/D3DDDIARG_SETVIDEOPROCESSRENDERTARGET, display.d3dddiarg_setvideoprocessrendertarget
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_SETVIDEOPROCESSRENDERTARGET
  - D3DDDIARG_SETVIDEOPROCESSRENDERTARGET
 ---
 
@@ -52,17 +52,17 @@ The D3DDDIARG_SETVIDEOPROCESSRENDERTARGET structure describes the render target 
 
 ## -struct-fields
 
-### -field hVideoProcess
+### -field hVideoProcess [in]
 
-[in] A handle to the Microsoft DirectX Video Acceleration (DirectX VA) video processing device. The user-mode display driver returns this handle in a call to its <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createvideoprocessdevice">CreateVideoProcessDevice</a> function.
+A handle to the Microsoft DirectX Video Acceleration (DirectX VA) video processing device. The user-mode display driver returns this handle in a call to its <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createvideoprocessdevice">CreateVideoProcessDevice</a> function.
 
-### -field hRenderTarget
+### -field hRenderTarget [in]
 
-[in] A handle to the render target surface for video processing.
+A handle to the render target surface for video processing.
 
-### -field SubResourceIndex
+### -field SubResourceIndex [in]
 
-[in] An index into the resource for the render target surface.
+An index into the resource for the render target surface.
 
 ## -see-also
 
@@ -71,3 +71,4 @@ The D3DDDIARG_SETVIDEOPROCESSRENDERTARGET structure describes the render target 
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_setvideoprocessrendertarget">SetVideoProcessRenderTarget</a>
+

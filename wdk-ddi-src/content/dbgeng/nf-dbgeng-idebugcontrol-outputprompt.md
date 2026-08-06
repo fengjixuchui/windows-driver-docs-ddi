@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl.OutputPrompt
 title: IDebugControl::OutputPrompt (dbgeng.h)
-description: The OutputPrompt method formats and sends a user prompt to the output callback objects.
+description: Learn how the OutputPrompt method formats and sends a user prompt to the output callback objects.
 old-location: debugger\outputprompt.htm
 tech.root: debugger
-ms.assetid: 463d6fbd-cbe4-4de1-a01a-52a5002f24b8
 ms.date: 05/03/2018
 keywords: ["IDebugControl::OutputPrompt"]
 ms.keywords: IDebugControl interface [Windows Debugging],OutputPrompt method, IDebugControl.OutputPrompt, IDebugControl2 interface [Windows Debugging],OutputPrompt method, IDebugControl2::OutputPrompt, IDebugControl3 interface [Windows Debugging],OutputPrompt method, IDebugControl3::OutputPrompt, IDebugControl::OutputPrompt, IDebugControl_bb972181-80f5-4c7a-8705-919273529eee.xml, OutputPrompt, OutputPrompt method [Windows Debugging], OutputPrompt method [Windows Debugging],IDebugControl interface, OutputPrompt method [Windows Debugging],IDebugControl2 interface, OutputPrompt method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::OutputPrompt, dbgeng/IDebugControl3::OutputPrompt, dbgeng/IDebugControl::OutputPrompt, debugger.outputprompt
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugControl.OutputPrompt
- - IDebugControl2.OutputPrompt
- - IDebugControl3.OutputPrompt
+ - IDebugControl::OutputPrompt
 ---
 
 # IDebugControl::OutputPrompt
@@ -52,14 +49,14 @@ The <b>OutputPrompt</b>  method formats and sends a user prompt to the <a href="
 
 ## -parameters
 
-### -param OutputControl 
+### -param OutputControl [in]
 
-[in]
+
 Specifies an output control that determines which of the client's output callbacks will receive the output.  For possible values, see <a href="/windows-hardware/drivers/debugger/debug-outctl-xxx">DEBUG_OUTCTL_XXX</a>.
 
-### -param Format 
+### -param Format [in, optional]
 
-[in, optional]
+
 Specifies the format string, as in <b>printf</b>.  Typically, conversion characters work exactly as they do in C. For the floating-point conversion characters, the 64-bit argument is interpreted as a 32-bit floating-point number unless the <b>l</b>  modifier is used.
 
 The <b>%p</b> conversion character is supported, but it represents a pointer in a target's address space.  It might not have any modifiers and it uses the debugger's internal address formatting.  The following additional conversion characters are supported.
@@ -238,9 +235,7 @@ String that contains the name of the specified symbol (and displacement, if any)
 
 If <i>Format</i> is <b>NULL</b>, only the standard prompt text is sent to the output callbacks.
 
-### -param param
-
-####### - ...
+### -param ...
 
 Specifies additional parameters that represent values to be inserted into the output during formatting.
 
@@ -304,3 +299,4 @@ For more information about prompting the user, see <a href="/windows-hardware/dr
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-outputpromptvalist">OutputPromptVaList</a>
+

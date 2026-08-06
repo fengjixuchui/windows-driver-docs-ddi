@@ -4,7 +4,6 @@ title: VhfStart function (vhf.h)
 description: The HID source driver calls this method to start the virtual HID device.
 old-location: hid\vhfstart.htm
 tech.root: hid
-ms.assetid: F3DA4CBB-5749-4E7D-828F-398714575173
 ms.date: 04/30/2018
 keywords: ["VhfStart function"]
 ms.keywords: VhfStart, VhfStart method [Human Input Devices], hid.vhfstart, vhf/VhfStart
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: VhfKm.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,9 +50,9 @@ The HID source driver calls this method to start the virtual HID device.
 
 ## -parameters
 
-### -param VhfHandle 
+### -param VhfHandle [in]
 
-[in]
+
 A handle to a virtual HID device that your HID source driver received in the previous call to <a href="/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfcreate">VhfCreate</a>.
 
 ## -returns
@@ -62,4 +61,6 @@ If the <b>VhfStart</b> call succeeds, the method returns STATUS_SUCCESS. Otherwi
 
 ## -remarks
 
-Virtual HID Framework (VHF) does not invoke any callback functions implemented by the HID source driver until the source driver calls <b>VhfStart</b>. A callback can get invoked before <b>VhfStart</b> returns.  After this call succeeds, the driver can  submit reports. The HID source driver must not invoke any VHF method until after <b>VhfStart</b> returns successfully
+Virtual HID Framework (VHF) does not invoke any callback functions implemented by the HID source driver until the source driver calls <b>VhfStart</b>. A callback can get invoked before <b>VhfStart</b> returns.  After this call succeeds, the driver can call <b>VhfDelete</b>.
+
+<b>VhfAsyncOperationComplete</b> and <b>VhfReadReportSubmit</b> may be called before <b>VhfStart</b> returns (e.g. from within an invoked callback).

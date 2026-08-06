@@ -4,7 +4,6 @@ title: wiasGetChangedValueGuid function (wiamdef.h)
 description: The wiasGetChangedValueGuid function determines whether a property with a GUID value has been changed by an application.
 old-location: image\wiasgetchangedvalueguid.htm
 tech.root: image
-ms.assetid: 5a282acf-6084-4076-a69b-fe23c9eb4d6c
 ms.date: 05/03/2018
 keywords: ["wiasGetChangedValueGuid function"]
 ms.keywords: image.wiasgetchangedvalueguid, wiamdef/wiasGetChangedValueGuid, wiasFncs_b8b576d4-1470-4105-8725-928f70a1e3cc.xml, wiasGetChangedValueGuid, wiasGetChangedValueGuid function [Imaging Devices]
@@ -50,14 +49,14 @@ The **wiasGetChangedValueGuid** function determines whether a property with a GU
 
 ## -parameters
 
-### -param pWiasContext 
+### -param pWiasContext [in]
 
-[in]
+
 Pointer to a WIA item context.
 
-### -param pContext 
+### -param pContext [in]
 
-[in]
+
 Pointer to a [WIA_PROPERTY_CONTEXT](../wiamindr_lh/ns-wiamindr_lh-_wia_property_context.md) structure that contains the current property context.
 
 ### -param bNoValidation

@@ -4,7 +4,6 @@ title: EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY (ucxcontroller.h)
 description: The client driver's implementation to determine if the controller supports a specific capability.
 old-location: buses\evt_ucx_controller_query_usb_capability.htm
 tech.root: usbref
-ms.assetid: c01150b6-e6cf-484c-be3e-c63984e97bb3
 ms.date: 05/07/2018
 keywords: ["EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY callback function"]
 ms.keywords: EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY, EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY callback, EvtUcxControllerQueryUsbCapability, EvtUcxControllerQueryUsbCapability callback function [Buses], PEVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY, PEVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY callback function pointer [Buses], buses.evt_ucx_controller_query_usb_capability, ucxcontroller/EvtUcxControllerQueryUsbCapability
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ucxcontroller.h
 api_name:
- - PEVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY
+ - EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY
 ---
 
 # EVT_UCX_CONTROLLER_QUERY_USB_CAPABILITY callback function
@@ -50,14 +49,14 @@ The client driver's implementation to determine if the controller supports a spe
 
 ## -parameters
 
-### -param UcxController 
+### -param UcxController [in]
 
-[in]
+
  A handle to the UCX controller that the client driver received in a previous call to  the <a href="/previous-versions/windows/hardware/drivers/mt188033(v=vs.85)">UcxControllerCreate</a> method.
 
-### -param CapabilityType 
+### -param CapabilityType [in]
 
-[in]
+
 Pointer to a GUID specifying the requested capability. The possible  <i>PGUID</i>  values are  as follows:
 
 <ul>
@@ -76,20 +75,20 @@ Pointer to a GUID specifying the requested capability. The possible  <i>PGUID</i
 </ul>
    See the Remarks section of <a href="/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)">USBD_QueryUsbCapability</a> for more information.
 
-### -param OutputBufferLength 
+### -param OutputBufferLength [in]
 
-[in]
+
 The length, in bytes, of the request's output buffer, if an output buffer is available.
 
-### -param OutputBuffer 
+### -param OutputBuffer [out, optional]
 
-[out, optional]
+
 A pointer to a location that receives the buffer's address. Certain capabilities may need to provide additional information
         to UCX in this buffer.
 
-### -param ResultLength 
+### -param ResultLength [out]
 
-[out]
+
 A location that, on return, contains the size, in bytes, of the information that the callback function stored in <i>OutputBuffer.</i>
 
 ## -returns
@@ -222,7 +221,7 @@ Controller_EvtControllerQueryUsbCapability(
 }
 ```
 
-
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/drivers/mt188033(v=vs.85)">UcxControllerCreate</a>
+

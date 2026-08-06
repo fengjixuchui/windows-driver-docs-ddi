@@ -4,7 +4,6 @@ title: WdfIoQueueRetrieveRequestByFileObject function (wdfio.h)
 description: The WdfIoQueueRetrieveRequestByFileObject method retrieves the next available I/O request, from a specified I/O queue, that is associated with a specified file object.
 old-location: wdf\wdfioqueueretrieverequestbyfileobject.htm
 tech.root: wdf
-ms.assetid: 6acff4d8-c21f-49c5-a255-5b46aac97c9f
 ms.date: 02/26/2018
 keywords: ["WdfIoQueueRetrieveRequestByFileObject function"]
 ms.keywords: DFQueueObjectRef_52e014c4-04ca-44b2-a5a8-19185b085cdf.xml, WdfIoQueueRetrieveRequestByFileObject, WdfIoQueueRetrieveRequestByFileObject method, kmdf.wdfioqueueretrieverequestbyfileobject, wdf.wdfioqueueretrieverequestbyfileobject, wdfio/WdfIoQueueRetrieveRequestByFileObject
@@ -55,19 +54,19 @@ The <b>WdfIoQueueRetrieveRequestByFileObject</b> method retrieves the next avail
 
 ## -parameters
 
-### -param Queue 
+### -param Queue [in]
 
-[in]
+
 A handle to a framework queue object.
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 A handle to a framework file object.
 
-### -param OutRequest 
+### -param OutRequest [out]
 
-[out]
+
 A pointer to a location that receives a handle to a framework request object. If <b>WdfIoQueueRetrieveRequestByFileObject</b> does not return STATUS_SUCCESS, it does not set the location's value.
 
 ## -returns

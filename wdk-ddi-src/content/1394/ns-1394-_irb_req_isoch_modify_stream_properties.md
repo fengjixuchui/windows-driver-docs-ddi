@@ -4,7 +4,6 @@ title: _IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES (1394.h)
 description: This structure contains the fields necessary for the Bus driver to carry out an IsochModifyStreamProperties request.
 old-location: ieee\irb_req_isoch_modify_stream_properties.htm
 tech.root: IEEE
-ms.assetid: 06CA5F26-8042-4EAC-A381-A0C6E7023BFD
 ms.date: 02/15/2018
 keywords: ["IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES structure"]
 ms.keywords: 1394/IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES, IEEE.irb_req_isoch_modify_stream_properties, IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES, IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES structure [Buses], _IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES
  - IRB_REQ_ISOCH_MODIFY_STREAM_PROPERTIES
 ---
 
@@ -112,4 +112,5 @@ SPEED_FLAGS_400
 
 ## -remarks
 
-The resource must not be streaming when <a href="https://msdn.microsoft.com/library/windows/hardware/gg266405">REQUEST_ISOCH_MODIFY_STREAM_PROPERTIES</a>  is issued. Before issuing <b>REQUEST_ISOCH_MODIFY_STREAM_PROPERTIES</b>, the caller must  send an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537659">REQUEST_ISOCH_STOP</a> request followed by a start request. Also make sure that there are no pending buffers after the caller sends a <b>REQUEST_ISOCH_STOP</b> request and before the caller sends a <b>REQUEST_ISOCH_MODIFY_STREAM_PROPERTIES</b> request.
+The resource must not be streaming when <a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ISOCH_MODIFY_STREAM_PROPERTIES</a>  is issued. Before issuing <b>REQUEST_ISOCH_MODIFY_STREAM_PROPERTIES</b>, the caller must  send a <a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ISOCH_STOP</a> request followed by a start request. Also make sure that there are no pending buffers after the caller sends a <b>REQUEST_ISOCH_STOP</b> request and before the caller sends a <b>REQUEST_ISOCH_MODIFY_STREAM_PROPERTIES</b> request.
+

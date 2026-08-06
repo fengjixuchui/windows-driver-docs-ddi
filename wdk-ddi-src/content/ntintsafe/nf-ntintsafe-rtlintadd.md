@@ -4,7 +4,6 @@ title: RtlIntAdd function (ntintsafe.h)
 description: Adds two values of type INT.
 old-location: kernel\rtlintadd.htm
 tech.root: kernel
-ms.assetid: DF556961-D5BA-4A50-9E6A-DACE96D13B50
 ms.date: 04/30/2018
 keywords: ["RtlIntAdd function"]
 ms.keywords: RtlIntAdd, RtlIntAdd function [Kernel-Mode Driver Architecture], kernel.rtlintadd, ntintsafe/RtlIntAdd
@@ -50,19 +49,19 @@ Adds two values of type <b>INT</b>.
 
 ## -parameters
 
-### -param iAugend 
+### -param iAugend [in]
 
-[in]
+
 The first value in the equation.
 
-### -param iAddend 
+### -param iAddend [in]
 
-[in]
+
 The value to add to <i>iAugend</i>.
 
-### -param piResult 
+### -param piResult [out]
 
-[out]
+
 A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

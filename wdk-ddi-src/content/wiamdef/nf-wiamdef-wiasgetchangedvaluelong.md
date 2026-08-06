@@ -4,7 +4,6 @@ title: wiasGetChangedValueLong function (wiamdef.h)
 description: The wiasGetChangedValueLong function determines whether a property with a long integer value has been changed by an application.
 old-location: image\wiasgetchangedvaluelong.htm
 tech.root: image
-ms.assetid: 2c23729c-9fab-4e3c-9205-175a6aba8f8a
 ms.date: 05/03/2018
 keywords: ["wiasGetChangedValueLong function"]
 ms.keywords: image.wiasgetchangedvaluelong, wiamdef/wiasGetChangedValueLong, wiasFncs_c333720c-e0e9-4fa4-9fdc-24a6a248f58b.xml, wiasGetChangedValueLong, wiasGetChangedValueLong function [Imaging Devices]
@@ -50,14 +49,14 @@ The **wiasGetChangedValueLong** function determines whether a property with a lo
 
 ## -parameters
 
-### -param pWiasContext 
+### -param pWiasContext [in]
 
-[in]
+
 Pointer to a WIA item context.
 
-### -param pContext 
+### -param pContext [in]
 
-[in]
+
 Pointer to a [WIA_PROPERTY_CONTEXT](../wiamindr_lh/ns-wiamindr_lh-_wia_property_context.md) structure that contains the current property context.
 
 ### -param bNoValidation

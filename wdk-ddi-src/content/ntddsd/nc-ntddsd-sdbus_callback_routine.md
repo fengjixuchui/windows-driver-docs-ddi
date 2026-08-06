@@ -4,7 +4,6 @@ title: SDBUS_CALLBACK_ROUTINE (ntddsd.h)
 description: The PSDBUS_CALLBACK_ROUTINE prototype declares the Secure Digital (SD) driver callback routine that the SD bus driver uses to report device interrupts to the driver.
 old-location: sd\psdbus_callback_routine.htm
 tech.root: SD
-ms.assetid: e63ebdcc-afcd-451e-942c-0e295eb3468f
 ms.date: 02/15/2018
 keywords: ["SDBUS_CALLBACK_ROUTINE callback function"]
 ms.keywords: SD.psdbus_callback_routine, SDBUS_CALLBACK_ROUTINE, SDBUS_CALLBACK_ROUTINE callback, SdBusCallbackRoutine, SdBusCallbackRoutine callback function [Buses], ntddsd/SdBusCallbackRoutine, sd-rtns_a51040c8-723c-45ae-9e3b-15ef2baca85b.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ntddsd.h
 api_name:
- - SdBusCallbackRoutine
+ - SDBUS_CALLBACK_ROUTINE
 ---
 
 # SDBUS_CALLBACK_ROUTINE callback function
@@ -50,14 +49,14 @@ The PSDBUS_CALLBACK_ROUTINE prototype declares the Secure Digital (SD) driver ca
 
 ## -parameters
 
-### -param CallbackRoutineContext 
+### -param CallbackRoutineContext [in]
 
-[in]
+
 Pointer to the context information that the bus driver passes to the callback routine. The device driver supplies the bus driver with this information when it initializes the SD bus interface.
 
-### -param InterruptType 
+### -param InterruptType [in]
 
-[in]
+
 Must be set to SDBUS_INTTYPE_DEVICE.
 
 ## -remarks
@@ -69,3 +68,4 @@ The bus driver calls the SD card driver's callback routine whenever the card ind
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/drivers/ff537919(v=vs.85)">SDBUS_INTERFACE_PARAMETERS</a>
+

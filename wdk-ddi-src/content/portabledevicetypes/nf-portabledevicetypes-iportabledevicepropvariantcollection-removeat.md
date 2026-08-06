@@ -1,10 +1,9 @@
 ---
 UID: NF:portabledevicetypes.IPortableDevicePropVariantCollection.RemoveAt
 title: IPortableDevicePropVariantCollection::RemoveAt (portabledevicetypes.h)
-description: Removes the element stored at the location specified by the given index.
+description: Learn how the RemoveAt method removes the element stored at the location specified by the given index.
 old-location: wpddk\iportabledevicepropvariantcollection_removeat.htm
 tech.root: wpd_dk
-ms.assetid: 655e263c-23c9-44f0-8d52-fa8dc0619fee
 ms.date: 02/15/2018
 keywords: ["IPortableDevicePropVariantCollection::RemoveAt"]
 ms.keywords: IPortableDevicePropVariantCollection interface,RemoveAt method, IPortableDevicePropVariantCollection.RemoveAt, IPortableDevicePropVariantCollection::RemoveAt, IPortableDevicePropVariantCollectionRemoveAt, RemoveAt, RemoveAt method, RemoveAt method,IPortableDevicePropVariantCollection interface, portabledevicetypes/IPortableDevicePropVariantCollection::RemoveAt, wpddk.iportabledevicepropvariantcollection_removeat
@@ -40,7 +39,7 @@ api_location:
  - PortableDeviceGUIDs.lib
  - PortableDeviceGUIDs.dll
 api_name:
- - IPortableDevicePropVariantCollection.RemoveAt
+ - IPortableDevicePropVariantCollection::RemoveAt
 ---
 
 # IPortableDevicePropVariantCollection::RemoveAt
@@ -52,9 +51,9 @@ Removes the element stored at the location specified by the given index.
 
 ## -parameters
 
-### -param dwIndex 
+### -param dwIndex [in]
 
-[in]
+
 Specifies the index of the element to be removed.
 
 ## -returns
@@ -97,3 +96,4 @@ You must specify a zero-based index.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicepropvariantcollection">IPortableDevicePropVariantCollection Interface</a>
+

@@ -4,7 +4,6 @@ title: _D3DDDICB_CREATECONTEXT (d3dumddi.h)
 description: The D3DDDICB_CREATECONTEXT structure describes a context to create.
 old-location: display\d3dddicb_createcontext.htm
 tech.root: display
-ms.assetid: 6bee57b5-f4b3-424c-aeb5-3bf65ab16392
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_CREATECONTEXT structure"]
 ms.keywords: D3DDDICB_CREATECONTEXT, D3DDDICB_CREATECONTEXT structure [Display Devices], D3D_param_Structs_9ad6c5e1-c3aa-4546-b3c9-c07c8350093b.xml, _D3DDDICB_CREATECONTEXT, d3dumddi/D3DDDICB_CREATECONTEXT, display.d3dddicb_createcontext
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDICB_CREATECONTEXT
  - D3DDDICB_CREATECONTEXT
 ---
 
@@ -52,53 +52,53 @@ The D3DDDICB_CREATECONTEXT structure describes a context to create.
 
 ## -struct-fields
 
-### -field NodeOrdinal
+### -field NodeOrdinal [in]
 
-[in] The zero-based index for the node that the context is scheduled on.
+The zero-based index for the node that the context is scheduled on.
 
-### -field EngineAffinity
+### -field EngineAffinity [in]
 
-[in] The zero-based index for the engine, within the node that <b>NodeOrdinal</b> specifies, that the context can run in.
+The zero-based index for the engine, within the node that <b>NodeOrdinal</b> specifies, that the context can run in.
 
-### -field Flags
+### -field Flags [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_createcontextflags">D3DDDI_CREATECONTEXTFLAGS</a> structure that indicates, in bit-field flags, how to create the context.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_createcontextflags">D3DDDI_CREATECONTEXTFLAGS</a> structure that indicates, in bit-field flags, how to create the context.
 
-### -field pPrivateDriverData
+### -field pPrivateDriverData [in]
 
-[in] A pointer to private data that is passed to a display miniport driver.
+A pointer to private data that is passed to a display miniport driver.
 
-### -field PrivateDriverDataSize
+### -field PrivateDriverDataSize [in]
 
-[in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
+The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
 
-### -field hContext
+### -field hContext [out]
 
-[out] A handle to the context that the <a href="/previous-versions/ff568895(v=vs.85)">pfnCreateContextCb</a> function creates.
+A handle to the context that the <a href="/previous-versions/ff568895(v=vs.85)">pfnCreateContextCb</a> function creates.
 
-### -field pCommandBuffer
+### -field pCommandBuffer [out]
 
-[out] A pointer to the first command buffer for the created context.
+A pointer to the first command buffer for the created context.
 
-### -field CommandBufferSize
+### -field CommandBufferSize [out]
 
-[out] The size, in bytes, of the first command buffer for the created context, which <b>pCommandBuffer</b> points to.
+The size, in bytes, of the first command buffer for the created context, which <b>pCommandBuffer</b> points to.
 
-### -field pAllocationList
+### -field pAllocationList [out]
 
-[out] An array of <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_allocationlist">D3DDDI_ALLOCATIONLIST</a> structures for the first allocation list for the created context.
+An array of <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_allocationlist">D3DDDI_ALLOCATIONLIST</a> structures for the first allocation list for the created context.
 
-### -field AllocationListSize
+### -field AllocationListSize [out]
 
-[out] The number of elements in the allocation-list array that <b>pAllocationList</b> specifies.
+The number of elements in the allocation-list array that <b>pAllocationList</b> specifies.
 
-### -field pPatchLocationList
+### -field pPatchLocationList [out]
 
-[out] An array of <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_patchlocationlist">D3DDDI_PATCHLOCATIONLIST</a> structures for the first patch-location list for the created context.
+An array of <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_patchlocationlist">D3DDDI_PATCHLOCATIONLIST</a> structures for the first patch-location list for the created context.
 
-### -field PatchLocationListSize
+### -field PatchLocationListSize [out]
 
-[out] The number of elements in the patch-location-list array that <b>pPatchLocationList</b> specifies.
+The number of elements in the patch-location-list array that <b>pPatchLocationList</b> specifies.
 
 ### -field CommandBuffer
 
@@ -121,3 +121,4 @@ This member is available beginning with Windows 7.
 
 
 <a href="/previous-versions/ff568895(v=vs.85)">pfnCreateContextCb</a>
+

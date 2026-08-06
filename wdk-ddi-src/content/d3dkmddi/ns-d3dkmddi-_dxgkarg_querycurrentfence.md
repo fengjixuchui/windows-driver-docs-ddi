@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGKARG_QUERYCURRENTFENCE
 title: _DXGKARG_QUERYCURRENTFENCE (d3dkmddi.h)
 description: The DXGKARG_QUERYCURRENTFENCE structure describes the latest completed submission fence.
 old-location: display\dxgkarg_querycurrentfence.htm
-ms.assetid: 84a7c49b-d079-4d14-b371-5cfb75c1331c
 ms.date: 05/10/2018
 keywords: ["DXGKARG_QUERYCURRENTFENCE structure"]
 ms.keywords: "*INOUT_PDXGKARG_QUERYCURRENTFENCE, DXGKARG_QUERYCURRENTFENCE, DXGKARG_QUERYCURRENTFENCE structure [Display Devices], DmStructs_799a15e5-b780-43c4-a0c2-d97e3c91caec.xml, _DXGKARG_QUERYCURRENTFENCE, d3dkmddi/DXGKARG_QUERYCURRENTFENCE, display.dxgkarg_querycurrentfence"
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_QUERYCURRENTFENCE
  - DXGKARG_QUERYCURRENTFENCE
 ---
 
@@ -52,18 +52,19 @@ The DXGKARG_QUERYCURRENTFENCE structure describes the latest completed submissio
 
 ## -struct-fields
 
-### -field CurrentFence
+### -field CurrentFence [out]
 
-[out] The current fence data.
+The current fence data.
 
-### -field NodeOrdinal
+### -field NodeOrdinal [in]
 
-[in] The zero-based index of the node for the current fence.
+The zero-based index of the node for the current fence.
 
-### -field EngineOrdinal
+### -field EngineOrdinal [in]
 
-[in] The zero-based index of the engine, within the node that <b>NodeOrdinal</b> specifies, for the current fence.
+The zero-based index of the engine, within the node that <b>NodeOrdinal</b> specifies, for the current fence.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_querycurrentfence">DxgkDdiQueryCurrentFence</a>
+

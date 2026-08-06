@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelManager.AddRef
 title: IDataModelManager::AddRef (dbgmodel.h)
-description: Increments the reference count for an interface on an object.
-ms.assetid: 99772ad4-1a6d-4611-81c9-c83ce12d3d30
+description: The AddRef method increments the reference count for an interface on an object. This method belongs to the IDataModelManager interface.
 ms.date: 07/20/2018
 keywords: ["IDataModelManager::AddRef"]
 ms.keywords: IDataModelManager::AddRef, AddRef, IDataModelManager.AddRef, IDataModelManager::AddRef, IDataModelManager.AddRef
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager.AddRef
+ - IDataModelManager::AddRef
 ---
 
 # IDataModelManager::AddRef
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IDataModelManager interface](nn-dbgmodel-idatamodelmanager.md)
+

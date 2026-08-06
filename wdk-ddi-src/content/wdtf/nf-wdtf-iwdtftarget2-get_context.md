@@ -4,7 +4,6 @@ title: IWDTFTarget2::get_Context (wdtf.h)
 description: Gets and sets a name-value pair that represents user data for the target.
 old-location: dtf\iwdtftarget2_context.htm
 tech.root: dtf
-ms.assetid: e7a19b73-3393-4ab4-a967-c00b46f81a9e
 ms.date: 04/04/2018
 keywords: ["IWDTFTarget2::get_Context"]
 ms.keywords: Context property [Windows Device Testing Framework], Context property [Windows Device Testing Framework],IWDTFTarget2 interface, IWDTFTarget2 interface [Windows Device Testing Framework],Context property, IWDTFTarget2.Context, IWDTFTarget2.get_Context, IWDTFTarget2::Context, IWDTFTarget2::get_Context, IWDTFTarget2::put_Context, Microsoft.WDTF.IWDTFTarget2.Context, Microsoft::WDTF::IWDTFTarget2::Context, dtf.iwdtftarget2_context, get_Context, ntddk/IWDTFTarget2::Context, ntddk/IWDTFTarget2::get_Context, ntddk/IWDTFTarget2::put_Context
@@ -38,13 +37,10 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFTarget2.Context
- - IWDTFTarget2.get_Context
- - IWDTFTarget2.put_Context
+ - IWDTFTarget2::get_Context
 ---
 
 # IWDTFTarget2::get_Context
-
 
 ## -description
 
@@ -53,6 +49,12 @@ Gets and sets a name-value pair that represents user data for the target.
 This property is read/write.
 
 ## -parameters
+
+### -param Tag
+
+### -param pVal
+
+### -returns
 
 ## -remarks
 
@@ -72,3 +74,4 @@ see <a href="/windows-hardware/drivers/wdtf/creating-wdtf-scenarios">Creating WD
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftarget2">IWDTFTarget2</a>
+

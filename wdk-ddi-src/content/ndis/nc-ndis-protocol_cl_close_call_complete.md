@@ -4,7 +4,6 @@ title: PROTOCOL_CL_CLOSE_CALL_COMPLETE (ndis.h)
 description: The ProtocolClCloseCallComplete function is used by connection-oriented NDIS clients.
 old-location: netvista\protocolclclosecallcomplete.htm
 tech.root: netvista
-ms.assetid: a7ba1ab2-04c9-45b5-a184-e1ad1448561a
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CL_CLOSE_CALL_COMPLETE callback function"]
 ms.keywords: PROTOCOL_CL_CLOSE_CALL_COMPLETE, PROTOCOL_CL_CLOSE_CALL_COMPLETE callback, ProtocolClCloseCallComplete, ProtocolClCloseCallComplete callback function [Network Drivers Starting with Windows Vista], condis_client_ref_a35e2fe4-8437-4c41-9ec1-13a8926108b5.xml, ndis/ProtocolClCloseCallComplete, netvista.protocolclclosecallcomplete
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolClCloseCallComplete
+ - PROTOCOL_CL_CLOSE_CALL_COMPLETE
 ---
 
 # PROTOCOL_CL_CLOSE_CALL_COMPLETE callback function
@@ -57,9 +56,9 @@ The
 
 ## -parameters
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 Specifies the final status of the client's request to close this call, which can be one of the
      following:
      
@@ -82,18 +81,18 @@ The call manager failed the request to close the call for some CM-determined rea
        <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_close_call">ProtocolCmCloseCall</a> function to
        the client.
 
-### -param ProtocolVcContext 
+### -param ProtocolVcContext [in]
 
-[in]
+
 Specifies the handle to the client's per-VC context area This is the handle that the client
      originally passed to NDIS with 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscocreatevc">NdisCoCreateVc</a> or returned to NDIS from
      its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_create_vc">ProtocolCoCreateVc</a> function.
 
-### -param ProtocolPartyContext 
+### -param ProtocolPartyContext [in, optional]
 
-[in, optional]
+
 Specifies the handle to the client's per-party context area for the last remaining party on the
      client-created VC representing a multipoint connection. Otherwise, this parameter is <b>NULL</b>.
 
@@ -187,3 +186,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_delete_vc">ProtocolCoDeleteVc</a>
+

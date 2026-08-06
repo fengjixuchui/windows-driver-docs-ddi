@@ -2,7 +2,6 @@
 UID: NF:sensorsutils.SerializationBufferAllocate
 title: SerializationBufferAllocate function (sensorsutils.h)
 description: Exported memory allocation function for allocating a serialized buffer.
-ms.assetid: de91ea34-86fb-42fc-896f-45b2e164b81b
 ms.date: 08/08/2018
 keywords: ["SerializationBufferAllocate function"]
 tech.root: sensors
@@ -37,8 +36,6 @@ api_location:
  - sensorsutils.h
 api_name:
  - SerializationBufferAllocate
-product:
- - Windows
 ---
 
 # SerializationBufferAllocate function
@@ -50,13 +47,13 @@ Exported memory allocation function for allocating a serialized buffer.
 
 ## -parameters
 
-### -param SizeInBytes
+### -param SizeInBytes [in]
 
-[in] The size (in bytes) of the buffer to allocate.
+The size (in bytes) of the buffer to allocate.
 
-### -param pBuffer
+### -param pBuffer [in/out]
 
-[in/out] Pointer to the buffer to allocate.
+Pointer to the buffer to allocate.
 
 ## -returns
 

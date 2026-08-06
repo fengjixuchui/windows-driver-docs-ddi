@@ -4,8 +4,7 @@ title: EVT_UCX_ENDPOINT_PURGE (ucxendpoint.h)
 description: The client driver's implementation that completes all outstanding I/O requests on the endpoint.
 old-location: buses\evt_ucx_endpoint_purge.htm
 tech.root: usbref
-ms.assetid: e4ceb597-ebfe-4016-ba83-e5246a70f566
-ms.date: 05/07/2018
+ms.date: 01/14/2022
 keywords: ["EVT_UCX_ENDPOINT_PURGE callback function"]
 ms.keywords: EVT_UCX_ENDPOINT_PURGE, EVT_UCX_ENDPOINT_PURGE callback, EvtUcxEndpointPurge, EvtUcxEndpointPurge callback function [Buses], PEVT_UCX_ENDPOINT_PURGE, PEVT_UCX_ENDPOINT_PURGE callback function pointer [Buses], buses.evt_ucx_endpoint_purge, ucxendpoint/EvtUcxEndpointPurge
 req.header: ucxendpoint.h
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - ucxendpoint.h
 api_name:
- - PEVT_UCX_ENDPOINT_PURGE
+ - EVT_UCX_ENDPOINT_PURGE
 ---
 
 # EVT_UCX_ENDPOINT_PURGE callback function
-
 
 ## -description
 
@@ -50,31 +48,25 @@ The client driver's implementation that completes all outstanding I/O requests o
 
 ## -parameters
 
-### -param UcxController 
+### -param UcxController [in]
 
-[in]
- A handle to the UCX controller that the client driver received in a previous call to  the <a href="/previous-versions/windows/hardware/drivers/mt188033(v=vs.85)">UcxControllerCreate</a> method.
+A handle to the UCX controller that the client driver received in a previous call to  the [UcxControllerCreate](../ucxcontroller/nf-ucxcontroller-ucxcontrollercreate.md) method.
 
-### -param UcxEndpoint
-
-#### - Endpoint [in]
+### -param UcxEndpoint [in]
 
 A handle to a UCXENDPOINT object that represents the endpoint.
 
 ## -remarks
 
-The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="/windows-hardware/drivers/ddi/ucxendpoint/nf-ucxendpoint-ucxendpointcreate">UcxEndpointCreate</a>
- method.
+The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the [UcxEndpointCreate](nf-ucxendpoint-ucxendpointcreate.md) method.
 
-Typically, this function calls <a href="/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuepurge">WdfIoQueuePurge</a>.
+Typically, this function calls [WdfIoQueuePurge](../wdfio/nf-wdfio-wdfioqueuepurge.md).
 
-After UCX calls this function, the client driver fails subsequent I/O requests until UCX calls the client driver's <a href="/windows-hardware/drivers/ddi/ucxendpoint/nc-ucxendpoint-evt_ucx_endpoint_start">EVT_UCX_ENDPOINT_START</a> callback function.
+After UCX calls this function, the client driver fails subsequent I/O requests until UCX calls the client driver's [EVT_UCX_ENDPOINT_START](nc-ucxendpoint-evt_ucx_endpoint_start.md) callback function.
 
+### Examples
 
-#### Examples
-
-
-```
+```cpp
 VOID
 Endpoint_UcxEvtEndpointPurge(
     UCXCONTROLLER   UcxController,
@@ -85,10 +77,8 @@ Endpoint_UcxEvtEndpointPurge(
                             Endpoint_WdfEvtPurgeComplete,
                             UcxEndpoint);
 }
-
 ```
-
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuepurge">WdfIoQueuePurge</a>
+- [WdfIoQueuePurge](../wdfio/nf-wdfio-wdfioqueuepurge.md)

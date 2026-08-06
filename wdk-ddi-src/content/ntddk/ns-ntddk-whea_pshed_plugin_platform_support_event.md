@@ -1,10 +1,10 @@
 ---
 UID: NS:ntddk._WHEA_PSHED_PLUGIN_PLATFORM_SUPPORT_EVENT
 title: WHEA_PSHED_PLUGIN_PLATFORM_SUPPORT_EVENT
+tech.root: whea
 ms.date: 04/28/2020
-ms.topic: language-reference
 targetos: Windows
-description: 
+description: "Learn more about: WHEA_PSHED_PLUGIN_PLATFORM_SUPPORT_EVENT"
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -28,6 +28,7 @@ api_location:
  - ntddk.h
 api_name:
  - _WHEA_PSHED_PLUGIN_PLATFORM_SUPPORT_EVENT
+ - PWHEA_PSHED_PLUGIN_PLATFORM_SUPPORT_EVENT
  - WHEA_PSHED_PLUGIN_PLATFORM_SUPPORT_EVENT
 f1_keywords:
  - _WHEA_PSHED_PLUGIN_PLATFORM_SUPPORT_EVENT

@@ -3,7 +3,6 @@ UID: NC:dispmprt.DXGKDDI_DESTROYVIRTUALGPU
 title: DXGKDDI_DESTROYVIRTUALGPU
 description: The DxgkDdiDestroyVirtualGpu function destroys a previously created virtual GPU.
 tech.root: display
-ms.assetid: 3c27b27a-265d-4a6e-ac2b-bb8998d2c3b8
 ms.date: 04/04/2019
 keywords: ["DXGKDDI_DESTROYVIRTUALGPU callback function"]
 req.header: dispmprt.h
@@ -36,8 +35,6 @@ api_location:
  - dispmprt.h
 api_name:
  - DXGKDDI_DESTROYVIRTUALGPU
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,13 +48,13 @@ The DxgkDdiDestroyVirtualGpu function destroys a previously created virtual GPU.
 
 ## -parameters
 
-### -param Context
+### -param Context [in]
 
-[in] The miniport context that is returned by the driver in the [DXGKDDI_GPU_PARTITION_INTERFACE](ns-dispmprt-_dxgkddi_gpu_partition_interface.md) structure.
+The miniport context that is returned by the driver in the [DXGKDDI_GPU_PARTITION_INTERFACE](ns-dispmprt-_dxgkddi_gpu_partition_interface.md) structure.
 
-### -param pArgs
+### -param pArgs [in]
 
-[in] Pointer to a [DXGKARG_DESTROYVIRTUALGPU](ns-dispmprt-_dxgkarg_destroyvirtualgpu.md) structure.
+Pointer to a [DXGKARG_DESTROYVIRTUALGPU](ns-dispmprt-_dxgkarg_destroyvirtualgpu.md) structure.
 
 ## -returns
 

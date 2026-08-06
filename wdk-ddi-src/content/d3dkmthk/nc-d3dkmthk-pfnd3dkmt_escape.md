@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_ESCAPE
 title: PFND3DKMT_ESCAPE (d3dkmthk.h)
 description: The Pfnd3dkmtEscape callback function shares info with the kernel mode display driver.
-ms.assetid: a23f8430-f752-440b-a7bf-f07eede5e889
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_ESCAPE callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The Pfnd3dkmtEscape callback function shares info with the kernel mode display d
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_ESCAPE](ns-d3dkmthk-_d3dkmt_escape.md) structure.
 

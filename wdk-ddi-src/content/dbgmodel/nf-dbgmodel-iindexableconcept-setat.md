@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.IIndexableConcept.SetAt
 title: IIndexableConcept::SetAt (dbgmodel.h)
 description: The SetAt method attempts to set the value at a particular N-dimensional index from within the indexed object.
-ms.assetid: 732e17ad-60d2-4f42-a898-5fa81eb7005b
 ms.date: 09/19/2018
 keywords: ["IIndexableConcept::SetAt"]
 ms.keywords: IIndexableConcept::SetAt, SetAt, IIndexableConcept.SetAt, IIndexableConcept::SetAt, IIndexableConcept.SetAt
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IIndexableConcept.SetAt
+ - IIndexableConcept::SetAt
 ---
 
 # IIndexableConcept::SetAt
@@ -58,11 +57,11 @@ The number of dimensions that the object is being indexed in.
 
 ### -param indexers
 
-An array (sized according to the indexerCount) of indicies indicating where inside the instance object to access.
+An array (sized according to the indexerCount) of indices indicating where inside the instance object to access.
 
 ### -param value
 
-The value of the element to assign at the specified indicies.
+The value of the element to assign at the specified indices.
 
 ## -returns
 

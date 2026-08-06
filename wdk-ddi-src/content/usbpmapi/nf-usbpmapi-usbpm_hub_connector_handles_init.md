@@ -2,7 +2,6 @@
 UID: NF:usbpmapi.USBPM_HUB_CONNECTOR_HANDLES_INIT
 title: USBPM_HUB_CONNECTOR_HANDLES_INIT function (usbpmapi.h)
 description: Initializes a **USBPM_HUB_CONNECTOR_HANDLES** structure.
-ms.assetid: 0d6bdd1f-9bab-47c4-889d-d9a2bed47e20
 ms.date: 09/30/2018
 keywords: ["USBPM_HUB_CONNECTOR_HANDLES_INIT function"]
 ms.keywords: USBPM_HUB_CONNECTOR_HANDLES_INIT
@@ -48,17 +47,17 @@ Initializes a [**USBPM_HUB_CONNECTOR_HANDLES**](ns-usbpmapi-_usbpm_hub_connector
 
 ## -parameters
 
-### -param HubConnectorHandles
+### -param HubConnectorHandles [Out]
 
-[Out] A pointer to a [**USBPM_HUB_CONNECTOR_HANDLES**](ns-usbpmapi-_usbpm_hub_connector_handles.md) structure to initialize.
+A pointer to a [**USBPM_HUB_CONNECTOR_HANDLES**](ns-usbpmapi-_usbpm_hub_connector_handles.md) structure to initialize.
 
-### -param ConnectorCount
+### -param ConnectorCount [In]
 
-[In] The number of connectors on this hub.
+The number of connectors on this hub.
 
-### -param ConnectorHandlesBuffer
+### -param ConnectorHandlesBuffer [Out]
 
-[Out] A pointer to a connector handle array of all the connectors on this hub.
+A pointer to a connector handle array of all the connectors on this hub.
 
 ## -remarks
 

@@ -4,7 +4,6 @@ title: KsQueryInformationFile function (ks.h)
 description: The KsQueryInformationFile function performs an information query against the specified file object. The function attempts to use FastIoDispatch if possible, or it generates an information request against the device object.
 old-location: stream\ksqueryinformationfile.htm
 tech.root: stream
-ms.assetid: db1cce43-1eae-4af0-bb61-a5c295e3d325
 ms.date: 04/23/2018
 keywords: ["KsQueryInformationFile function"]
 ms.keywords: KsQueryInformationFile, KsQueryInformationFile function [Streaming Media Devices], ks/KsQueryInformationFile, ksfunc_3d343664-3fda-4612-96d4-3fe36532c99e.xml, stream.ksqueryinformationfile
@@ -51,24 +50,24 @@ The <b>KsQueryInformationFile</b> function performs an information query against
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Specifies the file object from which to query the standard information.
 
-### -param FileInformation 
+### -param FileInformation [out]
 
-[out]
+
 Indicates the place in which to put the file information. This is assumed to be a valid or probed address.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Specifies the correct length of the <i>FileInformation</i> buffer.
 
-### -param FileInformationClass 
+### -param FileInformationClass [in]
 
-[in]
+
 Specifies the class of information being requested.
 
 ## -returns

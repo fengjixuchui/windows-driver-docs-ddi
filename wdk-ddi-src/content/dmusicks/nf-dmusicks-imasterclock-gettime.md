@@ -4,7 +4,6 @@ title: IMasterClock::GetTime (dmusicks.h)
 description: The GetTime method retrieves the current reference time read from the master clock.
 old-location: audio\imasterclock_gettime.htm
 tech.root: audio
-ms.assetid: 9e88a94d-ce25-43ee-8187-30b406e8d9e4
 ms.date: 05/08/2018
 keywords: ["IMasterClock::GetTime"]
 ms.keywords: GetTime, GetTime method [Audio Devices], GetTime method [Audio Devices],IMasterClock interface, IMasterClock interface [Audio Devices],GetTime method, IMasterClock.GetTime, IMasterClock::GetTime, audio.imasterclock_gettime, audmp-routines_08af6e05-c432-4560-91fb-f17687291fc0.xml, dmusicks/IMasterClock::GetTime
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dmusicks.h
 api_name:
- - IMasterClock.GetTime
+ - IMasterClock::GetTime
 ---
 
 # IMasterClock::GetTime
@@ -50,9 +49,9 @@ The <code>GetTime</code> method retrieves the current reference time read from t
 
 ## -parameters
 
-### -param pTime 
+### -param pTime [out]
 
-[out]
+
 Output pointer for the reference time. This parameter points to a caller-allocated variable into which the method writes the reference time. Reference time is measured in 100-nanosecond units.
 
 ## -returns
@@ -66,3 +65,4 @@ Output pointer for the reference time. This parameter points to a caller-allocat
 
 
 <a href="/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-iminiportdmus-newstream">IMiniportDMus::NewStream</a>
+

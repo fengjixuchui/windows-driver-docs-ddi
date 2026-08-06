@@ -4,7 +4,6 @@ title: WdfDmaTransactionCreate function (wdfdmatransaction.h)
 description: The WdfDmaTransactionCreate method creates a DMA transaction.
 old-location: wdf\wdfdmatransactioncreate.htm
 tech.root: wdf
-ms.assetid: 9470e4a6-eee4-4a73-80b0-3d45f9d79934
 ms.date: 02/26/2018
 keywords: ["WdfDmaTransactionCreate function"]
 ms.keywords: DFDmaObjectRef_d7399240-2da3-418f-b21b-8a441e7923d4.xml, WdfDmaTransactionCreate, WdfDmaTransactionCreate method, kmdf.wdfdmatransactioncreate, wdf.wdfdmatransactioncreate, wdfdmatransaction/WdfDmaTransactionCreate
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,19 +52,19 @@ The <b>WdfDmaTransactionCreate</b> method creates a DMA transaction.
 
 ## -parameters
 
-### -param DmaEnabler 
+### -param DmaEnabler [in]
 
-[in]
+
 A handle to a DMA enabler object that the driver obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfdmaenabler/nf-wdfdmaenabler-wdfdmaenablercreate">WdfDmaEnablerCreate</a>.
 
-### -param Attributes 
+### -param Attributes [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the new DMA transaction object. (The structure's <b>ParentObject</b> member must be <b>NULL</b>.) This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param DmaTransaction 
+### -param DmaTransaction [out]
 
-[out]
+
 A handle to a DMA transaction object.
 
 ## -returns

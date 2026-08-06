@@ -4,7 +4,6 @@ title: CcInitializeCacheMap function (ntifs.h)
 description: File systems call the CcInitializeCacheMap routine to cache a file.
 old-location: ifsk\ccinitializecachemap.htm
 tech.root: ifsk
-ms.assetid: a76027d9-b486-4596-bbe4-0a801ed73256
 ms.date: 04/16/2018
 keywords: ["CcInitializeCacheMap function"]
 ms.keywords: CcInitializeCacheMap, CcInitializeCacheMap routine [Installable File System Drivers], ccref_8a69cf72-ebb8-499d-8b15-8b0e0b912c95.xml, ifsk.ccinitializecachemap, ntifs/CcInitializeCacheMap
@@ -50,14 +49,14 @@ File systems call the <b>CcInitializeCacheMap</b> routine to cache a file.
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to a file object for the file.
 
-### -param FileSizes 
+### -param FileSizes [in]
 
-[in]
+
 Pointer to a CC_FILE_SIZES structure containing <b>AllocationSize</b>, <b>FileSize</b>, and <b>ValidDataLength</b> for the file. This structure is defined as follows:
 
 
@@ -106,14 +105,14 @@ New valid data length for the file.
 </tr>
 </table>
 
-### -param PinAccess 
+### -param PinAccess [in]
 
-[in]
+
 Set to <b>TRUE</b> if <b>CcPin</b><i>Xxx</i> routines will be used on the file.
 
-### -param Callbacks 
+### -param Callbacks [in]
 
-[in]
+
 Pointer to a structure allocated from nonpaged pool, containing entry points of caller-supplied read-ahead and write-behind callback routines.This structure and its members are defined as follows:
 
 
@@ -145,9 +144,9 @@ VOID (*PRELEASE_FROM_READ_AHEAD) (
 ```
 
 
-### -param LazyWriteContext 
+### -param LazyWriteContext [in]
 
-[in]
+
 Pointer to context information to be passed to the callback routines specified in <i>Callbacks</i>.
 
 ## -remarks

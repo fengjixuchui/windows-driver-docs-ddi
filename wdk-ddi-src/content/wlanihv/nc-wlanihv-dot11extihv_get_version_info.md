@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_GET_VERSION_INFO
 title: DOT11EXTIHV_GET_VERSION_INFO (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_GET_VERSION_INFO callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvgetversioninfo.htm
 tech.root: netvista
-ms.assetid: af75e59d-c4af-43ca-a160-ddc8a7a4a88e
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_GET_VERSION_INFO callback"]
 ms.keywords: DOT11EXTIHV_GET_VERSION_INFO, Dot11ExtIhvGetVersionInfo, Dot11ExtIhvGetVersionInfo callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_1b6acc66-1f69-45c3-8596-3f0c96e21a91.xml, netvista.dot11extihvgetversioninfo, wlanihv/Dot11ExtIhvGetVersionInfo
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_GET_VERSION_INFO
  - wlanihv/DOT11EXTIHV_GET_VERSION_INFO
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtIhvGetVersionInfo
+ - DOT11EXTIHV_GET_VERSION_INFO
 ---
 
 # DOT11EXTIHV_GET_VERSION_INFO callback
@@ -53,9 +51,9 @@ api_name:
 
 ## -parameters
 
-### -param pDot11IHVVersionInfo 
+### -param pDot11IHVVersionInfo [out]
 
-[out]
+
 A pointer to a
      <a href="..\wlanihv\ns-wlanihv-_dot11_ihv_version_info.md">DOT11_IHV_VERSION_INFO</a> structure,
      which contains the interface version numbers.
@@ -117,3 +115,4 @@ For more information about
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_service.md">Dot11ExtIhvInitService</a>
+

@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IModelObject.Release
 title: IModelObject::Release (dbgmodel.h)
-description: Decrements the reference count for an interface on an object.
-ms.assetid: 6bbcf701-5108-4df4-b1f2-478d80956a5f
+description: "The IModelObject::Release method decrements the reference count for an interface on an object."
 ms.date: 07/20/2018
 keywords: ["IModelObject::Release"]
 ms.keywords: IModelObject::Release, Release, IModelObject.Release, IModelObject::Release, IModelObject.Release
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IModelObject.Release
+ - IModelObject::Release
 ---
 
 # IModelObject::Release
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IModelObject interface](nn-dbgmodel-imodelobject.md)
+

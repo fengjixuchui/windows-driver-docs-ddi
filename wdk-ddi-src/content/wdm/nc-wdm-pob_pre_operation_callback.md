@@ -4,7 +4,6 @@ title: POB_PRE_OPERATION_CALLBACK (wdm.h)
 description: The ObjectPreCallback routine is called by the operating system when a process or thread handle operation occurs.
 old-location: kernel\objectprecallback.htm
 tech.root: kernel
-ms.assetid: 257c6c7d-be79-43bf-b2cd-f561e1741f90
 ms.date: 04/30/2018
 keywords: ["POB_PRE_OPERATION_CALLBACK callback function"]
 ms.keywords: DrvrRtns_8ccbcf60-457d-4bd7-b059-423a47a44374.xml, ObjectPreCallback, ObjectPreCallback callback function [Kernel-Mode Driver Architecture], POB_PRE_OPERATION_CALLBACK, POB_PRE_OPERATION_CALLBACK callback, kernel.objectprecallback, wdm/ObjectPreCallback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - ObjectPreCallback
+ - POB_PRE_OPERATION_CALLBACK
 ---
 
 # POB_PRE_OPERATION_CALLBACK callback function
@@ -53,14 +52,14 @@ The <i>ObjectPreCallback</i> routine is called by the operating system when a pr
 
 ## -parameters
 
-### -param RegistrationContext 
+### -param RegistrationContext [in]
 
-[in]
+
 The context that the driver specifies as the <i>CallBackRegistration</i>-><b>RegistrationContext</b> parameter of the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obregistercallbacks">ObRegisterCallbacks</a> routine. The meaning of this value is driver-defined.
 
-### -param OperationInformation 
+### -param OperationInformation [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_ob_pre_operation_information">OB_PRE_OPERATION_INFORMATION</a> structure that specifies the parameters of the handle operation.
 
 ## -returns
@@ -88,3 +87,4 @@ This routine is called at PASSIVE_LEVEL in an arbitrary thread context with norm
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pob_post_operation_callback">ObjectPostCallback</a>
+

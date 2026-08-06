@@ -4,8 +4,7 @@ title: NDIS_WDI_TX_SEND_RESTART_IND (dot11wdi.h)
 description: The NdisWdiTxSendRestartIndication callback function resumes transmission on a given port to a given peer or peer-TID combination.
 old-location: netvista\ndiswditxsendrestartindication.htm
 tech.root: netvista
-ms.assetid: 40976CC1-89A4-420F-867F-99F857670DAE
-ms.date: 05/02/2018
+ms.date: 09/07/2022
 keywords: ["NDIS_WDI_TX_SEND_RESTART_IND callback function"]
 ms.keywords: NDIS_WDI_TX_SEND_RESTART_IND, NDIS_WDI_TX_SEND_RESTART_IND callback, NdisWdiTxSendRestartIndication, NdisWdiTxSendRestartIndication callback function [Network Drivers Starting with Windows Vista], dot11wdi/NdisWdiTxSendRestartIndication, netvista.ndiswditxsendrestartindication
 req.header: dot11wdi.h
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
- - NdisWdiTxSendRestartIndication
+ - NDIS_WDI_TX_SEND_RESTART_IND
 ---
 
 # NDIS_WDI_TX_SEND_RESTART_IND callback function
@@ -46,37 +45,38 @@ api_name:
 
 ## -description
 
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
+
 The NdisWdiTxSendRestartIndication callback function resumes transmission on a given port to a given peer or peer-TID combination.
 
 This is a callback inside <a href="/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_ndis_wdi_data_api">NDIS_WDI_DATA_API</a>.
 
 ## -parameters
 
-### -param NdisMiniportDataPathHandle 
+### -param NdisMiniportDataPathHandle [in]
 
-[in]
+
 The NdisMiniportDataPathHandle passed to the IHV miniport in <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tal_txrx_initialize">MiniportWdiTalTxRxInitialize</a>.
 
-### -param PortId 
+### -param PortId [in]
 
-[in]
+
 The port ID. Wildcards are accepted.
 
-### -param PeerId 
+### -param PeerId [in]
 
-[in]
+
 The peer ID. Wildcards are accepted.
 
-### -param ExTidBitmask 
+### -param ExTidBitmask [in]
 
-[in]
+
 The Extended TID bitmask. See <i>Remarks</i> section for more information.
 
-### -param TxRestartReason
+### -param TxRestartReason [in]
 
-#### - TxPauseReason [in]
-
-TX pause reason bitmask, specified as <a href="/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-_wdi_tx_pause_reason">WDI_TX_PAUSE_REASON</a> value(s). See <i>Remarks</i> section for more information.
+TX restart reason bitmask, specified as <a href="/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-_wdi_tx_pause_reason">WDI_TX_PAUSE_REASON</a> value(s). See <i>Remarks</i> section for more information.
 
 ## -remarks
 
@@ -112,3 +112,4 @@ If <b>TargetPriorityQueueing</b> is true, <a href="/windows-hardware/drivers/net
 
 
 <a href="/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-_wdi_tx_pause_reason">WDI_TX_PAUSE_REASON</a>
+

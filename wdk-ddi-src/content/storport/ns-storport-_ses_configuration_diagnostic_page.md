@@ -1,10 +1,9 @@
 ---
 UID: NS:storport._SES_CONFIGURATION_DIAGNOSTIC_PAGE
-title: _SES_CONFIGURATION_DIAGNOSTIC_PAGE (storport.h)
-description: 
+title: SES_CONFIGURATION_DIAGNOSTIC_PAGE (storport.h)
+description: "Learn more about: SES_CONFIGURATION_DIAGNOSTIC_PAGE structure (storport.h)"
 old-location: storage\ses_configuration_diagnostic_page.htm
 tech.root: storage
-ms.assetid: 0FD748D6-F598-44D1-A8D3-E63764CB90C6
 ms.date: 03/29/2018
 keywords: ["SES_CONFIGURATION_DIAGNOSTIC_PAGE structure"]
 ms.keywords: "*PSES_CONFIGURATION_DIAGNOSTIC_PAGE, PSES_CONFIGURATION_DIAGNOSTIC_PAGE, PSES_CONFIGURATION_DIAGNOSTIC_PAGE structure pointer [Storage Devices], SES_CONFIGURATION_DIAGNOSTIC_PAGE, SES_CONFIGURATION_DIAGNOSTIC_PAGE structure [Storage Devices], _SES_CONFIGURATION_DIAGNOSTIC_PAGE, scsi/PSES_CONFIGURATION_DIAGNOSTIC_PAGE, scsi/SES_CONFIGURATION_DIAGNOSTIC_PAGE, storage.ses_configuration_diagnostic_page"
@@ -42,15 +41,14 @@ api_type:
 api_location:
  - scsi.h
 api_name:
+ - _SES_CONFIGURATION_DIAGNOSTIC_PAGE
+ - PSES_CONFIGURATION_DIAGNOSTIC_PAGE
  - SES_CONFIGURATION_DIAGNOSTIC_PAGE
 ---
 
-# _SES_CONFIGURATION_DIAGNOSTIC_PAGE structure (storport.h)
-
+# SES_CONFIGURATION_DIAGNOSTIC_PAGE structure (storport.h)
 
 ## -description
-
-<p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 The **SES_CONFIGURATION_DIAGNOSTIC_PAGE** structure provides enclosure descriptor information and parameters.
 
@@ -76,4 +74,3 @@ Specifies the value of the generation code.
 ### -field Descriptors
 
 Specifies the enclosure descriptors for the primary and secondary enclosures. The primary enclosure is the first index.
-

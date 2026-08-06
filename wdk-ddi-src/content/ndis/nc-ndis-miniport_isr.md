@@ -4,7 +4,6 @@ title: MINIPORT_ISR (ndis.h)
 description: NDIS calls the MiniportInterrupt function when a NIC, or another device that shares the interrupt with the NIC, generates an interrupt.
 old-location: netvista\miniportinterrupt.htm
 tech.root: netvista
-ms.assetid: 810503b9-75cd-4b38-ab1f-de240968ded6
 ms.date: 05/02/2018
 keywords: ["MINIPORT_ISR callback function"]
 ms.keywords: MINIPORT_ISR, MINIPORT_ISR callback, MiniportInterrupt, MiniportInterrupt callback function [Network Drivers Starting with Windows Vista], ndis/MiniportInterrupt, ndis_interrupts_miniport_functions_ref_1de81c1c-10f4-4b41-81bf-495192b65f02.xml, netvista.miniportinterrupt
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportInterrupt
+ - MINIPORT_ISR
 ---
 
 # MINIPORT_ISR callback function
@@ -54,18 +53,18 @@ NDIS calls the
 
 ## -parameters
 
-### -param MiniportInterruptContext 
+### -param MiniportInterruptContext [in]
 
-[in]
+
 A handle to a block of interrupt context information. The miniport driver supplied this handle in
      the 
      <i>MiniportInterruptContext</i> parameter that the miniport driver passed to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterinterruptex">
      NdisMRegisterInterruptEx</a> function.
 
-### -param QueueDefaultInterruptDpc 
+### -param QueueDefaultInterruptDpc [out]
 
-[out]
+
 A pointer to a BOOLEAN variable that the miniport driver sets before it returns from this call. A
      miniport driver sets this value to <b>TRUE</b> to indicate that the driver requires a DPC on the default
      (current) CPU. If this value is set to <b>TRUE</b>, NDIS ignores the value of the 
@@ -75,9 +74,9 @@ A pointer to a BOOLEAN variable that the miniport driver sets before it returns 
      return value from 
      <i>MiniportInterrupt</i>.
 
-### -param TargetProcessors 
+### -param TargetProcessors [out]
 
-[out]
+
 A bitmask that indicates the target processors for which NDIS should schedule a DPC. This bitmask represents the first 32 processors in processor group 0. Each bit in 
      the bitmask identifies a CPU. If the caller sets bit 0, NDIS schedules a DPC for CPU 0. If the caller sets bit 1, NDIS
      schedules a DPC for CPU 1, and so on. If 
@@ -103,7 +102,7 @@ A bitmask that indicates the target processors for which NDIS should schedule a 
 <tr>
 <td width="40%">
 <dl>
-<dt><b><b>TRUE</b></b></dt>
+<dt><b>TRUE</b></dt>
 </dl>
 </td>
 <td width="60%">
@@ -116,7 +115,7 @@ A bitmask that indicates the target processors for which NDIS should schedule a 
 <tr>
 <td width="40%">
 <dl>
-<dt><b><b>FALSE</b></b></dt>
+<dt><b>FALSE</b></dt>
 </dl>
 </td>
 <td width="60%">
@@ -157,7 +156,7 @@ All NICs can share line-based interrupts with other devices on the I/O bus. If t
     the driver of the device that generated the interrupt. If the 
     <i>QueueDefaultInterruptDpc</i> is set to <b>FALSE</b> and the 
     <i>TargetProcessors</i> parameter is set to zero, NDIS will not schedule any DPCs.
-    Otherwise, NDIS will schedule DPCs egardless of the re<i>MiniportInterrupt</i>turn value from 
+    Otherwise, NDIS will schedule DPCs regardless of the re<i>MiniportInterrupt</i>turn value from 
     <i>MiniportInterrupt</i>.
 
 If the interrupt is for the NIC,
@@ -316,3 +315,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/network/ndis-receive-side-scaling2">Receive Side Scaling (RSS)</a>
+

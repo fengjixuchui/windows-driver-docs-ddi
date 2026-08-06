@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILOPENUICCLOGICALCHANNELINFO
 title: RILOPENUICCLOGICALCHANNELINFO (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILOPENUICCLOGICALCHANNELINFO structure for internal use only."
 old-location: netvista\rilopenuicclogicalchannelinfo.htm
 tech.root: netvista
-ms.assetid: 5001f623-5b53-4ae7-9b5b-dc3bd5bdcc70
 ms.date: 05/02/2018
 keywords: ["RILOPENUICCLOGICALCHANNELINFO structure"]
 ms.keywords: "*LPRILOPENUICCLOGICALCHANNELINFO, RILOPENUICCLOGICALCHANNELINFO, RILOPENUICCLOGICALCHANNELINFO structure [Network Drivers Starting with Windows Vista], netvista.rilopenuicclogicalchannelinfo, ntddrilapitypes/RILOPENUICCLOGICALCHANNELINFO"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILOPENUICCLOGICALCHANNELINFO
+ - LPRILOPENUICCLOGICALCHANNELINFO
 ---
 
 # RILOPENUICCLOGICALCHANNELINFO structure (rilapitypes.h)

@@ -4,7 +4,6 @@ title: WDF_IO_QUEUE_PURGED function (wdfio.h)
 description: The WDF_IO_QUEUE_PURGED function returns TRUE if an I/O queue's state indicates that the queue is drained.
 old-location: wdf\wdf_io_queue_purged.htm
 tech.root: wdf
-ms.assetid: dbb061a6-a770-411c-9c3a-8453662b4362
 ms.date: 02/26/2018
 keywords: ["WDF_IO_QUEUE_PURGED function"]
 ms.keywords: DFQueueObjectRef_2d745708-c310-494a-aedc-362bdc930650.xml, WDF_IO_QUEUE_PURGED, WDF_IO_QUEUE_PURGED function, kmdf.wdf_io_queue_purged, wdf.wdf_io_queue_purged, wdfio/WDF_IO_QUEUE_PURGED
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: None
 req.dll: 
-req.irql: Any IRQL.
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,9 +52,9 @@ The <b>WDF_IO_QUEUE_PURGED</b> function returns <b>TRUE</b> if an I/O queue's st
 
 ## -parameters
 
-### -param State 
+### -param State [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfio/ne-wdfio-_wdf_io_queue_state">WDF_IO_QUEUE_STATE</a>-typed value that <a href="/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuegetstate">WdfIoQueueGetState</a> returns.
 
 ## -returns

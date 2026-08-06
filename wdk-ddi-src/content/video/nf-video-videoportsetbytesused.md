@@ -4,7 +4,6 @@ title: VideoPortSetBytesUsed function (video.h)
 description: The VideoPortSetBytesUsed function is obsolete in Windows 2000 and later.
 old-location: display\videoportsetbytesused.htm
 tech.root: display
-ms.assetid: da348cf9-5694-4e66-990e-bd07f259d97c
 ms.date: 05/10/2018
 keywords: ["VideoPortSetBytesUsed function"]
 ms.keywords: VideoPortSetBytesUsed, VideoPortSetBytesUsed function [Display Devices], VideoPort_Functions_5a8a1a59-b9a8-4b5b-b6d8-7139ddb9b474.xml, display.videoportsetbytesused, video/VideoPortSetBytesUsed
@@ -50,19 +49,19 @@ The <b>VideoPortSetBytesUsed</b> function is <b>obsolete</b> in Windows 2000 and
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's device extension.
 
-### -param pDma 
+### -param pDma [in, out]
 
-[in, out]
+
 Pointer to a DMA handle. To obtain the appropriate DMA handle, use the value in the <b>OutputBuffer</b> member of the <i>pVrp</i> parameter after <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportlockpages">VideoPortLockPages</a> returns.
 
-### -param BytesUsed 
+### -param BytesUsed [in]
 
-[in]
+
 Specifies the number of bytes written to the buffer.
 
 ## -returns

@@ -1,10 +1,8 @@
 ---
 UID: NS:iddcx.IDARG_IN_REPORTCRITICALERROR
 title: IDARG_IN_REPORTCRITICALERROR
-ms.date: 09/24/2020
-ms.assetid: 487793dd-3689-44ea-adc3-5d65738c613a
+ms.date: 08/09/2022
 tech.root: display
-ms.topic: language-reference
 targetos: Windows
 description: The IDARG_IN_REPORTCRITICALERROR structure contains information about a critical error being reported by an indirect display driver (IDD).
 req.construct-type: structure
@@ -45,7 +43,11 @@ The **IDARG_IN_REPORTCRITICALERROR** structure contains information about a crit
 
 ### -field MajorErrorCode
 
+[In] The major error code for this critical error.  Valid range 0-0xff inclusive. IddCx will add 0x100 to this value before passing to Windows Error Reporting when creating a memory dump.
+
 ### -field MinorErrorCode
+
+[in] The minor error code for this critical error.  Valid range 0-0xff inclusive.
 
 ## -remarks
 
@@ -53,4 +55,4 @@ It is recommended that the driver use a unique combination of a major code and m
 
 ## -see-also
 
-[*IddCxReportCriticalError**](nf-iddcx-iddcxreportcriticalerror.md)
+[**IddCxReportCriticalError**](nf-iddcx-iddcxreportcriticalerror.md)

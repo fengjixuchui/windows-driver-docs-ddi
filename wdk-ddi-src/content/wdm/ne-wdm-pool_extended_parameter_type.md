@@ -2,10 +2,9 @@
 UID: NE:wdm.POOL_EXTENDED_PARAMETER_TYPE
 title: POOL_EXTENDED_PARAMETER_TYPE
 tech.root: kernel
-ms.date: 03/01/2020
-ms.topic: language-reference
+ms.date: 01/10/2022
 targetos: Windows
-description: 
+description: "Learn more about: POOL_EXTENDED_PARAMETER_TYPE"
 req.construct-type: enumeration
 req.ddi-compliance: 
 req.header: wdm.h
@@ -25,6 +24,7 @@ api_location:
  - wdm.h
 api_name:
  - POOL_EXTENDED_PARAMETER_TYPE
+ - PPOOL_EXTENDED_PARAMETER_TYPE
 f1_keywords:
  - POOL_EXTENDED_PARAMETER_TYPE
  - wdm/POOL_EXTENDED_PARAMETER_TYPE
@@ -40,13 +40,21 @@ This enumeration is used in the [**POOL_EXTENDED_PARAMETER**](ns-wdm-pool_extend
 
 ## -enum-fields
 
-### -field PoolExtendedParameterInvalidType
+### -field PoolExtendedParameterInvalidType:0
 
 Invalid extended parameter type. Do not use.
 
 ### -field PoolExtendedParameterPriority
 
 The extended parameter specifies the priority of the pool allocation using the **Priority** field of the <a href="ns-wdm-pool_extended_parameter.md"><b>POOL_EXTENDED_PARAMETER</b></a> structure.
+
+### -field PoolExtendedParameterSecurePool
+
+The extended parameter specifies the secure pool parameters of the pool allocation using the **SecurePoolParams** field of the <a href="ns-wdm-pool_extended_parameter.md"><b>POOL_EXTENDED_PARAMETER</b></a> structure.
+
+### -field PoolExtendedParameterNumaNode
+
+The extended parameter specifies the preferred NUMA node of the pool allocation using the **PreferredNode** field of the <a href="ns-wdm-pool_extended_parameter.md"><b>POOL_EXTENDED_PARAMETER</b></a> structure.
 
 ### -field PoolExtendedParameterMax
 

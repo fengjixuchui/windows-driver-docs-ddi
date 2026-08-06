@@ -1,10 +1,9 @@
 ---
-UID: NS:scsiwmi.__unnamed_struct_1
+UID: NS:scsiwmi.SCSIWMIGUIDREGINFO
 title: SCSIWMIGUIDREGINFO (scsiwmi.h)
 description: The SCSIWMIGUIDREGINFO structure contains information about a given data or event block supported by a SCSI miniport driver.
 old-location: storage\scsiwmiguidreginfo.htm
 tech.root: storage
-ms.assetid: 7116445e-751b-478a-8e58-8f5c90d06b9b
 ms.date: 03/29/2018
 keywords: ["SCSIWMIGUIDREGINFO structure"]
 ms.keywords: "*PSCSIWMIGUIDREGINFO, PSCSIWMIGUIDREGINFO, PSCSIWMIGUIDREGINFO structure pointer [Storage Devices], SCSIWMIGUIDREGINFO, SCSIWMIGUIDREGINFO structure [Storage Devices], scsiwmi/PSCSIWMIGUIDREGINFO, scsiwmi/SCSIWMIGUIDREGINFO, storage.scsiwmiguidreginfo, structs-scsibus_3688cdd5-2515-4fd8-8eae-37689dac26c0.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - scsiwmi.h
 api_name:
+ - PSCSIWMIGUIDREGINFO
  - SCSIWMIGUIDREGINFO
 ---
 
@@ -104,3 +104,4 @@ For more information about defining blocks, <a href="/windows-hardware/drivers/k
 
 
 <a href="/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmidispatchfunction">ScsiPortWmiDispatchFunction</a>
+

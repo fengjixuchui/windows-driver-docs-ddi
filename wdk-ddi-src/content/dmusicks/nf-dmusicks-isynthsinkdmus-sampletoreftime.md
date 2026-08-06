@@ -4,7 +4,6 @@ title: ISynthSinkDMus::SampleToRefTime (dmusicks.h)
 description: The SampleToRefTime method converts a sample time to a reference time.
 old-location: audio\isynthsinkdmus_sampletoreftime.htm
 tech.root: audio
-ms.assetid: b2d54ee9-78aa-4799-a06d-6c79000d3e32
 ms.date: 05/08/2018
 keywords: ["ISynthSinkDMus::SampleToRefTime"]
 ms.keywords: ISynthSinkDMus interface [Audio Devices],SampleToRefTime method, ISynthSinkDMus.SampleToRefTime, ISynthSinkDMus::SampleToRefTime, SampleToRefTime, SampleToRefTime method [Audio Devices], SampleToRefTime method [Audio Devices],ISynthSinkDMus interface, audio.isynthsinkdmus_sampletoreftime, audmp-routines_acfbec43-3c33-4d78-9d25-57e44afe0033.xml, dmusicks/ISynthSinkDMus::SampleToRefTime
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dmusicks.h
 api_name:
- - ISynthSinkDMus.SampleToRefTime
+ - ISynthSinkDMus::SampleToRefTime
 ---
 
 # ISynthSinkDMus::SampleToRefTime
@@ -50,14 +49,14 @@ The <code>SampleToRefTime</code> method converts a sample time to a reference ti
 
 ## -parameters
 
-### -param llSampleTime 
+### -param llSampleTime [in]
 
-[in]
+
 Specifies the sample time being passed in.
 
-### -param prfTime 
+### -param prfTime [out]
 
-[out]
+
 Output pointer for the reference time. This parameter is a pointer to a caller-allocated variable into which the method writes the calculated reference time. Reference time is measured in 100-nanosecond units.
 
 ## -returns
@@ -77,3 +76,4 @@ The calculation of reference time from sample time to reference time depends on 
 
 
 <a href="/windows-hardware/drivers/ddi/dmusicks/nn-dmusicks-isynthsinkdmus">ISynthSinkDMus</a>
+

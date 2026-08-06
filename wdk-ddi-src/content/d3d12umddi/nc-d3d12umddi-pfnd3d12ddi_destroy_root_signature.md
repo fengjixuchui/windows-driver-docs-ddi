@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_DESTROY_ROOT_SIGNATURE
 title: PFND3D12DDI_DESTROY_ROOT_SIGNATURE (d3d12umddi.h)
 description: Destroys a root signature.
-ms.assetid: 3d30b10e-1cfe-4fbf-ba6b-b1bd3173e9f1
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_DESTROY_ROOT_SIGNATURE callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_DESTROY_ROOT_SIGNATURE
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ Destroys a root signature.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 A root signature handle.
 

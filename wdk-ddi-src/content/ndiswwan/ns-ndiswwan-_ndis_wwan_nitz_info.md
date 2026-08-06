@@ -3,7 +3,6 @@ UID: NS:ndiswwan._NDIS_WWAN_NITZ_INFO
 title: _NDIS_WWAN_NITZ_INFO (ndiswwan.h)
 description: The NDIS_WWAN_NITZ_INFO structure describes the current network time and time zone information.
 tech.root: netvista
-ms.assetid: 71072272-67C1-4B17-AAE2-66F808472D83
 ms.date: 04/11/2019
 keywords: ["NDIS_WWAN_NITZ_INFO structure"]
 ms.keywords: _NDIS_WWAN_NITZ_INFO, NDIS_WWAN_NITZ_INFO, *PNDIS_WWAN_NITZ_INFO,
@@ -37,6 +36,8 @@ api_location:
  - ndiswwan.h
 api_name:
  - _NDIS_WWAN_NITZ_INFO
+ - PNDIS_WWAN_NITZ_INFO
+ - NDIS_WWAN_NITZ_INFO
 ---
 
 # _NDIS_WWAN_NITZ_INFO structure
@@ -58,7 +59,7 @@ The header with type, revision, and size information about the **NDIS_WWAN_NITZ_
 | Revision | NDIS_WWAN_NITZ_INFO_REVISION_1 |
 | Size | sizeof(NDIS_WWAN_NITZ_INFO) |
 
-For more information about these members, see [**NDIS_OBJECT_HEADER**](../ntddndis/ns-ntddndis-_ndis_object_header.md).
+For more information about these members, see [**NDIS_OBJECT_HEADER**](../objectheader/ns-objectheader-ndis_object_header.md).
 
 ### -field uStatus
 
@@ -88,3 +89,4 @@ This structure is used in the [NDIS_STATUS_WWAN_NITZ_INFO](/windows-hardware/dri
 [NDIS_STATUS_WWAN_NITZ_INFO](/windows-hardware/drivers/network/ndis-status-wwan-nitz-info)
 
 [**WWAN_NITZ_INFO**](../wwan/ns-wwan-_wwan_nitz_info.md)
+

@@ -4,7 +4,6 @@ title: IXpsDocumentConsumer::SendXpsDocument (filterpipeline.h)
 description: The SendXpsDocument method sends an XPS document to the pipeline.
 old-location: print\ixpsdocumentconsumer_sendxpsdocument.htm
 tech.root: print
-ms.assetid: ad9f0f6b-19a6-4c99-9350-7ca249cf4774
 ms.date: 04/20/2018
 keywords: ["IXpsDocumentConsumer::SendXpsDocument"]
 ms.keywords: IXpsDocumentConsumer interface [Print Devices],SendXpsDocument method, IXpsDocumentConsumer.SendXpsDocument, IXpsDocumentConsumer::SendXpsDocument, SendXpsDocument, SendXpsDocument method [Print Devices], SendXpsDocument method [Print Devices],IXpsDocumentConsumer interface, filterpipeline/IXpsDocumentConsumer::SendXpsDocument, filterpipeline_f8816c77-a8d0-4d44-bd12-adaf9194c34c.xml, print.ixpsdocumentconsumer_sendxpsdocument
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - filterpipeline.h
 api_name:
- - IXpsDocumentConsumer.SendXpsDocument
+ - IXpsDocumentConsumer::SendXpsDocument
 ---
 
 # IXpsDocumentConsumer::SendXpsDocument
@@ -50,9 +49,9 @@ The <code>SendXpsDocument</code> method sends an XPS document to the pipeline.
 
 ## -parameters
 
-### -param pIXpsDocument 
+### -param pIXpsDocument [in]
 
-[in]
+
 A pointer to the XPS document object to send.
 
 ## -returns
@@ -72,3 +71,4 @@ Only one XpsDocument interface can be sent. The <code>SendXpsDocument</code> met
 
 
 <a href="/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-ixpsdocumentconsumer">IXpsDocumentConsumer</a>
+

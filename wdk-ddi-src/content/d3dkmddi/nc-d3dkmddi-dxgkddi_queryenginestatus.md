@@ -3,7 +3,6 @@ UID: NC:d3dkmddi.DXGKDDI_QUERYENGINESTATUS
 title: DXGKDDI_QUERYENGINESTATUS (d3dkmddi.h)
 description: The display port driver's GPU scheduler calls this function to determine the progress of a node within an active physical display adapter (engine).
 old-location: display\dxgkddiqueryenginestatus.htm
-ms.assetid: 87c99fcb-d25a-41b1-a1f3-9cf9ab7b141e
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_QUERYENGINESTATUS callback function"]
 ms.keywords: DXGKDDI_QUERYENGINESTATUS, DXGKDDI_QUERYENGINESTATUS callback, DxgkDdiQueryEngineStatus, DxgkDdiQueryEngineStatus callback function [Display Devices], d3dkmddi/DxgkDdiQueryEngineStatus, display.dxgkddiqueryenginestatus
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3dkmddi.h
 api_name:
- - DxgkDdiQueryEngineStatus
-product:
- - Windows
+ - DXGKDDI_QUERYENGINESTATUS
 ---
 
 # DXGKDDI_QUERYENGINESTATUS callback function
@@ -79,3 +76,4 @@ For more information, see <a href="/windows-hardware/drivers/display/tdr-changes
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a>
+

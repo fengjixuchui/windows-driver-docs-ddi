@@ -4,7 +4,6 @@ title: WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT function (wdfdevice.h)
 description: The WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT function initializes a driver's WDF_DEVICE_INTERFACE_PROPERTY_DATA structure.
 old-location: wdf\wdf_device_interface_property_data_init.htm
 tech.root: wdf
-ms.assetid: 8B3D6F59-BA76-4B14-9570-57263D204BFE
 ms.date: 02/26/2018
 keywords: ["WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT function"]
 ms.keywords: WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT, WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT function, wdf.wdf_device_interface_property_data_init, wdfdevice/WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT
@@ -52,19 +51,19 @@ The <b>WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT</b> function initializes a driver
 
 ## -parameters
 
-### -param PropertyData 
+### -param PropertyData [in]
 
-[in]
+
 A pointer to <a href="/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_interface_property_data">WDF_DEVICE_INTERFACE_PROPERTY_DATA</a> structure.
 
-### -param InterfaceClassGUID 
+### -param InterfaceClassGUID [in]
 
-[in]
+
 A pointer to a GUID that identifies the device interface class.
 
-### -param PropertyKey 
+### -param PropertyKey [in]
 
-[in]
+
 A pointer to a <b>DEVPROPKEY</b> structure that specifies the device property key.
 
 ## -remarks

@@ -4,7 +4,6 @@ title: EVT_SERCX2_PIO_TRANSMIT_CANCEL_READY_NOTIFICATION (sercx.h)
 description: The EvtSerCx2PioTransmitCancelReadyNotification event callback function is called by version 2 of the serial framework extension (SerCx2) to cancel a ready notification that SerCx2 enabled in a previous call to the EvtSerCx2PioTransmitEnableReadyNotification event callback function.
 old-location: serports\evtsercx2piotransmitcancelreadynotification.htm
 tech.root: serports
-ms.assetid: 2483F6A6-67FE-4C75-9872-53F66B4BD658
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX2_PIO_TRANSMIT_CANCEL_READY_NOTIFICATION callback function"]
 ms.keywords: 2/EvtSerCx2PioTransmitCancelReadyNotification, EVT_SERCX2_PIO_TRANSMIT_CANCEL_READY_NOTIFICATION, EVT_SERCX2_PIO_TRANSMIT_CANCEL_READY_NOTIFICATION callback, EvtSerCx2PioTransmitCancelReadyNotification, EvtSerCx2PioTransmitCancelReadyNotification callback function [Serial Ports], serports.evtsercx2piotransmitcancelreadynotification
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
- - EvtSerCx2PioTransmitCancelReadyNotification
+ - EVT_SERCX2_PIO_TRANSMIT_CANCEL_READY_NOTIFICATION
 ---
 
 # EVT_SERCX2_PIO_TRANSMIT_CANCEL_READY_NOTIFICATION callback function
@@ -50,9 +49,9 @@ The <i>EvtSerCx2PioTransmitCancelReadyNotification</i> event callback function i
 
 ## -parameters
 
-### -param PioTransmit 
+### -param PioTransmit [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitcreate">SerCx2PioTransmitCreate</a> method to create this object.
 
 ## -returns
@@ -114,3 +113,4 @@ The <b>EVT_SERCX2_PIO_TRANSMIT_CANCEL_READY_NOTIFICATION</b> function type is de
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitready">SerCx2PioTransmitReady</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:wudfddi.IWDFDeviceInitialize.RetrieveDeviceInstanceId
 title: IWDFDeviceInitialize::RetrieveDeviceInstanceId (wudfddi.h)
-description: The RetrieveDeviceInstanceId method retrieves the identifier of an instance of a device.
+description: This article describes how the RetrieveDeviceInstanceId method retrieves the identifier of an instance of a device.
 old-location: wdf\iwdfdeviceinitialize_retrievedeviceinstanceid.htm
 tech.root: wdf
-ms.assetid: 5f1651f9-4952-4e87-90fc-3f79948b8457
 ms.date: 02/26/2018
 keywords: ["IWDFDeviceInitialize::RetrieveDeviceInstanceId"]
 ms.keywords: IWDFDeviceInitialize interface,RetrieveDeviceInstanceId method, IWDFDeviceInitialize.RetrieveDeviceInstanceId, IWDFDeviceInitialize::RetrieveDeviceInstanceId, RetrieveDeviceInstanceId, RetrieveDeviceInstanceId method, RetrieveDeviceInstanceId method,IWDFDeviceInitialize interface, UMDFDeviceObjectRef_b383227b-ba03-4c85-9517-bb87eac631ef.xml, umdf.iwdfdeviceinitialize_retrievedeviceinstanceid, wdf.iwdfdeviceinitialize_retrievedeviceinstanceid, wudfddi/IWDFDeviceInitialize::RetrieveDeviceInstanceId
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDeviceInitialize.RetrieveDeviceInstanceId
+ - IWDFDeviceInitialize::RetrieveDeviceInstanceId
 ---
 
 # IWDFDeviceInitialize::RetrieveDeviceInstanceId
@@ -52,14 +51,14 @@ The <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice-retriev
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 A pointer to a buffer that receives a <b>NULL</b>-terminated string that represents the identifier of an instance of a device if the supplied buffer is non-<b>NULL</b> and <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice-retrievedeviceinstanceid">RetrieveDeviceInstanceId</a> is successful.
 
-### -param pdwSizeInChars 
+### -param pdwSizeInChars [in, out]
 
-[in, out]
+
 A pointer to a variable that receives the number of characters, including the <b>NULL</b> character, in the string that <i>Buffer</i> points to.
 
 If <i>Buffer</i> is <b>NULL</b>, the value that the driver supplies is zero. The framework then returns the size, in characters, that is required for the identifier string.
@@ -91,3 +90,4 @@ The buffer at <i>Buffer</i> was <b>NULL</b>, the driver preset the variable at <
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdeviceinitialize">IWDFDeviceInitialize</a>
+

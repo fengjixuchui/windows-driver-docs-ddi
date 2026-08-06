@@ -4,14 +4,13 @@ title: RtlCreateSecurityDescriptorRelative function (ntifs.h)
 description: The RtlCreateSecurityDescriptorRelative routine initializes a new security descriptor in self-relative format.
 old-location: ifsk\rtlcreatesecuritydescriptorrelative.htm
 tech.root: ifsk
-ms.assetid: feb9600a-e8ce-449a-8da8-2d9a2f10f581
 ms.date: 04/16/2018
 keywords: ["RtlCreateSecurityDescriptorRelative function"]
 ms.keywords: RtlCreateSecurityDescriptorRelative, RtlCreateSecurityDescriptorRelative routine [Installable File System Drivers], ifsk.rtlcreatesecuritydescriptorrelative, ntifs/RtlCreateSecurityDescriptorRelative, rtlref_3130b278-4976-4371-952f-ab6fddeda7a9.xml
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Desktop
-req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,14 +49,14 @@ The <b>RtlCreateSecurityDescriptorRelative</b> routine initializes a new securit
 
 ## -parameters
 
-### -param SecurityDescriptor 
+### -param SecurityDescriptor [out]
 
-[out]
+
 Pointer to a caller-allocated buffer, which must be at least <b>sizeof</b>(SECURITY_DESCRIPTOR_RELATIVE), to receive the initialized security descriptor.
 
-### -param Revision 
+### -param Revision [in]
 
-[in]
+
 Revision level to assign to the security descriptor. This parameter must be SECURITY_DESCRIPTOR_REVISION.
 
 ## -returns
@@ -97,7 +96,7 @@ The given <i>Revision</i> is not known or is not supported.
 
 In effect, a successful call to this routine initializes a security descriptor without security constraints.
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

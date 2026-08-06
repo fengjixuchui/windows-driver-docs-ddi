@@ -4,7 +4,6 @@ title: EVT_VMB_CHANNEL_SAVE_PACKET (vmbuskernelmodeclientlibapi.h)
 description: The EvtVmbChannelSavePacket callback function is invoked when the virtualization service provider (VSP) endpoint must save the state associated with a packet.
 old-location: netvista\evt_vmb_channel_save_packet.htm
 tech.root: netvista
-ms.assetid: 92CC3C36-D10C-4C6B-8BB4-476E72AD684C
 ms.date: 05/02/2018
 keywords: ["EVT_VMB_CHANNEL_SAVE_PACKET callback function"]
 ms.keywords: EVT_VMB_CHANNEL_SAVE_PACKET, EVT_VMB_CHANNEL_SAVE_PACKET callback, EvtVmbChannelSavePacket, EvtVmbChannelSavePacket callback function [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_SAVE_PACKET, PFN_VMB_CHANNEL_SAVE_PACKET callback function pointer [Network Drivers Starting with Windows Vista], netvista.evt_vmb_channel_save_packet, vmbuskernelmodeclientlibapi/EvtVmbChannelSavePacket
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - VmbusKernelModeClientLibApi.h
 api_name:
- - PFN_VMB_CHANNEL_SAVE_PACKET
+ - EVT_VMB_CHANNEL_SAVE_PACKET
 ---
 
 # EVT_VMB_CHANNEL_SAVE_PACKET callback function
@@ -52,29 +51,29 @@ The <i>EvtVmbChannelSavePacket</i> callback function is invoked when the virtual
 
 ## -parameters
 
-### -param Channel 
+### -param Channel [in]
 
-[in]
+
 The channel on which the packet arrives.
 
-### -param Packet 
+### -param Packet [in]
 
-[in]
+
 The packet for which VSP saves state.
 
-### -param SaveBuf 
+### -param SaveBuf [out]
 
-[out]
+
 The buffer into which to save the state.
 
-### -param SaveBufSize 
+### -param SaveBufSize [in]
 
-[in]
+
 Size of the <i>SaveBuf</i> parameter, in bytes.
 
-### -param BytesNeeded 
+### -param BytesNeeded [out]
 
-[out]
+
 Size necessary to save the state of the transaction, in bytes.
 
 ## -returns
@@ -95,3 +94,4 @@ the length stipulated in the first call.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/vmbuskernelmodeclientlibapi/nf-vmbuskernelmodeclientlibapi-vmbserverchannelinitsetsaverestorepacketcallbacks">VmbServerChannelInitSetSaveRestorePacketCallbacks</a>
+

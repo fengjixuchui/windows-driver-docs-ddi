@@ -4,7 +4,6 @@ title: _IRB_REQ_ALLOCATE_ADDRESS_RANGE (1394.h)
 description: This structure contains the fields necessary for the 1394 stack to carry out a request to allocate an address range.
 old-location: ieee\irb_req_allocate_address_range.htm
 tech.root: IEEE
-ms.assetid: 76D306DF-D604-4B3C-BFED-A855113A55A9
 ms.date: 02/15/2018
 keywords: ["IRB_REQ_ALLOCATE_ADDRESS_RANGE structure"]
 ms.keywords: 1394/IRB_REQ_ALLOCATE_ADDRESS_RANGE, IEEE.irb_req_allocate_address_range, IRB_REQ_ALLOCATE_ADDRESS_RANGE, IRB_REQ_ALLOCATE_ADDRESS_RANGE structure [Buses], _IRB_REQ_ALLOCATE_ADDRESS_RANGE
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _IRB_REQ_ALLOCATE_ADDRESS_RANGE
  - IRB_REQ_ALLOCATE_ADDRESS_RANGE
 ---
 
@@ -227,7 +227,7 @@ Number of addresses returned.
 
 Points to an array of ADDRESS_RANGE structures. The array must be large enough to hold the maximum number of structures the bus driver can return.
 
-If the driver specifies a required address offset, or if the driver does not provide any backing store, the bus driver only returns one address range. If the driver provides backing store in <b>u.AllocateAddressRange.Mdl</b> the bus driver segments the allocated addresses along physical memory boundaries. If the <b>MaxSegmentSize</b> of <b>u.AllocateAddressRange</b> is 0, or if <b>MaxSegmentSize</b> is bigger than the page size, the driver can use the <a href="/windows-hardware/drivers/kernel/mm-bad-pointer">ADDRESS_AND_SIZE_TO_SPAN_PAGES</a> macro to determine the worst case. Otherwise, the maximum number of addresses ranges returned by the bus driver is <b>u.AllocateAddressRange.nLength</b> / <b>u.MaxSegmentSize</b>. If a nonzero value is specified for <b>MaxSegmentSize</b>, the value must be less than 64 KB (65,536 bytes). In other words, it must be less than or equal to 65,535 (0xFFFF) due to the fact that the address range size is stored in a 16-bit word.
+If the driver specifies a required address offset, or if the driver does not provide any backing store, the bus driver only returns one address range. If the driver provides backing store in <b>u.AllocateAddressRange.Mdl</b> the bus driver segments the allocated addresses along physical memory boundaries. If the <b>MaxSegmentSize</b> of <b>u.AllocateAddressRange</b> is 0, or if <b>MaxSegmentSize</b> is bigger than the page size, the driver can use the [ADDRESS_AND_SIZE_TO_SPAN_PAGES](../wdm/nf-wdm-address_and_size_to_span_pages.md) macro to determine the worst case. Otherwise, the maximum number of addresses ranges returned by the bus driver is <b>u.AllocateAddressRange.nLength</b> / <b>u.MaxSegmentSize</b>. If a nonzero value is specified for <b>MaxSegmentSize</b>, the value must be less than 64 KB (65,536 bytes). In other words, it must be less than or equal to 65,535 (0xFFFF) due to the fact that the address range size is stored in a 16-bit word.
 
 ### -field hAddressRange
 

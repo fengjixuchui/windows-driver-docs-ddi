@@ -4,14 +4,13 @@ title: FsRtlInsertPerFileObjectContext function (ntifs.h)
 description: For a &#0034;legacy&#0034; file system filter driver, the FsRtlInsertPerFileObjectContext function associates context information with a file object.
 old-location: ifsk\fsrtlinsertperfileobjectcontext.htm
 tech.root: ifsk
-ms.assetid: 852b8b71-8a8c-4e9e-b27e-78fc2df8d5bd
 ms.date: 04/16/2018
 keywords: ["FsRtlInsertPerFileObjectContext function"]
 ms.keywords: FsRtlInsertPerFileObjectContext, FsRtlInsertPerFileObjectContext function [Installable File System Drivers], fsrtlref_21a21edf-cf20-4c0b-aaef-bc75656238c4.xml, ifsk.fsrtlinsertperfileobjectcontext, ntifs/FsRtlInsertPerFileObjectContext
 req.header: ntifs.h
 req.include-header: Fltkernel.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,14 +49,14 @@ For a "legacy" file system filter driver, the <b>FsRtlInsertPerFileObjectContext
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 A pointer to the file object for which to associate context information (given by the <i>Ptr</i> parameter).
 
-### -param Ptr 
+### -param Ptr [in]
 
-[in]
+
 A pointer to a caller-allocated and initialized FSRTL_PER_FILEOBJECT_CONTEXT structure to be associated with <i>FileObject</i>. The structure can be used as-is or embedded in a driver-defined, per-file-object context information structure. To initialize the structure, use the <a href="/previous-versions/ff546170(v=vs.85)">FsRtlInitPerFileObjectContext</a> macro.
 
 ## -returns

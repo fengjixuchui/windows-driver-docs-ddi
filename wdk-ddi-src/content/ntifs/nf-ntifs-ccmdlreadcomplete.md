@@ -4,7 +4,6 @@ title: CcMdlReadComplete function (ntifs.h)
 description: The CcMdlReadComplete routine frees the memory descriptor lists (MDL) created by CcMdlRead for a cached file.
 old-location: ifsk\ccmdlreadcomplete.htm
 tech.root: ifsk
-ms.assetid: c1525604-3aee-464d-a7f5-a6a4739a2aa4
 ms.date: 04/16/2018
 keywords: ["CcMdlReadComplete function"]
 ms.keywords: CcMdlReadComplete, CcMdlReadComplete routine [Installable File System Drivers], ccref_9739ef62-748c-43c6-ae79-ae54f2358368.xml, ifsk.ccmdlreadcomplete, ntifs/CcMdlReadComplete
@@ -50,14 +49,14 @@ The <b>CcMdlReadComplete</b> routine frees the memory descriptor lists (MDL) cre
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 File object pointer that was passed to <a href="/previous-versions/ff539159(v=vs.85)">CcMdlRead</a>.
 
-### -param MdlChain 
+### -param MdlChain [in]
 
-[in]
+
 Address of the MDL chain returned by <a href="/previous-versions/ff539159(v=vs.85)">CcMdlRead</a>.
 
 ## -remarks

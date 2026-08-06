@@ -4,7 +4,6 @@ title: RtlUIntPtrToInt8 function (ntintsafe.h)
 description: Converts a value of type UINT_PTR to a value of type INT8.
 old-location: kernel\rtluintptrtoint8.htm
 tech.root: kernel
-ms.assetid: BA484BB1-550E-48F1-A400-86F62D59A0A1
 ms.date: 04/30/2018
 keywords: ["RtlUIntPtrToInt8 function"]
 ms.keywords: RtlUIntPtrToInt8, RtlUIntPtrToInt8 function [Kernel-Mode Driver Architecture], kernel.rtluintptrtoint8, ntintsafe/RtlUIntPtrToInt8
@@ -50,14 +49,14 @@ Converts a value of type <b>UINT_PTR</b> to a value of type <b>INT8</b>.
 
 ## -parameters
 
-### -param uOperand 
+### -param uOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pi8Result 
+### -param pi8Result [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

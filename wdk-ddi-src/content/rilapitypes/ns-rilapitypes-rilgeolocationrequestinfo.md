@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILGEOLOCATIONREQUESTINFO
 title: RILGEOLOCATIONREQUESTINFO (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILGEOLOCATIONREQUESTINFO structure for internal use only."
 old-location: netvista\rilgeolocationrequestinfo.htm
 tech.root: netvista
-ms.assetid: f3fa5212-66c1-45f8-a96f-78d1f2f01fe8
 ms.date: 05/02/2018
 keywords: ["RILGEOLOCATIONREQUESTINFO structure"]
 ms.keywords: "*LPRILGEOLOCATIONREQUESTINFO, RILGEOLOCATIONREQUESTINFO, RILGEOLOCATIONREQUESTINFO structure [Network Drivers Starting with Windows Vista], netvista.rilgeolocationrequestinfo, ntddrilapitypes/RILGEOLOCATIONREQUESTINFO"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILGEOLOCATIONREQUESTINFO
+ - LPRILGEOLOCATIONREQUESTINFO
 ---
 
 # RILGEOLOCATIONREQUESTINFO structure (rilapitypes.h)

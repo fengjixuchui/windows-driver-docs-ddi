@@ -4,7 +4,6 @@ title: PFND3DDDI_UPDATEALLOCATIONPROPERTYCB (d3dumddi.h)
 description: The pfnUpdateAllocationPropertyCb functions updates the property of an allocation without creating a new allocation.
 old-location: display\pfnupdateallocationpropertycb.htm
 tech.root: display
-ms.assetid: 49E4189A-2183-4033-BF17-ADFAC1CF1EF2
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_UPDATEALLOCATIONPROPERTYCB callback function"]
 ms.keywords: PFND3DDDI_UPDATEALLOCATIONPROPERTYCB, PFND3DDDI_UPDATEALLOCATIONPROPERTYCB callback, d3dumddi/pfnUpdateAllocationPropertyCb, display.pfnupdateallocationpropertycb, pfnUpdateAllocationPropertyCb, pfnUpdateAllocationPropertyCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnUpdateAllocationPropertyCb
-product:
- - Windows
+ - PFND3DDDI_UPDATEALLOCATIONPROPERTYCB
 ---
 
 # PFND3DDDI_UPDATEALLOCATIONPROPERTYCB callback function
@@ -56,7 +53,7 @@ The <b>pfnUpdateAllocationPropertyCb</b> functions updates the property of an al
 
 A handle to the display device associated with the allocation
 
-### -param Arg2
+### -param unnamedParam2
 
 *pUpdateAllocationProperty* [in, out]
 
@@ -73,3 +70,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-d3ddd
 |E_INVALIDARG|Invalid call with bad arguments provided.|
 |E_OUTOFMEMORY|Desired supported memory segment is full.|
 |E_FAIL|An unknown error has occurred.|
+

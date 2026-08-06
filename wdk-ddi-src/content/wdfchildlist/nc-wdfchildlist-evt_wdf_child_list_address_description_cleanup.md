@@ -4,7 +4,6 @@ title: EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_CLEANUP (wdfchildlist.h)
 description: A driver's EvtChildListAddressDescriptionCleanup event callback function frees any memory allocations for an address description that the driver's EvtChildListAddressDescriptionDuplicate callback function allocated.
 old-location: wdf\evtchildlistaddressdescriptioncleanup.htm
 tech.root: wdf
-ms.assetid: 845c8c96-7d34-4273-963e-b7f644884f26
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_CLEANUP callback function"]
 ms.keywords: DFDeviceObjectChildListRef_f28ee1b8-ff52-416e-9811-1eb46939505a.xml, EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_CLEANUP, EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_CLEANUP callback, EvtChildListAddressDescriptionCleanup, EvtChildListAddressDescriptionCleanup callback function, kmdf.evtchildlistaddressdescriptioncleanup, wdf.evtchildlistaddressdescriptioncleanup, wdfchildlist/EvtChildListAddressDescriptionCleanup
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfChildlist.h
 api_name:
- - EvtChildListAddressDescriptionCleanup
+ - EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_CLEANUP
 ---
 
 # EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_CLEANUP callback function
@@ -52,14 +51,14 @@ A driver's <i>EvtChildListAddressDescriptionCleanup</i> event callback function 
 
 ## -parameters
 
-### -param ChildList 
+### -param ChildList [in]
 
-[in]
+
 A handle to a framework child-list object.
 
-### -param AddressDescription 
+### -param AddressDescription [in, out]
 
-[in, out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_address_description_header">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a> structure that identifies an address description.
 
 ## -remarks
@@ -95,3 +94,4 @@ For more information about dynamic enumeration, see <a href="/windows-hardware/d
 
 
 <a href="/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitsetdefaultchildlistconfig">WdfFdoInitSetDefaultChildListConfig</a>
+

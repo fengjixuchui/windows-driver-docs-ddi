@@ -4,7 +4,6 @@ title: ScsiPortWmiPostProcess function (scsiwmi.h)
 description: The ScsiPortWmiPostProcess routine updates a request context for a WMI SRB.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
 old-location: storage\scsiportwmipostprocess.htm
 tech.root: storage
-ms.assetid: da1770bc-2233-47ef-afab-cfcb34edb4b9
 ms.date: 03/29/2018
 keywords: ["ScsiPortWmiPostProcess function"]
 ms.keywords: ScsiPortWmiPostProcess, ScsiPortWmiPostProcess routine [Storage Devices], scsiprt_e10d02e1-18d2-4152-ac11-83bdcbb2ce49.xml, scsiwmi/ScsiPortWmiPostProcess, storage.scsiportwmipostprocess
@@ -51,19 +50,19 @@ The <b>ScsiPortWmiPostProcess</b> routine updates a request context for a WMI SR
 
 ## -parameters
 
-### -param RequestContext 
+### -param RequestContext [in]
 
-[in]
+
 A pointer to the request context for this SRB.
 
-### -param SrbStatus 
+### -param SrbStatus [in]
 
-[in]
+
 Specifies any valid SRB status. If the output buffer passed to the miniport driver was too small to contain all of the data from a request, the miniport driver sets <i>SrbStatus</i> to SRB_STATUS_DATA_OVERRUN.
 
-### -param BufferUsed 
+### -param BufferUsed [in]
 
-[in]
+
 If <i>SrbStatus</i> indicates success, the miniport driver sets <i>BufferUsed</i> to the number of bytes of data written to the buffer. If <i>SrbStatus</i> is SRB_STATUS_DATA_OVERRUN, the miniport driver sets <i>BufferUsed</i> to the number of bytes required to complete the SRB successfully.
 
 ## -remarks

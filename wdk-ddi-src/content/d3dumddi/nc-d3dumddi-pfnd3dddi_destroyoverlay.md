@@ -4,7 +4,6 @@ title: PFND3DDDI_DESTROYOVERLAY (d3dumddi.h)
 description: The DestroyOverlay function disables the overlay hardware and frees the overlay handle.
 old-location: display\destroyoverlay.htm
 tech.root: display
-ms.assetid: 63004d19-e2cd-462c-8fa5-ea4dd6e29735
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DESTROYOVERLAY callback function"]
 ms.keywords: DestroyOverlay, DestroyOverlay callback function [Display Devices], PFND3DDDI_DESTROYOVERLAY, PFND3DDDI_DESTROYOVERLAY callback, UserModeDisplayDriver_Functions_e3dd8286-aff0-40c0-8cf2-84ecc706df90.xml, d3dumddi/DestroyOverlay, display.destroyoverlay
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - DestroyOverlay
-product:
- - Windows
+ - PFND3DDDI_DESTROYOVERLAY
 ---
 
 # PFND3DDDI_DESTROYOVERLAY callback function
@@ -56,7 +53,7 @@ The <b>DestroyOverlay</b> function disables the overlay hardware and frees the o
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -77,3 +74,4 @@ Overlays are independent from the resources that are displayed by using the over
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

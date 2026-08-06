@@ -4,7 +4,6 @@ title: StorPortGetOriginalMdl function (storport.h)
 description: The StorPortGetOriginalMdl routine returns the MDL associated with the given SRB.
 old-location: storage\storportgetoriginalmdl.htm
 tech.root: storage
-ms.assetid: 48042e9d-ed83-4326-931d-ded753deb1a7
 ms.date: 03/29/2018
 keywords: ["StorPortGetOriginalMdl function"]
 ms.keywords: StorPortGetOriginalMdl, StorPortGetOriginalMdl routine [Storage Devices], storage.storportgetoriginalmdl, storport/StorPortGetOriginalMdl, storprt_4617200d-18b4-4ee2-aa43-92fc5f3a7b66.xml
@@ -50,19 +49,19 @@ The <b>StorPortGetOriginalMdl</b> routine returns the MDL associated with the gi
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param Srb 
+### -param Srb [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/srb/ns-srb-_scsi_request_block">SCSI_REQUEST_BLOCK</a> structure.
 
-### -param Mdl 
+### -param Mdl [out]
 
-[out]
+
 A pointer to receive the MDL.
 
 ## -returns

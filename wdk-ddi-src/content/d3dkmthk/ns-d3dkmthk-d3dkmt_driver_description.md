@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_DRIVER_DESCRIPTION
 title: D3DKMT_DRIVER_DESCRIPTION
 description: Describes the kernel mode display driver.
 tech.root: display
-ms.assetid: a86d4140-7543-4a9a-9421-9c5b38565326
 ms.date: 04/04/2019
 keywords: ["D3DKMT_DRIVER_DESCRIPTION structure"]
 ms.keywords: D3DKMT_DRIVER_DESCRIPTION, D3DKMT_DRIVER_DESCRIPTION,
@@ -34,6 +33,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_DRIVER_DESCRIPTION
  - D3DKMT_DRIVER_DESCRIPTION
 dev_langs:
  - c++
@@ -48,10 +48,10 @@ Describes the kernel mode display driver.
 
 ## -struct-fields
 
-### -field DriverDescription
+### -field DriverDescription [out]
 
  
-[out] Pointer to a string of characters that represent the driver description.
+Pointer to a string of characters that represent the driver description.
 
 ## -remarks
 

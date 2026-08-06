@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_CREATEVIDEOPROCESSOR
 title: PFND3D11_1DDI_CREATEVIDEOPROCESSOR (d3d10umddi.h)
 description: Creates a video processor object.
 old-location: display\createvideoprocessor1.htm
-ms.assetid: 741045a2-0a91-490a-907d-5f4900a4a0ae
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_CREATEVIDEOPROCESSOR callback function"]
 ms.keywords: CreateVideoProcessor, CreateVideoProcessor callback function [Display Devices], PFND3D11_1DDI_CREATEVIDEOPROCESSOR, PFND3D11_1DDI_CREATEVIDEOPROCESSOR callback, d3d10umddi/CreateVideoProcessor, display.createvideoprocessor1, display.pfncreatevideoprocessor1
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - CreateVideoProcessor
-product:
- - Windows
+ - PFND3D11_1DDI_CREATEVIDEOPROCESSOR
 ---
 
 # PFND3D11_1DDI_CREATEVIDEOPROCESSOR callback function
@@ -52,25 +49,25 @@ Creates a video processor object.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCreateData* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddiarg_createvideoprocessor">D3D11_1DDIARG_CREATEVIDEOPROCESSOR</a> structure. This structure specifies the attributes of the video processor object to be created.
 
-### -param Arg3
+### -param unnamedParam3
 
 *hVideoProcessor* [in]
 
 A handle to the driver's private data for the video processor object.
 
-### -param Arg4
+### -param unnamedParam4
 
 *hRTVideoProcessor* [in]
 
@@ -101,3 +98,4 @@ When the runtime  calls <i>CreateVideoProcessor</i>, it passes the handle to the
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddiarg_createvideoprocessor">D3D11_1DDIARG_CREATEVIDEOPROCESSOR</a>
+

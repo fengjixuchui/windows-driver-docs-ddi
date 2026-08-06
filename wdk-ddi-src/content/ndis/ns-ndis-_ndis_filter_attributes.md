@@ -4,7 +4,6 @@ title: _NDIS_FILTER_ATTRIBUTES (ndis.h)
 description: The NDIS_FILTER_ATTRIBUTES structure defines the attributes of a filter module.
 old-location: netvista\ndis_filter_attributes.htm
 tech.root: netvista
-ms.assetid: a377d809-4a6f-413e-a26a-446b4eca85ab
 ms.date: 05/02/2018
 keywords: ["NDIS_FILTER_ATTRIBUTES structure"]
 ms.keywords: "*PNDIS_FILTER_ATTRIBUTES, NDIS_FILTER_ATTRIBUTES, NDIS_FILTER_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], PNDIS_FILTER_ATTRIBUTES, PNDIS_FILTER_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], _NDIS_FILTER_ATTRIBUTES, filter_structures_ref_8711cb33-bba0-41ba-912b-af351c7e758d.xml, ndis/NDIS_FILTER_ATTRIBUTES, ndis/PNDIS_FILTER_ATTRIBUTES, netvista.ndis_filter_attributes"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_FILTER_ATTRIBUTES
+ - PNDIS_FILTER_ATTRIBUTES
  - NDIS_FILTER_ATTRIBUTES
 ---
 
@@ -57,7 +58,7 @@ The NDIS_FILTER_ATTRIBUTES structure defines the attributes of a filter module.
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      filter attributes structure (NDIS_FILTER_ATTRIBUTES). Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_FILTER_ATTRIBUTES, the 
@@ -75,8 +76,9 @@ A filter drivers passes an NDIS_FILTER_ATTRIBUTES structure to the
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsetattributes">NdisFSetAttributes</a>
+

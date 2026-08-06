@@ -4,7 +4,6 @@ title: _WDI_P2P_CHANNEL_INDICATE_REASON (wditypes.h)
 description: The WDI_P2P_CHANNEL_INDICATE_REASON enumeration defines Wi-Fi Direct channel indication reason values.
 old-location: netvista\wdi_p2p_channel_indicate_reason.htm
 tech.root: netvista
-ms.assetid: F6C2D044-E64B-4DA5-A168-20C99F325451
 ms.date: 05/02/2018
 keywords: ["WDI_P2P_CHANNEL_INDICATE_REASON enumeration"]
 ms.keywords: WDI_P2P_CHANNEL_INDICATE_REASON, WDI_P2P_CHANNEL_INDICATE_REASON enumeration [Network Drivers Starting with Windows Vista], WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_GO_INITIATED, WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_REQUESTED, WDI_P2P_CHANNEL_INDICATE_REASON_NEW_CONNECTION, _WDI_P2P_CHANNEL_INDICATE_REASON, netvista.wdi_p2p_channel_indicate_reason, wditypes/WDI_P2P_CHANNEL_INDICATE_REASON, wditypes/WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_GO_INITIATED, wditypes/WDI_P2P_CHANNEL_INDICATE_REASON_ECSA_REQUESTED, wditypes/WDI_P2P_CHANNEL_INDICATE_REASON_NEW_CONNECTION
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_P2P_CHANNEL_INDICATE_REASON
  - WDI_P2P_CHANNEL_INDICATE_REASON
 ---
 
@@ -47,6 +47,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_P2P_CHANNEL_INDICATE_REASON enumeration defines Wi-Fi Direct channel indication reason values.
 

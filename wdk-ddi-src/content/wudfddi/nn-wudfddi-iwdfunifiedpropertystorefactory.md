@@ -4,7 +4,6 @@ title: IWDFUnifiedPropertyStoreFactory (wudfddi.h)
 description: The IWDFUnifiedPropertyStoreFactory interface is a factory interface that is used to create a unified property store interface.
 old-location: wdf\iwdfunifiedpropertystorefactory.htm
 tech.root: wdf
-ms.assetid: 34884B88-187A-4079-843D-F777287442F7
 ms.date: 02/26/2018
 keywords: ["IWDFUnifiedPropertyStoreFactory interface"]
 ms.keywords: IWDFUnifiedPropertyStoreFactory, IWDFUnifiedPropertyStoreFactory interface, IWDFUnifiedPropertyStoreFactory interface,described, umdf.iwdfunifiedpropertystorefactory, wdf.iwdfunifiedpropertystorefactory, wudfddi/IWDFUnifiedPropertyStoreFactory
@@ -52,9 +51,9 @@ The <b>IWDFUnifiedPropertyStoreFactory</b> interface is a factory interface that
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFUnifiedPropertyStoreFactory</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IWDFUnifiedPropertyStoreFactory</b> also has these types of members:
+The <b>IWDFUnifiedPropertyStoreFactory</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IWDFUnifiedPropertyStoreFactory</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>
 
 ## -remarks

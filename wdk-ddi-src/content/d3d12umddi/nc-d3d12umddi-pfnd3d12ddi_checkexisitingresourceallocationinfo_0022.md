@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_CHECKEXISITINGRESOURCEALLOCATIONINFO_0022
 title: PFND3D12DDI_CHECKEXISITINGRESOURCEALLOCATIONINFO_0022 (d3d12umddi.h)
-description: The pfnCheckExistingResourceAllocationInfo callback function supports checking existing resource allocation information.
+description: The PFND3D12DDI_CHECKEXISITINGRESOURCEALLOCATIONINFO_0022 callback function checks existing resource allocation information.
 old-location: display\pfnd3d12ddi_checkexisitingresourceallocationinfo_0022.htm
-ms.assetid: 428F23B4-3032-4BD9-A1C1-104BB2648F89
 ms.date: 05/10/2018
 keywords: ["PFND3D12DDI_CHECKEXISITINGRESOURCEALLOCATIONINFO_0022 callback function"]
 ms.keywords: PFND3D12DDI_CHECKEXISITINGRESOURCEALLOCATIONINFO_0022, PFND3D12DDI_CHECKEXISITINGRESOURCEALLOCATIONINFO_0022 callback, d3d12umddi/pfnCheckExistingResourceAllocationInfo, display.pfnd3d12ddi_checkexisitingresourceallocationinfo_0022, pfnCheckExistingResourceAllocationInfo, pfnCheckExistingResourceAllocationInfo callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d12umddi.h
 api_name:
- - pfnCheckExistingResourceAllocationInfo
-product:
- - Windows
+ - PFND3D12DDI_CHECKEXISITINGRESOURCEALLOCATIONINFO_0022
 ---
 
 # PFND3D12DDI_CHECKEXISITINGRESOURCEALLOCATIONINFO_0022 callback function
@@ -52,19 +49,19 @@ The <a href="/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice*
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 hResource
 
 A resource handle.
 
-### -param Arg3
+### -param unnamedParam3
 
 pInfo [out]
 
@@ -77,3 +74,4 @@ This callback function is part of a two step process of resource creation. After
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_checkresourceallocationinfo_0022">pfnCheckResourceAllocationInfo</a>
+

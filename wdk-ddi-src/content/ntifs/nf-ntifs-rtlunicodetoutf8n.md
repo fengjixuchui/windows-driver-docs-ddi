@@ -1,17 +1,16 @@
 ---
 UID: NF:ntifs.RtlUnicodeToUTF8N
 title: RtlUnicodeToUTF8N function (ntifs.h)
-description: The RtlUnicodeToUTF8N routine converts a Unicode string to a UTF-8 string.
+description: The RtlUnicodeToUTF8N routine in ntifs.h converts a Unicode string to a UTF-8 string. The UTF-8 output is null-terminated only if the Unicode input string is.
 old-location: kernel\rtlunicodetoutf8n.htm
 tech.root: kernel
-ms.assetid: fdbb5d74-25d5-4920-849c-8d4adce1d216
 ms.date: 04/30/2018
 keywords: ["RtlUnicodeToUTF8N function"]
 ms.keywords: RtlUnicodeToUTF8N, RtlUnicodeToUTF8N routine [Kernel-Mode Driver Architecture], k109_8c33089a-9b47-4c33-9468-56a16caea229.xml, kernel.rtlunicodetoutf8n, wdm/RtlUnicodeToUTF8N
 req.header: ntifs.h
 req.include-header: Ntifs.h, Wdm.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winverclnt: Windows 7
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,29 +49,29 @@ The <b>RtlUnicodeToUTF8N</b> routine converts a Unicode string to a UTF-8 string
 
 ## -parameters
 
-### -param UTF8StringDestination 
+### -param UTF8StringDestination [out]
 
-[out]
-A pointer to a caller-allocated destination buffer into which the routine writes the UTF-8 output string. If this parameter is <b>NULL</b>, the routine writes the required size of the output buffer to *<i>UTF8StringActualByteCount</i>.
 
-### -param UTF8StringMaxByteCount 
+A pointer to a caller-allocated destination buffer into which the routine writes the UTF-8 output string. If this parameter is <b>NULL</b>, the routine writes the required size of the output buffer to **UTF8StringActualByteCount*.
 
-[in]
+### -param UTF8StringMaxByteCount [in]
+
+
 Specifies the maximum number of bytes that the routine can write to the buffer that <i>UTF8StringDestination</i> points to. If <i>UTF8StringDestination</i> = <b>NULL</b>, set <i>UTF8StringMaxByteCount</i> = 0.
 
-### -param UTF8StringActualByteCount 
+### -param UTF8StringActualByteCount [out]
 
-[out]
+
 A pointer to a location into which the routine writes the actual number of bytes that it has written to the buffer that <i>UTF8StringDestination</i> points to. If <i>UTF8StringDestination</i> is non-<b>NULL</b>, this count never exceeds the value of <i>UTF8StringMaxByteCount</i>. If <i>UTF8StringDestination</i> is <b>NULL</b>, this count is the number of bytes that are required to contain the entire output string.
 
-### -param UnicodeStringSource 
+### -param UnicodeStringSource [in]
 
-[in]
+
 A pointer to the Unicode source string.
 
-### -param UnicodeStringByteCount 
+### -param UnicodeStringByteCount [in]
 
-[in]
+
 Specifies the number of bytes in the Unicode source string that the <i>UnicodeStringSource</i> parameter points to.
 
 ## -returns
@@ -134,9 +133,9 @@ The <i>UnicodeStringSource</i> parameter is <b>NULL</b>.
 
 The UTF-8 output string is null-terminated only if the Unicode input string is null-terminated.
 
-The routine returns STATUS_BUFFER_TOO_SMALL if the <i>UTF8StringMaxByteCount</i> parameter specifies a buffer size that is too small to contain the entire output string. In this case, the routine writes as many UTF-8 characters as will fit in the buffer, and the *<i>UTF8StringActualByteCount</i> value specifies the number of valid bytes that the routine has written to the buffer. The partial string that is contained in the output buffer might not include a terminating null character.
+The routine returns STATUS_BUFFER_TOO_SMALL if the <i>UTF8StringMaxByteCount</i> parameter specifies a buffer size that is too small to contain the entire output string. In this case, the routine writes as many UTF-8 characters as will fit in the buffer, and the **UTF8StringActualByteCount* value specifies the number of valid bytes that the routine has written to the buffer. The partial string that is contained in the output buffer might not include a terminating null character.
 
-You can make an initial call to <b>RtlUnicodeToUTF8N</b> to obtain the required output buffer size, and then call <b>RtlUnicodeToUTF8N</b> again to obtain the Unicode output string. In the initial call, set <i>UTF8StringDestination</i> = <b>NULL</b> and <i>UTF8StringMaxByteCount</i> = 0, and the routine will write the required buffer size to *<i>UTF8StringActualByteCount</i>. Next, allocate a buffer of the required size and call <b>RtlUnicodeToUTF8N</b> a second time to obtain the UTF-8 output string.
+You can make an initial call to <b>RtlUnicodeToUTF8N</b> to obtain the required output buffer size, and then call <b>RtlUnicodeToUTF8N</b> again to obtain the Unicode output string. In the initial call, set <i>UTF8StringDestination</i> = <b>NULL</b> and <i>UTF8StringMaxByteCount</i> = 0, and the routine will write the required buffer size to **UTF8StringActualByteCount*. Next, allocate a buffer of the required size and call <b>RtlUnicodeToUTF8N</b> a second time to obtain the UTF-8 output string.
 
 <b>RtlUnicodeToUTF8N</b> supports Unicode surrogate pairs. However, a surrogate leading word value that is not followed by a trailing word value, or a trailing word value that is not preceded by a leading word value, is not recognized as a valid character code and is replaced by the Unicode replacement character, U+FFFD.
 
@@ -144,7 +143,7 @@ You can make an initial call to <b>RtlUnicodeToUTF8N</b> to obtain the required 
 
 The <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlutf8tounicoden">RtlUTF8ToUnicodeN</a> routine converts a UTF-8 string to a Unicode string.
 
-You can use <b>RtlUnicodeToUTF8N</b> and <b>RtlUTF8ToUnicode</b> routines to perform a lossless conversion of valid text strings between the Unicode and UTF-8 formats. However, strings that have arbitrary data values are likely to violate the Unicode rules for encoding surrogate pairs, and any information that is contained in the invalid values in an input string is lost and cannot be recovered from the resulting output string.
+You can use <b>RtlUnicodeToUTF8N</b> and <b>RtlUTF8ToUnicodeN</b> routines to perform a lossless conversion of valid text strings between the Unicode and UTF-8 formats. However, strings that have arbitrary data values are likely to violate the Unicode rules for encoding surrogate pairs, and any information that is contained in the invalid values in an input string is lost and cannot be recovered from the resulting output string.
 
 ## -see-also
 

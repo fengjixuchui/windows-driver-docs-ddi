@@ -4,10 +4,9 @@ title: FWPS_CALLOUT2_ (fwpsk.h)
 description: The FWPS_CALLOUT2 structure defines the data that is required for a callout driver to register a callout with the filter engine.Note  FWPS_CALLOUT2 is the specific version of FWPS_CALLOUT used in Windows 8 and later.
 old-location: netvista\fwps_callout2.htm
 tech.root: netvista
-ms.assetid: 88d5a5ad-b71a-49b3-a1cf-b0dff1a85745
 ms.date: 05/02/2018
 keywords: ["FWPS_CALLOUT2_ structure"]
-ms.keywords: FWPS_CALLOUT2, FWPS_CALLOUT2 structure [Network Drivers Starting with Windows Vista], FWPS_CALLOUT2_, FWP_CALLOUT_FLAG_ALLOW_L2_BATCH_CLASSIFY, FWP_CALLOUT_FLAG_ALLOW_MID_STREAM_INSPECTION, FWP_CALLOUT_FLAG_ALLOW_OFFLOAD, FWP_CALLOUT_FLAG_ALLOW_RECLASSIFY, FWP_CALLOUT_FLAG_ALLOW_RSC, FWP_CALLOUT_FLAG_CONDITIONAL_ON_FLOW, FWP_CALLOUT_FLAG_ENABLE_COMMIT_ADD_NOTIFY, FWP_CALLOUT_FLAG_RESERVED1, fwpsk/FWPS_CALLOUT2, netvista.fwps_callout2
+ms.keywords: FWPS_CALLOUT2, FWPS_CALLOUT2 structure [Network Drivers Starting with Windows Vista], FWPS_CALLOUT2_, FWP_CALLOUT_FLAG_ALLOW_L2_BATCH_CLASSIFY, FWP_CALLOUT_FLAG_ALLOW_MID_STREAM_INSPECTION, FWP_CALLOUT_FLAG_ALLOW_OFFLOAD, FWP_CALLOUT_FLAG_ALLOW_RECLASSIFY, FWP_CALLOUT_FLAG_ALLOW_RSC, FWP_CALLOUT_FLAG_CONDITIONAL_ON_FLOW, FWP_CALLOUT_FLAG_ENABLE_COMMIT_ADD_NOTIFY, FWP_CALLOUT_FLAG_RESERVED1, fwpsk/FWPS_CALLOUT2, netvista.fwps_callout2, FWP_CALLOUT_FLAG_ALLOW_USO, FWP_CALLOUT_FLAG_ALLOW_URO
 req.header: fwpsk.h
 req.include-header: Fwpsk.h
 req.target-type: Windows
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - fwpsk.h
 api_name:
+ - FWPS_CALLOUT2_
  - FWPS_CALLOUT2
 ---
 
@@ -150,7 +150,7 @@ Reserved for system use. Callout drivers should ignore this flag.
 </dl>
 </td>
 <td width="60%">
-A callout driver specifies this flag to indicate that the callout supports receive segment coalescing (RSC) with large packets of up to 64K. If this flag is not specified, and a callout is registered, then RSC is disabled for all traffic that is processed by any filters that specify the callout for the filter's action.
+A callout driver specifies this flag to indicate that the callout supports TCP receive segment coalescing (RSC) with large packets of up to 64K. If this flag is not specified, and a callout is registered, then RSC is disabled for all traffic that is processed by any filters that specify the callout for the filter's action.
 
 </td>
 </tr>
@@ -161,7 +161,7 @@ A callout driver specifies this flag to indicate that the callout supports recei
 </dl>
 </td>
 <td width="60%">
-A callout driver specifies this flag when registering a callout that will be added at layer 2, to indicate that its <a href="/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn2">classifyFn2</a> callout function can classify multiple chained <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures. For more info, see <a href="/windows-hardware/drivers/network/using-layer-2-filtering">Using Layer 2 Filtering</a>.
+A callout driver specifies this flag when registering a callout that will be added at layer 2, to indicate that its <a href="/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn2">classifyFn2</a> callout function can classify multiple chained <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures. For more info, see <a href="/windows-hardware/drivers/network/using-layer-2-filtering">Using Layer 2 Filtering</a>.
 
 <div class="alert"><b>Caution</b>  <p class="note">If a callout driver sets this flag, it cannot use the following functions to modify NET_BUFFER_LISTs.
 
@@ -180,11 +180,32 @@ A callout driver specifies this flag when registering a callout that will be add
 </li>
 </ul>
 <p class="note">With this flag set, <b>FwpsAllocateCloneNetBufferList0</b> will always return an <b>INVALID_PARAMETER</b> error. This may unexpectedly cause a 3rd party callout driver to fail to manage the reference count of NET_BUFFER_LISTs, causing send and receive operations to stop.
-
 </div>
-<div> </div>
 </td>
 </tr>
+
+<tr>
+<td width="40%"><a id="FWP_CALLOUT_FLAG_ALLOW_USO"></a><a id="fwp_callout_flag_allow_uso"></a><dl>
+<dt><b>FWP_CALLOUT_FLAG_ALLOW_USO</b></dt>
+<dt>0x00000100</dt>
+</dl>
+</td>
+<td width="60%">
+A callout driver specifies this flag to indicate that the callout supports UDP segmentation offload (USO) with packets larger than the MTU of the network medium. If this flag is not specified, and a callout is registered, then USO is disabled for all traffic that is processed by any filters that specify the callout for the filter's action. <b>Note:</b> The earliest version on which this flag is supported is Windows Insider Preview, version 10.0.25876.
+</td>
+</tr>
+
+<tr>
+<td width="40%"><a id="FWP_CALLOUT_FLAG_ALLOW_URO"></a><a id="fwp_callout_flag_allow_uro"></a><dl>
+<dt><b>FWP_CALLOUT_FLAG_ALLOW_URO</b></dt>
+<dt>0x00000200</dt>
+</dl>
+</td>
+<td width="60%">
+A callout driver specifies this flag to indicate that the callout supports UDP receive offload (URO) with large packets of up to 64K. If this flag is not specified, and a callout is registered, then URO is disabled for all traffic that is processed by any filters that specify the callout for the filter's action. <b>Note:</b> If this flag is specified then callouts must not clone and reinject inbound URO packets.
+</td>
+</tr>
+ 
 </table>
 
 ### -field classifyFn
@@ -251,3 +272,4 @@ This structure is essentially identical to the previous version,
 
 
 <a href="/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_notify_fn2">notifyFn2</a>
+

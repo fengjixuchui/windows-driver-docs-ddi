@@ -4,7 +4,6 @@ title: _WHEA_MEMORY_ERROR_SECTION_VALIDBITS (ntddk.h)
 description: The WHEA_MEMORY_ERROR_SECTION_VALIDBITS union describes which members of a WHEA_MEMORY_ERROR_SECTION structure contain valid data.
 old-location: whea\whea_memory_error_section_validbits.htm
 tech.root: whea
-ms.assetid: 53ac65ff-56fe-411d-b0d1-174fc875a786
 ms.date: 02/20/2018
 keywords: ["WHEA_MEMORY_ERROR_SECTION_VALIDBITS structure"]
 ms.keywords: "*PWHEA_MEMORY_ERROR_SECTION_VALIDBITS, *PWHEA_MEMORY_ERROR_VALIDBITS, PWHEA_MEMORY_ERROR_SECTION_VALIDBITS, PWHEA_MEMORY_ERROR_SECTION_VALIDBITS union pointer [WHEA Drivers and Applications], WHEA_MEMORY_ERROR_SECTION_VALIDBITS, WHEA_MEMORY_ERROR_SECTION_VALIDBITS union [WHEA Drivers and Applications], WHEA_MEMORY_ERROR_VALIDBITS, _WHEA_MEMORY_ERROR_SECTION_VALIDBITS, ntddk/PWHEA_MEMORY_ERROR_SECTION_VALIDBITS, ntddk/WHEA_MEMORY_ERROR_SECTION_VALIDBITS, whea.whea_memory_error_section_validbits, whearef_49eab340-c05f-4201-a45d-8602ec121ef3.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_MEMORY_ERROR_SECTION_VALIDBITS
+ - PWHEA_MEMORY_ERROR_SECTION_VALIDBITS
  - WHEA_MEMORY_ERROR_SECTION_VALIDBITS
 ---
 
@@ -154,6 +155,8 @@ If **ValidBits.ChipIdentification** is set, Bits 7:5 contain Chip Identification
 
 This value is available starting Windows 10, version 1803.
 
+### -field ValidBits
+
 ## -remarks
 
 A WHEA_MEMORY_ERROR_SECTION_VALIDBITS union is contained within the <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_memory_error_section">WHEA_MEMORY_ERROR_SECTION</a> structure.
@@ -161,3 +164,4 @@ A WHEA_MEMORY_ERROR_SECTION_VALIDBITS union is contained within the <a href="/wi
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_memory_error_section">WHEA_MEMORY_ERROR_SECTION</a>
+

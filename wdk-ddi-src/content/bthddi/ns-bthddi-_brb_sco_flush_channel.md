@@ -4,7 +4,6 @@ title: _BRB_SCO_FLUSH_CHANNEL (bthddi.h)
 description: The _BRB_SCO_FLUSH_CHANNEL structure describes a flush operation for a SCO channel.
 old-location: bltooth\_brb_sco_flush_channel.htm
 tech.root: bltooth
-ms.assetid: 17ee1a71-2aaf-421d-9ae9-019fe0d2f595
 ms.date: 04/27/2018
 keywords: ["BRB_SCO_FLUSH_CHANNEL structure"]
 ms.keywords: "_BRB_SCO_FLUSH_CHANNEL, _BRB_SCO_FLUSH_CHANNEL structure [Bluetooth Devices], bltooth._brb_sco_flush_channel, bth_structs_d2a9941d-7091-402d-87bc-a5da139dfc1f.xml, bthddi/_BRB_SCO_FLUSH_CHANNEL"
@@ -72,7 +71,7 @@ Valid flags may be combined using a logical OR operation
 
 ## -remarks
 
-To flush a SCO channel, profile drivers should [build and send](https://docs.microsoft.com/previous-versions/ff536657(v=vs.85)) a [BRB_SCO_FLUSH_CHANNEL](https://docs.microsoft.com/previous-versions/ff536623(v=vs.85)) request.
+To flush a SCO channel, profile drivers should [build and send](/previous-versions/ff536657(v=vs.85)) a [BRB_SCO_FLUSH_CHANNEL](/previous-versions/ff536623(v=vs.85)) request.
 
 All pending data transfer IRPs will be completed with STATUS_REQUEST_ABORTED. In-progress IRPs will be completed normally, with success or failure,depending on whether the Bluetooth driver stack was able to transfer data to or from the remote device.
 
@@ -80,4 +79,4 @@ All pending data transfer IRPs will be completed with STATUS_REQUEST_ABORTED. In
 
 [BRB_HEADER](ns-bthddi-_brb_header.md)
 
-[BRB_SCO_FLUSH_CHANNEL](https://docs.microsoft.com/previous-versions/ff536623(v=vs.85))
+[BRB_SCO_FLUSH_CHANNEL](/previous-versions/ff536623(v=vs.85))

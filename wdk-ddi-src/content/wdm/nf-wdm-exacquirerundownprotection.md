@@ -4,7 +4,6 @@ title: ExAcquireRundownProtection function (wdm.h)
 description: The ExAcquireRundownProtection routine tries to acquire run-down protection on a shared object so the caller can safely access the object.
 old-location: kernel\exacquirerundownprotection.htm
 tech.root: kernel
-ms.assetid: DA4C7FBC-F5D5-48EA-90D6-F2249AF6401E
 ms.date: 04/30/2018
 keywords: ["ExAcquireRundownProtection function"]
 ms.keywords: ExAcquireRundownProtection, ExAcquireRundownProtection routine [Kernel-Mode Driver Architecture], kernel.exacquirerundownprotection, wdm/ExAcquireRundownProtection
@@ -50,9 +49,9 @@ The <b>ExAcquireRundownProtection</b> routine tries to acquire run-down protecti
 
 ## -parameters
 
-### -param RunRef 
+### -param RunRef [in, out]
 
-[in, out]
+
 A pointer to an <a href="/windows-hardware/drivers/kernel/eprocess">EX_RUNDOWN_REF</a> structure that was initialized by a previous call to the  <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializerundownprotection">ExInitializeRundownProtection</a> routine. The run-down protection routines use this structure to track the run-down status of the associated shared object. This structure is opaque to drivers.
 
 ## -returns

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugBreakpoint2.GetPassCount
 title: IDebugBreakpoint2::GetPassCount (dbgeng.h)
-description: The GetPassCount method returns the number of times that the target was originally required to reach the breakpoint location before the breakpoint is triggered.
+description: The IDebugBreakpoint2::GetPassCount method returns how many times the target was originally required to reach the breakpoint before the breakpoint is triggered.
 old-location: debugger\getpasscount.htm
 tech.root: debugger
-ms.assetid: d7abe2aa-a33c-4184-a850-d0efa1e99221
 ms.date: 05/03/2018
 keywords: ["IDebugBreakpoint2::GetPassCount"]
 ms.keywords: ComOther_bf916108-efd7-436f-a89e-a26826e2e258.xml, GetPassCount, GetPassCount method [Windows Debugging], GetPassCount method [Windows Debugging],IDebugBreakpoint interface, GetPassCount method [Windows Debugging],IDebugBreakpoint2 interface, IDebugBreakpoint interface [Windows Debugging],GetPassCount method, IDebugBreakpoint2 interface [Windows Debugging],GetPassCount method, IDebugBreakpoint2.GetPassCount, IDebugBreakpoint2::GetPassCount, IDebugBreakpoint::GetPassCount, dbgeng/IDebugBreakpoint2::GetPassCount, dbgeng/IDebugBreakpoint::GetPassCount, debugger.getpasscount
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugBreakpoint.GetPassCount
- - IDebugBreakpoint2.GetPassCount
+ - IDebugBreakpoint2::GetPassCount
 ---
 
 # IDebugBreakpoint2::GetPassCount
@@ -51,9 +49,9 @@ The <b>GetPassCount</b> method returns the number of times that the target was o
 
 ## -parameters
 
-### -param Count 
+### -param Count [out]
 
-[out]
+
 The number of times that the target was originally required to hit the breakpoint before it is triggered.  The number of times that the target was originally required to pass the breakpoint without triggering it is the value that is returned to <i>Count</i>, minus one.
 
 ## -returns
@@ -90,3 +88,4 @@ If the debugger executes the code at the breakpoint location while stepping thro
 The <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getparameters">GetParameters</a> method also returns the information that is returned in <i>Count</i>.
 
 For more information about breakpoint properties, see <a href="/windows-hardware/drivers/debugger/controlling-breakpoint-flags-and-parameters">Controlling Breakpoint Flags and Parameters</a>.
+

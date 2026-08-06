@@ -1,13 +1,10 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_BLT
 title: PFND3D12DDI_BLT (d3d12umddi.h)
-description: The Blt function copies the contents of a source surface to a destination surface.
+description: The PFND3D12DDI_BLT callback function copies the contents of a source surface to a destination surface.
 tech.root: display
-ms.assetid: 170ad11a-c97a-4f30-9d0d-73e3a5e3a9ad
 ms.date: 11/28/2018
 keywords: ["PFND3D12DDI_BLT callback function"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: d3d12umddi.h
 req.include-header: 
 req.target-type: 
@@ -37,8 +34,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_BLT
-product:
- - Windows
 ---
 
 # PFND3D12DDI_BLT callback function
@@ -50,11 +45,11 @@ The Blt function copies the contents of a source surface to a destination surfac
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the driver's data for the command list. The driver uses this region of memory to store internal data structures that are related to its command list.
 
-### -param Arg2
+### -param unnamedParam2
 
 A pointer to a D3D12DDIARG_BLT structure that describes the parameters of the bit-block transfer (bitblt).
 

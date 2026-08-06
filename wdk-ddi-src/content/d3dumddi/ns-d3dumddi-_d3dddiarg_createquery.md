@@ -4,7 +4,6 @@ title: _D3DDDIARG_CREATEQUERY (d3dumddi.h)
 description: The D3DDDIARG_CREATEQUERY structure identifies a query to create.
 old-location: display\d3dddiarg_createquery.htm
 tech.root: display
-ms.assetid: f80224c6-9046-4471-b6c6-eb14f02fc51f
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_CREATEQUERY structure"]
 ms.keywords: D3DDDIARG_CREATEQUERY, D3DDDIARG_CREATEQUERY structure [Display Devices], UMDisplayDriver_param_Structs_37293319-c280-4363-936a-65a8a5af4c45.xml, _D3DDDIARG_CREATEQUERY, d3dumddi/D3DDDIARG_CREATEQUERY, display.d3dddiarg_createquery
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_CREATEQUERY
  - D3DDDIARG_CREATEQUERY
 ---
 
@@ -52,13 +52,13 @@ The D3DDDIARG_CREATEQUERY structure identifies a query to create.
 
 ## -struct-fields
 
-### -field QueryType
+### -field QueryType [in]
 
-[in] A [D3DDDIQUERYTYPE](ne-d3dumddi-_d3dddiquerytype.md)-typed value that indicates the query type to create resources for.
+A [D3DDDIQUERYTYPE](ne-d3dumddi-_d3dddiquerytype.md)-typed value that indicates the query type to create resources for.
 
-### -field hQuery
+### -field hQuery [out]
 
-[out] A handle to the query. The user-mode display driver's <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createquery">CreateQuery</a> function returns this handle to the Microsoft Direct3D runtime.
+A handle to the query. The user-mode display driver's <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createquery">CreateQuery</a> function returns this handle to the Microsoft Direct3D runtime.
 
 ## -remarks
 
@@ -94,3 +94,4 @@ The <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_destro
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_issuequery">IssueQuery</a>
+

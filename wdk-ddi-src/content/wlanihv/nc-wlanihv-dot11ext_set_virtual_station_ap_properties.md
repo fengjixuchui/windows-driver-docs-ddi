@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES
 title: DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extsetvirtualstationapproperties.htm
 tech.root: netvista
-ms.assetid: 11ba5799-2bb5-475f-bf69-cf1a1c3c128c
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES callback"]
 ms.keywords: DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES, Dot11ExtSetVirtualStationAPProperties, Dot11ExtSetVirtualStationAPProperties callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_99551e02-eec3-413e-a14d-60d6ce5c09ee.xml, netvista.dot11extsetvirtualstationapproperties, wlanihv/Dot11ExtSetVirtualStationAPProperties
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES
  - wlanihv/DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtSetVirtualStationAPProperties
+ - DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES
 ---
 
 # DOT11EXT_SET_VIRTUAL_STATION_AP_PROPERTIES callback
@@ -55,33 +53,33 @@ The IHV Extensions DLL calls the
 
 ## -parameters
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 An optional handle used by the operating system to reference the primary physical wireless LAN
      (WLAN) adapter. This handle value was received as the
      <i>hDot11SvcHandle</i> parameter through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param hConnectSession 
+### -param hConnectSession [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the current connection session with the basic
      service set (BSS) network. This handle value was received as the
      <i>hConnectSession</i> parameter through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
      Dot11ExtIhvPerformPreAssociate</a> IHV Handler function.
 
-### -param dwNumProperties 
+### -param dwNumProperties [in]
 
-[in]
+
 The number of elements in the array of structures pointed to by the
      <i>pProperties</i> parameter.
 
-### -param pProperties 
+### -param pProperties [in]
 
-[in]
+
 A pointer to an array of
      <a href="..\wlanihv\ns-wlanihv-_dot11ext_virtual_station_ap_property.md">
      DOT11EXT_VIRTUAL_STATION_AP_PROPERTY</a> structures that specify the properties of access points (APs)
@@ -136,3 +134,4 @@ If the IHV Extensions DLL calls
 
 <a href="..\wlanihv\ns-wlanihv-_dot11ext_virtual_station_ap_property.md">
    DOT11EXT_VIRTUAL_STATION_AP_PROPERTY</a>
+

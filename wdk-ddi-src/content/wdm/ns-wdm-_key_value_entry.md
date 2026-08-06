@@ -4,7 +4,6 @@ title: _KEY_VALUE_ENTRY (wdm.h)
 description: The KEY_VALUE_ENTRY structure is used by the REG_QUERY_MULTIPLE_VALUE_KEY_INFORMATION structure to describe a single value entry for a registry key.
 old-location: kernel\key_value_entry.htm
 tech.root: kernel
-ms.assetid: 8a0e819e-6da7-4006-a276-9bfd324800d8
 ms.date: 04/30/2018
 keywords: ["KEY_VALUE_ENTRY structure"]
 ms.keywords: "*PKEY_VALUE_ENTRY, KEY_VALUE_ENTRY, KEY_VALUE_ENTRY structure [Kernel-Mode Driver Architecture], PKEY_VALUE_ENTRY, PKEY_VALUE_ENTRY structure pointer [Kernel-Mode Driver Architecture], _KEY_VALUE_ENTRY, kernel.key_value_entry, kstruct_c_750eac86-0e41-4623-8404-8c198c1ee96c.xml, wdm/KEY_VALUE_ENTRY, wdm/PKEY_VALUE_ENTRY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _KEY_VALUE_ENTRY
+ - PKEY_VALUE_ENTRY
  - KEY_VALUE_ENTRY
 ---
 
@@ -81,3 +82,4 @@ The <b>ValueEntries</b> member of <a href="/windows-hardware/drivers/ddi/wdm/ns-
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-zwsetvaluekey">ZwSetValueKey</a>
+

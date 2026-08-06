@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_TRIMNOTIFICATION
 title: _D3DKMT_TRIMNOTIFICATION (d3dkmthk.h)
 description: D3DKMT_TRIMNOTIFICATION is used to notify a driver to trim its memory residency list.
 old-location: display\d3dkmt_trimnotification.htm
-ms.assetid: 50E3F5CC-AFB9-4527-A812-44295373D80B
 ms.date: 05/10/2018
 keywords: ["D3DKMT_TRIMNOTIFICATION structure"]
 ms.keywords: D3DKMT_TRIMNOTIFICATION, D3DKMT_TRIMNOTIFICATION structure [Display Devices], _D3DKMT_TRIMNOTIFICATION, d3dkmthk/D3DKMT_TRIMNOTIFICATION, display.d3dkmt_trimnotification
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
+ - _D3DKMT_TRIMNOTIFICATION
  - D3DKMT_TRIMNOTIFICATION
 ---
 
@@ -52,18 +52,19 @@ api_name:
 
 ## -struct-fields
 
-### -field Context
+### -field Context [in]
 
-[in] The caller-supplied context for the callback notification.
+The caller-supplied context for the callback notification.
 
-### -field Flags
+### -field Flags [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-d3dddi_trimresidencyset_flags">D3DDDI_TRIMRESIDENCYSET_FLAGS</a> structure containing the trimming behavior flags.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-d3dddi_trimresidencyset_flags">D3DDDI_TRIMRESIDENCYSET_FLAGS</a> structure containing the trimming behavior flags.
 
-### -field NumBytesToTrim
+### -field NumBytesToTrim [in]
 
-[in] When <b>TrimToBudget</b> is set, this value specifies how much the application should evict in order to meet its current memory budget.
+When <b>TrimToBudget</b> is set, this value specifies how much the application should evict in order to meet its current memory budget.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-d3dddi_trimresidencyset_flags">D3DDDI_TRIMRESIDENCYSET_FLAGS</a>
+

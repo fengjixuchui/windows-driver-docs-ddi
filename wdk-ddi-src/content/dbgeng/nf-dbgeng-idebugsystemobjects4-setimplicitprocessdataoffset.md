@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSystemObjects4.SetImplicitProcessDataOffset
 title: IDebugSystemObjects4::SetImplicitProcessDataOffset (dbgeng.h)
-description: The SetImplicitProcessDataOffset method sets the implicit process for the current target.
+description: The SetImplicitProcessDataOffset method sets the implicit process for the current target. This method belongs to the IDebugSystemObjects4 interface.
 old-location: debugger\setimplicitprocessdataoffset.htm
 tech.root: debugger
-ms.assetid: 2a09341d-a580-4817-9103-29d8c36b81e3
 ms.date: 05/03/2018
 keywords: ["IDebugSystemObjects4::SetImplicitProcessDataOffset"]
 ms.keywords: IDebugSystemObjects2 interface [Windows Debugging],SetImplicitProcessDataOffset method, IDebugSystemObjects2::SetImplicitProcessDataOffset, IDebugSystemObjects3 interface [Windows Debugging],SetImplicitProcessDataOffset method, IDebugSystemObjects3::SetImplicitProcessDataOffset, IDebugSystemObjects4 interface [Windows Debugging],SetImplicitProcessDataOffset method, IDebugSystemObjects4.SetImplicitProcessDataOffset, IDebugSystemObjects4::SetImplicitProcessDataOffset, IDebugSystemObjects_10effa04-b87c-4555-9860-c2d5057a2529.xml, SetImplicitProcessDataOffset, SetImplicitProcessDataOffset method [Windows Debugging], SetImplicitProcessDataOffset method [Windows Debugging],IDebugSystemObjects2 interface, SetImplicitProcessDataOffset method [Windows Debugging],IDebugSystemObjects3 interface, SetImplicitProcessDataOffset method [Windows Debugging],IDebugSystemObjects4 interface, dbgeng/IDebugSystemObjects2::SetImplicitProcessDataOffset, dbgeng/IDebugSystemObjects3::SetImplicitProcessDataOffset, dbgeng/IDebugSystemObjects4::SetImplicitProcessDataOffset, debugger.setimplicitprocessdataoffset
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSystemObjects2.SetImplicitProcessDataOffset
- - IDebugSystemObjects3.SetImplicitProcessDataOffset
- - IDebugSystemObjects4.SetImplicitProcessDataOffset
+ - IDebugSystemObjects4::SetImplicitProcessDataOffset
 ---
 
 # IDebugSystemObjects4::SetImplicitProcessDataOffset
@@ -52,9 +49,9 @@ The <b>SetImplicitProcessDataOffset</b> method sets the implicit process for the
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the location in the target's memory address space of the data structure of the system process that is to become the implicit process for the current target.  If this is zero, the implicit process for the current target is set to the default implicit process.
 
 ## -returns
@@ -88,3 +85,4 @@ In user-mode debugging, the data structure is the process environment block (PEB
 <div class="alert"><b>Warning</b>    Because it is possible to use <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsystemobjects4-setimplicitthreaddataoffset">SetImplicitThreadDataOffset</a> to set the implicit thread independently of the implicit process, the implicit thread might not belong to the implicit process.  This can cause errors if you attempt to access any of the user state for the implicit thread, because it will be incompatible with the virtual address space (specified by the implicit process).</div>
 <div> </div>
 For more information about the current implicit process, see <a href="/windows-hardware/drivers/debugger/threads-and-processes">Threads and Processes</a>.  For details on the KPROCESS and PEB structures, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich.
+

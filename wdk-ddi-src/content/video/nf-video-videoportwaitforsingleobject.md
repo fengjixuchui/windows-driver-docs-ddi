@@ -4,7 +4,6 @@ title: VideoPortWaitForSingleObject function (video.h)
 description: The VideoPortWaitForSingleObject function puts the current thread into a wait state until the given dispatch object is set to the signaled state, or (optionally) until the wait times out.
 old-location: display\videoportwaitforsingleobject.htm
 tech.root: display
-ms.assetid: 574aa79e-c8ef-44de-8d0b-a550698a32e0
 ms.date: 05/10/2018
 keywords: ["VideoPortWaitForSingleObject function"]
 ms.keywords: VideoPortWaitForSingleObject, VideoPortWaitForSingleObject function [Display Devices], VideoPort_Functions_a1678f59-0c1c-4b0a-b1e6-2dbb71c8a7c2.xml, display.videoportwaitforsingleobject, video/VideoPortWaitForSingleObject
@@ -50,19 +49,19 @@ The <b>VideoPortWaitForSingleObject</b> function puts the current thread into a 
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's device extension.
 
-### -param Object 
+### -param Object [in]
 
-[in]
+
 Pointer to the event object.
 
-### -param Timeout 
+### -param Timeout [in]
 
-[in]
+
 (Optional) Pointer to a time-out value that specifies the absolute or relative time at which the wait is to be completed. A negative value specifies a wait interval relative to the current time. The value should be expressed in units of 100 nanoseconds. Absolute expiration times track any changes in the system time; relative expiration times are not affected by system time changes.
 
 ## -returns

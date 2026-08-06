@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostSymbol2.GetName
 title: IDebugHostSymbol2::GetName (dbgmodel.h)
-description: Returns the name of the symbol if the symbol has a name.
-ms.assetid: 5d6cc64e-d661-4168-9ee7-8f5109435335
+description: "The IDebugHostSymbol2::GetName method, when called on a symbol, gets the name of the symbol if it has a name."
 ms.date: 09/21/2018
 keywords: ["IDebugHostSymbol2::GetName"]
 ms.keywords: IDebugHostSymbol2::GetName, GetName, IDebugHostSymbol2.GetName, IDebugHostSymbol2::GetName, IDebugHostSymbol2.GetName
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostSymbol2.GetName
+ - IDebugHostSymbol2::GetName
 ---
 
 # IDebugHostSymbol2::GetName

@@ -1,10 +1,9 @@
 ---
 UID: NF:ntstrsafe.RtlStringCchLengthW
 title: RtlStringCchLengthW function (ntstrsafe.h)
-description: The RtlStringCchLengthW and RtlStringCchLengthA functions determine the length, in characters, of a supplied string.
+description: Learn how the RtlStringCchLengthW and RtlStringCchLengthA functions determine the length, in characters, of a supplied string.
 old-location: kernel\rtlstringcchlength.htm
 tech.root: kernel
-ms.assetid: 37d9309d-b105-4e56-b236-530ed49ca116
 ms.date: 04/30/2018
 keywords: ["RtlStringCchLengthW function"]
 ms.keywords: RtlStringCchLength, RtlStringCchLengthA, RtlStringCchLengthW, RtlStringCchLengthW function [Kernel-Mode Driver Architecture], kernel.rtlstringcchlength, ntstrsafe/RtlStringCchLengthA, ntstrsafe/RtlStringCchLengthW, safestrings_530fb488-be05-467f-a8c5-22016fb49325.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -40,8 +39,6 @@ api_location:
  - Ntstrsafe.dll
 api_name:
  - RtlStringCchLengthW
- - RtlStringCchLengthA
- - RtlStringCchLengthW
 ---
 
 # RtlStringCchLengthW function
@@ -53,14 +50,14 @@ The <b>RtlStringCchLengthW</b> and <b>RtlStringCchLengthA</b> functions determin
 
 ## -parameters
 
-### -param psz 
+### -param psz [in]
 
-[in]
+
 A pointer to a buffer that contains a null-terminated string, the length of which will be checked.
 
-### -param cchMax 
+### -param cchMax [in]
 
-[in]
+
 The maximum number of characters allowed in the buffer pointed to by <i>psz</i>, including the terminating null character. This value cannot exceed NTSTRSAFE_MAX_CCH.
 
 ### -param pcchLength
@@ -148,3 +145,4 @@ For more information about the safe string functions, see <a href="/windows-hard
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcblengtha">RtlStringCbLength</a>
+

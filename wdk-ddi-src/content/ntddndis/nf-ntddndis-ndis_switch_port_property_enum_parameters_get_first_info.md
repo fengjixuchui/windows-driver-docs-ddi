@@ -3,7 +3,6 @@ UID: NF:ntddndis.NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS_GET_FIRST_INFO
 title: NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS_GET_FIRST_INFO macro (ntddndis.h)
 description: Hyper-V extensible switch extensions use the NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS_GET_FIRST_INFO macro to access the first NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO element that is specified by an NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS structure.
 tech.root: netvista
-ms.assetid: 6aa3c33f-b9ed-467c-868b-dc4134107425
 ms.date: 04/17/2018
 keywords: ["NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS_GET_FIRST_INFO macro"]
 ms.keywords: NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS_GET_FIRST_INFO
@@ -25,6 +24,7 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 targetos: Windows
+returns-override: true
 f1_keywords:
  - NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS_GET_FIRST_INFO
  - ntddndis/NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS_GET_FIRST_INFO
@@ -53,7 +53,7 @@ A pointer to an **NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS** structure.
 
 ## -returns
 
-The **NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS_GET_FIRST_INFO** macro returns a pointer to the first [**NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO**](ns-ntddndis-_ndis_switch_port_property_enum_info.md) element that is specified by an [**NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS**](nf-ntddndis-ndis_switch_port_property_enum_parameters_get_first_info.md) structure.
+The **NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS_GET_FIRST_INFO** macro returns a pointer to the first [**NDIS_SWITCH_PORT_PROPERTY_ENUM_INFO**](ns-ntddndis-_ndis_switch_port_property_enum_info.md) element that is specified by an [**NDIS_SWITCH_PORT_PROPERTY_ENUM_PARAMETERS**](ns-ntddndis-_ndis_switch_port_property_enum_parameters.md) structure.
 
 ## -remarks
 

@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_42
+UID: NS:ks.KSALLOCATOR_FRAMING_EX
 title: KSALLOCATOR_FRAMING_EX (ks.h)
 description: The KSALLOCATOR_FRAMING_EX structure is the AVStream replacement for KSALLOCATOR_FRAMING. KSALLOCATOR_FRAMING_EX defines allocator requirements on a pin in a kernel level filter.
 old-location: stream\ksallocator_framing_ex.htm
 tech.root: stream
-ms.assetid: 39101009-ba03-472b-8664-d00c7a5cd335
 ms.date: 04/23/2018
 keywords: ["KSALLOCATOR_FRAMING_EX structure"]
 ms.keywords: "*PKSALLOCATOR_FRAMING_EX, KSALLOCATOR_FRAMING_EX, KSALLOCATOR_FRAMING_EX structure [Streaming Media Devices], PKSALLOCATOR_FRAMING_EX, PKSALLOCATOR_FRAMING_EX structure pointer [Streaming Media Devices], ks-struct_d2aa8aab-1778-4383-b524-d52e4dd6c4c2.xml, ks/KSALLOCATOR_FRAMING_EX, ks/PKSALLOCATOR_FRAMING_EX, stream.ksallocator_framing_ex"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSALLOCATOR_FRAMING_EX
  - KSALLOCATOR_FRAMING_EX
 ---
 
@@ -93,3 +93,4 @@ DECLARE_SIMPLE_FRAMING_EX declares a KSALLOCATOR_FRAMING_EX structure called **F
 [KS_FRAMING_RANGE](./ns-ks-ks_framing_range.md)
 
 [KS_FRAMING_RANGE_WEIGHTED](./ns-ks-ks_framing_range_weighted.md)
+

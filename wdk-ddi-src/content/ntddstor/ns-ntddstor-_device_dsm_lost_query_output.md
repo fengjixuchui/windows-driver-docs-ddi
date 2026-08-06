@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddstor._DEVICE_DSM_LOST_QUERY_OUTPUT
 title: _DEVICE_DSM_LOST_QUERY_OUTPUT (ntddstor.h)
-description: This structure is reserved for system use only.
+description: The _DEVICE_DSM_LOST_QUERY_OUTPUT structure is reserved for system use only.
 tech.root: storage
-ms.assetid: 566bbd9e-4f8e-49d9-915d-901c4495bbe8
 ms.date: 08/23/2019
 keywords: ["DEVICE_DSM_LOST_QUERY_OUTPUT structure"]
 ms.keywords: _DEVICE_DSM_LOST_QUERY_OUTPUT, DEVICE_DSM_LOST_QUERY_OUTPUT, *PDEVICE_DSM_LOST_QUERY_OUTPUT,
@@ -36,6 +35,8 @@ api_location:
  - ntddstor.h
 api_name:
  - _DEVICE_DSM_LOST_QUERY_OUTPUT
+ - PDEVICE_DSM_LOST_QUERY_OUTPUT
+ - DEVICE_DSM_LOST_QUERY_OUTPUT
 ---
 
 # _DEVICE_DSM_LOST_QUERY_OUTPUT structure

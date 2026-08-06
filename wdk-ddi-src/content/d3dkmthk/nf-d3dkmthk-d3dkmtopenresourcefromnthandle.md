@@ -1,9 +1,8 @@
 ---
 UID: NF:d3dkmthk.D3DKMTOpenResourceFromNtHandle
 title: D3DKMTOpenResourceFromNtHandle function (d3dkmthk.h)
-description: Opens a shared resource from an NT handle.
+description: D3DKMTOpenResourceFromNtHandle opens a shared resource from an NT handle. The function returns STATUS_SUCCESS if the resource was successfully opened.
 old-location: display\d3dkmtopenresourcefromnthandle.htm
-ms.assetid: d5a66102-782a-482e-8119-48015820d0c7
 ms.date: 05/10/2018
 keywords: ["D3DKMTOpenResourceFromNtHandle function"]
 ms.keywords: D3DKMTOpenResourceFromNtHandle, D3DKMTOpenResourceFromNtHandle callback function [Display Devices], PFND3DKMT_OPENRESOURCEFROMNTHANDLE, PFND3DKMT_OPENRESOURCEFROMNTHANDLE callback, d3dkmthk/D3DKMTOpenResourceFromNtHandle, display.d3dkmtopenresourcefromnthandle
@@ -50,7 +49,7 @@ Opens a shared resource from an NT handle.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in, out]
 

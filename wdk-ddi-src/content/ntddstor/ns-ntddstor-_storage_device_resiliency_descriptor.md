@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddstor._STORAGE_DEVICE_RESILIENCY_DESCRIPTOR
 title: _STORAGE_DEVICE_RESILIENCY_DESCRIPTOR (ntddstor.h)
-description: Reserved for system use.
+description: "Microsoft reserves the STORAGE_DEVICE_RESILIENCY_DESCRIPTOR structure for internal use only. Don't use this structure in your code."
 old-location: storage\storage_device_resiliency_descriptor.htm
 tech.root: storage
-ms.assetid: 71351CB7-1295-4797-802C-23A6B1C2C53F
 ms.date: 03/29/2018
 keywords: ["STORAGE_DEVICE_RESILIENCY_DESCRIPTOR structure"]
 ms.keywords: PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR, PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR structure pointer [Storage Devices], STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, STORAGE_DEVICE_RESILIENCY_DESCRIPTOR structure [Storage Devices], _STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, ntddstor/PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR, ntddstor/STORAGE_DEVICE_RESILIENCY_DESCRIPTOR, storage.storage_device_resiliency_descriptor
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddstor.h
 api_name:
+ - _STORAGE_DEVICE_RESILIENCY_DESCRIPTOR
+ - PSTORAGE_DEVICE_RESILIENCY_DESCRIPTOR
  - STORAGE_DEVICE_RESILIENCY_DESCRIPTOR
 ---
 
@@ -94,3 +95,4 @@ Size of a stripe unit of the storage device, in bytes. This is also referred to 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_query_property">IOCTL_STORAGE_QUERY_PROPERTY</a>
+

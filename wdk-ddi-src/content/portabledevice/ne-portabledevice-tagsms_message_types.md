@@ -4,7 +4,6 @@ title: SMS_MESSAGE_TYPES (portabledevice.h)
 description: The SMS_MESSAGE_TYPES enumeration type describes the content type of a short message service (SMS) message.
 old-location: wpddk\sms_message_types.htm
 tech.root: wpd_dk
-ms.assetid: abb3da2b-30c0-44af-b80d-86580610681a
 ms.date: 02/15/2018
 keywords: ["tagSMS_MESSAGE_TYPES enumeration"]
 ms.keywords: SMS_BINARY_MESSAGE, SMS_MESSAGE_TYPES, SMS_MESSAGE_TYPES enumeration, SMS_TEXT_MESSAGE, enumeration, portabledevice/SMS_BINARY_MESSAGE, portabledevice/SMS_MESSAGE_TYPES, portabledevice/SMS_TEXT_MESSAGE, tagSMS_MESSAGE_TYPES, wpddk.sms_message_types
@@ -41,6 +40,7 @@ api_type:
 api_location:
  - PortableDevice.h
 api_name:
+ - tagSMS_MESSAGE_TYPES
  - SMS_MESSAGE_TYPES
 ---
 
@@ -68,3 +68,4 @@ This enumeration is used by the <a href="/windows/desktop/wpd_sdk/wpd-command-sm
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/drivers/ff597672(v=vs.85)">Structures and Enumeration Types</a>
+

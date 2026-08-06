@@ -3,8 +3,7 @@ UID: NC:netdevice.EVT_NET_DEVICE_PREVIEW_WAKE_SOURCE
 title: EVT_NET_DEVICE_PREVIEW_WAKE_SOURCE (netdevice.h)
 description: Implement this optional callback to reject wake patterns that are not compatible with your hardware.
 tech.root: netvista
-ms.assetid: d227adc8-0a5f-4cc7-967f-555336f05ef2
-ms.date: 10/11/2019
+ms.date: 04/01/2022
 keywords: ["EVT_NET_DEVICE_PREVIEW_WAKE_SOURCE callback function"]
 req.header: netdevice.h
 req.include-header: netadaptercx.h 
@@ -12,7 +11,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -36,8 +35,6 @@ api_location:
  - netdevice.h
 api_name:
  - EVT_NET_DEVICE_PREVIEW_WAKE_SOURCE
-product:
- - Windows
 ---
 
 # EVT_NET_DEVICE_PREVIEW_WAKE_SOURCE callback function
@@ -49,11 +46,11 @@ Implement this optional callback to reject wake patterns that are not compatible
 
 ## -parameters
 
-### -param Device: 
+### -param Device [_In_]
 
 The WDFDEVICE object that the client driver previously obtained with a call to [**WdfDeviceCreate**](../wdfdevice/nf-wdfdevice-wdfdevicecreate.md).
 
-### -param WakeSource: 
+### -param WakeSource [_In_]
 
 A NETWAKESOURCE object that represents the wake source to examine.
 

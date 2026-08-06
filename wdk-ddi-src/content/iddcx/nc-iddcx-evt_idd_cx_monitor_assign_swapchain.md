@@ -4,7 +4,6 @@ title: EVT_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN (iddcx.h)
 description: EVT_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN is called by the OS to inform the driver of a mode change for monitors on the adapter.
 old-location: display\evt_idd_cx_monitor_assign_swapchain.htm
 tech.root: display
-ms.assetid: ae3b4101-d006-48ad-91c9-d9b3ee9a4674
 ms.date: 09/24/2020
 keywords: ["EVT_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN callback function"]
 ms.keywords: EVT_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN, EVT_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN callback, EvtIddCxMonitorAssignSwapchain, EvtIddCxMonitorAssignSwapchain callback function [Display Devices], PFN_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN, PFN_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN callback function pointer [Display Devices], display.evt_idd_cx_monitor_assign_swapchain, iddcx/EvtIddCxMonitorAssignSwapchain
@@ -38,10 +37,11 @@ api_type:
 api_location:
  - iddcx.h
 api_name:
- - PFN_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN
+ - EVT_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN
 ---
 
 # EVT_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN callback function
+
 
 ## -description
 
@@ -49,13 +49,13 @@ api_name:
 
 ## -parameters
 
-### -param MonitorObject
+### -param MonitorObject [in]
 
-[in] An opaque, driver-created IDDCX_MONITOR handle used by the OS to identify the monitor that has been affected by the mode change.
+An opaque, driver-created IDDCX_MONITOR handle used by the OS to identify the monitor that has been affected by the mode change.
 
-### -param pInArgs
+### -param pInArgs [in]
 
-[in] Pointer to an [**IDARG_IN_SETSWAPCHAIN**](ns-iddcx-idarg_in_setswapchain.md) structure containing information for the driver to use to set the indirect swapchain.
+Pointer to an [**IDARG_IN_SETSWAPCHAIN**](ns-iddcx-idarg_in_setswapchain.md) structure containing information for the driver to use to set the indirect swapchain.
 
 ## -returns
 
@@ -65,12 +65,12 @@ api_name:
 
 The OS calls **EvtIddCxMonitorAssignSwapChain** so that the IDD can setup its frame processing mechanism. For example, an IDD might create a new thread to initialize D3D devices and then loop on processing frames (see the [ID driver sample](https://github.com/microsoft/Windows-driver-samples/tree/master/video/IndirectDisplay)).
 
-If **EvtIddCxMonitorAssignSwapChain** returns success, the IDD then owns the **IDARG_IN_SETSWAPCHAIN.hSwapChain** object and is responsible for calling [**WdfObjectDelete**](/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectdelete) to release the swapchain object when it stops processing frames. The swapchain processing can stop processing frames when [**EvtIddCxMonitorUnassignSwapChain**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_unassign_swapchain) is called or when an error occurs in the frame processing loop after success is returned to **EvtIddCxMonitorAssignSwapChain**. This applies to both console and remote ID adapters and all IddCx versions.
+If **EvtIddCxMonitorAssignSwapChain** returns success, the IDD then owns the **IDARG_IN_SETSWAPCHAIN.hSwapChain** object and is responsible for calling [**WdfObjectDelete**](../wdfobject/nf-wdfobject-wdfobjectdelete.md) to release the swapchain object when it stops processing frames. The swapchain processing can stop processing frames when [**EvtIddCxMonitorUnassignSwapChain**](./nc-iddcx-evt_idd_cx_monitor_unassign_swapchain.md) is called or when an error occurs in the frame processing loop after success is returned to **EvtIddCxMonitorAssignSwapChain**. This applies to both console and remote ID adapters and all IddCx versions.
 
 Starting with Windows 10, version 1903, to reduce user impact (for example, time spent waiting for IddCx to bugcheck the driver), IddCx will immediately
 bugcheck the driver if **EvtIddCxMonitorAssignSwapChain** reports an error code other than **STATUS_GRAPHICS_INDIRECT_DISPLAY_ABANDON_SWAPCHAIN**.  
 
-If the driver returns **STATUS_GRAPHICS_INDIRECT_DISPLAY_ABANDON_SWAPCHAIN**, IddCx will inform the desktop compositor. A new swapchain needs to be created, so the OS will again call **EvtIddCxMonitorAssignSwapChain**. An ID driver should use this return code only if there is a good chance the error that just occurred will not occur again. That is, an ID driver should not leave users with an unusable desktop because it returned the error code yet did nothing to ensure the same failure will not occur again. For example, if a driver encounters an error while creating the D3D device on the render adapter it could call [**IddCxAdapterSetRenderAdapter**](/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxadaptersetrenderadapter) to change to another adapter (perhaps another GPU or WARP) and then return **STATUS_GRAPHICS_INDIRECT_DISPLAY_ABANDON_SWAPCHAIN**. The OS will create a new swapchain on the new render adapter and hopefully avoid the error. Although this error code is defined starting with Windows 10 version 1903, an ID driver can return this error code on previous OS releases resulting in no effect.
+If the driver returns **STATUS_GRAPHICS_INDIRECT_DISPLAY_ABANDON_SWAPCHAIN**, IddCx will inform the desktop compositor. A new swapchain needs to be created, so the OS will again call **EvtIddCxMonitorAssignSwapChain**. An ID driver should use this return code only if there is a good chance that the error that just occurred will not occur again. That is, an ID driver should not leave users with an unusable desktop because it returned the error code yet did nothing to ensure the same failure will not occur again. For example, if a driver encounters an error while creating the D3D device on the render adapter it could call [**IddCxAdapterSetRenderAdapter**](./nf-iddcx-iddcxadaptersetrenderadapter.md) to change to another adapter (perhaps another GPU or WARP) and then return **STATUS_GRAPHICS_INDIRECT_DISPLAY_ABANDON_SWAPCHAIN**. The OS will create a new swapchain on the new render adapter and hopefully avoid the error. Although this error code is defined starting with Windows 10 version 1903, an ID driver can return this error code on previous OS releases resulting in no effect.
 
 The resolution of the surfaces in the swapchain will always be the same resolution as the target mode set.
 
@@ -78,6 +78,7 @@ The format of the surfaces will be one of the formats supported by the driver, b
 
 ## -see-also
 
-[**EvtIddCxMonitorUnassignSwapChain**](/windows-hardware/drivers/ddi/iddcx/nc-iddcx-evt_idd_cx_monitor_unassign_swapchain)
+[**EvtIddCxMonitorUnassignSwapChain**](./nc-iddcx-evt_idd_cx_monitor_unassign_swapchain.md)
 
 [**IDARG_IN_SETSWAPCHAIN**](ns-iddcx-idarg_in_setswapchain.md)
+

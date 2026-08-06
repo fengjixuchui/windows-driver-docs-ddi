@@ -1,10 +1,9 @@
 ---
 UID: NN:extsfns.IDebugFailureAnalysis2
 title: IDebugFailureAnalysis2 (extsfns.h)
-description: When the !analyze debugger command runs, the analysis engine can load and run extension analysis plug-ins.
+description: When the !analyze debugger command runs, the analysis engine can load and run extension analysis plug-ins. It creates a DebugFailureAnalysis object.
 old-location: debugger\idebugfailureanalysis2.htm
 tech.root: debugger
-ms.assetid: 0B44FCB9-D23F-4630-9F9A-FBAD46712B14
 ms.date: 05/03/2018
 keywords: ["IDebugFailureAnalysis2 interface"]
 ms.keywords: IDebugFailureAnalysis2, IDebugFailureAnalysis2 interface [Windows Debugging], IDebugFailureAnalysis2 interface [Windows Debugging],described, debugger.idebugfailureanalysis2, extsfns/IDebugFailureAnalysis2
@@ -52,10 +51,8 @@ When the <a href="/windows-hardware/drivers/debugger/-analyze">!analyze</a> debu
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugFailureAnalysis2</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IDebugFailureAnalysis2</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IDebugFailureAnalysis2</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IDebugFailureAnalysis2</b> also has these types of members:
+
 
 ## -see-also
 

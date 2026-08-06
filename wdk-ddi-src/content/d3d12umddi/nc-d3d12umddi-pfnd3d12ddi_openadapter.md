@@ -3,7 +3,6 @@ UID: NC:d3d12umddi.PFND3D12DDI_OPENADAPTER
 title: PFND3D12DDI_OPENADAPTER (d3d12umddi.h)
 description: The PFND3D12DDI_OPENADAPTER function creates a graphics adapter object that is referenced in subsequent calls.
 old-location: display\pfnd3d12ddi_openadapter.htm
-ms.assetid: FEDC2FB5-9F1A-4829-A98D-3BEA4218AE3D
 ms.date: 05/10/2018
 keywords: ["PFND3D12DDI_OPENADAPTER callback function"]
 ms.keywords: PFND3D12DDI_OPENADAPTER, PFND3D12DDI_OPENADAPTER callback, PFND3D12DDI_OPENADAPTER callback function [Display Devices], d3d12umddi/PFND3D12DDI_OPENADAPTER, display.pfnd3d12ddi_openadapter
@@ -39,8 +38,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_OPENADAPTER
-product:
- - Windows
 ---
 
 # PFND3D12DDI_OPENADAPTER callback function
@@ -52,7 +49,7 @@ The PFND3D12DDI_OPENADAPTER function creates a graphics adapter object that is r
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddiarg_openadapter">D3D12DDIARG_OPENADAPTER</a> structure. On input, this structure contains information that the driver can use. On output, the driver specifies information that the Microsoft Direct3D runtime can use.
 

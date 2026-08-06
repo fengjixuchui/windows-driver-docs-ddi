@@ -3,7 +3,6 @@ UID: NC:d3d12umddi.PFND3D12DDI_VIDEO_DECODE_FRAME_0032
 title: PFND3D12DDI_VIDEO_DECODE_FRAME_0032 (d3d12umddi.h)
 description: Used to decode a video frame.
 old-location: display\pfnd3d12ddi_video_decode_frame_0032.htm
-ms.assetid: 0E7DC432-64F9-4EDE-B0FC-5F65EB9E68AD
 ms.date: 03/29/2018
 keywords: ["PFND3D12DDI_VIDEO_DECODE_FRAME_0032 callback"]
 ms.keywords: PFND3D12DDI_VIDEO_DECODE_FRAME_0030, PFND3D12DDI_VIDEO_DECODE_FRAME_0030 callback function [Display Devices], d3d12umddi/PFND3D12DDI_VIDEO_DECODE_FRAME_0030, display.pfnd3d12ddi_video_decode_frame_0032
@@ -38,17 +37,14 @@ api_type:
 api_location:
  - d3d12umddi.h
 api_name:
- - PFND3D12DDI_VIDEO_DECODE_FRAME_0030
-product:
- - Windows
+ - PFND3D12DDI_VIDEO_DECODE_FRAME_0032
 ---
 
 # PFND3D12DDI_VIDEO_DECODE_FRAME_0032 callback
 
-
 ## -description
 
-Records a decode frame operation to the command list.  Inputs, outputs, and parameters for the decode are specified as arguments to this method.
+**PFND3D12DDI_VIDEO_DECODE_FRAME_0032** records a decode frame operation to the command list. Inputs, outputs, and parameters for the decode are specified as arguments to this method.
 
 ## -parameters
 

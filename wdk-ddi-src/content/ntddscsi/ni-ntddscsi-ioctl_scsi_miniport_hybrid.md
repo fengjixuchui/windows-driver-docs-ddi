@@ -4,7 +4,6 @@ title: IOCTL_SCSI_MINIPORT_HYBRID (ntddscsi.h)
 description: The IOCTL_SCSI_MINIPORT_HYBRID control code sends a hybrid disk control request to an HBA-specific miniport driver.
 old-location: storage\ioctl_scsi_miniport_hybrid.htm
 tech.root: storage
-ms.assetid: 57DA022A-FAC6-4727-94E1-BCF6FEF1E945
 ms.date: 03/29/2018
 keywords: ["IOCTL_SCSI_MINIPORT_HYBRID IOCTL"]
 ms.keywords: IOCTL_SCSI_MINIPORT_HYBRID, IOCTL_SCSI_MINIPORT_HYBRID control, IOCTL_SCSI_MINIPORT_HYBRID control code [Storage Devices], ntddscsi/IOCTL_SCSI_MINIPORT_HYBRID, storage.ioctl_scsi_miniport_hybrid
@@ -53,6 +52,8 @@ The
 <div class="alert"><b>Warning</b>  Use of <b>IOCTL_SCSI_MINIPORT_HYBRID</b> to modify hybrid cache behavior will conflict with the operation of Windows system components and is not supported.</div><div> </div><div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="/windows-hardware/drivers/storage/storport-driver-overview">Storport driver</a> and <a href="/windows-hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

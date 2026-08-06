@@ -4,7 +4,6 @@ title: PsReferenceSiloContext function (ntddk.h)
 description: This routine increments the reference count on the object.
 old-location: kernel\psreferencesilocontext.htm
 tech.root: kernel
-ms.assetid: 04867D53-DB36-482A-93BF-C91D13998B3F
 ms.date: 04/30/2018
 keywords: ["PsReferenceSiloContext function"]
 ms.keywords: PsReferenceSiloContext, PsReferenceSiloContext routine [Kernel-Mode Driver Architecture], kernel.psreferencesilocontext, ntddk/PsReferenceSiloContext
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: _IRQL_requires_max_(DISPATCH_LEVEL)
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ This routine increments the reference count on the object.
 
 ## -parameters
 
-### -param SiloContext 
+### -param SiloContext [in]
 
-[in]
+
 A pointer to the object created by the <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pscreatesilocontext">PsCreateSiloContext</a> routine. This parameter is required and it cannot be <b>NULL</b>.
 
 ## -see-also

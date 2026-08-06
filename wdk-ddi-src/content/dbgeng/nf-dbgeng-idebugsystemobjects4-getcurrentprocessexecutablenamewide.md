@@ -4,8 +4,7 @@ title: IDebugSystemObjects4::GetCurrentProcessExecutableNameWide (dbgeng.h)
 description: The GetCurrentProcessExecutableNameWide method returns the name of executable file loaded in the current process.
 old-location: debugger\getcurrentprocessexecutablenamewide.htm
 tech.root: debugger
-ms.assetid: 4b87adca-e838-471b-a600-1327253ee45d
-ms.date: 05/03/2018
+ms.date: 02/06/2022
 keywords: ["IDebugSystemObjects4::GetCurrentProcessExecutableNameWide"]
 ms.keywords: GetCurrentProcessExecutableNameWide, GetCurrentProcessExecutableNameWide method [Windows Debugging], GetCurrentProcessExecutableNameWide method [Windows Debugging],IDebugSystemObjects4 interface, IDebugSystemObjects4 interface [Windows Debugging],GetCurrentProcessExecutableNameWide method, IDebugSystemObjects4.GetCurrentProcessExecutableNameWide, IDebugSystemObjects4::GetCurrentProcessExecutableNameWide, dbgeng/IDebugSystemObjects4::GetCurrentProcessExecutableNameWide, debugger.getcurrentprocessexecutablenamewide
 req.header: dbgeng.h
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSystemObjects4.GetCurrentProcessExecutableNameWide
+ - IDebugSystemObjects4::GetCurrentProcessExecutableNameWide
 ---
 
 # IDebugSystemObjects4::GetCurrentProcessExecutableNameWide
@@ -50,20 +49,20 @@ The <b>GetCurrentProcessExecutableNameWide</b>  method returns the name of execu
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Receives the name of the executable file.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
-Specifies the size in characters of the buffer <i>Buffer</i>.
 
-### -param ExeSize 
+Specifies the size in characters of the buffer <i>Buffer</i>. This size includes the space for the '\0' terminating character. 
 
-[out, optional]
-Receives the size in characters of the name of the executable file.  If <i>ExeSize</i> is <b>NULL</b>, this information is not returned.
+### -param ExeSize [out, optional]
+
+
+Receives the size in characters of the name of the executable file. This size includes the space for the '\0' terminating character. If <i>ExeSize</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
 
@@ -105,3 +104,4 @@ These methods are only available in user-mode debugging.
 If the engine cannot determine the name of the executable file, it writes the string "?NoImage?" to the buffer.
 
 For more information about processes, see <a href="/windows-hardware/drivers/debugger/threads-and-processes">Threads and Processes</a>.
+

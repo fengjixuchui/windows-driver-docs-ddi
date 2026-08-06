@@ -1,10 +1,9 @@
 ---
 UID: NS:wlclient._DOT11_ADAPTER
 title: _DOT11_ADAPTER (wlclient.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_ADAPTER structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_adapter.htm
 tech.root: netvista
-ms.assetid: dae4c499-86c7-4f2b-bd5a-df2a62cdb77f
 ms.date: 02/16/2018
 keywords: ["DOT11_ADAPTER structure"]
 ms.keywords: "*PDOT11_ADAPTER, DOT11_ADAPTER, DOT11_ADAPTER structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_0575eb35-d3de-41ad-a956-1714e642b8b5.xml, PDOT11_ADAPTER, PDOT11_ADAPTER structure pointer [Network Drivers Starting with Windows Vista], _DOT11_ADAPTER, netvista.dot11_adapter, wlclient/DOT11_ADAPTER, wlclient/PDOT11_ADAPTER"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DOT11_ADAPTER, *PDOT11_ADAPTER
-req.product: Windows 10 or later.
 f1_keywords:
  - _DOT11_ADAPTER
  - wlclient/_DOT11_ADAPTER
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wlclient.h
 api_name:
+ - _DOT11_ADAPTER
+ - PDOT11_ADAPTER
  - DOT11_ADAPTER
 ---
 
@@ -104,3 +104,4 @@ The operating system calls the
 
 
 <a href="..\windot11\ns-windot11-_dot11_current_operation_mode.md">DOT11_CURRENT_OPERATION_MODE</a>
+

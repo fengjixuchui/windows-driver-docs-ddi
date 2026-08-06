@@ -4,7 +4,6 @@ title: EVT_SENSOR_DRIVER_GET_PROPERTIES (sensorscx.h)
 description: This callback function returns the properties for a given sensor.
 old-location: sensors\evtsensorgetproperties.htm
 tech.root: sensors
-ms.assetid: 259C37C9-DE8C-4BC8-B18A-CDD96B97056D
 ms.date: 05/03/2018
 keywords: ["EVT_SENSOR_DRIVER_GET_PROPERTIES callback function"]
 ms.keywords: EVT_SENSOR_DRIVER_GET_PROPERTIES, EVT_SENSOR_DRIVER_GET_PROPERTIES callback, EvtSensorGetProperties, EvtSensorGetProperties callback function [Sensor Devices], sensors.evtsensorgetproperties, sensorscx/EvtSensorGetProperties
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - SensorsCx.h
 api_name:
- - EvtSensorGetProperties
+ - EVT_SENSOR_DRIVER_GET_PROPERTIES
 ---
 
 # EVT_SENSOR_DRIVER_GET_PROPERTIES callback function
@@ -50,17 +49,17 @@ This callback function returns the properties for a given sensor.
 
 ## -parameters
 
-### -param Sensor
+### -param Sensor [in]
 
-[in] A reference to a sensor object.
+A reference to a sensor object.
 
-### -param pProperties
+### -param pProperties [in, out, optional]
 
-[in, out, optional] A list of properties and their values for the specified <b>Sensor</b>. For more information, see <a href="/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list">SENSOR_COLLECTION_LIST</a>.
+A list of properties and their values for the specified <b>Sensor</b>. For more information, see <a href="/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list">SENSOR_COLLECTION_LIST</a>.
 
-### -param pSize
+### -param pSize [out]
 
-[out] The size of pProperties.
+The size of pProperties.
 
 ## -returns
 
@@ -71,3 +70,4 @@ This function returns STATUS_SUCCESS when completed successfully.
 ## -remarks
 
 This function must be implemented by the driver and is called by the class extension.
+

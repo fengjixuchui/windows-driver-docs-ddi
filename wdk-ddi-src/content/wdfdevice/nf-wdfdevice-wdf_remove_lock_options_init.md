@@ -4,7 +4,6 @@ title: WDF_REMOVE_LOCK_OPTIONS_INIT function (wdfdevice.h)
 description: The WDF_REMOVE_LOCK_OPTIONS_INIT function initializes a WDF_REMOVE_LOCK_OPTIONS structure.
 old-location: wdf\wdf_remove_lock_options_init.htm
 tech.root: wdf
-ms.assetid: 08D0CE94-E37E-4BAE-99C8-FB4EDF7BCDDB
 ms.date: 02/26/2018
 keywords: ["WDF_REMOVE_LOCK_OPTIONS_INIT function"]
 ms.keywords: WDF_REMOVE_LOCK_OPTIONS_INIT, WDF_REMOVE_LOCK_OPTIONS_INIT function, kmdf.wdf_remove_lock_options_init, wdf.wdf_remove_lock_options_init, wdfdevice/WDF_REMOVE_LOCK_OPTIONS_INIT
@@ -54,14 +53,14 @@ api_name:
 
 ## -parameters
 
-### -param RemoveLockOptions 
+### -param RemoveLockOptions [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_remove_lock_options">WDF_REMOVE_LOCK_OPTIONS</a> structure.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_remove_lock_options_flags">WDF_REMOVE_LOCK_OPTIONS_FLAGS</a>-typed flags.
 

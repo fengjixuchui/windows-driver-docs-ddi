@@ -4,7 +4,6 @@ title: IPrintCoreHelper::GetOption (prcomoem.h)
 description: The IPrintCoreHelper::GetOption method gets a specified option for a given feature.
 old-location: print\iprintcorehelper_getoption.htm
 tech.root: print
-ms.assetid: 515eed09-d386-4908-9d76-4e64930af5ab
 ms.date: 04/20/2018
 keywords: ["IPrintCoreHelper::GetOption"]
 ms.keywords: GetOption, GetOption method [Print Devices], GetOption method [Print Devices],IPrintCoreHelper interface, IPrintCoreHelper interface [Print Devices],GetOption method, IPrintCoreHelper.GetOption, IPrintCoreHelper::GetOption, prcomoem/IPrintCoreHelper::GetOption, print.iprintcorehelper_getoption, print_unidrv-pscript_allplugins_38a01e42-9d70-47d1-9d3d-2b488af4c3f3.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintCoreHelper.GetOption
+ - IPrintCoreHelper::GetOption
 ---
 
 # IPrintCoreHelper::GetOption
@@ -50,24 +49,24 @@ The <b>IPrintCoreHelper::GetOption</b> method gets a specified option for a give
 
 ## -parameters
 
-### -param pDevmode 
+### -param pDevmode [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/wingdi/ns-wingdi-devmodew">DEVMODEW</a> structure. If this pointer is provided, <b>IPrintCoreHelper::GetOption</b> should use the DEVMODEW structure that is pointed to by <i>pDevmode</i> instead of the default or current DEVMODEW structure. If this method is called from the plug-in provider or from either <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemps-devmode">IPrintOemPS::DevMode</a> or <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-devmode">IPrintOemUni::DevMode</a>, this parameter is required. In most other situations, the parameter should be <b>NULL</b>. When the core driver sets <i>pDevmode</i> to <b>NULL</b>, it modifies its internal state rather than that of the passed-in DEVMODEW structure. This is required during operations such as full UI replacement, where the DEVMODEW structure returned by a DDI, such as <a href="/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentpropertysheets">DrvDocumentPropertySheets</a>, is being serviced by the core driver's UI module.
 
-### -param cbSize 
+### -param cbSize [in]
 
-[in]
+
 The size, in bytes, of the DEVMODEW structure that is pointed to by the <i>pDevmode</i> parameter.
 
-### -param pszFeatureRequested 
+### -param pszFeatureRequested [in]
 
-[in]
+
 A pointer to the ANSI string that contains the name of the feature as it appears in the GPD file.
 
-### -param ppszOption 
+### -param ppszOption [out]
 
-[out]
+
 A pointer to a variable that contains the address of an ANSI string. When <b>IPrintCoreHelper::GetOption</b> returns, the string should contain the keyword for the currently selected option as it appears in the configuration file. The caller should not modify this string and should not free the memory that is associated with this string.
 
 ## -returns
@@ -155,3 +154,4 @@ The caller should not free the string that is pointed to by <i>ppszOption</i> an
 
 
 <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintcorehelper-setoptions">IPrintCoreHelper::SetOptions</a>
+

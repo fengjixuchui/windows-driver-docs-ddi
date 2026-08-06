@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols3.AppendImagePath
 title: IDebugSymbols3::AppendImagePath (dbgeng.h)
-description: The AppendImagePath method appends directories to the executable image path.
+description: The AppendImagePath method appends directories to the executable image path. This method belongs to the IDebugSymbols3 interface.
 old-location: debugger\appendimagepath.htm
 tech.root: debugger
-ms.assetid: faafc6d0-f311-46c1-87c1-8b0ea20984db
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::AppendImagePath"]
 ms.keywords: AppendImagePath, AppendImagePath method [Windows Debugging], AppendImagePath method [Windows Debugging],IDebugSymbols interface, AppendImagePath method [Windows Debugging],IDebugSymbols2 interface, AppendImagePath method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],AppendImagePath method, IDebugSymbols2 interface [Windows Debugging],AppendImagePath method, IDebugSymbols2::AppendImagePath, IDebugSymbols3 interface [Windows Debugging],AppendImagePath method, IDebugSymbols3.AppendImagePath, IDebugSymbols3::AppendImagePath, IDebugSymbols::AppendImagePath, IDebugSymbols_ea3dc04a-42d9-4457-830d-5544f50c5a97.xml, dbgeng/IDebugSymbols2::AppendImagePath, dbgeng/IDebugSymbols3::AppendImagePath, dbgeng/IDebugSymbols::AppendImagePath, debugger.appendimagepath
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSymbols.AppendImagePath
- - IDebugSymbols2.AppendImagePath
- - IDebugSymbols3.AppendImagePath
+ - IDebugSymbols3::AppendImagePath
 ---
 
 # IDebugSymbols3::AppendImagePath
@@ -52,9 +49,9 @@ The <b>AppendImagePath</b>  method appends directories to the executable image p
 
 ## -parameters
 
-### -param Addition 
+### -param Addition [in]
 
-[in]
+
 Specifies the directories to append to the executable image path.  This is a string that contains directory names separated by semicolons (;).
 
 ## -returns
@@ -105,3 +102,4 @@ The executable image path can consist of several directories separated by semico
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-setimagepath">SetImagePath</a>
+

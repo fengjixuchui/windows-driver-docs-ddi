@@ -4,7 +4,6 @@ title: KsFilterGetFirstChildPin function (ks.h)
 description: The KsFilterGetFirstChildPin function returns the first instantiated pin of type PinID on the filter specified by Filter.
 old-location: stream\ksfiltergetfirstchildpin.htm
 tech.root: stream
-ms.assetid: b026908a-51d4-45a8-9c0e-1c163563bfbf
 ms.date: 04/23/2018
 keywords: ["KsFilterGetFirstChildPin function"]
 ms.keywords: KsFilterGetFirstChildPin, KsFilterGetFirstChildPin function [Streaming Media Devices], avfunc_303477ee-598b-4b5b-baae-1e520c154e99.xml, ks/KsFilterGetFirstChildPin, stream.ksfiltergetfirstchildpin
@@ -51,14 +50,14 @@ The<b> KsFilterGetFirstChildPin</b> function returns the first instantiated pin 
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter">KSFILTER</a> structure to query for instantiated pins.
 
-### -param PinId 
+### -param PinId [in]
 
-[in]
+
 The numeric ID of the pin type for which to find the first instantiated member.
 
 ## -returns

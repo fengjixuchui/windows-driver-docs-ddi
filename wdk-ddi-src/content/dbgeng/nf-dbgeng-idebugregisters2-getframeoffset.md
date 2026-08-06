@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugRegisters2.GetFrameOffset
 title: IDebugRegisters2::GetFrameOffset (dbgeng.h)
-description: The GetFrameOffset method returns the location of the stack frame for the current function.
+description: The GetFrameOffset method returns the location of the stack frame for the current function. This method belongs to the IDebugRegisters2 interface.
 old-location: debugger\getframeoffset.htm
 tech.root: debugger
-ms.assetid: 09473106-3ab8-43ee-a424-2930b6bd3fcf
 ms.date: 05/03/2018
 keywords: ["IDebugRegisters2::GetFrameOffset"]
 ms.keywords: GetFrameOffset, GetFrameOffset method [Windows Debugging], GetFrameOffset method [Windows Debugging],IDebugRegisters interface, GetFrameOffset method [Windows Debugging],IDebugRegisters2 interface, IDebugRegisters interface [Windows Debugging],GetFrameOffset method, IDebugRegisters2 interface [Windows Debugging],GetFrameOffset method, IDebugRegisters2.GetFrameOffset, IDebugRegisters2::GetFrameOffset, IDebugRegisters::GetFrameOffset, IDebugRegisters_c3f31f5b-76d4-4910-b1a1-f3050c20e815.xml, dbgeng/IDebugRegisters2::GetFrameOffset, dbgeng/IDebugRegisters::GetFrameOffset, debugger.getframeoffset
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugRegisters.GetFrameOffset
- - IDebugRegisters2.GetFrameOffset
+ - IDebugRegisters2::GetFrameOffset
 ---
 
 # IDebugRegisters2::GetFrameOffset
@@ -51,9 +49,9 @@ The <b>GetFrameOffset</b> method returns the location of the stack frame for the
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [out]
 
-[out]
+
 The location in the target's virtual address space of the stack frame for the current function.
 
 ## -returns
@@ -97,3 +95,4 @@ For an overview of the <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-i
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugregisters2">IDebugRegisters2</a>
+

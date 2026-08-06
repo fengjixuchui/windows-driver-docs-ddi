@@ -1,15 +1,13 @@
 ---
 UID: NF:prnasntp.IPrintAsyncNotify.CreatePrintAsyncNotifyChannel
 title: IPrintAsyncNotify::CreatePrintAsyncNotifyChannel (prnasntp.h)
-description: 
-old-location: print\iprintasyncnotify_createprintasyncnotifychannel.htm
+description: Defines the IPrintAsyncNotify::CreatePrintAsyncNotifyChannel method.
 tech.root: print
-ms.assetid: B86297A4-1234-46B1-A10B-BD9A6E5012F2
-ms.date: 04/20/2018
+ms.date: 07/26/2022
 keywords: ["IPrintAsyncNotify::CreatePrintAsyncNotifyChannel"]
 ms.keywords: CreatePrintAsyncNotifyChannel, CreatePrintAsyncNotifyChannel method [Print Devices], CreatePrintAsyncNotifyChannel method [Print Devices],IPrintAsyncNotify interface, IPrintAsyncNotify interface [Print Devices],CreatePrintAsyncNotifyChannel method, IPrintAsyncNotify.CreatePrintAsyncNotifyChannel, IPrintAsyncNotify::CreatePrintAsyncNotifyChannel, print.iprintasyncnotify_createprintasyncnotifychannel, prnasntp/IPrintAsyncNotify::CreatePrintAsyncNotifyChannel
 req.header: prnasntp.h
-req.include-header: 
+req.include-header: Prnasntp.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -38,39 +36,43 @@ api_type:
 api_location:
  - Prnasntp.h
 api_name:
- - IPrintAsyncNotify.CreatePrintAsyncNotifyChannel
+ - IPrintAsyncNotify::CreatePrintAsyncNotifyChannel
 ---
-
-# IPrintAsyncNotify::CreatePrintAsyncNotifyChannel
-
 
 ## -description
 
+Defines the **IPrintAsyncNotify::CreatePrintAsyncNotifyChannel** method.
+
 ## -parameters
 
-## -param
+### -param unnamedParam1
 
-#### - filter [in]
+Defines the **ULONG** parameter *unnamedParam1*.
 
+### -param unnamedParam2
 
-#### - pCallback [in]
+Defines the **PrintAsyncNotificationType** parameter *unnamedParam2*.
 
+### -param unnamedParam3
 
-#### - pType [in]
+Defines the **PrintAsyncNotifyUserFilter** parameter *unnamedParam3*.
 
+### -param unnamedParam4
 
-#### - ppChannel [out]
+Defines the **PrintAsyncNotifyConversationStyle** parameter *unnamedParam4*.
 
+### -param unnamedParam5
 
-#### - style [in]
+Defines the **IPrintAsyncNotifyCallback** parameter *unnamedParam5*.
 
+### -param unnamedParam6
 
-#### - uL [in]
+Defines the **IPrintAsyncNotifyChannel** parameter *unnamedParam6*.
 
 ## -returns
 
-If this method succeeds, it returns <b xmlns:loc="https://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="https://microsoft.com/wdcml/l10n">HRESULT</b> error code.
+If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/prnasntp/nn-prnasntp-iprintasyncnotify">IPrintAsyncNotify</a>
+[IPrintAsyncNotify](./nn-prnasntp-iprintasyncnotify.md)

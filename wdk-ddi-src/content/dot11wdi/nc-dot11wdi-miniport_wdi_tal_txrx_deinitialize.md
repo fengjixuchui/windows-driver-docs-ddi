@@ -4,7 +4,6 @@ title: MINIPORT_WDI_TAL_TXRX_DEINITIALIZE (dot11wdi.h)
 description: The MiniportWdiTalTxRxDeinitialize handler function is invoked in the context of miniport halt. The functional components RXEngine and TxEngine have already been stopped and any pending data frames completed/returned.
 old-location: netvista\miniportwditaltxrxdeinitialize.htm
 tech.root: netvista
-ms.assetid: E8A77709-7E35-4FFC-B7EC-19E5256AB55F
 ms.date: 05/02/2018
 keywords: ["MINIPORT_WDI_TAL_TXRX_DEINITIALIZE callback function"]
 ms.keywords: MINIPORT_WDI_TAL_TXRX_DEINITIALIZE, MINIPORT_WDI_TAL_TXRX_DEINITIALIZE callback, MiniportWdiTalTxRxDeinitialize, MiniportWdiTalTxRxDeinitialize callback function [Network Drivers Starting with Windows Vista], dot11wdi/MiniportWdiTalTxRxDeinitialize, netvista.miniportwditaltxrxdeinitialize
@@ -38,13 +37,16 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
- - MiniportWdiTalTxRxDeinitialize
+ - MINIPORT_WDI_TAL_TXRX_DEINITIALIZE
 ---
 
 # MINIPORT_WDI_TAL_TXRX_DEINITIALIZE callback function
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The 
   MiniportWdiTalTxRxDeinitialize handler function is invoked in the context of miniport halt. The functional components RXEngine and TxEngine have already been stopped and any pending data frames completed/returned.
@@ -55,9 +57,9 @@ This is a WDI miniport handler inside <a href="/windows-hardware/drivers/ddi/dot
 
 ## -parameters
 
-### -param MiniportTalTxRxContext 
+### -param MiniportTalTxRxContext [in]
 
-[in]
+
 TAL device handle returned by the IHV miniport in <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tal_txrx_initialize">MiniportWdiTalTxRxInitialize</a>.
 
 ## -see-also
@@ -71,3 +73,4 @@ TAL device handle returned by the IHV miniport in <a href="/windows-hardware/dri
 
 
 <a href="/windows-hardware/drivers/network/wdi-general-datapath-interfaces">WDI general datapath interfaces</a>
+

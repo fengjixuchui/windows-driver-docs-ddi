@@ -4,7 +4,6 @@ title: ClfsSetLogFileInformation function (wdm.h)
 description: The ClfsSetLogFileInformation routine sets metadata and state information for a specified stream and its underlying physical log.
 old-location: kernel\clfssetlogfileinformation.htm
 tech.root: kernel
-ms.assetid: 9f44b1ce-25d4-438f-b4eb-cff7bbfb5e0a
 ms.date: 04/30/2018
 keywords: ["ClfsSetLogFileInformation function"]
 ms.keywords: ClfsSetLogFileInformation, ClfsSetLogFileInformation routine [Kernel-Mode Driver Architecture], Clfs_15ad655b-ee70-4ee8-9868-4e7ab96dfb3a.xml, kernel.clfssetlogfileinformation, wdm/ClfsSetLogFileInformation
@@ -51,19 +50,19 @@ The <b>ClfsSetLogFileInformation</b> routine sets metadata and state information
 
 ## -parameters
 
-### -param plfoLog 
+### -param plfoLog [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">LOG_FILE_OBJECT</a> structure that represents a CLFS stream. The caller previously obtained this pointer by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfscreatelogfile">ClfsCreateLogFile</a>.
 
-### -param eInformationClass 
+### -param eInformationClass [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_cls_log_information_class">CLFS_LOG_INFORMATION_CLASS</a> value that specifies the class of information being set.
 
-### -param pinfoBuffer 
+### -param pinfoBuffer [in]
 
-[in]
+
 A pointer to a buffer that supplies the log information. The structure of this buffer varies according to the class of information specified by <i>eInformationClass</i>. The following table shows the relationship between the information class and the buffer type.
 
 <table>
@@ -133,9 +132,9 @@ A pointer to a buffer that supplies the log information. The structure of this b
 </tr>
 </table>
 
-### -param cbBuffer 
+### -param cbBuffer [in]
 
-[in]
+
 The size, in bytes, of the buffer pointed to by <i>pinfoBuffer</i>.
 
 ## -returns

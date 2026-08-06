@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_72
+UID: NS:ksmedia.KSAC3_DIALOGUE_LEVEL
 title: KSAC3_DIALOGUE_LEVEL (ksmedia.h)
 description: The KSAC3_DIALOGUE_LEVEL structure specifies the average volume level of spoken dialog within the audio program encoded in an AC-3 stream.
 old-location: audio\ksac3_dialogue_level.htm
 tech.root: audio
-ms.assetid: c29d5cbc-ddcc-42e9-ac2d-e442a489adfd
 ms.date: 08/20/2020
 keywords: ["KSAC3_DIALOGUE_LEVEL structure"]
 ms.keywords: "*PKSAC3_DIALOGUE_LEVEL, KSAC3_DIALOGUE_LEVEL, KSAC3_DIALOGUE_LEVEL structure [Audio Devices], PKSAC3_DIALOGUE_LEVEL, PKSAC3_DIALOGUE_LEVEL structure pointer [Audio Devices], aud-prop_223d9fe5-3b60-46b4-a157-7ddab97a75f8.xml, audio.ksac3_dialogue_level, ksmedia/KSAC3_DIALOGUE_LEVEL, ksmedia/PKSAC3_DIALOGUE_LEVEL"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSAC3_DIALOGUE_LEVEL
  - KSAC3_DIALOGUE_LEVEL
 ---
 
@@ -65,3 +65,4 @@ For more information about bit stream modes, see the AC-3 specification at the [
 ## -see-also
 
 [KSPROPERTY_AC3_BIT_STREAM_MODE](/windows-hardware/drivers/audio/ksproperty-ac3-bit-stream-mode)
+

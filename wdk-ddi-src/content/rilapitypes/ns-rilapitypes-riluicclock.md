@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILUICCLOCK
 title: RILUICCLOCK (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILUICCLOCK structure for internal use only. Don't use this structure in your code."
 old-location: netvista\riluicclock_2.htm
 tech.root: netvista
-ms.assetid: 01a39c94-987c-498c-8890-423b762f09fd
 ms.date: 02/26/2018
 keywords: ["RILUICCLOCK structure"]
 ms.keywords: "*LPRILUICCLOCK, RILUICCLOCK, RILUICCLOCK structure [Network Drivers Starting with Windows Vista], netvista.riluicclock_2, rilapitypes/RILUICCLOCK"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: RILUICCLOCK, *LPRILUICCLOCK
-req.product: Windows 10 or later.
 f1_keywords:
  - RILUICCLOCK
  - rilapitypes/RILUICCLOCK
@@ -42,6 +40,7 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILUICCLOCK
+ - LPRILUICCLOCK
 ---
 
 # RILUICCLOCK structure (rilapitypes.h)

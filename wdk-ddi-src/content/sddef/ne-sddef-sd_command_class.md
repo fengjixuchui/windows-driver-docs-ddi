@@ -1,11 +1,10 @@
 ---
-UID: NE:sddef.__unnamed_enum_0
+UID: NE:sddef.SD_COMMAND_CLASS
 title: SD_COMMAND_CLASS (sddef.h)
 description: The SD_COMMAND_CLASS enumeration lists the classes of Secure Digital (SD) card commands.
 old-location: sd\sd_command_class.htm
 tech.root: SD
-ms.assetid: 2c82db4c-70b1-4601-a0b0-23b1f53e3503
-ms.date: 02/15/2018
+ms.date: 12/16/2021
 keywords: ["SD_COMMAND_CLASS enumeration"]
 ms.keywords: SD.sd_command_class, SDCC_APP_CMD, SDCC_STANDARD, SD_COMMAND_CLASS, SD_COMMAND_CLASS enumeration [Buses], sd-structs_ce4cd8ec-a512-422b-aed0-3052619f4f6a.xml, sddef/SDCC_APP_CMD, sddef/SDCC_STANDARD, sddef/SD_COMMAND_CLASS
 req.header: sddef.h
@@ -62,4 +61,5 @@ SD card drivers should not issue CMD55 (APP_CMD) commands through the SD bus int
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/sddef/ns-sddef-_sdcmd_descriptor">SDCMD_DESCRIPTOR</a>
+[**SDCMD_DESCRIPTOR**](ns-sddef-_sdcmd_descriptor.md)
+

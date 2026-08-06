@@ -4,7 +4,6 @@ title: IWDFDevice3::GetHardwareRegisterMappedAddress (wudfddi.h)
 description: A driver calls GetHardwareRegisterMappedAddress to get the user-mode mapped address of the memory resource it earlier mapped using MapIoSpace.
 old-location: wdf\iwdfdevice3_gethardwareregistermappedaddress.htm
 tech.root: wdf
-ms.assetid: 94852404-301F-4C09-81D2-CEDEECFCD6BD
 ms.date: 02/26/2018
 keywords: ["IWDFDevice3::GetHardwareRegisterMappedAddress"]
 ms.keywords: GetHardwareRegisterMappedAddress, GetHardwareRegisterMappedAddress method, GetHardwareRegisterMappedAddress method,IWDFDevice3 interface, IWDFDevice3 interface,GetHardwareRegisterMappedAddress method, IWDFDevice3.GetHardwareRegisterMappedAddress, IWDFDevice3::GetHardwareRegisterMappedAddress, umdf.iwdfdevice3_gethardwareregistermappedaddress, wdf.iwdfdevice3_gethardwareregistermappedaddress, wudfddi/IWDFDevice3::GetHardwareRegisterMappedAddress
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice3.GetHardwareRegisterMappedAddress
+ - IWDFDevice3::GetHardwareRegisterMappedAddress
 ---
 
 # IWDFDevice3::GetHardwareRegisterMappedAddress
@@ -52,9 +51,9 @@ A driver calls <b>GetHardwareRegisterMappedAddress</b> to get the user-mode mapp
 
 ## -parameters
 
-### -param PseudoBaseAddress 
+### -param PseudoBaseAddress [in]
 
-[in]
+
 A pointer to the pseudo base address returned by a previous call to <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice3-mapiospace">MapIoSpace</a>.
 
 ## -returns
@@ -74,3 +73,4 @@ If you do use <b>GetHardwareRegisterMappedAddress</b>, you must set the <b>UmdfR
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a>
+

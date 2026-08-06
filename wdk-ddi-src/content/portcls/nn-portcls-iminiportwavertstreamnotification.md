@@ -4,7 +4,6 @@ title: IMiniportWaveRTStreamNotification (portcls.h)
 description: The IMiniportWaveRTStreamNotification interface is supported in Windows Vista and later Windows operating systems, and it augments the IMiniportWaveRTStream interface, providing additional methods to facilitate DMA driver event notifications.
 old-location: audio\iminiportwavertstreamnotification.htm
 tech.root: audio
-ms.assetid: e009c459-77f7-43ee-9e95-8408324b0a9b
 ms.date: 05/08/2018
 keywords: ["IMiniportWaveRTStreamNotification interface"]
 ms.keywords: IMiniportWaveRTStreamNotification, IMiniportWaveRTStreamNotification interface [Audio Devices], IMiniportWaveRTStreamNotification interface [Audio Devices],described, audio.iminiportwavertstreamnotification, audmp-routines_a49bf74b-367b-44f4-b8de-a3adf6240b36.xml, portcls/IMiniportWaveRTStreamNotification
@@ -48,6 +47,6 @@ api_name:
 
 The <code>IMiniportWaveRTStreamNotification</code> interface is supported in Windows Vista and later Windows operating systems, and it augments the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertstream">IMiniportWaveRTStream</a> interface, providing additional methods to facilitate DMA driver event notifications. 
 
-To access the <code>IMiniportWaveRTStreamNotification</code> interface, the <a href="/windows-hardware/drivers/audio/wavert-port-driver">WaveRT port driver</a> calls the <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavert-newstream">IMiniportWaveRT::NewStream</a> method and receives an <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertstream">IMiniportWaveRTStream</a> interface. The WaveRT port driver then queries the <b>IMiniportWaveRTStream</b> interface, uisng QueryInterface, and receives the <code>IMiniportWaveRTStreamNotification</code> interface. 
+To access the <code>IMiniportWaveRTStreamNotification</code> interface, the <a href="/windows-hardware/drivers/audio/wavert-port-driver">WaveRT port driver</a> calls the <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavert-newstream">IMiniportWaveRT::NewStream</a> method and receives an <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertstream">IMiniportWaveRTStream</a> interface. The WaveRT port driver then queries the <b>IMiniportWaveRTStream</b> interface, using QueryInterface, and receives the <code>IMiniportWaveRTStreamNotification</code> interface. 
 
 <code>IMiniportWaveRTStreamNotification</code> inherits from the <b>IUnknown</b> interface.

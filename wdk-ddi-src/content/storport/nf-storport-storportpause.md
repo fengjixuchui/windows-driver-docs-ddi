@@ -4,7 +4,6 @@ title: StorPortPause function (storport.h)
 description: The StorPortPause routine pauses an adapter for the specified period of time.
 old-location: storage\storportpause.htm
 tech.root: storage
-ms.assetid: 304df6fb-8586-454a-a89a-24ac8848d3a1
 ms.date: 03/29/2018
 keywords: ["StorPortPause function"]
 ms.keywords: StorPortPause, StorPortPause routine [Storage Devices], storage.storportpause, storport/StorPortPause, storprt_0d8b3555-f061-4320-948e-f8db6a204d0e.xml
@@ -51,9 +50,9 @@ The <b>StorPortPause</b> routine pauses an adapter for the specified period of t
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the hardware device extension of the adapter to pause. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
 
 ### -param Timeout

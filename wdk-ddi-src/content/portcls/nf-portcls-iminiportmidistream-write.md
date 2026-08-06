@@ -4,7 +4,6 @@ title: IMiniportMidiStream::Write (portcls.h)
 description: The Write method writes data to an outgoing MIDI stream.
 old-location: audio\iminiportmidistream_write.htm
 tech.root: audio
-ms.assetid: 6ff4e4d7-3ba4-4e4b-98fa-62f269aee69f
 ms.date: 05/08/2018
 keywords: ["IMiniportMidiStream::Write"]
 ms.keywords: IMiniportMidiStream interface [Audio Devices],Write method, IMiniportMidiStream.Write, IMiniportMidiStream::Write, Write, Write method [Audio Devices], Write method [Audio Devices],IMiniportMidiStream interface, audio.iminiportmidistream_write, audmp-routines_523fd287-5380-4259-ba2c-4d9adef4fe4b.xml, portcls/IMiniportMidiStream::Write
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportMidiStream.Write
+ - IMiniportMidiStream::Write
 ---
 
 # IMiniportMidiStream::Write
@@ -50,19 +49,19 @@ The <code>Write</code> method writes data to an outgoing MIDI stream.
 
 ## -parameters
 
-### -param BufferAddress 
+### -param BufferAddress [in]
 
-[in]
+
 Pointer to a caller-allocated buffer that contains the outgoing MIDI data
 
-### -param BytesToWrite 
+### -param BytesToWrite [in]
 
-[in]
+
 Specifies the number of bytes of MIDI data contained in the buffer that <i>BufferAddress</i> points to.
 
-### -param BytesWritten 
+### -param BytesWritten [out]
 
-[out]
+
 Output pointer to a caller-allocated variable into which the method writes a count specifying the actual number of bytes that the method succeeded in writing to the MIDI output device. For more information, see the following Remarks section.
 
 ## -returns
@@ -124,3 +123,4 @@ Zero. This value indicates that the device is too busy to write any of the calle
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportmidistream-read">IMiniportMidiStream::Read</a>
+

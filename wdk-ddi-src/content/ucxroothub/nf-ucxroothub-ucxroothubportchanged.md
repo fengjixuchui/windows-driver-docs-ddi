@@ -4,7 +4,6 @@ title: UcxRootHubPortChanged function (ucxroothub.h)
 description: Notifies UCX about a new port change event on the host controller.
 old-location: buses\_ucxroothubportchanged.htm
 tech.root: usbref
-ms.assetid: 7984308D-4C8E-4481-8770-2430552B00E8
 ms.date: 05/07/2018
 keywords: ["UcxRootHubPortChanged function"]
 ms.keywords: UcxRootHubPortChanged, UcxRootHubPortChanged method [Buses], buses._ucxroothubportchanged, ucxroothub/UcxRootHubPortChanged
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ Notifies UCX about a new port change event on the host controller.
 
 ## -parameters
 
-### -param UcxRootHub 
+### -param UcxRootHub [in]
 
-[in]
+
 A handle to the root hub object. The client driver retrieved the handle in a previous call to <a href="/previous-versions/windows/hardware/drivers/mt188048(v=vs.85)">UcxRootHubCreate</a>.
 
 ## -remarks

@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelScriptDebug2.SetEventFilter
 title: IDataModelScriptDebug2::SetEventFilter (dbgmodel.h)
-description: The SetEventFilter method changes the "break on event" behavior for a particular event as defined by a member of the ScriptDebugEventFilter enumeration.
-ms.assetid: cabb3bfa-e704-4209-82a3-7334f950fb34
+description: "The IDataModelScriptDebug2::SetEventFilter method changes the break-on-event behavior for a particular event."
 ms.date: 09/11/2018
 keywords: ["IDataModelScriptDebug2::SetEventFilter"]
 ms.keywords: IDataModelScriptDebug2::SetEventFilter, SetEventFilter, IDataModelScriptDebug2.SetEventFilter, IDataModelScriptDebug2::SetEventFilter, IDataModelScriptDebug2.SetEventFilter
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelScriptDebug2.SetEventFilter
+ - IDataModelScriptDebug2::SetEventFilter
 ---
 
 # IDataModelScriptDebug2::SetEventFilter

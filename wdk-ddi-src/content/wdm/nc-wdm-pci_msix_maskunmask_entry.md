@@ -4,7 +4,6 @@ title: PCI_MSIX_MASKUNMASK_ENTRY (wdm.h)
 description: The MaskTableEntry routine masks an interrupt in the MSI-X hardware interrupt table.
 old-location: kernel\masktableentry.htm
 tech.root: kernel
-ms.assetid: ADD9AA38-594D-413A-BE8B-BCC6B62EAA8E
 ms.date: 04/30/2018
 keywords: ["PCI_MSIX_MASKUNMASK_ENTRY callback function"]
 ms.keywords: MaskTableEntry, MaskTableEntry routine [Kernel-Mode Driver Architecture], PCI_MSIX_MASKUNMASK_ENTRY, drvr_interface_c4246cdd-8a44-423e-b145-fae6e1e96716.xml, kernel.masktableentry, kernel.msixmasktableentry, wdm/MaskTableEntry
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - MaskTableEntry
+ - PCI_MSIX_MASKUNMASK_ENTRY
 ---
 
 # PCI_MSIX_MASKUNMASK_ENTRY callback function
@@ -50,14 +49,14 @@ The <i>MaskTableEntry</i> routine masks an interrupt in the MSI-X hardware inter
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_pci_msix_table_config_interface">PCI_MSIX_TABLE_CONFIG_INTERFACE</a> structure for the interface.
 
-### -param TableEntry 
+### -param TableEntry [in]
 
-[in]
+
 The index of the table entry in the MSI-X hardware interrupt table.
 
 ## -returns
@@ -106,3 +105,4 @@ You can unmask the table entry by calling <a href="/previous-versions/windows/ha
 
 
 <a href="/previous-versions/windows/hardware/drivers/gg604859(v=vs.85)">UnmaskTableEntry</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NS:wdfcompanion._WDF_COMPANION_EVENT_CALLBACKS
 title: _WDF_COMPANION_EVENT_CALLBACKS (wdfcompanion.h)
-description: For internal use only.
+description: This WDF_COMPANION_EVENT_CALLBACKS article is for internal use only.
 old-location: wdf\wdf_companion_event_callbacks.htm
 tech.root: wdf
-ms.assetid: 6a9c5420-1847-4145-aea5-9e9c58d86ea1
 ms.date: 02/26/2018
 keywords: ["WDF_COMPANION_EVENT_CALLBACKS structure"]
 ms.keywords: "*PWDF_COMPANION_EVENT_CALLBACKS, PWDF_COMPANION_EVENT_CALLBACKS, PWDF_COMPANION_EVENT_CALLBACKS structure pointer, WDF_COMPANION_EVENT_CALLBACKS, WDF_COMPANION_EVENT_CALLBACKS structure, _WDF_COMPANION_EVENT_CALLBACKS, wdf.wdf_companion_event_callbacks, wdfcompanion/PWDF_COMPANION_EVENT_CALLBACKS, wdfcompanion/WDF_COMPANION_EVENT_CALLBACKS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdfcompanion.h
 api_name:
+ - _WDF_COMPANION_EVENT_CALLBACKS
+ - PWDF_COMPANION_EVENT_CALLBACKS
  - WDF_COMPANION_EVENT_CALLBACKS
 ---
 

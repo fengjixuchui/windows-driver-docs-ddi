@@ -4,7 +4,6 @@ title: NDIS_PROCESS_SG_LIST (ndis.h)
 description: The NetProcessSGList function (NDIS_PROCESS_SG_LIST_HANDLER entry point) processes a scatter/gather list.
 old-location: netvista\netprocesssglist.htm
 tech.root: netvista
-ms.assetid: 5b99e0ec-7c82-46d6-b32a-246b368cf4f1
 ms.date: 05/02/2018
 keywords: ["NDIS_PROCESS_SG_LIST callback function"]
 ms.keywords: NDIS_PROCESS_SG_LIST, NDIS_PROCESS_SG_LIST callback, NetProcessSGList, NetProcessSGList callback function [Network Drivers Starting with Windows Vista], ndis/NetProcessSGList, ndis_shared_memory_ref_0c3e2851-6897-4997-a974-2a108e1e5ee9.xml, netvista.netprocesssglist
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - NetProcessSGList
+ - NDIS_PROCESS_SG_LIST
 ---
 
 # NDIS_PROCESS_SG_LIST callback function
@@ -52,26 +51,26 @@ The
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure.
 
-### -param Reserved 
+### -param Reserved [in]
 
-[in]
+
 Reserved for NDIS.
 
-### -param ScatterGatherListBuffer 
+### -param ScatterGatherListBuffer [in]
 
-[in]
+
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_scatter_gather_list">SCATTER_GATHER_LIST</a> structure.
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to a block of driver-allocated context information that contains information about the
      scatter gather list. The driver provided this context information in the 
      <b>Context</b> member of the 
@@ -107,3 +106,4 @@ The driver specified the entry point (NDIS_PROCESS_SG_LIST_HANDLER) for
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_scatter_gather_list">SCATTER_GATHER_LIST</a>
+

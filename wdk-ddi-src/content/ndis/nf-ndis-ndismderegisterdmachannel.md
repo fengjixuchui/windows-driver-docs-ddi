@@ -4,7 +4,6 @@ title: NdisMDeregisterDmaChannel function (ndis.h)
 description: The NdisMDeregisterDmaChannel function releases a miniport driver's claim on a DMA channel for a NIC.
 old-location: netvista\ndismderegisterdmachannel.htm
 tech.root: netvista
-ms.assetid: 1581cbfd-bdab-40ed-9978-f60ec220c17a
 ms.date: 05/02/2018
 keywords: ["NdisMDeregisterDmaChannel function"]
 ms.keywords: NdisMDeregisterDmaChannel, NdisMDeregisterDmaChannel function [Network Drivers Starting with Windows Vista], dma_ref_8babcd45-1946-4928-a0a2-2fc0871b9f90.xml, ndis/NdisMDeregisterDmaChannel, netvista.ndismderegisterdmachannel
@@ -53,9 +52,9 @@ The
 
 ## -parameters
 
-### -param MiniportDmaHandle 
+### -param MiniportDmaHandle [in]
 
-[in]
+
 The DMA handle returned by the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterdmachannel">
      NdisMRegisterDmaChannel</a> function.

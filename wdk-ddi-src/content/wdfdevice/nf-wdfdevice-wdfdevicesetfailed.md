@@ -4,7 +4,6 @@ title: WdfDeviceSetFailed function (wdfdevice.h)
 description: The WdfDeviceSetFailed method informs the framework that the driver encountered a hardware or software error that is associated with a specified device.
 old-location: wdf\wdfdevicesetfailed.htm
 tech.root: wdf
-ms.assetid: 87fbceab-d08c-4da7-a257-1454f84c04b7
 ms.date: 02/26/2018
 keywords: ["WdfDeviceSetFailed function"]
 ms.keywords: DFDeviceObjectGeneralRef_7efacd41-7c8c-4832-b10a-cc7d3dac8982.xml, WdfDeviceSetFailed, WdfDeviceSetFailed method, kmdf.wdfdevicesetfailed, wdf.wdfdevicesetfailed, wdfdevice/WdfDeviceSetFailed
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfDeviceSetFailed</b> method informs the framework that the driver encou
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param FailedAction 
+### -param FailedAction [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_device_failed_action">WDF_DEVICE_FAILED_ACTION</a>-typed enumerator that indicates whether the framework should attempt to reload the specified device's drivers.
 
 ## -remarks

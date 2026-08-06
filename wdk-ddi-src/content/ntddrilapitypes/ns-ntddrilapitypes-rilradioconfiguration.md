@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILRADIOCONFIGURATION
 title: RILRADIOCONFIGURATION (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILRADIOCONFIGURATION structure for internal use only. Don't use the RILRADIOCONFIGURATION structure in your code."
 old-location: netvista\rilradioconfiguration.htm
 tech.root: netvista
-ms.assetid: 24ff04b3-aec2-4bce-aa85-e33f3dbffa22
 ms.date: 05/02/2018
 keywords: ["RILRADIOCONFIGURATION structure"]
 ms.keywords: "*LPRILRADIOCONFIGURATION, RILRADIOCONFIGURATION, RILRADIOCONFIGURATION structure [Network Drivers Starting with Windows Vista], netvista.rilradioconfiguration, ntddrilapitypes/RILRADIOCONFIGURATION"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILRADIOCONFIGURATION
+ - LPRILRADIOCONFIGURATION
 ---
 
 # RILRADIOCONFIGURATION structure (ntddrilapitypes.h)

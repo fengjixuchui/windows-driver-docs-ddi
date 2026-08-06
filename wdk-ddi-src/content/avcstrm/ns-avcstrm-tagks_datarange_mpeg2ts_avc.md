@@ -4,7 +4,6 @@ title: tagKS_DATARANGE_MPEG2TS_AVC (avcstrm.h)
 description: The KS_DATARANGE_MPEG2TS_AVC structure stores a range of AV/C MPEG2 formats.
 old-location: stream\ks_datarange_mpeg2ts_avc.htm
 tech.root: stream
-ms.assetid: 3e19439d-397c-4c22-823c-aa53c456d7b9
 ms.date: 04/23/2018
 keywords: ["tagKS_DATARANGE_MPEG2TS_AVC structure"]
 ms.keywords: "*PKS_DATARANGE_MPEG2TS_AVC, KS_DATARANGE_MPEG2TS_AVC, KS_DATARANGE_MPEG2TS_AVC structure [Streaming Media Devices], PKS_DATARANGE_MPEG2TS_AVC, PKS_DATARANGE_MPEG2TS_AVC structure pointer [Streaming Media Devices], avcsref_604304aa-f90b-4897-a134-c05eff1240aa.xml, avcstrm/KS_DATARANGE_MPEG2TS_AVC, avcstrm/PKS_DATARANGE_MPEG2TS_AVC, stream.ks_datarange_mpeg2ts_avc, tagKS_DATARANGE_MPEG2TS_AVC"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - avcstrm.h
 api_name:
+ - tagKS_DATARANGE_MPEG2TS_AVC
+ - PKS_DATARANGE_MPEG2TS_AVC
  - KS_DATARANGE_MPEG2TS_AVC
 ---
 
@@ -69,3 +70,4 @@ Specifies the AV/C preconnection info.
 
 
 <a href="/previous-versions/ff561658(v=vs.85)">KSDATARANGE</a>
+

@@ -4,7 +4,6 @@ title: RtlUIntPtrSub function (ntintsafe.h)
 description: Subtracts one value of type UINT_PTR from another.
 old-location: kernel\rtluintptrsub.htm
 tech.root: kernel
-ms.assetid: D0E23A94-515B-4225-A8AC-390CDD3BEA60
 ms.date: 04/30/2018
 keywords: ["RtlUIntPtrSub function"]
 ms.keywords: RtlUIntPtrSub, RtlUIntPtrSub function [Kernel-Mode Driver Architecture], kernel.rtluintptrsub, ntintsafe/RtlUIntPtrSub
@@ -50,19 +49,19 @@ Subtracts one value of type <b>UINT_PTR</b> from another.
 
 ## -parameters
 
-### -param uMinuend 
+### -param uMinuend [in]
 
-[in]
+
 The value from which <i>uSubtrahend</i> is subtracted.
 
-### -param uSubtrahend 
+### -param uSubtrahend [in]
 
-[in]
+
 The value to subtract from <i>uMinuend</i>.
 
-### -param puResult 
+### -param puResult [out]
 
-[out]
+
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

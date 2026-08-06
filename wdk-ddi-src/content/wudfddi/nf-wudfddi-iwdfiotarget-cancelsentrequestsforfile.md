@@ -4,7 +4,6 @@ title: IWDFIoTarget::CancelSentRequestsForFile (wudfddi.h)
 description: The CancelSentRequestsForFile method cancels all I/O requests that have been sent on behalf of the specified file object.
 old-location: wdf\iwdfiotarget_cancelsentrequestsforfile.htm
 tech.root: wdf
-ms.assetid: df008ee8-352f-4655-b4c0-750eeb281e6a
 ms.date: 02/26/2018
 keywords: ["IWDFIoTarget::CancelSentRequestsForFile"]
 ms.keywords: CancelSentRequestsForFile, CancelSentRequestsForFile method, CancelSentRequestsForFile method,IWDFIoTarget interface, IWDFIoTarget interface,CancelSentRequestsForFile method, IWDFIoTarget.CancelSentRequestsForFile, IWDFIoTarget::CancelSentRequestsForFile, UMDFIoTargetObjectRef_d2a2405f-312e-4e3c-8ffa-8568438805b0.xml, umdf.iwdfiotarget_cancelsentrequestsforfile, wdf.iwdfiotarget_cancelsentrequestsforfile, wudfddi/IWDFIoTarget::CancelSentRequestsForFile
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoTarget.CancelSentRequestsForFile
+ - IWDFIoTarget::CancelSentRequestsForFile
 ---
 
 # IWDFIoTarget::CancelSentRequestsForFile
@@ -52,9 +51,9 @@ The <b>CancelSentRequestsForFile</b> method cancels all I/O requests that have b
 
 ## -parameters
 
-### -param pFile 
+### -param pFile [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile">IWDFFile</a> interface for the file object to cancel all I/O requests for.
 
 ## -see-also
@@ -64,3 +63,4 @@ A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdff
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotarget">IWDFIoTarget</a>
+

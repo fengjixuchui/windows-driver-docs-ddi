@@ -4,7 +4,6 @@ title: WdfDmaTransactionDmaCompletedFinal function (wdfdmatransaction.h)
 description: The WdfDmaTransactionDmaCompletedFinal method notifies the framework that a device's DMA transfer operation has completed with an underrun condition and supplies the length of the completed transfer.
 old-location: wdf\wdfdmatransactiondmacompletedfinal.htm
 tech.root: wdf
-ms.assetid: de16eaf4-11f0-428b-8833-1d1e6ef78853
 ms.date: 02/26/2018
 keywords: ["WdfDmaTransactionDmaCompletedFinal function"]
 ms.keywords: DFDmaObjectRef_ceac647e-264e-416b-947f-61cc95e6d4ab.xml, WdfDmaTransactionDmaCompletedFinal, WdfDmaTransactionDmaCompletedFinal method, kmdf.wdfdmatransactiondmacompletedfinal, wdf.wdfdmatransactiondmacompletedfinal, wdfdmatransaction/WdfDmaTransactionDmaCompletedFinal
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,19 +52,19 @@ The <b>WdfDmaTransactionDmaCompletedFinal</b> method notifies the framework that
 
 ## -parameters
 
-### -param DmaTransaction 
+### -param DmaTransaction [in]
 
-[in]
+
 A handle to a DMA transaction object that the driver obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioncreate">WdfDmaTransactionCreate</a>.
 
-### -param FinalTransferredLength 
+### -param FinalTransferredLength [in]
 
-[in]
+
 The number of bytes that the device transferred.
 
-### -param Status 
+### -param Status [out]
 
-[out]
+
 A pointer to a location that receives the status of the DMA transfer. For more information, see the Remarks section for <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactiondmacompleted">WdfDmaTransactionDmaCompleted</a>.
 
 ## -returns

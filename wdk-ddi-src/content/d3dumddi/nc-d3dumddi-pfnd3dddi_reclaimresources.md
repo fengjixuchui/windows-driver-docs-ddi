@@ -4,7 +4,6 @@ title: PFND3DDDI_RECLAIMRESOURCES (d3dumddi.h)
 description: Called by the Microsoft Direct3D runtime to reclaim video memory resources that it previously offered for reuse.
 old-location: display\reclaimresources.htm
 tech.root: display
-ms.assetid: F0533DBB-CB18-4556-9871-2DF4CA719172
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_RECLAIMRESOURCES callback function"]
 ms.keywords: PFND3DDDI_RECLAIMRESOURCES, PFND3DDDI_RECLAIMRESOURCES callback, ReclaimResources, ReclaimResources callback function [Display Devices], d3dumddi/ReclaimResources, display.reclaimresources
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - ReclaimResources
-product:
- - Windows
+ - PFND3DDDI_RECLAIMRESOURCES
 ---
 
 # PFND3DDDI_RECLAIMRESOURCES callback function
@@ -56,7 +53,7 @@ Called by the Microsoft Direct3D runtime to reclaim video memory resources that 
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -91,3 +88,4 @@ Returns one of the following values:
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_reclaimallocationscb">pfnReclaimAllocationsCb</a>
+

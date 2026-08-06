@@ -4,7 +4,6 @@ title: _DXVADDI_PRIVATEBUFFER (d3dumddi.h)
 description: The DXVADDI_PRIVATEBUFFER structure describes a private buffer that a nonstandard decoder uses to perform a decode operation.
 old-location: display\dxvaddi_privatebuffer.htm
 tech.root: display
-ms.assetid: 3e41472c-4c9d-4727-af08-a350e1967ef0
 ms.date: 05/10/2018
 keywords: ["DXVADDI_PRIVATEBUFFER structure"]
 ms.keywords: DXVA2_Structs_90012dba-8a0c-4685-a528-1a57265e5688.xml, DXVADDI_PRIVATEBUFFER, DXVADDI_PRIVATEBUFFER structure [Display Devices], _DXVADDI_PRIVATEBUFFER, d3dumddi/DXVADDI_PRIVATEBUFFER, display.dxvaddi_privatebuffer
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVADDI_PRIVATEBUFFER
  - DXVADDI_PRIVATEBUFFER
 ---
 
@@ -52,22 +52,23 @@ The DXVADDI_PRIVATEBUFFER structure describes a private buffer that a nonstandar
 
 ## -struct-fields
 
-### -field hResource
+### -field hResource [in]
 
-[in] A handle to the resource that contains the private buffer for the decode operation.
+A handle to the resource that contains the private buffer for the decode operation.
 
-### -field SubResourceIndex
+### -field SubResourceIndex [in]
 
-[in] The index to the private buffer within the resource.
+The index to the private buffer within the resource.
 
-### -field DataOffset
+### -field DataOffset [in]
 
-[in] The offset to the relevant data, in bytes, from the beginning of the buffer.
+The offset to the relevant data, in bytes, from the beginning of the buffer.
 
-### -field DataSize
+### -field DataSize [in]
 
-[in] The size of the relevant data, in bytes.
+The size of the relevant data, in bytes.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_decodeextensionexecute">D3DDDIARG_DECODEEXTENSIONEXECUTE</a>
+

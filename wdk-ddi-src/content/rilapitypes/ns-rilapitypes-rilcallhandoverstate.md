@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILCALLHANDOVERSTATE
 title: RILCALLHANDOVERSTATE (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILCALLHANDOVERSTATE structure for internal use only."
 old-location: netvista\rilcallhandoverstate.htm
 tech.root: netvista
-ms.assetid: 1c9fb343-32f1-444e-9328-097da72cd006
 ms.date: 05/02/2018
 keywords: ["RILCALLHANDOVERSTATE structure"]
 ms.keywords: "*LPRILCALLHANDOVERSTATE, RILCALLHANDOVERSTATE, RILCALLHANDOVERSTATE structure [Network Drivers Starting with Windows Vista], netvista.rilcallhandoverstate, ntddrilapitypes/RILCALLHANDOVERSTATE"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILCALLHANDOVERSTATE
+ - LPRILCALLHANDOVERSTATE
 ---
 
 # RILCALLHANDOVERSTATE structure (rilapitypes.h)

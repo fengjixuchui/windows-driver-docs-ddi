@@ -4,7 +4,6 @@ title: ClfsMgmtQueryPolicy function (wdm.h)
 description: The ClfsMgmtQueryPolicy routine retrieves a specific CLFS_MGMT_POLICY structure for a log.
 old-location: kernel\clfsmgmtquerypolicy.htm
 tech.root: kernel
-ms.assetid: c9cc9124-ee15-40df-b149-a9f3b26d7c24
 ms.date: 04/30/2018
 keywords: ["ClfsMgmtQueryPolicy function"]
 ms.keywords: ClfsMgmtQueryPolicy, ClfsMgmtQueryPolicy routine [Kernel-Mode Driver Architecture], Clfs_management_6f3ccba5-05e5-4022-9849-220aeefbde77.xml, kernel.clfsmgmtquerypolicy, wdm/ClfsMgmtQueryPolicy
@@ -51,24 +50,24 @@ The <b>ClfsMgmtQueryPolicy</b> routine retrieves a specific <a href="/windows-ha
 
 ## -parameters
 
-### -param LogFile 
+### -param LogFile [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">LOG_FILE_OBJECT</a> structure that represents the CLFS log whose policy is being retrieved.
 
-### -param PolicyType 
+### -param PolicyType [in]
 
-[in]
+
 A value of the <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_clfs_mgmt_policy_type">CLFS_MGMT_POLICY_TYPE</a> enumeration that identifies the type of policy to be retrieved.
 
-### -param Policy 
+### -param Policy [out]
 
-[out]
+
 An instance of the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_clfs_mgmt_policy">CLFS_MGMT_POLICY</a> structure that contains the policy.
 
-### -param PolicyLength 
+### -param PolicyLength [out]
 
-[out]
+
 The length of the <i>Policy</i> parameter.
 
 ## -returns

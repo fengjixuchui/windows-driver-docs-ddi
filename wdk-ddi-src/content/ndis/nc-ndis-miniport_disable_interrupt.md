@@ -4,7 +4,6 @@ title: MINIPORT_DISABLE_INTERRUPT (ndis.h)
 description: NDIS can call a miniport driver's MiniportDisableInterruptEx handler to disable interrupts for diagnostic and troubleshooting purposes.
 old-location: netvista\miniportdisableinterruptex.htm
 tech.root: netvista
-ms.assetid: 6016ab15-56c6-4430-8883-d4cdcdf6116f
 ms.date: 05/02/2018
 keywords: ["MINIPORT_DISABLE_INTERRUPT callback function"]
 ms.keywords: MINIPORT_DISABLE_INTERRUPT, MINIPORT_DISABLE_INTERRUPT callback, MiniportDisableInterruptEx, MiniportDisableInterruptEx callback function [Network Drivers Starting with Windows Vista], ndis/MiniportDisableInterruptEx, ndis_interrupts_miniport_functions_ref_985ddb3d-4a38-4c96-8599-17f211d47b49.xml, netvista.miniportdisableinterruptex
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportDisableInterruptEx
+ - MINIPORT_DISABLE_INTERRUPT
 ---
 
 # MINIPORT_DISABLE_INTERRUPT callback function
@@ -54,9 +53,9 @@ NDIS can call a miniport driver's
 
 ## -parameters
 
-### -param MiniportInterruptContext 
+### -param MiniportInterruptContext [in]
 
-[in]
+
 A handle to a block of context information. The miniport driver supplied this handle in the 
      <i>MiniportInterruptContext</i> parameter that the miniport driver passed to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterinterruptex">
@@ -129,3 +128,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterinterruptex">NdisMRegisterInterruptEx</a>
+

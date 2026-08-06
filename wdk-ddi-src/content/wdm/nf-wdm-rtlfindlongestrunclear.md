@@ -4,7 +4,6 @@ title: RtlFindLongestRunClear function (wdm.h)
 description: The RtlFindLongestRunClear routine searches for the largest contiguous range of clear bits within a given bitmap.
 old-location: kernel\rtlfindlongestrunclear.htm
 tech.root: kernel
-ms.assetid: 6d68cb0f-d0b8-4468-8def-60a65780480e
 ms.date: 04/30/2018
 keywords: ["RtlFindLongestRunClear function"]
 ms.keywords: RtlFindLongestRunClear, RtlFindLongestRunClear routine [Kernel-Mode Driver Architecture], k109_a6295996-9e2c-4d19-9ee9-1dc7802bd145.xml, kernel.rtlfindlongestrunclear, wdm/RtlFindLongestRunClear
@@ -50,14 +49,14 @@ The <b>RtlFindLongestRunClear</b> routine searches for the largest contiguous ra
 
 ## -parameters
 
-### -param BitMapHeader 
+### -param BitMapHeader [in]
 
-[in]
-A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-### -param StartingIndex 
+A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-[out]
+### -param StartingIndex [out]
+
+
 Pointer to a variable in which the starting index of the longest clear run in the bitmap is returned. This is a zero-based value indicating the bit position of the first clear bit in the returned range.
 
 ## -returns
@@ -72,7 +71,7 @@ Callers of <b>RtlFindLongestRunClear</b> must be running at IRQL <= APC_LEVEL if
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a>
+<a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a>
 
 
 

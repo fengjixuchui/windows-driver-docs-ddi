@@ -4,7 +4,6 @@ title: WdfRequestComplete function (wdfrequest.h)
 description: The WdfRequestComplete method completes a specified I/O request and supplies a completion status.
 old-location: wdf\wdfrequestcomplete.htm
 tech.root: wdf
-ms.assetid: cb5bfd4f-e45a-4894-acb4-0ece2de91510
 ms.date: 02/26/2018
 keywords: ["WdfRequestComplete function"]
 ms.keywords: DFRequestObjectRef_e723fb4c-f8f2-4eb9-9152-7f7ac74329df.xml, WdfRequestComplete, WdfRequestComplete method, kmdf.wdfrequestcomplete, wdf.wdfrequestcomplete, wdfrequest/WdfRequestComplete
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfRequestComplete</b> method completes a specified I/O request and suppl
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to the framework request object that represents the I/O request that is being completed.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS value</a> that represents the completion status of the request. Valid status values include, but are not limited to, the following:
 
 
@@ -93,13 +92,11 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 After a driver calls <b>WdfRequestComplete</b>, higher-level drivers on the driver stack can call <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestgetstatus">WdfRequestGetStatus</a> to obtain the completion status value that was specified for the <i>Status</i> parameter. Typically, drivers call <b>WdfRequestGetStatus</b> from within a <a href="/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_completion_routine">CompletionRoutine</a> callback function.
 
-After a call to <b>WdfRequestComplete</b> returns, the request handle is no longer valid unless the driver has called <a href="/windows-hardware/drivers/wdf/wdfobjectreference">WdfObjectReference</a> to add one or more additional reference counts to the request object.  Note that after <b>WdfRequestComplete</b> returns, the driver must not attempt to access the associated WDM IRP structure, even if it has called <b>WdfObjectReference</b>.
-
-
+After a call to <b>WdfRequestComplete</b> returns, the request handle is no longer valid unless the driver has called <a href="/windows-hardware/drivers/wdf/wdfobjectreference">WdfObjectReference</a> to add one or more additional reference counts to the request object.  Note that after <b>WdfRequestComplete</b> returns, the driver must not attempt to access the associated WDM IRP structure, even if it has called <b>WdfObjectReference</b>. This requirement extends to accessing the associated WDM IRP structure by calling methods on the WDFREQUEST, like <b>WdfRequestRetrieveOutputBuffer</b> or <b>WdfRequestRetrieveInputBuffer</b>.
 
 After a driver calls <b>WdfRequestComplete</b>, the framework calls the driver's <a href="/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_cleanup">EvtCleanupCallback</a> function for the request, if the driver has supplied one.
 
-Instead of calling <b>WdfRequestComplete</b>, the driver can call <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithinformation">WdfRequestCompleteWithInformation</a> or <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithpriorityboost">WdfRequestCompleteWithPriorityBoost</a>.
+Instead of calling <b>WdfRequestComplete</b>, the driver can call <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithinformation">WdfRequestCompleteWithInformation</a> or <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithpriorityboost">WdfRequestCompleteWithPriorityBoost</a>. See the Remarks of <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithinformation">WdfRequestCompleteWithInformation</a> for more information.
 
 When your driver calls <b>WdfRequestComplete</b>, the framework supplies a default value that the system uses to boost the run-time priority of the thread that requested the I/O operation. For information about default priority boost values, see <a href="/windows-hardware/drivers/wdf/specifying-priority-boosts-when-completing-i-o-requests">Specifying Priority Boosts When Completing I/O Requests</a>. Your driver can call <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcompletewithpriorityboost">WdfRequestCompleteWithPriorityBoost</a> to override the default priority boost value.
 
@@ -108,7 +105,7 @@ For more information about calling <b>WdfRequestComplete</b>, see <a href="/wind
 
 #### Examples
 
-The following code example is a section of a request handler. The request handler accepts only read and write requests, and it completes a each request with an error status if the request type is not read or write.
+The following code example is a section of a request handler. The request handler accepts only read and write requests, and it completes each request with an error status if the request type is not read or write.
 
 ```cpp
 VOID

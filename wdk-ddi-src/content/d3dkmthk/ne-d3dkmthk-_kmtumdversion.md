@@ -1,8 +1,7 @@
 ---
 UID: NE:d3dkmthk._KMTUMDVERSION
-title: _KMTUMDVERSION (d3dkmthk.h)
+title: KMTUMDVERSION (d3dkmthk.h)
 description: Kernel mode transfer UMD (user mode driver) version.
-ms.assetid: 4077ea93-cbb5-45be-ad36-ded07dced647
 ms.date: 10/19/2018
 keywords: ["KMTUMDVERSION enumeration"]
 ms.keywords: _KMTUMDVERSION, KMTUMDVERSION,
@@ -32,14 +31,12 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _KMTUMDVERSION
-product:
- - Windows
+ - KMTUMDVERSION
 dev_langs:
  - c++
 ---
 
-# _KMTUMDVERSION enumeration
-
+# KMTUMDVERSION enumeration
 
 ## -description
 
@@ -63,11 +60,18 @@ DirectX 11.
 
 DirectX 12.
 
+### -field KMTUMDVERSION_DX12_WSA32
+
+DirectX 12 Windows Subsystem for Android (32 bit).
+
+### -field KMTUMDVERSION_DX12_WSA64
+
+DirectX 12 Windows Subsystem for Android (64 bit).
+
 ### -field NUM_KMTUMDVERSIONS
 
-The number of KMT UMD versions.
+Maximum value of this enumeration.
 
 ## -remarks
 
 ## -see-also
-

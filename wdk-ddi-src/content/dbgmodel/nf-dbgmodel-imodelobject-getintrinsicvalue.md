@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.IModelObject.GetIntrinsicValue
 title: IModelObject::GetIntrinsicValue (dbgmodel.h)
 description: The GetIntrinsicValue method returns the thing which is boxed inside an IModelObject.
-ms.assetid: 95a2f002-c6d9-48c2-9c7f-86df732a0584
 ms.date: 08/09/2018
 keywords: ["IModelObject::GetIntrinsicValue"]
 ms.keywords: IModelObject::GetIntrinsicValue, GetIntrinsicValue, IModelObject.GetIntrinsicValue, IModelObject::GetIntrinsicValue, IModelObject.GetIntrinsicValue
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IModelObject.GetIntrinsicValue
+ - IModelObject::GetIntrinsicValue
 ---
 
 # IModelObject::GetIntrinsicValue

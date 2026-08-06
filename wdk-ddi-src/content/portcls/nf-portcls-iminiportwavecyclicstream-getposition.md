@@ -4,7 +4,6 @@ title: IMiniportWaveCyclicStream::GetPosition (portcls.h)
 description: The GetPosition method gets the current position of the stream.
 old-location: audio\iminiportwavecyclicstream_getposition.htm
 tech.root: audio
-ms.assetid: a0d59215-5201-4e1a-9cb2-d9ff6109c3bb
 ms.date: 05/08/2018
 keywords: ["IMiniportWaveCyclicStream::GetPosition"]
 ms.keywords: GetPosition, GetPosition method [Audio Devices], GetPosition method [Audio Devices],IMiniportWaveCyclicStream interface, IMiniportWaveCyclicStream interface [Audio Devices],GetPosition method, IMiniportWaveCyclicStream.GetPosition, IMiniportWaveCyclicStream::GetPosition, audio.iminiportwavecyclicstream_getposition, audmp-routines_016da0e2-bc56-4c06-9755-a13b75d6c5c9.xml, portcls/IMiniportWaveCyclicStream::GetPosition
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWaveCyclicStream.GetPosition
+ - IMiniportWaveCyclicStream::GetPosition
 ---
 
 # IMiniportWaveCyclicStream::GetPosition
@@ -50,9 +49,9 @@ The <code>GetPosition</code> method gets the current position of the stream.
 
 ## -parameters
 
-### -param Position 
+### -param Position [out]
 
-[out]
+
 Output pointer for the position value. This parameter points to a caller-allocated variable into which the method writes the current byte position of the stream.
 
 ## -returns
@@ -98,3 +97,4 @@ The WaveCyclic port driver implements a property handler for <a href="/windows-h
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ne-ks-ksstate">KSSTATE</a>
+

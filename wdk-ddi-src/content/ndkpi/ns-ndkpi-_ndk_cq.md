@@ -4,7 +4,6 @@ title: _NDK_CQ (ndkpi.h)
 description: The NDK_CQ structure specifies the attributes of an NDK completion queue (CQ) object.
 old-location: netvista\ndk_cq.htm
 tech.root: netvista
-ms.assetid: FE5E1E5F-3EEC-4FF4-B275-E2B086ADCDCC
 ms.date: 05/02/2018
 keywords: ["NDK_CQ structure"]
 ms.keywords: NDK_CQ, NDK_CQ structure [Network Drivers Starting with Windows Vista], PNDK_CQ, PNDK_CQ structure pointer [Network Drivers Starting with Windows Vista], _NDK_CQ, ndkpi/NDK_CQ, ndkpi/PNDK_CQ, netvista.ndk_cq
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
+ - _NDK_CQ
  - NDK_CQ
 ---
 
@@ -91,3 +91,4 @@ An NDK provider must set the <b>Dispatch</b> member to point to its  <a href="/w
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_object_header">NDK_OBJECT_HEADER</a>
+

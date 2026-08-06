@@ -4,7 +4,6 @@ title: KeInsertHeadQueue function (ntifs.h)
 description: The KeInsertHeadQueue routine inserts an entry at the head of the given queue if it cannot immediately use the entry to satisfy a thread wait.
 old-location: ifsk\keinsertheadqueue.htm
 tech.root: ifsk
-ms.assetid: 82e0bf14-b751-4919-b8d0-26fc7c5598a8
 ms.date: 04/16/2018
 keywords: ["KeInsertHeadQueue function"]
 ms.keywords: KeInsertHeadQueue, KeInsertHeadQueue routine [Installable File System Drivers], ifsk.keinsertheadqueue, keref_a3279265-434b-42d6-95d9-5a8a12f54c9b.xml, ntifs/KeInsertHeadQueue
@@ -50,9 +49,9 @@ The <b>KeInsertHeadQueue</b> routine inserts an entry at the head of the given q
 
 ## -parameters
 
-### -param Queue 
+### -param Queue [in, out]
 
-[in, out]
+
 Pointer to an initialized queue object for which the caller provides resident storage in nonpaged pool. This structure is defined as follows:
 
 
@@ -123,9 +122,9 @@ Pointer to the first entry in the thread list
 </tr>
 </table>
 
-### -param Entry 
+### -param Entry [in, out]
 
-[in, out]
+
 Pointer to the queue entry that is to be inserted. This pointer must be a resident system-space address.
 
 ## -returns
@@ -140,7 +139,7 @@ If any threads are waiting on the queue object when <b>KeInsertHeadQueue</b> is 
 
 If no threads are currently waiting on the queue object when <b>KeInsertHeadQueue</b> is called, the given entry is inserted in the queue and the queue object's signal state is incremented. 
 
-For more information about using driver-managed internal queues, see <a href="/windows-hardware/drivers/ddi/index">Driver-Managed Queues</a>.
+For more information about using driver-managed internal queues, see <a href="/windows-hardware/drivers/ddi/_kernel/#driver-managed-queues">Driver-Managed Queues</a>.
 
 ## -see-also
 

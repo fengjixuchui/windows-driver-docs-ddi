@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_CONTROL
 title: DOT11EXTIHV_CONTROL (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_CONTROL callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvcontrol.htm
 tech.root: netvista
-ms.assetid: 27e1f112-a961-4464-9048-b56394930453
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_CONTROL callback"]
 ms.keywords: DOT11EXTIHV_CONTROL, Dot11ExtIhvControl, Dot11ExtIhvControl callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_49f041a3-e60a-4d60-92e2-9c12a4c1db5d.xml, netvista.dot11extihvcontrol, wlanihv/Dot11ExtIhvControl
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_CONTROL
  - wlanihv/DOT11EXTIHV_CONTROL
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - Wlanihv.h
 api_name:
- - Dot11ExtIhvControl
+ - DOT11EXTIHV_CONTROL
 ---
 
 # DOT11EXTIHV_CONTROL callback
@@ -53,38 +51,38 @@ api_name:
 
 ## -parameters
 
-### -param hIhvExtAdapter 
+### -param hIhvExtAdapter [in, optional]
 
-[in, optional]
+
 The handle used by the IHV Extensions DLL to reference the WLAN adapter. This handle value was
      specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV Handler function.
 
-### -param dwInBufferSize 
+### -param dwInBufferSize [in]
 
-[in]
+
 The size, in bytes, of the input control buffer pointed to by the
      <i>pInBuffer</i> parameter.
 
-### -param pInBuffer 
+### -param pInBuffer [in, optional]
 
-[in, optional]
+
 A pointer to the input control buffer.
 
-### -param dwOutBufferSize 
+### -param dwOutBufferSize [in]
 
-[in]
+
 The size, in bytes, of the output buffer (if provided) pointed to by the
      <i>pOutBuffer</i> parameter.
 
-### -param pOutBuffer 
+### -param pOutBuffer [out, optional]
 
-[out, optional]
+
 A pointer to the output buffer, if provided.
 
-### -param pdwBytesReturned 
+### -param pdwBytesReturned [out]
 
-[out]
+
 A pointer to a variable that contains the size, in bytes, of the response input/output
      buffer.
 
@@ -130,3 +128,4 @@ The data buffer pointed to by the
 ## -see-also
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+

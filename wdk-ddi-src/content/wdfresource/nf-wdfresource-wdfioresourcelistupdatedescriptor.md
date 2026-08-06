@@ -4,7 +4,6 @@ title: WdfIoResourceListUpdateDescriptor function (wdfresource.h)
 description: The WdfIoResourceListUpdateDescriptor method updates a resource descriptor in a resource requirements list's logical configuration.
 old-location: wdf\wdfioresourcelistupdatedescriptor.htm
 tech.root: wdf
-ms.assetid: a571c054-380d-4d56-9094-d55868222b33
 ms.date: 02/26/2018
 keywords: ["WdfIoResourceListUpdateDescriptor function"]
 ms.keywords: DFResourceObjectRef_e9c68945-23e3-47f1-99b1-a0c62944669f.xml, WdfIoResourceListUpdateDescriptor, WdfIoResourceListUpdateDescriptor method, kmdf.wdfioresourcelistupdatedescriptor, wdf.wdfioresourcelistupdatedescriptor, wdfresource/WdfIoResourceListUpdateDescriptor
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,19 +52,19 @@ The <b>WdfIoResourceListUpdateDescriptor</b> method updates a resource descripto
 
 ## -parameters
 
-### -param ResourceList 
+### -param ResourceList [in]
 
-[in]
+
 A handle to a framework resource-range-list object that represents a logical configuration of hardware resources for a device.
 
-### -param Descriptor 
+### -param Descriptor [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a> structure that describes a hardware resource.
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 A zero-based value that is used as an index into the set of resource descriptors that are already in the logical configuration that <i>ResourceList</i> specifies.
 
 ## -remarks

@@ -1,11 +1,10 @@
 ---
 UID: NF:ntifs.KeDetachProcess
 title: KeDetachProcess function (ntifs.h)
-description: Obsolete.
+description: The KeDetachProcess function is obsolete.
 old-location: ifsk\kedetachprocess.htm
 tech.root: ifsk
-ms.assetid: 25cb0b53-f5b2-460a-bcab-56196f568d12
-ms.date: 04/16/2018
+ms.date: 05/24/2022
 keywords: ["KeDetachProcess function"]
 ms.keywords: KeDetachProcess, KeDetachProcess function [Installable File System Drivers], ifsk.kedetachprocess, keref_0038ac90-7d97-45db-9a0d-028238af943d.xml, ntifs/KeDetachProcess
 req.header: ntifs.h
@@ -43,7 +42,6 @@ api_name:
 
 # KeDetachProcess function
 
-
 ## -description
 
-The <b>KeDetachProcess</b> routine is exported to support existing driver binaries and is obsolete. Use <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-keunstackdetachprocess">KeUnstackDetachProcess</a> instead.
+The **KeDetachProcess** routine is exported to support existing driver binaries and is obsolete. Use [**KeUnstackDetachProcess**](nf-ntifs-keunstackdetachprocess.md) instead.

@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.KeQueryActiveProcessorCountEx
 title: KeQueryActiveProcessorCountEx function (wdm.h)
-description: The KeQueryActiveProcessorCountEx routine returns the number of active logical processors in a specified group in a multiprocessor system or in the entire system.
+description: Learn how the KeQueryActiveProcessorCountEx routine returns the number of active logical processors in a specified group in a multiprocessor system or in the entire system.
 old-location: kernel\kequeryactiveprocessorcountex.htm
 tech.root: kernel
-ms.assetid: 3884eb16-56a0-4b48-abf3-a74794b2c996
 ms.date: 04/30/2018
 keywords: ["KeQueryActiveProcessorCountEx function"]
 ms.keywords: KeQueryActiveProcessorCountEx, KeQueryActiveProcessorCountEx routine [Kernel-Mode Driver Architecture], k105_7cd9a091-c100-4b0c-9ea0-9b831407d5a1.xml, kernel.kequeryactiveprocessorcountex, wdm/KeQueryActiveProcessorCountEx
@@ -50,9 +49,9 @@ The <b>KeQueryActiveProcessorCountEx</b> routine returns the number of active lo
 
 ## -parameters
 
-### -param GroupNumber 
+### -param GroupNumber [in]
 
-[in]
+
 The group number. If a multiprocessor system contains <i>n</i> groups, valid group numbers range from 0 to <i>n</i>-1. To count all active processors in all groups in the system, set this parameter to ALL_PROCESSOR_GROUPS, which is defined in header files Winnt.h and Ntdef.h.
 
 ## -returns

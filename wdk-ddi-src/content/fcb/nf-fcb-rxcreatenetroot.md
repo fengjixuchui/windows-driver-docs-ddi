@@ -4,7 +4,6 @@ title: RxCreateNetRoot function (fcb.h)
 description: RxCreateNetRoot allocates and initializes a NET_ROOT structure and inserts the name into the net name table on the associated device object.
 old-location: ifsk\rxcreatenetroot.htm
 tech.root: ifsk
-ms.assetid: 076624d3-96f5-4e93-8598-b880a6b2289b
 ms.date: 04/16/2018
 keywords: ["RxCreateNetRoot function"]
 ms.keywords: RxCreateNetRoot, RxCreateNetRoot function [Installable File System Drivers], fcb/RxCreateNetRoot, ifsk.rxcreatenetroot, rxref_3171aa4b-bf5b-4114-a5a0-40af765b09da.xml
@@ -50,24 +49,24 @@ api_name:
 
 ## -parameters
 
-### -param SrvCall 
+### -param SrvCall [in]
 
-[in]
+
 A pointer to the associated SRV_CALL structure.
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 A pointer to the name to be inserted in the name table.
 
-### -param NetRootFlags 
+### -param NetRootFlags [in]
 
-[in]
+
 The value to set the <b>Flags</b> member of the NET_ROOT which is used to denote the state of the NET_ROOT structure.
 
-### -param RxConnectionId 
+### -param RxConnectionId [in, optional]
 
-[in, optional]
+
 A pointer to the connection ID to be associated with the name to be inserted in the prefix name table. This parameter can be <b>NULL</b> in which case no connection ID will be associated with the name inserted in the prefix name table.
 
 ## -returns

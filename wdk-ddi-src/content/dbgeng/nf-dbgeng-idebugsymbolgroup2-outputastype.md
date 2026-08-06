@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbolGroup2.OutputAsType
 title: IDebugSymbolGroup2::OutputAsType (dbgeng.h)
-description: The OutputAsType method changes the type of a symbol in a symbol group. The symbol's entry is updated to represent the new type.
+description: The IDebugSymbolGroup2::OutputAsType method changes the type of a symbol in a symbol group. The symbol's entry is updated to represent the new type.
 old-location: debugger\outputastype.htm
 tech.root: debugger
-ms.assetid: ab8c19c8-73c0-4c70-9a5d-9cf9d182157d
 ms.date: 05/03/2018
 keywords: ["IDebugSymbolGroup2::OutputAsType"]
 ms.keywords: ComOther_6805cc12-0d46-4114-a40d-54c7e32b3c7c.xml, IDebugSymbolGroup interface [Windows Debugging],OutputAsType method, IDebugSymbolGroup2 interface [Windows Debugging],OutputAsType method, IDebugSymbolGroup2.OutputAsType, IDebugSymbolGroup2::OutputAsType, IDebugSymbolGroup::OutputAsType, OutputAsType, OutputAsType method [Windows Debugging], OutputAsType method [Windows Debugging],IDebugSymbolGroup interface, OutputAsType method [Windows Debugging],IDebugSymbolGroup2 interface, dbgeng/IDebugSymbolGroup2::OutputAsType, dbgeng/IDebugSymbolGroup::OutputAsType, debugger.outputastype
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbolGroup.OutputAsType
- - IDebugSymbolGroup2.OutputAsType
+ - IDebugSymbolGroup2::OutputAsType
 ---
 
 # IDebugSymbolGroup2::OutputAsType
@@ -51,14 +49,14 @@ The <b>OutputAsType</b>  method changes the type of a symbol in a symbol group. 
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 The index of the entry in this symbol group.  The <i>index</i> of a symbol is an identification number. The index ranges from zero through the number of symbols in the symbol group minus one.
 
-### -param Type 
+### -param Type [in]
 
-[in]
+
 The name of the type of the symbol that you want.  If the name begins with an exclamation mark (<b>!</b>), the name is treated as an extension.  For more information about how to use an extension as a type, see the Remarks section.
 
 ## -returns
@@ -107,3 +105,4 @@ For more information about symbol groups, see <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbolgroup2">IDebugSymbolGroup2</a>
+

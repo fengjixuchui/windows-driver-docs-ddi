@@ -3,7 +3,6 @@ UID: NS:ndiswwan._NDIS_WWAN_LTE_ATTACH_STATUS
 title: _NDIS_WWAN_LTE_ATTACH_STATUS (ndiswwan.h)
 description: The NDIS_WWAN_LTE_ATTACH_STATUS structure describes the last used default LTE attach context for a mobile broadband (MBB) modem.
 tech.root: netvista
-ms.assetid: 8371490f-2c1b-41fe-8a90-6c12e92e793d
 ms.date: 08/23/2018
 keywords: ["NDIS_WWAN_LTE_ATTACH_STATUS structure"]
 ms.keywords: _NDIS_WWAN_LTE_ATTACH_STATUS, NDIS_WWAN_LTE_ATTACH_STATUS, *PNDIS_WWAN_LTE_ATTACH_STATUS,
@@ -37,8 +36,8 @@ api_location:
  - ndiswwan.h
 api_name:
  - _NDIS_WWAN_LTE_ATTACH_STATUS
-product:
- - Windows
+ - PNDIS_WWAN_LTE_ATTACH_STATUS
+ - NDIS_WWAN_LTE_ATTACH_STATUS
 ---
 
 # _NDIS_WWAN_LTE_ATTACH_STATUS structure
@@ -61,7 +60,7 @@ The header with type, revision, and size information about the **NDIS_WWAN_LTE_A
 | Revision | NDIS_WWAN_LTE_ATTACH_STATUS_REVISION_1 |
 | Size | sizeof(NDIS_WWAN_LTE_ATTACH_STATUS) |
 
-For more information about these members, see [**NDIS_OBJECT_HEADER**](../ntddndis/ns-ntddndis-_ndis_object_header.md).
+For more information about these members, see [**NDIS_OBJECT_HEADER**](../objectheader/ns-objectheader-ndis_object_header.md).
 
 ### -field uStatus
 
@@ -92,4 +91,5 @@ This structure is used in the [NDIS_STATUS_WWAN_LTE_ATTACH_STATUS](/windows-hard
 
 [**WWAN_LTE_ATTACH_STATUS**](../wwan/ns-wwan-_wwan_lte_attach_status.md)
 
-[**NDIS_OBJECT_HEADER**](../ntddndis/ns-ntddndis-_ndis_object_header.md)
+[**NDIS_OBJECT_HEADER**](../objectheader/ns-objectheader-ndis_object_header.md)
+

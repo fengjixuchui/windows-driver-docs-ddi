@@ -4,7 +4,6 @@ title: _UCX_ENDPOINT_EVENT_CALLBACKS (ucxendpoint.h)
 description: This structure provides a list of pointers to UCX endpoint event callback functions.
 old-location: buses\_ucx_endpoint_event_callbacks.htm
 tech.root: usbref
-ms.assetid: 93071B7B-74D8-44A2-984D-A6BABFC07BA3
 ms.date: 05/07/2018
 keywords: ["UCX_ENDPOINT_EVENT_CALLBACKS structure"]
 ms.keywords: "*PUCX_ENDPOINT_EVENT_CALLBACKS, P_UCX_ENDPOINT_EVENT_CALLBACKS, P_UCX_ENDPOINT_EVENT_CALLBACKS structure pointer [Buses], UCX_ENDPOINT_EVENT_CALLBACKS, UCX_ENDPOINT_EVENT_CALLBACKS structure [Buses], _UCX_ENDPOINT_EVENT_CALLBACKS, buses._ucx_endpoint_event_callbacks, ucxendpoint/P_UCX_ENDPOINT_EVENT_CALLBACKS, ucxendpoint/_UCX_ENDPOINT_EVENT_CALLBACKS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ucxendpoint.h
 api_name:
+ - _UCX_ENDPOINT_EVENT_CALLBACKS
+ - PUCX_ENDPOINT_EVENT_CALLBACKS
  - UCX_ENDPOINT_EVENT_CALLBACKS
 ---
 
@@ -109,3 +110,4 @@ A pointer to an <a href="/windows-hardware/drivers/ddi/ucxendpoint/nc-ucxendpoin
 
 
 <a href="/windows-hardware/drivers/ddi/ucxendpoint/nf-ucxendpoint-ucxendpointinitseteventcallbacks">UcxEndpointInitSetEventCallbacks</a>
+

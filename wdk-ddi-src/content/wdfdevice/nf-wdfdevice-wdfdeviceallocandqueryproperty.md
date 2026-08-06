@@ -4,7 +4,6 @@ title: WdfDeviceAllocAndQueryProperty function (wdfdevice.h)
 description: The WdfDeviceAllocAndQueryProperty method allocates a buffer and retrieves a specified device property.
 old-location: wdf\wdfdeviceallocandqueryproperty.htm
 tech.root: wdf
-ms.assetid: f921fee7-e2c0-4e0f-a78b-d2dff8af97a2
 ms.date: 02/26/2018
 keywords: ["WdfDeviceAllocAndQueryProperty function"]
 ms.keywords: DFDeviceObjectGeneralRef_d093b9da-de6b-467d-a6bd-c25d7a4145f8.xml, WdfDeviceAllocAndQueryProperty, WdfDeviceAllocAndQueryProperty method, kmdf.wdfdeviceallocandqueryproperty, wdf.wdfdeviceallocandqueryproperty, wdfdevice/WdfDeviceAllocAndQueryProperty
@@ -55,29 +54,29 @@ The <b>WdfDeviceAllocAndQueryProperty</b> method allocates a buffer and retrieve
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param DeviceProperty 
+### -param DeviceProperty [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-device_registry_property">DEVICE_REGISTRY_PROPERTY</a>-typed enumerator that identifies the device property to be retrieved.
 
-### -param PoolType 
+### -param PoolType [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type">POOL_TYPE</a>-typed enumerator that specifies the type of memory to be allocated.
 
-### -param PropertyMemoryAttributes 
+### -param PropertyMemoryAttributes [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that describes object attributes for the memory object that the function will allocate. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param PropertyMemory 
+### -param PropertyMemory [out]
 
-[out]
+
 A pointer to a WDFMEMORY-typed location that receives a handle to a framework memory object.
 
 ## -returns

@@ -4,7 +4,6 @@ title: IDebugSymbols3::SetScopeFrameByIndex (dbgeng.h)
 description: The SetScopeFrameByIndex method sets the current scope to the scope of one of the frames on the call stack.
 old-location: debugger\setscopeframebyindex.htm
 tech.root: debugger
-ms.assetid: 7d5105e3-99c6-4800-88a4-af80a61c253e
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::SetScopeFrameByIndex"]
 ms.keywords: IDebugSymbols3 interface [Windows Debugging],SetScopeFrameByIndex method, IDebugSymbols3.SetScopeFrameByIndex, IDebugSymbols3::SetScopeFrameByIndex, IDebugSymbols_451c9980-0e6c-4661-bdb6-396c45cc57dd.xml, SetScopeFrameByIndex, SetScopeFrameByIndex method [Windows Debugging], SetScopeFrameByIndex method [Windows Debugging],IDebugSymbols3 interface, dbgeng/IDebugSymbols3::SetScopeFrameByIndex, debugger.setscopeframebyindex
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols3.SetScopeFrameByIndex
+ - IDebugSymbols3::SetScopeFrameByIndex
 ---
 
 # IDebugSymbols3::SetScopeFrameByIndex
@@ -50,9 +49,9 @@ The <b>SetScopeFrameByIndex</b> method sets the current scope to the scope of on
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 Specifies the index of the stack frame from which to set the scope.  The index counts the number of frames from the top of the call stack.  The frame at the top of the stack, representing the current call, has index zero.
 
 ## -returns
@@ -102,3 +101,4 @@ For more information about scopes, see <a href="/windows-hardware/drivers/debugg
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-setscopefromstoredevent">SetScopeFromStoredEvent</a>
+

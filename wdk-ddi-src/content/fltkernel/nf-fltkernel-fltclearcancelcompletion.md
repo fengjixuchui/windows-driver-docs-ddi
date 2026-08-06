@@ -4,7 +4,6 @@ title: FltClearCancelCompletion function (fltkernel.h)
 description: FltClearCancelCompletion clears a cancel routine that was specified for an I/O operation.
 old-location: ifsk\fltclearcancelcompletion.htm
 tech.root: ifsk
-ms.assetid: 75c66cb7-3378-4951-9180-d1bd9f201a42
 ms.date: 04/16/2018
 keywords: ["FltClearCancelCompletion function"]
 ms.keywords: FltApiRef_a_to_d_4dea0214-a0a2-45b8-b044-960881a8f065.xml, FltClearCancelCompletion, FltClearCancelCompletion routine [Installable File System Drivers], fltkernel/FltClearCancelCompletion, ifsk.fltclearcancelcompletion
@@ -51,9 +50,9 @@ api_name:
 
 ## -parameters
 
-### -param CallbackData 
+### -param CallbackData [in]
 
-[in]
+
 Pointer to the callback data (<a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data">FLT_CALLBACK_DATA</a>) structure for the I/O operation.
 
 ## -returns

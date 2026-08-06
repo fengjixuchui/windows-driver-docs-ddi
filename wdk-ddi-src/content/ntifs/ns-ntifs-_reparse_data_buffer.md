@@ -1,11 +1,10 @@
 ---
 UID: NS:ntifs._REPARSE_DATA_BUFFER
-title: _REPARSE_DATA_BUFFER (ntifs.h)
+title: REPARSE_DATA_BUFFER (ntifs.h)
 description: The REPARSE_DATA_BUFFER structure contains reparse point data for a Microsoft reparse point.
 old-location: ifsk\reparse_data_buffer.htm
 tech.root: ifsk
-ms.assetid: e906a874-51f1-4623-8f0b-afdfd8169ab2
-ms.date: 05/16/2019
+ms.date: 07/26/2022
 keywords: ["REPARSE_DATA_BUFFER structure"]
 ms.keywords: "*PREPARSE_DATA_BUFFER, PREPARSE_DATA_BUFFER, PREPARSE_DATA_BUFFER structure pointer [Installable File System Drivers], REPARSE_DATA_BUFFER, REPARSE_DATA_BUFFER structure [Installable File System Drivers], _REPARSE_DATA_BUFFER, fileinformationstructures_4f1b658e-1833-421f-a726-448b20b1c595.xml, ifsk.reparse_data_buffer, ntifs/PREPARSE_DATA_BUFFER, ntifs/REPARSE_DATA_BUFFER"
 req.header: ntifs.h
@@ -42,11 +41,12 @@ api_type:
 api_location:
  - ntifs.h
 api_name:
+ - _REPARSE_DATA_BUFFER
+ - PREPARSE_DATA_BUFFER
  - REPARSE_DATA_BUFFER
 ---
 
-# _REPARSE_DATA_BUFFER structure
-
+# REPARSE_DATA_BUFFER structure
 
 ## -description
 
@@ -64,7 +64,7 @@ Size, in bytes, of the reparse data in the buffer that **DataBuffer** points to.
 
 ### -field Reserved
 
-Length, in bytes, of the unparsed portion of the file name pointed to by the **FileName** member of the associated file object. For more information about the **FileName** member, see [FILE_OBJECT<](../wdm/ns-wdm-_file_object.md). This member is only valid for create operations when the I/O fails with STATUS_REPARSE. For all other purposes, such as setting or querying a reparse point for the reparse data, this member is treated as reserved.
+Length, in bytes, of the unparsed portion of the file name pointed to by the **FileName** member of the associated file object. For more information about the **FileName** member, see [FILE_OBJECT](../wdm/ns-wdm-_file_object.md). This member is only valid for create operations when the I/O fails with STATUS_REPARSE. For all other purposes, such as setting or querying a reparse point for the reparse data, this member is treated as reserved.
 
 ### -field DUMMYUNIONNAME
 
@@ -170,4 +170,4 @@ For more information about reparse point tags, see the Microsoft Windows SDK doc
 
 [REPARSE_GUID_DATA_BUFFER](ns-ntifs-_reparse_guid_data_buffer.md)
 
-[ZwFsControlFile](/previous-versions/ff566462(v=vs.85))
+[**ZwFsControlFile**](nf-ntifs-zwfscontrolfile.md)

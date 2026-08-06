@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_40
+UID: NS:ksmedia.SOUNDDETECTOR_PATTERNHEADER
 title: SOUNDDETECTOR_PATTERNHEADER (ksmedia.h)
-description: The SOUNDDETECTOR_PATTERNHEADER structure specifies the pattern header for the sound detector in the KSPROPERTY_SOUNDDETECTOR_PATTERNS property.
+description: The SOUNDDETECTOR_PATTERNHEADER structure (ksmedia.h) specifies the pattern header for the sound detector.
 old-location: audio\sounddetector_patternheader.htm
 tech.root: audio
-ms.assetid: 43172627-2A05-44AD-8B39-8FC384F9F44E
 ms.date: 04/30/2019
 keywords: ["SOUNDDETECTOR_PATTERNHEADER structure"]
 ms.keywords: SOUNDDETECTOR_PATTERNHEADER, SOUNDDETECTOR_PATTERNHEADER structure [Audio Devices], audio.sounddetector_patternheader, ksmedia/SOUNDDETECTOR_PATTERNHEADER
@@ -61,3 +60,4 @@ The keyword pattern format, expressed as a GUID.
 ## -see-also
 
 [KSPROPERTY_SOUNDDETECTOR_PATTERNS](/windows-hardware/drivers/audio/ksproperty-sounddetector-patterns)
+

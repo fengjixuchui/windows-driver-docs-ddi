@@ -1,10 +1,9 @@
 ---
-UID: NE:ks.__unnamed_enum_9
+UID: NE:ks.KSINTERFACE_STANDARD
 title: KSINTERFACE_STANDARD (ks.h)
-description: 
+description: "Learn more about: KSINTERFACE_STANDARD enumeration"
 old-location: stream\ksinterface_standard.htm
 tech.root: stream
-ms.assetid: B000E3BD-28FA-454E-A598-3670B5FCD3DD
 ms.date: 04/23/2018
 keywords: ["KSINTERFACE_STANDARD enumeration"]
 ms.keywords: KSINTERFACE_STANDARD, KSINTERFACE_STANDARD enumeration [Streaming Media Devices], KSINTERFACE_STANDARD_CONTROL, KSINTERFACE_STANDARD_LOOPED_STREAMING, KSINTERFACE_STANDARD_STREAMING, ks/KSINTERFACE_STANDARD, ks/KSINTERFACE_STANDARD_CONTROL, ks/KSINTERFACE_STANDARD_LOOPED_STREAMING, ks/KSINTERFACE_STANDARD_STREAMING, stream.ksinterface_standard

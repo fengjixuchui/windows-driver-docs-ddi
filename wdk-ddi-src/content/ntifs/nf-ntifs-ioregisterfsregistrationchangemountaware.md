@@ -4,14 +4,13 @@ title: IoRegisterFsRegistrationChangeMountAware function (ntifs.h)
 description: The IoRegisterFsRegistrationChangeMountAware routine registers a file system filter driver's notification routine. This notification routine is called whenever a file system registers or unregisters itself as an active file system.
 old-location: ifsk\ioregisterfsregistrationchangemountaware.htm
 tech.root: ifsk
-ms.assetid: f8f91c50-b434-438a-ad3c-d5d3c3982f4a
 ms.date: 04/16/2018
 keywords: ["IoRegisterFsRegistrationChangeMountAware function"]
 ms.keywords: IoRegisterFsRegistrationChangeMountAware, IoRegisterFsRegistrationChangeMountAware routine [Installable File System Drivers], ifsk.ioregisterfsregistrationchangemountaware, ioref_c69a27ef-45f5-4873-bd11-34e984cc5c11.xml, ntifs/IoRegisterFsRegistrationChangeMountAware
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: The IoRegisterFsRegistrationChangeMountAware routine is available in Windows 7 and later versions of Windows.
+req.target-min-winverclnt: The IoRegisterFsRegistrationChangeMountAware routine is Windows 7
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,19 +49,19 @@ The <b>IoRegisterFsRegistrationChangeMountAware</b> routine registers a file sys
 
 ## -parameters
 
-### -param DriverObject 
+### -param DriverObject [in]
 
-[in]
+
 A pointer to the driver object for the file system filter driver.
 
-### -param DriverNotificationRoutine 
+### -param DriverNotificationRoutine [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ntifs/nc-ntifs-driver_fs_notification">PDRIVER_FS_NOTIFICATION</a> routine, which the file system calls when it registers or unregisters itself.
 
-### -param SynchronizeWithMounts 
+### -param SynchronizeWithMounts [in]
 
-[in]
+
 If set to <b>TRUE</b>, this routine ensures no mount operations are in progress when making notification callbacks. If set to <b>FALSE</b>, the routine does not attempt to avoid conflicts with mount operations.
 
 ## -returns

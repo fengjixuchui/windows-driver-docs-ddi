@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGK_PREEMPTCOMMANDFLAGS
 title: _DXGK_PREEMPTCOMMANDFLAGS (d3dkmddi.h)
 description: The DXGK_PREEMPTCOMMANDFLAGS structure specifies a union that contains either a structure with a reserved member or a 32-bit value. No bit-field flags are currently defined.
 old-location: display\dxgk_preemptcommandflags.htm
-ms.assetid: 24444451-7323-4e1a-9981-cf5caa00c4e3
 ms.date: 05/10/2018
 keywords: ["DXGK_PREEMPTCOMMANDFLAGS structure"]
 ms.keywords: DXGK_PREEMPTCOMMANDFLAGS, DXGK_PREEMPTCOMMANDFLAGS structure [Display Devices], DmStructs_7163ce37-49c8-4b17-aadc-cd36ad5cac9d.xml, _DXGK_PREEMPTCOMMANDFLAGS, d3dkmddi/DXGK_PREEMPTCOMMANDFLAGS, display.dxgk_preemptcommandflags
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_PREEMPTCOMMANDFLAGS
  - DXGK_PREEMPTCOMMANDFLAGS
 ---
 
@@ -63,3 +63,4 @@ A member in the union that DXGK_PREEMPTCOMMANDFLAGS contains that can hold a 32-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_preemptcommand">DXGKARG_PREEMPTCOMMAND</a>
+

@@ -4,7 +4,6 @@ title: _NDIS_WWAN_AUTH_CHALLENGE (ndiswwan.h)
 description: The NDIS_WWAN_AUTH_CHALLENGE structure represents an authentication challenge used by one of the authentication methods.
 old-location: netvista\ndis_wwan_auth_challenge.htm
 tech.root: netvista
-ms.assetid: 7C5CE666-D8C9-4A01-A38E-612B69E3A5FB
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_AUTH_CHALLENGE structure"]
 ms.keywords: "*PNDIS_WWAN_AUTH_CHALLENGE, NDIS_WWAN_AUTH_CHALLENGE, NDIS_WWAN_AUTH_CHALLENGE structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_AUTH_CHALLENGE, PNDIS_WWAN_AUTH_CHALLENGE structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_AUTH_CHALLENGE, ndiswwan/NDIS_WWAN_AUTH_CHALLENGE, ndiswwan/PNDIS_WWAN_AUTH_CHALLENGE, netvista.ndis_wwan_auth_challenge"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_AUTH_CHALLENGE
+ - PNDIS_WWAN_AUTH_CHALLENGE
  - NDIS_WWAN_AUTH_CHALLENGE
 ---
 
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_AUTH_CHALLENGE)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field AuthChallenge
 
@@ -111,3 +112,4 @@ A formatted <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_auth_chall
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_auth_challenge">WWAN_AUTH_CHALLENGE</a>
+

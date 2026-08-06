@@ -3,17 +3,16 @@ UID: NS:netwakesource._NET_WAKE_SOURCE_MEDIA_CHANGE_PARAMETERS
 title: NET_WAKE_SOURCE_MEDIA_CHANGE_PARAMETERS (netwakesource.h)
 description: The NET_WAKE_SOURCE_MEDIA_CHANGE_PARAMETERS structure contains parameters for a media change wake-on-LAN (WoL) wake source.
 tech.root: netvista
-ms.assetid: de7b5a2a-dc88-4b27-8896-7682e8dce72a
 ms.date: 10/07/2019
 keywords: ["NET_WAKE_SOURCE_MEDIA_CHANGE_PARAMETERS structure"]
 ms.keywords: NET_WAKE_SOURCE_MEDIA_CHANGE_PARAMETERS, NET_WAKE_SOURCE_MEDIA_CHANGE_PARAMETERS,
 req.header: netwakesource.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: 
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - netwakesource.h
 api_name:
+ - _NET_WAKE_SOURCE_MEDIA_CHANGE_PARAMETERS
  - NET_WAKE_SOURCE_MEDIA_CHANGE_PARAMETERS
-product:
- - Windows
 ---
 
 # NET_WAKE_SOURCE_MEDIA_CHANGE_PARAMETERS structure
@@ -71,3 +69,4 @@ Call [**NET_WAKE_SOURCE_MEDIA_CHANGE_PARAMETERS_INIT**](../netwakesource/nf-netw
 [**NET_WAKE_SOURCE_MEDIA_CHANGE_PARAMETERS_INIT**](../netwakesource/nf-netwakesource-net_wake_source_media_change_parameters_init.md)
 
 [**NetWakeSourceGetMediaChangeParameters**](../netwakesource/nf-netwakesource-netwakesourcegetmediachangeparameters.md)
+

@@ -4,7 +4,6 @@ title: IoAllocateIrp function (wdm.h)
 description: The IoAllocateIrp routine allocates an IRP, given the number of I/O stack locations for each driver layered under the caller, and, optionally, for the caller.
 old-location: kernel\ioallocateirp.htm
 tech.root: kernel
-ms.assetid: 40abbdf8-3712-4724-8aef-16c247780c86
 ms.date: 04/30/2018
 keywords: ["IoAllocateIrp function"]
 ms.keywords: IoAllocateIrp, IoAllocateIrp routine [Kernel-Mode Driver Architecture], k104_326eb80d-9bc3-4a91-9f33-710f7975808a.xml, kernel.ioallocateirp, wdm/IoAllocateIrp
@@ -46,18 +45,18 @@ api_name:
 
 ## -description
 
-The **IoAllocateIrp** routine allocates an IRP, given the number of I/O stack locations for each driver layered under the caller, and, optionally, for the caller. See also [**IsAllocateIrpEx**](./nf-wdm-ioallocateirpex.md).
+The **IoAllocateIrp** routine allocates an IRP, given the number of I/O stack locations for each driver layered under the caller, and, optionally, for the caller. See also [**IoAllocateIrpEx**](./nf-wdm-ioallocateirpex.md).
 
 ## -parameters
 
-### -param StackSize 
+### -param StackSize [in]
 
-[in]
+
 Specifies the number of I/O stack locations to be allocated for the IRP. This value must be at least equal to the **StackSize** of the next-lower driver's device object, but can be one greater than this value. The calling driver need not allocate a stack location in the IRP for itself.
 
-### -param ChargeQuota 
+### -param ChargeQuota [in]
 
-[in]
+
 Setting this to **TRUE** causes the memory allocated for the IRP to be charged against the quota for the current process. Should be set to **FALSE** by intermediate drivers. This can be set to **TRUE** only by highest-level drivers that are called in the context of the thread that originates the I/O request for which the driver is allocating another IRP.
 
 ## -returns

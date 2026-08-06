@@ -4,7 +4,6 @@ title: RtlSizeTSub function (ntintsafe.h)
 description: Subtracts one value of type SIZE_T from another.
 old-location: kernel\rtlsizetsub.htm
 tech.root: kernel
-ms.assetid: B7508B3B-DCE7-42F4-9257-E1E140625DA9
 ms.date: 04/30/2018
 keywords: ["RtlSizeTSub function"]
 ms.keywords: RtlSizeTSub, RtlSizeTSub function [Kernel-Mode Driver Architecture], kernel.rtlsizetsub, ntintsafe/RtlSizeTSub
@@ -50,19 +49,19 @@ Subtracts one value of type <b>SIZE_T</b> from another.
 
 ## -parameters
 
-### -param Minuend 
+### -param Minuend [in]
 
-[in]
+
 The value from which <i>Subtrahend</i> is subtracted.
 
-### -param Subtrahend 
+### -param Subtrahend [in]
 
-[in]
+
 The value to subtract from <i>Minuend</i>.
 
-### -param pResult 
+### -param pResult [out]
 
-[out]
+
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

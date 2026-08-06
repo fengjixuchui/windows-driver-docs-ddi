@@ -4,7 +4,6 @@ title: EVT_SERCX2_SYSTEM_DMA_RECEIVE_CANCEL_NEW_DATA_NOTIFICATION (sercx.h)
 description: The EvtSerCx2SystemDmaReceiveCancelNewDataNotification event callback function is called by version 2 of the serial framework extension (SerCx2) to cancel a new-data notification that SerCx2 enabled in a previous call to the EvtSerCx2SystemDmaReceiveEnableNewDataNotification event callback function.
 old-location: serports\evtsercx2systemdmareceivecancelnewdatanotification.htm
 tech.root: serports
-ms.assetid: 7C88F794-0C2B-4715-B09A-2AA49414F18A
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX2_SYSTEM_DMA_RECEIVE_CANCEL_NEW_DATA_NOTIFICATION callback function"]
 ms.keywords: 2/EvtSerCx2SystemDmaReceiveCancelNewDataNotification, EVT_SERCX2_SYSTEM_DMA_RECEIVE_CANCEL_NEW_DATA_NOTIFICATION, EVT_SERCX2_SYSTEM_DMA_RECEIVE_CANCEL_NEW_DATA_NOTIFICATION callback, EvtSerCx2SystemDmaReceiveCancelNewDataNotification, EvtSerCx2SystemDmaReceiveCancelNewDataNotification callback function [Serial Ports], serports.evtsercx2systemdmareceivecancelnewdatanotification
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
- - EvtSerCx2SystemDmaReceiveCancelNewDataNotification
+ - EVT_SERCX2_SYSTEM_DMA_RECEIVE_CANCEL_NEW_DATA_NOTIFICATION
 ---
 
 # EVT_SERCX2_SYSTEM_DMA_RECEIVE_CANCEL_NEW_DATA_NOTIFICATION callback function
@@ -50,9 +49,9 @@ The <i>EvtSerCx2SystemDmaReceiveCancelNewDataNotification</i> event callback fun
 
 ## -parameters
 
-### -param SystemDmaReceive 
+### -param SystemDmaReceive [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMARECEIVE</a> handle to a system-DMA-receive object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2systemdmareceivecreate">SerCx2SystemDmaReceiveCreate</a> method to create this object.
 
 ## -returns
@@ -112,3 +111,4 @@ The <b>EVT_SERCX2_SYSTEM_DMA_RECEIVE_CANCEL_NEW_DATA_NOTIFICATION</b> function t
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2systemdmareceivenewdatanotification">SerCx2SystemDmaReceiveNewDataNotification</a>
+

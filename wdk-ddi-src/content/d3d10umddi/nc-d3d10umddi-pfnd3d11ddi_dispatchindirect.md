@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_DISPATCHINDIRECT
 title: PFND3D11DDI_DISPATCHINDIRECT (d3d10umddi.h)
 description: The DispatchIndirect function executes the compute shader.
 old-location: display\dispatchindirect.htm
-ms.assetid: 0c818515-163f-48ba-ad57-f4405672c98f
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_DISPATCHINDIRECT callback function"]
 ms.keywords: DispatchIndirect, DispatchIndirect callback function [Display Devices], PFND3D11DDI_DISPATCHINDIRECT, PFND3D11DDI_DISPATCHINDIRECT callback, UserModeDisplayDriverDx11_Functions_39c7b613-66de-4dd8-8b43-d1ae2a926e77.xml, d3d10umddi/DispatchIndirect, display.dispatchindirect
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - DispatchIndirect
+ - PFND3D11DDI_DISPATCHINDIRECT
 ---
 
 # PFND3D11DDI_DISPATCHINDIRECT callback function
@@ -50,13 +49,13 @@ The <b>DispatchIndirect</b> function executes the compute shader.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hBufferForArgs* [in]
 
@@ -70,7 +69,7 @@ struct DispatchArgs {
 }
 ```
 
-### -param Arg3
+### -param unnamedParam3
 
 *AlignedByteOffsetForArgs* [in]
 
@@ -107,3 +106,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

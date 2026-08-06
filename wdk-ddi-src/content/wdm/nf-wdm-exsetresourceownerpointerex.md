@@ -4,7 +4,6 @@ title: ExSetResourceOwnerPointerEx function (wdm.h)
 description: The ExSetResourceOwnerPointerEx routine transfers the ownership of an executive resource from the calling thread to an owner pointer, which is a system address that identifies the resource owner.
 old-location: kernel\exsetresourceownerpointerex.htm
 tech.root: kernel
-ms.assetid: 96293fbc-0c3c-4685-8708-dd84fcc2223e
 ms.date: 04/30/2018
 keywords: ["ExSetResourceOwnerPointerEx function"]
 ms.keywords: ExSetResourceOwnerPointerEx, ExSetResourceOwnerPointerEx routine [Kernel-Mode Driver Architecture], k102_2bcc65e9-00e7-4fc5-a1d6-1f797b2c6038.xml, kernel.exsetresourceownerpointerex, wdm/ExSetResourceOwnerPointerEx
@@ -50,19 +49,19 @@ The <b>ExSetResourceOwnerPointerEx</b> routine transfers the ownership of an exe
 
 ## -parameters
 
-### -param Resource 
+### -param Resource [in, out]
 
-[in, out]
+
 A pointer to an executive resource (an opaque <a href="/windows-hardware/drivers/kernel/eresource-structures">ERESOURCE</a> structure) that is owned by the calling thread. The caller previously allocated this structure and initialized it by calling the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializeresourcelite">ExInitializeResourceLite</a> routine. For more information, see the following Remarks section.
 
-### -param OwnerPointer 
+### -param OwnerPointer [in]
 
-[in]
+
 A pointer value that identifies the resource owner. This parameter value is nominally a pointer to a value of type ERESOURCE_THREAD but is cast to type PVOID. The caller must set the two least significant bits of this pointer value to ones. For more information, see the following Remarks section.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A set of flags that can modify the operation of this routine. Set this parameter either to zero or to the following flag value:
 
 <ul>
@@ -89,7 +88,7 @@ When the resource-user thread no longer needs the resource, the resource should 
 
 After a <b>ExSetResourceOwnerPointerEx</b> call transfers ownership of a resource, the only other <a href="/windows-hardware/drivers/kernel/introduction-to-eresource-routines">ERESOURCE routine</a> that a driver can call for the specified resource is <b>ExReleaseResourceForThreadLite</b>. An attempt to call another <b>ERESOURCE</b> routine, such as <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exreleaseresourcelite">ExReleaseResourceLite</a>, for this resource is an error.
 
-<b>ExSetResourceOwnerPointerEx</b> can operate in two significantly different modes. The mode is specified by the <i>Flags</i> parameter. To select the more versatile of the two modes, set <i>Flags</i> = FLAG_OWNER_POINTER_IS_THREAD. This <i>Flags</i> value informs the operating system that the <i>OwnerPointer</i> parameter is a pointer to the thread object of the resource-manager thread. The operating system can, if necessary, use this information to temporarily boost the priority of this thread to avoid priority inversion. To obtain the thread object pointer to use for the <i>OwnerPointer</i> value, a driver can call the <a href="/previous-versions/windows/hardware/drivers/ff544614(v=vs.85)">ExGetCurrentResourceThread</a> routine. Remember to set the two least significant bits of the <i>OwnerPointer</i> value to ones.
+<b>ExSetResourceOwnerPointerEx</b> can operate in two significantly different modes. The mode is specified by the <i>Flags</i> parameter. To select the more versatile of the two modes, set <i>Flags</i> = FLAG_OWNER_POINTER_IS_THREAD. This <i>Flags</i> value informs the operating system that the <i>OwnerPointer</i> parameter is a pointer to the thread object of the resource-manager thread. The operating system can, if necessary, use this information to temporarily boost the priority of this thread to avoid priority inversion. To obtain the thread object pointer to use for the <i>OwnerPointer</i> value, a driver can call the <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetcurrentthread">ExGetCurrentResourceThread</a> routine. Remember to set the two least significant bits of the <i>OwnerPointer</i> value to ones.
 
 If <i>Flags</i> is zero, the behavior of <b>ExSetResourceOwnerPointerEx</b> is the same as that of the legacy <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exsetresourceownerpointer">ExSetResourceOwnerPointer</a> routine, which is available in Windows 2000 and later versions of the Windows operating system. That is, the <i>OwnerPointer</i> parameter points to a storage object that the resource-manager thread allocates in system memory before it calls <b>ExSetResourceOwnerPointerEx</b>. In this case, the object type and value are not relevant because <b>ExSetResourceOwnerPointerEx</b> does not attempt to access the object itself. Instead, the routine simply uses the memory address of the object to identify the resource owner. The storage for the object must begin at an even four-byte boundary in memory. To prevent two drivers from inadvertently using the same owner pointer at the same time, the resource-manager thread must not release the storage for the object until the resource is released.
 
@@ -109,7 +108,7 @@ For more information about managing executive resources, see <a href="/windows-h
 
 
 
-<a href="/previous-versions/windows/hardware/drivers/ff544614(v=vs.85)">ExGetCurrentResourceThread</a>
+<a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetcurrentthread">ExGetCurrentResourceThread</a>
 
 
 

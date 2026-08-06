@@ -3,8 +3,7 @@ UID: NF:netadapter.NetAdapterGetNetLuid
 title: NetAdapterGetNetLuid function (netadapter.h)
 description: Retrieves the NET_LUID that is assigned to a network adapter.
 tech.root: netvista
-ms.assetid: 7e4fe2f1-35a4-434f-a499-3cf6917c9350
-ms.date: 02/06/2018
+ms.date: 03/30/2022
 keywords: ["NetAdapterGetNetLuid function"]
 ms.keywords: NetAdapterGetNetLuid
 req.header: netadapter.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.21
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -50,7 +49,7 @@ Retrieves the NET_LUID that is assigned to a network adapter.
 
 ## -parameters
 
-### -param Adapter
+### -param Adapter [_In_]
 
 The network adapter object that the client created in a prior call to [NetAdapterCreate](nf-netadapter-netadaptercreate.md).
 

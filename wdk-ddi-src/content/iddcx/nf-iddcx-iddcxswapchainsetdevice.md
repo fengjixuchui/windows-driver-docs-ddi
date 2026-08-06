@@ -4,7 +4,6 @@ title: IddCxSwapChainSetDevice function (iddcx.h)
 description: An OS callback function the driver calls within its SetSwapChain routine to setup the swap-chain with a particular DXGI device.
 old-location: display\iddcxswapchainsetdevice.htm
 tech.root: display
-ms.assetid: f1e96d8a-910e-4808-b9a3-e8c530158872
 ms.date: 05/10/2018
 keywords: ["IddCxSwapChainSetDevice function"]
 ms.keywords: IddCxSwapChainSetDevice, IddCxSwapChainSetDevice method [Display Devices], display.iddcxswapchainsetdevice, iddcx/IddCxSwapChainSetDevice
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: IddCxStub.lib
 req.dll: IddCx.dll
-req.irql: _Must_inspect_result_
+req.irql: 
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ An OS callback function the driver calls within its SetSwapChain routine to setu
 
 ## -parameters
 
-### -param SwapChainObject 
+### -param SwapChainObject [in]
 
-[in]
+
 The swap-chain object that will be setup with a particular DXGI device.
 
-### -param pInArgs 
+### -param pInArgs [in]
 
-[in]
+
 Input arguments to the function
 
 ## -returns

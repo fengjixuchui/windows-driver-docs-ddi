@@ -3,7 +3,6 @@ UID: NS:ndiswwan._NDIS_WWAN_UICC_FILE_STATUS
 title: _NDIS_WWAN_UICC_FILE_STATUS (ndiswwan.h)
 description: The NDIS_WWAN_UICC_FILE_STATUS structure describes the status of a UICC file.
 tech.root: netvista
-ms.assetid: 7A1325CD-8F65-492E-A943-D3E6BAAD8CDE
 ms.date: 04/09/2019
 keywords: ["NDIS_WWAN_UICC_FILE_STATUS structure"]
 ms.keywords: _NDIS_WWAN_UICC_FILE_STATUS, NDIS_WWAN_UICC_FILE_STATUS, *PNDIS_WWAN_UICC_FILE_STATUS,
@@ -37,6 +36,8 @@ api_location:
  - ndiswwan.h
 api_name:
  - _NDIS_WWAN_UICC_FILE_STATUS
+ - PNDIS_WWAN_UICC_FILE_STATUS
+ - NDIS_WWAN_UICC_FILE_STATUS
 ---
 
 # _NDIS_WWAN_UICC_FILE_STATUS structure
@@ -58,7 +59,7 @@ The header with type, revision, and size information about the **NDIS_WWAN_UICC_
 | Revision | NDIS_WWAN_UICC_FILE_STATUS_REVISION_1 |
 | Size | sizeof(NDIS_WWAN_UICC_FILE_STATUS) |
 
-For more information about these members, see [**NDIS_OBJECT_HEADER**](../ntddndis/ns-ntddndis-_ndis_object_header.md).
+For more information about these members, see [**NDIS_OBJECT_HEADER**](../objectheader/ns-objectheader-ndis_object_header.md).
 
 ### -field uStatus
 
@@ -88,3 +89,4 @@ This structure is used in the [NDIS_STATUS_WWAN_UICC_FILE_STATUS](/windows-hardw
 [NDIS_STATUS_WWAN_UICC_FILE_STATUS](/windows-hardware/drivers/network/ndis-status-wwan-uicc-file-status)
 
 [**WWAN_UICC_FILE_STATUS**](../wwan/ns-wwan-_wwan_uicc_file_status.md)
+

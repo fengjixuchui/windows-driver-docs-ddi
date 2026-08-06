@@ -4,7 +4,6 @@ title: IWDFFileHandleTargetFactory::CreateFileHandleTarget (wudfddi.h)
 description: The CreateFileHandleTarget method creates a file-handle-based I/O target object.
 old-location: wdf\iwdffilehandletargetfactory_createfilehandletarget.htm
 tech.root: wdf
-ms.assetid: 579a2cef-1e37-426c-9f69-8766dc9011ba
 ms.date: 02/26/2018
 keywords: ["IWDFFileHandleTargetFactory::CreateFileHandleTarget"]
 ms.keywords: CreateFileHandleTarget, CreateFileHandleTarget method, CreateFileHandleTarget method,IWDFFileHandleTargetFactory interface, IWDFFileHandleTargetFactory interface,CreateFileHandleTarget method, IWDFFileHandleTargetFactory.CreateFileHandleTarget, IWDFFileHandleTargetFactory::CreateFileHandleTarget, UMDFDeviceObjectRef_4a3fcfeb-e1a1-4375-8bd5-bdd75c36c454.xml, umdf.iwdffilehandletargetfactory_createfilehandletarget, wdf.iwdffilehandletargetfactory_createfilehandletarget, wudfddi/IWDFFileHandleTargetFactory::CreateFileHandleTarget
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFFileHandleTargetFactory.CreateFileHandleTarget
+ - IWDFFileHandleTargetFactory::CreateFileHandleTarget
 ---
 
 # IWDFFileHandleTargetFactory::CreateFileHandleTarget
@@ -52,14 +51,14 @@ The <b>CreateFileHandleTarget</b> method creates a file-handle-based I/O target 
 
 ## -parameters
 
-### -param hTarget 
+### -param hTarget [in]
 
-[in]
+
 A handle to the target device. The handle must have been previously opened with the FILE_FLAG_OVERLAPPED flag. For example, FILE_FLAG_OVERLAPPED must have been specified in the <i>dwFlagsAndAttributes</i> parameter of the Microsoft Win32 <b>CreateFile</b> function.
 
-### -param ppTarget 
+### -param ppTarget [out]
 
-[out]
+
 A pointer to a location that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotarget">IWDFIoTarget</a> interface of the I/O target object.
 
 ## -returns
@@ -154,7 +153,6 @@ if (SUCCEEDED(hr)) {
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffilehandletargetfactory">IWDFFileHandleTargetFactory</a>
@@ -166,3 +164,4 @@ if (SUCCEEDED(hr)) {
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotarget">IWDFIoTarget</a>
+

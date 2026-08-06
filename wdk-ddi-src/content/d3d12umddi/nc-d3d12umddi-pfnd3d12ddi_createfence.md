@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_CREATEFENCE
 title: PFND3D12DDI_CREATEFENCE (d3d12umddi.h)
 description: Creates a fence.
-ms.assetid: dcfe2112-bb20-4808-9cd3-59aa56875af7
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CREATEFENCE callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CREATEFENCE
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,15 +48,15 @@ Creates a fence.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 A fence handle.
 
-### -param Arg3
+### -param unnamedParam3
 
 Pointer to a D3D12DDIARG_CREATE_FENCE structure.
 

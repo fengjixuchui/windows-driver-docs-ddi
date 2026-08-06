@@ -4,7 +4,6 @@ title: PFND3DDDI_AUTHENTICATEDCHANNELKEYEXCHANGE (d3dumddi.h)
 description: The AuthenticatedChannelKeyExchange function negotiates the session key.
 old-location: display\authenticatedchannelkeyexchange.htm
 tech.root: display
-ms.assetid: 627f9689-1059-4f88-9005-9c7600dad686
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_AUTHENTICATEDCHANNELKEYEXCHANGE callback function"]
 ms.keywords: AuthenticatedChannelKeyExchange, AuthenticatedChannelKeyExchange callback function [Display Devices], PFND3DDDI_AUTHENTICATEDCHANNELKEYEXCHANGE, PFND3DDDI_AUTHENTICATEDCHANNELKEYEXCHANGE callback, UserModeDisplayDriver_Functions_2882c4c2-3df6-4610-9f8f-83967c485457.xml, d3dumddi/AuthenticatedChannelKeyExchange, display.authenticatedchannelkeyexchange
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - AuthenticatedChannelKeyExchange
-product:
- - Windows
+ - PFND3DDDI_AUTHENTICATEDCHANNELKEYEXCHANGE
 ---
 
 # PFND3DDDI_AUTHENTICATEDCHANNELKEYEXCHANGE callback function
@@ -56,7 +53,7 @@ The <b>AuthenticatedChannelKeyExchange</b> function negotiates the session key.
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 pData [in, out]
 
@@ -80,3 +77,4 @@ The driver decrypts this secret key and uses the secret key in calls to the driv
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_authenticatedchannelkeyexchange">D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE</a>
+

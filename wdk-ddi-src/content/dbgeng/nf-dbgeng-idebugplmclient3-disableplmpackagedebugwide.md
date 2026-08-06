@@ -4,7 +4,6 @@ title: IDebugPlmClient3::DisablePlmPackageDebugWide (dbgeng.h)
 description: Disables a Process Lifecycle Management (PLM) package debug.
 old-location: debugger\idebugplmclient3_disableplmpackagedebugwide.htm
 tech.root: debugger
-ms.assetid: 23A5BAC2-E8F3-47FF-9B63-3FFF447C33B4
 ms.date: 05/03/2018
 keywords: ["IDebugPlmClient3::DisablePlmPackageDebugWide"]
 ms.keywords: DisablePlmPackageDebugWide, DisablePlmPackageDebugWide method [Windows Debugging], DisablePlmPackageDebugWide method [Windows Debugging],IDebugPlmClient3 interface, IDebugPlmClient3 interface [Windows Debugging],DisablePlmPackageDebugWide method, IDebugPlmClient3.DisablePlmPackageDebugWide, IDebugPlmClient3::DisablePlmPackageDebugWide, dbgeng/IDebugPlmClient3::DisablePlmPackageDebugWide, debugger.idebugplmclient3_disableplmpackagedebugwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugPlmClient3.DisablePlmPackageDebugWide
+ - IDebugPlmClient3::DisablePlmPackageDebugWide
 ---
 
 # IDebugPlmClient3::DisablePlmPackageDebugWide
@@ -50,14 +49,14 @@ Disables a Process Lifecycle Management (PLM) package debug.
 
 ## -parameters
 
-### -param Server 
+### -param Server [in]
 
-[in]
+
 The server of the package.
 
-### -param PackageFullName 
+### -param PackageFullName [in]
 
-[in]
+
 A pointer to the package name.
 
 ## -returns
@@ -67,3 +66,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugplmclient3">IDebugPlmClient3</a>
+

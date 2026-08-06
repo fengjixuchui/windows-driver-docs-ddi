@@ -1,16 +1,13 @@
 ---
 UID: NS:d3dkmddi._DXGKARG_COLLECTDBGINFO
-title: _DXGKARG_COLLECTDBGINFO (d3dkmddi.h)
-description: The DXGKARG_COLLECTDBGINFO structure describes information for a debug report.
-old-location: display\dxgkarg_collectdbginfo.htm
-ms.assetid: f0dd72b5-9ab4-4511-b913-b0e456ea8950
-ms.date: 05/10/2018
+title: DXGKARG_COLLECTDBGINFO (d3dkmddi.h)
+description: Learn more about the DXGKARG_COLLECTDBGINFO structure.
+ms.date: 04/01/2024
 keywords: ["DXGKARG_COLLECTDBGINFO structure"]
-ms.keywords: DXGKARG_COLLECTDBGINFO, DXGKARG_COLLECTDBGINFO structure [Display Devices], DmStructs_c3c19a4c-8536-474b-bca4-8b5af32fc4c8.xml, VIDEO_ENGINE_TIMEOUT_DETECTED, VIDEO_TDR_TIMEOUT_DETECTED, _DXGKARG_COLLECTDBGINFO, d3dkmddi/DXGKARG_COLLECTDBGINFO, display.dxgkarg_collectdbginfo
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,48 +37,49 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_COLLECTDBGINFO
  - DXGKARG_COLLECTDBGINFO
 ---
 
-# _DXGKARG_COLLECTDBGINFO structure
-
+# DXGKARG_COLLECTDBGINFO structure
 
 ## -description
 
-The DXGKARG_COLLECTDBGINFO structure describes information for a debug report.
+The **DXGKARG_COLLECTDBGINFO** structure describes information for a debug report.
 
 ## -struct-fields
 
-### -field Reason
+### -field Reason [in]
 
-[in] The <a href="/windows-hardware/drivers/debugger/bug-check-code-reference2">bug-check code</a> for which to return debug information in the buffer that <b>pBuffer</b> points to. These are possible values:
+The [bug-check code](/windows-hardware/drivers/debugger/bug-check-code-reference2) for which to return debug information in the buffer that **pBuffer** points to. These are possible values:
 
-| **Value** | **Meaning** | 
-|:--|:--|
-| **VIDEO_TDR_TIMEOUT_DETECTED** 0x117|A [DxgkDdiResetEngine](./nc-d3dkmddi-dxgkddi_resetengine.md)  operation has reset a logical adapter. |
-| **VIDEO_ENGINE_TIMEOUT_DETECTED** 0x141|A [DxgkDdiResetEngine](./nc-d3dkmddi-dxgkddi_resetengine.md)  operation has reset one or more nodes within a physical adapter.
-Available starting in Windows 8. |
+| Value | Meaning |
+| ----- | ------- |
+| **VIDEO_TDR_TIMEOUT_DETECTED** 0x117|A [**DxgkDdiResetEngine**](nc-d3dkmddi-dxgkddi_resetengine.md) operation has reset a logical adapter. |
+| **VIDEO_ENGINE_TIMEOUT_DETECTED** 0x141|A [**DxgkDdiResetEngine**](nc-d3dkmddi-dxgkddi_resetengine.md) operation has reset one or more nodes within a physical adapter. Available starting in Windows 8. |
 
-### -field pBuffer
+### -field pBuffer [out]
 
-[out] A pointer to a buffer that receives the debug information that <b>Reason</b> specifies.
+A pointer to a buffer that receives the debug information for the reason that **Reason** specifies.
 
-### -field BufferSize
+### -field BufferSize [in]
 
-[in] The maximum size, in bytes, to copy to the buffer that <b>pBuffer</b> points to.
+The maximum size, in bytes, to copy to the buffer that **pBuffer** points to.
 
-### -field pExtension
+### -field pExtension [out]
 
-[out] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_collectdbginfo_ext">DXGKARG_COLLECTDBGINFO_EXT</a> structure that is allocated by the operating system and that the driver optionally populates with debug extension information.
+A pointer to an OS-allocated [**DXGKARG_COLLECTDBGINFO_EXT**](ns-d3dkmddi-_dxgkarg_collectdbginfo_ext.md) structure that the driver optionally populates with debug extension information.
+
+## -remarks
+
+See [**DxgkDdiCollectDbgInfo2**](nc-d3dkmddi-dxgkddi_collectdbginfo2.md) for extended TDR debug information.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_collectdbginfo_ext">DXGKARG_COLLECTDBGINFO_EXT</a>
+[**DXGKARG_COLLECTDBGINFO_EXT**](ns-d3dkmddi-_dxgkarg_collectdbginfo_ext.md)
 
+[**DxgkDdiCollectDbgInfo**](nc-d3dkmddi-dxgkddi_collectdbginfo.md)
 
+[**DxgkDdiCollectDbgInfo2**](nc-d3dkmddi-dxgkddi_collectdbginfo2.md)
 
-<a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_collectdbginfo">DxgkDdiCollectDbgInfo</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_resetengine">DxgkDdiResetEngine</a>
+[**DxgkDdiResetEngine**](nc-d3dkmddi-dxgkddi_resetengine.md)

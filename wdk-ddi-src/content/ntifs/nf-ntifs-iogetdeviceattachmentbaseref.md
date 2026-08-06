@@ -4,14 +4,13 @@ title: IoGetDeviceAttachmentBaseRef function (ntifs.h)
 description: The IoGetDeviceAttachmentBaseRef routine returns a pointer to the lowest-level device object in a file system or device driver stack.
 old-location: ifsk\iogetdeviceattachmentbaseref.htm
 tech.root: ifsk
-ms.assetid: e1d31fdd-de4f-4e57-a8e8-0468ab4242f8
 ms.date: 04/16/2018
 keywords: ["IoGetDeviceAttachmentBaseRef function"]
 ms.keywords: IoGetDeviceAttachmentBaseRef, IoGetDeviceAttachmentBaseRef routine [Installable File System Drivers], ifsk.iogetdeviceattachmentbaseref, ioref_ab9c898e-74be-48aa-9462-d78d0e34c435.xml, ntifs/IoGetDeviceAttachmentBaseRef
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
+req.target-min-winverclnt: Windows 2000 SP4 Update Rollup; Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,9 +49,9 @@ The <b>IoGetDeviceAttachmentBaseRef</b> routine returns a pointer to the lowest-
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 A pointer to a device object in the stack.
 
 ## -returns

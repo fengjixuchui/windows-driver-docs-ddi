@@ -4,7 +4,6 @@ title: StorPortQueryDepthSList function (storport.h)
 description: Retrieves the number of entries in a Storport managed singly linked list.
 old-location: storage\storportquerydepthslist.htm
 tech.root: storage
-ms.assetid: 5E1CE999-8173-49B6-8CF7-F3A5B193A230
 ms.date: 03/29/2018
 keywords: ["StorPortQueryDepthSList function"]
 ms.keywords: StorPortQueryDepthSList, StorPortQueryDepthSList routine [Storage Devices], storage.storportquerydepthslist, storport/StorPortQueryDepthSList
@@ -50,19 +49,19 @@ Retrieves the number of entries in a Storport managed singly linked list.
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param SListHead 
+### -param SListHead [in, out]
 
-[in, out]
+
 A pointer to an <b>STOR_SLIST_HEADER</b> structure that represents the head of a singly linked list. This structure is considered opaque and is for use by the Storport driver only.
 
-### -param Result 
+### -param Result [out]
 
-[out]
+
 A pointer to a <b>SHORT</b> value which receives the  list depth count.
 
 ## -returns

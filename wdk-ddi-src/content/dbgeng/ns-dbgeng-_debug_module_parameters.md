@@ -4,7 +4,6 @@ title: _DEBUG_MODULE_PARAMETERS (dbgeng.h)
 description: The DEBUG_MODULE_PARAMETERS structure contains most of the parameters for describing a module.
 old-location: debugger\debug_module_parameters.htm
 tech.root: debugger
-ms.assetid: 3f10997f-263f-4d1b-ab0a-d44201aaaf37
 ms.date: 05/03/2018
 keywords: ["DEBUG_MODULE_PARAMETERS structure"]
 ms.keywords: "*PDEBUG_MODULE_PARAMETERS, DEBUG_MODULE_PARAMETERS, DEBUG_MODULE_PARAMETERS structure [Windows Debugging], PDEBUG_MODULE_PARAMETERS, PDEBUG_MODULE_PARAMETERS structure pointer [Windows Debugging], Structures_6e7366d2-9f49-4b7e-a277-d788808e4c40.xml, _DEBUG_MODULE_PARAMETERS, dbgeng/DEBUG_MODULE_PARAMETERS, dbgeng/PDEBUG_MODULE_PARAMETERS, debugger.debug_module_parameters"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - DbgEng.h
 api_name:
+ - _DEBUG_MODULE_PARAMETERS
+ - PDEBUG_MODULE_PARAMETERS
  - DEBUG_MODULE_PARAMETERS
 ---
 
@@ -233,3 +234,4 @@ This structure is returned by <a href="/windows-hardware/drivers/ddi/dbgeng/nf-d
 To locate the different names for the module, use <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-getmodulenamestring">GetModuleNameString</a>.
 
 For more information about modules, see <a href="/windows-hardware/drivers/debugger/modules">Modules</a>.  For details about the different names for the module, see <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-getmodulenamestring">GetModuleNameString</a>.
+

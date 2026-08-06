@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_MAPHEAP
 title: PFND3D12DDI_MAPHEAP (d3d12umddi.h)
 description: A client driver implements PFND3D12DDI_MAPHEAP to map a heap.
-ms.assetid: 2187b018-e5d2-4a82-8232-ba9f1ae3a988
 ms.date: 08/21/2020
 keywords: ["PFND3D12DDI_MAPHEAP callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_MAPHEAP
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,17 +48,17 @@ A client driver implements **PFND3D12DDI_MAPHEAP** to map a heap.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in]
 
-[in] *hDisplayDevice*: Handle to the display device (graphics context).
+*hDisplayDevice*: Handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2 [in]
 
-[in] *hHeap*: Handle to a display device-managed heap that needs to be mapped.
+*hHeap*: Handle to a display device-managed heap that needs to be mapped.
 
-### -param Arg3
+### -param unnamedParam3 [out]
 
-[out] *ppData**: A pointer to the mapped heap data.
+*ppData**: A pointer to the mapped heap data.
 
 ## -returns
 

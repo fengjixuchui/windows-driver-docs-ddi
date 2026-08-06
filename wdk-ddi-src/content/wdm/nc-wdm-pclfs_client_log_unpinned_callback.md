@@ -4,7 +4,6 @@ title: PCLFS_CLIENT_LOG_UNPINNED_CALLBACK (wdm.h)
 description: The ClfsLogUnpinnedCallback function implements any actions that the client will take when a log that had previously been pinned becomes unpinned.
 old-location: kernel\clfslogunpinnedcallback.htm
 tech.root: kernel
-ms.assetid: f28a1ad6-4946-4d1e-b430-2cdee3dfd835
 ms.date: 04/30/2018
 keywords: ["PCLFS_CLIENT_LOG_UNPINNED_CALLBACK callback function"]
 ms.keywords: ClfsLogUnpinnedCallback, ClfsLogUnpinnedCallback callback function [Kernel-Mode Driver Architecture], Clfs_management_e82832a3-b4b9-48c7-a706-9d489a55f728.xml, PCLFS_CLIENT_LOG_UNPINNED_CALLBACK, PCLFS_CLIENT_LOG_UNPINNED_CALLBACK callback, kernel.clfslogunpinnedcallback, wdm/ClfsLogUnpinnedCallback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - ClfsLogUnpinnedCallback
+ - PCLFS_CLIENT_LOG_UNPINNED_CALLBACK
 ---
 
 # PCLFS_CLIENT_LOG_UNPINNED_CALLBACK callback function
@@ -50,14 +49,14 @@ The <i>ClfsLogUnpinnedCallback</i> function implements any actions that the clie
 
 ## -parameters
 
-### -param LogFile 
+### -param LogFile [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">LOG_FILE_OBJECT</a> structure that represents the CLFS log stream whose tail has become unpinned.
 
-### -param ClientData 
+### -param ClientData [in]
 
-[in]
+
 A pointer to client-supplied information. You specify this data in the <b>LogUnpinnedCallbackData</b> member of the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_clfs_mgmt_client_registration">CLFS_MGMT_CLIENT_REGISTRATION</a> structure.
 
 ## -remarks
@@ -77,3 +76,4 @@ The <i>ClfsLogGrowthCompleteCallback</i> function is called before the <i>ClfsLo
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsmgmthandlelogfilefull">ClfsMgmtHandleLogFileFull</a>
+

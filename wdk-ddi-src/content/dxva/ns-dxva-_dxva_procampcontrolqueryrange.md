@@ -4,7 +4,6 @@ title: _DXVA_ProcAmpControlQueryRange (dxva.h)
 description: The DXVA_ProcAmpControlQueryRange structure contains the minimum, maximum, step size, and default value for each ProcAmp property.
 old-location: display\dxva_procampcontrolqueryrange.htm
 tech.root: display
-ms.assetid: 934b69cd-f54d-4706-bcb6-8d9e25ea3367
 ms.date: 05/10/2018
 keywords: ["DXVA_ProcAmpControlQueryRange structure"]
 ms.keywords: "*LPDXVA_ProcAmpControlQueryRange, DXVA_ProcAmpControlQueryRange, DXVA_ProcAmpControlQueryRange structure [Display Devices], LPDXVA_ProcAmpControlQueryRange, LPDXVA_ProcAmpControlQueryRange structure pointer [Display Devices], _DXVA_ProcAmpControlQueryRange, display.dxva_procampcontrolqueryrange, dxva/DXVA_ProcAmpControlQueryRange, dxva/LPDXVA_ProcAmpControlQueryRange, dxvaref_5122c77d-0d7a-42a4-be26-f03993fb52db.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dxva.h
 api_name:
+ - _DXVA_ProcAmpControlQueryRange
+ - LPDXVA_ProcAmpControlQueryRange
  - DXVA_ProcAmpControlQueryRange
 ---
 
@@ -73,3 +74,4 @@ Specifies a <a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc"
 
 
 <a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videodesc">DXVA_VideoDesc</a>
+

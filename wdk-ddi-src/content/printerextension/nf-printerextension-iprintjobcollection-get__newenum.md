@@ -2,17 +2,15 @@
 UID: NF:printerextension.IPrintJobCollection.get__NewEnum
 title: IPrintJobCollection::get__NewEnum (printerextension.h)
 description: Gets a pointer to the enumerants of IPrintJobCollection objects.
-old-location: print\iprintjobcollection_newenum.htm
 tech.root: print
-ms.assetid: 2ABABB19-5F4F-418F-AC23-ED0C5DD2D3B0
-ms.date: 04/20/2018
+ms.date: 08/03/2022
 keywords: ["IPrintJobCollection::get__NewEnum"]
 ms.keywords: IPrintJobCollection interface [Print Devices],NewEnum property, IPrintJobCollection.NewEnum, IPrintJobCollection.get__NewEnum, IPrintJobCollection::NewEnum, IPrintJobCollection::get_NewEnum, IPrintJobCollection::get__NewEnum, NewEnum property [Print Devices], NewEnum property [Print Devices],IPrintJobCollection interface, get__NewEnum, print.iprintjobcollection_newenum, printerextension/IPrintJobCollection::NewEnum, printerextension/IPrintJobCollection::get_NewEnum
 req.header: printerextension.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Windows 8.1
-req.target-min-winversvr: Windows Server 2012 R2
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 
@@ -39,21 +37,25 @@ api_type:
 api_location:
  - Printerextension.h
 api_name:
- - IPrintJobCollection.NewEnum
- - IPrintJobCollection.get_NewEnum
+ - IPrintJobCollection::get__NewEnum
 ---
-
-# IPrintJobCollection::get__NewEnum
-
 
 ## -description
 
-Gets a pointer to the enumerants of <a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjobcollection">IPrintJobCollection</a> objects.
+Gets a pointer to the enumerants of [IPrintJobCollection](./nn-printerextension-iprintjobcollection.md) objects.
 
 This property is read-only.
 
 ## -parameters
 
+### -param ppUnk
+
+Defines the **IUnknown** parameter *ppUnk*.
+
+## -returns
+
+Returns an **HRESULT** value. If the property call was not successful, it returns the appropriate **HRESULT** error code.
+
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjobcollection">IPrintJobCollection</a>
+[IPrintJobCollection](./nn-printerextension-iprintjobcollection.md)

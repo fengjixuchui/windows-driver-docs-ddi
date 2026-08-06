@@ -4,7 +4,6 @@ title: KsReferenceBusObject function (ks.h)
 description: References the bus Physical device object.
 old-location: stream\ksreferencebusobject.htm
 tech.root: stream
-ms.assetid: 96297c0a-a3ba-4f16-befb-ee6a55d2fb25
 ms.date: 04/23/2018
 keywords: ["KsReferenceBusObject function"]
 ms.keywords: KsReferenceBusObject, KsReferenceBusObject function [Streaming Media Devices], ks/KsReferenceBusObject, ksfunc_35e7b40f-3acf-4e86-8594-3c50912dca42.xml, stream.ksreferencebusobject
@@ -51,9 +50,9 @@ References the bus Physical device object.
 
 ## -parameters
 
-### -param Header 
+### -param Header [in]
 
-[in]
+
 Points to a header previously allocated by <b>KsAllocateDeviceHeader</b> that also contains the PnP device stack object.
 
 ## -returns

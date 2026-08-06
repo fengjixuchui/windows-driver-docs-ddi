@@ -4,7 +4,6 @@ title: SRIOV_QUERY_LUID_VF (pcivirt.h)
 description: Gets the PCI Express SR-IOV Virtual Function (VF) given a unique identifier.
 old-location: pci\sriov_query_luid_vf.htm
 tech.root: PCI
-ms.assetid: 00dddc92-08d1-4eaa-b3de-5e96c7a6d3e0
 ms.date: 02/24/2018
 keywords: ["SRIOV_QUERY_LUID_VF callback"]
 ms.keywords: "*PSRIOV_QUERY_LUID_VF, *PSRIOV_QUERY_LUID_VF callback function pointer [Buses], PCI.sriov_query_luid_vf, SRIOV_QUERY_LUID_VF, SriovQueryLuidVf, SriovQueryLuidVf callback function [Buses], pcivirt/SriovQueryLuidVf"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - pcivirt.h
 api_name:
- - PSRIOV_QUERY_LUID_VF
+ - SRIOV_QUERY_LUID_VF
 ---
 
 # SRIOV_QUERY_LUID_VF callback
@@ -50,20 +49,20 @@ Gets the PCI Express SR-IOV Virtual Function (VF) given a unique identifier.
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to a driver-defined context.
 
-### -param Luid 
+### -param Luid [in]
 
-[in]
+
 The local unique
 identifier of the VF whose index is being retrieved.
 
-### -param VfIndex 
+### -param VfIndex [out]
 
-[out]
+
 A zero-based index of the VF that is being queried.
 
 ## -returns
@@ -90,3 +89,4 @@ typedef SRIOV_QUERY_LUID_VF *PSRIOV_QUERY_LUID_VF;
 This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to get the identifier of a specific virtual function.
 
 The PF driver registers its implementation by setting the <b>QueryLuidVf</b> member of the <a href="/windows-hardware/drivers/ddi/pcivirt/ns-pcivirt-_sriov_device_interface_standard_2">SRIOV_DEVICE_INTERFACE_STANDARD_2</a>, configuring a <a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>.
+

@@ -4,7 +4,6 @@ title: PFND3DDDI_CREATEOVERLAYCB (d3dumddi.h)
 description: The pfnCreateOverlayCb function creates a kernel-mode overlay object and calls the display miniport driver to display the overlay.
 old-location: display\pfncreateoverlaycb.htm
 tech.root: display
-ms.assetid: fbd5b3af-0963-4e41-8be3-41e3e1ecf8bc
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CREATEOVERLAYCB callback function"]
 ms.keywords: D3Druntime_Functions_d30fc7c1-55b2-4444-9ac1-34baabc073f6.xml, PFND3DDDI_CREATEOVERLAYCB, PFND3DDDI_CREATEOVERLAYCB callback, d3dumddi/pfnCreateOverlayCb, display.pfncreateoverlaycb, pfnCreateOverlayCb, pfnCreateOverlayCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnCreateOverlayCb
-product:
- - Windows
+ - PFND3DDDI_CREATEOVERLAYCB
 ---
 
 # PFND3DDDI_CREATEOVERLAYCB callback function
@@ -56,7 +53,7 @@ The <b>pfnCreateOverlayCb</b> function creates a kernel-mode overlay object and 
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -159,3 +156,4 @@ HRESULT CD3DContext::CreateOverlay(D3DDDIARG_CREATEOVERLAY* pCreateOverlay) {
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_updateoverlaycb">pfnUpdateOverlayCb</a>
+

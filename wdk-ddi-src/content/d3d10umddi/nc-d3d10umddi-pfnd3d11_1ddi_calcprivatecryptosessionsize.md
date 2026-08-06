@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_CALCPRIVATECRYPTOSESSIONSIZE
 title: PFND3D11_1DDI_CALCPRIVATECRYPTOSESSIONSIZE (d3d10umddi.h)
 description: Returns the number of bytes that the driver requires to store private data for the cryptographic session state.
 old-location: display\calcprivatecryptosessionsize.htm
-ms.assetid: 9ca0fdd5-a724-4d5d-81b2-8885b2aed1ca
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_CALCPRIVATECRYPTOSESSIONSIZE callback function"]
 ms.keywords: CalcPrivateCryptoSessionSize, CalcPrivateCryptoSessionSize callback function [Display Devices], PFND3D11_1DDI_CALCPRIVATECRYPTOSESSIONSIZE, PFND3D11_1DDI_CALCPRIVATECRYPTOSESSIONSIZE callback, d3d10umddi/CalcPrivateCryptoSessionSize, display.calcprivatecryptosessionsize
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - CalcPrivateCryptoSessionSize
-product:
- - Windows
+ - PFND3D11_1DDI_CALCPRIVATECRYPTOSESSIONSIZE
 ---
 
 # PFND3D11_1DDI_CALCPRIVATECRYPTOSESSIONSIZE callback function
@@ -73,3 +70,4 @@ This function is not expected to fail.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddiarg_createcryptosession">D3D11_1DDIARG_CREATECRYPTOSESSION</a>
+

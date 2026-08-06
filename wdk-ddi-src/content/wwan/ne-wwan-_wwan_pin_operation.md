@@ -4,7 +4,6 @@ title: _WWAN_PIN_OPERATION (wwan.h)
 description: The WWAN_PIN_OPERATION enumeration lists the different Personal Identification Number (PIN) operations that are supported by the MB device.
 old-location: netvista\wwan_pin_operation.htm
 tech.root: netvista
-ms.assetid: 1b21b4b4-a35d-47c4-9cd6-e31e2dfbe59f
 ms.date: 05/02/2018
 keywords: ["WWAN_PIN_OPERATION enumeration"]
 ms.keywords: "*PWWAN_PIN_OPERATION, PWWAN_PIN_OPERATION, PWWAN_PIN_OPERATION enumeration pointer [Network Drivers Starting with Windows Vista], WWAN_PIN_OPERATION, WWAN_PIN_OPERATION enumeration [Network Drivers Starting with Windows Vista], WwanPinOperationChange, WwanPinOperationDisable, WwanPinOperationEnable, WwanPinOperationEnter, WwanPinOperationMax, WwanRef_06404d11-22d3-4b07-9c6f-60771ecfc154.xml, _WWAN_PIN_OPERATION, netvista.wwan_pin_operation, wwan/PWWAN_PIN_OPERATION, wwan/WWAN_PIN_OPERATION, wwan/WwanPinOperationChange, wwan/WwanPinOperationDisable, wwan/WwanPinOperationEnable, wwan/WwanPinOperationEnter, wwan/WwanPinOperationMax"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_PIN_OPERATION
+ - PWWAN_PIN_OPERATION
  - WWAN_PIN_OPERATION
 ---
 
@@ -85,3 +86,4 @@ If a PIN disable operation for a given PIN type is tried when that PIN type is l
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_pin_action">WWAN_PIN_ACTION</a>
+

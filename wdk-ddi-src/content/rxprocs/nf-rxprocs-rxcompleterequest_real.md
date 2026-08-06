@@ -4,7 +4,6 @@ title: RxCompleteRequest_Real function (rxprocs.h)
 description: RxCompleteRequest_Real completes the IRP request associated with an RX_CONTEXT structure.
 old-location: ifsk\rxcompleterequest_real.htm
 tech.root: ifsk
-ms.assetid: 54d8fab2-bde3-4b8a-8542-075c5e30afbb
 ms.date: 04/16/2018
 keywords: ["RxCompleteRequest_Real function"]
 ms.keywords: RxCompleteRequest_Real, RxCompleteRequest_Real function [Installable File System Drivers], ifsk.rxcompleterequest_real, rxprocs/RxCompleteRequest_Real, rxref_9d779281-7e95-45b7-a633-62a4280a6bea.xml
@@ -50,19 +49,19 @@ api_name:
 
 ## -parameters
 
-### -param RxContext 
+### -param RxContext [in]
 
-[in]
+
 A pointer to the RX_CONTEXT structure associated with the IRP to complete.
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 A pointer to the IRP to complete.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 The status value to return when the IRP request is complete. This is the value that will be stored in the <b>IoStatus.Status</b> member of the associated IRP on completion.
 
 ## -remarks

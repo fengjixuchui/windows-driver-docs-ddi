@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILUICCAPPINFO
 title: RILUICCAPPINFO (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILUICCAPPINFO structure for internal use only. Don't use the RILUICCAPPINFO structure in your code."
 old-location: netvista\riluiccappinfo.htm
 tech.root: netvista
-ms.assetid: b3a688fe-928c-458e-ac47-59a9ae61bc5e
 ms.date: 05/02/2018
 keywords: ["RILUICCAPPINFO structure"]
 ms.keywords: "*LPRILUICCAPPINFO, RILUICCAPPINFO, RILUICCAPPINFO structure [Network Drivers Starting with Windows Vista], netvista.riluiccappinfo, ntddrilapitypes/RILUICCAPPINFO"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILUICCAPPINFO
+ - LPRILUICCAPPINFO
 ---
 
 # RILUICCAPPINFO structure (ntddrilapitypes.h)

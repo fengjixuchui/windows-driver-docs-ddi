@@ -4,7 +4,6 @@ title: WdfUsbTargetPipeIsOutEndpoint function (wdfusb.h)
 description: The WdfUsbTargetPipeIsOutEndpoint method determines whether a specified USB pipe is connected to an output endpoint.
 old-location: wdf\wdfusbtargetpipeisoutendpoint.htm
 tech.root: wdf
-ms.assetid: 803d282b-f6eb-4cd3-91b3-899f983c9dc5
 ms.date: 02/26/2018
 keywords: ["WdfUsbTargetPipeIsOutEndpoint function"]
 ms.keywords: DFUsbRef_19c3e865-4f6c-4950-93af-46a8b97ec6b9.xml, WdfUsbTargetPipeIsOutEndpoint, WdfUsbTargetPipeIsOutEndpoint method, kmdf.wdfusbtargetpipeisoutendpoint, wdf.wdfusbtargetpipeisoutendpoint, wdfusb/WdfUsbTargetPipeIsOutEndpoint
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,9 +54,9 @@ The <b>WdfUsbTargetPipeIsOutEndpoint</b> method determines whether a specified U
 
 ## -parameters
 
-### -param Pipe 
+### -param Pipe [in]
 
-[in]
+
 A handle to a framework pipe object that represents a bulk pipe or interrupt pipe and was obtained by calling <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbinterfacegetconfiguredpipe">WdfUsbInterfaceGetConfiguredPipe</a>.
 
 ## -returns

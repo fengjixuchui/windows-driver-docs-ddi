@@ -4,7 +4,6 @@ title: _D3DHAL_DP2INDEXEDTRIANGLELIST2 (d3dhal.h)
 description: One or more D3DHAL_DP2INDEXEDTRIANGLELIST2 structures are parsed from the command buffer by the D3dDrawPrimitives2 callback when the D3DHAL_DP2COMMAND structure's bCommand member is set to D3DDP2OP_INDEXEDTRIANGLELIST2, and are used to render a sequence of unconnected triangles using vertex indices.
 old-location: display\d3dhal_dp2indexedtrianglelist2.htm
 tech.root: display
-ms.assetid: 04d11aef-2766-42d6-abda-f0b25d53ef8f
 ms.date: 05/10/2018
 keywords: ["D3DHAL_DP2INDEXEDTRIANGLELIST2 structure"]
 ms.keywords: "*LPD3DHAL_DP2INDEXEDTRIANGLELIST2, D3DHAL_DP2INDEXEDTRIANGLELIST2, D3DHAL_DP2INDEXEDTRIANGLELIST2 structure [Display Devices], LPD3DHAL_DP2INDEXEDTRIANGLELIST2, LPD3DHAL_DP2INDEXEDTRIANGLELIST2 structure pointer [Display Devices], _D3DHAL_DP2INDEXEDTRIANGLELIST2, d3dhal/D3DHAL_DP2INDEXEDTRIANGLELIST2, d3dhal/LPD3DHAL_DP2INDEXEDTRIANGLELIST2, d3dstrct_7f47a0e0-7be5-46bf-89c3-fa69ee6e6230.xml, display.d3dhal_dp2indexedtrianglelist2"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - d3dhal.h
 api_name:
+ - _D3DHAL_DP2INDEXEDTRIANGLELIST2
+ - LPD3DHAL_DP2INDEXEDTRIANGLELIST2
  - D3DHAL_DP2INDEXEDTRIANGLELIST2
 ---
 
@@ -91,3 +92,4 @@ D3DDP2OP_INDEXEDTRIANGLELIST2
 
 
 <a href="/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb">D3dDrawPrimitives2</a>
+

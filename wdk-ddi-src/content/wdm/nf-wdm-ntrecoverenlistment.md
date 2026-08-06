@@ -4,7 +4,6 @@ title: NtRecoverEnlistment function (wdm.h)
 description: The ZwRecoverEnlistment routine initiates a recovery operation for the transaction that is associated with a specified enlistment.
 old-location: kernel\zwrecoverenlistment.htm
 tech.root: kernel
-ms.assetid: 0f34d2d1-bb3a-4529-9ced-d9bed998c4ce
 ms.date: 04/30/2018
 keywords: ["NtRecoverEnlistment function"]
 ms.keywords: NtRecoverEnlistment, ZwRecoverEnlistment, ZwRecoverEnlistment routine [Kernel-Mode Driver Architecture], kernel.zwrecoverenlistment, ktm_ref_0a6564fb-c6d1-4b4b-a278-a1d78395c1b4.xml, wdm/NtRecoverEnlistment, wdm/ZwRecoverEnlistment
@@ -38,7 +37,6 @@ api_type:
 api_location:
  - NtosKrnl.exe
 api_name:
- - ZwRecoverEnlistment
  - NtRecoverEnlistment
 ---
 
@@ -51,14 +49,14 @@ The <b>ZwRecoverEnlistment</b> routine initiates a recovery operation for the tr
 
 ## -parameters
 
-### -param EnlistmentHandle 
+### -param EnlistmentHandle [in]
 
-[in]
+
 A handle to an <a href="/windows-hardware/drivers/kernel/enlistment-objects">enlistment object</a> that was obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment">ZwCreateEnlistment</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a>. The handle must have ENLISTMENT_RECOVER access to the object.
 
-### -param EnlistmentKey 
+### -param EnlistmentKey [in, optional]
 
-[in, optional]
+
 A pointer to the enlistment key value that the resource manager previously specified as the <i>EnlistmentKey</i> parameter to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment">ZwCreateEnlistment</a>. This parameter is optional and can be <b>NULL</b> if the resource manager did not provide an enlistment key when it called <b>ZwCreateEnlistment</b>.
 
 ## -returns
@@ -163,3 +161,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a>
+

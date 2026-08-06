@@ -4,7 +4,6 @@ title: IUnregisterPhysicalConnection (portcls.h)
 description: The IUnregisterPhysicalConnection interface implements three methods to remove a registered physical connection.
 old-location: audio\iunregisterphysicalconnection.htm
 tech.root: audio
-ms.assetid: 876a457e-8774-4c51-bd23-6451b3e3a7b7
 ms.date: 05/08/2018
 keywords: ["IUnregisterPhysicalConnection interface"]
 ms.keywords: IUnregisterPhysicalConnection, IUnregisterPhysicalConnection interface [Audio Devices], IUnregisterPhysicalConnection interface [Audio Devices],described, audio.iunregisterphysicalconnection, audmp-routines_b26d005c-70d9-4df0-80ae-446907f22fd4.xml, portcls/IUnregisterPhysicalConnection
@@ -78,7 +77,5 @@ When deleting a subdevice from an adapter's topology, the driver must unregister
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IUnregisterPhysicalConnection</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IUnregisterPhysicalConnection</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IUnregisterPhysicalConnection</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IUnregisterPhysicalConnection</b> also has these types of members:
+

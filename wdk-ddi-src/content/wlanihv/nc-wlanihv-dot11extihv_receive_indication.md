@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_RECEIVE_INDICATION
 title: DOT11EXTIHV_RECEIVE_INDICATION (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_RECEIVE_INDICATION callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvreceiveindication.htm
 tech.root: netvista
-ms.assetid: b4d5c33e-563d-459c-90da-a2912c82d1cd
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_RECEIVE_INDICATION callback"]
 ms.keywords: DOT11EXTIHV_RECEIVE_INDICATION, Dot11ExtIhvReceiveIndication, Dot11ExtIhvReceiveIndication callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_f3bf018e-2849-4abc-af5b-4edb3438339f.xml, netvista.dot11extihvreceiveindication, wlanihv/Dot11ExtIhvReceiveIndication
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_RECEIVE_INDICATION
  - wlanihv/DOT11EXTIHV_RECEIVE_INDICATION
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtIhvReceiveIndication
+ - DOT11EXTIHV_RECEIVE_INDICATION
 ---
 
 # DOT11EXTIHV_RECEIVE_INDICATION callback
@@ -53,30 +51,30 @@ api_name:
 
 ## -parameters
 
-### -param hIhvExtAdapter 
+### -param hIhvExtAdapter [in, optional]
 
-[in, optional]
+
 The handle used by the IHV Extensions DLL to reference the WLAN adapter. This handle value was
      specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param indicationType 
+### -param indicationType [in]
 
-[in]
+
 The
      <a href="..\wlanihv\ne-wlanihv-_dot11ext_ihv_indication_type.md">
      DOT11EXT_IHV_INDICATION_TYPE</a> indication type.
 
-### -param uBufferLength 
+### -param uBufferLength [in]
 
-[in]
+
 The length, in bytes, of the data within the buffer that is referenced by the
      <i>pvBuffer</i> parameter.
 
-### -param pvBuffer 
+### -param pvBuffer [in, optional]
 
-[in, optional]
+
 The pointer to a buffer, allocated by the operating system, which contains the notification data.
      The IHV is responsible for defining the format of the notification data.
 
@@ -120,3 +118,4 @@ When the Native 802.11 miniport driver, which manages the WLAN adapter, makes an
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+

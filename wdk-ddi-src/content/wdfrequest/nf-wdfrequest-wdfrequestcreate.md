@@ -4,7 +4,6 @@ title: WdfRequestCreate function (wdfrequest.h)
 description: The WdfRequestCreate method creates an empty framework request object.
 old-location: wdf\wdfrequestcreate.htm
 tech.root: wdf
-ms.assetid: 94329e5a-9efb-4e88-92a6-457098d1245f
 ms.date: 02/26/2018
 keywords: ["WdfRequestCreate function"]
 ms.keywords: DFRequestObjectRef_9c240f29-fd5e-4d6e-9a54-31abb05507c5.xml, WdfRequestCreate, WdfRequestCreate method, kmdf.wdfrequestcreate, wdf.wdfrequestcreate, wdfrequest/WdfRequestCreate
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,19 +54,19 @@ The <b>WdfRequestCreate</b> method creates an empty framework request object.
 
 ## -parameters
 
-### -param RequestAttributes 
+### -param RequestAttributes [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the request object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param IoTarget 
+### -param IoTarget [in, optional]
 
-[in, optional]
+
 A handle to a framework I/O target object. This parameter is optional and can be <b>NULL</b>. If non-<b>NULL</b>, <b>WdfRequestCreate</b> verifies that the driver can eventually send the request to the specified I/O target.
 
-### -param Request 
+### -param Request [out]
 
-[out]
+
 A pointer to a location that receives a handle to a framework request object.
 
 ## -returns

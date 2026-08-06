@@ -4,7 +4,6 @@ title: _SERCX_ACTIVITY (sercx.h)
 description: The SERCX_ACTIVITY structure contains a summary of work items that are ready for the serial controller driver to process.
 old-location: serports\sercx_activity.htm
 tech.root: serports
-ms.assetid: 743AA179-3FD1-4528-9A78-5ECC53642D55
 ms.date: 04/23/2018
 keywords: ["SERCX_ACTIVITY structure"]
 ms.keywords: "*PSERCX_ACTIVITY, 1/PSERCX_ACTIVITY, 1/SERCX_ACTIVITY, PSERCX_ACTIVITY, PSERCX_ACTIVITY structure pointer [Serial Ports], SERCX_ACTIVITY, SERCX_ACTIVITY structure [Serial Ports], _SERCX_ACTIVITY, serports.sercx_activity"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 1.0\Sercx.h
 api_name:
+ - _SERCX_ACTIVITY
+ - PSERCX_ACTIVITY
  - SERCX_ACTIVITY
 ---
 
@@ -93,3 +94,4 @@ Typically, <b>SerCxGetActivity</b> is called from the main loop of the transmit/
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercxprogresstransmit">SerCxProgressTransmit</a>
+

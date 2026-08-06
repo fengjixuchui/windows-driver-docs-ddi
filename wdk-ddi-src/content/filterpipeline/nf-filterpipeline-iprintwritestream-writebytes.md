@@ -4,7 +4,6 @@ title: IPrintWriteStream::WriteBytes (filterpipeline.h)
 description: The WriteBytes method writes a specified number of bytes to a stream.
 old-location: print\iprintwritestream_writebytes.htm
 tech.root: print
-ms.assetid: d47c836e-a291-4cc2-9688-82526f8bfb8b
 ms.date: 04/20/2018
 keywords: ["IPrintWriteStream::WriteBytes"]
 ms.keywords: IPrintWriteStream interface [Print Devices],WriteBytes method, IPrintWriteStream.WriteBytes, IPrintWriteStream::WriteBytes, WriteBytes, WriteBytes method [Print Devices], WriteBytes method [Print Devices],IPrintWriteStream interface, filterpipeline/IPrintWriteStream::WriteBytes, filterpipeline_168a03b1-8fdc-4a98-9a5f-5c706fcd401b.xml, print.iprintwritestream_writebytes
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - filterpipeline.h
 api_name:
- - IPrintWriteStream.WriteBytes
+ - IPrintWriteStream::WriteBytes
 ---
 
 # IPrintWriteStream::WriteBytes
@@ -50,19 +49,19 @@ The <code>WriteBytes</code> method writes a specified number of bytes to a strea
 
 ## -parameters
 
-### -param pvBuffer 
+### -param pvBuffer [in]
 
-[in]
+
 A pointer to the buffer that the bytes will be written from.
 
-### -param cbBuffer 
+### -param cbBuffer [in]
 
-[in]
+
 The size of the buffer to be read from.
 
-### -param pcbWritten 
+### -param pcbWritten [out]
 
-[out]
+
 A pointer to the number of bytes actually written.
 
 ## -returns

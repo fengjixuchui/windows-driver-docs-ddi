@@ -4,7 +4,6 @@ title: PFND3DDDI_CREATEOVERLAY (d3dumddi.h)
 description: The CreateOverlay function allocates overlay hardware and makes the overlay visible.
 old-location: display\createoverlay.htm
 tech.root: display
-ms.assetid: 761377ff-95a6-426b-8372-3f347870f9c4
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CREATEOVERLAY callback function"]
 ms.keywords: CreateOverlay, CreateOverlay callback function [Display Devices], PFND3DDDI_CREATEOVERLAY, PFND3DDDI_CREATEOVERLAY callback, UserModeDisplayDriver_Functions_8418bf74-3398-4913-9002-2f0b2a0941fb.xml, d3dumddi/CreateOverlay, display.createoverlay
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - CreateOverlay
-product:
- - Windows
+ - PFND3DDDI_CREATEOVERLAY
 ---
 
 # PFND3DDDI_CREATEOVERLAY callback function
@@ -56,7 +53,7 @@ The <b>CreateOverlay</b> function allocates overlay hardware and makes the overl
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -85,3 +82,4 @@ Overlays are independent from the resources that are displayed by using the over
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

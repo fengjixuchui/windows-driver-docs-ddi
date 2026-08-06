@@ -4,7 +4,6 @@ title: PCANCEL_ADAPTER_CHANNEL (wdm.h)
 description: The CancelAdapterChannel routine tries to cancel a pending request to allocate a DMA channel.
 old-location: kernel\canceladapterchannel.htm
 tech.root: kernel
-ms.assetid: 3E510E2D-AC9B-4F00-B7FD-A67B1F3FEBA7
 ms.date: 04/30/2018
 keywords: ["PCANCEL_ADAPTER_CHANNEL callback function"]
 ms.keywords: CancelAdapterChannel, CancelAdapterChannel callback function [Kernel-Mode Driver Architecture], PCANCEL_ADAPTER_CHANNEL, PCANCEL_ADAPTER_CHANNEL callback, kernel.canceladapterchannel, wdm/CancelAdapterChannel
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - CancelAdapterChannel
+ - PCANCEL_ADAPTER_CHANNEL
 ---
 
 # PCANCEL_ADAPTER_CHANNEL callback function
@@ -50,19 +49,19 @@ The <b>CancelAdapterChannel</b> routine tries to cancel a pending request to  al
 
 ## -parameters
 
-### -param DmaAdapter 
+### -param DmaAdapter [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_adapter">DMA_ADAPTER</a> structure. This structure is the adapter object that is waiting for the pending resource allocation request to be granted. The caller obtained this pointer from a previous call to the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter">IoGetDmaAdapter</a> routine, and the caller passed this pointer to the <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pallocate_adapter_channel_ex">AllocateAdapterChannelEx</a>, <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pget_scatter_gather_list_ex">GetScatterGatherListEx</a>, or <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pbuild_scatter_gather_list_ex">BuildScatterGatherListEx</a> call that requested the resource allocation.
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure. This structure is the physical device object (PDO) that represents the target device for the DMA operation for which the DMA channel was requested.
 
-### -param DmaTransferContext 
+### -param DmaTransferContext [in]
 
-[in]
+
 A pointer to a DMA transfer context. This parameter value must be the same DMA transfer context that was passed to the <b>AllocateAdapterChannelEx</b>, <b>GetScatterGatherListEx</b>, or <b>BuildScatterGatherListEx</b> call that requested the adapter channel allocation.
 
 ## -returns
@@ -136,3 +135,4 @@ Similarly, if a driver calls <b>GetScatterGatherListEx</b> or <b>BuildScatterGat
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter">IoGetDmaAdapter</a>
+

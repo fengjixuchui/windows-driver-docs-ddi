@@ -1,10 +1,9 @@
 ---
 UID: NS:wdfcompaniontarget._WDF_TASK_SEND_OPTIONS
 title: _WDF_TASK_SEND_OPTIONS (wdfcompaniontarget.h)
-description: For internal use only.
+description: This WDF_TASK_SEND_OPTIONS article is for internal use only.
 old-location: wdf\wdf_task_send_options.htm
 tech.root: wdf
-ms.assetid: cb2fd11c-c6a5-4499-a340-f96ffcfbbe0f
 ms.date: 02/26/2018
 keywords: ["WDF_TASK_SEND_OPTIONS structure"]
 ms.keywords: "*PWDF_TASK_SEND_OPTIONS, PWDF_TASK_SEND_OPTIONS, PWDF_TASK_SEND_OPTIONS structure pointer, WDF_TASK_SEND_OPTIONS, WDF_TASK_SEND_OPTIONS structure, _WDF_TASK_SEND_OPTIONS, wdf.wdf_task_send_options, wdfcompaniontarget/PWDF_TASK_SEND_OPTIONS, wdfcompaniontarget/WDF_TASK_SEND_OPTIONS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdfcompaniontarget.h
 api_name:
+ - _WDF_TASK_SEND_OPTIONS
+ - PWDF_TASK_SEND_OPTIONS
  - WDF_TASK_SEND_OPTIONS
 ---
 

@@ -4,7 +4,6 @@ title: IDebugSymbols3 (dbgeng.h)
 description: IDebugSymbols3 interface
 old-location: debugger\idebugsymbols3.htm
 tech.root: debugger
-ms.assetid: 3fce9384-93f3-4d81-b6ae-bda7a94da24a
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3 interface"]
 ms.keywords: IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], IDebugSymbols3 interface [Windows Debugging],described, dbgeng/IDebugSymbols3, debugger.idebugsymbols3
@@ -39,16 +38,6 @@ api_location:
  - dbgeng.h
 api_name:
  - IDebugSymbols3
- - IDebugSymbols3.IsManagedModule
- - IDebugSymbols3.SetScopeFromJitDebugInfo
- - IDebugSymbols3.GetSymbolEntryByToken
- - IDebugSymbols3.GetSymbolEntryOffsetRegions
- - IDebugSymbols3.GetSymbolEntryBySymbolEntry
- - IDebugSymbols3.GetSourceEntriesByOffset
- - IDebugSymbols3.GetSourceEntryString
- - IDebugSymbols3.GetSourceEntryStringWide
- - IDebugSymbols3.GetSourceEntryOffsetRegions
- - IDebugSymbols3.GetSourceEntryBySourceEntry
 ---
 
 # IDebugSymbols3 interface
@@ -58,10 +47,8 @@ api_name:
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugSymbols3</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols2">IDebugSymbols2</a>. <b>IDebugSymbols3</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IDebugSymbols3</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols2">IDebugSymbols2</a>. <b>IDebugSymbols3</b> also has these types of members:
+
 
 ## -see-also
 
@@ -70,3 +57,4 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugSymbols3</b> interface 
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols2">IDebugSymbols2</a>
+

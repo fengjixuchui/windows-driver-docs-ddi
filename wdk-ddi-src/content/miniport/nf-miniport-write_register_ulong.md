@@ -1,10 +1,9 @@
 ---
 UID: NF:miniport.WRITE_REGISTER_ULONG
 title: WRITE_REGISTER_ULONG function (miniport.h)
-description: The WRITE_REGISTER_ULONG routine writes a ULONG value to the specified address.
+description: The WRITE_REGISTER_ULONG function (miniport.h) writes a ULONG value to the specified register address in resident, mapped device memory.
 old-location: kernel\write_register_ulong.htm
 tech.root: kernel
-ms.assetid: d1f3d510-5b2c-4956-b9e0-cd26b2d818a9
 ms.date: 04/30/2018
 keywords: ["WRITE_REGISTER_ULONG function"]
 ms.keywords: WRITE_REGISTER_ULONG, WRITE_REGISTER_ULONG routine [Kernel-Mode Driver Architecture], k103_af58a3ec-4102-4a89-9c58-e56f99d793d0.xml, kernel.write_register_ulong, wdm/WRITE_REGISTER_ULONG
@@ -50,12 +49,12 @@ The <b>WRITE_REGISTER_ULONG</b> routine writes a ULONG value to the specified ad
 
 ## -parameters
 
-#### - Register [in]
+### -param Register [in]
 
 Pointer to the register which must be a mapped range in memory space.
 
 
-#### - Value [in]
+### -param Value [in]
 
 Specifies a ULONG value to be written to the register.
 

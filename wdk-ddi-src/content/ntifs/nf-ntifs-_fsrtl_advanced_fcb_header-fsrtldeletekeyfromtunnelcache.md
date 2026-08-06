@@ -4,14 +4,13 @@ title: FsRtlDeleteKeyFromTunnelCache function (ntifs.h)
 description: The FsRtlDeleteKeyFromTunnelCache routine deletes any tunnel cache entries for files in a directory that is being deleted.
 old-location: ifsk\fsrtldeletekeyfromtunnelcache.htm
 tech.root: ifsk
-ms.assetid: 01f0d1ab-7c7f-4ee2-89f0-c48b257bafbb
 ms.date: 04/16/2018
 keywords: ["FsRtlDeleteKeyFromTunnelCache function"]
 ms.keywords: FsRtlDeleteKeyFromTunnelCache, FsRtlDeleteKeyFromTunnelCache routine [Installable File System Drivers], fsrtlref_cbb2d1c7-d4c5-4fe0-9e35-d09dac0e7eff.xml, ifsk.fsrtldeletekeyfromtunnelcache, ntifs/FsRtlDeleteKeyFromTunnelCache
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later versions of Windows operating systems.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -53,9 +52,9 @@ The <b>FsRtlDeleteKeyFromTunnelCache</b> routine deletes any tunnel cache entrie
 
 ## -parameters
 
-### -param Cache 
+### -param Cache [in]
 
-[in]
+
 A pointer to a tunnel cache that was initialized by <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializetunnelcache">FsRtlInitializeTunnelCache</a>.
 
 ### -param DirectoryKey

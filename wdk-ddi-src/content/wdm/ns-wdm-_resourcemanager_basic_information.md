@@ -4,7 +4,6 @@ title: _RESOURCEMANAGER_BASIC_INFORMATION (wdm.h)
 description: The RESOURCEMANAGER_BASIC INFORMATION structure contains information about a resource manager object.
 old-location: kernel\resourcemanager_basic_information.htm
 tech.root: kernel
-ms.assetid: b5295760-7f0e-4973-9ce3-4aa35ea5211b
 ms.date: 04/30/2018
 keywords: ["RESOURCEMANAGER_BASIC_INFORMATION structure"]
 ms.keywords: "*PRESOURCEMANAGER_BASIC_INFORMATION, PRESOURCEMANAGER_BASIC_INFORMATION, PRESOURCEMANAGER_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], RESOURCEMANAGER_BASIC_INFORMATION, RESOURCEMANAGER_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], _RESOURCEMANAGER_BASIC_INFORMATION, kernel.resourcemanager_basic_information, ktm_ref_bcc9f19b-2cd4-45da-b5df-1f28e832d48e.xml, wdm/PRESOURCEMANAGER_BASIC_INFORMATION, wdm/RESOURCEMANAGER_BASIC_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _RESOURCEMANAGER_BASIC_INFORMATION
+ - PRESOURCEMANAGER_BASIC_INFORMATION
  - RESOURCEMANAGER_BASIC_INFORMATION
 ---
 
@@ -79,3 +80,4 @@ The resource manager's description string, which the <b>Description</b> member r
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntqueryinformationresourcemanager">ZwQueryInformationResourceManager</a>
+

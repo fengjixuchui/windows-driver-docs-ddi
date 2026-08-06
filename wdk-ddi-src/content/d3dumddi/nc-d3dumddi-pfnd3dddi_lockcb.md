@@ -4,7 +4,6 @@ title: PFND3DDDI_LOCKCB (d3dumddi.h)
 description: The pfnLockCb function locks an allocation and obtains a pointer to the allocation from the display miniport driver or video memory manager.
 old-location: display\pfnlockcb.htm
 tech.root: display
-ms.assetid: 69022797-432a-410b-8cbf-e1ef7111e7ea
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_LOCKCB callback function"]
 ms.keywords: D3Druntime_Functions_25ad9d8e-34e0-4b1e-9a3a-4d170322fbca.xml, PFND3DDDI_LOCKCB, PFND3DDDI_LOCKCB callback, d3dumddi/pfnLockCb, display.pfnlockcb, pfnLockCb, pfnLockCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnLockCb
-product:
- - Windows
+ - PFND3DDDI_LOCKCB
 ---
 
 # PFND3DDDI_LOCKCB callback function
@@ -56,7 +53,7 @@ The <i>pfnLockCb</i> function locks an allocation and obtains a pointer to the a
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -198,3 +195,4 @@ ProgramSurfaceBaseAddressInCurrentCommandBuffer(LockData.hAllocation);
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_resourceunmap">ResourceUnmap</a>
+

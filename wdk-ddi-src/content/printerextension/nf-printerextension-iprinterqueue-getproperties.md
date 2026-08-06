@@ -2,17 +2,15 @@
 UID: NF:printerextension.IPrinterQueue.GetProperties
 title: IPrinterQueue::GetProperties (printerextension.h)
 description: Gets the properties in the property bag for the queue.
-old-location: print\iprinterqueue_getproperties.htm
 tech.root: print
-ms.assetid: 87EED8B5-676C-4056-812B-B0424148FCFA
-ms.date: 04/20/2018
+ms.date: 08/02/2022
 keywords: ["IPrinterQueue::GetProperties"]
 ms.keywords: GetProperties, GetProperties method [Print Devices], GetProperties method [Print Devices],IPrinterQueue interface, IPrinterQueue, IPrinterQueue interface [Print Devices],GetProperties method, IPrinterQueue.GetProperties, IPrinterQueue::GetProperties, print.iprinterqueue_getproperties, printerextension/IPrinterQueue::GetProperties
 req.header: printerextension.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 
@@ -38,11 +36,10 @@ api_type:
 api_location:
  - Printerextension.h
 api_name:
- - IPrinterQueue.GetProperties
+ - IPrinterQueue::GetProperties
 ---
 
 # IPrinterQueue::GetProperties
-
 
 ## -description
 
@@ -50,19 +47,16 @@ Gets the properties in the property bag for the queue.
 
 ## -parameters
 
-### -param ppPropertyBag 
+### -param ppPropertyBag [out, retval]
 
-[out, retval]
 A pointer to the property bag.
 
 ## -returns
 
-This method returns and <b>HRESULT</b> value.
+This method returns and **HRESULT** value.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterpropertybag">IPrinterPropertyBag</a>
+[IPrinterPropertyBag](./nn-printerextension-iprinterpropertybag.md)
 
-
-
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueue">IPrinterQueue</a>
+[IPrinterQueue](./nn-printerextension-iprinterqueue.md)

@@ -4,7 +4,6 @@ title: EVT_SERCX_TRANSMIT_CANCEL (sercx.h)
 description: The EvtSerCxTransmitCancel event callback function notifies the serial controller driver that the pending transmit request is canceled.
 old-location: serports\evtsercxtransmitcancel.htm
 tech.root: serports
-ms.assetid: 7922A3BD-8829-42A3-9F94-3C26F1262626
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX_TRANSMIT_CANCEL callback function"]
 ms.keywords: 1/EvtSerCxTransmitCancel, EVT_SERCX_TRANSMIT_CANCEL, EVT_SERCX_TRANSMIT_CANCEL callback, EvtSerCxTransmitCancel, EvtSerCxTransmitCancel callback function [Serial Ports], serports.evtsercxtransmitcancel
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 1.0\Sercx.h
 api_name:
- - EvtSerCxTransmitCancel
+ - EVT_SERCX_TRANSMIT_CANCEL
 ---
 
 # EVT_SERCX_TRANSMIT_CANCEL callback function
@@ -50,9 +49,9 @@ The <i>EvtSerCxTransmitCancel</i> event callback function notifies the serial co
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the serial controller.
 
 ## -remarks
@@ -95,3 +94,4 @@ VOID
 For more information about SDV requirements for function declarations, see <a href="/windows-hardware/drivers/devtest/declaring-functions-by-using-function-role-types-for-kmdf-drivers">Declaring Functions Using Function Role Types for KMDF Drivers</a>.
 
 <div class="code"></div>
+

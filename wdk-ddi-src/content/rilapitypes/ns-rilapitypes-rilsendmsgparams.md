@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILSENDMSGPARAMS
 title: RILSENDMSGPARAMS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILSENDMSGPARAMS structure for internal use only."
 old-location: netvista\rilsendmsgparams.htm
 tech.root: netvista
-ms.assetid: de1049a8-e089-4d15-baca-2c760f895894
 ms.date: 05/02/2018
 keywords: ["RILSENDMSGPARAMS structure"]
 ms.keywords: "*LPRILSENDMSGPARAMS, RILSENDMSGPARAMS, RILSENDMSGPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsendmsgparams, ntddrilapitypes/RILSENDMSGPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSENDMSGPARAMS
+ - LPRILSENDMSGPARAMS
 ---
 
 # RILSENDMSGPARAMS structure (rilapitypes.h)

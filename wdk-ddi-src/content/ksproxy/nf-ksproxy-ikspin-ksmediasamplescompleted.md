@@ -4,7 +4,6 @@ title: IKsPin::KsMediaSamplesCompleted (ksproxy.h)
 description: The KsMediaSamplesCompleted method informs a pin that a stream segment completed.
 old-location: stream\ikspin_ksmediasamplescompleted.htm
 tech.root: stream
-ms.assetid: df3bbc09-14aa-4243-887b-d88d02a59f73
 ms.date: 04/23/2018
 keywords: ["IKsPin::KsMediaSamplesCompleted"]
 ms.keywords: IKsPin interface [Streaming Media Devices],KsMediaSamplesCompleted method, IKsPin.KsMediaSamplesCompleted, IKsPin::KsMediaSamplesCompleted, KsMediaSamplesCompleted, KsMediaSamplesCompleted method [Streaming Media Devices], KsMediaSamplesCompleted method [Streaming Media Devices],IKsPin interface, ksproxy/IKsPin::KsMediaSamplesCompleted, ksproxy_06b7c470-0755-4cae-a346-15f544c51d1d.xml, stream.ikspin_ksmediasamplescompleted
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ksproxy.h
 api_name:
- - IKsPin.KsMediaSamplesCompleted
+ - IKsPin::KsMediaSamplesCompleted
 ---
 
 # IKsPin::KsMediaSamplesCompleted
@@ -50,9 +49,9 @@ The <b>KsMediaSamplesCompleted</b> method informs a pin that a stream segment co
 
 ## -parameters
 
-### -param StreamSegment 
+### -param StreamSegment [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/ksproxy/ns-ksproxy-_ksstream_segment">KSSTREAM_SEGMENT</a> structure that contains header information for a completed stream segment.
 
 ## -returns
@@ -76,3 +75,4 @@ When a client calls the <a href="/windows-hardware/drivers/ddi/ksproxy/nf-ksprox
 
 
 <a href="/windows-hardware/drivers/ddi/ksproxy/ns-ksproxy-_ksstream_segment">KSSTREAM_SEGMENT</a>
+

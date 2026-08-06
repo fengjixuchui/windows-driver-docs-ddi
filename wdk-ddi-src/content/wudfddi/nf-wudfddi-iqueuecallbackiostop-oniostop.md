@@ -4,7 +4,6 @@ title: IQueueCallbackIoStop::OnIoStop (wudfddi.h)
 description: The OnIoStop callback function stops the processing of the specified I/O request from the specified queue.
 old-location: wdf\iqueuecallbackiostop_oniostop.htm
 tech.root: wdf
-ms.assetid: baa48d1b-b7da-4f89-b2e8-9a9ae2086527
 ms.date: 02/26/2018
 keywords: ["IQueueCallbackIoStop::OnIoStop"]
 ms.keywords: IQueueCallbackIoStop interface,OnIoStop method, IQueueCallbackIoStop.OnIoStop, IQueueCallbackIoStop::OnIoStop, OnIoStop, OnIoStop method, OnIoStop method,IQueueCallbackIoStop interface, UMDFQueueObjectRef_5de69aa4-be79-45c4-9ee4-1628741ca249.xml, umdf.iqueuecallbackiostop_oniostop, wdf.iqueuecallbackiostop_oniostop, wudfddi/IQueueCallbackIoStop::OnIoStop
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IQueueCallbackIoStop.OnIoStop
+ - IQueueCallbackIoStop::OnIoStop
 ---
 
 # IQueueCallbackIoStop::OnIoStop
@@ -52,19 +51,19 @@ The <b>OnIoStop</b> callback function stops the processing of the specified I/O 
 
 ## -parameters
 
-### -param pWdfQueue 
+### -param pWdfQueue [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfioqueue">IWDFIoQueue</a> interface for the I/O queue object that processing of the I/O request is stopped from.
 
-### -param pWdfRequest 
+### -param pWdfRequest [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest">IWDFIoRequest</a> interface that represents the framework request object whose processing is stopped.
 
-### -param ActionFlags 
+### -param ActionFlags [in]
 
-[in]
+
 A valid bitwise OR of <a href="/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_request_stop_action_flags">WDF_REQUEST_STOP_ACTION_FLAGS</a>-typed values that identifies the state of a stop action request.
 
 ## -remarks
@@ -104,3 +103,4 @@ If the <b>WdfRequestStopRequestCancelable</b> flag is set in the <i>ActionFlags<
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_request_stop_action_flags">WDF_REQUEST_STOP_ACTION_FLAGS</a>
+

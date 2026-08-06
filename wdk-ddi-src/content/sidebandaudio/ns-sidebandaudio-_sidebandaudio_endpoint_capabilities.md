@@ -1,9 +1,8 @@
 ---
 UID: NS:sidebandaudio._SIDEBANDAUDIO_ENDPOINT_CAPABILITIES
 title: _SIDEBANDAUDIO_ENDPOINT_CAPABILITIES (sidebandaudio.h)
-description: 
-ms.assetid: cef181e9-6807-4b37-af4f-cda1fd7446e6
-ms.date: 09/06/2018
+description: "The SIDEBANDAUDIO_ENDPOINT_CAPABILITIES structure describes the capabilities of the sideband audio endpoint driver."
+ms.date: 07/14/2023
 keywords: ["SIDEBANDAUDIO_ENDPOINT_CAPABILITIES structure"]
 ms.keywords: _SIDEBANDAUDIO_ENDPOINT_CAPABILITIES, SIDEBANDAUDIO_ENDPOINT_CAPABILITIES,
 req.header: sidebandaudio.h
@@ -35,36 +34,41 @@ api_location:
  - sidebandaudio.h
 api_name:
  - _SIDEBANDAUDIO_ENDPOINT_CAPABILITIES
+ - SIDEBANDAUDIO_ENDPOINT_CAPABILITIES
 ---
 
 # _SIDEBANDAUDIO_ENDPOINT_CAPABILITIES structure
 
-
 ## -description
 
-TBD
+The **SIDEBANDAUDIO_ENDPOINT_CAPABILITIES** structure describes the capabilities of the sideband audio endpoint driver.
 
 ## -struct-fields
 
 ### -field Volume
 
-TBD
+Indicates if Volume is supported on the endpoint.
 
 ### -field Mute
 
-TBD
+Indicates if Mute is supported on the endpoint.
 
 ### -field Sidetone
 
-TBD
+Indicates if Sidetone is supported on the endpoint.
 
 ### -field Feedback
 
-TBD
+Indicates if Feedback is supported on the endpoint.
 
 ## -remarks
+
+## -requirements
+
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Header** | sidebandaudio.h |
 
 ## -see-also
 
 [sidebandaudio.h](index.md)
-

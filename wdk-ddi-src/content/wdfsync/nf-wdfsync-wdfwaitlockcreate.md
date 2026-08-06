@@ -4,7 +4,6 @@ title: WdfWaitLockCreate function (wdfsync.h)
 description: The WdfWaitLockCreate method creates a framework wait-lock object.
 old-location: wdf\wdfwaitlockcreate.htm
 tech.root: wdf
-ms.assetid: a0ffa493-4490-440b-9f67-426a7b5d4442
 ms.date: 02/26/2018
 keywords: ["WdfWaitLockCreate function"]
 ms.keywords: DFSynchroRef_19d02cf5-4fa3-449c-8913-4a5ff80bd578.xml, WdfWaitLockCreate, WdfWaitLockCreate method, kmdf.wdfwaitlockcreate, wdf.wdfwaitlockcreate, wdfsync/WdfWaitLockCreate
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfWaitLockCreate</b> method creates a framework wait-lock object.
 
 ## -parameters
 
-### -param LockAttributes 
+### -param LockAttributes [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that specifies attributes for the wait-lock object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param Lock 
+### -param Lock [out]
 
-[out]
+
 A pointer to a location that receives a handle to a new framework wait-lock object.
 
 ## -returns

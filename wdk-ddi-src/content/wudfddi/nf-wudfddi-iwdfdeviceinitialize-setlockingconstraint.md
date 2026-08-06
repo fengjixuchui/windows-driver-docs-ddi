@@ -4,7 +4,6 @@ title: IWDFDeviceInitialize::SetLockingConstraint (wudfddi.h)
 description: The SetLockingConstraint method sets the synchronization (or locking) model for callback functions into the driver.
 old-location: wdf\iwdfdeviceinitialize_setlockingconstraint.htm
 tech.root: wdf
-ms.assetid: c0062ad4-6666-49db-9d53-70f2ed2353d1
 ms.date: 02/26/2018
 keywords: ["IWDFDeviceInitialize::SetLockingConstraint"]
 ms.keywords: IWDFDeviceInitialize interface,SetLockingConstraint method, IWDFDeviceInitialize.SetLockingConstraint, IWDFDeviceInitialize::SetLockingConstraint, SetLockingConstraint, SetLockingConstraint method, SetLockingConstraint method,IWDFDeviceInitialize interface, UMDFDeviceObjectRef_ec613925-df47-4231-8f53-3769df71f288.xml, umdf.iwdfdeviceinitialize_setlockingconstraint, wdf.iwdfdeviceinitialize_setlockingconstraint, wudfddi/IWDFDeviceInitialize::SetLockingConstraint
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDeviceInitialize.SetLockingConstraint
+ - IWDFDeviceInitialize::SetLockingConstraint
 ---
 
 # IWDFDeviceInitialize::SetLockingConstraint
@@ -52,9 +51,9 @@ The <b>SetLockingConstraint</b> method sets the synchronization (or locking) mod
 
 ## -parameters
 
-### -param LockType 
+### -param LockType [in]
 
-[in]
+
 A value of type <a href="/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_callback_constraint">WDF_CALLBACK_CONSTRAINT</a> that identifies the locking model.
 
 ## -remarks
@@ -75,3 +74,4 @@ For a code example of how to use the <b>SetLockingConstraint</b> method, see <a 
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createdevice">IWDFDriver::CreateDevice</a>
+

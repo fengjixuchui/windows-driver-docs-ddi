@@ -4,7 +4,6 @@ title: RxLowIoCompletion function (lowio.h)
 description: RxLowIoCompletion must be called by the network mini-redirector low I/O routines when they complete, if the low I/O routines have initially returned STATUS_PENDING.
 old-location: ifsk\rxlowiocompletion.htm
 tech.root: ifsk
-ms.assetid: d9018a68-e72c-4149-a6a5-095654d0363c
 ms.date: 04/16/2018
 keywords: ["RxLowIoCompletion function"]
 ms.keywords: RxLowIoCompletion, RxLowIoCompletion routine [Installable File System Drivers], ifsk.rxlowiocompletion, lowio/RxLowIoCompletion, rxref_9a8f198a-0177-42f5-9039-3f5d6a3fa14d.xml
@@ -57,7 +56,7 @@ A pointer to the RX_CONTEXT structure for this IRP.
 ## -returns
 
 <b>RxLowIoCompletion</b>
-      returns different values depending on whether the <i>RxContext</i> parameter indicates this is synchronous or asynchornous I/O.
+      returns different values depending on whether the <i>RxContext</i> parameter indicates this is synchronous or asynchronous I/O.
 
 If the <i>RxContext</i> parameter indicates this is synchronous I/O, then <b>RxLowIoCompletion</b> returns STATUS_MORE_PROCESSING_REQUIRED. 
 

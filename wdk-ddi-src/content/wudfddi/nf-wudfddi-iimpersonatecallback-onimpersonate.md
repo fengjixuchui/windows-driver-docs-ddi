@@ -4,7 +4,6 @@ title: IImpersonateCallback::OnImpersonate (wudfddi.h)
 description: The OnImpersonate method handles impersonation.
 old-location: wdf\iimpersonatecallback_onimpersonate.htm
 tech.root: wdf
-ms.assetid: 6f06e89c-5298-4335-ab9a-ef69e635152c
 ms.date: 02/26/2018
 keywords: ["IImpersonateCallback::OnImpersonate"]
 ms.keywords: IImpersonateCallback interface,OnImpersonate method, IImpersonateCallback.OnImpersonate, IImpersonateCallback::OnImpersonate, OnImpersonate, OnImpersonate method, OnImpersonate method,IImpersonateCallback interface, UMDFRequestObjectRef_e3752371-61b0-44ba-af86-0cf244e27894.xml, umdf.iimpersonatecallback_onimpersonate, wdf.iimpersonatecallback_onimpersonate, wudfddi/IImpersonateCallback::OnImpersonate
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IImpersonateCallback.OnImpersonate
+ - IImpersonateCallback::OnImpersonate
 ---
 
 # IImpersonateCallback::OnImpersonate
@@ -52,9 +51,9 @@ The <b>OnImpersonate</b> method handles impersonation.
 
 ## -parameters
 
-### -param Context 
+### -param Context [in, optional]
 
-[in, optional]
+
 A pointer to a context that was previously supplied in the <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-impersonate">IWDFIoRequest::Impersonate</a> method. This parameter is optional and can be <b>NULL</b> if a context is not required.
 
 ## -remarks
@@ -74,3 +73,4 @@ For more information about how UMDF and UMDF drivers handle impersonation, see <
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-impersonate">IWDFIoRequest::Impersonate</a>
+

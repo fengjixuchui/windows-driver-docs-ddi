@@ -4,7 +4,6 @@ title: IDebugSymbols3::AppendSymbolPathWide (dbgeng.h)
 description: The AppendSymbolPathWide method appends directories to the symbol path.
 old-location: debugger\appendsymbolpathwide.htm
 tech.root: debugger
-ms.assetid: 184f40ff-be43-482c-8620-382f11f95548
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::AppendSymbolPathWide"]
 ms.keywords: AppendSymbolPathWide, AppendSymbolPathWide method [Windows Debugging], AppendSymbolPathWide method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],AppendSymbolPathWide method, IDebugSymbols3.AppendSymbolPathWide, IDebugSymbols3::AppendSymbolPathWide, dbgeng/IDebugSymbols3::AppendSymbolPathWide, debugger.appendsymbolpathwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSymbols3.AppendSymbolPathWide
+ - IDebugSymbols3::AppendSymbolPathWide
 ---
 
 # IDebugSymbols3::AppendSymbolPathWide
@@ -50,9 +49,9 @@ The <b>AppendSymbolPathWide</b>  method appends directories to the symbol path.
 
 ## -parameters
 
-### -param Addition 
+### -param Addition [in]
 
-[in]
+
 Specifies the directories to append to the symbol path.  This is a string that contains symbol path elements separated by semicolons (;).  Each symbol path element can specify either a directory or a symbol server.
 
 ## -returns
@@ -93,3 +92,4 @@ For more information about manipulating the symbol path, see <a href="/windows-h
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-setsymbolpath">SetSymbolPath</a>
+

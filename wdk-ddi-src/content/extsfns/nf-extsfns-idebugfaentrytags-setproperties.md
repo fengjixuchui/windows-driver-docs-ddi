@@ -4,7 +4,6 @@ title: IDebugFAEntryTags::SetProperties (extsfns.h)
 description: The SetProperties method sets the name or description (or both) of a tag in a DebugFailureAnalysisTags object.
 old-location: debugger\idebugfaentrytags_setproperties.htm
 tech.root: debugger
-ms.assetid: EEBD3291-4DFC-4503-9F5A-49591FE09680
 ms.date: 05/03/2018
 keywords: ["IDebugFAEntryTags::SetProperties"]
 ms.keywords: IDebugFAEntryTags interface [Windows Debugging],SetProperties method, IDebugFAEntryTags.SetProperties, IDebugFAEntryTags::SetProperties, SetProperties, SetProperties method [Windows Debugging], SetProperties method [Windows Debugging],IDebugFAEntryTags interface, debugger.idebugfaentrytags_setproperties, extsfns/IDebugFAEntryTags::SetProperties
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - extsfns.h
 api_name:
- - IDebugFAEntryTags.SetProperties
+ - IDebugFAEntryTags::SetProperties
 ---
 
 # IDebugFAEntryTags::SetProperties
@@ -50,24 +49,24 @@ The <b>SetProperties</b> method sets the name or description (or both) of a tag 
 
 ## -parameters
 
-### -param Tag 
+### -param Tag [in]
 
-[in]
+
 A value in the <a href="/windows-hardware/drivers/debugger/writing-an-analysis-extension-to-extend--analyze">FA_TAG</a> enumeration. This method sets the name or description (or both) of this tag.
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 A pointer to a null-terminated string that specifies the name to be set. If the tag already has a name, this method overwrites the old name. If this parameter is <b>NULL</b>, the name of the tag is not changed.
 
-### -param Description 
+### -param Description [in]
 
-[in]
+
 A pointer to a null-terminated string that specifies the description to be set. If the tag already has a description, this method overwrites the old description. If this parameter is <b>NULL</b>, the description of the tag is not changed.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Reserved. Set this parameter to <b>NULL</b>.
 
 ## -returns
@@ -93,3 +92,4 @@ If this method succeeds, it returns <b>S_OK</b>. Otherwise it returns an error c
 
 
 <a href="/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin">_EFN_Analyze</a>
+

@@ -4,7 +4,6 @@ title: WdfRequestReuse function (wdfrequest.h)
 description: The WdfRequestReuse method reinitializes a framework request object so that it can be reused.
 old-location: wdf\wdfrequestreuse.htm
 tech.root: wdf
-ms.assetid: 3d649cc5-6512-432c-9bd9-60e18507a873
 ms.date: 02/26/2018
 keywords: ["WdfRequestReuse function"]
 ms.keywords: DFRequestObjectRef_8815216b-4632-4cc8-8afd-c4b1412ddbad.xml, WdfRequestReuse, WdfRequestReuse method, kmdf.wdfrequestreuse, wdf.wdfrequestreuse, wdfrequest/WdfRequestReuse
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfRequestReuse</b> method reinitializes a framework request object so th
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
-### -param ReuseParams 
+### -param ReuseParams [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfrequest/ns-wdfrequest-_wdf_request_reuse_params">WDF_REQUEST_REUSE_PARAMS</a> structure.
 
 ## -returns

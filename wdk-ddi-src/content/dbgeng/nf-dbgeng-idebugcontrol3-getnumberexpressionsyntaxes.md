@@ -4,7 +4,6 @@ title: IDebugControl3::GetNumberExpressionSyntaxes (dbgeng.h)
 description: The GetNumberExpressionSyntaxes method returns the number of expression syntaxes that are supported by the engine.
 old-location: debugger\getnumberexpressionsyntaxes.htm
 tech.root: debugger
-ms.assetid: eb96dd47-300a-49b7-b3c3-ee3bcb6662ba
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::GetNumberExpressionSyntaxes"]
 ms.keywords: GetNumberExpressionSyntaxes, GetNumberExpressionSyntaxes method [Windows Debugging], GetNumberExpressionSyntaxes method [Windows Debugging],IDebugControl3 interface, IDebugControl3 interface [Windows Debugging],GetNumberExpressionSyntaxes method, IDebugControl3.GetNumberExpressionSyntaxes, IDebugControl3::GetNumberExpressionSyntaxes, IDebugControl_af12dddf-1d15-4abf-8500-8beab99b69ea.xml, dbgeng/IDebugControl3::GetNumberExpressionSyntaxes, debugger.getnumberexpressionsyntaxes
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl3.GetNumberExpressionSyntaxes
+ - IDebugControl3::GetNumberExpressionSyntaxes
 ---
 
 # IDebugControl3::GetNumberExpressionSyntaxes
@@ -50,9 +49,9 @@ The <b>GetNumberExpressionSyntaxes</b> method returns the number of expression s
 
 ## -parameters
 
-### -param Number 
+### -param Number [out]
 
-[out]
+
 Receives the number of expression syntaxes.
 
 ## -returns
@@ -92,3 +91,4 @@ The method was successful.
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setexpressionsyntaxbyname">SetExpressionSyntaxByName</a>
+

@@ -4,7 +4,6 @@ title: IoCsqInitializeEx function (wdm.h)
 description: The IoCsqInitializeEx routine initializes the dispatch table for a cancel-safe IRP queue.
 old-location: kernel\iocsqinitializeex.htm
 tech.root: kernel
-ms.assetid: 9f6501c2-a708-4583-a821-e1b8264ff0af
 ms.date: 04/30/2018
 keywords: ["IoCsqInitializeEx function"]
 ms.keywords: IoCsqInitializeEx, IoCsqInitializeEx routine [Kernel-Mode Driver Architecture], k104_68bf2330-ba47-4896-8052-41afee2d887e.xml, kernel.iocsqinitializeex, wdm/IoCsqInitializeEx
@@ -50,39 +49,39 @@ The <b>IoCsqInitializeEx</b> routine initializes the dispatch table for a cancel
 
 ## -parameters
 
-### -param Csq 
+### -param Csq [out]
 
-[out]
+
 Pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">IO_CSQ</a> structure to be initialized by <b>IoCsqInitializeEx</b>.
 
-### -param CsqInsertIrp 
+### -param CsqInsertIrp [in]
 
-[in]
+
 Pointer to the driver-defined <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-io_csq_insert_irp_ex">CsqInsertIrpEx</a> function for the driver's cancel-safe IRP queue.
 
-### -param CsqRemoveIrp 
+### -param CsqRemoveIrp [in]
 
-[in]
+
 Pointer to the driver-defined <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-io_csq_remove_irp">CsqRemoveIrp</a> function for the driver's cancel-safe IRP queue.
 
-### -param CsqPeekNextIrp 
+### -param CsqPeekNextIrp [in]
 
-[in]
+
 Pointer to the driver-defined <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-io_csq_peek_next_irp">CsqPeekNextIrp</a> function for the driver's cancel-safe IRP queue.
 
-### -param CsqAcquireLock 
+### -param CsqAcquireLock [in]
 
-[in]
+
 Pointer to the driver-defined <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-io_csq_acquire_lock">CsqAcquireLock</a> function for the driver's cancel-safe IRP queue.
 
-### -param CsqReleaseLock 
+### -param CsqReleaseLock [in]
 
-[in]
+
 Pointer to the driver-defined <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-io_csq_release_lock">CsqReleaseLock</a> function for the driver's cancel-safe IRP queue.
 
-### -param CsqCompleteCanceledIrp 
+### -param CsqCompleteCanceledIrp [in]
 
-[in]
+
 Pointer to the driver-defined <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-io_csq_complete_canceled_irp">CsqCompleteCanceledIrp</a> function for the driver's cancel-safe IRP queue.
 
 ## -returns

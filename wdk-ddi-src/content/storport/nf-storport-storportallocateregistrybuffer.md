@@ -4,7 +4,6 @@ title: StorPortAllocateRegistryBuffer function (storport.h)
 description: The StorPortAllocateRegistryBuffer routine is called by the miniport driver to allocate a buffer that can be used to read and write registry data.
 old-location: storage\storportallocateregistrybuffer.htm
 tech.root: storage
-ms.assetid: c8d03a63-4b6a-4e84-994b-0e205401e531
 ms.date: 03/29/2018
 keywords: ["StorPortAllocateRegistryBuffer function"]
 ms.keywords: StorPortAllocateRegistryBuffer, StorPortAllocateRegistryBuffer routine [Storage Devices], storage.storportallocateregistrybuffer, storport/StorPortAllocateRegistryBuffer, storprt_dc344b88-692d-4529-8b98-c9b5c07a05f3.xml
@@ -51,14 +50,14 @@ The <b>StorPortAllocateRegistryBuffer</b> routine is called by the miniport driv
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize">StorPortInitialize</a>. The port driver frees this memory when it removes the device. The miniport driver must be running at IRQL PASSIVE_LEVEL when it calls this routine.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Pointer to a long that indicates, on input, the length in bytes of the registry buffer that the caller requires. On output, <i>Length</i> is updated to reflect the actual size in bytes of the buffer that was allocated.
 
 ## -returns

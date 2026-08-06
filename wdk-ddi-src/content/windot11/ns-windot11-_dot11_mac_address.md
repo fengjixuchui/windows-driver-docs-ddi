@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11._DOT11_MAC_ADDRESS
 title: _DOT11_MAC_ADDRESS (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_MAC_ADDRESS structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_mac_address.htm
 tech.root: netvista
-ms.assetid: 6b2b17fd-3695-4598-8d9a-be28e1bc5b53
 ms.date: 02/16/2018
 keywords: ["DOT11_MAC_ADDRESS structure"]
 ms.keywords: "*PDOT11_MAC_ADDRESS, DOT11_MAC_ADDRESS, DOT11_MAC_ADDRESS structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_8ff45785-198d-48f0-99b5-b79a27753668.xml, PDOT11_MAC_ADDRESS, PDOT11_MAC_ADDRESS structure pointer [Network Drivers Starting with Windows Vista], _DOT11_MAC_ADDRESS, netvista.dot11_mac_address, windot11/DOT11_MAC_ADDRESS, windot11/PDOT11_MAC_ADDRESS"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - windot11.h
 api_name:
+ - _DOT11_MAC_ADDRESS
+ - PDOT11_MAC_ADDRESS
  - DOT11_MAC_ADDRESS
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_MAC_ADDRESS structure
@@ -97,7 +96,6 @@ The PDOT11_MAC_ADDRESS type is defined as a pointer to the DOT11_MAC_ADDRESS typ
 ```
 typedef DOT11_MAC_ADDRESS  *PDOT11_MAC_ADDRESS;
 ```
-
 
 ## -see-also
 
@@ -210,3 +208,4 @@ typedef DOT11_MAC_ADDRESS  *PDOT11_MAC_ADDRESS;
 
 <a href="..\windot11\ns-windot11-dot11_roaming_completion_parameters.md">
    DOT11_ROAMING_COMPLETION_PARAMETERS</a>
+

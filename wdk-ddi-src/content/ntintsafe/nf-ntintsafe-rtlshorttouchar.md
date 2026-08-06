@@ -4,7 +4,6 @@ title: RtlShortToUChar function (ntintsafe.h)
 description: Converts a value of type SHORT to a value of type UCHAR.
 old-location: kernel\rtlshorttouchar.htm
 tech.root: kernel
-ms.assetid: 6DA0F939-F4B3-4E66-A90C-5112AE6FEC8D
 ms.date: 04/30/2018
 keywords: ["RtlShortToUChar function"]
 ms.keywords: RtlShortToUChar, RtlShortToUChar function [Kernel-Mode Driver Architecture], kernel.rtlshorttouchar, ntintsafe/RtlShortToUChar
@@ -50,14 +49,14 @@ Converts a value of type <b>SHORT</b> to a value of type <b>UCHAR</b>.
 
 ## -parameters
 
-### -param sOperand 
+### -param sOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pch 
+### -param pch [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

@@ -4,7 +4,6 @@ title: IWDFUsbRequestCompletionParams::GetPipeReadParameters (wudfusb.h)
 description: The GetPipeReadParameters method retrieves parameters that are associated with the completion of a read request.
 old-location: wdf\iwdfusbrequestcompletionparams_getpipereadparameters.htm
 tech.root: wdf
-ms.assetid: e5e3dfa0-49cc-4c2d-828e-fa5c95d3db8c
 ms.date: 02/26/2018
 keywords: ["IWDFUsbRequestCompletionParams::GetPipeReadParameters"]
 ms.keywords: GetPipeReadParameters, GetPipeReadParameters method, GetPipeReadParameters method,IWDFUsbRequestCompletionParams interface, IWDFUsbRequestCompletionParams interface,GetPipeReadParameters method, IWDFUsbRequestCompletionParams.GetPipeReadParameters, IWDFUsbRequestCompletionParams::GetPipeReadParameters, UMDFRequestObjectRef_d98f8b7f-c264-4044-aaef-893c717be50a.xml, umdf.iwdfusbrequestcompletionparams_getpipereadparameters, wdf.iwdfusbrequestcompletionparams_getpipereadparameters, wudfusb/IWDFUsbRequestCompletionParams::GetPipeReadParameters
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFUsbRequestCompletionParams.GetPipeReadParameters
+ - IWDFUsbRequestCompletionParams::GetPipeReadParameters
 ---
 
 # IWDFUsbRequestCompletionParams::GetPipeReadParameters
@@ -52,19 +51,19 @@ The <b>GetPipeReadParameters</b> method retrieves parameters that are associated
 
 ## -parameters
 
-### -param ppReadMemory 
+### -param ppReadMemory [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfmemory">IWDFMemory</a> interface, for access to the read buffer for the read request. This parameter is optional and can be <b>NULL</b>.
 
-### -param pBytesRead 
+### -param pBytesRead [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives the size, in bytes, of the read buffer for the read request. This parameter is optional and can be <b>NULL</b>.
 
-### -param pReadMemoryOffset 
+### -param pReadMemoryOffset [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives the offset, in bytes, into the read buffer for the read request. This parameter is optional and can be <b>NULL</b>.
 
 ## -see-also
@@ -74,3 +73,4 @@ A pointer to a variable that receives the offset, in bytes, into the read buffer
 
 
 <a href="/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbrequestcompletionparams">IWDFUsbRequestCompletionParams</a>
+

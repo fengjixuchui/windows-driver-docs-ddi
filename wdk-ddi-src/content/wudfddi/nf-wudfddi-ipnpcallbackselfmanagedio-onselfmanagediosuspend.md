@@ -4,7 +4,6 @@ title: IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend (wudfddi.h)
 description: The OnSelfManagedIoSuspend method suspends a device's self-managed I/O operations.
 old-location: wdf\ipnpcallbackselfmanagedio_onselfmanagediosuspend.htm
 tech.root: wdf
-ms.assetid: 7ec30c51-5e07-496b-96af-8eafb564d98d
 ms.date: 02/26/2018
 keywords: ["IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend"]
 ms.keywords: IPnpCallbackSelfManagedIo interface,OnSelfManagedIoSuspend method, IPnpCallbackSelfManagedIo.OnSelfManagedIoSuspend, IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend, OnSelfManagedIoSuspend, OnSelfManagedIoSuspend method, OnSelfManagedIoSuspend method,IPnpCallbackSelfManagedIo interface, UMDFDeviceObjectRef_87fc0596-4d08-4c55-88b0-e2ad9d085745.xml, umdf.ipnpcallbackselfmanagedio_onselfmanagediosuspend, wdf.ipnpcallbackselfmanagedio_onselfmanagediosuspend, wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IPnpCallbackSelfManagedIo.OnSelfManagedIoSuspend
+ - IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend
 ---
 
 # IPnpCallbackSelfManagedIo::OnSelfManagedIoSuspend
@@ -52,9 +51,9 @@ The <b>OnSelfManagedIoSuspend</b> method suspends a device's self-managed I/O op
 
 ## -parameters
 
-### -param pWdfDevice 
+### -param pWdfDevice [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice">IWDFDevice</a> interface for the device object of the device for which the self-managed I/O operations are suspended.
 
 ## -returns
@@ -81,3 +80,4 @@ A driver registers the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createdevice">IWDFDriver::CreateDevice</a>
+

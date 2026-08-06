@@ -4,7 +4,6 @@ title: IDebugClient5::SetQuitLockStringWide (dbgeng.h)
 description: Sets a quit lock Unicode character string.
 old-location: debugger\idebugclient5_setquitlockstringwide.htm
 tech.root: debugger
-ms.assetid: B9A2C636-BF18-4D1B-A013-8CAE65FCC56F
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::SetQuitLockStringWide"]
 ms.keywords: IDebugClient5 interface [Windows Debugging],SetQuitLockStringWide method, IDebugClient5.SetQuitLockStringWide, IDebugClient5::SetQuitLockStringWide, SetQuitLockStringWide, SetQuitLockStringWide method [Windows Debugging], SetQuitLockStringWide method [Windows Debugging],IDebugClient5 interface, dbgeng/IDebugClient5::SetQuitLockStringWide, debugger.idebugclient5_setquitlockstringwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient5.SetQuitLockStringWide
+ - IDebugClient5::SetQuitLockStringWide
 ---
 
 # IDebugClient5::SetQuitLockStringWide
@@ -50,9 +49,9 @@ Sets a quit lock Unicode character string.
 
 ## -parameters
 
-### -param String 
+### -param String [in]
 
-[in]
+
 A pointer to the quit lock Unicode character string.
 
 ## -returns
@@ -67,3 +66,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient5">IDebugClient5</a>
+

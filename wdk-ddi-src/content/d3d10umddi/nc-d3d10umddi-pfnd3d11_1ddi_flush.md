@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_FLUSH
 title: PFND3D11_1DDI_FLUSH (d3d10umddi.h)
 description: Submits outstanding hardware commands that are in the hardware command buffer to the display miniport driver. Implemented by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
 old-location: display\flush_d3d11_1_.htm
-ms.assetid: 6f4bda19-2d51-4058-ba68-cbb5deb44a54
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_FLUSH callback function"]
 ms.keywords: Flush(D3D11_1), Flush(D3D11_1) callback function [Display Devices], PFND3D11_1DDI_FLUSH, PFND3D11_1DDI_FLUSH callback, d3d10umddi/Flush(D3D11_1), display.flush_d3d11_1_
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - Flush(D3D11_1)
-product:
- - Windows
+ - PFND3D11_1DDI_FLUSH
 ---
 
 # PFND3D11_1DDI_FLUSH callback function
@@ -52,7 +49,7 @@ Submits outstanding hardware commands that are in the hardware command buffer to
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
@@ -83,3 +80,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

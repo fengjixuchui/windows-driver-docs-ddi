@@ -4,7 +4,6 @@ title: IPrintOemPS::Command (prcomoem.h)
 description: The IPrintOemPS::Command method is used by rendering plug-ins for the Microsoft PostScript printer driver, in order to insert PostScript commands into the print job's data stream.
 old-location: print\iprintoemps_command.htm
 tech.root: print
-ms.assetid: b79dd6e7-361c-4051-9e7c-18c64d459a70
 ms.date: 04/20/2018
 keywords: ["IPrintOemPS::Command"]
 ms.keywords: Command, Command method [Print Devices], Command method [Print Devices],IPrintOemPS interface, IPrintOemPS interface [Print Devices],Command method, IPrintOemPS.Command, IPrintOemPS::Command, prcomoem/IPrintOemPS::Command, print.iprintoemps_command, print_unidrv-pscript_rendering_ec087427-976b-4f71-9db9-a0c08f214907.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemPS.Command
+ - IPrintOemPS::Command
 ---
 
 # IPrintOemPS::Command
@@ -66,9 +65,9 @@ Not used.
 
 Not used.
 
-### -param pdwResult 
+### -param pdwResult [out]
 
-[out]
+
 Receives a method-supplied value indicating the result of the insertion operation. If the insertion succeeds, this value should be ERROR_SUCCESS. If the insertion fails, the value should be one of the error codes defined in winerror.h. If the method does not attempt to insert data for a specified *dwIndex* value, the value should be ERROR_NOT_SUPPORTED.
 
 ## -returns
@@ -471,3 +470,4 @@ If **IPrintOemPS::Command** methods are exported by multiple rendering plug-ins,
 * If the injection point is one for which supplied data replaces the data that the printer driver provides, the plug-ins are called until one **IPrintOemPS::Command** method supplies ERROR_SUCCESS for *dwResult*. No other plug-ins are called. If all plug-ins supply ERROR_NOT_SUPPORTED, the driver-supplied data is not replaced.
 
 * If the injection point is one for which supplied data replaces the data that the printer driver provides, and if an application has already replaced the driver-supplied data by using the [POSTSCRIPT_INJECTION](/windows-hardware/drivers/print/pscript-supported-escapes) printer escape function, no plug-ins are called.
+

@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILPSMEDIACONFIGURATIONSET
 title: RILPSMEDIACONFIGURATIONSET (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILPSMEDIACONFIGURATIONSET structure for internal use only. Don't use the RILPSMEDIACONFIGURATIONSET structure in your code."
 old-location: netvista\rilpsmediaconfigurationset.htm
 tech.root: netvista
-ms.assetid: b41f6539-293f-47ed-b720-5053574a1841
 ms.date: 05/02/2018
 keywords: ["RILPSMEDIACONFIGURATIONSET structure"]
 ms.keywords: "*LPRILPSMEDIACONFIGURATIONSET, RILPSMEDIACONFIGURATIONSET, RILPSMEDIACONFIGURATIONSET structure [Network Drivers Starting with Windows Vista], netvista.rilpsmediaconfigurationset, ntddrilapitypes/RILPSMEDIACONFIGURATIONSET"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILPSMEDIACONFIGURATIONSET
+ - LPRILPSMEDIACONFIGURATIONSET
 ---
 
 # RILPSMEDIACONFIGURATIONSET structure (ntddrilapitypes.h)

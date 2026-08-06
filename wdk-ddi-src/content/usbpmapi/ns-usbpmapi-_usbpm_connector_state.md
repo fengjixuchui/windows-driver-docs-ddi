@@ -2,7 +2,6 @@
 UID: NS:usbpmapi._USBPM_CONNECTOR_STATE
 title: _USBPM_CONNECTOR_STATE (usbpmapi.h)
 description: Describes the state of a connector.
-ms.assetid: 5430de09-aae7-49da-ae7f-50fd996e4386
 ms.date: 09/30/2018
 keywords: ["USBPM_CONNECTOR_STATE structure"]
 tech.root: usbref
@@ -37,6 +36,8 @@ api_location:
  - usbpmapi.h
 api_name:
  - _USBPM_CONNECTOR_STATE
+ - PUSBPM_CONNECTOR_STATE
+ - USBPM_CONNECTOR_STATE
 ---
 
 # _USBPM_CONNECTOR_STATE structure
@@ -62,7 +63,7 @@ Indicates whether this connector is attached.
 
 ### -field AttachCount
 
-Indicates the number of attache events that have occurred on this connector. If client driver sees the transition from one “Attached” state to another “Attached” state but with different “AttachCount”, it indicates two attaches and with two different port partners.
+Indicates the number of attached events that have occurred on this connector. If client driver sees the transition from one “Attached” state to another “Attached” state but with different “AttachCount”, it indicates two attaches and with two different port partners.
 
 ### -field Partner
 

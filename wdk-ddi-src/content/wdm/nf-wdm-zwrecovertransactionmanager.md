@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.ZwRecoverTransactionManager
 title: ZwRecoverTransactionManager function (wdm.h)
-description: The ZwRecoverTransactionManager routine reconstructs the state of the transaction manager object (including all transactions, enlistments, and resource managers) from the recovery information that is in the log stream.
+description: Learn how the ZwRecoverTransactionManager routine reconstructs the state of the transaction manager object from the recovery information that is in the log stream.
 old-location: kernel\zwrecovertransactionmanager.htm
 tech.root: kernel
-ms.assetid: 20284cad-5d65-4d22-98fa-6b6c5f6b422d
 ms.date: 04/30/2018
 keywords: ["ZwRecoverTransactionManager function"]
 ms.keywords: NtRecoverTransactionManager, ZwRecoverTransactionManager, ZwRecoverTransactionManager routine [Kernel-Mode Driver Architecture], kernel.zwrecovertransactionmanager, ktm_ref_8ff406ba-2e7b-453e-8fc7-12e88a3bf41e.xml, wdm/NtRecoverTransactionManager, wdm/ZwRecoverTransactionManager
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - ZwRecoverTransactionManager
- - NtRecoverTransactionManager
 ---
 
 # ZwRecoverTransactionManager function
@@ -51,9 +49,9 @@ The <b>ZwRecoverTransactionManager</b> routine reconstructs the state of the tra
 
 ## -parameters
 
-### -param TransactionManagerHandle 
+### -param TransactionManagerHandle [in]
 
-[in]
+
 A handle to a <a href="/windows-hardware/drivers/kernel/transaction-manager-objects">transaction manager object</a> that was obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreatetransactionmanager">ZwCreateTransactionManager</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopentransactionmanager">ZwOpenTransactionManager</a>. The handle must have TRANSACTIONMANAGER_RECOVER access to the object.
 
 ## -returns
@@ -158,3 +156,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntrollforwardtransactionmanager">ZwRollforwardTransactionManager</a>
+

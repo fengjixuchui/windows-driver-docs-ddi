@@ -4,7 +4,6 @@ title: _WWAN_PCO_VALUE (wwan.h)
 description: The WWAN_PCO_VALUE structure represents the PCO information payload from the network as defined in the 3GPP TS24.008 spec.
 old-location: netvista\wwan_pco_value.htm
 tech.root: netvista
-ms.assetid: 45A499CE-2C9A-4070-BEF8-880E7673FA8E
 ms.date: 05/02/2018
 keywords: ["WWAN_PCO_VALUE structure"]
 ms.keywords: "*PWWAN_PCO_VALUE, PWWAN_PCO_VALUE, PWWAN_PCO_VALUE structure pointer [Network Drivers Starting with Windows Vista], WWAN_PCO_VALUE, WWAN_PCO_VALUE structure [Network Drivers Starting with Windows Vista], _WWAN_PCO_VALUE, netvista.wwan_pco_value, wwan/PWWAN_PCO_VALUE, wwan/WWAN_PCO_VALUE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_PCO_VALUE
+ - PWWAN_PCO_VALUE
  - WWAN_PCO_VALUE
 ---
 
@@ -74,7 +75,7 @@ For example, if the modem received a PCO with 3 protocols and 3 containers, and 
 
 The following figure shows a full PCO structure as defined in the 3G TS24.008 spec.
 
-![Full PCO structure](../images/pco_structure_small.png)
+![Full PCO structure.](../images/pco_structure_small.png)
 
 ## -see-also
 
@@ -87,3 +88,4 @@ The following figure shows a full PCO structure as defined in the 3G TS24.008 sp
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ne-wwan-_wwan_pco_type">WWAN_PCO_TYPE</a>
+

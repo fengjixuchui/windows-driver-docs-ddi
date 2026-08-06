@@ -4,7 +4,6 @@ title: _DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO (windot11.h)
 description: The DOT11_POWER_MGMT_AUTO_MODE_ENABLED structure describes to a device whether to automatically manage its power saving mode.
 old-location: netvista\dot11_power_mgmt_auto_mode_enabled_info.htm
 tech.root: netvista
-ms.assetid: 9C75544F-A14C-4741-91FC-434AE1872A6E
 ms.date: 02/16/2018
 keywords: ["DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO structure"]
 ms.keywords: "*PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO structure [Network Drivers Starting with Windows Vista], PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO structure pointer [Network Drivers Starting with Windows Vista], _DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, netvista.dot11_power_mgmt_auto_mode_enabled_info, windot11/DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO, windot11/PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - Windot11.h
 api_name:
+ - _DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO
+ - PDOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO
  - DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO structure
@@ -52,7 +51,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_POWER_MGMT_AUTO_MODE_ENABLED structure describes to a device whether to automatically manage its power saving mode.
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_POWER_MGMT_AUTO_MODE_ENABLED structure describes to a device whether to automatically manage its power saving mode.
 
 ## -struct-fields
 
@@ -95,3 +97,4 @@ typedef struct _DOT11_POWER_MGMT_AUTO_MODE_ENABLED_INFO {
 ## -remarks
 
 When Windows sets the device to auto power saving mode, devices must remain in this mode until Windows issues another request with <b>bEnabled</b> set to FALSE. In auto power saving mode, Windows may issue a <a href="/windows-hardware/drivers/network/oid-dot11-power-mgmt-request">OID_DOT11_POWER_MGMT_REQUEST</a><i>set</i> request that hardware can use as a hint to adjust its power management.
+

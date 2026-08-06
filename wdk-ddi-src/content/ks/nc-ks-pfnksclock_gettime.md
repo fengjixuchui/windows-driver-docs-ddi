@@ -4,7 +4,6 @@ title: PFNKSCLOCK_GETTIME (ks.h)
 description: The routine gets system time.KStrClockGetTime is a system-supplied routine that retrieves the current system time.KStrClockGetPhysicalTime is a system-supplied routine that retrieves the current system time minus any suspended delta.
 old-location: stream\kstrclockgettime.htm
 tech.root: stream
-ms.assetid: 4b1028a1-8c86-4958-a19f-32c490dda790
 ms.date: 04/23/2018
 keywords: ["PFNKSCLOCK_GETTIME callback function"]
 ms.keywords: KStrClockGetPhysicalTime, KStrClockGetTime, PFNKSCLOCK_GETTIME, SystemClockGetTime, SystemClockGetTime routine [Streaming Media Devices], ks/SystemClockGetTime, ksfunc_a60a332c-ffc8-4969-9e81-cccaac9b5c0a.xml, stream.kstrclockgettime
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - SystemClockGetTime
+ - PFNKSCLOCK_GETTIME
 ---
 
 # PFNKSCLOCK_GETTIME callback function
@@ -54,9 +53,9 @@ The routine gets system time.
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">FILE_OBJECT</a> structure to which a handle was returned when the clock instance was created.
 
 ## -returns
@@ -74,3 +73,4 @@ You can obtain an entry point for this routine by supplying a driver-allocated <
 
 
 <a href="/windows-hardware/drivers/stream/ksproperty-clock-functiontable">KSPROPERTY_CLOCK_FUNCTIONTABLE</a>
+

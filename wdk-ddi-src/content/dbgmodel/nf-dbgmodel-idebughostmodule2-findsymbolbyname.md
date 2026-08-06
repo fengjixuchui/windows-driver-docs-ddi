@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostModule2.FindSymbolByName
 title: IDebugHostModule2::FindSymbolByName (dbgmodel.h)
-description: The FindSymbolByName method will find a single global symbol of the given name within the module.
-ms.assetid: 74ce0a4b-7079-469d-b769-e47eae4123ed
+description: "The IDebugHostModule2::FindSymbolByName method, when called on a module, retrieves a global symbol by name from within the module."
 ms.date: 09/18/2018
 keywords: ["IDebugHostModule2::FindSymbolByName"]
 ms.keywords: IDebugHostModule2::FindSymbolByName, FindSymbolByName, IDebugHostModule2.FindSymbolByName, IDebugHostModule2::FindSymbolByName, IDebugHostModule2.FindSymbolByName
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostModule2.FindSymbolByName
+ - IDebugHostModule2::FindSymbolByName
 ---
 
 # IDebugHostModule2::FindSymbolByName
@@ -65,7 +64,7 @@ This method returns HRESULT which indicates success or failure.
 **Sample Code**
 
 ```cpp
-ComPtr<IDebugHostModule> spModule; /* get a module (see FindModuleByName) */
+ComPtr<IDebugHostModule2> spModule; /* get a module (see FindModuleByName) */
 
 // Find the symbol for g_someGlobal;
 ComPtr<IDebugHostSymbol> spSymbol;

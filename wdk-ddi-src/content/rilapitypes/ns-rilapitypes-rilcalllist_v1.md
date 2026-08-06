@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILCALLLIST_V1
 title: RILCALLLIST_V1 (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILCALLLIST_V1 structure for internal use only."
 old-location: netvista\rilcalllist_v1.htm
 tech.root: netvista
-ms.assetid: 09b4f4e7-2688-4d6e-8512-a94c5ce25a79
 ms.date: 05/02/2018
 keywords: ["RILCALLLIST_V1 structure"]
 ms.keywords: "*LPRILCALLLIST_V1, RILCALLLIST_V1, RILCALLLIST_V1 structure [Network Drivers Starting with Windows Vista], netvista.rilcalllist_v1, ntddrilapitypes/RILCALLLIST_V1"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILCALLLIST_V1
+ - LPRILCALLLIST_V1
 ---
 
 # RILCALLLIST_V1 structure (rilapitypes.h)

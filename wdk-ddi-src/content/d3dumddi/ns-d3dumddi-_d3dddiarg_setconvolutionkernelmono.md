@@ -4,7 +4,6 @@ title: _D3DDDIARG_SETCONVOLUTIONKERNELMONO (d3dumddi.h)
 description: The D3DDDIARG_SETCONVOLUTIONKERNELMONO structure describes parameters for setting the monochrome convolution kernel.
 old-location: display\d3dddiarg_setconvolutionkernelmono.htm
 tech.root: display
-ms.assetid: 6a7a19c7-2e2d-4e52-920d-68f1d2d77585
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_SETCONVOLUTIONKERNELMONO structure"]
 ms.keywords: D3DDDIARG_SETCONVOLUTIONKERNELMONO, D3DDDIARG_SETCONVOLUTIONKERNELMONO structure [Display Devices], UMDisplayDriver_param_Structs_57045815-ecbd-4b5f-a94d-5bbf189449f2.xml, _D3DDDIARG_SETCONVOLUTIONKERNELMONO, d3dumddi/D3DDDIARG_SETCONVOLUTIONKERNELMONO, display.d3dddiarg_setconvolutionkernelmono
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_SETCONVOLUTIONKERNELMONO
  - D3DDDIARG_SETCONVOLUTIONKERNELMONO
 ---
 
@@ -52,22 +52,23 @@ The D3DDDIARG_SETCONVOLUTIONKERNELMONO structure describes parameters for settin
 
 ## -struct-fields
 
-### -field Width
+### -field Width [in]
 
-[in] The width, which is the resolution of the filter kernel in the horizontal direction. Valid values for this member are from 1 to 7.
+The width, which is the resolution of the filter kernel in the horizontal direction. Valid values for this member are from 1 to 7.
 
-### -field Height
+### -field Height [in]
 
-[in] The height, which is the resolution of the filter kernel in the vertical direction. Valid values for this member are from 1 to 7.
+The height, which is the resolution of the filter kernel in the vertical direction. Valid values for this member are from 1 to 7.
 
-### -field pKernelRow
+### -field pKernelRow [in]
 
-[in] A pointer to weights in the horizontal direction of a separable filter. In Microsoft Direct3D 9.L and later, <b>pKernelRow</b> must be <b>NULL</b>, which indicates that all of the weights are 1.0.
+A pointer to weights in the horizontal direction of a separable filter. In Microsoft Direct3D 9.L and later, <b>pKernelRow</b> must be <b>NULL</b>, which indicates that all of the weights are 1.0.
 
-### -field pKernelCol
+### -field pKernelCol [in]
 
-[in] A pointer to weights in the vertical direction of a separable filter. In Direct3D 9.L and later, <b>pKernelCol</b> must be <b>NULL</b>, which indicates that all of the weights are 1.0.
+A pointer to weights in the vertical direction of a separable filter. In Direct3D 9.L and later, <b>pKernelCol</b> must be <b>NULL</b>, which indicates that all of the weights are 1.0.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_setconvolutionkernelmono">SetConvolutionKernelMono</a>
+

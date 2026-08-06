@@ -4,7 +4,6 @@ title: _NDIS_PD_CONFIG (ntddndis.h)
 description: This structure holds configuration data for the PD provider.
 old-location: netvista\ndis_pd_config.htm
 tech.root: netvista
-ms.assetid: 2B010641-4CFA-40B6-AB77-BE9F85347134
 ms.date: 05/02/2018
 keywords: ["NDIS_PD_CONFIG structure"]
 ms.keywords: NDIS_PD_CONFIG, NDIS_PD_CONFIG structure [Network Drivers Starting with Windows Vista], _NDIS_PD_CONFIG, netvista.ndis_pd_config, ntddndis/NDIS_PD_CONFIG
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_PD_CONFIG
  - NDIS_PD_CONFIG
 ---
 
@@ -54,7 +54,7 @@ This structure holds configuration data for the PD provider.
 
 ### -field Header
 
-The <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the <b>NDIS_PD_CONFIG</b> structure. Set the members of this structure as follows:
+The <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the <b>NDIS_PD_CONFIG</b> structure. Set the members of this structure as follows:
 
 <ul>
 <li><b>Type</b> = <b>NDIS_OBJECT_TYPE_DEFAULT</b></li>
@@ -84,4 +84,5 @@ This structure must be aligned on an 8-byte boundary.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
+

@@ -1,12 +1,8 @@
 ---
 UID: NS:d3dkmddi._DXGKARG_CREATEPROCESS
-title: _DXGKARG_CREATEPROCESS (d3dkmddi.h)
+title: DXGKARG_CREATEPROCESS (d3dkmddi.h)
 description: DXGKARG_CREATEPROCESS is used with DxgkDdiCreateProcess to create a kernel mode driver object for a Microsoft DirectX graphics kernel process object.
-old-location: display\dxgkarg_createprocess.htm
-ms.assetid: F4FDF254-1C36-43DC-B1FD-376AD7658E61
-ms.date: 05/10/2018
-keywords: ["DXGKARG_CREATEPROCESS structure"]
-ms.keywords: "*INOUT_PDXGKARG_CREATEPROCESS, DXGKARG_CREATEPROCESS, DXGKARG_CREATEPROCESS structure [Display Devices], _DXGKARG_CREATEPROCESS, d3dkmddi/DXGKARG_CREATEPROCESS, display.dxgkarg_createprocess"
+ms.date: 02/06/2025
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
@@ -40,54 +36,52 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_CREATEPROCESS
  - DXGKARG_CREATEPROCESS
 ---
 
-# _DXGKARG_CREATEPROCESS structure
-
+# DXGKARG_CREATEPROCESS structure
 
 ## -description
 
-<b>DXGKARG_CREATEPROCESS</b> is used with <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createprocess">DxgkDdiCreateProcess</a> to create a kernel mode driver object for a Microsoft DirectX graphics kernel process object.
+**DXGKARG_CREATEPROCESS** is used with [**DxgkDdiCreateProcess**](nc-d3dkmddi-dxgkddi_createprocess.md) to create a kernel-mode driver (KMD) process object for a *Dxgkrnl* process object.
 
 ## -struct-fields
 
-### -field hDxgkProcess
+### -field hDxgkProcess [in]
 
-[in] The handle to the DirectX graphics kernel process.
+The handle to the *Dxgkrnl* process (DXGPROCESS).
 
-### -field hKmdProcess
+### -field hKmdProcess [out]
 
-[out] The handle to the kernel mode driver process.
+Output handle to the process object created by the KMD.
 
-### -field Flags
+### -field Flags [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_createprocessflags">DXGK_CREATEPROCESSFLAGS</a> structure describing the operation.
+A [**DXGK_CREATEPROCESSFLAGS**](ns-d3dkmddi-_dxgk_createprocessflags.md) structure describing the process creation operation.
 
-### -field NumPasid
+### -field NumPasid [in]
 
-[in] The number of elements in the process address space identifier array located in the <b>pPasid</b>  member.
+The number of elements in the process address space identifier array located in the **pPasid**  member.
 
-### -field pPasid
+### -field pPasid [in]
 
-[in] A pointer to an array of process address identifiers. There will be one for each physical GPUs.
+A pointer to an array of process address identifiers. There is one identifier for each of the physical GPUs.
 
-### -field hKmdVmWorkerProcess
+### -field hKmdVmWorkerProcess [in]
 
-[in] Driver VM worker process handle when VirtualMachineProcess is set.
+Handle of the driver VM worker process returned by the system when you create a process with [**VirtualMachineWorkerProcess**](ns-d3dkmddi-_dxgk_createprocessflags.md) set. This value is valid only when **VirtualMachineProcess** is set.
 
-### -field ProcessNameLength
+### -field ProcessNameLength [in]
 
-[in] The length of the process name.
+The number of Unicode characters in the array that **pProcessName** points to, not including the terminating NULL.
 
-### -field pProcessName
+### -field pProcessName [in]
 
-[in] The process name. Can be NULL.
+Pointer to a NULL-terminated Unicode string that contains the process name. When **VirtualMachineProcess** is set, this string is the name of the process inside a virtual machine. Can be NULL.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_createprocessflags">DXGK_CREATEPROCESSFLAGS</a>
+[**DXGK_CREATEPROCESSFLAGS**](ns-d3dkmddi-_dxgk_createprocessflags.md)
 
-
-
-<a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createprocess">DxgkDdiCreateProcess</a>
+[**DxgkDdiCreateProcess**](nc-d3dkmddi-dxgkddi_createprocess.md)

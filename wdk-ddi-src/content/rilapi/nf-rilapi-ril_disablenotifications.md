@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_DisableNotifications
 title: RIL_DisableNotifications function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_DisableNotifications function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_disablenotifications.htm
 tech.root: netvista
-ms.assetid: 70635820-9912-4d27-87e2-e713ea33e819
 ms.date: 05/02/2018
 keywords: ["RIL_DisableNotifications function"]
 ms.keywords: RIL_DisableNotifications, RIL_DisableNotifications method [Network Drivers Starting with Windows Vista], netvista.ril_disablenotifications, rilapi/RIL_DisableNotifications

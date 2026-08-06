@@ -4,7 +4,6 @@ title: _INSTANCE_FULL_INFORMATION (fltuserstructures.h)
 description: The INSTANCE_FULL_INFORMATION structure contains full information for a minifilter instance.
 old-location: ifsk\instance_full_information.htm
 tech.root: ifsk
-ms.assetid: 6c034749-c110-4623-8a7b-a19235cad298
 ms.date: 04/16/2018
 keywords: ["INSTANCE_FULL_INFORMATION structure"]
 ms.keywords: FltSystemStructures_db070365-3d91-4bbc-9c53-44c4b2974de0.xml, INSTANCE_FULL_INFORMATION, INSTANCE_FULL_INFORMATION structure [Installable File System Drivers], PINSTANCE_FULL_INFORMATION, PINSTANCE_FULL_INFORMATION structure pointer [Installable File System Drivers], _INSTANCE_FULL_INFORMATION, fltuserstructures/INSTANCE_FULL_INFORMATION, fltuserstructures/PINSTANCE_FULL_INFORMATION, ifsk.instance_full_information
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - fltuserstructures.h
 api_name:
+ - _INSTANCE_FULL_INFORMATION
+ - PINSTANCE_FULL_INFORMATION
  - INSTANCE_FULL_INFORMATION
 ---
 
@@ -139,3 +140,4 @@ The content of all character string buffers referenced by this structure are Uni
 
 
 <a href="/windows-hardware/drivers/ddi/fltuserstructures/ns-fltuserstructures-_instance_partial_information">INSTANCE_PARTIAL_INFORMATION</a>
+

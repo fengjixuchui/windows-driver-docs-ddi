@@ -4,7 +4,6 @@ title: _WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER (wdfchildlist.h)
 description: The WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER structure is a header structure that must be the first member of every identification description structure.
 old-location: wdf\wdf_child_identification_description_header.htm
 tech.root: wdf
-ms.assetid: 9bec95c9-785f-4578-a28a-6cffc986a3b9
 ms.date: 02/26/2018
 keywords: ["WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER structure"]
 ms.keywords: "*PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER, DFDeviceObjectChildListRef_543d7f3d-e182-4147-a1cb-62d39fdde4e3.xml, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER, PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER structure pointer, WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER, WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER structure, _WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER, kmdf.wdf_child_identification_description_header, wdf.wdf_child_identification_description_header, wdfchildlist/PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER, wdfchildlist/WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdfchildlist.h
 api_name:
+ - _WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER
+ - PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER
  - WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER
 ---
 
@@ -101,3 +102,4 @@ For more information about identification descriptions, see <a href="/windows-ha
 
 
 <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_list_config">WDF_CHILD_LIST_CONFIG</a>
+

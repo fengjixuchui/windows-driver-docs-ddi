@@ -4,7 +4,6 @@ title: ScsiPortIoMapTransfer function (srb.h)
 description: The ScsiPortIoMapTransfer routine sets up the system DMA controller for a miniport driver to transfer data through a subordinate HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
 old-location: storage\scsiportiomaptransfer.htm
 tech.root: storage
-ms.assetid: 627a2d4c-22c8-48ea-b409-dc246c85a316
 ms.date: 03/29/2018
 keywords: ["ScsiPortIoMapTransfer function"]
 ms.keywords: ScsiPortIoMapTransfer, ScsiPortIoMapTransfer routine [Storage Devices], scsiprt_9473c978-7355-4296-b8ac-07b20f6ea441.xml, srb/ScsiPortIoMapTransfer, storage.scsiportiomaptransfer
@@ -52,24 +51,24 @@ The <b>ScsiPortIoMapTransfer</b> routine sets up the system DMA controller for a
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension->HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="/windows-hardware/drivers/ddi/srb/nf-srb-scsiportinitialize">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device.
 
-### -param Srb 
+### -param Srb [in]
 
-[in]
+
 Pointer to the SCSI request block for the DMA transfer.
 
-### -param LogicalAddress 
+### -param LogicalAddress [in]
 
-[in]
+
 Specifies the starting address for the transfer operation. This value can be the base address of a buffer into which or from which data is to be transferred. This value can be an offset within such a buffer.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Specifies the number of bytes to be transferred.
 
 ## -returns

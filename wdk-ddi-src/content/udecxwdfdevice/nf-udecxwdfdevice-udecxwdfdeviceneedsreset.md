@@ -2,7 +2,7 @@
 UID: NF:udecxwdfdevice.UdecxWdfDeviceNeedsReset
 title: UdecxWdfDeviceNeedsReset function (udecxwdfdevice.h)
 description: Informs the USB device emulation class extension (UdeCx) that the device needs a reset operation.
-ms.assetid: 92e5253f-4209-4501-bd25-e560e9e39f61
+tech.root: usbref
 ms.date: 09/30/2018
 keywords: ["UdecxWdfDeviceNeedsReset function"]
 ms.keywords: UdecxWdfDeviceNeedsReset
@@ -47,13 +47,13 @@ Informs the USB device emulation class extension (UdeCx) that the device needs a
 
 ## -parameters
 
-### -param UdeWdfDevice
+### -param UdeWdfDevice [In]
 
-[In] A handle to a framework device object that represents the a USB device. The client driver initialized this object in the previous call to [**UdecxWdfDeviceAddUsbDeviceEmulation**](../udecxwdfdevice/nf-udecxwdfdevice-udecxwdfdeviceaddusbdeviceemulation.md).
+A handle to a framework device object that represents a USB device. The client driver initialized this object in the previous call to [**UdecxWdfDeviceAddUsbDeviceEmulation**](../udecxwdfdevice/nf-udecxwdfdevice-udecxwdfdeviceaddusbdeviceemulation.md).
 
-### -param ResetType
+### -param ResetType [In]
 
-[In] A [**UDECX_WDF_DEVICE_RESET_TYPE**](ne-udecxwdfdevice-_udecx_wdf_device_reset_type.md)-type value that indicates the type of reset. Only `UdecxWdfDeviceResetAttemptPlatformLevelDeviceReset` is supported at this time.
+A [**UDECX_WDF_DEVICE_RESET_TYPE**](ne-udecxwdfdevice-_udecx_wdf_device_reset_type.md)-type value that indicates the type of reset. Only `UdecxWdfDeviceResetAttemptPlatformLevelDeviceReset` is supported at this time.
 
 ## -returns
 

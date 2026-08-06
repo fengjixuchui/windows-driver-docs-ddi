@@ -3,14 +3,13 @@ UID: NF:d3dkmthk.D3DKMTLock
 title: D3DKMTLock function (d3dkmthk.h)
 description: The D3DKMTLock function locks an entire allocation or specific pages within an allocation.
 old-location: display\d3dkmtlock.htm
-ms.assetid: d64abd43-edf2-465a-8d99-8fdce1fcd25f
 ms.date: 05/10/2018
 keywords: ["D3DKMTLock function"]
 ms.keywords: D3DKMTLock, D3DKMTLock function [Display Devices], OpenGL_Functions_ca085861-b8a0-434a-843d-9b8052376df5.xml, d3dkmthk/D3DKMTLock, display.d3dkmtlock
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -53,7 +52,7 @@ The <b>D3DKMTLock</b> function locks an entire allocation or specific pages with
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in, out]
 

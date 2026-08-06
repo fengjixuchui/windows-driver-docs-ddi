@@ -4,7 +4,6 @@ title: _NDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM (ntddndis.h)
 description: The NDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM structure specifies the custom status information for a Hyper-V extensible switch port.
 old-location: netvista\ndis_switch_port_feature_status_custom.htm
 tech.root: netvista
-ms.assetid: B3655B3C-4E9E-4FAC-9AAB-B7D4BFB2B91E
 ms.date: 05/02/2018
 keywords: ["NDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM structure"]
 ms.keywords: "*PNDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM, NDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM, NDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM, PNDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM, netvista.ndis_switch_port_feature_status_custom, ntddndis/NDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM, ntddndis/PNDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM
+ - PNDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM
  - NDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM</b> structure specifies the  custo
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
 
@@ -93,7 +94,7 @@ An <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port
 An <b>NDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM</b> structure that contains the feature status data for the specified extensible switch port.  The switch extension populates the <b>FeatureStatusCustomBufferLength</b> member of the structure to reflect the size of the custom status being returned. The Hyper-v Extensible switch populates all other members when issuing the query OID.
 
 </li>
-</ul> The <b>InformationBuffer</b> member of the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure contains a pointer to this information buffer.
+</ul> The <b>InformationBuffer</b> member of the <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure contains a pointer to this information buffer.
 
 ## -see-also
 
@@ -101,7 +102,7 @@ An <b>NDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM</b> structure that contains the fea
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -110,3 +111,4 @@ An <b>NDIS_SWITCH_PORT_FEATURE_STATUS_CUSTOM</b> structure that contains the fea
 
 
 <a href="/windows-hardware/drivers/network/oid-switch-port-feature-status-query">OID_SWITCH_PORT_FEATURE_STATUS_QUERY</a>
+

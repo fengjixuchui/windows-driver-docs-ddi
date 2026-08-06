@@ -1,10 +1,9 @@
 ---
 UID: NF:miniport.READ_PORT_BUFFER_ULONG
 title: READ_PORT_BUFFER_ULONG function (miniport.h)
-description: The READ_PORT_BUFFER_ULONG routine reads a number of ULONG values from the specified port address into a buffer.
+description: The READ_PORT_BUFFER_ULONG function (miniport.h) reads a number of ULONG values from the specified port address into a buffer.
 old-location: kernel\read_port_buffer_ulong.htm
 tech.root: kernel
-ms.assetid: a63028d8-f90e-4f86-81f5-27bc727ecad7
 ms.date: 04/30/2018
 keywords: ["READ_PORT_BUFFER_ULONG function"]
 ms.keywords: READ_PORT_BUFFER_ULONG, READ_PORT_BUFFER_ULONG routine [Kernel-Mode Driver Architecture], k103_ccd1ed9a-a7f9-4ea4-abc4-44ff756ea274.xml, kernel.read_port_buffer_ulong, wdm/READ_PORT_BUFFER_ULONG
@@ -51,19 +50,19 @@ The <b>READ_PORT_BUFFER_ULONG</b> routine reads a number of ULONG values from th
 
 ## -parameters
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Specifies the port address, which must be a mapped memory range in I/O space.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 Pointer to a buffer into which an array of ULONG values is read.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of ULONG values to be read into the buffer.
 
 ## -remarks

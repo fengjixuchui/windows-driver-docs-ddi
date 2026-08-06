@@ -4,7 +4,6 @@ title: _WWAN_DRIVER_CAPS (wwan.h)
 description: The WWAN_DRIVER_CAPS structure represents the capabilities of the miniport driver.
 old-location: netvista\wwan_driver_caps.htm
 tech.root: netvista
-ms.assetid: c0696ac6-d35e-402a-8cb5-d4f23b3b8072
 ms.date: 05/02/2018
 keywords: ["WWAN_DRIVER_CAPS structure"]
 ms.keywords: "*PWWAN_DRIVER_CAPS, PWWAN_DRIVER_CAPS, PWWAN_DRIVER_CAPS structure pointer [Network Drivers Starting with Windows Vista], WWAN_DRIVER_CAPS, WWAN_DRIVER_CAPS structure [Network Drivers Starting with Windows Vista], WwanRef_6770f91c-0fe7-49a9-97cb-6af43e5b5727.xml, _WWAN_DRIVER_CAPS, netvista.wwan_driver_caps, wwan/PWWAN_DRIVER_CAPS, wwan/WWAN_DRIVER_CAPS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_DRIVER_CAPS
+ - PWWAN_DRIVER_CAPS
  - WWAN_DRIVER_CAPS
 ---
 
@@ -81,3 +82,4 @@ The miniport driver has no special capabilities.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_driver_caps">NDIS_WWAN_DRIVER_CAPS</a>
+

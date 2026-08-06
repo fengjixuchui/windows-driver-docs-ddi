@@ -1,11 +1,10 @@
 ---
 UID: NF:dbgeng.IDebugSystemObjects4.GetCurrentSystemServerNameWide
 title: IDebugSystemObjects4::GetCurrentSystemServerNameWide (dbgeng.h)
-description: Gets the server name for the current process.
+description: Gets the server name for the current process. This method belongs to the IDebugSystemObjects4 interface.
 old-location: debugger\idebugsystemobjects4_getcurrentsystemservernamewide.htm
 tech.root: debugger
-ms.assetid: 44BAB9BF-76E6-42C2-B8DD-EB1A960C429C
-ms.date: 05/03/2018
+ms.date: 02/06/2022
 keywords: ["IDebugSystemObjects4::GetCurrentSystemServerNameWide"]
 ms.keywords: GetCurrentSystemServerNameWide, GetCurrentSystemServerNameWide method [Windows Debugging], GetCurrentSystemServerNameWide method [Windows Debugging],IDebugSystemObjects4 interface, IDebugSystemObjects4 interface [Windows Debugging],GetCurrentSystemServerNameWide method, IDebugSystemObjects4.GetCurrentSystemServerNameWide, IDebugSystemObjects4::GetCurrentSystemServerNameWide, dbgeng/IDebugSystemObjects4::GetCurrentSystemServerNameWide, debugger.idebugsystemobjects4_getcurrentsystemservernamewide
 req.header: dbgeng.h
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSystemObjects4.GetCurrentSystemServerNameWide
+ - IDebugSystemObjects4::GetCurrentSystemServerNameWide
 ---
 
 # IDebugSystemObjects4::GetCurrentSystemServerNameWide
@@ -50,20 +49,20 @@ Gets the server name for the current process.
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 A pointer to an output buffer as a Unicode character string.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
-The buffer size.
 
-### -param NameSize 
+The buffer size. This size includes the space for the '\0' terminating character. 
 
-[out, optional]
-A pointer to the name size.
+### -param NameSize [out, optional]
+
+
+A pointer to the name size. This size includes the space for the '\0' terminating character. 
 
 ## -returns
 
@@ -94,3 +93,4 @@ The method was successful.
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects4">IDebugSystemObjects4</a>
+

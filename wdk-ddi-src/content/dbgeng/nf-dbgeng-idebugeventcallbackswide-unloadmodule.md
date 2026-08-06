@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugEventCallbacksWide.UnloadModule
 title: IDebugEventCallbacksWide::UnloadModule (dbgeng.h)
-description: The UnloadModule callback method is called by the engine when a module-unload debugging event occurs in the target.
+description: The IDebugEventCallbacksWide::UnloadModule callback method is called by the engine when a module-unload debugging event occurs in the target.
 old-location: debugger\idebugeventcallbackswide_unloadmodule.htm
 tech.root: debugger
-ms.assetid: 05f3fa93-389e-4ecc-b7c0-71f43691232f
 ms.date: 05/03/2018
 keywords: ["IDebugEventCallbacksWide::UnloadModule"]
 ms.keywords: IDebugEventCallbacksWide interface [Windows Debugging],UnloadModule method, IDebugEventCallbacksWide.UnloadModule, IDebugEventCallbacksWide::UnloadModule, UnloadModule, UnloadModule method [Windows Debugging], UnloadModule method [Windows Debugging],IDebugEventCallbacksWide interface, dbgeng/IDebugEventCallbacksWide::UnloadModule, debugger.idebugeventcallbackswide_unloadmodule
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugEventCallbacksWide.UnloadModule
+ - IDebugEventCallbacksWide::UnloadModule
 ---
 
 # IDebugEventCallbacksWide::UnloadModule
@@ -50,14 +49,14 @@ The <b>UnloadModule</b> callback method is called by the engine when a module-un
 
 ## -parameters
 
-### -param ImageBaseName 
+### -param ImageBaseName [in, optional]
 
-[in, optional]
+
 Specifies the name of the module's image file, which can include the path.  If this information is not available, <i>ImageBaseName</i> will be <b>NULL</b>.
 
-### -param BaseOffset 
+### -param BaseOffset [in]
 
-[in]
+
 Specifies the base address of the module in the target's memory address space.    If this information is not available, <i>BaseOffset</i> will be <b>NULL</b>.
 
 ## -returns
@@ -71,3 +70,4 @@ This method is only called by the engine if the DEBUG_EVENT_UNLOAD_MODULE flag i
 After calling this method, the engine will call <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugeventcallbackswide-changesymbolstate">IDebugEventCallbacksWide::ChangeSymbolState</a>, with the <i>Flags</i> parameter containing the bit flag DEBUG_CSS_UNLOADS.
 
 For more information about handling events, see <a href="/windows-hardware/drivers/debugger/monitoring-events">Monitoring Events</a>.
+

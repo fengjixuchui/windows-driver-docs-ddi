@@ -4,14 +4,13 @@ title: SeTokenGetNoChildProcessRestricted function (ntifs.h)
 description: The SeTokenGetNoChildProcessRestricted routine determines the state of the no child process mitigation. It is not possible to be enforced and audit-only at the same time.
 old-location: ifsk\setokengetnochildprocessrestricted.htm
 tech.root: ifsk
-ms.assetid: 6C42E6C4-91EB-44A3-84E1-CAFDBD5CD724
 ms.date: 04/16/2018
 keywords: ["SeTokenGetNoChildProcessRestricted function"]
 ms.keywords: SeTokenGetNoChildProcessRestricted, SeTokenGetNoChildProcessRestricted function [Installable File System Drivers], ifsk.setokengetnochildprocessrestricted, ntifs/SeTokenGetNoChildProcessRestricted
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows 10, version 1709.
+req.target-min-winverclnt: Windows 10, version 1709.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -51,25 +50,25 @@ The <b>SeTokenGetNoChildProcessRestricted</b> routine determines the state of th
 
 ## -parameters
 
-### -param Token 
+### -param Token [in]
 
-[in]
+
 Specifies a pointer to the access token.
 
-### -param Enforced 
+### -param Enforced [out]
 
-[out]
+
 A pointer to a boolean that returns whether the mitigation is in enforcement mode.
 
-### -param UnlessSecure 
+### -param UnlessSecure [out]
 
-[out]
+
 A pointer to a boolean that returns whether secure process creation is enabled even if
         process creation is restricted.
 
-### -param AuditOnly 
+### -param AuditOnly [out]
 
-[out]
+
 A pointer to a boolean that returns whether the mitigation is in audit-only mode.
 
 ## -see-also

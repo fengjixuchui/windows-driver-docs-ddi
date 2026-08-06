@@ -4,7 +4,6 @@ title: IPrintOemDriverUni::DrvWriteAbortBuf (prcomoem.h)
 description: The IPrintOemDriverUni::DrvWriteAbortBuf method is provided by the Unidrv driver to allow an OEM rendering plug-in to send printer clean-up code after a user terminates a print job.
 old-location: print\iprintoemdriveruni_drvwriteabortbuf.htm
 tech.root: print
-ms.assetid: 4f7aff9b-32cf-42a0-ba3b-ddc87ecdb8c3
 ms.date: 04/20/2018
 keywords: ["IPrintOemDriverUni::DrvWriteAbortBuf"]
 ms.keywords: DrvWriteAbortBuf, DrvWriteAbortBuf method [Print Devices], DrvWriteAbortBuf method [Print Devices],IPrintOemDriverUni interface, IPrintOemDriverUni interface [Print Devices],DrvWriteAbortBuf method, IPrintOemDriverUni.DrvWriteAbortBuf, IPrintOemDriverUni::DrvWriteAbortBuf, prcomoem/IPrintOemDriverUni::DrvWriteAbortBuf, print.iprintoemdriveruni_drvwriteabortbuf, print_unidrv-pscript_rendering_cadf14c7-6a07-4245-a912-d790f11b9edc.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemDriverUni.DrvWriteAbortBuf
+ - IPrintOemDriverUni::DrvWriteAbortBuf
 ---
 
 # IPrintOemDriverUni::DrvWriteAbortBuf
@@ -117,3 +116,4 @@ OEMs use <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdr
 <code>IPrintOemDriverUni::DrvWriteAbortBuf</code> can only be called after <code>IPrintOemDriverUni::DrvWriteSpoolBuf</code> has returned E_FAIL. <code>IPrintOemDriverUni::DrvWriteAbortBuf</code> should not be called more than once per job. 
 
 Rendering plug-ins are described in <a href="/windows-hardware/drivers/print/customizing-microsoft-s-printer-drivers">Customizing Microsoft's Printer Drivers</a>.
+

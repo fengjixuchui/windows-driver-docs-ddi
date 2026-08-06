@@ -4,7 +4,6 @@ title: KsFilterFactoryGetDevice function (ks.h)
 description: The KsFilterFactoryGetDevice function returns the AVStream device to which FilterFactory belongs.
 old-location: stream\ksfilterfactorygetdevice.htm
 tech.root: stream
-ms.assetid: e5b7b014-3e06-49f2-8ccd-45d74592e349
 ms.date: 04/23/2018
 keywords: ["KsFilterFactoryGetDevice function"]
 ms.keywords: KsFilterFactoryGetDevice, KsFilterFactoryGetDevice function [Streaming Media Devices], avfunc_1e2ec536-69a1-4606-9d99-ebdebd25c89a.xml, ks/KsFilterFactoryGetDevice, stream.ksfilterfactorygetdevice
@@ -50,9 +49,9 @@ The<b> KsFilterFactoryGetDevice </b>function returns the AVStream device to whic
 
 ## -parameters
 
-### -param FilterFactory 
+### -param FilterFactory [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilterfactory">KSFILTERFACTORY</a> structure for which to find the corresponding AVStream device.
 
 ## -returns

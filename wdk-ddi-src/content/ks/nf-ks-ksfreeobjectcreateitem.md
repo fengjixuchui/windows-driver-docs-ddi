@@ -4,7 +4,6 @@ title: KsFreeObjectCreateItem function (ks.h)
 description: Frees the slot for the specified create item.
 old-location: stream\ksfreeobjectcreateitem.htm
 tech.root: stream
-ms.assetid: 66f62a55-0bed-48ed-ae79-042bffe75b70
 ms.date: 04/23/2018
 keywords: ["KsFreeObjectCreateItem function"]
 ms.keywords: KsFreeObjectCreateItem, KsFreeObjectCreateItem function [Streaming Media Devices], ks/KsFreeObjectCreateItem, ksfunc_e91e49bc-521e-486e-a67b-33b16b7caa68.xml, stream.ksfreeobjectcreateitem
@@ -51,14 +50,14 @@ Frees the slot for the specified create item.
 
 ## -parameters
 
-### -param Header 
+### -param Header [in]
 
-[in]
+
 Points to the device header on which the create item is attached.
 
-### -param CreateItem 
+### -param CreateItem [in]
 
-[in]
+
 Contains the name of the create item to free.
 
 ## -returns

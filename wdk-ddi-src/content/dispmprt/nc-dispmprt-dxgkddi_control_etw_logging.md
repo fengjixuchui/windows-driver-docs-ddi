@@ -4,14 +4,13 @@ title: DXGKDDI_CONTROL_ETW_LOGGING (dispmprt.h)
 description: The DxgkDdiControlEtwLogging function enables or disables Event Tracing for Windows (ETW) event logging.
 old-location: display\dxgkddicontroletwlogging.htm
 tech.root: display
-ms.assetid: c94a43bb-19d0-4894-80b0-885562fefea5
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_CONTROL_ETW_LOGGING callback function"]
 ms.keywords: DXGKDDI_CONTROL_ETW_LOGGING, DXGKDDI_CONTROL_ETW_LOGGING callback, DmFunctions_87548564-6b7b-431b-b68c-202af84deefc.xml, DxgkDdiControlEtwLogging, DxgkDdiControlEtwLogging callback function [Display Devices], display.dxgkddicontroletwlogging, dispmprt/DxgkDdiControlEtwLogging
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
- - DxgkDdiControlEtwLogging
+ - DXGKDDI_CONTROL_ETW_LOGGING
 ---
 
 # DXGKDDI_CONTROL_ETW_LOGGING callback function
@@ -50,18 +49,18 @@ The <i>DxgkDdiControlEtwLogging </i>function enables or disables Event Tracing f
 
 ## -parameters
 
-### -param Enable 
+### -param Enable [in]
 
-[in]
+
 A Boolean value that indicates whether <i>DxgkDdiControlEtwLogging </i>enables or disables ETW event logging. <b>TRUE</b> indicates that it enables and <b>FALSE</b> indicates that it disables.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A valid bitwise OR of values. Currently, no flags are defined.
 
-### -param Level 
+### -param Level [in]
 
-[in]
+
 A value that indicates the level of event logging.
 

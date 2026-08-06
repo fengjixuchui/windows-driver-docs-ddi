@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.IoStartPacket
 title: IoStartPacket function (wdm.h)
-description: The IoStartPacket routine calls the driver's StartIo routine with the given IRP or inserts the IRP into the device queue associated with the given device object if the device is already busy.
+description: The IoStartPacket routine in wdm.h calls the driver's StartIo routine with an IRP or inserts the IRP into the device queue for the given device object.
 old-location: kernel\iostartpacket.htm
 tech.root: kernel
-ms.assetid: b1fa148e-73e2-437f-bd3a-e879bd457c76
 ms.date: 04/30/2018
 keywords: ["IoStartPacket function"]
 ms.keywords: IoStartPacket, IoStartPacket routine [Kernel-Mode Driver Architecture], k104_d27461b9-32fe-4d7b-853d-fd110fcdb644.xml, kernel.iostartpacket, wdm/IoStartPacket
@@ -50,24 +49,24 @@ The <b>IoStartPacket</b> routine calls the driver's <a href="/windows-hardware/d
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the target device object for the IRP.
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Pointer to the IRP to be processed.
 
-### -param Key 
+### -param Key [in, optional]
 
-[in, optional]
+
 Pointer to a value that determines where to insert the packet into the device queue. If this is zero, the packet is inserted at the tail of the device queue.
 
-### -param CancelFunction 
+### -param CancelFunction [in, optional]
 
-[in, optional]
+
 Specifies the entry point for a driver-supplied <a href="/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterextensionrequest-cancel">Cancel</a> routine.
 
 ## -remarks

@@ -4,7 +4,6 @@ title: RtlStringCbPrintfExA function (ntstrsafe.h)
 description: The RtlStringCbPrintfExW and RtlStringCbPrintfExA functions create a byte-counted text string, with formatting that is based on supplied formatting information.
 old-location: kernel\rtlstringcbprintfex.htm
 tech.root: kernel
-ms.assetid: 514a5b40-c9ba-4ed1-871d-fd6ffde583a6
 ms.date: 04/30/2018
 keywords: ["RtlStringCbPrintfExA function"]
 ms.keywords: RtlStringCbPrintfEx, RtlStringCbPrintfExA, RtlStringCbPrintfExW, RtlStringCbPrintfExW function [Kernel-Mode Driver Architecture], STRSAFE_FILL_BEHIND_NULL, STRSAFE_FILL_ON_FAILURE, STRSAFE_IGNORE_NULLS, STRSAFE_NO_TRUNCATION, STRSAFE_NULL_ON_FAILURE, kernel.rtlstringcbprintfex, ntstrsafe/RtlStringCbPrintfExA, ntstrsafe/RtlStringCbPrintfExW, safestrings_44a6ae33-3b6e-4de4-893c-4a198dfa75da.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -39,9 +38,7 @@ api_location:
  - Ntstrsafe.lib
  - Ntstrsafe.dll
 api_name:
- - RtlStringCbPrintfExW
  - RtlStringCbPrintfExA
- - RtlStringCbPrintfExW
 ---
 
 # RtlStringCbPrintfExA function
@@ -53,14 +50,14 @@ The <b>RtlStringCbPrintfExW</b> and <b>RtlStringCbPrintfExA</b> functions create
 
 ## -parameters
 
-### -param pszDest 
+### -param pszDest [out, optional]
 
-[out, optional]
+
 A pointer to a caller-supplied buffer that receives a formatted, null-terminated string. The function creates this string from both the formatting string that is supplied by <i>pszFormat</i> and the function's argument list. The <i>pszDest</i> pointer can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.
 
-### -param cbDest 
+### -param cbDest [in]
 
-[in]
+
 The size of the destination buffer, in bytes. The buffer must be large enough to contain the formatted string plus the terminating null character. 
 
 For Unicode strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * sizeof(WCHAR). 
@@ -69,19 +66,19 @@ For ANSI strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * sizeof(char
 
 If <i>pszDest</i> is <b>NULL</b>, <i>cbDest</i> must be zero.
 
-### -param ppszDestEnd 
+### -param ppszDestEnd [out, optional]
 
-[out, optional]
+
 If the caller supplies a non-<b>NULL</b> address pointer then, after the operation completes, the function loads that address with a pointer to the destination buffer's resulting null string terminator.
 
-### -param pcbRemaining 
+### -param pcbRemaining [out, optional]
 
-[out, optional]
+
 If the caller supplies a non-<b>NULL</b> address pointer, the function loads the address with the number of unused bytes that are in the buffer pointed to by <i>pszDest</i>, including bytes used for the terminating null character.
 
-### -param dwFlags 
+### -param dwFlags [in]
 
-[in]
+
 One or more flags and, optionally, a fill byte. The flags are defined as follows:
 
 <table>
@@ -141,19 +138,12 @@ If set and the function returns STATUS_BUFFER_OVERFLOW, the contents of the dest
 </tr>
 </table>
 
-### -param pszFormat 
+### -param pszFormat [in, optional]
 
-[in, optional]
+
 A pointer to a null-terminated text string that contains <b>printf</b>-styled <a href="/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions">formatting directives</a>. The <i>pszFormat</i> pointer can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.
 
-### -param param
-
-<p>A list of arguments that are interpreted by the function, based on formatting directives contained in the <i>pszFormat</i> string.</p>
-
-
-
-
-####### - ...
+### -param ...
 
 A list of arguments that are interpreted by the function, based on formatting directives contained in the <i>pszFormat</i> string.
 
@@ -293,3 +283,4 @@ For more information about the safe string functions, see <a href="/windows-hard
 
 
 <a href="/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcchprintfexa">RtlStringCchPrintfEx</a>
+

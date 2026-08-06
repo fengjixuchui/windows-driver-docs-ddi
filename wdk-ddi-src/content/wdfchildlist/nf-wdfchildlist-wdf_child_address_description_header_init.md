@@ -4,7 +4,6 @@ title: WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT function (wdfchildlist.h)
 description: The WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT function initializes a WDF_CHILD_ADDRESS_DESCRIPTION_HEADER structure.
 old-location: wdf\wdf_child_address_description_header_init.htm
 tech.root: wdf
-ms.assetid: acc56cb0-5f89-413f-9fdc-a051cc4947c0
 ms.date: 02/26/2018
 keywords: ["WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT function"]
 ms.keywords: DFDeviceObjectChildListRef_167489bc-617b-440a-a0b2-d5c346b4cf50.xml, WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT, WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT function, kmdf.wdf_child_address_description_header_init, wdf.wdf_child_address_description_header_init, wdfchildlist/WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT
@@ -52,14 +51,14 @@ The <b>WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT</b> function initializes a <a h
 
 ## -parameters
 
-### -param Header 
+### -param Header [out]
 
-[out]
+
 A pointer to a driver-allocated WDF_CHILD_ADDRESS_DESCRIPTION_HEADER structure.
 
-### -param AddressDescriptionSize 
+### -param AddressDescriptionSize [in]
 
-[in]
+
 The size, in bytes, of a driver-defined structure that contains device address information. For more information about specifying the size value, see <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_address_description_header">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a>.
 
 ## -remarks

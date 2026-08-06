@@ -4,12 +4,11 @@ title: _DXGK_BRIGHTNESS_STATE (d3dkmdt.h)
 description: Used to enable smooth brightness control for an integrated display panel.
 old-location: display\dxgk_brightness_state.htm
 tech.root: display
-ms.assetid: 60896a51-63c9-46fd-96ee-9cdbb72ac30c
 ms.date: 05/10/2018
 keywords: ["DXGK_BRIGHTNESS_STATE structure"]
 ms.keywords: DXGK_BRIGHTNESS_STATE, DXGK_BRIGHTNESS_STATE structure [Display Devices], _DXGK_BRIGHTNESS_STATE, d3dkmdt/DXGK_BRIGHTNESS_STATE, display.dxgk_brightness_state
 req.header: d3dkmdt.h
-req.include-header: D3dkmdt.h
+req.include-header: 
 req.target-type: Windows
 req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: Windows Server 2012
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmdt.h
 api_name:
+ - _DXGK_BRIGHTNESS_STATE
  - DXGK_BRIGHTNESS_STATE
 ---
 
@@ -52,20 +52,20 @@ Used to enable smooth brightness control for an integrated display panel. The di
 
 ## -struct-fields
 
-### -field SmoothBrightness
+### -field SmoothBrightness [in]
 
-[in] If set, the display miniport driver must enable smooth brightness control on the display panel.
+If set, the display miniport driver must enable smooth brightness control on the display panel.
 
 Setting this member is equivalent to setting the first bit of a 32-bit value (0x00000001).
 
-### -field Reserved
+### -field Reserved [in]
 
-[in] This member is reserved and should be set to zero.
+This member is reserved and should be set to zero.
 Setting this member is equivalent to setting the remaining 31 bits (0xFFFFFFFE) of a 32-bit value to zeros.
 
-### -field Value
+### -field Value [in]
 
-[in] A member in the union that <b>DXGK_BRIGHTNESS_STATE</b> contains that can hold one 32-bit value that identifies information about whether the display miniport driver must support smooth brightness control.
+A member in the union that <b>DXGK_BRIGHTNESS_STATE</b> contains that can hold one 32-bit value that identifies information about whether the display miniport driver must support smooth brightness control.
 
 ## -remarks
 
@@ -74,3 +74,4 @@ Do not assume that the <b>SmoothBrightness</b> members of <b>DXGK_BRIGHTNESS_STA
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgk_brightness_set_state">DxgkDdiSetBrightnessState</a>
+

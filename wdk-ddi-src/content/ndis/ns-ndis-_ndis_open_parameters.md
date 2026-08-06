@@ -4,7 +4,6 @@ title: _NDIS_OPEN_PARAMETERS (ndis.h)
 description: The NDIS_OPEN_PARAMETERS structure defines the open parameters when a protocol driver calls the NdisOpenAdapterEx function.
 old-location: netvista\ndis_open_parameters.htm
 tech.root: netvista
-ms.assetid: bb61026c-311b-41d1-9fcb-3ac44df2025e
 ms.date: 05/02/2018
 keywords: ["NDIS_OPEN_PARAMETERS structure"]
 ms.keywords: "*PNDIS_OPEN_PARAMETERS, NDIS_OPEN_PARAMETERS, NDIS_OPEN_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_OPEN_PARAMETERS, PNDIS_OPEN_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_OPEN_PARAMETERS, ndis/NDIS_OPEN_PARAMETERS, ndis/PNDIS_OPEN_PARAMETERS, netvista.ndis_open_parameters, protocol_structures_ref_6de65643-050b-43b6-875f-13c493b3d9de.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_OPEN_PARAMETERS
+ - PNDIS_OPEN_PARAMETERS
  - NDIS_OPEN_PARAMETERS
 ---
 
@@ -58,7 +59,7 @@ The NDIS_OPEN_PARAMETERS structure defines the open parameters when a protocol d
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_OPEN_PARAMETERS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_OPEN_PARAMETERS, the 
@@ -86,7 +87,7 @@ The number of elements in the
 
 ### -field SelectedMediumIndex
 
-A pointer to an driver-provided UINT variable that contains an index into the 
+A pointer to a driver-provided UINT variable that contains an index into the 
      <b>MediumArray</b> array. NDIS writes this index which identifies the media type that the underlying
      driver uses.
 
@@ -128,7 +129,7 @@ A protocol driver passes an NDIS_OPEN_PARAMETERS structure when it calls the
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -137,3 +138,4 @@ A protocol driver passes an NDIS_OPEN_PARAMETERS structure when it calls the
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex">ProtocolBindAdapterEx</a>
+

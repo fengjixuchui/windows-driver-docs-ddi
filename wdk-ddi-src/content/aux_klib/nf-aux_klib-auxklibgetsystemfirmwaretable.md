@@ -4,7 +4,6 @@ title: AuxKlibGetSystemFirmwareTable function (aux_klib.h)
 description: The AuxKlibGetSystemFirmwareTable routine retrieves the specified firmware table from the firmware table provider.
 old-location: kernel\auxklibgetsystemfirmwaretable.htm
 tech.root: kernel
-ms.assetid: 548C850F-87AF-43E0-BD87-5531D9874D4D
 ms.date: 04/30/2018
 keywords: ["AuxKlibGetSystemFirmwareTable function"]
 ms.keywords: AuxKlibGetSystemFirmwareTable, AuxKlibGetSystemFirmwareTable routine [Kernel-Mode Driver Architecture], aux_klib/AuxKlibGetSystemFirmwareTable, kernel.auxklibgetsystemfirmwaretable
@@ -51,9 +50,9 @@ The <b>AuxKlibGetSystemFirmwareTable</b> routine retrieves the specified firmwar
 
 ## -parameters
 
-### -param FirmwareTableProviderSignature 
+### -param FirmwareTableProviderSignature [in]
 
-[in]
+
 The identifier of the firmware table provider to which the query is to be directed. This parameter can be one of the following values.
 
 <table>
@@ -93,9 +92,9 @@ The raw SMBIOS firmware table provider.
 </tr>
 </table>
 
-### -param FirmwareTableID 
+### -param FirmwareTableID [in]
 
-[in]
+
 The identifier of the firmware table. The characters in the identifier are in little-endian order.
 
 For example, FACP is the name of a table provided by ACPI. The FACP table is identified by the 4-byte value 'PCAF' (0x50434146) in the <b>Signature</b> field of the <b>DESCRIPTION_HEADER</b> structure at the start of the table. The following code example shows how to specify FACP in an <b>AuxKlibGetSystemFirmwareTable</b> call:
@@ -104,19 +103,19 @@ For example, FACP is the name of a table provided by ACPI. The FACP table is ide
 
 In this example, <code>pBuffer</code> points to the caller-allocated buffer, <code>BUFSIZE</code> is the size in bytes of this buffer, and <code>dataSize</code> is a variable to which the routine writes the number of bytes written to the buffer. For more information about the <b>DESCRIPTION_HEADER</b> structure, see the Advanced Configuration and Power Interface Specification at the <a href="https://go.microsoft.com/fwlink/p/?linkid=57185">Advanced Configuration and Power Interface</a> website.
 
-### -param FirmwareTableBuffer 
+### -param FirmwareTableBuffer [out, optional]
 
-[out, optional]
-A pointer to a caller-allocated buffer that receives the list of firmware tables. If this parameter is NULL, the value written to *<i>ReturnLength</i> is the required buffer size. For more information about the contents of this buffer, see the Remarks section.
 
-### -param BufferLength 
+A pointer to a caller-allocated buffer that receives the list of firmware tables. If this parameter is NULL, the value written to **ReturnLength* is the required buffer size. For more information about the contents of this buffer, see the Remarks section.
 
-[in]
+### -param BufferLength [in]
+
+
 The size, in bytes, of the buffer pointed to by <i>FirmwareTableBuffer</i>.
 
-### -param ReturnLength 
+### -param ReturnLength [out, optional]
 
-[out, optional]
+
 A pointer to a location to which the routine writes the number of bytes of data written to the buffer pointed to by <i>FirmwareTableBuffer</i>.
 
 ## -returns
@@ -169,7 +168,7 @@ struct RawSMBIOSData
 };
 ```
 
-The raw firmware table provider ('FIRM') retrieves the contents of the specified physical address range. The value written to *<i>ReturnLength</i> is the size of the address range.
+The raw firmware table provider ('FIRM') retrieves the contents of the specified physical address range. The value written to **ReturnLength* is the size of the address range.
 
 The ACPI table provider ('ACPI') retrieves the contents of the specified ACPI table. Because OEMs can include ACPI firmware tables that are not listed in the ACPI specification, you should first call <a href="/windows-hardware/drivers/ddi/aux_klib/nf-aux_klib-auxklibenumeratesystemfirmwaretables">AuxKlibEnumerateSystemFirmwareTables</a> to enumerate all ACPI tables that are currently available from the system firmware.
 

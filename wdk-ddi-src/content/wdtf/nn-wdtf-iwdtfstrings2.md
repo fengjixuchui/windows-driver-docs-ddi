@@ -4,7 +4,6 @@ title: IWDTFStrings2 (wdtf.h)
 description: Defines operations and properties for a collection of strings.
 old-location: dtf\iwdtfstrings2.htm
 tech.root: dtf
-ms.assetid: ea7ebda9-9588-4c72-bac6-2bae1f80538e
 ms.date: 04/04/2018
 keywords: ["IWDTFStrings2 interface"]
 ms.keywords: IWDTFStrings2, IWDTFStrings2 interface [Windows Device Testing Framework], IWDTFStrings2 interface [Windows Device Testing Framework],described, Microsoft.WDTF.IWDTFStrings2, dtf.iwdtfstrings2, wdtf/IWDTFStrings2
@@ -50,9 +49,9 @@ Defines operations and properties for a collection of strings.
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDTFStrings2</b> interface inherits from <b>ITracing</b>. <b>IWDTFStrings2</b> also has these types of members:
+The <b>IWDTFStrings2</b> interface inherits from <b>ITracing</b>. <b>IWDTFStrings2</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-<li><a href="https://docs.microsoft.com/">Properties</a></li>
+<li><a href="/">Methods</a></li>
+<li><a href="/">Properties</a></li>
 </ul>
 

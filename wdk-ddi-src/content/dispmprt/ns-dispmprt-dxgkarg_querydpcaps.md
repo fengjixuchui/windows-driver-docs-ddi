@@ -2,8 +2,8 @@
 UID: NS:dispmprt._DXGKARG_QUERYDPCAPS
 title: DXGKARG_QUERYDPCAPS
 ms.date: 03/24/2020
-ms.topic: language-reference
 targetos: Windows
+tech.root: display
 description: The DXGKARG_QUERYDPCAPS structure is a parameter for the DXGKDDI_QUERYDPCAPS callback.
 req.construct-type: structure
 req.ddi-compliance: 
@@ -28,6 +28,7 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGKARG_QUERYDPCAPS
+ - PDXGKARG_QUERYDPCAPS
  - DXGKARG_QUERYDPCAPS
 f1_keywords:
  - _DXGKARG_QUERYDPCAPS

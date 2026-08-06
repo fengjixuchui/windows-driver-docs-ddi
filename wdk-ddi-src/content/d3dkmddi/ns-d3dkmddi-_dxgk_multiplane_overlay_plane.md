@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_PLANE
 title: _DXGK_MULTIPLANE_OVERLAY_PLANE (d3dkmddi.h)
 description: Specifies an overlay plane to display in a call to the DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay function.
 old-location: display\dxgk_multiplane_overlay_plane.htm
-ms.assetid: 8ea1abc7-b861-4217-a3ab-cf60026d9608
 ms.date: 05/10/2018
 keywords: ["DXGK_MULTIPLANE_OVERLAY_PLANE structure"]
 ms.keywords: DXGK_MULTIPLANE_OVERLAY_PLANE, DXGK_MULTIPLANE_OVERLAY_PLANE structure [Display Devices], _DXGK_MULTIPLANE_OVERLAY_PLANE, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_PLANE, display.dxgk_multiplane_overlay_plane
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmddi.h
 api_name:
+ - _DXGK_MULTIPLANE_OVERLAY_PLANE
  - DXGK_MULTIPLANE_OVERLAY_PLANE
 ---
 
@@ -66,13 +66,13 @@ If <b>FALSE</b>, the display miniport driver should disable the specified overla
 
 If a plane was enabled during a previous call to <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_setvidpnsourceaddresswithmultiplaneoverlay">DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay</a>, the driver should continue to display the plane without flipping it.
 
-### -field AllocationSegment
+### -field AllocationSegment [in]
 
-[in] The identifier of a segment that data is read from.
+The identifier of a segment that data is read from.
 
-### -field AllocationAddress
+### -field AllocationAddress [in]
 
-[in] A <b>PHYSICAL_ADDRESS</b> data type (which is defined as <b>LARGE_INTEGER</b>) that indicates the physical address, within the segment that <b>AllocationSegment</b> specifies, where the data is read.
+A <b>PHYSICAL_ADDRESS</b> data type (which is defined as <b>LARGE_INTEGER</b>) that indicates the physical address, within the segment that <b>AllocationSegment</b> specifies, where the data is read.
 
 ### -field hAllocation
 
@@ -97,3 +97,4 @@ A structure of type <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_setvidpnsourceaddresswithmultiplaneoverlay">DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay</a>
+

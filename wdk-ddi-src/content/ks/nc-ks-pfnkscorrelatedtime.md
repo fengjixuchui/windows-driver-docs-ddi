@@ -4,7 +4,6 @@ title: PFNKSCORRELATEDTIME (ks.h)
 description: A streaming minidriver's KStrCorrelatedTime routine is called to retrieve both the presentation time and physical time in a correlated manner. This allows the clock owner to completely determine the current time.
 old-location: stream\kstrcorrelatedtime.htm
 tech.root: stream
-ms.assetid: 6f1b2e93-bc3a-4256-af7b-b015a874112b
 ms.date: 04/23/2018
 keywords: ["PFNKSCORRELATEDTIME callback function"]
 ms.keywords: KStrCorrelatedTime, KStrCorrelatedTime routine [Streaming Media Devices], PFNKSCORRELATEDTIME, ks/KStrCorrelatedTime, ksfunc_06af0f33-8ffd-4f9e-83ad-9f37f3b18f5d.xml, stream.kstrcorrelatedtime
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - KStrCorrelatedTime
+ - PFNKSCORRELATEDTIME
 ---
 
 # PFNKSCORRELATEDTIME callback function
@@ -50,14 +49,14 @@ A streaming minidriver's <i>KStrCorrelatedTime</i> routine is called to retrieve
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to the minidriver-supplied information context. The minidriver passes the information context to <a href="/windows-hardware/drivers/ddi/ks/nf-ks-ksallocatedefaultclockex">KsAllocateDefaultClockEx</a> in the function's <i>DeferredContext</i> parameter when the minidriver allocates a custom DPC timer object.
 
-### -param SystemTime 
+### -param SystemTime [out]
 
-[out]
+
 Specifies a pointer to a variable that receives the performance counter frequency.
 
 ## -returns
@@ -85,3 +84,4 @@ The minidriver-supplied <i>KStrCorrelatedTimer </i>must have the same characteri
 
 
 <a href="/windows-hardware/drivers/ddi/ks/nf-ks-ksallocatedefaultclockex">KsAllocateDefaultClockEx</a>
+

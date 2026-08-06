@@ -4,7 +4,6 @@ title: EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES (wdfio.h)
 description: A driver's EvtIoAllocateRequestResources callback function allocates request-specific resources that the driver requires to process the specified request.
 old-location: wdf\evtioallocaterequestresources.htm
 tech.root: wdf
-ms.assetid: 6a60c563-582a-4919-bf0f-919deb3055d3
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES callback function"]
 ms.keywords: DFQueueObjectRef_85702d4a-4861-4512-a392-f106e038d3be.xml, EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES, EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES callback, EvtIoAllocateRequestResources, EvtIoAllocateRequestResources callback function, kmdf.evtioallocaterequestresources, wdf.evtioallocaterequestresources, wdfio/EvtIoAllocateRequestResources
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfio.h
 api_name:
- - EvtIoAllocateRequestResources
+ - EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES
 ---
 
 # EVT_WDF_IO_ALLOCATE_REQUEST_RESOURCES callback function
@@ -52,14 +51,14 @@ A driver's <i>EvtIoAllocateRequestResources</i> callback function allocates requ
 
 ## -parameters
 
-### -param Queue 
+### -param Queue [in]
 
-[in]
+
 A handle to an I/O queue object.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a request object that the framework has created. The framework has not yet added the request object to the I/O queue that the <i>Queue</i> parameter's handle specifies.
 
 ## -returns
@@ -89,3 +88,4 @@ This callback function can be called at IRQL <= DISPATCH_LEVEL. If the IRQL is P
 
 
 <a href="/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueueassignforwardprogresspolicy">WdfIoQueueAssignForwardProgressPolicy</a>
+

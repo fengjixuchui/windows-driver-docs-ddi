@@ -1,10 +1,9 @@
 ---
 UID: NF:portcls.IMiniportWavePci.NewStream
 title: IMiniportWavePci::NewStream (portcls.h)
-description: The NewStream method creates a new instance of a logical stream associated with a specified physical channel.
+description: The (IMiniportWavePci) NewStream (portcls.h) method creates a new instance of a logical stream associated with a specified physical channel.
 old-location: audio\iminiportwavepci_newstream.htm
 tech.root: audio
-ms.assetid: cad3eeb5-2106-4648-97e5-cf3bb8601599
 ms.date: 05/08/2018
 keywords: ["IMiniportWavePci::NewStream"]
 ms.keywords: IMiniportWavePci interface [Audio Devices],NewStream method, IMiniportWavePci.NewStream, IMiniportWavePci::NewStream, NewStream, NewStream method [Audio Devices], NewStream method [Audio Devices],IMiniportWavePci interface, audio.iminiportwavepci_newstream, audmp-routines_cf0b0f93-033d-47f1-8e07-c0407e0a89f3.xml, portcls/IMiniportWavePci::NewStream
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWavePci.NewStream
+ - IMiniportWavePci::NewStream
 ---
 
 # IMiniportWavePci::NewStream
@@ -50,49 +49,49 @@ The <code>NewStream</code> method creates a new instance of a logical stream ass
 
 ## -parameters
 
-### -param Stream 
+### -param Stream [out]
 
-[out]
+
 Output pointer for the new stream. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the stream object's <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavepcistream">IMiniportWavePciStream</a> interface. The caller specifies a valid, non-<b>NULL</b> pointer for this parameter.
 
-### -param OuterUnknown 
+### -param OuterUnknown [in, optional]
 
-[in, optional]
+
 Pointer to the <b>IUnknown</b> interface of an object that needs to aggregate the stream object. This parameter is optional. If aggregation is not required, the caller specifies this parameter as <b>NULL</b>.
 
-### -param PoolType 
+### -param PoolType [in]
 
-[in]
+
 Specifies the type of memory pool from which the storage for the DMA-channel object should be allocated. This parameter will be one of the nonpaged pool types defined in the <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type">POOL_TYPE</a> enumeration.
 
-### -param PortStream 
+### -param PortStream [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavepcistream">IPortWavePciStream</a> interface of the port driver's stream object.
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 Specifies a pin ID identifying the pin that is to be opened. If the WavePci miniport driver's filter descriptor specifies a total of <i>n</i> pin factories on the filter, then valid values for parameter <i>Pin</i> are in the range 0 to <i>n</i>-1.
 
-### -param Capture 
+### -param Capture [in]
 
-[in]
+
 Specifies whether to create a capture stream or a render stream. This parameter is <b>TRUE</b> for an capture (input) channel, and <b>FALSE</b> for an playback (output) channel.
 
-### -param DataFormat 
+### -param DataFormat [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat">KSDATAFORMAT</a> structure that specifies the stream's data format.
 
-### -param DmaChannel 
+### -param DmaChannel [out]
 
-[out]
+
 Output pointer for the DMA channel. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the stream's <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-idmachannel">IDmaChannel</a> object. The caller specifies a valid, non-<b>NULL</b> pointer for this parameter.
 
-### -param ServiceGroup 
+### -param ServiceGroup [out]
 
-[out]
+
 Output pointer for the service group. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iservicegroup">IServiceGroup</a> interface of the stream's service group object. This is the service group that is being registered for interrupt notification. The caller specifies a valid, non-<b>NULL</b> pointer for this parameter.
 
 ## -returns
@@ -158,3 +157,4 @@ Note that the <code>NewStream</code> methods for the other port types (WaveCycli
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type">POOL_TYPE</a>
+

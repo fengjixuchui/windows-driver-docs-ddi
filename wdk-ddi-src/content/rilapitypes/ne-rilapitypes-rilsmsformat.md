@@ -1,10 +1,9 @@
 ---
 UID: NE:rilapitypes.RILSMSFORMAT
 title: RILSMSFORMAT (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILSMSFORMAT enumeration for internal use only. Don't use this enumeration in your code."
 old-location: netvista\rilsmsformat_2.htm
 tech.root: netvista
-ms.assetid: c2e115d7-810f-4415-9177-6bad7bbc0f5b
 ms.date: 02/26/2018
 keywords: ["RILSMSFORMAT enumeration"]
 ms.keywords: RILSMSFORMAT, RILSMSFORMAT enumeration [Network Drivers Starting with Windows Vista], RIL_SMSFORMAT_3GPP, RIL_SMSFORMAT_3GPP2, RIL_SMSFORMAT_MAX, netvista.rilsmsformat_2, rilapitypes/RILSMSFORMAT, rilapitypes/RIL_SMSFORMAT_3GPP, rilapitypes/RIL_SMSFORMAT_3GPP2, rilapitypes/RIL_SMSFORMAT_MAX
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: RILSMSFORMAT
-req.product: Windows 10 or later.
 f1_keywords:
  - RILSMSFORMAT
  - rilapitypes/RILSMSFORMAT

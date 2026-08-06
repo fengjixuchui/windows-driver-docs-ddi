@@ -4,7 +4,6 @@ title: _DXVA_SampleFormat (dxva.h)
 description: The DXVA_SampleFormat enumeration type describes the format of data that the input sample contains.
 old-location: display\dxva_sampleformat.htm
 tech.root: display
-ms.assetid: 90cec61b-fe49-4fc7-b666-e74f745a00b1
 ms.date: 05/10/2018
 keywords: ["DXVA_SampleFormat enumeration"]
 ms.keywords: DXVA_SampleFieldInterleavedEvenFirst, DXVA_SampleFieldInterleavedOddFirst, DXVA_SampleFieldSingleEven, DXVA_SampleFieldSingleOdd, DXVA_SampleFormat, DXVA_SampleFormat enumeration [Display Devices], DXVA_SampleFormatMask, DXVA_SamplePreviousFrame, DXVA_SampleProgressiveFrame, DXVA_SampleSubStream, DXVA_SampleUnknown, _DXVA_SampleFormat, display.dxva_sampleformat, dxva/DXVA_SampleFieldInterleavedEvenFirst, dxva/DXVA_SampleFieldInterleavedOddFirst, dxva/DXVA_SampleFieldSingleEven, dxva/DXVA_SampleFieldSingleOdd, dxva/DXVA_SampleFormat, dxva/DXVA_SampleFormatMask, dxva/DXVA_SamplePreviousFrame, dxva/DXVA_SampleProgressiveFrame, dxva/DXVA_SampleSubStream, dxva/DXVA_SampleUnknown, dxvaref_342ab3ab-8498-4d6f-a052-aff84c407436.xml
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - dxva.h
 api_name:
+ - _DXVA_SampleFormat
  - DXVA_SampleFormat
 ---
 
@@ -101,3 +101,4 @@ Specifies that the sample contains a video substream.
 
 
 <a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_videosample2">DXVA_VideoSample2</a>
+

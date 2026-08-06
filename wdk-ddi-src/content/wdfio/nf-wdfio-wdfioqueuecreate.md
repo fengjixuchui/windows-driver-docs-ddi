@@ -4,7 +4,6 @@ title: WdfIoQueueCreate function (wdfio.h)
 description: The WdfIoQueueCreate method creates and configures an I/O queue for a specified device.
 old-location: wdf\wdfioqueuecreate.htm
 tech.root: wdf
-ms.assetid: cd7e993e-1381-4b0c-b046-716e839dbb62
 ms.date: 02/26/2018
 keywords: ["WdfIoQueueCreate function"]
 ms.keywords: DFQueueObjectRef_97b06453-cf79-4944-85d7-530b83211353.xml, WdfIoQueueCreate, WdfIoQueueCreate method, kmdf.wdfioqueuecreate, wdf.wdfioqueuecreate, wdfio/WdfIoQueueCreate
@@ -55,24 +54,24 @@ The <b>WdfIoQueueCreate</b> method creates and configures an I/O queue for a spe
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to the framework device object that the queue will be associated with.
 
-### -param Config 
+### -param Config [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfio/ns-wdfio-_wdf_io_queue_config">WDF_IO_QUEUE_CONFIG</a> structure.
 
-### -param QueueAttributes 
+### -param QueueAttributes [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the new object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param Queue 
+### -param Queue [out, optional]
 
-[out, optional]
+
 A pointer to a location that receives a handle to a framework queue object.
 
 ## -returns

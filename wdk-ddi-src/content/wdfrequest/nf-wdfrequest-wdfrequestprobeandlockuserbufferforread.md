@@ -4,7 +4,6 @@ title: WdfRequestProbeAndLockUserBufferForRead function (wdfrequest.h)
 description: The WdfRequestProbeAndLockUserBufferForRead method verifies that an I/O request's user-mode buffer is readable, and then it locks the buffer's physical memory pages so drivers in the driver stack can read the buffer.
 old-location: wdf\wdfrequestprobeandlockuserbufferforread.htm
 tech.root: wdf
-ms.assetid: 68fbaa04-ca7a-46b4-a7ca-c3d44443c2af
 ms.date: 02/26/2018
 keywords: ["WdfRequestProbeAndLockUserBufferForRead function"]
 ms.keywords: DFRequestObjectRef_01a2309b-8cae-4a38-9e47-68619f422af2.xml, WdfRequestProbeAndLockUserBufferForRead, WdfRequestProbeAndLockUserBufferForRead method, kmdf.wdfrequestprobeandlockuserbufferforread, wdf.wdfrequestprobeandlockuserbufferforread, wdfrequest/WdfRequestProbeAndLockUserBufferForRead
@@ -53,24 +52,24 @@ The <b>WdfRequestProbeAndLockUserBufferForRead</b> method verifies that an I/O r
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to the request's input buffer. For more information, see the following Remarks section.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The length, in bytes, of the request's input buffer.
 
-### -param MemoryObject 
+### -param MemoryObject [out]
 
-[out]
+
 A pointer to a location that receives a handle to a framework memory object that represents the user input buffer.
 
 ## -returns
@@ -158,6 +157,8 @@ The user-mode buffer that the <i>Buffer</i> parameter specifies can be the buffe
 The buffer length that the <i>Length</i> parameter specifies must not be larger than the buffer's actual size. Otherwise, drivers can access memory outside of the buffer, which is a security risk.
 
 If <b>WdfRequestProbeAndLockUserBufferForRead</b> returns STATUS_SUCCESS, the driver receives a handle to a framework memory object that represents the user-mode buffer. To access the buffer, the driver must call <a href="/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorygetbuffer">WdfMemoryGetBuffer</a>.
+
+The framework memory object is automatically released when the driver calls [**WdfRequestComplete**](./nf-wdfrequest-wdfrequestcomplete.md).
 
 For more information about <b>WdfRequestProbeAndLockUserBufferForRead</b>, see <a href="/windows-hardware/drivers/wdf/accessing-data-buffers-in-wdf-drivers">Accessing Data Buffers in Framework-Based Drivers</a>.
 

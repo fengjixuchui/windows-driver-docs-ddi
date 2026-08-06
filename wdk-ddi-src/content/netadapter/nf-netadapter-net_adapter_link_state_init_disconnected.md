@@ -3,8 +3,7 @@ UID: NF:netadapter.NET_ADAPTER_LINK_STATE_INIT_DISCONNECTED
 title: NET_ADAPTER_LINK_STATE_INIT_DISCONNECTED function (netadapter.h)
 description: Initializes a NET_ADAPTER_LINK_STATE structure for an adapter that is disconnected from the network.
 tech.root: netvista
-ms.assetid: 3c6fe564-8464-4377-ba0f-b83605536322
-ms.date: 02/05/2018
+ms.date: 03/30/2022
 keywords: ["NET_ADAPTER_LINK_STATE_INIT_DISCONNECTED function"]
 ms.keywords: NET_ADAPTER_LINK_STATE_INIT_DISCONNECTED
 req.header: netadapter.h
@@ -13,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: Windows 10
 req.target-min-winversvr: Windows Server 2016
 req.kmdf-ver: 1.21
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
@@ -50,7 +49,7 @@ Initializes a [NET_ADAPTER_LINK_STATE](ns-netadapter-_net_adapter_link_state.md)
 
 ## -parameters
 
-### -param LinkState
+### -param LinkState [_Out_]
 
 A pointer to a driver-allocated [NET_ADAPTER_LINK_STATE](ns-netadapter-_net_adapter_link_state.md) structure.
 
@@ -62,7 +61,7 @@ An initialized **NET_ADAPTER_LINK_STATE** structure is an input parameter value 
 
 ## -see-also
 
-[NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES](../ndis/ns-ndis-_ndis_miniport_adapter_attributes.md)
+[NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES](../miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes.md)
 
 [NET_ADAPTER_LINK_STATE_INIT](nf-netadapter-net_adapter_link_state_init.md)
 

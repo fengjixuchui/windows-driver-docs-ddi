@@ -4,7 +4,6 @@ title: WdfIoQueueRetrieveFoundRequest function (wdfio.h)
 description: The WdfIoQueueRetrieveFoundRequest method delivers a specified request to the driver, so that the driver can process the request.
 old-location: wdf\wdfioqueueretrievefoundrequest.htm
 tech.root: wdf
-ms.assetid: 34447879-1a2e-45de-b754-121a5956330a
 ms.date: 02/26/2018
 keywords: ["WdfIoQueueRetrieveFoundRequest function"]
 ms.keywords: DFQueueObjectRef_17174143-5657-4500-bd07-bf9487e8048e.xml, WdfIoQueueRetrieveFoundRequest, WdfIoQueueRetrieveFoundRequest method, kmdf.wdfioqueueretrievefoundrequest, wdf.wdfioqueueretrievefoundrequest, wdfio/WdfIoQueueRetrieveFoundRequest
@@ -55,19 +54,19 @@ The <b>WdfIoQueueRetrieveFoundRequest</b> method delivers a specified request to
 
 ## -parameters
 
-### -param Queue 
+### -param Queue [in]
 
-[in]
+
 A handle to a framework queue object.
 
-### -param FoundRequest 
+### -param FoundRequest [in]
 
-[in]
+
 A handle to a framework request object that was obtained by calling <a href="/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuefindrequest">WdfIoQueueFindRequest</a>.
 
-### -param OutRequest 
+### -param OutRequest [out]
 
-[out]
+
 A pointer to a location that receives a handle to a framework request object. The driver must use this handle when processing the request.
 
 ## -returns

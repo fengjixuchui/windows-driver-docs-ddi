@@ -1,10 +1,9 @@
 ---
 UID: NS:wdm._PCI_EXPRESS_CORRECTABLE_ERROR_STATUS
 title: _PCI_EXPRESS_CORRECTABLE_ERROR_STATUS (wdm.h)
-description: The PCI_EXPRESS_CORRECTABLE_ERROR_STATUS structure describes a PCI Express (PCIe) correctable error status register of a PCIe advanced error reporting capability structure.
+description: The _PCI_EXPRESS_CORRECTABLE_ERROR_STATUS structure (wdm.h) describes a PCI Express (PCIe) correctable error status register for advanced error reporting.
 old-location: pci\pci_express_correctable_error_status.htm
 tech.root: PCI
-ms.assetid: 24d10f3a-5188-4dda-8e4e-1dc7ae2ddc88
 ms.date: 02/24/2018
 keywords: ["PCI_EXPRESS_CORRECTABLE_ERROR_STATUS structure"]
 ms.keywords: "*PPCI_CORRECTABLE_ERROR_STATUS, PCI.pci_express_correctable_error_status, PCI_EXPRESS_CORRECTABLE_ERROR_STATUS, PCI_EXPRESS_CORRECTABLE_ERROR_STATUS union [Buses], PPCI_CORRECTABLE_ERROR_STATUS, PPCI_CORRECTABLE_ERROR_STATUS union pointer [Buses], _PCI_EXPRESS_CORRECTABLE_ERROR_STATUS, pci_struct_1366a090-7405-4cd8-b725-19753a248441.xml, wdm/PCI_EXPRESS_CORRECTABLE_ERROR_STATUS, wdm/PPCI_CORRECTABLE_ERROR_STATUS"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: PASSIVE_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: PCI_EXPRESS_CORRECTABLE_ERROR_STATUS, *PPCI_CORRECTABLE_ERROR_STATUS
-req.product: Windows 10 or later.
 f1_keywords:
  - _PCI_EXPRESS_CORRECTABLE_ERROR_STATUS
  - wdm/_PCI_EXPRESS_CORRECTABLE_ERROR_STATUS
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _PCI_EXPRESS_CORRECTABLE_ERROR_STATUS
+ - PPCI_CORRECTABLE_ERROR_STATUS
  - PCI_EXPRESS_CORRECTABLE_ERROR_STATUS
 ---
 
@@ -57,54 +57,57 @@ The PCI_EXPRESS_CORRECTABLE_ERROR_STATUS structure describes a PCI Express (PCIe
 
 ### -field DUMMYSTRUCTNAME
 
-### -field AsULONG
 
-A ULONG representation of the contents of the PCI_EXPRESS_CORRECTABLE_ERROR_STATUS structure.
-
-
-#### - AdvisoryNonFatalError
+### -field DUMMYSTRUCTNAME.AdvisoryNonFatalError
 
 A single bit that indicates that an advisory non-fatal error has occurred.
 
 
-#### - BadDLLP
+### -field DUMMYSTRUCTNAME.BadDLLP
 
 A single bit that indicates that a bad data link layer packet (DLLP) error has occurred.
 
 
-#### - BadTLP
+### -field DUMMYSTRUCTNAME.BadTLP
 
 A single bit that indicates that a bad transaction layer packet (TLP) error has occurred.
 
 
-#### - ReceiverError
+### -field DUMMYSTRUCTNAME.ReceiverError
 
 A single bit that indicates that a receiver error has occurred.
 
 
-#### - ReplayNumRollover
+### -field DUMMYSTRUCTNAME.ReplayNumRollover
 
 A single bit that indicates that the counter that counts the number of times the retry buffer has been re-transmitted has rolled over.
 
 
-#### - ReplayTimerTimeout
+### -field DUMMYSTRUCTNAME.ReplayTimerTimeout
 
 A single bit that indicates that the replay timer has timed out.
 
 
-#### - Reserved1
+### -field DUMMYSTRUCTNAME.Reserved1
 
 Reserved.
 
 
-#### - Reserved2
+### -field DUMMYSTRUCTNAME.Reserved2
 
 Reserved.
 
+### -field DUMMYSTRUCTNAME.CorrectedInternalError
 
-#### - Reserved3
+### -field DUMMYSTRUCTNAME.HeaderLogOverflow
+
+### -field DUMMYSTRUCTNAME.Reserved3
 
 Reserved.
+
+### -field AsULONG
+
+A ULONG representation of the contents of the PCI_EXPRESS_CORRECTABLE_ERROR_STATUS structure.
 
 ## -syntax
 
@@ -142,3 +145,4 @@ A PCI_EXPRESS_CORRECTABLE_ERROR_STATUS structure is contained in the <a href="/w
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_pci_express_rootport_aer_capability">PCI_EXPRESS_ROOTPORT_AER_CAPABILITY</a>
+

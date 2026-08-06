@@ -4,7 +4,6 @@ title: NdisMWriteLogData function (ndis.h)
 description: NdisMWriteLogData transfers driver-supplied information into the log file for consumption and display by a driver-dedicated Win32 application.
 old-location: netvista\ndismwritelogdata.htm
 tech.root: netvista
-ms.assetid: 38923308-0268-49b3-9f9d-0fa2b62f7533
 ms.date: 05/02/2018
 keywords: ["NdisMWriteLogData function"]
 ms.keywords: NdisMWriteLogData, NdisMWriteLogData function [Network Drivers Starting with Windows Vista], miniport_logging_ref_ca57cae5-4951-4c02-a745-d668bc8ec663.xml, ndis/NdisMWriteLogData, netvista.ndismwritelogdata
@@ -52,20 +51,20 @@ api_name:
 
 ## -parameters
 
-### -param LogHandle 
+### -param LogHandle [in]
 
-[in]
+
 Specifies the handle returned by 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcreatelog">NdisMCreateLog</a>.
 
-### -param LogBuffer 
+### -param LogBuffer [in]
 
-[in]
+
 Pointer to a driver-allocated buffer containing the information to be written.
 
-### -param LogBufferSize 
+### -param LogBufferSize [in]
 
-[in]
+
 Specifies how many bytes of data to copy into the log file.
 
 ## -returns

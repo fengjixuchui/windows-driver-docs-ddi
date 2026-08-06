@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._WHEAP_ERROR_RECORD_EVENT
 title: WHEAP_ERROR_RECORD_EVENT
-description: 
-tech.root: 
-ms.assetid: d2786911-c3c1-4660-8876-ec68ecc94e4f
+description: "Learn more about: WHEAP_ERROR_RECORD_EVENT structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEAP_ERROR_RECORD_EVENT structure"]
 ms.keywords: WHEAP_ERROR_RECORD_EVENT, WHEAP_ERROR_RECORD_EVENT, *PWHEAP_ERROR_RECORD_EVENT,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEAP_ERROR_RECORD_EVENT
+ - PWHEAP_ERROR_RECORD_EVENT
  - WHEAP_ERROR_RECORD_EVENT
-product:
- - Windows
 ---
 
 # WHEAP_ERROR_RECORD_EVENT structure

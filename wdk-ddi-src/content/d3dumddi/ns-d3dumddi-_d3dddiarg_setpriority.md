@@ -4,7 +4,6 @@ title: _D3DDDIARG_SETPRIORITY (d3dumddi.h)
 description: The D3DDDIARG_SETPRIORITY structure describes the priority level to set for a managed texture.
 old-location: display\d3dddiarg_setpriority.htm
 tech.root: display
-ms.assetid: d3dd52de-6d28-4d71-9b64-ba79e17bd9ee
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_SETPRIORITY structure"]
 ms.keywords: D3DDDIARG_SETPRIORITY, D3DDDIARG_SETPRIORITY structure [Display Devices], UMDisplayDriver_param_Structs_e416cff1-5cad-4488-a3e2-ea0b42a7cd81.xml, _D3DDDIARG_SETPRIORITY, d3dumddi/D3DDDIARG_SETPRIORITY, display.d3dddiarg_setpriority
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_SETPRIORITY
  - D3DDDIARG_SETPRIORITY
 ---
 
@@ -69,3 +69,4 @@ The priority level at which a texture is set determines its eviction order from 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_setpriority">SetPriority</a>
+

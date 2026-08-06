@@ -4,7 +4,6 @@ title: _HIDP_DEVICE_DESC (hidpddi.h)
 description: Contains the device description block filled in collection descriptions as linked lists. This structure is used by HidP_GetCollectionDescription.
 old-location: hid\hidp_device_desc.htm
 tech.root: hid
-ms.assetid: C51D645B-5DF2-4F23-904B-AB56F97520CB
 ms.date: 04/30/2018
 keywords: ["HIDP_DEVICE_DESC structure"]
 ms.keywords: "*PHIDP_DEVICE_DESC, HIDP_DEVICE_DESC, HIDP_DEVICE_DESC structure [Human Input Devices], PHIDP_DEVICE_DESC, PHIDP_DEVICE_DESC structure pointer [Human Input Devices], _HIDP_DEVICE_DESC, hid.hidp_device_desc, hidpddi/HIDP_DEVICE_DESC, hidpddi/PHIDP_DEVICE_DESC"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Hidpddi.h
 api_name:
+ - _HIDP_DEVICE_DESC
+ - PHIDP_DEVICE_DESC
  - HIDP_DEVICE_DESC
 ---
 
@@ -79,3 +80,4 @@ A <a href="/windows-hardware/drivers/ddi/hidpddi/ns-hidpddi-_hidp_getcoldesc_dbg
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/hidpddi/nf-hidpddi-hidp_getcollectiondescription">HidP_GetCollectionDescription</a>
+

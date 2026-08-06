@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelManager2.UnregisterNamedModel
 title: IDataModelManager2::UnregisterNamedModel (dbgmodel.h)
-description: The UnregisterNamedModel method undoes a prior call to RegisterNamedModel.
-ms.assetid: 0bdd2601-f489-4b9d-9b9f-41f058044dc8
+description: "The IDataModelManager2::UnregisterNamedModel method undoes a prior call to the RegisterNamedModel method."
 ms.date: 09/11/2018
 keywords: ["IDataModelManager2::UnregisterNamedModel"]
 ms.keywords: IDataModelManager2::UnregisterNamedModel, UnregisterNamedModel, IDataModelManager2.UnregisterNamedModel, IDataModelManager2::UnregisterNamedModel, IDataModelManager2.UnregisterNamedModel
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager2.UnregisterNamedModel
+ - IDataModelManager2::UnregisterNamedModel
 ---
 
 # IDataModelManager2::UnregisterNamedModel

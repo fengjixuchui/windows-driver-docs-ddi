@@ -4,7 +4,6 @@ title: WdfUsbTargetDeviceCreateWithParameters function (wdfusb.h)
 description: The WdfUsbTargetDeviceCreateWithParameters method creates a framework USB device object for a specified framework device object and opens the USB device for I/O operations.
 old-location: wdf\wdfusbtargetdevicecreatewithparameters.htm
 tech.root: wdf
-ms.assetid: E93A944E-81D5-4059-ADA6-2760A091C30B
 ms.date: 06/24/2019
 keywords: ["WdfUsbTargetDeviceCreateWithParameters function"]
 ms.keywords: WdfUsbTargetDeviceCreateWithParameters, WdfUsbTargetDeviceCreateWithParameters method, kmdf.wdfusbtargetdevicecreatewithconfig, kmdf.wdfusbtargetdevicecreatewithparameters, wdf.wdfusbtargetdevicecreatewithparameters, wdfusb/WdfUsbTargetDeviceCreateWithParameters
@@ -58,24 +57,24 @@ The method also specifies configuration information for the framework USB device
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Config 
+### -param Config [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_device_create_config">WDF_USB_DEVICE_CREATE_CONFIG</a> structure that contains configuration information for the framework USB device object.
 
-### -param Attributes 
+### -param Attributes [in, optional]
 
-[in, optional]
+
 A pointer to a caller-supplied <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the new framework USB device object. (The structure's <b>ParentObject</b> member must be NULL.) This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param UsbDevice 
+### -param UsbDevice [out]
 
-[out]
+
 A pointer to a location that receives a handle to the new framework USB device object.
 
 ## -returns

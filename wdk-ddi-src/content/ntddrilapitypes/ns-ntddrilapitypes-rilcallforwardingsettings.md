@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILCALLFORWARDINGSETTINGS
 title: RILCALLFORWARDINGSETTINGS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILCALLFORWARDINGSETTINGS structure for internal use only. Don't use the RILCALLFORWARDINGSETTINGS structure in your code."
 old-location: netvista\rilcallforwardingsettings.htm
 tech.root: netvista
-ms.assetid: 3603bc82-0058-43bd-9d45-90c198a20040
 ms.date: 05/02/2018
 keywords: ["RILCALLFORWARDINGSETTINGS structure"]
 ms.keywords: "*LPRILCALLFORWARDINGSETTINGS, RILCALLFORWARDINGSETTINGS, RILCALLFORWARDINGSETTINGS structure [Network Drivers Starting with Windows Vista], netvista.rilcallforwardingsettings, ntddrilapitypes/RILCALLFORWARDINGSETTINGS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILCALLFORWARDINGSETTINGS
+ - LPRILCALLFORWARDINGSETTINGS
 ---
 
 # RILCALLFORWARDINGSETTINGS structure (ntddrilapitypes.h)

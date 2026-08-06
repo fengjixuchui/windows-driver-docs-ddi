@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_GetRadioConfiguration
 title: RIL_GetRadioConfiguration function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_GetRadioConfiguration function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_getradioconfiguration.htm
 tech.root: netvista
-ms.assetid: 8e450e58-41e0-4df2-83d9-8975d437cdcb
 ms.date: 05/02/2018
 keywords: ["RIL_GetRadioConfiguration function"]
 ms.keywords: RIL_GetRadioConfiguration, RIL_GetRadioConfiguration method [Network Drivers Starting with Windows Vista], netvista.ril_getradioconfiguration, rilapi/RIL_GetRadioConfiguration

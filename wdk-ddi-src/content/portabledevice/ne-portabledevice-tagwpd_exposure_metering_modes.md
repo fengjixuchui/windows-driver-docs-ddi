@@ -4,7 +4,6 @@ title: WPD_EXPOSURE_METERING_MODES (portabledevice.h)
 description: The WPD_EXPOSURE_METERING_MODES enumeration type describes the metering mode to use when estimating exposure for still image capture by a device.
 old-location: wpddk\wpd_exposure_metering_modes.htm
 tech.root: wpd_dk
-ms.assetid: 629c85d4-d632-4340-a745-1a79a451e7b2
 ms.date: 02/15/2018
 keywords: ["tagWPD_EXPOSURE_METERING_MODES enumeration"]
 ms.keywords: WPD_EXPOSURE_METERING_MODES, WPD_EXPOSURE_METERING_MODES enumeration, WPD_EXPOSURE_METERING_MODE_AVERAGE, WPD_EXPOSURE_METERING_MODE_CENTER_SPOT, WPD_EXPOSURE_METERING_MODE_CENTER_WEIGHTED_AVERAGE, WPD_EXPOSURE_METERING_MODE_MULTI_SPOT, WPD_EXPOSURE_METERING_MODE_UNDEFINED, enumeration, portabledevice/WPD_EXPOSURE_METERING_MODES, portabledevice/WPD_EXPOSURE_METERING_MODE_AVERAGE, portabledevice/WPD_EXPOSURE_METERING_MODE_CENTER_SPOT, portabledevice/WPD_EXPOSURE_METERING_MODE_CENTER_WEIGHTED_AVERAGE, portabledevice/WPD_EXPOSURE_METERING_MODE_MULTI_SPOT, portabledevice/WPD_EXPOSURE_METERING_MODE_UNDEFINED, tagWPD_EXPOSURE_METERING_MODES, wpddk.wpd_exposure_metering_modes
@@ -41,6 +40,7 @@ api_type:
 api_location:
  - PortableDevice.h
 api_name:
+ - tagWPD_EXPOSURE_METERING_MODES
  - WPD_EXPOSURE_METERING_MODES
 ---
 
@@ -80,3 +80,4 @@ Indicates the metering mode of the device. This enumeration is used by the <a hr
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/drivers/ff597672(v=vs.85)">Structures and Enumeration Types</a>
+

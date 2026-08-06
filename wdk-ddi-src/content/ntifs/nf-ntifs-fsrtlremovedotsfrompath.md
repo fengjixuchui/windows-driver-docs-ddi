@@ -4,14 +4,13 @@ title: FsRtlRemoveDotsFromPath function (ntifs.h)
 description: The FsRtlRemoveDotsFromPath routine removes unnecessary occurrences of '.' and '..' from the specified path.
 old-location: ifsk\fsrtlremovedotsfrompath.htm
 tech.root: ifsk
-ms.assetid: af6ecdb7-8713-460d-8fd9-ef027ac15b39
 ms.date: 04/16/2018
 keywords: ["FsRtlRemoveDotsFromPath function"]
 ms.keywords: FsRtlRemoveDotsFromPath, FsRtlRemoveDotsFromPath routine [Installable File System Drivers], fsrtlref_93b15313-3292-4122-9852-731b995e9d20.xml, ifsk.fsrtlremovedotsfrompath, ntifs/FsRtlRemoveDotsFromPath
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating system.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,19 +49,19 @@ The <b>FsRtlRemoveDotsFromPath</b> routine removes unnecessary occurrences of '.
 
 ## -parameters
 
-### -param OriginalString 
+### -param OriginalString [in, out]
 
-[in, out]
+
 A pointer to the buffer to be processed.
 
-### -param PathLength 
+### -param PathLength [in]
 
-[in]
+
 The length of buffer (in bytes).
 
-### -param NewLength 
+### -param NewLength [out]
 
-[out]
+
 A pointer to the new length of the buffer, after processing.
 
 ## -returns

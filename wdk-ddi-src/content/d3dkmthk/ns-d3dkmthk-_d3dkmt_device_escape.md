@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_DEVICE_ESCAPE
 title: _D3DKMT_DEVICE_ESCAPE (d3dkmthk.h)
 description: Do not use the D3DKMT_DEVICE_ESCAPE structure or D3DKMT_DEVICEESCAPE_TYPE enumeration. They are for testing purposes only. The D3DKMT_DEVICE_ESCAPE structure describes how to control the display device in a call to the D3DKMTEscape function.
 old-location: display\d3dkmt_device_escape.htm
-ms.assetid: 274bdd80-e898-42c7-8adc-8eae4e895b5f
 ms.date: 05/10/2018
 keywords: ["D3DKMT_DEVICE_ESCAPE structure"]
 ms.keywords: D3DKMT_DEVICE_ESCAPE, D3DKMT_DEVICE_ESCAPE structure [Display Devices], OpenGL_Structs_38febe04-ae75-475a-ab69-81995acb567b.xml, _D3DKMT_DEVICE_ESCAPE, d3dkmthk/D3DKMT_DEVICE_ESCAPE, display.d3dkmt_device_escape
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_DEVICE_ESCAPE
  - D3DKMT_DEVICE_ESCAPE
 ---
 
@@ -59,13 +59,13 @@ The D3DKMT_DEVICE_ESCAPE structure describes how to control the display device i
 
 ### -field VidPnFromAllocation
 
-### -field VidPnFromAllocation.hPrimaryAllocation
+### -field VidPnFromAllocation.hPrimaryAllocation [in]
 
-[in] The primary allocation handle.
+The primary allocation handle.
 
-### -field VidPnFromAllocation.VidPnSourceId
+### -field VidPnFromAllocation.VidPnSourceId [out]
 
-[out] The VidPN source ID of the primary allocation.
+The VidPN source ID of the primary allocation.
 
 ## -see-also
 
@@ -74,3 +74,4 @@ The D3DKMT_DEVICE_ESCAPE structure describes how to control the display device i
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_escape">D3DKMT_ESCAPE</a>
+

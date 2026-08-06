@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_VALIDATE_PROFILE
 title: DOT11EXTIHV_VALIDATE_PROFILE (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_VALIDATE_PROFILE callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvvalidateprofile.htm
 tech.root: netvista
-ms.assetid: 724a6c17-e020-44e1-9d00-332daa5dbdfb
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_VALIDATE_PROFILE callback"]
 ms.keywords: DOT11EXTIHV_VALIDATE_PROFILE, Dot11ExtIhvValidateProfile, Dot11ExtIhvValidateProfile callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_14df716f-4572-424e-8bee-a19b5b3d6e68.xml, netvista.dot11extihvvalidateprofile, wlanihv/Dot11ExtIhvValidateProfile
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_VALIDATE_PROFILE
  - wlanihv/DOT11EXTIHV_VALIDATE_PROFILE
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtIhvValidateProfile
+ - DOT11EXTIHV_VALIDATE_PROFILE
 ---
 
 # DOT11EXTIHV_VALIDATE_PROFILE callback
@@ -54,41 +52,41 @@ api_name:
 
 ## -parameters
 
-### -param hIhvExtAdapter 
+### -param hIhvExtAdapter [in, optional]
 
-[in, optional]
+
 The handle used by the IHV Extensions DLL to reference the wireless LAN (WLAN) adapter. This
      handle value was specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param pIhvProfileParams 
+### -param pIhvProfileParams [in, optional]
 
-[in, optional]
+
 A pointer to a
      <a href="..\wlanihvtypes\ns-wlanihvtypes-_dot11ext_ihv_profile_params.md">
      DOT11EXT_IHV_PROFILE_PARAMS</a> structure. This structure defines the attributes of the basic service
      set (BSS) network to which the profile extensions will be applied.
 
-### -param pIhvConnProfile 
+### -param pIhvConnProfile [in]
 
-[in]
+
 A pointer to a
      <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_connectivity_profile.md">
      DOT11EXT_IHV_CONNECTIVITY_PROFILE</a> structure that contains connectivity settings for the IHV
      profile.
 
-### -param pIhvSecProfile 
+### -param pIhvSecProfile [in]
 
-[in]
+
 A pointer to a
      <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_security_profile.md">
      DOT11EXT_IHV_SECURITY_PROFILE</a> structure that contains security settings for the IHV
      profile.
 
-### -param pdwReasonCode 
+### -param pdwReasonCode [out]
 
-[out]
+
 A pointer to a DWORD value, which provides additional information for the return value of the
      <i>Dot11ExtIhvValidateProfile</i> function. The IHV Extensions DLL must set *
      <i>pdwReasonCode</i> to an L2_REASON_CODE_xxxx value, which are defined in
@@ -180,3 +178,4 @@ For more information about the Native 802.11 XML schema, refer to the Microsoft 
 
 
 <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_security_profile.md">DOT11EXT_IHV_SECURITY_PROFILE</a>
+

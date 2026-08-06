@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_VIDPN_ACQUIRESOURCEMODESET
 title: DXGKDDI_VIDPN_ACQUIRESOURCEMODESET (d3dkmddi.h)
 description: The pfnAcquireSourceModeSet function returns a handle to a particular source mode set object that is contained by a specified VidPN object.
 old-location: display\dxgk_vidpn_interface_pfnacquiresourcemodeset.htm
-ms.assetid: cf19f468-86c1-4cc9-8945-e23f73a85c91
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_VIDPN_ACQUIRESOURCEMODESET callback function"]
 ms.keywords: DXGKDDI_VIDPN_ACQUIRESOURCEMODESET, DXGKDDI_VIDPN_ACQUIRESOURCEMODESET callback, VidPnFunctions_1ef2f7d1-cdea-4b0d-a8b5-76b5013afba3.xml, d3dkmddi/pfnAcquireSourceModeSet, display.dxgk_vidpn_interface_pfnacquiresourcemodeset, pfnAcquireSourceModeSet, pfnAcquireSourceModeSet callback function [Display Devices]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - pfnAcquireSourceModeSet
-product:
- - Windows
+ - DXGKDDI_VIDPN_ACQUIRESOURCEMODESET
 ---
 
 # DXGKDDI_VIDPN_ACQUIRESOURCEMODESET callback function
@@ -52,21 +49,21 @@ The <b>pfnAcquireSourceModeSet</b> function returns a handle to a particular sou
 
 ## -parameters
 
-### -param hVidPn
+### -param hVidPn [in]
 
-[in] A handle to a VidPN object. The VidPN manager previously provided this handle to the display miniport driver by calling <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a>, <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_issupportedvidpn">DxgkDdiIsSupportedVidPn</a>, or <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_recommendfunctionalvidpn">DxgkDdiRecommendFunctionalVidPn</a>.
+A handle to a VidPN object. The VidPN manager previously provided this handle to the display miniport driver by calling <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a>, <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_issupportedvidpn">DxgkDdiIsSupportedVidPn</a>, or <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_recommendfunctionalvidpn">DxgkDdiRecommendFunctionalVidPn</a>.
 
-### -param VidPnSourceId
+### -param VidPnSourceId [in]
 
-[in] An integer that identifies one of the video present sources associated with the VidPN object.
+An integer that identifies one of the video present sources associated with the VidPN object.
 
-### -param phVidPnSourceModeSet
+### -param phVidPnSourceModeSet [out]
 
-[out] A pointer to a variable that receives a handle to the requested source mode set object.
+A pointer to a variable that receives a handle to the requested source mode set object.
 
-### -param ppVidPnSourceModeSetInterface
+### -param ppVidPnSourceModeSetInterface [out]
 
-[out] A pointer to a variable that receives a pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpnsourcemodeset_interface">DXGK_VIDPNSOURCEMODESET_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the source mode set object.
+A pointer to a variable that receives a pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpnsourcemodeset_interface">DXGK_VIDPNSOURCEMODESET_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the source mode set object.
 
 ## -returns
 
@@ -105,3 +102,4 @@ The D3DKMDT_HVIDPN and D3DKMDT_HVIDPNSOURCEMODESET data types are defined in <i>
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_releasetargetmodeset">pfnReleaseTargetModeSet</a>
+

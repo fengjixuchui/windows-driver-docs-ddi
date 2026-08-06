@@ -4,7 +4,6 @@ title: StorPortBuildMdlForNonPagedPool function (storport.h)
 description: The StorPortBuildMdlForNonPagedPool routine updates the MDL to describe the associated non-paged memory.
 old-location: storage\storportbuildmdlfornonpagedpool.htm
 tech.root: storage
-ms.assetid: f22dbf1e-4b40-4294-bca5-3011f0a97644
 ms.date: 03/29/2018
 keywords: ["StorPortBuildMdlForNonPagedPool function"]
 ms.keywords: StorPortBuildMdlForNonPagedPool, StorPortBuildMdlForNonPagedPool routine [Storage Devices], storage.storportbuildmdlfornonpagedpool, storport/StorPortBuildMdlForNonPagedPool, storprt_98151881-8a9f-4bf9-8365-ec50aecced4f.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ The <b>StorPortBuildMdlForNonPagedPool</b> routine updates the MDL to describe t
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param Mdl 
+### -param Mdl [in, out]
 
-[in, out]
+
 A pointer to the MDL that specifies the memory buffer.
 
 ## -returns

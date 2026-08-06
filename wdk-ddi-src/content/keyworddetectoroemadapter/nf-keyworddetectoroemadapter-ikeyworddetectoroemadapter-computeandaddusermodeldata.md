@@ -4,7 +4,6 @@ title: IKeywordDetectorOemAdapter::ComputeAndAddUserModelData (keyworddetectoroe
 description: The ComputeAndAddUserModelData method is used by the training user experience to compute the user-specific information relative to the user-independent keyword.
 old-location: audio\ikeyworddetectoroemadapter_computeandaddusermodeldata.htm
 tech.root: audio
-ms.assetid: 4E810EAD-3864-44C1-9845-60DAB288BB48
 ms.date: 05/08/2018
 keywords: ["IKeywordDetectorOemAdapter::ComputeAndAddUserModelData"]
 ms.keywords: ComputeAndAddUserModelData, ComputeAndAddUserModelData method [Audio Devices], ComputeAndAddUserModelData method [Audio Devices],IKeywordDetectorOemAdapter interface, IKeywordDetectorOemAdapter interface [Audio Devices],ComputeAndAddUserModelData method, IKeywordDetectorOemAdapter.ComputeAndAddUserModelData, IKeywordDetectorOemAdapter::ComputeAndAddUserModelData, audio.ikeyworddetectoroemadapter_computeandaddusermodeldata, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::ComputeAndAddUserModelData
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - KeywordDetectorOemAdapter.h
 api_name:
- - IKeywordDetectorOemAdapter.ComputeAndAddUserModelData
+ - IKeywordDetectorOemAdapter::ComputeAndAddUserModelData
 ---
 
 # IKeywordDetectorOemAdapter::ComputeAndAddUserModelData
@@ -50,29 +49,29 @@ The <b>ComputeAndAddUserModelData</b> method is used by the training user experi
 
 ## -parameters
 
-### -param ModelData 
+### -param ModelData [in]
 
-[in]
+
 A pointer to the <b>IStream</b> object bound to model data. It is modified by this call.
 
-### -param KeywordSelector 
+### -param KeywordSelector [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/keyworddetectoroemadapter/ns-keyworddetectoroemadapter-__midl_ikeyworddetectoroemadapter_0003">KEYWORDSELECTOR</a> struct that uniquely identifies this model.
 
-### -param KeywordEndBytePos 
+### -param KeywordEndBytePos [in]
 
-[in]
+
 Indicates the end of the keyword in the UserRecording.
 
-### -param UserRecordings 
+### -param UserRecordings [in]
 
-[in]
+
 A pointer to an array of pointers to the previously verified user recordings of the keyword.
 
-### -param NumUserRecordings 
+### -param NumUserRecordings [in]
 
-[in]
+
 The number of recordings.
 
 ## -returns
@@ -137,3 +136,4 @@ The processing was unable to complete.
 
 
 <a href="/windows-hardware/drivers/ddi/keyworddetectoroemadapter/ns-keyworddetectoroemadapter-__midl_ikeyworddetectoroemadapter_0003">KEYWORDSELECTOR</a>
+

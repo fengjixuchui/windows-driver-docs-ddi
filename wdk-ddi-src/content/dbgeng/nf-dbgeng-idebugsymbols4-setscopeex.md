@@ -4,7 +4,6 @@ title: IDebugSymbols4::SetScopeEx (dbgeng.h)
 description: Sets the scope as an extended frame structure.
 old-location: debugger\idebugsymbols4_setscopeex.htm
 tech.root: debugger
-ms.assetid: 22844EBB-9BE7-47C0-BE1F-075473430F11
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols4::SetScopeEx"]
 ms.keywords: IDebugSymbols4 interface [Windows Debugging],SetScopeEx method, IDebugSymbols4.SetScopeEx, IDebugSymbols4::SetScopeEx, SetScopeEx, SetScopeEx method [Windows Debugging], SetScopeEx method [Windows Debugging],IDebugSymbols4 interface, dbgeng/IDebugSymbols4::SetScopeEx, debugger.idebugsymbols4_setscopeex
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSymbols4.SetScopeEx
+ - IDebugSymbols4::SetScopeEx
 ---
 
 # IDebugSymbols4::SetScopeEx
@@ -50,24 +49,24 @@ Sets the scope as an extended frame structure.
 
 ## -parameters
 
-### -param InstructionOffset 
+### -param InstructionOffset [in]
 
-[in]
+
 The offset of the instruction for the scope.
 
-### -param ScopeFrame 
+### -param ScopeFrame [in, optional]
 
-[in, optional]
+
 The scope frame to set as a <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_stack_frame_ex">DEBUG_STACK_FRAME_EX</a> structure.
 
-### -param ScopeContext 
+### -param ScopeContext [in]
 
-[in]
+
 A pointer to a scope context.
 
-### -param ScopeContextSize 
+### -param ScopeContextSize [in]
 
-[in]
+
 The size of the scope context.
 
 ## -returns
@@ -81,3 +80,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols4">IDebugSymbols4</a>
+

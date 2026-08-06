@@ -1,20 +1,18 @@
 ---
+description: "Learn more about: Mdltypes.h header"
 UID: NA:mdltypes
 title: Mdltypes.h header
 ms.assetid: A62810CE-785C-4C14-8F45-F1919F057F4F
 ms.date: 09/20/2019
 keywords: ["Mdltypes.h header"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 tech.root: netvista
 ms.custom: Vb
-product:
- - Windows
 f1_keywords:
  - mdltypes
  - mdltypes/mdltypes
+api_name:
+ - mdltypes
 ---
 
 # Mdltypes.h header
@@ -22,7 +20,7 @@ f1_keywords:
 
 ## -description
 
-This header is used by netvista. For more information, see:
+This header is used by network. For more information, see:
 
-- [Networking drivers for Windows Vista and later](../_netvista/index.md)
+- [Network](../_netvista/index.md)
 

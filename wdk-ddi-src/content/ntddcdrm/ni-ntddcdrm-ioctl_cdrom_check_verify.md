@@ -1,10 +1,9 @@
 ---
 UID: NI:ntddcdrm.IOCTL_CDROM_CHECK_VERIFY
 title: IOCTL_CDROM_CHECK_VERIFY (ntddcdrm.h)
-description: In Microsoft Windows 2000 and later operating systems, this IOCTL is replaced by IOCTL_STORAGE_CHECK_VERIFY. The only difference between the two IOCTLs is the base value.
+description: The IOCTL_CDROM_CHECK_VERIFY IOCTL is replaced by IOCTL_STORAGE_CHECK_VERIFY In Microsoft Windows 2000 and later operating systems.
 old-location: storage\ioctl_cdrom_check_verify.htm
 tech.root: storage
-ms.assetid: ad2a5f3d-a796-4579-aa23-91b99baa1186
 ms.date: 03/29/2018
 keywords: ["IOCTL_CDROM_CHECK_VERIFY IOCTL"]
 ms.keywords: IOCTL_CDROM_CHECK_VERIFY, IOCTL_CDROM_CHECK_VERIFY control, IOCTL_CDROM_CHECK_VERIFY control code [Storage Devices], k307_ecbed4e9-b4e2-4b49-90e4-652011983e48.xml, ntddcdrm/IOCTL_CDROM_CHECK_VERIFY, storage.ioctl_cdrom_check_verify
@@ -49,6 +48,8 @@ api_name:
 In Microsoft Windows 2000 and later operating systems, this IOCTL is replaced by <a href="/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_check_verify">IOCTL_STORAGE_CHECK_VERIFY</a>. The only difference between the two IOCTLs is the base value.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

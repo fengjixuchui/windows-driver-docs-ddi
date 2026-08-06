@@ -4,7 +4,6 @@ title: _tagKSAUDIOENGINE_BUFFER_SIZE_RANGE (ksmedia.h)
 description: The KSAUDIOENGINE_BUFFER_SIZE_RANGE structure specifies the minimum and maximum buffer size that the hardware audio engine can support at the instance when it is called.
 old-location: audio\ksaudio_buffer_limits.htm
 tech.root: audio
-ms.assetid: 7BFF1B51-9559-471C-868C-F3E861CB4914
 ms.date: 05/08/2018
 keywords: ["tagKSAUDIOENGINE_BUFFER_SIZE_RANGE structure"]
 ms.keywords: "*PKSAUDIOENGINE_BUFFER_SIZE_RANGE, KSAUDIOENGINE_BUFFER_SIZE_RANGE, KSAUDIOENGINE_BUFFER_SIZE_RANGE structure [Audio Devices], PKSAUDIOENGINE_BUFFER_SIZE_RANGE, PKSAUDIOENGINE_BUFFER_SIZE_RANGE structure pointer [Audio Devices], _tagKSAUDIOENGINE_BUFFER_SIZE_RANGE, audio.ksaudio_buffer_limits, ksmedia/KSAUDIOENGINE_BUFFER_SIZE_RANGE, ksmedia/PKSAUDIOENGINE_BUFFER_SIZE_RANGE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ksmedia.h
 api_name:
+ - _tagKSAUDIOENGINE_BUFFER_SIZE_RANGE
+ - PKSAUDIOENGINE_BUFFER_SIZE_RANGE
  - KSAUDIOENGINE_BUFFER_SIZE_RANGE
 ---
 
@@ -60,7 +61,7 @@ Specifies the minimum buffer size in bytes that the hardware Audio Engine can su
 
 ### -field MaxBufferBytes
 
-Specifies the maximun available DMA buffer size in bytes that the hardware Audio Engine can support, at the instance when it is called.  The capability and availability  of the DMA engine and the internal DSP buffer are all taken into consideration.
+Specifies the maximum available DMA buffer size in bytes that the hardware Audio Engine can support, at the instance when it is called.  The capability and availability  of the DMA engine and the internal DSP buffer are all taken into consideration.
 
 ## -remarks
 
@@ -77,3 +78,4 @@ The audio stack uses the information about the buffer size limits to determine t
 
 
 <a href="/windows-hardware/drivers/audio/ksproperty-audioengine-buffer-size-limits">KSPROPERTY_AUDIOENGINE_BUFFER_SIZE_RANGE</a>
+

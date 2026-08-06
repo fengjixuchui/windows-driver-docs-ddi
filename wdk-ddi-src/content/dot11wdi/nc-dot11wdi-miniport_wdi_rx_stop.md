@@ -4,7 +4,6 @@ title: MINIPORT_WDI_RX_STOP (dot11wdi.h)
 description: The MiniportWdiRxStop handler function stops RX on a given port and accepts the wildcard port ID to stop RX across the adapter.
 old-location: netvista\miniportwdirxstop.htm
 tech.root: netvista
-ms.assetid: AAFECA64-07D7-43E6-ABFB-C0C85A9C03CD
 ms.date: 05/02/2018
 keywords: ["MINIPORT_WDI_RX_STOP callback function"]
 ms.keywords: MINIPORT_WDI_RX_STOP, MINIPORT_WDI_RX_STOP callback, MiniportWdiRxStop, MiniportWdiRxStop callback function [Network Drivers Starting with Windows Vista], dot11wdi/MiniportWdiRxStop, netvista.miniportwdirxstop
@@ -38,13 +37,16 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
- - MiniportWdiRxStop
+ - MINIPORT_WDI_RX_STOP
 ---
 
 # MINIPORT_WDI_RX_STOP callback function
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The 
   MiniportWdiRxStop handler function stops RX on a given port and accepts the wildcard port ID  to stop RX across the adapter. The TAL completes the RX stop operation by completing the request with a success status, or by completing it with a pending status and asynchronously indicating <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_rx_stop_confirm">RxStopConfirm</a>.
@@ -59,19 +61,19 @@ This request is issued to the TAL as part of a transition to low power (adapter)
 
 ## -parameters
 
-### -param MiniportTalTxRxContext 
+### -param MiniportTalTxRxContext [in]
 
-[in]
+
 TAL device handle returned by the IHV miniport in <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tal_txrx_initialize">MiniportWdiTalTxRxInitialize</a>.
 
-### -param PortId 
+### -param PortId [in]
 
-[in]
+
 The port ID.
 
-### -param pWifiStatus 
+### -param pWifiStatus [out]
 
-[out]
+
 Status from the IHV miniport. A success status indicates that the operation completion synchronously.  A pending status indicates that the stop will be asynchronously confirmed.
 
 ## -see-also
@@ -89,3 +91,4 @@ Status from the IHV miniport. A success status indicates that the operation comp
 
 
 <a href="/windows-hardware/drivers/network/wdi-port-id">WDI_PORT_ID</a>
+

@@ -1,9 +1,9 @@
 ---
 UID: NS:scsi._ERROR_HISTORY_DIRECTORY_ENTRY
 title: _ERROR_HISTORY_DIRECTORY_ENTRY (scsi.h)
-description: 
-ms.assetid: 0c51fcbb-01d6-49c2-b5ca-dd6aafdffbe5
+description: "Learn more about: _ERROR_HISTORY_DIRECTORY_ENTRY structure (scsi.h)"
 ms.date: 10/19/2018
+tech.root: storage
 keywords: ["ERROR_HISTORY_DIRECTORY_ENTRY structure"]
 ms.keywords: _ERROR_HISTORY_DIRECTORY_ENTRY, ERROR_HISTORY_DIRECTORY_ENTRY, *PERROR_HISTORY_DIRECTORY_ENTRY,
 req.header: scsi.h
@@ -35,6 +35,8 @@ api_location:
  - scsi.h
 api_name:
  - _ERROR_HISTORY_DIRECTORY_ENTRY
+ - PERROR_HISTORY_DIRECTORY_ENTRY
+ - ERROR_HISTORY_DIRECTORY_ENTRY
 ---
 
 # _ERROR_HISTORY_DIRECTORY_ENTRY structure (scsi.h)

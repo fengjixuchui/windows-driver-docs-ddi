@@ -3,7 +3,6 @@ UID: NF:mdl.NetExtensionGetFragmentMdl
 title: NetExtensionGetFragmentMdl function (mdl.h)
 description: The NetExtensionGetFragmentMdl function retrieves the DMA MDL extension information for a net fragment.
 tech.root: netvista
-ms.assetid: 0DF0EEFB-B427-4F3E-83AE-85DF5B7A7277
 ms.date: 09/26/2019
 keywords: ["NetExtensionGetFragmentMdl function"]
 ms.keywords: NetExtensionGetFragmentMdl
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -37,8 +36,6 @@ api_location:
  - mdl.h
 api_name:
  - NetExtensionGetFragmentMdl
-product:
- - Windows
 ---
 
 # NetExtensionGetFragmentMdl function

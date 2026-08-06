@@ -4,7 +4,6 @@ title: FltSetCallbackDataDirty function (fltkernel.h)
 description: A minifilter driver's preoperation or postoperation callback routine calls FltSetCallbackDataDirty to indicate that it has modified the contents of the callback data structure.
 old-location: ifsk\fltsetcallbackdatadirty.htm
 tech.root: ifsk
-ms.assetid: aee13598-84ff-48ef-96a6-e6f710c1e880
 ms.date: 04/16/2018
 keywords: ["FltSetCallbackDataDirty function"]
 ms.keywords: FltApiRef_p_to_z_6442dbc2-9375-4dc9-bf38-8c7d1005ec74.xml, FltSetCallbackDataDirty, FltSetCallbackDataDirty routine [Installable File System Drivers], fltkernel/FltSetCallbackDataDirty, ifsk.fltsetcallbackdatadirty
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Fltmgr.lib
 req.dll: Fltmgr.sys
-req.irql: Any
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ A minifilter driver's preoperation or postoperation callback routine calls <b>Fl
 
 ## -parameters
 
-### -param Data 
+### -param Data [in, out]
 
-[in, out]
+
 A pointer to a callback data (<a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data">FLT_CALLBACK_DATA</a>) structure.
 
 ## -returns

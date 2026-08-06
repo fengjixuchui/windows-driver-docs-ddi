@@ -3,8 +3,7 @@ UID: NF:netdevice.NetDeviceInitConfig
 title: NetDeviceInitConfig function (netdevice.h)
 description: The NetDeviceInitConfig function initializes device initialization operations when the Plug and Play (PnP) manager reports the existence of a device.
 tech.root: netvista
-ms.assetid: 578116d2-0dcf-4ebb-a42f-db9f456a0f38
-ms.date: 10/11/2019
+ms.date: 04/01/2022
 keywords: ["NetDeviceInitConfig function"]
 ms.keywords: NetDeviceInitConfig
 req.header: netdevice.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: netadaptercxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -37,8 +36,6 @@ api_location:
  - netadaptercxstub.lib
 api_name:
  - NetDeviceInitConfig
-product:
- - Windows
 ---
 
 # NetDeviceInitConfig function
@@ -50,7 +47,7 @@ The **NetDeviceInitConfig** function initializes device initialization operation
 
 ## -parameters
 
-### -param DeviceInit
+### -param DeviceInit [_Inout_]
 
 A pointer to a WDFDEVICE_INIT object that the client driver received in its [*EvtDriverDeviceAdd*](../wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add.md) routine.
 

@@ -4,7 +4,6 @@ title: WdfUsbInterfaceGetInterfaceNumber function (wdfusb.h)
 description: The WdfUsbInterfaceGetInterfaceNumber method returns the interface number of a specified USB interface object.
 old-location: wdf\wdfusbinterfacegetinterfacenumber.htm
 tech.root: wdf
-ms.assetid: bc39e3ae-6899-423d-be1d-b3322efface8
 ms.date: 02/26/2018
 keywords: ["WdfUsbInterfaceGetInterfaceNumber function"]
 ms.keywords: DFUsbRef_035fbae3-67d4-4df6-8718-30851a0d60ca.xml, WdfUsbInterfaceGetInterfaceNumber, WdfUsbInterfaceGetInterfaceNumber method, kmdf.wdfusbinterfacegetinterfacenumber, wdf.wdfusbinterfacegetinterfacenumber, wdfusb/WdfUsbInterfaceGetInterfaceNumber
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,9 +54,9 @@ The <b>WdfUsbInterfaceGetInterfaceNumber</b> method returns the interface number
 
 ## -parameters
 
-### -param UsbInterface 
+### -param UsbInterface [in]
 
-[in]
+
 A handle to a USB interface object that was obtained by calling <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>.
 
 ## -returns

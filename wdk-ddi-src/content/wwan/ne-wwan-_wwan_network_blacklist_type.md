@@ -3,7 +3,6 @@ UID: NE:wwan._WWAN_NETWORK_BLACKLIST_TYPE
 title: _WWAN_NETWORK_BLACKLIST_TYPE (wwan.h)
 description: The WWAN_NETWORK_BLACKLIST_TYPE enumeration specifies which of a mobile broadband (MBB) modem's two network blacklists is used for an MCC/MNC pair.
 tech.root: netvista
-ms.assetid: 65355b7a-b564-40bf-8f8c-fa75d32ec8cb
 ms.date: 08/21/2018
 keywords: ["WWAN_NETWORK_BLACKLIST_TYPE enumeration"]
 ms.keywords: _WWAN_NETWORK_BLACKLIST_TYPE, WWAN_NETWORK_BLACKLIST_TYPE,
@@ -32,8 +31,7 @@ api_location:
  - wwan.h
 api_name:
  - _WWAN_NETWORK_BLACKLIST_TYPE
-product:
- - Windows
+ - WWAN_NETWORK_BLACKLIST_TYPE
 ---
 
 # _WWAN_NETWORK_BLACKLIST_TYPE enumeration
@@ -71,3 +69,4 @@ This enumeration is used in the [**WWAN_NETWORK_BLACKLIST_PROVIDER**](ns-wwan-_w
 [MB Network Blacklist Operations](/windows-hardware/drivers/network/mb-network-blacklist-operations)
 
 [**WWAN_NETWORK_BLACKLIST_PROVIDER**](ns-wwan-_wwan_network_blacklist_provider.md)
+

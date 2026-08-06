@@ -4,7 +4,6 @@ title: FwpsFlowRemoveContext0 function (fwpsk.h)
 description: The FwpsFlowRemoveContext0 function removes a previously associated context from a data flow.Note  FwpsFlowRemoveContext0 is a specific version of FwpsFlowRemoveContext.
 old-location: netvista\fwpsflowremovecontext0.htm
 tech.root: netvista
-ms.assetid: edc257bc-2805-47d8-827a-536e5d74793b
 ms.date: 05/02/2018
 keywords: ["FwpsFlowRemoveContext0 function"]
 ms.keywords: FwpsFlowRemoveContext0, FwpsFlowRemoveContext0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsFlowRemoveContext0, netvista.fwpsflowremovecontext0, wfp_ref_2_funct_3_fwps_D-H_97a48a00-87f5-414f-9a6c-fb15873454e1.xml
@@ -53,17 +52,17 @@ The
 
 ## -parameters
 
-### -param flowId 
+### -param flowId [in]
 
-[in]
+
 A run-time identifier that specifies the data flow from which to remove the context. The run-time
      identifier for a data flow is provided to a callout driver through the FWPS_METADATA_FIELD_FLOW_HANDLE
      metadata value that was passed to the callout driver's 
      <a href="/windows-hardware/drivers/ddi/_netvista/">classifyFn</a> callout function.
 
-### -param layerId 
+### -param layerId [in]
 
-[in]
+
 The run-time identifier for the filtering layer from which the context is being removed. For more
      information, see 
      <a href="/windows/desktop/FWP/management-filtering-layer-identifiers-">Run-time Filtering Layer
@@ -71,9 +70,9 @@ The run-time identifier for the filtering layer from which the context is being 
      the 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsflowassociatecontext0">FwpsFlowAssociateContext0</a> function to associate the context with the data flow.
 
-### -param calloutId 
+### -param calloutId [in]
 
-[in]
+
 The run-time identifier for the callout in the filter engine. This identifier was returned when
      the callout driver called either the 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister0">FwpsCalloutRegister0</a> or 
@@ -109,6 +108,17 @@ The context was successfully removed from the data flow.
 </td>
 <td width="60%">
 There is no context currently associated with the data flow.
+
+</td>
+</tr>
+<tr>
+<td width="40%">
+<dl>
+<dt><b>STATUS_PENDING</b></dt>
+</dl>
+</td>
+<td width="60%">
+An active callout classification is in progress.
 
 </td>
 </tr>

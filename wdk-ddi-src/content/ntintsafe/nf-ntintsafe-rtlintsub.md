@@ -4,7 +4,6 @@ title: RtlIntSub function (ntintsafe.h)
 description: Subtracts one value of type INT from another.
 old-location: kernel\rtlintsub.htm
 tech.root: kernel
-ms.assetid: 68BBD6B8-5C7C-4FE5-97F7-473A9510400F
 ms.date: 04/30/2018
 keywords: ["RtlIntSub function"]
 ms.keywords: RtlIntSub, RtlIntSub function [Kernel-Mode Driver Architecture], kernel.rtlintsub, ntintsafe/RtlIntSub
@@ -50,14 +49,14 @@ Subtracts one value of type <b>INT</b> from another.
 
 ## -parameters
 
-### -param iMinuend 
+### -param iMinuend [in]
 
-[in]
+
 The value from which <i>iSubtrahend</i> is subtracted.
 
-### -param iSubtrahend 
+### -param iSubtrahend [in]
 
-[in]
+
 The value to subtract from <i>iMinuend</i>.
 
 ### -param piResult

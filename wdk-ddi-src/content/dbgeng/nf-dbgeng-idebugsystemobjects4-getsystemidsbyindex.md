@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSystemObjects4.GetSystemIdsByIndex
 title: IDebugSystemObjects4::GetSystemIdsByIndex (dbgeng.h)
-description: The GetSystemIdsByIndex method returns the engine target IDs for the specified targets.
+description: The GetSystemIdsByIndex method returns the engine target IDs for the specified targets. This method belongs to the IDebugSystemObjects4 interface.
 old-location: debugger\getsystemidsbyindex.htm
 tech.root: debugger
-ms.assetid: 7b2dcb75-f674-4a66-a483-8c3f644390c1
 ms.date: 05/03/2018
 keywords: ["IDebugSystemObjects4::GetSystemIdsByIndex"]
 ms.keywords: GetSystemIdsByIndex, GetSystemIdsByIndex method [Windows Debugging], GetSystemIdsByIndex method [Windows Debugging],IDebugSystemObjects3 interface, GetSystemIdsByIndex method [Windows Debugging],IDebugSystemObjects4 interface, IDebugSystemObjects3 interface [Windows Debugging],GetSystemIdsByIndex method, IDebugSystemObjects3::GetSystemIdsByIndex, IDebugSystemObjects4 interface [Windows Debugging],GetSystemIdsByIndex method, IDebugSystemObjects4.GetSystemIdsByIndex, IDebugSystemObjects4::GetSystemIdsByIndex, IDebugSystemObjects_d1d7e689-407b-4d84-b1ce-75736b761089.xml, dbgeng/IDebugSystemObjects3::GetSystemIdsByIndex, dbgeng/IDebugSystemObjects4::GetSystemIdsByIndex, debugger.getsystemidsbyindex
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSystemObjects3.GetSystemIdsByIndex
- - IDebugSystemObjects4.GetSystemIdsByIndex
+ - IDebugSystemObjects4::GetSystemIdsByIndex
 ---
 
 # IDebugSystemObjects4::GetSystemIdsByIndex
@@ -51,19 +49,19 @@ The <b>GetSystemIdsByIndex</b> method returns the engine target IDs for the spec
 
 ## -parameters
 
-### -param Start 
+### -param Start [in]
 
-[in]
+
 Specifies the index of the first target whose target ID is requested.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of processes whose IDs are requested.
 
-### -param Ids 
+### -param Ids [out]
 
-[out]
+
 Receives the engine target IDs.  If <i>Ids</i> is <b>NULL</b>, this information is not returned; otherwise, <i>Ids</i> is treated as an array of <i>Count</i> ULONG values.
 
 ## -returns
@@ -103,3 +101,4 @@ The index of the first target is zero.  The index of the last target is the numb
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects4">IDebugSystemObjects4</a>
+

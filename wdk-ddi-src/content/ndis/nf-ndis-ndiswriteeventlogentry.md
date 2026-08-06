@@ -4,7 +4,6 @@ title: NdisWriteEventLogEntry function (ndis.h)
 description: NdisWriteEventLogEntry logs an event to the Win32 event log.
 old-location: netvista\ndiswriteeventlogentry.htm
 tech.root: netvista
-ms.assetid: 1f3fbcf1-e6f4-4117-a795-f4b14ef9fc96
 ms.date: 05/02/2018
 keywords: ["NdisWriteEventLogEntry function"]
 ms.keywords: NdisWriteEventLogEntry, NdisWriteEventLogEntry function [Network Drivers Starting with Windows Vista], miniport_logging_ref_435a14ad-ae5a-4ff9-80a9-2c41966ed8ba.xml, ndis/NdisWriteEventLogEntry, netvista.ndiswriteeventlogentry
@@ -51,47 +50,47 @@ api_name:
 
 ## -parameters
 
-### -param LogHandle 
+### -param LogHandle [in]
 
-[in]
+
 Pointer to the driver object of the protocol that is logging this event.
 
-### -param EventCode 
+### -param EventCode [in]
 
-[in]
+
 Specifies the NDIS_STATUS_<i>XXX</i> code describing the event.
 
-### -param UniqueEventValue 
+### -param UniqueEventValue [in]
 
-[in]
+
 Identifies this instance of the error message.
 
-### -param NumStrings 
+### -param NumStrings [in]
 
-[in]
+
 Specifies the number of pointers to Unicode strings in the optional 
      <i>StringsList</i>. If 
      <i>StringsList</i> is <b>NULL</b>, 
      <i>NumStrings</i> must be zero.
 
-### -param StringsList 
+### -param StringsList [in, optional]
 
-[in, optional]
+
 Either <b>NULL</b> or points to buffered Unicode strings. These strings, which describe the event, are
      inserted into the Win32 event log and can be examined with the Win32 event viewer. Each string must be a
      NUL-terminated Unicode string.
 
-### -param DataSize 
+### -param DataSize [in]
 
-[in]
+
 Specifies the number of bytes in the buffer for the binary data at 
      <i>Data</i> . If 
      <i>Data</i> is <b>NULL</b>, 
      <i>DataSize</i> must be zero.
 
-### -param Data 
+### -param Data [in, optional]
 
-[in, optional]
+
 Either <b>NULL</b> or points to buffered binary dump data that is useful for understanding the event.
      This data can be examined with the Win32 event viewer.
 

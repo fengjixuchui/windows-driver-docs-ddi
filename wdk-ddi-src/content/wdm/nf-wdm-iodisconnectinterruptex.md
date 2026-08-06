@@ -4,7 +4,6 @@ title: IoDisconnectInterruptEx function (wdm.h)
 description: For more information, see the WdmlibIoDisconnectInterruptEx function.#define IoDisconnectInterruptEx WdmlibIoDisconnectInterruptEx
 old-location: kernel\iodisconnectinterruptex.htm
 tech.root: kernel
-ms.assetid: 6c538468-2f7c-48b0-90f8-deb975c85970
 ms.date: 04/30/2018
 keywords: ["IoDisconnectInterruptEx function"]
 ms.keywords: IoDisconnectInterruptEx, IoDisconnectInterruptEx routine [Kernel-Mode Driver Architecture], WdmlibIoDisconnectInterruptEx, k104_3bfae096-0af6-4f61-ae4b-4c83e748b071.xml, kernel.iodisconnectinterruptex, wdm/IoDisconnectInterruptEx, wdm/WdmlibIoDisconnectInterruptEx
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - IoDisconnectInterruptEx
- - WdmlibIoDisconnectInterruptEx
 ---
 
 # IoDisconnectInterruptEx function
@@ -53,9 +51,9 @@ For more information, see the <a href="/windows-hardware/drivers/ddi/iointex/nf-
 
 ## -parameters
 
-### -param Parameters 
+### -param Parameters [in, out]
 
-[in, out]
+
 For more information, see the <a href="/windows-hardware/drivers/ddi/iointex/nf-iointex-wdmlibiodisconnectinterruptex">WdmlibIoDisconnectInterruptEx</a> function.
 
 ## -remarks
@@ -65,3 +63,4 @@ For more information, see the <a href="/windows-hardware/drivers/ddi/iointex/nf-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/iointex/nf-iointex-wdmlibiodisconnectinterruptex">WdmlibIoDisconnectInterruptEx</a>
+

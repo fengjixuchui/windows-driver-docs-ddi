@@ -4,14 +4,13 @@ title: FsRtlFreeFileLock function (ntifs.h)
 description: The FsRtlFreeFileLock routine uninitializes and frees a file lock structure.
 old-location: ifsk\fsrtlfreefilelock.htm
 tech.root: ifsk
-ms.assetid: 191a7964-4359-4b7f-8760-74f537b0737f
 ms.date: 04/16/2018
 keywords: ["FsRtlFreeFileLock function"]
 ms.keywords: FsRtlFreeFileLock, FsRtlFreeFileLock routine [Installable File System Drivers], fsrtlref_112afa00-3370-4671-ad22-0743f8dd1c52.xml, ifsk.fsrtlfreefilelock, ntifs/FsRtlFreeFileLock
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,9 +49,9 @@ The <b>FsRtlFreeFileLock</b> routine uninitializes and frees a file lock structu
 
 ## -parameters
 
-### -param FileLock 
+### -param FileLock [in]
 
-[in]
+
 Pointer to the FILE_LOCK structure. This structure must have been allocated by a previous call to <b>FsRtlAllocateFileLock</b>.
 
 ## -remarks

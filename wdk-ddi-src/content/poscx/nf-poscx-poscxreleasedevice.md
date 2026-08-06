@@ -2,10 +2,8 @@
 UID: NF:poscx.PosCxReleaseDevice
 title: PosCxReleaseDevice function (poscx.h)
 description: PosCxReleaseDevice is called to release a device that was previously claimed with PosCxClaimDevice. Once the device is released, the next pending claim requester is promoted.
-old-location: pos\poscxreleasedevice.htm
 tech.root: pos
-ms.assetid: 9615915C-B729-4702-BF41-D5068B43A729
-ms.date: 02/23/2018
+ms.date: 03/07/2023
 keywords: ["PosCxReleaseDevice function"]
 ms.keywords: PosCxReleaseDevice, PosCxReleaseDevice function, pos.poscxreleasedevice, poscx/PosCxReleaseDevice
 req.header: poscx.h
@@ -27,7 +25,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: 
-req.product: Windows 10 or later.
 f1_keywords:
  - PosCxReleaseDevice
  - poscx/PosCxReleaseDevice
@@ -42,50 +39,31 @@ api_name:
  - PosCxReleaseDevice
 ---
 
-# PosCxReleaseDevice function
-
-
 ## -description
 
-      PosCxReleaseDevice is called to release a device that was previously claimed with
-      <a href="/windows-hardware/drivers/ddi/poscx/nf-poscx-poscxclaimdevice">PosCxClaimDevice</a>.
-      Once the device is released, the next pending claim requester is promoted.
+PosCxReleaseDevice is called to release a device that was previously claimed with [PosCxClaimDevice](./nf-poscx-poscxclaimdevice.md). Once the device is released, the next pending claim requester is promoted.
 
 ## -parameters
 
-### -param device 
+### -param device [in]
 
-[in]
 A handle to a framework device object that represents the device.
 
-### -param fileObject 
+### -param fileObject [in]
 
-[in]
       A handle to a framework file object that identifies the caller.
 
 ## -returns
 
 Possible return values are:
 
-<table>
-<tr>
-<td><b>STATUS_SUCCESS</b></td>
-<td>The device was successfully released.</td>
-</tr>
-<tr>
-<td><b>STATUS_ACCESS_DENIED</b></td>
-<td>The calling thread is not the owner of the device.</td>
-</tr>
-<tr>
-<td><b>STATUS_DEVICE_NOT_READY</b></td>
-<td>The PosCx library was not successfully initialized.</td>
-</tr>
-<tr>
-<td><b>STATUS_INVALID_PARAMETER </b></td>
-<td>The specified <i>fileObject</i> is invalid.</td>
-</tr>
-</table>
+| Value | Description |
+|---|---|
+| **STATUS_SUCCESS** | The device was successfully released. |
+| **STATUS_ACCESS_DENIED** | The calling thread is not the owner of the device. |
+| **STATUS_DEVICE_NOT_READY** | The PosCx library was not successfully initialized. |
+| **STATUS_INVALID_PARAMETER** | The specified *fileObject* is invalid. |
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/poscx/nf-poscx-poscxclaimdevice">PosCxClaimDevice</a>
+[PosCxClaimDevice](./nf-poscx-poscxclaimdevice.md)

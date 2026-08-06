@@ -4,7 +4,6 @@ title: NdisGetCurrentSystemTime macro (ndis.h)
 description: The NdisGetCurrentSystemTime function returns the current system time, suitable for setting timestamps.
 old-location: netvista\ndisgetcurrentsystemtime.htm
 tech.root: netvista
-ms.assetid: eef32784-ea27-42c0-9a7a-74ce3d76665d
 ms.date: 05/02/2018
 keywords: ["NdisGetCurrentSystemTime macro"]
 ms.keywords: NdisGetCurrentSystemTime, NdisGetCurrentSystemTime macro [Network Drivers Starting with Windows Vista], ndis/NdisGetCurrentSystemTime, ndis_sysinfo_ref_cfd2358c-a52a-43d9-a07b-c64abb3e28b1.xml, netvista.ndisgetcurrentsystemtime
@@ -53,9 +52,9 @@ The
 
 ## -parameters
 
-### -param _pSystemTime 
+### -param _pSystemTime [in]
 
-[in]
+
 A pointer to a caller-supplied variable in which this function returns a count of 100-nanosecond
      intervals since January 1, 1601.
 

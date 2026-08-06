@@ -3,7 +3,6 @@ UID: NF:mbbcx.MbbDeviceSetWakeCapabilities
 title: MbbDeviceSetWakeCapabilities function (mbbcx.h)
 description: The MbbDeviceSetWakeCapabilities method sets the wake capabilities for a MBBCx device.
 tech.root: netvista
-ms.assetid: 06db3e7f-0840-4ec8-8111-37802903d213
 ms.date: 11/07/2019
 keywords: ["MbbDeviceSetWakeCapabilities function"]
 ms.keywords: MbbDeviceSetWakeCapabilities
@@ -37,8 +36,6 @@ api_location:
  - mbbcxstub.lib
 api_name:
  - MbbDeviceSetWakeCapabilities
-product:
- - Windows
 ---
 
 # MbbDeviceSetWakeCapabilities function
@@ -58,9 +55,6 @@ The WDFDEVICE object the driver previously obtained from a call to [**WdfDeviceC
 
 A pointer to a driver-allocated and initialized [**MBB_DEVICE_WAKE_CAPABILITIES**](../mbbcx/ns-mbbcx-_mbb_device_wake_capabilities.md) structure.
 
-## -returns
-
-This method does not return a value.
 
 ## -remarks
 

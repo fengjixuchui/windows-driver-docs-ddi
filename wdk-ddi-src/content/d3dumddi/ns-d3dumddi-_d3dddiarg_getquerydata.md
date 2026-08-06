@@ -4,7 +4,6 @@ title: _D3DDDIARG_GETQUERYDATA (d3dumddi.h)
 description: The D3DDDIARG_GETQUERYDATA structure contains query information that was retrieved from the user-mode display driver.
 old-location: display\d3dddiarg_getquerydata.htm
 tech.root: display
-ms.assetid: 98c6ada1-89a4-4cbd-bb6c-98c190fa15d8
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_GETQUERYDATA structure"]
 ms.keywords: D3DDDIARG_GETQUERYDATA, D3DDDIARG_GETQUERYDATA structure [Display Devices], UMDisplayDriver_param_Structs_7f9fefc5-6bce-4a76-9841-d91a40710d4a.xml, _D3DDDIARG_GETQUERYDATA, d3dumddi/D3DDDIARG_GETQUERYDATA, display.d3dddiarg_getquerydata
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_GETQUERYDATA
  - D3DDDIARG_GETQUERYDATA
 ---
 
@@ -52,13 +52,13 @@ The D3DDDIARG_GETQUERYDATA structure contains query information that was retriev
 
 ## -struct-fields
 
-### -field hQuery
+### -field hQuery [in]
 
-[in] The handle to the query that was created by the <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createquery">CreateQuery</a> function.
+The handle to the query that was created by the <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createquery">CreateQuery</a> function.
 
-### -field pData
+### -field pData [out]
 
-[out] A pointer to a buffer that the driver fills with data that is related to a query, if the query type is one that requires data.
+A pointer to a buffer that the driver fills with data that is related to a query, if the query type is one that requires data.
 
 ## -see-also
 
@@ -67,3 +67,4 @@ The D3DDDIARG_GETQUERYDATA structure contains query information that was retriev
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getquerydata">GetQueryData</a>
+

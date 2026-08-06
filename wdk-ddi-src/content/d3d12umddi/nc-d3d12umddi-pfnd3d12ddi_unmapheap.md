@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_UNMAPHEAP
 title: PFND3D12DDI_UNMAPHEAP (d3d12umddi.h)
 description: A client driver implements PFND3D12DDI_UNMAPHEAP to unmap a heap.
-ms.assetid: ff2743ac-ae14-4c19-836a-d8a869b3ff9b
 ms.date: 08/21/2020
 keywords: ["PFND3D12DDI_UNMAPHEAP callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_UNMAPHEAP
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,13 +48,13 @@ A client driver implements **PFND3D12DDI_UNMAPHEAP** to unmap a heap.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in]
 
-[in] *hDisplayDevice*: Handle to the display device (graphics context).
+*hDisplayDevice*: Handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2 [in]
 
-[in] *hHeap*: Handle to a display device-managed heap that needs to be unmapped.
+*hHeap*: Handle to a display device-managed heap that needs to be unmapped.
 
 ## -prototype
 

@@ -4,7 +4,6 @@ title: RtlValidRelativeSecurityDescriptor function (wdm.h)
 description: The RtlValidRelativeSecurityDescriptor routine checks the validity of a self-relative security descriptor.
 old-location: kernel\rtlvalidrelativesecuritydescriptor.htm
 tech.root: kernel
-ms.assetid: 1fb993f0-4289-4406-8a56-47b12c73f4e6
 ms.date: 04/30/2018
 keywords: ["RtlValidRelativeSecurityDescriptor function"]
 ms.keywords: RtlValidRelativeSecurityDescriptor, RtlValidRelativeSecurityDescriptor routine [Kernel-Mode Driver Architecture], k109_b261fb47-147f-4e39-81fb-bdbc31d53681.xml, kernel.rtlvalidrelativesecuritydescriptor, wdm/RtlValidRelativeSecurityDescriptor
@@ -50,19 +49,19 @@ The <b>RtlValidRelativeSecurityDescriptor</b> routine checks the validity of a s
 
 ## -parameters
 
-### -param SecurityDescriptorInput 
+### -param SecurityDescriptorInput [in]
 
-[in]
+
 A pointer to the buffer that contains the security descriptor in self-relative format. The buffer must begin with a <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor">SECURITY_DESCRIPTOR</a> structure, which is followed by the rest of the security descriptor data.
 
-### -param SecurityDescriptorLength 
+### -param SecurityDescriptorLength [in]
 
-[in]
+
 The size of the <i>SecurityDescriptorInput</i> structure.
 
-### -param RequiredInformation 
+### -param RequiredInformation [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ifs/security-information">SECURITY_INFORMATION</a> value that specifies the information that is required to be contained in the security descriptor.
 
 ## -returns

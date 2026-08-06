@@ -4,7 +4,6 @@ title: RtlUShortSub function (ntintsafe.h)
 description: Subtracts one value of type USHORT from another.
 old-location: kernel\rtlushortsub.htm
 tech.root: kernel
-ms.assetid: 1C0392AE-F3BD-4F42-9094-87228B7C3E10
 ms.date: 04/30/2018
 keywords: ["RtlUShortSub function"]
 ms.keywords: RtlUShortSub, RtlUShortSub function [Kernel-Mode Driver Architecture], kernel.rtlushortsub, ntintsafe/RtlUShortSub
@@ -50,19 +49,19 @@ Subtracts one value of type <b>USHORT</b> from another.
 
 ## -parameters
 
-### -param usMinuend 
+### -param usMinuend [in]
 
-[in]
+
 The value from which <i>usSubtrahend</i> is subtracted.
 
-### -param usSubtrahend 
+### -param usSubtrahend [in]
 
-[in]
+
 The value to subtract from <i>usMinuend</i>.
 
-### -param pusResult 
+### -param pusResult [out]
 
-[out]
+
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

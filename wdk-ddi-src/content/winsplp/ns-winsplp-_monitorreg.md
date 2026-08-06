@@ -2,10 +2,8 @@
 UID: NS:winsplp._MONITORREG
 title: _MONITORREG (winsplp.h)
 description: The MONITORREG structure supplies print monitors with the address of registry functions to use instead of Win32 registry API functions.
-old-location: print\monitorreg.htm
 tech.root: print
-ms.assetid: 57c146bc-574f-4137-89bb-e891e005de05
-ms.date: 04/20/2018
+ms.date: 01/04/2023
 keywords: ["MONITORREG structure"]
 ms.keywords: "*PMONITORREG, MONITORREG, MONITORREG structure [Print Devices], PMONITORREG, PMONITORREG structure pointer [Print Devices], _MONITORREG, print.monitorreg, spoolfnc_2d0db8db-eea5-461a-a257-1fb986001dac.xml, winsplp/MONITORREG, winsplp/PMONITORREG"
 req.header: winsplp.h
@@ -42,21 +40,20 @@ api_type:
 api_location:
  - winsplp.h
 api_name:
+ - _MONITORREG
+ - PMONITORREG
  - MONITORREG
 ---
 
-# _MONITORREG structure
-
-
 ## -description
 
-The MONITORREG structure supplies print monitors with the address of registry functions to use instead of Win32 registry API functions.
+The **MONITORREG** structure supplies print monitors with the address of registry functions to use instead of Win32 registry API functions.
 
 ## -struct-fields
 
 ### -field cbSize
 
-Size, in bytes, of the MONITORREG structure.
+Size, in bytes, of the **MONITORREG** structure.
 
 ### -field fpCreateKey
 
@@ -100,14 +97,16 @@ Pointer to a **QueryValue** spooler registry function.
 
 ## -remarks
 
-The MONITORREG structure's address is supplied in a [MONITORINIT](./ns-winsplp-_monitorinit.md) structure, which is passed to a print monitor's [InitializePrintMonitor2](./nf-winsplp-initializeprintmonitor2.md) function.
+The **MONITORREG** structure's address is supplied in a [MONITORINIT](./ns-winsplp-_monitorinit.md) structure, which is passed to a print monitor's [InitializePrintMonitor2](./nf-winsplp-initializeprintmonitor2.md) function.
 
 When [storing port configuration information](/windows-hardware/drivers/print/storing-port-configuration-information), print monitors must not explicitly call either the Win32 registry API or the cluster registry API.
 
-Instead, they must call equivalent spooler registry functions. The MONITORREG structure supplies the addresses of these functions. The following table lists each spooler registry function and its equivalent cluster registry function.
+The spooler contains a copy of the registry. Do not use the Win32 registry API to get the value actually used by the spooler. Use the spooler registry functions listed below whose pointers are contained in the **MONITORREG** structure.
 
-| Spooler Registry Function | Equivalent Cluster Registry Function |
-| --- | --- |
+Instead, they must call equivalent spooler registry functions. The **MONITORREG** structure supplies the addresses of these functions. The following table lists each spooler registry function and its equivalent cluster registry function.
+
+| Spooler registry function | Equivalent cluster registry function |
+|---|---|
 | CreateKey | ClusterRegCreateKey |
 | OpenKey | ClusterRegOpenKey |
 | CloseKey | ClusterRegCloseKey |
@@ -121,12 +120,12 @@ Instead, they must call equivalent spooler registry functions. The MONITORREG st
 
 Input and output parameters for these spooler functions match the parameters of the equivalent cluster registry functions in the [clusapi.h](/windows/win32/api/clusapi/index) header, with the following exceptions:
 
-- Each spooler registry function requires an *hSpooler* input parameter. This is the spooler handle received in the [MONITORINIT](./ns-winsplp-_monitorinit.md) structure.
+- Each spooler registry function requires an *hSpooler* input parameter. This is the spooler handle received in the [**MONITORINIT**](./ns-winsplp-_monitorinit.md) structure.
 
-- The spooler registry functions use HANDLE and PHANDLE parameter types instead of the HKEY and PHKEY types used by the cluster registry functions. Monitors receive the handle of the root registry location in the **hckRegistryRoot** member of the [MONITORINIT](./ns-winsplp-_monitorinit.md) structure.
+- The spooler registry functions use HANDLE and PHANDLE parameter types instead of the HKEY and PHKEY types used by the cluster registry functions. Monitors receive the handle of the root registry location in the **hckRegistryRoot** member of the [**MONITORINIT**](./ns-winsplp-_monitorinit.md) structure.
 
 ## -see-also
 
 [InitializePrintMonitor2](./nf-winsplp-initializeprintmonitor2.md)
 
-[MONITORINIT](./ns-winsplp-_monitorinit.md)
+[**MONITORINIT**](./ns-winsplp-_monitorinit.md)

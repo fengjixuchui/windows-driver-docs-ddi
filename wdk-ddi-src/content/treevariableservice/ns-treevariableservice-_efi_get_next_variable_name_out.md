@@ -1,9 +1,8 @@
 ---
 UID: NS:treevariableservice._EFI_GET_NEXT_VARIABLE_NAME_OUT
 title: _EFI_GET_NEXT_VARIABLE_NAME_OUT (treevariableservice.h)
-description: 
-ms.assetid: 8ef8a377-e74d-4278-83b7-b2f521d58b77
-ms.date: 10/19/2018
+description: "Learn more about: _EFI_GET_NEXT_VARIABLE_NAME_OUT structure"
+ms.date: 11/20/2020
 keywords: ["EFI_GET_NEXT_VARIABLE_NAME_OUT structure"]
 ms.keywords: _EFI_GET_NEXT_VARIABLE_NAME_OUT, EFI_GET_NEXT_VARIABLE_NAME_OUT, *PEFI_GET_NEXT_VARIABLE_NAME_OUT,
 req.header: treevariableservice.h
@@ -21,6 +20,7 @@ req.max-support:
 req.typenames: EFI_GET_NEXT_VARIABLE_NAME_OUT, *PEFI_GET_NEXT_VARIABLE_NAME_OUT
 targetos: Windows
 ms.custom: RS5
+tech.root: treedrv
 f1_keywords:
  - _EFI_GET_NEXT_VARIABLE_NAME_OUT
  - treevariableservice/_EFI_GET_NEXT_VARIABLE_NAME_OUT
@@ -36,6 +36,8 @@ api_location:
  - treevariableservice.h
 api_name:
  - _EFI_GET_NEXT_VARIABLE_NAME_OUT
+ - PEFI_GET_NEXT_VARIABLE_NAME_OUT
+ - EFI_GET_NEXT_VARIABLE_NAME_OUT
 ---
 
 # _EFI_GET_NEXT_VARIABLE_NAME_OUT structure

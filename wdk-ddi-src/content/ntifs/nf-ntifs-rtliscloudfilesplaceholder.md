@@ -4,14 +4,13 @@ title: RtlIsCloudFilesPlaceholder function (ntifs.h)
 description: The RtlIsCloudFilesPlaceholder routine determines if a file or a directory is a CloudFiles placeholder, based on the FileAttributes and ReparseTag values of the file.
 old-location: ifsk\rtliscloudfilesplaceholder.htm
 tech.root: ifsk
-ms.assetid: 9FF2EC69-0844-4FD7-A2BC-F16C42922212
 ms.date: 04/16/2018
 keywords: ["RtlIsCloudFilesPlaceholder function"]
 ms.keywords: RtlIsCloudFilesPlaceholder, RtlIsCloudFilesPlaceholder routine [Installable File System Drivers], ifsk.rtliscloudfilesplaceholder, ntifs/RtlIsCloudFilesPlaceholder
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows 10, version 1709.
+req.target-min-winverclnt: Windows 10, version 1709.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -51,14 +50,14 @@ The <b>RtlIsCloudFilesPlaceholder</b> routine determines if a file or a director
 
 ## -parameters
 
-### -param FileAttributes 
+### -param FileAttributes [in]
 
-[in]
+
 Specifies the attributes of a file or directory.
 
-### -param ReparseTag 
+### -param ReparseTag [in]
 
-[in]
+
 The ReparseTag or EaSize of a file or directory.
 
 ## -returns

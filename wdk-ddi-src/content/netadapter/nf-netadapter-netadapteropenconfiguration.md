@@ -3,8 +3,7 @@ UID: NF:netadapter.NetAdapterOpenConfiguration
 title: NetAdapterOpenConfiguration function (netadapter.h)
 description: Opens the adapter’s configuration database.
 tech.root: netvista
-ms.assetid: 42e2310c-2302-4594-96ab-574e13f99a6c
-ms.date: 02/06/2018
+ms.date: 03/30/2022
 keywords: ["NetAdapterOpenConfiguration function"]
 ms.keywords: NetAdapterOpenConfiguration
 req.header: netadapter.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.21
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: NetAdapterCxStub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -50,15 +49,15 @@ The **NetAdapterOpenConfiguration** function opens a net adapter’s configurati
 
 ## -parameters
 
-### -param Adapter
+### -param Adapter [_In_]
 
 The network adapter object that the client created in a prior call to [NetAdapterCreate](nf-netadapter-netadaptercreate.md).
 
-### -param ConfigurationAttributes
+### -param ConfigurationAttributes [_In_opt_]
 
 A pointer to a [WDF_OBJECT_ATTRIBUTES](../wdfobject/ns-wdfobject-_wdf_object_attributes.md) structure that contains driver-supplied attributes for the new configuration object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param Configuration
+### -param Configuration [_Out_]
 
 A pointer to a location that receives a handle to the new adapter configuration object.
 

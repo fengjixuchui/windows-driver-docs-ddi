@@ -4,8 +4,7 @@ title: _POWERSOURCEID (charging.h)
 description: This enum is for internal use only.
 old-location: battery\powersourceid.htm
 tech.root: battery
-ms.assetid: AC6E3447-2E7E-41EC-AC04-CAB46F826095
-ms.date: 02/15/2018
+ms.date: 07/25/2023
 keywords: ["POWERSOURCEID enumeration"]
 ms.keywords: "*PPOWERSOURCEID, POWERSOURCEID, _POWERSOURCEID, battery.powersourceid, charging/, enumeration [Battery Devices]"
 req.header: charging.h
@@ -42,11 +41,12 @@ api_type:
 api_location:
  - Charging.h
 api_name:
+ - _POWERSOURCEID
+ - PPOWERSOURCEID
  - POWERSOURCEID
 ---
 
 # _POWERSOURCEID enumeration
-
 
 ## -description
 
@@ -54,3 +54,20 @@ This enum is for internal use only.
 
 ## -enum-fields
 
+### -field PowerSourceInvalid
+
+### -field PowerSourceNone
+
+### -field PowerSourceUsbfn
+
+### -field PowerSourceWirelessCharger
+
+### -field PowerSourceKD
+
+### -field PowerSourceUsbTypeC
+
+### -field PowerSourceMax
+
+## -see-also
+
+[**charging.h**](index.md)

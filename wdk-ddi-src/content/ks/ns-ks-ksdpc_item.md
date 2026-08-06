@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_74
+UID: NS:ks.KSDPC_ITEM
 title: KSDPC_ITEM (ks.h)
 description: The KSDPC_ITEM structure is used to store information related to any internal DPCs that might be used to generate event notification from a raised IRQL.
 old-location: stream\ksdpc_item.htm
 tech.root: stream
-ms.assetid: 7732b1a8-4f76-49d0-acbf-ce0be6b36858
 ms.date: 04/23/2018
 keywords: ["KSDPC_ITEM structure"]
 ms.keywords: "*PKSDPC_ITEM, KSDPC_ITEM, KSDPC_ITEM structure [Streaming Media Devices], PKSDPC_ITEM, PKSDPC_ITEM structure pointer [Streaming Media Devices], ks-struct_c40f10e3-5732-4020-a22f-4695eaaa471a.xml, ks/KSDPC_ITEM, ks/PKSDPC_ITEM, stream.ksdpc_item"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSDPC_ITEM
  - KSDPC_ITEM
 ---
 
@@ -71,3 +71,4 @@ KSDPC_ITEM uses a reference counting scheme to determine when to free the struct
 ## -see-also
 
 <a href="/windows-hardware/drivers/kernel/eprocess">KDPC</a>
+

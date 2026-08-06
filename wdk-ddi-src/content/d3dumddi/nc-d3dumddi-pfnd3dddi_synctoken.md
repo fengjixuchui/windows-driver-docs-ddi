@@ -2,7 +2,6 @@
 UID: NC:d3dumddi.PFND3DDDI_SYNCTOKEN
 title: PFND3DDDI_SYNCTOKEN (d3dumddi.h)
 description: The PFND3DDDI_SYNCTOKEN callback creates a sync token.
-ms.assetid: 25c17000-b8cc-4e0f-a2ce-fe1c4a711413
 ms.date: 10/19/2018
 keywords: ["PFND3DDDI_SYNCTOKEN callback function"]
 req.header: d3dumddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3dumddi.h
 api_name:
  - PFND3DDDI_SYNCTOKEN
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -55,7 +52,7 @@ The PFND3DDDI_SYNCTOKEN callback creates a sync token.
 
 A handle to the graphics context device.
 
-### -param Arg2
+### -param unnamedParam2
 
 Pointer to a [D3DDDIARG_SYNCTOKEN](ns-d3dumddi-_d3dddiarg_synctoken.md) structure.
 

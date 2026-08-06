@@ -3,8 +3,7 @@ UID: NF:netwakesourcelist.NetWakeSourceListGetCount
 title: NetWakeSourceListGetCount function (netwakesourcelist.h)
 description: The NetWakeSourceListGetCount function gets the number of wake sources for a net adapter.
 tech.root: netvista
-ms.assetid: 2380726e-eef7-43fb-aa6a-9109232eff1f
-ms.date: 10/08/2019
+ms.date: 04/01/2022
 keywords: ["NetWakeSourceListGetCount function"]
 ms.keywords: NetWakeSourceListGetCount
 req.header: netwakesourcelist.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: netadaptercxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -37,8 +36,6 @@ api_location:
  - netadaptercxstub.lib
 api_name:
  - NetWakeSourceListGetCount
-product:
- - Windows
 ---
 
 # NetWakeSourceListGetCount function
@@ -50,7 +47,7 @@ The **NetWakeSourceListGetCount** function gets the number of wake sources for a
 
 ## -parameters
 
-### -param List
+### -param List [_In_]
 
 A pointer to a driver-allocated and initialized [**NET_WAKE_SOURCE_LIST**](../netwakesourcelist/ns-netwakesourcelist-_net_wake_source_list.md) structure.
 

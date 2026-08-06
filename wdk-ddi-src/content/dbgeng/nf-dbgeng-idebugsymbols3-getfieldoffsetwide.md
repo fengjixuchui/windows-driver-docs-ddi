@@ -4,7 +4,6 @@ title: IDebugSymbols3::GetFieldOffsetWide (dbgeng.h)
 description: The GetFieldOffsetWide method returns the offset of a field from the base address of an instance of a type.
 old-location: debugger\getfieldoffsetwide.htm
 tech.root: debugger
-ms.assetid: 4a9b90dd-72b2-4625-8b73-bc0dca6ba905
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::GetFieldOffsetWide"]
 ms.keywords: GetFieldOffsetWide, GetFieldOffsetWide method [Windows Debugging], GetFieldOffsetWide method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],GetFieldOffsetWide method, IDebugSymbols3.GetFieldOffsetWide, IDebugSymbols3::GetFieldOffsetWide, dbgeng/IDebugSymbols3::GetFieldOffsetWide, debugger.getfieldoffsetwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols3.GetFieldOffsetWide
+ - IDebugSymbols3::GetFieldOffsetWide
 ---
 
 # IDebugSymbols3::GetFieldOffsetWide
@@ -50,24 +49,24 @@ The <b>GetFieldOffsetWide</b>  method returns the offset of a field from the bas
 
 ## -parameters
 
-### -param Module 
+### -param Module [in]
 
-[in]
+
 Specifies the module containing the types of both the container and the field.
 
-### -param TypeId 
+### -param TypeId [in]
 
-[in]
+
 Specifies the type ID of the type containing the field.
 
-### -param Field 
+### -param Field [in]
 
-[in]
+
 Specifies the name of the field whose offset is requested.  Subfields may be specified by using a dot-separated path.
 
-### -param Offset 
+### -param Offset [out]
 
-[out]
+
 Receives the offset of the specified field from the base memory location of an instance of the type.
 
 ## -returns
@@ -108,3 +107,4 @@ The field <i>Field</i> could not be found in the type specified by <i>TypeId</i>
 An example of a dot-separated path for the <i>Field</i> parameter is as follows.  Suppose the MyStruct structure contains a field <b>MyField</b> of type MySubStruct, and the MySubStruct structure contains the field <b>MySubField</b>.  Then the location of this field relative to the location of MyStruct structure can be found by setting the <i>Field</i> parameter to "MyField.MySubField".
 
 For more information about types, see <a href="/windows-hardware/drivers/debugger/types">Types</a>.
+

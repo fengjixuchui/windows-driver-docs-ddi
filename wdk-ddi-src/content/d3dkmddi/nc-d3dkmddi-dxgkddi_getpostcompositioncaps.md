@@ -3,7 +3,6 @@ UID: NC:d3dkmddi.DXGKDDI_GETPOSTCOMPOSITIONCAPS
 title: DXGKDDI_GETPOSTCOMPOSITIONCAPS (d3dkmddi.h)
 description: Called to retrieve post composition capabilities. Support for this DDI is required for any WDDM 2.2 driver that wants to support post composition scaling.
 old-location: display\dxgkddi_getpostcompositioncaps.htm
-ms.assetid: B79959EC-A064-4B35-98EF-5B032AF5D4B4
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_GETPOSTCOMPOSITIONCAPS callback function"]
 ms.keywords: DXGKDDI_GETPOSTCOMPOSITIONCAPS, DXGKDDI_GETPOSTCOMPOSITIONCAPS callback, DXGKDDI_GETPOSTCOMPOSITIONCAPS callback function [Display Devices], d3dkmddi/DXGKDDI_GETPOSTCOMPOSITIONCAPS, display.dxgkddi_getpostcompositioncaps
@@ -39,8 +38,6 @@ api_location:
  - d3dkmddi.h
 api_name:
  - DXGKDDI_GETPOSTCOMPOSITIONCAPS
-product:
- - Windows
 ---
 
 # DXGKDDI_GETPOSTCOMPOSITIONCAPS callback function
@@ -56,9 +53,9 @@ Called to retrieve post composition capabilities. Support for this DDI is requir
 
 Identifies the adapter containing the overlay hardware.
 
-### -param pGetPostCompositionCaps
+### -param pGetPostCompositionCaps [in/out]
 
-[in/out] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_getpostcompositioncaps">DXGKARG_GETPOSTCOMPOSITIONCAPS</a> structure that receives the driver capabilities.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_getpostcompositioncaps">DXGKARG_GETPOSTCOMPOSITIONCAPS</a> structure that receives the driver capabilities.
 
 ## -returns
 

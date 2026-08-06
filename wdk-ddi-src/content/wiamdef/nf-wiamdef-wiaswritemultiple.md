@@ -4,7 +4,6 @@ title: wiasWriteMultiple function (wiamdef.h)
 description: The wiasWriteMultiple function writes multiple property values to a WIA item.
 old-location: image\wiaswritemultiple.htm
 tech.root: image
-ms.assetid: 7cd8ebb2-fc5a-49f5-8708-4b562d826278
 ms.date: 05/03/2018
 keywords: ["wiasWriteMultiple function"]
 ms.keywords: image.wiaswritemultiple, wiamdef/wiasWriteMultiple, wiasFncs_e29533d3-4181-41f3-b49b-fb34a20950db.xml, wiasWriteMultiple, wiasWriteMultiple function [Imaging Devices]
@@ -50,18 +49,18 @@ The <b>wiasWriteMultiple </b>function writes multiple property values to a WIA i
 
 ## -parameters
 
-### -param pWiasContext 
+### -param pWiasContext [in]
 
-[in]
+
 Pointer to a WIA item context.
 
 ### -param ulCount
 
 Specifies the total number of properties to write.
 
-### -param ps 
+### -param ps [in]
 
-[in]
+
 Pointer to the first element of an array of PROPSPEC structures that indicate the properties to write.
 
 ### -param pv

@@ -4,7 +4,6 @@ title: WdfRegistryAssignULong function (wdfregistry.h)
 description: The WdfRegistryAssignULong method assigns a specified unsigned long word value to a specified value name in the registry.
 old-location: wdf\wdfregistryassignulong.htm
 tech.root: wdf
-ms.assetid: a5a160a7-3408-4d26-83c8-2f5a7b6acaf1
 ms.date: 02/26/2018
 keywords: ["WdfRegistryAssignULong function"]
 ms.keywords: DFRegKeyObjectRef_2f35ea01-ade1-4bf1-a55b-6613021fcd04.xml, WdfRegistryAssignULong, WdfRegistryAssignULong method, kmdf.wdfregistryassignulong, wdf.wdfregistryassignulong, wdfregistry/WdfRegistryAssignULong
@@ -55,19 +54,19 @@ The <b>WdfRegistryAssignULong</b> method assigns a specified unsigned long word 
 
 ## -parameters
 
-### -param Key 
+### -param Key [in]
 
-[in]
+
 A handle to a registry-key object that represents an opened registry key.
 
-### -param ValueName 
+### -param ValueName [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a value name.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 A ULONG value that will be assigned to the value name that <i>ValueName</i> specifies.
 
 ## -returns

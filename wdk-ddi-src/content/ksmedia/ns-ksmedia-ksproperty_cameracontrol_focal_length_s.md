@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_120
+UID: NS:ksmedia.KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S
 title: KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S (ksmedia.h)
 description: The KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S structure returns filter-specific data requested using the KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH property.
 old-location: stream\ksproperty_cameracontrol_focal_length_s.htm
 tech.root: stream
-ms.assetid: bf236fb9-8aa6-4f80-a8e3-85adfedd1f49
 ms.date: 04/23/2018
 keywords: ["KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S structure"]
 ms.keywords: "*PKSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S, KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S, KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S structure [Streaming Media Devices], PKSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S, PKSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S, ksmedia/PKSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S, stream.ksproperty_cameracontrol_focal_length_s, vidcapstruct_d3d5d26e-e8be-4ce5-9a9a-03b125134bf7.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S
  - KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S
 ---
 
@@ -54,7 +54,7 @@ The KSPROPERTY_CAMERACONTROL_FOCAL_LENGTH_S structure returns filter-specific da
 
 ### -field Property
 
-Specifies an initialized <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+Specifies an initialized <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 ### -field lOcularFocalLength
 
@@ -74,7 +74,7 @@ If the camera has only one lens, these values can be used to represent zoom rati
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -87,3 +87,4 @@ If the camera has only one lens, these values can be used to represent zoom rati
 
 
 <a href="/windows-hardware/drivers/stream/propsetid-vidcap-cameracontrol">PROPSETID_VIDCAP_CAMERACONTROL</a>
+

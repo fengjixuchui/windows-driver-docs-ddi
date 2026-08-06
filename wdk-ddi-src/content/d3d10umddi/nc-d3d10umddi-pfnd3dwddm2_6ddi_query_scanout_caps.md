@@ -3,11 +3,8 @@ UID: NC:d3d10umddi.PFND3DWDDM2_6DDI_QUERY_SCANOUT_CAPS
 title: PFND3DWDDM2_6DDI_QUERY_SCANOUT_CAPS
 description: Queries whether or not a transformation should occur in preparation for a flip operation.
 tech.root: display
-ms.assetid: 04ec8f9b-6171-4d59-a8b5-32c2e196adf4
 ms.date: 04/04/2019
 keywords: ["PFND3DWDDM2_6DDI_QUERY_SCANOUT_CAPS callback function"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: d3d10umddi.h
 req.include-header: 
 req.target-type: 
@@ -38,8 +35,6 @@ api_location:
  - d3d10umddi.h
 api_name:
  - PFND3DWDDM2_6DDI_QUERY_SCANOUT_CAPS
-product:
- - Windows
 ---
 
 # PFND3DWDDM2_6DDI_QUERY_SCANOUT_CAPS callback function
@@ -51,13 +46,13 @@ Queries whether or not a transformation should occur in preparation for a flip o
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the device.
 
-### -param Arg2
+### -param unnamedParam2
 
 *hResource* [in]
 

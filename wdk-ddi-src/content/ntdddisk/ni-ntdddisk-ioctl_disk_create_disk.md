@@ -4,7 +4,6 @@ title: IOCTL_DISK_CREATE_DISK (ntdddisk.h)
 description: Creates an empty partition for the device object.
 old-location: storage\ioctl_disk_create_disk.htm
 tech.root: storage
-ms.assetid: 9ec6835c-43b8-4878-9ddf-1ca7c24435c2
 ms.date: 03/29/2018
 keywords: ["IOCTL_DISK_CREATE_DISK IOCTL"]
 ms.keywords: IOCTL_DISK_CREATE_DISK, IOCTL_DISK_CREATE_DISK control, IOCTL_DISK_CREATE_DISK control code [Storage Devices], k307_1520ab81-e89f-4531-a6ac-0998e1b1b658.xml, ntdddisk/IOCTL_DISK_CREATE_DISK, storage.ioctl_disk_create_disk
@@ -51,6 +50,8 @@ Creates an empty partition for the device object. It can operate on either an EF
 Disk drivers enumerate partitions as though they were child devices. Thus, upon creating the new partition, the disk class driver notifies the PnP manager by means of a call to <b>IoInvalidateDeviceRelations</b> that the disk device has a new child device (partition).
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

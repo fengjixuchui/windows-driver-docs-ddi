@@ -4,7 +4,6 @@ title: WdfPreDeviceInstallEx function (wdfinstaller.h)
 description: The co-installer's WdfPreDeviceInstallEx function performs any operations that the co-installer might require before a non-Plug and Play (PnP) driver's installer creates the driver's kernel-mode service.
 old-location: wdf\wdfpredeviceinstallex.htm
 tech.root: wdf
-ms.assetid: 99de930a-0d01-4177-b0d9-4692cc570303
 ms.date: 02/26/2018
 keywords: ["WdfPreDeviceInstallEx function"]
 ms.keywords: DFCoinstallerRef_0142df49-f344-47f7-bcd1-6e37e5d439fe.xml, WdfPreDeviceInstallEx, WdfPreDeviceInstallEx function, kmdf.wdfpredeviceinstallex, wdf.wdfpredeviceinstallex, wdfinstaller/WdfPreDeviceInstallEx
@@ -53,19 +52,19 @@ The co-installer's <b>WdfPreDeviceInstallEx</b> function performs any operations
 
 ## -parameters
 
-### -param InfPath 
+### -param InfPath [in]
 
-[in]
+
 A pointer to a null-terminated wide-character string that contains the directory path to the driver's INF file. The driver's installer can obtain this string by calling <b>GetCurrentDirectory</b>, which is described in the Microsoft Windows SDK.
 
-### -param InfSectionName 
+### -param InfSectionName [in, optional]
 
-[in, optional]
+
 A pointer to a null-terminated wide-character string that contains the <i>Wdf-install-section</i> name in the driver's INF file. For more information about this name, see <a href="/windows-hardware/drivers/wdf/installing-the-framework-s-co-installer">Using the KMDF Co-installer</a>. If this pointer is <b>NULL</b>, the co-installer uses <b>WdfSection</b> for the name.
 
-### -param ClientOptions 
+### -param ClientOptions [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfinstaller/ns-wdfinstaller-_wdf_coinstaller_install_options">WDF_COINSTALLER_INSTALL_OPTIONS</a>-typed structure that contains driver-specified installation options.
 
 ## -returns

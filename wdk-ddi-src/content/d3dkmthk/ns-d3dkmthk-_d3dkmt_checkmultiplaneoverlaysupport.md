@@ -1,9 +1,8 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT
-title: _D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT (d3dkmthk.h)
-description: Check for multiplane overlay support.
-ms.assetid: 8e10456f-2a64-47fe-a1ff-81f96467c5d3
-ms.date: 10/19/2018
+title: D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT (d3dkmthk.h)
+description: Learn more about the D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT structure.
+ms.date: 10/04/2023
 keywords: ["D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT structure"]
 ms.keywords: _D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT, D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT,
 req.header: d3dkmthk.h
@@ -35,14 +34,14 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT
+ - D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT
 dev_langs:
  - c++
 ---
 
-# _D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT structure
+# D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT structure
 
-> [!NOTE] This structure has been replaced by [D3DKMT_CHECK_MULTIPLANE_OVERLAY_PLANE3](ns-d3dkmthk-_d3dkmt_check_multiplane_overlay_plane3.md).
-
+This structure has been replaced by [**D3DKMT_CHECK_MULTIPLANE_OVERLAY_PLANE3**](ns-d3dkmthk-_d3dkmt_check_multiplane_overlay_plane3.md).
 
 ## -description
 
@@ -68,10 +67,8 @@ Indicates support.
 
 ### -field ReturnInfo
 
- 
 The return info.
-
-## -remarks
 
 ## -see-also
 
+[**D3DKMTCheckMultiPlaneOverlaySupport**](nf-d3dkmthk-d3dkmtcheckmultiplaneoverlaysupport.md)

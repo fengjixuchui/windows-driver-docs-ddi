@@ -4,7 +4,6 @@ title: NPI_CLIENT_DETACH_PROVIDER_FN (netioddk.h)
 description: A client module's ClientDetachProvider callback function detaches the client module from a provider module.
 old-location: netvista\clientdetachprovider.htm
 tech.root: netvista
-ms.assetid: a684136a-e2f2-4f82-9e9a-166b40bd7536
 ms.date: 05/02/2018
 keywords: ["NPI_CLIENT_DETACH_PROVIDER_FN callback function"]
 ms.keywords: ClientDetachProvider, ClientDetachProvider callback function [Network Drivers Starting with Windows Vista], NPI_CLIENT_DETACH_PROVIDER_FN, NPI_CLIENT_DETACH_PROVIDER_FN callback, PNPI_CLIENT_DETACH_PROVIDER_FN, PNPI_CLIENT_DETACH_PROVIDER_FN callback function [Network Drivers Starting with Windows Vista], netioddk/ClientDetachProvider, netvista.clientdetachprovider, nmrref_5197d4f5-2cd0-4134-bccb-b509853718cd.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - netioddk.h
 api_name:
- - PNPI_CLIENT_DETACH_PROVIDER_FN
+ - NPI_CLIENT_DETACH_PROVIDER_FN
 ---
 
 # NPI_CLIENT_DETACH_PROVIDER_FN callback function
@@ -51,9 +50,9 @@ A client module's
 
 ## -parameters
 
-### -param ClientBindingContext 
+### -param ClientBindingContext [in]
 
-[in]
+
 A pointer to the client module's context for the binding between the client module and the
      provider module from which it is detaching. The client module passes this pointer to the NMR when it
      calls the 
@@ -166,3 +165,4 @@ The NMR calls a client module's
 
 <a href="/windows-hardware/drivers/ddi/netioddk/nc-netioddk-npi_provider_cleanup_binding_context_fn">
    ProviderCleanupBindingContext</a>
+

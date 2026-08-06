@@ -4,7 +4,6 @@ title: IDebugControl4::OpenLogFile2 (dbgeng.h)
 description: The OpenLogFile2 method opens a log file that will receive output from the client objects.
 old-location: debugger\openlogfile2.htm
 tech.root: debugger
-ms.assetid: 58550baa-8d15-43c7-b75d-1370c36e833d
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::OpenLogFile2"]
 ms.keywords: IDebugControl4 interface [Windows Debugging],OpenLogFile2 method, IDebugControl4.OpenLogFile2, IDebugControl4::OpenLogFile2, IDebugControl_93e0a810-9b23-43c2-b714-99a39c398f1e.xml, OpenLogFile2, OpenLogFile2 method [Windows Debugging], OpenLogFile2 method [Windows Debugging],IDebugControl4 interface, dbgeng/IDebugControl4::OpenLogFile2, debugger.openlogfile2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.OpenLogFile2
+ - IDebugControl4::OpenLogFile2
 ---
 
 # IDebugControl4::OpenLogFile2
@@ -50,14 +49,14 @@ The <b>OpenLogFile2</b>  method opens a log file that will receive output from t
 
 ## -parameters
 
-### -param File 
+### -param File [in]
 
-[in]
+
 Specifies the name of the log file.  <i>File</i> can include a relative or absolute path; relative paths are relative to the directory in which the debugger  was started.  If the file does not exist, it will be created.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies the bit-flags that control the nature of the log file.  <i>Flags</i> can contain flags from the following table.
 
 <table>
@@ -149,3 +148,4 @@ For more information about log files, see <a href="/windows-hardware/drivers/deb
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setlogmask">SetLogMask</a>
+

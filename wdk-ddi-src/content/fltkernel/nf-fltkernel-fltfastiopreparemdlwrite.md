@@ -4,7 +4,6 @@ title: FltFastIoPrepareMdlWrite function (fltkernel.h)
 description: The FltFastIoPrepareMdlWrite routine returns a linked list of memory descriptor lists (MDLs) that point to the specified range of cached file data to write data directly to the cache.
 old-location: ifsk\fltfastiopreparemdlwrite.htm
 tech.root: ifsk
-ms.assetid: 7C48D179-35FA-44E1-B959-BD857AAA28E1
 ms.date: 04/16/2018
 keywords: ["FltFastIoPrepareMdlWrite function"]
 ms.keywords: FltFastIoPrepareMdlWrite, FsRtlPrepareMdlWriteDev, FsRtlPrepareMdlWriteDev routine [Installable File System Drivers], fltkernel/FsRtlPrepareMdlWriteDev, ifsk.fltfastiopreparemdlwrite
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - NtosKrnl.exe
 api_name:
- - FsRtlPrepareMdlWriteDev
+ - FltFastIoPrepareMdlWrite
 ---
 
 # FltFastIoPrepareMdlWrite function
@@ -54,34 +53,34 @@ The <b>FltFastIoPrepareMdlWrite</b> routine returns a linked list of memory desc
 
 Opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>.
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 A pointer to the file object.
 
-### -param FileOffset 
+### -param FileOffset [in]
 
-[in]
+
 A pointer to a value that specifies the starting byte offset within the cache that holds the data.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The length in bytes of the data to read from the cache.
 
-### -param LockKey 
+### -param LockKey [in]
 
-[in]
+
 A value that is associated with the byte range to lock. If the range to lock overlaps another range that is already locked with a nonexclusive lock, or if the range to read is a subrange of another range that is already locked non-exclusively, the value in this parameter must be the key for that nonexclusive lock. The lock must be held by the parent process of the calling thread. Otherwise, this parameter has no effect.
 
-### -param MdlChain 
+### -param MdlChain [out]
 
-[out]
+
 On output, a pointer to a linked list of memory descriptor lists (MDLs) that point to the byte range within the cached data.
 
-### -param IoStatus 
+### -param IoStatus [out]
 
-[out]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block">IO_STATUS_BLOCK</a> structure that, on output, contains the status of the transfer. If the operation succeeds, <i>IoStatus.Status</i> is set to STATUS_SUCCESS. Otherwise, it is set to an appropriate NTSTATUS error code. <i>IoStatus.Information</i> is set to the actual number of bytes that the routine successfully locked.
 
 ## -returns
@@ -107,3 +106,4 @@ Even if the call to <b>FltFastIoPrepareMdlWrite</b> fails, one or more MDLs migh
 
 
 <a href="/windows-hardware/drivers/kernel/mm-bad-pointer#mmgetsystemaddressformdlsafe">MmGetSystemAddressForMdlSafe</a>
+

@@ -4,7 +4,6 @@ title: PEP_ACPI_INITIALIZE_GPIO_IO_RESOURCE function (pepfx.h)
 description: The PEP_ACPI_INITIALIZE_GPIO_IO_RESOURCE function initializes a platform extension plug-in's (PEP) PEP_ACPI_GPIO_RESOURCE structure.
 old-location: kernel\pep_acpi_initialize_gpio_io_resource.htm
 tech.root: kernel
-ms.assetid: D32E24E4-FAF4-401B-85FB-4D522C52093E
 ms.date: 04/30/2018
 keywords: ["PEP_ACPI_INITIALIZE_GPIO_IO_RESOURCE function"]
 ms.keywords: PEP_ACPI_INITIALIZE_GPIO_IO_RESOURCE, PEP_ACPI_INITIALIZE_GPIO_IO_RESOURCE function [Kernel-Mode Driver Architecture], kernel.pep_acpi_initialize_gpio_io_resource, pepfx/PEP_ACPI_INITIALIZE_GPIO_IO_RESOURCE
@@ -50,72 +49,72 @@ The <b>PEP_ACPI_INITIALIZE_GPIO_IO_RESOURCE</b> function initializes a platform 
 
 ## -parameters
 
-### -param Shareable 
+### -param Shareable [in]
 
-[in]
+
 Indicates if the device can be shared.
 
-### -param CanWake 
+### -param CanWake [in]
 
-[in]
+
 Indicates if the device can be woken from a low-power state.
 
-### -param PinConfig 
+### -param PinConfig [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/pepfx/ne-pepfx-_gpio_pin_config_type">GPIO_PIN_CONFIG_TYPE</a> enumeration value that identifies the GPIO pin configuration type.
 
-### -param DebounceTimeout 
+### -param DebounceTimeout [in]
 
-[in]
+
 Specifies the hardware debounce wait time, in hundredths of milliseconds.
 
-### -param DriveStrength 
+### -param DriveStrength [in]
 
-[in]
 
-### -param IoRestriction 
 
-[in]
+### -param IoRestriction [in]
 
-### -param ResourceSourceIndex 
 
-[in]
+
+### -param ResourceSourceIndex [in]
+
+
 This parameter should always be zero.
 
-### -param ResourceSourceName 
+### -param ResourceSourceName [in]
 
-[in]
+
 This parameter should always be "ResourceConsumer."
 
-### -param ResourceUsage 
+### -param ResourceUsage [in]
 
-[in]
+
 Indicates if this device is in use.
 
-### -param VendorData 
+### -param VendorData [in]
 
-[in]
+
 A pointer to a raw data buffer containing vendor-defined byte data to be decoded by the OS driver.
 
-### -param VendorDataLength 
+### -param VendorDataLength [in]
 
-[in]
-The size of the buffer in the <i>VendorData</i> partameter.
 
-### -param PinTable 
+The size of the buffer in the <i>VendorData</i> parameter.
 
-[in]
+### -param PinTable [in]
+
+
 A list of pin numbers on the resource.
 
-### -param PinCount 
+### -param PinCount [in]
 
-[in]
+
 The number of pins described by the <i>PinTable</i> parameter.
 
-### -param Resource 
+### -param Resource [out]
 
-[out]
+
 A pointer to the resource. The structure behind the pointer is of type <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_acpi_gpio_resource">PEP_ACPI_GPIO_RESOURCE</a>.
 
 ## -see-also

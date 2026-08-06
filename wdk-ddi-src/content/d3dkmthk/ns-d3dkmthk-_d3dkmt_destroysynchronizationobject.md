@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_DESTROYSYNCHRONIZATIONOBJECT
 title: _D3DKMT_DESTROYSYNCHRONIZATIONOBJECT (d3dkmthk.h)
 description: The D3DKMT_DESTROYSYNCHRONIZATIONOBJECT structure contains the handle to a synchronization object to destroy.
 old-location: display\d3dkmt_destroysynchronizationobject.htm
-ms.assetid: d6be16da-7f92-4c10-af8b-7ecd05ef6856
 ms.date: 05/10/2018
 keywords: ["D3DKMT_DESTROYSYNCHRONIZATIONOBJECT structure"]
 ms.keywords: D3DKMT_DESTROYSYNCHRONIZATIONOBJECT, D3DKMT_DESTROYSYNCHRONIZATIONOBJECT structure [Display Devices], OpenGL_Structs_ca88b27b-fcac-41f6-bf16-9f26507f4e3f.xml, _D3DKMT_DESTROYSYNCHRONIZATIONOBJECT, d3dkmthk/D3DKMT_DESTROYSYNCHRONIZATIONOBJECT, display.d3dkmt_destroysynchronizationobject
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_DESTROYSYNCHRONIZATIONOBJECT
  - D3DKMT_DESTROYSYNCHRONIZATIONOBJECT
 ---
 
@@ -52,9 +52,9 @@ The D3DKMT_DESTROYSYNCHRONIZATIONOBJECT structure contains the handle to a synch
 
 ## -struct-fields
 
-### -field hSyncObject
+### -field hSyncObject [in]
 
-[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that the <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtcreatesynchronizationobject">D3DKMTCreateSynchronizationObject</a> function returns and that identifies the kernel-mode synchronization object to destroy.
+A D3DKMT_HANDLE data type that represents the kernel-mode handle that the <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtcreatesynchronizationobject">D3DKMTCreateSynchronizationObject</a> function returns and that identifies the kernel-mode synchronization object to destroy.
 
 ## -see-also
 
@@ -63,3 +63,4 @@ The D3DKMT_DESTROYSYNCHRONIZATIONOBJECT structure contains the handle to a synch
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtdestroysynchronizationobject">D3DKMTDestroySynchronizationObject</a>
+

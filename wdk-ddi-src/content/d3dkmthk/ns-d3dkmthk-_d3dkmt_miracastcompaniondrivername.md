@@ -1,8 +1,7 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_MIRACASTCOMPANIONDRIVERNAME
-title: _D3DKMT_MIRACASTCOMPANIONDRIVERNAME (d3dkmthk.h)
+title: D3DKMT_MIRACASTCOMPANIONDRIVERNAME (d3dkmthk.h)
 description: The name of the Miracast (wireless display) companion driver.
-ms.assetid: 2b1f8967-a5f9-4d21-9a72-bec52b5f7c12
 ms.date: 10/19/2018
 keywords: ["D3DKMT_MIRACASTCOMPANIONDRIVERNAME structure"]
 ms.keywords: _D3DKMT_MIRACASTCOMPANIONDRIVERNAME, D3DKMT_MIRACASTCOMPANIONDRIVERNAME,
@@ -35,25 +34,25 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_MIRACASTCOMPANIONDRIVERNAME
+ - D3DKMT_MIRACASTCOMPANIONDRIVERNAME
 dev_langs:
  - c++
 ---
 
-# _D3DKMT_MIRACASTCOMPANIONDRIVERNAME structure
-
+# D3DKMT_MIRACASTCOMPANIONDRIVERNAME structure
 
 ## -description
 
-The name of the Miracast(wireless display)  companion driver.
+The **D3DKMT_MIRACASTCOMPANIONDRIVERNAME** structure describes the name of the Miracast (wireless display) companion driver.
 
 ## -struct-fields
 
 ### -field MiracastCompanionDriverName
 
- 
 The name of the Miracast companion driver.
 
 ## -remarks
 
 ## -see-also
 
+[**D3DKMTQueryAdapterInfo**](nf-d3dkmthk-d3dkmtqueryadapterinfo.md)

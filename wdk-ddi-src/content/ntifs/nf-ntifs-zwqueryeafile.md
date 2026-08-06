@@ -1,17 +1,15 @@
 ---
 UID: NF:ntifs.ZwQueryEaFile
 title: ZwQueryEaFile function (ntifs.h)
-description: The ZwQueryEaFile routine returns information about extended-attribute (EA) values for a file.
-old-location: kernel\zwqueryeafile.htm
+description: Learn more about the ZwQueryEaFile function.
 tech.root: kernel
-ms.assetid: c4261a83-3c91-4bc1-93bf-d2d04c324e94
-ms.date: 04/30/2018
+ms.date: 04/25/2024
 keywords: ["ZwQueryEaFile function"]
 ms.keywords: ZwQueryEaFile, ZwQueryEaFile routine [Kernel-Mode Driver Architecture], kernel.zwqueryeafile, ntifs/ZwQueryEaFile
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Microsoft Windows 2000 and later versions of the Windows operating system.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -43,128 +41,66 @@ api_name:
 
 # ZwQueryEaFile function
 
-
 ## -description
 
-The <b>ZwQueryEaFile</b> routine returns 
-    information about extended-attribute (EA) values for a file.
+**ZwQueryEaFile** routine returns the extended attributes (EAs) associated with the specified file.
 
 ## -parameters
 
-### -param FileHandle 
+### -param FileHandle [in]
 
-[in]
 The handle for the file on which the operation is to be performed.
 
-### -param IoStatusBlock 
+### -param IoStatusBlock [out]
 
-[out]
-A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block">IO_STATUS_BLOCK</a> structure that 
-      receives the final completion status and other information about the requested operation.
+A pointer to an [**IO_STATUS_BLOCK**](../wdm/ns-wdm-_io_status_block.md) structure that receives the final completion status and other information about the requested operation.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
-A pointer to a caller-supplied 
-      <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_full_ea_information">FILE_FULL_EA_INFORMATION</a>-structured output 
-      buffer, where the extended attribute values are to be returned.
+A pointer to a caller-supplied [**FILE_FULL_EA_INFORMATION**](../wdm/ns-wdm-_file_full_ea_information.md)-structured output buffer in which to return the file's EAs.
 
-### -param Length 
+### -param Length [in]
 
-[in]
-The length, in bytes, of the buffer that the <i>Buffer</i> parameter points to.
+The length, in bytes, of the buffer that **Buffer** points to.
 
-### -param ReturnSingleEntry 
+### -param ReturnSingleEntry [in]
 
-[in]
-Set to <b>TRUE</b> if 
-      <b>ZwQueryEaFile</b> should return only the first entry that 
-      is found.
+Set to TRUE if **ZwQueryEaFile** should return only the first entry that it finds.
 
-### -param EaList 
+### -param EaList [in, optional]
 
-[in, optional]
-A pointer to a caller-supplied 
-      <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_get_ea_information">FILE_GET_EA_INFORMATION</a>-structured input 
-      buffer, which specifies the extended attributes to be queried. This parameter is optional and can be 
-      <b>NULL</b>.
+A pointer to a caller-supplied [**FILE_GET_EA_INFORMATION**](ns-ntifs-_file_get_ea_information.md)-structured input buffer that specifies the EAs to be queried. This parameter is optional and can be NULL.
 
-### -param EaListLength 
+### -param EaListLength [in]
 
-[in]
-The length, in bytes, of the buffer that the <i>EaList</i> parameter points to.
+The length, in bytes, of the buffer that the **EaList** parameter points to.
 
-### -param EaIndex 
+### -param EaIndex [in, optional]
 
-[in, optional]
-The index of the entry at which scanning the file's extended-attribute list should begin. This parameter is 
-      ignored if the <i>EaList</i> parameter points to a nonempty list. This parameter is optional 
-      and can be <b>NULL</b>.
+The index of the entry at which scanning the file's EA list should begin. This parameter is ignored if **EaList** points to a nonempty list. This parameter is optional and can be NULL.
 
-### -param RestartScan 
+### -param RestartScan [in]
 
-[in]
-Set to <b>TRUE</b> if 
-      <b>ZwQueryEaFile</b> should begin the scan at the first 
-      entry in the file's extended-attribute list. If this parameter is set to <b>FALSE</b>, the 
-      routine resumes the scan from a previous call to 
-      <b>ZwQueryEaFile</b>.
+Set to TRUE if **ZwQueryEaFile** should begin the scan at the first entry in the file's EA list. If this parameter is set to FALSE, the routine resumes the scan from a previous call to **ZwQueryEaFile**.
 
 ## -returns
 
-<b>ZwQueryEaFile</b> returns 
-      <b>STATUS_SUCCESS</b> or an appropriate <b>NTSTATUS</b> value such as 
-      the following:
+**ZwQueryEaFile** returns STATUS_SUCCESS or an appropriate NTSTATUS value such as the following:
 
-<table>
-<tr>
-<th>Return value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>STATUS_EAS_NOT_SUPPORTED</dt>
-</dl>
-</td>
-<td width="60%">
-The file system does not support extended attributes. This is an error code.
+| Return value | Description |
+| ------------ | ----------- |
+| STATUS_EAS_NOT_SUPPORTED | The file system doesn't support EAs. This is an error code. |
+| STATUS_INSUFFICIENT_RESOURCES | There isn't enough memory available to complete the operation. This is an error code. |
+| STATUS_EA_LIST_INCONSISTENT | The **EaList** parameter isn't formatted correctly. This is an error code. |
 
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>STATUS_INSUFFICIENT_RESOURCES</dt>
-</dl>
-</td>
-<td width="60%">
-The <a href="https://msdn.microsoft.com/library/windows/hardware/ff961907">ZwQueryEaFile</a> routine encountered a pool 
-        allocation failure. This is an error code.
+## -remarks
 
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>STATUS_EA_LIST_INCONSISTENT</dt>
-</dl>
-</td>
-<td width="60%">
-The <i>EaList</i> parameter is not formatted correctly. This is an error code.
-
-</td>
-</tr>
-</table>
+The amount of information that **ZwQueryEaFile** returns is based on the size of the EAs and the size of the buffer that **Buffer** points to. That is, either all of the requested EAs are written to the buffer, or the buffer is filled with as many complete EAs if it's not large enough to contain all the EAs. Only complete EAs are written to the buffer; no partial EAs will ever be returned.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_full_ea_information">FILE_FULL_EA_INFORMATION</a>
+[**FILE_FULL_EA_INFORMATION**](../wdm/ns-wdm-_file_full_ea_information.md)
 
+[**FILE_GET_EA_INFORMATION**](ns-ntifs-_file_get_ea_information.md)
 
-
-<a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_get_ea_information">FILE_GET_EA_INFORMATION</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwseteafile">ZwSetEaFile</a>
+[**ZwSetEaFile**](nf-ntifs-zwseteafile.md)

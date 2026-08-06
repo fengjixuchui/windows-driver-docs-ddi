@@ -4,7 +4,6 @@ title: _D3DDDICB_CREATECONTEXTVIRTUAL (d3dumddi.h)
 description: D3DDDICB_CREATECONTEXTVIRTUAL is used with pfnCreateContextVirtualCb to create contexts that support virtual addressing.
 old-location: display\d3dddicb_createcontextvirtual.htm
 tech.root: display
-ms.assetid: 451D1CE2-A50D-4E42-BD93-879503EDE4B5
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_CREATECONTEXTVIRTUAL structure"]
 ms.keywords: D3DDDICB_CREATECONTEXTVIRTUAL, D3DDDICB_CREATECONTEXTVIRTUAL structure [Display Devices], _D3DDDICB_CREATECONTEXTVIRTUAL, d3dumddi/D3DDDICB_CREATECONTEXTVIRTUAL, display.d3dddicb_createcontextvirtual
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDICB_CREATECONTEXTVIRTUAL
  - D3DDDICB_CREATECONTEXTVIRTUAL
 ---
 
@@ -52,29 +52,29 @@ api_name:
 
 ## -struct-fields
 
-### -field NodeOrdinal
+### -field NodeOrdinal [in]
 
-[in] The zero-based index for the node that the context is scheduled on.
+The zero-based index for the node that the context is scheduled on.
 
-### -field EngineAffinity
+### -field EngineAffinity [in]
 
-[in] The zero-based index for the engine, within the node that <b>NodeOrdinal</b> specifies, that the context can run in.
+The zero-based index for the engine, within the node that <b>NodeOrdinal</b> specifies, that the context can run in.
 
-### -field Flags
+### -field Flags [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_createcontextflags">D3DDDI_CREATECONTEXTFLAGS</a> structure that indicates, in bit-field flags, how to create the context.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_createcontextflags">D3DDDI_CREATECONTEXTFLAGS</a> structure that indicates, in bit-field flags, how to create the context.
 
-### -field pPrivateDriverData
+### -field pPrivateDriverData [in]
 
-[in] A pointer to private data that is passed to a display miniport driver.
+A pointer to private data that is passed to a display miniport driver.
 
-### -field PrivateDriverDataSize
+### -field PrivateDriverDataSize [in]
 
-[in] The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
+The size, in bytes, of the private data that <b>pPrivateDriverData</b> points to.
 
-### -field hContext
+### -field hContext [out]
 
-[out] A handle to the context that the <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createcontextvirtualcb">pfnCreateContextVirtualCb</a> function creates.
+A handle to the context that the <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createcontextvirtualcb">pfnCreateContextVirtualCb</a> function creates.
 
 ## -see-also
 
@@ -83,3 +83,4 @@ api_name:
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createcontextvirtualcb">pfnCreateContextVirtualCb</a>
+

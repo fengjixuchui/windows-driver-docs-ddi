@@ -4,7 +4,6 @@ title: AtaPortReleaseQueueTag function (irb.h)
 description: The AtaPortReleaseQueueTag routine releases the specified queue tag.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\ataportreleasequeuetag.htm
 tech.root: storage
-ms.assetid: 54399050-740f-4af8-ad85-cd3060f14af4
 ms.date: 03/29/2018
 keywords: ["AtaPortReleaseQueueTag function"]
 ms.keywords: AtaPortReleaseQueueTag, AtaPortReleaseQueueTag routine [Storage Devices], atartns_cfdd9be6-53b5-4c4a-ac61-bc6a3cf48ea5.xml, irb/AtaPortReleaseQueueTag, storage.ataportreleasequeuetag
@@ -58,19 +57,19 @@ The <b>AtaPortReleaseQueueTag</b> routine releases the specified queue tag.
 
 <p>A pointer to the channel extension.</p>
 
-### -param TargetId 
+### -param TargetId [in]
 
-[in]
+
 Specifies the target identifier of the device.
 
-### -param Lun 
+### -param Lun [in]
 
-[in]
+
 Specifies the logical unit number of the device.
 
-### -param QueueTag 
+### -param QueueTag [in]
 
-[in]
+
 Specifies the queue tag to be freed.
 
 ## -remarks

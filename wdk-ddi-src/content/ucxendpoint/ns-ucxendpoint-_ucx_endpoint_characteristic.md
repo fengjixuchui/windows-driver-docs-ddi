@@ -4,7 +4,6 @@ title: _UCX_ENDPOINT_CHARACTERISTIC (ucxendpoint.h)
 description: Stores the characteristics of an endpoint.
 old-location: buses\ucx_endpoint_characteristic.htm
 tech.root: usbref
-ms.assetid: 4785D94B-271C-4F8E-B95B-87401E32CE42
 ms.date: 05/07/2018
 keywords: ["UCX_ENDPOINT_CHARACTERISTIC structure"]
 ms.keywords: "*PUCX_ENDPOINT_CHARACTERISTIC, PUCX_ENDPOINT_CHARACTERISTIC, PUCX_ENDPOINT_CHARACTERISTIC structure pointer [Buses], UCX_ENDPOINT_CHARACTERISTIC, UCX_ENDPOINT_CHARACTERISTIC structure [Buses], _UCX_ENDPOINT_CHARACTERISTIC, buses.ucx_endpoint_characteristic, ucxendpoint/PUCX_ENDPOINT_CHARACTERISTIC, ucxendpoint/UCX_ENDPOINT_CHARACTERISTIC"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ucxendpoint.h
 api_name:
+ - _UCX_ENDPOINT_CHARACTERISTIC
+ - PUCX_ENDPOINT_CHARACTERISTIC
  - UCX_ENDPOINT_CHARACTERISTIC
 ---
 
@@ -73,3 +74,4 @@ A <a href="/windows-hardware/drivers/ddi/ucxendpoint/ne-ucxendpoint-_ucx_endpoin
 
 
 <a href="/windows-hardware/drivers/ddi/ucxendpoint/ne-ucxendpoint-_ucx_endpoint_characteristic_priority">UCX_CONTROLLER_ENDPOINT_CHARACTERISTIC_PRIORITY</a>
+

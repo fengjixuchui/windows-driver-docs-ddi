@@ -4,7 +4,6 @@ title: _SRIOV_DEVICE_INTERFACE_STANDARD (pcivirt.h)
 description: Stores function pointers to callback functions implemented by the physical function (PF) driver in the device stack for the of the SR-IOV device.
 old-location: pci\sriov_device_interface_standard.htm
 tech.root: PCI
-ms.assetid: c71add7d-9920-4b2f-a46a-4a09a94f3900
 ms.date: 02/24/2018
 keywords: ["SRIOV_DEVICE_INTERFACE_STANDARD structure"]
 ms.keywords: "*PSRIOV_DEVICE_INTERFACE_STANDARD, PCI.sriov_device_interface_standard, SRIOV_DEVICE_INTERFACE_STANDARD, SRIOV_DEVICE_INTERFACE_STANDARD structure [Buses], _SRIOV_DEVICE_INTERFACE_STANDARD, pcivirt/SRIOV_DEVICE_INTERFACE_STANDARD"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Pcivirt.h
 api_name:
+ - _SRIOV_DEVICE_INTERFACE_STANDARD
+ - PSRIOV_DEVICE_INTERFACE_STANDARD
  - SRIOV_DEVICE_INTERFACE_STANDARD
 ---
 
@@ -100,7 +101,7 @@ Pointer to the driver's implementation of the <a href="/windows-hardware/drivers
 
 ### -field GetDeviceLocation
 
-Pointer to the driver's implementation of the <a href="/windows-hardware/drivers/ddi/pcivirt/nc-pcivirt-sriov_get_device_location">SRIOV_GET_DEVICE_LOCATION</a> callback function that allows the a non-privileged VM to determine the bus to which the device is attached.
+Pointer to the driver's implementation of the <a href="/windows-hardware/drivers/ddi/pcivirt/nc-pcivirt-sriov_get_device_location">SRIOV_GET_DEVICE_LOCATION</a> callback function that allows a non-privileged VM to determine the bus to which the device is attached.
 
 ### -field ResetVf
 
@@ -148,3 +149,4 @@ typedef struct _SRIOV_DEVICE_INTERFACE_STANDARD {
 
 
 <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdf_query_interface_config_init.md">WDF_QUERY_INTERFACE_CONFIG_INIT</a>
+

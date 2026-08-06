@@ -4,14 +4,13 @@ title: ZwFlushBuffersFile function (ntifs.h)
 description: The ZwFlushBuffersFile routine is called by a file system filter driver to send a flush request for the specified file to the file system.
 old-location: kernel\zwflushbuffersfile.htm
 tech.root: kernel
-ms.assetid: b6ac1458-775d-4f73-86a1-30bfbf2256cc
 ms.date: 04/30/2018
 keywords: ["ZwFlushBuffersFile function"]
 ms.keywords: NtFlushBuffersFile, ZwFlushBuffersFile, ZwFlushBuffersFile routine [Kernel-Mode Driver Architecture], k111_4d1d812f-cead-4300-96cb-c2e8a916ac8a.xml, kernel.zwflushbuffersfile, ntifs/NtFlushBuffersFile, ntifs/ZwFlushBuffersFile
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows Vista.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - ZwFlushBuffersFile
- - NtFlushBuffersFile
 ---
 
 # ZwFlushBuffersFile function
@@ -51,14 +49,14 @@ The <b>ZwFlushBuffersFile</b> routine is called by a file system filter driver t
 
 ## -parameters
 
-### -param FileHandle 
+### -param FileHandle [in]
 
-[in]
+
 Handle returned by <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile">ZwCreateFile</a> or <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntopenfile">ZwOpenFile</a> for the file whose buffers will be flushed. This parameter is required and cannot be <b>NULL</b>.
 
-### -param IoStatusBlock 
+### -param IoStatusBlock [out]
 
-[out]
+
 Address of the caller's I/O status block. This parameter is required and cannot be <b>NULL</b>.
 
 ## -returns
@@ -104,7 +102,7 @@ Callers of <b>ZwFlushBuffersFile</b> must be running at IRQL = PASSIVE_LEVEL and
 
 <div class="alert"><b>Note</b>  If the call to the <b>ZwFlushBuffersFile</b> function occurs in user mode, you should use the name "<b>NtFlushBuffersFile</b>" instead of "<b>ZwFlushBuffersFile</b>".</div>
 <div> </div>
-For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="/windows-hardware/drivers/kernel/using-nt-and-zw-versions-of-the-native-system-services-routines">Using Nt and Zw Versions of the Native System Services Routines</a>.
+For calls from kernel-mode drivers, the **Nt*Xxx*** and **Zw*Xxx*** versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the **Nt*Xxx*** and **Zw*Xxx*** versions of a routine, see [Using Nt and Zw Versions of the Native System Services Routines](/windows-hardware/drivers/kernel/using-nt-and-zw-versions-of-the-native-system-services-routines).
 
 ## -see-also
 
@@ -125,3 +123,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntopenfile">ZwOpenFile</a>
+

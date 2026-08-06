@@ -4,7 +4,6 @@ title: KsFilterAttemptProcessing function (ks.h)
 description: The KsFilterAttemptProcessing function attempts to initiate processing on Filter.
 old-location: stream\ksfilterattemptprocessing.htm
 tech.root: stream
-ms.assetid: 22c6bd15-98b7-4905-8551-c8202cc6840b
 ms.date: 04/23/2018
 keywords: ["KsFilterAttemptProcessing function"]
 ms.keywords: KsFilterAttemptProcessing, KsFilterAttemptProcessing function [Streaming Media Devices], avfunc_ee888474-cf0c-4b23-b8a2-f1e7491db8fd.xml, ks/KsFilterAttemptProcessing, stream.ksfilterattemptprocessing
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ks.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,14 +50,14 @@ The<b> KsFilterAttemptProcessing</b> function attempts to initiate processing on
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter">KSFILTER</a> structure representing the AVStream filter object on which to attempt processing.
 
-### -param Asynchronous 
+### -param Asynchronous [in]
 
-[in]
+
 This parameter contains an indication as to whether the processing dispatch should occur asynchronously or not (should it occur). An asynchronous dispatch is guaranteed if this is <b>TRUE</b>; however, synchronous processing dispatches are governed by conditions described below.
 
 ## -remarks

@@ -4,7 +4,6 @@ title: _DISK_CACHE_INFORMATION (ntdddisk.h)
 description: The DISK_CACHE_INFORMATION structure is used with the IOCTL_DISK_GET_CACHE_INFORMATION request to retrieve cache information.
 old-location: storage\disk_cache_information.htm
 tech.root: storage
-ms.assetid: 17ea8b6b-d41f-4224-880a-49443756d0de
 ms.date: 03/29/2018
 keywords: ["DISK_CACHE_INFORMATION structure"]
 ms.keywords: "*PDISK_CACHE_INFORMATION, DISK_CACHE_INFORMATION, DISK_CACHE_INFORMATION structure [Storage Devices], PDISK_CACHE_INFORMATION, PDISK_CACHE_INFORMATION structure pointer [Storage Devices], _DISK_CACHE_INFORMATION, ntdddisk/DISK_CACHE_INFORMATION, ntdddisk/PDISK_CACHE_INFORMATION, storage.disk_cache_information, structs-disk_def992c5-6103-4eab-8598-4d52808e6b8c.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntdddisk.h
 api_name:
+ - _DISK_CACHE_INFORMATION
+ - PDISK_CACHE_INFORMATION
  - DISK_CACHE_INFORMATION
 ---
 
@@ -115,3 +116,4 @@ Contains the scalar multiplier of the transfer length of the request when <b>Pre
 
 
 <a href="/windows-hardware/drivers/ddi/ntdddisk/ni-ntdddisk-ioctl_disk_get_cache_information">IOCTL_DISK_GET_CACHE_INFORMATION</a>
+

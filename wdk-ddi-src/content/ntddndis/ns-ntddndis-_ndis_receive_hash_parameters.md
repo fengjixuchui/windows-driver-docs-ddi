@@ -4,7 +4,6 @@ title: _NDIS_RECEIVE_HASH_PARAMETERS (ntddndis.h)
 description: The NDIS_RECEIVE_HASH_PARAMETERS structure specifies the receive hash parameters for a miniport adapter that supports receive hash calculations.
 old-location: netvista\ndis_receive_hash_parameters.htm
 tech.root: netvista
-ms.assetid: 02c333d3-9ea7-4d24-9e09-32943c00d6a5
 ms.date: 05/02/2018
 keywords: ["NDIS_RECEIVE_HASH_PARAMETERS structure"]
 ms.keywords: "*PNDIS_RECEIVE_HASH_PARAMETERS, NDIS_RECEIVE_HASH_PARAMETERS, NDIS_RECEIVE_HASH_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_RECEIVE_HASH_PARAMETERS, PNDIS_RECEIVE_HASH_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_HASH_PARAMETERS, netvista.ndis_receive_hash_parameters, ntddndis/NDIS_RECEIVE_HASH_PARAMETERS, ntddndis/PNDIS_RECEIVE_HASH_PARAMETERS, receive_scaling_structures_ref_80a59146-35c0-44f9-9001-142356cdccdf.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_RECEIVE_HASH_PARAMETERS
+ - PNDIS_RECEIVE_HASH_PARAMETERS
  - NDIS_RECEIVE_HASH_PARAMETERS
 ---
 
@@ -58,7 +59,7 @@ The NDIS_RECEIVE_HASH_PARAMETERS structure specifies the receive hash parameters
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_RECEIVE_HASH_PARAMETERS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -165,7 +166,7 @@ The NDIS_RECEIVE_HASH_PARAMETERS structure defines the hash parameters for the
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -184,8 +185,9 @@ The NDIS_RECEIVE_HASH_PARAMETERS structure defines the hash parameters for the
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 
 <a href="/windows-hardware/drivers/network/oid-gen-receive-hash">OID_GEN_RECEIVE_HASH</a>
+

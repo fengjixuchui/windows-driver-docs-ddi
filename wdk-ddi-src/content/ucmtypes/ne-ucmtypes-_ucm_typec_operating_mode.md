@@ -4,7 +4,6 @@ title: _UCM_TYPEC_OPERATING_MODE (ucmtypes.h)
 description: Defines operating modes of a USB Type-C connector.
 old-location: buses\ucm_type_c_operating_mode.htm
 tech.root: usbref
-ms.assetid: B64849A6-DDB1-4BD1-B4B6-1E38DE9237E5
 ms.date: 05/07/2018
 keywords: ["UCM_TYPEC_OPERATING_MODE enumeration"]
 ms.keywords: UCM_TYPEC_OPERATING_MODE, UCM_TYPEC_OPERATING_MODE enumeration [Buses], UcmTypeCOperatingModeDfp, UcmTypeCOperatingModeDrp, UcmTypeCOperatingModeInvalid, UcmTypeCOperatingModeUfp, _UCM_TYPEC_OPERATING_MODE, buses.ucm_type_c_operating_mode, ucmtypes/UCM_TYPEC_OPERATING_MODE, ucmtypes/UcmTypeCOperatingModeDfp, ucmtypes/UcmTypeCOperatingModeDrp, ucmtypes/UcmTypeCOperatingModeInvalid, ucmtypes/UcmTypeCOperatingModeUfp
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Ucmtypes.h
 api_name:
+ - _UCM_TYPEC_OPERATING_MODE
  - UCM_TYPEC_OPERATING_MODE
 ---
 
@@ -71,3 +71,4 @@ Indicates the operating mode is set to dual-role port.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ucmmanager/nf-ucmmanager-ucm_connector_typec_config_init">UCM_CONNECTOR_TYPEC_CONFIG_INIT</a>
+

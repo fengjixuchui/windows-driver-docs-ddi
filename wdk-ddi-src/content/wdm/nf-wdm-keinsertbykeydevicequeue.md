@@ -4,7 +4,6 @@ title: KeInsertByKeyDeviceQueue function (wdm.h)
 description: The KeInsertByKeyDeviceQueue routine acquires the spin lock for the specified DeviceQueue and queues an entry according to the specified sort-key value if the device queue is set to a busy state.
 old-location: kernel\keinsertbykeydevicequeue.htm
 tech.root: kernel
-ms.assetid: fa395673-108f-4cf0-b05f-a160aa0b02ea
 ms.date: 04/30/2018
 keywords: ["KeInsertByKeyDeviceQueue function"]
 ms.keywords: KeInsertByKeyDeviceQueue, KeInsertByKeyDeviceQueue routine [Kernel-Mode Driver Architecture], k105_14a9196c-2ce0-4384-9e72-b957523f49b6.xml, kernel.keinsertbykeydevicequeue, wdm/KeInsertByKeyDeviceQueue
@@ -50,19 +49,19 @@ The <b>KeInsertByKeyDeviceQueue</b> routine acquires the spin lock for the speci
 
 ## -parameters
 
-### -param DeviceQueue 
+### -param DeviceQueue [in, out]
 
-[in, out]
+
 Pointer to a control object of the device queue type for which the caller provides the storage.
 
-### -param DeviceQueueEntry 
+### -param DeviceQueueEntry [in, out]
 
-[in, out]
+
 Pointer to the device queue entry to be inserted into the device queue according to the specific key value.
 
-### -param SortKey 
+### -param SortKey [in]
 
-[in]
+
 Specifies the sort-key value that determines the position in the device queue in which to insert the entry.
 
 ## -returns

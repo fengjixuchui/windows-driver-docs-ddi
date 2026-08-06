@@ -4,7 +4,6 @@ title: _SCSI_PASS_THROUGH_DIRECT_EX (ntddscsi.h)
 description: The SCSI_PASS_THROUGH_DIRECT_EX structure is used in conjunction with an IOCTL_SCSI_PASS_THROUGH_DIRECT_EX request to instruct the port driver to send an embedded SCSI command to the target device.
 old-location: storage\scsi_pass_through_direct_ex.htm
 tech.root: storage
-ms.assetid: FE699F78-99AC-46E0-9C51-6F69A5C4932C
 ms.date: 03/29/2018
 keywords: ["SCSI_PASS_THROUGH_DIRECT_EX structure"]
 ms.keywords: "*PSCSI_PASS_THROUGH_DIRECT_EX, PSCSI_PASS_THROUGH_DIRECT_EX, PSCSI_PASS_THROUGH_DIRECT_EX structure pointer [Storage Devices], SCSI_PASS_THROUGH_DIRECT_EX, SCSI_PASS_THROUGH_DIRECT_EX structure [Storage Devices], _SCSI_PASS_THROUGH_DIRECT_EX, ntddscsi/PSCSI_PASS_THROUGH_DIRECT_EX, ntddscsi/SCSI_PASS_THROUGH_DIRECT_EX, storage.scsi_pass_through_direct_ex"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddscsi.h
 api_name:
+ - _SCSI_PASS_THROUGH_DIRECT_EX
+ - PSCSI_PASS_THROUGH_DIRECT_EX
  - SCSI_PASS_THROUGH_DIRECT_EX
 ---
 
@@ -63,7 +64,7 @@ The version of this structure. Set to 0.
 
 ### -field Length
 
-The size of the this structure. Set to **sizeof**(SCSI_PASS_THROUGH_DIRECT_EX).
+The size of this structure. Set to **sizeof**(SCSI_PASS_THROUGH_DIRECT_EX).
 
 ### -field CdbLength
 
@@ -118,11 +119,11 @@ Indicates the size in bytes of the input data buffer. Many devices transfer chun
 
 ### -field DataOutBuffer
 
-A pointer to a output data buffer.
+A pointer to an output data buffer.
 
 ### -field DataInBuffer
 
-A pointer to a input data buffer.
+A pointer to an input data buffer.
 
 ### -field Cdb
 
@@ -144,3 +145,4 @@ The **SCSI_PASS_THROUGH_DIRECT_EX** structure is used with [IOCTL_SCSI_PASS_THRO
 [SCSI_PASS_THROUGH_DIRECT](ns-ntddscsi-_scsi_pass_through_direct.md)
 
 [STOR_ADDR_BTL8](../scsi/ns-scsi-_stor_addr_btl8.md)
+

@@ -4,7 +4,6 @@ title: IAction::SetTarget (wdtf.h)
 description: The SetTarget method is used internally by WDTF. Do not call this method directly.
 old-location: dtf\iaction_settarget.htm
 tech.root: dtf
-ms.assetid: ac539b82-83a1-4ccb-8088-c6f4b746a184
 ms.date: 04/04/2018
 keywords: ["IAction::SetTarget"]
 ms.keywords: IAction interface [Windows Device Testing Framework],SetTarget method, IAction.SetTarget, IAction::SetTarget, IAction_6b35121b-1750-475f-8c37-5edf9c0b8585.xml, Microsoft.WDTF.IAction.SetTarget, Microsoft::WDTF::IAction::SetTarget, SetTarget, SetTarget method [Windows Device Testing Framework], SetTarget method [Windows Device Testing Framework],IAction interface, dtf.iaction_settarget, wdtf/IAction::SetTarget
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IAction.SetTarget
+ - IAction::SetTarget
 ---
 
 # IAction::SetTarget
@@ -50,15 +49,15 @@ The <b>SetTarget</b> method is used internally by WDTF. Do not call this method 
 
 ## -parameters
 
-### -param pMainTarget 
+### -param pMainTarget [in]
 
-[in]
+
 The main target for the implementation to use. This target is the one 
 that <a href="/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-getinterface">IWDTFTarget2::GetInterface</a> was called on.
 
-### -param MoreTargets 
+### -param MoreTargets [in]
 
-[in]
+
 Optional additional targets for the implementation. Currently, the <i>MoreTargets</i> parameter will always be VT_EMPTY. You should fail the <b>SetTarget</b> call if this parameter is anything other than VT_EMPTY.
 
 ## -returns
@@ -88,3 +87,4 @@ The <b>SetTarget</b> method is used when you are creating WDTF actions.  Do not 
 
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftargets2">IWDTFTargets2</a>
+

@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDynamicConceptProviderConcept.QueryInterface
 title: IDynamicConceptProviderConcept::QueryInterface (dbgmodel.h)
-description: Retrieves pointers to the supported interfaces on an object. This method calls IUnknown::AddRef on the pointer it returns.
-ms.assetid: 6eff646a-662f-486d-9fa2-0ec5af62a5c3
+description: "The IDynamicConceptProviderConcept::QueryInterface method retrieves pointers to the supported interfaces on an object."
 ms.date: 09/19/2018
 keywords: ["IDynamicConceptProviderConcept::QueryInterface"]
 ms.keywords: IDynamicConceptProviderConcept::QueryInterface, QueryInterface, IDynamicConceptProviderConcept.QueryInterface, IDynamicConceptProviderConcept::QueryInterface, IDynamicConceptProviderConcept.QueryInterface
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDynamicConceptProviderConcept.QueryInterface
+ - IDynamicConceptProviderConcept::QueryInterface
 ---
 
 # IDynamicConceptProviderConcept::QueryInterface
@@ -69,3 +68,4 @@ Standard COM method.
 ## -see-also
 
 [IDynamicConceptProviderConcept interface](nn-dbgmodel-idynamicconceptproviderconcept.md)
+

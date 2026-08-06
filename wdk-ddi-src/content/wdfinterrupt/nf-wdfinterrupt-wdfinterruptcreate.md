@@ -4,7 +4,6 @@ title: WdfInterruptCreate function (wdfinterrupt.h)
 description: The WdfInterruptCreate method creates a framework interrupt object.
 old-location: wdf\wdfinterruptcreate.htm
 tech.root: wdf
-ms.assetid: 6279f9ed-f271-45e6-92ef-2a919f3584ed
 ms.date: 02/26/2018
 keywords: ["WdfInterruptCreate function"]
 ms.keywords: DFInterruptObjectRef_44b197bb-82d6-45ff-a640-67fd1de506cc.xml, WdfInterruptCreate, WdfInterruptCreate method, kmdf.wdfinterruptcreate, wdf.wdfinterruptcreate, wdfinterrupt/WdfInterruptCreate
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,24 +54,24 @@ The <b>WdfInterruptCreate</b> method creates a framework interrupt object.
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Configuration 
+### -param Configuration [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfinterrupt/ns-wdfinterrupt-_wdf_interrupt_config">WDF_INTERRUPT_CONFIG</a> structure that was initialized by a call to <a href="/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdf_interrupt_config_init">WDF_INTERRUPT_CONFIG_INIT</a>.
 
-### -param Attributes 
+### -param Attributes [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the framework interrupt object.  (See Remarks for additional information.) This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param Interrupt 
+### -param Interrupt [out]
 
-[out]
+
 A pointer to a location that receives a handle to the new interrupt object.
 
 ## -returns

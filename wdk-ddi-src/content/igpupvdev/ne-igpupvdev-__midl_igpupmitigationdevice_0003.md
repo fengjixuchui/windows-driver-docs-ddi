@@ -1,11 +1,9 @@
 ---
 UID: NE:igpupvdev.__MIDL_IGPUPMitigationDevice_0003
 title: __MIDL_IGPUPMitigationDevice_0003 (igpupvdev.h)
-description: 
-ms.assetid: 1420249b-f3b4-48cb-bb1c-6d8b1973d318
+description: "Learn more about: __MIDL_IGPUPMitigationDevice_0003 enumeration"
 ms.date: 10/19/2018
-keywords: ["_MIDL_IGPUPMitigationDevice_0003 enumeration"]
-ms.keywords: __MIDL_IGPUPMitigationDevice_0003, GPUP_SAVE_RESTORE_PAUSE_STATE,
+tech.root: display
 req.header: igpupvdev.h
 req.include-header: 
 req.target-type: 
@@ -30,22 +28,29 @@ api_location:
  - igpupvdev.h
 api_name:
  - __MIDL_IGPUPMitigationDevice_0003
+ - GPUP_SAVE_RESTORE_PAUSE_STATE
 ---
 
 # __MIDL_IGPUPMitigationDevice_0003 enumeration
 
-
 ## -description
+
+The **__MIDL_IGPUPMitigationDevice_0003** enumeration identifies the possible power device state values.
 
 ## -enum-fields
 
 ### -field GpupSaveInvalid
 
+Initial state.
+
 ### -field GpupSavePartitionPersist
+
+The physical device will be maintained; only the UMED is being reloaded.
 
 ### -field GpupSaveMaximum
 
+Maximum value of the enumeration.
+
 ## -remarks
 
-## -see-also
-
+For more information see [Live migration on GPU-P machines](/windows-hardware/drivers/display/live-migration-on-gpup-devices).

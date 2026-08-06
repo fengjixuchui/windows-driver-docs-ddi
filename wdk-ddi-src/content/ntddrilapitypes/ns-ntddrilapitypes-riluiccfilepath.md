@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILUICCFILEPATH
 title: RILUICCFILEPATH (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILUICCFILEPATH structure for internal use only. Don't use the RILUICCFILEPATH structure in your code."
 old-location: netvista\riluiccfilepath.htm
 tech.root: netvista
-ms.assetid: 65c46391-f0ef-4618-ac26-86f41e04e688
 ms.date: 05/02/2018
 keywords: ["RILUICCFILEPATH structure"]
 ms.keywords: "*LPRILUICCFILEPATH, RILUICCFILEPATH, RILUICCFILEPATH structure [Network Drivers Starting with Windows Vista], netvista.riluiccfilepath, ntddrilapitypes/RILUICCFILEPATH"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILUICCFILEPATH
+ - LPRILUICCFILEPATH
 ---
 
 # RILUICCFILEPATH structure (ntddrilapitypes.h)

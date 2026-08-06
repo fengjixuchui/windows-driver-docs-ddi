@@ -4,7 +4,6 @@ title: WdfDeviceGetDevicePnpState function (wdfdevice.h)
 description: The WdfDeviceGetDevicePnpState method returns the current state of the framework's Plug and Play state machine for a specified device.
 old-location: wdf\wdfdevicegetdevicepnpstate.htm
 tech.root: wdf
-ms.assetid: 25936ed9-d213-458f-bbc8-90eedea9ba02
 ms.date: 02/26/2018
 keywords: ["WdfDeviceGetDevicePnpState function"]
 ms.keywords: DFDeviceObjectGeneralRef_8c17c41d-4e8e-499e-83db-92006e4fe08a.xml, WdfDeviceGetDevicePnpState, WdfDeviceGetDevicePnpState method, kmdf.wdfdevicegetdevicepnpstate, wdf.wdfdevicegetdevicepnpstate, wdfdevice/WdfDeviceGetDevicePnpState
@@ -56,9 +55,9 @@ The <b>WdfDeviceGetDevicePnpState</b> method returns the current state of the fr
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
 ## -returns

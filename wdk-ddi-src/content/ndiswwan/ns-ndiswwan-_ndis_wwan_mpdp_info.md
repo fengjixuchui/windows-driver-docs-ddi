@@ -3,7 +3,6 @@ UID: NS:ndiswwan._NDIS_WWAN_MPDP_INFO
 title: _NDIS_WWAN_MPDP_INFO (ndiswwan.h)
 description: The NDIS_WWAN_MPDP_INFO structure contains information for an operation to perform on a Multiple Packet Data Protocol (MPDP) interface.
 tech.root: netvista
-ms.assetid: d55a038d-2f2e-45f4-b306-afe5703c5357
 ms.date: 06/25/2018
 keywords: ["NDIS_WWAN_MPDP_INFO structure"]
 ms.keywords: _NDIS_WWAN_MPDP_INFO, NDIS_WWAN_MPDP_INFO, *PNDIS_WWAN_MPDP_INFO,
@@ -37,6 +36,8 @@ api_location:
  - ndiswwan.h
 api_name:
  - _NDIS_WWAN_MPDP_INFO
+ - PNDIS_WWAN_MPDP_INFO
+ - NDIS_WWAN_MPDP_INFO
 ---
 
 # _NDIS_WWAN_MPDP_INFO structure
@@ -50,7 +51,7 @@ The **NDIS_WWAN_MPDP_INFO** structure contains information for an operation to p
 
 ### -field Operation
 
-An [**NDIS_WWAN_MPDP_OPERATION**](ne-ndiswwan-_wwan_mpdp_operation.md) value that specifies the operation to perform.
+An [**WWAN_MPDP_OPERATION**](ne-ndiswwan-_wwan_mpdp_operation.md) value that specifies the operation to perform.
 
 ### -field ChildInterfaceGUID
 
@@ -67,10 +68,11 @@ This structure is a member of both the [**NDIS_WWAN_SET_MPDP_STATE**](ns-ndiswwa
 
 ## -see-also
 
-[**NDIS_WWAN_MPDP_OPERATION**](ne-ndiswwan-_wwan_mpdp_operation.md)
+[**WWAN_MPDP_OPERATION**](ne-ndiswwan-_wwan_mpdp_operation.md)
 
 [**NDIS_WWAN_SET_MPDP_STATE**](ns-ndiswwan-_ndis_wwan_set_mpdp_state.md)
 
 [**NDIS_WWAN_MPDP_STATE**](ns-ndiswwan-_ndis_wwan_mpdp_state.md)
 
 [OID_WWAN_MPDP](/windows-hardware/drivers/network/oid-wwan-mpdp)
+

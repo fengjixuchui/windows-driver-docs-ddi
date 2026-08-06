@@ -4,7 +4,6 @@ title: PsRemoveCreateThreadNotifyRoutine function (ntddk.h)
 description: The PsRemoveCreateThreadNotifyRoutine routine removes a callback routine that was registered by the PsSetCreateThreadNotifyRoutine routine.
 old-location: kernel\psremovecreatethreadnotifyroutine.htm
 tech.root: kernel
-ms.assetid: ef1fd29c-e0ef-4c08-ab3a-b1a3c694c06b
 ms.date: 04/30/2018
 keywords: ["PsRemoveCreateThreadNotifyRoutine function"]
 ms.keywords: PsRemoveCreateThreadNotifyRoutine, PsRemoveCreateThreadNotifyRoutine routine [Kernel-Mode Driver Architecture], k108_cfa75911-6de3-4459-8093-855279e0a5f7.xml, kernel.psremovecreatethreadnotifyroutine, ntddk/PsRemoveCreateThreadNotifyRoutine
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>PsRemoveCreateThreadNotifyRoutine</b> routine removes a callback routine 
 
 ## -parameters
 
-### -param NotifyRoutine 
+### -param NotifyRoutine [in]
 
-[in]
+
 Pointer to the callback routine that the driver has previously registered through <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pssetcreatethreadnotifyroutine">PsSetCreateThreadNotifyRoutine</a>.
 
 ## -returns

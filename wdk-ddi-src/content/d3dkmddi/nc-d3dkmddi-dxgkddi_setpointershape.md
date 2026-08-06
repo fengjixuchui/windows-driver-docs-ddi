@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_SETPOINTERSHAPE
 title: DXGKDDI_SETPOINTERSHAPE (d3dkmddi.h)
 description: The DxgkDdiSetPointerShape function sets the appearance and location of the mouse pointer.
 old-location: display\dxgkddisetpointershape.htm
-ms.assetid: 36b462f7-5bad-4716-8138-af00d20e945b
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_SETPOINTERSHAPE callback function"]
 ms.keywords: DXGKDDI_SETPOINTERSHAPE, DXGKDDI_SETPOINTERSHAPE callback, DmFunctions_39ac69a2-f8dc-4704-b5ab-d57d83685071.xml, DxgkDdiSetPointerShape, DxgkDdiSetPointerShape callback function [Display Devices], d3dkmddi/DxgkDdiSetPointerShape, display.dxgkddisetpointershape
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiSetPointerShape
-product:
- - Windows
+ - DXGKDDI_SETPOINTERSHAPE
 ---
 
 # DXGKDDI_SETPOINTERSHAPE callback function
@@ -52,13 +49,13 @@ The <i>DxgkDdiSetPointerShape</i> function sets the appearance and location of t
 
 ## -parameters
 
-### -param hAdapter
+### -param hAdapter [in]
 
-[in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
+A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
 
-### -param pSetPointerShape
+### -param pSetPointerShape [in]
 
-[in] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_setpointershape">DXGKARG_SETPOINTERSHAPE</a> structure that describes the appearance and location of the mouse pointer.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_setpointershape">DXGKARG_SETPOINTERSHAPE</a> structure that describes the appearance and location of the mouse pointer.
 
 ## -returns
 
@@ -90,3 +87,4 @@ If you run a <i>DxgkDdiSetPointerShape</i> thread simultaneously with another di
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_setpointerposition">DxgkDdiSetPointerPosition</a>
+

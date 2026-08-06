@@ -4,7 +4,6 @@ title: HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE (storport.h)
 description: The HwMSInterruptRoutine routine handles a message signaled interrupt (MSI).
 old-location: storage\hwmsinterruptroutine.htm
 tech.root: storage
-ms.assetid: d8e90489-c847-48e7-89c4-f7a397a8de14
 ms.date: 03/29/2018
 keywords: ["HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE callback function"]
 ms.keywords: HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE, HwMSInterruptRoutine, HwMSInterruptRoutine routine [Storage Devices], storage.hwmsinterruptroutine, stormini_153bf378-505e-413b-90b2-24af3fd9d502.xml, storport/HwMSInterruptRoutine
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - Storport.h
 api_name:
- - HwMSInterruptRoutine
+ - HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE
 ---
 
 # HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE callback function
-
 
 ## -description
 
@@ -76,7 +74,7 @@ It should not call the **StorPortGetMSIInfo** routine from inside the **HwMSInte
 
 The name **HwMSInterruptRoutine** is just a placeholder. The actual prototype for this routine is defined in *Storport.h* as follows:
 
-```cpp
+```c
 typedef
 BOOLEAN
   HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE (
@@ -91,13 +89,13 @@ To define an **HwMSInterruptRoutine** callback function, you must first provide 
 
  For example, to define a **HwMSInterruptRoutine** callback routine that is named *MyHwMSIRoutine*, use the **HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE** type as shown in this code example:
 
-```cpp
+```c
 HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE MyHwMSIRoutine;
 ```
 
 Then, implement your callback routine as follows:
 
-```cpp
+```c
 _Use_decl_annotations_
 BOOLEAN
 MyHwMSIRoutine (
@@ -109,7 +107,7 @@ MyHwMSIRoutine (
   }
 ```
 
-The **HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE** function type is defined in the Storport.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the **HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE** function type in the header file are used. For more information about the requirements for function declarations, see [Declaring Functions Using Function Role Types for Storport Drivers](/windows-hardware/drivers/devtest/declaring-functions-by-using-function-role-types-for-storport-drivers). For information about _Use_decl_annotations_, see [Annotating Function Behavior](/cpp/code-quality/annotating-function-behavior?view=vs-2019).
+The **HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE** function type is defined in the Storport.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the **HW_MESSAGE_SIGNALED_INTERRUPT_ROUTINE** function type in the header file are used. For more information about the requirements for function declarations, see [Declaring Functions Using Function Role Types for Storport Drivers](/windows-hardware/drivers/devtest/declaring-functions-by-using-function-role-types-for-storport-drivers). For information about _Use_decl_annotations_, see [Annotating Function Behavior](/visualstudio/code-quality/annotating-function-behavior).
 
 ## -see-also
 

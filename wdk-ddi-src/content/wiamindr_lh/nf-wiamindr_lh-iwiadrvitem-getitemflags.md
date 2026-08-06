@@ -2,10 +2,8 @@
 UID: NF:wiamindr_lh.IWiaDrvItem.GetItemFlags
 title: IWiaDrvItem::GetItemFlags (wiamindr_lh.h)
 description: The IWiaDrvItem::GetItemFlags method gets the item flags of the current IWiaDrvItem item.
-old-location: image\iwiadrvitem_getitemflags.htm
 tech.root: image
-ms.assetid: 47358d69-ef45-4cac-8187-72c354912c4e
-ms.date: 05/03/2018
+ms.date: 07/21/2022
 keywords: ["IWiaDrvItem::GetItemFlags"]
 ms.keywords: DrvItem_6fcac1f5-c754-4158-a1a0-61efe0d3913c.xml, GetItemFlags, GetItemFlags method [Imaging Devices], GetItemFlags method [Imaging Devices],IWiaDrvItem interface, IWiaDrvItem interface [Imaging Devices],GetItemFlags method, IWiaDrvItem.GetItemFlags, IWiaDrvItem::GetItemFlags, image.iwiadrvitem_getitemflags, wiamindr_lh/IWiaDrvItem::GetItemFlags
 req.header: wiamindr_lh.h
@@ -38,11 +36,8 @@ api_type:
 api_location:
  - wiamindr_lh.h
 api_name:
- - IWiaDrvItem.GetItemFlags
+ - IWiaDrvItem::GetItemFlags
 ---
-
-# IWiaDrvItem::GetItemFlags
-
 
 ## -description
 
@@ -50,19 +45,15 @@ The **IWiaDrvItem::GetItemFlags** method gets the item flags of the current **IW
 
 ## -parameters
 
-plFlags [out]
-
-- Points to a memory location that will receive the item flags.
-
 ### -param __MIDL__IWiaDrvItem0000
 
-#### - plFlags [out]
+*plFlags* [out]
 
 Points to a memory location that will receive the item flags.
 
 ## -returns
 
-If the method succeeds, it places the item flag values in the location pointed to by *plFlags* and returns S_OK. If the pointer *plFlags* is invalid, the method returns E_INVALIDARG. If the method fails for another reason, it returns a standard COM error code.
+If the method succeeds, it places the item flag values in the location pointed to by *plFlags* and returns S_OK. If the pointer *plFlags* is invalid, the method returns **E_INVALIDARG**. If the method fails for another reason, it returns a standard COM error code.
 
 ## -remarks
 

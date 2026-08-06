@@ -4,7 +4,6 @@ title: WdfRegistryQueryString function (wdfregistry.h)
 description: The WdfRegistryQueryString method retrieves the string data that is currently assigned to a specified registry string value and assigns the string to a specified framework string object.
 old-location: wdf\wdfregistryquerystring.htm
 tech.root: wdf
-ms.assetid: 2c1242ea-5d77-464e-9203-ef2236ea4619
 ms.date: 02/26/2018
 keywords: ["WdfRegistryQueryString function"]
 ms.keywords: DFRegKeyObjectRef_d3260d42-afdc-4858-a0b4-e2ae90327066.xml, WdfRegistryQueryString, WdfRegistryQueryString method, kmdf.wdfregistryquerystring, wdf.wdfregistryquerystring, wdfregistry/WdfRegistryQueryString
@@ -55,19 +54,19 @@ The <b>WdfRegistryQueryString</b> method retrieves the string data that is curre
 
 ## -parameters
 
-### -param Key 
+### -param Key [in]
 
-[in]
+
 A handle to a registry-key object that represents an opened registry key.
 
-### -param ValueName 
+### -param ValueName [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a name for the registry value.
 
-### -param String 
+### -param String [in]
 
-[in]
+
 A handle to a framework string object. The framework will assign the registry value's string data to this object.
 
 ## -returns

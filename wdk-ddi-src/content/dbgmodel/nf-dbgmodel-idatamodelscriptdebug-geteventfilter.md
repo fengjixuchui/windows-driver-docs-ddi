@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelScriptDebug.GetEventFilter
 title: IDataModelScriptDebug::GetEventFilter (dbgmodel.h)
-description: The GetEventFilter method returns whether "break on event" is enabled for a particular event.
-ms.assetid: 1e875e1d-418a-4838-9084-584b29a0d42b
+description: "The IDataModelScriptDebug::GetEventFilter method returns whether break-on-event is enabled for a particular event."
 ms.date: 08/21/2018
 keywords: ["IDataModelScriptDebug::GetEventFilter"]
 ms.keywords: IDataModelScriptDebug::GetEventFilter, GetEventFilter, IDataModelScriptDebug.GetEventFilter, IDataModelScriptDebug::GetEventFilter, IDataModelScriptDebug.GetEventFilter
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelScriptDebug.GetEventFilter
+ - IDataModelScriptDebug::GetEventFilter
 ---
 
 # IDataModelScriptDebug::GetEventFilter

@@ -4,7 +4,6 @@ title: POB_POST_OPERATION_CALLBACK (wdm.h)
 description: The ObjectPostCallback routine is called by the operating system after a process or thread handle operation occurs.
 old-location: kernel\objectpostcallback.htm
 tech.root: kernel
-ms.assetid: cfa73359-58bb-4260-ac16-08f57ead67bb
 ms.date: 04/30/2018
 keywords: ["POB_POST_OPERATION_CALLBACK callback function"]
 ms.keywords: DrvrRtns_f15a2608-233d-47af-84cc-eb5692a6fe9a.xml, ObjectPostCallback, ObjectPostCallback callback function [Kernel-Mode Driver Architecture], POB_POST_OPERATION_CALLBACK, POB_POST_OPERATION_CALLBACK callback, kernel.objectpostcallback, wdm/ObjectPostCallback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - ObjectPostCallback
+ - POB_POST_OPERATION_CALLBACK
 ---
 
 # POB_POST_OPERATION_CALLBACK callback function
@@ -53,14 +52,14 @@ The <i>ObjectPostCallback</i> routine is called by the operating system after a 
 
 ## -parameters
 
-### -param RegistrationContext 
+### -param RegistrationContext [in]
 
-[in]
+
 The context that the driver specifies as the <i>CallBackRegistration</i>-><b>RegistrationContext</b> parameter of the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obregistercallbacks">ObRegisterCallbacks</a> routine. The meaning of this value is driver-defined.
 
-### -param OperationInformation 
+### -param OperationInformation [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_ob_post_operation_information">OB_POST_OPERATION_INFORMATION</a> structure that specifies the parameters of the handle operation.
 
 ## -remarks
@@ -86,3 +85,4 @@ This routine is called at PASSIVE_LEVEL in an arbitrary thread context with norm
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pob_pre_operation_callback">ObjectPreCallback</a>
+

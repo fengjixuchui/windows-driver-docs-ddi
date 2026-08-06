@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_RESOURCECOPYREGION
 title: PFND3D10DDI_RESOURCECOPYREGION (d3d10umddi.h)
 description: The ResourceCopyRegion function copies a source subresource region to a location on a destination subresource.
 old-location: display\resourcecopyregion.htm
-ms.assetid: e782dc8c-e34e-4f96-b6d9-c34d7843ed05
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_RESOURCECOPYREGION callback function"]
 ms.keywords: PFND3D10DDI_RESOURCECOPYREGION, PFND3D10DDI_RESOURCECOPYREGION callback, ResourceCopyRegion, ResourceCopyRegion callback function [Display Devices], UserModeDisplayDriverDx10_Functions_8b5cb003-4fa5-4d23-99c4-a8165253907c.xml, d3d10umddi/ResourceCopyRegion, display.resourcecopyregion
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - ResourceCopyRegion
-product:
- - Windows
+ - PFND3D10DDI_RESOURCECOPYREGION
 ---
 
 # PFND3D10DDI_RESOURCECOPYREGION callback function
@@ -52,59 +49,59 @@ The <i>ResourceCopyRegion</i> function copies a source subresource region to a l
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hDstResource* [in]
 
 A handle to the destination resource to copy to.
 
-### -param Arg3
+### -param unnamedParam3
 
 *DstSubresource* [in]
 
 An index that indicates the destination subresource to copy to.
 
-### -param Arg4
+### -param unnamedParam4
 
 *DstX* [in]
 
 The x-coordinate of the destination subresource.
 
-### -param Arg5
+### -param unnamedParam5
 
 *DstY* [in]
 
 The y-coordinate of the destination subresource. For one-dimensional (1-D) subresources, <i>DstY</i> is set to zero.
 
-### -param Arg6
+### -param unnamedParam6
 
 *DstZ* [in]
 
 The z-coordinate of the destination subresource. For one-dimensional (1-D) and two-dimensional (2-D) subresources, <i>DstZ</i> is set to zero.
 
-### -param Arg7
+### -param unnamedParam7
 
 *hSrcResource* [in]
 
 A handle to the source resource to copy from.
 
-### -param Arg8
+### -param unnamedParam8
 
 *SrcSubresource* [in]
 
 An index that indicates the source subresource to copy from.
 
-### -param Arg9
+### -param unnamedParam9
 
 *pSrcBox* [in, optional]
 
-A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10_ddi_box">D3D10_DDI_BOX</a> structure that specifies a box that fits on either the source or destination subresource. If <i>pSrcBox</i> is <b>NULL</b>, the driver should copy the entire source subresouce to the destination.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10_ddi_box">D3D10_DDI_BOX</a> structure that specifies a box that fits on either the source or destination subresource. If <i>pSrcBox</i> is <b>NULL</b>, the driver should copy the entire source subresource to the destination.
 
 If the members of the <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10_ddi_box">D3D10_DDI_BOX</a> structure are such that <b>left</b>>=<b>right</b>, <b>top</b>>=<b>bottom</b>, or <b>front</b>>=<b>back</b>, then <i>pSrcBox</i> is considered empty, and <i>ResourceCopyRegion</i> must not perform any copy operation.
 
@@ -215,3 +212,4 @@ The source and destination resources must have the same number of samples and qu
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

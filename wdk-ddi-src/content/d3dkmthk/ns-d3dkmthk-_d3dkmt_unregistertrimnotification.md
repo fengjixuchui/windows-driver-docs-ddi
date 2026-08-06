@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_UNREGISTERTRIMNOTIFICATION
 title: _D3DKMT_UNREGISTERTRIMNOTIFICATION (d3dkmthk.h)
 description: D3DKMT_UNREGISTERTRIMNOTIFICATION is used with D3DKMTUnregisterTrimNotification to remove a callback registration for a kernel mode device receiving notifications from a graphics framework (such as OpenGL).
 old-location: display\d3dkmt_unregistertrimnotification.htm
-ms.assetid: 336C5C6A-619B-4D28-9F06-A09CABF78073
 ms.date: 05/10/2018
 keywords: ["D3DKMT_UNREGISTERTRIMNOTIFICATION structure"]
 ms.keywords: D3DKMT_UNREGISTERTRIMNOTIFICATION, D3DKMT_UNREGISTERTRIMNOTIFICATION structure [Display Devices], _D3DKMT_UNREGISTERTRIMNOTIFICATION, d3dkmthk/D3DKMT_UNREGISTERTRIMNOTIFICATION, display.d3dkmt_unregistertrimnotification
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
+ - _D3DKMT_UNREGISTERTRIMNOTIFICATION
  - D3DKMT_UNREGISTERTRIMNOTIFICATION
 ---
 
@@ -52,9 +52,9 @@ api_name:
 
 ## -struct-fields
 
-### -field Handle
+### -field Handle [out]
 
-[out] The callback notification handle received from the call to <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtregistertrimnotification">D3DKMTRegisterTrimNotification</a>.
+The callback notification handle received from the call to <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtregistertrimnotification">D3DKMTRegisterTrimNotification</a>.
 
 ### -field Callback
 
@@ -65,3 +65,4 @@ api_name:
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtunregistertrimnotification">D3DKMTUnregisterTrimNotification</a>
+

@@ -4,7 +4,6 @@ title: _PARALLEL_CHIP_MODE (parallel.h)
 description: The PARALLEL_CHIP_MODE structure specifies the operating mode of a parallel port.
 old-location: parports\parallel_chip_mode.htm
 tech.root: parports
-ms.assetid: e9d78c80-e6cf-49af-89de-6df8ea871796
 ms.date: 02/15/2018
 keywords: ["PARALLEL_CHIP_MODE structure"]
 ms.keywords: "*PPARALLEL_CHIP_MODE, PARALLEL_CHIP_MODE, PARALLEL_CHIP_MODE structure [Parallel Ports], PPARALLEL_CHIP_MODE, PPARALLEL_CHIP_MODE structure pointer [Parallel Ports], _PARALLEL_CHIP_MODE, cisspd_1dbc3693-e551-46a3-9a41-725b06a2ee9a.xml, parallel/PARALLEL_CHIP_MODE, parallel/PPARALLEL_CHIP_MODE, parports.parallel_chip_mode"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - parallel.h
 api_name:
+ - _PARALLEL_CHIP_MODE
+ - PPARALLEL_CHIP_MODE
  - PARALLEL_CHIP_MODE
 ---
 
@@ -101,3 +102,4 @@ A client uses a PARALLEL_CHIP_MODE structure with internal device control reques
 
 
 <a href="..\parallel\nc-parallel-pparallel_clear_chip_mode.md">PPARALLEL_CLEAR_CHIP_MODE</a>
+

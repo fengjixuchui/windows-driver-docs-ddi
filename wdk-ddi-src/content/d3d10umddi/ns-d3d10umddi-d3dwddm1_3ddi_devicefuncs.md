@@ -3,14 +3,13 @@ UID: NS:d3d10umddi.D3DWDDM1_3DDI_DEVICEFUNCS
 title: D3DWDDM1_3DDI_DEVICEFUNCS (d3d10umddi.h)
 description: Contains functions that a user-mode display driver that is optimized for the Microsoft Direct3D version 11.2 runtime can implement to render graphics primitives and process state changes.
 old-location: display\d3dwddm1_3ddi_devicefuncs.htm
-ms.assetid: DE7A88BA-2E59-4E8C-B315-CA6260E3D68E
-ms.date: 05/10/2018
+ms.date: 07/29/2022
 keywords: ["D3DWDDM1_3DDI_DEVICEFUNCS structure"]
 ms.keywords: D3D11_1DDI_DEVICEFUNCS, D3D11_1DDI_DEVICEFUNCS structure [Display Devices], D3DWDDM1_3DDI_DEVICEFUNCS, D3DWDDM1_3DDI_DEVICEFUNCS structure [Display Devices], d3d10umddi/D3D11_1DDI_DEVICEFUNCS, display.d3dwddm1_3ddi_devicefuncs
 req.header: d3d10umddi.h
 req.include-header: D3d10umddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Windows 8.1,WDDM 1.3
+req.target-min-winverclnt: Windows 8.1 (WDDM 1.3)
 req.target-min-winversvr: Windows Server 2012 R2
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,15 +37,14 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - D3D11_1DDI_DEVICEFUNCS
+ - D3DWDDM1_3DDI_DEVICEFUNCS
 ---
 
 # D3DWDDM1_3DDI_DEVICEFUNCS structure
 
-
 ## -description
 
-Contains functions that a user-mode display driver that is optimized for the Microsoft Direct3D version 11.2 runtime can implement to render graphics primitives and process state changes. Used by Windows Display Driver Model (WDDM) 1.3 and later user-mode display drivers.
+The **D3DWDDM1_3DDI_DEVICEFUNCS** structure contains functions that a user-mode display driver optimized for the Microsoft Direct3D version 11.2 runtime can implement to render graphics primitives and process state changes. In general, unless a function is commented as optional in *d3d10umdd.h* (or optional under certain conditions), a driver must implement it.
 
 ## -struct-fields
 
@@ -733,3 +731,4 @@ The <b>pfnResetPrimitiveID</b> and  <b>pfnSetVertexPipelineOutput</b> members (n
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3dwddm1_3ddi_relocatedevicefuncs">RelocateDeviceFuncs(D3D11_2)</a>
+

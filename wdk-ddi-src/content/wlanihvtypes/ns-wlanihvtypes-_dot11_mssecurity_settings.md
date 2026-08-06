@@ -1,10 +1,9 @@
 ---
 UID: NS:wlanihvtypes._DOT11_MSSECURITY_SETTINGS
 title: _DOT11_MSSECURITY_SETTINGS (wlanihvtypes.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_MSSECURITY_SETTINGS structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_mssecurity_settings.htm
 tech.root: netvista
-ms.assetid: b80a06f0-7774-4bf1-9101-a466999246d6
 ms.date: 02/16/2018
 keywords: ["DOT11_MSSECURITY_SETTINGS structure"]
 ms.keywords: "*PDOT11_MSSECURITY_SETTINGS, DOT11_MSSECURITY_SETTINGS, DOT11_MSSECURITY_SETTINGS structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_5a71d8b6-a359-4eb3-9e1c-59327d0ca67c.xml, PDOT11_MSSECURITY_SETTINGS, PDOT11_MSSECURITY_SETTINGS structure pointer [Network Drivers Starting with Windows Vista], _DOT11_MSSECURITY_SETTINGS, netvista.dot11_mssecurity_settings, wlanihvtypes/DOT11_MSSECURITY_SETTINGS, wlanihvtypes/PDOT11_MSSECURITY_SETTINGS"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DOT11_MSSECURITY_SETTINGS, *PDOT11_MSSECURITY_SETTINGS
-req.product: Windows 10 or later.
 f1_keywords:
  - _DOT11_MSSECURITY_SETTINGS
  - wlanihvtypes/_DOT11_MSSECURITY_SETTINGS
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wlanihvtypes.h
 api_name:
+ - _DOT11_MSSECURITY_SETTINGS
+ - PDOT11_MSSECURITY_SETTINGS
  - DOT11_MSSECURITY_SETTINGS
 ---
 
@@ -107,3 +107,4 @@ typedef struct _DOT11_MSSECURITY_SETTINGS {
 
 
 <a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a>
+

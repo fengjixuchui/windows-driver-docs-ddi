@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTTARGETRECT
 title: PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTTARGETRECT (d3d10umddi.h)
 description: Sets the target rectangle for the video processor.
 old-location: display\videoprocessorsetoutputtargetrect.htm
-ms.assetid: ac1ba2e0-a289-4dee-b739-d3c1ad0970e1
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTTARGETRECT callback function"]
 ms.keywords: PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTTARGETRECT, PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTTARGETRECT callback, d3d10umddi/pfnVideoProcessorSetOutputTargetRect, display.videoprocessorsetoutputtargetrect, pfnVideoProcessorSetOutputTargetRect, pfnVideoProcessorSetOutputTargetRect callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoProcessorSetOutputTargetRect
-product:
- - Windows
+ - PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTTARGETRECT
 ---
 
 # PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTTARGETRECT callback function
@@ -52,25 +49,25 @@ Sets the target rectangle for the video processor.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hVideoProcessor* [in]
 
 A handle to the video processor object that was created through a call to the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a> function.
 
-### -param Arg3
+### -param unnamedParam3
 
 *Enable* [in]
 
 If <b>TRUE</b>, the target rectangle specified by the <i>pOutputRect</i> parameter should be used by the video processor.
 
-### -param Arg4
+### -param unnamedParam4
 
 *pOutputRect* [in]
 
@@ -96,3 +93,4 @@ If this function is never called, or if the <i>Enable</i> parameter is FALSE, th
 
 
 <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a>
+

@@ -3,11 +3,8 @@ UID: NS:dispmprt._DXGK_VIRTUALGPUMEMORYRESOURCE
 title: _DXGK_VIRTUALGPUMEMORYRESOURCE
 description: Virtual GPU memory resource.
 tech.root: display
-ms.assetid: c3a78863-0715-4051-9ae1-145bbc2746c6
 ms.date: 04/04/2019
 keywords: ["DXGK_VIRTUALGPUMEMORYRESOURCE structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _DXGK_VIRTUALGPUMEMORYRESOURCE, DXGK_VIRTUALGPUMEMORYRESOURCE, *PDXGK_VIRTUALGPUMEMORYRESOURCE,
 req.header: dispmprt.h
 req.include-header: 
@@ -39,8 +36,8 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGK_VIRTUALGPUMEMORYRESOURCE
-product:
- - Windows
+ - PDXGK_VIRTUALGPUMEMORYRESOURCE
+ - DXGK_VIRTUALGPUMEMORYRESOURCE
 dev_langs:
  - c++
 ---

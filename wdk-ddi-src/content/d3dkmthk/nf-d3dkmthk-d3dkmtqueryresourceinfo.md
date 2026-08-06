@@ -3,14 +3,13 @@ UID: NF:d3dkmthk.D3DKMTQueryResourceInfo
 title: D3DKMTQueryResourceInfo function (d3dkmthk.h)
 description: The D3DKMTQueryResourceInfo function retrieves information about a shared resource.
 old-location: display\d3dkmtqueryresourceinfo.htm
-ms.assetid: d195634e-d626-43c9-8212-f32b95c1f526
 ms.date: 05/10/2018
 keywords: ["D3DKMTQueryResourceInfo function"]
 ms.keywords: D3DKMTQueryResourceInfo, D3DKMTQueryResourceInfo function [Display Devices], OpenGL_Functions_77dad2ba-a352-4b1a-b2be-53c41589bf90.xml, d3dkmthk/D3DKMTQueryResourceInfo, display.d3dkmtqueryresourceinfo
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -53,7 +52,7 @@ The <b>D3DKMTQueryResourceInfo</b> function retrieves information about a shared
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in, out]
 

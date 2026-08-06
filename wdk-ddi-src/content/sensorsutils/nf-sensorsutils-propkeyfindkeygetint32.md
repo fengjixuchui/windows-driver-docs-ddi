@@ -1,8 +1,7 @@
 ---
 UID: NF:sensorsutils.PropKeyFindKeyGetInt32
 title: PropKeyFindKeyGetInt32 function (sensorsutils.h)
-description: This routine gets a INT32 value from a PROPVARIANT within a collection list based on the PROPERTYKEY.
-ms.assetid: 324dc740-750d-4e93-9c1c-af4e77254672
+description: This routine gets an INT32 value from a PROPVARIANT within a collection list based on the PROPERTYKEY.
 ms.date: 08/08/2018
 keywords: ["PropKeyFindKeyGetInt32 function"]
 tech.root: sensors
@@ -37,8 +36,6 @@ api_location:
  - sensorsutils.h
 api_name:
  - PropKeyFindKeyGetInt32
-product:
- - Windows
 ---
 
 # PropKeyFindKeyGetInt32 function
@@ -46,21 +43,21 @@ product:
 
 ## -description
 
-This routine gets a INT32 value from a PROPVARIANT within a collection list based on the PROPERTYKEY.
+This routine gets an INT32 value from a PROPVARIANT within a collection list based on the PROPERTYKEY.
 
 ## -parameters
 
-### -param pList
+### -param pList [in]
 
-[in] Pointer to the list of PROPVARIANT collection.
+Pointer to the list of PROPVARIANT collection.
 
-### -param pKey
+### -param pKey [in]
 
-[in] Pointer to a PROPERTYKEY for the target PROPVARIANT.
+Pointer to a PROPERTYKEY for the target PROPVARIANT.
 
-### -param pRetValue
+### -param pRetValue [out]
 
-[out] Pointer to the output buffer.
+Pointer to the output buffer.
 
 ## -returns
 

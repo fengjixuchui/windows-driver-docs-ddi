@@ -4,7 +4,6 @@ title: wiasReadPropBin function (wiamdef.h)
 description: The wiasReadPropBin function retrieves a binary-data property value from a WIA item.
 old-location: image\wiasreadpropbin.htm
 tech.root: image
-ms.assetid: f62b63e3-011b-43ef-b7f5-769aa00ff3ca
 ms.date: 05/03/2018
 keywords: ["wiasReadPropBin function"]
 ms.keywords: image.wiasreadpropbin, wiamdef/wiasReadPropBin, wiasFncs_484baa0a-a423-4f4d-a33c-d155a8f4974c.xml, wiasReadPropBin, wiasReadPropBin function [Imaging Devices]
@@ -50,23 +49,23 @@ The **wiasReadPropBin** function retrieves a binary-data property value from a W
 
 ## -parameters
 
-### -param pWiasContext 
+### -param pWiasContext [in]
 
-[in]
+
 Pointer to a WIA item context.
 
 ### -param propid
 
 Specifies the property identifier.
 
-### -param ppbVal 
+### -param ppbVal [out]
 
-[out]
+
 Pointer to a memory location that receives the address of a buffer allocated by this function. Upon return, the buffer contains the property's binary data.
 
-### -param ppbValOld 
+### -param ppbValOld [out, optional]
 
-[out, optional]
+
 Pointer to a memory location that receives the address of a buffer allocated by the minidriver. Upon return, the buffer contains the previous value of the property's binary data. If this information is not needed, this parameter can be set to **NULL**.
 
 ### -param bMustExist

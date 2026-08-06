@@ -1,10 +1,8 @@
 ---
 UID: NF:ntifs.FsRtlLookupPerStreamContextInternal
 title: FsRtlLookupPerStreamContextInternal function (ntifs.h)
-description: Reserved for system use.
-old-location: ifsk\fsrtllookupperstreamcontextinternal.htm
+description: Learn more about the FsRtlLookupPerStreamContextInternal function.
 tech.root: ifsk
-ms.assetid: 672fc668-452b-4f37-9526-88bedb4a1ef9
 ms.date: 04/16/2018
 keywords: ["FsRtlLookupPerStreamContextInternal function"]
 ms.keywords: FsRtlLookupPerStreamContextInternal, FsRtlLookupPerStreamContextInternal function [Installable File System Drivers], fsrtlref_872d7113-0cde-4ac9-a504-fedca6aa51e7.xml, ifsk.fsrtllookupperstreamcontextinternal, ntifs/FsRtlLookupPerStreamContextInternal
@@ -43,21 +41,24 @@ api_name:
 
 # FsRtlLookupPerStreamContextInternal function
 
-
 ## -description
 
-The <b>FsRtlLookupPerStreamContextInternal</b> routine is reserved for system use. See <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtllookupperstreamcontext">FsRtlLookupPerStreamContext</a>.
+The **FsRtlLookupPerStreamContextInternal** routine is reserved for system use. See [**FsRtlLookupPerStreamContext**](nf-ntifs-fsrtllookupperstreamcontext.md).
 
 ## -parameters
 
 ### -param StreamContext
 
-<p>Reserved.</p>
+Reserved.
 
 ### -param OwnerId
 
 Reserved.
 
 ### -param InstanceId
+
+Reserved.
+
+## -returns
 
 Reserved.

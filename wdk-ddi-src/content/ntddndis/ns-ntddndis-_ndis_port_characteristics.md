@@ -4,7 +4,6 @@ title: _NDIS_PORT_CHARACTERISTICS (ntddndis.h)
 description: The NDIS_PORT_CHARACTERISTICS structure specifies the characteristics of an NDIS port. For more information about NDIS ports, see NDIS Ports.
 old-location: netvista\ndis_port_characteristics.htm
 tech.root: netvista
-ms.assetid: fd602dd6-c216-413a-a4da-292739774937
 ms.date: 05/02/2018
 keywords: ["NDIS_PORT_CHARACTERISTICS structure"]
 ms.keywords: "*PNDIS_PORT_CHARACTERISTICS, NDIS_PORT_CHARACTERISTICS, NDIS_PORT_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], PNDIS_PORT_CHARACTERISTICS, PNDIS_PORT_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_PORT_CHARACTERISTICS, ndis_ports_ref_2b3ef68d-2ed2-4a06-ab0c-3df59bf7d7a5.xml, netvista.ndis_port_characteristics, ntddndis/NDIS_PORT_CHARACTERISTICS, ntddndis/PNDIS_PORT_CHARACTERISTICS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_PORT_CHARACTERISTICS
+ - PNDIS_PORT_CHARACTERISTICS
  - NDIS_PORT_CHARACTERISTICS
 ---
 
@@ -57,7 +58,7 @@ The <b>NDIS_PORT_CHARACTERISTICS</b> structure specifies the characteristics of 
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_PORT_CHARACTERISTICS</b> structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -297,7 +298,7 @@ NDIS uses a linked list of ports in port activation Plug and Play (PnP) events. 
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -326,3 +327,4 @@ NDIS uses a linked list of ports in port activation Plug and Play (PnP) events. 
 
 
 <a href="/windows-hardware/drivers/network/types-of-ndis-ports">Types of NDIS Ports</a>
+

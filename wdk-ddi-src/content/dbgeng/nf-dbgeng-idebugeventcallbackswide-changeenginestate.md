@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugEventCallbacksWide.ChangeEngineState
 title: IDebugEventCallbacksWide::ChangeEngineState (dbgeng.h)
-description: The ChangeEngineState callback method is called by the engine when its state has changed.
+description: The ChangeEngineState callback method is called by the engine when its state has changed. This method belongs to the IDebugEventCallbacksWide interface.
 old-location: debugger\idebugeventcallbackswide_changeenginestate.htm
 tech.root: debugger
-ms.assetid: 14205476-3f58-4105-99a7-a3baa2eba033
 ms.date: 05/03/2018
 keywords: ["IDebugEventCallbacksWide::ChangeEngineState"]
 ms.keywords: ChangeEngineState, ChangeEngineState method [Windows Debugging], ChangeEngineState method [Windows Debugging],IDebugEventCallbacksWide interface, IDebugEventCallbacksWide interface [Windows Debugging],ChangeEngineState method, IDebugEventCallbacksWide.ChangeEngineState, IDebugEventCallbacksWide::ChangeEngineState, dbgeng/IDebugEventCallbacksWide::ChangeEngineState, debugger.idebugeventcallbackswide_changeenginestate
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugEventCallbacksWide.ChangeEngineState
+ - IDebugEventCallbacksWide::ChangeEngineState
 ---
 
 # IDebugEventCallbacksWide::ChangeEngineState
@@ -50,9 +49,9 @@ The <b>ChangeEngineState</b> callback method is called by the engine when its st
 
 ## -parameters
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies a bit-set indicating the type of changes that occurred in the engine's state.  The following bit flags might be set:
 
 <table>
@@ -212,9 +211,9 @@ Text replacements have changed.
 </tr>
 </table>
 
-### -param Argument 
+### -param Argument [in]
 
-[in]
+
 Provides additional information about the change to the engine's state.  If more than one bit flag is set in the <i>Flags</i> parameter, the <i>Argument</i> parameter is not used.  Otherwise, the interpretation of the value of <i>Argument</i> depends on the value of <i>Flags</i>:
 
 
@@ -318,3 +317,4 @@ The return value is ignored by the engine unless it indicates a remote procedure
 This method is only called by the engine if the DEBUG_EVENT_CHANGE_ENGINE_STATE flag is set in the mask returned by <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugeventcallbackswide-getinterestmask">IDebugEventCallbacksWide::GetInterestMask</a>.
 
 For more information about handling events, see <a href="/windows-hardware/drivers/debugger/monitoring-events">Monitoring Events</a>.
+

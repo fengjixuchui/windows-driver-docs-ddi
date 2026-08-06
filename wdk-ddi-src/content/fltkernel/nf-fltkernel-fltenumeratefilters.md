@@ -4,7 +4,6 @@ title: FltEnumerateFilters function (fltkernel.h)
 description: The FltEnumerateFilters routine enumerates all registered minifilter drivers in the system.
 old-location: ifsk\fltenumeratefilters.htm
 tech.root: ifsk
-ms.assetid: f39ff534-7b51-49b5-bb1f-7cb0e18b3cfc
 ms.date: 04/16/2018
 keywords: ["FltEnumerateFilters function"]
 ms.keywords: FltApiRef_e_to_o_04dcdecd-0910-42be-ae92-93bce56216d7.xml, FltEnumerateFilters, FltEnumerateFilters routine [Installable File System Drivers], fltkernel/FltEnumerateFilters, ifsk.fltenumeratefilters
@@ -51,19 +50,19 @@ The <b>FltEnumerateFilters</b> routine enumerates all registered minifilter driv
 
 ## -parameters
 
-### -param FilterList 
+### -param FilterList [out]
 
-[out]
+
 Pointer to a caller-allocated buffer that receives an array of opaque filter pointers. This parameter is optional and can be <b>NULL</b> if the value of <i>FilterListSize</i> parameter is zero. If <i>FilterListSize</i> is zero on input and <i>FilterList</i> is <b>NULL</b>, the <i>NumberFiltersReturned</i> parameter receives the number of minifilter drivers found.
 
-### -param FilterListSize 
+### -param FilterListSize [in]
 
-[in]
+
 Number of opaque filter pointers that the buffer that the <i>FilterList</i> parameter points to can hold. This parameter is optional and can be zero. If <i>FilterListSize</i> is zero on input and <i>FilterList</i> is <b>NULL</b>, the <i>NumberFiltersReturned</i> parameter receives the number of minifilter drivers found.
 
-### -param NumberFiltersReturned 
+### -param NumberFiltersReturned [out]
 
-[out]
+
 Pointer to a caller-allocated variable that receives the number of opaque filter pointers returned in the array that the <i>FilterList </i>parameter points to. If the <i>FilterListSize</i> parameter value is too small and <i>FilterList</i> is non-<b>NULL</b> on input, <b>FltEnumerateFilters</b> returns STATUS_BUFFER_TOO_SMALL and sets <i>NumberFiltersReturned</i> to point to the number of minifilter drivers found. This parameter is required and cannot be <b>NULL</b>.
 
 ## -returns

@@ -4,7 +4,6 @@ title: RxNameCacheInitialize function (namcache.h)
 description: RxNameCacheInitialize initializes a name cache (NAME_CACHE_CONTROL structure).
 old-location: ifsk\rxnamecacheinitialize.htm
 tech.root: ifsk
-ms.assetid: 2a124a6e-30ff-4c0d-9a09-8cf43e65a657
 ms.date: 04/16/2018
 keywords: ["RxNameCacheInitialize function"]
 ms.keywords: RxNameCacheInitialize, RxNameCacheInitialize function [Installable File System Drivers], ifsk.rxnamecacheinitialize, namcache/RxNameCacheInitialize, rxref_1a97be61-3797-49f0-ad90-e426e43505c1.xml
@@ -50,19 +49,19 @@ api_name:
 
 ## -parameters
 
-### -param NameCacheCtl 
+### -param NameCacheCtl [in]
 
-[in]
+
 A pointer to the NAME_CACHE_CONTROL structure to initialize.
 
-### -param MRxNameCacheSize 
+### -param MRxNameCacheSize [in]
 
-[in]
+
 The size, in bytes, of the network mini-redirector portion of the NAME_CACHE entry.
 
-### -param MaximumEntries 
+### -param MaximumEntries [in]
 
-[in]
+
 The maximum number of entries that will ever be allocated. This value prevents an errant program that opens a large number of files with bad names from using all of the paged pool memory.
 
 ## -see-also

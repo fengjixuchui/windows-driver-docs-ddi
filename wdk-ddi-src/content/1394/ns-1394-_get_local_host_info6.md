@@ -4,7 +4,6 @@ title: _GET_LOCAL_HOST_INFO6 (1394.h)
 description: The GET_LOCAL_HOST_INFO6 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request using u.GetLocalHostInformation.nLevel = GET_HOST_CSR_CONTENTS.
 old-location: ieee\get_local_host_info6.htm
 tech.root: IEEE
-ms.assetid: d5da15b9-a020-42bf-8876-cec9edf3119f
 ms.date: 02/15/2018
 keywords: ["GET_LOCAL_HOST_INFO6 structure"]
 ms.keywords: "*PGET_LOCAL_HOST_INFO6, 1394/GET_LOCAL_HOST_INFO6, 1394/PGET_LOCAL_HOST_INFO6, 1394stct_90799b58-816d-4624-a194-6b42d64b903c.xml, GET_LOCAL_HOST_INFO6, GET_LOCAL_HOST_INFO6 structure [Buses], IEEE.get_local_host_info6, PGET_LOCAL_HOST_INFO6, PGET_LOCAL_HOST_INFO6 structure pointer [Buses], _GET_LOCAL_HOST_INFO6"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _GET_LOCAL_HOST_INFO6
+ - PGET_LOCAL_HOST_INFO6
  - GET_LOCAL_HOST_INFO6
 ---
 
@@ -50,7 +51,7 @@ api_name:
 
 ## -description
 
-The GET_LOCAL_HOST_INFO6 structure contains the data returned by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a> request using <b>u.GetLocalHostInformation.nLevel</b> = GET_HOST_CSR_CONTENTS.
+The GET_LOCAL_HOST_INFO6 structure contains the data returned by a <a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_GET_LOCAL_HOST_INFO</a> request using <b>u.GetLocalHostInformation.nLevel</b> = GET_HOST_CSR_CONTENTS.
 
 ## -struct-fields
 
@@ -69,7 +70,7 @@ SPEED_MAP_LOCATION
 
 </td>
 <td>
-The current speed map. The bus driver converts this from big-endian to machine-native format before it returns the data.<div class="alert"><b>Note</b>  The new 1394 bus driver provided with Windows 7 does not support the SPEED_MAP_LOCATION flag in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a> request. The speed map is obsolete in the IEEE-1394a specification.</div>
+The current speed map. The bus driver converts this from big-endian to machine-native format before it returns the data.<div class="alert"><b>Note</b>  The new 1394 bus driver provided with Windows 7 does not support the SPEED_MAP_LOCATION flag in the <a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_GET_LOCAL_HOST_INFO</a> request. The speed map is obsolete in the IEEE-1394a specification.</div>
 <div> </div>
 
 
@@ -105,4 +106,5 @@ When submitted in a REQUEST_GET_LOCAL_HOST_INFO request, if the <b>CsrDataLength
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_GET_LOCAL_HOST_INFO</a>
+

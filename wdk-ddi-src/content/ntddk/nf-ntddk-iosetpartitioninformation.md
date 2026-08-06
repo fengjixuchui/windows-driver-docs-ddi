@@ -4,7 +4,6 @@ title: IoSetPartitionInformation function (ntddk.h)
 description: The IoSetPartitionInformation routine is obsolete and is provided only to support existing drivers.
 old-location: storage\iosetpartitioninformation.htm
 tech.root: storage
-ms.assetid: 3f1a6e3f-3bbc-4cc5-8efe-e3cf6ac3adf5
 ms.date: 03/29/2018
 keywords: ["IoSetPartitionInformation function"]
 ms.keywords: IoSetPartitionInformation, IoSetPartitionInformation routine [Storage Devices], ntddk/IoSetPartitionInformation, rtns-disk_58012dfd-a95d-4af6-a09d-e1a4bcb458e2.xml, storage.iosetpartitioninformation
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL (See Remarks section)
+req.irql: PASSIVE_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -52,24 +51,24 @@ The <b>IoSetPartitionInformation</b> routine is <b>obsolete</b> and is provided 
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the device object representing the device on which the partition type is to be set.
 
-### -param SectorSize 
+### -param SectorSize [in]
 
-[in]
+
 Specifies the size, in bytes, of sectors on the disk.
 
-### -param PartitionNumber 
+### -param PartitionNumber [in]
 
-[in]
+
 Specifies the partition number on the device whose partition type is to be set.
 
-### -param PartitionType 
+### -param PartitionType [in]
 
-[in]
+
 Specifies the type for the partition. For a list of some of the key partition types see <a href="/windows-hardware/drivers/ddi/ntdddisk/ns-ntdddisk-_partition_information">PARTITION_INFORMATION</a>.
 
 ## -returns

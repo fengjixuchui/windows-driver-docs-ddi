@@ -4,7 +4,6 @@ title: KsPublishDeviceProfile function (ks.h)
 description: The KsPublishDeviceProfile API is called to publish device profile information.
 old-location: stream\kspublishdeviceprofile.htm
 tech.root: stream
-ms.assetid: 944A593D-D623-400C-80F9-6DCD973681C9
 ms.date: 04/23/2018
 keywords: ["KsPublishDeviceProfile function"]
 ms.keywords: KsPublishDeviceProfile, KsPublishDeviceProfile function [Streaming Media Devices], ks/KsPublishDeviceProfile, stream.kspublishdeviceprofile
@@ -51,14 +50,14 @@ The <b>KsPublishDeviceProfile</b> API is called to publish device profile inform
 
 ## -parameters
 
-### -param FilterFactory 
+### -param FilterFactory [in]
 
-[in]
+
 This is the same <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilterfactory">KSFILTERFACTORY</a> used in the <a href="/windows-hardware/drivers/ddi/ks/nf-ks-ksinitializedeviceprofile">KsInitializeDeviceProfile</a> API.
 
-### -param Profile 
+### -param Profile [in]
 
-[in]
+
 This is a camera profile of type <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksdevice_profile_info">KSDEVICE_PROFILE_INFO</a>.
 
 ## -returns

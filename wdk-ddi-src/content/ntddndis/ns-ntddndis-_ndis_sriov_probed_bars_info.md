@@ -4,7 +4,6 @@ title: _NDIS_SRIOV_PROBED_BARS_INFO (ntddndis.h)
 description: The NDIS_SRIOV_PROBED_BARS_INFO structure specifies the values of the PCI Express (PCIe) Base Address Registers (BARs) of a network adapter that supports the single root I/O virtualization (SR-IOV) interface.
 old-location: netvista\ndis_sriov_probed_bars_info.htm
 tech.root: netvista
-ms.assetid: 9f37d9e7-ae8b-448e-a535-f34b01c2bf8a
 ms.date: 05/02/2018
 keywords: ["NDIS_SRIOV_PROBED_BARS_INFO structure"]
 ms.keywords: "*PNDIS_SRIOV_PROBED_BARS_INFO, NDIS_SRIOV_PROBED_BARS_INFO, NDIS_SRIOV_PROBED_BARS_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_SRIOV_PROBED_BARS_INFO, PNDIS_SRIOV_PROBED_BARS_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SRIOV_PROBED_BARS_INFO, netvista.ndis_sriov_probed_bars_info, ntddndis/NDIS_SRIOV_PROBED_BARS_INFO, ntddndis/PNDIS_SRIOV_PROBED_BARS_INFO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_SRIOV_PROBED_BARS_INFO
+ - PNDIS_SRIOV_PROBED_BARS_INFO
  - NDIS_SRIOV_PROBED_BARS_INFO
 ---
 
@@ -59,7 +60,7 @@ The values specified by the <b>NDIS_SRIOV_PROBED_BARS_INFO</b> structure are tho
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_SRIOV_PROBED_BARS_INFO</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_SRIOV_PROBED_BARS_INFO</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SRIOV_PROBED_BARS_INFO</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
 
@@ -96,8 +97,9 @@ For more information about the base address registers of a PCI device, see the <
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/network/oid-sriov-probed-bars">OID_SRIOV_PROBED_BARS</a>
+

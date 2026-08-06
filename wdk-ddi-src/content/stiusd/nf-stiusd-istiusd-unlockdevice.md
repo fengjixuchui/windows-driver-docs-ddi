@@ -4,7 +4,6 @@ title: IStiUSD::UnLockDevice (stiusd.h)
 description: A still image minidriver's IStiUSD::UnLockDevice method unlocks a device that was locked by a previous call to IStiUSD::LockDevice.
 old-location: image\istiusd_unlockdevice.htm
 tech.root: image
-ms.assetid: ae19ae38-3bca-42c8-8713-68bb161104b8
 ms.date: 05/03/2018
 keywords: ["IStiUSD::UnLockDevice"]
 ms.keywords: IStiUSD interface [Imaging Devices],UnLockDevice method, IStiUSD.UnLockDevice, IStiUSD::UnLockDevice, UnLockDevice, UnLockDevice method [Imaging Devices], UnLockDevice method [Imaging Devices],IStiUSD interface, image.istiusd_unlockdevice, stifnc_8c11e0a0-68ec-4556-ae40-6bed6b5b4831.xml, stiusd/IStiUSD::UnLockDevice
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Stiusd.h
 api_name:
- - IStiUSD.UnLockDevice
+ - IStiUSD::UnLockDevice
 ---
 
 # IStiUSD::UnLockDevice
@@ -63,3 +62,4 @@ If a driver's <a href="/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-lo
 
 
 <a href="/windows-hardware/drivers/ddi/_image/index">IStiUSD</a>
+

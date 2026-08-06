@@ -1,9 +1,8 @@
 ---
 UID: NE:d3dukmdt._D3DDDI_DRIVERESCAPETYPE
-title: _D3DDDI_DRIVERESCAPETYPE (d3dukmdt.h)
-description: Defines the known driver escape types.
-ms.assetid: bb7fd313-1e89-4b9b-88ad-eca6404555de
-ms.date: 10/19/2018
+title: D3DDDI_DRIVERESCAPETYPE (d3dukmdt.h)
+description: Learn more about the D3DDDI_DRIVERESCAPETYPE enumeration.
+ms.date: 09/12/2022
 keywords: ["D3DDDI_DRIVERESCAPETYPE enumeration"]
 ms.keywords: _D3DDDI_DRIVERESCAPETYPE, D3DDDI_DRIVERESCAPETYPE,
 req.header: d3dukmdt.h
@@ -32,32 +31,45 @@ api_location:
  - d3dukmdt.h
 api_name:
  - _D3DDDI_DRIVERESCAPETYPE
+ - D3DDDI_DRIVERESCAPETYPE
 dev_langs:
  - c++
 ---
 
-# _D3DDDI_DRIVERESCAPETYPE enumeration
-
+# D3DDDI_DRIVERESCAPETYPE enumeration
 
 ## -description
 
-Defines the known driver escape types.
+**D3DDDI_DRIVERESCAPETYPE** defines the known driver escape types ([**D3DDDI_ESCAPEFLAGS::DriverKnownEscape**](/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_escapeflags)).
 
 ## -enum-fields
 
-### -field D3DDDI_DRIVERESCAPETYPE_TRANSLATEALLOCATIONHANDLE
+### -field D3DDDI_DRIVERESCAPETYPE_TRANSLATEALLOCATIONHANDLE:0
 
-Driver escape type translate allocation handle.
+Driver escape type to translate allocation handle; used to translate the guest allocation to the corresponding host handle. For more information, see [GPU paravirtualization](/windows-hardware/drivers/display/gpu-paravirtualization).
 
-### -field D3DDDI_DRIVERESCAPETYPE_TRANSLATERESOURCEHANDLE
+### -field D3DDDI_DRIVERESCAPETYPE_TRANSLATERESOURCEHANDLE:1
 
-Driver escape type translate resource handle.
+Driver escape type to translate resource handle; used to translate the resource handle to the corresponding host handle. For more information, see [GPU paravirtualization](/windows-hardware/drivers/display/gpu-paravirtualization).
 
-### -field D3DDDI_DRIVERESCAPETYPE_MAX 
+### -field D3DDDI_DRIVERESCAPETYPE_CPUEVENTUSAGE:2
 
-Driver escape type max.
+Driver escape type for CPU event usage; used to notify the kernel-mode driver (KMD) about the intended use of a KMD CPU event object. Available starting in Windows 11 (WDDM 3.0). See [Signaling a CPU event from KMD](/windows-hardware/drivers/display/signaling-cpu-event-from-kmd) for more information.
 
-## -remarks
+### -field D3DDDI_DRIVERESCAPETYPE_BUILDTESTCOMMANDBUFFER:3
+
+Driver escape type for building a test command buffer; used to build a test command buffer for kernel-mode testing. Available starting in Windows 11, version 24H2 (WDDM 3.2). See [Kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing-of-wddm-features) for more information.
+
+### -field D3DDDI_DRIVERESCAPETYPE_MAX
+
+The maximum value for this enumeration.
 
 ## -see-also
 
+[**D3DDDI_DRIVERESCAPE_CPUEVENTUSAGE**](ns-d3dukmdt-d3dddi_driverescape_cpueventusage.md)
+
+[**D3DDDI_DRIVERESCAPETYPE**](ne-d3dukmdt-_d3dddi_driverescapetype.md)
+
+[**DXGKARG_ESCAPE**](../d3dkmddi/ns-d3dkmddi-_dxgkarg_escape.md)
+
+[**DXGKDDI_ESCAPE**](../d3dkmddi/nc-d3dkmddi-dxgkddi_escape.md)

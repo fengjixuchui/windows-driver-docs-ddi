@@ -4,7 +4,6 @@ title: SeOpenObjectAuditAlarm function (ntifs.h)
 description: The SeOpenObjectAuditAlarm routine generates audit and alarm messages when an attempt is made to open an object.
 old-location: ifsk\seopenobjectauditalarm.htm
 tech.root: ifsk
-ms.assetid: a4310cf8-1518-4d25-b2f9-a232ddd9c535
 ms.date: 04/16/2018
 keywords: ["SeOpenObjectAuditAlarm function"]
 ms.keywords: SeOpenObjectAuditAlarm, SeOpenObjectAuditAlarm routine [Installable File System Drivers], ifsk.seopenobjectauditalarm, ntifs/SeOpenObjectAuditAlarm, seref_87dbea09-cd36-40c2-8241-16c8180f1945.xml
@@ -50,49 +49,49 @@ The <b>SeOpenObjectAuditAlarm</b> routine generates audit and alarm messages whe
 
 ## -parameters
 
-### -param ObjectTypeName 
+### -param ObjectTypeName [in]
 
-[in]
+
 Pointer to a null-terminated string specifying the type of object to which the client is requesting access. This string appears in any audit message that is generated.
 
-### -param Object 
+### -param Object [in, optional]
 
-[in, optional]
+
 Address of the object being opened. This value is needed only to enter into log messages. If the open attempt fails, the value of <i>Object</i> is ignored. Otherwise, it must be provided.
 
-### -param AbsoluteObjectName 
+### -param AbsoluteObjectName [in, optional]
 
-[in, optional]
+
 Pointer to a null-terminated string specifying the name of the object being opened. This string appears in any audit message that is generated.
 
-### -param SecurityDescriptor 
+### -param SecurityDescriptor [in]
 
-[in]
+
 A pointer to the security descriptor structure for the object being opened.
 
-### -param AccessState 
+### -param AccessState [in]
 
-[in]
+
 Pointer to an access state structure containing the object's subject context, remaining desired access types, granted access types, and, optionally, a privilege set to indicate which privileges were used to permit the access.
 
-### -param ObjectCreated 
+### -param ObjectCreated [in]
 
-[in]
+
 Set to <b>TRUE</b> if the open operation causes a new object to be created, or <b>FALSE</b> if an existing object is opened.
 
-### -param AccessGranted 
+### -param AccessGranted [in]
 
-[in]
+
 Set to <b>TRUE</b> if open access was granted based on a previous access check or privilege check, or <b>FALSE</b> if it was denied.
 
-### -param AccessMode 
+### -param AccessMode [in]
 
-[in]
+
 Access mode used for the access check. Either <b>UserMode</b> or <b>KernelMode</b>.
 
-### -param GenerateOnClose 
+### -param GenerateOnClose [out]
 
-[out]
+
 Pointer to a flag set by the audit generation routine when <b>SeOpenObjectAuditAlarm</b> returns.
 
 ## -remarks
@@ -101,7 +100,7 @@ Pointer to a flag set by the audit generation routine when <b>SeOpenObjectAuditA
 
 Before calling <b>SeOpenObjectAuditAlarm</b>, the caller must call <b>SeLockSubjectContext</b> to lock the caller's primary and impersonation tokens. After calling <b>SeOpenObjectAuditAlarm</b>, the caller must call <b>SeUnlockSubjectContext</b> to release these tokens.
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

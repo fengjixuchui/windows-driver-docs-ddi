@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_CHECKCOUNTERINFO
 title: PFND3D10DDI_CHECKCOUNTERINFO (d3d10umddi.h)
 description: The CheckCounterInfo function determines global information that is related to manipulating counters.
 old-location: display\checkcounterinfo.htm
-ms.assetid: 5dcea47c-aac7-46e5-afd5-c3390c3c5286
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_CHECKCOUNTERINFO callback function"]
 ms.keywords: CheckCounterInfo, CheckCounterInfo callback function [Display Devices], PFND3D10DDI_CHECKCOUNTERINFO, PFND3D10DDI_CHECKCOUNTERINFO callback, UserModeDisplayDriverDx10_Functions_7057ce5a-5677-4174-9bee-81c8ab5b18f7.xml, d3d10umddi/CheckCounterInfo, display.checkcounterinfo
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CheckCounterInfo
-product:
- - Windows
+ - PFND3D10DDI_CHECKCOUNTERINFO
 ---
 
 # PFND3D10DDI_CHECKCOUNTERINFO callback function
@@ -52,13 +49,13 @@ The <b>CheckCounterInfo</b> function determines global information that is relat
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCounterInfo* [out]
 
@@ -83,3 +80,4 @@ The driver's <b>CheckCounterInfo</b> function cannot call the <a href="/windows-
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

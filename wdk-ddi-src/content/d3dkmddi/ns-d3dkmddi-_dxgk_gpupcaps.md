@@ -1,13 +1,10 @@
 ---
 UID: NS:d3dkmddi._DXGK_GPUPCAPS
-title: _DXGK_GPUPCAPS
-description: The GPU capabilities for a kernel mode display driver.
+title: DXGK_GPUPCAPS
+description: Learn more about the DXGK_GPUPCAPS structure.
 tech.root: display
-ms.assetid: 21bf5426-6444-4f1d-bf36-edcd37175fc5
-ms.date: 04/04/2019
+ms.date: 10/04/2024
 keywords: ["DXGK_GPUPCAPS structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _DXGK_GPUPCAPS, DXGK_GPUPCAPS,
 req.header: d3dkmddi.h
 req.include-header: 
@@ -37,30 +34,36 @@ api_location:
  - d3dkmddi.h
 api_name:
  - _DXGK_GPUPCAPS
-product:
- - Windows
+ - DXGK_GPUPCAPS
 ---
 
-# _DXGK_GPUPCAPS structure
-
+# DXGK_GPUPCAPS structure
 
 ## -description
 
-The GPU capabilities for a kernel mode display driver.
-
-These caps must be filled out by the KMD in response to **DXGKQAITYPE_GPUPCAPS** [QueryAdapterInfo](ne-d3dkmddi-_dxgk_queryadapterinfotype.md) request. These are queried by the OS during device initialization after [DxgkDdiStartDevice](../dispmprt/nc-dispmprt-dxgkddi_start_device.md) is called and only if the adapter supports GPU partitioning.
+A kernel-mode display driver uses the **DXGK_GPUPCAPS** structure to identify its GPU partitioning (GPU-P) capabilities.
 
 ## -struct-fields
 
 ### -field Caps
 
+Union containing the capability flags for the GPU-P device.
+
 ### -field Caps.VirtualMachineHibernation
 
-The driver sets the cap if guest hibernation is supported for GPU-P devices.
+The driver sets this bit if it supports guest hibernation for GPU-P devices. The support for guest hibernation is optional and not required for driver certification. A VM that has hibernation enabled and a GPU-P adapter added will fail to start if the driver doesn't support guest hibernation.
 
 ### -field Caps.HotDriverUpdate
 
-The driver sets the cap if hot driver update is supported for GPU-P devices.
+The driver sets this bit if it supports hot driver updates for GPU-P devices.
+
+### -field Caps.LiveMigration
+
+The driver sets this bit if it supports [live migration for GPU-P devices](/windows-hardware/drivers/display/live-migration-on-gpup-devices). Added in Windows 11, version 24H2 (WDDM 3.2).
+
+### -field Caps.ScatterMapReserve
+
+The driver sets this bit if it supports *DxgkDdiSetVirtualGpuResources2, which will be added in a future release. Added in Windows 11, version 24H2 (WDDM 3.2).
 
 ### -field Caps.Reserved
 
@@ -68,13 +71,12 @@ Reserved.
 
 ### -field Caps.Value
 
-The driver sets the cap if VM save/restore is supported for GPU-P devices.
-
-The support for guest hibernation is optional and not required for driver certification.
-
-A VM, which has hibernation enabled and a GPU-P adapter added, will fail to start, if the driver does not support guest hibernation.
+The UINT value that represents the combined bitfields of the GPU-P capabilities.
 
 ## -remarks
 
+The KMD must fill out these caps in response to a [**DXGKQAITYPE_GPUPCAPS**](ne-d3dkmddi-_dxgk_queryadapterinfotype.md) request. The OS queries for these during device initialization after it calls [**DxgkDdiStartDevice**](../dispmprt/nc-dispmprt-dxgkddi_start_device.md) and only if the adapter supports GPU partitioning.
+
 ## -see-also
 
+[**DXGK_QUERYADAPTERINFOTYPE**](ne-d3dkmddi-_dxgk_queryadapterinfotype.md)

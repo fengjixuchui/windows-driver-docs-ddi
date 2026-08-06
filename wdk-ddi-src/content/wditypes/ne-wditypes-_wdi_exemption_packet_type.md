@@ -4,7 +4,6 @@ title: _WDI_EXEMPTION_PACKET_TYPE (wditypes.h)
 description: The WDI_EXEMPTION_PACKET_TYPE enumeration defines the types of packet exemptions.
 old-location: netvista\wdi_exemption_packet_type.htm
 tech.root: netvista
-ms.assetid: 7F584EBE-9ACB-4AC7-9472-34322F24EF74
 ms.date: 05/02/2018
 keywords: ["WDI_EXEMPTION_PACKET_TYPE enumeration"]
 ms.keywords: WDI_EXEMPTION_PACKET_TYPE, WDI_EXEMPTION_PACKET_TYPE enumeration [Device and Driver Installation], WDI_EXEMPT_PACKET_TYPE_BOTH, WDI_EXEMPT_PACKET_TYPE_MULTICAST, WDI_EXEMPT_PACKET_TYPE_UNICAST, _WDI_EXEMPTION_PACKET_TYPE, netvista.wdi_exemption_packet_type, netvista.wifi_exemption_packet_type, wditypes/WDI_EXEMPTION_PACKET_TYPE, wditypes/WDI_EXEMPT_PACKET_TYPE_BOTH, wditypes/WDI_EXEMPT_PACKET_TYPE_MULTICAST, wditypes/WDI_EXEMPT_PACKET_TYPE_UNICAST
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_EXEMPTION_PACKET_TYPE
  - WDI_EXEMPTION_PACKET_TYPE
 ---
 
@@ -47,6 +47,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_EXEMPTION_PACKET_TYPE enumeration defines the types of packet exemptions.
 

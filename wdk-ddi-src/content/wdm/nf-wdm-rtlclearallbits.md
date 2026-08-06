@@ -4,7 +4,6 @@ title: RtlClearAllBits function (wdm.h)
 description: The RtlClearAllBits routine sets all bits in a given bitmap variable to zero.
 old-location: kernel\rtlclearallbits.htm
 tech.root: kernel
-ms.assetid: 8271b13a-a64e-4d5e-b319-283255b8127f
 ms.date: 04/30/2018
 keywords: ["RtlClearAllBits function"]
 ms.keywords: RtlClearAllBits, RtlClearAllBits routine [Kernel-Mode Driver Architecture], k109_6fb17a55-6839-411c-9289-720657ba4983.xml, kernel.rtlclearallbits, wdm/RtlClearAllBits
@@ -51,10 +50,10 @@ The <b>RtlClearAllBits</b> routine sets all bits in a given bitmap variable to z
 
 ## -parameters
 
-### -param BitMapHeader 
+### -param BitMapHeader [in]
 
-[in]
-A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
+
+A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
 ## -returns
 
@@ -66,7 +65,7 @@ Callers of <b>RtlClearAllBits</b> must be running at IRQL <= APC_LEVEL if the me
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a>
+<a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a>
 
 
 

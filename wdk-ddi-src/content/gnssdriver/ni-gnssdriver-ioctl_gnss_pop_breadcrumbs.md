@@ -4,7 +4,6 @@ title: IOCTL_GNSS_POP_BREADCRUMBS (gnssdriver.h)
 description: The IOCTL_GNSS_POP_BREADCRUMBS control code is used to request a list of breadcrumbs contained in GNSS_BREADCRUMB_LIST.
 old-location: gnss\ioctl_gnss_pop_breadcrumbs_.htm
 tech.root: gnss
-ms.assetid: D5F7ACDC-25A0-49A4-95D4-C48B3E94CF69
 ms.date: 02/15/2018
 keywords: ["IOCTL_GNSS_POP_BREADCRUMBS IOCTL"]
 ms.keywords: IOCTL_GNSS_POP_BREADCRUMBS, IOCTL_GNSS_POP_BREADCRUMBS control, IOCTL_GNSS_POP_BREADCRUMBS control code [Sensor Devices], gnss.ioctl_gnss_pop_breadcrumbs_, gnssdriver/IOCTL_GNSS_POP_BREADCRUMBS
@@ -49,6 +48,8 @@ api_name:
 The <b>IOCTL_GNSS_POP_BREADCRUMBS</b> control code is used to request a list of breadcrumbs contained in <a href="/windows-hardware/drivers/ddi/gnssdriver/ns-gnssdriver-gnss_breadcrumb_list">GNSS_BREADCRUMB_LIST</a>.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

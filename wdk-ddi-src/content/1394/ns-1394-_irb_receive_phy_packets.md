@@ -4,7 +4,6 @@ title: _IRB_RECEIVE_PHY_PACKETS (1394.h)
 description: This structure contains the fields necessary to carry out a ReceivePhyPackets request.
 old-location: ieee\irb_req_receive_phy_packets.htm
 tech.root: IEEE
-ms.assetid: FE160EB4-EDBD-4783-A02D-F82D2842ADD0
 ms.date: 02/15/2018
 keywords: ["IRB_RECEIVE_PHY_PACKETS structure"]
 ms.keywords: 1394/IRB_REQ_RECEIVE_PHY_PACKETS, IEEE.irb_req_receive_phy_packets, IRB_REQ_RECEIVE_PHY_PACKETS, IRB_REQ_RECEIVE_PHY_PACKETS structure [Buses], _IRB_RECEIVE_PHY_PACKETS
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _IRB_RECEIVE_PHY_PACKETS
  - IRB_REQ_RECEIVE_PHY_PACKETS
 ---
 
@@ -60,7 +60,7 @@ Specifies whether a callback should be registered or deactivated. Use REGISTER_P
 
 Points to the notification routine for received PHY packets. The following prototype illustrates the notification routine:
 
-<pre class="syntax" xml:space="preserve"><code>void PhyPacketRoutine(
+<pre class="syntax"><code>void PhyPacketRoutine(
     __in PVOID           Context,
     __in ULONG           GenerationCount,
     __in ULARGE_INTEGER  PhyPacket
@@ -107,3 +107,4 @@ The 64-bit PHY packet that is received from the 1394 bus.
 ### -field PhyPacketContext
 
 Specifies the Context argument to be passed to the PhyPacketRoutine.
+

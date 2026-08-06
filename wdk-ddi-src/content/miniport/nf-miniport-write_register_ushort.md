@@ -1,10 +1,9 @@
 ---
 UID: NF:miniport.WRITE_REGISTER_USHORT
 title: WRITE_REGISTER_USHORT function (miniport.h)
-description: The WRITE_REGISTER_USHORT routine writes a USHORT value to the specified address.
+description: The WRITE_REGISTER_USHORT function (miniport.h) writes a USHORT value to the specified register address in resident, mapped device memory.
 old-location: kernel\write_register_ushort.htm
 tech.root: kernel
-ms.assetid: ebcbec0c-c5ee-4af1-be3c-36c730f82f4e
 ms.date: 04/30/2018
 keywords: ["WRITE_REGISTER_USHORT function"]
 ms.keywords: WRITE_REGISTER_USHORT, WRITE_REGISTER_USHORT routine [Kernel-Mode Driver Architecture], k103_bc20d667-b3c7-4e46-a21d-06123e73d348.xml, kernel.write_register_ushort, wdm/WRITE_REGISTER_USHORT
@@ -50,12 +49,12 @@ The <b>WRITE_REGISTER_USHORT</b> routine writes a USHORT value to the specified 
 
 ## -parameters
 
-#### - Register [in]
+### -param Register [in]
 
 Pointer to the register, which must be a mapped range in memory space.
 
 
-#### - Value [in]
+### -param Value [in]
 
 Specifies a USHORT value to be written to the register.
 

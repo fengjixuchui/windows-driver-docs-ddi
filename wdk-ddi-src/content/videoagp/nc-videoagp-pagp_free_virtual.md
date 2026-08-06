@@ -4,7 +4,6 @@ title: PAGP_FREE_VIRTUAL (videoagp.h)
 description: The AgpFreeVirtual function frees virtual memory committed by a previous call to AgpCommitVirtual.
 old-location: display\agpfreevirtual.htm
 tech.root: display
-ms.assetid: a6f689ab-8cf1-4207-af2b-30957500c190
 ms.date: 05/10/2018
 keywords: ["PAGP_FREE_VIRTUAL callback function"]
 ms.keywords: AgpFreeVirtual, AgpFreeVirtual callback function [Display Devices], PAGP_FREE_VIRTUAL, PAGP_FREE_VIRTUAL callback, VideoPort_Functions_49eabd30-2590-466f-b9d4-f2577a7e78e4.xml, display.agpfreevirtual, videoagp/AgpFreeVirtual
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - videoagp.h
 api_name:
- - AgpFreeVirtual
+ - PAGP_FREE_VIRTUAL
 ---
 
 # PAGP_FREE_VIRTUAL callback function
@@ -50,24 +49,24 @@ The <b>AgpFreeVirtual</b> function frees virtual memory committed by a previous 
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's device extension.
 
-### -param VirtualReserveContext 
+### -param VirtualReserveContext [in]
 
-[in]
+
 Identifies a reserved virtual address range. This context handle was obtained from <a href="/windows-hardware/drivers/ddi/videoagp/nc-videoagp-pagp_reserve_virtual">AgpReserveVirtual</a>.
 
-### -param Pages 
+### -param Pages [in]
 
-[in]
+
 Specifies the number of pages of virtual memory that the video port driver should unmap.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the page offset into the reserved virtual address range identified by <b>VirtualReserveContext</b> that indicates the actual base address at which to unmap virtual memory.
 
 ## -remarks
@@ -79,3 +78,4 @@ A call to <b>AgpFreeVirtual</b> must be paired with a previous call to <a href="
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/videoagp/nc-videoagp-pagp_commit_virtual">AgpCommitVirtual</a>
+

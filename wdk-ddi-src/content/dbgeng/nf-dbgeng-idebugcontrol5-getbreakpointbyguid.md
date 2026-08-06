@@ -4,7 +4,6 @@ title: IDebugControl5::GetBreakpointByGuid (dbgeng.h)
 description: The GetBreakpointByGuid method returns the breakpoint with the specified breakpoint GUID.
 old-location: debugger\idebugcontrol5_getbreakpointbyguid.htm
 tech.root: debugger
-ms.assetid: AC316591-CCF9-4040-B1A3-29AB2033B673
 ms.date: 05/03/2018
 keywords: ["IDebugControl5::GetBreakpointByGuid"]
 ms.keywords: GetBreakpointByGuid, GetBreakpointByGuid method [Windows Debugging], GetBreakpointByGuid method [Windows Debugging],IDebugControl5 interface, IDebugControl5 interface [Windows Debugging],GetBreakpointByGuid method, IDebugControl5.GetBreakpointByGuid, IDebugControl5::GetBreakpointByGuid, dbgeng/IDebugControl5::GetBreakpointByGuid, debugger.idebugcontrol5_getbreakpointbyguid
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl5.GetBreakpointByGuid
+ - IDebugControl5::GetBreakpointByGuid
 ---
 
 # IDebugControl5::GetBreakpointByGuid
@@ -50,14 +49,14 @@ The GetBreakpointByGuid method returns the breakpoint with the specified breakpo
 
 ## -parameters
 
-### -param Guid 
+### -param Guid [in]
 
-[in]
+
 Specifies the breakpoint GUID of the breakpoint to return.
 
-### -param Bp 
+### -param Bp [out]
 
-[out]
+
 Receives the breakpoint.
 
 ## -returns
@@ -100,3 +99,4 @@ No breakpoint was found with the given GUID, or the breakpoint with the specifie
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol5">IDebugControl5</a>
+

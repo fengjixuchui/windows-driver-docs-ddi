@@ -1,10 +1,9 @@
 ---
 UID: NS:d3dumddi.D3DDDIARG_PRESENTSURFACE
 title: D3DDDIARG_PRESENTSURFACE (d3dumddi.h)
-description: Describes a surface to display.
+description: The D3DDDIARG_PRESENTSURFACE structure contains a resource handle and a subresource index that describes a surface to display.
 old-location: display\d3dddiarg_presentsurface.htm
 tech.root: display
-ms.assetid: 2104BF68-DF35-44DE-AD83-3026FF9314B4
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_PRESENTSURFACE structure"]
 ms.keywords: D3DDDIARG_PRESENTSURFACE, D3DDDIARG_PRESENTSURFACE structure [Display Devices], d3dumddi/D3DDDIARG_PRESENTSURFACE, display.d3dddiarg_presentsurface
@@ -50,13 +49,13 @@ Describes a surface to display.
 
 ## -struct-fields
 
-### -field hResource
+### -field hResource [in]
 
-[in] A handle to the resource that contains the surface. <b>hResource</b> can be <b>NULL</b> if the user-mode display driver should perform a color-fill operation to the screen.
+A handle to the resource that contains the surface. <b>hResource</b> can be <b>NULL</b> if the user-mode display driver should perform a color-fill operation to the screen.
 
-### -field SubResourceIndex
+### -field SubResourceIndex [in]
 
-[in] The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the subresource or surface to display.
+The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the subresource or surface to display.
 
 ## -see-also
 

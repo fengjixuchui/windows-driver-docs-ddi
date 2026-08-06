@@ -1,11 +1,10 @@
 ---
 UID: NF:wdfcompanion.WdfCompanionWdmGetSecureDeviceHandle
 title: WdfCompanionWdmGetSecureDeviceHandle function (wdfcompanion.h)
-description: For internal use only.
+description: This WdfCompanionWdmGetSecureDeviceHandle function article is for internal use only.
 old-location: wdf\wdfcompanionwdmgetsecuredevicehandle.htm
 tech.root: wdf
-ms.assetid: 8fc3dc6f-8a21-490b-adbf-5f735cb953de
-ms.date: 02/26/2018
+ms.date: 11/01/2021
 keywords: ["WdfCompanionWdmGetSecureDeviceHandle function"]
 ms.keywords: WdfCompanionWdmGetSecureDeviceHandle, WdfCompanionWdmGetSecureDeviceHandle method, wdf.wdfcompanionwdmgetsecuredevicehandle, wdfcompanion/WdfCompanionWdmGetSecureDeviceHandle
 req.header: wdfcompanion.h
@@ -50,7 +49,7 @@ api_name:
 
 ## -parameters
 
-### -param Companion 
+### -param Companion [in]
 
-[in]
+## -returns
 

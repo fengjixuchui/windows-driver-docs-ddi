@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl.GetNumberProcessors
 title: IDebugControl::GetNumberProcessors (dbgeng.h)
-description: The GetNumberProcessors method returns the number of processors on the computer running the current target.
+description: Learn how the GetNumberProcessors method returns the number of processors on the computer running the current target.
 old-location: debugger\getnumberprocessors.htm
 tech.root: debugger
-ms.assetid: b3f4af4e-dbba-4f14-8935-f894865cbe7d
 ms.date: 05/03/2018
 keywords: ["IDebugControl::GetNumberProcessors"]
 ms.keywords: GetNumberProcessors, GetNumberProcessors method [Windows Debugging], GetNumberProcessors method [Windows Debugging],IDebugControl interface, GetNumberProcessors method [Windows Debugging],IDebugControl2 interface, GetNumberProcessors method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],GetNumberProcessors method, IDebugControl.GetNumberProcessors, IDebugControl2 interface [Windows Debugging],GetNumberProcessors method, IDebugControl2::GetNumberProcessors, IDebugControl3 interface [Windows Debugging],GetNumberProcessors method, IDebugControl3::GetNumberProcessors, IDebugControl::GetNumberProcessors, IDebugControl_0ddf74be-971f-4bd8-bdfd-4ceedfbbdc0f.xml, dbgeng/IDebugControl2::GetNumberProcessors, dbgeng/IDebugControl3::GetNumberProcessors, dbgeng/IDebugControl::GetNumberProcessors, debugger.getnumberprocessors
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.GetNumberProcessors
- - IDebugControl2.GetNumberProcessors
- - IDebugControl3.GetNumberProcessors
+ - IDebugControl::GetNumberProcessors
 ---
 
 # IDebugControl::GetNumberProcessors
@@ -52,9 +49,9 @@ The <b>GetNumberProcessors</b> method returns the number of processors on the co
 
 ## -parameters
 
-### -param Number 
+### -param Number [out]
 
-[out]
+
 Receives the number of processors.
 
 ## -returns
@@ -82,3 +79,4 @@ The method was successful.
 ## -remarks
 
 For more information, see <a href="/windows-hardware/drivers/debugger/target-information">Target Information</a>.
+

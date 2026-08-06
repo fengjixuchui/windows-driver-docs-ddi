@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols3.GetSourceEntryStringWide
 title: IDebugSymbols3::GetSourceEntryStringWide (dbgeng.h)
-description: Queries symbol information and returns locations in the target's memory.
+description: Queries symbol information and returns locations in the target's memory. The method belongs to the IDebugSymbols3 interface.
 old-location: debugger\idebugsymbols3_getsourceentrystringwide.htm
 tech.root: debugger
-ms.assetid: CDB72C6A-43E5-463B-97E5-44D22214C071
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::GetSourceEntryStringWide"]
 ms.keywords: GetSourceEntryStringWide, GetSourceEntryStringWide method [Windows Debugging], GetSourceEntryStringWide method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],GetSourceEntryStringWide method, IDebugSymbols3.GetSourceEntryStringWide, IDebugSymbols3::GetSourceEntryStringWide, dbgeng/IDebugSymbols3::GetSourceEntryStringWide, debugger.idebugsymbols3_getsourceentrystringwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSymbols3.GetSourceEntryStringWide
+ - IDebugSymbols3::GetSourceEntryStringWide
 ---
 
 # IDebugSymbols3::GetSourceEntryStringWide
@@ -50,29 +49,29 @@ Queries symbol information and returns locations in the target's memory.
 
 ## -parameters
 
-### -param Entry 
+### -param Entry [in]
 
-[in]
+
 An entry as a <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_symbol_source_entry">DEBUG_SYMBOL_SOURCE_ENTRY</a> structure.
 
-### -param Which 
+### -param Which [in]
 
-[in]
+
 A value that determines which types to return.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
  A pointer to a Unicode character string buffer for the results.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 The size of the buffer.
 
-### -param StringSize 
+### -param StringSize [out, optional]
 
-[out, optional]
+
 Pointer to the size of the string.
 
 ## -returns
@@ -84,3 +83,4 @@ This method can return multiple results for a source lookup. This allows for all
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

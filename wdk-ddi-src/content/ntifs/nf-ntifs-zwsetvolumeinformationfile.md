@@ -4,14 +4,13 @@ title: ZwSetVolumeInformationFile function (ntifs.h)
 description: The ZwSetVolumeInformationFile routine modifies information about the volume associated with a given file, directory, storage device, or volume.
 old-location: kernel\zwsetvolumeinformationfile.htm
 tech.root: kernel
-ms.assetid: 6afc3e8b-0be0-4728-b00f-deea5e60d27e
 ms.date: 04/30/2018
 keywords: ["ZwSetVolumeInformationFile function"]
 ms.keywords: NtSetInformationFile, ZwSetVolumeInformationFile, ZwSetVolumeInformationFile routine [Kernel-Mode Driver Architecture], k111_580470b4-9769-4fec-9811-04f703473131.xml, kernel.zwsetvolumeinformationfile, ntifs/NtSetInformationFile, ntifs/ZwSetVolumeInformationFile
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Server 2003 and later versions of Windows.
+req.target-min-winverclnt: Windows Server 2003
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - ZwSetVolumeInformationFile
- - NtSetInformationFile
 ---
 
 # ZwSetVolumeInformationFile function
@@ -51,29 +49,29 @@ The <b>ZwSetVolumeInformationFile</b> routine modifies information about the vol
 
 ## -parameters
 
-### -param FileHandle 
+### -param FileHandle [in]
 
-[in]
+
 Handle to a file object for an open file, directory, storage device, or volume whose volume information is to be modified.
 
-### -param IoStatusBlock 
+### -param IoStatusBlock [out]
 
-[out]
+
 Pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block">IO_STATUS_BLOCK</a> structure that receives the final completion status and information about the operation.
 
-### -param FsInformation 
+### -param FsInformation [in]
 
-[in]
+
 Pointer to a caller-allocated buffer containing the volume information to be modified. The structure of the information in this buffer depends on the value of <i>FsInformationClass</i>, as shown in the following table.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Size in bytes of the buffer pointed to by <i>FsInformation</i>. The caller should set this parameter according to the given <i>FsInformationClass</i>.
 
-### -param FsInformationClass 
+### -param FsInformationClass [in]
 
-[in]
+
 Type of volume information to be set. One of the following: 
 
 <table>
@@ -201,3 +199,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntsetinformationfile">ZwSetInformationFile</a>
+

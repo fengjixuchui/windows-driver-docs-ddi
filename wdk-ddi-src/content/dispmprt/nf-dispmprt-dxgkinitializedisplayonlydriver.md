@@ -4,7 +4,6 @@ title: DxgkInitializeDisplayOnlyDriver function (dispmprt.h)
 description: Loads and initializes the DirectX graphics kernel subsystem (Dxgkrnl.sys) for use by a kernel mode display-only driver (KMDOD).
 old-location: display\dxgkinitializedisplayonlydriver.htm
 tech.root: display
-ms.assetid: d80d2d6a-758f-4b11-b33c-4b176a458bd2
 ms.date: 05/10/2018
 keywords: ["DxgkInitializeDisplayOnlyDriver function"]
 ms.keywords: DxgkInitializeDisplayOnlyDriver, DxgkInitializeDisplayOnlyDriver function [Display Devices], display.dxgkinitializedisplayonlydriver, dispmprt/DxgkInitializeDisplayOnlyDriver
@@ -51,19 +50,19 @@ Loads and initializes the DirectX graphics kernel subsystem (Dxgkrnl.sys) for us
 
 ## -parameters
 
-### -param DriverObject 
+### -param DriverObject [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object">DRIVER_OBJECT</a> structure. The KMDOD previously obtained this pointer in its <a href="/windows-hardware/drivers/storage/driverentry-of-ide-controller-minidriver">DriverEntry</a> function.
 
-### -param RegistryPath 
+### -param RegistryPath [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that supplies the path to the KMDOD's service registry key.  The KMDOD previously obtained this pointer in its <a href="/windows-hardware/drivers/storage/driverentry-of-ide-controller-minidriver">DriverEntry</a> function.
 
-### -param KmdDodInitializationData 
+### -param KmdDodInitializationData [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_kmddod_initialization_data">KMDDOD_INITIALIZATION_DATA</a> structure that supplies the DirectX graphics kernel subsystem with pointers to functions implemented by the KMDOD.
 
 ## -returns

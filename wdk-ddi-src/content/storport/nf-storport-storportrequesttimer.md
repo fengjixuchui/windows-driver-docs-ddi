@@ -4,7 +4,6 @@ title: StorPortRequestTimer function (storport.h)
 description: Schedules a callback event for a Storport timer context object.
 old-location: storage\storportrequesttimer.htm
 tech.root: storage
-ms.assetid: EE5A6D39-EC76-4D97-B2EC-4A43225C2FB5
 ms.date: 03/29/2018
 keywords: ["StorPortRequestTimer function"]
 ms.keywords: StorPortRequestTimer, StorPortRequestTimer routine [Storage Devices], storage.storportrequesttimer, storport/StorPortRequestTimer
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,19 +49,19 @@ Schedules a callback event for a Storport timer context object.
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param TimerHandle 
+### -param TimerHandle [in]
 
-[in]
+
 A pointer to an opaque buffer for the timer context returned by <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitializetimer">StorPortInitializeTimer</a>.
 
-### -param TimerCallback 
+### -param TimerCallback [in]
 
-[in]
+
 A pointer to a timer callback routine supplied by the miniport. The following is the prototype defined for <b>PHW_TIMER_EX</b>:
 
 
@@ -76,19 +75,19 @@ VOID
 ```
 
 
-### -param CallbackContext 
+### -param CallbackContext [in, optional]
 
-[in, optional]
+
 A pointer to a miniport provided context for the timer callback.
 
-### -param TimerValue 
+### -param TimerValue [in]
 
-[in]
+
 The timeout value for the timer, in microseconds. Setting <i>TimerValue</i> to 0 will cancel the timer.
 
-### -param TolerableDelay 
+### -param TolerableDelay [in]
 
-[in]
+
 The allowable delay for the timer in microseconds. Values less than 32 microseconds are ignored and <i>TolerableDelay</i> defaults to 0.
 
 ## -returns

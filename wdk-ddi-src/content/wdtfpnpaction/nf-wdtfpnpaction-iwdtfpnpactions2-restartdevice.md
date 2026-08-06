@@ -1,10 +1,9 @@
 ---
 UID: NF:wdtfpnpaction.IWDTFPNPActions2.RestartDevice
 title: IWDTFPNPActions2::RestartDevice (wdtfpnpaction.h)
-description: Initiates a device restart.
+description: Learn how the method initiates a device restart.
 old-location: dtf\iwdtfpnpactions2_restartdevice.htm
 tech.root: dtf
-ms.assetid: b12cab9e-0dcd-4291-a93b-d8976c097bcd
 ms.date: 04/04/2018
 keywords: ["IWDTFPNPActions2::RestartDevice"]
 ms.keywords: IWDTFPNPActions2 interface [Windows Device Testing Framework],RestartDevice method, IWDTFPNPActions2.RestartDevice, IWDTFPNPActions2::RestartDevice, RestartDevice, RestartDevice method [Windows Device Testing Framework], RestartDevice method [Windows Device Testing Framework],IWDTFPNPActions2 interface, dtf.iwdtfpnpactions2_restartdevice, wdtfpnpaction/IWDTFPNPActions2::RestartDevice
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdtfpnpaction.h
 api_name:
- - IWDTFPNPActions2.RestartDevice
+ - IWDTFPNPActions2::RestartDevice
 ---
 
 # IWDTFPNPActions2::RestartDevice
@@ -50,9 +49,9 @@ Initiates a device restart.
 
 ## -parameters
 
-### -param pbSuccess 
+### -param pbSuccess [out, retval]
 
-[out, retval]
+
 True if the operation succeeds; otherwise, false.
 
 ## -returns
@@ -64,6 +63,3 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 From a SetupDi interface perspective, this will translate to a DICS_PROPCHANGE.   
 See the MSDN docs for details.
 
-## -see-also
-
-<a href="/windows-hardware/drivers/ddi/index">IWDTFPNPActions2</a>

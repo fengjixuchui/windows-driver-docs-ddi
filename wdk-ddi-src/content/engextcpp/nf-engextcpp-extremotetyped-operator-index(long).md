@@ -4,8 +4,7 @@ title: ExtRemoteTyped::operator[](LONG) (engextcpp.h)
 description: The operator[] overloaded operator returns the typed data in the specified array element of the typed data represented by this object.
 old-location: debugger\extremotetyped_operatorarray_long.htm
 tech.root: debugger
-ms.assetid: b75a0cec-fda6-45a3-ac60-915fc5862456
-ms.date: 05/03/2018
+ms.date: 05/04/2018
 keywords: ["ExtRemoteTyped::operator (LONG)"]
 ms.keywords: ExtRemoteTyped class [Windows Debugging],operator[] method, ExtRemoteTyped.operator[], ExtRemoteTyped.operator[](LONG), ExtRemoteTyped::Operator[], ExtRemoteTyped::operator[], ExtRemoteTyped::operator[](LONG), debugger.extremotetyped_operatorarray_long, operator[], operator[] method [Windows Debugging], operator[] method [Windows Debugging],ExtRemoteTyped class
 req.header: engextcpp.hpp
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteTyped.operator[]
+ - ExtRemoteTyped::operator[]
 ---
 
 # ExtRemoteTyped::operator (LONG)
-
 
 ## -description
 
@@ -50,9 +48,8 @@ The <b>operator[]</b> overloaded operator returns the typed data in the specifie
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
 The index of the array element.
 
 ## -returns
@@ -70,5 +67,5 @@ The <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotetyped
 <a href="/windows-hardware/drivers/ddi/engextcpp/nl-engextcpp-extremotetyped">ExtRemoteTyped</a>
 
 
-<a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotetyped-arrayelement">ExtRemoteTyped::ArrayElement</a> 
+<a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotetyped-arrayelement">ExtRemoteTyped::ArrayElement</a>
 

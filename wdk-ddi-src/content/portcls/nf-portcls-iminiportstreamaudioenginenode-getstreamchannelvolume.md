@@ -4,7 +4,6 @@ title: IMiniportStreamAudioEngineNode::GetStreamChannelVolume (portcls.h)
 description: Gets the current volume level that is applied to the audio stream.
 old-location: audio\iminiportstreamaudioenginenode_getstreamchannelvolume.htm
 tech.root: audio
-ms.assetid: 0BD6FCB7-1705-4343-AD41-7362FE095ECB
 ms.date: 05/08/2018
 keywords: ["IMiniportStreamAudioEngineNode::GetStreamChannelVolume"]
 ms.keywords: GetStreamChannelVolume, GetStreamChannelVolume method [Audio Devices], GetStreamChannelVolume method [Audio Devices],IMiniportStreamAudioEngineNode interface, IMiniportStreamAudioEngineNode interface [Audio Devices],GetStreamChannelVolume method, IMiniportStreamAudioEngineNode.GetStreamChannelVolume, IMiniportStreamAudioEngineNode::GetStreamChannelVolume, audio.iminiportstreamaudioenginenode_getstreamchannelvolume, portcls/IMiniportStreamAudioEngineNode::GetStreamChannelVolume
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IMiniportStreamAudioEngineNode.GetStreamChannelVolume
+ - IMiniportStreamAudioEngineNode::GetStreamChannelVolume
 ---
 
 # IMiniportStreamAudioEngineNode::GetStreamChannelVolume
@@ -50,14 +49,14 @@ Gets the current volume level that is applied to the audio stream.
 
 ## -parameters
 
-### -param ulChannel 
+### -param ulChannel [in]
 
-[in]
+
 The audio stream channel.
 
-### -param plValue 
+### -param plValue [out]
 
-[out]
+
 The current volume level.
 
 ## -returns
@@ -69,3 +68,4 @@ code.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportstreamaudioenginenode">IMiniportStreamAudioEngineNode</a>
+

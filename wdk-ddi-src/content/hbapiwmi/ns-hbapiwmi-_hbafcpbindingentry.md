@@ -4,7 +4,6 @@ title: _HBAFCPBindingEntry (hbapiwmi.h)
 description: The HBAFCPBindingEntry structure defines a binding between the information that uniquely identifies a logical unit for the operating system and the fibre channel protocol (FCP) identifier for the logical unit.
 old-location: storage\hbafcpbindingentry.htm
 tech.root: storage
-ms.assetid: fa0f20e1-7d63-48e8-8270-8dab566f5947
 ms.date: 03/29/2018
 keywords: ["HBAFCPBindingEntry structure"]
 ms.keywords: "*PHBAFCPBindingEntry, HBAFCPBindingEntry, HBAFCPBindingEntry structure [Storage Devices], PHBAFCPBindingEntry, PHBAFCPBindingEntry structure pointer [Storage Devices], _HBAFCPBindingEntry, hbapiwmi/HBAFCPBindingEntry, hbapiwmi/PHBAFCPBindingEntry, storage.hbafcpbindingentry, structs-Fibre_1b8c019a-3cec-4aa3-b43c-8f52168c7a03.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Hbapiwmi.h
 api_name:
+ - _HBAFCPBindingEntry
+ - PHBAFCPBindingEntry
  - HBAFCPBindingEntry
 ---
 
@@ -139,3 +140,4 @@ For an explanation of the fibre channel protocol (FCP), see the T11 committee's 
 ## -see-also
 
 <a href="/windows-hardware/drivers/storage/hbafcpbindingentry-wmi-class">HBAFCPBindingEntry WMI Class</a>
+

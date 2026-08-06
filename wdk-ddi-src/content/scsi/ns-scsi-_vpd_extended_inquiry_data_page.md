@@ -1,9 +1,9 @@
 ---
 UID: NS:scsi._VPD_EXTENDED_INQUIRY_DATA_PAGE
 title: _VPD_EXTENDED_INQUIRY_DATA_PAGE (scsi.h)
-description: 
-ms.assetid: c1576a19-8f1a-44f5-af68-6fb1804a1878
+description: "Learn more about: _VPD_EXTENDED_INQUIRY_DATA_PAGE structure (scsi.h)"
 ms.date: 10/19/2018
+tech.root: storage
 keywords: ["VPD_EXTENDED_INQUIRY_DATA_PAGE structure"]
 ms.keywords: _VPD_EXTENDED_INQUIRY_DATA_PAGE, VPD_EXTENDED_INQUIRY_DATA_PAGE, *PVPD_EXTENDED_INQUIRY_DATA_PAGE,
 req.header: scsi.h
@@ -35,6 +35,8 @@ api_location:
  - scsi.h
 api_name:
  - _VPD_EXTENDED_INQUIRY_DATA_PAGE
+ - PVPD_EXTENDED_INQUIRY_DATA_PAGE
+ - VPD_EXTENDED_INQUIRY_DATA_PAGE
 ---
 
 # _VPD_EXTENDED_INQUIRY_DATA_PAGE structure (scsi.h)

@@ -4,7 +4,6 @@ title: IOCTL_GNSS_SEND_PLATFORM_CAPABILITY (gnssdriver.h)
 description: The IOCTL_GNSS_SEND_PLATFORM_CAPABILITY control code is used by the GNSS adapter to communicate the various location-specific platform capabilities.
 old-location: gnss\ioctl_gnss_send_platform_capability.htm
 tech.root: gnss
-ms.assetid: EF979267-BDF3-4C42-B18E-C77E2584BC2D
 ms.date: 02/15/2018
 keywords: ["IOCTL_GNSS_SEND_PLATFORM_CAPABILITY IOCTL"]
 ms.keywords: IOCTL_GNSS_SEND_PLATFORM_CAPABILITY, IOCTL_GNSS_SEND_PLATFORM_CAPABILITY control, IOCTL_GNSS_SEND_PLATFORM_CAPABILITY control code [Sensor Devices], gnss.ioctl_gnss_send_platform_capability, gnssdriver/IOCTL_GNSS_SEND_PLATFORM_CAPABILITY
@@ -49,6 +48,8 @@ api_name:
 The <b>IOCTL_GNSS_SEND_PLATFORM_CAPABILITY</b> control code is used by the GNSS adapter to communicate the various location-specific platform capabilities. The GNSS driver can use this data in various ways. For example, if the platform does not support injection of assistance data, the GNSS driver can use the mobile operation network to seek such information. The use of the individual capability information is optional and the driver can ignore the platform capability information for its operation.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

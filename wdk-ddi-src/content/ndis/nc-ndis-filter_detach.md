@@ -4,7 +4,6 @@ title: FILTER_DETACH (ndis.h)
 description: NDIS calls a filter driver's FilterDetach function to release all the resources that are associated with a filter module.Note  You must declare the function by using the FILTER_DETACH type.
 old-location: netvista\filterdetach.htm
 tech.root: netvista
-ms.assetid: 49dfbbb3-74e7-4904-8370-36d589276653
 ms.date: 05/02/2018
 keywords: ["FILTER_DETACH callback function"]
 ms.keywords: FILTER_DETACH, FILTER_DETACH callback, FilterDetach, FilterDetach callback function [Network Drivers Starting with Windows Vista], filter_functions_ref_dec15a06-93c1-4da8-9dc6-b66be9c6f8eb.xml, ndis/FilterDetach, netvista.filterdetach
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndis.h
 api_name:
- - FilterDetach
+ - FILTER_DETACH
 ---
 
 # FILTER_DETACH callback function
@@ -53,9 +52,9 @@ NDIS calls a filter driver's
 
 ## -parameters
 
-### -param FilterModuleContext 
+### -param FilterModuleContext [in]
 
-[in]
+
 A handle to the context area for the filter module that NDIS will remove from the driver stack.
      The filter driver created and initialized this context area in the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach">FilterAttach</a> function.
@@ -106,3 +105,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach">FilterAttach</a>
+

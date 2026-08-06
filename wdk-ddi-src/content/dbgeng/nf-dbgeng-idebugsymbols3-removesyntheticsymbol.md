@@ -4,7 +4,6 @@ title: IDebugSymbols3::RemoveSyntheticSymbol (dbgeng.h)
 description: The RemoveSyntheticSymbol method removes a synthetic symbol from a module in the current process.
 old-location: debugger\removesyntheticsymbol.htm
 tech.root: debugger
-ms.assetid: 07825be3-84a1-4aab-a9f0-22a45f636a04
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::RemoveSyntheticSymbol"]
 ms.keywords: IDebugSymbols3 interface [Windows Debugging],RemoveSyntheticSymbol method, IDebugSymbols3.RemoveSyntheticSymbol, IDebugSymbols3::RemoveSyntheticSymbol, IDebugSymbols_dc1ccbc7-17e4-4424-8a3d-fbb7f16d3c3b.xml, RemoveSyntheticSymbol, RemoveSyntheticSymbol method [Windows Debugging], RemoveSyntheticSymbol method [Windows Debugging],IDebugSymbols3 interface, dbgeng/IDebugSymbols3::RemoveSyntheticSymbol, debugger.removesyntheticsymbol
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols3.RemoveSyntheticSymbol
+ - IDebugSymbols3::RemoveSyntheticSymbol
 ---
 
 # IDebugSymbols3::RemoveSyntheticSymbol
@@ -50,9 +49,9 @@ The <b>RemoveSyntheticSymbol</b> method removes a synthetic symbol from a module
 
 ## -parameters
 
-### -param Id 
+### -param Id [in]
 
-[in]
+
 Specifies the synthetic symbol to remove.  This must be the same value returned in the <i>Id</i> parameter of <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-addsyntheticsymbol">AddSyntheticSymbol</a>.  See <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_module_and_id">DEBUG_MODULE_AND_ID</a> for details about the type of this parameter.
 
 ## -returns
@@ -106,3 +105,4 @@ For more information about synthetic symbols, see Synthetic Symbols.
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-removesyntheticmodule">RemoveSyntheticModule</a>
+

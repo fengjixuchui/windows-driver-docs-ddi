@@ -4,7 +4,6 @@ title: MINIPORT_SYNCHRONOUS_OID_REQUEST function (ndis.h)
 description: NDIS calls a miniport driver's MiniportSynchronousOidRequest callback function to issue a Synchronous OID request.
 old-location: netvista\miniport_synchronous_oid_request.htm
 tech.root: netvista
-ms.assetid: 0DDF9CF8-91F6-4D7C-A8E8-FC425BF155CB
 ms.date: 05/02/2018
 keywords: ["MINIPORT_SYNCHRONOUS_OID_REQUEST function"]
 ms.keywords: MINIPORT_SYNCHRONOUS_OID_REQUEST, MiniportSynchronousOidRequest, MiniportSynchronousOidRequest function [Network Drivers Starting with Windows Vista], ndis/MiniportSynchronousOidRequest, netvista.miniport_synchronous_oid_request
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportSynchronousOidRequest
+ - MINIPORT_SYNCHRONOUS_OID_REQUEST
 ---
 
 # MINIPORT_SYNCHRONOUS_OID_REQUEST function
@@ -50,18 +49,18 @@ NDIS calls a miniport driver's <i>MiniportSynchronousOidRequest</i> callback fun
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 A handle to a context area that the miniport driver allocated in its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a> function.
      The miniport driver uses this context area to maintain state information for a miniport adapter.
 
-### -param OidRequest 
+### -param OidRequest [in]
 
-[in]
+
 A pointer to an 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure that contains
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure that contains
      both the buffer and the request packet for the miniport driver to handle. Depending on the request, the
      driver returns requested information in the structure that is provided.
 
@@ -157,7 +156,7 @@ The miniport driver will provide an OID completion status with a subsequent stat
        miniport driver cannot return NDIS_STATUS_INDICATION_REQUIRED unless the particular OID allows it. To
        determine if this status is allowed, see the OID reference page. For more information about
        NDIS_STATUS_INDICATION_REQUIRED, see 
-       <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> and 
+       <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> and 
        <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication">NDIS_STATUS_INDICATION</a>.
 
 </td>
@@ -233,7 +232,7 @@ Miniport drivers that implement NDIS Selective Suspend are incompatible with Syn
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 
@@ -246,3 +245,4 @@ Miniport drivers that implement NDIS Selective Suspend are incompatible with Syn
 
 
 <a href="/windows-hardware/drivers/network/synchronous-oid-request-interface-in-ndis-6-80">Synchronous OID Request Interface in NDIS 6.80</a>
+

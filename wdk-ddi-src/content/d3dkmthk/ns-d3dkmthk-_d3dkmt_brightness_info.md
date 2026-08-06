@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_BRIGHTNESS_INFO
 title: _D3DKMT_BRIGHTNESS_INFO (d3dkmthk.h)
 description: Contains information about the brightness of an integrated display panel.
 old-location: display\d3dkmt_brightness_info.htm
-ms.assetid: a620b0b2-85ce-4373-a50c-299d8ce7a91c
 ms.date: 05/10/2018
 keywords: ["D3DKMT_BRIGHTNESS_INFO structure"]
 ms.keywords: D3DKMT_BRIGHTNESS_INFO, D3DKMT_BRIGHTNESS_INFO structure [Display Devices], _D3DKMT_BRIGHTNESS_INFO, d3dkmthk/D3DKMT_BRIGHTNESS_INFO, display.d3dkmt_brightness_info
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
+ - _D3DKMT_BRIGHTNESS_INFO
  - D3DKMT_BRIGHTNESS_INFO
 ---
 
@@ -123,3 +123,4 @@ An integer that uniquely identifies the child device.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_dxgk_brightness_state">DXGK_BRIGHTNESS_STATE</a>
+

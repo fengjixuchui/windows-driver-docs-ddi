@@ -4,7 +4,6 @@ title: StorPortInitializeTimer function (storport.h)
 description: Creates a Storport timer context object.
 old-location: storage\storportinitializetimer.htm
 tech.root: storage
-ms.assetid: 1F43EEDC-5DB4-4ABE-BBC6-A4A51FCAF0B6
 ms.date: 03/29/2018
 keywords: ["StorPortInitializeTimer function"]
 ms.keywords: StorPortInitializeTimer, StorPortInitializeTimer routine [Storage Devices], storage.storportinitializetimer, storport/StorPortInitializeTimer
@@ -50,14 +49,14 @@ Creates a Storport timer context object.
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param TimerHandle 
+### -param TimerHandle [out]
 
-[out]
+
 A pointer to an opaque buffer that holds context information for the timer.
 
 ## -returns

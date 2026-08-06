@@ -4,7 +4,6 @@ title: NdisClMakeCall function (ndis.h)
 description: NdisClMakeCall sets up an outgoing call on a client-created VC.
 old-location: netvista\ndisclmakecall.htm
 tech.root: netvista
-ms.assetid: 69775220-71d8-497c-aaf7-9bc3ec90d00f
 ms.date: 05/02/2018
 keywords: ["NdisClMakeCall function"]
 ms.keywords: NdisClMakeCall, NdisClMakeCall function [Network Drivers Starting with Windows Vista], condis_client_ref_bd9f0a4a-c8f7-418e-aa80-e97fad7e4ab1.xml, ndis/NdisClMakeCall, netvista.ndisclmakecall
@@ -51,32 +50,32 @@ api_name:
 
 ## -parameters
 
-### -param NdisVcHandle 
+### -param NdisVcHandle [in]
 
-[in]
+
 Specifies the handle returned by a preceding call to 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscocreatevc">NdisCoCreateVc</a>.
 
-### -param CallParameters 
+### -param CallParameters [in, out]
 
-[in, out]
+
 Pointer to a structure of type 
      <a href="/previous-versions/windows/hardware/network/ff545384(v=vs.85)">CO_CALL_PARAMETERS</a> in which the caller has
      specified the attributes for this connection, such as the address of the target for the call, latency,
      bandwidth, and quality of service if the network medium and address family supported by the call manager
      permits QoS specifications.
 
-### -param ProtocolPartyContext 
+### -param ProtocolPartyContext [in, optional]
 
-[in, optional]
+
 Optionally specifies a caller-supplied handle to a resident context area in which the client will
      maintain per-party state for the initial party on its multipoint VC. This parameter is <b>NULL</b> if the given
      VC does not represent a multipoint connection. For a multipoint VC, NDIS passes this handle back to the
      client's ProtocolCl<i>Xxx</i> functions in all subsequent calls that affect this particular party.
 
-### -param NdisPartyHandle 
+### -param NdisPartyHandle [out, optional]
 
-[out, optional]
+
 Pointer to a caller-supplied variable, usually in the caller-allocated party context area, in
      which NDIS returns a handle representing the initial party to the multipoint connection if the request
      to set up an outgoing call is successful. If 

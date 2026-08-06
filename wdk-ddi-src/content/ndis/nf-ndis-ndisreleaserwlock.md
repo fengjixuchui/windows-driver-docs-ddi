@@ -4,7 +4,6 @@ title: NdisReleaseRWLock function (ndis.h)
 description: The NdisReleaseRWLock function releases a read/write lock that the caller uses to gain access to resources that are shared between driver threads.
 old-location: netvista\ndisreleaserwlock.htm
 tech.root: netvista
-ms.assetid: e0859f3f-0acc-45b7-99b2-ef420cd06565
 ms.date: 05/02/2018
 keywords: ["NdisReleaseRWLock function"]
 ms.keywords: NdisReleaseRWLock, NdisReleaseRWLock function [Network Drivers Starting with Windows Vista], ndis/NdisReleaseRWLock, ndis_processor_group_ref_bbc47204-3cf6-4154-bafc-23c14cff452b.xml, netvista.ndisreleaserwlock
@@ -53,17 +52,17 @@ The
 
 ## -parameters
 
-### -param Lock 
+### -param Lock [in]
 
-[in]
+
 A pointer to an opaque 
      <a href="/previous-versions/windows/hardware/drivers/ff567279(v=vs.85)">NDIS_RW_LOCK_EX</a> variable that represents a
      lock. The caller can use this lock to gain write or read access to resources that are shared between
      non-ISR driver threads.
 
-### -param LockState 
+### -param LockState [in]
 
-[in]
+
 A pointer to an opaque 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_lock_state_ex">LOCK_STATE_EX</a> variable that tracks the state
      of the lock. This variable exists in the interval between the times that the caller obtains and releases

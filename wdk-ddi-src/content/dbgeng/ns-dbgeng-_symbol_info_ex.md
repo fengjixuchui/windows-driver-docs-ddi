@@ -4,7 +4,6 @@ title: _SYMBOL_INFO_EX (dbgeng.h)
 description: The SYMBOL_INFO_EX structure describes the extended line symbol information.
 old-location: debugger\symbol_info_ex.htm
 tech.root: debugger
-ms.assetid: BDB8179A-4A97-4E83-B4A4-7B8358B3510C
 ms.date: 05/03/2018
 keywords: ["SYMBOL_INFO_EX structure"]
 ms.keywords: "*PSYMBOL_INFO_EX, PSYMBOL_INFO_EX, PSYMBOL_INFO_EX structure pointer [Windows Debugging], SYMBOL_INFO_EX, SYMBOL_INFO_EX structure [Windows Debugging], _SYMBOL_INFO_EX, dbgeng/PSYMBOL_INFO_EX, dbgeng/SYMBOL_INFO_EX, debugger.symbol_info_ex"
@@ -42,11 +41,12 @@ api_type:
 api_location:
  - DbgEng.h
 api_name:
+ - _SYMBOL_INFO_EX
+ - PSYMBOL_INFO_EX
  - SYMBOL_INFO_EX
 ---
 
 # _SYMBOL_INFO_EX structure
-
 
 ## -description
 
@@ -74,18 +74,10 @@ First line number that does not correspond to a compiler added glue line.
 
 Line displacement: Offset between given address and the first instruction of the line.
 
-### -field Reserved
-
- 
-
-
-
-
-#### - Reserved[4]
+### -field Reserved[4]
 
 Reserved for future use. This parameter can be set to any value.
 
 ## -remarks
 
 Glue lines are code lines added to the binary by the compiler/linker. Glue lines do not have corresponding lines in the original source code. They are added to bind together functionality inside of the PE generated binary, for example calling NET framework functions inside of a native binary.
-

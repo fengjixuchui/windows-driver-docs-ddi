@@ -4,7 +4,6 @@ title: RtlLongPtrMult function (ntintsafe.h)
 description: Multiplies one value of type LONG_PTR by another.
 old-location: kernel\rtllongptrmult.htm
 tech.root: kernel
-ms.assetid: AF602DBE-E106-4105-B56B-DE9EE7691A05
 ms.date: 04/30/2018
 keywords: ["RtlLongPtrMult function"]
 ms.keywords: RtlLongPtrMult, RtlLongPtrMult function [Kernel-Mode Driver Architecture], kernel.rtllongptrmult, ntintsafe/RtlLongPtrMult
@@ -50,19 +49,19 @@ Multiplies one value of type <b>LONG_PTR</b> by another.
 
 ## -parameters
 
-### -param lMultiplicand 
+### -param lMultiplicand [in]
 
-[in]
+
 The value to be multiplied by <i>lMultiplier</i>.
 
-### -param lMultiplier 
+### -param lMultiplier [in]
 
-[in]
+
 The value by which to multiply <i>lMultiplicand</i>.
 
-### -param plResult 
+### -param plResult [out]
 
-[out]
+
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

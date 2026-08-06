@@ -4,7 +4,6 @@ title: _WDF_USB_PIPE_TYPE (wdfusb.h)
 description: The WDF_USB_PIPE_TYPE enumeration identifies the types of USB pipes.
 old-location: wdf\wdf_usb_pipe_type.htm
 tech.root: wdf
-ms.assetid: ae230ff0-4fd9-417b-8ee0-80e3ca5a30ff
 ms.date: 02/26/2018
 keywords: ["WDF_USB_PIPE_TYPE enumeration"]
 ms.keywords: DFUsbRef_6a3da4b3-f8ac-4208-bdd2-1136a6417b3a.xml, WDF_USB_PIPE_TYPE, WDF_USB_PIPE_TYPE enumeration, WdfUsbPipeTypeBulk, WdfUsbPipeTypeControl, WdfUsbPipeTypeInterrupt, WdfUsbPipeTypeInvalid, WdfUsbPipeTypeIsochronous, _WDF_USB_PIPE_TYPE, kmdf.wdf_usb_pipe_type, wdf.wdf_usb_pipe_type, wdfusb/WDF_USB_PIPE_TYPE, wdfusb/WdfUsbPipeTypeBulk, wdfusb/WdfUsbPipeTypeControl, wdfusb/WdfUsbPipeTypeInterrupt, wdfusb/WdfUsbPipeTypeInvalid, wdfusb/WdfUsbPipeTypeIsochronous
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfusb.h
 api_name:
+ - _WDF_USB_PIPE_TYPE
  - WDF_USB_PIPE_TYPE
 ---
 
@@ -54,7 +54,7 @@ The <b>WDF_USB_PIPE_TYPE</b> enumeration identifies the types of USB pipes.
 
 ## -enum-fields
 
-### -field WdfUsbPipeTypeInvalid
+### -field WdfUsbPipeTypeInvalid:0
 
 Reserved for internal use.
 
@@ -81,3 +81,4 @@ The <b>WDF_USB_PIPE_TYPE</b> enumeration is used in the <a href="/windows-hardwa
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_pipe_information">WDF_USB_PIPE_INFORMATION</a>
+

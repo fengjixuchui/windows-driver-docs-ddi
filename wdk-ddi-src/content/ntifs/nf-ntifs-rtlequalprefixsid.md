@@ -4,7 +4,6 @@ title: RtlEqualPrefixSid function (ntifs.h)
 description: The RtlEqualPrefixSid routine determines whether two security-identifier (SID) prefixes are equal. An SID prefix is the entire SID except for the last subauthority value.
 old-location: ifsk\rtlequalprefixsid.htm
 tech.root: ifsk
-ms.assetid: 6db96d3b-721f-40d5-8f8d-54cdd33f85c8
 ms.date: 04/16/2018
 keywords: ["RtlEqualPrefixSid function"]
 ms.keywords: RtlEqualPrefixSid, RtlEqualPrefixSid routine [Installable File System Drivers], ifsk.rtlequalprefixsid, ntifs/RtlEqualPrefixSid, rtlref_67b0c7e1-647f-426a-8d9d-dde2d98b0cc3.xml
@@ -50,14 +49,14 @@ The <b>RtlEqualPrefixSid</b> routine determines whether two security-identifier 
 
 ## -parameters
 
-### -param Sid1 
+### -param Sid1 [in]
 
-[in]
+
 Pointer to the first SID structure to compare. Must point to a valid SID.
 
-### -param Sid2 
+### -param Sid2 [in]
 
-[in]
+
 Pointer to the second SID structure to compare. Must point to a valid SID.
 
 ## -returns
@@ -72,7 +71,7 @@ All SIDs for a specified domain necessarily have the same prefix. When the serve
 
 It is advisable to modify the SID for a domain before comparing it with a group or user SID. If the SID for RemoteDomain is S-1-1234-8, each group or user SID for that domain will have S-1-1234-8 as its prefix. To compare the SIDs by using <b>RtlEqualPrefixSid</b>, the caller copies the domain SID and adds any subauthority relative identifier value to the copy, thereby creating an SID in the form S-1-1234-8-0. (The relative identifier, or RID, is the portion of a SID that identifies a user or group in relation to the authority that issued the SID.) The caller then uses the modified domain SID as a template against which the group and user SIDs are compared. 
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

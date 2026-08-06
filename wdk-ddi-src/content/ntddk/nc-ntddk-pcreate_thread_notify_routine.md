@@ -4,7 +4,6 @@ title: PCREATE_THREAD_NOTIFY_ROUTINE (ntddk.h)
 description: A callback routine implemented by a driver to notify the caller when a thread is created or deleted.
 old-location: kernel\pcreate_thread_notify_routine.htm
 tech.root: kernel
-ms.assetid: AAA62659-D12C-4EEC-8D74-6138B34128CE
 ms.date: 04/30/2018
 keywords: ["PCREATE_THREAD_NOTIFY_ROUTINE callback function"]
 ms.keywords: PCREATE_THREAD_NOTIFY_ROUTINE, PCREATE_THREAD_NOTIFY_ROUTINE callback, SetCreateThreadNotifyRoutine, SetCreateThreadNotifyRoutine callback function [Kernel-Mode Driver Architecture], kernel.pcreate_thread_notify_routine, ntddk/SetCreateThreadNotifyRoutine
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ntddk.h
 api_name:
- - SetCreateThreadNotifyRoutine
+ - PCREATE_THREAD_NOTIFY_ROUTINE
 ---
 
 # PCREATE_THREAD_NOTIFY_ROUTINE callback function
@@ -47,23 +46,25 @@ api_name:
 ## -description
 
 A callback routine implemented by a driver to notify the caller when a thread is created or deleted.
-<div class="alert"><b>Warning</b>  The actions that  you can perform in this routine are restricted for safe calls. See <a href="/windows-hardware/drivers/kernel/windows-kernel-mode-process-and-thread-manager#best">Best Practices</a>. </div><div> </div>
 
+> [!WARNING]
+> The actions that you can perform in this routine are restricted for safe calls. See <a href="/windows-hardware/drivers/kernel/windows-kernel-mode-process-and-thread-manager#best">Best Practices</a>.
+ 
 ## -parameters
 
-### -param ProcessId 
+### -param ProcessId [in]
 
-[in]
+
 The process ID of the process.
 
-### -param ThreadId 
+### -param ThreadId [in]
 
-[in]
+
 The thread ID of the thread.
 
-### -param Create 
+### -param Create [in]
 
-[in]
+
 Indicates whether the thread was created (<b>TRUE</b>) or deleted (<b>FALSE</b>).
 
 ## -remarks
@@ -79,3 +80,4 @@ The driver's thread-notify routine runs at IRQL = PASSIVE_LEVEL or APC_LEVEL. Wh
 
 
 <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pssetcreatethreadnotifyroutineex">PsSetCreateThreadNotifyRoutineEx</a>
+

@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.TypeSearchInfo.TypeSearchInfo(TypeKind)
-title: TypeSearchInfo function (dbgmodel.h)
-description: The search record passed to EnumerateChildrenEx specifically for SymbolType searches.
-ms.assetid: 72b69d71-6871-408f-851e-36dd2612425c
+title: TypeSearchInfo(TypeKind) function (dbgmodel.h)
+description: The TypeSearchInfo(TypeKind) function (dbgmodel.h) constructs a TypeSearchInfo structure using the specified TypeKind.
 ms.date: 10/04/2018
 keywords: ["TypeSearchInfo function"]
 ms.keywords: TypeSearchInfo
@@ -36,11 +35,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - TypeSearchInfo
+ - TypeSearchInfo::TypeSearchInfo
 ---
 
-# TypeSearchInfo function (dbgmodel.h)
-
+# TypeSearchInfo(TypeKind) function (dbgmodel.h)
 
 ## -description
 
@@ -52,11 +50,11 @@ The search record passed to EnumerateChildrenEx specifically for SymbolType sear
 
 Defines the type being searched for.
 
-## -returns
+## -remarks
+
+### Returns
 
 This function is a constructor and does not return a value.
-
-## -remarks
 
 ## -see-also
 

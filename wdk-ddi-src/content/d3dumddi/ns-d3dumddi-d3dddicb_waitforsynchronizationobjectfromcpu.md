@@ -4,7 +4,6 @@ title: D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU (d3dumddi.h)
 description: D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU is used with pfnWaitForSynchronizationObjectFromCpuCb to wait for a monitored fence to reach a certain value.
 old-location: display\d3dddicb_waitforsynchronizationobjectfromcpu.htm
 tech.root: display
-ms.assetid: 0F5BEDBF-6871-4343-88D1-85E7620171EF
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU structure"]
 ms.keywords: D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU structure [Display Devices], WaitAny, d3dumddi/D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, display.d3dddicb_waitforsynchronizationobjectfromcpu
@@ -50,25 +49,25 @@ api_name:
 
 ## -struct-fields
 
-### -field ObjectCount
+### -field ObjectCount [in]
 
-[in] The number of synchronization objects in the <b>ObjectHandleArray</b> and fence values in the <b>FenceValueArray</b>.
+The number of synchronization objects in the <b>ObjectHandleArray</b> and fence values in the <b>FenceValueArray</b>.
 
-### -field ObjectHandleArray
+### -field ObjectHandleArray [in]
 
-[in] An array of kernel-mode handles to the synchronization events to wait for.
+An array of kernel-mode handles to the synchronization events to wait for.
 
-### -field FenceValueArray
+### -field FenceValueArray [in]
 
-[in] An array of 64-bit monitored fence values to wait for, each corresponding to an object in the <b>ObjectHandleArray</b>.
+An array of 64-bit monitored fence values to wait for, each corresponding to an object in the <b>ObjectHandleArray</b>.
 
-### -field hAsyncEvent
+### -field hAsyncEvent [in]
 
-[in] When not <b>NULL</b>, specifies the event to be signaled when the wait condition is satisfied. When <b>NULL</b>, the call will not return until the wait condition is satisfied.
+When not <b>NULL</b>, specifies the event to be signaled when the wait condition is satisfied. When <b>NULL</b>, the call will not return until the wait condition is satisfied.
 
-### -field Flags
+### -field Flags [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_waitforsynchronizationobjectfromcpu_flags">D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS</a> structure describing the operation.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_waitforsynchronizationobjectfromcpu_flags">D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS</a> structure describing the operation.
 
 | **Value** | **Meaning** | 
 |:--|:--|

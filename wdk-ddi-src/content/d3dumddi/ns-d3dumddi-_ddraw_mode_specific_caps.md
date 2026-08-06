@@ -4,7 +4,6 @@ title: _DDRAW_MODE_SPECIFIC_CAPS (d3dumddi.h)
 description: The DDRAW_MODE_SPECIFIC_CAPS structure describes Microsoft DirectDraw capabilities that are specific to a particular display device (head) on the graphics card.
 old-location: display\ddraw_mode_specific_caps.htm
 tech.root: display
-ms.assetid: 4434e2cb-af36-446b-b84e-f303ba315cd3
 ms.date: 05/10/2018
 keywords: ["DDRAW_MODE_SPECIFIC_CAPS structure"]
 ms.keywords: D3D_other_Structs_21634851-4693-46c9-b742-f2001e63f349.xml, DDRAW_MODE_SPECIFIC_CAPS, DDRAW_MODE_SPECIFIC_CAPS structure [Display Devices], _DDRAW_MODE_SPECIFIC_CAPS, d3dumddi/DDRAW_MODE_SPECIFIC_CAPS, display.ddraw_mode_specific_caps
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DDRAW_MODE_SPECIFIC_CAPS
  - DDRAW_MODE_SPECIFIC_CAPS
 ---
 
@@ -52,13 +52,13 @@ The DDRAW_MODE_SPECIFIC_CAPS structure describes Microsoft DirectDraw capabiliti
 
 ## -struct-fields
 
-### -field Head
+### -field Head [in]
 
-[in] The display device (head) on the multiple-head graphics card to retrieve capabilities about.
+The display device (head) on the multiple-head graphics card to retrieve capabilities about.
 
-### -field Caps
+### -field Caps [out]
 
-[out] A valid bitwise OR of the following general capability bits that the driver supports.
+A valid bitwise OR of the following general capability bits that the driver supports.
 
 | **Capability bit** | **Meaning** | 
 |:--|:--|
@@ -70,9 +70,9 @@ The DDRAW_MODE_SPECIFIC_CAPS structure describes Microsoft DirectDraw capabiliti
 | MODE_CAPS_READSCANLINE (0x00000020) | The current scan line can be read and returned. | 
 | MODE_CAPS_COLORCONTROLOVERLAY (0x00000040) | The driver supports color-control settings for an overlay. For information about setting and retrieving color-control settings, see the [GetOverlayColorControls](./nc-d3dumddi-pfnd3dddi_getoverlaycolorcontrols.md) and [SetOverlayColorControls](./nc-d3dumddi-pfnd3dddi_setoverlaycolorcontrols.md) functions. |
 
-### -field CKeyCaps
+### -field CKeyCaps [out]
 
-[out] A valid bitwise OR of the following color key capability bits that the driver supports.
+A valid bitwise OR of the following color key capability bits that the driver supports.
 
 | **Capability bit** | **Meaning** | 
 |:--|:--|
@@ -83,9 +83,9 @@ The DDRAW_MODE_SPECIFIC_CAPS structure describes Microsoft DirectDraw capabiliti
 | MODE_CKEYCAPS_SRCOVERLAYCLRSPACEYUV (0x00000010) | Overlaying operations that use a color space as the source color key for the overlay surface for YUV colors can be performed. | 
 | MODE_CKEYCAPS_SRCOVERLAYYUV (0x00000020) | Overlaying operations that use the color key for the source with this overlay surface for YUV colors can be performed. |
 
-### -field FxCaps
+### -field FxCaps [out]
 
-[out] A valid bitwise OR of the following effects capability bits that the driver supports.
+A valid bitwise OR of the following effects capability bits that the driver supports.
 
 | **Capability bit** | **Meaning** | 
 |:--|:--|
@@ -97,17 +97,17 @@ The DDRAW_MODE_SPECIFIC_CAPS structure describes Microsoft DirectDraw capabiliti
 | MODE_FXCAPS_OVERLAYMIRRORUPDOWN (0x00000020) | Mirroring of overlays across the horizontal axis can be performed. | 
 | MODE_FXCAPS_OVERLAYDEINTERLACE (0x00000040) | Deinterlacing of an overlay surface can be performed. |
 
-### -field MaxVisibleOverlays
+### -field MaxVisibleOverlays [out]
 
-[out] The maximum number of visible overlays.
+The maximum number of visible overlays.
 
-### -field MinOverlayStretch
+### -field MinOverlayStretch [out]
 
-[out] The minimum overlay stretch factor multiplied by 1000. For example, a factor of 1.3 should be stored as 1300. The display driver must set the minimum factor to the actual minimum to which the graphics hardware can shrink the overlay. If the graphics hardware has no minimum limitation, set <b>MinOverlayStretch</b> to 1.
+The minimum overlay stretch factor multiplied by 1000. For example, a factor of 1.3 should be stored as 1300. The display driver must set the minimum factor to the actual minimum to which the graphics hardware can shrink the overlay. If the graphics hardware has no minimum limitation, set <b>MinOverlayStretch</b> to 1.
 
-### -field MaxOverlayStretch
+### -field MaxOverlayStretch [out]
 
-[out] The maximum overlay stretch factor multiplied by 1000. For example, a factor of 1.3 should be stored as 1300. The display driver must set the maximum factor to the actual maximum to which the graphics hardware can stretch the overlay. If the graphics hardware has no maximum limitation, set <b>MaxOverlayStretch</b> to 32000.
+The maximum overlay stretch factor multiplied by 1000. For example, a factor of 1.3 should be stored as 1300. The display driver must set the maximum factor to the actual maximum to which the graphics hardware can stretch the overlay. If the graphics hardware has no maximum limitation, set <b>MaxOverlayStretch</b> to 32000.
 
 ## -remarks
 
@@ -124,3 +124,4 @@ Capabilities can change between heads of a multiple-headed graphics card and can
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps">GetCaps</a>
+

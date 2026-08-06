@@ -1,10 +1,9 @@
 ---
 UID: NF:wudfddi_hwaccess.WRITE_REGISTER_UCHAR
 title: WRITE_REGISTER_UCHAR function (wudfddi_hwaccess.h)
-description: The WRITE_REGISTER_UCHAR routine writes a byte to the specified address.
+description: The WRITE_REGISTER_UCHAR function (wudfddi_hwaccess.h)  writes a byte to the specified register address.
 old-location: wdf\write_register_uchar.htm
 tech.root: wdf
-ms.assetid: C56D6CD8-7D23-4DA7-9241-F72ADBDD2770
 ms.date: 02/26/2018
 keywords: ["WRITE_REGISTER_UCHAR function"]
 ms.keywords: WRITE_REGISTER_UCHAR, WRITE_REGISTER_UCHAR function, umdf.write_register_uchar, wdf.write_register_uchar, wudfddi_hwaccess/WRITE_REGISTER_UCHAR
@@ -52,19 +51,19 @@ The <b>WRITE_REGISTER_UCHAR</b> routine writes a byte to the specified address.
 
 ## -parameters
 
-### -param pDevice 
+### -param pDevice [in]
 
-[in]
+
 Specifies a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a> interface for the device object of the device to access.
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the register, which must be a mapped range in memory space.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies a byte to write to the register.
 
 ## -remarks

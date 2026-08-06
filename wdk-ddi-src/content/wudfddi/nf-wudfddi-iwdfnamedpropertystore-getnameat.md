@@ -4,8 +4,7 @@ title: IWDFNamedPropertyStore::GetNameAt (wudfddi.h)
 description: The GetNameAt method retrieves the name of a property.
 old-location: wdf\iwdfnamedpropertystore_getnameat.htm
 tech.root: wdf
-ms.assetid: f6ebf45b-b411-4684-b430-0b17a56ec0c0
-ms.date: 02/26/2018
+ms.date: 08/09/2021
 keywords: ["IWDFNamedPropertyStore::GetNameAt"]
 ms.keywords: GetNameAt, GetNameAt method, GetNameAt method,IWDFNamedPropertyStore interface, IWDFNamedPropertyStore interface,GetNameAt method, IWDFNamedPropertyStore.GetNameAt, IWDFNamedPropertyStore::GetNameAt, UMDFPropertyStoreObjectRef_d7568b53-9673-4344-bbbc-100fc19aaba5.xml, umdf.iwdfnamedpropertystore_getnameat, wdf.iwdfnamedpropertystore_getnameat, wudfddi/IWDFNamedPropertyStore::GetNameAt
 req.header: wudfddi.h
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFNamedPropertyStore.GetNameAt
+ - IWDFNamedPropertyStore::GetNameAt
 ---
 
 # IWDFNamedPropertyStore::GetNameAt
@@ -52,15 +51,15 @@ The <b>GetNameAt</b> method retrieves the name of a property.
 
 ## -parameters
 
-### -param iProp 
+### -param iProp [in]
 
-[in]
+
 The zero-based index of the property that <b>GetNameAt</b> retrieves the name from.
 
-### -param ppwszName 
+### -param ppwszName [out]
 
-[out]
-A pointer to a variable that receives a pointer to a <b>NULL</b>-terminated string that contains the name of the property.
+
+A pointer to a variable that receives a pointer to a <b>NULL</b>-terminated string that contains the name of the property. The caller needs to release the returned buffer using delete[].
 
 ## -returns
 
@@ -73,3 +72,4 @@ For more information, see <a href="/windows-hardware/drivers/wdf/using-the-regis
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfnamedpropertystore">IWDFNamedPropertyStore</a>
+

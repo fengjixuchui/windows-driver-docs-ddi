@@ -2,8 +2,7 @@
 UID: NS:acpitabl._HMAT_TABLE
 title: _HMAT_TABLE (acpitabl.h)
 description: Defines the _HMAT_TABLE structure.
-ms.assetid: aac4942e-3354-44ec-a4d2-0637f8a5a629
-ms.date: 10/01/2018
+ms.date: 11/19/2020
 keywords: ["HMAT_TABLE structure"]
 ms.keywords: _HMAT_TABLE, HMAT_TABLE, *PHMAT_TABLE,
 req.header: acpitabl.h
@@ -21,6 +20,7 @@ req.max-support:
 req.typenames: HMAT_TABLE, *PHMAT_TABLE
 targetos: Windows
 ms.custom: RS5
+tech.root: acpi
 f1_keywords:
  - _HMAT_TABLE
  - acpitabl/_HMAT_TABLE
@@ -36,6 +36,8 @@ api_location:
  - acpitabl.h
 api_name:
  - _HMAT_TABLE
+ - PHMAT_TABLE
+ - HMAT_TABLE
 ---
 
 # _HMAT_TABLE structure
@@ -53,7 +55,6 @@ A DESCRIPTION_HEADER structure at the beginning of the Heterogeneous Memory Attr
 
 ### -field Reserved
 
- 
 Reserved for future use.
 
 ## -remarks

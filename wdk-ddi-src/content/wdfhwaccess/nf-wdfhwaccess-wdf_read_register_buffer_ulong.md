@@ -4,7 +4,6 @@ title: WDF_READ_REGISTER_BUFFER_ULONG function (wdfhwaccess.h)
 description: The WDF_READ_REGISTER_BUFFER_ULONG function reads a number of ULONG values from the specified register address into a buffer.
 old-location: wdf\wdf_read_register_buffer_ulong.htm
 tech.root: wdf
-ms.assetid: 249D8FCF-6B63-467B-AEAA-BCF4900CFA48
 ms.date: 02/26/2018
 keywords: ["WDF_READ_REGISTER_BUFFER_ULONG function"]
 ms.keywords: WDF_READ_REGISTER_BUFFER_ULONG, WDF_READ_REGISTER_BUFFER_ULONG function, wdf.wdf_read_register_buffer_ulong, wdfhwaccess/WDF_READ_REGISTER_BUFFER_ULONG
@@ -52,23 +51,23 @@ The <b>WDF_READ_REGISTER_BUFFER_ULONG</b> function reads a number of ULONG value
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the register, which must be a mapped range in memory space.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 A pointer to a buffer into which an array of ULONG values is read.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of ULONG values to be read into the buffer.
 

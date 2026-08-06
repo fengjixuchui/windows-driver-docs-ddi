@@ -4,7 +4,6 @@ title: VideoPortZeroDeviceMemory function (video.h)
 description: The VideoPortZeroDeviceMemory function fills an adapter frame buffer or other device memory with zeros.
 old-location: display\videoportzerodevicememory.htm
 tech.root: display
-ms.assetid: 1f59ae13-022b-426c-9eef-9a8e5f5a85f2
 ms.date: 05/10/2018
 keywords: ["VideoPortZeroDeviceMemory function"]
 ms.keywords: VideoPortZeroDeviceMemory, VideoPortZeroDeviceMemory function [Display Devices], VideoPort_Functions_42829075-dd6d-49fd-a4d6-3ee19152335d.xml, display.videoportzerodevicememory, video/VideoPortZeroDeviceMemory
@@ -50,9 +49,9 @@ The <b>VideoPortZeroDeviceMemory</b> function fills an adapter <a href="/windows
 
 ## -parameters
 
-### -param Destination 
+### -param Destination [out]
 
-[out]
+
 Specifies the base address of the adapter memory area. This value must be a mapped logical address returned by <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportgetdevicebase">VideoPortGetDeviceBase</a>.
 
 ### -param Length

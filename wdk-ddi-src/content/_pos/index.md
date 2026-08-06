@@ -1,13 +1,10 @@
 ---
+description: "Learn more about: Point of Service (POS)"
 UID: TP:pos
 title: Point of Service (POS)
-ms.assetid: 01ba4b30-aac9-383a-b7a2-32c112dfd250
-ms.date: 07/11/2018
+ms.date: 03/02/2023
 keywords: ["Point of Service (POS)"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 ---
 
 # Point of Service (POS)
@@ -18,9 +15,9 @@ Overview of the Point of Service (POS) device driver technology.
 
 To develop Point of Service (POS) device drivers, you need these headers:
 
-* [pointofservicecommontypes.h](../pointofservicecommontypes/index.md)
-* [pointofservicedriverinterface.h](../pointofservicedriverinterface/index.md)
-* [poscx.h](../poscx/index.md)
-* [poscxfuncenum.h](../poscxfuncenum/index.md)
+- [pointofservicecommontypes.h](../pointofservicecommontypes/index.md)
+- [pointofservicedriverinterface.h](../pointofservicedriverinterface/index.md)
+- [poscx.h](../poscx/index.md)
+- [poscxfuncenum.h](../poscxfuncenum/index.md)
 
 For the programming guide, see [Point of Service (POS)](/windows-hardware/drivers/pos).

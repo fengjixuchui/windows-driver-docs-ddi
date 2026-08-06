@@ -4,7 +4,6 @@ title: _D3DDDIARG_VOLUMEBLT (d3dumddi.h)
 description: The D3DDDIARG_VOLUMEBLT structure describes parameters for a volume bit-block transfer (bitblt) operation.
 old-location: display\d3dddiarg_volumeblt.htm
 tech.root: display
-ms.assetid: 564afe6c-7a2e-4657-a481-24015c0be637
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_VOLUMEBLT structure"]
 ms.keywords: D3DDDIARG_VOLUMEBLT, D3DDDIARG_VOLUMEBLT structure [Display Devices], UMDisplayDriver_param_Structs_21157114-7596-4031-8531-019e7acc3dbe.xml, _D3DDDIARG_VOLUMEBLT, d3dumddi/D3DDDIARG_VOLUMEBLT, display.d3dddiarg_volumeblt
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_VOLUMEBLT
  - D3DDDIARG_VOLUMEBLT
 ---
 
@@ -52,30 +52,31 @@ The D3DDDIARG_VOLUMEBLT structure describes parameters for a volume bit-block tr
 
 ## -struct-fields
 
-### -field hDstResource
+### -field hDstResource [in]
 
-[in] A handle to the destination surface.
+A handle to the destination surface.
 
-### -field hSrcResource
+### -field hSrcResource [in]
 
-[in] A handle to the source surface.
+A handle to the source surface.
 
-### -field DstX
+### -field DstX [in]
 
-[in] The width, in screen coordinates, of the destination volume in which the source volume is copied.
+The width, in screen coordinates, of the destination volume in which the source volume is copied.
 
-### -field DstY
+### -field DstY [in]
 
-[in] The height, in screen coordinates, of the destination volume in which the source volume is copied.
+The height, in screen coordinates, of the destination volume in which the source volume is copied.
 
-### -field DstZ
+### -field DstZ [in]
 
-[in] The depth, in screen coordinates, of the destination volume in which the source volume is copied.
+The depth, in screen coordinates, of the destination volume in which the source volume is copied.
 
-### -field SrcBox
+### -field SrcBox [in]
 
-[in] A D3DDDIBOX structure that describes the source volume texture to copy to the destination.
+A D3DDDIBOX structure that describes the source volume texture to copy to the destination.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_volblt">VolBlt</a>
+

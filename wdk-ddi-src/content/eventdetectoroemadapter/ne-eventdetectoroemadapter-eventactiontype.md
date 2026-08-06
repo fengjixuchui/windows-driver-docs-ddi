@@ -3,7 +3,6 @@ UID: NE:eventdetectoroemadapter.__MIDL___MIDL_itf_eventdetectoroemadapter_0000_0
 title: EVENTACTIONTYPE
 description: Actions to take on a detection.
 tech.root: audio
-ms.assetid: d2da5ce0-d894-42d8-a538-bab7e9196384
 ms.date: 02/26/2019
 keywords: ["EVENTACTIONTYPE enumeration"]
 ms.keywords: EVENTACTIONTYPE, EVENTACTIONTYPE,
@@ -31,9 +30,8 @@ api_type:
 api_location:
  - eventdetectoroemadapter.h
 api_name:
+ - __MIDL___MIDL_itf_eventdetectoroemadapter_0000_0000_0005
  - EVENTACTIONTYPE
-product:
- - Windows
 ---
 
 # EVENTACTIONTYPE enumeration
@@ -66,3 +64,4 @@ This enumeration is the part of the Event Detector OEM interface to be used for 
 - [eventdetectoroemadapter](../eventdetectoroemadapter/index.md)
 
 - [Audio](../_audio/index.md)
+

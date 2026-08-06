@@ -1,10 +1,9 @@
 ---
 UID: NE:rilapitypes.RILIMSIPARAMMASK
 title: RILIMSIPARAMMASK (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILIMSIPARAMMASK enumeration for internal use only. Don't use this enumeration in your code."
 old-location: netvista\rilimsiparammask_2.htm
 tech.root: netvista
-ms.assetid: 69516b0b-d563-4a88-b083-a1a5a4e0ef16
 ms.date: 02/26/2018
 keywords: ["RILIMSIPARAMMASK enumeration"]
 ms.keywords: RILIMSIPARAMMASK, RILIMSIPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_IMSI_ALL, RIL_PARAM_IMSI_MCC, RIL_PARAM_IMSI_MNC, netvista.rilimsiparammask_2, rilapitypes/RILIMSIPARAMMASK, rilapitypes/RIL_PARAM_IMSI_ALL, rilapitypes/RIL_PARAM_IMSI_MCC, rilapitypes/RIL_PARAM_IMSI_MNC
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: RILIMSIPARAMMASK
-req.product: Windows 10 or later.
 f1_keywords:
  - RILIMSIPARAMMASK
  - rilapitypes/RILIMSIPARAMMASK

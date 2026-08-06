@@ -1,10 +1,9 @@
 ---
 UID: NL:engextcpp.ExtRemoteData
 title: ExtRemoteData (engextcpp.h)
-description: The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods.
+description: The ExtRemoteData convenience method is provided by the ExtRemoteData class, which provides a wrapper for a small section of a target's memory.
 old-location: debugger\extremotedata.htm
 tech.root: debugger
-ms.assetid: d645867c-3264-45ae-b0bd-4d21e388fb97
 ms.date: 05/03/2018
 keywords: ["ExtRemoteData class"]
 ms.keywords: EngExtCpp_Ref_e84c03ce-1156-481b-a429-f0a918797565.xml, ExtRemoteData, ExtRemoteData class [Windows Debugging], ExtRemoteData class [Windows Debugging],described, debugger.extremotedata, engextcpp/ExtRemoteData
@@ -136,7 +135,7 @@ The <b>ExtRemoteData</b> class includes the following constructors and methods:
 </dd>
 <dd>
 
-<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis2-getulong">GetUlong</a>
+<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis-getulong">GetUlong</a>
 
 
 </dd>
@@ -148,7 +147,7 @@ The <b>ExtRemoteData</b> class includes the following constructors and methods:
 </dd>
 <dd>
 
-<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis2-getulong64">GetUlong64</a>
+<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis-getulong64">GetUlong64</a>
 
 
 </dd>
@@ -196,11 +195,11 @@ The <b>ExtRemoteData</b> class includes the following constructors and methods:
 </dd>
 <dd>
 
-<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis2-getstring">GetString</a>
+<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis-getstring">GetString</a>
 
 
 </dd>
-</dl><pre class="syntax" xml:space="preserve"><code>class ExtRemoteData
+</dl><pre class="syntax"><code>class ExtRemoteData
 {
 public:
     PCSTR  m_Name;

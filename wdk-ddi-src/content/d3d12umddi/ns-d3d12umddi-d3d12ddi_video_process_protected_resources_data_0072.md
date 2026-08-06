@@ -2,9 +2,7 @@
 UID: NS:d3d12umddi.D3D12DDI_VIDEO_PROCESS_PROTECTED_RESOURCES_DATA_0072
 title: D3D12DDI_VIDEO_PROCESS_PROTECTED_RESOURCES_DATA_0072
 ms.date: 03/24/2020
-ms.topic: language-reference
 targetos: Windows
-ms.assetid: 0dd5adab-ed9d-4581-941b-fae7619df330
 tech.root: display
 description: Data structure used to check for video process protected resource support capabilities on a given node index.
 req.construct-type: structure
@@ -43,13 +41,13 @@ Data structure used to check for video process protected resource support capabi
 
 ## -struct-fields
 
-### -field NodeIndex
+### -field NodeIndex [in]
 
-[in] In multi-adapter operation, this indicates which physical adapter of the device this operation applies to.
+In multi-adapter operation, this indicates which physical adapter of the device this operation applies to.
 
-### -field SupportFlags
+### -field SupportFlags [out]
 
-[out] A [**D3D12DDI_VIDEO_PROTECTED_RESOURCE_SUPPORT_FLAGS_0072**](ne-d3d12umddi-d3d12ddi_video_protected_resource_support_flags_0072.md) value in which to return the video process protected resource support level.
+A [**D3D12DDI_VIDEO_PROTECTED_RESOURCE_SUPPORT_FLAGS_0072**](ne-d3d12umddi-d3d12ddi_video_protected_resource_support_flags_0072.md) value in which to return the video process protected resource support level.
 
 ## -remarks
 

@@ -4,7 +4,6 @@ title: FltPerformAsynchronousIo function (fltkernel.h)
 description: A minifilter driver calls FltPerformAsynchronousIo to initiate an asynchronous I/O operation.
 old-location: ifsk\fltperformasynchronousio.htm
 tech.root: ifsk
-ms.assetid: c76529fe-c808-4239-9bde-68dc68d987ec
 ms.date: 11/06/2019
 keywords: ["FltPerformAsynchronousIo function"]
 ms.keywords: FltApiRef_p_to_z_ed6cd087-6139-4280-aaf3-fe6f0d5b056a.xml, FltPerformAsynchronousIo, FltPerformAsynchronousIo function [Installable File System Drivers], fltkernel/FltPerformAsynchronousIo, ifsk.fltperformasynchronousio
@@ -50,19 +49,19 @@ A minifilter driver calls **FltPerformAsynchronousIo** to initiate an asynchrono
 
 ## -parameters
 
-### -param CallbackData 
+### -param CallbackData [in, out]
 
-[in, out]
+
 Pointer to a callback data ([FLT_CALLBACK_DATA](./ns-fltkernel-_flt_callback_data.md)) structure allocated by a previous call to [FltAllocateCallbackData](./nf-fltkernel-fltallocatecallbackdata.md). This parameter is required and cannot be **NULL**. The caller is responsible for freeing this structure when it is no longer needed by calling [FltFreeCallbackData](./nf-fltkernel-fltfreecallbackdata.md).
 
-### -param CallbackRoutine 
+### -param CallbackRoutine [in]
 
-[in]
+
 Pointer to a [PFLT_COMPLETED_ASYNC_IO_CALLBACK](./nc-fltkernel-pflt_completed_async_io_callback.md)-typed callback routine to be called when the I/O operation is completed. Note: The Filter Manager calls this routine after it calls the postoperation callback ([PFLT_POST_OPERATION_CALLBACK](./nc-fltkernel-pflt_post_operation_callback.md)) routines of any minifilter drivers whose instances are attached below the initiating instance (specified in the *Instance* parameter to [FltAllocateCallbackData](./nf-fltkernel-fltallocatecallbackdata.md)). This parameter is required and cannot be **NULL**. The Filter Manager always calls this routine, even when **FltPerformAsynchronousIo** fails.
 
-### -param CallbackContext 
+### -param CallbackContext [in]
 
-[in]
+
 Context pointer to be passed to the *CallbackRoutine* This parameter is optional and can be **NULL**.
 
 ## -returns

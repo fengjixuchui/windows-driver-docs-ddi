@@ -4,7 +4,6 @@ title: KsDeviceSetBusData function (ks.h)
 description: The KsDeviceSetBusData function writes data to the bus on which the specified AVStream device resides.
 old-location: stream\ksdevicesetbusdata.htm
 tech.root: stream
-ms.assetid: b319f2a4-dbbe-4324-8f8d-a42bb40d7939
 ms.date: 04/23/2018
 keywords: ["KsDeviceSetBusData function"]
 ms.keywords: KsDeviceSetBusData, KsDeviceSetBusData function [Streaming Media Devices], avfunc_5b7ad4e8-d651-4b80-99db-260fba83ce15.xml, ks/KsDeviceSetBusData, stream.ksdevicesetbusdata
@@ -51,29 +50,29 @@ The<b> KsDeviceSetBusData </b>function writes data to the bus on which the speci
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice">KSDEVICE</a> structure. This routine attempts to write data to the bus on which this device resides.
 
-### -param DataType 
+### -param DataType [in]
 
-[in]
+
 This parameter indicates the type of bus data to be written. Zero corresponds to configuration space. For further information, see the discussion of <b>WhichSpace</b> in the reference page for <a href="/windows-hardware/drivers/kernel/irp-mn-read-config">IRP_MN_READ_CONFIG</a>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to a buffer that contains the data to write to the bus. Number of bytes in the buffer must be equal or greater than <i>Length</i>.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 This parameter contains the byte offset into the space specified by <i>DataType</i> where data is written.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 This parameter specifies the number of bytes of data to write to the bus from <i>Buffer.</i>
 
 ## -returns

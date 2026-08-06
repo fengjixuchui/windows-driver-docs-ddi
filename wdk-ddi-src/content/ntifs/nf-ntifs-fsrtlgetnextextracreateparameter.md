@@ -4,7 +4,6 @@ title: FsRtlGetNextExtraCreateParameter function (ntifs.h)
 description: The FsRtlGetNextExtraCreateParameter routine returns a pointer to the next (or first) extra create parameter (ECP) context structure in a given ECP list.
 old-location: ifsk\fsrtlgetnextextracreateparameter.htm
 tech.root: ifsk
-ms.assetid: b9dd2890-4b2d-4fe1-88bb-30d94ff36c44
 ms.date: 04/16/2018
 keywords: ["FsRtlGetNextExtraCreateParameter function"]
 ms.keywords: FsRtlGetNextExtraCreateParameter, FsRtlGetNextExtraCreateParameter routine [Installable File System Drivers], fsrtlref_096516d0-6888-4dfa-98b3-b7b67794bf08.xml, ifsk.fsrtlgetnextextracreateparameter, ntifs/FsRtlGetNextExtraCreateParameter
@@ -50,29 +49,29 @@ The <b>FsRtlGetNextExtraCreateParameter</b> routine returns a pointer to the nex
 
 ## -parameters
 
-### -param EcpList 
+### -param EcpList [in]
 
-[in]
+
 Pointer to the ECP list to examine.
 
-### -param CurrentEcpContext 
+### -param CurrentEcpContext [in, optional]
 
-[in, optional]
+
 Optional pointer to an ECP context structure in the given ECP list.  If present, <b>FsRtlGetNextExtraCreateParameter</b> returns a pointer to the ECP after the <i>CurrentEcpContext</i> ECP context structure.  If <i>CurrentEcpContext</i> is <b>NULL</b>, <b>FsRtlGetNextExtraCreateParameter</b> returns the first ECP context structure in the list.
 
-### -param NextEcpType 
+### -param NextEcpType [out, optional]
 
-[out, optional]
+
 Optional parameter that receives a pointer to the GUID of the returned ECP context structure.
 
-### -param NextEcpContext 
+### -param NextEcpContext [out]
 
-[out]
+
 Optional parameter that receives a pointer to the returned ECP context structure.
 
-### -param NextEcpContextSize 
+### -param NextEcpContextSize [out, optional]
 
-[out, optional]
+
 Optional parameter that receives the size, in bytes, of the returned ECP context structure.
 
 ## -returns

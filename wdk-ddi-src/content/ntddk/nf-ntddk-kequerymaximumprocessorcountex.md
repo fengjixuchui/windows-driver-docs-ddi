@@ -4,7 +4,6 @@ title: KeQueryMaximumProcessorCountEx function (ntddk.h)
 description: The KeQueryMaximumProcessorCountEx routine returns the maximum number of logical processors in a specified group in a multiprocessor system.
 old-location: kernel\kequerymaximumprocessorcountex.htm
 tech.root: kernel
-ms.assetid: 6ccc0f8c-d7b7-4043-8580-d35345d884cc
 ms.date: 04/30/2018
 keywords: ["KeQueryMaximumProcessorCountEx function"]
 ms.keywords: KeQueryMaximumProcessorCountEx, KeQueryMaximumProcessorCountEx routine [Kernel-Mode Driver Architecture], k105_594dbccc-80ed-4d33-a8ed-a6df6bfdfc09.xml, kernel.kequerymaximumprocessorcountex, wdm/KeQueryMaximumProcessorCountEx
@@ -50,9 +49,9 @@ The <b>KeQueryMaximumProcessorCountEx</b> routine returns the maximum number of 
 
 ## -parameters
 
-### -param GroupNumber 
+### -param GroupNumber [in]
 
-[in]
+
 Specifies a group number. If a multiprocessor system contains <i>n</i> groups, the groups are numbered from 0 to <i>n</i>-1. To obtain the maximum number of processors in the system, set this parameter to ALL_PROCESSOR_GROUPS, which is defined in the Winnt.h and Ntdef.h header files.
 
 ## -returns

@@ -1,10 +1,9 @@
 ---
 UID: NF:ntifs.IoCheckDesiredAccess
 title: IoCheckDesiredAccess function (ntifs.h)
-description: Reserved for system use.
+description: "Microsoft reserves the IoCheckDesiredAccess function for internal use only. Don't use this function in your code."
 old-location: ifsk\iocheckdesiredaccess.htm
 tech.root: ifsk
-ms.assetid: ab90ab40-7b45-4658-b11b-cf46f91f8699
 ms.date: 05/30/2019
 keywords: ["IoCheckDesiredAccess function"]
 ms.keywords: IoCheckDesiredAccess, IoCheckDesiredAccess function [Installable File System Drivers], ifsk.iocheckdesiredaccess, ioref_f8879d66-0bad-4c92-b2a3-853b7eb65ac6.xml, ntifs/IoCheckDesiredAccess

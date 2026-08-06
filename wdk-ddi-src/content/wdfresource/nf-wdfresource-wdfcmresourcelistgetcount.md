@@ -4,7 +4,6 @@ title: WdfCmResourceListGetCount function (wdfresource.h)
 description: The WdfCmResourceListGetCount method returns the number of resource descriptors that are contained in a specified resource list.
 old-location: wdf\wdfcmresourcelistgetcount.htm
 tech.root: wdf
-ms.assetid: f1a38276-4964-422d-9b3c-8450b1028f27
 ms.date: 02/26/2018
 keywords: ["WdfCmResourceListGetCount function"]
 ms.keywords: DFResourceObjectRef_8161cc12-7f39-44f4-a4a1-28329911ac96.xml, WdfCmResourceListGetCount, WdfCmResourceListGetCount method, kmdf.wdfcmresourcelistgetcount, wdf.wdfcmresourcelistgetcount, wdfresource/WdfCmResourceListGetCount
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,9 +54,9 @@ The <b>WdfCmResourceListGetCount</b> method returns the number of resource descr
 
 ## -parameters
 
-### -param List 
+### -param List [in]
 
-[in]
+
 A handle to a framework resource-list object that represents a list of hardware resources for a device.
 
 ## -returns

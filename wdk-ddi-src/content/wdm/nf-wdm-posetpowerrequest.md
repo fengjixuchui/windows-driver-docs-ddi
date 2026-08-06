@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.PoSetPowerRequest
 title: PoSetPowerRequest function (wdm.h)
-description: The PoSetPowerRequest routine increments the count for the specified power request type.
+description: The PoSetPowerRequest routine in wdm.h increments the count for the specified power request type. The power manager counts requests for each power request type.
 old-location: kernel\posetpowerrequest.htm
 tech.root: kernel
-ms.assetid: 5670a4dd-3804-4532-8765-2fdffe1c4a0b
 ms.date: 04/30/2018
 keywords: ["PoSetPowerRequest function"]
 ms.keywords: PoSetPowerRequest, PoSetPowerRequest routine [Kernel-Mode Driver Architecture], kernel.posetpowerrequest, portn_8f3abb03-a324-4841-b630-b62344d656ce.xml, wdm/PoSetPowerRequest
@@ -50,14 +49,14 @@ The <b>PoSetPowerRequest</b> routine increments the count for the specified powe
 
 ## -parameters
 
-### -param PowerRequest 
+### -param PowerRequest [in, out]
 
-[in, out]
+
 A pointer to a power request object that was created by the <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pocreatepowerrequest">PoCreatePowerRequest</a> routine.
 
-### -param Type 
+### -param Type [in]
 
-[in]
+
 The type of power request. Set this parameter to the following <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_power_request_type">POWER_REQUEST_TYPE</a> enumeration value:
 
 <ul>

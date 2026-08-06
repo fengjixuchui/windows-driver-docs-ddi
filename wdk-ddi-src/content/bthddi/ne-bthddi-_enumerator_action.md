@@ -1,10 +1,9 @@
 ---
 UID: NE:bthddi._ENUMERATOR_ACTION
 title: _ENUMERATOR_ACTION (bthddi.h)
-description: Reserved for internal use.
+description: "Microsoft reserves the ENUMERATOR_ACTION enumeration for internal use only. Don't use this enumeration in your code."
 old-location: bltooth\enumerator_action.htm
 tech.root: bltooth
-ms.assetid: d5acaec6-7b3b-4dd9-8901-f96b4e49149f
 ms.date: 04/27/2018
 keywords: ["ENUMERATOR_ACTION enumeration"]
 ms.keywords: "*PENUMERATOR_ACTION, ENUMERATOR_ACTION, ENUMERATOR_ACTION Enumeration, ENUMERATOR_ACTION enumeration [Bluetooth Devices], ENUMERATOR_ACTION enumeration pointer [Bluetooth Devices], ENUMERATOR_ACTION_CREATE, ENUMERATOR_ACTION_DESTROY, ENUMERATOR_ACTION_MAX, ENUMERATOR_ACTION_REMOVE, PENUMERATOR_ACTION, PENUMERATOR_ACTION enumeration pointer [Bluetooth Devices], _ENUMERATOR_ACTION, bltooth.enumerator_action, bth_enums_5ffc09cb-5aae-408c-ba92-b1872890541a.xml, bthddi/ENUMERATOR_ACTION, bthddi/ENUMERATOR_ACTION_CREATE, bthddi/ENUMERATOR_ACTION_DESTROY, bthddi/ENUMERATOR_ACTION_MAX, bthddi/ENUMERATOR_ACTION_REMOVE, bthddi/PENUMERATOR_ACTION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - bthddi.h
 api_name:
+ - _ENUMERATOR_ACTION
+ - PENUMERATOR_ACTION
  - ENUMERATOR_ACTION
 ---
 
@@ -89,3 +90,4 @@ Reserved.
 
 
 <a href="/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_internal_bth_submit_brb">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
+

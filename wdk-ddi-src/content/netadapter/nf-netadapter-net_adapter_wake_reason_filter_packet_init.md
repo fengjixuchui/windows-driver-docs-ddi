@@ -2,9 +2,9 @@
 UID: NF:netadapter.NET_ADAPTER_WAKE_REASON_FILTER_PACKET_INIT
 title: NET_ADAPTER_WAKE_REASON_FILTER_PACKET_INIT
 ms.date: 08/20/2020
-ms.topic: language-reference
 targetos: Windows
 description: The NET_ADAPTER_WAKE_REASON_FILTER_PACKET_INIT function initializes a NET_ADAPTER_WAKE_REASON_PACKET when the wake source is a magic packet.
+tech.root: netvista
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 
@@ -18,11 +18,11 @@ req.lib:
 req.max-support: 
 req.namespace: 
 req.redist: 
-req.target-min-winverclnt: Windows 10, version 20H2
-req.target-min-winversvr: 
+req.target-min-winverclnt:
+req.target-min-winversvr: Windows Server 2022
 req.target-type: Universal
 req.type-library: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.unicode-ansi: 
 topic_type:
  - apiref
@@ -41,24 +41,15 @@ dev_langs:
 
 ## -description
 
-> [!WARNING]
-> Some information in this topic relates to pre-released product, which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
->
-> NetAdapterCx is preview only in Windows 10, version 2004.
->
-> Currently, NetAdapterCx client drivers cannot be certified.
 
 The client driver calls the  **NET_ADAPTER_WAKE_REASON_FILTER_PACKET_INIT** function to initialize a [**NET_ADAPTER_WAKE_REASON_PACKET**](../netadapter/ns-netadapter-_net_adapter_wake_reason_packet.md) structure when reporting that a packet matching a driver supported filter caused a wake-up event.
 
 ## -parameters
 
-### -param Reason
+### -param Reason [out]
 
-[out] A pointer to a driver allocated [**NET_ADAPTER_WAKE_REASON_PACKET**](../netadapter/ns-netadapter-_net_adapter_wake_reason_packet.md) structure.
+A pointer to a driver allocated [**NET_ADAPTER_WAKE_REASON_PACKET**](../netadapter/ns-netadapter-_net_adapter_wake_reason_packet.md) structure.
 
-## -returns
-
-This function does not return a value.
 
 ## -remarks
 

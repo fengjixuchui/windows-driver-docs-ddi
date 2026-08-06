@@ -4,7 +4,6 @@ title: _AddiSNSServer_OUT (iscsiop.h)
 description: The AddiSNSServer_OUT structure holds the output data for the user-mode AddISNSServer method.
 old-location: storage\addisnsserver_out.htm
 tech.root: storage
-ms.assetid: f1c02d19-9e96-4fd6-b950-ae02b6f3bba4
 ms.date: 03/29/2018
 keywords: ["AddiSNSServer_OUT structure"]
 ms.keywords: "*PAddiSNSServer_OUT, AddiSNSServer_OUT, AddiSNSServer_OUT structure [Storage Devices], PAddiSNSServer_OUT, PAddiSNSServer_OUT structure pointer [Storage Devices], _AddiSNSServer_OUT, iscsiop/AddiSNSServer_OUT, iscsiop/PAddiSNSServer_OUT, storage.addisnsserver_out, structs-iSCSI_d1d3f4d6-6c48-4f6d-bc5e-9449a4b87d2b.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsiop.h
 api_name:
+ - _AddiSNSServer_OUT
+ - PAddiSNSServer_OUT
  - AddiSNSServer_OUT
 ---
 
@@ -73,3 +74,4 @@ It is optional that you implement this method.
 
 
 <a href="/windows-hardware/drivers/storage/msiscsi-operations-wmi-class">MSiSCSI_Operations WMI Class</a>
+

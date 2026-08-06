@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_DRAWINDEXEDINSTANCED
 title: PFND3D10DDI_DRAWINDEXEDINSTANCED (d3d10umddi.h)
 description: The DrawIndexedInstanced function draws particular instances of indexed primitives.
 old-location: display\drawindexedinstanced.htm
-ms.assetid: 3dc64562-9dc0-4d43-835d-6fdd509435f8
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_DRAWINDEXEDINSTANCED callback function"]
 ms.keywords: DrawIndexedInstanced, DrawIndexedInstanced callback function [Display Devices], PFND3D10DDI_DRAWINDEXEDINSTANCED, PFND3D10DDI_DRAWINDEXEDINSTANCED callback, UserModeDisplayDriverDx10_Functions_7452fd0b-4fff-4321-b0ce-464ac0ad2f6d.xml, d3d10umddi/DrawIndexedInstanced, display.drawindexedinstanced
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - DrawIndexedInstanced
+ - PFND3D10DDI_DRAWINDEXEDINSTANCED
 ---
 
 # PFND3D10DDI_DRAWINDEXEDINSTANCED callback function
@@ -50,37 +49,37 @@ The <b>DrawIndexedInstanced</b> function draws particular instances of indexed p
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *IndexCountPerInstance* [in]
 
 The number of indexes per instance of the index buffer that indexes are read from to draw the primitives.
 
-### -param Arg3
+### -param unnamedParam3
 
 *InstanceCount* [in]
 
 The number of instances of the index buffer that indexes are read from to draw the primitives.
 
-### -param Arg4
+### -param unnamedParam4
 
 *StartIndexLocation* [in]
 
 The first index in the index buffer that indexes are read from to draw the primitives.
 
-### -param Arg5
+### -param unnamedParam5
 
 *BaseVertexLocation* [in]
 
 The number that should be added to each index that is referenced by the various primitives to determine the actual index of the vertex elements in each vertex stream.
 
-### -param Arg6
+### -param unnamedParam6
 
 *StartInstanceLocation* [in]
 
@@ -107,3 +106,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

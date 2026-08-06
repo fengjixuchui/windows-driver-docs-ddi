@@ -4,7 +4,6 @@ title: IoUnregisterFsRegistrationChange function (ntifs.h)
 description: The IoUnregisterFsRegistrationChange routine unregisters file system filter driver's file system registration change notification routine.
 old-location: ifsk\iounregisterfsregistrationchange.htm
 tech.root: ifsk
-ms.assetid: 4e10afc0-b9c4-4495-83a1-11f9b82143fc
 ms.date: 04/16/2018
 keywords: ["IoUnregisterFsRegistrationChange function"]
 ms.keywords: IoUnregisterFsRegistrationChange, IoUnregisterFsRegistrationChange routine [Installable File System Drivers], ifsk.iounregisterfsregistrationchange, ioref_18a53f5a-49f9-40ba-bf85-d2fea7d6fbfb.xml, ntifs/IoUnregisterFsRegistrationChange
@@ -50,14 +49,14 @@ The <b>IoUnregisterFsRegistrationChange</b> routine unregisters file system filt
 
 ## -parameters
 
-### -param DriverObject 
+### -param DriverObject [in]
 
-[in]
+
 Pointer to the driver object for the filter driver.
 
-### -param DriverNotificationRoutine 
+### -param DriverNotificationRoutine [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ntifs/nc-ntifs-driver_fs_notification">PDRIVER_FS_NOTIFICATION</a> routine, which the file system calls when it registers or unregisters itself.
 
 ## -remarks

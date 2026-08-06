@@ -4,7 +4,6 @@ title: WDF_IO_QUEUE_READY function (wdfio.h)
 description: The WDF_IO_QUEUE_READY function returns TRUE if an I/O queue's state indicates that the queue is drained.
 old-location: wdf\wdf_io_queue_ready.htm
 tech.root: wdf
-ms.assetid: 622e09eb-37ae-403e-9d18-acf2e7761b43
 ms.date: 02/26/2018
 keywords: ["WDF_IO_QUEUE_READY function"]
 ms.keywords: DFQueueObjectRef_d5c37eea-044b-41b6-9c0a-f910fef04d00.xml, WDF_IO_QUEUE_READY, WDF_IO_QUEUE_READY function, kmdf.wdf_io_queue_ready, wdf.wdf_io_queue_ready, wdfio/WDF_IO_QUEUE_READY
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: None
 req.dll: 
-req.irql: Any IRQL.
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,9 +52,9 @@ The <b>WDF_IO_QUEUE_READY</b> function returns <b>TRUE</b> if an I/O queue's sta
 
 ## -parameters
 
-### -param State 
+### -param State [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfio/ne-wdfio-_wdf_io_queue_state">WDF_IO_QUEUE_STATE</a>-typed value that <a href="/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuegetstate">WdfIoQueueGetState</a> returns.
 
 ## -returns

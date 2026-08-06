@@ -4,7 +4,6 @@ title: NDK_FN_GET_LISTENER_LOCAL_ADDRESS (ndkpi.h)
 description: The NdkGetListenerLocalAddress (NDK_FN_GET_LISTENER_LOCAL_ADDRESS) function returns the local address for an NDK listener.
 old-location: netvista\ndk_fn_get_listener_local_address.htm
 tech.root: netvista
-ms.assetid: 7BF5322F-5283-445D-AC3F-19382CB28E2B
 ms.date: 05/02/2018
 keywords: ["NDK_FN_GET_LISTENER_LOCAL_ADDRESS callback function"]
 ms.keywords: NDK_FN_GET_LISTENER_LOCAL_ADDRESS, NDK_FN_GET_LISTENER_LOCAL_ADDRESS callback, NdkGetListenerLocalAddress, NdkGetListenerLocalAddress callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkGetListenerLocalAddress, netvista.ndk_fn_get_listener_local_address
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkGetListenerLocalAddress
+ - NDK_FN_GET_LISTENER_LOCAL_ADDRESS
 ---
 
 # NDK_FN_GET_LISTENER_LOCAL_ADDRESS callback function
@@ -50,9 +49,9 @@ The <i>NdkGetListenerLocalAddress</i> (<i>NDK_FN_GET_LISTENER_LOCAL_ADDRESS</i>)
 
 ## -parameters
 
-### -param pNdkListener 
+### -param pNdkListener [in]
 
-[in]
+
 A pointer to an NDK listener object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_listener">NDK_LISTENER</a>).
 
 ### -param pAddress
@@ -119,3 +118,4 @@ An error occurred.
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_listener">NDK_LISTENER</a>
+

@@ -4,7 +4,6 @@ title: IDebugClient5 (dbgeng.h)
 description: IDebugClient5 interface
 old-location: debugger\idebugclient5.htm
 tech.root: debugger
-ms.assetid: 4230fbc2-524a-44b1-a090-011e334629a7
 ms.date: 05/03/2018
 keywords: ["IDebugClient5 interface"]
 ms.keywords: IDebugClient5, IDebugClient5 interface [Windows Debugging], IDebugClient5 interface [Windows Debugging],described, dbgeng/IDebugClient5, debugger.idebugclient5
@@ -39,15 +38,6 @@ api_location:
  - dbgeng.h
 api_name:
  - IDebugClient5
- - IDebugClient5.GetOutputLinePrefixWide
- - IDebugClient5.SetOutputLinePrefixWide
- - IDebugClient5.PushOutputLinePrefix
- - IDebugClient5.PushOutputLinePrefixWide
- - IDebugClient5.PopOutputLinePrefix
- - IDebugClient5.GetQuitLockString
- - IDebugClient5.SetQuitLockString
- - IDebugClient5.GetQuitLockStringWide
- - IDebugClient5.SetQuitLockStringWide
 ---
 
 # IDebugClient5 interface
@@ -57,11 +47,10 @@ api_name:
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugClient5</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient4">IDebugClient4</a>. <b>IDebugClient5</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IDebugClient5</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient4">IDebugClient4</a>. <b>IDebugClient5</b> also has these types of members:
+
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient4">IDebugClient4</a>
+

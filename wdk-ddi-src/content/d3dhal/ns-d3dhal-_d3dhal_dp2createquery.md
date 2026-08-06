@@ -1,10 +1,9 @@
 ---
 UID: NS:d3dhal._D3DHAL_DP2CREATEQUERY
 title: _D3DHAL_DP2CREATEQUERY (d3dhal.h)
-description: DirectX 9.0 and later versions only.
+description: The D3DHAL_DP2CREATEQUERY structure is used by the D3dDrawPrimitives2 callback function to create resources for queries.
 old-location: display\d3dhal_dp2createquery.htm
 tech.root: display
-ms.assetid: 9998743d-57d5-4289-91c5-1c810bf4ca65
 ms.date: 05/10/2018
 keywords: ["D3DHAL_DP2CREATEQUERY structure"]
 ms.keywords: "*LPD3DHAL_DP2CREATEQUERY, D3DHAL_DP2CREATEQUERY, D3DHAL_DP2CREATEQUERY structure [Display Devices], LPD3DHAL_DP2CREATEQUERY, LPD3DHAL_DP2CREATEQUERY structure pointer [Display Devices], _D3DHAL_DP2CREATEQUERY, d3dhal/D3DHAL_DP2CREATEQUERY, d3dhal/LPD3DHAL_DP2CREATEQUERY, d3dstrct_d90487be-ec5e-416b-9ca8-fc431596cb27.xml, display.d3dhal_dp2createquery"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dhal.h
 api_name:
+ - _D3DHAL_DP2CREATEQUERY
  - D3DHAL_DP2CREATEQUERY
 ---
 
@@ -104,3 +104,4 @@ D3DDP2OP_CREATEQUERY
 
 
 <a href="/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb">D3dDrawPrimitives2</a>
+

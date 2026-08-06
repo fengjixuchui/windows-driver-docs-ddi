@@ -4,7 +4,6 @@ title: _NDIS_WWAN_SET_PRESHUTDOWN_STATE (ndiswwan.h)
 description: The NDIS_WWAN_SET_PRESHUTDOWN_STATE structure represents the command to notify the modem to finish all operations and prepare to shut down.
 old-location: netvista\ndis_wwan_set_preshutdown_state.htm
 tech.root: netvista
-ms.assetid: B1DC847C-B596-452D-B96E-3B78C6F995B2
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_SET_PRESHUTDOWN_STATE structure"]
 ms.keywords: "*PNDIS_WWAN_SET_PRESHUTDOWN_STATE, NDIS_WWAN_SET_PRESHUTDOWN_STATE, NDIS_WWAN_SET_PRESHUTDOWN_STATE structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SET_PRESHUTDOWN_STATE, PNDIS_WWAN_SET_PRESHUTDOWN_STATE structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_SET_PRESHUTDOWN_STATE, ndiswwan/NDIS_WWAN_SET_PRESHUTDOWN_STATE, ndiswwan/PNDIS_WWAN_SET_PRESHUTDOWN_STATE, netvista.ndis_wwan_set_preshutdown_state"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_SET_PRESHUTDOWN_STATE
+ - PNDIS_WWAN_SET_PRESHUTDOWN_STATE
  - NDIS_WWAN_SET_PRESHUTDOWN_STATE
 ---
 
@@ -98,8 +99,9 @@ sizeof(NDIS_WWAN_SET_PRESHUTDOWN_STATE)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/network/oid-wwan-preshutdown">OID_WWAN_PRESHUTDOWN</a>
+

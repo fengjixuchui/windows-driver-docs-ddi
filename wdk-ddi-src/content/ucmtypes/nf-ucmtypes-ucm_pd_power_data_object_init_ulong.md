@@ -4,7 +4,6 @@ title: UCM_PD_POWER_DATA_OBJECT_INIT_ULONG function (ucmtypes.h)
 description: Initializes a UCM_PD_POWER_DATA_OBJECT structure by interpreting Power Data Object values and sets each field correctly.
 old-location: buses\ucm_pd_power_data_object_init_ulong.htm
 tech.root: usbref
-ms.assetid: F5520F9F-159E-42D9-A7F4-426CB935D29D
 ms.date: 05/07/2018
 keywords: ["UCM_PD_POWER_DATA_OBJECT_INIT_ULONG function"]
 ms.keywords: UCM_PD_POWER_DATA_OBJECT_INIT_ULONG, UCM_PD_POWER_DATA_OBJECT_INIT_ULONG function [Buses], buses.ucm_pd_power_data_object_init_ulong, ucmtypes/UCM_PD_POWER_DATA_OBJECT_INIT_ULONG
@@ -50,14 +49,14 @@ Initializes a <a href="/windows-hardware/drivers/ddi/ucmtypes/ns-ucmtypes-_ucm_p
 
 ## -parameters
 
-### -param Pdo 
+### -param Pdo [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ucmtypes/ns-ucmtypes-_ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a> structure.
 
-### -param UlongInLittleEndian 
+### -param UlongInLittleEndian [in]
 
-[in]
+
 The ULONG value to set in the <b>Ul</b> member of   <a href="/windows-hardware/drivers/ddi/ucmtypes/ns-ucmtypes-_ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a>.
 
 ## -remarks

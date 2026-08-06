@@ -1,13 +1,10 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_CREATEVIDEOMOTIONVECTORHEAP_0060
 title: PFND3D12DDI_CREATEVIDEOMOTIONVECTORHEAP_0060
-description: Creates a video motion vector heap.
+description: The PFND3D12DDI_CREATEVIDEOMOTIONVECTORHEAP_0060 callback function creates a video motion vector heap.
 tech.root: display
-ms.assetid: f1992ba3-04b1-43dc-842e-274e3f55fdde
 ms.date: 04/04/2019
 keywords: ["PFND3D12DDI_CREATEVIDEOMOTIONVECTORHEAP_0060 callback function"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: d3d12umddi.h
 req.include-header: 
 req.target-type: 
@@ -38,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CREATEVIDEOMOTIONVECTORHEAP_0060
-product:
- - Windows
 dev_langs:
  - c++
 ---

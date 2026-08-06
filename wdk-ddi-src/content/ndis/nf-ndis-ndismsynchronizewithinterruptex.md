@@ -1,10 +1,9 @@
 ---
 UID: NF:ndis.NdisMSynchronizeWithInterruptEx
 title: NdisMSynchronizeWithInterruptEx function (ndis.h)
-description: Miniport drivers call the NdisMSynchronizeWithInterruptEx function to synchronize the execution of a miniport driver-supplied function with the MiniportInterrupt function.
+description: The NdisMSynchronizeWithInterruptEx function synchronizes the execution of a miniport driver-supplied function with the MiniportInterrupt function.
 old-location: netvista\ndismsynchronizewithinterruptex.htm
 tech.root: netvista
-ms.assetid: 5dca9258-a3ae-43f4-a5aa-d591165d72ed
 ms.date: 05/02/2018
 keywords: ["NdisMSynchronizeWithInterruptEx function"]
 ms.keywords: BOOLEAN, NdisMSynchronizeWithInterruptEx, NdisMSynchronizeWithInterruptEx function [Network Drivers Starting with Windows Vista], ndis/NdisMSynchronizeWithInterruptEx, ndis_interrupts_functions_ref_e2b886ed-7425-4f7e-8cb6-4e3946dec8ff.xml, netvista.ndismsynchronizewithinterruptex
@@ -54,16 +53,16 @@ Miniport drivers call the
 
 ## -parameters
 
-### -param NdisInterruptHandle 
+### -param NdisInterruptHandle [in]
 
-[in]
+
 An interrupt handle that the miniport driver obtained in a previous call to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterinterruptex">
      NdisMRegisterInterruptEx</a> function.
 
-### -param MessageId 
+### -param MessageId [in]
 
-[in]
+
 A message-signaled interrupt with which the driver must synchronize. If NDIS did not grant message
      signaled interrupts for the driver, NDIS ignores this parameter. 
      <i>MessageId</i> is an index to the 
@@ -75,16 +74,16 @@ A message-signaled interrupt with which the driver must synchronize. If NDIS did
      <b>MessageInfoTable</b> member when the driver successfully registers for MSI with the 
      <b>NdisMRegisterInterruptEx</b> function.
 
-### -param SynchronizeFunction 
+### -param SynchronizeFunction [in]
 
-[in]
+
 The entry point of the driver's 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_synchronize_interrupt">
      MiniportSynchronizeInterrupt</a> function.
 
-### -param SynchronizeContext 
+### -param SynchronizeContext [in]
 
-[in]
+
 A pointer to a miniport-driver-determined context area that is passed to the 
      <i>MiniportSynchronizeInterrupt</i> function at 
      <i>SynchronizeContext</i> .

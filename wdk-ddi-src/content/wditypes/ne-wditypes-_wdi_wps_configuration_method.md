@@ -4,7 +4,6 @@ title: _WDI_WPS_CONFIGURATION_METHOD (wditypes.h)
 description: The WDI_WPS_CONFIGURATION_METHOD enumeration defines WPS configuration methods.
 old-location: netvista\wdi_wps_configuration_method.htm
 tech.root: netvista
-ms.assetid: 116B19BD-959F-4711-B3FB-9880539B7849
 ms.date: 05/02/2018
 keywords: ["WDI_WPS_CONFIGURATION_METHOD enumeration"]
 ms.keywords: WDI_WPS_CONFIGURATION_METHOD, WDI_WPS_CONFIGURATION_METHOD enumeration [Network Drivers Starting with Windows Vista], WDI_WPS_CONFIGURATION_METHOD_DISPLAY, WDI_WPS_CONFIGURATION_METHOD_KEYPAD, WDI_WPS_CONFIGURATION_METHOD_NFC_INTERFACE, WDI_WPS_CONFIGURATION_METHOD_NFC_TAG, WDI_WPS_CONFIGURATION_METHOD_NULL, WDI_WPS_CONFIGURATION_METHOD_PUSHBUTTON, WDI_WPS_CONFIGURATION_METHOD_WFDS_DEFAULT, _WDI_WPS_CONFIGURATION_METHOD, netvista.wdi_wps_configuration_method, wditypes/WDI_WPS_CONFIGURATION_METHOD, wditypes/WDI_WPS_CONFIGURATION_METHOD_DISPLAY, wditypes/WDI_WPS_CONFIGURATION_METHOD_KEYPAD, wditypes/WDI_WPS_CONFIGURATION_METHOD_NFC_INTERFACE, wditypes/WDI_WPS_CONFIGURATION_METHOD_NFC_TAG, wditypes/WDI_WPS_CONFIGURATION_METHOD_NULL, wditypes/WDI_WPS_CONFIGURATION_METHOD_PUSHBUTTON, wditypes/WDI_WPS_CONFIGURATION_METHOD_WFDS_DEFAULT
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_WPS_CONFIGURATION_METHOD
  - WDI_WPS_CONFIGURATION_METHOD
 ---
 
@@ -47,6 +47,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_WPS_CONFIGURATION_METHOD enumeration defines WPS configuration methods.
 
@@ -81,4 +84,6 @@ Pin keypad.
 WFDS.
 
 ### -field WDI_WPS_CONFIGURATION_METHOD_DUMMY_MAX_VALUE
+
+The maximum value for this type.
 

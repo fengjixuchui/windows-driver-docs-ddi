@@ -2,7 +2,6 @@
 UID: NE:d3d12umddi.D3D12DDI_META_COMMAND_PARAMETER_TYPE
 title: D3D12DDI_META_COMMAND_PARAMETER_TYPE (d3d12umddi.h)
 description: Indicates the meta-command type.
-ms.assetid: 077f51bf-e790-4b5a-9967-0d800b344258
 ms.date: 10/19/2018
 keywords: ["D3D12DDI_META_COMMAND_PARAMETER_TYPE enumeration"]
 ms.keywords: D3D12DDI_META_COMMAND_PARAMETER_TYPE, D3D12DDI_META_COMMAND_PARAMETER_TYPE,
@@ -30,38 +29,35 @@ api_location:
  - d3d12umddi.h
 api_name:
  - D3D12DDI_META_COMMAND_PARAMETER_TYPE
-product:
- - Windows
 dev_langs:
  - c++
 ---
 
 # D3D12DDI_META_COMMAND_PARAMETER_TYPE enumeration
 
-
 ## -description
 
-Indicates the meta-command type.
+A **D3D12DDI_META_COMMAND_PARAMETER_TYPE** value indicates the meta-command type.
 
 ## -enum-fields
 
-### -field D3D12DDI_META_COMMAND_PARAMETER_TYPE_FLOAT
+### -field D3D12DDI_META_COMMAND_PARAMETER_TYPE_FLOAT:0
 
-Float.
+The parameter type is float.
 
-### -field D3D12DDI_META_COMMAND_PARAMETER_TYPE_UINT64
+### -field D3D12DDI_META_COMMAND_PARAMETER_TYPE_UINT64:1
 
-UINT64.
+The parameter type is UINT64.
 
-### -field D3D12DDI_META_COMMAND_PARAMETER_TYPE_GPU_VIRTUAL_ADDRESS
+### -field D3D12DDI_META_COMMAND_PARAMETER_TYPE_GPU_VIRTUAL_ADDRESS:2
 
 GPU virtual address.
 
-### -field D3D12DDI_META_COMMAND_PARAMETER_TYPE_CPU_DESCRIPTOR_HANDLE_HEAP_TYPE_CBV_SRV_UAV
+### -field D3D12DDI_META_COMMAND_PARAMETER_TYPE_CPU_DESCRIPTOR_HANDLE_HEAP_TYPE_CBV_SRV_UAV:3
 
 CPU descriptor handle heap type CBV (constant buffer view), SRV (shader resource view), or UAV (unordered access view).
 
-### -field D3D12DDI_META_COMMAND_PARAMETER_TYPE_GPU_DESCRIPTOR_HANDLE_HEAP_TYPE_CBV_SRV_UAV
+### -field D3D12DDI_META_COMMAND_PARAMETER_TYPE_GPU_DESCRIPTOR_HANDLE_HEAP_TYPE_CBV_SRV_UAV:4
 
 GPU descriptor handle heap type CBV (constant buffer view), SRV (shader resource view), or UAV (unordered access view).
 
@@ -69,3 +65,4 @@ GPU descriptor handle heap type CBV (constant buffer view), SRV (shader resource
 
 ## -see-also
 
+[**D3D12DDIARG_META_COMMAND_PARAMETER_DESC**](ns-d3d12umddi-d3d12ddiarg_meta_command_parameter_desc.md)

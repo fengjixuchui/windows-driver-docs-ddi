@@ -2,8 +2,8 @@
 UID: NF:dbgmodel.IDataModelScriptProvider.GetName
 title: IDataModelScriptProvider::GetName (dbgmodel.h)
 description: The GetName method returns the name of the type of (or language of) scripts which the provider manages as a string allocated via the SysAllocString method.
-ms.assetid: 3dc27a0b-1bdd-4dea-82ee-51d402d7d5c0
 ms.date: 08/20/2018
+tech.root: debugger
 keywords: ["IDataModelScriptProvider::GetName"]
 ms.keywords: IDataModelScriptProvider::GetName, GetName, IDataModelScriptProvider.GetName, IDataModelScriptProvider::GetName, IDataModelScriptProvider.GetName
 req.header: dbgmodel.h
@@ -35,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelScriptProvider.GetName
+ - IDataModelScriptProvider::GetName
 ---
 
 # IDataModelScriptProvider::GetName

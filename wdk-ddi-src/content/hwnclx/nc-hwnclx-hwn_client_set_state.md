@@ -4,7 +4,6 @@ title: HWN_CLIENT_SET_STATE (hwnclx.h)
 description: Implemented by the client driver to set hardware notification component state. It is invoked when a user wants to change the state of a driver.
 old-location: gpiobtn\hwn_client_set_state.htm
 tech.root: gpiobtn
-ms.assetid: 5d2ccc29-4022-467c-9f37-d49badcceba4
 ms.date: 02/15/2018
 keywords: ["HWN_CLIENT_SET_STATE callback"]
 ms.keywords: "*PHWN_CLIENT_SET_STATE, *PHWN_CLIENT_SET_STATE callback function pointer, HWN_CLIENT_SET_STATE, HwnClientSetState, HwnClientSetState callback function, gpiobtn.hwn_client_set_state, hwnclx/HwnClientSetState"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Hwnclx.h
 api_name:
- - PHWN_CLIENT_SET_STATE
+ - HWN_CLIENT_SET_STATE
 ---
 
 # HWN_CLIENT_SET_STATE callback
@@ -50,24 +49,24 @@ Implemented by the client driver to set hardware notification component state. I
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to the client driver's context information. This memory space is available for use by the client driver. It is allocated as part of the framework object context space by <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>. For more information, see <a href="/windows-hardware/drivers/gpiobtn/create-a-hardware-notification-client-driver">HWN_CLIENT_REGISTRATION_PACKET</a> and  <a href="/windows-hardware/drivers/wdf/framework-object-context-space">Framework Object Context Space</a>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Buffer of <i>BufferLength</i> bytes containing a <a href="/windows-hardware/drivers/gpiobtn/create-a-hardware-notification-client-driver">HWN_HEADER</a> structure including one or more <a href="/windows-hardware/drivers/gpiobtn/create-a-hardware-notification-client-driver">HWN_SETTINGS</a> structures that specify the hardware notifications to be set.
 
-### -param BufferLength 
+### -param BufferLength [in]
 
-[in]
+
 The size of <i>Buffer</i> in bytes.
 
-### -param BytesWritten 
+### -param BytesWritten [out]
 
-[out]
+
 Pointer to a variable that indicates the number of bytes written by the function.
 
 ## -returns
@@ -100,4 +99,5 @@ Register your implementation of this callback function by setting the appropriat
 
 
 
-<a href="/windows-hardware/drivers/ddi/index">Hardware notifications reference</a>
+<a href="/windows-hardware/drivers/ddi/_gpio">Hardware notifications reference</a>
+

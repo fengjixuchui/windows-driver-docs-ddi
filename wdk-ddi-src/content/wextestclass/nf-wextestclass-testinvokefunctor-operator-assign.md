@@ -1,10 +1,9 @@
 ---
 UID: NF:wextestclass.TestInvokeFunctor.operator-assign
-title: operator= function (wextestclass.h)
-description: The operator= overloaded assignment operator sets the typed data represented by the ExtRemoteTyped object by copying the information from another object.
+title: "TestInvokeFunctor::operator= function (wextestclass.h)"
+description: "The operator= overloaded assignment operator sets the typed data represented by the ExtRemoteTyped object by copying the information from another object."
 old-location: debugger\extremotetyped_operatorequals_debug_typed_data.htm
-tech.root: debugger
-ms.assetid: 0dd00f33-1ede-43b7-97b7-55942c3f7a27
+tech.root: taef
 ms.date: 02/27/2018
 keywords: ["operator= function"]
 ms.keywords: ExtRemoteTyped class [Windows Debugging], operator= method, debugger.extremotetyped_operatorequals_debug_typed_data, operator=, operator= method [Windows Debugging], operator= method [Windows Debugging], ExtRemoteTyped class
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: TTraceLevel
-req.product: Windows 10 or later.
 f1_keywords:
  - TestInvokeFunctor::operator=
  - wextestclass/TestInvokeFunctor::operator=
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - arrayofelements.hpp
 api_name:
- - ExtRemoteTyped.operator=
+ - TestInvokeFunctor::operator=
 ---
 
 # operator= function
@@ -69,16 +67,11 @@ ExtRemoteTyped & operator=(
 
 ## -remarks
 
-The typed data can also be copied using the <a href="..\engextcpp\nf-engextcpp-extbuffer-copy.md">ExtRemoteTyped::Copy(Debug Typed Data)</a> or <a href="..\engextcpp\nf-engextcpp-extbuffer-copy.md">ExtRemoteTyped::Copy(ExtRemoteTyped)</a> methods.
+The typed data can also be copied using the <a href="..\engextcpp\nf-engextcpp-extbuffer-copy(const_t_ulong).md">ExtRemoteTyped::Copy(Debug Typed Data)</a> or <a href="..\engextcpp\nf-engextcpp-extbuffer-copy(const_t_ulong).md">ExtRemoteTyped::Copy(ExtRemoteTyped)</a> methods.
 
 ## -see-also
 
 <a href="..\engextcpp\nl-engextcpp-extremotetyped.md">ExtRemoteTyped</a>
 
-
-
-<a href="..\wextestclass\nf-wextestclass-fixtureinvokefunctor-operator=.md">ExtRemoteTyped::Operator= (ExtRemoteTyped)</a>
-
-
-
 <a href="..\wdbgexts\ns-wdbgexts-_debug_typed_data.md">DEBUG_TYPED_DATA</a>
+

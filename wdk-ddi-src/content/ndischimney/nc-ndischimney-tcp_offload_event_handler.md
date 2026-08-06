@@ -4,7 +4,6 @@ title: TCP_OFFLOAD_EVENT_HANDLER (ndischimney.h)
 description: NDIS calls a protocol driver's or intermediate driver's ProtocolIndicateOffloadEvent function to post an indication that was initiated by an underlying driver's or offload target's call to the NdisTcpOffloadEventHandler function.
 old-location: netvista\protocoltcpoffloadevent.htm
 tech.root: netvista
-ms.assetid: b64c0f9e-aa3d-43c5-bdf5-c40cae3929e3
 ms.date: 05/02/2018
 keywords: ["TCP_OFFLOAD_EVENT_HANDLER callback function"]
 ms.keywords: ProtocolTcpOffloadEvent, ProtocolTcpOffloadEvent callback function [Network Drivers Starting with Windows Vista], TCP_OFFLOAD_EVENT_HANDLER, TCP_OFFLOAD_EVENT_HANDLER callback, ndischimney/ProtocolTcpOffloadEvent, netvista.protocoltcpoffloadevent, tcp_chim_protocol_func_8cc440e3-7686-42dc-8fff-baf397394951.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndischimney.h
 api_name:
- - ProtocolTcpOffloadEvent
+ - TCP_OFFLOAD_EVENT_HANDLER
 ---
 
 # TCP_OFFLOAD_EVENT_HANDLER callback function
@@ -56,9 +55,9 @@ NDIS calls a protocol driver's or intermediate driver's
 
 ## -parameters
 
-### -param OffloadContext 
+### -param OffloadContext [in]
 
-[in]
+
 A pointer to the protocol or intermediate driver's 
      <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_offload_handle">NDIS_OFFLOAD_HANDLE</a> structure for the
      TCP connection on which the indication is being made. The protocol or intermediate driver supplied this
@@ -66,9 +65,9 @@ A pointer to the protocol or intermediate driver's
      <a href="/windows-hardware/drivers/ddi/ndischimney/nf-ndischimney-ndisinitiateoffload">NdisInitiateOffload</a> function when
      offloading the connection.
 
-### -param EventType 
+### -param EventType [in]
 
-[in]
+
 The event being indicated as one of the following TCP_OFFLOAD_EVENT_TYPE values:
      
 
@@ -101,9 +100,9 @@ Indicates that the remote host initiated an abortive disconnect by sending an ac
 
 Indicates a change in the preferred send backlog size.
 
-### -param EventSpecificInformation 
+### -param EventSpecificInformation [in]
 
-[in]
+
 Specifies additional information about the event being indicated as follows:
      
 
@@ -169,3 +168,4 @@ The
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ndischimney/nc-ndischimney-ndis_tcp_offload_event_indicate">NdisTcpOffloadEventHandler</a>
+

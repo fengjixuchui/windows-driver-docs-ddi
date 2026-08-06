@@ -4,7 +4,6 @@ title: WdfRequestSetCompletionRoutine function (wdfrequest.h)
 description: The WdfRequestSetCompletionRoutine method registers or deregisters a completion routine for the specified framework request object.
 old-location: wdf\wdfrequestsetcompletionroutine.htm
 tech.root: wdf
-ms.assetid: c60f3dd5-2a74-4d7c-8804-35b9dd91dce4
 ms.date: 02/26/2018
 keywords: ["WdfRequestSetCompletionRoutine function"]
 ms.keywords: DFRequestObjectRef_4dea9104-1bfd-4add-b991-f02d57f840cb.xml, WdfRequestSetCompletionRoutine, WdfRequestSetCompletionRoutine method, kmdf.wdfrequestsetcompletionroutine, wdf.wdfrequestsetcompletionroutine, wdfrequest/WdfRequestSetCompletionRoutine
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,19 +54,19 @@ The <b>WdfRequestSetCompletionRoutine</b> method registers or deregisters a comp
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
-### -param CompletionRoutine 
+### -param CompletionRoutine [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_completion_routine">CompletionRoutine</a> callback function, if the driver is registering a completion routine, or <b>NULL</b> of the driver is deregistering a previously registered completion routine.
 
-### -param CompletionContext 
+### -param CompletionContext [in, optional]
 
-[in, optional]
+
 An untyped pointer to driver-defined context information that the framework passes to the <a href="/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_completion_routine">CompletionRoutine</a> callback function. This parameter is optional and can be <b>NULL</b>.
 
 ## -remarks
@@ -78,6 +77,8 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 
 If your driver forwards I/O requests, but if you want your driver to be notified when a lower-level driver completes the request, your driver can provide a <a href="/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_completion_routine">CompletionRoutine</a> callback function and call <b>WdfRequestSetCompletionRoutine</b> to register the function. The framework calls the callback function after a lower-level driver completes the I/O request. 
+
+If the driver sets an I/O completion callback, the driver must format the request before sending it to the default I/O target even if the driver does not change any of the parameters in the request. Formatting can be done using <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestformatrequestusingcurrenttype">WdfRequestFormatRequestUsingCurrentType</a>.
 
 For more information about <b>WdfRequestSetCompletionRoutine</b>, see <a href="/windows-hardware/drivers/wdf/completing-i-o-requests">Completing I/O Requests</a>.
 

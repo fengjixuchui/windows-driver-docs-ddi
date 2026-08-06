@@ -4,7 +4,6 @@ title: IOCTL_DOT4_DESTROY_SOCKET (d4drvif.h)
 description: This topic describes IOCTL_DOT4_DESTROY_SOCKET.
 old-location: print\ioctl_ioctl_dot4_destroy_socket.htm
 tech.root: print
-ms.assetid: D6479299-F00D-4709-B8D6-3840E285953A
 ms.date: 04/20/2018
 keywords: ["IOCTL_DOT4_DESTROY_SOCKET IOCTL"]
 ms.keywords: IOCTL_DOT4_DESTROY_SOCKET, IOCTL_DOT4_DESTROY_SOCKET control, IOCTL_DOT4_DESTROY_SOCKET control code [Print Devices], d4drvif/IOCTL_DOT4_DESTROY_SOCKET, print.ioctl_ioctl_dot4_destroy_socket
@@ -49,6 +48,8 @@ api_name:
 This topic describes <b>IOCTL_DOT4_DESTROY_SOCKET</b>.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

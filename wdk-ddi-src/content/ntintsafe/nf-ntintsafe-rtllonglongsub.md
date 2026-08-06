@@ -4,7 +4,6 @@ title: RtlLongLongSub function (ntintsafe.h)
 description: Subtracts one value of type LONGLONG from another.
 old-location: kernel\rtllonglongsub.htm
 tech.root: kernel
-ms.assetid: A0D35ECE-5B7F-4F60-9178-75673C9A945F
 ms.date: 04/30/2018
 keywords: ["RtlLongLongSub function"]
 ms.keywords: RtlLongLongSub, RtlLongLongSub function [Kernel-Mode Driver Architecture], kernel.rtllonglongsub, ntintsafe/RtlLongLongSub
@@ -50,19 +49,19 @@ Subtracts one value of type <b>LONGLONG</b> from another.
 
 ## -parameters
 
-### -param llMinuend 
+### -param llMinuend [in]
 
-[in]
+
 The value from which <i>llSubtrahend</i> is subtracted.
 
-### -param llSubtrahend 
+### -param llSubtrahend [in]
 
-[in]
+
 The value to subtract from <i>llMinuend</i>.
 
-### -param pllResult 
+### -param pllResult [out]
 
-[out]
+
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

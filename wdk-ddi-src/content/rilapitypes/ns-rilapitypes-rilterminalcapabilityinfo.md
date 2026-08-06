@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILTERMINALCAPABILITYINFO
 title: RILTERMINALCAPABILITYINFO (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILTERMINALCAPABILITYINFO structure for internal use only."
 old-location: netvista\rilterminalcapabilityinfo.htm
 tech.root: netvista
-ms.assetid: e6ad67bf-cd16-469e-af49-6a640a4319c0
 ms.date: 05/02/2018
 keywords: ["RILTERMINALCAPABILITYINFO structure"]
 ms.keywords: "*LPRILTERMINALCAPABILITYINFO, RILTERMINALCAPABILITYINFO, RILTERMINALCAPABILITYINFO structure [Network Drivers Starting with Windows Vista], netvista.rilterminalcapabilityinfo, ntddrilapitypes/RILTERMINALCAPABILITYINFO"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILTERMINALCAPABILITYINFO
+ - LPRILTERMINALCAPABILITYINFO
 ---
 
 # RILTERMINALCAPABILITYINFO structure (rilapitypes.h)

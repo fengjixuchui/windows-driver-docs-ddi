@@ -4,7 +4,6 @@ title: UdecxUsbSimpleEndpointInitAllocate function (udecxusbendpoint.h)
 description: Allocates memory for an initialization structure that is used to create a simple endpoint for the specified virtual USB device.
 old-location: buses\udecxusbsimpleendpointinitallocate.htm
 tech.root: usbref
-ms.assetid: 1BF79756-F55D-4F13-A03C-35F7880C5B21
 ms.date: 05/07/2018
 keywords: ["UdecxUsbSimpleEndpointInitAllocate function"]
 ms.keywords: UdecxUsbSimpleEndpointInitAllocate, UdecxUsbSimpleEndpointInitAllocate function [Buses], buses.udecxusbsimpleendpointinitallocate, udecxusbendpoint/UdecxUsbSimpleEndpointInitAllocate
@@ -51,9 +50,9 @@ Allocates memory for an initialization  structure that is used to create a simpl
 
 ## -parameters
 
-### -param UdecxUsbDevice 
+### -param UdecxUsbDevice [in]
 
-[in]
+
 A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.
 
 ## -returns
@@ -64,7 +63,7 @@ This method returns a pointer to an opaque <b>UDECXUSBENDPOINT_INIT</b> structur
 
 The UDE client driver calls this method to allocate parameters for a simple endpoint that is created by a subsequent call to <a href="/windows-hardware/drivers/ddi/udecxusbendpoint/nf-udecxusbendpoint-udecxusbendpointcreate">UdecxUsbEndpointCreate</a>. If the device is not created or the driver is finished using the resources, the driver must free the resources by calling <a href="/windows-hardware/drivers/ddi/udecxusbendpoint/nf-udecxusbendpoint-udecxusbendpointinitfree">UdecxUsbEndpointInitFree</a>.
 
-The only valid time to create simple endpoints is after creating a the UDE device object and before calling <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdeviceplugin">UdecxUsbDevicePlugIn</a> on the device.
+The only valid time to create simple endpoints is after creating a UDE device object and before calling <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdeviceplugin">UdecxUsbDevicePlugIn</a> on the device.
 
 ## -see-also
 

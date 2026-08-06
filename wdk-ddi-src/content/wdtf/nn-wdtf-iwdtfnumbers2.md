@@ -4,7 +4,6 @@ title: IWDTFNumbers2 (wdtf.h)
 description: Defines operations and properties for a collection of numbers.
 old-location: dtf\iwdtfnumbers2.htm
 tech.root: dtf
-ms.assetid: 8cff3bc3-771f-47b7-bf4b-b7221f498252
 ms.date: 04/04/2018
 keywords: ["IWDTFNumbers2 interface"]
 ms.keywords: IWDTFNumbers2, IWDTFNumbers2 interface [Windows Device Testing Framework], IWDTFNumbers2 interface [Windows Device Testing Framework],described, Microsoft.WDTF.IWDTFNumbers2, dtf.iwdtfnumbers2, wdtf/IWDTFNumbers2
@@ -50,9 +49,9 @@ Defines operations and properties for a collection of numbers.
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDTFNumbers2</b> interface inherits from <b>ITracing</b>. <b>IWDTFNumbers2</b> also has these types of members:
+The <b>IWDTFNumbers2</b> interface inherits from <b>ITracing</b>. <b>IWDTFNumbers2</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-<li><a href="https://docs.microsoft.com/">Properties</a></li>
+<li><a href="/">Methods</a></li>
+<li><a href="/">Properties</a></li>
 </ul>
 

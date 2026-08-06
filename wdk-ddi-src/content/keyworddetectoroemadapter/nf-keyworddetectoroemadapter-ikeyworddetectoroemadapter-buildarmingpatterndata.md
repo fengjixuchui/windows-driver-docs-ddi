@@ -4,7 +4,6 @@ title: IKeywordDetectorOemAdapter::BuildArmingPatternData (keyworddetectoroemada
 description: The BuildArmingPatternData method is called by the operating system to build OEM-specific pattern data that includes any keyword and user-specific model data for detection.
 old-location: audio\ikeyworddetectoroemadapter_buildarmingpatterndata.htm
 tech.root: audio
-ms.assetid: F74DC3C3-C182-4BBA-93C8-95A73C58CFEF
 ms.date: 05/08/2018
 keywords: ["IKeywordDetectorOemAdapter::BuildArmingPatternData"]
 ms.keywords: BuildArmingPatternData, BuildArmingPatternData method [Audio Devices], BuildArmingPatternData method [Audio Devices],IKeywordDetectorOemAdapter interface, IKeywordDetectorOemAdapter interface [Audio Devices],BuildArmingPatternData method, IKeywordDetectorOemAdapter.BuildArmingPatternData, IKeywordDetectorOemAdapter::BuildArmingPatternData, audio.ikeyworddetectoroemadapter_buildarmingpatterndata, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::BuildArmingPatternData
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - KeywordDetectorOemAdapter.h
 api_name:
- - IKeywordDetectorOemAdapter.BuildArmingPatternData
+ - IKeywordDetectorOemAdapter::BuildArmingPatternData
 ---
 
 # IKeywordDetectorOemAdapter::BuildArmingPatternData
@@ -50,24 +49,24 @@ The <b>BuildArmingPatternData</b> method is called by the operating system to bu
 
 ## -parameters
 
-### -param UserModelData 
+### -param UserModelData [in]
 
-[in]
+
 A pointer to <b>IStream</b> bound to model data for the <a href="/windows-hardware/drivers/ddi/keyworddetectoroemadapter/ns-keyworddetectoroemadapter-__midl_ikeyworddetectoroemadapter_0003">KEYWORDSELECTOR</a> values in the <i>KeywordSelectors</i> parameter.
 
-### -param KeywordSelectors 
+### -param KeywordSelectors [in]
 
-[in]
+
 An array of <a href="/windows-hardware/drivers/ddi/keyworddetectoroemadapter/ns-keyworddetectoroemadapter-__midl_ikeyworddetectoroemadapter_0003">KEYWORDSELECTOR</a> structures identifying the desired set of matches for the keyword detector to arm.
 
-### -param NumKeywordSelectors 
+### -param NumKeywordSelectors [in]
 
-[in]
+
 The number of items in the <i>KeywordSelectors</i> array. Only one key word selector is supported and this field must be set to one.
 
-### -param ppPatternData 
+### -param ppPatternData [out]
 
-[out]
+
 The pattern data for the operating system to pass to the audio driver. The OEMDLL allocates the memory calling <a href="/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc">CoTaskMemAlloc</a>. The operating system will free the memory by calling <a href="/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree">CoTaskMemFree</a>.
 
 ## -returns
@@ -144,3 +143,4 @@ The operating system may call this method at any time. The operating system may 
 
 
 <a href="/windows-hardware/drivers/ddi/keyworddetectoroemadapter/ns-keyworddetectoroemadapter-__midl_ikeyworddetectoroemadapter_0003">KEYWORDSELECTOR</a>
+

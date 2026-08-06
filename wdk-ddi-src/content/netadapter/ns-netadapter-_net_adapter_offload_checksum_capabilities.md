@@ -3,17 +3,16 @@ UID: NS:netadapter._NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES
 title: _NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES (netadapter.h)
 description: The NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES structure describes a network interface card (NIC)'s capabilities for offloading checksum calculation and validation.
 tech.root: netvista
-ms.assetid: edf69542-3428-4919-ac04-872429a873d8
 ms.date: 01/18/2019
 keywords: ["NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES structure"]
 ms.keywords: _NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES, NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES, *PNET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES,
 req.header: netadapter.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: 
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.29
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -35,12 +34,16 @@ api_location:
  - netadapter.h
 api_name:
  - _NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES
+ - NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES
 ---
 
 # _NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES structure
 
 
 ## -description
+
+> [!NOTE]
+> The **NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES** function is deprecated in NetAdapterCx 2.1 and later. For more information on current checksum offload functions, see [Checksum offload](/windows-hardware/drivers/netcx/checksum-offload).
 
 The **NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES** structure describes a network interface card (NIC)'s capabilities for offloading checksum calculation and validation.
 
@@ -73,8 +76,9 @@ Call [**NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES_INIT**](nf-netadapter-net_adap
 
 ## -see-also
 
-[NetAdapterCx hardware offloads](/windows-hardware/drivers/netcx/netadaptercx-hardware-offloads)
+[NetAdapterCx hardware offloads](/windows-hardware/drivers/netcx/introduction-to-hardware-offloads)
 
 [**NET_ADAPTER_OFFLOAD_CHECKSUM_CAPABILITIES_INIT**](nf-netadapter-net_adapter_offload_checksum_capabilities_init.md)
 
 [**NetAdapterOffloadSetChecksumCapabilities**](nf-netadapter-netadapteroffloadsetchecksumcapabilities.md)
+

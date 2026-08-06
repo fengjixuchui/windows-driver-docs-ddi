@@ -4,7 +4,6 @@ title: WdfDeviceSetSpecialFileSupport function (wdfdevice.h)
 description: The WdfDeviceSetSpecialFileSupport method enables or disables a function driver's support for special files, for the specified device.
 old-location: wdf\wdfdevicesetspecialfilesupport.htm
 tech.root: wdf
-ms.assetid: 7648c486-181a-45c8-9c4b-e3158428046a
 ms.date: 02/26/2018
 keywords: ["WdfDeviceSetSpecialFileSupport function"]
 ms.keywords: DFDeviceObjectGeneralRef_c40463ef-3c26-431e-99d8-d176b0ef7ebf.xml, WdfDeviceSetSpecialFileSupport, WdfDeviceSetSpecialFileSupport method, kmdf.wdfdevicesetspecialfilesupport, wdf.wdfdevicesetspecialfilesupport, wdfdevice/WdfDeviceSetSpecialFileSupport
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,19 +52,19 @@ The <b>WdfDeviceSetSpecialFileSupport</b> method enables or disables a function 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param FileType 
+### -param FileType [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_special_file_type">WDF_SPECIAL_FILE_TYPE</a>-typed enumerator that identifies the type of special file that the driver supports.
 
-### -param FileTypeIsSupported 
+### -param FileTypeIsSupported [in]
 
-[in]
+
 Supplies a Boolean value which, if <b>TRUE</b>, enables support for the special file type and, if <b>FALSE</b>, disables support the special file type.
 
 ## -remarks

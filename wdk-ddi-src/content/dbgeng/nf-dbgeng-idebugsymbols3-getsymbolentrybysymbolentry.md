@@ -4,7 +4,6 @@ title: IDebugSymbols3::GetSymbolEntryBySymbolEntry (dbgeng.h)
 description: Allows navigation within the symbol entry hierarchy.
 old-location: debugger\idebugsymbols3_getsymbolentrybysymbolentry.htm
 tech.root: debugger
-ms.assetid: 39AD3C10-C6E8-463F-BDDE-5941CB4B2830
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::GetSymbolEntryBySymbolEntry"]
 ms.keywords: GetSymbolEntryBySymbolEntry, GetSymbolEntryBySymbolEntry method [Windows Debugging], GetSymbolEntryBySymbolEntry method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],GetSymbolEntryBySymbolEntry method, IDebugSymbols3.GetSymbolEntryBySymbolEntry, IDebugSymbols3::GetSymbolEntryBySymbolEntry, dbgeng/IDebugSymbols3::GetSymbolEntryBySymbolEntry, debugger.idebugsymbols3_getsymbolentrybysymbolentry
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSymbols3.GetSymbolEntryBySymbolEntry
+ - IDebugSymbols3::GetSymbolEntryBySymbolEntry
 ---
 
 # IDebugSymbols3::GetSymbolEntryBySymbolEntry
@@ -51,19 +50,19 @@ Allows navigation within the
 
 ## -parameters
 
-### -param FromId 
+### -param FromId [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_module_and_id">DEBUG_MODULE_AND_ID</a> structure as the input ID.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A bit-set that contains options that affect the behavior of this method.
 
-### -param ToId 
+### -param ToId [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_module_and_id">DEBUG_MODULE_AND_ID</a> structure as the output ID.
 
 ## -returns
@@ -77,3 +76,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

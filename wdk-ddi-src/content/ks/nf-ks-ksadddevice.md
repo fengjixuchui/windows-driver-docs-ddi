@@ -4,7 +4,6 @@ title: KsAddDevice function (ks.h)
 description: The KsAddDevice function is the default AddDevice handler installed by KsInitializeDriver.
 old-location: stream\ksadddevice.htm
 tech.root: stream
-ms.assetid: e7be1bb8-eb8a-4ebd-b824-bbaa41b21ca5
 ms.date: 04/23/2018
 keywords: ["KsAddDevice function"]
 ms.keywords: KsAddDevice, KsAddDevice function [Streaming Media Devices], avfunc_8d3f4443-fa48-4484-a2b3-2f3b70cc2ce5.xml, ks/KsAddDevice, stream.ksadddevice
@@ -51,14 +50,14 @@ The<b> KsAddDevice </b>function is the default <i>AddDevice</i> handler installe
 
 ## -parameters
 
-### -param DriverObject 
+### -param DriverObject [in]
 
-[in]
+
 A pointer to the WDM driver object for the minidriver.
 
-### -param PhysicalDeviceObject 
+### -param PhysicalDeviceObject [in]
 
-[in]
+
 A pointer to the WDM physical device object.
 
 ## -returns

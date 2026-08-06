@@ -4,7 +4,6 @@ title: FwpsCalloutRegister0 function (fwpsk.h)
 description: The FwpsCalloutRegister0 function registers a callout with the filter engine.Note  FwpsCalloutRegister0 is the specific version of FwpsCalloutRegister used in Windows Vista and later.
 old-location: netvista\fwpscalloutregister0.htm
 tech.root: netvista
-ms.assetid: 1f003775-4b93-44cd-8c58-18e0e3fb5656
 ms.date: 05/02/2018
 keywords: ["FwpsCalloutRegister0 function"]
 ms.keywords: FwpsCalloutRegister0, FwpsCalloutRegister0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsCalloutRegister0, netvista.fwpscalloutregister0, wfp_ref_2_funct_3_fwps_C_a1902e8d-fa04-4d2c-ab39-04d313d01833.xml
@@ -53,23 +52,23 @@ The
 
 ## -parameters
 
-### -param deviceObject 
+### -param deviceObject [in, out]
 
-[in, out]
+
 A pointer to a device object that was previously created by the callout driver. For more
      information about how a callout driver creates a device object, see 
      <a href="/windows-hardware/drivers/kernel/creating-a-device-object">Creating a Device Object</a>.
 
-### -param callout 
+### -param callout [in]
 
-[in]
+
 A pointer to a constant 
      <a href="/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_callout0_">FWPS_CALLOUT0</a> structure that contains the
      data that is required to register the callout with the filter engine.
 
-### -param calloutId 
+### -param calloutId [out, optional]
 
-[out, optional]
+
 A pointer to a UINT32-typed variable that receives a run-time identifier that identifies the
      callout in the filter engine. The callout driver passes this identifier to the 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutunregisterbyid0">FwpsCalloutUnregisterById0</a> function when unregistering the callout from the filter engine. If a

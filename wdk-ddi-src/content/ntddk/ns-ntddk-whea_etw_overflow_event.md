@@ -1,10 +1,10 @@
 ---
 UID: NS:ntddk._WHEA_ETW_OVERFLOW_EVENT
 title: WHEA_ETW_OVERFLOW_EVENT
+tech.root: whea
 ms.date: 04/28/2020
-ms.topic: language-reference
 targetos: Windows
-description: 
+description: "Learn more about: WHEA_ETW_OVERFLOW_EVENT"
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -28,6 +28,7 @@ api_location:
  - ntddk.h
 api_name:
  - _WHEA_ETW_OVERFLOW_EVENT
+ - PWHEA_ETW_OVERFLOW_EVENT
  - WHEA_ETW_OVERFLOW_EVENT
 f1_keywords:
  - _WHEA_ETW_OVERFLOW_EVENT

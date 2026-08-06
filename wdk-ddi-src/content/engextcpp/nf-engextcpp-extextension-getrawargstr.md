@@ -4,7 +4,6 @@ title: ExtExtension::GetRawArgStr (engextcpp.h)
 description: The GetRawArgStr method returns a string that represents the arguments passed to the extension command.
 old-location: debugger\getrawargstr.htm
 tech.root: debugger
-ms.assetid: 677b56ee-3758-4f47-9f8e-fc8878d00136
 ms.date: 05/03/2018
 keywords: ["ExtExtension::GetRawArgStr"]
 ms.keywords: EngExtCpp_Ref_1072b281-ece3-4641-93e8-60866c1e3ef4.xml, ExtExtension class [Windows Debugging],GetRawArgStr method, ExtExtension.GetRawArgStr, ExtExtension::GetRawArgStr, GetRawArgStr, GetRawArgStr method [Windows Debugging], GetRawArgStr method [Windows Debugging],ExtExtension class, debugger.getrawargstr
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtExtension.GetRawArgStr
+ - ExtExtension::GetRawArgStr
 ---
 
 # ExtExtension::GetRawArgStr
@@ -59,3 +58,4 @@ For an overview of argument parsing in the EngExtCpp extensions framework, see <
 The string returned by this method is only meaningful during the execution of the current extension command.
 
 This method should only be called during the execution of an extension command provided by this class.
+

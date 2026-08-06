@@ -4,7 +4,6 @@ title: IKsClockPropertySet::KsSetCorrelatedTime (ksproxy.h)
 description: The KsSetCorrelatedTime method sets the current time with the correlated system time on the underlying clock.
 old-location: stream\iksclockpropertyset_kssetcorrelatedtime.htm
 tech.root: stream
-ms.assetid: 58281b50-14b6-4e24-972a-ab3b1d88eb50
 ms.date: 04/23/2018
 keywords: ["IKsClockPropertySet::KsSetCorrelatedTime"]
 ms.keywords: IKsClockPropertySet interface [Streaming Media Devices],KsSetCorrelatedTime method, IKsClockPropertySet.KsSetCorrelatedTime, IKsClockPropertySet::KsSetCorrelatedTime, KsSetCorrelatedTime, KsSetCorrelatedTime method [Streaming Media Devices], KsSetCorrelatedTime method [Streaming Media Devices],IKsClockPropertySet interface, ksproxy/IKsClockPropertySet::KsSetCorrelatedTime, ksproxy_bf409d47-cdd4-467e-88f1-4358bf8934d4.xml, stream.iksclockpropertyset_kssetcorrelatedtime
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ksproxy.h
 api_name:
- - IKsClockPropertySet.KsSetCorrelatedTime
+ - IKsClockPropertySet::KsSetCorrelatedTime
 ---
 
 # IKsClockPropertySet::KsSetCorrelatedTime
@@ -50,9 +49,9 @@ The <b>KsSetCorrelatedTime</b> method sets the current time with the correlated 
 
 ## -parameters
 
-### -param CorrelatedTime 
+### -param CorrelatedTime [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-kscorrelated_time">KSCORRELATED_TIME</a> structure that contains the current clock time along with the correlated system time to which to set the underlying clock.
 
 ## -returns
@@ -74,3 +73,4 @@ The proxy uses the <a href="/windows-hardware/drivers/stream/ksproperty-clock-co
 
 
 <a href="/windows-hardware/drivers/stream/ksproperty-clock-correlatedtime">KSPROPERTY_CLOCK_CORRELATEDTIME</a>
+

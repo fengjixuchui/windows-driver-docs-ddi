@@ -4,7 +4,6 @@ title: WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS function (wdfusb.h)
 description: The WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS function initializes a WDF_USB_CONTROL_SETUP_PACKET structure for a device class-specific USB control transfer.
 old-location: wdf\wdf_usb_control_setup_packet_init_class.htm
 tech.root: wdf
-ms.assetid: c44e16f1-2ecd-4dad-b3c3-c6b6a3dcbb84
 ms.date: 02/26/2018
 keywords: ["WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS function"]
 ms.keywords: DFUsbRef_840aad44-522b-426d-ad95-457dee6c44dd.xml, WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS, WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS function, kmdf.wdf_usb_control_setup_packet_init_class, wdf.wdf_usb_control_setup_packet_init_class, wdfusb/WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS
@@ -52,34 +51,34 @@ The <b>WDF_USB_CONTROL_SETUP_PACKET_INIT_CLASS</b> function initializes a <a hre
 
 ## -parameters
 
-### -param Packet 
+### -param Packet [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_control_setup_packet">WDF_USB_CONTROL_SETUP_PACKET</a> structure.
 
-### -param Direction 
+### -param Direction [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfusb/ne-wdfusb-_wdf_usb_bmrequest_direction">WDF_USB_BMREQUEST_DIRECTION</a>-typed value that is stored in the <b>Packet.bm.Request.Dir</b> member of the <a href="/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_control_setup_packet">WDF_USB_CONTROL_SETUP_PACKET</a> structure.
 
-### -param Recipient 
+### -param Recipient [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfusb/ne-wdfusb-_wdf_usb_bmrequest_recipient">WDF_USB_BMREQUEST_RECIPIENT</a>-typed value that is stored in the <b>Packet.bm.Request.Recipient</b> member of the <a href="/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_control_setup_packet">WDF_USB_CONTROL_SETUP_PACKET</a> structure.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A request type constant that is stored in the<b>Packet.bRequest</b> member of the <a href="/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_control_setup_packet">WDF_USB_CONTROL_SETUP_PACKET</a> structure.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 A request-specific value that is stored in the <b>Packet.wValue.Value</b> member of the <a href="/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_control_setup_packet">WDF_USB_CONTROL_SETUP_PACKET</a> structure.
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 A request-specific index value that is stored in the <b>Packet.wIndex.Value</b> member of the <a href="/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_control_setup_packet">WDF_USB_CONTROL_SETUP_PACKET</a> structure.
 
 ## -remarks

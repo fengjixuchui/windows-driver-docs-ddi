@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient4.WaitForProcessServerEnd
 title: IDebugClient4::WaitForProcessServerEnd (dbgeng.h)
-description: The WaitForProcessServerEnd method waits for a local process server to exit.
+description: The WaitForProcessServerEnd method waits for a local process server to exit. This method belongs to the IDebugClient4 interface.
 old-location: debugger\waitforprocessserverend.htm
 tech.root: debugger
-ms.assetid: 19573307-0192-47bd-86a0-9c7721d16c5e
 ms.date: 05/03/2018
 keywords: ["IDebugClient4::WaitForProcessServerEnd"]
 ms.keywords: IDebugClient2 interface [Windows Debugging],WaitForProcessServerEnd method, IDebugClient2::WaitForProcessServerEnd, IDebugClient3 interface [Windows Debugging],WaitForProcessServerEnd method, IDebugClient3::WaitForProcessServerEnd, IDebugClient4 interface [Windows Debugging],WaitForProcessServerEnd method, IDebugClient4.WaitForProcessServerEnd, IDebugClient4::WaitForProcessServerEnd, IDebugClient5 interface [Windows Debugging],WaitForProcessServerEnd method, IDebugClient5::WaitForProcessServerEnd, IDebugClient_ac54327c-85c5-41ab-906f-605d374a0e2d.xml, WaitForProcessServerEnd, WaitForProcessServerEnd method [Windows Debugging], WaitForProcessServerEnd method [Windows Debugging],IDebugClient2 interface, WaitForProcessServerEnd method [Windows Debugging],IDebugClient3 interface, WaitForProcessServerEnd method [Windows Debugging],IDebugClient4 interface, WaitForProcessServerEnd method [Windows Debugging],IDebugClient5 interface, dbgeng/IDebugClient2::WaitForProcessServerEnd, dbgeng/IDebugClient3::WaitForProcessServerEnd, dbgeng/IDebugClient4::WaitForProcessServerEnd, dbgeng/IDebugClient5::WaitForProcessServerEnd, debugger.waitforprocessserverend
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient2.WaitForProcessServerEnd
- - IDebugClient3.WaitForProcessServerEnd
- - IDebugClient4.WaitForProcessServerEnd
- - IDebugClient5.WaitForProcessServerEnd
+ - IDebugClient4::WaitForProcessServerEnd
 ---
 
 # IDebugClient4::WaitForProcessServerEnd
@@ -53,9 +49,9 @@ The <b>WaitForProcessServerEnd</b> method waits for a local process server to ex
 
 ## -parameters
 
-### -param Timeout 
+### -param Timeout [in]
 
-[in]
+
 Specifies how long in milliseconds to wait for a process server to exit.  If <i>Timeout</i> is INFINITE, this method will not return until a process server has ended.
 
 ## -returns
@@ -122,3 +118,4 @@ The constant INFINITE is defined in Winbase.h.
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-startprocessserver">StartProcessServer</a>
+

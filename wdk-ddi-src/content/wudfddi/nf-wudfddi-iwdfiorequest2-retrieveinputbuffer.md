@@ -4,7 +4,6 @@ title: IWDFIoRequest2::RetrieveInputBuffer (wudfddi.h)
 description: The RequestRetrieveInputBuffer method retrieves an I/O request's input buffer.
 old-location: wdf\iwdfiorequest2_retrieveinputbuffer.htm
 tech.root: wdf
-ms.assetid: f727d9b7-d7ea-4551-bc5a-7829f9807e02
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequest2::RetrieveInputBuffer"]
 ms.keywords: IWDFIoRequest2 interface,RetrieveInputBuffer method, IWDFIoRequest2.RetrieveInputBuffer, IWDFIoRequest2::RetrieveInputBuffer, RetrieveInputBuffer, RetrieveInputBuffer method, RetrieveInputBuffer method,IWDFIoRequest2 interface, UMDFRequestObjectRef_d4e2aa27-329a-4438-8010-579f8a3a3363.xml, umdf.iwdfiorequest2_retrieveinputbuffer, wdf.iwdfiorequest2_retrieveinputbuffer, wudfddi/IWDFIoRequest2::RetrieveInputBuffer
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequest2.RetrieveInputBuffer
+ - IWDFIoRequest2::RetrieveInputBuffer
 ---
 
 # IWDFIoRequest2::RetrieveInputBuffer
@@ -52,19 +51,19 @@ The <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestre
 
 ## -parameters
 
-### -param MinimumRequiredCb 
+### -param MinimumRequiredCb [in]
 
-[in]
+
 The minimum buffer size, in bytes, that the driver needs to process the I/O request. This value can be zero if there is no minimum buffer size.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 A pointer to a location that receives the buffer's address.
 
-### -param BufferCb 
+### -param BufferCb [out, optional]
 
-[out, optional]
+
 A pointer to a location that receives the buffer's size, in bytes. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns
@@ -159,7 +158,6 @@ STDMETHODCALLTYPE
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest2">IWDFIoRequest2</a>
@@ -183,3 +181,4 @@ STDMETHODCALLTYPE
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-getoutputmemory">IWDFIoRequest::GetOutputMemory</a>
+

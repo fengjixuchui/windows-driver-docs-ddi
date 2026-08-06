@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl.OutputDisassembly
 title: IDebugControl::OutputDisassembly (dbgeng.h)
-description: The OutputDisassembly method disassembles a processor instruction and sends the disassembly to the output callbacks.
+description: Learn how the OutputDisassembly method disassembles a processor instruction and sends the disassembly to the output callbacks.
 old-location: debugger\outputdisassembly.htm
 tech.root: debugger
-ms.assetid: 2a9944a4-3885-4e83-b20e-040cffcbf85b
 ms.date: 05/03/2018
 keywords: ["IDebugControl::OutputDisassembly"]
 ms.keywords: IDebugControl interface [Windows Debugging],OutputDisassembly method, IDebugControl.OutputDisassembly, IDebugControl2 interface [Windows Debugging],OutputDisassembly method, IDebugControl2::OutputDisassembly, IDebugControl3 interface [Windows Debugging],OutputDisassembly method, IDebugControl3::OutputDisassembly, IDebugControl::OutputDisassembly, IDebugControl_9f2641b6-ca40-4f1f-85e6-911bb0ab82f8.xml, OutputDisassembly, OutputDisassembly method [Windows Debugging], OutputDisassembly method [Windows Debugging],IDebugControl interface, OutputDisassembly method [Windows Debugging],IDebugControl2 interface, OutputDisassembly method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::OutputDisassembly, dbgeng/IDebugControl3::OutputDisassembly, dbgeng/IDebugControl::OutputDisassembly, debugger.outputdisassembly
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.OutputDisassembly
- - IDebugControl2.OutputDisassembly
- - IDebugControl3.OutputDisassembly
+ - IDebugControl::OutputDisassembly
 ---
 
 # IDebugControl::OutputDisassembly
@@ -52,19 +49,19 @@ The <b>OutputDisassembly</b> method disassembles a processor instruction and sen
 
 ## -parameters
 
-### -param OutputControl 
+### -param OutputControl [in]
 
-[in]
+
 Specifies the output control that determines which client's output callbacks receive the output.  For possible values, see <a href="/windows-hardware/drivers/debugger/debug-outctl-xxx">DEBUG_OUTCTL_XXX</a>.  For more information about output, see <a href="/windows-hardware/drivers/debugger/input-and-output">Input and Output</a>.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the location in the target's memory of the instruction to disassemble.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies the bit-flags that affect the behavior of this method.  The following table lists the bits that can be set.
 
 <table>
@@ -114,9 +111,9 @@ Include the source file name in the output.
 </tr>
 </table>
 
-### -param EndOffset 
+### -param EndOffset [out]
 
-[out]
+
 Receives the location in the target's memory of the instruction that follows the disassembled instruction.
 
 ## -returns
@@ -166,3 +163,4 @@ For an overview of using assembly in debugger applications, see <a href="/window
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-outputdisassemblylines">OutputDisassemblyLines</a>
+

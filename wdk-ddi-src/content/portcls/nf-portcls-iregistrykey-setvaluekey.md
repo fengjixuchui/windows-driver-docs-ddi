@@ -4,7 +4,6 @@ title: IRegistryKey::SetValueKey (portcls.h)
 description: The SetValueKey method replaces or creates a value entry under the open key.
 old-location: audio\iregistrykey_setvaluekey.htm
 tech.root: audio
-ms.assetid: 4f9dd025-b49f-44ab-88c4-38139e6cbee2
 ms.date: 05/08/2018
 keywords: ["IRegistryKey::SetValueKey"]
 ms.keywords: IRegistryKey interface [Audio Devices],SetValueKey method, IRegistryKey.SetValueKey, IRegistryKey::SetValueKey, SetValueKey, SetValueKey method [Audio Devices], SetValueKey method [Audio Devices],IRegistryKey interface, audio.iregistrykey_setvaluekey, audmp-routines_a7668b45-2b58-4a49-b1ef-a8d0755225b0.xml, portcls/IRegistryKey::SetValueKey
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IRegistryKey.SetValueKey
+ - IRegistryKey::SetValueKey
 ---
 
 # IRegistryKey::SetValueKey
@@ -50,14 +49,14 @@ The <code>SetValueKey</code> method replaces or creates a value entry under the 
 
 ## -parameters
 
-### -param ValueName 
+### -param ValueName [in, optional]
 
-[in, optional]
+
 Pointer to a string containing the name of the value entry to set. The name string is specified by a structure of type <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a>. If the value entry has no name, set this parameter to <b>NULL</b>. If the caller specifies a name string but the given name is not unique relative to its containing key, the method replaces the data for an existing value entry.
 
-### -param Type 
+### -param Type [in]
 
-[in]
+
 Specifies the type of the data to be written for <i>ValueName</i>. Set this parameter to one of the following system-defined types:
 
 REG_BINARY
@@ -86,14 +85,14 @@ REG_FULL_RESOURCE_DESCRIPTOR
 
 These parameter types are explained in <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-zwsetvaluekey">ZwSetValueKey</a>.
 
-### -param Data 
+### -param Data [in]
 
-[in]
+
 Pointer to a buffer containing the data. This parameter points to a user-supplied structure or value appropriate to the function.
 
-### -param DataSize 
+### -param DataSize [in]
 
-[in]
+
 Specifies the size in bytes of <i>Data</i>. This parameter specifies how many bytes of data the method will copy from the buffer that <i>Data</i> points to.
 
 ## -returns
@@ -144,3 +143,4 @@ If the given key has no existing value entry with a name matching the given <i>V
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-zwsetvaluekey">ZwSetValueKey</a>
+

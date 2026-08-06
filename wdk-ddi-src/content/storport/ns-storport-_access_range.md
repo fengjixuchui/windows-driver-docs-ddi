@@ -1,10 +1,9 @@
 ---
 UID: NS:storport._ACCESS_RANGE
 title: _ACCESS_RANGE (storport.h)
-description: An ACCESS_RANGE describes a memory or I/O port range used by an HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+description: Learn how an ACCESS_RANGE describes a memory or I/O port range used by an HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
 old-location: storage\access_range.htm
 tech.root: storage
-ms.assetid: 6009d11b-4f44-4591-bcb8-66e0c42d5689
 ms.date: 04/03/2020
 keywords: ["ACCESS_RANGE structure"]
 ms.keywords: "*PACCESS_RANGE, ACCESS_RANGE, ACCESS_RANGE structure [Storage Devices], PACCESS_RANGE, PACCESS_RANGE structure pointer [Storage Devices], _ACCESS_RANGE, srb/ACCESS_RANGE, srb/PACCESS_RANGE, storage.access_range, structs-scsiport_353ffdeb-4d30-4df8-9422-ea3a9e662104.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - srb.h
 api_name:
+ - _ACCESS_RANGE
+ - PACCESS_RANGE
  - ACCESS_RANGE
 ---
 
@@ -79,3 +80,4 @@ Storport allocates memory for the access ranges and initializes the **AccessRang
 [**PORT_CONFIGURATION_INFORMATION**](./ns-storport-_port_configuration_information.md)
 
 [**StorPortGetDeviceBase**](./nf-storport-storportgetdevicebase.md)
+

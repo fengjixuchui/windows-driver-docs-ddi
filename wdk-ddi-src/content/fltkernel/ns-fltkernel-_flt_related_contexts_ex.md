@@ -4,7 +4,6 @@ title: _FLT_RELATED_CONTEXTS_EX (fltkernel.h)
 description: The FLT_RELATED_CONTEXTS_EX structure contains a minifilter driver's contexts for the objects associated with an I/O operation.
 old-location: ifsk\flt_related_contexts_ex.htm
 tech.root: ifsk
-ms.assetid: 9D3E77AE-C63D-4253-8520-6A9ACCBB89CC
 ms.date: 04/16/2018
 keywords: ["FLT_RELATED_CONTEXTS_EX structure"]
 ms.keywords: "*PFLT_RELATED_CONTEXTS_EX, FLT_RELATED_CONTEXTS_EX, FLT_RELATED_CONTEXTS_EX structure [Installable File System Drivers], PFLT_RELATED_CONTEXTS_EX, PFLT_RELATED_CONTEXTS_EX structure pointer [Installable File System Drivers], _FLT_RELATED_CONTEXTS_EX, fltkernel/FLT_RELATED_CONTEXTS_EX, fltkernel/PFLT_RELATED_CONTEXTS_EX, ifsk.flt_related_contexts_ex"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - fltkernel.h
 api_name:
+ - _FLT_RELATED_CONTEXTS_EX
+ - PFLT_RELATED_CONTEXTS_EX
  - FLT_RELATED_CONTEXTS_EX
 ---
 
@@ -111,3 +112,4 @@ For more information about using contexts, see the reference entry for <a href="
 
 
 <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltreleasecontextsex">FltReleaseContextsEx</a>
+

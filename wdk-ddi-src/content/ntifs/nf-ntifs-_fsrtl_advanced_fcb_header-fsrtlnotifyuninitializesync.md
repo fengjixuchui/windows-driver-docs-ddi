@@ -4,14 +4,13 @@ title: FsRtlNotifyUninitializeSync function (ntifs.h)
 description: The FsRtlNotifyUninitializeSync routine deallocates the synchronization object for a notify list.
 old-location: ifsk\fsrtlnotifyuninitializesync.htm
 tech.root: ifsk
-ms.assetid: ac26d5cb-b342-42ec-ad76-23cefe509566
 ms.date: 04/16/2018
 keywords: ["FsRtlNotifyUninitializeSync function"]
 ms.keywords: FsRtlNotifyUninitializeSync, FsRtlNotifyUninitializeSync routine [Installable File System Drivers], fsrtlref_bb1d0439-691c-4a2d-8d0f-750f26d75995.xml, ifsk.fsrtlnotifyuninitializesync, ntifs/FsRtlNotifyUninitializeSync
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later versions of Windows operating systems.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,9 +49,9 @@ The <b>FsRtlNotifyUninitializeSync</b> routine deallocates the synchronization o
 
 ## -parameters
 
-### -param NotifySync 
+### -param NotifySync [in]
 
-[in]
+
 A pointer to a location that contains a pointer to the opaque synchronization object.
 
 ## -remarks

@@ -3,7 +3,6 @@ UID: NS:d3d10umddi.D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW
 title: D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW (d3d10umddi.h)
 description: The D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW structure describes a buffer that is used to create an unordered access view (UAV) in a call to the CreateUnorderedAccessView function.
 old-location: display\d3d11ddiarg_buffer_unorderedaccessview.htm
-ms.assetid: a5ff1158-539f-4b25-8b65-72d077108c46
 ms.date: 05/10/2018
 keywords: ["D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW structure"]
 ms.keywords: D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW, D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW structure [Display Devices], UMDisplayDriver_Dx11param_Structs_c097052f-b667-43a9-8133-172770d9ab70.xml, d3d10umddi/D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW, display.d3d11ddiarg_buffer_unorderedaccessview
@@ -50,17 +49,17 @@ The D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW structure describes a buffer that is 
 
 ## -struct-fields
 
-### -field FirstElement
+### -field FirstElement [in]
 
-[in] The offset, in bytes, to the first element in the buffer.
+The offset, in bytes, to the first element in the buffer.
 
-### -field NumElements
+### -field NumElements [in]
 
-[in] The number of elements in the buffer.
+The number of elements in the buffer.
 
-### -field Flags
+### -field Flags [in]
 
-[in] A valid bitwise OR of flag values that describe the buffer. The Direct3D runtime supports the following values.
+A valid bitwise OR of flag values that describe the buffer. The Direct3D runtime supports the following values.
 
 |Value|Meaning|
 |--- |--- |

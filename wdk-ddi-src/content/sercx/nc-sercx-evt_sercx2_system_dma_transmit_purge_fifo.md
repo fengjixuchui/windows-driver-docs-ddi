@@ -4,7 +4,6 @@ title: EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO (sercx.h)
 description: The EvtSerCx2SystemDmaTransmitPurgeFifo event callback function is called by version 2 of the serial framework extension (SerCx2) to discard any bytes of unsent data that remain in the transmit FIFO in the serial controller hardware.
 old-location: serports\evtsercx2systemdmatransmitpurgefifo.htm
 tech.root: serports
-ms.assetid: 79BD2B77-E99A-4CFA-9F7B-AFC984D5F0B3
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO callback function"]
 ms.keywords: 2/EvtSerCx2SystemDmaTransmitPurgeFifo, EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO, EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO callback, EvtSerCx2SystemDmaTransmitPurgeFifo, EvtSerCx2SystemDmaTransmitPurgeFifo callback function [Serial Ports], serports.evtsercx2systemdmatransmitpurgefifo
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
- - EvtSerCx2SystemDmaTransmitPurgeFifo
+ - EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO
 ---
 
 # EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO callback function
@@ -50,14 +49,14 @@ The <i>EvtSerCx2SystemDmaTransmitPurgeFifo</i> event callback function is called
 
 ## -parameters
 
-### -param SystemDmaTransmit 
+### -param SystemDmaTransmit [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMATRANSMIT</a> handle to a system-DMA-transmit object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2systemdmatransmitcreate">SerCx2SystemDmaTransmitCreate</a> method to create this object.
 
-### -param BytesAlreadyTransmittedToHardware 
+### -param BytesAlreadyTransmittedToHardware [in]
 
-[in]
+
 The number of bytes that have already been loaded into the transmit FIFO during the current system-DMA-transmit transaction.
 
 ## -remarks
@@ -124,3 +123,4 @@ The <b>EVT_SERCX2_SYSTEM_DMA_TRANSMIT_PURGE_FIFO</b> function type is defined in
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2systemdmatransmitpurgefifocomplete">SerCx2SystemDmaTransmitPurgeFifoComplete</a>
+

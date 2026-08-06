@@ -3,7 +3,6 @@ UID: NF:dmusicks.IMXF.ConnectOutput
 title: IMXF::ConnectOutput (dmusicks.h)
 description: The ConnectOutput method connects this IMXF interface with the sink specified by the pSinkMXF parameter.
 tech.root: audio
-ms.assetid: cca02916-afd0-47a5-a19a-1c3159c54ed4
 ms.date: 10/31/2018
 keywords: ["IMXF::ConnectOutput"]
 ms.keywords: IMXF::ConnectOutput, ConnectOutput, IMXF.ConnectOutput, IMXF::ConnectOutput, IMXF.ConnectOutput
@@ -35,9 +34,7 @@ api_type:
 api_location:
  - dmusicks.h
 api_name:
- - IMXF.ConnectOutput
-product:
- - Windows
+ - IMXF::ConnectOutput
 ---
 
 # IMXF::ConnectOutput

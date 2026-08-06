@@ -1,10 +1,9 @@
 ---
 UID: NE:wdfdevice._WDF_DEVICE_HWACCESS_TARGET_SIZE
 title: _WDF_DEVICE_HWACCESS_TARGET_SIZE (wdfdevice.h)
-description: The WDF_DEVICE_HWACCESS_TARGET_SIZE enumeration is used internally by the framework. Do not use.
+description: This enumeration is used internally by the framework. Do not use. This enumeration is defined in wdfdevice.h.
 old-location: wdf\wdf_device_hwaccess_target_size.htm
 tech.root: wdf
-ms.assetid: C675431E-6213-4FA8-86DB-65FE6EE90853
 ms.date: 02/26/2018
 keywords: ["WDF_DEVICE_HWACCESS_TARGET_SIZE enumeration"]
 ms.keywords: "*PWDF_DEVICE_HWACCESS_TARGET_SIZE, PWDF_DEVICE_HWACCESS_TARGET_TYPE, PWDF_DEVICE_HWACCESS_TARGET_TYPE enumeration pointer, WDF_DEVICE_HWACCESS_TARGET_SIZE, WDF_DEVICE_HWACCESS_TARGET_TYPE, WDF_DEVICE_HWACCESS_TARGET_TYPE enumeration, WdfDeviceHwAccessTargetSizeInvalid, WdfDeviceHwAccessTargetSizeMaximum, WdfDeviceHwAccessTargetSizeUchar, WdfDeviceHwAccessTargetSizeUlong, WdfDeviceHwAccessTargetSizeUlong64, WdfDeviceHwAccessTargetSizeUshort, _WDF_DEVICE_HWACCESS_TARGET_SIZE, umdf.wdf_device_hwaccess_target_size, wdf.wdf_device_hwaccess_target_size, wdfdevice/PWDF_DEVICE_HWACCESS_TARGET_TYPE, wdfdevice/WDF_DEVICE_HWACCESS_TARGET_TYPE, wdfdevice/WdfDeviceHwAccessTargetSizeInvalid, wdfdevice/WdfDeviceHwAccessTargetSizeMaximum, wdfdevice/WdfDeviceHwAccessTargetSizeUchar, wdfdevice/WdfDeviceHwAccessTargetSizeUlong, wdfdevice/WdfDeviceHwAccessTargetSizeUlong64, wdfdevice/WdfDeviceHwAccessTargetSizeUshort, wudfddi_types/PWDF_DEVICE_HWACCESS_TARGET_TYPE, wudfddi_types/WDF_DEVICE_HWACCESS_TARGET_TYPE, wudfddi_types/WdfDeviceHwAccessTargetSizeInvalid, wudfddi_types/WdfDeviceHwAccessTargetSizeMaximum, wudfddi_types/WdfDeviceHwAccessTargetSizeUchar, wudfddi_types/WdfDeviceHwAccessTargetSizeUlong, wudfddi_types/WdfDeviceHwAccessTargetSizeUlong64, wudfddi_types/WdfDeviceHwAccessTargetSizeUshort"
@@ -43,7 +42,9 @@ api_location:
  - wdfdevice.h
  - wudfddi_types.h
 api_name:
- - WDF_DEVICE_HWACCESS_TARGET_TYPE
+ - _WDF_DEVICE_HWACCESS_TARGET_SIZE
+ - PWDF_DEVICE_HWACCESS_TARGET_SIZE
+ - WDF_DEVICE_HWACCESS_TARGET_SIZE
 ---
 
 # _WDF_DEVICE_HWACCESS_TARGET_SIZE enumeration (wdfdevice.h)
@@ -57,7 +58,7 @@ The <b>WDF_DEVICE_HWACCESS_TARGET_SIZE</b> enumeration is used internally by the
 
 ## -enum-fields
 
-### -field WdfDeviceHwAccessTargetSizeInvalid
+### -field WdfDeviceHwAccessTargetSizeInvalid:0
 
 ### -field WdfDeviceHwAccessTargetSizeUchar
 
@@ -72,3 +73,4 @@ The <b>WDF_DEVICE_HWACCESS_TARGET_SIZE</b> enumeration is used internally by the
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/">UMDF Structures and Enumeration Types</a>
+

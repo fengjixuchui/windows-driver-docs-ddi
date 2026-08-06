@@ -1,10 +1,9 @@
 ---
 UID: NF:ntddk.HalExamineMBR
 title: HalExamineMBR function (ntddk.h)
-description: The HalExamineMBR routine reads the master boot record (MBR) of a disk and returns data from the MBR if the MBR is of the type specified by the caller.
+description: The HalExamineMBR function reads the master boot record (MBR) of a disk and returns the MBR data if the MBR is of the specified type.
 old-location: kernel\halexaminembr.htm
 tech.root: kernel
-ms.assetid: 6db72f2c-af24-4807-b90b-65dc2b309dc7
 ms.date: 04/30/2018
 keywords: ["HalExamineMBR function"]
 ms.keywords: HalExamineMBR, HalExamineMBR callback function [Kernel-Mode Driver Architecture], k103_86ff3079-34b8-4200-a0e9-88c921579b3f.xml, kernel.halexaminembr, ntddk/HalExamineMBR, pHalExamineMBR, pHalExamineMBR callback
@@ -50,27 +49,27 @@ The <b>HalExamineMBR</b> routine reads the master boot record (MBR) of a disk an
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 A pointer to the device object for the device being examined.
 
-### -param SectorSize 
+### -param SectorSize [in]
 
-[in]
+
 The minimum number of bytes that an I/O operation can fetch from the device being examined. If this value is less than 512, <b>HalExamineMBR</b> reads 512 bytes to ensure that it reads an entire partition table.
 
-### -param MBRTypeIdentifier 
+### -param MBRTypeIdentifier [in]
 
-[in]
+
 MBR partition type identifier. This parameter specifies the type of MBR that may be on the disk. For more information, see Remarks.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 A pointer to a location to which <b>HalExamineMBR</b> writes a pointer to a buffer that contains data from the MBR. The layout of the buffer depends on the MBR partition type. <b>HalExamineMBR</b> allocates the storage for this buffer. The caller must deallocate this buffer as soon as possible by calling the <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-exfreepool">ExFreePool</a> routine.
 
-<b>HalExamineMBR</b> sets *<i>Buffer</i> = <b>NULL</b> if the MBR partition type of the disk does not match that specified by <i>MBRTypeIdentifier</i> or if there is an error.
+<b>HalExamineMBR</b> sets **Buffer* = <b>NULL</b> if the MBR partition type of the disk does not match that specified by <i>MBRTypeIdentifier</i> or if there is an error.
 
 ## -remarks
 

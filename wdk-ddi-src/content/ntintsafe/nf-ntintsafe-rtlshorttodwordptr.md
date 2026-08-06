@@ -4,7 +4,6 @@ title: RtlShortToDWordPtr function (ntintsafe.h)
 description: Converts a value of type SHORT to a value of type DWORD_PTR.
 old-location: kernel\rtlshorttodwordptr.htm
 tech.root: kernel
-ms.assetid: 0ABB3DBF-117D-491D-85A3-68E9280CFC6C
 ms.date: 04/30/2018
 keywords: ["RtlShortToDWordPtr function"]
 ms.keywords: RtlShortToDWordPtr, RtlShortToDWordPtr function [Kernel-Mode Driver Architecture], kernel.rtlshorttodwordptr, ntintsafe/RtlShortToDWordPtr
@@ -50,14 +49,14 @@ Converts a value of type <b>SHORT</b> to a value of type <b>DWORD_PTR</b>.
 
 ## -parameters
 
-### -param sOperand 
+### -param sOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pdwResult 
+### -param pdwResult [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

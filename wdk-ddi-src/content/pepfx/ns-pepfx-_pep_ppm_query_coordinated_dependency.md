@@ -4,7 +4,6 @@ title: _PEP_PPM_QUERY_COORDINATED_DEPENDENCY (pepfx.h)
 description: The PEP_PPM_QUERY_COORDINATED_DEPENDENCY structure describes dependencies for coordinated idle states.
 old-location: kernel\pep_ppm_query_coordinated_dependency.htm
 tech.root: kernel
-ms.assetid: B7E857ED-66FF-4A4D-849B-A15663106507
 ms.date: 04/30/2018
 keywords: ["PEP_PPM_QUERY_COORDINATED_DEPENDENCY structure"]
 ms.keywords: "*PPEP_PPM_QUERY_COORDINATED_DEPENDENCY, PEP_PPM_QUERY_COORDINATED_DEPENDENCY, PEP_PPM_QUERY_COORDINATED_DEPENDENCY structure [Kernel-Mode Driver Architecture], PPEP_PPM_QUERY_COORDINATED_DEPENDENCY, PPEP_PPM_QUERY_COORDINATED_DEPENDENCY structure pointer [Kernel-Mode Driver Architecture], _PEP_PPM_QUERY_COORDINATED_DEPENDENCY, kernel.pep_ppm_query_coordinated_dependency, pepfx/PEP_PPM_QUERY_COORDINATED_DEPENDENCY, pepfx/PPEP_PPM_QUERY_COORDINATED_DEPENDENCY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_PPM_QUERY_COORDINATED_DEPENDENCY
+ - PPEP_PPM_QUERY_COORDINATED_DEPENDENCY
  - PEP_PPM_QUERY_COORDINATED_DEPENDENCY
 ---
 
@@ -54,29 +55,29 @@ The <b>PEP_PPM_QUERY_COORDINATED_DEPENDENCY</b> structure describes dependencies
 
 ## -struct-fields
 
-### -field StateIndex
+### -field StateIndex [in]
 
-[in] The index of the coordinated idle state which is having its dependencies queried.
+The index of the coordinated idle state which is having its dependencies queried.
 
-### -field DependencyIndex
+### -field DependencyIndex [in]
 
-[in] The index of the dependency being queried.
+The index of the dependency being queried.
 
-### -field DependencySize
+### -field DependencySize [in]
 
-[in] The size of the <b>Dependencies</b> array.
+The size of the <b>Dependencies</b> array.
 
-### -field DependencySizeUsed
+### -field DependencySizeUsed [out]
 
-[out] The number of elements of the <b>Dependencies</b> array filled in by the PEP.
+The number of elements of the <b>Dependencies</b> array filled in by the PEP.
 
-### -field TargetProcessor
+### -field TargetProcessor [out]
 
-[out] The <b>POHANDLE</b> corresponding to the processor being targeted by this dependency, or <b>NULL</b> if this is a coordinated state dependency.
+The <b>POHANDLE</b> corresponding to the processor being targeted by this dependency, or <b>NULL</b> if this is a coordinated state dependency.
 
-### -field Options
+### -field Options [out]
 
-[out] A list of <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_coordinated_dependency_option">PEP_COORDINATED_DEPENDENCY_OPTION</a> structures describing dependency options, one of which must be satisfied for this coordinated state to be entered.
+A list of <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_coordinated_dependency_option">PEP_COORDINATED_DEPENDENCY_OPTION</a> structures describing dependency options, one of which must be satisfied for this coordinated state to be entered.
 
 ## -see-also
 
@@ -85,3 +86,4 @@ The <b>PEP_PPM_QUERY_COORDINATED_DEPENDENCY</b> structure describes dependencies
 
 
 <a href="/windows-hardware/drivers/ddi/index">PEP_NOTIFY_PPM_QUERY_COORDINATED_DEPENDENCY notification</a>
+

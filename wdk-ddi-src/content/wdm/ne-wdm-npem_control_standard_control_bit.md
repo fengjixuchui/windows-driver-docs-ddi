@@ -2,9 +2,9 @@
 UID: NE:wdm._NPEM_CONTROL_STANDARD_CONTROL_BIT
 title: NPEM_CONTROL_STANDARD_CONTROL_BIT
 ms.date: 04/28/2020
-ms.topic: language-reference
+tech.root: PCI
 targetos: Windows
-description: 
+description: "Learn more about: NPEM_CONTROL_STANDARD_CONTROL_BIT"
 req.construct-type: enumeration
 req.ddi-compliance: 
 req.header: wdm.h
@@ -24,6 +24,7 @@ api_location:
  - wdm.h
 api_name:
  - _NPEM_CONTROL_STANDARD_CONTROL_BIT
+ - PNPEM_CONTROL_STANDARD_CONTROL_BIT
  - NPEM_CONTROL_STANDARD_CONTROL_BIT
 f1_keywords:
  - _NPEM_CONTROL_STANDARD_CONTROL_BIT

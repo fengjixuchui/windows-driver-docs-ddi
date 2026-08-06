@@ -4,7 +4,6 @@ title: InitializeSListHead function (wdm.h)
 description: The InitializeSListHead routine (or ExInitializeSListHead) initializes an SLIST_HEADER structure that represents the head of a sequenced singly linked list.
 old-location: kernel\exinitializeslisthead.htm
 tech.root: kernel
-ms.assetid: 258addec-7231-494c-aa70-5966e9a57132
 ms.date: 04/30/2018
 keywords: ["InitializeSListHead function"]
 ms.keywords: ExInitializeSListHead, InitializeSListHead, InitializeSListHead routine [Kernel-Mode Driver Architecture], k102_6d3b712b-2dd5-4962-ad16-a296bdc4de2b.xml, kernel.exinitializeslisthead, wdm/InitializeSListHead
@@ -50,9 +49,9 @@ The <b>InitializeSListHead</b> routine (or ExInitializeSListHead) initializes an
 
 ## -parameters
 
-### -param SListHead 
+### -param SListHead [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">SLIST_HEADER</a> structure to initialize. The structure must be 16-byte aligned on 64-bit platforms.
 
 ## -remarks

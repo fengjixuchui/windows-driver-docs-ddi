@@ -1,10 +1,9 @@
 ---
 UID: NS:1394._IRB_REQ_FREE_ADDRESS_RANGE
 title: _IRB_REQ_FREE_ADDRESS_RANGE (1394.h)
-description: This structure contains the fields necessary for the 1394 stack to carry out a free address range reqeust.
+description: This structure contains the fields necessary for the 1394 stack to carry out a free address range request.
 old-location: ieee\irb_req_free_address_range.htm
 tech.root: IEEE
-ms.assetid: 18C1A210-6C6D-4BA7-AE62-81774DD62C58
 ms.date: 02/15/2018
 keywords: ["IRB_REQ_FREE_ADDRESS_RANGE structure"]
 ms.keywords: 1394/IRB_REQ_FREE_ADDRESS_RANGE, IEEE.irb_req_free_address_range, IRB_REQ_FREE_ADDRESS_RANGE, IRB_REQ_FREE_ADDRESS_RANGE structure [Buses], _IRB_REQ_FREE_ADDRESS_RANGE
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _IRB_REQ_FREE_ADDRESS_RANGE
  - IRB_REQ_FREE_ADDRESS_RANGE
 ---
 
@@ -48,7 +48,7 @@ api_name:
 
 ## -description
 
-This structure contains the fields necessary for the 1394 stack to carry out a free address range reqeust.
+This structure contains the fields necessary for the 1394 stack to carry out a free address range request.
 
 ## -struct-fields
 
@@ -62,8 +62,9 @@ Specifies a pointer to an array of <a href="/windows-hardware/drivers/ddi/1394/n
 
 ### -field pAddressRange
 
-Points to the handle that was previously received in <b>IRB.u.AllocateAddressRange.hAddressRange</b> in the  <a href="https://msdn.microsoft.com/library/windows/hardware/ff537632">REQUEST_ALLOCATE_ADDRESS_RANGE</a> request.
+Points to the handle that was previously received in <b>IRB.u.AllocateAddressRange.hAddressRange</b> in the  <a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ALLOCATE_ADDRESS_RANGE</a> request.
 
 ### -field DeviceExtension
 
 Points to the device extension associated with the device object. Not setting this member can lead to unexpected behavior when the driver tries to access the allocated address space.
+

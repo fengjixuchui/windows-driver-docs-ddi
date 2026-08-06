@@ -4,7 +4,6 @@ title: RtlUnicodeStringCatString function (ntstrsafe.h)
 description: The RtlUnicodeStringCatString function concatenates two strings when the destination string is contained in a UNICODE_STRING structure.
 old-location: kernel\rtlunicodestringcatstring.htm
 tech.root: kernel
-ms.assetid: d8e96d49-e4f5-468c-bdce-fbfaa8428eb7
 ms.date: 04/30/2018
 keywords: ["RtlUnicodeStringCatString function"]
 ms.keywords: RtlUnicodeStringCatString, RtlUnicodeStringCatString function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringcatstring, ntstrsafe/RtlUnicodeStringCatString, safestrings_28fc9345-6d09-492c-bda5-94216a260965.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,14 +50,14 @@ The <b>RtlUnicodeStringCatString</b> function concatenates two strings when the 
 
 ## -parameters
 
-### -param DestinationString 
+### -param DestinationString [in, out]
 
-[in, out]
+
 A pointer to a <b>UNICODE_STRING</b> structure. This structure includes a buffer that, on input, contains a destination string to which the source string will be concatenated. On output, this buffer is the destination buffer that contains the entire resultant string. The source string (excluding the terminating null) is added to the end of the destination string. The maximum number of bytes in the structure's string buffer is NTSTRSAFE_UNICODE_STRING_MAX_CCH * sizeof(WCHAR).
 
-### -param pszSrc 
+### -param pszSrc [in]
 
-[in]
+
 A pointer to a null-terminated string. This string will be concatenated to the end of the string that is contained in the buffer that the <b>UNICODE_STRING</b> structure points to.
 
 ## -returns

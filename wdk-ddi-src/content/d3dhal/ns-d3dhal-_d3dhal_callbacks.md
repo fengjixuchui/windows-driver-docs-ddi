@@ -4,7 +4,6 @@ title: _D3DHAL_CALLBACKS (d3dhal.h)
 description: D3DHAL_CALLBACKS is one of several callback structures that describe the Direct3D support provided by the driver.
 old-location: display\d3dhal_callbacks.htm
 tech.root: display
-ms.assetid: 3b045732-a41f-47e7-9835-41e3ef54f14c
 ms.date: 05/10/2018
 keywords: ["D3DHAL_CALLBACKS structure"]
 ms.keywords: "*LPD3DHAL_CALLBACKS, D3DHAL_CALLBACKS, D3DHAL_CALLBACKS structure [Display Devices], LPD3DHAL_CALLBACKS, LPD3DHAL_CALLBACKS structure pointer [Display Devices], _D3DHAL_CALLBACKS, d3dhal/D3DHAL_CALLBACKS, d3dhal/LPD3DHAL_CALLBACKS, d3dstrct_2dc02d2c-6ae9-4f2e-9cb3-470926980537.xml, display.d3dhal_callbacks"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - d3dhal.h
 api_name:
+ - _D3DHAL_CALLBACKS
+ - LPD3DHAL_CALLBACKS
  - D3DHAL_CALLBACKS
 ---
 
@@ -223,3 +224,4 @@ Texture management is now handled though opcodes that are managed in the driver'
 
 
 <a href="/windows/win32/api/winddi/nf-winddi-drvgetdirectdrawinfo">DrvGetDirectDrawInfo</a>
+

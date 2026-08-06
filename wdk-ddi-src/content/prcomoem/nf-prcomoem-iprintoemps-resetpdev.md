@@ -4,7 +4,6 @@ title: IPrintOemPS::ResetPDEV (prcomoem.h)
 description: The IPrintOemPS::ResetPDEV method allows a rendering plug-in for Pscript5 to reset its PDEV structure.
 old-location: print\iprintoemps_resetpdev.htm
 tech.root: print
-ms.assetid: 10248026-471a-4419-9c96-3502c24a6e96
 ms.date: 04/20/2018
 keywords: ["IPrintOemPS::ResetPDEV"]
 ms.keywords: IPrintOemPS interface [Print Devices],ResetPDEV method, IPrintOemPS.ResetPDEV, IPrintOemPS::ResetPDEV, ResetPDEV, ResetPDEV method [Print Devices], ResetPDEV method [Print Devices],IPrintOemPS interface, prcomoem/IPrintOemPS::ResetPDEV, print.iprintoemps_resetpdev, print_unidrv-pscript_rendering_d7b128bc-174c-4d06-8ffa-8df31ac22303.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Prcomoem.h
 api_name:
- - IPrintOemPS.ResetPDEV
+ - IPrintOemPS::ResetPDEV
 ---
 
 # IPrintOemPS::ResetPDEV
@@ -110,3 +109,4 @@ If the operation fails it should call <b>SetLastError</b>.
 A rendering plug-in's <code>IPrintOemPS::ResetPDEV</code> method performs the same types of operations as the <a href="/windows/win32/api/winddi/nf-winddi-drvresetpdev">DrvResetPDEV</a> function that is exported by a printer graphics DLL. During the processing of an application's call to the Microsoft Windows SDK <b>ResetDC</b> function, the <code>IPrintOemPS::ResetPDEV</code> method is called by the <b>DrvResetPDEV</b> function in Pscript5's printer graphics DLL. For more information about when <b>DrvResetPDEV</b> is called, see its description.
 
 The rendering plug-in's private PDEV structure's address is contained in the <b>pdevOEM</b> member of the DEVOBJ structure pointed to by <i>pdevobjOld</i>. The <code>IPrintOemPS::ResetPDEV</code> method should use relevant members of this old structure to fill in the new structure, which is referenced through <i>pdevobjNew</i>.
+

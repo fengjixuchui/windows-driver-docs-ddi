@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE
 title: _DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE (d3dkmddi.h)
 description: DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE describes the multi-plane overlay plane attributes, allocation, and video present network source identification number.
 old-location: display\dxgk_multiplane_overlay_plane_with_source.htm
-ms.assetid: 358C060B-23A0-4F02-A5D3-07ADC3435849
 ms.date: 05/10/2018
 keywords: ["DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE structure"]
 ms.keywords: DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE, DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE structure [Display Devices], _DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE, display.dxgk_multiplane_overlay_plane_with_source
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE
  - DXGK_MULTIPLANE_OVERLAY_PLANE_WITH_SOURCE
 ---
 
@@ -75,3 +75,4 @@ A <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_multiplane_o
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_multiplane_overlay_attributes2">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2</a>
+

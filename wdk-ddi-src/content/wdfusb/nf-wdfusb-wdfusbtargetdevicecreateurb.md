@@ -4,7 +4,6 @@ title: WdfUsbTargetDeviceCreateUrb function (wdfusb.h)
 description: The WdfUsbTargetDeviceCreateUrb method allocates a USB request block (URB).
 old-location: wdf\wdfusbtargetdevicecreateurb.htm
 tech.root: wdf
-ms.assetid: 274232FF-573A-47B4-B363-2FA7F810BF84
 ms.date: 02/26/2018
 keywords: ["WdfUsbTargetDeviceCreateUrb function"]
 ms.keywords: WdfUsbTargetDeviceCreateUrb, WdfUsbTargetDeviceCreateUrb method, kmdf.wdfusbtargetdevicecreateurb, wdf.wdfusbtargetdevicecreateurb, wdfusb/WdfUsbTargetDeviceCreateUrb
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,24 +54,24 @@ api_name:
 
 ## -parameters
 
-### -param UsbDevice 
+### -param UsbDevice [in]
 
-[in]
+
 A handle to a USB device object that was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>.
 
-### -param Attributes 
+### -param Attributes [in, optional]
 
-[in, optional]
+
 A pointer to a caller-supplied <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the new memory object.   If the driver provides this parameter, the structure's <b>ParentObject</b> member must be a USB device object (WDFUSBDEVICE) or a request object (WDFREQUEST) created by the framework, or any object whose chain of parents leads to one of these types. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param UrbMemory 
+### -param UrbMemory [out]
 
-[out]
+
 A pointer to a WDFMEMORY-typed location that receives a handle to a framework memory object.
 
-### -param Urb 
+### -param Urb [out, optional]
 
-[out, optional]
+
 A pointer to an URB structure that receives the address of the newly allocated URB. This parameter is optional and can be NULL.
 
 ## -returns

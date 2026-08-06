@@ -3,11 +3,8 @@ UID: NC:d3d12umddi.PFND3D12DDI_CALC_PRIVATE_PASS_SIZE
 title: PFND3D12DDI_CALC_PRIVATE_PASS_SIZE (d3d12umddi.h)
 description: Used in the creation of a pass.
 tech.root: display
-ms.assetid: 1ec7e11f-fd5b-43a5-88a0-45b819ebc2e0
 ms.date: 11/28/2018
 keywords: ["PFND3D12DDI_CALC_PRIVATE_PASS_SIZE callback function"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: d3d12umddi.h
 req.include-header: 
 req.target-type: 
@@ -37,8 +34,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CALC_PRIVATE_PASS_SIZE
-product:
- - Windows
 ---
 
 # PFND3D12DDI_CALC_PRIVATE_PASS_SIZE callback function
@@ -50,11 +45,11 @@ Used in the creation of a pass.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 A pointer to the D3D12DDIARG_CREATE_PASS structure that contains arguments used to create a pass.
 

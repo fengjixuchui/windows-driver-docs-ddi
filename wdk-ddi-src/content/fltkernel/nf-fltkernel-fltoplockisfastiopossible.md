@@ -4,7 +4,6 @@ title: FltOplockIsFastIoPossible function (fltkernel.h)
 description: The FltOplockIsFastIoPossible routine checks a file's opportunistic lock (oplock) state to determine whether fast I/O can be performed on the file.
 old-location: ifsk\fltoplockisfastiopossible.htm
 tech.root: ifsk
-ms.assetid: 0b1a4e61-9e1f-4469-b8d3-a3b75667ee7e
 ms.date: 04/16/2018
 keywords: ["FltOplockIsFastIoPossible function"]
 ms.keywords: FltApiRef_e_to_o_d80a24fe-5ca7-43e6-8e6f-cb9414c427c3.xml, FltOplockIsFastIoPossible, FltOplockIsFastIoPossible routine [Installable File System Drivers], fltkernel/FltOplockIsFastIoPossible, ifsk.fltoplockisfastiopossible
@@ -50,9 +49,9 @@ The <b>FltOplockIsFastIoPossible</b> routine checks a file's opportunistic lock 
 
 ## -parameters
 
-### -param Oplock 
+### -param Oplock [in]
 
-[in]
+
 Opaque oplock pointer for the file. This pointer must have been initialized by a previous call to <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltinitializeoplock">FltInitializeOplock</a>.
 
 ## -returns
@@ -65,7 +64,7 @@ Opaque oplock pointer for the file. This pointer must have been initialized by a
 
 <ul>
 <li>
-If the <i>Oplock</i> parameter is <b>NULL</b>, or if the value of *<i>Oplock</i> is <b>NULL</b>, there are no outstanding oplocks on the file, and fast I/O can be performed on the file. 
+If the <i>Oplock</i> parameter is <b>NULL</b>, or if the value of **Oplock* is <b>NULL</b>, there are no outstanding oplocks on the file, and fast I/O can be performed on the file. 
 
 </li>
 <li>

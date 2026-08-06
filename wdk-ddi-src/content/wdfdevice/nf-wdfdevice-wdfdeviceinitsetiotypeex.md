@@ -4,7 +4,6 @@ title: WdfDeviceInitSetIoTypeEx function (wdfdevice.h)
 description: The WdfDeviceInitSetIoTypeEx method sets the method or preference for how a driver will access the data buffers that are included in read and write requests, as well as device I/O control requests, for a specified device.
 old-location: wdf\wdfdeviceinitsetiotypeex.htm
 tech.root: wdf
-ms.assetid: 3746D618-C92C-43AB-A45A-2188D572105D
 ms.date: 02/26/2018
 keywords: ["WdfDeviceInitSetIoTypeEx function"]
 ms.keywords: WdfDeviceInitSetIoTypeEx, WdfDeviceInitSetIoTypeEx method, wdf.wdfdeviceinitassigniotype, wdf.wdfdeviceinitsetiotypeex, wdfdevice/WdfDeviceInitSetIoTypeEx
@@ -55,14 +54,14 @@ The <b>WdfDeviceInitSetIoTypeEx</b> method sets the method or preference for how
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
-### -param IoTypeConfig 
+### -param IoTypeConfig [in]
 
-[in]
+
 Pointer to <a href="/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_io_type_config">WDF_IO_TYPE_CONFIG</a> structure initialized using WDF_IO_TYPE_CONFIG_INIT macro.
 
 ## -remarks

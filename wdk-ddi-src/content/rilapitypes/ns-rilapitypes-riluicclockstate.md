@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILUICCLOCKSTATE
 title: RILUICCLOCKSTATE (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILUICCLOCKSTATE structure for internal use only. Don't use this structure in your code."
 old-location: netvista\riluicclockstate_2.htm
 tech.root: netvista
-ms.assetid: 18b933e6-cff3-49de-94ec-731a168c9d23
 ms.date: 02/26/2018
 keywords: ["RILUICCLOCKSTATE structure"]
 ms.keywords: "*LPRILUICCLOCKSTATE, RILUICCLOCKSTATE, RILUICCLOCKSTATE structure [Network Drivers Starting with Windows Vista], netvista.riluicclockstate_2, rilapitypes/RILUICCLOCKSTATE"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: RILUICCLOCKSTATE, *LPRILUICCLOCKSTATE
-req.product: Windows 10 or later.
 f1_keywords:
  - RILUICCLOCKSTATE
  - rilapitypes/RILUICCLOCKSTATE
@@ -42,6 +40,7 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILUICCLOCKSTATE
+ - LPRILUICCLOCKSTATE
 ---
 
 # RILUICCLOCKSTATE structure (rilapitypes.h)

@@ -4,7 +4,6 @@ title: WdfWdmDriverGetWdfDriverHandle function (wdfdriver.h)
 description: The WdfWdmDriverGetWdfDriverHandle method returns a handle to the framework driver object that is associated with a specified Windows Driver Model (WDM) driver object.
 old-location: wdf\wdfwdmdrivergetwdfdriverhandle.htm
 tech.root: wdf
-ms.assetid: 2126d36c-42c1-4e29-bf82-9f5682482557
 ms.date: 02/26/2018
 keywords: ["WdfWdmDriverGetWdfDriverHandle function"]
 ms.keywords: DFDriverObjectRef_9cf5a70f-e2df-4302-9558-c8cd066cf8e4.xml, WdfWdmDriverGetWdfDriverHandle, WdfWdmDriverGetWdfDriverHandle method, kmdf.wdfwdmdrivergetwdfdriverhandle, wdf.wdfwdmdrivergetwdfdriverhandle, wdfdriver/WdfWdmDriverGetWdfDriverHandle
@@ -53,9 +52,9 @@ The <b>WdfWdmDriverGetWdfDriverHandle</b> method returns a handle to the framewo
 
 ## -parameters
 
-### -param DriverObject 
+### -param DriverObject [in]
 
-[in]
+
 A pointer to a WDM driver object.
 
 ## -returns

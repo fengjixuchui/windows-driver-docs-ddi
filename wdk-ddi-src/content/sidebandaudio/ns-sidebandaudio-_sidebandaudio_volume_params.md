@@ -1,9 +1,8 @@
 ---
 UID: NS:sidebandaudio._SIDEBANDAUDIO_VOLUME_PARAMS
 title: _SIDEBANDAUDIO_VOLUME_PARAMS (sidebandaudio.h)
-description: Describes the endpoint index and volume value.
-ms.assetid: f84929d3-f908-4686-83e7-f73e61912975
-ms.date: 10/05/2018
+description: The SIDEBANDAUDIO_VOLUME_PARAMS structure describes the endpoint index, channel, immediate mode of operation and volume value.
+ms.date: 07/11/2023
 keywords: ["SIDEBANDAUDIO_VOLUME_PARAMS structure"]
 ms.keywords: _SIDEBANDAUDIO_VOLUME_PARAMS, SIDEBANDAUDIO_VOLUME_PARAMS, *PSIDEBANDAUDIO_VOLUME_PARAMS,
 req.header: sidebandaudio.h
@@ -37,14 +36,15 @@ api_location:
  - sidebandaudio.h
 api_name:
  - _SIDEBANDAUDIO_VOLUME_PARAMS
+ - PSIDEBANDAUDIO_VOLUME_PARAMS
+ - SIDEBANDAUDIO_VOLUME_PARAMS
 ---
 
-# _SIDEBANDAUDIO_VOLUME_PARAMS structure
-
+# SIDEBANDAUDIO_VOLUME_PARAMS structure
 
 ## -description
 
-Describes the endpoint index, channel, immediate mode of operation and volume value.
+The **SIDEBANDAUDIO_VOLUME_PARAMS** structure describes the endpoint index, channel, immediate mode of operation and volume value.
 
 ## -struct-fields
 
@@ -65,6 +65,12 @@ Indicates whether IOCTL current value is requested or IRP should complete upon n
 dbValue.
 
 ## -remarks
+
+## -requirements
+
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Header** | sidebandaudio.h |
 
 ## -see-also
 

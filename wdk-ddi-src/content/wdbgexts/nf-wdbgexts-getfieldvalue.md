@@ -4,7 +4,6 @@ title: GetFieldValue macro (wdbgexts.h)
 description: The GetFieldValue macro is a thin wrapper around the GetFieldData function. It is provided as a convenience for reading the value of a member in a structure.
 old-location: debugger\getfieldvalue.htm
 tech.root: debugger
-ms.assetid: 4655bac3-997e-43d9-b628-b4292ae5509d
 ms.date: 11/13/2018
 keywords: ["GetFieldValue macro"]
 ms.keywords: GetFieldValue, GetFieldValue function [Windows Debugging], WdbgExts_Ref_68aca028-5d92-48a3-845d-f9eb480a2c40.xml, debugger.getfieldvalue, wdbgexts/GetFieldValue
@@ -66,13 +65,13 @@ Specifies the name of the member in the structure.  Submembers can be specified 
 
 Specifies the object into which the member's value is read.
 
-## -returns
-
-If the function succeeds, the return value is zero. Otherwise, the return value is one of the *IG_DUMP_SYMBOL_INFO* error code.
-
 ## -remarks
 
 The parameters provided to this macro are the same as those provided to the <b>GetFieldData</b> function except that instead of providing a pointer to a buffer and its size, the variable to hold the returned value can be provided directly.
+
+### Returns
+
+If the function succeeds, the return value is zero. Otherwise, the return value is one of the *IG_DUMP_SYMBOL_INFO* error code.
 
 ## -see-also
 

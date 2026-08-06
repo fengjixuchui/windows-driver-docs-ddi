@@ -4,7 +4,6 @@ title: PROTOCOL_CM_MODIFY_QOS_CALL (ndis.h)
 description: The ProtocolCmModifyCallQoS function is required.
 old-location: netvista\protocolcmmodifycallqos.htm
 tech.root: netvista
-ms.assetid: 24523677-9f5a-4109-8484-95883a4d1bbf
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CM_MODIFY_QOS_CALL callback function"]
 ms.keywords: PROTOCOL_CM_MODIFY_QOS_CALL, PROTOCOL_CM_MODIFY_QOS_CALL callback, ProtocolCmModifyCallQoS, ProtocolCmModifyCallQoS callback function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_208d4e81-1f4f-46e9-9b78-7724504b68bc.xml, ndis/ProtocolCmModifyCallQoS, netvista.protocolcmmodifycallqos
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolCmModifyCallQoS
+ - PROTOCOL_CM_MODIFY_QOS_CALL
 ---
 
 # PROTOCOL_CM_MODIFY_QOS_CALL callback function
@@ -57,16 +56,16 @@ The
 
 ## -parameters
 
-### -param CallMgrVcContext 
+### -param CallMgrVcContext [in]
 
-[in]
+
 Specifies the handle to a call manager-allocated context area in which the call manager maintains
      its per-VC state. The call manager supplied this handle to NDIS for its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_create_vc">ProtocolCoCreateVc</a> function.
 
-### -param CallParameters 
+### -param CallParameters [in]
 
-[in]
+
 Pointer to a 
      <a href="/previous-versions/windows/hardware/network/ff545384(v=vs.85)">CO_CALL_PARAMETERS</a> structure that contains
      the new call parameters, as specified by a connection-oriented client, for the VC.
@@ -213,3 +212,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_create_vc">ProtocolCoCreateVc</a>
+

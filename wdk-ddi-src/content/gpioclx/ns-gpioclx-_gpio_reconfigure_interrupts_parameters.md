@@ -4,7 +4,6 @@ title: _GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS (gpioclx.h)
 description: The GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS structure describes the general-purpose I/O (GPIO) interrupt pin to reconfigure.
 old-location: gpio\gpio_reconfigure_interrupts_parameters.htm
 tech.root: GPIO
-ms.assetid: 98C9CFA6-76B3-4AF7-8280-BF84CC31CF70
 ms.date: 02/15/2018
 keywords: ["GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS structure"]
 ms.keywords: "*PGPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, GPIO.gpio_reconfigure_interrupts_parameters, GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS structure [Parallel Ports], PGPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, PGPIO_RECONFIGURE_INTERRUPTS_PARAMETERS structure pointer [Parallel Ports], _GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, gpioclx/GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS, gpioclx/PGPIO_RECONFIGURE_INTERRUPTS_PARAMETERS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
+ - _GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS
+ - PGPIO_RECONFIGURE_INTERRUPTS_PARAMETERS
  - GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS
 ---
 
@@ -112,3 +113,4 @@ The <i>ReconfigureParameters</i> parameter of the <a href="/windows-hardware/dri
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_kinterrupt_polarity">KINTERRUPT_POLARITY</a>
+

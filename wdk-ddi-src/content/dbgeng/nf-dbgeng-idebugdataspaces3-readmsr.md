@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugDataSpaces3.ReadMsr
 title: IDebugDataSpaces3::ReadMsr (dbgeng.h)
-description: The ReadMsr method reads a specified Model-Specific Register (MSR).
+description: Learn about the IDebugDataSpaces3.ReadMsr method, which reads a specified Model-Specific Register (MSR).
 old-location: debugger\readmsr2.htm
 tech.root: debugger
-ms.assetid: 3ffe53d9-ea57-4561-a889-e6369ef0d5d3
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces3::ReadMsr"]
 ms.keywords: IDebugDataSpaces interface [Windows Debugging],ReadMsr method, IDebugDataSpaces2 interface [Windows Debugging],ReadMsr method, IDebugDataSpaces2::ReadMsr, IDebugDataSpaces3 interface [Windows Debugging],ReadMsr method, IDebugDataSpaces3.ReadMsr, IDebugDataSpaces3::ReadMsr, IDebugDataSpaces4 interface [Windows Debugging],ReadMsr method, IDebugDataSpaces4::ReadMsr, IDebugDataSpaces::ReadMsr, IDebugDataSpaces_ad5999a9-949f-4771-b0b9-16fa1b79ac10.xml, ReadMsr, ReadMsr method [Windows Debugging], ReadMsr method [Windows Debugging],IDebugDataSpaces interface, ReadMsr method [Windows Debugging],IDebugDataSpaces2 interface, ReadMsr method [Windows Debugging],IDebugDataSpaces3 interface, ReadMsr method [Windows Debugging],IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces2::ReadMsr, dbgeng/IDebugDataSpaces3::ReadMsr, dbgeng/IDebugDataSpaces4::ReadMsr, dbgeng/IDebugDataSpaces::ReadMsr, debugger.readmsr2
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugDataSpaces.ReadMsr
- - IDebugDataSpaces2.ReadMsr
- - IDebugDataSpaces3.ReadMsr
- - IDebugDataSpaces4.ReadMsr
+ - IDebugDataSpaces3::ReadMsr
 ---
 
 # IDebugDataSpaces3::ReadMsr
@@ -53,14 +49,14 @@ The <b>ReadMsr</b> method reads a specified Model-Specific Register (MSR).
 
 ## -parameters
 
-### -param Msr 
+### -param Msr [in]
 
-[in]
+
 Specifies the MSR address.
 
-### -param Value 
+### -param Value [out]
 
-[out]
+
 Receives the value of the MSR.
 
 ## -returns
@@ -91,3 +87,4 @@ This method can also return error values.  See <a href="/windows-hardware/driver
 This method is only available in kernel-mode debugging.
 
 For details on the addresses and values of MSRs, see the processor documentation.
+

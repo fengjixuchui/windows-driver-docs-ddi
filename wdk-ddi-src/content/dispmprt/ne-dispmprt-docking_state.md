@@ -1,17 +1,16 @@
 ---
-UID: NE:dispmprt.__unnamed_enum_1
+UID: NE:dispmprt.DOCKING_STATE
 title: DOCKING_STATE (dispmprt.h)
 description: The DOCKING_STATE enumeration is used to describe the state of a portable computer that can be attached to a docking station.
 old-location: display\docking_state.htm
 tech.root: display
-ms.assetid: 4e051d49-57ae-43c8-a894-a6c2c277dce9
 ms.date: 05/10/2018
 keywords: ["DOCKING_STATE enumeration"]
 ms.keywords: DOCKING_STATE, DOCKING_STATE enumeration [Display Devices], DmEnums_1a20e5b4-8df9-4298-8661-d7697d99e139.xml, DockStateDocked, DockStateUnDocked, DockStateUnknown, DockStateUnsupported, display.docking_state, dispmprt/DOCKING_STATE, dispmprt/DockStateDocked, dispmprt/DockStateUnDocked, dispmprt/DockStateUnknown, dispmprt/DockStateUnsupported
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 

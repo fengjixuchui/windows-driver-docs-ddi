@@ -4,7 +4,6 @@ title: _D3DDDICB_SUBMITCOMMANDTOHWQUEUE (d3dumddi.h)
 description: A structure that holds information to queue hardware.
 old-location: display\d3dddicb_submitcommandtohwqueue.htm
 tech.root: display
-ms.assetid: 5B650831-7AD7-4FEA-AC31-82F2B351BAD6
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_SUBMITCOMMANDTOHWQUEUE structure"]
 ms.keywords: D3DDDICB_SUBMITCOMMANDTOHWQUEUE, D3DDDICB_SUBMITCOMMANDTOHWQUEUE structure [Display Devices], _D3DDDICB_SUBMITCOMMANDTOHWQUEUE, d3dumddi/D3DDDICB_SUBMITCOMMANDTOHWQUEUE, display.d3dddicb_submitcommandtohwqueue
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDICB_SUBMITCOMMANDTOHWQUEUE
  - D3DDDICB_SUBMITCOMMANDTOHWQUEUE
 ---
 
@@ -52,9 +52,9 @@ A structure that holds information to queue hardware.
 
 ## -struct-fields
 
-### -field hHwQueue
+### -field hHwQueue [in]
 
-[in] Hardware queue being submitted to.
+Hardware queue being submitted to.
 
 ### -field HwQueueProgressFenceId
 

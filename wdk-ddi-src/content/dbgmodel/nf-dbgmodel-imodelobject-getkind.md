@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.IModelObject.GetKind
 title: IModelObject::GetKind (dbgmodel.h)
 description: The GetKind method returns what kind of object is boxed inside the IModelObject.
-ms.assetid: 859277b5-e121-4f1c-a1aa-12c2aef4b673
 ms.date: 06/10/2019
 keywords: ["IModelObject::GetKind"]
 ms.keywords: IModelObject::GetKind, GetKind, IModelObject.GetKind, IModelObject::GetKind, IModelObject.GetKind
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IModelObject.GetKind
+ - IModelObject::GetKind
 ---
 
 # IModelObject::GetKind
@@ -72,3 +71,4 @@ HRESULT hr = spObject->GetKind(&kind);
 ## -see-also
 
 [IModelObject interface](nn-dbgmodel-imodelobject.md)
+

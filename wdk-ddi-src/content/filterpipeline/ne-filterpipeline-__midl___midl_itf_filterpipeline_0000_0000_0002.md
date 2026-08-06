@@ -4,7 +4,6 @@ title: __MIDL___MIDL_itf_filterpipeline_0000_0000_0002 (filterpipeline.h)
 description: The EXpsFontOptions enumeration describes the font options for an XPS part.
 old-location: print\expsfontoptions.htm
 tech.root: print
-ms.assetid: 3a92b219-91ee-4c11-b5c1-8e2e0cbff406
 ms.date: 04/20/2018
 keywords: ["_MIDL___MIDL_itf_filterpipeline_0000_0000_0002 enumeration"]
 ms.keywords: EXpsFontOptions, EXpsFontOptions enumeration [Print Devices], Font_Normal, Font_Obfusticate, __MIDL___MIDL_itf_filterpipeline_0000_0000_0002, filterpipeline/EXpsFontOptions, filterpipeline/Font_Normal, filterpipeline/Font_Obfusticate, filterpipeline_252cd44a-7a00-40fb-9245-364c1453e2ef.xml, print.expsfontoptions
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - filterpipeline.h
 api_name:
+ - __MIDL___MIDL_itf_filterpipeline_0000_0000_0002
  - EXpsFontOptions
 ---
 
@@ -58,5 +58,5 @@ The font code is human-readable.
 
 ### -field Font_Obfusticate
 
-The font code is obfusticated (that is, the internal structure of the font is scrambled in such a way to prevent someone from understaning how the structure works).
+The font code is obfuscated (that is, the internal structure of the font is scrambled in such a way to prevent someone from understanding how the structure works).
 

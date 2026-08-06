@@ -4,7 +4,6 @@ title: ScsiPortSetBusDataByOffset function (srb.h)
 description: The ScsiPortSetBusDataByOffset routine sets bus-configuration data for an adapter on a dynamically configurable I/O bus with a published, standard interface.
 old-location: storage\scsiportsetbusdatabyoffset.htm
 tech.root: storage
-ms.assetid: 64f46049-fbf0-4d9b-b5fe-9877a964755f
 ms.date: 03/29/2018
 keywords: ["ScsiPortSetBusDataByOffset function"]
 ms.keywords: ScsiPortSetBusDataByOffset, ScsiPortSetBusDataByOffset routine [Storage Devices], scsiprt_83fdaa63-8e40-41e6-8f60-b9cc98c6eade.xml, srb/ScsiPortSetBusDataByOffset, storage.scsiportsetbusdatabyoffset
@@ -52,43 +51,43 @@ The <b>ScsiPortSetBusDataByOffset</b> routine sets bus-configuration data for an
 
 ## -parameters
 
-### -param DeviceExtension 
+### -param DeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's device extension.
 
-### -param BusDataType 
+### -param BusDataType [in]
 
-[in]
+
 Contains a value of type <a href="/windows-hardware/drivers/ddi/ntddk/ne-ntddk-_bus_data_type">BUS_DATA_TYPE</a> that specifies the type of bus data to be set. Currently, its value can be <b>PCIConfiguration</b>. However, additional types of standardized, dynamically configurable buses will be supported in future. The upper bound on the bus types supported is always <b>MaximumBusDataType</b>.
 
-### -param SystemIoBusNumber 
+### -param SystemIoBusNumber [in]
 
-[in]
+
 Specifies the system-assigned number of the I/O bus on which the HBA is connected. The miniport driver's <a href="/previous-versions/windows/hardware/drivers/ff557300(v=vs.85)">HwScsiFindAdapter</a> routine obtains this value from the input PORT_CONFIGURATION_INFORMATION <b>SystemIoBusNumber</b> member.
 
-### -param SlotNumber 
+### -param SlotNumber [in]
 
-[in]
+
 Specifies the logical slot number of the HBA.
 
 When <b>PCIConfiguration</b> is specified as the <i>BusDataType</i>, this parameter must be specified as a PCI_SLOT_NUMBER-type value.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to a caller-supplied storage area with configuration information specific to <i>BusDataType</i>. 
 
 When <b>PCIConfiguration</b> is specified, the buffer contains some or all of the PCI_COMMON_CONFIG information for the given <i>SlotNumber</i>. The specified <i>Offset</i> and <i>Length</i> determine how much information is supplied.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the byte offset within the PCI_COMMON_CONFIG structure at which the caller-supplied configuration values begin. A miniport driver can use PCI_COMMON_HDR_LENGTH to specify the offset of the device-specific area in PCI_COMMON_CONFIG.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Specifies the number of bytes in the storage area at <i>Buffer</i>.
 
 ## -returns

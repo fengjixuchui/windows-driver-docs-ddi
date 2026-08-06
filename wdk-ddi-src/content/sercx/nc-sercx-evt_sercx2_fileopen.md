@@ -4,7 +4,6 @@ title: EVT_SERCX2_FILEOPEN (sercx.h)
 description: The EvtSerCx2FileOpen event callback function is called by version 2 of the serial framework extension (SerCx2) to notify the serial controller driver that a client opened a logical connection to the serial controller device and that a file object has been created to represent this connection.
 old-location: serports\evtsercx2fileopen.htm
 tech.root: serports
-ms.assetid: A8E6EB7F-B6FE-4FA1-88A4-52C584E69D5B
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX2_FILEOPEN callback function"]
 ms.keywords: 2/EvtSerCx2FileOpen, EVT_SERCX2_FILEOPEN, EVT_SERCX2_FILEOPEN callback, EvtSerCx2FileOpen, EvtSerCx2FileOpen callback function [Serial Ports], serports.evtsercx2fileopen
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
- - EvtSerCx2FileOpen
+ - EVT_SERCX2_FILEOPEN
 ---
 
 # EVT_SERCX2_FILEOPEN callback function
@@ -50,9 +49,9 @@ The <i>EvtSerCx2FileOpen</i> event callback function is called by version 2 of t
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the serial controller. The serial controller driver created this object in its <a href="/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add">EvtDriverDeviceAdd</a> callback function. For more information, see <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2initializedevice">SerCx2InitializeDevice</a>.
 
 ## -returns
@@ -96,3 +95,4 @@ The <b>EVT_SERCX2_FILEOPEN</b> function type is defined in the Sercx.h header fi
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2initializedevice">SerCx2InitializeDevice</a>
+

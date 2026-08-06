@@ -4,7 +4,6 @@ title: WdfWmiProviderIsEnabled function (wdfwmi.h)
 description: The WdfWmiProviderIsEnabled method determines if either data collection or event notification is enabled for a specified WMI data provider.
 old-location: wdf\wdfwmiproviderisenabled.htm
 tech.root: wdf
-ms.assetid: 7b4fd9ff-09a7-44df-a3e6-0af5d7ea624e
 ms.date: 02/26/2018
 keywords: ["WdfWmiProviderIsEnabled function"]
 ms.keywords: DFWMIRef_3231e5bd-aa1c-4bf8-92ef-4b6c29308d95.xml, WdfWmiProviderIsEnabled, WdfWmiProviderIsEnabled method, kmdf.wdfwmiproviderisenabled, wdf.wdfwmiproviderisenabled, wdfwmi/WdfWmiProviderIsEnabled
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfWmiProviderIsEnabled</b> method determines if either data collection o
 
 ## -parameters
 
-### -param WmiProvider 
+### -param WmiProvider [in]
 
-[in]
+
 A handle to a WMI provider object that the driver obtained by calling <a href="/windows-hardware/drivers/ddi/wdfwmi/nf-wdfwmi-wdfwmiprovidercreate">WdfWmiProviderCreate</a> or <a href="/windows-hardware/drivers/ddi/wdfwmi/nf-wdfwmi-wdfwmiinstancegetprovider">WdfWmiInstanceGetProvider</a>.
 
-### -param ProviderControl 
+### -param ProviderControl [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfwmi/ne-wdfwmi-_wdf_wmi_provider_control">WDF_WMI_PROVIDER_CONTROL</a>-typed value that specifies one of the types of control functions (data collection or event notification) that a WMI data provider can support.
 
 ## -returns

@@ -4,7 +4,6 @@ title: DXGKDDI_MIRACAST_CREATE_CONTEXT (dispmprt.h)
 description: Creates a kernel-mode context for a Miracast device.
 old-location: display\dxgkddimiracastcreatecontext.htm
 tech.root: display
-ms.assetid: BFF952CE-AA0F-4622-BBFC-946A45859FB7
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_MIRACAST_CREATE_CONTEXT callback function"]
 ms.keywords: DXGKDDI_MIRACAST_CREATE_CONTEXT, DXGKDDI_MIRACAST_CREATE_CONTEXT callback, DxgkDdiMiracastCreateContext, DxgkDdiMiracastCreateContext callback function [Display Devices], display.dxgkddimiracastcreatecontext, dispmprt/DxgkDdiMiracastCreateContext
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dispmprt.h
 api_name:
- - DxgkDdiMiracastCreateContext
+ - DXGKDDI_MIRACAST_CREATE_CONTEXT
 ---
 
 # DXGKDDI_MIRACAST_CREATE_CONTEXT callback function
@@ -50,24 +49,24 @@ Creates a kernel-mode context for a Miracast device.
 
 ## -parameters
 
-### -param DriverContext 
+### -param DriverContext [in]
 
-[in]
+
 A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.
 
-### -param MiracastCallbacks 
+### -param MiracastCallbacks [in]
 
-[in]
+
 A pointer to an operating system-provided buffer that holds a <a href="/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_miracast_display_callbacks">DXGK_MIRACAST_DISPLAY_CALLBACKS</a> structure that has pointers to callback functions that the driver can call.
 
-### -param MiracastContext 
+### -param MiracastContext [out]
 
-[out]
+
 A pointer to an operating system-provided buffer that holds the address of the context that the driver allocated for this Miracast device instance.
 
-### -param TargetId 
+### -param TargetId [out]
 
-[out]
+
 A pointer to an operating system-provided buffer that holds the  ID of the VidPN target that the Miracast device is connected to. The driver should report this target as type <b>D3DKMDT_VOT_MIRACAST</b> when the operating system calls the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_child_relations">DxgkDdiQueryChildRelations</a> function during device initialization.
 
 ## -returns
@@ -96,3 +95,4 @@ The operating system groups the <i>DxgkDdiMiracastCreateContext</i>, <a href="/w
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_child_relations">DxgkDdiQueryChildRelations</a>
+

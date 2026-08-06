@@ -4,7 +4,6 @@ title: FILTER_ATTACH (ndis.h)
 description: NDIS calls a filter driver's FilterAttach function to allocate and initialize a filter module's data structures.Note  You must declare the function by using the FILTER_ATTACH type.
 old-location: netvista\filterattach.htm
 tech.root: netvista
-ms.assetid: 0a15a8c9-74af-4d93-bd12-a3c81c177684
 ms.date: 05/02/2018
 keywords: ["FILTER_ATTACH callback function"]
 ms.keywords: FILTER_ATTACH, FILTER_ATTACH callback, FilterAttach, FilterAttach callback function [Network Drivers Starting with Windows Vista], filter_functions_ref_1e3f64d6-a779-4732-824a-87af6a7adc25.xml, ndis/FilterAttach, netvista.filterattach
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndis.h
 api_name:
- - FilterAttach
+ - FILTER_ATTACH
 ---
 
 # FILTER_ATTACH callback function
@@ -53,23 +52,23 @@ NDIS calls a filter driver's
 
 ## -parameters
 
-### -param NdisFilterHandle 
+### -param NdisFilterHandle [in]
 
-[in]
+
 An NDIS handle that identifies a filter module. The filter driver must save this handle. The
      handle is required in subsequent calls to 
      <b>NdisF<i>Xxx</i></b> functions.
 
-### -param FilterDriverContext 
+### -param FilterDriverContext [in]
 
-[in]
+
 The handle that the driver passed to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfregisterfilterdriver">
      NdisFRegisterFilterDriver</a> function that identifies the driver context area.
 
-### -param AttachParameters 
+### -param AttachParameters [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_filter_attach_parameters">
      NDIS_FILTER_ATTACH_PARAMETERS</a> structure that defines the initialization parameters for the filter
@@ -243,3 +242,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiswriteeventlogentry">NdisWriteEventLogEntry</a>
+

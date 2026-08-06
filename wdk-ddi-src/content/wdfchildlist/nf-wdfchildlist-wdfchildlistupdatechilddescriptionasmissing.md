@@ -4,7 +4,6 @@ title: WdfChildListUpdateChildDescriptionAsMissing function (wdfchildlist.h)
 description: The WdfChildListUpdateChildDescriptionAsMissing method informs the framework that a specified child device is currently unplugged or otherwise unavailable.
 old-location: wdf\wdfchildlistupdatechilddescriptionasmissing.htm
 tech.root: wdf
-ms.assetid: 21932a96-285c-490d-a1fb-a137aed57bbb
 ms.date: 02/26/2018
 keywords: ["WdfChildListUpdateChildDescriptionAsMissing function"]
 ms.keywords: DFDeviceObjectChildListRef_1a871104-3d76-4ecb-936e-c27c2a107f2e.xml, WdfChildListUpdateChildDescriptionAsMissing, WdfChildListUpdateChildDescriptionAsMissing method, kmdf.wdfchildlistupdatechilddescriptionasmissing, wdf.wdfchildlistupdatechilddescriptionasmissing, wdfchildlist/WdfChildListUpdateChildDescriptionAsMissing
@@ -53,14 +52,14 @@ The <b>WdfChildListUpdateChildDescriptionAsMissing</b> method informs the framew
 
 ## -parameters
 
-### -param ChildList 
+### -param ChildList [in]
 
-[in]
+
 A handle to a child list object.
 
-### -param IdentificationDescription 
+### -param IdentificationDescription [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a> structure that identifies a driver-supplied child <a href="/windows-hardware/drivers/wdf/dynamic-enumeration">identification description</a>.
 
 ## -returns

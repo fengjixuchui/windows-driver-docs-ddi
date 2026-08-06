@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl2.Output
 title: IDebugControl2::Output (dbgeng.h)
-description: The Output method formats a string and send the result to output callbacks that have been registered with the engine's clients.
+description: Learn how the Output method formats a string and sends the result to output callbacks that have been registered with the engine's clients.
 old-location: debugger\output.htm
 tech.root: debugger
-ms.assetid: 2c748325-3718-4fcc-98a3-3318d361ba6e
 ms.date: 05/03/2018
 keywords: ["IDebugControl2::Output"]
 ms.keywords: IDebugControl interface [Windows Debugging],Output method, IDebugControl2 interface [Windows Debugging],Output method, IDebugControl2.Output, IDebugControl2::Output, IDebugControl3 interface [Windows Debugging],Output method, IDebugControl3::Output, IDebugControl::Output, IDebugControl_4b29317b-e521-4deb-84dc-fc4bb7d6ca90.xml, Output, Output method [Windows Debugging], Output method [Windows Debugging],IDebugControl interface, Output method [Windows Debugging],IDebugControl2 interface, Output method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::Output, dbgeng/IDebugControl3::Output, dbgeng/IDebugControl::Output, debugger.output
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.Output
- - IDebugControl2.Output
- - IDebugControl3.Output
+ - IDebugControl2::Output
 ---
 
 # IDebugControl2::Output
@@ -52,14 +49,14 @@ The <b>Output</b>  method formats a string and send the result to output callbac
 
 ## -parameters
 
-### -param Mask 
+### -param Mask [in]
 
-[in]
+
 Specifies the output-type bit field.  See <a href="/windows-hardware/drivers/debugger/debug-output-xxx">DEBUG_OUTPUT_XXX</a> for possible values.
 
-### -param Format 
+### -param Format [in]
 
-[in]
+
 Specifies the format string, as in <b>printf</b>.  In general, conversion characters work exactly as in C. For the floating-point conversion characters the 64-bit argument is interpreted as a 32-bit floating-point number unless the <b>l</b>  modifier is used.
 
 The <b>%p</b> conversion character is supported, but it represents a pointer in a target's address space.  It cannot have any modifiers and it uses the debugger's internal address formatting.  The following additional conversion characters are supported.
@@ -235,9 +232,7 @@ String that contains the name of the specified symbol (and displacement, if any)
 </tr>
 </table>
 
-### -param param
-
-####### - ...
+### -param ...
 
 Specifies additional parameters that contain values to be inserted into the output during formatting.
 
@@ -294,3 +289,4 @@ When generating very large output strings, it is possible to reach the limits of
 
 
 <a href="/windows-hardware/drivers/ddi/wdbgexts/nc-wdbgexts-pwindbg_output_routine">dprintf</a>
+

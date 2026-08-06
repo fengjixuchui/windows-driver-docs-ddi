@@ -4,7 +4,6 @@ title: _NET_DMA_PNP_NOTIFICATION (netdma.h)
 description: The NET_DMA_PNP_NOTIFICATION structure specifies a power management notification in the NetDMA interface.
 old-location: netvista\net_dma_pnp_notification.htm
 tech.root: netvista
-ms.assetid: 8a505077-dec6-47cc-8730-d68e19309d3b
 ms.date: 05/02/2018
 keywords: ["NET_DMA_PNP_NOTIFICATION structure"]
 ms.keywords: "*PNET_DMA_PNP_NOTIFICATION, NET_DMA_PNP_NOTIFICATION, NET_DMA_PNP_NOTIFICATION structure [Network Drivers Starting with Windows Vista], PNET_DMA_PNP_NOTIFICATION, PNET_DMA_PNP_NOTIFICATION structure pointer [Network Drivers Starting with Windows Vista], _NET_DMA_PNP_NOTIFICATION, netdma/NET_DMA_PNP_NOTIFICATION, netdma/PNET_DMA_PNP_NOTIFICATION, netdma_ref_276d7903-f1d8-4fd4-91f0-dda490f8da02.xml, netvista.net_dma_pnp_notification"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - netdma.h
 api_name:
+ - _NET_DMA_PNP_NOTIFICATION
+ - PNET_DMA_PNP_NOTIFICATION
  - NET_DMA_PNP_NOTIFICATION
 ---
 
@@ -101,3 +102,4 @@ To send a power management notification to the NetDMA interface, NetDMA provider
 
 
 <a href="/windows-hardware/drivers/ddi/netdma/nf-netdma-netdmapnpeventnotify">NetDmaPnPEventNotify</a>
+

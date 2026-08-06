@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEODECODERGETHANDLE
 title: PFND3D11_1DDI_VIDEODECODERGETHANDLE (d3d10umddi.h)
 description: Returns the driver's handle for a video decoder that can be used by the application to configure content protection.
 old-location: display\videodecodergethandle.htm
-ms.assetid: 05c16416-d48c-44ce-b025-d62d763682bc
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_VIDEODECODERGETHANDLE callback function"]
 ms.keywords: PFND3D11_1DDI_VIDEODECODERGETHANDLE, PFND3D11_1DDI_VIDEODECODERGETHANDLE callback, d3d10umddi/pfnVideoDecoderGetHandle, display.videodecodergethandle, pfnVideoDecoderGetHandle, pfnVideoDecoderGetHandle callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoDecoderGetHandle
-product:
- - Windows
+ - PFND3D11_1DDI_VIDEODECODERGETHANDLE
 ---
 
 # PFND3D11_1DDI_VIDEODECODERGETHANDLE callback function
@@ -56,7 +53,7 @@ Returns the driver's handle for a video decoder that can be used by the applicat
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hDecoder* [in]
 
@@ -92,3 +89,4 @@ This function allows the driver to define its own handle to its state data for t
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddiarg_videodecoderextension">D3D11_1DDIARG_VIDEODECODEREXTENSION</a>
+

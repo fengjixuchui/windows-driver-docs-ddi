@@ -4,7 +4,6 @@ title: WdfIoTargetWdmGetTargetFileObject function (wdfiotarget.h)
 description: The WdfIoTargetWdmGetTargetFileObject method returns a pointer to the Windows Driver Model (WDM) file object that is associated with a specified remote I/O target.
 old-location: wdf\wdfiotargetwdmgettargetfileobject.htm
 tech.root: wdf
-ms.assetid: e3131dde-95fc-447c-9451-5c8af074ed24
 ms.date: 02/26/2018
 keywords: ["WdfIoTargetWdmGetTargetFileObject function"]
 ms.keywords: DFIOTargetRef_b6639c60-55f2-40be-a678-c7cf56a8e28f.xml, WdfIoTargetWdmGetTargetFileObject, WdfIoTargetWdmGetTargetFileObject method, kmdf.wdfiotargetwdmgettargetfileobject, wdf.wdfiotargetwdmgettargetfileobject, wdfiotarget/WdfIoTargetWdmGetTargetFileObject
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,9 +52,9 @@ The <b>WdfIoTargetWdmGetTargetFileObject</b> method returns a pointer to the Win
 
 ## -parameters
 
-### -param IoTarget 
+### -param IoTarget [in]
 
-[in]
+
 A handle to a remote I/O target object. This handle was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetcreate">WdfIoTargetCreate</a>.
 
 ## -returns

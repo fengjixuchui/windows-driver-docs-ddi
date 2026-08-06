@@ -4,7 +4,6 @@ title: WdfRequestCancelSentRequest function (wdfrequest.h)
 description: The WdfRequestCancelSentRequest method attempts to cancel an I/O request that the caller previously submitted to an I/O target.
 old-location: wdf\wdfrequestcancelsentrequest.htm
 tech.root: wdf
-ms.assetid: 24319054-5e5c-4330-86e5-b1527c48eaf2
 ms.date: 02/26/2018
 keywords: ["WdfRequestCancelSentRequest function"]
 ms.keywords: DFRequestObjectRef_203c9cb4-5e9d-4a6b-b30d-b60b8eadf6db.xml, WdfRequestCancelSentRequest, WdfRequestCancelSentRequest method, kmdf.wdfrequestcancelsentrequest, wdf.wdfrequestcancelsentrequest, wdfrequest/WdfRequestCancelSentRequest
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,9 +54,9 @@ The <b>WdfRequestCancelSentRequest</b> method attempts to cancel an I/O request 
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
 ## -returns

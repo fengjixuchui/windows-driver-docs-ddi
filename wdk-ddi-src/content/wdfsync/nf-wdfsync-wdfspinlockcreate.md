@@ -4,7 +4,6 @@ title: WdfSpinLockCreate function (wdfsync.h)
 description: The WdfSpinLockCreate method creates a framework spin-lock object.
 old-location: wdf\wdfspinlockcreate.htm
 tech.root: wdf
-ms.assetid: 2854fa05-61a9-4515-9dc1-463f160ae89a
 ms.date: 02/26/2018
 keywords: ["WdfSpinLockCreate function"]
 ms.keywords: DFSynchroRef_6e5f9884-82a8-4c1e-a039-9e01f4f3d0f1.xml, WdfSpinLockCreate, WdfSpinLockCreate method, kmdf.wdfspinlockcreate, wdf.wdfspinlockcreate, wdfsync/WdfSpinLockCreate
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfSpinLockCreate</b> method creates a framework spin-lock object.
 
 ## -parameters
 
-### -param SpinLockAttributes 
+### -param SpinLockAttributes [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that specifies attributes for the spin-lock object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param SpinLock 
+### -param SpinLock [out]
 
-[out]
+
 A pointer to a location that receives a handle to a new framework spin-lock object.
 
 ## -returns
@@ -107,9 +106,10 @@ status = WdfSpinLockCreate(
 <a href="/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate">WdfDriverCreate</a>
 
 
+<a href="/windows-hardware/drivers/ddi/wdfsync/nf-wdfsync-wdfspinlockacquire">WdfSpinLockAcquire</a>
 
-<a href="/previous-versions/windows/hardware/drivers/ff550040(v=vs.85)">WdfSpinLockAcquire</a>
+<a href="/windows-hardware/drivers/ddi/wdfsync/nf-wdfsync-wdfspinlockrelease">WdfSpinLockRelease</a>
 
+[WdfSpinlock rule (KMDF)](/windows-hardware/drivers/devtest/kmdf-wdfspinlock)
 
-
-<a href="/previous-versions/windows/hardware/drivers/ff550044(v=vs.85)">WdfSpinLockRelease</a>
+[WdfSpinLockRelease rule (KMDF)](/windows-hardware/drivers/devtest/kmdf-wdfspinlockrelease)

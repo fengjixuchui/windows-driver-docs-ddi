@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11._DOT11_PHY_TYPE_INFO
 title: _DOT11_PHY_TYPE_INFO (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_PHY_TYPE_INFO structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_phy_type_info.htm
 tech.root: netvista
-ms.assetid: 9b0cbcc4-e38a-4266-afc5-8b2755d79f4c
 ms.date: 02/16/2018
 keywords: ["DOT11_PHY_TYPE_INFO structure"]
 ms.keywords: "*PDOT11_PHY_TYPE_INFO, DOT11_PHY_TYPE_INFO, DOT11_PHY_TYPE_INFO structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_20e3d688-253f-416e-b9b0-8adec6bf7415.xml, PDOT11_PHY_TYPE_INFO, PDOT11_PHY_TYPE_INFO structure pointer [Network Drivers Starting with Windows Vista], _DOT11_PHY_TYPE_INFO, netvista.dot11_phy_type_info, windot11/DOT11_PHY_TYPE_INFO, windot11/PDOT11_PHY_TYPE_INFO"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - windot11.h
 api_name:
+ - _DOT11_PHY_TYPE_INFO
+ - PDOT11_PHY_TYPE_INFO
  - DOT11_PHY_TYPE_INFO
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_PHY_TYPE_INFO structure
@@ -127,13 +126,13 @@ The channel entry is defined, in units of megahertz (MHz), by a channel center f
 The length, in bytes, of the
      <b>ucChannelListBuffer</b> array. Each entry in this array is formatted as a ULONG data type.
 
-### -field ucChannelListBuffer
+### -field ucChannelListBuffer[1]
 
 An array containing channel descriptions for the PHY type specified in the
      <b>dot11PhyType</b> member.
 
 
-#### - uPhyId
+### -field uPhyId
 
 The identifier (ID) of the PHY that the 802.11 station will use for the scan. The PHY ID is the
        index within the list of supported PHYs returned by the driver through a query of
@@ -184,3 +183,4 @@ For more information about the ExtSTA operation mode, see
 
 
 <a href="/windows-hardware/drivers/network/oid-dot11-scan-request">OID_DOT11_SCAN_REQUEST</a>
+

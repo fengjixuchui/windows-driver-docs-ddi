@@ -4,7 +4,6 @@ title: _SYNTH_PORTPARAMS (dmusprop.h)
 description: The SYNTH_PORTPARAMS structure contains the configuration parameters for a DirectMusic port, which is a DirectMusic term for a device that sends or receives music data.
 old-location: audio\synth_portparams.htm
 tech.root: audio
-ms.assetid: 94c953ae-519b-4659-a4c9-a97db7dc31e9
 ms.date: 05/08/2018
 keywords: ["SYNTH_PORTPARAMS structure"]
 ms.keywords: "*PSYNTH_PORTPARAMS, PSYNTH_PORTPARAMS, PSYNTH_PORTPARAMS structure pointer [Audio Devices], SYNTH_PORTPARAMS, SYNTH_PORTPARAMS structure [Audio Devices], _SYNTH_PORTPARAMS, aud-prop_33f03864-8052-4dff-9613-1e8046450d16.xml, audio.synth_portparams, dmusprop/PSYNTH_PORTPARAMS, dmusprop/SYNTH_PORTPARAMS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dmusprop.h
 api_name:
+ - _SYNTH_PORTPARAMS
+ - PSYNTH_PORTPARAMS
  - SYNTH_PORTPARAMS
 ---
 
@@ -149,3 +150,4 @@ A <a href="/previous-versions/ff537405(v=vs.85)">KSPROPERTY_SYNTH_PORTPARAMETERS
 ## -see-also
 
 <a href="/previous-versions/ff537405(v=vs.85)">KSPROPERTY_SYNTH_PORTPARAMETERS</a>
+

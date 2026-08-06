@@ -2,10 +2,8 @@
 UID: NS:winddiui._DEVICEPROPERTYHEADER
 title: _DEVICEPROPERTYHEADER (winddiui.h)
 description: The DEVICEPROPERTYHEADER structure is used as an input parameter to a printer interface DLL's DrvDevicePropertySheets function.
-old-location: print\devicepropertyheader.htm
 tech.root: print
-ms.assetid: f1b9cd2f-fa5b-4f34-a237-06d00badf1d1
-ms.date: 04/20/2018
+ms.date: 03/09/2023
 keywords: ["DEVICEPROPERTYHEADER structure"]
 ms.keywords: "*PDEVICEPROPERTYHEADER, DEVICEPROPERTYHEADER, DEVICEPROPERTYHEADER structure [Print Devices], PDEVICEPROPERTYHEADER, PDEVICEPROPERTYHEADER structure pointer [Print Devices], _DEVICEPROPERTYHEADER, print.devicepropertyheader, print_interface-graphics_7dc4be04-e0ab-43bb-8e6d-f500cc7cf51c.xml, winddiui/DEVICEPROPERTYHEADER, winddiui/PDEVICEPROPERTYHEADER"
 req.header: winddiui.h
@@ -42,42 +40,28 @@ api_type:
 api_location:
  - winddiui.h
 api_name:
+ - _DEVICEPROPERTYHEADER
+ - PDEVICEPROPERTYHEADER
  - DEVICEPROPERTYHEADER
 ---
 
-# _DEVICEPROPERTYHEADER structure
-
-
 ## -description
 
-The DEVICEPROPERTYHEADER structure is used as an input parameter to a printer interface DLL's <a href="/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdevicepropertysheets">DrvDevicePropertySheets</a> function.
+The **DEVICEPROPERTYHEADER** structure is used as an input parameter to a printer interface DLL's [DrvDevicePropertySheets](./nf-winddiui-drvdevicepropertysheets.md) function.
 
 ## -struct-fields
 
 ### -field cbSize
 
-Size, in bytes, of the DEVICEPROPERTYHEADER structure.
+Size, in bytes, of the **DEVICEPROPERTYHEADER** structure.
 
 ### -field Flags
 
-Is a set of flags that can be set to the following value: 
+Is a set of flags that can be set to the following value:
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-DPS_NOPERMISSION
-
-</td>
-<td>
-If set, the user is not permitted to update device settings.
-
-</td>
-</tr>
-</table>
+| Value | Meaning |
+|---|---|
+| DPS_NOPERMISSION | If set, the user is not permitted to update device settings. |
 
 ### -field hPrinter
 

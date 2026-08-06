@@ -4,7 +4,6 @@ title: IStiUSD::Diagnostic (stiusd.h)
 description: A still image minidriver's IStiUSD::Diagnostic method runs diagnostic tests on a still image device.
 old-location: image\istiusd_diagnostic.htm
 tech.root: image
-ms.assetid: bf99c34e-5a71-4f2b-8dca-bed87d18b352
 ms.date: 05/03/2018
 keywords: ["IStiUSD::Diagnostic"]
 ms.keywords: Diagnostic, Diagnostic method [Imaging Devices], Diagnostic method [Imaging Devices],IStiUSD interface, IStiUSD interface [Imaging Devices],Diagnostic method, IStiUSD.Diagnostic, IStiUSD::Diagnostic, image.istiusd_diagnostic, stifnc_07917e25-965a-4a7e-82af-1cfef09d6748.xml, stiusd/IStiUSD::Diagnostic
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - stiusd.h
 api_name:
- - IStiUSD.Diagnostic
+ - IStiUSD::Diagnostic
 ---
 
 # IStiUSD::Diagnostic
@@ -69,3 +68,4 @@ The <b>IStiUSD::Diagnostic</b> method is called when a user clicks on the Scanne
 
 
 <a href="/windows-hardware/drivers/ddi/_image/index">IStiUSD</a>
+

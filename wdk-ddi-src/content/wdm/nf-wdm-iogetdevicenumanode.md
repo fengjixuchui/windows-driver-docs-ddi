@@ -4,7 +4,6 @@ title: IoGetDeviceNumaNode function (wdm.h)
 description: The IoGetDeviceNumaNode routine gets the node number of a device.
 old-location: kernel\iogetdevicenumanode.htm
 tech.root: kernel
-ms.assetid: a36e9d57-c820-43db-a6e0-e935bffca254
 ms.date: 04/30/2018
 keywords: ["IoGetDeviceNumaNode function"]
 ms.keywords: IoGetDeviceNumaNode, IoGetDeviceNumaNode routine [Kernel-Mode Driver Architecture], k104_5a8419d1-9b77-4461-bdc4-9cf5022fb508.xml, kernel.iogetdevicenumanode, wdm/IoGetDeviceNumaNode
@@ -50,14 +49,14 @@ The <b>IoGetDeviceNumaNode</b> routine gets the node number of a device.
 
 ## -parameters
 
-### -param Pdo 
+### -param Pdo [in]
 
-[in]
+
 A pointer to a physical device object (PDO). This parameter points to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure that represents a physical device.
 
-### -param NodeNumber 
+### -param NodeNumber [out]
 
-[out]
+
 A pointer to a location into which the routine writes the node number, if the node number is known.
 
 ## -returns

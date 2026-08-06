@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostSymbol2.GetSymbolKind
 title: IDebugHostSymbol2::GetSymbolKind (dbgmodel.h)
-description: Gets the kind of symbol that this is (e.g. a field, a base class, a type, etc...).
-ms.assetid: f789ce6d-3a23-41c5-9f37-0498fa0c1eff
+description: "The IDebugHostSymbol2::GetSymbolKind method, when called on a symbol, gets the kind of symbol, such as field, base class, or type."
 ms.date: 09/21/2018
 keywords: ["IDebugHostSymbol2::GetSymbolKind"]
 ms.keywords: IDebugHostSymbol2::GetSymbolKind, GetSymbolKind, IDebugHostSymbol2.GetSymbolKind, IDebugHostSymbol2::GetSymbolKind, IDebugHostSymbol2.GetSymbolKind
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostSymbol2.GetSymbolKind
+ - IDebugHostSymbol2::GetSymbolKind
 ---
 
 # IDebugHostSymbol2::GetSymbolKind

@@ -4,7 +4,6 @@ title: RtlGetElementGenericTable function (ntddk.h)
 description: The RtlGetElementGenericTable routine returns a pointer to the caller-supplied data for a particular generic table element.
 old-location: ifsk\rtlgetelementgenerictable.htm
 tech.root: ifsk
-ms.assetid: 85b5fce8-eac4-4cd8-9a24-22564aae915a
 ms.date: 04/16/2018
 keywords: ["RtlGetElementGenericTable function"]
 ms.keywords: RtlGetElementGenericTable, RtlGetElementGenericTable routine [Installable File System Drivers], ifsk.rtlgetelementgenerictable, ntddk/RtlGetElementGenericTable, rtlref_5127995d-65ea-4a8b-8b5b-ad64c7cc4c0d.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: Any level (See Remarks)
+req.irql: Any level (see Remarks)
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ The <b>RtlGetElementGenericTable</b> routine returns a pointer to the caller-sup
 
 ## -parameters
 
-### -param Table 
+### -param Table [in]
 
-[in]
+
 Pointer to the generic table (<a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_rtl_generic_table">RTL_GENERIC_TABLE</a>) from which the <i>I</i>th element is to be retrieved. The table must have been initialized by calling <b>RtlInitializeGenericTable</b>.
 
-### -param I 
+### -param I [in]
 
-[in]
+
 Index of the element selected. This value is zero-based, so the index of the last-inserted element currently in <i>Table</i> is always one less than the value returned by <b>RtlNumberGenericTableElements</b>.
 
 ## -returns

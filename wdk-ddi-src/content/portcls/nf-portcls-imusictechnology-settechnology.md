@@ -4,7 +4,6 @@ title: IMusicTechnology::SetTechnology (portcls.h)
 description: The SetTechnology method changes the Technology member of each KSDATARANGE_MUSIC structure in the data ranges for the miniport driver's pins.
 old-location: audio\imusictechnology_settechnology.htm
 tech.root: audio
-ms.assetid: 7e32b408-930d-4ef4-960e-1a0da5ef6803
 ms.date: 05/08/2018
 keywords: ["IMusicTechnology::SetTechnology"]
 ms.keywords: IMusicTechnology interface [Audio Devices],SetTechnology method, IMusicTechnology.SetTechnology, IMusicTechnology::SetTechnology, SetTechnology, SetTechnology method [Audio Devices], SetTechnology method [Audio Devices],IMusicTechnology interface, audio.imusictechnology_settechnology, audmp-routines_d1d6abaa-c4b8-4dce-8ce5-9fc12cc87852.xml, portcls/IMusicTechnology::SetTechnology
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMusicTechnology.SetTechnology
+ - IMusicTechnology::SetTechnology
 ---
 
 # IMusicTechnology::SetTechnology
@@ -50,9 +49,9 @@ The <code>SetTechnology</code> method changes the <b>Technology</b> member of ea
 
 ## -parameters
 
-### -param Technology 
+### -param Technology [in]
 
-[in]
+
 Specifies a technology GUID. This parameter should point to one of the GUIDs that are defined for the <b>Technology</b> member of the <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_music">KSDATARANGE_MUSIC</a> structure.
 
 ## -returns
@@ -132,3 +131,4 @@ For more information, see <a href="/windows-hardware/drivers/audio/music-technol
 
 
 <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdatarange_music">KSDATARANGE_MUSIC</a>
+

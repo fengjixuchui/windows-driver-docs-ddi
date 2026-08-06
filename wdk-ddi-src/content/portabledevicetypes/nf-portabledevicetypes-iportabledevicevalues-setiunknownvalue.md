@@ -4,7 +4,6 @@ title: IPortableDeviceValues::SetIUnknownValue (portabledevicetypes.h)
 description: Adds a new IUnknown value (type VT_UNKNOWN) or overwrites an existing one.
 old-location: wpddk\iportabledevicevalues_setiunknownvalue.htm
 tech.root: wpd_dk
-ms.assetid: 776d4097-a582-4708-8965-0dc956d73e0d
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::SetIUnknownValue"]
 ms.keywords: IPortableDeviceValues interface,SetIUnknownValue method, IPortableDeviceValues.SetIUnknownValue, IPortableDeviceValues::SetIUnknownValue, IPortableDeviceValuesSetIUnknownValue, SetIUnknownValue, SetIUnknownValue method, SetIUnknownValue method,IPortableDeviceValues interface, portabledevicetypes/IPortableDeviceValues::SetIUnknownValue, wpddk.iportabledevicevalues_setiunknownvalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.SetIUnknownValue
+ - IPortableDeviceValues::SetIUnknownValue
 ---
 
 # IPortableDeviceValues::SetIUnknownValue
@@ -51,14 +50,14 @@ Adds a new <b>IUnknown</b> value (type VT_UNKNOWN) or overwrites an existing one
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> that specifies the item to create or overwrite.
 
-### -param pValue 
+### -param pValue [in]
 
-[in]
+
 A pointer to an <b>IUnknown</b> interface that specifies the new value. The SDK copies a reference to the submitted interface and calls <b>AddRef</b> on it.
 
 ## -returns
@@ -94,3 +93,4 @@ If an existing value has the same key that is specified by the <i>key</i> parame
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-getiunknownvalue">IPortableDeviceValues::GetIUnknownValue</a>
+

@@ -1,10 +1,9 @@
 ---
-UID: NE:ks.__unnamed_enum_34
+UID: NE:ks.KSLIST_ENTRY_LOCATION
 title: KSLIST_ENTRY_LOCATION (ks.h)
-description: 
+description: "Learn more about: KSLIST_ENTRY_LOCATION enumeration"
 old-location: stream\kslist_entry_location.htm
 tech.root: stream
-ms.assetid: C2047F4D-6D24-432B-98F1-EA00D88E3860
 ms.date: 04/23/2018
 keywords: ["KSLIST_ENTRY_LOCATION enumeration"]
 ms.keywords: KSLIST_ENTRY_LOCATION, KSLIST_ENTRY_LOCATION enumeration [Streaming Media Devices], KsListEntryHead, KsListEntryTail, ks/KSLIST_ENTRY_LOCATION, ks/KsListEntryHead, ks/KsListEntryTail, stream.kslist_entry_location

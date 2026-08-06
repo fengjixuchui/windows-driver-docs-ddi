@@ -1,10 +1,9 @@
 ---
 UID: NS:wdm._SDEV_IDENTIFIER_INTERFACE
 title: _SDEV_IDENTIFIER_INTERFACE (wdm.h)
-description: This material is not yet available. This placeholder topic is provided as an example of documentation that may be included in a later release.
+description: This placeholder topic is provided as an example of documentation that may be included in a later release. This material is not yet available.
 old-location: kernel\_sdev_identifier_interface.htm
 tech.root: kernel
-ms.assetid: ead624cc-8aff-4a87-bdeb-066534caa61b
 ms.date: 04/30/2018
 keywords: ["SDEV_IDENTIFIER_INTERFACE structure"]
 ms.keywords: "*PSDEV_IDENTIFIER_INTERFACE, SDEV_IDENTIFIER_INTERFACE, SDEV_IDENTIFIER_INTERFACE structure [Kernel-Mode Driver Architecture], _SDEV_IDENTIFIER_INTERFACE, kernel._sdev_identifier_interface, wdm/SDEV_IDENTIFIER_INTERFACE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _SDEV_IDENTIFIER_INTERFACE
+ - PSDEV_IDENTIFIER_INTERFACE
  - SDEV_IDENTIFIER_INTERFACE
 ---
 
@@ -54,3 +55,10 @@ This material is not yet available. This placeholder topic is provided as an exa
 
 ## -struct-fields
 
+### -field InterfaceHeader
+
+### -field GetIdentifier
+
+## -remarks
+
+## -see-also

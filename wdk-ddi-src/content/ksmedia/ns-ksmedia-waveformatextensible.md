@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_2
+UID: NS:ksmedia.WAVEFORMATEXTENSIBLE
 title: WAVEFORMATEXTENSIBLE (ksmedia.h)
 description: The WAVEFORMATEXTENSIBLE structure specifies the format of an audio wave stream.
 old-location: audio\waveformatextensible.htm
 tech.root: audio
-ms.assetid: 54bcb18e-df4b-471c-b121-4db75ce5c49b
 ms.date: 08/20/2020
 keywords: ["WAVEFORMATEXTENSIBLE structure"]
 ms.keywords: "*PWAVEFORMATEXTENSIBLE, PWAVEFORMATEXTENSIBLE, PWAVEFORMATEXTENSIBLE structure pointer [Audio Devices], WAVEFORMATEXTENSIBLE, WAVEFORMATEXTENSIBLE structure [Audio Devices], aud-prop_d40f094e-44f9-4baa-8a15-03e4fb369501.xml, audio.waveformatextensible, ksmedia/PWAVEFORMATEXTENSIBLE, ksmedia/WAVEFORMATEXTENSIBLE"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PWAVEFORMATEXTENSIBLE
  - WAVEFORMATEXTENSIBLE
 ---
 
@@ -167,3 +167,4 @@ Because WAVEFORMATEXTENSIBLE is an extended version of WAVEFORMATEX, it can desc
 [KSAUDIO_CHANNEL_CONFIG](./ns-ksmedia-ksaudio_channel_config.md)
 
 [WAVEFORMATEX](/windows/win32/api/mmreg/ns-mmreg-waveformatex)
+

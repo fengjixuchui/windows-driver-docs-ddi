@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILMSGMWIDETAIL
 title: RILMSGMWIDETAIL (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILMSGMWIDETAIL structure for internal use only. Don't use the RILMSGMWIDETAIL structure in your code."
 old-location: netvista\rilmsgmwidetail.htm
 tech.root: netvista
-ms.assetid: 69371414-9f4a-46a6-8622-5750db7a0c5b
 ms.date: 05/02/2018
 keywords: ["RILMSGMWIDETAIL structure"]
 ms.keywords: "*LPRILMSGMWIDETAIL, RILMSGMWIDETAIL, RILMSGMWIDETAIL structure [Network Drivers Starting with Windows Vista], netvista.rilmsgmwidetail, ntddrilapitypes/RILMSGMWIDETAIL"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILMSGMWIDETAIL
+ - LPRILMSGMWIDETAIL
 ---
 
 # RILMSGMWIDETAIL structure (ntddrilapitypes.h)

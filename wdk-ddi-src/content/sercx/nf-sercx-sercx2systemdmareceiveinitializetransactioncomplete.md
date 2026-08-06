@@ -4,7 +4,6 @@ title: SerCx2SystemDmaReceiveInitializeTransactionComplete function (sercx.h)
 description: The SerCx2SystemDmaReceiveInitializeTransactionComplete method notifies version 2 of the serial framework extension (SerCx2) that the serial driver has finished initializing the serial controller hardware in preparation for a new system-DMA-receive transaction.
 old-location: serports\sercx2systemdmareceiveinitializetransactioncomplete.htm
 tech.root: serports
-ms.assetid: B65DC4AD-FB24-4F1D-A1E9-F9B38160908E
 ms.date: 04/23/2018
 keywords: ["SerCx2SystemDmaReceiveInitializeTransactionComplete function"]
 ms.keywords: 2/SerCx2SystemDmaReceiveInitializeTransactionComplete, SerCx2SystemDmaReceiveInitializeTransactionComplete, SerCx2SystemDmaReceiveInitializeTransactionComplete method [Serial Ports], serports.sercx2systemdmareceiveinitializetransactioncomplete
@@ -50,14 +49,14 @@ The <b>SerCx2SystemDmaReceiveInitializeTransactionComplete</b> method notifies v
 
 ## -parameters
 
-### -param SystemDmaReceive 
+### -param SystemDmaReceive [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMARECEIVE</a> handle to a system-DMA-receive object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2systemdmareceivecreate">SerCx2SystemDmaReceiveCreate</a> method to create this object.
 
-### -param InitSuccess 
+### -param InitSuccess [in]
 
-[in]
+
 Whether the initialization was successful. If <b>TRUE</b>, the initialization succeeded. If <b>FALSE</b>, the initialization failed.
 
 ## -remarks

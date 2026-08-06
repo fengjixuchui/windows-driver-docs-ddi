@@ -4,7 +4,6 @@ title: RtlRunOnceComplete function (ntddk.h)
 description: The RtlRunOnceComplete routine completes the one-time initialization began by RtlRunOnceBeginInitialize.
 old-location: kernel\rtlrunoncecomplete.htm
 tech.root: kernel
-ms.assetid: 1cdc4fde-2370-4e58-9e67-dec731cdb935
 ms.date: 04/30/2018
 keywords: ["RtlRunOnceComplete function"]
 ms.keywords: RtlRunOnceComplete, RtlRunOnceComplete routine [Kernel-Mode Driver Architecture], k109_00290091-7130-4217-8098-0baa7309223c.xml, kernel.rtlrunoncecomplete, ntddk/RtlRunOnceComplete
@@ -50,14 +49,14 @@ The <b>RtlRunOnceComplete</b> routine completes the one-time initialization bega
 
 ## -parameters
 
-### -param RunOnce 
+### -param RunOnce [in, out]
 
-[in, out]
+
 Pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">RTL_RUN_ONCE</a> one-time initialization structure.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Drivers can optionally specify one or more of the following flags:
 
 
@@ -74,9 +73,9 @@ Operate in asynchronous mode. This mode enables multiple completion attempts to 
 
 The initialization attempt failed.
 
-### -param Context 
+### -param Context [in, optional]
 
-[in, optional]
+
 Specifies the initialized data.
 
 ## -returns

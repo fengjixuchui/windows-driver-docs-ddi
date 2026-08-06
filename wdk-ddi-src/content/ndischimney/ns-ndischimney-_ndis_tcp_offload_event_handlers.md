@@ -4,7 +4,6 @@ title: _NDIS_TCP_OFFLOAD_EVENT_HANDLERS (ndischimney.h)
 description: The NDIS_TCP_OFFLOAD_EVENT_HANDLERS structure contains the entry points for the NDIS functions for the TCP chimney.
 old-location: netvista\ndis_tcp_offload_event_handlers.htm
 tech.root: netvista
-ms.assetid: 72863a3e-9907-43e1-ad83-831a972ab823
 ms.date: 05/02/2018
 keywords: ["NDIS_TCP_OFFLOAD_EVENT_HANDLERS structure"]
 ms.keywords: "*PNDIS_TCP_OFFLOAD_EVENT_HANDLERS, NDIS_TCP_OFFLOAD_EVENT_HANDLERS, NDIS_TCP_OFFLOAD_EVENT_HANDLERS structure [Network Drivers Starting with Windows Vista], PNDIS_TCP_OFFLOAD_EVENT_HANDLERS, PNDIS_TCP_OFFLOAD_EVENT_HANDLERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_TCP_OFFLOAD_EVENT_HANDLERS, ndischimney/NDIS_TCP_OFFLOAD_EVENT_HANDLERS, ndischimney/PNDIS_TCP_OFFLOAD_EVENT_HANDLERS, netvista.ndis_tcp_offload_event_handlers, tcp_chim_struct_ae670e4d-ac1a-4dd2-95f5-2f2b202003e4.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndischimney.h
 api_name:
+ - _NDIS_TCP_OFFLOAD_EVENT_HANDLERS
+ - PNDIS_TCP_OFFLOAD_EVENT_HANDLERS
  - NDIS_TCP_OFFLOAD_EVENT_HANDLERS
 ---
 
@@ -60,7 +61,7 @@ The NDIS_TCP_OFFLOAD_EVENT_HANDLERS structure contains the entry points for the 
 ### -field Header
 
 The NDIS object header, which is formatted as an 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 ### -field NdisTcpOffloadEventHandler
 
@@ -105,7 +106,7 @@ An offload target copies the entry points in the NDIS_TCP_OFFLOAD_EVENT_HANDLERS
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -132,3 +133,4 @@ An offload target copies the entry points in the NDIS_TCP_OFFLOAD_EVENT_HANDLERS
 
 
 <a href="/windows-hardware/drivers/ddi/ndischimney/nc-ndischimney-ndis_tcp_offload_send_complete">NdisTcpOffloadSendComplete</a>
+

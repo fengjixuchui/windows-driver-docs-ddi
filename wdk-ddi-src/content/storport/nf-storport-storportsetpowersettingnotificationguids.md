@@ -4,7 +4,6 @@ title: StorPortSetPowerSettingNotificationGuids function (storport.h)
 description: The StorPortSetPowerSettingNotificationGuids routine enables a miniport to receive power setting notifications. The miniport registers an array of GUIDs which identify the power settings to receive power change notifications for.
 old-location: storage\storportsetpowersettingnotificationguids.htm
 tech.root: storage
-ms.assetid: FB74E774-8CDE-4DE4-942E-10AF4BEFF63C
 ms.date: 03/29/2018
 keywords: ["StorPortSetPowerSettingNotificationGuids function"]
 ms.keywords: Adaptive Setting, HIPM/DIPM Setting, StorPortSetPowerSettingNotificationGuids, StorPortSetPowerSettingNotificationGuids routine [Storage Devices], storage.storportsetpowersettingnotificationguids, storport/StorPortSetPowerSettingNotificationGuids
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,19 +49,19 @@ The <b>StorPortSetPowerSettingNotificationGuids</b> routine enables a miniport t
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param GuidCount 
+### -param GuidCount [in]
 
-[in]
+
 The number of GUIDs in the <i>Guid</i> array.
 
-### -param Guid 
+### -param Guid [in]
 
-[in]
+
 An array of power setting GUIDs to register for notification. A typical use for registering these GUIDs is for SATA miniports to receive notifications for AHCI Link Power Management setting changes. The  AHCI Link Power Management settings defined by the Microsoft AHCI StorPort miniport driver are the following.
 
 

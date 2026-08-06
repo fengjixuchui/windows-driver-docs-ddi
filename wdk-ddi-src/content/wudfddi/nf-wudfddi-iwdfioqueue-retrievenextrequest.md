@@ -4,7 +4,6 @@ title: IWDFIoQueue::RetrieveNextRequest (wudfddi.h)
 description: The RetrieveNextRequest method retrieves the next I/O request from an I/O queue.
 old-location: wdf\iwdfioqueue_retrievenextrequest.htm
 tech.root: wdf
-ms.assetid: 2d9dbfc8-7563-4c47-9b34-27cce2b847b2
 ms.date: 02/26/2018
 keywords: ["IWDFIoQueue::RetrieveNextRequest"]
 ms.keywords: IWDFIoQueue interface,RetrieveNextRequest method, IWDFIoQueue.RetrieveNextRequest, IWDFIoQueue::RetrieveNextRequest, RetrieveNextRequest, RetrieveNextRequest method, RetrieveNextRequest method,IWDFIoQueue interface, UMDFQueueObjectRef_d76f57ad-f8d5-4a09-861f-26c6d5e6a709.xml, umdf.iwdfioqueue_retrievenextrequest, wdf.iwdfioqueue_retrievenextrequest, wudfddi/IWDFIoQueue::RetrieveNextRequest
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoQueue.RetrieveNextRequest
+ - IWDFIoQueue::RetrieveNextRequest
 ---
 
 # IWDFIoQueue::RetrieveNextRequest
@@ -52,9 +51,9 @@ The <b>RetrieveNextRequest</b> method retrieves the next I/O request from an I/O
 
 ## -parameters
 
-### -param ppRequest 
+### -param ppRequest [out]
 
-[out]
+
 A pointer to a buffer that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest">IWDFIoRequest</a> interface for the next request object, or receives <b>NULL</b> if the queue is empty or if the next request is not found.
 
 ## -returns
@@ -187,7 +186,6 @@ CMyDevice::ServiceSwitchChangeQueue(
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfioqueue">IWDFIoQueue</a>
@@ -199,3 +197,4 @@ CMyDevice::ServiceSwitchChangeQueue(
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest">IWDFIoRequest</a>
+

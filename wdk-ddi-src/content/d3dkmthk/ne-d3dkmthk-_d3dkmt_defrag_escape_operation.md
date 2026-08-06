@@ -2,7 +2,6 @@
 UID: NE:d3dkmthk._D3DKMT_DEFRAG_ESCAPE_OPERATION
 title: _D3DKMT_DEFRAG_ESCAPE_OPERATION (d3dkmthk.h)
 description: Defragmentation escape operations.
-ms.assetid: 50c09c88-672c-492c-bbd6-6f25ecb2ed50
 ms.date: 10/19/2018
 keywords: ["D3DKMT_DEFRAG_ESCAPE_OPERATION enumeration"]
 ms.keywords: _D3DKMT_DEFRAG_ESCAPE_OPERATION, D3DKMT_DEFRAG_ESCAPE_OPERATION,
@@ -32,6 +31,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_DEFRAG_ESCAPE_OPERATION
+ - D3DKMT_DEFRAG_ESCAPE_OPERATION
 dev_langs:
  - c++
 ---

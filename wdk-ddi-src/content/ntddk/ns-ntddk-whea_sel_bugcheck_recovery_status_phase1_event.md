@@ -1,10 +1,10 @@
 ---
 UID: NS:ntddk._WHEA_SEL_BUGCHECK_RECOVERY_STATUS_PHASE1_EVENT
 title: WHEA_SEL_BUGCHECK_RECOVERY_STATUS_PHASE1_EVENT
+tech.root: whea
 ms.date: 04/28/2020
-ms.topic: language-reference
 targetos: Windows
-description: 
+description: "Learn more about: WHEA_SEL_BUGCHECK_RECOVERY_STATUS_PHASE1_EVENT"
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -28,6 +28,7 @@ api_location:
  - ntddk.h
 api_name:
  - _WHEA_SEL_BUGCHECK_RECOVERY_STATUS_PHASE1_EVENT
+ - PWHEA_SEL_BUGCHECK_RECOVERY_STATUS_PHASE1_EVENT
  - WHEA_SEL_BUGCHECK_RECOVERY_STATUS_PHASE1_EVENT
 f1_keywords:
  - _WHEA_SEL_BUGCHECK_RECOVERY_STATUS_PHASE1_EVENT
@@ -49,6 +50,16 @@ Reserved for system use.
 ### -field WheaEventLogEntry
 
 ### -field Success
+
+### -field Version
+
+### -field EntryCount
+
+### -field Data
+
+### -field Data.DumpPolicy
+
+### -field Data.Reserved
 
 ## -remarks
 

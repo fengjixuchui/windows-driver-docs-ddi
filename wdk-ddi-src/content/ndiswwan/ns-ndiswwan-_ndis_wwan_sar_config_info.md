@@ -3,7 +3,6 @@ UID: NS:ndiswwan._NDIS_WWAN_SAR_CONFIG_INFO
 title: _NDIS_WWAN_SAR_CONFIG_INFO (ndiswwan.h)
 description: The NDIS_WWAN_SAR_CONFIG_INFO structure describes a modem's current Specific Absorption Rate (SAR) configuration information.
 tech.root: netvista
-ms.assetid: a5a682b3-b08c-4525-a7f2-dec9df51590c
 ms.date: 08/20/2018
 keywords: ["NDIS_WWAN_SAR_CONFIG_INFO structure"]
 ms.keywords: _NDIS_WWAN_SAR_CONFIG_INFO, NDIS_WWAN_SAR_CONFIG_INFO, *PNDIS_WWAN_SAR_CONFIG_INFO,
@@ -37,6 +36,8 @@ api_location:
  - ndiswwan.h
 api_name:
  - _NDIS_WWAN_SAR_CONFIG_INFO
+ - PNDIS_WWAN_SAR_CONFIG_INFO
+ - NDIS_WWAN_SAR_CONFIG_INFO
 ---
 
 # _NDIS_WWAN_SAR_CONFIG_INFO structure
@@ -58,7 +59,7 @@ The header with type, revision, and size information about the **NDIS_WWAN_SAR_C
 | Revision | NDIS_WWAN_SAR_CONFIG_INFO_REVISION_1 |
 | Size | sizeof(NDIS_WWAN_SAR_CONFIG_INFO) |
 
-For more information about these members, see [**NDIS_OBJECT_HEADER**](../ntddndis/ns-ntddndis-_ndis_object_header.md).
+For more information about these members, see [**NDIS_OBJECT_HEADER**](../objectheader/ns-objectheader-ndis_object_header.md).
 
 ### -field uStatus
 
@@ -88,3 +89,4 @@ This structure is used in the [NDIS_STATUS_WWAN_SAR_CONFIG](/windows-hardware/dr
 [NDIS_STATUS_WWAN_SAR_CONFIG](/windows-hardware/drivers/network/ndis-status-wwan-sar-config)
 
 [**WWAN_SAR_CONFIG_INFO**](../wwan/ns-wwan-_wwan_sar_config_info.md)
+

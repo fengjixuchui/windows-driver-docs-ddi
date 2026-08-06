@@ -4,7 +4,6 @@ title: _MSFC_FCAdapterHBAAttributes (hbapiwmi.h)
 description: The MSFC_FCAdapterHBAAttributes structure is used by a WMI provider to expose attribute information associated with a fibre channel adapter.
 old-location: storage\msfc_fcadapterhbaattributes.htm
 tech.root: storage
-ms.assetid: 5efe0ede-b55f-499e-9f95-66652cd8a872
 ms.date: 03/29/2018
 keywords: ["MSFC_FCAdapterHBAAttributes structure"]
 ms.keywords: "*PMSFC_FCAdapterHBAAttributes, MSFC_FCAdapterHBAAttributes, MSFC_FCAdapterHBAAttributes structure [Storage Devices], PMSFC_FCAdapterHBAAttributes, PMSFC_FCAdapterHBAAttributes structure pointer [Storage Devices], _MSFC_FCAdapterHBAAttributes, hbapiwmi/MSFC_FCAdapterHBAAttributes, hbapiwmi/PMSFC_FCAdapterHBAAttributes, storage.msfc_fcadapterhbaattributes, structs-Fibre_07d902b9-2da0-4bca-94ab-db837beff481.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hbapiwmi.h
 api_name:
+ - _MSFC_FCAdapterHBAAttributes
+ - PMSFC_FCAdapterHBAAttributes
  - MSFC_FCAdapterHBAAttributes
 ---
 
@@ -125,3 +126,4 @@ Contains the name of the HBA manufacturer.
 
 
 <a href="/windows-hardware/drivers/storage/msfc-fcadapterhbaattributes-wmi-class">MSFC_FCAdapterHBAAttributes WMI Class</a>
+

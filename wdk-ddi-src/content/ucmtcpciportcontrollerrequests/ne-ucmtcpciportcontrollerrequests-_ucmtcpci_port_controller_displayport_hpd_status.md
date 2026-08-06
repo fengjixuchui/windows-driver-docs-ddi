@@ -4,7 +4,6 @@ title: _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS (ucmtcpciportcontrollerr
 description: Defines values to determine whether a DisplayPort device is plugged in.
 old-location: buses\ucmtcpci_port_controller_displayport_hpd_status.htm
 tech.root: usbref
-ms.assetid: 6BE5948B-DAC9-4448-AE22-108805BB364C
 ms.date: 05/07/2018
 keywords: ["UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS enumeration"]
 ms.keywords: UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS, UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS enumeration [Buses], UcmTcpciPortControllerHPDStatusHigh, UcmTcpciPortControllerHPDStatusLow, _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS, buses.ucmtcpci_port_controller_displayport_hpd_status, ucmtcpciportcontrollerrequests/UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS, ucmtcpciportcontrollerrequests/UcmTcpciPortControllerHPDStatusHigh, ucmtcpciportcontrollerrequests/UcmTcpciPortControllerHPDStatusLow
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Ucmtcpciportcontrollerrequests.h
 api_name:
+ - _UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS
  - UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS
 ---
 
@@ -63,3 +63,4 @@ A DisplayPort device such as a monitor is plugged in.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ucmtcpciportcontrollerrequests/ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_displayport_hpd_status_changed">IOCTL_UCMTCPCI_PORT_CONTROLLER_DISPLAYPORT_HPD_STATUS_CHANGED</a>
+

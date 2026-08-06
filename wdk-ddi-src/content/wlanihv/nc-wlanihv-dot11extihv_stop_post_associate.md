@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_STOP_POST_ASSOCIATE
 title: DOT11EXTIHV_STOP_POST_ASSOCIATE (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_STOP_POST_ASSOCIATE callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvstoppostassociate.htm
 tech.root: netvista
-ms.assetid: bd924049-3932-4e85-908e-c3fb488b3a8c
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_STOP_POST_ASSOCIATE callback"]
 ms.keywords: DOT11EXTIHV_STOP_POST_ASSOCIATE, Dot11ExtIhvStopPostAssociate, Dot11ExtIhvStopPostAssociate callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_674652ff-a01d-493b-9b11-bff378f25f2a.xml, netvista.dot11extihvstoppostassociate, wlanihv/Dot11ExtIhvStopPostAssociate
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_STOP_POST_ASSOCIATE
  - wlanihv/DOT11EXTIHV_STOP_POST_ASSOCIATE
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtIhvStopPostAssociate
+ - DOT11EXTIHV_STOP_POST_ASSOCIATE
 ---
 
 # DOT11EXTIHV_STOP_POST_ASSOCIATE callback
@@ -57,17 +55,17 @@ The operating system calls the
 
 ## -parameters
 
-### -param hIhvExtAdapter 
+### -param hIhvExtAdapter [in, optional]
 
-[in, optional]
+
 The handle used by the IHV Extensions DLL to reference the wireless LAN (WLAN) adapter. This
      handle value was specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param pPeer 
+### -param pPeer [in]
 
-[in]
+
 A pointer to a
      <a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a> structure, which
      contains the media access control (MAC) of the access point (AP) with which the IHV Extensions DLL
@@ -77,9 +75,9 @@ A pointer to a
 <div class="alert"><b>Note</b>  For Windows Vista, the IHV Extensions DLL supports only infrastructure basic
      service set (BSS) networks.</div>
 
-### -param dot11AssocStatus 
+### -param dot11AssocStatus [in]
 
-[in]
+
 A
      <a href="/windows-hardware/drivers/network/dot11-assoc-status-status-codes">DOT11_ASSOC_STATUS</a> type that specifies the
      association status of the 802.11 station to the network.
@@ -162,3 +160,4 @@ For more information about the post-association operation, see
 
 
 <a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a>
+

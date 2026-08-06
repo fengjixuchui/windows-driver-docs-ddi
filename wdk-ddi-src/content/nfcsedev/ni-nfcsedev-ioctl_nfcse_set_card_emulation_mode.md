@@ -4,7 +4,6 @@ title: IOCTL_NFCSE_SET_CARD_EMULATION_MODE (nfcsedev.h)
 description: The IOCTL_NFCSE_SET_CARD_EMULATION_MODE control code sets whether the specified secure element is exposed in card emulation mode.
 old-location: nfpdrivers\ioctl_nfcse_set_card_emulation_mode.htm
 tech.root: nfpdrivers
-ms.assetid: B7E55FDE-573C-4F45-869C-A3EE253BD777
 ms.date: 02/15/2018
 keywords: ["IOCTL_NFCSE_SET_CARD_EMULATION_MODE IOCTL"]
 ms.keywords: IOCTL_NFCSE_SET_CARD_EMULATION_MODE, IOCTL_NFCSE_SET_CARD_EMULATION_MODE control, IOCTL_NFCSE_SET_CARD_EMULATION_MODE control code [Near-Field Proximity Drivers], nfcsedev/IOCTL_NFCSE_SET_CARD_EMULATION_MODE, nfpdrivers.ioctl_nfcse_set_card_emulation_mode
@@ -50,6 +49,8 @@ The <b>IOCTL_NFCSE_SET_CARD_EMULATION_MODE</b>
    control code sets whether the specified secure element is exposed in card emulation mode. When a secure element is “exposed” as card emulation, it means when the device is brought to an external reader that secure element can be accessed by the reader. The IOCTL is issued on a file handle opened with a relative filename ‘SEManage’. The driver MUST grant exclusive access to the client to manage card emulation mode, that is, subsequent calls to open a file handle using relative filename ‘SEManage’ will fail with STATUS_ACCESS_DENIED until the client with exclusive access closes its file handle.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

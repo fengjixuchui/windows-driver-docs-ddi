@@ -4,7 +4,6 @@ title: WdfCmResourceListGetDescriptor function (wdfresource.h)
 description: The WdfCmResourceListGetDescriptor method returns a pointer to a resource descriptor that is contained in a specified resource list.
 old-location: wdf\wdfcmresourcelistgetdescriptor.htm
 tech.root: wdf
-ms.assetid: 5aa96fed-83ca-417e-876d-a734be6f27dd
 ms.date: 02/26/2018
 keywords: ["WdfCmResourceListGetDescriptor function"]
 ms.keywords: DFResourceObjectRef_bdc580d1-2283-4549-a26b-cbe0f2a84e19.xml, WdfCmResourceListGetDescriptor, WdfCmResourceListGetDescriptor method, kmdf.wdfcmresourcelistgetdescriptor, wdf.wdfcmresourcelistgetdescriptor, wdfresource/WdfCmResourceListGetDescriptor
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfCmResourceListGetDescriptor</b> method returns a pointer to a resource
 
 ## -parameters
 
-### -param List 
+### -param List [in]
 
-[in]
+
 A handle to a framework resource-list object that represents a list of hardware resources for a device.
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 A zero-based value that is used as an index into the logical configuration that <i>List</i> specifies.
 
 ## -returns

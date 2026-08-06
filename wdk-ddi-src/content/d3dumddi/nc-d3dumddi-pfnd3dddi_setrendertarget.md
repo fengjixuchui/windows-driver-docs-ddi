@@ -4,7 +4,6 @@ title: PFND3DDDI_SETRENDERTARGET (d3dumddi.h)
 description: The SetRenderTarget function sets the render target surface.
 old-location: display\setrendertarget.htm
 tech.root: display
-ms.assetid: 067378bd-a2d8-4c83-9436-531519eadaa3
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETRENDERTARGET callback function"]
 ms.keywords: PFND3DDDI_SETRENDERTARGET, PFND3DDDI_SETRENDERTARGET callback, SetRenderTarget, SetRenderTarget callback function [Display Devices], UserModeDisplayDriver_Functions_c6c2e714-ac5c-4106-98da-1d87a322c652.xml, d3dumddi/SetRenderTarget, display.setrendertarget
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - SetRenderTarget
-product:
- - Windows
+ - PFND3DDDI_SETRENDERTARGET
 ---
 
 # PFND3DDDI_SETRENDERTARGET callback function
@@ -56,7 +53,7 @@ The <i>SetRenderTarget</i> function sets the render target surface.
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -73,3 +70,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dd
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

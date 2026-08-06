@@ -4,7 +4,6 @@ title: IOCTL_SMARTCARD_IS_PRESENT (winsmcrd.h)
 description: The IOCTL_SMARTCARD_IS_PRESENT control code detects whether a smart card is currently detected.
 old-location: nfpdrivers\ioctl_smartcard_is_present.htm
 tech.root: nfpdrivers
-ms.assetid: 8EF97A77-7A6A-4FDF-82AA-05481AEA7C28
 ms.date: 02/15/2018
 keywords: ["IOCTL_SMARTCARD_IS_PRESENT IOCTL"]
 ms.keywords: IOCTL_SMARTCARD_IS_PRESENT, IOCTL_SMARTCARD_IS_PRESENT control, IOCTL_SMARTCARD_IS_PRESENT control code [Near-Field Proximity Drivers], nfpdrivers.ioctl_smartcard_is_present, winsmcrd/IOCTL_SMARTCARD_IS_PRESENT
@@ -50,6 +49,8 @@ The <b>IOCTL_SMARTCARD_IS_PRESENT</b>
    control code detects whether a smart card is currently detected. If a card is present, it returns immediately with STATUS_SUCCESS. If no smart card is detected, it subscribes to the smart card arrival event and is kept pending. Closing the file handle unsubscribes the event.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

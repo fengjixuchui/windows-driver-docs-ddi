@@ -4,14 +4,13 @@ title: RtlSubAuthoritySid function (ntifs.h)
 description: The RtlSubAuthoritySid routine returns a pointer to a specified subauthority of a security identifier (SID).
 old-location: ifsk\rtlsubauthoritysid.htm
 tech.root: ifsk
-ms.assetid: bd3f84ad-d617-4744-b423-1d82da3b05c0
 ms.date: 04/16/2018
 keywords: ["RtlSubAuthoritySid function"]
 ms.keywords: RtlSubAuthoritySid, RtlSubAuthoritySid routine [Installable File System Drivers], ifsk.rtlsubauthoritysid, ntifs/RtlSubAuthoritySid, rtlref_d901f9ac-d7c4-49e1-871e-75aee9fa8c2b.xml
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -51,9 +50,9 @@ The <b>RtlSubAuthoritySid</b> routine returns a pointer to a specified subauthor
 
 ## -parameters
 
-### -param Sid 
+### -param Sid [in]
 
-[in]
+
 Pointer to the SID structure. The SID must have been initialized by calling <b>RtlInitializeSid</b>.
 
 ### -param SubAuthority
@@ -66,7 +65,7 @@ If the call to <b>RtlSubAuthoritySid</b> succeeds, the return value is a pointer
 
 ## -remarks
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

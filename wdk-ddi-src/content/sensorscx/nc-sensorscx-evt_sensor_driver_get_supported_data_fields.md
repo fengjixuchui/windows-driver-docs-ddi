@@ -4,7 +4,6 @@ title: EVT_SENSOR_DRIVER_GET_SUPPORTED_DATA_FIELDS (sensorscx.h)
 description: This callback function returns a list of data fields supported by the specified sensor.
 old-location: sensors\evtsensorgetsupporteddatafields.htm
 tech.root: sensors
-ms.assetid: 8C73DFE2-E87A-460D-8EBE-CF3767CAA23F
 ms.date: 10/16/2020
 keywords: ["EVT_SENSOR_DRIVER_GET_SUPPORTED_DATA_FIELDS callback function"]
 ms.keywords: EVT_SENSOR_DRIVER_GET_SUPPORTED_DATA_FIELDS, EVT_SENSOR_DRIVER_GET_SUPPORTED_DATA_FIELDS callback, EvtSensorGetSupportedDataFields, EvtSensorGetSupportedDataFields callback function [Sensor Devices], sensors.evtsensorgetsupporteddatafields, sensorscx/EvtSensorGetSupportedDataFields
@@ -38,10 +37,11 @@ api_type:
 api_location:
  - SensorsCx.h
 api_name:
- - EvtSensorGetSupportedDataFields
+ - EVT_SENSOR_DRIVER_GET_SUPPORTED_DATA_FIELDS
 ---
 
 # EVT_SENSOR_DRIVER_GET_SUPPORTED_DATA_FIELDS callback function
+
 
 ## -description
 
@@ -49,17 +49,17 @@ This callback function returns a list of data fields supported by the specified 
 
 ## -parameters
 
-### -param Sensor
+### -param Sensor [in]
 
-[in] A reference to a sensor object.
+A reference to a sensor object.
 
-### -param pDataFields
+### -param pDataFields [in, out, optional]
 
-[in, out, optional] A list of data fields that are supported by the given **Sensor**. For more information see [SENSOR_PROPERTY_LIST](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_property_list).
+A list of data fields that are supported by the given **Sensor**. For more information see [SENSOR_PROPERTY_LIST](../sensorsdef/ns-sensorsdef-sensor_property_list.md).
 
-### -param pSize
+### -param pSize [out]
 
-[out] The size of *pDataFields*.
+The size of *pDataFields*.
 
 ## -returns
 
@@ -74,6 +74,7 @@ This function must be implemented by the driver and is called by the class exten
 
 ## -see-also
 
-[SENSOR_PROPERTY_LIST](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_property_list)
+[SENSOR_PROPERTY_LIST](../sensorsdef/ns-sensorsdef-sensor_property_list.md)
 
 [Sensor data fields](/windows-hardware/drivers/sensors/common-data-fields)
+

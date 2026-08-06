@@ -4,7 +4,6 @@ title: CcPurgeCacheSection function (ntifs.h)
 description: The CcPurgeCacheSection routine purges all or a portion of a cached file from the system cache.
 old-location: ifsk\ccpurgecachesection.htm
 tech.root: ifsk
-ms.assetid: 7f9cff3b-0780-4fc4-8b1a-b0af0506712a
 ms.date: 04/16/2018
 keywords: ["CcPurgeCacheSection function"]
 ms.keywords: CcPurgeCacheSection, CcPurgeCacheSection routine [Installable File System Drivers], ccref_587b0f92-f80a-42f2-b3bb-dae27208b796.xml, ifsk.ccpurgecachesection, ntifs/CcPurgeCacheSection
@@ -50,23 +49,23 @@ The <b>CcPurgeCacheSection</b> routine purges all or a portion of a cached file 
 
 ## -parameters
 
-### -param SectionObjectPointer 
+### -param SectionObjectPointer [in]
 
-[in]
+
 Pointer to a structure containing the file object's section object pointers.
 
-### -param FileOffset 
+### -param FileOffset [in, optional]
 
-[in, optional]
+
 Pointer to a variable that specifies the starting byte offset within the cached file where the data is to be purged. 
 
 If <i>FileOffset</i> is <b>NULL</b>, the entire file is purged from the cache.
 
 If <i>FileOffset</i> is not <b>NULL</b>, only the byte range specified by <i>FileOffset</i> and <i>Length</i> is purged.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Length of the byte range to purge, starting at <i>FileOffset</i>. If <i>Length</i> is zero, the range from <i>FileOffset</i> to the end of the file is purged. If <i>FileOffset</i> is <b>NULL</b>, <i>Length</i> is ignored.
 
 ### -param Flags

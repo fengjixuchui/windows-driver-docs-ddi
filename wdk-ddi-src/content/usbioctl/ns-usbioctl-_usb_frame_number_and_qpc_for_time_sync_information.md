@@ -4,7 +4,6 @@ title: _USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION (usbioctl.h)
 description: Stores the frame and microframe numbers and the calculated system QPC values. This structure is used in the IOCTL_USB_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC request.
 old-location: buses\usb_frame_number_and_qpc_for_time_sync_information.htm
 tech.root: usbref
-ms.assetid: F602B738-4D04-4A75-BE69-CFEC4F76904C
 ms.date: 05/07/2018
 keywords: ["USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION structure"]
 ms.keywords: "*PUSB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION, PUSB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION, PUSB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION structure pointer [Buses], USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION, USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION structure [Buses], _USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION, buses.usb_frame_number_and_qpc_for_time_sync_information, usbioctl/PUSB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION, usbioctl/USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Usbioctl.h
 api_name:
+ - _USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION
+ - PUSB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION
  - USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION
 ---
 
@@ -97,3 +98,4 @@ A 3-bit value of the current hardware micro frame number that is  directly read 
 ### -field CurrentUSBFrameNumber
 
 A 32-bit USB frame number value returned by <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_urb_get_current_frame_number">_URB_GET_CURRENT_FRAME_NUMBER</a>.
+

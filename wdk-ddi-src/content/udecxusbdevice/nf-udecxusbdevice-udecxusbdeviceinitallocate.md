@@ -4,7 +4,6 @@ title: UdecxUsbDeviceInitAllocate function (udecxusbdevice.h)
 description: Allocates memory for a UDECXUSBDEVICE_INIT structure that is used to initialize a virtual USB device.
 old-location: buses\udecxusbdeviceinitallocate.htm
 tech.root: usbref
-ms.assetid: 127D132B-6A40-4F6F-BCDA-473F89A1A747
 ms.date: 05/07/2018
 keywords: ["UdecxUsbDeviceInitAllocate function"]
 ms.keywords: UdecxUsbDeviceInitAllocate, UdecxUsbDeviceInitAllocate function [Buses], buses.udecxusbdeviceinitallocate, udecxusbdevice/UdecxUsbDeviceInitAllocate
@@ -51,10 +50,10 @@ Allocates memory for a  <b>UDECXUSBDEVICE_INIT</b> structure that is used to ini
 
 ## -parameters
 
-### -param UdecxWdfDevice 
+### -param UdecxWdfDevice [in]
 
-[in]
-A handle to a framework device object that represents the a USB device. The client driver initialized this object in the previous call to <a href="/windows-hardware/drivers/ddi/udecxwdfdevice/nf-udecxwdfdevice-udecxwdfdeviceaddusbdeviceemulation">UdecxWdfDeviceAddUsbDeviceEmulation</a>.
+
+A handle to a framework device object that represents a USB device. The client driver initialized this object in the previous call to <a href="/windows-hardware/drivers/ddi/udecxwdfdevice/nf-udecxwdfdevice-udecxwdfdeviceaddusbdeviceemulation">UdecxWdfDeviceAddUsbDeviceEmulation</a>.
 
 ## -returns
 

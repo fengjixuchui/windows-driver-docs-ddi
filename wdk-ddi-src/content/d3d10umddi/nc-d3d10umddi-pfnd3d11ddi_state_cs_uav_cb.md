@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_STATE_CS_UAV_CB
 title: PFND3D11DDI_STATE_CS_UAV_CB (d3d10umddi.h)
 description: The pfnStateCsUavCb function causes the Microsoft Direct3D 11 runtime to refresh the constant unordered access view state for the compute shader.
 old-location: display\pfnstatecsuavcb.htm
-ms.assetid: 2ff9e226-2981-4670-9164-7138f25528a0
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_STATE_CS_UAV_CB callback function"]
 ms.keywords: PFND3D11DDI_STATE_CS_UAV_CB, PFND3D11DDI_STATE_CS_UAV_CB callback, d3d10umddi/pfnStateCsUavCb, d3d11state_functions_2818f407-e0b4-4923-ae5e-43b1450d4a82.xml, display.pfnstatecsuavcb, pfnStateCsUavCb, pfnStateCsUavCb callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - pfnStateCsUavCb
+ - PFND3D11DDI_STATE_CS_UAV_CB
 ---
 
 # PFND3D11DDI_STATE_CS_UAV_CB callback function
@@ -50,19 +49,19 @@ The <b>pfnStateCsUavCb</b> function causes the Microsoft Direct3D 11 runtime to 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hRuntimeDevice* [in]
 
 A handle to a context for the core Direct3D runtime. This handle is supplied to the driver in a call to the driver's <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdevice">CreateDevice(D3D10)</a> function.
 
-### -param Arg2
+### -param unnamedParam2
 
 *Base* [in]
 
 The beginning access view for which the runtime should refresh state.
 
-### -param Arg3
+### -param unnamedParam3
 
 *Count* [in]
 
@@ -75,3 +74,4 @@ The total number of access views. The number can be -1, which specifies that the
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11ddi_corelayer_devicecallbacks">D3D11DDI_CORELAYER_DEVICECALLBACKS</a>
+

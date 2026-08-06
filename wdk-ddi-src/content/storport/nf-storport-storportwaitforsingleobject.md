@@ -3,9 +3,7 @@ UID: NF:storport.StorPortWaitForSingleObject
 title: StorPortWaitForSingleObject function
 description: A miniport can call StorPortWaitForSingleObject function to put the current thread into a wait state until the given dispatcher object is set to signaled state or optionally times out.
 tech.root: storage
-ms.assetid: 36dba4d1-de52-4522-ba07-f8b57357b48e
 ms.date: 03/24/2020
-ms.topic: function
 ms.keywords: StorPortWaitForSingleObject
 req.header: storport.h
 req.include-header: 
@@ -37,8 +35,6 @@ api_location:
  - Storport.dll
 api_name:
  - StorPortWaitForSingleObject
-product:
- - Windows
 ---
 
 # StorPortWaitForSingleObject function
@@ -90,6 +86,6 @@ Callers of **StorportWaitForSingleObject** must be running at IRQL <= DISPATCH_L
 
 [**KeWaitForSingleObject**](../wdm/nf-wdm-kewaitforsingleobject.md)
 
-[**StorportInitializeEvent**](nf-storport-storportinitializeevent.md)
+[**StorPortInitializeEvent**](nf-storport-storportinitializeevent.md)
 
 [**StorportSetEvent**](nf-storport-storportsetevent.md)

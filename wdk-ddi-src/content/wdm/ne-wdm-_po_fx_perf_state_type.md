@@ -4,7 +4,6 @@ title: _PO_FX_PERF_STATE_TYPE (wdm.h)
 description: The PO_FX_PERF_STATE_TYPE enumeration contains values that describe the type of performance states in a PO_FX_COMPONENT_PERF_SET.
 old-location: kernel\po_fx_perf_state_type.htm
 tech.root: kernel
-ms.assetid: E3BFBF03-8130-4EFF-95F4-030107AF4D75
 ms.date: 04/30/2018
 keywords: ["PO_FX_PERF_STATE_TYPE enumeration"]
 ms.keywords: "*PPO_FX_PERF_STATE_TYPE, PO_FX_PERF_STATE_TYPE, PO_FX_PERF_STATE_TYPE enumeration [Kernel-Mode Driver Architecture], PPO_FX_PERF_STATE_TYPE, PPO_FX_PERF_STATE_TYPE enumeration pointer [Kernel-Mode Driver Architecture], PoFxPerfStateTypeDiscrete, PoFxPerfStateTypeMaximum, PoFxPerfStateTypeRange, _PO_FX_PERF_STATE_TYPE, kernel.po_fx_perf_state_type, wdm/PO_FX_PERF_STATE_TYPE, wdm/PPO_FX_PERF_STATE_TYPE, wdm/PoFxPerfStateTypeDiscrete, wdm/PoFxPerfStateTypeMaximum, wdm/PoFxPerfStateTypeRange"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _PO_FX_PERF_STATE_TYPE
+ - PPO_FX_PERF_STATE_TYPE
  - PO_FX_PERF_STATE_TYPE
 ---
 
@@ -77,3 +78,4 @@ The <b>Type</b> member of the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxregistercomponentperfstates">PoFxRegisterComponentPerfStates</a>
+

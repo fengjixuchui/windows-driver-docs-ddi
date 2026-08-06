@@ -4,14 +4,13 @@ title: PsUpdateDiskCounters function (ntifs.h)
 description: The PsUpdateDiskCounters routine updates the disk I/O counters of a given process.
 old-location: ifsk\psupdatediskcounters.htm
 tech.root: ifsk
-ms.assetid: 0BDC6629-9C0E-4437-888D-1EF730714CA4
 ms.date: 04/16/2018
 keywords: ["PsUpdateDiskCounters function"]
 ms.keywords: PsUpdateDiskCounters, PsUpdateDiskCounters routine [Installable File System Drivers], ifsk.psupdatediskcounters, ntifs/PsUpdateDiskCounters
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winverclnt: Windows 8.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 

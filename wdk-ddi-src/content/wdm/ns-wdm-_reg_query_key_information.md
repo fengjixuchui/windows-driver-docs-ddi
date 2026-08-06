@@ -4,7 +4,6 @@ title: _REG_QUERY_KEY_INFORMATION (wdm.h)
 description: The REG_QUERY_KEY_INFORMATION structure describes the metadata that is about to be queried for a key.
 old-location: kernel\reg_query_key_information.htm
 tech.root: kernel
-ms.assetid: 88c64e9a-dbf2-4feb-9ce2-615b5ba98439
 ms.date: 04/30/2018
 keywords: ["REG_QUERY_KEY_INFORMATION structure"]
 ms.keywords: "*PREG_QUERY_KEY_INFORMATION, PREG_QUERY_KEY_INFORMATION, PREG_QUERY_KEY_INFORMATION structure pointer [Kernel-Mode Driver Architecture], REG_QUERY_KEY_INFORMATION, REG_QUERY_KEY_INFORMATION structure [Kernel-Mode Driver Architecture], _REG_QUERY_KEY_INFORMATION, kernel.reg_query_key_information, kstruct_d_5e665782-95c2-4fca-bd49-cb364c449540.xml, wdm/PREG_QUERY_KEY_INFORMATION, wdm/REG_QUERY_KEY_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _REG_QUERY_KEY_INFORMATION
+ - PREG_QUERY_KEY_INFORMATION
  - REG_QUERY_KEY_INFORMATION
 ---
 
@@ -103,3 +104,4 @@ For more information about registry filtering operations, see <a href="/windows-
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-zwquerykey">ZwQueryKey</a>
+

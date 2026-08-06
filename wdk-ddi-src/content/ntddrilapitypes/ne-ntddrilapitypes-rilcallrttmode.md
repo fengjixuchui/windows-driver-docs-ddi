@@ -1,10 +1,9 @@
 ---
 UID: NE:ntddrilapitypes.RILCALLRTTMODE
 title: RILCALLRTTMODE (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILCALLRTTMODE enumeration for internal use only. Don't use the RILCALLRTTMODE enumeration in your code."
 old-location: netvista\rilcallrttmode.htm
 tech.root: netvista
-ms.assetid: f4e796d6-2eff-43f6-8afd-b74e3136deb3
 ms.date: 05/02/2018
 keywords: ["RILCALLRTTMODE enumeration"]
 ms.keywords: RILCALLRTTMODE, RILCALLRTTMODE enumeration [Network Drivers Starting with Windows Vista], RIL_RTTMODE_FULL, RIL_RTTMODE_MAX, netvista.rilcallrttmode, ntddrilapitypes/RILCALLRTTMODE, ntddrilapitypes/RIL_RTTMODE_FULL, ntddrilapitypes/RIL_RTTMODE_MAX

@@ -2,10 +2,8 @@
 UID: NF:wiautil.wiauDbgDump
 title: wiauDbgDump function (wiautil.h)
 description: The wiauDbgDump function logs a message containing one or more data values.
-old-location: image\wiaudbgdump.htm
 tech.root: image
-ms.assetid: 5df074ff-572d-47f7-9c5c-4423b200cddc
-ms.date: 05/03/2018
+ms.date: 04/20/2022
 keywords: ["wiauDbgDump function"]
 ms.keywords: image.wiaudbgdump, wiauDbgDump, wiauDbgDump function [Imaging Devices], wiauFncs_dbe56add-64ef-442d-9824-ed0b26aba9ac.xml, wiautil/wiauDbgDump
 req.header: wiautil.h
@@ -41,9 +39,6 @@ api_name:
  - wiauDbgDump
 ---
 
-# wiauDbgDump function
-
-
 ## -description
 
 The **wiauDbgDump** function logs a message containing one or more data values.
@@ -58,9 +53,7 @@ Pointer to a string containing the name of the function or method into which the
 
 Pointer to a format string that specifies a variable argument list, which starts with an ANSI format string containing the message and any conversion specifiers. The ellipsis (...) specifies a variable number of arguments that are to be output.
 
-### -param param
-
-#### - fmt, ...
+### -param ...
 
 ## -remarks
 

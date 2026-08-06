@@ -4,7 +4,6 @@ title: KsReleaseIrpOnCancelableQueue function (ks.h)
 description: The KsReleaseIrpOnCancelableQueue function releases an acquired IRP that is already on a queue that can be canceled.
 old-location: stream\ksreleaseirponcancelablequeue.htm
 tech.root: stream
-ms.assetid: 797e0821-2354-4dd5-b2ee-428d654feb40
 ms.date: 04/23/2018
 keywords: ["KsReleaseIrpOnCancelableQueue function"]
 ms.keywords: KsReleaseIrpOnCancelableQueue, KsReleaseIrpOnCancelableQueue function [Streaming Media Devices], ks/KsReleaseIrpOnCancelableQueue, ksfunc_90599c85-7874-4eca-9177-45dcacbeacc7.xml, stream.ksreleaseirponcancelablequeue
@@ -51,14 +50,14 @@ The <b>KsReleaseIrpOnCancelableQueue</b> function releases an acquired IRP that 
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Specifies the IRP to release.
 
-### -param DriverCancel 
+### -param DriverCancel [in, optional]
 
-[in, optional]
+
 Optional parameter that specifies the cancel routine to use. If this is <b>NULL</b>, the standard <b>KsCancelRoutine</b> is used.
 
 ## -returns

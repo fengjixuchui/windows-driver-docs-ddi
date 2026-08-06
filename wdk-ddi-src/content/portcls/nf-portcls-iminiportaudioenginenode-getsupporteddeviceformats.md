@@ -4,7 +4,6 @@ title: IMiniportAudioEngineNode::GetSupportedDeviceFormats (portcls.h)
 description: Gets the supported audio data formats for the audio device.
 old-location: audio\iminiportaudioenginenode_getsupporteddeviceformats.htm
 tech.root: audio
-ms.assetid: 2B27E92C-8781-4499-A1E0-7C1BBFFAA2DF
 ms.date: 05/08/2018
 keywords: ["IMiniportAudioEngineNode::GetSupportedDeviceFormats"]
 ms.keywords: GetSupportedDeviceFormats, GetSupportedDeviceFormats method [Audio Devices], GetSupportedDeviceFormats method [Audio Devices],IMiniportAudioEngineNode interface, IMiniportAudioEngineNode interface [Audio Devices],GetSupportedDeviceFormats method, IMiniportAudioEngineNode.GetSupportedDeviceFormats, IMiniportAudioEngineNode::GetSupportedDeviceFormats, audio.iminiportaudioenginenode_getsupporteddeviceformats, portcls/IMiniportAudioEngineNode::GetSupportedDeviceFormats
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IMiniportAudioEngineNode.GetSupportedDeviceFormats
+ - IMiniportAudioEngineNode::GetSupportedDeviceFormats
 ---
 
 # IMiniportAudioEngineNode::GetSupportedDeviceFormats
@@ -50,19 +49,19 @@ Gets the supported audio data formats for the audio device.
 
 ## -parameters
 
-### -param ulNodeId 
+### -param ulNodeId [in]
 
-[in]
+
 The ID of the node that represents the audio device.
 
-### -param pFormats 
+### -param pFormats [out]
 
-[out]
+
 A structure of type <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item">KSMULTIPLE_ITEM</a> that points to the array of audio data formats supported by the audio device.
 
-### -param ulBufferSize 
+### -param ulBufferSize [in]
 
-[in]
+
 The buffer size for the audio data format information.
 
 ## -returns
@@ -78,3 +77,4 @@ returns an appropriate error code.
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item">KSMULTIPLE_ITEM</a>
+

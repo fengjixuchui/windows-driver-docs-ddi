@@ -4,7 +4,6 @@ title: NdisMapFile function (ndis.h)
 description: The NdisMapFile function maps an already open file into a caller-accessible buffer if the file is currently unmapped.
 old-location: netvista\ndismapfile.htm
 tech.root: netvista
-ms.assetid: 965bb4c7-826d-425b-b10d-2d5a29ca0f91
 ms.date: 05/02/2018
 keywords: ["NdisMapFile function"]
 ms.keywords: NdisMapFile, NdisMapFile function [Network Drivers Starting with Windows Vista], VOID, ndis/NdisMapFile, ndis_file_ref_5bc73f64-8379-45bb-a37b-fe9a946af119.xml, netvista.ndismapfile
@@ -53,9 +52,9 @@ The
 
 ## -parameters
 
-### -param Status 
+### -param Status [out]
 
-[out]
+
 A pointer to a caller-supplied variable in which this function returns the status of the mapping
      operation, which can be one of the following:
      
@@ -75,15 +74,15 @@ The caller has exclusive access to the file contents until the
 
 The caller cannot access the file contents at this time.
 
-### -param MappedBuffer 
+### -param MappedBuffer [out]
 
-[out]
+
 A pointer to a caller-supplied variable in which this function returns the base virtual address of
      the mapped file contents or <b>NULL</b>.
 
-### -param FileHandle 
+### -param FileHandle [in]
 
-[in]
+
 The handle that was returned by a preceding call to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenfile">NdisOpenFile</a> function.
 

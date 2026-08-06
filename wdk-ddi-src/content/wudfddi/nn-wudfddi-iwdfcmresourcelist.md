@@ -4,7 +4,6 @@ title: IWDFCmResourceList (wudfddi.h)
 description: This interface represents a list of hardware resources for a device.
 old-location: wdf\iwdfcmresourcelist.htm
 tech.root: wdf
-ms.assetid: 8C03A1A3-1757-4622-9652-0D84DC0AFE59
 ms.date: 02/26/2018
 keywords: ["IWDFCmResourceList interface"]
 ms.keywords: IWDFCmResourceList, IWDFCmResourceList interface, IWDFCmResourceList interface,described, umdf.iwdfcmresourcelist, wdf.iwdfcmresourcelist, wudfddi/IWDFCmResourceList
@@ -52,9 +51,9 @@ This interface represents a list of hardware resources for a device.
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFCmResourceList</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a>. <b>IWDFCmResourceList</b> also has these types of members:
+The <b>IWDFCmResourceList</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a>. <b>IWDFCmResourceList</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>
 
 ## -remarks

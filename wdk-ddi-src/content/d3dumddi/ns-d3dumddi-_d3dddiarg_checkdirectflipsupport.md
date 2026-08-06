@@ -4,7 +4,6 @@ title: _D3DDDIARG_CHECKDIRECTFLIPSUPPORT (d3dumddi.h)
 description: Specifies resources used for Direct Flip operations, in which video memory is seamlessly flipped between an application's managed primary allocations and the Desktop Window Manager's (DWM) managed primary allocations.
 old-location: display\d3dddiarg_checkdirectflipsupport.htm
 tech.root: display
-ms.assetid: 70df85b6-286a-45a2-813d-adb54daee122
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_CHECKDIRECTFLIPSUPPORT structure"]
 ms.keywords: D3DDDIARG_CHECKDIRECTFLIPSUPPORT, D3DDDIARG_CHECKDIRECTFLIPSUPPORT structure [Display Devices], _D3DDDIARG_CHECKDIRECTFLIPSUPPORT, d3dumddi/D3DDDIARG_CHECKDIRECTFLIPSUPPORT, display.d3dddiarg_checkdirectflipsupport
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dumddi.h
 api_name:
+ - _D3DDDIARG_CHECKDIRECTFLIPSUPPORT
  - D3DDDIARG_CHECKDIRECTFLIPSUPPORT
 ---
 
@@ -52,22 +52,23 @@ Specifies resources used for Direct Flip operations, in which video memory is se
 
 ## -struct-fields
 
-### -field hAppSwapchainResource
+### -field hAppSwapchainResource [in]
 
-[in] A resource in the application's swapchain.
+A resource in the application's swapchain.
 
-### -field hDWMSwapchainResource
+### -field hDWMSwapchainResource [in]
 
-[in] A resource in the DWM's swapchain.
+A resource in the DWM's swapchain.
 
-### -field CheckDirectFlipFlags
+### -field CheckDirectFlipFlags [in]
 
-[in] If this member has a value of <b>D3DDDI_CHECKDIRECTFLIP_IMMEDIATE</b>, seamless flipping should occur immediately and does not have to be synchronized with a VSync interrupt.
+If this member has a value of <b>D3DDDI_CHECKDIRECTFLIP_IMMEDIATE</b>, seamless flipping should occur immediately and does not have to be synchronized with a VSync interrupt.
 
-### -field Supported
+### -field Supported [out]
 
-[out] Set to <b>TRUE</b> if the driver can seamlessly flip video memory between  an application's managed primary allocations and the DWM's managed primary allocations. Otherwise, set to <b>FALSE</b>.
+Set to <b>TRUE</b> if the driver can seamlessly flip video memory between  an application's managed primary allocations and the DWM's managed primary allocations. Otherwise, set to <b>FALSE</b>.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_checkdirectflipsupport">CheckDirectFlipSupport</a>
+

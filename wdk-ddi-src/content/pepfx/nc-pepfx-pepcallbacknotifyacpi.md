@@ -4,7 +4,6 @@ title: PEPCALLBACKNOTIFYACPI (pepfx.h)
 description: An AcceptAcpiNotification event callback routine handles ACPI notifications from the Windows power management framework (PoFx).
 old-location: kernel\acceptacpinotification.htm
 tech.root: kernel
-ms.assetid: 7BC27FD1-CCD8-4ABC-B973-C2242D6C243B
 ms.date: 04/30/2018
 keywords: ["PEPCALLBACKNOTIFYACPI callback function"]
 ms.keywords: AcceptAcpiNotification, AcceptAcpiNotification routine [Kernel-Mode Driver Architecture], PEPCALLBACKNOTIFYACPI, kernel.acceptacpinotification, pepfx/AcceptAcpiNotification
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
- - AcceptAcpiNotification
+ - PEPCALLBACKNOTIFYACPI
 ---
 
 # PEPCALLBACKNOTIFYACPI callback function (pepfx.h)
@@ -46,18 +45,18 @@ api_name:
 
 ## -description
 
-An <i>AcceptAcpiNotification</i> event callback routine handles ACPI notifications from the Windows <a href="/windows-hardware/drivers/ddi/index">power management framework</a> (PoFx).
+An <i>AcceptAcpiNotification</i> event callback routine handles ACPI notifications from the Windows <a href="/windows-hardware/drivers/ddi/_kernel/#device-power-management">power management framework</a> (PoFx).
 
 ## -parameters
 
-### -param Notification 
+### -param Notification [in]
 
-[in]
+
 The ACPI notification ID. This parameter specifies the type of ACPI notification that PoFx is sending. For a list of ACPI notification IDs, see <a href="/windows-hardware/drivers/kernel/acpi-notifications">ACPI notifications</a>.
 
-### -param Data 
+### -param Data [in, out, optional]
 
-[in, out, optional]
+
 A pointer to a PoFx-allocated structure that contains the input and/or output data for this notification. The type of this structure depends on the notification ID specified by <i>Notification</i>. For a list of the structure types that are defined for the various ACPI notification IDs, see <a href="/windows-hardware/drivers/ddi/index">ACPI notifications</a>.
 
 ## -returns
@@ -81,3 +80,4 @@ The IRQL at which the PEP's <i>AcceptAcpiNotification</i> routine is called vari
 
 
 <a href="/windows-hardware/drivers/ddi/pepfx/nf-pepfx-pofxregisterpluginex">PoFxRegisterPluginEx</a>
+

@@ -4,7 +4,6 @@ title: FltGetUpperInstance function (fltkernel.h)
 description: The FltGetUpperInstance routine returns an opaque instance pointer for the next higher minifilter driver instance, if there is one, that is attached above a given minifilter driver instance on the same volume.
 old-location: ifsk\fltgetupperinstance.htm
 tech.root: ifsk
-ms.assetid: 01e7760c-b10c-497e-9cab-4d839c2ce5ff
 ms.date: 04/16/2018
 keywords: ["FltGetUpperInstance function"]
 ms.keywords: FltApiRef_e_to_o_7629f1a6-0a5e-46a2-8423-bd7466548a2f.xml, FltGetUpperInstance, FltGetUpperInstance routine [Installable File System Drivers], fltkernel/FltGetUpperInstance, ifsk.fltgetupperinstance
@@ -50,14 +49,14 @@ The <b>FltGetUpperInstance</b> routine returns an opaque instance pointer for th
 
 ## -parameters
 
-### -param CurrentInstance 
+### -param CurrentInstance [in]
 
-[in]
+
 Opaque instance pointer for the instance for which the next higher instance is requested.
 
-### -param UpperInstance 
+### -param UpperInstance [out]
 
-[out]
+
 Pointer to a caller-allocated variable that receives an opaque instance pointer for the next higher instance. This parameter is required and cannot be <b>NULL</b>.
 
 ## -returns

@@ -4,7 +4,6 @@ title: IoInitializeIrp function (wdm.h)
 description: The IoInitializeIrp routine initializes a given IRP that was allocated by the caller.
 old-location: kernel\ioinitializeirp.htm
 tech.root: kernel
-ms.assetid: 3b5cc1af-ab3b-4583-9ef9-39132789e74f
 ms.date: 04/30/2018
 keywords: ["IoInitializeIrp function"]
 ms.keywords: IoInitializeIrp, IoInitializeIrp routine [Kernel-Mode Driver Architecture], k104_5c9dc7a8-747c-4832-a31b-5936e2d3361d.xml, kernel.ioinitializeirp, wdm/IoInitializeIrp
@@ -50,19 +49,19 @@ The <b>IoInitializeIrp</b> routine initializes a given IRP that was allocated by
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in, out]
 
-[in, out]
+
 Pointer to the IRP to be initialized.
 
-### -param PacketSize 
+### -param PacketSize [in]
 
-[in]
+
 Specifies the size in bytes of the IRP.
 
-### -param StackSize 
+### -param StackSize [in]
 
-[in]
+
 Specifies the number of stack locations in the IRP.
 
 ## -remarks

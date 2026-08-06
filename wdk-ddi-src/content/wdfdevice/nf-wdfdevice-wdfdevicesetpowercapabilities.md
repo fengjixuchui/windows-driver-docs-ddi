@@ -4,7 +4,6 @@ title: WdfDeviceSetPowerCapabilities function (wdfdevice.h)
 description: The WdfDeviceSetPowerCapabilities method reports a device's power capabilities.
 old-location: wdf\wdfdevicesetpowercapabilities.htm
 tech.root: wdf
-ms.assetid: e04558e3-a95a-408b-961b-e8ea7ac9136d
 ms.date: 02/26/2018
 keywords: ["WdfDeviceSetPowerCapabilities function"]
 ms.keywords: DFDeviceObjectGeneralRef_d3d51bfe-62da-4146-b4c1-152cac9f0e82.xml, WdfDeviceSetPowerCapabilities, WdfDeviceSetPowerCapabilities method, kmdf.wdfdevicesetpowercapabilities, wdf.wdfdevicesetpowercapabilities, wdfdevice/WdfDeviceSetPowerCapabilities
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfDeviceSetPowerCapabilities</b> method reports a device's power capabil
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param PowerCapabilities 
+### -param PowerCapabilities [in]
 
-[in]
+
 A pointer to a driver-allocated <a href="/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_capabilities">WDF_DEVICE_POWER_CAPABILITIES</a> structure.
 
 ## -remarks

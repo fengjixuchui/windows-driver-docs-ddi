@@ -4,7 +4,6 @@ title: _DXVADDI_FIXED32 (d3dumddi.h)
 description: The DXVADDI_FIXED32 structure describes a floating-point number from a 16.16 fixed-point number.
 old-location: display\dxvaddi_fixed32.htm
 tech.root: display
-ms.assetid: 4188c488-fda4-4596-96f5-f740a5cc9ffc
 ms.date: 05/10/2018
 keywords: ["DXVADDI_FIXED32 structure"]
 ms.keywords: DXVA2_Structs_3d19835e-9a75-4d5a-bd6b-451a9978eadb.xml, DXVADDI_FIXED32, DXVADDI_FIXED32 structure [Display Devices], _DXVADDI_FIXED32, d3dumddi/DXVADDI_FIXED32, display.dxvaddi_fixed32
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVADDI_FIXED32
  - DXVADDI_FIXED32
 ---
 
@@ -52,13 +52,13 @@ The DXVADDI_FIXED32 structure describes a floating-point number from a 16.16 fix
 
 ## -struct-fields
 
-### -field Fraction
+### -field Fraction [in]
 
-[in] A USHORT value that specifies the 16 bits after the decimal point.
+A USHORT value that specifies the 16 bits after the decimal point.
 
-### -field Value
+### -field Value [in]
 
-[in] A SHORT value that specifies the 16 bits before the decimal point.
+A SHORT value that specifies the 16 bits before the decimal point.
 
 ### -field ll
 
@@ -67,3 +67,4 @@ A 32-bit value that describes the 16.16 fixed-point number.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_procampvalues">DXVADDI_PROCAMPVALUES</a>
+

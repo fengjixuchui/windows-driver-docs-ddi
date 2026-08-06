@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGK_SETVIDPNSOURCEADDRESS_FLAGS
 title: _DXGK_SETVIDPNSOURCEADDRESS_FLAGS (d3dkmddi.h)
 description: The DXGK_SETVIDPNSOURCEADDRESS_FLAGS structure identifies the specific type of operation to perform in a call to the display miniport driver's DxgkDdiSetVidPnSourceAddress or DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay functions.
 old-location: display\dxgk_setvidpnsourceaddress_flags.htm
-ms.assetid: cdc4aec6-45d4-4a5b-aa52-7830494a12b6
 ms.date: 05/10/2018
 keywords: ["DXGK_SETVIDPNSOURCEADDRESS_FLAGS structure"]
 ms.keywords: DXGK_SETVIDPNSOURCEADDRESS_FLAGS, DXGK_SETVIDPNSOURCEADDRESS_FLAGS structure [Display Devices], DmStructs_45e34e9d-e410-44f4-a41a-aad748f01688.xml, _DXGK_SETVIDPNSOURCEADDRESS_FLAGS, d3dkmddi/DXGK_SETVIDPNSOURCEADDRESS_FLAGS, display.dxgk_setvidpnsourceaddress_flags
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_SETVIDPNSOURCEADDRESS_FLAGS
  - DXGK_SETVIDPNSOURCEADDRESS_FLAGS
 ---
 
@@ -70,9 +70,9 @@ A UINT value that specifies for the driver to perform a flip operation that occu
 
 Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).
 
-### -field FlipStereo
+### -field FlipStereo [in]
 
-[in] Supported beginning with Windows 8.
+Supported beginning with Windows 8.
 
 Specifies whether the driver  flips both left and right images of a stereo allocation.
 
@@ -86,9 +86,9 @@ For more requirements, see the Remarks section.
 
 Setting this member is equivalent to setting the    fourth bit of the 32-bit <b>Value</b> member (0x00000008).
 
-### -field FlipStereoTemporaryMono
+### -field FlipStereoTemporaryMono [in]
 
-[in] Supported beginning with Windows 8.
+Supported beginning with Windows 8.
 
 Specifies whether the driver uses the left image of a stereo allocation for the right and left portions of a stereo frame. The driver performs the same present operation as with <b>FlipStereo</b>, except that it scans out only from the left image to produce both images of a stereo frame.
 
@@ -102,9 +102,9 @@ For more requirements, see the Remarks section.
 
 Setting this member is equivalent to setting the    fifth bit of the 32-bit <b>Value</b> member (0x00000010).
 
-### -field FlipStereoPreferRight
+### -field FlipStereoPreferRight [in]
 
-[in] Supported beginning with Windows 8.
+Supported beginning with Windows 8.
 
 Specifies that when the driver clones a stereo primary allocation to a mono monitor, it uses the right image.
 
@@ -114,9 +114,9 @@ For more requirements, see the Remarks section.
 
 Setting this member is equivalent to setting the    sixth bit of the 32-bit <b>Value</b> member (0x00000020).
 
-### -field SharedPrimaryTransition
+### -field SharedPrimaryTransition [in]
 
-[in] Supported beginning with Windows 8.
+Supported beginning with Windows 8.
 
 Specifies that the driver is transitioning to or from a shared managed primary allocation.
 
@@ -130,21 +130,21 @@ When <b>SharedPrimaryTransition</b> is set, the display miniport driver must val
 
 Setting this member is equivalent to setting the    seventh bit of the 32-bit <b>Value</b> member (0x00000040).
 
-### -field IndependentFlipExclusive
+### -field IndependentFlipExclusive [in]
 
-[in] Supported beginning with Windows 10.
+Supported beginning with Windows 10.
 
 When <b>IndependentFlipExlusive</b> is set, the flip is done in the independent flip exclusive mode. The front buffer is accessed only by the display hardware (not by the DWM) and the kernel mode driver can apply vertical sync-related optimizations.
 
-### -field MoveFlip
+### -field MoveFlip [in]
 
-[in] Supported beginning with Windows 10.
+Supported beginning with Windows 10.
 
 When <b>MoveFlip</b> is set, the  driver is notified to use any state that has been saved from the previous flip to configure the new scanout request.
 
-### -field Reserved
+### -field Reserved [in]
 
-[in] This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 23 bits (0xFFFFFF00) of the 32-bit <b>Value</b> member to zeros.
+This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 23 bits (0xFFFFFF00) of the 32-bit <b>Value</b> member to zeros.
 
 ### -field Value
 
@@ -180,3 +180,4 @@ Beginning with Windows 8, the display miniport driver can fail a call to the <a
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_setvidpnsourceaddresswithmultiplaneoverlay">DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay</a>
+

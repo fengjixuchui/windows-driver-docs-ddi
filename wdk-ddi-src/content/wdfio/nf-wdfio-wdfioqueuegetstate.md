@@ -4,7 +4,6 @@ title: WdfIoQueueGetState function (wdfio.h)
 description: The WdfIoQueueGetState method returns the status of a specified I/O queue.
 old-location: wdf\wdfioqueuegetstate.htm
 tech.root: wdf
-ms.assetid: 83bfddd5-fc4d-4f5c-9904-7564810f5b4c
 ms.date: 02/26/2018
 keywords: ["WdfIoQueueGetState function"]
 ms.keywords: DFQueueObjectRef_756666e1-e5eb-4bcc-907e-65b10e580396.xml, WdfIoQueueGetState, WdfIoQueueGetState method, kmdf.wdfioqueuegetstate, wdf.wdfioqueuegetstate, wdfio/WdfIoQueueGetState
@@ -55,19 +54,19 @@ The <b>WdfIoQueueGetState</b> method returns the status of a specified I/O queue
 
 ## -parameters
 
-### -param Queue 
+### -param Queue [in]
 
-[in]
+
 A handle to a framework queue object.
 
-### -param QueueRequests 
+### -param QueueRequests [out, optional]
 
-[out, optional]
+
 A pointer to a location that receives the number of I/O requests that are currently in the I/O queue and have not been delivered to the driver. This pointer is optional and can be <b>NULL</b>.
 
-### -param DriverRequests 
+### -param DriverRequests [out, optional]
 
-[out, optional]
+
 A pointer to a location that receives the number of I/O requests that have been delivered to the driver but that the driver has not completed or canceled. This pointer is optional and can be <b>NULL</b>.
 
 ## -returns

@@ -4,7 +4,6 @@ title: EVT_POS_CX_DEVICE_REMOTE_CLAIM (poscx.h)
 description: The EVT_POS_CX_DEVICE_REMOTE_CLAIM callback is called when the device is transitioning from unclaimed to claimed and allows the driver to do additional work.
 old-location: pos\evt_pos_cx_device_remote_claim.htm
 tech.root: pos
-ms.assetid: 3D8907A2-E53E-40D9-870A-AF0EB062E81F
 ms.date: 02/23/2018
 keywords: ["EVT_POS_CX_DEVICE_REMOTE_CLAIM callback function"]
 ms.keywords: EVT_POS_CX_DEVICE_REMOTE_CLAIM, EVT_POS_CX_DEVICE_REMOTE_CLAIM callback, EvtPosCxDeviceRemoteClaim, EvtPosCxDeviceRemoteClaim callback function, pos.evt_pos_cx_device_remote_claim, poscx/EvtPosCxDeviceRemoteClaim
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: 
-req.product: Windows 10 or later.
 f1_keywords:
  - EVT_POS_CX_DEVICE_REMOTE_CLAIM
  - poscx/EVT_POS_CX_DEVICE_REMOTE_CLAIM
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - poscx.h
 api_name:
- - EvtPosCxDeviceRemoteClaim
+ - EVT_POS_CX_DEVICE_REMOTE_CLAIM
 ---
 
 # EVT_POS_CX_DEVICE_REMOTE_CLAIM callback function
@@ -56,14 +54,14 @@ semantics.
 
 ## -parameters
 
-### -param device 
+### -param device [in]
 
-[in]
+
 A handle to a framework device object that represents the device.
 
-### -param deviceInterfaceTag 
+### -param deviceInterfaceTag [in]
 
-[in]
+
 An identifier used to specify which interface is being claimed in a multi-function device.  For a single-interface device, this value should be 0.
 
 ## -returns
@@ -75,3 +73,4 @@ If the driver is unable to complete the remote claim transaction, it should retu
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/poscx/nc-poscx-evt_pos_cx_device_remote_release">EVT_POS_CX_DEVICE_REMOTE_RELEASE</a>
+

@@ -4,7 +4,6 @@ title: _NDIS_RECEIVE_QUEUE_INFO_ARRAY (ntddndis.h)
 description: The NDIS_RECEIVE_QUEUE_INFO_ARRAY structure specifies a list of receive queues on a network adapter.
 old-location: netvista\ndis_receive_queue_info_array.htm
 tech.root: netvista
-ms.assetid: 6a026c2b-e2ed-41bf-9482-0fdc64b175f2
 ms.date: 05/02/2018
 keywords: ["NDIS_RECEIVE_QUEUE_INFO_ARRAY structure"]
 ms.keywords: "*PNDIS_RECEIVE_QUEUE_INFO_ARRAY, NDIS_RECEIVE_QUEUE_INFO_ARRAY, NDIS_RECEIVE_QUEUE_INFO_ARRAY structure [Network Drivers Starting with Windows Vista], PNDIS_RECEIVE_QUEUE_INFO_ARRAY, PNDIS_RECEIVE_QUEUE_INFO_ARRAY structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_QUEUE_INFO_ARRAY, netvista.ndis_receive_queue_info_array, ntddndis/NDIS_RECEIVE_QUEUE_INFO_ARRAY, ntddndis/PNDIS_RECEIVE_QUEUE_INFO_ARRAY, virtual_machine_queue_ref_126f14fb-44b8-47bc-bc0d-eaa435470a6c.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_RECEIVE_QUEUE_INFO_ARRAY
+ - PNDIS_RECEIVE_QUEUE_INFO_ARRAY
  - NDIS_RECEIVE_QUEUE_INFO_ARRAY
 ---
 
@@ -57,7 +58,7 @@ The <b>NDIS_RECEIVE_QUEUE_INFO_ARRAY</b> structure specifies a list of receive q
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_RECEIVE_QUEUE_INFO_ARRAY</b>  structure. The driver sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_DEFAULT</b>, the 
@@ -94,7 +95,7 @@ The <b>NDIS_RECEIVE_QUEUE_INFO_ARRAY</b> structure is used in the
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -103,3 +104,4 @@ The <b>NDIS_RECEIVE_QUEUE_INFO_ARRAY</b> structure is used in the
 
 
 <a href="/windows-hardware/drivers/network/oid-receive-filter-enum-queues">OID_RECEIVE_FILTER_ENUM_QUEUES</a>
+

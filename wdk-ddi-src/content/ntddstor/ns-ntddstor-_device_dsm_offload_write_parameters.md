@@ -4,7 +4,6 @@ title: _DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS (ntddstor.h)
 description: The DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS structure specifies the parameters for an offload write action related to the data-set attributes for a device.
 old-location: storage\device_dsm_offload_write_parameters.htm
 tech.root: storage
-ms.assetid: B0E9DABD-0D5B-4F5D-8CB0-470AC126F9C0
 ms.date: 08/23/2019
 keywords: ["DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS structure"]
 ms.keywords: "*PDEVICE_DSM_OFFLOAD_WRITE_PARAMETERS, DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS, DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS structure [Storage Devices], PDEVICE_DSM_OFFLOAD_WRITE_PARAMETERS, PDEVICE_DSM_OFFLOAD_WRITE_PARAMETERS structure pointer [Storage Devices], _DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS, ntddstor/DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS, ntddstor/PDEVICE_DSM_OFFLOAD_WRITE_PARAMETERS, storage.device_dsm_offload_write_parameters"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddstor.h
 api_name:
+ - _DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS
+ - PDEVICE_DSM_OFFLOAD_WRITE_PARAMETERS
  - DEVICE_DSM_OFFLOAD_WRITE_PARAMETERS
 ---
 
@@ -91,3 +92,4 @@ See [DEVICE_DSM_ACTION Descriptions](/windows-hardware/drivers/storage/device-ds
 [DEVICE_DSM_RANGE](./ns-ntddstor-_device_data_set_range.md)
 
 [IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES](./ni-ntddstor-ioctl_storage_manage_data_set_attributes.md)
+

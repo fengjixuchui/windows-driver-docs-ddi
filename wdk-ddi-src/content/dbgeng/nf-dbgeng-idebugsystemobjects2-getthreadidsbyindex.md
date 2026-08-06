@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSystemObjects2.GetThreadIdsByIndex
 title: IDebugSystemObjects2::GetThreadIdsByIndex (dbgeng.h)
-description: The GetThreadIdsByIndex method returns the engine and system thread IDs for the specified threads in the current process.
+description: The (IDebugSystemObjects2) GetThreadIdsByIndex method returns the engine and system thread IDs for the specified threads in the current process.
 old-location: debugger\getthreadidsbyindex.htm
 tech.root: debugger
-ms.assetid: d671ea6e-19cb-4a90-b345-ea544c9561cd
 ms.date: 05/03/2018
 keywords: ["IDebugSystemObjects2::GetThreadIdsByIndex"]
 ms.keywords: GetThreadIdsByIndex, GetThreadIdsByIndex method [Windows Debugging], GetThreadIdsByIndex method [Windows Debugging],IDebugSystemObjects interface, GetThreadIdsByIndex method [Windows Debugging],IDebugSystemObjects2 interface, GetThreadIdsByIndex method [Windows Debugging],IDebugSystemObjects3 interface, GetThreadIdsByIndex method [Windows Debugging],IDebugSystemObjects4 interface, IDebugSystemObjects interface [Windows Debugging],GetThreadIdsByIndex method, IDebugSystemObjects2 interface [Windows Debugging],GetThreadIdsByIndex method, IDebugSystemObjects2.GetThreadIdsByIndex, IDebugSystemObjects2::GetThreadIdsByIndex, IDebugSystemObjects3 interface [Windows Debugging],GetThreadIdsByIndex method, IDebugSystemObjects3::GetThreadIdsByIndex, IDebugSystemObjects4 interface [Windows Debugging],GetThreadIdsByIndex method, IDebugSystemObjects4::GetThreadIdsByIndex, IDebugSystemObjects::GetThreadIdsByIndex, IDebugSystemObjects_fa12ac17-9a66-45c0-9c91-11236a4a3eab.xml, dbgeng/IDebugSystemObjects2::GetThreadIdsByIndex, dbgeng/IDebugSystemObjects3::GetThreadIdsByIndex, dbgeng/IDebugSystemObjects4::GetThreadIdsByIndex, dbgeng/IDebugSystemObjects::GetThreadIdsByIndex, debugger.getthreadidsbyindex
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSystemObjects.GetThreadIdsByIndex
- - IDebugSystemObjects2.GetThreadIdsByIndex
- - IDebugSystemObjects3.GetThreadIdsByIndex
- - IDebugSystemObjects4.GetThreadIdsByIndex
+ - IDebugSystemObjects2::GetThreadIdsByIndex
 ---
 
 # IDebugSystemObjects2::GetThreadIdsByIndex
@@ -53,24 +49,24 @@ The <b>GetThreadIdsByIndex</b> method returns the engine and system thread IDs f
 
 ## -parameters
 
-### -param Start 
+### -param Start [in]
 
-[in]
+
 Specifies the index of the first thread whose IDs are requested.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of threads whose IDs are requested.
 
-### -param Ids 
+### -param Ids [out, optional]
 
-[out, optional]
-Receives the engine thread IDs.  If <i>Ids</i> is <b>NULL</b>, this information is not returned; otherwise, <i>Ids</i> is treated as an array of <i>Count</i> ULONG valuess.
 
-### -param SysIds 
+Receives the engine thread IDs.  If <i>Ids</i> is <b>NULL</b>, this information is not returned; otherwise, <i>Ids</i> is treated as an array of <i>Count</i> ULONG values.
 
-[out, optional]
+### -param SysIds [out, optional]
+
+
 Receives the system thread IDs.  If <i>SysIds</i> is <b>NULL</b>, this information is not returned; otherwise, <i>SysIds</i> is treated as an array of <i>Count</i> ULONG values.
 
 ## -returns
@@ -100,3 +96,4 @@ The method was successful.
 The index of the first thread is zero.  The index of the last thread is the number of threads returned by <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsystemobjects4-getnumberthreads">GetNumberThreads</a> minus one.
 
 For more information about threads, see <a href="/windows-hardware/drivers/debugger/threads-and-processes">Threads and Processes</a>.
+

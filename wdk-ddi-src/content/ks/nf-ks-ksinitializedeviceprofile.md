@@ -4,7 +4,6 @@ title: KsInitializeDeviceProfile function (ks.h)
 description: The KsInitializeDeviceProfile API must be called by all miniport drivers to initialize the profile store and publish the device profiles.
 old-location: stream\ksinitializedeviceprofile.htm
 tech.root: stream
-ms.assetid: E6AD21CE-C218-439F-A8F7-8E1AAF307A57
 ms.date: 04/23/2018
 keywords: ["KsInitializeDeviceProfile function"]
 ms.keywords: KsInitializeDeviceProfile, KsInitializeDeviceProfile function [Streaming Media Devices], ks/KsInitializeDeviceProfile, stream.ksinitializedeviceprofile
@@ -51,9 +50,9 @@ The <b>KsInitializeDeviceProfile</b> API must be called by all miniport drivers 
 
 ## -parameters
 
-### -param FilterFactory 
+### -param FilterFactory [in]
 
-[in]
+
 This is the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilterfactory">KSFILTERFACTORY</a> that was created by the camera driver to uniquely identify the camera’s filter factory.
 
 ## -returns

@@ -4,7 +4,6 @@ title: PO_FX_COMPONENT_PERF_STATE_CALLBACK (wdm.h)
 description: The ComponentPerfStateCallback callback routine notifies the driver that its request to change the performance state of a component is complete.
 old-location: kernel\componentperfstatecallback.htm
 tech.root: kernel
-ms.assetid: A54376E6-FBA2-4A27-83C7-8E3B6F2B2A05
 ms.date: 04/30/2018
 keywords: ["PO_FX_COMPONENT_PERF_STATE_CALLBACK callback function"]
 ms.keywords: ComponentPerfStateCallback, ComponentPerfStateCallback routine [Kernel-Mode Driver Architecture], PO_FX_COMPONENT_PERF_STATE_CALLBACK, kernel.componentperfstatecallback, wdm/ComponentPerfStateCallback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - ComponentPerfStateCallback
+ - PO_FX_COMPONENT_PERF_STATE_CALLBACK
 ---
 
 # PO_FX_COMPONENT_PERF_STATE_CALLBACK callback function
@@ -50,24 +49,24 @@ The <i>ComponentPerfStateCallback</i> callback routine notifies the driver that 
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the device context. The device driver uses this context to store information about the current power state of the device. The device driver specified this pointer in the <b>DeviceContext</b> member of the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_po_fx_device_v1">PO_FX_DEVICE</a> structure that the driver used to register the device with the power management framework (PoFx). This context is opaque to PoFx.
 
-### -param Component 
+### -param Component [in]
 
-[in]
+
 Specifies the index that identifies the component. This parameter is an index into the <b>Components</b> array in the <b>PO_FX_DEVICE</b> structure that the device driver used to register the device with PoFx. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
 
-### -param Succeeded 
+### -param Succeeded [in]
 
-[in]
+
 If TRUE, the platform extension plug-in (PEP) succeeded the performance state change. If FALSE, the PEP failed the performance state change. For more information, see the Remarks section.
 
-### -param RequestContext 
+### -param RequestContext [in]
 
-[in]
+
 Pointer to the optional driver or device context that was specified by the <i>Context</i> parameter of the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxissuecomponentperfstatechange">PoFxIssueComponentPerfStateChange</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxissuecomponentperfstatechangemultiple">PoFxIssueComponentPerfStateChangeMultiple</a> routine.
 
 ## -remarks
@@ -89,3 +88,4 @@ If <i>Succeeded</i> is TRUE, the driver should perform whatever work is necessar
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxregisterdevice">PoFxRegisterDevice</a>
+

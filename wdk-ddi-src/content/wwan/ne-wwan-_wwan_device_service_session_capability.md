@@ -4,7 +4,6 @@ title: _WWAN_DEVICE_SERVICE_SESSION_CAPABILITY (wwan.h)
 description: The WWAN_DEVICE_SERVICE_SESSION_CAPABILITY enumeration lists the different device service session operations that are supported by the device service.
 old-location: netvista\wwan_device_service_session_capability.htm
 tech.root: netvista
-ms.assetid: 57B41604-0189-48ED-847F-74C09C7746E8
 ms.date: 05/02/2018
 keywords: ["WWAN_DEVICE_SERVICE_SESSION_CAPABILITY enumeration"]
 ms.keywords: "*PWWAN_DEVICE_SERVICE_SESSION_CAPABILITY, WWAN_DEVICE_SERVICE_SESSION_CAPABILITY, WWAN_DEVICE_SERVICE_SESSION_CAPABILITY enumeration [Network Drivers Starting with Windows Vista], WwanDeviceServiceSessionNotSupported, WwanDeviceServiceSessionReadSupported, WwanDeviceServiceSessionWriteSupported, _WWAN_DEVICE_SERVICE_SESSION_CAPABILITY, netvista.wwan_device_service_session_capability, wwan/WWAN_DEVICE_SERVICE_SESSION_CAPABILITY, wwan/WwanDeviceServiceSessionNotSupported, wwan/WwanDeviceServiceSessionReadSupported, wwan/WwanDeviceServiceSessionWriteSupported"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_DEVICE_SERVICE_SESSION_CAPABILITY
+ - PWWAN_DEVICE_SERVICE_SESSION_CAPABILITY
  - WWAN_DEVICE_SERVICE_SESSION_CAPABILITY
 ---
 
@@ -69,3 +70,4 @@ The device service supports read indication  notifications on a session for data
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_device_service_entry">WWAN_DEVICE_SERVICE_ENTRY</a>
+

@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.IModelIterator.GetNext
 title: IModelIterator::GetNext (dbgmodel.h)
 description: The GetNext method moves the iterator forward and fetches the next iterated element.
-ms.assetid: 27a21fcb-dc5e-4551-a48d-321db2715aec
 ms.date: 08/13/2018
 keywords: ["IModelIterator::GetNext"]
 ms.keywords: IModelIterator::GetNext, GetNext, IModelIterator.GetNext, IModelIterator::GetNext, IModelIterator.GetNext
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IModelIterator.GetNext
+ - IModelIterator::GetNext
 ---
 
 # IModelIterator::GetNext
@@ -44,7 +43,7 @@ api_name:
 
 ## -description
 
-The GetNext method moves the iterator forward and fetches the next iterated element. If the object is indexable in addition to being iterable and this is indicated by the GetDefaultIndexDimensionality argument returning a non-zero value, this method may optionally return the default indicies to get back to the produced value from the indexer. Note that a caller may choose to pass 0/nullptr and not retrieve any indicies. It is considered illegal for the caller to request partial indicies (e.g.: less than the number produced by GetDefaultIndexDimensionality). 
+The GetNext method moves the iterator forward and fetches the next iterated element. If the object is indexable in addition to being iterable and this is indicated by the GetDefaultIndexDimensionality argument returning a non-zero value, this method may optionally return the default indices to get back to the produced value from the indexer. Note that a caller may choose to pass 0/nullptr and not retrieve any indices. It is considered illegal for the caller to request partial indices (e.g.: less than the number produced by GetDefaultIndexDimensionality). 
 
 If the iterator moved forward successfully but there was an error in reading the value of the iterated element, the method may return an error *AND* fill "object" with an error object. 
 At the end of iteration of the contained elements, the iterator will return E_BOUNDS from the GetNext method. Any subsequent call (unless there has been an intervening Reset call) will also return E_BOUNDS.
@@ -61,7 +60,7 @@ The number of dimensions of the default index that the caller is requesting. If 
 
 ### -param indexers
 
-A buffer of size dimensions which will be filled in with the default indicies to get back to the returned element from the indexer.
+A buffer of size dimensions which will be filled in with the default indices to get back to the returned element from the indexer.
 
 ### -param metadata
 

@@ -3,7 +3,6 @@ UID: NS:packet._NET_PACKET_LAYOUT
 title: _NET_PACKET_LAYOUT (packet.h)
 description: A NET_PACKET_LAYOUT structure describes the start of each protocol header in a NET_PACKET.
 tech.root: netvista
-ms.assetid: 71300205-2332-4127-8622-86390FE54BBD
 ms.date: 09/27/2019
 keywords: ["NET_PACKET_LAYOUT structure"]
 ms.keywords: _NET_PACKET_LAYOUT, NET_PACKET_LAYOUT, *PNET_PACKET_LAYOUT, _NET_PACKET_LAYER2_TYPE, NET_PACKET_LAYER2_TYPE, _NET_PACKET_LAYER3_TYPE, NET_PACKET_LAYER3_TYPE, _NET_PACKET_LAYER4_TYPE, NET_PACKET_LAYER4_TYPE
@@ -13,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.29
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -28,13 +27,14 @@ f1_keywords:
  - packet/_NET_PACKET_LAYOUT
  - NET_PACKET_LAYOUT
  - packet/NET_PACKET_LAYOUT
-topictype:
+topic_type:
  - apiref
-apitype:
+api_type:
  - HeaderDef
-apilocation:
+api_location:
  - packet.h
-apiname:
+api_name:
+ - _NET_PACKET_LAYOUT
  - NET_PACKET_LAYOUT
 ---
 

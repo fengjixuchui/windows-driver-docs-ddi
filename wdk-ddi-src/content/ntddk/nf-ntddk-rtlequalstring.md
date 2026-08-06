@@ -4,7 +4,6 @@ title: RtlEqualString function (ntddk.h)
 description: The RtlEqualString routine compares two counted strings to determine whether they are equal.
 old-location: kernel\rtlequalstring.htm
 tech.root: kernel
-ms.assetid: f8244276-0cf6-4315-9f4a-85890194dad8
 ms.date: 04/30/2018
 keywords: ["RtlEqualString function"]
 ms.keywords: RtlEqualString, RtlEqualString routine [Kernel-Mode Driver Architecture], k109_67ef861f-4f4b-4e98-be53-8962b02df08e.xml, kernel.rtlequalstring, ntddk/RtlEqualString
@@ -51,19 +50,19 @@ The <b>RtlEqualString</b> routine compares two counted strings to determine whet
 
 ## -parameters
 
-### -param String1 
+### -param String1 [in]
 
-[in]
+
 Pointer to the first string.
 
-### -param String2 
+### -param String2 [in]
 
-[in]
+
 Pointer to the second string.
 
-### -param CaseInSensitive 
+### -param CaseInSensitive [in]
 
-[in]
+
 If <b>TRUE</b>, case should be ignored when doing the comparison.
 
 ## -returns

@@ -4,7 +4,6 @@ title: KsDispatchQuerySecurity function (ks.h)
 description: The KsDispatchQuerySecurity function is used in the KSDISPATCH_TABLE.QuerySecurity entry to handle querying about the current security descriptor.
 old-location: stream\ksdispatchquerysecurity.htm
 tech.root: stream
-ms.assetid: 0aed2613-b40f-4328-91c4-c8e945c6ef17
 ms.date: 04/23/2018
 keywords: ["KsDispatchQuerySecurity function"]
 ms.keywords: KsDispatchQuerySecurity, KsDispatchQuerySecurity function [Streaming Media Devices], ks/KsDispatchQuerySecurity, ksfunc_9bf0ae3b-19d0-455d-9d58-2d7b7c515f30.xml, stream.ksdispatchquerysecurity
@@ -51,14 +50,14 @@ The <b>KsDispatchQuerySecurity</b> function is used in the KSDISPATCH_TABLE.Quer
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Specifies the device object associated with the IRP.
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Specifies the IRP that is being handled.
 
 ## -returns

@@ -3,9 +3,7 @@ UID: NS:storport._STOR_EVENT
 title: STOR_EVENT
 description: The STOR_EVENT structure describes an event object.
 tech.root: storage
-ms.assetid: e97bff93-6b37-4ecb-9b3a-9a0be475ae87
 ms.date: 03/24/2020
-ms.topic: struct
 ms.keywords: STOR_EVENT, STOR_EVENT, *PSTOR_EVENT, *PRSTOR_EVENT,
 req.header: storport.h
 req.include-header: 
@@ -35,12 +33,13 @@ api_type:
 api_location:
  - storport.h
 api_name:
+ - _STOR_EVENT
+ - PSTOR_EVENT
  - STOR_EVENT
-product:
- - Windows
 ---
 
 # STOR_EVENT structure
+
 
 ## -description
 
@@ -66,3 +65,4 @@ Callers of [**StorPortInitializeEvent**](nf-storport-storportinitializeevent.md)
 [**StorPortInitializeEvent**](nf-storport-storportinitializeevent.md)
 
 [**StorPortSetEvent**](nf-storport-storportsetevent.md)
+

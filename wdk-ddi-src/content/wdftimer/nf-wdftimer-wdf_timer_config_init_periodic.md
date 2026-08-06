@@ -4,7 +4,6 @@ title: WDF_TIMER_CONFIG_INIT_PERIODIC function (wdftimer.h)
 description: The WDF_TIMER_CONFIG_INIT_PERIODIC function initializes a WDF_TIMER_CONFIG structure for a periodic timer.
 old-location: wdf\wdf_timer_config_init_periodic.htm
 tech.root: wdf
-ms.assetid: 44a5b4dd-c654-4af1-afd6-6e59d2cd1ff8
 ms.date: 02/26/2018
 keywords: ["WDF_TIMER_CONFIG_INIT_PERIODIC function"]
 ms.keywords: DFTimerObjectRef_de3c1624-3004-46e3-b6b4-d47768cd8239.xml, WDF_TIMER_CONFIG_INIT_PERIODIC, WDF_TIMER_CONFIG_INIT_PERIODIC function, kmdf.wdf_timer_config_init_periodic, wdf.wdf_timer_config_init_periodic, wdftimer/WDF_TIMER_CONFIG_INIT_PERIODIC
@@ -53,19 +52,19 @@ The <b>WDF_TIMER_CONFIG_INIT_PERIODIC</b> function initializes a <a href="/windo
 
 ## -parameters
 
-### -param Config 
+### -param Config [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdftimer/ns-wdftimer-_wdf_timer_config">WDF_TIMER_CONFIG</a> structure.
 
-### -param EvtTimerFunc 
+### -param EvtTimerFunc [in]
 
-[in]
+
 A pointer to a driver-supplied <a href="/windows-hardware/drivers/ddi/wdftimer/nc-wdftimer-evt_wdf_timer">EvtTimerFunc</a> callback function.
 
-### -param Period 
+### -param Period [in]
 
-[in]
+
 A time value. For more information about specifying this value, see <a href="/windows-hardware/drivers/ddi/wdftimer/ns-wdftimer-_wdf_timer_config">WDF_TIMER_CONFIG</a>.
 
 ## -remarks

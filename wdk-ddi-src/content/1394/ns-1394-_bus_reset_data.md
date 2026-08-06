@@ -4,7 +4,6 @@ title: _BUS_RESET_DATA (1394.h)
 description: The BUS_RESET_DATA structure specifies the context for the extended bus reset notification routine.
 old-location: ieee\bus_reset_data.htm
 tech.root: IEEE
-ms.assetid: 82A01880-AC8D-4285-A780-EE195F186B71
 ms.date: 02/15/2018
 keywords: ["BUS_RESET_DATA structure"]
 ms.keywords: "*PBUS_RESET_DATA, 1394/BUS_RESET_DATA, 1394/PBUS_RESET_DATA, BUS_RESET_DATA, BUS_RESET_DATA structure [Buses], IEEE.bus_reset_data, PBUS_RESET_DATA, PBUS_RESET_DATA structure pointer [Buses], _BUS_RESET_DATA"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _BUS_RESET_DATA
+ - PBUS_RESET_DATA
  - BUS_RESET_DATA
 ---
 
@@ -56,7 +57,7 @@ The <b>BUS_RESET_DATA</b> structure specifies the context for the extended bus r
 
 ### -field ResetContext
 
-Pointer to a client driver-defined context when a bus reset occurs. The argument that is specified in the <b>u.BusResetNotification.ResetContext</b> parameter when the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537638">REQUEST_BUS_RESET_NOTIFICATION</a> request is sent.
+Pointer to a client driver-defined context when a bus reset occurs. The argument that is specified in the <b>u.BusResetNotification.ResetContext</b> parameter when the <a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_BUS_RESET_NOTIFICATION</a> request is sent.
 
 ### -field GenerationCount
 
@@ -100,3 +101,4 @@ The negotiated speed to the device. The possible values are as follows:
 ## -see-also
 
 <a href="/windows-hardware/drivers/ieee/device-driver-interface--ddi--changes-in-windows-7">Device Driver Interface (DDI) Changes in Windows 7</a>
+

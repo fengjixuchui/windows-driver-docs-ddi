@@ -4,7 +4,6 @@ title: GPIO_CLIENT_READ_PINS_MASK (gpioclx.h)
 description: The CLIENT_ReadGpioPinsUsingMask event callback function reads a bank of general-purpose I/O (GPIO) pins.
 old-location: gpio\client_readgpiopinsusingmask.htm
 tech.root: GPIO
-ms.assetid: EFF7C3D8-9E52-446A-BF55-0308A0D2835E
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_READ_PINS_MASK callback function"]
 ms.keywords: CLIENT_ReadGpioPinsUsingMask, CLIENT_ReadGpioPinsUsingMask callback, CLIENT_ReadGpioPinsUsingMask callback function [Parallel Ports], GPIO.client_readgpiopinsusingmask, GPIO_CLIENT_READ_PINS_MASK, gpioclx/CLIENT_ReadGpioPinsUsingMask
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_ReadGpioPinsUsingMask
+ - GPIO_CLIENT_READ_PINS_MASK
 ---
 
 # GPIO_CLIENT_READ_PINS_MASK callback function
@@ -50,14 +49,14 @@ The <i>CLIENT_ReadGpioPinsUsingMask</i> event callback function reads a bank of 
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param ReadParameters 
+### -param ReadParameters [in, out]
 
-[in, out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_read_pins_mask_parameters">GPIO_READ_PINS_MASK_PARAMETERS</a> structure that, on entry, describes the GPIO pins to read, and, on exit, contains the data read from the GPIO pins.
 
 ## -returns
@@ -122,3 +121,4 @@ The GPIO_CLIENT_READ_PINS_MASK function type is defined in the Gpioclx.h header 
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_read_pins_mask_parameters">GPIO_READ_PINS_MASK_PARAMETERS</a>
+

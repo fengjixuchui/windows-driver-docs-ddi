@@ -4,7 +4,6 @@ title: _DXGI_DDI_ARG_RECLAIMRESOURCES (dxgiddi.h)
 description: Describes video memory resources that are to be reclaimed and that the user-mode display driver previously offered for reuse. Used with the pfnReclaimResources function by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
 old-location: display\dxgi_ddi_arg_reclaimresources.htm
 tech.root: display
-ms.assetid: 43e34157-2cf1-4e2c-bcd8-c4425e89fb0f
 ms.date: 05/10/2018
 keywords: ["DXGI_DDI_ARG_RECLAIMRESOURCES structure"]
 ms.keywords: DXGI_DDI_ARG_RECLAIMRESOURCES, DXGI_DDI_ARG_RECLAIMRESOURCES structure [Display Devices], _DXGI_DDI_ARG_RECLAIMRESOURCES, display.dxgi_ddi_arg_reclaimresources, dxgiddi/DXGI_DDI_ARG_RECLAIMRESOURCES
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Dxgiddi.h
 api_name:
+ - _DXGI_DDI_ARG_RECLAIMRESOURCES
  - DXGI_DDI_ARG_RECLAIMRESOURCES
 ---
 
@@ -52,30 +52,31 @@ Describes video memory resources that are to be reclaimed and that the user-mode
 
 ## -struct-fields
 
-### -field hDevice
+### -field hDevice [in]
 
-[in] A handle to the display device (graphics context) on which the driver offers resources for reuse.
+A handle to the display device (graphics context) on which the driver offers resources for reuse.
 
 The Direct3D runtime passed this handle to the driver in the <b>hDrvDevice</b> member of the <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddiarg_createdevice">D3D10DDIARG_CREATEDEVICE</a> structure when it created the device by calling the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdevice">CreateDevice(D3D10)</a> routine.
 
-### -field pResources
+### -field pResources [in]
 
-[in] A pointer to an array of handles to the resources that are to be reclaimed.
+A pointer to an array of handles to the resources that are to be reclaimed.
 
-### -field pDiscarded
+### -field pDiscarded [out]
 
-[out] An optional array of Boolean values that specify whether each resource or allocation was discarded.
+An optional array of Boolean values that specify whether each resource or allocation was discarded.
 
 Each Boolean value in this array corresponds to a resource at the same index location in the structure pointed to by <b>pResources</b>.
 
-The driver sets each Boolean value to <b>TRUE</b> if the correponding resource was discarded, or to <b>FALSE</b> if not.
+The driver sets each Boolean value to <b>TRUE</b> if the corresponding resource was discarded, or to <b>FALSE</b> if not.
 
 If <b>pDiscarded</b> is <b>NULL</b>, the driver can ignore it.
 
-### -field Resources
+### -field Resources [in]
 
-[in] The number of elements in the arrays pointed to by <b>pResources</b> and <b>pDiscarded</b>.
+The number of elements in the arrays pointed to by <b>pResources</b> and <b>pDiscarded</b>.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi1_2_ddi_base_functions">pfnReclaimResources</a>
+

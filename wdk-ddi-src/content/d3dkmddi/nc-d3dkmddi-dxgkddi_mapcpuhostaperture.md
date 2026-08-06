@@ -3,7 +3,6 @@ UID: NC:d3dkmddi.DXGKDDI_MAPCPUHOSTAPERTURE
 title: DXGKDDI_MAPCPUHOSTAPERTURE (d3dkmddi.h)
 description: DxgkDdiMapCpuHostAperture is called to map an allocation that is resident in a local memory segment into the CPU host aperture in order to make it visible to the CPU.
 old-location: display\dxgkddimapcpuhostaperture.htm
-ms.assetid: 78729B9A-A9FA-4D1E-8D30-3FFD61B1A7D3
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_MAPCPUHOSTAPERTURE callback function"]
 ms.keywords: DXGKDDI_MAPCPUHOSTAPERTURE, DXGKDDI_MAPCPUHOSTAPERTURE callback, DxgkDdiMapCpuHostAperture, DxgkDdiMapCpuHostAperture callback function [Display Devices], d3dkmddi/DxgkDdiMapCpuHostAperture, display.dxgkddimapcpuhostaperture
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiMapCpuHostAperture
-product:
- - Windows
+ - DXGKDDI_MAPCPUHOSTAPERTURE
 ---
 
 # DXGKDDI_MAPCPUHOSTAPERTURE callback function
@@ -65,3 +62,4 @@ The <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_mapcpuh
 ## -returns
 
       Returns <b>STATUS_SUCCESS</b> if it succeeds. Otherwise, it returns one of the error codes defined in <b>Ntstatus.h</b>.
+

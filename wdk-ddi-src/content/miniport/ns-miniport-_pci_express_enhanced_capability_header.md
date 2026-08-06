@@ -1,10 +1,9 @@
 ---
 UID: NS:miniport._PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER
 title: _PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER (miniport.h)
-description: The PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER structure describes the header for a PCI Express (PCIe) extended capability structure.
+description: The _PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER structure (miniport.h) describes the header for a PCI Express (PCIe) extended capability structure.
 old-location: pci\pci_express_enhanced_capability_header.htm
 tech.root: PCI
-ms.assetid: bc90a153-e6ff-4736-b625-1260a84bb157
 ms.date: 02/24/2018
 keywords: ["PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER structure"]
 ms.keywords: "*PPCI_EXPRESS_ENHANCED_CAPABILITY_HEADER, PCI.pci_express_enhanced_capability_header, PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER, PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER structure [Buses], PPCI_EXPRESS_ENHANCED_CAPABILITY_HEADER, PPCI_EXPRESS_ENHANCED_CAPABILITY_HEADER structure pointer [Buses], _PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER, pci_struct_50b450a2-7198-4021-947b-2c276ca9b274.xml, wdm/PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER, wdm/PPCI_EXPRESS_ENHANCED_CAPABILITY_HEADER"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER
+ - PPCI_EXPRESS_ENHANCED_CAPABILITY_HEADER
  - PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER
 ---
 
@@ -155,3 +156,4 @@ A PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER is included at the beginning of every e
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_pci_express_serial_number_capability">PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY</a>
+

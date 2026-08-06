@@ -4,7 +4,6 @@ title: IDebugEventCallbacksWide::ExitProcess (dbgeng.h)
 description: The ExitProcess callback method is called by the engine when an exit-processdebugging event occurs in the target.
 old-location: debugger\idebugeventcallbackswide_exitprocess.htm
 tech.root: debugger
-ms.assetid: bc104b84-4f0a-420d-8c2c-14b33cc6ca04
 ms.date: 05/03/2018
 keywords: ["IDebugEventCallbacksWide::ExitProcess"]
 ms.keywords: ExitProcess, ExitProcess method [Windows Debugging], ExitProcess method [Windows Debugging],IDebugEventCallbacksWide interface, IDebugEventCallbacksWide interface [Windows Debugging],ExitProcess method, IDebugEventCallbacksWide.ExitProcess, IDebugEventCallbacksWide::ExitProcess, dbgeng/IDebugEventCallbacksWide::ExitProcess, debugger.idebugeventcallbackswide_exitprocess
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugEventCallbacksWide.ExitProcess
+ - IDebugEventCallbacksWide::ExitProcess
 ---
 
 # IDebugEventCallbacksWide::ExitProcess
@@ -50,9 +49,9 @@ The <b>ExitProcess</b> callback method is called by the engine when an exit-proc
 
 ## -parameters
 
-### -param ExitCode 
+### -param ExitCode [in]
 
-[in]
+
 Specifies the exit code for the process.
 
 ## -returns
@@ -64,3 +63,4 @@ This method returns a <a href="/windows-hardware/drivers/debugger/debug-status-x
 This method is only called by the engine if the DEBUG_EVENT_EXIT_PROCESS flag is set in the mask returned by <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugeventcallbackswide-getinterestmask">IDebugEventCallbacksWide::GetInterestMask</a>.
 
 For more information about handling events, see <a href="/windows-hardware/drivers/debugger/monitoring-events">Monitoring Events</a>.  For information about threads, see <a href="/windows-hardware/drivers/debugger/threads-and-processes">Threads and Processes</a>.
+

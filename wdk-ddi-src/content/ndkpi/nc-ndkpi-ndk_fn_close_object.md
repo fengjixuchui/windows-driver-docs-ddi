@@ -4,7 +4,6 @@ title: NDK_FN_CLOSE_OBJECT (ndkpi.h)
 description: The NdkCloseObject (NDK_FN_CLOSE_OBJECT) function initiates a close request for an NDK object.
 old-location: netvista\ndk_fn_close_object.htm
 tech.root: netvista
-ms.assetid: 9547DCCE-6B3C-434F-A8CA-1AA59AB7152A
 ms.date: 05/02/2018
 keywords: ["NDK_FN_CLOSE_OBJECT callback function"]
 ms.keywords: NDK_FN_CLOSE_OBJECT, NDK_FN_CLOSE_OBJECT callback, NdkCloseObject, NdkCloseObject callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkCloseObject, netvista.ndk_fn_close_object
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkCloseObject
+ - NDK_FN_CLOSE_OBJECT
 ---
 
 # NDK_FN_CLOSE_OBJECT callback function
@@ -50,19 +49,19 @@ The <i>NdkCloseObject</i> (<i>NDK_FN_CLOSE_OBJECT</i>) function initiates a clos
 
 ## -parameters
 
-### -param pNdkObject 
+### -param pNdkObject [in]
 
-[in]
+
 A pointer to the object header (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_object_header">NDK_OBJECT_HEADER</a>) for the object to close.
 
-### -param CloseCompletion 
+### -param CloseCompletion [in]
 
-[in]
+
 A pointer to an <i>NdkCloseCompletion</i> close completion callback function  (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_close_completion">NDK_FN_CLOSE_COMPLETION</a>).
 
-### -param RequestContext 
+### -param RequestContext [in, optional]
 
-[in, optional]
+
 A context value for the NDK provider to pass back to the <i>NdkCloseCompletion</i> function that is specified in the <i>CloseCompletion</i> parameter.
 
 ## -returns
@@ -135,3 +134,4 @@ The NDK provider must ensure that the <i>NdkCloseCompletion</i> function (<a hre
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_object_header">NDK_OBJECT_HEADER</a>
+

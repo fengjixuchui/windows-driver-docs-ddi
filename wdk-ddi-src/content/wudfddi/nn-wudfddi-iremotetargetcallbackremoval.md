@@ -4,7 +4,6 @@ title: IRemoteTargetCallbackRemoval (wudfddi.h)
 description: The IRemoteTargetCallbackRemoval interface provides callback functions that the framework calls to notify the driver about events that are associated with the removal of a remote I/O target.
 old-location: wdf\iremotetargetcallbackremoval.htm
 tech.root: wdf
-ms.assetid: 72271173-8851-4980-9b52-f9e14f1fe071
 ms.date: 02/26/2018
 keywords: ["IRemoteTargetCallbackRemoval interface"]
 ms.keywords: IRemoteTargetCallbackRemoval, IRemoteTargetCallbackRemoval interface, IRemoteTargetCallbackRemoval interface,described, UMDFIoTargetObjectRef_7508512a-9bfc-4563-bf01-48e9caf6ba4f.xml, umdf.iremotetargetcallbackremoval, wdf.iremotetargetcallbackremoval, wudfddi/IRemoteTargetCallbackRemoval
@@ -52,9 +51,9 @@ The <b>IRemoteTargetCallbackRemoval</b> interface provides callback functions th
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IRemoteTargetCallbackRemoval</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IRemoteTargetCallbackRemoval</b> also has these types of members:
+The <b>IRemoteTargetCallbackRemoval</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IRemoteTargetCallbackRemoval</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>
 
 ## -remarks

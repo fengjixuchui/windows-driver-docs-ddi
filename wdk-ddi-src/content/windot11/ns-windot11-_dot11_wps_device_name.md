@@ -4,7 +4,6 @@ title: _DOT11_WPS_DEVICE_NAME (windot11.h)
 description: The DOT11_WPS_DEVICE_NAME structure contains a friendly name of the P2P device.
 old-location: netvista\dot11_wps_device_name.htm
 tech.root: netvista
-ms.assetid: 6C2B8E87-A88F-4244-81B2-0241E2DAE756
 ms.date: 02/16/2018
 keywords: ["DOT11_WPS_DEVICE_NAME structure"]
 ms.keywords: "*PDOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME, DOT11_WPS_DEVICE_NAME structure [Network Drivers Starting with Windows Vista], PDOT11_WPS_DEVICE_NAME, PDOT11_WPS_DEVICE_NAME structure pointer [Network Drivers Starting with Windows Vista], _DOT11_WPS_DEVICE_NAME, netvista.dot11_wps_device_name, windot11/DOT11_WPS_DEVICE_NAME, windot11/PDOT11_WPS_DEVICE_NAME"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - Windot11.h
 api_name:
+ - _DOT11_WPS_DEVICE_NAME
+ - PDOT11_WPS_DEVICE_NAME
  - DOT11_WPS_DEVICE_NAME
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_WPS_DEVICE_NAME structure
@@ -52,7 +51,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The <b>DOT11_WPS_DEVICE_NAME</b> structure contains a friendly name of the P2P device.
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The <b>DOT11_WPS_DEVICE_NAME</b> structure contains a friendly name of the P2P device.
 
 ## -struct-fields
 
@@ -60,9 +62,8 @@ product:
 
 The length, in bytes, of the device name.
 
-### -field ucDeviceName
 
-#### - ucDeviceName[DOT11_WPS_DEVICE_NAME_MAX_LENGTH]
+### -field ucDeviceName
 
 A UTF-8–encoded descriptive name of the device.
 
@@ -75,3 +76,4 @@ uDeviceNameLength;
   UCHAR   ucDeviceName[DOT11_WPS_DEVICE_NAME_MAX_LENGTH];
 } DOT11_WPS_DEVICE_NAME, *PDOT11_WPS_DEVICE_NAME;
 ```
+

@@ -1,10 +1,9 @@
 ---
 UID: NI:ntddvdeo.IOCTL_VIDEO_QUERY_DISPLAY_BRIGHTNESS
 title: IOCTL_VIDEO_QUERY_DISPLAY_BRIGHTNESS (ntddvdeo.h)
-description: This IOCTL is not handled by video miniport drivers. It is handled entirely by the system-supplied video port driver.
+description: Learn how IOCTL_VIDEO_QUERY_DISPLAY_BRIGHTNESS not handled by video miniport drivers. It is handled entirely by the system-supplied video port driver.
 old-location: display\ioctl_video_query_display_brightness.htm
 tech.root: display
-ms.assetid: 8dccc5bd-c678-4c94-9fa6-c5ac37ad6d0e
 ms.date: 05/10/2018
 keywords: ["IOCTL_VIDEO_QUERY_DISPLAY_BRIGHTNESS IOCTL"]
 ms.keywords: IOCTL_VIDEO_QUERY_DISPLAY_BRIGHTNESS, IOCTL_VIDEO_QUERY_DISPLAY_BRIGHTNESS control, IOCTL_VIDEO_QUERY_DISPLAY_BRIGHTNESS control code [Display Devices], Video_IOCTLs_f55cce8d-9a8e-45ef-98e2-8cabc27cd9e6.xml, display.ioctl_video_query_display_brightness, ntddvdeo/IOCTL_VIDEO_QUERY_DISPLAY_BRIGHTNESS
@@ -49,6 +48,8 @@ api_name:
 This IOCTL is not handled by video miniport drivers. It is handled entirely by the system-supplied video port driver.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

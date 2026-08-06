@@ -4,7 +4,6 @@ title: IStillImageW::SetDeviceValue (sti.h)
 description: The IStillImage::SetDeviceValue method sets registry information for a specified still image device.
 old-location: image\istillimage_setdevicevalue.htm
 tech.root: image
-ms.assetid: e2ea9c59-cc63-4ced-a225-e0c9667dd574
 ms.date: 05/03/2018
 keywords: ["IStillImageW::SetDeviceValue"]
 ms.keywords: IStillImageW interface [Imaging Devices],SetDeviceValue method, IStillImageW.SetDeviceValue, IStillImageW::SetDeviceValue, SetDeviceValue, SetDeviceValue method [Imaging Devices], SetDeviceValue method [Imaging Devices],IStillImageW interface, image.istillimage_setdevicevalue, sti/IStillImageW::SetDeviceValue, stifnc_74822300-cad0-43db-80b9-d3f868afcd19.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - sti.h
 api_name:
- - IStillImageW.SetDeviceValue
+ - IStillImageW::SetDeviceValue
 ---
 
 # IStillImageW::SetDeviceValue
@@ -50,23 +49,23 @@ The <b>IStillImage::SetDeviceValue</b> method sets registry information for a sp
 
 ## -parameters
 
-### -param pwszDeviceName 
+### -param pwszDeviceName [in]
 
-[in]
+
 Caller-supplied pointer to a string representing an internal device name, obtained by calling <a href="/previous-versions/windows/hardware/drivers/ff543790(v=vs.85)">IStillImage::GetSTILaunchInformation</a> or <a href="/previous-versions/windows/hardware/drivers/ff543784(v=vs.85)">IStillImage::GetDeviceList</a>.
 
-### -param pValueName 
+### -param pValueName [in]
 
-[in]
+
 Caller-supplied pointer to a string representing a registry value name.
 
 ### -param Type
 
 Caller-supplied REG_-prefixed registry value type. For more information, see <b>RegSetValueEx</b> in the Microsoft Windows SDK documentation.
 
-### -param pData 
+### -param pData [in]
 
-[in]
+
 Caller-supplied pointer to the data to be stored.
 
 ### -param cbData
@@ -90,3 +89,4 @@ Before calling <b>IStillImage::SetDeviceValue</b>, clients of the <b>IStillImage
 
 
 <a href="/windows-hardware/drivers/ddi/_image/index">IStillImageW</a>
+

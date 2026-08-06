@@ -4,7 +4,6 @@ title: DXGK_BRIGHTNESS_GET_BACKLIGHT_REDUCTION (dispmprt.h)
 description: Retrieves the current level of backlight reduction that is applied to the integrated display panel.
 old-location: display\dxgkddigetbacklightreduction.htm
 tech.root: display
-ms.assetid: 018cb4a0-e71d-407e-8fe9-716312099b73
 ms.date: 05/10/2018
 keywords: ["DXGK_BRIGHTNESS_GET_BACKLIGHT_REDUCTION callback function"]
 ms.keywords: DXGK_BRIGHTNESS_GET_BACKLIGHT_REDUCTION, DXGK_BRIGHTNESS_GET_BACKLIGHT_REDUCTION callback, DxgkDdiGetBacklightReduction, DxgkDdiGetBacklightReduction callback function [Display Devices], display.dxgkddigetbacklightreduction, dispmprt/DxgkDdiGetBacklightReduction
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dispmprt.h
 api_name:
- - DxgkDdiGetBacklightReduction
+ - DXGK_BRIGHTNESS_GET_BACKLIGHT_REDUCTION
 ---
 
 # DXGK_BRIGHTNESS_GET_BACKLIGHT_REDUCTION callback function
@@ -50,14 +49,14 @@ Retrieves the current level of backlight reduction that is applied to the integr
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A handle to a <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> context block that is associated with a display adapter. The display miniport driver's  function previously provided this handle to the DirectX graphics kernel subsystem.
 
-### -param BacklightInfo 
+### -param BacklightInfo [out]
 
-[out]
+
 A value of type <a href="/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_dxgk_backlight_info">DXGK_BACKLIGHT_INFO</a> that provides the current absolute level of backlight reduction.
 
 ## -returns
@@ -86,3 +85,4 @@ As an example, if <i>BRR</i> = 0.2, the driver will typically boost brightness b
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a>
+

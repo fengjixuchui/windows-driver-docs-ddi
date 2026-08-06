@@ -4,7 +4,6 @@ title: _D3DDDICB_DESTROYSYNCHRONIZATIONOBJECT (d3dumddi.h)
 description: The D3DDDICB_DESTROYSYNCHRONIZATIONOBJECT structure contains the handle to a synchronization object to destroy.
 old-location: display\d3dddicb_destroysynchronizationobject.htm
 tech.root: display
-ms.assetid: d950e290-3acb-4a89-86a4-ae5117781998
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_DESTROYSYNCHRONIZATIONOBJECT structure"]
 ms.keywords: D3DDDICB_DESTROYSYNCHRONIZATIONOBJECT, D3DDDICB_DESTROYSYNCHRONIZATIONOBJECT structure [Display Devices], D3D_param_Structs_34603e42-8f8b-42cb-9191-988be4a8932d.xml, _D3DDDICB_DESTROYSYNCHRONIZATIONOBJECT, d3dumddi/D3DDDICB_DESTROYSYNCHRONIZATIONOBJECT, display.d3dddicb_destroysynchronizationobject
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDICB_DESTROYSYNCHRONIZATIONOBJECT
  - D3DDDICB_DESTROYSYNCHRONIZATIONOBJECT
 ---
 
@@ -52,9 +52,9 @@ The D3DDDICB_DESTROYSYNCHRONIZATIONOBJECT structure contains the handle to a syn
 
 ## -struct-fields
 
-### -field hSyncObject
+### -field hSyncObject [in]
 
-[in] A D3DKMT_HANDLE value that represents the kernel-mode handle that the <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createsynchronizationobjectcb">pfnCreateSynchronizationObjectCb</a> function returns and that identifies the kernel-mode synchronization object to destroy.
+A D3DKMT_HANDLE value that represents the kernel-mode handle that the <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createsynchronizationobjectcb">pfnCreateSynchronizationObjectCb</a> function returns and that identifies the kernel-mode synchronization object to destroy.
 
 ## -see-also
 
@@ -63,3 +63,4 @@ The D3DDDICB_DESTROYSYNCHRONIZATIONOBJECT structure contains the handle to a syn
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_destroysynchronizationobjectcb">pfnDestroySynchronizationObjectCb</a>
+

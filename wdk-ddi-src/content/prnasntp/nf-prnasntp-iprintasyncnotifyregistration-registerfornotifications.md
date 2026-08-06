@@ -1,15 +1,13 @@
 ---
 UID: NF:prnasntp.IPrintAsyncNotifyRegistration.RegisterForNotifications
 title: IPrintAsyncNotifyRegistration::RegisterForNotifications (prnasntp.h)
-description: 
-old-location: print\iprintasyncnotifyregistration_registerfornotifications.htm
+description: Defines the IPrintAsyncNotifyRegistration::RegisterForNotifications method.
 tech.root: print
-ms.assetid: 8D34983F-7547-48FF-B61A-F78BDA9D2248
-ms.date: 04/20/2018
+ms.date: 06/12/2021
 keywords: ["IPrintAsyncNotifyRegistration::RegisterForNotifications"]
 ms.keywords: IPrintAsyncNotifyRegistration interface [Print Devices],RegisterForNotifications method, IPrintAsyncNotifyRegistration.RegisterForNotifications, IPrintAsyncNotifyRegistration::RegisterForNotifications, RegisterForNotifications, RegisterForNotifications method [Print Devices], RegisterForNotifications method [Print Devices],IPrintAsyncNotifyRegistration interface, print.iprintasyncnotifyregistration_registerfornotifications, prnasntp/IPrintAsyncNotifyRegistration::RegisterForNotifications
 req.header: prnasntp.h
-req.include-header: 
+req.include-header: Prnasntp.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -38,18 +36,19 @@ api_type:
 api_location:
  - Prnasntp.h
 api_name:
- - IPrintAsyncNotifyRegistration.RegisterForNotifications
+ - IPrintAsyncNotifyRegistration::RegisterForNotifications
 ---
 
 # IPrintAsyncNotifyRegistration::RegisterForNotifications
 
-
 ## -description
+
+Defines the **IPrintAsyncNotifyRegistration::RegisterForNotifications** method.
 
 ## -returns
 
-If this method succeeds, it returns <b xmlns:loc="https://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="https://microsoft.com/wdcml/l10n">HRESULT</b> error code.
+If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/prnasntp/nn-prnasntp-iprintasyncnotifyregistration">IPrintAsyncNotifyRegistration</a>
+[IPrintAsyncNotifyRegistration](./nn-prnasntp-iprintasyncnotifyregistration.md)

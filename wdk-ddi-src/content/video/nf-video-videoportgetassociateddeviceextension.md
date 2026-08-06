@@ -4,7 +4,6 @@ title: VideoPortGetAssociatedDeviceExtension function (video.h)
 description: The VideoPortGetAssociatedDeviceExtension function returns the device extension for the parent of the specified device object.
 old-location: display\videoportgetassociateddeviceextension.htm
 tech.root: display
-ms.assetid: 825e2b61-6b51-4553-88e1-0aff2e9e3cce
 ms.date: 05/10/2018
 keywords: ["VideoPortGetAssociatedDeviceExtension function"]
 ms.keywords: VideoPortGetAssociatedDeviceExtension, VideoPortGetAssociatedDeviceExtension function [Display Devices], VideoPort_Functions_7116b537-1296-4136-b62c-ce5918eea10d.xml, display.videoportgetassociateddeviceextension, video/VideoPortGetAssociatedDeviceExtension
@@ -50,9 +49,9 @@ The <b>VideoPortGetAssociatedDeviceExtension</b> function returns the device ext
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Is the device object of a child device.
 
 ## -returns

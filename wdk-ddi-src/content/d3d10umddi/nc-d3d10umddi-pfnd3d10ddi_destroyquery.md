@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d10umddi.PFND3D10DDI_DESTROYQUERY
 title: PFND3D10DDI_DESTROYQUERY (d3d10umddi.h)
-description: The DestroyQuery(D3D10) function destroys the specified query object. The query object can be destoyed only if it is not currently bound to a display device.
+description: The DestroyQuery(D3D10) function destroys the specified query object. The query object can be destroyed only if it is not currently bound to a display device.
 old-location: display\destroyquery_d3d10_.htm
-ms.assetid: 74bb85df-6d64-49e8-b431-2f4a9954eff2
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_DESTROYQUERY callback function"]
 ms.keywords: DestroyQuery, DestroyQuery callback function [Display Devices], PFND3D10DDI_DESTROYQUERY, PFND3D10DDI_DESTROYQUERY callback, UserModeDisplayDriverDx10_Functions_9c0fdf87-a47b-45b5-9ec9-5c307d412c9c.xml, d3d10umddi/DestroyQuery, display.destroyquery_d3d10_
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - DestroyQuery
+ - PFND3D10DDI_DESTROYQUERY
 ---
 
 # PFND3D10DDI_DESTROYQUERY callback function
@@ -46,17 +45,17 @@ api_name:
 
 ## -description
 
-The <b>DestroyQuery(D3D10)</b> function destroys the specified query object. The query object can be destoyed only if it is not currently bound to a display device.
+The <b>DestroyQuery(D3D10)</b> function destroys the specified query object. The query object can be destroyed only if it is not currently bound to a display device.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hQuery* [in]
 
@@ -77,3 +76,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

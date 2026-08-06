@@ -4,7 +4,6 @@ title: IPrintReadStream::Seek (filterpipeline.h)
 description: The Seek method changes the seek pointer to a new location in the stream.
 old-location: print\iprintreadstream_seek.htm
 tech.root: print
-ms.assetid: b563e080-32ab-47b7-94f4-1d3dd19f3311
 ms.date: 04/20/2018
 keywords: ["IPrintReadStream::Seek"]
 ms.keywords: IPrintReadStream interface [Print Devices],Seek method, IPrintReadStream.Seek, IPrintReadStream::Seek, Seek, Seek method [Print Devices], Seek method [Print Devices],IPrintReadStream interface, filterpipeline/IPrintReadStream::Seek, filterpipeline_622c8e3a-c21f-4784-ba2d-96833fab4230.xml, print.iprintreadstream_seek
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - filterpipeline.h
 api_name:
- - IPrintReadStream.Seek
+ - IPrintReadStream::Seek
 ---
 
 # IPrintReadStream::Seek
@@ -50,19 +49,19 @@ The <code>Seek</code> method changes the seek pointer to a new location in the s
 
 ## -parameters
 
-### -param dlibMove 
+### -param dlibMove [in]
 
-[in]
+
 The displacement that is added to the location that <i>dwOrigin</i> specifies.
 
-### -param dwOrigin 
+### -param dwOrigin [in]
 
-[in]
+
 The origin for the displacement that <i>dlibMove</i> specifies. The origin can be the beginning of the file (STREAM_SEEK_SET), the current seek pointer (STREAM_SEEK_CUR), or the end of the file (STREAM_SEEK_END).
 
-### -param plibNewPosition 
+### -param plibNewPosition [out]
 
-[out]
+
 A pointer to the location where <code>Seek</code> writes the value of the new seek pointer from the beginning of the stream.
 
 ## -returns

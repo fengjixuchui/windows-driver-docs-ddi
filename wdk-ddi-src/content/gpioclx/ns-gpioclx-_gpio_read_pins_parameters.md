@@ -4,7 +4,6 @@ title: _GPIO_READ_PINS_PARAMETERS (gpioclx.h)
 description: The GPIO_READ_PINS_PARAMETERS structure describes a read operation on a group of general-purpose I/O (GPIO) pins.
 old-location: gpio\gpio_read_pins_parameters.htm
 tech.root: GPIO
-ms.assetid: D04C836E-C440-4AB9-BB44-7D1E8E0F681D
 ms.date: 02/15/2018
 keywords: ["GPIO_READ_PINS_PARAMETERS structure"]
 ms.keywords: "*PGPIO_READ_PINS_PARAMETERS, GPIO.gpio_read_pins_parameters, GPIO_READ_PINS_PARAMETERS, GPIO_READ_PINS_PARAMETERS structure [Parallel Ports], PGPIO_READ_PINS_PARAMETERS, PGPIO_READ_PINS_PARAMETERS structure pointer [Parallel Ports], _GPIO_READ_PINS_PARAMETERS, gpioclx/GPIO_READ_PINS_PARAMETERS, gpioclx/PGPIO_READ_PINS_PARAMETERS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
+ - _GPIO_READ_PINS_PARAMETERS
+ - PGPIO_READ_PINS_PARAMETERS
  - GPIO_READ_PINS_PARAMETERS
 ---
 
@@ -93,3 +94,4 @@ The <i>ReadParameters</i> parameter of the <a href="/windows-hardware/drivers/dd
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/nc-gpioclx-gpio_client_read_pins">CLIENT_ReadGpioPins</a>
+

@@ -4,7 +4,6 @@ title: _WDF_IO_TARGET_OPEN_PARAMS (wdfiotarget.h)
 description: The WDF_IO_TARGET_OPEN_PARAMS structure contains parameters that the WdfIoTargetOpen method uses.
 old-location: wdf\wdf_io_target_open_params.htm
 tech.root: wdf
-ms.assetid: 9539868c-127b-4781-9a73-b56fbfda3233
 ms.date: 02/26/2018
 keywords: ["WDF_IO_TARGET_OPEN_PARAMS structure"]
 ms.keywords: "*PWDF_IO_TARGET_OPEN_PARAMS, DFIOTargetRef_6363f7be-6768-4c90-88c4-88c5fdea0019.xml, PWDF_IO_TARGET_OPEN_PARAMS, PWDF_IO_TARGET_OPEN_PARAMS structure pointer, WDF_IO_TARGET_OPEN_PARAMS, WDF_IO_TARGET_OPEN_PARAMS structure, _WDF_IO_TARGET_OPEN_PARAMS, kmdf.wdf_io_target_open_params, wdf.wdf_io_target_open_params, wdfiotarget/PWDF_IO_TARGET_OPEN_PARAMS, wdfiotarget/WDF_IO_TARGET_OPEN_PARAMS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdfiotarget.h
 api_name:
+ - _WDF_IO_TARGET_OPEN_PARAMS
+ - PWDF_IO_TARGET_OPEN_PARAMS
  - WDF_IO_TARGET_OPEN_PARAMS
 ---
 
@@ -106,7 +107,7 @@ If the value of <b>Type</b> is not <b>WdfIoTargetOpenByName</b>, this member is 
     FILE_WRITE_ACCESS, as well as GENERIC_READ,
     GENERIC_WRITE, and GENERIC_ALL.
 
-<b>UMDF </b>The most commonly used values are GENERIC_READ, GENERIC_WRITE, or both (GENERIC_READ | GENERIC_WRITE). Note that <a href="/windows-hardware/drivers/kernel/access-mask">ACCESS_MASK</a> is a DWORD value. For more information about this member, see the <i>dwDesiredAccess</i> parameter of <a href="https://go.microsoft.com/fwlink/p/?linkid=152795">CreateFile</a> in the Windows SDK.
+<b>UMDF </b>The most commonly used values are GENERIC_READ, GENERIC_WRITE, or both (GENERIC_READ | GENERIC_WRITE). Note that <a href="/windows-hardware/drivers/kernel/access-mask">ACCESS_MASK</a> is a DWORD value. For more information about this member, see the <i>dwDesiredAccess</i> parameter of <a href="/windows/win32/api/fileapi/nf-fileapi-createfilea">CreateFile</a> in the Windows SDK.
 
 ### -field ShareAccess
 
@@ -287,3 +288,4 @@ Drivers should initialize the <b>WDF_IO_TARGET_OPEN_PARAMS</b> structure by call
 
 
 <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile">ZwCreateFile</a>
+

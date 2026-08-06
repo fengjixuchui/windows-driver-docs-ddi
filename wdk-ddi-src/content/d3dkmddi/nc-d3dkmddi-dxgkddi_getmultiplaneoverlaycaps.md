@@ -3,7 +3,6 @@ UID: NC:d3dkmddi.DXGKDDI_GETMULTIPLANEOVERLAYCAPS
 title: DXGKDDI_GETMULTIPLANEOVERLAYCAPS (d3dkmddi.h)
 description: Called to retrieve multiplane overlay capabilities. Support for this DDI is required for any WDDM 2.2 driver that wants to support multiple planes.
 old-location: display\dxgkddi_getmultiplaneoverlaycaps.htm
-ms.assetid: 17A9B769-D280-491D-844E-A9B2C66D2207
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_GETMULTIPLANEOVERLAYCAPS callback function"]
 ms.keywords: DXGKDDI_GETMULTIPLANEOVERLAYCAPS, DXGKDDI_GETMULTIPLANEOVERLAYCAPS callback, DXGKDDI_GETMULTIPLANEOVERLAYCAPS callback function [Display Devices], d3dkmddi/DXGKDDI_GETMULTIPLANEOVERLAYCAPS, display.dxgkddi_getmultiplaneoverlaycaps
@@ -39,8 +38,6 @@ api_location:
  - d3dkmddi.h
 api_name:
  - DXGKDDI_GETMULTIPLANEOVERLAYCAPS
-product:
- - Windows
 ---
 
 # DXGKDDI_GETMULTIPLANEOVERLAYCAPS callback function
@@ -52,13 +49,13 @@ Called to retrieve multiplane overlay capabilities. Support for this DDI is requ
 
 ## -parameters
 
-### -param hAdapter
+### -param hAdapter [in]
 
-[in] Identifies the adapter containing the overlay hardware.
+Identifies the adapter containing the overlay hardware.
 
-### -param pGetMultiPlaneOverlayCaps
+### -param pGetMultiPlaneOverlayCaps [in/out]
 
-[in/out] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_getmultiplaneoverlaycaps">DXGKARG_GETMULTIPLANEOVERLAYCAPS</a> structure that receives the driver capabilities.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_getmultiplaneoverlaycaps">DXGKARG_GETMULTIPLANEOVERLAYCAPS</a> structure that receives the driver capabilities.
 
 ## -returns
 

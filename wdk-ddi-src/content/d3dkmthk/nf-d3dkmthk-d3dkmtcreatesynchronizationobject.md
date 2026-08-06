@@ -3,14 +3,13 @@ UID: NF:d3dkmthk.D3DKMTCreateSynchronizationObject
 title: D3DKMTCreateSynchronizationObject function (d3dkmthk.h)
 description: The D3DKMTCreateSynchronizationObject function creates a kernel-mode synchronization object.
 old-location: display\d3dkmtcreatesynchronizationobject.htm
-ms.assetid: c91686dc-1c6a-4d21-84e8-fd8a2803ff4e
 ms.date: 05/10/2018
 keywords: ["D3DKMTCreateSynchronizationObject function"]
 ms.keywords: D3DKMTCreateSynchronizationObject, D3DKMTCreateSynchronizationObject function [Display Devices], OpenGL_Functions_505065c6-f259-4518-adb8-f7d0fa6b56a5.xml, d3dkmthk/D3DKMTCreateSynchronizationObject, display.d3dkmtcreatesynchronizationobject
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -53,7 +52,7 @@ The <b>D3DKMTCreateSynchronizationObject</b> function creates a kernel-mode sync
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in, out]
 

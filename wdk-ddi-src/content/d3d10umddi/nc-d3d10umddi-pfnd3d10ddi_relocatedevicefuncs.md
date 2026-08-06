@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d10umddi.PFND3D10DDI_RELOCATEDEVICEFUNCS
 title: PFND3D10DDI_RELOCATEDEVICEFUNCS (d3d10umddi.h)
-description: The RelocateDeviceFuncs function notifies the user-mode display driver about the new location of the driver function table.
+description: PFND3D10DDI_RELOCATEDEVICEFUNCS notifies the user-mode display driver about the new location of the driver function table.
 old-location: display\relocatedevicefuncs.htm
-ms.assetid: 3932a2a1-7b1d-4921-bd4a-905b44166091
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_RELOCATEDEVICEFUNCS callback function"]
 ms.keywords: PFND3D10DDI_RELOCATEDEVICEFUNCS, PFND3D10DDI_RELOCATEDEVICEFUNCS callback, RelocateDeviceFuncs, RelocateDeviceFuncs callback function [Display Devices], UserModeDisplayDriverDx10_Functions_01a40916-8ba8-4e29-87d7-32e9c3fe337f.xml, d3d10umddi/RelocateDeviceFuncs, display.relocatedevicefuncs
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - RelocateDeviceFuncs
-product:
- - Windows
+ - PFND3D10DDI_RELOCATEDEVICEFUNCS
 ---
 
 # PFND3D10DDI_RELOCATEDEVICEFUNCS callback function
@@ -52,13 +49,13 @@ The <i>RelocateDeviceFuncs</i> function notifies the user-mode display driver ab
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pDeviceFunctions* [in]
 
@@ -78,3 +75,4 @@ A user-mode display driver can use the <i>RelocateDeviceFuncs</i> function to re
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

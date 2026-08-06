@@ -4,7 +4,6 @@ title: WdfWdmDeviceGetWdfDeviceHandle function (wdfdevice.h)
 description: The WdfWdmDeviceGetWdfDeviceHandle method returns a handle to the framework device object that is associated with a specified WDM device object.
 old-location: wdf\wdfwdmdevicegetwdfdevicehandle.htm
 tech.root: wdf
-ms.assetid: 8083af10-1b35-4600-b409-e895d35f7ccc
 ms.date: 02/26/2018
 keywords: ["WdfWdmDeviceGetWdfDeviceHandle function"]
 ms.keywords: DFDeviceObjectGeneralRef_0b05680a-5252-4932-802d-ee24a0092116.xml, WdfWdmDeviceGetWdfDeviceHandle, WdfWdmDeviceGetWdfDeviceHandle method, kmdf.wdfwdmdevicegetwdfdevicehandle, wdf.wdfwdmdevicegetwdfdevicehandle, wdfdevice/WdfWdmDeviceGetWdfDeviceHandle
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,9 +52,9 @@ The <b>WdfWdmDeviceGetWdfDeviceHandle</b> method returns a handle to the framewo
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 A pointer to a WDM <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure that the calling driver created.
 
 ## -returns

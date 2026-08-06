@@ -1,10 +1,9 @@
 ---
 UID: NF:udecxusbdevice.UdecxUsbDeviceInitAddDescriptorWithIndex
 title: UdecxUsbDeviceInitAddDescriptorWithIndex function (udecxusbdevice.h)
-description: Adds a USB descriptor to the initialization parameters used to create a virtual USB device.
+description: Learn how the UdecxUsbDeviceInitAddDescriptorWithIndex function adds a USB descriptor to the initialization parameters used to create a virtual USB device.
 old-location: buses\udecxusbdeviceinitadddescriptorwithindex.htm
 tech.root: usbref
-ms.assetid: 96DF01F1-2584-4152-8EB9-D2515CA42B03
 ms.date: 05/07/2018
 keywords: ["UdecxUsbDeviceInitAddDescriptorWithIndex function"]
 ms.keywords: UdecxUsbDeviceInitAddDescriptorWithIndex, UdecxUsbDeviceInitAddDescriptorWithIndex function [Buses], buses.udecxusbdeviceinitadddescriptorwithindex, udecxusbdevice/UdecxUsbDeviceInitAddDescriptorWithIndex
@@ -51,24 +50,24 @@ Adds a USB descriptor to the initialization parameters used to create a virtual 
 
 ## -parameters
 
-### -param UdecxUsbDeviceInit 
+### -param UdecxUsbDeviceInit [in, out]
 
-[in, out]
+
 A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>.
 
-### -param Descriptor 
+### -param Descriptor [in]
 
-[in]
+
 A caller-allocated buffer that contains the USB descriptor to add to the device.
 
-### -param DescriptorLength 
+### -param DescriptorLength [in]
 
-[in]
+
 The length of the descriptor buffer.
 
-### -param DescriptorIndex 
+### -param DescriptorIndex [in]
 
-[in]
+
 The index of the descriptor.
 
 ## -returns
@@ -81,7 +80,7 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 
 
 
-<a href="/windows-hardware/drivers/ddi/index">USB String Descriptors</a>
+<a href="/windows-hardware/drivers/usbcon/usb-string-descriptors">USB String Descriptors</a>
 
 
 

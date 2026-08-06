@@ -4,8 +4,7 @@ title: _PARENT_HUB_FLAGS (ucxroothub.h)
 description: This structure is used by the HUB_INFO_FROM_PARENT structure to get hub information from the parent.
 old-location: buses\_parent_hub_flags.htm
 tech.root: usbref
-ms.assetid: 9107CC24-48FF-4A2C-AA27-1E9E316B7944
-ms.date: 05/07/2018
+ms.date: 02/08/2022
 keywords: ["PARENT_HUB_FLAGS structure"]
 ms.keywords: "*PPARENT_HUB_FLAGS, PARENT_HUB_FLAGS, PARENT_HUB_FLAGS union [Buses], _PARENT_HUB_FLAGS, buses._parent_hub_flags, ucxroothub/_PARENT_HUB_FLAGS"
 req.header: ucxroothub.h
@@ -42,15 +41,16 @@ api_type:
 api_location:
  - ucxroothub.h
 api_name:
+ - _PARENT_HUB_FLAGS
+ - PPARENT_HUB_FLAGS
  - PARENT_HUB_FLAGS
 ---
 
 # _PARENT_HUB_FLAGS structure
 
-
 ## -description
 
-This structure is used by the <a href="/windows-hardware/drivers/ddi/ucxroothub/ns-ucxroothub-_hub_info_from_parent">HUB_INFO_FROM_PARENT</a> structure to get hub information from the parent.
+This structure is used by the [HUB_INFO_FROM_PARENT](ns-ucxroothub-_hub_info_from_parent.md) structure to get hub information from the parent.
 
 ## -struct-fields
 
@@ -62,7 +62,7 @@ The size of structure represented as a LONG (32-bit) value.
 
 ### -field Flags.DisableLpmForAllDownstreamDevices
 
-Indicates that LPM should be disabled for all devices/hubs behind the this hub.
+Indicates that LPM should be disabled for all devices/hubs behind this hub.
 
 ### -field Flags.HubIsHighSpeedCapable
 
@@ -70,8 +70,28 @@ Indicates that the hub is high-speed capable.
 
 ### -field Flags.DisableUpdateMaxExitLatency
 
-Indicates that UpdateMaxExitLatency is disabled for all devices/hubs behind the this hub.
+Indicates that UpdateMaxExitLatency should be disabled.
+
+### -field Flags.DisableU1
+
+Indicates that U1 transitions should be disabled.
+
+### -field DisableLpmForAllDownstreamDevices
+
+Indicates that LPM should be disabled for all devices/hubs behind this hub.
+
+### -field HubIsHighSpeedCapable
+
+Indicates that the hub is high-speed capable.
+
+### -field DisableUpdateMaxExitLatency
+
+Indicates that UpdateMaxExitLatency should be disabled.
+
+### -field DisableU1
+
+Indicates that U1 transitions should be disabled.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ucxroothub/ns-ucxroothub-_hub_info_from_parent">HUB_INFO_FROM_PARENT</a>
+- [HUB_INFO_FROM_PARENT](ns-ucxroothub-_hub_info_from_parent.md)

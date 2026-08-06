@@ -4,7 +4,6 @@ title: TmRollbackEnlistment function (wdm.h)
 description: The TmRollbackEnlistment routine rolls back a specified enlistment.
 old-location: kernel\tmrollbackenlistment.htm
 tech.root: kernel
-ms.assetid: 1f089f2c-73e2-4c77-a398-0d369aafdf3a
 ms.date: 04/30/2018
 keywords: ["TmRollbackEnlistment function"]
 ms.keywords: TmRollbackEnlistment, TmRollbackEnlistment routine [Kernel-Mode Driver Architecture], kernel.tmrollbackenlistment, ktm_ref_adca7b83-77e1-4c1d-9ed8-aac2c713d43c.xml, wdm/TmRollbackEnlistment
@@ -52,14 +51,14 @@ The <b>TmRollbackEnlistment</b> routine rolls back a specified enlistment.
 
 ## -parameters
 
-### -param Enlistment 
+### -param Enlistment [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/kernel/enlistment-objects">enlistment object</a>. Your component can receive this pointer as input to a <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-ptm_rm_notification">ResourceManagerNotification</a> callback routine. Alternatively, your component can call <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle">ObReferenceObjectByHandle</a> and supply the object handle that a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment">ZwCreateEnlistment</a>, <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-tmcreateenlistment">TmCreateEnlistment</a>, or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a> provided.
 
-### -param TmVirtualClock 
+### -param TmVirtualClock [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/kernel/using-virtual-clock-values">virtual clock value</a>. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

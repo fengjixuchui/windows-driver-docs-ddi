@@ -1,10 +1,9 @@
 ---
 UID: NE:wdm._POWER_STATE_TYPE
 title: _POWER_STATE_TYPE (wdm.h)
-description: The POWER_STATE_TYPE enumeration type indicates that a power state value is a system power state or a device power state.
+description: Learn how the POWER_STATE_TYPE enumeration type indicates that a power state value is a system power state or a device power state.
 old-location: kernel\power_state_type.htm
 tech.root: kernel
-ms.assetid: d0e97474-4119-4359-a9f9-644c82df7fab
 ms.date: 04/30/2018
 keywords: ["POWER_STATE_TYPE enumeration"]
 ms.keywords: "*PPOWER_STATE_TYPE, DevicePowerState, POWER_STATE_TYPE, POWER_STATE_TYPE enumeration [Kernel-Mode Driver Architecture], PPOWER_STATE_TYPE, PPOWER_STATE_TYPE enumeration pointer [Kernel-Mode Driver Architecture], SystemPowerState, _POWER_STATE_TYPE, kernel.power_state_type, sysenum_bdfdaea1-ec64-4b74-96d0-95641797ebb4.xml, wdm/DevicePowerState, wdm/POWER_STATE_TYPE, wdm/PPOWER_STATE_TYPE, wdm/SystemPowerState"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _POWER_STATE_TYPE
+ - PPOWER_STATE_TYPE
  - POWER_STATE_TYPE
 ---
 
@@ -81,3 +82,4 @@ The <b>POWER_STATE_TYPE</b> enumeration type is used in conjunction with a value
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_system_power_state">SYSTEM_POWER_STATE</a>
+

@@ -4,7 +4,6 @@ title: IDebugFailureAnalysis2::AddBuffer (extsfns.h)
 description: The AddBuffer method adds a new FA entry to a DebugFailureAnalysis object, and writes the bytes from a specified buffer to the data block of the new FA entry.
 old-location: debugger\idebugfailureanalysis2_addbuffer.htm
 tech.root: debugger
-ms.assetid: E6510000-E390-4631-9D47-5A57AB845EF6
 ms.date: 05/03/2018
 keywords: ["IDebugFailureAnalysis2::AddBuffer"]
 ms.keywords: AddBuffer, AddBuffer method [Windows Debugging], AddBuffer method [Windows Debugging],IDebugFailureAnalysis2 interface, IDebugFailureAnalysis2 interface [Windows Debugging],AddBuffer method, IDebugFailureAnalysis2.AddBuffer, IDebugFailureAnalysis2::AddBuffer, debugger.idebugfailureanalysis2_addbuffer, extsfns/IDebugFailureAnalysis2::AddBuffer
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - extsfns.h
 api_name:
- - IDebugFailureAnalysis2.AddBuffer
+ - IDebugFailureAnalysis2::AddBuffer
 ---
 
 # IDebugFailureAnalysis2::AddBuffer
@@ -54,19 +53,19 @@ The <b>AddBuffer</b> method adds a new <a href="/windows-hardware/drivers/debugg
 
 A value in the <a href="/windows-hardware/drivers/debugger/writing-an-analysis-extension-to-extend--analyze">FA_TAG</a> enumeration.
 
-### -param EntryType 
+### -param EntryType [in]
 
-[in]
+
 A value in the <a href="/windows-hardware/drivers/debugger/writing-an-analysis-extension-to-extend--analyze">FA_ENTRY_TYPE</a> enumeration. This parameter specifies the data type of the data in <i>Buf</i>.
 
-### -param Buf 
+### -param Buf [in]
 
-[in]
+
 A pointer to a buffer that contains the bytes to be written to the data block of the new <a href="/windows-hardware/drivers/debugger/failure-analysis-entries">FA entry</a>.
 
-### -param Size 
+### -param Size [in]
 
-[in]
+
 The size, in bytes, of the buffer pointed to by <i>Buf</i>.
 
 ## -returns
@@ -79,7 +78,7 @@ This method creates a new <a href="/windows-hardware/drivers/debugger/failure-an
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis2-getbuffer">GetBuffer</a>
+<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis-getbuffer">GetBuffer</a>
 
 
 
@@ -96,3 +95,4 @@ This method creates a new <a href="/windows-hardware/drivers/debugger/failure-an
 
 
 <a href="/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin">_EFN_Analyze</a>
+

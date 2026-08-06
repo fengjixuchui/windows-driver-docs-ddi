@@ -4,7 +4,6 @@ title: InitializeListHead function (wdm.h)
 description: The InitializeListHead routine initializes a LIST_ENTRY structure that represents the head of a doubly linked list.
 old-location: kernel\initializelisthead.htm
 tech.root: kernel
-ms.assetid: 123434fd-4e83-4042-834b-1eb4cf13dd10
 ms.date: 04/30/2018
 keywords: ["InitializeListHead function"]
 ms.keywords: InitializeListHead, InitializeListHead routine [Kernel-Mode Driver Architecture], k109_2e5e02a0-26d3-4c8a-b712-ee3d515b8a23.xml, kernel.initializelisthead, wdm/InitializeListHead
@@ -50,9 +49,9 @@ The <b>InitializeListHead</b> routine initializes a <a href="/windows/win32/api/
 
 ## -parameters
 
-### -param ListHead 
+### -param ListHead [out]
 
-[out]
+
 Pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-list_entry">LIST_ENTRY</a> structure that serves as the list header.
 
 ## -remarks
@@ -69,7 +68,7 @@ Callers of <b>InitializeListHead</b> can be running at any IRQL. If <b>Initializ
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545402">ExInterlockedInsertTailList</a>
+<a href="/previous-versions/ff545402(v=vs.85)">ExInterlockedInsertTailList</a>
 
 
 

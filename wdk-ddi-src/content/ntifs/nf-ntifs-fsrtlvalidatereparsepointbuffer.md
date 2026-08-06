@@ -4,14 +4,13 @@ title: FsRtlValidateReparsePointBuffer function (ntifs.h)
 description: The FsRtlValidateReparsePointBuffer routine verifies that the specified reparse point buffer is valid.
 old-location: ifsk\fsrtlvalidatereparsepointbuffer.htm
 tech.root: ifsk
-ms.assetid: fb67b116-12f5-4eef-ab05-f2056ccec4e3
 ms.date: 04/16/2018
 keywords: ["FsRtlValidateReparsePointBuffer function"]
 ms.keywords: FsRtlValidateReparsePointBuffer, FsRtlValidateReparsePointBuffer routine [Installable File System Drivers], fsrtlref_809c9e16-62b6-4a08-82d5-d6e86e7844ff.xml, ifsk.fsrtlvalidatereparsepointbuffer, ntifs/FsRtlValidateReparsePointBuffer
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating system.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,14 +49,14 @@ The <b>FsRtlValidateReparsePointBuffer</b> routine verifies that the specified r
 
 ## -parameters
 
-### -param BufferLength 
+### -param BufferLength [in]
 
-[in]
+
 The length of the reparse point buffer.
 
-### -param ReparseBuffer 
+### -param ReparseBuffer [in]
 
-[in]
+
 The reparse point buffer to be validated.
 
 ## -returns

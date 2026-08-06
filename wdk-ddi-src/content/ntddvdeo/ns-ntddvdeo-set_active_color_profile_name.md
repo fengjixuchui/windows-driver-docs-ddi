@@ -3,7 +3,6 @@ UID: NS:ntddvdeo._SET_ACTIVE_COLOR_PROFILE_NAME
 title: SET_ACTIVE_COLOR_PROFILE_NAME
 description: Used to set the active color profile name.
 tech.root: display
-ms.assetid: b64d54be-f7de-4063-9a00-16fbe9fac85c
 ms.date: 08/19/2019
 keywords: ["SET_ACTIVE_COLOR_PROFILE_NAME structure"]
 ms.keywords: SET_ACTIVE_COLOR_PROFILE_NAME, SET_ACTIVE_COLOR_PROFILE_NAME, *PSET_ACTIVE_COLOR_PROFILE_NAME,
@@ -36,6 +35,8 @@ api_type:
 api_location:
  - ntddvdeo.h
 api_name:
+ - _SET_ACTIVE_COLOR_PROFILE_NAME
+ - PSET_ACTIVE_COLOR_PROFILE_NAME
  - SET_ACTIVE_COLOR_PROFILE_NAME
 dev_langs:
  - c++

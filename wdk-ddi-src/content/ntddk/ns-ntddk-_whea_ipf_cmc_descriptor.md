@@ -4,7 +4,6 @@ title: _WHEA_IPF_CMC_DESCRIPTOR (ntddk.h)
 description: The WHEA_IPF_CMC_DESCRIPTOR structure describes a corrected machine check (CMC) error source for an Itanium processor.
 old-location: whea\whea_ipf_cmc_descriptor.htm
 tech.root: whea
-ms.assetid: 570a1dfa-d6dc-4886-ad13-0f3e1f88ddde
 ms.date: 02/20/2018
 keywords: ["WHEA_IPF_CMC_DESCRIPTOR structure"]
 ms.keywords: "*PWHEA_IPF_CMC_DESCRIPTOR, PWHEA_IPF_CMC_DESCRIPTOR, PWHEA_IPF_CMC_DESCRIPTOR structure pointer [WHEA Drivers and Applications], WHEA_IPF_CMC_DESCRIPTOR, WHEA_IPF_CMC_DESCRIPTOR structure [WHEA Drivers and Applications], _WHEA_IPF_CMC_DESCRIPTOR, ntddk/PWHEA_IPF_CMC_DESCRIPTOR, ntddk/WHEA_IPF_CMC_DESCRIPTOR, whea.whea_ipf_cmc_descriptor, whearef_825e6302-2ef1-4277-9fd5-4855d64fce9d.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_IPF_CMC_DESCRIPTOR
+ - PWHEA_IPF_CMC_DESCRIPTOR
  - WHEA_IPF_CMC_DESCRIPTOR
 ---
 
@@ -73,3 +74,4 @@ A WHEA_IPF_CMC_DESCRIPTOR structure is contained within the <a href="/windows-ha
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_source_descriptor">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
+

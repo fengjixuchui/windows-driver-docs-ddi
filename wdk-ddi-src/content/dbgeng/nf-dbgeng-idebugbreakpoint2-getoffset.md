@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugBreakpoint2.GetOffset
 title: IDebugBreakpoint2::GetOffset (dbgeng.h)
-description: The GetOffset method returns the location that triggers a breakpoint.
+description: The GetOffset method returns the location that triggers a breakpoint. This method belongs to the IDebugBreakpoint2 interface.
 old-location: debugger\getoffset.htm
 tech.root: debugger
-ms.assetid: 7da401c9-10c1-4a2b-91ea-c0f9f58fd87a
 ms.date: 05/03/2018
 keywords: ["IDebugBreakpoint2::GetOffset"]
 ms.keywords: ComOther_020a92c1-effa-4b14-9198-153641401e46.xml, GetOffset, GetOffset method [Windows Debugging], GetOffset method [Windows Debugging],IDebugBreakpoint interface, GetOffset method [Windows Debugging],IDebugBreakpoint2 interface, IDebugBreakpoint interface [Windows Debugging],GetOffset method, IDebugBreakpoint2 interface [Windows Debugging],GetOffset method, IDebugBreakpoint2.GetOffset, IDebugBreakpoint2::GetOffset, IDebugBreakpoint::GetOffset, dbgeng/IDebugBreakpoint2::GetOffset, dbgeng/IDebugBreakpoint::GetOffset, debugger.getoffset
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugBreakpoint.GetOffset
- - IDebugBreakpoint2.GetOffset
+ - IDebugBreakpoint2::GetOffset
 ---
 
 # IDebugBreakpoint2::GetOffset
@@ -51,9 +49,9 @@ The <b>GetOffset</b> method returns the location that triggers a breakpoint.
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [out]
 
-[out]
+
 The location on the target that triggers the breakpoint.
 
 ## -returns
@@ -95,3 +93,4 @@ This method can also return other error values.  For more information, see <a hr
 The <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getparameters">GetParameters</a> method also returns the location that triggers a breakpoint.
 
 For more information about how to use breakpoints, see <a href="/windows-hardware/drivers/debugger/using-breakpoints2">Using Breakpoints</a>.
+

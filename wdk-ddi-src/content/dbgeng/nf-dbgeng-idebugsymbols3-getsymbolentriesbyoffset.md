@@ -4,7 +4,6 @@ title: IDebugSymbols3::GetSymbolEntriesByOffset (dbgeng.h)
 description: The GetSymbolEntriesByOffset method returns the symbols which are located at a specified address.
 old-location: debugger\getsymbolentriesbyoffset.htm
 tech.root: debugger
-ms.assetid: 93df59dc-adae-49b7-acf4-1cfdd142fd96
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::GetSymbolEntriesByOffset"]
 ms.keywords: GetSymbolEntriesByOffset, GetSymbolEntriesByOffset method [Windows Debugging], GetSymbolEntriesByOffset method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],GetSymbolEntriesByOffset method, IDebugSymbols3.GetSymbolEntriesByOffset, IDebugSymbols3::GetSymbolEntriesByOffset, IDebugSymbols_dba4bc10-a8a8-476d-b668-652c24743ea5.xml, dbgeng/IDebugSymbols3::GetSymbolEntriesByOffset, debugger.getsymbolentriesbyoffset
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols3.GetSymbolEntriesByOffset
+ - IDebugSymbols3::GetSymbolEntriesByOffset
 ---
 
 # IDebugSymbols3::GetSymbolEntriesByOffset
@@ -50,34 +49,34 @@ The <b>GetSymbolEntriesByOffset</b> method returns the <a href="/windows-hardwar
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies a location in the process's memory address space within the desired symbol's range.  Not all symbols have a known range, so, for best results, use the base address of the symbol.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Set to zero.
 
-### -param Ids 
+### -param Ids [out, optional]
 
-[out, optional]
+
 Receives the symbols.  This is an array of <i>IdsCount</i> entries of type <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_module_and_id">DEBUG_MODULE_AND_ID</a>.  If <i>Ids</i> is <b>NULL</b>, this information is not returned.
 
-### -param Displacements 
+### -param Displacements [out, optional]
 
-[out, optional]
+
 Receives the differences between the base addresses of the found symbols and the given address according to the symbol's range.
 
-### -param IdsCount 
+### -param IdsCount [in]
 
-[in]
+
 Specifies the number of entries that the arrays <i>Ids</i> and <i>Displacements</i> can hold.
 
-### -param Entries 
+### -param Entries [out, optional]
 
-[out, optional]
+
 Receives the number of symbols located at <i>Offset</i>.  If <i>Entries</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -113,3 +112,4 @@ For more information about symbols, see <a href="/windows-hardware/drivers/debug
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

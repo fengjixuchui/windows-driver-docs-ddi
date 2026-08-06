@@ -4,7 +4,6 @@ title: PFND3DDDI_SETSTREAMSOURCE (d3dumddi.h)
 description: The SetStreamSource function binds a portion of a vertex stream source to a vertex buffer.
 old-location: display\setstreamsource.htm
 tech.root: display
-ms.assetid: 669dbabc-91fb-40f9-a034-11c3c2e70436
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETSTREAMSOURCE callback function"]
 ms.keywords: PFND3DDDI_SETSTREAMSOURCE, PFND3DDDI_SETSTREAMSOURCE callback, SetStreamSource, SetStreamSource callback function [Display Devices], UserModeDisplayDriver_Functions_c84f438f-92b5-4d01-8d27-275deedc29e4.xml, d3dumddi/SetStreamSource, display.setstreamsource
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - SetStreamSource
-product:
- - Windows
+ - PFND3DDDI_SETSTREAMSOURCE
 ---
 
 # PFND3DDDI_SETSTREAMSOURCE callback function
@@ -56,7 +53,7 @@ The <i>SetStreamSource</i> function binds a portion of a vertex stream source to
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -77,3 +74,4 @@ The Microsoft Direct3D runtime calls the user-mode display driver's <i>SetStream
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

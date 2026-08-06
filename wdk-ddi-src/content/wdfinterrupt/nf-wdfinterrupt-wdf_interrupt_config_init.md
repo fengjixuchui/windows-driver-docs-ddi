@@ -4,7 +4,6 @@ title: WDF_INTERRUPT_CONFIG_INIT function (wdfinterrupt.h)
 description: The WDF_INTERRUPT_CONFIG_INIT function initializes a WDF_INTERRUPT_CONFIG structure.
 old-location: wdf\wdf_interrupt_config_init.htm
 tech.root: wdf
-ms.assetid: e81ec3da-a863-467f-82ec-1fa7ee6401b1
 ms.date: 02/26/2018
 keywords: ["WDF_INTERRUPT_CONFIG_INIT function"]
 ms.keywords: DFInterruptObjectRef_eb73ee25-bee4-4c0a-a070-7893bd5b699a.xml, WDF_INTERRUPT_CONFIG_INIT, WDF_INTERRUPT_CONFIG_INIT function, kmdf.wdf_interrupt_config_init, wdf.wdf_interrupt_config_init, wdfinterrupt/WDF_INTERRUPT_CONFIG_INIT
@@ -52,19 +51,19 @@ The <b>WDF_INTERRUPT_CONFIG_INIT</b> function initializes a <a href="/windows-ha
 
 ## -parameters
 
-### -param Configuration 
+### -param Configuration [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfinterrupt/ns-wdfinterrupt-_wdf_interrupt_config">WDF_INTERRUPT_CONFIG</a> structure.
 
-### -param EvtInterruptIsr 
+### -param EvtInterruptIsr [in]
 
-[in]
+
 A pointer to the driver's <a href="/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_isr">EvtInterruptIsr</a> callback function.
 
-### -param EvtInterruptDpc 
+### -param EvtInterruptDpc [in, optional]
 
-[in, optional]
+
 A pointer to the driver's <a href="/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_dpc">EvtInterruptDpc</a> callback function, or <b>NULL</b>.
 
 ## -remarks

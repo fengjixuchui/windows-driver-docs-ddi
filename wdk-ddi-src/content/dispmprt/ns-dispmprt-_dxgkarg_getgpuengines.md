@@ -3,11 +3,8 @@ UID: NS:dispmprt._DXGKARG_GETGPUENGINES
 title: _DXGKARG_GETGPUENGINES
 description: No longer used.
 tech.root: display
-ms.assetid: 538f2d95-adcc-4b3a-be4b-3a5fbc83f04d
 ms.date: 04/04/2019
 keywords: ["DXGKARG_GETGPUENGINES structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _DXGKARG_GETGPUENGINES, DXGKARG_GETGPUENGINES, *PDXGKARG_GETGPUENGINES,
 req.header: dispmprt.h
 req.include-header: 
@@ -39,8 +36,8 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGKARG_GETGPUENGINES
-product:
- - Windows
+ - PDXGKARG_GETGPUENGINES
+ - DXGKARG_GETGPUENGINES
 dev_langs:
  - c++
 ---

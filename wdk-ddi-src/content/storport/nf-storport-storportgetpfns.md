@@ -1,13 +1,9 @@
 ---
 UID: NF:storport.StorPortGetPfns
 title: StorPortGetPfns function (storport.h)
-description: The StorPortGetPfns routine can be called when a miniport needs to retreive PFNs associated with a MDL for a SRB.
-old-location: storage\storportgetpfns.htm
+description: Learn more about the StorPortGetPfns function.
 tech.root: storage
-ms.assetid: F9E69501-4889-4A1B-8942-C6D4406474DE
-ms.date: 03/29/2018
-keywords: ["StorPortGetPfns function"]
-ms.keywords: StorPortGetPfns, StorPortGetPfns routine [Storage Devices], storage.storportgetpfns, storport/StorPortGetPfns
+ms.date: 10/01/2024
 req.header: storport.h
 req.include-header: 
 req.target-type: Universal
@@ -43,105 +39,52 @@ api_name:
 
 # StorPortGetPfns function
 
-
 ## -description
 
-<p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
-
-The <b>StorPortGetPfns</b> routine can be called when a miniport needs to retreive PFNs associated with a MDL for a SRB
+A miniport can call the **StorPortGetPfns** to retrieve the page frame numbers (Pfns) for the memory described by the specified MDL (memory descriptor list) associated with a SRB.
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
 A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver.
 
-### -param Srb 
+Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver in the **DeviceExtension->HwDeviceExtension** member of the device object for the HBA immediately after the miniport driver calls [**StorPortInitialize**](nf-storport-storportinitialize.md). The port driver frees this memory when it removes the device.
 
-[in]
-A pointer to the source SCSI request block (SRB).
+### -param Srb [in]
 
-### -param Mdl 
+A pointer to the source SCSI request block (SRB). Starting in Windows 8, the **Srb** parameter can point to either [**SCSI_REQUEST_BLOCK**](../srb/ns-srb-_scsi_request_block.md) or [**STORAGE_REQUEST_BLOCK**](../srb/ns-srb-_storage_request_block.md).
 
-[in]
-A pointer to the MDL for which Pfns are requested. Only MDLs obtained 
-            using <b>StorPortGetOriginalMdl</b> or <b>StorPortGetDataInBufferMdl</b> are supported.
+### -param Mdl [in]
 
-### -param Pfns 
+A pointer to the MDL for which Pfns are requested. Only MDLs obtained using [**StorPortGetOriginalMdl**](nf-storport-storportgetoriginalmdl.md) or [**StorPortGetDataInBufferMdl**](nf-storport-storportgetdatainbuffermdl.md) are supported.
 
-[out]
- A pointer to the beginning of the array of physical page numbers that are associated with the MDL.
-              Callers must NOT modify or update or free the list.
+### -param Pfns [out]
 
-### -param PfnCount 
+Pointer to an array of Pfns that are associated with the MDL. Callers must not modify, update, or free the list.
 
-[out]
-Specifies the number of PFNs in the array.
+### -param PfnCount [out]
 
-### -param StartingOffset 
+The number of Pfns in the array that **Pfns** points to.
 
-[out]
+### -param StartingOffset [out]
+
 Specifies the byte offset within the initial page of the buffer described by the given MDL.
 
 ## -returns
 
-<b>StorPortGetPfns</b> returns one of the following status codes:
+**StorPortGetPfns** returns one of the following status codes:
 
-<table>
-<tr>
-<th>Return code</th>
-<th>Description</th>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>STOR_STATUS_NOT_IMPLEMENTED</b></dt>
-</dl>
-</td>
-<td width="60%">
-This function is not implemented on the active operating system.
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>STOR_STATUS_SUCCESS</b></dt>
-</dl>
-</td>
-<td width="60%">
-The list items were removed successfully or the list is already empty.
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>STOR_STATUS_INVALID_PARAMETER</b></dt>
-</dl>
-</td>
-<td width="60%">
-A pointer to one of the parameters  is <b>NULL</b>.
-
-</td>
-</tr>
-</table>
-
-## -remarks
-
- Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver in the <b>DeviceExtension->HwDeviceExtension</b> member of the device object for the HBA immediately after the miniport driver calls <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize">StorPortInitialize</a>. The port driver frees this memory when it removes the device. 
-
-Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="/windows-hardware/drivers/ddi/srb/ns-srb-_scsi_request_block">SCSI_REQUEST_BLOCK</a> or <a href="/windows-hardware/drivers/ddi/srb/ns-srb-_storage_request_block">STORAGE_REQUEST_BLOCK</a>.
+| Return code | Description |
+| ----------- | ----------- |
+| STOR_STATUS_NOT_IMPLEMENTED   | This function is not implemented on the active operating system. |
+| STOR_STATUS_SUCCESS           | The function completed successfully. |
+| STOR_STATUS_INVALID_PARAMETER | A pointer to one of the parameters is **NULL**. |
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportgetdatainbuffermdl">StorPortGetDataInBufferMdl</a>
+[**StorPortGetDataInBufferMdl**](nf-storport-storportgetdatainbuffermdl.md)
 
+[**StorPortGetOriginalMdl**](nf-storport-storportgetoriginalmdl.md)
 
-
-<a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportgetoriginalmdl">StorPortGetOriginalMdl</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize">StorPortInitialize</a>
+[**StorPortInitialize**](nf-storport-storportinitialize.md)

@@ -1,11 +1,8 @@
 ---
 UID: NS:d3dukmdt._D3DDDI_DRIVERESCAPE_TRANSLATEALLOCATIONEHANDLE
-title: _D3DDDI_DRIVERESCAPE_TRANSLATEALLOCATIONEHANDLE (d3dukmdt.h)
+title: D3DDDI_DRIVERESCAPE_TRANSLATEALLOCATIONEHANDLE (d3dukmdt.h)
 description: Used to translate the guest allocation to the corresponding host handle.
-ms.assetid: 8a286cbc-92cb-45cd-ac98-c0d185fc0bf0
-ms.date: 10/19/2018
-keywords: ["D3DDDI_DRIVERESCAPE_TRANSLATEALLOCATIONEHANDLE structure"]
-ms.keywords: _D3DDDI_DRIVERESCAPE_TRANSLATEALLOCATIONEHANDLE, D3DDDI_DRIVERESCAPE_TRANSLATEALLOCATIONEHANDLE,
+ms.date: 02/06/2025
 req.header: d3dukmdt.h
 req.include-header: 
 req.target-type: 
@@ -35,31 +32,39 @@ api_location:
  - d3dukmdt.h
 api_name:
  - _D3DDDI_DRIVERESCAPE_TRANSLATEALLOCATIONEHANDLE
+ - D3DDDI_DRIVERESCAPE_TRANSLATEALLOCATIONEHANDLE
 dev_langs:
  - c++
 ---
 
-# _D3DDDI_DRIVERESCAPE_TRANSLATEALLOCATIONEHANDLE structure
-
+# D3DDDI_DRIVERESCAPE_TRANSLATEALLOCATIONEHANDLE structure
 
 ## -description
 
-Used to translate the guest allocation to the corresponding host handle.
+The **D3DDDI_DRIVERESCAPE_TRANSLATEALLOCATIONEHANDLE** structure is used to translate the guest allocation to the corresponding host handle.
 
 ## -struct-fields
 
-### -field hAllocation
-
- 
-[in] A handle to a DirectX Graphics allocation, returned from [DxgkCreateAllocation](../d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation.md).
-
-[out] A handle, which can be sent to the kernel mode driver and used in [DxgkCbAcquireHandleData](../d3dkmddi/nc-d3dkmddi-dxgkcb_acquirehandledata.md), [DxgkCbReleaseHandleData](../d3dkmddi/nc-d3dkmddi-dxgkcb_releasehandledata.md), [DxgkCbGetHandleData](../d3dkmddi/nc-d3dkmddi-dxgkcb_gethandledata.md), and [DxgkCbGetHandleParent](../d3dkmddi/nc-d3dkmddi-dxgkcb_gethandleparent.md).
-
 ### -field EscapeType
 
-A [D3DDDI_DRIVERESCAPETYPE](ne-d3dukmdt-_d3dddi_driverescapetype.md).
+[in] A [**D3DDDI_DRIVERESCAPETYPE**](ne-d3dukmdt-_d3dddi_driverescapetype.md). Must be set to **D3DDDI_DRIVERESCAPETYPE_TRANSLATEALLOCATIONHANDLE**.
+
+### -field hAllocation
+
+[in/out] On entry, a handle to a DirectX graphics allocation that was returned from [**DxgkddiCreateAllocation**](../d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation.md).
+
+On return, a handle that can be sent to the kernel-mode driver and used in functions such as [**DxgkcbAcquirehandledata**](../d3dkmddi/nc-d3dkmddi-dxgkcb_acquirehandledata.md), [**DxgkcbReleasehandledata**](../d3dkmddi/nc-d3dkmddi-dxgkcb_releasehandledata.md), [**DxcbGethandledata**](../d3dkmddi/nc-d3dkmddi-dxgkcb_gethandledata.md), and [**DxgkcbGethandleparent**](../d3dkmddi/nc-d3dkmddi-dxgkcb_gethandleparent.md).
 
 ## -remarks
 
+The **D3DDDI_DRIVERESCAPE_TRANSLATEALLOCATIONEHANDLE** structure is used with the **D3DDDI_DRIVERESCAPETYPE_TRANSLATEALLOCATIONHANDLE** known escape type.
+
 ## -see-also
 
+[**D3DDDI_DRIVERESCAPETYPE**](ne-d3dukmdt-_d3dddi_driverescapetype.md)
+
+[**DXGKARG_ESCAPE**](../d3dkmddi/ns-d3dkmddi-_dxgkarg_escape.md)
+
+[**DxgkddiEscape**](../d3dkmddi/nc-d3dkmddi-dxgkddi_escape.md)
+
+[**D3DKMTEscape**](../d3dkmthk/nf-d3dkmthk-d3dkmtescape.md)

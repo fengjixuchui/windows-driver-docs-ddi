@@ -4,7 +4,6 @@ title: PFNBTHPORT_INDICATION_CALLBACK (bthddi.h)
 description: Profile drivers implement a L2CAP callback function to provide the Bluetooth driver stack with a mechanism to notify the profile driver about incoming L2CAP connection requests from remote devices, and any changes to the status of a currently open L2CAP connection.
 old-location: bltooth\l2cap_callback_function.htm
 tech.root: bltooth
-ms.assetid: d3ca900d-1dd6-49da-ae94-855de3fbd086
 ms.date: 04/27/2018
 keywords: ["PFNBTHPORT_INDICATION_CALLBACK callback function"]
 ms.keywords: BluetoothPortIndicationCallback, BluetoothPortIndicationCallback callback function [Bluetooth Devices], PFNBTHPORT_INDICATION_CALLBACK, PFNBTHPORT_INDICATION_CALLBACK callback, bltooth.l2cap_callback_function, bth_funcs_76d9cb39-ead0-4465-9cc5-83b559b0ba55.xml, bthddi/BluetoothPortIndicationCallback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - bthddi.h
 api_name:
- - BluetoothPortIndicationCallback
+ - PFNBTHPORT_INDICATION_CALLBACK
 ---
 
 # PFNBTHPORT_INDICATION_CALLBACK callback function
@@ -52,9 +51,9 @@ Profile drivers implement a L2CAP callback function to provide the Bluetooth dri
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 For incoming remote connection request indications, this is the context specified by the profile
      driver in the 
      <b>IndicationCallbackContext</b> member of the 
@@ -64,16 +63,16 @@ For incoming remote connection request indications, this is the context specifie
      <b>CallbackContext</b> member specified by the profile driver when it built and sent a 
      <a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_open_channel">_BRB_L2CA_OPEN_CHANNEL</a> BRB.
 
-### -param Indication 
+### -param Indication [in]
 
-[in]
+
 An 
      <a href="/windows-hardware/drivers/ddi/bthddi/ne-bthddi-_indication_code">INDICATION_CODE</a> value that indicates the type
      of L2CAP event.
 
-### -param Parameters 
+### -param Parameters [in]
 
-[in]
+
 An 
      <a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_indication_parameters">INDICATION_PARAMETERS</a> structure that
      contains event-specific parameters.
@@ -132,3 +131,4 @@ The
 
 
 <a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_register_server">_BRB_L2CA_REGISTER_SERVER</a>
+

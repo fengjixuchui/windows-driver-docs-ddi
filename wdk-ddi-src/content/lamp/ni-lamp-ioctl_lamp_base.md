@@ -1,9 +1,8 @@
 ---
 UID: NI:lamp.IOCTL_LAMP_BASE
 title: IOCTL_LAMP_BASE (lamp.h)
-description: 
-ms.assetid: 91ad561c-3f84-4395-8612-bd7a836b6e24
-ms.date: 08/26/2020
+description: "Learn more about: IOCTL_LAMP_BASE IOCTL"
+ms.date: 11/17/2020
 keywords: ["IOCTL_LAMP_BASE IOCTL"]
 req.header: lamp.h
 req.include-header: 
@@ -19,6 +18,7 @@ req.ddi-compliance:
 req.max-support: 
 targetos: Windows
 ms.custom: RS5
+tech.root: stream
 f1_keywords:
  - IOCTL_LAMP_BASE
  - lamp/IOCTL_LAMP_BASE
@@ -30,18 +30,17 @@ api_location:
  - lamp.h
 api_name:
  - IOCTL_LAMP_BASE
-product:
- - Windows
 ---
 
 # IOCTL_LAMP_BASE IOCTL
 
 ### Major Code:  [IRP_MJ_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-device-control)
 
-
 ## -description
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

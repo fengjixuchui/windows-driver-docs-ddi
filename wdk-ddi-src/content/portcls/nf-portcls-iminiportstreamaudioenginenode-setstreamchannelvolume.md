@@ -4,7 +4,6 @@ title: IMiniportStreamAudioEngineNode::SetStreamChannelVolume (portcls.h)
 description: Sets the volume level to be applied to the audio stream.
 old-location: audio\iminiportstreamaudioenginenode_setstreamchannelvolume.htm
 tech.root: audio
-ms.assetid: 0110979E-8C57-4394-B43E-BCC7B178A0AF
 ms.date: 05/08/2018
 keywords: ["IMiniportStreamAudioEngineNode::SetStreamChannelVolume"]
 ms.keywords: IMiniportStreamAudioEngineNode interface [Audio Devices],SetStreamChannelVolume method, IMiniportStreamAudioEngineNode.SetStreamChannelVolume, IMiniportStreamAudioEngineNode::SetStreamChannelVolume, SetStreamChannelVolume, SetStreamChannelVolume method [Audio Devices], SetStreamChannelVolume method [Audio Devices],IMiniportStreamAudioEngineNode interface, audio.iminiportstreamaudioenginenode_setstreamchannelvolume, portcls/IMiniportStreamAudioEngineNode::SetStreamChannelVolume
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IMiniportStreamAudioEngineNode.SetStreamChannelVolume
+ - IMiniportStreamAudioEngineNode::SetStreamChannelVolume
 ---
 
 # IMiniportStreamAudioEngineNode::SetStreamChannelVolume
@@ -50,24 +49,24 @@ Sets the volume level to be applied to the audio stream.
 
 ## -parameters
 
-### -param Channel 
+### -param Channel [in]
 
-[in]
+
 The audio stream channel.
 
-### -param TargetVolume 
+### -param TargetVolume [in]
 
-[in]
+
 The volume level to be applied to the audio stream.
 
-### -param CurveType 
+### -param CurveType [in]
 
-[in]
+
 The curve algorithm that will be used  to set the volume level. The curve types are represented by the members of the <a href="/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-audio_curve_type">AUDIO_CURVE_TYPE</a> enum.
 
-### -param CurveDuration 
+### -param CurveDuration [in]
 
-[in]
+
 The length of time over which the curve algorithm will be applied.
 
 ## -returns
@@ -79,3 +78,4 @@ code.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportstreamaudioenginenode">IMiniportStreamAudioEngineNode</a>
+

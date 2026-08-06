@@ -1,11 +1,9 @@
 ---
 UID: NF:storport.StorPortSetFeatureList
 title: StorPortSetFeatureList function
-description: A miniport can call StorPortSetFeatureList to set the Storport feature list that it supports.
+description: StorPortSetFeatureList sets the Storport features that a miniport supports.
 tech.root: storage
-ms.assetid: 1426766a-5575-42ba-8a64-53d2e6c23be7
-ms.date: 03/24/2020
-ms.topic: function
+ms.date: 05/13/2021
 ms.keywords: StorPortSetFeatureList
 req.header: storport.h
 req.include-header: 
@@ -37,16 +35,13 @@ api_location:
  - Storport.dll
 api_name:
  - StorPortSetFeatureList
-product:
- - Windows
 ---
 
 # StorPortSetFeatureList function
 
-
 ## -description
 
-A miniport can call **StorPortSetFeatureList** to set the *StorPort* feature list that it supports.
+**StorPortSetFeatureList** sets the *StorPort* features that a miniport supports.
 
 ## -parameters
 
@@ -56,11 +51,11 @@ Pointer to the miniport's device extension.
 
 ### -param FeatureCount
 
-Number of features in *FeatureList*.
+Number of features that *FeatureList* points to.
 
 ### -param FeatureList
 
-List of *StorPort* features supported by the miniport. This value is based on [**STORPORT_FEATURE_TYPE**](ne-storport-storport_feature_type.md) enum values.
+Pointer to an array of [**STORPORT_FEATURE_TYPE**](ne-storport-storport_feature_type.md) enum values that identify the *StorPort* features supported by the miniport.
 
 ## -returns
 
@@ -69,12 +64,12 @@ List of *StorPort* features supported by the miniport. This value is based on [*
 | Return code | Description |
 | ----------- | ----------- |
 | STOR_STATUS_SUCCESS | The feature list was set successfully. |
-| STOR_STATUS_INVALID_PARAMETER | An input parameter is invalid. |
+| STOR_STATUS_INVALID_PARAMETER | An input parameter is invalid; for example, *FeatureList* is NULL or *FeatureCount* is out of range. |
 | STOR_STATUS_UNSUCCESSFUL | The operation failed. |
 
 ## -remarks
 
-A miniport should call **StorPortSetFeatureList** for each adapter in the beginning of its [*HwFindAdapter*](./nc-storport-hw_initialize.md) routine.
+A miniport calls **StorPortSetFeatureList** to set the *StorPort* features that it supports. A miniport should call this function for each adapter in the beginning of its [*HwFindAdapter*](./nc-storport-hw_initialize.md) routine.
 
 ## -see-also
 

@@ -4,7 +4,6 @@ title: NdisMSetBusData function (ndis.h)
 description: NDIS drivers call the NdisMSetBusData function to write to the configuration space of a device.
 old-location: netvista\ndismsetbusdata.htm
 tech.root: netvista
-ms.assetid: 0b9153b3-f379-40c4-87f6-1fa380070e65
 ms.date: 05/02/2018
 keywords: ["NdisMSetBusData function"]
 ms.keywords: NdisMSetBusData, NdisMSetBusData function [Network Drivers Starting with Windows Vista], hardware_configuration_ref_4fd9608c-60b9-4a86-9aa3-02d6ec17da92.xml, ndis/NdisMSetBusData, netvista.ndismsetbusdata
@@ -59,28 +58,28 @@ The miniport adapter handle that NDIS passed to the
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">
      MiniportInitializeEx</a> function.
 
-### -param WhichSpace 
+### -param WhichSpace [in]
 
-[in]
+
 The type of bus data to be written. For further information, see the discussion of the 
      <i>WhichSpace</i> parameter on the reference page for 
      <a href="/windows-hardware/drivers/kernel/irp-mn-read-config">IRP_MN_READ_CONFIG</a>.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 The byte offset in the configuration space, specified by 
      <i>WhichSpace</i>, to which data is written.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to a buffer that contains the data to write to the bus. Must be at least as large as 
      <i>Length</i> .
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The length, in bytes, of the data to write.
 
 ## -returns

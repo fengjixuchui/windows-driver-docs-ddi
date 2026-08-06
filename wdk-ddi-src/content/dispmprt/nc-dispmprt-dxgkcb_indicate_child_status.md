@@ -4,14 +4,13 @@ title: DXGKCB_INDICATE_CHILD_STATUS (dispmprt.h)
 description: The DxgkCbIndicateChildStatus function records the current status of a specified child device of a display adapter.
 old-location: display\dxgkcbindicatechildstatus.htm
 tech.root: display
-ms.assetid: 780a8867-bba1-4b1b-a941-b55bfe087b7b
 ms.date: 05/10/2018
 keywords: ["DXGKCB_INDICATE_CHILD_STATUS callback function"]
 ms.keywords: DXGKCB_INDICATE_CHILD_STATUS, DXGKCB_INDICATE_CHILD_STATUS callback, DpFunctions_db80be21-a515-411f-beb0-64f7514c11f4.xml, DxgkCbIndicateChildStatus, DxgkCbIndicateChildStatus callback function [Display Devices], display.dxgkcbindicatechildstatus, dispmprt/DxgkCbIndicateChildStatus
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
- - DxgkCbIndicateChildStatus
+ - DXGKCB_INDICATE_CHILD_STATUS
 ---
 
 # DXGKCB_INDICATE_CHILD_STATUS callback function
@@ -50,14 +49,14 @@ The <b>DxgkCbIndicateChildStatus</b> function records the current status of a sp
 
 ## -parameters
 
-### -param DeviceHandle 
+### -param DeviceHandle [in]
 
-[in]
+
 A handle that represents a display adapter. The display miniport driver previously obtained this handle in the <b>DeviceHandle</b> member of the <a href="/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device">DxgkDdiStartDevice</a>.
 
-### -param ChildStatus 
+### -param ChildStatus [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_child_status">DXGK_CHILD_STATUS</a> structure that identifies the child device and describes the current status of the child device.
 
 ## -returns
@@ -140,3 +139,4 @@ AtiSimulateMonitor(HW_DEVICE_EXTENSION *pHwDeviceExtension, PR2_SIMULATE_MONITOR
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_child_status">DxgkDdiQueryChildStatus</a>
+

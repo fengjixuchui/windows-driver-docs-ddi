@@ -4,14 +4,13 @@ title: _FILE_LINK_ENTRY_INFORMATION (ntifs.h)
 description: The FILE_LINK_ENTRY_INFORMATION structure describes a single NTFS hard link to an existing file.
 old-location: ifsk\file_link_entry_information.htm
 tech.root: ifsk
-ms.assetid: b42edb45-3f4f-4f65-aede-8f51149dda78
 ms.date: 04/16/2018
 keywords: ["FILE_LINK_ENTRY_INFORMATION structure"]
 ms.keywords: "*PFILE_LINK_ENTRY_INFORMATION, FILE_LINK_ENTRY_INFORMATION, FILE_LINK_ENTRY_INFORMATION structure [Installable File System Drivers], PFILE_LINK_ENTRY_INFORMATION, PFILE_LINK_ENTRY_INFORMATION structure pointer [Installable File System Drivers], _FILE_LINK_ENTRY_INFORMATION, ifsk.file_link_entry_information, ntifs/FILE_LINK_ENTRY_INFORMATION, ntifs/PFILE_LINK_ENTRY_INFORMATION"
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating system.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntifs.h
 api_name:
+ - _FILE_LINK_ENTRY_INFORMATION
+ - PFILE_LINK_ENTRY_INFORMATION
  - FILE_LINK_ENTRY_INFORMATION
 ---
 
@@ -73,3 +74,4 @@ The name of the link.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_file_links_information">FILE_LINKS_INFORMATION</a>
+

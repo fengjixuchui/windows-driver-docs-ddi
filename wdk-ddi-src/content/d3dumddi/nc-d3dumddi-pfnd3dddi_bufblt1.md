@@ -4,7 +4,6 @@ title: PFND3DDDI_BUFBLT1 (d3dumddi.h)
 description: Performs a bit-block transfer (bitblt) operation from a source vertex or index buffer to a destination vertex or index buffer. Implemented by Windows Display Driver Model (WDDM) 1.2 or later user-mode display drivers.
 old-location: display\bufblt1.htm
 tech.root: display
-ms.assetid: 92F2AED7-935F-4E3E-934F-D6DF9AA87495
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_BUFBLT1 callback function"]
 ms.keywords: BufBlt1, BufBlt1 callback function [Display Devices], PFND3DDDI_BUFBLT1, PFND3DDDI_BUFBLT1 callback, d3dumddi/BufBlt1, display.bufblt1
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - BufBlt1
-product:
- - Windows
+ - PFND3DDDI_BUFBLT1
 ---
 
 # PFND3DDDI_BUFBLT1 callback function
@@ -56,7 +53,7 @@ Performs a bit-block transfer (bitblt) operation from a source vertex or index b
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 pData [in]
 
@@ -73,3 +70,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dd
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

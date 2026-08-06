@@ -2,10 +2,8 @@
 UID: NC:oprghdlr.ACPI_OP_REGION_HANDLER
 title: ACPI_OP_REGION_HANDLER (oprghdlr.h)
 description: An ACPI_OP_REGION_HANDLER-typed routine is supplied by an ACPI device function driver to provide access by the ACPI driver to the device's operation region.
-old-location: acpi\pacpi_op_region_handler.htm
 tech.root: acpi
-ms.assetid: c3a5af59-c97c-42be-bc43-afa30ad710ec
-ms.date: 08/20/2020
+ms.date: 03/03/2023
 keywords: ["ACPI_OP_REGION_HANDLER callback function"]
 ms.keywords: ACPI_OP_REGION_HANDLER, ACPI_OP_REGION_HANDLER callback, AcpiOpRegionHandler, AcpiOpRegionHandler callback function [ACPI Devices], acpi.pacpi_op_region_handler, opregref_be7bf2cd-0369-4efd-bbdb-5ad7dc28c33d.xml, oprghdlr/AcpiOpRegionHandler
 req.header: oprghdlr.h
@@ -24,7 +22,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: (See Remarks section)
+req.irql: 
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,11 +36,8 @@ api_type:
 api_location:
  - oprghdlr.h
 api_name:
- - AcpiOpRegionHandler
+ - ACPI_OP_REGION_HANDLER
 ---
-
-# ACPI_OP_REGION_HANDLER callback function
-
 
 ## -description
 
@@ -55,13 +50,13 @@ An ACPI_OP_REGION_HANDLER-typed routine is supplied by an ACPI device function d
 Specifies one of the following access types:
 
 | Access type | Description |
-|--|--|
+|---|---|
 | ACPI_OPREGION_WRITE | Write to the operation region memory buffer. |
 | ACPI_OPREGION_READ | Read from the operation region memory buffer. |
 
 ### -param OperationRegionObject
 
-Specifies the operation region object returned by [RegisterOpRegionHandler](./nf-oprghdlr-registeropregionhandler.md) for the operation region handler.
+Specifies the operation region object returned by **RegisterOpRegionHandler** for the operation region handler.
 
 ### -param Address
 
@@ -92,7 +87,7 @@ Reserved for internal use.
 Returns one of the following status values:
 
 | Return code | Description |
-|--|--|
+|---|---|
 | STATUS_SUCCESS | The access was successful. |
 | STATUS_INVALID_DEVICE_REQUEST | The access type is invalid. |
 | STATUS_Xxx | An internal error occurred. |
@@ -109,6 +104,4 @@ For detailed information about constraints on operation regions, see the [Advanc
 
 ## -see-also
 
-[DeRegisterOpRegionHandler](./nf-oprghdlr-deregisteropregionhandler.md)
-
-[RegisterOpRegionHandler](./nf-oprghdlr-registeropregionhandler.md)
+[DeRegisterOpRegionHandler](nf-oprghdlr-deregisteropregionhandler.md)

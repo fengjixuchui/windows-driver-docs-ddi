@@ -4,7 +4,6 @@ title: StorPortLogSystemEvent function (storport.h)
 description: The StorPortLogSystemEvent routine gives miniport drivers full access to the capabilities of the Windows kernel event facility, enabling miniport drivers to create event log entries that are truly useful in troubleshooting storage issues.
 old-location: storage\storportlogsystemevent.htm
 tech.root: storage
-ms.assetid: 720245ff-8c97-4b8d-8406-f6b712fa74c9
 ms.date: 03/29/2018
 keywords: ["StorPortLogSystemEvent function"]
 ms.keywords: StorPortLogSystemEvent, StorPortLogSystemEvent routine [Storage Devices], storage.storportlogsystemevent, storport/StorPortLogSystemEvent, storprt_15a23037-a0e9-4768-ab20-80d6fe7d8a56.xml
@@ -50,19 +49,19 @@ The StorPortLogSystemEvent routine gives miniport drivers full access to the cap
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport immediately after the miniport driver calls <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
 
-### -param LogDetails 
+### -param LogDetails [in, out]
 
-[in, out]
+
 A [STOR_LOG_EVENT_DETAILS](./ns-storport-_stor_log_event_details.md) structure that contains information to appear in the system event log entry.
 
-### -param MaximumSize 
+### -param MaximumSize [in, out]
 
-[in, out]
+
 Variable to receive maximum combined size of miniport's dump data and strings. Only returned if the function fails and returns a STOR_STATUS_INVALID_BUFFER_SIZE value. This parameter is optional.
 
 ## -returns

@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_SET_DEFAULT_KEY
 title: DOT11EXT_SET_DEFAULT_KEY (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_SET_DEFAULT_KEY callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extsetdefaultkey.htm
 tech.root: netvista
-ms.assetid: 7c066a71-502a-4dc2-b117-32597c534cb6
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_SET_DEFAULT_KEY callback"]
 ms.keywords: DOT11EXT_SET_DEFAULT_KEY, Dot11ExtSetDefaultKey, Dot11ExtSetDefaultKey callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_c313f938-0a68-4470-b298-d9e6c0231268.xml, netvista.dot11extsetdefaultkey, wlanihv/Dot11ExtSetDefaultKey
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_SET_DEFAULT_KEY
  - wlanihv/DOT11EXT_SET_DEFAULT_KEY
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtSetDefaultKey
+ - DOT11EXT_SET_DEFAULT_KEY
 ---
 
 # DOT11EXT_SET_DEFAULT_KEY callback
@@ -57,24 +55,24 @@ The IHV Extensions DLL calls the
 
 ## -parameters
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the WLAN adapter. This handle value was
      specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param pKey 
+### -param pKey [in]
 
-[in]
+
 A pointer to a
      <a href="..\windot11\ns-windot11-dot11_cipher_default_key_value.md">
      DOT11_CIPHER_DEFAULT_KEY_VALUE</a> structure, which defines the cipher key.
 
-### -param dot11Direction 
+### -param dot11Direction [in]
 
-[in]
+
 A
      <a href="..\windot11\ne-windot11-dot11_direction.md">DOT11_DIRECTION</a> value that specifies whether
      the key can be used only for received packets (DOT11_DIR_INBOUND) or both received and sent packets
@@ -144,3 +142,4 @@ A cipher key is deleted from the adapter's key tables if the
 
 <a href="..\windot11\ns-windot11-dot11_cipher_default_key_value.md">
    DOT11_CIPHER_DEFAULT_KEY_VALUE</a>
+

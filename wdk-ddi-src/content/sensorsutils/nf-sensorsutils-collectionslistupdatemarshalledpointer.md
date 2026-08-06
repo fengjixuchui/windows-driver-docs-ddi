@@ -2,7 +2,6 @@
 UID: NF:sensorsutils.CollectionsListUpdateMarshalledPointer
 title: CollectionsListUpdateMarshalledPointer function (sensorsutils.h)
 description: This routine update embedded pointers.
-ms.assetid: f4e07e07-4f80-4427-b073-ea6f38346db5
 ms.date: 08/08/2018
 keywords: ["CollectionsListUpdateMarshalledPointer function"]
 tech.root: sensors
@@ -51,9 +50,9 @@ This routine update embedded pointers. It should be called when marshalled colle
 
 ## -parameters
 
-### -param Collection
+### -param Collection [in/out]
 
-[in/out] A pointer to a sensor collection list.
+A pointer to a sensor collection list.
 
 ## -returns
 

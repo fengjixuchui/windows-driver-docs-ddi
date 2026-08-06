@@ -4,7 +4,6 @@ title: WdfIoTargetFormatRequestForIoctl function (wdfiotarget.h)
 description: The WdfIoTargetFormatRequestForIoctl method builds a device control request for an I/O target but does not send the request.
 old-location: wdf\wdfiotargetformatrequestforioctl.htm
 tech.root: wdf
-ms.assetid: 673f53e8-67ce-481d-be1b-ea4146b9776a
 ms.date: 02/26/2018
 keywords: ["WdfIoTargetFormatRequestForIoctl function"]
 ms.keywords: DFIOTargetRef_065d8ea7-7be0-41c4-be6b-648606404139.xml, WdfIoTargetFormatRequestForIoctl, WdfIoTargetFormatRequestForIoctl method, kmdf.wdfiotargetformatrequestforioctl, wdf.wdfiotargetformatrequestforioctl, wdfiotarget/WdfIoTargetFormatRequestForIoctl
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,39 +54,39 @@ The <b>WdfIoTargetFormatRequestForIoctl</b> method builds a device control reque
 
 ## -parameters
 
-### -param IoTarget 
+### -param IoTarget [in]
 
-[in]
+
 A handle to a local or remote I/O target object that was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicegetiotarget">WdfDeviceGetIoTarget</a> or <a href="/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetcreate">WdfIoTargetCreate</a>, or from a method that a specialized I/O target supplies.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object. For more information, see the following Remarks section.
 
-### -param IoctlCode 
+### -param IoctlCode [in]
 
-[in]
+
 An I/O control code (IOCTL) that the I/O target supports.
 
-### -param InputBuffer 
+### -param InputBuffer [in, optional]
 
-[in, optional]
+
 A handle to a framework memory object. This object represents a buffer that contains data that will be sent to the I/O target. For more information, see the following Remarks section.
 
-### -param InputBufferOffset 
+### -param InputBufferOffset [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfmemory/ns-wdfmemory-_wdfmemory_offset">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. The framework uses these values to determine the beginning address and length, within the input buffer, for the data transfer. If this pointer is <b>NULL</b>, the data transfer begins at the beginning of the input buffer, and the transfer size is the buffer size.
 
-### -param OutputBuffer 
+### -param OutputBuffer [in, optional]
 
-[in, optional]
+
 A handle to a framework memory object. This object represents a buffer that will receive data from the I/O target. For more information, see the following Remarks section.
 
-### -param OutputBufferOffset 
+### -param OutputBufferOffset [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfmemory/ns-wdfmemory-_wdfmemory_offset">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. The framework uses these values to determine the beginning address and length, within the output buffer, for the data transfer. If this pointer is <b>NULL</b>, the data transfer begins at the beginning of the output buffer, and the transfer size is the buffer size.
 
 ## -returns

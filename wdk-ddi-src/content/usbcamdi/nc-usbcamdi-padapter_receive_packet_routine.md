@@ -4,7 +4,6 @@ title: PADAPTER_RECEIVE_PACKET_ROUTINE (usbcamdi.h)
 description: A camera minidriver's AdapterReceivePacket callback function processes adapter-based stream request blocks (SRBs) passed to it by the stream class driver.
 old-location: stream\adapterreceivepacket.htm
 tech.root: stream
-ms.assetid: 8ee658bf-2243-4b1f-b4d6-5d9b6388e972
 ms.date: 04/23/2018
 keywords: ["PADAPTER_RECEIVE_PACKET_ROUTINE callback function"]
 ms.keywords: AdapterReceivePacket, AdapterReceivePacket callback function [Streaming Media Devices], PADAPTER_RECEIVE_PACKET_ROUTINE, PADAPTER_RECEIVE_PACKET_ROUTINE callback, stream.adapterreceivepacket, usbcamdi/AdapterReceivePacket, usbcmdpr_4f4422ba-64f3-4eee-8450-4a3b5715b910.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - usbcamdi.h
 api_name:
- - AdapterReceivePacket
+ - PADAPTER_RECEIVE_PACKET_ROUTINE
 ---
 
 # PADAPTER_RECEIVE_PACKET_ROUTINE callback function
@@ -50,9 +49,9 @@ A camera minidriver's <i>AdapterReceivePacket</i> callback function processes ad
 
 ## -parameters
 
-### -param Srb 
+### -param Srb [in]
 
-[in]
+
 Specifies the SRB to be processed by the camera minidriver.
 
 ## -remarks
@@ -62,3 +61,4 @@ A camera's minidriver provides USBCAMD with the address of its <i>AdapterReceive
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/usbcamdi/nf-usbcamdi-usbcamd_driverentry">USBCAMD_DriverEntry</a>
+

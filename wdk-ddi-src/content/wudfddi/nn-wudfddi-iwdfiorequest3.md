@@ -4,7 +4,6 @@ title: IWDFIoRequest3 (wudfddi.h)
 description: To obtain the IWDFIoRequest3 interface, drivers call IWDFIoRequest::QueryInterface.
 old-location: wdf\iwdfiorequest3.htm
 tech.root: wdf
-ms.assetid: 12F4CDB7-EEA5-49D1-AD41-6F5F0C9ED6C3
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequest3 interface"]
 ms.keywords: IWDFIoRequest3, IWDFIoRequest3 interface, IWDFIoRequest3 interface,described, umdf.iwdfiorequest3, wdf.iwdfiorequest3, wudfddi/IWDFIoRequest3
@@ -52,9 +51,9 @@ To obtain the <b>IWDFIoRequest3</b> interface, drivers call <b>IWDFIoRequest::Qu
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFIoRequest3</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest2">IWDFIoRequest2</a>. <b>IWDFIoRequest3</b> also has these types of members:
+The <b>IWDFIoRequest3</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest2">IWDFIoRequest2</a>. <b>IWDFIoRequest3</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>
 
 ## -see-also

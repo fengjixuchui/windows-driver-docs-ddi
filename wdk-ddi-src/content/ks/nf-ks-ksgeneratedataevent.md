@@ -4,7 +4,6 @@ title: KsGenerateDataEvent function (ks.h)
 description: The KsGenerateDataEvent function generates one of the standard event notifications when given an event entry structure and callback data.
 old-location: stream\ksgeneratedataevent.htm
 tech.root: stream
-ms.assetid: 3ba49134-e144-4212-9ef7-e16b9d5f90ea
 ms.date: 04/23/2018
 keywords: ["KsGenerateDataEvent function"]
 ms.keywords: KsGenerateDataEvent, KsGenerateDataEvent function [Streaming Media Devices], ks/KsGenerateDataEvent, ksfunc_4e7efb50-d6c2-45b5-9b44-5c3d48e91933.xml, stream.ksgeneratedataevent
@@ -51,19 +50,19 @@ The <b>KsGenerateDataEvent</b> function generates one of the standard event noti
 
 ## -parameters
 
-### -param EventEntry 
+### -param EventEntry [in]
 
-[in]
+
 Specifies the event entry structure that references the event data. The information is used to determine what type of notification to perform. If the notification type is not one of the predefined standards, an error is returned. In the case of a single, nonrecurring event, this entry will be invalid when returned from the function. Therefore, any code that enumerates a list of events must preincrement to acquire the next event in the list before passing this event to the function.
 
-### -param DataSize 
+### -param DataSize [in]
 
-[in]
+
 Specifies the size in bytes of the <i>Data</i> parameter passed.
 
-### -param Data 
+### -param Data [in]
 
-[in]
+
 Points to data to be passed to the client callback. This data is copied to one of the preallocated buffer slots set up when the event was enabled. The size of the data must be less than whatever was originally allocated or the event will fail.
 
 ## -returns

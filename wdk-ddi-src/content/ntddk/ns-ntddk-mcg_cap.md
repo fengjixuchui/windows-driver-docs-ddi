@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._MCG_CAP
-title: MCG_CAP
-description: 
-tech.root: 
-ms.assetid: ce0130b9-d5aa-4f43-96c6-f639eed5805e
+title: MCG_CAP structure
+description: "Learn more about: MCG_CAP structure"
+tech.root: devtest
 ms.date: 08/19/2019
 keywords: ["MCG_CAP structure"]
 ms.keywords: MCG_CAP, MCG_CAP, *PMCG_CAP,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _MCG_CAP
+ - PMCG_CAP
  - MCG_CAP
-product:
- - Windows
 ---
 
 # MCG_CAP structure

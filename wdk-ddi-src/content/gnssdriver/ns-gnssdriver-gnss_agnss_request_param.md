@@ -1,10 +1,9 @@
 ---
-UID: NS:gnssdriver.__unnamed_struct_29
+UID: NS:gnssdriver.GNSS_AGNSS_REQUEST_PARAM
 title: GNSS_AGNSS_REQUEST_PARAM (gnssdriver.h)
 description: This structure defines AGNSS request parameters.
 old-location: gnss\gnss_agnss_request_param.htm
 tech.root: gnss
-ms.assetid: 67A1DAEF-13D3-4D47-B10C-0CA30C8EB22F
 ms.date: 02/15/2018
 keywords: ["GNSS_AGNSS_REQUEST_PARAM structure"]
 ms.keywords: "*PGNSS_AGNSS_REQUEST_PARAM, GNSS_AGNSS_REQUEST_PARAM, GNSS_AGNSS_REQUEST_PARAM structure [Sensor Devices], PGNSS_AGNSS_REQUEST_PARAM, PGNSS_AGNSS_REQUEST_PARAM structure pointer [Sensor Devices], gnss.gnss_agnss_request_param, gnssdriver/GNSS_AGNSS_REQUEST_PARAM, gnssdriver/PGNSS_AGNSS_REQUEST_PARAM"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - gnssdriver.h
 api_name:
+ - PGNSS_AGNSS_REQUEST_PARAM
  - GNSS_AGNSS_REQUEST_PARAM
 ---
 

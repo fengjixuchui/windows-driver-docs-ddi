@@ -4,7 +4,6 @@ title: WdfRequestStopAcknowledge function (wdfrequest.h)
 description: The WdfRequestStopAcknowledge method informs the framework that the driver has stopped processing a specified I/O request.
 old-location: wdf\wdfrequeststopacknowledge.htm
 tech.root: wdf
-ms.assetid: 70f90cfd-9828-41a6-a7f9-6b0033e46b74
 ms.date: 02/26/2018
 keywords: ["WdfRequestStopAcknowledge function"]
 ms.keywords: DFRequestObjectRef_14594eba-ca7f-433b-9fd4-717053a09158.xml, WdfRequestStopAcknowledge, WdfRequestStopAcknowledge method, kmdf.wdfrequeststopacknowledge, wdf.wdfrequeststopacknowledge, wdfrequest/WdfRequestStopAcknowledge
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfRequestStopAcknowledge</b> method informs the framework that the drive
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
-### -param Requeue 
+### -param Requeue [in]
 
-[in]
+
 A Boolean value that, if <b>TRUE</b>, causes the framework to requeue the request into the queue so that the framework will deliver it to the driver again. If <b>FALSE</b>, the framework does not requeue the request. For more information, see the following Remarks section.
 
 ## -remarks

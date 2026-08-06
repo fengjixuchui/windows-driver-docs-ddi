@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.IoStopTimer
 title: IoStopTimer function (wdm.h)
-description: The IoStopTimer routine disables the timer for a specified device object so the driver-supplied IoTimer routine is not called.
+description: The IoStopTimer routine in wdm.h disables the timer for a specified device object so the driver-supplied IoTimer routine is not called.
 old-location: kernel\iostoptimer.htm
 tech.root: kernel
-ms.assetid: 4b903046-8f96-4299-94e7-85900be1bbd4
 ms.date: 04/30/2018
 keywords: ["IoStopTimer function"]
 ms.keywords: IoStopTimer, IoStopTimer routine [Kernel-Mode Driver Architecture], k104_dfedf779-1137-44c1-ab06-223c3ce6e9c6.xml, kernel.iostoptimer, wdm/IoStopTimer
@@ -50,9 +49,9 @@ The <b>IoStopTimer</b> routine disables the timer for a specified device object 
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the device object with which the <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-io_timer_routine">IoTimer</a> routine is associated.
 
 ## -remarks

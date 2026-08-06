@@ -4,7 +4,6 @@ title: IDebugBreakpoint2::GetOffsetExpressionWide (dbgeng.h)
 description: The GetOffsetExpressionWide method returns the expression string that evaluates to the location that triggers a breakpoint.
 old-location: debugger\getoffsetexpressionwide.htm
 tech.root: debugger
-ms.assetid: bd4b32b1-e8ba-485f-bfb6-15c8c44926af
 ms.date: 05/03/2018
 keywords: ["IDebugBreakpoint2::GetOffsetExpressionWide"]
 ms.keywords: GetOffsetExpressionWide, GetOffsetExpressionWide method [Windows Debugging], GetOffsetExpressionWide method [Windows Debugging],IDebugBreakpoint2 interface, IDebugBreakpoint2 interface [Windows Debugging],GetOffsetExpressionWide method, IDebugBreakpoint2.GetOffsetExpressionWide, IDebugBreakpoint2::GetOffsetExpressionWide, dbgeng/IDebugBreakpoint2::GetOffsetExpressionWide, debugger.getoffsetexpressionwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugBreakpoint2.GetOffsetExpressionWide
+ - IDebugBreakpoint2::GetOffsetExpressionWide
 ---
 
 # IDebugBreakpoint2::GetOffsetExpressionWide
@@ -50,19 +49,19 @@ The <b>GetOffsetExpressionWide</b> method returns the expression string that eva
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 The expression string that evaluates to the location on the target that triggers the breakpoint.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 The size, in characters, of the buffer that <i>Buffer </i>points to.
 
-### -param ExpressionSize 
+### -param ExpressionSize [out, optional]
 
-[out, optional]
+
 The size, in characters, of the expression string.  If <i>ExpressionSize</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -106,3 +105,4 @@ The expression is evaluated every time that a module is loaded or unloaded.  If 
 The <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getparameters">GetParameters</a> method also returns the size of the expression string that specifies the location that triggers the breakpoint, <i>ExpressionSize</i>.
 
 For more information about how to use breakpoints, see <a href="/windows-hardware/drivers/debugger/using-breakpoints2">Using Breakpoints</a>.
+

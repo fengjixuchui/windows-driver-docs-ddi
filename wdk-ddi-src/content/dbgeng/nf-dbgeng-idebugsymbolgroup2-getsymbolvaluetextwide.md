@@ -4,8 +4,7 @@ title: IDebugSymbolGroup2::GetSymbolValueTextWide (dbgeng.h)
 description: The GetSymbolValueTextWide method returns a string that represents the value of a symbol.
 old-location: debugger\getsymbolvaluetextwide.htm
 tech.root: debugger
-ms.assetid: 56e147ea-497b-4691-8a62-8165828b1f36
-ms.date: 05/03/2018
+ms.date: 02/06/2022
 keywords: ["IDebugSymbolGroup2::GetSymbolValueTextWide"]
 ms.keywords: GetSymbolValueTextWide, GetSymbolValueTextWide method [Windows Debugging], GetSymbolValueTextWide method [Windows Debugging],IDebugSymbolGroup2 interface, IDebugSymbolGroup2 interface [Windows Debugging],GetSymbolValueTextWide method, IDebugSymbolGroup2.GetSymbolValueTextWide, IDebugSymbolGroup2::GetSymbolValueTextWide, dbgeng/IDebugSymbolGroup2::GetSymbolValueTextWide, debugger.getsymbolvaluetextwide
 req.header: dbgeng.h
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbolGroup2.GetSymbolValueTextWide
+ - IDebugSymbolGroup2::GetSymbolValueTextWide
 ---
 
 # IDebugSymbolGroup2::GetSymbolValueTextWide
@@ -50,25 +49,25 @@ The <b>GetSymbolValueTextWide</b> method returns a string that represents the va
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 The index of the symbol whose value you want.  The index of a symbol is an identification number. The index ranges from zero through the number of symbols in the symbol group minus one.
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 The value of the symbol as a string.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
-The size, in characters, of the <i>Buffer </i>buffer.
 
-### -param NameSize 
+The size, in characters, of the <i>Buffer </i>buffer. This size includes the space for the '\0' terminating character.
 
-[out, optional]
-The size, in characters, of the value of the symbol.  If <i>NameSize</i> is <b>NULL</b>, this information is not returned.
+### -param NameSize [out, optional]
+
+
+The size, in characters, of the value of the symbol. This size includes the space for the '\0' terminating character. If <i>NameSize</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
 
@@ -121,3 +120,4 @@ For more information about symbol groups, see <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbolgroup2-writesymbol">WriteSymbol</a>
+

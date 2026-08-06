@@ -4,7 +4,6 @@ title: VideoPortGetVgaStatus function (video.h)
 description: The VideoPortGetVgaStatus function detects whether the calling device is decoding a VGA I/O address.
 old-location: display\videoportgetvgastatus.htm
 tech.root: display
-ms.assetid: 5a2bb69c-b10a-41bb-a92a-de7add3ca2c5
 ms.date: 05/10/2018
 keywords: ["VideoPortGetVgaStatus function"]
 ms.keywords: VideoPortGetVgaStatus, VideoPortGetVgaStatus function [Display Devices], VideoPort_Functions_f3e43fe4-2e50-48d4-b185-f44e2a2adb31.xml, display.videoportgetvgastatus, video/VideoPortGetVgaStatus
@@ -54,9 +53,9 @@ The <b>VideoPortGetVgaStatus</b> function detects whether the calling device is 
 
 Pointer to the miniport driver's device extension.
 
-### -param VgaStatus 
+### -param VgaStatus [out]
 
-[out]
+
 Pointer to the resulting VGA status. A value of zero (0) indicates that VGA is not enabled; a value of one (1) indicates that VGA is enabled.
 
 ## -returns

@@ -1,10 +1,9 @@
 ---
 UID: NC:drmk.PFNDRMCREATECONTENTMIXED
 title: PFNDRMCREATECONTENTMIXED (drmk.h)
-description: This callback function is reserved for system use.
+description: "Microsoft reserves the PFNDRMCREATECONTENTMIXED callback function for internal use only. Don't use this function in your code."
 old-location: audio\pfndrmcreatecontentmixed.htm
 tech.root: audio
-ms.assetid: A4BA818F-126F-4134-AEDA-F983ADFC4A07
 ms.date: 05/08/2018
 keywords: ["PFNDRMCREATECONTENTMIXED callback function"]
 ms.keywords: DRMCreateContentMixed, DRMCreateContentMixed callback function [Audio Devices], PFNDRMCREATECONTENTMIXED, PFNDRMCREATECONTENTMIXED callback, PfnDRMCreateContentMixed, PfnDRMCreateContentMixed callback function [Audio Devices], audio.pfndrmcreatecontentmixed, drmk/PfnDRMCreateContentMixed
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Drmk.h
 api_name:
- - DRMCreateContentMixed
+ - PFNDRMCREATECONTENTMIXED
 ---
 
 # PFNDRMCREATECONTENTMIXED callback function
@@ -50,19 +49,19 @@ This callback function is reserved for system use.
 
 ## -parameters
 
-### -param paContentId 
+### -param paContentId [in]
 
-[in]
+
 This parameter is reserved for system use.
 
-### -param cContentId 
+### -param cContentId [in]
 
-[in]
+
 This parameter is reserved for system use.
 
-### -param pMixedContentId 
+### -param pMixedContentId [out]
 
-[out]
+
 This parameter is reserved for system use.
 
 ## -returns

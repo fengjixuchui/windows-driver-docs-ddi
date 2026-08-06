@@ -4,7 +4,6 @@ title: PsGetCurrentSilo function (ntddk.h)
 description: This routine returns the current silo for the calling thread. First the thread is checked to see if it has been attached to a silo. If not, then the thread is checked to see if it is in a silo.
 old-location: kernel\psgetcurrentsilo.htm
 tech.root: kernel
-ms.assetid: 535D7611-8C86-44CF-964C-731882A3AF69
 ms.date: 04/30/2018
 keywords: ["PsGetCurrentSilo function"]
 ms.keywords: PsGetCurrentSilo, PsGetCurrentSilo routine [Kernel-Mode Driver Architecture], kernel.psgetcurrentsilo, ntddk/PsGetCurrentSilo
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: _IRQL_requires_max_(DISPATCH_LEVEL)
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:

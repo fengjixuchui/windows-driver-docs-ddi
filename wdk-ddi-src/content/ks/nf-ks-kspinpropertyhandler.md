@@ -4,7 +4,6 @@ title: KsPinPropertyHandler function (ks.h)
 description: The KsPinPropertyHandler function performs standard handling of the static members of the KSPROPSETID_Pin property set. This handling does not include KSPROPERTY_PIN_CINSTANCES or KSPROPERTY_PIN_DATAINTERSECTION.
 old-location: stream\kspinpropertyhandler.htm
 tech.root: stream
-ms.assetid: b721b79b-93f3-4dc8-853d-543222464341
 ms.date: 04/23/2018
 keywords: ["KsPinPropertyHandler function"]
 ms.keywords: KsPinPropertyHandler, KsPinPropertyHandler function [Streaming Media Devices], ks/KsPinPropertyHandler, ksfunc_4ebda111-4b9a-4e8e-b050-af336121bcf0.xml, stream.kspinpropertyhandler
@@ -51,29 +50,29 @@ The <b>KsPinPropertyHandler</b> function performs standard handling of the stati
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Specifies the IRP handling the connection request.
 
-### -param Property 
+### -param Property [in]
 
-[in]
+
 Specifies the specific property information.
 
-### -param Data 
+### -param Data [in, out]
 
-[in, out]
+
 Specifies the data parameter mapped to a system address. This is the same parameter passed to a property handler through a <a href="/windows-hardware/drivers/ddi/ks/nf-ks-kspropertyhandler">KsPropertyHandler</a> callback.
 
-### -param DescriptorsCount 
+### -param DescriptorsCount [in]
 
-[in]
+
 Specifies the number of pin descriptors being passed.
 
-### -param Descriptor 
+### -param Descriptor [in]
 
-[in]
+
 Specifies the pointer to the list of pin descriptors.
 
 ## -returns

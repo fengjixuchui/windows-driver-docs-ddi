@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_RELEASE_VIRTUAL_STATION
 title: DOT11EXT_RELEASE_VIRTUAL_STATION (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_RELEASE_VIRTUAL_STATION callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extreleasevirtualstation.htm
 tech.root: netvista
-ms.assetid: 39a907ba-18dc-4e74-a35d-dbf96ef47287
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_RELEASE_VIRTUAL_STATION callback"]
 ms.keywords: DOT11EXT_RELEASE_VIRTUAL_STATION, Dot11ExtReleaseVirtualStation, Dot11ExtReleaseVirtualStation callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_3fe2f0cd-336a-4272-8d14-1ab400515de5.xml, netvista.dot11extreleasevirtualstation, wlanihv/Dot11ExtReleaseVirtualStation
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_RELEASE_VIRTUAL_STATION
  - wlanihv/DOT11EXT_RELEASE_VIRTUAL_STATION
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtReleaseVirtualStation
+ - DOT11EXT_RELEASE_VIRTUAL_STATION
 ---
 
 # DOT11EXT_RELEASE_VIRTUAL_STATION callback
@@ -54,9 +52,9 @@ api_name:
 
 ## -parameters
 
-### -param hDot11PrimaryHandle 
+### -param hDot11PrimaryHandle [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the primary physical wireless LAN (WLAN)
      adapter. This handle value was received as the
      <i>hDot11SvcHandle</i> parameter through a previous call to the
@@ -109,3 +107,4 @@ A call to
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+

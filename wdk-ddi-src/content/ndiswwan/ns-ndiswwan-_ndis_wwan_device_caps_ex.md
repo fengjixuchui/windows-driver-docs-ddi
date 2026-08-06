@@ -4,7 +4,6 @@ title: _NDIS_WWAN_DEVICE_CAPS_EX (ndiswwan.h)
 description: The NDIS_WWAN_DEVICE_CAPS_EX structure represents the capabilities of the MB device.
 old-location: netvista\ndis_wwan_device_caps_ex.htm
 tech.root: netvista
-ms.assetid: FC801FA3-699F-4EE5-BED9-35CA696A5E52
 ms.date: 04/08/2019
 keywords: ["NDIS_WWAN_DEVICE_CAPS_EX structure"]
 ms.keywords: "*PNDIS_WWAN_DEVICE_CAPS_EX, NDIS_WWAN_DEVICE_CAPS_EX, NDIS_WWAN_DEVICE_CAPS_EX structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_DEVICE_CAPS_EX, PNDIS_WWAN_DEVICE_CAPS_EX structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_DEVICE_CAPS_EX, ndiswwan/NDIS_WWAN_DEVICE_CAPS_EX, ndiswwan/PNDIS_WWAN_DEVICE_CAPS_EX, netvista.ndis_wwan_device_caps_ex"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_DEVICE_CAPS_EX
+ - PNDIS_WWAN_DEVICE_CAPS_EX
  - NDIS_WWAN_DEVICE_CAPS_EX
 ---
 
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_DEVICE_CAPS_EX)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field uStatus
 
@@ -171,19 +172,13 @@ The operation failed because the device is in the process of initializing. Retry
 
 ### -field DeviceCaps
 
- 
-
-
-
-
-#### - DeviceCapsEx
 
 A formatted 
      <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_device_caps_ex">WWAN_DEVICE_CAPS_EX</a> structure that has an <b>ExecutorIndex</b> member and Microsoft service extension member added to the existing <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_device_caps">WWAN_DEVICE_CAPS</a> structure.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -200,3 +195,4 @@ A formatted
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_device_caps_ex">WWAN_DEVICE_CAPS_EX</a>
+

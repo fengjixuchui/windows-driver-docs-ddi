@@ -1,15 +1,14 @@
 ---
 UID: NS:d3dkmddi._DXGKARGCB_MAPMDLTOIOMMU
-title: _DXGKARGCB_MAPMDLTOIOMMU (d3dkmddi.h)
-description: Arguments used by the DXGKCB_MAPMDLTOIOMMU callback function.
-ms.assetid: 2dc0bd13-f7d3-44b4-a1da-ee05ff63d832
-ms.date: 10/19/2018
+title: DXGKARGCB_MAPMDLTOIOMMU (d3dkmddi.h)
+description: The DXGKARGCB_MAPMDLTOIOMMU structure contains the arguments used by the DXGKCB_MAPMDLTOIOMMU callback function, to map a memory descriptor list (MDL) to the IOMMU.
+ms.date: 10/13/2021
 keywords: ["DXGKARGCB_MAPMDLTOIOMMU structure"]
 ms.keywords: _DXGKARGCB_MAPMDLTOIOMMU, DXGKARGCB_MAPMDLTOIOMMU, *INOUT_PDXGKARGCB_MAPMDLTOIOMMU
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 10, version 1803 (WDDM 2.4)
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -34,28 +33,29 @@ api_location:
  - d3dkmddi.h
 api_name:
  - _DXGKARGCB_MAPMDLTOIOMMU
-product:
- - Windows
+ - DXGKARGCB_MAPMDLTOIOMMU
 ---
 
-# _DXGKARGCB_MAPMDLTOIOMMU structure
-
+# DXGKARGCB_MAPMDLTOIOMMU structure
 
 ## -description
 
-Arguments used by the [DXGKCB_MAPMDLTOIOMMU](nc-d3dkmddi-dxgkcb_mapmdltoiommu.md) callback function.
+The **DXGKARGCB_MAPMDLTOIOMMU** structure contains the arguments used by the [**DXGKCB_MAPMDLTOIOMMU**](nc-d3dkmddi-dxgkcb_mapmdltoiommu.md) callback function, to map a memory descriptor list (MDL) to the IOMMU.
 
 ## -struct-fields
 
-### -field pMdl
+### -field pMdl [in]
 
 An MDL which must be populated with valid pages. The MDL and the pages it points to must remain unchanged until the corresponding unmap call is made.
 
-### -field hMemoryHandle
+### -field hMemoryHandle [out]
 
-A Dxgkrnl tracking handle for the allocation. This value should be passed to the corresponding [DXGKCB_UNMAPMDLFROMIOMMU](nc-d3dkmddi-dxgkcb_unmapmdlfromiommu.md) function.
+A *Dxgkrnl* tracking handle for the allocation. This value should be passed to the corresponding [**DXGKCB_UNMAPMDLFROMIOMMU**](nc-d3dkmddi-dxgkcb_unmapmdlfromiommu.md) function.
+
+## -remarks
+
+See [IOMMU-based GPU isolation](/windows-hardware/drivers/display/iommu-based-gpu-isolation) for more information.
 
 ## -see-also
 
-[DXGKCB_MAPMDLTOIOMMU](nc-d3dkmddi-dxgkcb_mapmdltoiommu.md)
-
+[**DXGKCB_MAPMDLTOIOMMU**](nc-d3dkmddi-dxgkcb_mapmdltoiommu.md)

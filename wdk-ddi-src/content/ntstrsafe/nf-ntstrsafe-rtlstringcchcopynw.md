@@ -1,10 +1,9 @@
 ---
 UID: NF:ntstrsafe.RtlStringCchCopyNW
 title: RtlStringCchCopyNW function (ntstrsafe.h)
-description: The RtlStringCchCopyNW and RtlStringCchCopyNA functions copy a character-counted string to a buffer while limiting the size of the copied string.
+description: Learn how the RtlStringCchCopyNW and RtlStringCchCopyNA functions copy a character-counted string to a buffer while limiting the size of the copied string.
 old-location: kernel\rtlstringcchcopyn.htm
 tech.root: kernel
-ms.assetid: 86ec1a98-d70f-437c-9c8b-005bf78375ba
 ms.date: 04/30/2018
 keywords: ["RtlStringCchCopyNW function"]
 ms.keywords: RtlStringCchCopyN, RtlStringCchCopyNA, RtlStringCchCopyNW, RtlStringCchCopyNW function [Kernel-Mode Driver Architecture], kernel.rtlstringcchcopyn, ntstrsafe/RtlStringCchCopyNW, safestrings_6ecbc673-80c3-4568-a6e3-96865035bfed.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -40,8 +39,6 @@ api_location:
  - Ntstrsafe.dll
 api_name:
  - RtlStringCchCopyNW
- - RtlStringCchCopyNW
- - RtlStringCchCopyNW
 ---
 
 # RtlStringCchCopyNW function
@@ -53,19 +50,19 @@ The <b>RtlStringCchCopyNW</b> and <b>RtlStringCchCopyNA</b> functions copy a cha
 
 ## -parameters
 
-### -param pszDest 
+### -param pszDest [out]
 
-[out]
+
 A pointer to a caller-supplied buffer that receives the copied string. The string at <i>pszSrc</i>, up to <i>cchSrc</i> characters, is copied to the buffer at <i>pszDest</i> and terminated with a null character.
 
-### -param cchDest 
+### -param cchDest [in]
 
-[in]
+
 The size of the destination buffer, in characters. The maximum number of characters allowed is NTSTRSAFE_MAX_CCH.
 
-### -param pszSrc 
+### -param pszSrc [in]
 
-[in]
+
 A pointer to a caller-supplied, null-terminated string.
 
 ### -param cchToCopy
@@ -188,3 +185,4 @@ For more information about the safe string functions, see <a href="/windows-hard
 
 
 <a href="/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcchcopynexa">RtlStringCchCopyNEx</a>
+

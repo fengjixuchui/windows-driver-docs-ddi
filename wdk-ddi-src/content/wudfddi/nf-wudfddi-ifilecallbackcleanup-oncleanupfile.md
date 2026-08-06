@@ -4,7 +4,6 @@ title: IFileCallbackCleanup::OnCleanupFile (wudfddi.h)
 description: The OnCleanupFile method cancels all I/O requests that a driver has pending in the framework queue.
 old-location: wdf\ifilecallbackcleanup_oncleanupfile.htm
 tech.root: wdf
-ms.assetid: e6dd18f4-725f-4611-ad70-029654cf4375
 ms.date: 02/26/2018
 keywords: ["IFileCallbackCleanup::OnCleanupFile"]
 ms.keywords: IFileCallbackCleanup interface,OnCleanupFile method, IFileCallbackCleanup.OnCleanupFile, IFileCallbackCleanup::OnCleanupFile, OnCleanupFile, OnCleanupFile method, OnCleanupFile method,IFileCallbackCleanup interface, UMDFFileObjectRef_a264918b-dd98-40e8-b644-d39414c2351c.xml, umdf.ifilecallbackcleanup_oncleanupfile, wdf.ifilecallbackcleanup_oncleanupfile, wudfddi/IFileCallbackCleanup::OnCleanupFile
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IFileCallbackCleanup.OnCleanupFile
+ - IFileCallbackCleanup::OnCleanupFile
 ---
 
 # IFileCallbackCleanup::OnCleanupFile
@@ -52,9 +51,9 @@ The <b>OnCleanupFile</b> method cancels all I/O requests that a driver has pendi
 
 ## -parameters
 
-### -param pWdfFileObject 
+### -param pWdfFileObject [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile">IWDFFile</a> interface for the file object that is associated with the device.
 
 ## -remarks
@@ -76,3 +75,4 @@ For information about when the framework calls <b>OnCleanupFile</b>, see <a href
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile">IWDFFile</a>
+

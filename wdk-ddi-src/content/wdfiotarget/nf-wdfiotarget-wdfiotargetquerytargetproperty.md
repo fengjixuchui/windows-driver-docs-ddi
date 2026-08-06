@@ -4,7 +4,6 @@ title: WdfIoTargetQueryTargetProperty function (wdfiotarget.h)
 description: The WdfIoTargetQueryTargetProperty method retrieves a specified device property for a specified I/O target.
 old-location: wdf\wdfiotargetquerytargetproperty.htm
 tech.root: wdf
-ms.assetid: 00987914-9fe2-4245-b463-ef362e31679d
 ms.date: 02/26/2018
 keywords: ["WdfIoTargetQueryTargetProperty function"]
 ms.keywords: DFIOTargetRef_33739a99-4af2-4e90-92e5-b75e785f1c2c.xml, WdfIoTargetQueryTargetProperty, WdfIoTargetQueryTargetProperty method, kmdf.wdfiotargetquerytargetproperty, wdf.wdfiotargetquerytargetproperty, wdfiotarget/WdfIoTargetQueryTargetProperty
@@ -53,29 +52,29 @@ The <b>WdfIoTargetQueryTargetProperty</b> method retrieves a specified device pr
 
 ## -parameters
 
-### -param IoTarget 
+### -param IoTarget [in]
 
-[in]
+
 A handle to a local or remote I/O target object that was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicegetiotarget">WdfDeviceGetIoTarget</a> or <a href="/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetcreate">WdfIoTargetCreate</a>, or from a method that a specialized I/O target supplies.
 
-### -param DeviceProperty 
+### -param DeviceProperty [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-device_registry_property">DEVICE_REGISTRY_PROPERTY</a>-typed value that identifies the device property to be retrieved.
 
-### -param BufferLength 
+### -param BufferLength [in]
 
-[in]
+
 The size, in bytes, of the buffer that <i>PropertyBuffer</i> points to.
 
-### -param PropertyBuffer 
+### -param PropertyBuffer [out, optional]
 
-[out, optional]
+
 A pointer to a caller-allocated buffer that receives the requested device property information. This pointer can be <b>NULL</b> if <i>BufferLength</i> is zero.
 
-### -param ResultLength 
+### -param ResultLength [out]
 
-[out]
+
 A pointer to a location that, on return, contains the size, in bytes, of the information that <b>WdfIoTargetQueryTargetProperty</b> stored in the buffer that <i>PropertyBuffer</i> points to. If <b>WdfIoTargetQueryTargetProperty</b> returns STATUS_BUFFER_TOO_SMALL, this location receives the required buffer size.
 
 ## -returns

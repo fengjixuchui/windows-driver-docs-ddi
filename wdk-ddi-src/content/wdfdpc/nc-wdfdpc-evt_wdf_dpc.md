@@ -4,7 +4,6 @@ title: EVT_WDF_DPC (wdfdpc.h)
 description: A driver's EvtDpcFunc callback function performs driver-defined operations at IRQL = DISPATCH_LEVEL.
 old-location: wdf\evtdpcfunc.htm
 tech.root: wdf
-ms.assetid: b934a0da-0709-4427-bbf2-8d53f9511cf1
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DPC callback function"]
 ms.keywords: DFDpcObjectRef_ed441283-63f3-4ad3-84fc-05fb2404f634.xml, EVT_WDF_DPC, EVT_WDF_DPC callback, EvtDpcFunc, EvtDpcFunc callback function, kmdf.evtdpcfunc, wdf.evtdpcfunc, wdfdpc/EvtDpcFunc
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfdpc.h
 api_name:
- - EvtDpcFunc
+ - EVT_WDF_DPC
 ---
 
 # EVT_WDF_DPC callback function
@@ -52,9 +51,9 @@ A driver's <i>EvtDpcFunc</i> callback function performs driver-defined operation
 
 ## -parameters
 
-### -param Dpc 
+### -param Dpc [in]
 
-[in]
+
 A handle to a framework DPC object.
 
 ## -remarks
@@ -106,3 +105,4 @@ For more information about using <i>EvtDpcFunc</i> callback functions, see <a hr
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdpc/nf-wdfdpc-wdfdpcwdmgetdpc">WdfDpcWdmGetDpc</a>
+

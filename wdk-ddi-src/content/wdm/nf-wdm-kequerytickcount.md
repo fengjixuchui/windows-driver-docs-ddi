@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.KeQueryTickCount
 title: KeQueryTickCount macro (wdm.h)
-description: The KeQueryTickCount routine maintains a count of the interval timer interrupts that have occurred since the system was booted.
+description: Learn how the KeQueryTickCount routine maintains a count of the interval timer interrupts that have occurred since the system was booted.
 old-location: kernel\kequerytickcount.htm
 tech.root: kernel
-ms.assetid: 7cd0ed27-a056-4ed9-8ff4-e917b31b0dd6
 ms.date: 04/30/2018
 keywords: ["KeQueryTickCount macro"]
 ms.keywords: KeQueryTickCount, KeQueryTickCount routine [Kernel-Mode Driver Architecture], k105_a6a22896-6f3e-4e58-b443-4a06ff67b0ce.xml, kernel.kequerytickcount, wdm/KeQueryTickCount
@@ -50,9 +49,9 @@ The <b>KeQueryTickCount</b> routine maintains a count of the interval timer inte
 
 ## -parameters
 
-### -param CurrentCount 
+### -param CurrentCount [out]
 
-[out]
+
 Pointer to the LARGE_INTEGER tick count value on return from <b>KeQueryTickCount</b>.
 
 ## -remarks

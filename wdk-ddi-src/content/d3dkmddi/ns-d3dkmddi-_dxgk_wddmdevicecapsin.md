@@ -3,11 +3,8 @@ UID: NS:d3dkmddi._DXGK_WDDMDEVICECAPSIN
 title: _DXGK_WDDMDEVICECAPSIN
 description: Contains the WDDM version that is supported by the driver after the call to DxgkDdiAddDevice, and before the call to DxgkDdiStartDevice.
 tech.root: display
-ms.assetid: 44896806-4977-4dc8-b71b-5290b6c0f9a1
 ms.date: 04/04/2019
 keywords: ["DXGK_WDDMDEVICECAPSIN structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _DXGK_WDDMDEVICECAPSIN, DXGK_WDDMDEVICECAPSIN,
 req.header: d3dkmddi.h
 req.include-header: 
@@ -37,8 +34,7 @@ api_location:
  - d3dkmddi.h
 api_name:
  - _DXGK_WDDMDEVICECAPSIN
-product:
- - Windows
+ - DXGK_WDDMDEVICECAPSIN
 dev_langs:
  - c++
 ---

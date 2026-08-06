@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d10umddi.PFND3D10DDI_DESTROYELEMENTLAYOUT
 title: PFND3D10DDI_DESTROYELEMENTLAYOUT (d3d10umddi.h)
-description: The DestroyElementLayout function destroys the specified element layout object. The element layout object can be destoyed only if it is not currently bound to a display device.
+description: The DestroyElementLayout function destroys the specified element layout object. The element layout object can be destroyed only if it is not currently bound to a display device.
 old-location: display\destroyelementlayout.htm
-ms.assetid: 8b6a07b5-5358-45d3-af42-84f8a6327535
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_DESTROYELEMENTLAYOUT callback function"]
 ms.keywords: DestroyElementLayout, DestroyElementLayout callback function [Display Devices], PFND3D10DDI_DESTROYELEMENTLAYOUT, PFND3D10DDI_DESTROYELEMENTLAYOUT callback, UserModeDisplayDriverDx10_Functions_7d64849d-bfd1-489c-99d2-de9be6f04ab4.xml, d3d10umddi/DestroyElementLayout, display.destroyelementlayout
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - DestroyElementLayout
+ - PFND3D10DDI_DESTROYELEMENTLAYOUT
 ---
 
 # PFND3D10DDI_DESTROYELEMENTLAYOUT callback function
@@ -46,17 +45,17 @@ api_name:
 
 ## -description
 
-The <b>DestroyElementLayout</b> function destroys the specified element layout object. The element layout object can be destoyed only if it is not currently bound to a display device.
+The <b>DestroyElementLayout</b> function destroys the specified element layout object. The element layout object can be destroyed only if it is not currently bound to a display device.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hElementLayout* [in]
 
@@ -77,3 +76,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

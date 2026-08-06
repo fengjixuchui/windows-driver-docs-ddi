@@ -4,14 +4,13 @@ title: StorPortGetDataInBufferSystemAddress function (storport.h)
 description: Returns the system address for the input data buffer of a SCSI request block (SRB).
 old-location: storage\storportgetdatainbuffersystemaddress.htm
 tech.root: storage
-ms.assetid: 3FA48004-E96A-4ED7-935F-B7F58A74FB1F
 ms.date: 03/29/2018
 keywords: ["StorPortGetDataInBufferSystemAddress function"]
 ms.keywords: StorPortGetDataInBufferSystemAddress, StorPortGetDataInBufferSystemAddress routine [Storage Devices], storage.storportgetdatainbuffersystemaddress, storport/StorPortGetDataInBufferSystemAddress
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -51,20 +50,20 @@ Returns the system address for the input data buffer  of a SCSI request block (S
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param Srb 
+### -param Srb [in]
 
-[in]
+
 The request block to containing the input data buffer.
 
-### -param SystemAddress 
+### -param SystemAddress [out]
 
-[out]
-A pointer to  a an  address  value to receive the system address for the input data buffer in <i>Srb</i>.
+
+A pointer to an address value to receive the system address for the input data buffer in <i>Srb</i>.
 
 ## -returns
 
@@ -115,7 +114,7 @@ The current IRQL is > DISPATCH_LEVEL.
 </dl>
 </td>
 <td width="60%">
-A system address can not be assigned.
+A system address can't be assigned.
 
 </td>
 </tr>

@@ -4,7 +4,6 @@ title: IWDTFSimulatedBatterySystemAction::DisableRealBatteries (wdtfsimulatedbat
 description: Disables real batteries if they are present in the system.
 old-location: dtf\iwdtfsimulatedbatterysystemaction_disablerealbatteries.htm
 tech.root: dtf
-ms.assetid: 8118589c-00ef-4986-b523-b812160a547d
 ms.date: 04/04/2018
 keywords: ["IWDTFSimulatedBatterySystemAction::DisableRealBatteries"]
 ms.keywords: DisableRealBatteries, DisableRealBatteries method [Windows Device Testing Framework], DisableRealBatteries method [Windows Device Testing Framework],IWDTFSimulatedBatterySystemAction interface, IWDTFSimulatedBatterySystemAction interface [Windows Device Testing Framework],DisableRealBatteries method, IWDTFSimulatedBatterySystemAction.DisableRealBatteries, IWDTFSimulatedBatterySystemAction::DisableRealBatteries, dtf.iwdtfsimulatedbatterysystemaction_disablerealbatteries, wdtfsimulatedbatterysystemaction/IWDTFSimulatedBatterySystemAction::DisableRealBatteries
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdtfsimulatedbatterysystemaction.h
 api_name:
- - IWDTFSimulatedBatterySystemAction.DisableRealBatteries
+ - IWDTFSimulatedBatterySystemAction::DisableRealBatteries
 ---
 
 # IWDTFSimulatedBatterySystemAction::DisableRealBatteries
@@ -58,14 +57,11 @@ Use this method to disable real batteries if they are present in the
 
 ## -parameters
 
-### -param pbSuccess 
+### -param pbSuccess [out, retval]
 
-[out, retval]
+
 
 ## -returns
 
 If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
 
-## -see-also
-
-<a href="/windows-hardware/drivers/ddi/index">IWDTFSimulatedBatterySystemAction</a>

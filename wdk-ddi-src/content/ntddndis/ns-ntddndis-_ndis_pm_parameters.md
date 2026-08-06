@@ -4,7 +4,6 @@ title: _NDIS_PM_PARAMETERS (ntddndis.h)
 description: The NDIS_PM_PARAMETERS structure specifies the current or new power management hardware capabilities that are enabled for a network adapter.
 old-location: netvista\ndis_pm_parameters.htm
 tech.root: netvista
-ms.assetid: 7747645c-398f-434e-9f0c-21b6d3c7d963
 ms.date: 05/02/2018
 keywords: ["NDIS_PM_PARAMETERS structure"]
 ms.keywords: "*PNDIS_PM_PARAMETERS, NDIS_PM_PARAMETERS, NDIS_PM_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_PM_PARAMETERS, PNDIS_PM_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_PM_PARAMETERS, miniport_power_management_ref_dc82d32a-ee0e-4167-b322-f0b91ece8002.xml, netvista.ndis_pm_parameters, ntddndis/NDIS_PM_PARAMETERS, ntddndis/PNDIS_PM_PARAMETERS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_PM_PARAMETERS
+ - PNDIS_PM_PARAMETERS
  - NDIS_PM_PARAMETERS
 ---
 
@@ -57,7 +58,7 @@ The <b>NDIS_PM_PARAMETERS</b> structure specifies the current or new power manag
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_PM_PARAMETERS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_PM_PARAMETERS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_PM_PARAMETERS</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
 
@@ -65,7 +66,7 @@ The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJ
 
 Added various changes for NDIS 6.30.
 
-Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_PM_CAPABILITIES_REVISION_2.
+Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_PM_PARAMETERS_REVISION_2.
 
 
 
@@ -73,7 +74,7 @@ Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_PM_CAPABILITIES_REVISION_2.
 
 Original version for NDIS 6.20.
 
-Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_PM_CAPABILITIES_REVISION_1.
+Set the <b>Size</b> member to NDIS_SIZEOF_NDIS_PM_PARAMETERS_REVISION_1.
 
 ### -field EnabledWoLPacketPatterns
 
@@ -357,7 +358,7 @@ An overlying driver should not try to enable capabilities that a network adapter
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -374,3 +375,4 @@ An overlying driver should not try to enable capabilities that a network adapter
 
 
 <a href="/windows-hardware/drivers/network/oid-pm-parameters">OID_PM_PARAMETERS</a>
+

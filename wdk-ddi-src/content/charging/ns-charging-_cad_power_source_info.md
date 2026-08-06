@@ -1,11 +1,10 @@
 ---
 UID: NS:charging._CAD_POWER_SOURCE_INFO
 title: _CAD_POWER_SOURCE_INFO (charging.h)
-description: This structure is for internal use only.
+description: "Microsoft reserves the CAD_POWER_SOURCE_INFO structure for internal use only. Don't use this structure in your code."
 old-location: battery\cad_power_source_info.htm
 tech.root: battery
-ms.assetid: FF204AC6-0D01-4C19-A852-0CC12095C43C
-ms.date: 02/15/2018
+ms.date: 07/25/2023
 keywords: ["CAD_POWER_SOURCE_INFO structure"]
 ms.keywords: "*PCAD_POWER_SOURCE_INFO, CAD_POWER_SOURCE_INFO, CAD_POWER_SOURCE_INFO structure [Battery Devices], _CAD_POWER_SOURCE_INFO, battery.cad_power_source_info, charging/BATTERY_INFORMATION"
 req.header: charging.h
@@ -42,11 +41,12 @@ api_type:
 api_location:
  - Charging.h
 api_name:
- - BATTERY_INFORMATION
+ - _CAD_POWER_SOURCE_INFO
+ - PCAD_POWER_SOURCE_INFO
+ - CAD_POWER_SOURCE_INFO
 ---
 
 # _CAD_POWER_SOURCE_INFO structure
-
 
 ## -description
 
@@ -54,3 +54,12 @@ This structure is for internal use only.
 
 ## -struct-fields
 
+### -field SourceId
+
+### -field Version
+
+### -field VaData[1]
+
+## -see-also
+
+[**charging.h**](index.md)

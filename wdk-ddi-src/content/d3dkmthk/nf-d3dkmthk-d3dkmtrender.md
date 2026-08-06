@@ -3,14 +3,13 @@ UID: NF:d3dkmthk.D3DKMTRender
 title: D3DKMTRender function (d3dkmthk.h)
 description: The D3DKMTRender function submits the current command buffer to the Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys).
 old-location: display\d3dkmtrender.htm
-ms.assetid: 8720db3f-aafc-4657-a0cd-3068760855a3
 ms.date: 05/10/2018
 keywords: ["D3DKMTRender function"]
 ms.keywords: D3DKMTRender, D3DKMTRender function [Display Devices], OpenGL_Functions_d24fbe14-3271-47f8-9268-8946b599b32a.xml, d3dkmthk/D3DKMTRender, display.d3dkmtrender
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -53,7 +52,7 @@ The <b>D3DKMTRender</b> function submits the current command buffer to the Micro
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in, out]
 

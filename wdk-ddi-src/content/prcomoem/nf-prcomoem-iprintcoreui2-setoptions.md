@@ -4,7 +4,6 @@ title: IPrintCoreUI2::SetOptions (prcomoem.h)
 description: The IPrintCoreUI2::SetOptions method sets the driver's feature settings.
 old-location: print\iprintcoreui2_setoptions.htm
 tech.root: print
-ms.assetid: b608e331-6b13-4b27-8bb1-00a7c2fef281
 ms.date: 04/20/2018
 keywords: ["IPrintCoreUI2::SetOptions"]
 ms.keywords: IPrintCoreUI2 interface [Print Devices],SetOptions method, IPrintCoreUI2.SetOptions, IPrintCoreUI2::SetOptions, SetOptions, SetOptions method [Print Devices], SetOptions method [Print Devices],IPrintCoreUI2 interface, prcomoem/IPrintCoreUI2::SetOptions, print.iprintcoreui2_setoptions, print_unidrv-pscript_ui_cbe90030-cfa8-4055-967e-86c5870b7353.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintCoreUI2.SetOptions
+ - IPrintCoreUI2::SetOptions
 ---
 
 # IPrintCoreUI2::SetOptions
@@ -50,14 +49,14 @@ The <code>IPrintCoreUI2::SetOptions</code> method sets the driver's feature sett
 
 ## -parameters
 
-### -param poemuiobj 
+### -param poemuiobj [in]
 
-[in]
+
 Pointer to the current context, an <a href="/windows-hardware/drivers/ddi/printoem/ns-printoem-_oemuiobj">OEMUIOBJ</a> structure.
 
-### -param dwFlags 
+### -param dwFlags [in]
 
-[in]
+
 Specifies whether the core driver is to resolve conflicts. This parameter must be set to one of the following values:
 
 <table>
@@ -87,19 +86,19 @@ Ask core driver to resolve any conflict that arises.
 </tr>
 </table>
 
-### -param pmszFeatureOptionBuf 
+### -param pmszFeatureOptionBuf [in]
 
-[in]
+
 Pointer to a caller-supplied buffer containing a list of feature/option keyword pairs in MULTI_SZ format. Each item in this list is separated from the next by a null character, and the list is terminated with two null characters.
 
-### -param cbIn 
+### -param cbIn [in]
 
-[in]
+
 Specifies the size, in bytes, of the buffer pointed to by <i>pmszFeatureOptionBuf</i>. This size includes the last MULTI_SZ null character.
 
-### -param pdwResult 
+### -param pdwResult [out]
 
-[out]
+
 Pointer to a memory location that receives one of the following values. These constants are defined in printoem.h.
 
 <table>
@@ -235,3 +234,4 @@ For more information, see <a href="/windows-hardware/drivers/print/using-getopti
 
 
 <a href="/windows-hardware/drivers/ddi/printoem/ns-printoem-_oemuiobj">OEMUIOBJ</a>
+

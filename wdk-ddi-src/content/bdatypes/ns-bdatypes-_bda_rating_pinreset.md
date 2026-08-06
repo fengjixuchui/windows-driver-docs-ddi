@@ -1,10 +1,9 @@
 ---
 UID: NS:bdatypes._BDA_RATING_PINRESET
 title: _BDA_RATING_PINRESET (bdatypes.h)
-description: 
+description: "Learn more about: _BDA_RATING_PINRESET structure"
 old-location: stream\bda_rating_pinreset.htm
 tech.root: stream
-ms.assetid: 237463EC-3C57-4DCA-9757-870B5F55C584
 ms.date: 04/23/2018
 keywords: ["BDA_RATING_PINRESET structure"]
 ms.keywords: "*PBDA_RATING_PINRESET, BDA_RATING_PINRESET, BDA_RATING_PINRESET structure [Streaming Media Devices], PBDA_RATING_PINRESET, PBDA_RATING_PINRESET structure pointer [Streaming Media Devices], _BDA_RATING_PINRESET, bdatypes/BDA_RATING_PINRESET, bdatypes/PBDA_RATING_PINRESET, stream.bda_rating_pinreset"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Bdatypes.h
 api_name:
+ - _BDA_RATING_PINRESET
+ - PBDA_RATING_PINRESET
  - BDA_RATING_PINRESET
 ---
 

@@ -3,7 +3,6 @@ UID: NF:ringcollection.NetRingCollectionGetFragmentRing
 title: NetRingCollectionGetFragmentRing function (ringcollection.h)
 description: The NetRingCollectionGetFragmentRing gets the fragment ring for a packet queue.
 tech.root: netvista
-ms.assetid: 4A88C04C-0E0C-4B93-80CB-4C510802F7CC
 ms.date: 02/06/2019
 keywords: ["NetRingCollectionGetFragmentRing function"]
 ms.keywords: NetRingCollectionGetFragmentRing
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.29
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -30,13 +29,13 @@ targetos: Windows
 f1_keywords:
  - NetRingCollectionGetFragmentRing
  - ringcollection/NetRingCollectionGetFragmentRing
-topictype:
+topic_type:
  - apiref
-apitype:
+api_type:
  - HeaderDef
-apilocation:
+api_location:
  - ringcollection.h
-apiname:
+api_name:
  - NetRingCollectionGetFragmentRing
 ---
 

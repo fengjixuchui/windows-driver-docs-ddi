@@ -3,7 +3,6 @@ UID: NS:eventdetectoroemadapter.__MIDL___MIDL_itf_eventdetectoroemadapter_0000_0
 title: SOUNDDETECTOR_PATTERNHEADER
 description: The SOUNDDETECTOR_PATTERNHEADER structure specifies the size and the format of the pattern data for the sound detector.
 tech.root: audio
-ms.assetid: 1aa2d821-a1f6-46ca-be4c-9c8f280f9fa0
 ms.date: 03/22/2019
 keywords: ["SOUNDDETECTOR_PATTERNHEADER structure"]
 ms.keywords: SOUNDDETECTOR_PATTERNHEADER, SOUNDDETECTOR_PATTERNHEADER,
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - eventdetectoroemadapter.h
 api_name:
+ - __MIDL___MIDL_itf_eventdetectoroemadapter_0000_0000_0001
  - SOUNDDETECTOR_PATTERNHEADER
-product:
- - Windows
 ---
 
 # SOUNDDETECTOR_PATTERNHEADER structure (eventdetectoroemadapter.h)
@@ -65,3 +63,4 @@ This structure is the part of the Event Detector OEM interface to be used for ha
 - [eventdetectoroemadapter](../eventdetectoroemadapter/index.md)
 
 - [Audio](../_audio/index.md)
+

@@ -1,9 +1,8 @@
 ---
 UID: NC:d3dkmthk.PFND3DKMT_OUTPUTDUPLPRESENT
 title: PFND3DKMT_OUTPUTDUPLPRESENT (d3dkmthk.h)
-description: Submits a present command from the Desktop Duplication API swapchain of the Desktop Window Manager (DWM) to the Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys).
+description: PFND3DKMT_OUTPUTDUPLPRESENT issues a present command from the Desktop Duplication API swapchain of the Desktop Window Manager to the DirectX kernel subsystem.
 old-location: display\d3dkmtoutputduplpresent.htm
-ms.assetid: d5846165-f58d-44a8-9242-02a2f85d3a8d
 ms.date: 05/10/2018
 keywords: ["PFND3DKMT_OUTPUTDUPLPRESENT callback function"]
 ms.keywords: D3DKMTOutputDuplPresent, D3DKMTOutputDuplPresent callback function [Display Devices], PFND3DKMT_OUTPUTDUPLPRESENT, PFND3DKMT_OUTPUTDUPLPRESENT callback, d3dkmthk/D3DKMTOutputDuplPresent, display.d3dkmtoutputduplpresent
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
- - D3DKMTOutputDuplPresent
+ - PFND3DKMT_OUTPUTDUPLPRESENT
 ---
 
 # PFND3DKMT_OUTPUTDUPLPRESENT callback function
@@ -50,11 +49,11 @@ Submits a present command from the <a href="/windows/desktop/direct3ddxgi/deskto
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in]
 
 *pData* 
 
-[in] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_outputduplpresent">D3DKMT_OUTPUTDUPLPRESENT</a> structure that describes parameters for the present operation.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_outputduplpresent">D3DKMT_OUTPUTDUPLPRESENT</a> structure that describes parameters for the present operation.
 
 ## -returns
 
@@ -76,3 +75,4 @@ Returns one of the following values:
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_outputduplpresent">D3DKMT_OUTPUTDUPLPRESENT</a>
+

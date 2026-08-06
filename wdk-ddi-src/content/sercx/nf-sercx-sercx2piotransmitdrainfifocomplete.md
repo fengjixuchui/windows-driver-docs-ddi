@@ -4,7 +4,6 @@ title: SerCx2PioTransmitDrainFifoComplete function (sercx.h)
 description: The SerCx2PioTransmitDrainFifoComplete method notifies version 2 of the serial framework extension (SerCx2) that the serial controller driver has finished draining the data from the transmit FIFO in the serial controller hardware.
 old-location: serports\sercx2piotransmitdrainfifocomplete.htm
 tech.root: serports
-ms.assetid: A1AF3D23-D0F4-44C0-A1B1-E7775FCA3699
 ms.date: 04/23/2018
 keywords: ["SerCx2PioTransmitDrainFifoComplete function"]
 ms.keywords: 2/SerCx2PioTransmitDrainFifoComplete, SerCx2PioTransmitDrainFifoComplete, SerCx2PioTransmitDrainFifoComplete method [Serial Ports], serports.sercx2piotransmitdrainfifocomplete
@@ -50,9 +49,9 @@ The <b>SerCx2PioTransmitDrainFifoComplete</b> method notifies version 2 of the s
 
 ## -parameters
 
-### -param PioTransmit 
+### -param PioTransmit [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitcreate">SerCx2PioTransmitCreate</a> method to create this object.
 
 ## -remarks

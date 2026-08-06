@@ -4,7 +4,6 @@ title: IKsClockPropertySet::KsGetCorrelatedPhysicalTime (ksproxy.h)
 description: The KsGetCorrelatedPhysicalTime method retrieves the physical time and the correlated system time from the underlying clock.
 old-location: stream\iksclockpropertyset_ksgetcorrelatedphysicaltime.htm
 tech.root: stream
-ms.assetid: d9babef4-c41a-4458-8072-eb562ef4d997
 ms.date: 04/23/2018
 keywords: ["IKsClockPropertySet::KsGetCorrelatedPhysicalTime"]
 ms.keywords: IKsClockPropertySet interface [Streaming Media Devices],KsGetCorrelatedPhysicalTime method, IKsClockPropertySet.KsGetCorrelatedPhysicalTime, IKsClockPropertySet::KsGetCorrelatedPhysicalTime, KsGetCorrelatedPhysicalTime, KsGetCorrelatedPhysicalTime method [Streaming Media Devices], KsGetCorrelatedPhysicalTime method [Streaming Media Devices],IKsClockPropertySet interface, ksproxy/IKsClockPropertySet::KsGetCorrelatedPhysicalTime, ksproxy_bab50759-78be-43b2-8346-2e1c88529899.xml, stream.iksclockpropertyset_ksgetcorrelatedphysicaltime
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ksproxy.h
 api_name:
- - IKsClockPropertySet.KsGetCorrelatedPhysicalTime
+ - IKsClockPropertySet::KsGetCorrelatedPhysicalTime
 ---
 
 # IKsClockPropertySet::KsGetCorrelatedPhysicalTime
@@ -50,9 +49,9 @@ The <b>KsGetCorrelatedPhysicalTime</b> method retrieves the physical time and th
 
 ## -parameters
 
-### -param CorrelatedTime 
+### -param CorrelatedTime [out]
 
-[out]
+
 Pointer to a variable that receives a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-kscorrelated_time">KSCORRELATED_TIME</a> structure that contains the physical clock time along with the correlated system time.
 
 ## -returns
@@ -74,3 +73,4 @@ The proxy uses the <a href="/windows-hardware/drivers/stream/ksproperty-clock-co
 
 
 <a href="/windows-hardware/drivers/stream/ksproperty-clock-correlatedphysicaltime">KSPROPERTY_CLOCK_CORRELATEDPHYSICALTIME</a>
+

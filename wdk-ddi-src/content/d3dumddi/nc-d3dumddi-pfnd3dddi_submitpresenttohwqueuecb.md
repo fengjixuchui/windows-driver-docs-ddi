@@ -1,8 +1,7 @@
 ---
 UID: NC:d3dumddi.PFND3DDDI_SUBMITPRESENTTOHWQUEUECB
 title: PFND3DDDI_SUBMITPRESENTTOHWQUEUECB (d3dumddi.h)
-description: pfnSubmitPresentToHwQueueCb is invoked by user mode drivers to submit a Blt Present operation to a hardware queue.
-ms.assetid: 78923ae5-c07f-465c-a171-7da4743ce4bc
+description: The PFND3DDDI_SUBMITPRESENTTOHWQUEUECB callback function is invoked by user mode drivers  to submit a Blt Present operation to a hardware queue.
 ms.date: 10/19/2018
 keywords: ["PFND3DDDI_SUBMITPRESENTTOHWQUEUECB callback function"]
 req.header: d3dumddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3dumddi.h
 api_name:
  - PFND3DDDI_SUBMITPRESENTTOHWQUEUECB
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -55,7 +52,7 @@ pfnSubmitPresentToHwQueueCb is invoked by user mode drivers to submit a Blt Pres
 
 A handle to a device.
 
-### -param Arg2
+### -param unnamedParam2
 
 Pointer to a [D3DDDICB_SUBMITPRESENTTOHWQUEUE](ns-d3dumddi-_d3dddicb_submitpresenttohwqueue.md) structure.
 

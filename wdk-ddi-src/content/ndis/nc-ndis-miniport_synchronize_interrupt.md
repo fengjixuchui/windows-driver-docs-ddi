@@ -4,7 +4,6 @@ title: MINIPORT_SYNCHRONIZE_INTERRUPT (ndis.h)
 description: A miniport driver must provide a MiniportSynchronizeInterrupt handler if any driver function that runs at less than DIRQL shares resources with the MiniportInterrupt function.
 old-location: netvista\miniportsynchronizeinterrupt.htm
 tech.root: netvista
-ms.assetid: aac1ff91-76aa-46a0-8e8a-85b9f8c3323c
 ms.date: 05/02/2018
 keywords: ["MINIPORT_SYNCHRONIZE_INTERRUPT callback function"]
 ms.keywords: "(*MINIPORT_SYNCHRONIZE_INTERRUPT_HANDLER), (*MINIPORT_SYNCHRONIZE_INTERRUPT_HANDLER) callback function [Network Drivers Starting with Windows Vista], MINIPORT_SYNCHRONIZE_INTERRUPT, MINIPORT_SYNCHRONIZE_INTERRUPT callback, MiniportSynchronizeInterrupt, MiniportSynchronizeInterrupt callback function [Network Drivers Starting with Windows Vista], ndis/MiniportSynchronizeInterrupt, ndis_interrupts_miniport_functions_ref_68ebc08d-67f9-42d8-9ade-669dc35a4242.xml, netvista.miniportsynchronizeinterrupt"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - (*MINIPORT_SYNCHRONIZE_INTERRUPT_HANDLER)
+ - MINIPORT_SYNCHRONIZE_INTERRUPT
 ---
 
 # MINIPORT_SYNCHRONIZE_INTERRUPT callback function
@@ -57,9 +56,9 @@ For message signaled interrupts, the miniport driver provides a <i>MiniportSynch
 
 ## -parameters
 
-### -param SynchronizeContext 
+### -param SynchronizeContext [in]
 
-[in]
+
 A handle to a context area that is supplied when the miniport driver's 
      <i>MiniportXxx</i> or internal function called the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsynchronizewithinterruptex">
@@ -167,3 +166,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsynchronizewithinterruptex">
    NdisMSynchronizeWithInterruptEx</a>
+

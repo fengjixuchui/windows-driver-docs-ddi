@@ -1,11 +1,9 @@
 ---
 UID: NF:wdm.MmMapMemoryDumpMdlEx
 title: MmMapMemoryDumpMdlEx function
-description: TBD
+description: The MmMapMemoryDumpMdlEx function maps an MDL into a specified virtual address.  
 tech.root: kernel
-ms.assetid: c4a12185-4c6f-43e9-87ba-6dc1b24fa6cf
 ms.date: 03/01/2020
-ms.topic: function
 ms.keywords: MmMapMemoryDumpMdlEx
 req.header: wdm.h
 req.include-header: 
@@ -33,8 +31,6 @@ api_location:
  - wdm.h
 api_name:
  - MmMapMemoryDumpMdlEx
-product:
- - Windows
 f1_keywords:
  - MmMapMemoryDumpMdlEx
  - wdm/MmMapMemoryDumpMdlEx
@@ -42,10 +38,11 @@ f1_keywords:
 
 # MmMapMemoryDumpMdlEx function
 
-
 ## -description
 
-Maps an MDL into a specified virtual address.  Only 1 MDL can be mapped at a time. For use by crash dump, hibernate and live dump routines only.
+The **MmMapMemoryDumpMdlEx** function maps an MDL into a specified virtual address.  
+
+Only one MDL can be mapped at a time. For use by crash dump, hibernate and live dump routines only.
 
 ## -parameters
 
@@ -63,7 +60,7 @@ Supplies the MDL to map.
 
 ### -param Flags
 
-Supplies MM_DUMP_MAP_INVALIDATE to indicate the mapping PTEs should be zeroed and the local TB flushed.
+Supplies **MM_DUMP_MAP_INVALIDATE** to indicate the mapping PTEs should be zeroed and the local TB flushed.
 
 ## -returns
 
@@ -72,4 +69,3 @@ This function returns NTSTATUS.
 ## -remarks
 
 ## -see-also
-

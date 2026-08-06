@@ -4,7 +4,6 @@ title: HidP_UsageListDifference function (hidpi.h)
 description: The HidP_UsageListDifference routine returns the differences between two arrays of HID usages.
 old-location: hid\hidp_usagelistdifference.htm
 tech.root: hid
-ms.assetid: 332ef453-6f9d-4cdd-a8c7-766158e540d8
 ms.date: 04/30/2018
 keywords: ["HidP_UsageListDifference function"]
 ms.keywords: HidP_UsageListDifference, HidP_UsageListDifference routine [Human Input Devices], hid.hidp_usagelistdifference, hidfunc_91cbddd2-90f6-4784-9f1d-6d9bf8be35d3.xml, hidpi/HidP_UsageListDifference
@@ -51,29 +50,29 @@ The <b>HidP_UsageListDifference</b> routine returns the differences between two 
 
 ## -parameters
 
-### -param PreviousUsageList 
+### -param PreviousUsageList [in]
 
-[in]
+
 Pointer to a list of usages that the routine compares with the list of usages in <i>CurrentUsageList</i>.
 
-### -param CurrentUsageList 
+### -param CurrentUsageList [in]
 
-[in]
+
 Pointer to a list of usages that the routine compares with the list of usages in <i>PreviousUsageList</i>.
 
-### -param BreakUsageList 
+### -param BreakUsageList [out]
 
-[out]
+
 Pointer to a caller-allocated buffer that, on return, contains a list of the usages that are in <i>PreviousUsageList</i>, but not in <i>CurrentUsageList</i>.
 
-### -param MakeUsageList 
+### -param MakeUsageList [out]
 
-[out]
+
 Pointer to a caller-allocated buffer that, on return, contains a list of the usages that are in <i>CurrentUsageList</i>, but not in <i>PreviousUsageList</i>.
 
-### -param UsageListLength 
+### -param UsageListLength [in]
 
-[in]
+
 Specifies the length, in array elements, of the buffers provided at <i>CurrentUsageList </i>and <i>PreviousUsageList</i>.
 
 ## -returns
@@ -92,4 +91,4 @@ For more information, see <a href="/windows-hardware/drivers/hid/hid-collections
 
 ## -see-also
 
-<a href="/previous-versions/windows/hardware/drivers/ff539824(v=vs.85)">HidP_UsageAndPageListDifference</a>
+<a href="/windows-hardware/drivers/ddi/hidpi/nf-hidpi-hidp_usageandpagelistdifference">HidP_UsageAndPageListDifference</a>

@@ -4,7 +4,6 @@ title: _SM_SendRNID_OUT (hbapiwmi.h)
 description: The SM_SendRNID_OUT structure is used to receive output parameters from the SM_SendRNID method.
 old-location: storage\sm_sendrnid_out.htm
 tech.root: storage
-ms.assetid: 177ffc7d-697d-47c5-9692-19cba6734077
 ms.date: 03/29/2018
 keywords: ["SM_SendRNID_OUT structure"]
 ms.keywords: "*PSM_SendRNID_OUT, PSM_SendRNID_OUT, PSM_SendRNID_OUT structure pointer [Storage Devices], SM_SendRNID_OUT, SM_SendRNID_OUT structure [Storage Devices], _SM_SendRNID_OUT, hbapiwmi/PSM_SendRNID_OUT, hbapiwmi/SM_SendRNID_OUT, storage.sm_sendrnid_out, structs-Fibre_9e6a1fff-df92-4d26-af84-b99b9feecbef.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hbapiwmi.h
 api_name:
+ - _SM_SendRNID_OUT
+ - PSM_SendRNID_OUT
  - SM_SendRNID_OUT
 ---
 
@@ -73,3 +74,4 @@ The results of the common transport command.
 ## -remarks
 
 The WMI tool suite generates a declaration of the SM_SendRNID_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.
+

@@ -4,7 +4,6 @@ title: IoReadPartitionTable function (ntddk.h)
 description: The IoReadPartitionTable routine is obsolete and is provided only to support existing drivers.
 old-location: storage\ioreadpartitiontable.htm
 tech.root: storage
-ms.assetid: f87c74c3-fcb1-4358-ade6-6c0afc0020e2
 ms.date: 03/29/2018
 keywords: ["IoReadPartitionTable function"]
 ms.keywords: IoReadPartitionTable, IoReadPartitionTable routine [Storage Devices], ntddk/IoReadPartitionTable, rtns-disk_9a43d91f-cbb5-4747-bfa9-66da170b0864.xml, storage.ioreadpartitiontable
@@ -50,24 +49,24 @@ The <b>IoReadPartitionTable</b> routine is <b>obsolete</b> and is provided only 
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the device object for the disk whose partitions are to be read.
 
-### -param SectorSize 
+### -param SectorSize [in]
 
-[in]
+
 Specifies the size of the sectors on the disk.
 
-### -param ReturnRecognizedPartitions 
+### -param ReturnRecognizedPartitions [in]
 
-[in]
+
 Indicates whether only recognized partitions or all partition entries should be returned.
 
-### -param PartitionBuffer 
+### -param PartitionBuffer [out]
 
-[out]
+
 Pointer to an uninitialized address. If successful, <b>IoReadPartitionTable</b> allocates the memory for this buffer from nonpaged pool and returns the drive layout information in it.
 
 ## -returns

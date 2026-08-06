@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient4.StartProcessServer
 title: IDebugClient4::StartProcessServer (dbgeng.h)
-description: The StartProcessServer method starts a process server.
+description: The StartProcessServer method starts a process server. This method belongs to the IDebugClient4 interface.
 old-location: debugger\startprocessserver.htm
 tech.root: debugger
-ms.assetid: dc0bade2-7781-4c08-aea5-0ff4809d3321
 ms.date: 05/03/2018
 keywords: ["IDebugClient4::StartProcessServer"]
 ms.keywords: IDebugClient interface [Windows Debugging],StartProcessServer method, IDebugClient2 interface [Windows Debugging],StartProcessServer method, IDebugClient2::StartProcessServer, IDebugClient3 interface [Windows Debugging],StartProcessServer method, IDebugClient3::StartProcessServer, IDebugClient4 interface [Windows Debugging],StartProcessServer method, IDebugClient4.StartProcessServer, IDebugClient4::StartProcessServer, IDebugClient5 interface [Windows Debugging],StartProcessServer method, IDebugClient5::StartProcessServer, IDebugClient::StartProcessServer, IDebugClient_de137b80-ffd7-4399-85a3-50b3c870c28c.xml, StartProcessServer, StartProcessServer method [Windows Debugging], StartProcessServer method [Windows Debugging],IDebugClient interface, StartProcessServer method [Windows Debugging],IDebugClient2 interface, StartProcessServer method [Windows Debugging],IDebugClient3 interface, StartProcessServer method [Windows Debugging],IDebugClient4 interface, StartProcessServer method [Windows Debugging],IDebugClient5 interface, dbgeng/IDebugClient2::StartProcessServer, dbgeng/IDebugClient3::StartProcessServer, dbgeng/IDebugClient4::StartProcessServer, dbgeng/IDebugClient5::StartProcessServer, dbgeng/IDebugClient::StartProcessServer, debugger.startprocessserver
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.StartProcessServer
- - IDebugClient2.StartProcessServer
- - IDebugClient3.StartProcessServer
- - IDebugClient4.StartProcessServer
- - IDebugClient5.StartProcessServer
+ - IDebugClient4::StartProcessServer
 ---
 
 # IDebugClient4::StartProcessServer
@@ -54,19 +49,19 @@ The <b>StartProcessServer</b> method starts a process server.
 
 ## -parameters
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies the class of the targets that will be available through the process server.  This must be set to DEBUG_CLASS_USER_WINDOWS.
 
-### -param Options 
+### -param Options [in]
 
-[in]
+
 Specifies the connections options for this process server.  These are the same options given to the <b>-t</b> option of the DbgSrv command line.  For details on the syntax of this string, see <a href="/windows-hardware/drivers/debugger/activating-a-process-server">Activating a Process Server</a>.
 
-### -param Reserved 
+### -param Reserved [in, optional]
 
-[in, optional]
+
 Set to <b>NULL</b>.
 
 ## -returns
@@ -134,3 +129,4 @@ For more information about process servers and remote debugging, see <a href="/w
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-waitforprocessserverend">WaitForProcessServerEnd</a>
+

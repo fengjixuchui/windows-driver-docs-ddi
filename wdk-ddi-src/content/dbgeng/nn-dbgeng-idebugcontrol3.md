@@ -4,7 +4,6 @@ title: IDebugControl3 (dbgeng.h)
 description: IDebugControl3 interface
 old-location: debugger\idebugcontrol3.htm
 tech.root: debugger
-ms.assetid: 95e714b4-4167-41a1-ab2c-b088dbaf5fe2
 ms.date: 05/03/2018
 keywords: ["IDebugControl3 interface"]
 ms.keywords: IDebugControl3, IDebugControl3 interface [Windows Debugging], IDebugControl3 interface [Windows Debugging],described, dbgeng/IDebugControl3, debugger.idebugcontrol3
@@ -48,10 +47,8 @@ api_name:
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugControl3</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol2">IDebugControl2</a>. <b>IDebugControl3</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IDebugControl3</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol2">IDebugControl2</a>. <b>IDebugControl3</b> also has these types of members:
+
 
 ## -see-also
 

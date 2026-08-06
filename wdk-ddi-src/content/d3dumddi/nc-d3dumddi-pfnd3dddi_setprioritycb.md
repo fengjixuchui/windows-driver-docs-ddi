@@ -4,7 +4,6 @@ title: PFND3DDDI_SETPRIORITYCB (d3dumddi.h)
 description: The pfnSetPriorityCb function sets the priority level of a resource or list of allocations.
 old-location: display\pfnsetprioritycb.htm
 tech.root: display
-ms.assetid: 1812cb0f-9232-4813-9c7b-74c9fa4d03cf
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETPRIORITYCB callback function"]
 ms.keywords: D3Druntime_Functions_4bd6f90d-e958-43cc-8267-36d4d0448096.xml, PFND3DDDI_SETPRIORITYCB, PFND3DDDI_SETPRIORITYCB callback, d3dumddi/pfnSetPriorityCb, display.pfnsetprioritycb, pfnSetPriorityCb, pfnSetPriorityCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnSetPriorityCb
-product:
- - Windows
+ - PFND3DDDI_SETPRIORITYCB
 ---
 
 # PFND3DDDI_SETPRIORITYCB callback function
@@ -56,7 +53,7 @@ The <i>pfnSetPriorityCb</i> function sets the priority level of a resource or li
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -130,3 +127,4 @@ HRESULT CD3DContext::SetPriority(CONST D3DDDIARG_SETPRIORITY* pSetPriority) {
 
 
 <a href="/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi_ddi_base_functions">SetResourcePriorityDXGI</a>
+

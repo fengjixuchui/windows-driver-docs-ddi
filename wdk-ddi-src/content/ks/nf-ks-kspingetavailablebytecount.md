@@ -4,7 +4,6 @@ title: KsPinGetAvailableByteCount function (ks.h)
 description: The KsPinGetAvailableByteCount routine outputs the number of bytes of input data ahead of the leading edge and the number of bytes of output buffer ahead of the leading edge, both for the queue of a caller-specified pin.
 old-location: stream\kspingetavailablebytecount.htm
 tech.root: stream
-ms.assetid: e3669f11-7284-4f65-b814-624337e7fa7f
 ms.date: 04/23/2018
 keywords: ["KsPinGetAvailableByteCount function"]
 ms.keywords: KsPinGetAvailableByteCount, KsPinGetAvailableByteCount routine [Streaming Media Devices], avfunc_2ba6a7f8-59b4-45bf-989a-97f8a494b4bc.xml, ks/KsPinGetAvailableByteCount, stream.kspingetavailablebytecount
@@ -51,24 +50,24 @@ The<b> KsPinGetAvailableByteCount</b> routine outputs the number of bytes of inp
 
 ## -parameters
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a> structure for which to calculate these queue parameters.
 
-### -param InputDataBytes 
+### -param InputDataBytes [out, optional]
 
-[out, optional]
+
 A pointer to a LONG value in which the routine returns the number of input data bytes ahead of the leading edge. Caller sets to <b>NULL</b> if this value is not requested.
 
-### -param OutputBufferBytes 
+### -param OutputBufferBytes [out, optional]
 
-[out, optional]
+
 A pointer to  a LONG value in which the routine returns the number of output buffer bytes ahead of the leading edge. Caller sets to <b>NULL</b> if this value is not requested.
 
 ## -returns
 
-Returns STATUS_SUCCESS if the requested count(s) have been retrieved. A nonsuccessful return status indicates that <i>Pin</i> does not have an associated queue.
+Returns STATUS_SUCCESS if the requested count(s) have been retrieved. An unsuccessful return status indicates that <i>Pin</i> does not have an associated queue.
 
 ## -remarks
 

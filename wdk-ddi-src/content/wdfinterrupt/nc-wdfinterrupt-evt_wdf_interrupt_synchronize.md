@@ -4,7 +4,6 @@ title: EVT_WDF_INTERRUPT_SYNCHRONIZE (wdfinterrupt.h)
 description: A driver's EvtInterruptSynchronize event callback function performs operations that must be synchronized with an EvtInterruptIsr callback function.
 old-location: wdf\evtinterruptsynchronize.htm
 tech.root: wdf
-ms.assetid: ac73b23d-7742-43a4-8950-b301bd0ba330
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_INTERRUPT_SYNCHRONIZE callback function"]
 ms.keywords: DFInterruptObjectRef_4310d770-645e-48c8-bd33-b9edcc8cb667.xml, EVT_WDF_INTERRUPT_SYNCHRONIZE, EVT_WDF_INTERRUPT_SYNCHRONIZE callback, EvtInterruptSynchronize, EvtInterruptSynchronize callback function, kmdf.evtinterruptsynchronize, wdf.evtinterruptsynchronize, wdfinterrupt/EvtInterruptSynchronize
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfinterrupt.h
 api_name:
- - EvtInterruptSynchronize
+ - EVT_WDF_INTERRUPT_SYNCHRONIZE
 ---
 
 # EVT_WDF_INTERRUPT_SYNCHRONIZE callback function
@@ -52,14 +51,14 @@ A driver's <i>EvtInterruptSynchronize</i> event callback function performs opera
 
 ## -parameters
 
-### -param Interrupt 
+### -param Interrupt [in]
 
-[in]
+
 A handle to a framework interrupt object.
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Driver-supplied information that the driver specifies when it calls <a href="/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdfinterruptsynchronize">WdfInterruptSynchronize</a>.
 
 ## -returns
@@ -93,3 +92,4 @@ For more information about handling interrupts in framework-based drivers, see <
 
 
 <a href="/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdfinterruptsynchronize">WdfInterruptSynchronize</a>
+

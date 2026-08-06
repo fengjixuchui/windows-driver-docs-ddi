@@ -4,7 +4,6 @@ title: FwpsCalloutUnregisterById0 function (fwpsk.h)
 description: The FwpsCalloutUnregisterById0 function unregisters a callout from the filter engine.Note  FwpsCalloutUnregisterById0 is a specific version of FwpsCalloutUnregisterById.
 old-location: netvista\fwpscalloutunregisterbyid0.htm
 tech.root: netvista
-ms.assetid: 81e7e704-c387-48a0-a222-cae751bba1d3
 ms.date: 05/02/2018
 keywords: ["FwpsCalloutUnregisterById0 function"]
 ms.keywords: FwpsCalloutUnregisterById0, FwpsCalloutUnregisterById0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsCalloutUnregisterById0, netvista.fwpscalloutunregisterbyid0, wfp_ref_2_funct_3_fwps_C_7bfae7f1-e5f2-4361-bbc0-6c5fef63a267.xml
@@ -53,9 +52,9 @@ The
 
 ## -parameters
 
-### -param calloutId 
+### -param calloutId [in]
 
-[in]
+
 The run-time identifier for the callout that is being unregistered from the filter engine. This
      must be the run-time identifier that was returned when the callout driver called either the 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister0">FwpsCalloutRegister0</a> or 

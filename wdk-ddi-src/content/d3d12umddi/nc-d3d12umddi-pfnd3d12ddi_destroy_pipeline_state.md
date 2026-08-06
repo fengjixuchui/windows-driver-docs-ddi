@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_DESTROY_PIPELINE_STATE
 title: PFND3D12DDI_DESTROY_PIPELINE_STATE (d3d12umddi.h)
 description: Destroys the pipeline state.
-ms.assetid: 0cb38426-c17a-4d72-b47b-b8b1afcd5588
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_DESTROY_PIPELINE_STATE callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_DESTROY_PIPELINE_STATE
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ Destroys the pipeline state.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 A pipeline state handle.
 

@@ -1,10 +1,9 @@
 ---
 UID: NE:rilapitypes.RILCARDAPPADDEDPARAMMASK
 title: RILCARDAPPADDEDPARAMMASK (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this enumeration in your code. Microsoft reserves the RILCARDAPPADDEDPARAMMASK enumeration for internal use only."
 old-location: netvista\rilcardappaddedparammask.htm
 tech.root: netvista
-ms.assetid: 6097b40d-2f86-4f87-bf57-191371ec943d
 ms.date: 05/02/2018
 keywords: ["RILCARDAPPADDEDPARAMMASK enumeration"]
 ms.keywords: RILCARDAPPADDEDPARAMMASK, RILCARDAPPADDEDPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_CARDAPPADDED_ALL, RIL_PARAM_CARDAPPADDED_UICCAPPINFO, netvista.rilcardappaddedparammask, ntddrilapitypes/RILCARDAPPADDEDPARAMMASK, ntddrilapitypes/RIL_PARAM_CARDAPPADDED_ALL, ntddrilapitypes/RIL_PARAM_CARDAPPADDED_UICCAPPINFO

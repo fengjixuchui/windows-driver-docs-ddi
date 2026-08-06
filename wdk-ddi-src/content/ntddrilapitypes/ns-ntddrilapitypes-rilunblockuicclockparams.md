@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILUNBLOCKUICCLOCKPARAMS
 title: RILUNBLOCKUICCLOCKPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILUNBLOCKUICCLOCKPARAMS structure in your code."
 old-location: netvista\rilunblockuicclockparams.htm
 tech.root: netvista
-ms.assetid: 48d1deeb-8862-4e01-aa22-119a53aa4aba
 ms.date: 05/02/2018
 keywords: ["RILUNBLOCKUICCLOCKPARAMS structure"]
 ms.keywords: "*LPRILUNBLOCKUICCLOCKPARAMS, RILUNBLOCKUICCLOCKPARAMS, RILUNBLOCKUICCLOCKPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilunblockuicclockparams, ntddrilapitypes/RILUNBLOCKUICCLOCKPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILUNBLOCKUICCLOCKPARAMS
+ - LPRILUNBLOCKUICCLOCKPARAMS
 ---
 
 # RILUNBLOCKUICCLOCKPARAMS structure (ntddrilapitypes.h)

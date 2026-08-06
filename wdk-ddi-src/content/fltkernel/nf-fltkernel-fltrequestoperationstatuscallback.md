@@ -4,7 +4,6 @@ title: FltRequestOperationStatusCallback function (fltkernel.h)
 description: FltRequestOperationStatusCallback returns status information for the given I/O operation.
 old-location: ifsk\fltrequestoperationstatuscallback.htm
 tech.root: ifsk
-ms.assetid: 17379ce3-d9c1-4fbf-ab2e-b87604e6c71e
 ms.date: 04/16/2018
 keywords: ["FltRequestOperationStatusCallback function"]
 ms.keywords: FltApiRef_p_to_z_85d8f6d5-37d1-469f-8c97-8b358f69e9ef.xml, FltRequestOperationStatusCallback, FltRequestOperationStatusCallback function [Installable File System Drivers], fltkernel/FltRequestOperationStatusCallback, ifsk.fltrequestoperationstatuscallback
@@ -50,19 +49,19 @@ api_name:
 
 ## -parameters
 
-### -param Data 
+### -param Data [in]
 
-[in]
+
 A pointer to the callback data (<a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data">FLT_CALLBACK_DATA</a>) structure for the I/O operation. This parameter is required and cannot be <b>NULL</b>.
 
-### -param CallbackRoutine 
+### -param CallbackRoutine [in]
 
-[in]
+
 A pointer to a callback routine that the Filter Manager calls after <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iocalldriver">IoCallDriver</a> returns. This parameter is required and cannot be <b>NULL</b>.
 
-### -param RequesterContext 
+### -param RequesterContext [in, optional]
 
-[in, optional]
+
 A context pointer to be passed to the <i>CallbackRoutine</i>. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

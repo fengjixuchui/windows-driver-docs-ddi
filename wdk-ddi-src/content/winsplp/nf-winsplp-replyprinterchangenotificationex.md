@@ -1,10 +1,9 @@
 ---
 UID: NF:winsplp.ReplyPrinterChangeNotificationEx
 title: ReplyPrinterChangeNotificationEx function (winsplp.h)
-description: 
+description: Describes the ReplyPrinterChangeNotificationEx function.
 old-location: print\replyprinterchangenotificationex.htm
 tech.root: print
-ms.assetid: A3A906C0-FA96-4008-B904-1DA333B59833
 ms.date: 04/20/2018
 keywords: ["ReplyPrinterChangeNotificationEx function"]
 ms.keywords: ReplyPrinterChangeNotificationEx, ReplyPrinterChangeNotificationEx function [Print Devices], print.replyprinterchangenotificationex, winsplp/ReplyPrinterChangeNotificationEx
@@ -41,26 +40,32 @@ api_name:
  - ReplyPrinterChangeNotificationEx
 ---
 
-# ReplyPrinterChangeNotificationEx function
-
-
 ## -description
+
+Describes the **ReplyPrinterChangeNotificationEx** function.
 
 ## -parameters
 
-### -param hNotify 
+### -param hNotify [in]
 
-[in]
+Defines the **HANDLE** parameter *hNotify*.
 
 ### -param dwColor
 
+Defines the **DWORD** parameter *dwColor*.
+
 ### -param fdwFlags
 
-### -param pdwResult 
+Defines the **DWORD** parameter *fdwFlags*.
 
-[out]
+### -param pdwResult [out]
 
-### -param pPrinterNotifyInfo 
+Defines the **PDWORD** parameter *pdwResult*.
 
-[in]
+### -param pPrinterNotifyInfo [in]
 
+Defines the **PVOID** parameter *pPrinterNotifyInfo*.
+
+## -returns
+
+Returns a **BOOL** value.

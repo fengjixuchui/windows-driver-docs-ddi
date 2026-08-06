@@ -4,8 +4,7 @@ title: IDebugSymbolGroup2::GetSymbolTypeNameWide (dbgeng.h)
 description: The GetSymbolTypeNameWide method returns the name of the specified symbol's type.
 old-location: debugger\getsymboltypenamewide.htm
 tech.root: debugger
-ms.assetid: 1e5b71cf-98c4-42bc-984d-6278ff30e8c1
-ms.date: 05/03/2018
+ms.date: 02/06/2022
 keywords: ["IDebugSymbolGroup2::GetSymbolTypeNameWide"]
 ms.keywords: GetSymbolTypeNameWide, GetSymbolTypeNameWide method [Windows Debugging], GetSymbolTypeNameWide method [Windows Debugging],IDebugSymbolGroup2 interface, IDebugSymbolGroup2 interface [Windows Debugging],GetSymbolTypeNameWide method, IDebugSymbolGroup2.GetSymbolTypeNameWide, IDebugSymbolGroup2::GetSymbolTypeNameWide, dbgeng/IDebugSymbolGroup2::GetSymbolTypeNameWide, debugger.getsymboltypenamewide
 req.header: dbgeng.h
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbolGroup2.GetSymbolTypeNameWide
+ - IDebugSymbolGroup2::GetSymbolTypeNameWide
 ---
 
 # IDebugSymbolGroup2::GetSymbolTypeNameWide
@@ -50,25 +49,25 @@ The <b>GetSymbolTypeNameWide</b> method returns the name of the specified symbol
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 The index of the symbol whose type name you want. The index of a symbol is an identification number. The index ranges from zero through the number of symbols in the symbol group minus one.
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 The name of the symbol's type.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
-The size, in characters, of the <i>Buffer</i> buffer.
 
-### -param NameSize 
+The size, in characters, of the <i>Buffer</i> buffer. This size includes the space for the '\0' terminating character.
 
-[out, optional]
-The size, in characters, of the name of the symbol's type.  If <i>NameSize</i> is <b>NULL</b>, this information is not returned.
+### -param NameSize [out, optional]
+
+
+The size, in characters, of the name of the symbol's type. This size includes the space for the '\0' terminating character. If <i>NameSize</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
 
@@ -119,3 +118,4 @@ For more information about symbol groups, see <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-gettypename">IDebugSymbols::GetTypeName</a>
+

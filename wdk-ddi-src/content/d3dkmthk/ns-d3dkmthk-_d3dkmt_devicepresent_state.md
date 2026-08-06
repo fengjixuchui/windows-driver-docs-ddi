@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_DEVICEPRESENT_STATE
 title: _D3DKMT_DEVICEPRESENT_STATE (d3dkmthk.h)
 description: The D3DKMT_DEVICEPRESENT_STATE structure describes parameters for retrieving the present status for a device.
 old-location: display\d3dkmt_devicepresent_state.htm
-ms.assetid: eed64347-fa5a-4b80-a28d-9190ae30b169
 ms.date: 05/10/2018
 keywords: ["D3DKMT_DEVICEPRESENT_STATE structure"]
 ms.keywords: D3DKMT_DEVICEPRESENT_STATE, D3DKMT_DEVICEPRESENT_STATE structure [Display Devices], OpenGL_Structs_d1f2fcff-dfb8-411f-a4f8-4016924b4ebd.xml, _D3DKMT_DEVICEPRESENT_STATE, d3dkmthk/D3DKMT_DEVICEPRESENT_STATE, display.d3dkmt_devicepresent_state
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_DEVICEPRESENT_STATE
  - D3DKMT_DEVICEPRESENT_STATE
 ---
 
@@ -52,13 +52,13 @@ The D3DKMT_DEVICEPRESENT_STATE structure describes parameters for retrieving the
 
 ## -struct-fields
 
-### -field VidPnSourceId
+### -field VidPnSourceId [in]
 
-[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology to receive present status for.
+The zero-based identification number of the video present source in a path of a video present network (VidPN) topology to receive present status for.
 
-### -field PresentStats
+### -field PresentStats [out]
 
-[out] A <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_present_stats">D3DKMT_PRESENT_STATS</a> structure that describes status of present operations that is retrieved for the device.
+A <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_present_stats">D3DKMT_PRESENT_STATS</a> structure that describes status of present operations that is retrieved for the device.
 
 ## -see-also
 
@@ -67,3 +67,4 @@ The D3DKMT_DEVICEPRESENT_STATE structure describes parameters for retrieving the
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_present_stats">D3DKMT_PRESENT_STATS</a>
+

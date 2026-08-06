@@ -4,7 +4,6 @@ title: UFX_DEVICE_CALLBACKS_INIT function (ufxclient.h)
 description: The UFX_DEVICE_CALLBACKS_INIT macro initializes the UFX_DEVICE_CALLBACKS structure.
 old-location: buses\ufx_device_callbacks_init.htm
 tech.root: usbref
-ms.assetid: D9E7D359-5FC8-44C8-ACA2-641DEFF17616
 ms.date: 05/07/2018
 keywords: ["UFX_DEVICE_CALLBACKS_INIT function"]
 ms.keywords: UFX_DEVICE_CALLBACKS_INIT, UFX_DEVICE_CALLBACKS_INIT function [Buses], buses.ufx_device_callbacks_init, ufxclient/UFX_DEVICE_CALLBACKS_INIT
@@ -50,9 +49,9 @@ The <b>UFX_DEVICE_CALLBACKS_INIT</b> macro initializes the <a href="/windows-har
 
 ## -parameters
 
-### -param Callbacks 
+### -param Callbacks [out]
 
-[out]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ufxclient/ns-ufxclient-_ufx_device_callbacks">UFX_DEVICE_CALLBACKS</a> structure.
 
 ## -remarks

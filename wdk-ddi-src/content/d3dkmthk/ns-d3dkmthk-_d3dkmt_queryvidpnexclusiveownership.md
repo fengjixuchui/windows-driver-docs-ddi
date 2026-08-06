@@ -2,7 +2,6 @@
 UID: NS:d3dkmthk._D3DKMT_QUERYVIDPNEXCLUSIVEOWNERSHIP
 title: _D3DKMT_QUERYVIDPNEXCLUSIVEOWNERSHIP (d3dkmthk.h)
 description: Used to query for VidPn exclusive ownership.
-ms.assetid: cefe498a-79be-46c7-8cf8-4517d15a85bf
 ms.date: 10/19/2018
 keywords: ["D3DKMT_QUERYVIDPNEXCLUSIVEOWNERSHIP structure"]
 ms.keywords: _D3DKMT_QUERYVIDPNEXCLUSIVEOWNERSHIP, D3DKMT_QUERYVIDPNEXCLUSIVEOWNERSHIP,
@@ -35,6 +34,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_QUERYVIDPNEXCLUSIVEOWNERSHIP
+ - D3DKMT_QUERYVIDPNEXCLUSIVEOWNERSHIP
 dev_langs:
  - c++
 ---
@@ -48,26 +48,26 @@ Used to query for VidPn exclusive ownership.
 
 ## -struct-fields
 
-### -field hProcess
+### -field hProcess [in]
 
-[in] A handle to the process.
+A handle to the process.
 
-### -field hWindow
+### -field hWindow [in]
 
-[in] A handle to the window.
+A handle to the window.
 
-### -field VidPnSourceId
+### -field VidPnSourceId [out]
 
-[out] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the monitor is connected to.
+The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the monitor is connected to.
 
-### -field AdapterLuid
+### -field AdapterLuid [out]
 
-[out] The adapter LUID (locally unique identifier).
+The adapter LUID (locally unique identifier).
 
-### -field OwnerType
+### -field OwnerType [out]
 
  
-[out] The owner type.
+The owner type.
 
 ## -remarks
 

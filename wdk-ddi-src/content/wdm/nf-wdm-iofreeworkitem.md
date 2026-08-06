@@ -4,7 +4,6 @@ title: IoFreeWorkItem function (wdm.h)
 description: The IoFreeWorkItem routine frees a work item that was allocated by IoAllocateWorkItem.
 old-location: kernel\iofreeworkitem.htm
 tech.root: kernel
-ms.assetid: e0b0a4a3-6003-4b48-a3cf-570e5405fa5b
 ms.date: 04/30/2018
 keywords: ["IoFreeWorkItem function"]
 ms.keywords: IoFreeWorkItem, IoFreeWorkItem routine [Kernel-Mode Driver Architecture], k104_7db57e08-0786-4f20-96d8-ecb7980a479c.xml, kernel.iofreeworkitem, wdm/IoFreeWorkItem
@@ -50,9 +49,9 @@ The <b>IoFreeWorkItem</b> routine frees a work item that was allocated by <a hre
 
 ## -parameters
 
-### -param IoWorkItem 
+### -param IoWorkItem [in]
 
-[in]
+
 Pointer to an <a href="/windows-hardware/drivers/kernel/eprocess">IO_WORKITEM</a> structure that was returned by a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ioallocateworkitem">IoAllocateWorkItem</a>.
 
 ## -remarks

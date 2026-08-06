@@ -4,7 +4,6 @@ title: ExtRemoteData::GetBoolean (engextcpp.h)
 description: The GetBoolean method returns a Boolean version of the ExtRemoteData object, which represents the contents of the target's memory.
 old-location: debugger\extremotedata_getboolean.htm
 tech.root: debugger
-ms.assetid: 7a580683-ae56-4566-95b4-b4d42ae0e1ab
 ms.date: 05/03/2018
 keywords: ["ExtRemoteData::GetBoolean"]
 ms.keywords: EngExtCpp_Ref_791b0934-9cb7-430a-8b80-d7fe4f458f49.xml, ExtRemoteData class [Windows Debugging],GetBoolean method, ExtRemoteData.GetBoolean, ExtRemoteData::GetBoolean, GetBoolean, GetBoolean method [Windows Debugging], GetBoolean method [Windows Debugging],ExtRemoteData class, debugger.extremotedata_getboolean
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteData.GetBoolean
+ - ExtRemoteData::GetBoolean
 ---
 
 # ExtRemoteData::GetBoolean
@@ -74,3 +73,4 @@ The size of the memory represented by the <a href="/windows-hardware/drivers/ddi
 
 
 <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotedata-getw32bool">ExtRemoteData::GetW32Bool</a>
+

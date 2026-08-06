@@ -4,7 +4,6 @@ title: D3DDDIARG_CHECKPRESENTDURATIONSUPPORT (d3dumddi.h)
 description: Used in a call to the CheckPresentDurationSupport function to check details on hardware device support for seamlessly switching to a new monitor refresh rate.
 old-location: display\d3dddiarg_checkpresentdurationsupport.htm
 tech.root: display
-ms.assetid: D72D6C06-DD6A-4051-9AD0-FD1E240C164A
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_CHECKPRESENTDURATIONSUPPORT structure"]
 ms.keywords: D3DDDIARG_CHECKPRESENTDURATIONSUPPORT, D3DDDIARG_CHECKPRESENTDURATIONSUPPORT structure [Display Devices], d3dumddi/D3DDDIARG_CHECKPRESENTDURATIONSUPPORT, display.d3dddiarg_checkpresentdurationsupport
@@ -50,23 +49,23 @@ Used in a call to the <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumdd
 
 ## -struct-fields
 
-### -field VidPnSourceId
+### -field VidPnSourceId [in]
 
-[in] The zero-based video present network (VidPN) source identification number of the input for which the hardware support is queried.
+The zero-based video present network (VidPN) source identification number of the input for which the hardware support is queried.
 
-### -field DesiredPresentDuration
+### -field DesiredPresentDuration [in]
 
-[in] The desired duration of a single present operation, in units of 100 nanoseconds.
+The desired duration of a single present operation, in units of 100 nanoseconds.
 
-### -field ClosestSmallerDuration
+### -field ClosestSmallerDuration [out]
 
-[out] The smallest supported desired duration of a single present operation on the given VidPN source, in units of 100 nanoseconds. The value must be ≤ <b>DesiredPresentDuration</b>.
+The smallest supported desired duration of a single present operation on the given VidPN source, in units of 100 nanoseconds. The value must be ≤ <b>DesiredPresentDuration</b>.
 
 See Remarks for more limitations on this value.
 
-### -field ClosestLargerDuration
+### -field ClosestLargerDuration [out]
 
-[out] The largest supported desired duration of a single present operation on the given VidPN source, in units of 100 nanoseconds. The value must be ≥ <b>DesiredPresentDuration</b>.
+The largest supported desired duration of a single present operation on the given VidPN source, in units of 100 nanoseconds. The value must be ≥ <b>DesiredPresentDuration</b>.
 
 See Remarks for more limitations on this value.
 

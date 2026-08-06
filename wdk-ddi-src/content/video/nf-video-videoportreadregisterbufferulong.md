@@ -4,7 +4,6 @@ title: VideoPortReadRegisterBufferUlong function (video.h)
 description: The VideoPortReadRegisterBufferUlong function reads a number of ULONG values from a mapped device memory range and writes them into a buffer.
 old-location: display\videoportreadregisterbufferulong.htm
 tech.root: display
-ms.assetid: ebef1d9f-9559-436c-b425-92ccf3bbf203
 ms.date: 05/10/2018
 keywords: ["VideoPortReadRegisterBufferUlong function"]
 ms.keywords: VideoPortReadRegisterBufferUlong, VideoPortReadRegisterBufferUlong function [Display Devices], VideoPort_Functions_69ff5729-b386-4527-8bca-adc70e2d467d.xml, display.videoportreadregisterbufferulong, video/VideoPortReadRegisterBufferUlong
@@ -54,9 +53,9 @@ The <b>VideoPortReadRegisterBufferUlong</b> function reads a number of ULONG val
 
 Pointer to the register. The given <i>Register</i> must be in a mapped memory-space range returned by <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportgetdevicebase">VideoPortGetDeviceBase</a>.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 Pointer to a buffer into which the ULONG values are written.
 
 ### -param Count

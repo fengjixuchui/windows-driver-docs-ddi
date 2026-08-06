@@ -4,7 +4,6 @@ title: DMA_RESUME_HANDLER (netdma.h)
 description: The ProviderResumeDma function resumes the DMA transfers that are currently suspended on a DMA channel.
 old-location: netvista\providerresumedma.htm
 tech.root: netvista
-ms.assetid: 06609603-eeed-4fb0-a878-87cad2e72b46
 ms.date: 05/02/2018
 keywords: ["DMA_RESUME_HANDLER callback function"]
 ms.keywords: DMA_RESUME_HANDLER, DMA_RESUME_HANDLER callback, ProviderResumeDma, ProviderResumeDma callback function [Network Drivers Starting with Windows Vista], netdma/ProviderResumeDma, netdma_ref_75548093-1640-40f2-a715-0918b92900d3.xml, netvista.providerresumedma
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - netdma.h
 api_name:
- - ProviderResumeDma
+ - DMA_RESUME_HANDLER
 ---
 
 # DMA_RESUME_HANDLER callback function
@@ -54,9 +53,9 @@ in Windows 8 and later.</div><div> </div>The
 
 ## -parameters
 
-### -param ProviderChannelContext 
+### -param ProviderChannelContext [in]
 
-[in]
+
 A pointer that identifies a DMA channel's context area. The DMA provider returned this handle to
      NetDMA at the location that is specified in the 
      <i>pProviderChannelContext</i> parameter of the 
@@ -120,3 +119,4 @@ NetDMA calls
 
 
 <a href="/windows-hardware/drivers/ddi/netdma/nc-netdma-dma_suspend_handler">ProviderSuspendDma</a>
+

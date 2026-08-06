@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILSETCALLBARRINGSTATUSPARAMS
 title: RILSETCALLBARRINGSTATUSPARAMS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILSETCALLBARRINGSTATUSPARAMS structure for internal use only."
 old-location: netvista\rilsetcallbarringstatusparams.htm
 tech.root: netvista
-ms.assetid: 1e524d3d-d9dc-4d95-ad13-258cd51bc532
 ms.date: 05/02/2018
 keywords: ["RILSETCALLBARRINGSTATUSPARAMS structure"]
 ms.keywords: "*LPRILSETCALLBARRINGSTATUSPARAMS, RILSETCALLBARRINGSTATUSPARAMS, RILSETCALLBARRINGSTATUSPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsetcallbarringstatusparams, ntddrilapitypes/RILSETCALLBARRINGSTATUSPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSETCALLBARRINGSTATUSPARAMS
+ - LPRILSETCALLBARRINGSTATUSPARAMS
 ---
 
 # RILSETCALLBARRINGSTATUSPARAMS structure (rilapitypes.h)

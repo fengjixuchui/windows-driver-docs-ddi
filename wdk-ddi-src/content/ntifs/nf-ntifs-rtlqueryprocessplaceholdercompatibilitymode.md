@@ -3,7 +3,6 @@ UID: NF:ntifs.RtlQueryProcessPlaceholderCompatibilityMode
 title: RtlQueryProcessPlaceholderCompatibilityMode function (ntifs.h)
 description: RtlQueryProcessPlaceholderCompatibilityMode returns the placeholder compatibility mode for the current process.
 tech.root: ifsk
-ms.assetid: 259275e9-2680-4b7a-a291-83ee9a1fb9c9
 ms.date: 10/19/2018
 keywords: ["RtlQueryProcessPlaceholderCompatibilityMode function"]
 ms.keywords: RtlQueryProcessPlaceholderCompatibilityMode
@@ -47,7 +46,7 @@ api_name:
 
 ## -returns
 
-This function returns the process's placeholder compatibily mode (PHCM_xxx), or a negative value on error (PCHM_ERROR_xxx). Contains one of the following values:
+This function returns the process's placeholder compatibility mode (PHCM_xxx), or a negative value on error (PCHM_ERROR_xxx). Contains one of the following values:
 
 <table>
 <tr>

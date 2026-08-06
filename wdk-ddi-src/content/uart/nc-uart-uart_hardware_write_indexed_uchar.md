@@ -2,8 +2,7 @@
 UID: NC:uart.UART_HARDWARE_WRITE_INDEXED_UCHAR
 title: UART_HARDWARE_WRITE_INDEXED_UCHAR (uart.h)
 description: Writes a byte to the specified port address.
-tech.root: serports
-ms.assetid: d40c35cf-b369-40cd-bf55-97ce6fe7288b
+tech.root: uart
 ms.date: 10/19/2018
 keywords: ["UART_HARDWARE_WRITE_INDEXED_UCHAR callback function"]
 req.header: uart.h
@@ -46,9 +45,9 @@ Implemented by the client driver to ...
 
 ## -parameters
 
-### -param Port
+### -param Port [_In_]
 
-[_In_] A pointer to a [**_CPPORT**](ns-uart-_cpport.md) structure that was received during port initialization.
+A pointer to a [**_CPPORT**](ns-uart-_cpport.md) structure that was received during port initialization.
 
 ### -param Index
 
@@ -83,3 +82,4 @@ Register your implementation of this callback function by setting the appropriat
 
 ## -see-also
 
+[**uart.h**](index.md)

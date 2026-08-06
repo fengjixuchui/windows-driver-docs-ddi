@@ -4,7 +4,6 @@ title: wiasSetValidListFloat function (wiamdef.h)
 description: The wiasSetValidListFloat function sets valid values for a WIA_PROP_LIST property of type VT_R4.
 old-location: image\wiassetvalidlistfloat.htm
 tech.root: image
-ms.assetid: e1a833aa-fc8b-4506-aba8-ba6dc9a375ba
 ms.date: 05/03/2018
 keywords: ["wiasSetValidListFloat function"]
 ms.keywords: image.wiassetvalidlistfloat, wiamdef/wiasSetValidListFloat, wiasFncs_ef1aa836-f63d-43e8-8378-22d37fbdc3a2.xml, wiasSetValidListFloat, wiasSetValidListFloat function [Imaging Devices]
@@ -50,9 +49,9 @@ The <b>wiasSetValidListFloat </b>function sets valid values for a WIA_PROP_LIST 
 
 ## -parameters
 
-### -param pWiasContext 
+### -param pWiasContext [in]
 
-[in]
+
 Pointer to a WIA item context.
 
 ### -param propid
@@ -67,9 +66,9 @@ Specifies the number of items in the <i>plValues</i> array.
 
 Specifies the property's nominal value.
 
-### -param pfValues 
+### -param pfValues [in]
 
-[in]
+
 Pointer to the first element of an array of valid property values.
 
 ## -returns

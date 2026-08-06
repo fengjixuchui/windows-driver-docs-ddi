@@ -4,7 +4,6 @@ title: HidP_GetSpecificValueCaps function (hidpi.h)
 description: The HidP_GetSpecificValueCaps routine returns a value capability array that describes all HID control values that meet a specified selection criteria.
 old-location: hid\hidp_getspecificvaluecaps.htm
 tech.root: hid
-ms.assetid: 0860733c-d28c-4916-a743-d5f6256cfca0
 ms.date: 04/30/2018
 keywords: ["HidP_GetSpecificValueCaps function"]
 ms.keywords: HidP_GetSpecificValueCaps, HidP_GetSpecificValueCaps routine [Human Input Devices], hid.hidp_getspecificvaluecaps, hidfunc_627cf175-fa12-4082-9d13-8ec454be4a74.xml, hidpi/HidP_GetSpecificValueCaps
@@ -51,39 +50,39 @@ The <b>HidP_GetSpecificValueCaps</b> routine returns a <a href="/windows-hardwar
 
 ## -parameters
 
-### -param ReportType 
+### -param ReportType [in]
 
-[in]
+
 Specifies a <a href="/windows-hardware/drivers/ddi/hidpi/ne-hidpi-_hidp_report_type">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.
 
-### -param UsagePage 
+### -param UsagePage [in]
 
-[in]
+
 Specifies a usage page as a search criteria. If <i>UsagePage</i> is nonzero, only values that specify this usage page are returned.
 
-### -param LinkCollection 
+### -param LinkCollection [in]
 
-[in]
+
 Specifies a <a href="/windows-hardware/drivers/hid/link-collections">link collection</a> as a search criteria. If <i>LinkCollection</i> is nonzero, only values that are part of this link collection are returned.
 
-### -param Usage 
+### -param Usage [in]
 
-[in]
+
 Specifies a <a href="/windows-hardware/drivers/hid/hid-usages">HID usage</a> as a search criteria. If <i>Usage</i> is nonzero, only values that specify this usage will be returned.
 
-### -param ValueCaps 
+### -param ValueCaps [out]
 
-[out]
+
 Pointer to a caller-allocated buffer in which the routine returns a value capability array for the specified report type.
 
-### -param ValueCapsLength 
+### -param ValueCapsLength [in, out]
 
-[in, out]
+
 Specifies the length on input, in array elements, of the buffer provided at <i>ValueCaps</i>. On output, this parameter is set to the number of elements that routine actually returns.
 
-### -param PreparsedData 
+### -param PreparsedData [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/hid/top-level-collections">top-level collection's</a> <a href="/windows-hardware/drivers/hid/preparsed-data">preparsed data</a>.
 
 ## -returns

@@ -4,7 +4,6 @@ title: IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION (gpio.h)
 description: The IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION I/O control code enables a client of the general-purpose I/O (GPIO) controller to request a controller-specific device-control operation.
 old-location: gpio\ioctl_gpio_controller_specific_function.htm
 tech.root: GPIO
-ms.assetid: 9B62BF0B-A172-4131-9196-590188C747AD
 ms.date: 02/15/2018
 keywords: ["IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION IOCTL"]
 ms.keywords: GPIO.ioctl_gpio_controller_specific_function, IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION, IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION control, IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION control code [Parallel Ports], gpio/IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION
@@ -50,21 +49,19 @@ The <b>IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION</b> I/O control code enables a cl
 
 ## -ioctlparameters
 
+### -ioctl-major-code
+
 ### -input-buffer
 
 The input buffer requirements for this I/O control code are defined by the developer of the GPIO controller driver. For more information about input buffers for METHOD_BUFFERED IRPs, see <a href="/windows-hardware/drivers/kernel/buffer-descriptions-for-i-o-control-codes">Buffer Descriptions for I/O Control Codes</a>.
 
 ### -input-buffer-length
 
-TBD
-
 ### -output-buffer
 
 The output buffer requirements for this I/O control code are defined by the developer of the GPIO controller driver. For more information about output buffers for METHOD_BUFFERED IRPs, see <a href="/windows-hardware/drivers/kernel/buffer-descriptions-for-i-o-control-codes">Buffer Descriptions for I/O Control Codes</a>.
 
 ### -output-buffer-length
-
-TBD
 
 ### -in-out-buffer
 

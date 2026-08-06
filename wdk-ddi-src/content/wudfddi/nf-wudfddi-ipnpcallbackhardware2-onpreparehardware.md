@@ -4,7 +4,6 @@ title: IPnpCallbackHardware2::OnPrepareHardware (wudfddi.h)
 description: The OnPrepareHardware method performs any operations that are needed to make a device accessible to the driver.
 old-location: wdf\ipnpcallbackhardware2_onpreparehardware.htm
 tech.root: wdf
-ms.assetid: 830D706A-016C-4637-829F-2014AD1A1309
 ms.date: 02/26/2018
 keywords: ["IPnpCallbackHardware2::OnPrepareHardware"]
 ms.keywords: IPnpCallbackHardware2 interface,OnPrepareHardware method, IPnpCallbackHardware2.OnPrepareHardware, IPnpCallbackHardware2::OnPrepareHardware, OnPrepareHardware, OnPrepareHardware method, OnPrepareHardware method,IPnpCallbackHardware2 interface, umdf.ipnpcallbackhardware2_onpreparehardware, wdf.ipnpcallbackhardware2_onpreparehardware, wudfddi/IPnpCallbackHardware2::OnPrepareHardware
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IPnpCallbackHardware2.OnPrepareHardware
+ - IPnpCallbackHardware2::OnPrepareHardware
 ---
 
 # IPnpCallbackHardware2::OnPrepareHardware
@@ -53,19 +52,19 @@ api_name:
 
 ## -parameters
 
-### -param pWdfDevice 
+### -param pWdfDevice [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a> interface for the framework device object.
 
-### -param pWdfResourcesRaw 
+### -param pWdfResourcesRaw [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfcmresourcelist">IWDFCmResourceList</a> interface for the framework resource-list object that identifies the raw hardware resources that the Plug and Play manager has assigned to the device.
 
-### -param pWdfResourcesTranslated 
+### -param pWdfResourcesTranslated [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfcmresourcelist">IWDFCmResourceList</a> interface for the framework resource-list object that identifies the translated hardware resources that the Plug and Play manager has assigned to the device.
 
 ## -returns
@@ -95,3 +94,4 @@ See example code in <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iw
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallbackhardware2-onreleasehardware">OnReleaseHardware</a>
+

@@ -4,7 +4,6 @@ title: ChangerSetPosition function (mcd.h)
 description: ChangerSetPosition handles the device-specific aspects of a device-control IRP with the IOCTL code IOCTL_CHANGER_SET_POSITION.
 old-location: storage\changersetposition.htm
 tech.root: storage
-ms.assetid: cab12c57-dd2b-4453-90ed-7f8954e0fe5d
 ms.date: 03/29/2018
 keywords: ["ChangerSetPosition function"]
 ms.keywords: ChangerSetPosition, ChangerSetPosition function [Storage Devices], chgrmini_28455ca6-3f1f-40ac-a756-c1f026f35f87.xml, mcd/ChangerSetPosition, storage.changersetposition
@@ -50,14 +49,14 @@ api_name:
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the device object that represents the changer.
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Pointer to the IRP.
 
 ## -returns
@@ -91,7 +90,7 @@ The changer class driver checks the input buffer length in the I/O stack locatio
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddchgr/ni-ntddchgr-ioctl_changer_set_position">, IOCTL_CHANGER_SET_POSITION</a>
+<a href="/windows-hardware/drivers/ddi/ntddchgr/ni-ntddchgr-ioctl_changer_set_position">IOCTL_CHANGER_SET_POSITION</a>
 
 
 

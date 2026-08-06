@@ -4,7 +4,6 @@ title: IRemoteInterfaceCallbackEvent (wudfddi.h)
 description: The IRemoteInterfaceCallbackEvent interface provides a callback function that the framework calls to notify the driver about device events that are associated with a device interface.
 old-location: wdf\iremoteinterfacecallbackevent.htm
 tech.root: wdf
-ms.assetid: 72b68ed0-d14c-44b1-b848-40c427fe6c9a
 ms.date: 02/26/2018
 keywords: ["IRemoteInterfaceCallbackEvent interface"]
 ms.keywords: IRemoteInterfaceCallbackEvent, IRemoteInterfaceCallbackEvent interface, IRemoteInterfaceCallbackEvent interface,described, UMDFIoTargetObjectRef_9ce0aebc-e132-4d0e-b575-7ef1e19d9c30.xml, umdf.iremoteinterfacecallbackevent, wdf.iremoteinterfacecallbackevent, wudfddi/IRemoteInterfaceCallbackEvent
@@ -52,9 +51,9 @@ The <b>IRemoteInterfaceCallbackEvent</b> interface provides a callback function 
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IRemoteInterfaceCallbackEvent</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IRemoteInterfaceCallbackEvent</b> also has these types of members:
+The <b>IRemoteInterfaceCallbackEvent</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IRemoteInterfaceCallbackEvent</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>
 
 ## -remarks

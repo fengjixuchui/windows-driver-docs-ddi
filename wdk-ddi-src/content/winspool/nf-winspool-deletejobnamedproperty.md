@@ -4,7 +4,6 @@ title: DeleteJobNamedProperty function (winspool.h)
 description: Deletes the named property for the specified print job on the specified printer.
 old-location: print\deletejobnamedproperty.htm
 tech.root: print
-ms.assetid: 14F8C0A2-0D19-446E-8C2B-530A3AEDA879
 ms.date: 04/20/2018
 keywords: ["DeleteJobNamedProperty function"]
 ms.keywords: DeleteJobNamedProperty, DeleteJobNamedProperty function [Print Devices], print.deletejobnamedproperty, winspool/DeleteJobNamedProperty
@@ -51,19 +50,19 @@ Deletes the named property for the specified print job on the specified printer.
 
 ## -parameters
 
-### -param hPrinter 
+### -param hPrinter [in]
 
-[in]
+
 A handle to the printer object of interest. Use the <a href="/windows-hardware/drivers/print/openprinter">OpenPrinter</a>, <a href="/windows/win32/printdocs/openprinter2">OpenPrinter2</a>, or the <a href="/windows/win32/printdocs/addprinter">AddPrinter</a> function to retrieve a printer handle.
 
-### -param JobId 
+### -param JobId [in]
 
-[in]
+
 Identifier that specifies the print job. You obtain a print job identifier by calling the <a href="/windows/win32/printdocs/addjob">AddJob</a> function or the <a href="/windows-hardware/drivers/ddi/printoem/nf-printoem-oemstartdoc">StartDoc</a> function.
 
-### -param pszName 
+### -param pszName [in]
 
-[in]
+
 Name of the property that will be deleted.
 
 ## -returns

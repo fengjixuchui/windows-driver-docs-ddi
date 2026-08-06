@@ -1,10 +1,9 @@
 ---
 UID: NS:pep_x._PEP_ACPI_RESOURCE_FLAGS
 title: _PEP_ACPI_RESOURCE_FLAGS (pep_x.h)
-description: The PEP_ACPI_RESOURCE_FLAGS structure contains flags describing an ACPI resource.
+description: Learn how the PEP_ACPI_RESOURCE_FLAGS structure contains flags describing an ACPI resource.
 old-location: kernel\pep_acpi_resource_flags.htm
 tech.root: kernel
-ms.assetid: 1BB4933B-2707-4350-8D9C-E0E25A85F5CB
 ms.date: 04/30/2018
 keywords: ["PEP_ACPI_RESOURCE_FLAGS structure"]
 ms.keywords: "*PPEP_ACPI_RESOURCE_FLAGS, PEP_ACPI_RESOURCE_FLAGS, PEP_ACPI_RESOURCE_FLAGS union [Kernel-Mode Driver Architecture], PPEP_ACPI_RESOURCE_FLAGS, PPEP_ACPI_RESOURCE_FLAGS union pointer [Kernel-Mode Driver Architecture], _PEP_ACPI_RESOURCE_FLAGS, kernel.pep_acpi_resource_flags, pepfx/PEP_ACPI_RESOURCE_FLAGS, pepfx/PPEP_ACPI_RESOURCE_FLAGS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_ACPI_RESOURCE_FLAGS
+ - PPEP_ACPI_RESOURCE_FLAGS
  - PEP_ACPI_RESOURCE_FLAGS
 ---
 
@@ -93,3 +94,4 @@ When set, indicates that this device is in shared mode.
 ### -field DUMMYSTRUCTNAME.Reserved
 
 This member is reserved and should be set to zero.
+

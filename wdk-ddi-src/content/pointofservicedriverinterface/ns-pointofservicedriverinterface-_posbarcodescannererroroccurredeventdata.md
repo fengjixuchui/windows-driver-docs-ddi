@@ -4,7 +4,6 @@ title: _PosBarcodeScannerErrorOccurredEventData (pointofservicedriverinterface.h
 description: This structure contains the error data that is passed to the BarcodeScannerErrorOccurred event.
 old-location: pos\posbarcodescannererroroccurredeventdata.htm
 tech.root: pos
-ms.assetid: c9e18ed0-bc34-49ed-a31e-20c82d43860f
 ms.date: 08/21/2020
 keywords: ["PosBarcodeScannerErrorOccurredEventData structure"]
 ms.keywords: PosBarcodeScannerErrorOccurredEventData, PosBarcodeScannerErrorOccurredEventData structure, _PosBarcodeScannerErrorOccurredEventData, pointofservicedriverinterface/PosBarcodeScannerErrorOccurredEventData, pos.posbarcodescannererroroccurredeventdata
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - PointOfServiceDriverInterface.h
 api_name:
+ - _PosBarcodeScannerErrorOccurredEventData
  - PosBarcodeScannerErrorOccurredEventData
 ---
 
@@ -94,3 +94,4 @@ The error data should fill the buffer as shown in the following table (in order)
 | Error message text | **MessageLength** |
 | Partial scan data | **PartialData.ScanDataLength** |
 | Label data | **PartialData.ScanDataLabelLength** |
+

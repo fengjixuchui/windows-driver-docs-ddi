@@ -4,7 +4,6 @@ title: _D3DDDIRECT (d3dukmdt.h)
 description: The D3DDDIRECT structure defines a rectangle by the coordinates of its upper-left and lower-right corners.
 old-location: display\d3dddirect.htm
 tech.root: display
-ms.assetid: 7dcb4b17-3aac-46df-9aed-d2145ed3034a
 ms.date: 05/10/2018
 keywords: ["D3DDDIRECT structure"]
 ms.keywords: D3DDDIRECT, D3DDDIRECT structure [Display Devices], D3D_other_Structs_0b4f8354-6a1e-49fa-85aa-681b20e7d072.xml, _D3DDDIRECT, d3dukmdt/D3DDDIRECT, display.d3dddirect
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dukmdt.h
 api_name:
+ - _D3DDDIRECT
  - D3DDDIRECT
 ---
 
@@ -52,22 +52,23 @@ The D3DDDIRECT structure defines a rectangle by the coordinates of its upper-lef
 
 ## -struct-fields
 
-### -field left
+### -field left [in]
 
-[in] The x-coordinate of the upper-left corner of the rectangle.
+The x-coordinate of the upper-left corner of the rectangle.
 
-### -field top
+### -field top [in]
 
-[in] The y-coordinate of the upper-left corner of the rectangle.
+The y-coordinate of the upper-left corner of the rectangle.
 
-### -field right
+### -field right [in]
 
-[in] The x-coordinate of the lower-right corner of the rectangle.
+The x-coordinate of the lower-right corner of the rectangle.
 
-### -field bottom
+### -field bottom [in]
 
-[in] The y-coordinate of the lower-right corner of the rectangle.
+The y-coordinate of the lower-right corner of the rectangle.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_kerneloverlayinfo">D3DDDI_KERNELOVERLAYINFO</a>
+

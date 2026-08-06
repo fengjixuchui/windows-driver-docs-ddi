@@ -4,7 +4,6 @@ title: ExInterlockedPushEntryList function (wdm.h)
 description: The ExInterlockedPushEntryList routine atomically inserts an entry at the beginning of a singly linked list of SINGLE_LIST_ENTRY structures.
 old-location: kernel\exinterlockedpushentrylist.htm
 tech.root: kernel
-ms.assetid: 7a932f69-c5dd-4844-b461-b986c00a08c7
 ms.date: 04/30/2018
 keywords: ["ExInterlockedPushEntryList function"]
 ms.keywords: ExInterlockedPushEntryList, ExInterlockedPushEntryList routine [Kernel-Mode Driver Architecture], k102_dbf9c23d-8c9a-47e6-a923-cdb4d247148c.xml, kernel.exinterlockedpushentrylist, wdm/ExInterlockedPushEntryList
@@ -50,19 +49,19 @@ The <b>ExInterlockedPushEntryList</b> routine atomically inserts an entry at the
 
 ## -parameters
 
-### -param ListHead 
+### -param ListHead [in, out]
 
-[in, out]
-A pointer to the <a href="/windows/win32/api/ntdef/ns-ntdef-single_list_entry">SINGLE_LIST_ENTRY</a> structure that serves as the list header.
 
-### -param ListEntry 
+A pointer to the <a href="/windows/win32/api/ntdef/ns-ntdef-single_list_entry">SINGLE_LIST_ENTRY</a> structure that serves as the list header. The storage for <i>ListHead</i> must be resident at all IRQLs.
 
-[in, out]
-A pointer to the <a href="/windows/win32/api/ntdef/ns-ntdef-single_list_entry">SINGLE_LIST_ENTRY</a> structure that represents the entry to be inserted into the list.
+### -param ListEntry [in, out]
 
-### -param Lock 
 
-[in, out]
+A pointer to the <a href="/windows/win32/api/ntdef/ns-ntdef-single_list_entry">SINGLE_LIST_ENTRY</a> structure that represents the entry to be inserted into the list. The storage for <i>ListEntry</i> must be resident at all IRQLs.
+
+### -param Lock [in, out]
+
+
 A pointer to a <b>KSPIN_LOCK</b> structure that serves as the spin lock used to synchronize access to the list. The storage for the spin lock must be resident and must have been initialized by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializespinlock">KeInitializeSpinLock</a>. You must use this spin lock only with the <b>ExInterlocked<i>Xxx</i>List</b> routines.
 
 ## -returns

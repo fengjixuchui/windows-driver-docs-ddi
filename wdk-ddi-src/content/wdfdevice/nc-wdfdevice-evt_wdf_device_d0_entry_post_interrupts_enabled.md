@@ -4,7 +4,6 @@ title: EVT_WDF_DEVICE_D0_ENTRY_POST_INTERRUPTS_ENABLED (wdfdevice.h)
 description: A driver's EvtDeviceD0EntryPostInterruptsEnabled event callback function performs device-specific operations that are required after the driver has enabled the device's hardware interrupts.
 old-location: wdf\evtdeviced0entrypostinterruptsenabled.htm
 tech.root: wdf
-ms.assetid: 38d74ce1-9d9d-4da5-a2b3-579048850b28
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DEVICE_D0_ENTRY_POST_INTERRUPTS_ENABLED callback function"]
 ms.keywords: DFDeviceObjectGeneralRef_e37cc70a-3e3e-4268-afda-8b802cc72461.xml, EVT_WDF_DEVICE_D0_ENTRY_POST_INTERRUPTS_ENABLED, EVT_WDF_DEVICE_D0_ENTRY_POST_INTERRUPTS_ENABLED callback, EvtDeviceD0EntryPostInterruptsEnabled, EvtDeviceD0EntryPostInterruptsEnabled callback function, kmdf.evtdeviced0entrypostinterruptsenabled, wdf.evtdeviced0entrypostinterruptsenabled, wdfdevice/EvtDeviceD0EntryPostInterruptsEnabled
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfdevice.h
 api_name:
- - EvtDeviceD0EntryPostInterruptsEnabled
+ - EVT_WDF_DEVICE_D0_ENTRY_POST_INTERRUPTS_ENABLED
 ---
 
 # EVT_WDF_DEVICE_D0_ENTRY_POST_INTERRUPTS_ENABLED callback function
@@ -52,14 +51,14 @@ A driver's <i>EvtDeviceD0EntryPostInterruptsEnabled</i> event callback function 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param PreviousState 
+### -param PreviousState [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_power_device_state">WDF_POWER_DEVICE_STATE</a>-typed enumerator that identifies the previous device power state.
 
 ## -returns
@@ -81,3 +80,4 @@ For more information about handling interrupts, see <a href="/windows-hardware/d
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit_pre_interrupts_disabled">EvtDeviceD0ExitPreInterruptsDisabled</a>
+

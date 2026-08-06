@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3DWDDM1_3DDI_COPYTILEMAPPINGS
 title: PFND3DWDDM1_3DDI_COPYTILEMAPPINGS (d3d10umddi.h)
 description: Copies mappings from a source tiled resource to a destination tiled resource.
 old-location: display\copytilemappings.htm
-ms.assetid: CB2CE5E7-DDD4-4782-BB91-67A2C562A975
 ms.date: 05/10/2018
 keywords: ["PFND3DWDDM1_3DDI_COPYTILEMAPPINGS callback function"]
 ms.keywords: CopyTileMappings, CopyTileMappings callback function [Display Devices], PFND3DWDDM1_3DDI_COPYTILEMAPPINGS, PFND3DWDDM1_3DDI_COPYTILEMAPPINGS callback, d3d10umddi/CopyTileMappings, display.copytilemappings
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - CopyTileMappings
-product:
- - Windows
+ - PFND3DWDDM1_3DDI_COPYTILEMAPPINGS
 ---
 
 # PFND3DWDDM1_3DDI_COPYTILEMAPPINGS callback function
@@ -99,3 +96,4 @@ The driver can use the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d1
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

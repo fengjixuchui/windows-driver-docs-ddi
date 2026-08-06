@@ -4,7 +4,6 @@ title: IOCTL_INTERNAL_USB_CYCLE_PORT (usbioctl.h)
 description: The IOCTL_INTERNAL_USB_CYCLE_PORT I/O request simulates a device unplug and replug on the port associated with the PDO.
 old-location: buses\ioctl_internal_usb_cycle_port.htm
 tech.root: usbref
-ms.assetid: 81e62377-66af-4588-8be5-f6bb89a11fe0
 ms.date: 05/07/2018
 keywords: ["IOCTL_INTERNAL_USB_CYCLE_PORT IOCTL"]
 ms.keywords: IOCTL_INTERNAL_USB_CYCLE_PORT, IOCTL_INTERNAL_USB_CYCLE_PORT control, IOCTL_INTERNAL_USB_CYCLE_PORT control code [Buses], buses.ioctl_internal_usb_cycle_port, usbioctl/IOCTL_INTERNAL_USB_CYCLE_PORT, usbirp_0f04d439-7813-4da8-9279-a4d113871687.xml
@@ -55,6 +54,10 @@ A driver that manages an individual interface on a composite device cannot cycle
 <b>IOCTL_INTERNAL_USB_CYCLE_PORT</b> is a kernel-mode I/O control request. This request targets the USB hub PDO. This request must be sent at an IRQL of PASSIVE_LEVEL.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
+
+[IRP_MJ_INTERNAL_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
 ### -input-buffer
 

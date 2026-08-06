@@ -1,9 +1,8 @@
 ---
 UID: NF:ntddk.WheaConfigureErrorSource
 title: WheaConfigureErrorSource function
-description: Reserved for system use.
-tech.root: 
-ms.assetid: a63ba4cc-1b27-4a93-a776-3743ba27cb95
+description: "Microsoft reserves the WheaConfigureErrorSource function for internal use only. Don't use this function in your code."
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WheaConfigureErrorSource function"]
 ms.keywords: WheaConfigureErrorSource
@@ -37,8 +36,6 @@ api_location:
  - ntddk.h
 api_name:
  - WheaConfigureErrorSource
-product:
- - Windows
 ---
 
 # WheaConfigureErrorSource function

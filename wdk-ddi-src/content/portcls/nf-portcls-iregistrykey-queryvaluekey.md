@@ -4,7 +4,6 @@ title: IRegistryKey::QueryValueKey (portcls.h)
 description: The QueryValueKey method retrieves information about a registry key's value entries, including their names, types, data sizes, and values.
 old-location: audio\iregistrykey_queryvaluekey.htm
 tech.root: audio
-ms.assetid: 6339a8bf-ab32-48bc-aae6-2cce2a6a648d
 ms.date: 05/08/2018
 keywords: ["IRegistryKey::QueryValueKey"]
 ms.keywords: IRegistryKey interface [Audio Devices],QueryValueKey method, IRegistryKey.QueryValueKey, IRegistryKey::QueryValueKey, QueryValueKey, QueryValueKey method [Audio Devices], QueryValueKey method [Audio Devices],IRegistryKey interface, audio.iregistrykey_queryvaluekey, audmp-routines_2b41aa08-8b71-45af-bcfa-c33723c82c13.xml, portcls/IRegistryKey::QueryValueKey
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IRegistryKey.QueryValueKey
+ - IRegistryKey::QueryValueKey
 ---
 
 # IRegistryKey::QueryValueKey
@@ -50,14 +49,14 @@ The <code>QueryValueKey</code> method retrieves information about a registry key
 
 ## -parameters
 
-### -param ValueName 
+### -param ValueName [in]
 
-[in]
+
 Pointer to the manufacturer-supplied name of the value entry. The name string is specified by a structure of type <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a>.
 
-### -param KeyValueInformationClass 
+### -param KeyValueInformationClass [in]
 
-[in]
+
 Specifies the type of information to be returned in the buffer. Set this parameter to one of the following KEY_VALUE_INFORMATION_CLASS enumeration values:
 
 <ul>
@@ -75,19 +74,19 @@ Specifies the type of information to be returned in the buffer. Set this paramet
 </li>
 </ul>
 
-### -param KeyValueInformation 
+### -param KeyValueInformation [out]
 
-[out]
+
 Pointer to a caller-allocated buffer into which the method writes the requested data. The buffer contains a structure of type <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_value_basic_information">KEY_VALUE_BASIC_INFORMATION</a>, <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_value_full_information">KEY_VALUE_FULL_INFORMATION</a>, or <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_value_partial_information">KEY_VALUE_PARTIAL_INFORMATION</a>, depending on the value of <i>KeyValueInformationClass</i>. The structure is followed by additional data whose size depends on the data type of the key value.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Size in bytes of the <i>KeyValueInformation</i> buffer, which the caller must set according to the given <i>KeyValueInformationClass</i>. To receive all the requested data, the buffer must be at least as large as the size of the requested data.
 
-### -param ResultLength 
+### -param ResultLength [out]
 
-[out]
+
 Output pointer for the length of the resulting data. This parameter points to a caller-allocated ULONG variable into which the method writes a count specifying the number of bytes actually written into the <i>KeyValueInformation</i> buffer. If the specified buffer length is too small to contain the information, however, the method instead outputs the required buffer size and returns STATUS_BUFFER_OVERFLOW or STATUS_BUFFER_TOO_SMALL. For more information, see the following Remarks section.
 
 ## -returns
@@ -125,7 +124,7 @@ Indicates that the value entry with the specified name was not found.
 
 ## -remarks
 
-If the <i>KeyValueInformation</i> buffer is too small to hold the requested information, the method writes the required size to *<i>ResultLength</i> and returns a status code of either STATUS_BUFFER_OVERFLOW or STATUS_BUFFER_TOO_SMALL. The method returns STATUS_BUFFER_OVERFLOW if it succeeded in writing only part of the requested information to the buffer. The method returns STATUS_BUFFER_TOO_SMALL if it was unable to write any information to the buffer. The value written to *<i>ResultLength</i> indicates the minimum buffer size required to hold all the requested information.
+If the <i>KeyValueInformation</i> buffer is too small to hold the requested information, the method writes the required size to **ResultLength* and returns a status code of either STATUS_BUFFER_OVERFLOW or STATUS_BUFFER_TOO_SMALL. The method returns STATUS_BUFFER_OVERFLOW if it succeeded in writing only part of the requested information to the buffer. The method returns STATUS_BUFFER_TOO_SMALL if it was unable to write any information to the buffer. The value written to **ResultLength* indicates the minimum buffer size required to hold all the requested information.
 
 ## -see-also
 
@@ -150,3 +149,4 @@ If the <i>KeyValueInformation</i> buffer is too small to hold the requested info
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-zwqueryvaluekey">ZwQueryValueKey</a>
+

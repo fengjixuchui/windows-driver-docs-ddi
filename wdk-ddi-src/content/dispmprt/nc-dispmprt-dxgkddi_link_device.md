@@ -4,14 +4,13 @@ title: DXGKDDI_LINK_DEVICE (dispmprt.h)
 description: The optional DxgkDdiLinkDevice function queries the display miniport driver for information on the linked adapter configuration.
 old-location: display\dxgkddilinkdevice.htm
 tech.root: display
-ms.assetid: fb9b7c58-1c4f-42e4-a59f-4a529d3caca2
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_LINK_DEVICE callback function"]
 ms.keywords: DXGKDDI_LINK_DEVICE, DXGKDDI_LINK_DEVICE callback, DmFunctions_3dcba945-b441-49a2-9d1e-af0ff235136c.xml, DxgkDdiLinkDevice, DxgkDdiLinkDevice callback function [Display Devices], display.dxgkddilinkdevice, dispmprt/DxgkDdiLinkDevice
 req.header: dispmprt.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
- - DxgkDdiLinkDevice
+ - DXGKDDI_LINK_DEVICE
 ---
 
 # DXGKDDI_LINK_DEVICE callback function
@@ -50,19 +49,19 @@ The optional <i>DxgkDdiLinkDevice</i> function queries the display miniport driv
 
 ## -parameters
 
-### -param PhysicalDeviceObject 
+### -param PhysicalDeviceObject [in]
 
-[in]
+
 A pointer to a physical device object (PDO) that identifies a display adapter.
 
-### -param MiniportDeviceContext 
+### -param MiniportDeviceContext [in]
 
-[in]
+
 A handle to a context block associated with a display adapter. The display miniport driver's <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem.
 
-### -param LinkedDevice 
+### -param LinkedDevice [in, out]
 
-[in, out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_linked_device">LINKED_DEVICE</a> structure that contains information on the linked display adapter configuration.
 
 ## -returns
@@ -88,3 +87,4 @@ Plug and Play or power events cause the leading linked adapter to power up or st
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_linked_device">LINKED_DEVICE</a>
+

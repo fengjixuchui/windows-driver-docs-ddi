@@ -4,7 +4,6 @@ title: PFND3DDDI_ESCAPECB (d3dumddi.h)
 description: The pfnEscapeCb callback function shares information with the display miniport driver.
 old-location: display\pfnescapecb.htm
 tech.root: display
-ms.assetid: 66c0347f-2cf3-42fc-8641-47c731e958c9
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_ESCAPECB callback function"]
 ms.keywords: D3Druntime_Functions_8c7e48ef-f8e8-45d2-a424-9065e97f725f.xml, PFND3DDDI_ESCAPECB, PFND3DDDI_ESCAPECB callback, d3dumddi/pfnEscapeCb, display.pfnescapecb, pfnEscapeCb, pfnEscapeCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnEscapeCb
-product:
- - Windows
+ - PFND3DDDI_ESCAPECB
 ---
 
 # PFND3DDDI_ESCAPECB callback function
@@ -56,7 +53,7 @@ The <b>pfnEscapeCb</b> callback function shares information with the display min
 
 A handle to the graphics adapter object.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -94,3 +91,4 @@ A user-mode display driver calls <b>pfnEscapeCb</b> to share miscellaneous infor
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_escape">DxgkDdiEscape</a>
+

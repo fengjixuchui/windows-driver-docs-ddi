@@ -1,10 +1,9 @@
 ---
 UID: NE:ntddrilapitypes.RILUNSOLICITEDSSINFOPARAMMASK
 title: RILUNSOLICITEDSSINFOPARAMMASK (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this enumeration for internal use only. Don't use the RILUNSOLICITEDSSINFOPARAMMASK enumeration in your code."
 old-location: netvista\rilunsolicitedssinfoparammask.htm
 tech.root: netvista
-ms.assetid: 41cf5add-4cad-41ed-ba9c-6bfba56a9f65
 ms.date: 05/02/2018
 keywords: ["RILUNSOLICITEDSSINFOPARAMMASK enumeration"]
 ms.keywords: RILUNSOLICITEDSSINFOPARAMMASK, RILUNSOLICITEDSSINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_UNSSS_ADDRESS, RIL_PARAM_UNSSS_ALL, RIL_PARAM_UNSSS_CUGINDEX, RIL_PARAM_UNSSS_HISTINFO, RIL_PARAM_UNSSS_HISTLENGTH, RIL_PARAM_UNSSS_ID, RIL_PARAM_UNSSS_NOTIFICATIONCODE, RIL_PARAM_UNSSS_SUBADDR, netvista.rilunsolicitedssinfoparammask, ntddrilapitypes/RILUNSOLICITEDSSINFOPARAMMASK, ntddrilapitypes/RIL_PARAM_UNSSS_ADDRESS, ntddrilapitypes/RIL_PARAM_UNSSS_ALL, ntddrilapitypes/RIL_PARAM_UNSSS_CUGINDEX, ntddrilapitypes/RIL_PARAM_UNSSS_HISTINFO, ntddrilapitypes/RIL_PARAM_UNSSS_HISTLENGTH, ntddrilapitypes/RIL_PARAM_UNSSS_ID, ntddrilapitypes/RIL_PARAM_UNSSS_NOTIFICATIONCODE, ntddrilapitypes/RIL_PARAM_UNSSS_SUBADDR

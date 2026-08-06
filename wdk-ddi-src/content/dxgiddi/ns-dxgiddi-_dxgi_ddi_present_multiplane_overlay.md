@@ -4,7 +4,6 @@ title: _DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY (dxgiddi.h)
 description: Specifies overlay planes to display.
 old-location: display\dxgi_ddi_present_multiplane_overlay.htm
 tech.root: display
-ms.assetid: 18811f98-df57-43ab-b8f7-26301abeb823
 ms.date: 05/10/2018
 keywords: ["DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY structure"]
 ms.keywords: DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY, DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY structure [Display Devices], _DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY, display.dxgi_ddi_present_multiplane_overlay, dxgiddi/DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Dxgiddi.h
 api_name:
+ - _DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY
  - DXGI_DDI_PRESENT_MULTIPLANE_OVERLAY
 ---
 
@@ -75,3 +75,4 @@ A structure of type <a href="/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dx
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi_ddi_multiplane_overlay_attributes">DXGI_DDI_MULTIPLANE_OVERLAY_ATTRIBUTES</a>
+

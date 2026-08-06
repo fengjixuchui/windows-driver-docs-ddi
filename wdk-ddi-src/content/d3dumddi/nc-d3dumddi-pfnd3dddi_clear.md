@@ -4,7 +4,6 @@ title: PFND3DDDI_CLEAR (d3dumddi.h)
 description: The Clear function performs hardware-assisted clearing on the rendering target, depth buffer, or stencil buffer.
 old-location: display\clear.htm
 tech.root: display
-ms.assetid: 1cfb5f5b-8d46-4a38-8f16-b1cecaac948a
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CLEAR callback function"]
 ms.keywords: Clear, Clear callback function [Display Devices], PFND3DDDI_CLEAR, PFND3DDDI_CLEAR callback, UserModeDisplayDriver_Functions_fc47f935-b69f-4e51-be36-73f0b89f44cf.xml, d3dumddi/Clear, display.clear
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - Clear
+ - PFND3DDDI_CLEAR
 ---
 
 # PFND3DDDI_CLEAR callback function
@@ -50,24 +49,24 @@ The <b>Clear</b> function performs hardware-assisted clearing on the rendering t
 
 ## -parameters
 
-### -param hDevice 
+### -param hDevice [in]
 
-[in]
+
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_clear">D3DDDIARG_CLEAR</a> structure that describes the parameters of the hardware-assisted clearing operation.
 
-### -param Arg3
+### -param unnamedParam3
 
 *NumRect* [in]
 
 The number of rectangles in the array at <b>pRect</b> to be cleared. If the number of rectangles is set to zero, <b>Clear</b> should clear the entire render target, depth buffer, and stencil buffer. In this situation, the contents of the array at <b>pRect</b> are undefined and the driver should not attempt to read them.
 
-### -param Arg4
+### -param unnamedParam4
 
 *pRect* [in]
 
@@ -110,3 +109,4 @@ If <i>NumRect</i> is set to a value greater than 0 (<i>NumRect</i> > 0) and D3DC
 
 
 <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a>
+

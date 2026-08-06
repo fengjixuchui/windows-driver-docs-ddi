@@ -4,7 +4,6 @@ title: IOCTL_GNSS_GET_FIXDATA (gnssdriver.h)
 description: The IOCTL_GNSS_GET_FIXDATA control code is used by the GNSS adapter to register to receive the next fix data from an active fix session.
 old-location: gnss\ioctl_gnss_get_fixdata.htm
 tech.root: gnss
-ms.assetid: 037B5AD9-39C2-4F50-8E63-0736EA37FEF9
 ms.date: 02/15/2018
 keywords: ["IOCTL_GNSS_GET_FIXDATA IOCTL"]
 ms.keywords: IOCTL_GNSS_GET_FIXDATA, IOCTL_GNSS_GET_FIXDATA control, IOCTL_GNSS_GET_FIXDATA control code [Sensor Devices], gnss.ioctl_gnss_get_fixdata, gnssdriver/IOCTL_GNSS_GET_FIXDATA
@@ -50,6 +49,8 @@ The <b>IOCTL_GNSS_GET_FIXDATA</b>
    control code is used by the GNSS adapter to register to receive the next fix data from an active fix session. This IOCTL provides the GNSS driver with a pending I/O request, the asynchronous resolution of which notifies the adapter that data is being provided through the overlapped structures <b>GnssEvent</b> member as a data buffer. The GnssEvent member is a <a href="/windows-hardware/drivers/ddi/gnssdriver/ns-gnssdriver-gnss_event">GNSS_EVENT</a> structure.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

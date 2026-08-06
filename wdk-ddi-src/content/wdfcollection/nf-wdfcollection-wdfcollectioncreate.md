@@ -4,7 +4,6 @@ title: WdfCollectionCreate function (wdfcollection.h)
 description: The WdfCollectionCreate method creates a framework collection object.
 old-location: wdf\wdfcollectioncreate.htm
 tech.root: wdf
-ms.assetid: b185b1ca-6fd9-4508-b001-d1853f2948c2
 ms.date: 02/26/2018
 keywords: ["WdfCollectionCreate function"]
 ms.keywords: DFCollectionObjectRef_0c567e7a-209b-4ac2-a721-0c2ee4122aaa.xml, WdfCollectionCreate, WdfCollectionCreate method, kmdf.wdfcollectioncreate, wdf.wdfcollectioncreate, wdfcollection/WdfCollectionCreate
@@ -55,14 +54,14 @@ The <b>WdfCollectionCreate</b> method creates a framework collection object.
 
 ## -parameters
 
-### -param CollectionAttributes 
+### -param CollectionAttributes [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the new collection object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param Collection 
+### -param Collection [out]
 
-[out]
+
 A pointer to a location that receives a handle to the new collection object.
 
 ## -returns

@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_PRE_ASSOCIATE_COMPLETION
 title: DOT11EXT_PRE_ASSOCIATE_COMPLETION (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_PRE_ASSOCIATE_COMPLETION callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extpreassociatecompletion.htm
 tech.root: netvista
-ms.assetid: e617c0ac-0f02-4e15-ba11-81de6331b83d
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_PRE_ASSOCIATE_COMPLETION callback"]
 ms.keywords: DOT11EXT_PRE_ASSOCIATE_COMPLETION, Dot11ExtPreAssociateCompletion, Dot11ExtPreAssociateCompletion callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_aca82f29-a84e-48e3-b239-754b5b49d99c.xml, netvista.dot11extpreassociatecompletion, wlanihv/Dot11ExtPreAssociateCompletion
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_PRE_ASSOCIATE_COMPLETION
  - wlanihv/DOT11EXT_PRE_ASSOCIATE_COMPLETION
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtPreAssociateCompletion
+ - DOT11EXT_PRE_ASSOCIATE_COMPLETION
 ---
 
 # DOT11EXT_PRE_ASSOCIATE_COMPLETION callback
@@ -55,25 +53,25 @@ api_name:
 
 ## -parameters
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the wireless LAN (WLAN) adapter. This handle
      value was specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param hConnectSession 
+### -param hConnectSession [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the connection session with the basic service
      set (BSS) network. This handle value was specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
      Dot11ExtIhvPerformPreAssociate</a> IHV Handler function.
 
-### -param dwReasonCode 
+### -param dwReasonCode [in]
 
-[in]
+
 A value that provides additional information for the completion status of the pre-association
      operation. The IHV Extensions DLL must set
      <i>dwReasonCode</i> to an L2_REASON_CODE_xxxx value, which are defined in
@@ -86,9 +84,9 @@ The IHV Extensions DLL returns the general completion status of the pre-associat
      <i>dwReasonCode</i> to a value in the range from L2_REASON_CODE_IHV_BASE to (L2_REASON_CODE_IHV_BASE+
      L2_REASON_CODE_GROUP_SIZE-1).
 
-### -param dwWin32Error 
+### -param dwWin32Error [in]
 
-[in]
+
 The completion status of the pre-association operation as defined by an error code within
      Winerror.h. If the operation completes successfully, the IHV Extensions DLL must set
      <i>dwWin32Error</i> to ERROR_SUCCESS.
@@ -190,3 +188,4 @@ The IHV Extensions DLL must call
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
    Dot11ExtIhvPerformPreAssociate</a>
+

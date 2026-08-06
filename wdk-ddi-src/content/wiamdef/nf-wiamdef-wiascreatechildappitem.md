@@ -4,7 +4,6 @@ title: wiasCreateChildAppItem function (wiamdef.h)
 description: The wiasCreateChildAppItem function creates a new application item and inserts it as a child of the specified (parent) item. Note that this item will not have any properties in its property sets until the driver or application actually fills them in.
 old-location: image\wiascreatechildappitem.htm
 tech.root: image
-ms.assetid: 1dba59b0-5eac-4507-bd42-517a856aa864
 ms.date: 05/03/2018
 keywords: ["wiasCreateChildAppItem function"]
 ms.keywords: image.wiascreatechildappitem, wiamdef/wiasCreateChildAppItem, wiasCreateChildAppItem, wiasCreateChildAppItem function [Imaging Devices], wiasFncs_63e9cbb1-6435-433b-a27f-36b66042be8a.xml
@@ -50,28 +49,28 @@ The **wiasCreateChildAppItem** function creates a new application item and inser
 
 ## -parameters
 
-### -param pParentWiasContext 
+### -param pParentWiasContext [in]
 
-[in]
+
 Pointer to the item context to which the child will be added.
 
 ### -param lFlags
 
 Is reserved for system use.
 
-### -param bstrItemName 
+### -param bstrItemName [in]
 
-[in]
+
 Specifies a string that contains the item name without path information.
 
-### -param bstrFullItemName 
+### -param bstrFullItemName [in]
 
-[in]
+
 Specifies a string that contains the item name including path information.
 
-### -param ppWiasChildContext 
+### -param ppWiasChildContext [out]
 
-[out]
+
 Pointer to a memory location that receives the address of the newly created child item's context.
 
 ## -returns

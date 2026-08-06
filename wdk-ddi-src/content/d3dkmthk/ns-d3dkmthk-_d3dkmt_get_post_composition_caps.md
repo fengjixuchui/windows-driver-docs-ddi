@@ -2,7 +2,6 @@
 UID: NS:d3dkmthk._D3DKMT_GET_POST_COMPOSITION_CAPS
 title: _D3DKMT_GET_POST_COMPOSITION_CAPS (d3dkmthk.h)
 description: Used to get post composition capabilities.
-ms.assetid: 0934194f-5638-4c75-b134-acebf647745e
 ms.date: 10/19/2018
 keywords: ["D3DKMT_GET_POST_COMPOSITION_CAPS structure"]
 ms.keywords: _D3DKMT_GET_POST_COMPOSITION_CAPS, D3DKMT_GET_POST_COMPOSITION_CAPS,
@@ -35,6 +34,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_GET_POST_COMPOSITION_CAPS
+ - D3DKMT_GET_POST_COMPOSITION_CAPS
 dev_langs:
  - c++
 ---
@@ -56,13 +56,13 @@ A handle to the graphics adapter.
 
 The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the monitor is connected to.
 
-### -field MaxStretchFactor
+### -field MaxStretchFactor [out]
 
-[out] The maximum stretch factor.
+The maximum stretch factor.
 
-### -field MaxShrinkFactor
+### -field MaxShrinkFactor [out]
 
-[out] The maximum shrink factor.
+The maximum shrink factor.
 
 ## -remarks
 

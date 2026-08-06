@@ -4,7 +4,6 @@ title: _D3DDDICB_UNLOCK (d3dumddi.h)
 description: The D3DDDICB_UNLOCK structure describes allocations to unlock.
 old-location: display\d3dddicb_unlock.htm
 tech.root: display
-ms.assetid: 1e0e6313-1dfa-4b68-8f58-bfa79f3124d6
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_UNLOCK structure"]
 ms.keywords: D3DDDICB_UNLOCK, D3DDDICB_UNLOCK structure [Display Devices], D3D_param_Structs_91515cd5-00b4-4ad6-a8a5-ff216ddec171.xml, _D3DDDICB_UNLOCK, d3dumddi/D3DDDICB_UNLOCK, display.d3dddicb_unlock
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDICB_UNLOCK
  - D3DDDICB_UNLOCK
 ---
 
@@ -52,13 +52,13 @@ The D3DDDICB_UNLOCK structure describes allocations to unlock.
 
 ## -struct-fields
 
-### -field NumAllocations
+### -field NumAllocations [in]
 
-[in] The number of allocations in the array that is specified by <b>phAllocations</b>.
+The number of allocations in the array that is specified by <b>phAllocations</b>.
 
-### -field phAllocations
+### -field phAllocations [in]
 
-[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the allocations. The Microsoft Direct3D runtime's <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_allocatecb">pfnAllocateCb</a> function returns these handles. Therefore, the user-mode display driver uses these handles to unlock the allocations.
+An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the allocations. The Microsoft Direct3D runtime's <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_allocatecb">pfnAllocateCb</a> function returns these handles. Therefore, the user-mode display driver uses these handles to unlock the allocations.
 
 ## -see-also
 
@@ -67,3 +67,4 @@ The D3DDDICB_UNLOCK structure describes allocations to unlock.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_unlockcb">pfnUnlockCb</a>
+

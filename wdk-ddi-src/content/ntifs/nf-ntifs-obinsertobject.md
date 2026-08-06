@@ -1,11 +1,10 @@
 ---
 UID: NF:ntifs.ObInsertObject
 title: ObInsertObject function (ntifs.h)
-description: Reserved for system use.
+description: "Microsoft reserves the ObInsertObject function for internal use only. Don't use this function in your code."
 old-location: ifsk\obinsertobject.htm
 tech.root: ifsk
-ms.assetid: 2984b246-3e3c-4121-b7a0-d9509a1717a3
-ms.date: 04/16/2018
+ms.date: 05/24/2022
 keywords: ["ObInsertObject function"]
 ms.keywords: ObInsertObject, ObInsertObject function [Installable File System Drivers], ifsk.obinsertobject, ntifs/ObInsertObject, obref_9ecb8aa6-496e-4daf-96cf-d68ec5863e94.xml
 req.header: ntifs.h
@@ -43,16 +42,15 @@ api_name:
 
 # ObInsertObject function
 
-
 ## -description
 
-The <b>ObInsertObject</b> routine is reserved for system use.
+The **ObInsertObject** routine is reserved for system use.
 
 ## -parameters
 
 ### -param Object
 
-<p>Reserved.</p>
+Reserved.
 
 ### -param PassedAccessState
 
@@ -74,3 +72,6 @@ Reserved.
 
 Reserved.
 
+## -returns
+
+Reserved.

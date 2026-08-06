@@ -4,7 +4,6 @@ title: PFN_WSK_ABORT_EVENT (wsk.h)
 description: The WskAbortEvent event callback function notifies a WSK application that an incoming connection request on a listening socket that has conditional accept mode enabled has been dropped.
 old-location: netvista\wskabortevent.htm
 tech.root: netvista
-ms.assetid: 50e0ef5d-0577-4b5c-b541-fc78079a953c
 ms.date: 05/02/2018
 keywords: ["PFN_WSK_ABORT_EVENT callback function"]
 ms.keywords: PFN_WSK_ABORT_EVENT, PFN_WSK_ABORT_EVENT callback, WskAbortEvent, WskAbortEvent callback function [Network Drivers Starting with Windows Vista], netvista.wskabortevent, wsk/WskAbortEvent, wskref_592d9a56-6a77-4c24-aaec-e70f84d23e49.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wsk.h
 api_name:
- - WskAbortEvent
+ - PFN_WSK_ABORT_EVENT
 ---
 
 # PFN_WSK_ABORT_EVENT callback function
@@ -52,17 +51,17 @@ The
 
 ## -parameters
 
-### -param SocketContext 
+### -param SocketContext [in, optional]
 
-[in, optional]
+
 A pointer to the socket context for the listening socket on which the incoming connection request
      was received. The WSK application provided this pointer to the WSK subsystem when it called the 
      <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket">WskSocket</a> function to create the listening
      socket.
 
-### -param InspectID 
+### -param InspectID [in]
 
-[in]
+
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_inspect_id">WSK_INSPECT_ID</a> structure. The contents of
      the structure identify the incoming connection request that has been dropped.
@@ -147,3 +146,4 @@ A WSK application's <i>WskAbortEvent</i> event callback function must not wait f
 
 
 <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket">WskSocket</a>
+

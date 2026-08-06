@@ -4,7 +4,6 @@ title: StorPortNotification function (storport.h)
 description: The miniport driver uses the StorPortNotification routine to notify the Storport driver of certain events and conditions.
 old-location: storage\storportnotification.htm
 tech.root: storage
-ms.assetid: 3f361f50-3ca2-4fb6-828c-27928b50cf55
 ms.date: 05/09/2019
 keywords: ["StorPortNotification function"]
 ms.keywords: StorPortNotification, StorPortNotification routine [Storage Devices], storage.storportnotification, storport/StorPortNotification, storprt_5915c32e-be1b-4786-b391-67be5e61760f.xml
@@ -299,6 +298,10 @@ Lun [in, optional]
 
 A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls [StorPortInitialize](nf-storport-storportinitialize.md). The port driver frees this memory when it removes the device.
 
+### -param ...
+
+Additional Parameters.
+
 ## -returns
 
 None.
@@ -311,3 +314,4 @@ Because **StorPortNotification** returns VOID, the scanning engine should assume
 ## -see-also
 
 [StorPortInitialize](nf-storport-storportinitialize.md)
+

@@ -4,7 +4,6 @@ title: _NDIS_TCP_LARGE_SEND_OFFLOAD_V1 (ntddndis.h)
 description: The NDIS_TCP_LARGE_SEND_OFFLOAD_V1 structure provides large send offload version 1 (LSOV1) information in the NDIS_OFFLOAD structure.
 old-location: netvista\ndis_tcp_large_send_offload_v1.htm
 tech.root: netvista
-ms.assetid: 3e26b6ae-15e1-41d5-b00d-3e09c1534413
 ms.date: 05/02/2018
 keywords: ["NDIS_TCP_LARGE_SEND_OFFLOAD_V1 structure"]
 ms.keywords: "*PNDIS_TCP_LARGE_SEND_OFFLOAD_V1, NDIS_TCP_LARGE_SEND_OFFLOAD_V1, NDIS_TCP_LARGE_SEND_OFFLOAD_V1 structure [Network Drivers Starting with Windows Vista], PNDIS_TCP_LARGE_SEND_OFFLOAD_V1, PNDIS_TCP_LARGE_SEND_OFFLOAD_V1 structure pointer [Network Drivers Starting with Windows Vista], _NDIS_TCP_LARGE_SEND_OFFLOAD_V1, netvista.ndis_tcp_large_send_offload_v1, ntddndis/NDIS_TCP_LARGE_SEND_OFFLOAD_V1, ntddndis/PNDIS_TCP_LARGE_SEND_OFFLOAD_V1, tcpip_offload_ref_2a3bb0f8-f05b-462f-984d-774f607ee0da.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_TCP_LARGE_SEND_OFFLOAD_V1
+ - PNDIS_TCP_LARGE_SEND_OFFLOAD_V1
  - NDIS_TCP_LARGE_SEND_OFFLOAD_V1
 ---
 
@@ -196,7 +197,7 @@ The miniport adapter supports the feature that the member specifies
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 
@@ -210,8 +211,9 @@ The miniport adapter supports the feature that the member specifies
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 
 <a href="/windows-hardware/drivers/network/oid-tcp-offload-current-config">OID_TCP_OFFLOAD_CURRENT_CONFIG</a>
+

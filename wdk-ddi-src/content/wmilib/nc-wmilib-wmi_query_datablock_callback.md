@@ -4,7 +4,6 @@ title: WMI_QUERY_DATABLOCK_CALLBACK (wmilib.h)
 description: The DpWmiQueryDataBlock routine returns either a single instance or all instances of a data block. This routine is required.
 old-location: kernel\dpwmiquerydatablock.htm
 tech.root: kernel
-ms.assetid: c8996367-9ac5-4725-93ff-f13a334fbc5a
 ms.date: 04/30/2018
 keywords: ["WMI_QUERY_DATABLOCK_CALLBACK callback function"]
 ms.keywords: DpWmiQueryDataBlock, DpWmiQueryDataBlock callback function [Kernel-Mode Driver Architecture], WMI_QUERY_DATABLOCK_CALLBACK, WMI_QUERY_DATABLOCK_CALLBACK callback, k903_9a558594-4fe5-4e18-823a-8b487e1770d9.xml, kernel.dpwmiquerydatablock, wmilib/DpWmiQueryDataBlock
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wmilib.h
 api_name:
- - DpWmiQueryDataBlock
+ - WMI_QUERY_DATABLOCK_CALLBACK
 ---
 
 # WMI_QUERY_DATABLOCK_CALLBACK callback function
@@ -50,44 +49,44 @@ The <i>DpWmiQueryDataBlock</i> routine returns either a single instance or all i
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the driver's WDM <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure.
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Pointer to the IRP.
 
-### -param GuidIndex 
+### -param GuidIndex [in]
 
-[in]
+
 Specifies the data block by supplying a zero-based index into the list of GUIDs that the driver provided in the <a href="/windows-hardware/drivers/ddi/wmilib/ns-wmilib-_wmilib_context">WMILIB_CONTEXT</a> structure it passed to <a href="/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol">WmiSystemControl</a>.
 
-### -param InstanceIndex 
+### -param InstanceIndex [in]
 
-[in]
+
 If <i>DpWmiQueryDataBlock</i> is called in response to an <a href="/windows-hardware/drivers/kernel/irp-mn-query-single-instance">IRP_MN_QUERY_SINGLE_INSTANCE</a> request, <i>InstanceIndex </i>specifies a zero-based index that indicates the instance of the specified data block to be queried. If <i>DpWmiQueryDataBlock</i> is called in response to an <a href="/windows-hardware/drivers/kernel/irp-mn-query-all-data">IRP_MN_QUERY_ALL_DATA</a> request, <i>InstanceIndex </i>is zero.
 
-### -param InstanceCount 
+### -param InstanceCount [in]
 
-[in]
+
 If <i>DpWmiQueryDataBlock</i> is called in response to an <a href="/windows-hardware/drivers/kernel/irp-mn-query-single-instance">IRP_MN_QUERY_SINGLE_INSTANCE</a> request, <i>InstanceCount </i>is 1. If <i>DpWmiQueryDataBlock</i> is called in response to an <a href="/windows-hardware/drivers/kernel/irp-mn-query-all-data">IRP_MN_QUERY_ALL_DATA</a> request, <i>InstanceCount </i>is the number of instances to be returned.
 
-### -param InstanceLengthArray 
+### -param InstanceLengthArray [in, out]
 
-[in, out]
+
 Pointer to a caller-supplied, <i>InstanceCount</i>-sized array of ULONG elements. The driver fills in each array element to indicate the length of each instance that was returned.  If <i>BufferAvail</i> is zero, <i>InstanceLengthArray</i> is <b>NULL</b>.
 
-### -param BufferAvail 
+### -param BufferAvail [in]
 
-[in]
+
 Specifies the maximum number of bytes that are available to receive data in the buffer at <i>Buffer</i>. If this value is zero, the caller is requesting that the driver specify the required buffer size in its call to <a href="/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmicompleterequest">WmiCompleteRequest</a>. See the Remarks section for more information.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 Pointer to the buffer to receive instance data. If the buffer is large enough to receive all of the data, the driver writes the instance data to the buffer with each instance aligned on an 8-byte boundary. If the buffer is too small to receive all of the data, the driver calls <a href="/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmicompleterequest">WmiCompleteRequest</a> with <i>BufferUsed</i> set to the size required.
 
 ## -returns
@@ -145,3 +144,4 @@ For more information about implementing this routine, see <a href="/windows-hard
 
 
 <a href="/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol">WmiSystemControl</a>
+

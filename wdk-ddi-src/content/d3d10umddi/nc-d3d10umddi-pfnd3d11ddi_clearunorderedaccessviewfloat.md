@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_CLEARUNORDEREDACCESSVIEWFLOAT
 title: PFND3D11DDI_CLEARUNORDEREDACCESSVIEWFLOAT (d3d10umddi.h)
 description: The ClearUnorderedAccessViewFLOAT function clears the specified unordered-access view by setting it to a constant value.
 old-location: display\clearunorderedaccessviewfloat.htm
-ms.assetid: 31734efd-0c17-4476-918d-942c015072bd
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_CLEARUNORDEREDACCESSVIEWFLOAT callback function"]
 ms.keywords: ClearUnorderedAccessViewFLOAT, ClearUnorderedAccessViewFLOAT callback function [Display Devices], PFND3D11DDI_CLEARUNORDEREDACCESSVIEWFLOAT, PFND3D11DDI_CLEARUNORDEREDACCESSVIEWFLOAT callback, UserModeDisplayDriverDx11_Functions_002fe9ed-bdd4-46c4-b7fe-6b783ab47060.xml, d3d10umddi/ClearUnorderedAccessViewFLOAT, display.clearunorderedaccessviewfloat
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - ClearUnorderedAccessViewFLOAT
+ - PFND3D11DDI_CLEARUNORDEREDACCESSVIEWFLOAT
 ---
 
 # PFND3D11DDI_CLEARUNORDEREDACCESSVIEWFLOAT callback function
@@ -50,22 +49,22 @@ The <b>ClearUnorderedAccessViewFLOAT</b> function clears the specified unordered
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hUnorderedAccessView* [in]
 
 A handle to the unordered-access view to clear.
 
-### -param FLOAT
+### -param FLOAT [in]
 
 [4]
-[in]
+
 
 A four-element array of single-precision float vectors that the driver uses to clear an unordered-access view.
 
@@ -84,3 +83,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

@@ -4,7 +4,6 @@ title: UPSWaitForStateChange function (upssvc.h)
 description: The UPSWaitForStateChange function waits until a specified UPS state changes, or until a time-out interval elapses.
 old-location: battery\upswaitforstatechange.htm
 tech.root: battery
-ms.assetid: ac78dda4-6d14-441b-8e79-3245f7253875
 ms.date: 02/15/2018
 keywords: ["UPSWaitForStateChange function"]
 ms.keywords: UPSWaitForStateChange, UPSWaitForStateChange function [Battery Devices], UPS_fns_8921d5d9-c4d0-496f-b531-a697ac06da93.xml, battery.upswaitforstatechange, upssvc/UPSWaitForStateChange
@@ -50,9 +49,9 @@ The <b>UPSWaitForStateChange</b> function waits until a specified UPS state chan
 
 ## -parameters
 
-### -param aCurrentState 
+### -param aCurrentState [in]
 
-[in]
+
 Specifies the UPS state on which to wait. When the state of the UPS system changes from the specified state to any other state, the function returns. The specified value can be one of the following:
 
 
@@ -81,9 +80,9 @@ Utility-supplied power is inadequate, and the UPS batteries are critically low.
 
 Communication with the UPS is not currently established.
 
-### -param anInterval 
+### -param anInterval [in]
 
-[in]
+
 Specifies a time-out interval, in milliseconds, for the function. If the UPS state has not changed from the specified state when the interval elapses, the function returns. A value of INFINITE means the interval never elapses.
 
 ## -remarks

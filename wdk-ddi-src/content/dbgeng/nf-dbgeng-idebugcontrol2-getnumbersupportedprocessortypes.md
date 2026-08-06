@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl2.GetNumberSupportedProcessorTypes
 title: IDebugControl2::GetNumberSupportedProcessorTypes (dbgeng.h)
-description: The GetNumberSupportedProcessorTypes method returns the number of processor types supported by the engine.
+description: Learn about the GetNumberSupportedProcessorTypes method, which returns the number of processor types supported by the engine.
 old-location: debugger\getnumbersupportedprocessortypes.htm
 tech.root: debugger
-ms.assetid: 6057fd27-75be-403b-a939-7865de45e031
 ms.date: 05/03/2018
 keywords: ["IDebugControl2::GetNumberSupportedProcessorTypes"]
 ms.keywords: GetNumberSupportedProcessorTypes, GetNumberSupportedProcessorTypes method [Windows Debugging], GetNumberSupportedProcessorTypes method [Windows Debugging],IDebugControl interface, GetNumberSupportedProcessorTypes method [Windows Debugging],IDebugControl2 interface, GetNumberSupportedProcessorTypes method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],GetNumberSupportedProcessorTypes method, IDebugControl2 interface [Windows Debugging],GetNumberSupportedProcessorTypes method, IDebugControl2.GetNumberSupportedProcessorTypes, IDebugControl2::GetNumberSupportedProcessorTypes, IDebugControl3 interface [Windows Debugging],GetNumberSupportedProcessorTypes method, IDebugControl3::GetNumberSupportedProcessorTypes, IDebugControl::GetNumberSupportedProcessorTypes, IDebugControl_5b3a8335-0e6f-4f83-9549-fa53ce9eb1d5.xml, dbgeng/IDebugControl2::GetNumberSupportedProcessorTypes, dbgeng/IDebugControl3::GetNumberSupportedProcessorTypes, dbgeng/IDebugControl::GetNumberSupportedProcessorTypes, debugger.getnumbersupportedprocessortypes
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.GetNumberSupportedProcessorTypes
- - IDebugControl2.GetNumberSupportedProcessorTypes
- - IDebugControl3.GetNumberSupportedProcessorTypes
+ - IDebugControl2::GetNumberSupportedProcessorTypes
 ---
 
 # IDebugControl2::GetNumberSupportedProcessorTypes
@@ -52,9 +49,9 @@ The GetNumberSupportedProcessorTypes method returns the number of processor type
 
 ## -parameters
 
-### -param Number 
+### -param Number [out]
 
-[out]
+
 Receives the number of processor types.
 
 ## -returns
@@ -98,3 +95,4 @@ For more information, see <a href="/windows-hardware/drivers/debugger/target-inf
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
+

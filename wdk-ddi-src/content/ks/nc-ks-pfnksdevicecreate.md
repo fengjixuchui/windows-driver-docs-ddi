@@ -4,7 +4,6 @@ title: PFNKSDEVICECREATE (ks.h)
 description: An AVStream minidriver's AVStrMiniDeviceAdd routine notifies the minidriver that AVStream's PnP AddDevice routine has completed.
 old-location: stream\avstrminideviceadd.htm
 tech.root: stream
-ms.assetid: 8f7168c3-0c28-4802-af34-45b46c1b6827
 ms.date: 04/23/2018
 keywords: ["PFNKSDEVICECREATE callback function"]
 ms.keywords: AVStrMiniDeviceAdd, AVStrMiniDeviceAdd routine [Streaming Media Devices], PFNKSDEVICECREATE, avstclbk_1cba196f-c0c6-42fb-8674-52e0fad4a337.xml, ks/AVStrMiniDeviceAdd, stream.avstrminideviceadd
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - AVStrMiniDeviceAdd
+ - PFNKSDEVICECREATE
 ---
 
 # PFNKSDEVICECREATE callback function
@@ -50,9 +49,9 @@ An AVStream minidriver's <i>AVStrMiniDeviceAdd</i> routine notifies the minidriv
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice">KSDEVICE</a> structure describing the functional device object (FDO) that has just been created.
 
 ## -returns
@@ -74,3 +73,4 @@ This routine is optional.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice_dispatch">KSDEVICE_DISPATCH</a>
+

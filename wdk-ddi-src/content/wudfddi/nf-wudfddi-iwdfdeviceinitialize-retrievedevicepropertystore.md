@@ -4,7 +4,6 @@ title: IWDFDeviceInitialize::RetrieveDevicePropertyStore (wudfddi.h)
 description: The RetrieveDevicePropertyStore method retrieves a device property store that clients can read and write device properties through.
 old-location: wdf\iwdfdeviceinitialize_retrievedevicepropertystore.htm
 tech.root: wdf
-ms.assetid: 57d03610-b195-4691-8ee9-26c93560700c
 ms.date: 02/26/2018
 keywords: ["IWDFDeviceInitialize::RetrieveDevicePropertyStore"]
 ms.keywords: IWDFDeviceInitialize interface,RetrieveDevicePropertyStore method, IWDFDeviceInitialize.RetrieveDevicePropertyStore, IWDFDeviceInitialize::RetrieveDevicePropertyStore, RetrieveDevicePropertyStore, RetrieveDevicePropertyStore method, RetrieveDevicePropertyStore method,IWDFDeviceInitialize interface, UMDFDeviceObjectRef_88af313a-0b2d-472b-b96c-549a500b0782.xml, umdf.iwdfdeviceinitialize_retrievedevicepropertystore, wdf.iwdfdeviceinitialize_retrievedevicepropertystore, wudfddi/IWDFDeviceInitialize::RetrieveDevicePropertyStore
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDeviceInitialize.RetrieveDevicePropertyStore
+ - IWDFDeviceInitialize::RetrieveDevicePropertyStore
 ---
 
 # IWDFDeviceInitialize::RetrieveDevicePropertyStore
@@ -52,24 +51,24 @@ The <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice-retriev
 
 ## -parameters
 
-### -param pcwszServiceName 
+### -param pcwszServiceName [in, optional]
 
-[in, optional]
+
 A pointer to a <b>NULL</b>-terminated string that represents the name of the device property store. This parameter is optional. The driver can pass <b>NULL</b> if the driver does not supply a name for a device property store.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_property_store_retrieve_flags">WDF_PROPERTY_STORE_RETRIEVE_FLAGS</a>-typed value that identifies how to retrieve the device property store.
 
-### -param ppPropStore 
+### -param ppPropStore [out]
 
-[out]
+
 A pointer to a buffer that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfnamedpropertystore">IWDFNamedPropertyStore</a> interface that is used to retrieve device properties.
 
-### -param pDisposition 
+### -param pDisposition [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives a <a href="/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_property_store_disposition">WDF_PROPERTY_STORE_DISPOSITION</a>-typed value that identifies whether the framework created the device property store or the device property store already existed. This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the disposition information.
 
 ## -returns
@@ -97,3 +96,4 @@ For more information, see <a href="/windows-hardware/drivers/wdf/using-the-regis
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_property_store_retrieve_flags">WDF_PROPERTY_STORE_RETRIEVE_FLAGS</a>
+

@@ -4,7 +4,6 @@ title: IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0 (wudfddi.h)
 description: A driver's OnArmWakeFromS0 callback function arms (that is, enables) a device so that it can trigger a wake signal while in a low-power device state, if the system remains in the system working state (S0).
 old-location: wdf\ipowerpolicycallbackwakefroms0_onarmwakefroms0.htm
 tech.root: wdf
-ms.assetid: 4801a7c4-8bd4-4372-bcdd-49e5570d833e
 ms.date: 02/26/2018
 keywords: ["IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0"]
 ms.keywords: IPowerPolicyCallbackWakeFromS0 interface,OnArmWakeFromS0 method, IPowerPolicyCallbackWakeFromS0.OnArmWakeFromS0, IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0, OnArmWakeFromS0, OnArmWakeFromS0 method, OnArmWakeFromS0 method,IPowerPolicyCallbackWakeFromS0 interface, UMDFDeviceObjectRef_7b2a2ca8-d8d4-4da2-ae51-15aabf150973.xml, umdf.ipowerpolicycallbackwakefroms0_onarmwakefroms0, wdf.ipowerpolicycallbackwakefroms0_onarmwakefroms0, wudfddi/IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IPowerPolicyCallbackWakeFromS0.OnArmWakeFromS0
+ - IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0
 ---
 
 # IPowerPolicyCallbackWakeFromS0::OnArmWakeFromS0
@@ -52,9 +51,9 @@ A driver's <b>OnArmWakeFromS0</b> callback function arms (that is, enables) a de
 
 ## -parameters
 
-### -param pWdfDevice 
+### -param pWdfDevice [in]
 
-[in]
+
 A pointer to the <b>IWDFDevice</b> interface of the device object that represents one of the driver's devices.
 
 ## -returns
@@ -122,3 +121,4 @@ For more information about this callback function, see <a href="/windows-hardwar
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipowerpolicycallbackwakefroms0-onwakefroms0triggered">IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered</a>
+

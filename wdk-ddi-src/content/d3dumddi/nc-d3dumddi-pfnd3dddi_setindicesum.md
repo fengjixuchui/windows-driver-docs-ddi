@@ -4,7 +4,6 @@ title: PFND3DDDI_SETINDICESUM (d3dumddi.h)
 description: The SetIndicesUM function sets the current index buffer to the given user memory buffer.
 old-location: display\setindicesum.htm
 tech.root: display
-ms.assetid: 9ca38004-8953-4416-8552-c76813192561
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETINDICESUM callback function"]
 ms.keywords: PFND3DDDI_SETINDICESUM, PFND3DDDI_SETINDICESUM callback, SetIndicesUM, SetIndicesUM callback function [Display Devices], UserModeDisplayDriver_Functions_f692c944-6130-46e3-8e63-f3dbeb051782.xml, d3dumddi/SetIndicesUM, display.setindicesum
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - SetIndicesUM
-product:
- - Windows
+ - PFND3DDDI_SETINDICESUM
 ---
 
 # PFND3DDDI_SETINDICESUM callback function
@@ -56,13 +53,13 @@ The <i>SetIndicesUM</i> function sets the current index buffer to the given user
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *IndexSize* [in]
 
 The size, in bytes, of the indices that are contained in the index buffer. The value of this parameter is 2 if the indices are 16-bit quantities or 4 if the indices are 32-bit quantities.
 
-### -param Arg3
+### -param unnamedParam3
 
 *pUMBuffer* [in]
 
@@ -75,3 +72,4 @@ A pointer to the user-memory buffer that supplies the indices for the index buff
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

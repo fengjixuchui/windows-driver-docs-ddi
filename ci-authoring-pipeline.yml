@@ -1,0 +1,50 @@
+schedules:
+- cron: "10 13 * * 1-5"
+  displayName: "Morning run at 6:10 AM PT M-F"
+  branches:
+    include:
+    - main
+  always: true
+
+- cron: "52 20 * * 1-5"
+  displayName: "Afternoon run at 1:52 PM PT M-F"
+  branches:
+    include:
+    - main
+  always: true
+
+trigger:
+- main
+
+jobs:
+- job: MergeBranches
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - checkout: self
+    persistCredentials: true
+  - script: |
+      git config --global user.name "Ted Hudek"
+      git config --global user.email "tedhudek@users.noreply.github.com"
+      git remote add gh-public https://github.com/MicrosoftDocs/windows-driver-docs-ddi
+      git fetch gh-public
+      git checkout main
+      git merge gh-public/staging --no-ff --no-commit
+      if [ $? -eq 0 ]; then
+        git commit -m "Merged staging into main"
+        git push gh-public main:staging
+        git push origin main:main
+        git checkout release-amethyst
+        git merge main --no-ff --no-commit
+        if [ $? -eq 0 ]; then
+          git commit -m "Merged main into release"
+          git push origin release-amethyst
+        else
+          echo "Error merging main to release"
+          exit 1
+        fi
+      else
+        echo "Error merging gh-public/staging to main"
+        exit 1
+      fi
+    displayName: 'Merge and push branches'

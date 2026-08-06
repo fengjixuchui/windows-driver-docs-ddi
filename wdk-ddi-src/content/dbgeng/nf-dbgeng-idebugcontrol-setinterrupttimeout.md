@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl.SetInterruptTimeout
 title: IDebugControl::SetInterruptTimeout (dbgeng.h)
-description: The SetInterruptTimeout method sets the number of seconds that the debugger engine should wait when requesting a break into the debugger.
+description: Learn how the SetInterruptTimeout method sets the number of seconds that the debugger engine should wait when requesting a break into the debugger.
 old-location: debugger\setinterrupttimeout.htm
 tech.root: debugger
-ms.assetid: 93bc2a07-a6f7-45df-945d-81c6c53adb47
 ms.date: 05/03/2018
 keywords: ["IDebugControl::SetInterruptTimeout"]
 ms.keywords: IDebugControl interface [Windows Debugging],SetInterruptTimeout method, IDebugControl.SetInterruptTimeout, IDebugControl2 interface [Windows Debugging],SetInterruptTimeout method, IDebugControl2::SetInterruptTimeout, IDebugControl3 interface [Windows Debugging],SetInterruptTimeout method, IDebugControl3::SetInterruptTimeout, IDebugControl::SetInterruptTimeout, IDebugControl_c16219f4-97b7-451d-8f04-30aa262667f6.xml, SetInterruptTimeout, SetInterruptTimeout method [Windows Debugging], SetInterruptTimeout method [Windows Debugging],IDebugControl interface, SetInterruptTimeout method [Windows Debugging],IDebugControl2 interface, SetInterruptTimeout method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::SetInterruptTimeout, dbgeng/IDebugControl3::SetInterruptTimeout, dbgeng/IDebugControl::SetInterruptTimeout, debugger.setinterrupttimeout
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.SetInterruptTimeout
- - IDebugControl2.SetInterruptTimeout
- - IDebugControl3.SetInterruptTimeout
+ - IDebugControl::SetInterruptTimeout
 ---
 
 # IDebugControl::SetInterruptTimeout
@@ -52,9 +49,9 @@ The <b>SetInterruptTimeout</b> method sets the number of seconds that the <a hre
 
 ## -parameters
 
-### -param Seconds 
+### -param Seconds [in]
 
-[in]
+
 Specifies the number of seconds that the engine should wait for the target when requesting a break into the debugger.
 
 ## -returns
@@ -110,3 +107,4 @@ Most targets do not support interrupt time-outs.  Live user-mode debugging is on
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setinterrupt">SetInterrupt</a>
+

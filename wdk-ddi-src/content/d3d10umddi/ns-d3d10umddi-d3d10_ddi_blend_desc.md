@@ -3,8 +3,7 @@ UID: NS:d3d10umddi.D3D10_DDI_BLEND_DESC
 title: D3D10_DDI_BLEND_DESC (d3d10umddi.h)
 description: The D3D10_DDI_BLEND_DESC structure describes a blend state.
 old-location: display\d3d10_ddi_blend_desc.htm
-ms.assetid: dbb6e5ed-8d24-4b50-826b-f05f44de676a
-ms.date: 05/10/2018
+ms.date: 04/01/2021
 keywords: ["D3D10_DDI_BLEND_DESC structure"]
 ms.keywords: D3D10_DDI_BLEND_DESC, D3D10_DDI_BLEND_DESC structure [Display Devices], UMDisplayDriver_Dx10param_Structs_8dd04d52-105b-4cc3-be87-5900625dcd6d.xml, d3d10umddi/D3D10_DDI_BLEND_DESC, display.d3d10_ddi_blend_desc
 req.header: d3d10umddi.h
@@ -43,69 +42,62 @@ api_name:
 
 # D3D10_DDI_BLEND_DESC structure
 
-
 ## -description
 
-The D3D10_DDI_BLEND_DESC structure describes a blend state.
+The **D3D10_DDI_BLEND_DESC** structure describes a blend state.
 
 ## -struct-fields
 
-### -field AlphaToCoverageEnable
+### -field AlphaToCoverageEnable [in]
 
-[in] A Boolean value that specifies whether transparency coverage is enabled. <b>TRUE</b> indicates transparency coverage is enabled; <b>FALSE</b> indicates transparency coverage is disabled. This member is relevant for multiple-sample antialiasing only.
+A Boolean value that specifies whether transparency coverage is enabled. **TRUE** indicates transparency coverage is enabled; **FALSE** indicates transparency coverage is disabled. This member is relevant for multiple-sample antialiasing only.
 
-### -field BlendEnable
+### -field BlendEnable [in]
 
-[in] An array of Boolean values that specify whether blending is enabled for each associated render target. <b>TRUE</b> indicates blending is enabled; <b>FALSE</b> indicates blending is disabled.
+An array of Boolean values that specify whether blending is enabled for each associated render target. **TRUE** indicates blending is enabled; **FALSE** indicates blending is disabled.
 
-### -field SrcBlend
+### -field SrcBlend [in]
 
-      [in] A <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d10_ddi_blend">D3D10_DDI_BLEND</a>-typed value that indicates the blend mode of the source for all enabled render targets.
+A [**D3D10_DDI_BLEND**](ne-d3d10umddi-d3d10_ddi_blend.md)-typed value that indicates the blend mode of the source for all enabled render targets.
 
-### -field DestBlend
+### -field DestBlend [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d10_ddi_blend">D3D10_DDI_BLEND</a>-typed value that indicates the blend mode of the destination for all enabled render targets.
+A [**D3D10_DDI_BLEND**](ne-d3d10umddi-d3d10_ddi_blend.md)-typed value that indicates the blend mode of the destination for all enabled render targets.
 
-### -field BlendOp
+### -field BlendOp [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d10_ddi_blend_op">D3D10_DDI_BLEND_OP</a>-typed value that indicates the blending operation for all enabled render targets.
+A [**D3D10_DDI_BLEND_OP**](ne-d3d10umddi-d3d10_ddi_blend_op.md)-typed value that indicates the blending operation for all enabled render targets.
 
-### -field SrcBlendAlpha
+### -field SrcBlendAlpha [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d10_ddi_blend">D3D10_DDI_BLEND</a>-typed value that indicates the transparency blend mode of the source for all enabled render targets.
+A [**D3D10_DDI_BLEND**](ne-d3d10umddi-d3d10_ddi_blend.md)-typed value that indicates the transparency blend mode of the source for all enabled render targets.
 
-### -field DestBlendAlpha
+### -field DestBlendAlpha [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d10_ddi_blend">D3D10_DDI_BLEND</a>-typed value that indicates the transparency blend mode of the destination for all enabled render targets.
+A [**D3D10_DDI_BLEND**](ne-d3d10umddi-d3d10_ddi_blend.md)-typed value that indicates the transparency blend mode of the destination for all enabled render targets.
 
-### -field BlendOpAlpha
+### -field BlendOpAlpha [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d10_ddi_blend_op">D3D10_DDI_BLEND_OP</a>-typed value that indicates the transparency blending operation for all enabled render targets.
+A [**D3D10_DDI_BLEND_OP**](ne-d3d10umddi-d3d10_ddi_blend_op.md)-typed value that indicates the transparency blending operation for all enabled render targets.
 
-### -field RenderTargetWriteMask
+### -field RenderTargetWriteMask [in]
 
-[in] An array of 8-bit bitwise values that indicate the write properties for each associated render target. Each bit of each element must be set to one of the following values from the D3D10_DDI_COLOR_WRITE_ENABLE enumeration.
+An array of 8-bit bitwise values that indicate the write properties for each associated render target. Each bit of each element must be set to one of the following values from the D3D10_DDI_COLOR_WRITE_ENABLE enumeration.
 
 |Value|Meaning|
 |--- |--- |
-|D3D10_DDI_COLOR_WRITE_ENABLE_RED (1)|Writes red|
-|D3D10_DDI_COLOR_WRITE_ENABLE_GREEN (2)|Writes green|
-|D3D10_DDI_COLOR_WRITE_ENABLE_BLUE (4)|Writes blue|
-|D3D10_DDI_COLOR_WRITE_ENABLE_ALPHA (8)|Writes a transparency level|
-|D3D10_DDI_COLOR_WRITE_ENABLE_ALL (1 | 2 | 4 | 8)|Writes red, green, blue, and a transparency level|
+|D3D10_DDI_COLOR_WRITE_ENABLE_RED (1)   |Writes red|
+|D3D10_DDI_COLOR_WRITE_ENABLE_GREEN (2) |Writes green|
+|D3D10_DDI_COLOR_WRITE_ENABLE_BLUE (4)  |Writes blue|
+|D3D10_DDI_COLOR_WRITE_ENABLE_ALPHA (8) |Writes a transparency level|
+|D3D10_DDI_COLOR_WRITE_ENABLE_ALL (bitwise OR of 1,2,4,8)|Writes red, green, blue, and a transparency level|
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_calcprivateblendstatesize">CalcPrivateBlendStateSize</a>
+[**CalcPrivateBlendStateSize**](nc-d3d10umddi-pfnd3d10ddi_calcprivateblendstatesize.md)
 
+[**CreateBlendState**](nc-d3d10umddi-pfnd3d10ddi_createblendstate.md)
 
+[**D3D10_DDI_BLEND**](ne-d3d10umddi-d3d10_ddi_blend.md)
 
-<a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createblendstate">CreateBlendState</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d10_ddi_blend">D3D10_DDI_BLEND</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d10_ddi_blend_op">D3D10_DDI_BLEND_OP</a>
+[**D3D10_DDI_BLEND_OP**](ne-d3d10umddi-d3d10_ddi_blend_op.md)

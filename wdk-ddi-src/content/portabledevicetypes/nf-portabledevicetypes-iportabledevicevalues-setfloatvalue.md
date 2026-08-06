@@ -4,7 +4,6 @@ title: IPortableDeviceValues::SetFloatValue (portabledevicetypes.h)
 description: Adds a new FLOAT value (type VT_R4) or overwrites an existing one.
 old-location: wpddk\iportabledevicevalues_setfloatvalue.htm
 tech.root: wpd_dk
-ms.assetid: 60e4ce74-5d8e-49d4-af16-84ea66557b60
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::SetFloatValue"]
 ms.keywords: IPortableDeviceValues interface,SetFloatValue method, IPortableDeviceValues.SetFloatValue, IPortableDeviceValues::SetFloatValue, IPortableDeviceValuesSetFloatValue, SetFloatValue, SetFloatValue method, SetFloatValue method,IPortableDeviceValues interface, portabledevicetypes/IPortableDeviceValues::SetFloatValue, wpddk.iportabledevicevalues_setfloatvalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.SetFloatValue
+ - IPortableDeviceValues::SetFloatValue
 ---
 
 # IPortableDeviceValues::SetFloatValue
@@ -51,14 +50,14 @@ Adds a new <b>FLOAT</b> value (type VT_R4) or overwrites an existing one.
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> that specifies the item to create or overwrite.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 A <b>FLOAT</b> that contains the new value.
 
 ## -returns
@@ -94,3 +93,4 @@ If an existing value has the same key that is specified by the <i>key</i> parame
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-getfloatvalue">IPortableDeviceValues::GetFloatValue</a>
+

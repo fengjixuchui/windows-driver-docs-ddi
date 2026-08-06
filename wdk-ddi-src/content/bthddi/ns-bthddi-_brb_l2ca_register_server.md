@@ -4,7 +4,6 @@ title: _BRB_L2CA_REGISTER_SERVER (bthddi.h)
 description: A profile driver uses the _BRB_L2CA_REGISTER_SERVER structure to register itself as a server capable of receiving L2CAP connections from remote Bluetooth devices.
 old-location: bltooth\_brb_l2ca_register_server.htm
 tech.root: bltooth
-ms.assetid: b7eca29a-7e3c-4cfc-b285-42faca263c5e
 ms.date: 04/27/2018
 keywords: ["BRB_L2CA_REGISTER_SERVER structure"]
 ms.keywords: "_BRB_L2CA_REGISTER_SERVER, _BRB_L2CA_REGISTER_SERVER structure [Bluetooth Devices], bltooth._brb_l2ca_register_server, bth_structs_c803cec6-8a80-4d75-9c81-fd479ee37a97.xml, bthddi/_BRB_L2CA_REGISTER_SERVER"
@@ -133,14 +132,14 @@ A pointer to an object to pass to the
      <b>IndicationCallback</b> member. The Bluetooth driver stack will decrease the reference count of the
      object when the profile driver 
      <a href="/previous-versions/ff536657(v=vs.85)">builds and sends</a> a 
-     <a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_register_server">
+     <a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_unregister_server">
      BRB_L2CA_UNREGISTER_SERVER</a> request.
 
 ### -field ServerHandle
 
 Handle to the L2CAP server, if successfully returned. When the profile driver should no longer
      receive remote connect indications it should pass this handle to 
-     <a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_register_server">
+     <a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_unregister_server">
      BRB_L2CA_UNREGISTER_SERVER</a>.
 
 ## -remarks
@@ -186,7 +185,7 @@ After a connection is established, the profile driver can issue other BRBs to co
 
 To stop receiving remote connection notifications, a profile driver should 
     <a href="/previous-versions/ff536657(v=vs.85)">build and send</a> a 
-    <a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_register_server">
+    <a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_unregister_server">
     BRB_L2CA_UNREGISTER_SERVER</a> request.
 
 While this procedure allows a profile driver to accept incoming connection requests, it does not
@@ -205,7 +204,7 @@ While this procedure allows a profile driver to accept incoming connection reque
 
 
 
-<a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_register_server">BRB_L2CA_UNREGISTER_SERVER</a>
+<a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_unregister_server">BRB_L2CA_UNREGISTER_SERVER</a>
 
 
 

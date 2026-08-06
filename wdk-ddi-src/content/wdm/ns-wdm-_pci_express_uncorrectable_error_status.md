@@ -1,10 +1,9 @@
 ---
 UID: NS:wdm._PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS
 title: _PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS (wdm.h)
-description: The PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS structure describes a PCI Express (PCIe) uncorrectable error status register of a PCIe advanced error reporting capability structure.
+description: The _PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS structure (wdm.h) describes a PCI Express (PCIe) uncorrectable error status register.
 old-location: pci\pci_express_uncorrectable_error_status.htm
 tech.root: PCI
-ms.assetid: 9d7dcdee-052a-4082-a337-be3a35c5eef9
 ms.date: 02/24/2018
 keywords: ["PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS structure"]
 ms.keywords: "*PPCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS, PCI.pci_express_uncorrectable_error_status, PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS, PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS union [Buses], PPCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS, PPCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS union pointer [Buses], _PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS, pci_struct_9341a010-06c8-46ee-931f-2a67756c12d2.xml, wdm/PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS, wdm/PPCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: PASSIVE_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS, *PPCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS
-req.product: Windows 10 or later.
 f1_keywords:
  - _PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS
  - wdm/_PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS
+ - PPCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS
  - PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS
 ---
 
@@ -62,79 +62,89 @@ The PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS structure describes a PCI Express (PC
 A ULONG representation of the contents of the PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS structure.
 
 
-#### - CompleterAbort
+### -field DUMMYSTRUCTNAME.CompleterAbort
 
 A single bit that indicates that a completer abort has occurred.
 
 
-#### - CompletionTimeout
+### -field DUMMYSTRUCTNAME.CompletionTimeout
 
 A single bit that indicates that a completion timeout has occurred.
 
 
-#### - DataLinkProtocolError
+### -field DUMMYSTRUCTNAME.DataLinkProtocolError
 
 A single bit that indicates that a data link protocol error has occurred.
 
 
-#### - ECRCError
+### -field DUMMYSTRUCTNAME.ECRCError
 
 A single bit that indicates that an end-to-end cyclic redundancy check (ECRC) error has occurred.
 
 
-#### - FlowControlProtocolError
+### -field DUMMYSTRUCTNAME.FlowControlProtocolError
 
 A single bit that indicates that a flow control protocol error has occurred.
 
 
-#### - MalformedTLP
+### -field DUMMYSTRUCTNAME.MalformedTLP
 
 A single bit that indicates that a malformed transaction layer packet (TLP) has been detected.
 
 
-#### - PoisonedTLP
+### -field DUMMYSTRUCTNAME.PoisonedTLP
 
 A single bit that indicates that a poisoned transaction layer packet (TLP) has been detected.
 
 
-#### - ReceiverOverflow
+### -field DUMMYSTRUCTNAME.ReceiverOverflow
 
 A single bit that indicates that the receiver has overflowed.
 
 
-#### - Reserved1
+### -field DUMMYSTRUCTNAME.Reserved1
 
 Reserved.
 
 
-#### - Reserved2
+### -field DUMMYSTRUCTNAME.Reserved2
 
 Reserved.
 
 
-#### - Reserved3
+### -field DUMMYSTRUCTNAME.Reserved3
 
 Reserved.
 
 
-#### - SurpriseDownError
+### -field DUMMYSTRUCTNAME.SurpriseDownError
 
 A single bit that indicates that a surprise down error has occurred.
 
 
-#### - Undefined
+### -field DUMMYSTRUCTNAME.Undefined
 
 A single bit that contains an undefined value. In versions of the <i>PCIe Specification</i> prior to version 1.1, this bit indicates that a link training error has occurred.
 
 
-#### - UnexpectedCompletion
+### -field DUMMYSTRUCTNAME.UnexpectedCompletion
 
 A single bit that indicates that an unexpected completion has occurred.
 
 
-#### - UnsupportedRequestError
+### -field DUMMYSTRUCTNAME.UnsupportedRequestError
 
 A single bit that indicates that an unsupported request error has occurred.
+
+### -field DUMMYSTRUCTNAME.AcsViolation
+
+### -field DUMMYSTRUCTNAME.UncorrectableInternalError
+
+### -field DUMMYSTRUCTNAME.MCBlockedTlp
+
+### -field DUMMYSTRUCTNAME.AtomicOpEgressBlocked
+
+### -field DUMMYSTRUCTNAME.TlpPrefixBlocked
 
 ## -syntax
 
@@ -178,3 +188,4 @@ A PCI_EXPRESS_UNCORRECTABLE_ERROR_STATUS structure is contained in the <a href="
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_pci_express_rootport_aer_capability">PCI_EXPRESS_ROOTPORT_AER_CAPABILITY</a>
+

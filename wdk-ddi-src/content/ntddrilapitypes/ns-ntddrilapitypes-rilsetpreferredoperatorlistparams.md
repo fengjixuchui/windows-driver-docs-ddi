@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILSETPREFERREDOPERATORLISTPARAMS
 title: RILSETPREFERREDOPERATORLISTPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILSETPREFERREDOPERATORLISTPARAMS structure in your code."
 old-location: netvista\rilsetpreferredoperatorlistparams.htm
 tech.root: netvista
-ms.assetid: cec1db47-640c-467a-ba7d-270659ebbba2
 ms.date: 05/02/2018
 keywords: ["RILSETPREFERREDOPERATORLISTPARAMS structure"]
 ms.keywords: "*LPRILSETPREFERREDOPERATORLISTPARAMS, RILSETPREFERREDOPERATORLISTPARAMS, RILSETPREFERREDOPERATORLISTPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsetpreferredoperatorlistparams, ntddrilapitypes/RILSETPREFERREDOPERATORLISTPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSETPREFERREDOPERATORLISTPARAMS
+ - LPRILSETPREFERREDOPERATORLISTPARAMS
 ---
 
 # RILSETPREFERREDOPERATORLISTPARAMS structure (ntddrilapitypes.h)

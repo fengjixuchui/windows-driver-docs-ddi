@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.READ_PORT_ULONG
 title: READ_PORT_ULONG function (wdm.h)
-description: The READ_PORT_ULONG routine reads a ULONG value from the specified port address.
+description: The READ_PORT_ULONG function (wdm.h) returns a ULONG value that is read from the specified port address in resident, mapped device memory.
 old-location: kernel\read_port_ulong.htm
 tech.root: kernel
-ms.assetid: 8a2f4429-b805-4a36-afdf-8b9c9a886951
 ms.date: 04/30/2018
 keywords: ["READ_PORT_ULONG function"]
 ms.keywords: READ_PORT_ULONG, READ_PORT_ULONG routine [Kernel-Mode Driver Architecture], k103_04794cc7-88eb-4456-8613-6fcf9947ebe4.xml, kernel.read_port_ulong, wdm/READ_PORT_ULONG
@@ -49,9 +48,9 @@ api_name:
 
 The <b>READ_PORT_ULONG</b> routine reads a ULONG value from the specified port address.
 
-## -parameters
+### -parameters
 
-#### - Port [in]
+### -param Port [in]
 
 Specifies the port address, which must be a mapped range in I/O space.
 

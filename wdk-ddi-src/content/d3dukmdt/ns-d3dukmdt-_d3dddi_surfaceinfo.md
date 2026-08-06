@@ -4,7 +4,6 @@ title: _D3DDDI_SURFACEINFO (d3dukmdt.h)
 description: The D3DDDI_SURFACEINFO structure describes a resource type, such as a surface.
 old-location: display\d3dddi_surfaceinfo.htm
 tech.root: display
-ms.assetid: 347edff7-b209-4b60-aabc-5ee7963c8164
 ms.date: 05/10/2018
 keywords: ["D3DDDI_SURFACEINFO structure"]
 ms.keywords: D3DDDI_SURFACEINFO, D3DDDI_SURFACEINFO structure [Display Devices], D3D_other_Structs_03e742b5-062c-46d3-bedf-25aee3582dfc.xml, _D3DDDI_SURFACEINFO, d3dukmdt/D3DDDI_SURFACEINFO, display.d3dddi_surfaceinfo
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dukmdt.h
 api_name:
+ - _D3DDDI_SURFACEINFO
  - D3DDDI_SURFACEINFO
 ---
 
@@ -52,31 +52,31 @@ The D3DDDI_SURFACEINFO structure describes a resource type, such as a surface.
 
 ## -struct-fields
 
-### -field Width
+### -field Width [in]
 
-[in] The width, in pixels, of the surface or volume or the length, in pixels, of the linear resource.
+The width, in pixels, of the surface or volume or the length, in pixels, of the linear resource.
 
-### -field Height
+### -field Height [in]
 
-[in] The height, in pixels, of the surface or volume.
+The height, in pixels, of the surface or volume.
 
-### -field Depth
+### -field Depth [in]
 
-[in] The depth, in pixels, of the volume.
+The depth, in pixels, of the volume.
 
-### -field pSysMem
+### -field pSysMem [in]
 
-[in] A pointer to a buffer that contains the contents of the resource if the resource exists in system memory and <b>NULL</b> if the resource exists in video memory.
+A pointer to a buffer that contains the contents of the resource if the resource exists in system memory and <b>NULL</b> if the resource exists in video memory.
 
 Note that this member is valid only if the <b>Pool</b> member of the <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddiarg_createresource">D3DDDIARG_CREATERESOURCE</a> structure for creating the resource is set to the D3DDDIPOOL_SYSTEMMEM value.
 
-### -field SysMemPitch
+### -field SysMemPitch [in]
 
-[in] The pitch, in bytes, of the surface--that is, the distance, in bytes, to the start of the next line.
+The pitch, in bytes, of the surface--that is, the distance, in bytes, to the start of the next line.
 
-### -field SysMemSlicePitch
+### -field SysMemSlicePitch [in]
 
-[in] The slice, in bytes, of the volume.
+The slice, in bytes, of the volume.
 
 ## -see-also
 
@@ -85,3 +85,4 @@ Note that this member is valid only if the <b>Pool</b> member of the <a href="/w
 
 
 <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddiarg_createresource">D3DDDIARG_CREATERESOURCE</a>
+

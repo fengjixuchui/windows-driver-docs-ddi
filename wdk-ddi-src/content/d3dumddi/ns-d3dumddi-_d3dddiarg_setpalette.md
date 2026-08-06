@@ -4,7 +4,6 @@ title: _D3DDDIARG_SETPALETTE (d3dumddi.h)
 description: The D3DDDIARG_SETPALETTE structure describes how to associate a palette with a texture.
 old-location: display\d3dddiarg_setpalette.htm
 tech.root: display
-ms.assetid: 265912e2-2076-4435-811f-70a3dd1a0bd7
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_SETPALETTE structure"]
 ms.keywords: D3DDDIARG_SETPALETTE, D3DDDIARG_SETPALETTE structure [Display Devices], UMDisplayDriver_param_Structs_6fb950bf-0a0f-4d87-950d-7030251ed074.xml, _D3DDDIARG_SETPALETTE, d3dumddi/D3DDDIARG_SETPALETTE, display.d3dddiarg_setpalette
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_SETPALETTE
  - D3DDDIARG_SETPALETTE
 ---
 
@@ -52,13 +52,13 @@ The D3DDDIARG_SETPALETTE structure describes how to associate a palette with a t
 
 ## -struct-fields
 
-### -field PaletteHandle
+### -field PaletteHandle [in]
 
-[in] A handle to the palette to be set up. If the value of <b>PaletteHandle</b> is zero, the surface that is specified by <b>hResource</b> should be uncoupled from any palette that it might have been associated with previously.
+A handle to the palette to be set up. If the value of <b>PaletteHandle</b> is zero, the surface that is specified by <b>hResource</b> should be uncoupled from any palette that it might have been associated with previously.
 
-### -field PaletteFlags
+### -field PaletteFlags [in]
 
-[in] A valid bitwise OR of the following flags that specify the attributes of the palette.
+A valid bitwise OR of the following flags that specify the attributes of the palette.
 
 | **Flag** | **Meaning** | 
 |:--|:--|
@@ -66,9 +66,9 @@ The D3DDDIARG_SETPALETTE structure describes how to associate a palette with a t
 | D3DDDISETPALETTE_ALLOW256 (0x00000200) | The palette can be fully updated. | 
 | D3DDDISETPALETTE_ALPHA (0x00002000) | The palette's alpha data channel is valid and should be used. |
 
-### -field hResource
+### -field hResource [in]
 
-[in] A handle to the surface (texture) with which the palette that is identified by <b>PaletteHandle</b> is associated.
+A handle to the surface (texture) with which the palette that is identified by <b>PaletteHandle</b> is associated.
 
 ## -remarks
 
@@ -77,3 +77,4 @@ The user-mode display driver's <a href="/windows-hardware/drivers/ddi/d3dumddi/n
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_setpalette">SetPalette</a>
+

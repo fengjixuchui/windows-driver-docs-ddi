@@ -1,11 +1,10 @@
 ---
 UID: NS:ntddrilapitypes.RILACCESSTECHNOLOGY
 title: RILACCESSTECHNOLOGY (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILACCESSTECHNOLOGY structure for internal use only. Don't use the RILACCESSTECHNOLOGY structure in your code."
 old-location: netvista\rilaccesstechnology.htm
 tech.root: netvista
-ms.assetid: 28363041-4adc-4348-a1a5-2b9c11750286
-ms.date: 05/02/2018
+ms.date: 12/10/2021
 keywords: ["RILACCESSTECHNOLOGY structure"]
 ms.keywords: "*LPRILACCESSTECHNOLOGY, RILACCESSTECHNOLOGY, RILACCESSTECHNOLOGY structure [Network Drivers Starting with Windows Vista], netvista.rilaccesstechnology, ntddrilapitypes/RILACCESSTECHNOLOGY"
 req.header: ntddrilapitypes.h
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILACCESSTECHNOLOGY
+ - LPRILACCESSTECHNOLOGY
 ---
 
 # RILACCESSTECHNOLOGY structure (ntddrilapitypes.h)
@@ -60,29 +60,19 @@ This topic supports the Windows driver infrastructure and is not intended to be 
 
 ### -field kindUnion
 
-### -field kindUnion.dwEvdoKind
 
-### -field kindUnion.dwGsmKind
-
-### -field kindUnion.dwUmtsKind
-
-### -field kindUnion.dwTdscdmaKind
-
-### -field kindUnion.dwLteKind
 
 ### -field RILACCESSTECHNOLOGYKINDUNION
 
-#### - dwEvdoKind
+### -field RILACCESSTECHNOLOGYKINDUNION.dwEvdoKind
+
+### -field RILACCESSTECHNOLOGYKINDUNION.dwGsmKind
+
+### -field RILACCESSTECHNOLOGYKINDUNION.dwUmtsKind
+
+### -field RILACCESSTECHNOLOGYKINDUNION.dwTdscdmaKind
+
+### -field RILACCESSTECHNOLOGYKINDUNION.dwLteKind
 
 
-#### - dwGsmKind
-
-
-#### - dwLteKind
-
-
-#### - dwTdscdmaKind
-
-
-#### - dwUmtsKind
 

@@ -1,16 +1,15 @@
 ---
 UID: NC:d3dkmthk.PFND3DKMT_CLOSEADAPTER
 title: PFND3DKMT_CLOSEADAPTER (d3dkmthk.h)
-description: The D3DKMTCloseAdapter function closes a graphics adapter that was previously opened by using the D3DKMTOpenAdapterFromHdc function.
+description: The PFND3DKMT_CLOSEADAPTER callback function closes a graphics adapter that was previously opened by the D3DKMTOpenAdapterFromHdc function.
 old-location: display\d3dkmtcloseadapter.htm
-ms.assetid: d8f1a47b-4ba0-41e0-a6e3-0589e1efcf06
 ms.date: 11/21/2018
 keywords: ["PFND3DKMT_CLOSEADAPTER callback function"]
 ms.keywords: D3DKMTCloseAdapter, D3DKMTCloseAdapter callback function [Display Devices], OpenGL_Functions_531edcbd-0ec0-4ae7-8a1a-31ed47084bba.xml, PFND3DKMT_CLOSEADAPTER, PFND3DKMT_CLOSEADAPTER callback, d3dkmthk/D3DKMTCloseAdapter, display.d3dkmtcloseadapter
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
- - D3DKMTCloseAdapter
-product:
- - Windows
+ - PFND3DKMT_CLOSEADAPTER
 ---
 
 # PFND3DKMT_CLOSEADAPTER callback function
@@ -52,7 +49,7 @@ The <b>D3DKMTCloseAdapter</b> function closes an adapter that was previously ope
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *\_In\_* *[D3DKMT_CLOSEADAPTER](ns-d3dkmthk-_d3dkmt_closeadapter.md)* * *pCloseAdapter*
 

@@ -4,7 +4,6 @@ title: RILPOSITIONINFOTDSCDMA (ntddrilapitypes.h)
 description: This structure represents the RILPOSITIONINFOTDSCDMA.
 old-location: netvista\rilpositioninfotdscdma.htm
 tech.root: netvista
-ms.assetid: 0b7b2592-8a67-4eb0-8e87-354fd5f215c5
 ms.date: 02/16/2018
 keywords: ["RILPOSITIONINFOTDSCDMA structure"]
 ms.keywords: "*LPRILPOSITIONINFOTDSCDMA, RILPOSITIONINFOTDSCDMA, RILPOSITIONINFOTDSCDMA structure [Network Drivers Starting with Windows Vista], netvista.rilpositioninfotdscdma, rilapitypes/RILPOSITIONINFOTDSCDMA"
@@ -41,6 +40,7 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILPOSITIONINFOTDSCDMA
+ - LPRILPOSITIONINFOTDSCDMA
 ---
 
 # RILPOSITIONINFOTDSCDMA structure (ntddrilapitypes.h)
@@ -112,3 +112,4 @@ struct RILPOSITIONINFOTDSCDMA {
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/cellular/dn946511(v=vs.85)">Cellular COM structures</a>
+

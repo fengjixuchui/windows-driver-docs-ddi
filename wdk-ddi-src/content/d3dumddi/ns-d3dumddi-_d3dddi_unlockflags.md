@@ -4,7 +4,6 @@ title: _D3DDDI_UNLOCKFLAGS (d3dumddi.h)
 description: The D3DDDI_UNLOCKFLAGS structure identifies how to unlock a resource.
 old-location: display\d3dddi_unlockflags.htm
 tech.root: display
-ms.assetid: f3c3356c-ec7b-4869-896d-9d3b285f0e87
 ms.date: 05/10/2018
 keywords: ["D3DDDI_UNLOCKFLAGS structure"]
 ms.keywords: D3DDDI_UNLOCKFLAGS, D3DDDI_UNLOCKFLAGS structure [Display Devices], D3D_other_Structs_c1133d3b-9330-4278-85c7-4083436278cf.xml, _D3DDDI_UNLOCKFLAGS, d3dumddi/D3DDDI_UNLOCKFLAGS, display.d3dddi_unlockflags
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDI_UNLOCKFLAGS
  - D3DDDI_UNLOCKFLAGS
 ---
 
@@ -69,3 +69,4 @@ A member in the union that is contained in D3DDDI_UNLOCKFLAGS that can hold one 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_unlock">D3DDDIARG_UNLOCK</a>
+

@@ -4,7 +4,6 @@ title: _NDIS_RECEIVE_QUEUE_INFO (ntddndis.h)
 description: The NDIS_RECEIVE_QUEUE_INFO structure contains information about a receive queue on a network adapter.
 old-location: netvista\ndis_receive_queue_info.htm
 tech.root: netvista
-ms.assetid: 7cdc45d4-e8aa-437a-b6fc-8b8c0dc17585
 ms.date: 05/02/2018
 keywords: ["NDIS_RECEIVE_QUEUE_INFO structure"]
 ms.keywords: "*PNDIS_RECEIVE_QUEUE_INFO, NDIS_RECEIVE_QUEUE_INFO, NDIS_RECEIVE_QUEUE_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_RECEIVE_QUEUE_INFO, PNDIS_RECEIVE_QUEUE_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_QUEUE_INFO, netvista.ndis_receive_queue_info, ntddndis/NDIS_RECEIVE_QUEUE_INFO, ntddndis/PNDIS_RECEIVE_QUEUE_INFO, virtual_machine_queue_ref_5052da2e-c93a-40f9-b129-07538556ef29.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_RECEIVE_QUEUE_INFO
+ - PNDIS_RECEIVE_QUEUE_INFO
  - NDIS_RECEIVE_QUEUE_INFO
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_RECEIVE_QUEUE_INFO</b> structure contains information about a receiv
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_RECEIVE_QUEUE_INFO</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_RECEIVE_QUEUE_INFO</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_RECEIVE_QUEUE_INFO</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to one of the following values: 
 
@@ -160,7 +161,7 @@ With a successful return from the <a href="/windows-hardware/drivers/network/oid
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -186,3 +187,4 @@ With a successful return from the <a href="/windows-hardware/drivers/network/oid
 
 
 <a href="/windows-hardware/drivers/network/oid-receive-filter-set-filter">OID_RECEIVE_FILTER_SET_FILTER</a>
+

@@ -2,7 +2,6 @@
 UID: NS:d3dkmthk._D3DKMT_SUBMITPRESENTBLTTOHWQUEUE
 title: _D3DKMT_SUBMITPRESENTBLTTOHWQUEUE (d3dkmthk.h)
 description: Contains arguments needed for the D3DKMTSubmitPresentBltToHwQueue function.
-ms.assetid: 2454c446-7a3a-49f5-918f-d5e26d043e99
 ms.date: 10/19/2018
 keywords: ["D3DKMT_SUBMITPRESENTBLTTOHWQUEUE structure"]
 ms.keywords: _D3DKMT_SUBMITPRESENTBLTTOHWQUEUE, D3DKMT_SUBMITPRESENTBLTTOHWQUEUE,
@@ -34,8 +33,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_SUBMITPRESENTBLTTOHWQUEUE
-product:
- - Windows
+ - D3DKMT_SUBMITPRESENTBLTTOHWQUEUE
 ---
 
 # _D3DKMT_SUBMITPRESENTBLTTOHWQUEUE structure

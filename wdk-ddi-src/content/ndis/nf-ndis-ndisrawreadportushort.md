@@ -4,7 +4,6 @@ title: NdisRawReadPortUshort macro (ndis.h)
 description: NdisRawReadPortUshort reads a USHORT value from a given I/O port on the NIC.
 old-location: netvista\ndisrawreadportushort.htm
 tech.root: netvista
-ms.assetid: 88dbdd78-43a4-4ae2-ae49-336a0a621c5c
 ms.date: 05/02/2018
 keywords: ["NdisRawReadPortUshort macro"]
 ms.keywords: NdisRawReadPortUshort, NdisRawReadPortUshort macro [Network Drivers Starting with Windows Vista], miniport_port_raw_ref_5d9255b3-3679-4cd2-bc07-baa0dc2c684f.xml, ndis/NdisRawReadPortUshort, netvista.ndisrawreadportushort
@@ -50,16 +49,16 @@ api_name:
 
 ## -parameters
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Specifies the I/O port. This address falls in a range that was mapped during initialization with 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterioportrange">
      NdisMRegisterIoPortRange</a>.
 
-### -param Data 
+### -param Data [out]
 
-[out]
+
 Pointer to a caller-supplied variable in which this function returns a USHORT value read in from
      the port.
 

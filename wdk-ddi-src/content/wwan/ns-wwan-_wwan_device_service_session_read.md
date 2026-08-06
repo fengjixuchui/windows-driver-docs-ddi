@@ -4,7 +4,6 @@ title: _WWAN_DEVICE_SERVICE_SESSION_READ (wwan.h)
 description: The WWAN_DEVICE_SERVICE_SESSION_READ structure represents data associated with a device service session read notification.
 old-location: netvista\wwan_device_service_session_read.htm
 tech.root: netvista
-ms.assetid: 248C5386-B835-4806-8DD8-39327EDADA0C
 ms.date: 05/02/2018
 keywords: ["WWAN_DEVICE_SERVICE_SESSION_READ structure"]
 ms.keywords: "*PWWAN_DEVICE_SERVICE_SESSION_READ, PWWAN_DEVICE_SERVICE_SESSION_READ, PWWAN_DEVICE_SERVICE_SESSION_READ structure pointer [Network Drivers Starting with Windows Vista], WWAN_DEVICE_SERVICE_SESSION_READ, WWAN_DEVICE_SERVICE_SESSION_READ structure [Network Drivers Starting with Windows Vista], _WWAN_DEVICE_SERVICE_SESSION_READ, netvista.wwan_device_service_session_read, wwan/PWWAN_DEVICE_SERVICE_SESSION_READ, wwan/WWAN_DEVICE_SERVICE_SESSION_READ"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_DEVICE_SERVICE_SESSION_READ
+ - PWWAN_DEVICE_SERVICE_SESSION_READ
  - WWAN_DEVICE_SERVICE_SESSION_READ
 ---
 
@@ -69,3 +70,4 @@ The size, in bytes, of the device service data that follows the structure instan
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_supported_device_services">WWAN_SUPPORTED_DEVICE_SERVICES</a>
+

@@ -4,7 +4,6 @@ title: _WHEA_ERROR_TYPE (ntddk.h)
 description: The WHEA_ERROR_TYPE enumeration defines the different types of hardware components that can report a hardware error.
 old-location: whea\whea_error_type.htm
 tech.root: whea
-ms.assetid: b10dbb47-394c-42f0-9471-6e5deb73a7b9
 ms.date: 02/20/2018
 keywords: ["WHEA_ERROR_TYPE enumeration"]
 ms.keywords: "*PWHEA_ERROR_TYPE, PWHEA_ERROR_TYPE, PWHEA_ERROR_TYPE enumeration pointer [WHEA Drivers and Applications], WHEA_ERROR_TYPE, WHEA_ERROR_TYPE enumeration [WHEA Drivers and Applications], WheaErrTypeGeneric, WheaErrTypeMemory, WheaErrTypeNMI, WheaErrTypePCIExpress, WheaErrTypePCIXBus, WheaErrTypePCIXDevice, WheaErrTypeProcessor, _WHEA_ERROR_TYPE, ntddk/PWHEA_ERROR_TYPE, ntddk/WHEA_ERROR_TYPE, ntddk/WheaErrTypeGeneric, ntddk/WheaErrTypeMemory, ntddk/WheaErrTypeNMI, ntddk/WheaErrTypePCIExpress, ntddk/WheaErrTypePCIXBus, ntddk/WheaErrTypePCIXDevice, ntddk/WheaErrTypeProcessor, whea.whea_error_type, whearef_4e585fa6-81e5-4196-b7fa-6194d3701835.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_ERROR_TYPE
+ - PWHEA_ERROR_TYPE
  - WHEA_ERROR_TYPE
 ---
 
@@ -82,6 +83,8 @@ A PCI or PCI-X device reported the hardware error.
 
 A hardware component that does not conform to any of the other WHEA_ERROR_TYPE enumeration values reported the hardware error.
 
+### -field WheaErrTypePmem
+
 ## -remarks
 
 The <a href="/previous-versions/windows/hardware/drivers/ff560465(v=vs.85)">WHEA_ERROR_PACKET</a> structure contains a member of type WHEA_ERROR_TYPE that specifies the type of hardware component that reported the hardware error.
@@ -89,3 +92,4 @@ The <a href="/previous-versions/windows/hardware/drivers/ff560465(v=vs.85)">WHEA
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/drivers/ff560465(v=vs.85)">WHEA_ERROR_PACKET</a>
+

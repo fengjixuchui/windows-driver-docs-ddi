@@ -4,7 +4,6 @@ title: IWDFDevice2::CreateSymbolicLinkWithReferenceString (wudfddi.h)
 description: TheCreateSymbolicLinkWithReferenceString method creates a symbolic link name, and optionally, a reference string, for a device.
 old-location: wdf\iwdfdevice2_createsymboliclinkwithreferencestring.htm
 tech.root: wdf
-ms.assetid: bce932a6-2f73-4d0e-8616-45fd41abb776
 ms.date: 02/26/2018
 keywords: ["IWDFDevice2::CreateSymbolicLinkWithReferenceString"]
 ms.keywords: CreateSymbolicLinkWithReferenceString, CreateSymbolicLinkWithReferenceString method, CreateSymbolicLinkWithReferenceString method,IWDFDevice2 interface, IWDFDevice2 interface,CreateSymbolicLinkWithReferenceString method, IWDFDevice2.CreateSymbolicLinkWithReferenceString, IWDFDevice2::CreateSymbolicLinkWithReferenceString, UMDFDeviceObjectRef_40f806fa-5db7-48db-b3c7-0f338947887e.xml, umdf.iwdfdevice2_createsymboliclinkwithreferencestring, wdf.iwdfdevice2_createsymboliclinkwithreferencestring, wudfddi/IWDFDevice2::CreateSymbolicLinkWithReferenceString
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice2.CreateSymbolicLinkWithReferenceString
+ - IWDFDevice2::CreateSymbolicLinkWithReferenceString
 ---
 
 # IWDFDevice2::CreateSymbolicLinkWithReferenceString
@@ -52,14 +51,14 @@ The<b>CreateSymbolicLinkWithReferenceString</b> method creates a symbolic link n
 
 ## -parameters
 
-### -param pSymbolicLink 
+### -param pSymbolicLink [in]
 
-[in]
+
 A pointer to a <b>NULL</b>-terminated character string that becomes the user-visible name of the device. The symbolic link name must be in the global <b>DosDevices</b> namespace.
 
-### -param pReferenceString 
+### -param pReferenceString [in, optional]
 
-[in, optional]
+
 A pointer to a <b>NULL</b>-terminated character string that Windows appends to the device name when an application uses the symbolic name that the <i>pSymbolicLink</i> parameter specifies. For more information, see the following Remarks section. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns
@@ -160,7 +159,6 @@ The following code example creates a symbolic name string, obtains the <a href="
     }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice2">IWDFDevice2</a>
@@ -168,3 +166,4 @@ The following code example creates a symbolic name string, obtains the <a href="
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice-createsymboliclink">IWDFDevice::CreateSymbolicLink</a>
+

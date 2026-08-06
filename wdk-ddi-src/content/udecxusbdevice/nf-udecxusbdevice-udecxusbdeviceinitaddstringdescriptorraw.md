@@ -1,10 +1,9 @@
 ---
 UID: NF:udecxusbdevice.UdecxUsbDeviceInitAddStringDescriptorRaw
 title: UdecxUsbDeviceInitAddStringDescriptorRaw function (udecxusbdevice.h)
-description: Adds a USB string descriptor to the initialization parameters used to create a virtual USB device.
+description: Learn how this method adds a USB string descriptor to the initialization parameters used to create a virtual USB device.
 old-location: buses\udecxusbdeviceinitaddstringdescriptorraw.htm
 tech.root: usbref
-ms.assetid: E4800343-E773-448D-B33E-2546ECDA4303
 ms.date: 05/07/2018
 keywords: ["UdecxUsbDeviceInitAddStringDescriptorRaw function"]
 ms.keywords: UdecxUsbDeviceInitAddStringDescriptorRaw, UdecxUsbDeviceInitAddStringDescriptorRaw function [Buses], buses.udecxusbdeviceinitaddstringdescriptorraw, udecxusbdevice/UdecxUsbDeviceInitAddStringDescriptorRaw
@@ -51,29 +50,29 @@ Adds a USB string descriptor to the initialization parameters used to create a v
 
 ## -parameters
 
-### -param UdecxUsbDeviceInit 
+### -param UdecxUsbDeviceInit [in, out]
 
-[in, out]
+
 A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>.
 
-### -param Descriptor 
+### -param Descriptor [in]
 
-[in]
+
 A caller-allocated buffer that contains the USB descriptor to add to the device.
 
-### -param DescriptorLength 
+### -param DescriptorLength [in]
 
-[in]
+
 The length of the descriptor buffer.
 
-### -param DescriptorIndex 
+### -param DescriptorIndex [in]
 
-[in]
+
 The index of the descriptor.
 
-### -param LanguageId 
+### -param LanguageId [in]
 
-[in]
+
 The language identifier of the string. The client driver must define constants for the language support, such as:
 
 <code>const USHORT US_ENGLISH = 0x409;
@@ -89,7 +88,7 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 
 
 
-<a href="/windows-hardware/drivers/ddi/index">USB String Descriptors</a>
+<a href="/windows-hardware/drivers/usbcon/usb-string-descriptors">USB String Descriptors</a>
 
 
 

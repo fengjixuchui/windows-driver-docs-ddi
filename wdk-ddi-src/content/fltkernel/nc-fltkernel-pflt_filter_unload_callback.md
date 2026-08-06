@@ -4,7 +4,6 @@ title: PFLT_FILTER_UNLOAD_CALLBACK (fltkernel.h)
 description: A minifilter driver can register a routine of type PFLT_FILTER_UNLOAD_CALLBACK as the minifilter driver's FilterUnloadCallback routine.
 old-location: ifsk\pflt_filter_unload_callback.htm
 tech.root: ifsk
-ms.assetid: 746f13f5-c92d-4dae-8fd7-4c9fdfa9e044
 ms.date: 05/09/2019
 keywords: ["PFLT_FILTER_UNLOAD_CALLBACK callback function"]
 ms.keywords: FilterUnloadCallback, FilterUnloadCallback routine [Installable File System Drivers], FltCallbacks_e28b1a16-b974-493a-8ab5-7b6004d66268.xml, PFLT_FILTER_UNLOAD_CALLBACK, fltkernel/FilterUnloadCallback, ifsk.pflt_filter_unload_callback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - fltkernel.h
 api_name:
- - FilterUnloadCallback
+ - PFLT_FILTER_UNLOAD_CALLBACK
 ---
 
 # PFLT_FILTER_UNLOAD_CALLBACK callback function
@@ -80,10 +79,11 @@ When a minifilter driver does register a *FilterUnloadCallback* routine:
 
 * If the FLTFL_FILTER_UNLOAD_MANDATORY flag is set in the *Flags* parameter, the unload operation is mandatory, and the minifilter driver cannot prevent itself from being unloaded.
 
-See [Loading and Unloading](/windows-hardware/drivers/ifs/loading-and-unloading) for more information about possible unload causes and the minifilter driver unload process.
+See [When the FilterUnloadCallback Routine Is Called](/windows-hardware/drivers/ifs/when-the-filterunloadcallback-routine-is-called) for more information about possible unload causes and the minifilter driver unload process.
 
 ## -see-also
 
 [FLT_REGISTRATION](ns-fltkernel-_flt_registration.md)
 
 [FltRegisterFilter](nf-fltkernel-fltregisterfilter.md)
+

@@ -4,7 +4,6 @@ title: PGET_DMA_ADAPTER_INFO (wdm.h)
 description: The GetDmaAdapterInfo routine retrieves information about the hardware capabilities of a system DMA channel.
 old-location: kernel\getdmaadapterinfo.htm
 tech.root: kernel
-ms.assetid: 2F502ACA-0CFF-46A1-B54C-1034D6E56815
 ms.date: 04/30/2018
 keywords: ["PGET_DMA_ADAPTER_INFO callback function"]
 ms.keywords: GetDmaAdapterInfo, GetDmaAdapterInfo callback function [Kernel-Mode Driver Architecture], PGET_DMA_ADAPTER_INFO, PGET_DMA_ADAPTER_INFO callback, kernel.getdmaadapterinfo, wdm/GetDmaAdapterInfo
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - GetDmaAdapterInfo
+ - PGET_DMA_ADAPTER_INFO
 ---
 
 # PGET_DMA_ADAPTER_INFO callback function
@@ -50,14 +49,14 @@ The <b>GetDmaAdapterInfo</b> routine retrieves information about the hardware ca
 
 ## -parameters
 
-### -param DmaAdapter 
+### -param DmaAdapter [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_adapter">DMA_ADAPTER</a> structure. This structure is the adapter object that represents the driver's system DMA channel. The caller obtained this pointer from a previous call to the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter">IoGetDmaAdapter</a> routine.
 
-### -param AdapterInfo 
+### -param AdapterInfo [in, out]
 
-[in, out]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_adapter_info">DMA_ADAPTER_INFO</a> structure. The routine writes information about the system DMA controller into this structure. The caller must set the
         <b>Version</b> member of this structure to DMA_ADAPTER_INFO_VERSION1 before calling <b>GetDmaAdapterInfo</b>.
 
@@ -116,3 +115,4 @@ For information about the DMA adapter information that is provided by version 1 
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter">IoGetDmaAdapter</a>
+

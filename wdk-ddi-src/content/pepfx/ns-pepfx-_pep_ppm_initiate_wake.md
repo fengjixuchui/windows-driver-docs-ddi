@@ -4,7 +4,6 @@ title: _PEP_PPM_INITIATE_WAKE (pepfx.h)
 description: The PEP_PPM_INITIATE_WAKE structure indicates whether a processor requires an interrupt to wake up from an idle state.
 old-location: kernel\pep_ppm_initiate_wake.htm
 tech.root: kernel
-ms.assetid: 7627521D-4715-47D8-8268-6C9B218FFA6F
 ms.date: 04/30/2018
 keywords: ["PEP_PPM_INITIATE_WAKE structure"]
 ms.keywords: "*PPEP_PPM_INITIATE_WAKE, PEP_PPM_INITIATE_WAKE, PEP_PPM_INITIATE_WAKE structure [Kernel-Mode Driver Architecture], PPEP_PPM_INITIATE_WAKE, PPEP_PPM_INITIATE_WAKE structure pointer [Kernel-Mode Driver Architecture], _PEP_PPM_INITIATE_WAKE, kernel.pep_ppm_initiate_wake, pepfx/PEP_PPM_INITIATE_WAKE, pepfx/PPEP_PPM_INITIATE_WAKE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_PPM_INITIATE_WAKE
+ - PPEP_PPM_INITIATE_WAKE
  - PEP_PPM_INITIATE_WAKE
 ---
 
@@ -54,9 +55,9 @@ The <b>PEP_PPM_INITIATE_WAKE</b> structure indicates whether a processor require
 
 ## -struct-fields
 
-### -field NeedInterruptForCompletion
+### -field NeedInterruptForCompletion [out]
 
-[out] Whether the processor requires an interrupt finish waking up from an idle state. Set to <b>TRUE</b> if the processor requires an interrupt, or to <b>FALSE</b> if it does not.
+Whether the processor requires an interrupt finish waking up from an idle state. Set to <b>TRUE</b> if the processor requires an interrupt, or to <b>FALSE</b> if it does not.
 
 ## -remarks
 
@@ -73,3 +74,4 @@ The PEP should set the <b>NeedInterruptForCompletion</b> member to <b>FALSE</b> 
 
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_ppm_initiate_wake">PEP_NOTIFY_PPM_INITIATE_WAKE</a>
+

@@ -1,16 +1,15 @@
 ---
 UID: NC:d3dkmthk.PFND3DKMT_CHECKMONITORPOWERSTATE
 title: PFND3DKMT_CHECKMONITORPOWERSTATE (d3dkmthk.h)
-description: The D3DKMTCheckMonitorPowerState function verifies the power state of a monitor.
+description: The PFND3DKMT_CHECKMONITORPOWERSTATE function verifies the power state of a monitor. The function returns STATUS_SUCCESS on successful verification.
 old-location: display\d3dkmtcheckmonitorpowerstate.htm
-ms.assetid: 8f218b63-304e-4f25-88d8-ea1326c613ee
 ms.date: 05/10/2018
 keywords: ["PFND3DKMT_CHECKMONITORPOWERSTATE callback function"]
 ms.keywords: D3DKMTCheckMonitorPowerState, D3DKMTCheckMonitorPowerState callback function [Display Devices], OpenGL_Functions_d05a2b63-fe81-45f0-908d-94043416b1d0.xml, PFND3DKMT_CHECKMONITORPOWERSTATE, PFND3DKMT_CHECKMONITORPOWERSTATE callback, d3dkmthk/D3DKMTCheckMonitorPowerState, display.d3dkmtcheckmonitorpowerstate
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
- - D3DKMTCheckMonitorPowerState
+ - PFND3DKMT_CHECKMONITORPOWERSTATE
 ---
 
 # PFND3DKMT_CHECKMONITORPOWERSTATE callback function
@@ -50,7 +49,7 @@ The <b>D3DKMTCheckMonitorPowerState</b> function verifies the power state of a m
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in]
 
@@ -70,3 +69,4 @@ This function might also return other <b>NTSTATUS</b> values.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_checkmonitorpowerstate">D3DKMT_CHECKMONITORPOWERSTATE</a>
+

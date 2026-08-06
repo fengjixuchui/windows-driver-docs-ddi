@@ -1,11 +1,9 @@
 ---
 UID: NF:printoem.OEMCommandCallback
 title: OEMCommandCallback function (printoem.h)
-description: OEMCommandCallback function
-old-location: print\oemcommandcallback.htm
+description: Describes the OEMCommandCallback function.
 tech.root: print
-ms.assetid: 0ac9c56d-f03d-4082-a7df-c21db12c0d74
-ms.date: 04/20/2018
+ms.date: 08/05/2022
 keywords: ["OEMCommandCallback function"]
 ms.keywords: OEMCommandCallback, OEMCommandCallback function [Print Devices], print.oemcommandcallback, print_obsoletefunctions_e59bdbd7-9100-40b3-9e89-6d41cbc85f44.xml, printoem/OEMCommandCallback
 req.header: printoem.h
@@ -41,20 +39,28 @@ api_name:
  - OEMCommandCallback
 ---
 
-# OEMCommandCallback function
-
-
 ## -description
+
+Describes the **OEMCommandCallback** function.
 
 ## -parameters
 
 ### -param pdevobj
 
+Defines the **PDEVOBJ** parameter *pdevobj*.
+
 ### -param dwCallbackID
+
+Defines the **DWORD** parameter *dwCallbackID*.
 
 ### -param dwCount
 
-### -param pdwParams 
+Defines the **DWORD** parameter *dwCount*.
 
-[in]
+### -param pdwParams [in]
 
+Defines the **PDWORD** parameter *pdwParams*.
+
+## -returns
+
+Returns an **INT** value.

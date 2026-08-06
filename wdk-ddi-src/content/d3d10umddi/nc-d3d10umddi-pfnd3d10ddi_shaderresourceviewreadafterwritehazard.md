@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_SHADERRESOURCEVIEWREADAFTERWRITEHAZARD
 title: PFND3D10DDI_SHADERRESOURCEVIEWREADAFTERWRITEHAZARD (d3d10umddi.h)
 description: The ShaderResourceViewReadAfterWriteHazard function informs the user-mode display driver that the specified resource was used as an output from the graphics processing unit (GPU) and that the resource will be used as an input to the GPU.
 old-location: display\shaderresourceviewreadafterwritehazard.htm
-ms.assetid: bb391154-a9ff-4032-b86e-81fa4ea2e37c
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_SHADERRESOURCEVIEWREADAFTERWRITEHAZARD callback function"]
 ms.keywords: PFND3D10DDI_SHADERRESOURCEVIEWREADAFTERWRITEHAZARD, PFND3D10DDI_SHADERRESOURCEVIEWREADAFTERWRITEHAZARD callback, ShaderResourceViewReadAfterWriteHazard, ShaderResourceViewReadAfterWriteHazard callback function [Display Devices], UserModeDisplayDriverDx10_Functions_fa240239-13b6-43b1-a5c7-137d3d793e0c.xml, d3d10umddi/ShaderResourceViewReadAfterWriteHazard, display.shaderresourceviewreadafterwritehazard
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - ShaderResourceViewReadAfterWriteHazard
+ - PFND3D10DDI_SHADERRESOURCEVIEWREADAFTERWRITEHAZARD
 ---
 
 # PFND3D10DDI_SHADERRESOURCEVIEWREADAFTERWRITEHAZARD callback function
@@ -50,19 +49,19 @@ The <i>ShaderResourceViewReadAfterWriteHazard</i> function informs the user-mode
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hResource* [in]
 
 A handle to the resource.
 
-### -param Arg3
+### -param unnamedParam3
 
 *hShaderResourceView* [in]
 
@@ -85,3 +84,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

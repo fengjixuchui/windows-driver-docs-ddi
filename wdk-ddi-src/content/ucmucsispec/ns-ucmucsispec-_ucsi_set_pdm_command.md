@@ -1,8 +1,7 @@
 ---
 UID: NS:ucmucsispec._UCSI_SET_PDM_COMMAND
 title: _UCSI_SET_PDM_COMMAND (ucmucsispec.h)
-description: Obsolete.
-ms.assetid: 9f813bd2-bfcb-450f-a8bb-77df5b79270a
+description: _UCSI_SET_PDM_COMMAND is obsolete.
 tech.root: usbref
 ms.date: 09/30/2018
 keywords: ["UCSI_SET_PDM_COMMAND structure"]
@@ -37,6 +36,8 @@ api_location:
  - ucmucsispec.h
 api_name:
  - _UCSI_SET_PDM_COMMAND
+ - PUCSI_SET_PDM_COMMAND
+ - UCSI_SET_PDM_COMMAND
 ---
 
 # _UCSI_SET_PDM_COMMAND structure

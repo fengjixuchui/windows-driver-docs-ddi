@@ -2,9 +2,9 @@
 UID: NS:wdm._NPEM_CONTROL_INTERFACE
 title: NPEM_CONTROL_INTERFACE
 ms.date: 04/28/2020
-ms.topic: language-reference
+tech.root: PCI
 targetos: Windows
-description: 
+description: "Learn more about: NPEM_CONTROL_INTERFACE"
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -28,6 +28,7 @@ api_location:
  - wdm.h
 api_name:
  - _NPEM_CONTROL_INTERFACE
+ - PNPEM_CONTROL_INTERFACE
  - NPEM_CONTROL_INTERFACE
 f1_keywords:
  - _NPEM_CONTROL_INTERFACE
@@ -61,6 +62,8 @@ Reserved for system use.
 ### -field QueryStandardCapabilities
 
 ### -field SetStandardControl
+
+### -field QueryNpemControl
 
 ## -remarks
 

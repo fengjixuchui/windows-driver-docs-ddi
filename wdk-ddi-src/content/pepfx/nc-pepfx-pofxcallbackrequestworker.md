@@ -4,7 +4,6 @@ title: POFXCALLBACKREQUESTWORKER (pepfx.h)
 description: The RequestWorker routine is called by a platform extension plug-in (PEP) to inform the Windows power management framework (PoFx) that the platform extension plug-in (PEP) has a work request to submit on behalf of the specified device.
 old-location: kernel\requestworker.htm
 tech.root: kernel
-ms.assetid: A77277D2-B644-469D-A668-78C23BF41367
 ms.date: 04/30/2018
 keywords: ["POFXCALLBACKREQUESTWORKER callback function"]
 ms.keywords: POFXCALLBACKREQUESTWORKER, RequestWorker, RequestWorker routine [Kernel-Mode Driver Architecture], kernel.requestworker, pepfx/RequestWorker
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
- - RequestWorker
+ - POFXCALLBACKREQUESTWORKER
 ---
 
 # POFXCALLBACKREQUESTWORKER callback function (pepfx.h)
@@ -46,13 +45,13 @@ api_name:
 
 ## -description
 
-The <b>RequestWorker</b> routine is called by a platform extension plug-in (PEP) to inform the Windows <a href="/windows-hardware/drivers/ddi/index">power management framework</a> (PoFx) that the platform extension plug-in (PEP) has a work request to submit on behalf of the specified device.
+The <b>RequestWorker</b> routine is called by a platform extension plug-in (PEP) to inform the Windows <a href="/windows-hardware/drivers/ddi/_kernel/#device-power-management">power management framework</a> (PoFx) that the platform extension plug-in (PEP) has a work request to submit on behalf of the specified device.
 
 ## -parameters
 
-### -param PluginHandle 
+### -param PluginHandle [in]
 
-[in]
+
 A POHANDLE value that represents the registration of the device with PoFx. The PEP previously received this handle from PoFx during the <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_crashdump_device">PEP_DPM_REGISTER_DEVICE</a> notification that informed the PEP that the device's driver stack registered the device with PoFx.
 
 ## -remarks
@@ -70,3 +69,4 @@ A PEP can call this routine at IRQL <= DISPATCH_LEVEL.
 
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_kernel_information_struct_v3">PEP_KERNEL_INFORMATION_STRUCT_V3</a>
+

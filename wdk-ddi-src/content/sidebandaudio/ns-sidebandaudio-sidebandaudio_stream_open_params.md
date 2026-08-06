@@ -1,9 +1,8 @@
 ---
-UID: NS:sidebandaudio.__unnamed_union_2
+UID: NS:sidebandaudio.SIDEBANDAUDIO_STREAM_OPEN_PARAMS
 title: SIDEBANDAUDIO_STREAM_OPEN_PARAMS (sidebandaudio.h)
-description: Describes the variable I/O parameters for IOCTLs.
-ms.assetid: f34ee0ff-8e4a-4893-90f8-5dcf6fa50f0d
-ms.date: 09/07/2018
+description: The SIDEBANDAUDIO_STREAM_OPEN_PARAMS structure describes the variable I/O parameters for IOCTLs.
+ms.date: 07/21/2023
 keywords: ["SIDEBANDAUDIO_STREAM_OPEN_PARAMS structure"]
 ms.keywords: SIDEBANDAUDIO_STREAM_OPEN_PARAMS, SIDEBANDAUDIO_STREAM_OPEN_PARAMS, *PSIDEBANDAUDIO_STREAM_OPEN_PARAMS,
 req.header: sidebandaudio.h
@@ -34,15 +33,15 @@ api_type:
 api_location:
  - sidebandaudio.h
 api_name:
+ - PSIDEBANDAUDIO_STREAM_OPEN_PARAMS
  - SIDEBANDAUDIO_STREAM_OPEN_PARAMS
 ---
 
 # SIDEBANDAUDIO_STREAM_OPEN_PARAMS structure
 
-
 ## -description
 
-Describes the variable I/O parameters for IOCTLs.
+The **SIDEBANDAUDIO_STREAM_OPEN_PARAMS** structure describes the variable I/O parameters for IOCTLs.
 
 ## -struct-fields
 
@@ -60,11 +59,16 @@ Number of Input parameters.
 
 ### -field Alignment
 
-TBD
+Alignment - Allows for byte alignment.
 
 ## -remarks
+
+## -requirements
+
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Header** | sidebandaudio.h |
 
 ## -see-also
 
 [sidebandaudio.h](index.md)
-

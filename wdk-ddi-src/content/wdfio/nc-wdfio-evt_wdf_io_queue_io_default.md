@@ -4,7 +4,6 @@ title: EVT_WDF_IO_QUEUE_IO_DEFAULT (wdfio.h)
 description: A driver's EvtIoDefault event callback function processes a specified I/O request.
 old-location: wdf\evtiodefault.htm
 tech.root: wdf
-ms.assetid: 0b834d01-5603-43e8-9b74-9292610cc06d
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_IO_QUEUE_IO_DEFAULT callback function"]
 ms.keywords: DFQueueObjectRef_aca0c34e-8d7d-4eba-b1ac-c91928db896e.xml, EVT_WDF_IO_QUEUE_IO_DEFAULT, EVT_WDF_IO_QUEUE_IO_DEFAULT callback, EvtIoDefault, EvtIoDefault callback function, kmdf.evtiodefault, wdf.evtiodefault, wdfio/EvtIoDefault
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfio.h
 api_name:
- - EvtIoDefault
+ - EVT_WDF_IO_QUEUE_IO_DEFAULT
 ---
 
 # EVT_WDF_IO_QUEUE_IO_DEFAULT callback function
@@ -52,14 +51,14 @@ A driver's <i>EvtIoDefault</i> event callback function processes a specified I/O
 
 ## -parameters
 
-### -param Queue 
+### -param Queue [in]
 
-[in]
+
 A handle to the framework queue object that is associated with the I/O request.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
 ## -remarks
@@ -115,3 +114,4 @@ A driver's <i>EvtIoDefault</i> callback function should not call the following q
 
 
 <a href="/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuecreate">WdfIoQueueCreate</a>
+

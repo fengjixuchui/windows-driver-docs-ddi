@@ -4,7 +4,6 @@ title: KsPinAddEvent function (ks.h)
 description: The KsPinAddEvent function adds a specified event to Pin's event list.
 old-location: stream\kspinaddevent.htm
 tech.root: stream
-ms.assetid: 1bb34062-f092-41a4-8d59-6937be7b5639
 ms.date: 04/23/2018
 keywords: ["KsPinAddEvent function"]
 ms.keywords: KsPinAddEvent, KsPinAddEvent function [Streaming Media Devices], avfunc_2291126f-31dd-4e37-a082-97f24e8b5bd9.xml, ks/KsPinAddEvent, stream.kspinaddevent
@@ -50,14 +49,14 @@ The<b> KsPinAddEvent </b>function adds a specified event to <i>Pin</i>'s event l
 
 ## -parameters
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a> structure to which to add a specified event.
 
-### -param EventEntry 
+### -param EventEntry [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksevent_entry">KSEVENT_ENTRY</a> structure describing the event to add to <i>Pin</i>.
 
 ## -remarks

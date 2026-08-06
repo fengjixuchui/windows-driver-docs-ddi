@@ -4,8 +4,7 @@ title: FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6_ (fwpsk.h)
 description: The FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6 enumeration type specifies the data field identifiers for the FWPS_LAYER_ALE_RESOURCE_RELEASE_V6 run-time filtering layer.
 old-location: netvista\fwps_fields_ale_resource_release_v6.htm
 tech.root: netvista
-ms.assetid: be821aed-2606-497e-8a93-4cad983cc17f
-ms.date: 05/02/2018
+ms.date: 02/28/2024
 keywords: ["FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6_ enumeration"]
 ms.keywords: FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6, FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6 enumeration [Network Drivers Starting with Windows Vista], FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6_, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_APP_ID, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_PACKAGE_ID, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_USER_ID, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_FLAGS, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_ADDRESS, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_ADDRESS_TYPE, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_INTERFACE, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_PORT, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_PROTOCOL, FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_MAX, fwpsk/FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_APP_ID, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_PACKAGE_ID, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_ALE_USER_ID, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_FLAGS, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_ADDRESS_TYPE, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_INTERFACE, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_LOCAL_PORT, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_IP_PROTOCOL, fwpsk/FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_MAX, netvista.fwps_fields_ale_resource_release_v6, wfp_ref_5_const_3_data_fields_9f6f966e-3799-4c75-bfcb-0a3e711e3aea.xml
 req.header: fwpsk.h
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - fwpsk.h
 api_name:
+ - FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6_
  - FWPS_FIELDS_ALE_RESOURCE_RELEASE_V6
 ---
 
@@ -111,6 +111,13 @@ The compartment that the network interface belongs to.
 <div class="alert"><b>Note</b>  Supported starting with Windows 10, version 1703.</div>
 <div> </div>
 
+### -field FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_PACKAGE_FAMILY_NAME
+
+The Package Family Name of the application.
+
+<div class="alert"><b>Note</b>  Supported starting with Windows Server 2022 23H2.</div>
+<div> </div>
+
 ### -field FWPS_FIELD_ALE_RESOURCE_RELEASE_V6_MAX
 
 The maximum value for this enumeration. This value might change in future versions of the NDIS
@@ -123,3 +130,4 @@ The maximum value for this enumeration. This value might change in future versio
 
 
 <a href="/windows/win32/api/nldef/ne-nldef-nl_address_type">NL_ADDRESS_TYPE</a>
+

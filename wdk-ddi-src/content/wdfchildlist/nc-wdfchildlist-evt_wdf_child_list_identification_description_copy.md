@@ -4,7 +4,6 @@ title: EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COPY (wdfchildlist.h)
 description: A driver's EvtChildListIdentificationDescriptionCopy event callback function copies a child identification description from one specified location to another.
 old-location: wdf\evtchildlistidentificationdescriptioncopy.htm
 tech.root: wdf
-ms.assetid: c44d6a2f-c7ef-486d-973e-aada068ddc06
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COPY callback function"]
 ms.keywords: DFDeviceObjectChildListRef_8568b87d-544a-4574-a9c7-c5498a30a758.xml, EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COPY, EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COPY callback, EvtChildListIdentificationDescriptionCopy, EvtChildListIdentificationDescriptionCopy callback function, kmdf.evtchildlistidentificationdescriptioncopy, wdf.evtchildlistidentificationdescriptioncopy, wdfchildlist/EvtChildListIdentificationDescriptionCopy
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfChildlist.h
 api_name:
- - EvtChildListIdentificationDescriptionCopy
+ - EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COPY
 ---
 
 # EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COPY callback function
@@ -52,19 +51,19 @@ A driver's <i>EvtChildListIdentificationDescriptionCopy</i> event callback funct
 
 ## -parameters
 
-### -param ChildList 
+### -param ChildList [in]
 
-[in]
+
 A handle to a framework child-list object.
 
-### -param SourceIdentificationDescription 
+### -param SourceIdentificationDescription [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a> structure that identifies the source location of the child identification description.
 
-### -param DestinationIdentificationDescription 
+### -param DestinationIdentificationDescription [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a> structure that identifies the destination location of the child identification description.
 
 ## -remarks
@@ -140,3 +139,4 @@ For more information about dynamic enumeration, see <a href="/windows-hardware/d
 
 
 <a href="/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitsetdefaultchildlistconfig">WdfFdoInitSetDefaultChildListConfig</a>
+

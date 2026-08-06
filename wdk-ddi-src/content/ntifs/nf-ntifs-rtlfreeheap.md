@@ -4,7 +4,6 @@ title: RtlFreeHeap function (ntifs.h)
 description: The RtlFreeHeap routine frees a memory block that was allocated from a heap by RtlAllocateHeap.
 old-location: ifsk\rtlfreeheap.htm
 tech.root: ifsk
-ms.assetid: 5e8b6bd7-71e7-45ad-985c-fe197693ce05
 ms.date: 04/16/2018
 keywords: ["RtlFreeHeap function"]
 ms.keywords: RtlFreeHeap, RtlFreeHeap routine [Installable File System Drivers], ifsk.rtlfreeheap, ntifs/RtlFreeHeap, rtlref_02e7cb93-ec45-41c9-8e58-72c221cece37.xml
@@ -50,14 +49,14 @@ The <b>RtlFreeHeap</b> routine frees a memory block that was allocated from a he
 
 ## -parameters
 
-### -param HeapHandle 
+### -param HeapHandle [in]
 
-[in]
+
 A handle for the heap whose memory block is to be freed. This parameter is a handle returned by <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlcreateheap">RtlCreateHeap</a>.
 
-### -param Flags 
+### -param Flags [in, optional]
 
-[in, optional]
+
 A set of flags that controls aspects of freeing a memory block. Specifying the following value overrides the corresponding value that was specified in the <i>Flags</i> parameter when the heap was created by <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlcreateheap">RtlCreateHeap</a>. 
 
 <table>

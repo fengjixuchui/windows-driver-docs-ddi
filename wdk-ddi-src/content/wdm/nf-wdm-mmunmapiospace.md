@@ -4,7 +4,6 @@ title: MmUnmapIoSpace function (wdm.h)
 description: The MmUnmapIoSpace routine unmaps a specified range of physical addresses previously mapped by MmMapIoSpace.
 old-location: kernel\mmunmapiospace.htm
 tech.root: kernel
-ms.assetid: 5963f34a-4315-46c3-9802-0b6a1b229e3f
 ms.date: 04/30/2018
 keywords: ["MmUnmapIoSpace function"]
 ms.keywords: MmUnmapIoSpace, MmUnmapIoSpace routine [Kernel-Mode Driver Architecture], k106_a56f91b1-7187-4836-a3d8-4b7d2918227a.xml, kernel.mmunmapiospace, wdm/MmUnmapIoSpace
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ The <b>MmUnmapIoSpace</b> routine unmaps a specified range of physical addresses
 
 ## -parameters
 
-### -param BaseAddress 
+### -param BaseAddress [in]
 
-[in]
+
 Pointer to the base virtual address to which the physical pages were mapped.
 
-### -param NumberOfBytes 
+### -param NumberOfBytes [in]
 
-[in]
+
 Specifies the number of bytes that were mapped.
 
 ## -remarks

@@ -2,7 +2,6 @@
 UID: NS:d3dkmdt._D3DKMT_QUERYCLOCKCALIBRATION
 title: _D3DKMT_QUERYCLOCKCALIBRATION (d3dkmdt.h)
 description: Arguments used to query clock calibration information.
-ms.assetid: b58027b5-e51b-4eb2-b8f0-0400be664995
 ms.date: 10/19/2018
 keywords: ["D3DKMT_QUERYCLOCKCALIBRATION structure"]
 ms.keywords: _D3DKMT_QUERYCLOCKCALIBRATION, D3DKMT_QUERYCLOCKCALIBRATION,
@@ -35,6 +34,7 @@ api_location:
  - d3dkmdt.h
 api_name:
  - _D3DKMT_QUERYCLOCKCALIBRATION
+ - D3DKMT_QUERYCLOCKCALIBRATION
 dev_langs:
  - c++
 ---
@@ -48,22 +48,22 @@ Arguments used to query clock calibration information.
 
 ## -struct-fields
 
-### -field hAdapter
+### -field hAdapter [in]
 
-[in] The adapter to query clock information for.
+The adapter to query clock information for.
 
-### -field NodeOrdinal
+### -field NodeOrdinal [in]
 
-[in] Node ordinal of the requested engine.
+Node ordinal of the requested engine.
 
-### -field PhysicalAdapterIndex
+### -field PhysicalAdapterIndex [in]
 
-[in] The physical adapter index, in an LDA chain.
+The physical adapter index, in an LDA chain.
 
-### -field ClockData
+### -field ClockData [out]
 
  
-[out] Output frequency, GPU clock, and CPU clock on the specified engine.
+Output frequency, GPU clock, and CPU clock on the specified engine.
 
 ## -remarks
 

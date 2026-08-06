@@ -4,7 +4,6 @@ title: IPrintCoreUI2::EnumFeatures (prcomoem.h)
 description: The IPrintCoreUI2::EnumFeatures method enumerates a printer's available features.
 old-location: print\iprintcoreui2_enumfeatures.htm
 tech.root: print
-ms.assetid: e5c16b6d-555d-4360-b781-4d22be81ab56
 ms.date: 04/20/2018
 keywords: ["IPrintCoreUI2::EnumFeatures"]
 ms.keywords: EnumFeatures, EnumFeatures method [Print Devices], EnumFeatures method [Print Devices],IPrintCoreUI2 interface, IPrintCoreUI2 interface [Print Devices],EnumFeatures method, IPrintCoreUI2.EnumFeatures, IPrintCoreUI2::EnumFeatures, prcomoem/IPrintCoreUI2::EnumFeatures, print.iprintcoreui2_enumfeatures, print_unidrv-pscript_ui_2eb51928-70ab-48f5-a17e-845c54fbd1aa.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintCoreUI2.EnumFeatures
+ - IPrintCoreUI2::EnumFeatures
 ---
 
 # IPrintCoreUI2::EnumFeatures
@@ -50,31 +49,31 @@ The <code>IPrintCoreUI2::EnumFeatures</code> method enumerates a printer's avail
 
 ## -parameters
 
-### -param poemuiobj 
+### -param poemuiobj [in]
 
-[in]
+
 Pointer to the current context, an <a href="/windows-hardware/drivers/ddi/printoem/ns-printoem-_oemuiobj">OEMUIOBJ</a> structure.
 
-### -param dwFlags 
+### -param dwFlags [in]
 
-[in]
+
 Is reserved and must be set to zero.
 
-### -param pmszFeatureList 
+### -param pmszFeatureList [out]
 
-[out]
+
 Pointer to a caller-supplied buffer that receives a null-delimited list of feature keywords in MULTI_SZ format. The list is terminated with two null characters.
 
-Set this parameter to <b>NULL</b> to simply query for the size (*<i>pcbNeeded</i>) of the feature list without having the list filled in.
+Set this parameter to <b>NULL</b> to simply query for the size (**pcbNeeded*) of the feature list without having the list filled in.
 
-### -param cbSize 
+### -param cbSize [in]
 
-[in]
+
 Specifies the size, in bytes, of the buffer pointed to by <i>pmszFeatureList</i>.
 
-### -param pcbNeeded 
+### -param pcbNeeded [out]
 
-[out]
+
 Pointer to a memory location that receives the actual size, in bytes, of the feature list.
 
 ## -returns
@@ -140,7 +139,7 @@ This method is supported only for Windows XP Pscript5 plug-ins, not for Unidrv p
 
 <a href="/windows-hardware/drivers/">printer-sticky</a> features (see <a href="/windows-hardware/drivers/print/replacing-driver-supplied-property-sheet-pages">Replacing Driver-Supplied Property Sheet Pages</a>), such as those that determine installable memory and the presence of optional accessories, are included in the feature keyword list, which appears in the output buffer pointed to by <i>pmszFeatureList</i> when the method returns. For Pscript5, such features have the <b>OpenGroupType</b> feature attribute set to "InstallableOptions". 
 
-To reduce the need to make two calls per data access, pass the method an output buffer of a fixed size (1 KB, for example), and then check the function return value. If the method returns S_OK, the buffer already contains the data of interest. If the method returns E_OUTOFMEMORY, the value in *<i>pcbNeeded</i> is the buffer size needed to hold the data of interest. The caller should then allocate a buffer of that larger size and proceed with a second call to the method.
+To reduce the need to make two calls per data access, pass the method an output buffer of a fixed size (1 KB, for example), and then check the function return value. If the method returns S_OK, the buffer already contains the data of interest. If the method returns E_OUTOFMEMORY, the value in **pcbNeeded* is the buffer size needed to hold the data of interest. The caller should then allocate a buffer of that larger size and proceed with a second call to the method.
 
 For more information, see <a href="/windows-hardware/drivers/print/using-enumfeatures">Using EnumFeatures</a>.
 
@@ -155,3 +154,4 @@ For more information, see <a href="/windows-hardware/drivers/print/using-enumfea
 
 
 <a href="/windows-hardware/drivers/ddi/printoem/ns-printoem-_oemuiobj">OEMUIOBJ</a>
+

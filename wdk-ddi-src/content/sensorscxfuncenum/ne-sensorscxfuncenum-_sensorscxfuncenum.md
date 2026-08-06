@@ -2,7 +2,7 @@
 UID: NE:sensorscxfuncenum._SENSORSCXFUNCENUM
 title: _SENSORSCXFUNCENUM (sensorscxfuncenum.h)
 description: The _SENSORSCXFUNCENUM enumeration contains a list of all WDF API functions.
-ms.assetid: 818344e1-f99a-40a5-ae64-ab49d86530af
+tech.root: sensors
 ms.date: 04/19/2018
 keywords: ["SENSORSCXFUNCENUM enumeration"]
 ms.keywords: _SENSORSCXFUNCENUM, SENSORSCXFUNCENUM,
@@ -30,8 +30,7 @@ api_location:
  - sensorscxfuncenum.h
 api_name:
  - _SENSORSCXFUNCENUM
-product:
- - Windows
+ - SENSORSCXFUNCENUM
 ---
 
 # _SENSORSCXFUNCENUM enumeration
@@ -82,3 +81,4 @@ The number of entries in the table.
 ## -remarks
 
 ## -see-also
+

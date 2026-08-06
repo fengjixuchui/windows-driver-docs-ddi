@@ -4,7 +4,6 @@ title: NdisFSendNetBufferLists function (ndis.h)
 description: Filter drivers call the NdisFSendNetBufferLists function to send a list of network data buffers.
 old-location: netvista\ndisfsendnetbufferlists.htm
 tech.root: netvista
-ms.assetid: fe0896ab-2d20-465f-a8bc-bfc0033701d6
 ms.date: 05/02/2018
 keywords: ["NdisFSendNetBufferLists function"]
 ms.keywords: NdisFSendNetBufferLists, NdisFSendNetBufferLists function [Network Drivers Starting with Windows Vista], filter_ndis_functions_ref_333e9ef3-6858-4b5b-bca1-4f06da775906.xml, ndis/NdisFSendNetBufferLists, netvista.ndisfsendnetbufferlists
@@ -52,9 +51,9 @@ Filter drivers call the
 
 ## -parameters
 
-### -param NdisFilterHandle 
+### -param NdisFilterHandle [in]
 
-[in]
+
 The NDIS handle that identifies this filter module. NDIS passed the handle to the filter driver in
      a call to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach">FilterAttach</a> function.
@@ -62,21 +61,21 @@ The NDIS handle that identifies this filter module. NDIS passed the handle to th
 ### -param NetBufferList
 
 A pointer to a linked list of 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures. Each
+     <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures. Each
      <b>NET_BUFFER_LIST</b> structure describes a list of 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a> structures.
+     <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a> structures.
 
-### -param PortNumber 
+### -param PortNumber [in]
 
-[in]
+
 A port number that identifies a miniport adapter port. Miniport adapter port numbers are assigned
      by calling the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismallocateport">NdisMAllocatePort</a> function. A zero
      value identifies the default port of a miniport adapter.
 
-### -param SendFlags 
+### -param SendFlags [in]
 
-[in]
+
 Flags that define attributes for the send operation. The flags can be combined with an OR
      operation. To clear all the flags, set this member to zero. This function supports the following flags:
      
@@ -96,7 +95,7 @@ Specifies that the current IRQL is DISPATCH_LEVEL. For more information about th
 
 Specifies that NDIS should check for loopback. By default, NDIS does not loop back data to the
        driver that submitted the send request. An overlying driver can override this behavior by setting this
-       flag. When this flag is set, NDIS identifies all the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a> structures that contain data that
+       flag. When this flag is set, NDIS identifies all the <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a> structures that contain data that
        matches the receive criteria for the binding. NDIS indicates NET_BUFFER structures that match the
        criteria to the overlying driver. This flag has no affect on checking for loopback, or looping back,
        on other bindings.
@@ -105,11 +104,11 @@ Specifies that NDIS should check for loopback. By default, NDIS does not loop ba
 
 #### NDIS_SEND_FLAGS_SWITCH_SINGLE_SOURCE
 
-If this flag is set, all packets in a linked list of <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures originated from the same Hyper-V extensible switch source port.
+If this flag is set, all packets in a linked list of <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures originated from the same Hyper-V extensible switch source port.
 
 For more information, see <a href="/windows-hardware/drivers/network/hyper-v-extensible-switch-send-and-receive-flags">Hyper-V Extensible Switch Send and Receive Flags</a>.
 
-<div class="alert"><b>Note</b>  If each packet in the linked list of <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures uses the same source port, the extension should set the <b>NDIS_SEND_COMPLETE_FLAGS_SWITCH_SINGLE_SOURCE</b> flag in the <i>SendCompleteFlags</i> parameter of <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsendnetbufferlistscomplete">NdisFSendNetBufferListsComplete</a> when it completes the send request.</div>
+<div class="alert"><b>Note</b>  If each packet in the linked list of <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures uses the same source port, the extension should set the <b>NDIS_SEND_COMPLETE_FLAGS_SWITCH_SINGLE_SOURCE</b> flag in the <i>SendCompleteFlags</i> parameter of <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfsendnetbufferlistscomplete">NdisFSendNetBufferListsComplete</a> when it completes the send request.</div>
 <div> </div>
 <div class="alert"><b>Note</b>  This flag is available in NDIS 6.30 and later.</div>
 <div> </div>
@@ -117,7 +116,7 @@ For more information, see <a href="/windows-hardware/drivers/network/hyper-v-ext
 
 #### NDIS_SEND_FLAGS_SWITCH_DESTINATION_GROUP
 
-If this flag is set, all packets in a linked list of <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures are to be forwarded to the same extensible switch destination port.
+If this flag is set, all packets in a linked list of <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures are to be forwarded to the same extensible switch destination port.
 
 For more information, see <a href="/windows-hardware/drivers/network/hyper-v-extensible-switch-send-and-receive-flags">Hyper-V Extensible Switch Send and Receive Flags</a>.
 
@@ -128,19 +127,19 @@ For more information, see <a href="/windows-hardware/drivers/network/hyper-v-ext
 
 After a filter driver calls the 
     <b>NdisFSendNetBufferLists</b> function, NDIS submits the 
-    <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures to the underlying
+    <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures to the underlying
     drivers.
 
 A filter driver can originate send requests or it can filter the requests that it receives from
     overlying drivers. If the filter driver originates send requests, the driver must allocate buffers pools.
-    The filter driver allocates each <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure from a pool.
+    The filter driver allocates each <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure from a pool.
 
-The filter driver can preallocate <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures or it can allocate the structures just
+The filter driver can preallocate <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures or it can allocate the structures just
     before calling 
     <b>NdisFSendNetBufferLists</b> and then free them when the send operation is complete.
 
 A filter driver must set the 
-    <b>SourceHandle</b> member of each <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure that it originates to the same value that it
+    <b>SourceHandle</b> member of each <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure that it originates to the same value that it
     passes to the 
     <i>NdisFilterHandle</i> parameter. The filter handle provides the information that NDIS requires to return
     the <b>NET_BUFFER_LIST</b> structure to the filter driver. The filter driver must not modify the 
@@ -155,12 +154,12 @@ Before calling
 NDIS calls a filter driver's 
     <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_send_net_buffer_lists">
     FilterSendNetBufferLists</a> function to pass on send requests from overlying drivers. A filter driver
-    can pass on such requests by passing the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>T structures that it received in 
+    can pass on such requests by passing the <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>T structures that it received in 
     <i>FilterSendNetBufferLists</i> to 
     <b>NdisFSendNetBufferLists</b>.
 
 As soon as a filter driver calls the 
-    <b>NdisFSendNetBufferLists</b> function, it relinquishes ownership of the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures and
+    <b>NdisFSendNetBufferLists</b> function, it relinquishes ownership of the <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures and
     all associated resources. NDIS calls the 
     <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_send_net_buffer_lists_complete">
     FilterSendNetBufferListsComplete</a> function to return the structures and data to the filter driver.
@@ -172,7 +171,7 @@ Until NDIS calls
     <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_send_net_buffer_lists_complete">FilterSendNetBufferListsComplete</a>, the current status of the send request is not available to the
     filter driver. A filter driver temporarily releases ownership of all resources that are associated with a
     send request when it calls 
-    <b>NdisFSendNetBufferLists</b>. A filter driver should never try to examine the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+    <b>NdisFSendNetBufferLists</b>. A filter driver should never try to examine the <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
     structures or any associated data after calling 
     <b>NdisFSendNetBufferLists</b>.
 
@@ -197,11 +196,11 @@ Until NDIS calls
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a>
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 

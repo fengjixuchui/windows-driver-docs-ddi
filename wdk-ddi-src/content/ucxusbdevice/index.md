@@ -1,17 +1,17 @@
 ---
+description: "Learn more about: Ucxusbdevice.h header"
 UID: NA:ucxusbdevice
 title: Ucxusbdevice.h header
 ms.assetid: 2cf71389-08f1-3c73-b478-7efa6045e05e
 ms.date: 05/09/2018
 keywords: ["Ucxusbdevice.h header"]
 ms.keywords: USB host controller driver
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 tech.root: usbref
 f1_keywords:
  - ucxusbdevice
  - ucxusbdevice/ucxusbdevice
+api_name:
+ - ucxusbdevice
 ---
 
 # Ucxusbdevice.h header
@@ -27,3 +27,4 @@ For more information, see:
 
 - [Developing Windows drivers for USB host controllers](/windows-hardware/drivers/usbcon/developing-windows-drivers-for-usb-host-controllers)
 - [Universal Serial Bus (USB)](../_usbref/index.md)
+

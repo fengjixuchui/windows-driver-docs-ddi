@@ -4,7 +4,6 @@ title: IWDTFTarget2::GetRelations (wdtf.h)
 description: Returns a collection of related targets.
 old-location: dtf\iwdtftarget2_getrelations.htm
 tech.root: dtf
-ms.assetid: 15622472-808b-4d9e-ac59-ca5c9efbff7c
 ms.date: 04/04/2018
 keywords: ["IWDTFTarget2::GetRelations"]
 ms.keywords: GetRelations, GetRelations method [Windows Device Testing Framework], GetRelations method [Windows Device Testing Framework],IWDTFTarget2 interface, IWDTFTarget2 interface [Windows Device Testing Framework],GetRelations method, IWDTFTarget2.GetRelations, IWDTFTarget2::GetRelations, Microsoft.WDTF.IWDTFTarget2.GetRelations, Microsoft::WDTF::IWDTFTarget2::GetRelations, dtf.iwdtftarget2_getrelations, wdtf/IWDTFTarget2::GetRelations
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFTarget2.GetRelations
+ - IWDTFTarget2::GetRelations
 ---
 
 # IWDTFTarget2::GetRelations
@@ -50,21 +49,21 @@ Returns a collection of related targets.
 
 ## -parameters
 
-### -param RelationSDEL 
+### -param RelationSDEL [in]
 
-[in]
+
 An SDEL statement that contains one or more relation tokens 
 that specify the desired targets.
 
-### -param MatchSDEL 
+### -param MatchSDEL [in]
 
-[in]
+
 The SDEL statement that each returned target must match.
 If <i>MatchSDEL</i> is empty, all targets are returned.
 
-### -param ppRelations 
+### -param ppRelations [out, retval]
 
-[out, retval]
+
 The address of the variable that will receive the 
 result of this method.
 
@@ -102,3 +101,4 @@ Language Overview</a>.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftarget2">IWDTFTarget2</a>
+

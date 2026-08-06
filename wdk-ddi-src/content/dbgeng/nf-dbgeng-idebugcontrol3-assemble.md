@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl3.Assemble
 title: IDebugControl3::Assemble (dbgeng.h)
-description: The Assemble method assembles a single processor instruction. The assembled instruction is placed in the target's memory.
+description: The Assemble method assembles a single processor instruction. The assembled instruction is placed in the target's memory. This method belongs to IDebugControl3.
 old-location: debugger\assemble.htm
 tech.root: debugger
-ms.assetid: 4d7d84e7-4fa4-4514-9d52-dbae5fed159b
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::Assemble"]
 ms.keywords: Assemble, Assemble method [Windows Debugging], Assemble method [Windows Debugging],IDebugControl interface, Assemble method [Windows Debugging],IDebugControl2 interface, Assemble method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],Assemble method, IDebugControl2 interface [Windows Debugging],Assemble method, IDebugControl2::Assemble, IDebugControl3 interface [Windows Debugging],Assemble method, IDebugControl3.Assemble, IDebugControl3::Assemble, IDebugControl::Assemble, IDebugControl_99336950-ba0b-46e1-871d-582f08ab5519.xml, dbgeng/IDebugControl2::Assemble, dbgeng/IDebugControl3::Assemble, dbgeng/IDebugControl::Assemble, debugger.assemble
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugControl.Assemble
- - IDebugControl2.Assemble
- - IDebugControl3.Assemble
+ - IDebugControl3::Assemble
 ---
 
 # IDebugControl3::Assemble
@@ -52,19 +49,19 @@ The <b>Assemble</b> method assembles a single processor instruction.  The assemb
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the location in the target's memory to place the assembled instruction.
 
-### -param Instr 
+### -param Instr [in]
 
-[in]
+
 Specifies the instruction to assemble.  The instruction is assembled according to the target's effective processor type (returned by <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-seteffectiveprocessortype">SetEffectiveProcessorType</a>).
 
-### -param EndOffset 
+### -param EndOffset [out]
 
-[out]
+
 Receives the location in the target's memory immediately following the assembled instruction.  <i>EndOffset</i> can be used when assembling multiple instructions.
 
 ## -returns
@@ -120,3 +117,4 @@ For an overview of using assembly in debugger applications, see <a href="/window
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
+

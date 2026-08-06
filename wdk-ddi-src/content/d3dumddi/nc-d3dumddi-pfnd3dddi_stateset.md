@@ -4,7 +4,6 @@ title: PFND3DDDI_STATESET (d3dumddi.h)
 description: The StateSet function sets a state block.
 old-location: display\stateset.htm
 tech.root: display
-ms.assetid: 2c298de6-a3d9-45c7-ab60-dc9124eed1bb
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_STATESET callback function"]
 ms.keywords: PFND3DDDI_STATESET, PFND3DDDI_STATESET callback, StateSet, StateSet callback function [Display Devices], UserModeDisplayDriver_Functions_ca9843ce-a32d-4d81-844a-213b7fe6c6e0.xml, d3dumddi/StateSet, display.stateset
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - StateSet
-product:
- - Windows
+ - PFND3DDDI_STATESET
 ---
 
 # PFND3DDDI_STATESET callback function
@@ -56,7 +53,7 @@ The <i>StateSet</i> function sets a state block.
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -73,3 +70,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dd
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient3.GetRunningProcessSystemIdByExecutableName
 title: IDebugClient3::GetRunningProcessSystemIdByExecutableName (dbgeng.h)
-description: The GetRunningProcessSystemIdByExecutableName method searches for a process with a given executable file name and return its process ID.
+description: The IDebugClient3::GetRunningProcessSystemIdByExecutableName method searches for a process with a given executable file name and return its process ID.
 old-location: debugger\getrunningprocesssystemidbyexecutablename.htm
 tech.root: debugger
-ms.assetid: 67e231b4-c693-4824-b895-b7f3085e6f4e
 ms.date: 05/03/2018
 keywords: ["IDebugClient3::GetRunningProcessSystemIdByExecutableName"]
 ms.keywords: GetRunningProcessSystemIdByExecutableName, GetRunningProcessSystemIdByExecutableName method [Windows Debugging], GetRunningProcessSystemIdByExecutableName method [Windows Debugging],IDebugClient interface, GetRunningProcessSystemIdByExecutableName method [Windows Debugging],IDebugClient2 interface, GetRunningProcessSystemIdByExecutableName method [Windows Debugging],IDebugClient3 interface, GetRunningProcessSystemIdByExecutableName method [Windows Debugging],IDebugClient4 interface, GetRunningProcessSystemIdByExecutableName method [Windows Debugging],IDebugClient5 interface, IDebugClient interface [Windows Debugging],GetRunningProcessSystemIdByExecutableName method, IDebugClient2 interface [Windows Debugging],GetRunningProcessSystemIdByExecutableName method, IDebugClient2::GetRunningProcessSystemIdByExecutableName, IDebugClient3 interface [Windows Debugging],GetRunningProcessSystemIdByExecutableName method, IDebugClient3.GetRunningProcessSystemIdByExecutableName, IDebugClient3::GetRunningProcessSystemIdByExecutableName, IDebugClient4 interface [Windows Debugging],GetRunningProcessSystemIdByExecutableName method, IDebugClient4::GetRunningProcessSystemIdByExecutableName, IDebugClient5 interface [Windows Debugging],GetRunningProcessSystemIdByExecutableName method, IDebugClient5::GetRunningProcessSystemIdByExecutableName, IDebugClient::GetRunningProcessSystemIdByExecutableName, IDebugClient_c7e63b9d-45fe-4125-9fbf-984de939b089.xml, dbgeng/IDebugClient2::GetRunningProcessSystemIdByExecutableName, dbgeng/IDebugClient3::GetRunningProcessSystemIdByExecutableName, dbgeng/IDebugClient4::GetRunningProcessSystemIdByExecutableName, dbgeng/IDebugClient5::GetRunningProcessSystemIdByExecutableName, dbgeng/IDebugClient::GetRunningProcessSystemIdByExecutableName, debugger.getrunningprocesssystemidbyexecutablename
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.GetRunningProcessSystemIdByExecutableName
- - IDebugClient2.GetRunningProcessSystemIdByExecutableName
- - IDebugClient3.GetRunningProcessSystemIdByExecutableName
- - IDebugClient4.GetRunningProcessSystemIdByExecutableName
- - IDebugClient5.GetRunningProcessSystemIdByExecutableName
+ - IDebugClient3::GetRunningProcessSystemIdByExecutableName
 ---
 
 # IDebugClient3::GetRunningProcessSystemIdByExecutableName
@@ -54,19 +49,19 @@ The <b>GetRunningProcessSystemIdByExecutableName</b>  method searches for a proc
 
 ## -parameters
 
-### -param Server 
+### -param Server [in]
 
-[in]
+
 Specifies the process server to search for the executable name.  If <i>Server</i> is zero, the engine will search for the executable name among the processes running on the local computer.
 
-### -param ExeName 
+### -param ExeName [in]
 
-[in]
+
 Specifies the executable file name for which to search.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies a bit-set that controls how the executable name is matched.  The following flags may be present:
 
 <table>
@@ -98,9 +93,9 @@ Require that only one process match the executable file name <i>ExeName</i>.
 </tr>
 </table>
 
-### -param Id 
+### -param Id [out]
 
-[out]
+
 Receives the process ID of the first process to match <i>ExeName</i>.
 
 ## -returns
@@ -192,3 +187,4 @@ For more information about creating and attaching to live user-mode targets, see
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient5">IDebugClient5</a>
+

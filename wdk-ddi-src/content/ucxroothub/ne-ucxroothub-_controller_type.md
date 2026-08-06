@@ -4,7 +4,6 @@ title: _CONTROLLER_TYPE (ucxroothub.h)
 description: This enumeration specifies if the USB host controller is an eXtensible Host Controller Interface (xHCI) controller.
 old-location: buses\_controller_type.htm
 tech.root: usbref
-ms.assetid: E7DFBFFA-C65B-4757-8DB8-202760D6D3C6
 ms.date: 05/07/2018
 keywords: ["CONTROLLER_TYPE enumeration"]
 ms.keywords: CONTROLLER_TYPE, ControllerTypeSoftXhci, ControllerTypeXhci, _CONTROLLER_TYPE, _CONTROLLER_TYPE enumeration [Buses], buses._controller_type, ucxroothub/ControllerTypeSoftXhci, ucxroothub/ControllerTypeXhci, ucxroothub/_CONTROLLER_TYPE
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ucxroothub.h
 api_name:
+ - _CONTROLLER_TYPE
  - CONTROLLER_TYPE
 ---
 
@@ -63,3 +63,4 @@ Indicates the USB host controller is software an xHCI controller.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ucxroothub/ns-ucxroothub-_roothub_info">ROOTHUB_INFO</a>
+

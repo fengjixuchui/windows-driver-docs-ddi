@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols4.GetFieldOffset
 title: IDebugSymbols4::GetFieldOffset method (dbgeng.h)
-description: The GetFieldOffset function returns the offset of a member from the beginning of a structure.
+description: The GetFieldOffset function returns the offset of a member from the beginning of a structure. This method belongs to the IDebugSymbols4 interface.
 old-location: debugger\getfieldoffset.htm
 tech.root: debugger
-ms.assetid: 3e5e782b-1a72-446d-9d15-c0f513f3440c
 ms.date: 01/19/2018
 keywords: ["IDebugSymbols4::GetFieldOffset method"]
 ms.keywords: WdbgExts_Ref_22c8a9bc-dec9-4eec-95c6-b265694b4385.xml, IDebugSymbols2::GetFieldOffset, IDebugSymbols::GetFieldOffset, IDebugSymbols4::GetFieldOffset, wdbgexts/GetFieldOffset, GetFieldOffset, IDebugSymbols2, IDebugSymbols4, GetFieldOffset function [Windows Debugging], debugger.getfieldoffset, IDebugSymbols
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - wdbgexts.h
 api_name:
- - GetFieldOffset
+ - IDebugSymbols4::GetFieldOffset
 ---
 
 # IDebugSymbols4::GetFieldOffset method
-
 
 ## -description
 
@@ -50,23 +48,19 @@ The <b>GetFieldOffset</b> function returns the offset of a member from the begin
 
 ## -parameters
 
-### -param Module
+### -param Module [in]
 
-### -param TypeId
+Specifies the module containing the types of both the container and the field.
 
-### -param Field 
-
-[in]
-Specifies the name of the member in the structure.  Submembers can be specified by using a period-separated path, for example, "myfield.mysubfield".
-
-### -param Offset
-
-#### - Type [in]
+### -param TypeId [in]
 
 Specifies the name of the type of the structure.  This can be qualified with a module name, for example, <b>mymodule!mystruct</b>.
 
+### -param Field [in]
 
-#### - pOffset [out]
+Specifies the name of the member in the structure.  Submembers can be specified by using a period-separated path, for example, "myfield.mysubfield".
+
+### -param Offset [out]
 
 Receives the offset of the member from the beginning of an instance of the structure.
 
@@ -83,3 +77,4 @@ __inline ULONG GetFieldOffset(
   _Out_ PULONG pOffset
 );
 ```
+

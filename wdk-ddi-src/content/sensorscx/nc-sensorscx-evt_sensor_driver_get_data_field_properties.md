@@ -4,7 +4,6 @@ title: EVT_SENSOR_DRIVER_GET_DATA_FIELD_PROPERTIES (sensorscx.h)
 description: This callback function returns the properties of a given data field associated with a sensor.
 old-location: sensors\evtsensorgetdatafieldproperties.htm
 tech.root: sensors
-ms.assetid: E3BE0351-724E-4407-AA5B-D7AAEFE508D4
 ms.date: 10/15/2020
 keywords: ["EVT_SENSOR_DRIVER_GET_DATA_FIELD_PROPERTIES callback function"]
 ms.keywords: EVT_SENSOR_DRIVER_GET_DATA_FIELD_PROPERTIES, EVT_SENSOR_DRIVER_GET_DATA_FIELD_PROPERTIES callback, EvtSensorGetDataFieldProperties, EvtSensorGetDataFieldProperties callback function [Sensor Devices], sensors.evtsensorgetdatafieldproperties, sensorscx/EvtSensorGetDataFieldProperties
@@ -38,10 +37,11 @@ api_type:
 api_location:
  - SensorsCx.h
 api_name:
- - EvtSensorGetDataFieldProperties
+ - EVT_SENSOR_DRIVER_GET_DATA_FIELD_PROPERTIES
 ---
 
 # EVT_SENSOR_DRIVER_GET_DATA_FIELD_PROPERTIES callback function
+
 
 ## -description
 
@@ -49,21 +49,21 @@ This callback function returns the properties of a given data field associated w
 
 ## -parameters
 
-### -param Sensor
+### -param Sensor [in]
 
-[in] A reference to a sensor object.
+A reference to a sensor object.
 
-### -param pDataField
+### -param pDataField [in]
 
-[in] A reference to a data field. For more information see [Sensor data fields](/windows-hardware/drivers/sensors/common-data-fields).
+A reference to a data field. For more information see [Sensor data fields](/windows-hardware/drivers/sensors/common-data-fields).
 
-### -param pProperties
+### -param pProperties [in, out, optional]
 
-[in, out, optional] A list of properties and their values for the specified **Sensor**. For more information see [SENSOR_COLLECTION_LIST](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list)
+A list of properties and their values for the specified **Sensor**. For more information see [SENSOR_COLLECTION_LIST](../sensorsdef/ns-sensorsdef-sensor_collection_list.md)
 
-### -param pSize
+### -param pSize [out]
 
-[out] The size of **pDataField**.
+The size of **pDataField**.
 
 ## -returns
 
@@ -74,12 +74,13 @@ This function returns **STATUS_SUCCESS** when completed successfully.
 This function must be implemented by the driver and is called by the class extension.
 
 > [!NOTE]
-> The class extension (CX) only uses the NT_SUCCESS macro to determine if the call to the driver’s Evt function was successful, but does not take any action if the function failed or does not return STATUS_SUCCESS.  
+> The class extension (CX) only uses the NT_SUCCESS macro to determine if the call to the driver’s Evt function was successful, but does not take any action if the function failed or does not return STATUS_SUCCESS.
 
 ## -see-also
 
 [Proximity sensor data fields](/windows-hardware/drivers/sensors/proximity-sensor-data-fields)
 
-[SENSOR_COLLECTION_LIST](/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list)
+[SENSOR_COLLECTION_LIST](../sensorsdef/ns-sensorsdef-sensor_collection_list.md)
 
 [Sensor data fields](/windows-hardware/drivers/sensors/common-data-fields)
+

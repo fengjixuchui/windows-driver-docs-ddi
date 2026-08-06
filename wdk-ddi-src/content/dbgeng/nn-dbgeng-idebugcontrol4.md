@@ -4,7 +4,6 @@ title: IDebugControl4 (dbgeng.h)
 description: IDebugControl4 interface
 old-location: debugger\idebugcontrol4.htm
 tech.root: debugger
-ms.assetid: 693207c2-70d7-45be-ae22-436555225928
 ms.date: 05/03/2018
 keywords: ["IDebugControl4 interface"]
 ms.keywords: IDebugControl4, IDebugControl4 interface [Windows Debugging], IDebugControl4 interface [Windows Debugging],described, dbgeng/IDebugControl4, debugger.idebugcontrol4
@@ -39,9 +38,6 @@ api_location:
  - dbgeng.h
 api_name:
  - IDebugControl4
- - IDebugControl4.GetManagedStatus
- - IDebugControl4.GetManagedStatusWide
- - IDebugControl4.ResetManagedStatus
 ---
 
 # IDebugControl4 interface
@@ -51,10 +47,8 @@ api_name:
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugControl4</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>. <b>IDebugControl4</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IDebugControl4</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>. <b>IDebugControl4</b> also has these types of members:
+
 
 ## -see-also
 
@@ -67,3 +61,4 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugControl4</b> interface 
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
+

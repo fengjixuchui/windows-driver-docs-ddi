@@ -4,7 +4,6 @@ title: IKeywordDetectorOemAdapter::GetCapabilities (keyworddetectoroemadapter.h)
 description: The GetCapabilities method returns the keywords and languages supported by the object.
 old-location: audio\ikeyworddetectoroemadapter_getcapabilities.htm
 tech.root: audio
-ms.assetid: 5885E2BB-78DA-46F5-8330-DE8785C61946
 ms.date: 05/08/2018
 keywords: ["IKeywordDetectorOemAdapter::GetCapabilities"]
 ms.keywords: GetCapabilities, GetCapabilities method [Audio Devices], GetCapabilities method [Audio Devices],IKeywordDetectorOemAdapter interface, IKeywordDetectorOemAdapter interface [Audio Devices],GetCapabilities method, IKeywordDetectorOemAdapter.GetCapabilities, IKeywordDetectorOemAdapter::GetCapabilities, audio.ikeyworddetectoroemadapter_getcapabilities, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::GetCapabilities
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - KeywordDetectorOemAdapter.h
 api_name:
- - IKeywordDetectorOemAdapter.GetCapabilities
+ - IKeywordDetectorOemAdapter::GetCapabilities
 ---
 
 # IKeywordDetectorOemAdapter::GetCapabilities
@@ -50,34 +49,34 @@ The <b>GetCapabilities</b> method returns the keywords and languages supported b
 
 ## -parameters
 
-### -param SupportsUserModels 
+### -param SupportsUserModels [in]
 
-[in]
+
 A Boolean value that indicates whether user specific training is supported.
 
-### -param KeywordIds 
+### -param KeywordIds [out]
 
-[out]
+
 A pointer to an array of keyword IDs supported by the object. The object allocates the array by calling <a href="/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc">CoTaskMemAlloc</a>. The caller frees the memory by calling <a href="/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree">CoTaskMemFree</a>.
 
-### -param NumKeywords 
+### -param NumKeywords [out]
 
-[out]
+
 The number of keyword IDs in the <i>KeywordIds</i> array.
 
-### -param LangIds 
+### -param LangIds [out]
 
-[out]
+
 A pointer to an array of language IDs supported by the object. The object allocates the array by calling <a href="/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc">CoTaskMemAlloc</a>. The caller frees the memory by calling <a href="/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree">CoTaskMemFree</a>.
 
-### -param NumLanguages 
+### -param NumLanguages [out]
 
-[out]
+
 The number of language IDs in the <i>LangIds</i> array.
 
-### -param ppMediaType 
+### -param ppMediaType [out]
 
-[out]
+
 The audio format required by <a href="/windows-hardware/drivers/ddi/keyworddetectoroemadapter/nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-verifyuserkeyword">IKeywordDetectorOemAdapter::VerifyUserKeyword</a> and <a href="/windows-hardware/drivers/ddi/keyworddetectoroemadapter/nf-keyworddetectoroemadapter-ikeyworddetectoroemadapter-computeandaddusermodeldata">IKeywordDetectorOemAdapter::ComputeAndAddUserModelData</a>. 
 
 The only valid values for the IMFMediaType are the following:
@@ -172,3 +171,4 @@ The OEMDLL must have internal user independent models for the keywords and langu
 
 
 <a href="/windows/win32/api/mfapi/nf-mfapi-mfinitmediatypefromwaveformatex">MFInitMediaTypeFromWaveFormatEx</a>
+

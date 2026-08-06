@@ -4,7 +4,6 @@ title: IPrintOemUI::PrinterEvent (prcomoem.h)
 description: The IPrintOemUI::PrinterEvent method allows a user interface plug-in to process printer events.
 old-location: print\iprintoemui_printerevent.htm
 tech.root: print
-ms.assetid: 214ea4d8-3bf9-4248-8bfa-7180635769be
 ms.date: 04/20/2018
 keywords: ["IPrintOemUI::PrinterEvent"]
 ms.keywords: IPrintOemUI interface [Print Devices],PrinterEvent method, IPrintOemUI.PrinterEvent, IPrintOemUI::PrinterEvent, PrinterEvent, PrinterEvent method [Print Devices], PrinterEvent method [Print Devices],IPrintOemUI interface, prcomoem/IPrintOemUI::PrinterEvent, print.iprintoemui_printerevent, print_unidrv-pscript_ui_87a42746-bb3f-494a-a647-8b111e2b0e09.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemUI.PrinterEvent
+ - IPrintOemUI::PrinterEvent
 ---
 
 # IPrintOemUI::PrinterEvent
@@ -127,3 +126,4 @@ For more information about creating and installing user interface plug-ins, see 
 
 
 <a href="/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintoemui">IPrintOemUI</a>
+

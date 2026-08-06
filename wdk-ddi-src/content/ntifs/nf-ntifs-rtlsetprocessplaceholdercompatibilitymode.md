@@ -3,7 +3,6 @@ UID: NF:ntifs.RtlSetProcessPlaceholderCompatibilityMode
 title: RtlSetProcessPlaceholderCompatibilityMode function (ntifs.h)
 description: RtlSetProcessPlaceholderCompatibilityMode sets the placeholder compatibility mode for the current process.
 tech.root: ifsk
-ms.assetid: afde9bc1-5529-4ddf-8839-853599c832d0
 ms.date: 10/19/2018
 keywords: ["RtlSetProcessPlaceholderCompatibilityMode function"]
 ms.keywords: RtlSetProcessPlaceholderCompatibilityMode
@@ -53,7 +52,7 @@ The placeholder compatibility mode to set.
 
 ## -returns
 
-This function returns the process's previous placeholder compatibily mode (PHCM_xxx), or a negative value on error (PCHM_ERROR_xxx).
+This function returns the process's previous placeholder compatibility mode (PHCM_xxx), or a negative value on error (PCHM_ERROR_xxx).
 
 It can be one of the following values:
 

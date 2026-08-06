@@ -4,7 +4,6 @@ title: IDebugControl3::GetLogFile (dbgeng.h)
 description: The GetLogFile method returns the name of the currently open log file.
 old-location: debugger\getlogfile.htm
 tech.root: debugger
-ms.assetid: 9d71a817-55b5-4042-8de8-15b23e51dffd
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::GetLogFile"]
 ms.keywords: GetLogFile, GetLogFile method [Windows Debugging], GetLogFile method [Windows Debugging],IDebugControl interface, GetLogFile method [Windows Debugging],IDebugControl2 interface, GetLogFile method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],GetLogFile method, IDebugControl2 interface [Windows Debugging],GetLogFile method, IDebugControl2::GetLogFile, IDebugControl3 interface [Windows Debugging],GetLogFile method, IDebugControl3.GetLogFile, IDebugControl3::GetLogFile, IDebugControl::GetLogFile, IDebugControl_cad2fa56-b2ca-4a26-822e-193acf602913.xml, dbgeng/IDebugControl2::GetLogFile, dbgeng/IDebugControl3::GetLogFile, dbgeng/IDebugControl::GetLogFile, debugger.getlogfile
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.GetLogFile
- - IDebugControl2.GetLogFile
- - IDebugControl3.GetLogFile
+ - IDebugControl3::GetLogFile
 ---
 
 # IDebugControl3::GetLogFile
@@ -52,24 +49,24 @@ The <b>GetLogFile</b>  method returns the name of the currently open log file.
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Receives the name of the currently open log file.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size, in characters, of the <i>Buffer</i> buffer.
 
-### -param FileSize 
+### -param FileSize [out, optional]
 
-[out, optional]
+
 Receives the size, in characters, of the name of the log file.  If <i>FileSize</i> is <b>NULL</b>, this information is not returned.
 
-### -param Append 
+### -param Append [out]
 
-[out]
+
 Receives <b>TRUE</b> if log messages are appended to the log file, or <b>FALSE</b> if the contents of the log file were discarded when the file was opened.
 
 ## -returns
@@ -149,3 +146,4 @@ For more information about log files, see <a href="/windows-hardware/drivers/deb
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-openlogfile">OpenLogFile</a>
+

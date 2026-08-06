@@ -4,7 +4,6 @@ title: USBD_CreateConfigurationRequestEx function (usbdlib.h)
 description: The USBD_CreateConfigurationRequestEx routine allocates and formats a URB to select a configuration for a USB device.USBD_CreateConfigurationRequestEx replaces USBD_CreateConfigurationRequest.
 old-location: buses\usbd_createconfigurationrequestex.htm
 tech.root: usbref
-ms.assetid: 9683b171-4f2e-4a18-89b7-76d49001be37
 ms.date: 05/07/2018
 keywords: ["USBD_CreateConfigurationRequestEx function"]
 ms.keywords: USBD_CreateConfigurationRequestEx, USBD_CreateConfigurationRequestEx routine [Buses], buses.usbd_createconfigurationrequestex, usbdlib/USBD_CreateConfigurationRequestEx, usbfunc_d0c1e002-ed01-4bd4-98f0-b4b2d6da2ca6.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Usbd.lib
 req.dll: 
-req.irql: DISPATCH_LEVEL (See Remarks)
+req.irql: DISPATCH_LEVEL (see Remarks)
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ api_name:
 
 ## -parameters
 
-### -param ConfigurationDescriptor 
+### -param ConfigurationDescriptor [in]
 
-[in]
+
 Pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_configuration_descriptor">USB_CONFIGURATION_DESCRIPTOR</a> structure that contains the configuration descriptor for the configuration to be selected. Typically, the client driver submits a URB  of the type  URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE (see <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_urb_control_descriptor_request">_URB_CONTROL_DESCRIPTOR_REQUEST</a>)     to retrieve information about configurations, interfaces, endpoints, the vendor, and class-specific descriptors from a USB device. When the client driver specifies USB_CONFIGURATION_DESCRIPTOR_TYPE as the descriptor type, the request retrieves all device information in a <b>USB_CONFIGURATION_DESCRIPTOR</b> structure. The driver then passes the received pointer to    the <b>USB_CONFIGURATION_DESCRIPTOR</b> structure in the <i>ConfigurationDescriptor</i> parameter.
 
-### -param InterfaceList 
+### -param InterfaceList [in]
 
-[in]
+
 Pointer to the first element of a caller-allocated array of <a href="/windows-hardware/drivers/ddi/usbdlib/ns-usbdlib-_usbd_interface_list_entry">USBD_INTERFACE_LIST_ENTRY</a>    structures. The length of the array depends on the number of interfaces in the configuration descriptor. The number  of elements in the array  must be one more than the number of interfaces in the configuration. Initialize the array by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlzeromemory">RtlZeroMemory</a>. The <b>InterfaceDescriptor</b> member of the last element in the array must be set to <b>NULL</b>.
 
 ## -returns
@@ -69,7 +68,7 @@ Pointer to the first element of a caller-allocated array of <a href="/windows-ha
 
 ## -remarks
 
-For information about how to build a select-configuration reqeuest and code example, see <a href="/windows-hardware/drivers/ddi/index">How to Select a Configuration for a USB Device</a>.
+For information about how to build a select-configuration request and code example, see <a href="/windows-hardware/drivers/ddi/index">How to Select a Configuration for a USB Device</a>.
 
 The returned value is a pointer to the <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_urb">URB</a> structure that you can use to submit a select-configuration request to the host controller driver to set the specified configuration.
 

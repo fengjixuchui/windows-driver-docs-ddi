@@ -4,14 +4,13 @@ title: _DXGK_CHILD_CAPABILITIES (dispmprt.h)
 description: The DXGK_CHILD_CAPABILITIES structure contains information about the capabilities of an individual child device of a display adapter.
 old-location: display\dxgk_child_capabilities.htm
 tech.root: display
-ms.assetid: 6ab6a505-ad02-4dce-8061-bba13081208a
 ms.date: 05/10/2018
 keywords: ["DXGK_CHILD_CAPABILITIES structure"]
 ms.keywords: "*PDXGK_CHILD_CAPABILITIES, DXGK_CHILD_CAPABILITIES, DXGK_CHILD_CAPABILITIES structure [Display Devices], DmStructs_886366a4-949a-4171-abcf-e318df848285.xml, PDXGK_CHILD_CAPABILITIES, PDXGK_CHILD_CAPABILITIES structure pointer [Display Devices], _DXGK_CHILD_CAPABILITIES, display.dxgk_child_capabilities, dispmprt/DXGK_CHILD_CAPABILITIES, dispmprt/PDXGK_CHILD_CAPABILITIES"
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
+ - _DXGK_CHILD_CAPABILITIES
+ - PDXGK_CHILD_CAPABILITIES
  - DXGK_CHILD_CAPABILITIES
 ---
 
@@ -97,3 +98,4 @@ If a child device is of type <b>TypeOther</b>, then <b>Type.Other.MustBeZero</b>
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_child_relations">DxgkDdiQueryChildRelations</a>
+

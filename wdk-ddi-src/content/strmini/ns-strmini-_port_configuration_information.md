@@ -4,7 +4,6 @@ title: _PORT_CONFIGURATION_INFORMATION (strmini.h)
 description: PORT_CONFIGURATION_INFORMATION describes the hardware settings of a streaming minidriver's device. The class driver fills in most members with information provided by the operating system.
 old-location: stream\port_configuration_information.htm
 tech.root: stream
-ms.assetid: fa990867-4e2f-4940-b6fc-310ec7fc2b68
 ms.date: 04/23/2018
 keywords: ["PORT_CONFIGURATION_INFORMATION structure"]
 ms.keywords: "*PPORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION structure [Streaming Media Devices], PPORT_CONFIGURATION_INFORMATION, PPORT_CONFIGURATION_INFORMATION structure pointer [Streaming Media Devices], _PORT_CONFIGURATION_INFORMATION, _PORT_CONFIGURATION_INFORMATION structure [Streaming Media Devices], strclass-struct_5cfaddef-5c60-406e-b938-697f36b6c8e1.xml, stream.port_configuration_information, strmini/PORT_CONFIGURATION_INFORMATION, strmini/PPORT_CONFIGURATION_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - strmini.h
 api_name:
+ - _PORT_CONFIGURATION_INFORMATION
+ - PPORT_CONFIGURATION_INFORMATION
  - PORT_CONFIGURATION_INFORMATION
 ---
 
@@ -129,3 +130,4 @@ Reserved for system use. Do not use.
 ## -remarks
 
 Most of the members of PORT_CONFIGURATION_INFORMATION provide information to the minidriver about its use of hardware resources, such as its interrupt vector and the IRQL for its interrupts.
+

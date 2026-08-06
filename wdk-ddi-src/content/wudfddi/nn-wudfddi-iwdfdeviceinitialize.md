@@ -4,7 +4,6 @@ title: IWDFDeviceInitialize (wudfddi.h)
 description: The IWDFDeviceInitialize interface is a helper interface that the framework supplies as an input parameter to the driver's IDriverEntry::OnDeviceAdd method.
 old-location: wdf\iwdfdeviceinitialize.htm
 tech.root: wdf
-ms.assetid: a776069c-0cbb-4ae9-bf6b-1d300dbcec34
 ms.date: 02/26/2018
 keywords: ["IWDFDeviceInitialize interface"]
 ms.keywords: IWDFDeviceInitialize, IWDFDeviceInitialize interface, IWDFDeviceInitialize interface,described, UMDFDeviceObjectRef_b63038ef-0e6e-4417-96de-0c3f5ec1866e.xml, umdf.iwdfdeviceinitialize, wdf.iwdfdeviceinitialize, wudfddi/IWDFDeviceInitialize
@@ -52,9 +51,9 @@ The <b>IWDFDeviceInitialize</b> interface is a helper interface that the framewo
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFDeviceInitialize</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IWDFDeviceInitialize</b> also has these types of members:
+The <b>IWDFDeviceInitialize</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IWDFDeviceInitialize</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>
 
 ## -remarks

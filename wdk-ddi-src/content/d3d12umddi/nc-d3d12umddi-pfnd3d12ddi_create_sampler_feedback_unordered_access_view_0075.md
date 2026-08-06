@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_CREATE_SAMPLER_FEEDBACK_UNORDERED_ACCESS_VIEW_0075
 title: PFND3D12DDI_CREATE_SAMPLER_FEEDBACK_UNORDERED_ACCESS_VIEW_0075 (d3d12umddi.h)
 description: Used to create a sampler feedback with unordered access view.
-ms.assetid: 2a1b8f76-b335-43e1-bb2c-e94798934b9c
 ms.date: 03/24/2020
 keywords: ["PFND3D12DDI_CREATE_SAMPLER_FEEDBACK_UNORDERED_ACCESS_VIEW_0075 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CREATE_SAMPLER_FEEDBACK_UNORDERED_ACCESS_VIEW_0075
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,21 +48,21 @@ Used to create a sampler feedback with unordered access view.
 
 ## -parameters
 
-### -param hDrvDevice
+### -param hDrvDevice [in]
 
-[in] A handle to the display device (graphics context).
+A handle to the display device (graphics context).
 
-### -param hDrvTargetedResource
+### -param hDrvTargetedResource [in]
 
-[in] Handle to targeted resource.
+Handle to targeted resource.
 
-### -param hDrvFeedbackResource
+### -param hDrvFeedbackResource [in]
 
-[in] Handle to feedback resource.
+Handle to feedback resource.
 
-### -param DestDescriptor
+### -param DestDescriptor [in]
 
-[in] A [D3D12DDI_CPU_DESCRIPTOR_HANDLE](ns-d3d12umddi-d3d12ddi_cpu_descriptor_handle.md) structure that defines the destination target.
+A [D3D12DDI_CPU_DESCRIPTOR_HANDLE](ns-d3d12umddi-d3d12ddi_cpu_descriptor_handle.md) structure that defines the destination target.
 
 ## -prototype
 

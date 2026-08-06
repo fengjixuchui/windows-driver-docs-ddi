@@ -4,7 +4,6 @@ title: KsCancelIo function (ks.h)
 description: The KsCancelIo function cancels all IRPs on the specified cancel list. If an IRP on the list does not have a cancel routine, only the cancel bit is set in the IRP. The function can be called at IRQ level DISPATCH_LEVEL or lower.
 old-location: stream\kscancelio.htm
 tech.root: stream
-ms.assetid: 082a63d5-5ba5-4cd3-aea3-0184317e1e96
 ms.date: 04/23/2018
 keywords: ["KsCancelIo function"]
 ms.keywords: KsCancelIo, KsCancelIo function [Streaming Media Devices], ks/KsCancelIo, ksfunc_135412c3-120f-4b19-ac05-da63ab6b1ddd.xml, stream.kscancelio
@@ -51,14 +50,14 @@ The <b>KsCancelIo</b> function cancels all IRPs on the specified cancel list. If
 
 ## -parameters
 
-### -param QueueHead 
+### -param QueueHead [in, out]
 
-[in, out]
+
 Specifies the head of a driver-maintained queue containing the IRP's to be canceled.
 
-### -param SpinLock 
+### -param SpinLock [in]
 
-[in]
+
 Points to a caller-allocated spin lock for queue access. A copy of this pointer is kept in the IRP's KSQUEUE_SPINLOCK_IRP_STORAGE(Irp) for use by the cancel routine, if necessary.
 
 ## -returns

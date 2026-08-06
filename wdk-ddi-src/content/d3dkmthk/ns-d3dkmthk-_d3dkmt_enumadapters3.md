@@ -1,9 +1,8 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_ENUMADAPTERS3
-title: _D3DKMT_ENUMADAPTERS3 (d3dkmthk.h)
-description: Supplies information for enumerating all graphics adapters on the system.
-ms.assetid: 82fbef6f-b3ce-4ab8-b5af-cbb219593d3f
-ms.date: 03/24/2020
+title: D3DKMT_ENUMADAPTERS3 (d3dkmthk.h)
+description: Learn more about the D3DKMT_ENUMADAPTERS3 structure.
+ms.date: 10/04/2024
 keywords: ["D3DKMT_ENUMADAPTERS3 structure"]
 ms.keywords: _D3DKMT_ENUMADAPTERS3, D3DKMT_ENUMADAPTERS3,
 req.header: d3dkmthk.h
@@ -35,6 +34,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_ENUMADAPTERS3
+ - D3DKMT_ENUMADAPTERS3
 dev_langs:
  - c++
 ---
@@ -43,23 +43,24 @@ dev_langs:
 
 ## -description
 
-Supplies information about adapters on the system.
+The **D3DKMT_ENUMADAPTERS3** structure supplies information about adapters on the system.
 
 ## -struct-fields
 
-### -field Filter
+### -field Filter [in]
 
-[in] A **D3DKMT_ENUMADAPTERS_FILTER** union containing filter flags for the enumeration. The struct in **Filter** can be a bitwise OR of the following values. See Remarks for more information.
+A **D3DKMT_ENUMADAPTERS_FILTER** union containing filter flags for the enumeration. The struct in **Filter** can be a bitwise OR of the following values. See Remarks for more information.
 
 | Value | Meaning |
 | ----- | ------- |
-| IncludeComputeOnly | When set, enumerate ComputeOnly adapters. |
-| IncludeDisplayOnly | When set, enumerate DisplayOnly adapters. |
-| Reserved           | Reserved; do not use.                     |
+| IncludeComputeOnly    | When set, enumerate ComputeOnly adapters. |
+| IncludeDisplayOnly    | When set, enumerate DisplayOnly adapters. |
+| IncludeVirtualGpuOnly | When set, enumerate GPU-P adapters. These adapters are meant to be used only inside virtual machines. A driver sets the [**DXGK_DRIVERCAPS**](..//d3dkmddi/ns-d3dkmddi-_dxgk_drivercaps.md)**::MiscCaps.VirtualGpuOnly** cap for such adapters to avoid their enumeration in the host OS. Available starting in Windows 11, version 24H2 (WDDM 3.2). |
+| Reserved              | Reserved; do not use.                     |
 
-### -field NumAdapters
+### -field NumAdapters [in/out]
 
-[in/out] The number of adapters.
+The number of adapters.
 
 On input, **NumAdapters** specifies how many adapters can be returned in the empty **pAdapters** array. Possible return values for **NumAdapters** are:
 
@@ -67,9 +68,9 @@ On input, **NumAdapters** specifies how many adapters can be returned in the emp
 - On successful return when **pAdapters** is null, **NumAdapters** contains the maximum supported adapter count.
 - On failed return when **pAdapters** is non-null, **NumAdapters** is undefined.
 
-### -field pAdapters
+### -field pAdapters [out]
 
-[out] An optional array of [**D3DKMT_ADAPTERINFO**](ns-d3dkmthk-_d3dkmt_adapterinfo.md) structures in which to receive information for each adapter.
+An optional array of [**D3DKMT_ADAPTERINFO**](ns-d3dkmthk-_d3dkmt_adapterinfo.md) structures in which to receive information for each adapter.
 
 ## -remarks
 

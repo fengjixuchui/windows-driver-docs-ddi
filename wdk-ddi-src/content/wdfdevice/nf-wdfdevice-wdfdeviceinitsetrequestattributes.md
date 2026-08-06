@@ -4,7 +4,6 @@ title: WdfDeviceInitSetRequestAttributes function (wdfdevice.h)
 description: The WdfDeviceInitSetRequestAttributes method sets object attributes that will be used for all of the framework request objects that the framework delivers to the driver from the device's I/O queues.
 old-location: wdf\wdfdeviceinitsetrequestattributes.htm
 tech.root: wdf
-ms.assetid: ac705ff9-8019-47f9-8842-05f9152af29c
 ms.date: 02/26/2018
 keywords: ["WdfDeviceInitSetRequestAttributes function"]
 ms.keywords: DFDeviceObjectGeneralRef_30c50afa-81a1-4f3c-a2b0-987920922a4f.xml, WdfDeviceInitSetRequestAttributes, WdfDeviceInitSetRequestAttributes method, kmdf.wdfdeviceinitsetrequestattributes, wdf.wdfdeviceinitsetrequestattributes, wdfdevice/WdfDeviceInitSetRequestAttributes
@@ -55,14 +54,14 @@ The <b>WdfDeviceInitSetRequestAttributes</b> method sets object attributes that 
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A caller-supplied pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
-### -param RequestAttributes 
+### -param RequestAttributes [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the device's request objects.
 
 ## -remarks

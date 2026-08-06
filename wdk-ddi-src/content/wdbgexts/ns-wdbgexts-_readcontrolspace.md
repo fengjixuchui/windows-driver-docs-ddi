@@ -1,11 +1,10 @@
 ---
 UID: NS:wdbgexts._READCONTROLSPACE
 title: _READCONTROLSPACE (wdbgexts.h)
-description: The ReadControlSpace function reads the processor-specific control space into the array pointed to by buf.
+description: Learn how the ReadControlSpace function reads the processor-specific control space into the array pointed to by buf.
 old-location: debugger\readcontrolspace.htm
 tech.root: debugger
-ms.assetid: 4b6955a5-ca03-418d-9eba-fdbe48599922
-ms.date: 02/27/2018
+ms.date: 07/27/2023
 keywords: ["READCONTROLSPACE structure"]
 ms.keywords: "*PREADCONTROLSPACE, READCONTROLSPACE, ReadControlSpace, ReadControlSpace function [Windows Debugging], WdbgExts_Ref_8337344a-4a97-4f74-9be4-8fdd771d8bbf.xml, _READCONTROLSPACE, debugger.readcontrolspace, wdbgexts/ReadControlSpace"
 req.header: wdbgexts.h
@@ -42,11 +41,12 @@ api_type:
 api_location:
  - wdbgexts.h
 api_name:
- - ReadControlSpace
+ - _READCONTROLSPACE
+ - PREADCONTROLSPACE
+ - READCONTROLSPACE
 ---
 
 # _READCONTROLSPACE structure
-
 
 ## -description
 
@@ -54,8 +54,25 @@ The <b>ReadControlSpace</b> function reads the processor-specific control space 
 
 ## -struct-fields
 
+### -field Processor
+
+Specifies the number of the processor whose control space is to be read.
+
+### -field Address
+
+Specifies the address of the control space.
+
+### -field BufLen
+
+The length of the buffer.
+
+### -field Buf[1]
+
+Specifies the object into which the control space data is read.
+
 ## -remarks
 
 If you are writing 64-bit code, you should use <a href="/windows-hardware/drivers/ddi/wdbgexts/nf-wdbgexts-readcontrolspace64">ReadControlSpace64</a> instead. See <a href="/windows-hardware/drivers/debugger/32-bit-pointers-and-64-bit-pointers">32-Bit Pointers and 64-Bit Pointers</a> for details.
 
 If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are writing a DbgEng extension that calls this function, include <b>wdbgexts.h</b> before <b>dbgeng.h</b> (see <a href="/windows-hardware/drivers/debugger/writing-dbgeng-extension-code">Writing DbgEng Extension Code</a> for details).
+

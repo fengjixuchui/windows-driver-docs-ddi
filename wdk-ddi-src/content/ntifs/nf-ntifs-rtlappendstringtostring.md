@@ -4,14 +4,13 @@ title: RtlAppendStringToString function (ntifs.h)
 description: The RtlAppendStringToString routine concatenates two counted strings. It copies bytes from the source up to the length of the destination buffer.
 old-location: ifsk\rtlappendstringtostring.htm
 tech.root: ifsk
-ms.assetid: 8cd94502-c11a-4e6a-87f6-0c6034b6ac09
 ms.date: 04/16/2018
 keywords: ["RtlAppendStringToString function"]
 ms.keywords: RtlAppendStringToString, RtlAppendStringToString routine [Installable File System Drivers], ifsk.rtlappendstringtostring, ntifs/RtlAppendStringToString, rtlref_a5cf2f54-1094-44ea-8b05-0c3d08aa5abc.xml
 req.header: ntifs.h
 req.include-header: Ntifs.h, FltKernel.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Microsoft Windows 2000, and later versions of all Windows operating systems.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,14 +49,14 @@ The <b>RtlAppendStringToString</b> routine concatenates two counted strings. It 
 
 ## -parameters
 
-### -param Destination 
+### -param Destination [in, out]
 
-[in, out]
+
 A pointer to a counted string to which the string at <i>Source</i> should be appended.
 
-### -param Source 
+### -param Source [in]
 
-[in]
+
 A pointer to a counted string to be appended to the string at <i>Destination</i>.
 
 ## -returns
@@ -68,7 +67,7 @@ The <b>RtlAppendStringToString</b> routine returns STATUS_SUCCESS if it appended
 
 The sum of the <b>Length</b> members of the <i>Destination</i> and <i>Source</i> strings must be less than or equal to the <b>MaximumLength</b> of the <i>Destination</i> string.
 
-For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/index">Strings</a>.
+For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/_kernel/#run-time-library-rtl-routines">Run-Time Library (RTL) Routines</a>.
 
 ## -see-also
 

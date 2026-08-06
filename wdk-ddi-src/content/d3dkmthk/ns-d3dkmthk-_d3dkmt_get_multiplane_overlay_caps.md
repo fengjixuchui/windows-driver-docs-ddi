@@ -2,7 +2,6 @@
 UID: NS:d3dkmthk._D3DKMT_GET_MULTIPLANE_OVERLAY_CAPS
 title: _D3DKMT_GET_MULTIPLANE_OVERLAY_CAPS (d3dkmthk.h)
 description: Used to get multiplane overlay capabilities.
-ms.assetid: 350738c4-0d00-4fcf-ba92-511e1ba2c113
 ms.date: 10/19/2018
 keywords: ["D3DKMT_GET_MULTIPLANE_OVERLAY_CAPS structure"]
 ms.keywords: _D3DKMT_GET_MULTIPLANE_OVERLAY_CAPS, D3DKMT_GET_MULTIPLANE_OVERLAY_CAPS,
@@ -35,6 +34,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_GET_MULTIPLANE_OVERLAY_CAPS
+ - D3DKMT_GET_MULTIPLANE_OVERLAY_CAPS
 dev_langs:
  - c++
 ---
@@ -48,38 +48,38 @@ Used to get multiplane overlay capabilities.
 
 ## -struct-fields
 
-### -field hAdapter
+### -field hAdapter [in]
 
-[in] A handle to the graphics adapter.
+A handle to the graphics adapter.
 
-### -field VidPnSourceId
+### -field VidPnSourceId [in]
 
-[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the monitor is connected to.
+The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the monitor is connected to.
 
-### -field MaxPlanes
+### -field MaxPlanes [out]
 
-[out] The total number of planes currently supported.
+The total number of planes currently supported.
 
-### -field MaxRGBPlanes
+### -field MaxRGBPlanes [out]
 
-[out] The number of RGB planes currently supported.
+The number of RGB planes currently supported.
 
-### -field MaxYUVPlanes
+### -field MaxYUVPlanes [out]
 
-[out] The number of YUV planes currently supported.
+The number of YUV planes currently supported.
 
-### -field OverlayCaps
+### -field OverlayCaps [out]
 
-[out] Overlay capabilities.
+Overlay capabilities.
 
-### -field MaxStretchFactor
+### -field MaxStretchFactor [out]
 
-[out] The maximum stretch factor.
+The maximum stretch factor.
 
-### -field MaxShrinkFactor
+### -field MaxShrinkFactor [out]
 
  
-[out] The maximum shrink factor.
+The maximum shrink factor.
 
 ## -remarks
 

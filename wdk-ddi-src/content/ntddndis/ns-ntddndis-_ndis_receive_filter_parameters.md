@@ -4,7 +4,6 @@ title: _NDIS_RECEIVE_FILTER_PARAMETERS (ntddndis.h)
 description: The NDIS_RECEIVE_FILTER_PARAMETERS structure specifies the parameters for an NDIS receive filter.
 old-location: netvista\ndis_receive_filter_parameters.htm
 tech.root: netvista
-ms.assetid: 39dc6b3a-f24d-4f1a-96f8-416fbcb3f894
 ms.date: 09/30/2020
 keywords: ["NDIS_RECEIVE_FILTER_PARAMETERS structure"]
 ms.keywords: "*PNDIS_RECEIVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_PACKET_ENCAPSULATION_GRE, NDIS_RECEIVE_FILTER_PARAMETERS, NDIS_RECEIVE_FILTER_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_RECEIVE_FILTER_PARAMETERS, PNDIS_RECEIVE_FILTER_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_FILTER_PARAMETERS, netvista.ndis_receive_filter_parameters, ntddndis/NDIS_RECEIVE_FILTER_PARAMETERS, ntddndis/PNDIS_RECEIVE_FILTER_PARAMETERS, virtual_machine_queue_ref_abdd073b-8e49-4d6d-9bd6-1eca198dbd2d.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_RECEIVE_FILTER_PARAMETERS
+ - PNDIS_RECEIVE_FILTER_PARAMETERS
  - NDIS_RECEIVE_FILTER_PARAMETERS
 ---
 
@@ -68,7 +69,7 @@ NDIS receive filters are used in the following NDIS interfaces:
 </li>
 <li>
 
-<a href="/windows-hardware/drivers/network/virtual-machine-queue--vmq-">Virtual Machine Queue (VMQ)</a>. For more information about how to use receive filters in this interface, see <a href="/windows-hardware/drivers/network/setting-and-clearing-vmq-filters">Setting and Clearing VMQ Filters</a>.
+<a href="/windows-hardware/drivers/network/virtual-machine-queue-architecture">Virtual Machine Queue (VMQ)</a>. For more information about how to use receive filters in this interface, see <a href="/windows-hardware/drivers/network/setting-and-clearing-vmq-filters">Setting and Clearing VMQ Filters</a>.
 
 </li>
 </ul>
@@ -78,7 +79,7 @@ NDIS receive filters are used in the following NDIS interfaces:
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_RECEIVE_FILTER_PARAMETERS</b> structure. The driver sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT.
@@ -115,8 +116,6 @@ A bitwise OR of the following flags.
 |--- |--- |--- |
 |NDIS 6.50 and later|**NDIS_RECEIVE_FILTER_PACKET_ENCAPSULATION** 0x00000002|If this flag is set on the receive filter, the network adapter must match this MAC address in the inner Ethernet frame in encapsulated packets.|
 NDIS 6.20 through NDIS 6.40|**NDIS_RECEIVE_FILTER_PACKET_ENCAPSULATION_GRE** 0x00000002|If this flag is set on the receive filter, the network adapter must match this MAC address in the inner Ethernet frame in GRE encapsulated packets.|
-
-
 
 ### -field FilterType
 
@@ -159,7 +158,7 @@ The size, in bytes, of each element in the array.
 The number of bits in a filter identifier. The miniport driver uses
      this number of bits for the filter identifier in the 
      <b>NetBufferListFilteringInfo</b> out-of-band (OOB) data in 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures.  If this member is zero, a miniport driver must not specify the filter identifier
+     <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures.  If this member is zero, a miniport driver must not specify the filter identifier
      in the OOB 
      <b>NetBufferListFilteringInfo</b> data.
 
@@ -178,7 +177,7 @@ When the hardware timer expires, the adapter must generate a receive interrupt t
 
 ### -field VPortId
 
-The VPort identifier on which the receive filter is to be configured. A value of DEFAULT_VPORT_ID specifies the default VPort that is attached to the PCI Express (PCIe) physical function (PF) of the network adapter.
+The VPort identifier on which the receive filter is to be configured. A value of NDIS_DEFAULT_VPORT_ID specifies the default VPort that is attached to the PCI Express (PCIe) physical function (PF) of the network adapter.
 
 
 
@@ -241,7 +240,7 @@ If the network adapter supports the VMQ interface, the  adapter should forward t
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -250,7 +249,7 @@ If the network adapter supports the VMQ interface, the  adapter should forward t
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 
@@ -259,3 +258,4 @@ If the network adapter supports the VMQ interface, the  adapter should forward t
 
 
 <a href="/windows-hardware/drivers/network/oid-receive-filter-set-filter">OID_RECEIVE_FILTER_SET_FILTER</a>
+

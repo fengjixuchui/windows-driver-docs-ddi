@@ -4,7 +4,6 @@ title: _FILTER_VOLUME_STANDARD_INFORMATION (fltuserstructures.h)
 description: The caller-allocated FILTER_VOLUME_STANDARD_INFORMATION structure contains information for a volume.
 old-location: ifsk\filter_volume_standard_information.htm
 tech.root: ifsk
-ms.assetid: 51f2f837-7d67-4a9d-a365-d9d1b24977e5
 ms.date: 04/16/2018
 keywords: ["FILTER_VOLUME_STANDARD_INFORMATION structure"]
 ms.keywords: "*PFILTER_VOLUME_STANDARD_INFORMATION, FILTER_VOLUME_STANDARD_INFORMATION, FILTER_VOLUME_STANDARD_INFORMATION structure [Installable File System Drivers], FltSystemStructures_cf6b475f-0334-4d11-8449-f66c611011bf.xml, PFILTER_VOLUME_STANDARD_INFORMATION, PFILTER_VOLUME_STANDARD_INFORMATION structure pointer [Installable File System Drivers], _FILTER_VOLUME_STANDARD_INFORMATION, fltuserstructures/FILTER_VOLUME_STANDARD_INFORMATION, fltuserstructures/PFILTER_VOLUME_STANDARD_INFORMATION, ifsk.filter_volume_standard_information"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - fltuserstructures.h
 api_name:
+ - _FILTER_VOLUME_STANDARD_INFORMATION
+ - PFILTER_VOLUME_STANDARD_INFORMATION
  - FILTER_VOLUME_STANDARD_INFORMATION
 ---
 
@@ -126,3 +127,4 @@ A FILTER_VOLUME_STANDARD_INFORMATION structure can be allocated from paged or no
 
 
 <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltenumeratevolumes">FltEnumerateVolumes</a>
+

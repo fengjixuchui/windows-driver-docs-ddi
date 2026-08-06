@@ -4,7 +4,6 @@ title: PFND3DDDI_GETENCRYPTIONBLTKEY (d3dumddi.h)
 description: The GetEncryptionBltKey function returns the key that is used to decrypt the data that the driver's EncryptionBlt function returns.
 old-location: display\getencryptionbltkey.htm
 tech.root: display
-ms.assetid: b3c3e792-bc8a-485e-a208-66b7d921cc15
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_GETENCRYPTIONBLTKEY callback function"]
 ms.keywords: GetEncryptionBltKey, GetEncryptionBltKey callback function [Display Devices], PFND3DDDI_GETENCRYPTIONBLTKEY, PFND3DDDI_GETENCRYPTIONBLTKEY callback, UserModeDisplayDriver_Functions_c20ad527-141e-404f-a52e-47b893b2a2bb.xml, d3dumddi/GetEncryptionBltKey, display.getencryptionbltkey
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - GetEncryptionBltKey
-product:
- - Windows
+ - PFND3DDDI_GETENCRYPTIONBLTKEY
 ---
 
 # PFND3DDDI_GETENCRYPTIONBLTKEY callback function
@@ -56,7 +53,7 @@ The <i>GetEncryptionBltKey</i> function returns the key that is used to decrypt 
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -92,3 +89,4 @@ Each time the Direct3D runtime calls the driver's <i>GetEncryptionBltKey</i> fun
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_encryptionblt">EncryptionBlt</a>
+

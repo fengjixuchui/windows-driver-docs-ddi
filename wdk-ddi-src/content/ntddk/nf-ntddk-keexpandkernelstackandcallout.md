@@ -4,7 +4,6 @@ title: KeExpandKernelStackAndCallout function (ntddk.h)
 description: The KeExpandKernelStackAndCallout routine calls a routine with a guaranteed amount of stack space.
 old-location: kernel\keexpandkernelstackandcallout.htm
 tech.root: kernel
-ms.assetid: afa27127-b427-4831-b5f5-3e293738c275
 ms.date: 04/30/2018
 keywords: ["KeExpandKernelStackAndCallout function"]
 ms.keywords: KeExpandKernelStackAndCallout, KeExpandKernelStackAndCallout routine [Kernel-Mode Driver Architecture], k105_37fc85c2-2317-41a2-9daa-766c3ccf343f.xml, kernel.keexpandkernelstackandcallout, ntddk/KeExpandKernelStackAndCallout
@@ -50,19 +49,19 @@ The <b>KeExpandKernelStackAndCallout</b> routine calls a routine with a guarante
 
 ## -parameters
 
-### -param Callout 
+### -param Callout [in]
 
-[in]
+
 Pointer to an <a href="/windows-hardware/drivers/ddi/ntddk/nc-ntddk-expand_stack_callout">ExpandedStackCall</a> routine.
 
-### -param Parameter 
+### -param Parameter [in, optional]
 
-[in, optional]
+
 Specifies the parameter to pass to the <i>ExpandedStackCall</i> routine.
 
-### -param Size 
+### -param Size [in]
 
-[in]
+
 Specifies the number of bytes on the stack to provide to the <i>ExpandedStackCall</i> routine. This value must be large enough to accommodate the stack usage of the <i>ExpandedStackCall</i> routine and any call that this routine might make. This value must not exceed MAXIMUM_EXPANSION_SIZE.
 
 ## -returns

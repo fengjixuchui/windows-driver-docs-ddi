@@ -1,10 +1,9 @@
 ---
 UID: NF:wdtf.IWDTFTargets2.GetInterfacesIfExist
 title: IWDTFTargets2::GetInterfacesIfExist (wdtf.h)
-description: Returns a collection of actions that support the interface - one IWDTFAction2 for each item that has one.
+description: Learn how the method returns a collection of actions that support the interface - one IWDTFAction2 for each item that has one.
 old-location: dtf\iwdtftargets2_getinterfacesifexist.htm
 tech.root: dtf
-ms.assetid: 5ec2e981-87ee-4ebe-ae60-c5acae2c073e
 ms.date: 04/04/2018
 keywords: ["IWDTFTargets2::GetInterfacesIfExist"]
 ms.keywords: GetInterfacesIfExist, GetInterfacesIfExist method [Windows Device Testing Framework], GetInterfacesIfExist method [Windows Device Testing Framework],IWDTFTargets2 interface, IWDTFTargets2 interface [Windows Device Testing Framework],GetInterfacesIfExist method, IWDTFTargets2.GetInterfacesIfExist, IWDTFTargets2::GetInterfacesIfExist, Microsoft.WDTF.IWDTFTargets2.GetInterfacesIfExist, Microsoft::WDTF::IWDTFTargets2::GetInterfacesIfExist, dtf.iwdtftargets2_getinterfacesifexist, wdtf/IWDTFTargets2::GetInterfacesIfExist
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFTargets2.GetInterfacesIfExist
+ - IWDTFTargets2::GetInterfacesIfExist
 ---
 
 # IWDTFTargets2::GetInterfacesIfExist
@@ -51,38 +50,25 @@ that has one.
 
 ## -parameters
 
-### -param WDTFInterfaceName
+### -param WDTFInterfaceName [in]
 
-### -param MoreTargets 
+### -param MoreTargets [in, optional]
 
-[in, optional]
-Optional extra arguments that you can use to 
-define additional targets to attach to the returned interface. 
+Optional extra arguments that you can use to define additional targets to attach to the returned interface. 
 
-This parameter is not 
-currently implemented. Set <i>MoreTargets </i>to a <b>VARIANT</b> 
+This parameter is not currently implemented. Set <i>MoreTargets </i>to a <b>VARIANT</b> 
 that contains <b>VT_EMPTY</b>.
 
-### -param MonikerSuffix 
+### -param MonikerSuffix [in, optional]
 
-[in, optional]
-An optional moniker that defines more options about how 
-the interface should be instantiated. 
+An optional moniker that defines more options about how the interface should be instantiated. 
 
-This parameter is not yet implemented. 
-Set <i>MonikerSuffix </i>to a <b>VARIANT</b> that 
+This parameter is not yet implemented. Set <i>MonikerSuffix </i>to a <b>VARIANT</b> that 
 contains <b>VT_EMPTY</b>.
 
-### -param ppInterface 
+### -param ppInterface [out, retval]
 
-[out, retval]
-The address of a variable that will receive the 
-collection of actions.
-
-
-#### - ProgID [in]
-
-The WDTF ProgID of the requested interface.
+The address of a variable that will receive the collection of actions.
 
 ## -returns
 

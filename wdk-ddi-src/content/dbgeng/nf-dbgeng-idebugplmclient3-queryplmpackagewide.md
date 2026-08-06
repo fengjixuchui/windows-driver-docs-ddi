@@ -4,7 +4,6 @@ title: IDebugPlmClient3::QueryPlmPackageWide (dbgeng.h)
 description: Query a Process Lifecycle Management (PLM) package.
 old-location: debugger\idebugplmclient3_queryplmpackagewide.htm
 tech.root: debugger
-ms.assetid: 29BAAEF9-5B69-4723-BC23-A8B668E2A867
 ms.date: 05/03/2018
 keywords: ["IDebugPlmClient3::QueryPlmPackageWide"]
 ms.keywords: IDebugPlmClient3 interface [Windows Debugging],QueryPlmPackageWide method, IDebugPlmClient3.QueryPlmPackageWide, IDebugPlmClient3::QueryPlmPackageWide, QueryPlmPackageWide, QueryPlmPackageWide method [Windows Debugging], QueryPlmPackageWide method [Windows Debugging],IDebugPlmClient3 interface, dbgeng/IDebugPlmClient3::QueryPlmPackageWide, debugger.idebugplmclient3_queryplmpackagewide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugPlmClient3.QueryPlmPackageWide
+ - IDebugPlmClient3::QueryPlmPackageWide
 ---
 
 # IDebugPlmClient3::QueryPlmPackageWide
@@ -50,19 +49,19 @@ Query a Process Lifecycle Management (PLM) package.
 
 ## -parameters
 
-### -param Server 
+### -param Server [in]
 
-[in]
+
 The server of the package.
 
-### -param PackageFullName 
+### -param PackageFullName [in]
 
-[in]
+
 A pointer to the package name.
 
-### -param Stream 
+### -param Stream [in]
 
-[in]
+
 A pointer to an output stream for results.
 
 ## -returns
@@ -72,3 +71,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugplmclient3">IDebugPlmClient3</a>
+

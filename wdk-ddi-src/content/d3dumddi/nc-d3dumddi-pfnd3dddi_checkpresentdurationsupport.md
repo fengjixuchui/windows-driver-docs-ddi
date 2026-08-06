@@ -4,7 +4,6 @@ title: PFND3DDDI_CHECKPRESENTDURATIONSUPPORT (d3dumddi.h)
 description: Called by the Microsoft Direct3D runtime to request that the user-mode display driver get hardware device capabilities for seamlessly switching to a new monitor refresh rate.
 old-location: display\checkpresentdurationsupport.htm
 tech.root: display
-ms.assetid: 4D3FC503-A502-41D3-AB76-5A2BEBE4C551
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CHECKPRESENTDURATIONSUPPORT callback function"]
 ms.keywords: CheckPresentDurationSupport, CheckPresentDurationSupport callback function [Display Devices], PFND3DDDI_CHECKPRESENTDURATIONSUPPORT, PFND3DDDI_CHECKPRESENTDURATIONSUPPORT callback, d3dumddi/CheckPresentDurationSupport, display.checkpresentdurationsupport
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3dumddi.h
 api_name:
- - CheckPresentDurationSupport
-product:
- - Windows
+ - PFND3DDDI_CHECKPRESENTDURATIONSUPPORT
 ---
 
 # PFND3DDDI_CHECKPRESENTDURATIONSUPPORT callback function
@@ -56,7 +53,7 @@ Called by the Microsoft Direct3D runtime to request that the user-mode display d
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pPresentDurationSupport* [in]
 
@@ -73,3 +70,4 @@ If this routine succeeds, it returns <b>S_OK</b>. The driver should always retur
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

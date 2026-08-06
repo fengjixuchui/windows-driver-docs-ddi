@@ -3,11 +3,8 @@ UID: NS:dispmprt._DXGKDDI_MITIGABLE_DEVICE_INTERFACE
 title: _DXGKDDI_MITIGABLE_DEVICE_INTERFACE
 description: This device interface specifies the parts of the device base address registers that need to be intercepted and mitigated.
 tech.root: display
-ms.assetid: 77323c81-e0e9-47e0-9a99-b277fc678ee3
 ms.date: 04/04/2019
 keywords: ["DXGKDDI_MITIGABLE_DEVICE_INTERFACE structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _DXGKDDI_MITIGABLE_DEVICE_INTERFACE, DXGKDDI_MITIGABLE_DEVICE_INTERFACE, *PDXGKDDI_MITIGABLE_DEVICE_INTERFACE,
 req.header: dispmprt.h
 req.include-header: 
@@ -39,8 +36,8 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGKDDI_MITIGABLE_DEVICE_INTERFACE
-product:
- - Windows
+ - PDXGKDDI_MITIGABLE_DEVICE_INTERFACE
+ - DXGKDDI_MITIGABLE_DEVICE_INTERFACE
 dev_langs:
  - c++
 ---

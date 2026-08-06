@@ -4,7 +4,6 @@ title: IDE_HW_RESET (irb.h)
 description: The IdeHwReset miniport driver routine resets the channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\idehwreset.htm
 tech.root: storage
-ms.assetid: 722810c8-ddf2-4910-8cf3-af3511d8c167
 ms.date: 03/29/2018
 keywords: ["IDE_HW_RESET callback function"]
 ms.keywords: IDE_HW_RESET, IdeHwReset, IdeHwReset routine [Storage Devices], atartns_c3c999ac-3737-48ab-be9b-99c83013b878.xml, irb/IdeHwReset, storage.idehwreset
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - irb.h
 api_name:
- - IdeHwReset
+ - IDE_HW_RESET
 ---
 
 # IDE_HW_RESET callback function
@@ -51,9 +50,9 @@ The <b><i>IdeHwReset</i></b> miniport driver routine resets the channel.
 
 ## -parameters
 
-### -param ChannelExtension 
+### -param ChannelExtension [in]
 
-[in]
+
 A pointer to the channel extension.
 
 ## -returns
@@ -65,3 +64,4 @@ A pointer to the channel extension.
 The <b><i>IdeHwReset</i></b> routine should complete all pending requests and reset the indicated channel.
 
 <b><i>IdeHwReset</i></b> can be called even if the miniport driver is not ready for another request.
+

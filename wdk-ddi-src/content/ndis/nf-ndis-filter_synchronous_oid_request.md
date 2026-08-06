@@ -4,7 +4,6 @@ title: FILTER_SYNCHRONOUS_OID_REQUEST function (ndis.h)
 description: NDIS calls a filter driver's FilterSynchronousOidRequest function to preview a Synchronous OID request before the request is given to the underlying miniport driver.
 old-location: netvista\filter_synchronous_oid_request.htm
 tech.root: netvista
-ms.assetid: AC84B27B-6FBF-429D-A8FA-F3C8F583F738
 ms.date: 05/02/2018
 keywords: ["FILTER_SYNCHRONOUS_OID_REQUEST function"]
 ms.keywords: FILTER_SYNCHRONOUS_OID_REQUEST, FilterSynchronousOidRequest, FilterSynchronousOidRequest function [Network Drivers Starting with Windows Vista], ndis/FilterSynchronousOidRequest, netvista.filter_synchronous_oid_request
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - FilterSynchronousOidRequest
+ - FILTER_SYNCHRONOUS_OID_REQUEST
 ---
 
 # FILTER_SYNCHRONOUS_OID_REQUEST function
@@ -56,14 +55,14 @@ This function is supported in NDIS 6.81 and later.
 
 A handle to the context area for the filter module that is the target of this request. The filter driver created and initialized this context area in the [**FilterAttach**](nc-ndis-filter_attach.md) function.
 
-### -param OidRequest 
+### -param OidRequest [in, out]
 
-[in, out]
-A pointer to an [**NDIS_OID_REQUEST**](ns-ndis-_ndis_oid_request.md) structure that specifies the operation requested.
 
-### -param CallContext 
+A pointer to an [**NDIS_OID_REQUEST**](../oidrequest/ns-oidrequest-ndis_oid_request.md) structure that specifies the operation requested.
 
-[out]
+### -param CallContext [out]
+
+
 A PVOID-sized storage slot for the filter driver to share state between its *FilterSynchronousOidRequest* and [*FilterSynchronousOidRequestComplete*](nf-ndis-filter_synchronous_oid_request_complete.md) handlers. NDIS guarantees this initially points to a zero value. See the Remarks section for more information.
 
 ## -returns
@@ -82,7 +81,7 @@ This function returns one of the following appropriate NDIS_STATUS codes:
 
 *FilterSynchronousOidRequest* is an optional function. If a filter driver does not need to observe or modify Synchronous OID requests sent to the miniport driver, the filter driver should set the entry point for this function to **NULL** when it calls [**NdisFRegisterFilterDriver**](nf-ndis-ndisfregisterfilterdriver.md).
 
-NDIS calls the filter driver’s *FilterSynchronousOidRequest* function to process Synchronous OID requests that are originated by overlying drivers. Filter drivers can read or modify some fields in the [**NDIS_OID_REQUEST**](ns-ndis-_ndis_oid_request.md) structure as follows:
+NDIS calls the filter driver’s *FilterSynchronousOidRequest* function to process Synchronous OID requests that are originated by overlying drivers. Filter drivers can read or modify some fields in the [**NDIS_OID_REQUEST**](../oidrequest/ns-oidrequest-ndis_oid_request.md) structure as follows:
 
 | Field | Filter access |
 | --- | --- |
@@ -130,3 +129,4 @@ If a filter driver raises the IRQL in its *FilterSynchronousOidRequest* handler,
 [**NdisFSynchronousOidRequest**](nf-ndis-ndisfsynchronousoidrequest.md)
 
 <a href="/windows-hardware/drivers/network/synchronous-oid-request-interface-in-ndis-6-80">Synchronous OID Request Interface in NDIS 6.80</a>
+

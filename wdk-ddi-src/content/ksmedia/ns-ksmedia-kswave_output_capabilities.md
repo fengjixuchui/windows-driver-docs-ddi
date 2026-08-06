@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_52
+UID: NS:ksmedia.KSWAVE_OUTPUT_CAPABILITIES
 title: KSWAVE_OUTPUT_CAPABILITIES (ksmedia.h)
 description: The KSWAVE_OUTPUT_CAPABILITIES structure is used to describe the output capabilities of a device.
 old-location: stream\kswave_output_capabilities.htm
 tech.root: stream
-ms.assetid: 3f7d534d-bfd8-4aca-a14d-97c047fb5aeb
 ms.date: 04/30/2019
 keywords: ["KSWAVE_OUTPUT_CAPABILITIES structure"]
 ms.keywords: "*PKSWAVE_OUTPUT_CAPABILITIES, KSWAVE_OUTPUT_CAPABILITIES, KSWAVE_OUTPUT_CAPABILITIES structure [Streaming Media Devices], PKSWAVE_OUTPUT_CAPABILITIES, PKSWAVE_OUTPUT_CAPABILITIES structure pointer [Streaming Media Devices], dvdref_7660f724-15c2-419f-a0d9-c432069547a3.xml, ksmedia/KSWAVE_OUTPUT_CAPABILITIES, ksmedia/PKSWAVE_OUTPUT_CAPABILITIES, stream.kswave_output_capabilities"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSWAVE_OUTPUT_CAPABILITIES
  - KSWAVE_OUTPUT_CAPABILITIES
 ---
 
@@ -139,3 +139,4 @@ This structure is used by the <a href="/windows-hardware/drivers/stream/ksproper
 ## -see-also
 
 <a href="/windows-hardware/drivers/stream/ksproperty-wave-output-capabilities">KSPROPERTY_WAVE_OUTPUT_CAPABILITIES</a>
+

@@ -4,7 +4,6 @@ title: IOCTL_INTERNAL_LOCK_PORT (parallel.h)
 description: The IOCTL_INTERNAL_LOCK_PORT request allocates the parallel device's parent parallel port and selects the parallel device on the port.
 old-location: parports\ioctl_internal_lock_port.htm
 tech.root: parports
-ms.assetid: 561816b1-f9e7-49c9-b655-583adf293926
 ms.date: 02/15/2018
 keywords: ["IOCTL_INTERNAL_LOCK_PORT IOCTL"]
 ms.keywords: IOCTL_INTERNAL_LOCK_PORT, IOCTL_INTERNAL_LOCK_PORT control code [Parallel Ports], cisspd_2338a5ae-b61e-44c6-8ddd-3666f5fb24ee.xml, parallel/IOCTL_INTERNAL_LOCK_PORT, parports.ioctl_internal_lock_port
@@ -57,6 +56,10 @@ The <b>IOCTL_INTERNAL_LOCK_PORT</b> request allocates the parallel device's pare
 For more information, see <a href="/previous-versions/ff544195(v=vs.85)">Locking and Unlocking a ParallelPort for Use by a Parallel Device</a>.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
+
+[IRP_MJ_INTERNAL_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
 ### -input-buffer
 

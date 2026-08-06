@@ -4,7 +4,6 @@ title: PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE (ndis.h)
 description: The ProtocolSendNetBufferListsComplete function completes a send operation that the protocol driver initiated with a call to the NdisSendNetBufferLists function.Note  You must declare the function by using the PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE type. For more information, see the following Examples section.
 old-location: netvista\protocolsendnetbufferlistscomplete.htm
 tech.root: netvista
-ms.assetid: bc9197c5-ce0b-42b2-8225-fb9d83427ac8
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE callback function"]
 ms.keywords: PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE, PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE callback, ProtocolSendNetBufferListsComplete, ProtocolSendNetBufferListsComplete callback function [Network Drivers Starting with Windows Vista], ndis/ProtocolSendNetBufferListsComplete, ndis_sendrcv_ref_1e393909-0442-45d4-ae57-7ec0f51671a4.xml, netvista.protocolsendnetbufferlistscomplete
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolSendNetBufferListsComplete
+ - PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE
 ---
 
 # PROTOCOL_SEND_NET_BUFFER_LISTS_COMPLETE callback function
@@ -56,28 +55,26 @@ The
 
 ## -parameters
 
-### -param ProtocolBindingContext 
+### -param ProtocolBindingContext [in]
 
-[in]
+
 A handle to a context area that the protocol driver allocated to maintain state information about
      a binding. This handle was passed to NDIS in a previous call to 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a>.
 
-### -param NetBufferList
+### -param SendCompleteFlags [in]
 
-### -param SendCompleteFlags 
 
-[in]
 NDIS flags that can be combined with an OR operation. To clear all the flags, set this member to
      zero. This function supports the NDIS_SEND_COMPLETE_FLAGS_DISPATCH_LEVEL flag which; if set, indicates
      that the current IRQL is DISPATCH_LEVEL. For more information about this flag, see 
      <a href="/windows-hardware/drivers/network/dispatch-irql-tracking">Dispatch IRQL Tracking</a>.
 
 
-#### - NetBufferLists [in]
+### -param NetBufferList [in]
 
 A pointer to a list of 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures that the
+     <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures that the
      protocol driver supplied in a previous call to 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissendnetbufferlists">NdisSendNetBufferLists</a>.
 
@@ -98,7 +95,7 @@ NDIS calls
 When NDIS calls 
     <i>ProtocolSendNetBufferListsComplete</i>, the protocol driver regains ownership of all of the resources
     associated with the 
-    <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures that are
+    <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures that are
     specified by the 
     <i>NetBufferLists</i> parameter.
 
@@ -142,11 +139,11 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a>
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 
@@ -160,3 +157,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissendnetbufferlists">NdisSendNetBufferLists</a>
+

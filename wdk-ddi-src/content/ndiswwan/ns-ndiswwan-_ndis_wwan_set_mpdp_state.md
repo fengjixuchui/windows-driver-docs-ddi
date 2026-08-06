@@ -3,7 +3,6 @@ UID: NS:ndiswwan._NDIS_WWAN_SET_MPDP_STATE
 title: _NDIS_WWAN_SET_MPDP_STATE (ndiswwan.h)
 description: The NDIS_WWAN_SET_MPDP_STATE structure contains information for performing an operation on a Multiple Packet Data Protocol (MPDP) interface.
 tech.root: netvista
-ms.assetid: 2bacc2a8-0117-4f3c-8865-af8d1c5529ba
 ms.date: 06/25/2018
 keywords: ["NDIS_WWAN_SET_MPDP_STATE structure"]
 ms.keywords: _NDIS_WWAN_SET_MPDP_STATE, NDIS_WWAN_SET_MPDP_STATE, *PNDIS_WWAN_SET_MPDP_STATE,
@@ -37,6 +36,8 @@ api_location:
  - ndiswwan.h
 api_name:
  - _NDIS_WWAN_SET_MPDP_STATE
+ - PNDIS_WWAN_SET_MPDP_STATE
+ - NDIS_WWAN_SET_MPDP_STATE
 ---
 
 # _NDIS_WWAN_SET_MPDP_STATE structure
@@ -56,9 +57,9 @@ The header with type, revision, and size information about the **NDIS_WWAN_SET_M
 | --- | --- |
 | Type | NDIS_OBJECT_TYPE_DEFAULT |
 | Revision | NDIS_WWAN_SET_MPDP_STATE_REVISION_1 |
-| Size | `sizeof(NDIS_WWAN_SET_MPDP_STATE)` | 
+| Size | sizeof(NDIS_WWAN_SET_MPDP_STATE) |
 
-For more information about these members, see [**NDIS_OBJECT_HEADER**](../ntddndis/ns-ntddndis-_ndis_object_header.md).
+For more information about these members, see [**NDIS_OBJECT_HEADER**](../objectheader/ns-objectheader-ndis_object_header.md).
 
 ### -field Info
 
@@ -74,3 +75,4 @@ This structure is used in an [OID_WWAN_MPDP](/windows-hardware/drivers/network/o
 [**NDIS_WWAN_MPDP_INFO**](ns-ndiswwan-_ndis_wwan_mpdp_info.md)
 
 [OID_WWAN_MPDP](/windows-hardware/drivers/network/oid-wwan-mpdp)
+

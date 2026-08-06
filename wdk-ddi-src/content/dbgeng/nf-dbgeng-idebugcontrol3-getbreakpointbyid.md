@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl3.GetBreakpointById
 title: IDebugControl3::GetBreakpointById (dbgeng.h)
-description: The GetBreakpointById method returns the breakpoint with the specified breakpoint ID.
+description: The GetBreakpointById method returns the breakpoint with the specified breakpoint ID. This method belongs to the IDebugControl3 interface.
 old-location: debugger\getbreakpointbyid.htm
 tech.root: debugger
-ms.assetid: 6873609d-7f5a-474d-8b48-fee9f93c812b
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::GetBreakpointById"]
 ms.keywords: GetBreakpointById, GetBreakpointById method [Windows Debugging], GetBreakpointById method [Windows Debugging],IDebugControl interface, GetBreakpointById method [Windows Debugging],IDebugControl2 interface, GetBreakpointById method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],GetBreakpointById method, IDebugControl2 interface [Windows Debugging],GetBreakpointById method, IDebugControl2::GetBreakpointById, IDebugControl3 interface [Windows Debugging],GetBreakpointById method, IDebugControl3.GetBreakpointById, IDebugControl3::GetBreakpointById, IDebugControl::GetBreakpointById, IDebugControl_641f8e32-6c08-4b63-89c6-877b52a86ab2.xml, dbgeng/IDebugControl2::GetBreakpointById, dbgeng/IDebugControl3::GetBreakpointById, dbgeng/IDebugControl::GetBreakpointById, debugger.getbreakpointbyid
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.GetBreakpointById
- - IDebugControl2.GetBreakpointById
- - IDebugControl3.GetBreakpointById
+ - IDebugControl3::GetBreakpointById
 ---
 
 # IDebugControl3::GetBreakpointById
@@ -52,14 +49,14 @@ The <b>GetBreakpointById</b>  method returns the breakpoint with the specified b
 
 ## -parameters
 
-### -param Id 
+### -param Id [in]
 
-[in]
+
 Specifies the breakpoint ID of the breakpoint to return.
 
-### -param Bp 
+### -param Bp [out]
 
-[out]
+
 Receives the breakpoint.
 
 ## -returns
@@ -114,3 +111,4 @@ If the specified breakpoint does not belong to the current process, the method w
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
+

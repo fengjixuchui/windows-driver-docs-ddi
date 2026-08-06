@@ -4,7 +4,6 @@ title: _HW_INITIALIZATION_DATA (strmini.h)
 description: The HW_INITIALIZATION_DATA structure specifies the basic information the class driver needs to begin initializing the minidriver.
 old-location: stream\hw_initialization_data.htm
 tech.root: stream
-ms.assetid: 5be9ba51-bd6c-4650-9c48-f89267a2ac16
 ms.date: 04/23/2018
 keywords: ["HW_INITIALIZATION_DATA structure"]
 ms.keywords: "*PHW_INITIALIZATION_DATA, HW_INITIALIZATION_DATA, HW_INITIALIZATION_DATA structure [Streaming Media Devices], PHW_INITIALIZATION_DATA, PHW_INITIALIZATION_DATA structure pointer [Streaming Media Devices], _HW_INITIALIZATION_DATA, _HW_INITIALIZATION_DATA structure [Streaming Media Devices], strclass-struct_7c987d6a-732c-4de9-b98a-b68873458c41.xml, stream.hw_initialization_data, strmini/HW_INITIALIZATION_DATA, strmini/PHW_INITIALIZATION_DATA"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - strmini.h
 api_name:
+ - _HW_INITIALIZATION_DATA
+ - PHW_INITIALIZATION_DATA
  - HW_INITIALIZATION_DATA
 ---
 
@@ -121,3 +122,4 @@ Specifies the size in bytes of the DMA buffer the class driver should allocate f
 ### -field Reserved
 
 Reserved for system use. Minidrivers should ignore this member.
+

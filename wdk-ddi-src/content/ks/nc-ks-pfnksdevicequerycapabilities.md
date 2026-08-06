@@ -4,7 +4,6 @@ title: PFNKSDEVICEQUERYCAPABILITIES (ks.h)
 description: An AVStream minidriver's AVStrMiniDeviceQueryCapabilities routine is called when an IRP_MN_QUERY_CAPABILITIES is dispatched by the device.
 old-location: stream\avstrminidevicequerycapabilities.htm
 tech.root: stream
-ms.assetid: 12084f07-5b6a-44d4-8ab3-325309e69372
 ms.date: 04/23/2018
 keywords: ["PFNKSDEVICEQUERYCAPABILITIES callback function"]
 ms.keywords: AVStrMiniDeviceQueryCapabilities, AVStrMiniDeviceQueryCapabilities routine [Streaming Media Devices], PFNKSDEVICEQUERYCAPABILITIES, avstclbk_6078ead8-c11e-4f25-9742-21740e9a9da8.xml, ks/AVStrMiniDeviceQueryCapabilities, stream.avstrminidevicequerycapabilities
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - AVStrMiniDeviceQueryCapabilities
+ - PFNKSDEVICEQUERYCAPABILITIES
 ---
 
 # PFNKSDEVICEQUERYCAPABILITIES callback function
@@ -50,19 +49,19 @@ An AVStream minidriver's <i>AVStrMiniDeviceQueryCapabilities</i> routine is call
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice">KSDEVICE</a> that dispatched the <a href="/windows-hardware/drivers/kernel/irp-mn-query-capabilities">IRP_MN_QUERY_CAPABILITIES</a>.
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 The <a href="/windows-hardware/drivers/kernel/irp-mn-query-capabilities">IRP_MN_QUERY_CAPABILITIES</a> issued by <i>Device</i>.
 
-### -param Capabilities 
+### -param Capabilities [in, out]
 
-[in, out]
+
 Pointer to the DEVICE_CAPABILITIES structure that describes PnP and Power capabilities of <i>Device</i>.
 
 ## -returns
@@ -82,3 +81,4 @@ This routine is called when an <a href="/windows-hardware/drivers/kernel/irp-mn-
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice_dispatch">KSDEVICE_DISPATCH</a>
+

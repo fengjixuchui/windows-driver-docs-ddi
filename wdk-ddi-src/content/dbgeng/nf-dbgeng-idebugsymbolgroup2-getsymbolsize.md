@@ -4,7 +4,6 @@ title: IDebugSymbolGroup2::GetSymbolSize (dbgeng.h)
 description: The GetSymbolSize method returns the size of a symbol's value.
 old-location: debugger\getsymbolsize.htm
 tech.root: debugger
-ms.assetid: f35bbbeb-585b-47b0-ae36-bd37fe9e1bbc
 ms.date: 05/03/2018
 keywords: ["IDebugSymbolGroup2::GetSymbolSize"]
 ms.keywords: ComOther_a6e69468-38f9-449d-9bd7-0ef52585f2aa.xml, GetSymbolSize, GetSymbolSize method [Windows Debugging], GetSymbolSize method [Windows Debugging],IDebugSymbolGroup2 interface, IDebugSymbolGroup2 interface [Windows Debugging],GetSymbolSize method, IDebugSymbolGroup2.GetSymbolSize, IDebugSymbolGroup2::GetSymbolSize, dbgeng/IDebugSymbolGroup2::GetSymbolSize, debugger.getsymbolsize
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbolGroup2.GetSymbolSize
+ - IDebugSymbolGroup2::GetSymbolSize
 ---
 
 # IDebugSymbolGroup2::GetSymbolSize
@@ -50,14 +49,14 @@ The <b>GetSymbolSize</b> method returns the size of a symbol's value.
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 The index of the symbol to remove. The index of a symbol is an identification number. The index ranges from zero through the number of symbols in the symbol group minus one.
 
-### -param Size 
+### -param Size [out]
 
-[out]
+
 The size, in bytes, of the symbol's value. This information might not be available. If this information is not available, <i>Size</i> is set to zero.  For some symbols (for example, a function's code), the data might be split over multiple regions. In this situation, <i>Size</i> is not meaningful.
 
 ## -returns
@@ -109,3 +108,4 @@ For more information about symbol groups, see <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-gettypesize">IDebugSymbols::GetTypeSize</a>
+

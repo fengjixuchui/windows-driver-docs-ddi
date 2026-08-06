@@ -1,10 +1,9 @@
 ---
 UID: NS:bdatypes._BDA_TUNER_DIAGNOSTICS
 title: _BDA_TUNER_DIAGNOSTICS (bdatypes.h)
-description: 
+description: "Learn more about: _BDA_TUNER_DIAGNOSTICS structure"
 old-location: stream\bda_tuner_diagnostics.htm
 tech.root: stream
-ms.assetid: 19AE53CF-7C09-4858-9D33-CF4B885111D3
 ms.date: 04/23/2018
 keywords: ["BDA_TUNER_DIAGNOSTICS structure"]
 ms.keywords: "*PBDA_TUNER_DIAGNOSTICS, BDA_TUNER_DIAGNOSTICS, BDA_TUNER_DIAGNOSTICS structure [Streaming Media Devices], PBDA_TUNER_DIAGNOSTICS, PBDA_TUNER_DIAGNOSTICS structure pointer [Streaming Media Devices], _BDA_TUNER_DIAGNOSTICS, bdatypes/BDA_TUNER_DIAGNOSTICS, bdatypes/PBDA_TUNER_DIAGNOSTICS, stream.bda_tuner_diagnostics"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Bdatypes.h
 api_name:
+ - _BDA_TUNER_DIAGNOSTICS
+ - PBDA_TUNER_DIAGNOSTICS
  - BDA_TUNER_DIAGNOSTICS
 ---
 

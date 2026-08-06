@@ -4,7 +4,6 @@ title: NDK_FN_CQ_NOTIFICATION_CALLBACK (ndkpi.h)
 description: The NdkCqNotificationCallback (NDK_FN_CQ_NOTIFICATION_CALLBACK) function is called by the NDK provider to notify the consumer about a completion queue (CQ) event.
 old-location: netvista\ndk_fn_cq_notification_callback.htm
 tech.root: netvista
-ms.assetid: 88035020-9585-41EC-9C63-29DDED779C39
 ms.date: 05/02/2018
 keywords: ["NDK_FN_CQ_NOTIFICATION_CALLBACK callback function"]
 ms.keywords: NDK_FN_CQ_NOTIFICATION_CALLBACK, NDK_FN_CQ_NOTIFICATION_CALLBACK callback, NdkCqNotificationCallback, NdkCqNotificationCallback callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkCqNotificationCallback, netvista.ndk_fn_cq_notification_callback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkCqNotificationCallback
+ - NDK_FN_CQ_NOTIFICATION_CALLBACK
 ---
 
 # NDK_FN_CQ_NOTIFICATION_CALLBACK callback function
@@ -50,14 +49,14 @@ The <i>NdkCqNotificationCallback</i> (<i>NDK_FN_CQ_NOTIFICATION_CALLBACK</i>) fu
 
 ## -parameters
 
-### -param CqNotificationContext 
+### -param CqNotificationContext [in, optional]
 
-[in, optional]
+
 A context area that was specified in the <i>CqNotificationContext</i> parameter of the <i>NdkCreateCq</i> (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_create_cq">NDK_FN_CREATE_CQ</a>) function when the completion queue (CQ)  object was created.
 
-### -param CqStatus 
+### -param CqStatus [in]
 
-[in]
+
 Indicates the CQ error status. The following status codes are defined:
 
 
@@ -112,3 +111,4 @@ The NDK consumer specified the <i>NdkCqNotificationCallback</i> function  in the
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_create_cq">NDK_FN_CREATE_CQ</a>
+

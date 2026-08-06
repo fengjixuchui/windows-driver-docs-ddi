@@ -4,7 +4,6 @@ title: PHW_RESET_BUS (srb.h)
 description: The PHW_RESET_BUS prototype declares a routine that resets the indicated SCSI bus.
 old-location: storage\phw_reset_bus.htm
 tech.root: storage
-ms.assetid: 8c41ca6d-4b55-4858-b8bb-d7b2e682a8f7
 ms.date: 03/29/2018
 keywords: ["PHW_RESET_BUS callback"]
 ms.keywords: "(*PHW_RESET_BUS), (*PHW_RESET_BUS) callback function [Storage Devices], ide_minikr_6cda3e23-0fa6-48dd-a0c0-3d47287eb829.xml, srb/(*PHW_RESET_BUS), storage.phw_reset_bus"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product: Windows 10 or later.
 f1_keywords:
  - PHW_RESET_BUS
  - srb/PHW_RESET_BUS
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - srb.h
 api_name:
- - (*PHW_RESET_BUS)
+ - PHW_RESET_BUS
 ---
 
 # PHW_RESET_BUS callback
@@ -51,14 +49,14 @@ The PHW_RESET_BUS prototype declares a routine that resets the indicated SCSI bu
 
 ## -parameters
 
-### -param DeviceExtension 
+### -param DeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's per-HBA storage area.
 
-### -param PathId 
+### -param PathId [in]
 
-[in]
+
 Contains a number that identifies the SCSI bus to be reset.
 
 ## -returns
@@ -80,3 +78,4 @@ For more information about the bus reset routine that is used with the StorPort 
 
 
 <a href="/windows-hardware/drivers/ddi/storport/nc-storport-hw_reset_bus">HwStorResetBus</a>
+

@@ -4,7 +4,6 @@ title: IWDFFile::RetrieveFileName (wudfddi.h)
 description: The RetrieveFileName method retrieves the full name of the file that is associated with the underlying kernel-mode device.
 old-location: wdf\iwdffile_retrievefilename.htm
 tech.root: wdf
-ms.assetid: 7858f3ba-e02a-4115-bf30-12e3a6a75965
 ms.date: 02/26/2018
 keywords: ["IWDFFile::RetrieveFileName"]
 ms.keywords: IWDFFile interface,RetrieveFileName method, IWDFFile.RetrieveFileName, IWDFFile::RetrieveFileName, RetrieveFileName, RetrieveFileName method, RetrieveFileName method,IWDFFile interface, UMDFFileObjectRef_6c460bef-f774-4f9c-9e56-3c57ad023ae8.xml, umdf.iwdffile_retrievefilename, wdf.iwdffile_retrievefilename, wudfddi/IWDFFile::RetrieveFileName
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFFile.RetrieveFileName
+ - IWDFFile::RetrieveFileName
 ---
 
 # IWDFFile::RetrieveFileName
@@ -52,14 +51,14 @@ The <b>RetrieveFileName</b> method retrieves the full name of the file that is a
 
 ## -parameters
 
-### -param pFileName 
+### -param pFileName [out]
 
-[out]
+
 A pointer to a caller-supplied buffer that receives a <b>NULL</b>-terminated string that represents the full name of the file that is associated with the underlying kernel-mode device, if the supplied pointer is non-<b>NULL</b> and <b>RetrieveFileName</b> is successful.
 
-### -param pdwFileNameLengthInChars 
+### -param pdwFileNameLengthInChars [in, out]
 
-[in, out]
+
 A pointer to a caller-supplied variable that receives the size, in characters, of the full file name that <i>pFileName</i> points to. If the buffer at <i>pFileName</i> is non-<b>NULL</b>, the framework returns the size, in characters, of the file name string.
 
 On input, the driver sets this variable to the size, in characters, of the buffer that <i>pFileName</i> points to. If the driver supplies <b>NULL</b> for <i>pFileName</i> and zero for the variable that <i>pdwFileNameLengthInChars</i> points to, the framework sets the variable to the size, in characters, that the file name string requires.
@@ -127,7 +126,7 @@ The following code example shows how to retrieve the name of a file.
     }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile">IWDFFile</a>
+

@@ -3,7 +3,6 @@ UID: NS:d3d10umddi.D3D11_1DDIARG_TESSELLATION_IO_SIGNATURES
 title: D3D11_1DDIARG_TESSELLATION_IO_SIGNATURES (d3d10umddi.h)
 description: Describes a tessellation I/O signature.
 old-location: display\d3d11_1ddiarg_tessellation_io_signatures.htm
-ms.assetid: 90b9cbba-6a8f-444e-b0eb-cfbabdd57dcf
 ms.date: 05/10/2018
 keywords: ["D3D11_1DDIARG_TESSELLATION_IO_SIGNATURES structure"]
 ms.keywords: D3D11_1DDIARG_TESSELLATION_IO_SIGNATURES, D3D11_1DDIARG_TESSELLATION_IO_SIGNATURES structure [Display Devices], d3d10umddi/D3D11_1DDIARG_TESSELLATION_IO_SIGNATURES, display.d3d11_1ddiarg_tessellation_io_signatures
@@ -52,33 +51,33 @@ Describes a tessellation I/O signature.
 
 ### -field pInputSignatureDeprecated
 
-### -field pInputSignature
+### -field pInputSignature [in]
 
-[in] An array of <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddiarg_signature_entry">D3D11_1DDIARG_SIGNATURE_ENTRY</a> structures for the input part of a signature.
+An array of <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddiarg_signature_entry">D3D11_1DDIARG_SIGNATURE_ENTRY</a> structures for the input part of a signature.
 
-### -field NumInputSignatureEntries
+### -field NumInputSignatureEntries [in]
 
-[in] The number of entries in the array that the <b>pInputSignature</b> member specifies.
+The number of entries in the array that the <b>pInputSignature</b> member specifies.
 
 ### -field pOutputSignatureDeprecated
 
-### -field pOutputSignature
+### -field pOutputSignature [in]
 
-[in] An array of <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddiarg_signature_entry">D3D11_1DDIARG_SIGNATURE_ENTRY</a> structures for the output part of a signature.
+An array of <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddiarg_signature_entry">D3D11_1DDIARG_SIGNATURE_ENTRY</a> structures for the output part of a signature.
 
-### -field NumOutputSignatureEntries
+### -field NumOutputSignatureEntries [in]
 
-[in] The number of entries in the array that the <b>pOutputSignature</b> member specifies.
+The number of entries in the array that the <b>pOutputSignature</b> member specifies.
 
 ### -field pPatchConstantSignatureDeprecated
 
-### -field pPatchConstantSignature
+### -field pPatchConstantSignature [in]
 
-[in] An array of <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddiarg_signature_entry">D3D11_1DDIARG_SIGNATURE_ENTRY</a> structures for the signature patches.
+An array of <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddiarg_signature_entry">D3D11_1DDIARG_SIGNATURE_ENTRY</a> structures for the signature patches.
 
-### -field NumPatchConstantSignatureEntries
+### -field NumPatchConstantSignatureEntries [in]
 
-[in] The number of entries in the array that the <b>pPatchConstantSignature</b> member specifies.
+The number of entries in the array that the <b>pPatchConstantSignature</b> member specifies.
 
 ## -remarks
 

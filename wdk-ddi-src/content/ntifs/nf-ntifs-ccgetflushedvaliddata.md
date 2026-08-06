@@ -4,14 +4,13 @@ title: CcGetFlushedValidData function (ntifs.h)
 description: The CcGetFlushedValidData routine determines how much of a cached file has been flushed to disk.
 old-location: ifsk\ccgetflushedvaliddata.htm
 tech.root: ifsk
-ms.assetid: a0e3700a-768f-4025-b5f2-715e25e1d10d
 ms.date: 04/16/2018
 keywords: ["CcGetFlushedValidData function"]
 ms.keywords: CcGetFlushedValidData, CcGetFlushedValidData routine [Installable File System Drivers], ccref_021f04d4-537c-49a3-bfac-8eeea908c100.xml, ifsk.ccgetflushedvaliddata, ntifs/CcGetFlushedValidData
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available on Microsoft Windows 2000 and later.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,14 +49,14 @@ The <b>CcGetFlushedValidData</b> routine determines how much of a cached file ha
 
 ## -parameters
 
-### -param SectionObjectPointer 
+### -param SectionObjectPointer [in]
 
-[in]
+
 Pointer to a structure containing the file object's section object pointers.
 
-### -param BcbListHeld 
+### -param BcbListHeld [in]
 
-[in]
+
 Reserved for system use. Must be <b>FALSE</b>.
 
 ## -returns

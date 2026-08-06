@@ -4,7 +4,6 @@ title: _DXVAHDDDI_CONTENT_DESC (d3dumddi.h)
 description: The DXVAHDDDI_CONTENT_DESC structure describes the video content that a decode device processes.
 old-location: display\dxvahdddi_content_desc.htm
 tech.root: display
-ms.assetid: 635a4a47-11b8-4d78-871e-21ee438880df
 ms.date: 05/10/2018
 keywords: ["DXVAHDDDI_CONTENT_DESC structure"]
 ms.keywords: DXVA2_Structs_8b90044d-bce5-49b0-b6ff-be34ab09a62e.xml, DXVAHDDDI_CONTENT_DESC, DXVAHDDDI_CONTENT_DESC structure [Display Devices], _DXVAHDDDI_CONTENT_DESC, d3dumddi/DXVAHDDDI_CONTENT_DESC, display.dxvahdddi_content_desc
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVAHDDDI_CONTENT_DESC
  - DXVAHDDDI_CONTENT_DESC
 ---
 
@@ -52,33 +52,33 @@ The DXVAHDDDI_CONTENT_DESC structure describes the video content that a decode d
 
 ## -struct-fields
 
-### -field InputFrameFormat
+### -field InputFrameFormat [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvahdddi_frame_format">DXVAHDDDI_FRAME_FORMAT</a>-typed value that indicates the frame format of the input video stream.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvahdddi_frame_format">DXVAHDDDI_FRAME_FORMAT</a>-typed value that indicates the frame format of the input video stream.
 
 ### -field InputFrameRate
 
       [in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvahdddi_rational">DXVAHDDDI_RATIONAL</a> structure that specifies a fractional value that represents the frame rate of the input video stream.
 
-### -field InputWidth
+### -field InputWidth [in]
 
-[in] The width, in pixels, of the input video stream.
+The width, in pixels, of the input video stream.
 
-### -field InputHeight
+### -field InputHeight [in]
 
-[in] The height, in pixels, of the input video stream.
+The height, in pixels, of the input video stream.
 
 ### -field OutputFrameRate
 
       [in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvahdddi_rational">DXVAHDDDI_RATIONAL</a> structure that specifies a fractional value that represents the frame rate of the output.
 
-### -field OutputWidth
+### -field OutputWidth [in]
 
-[in] The width, in pixels, of the output video stream.
+The width, in pixels, of the output video stream.
 
-### -field OutputHeight
+### -field OutputHeight [in]
 
-[in] The height, in pixels, of the output video stream.
+The height, in pixels, of the output video stream.
 
 ## -remarks
 
@@ -91,3 +91,4 @@ The driver can use the information in the members of DXVAHDDDI_CONTENT_DESC to o
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvahdddi_rational">DXVAHDDDI_RATIONAL</a>
+

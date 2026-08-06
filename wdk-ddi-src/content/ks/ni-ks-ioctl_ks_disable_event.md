@@ -4,7 +4,6 @@ title: IOCTL_KS_DISABLE_EVENT (ks.h)
 description: An application can use IOCTL_KS_DISABLE_EVENT to rescind a previous request notification. The application specifies IOCTL_KS_DISABLE_EVENT in the IoControl parameter of a call to KsSynchronousDeviceControl.
 old-location: stream\ioctl_ks_disable_event.htm
 tech.root: stream
-ms.assetid: 4e451d0c-6548-4735-833a-3972cf5e59c6
 ms.date: 04/23/2018
 keywords: ["IOCTL_KS_DISABLE_EVENT IOCTL"]
 ms.keywords: IOCTL_KS_DISABLE_EVENT, IOCTL_KS_DISABLE_EVENT control, IOCTL_KS_DISABLE_EVENT control code [Streaming Media Devices], ks-ioctl_8b6cd750-3003-49b2-9b91-3edc1da6cf11.xml, ks/IOCTL_KS_DISABLE_EVENT, stream.ioctl_ks_disable_event
@@ -50,6 +49,8 @@ An application can use IOCTL_KS_DISABLE_EVENT to rescind a previous request noti
 
 ## -ioctlparameters
 
+### -ioctl-major-code
+
 ### -input-buffer
 
 The application places a pointer to a structure of type <a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata">KSEVENTDATA</a> in the <b>InBuffer</b> parameter. This is the location of the original KSEVENTDATA structure that the application instantiated at the enabling of the event. To disable all active events, a client specifies a <b>NULL</b> pointer and length of zero in the <b>InBuffer</b> and <b>InLength</b> parameters.
@@ -84,7 +85,7 @@ If the request is successful, the Status member is set to STATUS_SUCCESS.
 
 
 
-<a href="/previous-versions/ff561744(v=vs.85)">KSEVENT</a>
+<a href="/windows-hardware/drivers/stream/ksevent-structure">KSEVENT</a>
 
 
 

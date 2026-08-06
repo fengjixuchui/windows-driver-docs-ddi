@@ -4,7 +4,6 @@ title: GPIO_CLIENT_DISCONNECT_IO_PINS (gpioclx.h)
 description: The CLIENT_DisconnectIoPins event callback function closes a logical connection to a set of general-purpose I/O (GPIO) pins that are configured for data read or write operations.
 old-location: gpio\client_disconnectiopins.htm
 tech.root: GPIO
-ms.assetid: FA6ACAE4-54D9-4EE6-AC63-3FFB973DD37F
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_DISCONNECT_IO_PINS callback function"]
 ms.keywords: CLIENT_DisconnectIoPins, CLIENT_DisconnectIoPins callback, CLIENT_DisconnectIoPins callback function [Parallel Ports], GPIO.client_disconnectiopins, GPIO_CLIENT_DISCONNECT_IO_PINS, gpioclx/CLIENT_DisconnectIoPins
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_DisconnectIoPins
+ - GPIO_CLIENT_DISCONNECT_IO_PINS
 ---
 
 # GPIO_CLIENT_DISCONNECT_IO_PINS callback function
@@ -50,14 +49,14 @@ The <i>CLIENT_DisconnectIoPins</i> event callback function closes a logical conn
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param DisconnectParameters 
+### -param DisconnectParameters [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_disconnect_io_pins_parameters">GPIO_DISCONNECT_IO_PINS_PARAMETERS</a> structure that describes the set of GPIO pins that are to be disconnected.
 
 ## -returns
@@ -114,3 +113,4 @@ The GPIO_CLIENT_DISCONNECT_IO_PINS function type is defined in the Gpioclx.h hea
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_disconnect_io_pins_parameters">GPIO_DISCONNECT_IO_PINS_PARAMETERS</a>
+

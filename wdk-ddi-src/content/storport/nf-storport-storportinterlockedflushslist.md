@@ -4,7 +4,6 @@ title: StorPortInterlockedFlushSList function (storport.h)
 description: Removes all items from a Storport managed singly linked list. Access to the list is synchronized on a multiprocessor system.
 old-location: storage\storportinterlockedflushslist.htm
 tech.root: storage
-ms.assetid: C686ABA7-BC44-45CE-A35B-63E76961A032
 ms.date: 03/29/2018
 keywords: ["StorPortInterlockedFlushSList function"]
 ms.keywords: StorPortInterlockedFlushSList, StorPortInterlockedFlushSList routine [Storage Devices], storage.storportinterlockedflushslist, storport/StorPortInterlockedFlushSList
@@ -50,19 +49,19 @@ Removes all items from a Storport managed singly linked list. Access to the list
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param SListHead 
+### -param SListHead [in, out]
 
-[in, out]
+
 A pointer to an <b>STOR_SLIST_HEADER</b> structure that represents the head of a singly linked list. This structure is considered opaque and is for use by the Storport driver only.
 
-### -param Result 
+### -param Result [out]
 
-[out]
+
 A pointer to a list entry pointer. The value returned is a pointer to  the items removed from the list. If the list is empty, then <b>NULL</b> is returned in value pointed to by <i>Result</i>.
 
 ## -returns

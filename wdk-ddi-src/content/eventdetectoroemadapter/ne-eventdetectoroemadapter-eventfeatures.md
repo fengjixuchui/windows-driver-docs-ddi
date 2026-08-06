@@ -3,7 +3,6 @@ UID: NE:eventdetectoroemadapter.__MIDL___MIDL_itf_eventdetectoroemadapter_0000_0
 title: EVENTFEATURES
 description: Event features.
 tech.root: audio
-ms.assetid: 706fbd00-b95e-4b4d-9059-215a3f01648a
 ms.date: 04/10/2019
 keywords: ["EVENTFEATURES enumeration"]
 ms.keywords: EVENTFEATURES, EVENTFEATURES,
@@ -31,9 +30,8 @@ api_type:
 api_location:
  - eventdetectoroemadapter.h
 api_name:
+ - __MIDL___MIDL_itf_eventdetectoroemadapter_0000_0000_0002
  - EVENTFEATURES
-product:
- - Windows
 ---
 
 # EVENTFEATURES enumeration
@@ -49,19 +47,19 @@ Enumeration that defines event features.
 
 0x0 - No event features.
 
-### -field EVENTFEATURES_SupportsUserTraining 
+### -field EVENTFEATURES_SupportsUserTraining
 
 0x1 - SpeakerID support.
 
-### -field EVENTFEATURES_SupportUserCustomization 
+### -field EVENTFEATURES_SupportUserCustomization
 
 0x2 - User defined keyword.
 
-### -field EVENTFEATURES_ArmPatternRequiresArmState 
+### -field EVENTFEATURES_ArmPatternRequiresArmState
 
 0x4 - Is active arm state required for BuildArmingPatternData (Global only feature).
 
-### -field EVENTFEATURES_
+### -field EVENTFEATURES_SupportsSingleLanguage
 
 0x8 - Does detector support a single language for all keywords.
 

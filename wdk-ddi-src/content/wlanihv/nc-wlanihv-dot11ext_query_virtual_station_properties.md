@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_QUERY_VIRTUAL_STATION_PROPERTIES
 title: DOT11EXT_QUERY_VIRTUAL_STATION_PROPERTIES (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_QUERY_VIRTUAL_STATION_PROPERTIES callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extqueryvirtualstationproperties.htm
 tech.root: netvista
-ms.assetid: 4ea71ef7-c897-413c-a542-e8068bcc66a6
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_QUERY_VIRTUAL_STATION_PROPERTIES callback"]
 ms.keywords: DOT11EXT_QUERY_VIRTUAL_STATION_PROPERTIES, Dot11ExtQueryVirtualStationProperties, Dot11ExtQueryVirtualStationProperties callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_c8da5f60-0502-4381-b9e4-f9b8e245e5e8.xml, netvista.dot11extqueryvirtualstationproperties, wlanihv/Dot11ExtQueryVirtualStationProperties
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_QUERY_VIRTUAL_STATION_PROPERTIES
  - wlanihv/DOT11EXT_QUERY_VIRTUAL_STATION_PROPERTIES
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtQueryVirtualStationProperties
+ - DOT11EXT_QUERY_VIRTUAL_STATION_PROPERTIES
 ---
 
 # DOT11EXT_QUERY_VIRTUAL_STATION_PROPERTIES callback
@@ -53,26 +51,26 @@ api_name:
 
 ## -parameters
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 A handle used by the operating system to reference the primary physical wireless LAN (WLAN)
      adapter. This handle value was received as the
      <i>hDot11SvcHandle</i> parameter through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param pbIsVirtualStation 
+### -param pbIsVirtualStation [out]
 
-[out]
+
 A pointer to a Boolean value that indicates whether the primary physical WLAN adapter pointed to
      by the
      <i>hDot11SvcHandle</i> parameter is a virtual station adapter or not. If the value is <b>TRUE</b>, the queried
      adapter is a virtual station, otherwise it is not a virtual station.
 
-### -param pgPrimary 
+### -param pgPrimary [out]
 
-[out]
+
 A pointer to a GUID value that identifies the primary physical WLAN adapter that hosts a virtual
      station. This parameter is valid only if
      <i>pbIsVirtualStation</i> points to a value that is <b>TRUE</b>.
@@ -101,3 +99,4 @@ DWORD WINAPI * Dot11ExtQueryVirtualStationProperties(
 ## -see-also
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+

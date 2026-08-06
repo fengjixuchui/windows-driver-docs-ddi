@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_OUTPUTDUPLCONTEXTSCOUNT
 title: _D3DKMT_OUTPUTDUPLCONTEXTSCOUNT (d3dkmthk.h)
 description: Specifies the number of current Desktop Duplication API (DDA) clients that are attached to a given video present network (VidPN).
 old-location: display\d3dkmt_outputduplcontextscount.htm
-ms.assetid: db63b984-73da-4b66-8a5e-06704dd7c031
 ms.date: 05/10/2018
 keywords: ["D3DKMT_OUTPUTDUPLCONTEXTSCOUNT structure"]
 ms.keywords: D3DKMT_OUTPUTDUPLCONTEXTSCOUNT, D3DKMT_OUTPUTDUPLCONTEXTSCOUNT structure [Display Devices], _D3DKMT_OUTPUTDUPLCONTEXTSCOUNT, d3dkmthk/D3DKMT_OUTPUTDUPLCONTEXTSCOUNT, display.d3dkmt_outputduplcontextscount
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
+ - _D3DKMT_OUTPUTDUPLCONTEXTSCOUNT
  - D3DKMT_OUTPUTDUPLCONTEXTSCOUNT
 ---
 
@@ -59,3 +59,4 @@ The ID of the video present network (VidPN).
 ### -field OutputDuplicationCount
 
 The number of current DDA clients that are attached to the VidPN specified by the <b>VidPnSourceId</b> member.
+

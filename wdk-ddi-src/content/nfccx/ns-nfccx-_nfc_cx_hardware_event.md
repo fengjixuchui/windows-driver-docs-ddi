@@ -4,7 +4,6 @@ title: _NFC_CX_HARDWARE_EVENT (nfccx.h)
 description: The NFC_CX_HARDWARE_EVENT structure is an input parameter to NfcCxHardwareEvent.
 old-location: nfpdrivers\nfc_cx_hardware_event.htm
 tech.root: nfpdrivers
-ms.assetid: FC7566C0-95FD-450C-897E-C57870386512
 ms.date: 02/15/2018
 keywords: ["NFC_CX_HARDWARE_EVENT structure"]
 ms.keywords: "*PNFC_CX_HARDWARE_EVENT, NFC_CX_HARDWARE_EVENT, NFC_CX_HARDWARE_EVENT structure [Near-Field Proximity Drivers], PNFC_CX_HARDWARE_EVENT, PNFC_CX_HARDWARE_EVENT structure pointer [Near-Field Proximity Drivers], _NFC_CX_HARDWARE_EVENT, nfccx/NFC_CX_HARDWARE_EVENT, nfccx/PNFC_CX_HARDWARE_EVENT, nfpdrivers.nfc_cx_hardware_event"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - nfccx.h
 api_name:
+ - _NFC_CX_HARDWARE_EVENT
+ - PNFC_CX_HARDWARE_EVENT
  - NFC_CX_HARDWARE_EVENT
 ---
 
@@ -50,7 +51,7 @@ api_name:
 
 ## -description
 
-The NFC_CX_HARDWARE_EVENT structure is an input parameter to <a href="/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxhardwareevent">NfcCxHardwareEvent.</a>
+The NFC_CX_HARDWARE_EVENT structure is an input parameter to <a href="/windows-hardware/drivers/ddi/nfccx/nf-nfccx-nfccxhardwareevent">NfcCxHardwareEvent</a>.
 
 ## -struct-fields
 
@@ -69,3 +70,4 @@ An <a href="/windows-hardware/drivers/ddi/nfccx/ne-nfccx-_nfc_cx_host_action">NF
 
 
 <a href="/windows-hardware/drivers/nfc/">Near field communication (NFC) design guide</a>
+

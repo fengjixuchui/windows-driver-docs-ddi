@@ -4,7 +4,6 @@ title: IOCTL_VPCI_INVALIDATE_BLOCK (vpci.h)
 description: The driver for a PCI Express (PCIe) virtual function (VF) issues the IOCTL_VPCI_INVALIDATE_BLOCK IOCTL request in order to be notified of changes to data in one or more VF configuration blocks.
 old-location: pci\IOCTL_VPCI_INVALIDATE_BLOCK.htm
 tech.root: PCI
-ms.assetid: 66D1626A-7F22-48B8-8DB3-7B6E1634BABE
 ms.date: 02/24/2018
 keywords: ["IOCTL_VPCI_INVALIDATE_BLOCK IOCTL"]
 ms.keywords: IOCTL_VPCI_INVALIDATE_BLOCK, IOCTL_VPCI_INVALIDATE_BLOCK control code, PCI.IOCTL_VPCI_INVALIDATE_BLOCK, vpci/IOCTL_VPCI_INVALIDATE_BLOCK
@@ -27,7 +26,6 @@ req.dll:
 req.irql: DISPATCH_LEVEL
 targetos: Windows
 req.typenames: VMB_CHANNEL_STATE_CHANGE_CALLBACKS, *PVMB_CHANNEL_STATE_CHANGE_CALLBACKS
-req.product: Windows 10 or later.
 f1_keywords:
  - IOCTL_VPCI_INVALIDATE_BLOCK
  - vpci/IOCTL_VPCI_INVALIDATE_BLOCK
@@ -61,24 +59,26 @@ The driver issues this IOCTL to the next-lower driver in the driver stack.
 <div class="alert"><b>Note</b>  This IOCTL request is issued by the driver of a PCIe  VF on a device that supports the single root I/O virtualization (SR-IOV) interface. </div><div> </div>When the driver issues the <a href="/windows-hardware/drivers/ddi/vpci/ni-vpci-ioctl_vpci_invalidate_block">IOCTL_VPCI_INVALIDATE_BLOCK</a> IOCTL, the driver must follow these steps:
 <dl>
 <dd>
-<a href="https://docs.microsoft.com/">Preparing an I/O Request Packet Structure</a>
+<a href="/">Preparing an I/O Request Packet Structure</a>
 
 </dd>
 <dd>
-<a href="https://docs.microsoft.com/">Preparing an I/O Stack Location Structure</a>
+<a href="/">Preparing an I/O Stack Location Structure</a>
 
 </dd>
 <dd>
-<a href="https://docs.microsoft.com/">Issuing the IOCTL Request</a>
+<a href="/">Issuing the IOCTL Request</a>
 
 </dd>
 <dd>
-<a href="https://docs.microsoft.com/">IOCTL Request Completion Results</a>
+<a href="/">IOCTL Request Completion Results</a>
 
 </dd>
 </dl>For more information about issuing IOCTLs between kernel-mode drivers, see <a href="/windows-hardware/drivers/kernel/creating-ioctl-requests-in-drivers">Creating IOCTL Requests in Drivers</a>.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 
@@ -228,7 +228,7 @@ The device object of the lower driver.
 <tr>
 <td><i>Irp</i></td>
 <td>
-The address of the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> that was previously allocated and initialized. For more information, see <a href="https://docs.microsoft.com/">Preparing an I/O Request Packet Structure</a>.
+The address of the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> that was previously allocated and initialized. For more information, see <a href="/">Preparing an I/O Request Packet Structure</a>.
 
 </td>
 </tr>

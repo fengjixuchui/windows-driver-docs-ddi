@@ -3,8 +3,7 @@ UID: NF:netadapter.NET_ADAPTER_LINK_LAYER_ADDRESS_INIT
 title: NET_ADAPTER_LINK_LAYER_ADDRESS_INIT function (netadapter.h)
 description: The NET_ADAPTER_LINK_LAYER_ADDRESS_INIT function initializes a link layer address.
 tech.root: netvista
-ms.assetid: 13ba4c51-b878-4b22-9260-7bb423b1f77f
-ms.date: 02/05/2018
+ms.date: 03/30/2022
 keywords: ["NET_ADAPTER_LINK_LAYER_ADDRESS_INIT function"]
 ms.keywords: NET_ADAPTER_LINK_LAYER_ADDRESS_INIT
 req.header: netadapter.h
@@ -13,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: Windows 10, version 1709
 req.target-min-winversvr: Windows Server 2016
 req.kmdf-ver: 1.23
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -50,15 +49,15 @@ The **NET_ADAPTER_LINK_LAYER_ADDRESS_INIT** function initializes a link layer ad
 
 ## -parameters
 
-### -param LinkLayerAddress
+### -param LinkLayerAddress [_Out_]
 
-A pointer to the driver-allocated NET_ADAPTER_LINK_LAYER_ADDRESS to be initialized.
+A pointer to the driver-allocated [NET_ADAPTER_LINK_LAYER_ADDRESS](ns-netadapter-net_adapter_link_layer_address.md) structure to be initialized.
 
-### -param Length
+### -param Length [_In_range_(1,32)]
 
 The length of the link layer address, in bytes.
 
-### -param AddressBuffer
+### -param AddressBuffer [_In_reads_bytes_(Length)]
 
 A pointer to the buffer containing the link layer address.
 
@@ -68,3 +67,4 @@ A pointer to the buffer containing the link layer address.
 
 ## -see-also
 
+[NET_ADAPTER_LINK_LAYER_ADDRESS](ns-netadapter-net_adapter_link_layer_address.md)

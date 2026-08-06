@@ -4,7 +4,6 @@ title: ClfsAddLogContainer function (wdm.h)
 description: The ClfsAddLogContainer routine adds a container to a CLFS log.
 old-location: kernel\clfsaddlogcontainer.htm
 tech.root: kernel
-ms.assetid: 05ab9817-3f49-4ab5-b35d-1c89f5fe6e44
 ms.date: 04/30/2018
 keywords: ["ClfsAddLogContainer function"]
 ms.keywords: ClfsAddLogContainer, ClfsAddLogContainer routine [Kernel-Mode Driver Architecture], Clfs_30478f90-41d2-4a83-8291-83b90601dc11.xml, kernel.clfsaddlogcontainer, wdm/ClfsAddLogContainer
@@ -51,14 +50,14 @@ The <b>ClfsAddLogContainer</b> routine adds a container to a CLFS log.
 
 ## -parameters
 
-### -param plfoLog 
+### -param plfoLog [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">LOG_FILE_OBJECT</a> structure that represents the log to which the container will be added. The caller previously obtained this pointer by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfscreatelogfile">ClfsCreateLogFile</a>.
 
-### -param pcbContainer 
+### -param pcbContainer [in]
 
-[in]
+
 A pointer to a ULONGLONG-typed variable. The role of this parameter depends on whether the log currently has at least one container.
 
 <ul>
@@ -76,9 +75,9 @@ If the log currently has at least one container and this parameter is a valid po
 </li>
 </ul>
 
-### -param puszContainerPath 
+### -param puszContainerPath [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that supplies the path name for the new container. The path can be absolute or relative to the location of the base log file. Paths that are relative to the base log file must begin with CLFS_CONTAINER_RELATIVE_PREFIX, which is the string literal (L"%BLF%\\").
 
 ## -returns

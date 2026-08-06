@@ -1,9 +1,9 @@
 ---
-UID: NE:ntddk.__unnamed_enum_0
+UID: NE:ntddk.WELL_KNOWN_SID_TYPE
 title: WELL_KNOWN_SID_TYPE (ntddk.h)
 description: A list of commonly used security identifiers (SIDs). Programs can pass these values to the **CreateWellKnownSid** function to create a SID from this list. For information about these values, see [WELL_KNOWN_SID_TYPE](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createwellknownsid).
-ms.assetid: 31995895-7bae-4cb6-9ea9-139a99d06215
-ms.date: 10/19/2018
+tech.root: ifsk
+ms.date: 09/26/2022
 keywords: ["WELL_KNOWN_SID_TYPE enumeration"]
 ms.keywords: WELL_KNOWN_SID_TYPE, WELL_KNOWN_SID_TYPE
 req.header: ntddk.h
@@ -30,255 +30,253 @@ api_name:
  - WELL_KNOWN_SID_TYPE
 ---
 
-# WELL_KNOWN_SID_TYPE enumeration
-
-
 ## -description
 
 A list of commonly used security identifiers (SIDs). Programs can pass these values to the **CreateWellKnownSid** function to create a SID from this list. For information about these values, see [WELL_KNOWN_SID_TYPE](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createwellknownsid).
 
 ## -enum-fields
 
-### -field WinNullSid : 
+### -field WinNullSid
 
-### -field WinWorldSid : 
+### -field WinWorldSid
 
-### -field WinLocalSid : 
+### -field WinLocalSid
 
-### -field WinCreatorOwnerSid : 
+### -field WinCreatorOwnerSid
 
-### -field WinCreatorGroupSid : 
+### -field WinCreatorGroupSid
 
-### -field WinCreatorOwnerServerSid : 
+### -field WinCreatorOwnerServerSid
 
-### -field WinCreatorGroupServerSid : 
+### -field WinCreatorGroupServerSid
 
-### -field WinNtAuthoritySid : 
+### -field WinNtAuthoritySid
 
-### -field WinDialupSid : 
+### -field WinDialupSid
 
-### -field WinNetworkSid : 
+### -field WinNetworkSid
 
-### -field WinBatchSid : 
+### -field WinBatchSid
 
-### -field WinInteractiveSid : 
+### -field WinInteractiveSid
 
-### -field WinServiceSid : 
+### -field WinServiceSid
 
-### -field WinAnonymousSid : 
+### -field WinAnonymousSid
 
-### -field WinProxySid : 
+### -field WinProxySid
 
-### -field WinEnterpriseControllersSid : 
+### -field WinEnterpriseControllersSid
 
-### -field WinSelfSid : 
+### -field WinSelfSid
 
-### -field WinAuthenticatedUserSid : 
+### -field WinAuthenticatedUserSid
 
-### -field WinRestrictedCodeSid : 
+### -field WinRestrictedCodeSid
 
-### -field WinTerminalServerSid : 
+### -field WinTerminalServerSid
 
-### -field WinRemoteLogonIdSid : 
+### -field WinRemoteLogonIdSid
 
-### -field WinLogonIdsSid : 
+### -field WinLogonIdsSid
 
-### -field WinLocalSystemSid : 
+### -field WinLocalSystemSid
 
-### -field WinLocalServiceSid : 
+### -field WinLocalServiceSid
 
-### -field WinNetworkServiceSid : 
+### -field WinNetworkServiceSid
 
-### -field WinBuiltinDomainSid : 
+### -field WinBuiltinDomainSid
 
-### -field WinBuiltinAdministratorsSid : 
+### -field WinBuiltinAdministratorsSid
 
-### -field WinBuiltinUsersSid : 
+### -field WinBuiltinUsersSid
 
-### -field WinBuiltinGuestsSid : 
+### -field WinBuiltinGuestsSid
 
-### -field WinBuiltinPowerUsersSid : 
+### -field WinBuiltinPowerUsersSid
 
-### -field WinBuiltinAccountOperatorsSid : 
+### -field WinBuiltinAccountOperatorsSid
 
-### -field WinBuiltinSystemOperatorsSid : 
+### -field WinBuiltinSystemOperatorsSid
 
-### -field WinBuiltinPrintOperatorsSid : 
+### -field WinBuiltinPrintOperatorsSid
 
-### -field WinBuiltinBackupOperatorsSid : 
+### -field WinBuiltinBackupOperatorsSid
 
-### -field WinBuiltinReplicatorSid : 
+### -field WinBuiltinReplicatorSid
 
-### -field WinBuiltinPreWindows2000CompatibleAccessSid : 
+### -field WinBuiltinPreWindows2000CompatibleAccessSid
 
-### -field WinBuiltinRemoteDesktopUsersSid : 
+### -field WinBuiltinRemoteDesktopUsersSid
 
-### -field WinBuiltinNetworkConfigurationOperatorsSid : 
+### -field WinBuiltinNetworkConfigurationOperatorsSid
 
-### -field WinAccountAdministratorSid : 
+### -field WinAccountAdministratorSid
 
-### -field WinAccountGuestSid : 
+### -field WinAccountGuestSid
 
-### -field WinAccountKrbtgtSid : 
+### -field WinAccountKrbtgtSid
 
-### -field WinAccountDomainAdminsSid : 
+### -field WinAccountDomainAdminsSid
 
-### -field WinAccountDomainUsersSid : 
+### -field WinAccountDomainUsersSid
 
-### -field WinAccountDomainGuestsSid : 
+### -field WinAccountDomainGuestsSid
 
-### -field WinAccountComputersSid : 
+### -field WinAccountComputersSid
 
-### -field WinAccountControllersSid : 
+### -field WinAccountControllersSid
 
-### -field WinAccountCertAdminsSid : 
+### -field WinAccountCertAdminsSid
 
-### -field WinAccountSchemaAdminsSid : 
+### -field WinAccountSchemaAdminsSid
 
-### -field WinAccountEnterpriseAdminsSid : 
+### -field WinAccountEnterpriseAdminsSid
 
-### -field WinAccountPolicyAdminsSid : 
+### -field WinAccountPolicyAdminsSid
 
-### -field WinAccountRasAndIasServersSid : 
+### -field WinAccountRasAndIasServersSid
 
-### -field WinNTLMAuthenticationSid : 
+### -field WinNTLMAuthenticationSid
 
-### -field WinDigestAuthenticationSid : 
+### -field WinDigestAuthenticationSid
 
-### -field WinSChannelAuthenticationSid : 
+### -field WinSChannelAuthenticationSid
 
-### -field WinThisOrganizationSid : 
+### -field WinThisOrganizationSid
 
-### -field WinOtherOrganizationSid : 
+### -field WinOtherOrganizationSid
 
-### -field WinBuiltinIncomingForestTrustBuildersSid : 
+### -field WinBuiltinIncomingForestTrustBuildersSid
 
-### -field WinBuiltinPerfMonitoringUsersSid : 
+### -field WinBuiltinPerfMonitoringUsersSid
 
-### -field WinBuiltinPerfLoggingUsersSid : 
+### -field WinBuiltinPerfLoggingUsersSid
 
-### -field WinBuiltinAuthorizationAccessSid : 
+### -field WinBuiltinAuthorizationAccessSid
 
-### -field WinBuiltinTerminalServerLicenseServersSid : 
+### -field WinBuiltinTerminalServerLicenseServersSid
 
-### -field WinBuiltinDCOMUsersSid : 
+### -field WinBuiltinDCOMUsersSid
 
-### -field WinBuiltinIUsersSid : 
+### -field WinBuiltinIUsersSid
 
-### -field WinIUserSid : 
+### -field WinIUserSid
 
-### -field WinBuiltinCryptoOperatorsSid : 
+### -field WinBuiltinCryptoOperatorsSid
 
-### -field WinUntrustedLabelSid : 
+### -field WinUntrustedLabelSid
 
-### -field WinLowLabelSid : 
+### -field WinLowLabelSid
 
-### -field WinMediumLabelSid : 
+### -field WinMediumLabelSid
 
-### -field WinHighLabelSid : 
+### -field WinHighLabelSid
 
-### -field WinSystemLabelSid : 
+### -field WinSystemLabelSid
 
-### -field WinWriteRestrictedCodeSid : 
+### -field WinWriteRestrictedCodeSid
 
-### -field WinCreatorOwnerRightsSid : 
+### -field WinCreatorOwnerRightsSid
 
-### -field WinCacheablePrincipalsGroupSid : 
+### -field WinCacheablePrincipalsGroupSid
 
-### -field WinNonCacheablePrincipalsGroupSid : 
+### -field WinNonCacheablePrincipalsGroupSid
 
-### -field WinEnterpriseReadonlyControllersSid : 
+### -field WinEnterpriseReadonlyControllersSid
 
-### -field WinAccountReadonlyControllersSid : 
+### -field WinAccountReadonlyControllersSid
 
-### -field WinBuiltinEventLogReadersGroup : 
+### -field WinBuiltinEventLogReadersGroup
 
-### -field WinNewEnterpriseReadonlyControllersSid : 
+### -field WinNewEnterpriseReadonlyControllersSid
 
-### -field WinBuiltinCertSvcDComAccessGroup : 
+### -field WinBuiltinCertSvcDComAccessGroup
 
-### -field WinMediumPlusLabelSid : 
+### -field WinMediumPlusLabelSid
 
-### -field WinLocalLogonSid : 
+### -field WinLocalLogonSid
 
-### -field WinConsoleLogonSid : 
+### -field WinConsoleLogonSid
 
-### -field WinThisOrganizationCertificateSid : 
+### -field WinThisOrganizationCertificateSid
 
-### -field WinApplicationPackageAuthoritySid : 
+### -field WinApplicationPackageAuthoritySid
 
-### -field WinBuiltinAnyPackageSid : 
+### -field WinBuiltinAnyPackageSid
 
-### -field WinCapabilityInternetClientSid : 
+### -field WinCapabilityInternetClientSid
 
-### -field WinCapabilityInternetClientServerSid : 
+### -field WinCapabilityInternetClientServerSid
 
-### -field WinCapabilityPrivateNetworkClientServerSid : 
+### -field WinCapabilityPrivateNetworkClientServerSid
 
-### -field WinCapabilityPicturesLibrarySid : 
+### -field WinCapabilityPicturesLibrarySid
 
-### -field WinCapabilityVideosLibrarySid : 
+### -field WinCapabilityVideosLibrarySid
 
-### -field WinCapabilityMusicLibrarySid : 
+### -field WinCapabilityMusicLibrarySid
 
-### -field WinCapabilityDocumentsLibrarySid : 
+### -field WinCapabilityDocumentsLibrarySid
 
-### -field WinCapabilitySharedUserCertificatesSid : 
+### -field WinCapabilitySharedUserCertificatesSid
 
-### -field WinCapabilityEnterpriseAuthenticationSid : 
+### -field WinCapabilityEnterpriseAuthenticationSid
 
-### -field WinCapabilityRemovableStorageSid : 
+### -field WinCapabilityRemovableStorageSid
 
-### -field WinBuiltinRDSRemoteAccessServersSid : 
+### -field WinBuiltinRDSRemoteAccessServersSid
 
-### -field WinBuiltinRDSEndpointServersSid : 
+### -field WinBuiltinRDSEndpointServersSid
 
-### -field WinBuiltinRDSManagementServersSid : 
+### -field WinBuiltinRDSManagementServersSid
 
-### -field WinUserModeDriversSid : 
+### -field WinUserModeDriversSid
 
-### -field WinBuiltinHyperVAdminsSid : 
+### -field WinBuiltinHyperVAdminsSid
 
-### -field WinAccountCloneableControllersSid : 
+### -field WinAccountCloneableControllersSid
 
-### -field WinBuiltinAccessControlAssistanceOperatorsSid : 
+### -field WinBuiltinAccessControlAssistanceOperatorsSid
 
-### -field WinBuiltinRemoteManagementUsersSid : 
+### -field WinBuiltinRemoteManagementUsersSid
 
-### -field WinAuthenticationAuthorityAssertedSid : 
+### -field WinAuthenticationAuthorityAssertedSid
 
-### -field WinAuthenticationServiceAssertedSid : 
+### -field WinAuthenticationServiceAssertedSid
 
-### -field WinLocalAccountSid : 
+### -field WinLocalAccountSid
 
-### -field WinLocalAccountAndAdministratorSid : 
+### -field WinLocalAccountAndAdministratorSid
 
-### -field WinAccountProtectedUsersSid : 
+### -field WinAccountProtectedUsersSid
 
-### -field WinCapabilityAppointmentsSid : 
+### -field WinCapabilityAppointmentsSid
 
-### -field WinCapabilityContactsSid : 
+### -field WinCapabilityContactsSid
 
-### -field WinAccountDefaultSystemManagedSid : 
+### -field WinAccountDefaultSystemManagedSid
 
-### -field WinBuiltinDefaultSystemManagedGroupSid : 
+### -field WinBuiltinDefaultSystemManagedGroupSid
 
-### -field WinBuiltinStorageReplicaAdminsSid : 
+### -field WinBuiltinStorageReplicaAdminsSid
 
-### -field WinAccountKeyAdminsSid : 
+### -field WinAccountKeyAdminsSid
 
-### -field WinAccountEnterpriseKeyAdminsSid : 
+### -field WinAccountEnterpriseKeyAdminsSid
 
-### -field WinAuthenticationKeyTrustSid : 
+### -field WinAuthenticationKeyTrustSid
 
-### -field WinAuthenticationKeyPropertyMFASid : 
+### -field WinAuthenticationKeyPropertyMFASid
 
-### -field WinAuthenticationKeyPropertyAttestationSid : 
+### -field WinAuthenticationKeyPropertyAttestationSid
 
-### -field WinAuthenticationFreshKeyAuthSid : 
+### -field WinAuthenticationFreshKeyAuthSid
 
-### -field WinBuiltinDeviceOwnersSid : 
+### -field WinBuiltinDeviceOwnersSid
 
 ## -remarks
 
 ## -see-also
+

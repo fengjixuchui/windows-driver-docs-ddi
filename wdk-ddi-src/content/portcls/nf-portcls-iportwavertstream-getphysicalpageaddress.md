@@ -4,7 +4,6 @@ title: IPortWaveRTStream::GetPhysicalPageAddress (portcls.h)
 description: The GetPhysicalPageAddress method returns the physical address for a page within a memory descriptor list (MDL).
 old-location: audio\iportwavertstream_getphysicalpageaddress.htm
 tech.root: audio
-ms.assetid: 24c22102-f91d-4ea1-81fb-98052b8d0153
 ms.date: 05/08/2018
 keywords: ["IPortWaveRTStream::GetPhysicalPageAddress"]
 ms.keywords: GetPhysicalPageAddress, GetPhysicalPageAddress method [Audio Devices], GetPhysicalPageAddress method [Audio Devices],IPortWaveRTStream interface, IPortWaveRTStream interface [Audio Devices],GetPhysicalPageAddress method, IPortWaveRTStream.GetPhysicalPageAddress, IPortWaveRTStream::GetPhysicalPageAddress, audio.iportwavertstream_getphysicalpageaddress, audmp-routines_44b6b9ed-368b-4bf1-9a21-e0e0b2b90728.xml, portcls/IPortWaveRTStream::GetPhysicalPageAddress
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Passive level
+req.irql: PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IPortWaveRTStream.GetPhysicalPageAddress
+ - IPortWaveRTStream::GetPhysicalPageAddress
 ---
 
 # IPortWaveRTStream::GetPhysicalPageAddress
@@ -50,14 +49,14 @@ The <code>GetPhysicalPageAddress</code> method returns the physical address for 
 
 ## -parameters
 
-### -param MemoryDescriptorList 
+### -param MemoryDescriptorList [in]
 
-[in]
+
 Pointer to the MDL.
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 Index to the target page within the MDL.
 
 ## -returns
@@ -85,3 +84,4 @@ The miniport typically calls this for each page in the MDL in order to program t
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-iportwavertstream-getphysicalpagescount">IPortWaveRTStream::GetPhysicalPagesCount </a>
+

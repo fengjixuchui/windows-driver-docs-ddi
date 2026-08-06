@@ -4,7 +4,6 @@ title: NdisGetHypervisorInfo function (ndis.h)
 description: Important  Starting with Windows 10 Version 1703, NdisGetHypervisorInfo is deprecated and should not be used.
 old-location: netvista\ndisgethypervisorinfo.htm
 tech.root: netvista
-ms.assetid: 5469c6aa-90df-4379-b670-23aaa6919055
 ms.date: 05/02/2018
 keywords: ["NdisGetHypervisorInfo function"]
 ms.keywords: NdisGetHypervisorInfo, NdisGetHypervisorInfo function [Network Drivers Starting with Windows Vista], ndis/NdisGetHypervisorInfo, netvista.ndisgethypervisorinfo, virtual_machine_queue_ref_afe96cc4-b307-4953-9587-65b6bec35b18.xml
@@ -57,9 +56,9 @@ The <b>NdisGetHypervisorInfo</b> function returns information about the hypervis
 
 ## -parameters
 
-### -param HypervisorInfo 
+### -param HypervisorInfo [in, out]
 
-[in, out]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_hypervisor_info">NDIS_HYPERVISOR_INFO</a> structure that
      contains information about the hypervisor that is present on the system.
 

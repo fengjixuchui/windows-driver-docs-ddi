@@ -1,10 +1,9 @@
 ---
 UID: NF:portabledevicetypes.IPortableDeviceValuesCollection.GetAt
 title: IPortableDeviceValuesCollection::GetAt (portabledevicetypes.h)
-description: Retrieves an item from the collection by a zero-based index.
+description: Learn how this method retrieves an item from the collection by a zero-based index.
 old-location: wpddk\iportabledevicevaluescollection_getat.htm
 tech.root: wpd_dk
-ms.assetid: 772d6140-cd65-4fc7-b4d9-04d683d12e30
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValuesCollection::GetAt"]
 ms.keywords: GetAt, GetAt method, GetAt method,IPortableDeviceValuesCollection interface, IPortableDeviceValuesCollection interface,GetAt method, IPortableDeviceValuesCollection.GetAt, IPortableDeviceValuesCollection::GetAt, IPortableDeviceValuesCollectionGetAt, portabledevicetypes/IPortableDeviceValuesCollection::GetAt, wpddk.iportabledevicevaluescollection_getat
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValuesCollection.GetAt
+ - IPortableDeviceValuesCollection::GetAt
 ---
 
 # IPortableDeviceValuesCollection::GetAt
@@ -51,14 +50,14 @@ Retrieves an item from the collection by a zero-based index.
 
 ## -parameters
 
-### -param dwIndex 
+### -param dwIndex [in]
 
-[in]
+
 <b>DWORD</b> that specifies a zero-based index in the collection.
 
-### -param ppValues 
+### -param ppValues [out]
 
-[out]
+
 Address of a variable that receives a pointer to an <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues">IPortableDeviceValues</a> interface from the collection. The caller is responsible for calling <b>Release</b> on this interface when done with it.
 
 ## -returns
@@ -123,3 +122,4 @@ Any changes that are made to values in the retrieved interface will be made to t
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevaluescollection">IPortableDeviceValuesCollection Interface</a>
+

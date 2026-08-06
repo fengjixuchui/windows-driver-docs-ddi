@@ -1,13 +1,12 @@
 ---
 UID: NC:ntddk._WHEA_ERROR_SOURCE_CORRECT
-title: _WHEA_ERROR_SOURCE_CORRECT
-description: 
-tech.root: 
-ms.assetid: a195c09c-3bcb-4db2-9ce1-fdca2730ee09
-ms.date: 08/19/2019
+title: WHEA_ERROR_SOURCE_CORRECT
+description: WHEA_ERROR_SOURCE_CORRECT is reserved for system use.
+tech.root: whea
+ms.date: 01/19/2023
 keywords: ["WHEA_ERROR_SOURCE_CORRECT callback function"]
 req.header: ntddk.h
-req.include-header: 
+req.include-header: Ntddk.h
 req.target-type: 
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -24,7 +23,6 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 targetos: Windows
-ms.custom: 19H1
 f1_keywords:
  - _WHEA_ERROR_SOURCE_CORRECT
  - ntddk/_WHEA_ERROR_SOURCE_CORRECT
@@ -36,12 +34,7 @@ api_location:
  - ntddk.h
 api_name:
  - _WHEA_ERROR_SOURCE_CORRECT
-product:
- - Windows
 ---
-
-# _WHEA_ERROR_SOURCE_CORRECT callback function
-
 
 ## -description
 
@@ -49,15 +42,12 @@ Reserved for system use.
 
 ## -parameters
 
-### -param ErrorSource: 
+### -param ErrorSource
 
-### -param MaximumSectionLength: 
+### -param MaximumSectionLength
 
 ## -returns
-
-## -prototype
 
 ## -remarks
 
 ## -see-also
-

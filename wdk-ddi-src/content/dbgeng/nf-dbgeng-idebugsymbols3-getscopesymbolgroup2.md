@@ -4,7 +4,6 @@ title: IDebugSymbols3::GetScopeSymbolGroup2 (dbgeng.h)
 description: The GetScopeSymbolGroup2 method returns a symbol group containing the symbols in the current target's scope.
 old-location: debugger\getscopesymbolgroup2.htm
 tech.root: debugger
-ms.assetid: 2bc0cd81-db9b-4646-838b-0e66c0667202
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::GetScopeSymbolGroup2"]
 ms.keywords: GetScopeSymbolGroup2, GetScopeSymbolGroup2 method [Windows Debugging], GetScopeSymbolGroup2 method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],GetScopeSymbolGroup2 method, IDebugSymbols3.GetScopeSymbolGroup2, IDebugSymbols3::GetScopeSymbolGroup2, dbgeng/IDebugSymbols3::GetScopeSymbolGroup2, debugger.getscopesymbolgroup2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols3.GetScopeSymbolGroup2
+ - IDebugSymbols3::GetScopeSymbolGroup2
 ---
 
 # IDebugSymbols3::GetScopeSymbolGroup2
@@ -50,9 +49,9 @@ The <b>GetScopeSymbolGroup2</b>  method returns a symbol group containing the sy
 
 ## -parameters
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies a bit-set used to determine which symbols to include in the symbol group.  To include all symbols, set <i>Flags</i> to DEBUG_SCOPE_GROUP_ALL.  The following bit-flags determine which symbols are included.
 
 <table>
@@ -82,14 +81,14 @@ Include the local variables for the current scope.
 </tr>
 </table>
 
-### -param Update 
+### -param Update [in, optional]
 
-[in, optional]
+
 Specifies a previously created symbol group that will be updated to reflect the current scope.  If <i>Update</i> is <b>NULL</b>, a new symbol group interface object is created.
 
-### -param Symbols 
+### -param Symbols [out]
 
-[out]
+
 Receives the symbol group interface object for the current scope.  For details on this interface, see <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbolgroup">IDebugSymbolGroup</a>
 
 ## -returns
@@ -131,3 +130,4 @@ For more information about scopes and symbol groups, see <a href="/windows-hardw
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

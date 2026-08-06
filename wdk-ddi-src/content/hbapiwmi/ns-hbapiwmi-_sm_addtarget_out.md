@@ -4,7 +4,6 @@ title: _SM_AddTarget_OUT (hbapiwmi.h)
 description: The SM_AddTarget_OUT structure is used to receive output parameters from the SM_AddTarget WMI method.
 old-location: storage\sm_addtarget_out.htm
 tech.root: storage
-ms.assetid: ed4e58cb-6b32-454b-9538-f9f8aa68df4c
 ms.date: 03/29/2018
 keywords: ["SM_AddTarget_OUT structure"]
 ms.keywords: "*PSM_AddTarget_OUT, PSM_AddTarget_OUT, PSM_AddTarget_OUT structure pointer [Storage Devices], SM_AddTarget_OUT, SM_AddTarget_OUT structure [Storage Devices], _SM_AddTarget_OUT, hbapiwmi/PSM_AddTarget_OUT, hbapiwmi/SM_AddTarget_OUT, storage.sm_addtarget_out, structs-Fibre_8a6bbd22-c27f-4b75-a11a-93fafd51d2a9.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hbapiwmi.h
 api_name:
+ - _SM_AddTarget_OUT
+ - PSM_AddTarget_OUT
  - SM_AddTarget_OUT
 ---
 
@@ -57,3 +58,4 @@ The SM_AddTarget_OUT structure is used to receive output parameters from the SM_
 ### -field HBAStatus
 
 The status of the operation. For a list of allowed values and their descriptions, see <a href="/windows-hardware/drivers/storage/hba-status">HBA_STATUS</a>.
+

@@ -4,7 +4,6 @@ title: PFND3DDDI_DESTROYPAGINGQUEUECB (d3dumddi.h)
 description: pfnDestroyPagingQueueCb waits for a paging queue to finish all operations queued to it and destroys it along with the associated sync object.
 old-location: display\pfndestroypagingqueuecb.htm
 tech.root: display
-ms.assetid: 2C039656-5384-4864-8F29-A336B0ED06C0
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DESTROYPAGINGQUEUECB callback function"]
 ms.keywords: PFND3DDDI_DESTROYPAGINGQUEUECB, PFND3DDDI_DESTROYPAGINGQUEUECB callback, d3dumddi/pfnDestroyPagingQueueCb, display.pfndestroypagingqueuecb, pfnDestroyPagingQueueCb, pfnDestroyPagingQueueCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnDestroyPagingQueueCb
-product:
- - Windows
+ - PFND3DDDI_DESTROYPAGINGQUEUECB
 ---
 
 # PFND3DDDI_DESTROYPAGINGQUEUECB callback function
@@ -56,7 +53,7 @@ product:
 
 A handle to the display device.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -77,3 +74,4 @@ In addition to <b>hPagingQueue</b>, this device driver interface (DDI) invalidat
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createpagingqueuecb">pfnCreatePagingQueueCb</a>
+

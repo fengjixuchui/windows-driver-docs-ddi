@@ -4,7 +4,6 @@ title: KsPinGetFirstCloneStreamPointer function (ks.h)
 description: The KsPinGetFirstCloneStreamPointer function returns the first cloned stream pointer on Pin.
 old-location: stream\kspingetfirstclonestreampointer.htm
 tech.root: stream
-ms.assetid: 9b4880af-d748-4a4e-92ec-8081138d4e27
 ms.date: 04/23/2018
 keywords: ["KsPinGetFirstCloneStreamPointer function"]
 ms.keywords: KsPinGetFirstCloneStreamPointer, KsPinGetFirstCloneStreamPointer function [Streaming Media Devices], avfunc_2a3d17ef-c1b8-4b22-af1e-7f9bb01c1183.xml, ks/KsPinGetFirstCloneStreamPointer, stream.kspingetfirstclonestreampointer
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ks.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,9 +50,9 @@ The<b> KsPinGetFirstCloneStreamPointer</b> function returns the first cloned str
 
 ## -parameters
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a> structure on which to return the first clone stream pointer.
 
 ## -returns

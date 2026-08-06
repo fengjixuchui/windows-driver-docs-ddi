@@ -4,14 +4,13 @@ title: _FILE_MODE_INFORMATION (ntifs.h)
 description: The FILE_MODE_INFORMATION structure is used to query or set the access mode of a file.
 old-location: kernel\file_mode_information.htm
 tech.root: kernel
-ms.assetid: c01ee792-4e39-4135-b389-a5c5ac832245
 ms.date: 04/30/2018
 keywords: ["FILE_MODE_INFORMATION structure"]
 ms.keywords: "*PFILE_MODE_INFORMATION, FILE_MODE_INFORMATION, FILE_MODE_INFORMATION structure [Kernel-Mode Driver Architecture], PFILE_MODE_INFORMATION, PFILE_MODE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _FILE_MODE_INFORMATION, kernel.file_mode_information, kstruct_b_ab9ae7a9-242c-4f0e-a44f-8c5883b0c3ce.xml, ntifs/FILE_MODE_INFORMATION, ntifs/PFILE_MODE_INFORMATION"
 req.header: ntifs.h
 req.include-header: Ntifs.h, Fltkernel.h
 req.target-type: Windows
-req.target-min-winverclnt: Supported in Windows XP and later versions of Windows.
+req.target-min-winverclnt: Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntifs.h
 api_name:
+ - _FILE_MODE_INFORMATION
+ - PFILE_MODE_INFORMATION
  - FILE_MODE_INFORMATION
 ---
 
@@ -111,3 +112,4 @@ This structure is used by the <a href="/windows-hardware/drivers/ddi/ntifs/nf-nt
 
 
 <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryinformationfile">ZwQueryInformationFile</a>
+

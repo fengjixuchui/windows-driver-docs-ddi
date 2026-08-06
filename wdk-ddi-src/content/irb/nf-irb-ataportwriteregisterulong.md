@@ -4,7 +4,6 @@ title: AtaPortWriteRegisterUlong function (irb.h)
 description: The AtaPortWriteRegisterUlong routine transfers a ULONG value to the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\ataportwriteregisterulong.htm
 tech.root: storage
-ms.assetid: 62abbee8-cd62-4106-9a7e-c93bfc916769
 ms.date: 03/29/2018
 keywords: ["AtaPortWriteRegisterUlong function"]
 ms.keywords: AtaPortWriteRegisterUlong, AtaPortWriteRegisterUlong routine [Storage Devices], atartns_9cbbfe00-9ab2-4c7b-8f33-c9ebb166214a.xml, irb/AtaPortWriteRegisterUlong, storage.ataportwriteregisterulong
@@ -54,14 +53,14 @@ The <b>AtaPortWriteRegisterUlong</b> routine transfers a ULONG value to the HBA.
 
 ## -parameters
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the destination register. The address value that is assigned to this parameter must be within the range of mapped I/O space addresses that are obtained by a call to <a href="/windows-hardware/drivers/ddi/irb/nf-irb-ataportgetdevicebase">AtaPortGetDeviceBase</a>.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies the value to write to the register for the HBA.
 
 ## -see-also

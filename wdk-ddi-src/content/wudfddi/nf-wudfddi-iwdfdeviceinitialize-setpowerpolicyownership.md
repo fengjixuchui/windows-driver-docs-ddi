@@ -4,7 +4,6 @@ title: IWDFDeviceInitialize::SetPowerPolicyOwnership (wudfddi.h)
 description: The SetPowerPolicyOwnership method sets the ownership of the power policy to a driver or removes ownership from the driver.
 old-location: wdf\iwdfdeviceinitialize_setpowerpolicyownership.htm
 tech.root: wdf
-ms.assetid: 18b0b277-97c8-4aff-9f09-34822ce84290
 ms.date: 02/26/2018
 keywords: ["IWDFDeviceInitialize::SetPowerPolicyOwnership"]
 ms.keywords: IWDFDeviceInitialize interface,SetPowerPolicyOwnership method, IWDFDeviceInitialize.SetPowerPolicyOwnership, IWDFDeviceInitialize::SetPowerPolicyOwnership, SetPowerPolicyOwnership, SetPowerPolicyOwnership method, SetPowerPolicyOwnership method,IWDFDeviceInitialize interface, UMDFDeviceObjectRef_849680d0-e616-4862-9c59-50150f6c15f0.xml, umdf.iwdfdeviceinitialize_setpowerpolicyownership, wdf.iwdfdeviceinitialize_setpowerpolicyownership, wudfddi/IWDFDeviceInitialize::SetPowerPolicyOwnership
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDeviceInitialize.SetPowerPolicyOwnership
+ - IWDFDeviceInitialize::SetPowerPolicyOwnership
 ---
 
 # IWDFDeviceInitialize::SetPowerPolicyOwnership
@@ -52,9 +51,9 @@ The <b>SetPowerPolicyOwnership</b> method sets the ownership of the power policy
 
 ## -parameters
 
-### -param fTrue 
+### -param fTrue [in]
 
-[in]
+
 A BOOL value that specifies whether to set power-policy ownership to the driver or remove ownership from the driver. <b>TRUE</b> indicates to set power-policy ownership to the driver; <b>FALSE</b> indicates to remove ownership from the driver.
 
 ## -remarks
@@ -77,3 +76,4 @@ For a code example of how to use the <b>SetPowerPolicyOwnership</b> method, see 
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createdevice">IWDFDriver::CreateDevice</a>
+

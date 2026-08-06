@@ -4,7 +4,6 @@ title: SPB_CONNECTION_PARAMETERS_INIT function (spbcx.h)
 description: The SPB_CONNECTION_PARAMETERS_INIT function initializes an SPB_CONNECTION_PARAMETERS structure.
 old-location: spb\spb_connection_parameters_init.htm
 tech.root: SPB
-ms.assetid: 0E23690B-4AE1-42F1-A53F-FE9A4697DBF2
 ms.date: 04/30/2018
 keywords: ["SPB_CONNECTION_PARAMETERS_INIT function"]
 ms.keywords: SPB.spb_connection_parameters_init, SPB_CONNECTION_PARAMETERS_INIT, SPB_CONNECTION_PARAMETERS_INIT function [Buses], spbcx/SPB_CONNECTION_PARAMETERS_INIT
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any IRQL
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>SPB_CONNECTION_PARAMETERS_INIT</b> function initializes an  <a href="/win
 
 ## -parameters
 
-### -param Parameters 
+### -param Parameters [out]
 
-[out]
+
 A pointer to the <b>SPB_CONNECTION_PARAMETERS</b> structure that is to be initialized.
 
 ## -remarks

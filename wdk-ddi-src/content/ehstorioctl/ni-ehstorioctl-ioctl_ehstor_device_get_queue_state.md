@@ -4,7 +4,6 @@ title: IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE (ehstorioctl.h)
 description: The IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE request is sent by silo drivers and applications to determine the state of a storage device queue.
 old-location: storage\ioctl_ehstor_device_get_queue_state.htm
 tech.root: storage
-ms.assetid: 1BF7E7B3-26CF-41BB-B2E9-8EDC6872CF34
 ms.date: 03/29/2018
 keywords: ["IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE IOCTL"]
 ms.keywords: IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE, IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE control, IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE control code [Storage Devices], ehstorioctl/IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE, storage.ioctl_ehstor_device_get_queue_state
@@ -49,6 +48,8 @@ api_name:
 The <b>IOCTL_EHSTOR_DEVICE_GET_QUEUE_STATE</b> request is sent by silo drivers and applications to determine the state of a storage device queue. IO requests in the storage device queue are held when the device is temporarily unauthorized. A storage device may become temporarily unauthorized in low power states or when there is a policy that requires locking Enhanced Storage devices such as when the user session is locked.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

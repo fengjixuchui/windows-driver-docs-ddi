@@ -4,7 +4,6 @@ title: _D3DHAL_DP2VIEWPORTINFO (d3dhal.h)
 description: The D3DHAL_DP2VIEWPORTINFO structure is used to inform guard-band aware drivers of the view clipping rectangle. The clipping rectangle is specified by the members dwX, dwY, dwWidth and dwHeight.
 old-location: display\d3dhal_dp2viewportinfo.htm
 tech.root: display
-ms.assetid: df46a37e-fed6-4738-8794-6611e9c758cb
 ms.date: 05/10/2018
 keywords: ["D3DHAL_DP2VIEWPORTINFO structure"]
 ms.keywords: "*LPD3DHAL_DP2VIEWPORTINFO, D3DHAL_DP2VIEWPORTINFO, D3DHAL_DP2VIEWPORTINFO structure [Display Devices], LPD3DHAL_DP2VIEWPORTINFO, LPD3DHAL_DP2VIEWPORTINFO structure pointer [Display Devices], _D3DHAL_DP2VIEWPORTINFO, d3dhal/D3DHAL_DP2VIEWPORTINFO, d3dhal/LPD3DHAL_DP2VIEWPORTINFO, d3dstrct_7a7ca4d1-eb1a-4342-9ce9-f4b276191da5.xml, display.d3dhal_dp2viewportinfo"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dhal.h
 api_name:
+ - _D3DHAL_DP2VIEWPORTINFO
  - D3DHAL_DP2VIEWPORTINFO
 ---
 
@@ -85,3 +85,4 @@ D3DDP2OP_VIEWPORTINFO
 
 
 <a href="/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb">D3dDrawPrimitives2</a>
+

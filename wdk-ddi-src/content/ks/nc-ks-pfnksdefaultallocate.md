@@ -4,7 +4,6 @@ title: PFNKSDEFAULTALLOCATE (ks.h)
 description: An AVStream minidriver's AVStrMiniAllocate routine allocates a frame using the allocator specified in the Context parameter.
 old-location: stream\avstrminiallocate.htm
 tech.root: stream
-ms.assetid: f718e788-306a-4dbc-96cb-a81299aafe1d
 ms.date: 04/23/2018
 keywords: ["PFNKSDEFAULTALLOCATE callback function"]
 ms.keywords: AVStrMiniAllocate, AVStrMiniAllocate routine [Streaming Media Devices], PFNKSDEFAULTALLOCATE, avstclbk_3ed4229c-f462-4b86-9dd4-374275f10c24.xml, ks/AVStrMiniAllocate, stream.avstrminiallocate
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - AVStrMiniAllocate
+ - PFNKSDEFAULTALLOCATE
 ---
 
 # PFNKSDEFAULTALLOCATE callback function
@@ -50,9 +49,9 @@ An AVStream minidriver's <i>AVStrMiniAllocate</i> routine allocates a frame usin
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to the allocator's context structure created in <i>AVStrMiniInitializeAllocator</i>.
 
 ## -returns
@@ -78,3 +77,4 @@ For more information, see <a href="/windows-hardware/drivers/stream/ks-allocator
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin_dispatch">KSPIN_DISPATCH</a>
+

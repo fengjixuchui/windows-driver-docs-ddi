@@ -1,10 +1,10 @@
 ---
 UID: NS:ntddk._PCI_EXPRESS_DPC_RP_PIO_SEVERITY_REGISTER
 title: PCI_EXPRESS_DPC_RP_PIO_SEVERITY_REGISTER
+tech.root: PCI
 ms.date: 04/28/2020
-ms.topic: language-reference
 targetos: Windows
-description: 
+description: "Learn more about: PCI_EXPRESS_DPC_RP_PIO_SEVERITY_REGISTER"
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -28,6 +28,7 @@ api_location:
  - ntddk.h
 api_name:
  - _PCI_EXPRESS_DPC_RP_PIO_SEVERITY_REGISTER
+ - PPCI_EXPRESS_DPC_RP_PIO_SEVERITY_REGISTER
  - PCI_EXPRESS_DPC_RP_PIO_SEVERITY_REGISTER
 f1_keywords:
  - _PCI_EXPRESS_DPC_RP_PIO_SEVERITY_REGISTER

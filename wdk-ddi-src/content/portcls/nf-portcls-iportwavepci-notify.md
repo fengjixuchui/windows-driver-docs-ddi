@@ -4,7 +4,6 @@ title: IPortWavePci::Notify (portcls.h)
 description: The Notify method notifies the port driver that an interrupt indicating the progress of the DMA pointer has occurred.
 old-location: audio\iportwavepci_notify.htm
 tech.root: audio
-ms.assetid: fa65b3c3-196c-4cf4-8c9e-c0c9a33b2881
 ms.date: 05/08/2018
 keywords: ["IPortWavePci::Notify"]
 ms.keywords: IPortWavePci interface [Audio Devices],Notify method, IPortWavePci.Notify, IPortWavePci::Notify, Notify, Notify method [Audio Devices], Notify method [Audio Devices],IPortWavePci interface, audio.iportwavepci_notify, audmp-routines_5b988b85-05d1-4a66-b04d-fdd21dcf0310.xml, portcls/IPortWavePci::Notify
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IPortWavePci.Notify
+ - IPortWavePci::Notify
 ---
 
 # IPortWavePci::Notify
@@ -50,9 +49,9 @@ The <code>Notify</code> method notifies the port driver that an interrupt indica
 
 ## -parameters
 
-### -param ServiceGroup 
+### -param ServiceGroup [in]
 
-[in]
+
 A pointer to the miniport driver's <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iservicegroup">IServiceGroup</a> object.
 
 ## -remarks
@@ -80,3 +79,4 @@ The <i>ServiceGroup</i> parameter follows the <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iservicegroup">IServiceGroup</a>
+

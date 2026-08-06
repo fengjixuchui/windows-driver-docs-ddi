@@ -4,7 +4,6 @@ title: _NDIS_PD_COUNTER_PARAMETERS (ndis.h)
 description: This structure holds parameters for the provider counter.
 old-location: netvista\ndis_pd_counter_parameters.htm
 tech.root: netvista
-ms.assetid: 0F2AB5A3-9208-426A-ADC5-C1AD3BADFD83
 ms.date: 05/02/2018
 keywords: ["NDIS_PD_COUNTER_PARAMETERS structure"]
 ms.keywords: NDIS_PD_COUNTER_PARAMETERS, NDIS_PD_COUNTER_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_PD_COUNTER_PARAMETERS, PNDIS_PD_COUNTER_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_PD_COUNTER_PARAMETERS, ndis/NDIS_PD_COUNTER_PARAMETERS, ndis/PNDIS_PD_COUNTER_PARAMETERS, netvista.ndis_pd_counter_parameters
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
+ - _NDIS_PD_COUNTER_PARAMETERS
  - NDIS_PD_COUNTER_PARAMETERS
 ---
 
@@ -54,7 +54,7 @@ This structure holds parameters for the provider counter.
 
 ### -field Header
 
-The <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the <b>NDIS_PD_COUNTER_PARAMETERS</b> structure. Set the members of this structure as follows:
+The <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the <b>NDIS_PD_COUNTER_PARAMETERS</b> structure. Set the members of this structure as follows:
 
 <ul>
 <li><b>Type</b> = <b>NDIS_OBJECT_TYPE_DEFAULT</b></li>
@@ -76,7 +76,7 @@ An <a href="/windows-hardware/drivers/ddi/ndis/ne-ndis-ndis_pd_counter_type">NDI
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -85,3 +85,4 @@ An <a href="/windows-hardware/drivers/ddi/ndis/ne-ndis-ndis_pd_counter_type">NDI
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_pd_allocate_counter">NdisPDAllocateCounter</a>
+

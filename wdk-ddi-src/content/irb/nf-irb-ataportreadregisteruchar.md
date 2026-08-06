@@ -4,7 +4,6 @@ title: AtaPortReadRegisterUchar function (irb.h)
 description: The AtaPortReadRegisterUchar routine reads an unsigned byte value from the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\ataportreadregisteruchar.htm
 tech.root: storage
-ms.assetid: 1baa8d01-b889-4f2b-ad9e-f35078f7b3d8
 ms.date: 03/29/2018
 keywords: ["AtaPortReadRegisterUchar function"]
 ms.keywords: AtaPortReadRegisterUchar, AtaPortReadRegisterUchar routine [Storage Devices], atartns_63ee26b2-b436-4dc6-a3aa-5a13691e85dd.xml, irb/AtaPortReadRegisterUchar, storage.ataportreadregisteruchar
@@ -54,9 +53,9 @@ The <b>AtaPortReadRegisterUchar</b> routine reads an unsigned byte value from th
 
 ## -parameters
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the register to read. The address value that is assigned to this parameter must be within the range of mapped I/O space addresses that are obtained by a call to <a href="/windows-hardware/drivers/ddi/irb/nf-irb-ataportgetdevicebase">AtaPortGetDeviceBase</a>.
 
 ## -returns

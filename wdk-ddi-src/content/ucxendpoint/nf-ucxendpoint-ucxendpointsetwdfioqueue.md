@@ -4,7 +4,6 @@ title: UcxEndpointSetWdfIoQueue function (ucxendpoint.h)
 description: Sets a framework queue on the specified endpoint object.
 old-location: buses\_ucxendpointsetwdfioqueue.htm
 tech.root: usbref
-ms.assetid: DC23B286-8A52-4642-B345-D76802C83C55
 ms.date: 05/07/2018
 keywords: ["UcxEndpointSetWdfIoQueue function"]
 ms.keywords: UcxEndpointSetWdfIoQueue, UcxEndpointSetWdfIoQueue method [Buses], buses._ucxendpointsetwdfioqueue
@@ -50,14 +49,14 @@ Sets a framework queue  on the specified endpoint object.
 
 ## -parameters
 
-### -param Endpoint 
+### -param Endpoint [in]
 
-[in]
+
 A handle to the endpoint object. The client driver retrieved the handle in a previous call to <a href="/windows-hardware/drivers/ddi/ucxendpoint/nf-ucxendpoint-ucxendpointcreate">UcxEndpointCreate</a>.
 
-### -param WdfQueue 
+### -param WdfQueue [in]
 
-[in]
+
 A handle to the framework queue object to set on the endpoint.
 
 ## -remarks

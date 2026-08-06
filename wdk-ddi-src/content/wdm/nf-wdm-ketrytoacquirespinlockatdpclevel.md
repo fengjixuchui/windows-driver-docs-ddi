@@ -4,7 +4,6 @@ title: KeTryToAcquireSpinLockAtDpcLevel function (wdm.h)
 description: The KeTryToAcquireSpinLockAtDpcLevel routine attempts to acquire a spin lock at DISPATCH_LEVEL.
 old-location: kernel\ketrytoacquirespinlockatdpclevel.htm
 tech.root: kernel
-ms.assetid: b7791969-027e-4df7-b720-1eb612597c56
 ms.date: 04/30/2018
 keywords: ["KeTryToAcquireSpinLockAtDpcLevel function"]
 ms.keywords: KeTryToAcquireSpinLockAtDpcLevel, KeTryToAcquireSpinLockAtDpcLevel routine [Kernel-Mode Driver Architecture], k105_416ac5db-d064-4ced-8cf8-311aca8dae7f.xml, kernel.ketrytoacquirespinlockatdpclevel, wdm/KeTryToAcquireSpinLockAtDpcLevel
@@ -50,9 +49,9 @@ The <b>KeTryToAcquireSpinLockAtDpcLevel</b> routine attempts to acquire a spin l
 
 ## -parameters
 
-### -param SpinLock 
+### -param SpinLock [in, out]
 
-[in, out]
+
 Specifies the spin lock to acquire. The spin lock must have already been initialized by <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializespinlock">KeInitializeSpinLock</a>.
 
 ## -returns

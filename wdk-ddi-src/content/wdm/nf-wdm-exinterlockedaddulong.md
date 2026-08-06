@@ -4,7 +4,6 @@ title: ExInterlockedAddUlong function (wdm.h)
 description: The ExInterlockedAddUlong routine adds an unsigned long value to a given unsigned integer as an atomic operation.
 old-location: kernel\exinterlockedaddulong.htm
 tech.root: kernel
-ms.assetid: c418538a-4041-4ea8-8a4c-1f4d35e434c7
 ms.date: 04/30/2018
 keywords: ["ExInterlockedAddUlong function"]
 ms.keywords: ExInterlockedAddUlong, ExInterlockedAddUlong routine [Kernel-Mode Driver Architecture], k102_bec4a58e-ee68-4f9e-8fac-9ef0c193ef10.xml, kernel.exinterlockedaddulong, wdm/ExInterlockedAddUlong
@@ -50,19 +49,19 @@ The <b>ExInterlockedAddUlong</b> routine adds an unsigned long value to a given 
 
 ## -parameters
 
-### -param Addend 
+### -param Addend [in, out]
 
-[in, out]
+
 A pointer to an unsigned long integer whose value is to be adjusted by the <i>Increment</i> value.
 
-### -param Increment 
+### -param Increment [in]
 
-[in]
+
 Specifies an unsigned long integer to be added.
 
-### -param Lock 
+### -param Lock [in, out]
 
-[in, out]
+
 A pointer to a spin lock to be used to synchronize access to the <i>Addend</i>.
 
 ## -returns

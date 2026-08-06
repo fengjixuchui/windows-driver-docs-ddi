@@ -4,7 +4,6 @@ title: IDE_ADAPTER_CONTROL (irb.h)
 description: The AtaAdapterControl miniport driver routine is called to perform Plug and Play (PnP) and Power Management operations on the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\ataadaptercontrol.htm
 tech.root: storage
-ms.assetid: 50125022-7450-4582-b98d-1d597e4e96d4
 ms.date: 03/29/2018
 keywords: ["IDE_ADAPTER_CONTROL callback function"]
 ms.keywords: AtaAdapterControl, AtaAdapterControl routine [Storage Devices], IDE_ADAPTER_CONTROL, atartns_6460976d-3415-4cda-b128-f74baefd075f.xml, irb/AtaAdapterControl, storage.ataadaptercontrol
@@ -38,10 +37,11 @@ api_type:
 api_location:
  - irb.h
 api_name:
- - AtaAdapterControl
+ - IDE_ADAPTER_CONTROL
 ---
 
 # IDE_ADAPTER_CONTROL callback function
+
 
 ## -description
 
@@ -52,13 +52,13 @@ The *AtaAdapterControl* miniport driver routine is called to perform Plug and Pl
 
 ## -parameters
 
-### -param ControllerExtension
+### -param ControllerExtension [in]
 
-[in] A pointer to the controller extension.
+A pointer to the controller extension.
 
-### -param ControlAction
+### -param ControlAction [in]
 
-[in] One of five actions that the miniport driver must perform as defined in the following table.
+One of five actions that the miniport driver must perform as defined in the following table.
   
 | ControlAction | Parameters | Description |
 | ------------- | ---------- | ----------- |
@@ -68,9 +68,9 @@ The *AtaAdapterControl* miniport driver routine is called to perform Plug and Pl
 | IdePowerDown | None | Indicates that the adapter is being turned off. |
 | IdeVendorDefined | None | Indicates that the miniport driver should perform a vendor-defined control action. |
 
-### -param Parameters
+### -param Parameters [in, out]
 
-[in, out] Parameters associated with the given action.
+Parameters associated with the given action.
 
 ## -returns
 
@@ -83,3 +83,4 @@ The port driver guarantees that there is no outstanding I/O on the adapter befor
 ## -see-also
 
 [**IDE_CONTROLLER_CONFIGURATION**](ns-irb-_ide_controller_configuration.md)
+

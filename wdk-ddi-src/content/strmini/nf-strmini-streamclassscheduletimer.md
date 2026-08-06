@@ -4,7 +4,6 @@ title: StreamClassScheduleTimer function (strmini.h)
 description: The minidriver calls the StreamClassScheduleTimer routine to schedule a timer, and to specify a routine that is called when the timer expires.
 old-location: stream\streamclassscheduletimer.htm
 tech.root: stream
-ms.assetid: 83271c19-911b-481a-bc25-c0b3816cf800
 ms.date: 04/23/2018
 keywords: ["StreamClassScheduleTimer function"]
 ms.keywords: StreamClassScheduleTimer, StreamClassScheduleTimer routine [Streaming Media Devices], strclass-routines_73f92fc4-e9bf-40af-8dff-9c2e740dba20.xml, stream.streamclassscheduletimer, strmini/StreamClassScheduleTimer
@@ -51,33 +50,33 @@ The minidriver calls the **StreamClassScheduleTimer** routine to schedule a time
 
 ## -parameters
 
-### -param StreamObject 
+### -param StreamObject [in, optional]
 
-[in, optional]
+
 Specifies the stream that sets the timer, or **NULL** if the timer is set for the whole driver. The minidriver may only schedule one timer per stream, and one for the driver as a whole. This parameter is optional.
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the minidriver's device extension. The minidriver specifies the size of this buffer in the [HW_INITIALIZATION_DATA](./ns-strmini-_hw_initialization_data.md) structure it passes when it registers itself via [StreamClassRegisterMinidriver](./nf-strmini-streamclassregisteradapter.md). The class driver then passes pointers to the buffer in the **HwDeviceExtension** member of the [HW_STREAM_REQUEST_BLOCK](./ns-strmini-_hw_stream_request_block.md), [HW_STREAM_OBJECT](./ns-strmini-_hw_stream_object.md), [HW_TIME_CONTEXT](./ns-strmini-_hw_time_context.md), and [PORT_CONFIGURATION_INFORMATION](./ns-strmini-_port_configuration_information.md) structures it passes to the minidriver.
 
-### -param NumberOfMicroseconds 
+### -param NumberOfMicroseconds [in]
 
-[in]
+
 Specifies the amount of time, in microseconds, before the timer expires.
 
-### -param TimerRoutine 
+### -param TimerRoutine [in]
 
-[in]
+
 Specifies the routine called when the timer expires. The routine's prototype must be of the form:
 
 ```cpp
 TimerRoutine(PVOID Context);
 ```
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to a context that the class driver passes to the callback routine once the timer expires.
 
 ## -returns

@@ -4,7 +4,6 @@ title: PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE (ndis.h)
 description: The ProtocolClModifyCallQoSComplete function is used by connection-oriented NDIS clients that can modify the quality of service on a connection dynamically.
 old-location: netvista\protocolclmodifycallqoscomplete.htm
 tech.root: netvista
-ms.assetid: 0d925862-49af-4579-b877-c9a033e73be0
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE callback function"]
 ms.keywords: PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE, PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE callback, ProtocolClModifyCallQoSComplete, ProtocolClModifyCallQoSComplete callback function [Network Drivers Starting with Windows Vista], condis_client_ref_19bed505-8cde-44c3-bee1-dd5cc7a26526.xml, ndis/ProtocolClModifyCallQoSComplete, netvista.protocolclmodifycallqoscomplete
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolClModifyCallQoSComplete
+ - PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE
 ---
 
 # PROTOCOL_CL_MODIFY_CALL_QOS_COMPLETE callback function
@@ -59,9 +58,9 @@ The
 
 ## -parameters
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 Specifies the final status of the client's asynchronous request to modify the call parameters for
      this VC as one of the following:
      
@@ -102,18 +101,18 @@ The call manager could not change the QoS because of a failure on the network or
 The call manager failed to change the QoS, and NDIS propagated the CM-determined failure status
        to the client.
 
-### -param ProtocolVcContext 
+### -param ProtocolVcContext [in]
 
-[in]
+
 Specifies the handle to the client's per-VC context area, which the client originally supplied to
      NDIS when it called 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscocreatevc">NdisCoCreateVc</a> to set up the VC for its
      outgoing call request or from its 
      <i>ProtocolCoCreateVc</i> function if the client accepted an incoming call on this VC.
 
-### -param CallParameters 
+### -param CallParameters [in]
 
-[in]
+
 Pointer to a buffered CO_CALL_PARAMETERS structure containing the client-specified QoS change it
      requested, or, possibly, the original QoS for this VC established when the connection was activated,
      which the call manager has restored.
@@ -192,3 +191,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_create_vc">ProtocolCoCreateVc</a>
+

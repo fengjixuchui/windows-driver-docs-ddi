@@ -1,9 +1,9 @@
 ---
 UID: NS:minitape._ERROR_HISTORY_DIRECTORY_ENTRY
 title: _ERROR_HISTORY_DIRECTORY_ENTRY (minitape.h)
-description: 
-ms.assetid: 0ef3d4b9-aa79-4895-8919-b76a985aca13
+description: "Learn more about: _ERROR_HISTORY_DIRECTORY_ENTRY structure (minitape.h)"
 ms.date: 10/19/2018
+tech.root: storage
 keywords: ["ERROR_HISTORY_DIRECTORY_ENTRY structure"]
 ms.keywords: _ERROR_HISTORY_DIRECTORY_ENTRY, ERROR_HISTORY_DIRECTORY_ENTRY, *PERROR_HISTORY_DIRECTORY_ENTRY,
 req.header: minitape.h
@@ -35,6 +35,8 @@ api_location:
  - minitape.h
 api_name:
  - _ERROR_HISTORY_DIRECTORY_ENTRY
+ - PERROR_HISTORY_DIRECTORY_ENTRY
+ - ERROR_HISTORY_DIRECTORY_ENTRY
 ---
 
 # _ERROR_HISTORY_DIRECTORY_ENTRY structure (minitape.h)

@@ -4,7 +4,6 @@ title: _LBA_FILTER_TABLE_ENTRY (ehstorioctl.h)
 description: The LBA_FILTER_TABLE_ENTRY structure contains an individual LBA range for the LBA_FILTER_TABLE sent in an IOCTL_EHSTOR_DRIVER_UPDATE_LBA_FILTER_TABLE request.
 old-location: storage\lba_filter_table_entry.htm
 tech.root: storage
-ms.assetid: 092B54D7-FFEA-48BB-993E-14443BD0C7AA
 ms.date: 03/29/2018
 keywords: ["LBA_FILTER_TABLE_ENTRY structure"]
 ms.keywords: "*PLBA_FILTER_TABLE_ENTRY, LBA_FILTER_TABLE_ENTRY, LBA_FILTER_TABLE_ENTRY structure [Storage Devices], PLBA_FILTER_TABLE_ENTRY, PLBA_FILTER_TABLE_ENTRY structure pointer [Storage Devices], _LBA_FILTER_TABLE_ENTRY, ehstorioctl/LBA_FILTER_TABLE_ENTRY, ehstorioctl/PLBA_FILTER_TABLE_ENTRY, storage.lba_filter_table_entry"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - EhStorIoctl.h
 api_name:
+ - _LBA_FILTER_TABLE_ENTRY
+ - PLBA_FILTER_TABLE_ENTRY
  - LBA_FILTER_TABLE_ENTRY
 ---
 
@@ -81,3 +82,4 @@ An LBA range is valid only if LbaCount is > 0 and it is not overlapping with ano
 
 
 <a href="/windows-hardware/drivers/ddi/ehstorioctl/ns-ehstorioctl-_lba_filter_table">LBA_FILTER_TABLE</a>
+

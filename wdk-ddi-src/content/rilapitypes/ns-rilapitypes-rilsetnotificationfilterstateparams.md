@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILSETNOTIFICATIONFILTERSTATEPARAMS
 title: RILSETNOTIFICATIONFILTERSTATEPARAMS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILSETNOTIFICATIONFILTERSTATEPARAMS structure for internal use only."
 old-location: netvista\rilsetnotificationfilterstateparams.htm
 tech.root: netvista
-ms.assetid: bd30a156-0414-486c-92c4-21c33d32f9b8
 ms.date: 05/02/2018
 keywords: ["RILSETNOTIFICATIONFILTERSTATEPARAMS structure"]
 ms.keywords: "*LPRILSETNOTIFICATIONFILTERSTATEPARAMS, RILSETNOTIFICATIONFILTERSTATEPARAMS, RILSETNOTIFICATIONFILTERSTATEPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsetnotificationfilterstateparams, ntddrilapitypes/RILSETNOTIFICATIONFILTERSTATEPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSETNOTIFICATIONFILTERSTATEPARAMS
+ - LPRILSETNOTIFICATIONFILTERSTATEPARAMS
 ---
 
 # RILSETNOTIFICATIONFILTERSTATEPARAMS structure (rilapitypes.h)

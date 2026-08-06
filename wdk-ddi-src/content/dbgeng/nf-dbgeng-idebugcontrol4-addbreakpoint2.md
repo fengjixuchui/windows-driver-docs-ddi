@@ -4,7 +4,6 @@ title: IDebugControl4::AddBreakpoint2 (dbgeng.h)
 description: The AddBreakpoint2 method creates a new breakpoint for the current target.
 old-location: debugger\addbreakpoint2.htm
 tech.root: debugger
-ms.assetid: 001a64dd-1470-42e0-98ba-22ba33f3fa69
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::AddBreakpoint2"]
 ms.keywords: AddBreakpoint2, AddBreakpoint2 method [Windows Debugging], AddBreakpoint2 method [Windows Debugging],IDebugControl4 interface, IDebugControl4 interface [Windows Debugging],AddBreakpoint2 method, IDebugControl4.AddBreakpoint2, IDebugControl4::AddBreakpoint2, dbgeng/IDebugControl4::AddBreakpoint2, debugger.addbreakpoint2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugControl4.AddBreakpoint2
+ - IDebugControl4::AddBreakpoint2
 ---
 
 # IDebugControl4::AddBreakpoint2
@@ -50,9 +49,9 @@ The <b>AddBreakpoint2</b>  method creates a new breakpoint for the current targe
 
 ## -parameters
 
-### -param Type 
+### -param Type [in]
 
-[in]
+
 Specifies the breakpoint type of the new breakpoint.  This can be either of the following values:
 
 <table>
@@ -82,14 +81,14 @@ DEBUG_BREAKPOINT_DATA
 </tr>
 </table>
 
-### -param DesiredId 
+### -param DesiredId [in]
 
-[in]
+
 Specifies the desired ID of the new breakpoint.  If it is DEBUG_ANY_ID, the engine will pick an unused ID.
 
-### -param Bp 
+### -param Bp [out]
 
-[out]
+
 Receives an interface pointer to the new breakpoint.
 
 ## -returns
@@ -156,3 +155,4 @@ The client is saved as the adder of the new breakpoint. See <a href="/windows-ha
 
 
 <a href="/windows-hardware/drivers/debugger/using-breakpoints2">Using Breakpoints</a>
+

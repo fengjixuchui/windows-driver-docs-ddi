@@ -4,7 +4,6 @@ title: RtlLongAdd function (ntintsafe.h)
 description: Adds two values of type LONG.
 old-location: kernel\rtllongadd.htm
 tech.root: kernel
-ms.assetid: E8CF5E74-2EDA-4B27-A9C0-053930FF741D
 ms.date: 04/30/2018
 keywords: ["RtlLongAdd function"]
 ms.keywords: RtlLongAdd, RtlLongAdd function [Kernel-Mode Driver Architecture], kernel.rtllongadd, ntintsafe/RtlLongAdd
@@ -50,19 +49,19 @@ Adds two values of type <b>LONG</b>.
 
 ## -parameters
 
-### -param lAugend 
+### -param lAugend [in]
 
-[in]
+
 The first value in the equation.
 
-### -param lAddend 
+### -param lAddend [in]
 
-[in]
+
 The value to add to <i>lAugend</i>.
 
-### -param plResult 
+### -param plResult [out]
 
-[out]
+
 A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

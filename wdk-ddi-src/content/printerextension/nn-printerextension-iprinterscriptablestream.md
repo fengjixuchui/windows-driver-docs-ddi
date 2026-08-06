@@ -2,17 +2,15 @@
 UID: NN:printerextension.IPrinterScriptableStream
 title: IPrinterScriptableStream (printerextension.h)
 description: The IPrinterScriptableStream interface builds on IPrinterScriptableSequentialStream and adds IStream-like semantics.
-old-location: print\iprinterscriptablestream.htm
 tech.root: print
-ms.assetid: AD3CDF90-76ED-498B-8DE1-B191504EB415
-ms.date: 04/20/2018
+ms.date: 08/04/2022
 keywords: ["IPrinterScriptableStream interface"]
 ms.keywords: IPrinterScriptableStream, IPrinterScriptableStream interface [Print Devices], IPrinterScriptableStream interface [Print Devices],described, print.iprinterscriptablestream, printerextension/IPrinterScriptableStream
 req.header: printerextension.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 
@@ -41,32 +39,20 @@ api_name:
  - IPrinterScriptableStream
 ---
 
-# IPrinterScriptableStream interface
-
-
 ## -description
 
-The IPrinterScriptableStream interface builds on <a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream">IPrinterScriptableSequentialStream</a> and adds IStream-like semantics.
+The **IPrinterScriptableStream** interface builds on [IPrinterScriptableSequentialStream](./nn-printerextension-iprinterscriptablesequentialstream.md) and adds IStream-like semantics.
 
 ## -inheritance
 
-The <b xmlns:loc="https://microsoft.com/wdcml/l10n">IPrinterScriptableStream</b> interface inherits from <a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream">IPrinterScriptableSequentialStream</a>. <b>IPrinterScriptableStream</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The **IPrinterScriptableStream** interface inherits from [IPrinterScriptableSequentialStream](./nn-printerextension-iprinterscriptablesequentialstream.md).
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablepropertybag">IPrinterScriptablePropertyBag</a>
+[IPrinterScriptablePropertyBag](./nn-printerextension-iprinterscriptablepropertybag.md)
 
+[IPrinterScriptablePropertyBag::GetReadStream](./nf-printerextension-iprinterscriptablepropertybag-getreadstream.md)
 
+[IPrinterScriptablePropertyBag::GetWriteStream](./nf-printerextension-iprinterscriptablepropertybag-getwritestream.md)
 
-<a href="/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterscriptablepropertybag-getreadstream">IPrinterScriptablePropertyBag::GetReadStream</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterscriptablepropertybag-getwritestream">IPrinterScriptablePropertyBag::GetWriteStream</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream">IPrinterScriptableSequentialStream</a>
+[IPrinterScriptableSequentialStream](./nn-printerextension-iprinterscriptablesequentialstream.md)

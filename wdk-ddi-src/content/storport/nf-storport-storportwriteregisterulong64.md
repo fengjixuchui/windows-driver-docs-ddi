@@ -4,14 +4,13 @@ title: StorPortWriteRegisterUlong64 macro (storport.h)
 description: This StorPortWriteRegisterUlong64 routine writes a ULONG64 value to the specified register address.
 old-location: storage\storportwriteregisterulong64.htm
 tech.root: storage
-ms.assetid: FFBC7A27-B980-49AF-9207-237E0F0292FA
 ms.date: 03/29/2018
 keywords: ["StorPortWriteRegisterUlong64 macro"]
 ms.keywords: StorPortWriteRegisterUlong64, StorPortWriteRegisterUlong64 routine [Storage Devices], storage.storportwriteregisterulong64, storport/StorPortWriteRegisterUlong64
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 

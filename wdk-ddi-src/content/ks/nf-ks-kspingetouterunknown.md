@@ -4,7 +4,6 @@ title: KsPinGetOuterUnknown function (ks.h)
 description: The KsPinGetOuterUnknown function returns the outer IUnknown of the pin specified by Pin.
 old-location: stream\kspingetouterunknown.htm
 tech.root: stream
-ms.assetid: 58b14ddd-6698-487a-925d-7d559057e55d
 ms.date: 04/23/2018
 keywords: ["KsPinGetOuterUnknown function"]
 ms.keywords: KsPinGetOuterUnknown, KsPinGetOuterUnknown function [Streaming Media Devices], avfunc_6a9c21cd-38ab-4277-8379-346af4c9c4c9.xml, ks/KsPinGetOuterUnknown, stream.kspingetouterunknown
@@ -50,9 +49,9 @@ The<b> KsPinGetOuterUnknown</b> function returns the outer <b>IUnknown</b> of th
 
 ## -parameters
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a> structure for which to return the outer <b>IUnknown</b>.
 
 ## -returns

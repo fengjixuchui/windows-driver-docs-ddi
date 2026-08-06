@@ -4,7 +4,6 @@ title: IWDFRemoteTarget::GetState (wudfddi.h)
 description: The GetState method returns the current state of a remote I/O target.
 old-location: wdf\iwdfremotetarget_getstate.htm
 tech.root: wdf
-ms.assetid: 3918d764-c5bb-42b6-8b06-a2d544511a96
 ms.date: 02/26/2018
 keywords: ["IWDFRemoteTarget::GetState"]
 ms.keywords: GetState, GetState method, GetState method,IWDFRemoteTarget interface, IWDFRemoteTarget interface,GetState method, IWDFRemoteTarget.GetState, IWDFRemoteTarget::GetState, UMDFIoTargetObjectRef_34bf0f92-927a-4733-9897-5aa146998136.xml, umdf.iwdfremotetarget_getstate, wdf.iwdfremotetarget_getstate, wudfddi/IWDFRemoteTarget::GetState
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFRemoteTarget.GetState
+ - IWDFRemoteTarget::GetState
 ---
 
 # IWDFRemoteTarget::GetState
@@ -71,7 +70,6 @@ if (FxRemoteTarget->GetState() == WdfIoTargetClosed)
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfremotetarget">IWDFRemoteTarget</a>
@@ -79,3 +77,4 @@ if (FxRemoteTarget->GetState() == WdfIoTargetClosed)
 
 
 <a href="/windows-hardware/drivers/ddi/wdfiotarget/ne-wdfiotarget-_wdf_io_target_state">WDF_IO_TARGET_STATE</a>
+

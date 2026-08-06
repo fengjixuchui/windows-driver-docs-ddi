@@ -4,7 +4,6 @@ title: VideoPortSetDmaContext function (video.h)
 description: The VideoPortSetDmaContext function is obsolete in Windows 2000 and later.
 old-location: display\videoportsetdmacontext.htm
 tech.root: display
-ms.assetid: 4f357612-c07d-42fe-a49f-59acec80a8bc
 ms.date: 05/10/2018
 keywords: ["VideoPortSetDmaContext function"]
 ms.keywords: VideoPortSetDmaContext, VideoPortSetDmaContext function [Display Devices], VideoPort_Functions_8e20017f-9d32-45c9-8f68-10cc61b6591d.xml, display.videoportsetdmacontext, video/VideoPortSetDmaContext
@@ -50,19 +49,19 @@ The <b>VideoPortSetDmaContext</b> function is <b>obsolete</b> in Windows 2000 an
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's device extension.
 
-### -param pDma 
+### -param pDma [out]
 
-[out]
+
 Pointer to a DMA handle.
 
-### -param InstanceContext 
+### -param InstanceContext [in]
 
-[in]
+
 Pointer to the DMA context to set.
 
 ## -returns

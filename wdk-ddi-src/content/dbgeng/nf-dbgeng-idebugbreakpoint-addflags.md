@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugBreakpoint.AddFlags
 title: IDebugBreakpoint::AddFlags (dbgeng.h)
-description: The AddFlags method adds flags to a breakpoint.
+description: The AddFlags method adds flags to a breakpoint. This method belongs to the IDebugBreakpoint interface.
 old-location: debugger\addflags.htm
 tech.root: debugger
-ms.assetid: 92161111-5e02-4a97-9656-9a297e9ea1af
 ms.date: 05/03/2018
 keywords: ["IDebugBreakpoint::AddFlags"]
 ms.keywords: AddFlags, AddFlags method [Windows Debugging], AddFlags method [Windows Debugging],IDebugBreakpoint interface, AddFlags method [Windows Debugging],IDebugBreakpoint2 interface, ComOther_2becec27-600b-4d57-93b0-8a794ff2f068.xml, IDebugBreakpoint interface [Windows Debugging],AddFlags method, IDebugBreakpoint.AddFlags, IDebugBreakpoint2 interface [Windows Debugging],AddFlags method, IDebugBreakpoint2::AddFlags, IDebugBreakpoint::AddFlags, dbgeng/IDebugBreakpoint2::AddFlags, dbgeng/IDebugBreakpoint::AddFlags, debugger.addflags
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugBreakpoint.AddFlags
- - IDebugBreakpoint2.AddFlags
+ - IDebugBreakpoint::AddFlags
 ---
 
 # IDebugBreakpoint::AddFlags
@@ -51,9 +49,9 @@ The <b>AddFlags</b> method adds flags to a <a href="/windows-hardware/drivers/de
 
 ## -parameters
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Additional flags to add to the breakpoint.  <i>Flags</i> is a bit field that is combined together with the existing flags by using a bitwise OR.  For more information about the flag bit field and an explanation of each flag, see <a href="/windows-hardware/drivers/debugger/controlling-breakpoint-flags-and-parameters">Controlling Breakpoint Flags and Parameters</a>.  You cannot modify the DEBUG_BREAKPOINT_DEFERRED flag in the <a href="/windows-hardware/drivers/debugger/e">engine</a>. This bit in <i>Flags</i> must always be zero.
 
 ## -returns
@@ -82,3 +80,4 @@ This method can also return error values.  For more information, see <a href="/w
 ## -remarks
 
 For more information about breakpoint properties, see <a href="/windows-hardware/drivers/debugger/controlling-breakpoint-flags-and-parameters">Controlling Breakpoint Flags and Parameters</a>.
+

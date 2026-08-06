@@ -4,7 +4,6 @@ title: _ISOCH_DESCRIPTOR (1394.h)
 description: The ISOCH_DESCRIPTOR structure describes a buffer to be attached or detailed from a resource handle, using the REQUEST_ISOCH_ATTACH_BUFFERS and REQUEST_ISOCH_DETACH_BUFFERS requests.
 old-location: ieee\isoch_descriptor.htm
 tech.root: IEEE
-ms.assetid: 4f508af6-942b-4d48-8874-4b6d9918f01f
 ms.date: 02/15/2018
 keywords: ["ISOCH_DESCRIPTOR structure"]
 ms.keywords: "*PISOCH_DESCRIPTOR, 1394/ISOCH_DESCRIPTOR, 1394/PISOCH_DESCRIPTOR, 1394stct_ceca99ed-2075-42d4-9be7-31e659e2b654.xml, IEEE.isoch_descriptor, ISOCH_DESCRIPTOR, ISOCH_DESCRIPTOR structure [Buses], PISOCH_DESCRIPTOR, PISOCH_DESCRIPTOR structure pointer [Buses], _ISOCH_DESCRIPTOR"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _ISOCH_DESCRIPTOR
+ - PISOCH_DESCRIPTOR
  - ISOCH_DESCRIPTOR
 ---
 
@@ -50,7 +51,7 @@ api_name:
 
 ## -description
 
-The ISOCH_DESCRIPTOR structure describes a buffer to be attached or detailed from a resource handle, using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537650">REQUEST_ISOCH_ATTACH_BUFFERS</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff537651">REQUEST_ISOCH_DETACH_BUFFERS</a> requests.
+The ISOCH_DESCRIPTOR structure describes a buffer to be attached or detailed from a resource handle, using the <a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ISOCH_ATTACH_BUFFERS</a> and <a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ISOCH_DETACH_BUFFERS</a> requests.
 
 ## -struct-fields
 
@@ -183,7 +184,6 @@ Pointer to a callback routine. If non-NULL, the bus driver calls this routine to
 void Callback(IN PVOID Context1, IN PVOID Context2);
 ```
 
-
 ### -field Context1
 
 Specifies the first parameter when the bus driver calls the routine passed in **Callback**.
@@ -194,7 +194,7 @@ Specifies the second parameter when the bus driver calls the routine passed in *
 
 ### -field status
 
-For <a href="https://msdn.microsoft.com/library/windows/hardware/ff537650">REQUEST_ISOCH_ATTACH_BUFFERS</a> requests, this member specifies the status of the attach operation on this buffer.   If an error occurs during the processing of the **REQUEST_ISOCH_ATTACH_BUFFERS** request, the bus driver fills in the **status** member with an appropriate error code.
+For <a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ISOCH_ATTACH_BUFFERS</a> requests, this member specifies the status of the attach operation on this buffer.   If an error occurs during the processing of the **REQUEST_ISOCH_ATTACH_BUFFERS** request, the bus driver fills in the **status** member with an appropriate error code.
 
 <div class="alert"><b>Note</b>  The <b>status</b> member must be initialized to STATUS_SUCCESS before the <b>REQUEST_ISOCH_ATTACH_BUFFERS</b> request is made.</div>
 
@@ -243,12 +243,13 @@ If the driver sets the DESCRIPTOR_HEADER_SCATTER_GATHER flag, the host controlle
 
 <a href="/windows-hardware/drivers/ddi/1394/ns-1394-_get_local_host_info2">GET_LOCAL_HOST_INFO2</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537649">REQUEST_ISOCH_ALLOCATE_RESOURCES</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ISOCH_ALLOCATE_RESOURCES</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537650">REQUEST_ISOCH_ATTACH_BUFFERS</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ISOCH_ATTACH_BUFFERS</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537651">REQUEST_ISOCH_DETACH_BUFFERS</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ISOCH_DETACH_BUFFERS</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537655">REQUEST_ISOCH_LISTEN</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ISOCH_LISTEN</a>
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537660">REQUEST_ISOCH_TALK</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ISOCH_TALK</a>
+

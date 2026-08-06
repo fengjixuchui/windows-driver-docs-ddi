@@ -1,9 +1,8 @@
 ---
 UID: NC:d3dkmthk.PFND3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP
 title: PFND3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP (d3dkmthk.h)
-description: The D3DKMTCheckVidPnExclusiveOwnership function determines the video present source in the path of a video present network (VidPN) topology that exclusively owns the VidPN.
+description: The PFND3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP callback function determines the video present source with exclusive ownership of a video present network (VidPN).
 old-location: display\d3dkmtcheckvidpnexclusiveownership.htm
-ms.assetid: 06333989-177c-4c58-b95a-60313c04fe35
 ms.date: 05/10/2018
 keywords: ["PFND3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP callback function"]
 ms.keywords: D3DKMTCheckVidPnExclusiveOwnership, D3DKMTCheckVidPnExclusiveOwnership callback function [Display Devices], OpenGL_Functions_edc90d51-f7e4-4bb5-be24-1a32b9fb4461.xml, PFND3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP, PFND3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP callback, d3dkmthk/D3DKMTCheckVidPnExclusiveOwnership, display.d3dkmtcheckvidpnexclusiveownership
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
- - D3DKMTCheckVidPnExclusiveOwnership
+ - PFND3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP
 ---
 
 # PFND3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP callback function
@@ -50,7 +49,7 @@ The <b>D3DKMTCheckVidPnExclusiveOwnership</b> function determines the video pres
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in]
 
@@ -73,3 +72,4 @@ This function might also return other <b>NTSTATUS</b> values.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_checkvidpnexclusiveownership">D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP</a>
+

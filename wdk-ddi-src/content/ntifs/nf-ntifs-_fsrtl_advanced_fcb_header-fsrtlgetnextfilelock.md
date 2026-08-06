@@ -4,7 +4,6 @@ title: FsRtlGetNextFileLock function (ntifs.h)
 description: The FsRtlGetNextFileLock routine is used to enumerate the byte-range locks that currently exist for a specified file.
 old-location: ifsk\fsrtlgetnextfilelock.htm
 tech.root: ifsk
-ms.assetid: 175fa4a7-a8e0-4fb1-8103-e513ea8c0778
 ms.date: 04/16/2018
 keywords: ["FsRtlGetNextFileLock function"]
 ms.keywords: FsRtlGetNextFileLock, FsRtlGetNextFileLock routine [Installable File System Drivers], fsrtlref_d34dc7b6-7bdd-47a8-a35e-302c621bf93d.xml, ifsk.fsrtlgetnextfilelock, ntifs/FsRtlGetNextFileLock
@@ -53,14 +52,14 @@ The <b>FsRtlGetNextFileLock</b> routine is used to enumerate the byte-range lock
 
 ## -parameters
 
-### -param FileLock 
+### -param FileLock [in]
 
-[in]
+
 Pointer to the FILE_LOCK structure for the file. This structure must have been initialized by a previous call to <b>FsRtlAllocateFileLock</b> or <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializefilelock">FsRtlInitializeFileLock</a>.
 
-### -param Restart 
+### -param Restart [in]
 
-[in]
+
 Set to <b>TRUE</b> if the enumeration is to start at the beginning of the list of byte range locks. Set to <b>FALSE</b> if resuming the enumeration from a previous call.
 
 To enumerate all byte-range locks for a given file, use <b>FsRtlGetNextFileLock</b> as follows:

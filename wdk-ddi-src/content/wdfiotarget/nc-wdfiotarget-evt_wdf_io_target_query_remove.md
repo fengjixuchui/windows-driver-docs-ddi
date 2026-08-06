@@ -4,7 +4,6 @@ title: EVT_WDF_IO_TARGET_QUERY_REMOVE (wdfiotarget.h)
 description: A driver's EvtIoTargetQueryRemove event callback function indicates whether the framework can safely remove a specified remote I/O target's device.
 old-location: wdf\evtiotargetqueryremove.htm
 tech.root: wdf
-ms.assetid: cb7c97e5-081e-44fc-a759-9a1ae81de41c
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_IO_TARGET_QUERY_REMOVE callback function"]
 ms.keywords: DFIOTargetRef_9a471005-a4c8-4918-bc4c-4147bd6018f0.xml, EVT_WDF_IO_TARGET_QUERY_REMOVE, EVT_WDF_IO_TARGET_QUERY_REMOVE callback, EvtIoTargetQueryRemove, EvtIoTargetQueryRemove callback function, kmdf.evtiotargetqueryremove, wdf.evtiotargetqueryremove, wdfiotarget/EvtIoTargetQueryRemove
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfIoTarget.h
 api_name:
- - EvtIoTargetQueryRemove
+ - EVT_WDF_IO_TARGET_QUERY_REMOVE
 ---
 
 # EVT_WDF_IO_TARGET_QUERY_REMOVE callback function
@@ -52,9 +51,9 @@ A driver's <i>EvtIoTargetQueryRemove</i> event callback function indicates wheth
 
 ## -parameters
 
-### -param IoTarget 
+### -param IoTarget [in]
 
-[in]
+
 A handle to an I/O target object.
 
 ## -returns
@@ -88,3 +87,4 @@ For more information about the <i>EvtIoTargetQueryRemove</i> callback function, 
 
 
 <a href="/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetcloseforqueryremove">WdfIoTargetCloseForQueryRemove</a>
+

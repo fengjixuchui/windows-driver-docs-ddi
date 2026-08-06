@@ -4,7 +4,6 @@ title: _D3DDDI_CREATEDEVICEFLAGS (d3dumddi.h)
 description: The D3DDDI_CREATEDEVICEFLAGS structure describes how to create a device.
 old-location: display\d3dddi_createdeviceflags.htm
 tech.root: display
-ms.assetid: f9415dc9-352a-4e93-a0c1-2519c8c89762
 ms.date: 05/10/2018
 keywords: ["D3DDDI_CREATEDEVICEFLAGS structure"]
 ms.keywords: D3DDDI_CREATEDEVICEFLAGS, D3DDDI_CREATEDEVICEFLAGS structure [Display Devices], D3D_other_Structs_45151acf-e91a-454b-be32-b7b7aaa619e9.xml, _D3DDDI_CREATEDEVICEFLAGS, d3dumddi/D3DDDI_CREATEDEVICEFLAGS, display.d3dddi_createdeviceflags
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDI_CREATEDEVICEFLAGS
  - D3DDDI_CREATEDEVICEFLAGS
 ---
 
@@ -81,3 +81,4 @@ A member in the union that is contained in D3DDDI_CREATEDEVICEFLAGS that can hol
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_createdevice">D3DDDIARG_CREATEDEVICE</a>
+

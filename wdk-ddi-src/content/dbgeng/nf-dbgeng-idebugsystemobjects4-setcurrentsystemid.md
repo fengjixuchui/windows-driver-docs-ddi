@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSystemObjects4.SetCurrentSystemId
 title: IDebugSystemObjects4::SetCurrentSystemId (dbgeng.h)
-description: The SetCurrentSystemId method makes the specified target the current target.
+description: The SetCurrentSystemId method makes the specified target the current target. This method belongs to the IDebugSystemObjects4 interface.
 old-location: debugger\setcurrentsystemid.htm
 tech.root: debugger
-ms.assetid: 95b761ff-ca78-4793-b5eb-a9ff35a963d3
 ms.date: 05/03/2018
 keywords: ["IDebugSystemObjects4::SetCurrentSystemId"]
 ms.keywords: IDebugSystemObjects3 interface [Windows Debugging],SetCurrentSystemId method, IDebugSystemObjects3::SetCurrentSystemId, IDebugSystemObjects4 interface [Windows Debugging],SetCurrentSystemId method, IDebugSystemObjects4.SetCurrentSystemId, IDebugSystemObjects4::SetCurrentSystemId, IDebugSystemObjects_70a23767-a18b-4920-828a-34fe863fec4a.xml, SetCurrentSystemId, SetCurrentSystemId method [Windows Debugging], SetCurrentSystemId method [Windows Debugging],IDebugSystemObjects3 interface, SetCurrentSystemId method [Windows Debugging],IDebugSystemObjects4 interface, dbgeng/IDebugSystemObjects3::SetCurrentSystemId, dbgeng/IDebugSystemObjects4::SetCurrentSystemId, debugger.setcurrentsystemid
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSystemObjects3.SetCurrentSystemId
- - IDebugSystemObjects4.SetCurrentSystemId
+ - IDebugSystemObjects4::SetCurrentSystemId
 ---
 
 # IDebugSystemObjects4::SetCurrentSystemId
@@ -51,9 +49,9 @@ The <b>SetCurrentSystemId</b> method makes the specified target the current targ
 
 ## -parameters
 
-### -param Id 
+### -param Id [in]
 
-[in]
+
 Specifies the engine target ID for the target that is to become the current target.
 
 ## -returns
@@ -110,3 +108,4 @@ If the current target is changed, the callback <a href="/windows-hardware/driver
 
 
 <a href="/windows-hardware/drivers/debugger/monitoring-events">Monitoring Events</a>
+

@@ -4,7 +4,6 @@ title: NdisRawWritePortBufferUshort macro (ndis.h)
 description: NdisRawWritePortBufferUshort writes a specified number of USHORT values from a caller-supplied buffer to a given I/O port.
 old-location: netvista\ndisrawwriteportbufferushort.htm
 tech.root: netvista
-ms.assetid: 457b13e5-5917-4aa2-b471-bc9fde14f950
 ms.date: 05/02/2018
 keywords: ["NdisRawWritePortBufferUshort macro"]
 ms.keywords: NdisRawWritePortBufferUshort, NdisRawWritePortBufferUshort macro [Network Drivers Starting with Windows Vista], miniport_port_raw_ref_43adee77-b540-4147-92a3-0035618064de.xml, ndis/NdisRawWritePortBufferUshort, netvista.ndisrawwriteportbufferushort
@@ -51,21 +50,21 @@ api_name:
 
 ## -parameters
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Specifies the I/O port. This address falls in a range that was mapped during initialization with 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterioportrange">
      NdisMRegisterIoPortRange</a>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to a caller-allocated resident buffer containing the USHORTs to be written.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Specifies the number of USHORTs to write to the I/O port.
 
 ## -remarks

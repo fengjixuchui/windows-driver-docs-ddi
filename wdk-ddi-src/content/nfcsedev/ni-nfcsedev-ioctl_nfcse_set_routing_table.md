@@ -4,7 +4,6 @@ title: IOCTL_NFCSE_SET_ROUTING_TABLE (nfcsedev.h)
 description: Configures NFC controller listen mode routing table.
 old-location: nfpdrivers\ioctl_nfcse_set_routing_table.htm
 tech.root: nfpdrivers
-ms.assetid: 54B37EC0-C38A-479C-A45F-424963C4D89A
 ms.date: 02/15/2018
 keywords: ["IOCTL_NFCSE_SET_ROUTING_TABLE IOCTL"]
 ms.keywords: IOCTL_NFCSE_SET_ROUTING_TABLE, IOCTL_NFCSE_SET_ROUTING_TABLE control, IOCTL_NFCSE_SET_ROUTING_TABLE control code [Near-Field Proximity Drivers], nfcsedev/IOCTL_NFCSE_SET_ROUTING_TABLE, nfpdrivers.ioctl_nfcse_set_routing_table
@@ -49,6 +48,8 @@ api_name:
 Configures NFC controller listen mode routing table. Note that caller has to send complete listen mode routing information in a single call. The caller shall ensure that routing table is less than the cbMaxRoutingTableSize value defined in 4.2.5.1. The total size is computed as per NFC NCI standard sec 6.3.2 and is equal to Number of AID based routes x 4 + sum of cbAid + Number of technology based routes x 5 + Number of protocol based routes x 5. The caller shall ensure that values for technology- and protocol-based routes are conformant to NCI NFC spec sec 6.3.2.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

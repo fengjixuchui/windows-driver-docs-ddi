@@ -4,7 +4,6 @@ title: KsFreeObjectCreateItemsByContext function (ks.h)
 description: Frees all create items with a specific context.
 old-location: stream\ksfreeobjectcreateitemsbycontext.htm
 tech.root: stream
-ms.assetid: 70c2942d-1225-4a50-b734-27995b4481d1
 ms.date: 04/23/2018
 keywords: ["KsFreeObjectCreateItemsByContext function"]
 ms.keywords: KsFreeObjectCreateItemsByContext, KsFreeObjectCreateItemsByContext function [Streaming Media Devices], ks/KsFreeObjectCreateItemsByContext, ksfunc_0ad51072-eff4-4be3-95f4-b54c9267a4a9.xml, stream.ksfreeobjectcreateitemsbycontext
@@ -51,14 +50,14 @@ Frees all create items with a specific context.
 
 ## -parameters
 
-### -param Header 
+### -param Header [in]
 
-[in]
+
 Points to the device header on which the create items are attached.
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Contains the context of the create items to free. All create items with this context value will be freed.
 
 ## -returns

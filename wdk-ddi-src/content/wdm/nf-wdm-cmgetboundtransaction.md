@@ -4,7 +4,6 @@ title: CmGetBoundTransaction function (wdm.h)
 description: The CmGetBoundTransaction routine returns a pointer to the transaction object that represents the transaction, if any, that is associated with a specified registry key object.
 old-location: kernel\cmgetboundtransaction.htm
 tech.root: kernel
-ms.assetid: f38a5ad6-6816-4b27-98ea-51ac1453d90f
 ms.date: 04/30/2018
 keywords: ["CmGetBoundTransaction function"]
 ms.keywords: CmGetBoundTransaction, CmGetBoundTransaction routine [Kernel-Mode Driver Architecture], ConfigMgrRef_bf8b79d4-04cf-4cd2-b25c-4e59c63f0b86.xml, kernel.cmgetboundtransaction, wdm/CmGetBoundTransaction
@@ -50,14 +49,14 @@ The <b>CmGetBoundTransaction</b> routine returns a pointer to the transaction ob
 
 ## -parameters
 
-### -param Cookie 
+### -param Cookie [in]
 
-[in]
+
 The cookie value that the driver previously obtain by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-cmregistercallback">CmRegisterCallback</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-cmregistercallbackex">CmRegisterCallbackEx</a>.
 
-### -param Object 
+### -param Object [in]
 
-[in]
+
 The pointer value that the driver's <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-ex_callback_function">RegistryCallback</a> callback routine received in one of the <b>REG_<i>XXX</i>_KEY_INFORMATION</b> structures.
 
 ## -returns

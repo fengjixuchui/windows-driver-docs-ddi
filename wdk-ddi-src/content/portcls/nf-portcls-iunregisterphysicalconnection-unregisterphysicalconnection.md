@@ -4,7 +4,6 @@ title: IUnregisterPhysicalConnection::UnregisterPhysicalConnection (portcls.h)
 description: The UnregisterPhysicalConnection method deletes the registration of a physical connection that was registered by a previous call to PcRegisterPhysicalConnection.
 old-location: audio\iunregisterphysicalconnection_unregisterphysicalconnection.htm
 tech.root: audio
-ms.assetid: e8b99549-0fe2-4c8a-ad93-6689ebddee40
 ms.date: 05/08/2018
 keywords: ["IUnregisterPhysicalConnection::UnregisterPhysicalConnection"]
 ms.keywords: IUnregisterPhysicalConnection interface [Audio Devices],UnregisterPhysicalConnection method, IUnregisterPhysicalConnection.UnregisterPhysicalConnection, IUnregisterPhysicalConnection::UnregisterPhysicalConnection, UnregisterPhysicalConnection, UnregisterPhysicalConnection method [Audio Devices], UnregisterPhysicalConnection method [Audio Devices],IUnregisterPhysicalConnection interface, audio.iunregisterphysicalconnection_unregisterphysicalconnection, audmp-routines_5ecc7a84-6d2c-4514-9de8-cb1e4c60a61c.xml, portcls/IUnregisterPhysicalConnection::UnregisterPhysicalConnection
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IUnregisterPhysicalConnection.UnregisterPhysicalConnection
+ - IUnregisterPhysicalConnection::UnregisterPhysicalConnection
 ---
 
 # IUnregisterPhysicalConnection::UnregisterPhysicalConnection
@@ -50,29 +49,29 @@ The <code>UnregisterPhysicalConnection</code> method deletes the registration of
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the device object for the adapter device. This parameter must point to a system structure of type <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a>.
 
-### -param FromUnknown 
+### -param FromUnknown [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iport">IPort</a> interface of a port driver object. The port driver object that is associated with <i>FromUnknown</i> is bound to the subdevice that supplies the connection's data source pin.
 
-### -param FromPin 
+### -param FromPin [in]
 
-[in]
+
 Specifies a pin ID. This parameter identifies the data source (output) pin on the filter that is associated with the <i>FromUnknown</i> interface.
 
-### -param ToUnknown 
+### -param ToUnknown [in]
 
-[in]
+
 Pointer to the <b>IPort</b> interface of a port driver object. The port driver object that is associated with <i>ToUnknown</i> is bound to the subdevice that supplies the connection's data sink pin.
 
-### -param ToPin 
+### -param ToPin [in]
 
-[in]
+
 Specifies a pin ID. This parameter identifies the data sink (input) pin on the filter that is associated with the <i>ToUnknown</i> interface.
 
 ## -returns
@@ -98,3 +97,4 @@ For more information, see <a href="/windows-hardware/drivers/audio/dynamic-audio
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisterphysicalconnection">PcRegisterPhysicalConnection</a>
+

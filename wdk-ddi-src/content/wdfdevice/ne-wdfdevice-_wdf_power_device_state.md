@@ -4,7 +4,6 @@ title: _WDF_POWER_DEVICE_STATE (wdfdevice.h)
 description: The WDF_POWER_DEVICE_STATE enumeration identifies the device power states that a device might support.
 old-location: wdf\wdf_power_device_state.htm
 tech.root: wdf
-ms.assetid: 66ff00fd-43b0-4fe1-a010-4b5ef65fa811
 ms.date: 02/26/2018
 keywords: ["WDF_POWER_DEVICE_STATE enumeration"]
 ms.keywords: "*PWDF_POWER_DEVICE_STATE, DFDeviceObjectGeneralRef_5a921767-81e1-4a80-b775-8f91819c6ea5.xml, PWDF_POWER_DEVICE_STATE, PWDF_POWER_DEVICE_STATE enumeration pointer, WDF_POWER_DEVICE_STATE, WDF_POWER_DEVICE_STATE enumeration, WdfPowerDeviceD0, WdfPowerDeviceD1, WdfPowerDeviceD2, WdfPowerDeviceD3, WdfPowerDeviceD3Final, WdfPowerDeviceInvalid, WdfPowerDeviceMaximum, WdfPowerDevicePrepareForHibernation, _WDF_POWER_DEVICE_STATE, kmdf.wdf_power_device_state, wdf.wdf_power_device_state, wdfdevice/PWDF_POWER_DEVICE_STATE, wdfdevice/WDF_POWER_DEVICE_STATE, wdfdevice/WdfPowerDeviceD0, wdfdevice/WdfPowerDeviceD1, wdfdevice/WdfPowerDeviceD2, wdfdevice/WdfPowerDeviceD3, wdfdevice/WdfPowerDeviceD3Final, wdfdevice/WdfPowerDeviceInvalid, wdfdevice/WdfPowerDeviceMaximum, wdfdevice/WdfPowerDevicePrepareForHibernation"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdfdevice.h
 api_name:
+ - _WDF_POWER_DEVICE_STATE
+ - PWDF_POWER_DEVICE_STATE
  - WDF_POWER_DEVICE_STATE
 ---
 
@@ -56,7 +57,7 @@ The <b>WDF_POWER_DEVICE_STATE</b> enumeration identifies the <a href="/windows-h
 
 ## -enum-fields
 
-### -field WdfPowerDeviceInvalid
+### -field WdfPowerDeviceInvalid:0
 
 The device power state is invalid or unknown.
 
@@ -95,3 +96,4 @@ The maximum enumerator value for this enumeration.
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit">EvtDeviceD0Exit</a>
+

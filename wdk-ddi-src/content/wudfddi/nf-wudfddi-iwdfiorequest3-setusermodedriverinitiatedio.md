@@ -4,7 +4,6 @@ title: IWDFIoRequest3::SetUserModeDriverInitiatedIo (wudfddi.h)
 description: The SetUserModeDriverInitiatedIo method indicates to kernel-mode drivers that sit below the UMDF driver in the same device stack that a particular request should be treated as though it came from a UMDF driver.
 old-location: wdf\iwdfiorequest3_setusermodedriverinitiatedio.htm
 tech.root: wdf
-ms.assetid: F494ED4C-DA2F-4630-B0CA-8B3BE7D26A80
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequest3::SetUserModeDriverInitiatedIo"]
 ms.keywords: IWDFIoRequest3 interface,SetUserModeDriverInitiatedIo method, IWDFIoRequest3.SetUserModeDriverInitiatedIo, IWDFIoRequest3::SetUserModeDriverInitiatedIo, SetUserModeDriverInitiatedIo, SetUserModeDriverInitiatedIo method, SetUserModeDriverInitiatedIo method,IWDFIoRequest3 interface, umdf.iwdfiorequest3_setusermodedriverinitiatedio, wdf.iwdfiorequest3_setusermodedriverinitiatedio, wudfddi/IWDFIoRequest3::SetUserModeDriverInitiatedIo
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequest3.SetUserModeDriverInitiatedIo
+ - IWDFIoRequest3::SetUserModeDriverInitiatedIo
 ---
 
 # IWDFIoRequest3::SetUserModeDriverInitiatedIo
@@ -54,9 +53,9 @@ The <b>SetUserModeDriverInitiatedIo</b> method
 
 ## -parameters
 
-### -param IsUserModeDriverInitiated 
+### -param IsUserModeDriverInitiated [in]
 
-[in]
+
 A Boolean value that, if <b>TRUE</b>, indicates that the request should be treated as though it was initiated by a UMDF driver. If <b>FALSE</b>, this parameter indicates that the request should be treated as though it came from an application.
 
 ## -remarks
@@ -84,3 +83,4 @@ The UMDF 2 equivalent of this method is <a href="/windows-hardware/drivers/ddi/w
 
 
 <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsetusermodedriverinitiatedio">WdfRequestSetUserModeDriverInitiatedIo</a>
+

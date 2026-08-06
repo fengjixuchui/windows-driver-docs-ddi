@@ -3,11 +3,8 @@ UID: NS:dispmprt._DXGKARG_QUERYMITIGATEDRANGECOUNT
 title: _DXGKARG_QUERYMITIGATEDRANGECOUNT
 description: Arguments used to query mitigated range count.
 tech.root: display
-ms.assetid: f9cf3b82-a035-4089-9737-eeb1075a1ff7
 ms.date: 04/04/2019
 keywords: ["DXGKARG_QUERYMITIGATEDRANGECOUNT structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _DXGKARG_QUERYMITIGATEDRANGECOUNT, DXGKARG_QUERYMITIGATEDRANGECOUNT, *PDXGKARG_QUERYMITIGATEDRANGECOUNT,
 req.header: dispmprt.h
 req.include-header: 
@@ -39,8 +36,8 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGKARG_QUERYMITIGATEDRANGECOUNT
-product:
- - Windows
+ - PDXGKARG_QUERYMITIGATEDRANGECOUNT
+ - DXGKARG_QUERYMITIGATEDRANGECOUNT
 dev_langs:
  - c++
 ---

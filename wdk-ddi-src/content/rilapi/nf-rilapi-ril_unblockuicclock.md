@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_UnblockUiccLock
 title: RIL_UnblockUiccLock function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_UnblockUiccLock function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_unblockuicclock.htm
 tech.root: netvista
-ms.assetid: a8cddfa1-b15e-4832-8c9c-12d378bc682d
 ms.date: 05/02/2018
 keywords: ["RIL_UnblockUiccLock function"]
 ms.keywords: RIL_UnblockUiccLock, RIL_UnblockUiccLock method [Network Drivers Starting with Windows Vista], netvista.ril_unblockuicclock, rilapi/RIL_UnblockUiccLock

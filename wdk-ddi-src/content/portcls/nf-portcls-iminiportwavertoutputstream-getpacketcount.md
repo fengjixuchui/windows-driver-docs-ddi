@@ -4,7 +4,6 @@ title: IMiniportWaveRTOutputStream::GetPacketCount (portcls.h)
 description: GetPacketCount returns the (1-based) count of packets completely transferred from the WaveRT buffer into hardware.
 old-location: audio\iminiportwavertoutputstream_getpacketcount.htm
 tech.root: audio
-ms.assetid: F2870421-2A6F-4E63-AC91-E251E0B67C06
 ms.date: 05/08/2018
 keywords: ["IMiniportWaveRTOutputStream::GetPacketCount"]
 ms.keywords: GetPacketCount, GetPacketCount method [Audio Devices], GetPacketCount method [Audio Devices],IMiniportWaveRTOutputStream interface, IMiniportWaveRTOutputStream interface [Audio Devices],GetPacketCount method, IMiniportWaveRTOutputStream.GetPacketCount, IMiniportWaveRTOutputStream::GetPacketCount, audio.iminiportwavertoutputstream_getpacketcount, portcls/IMiniportWaveRTOutputStream::GetPacketCount
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Passive level
+req.irql: PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWaveRTOutputStream.GetPacketCount
+ - IMiniportWaveRTOutputStream::GetPacketCount
 ---
 
 # IMiniportWaveRTOutputStream::GetPacketCount
@@ -50,9 +49,9 @@ GetPacketCount returns the (1-based) count of packets completely transferred fro
 
 ## -parameters
 
-### -param pPacketCount 
+### -param pPacketCount [out]
 
-[out]
+
 pPacketCount returns the number of packets completely transferred from the WaveRT buffer into hardware.
 
 ## -returns
@@ -74,3 +73,4 @@ The driver should reset the packet count to 0 when the stream is in KSSTATE_STOP
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertoutputstream">IMiniportWaveRTOutputStream</a>
+

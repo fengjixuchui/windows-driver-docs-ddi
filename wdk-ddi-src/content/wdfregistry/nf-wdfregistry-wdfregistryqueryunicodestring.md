@@ -4,7 +4,6 @@ title: WdfRegistryQueryUnicodeString function (wdfregistry.h)
 description: The WdfRegistryQueryUnicodeString method retrieves the string data that is currently assigned to a specified registry string value and copies the string to a specified UNICODE_STRING structure.
 old-location: wdf\wdfregistryqueryunicodestring.htm
 tech.root: wdf
-ms.assetid: efbe5526-274b-416b-8e5c-8b18fe754b43
 ms.date: 02/26/2018
 keywords: ["WdfRegistryQueryUnicodeString function"]
 ms.keywords: DFRegKeyObjectRef_3301cdb3-8fe5-4094-8fc2-717467802680.xml, WdfRegistryQueryUnicodeString, WdfRegistryQueryUnicodeString method, kmdf.wdfregistryqueryunicodestring, wdf.wdfregistryqueryunicodestring, wdfregistry/WdfRegistryQueryUnicodeString
@@ -55,24 +54,24 @@ The <b>WdfRegistryQueryUnicodeString</b> method retrieves the string data that i
 
 ## -parameters
 
-### -param Key 
+### -param Key [in]
 
-[in]
+
 A handle to a registry-key object that represents an opened registry key.
 
-### -param ValueName 
+### -param ValueName [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a name for the registry value.
 
-### -param ValueByteLength 
+### -param ValueByteLength [out, optional]
 
-[out, optional]
+
 A pointer to a location that receives the number of bytes that are contained in the Unicode string that <i>Value</i> points to, including the terminating <b>NULL</b> byte. This pointer is optional and can be <b>NULL</b>
 
-### -param Value 
+### -param Value [in, out]
 
-[in, out]
+
 A pointer to a UNICODE_STRING structure that receives the data string for the key that <i>Key</i> specifies. If this parameter is <b>NULL</b> and <i>ValueByteLength</i> is non-<b>NULL</b>, <b>WdfRegistryQueryUnicodeString</b> returns only the size of the string.
 
 ## -returns

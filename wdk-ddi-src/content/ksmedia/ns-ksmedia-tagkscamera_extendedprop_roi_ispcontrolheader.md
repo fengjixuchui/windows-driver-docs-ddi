@@ -4,7 +4,6 @@ title: tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER (ksmedia.h)
 description: This structure contains the header information for ROI ISP controls.
 old-location: stream\kscamera_extendedprop_roi_ispcontrolheader.htm
 tech.root: stream
-ms.assetid: F57B0E44-A6A1-4C43-83EE-8DF4A605C0D0
 ms.date: 04/23/2018
 keywords: ["tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER structure"]
 ms.keywords: "*PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER structure [Streaming Media Devices], PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER structure pointer [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, ksmedia/PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, stream.kscamera_extendedprop_roi_ispcontrolheader, tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ksmedia.h
 api_name:
+ - tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER
+ - PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER
  - KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER
 ---
 
@@ -65,3 +66,4 @@ The number of ISP controls. If this value is 0, the ROI control will remove all 
 ### -field Reserved
 
 Reserved for future use.
+

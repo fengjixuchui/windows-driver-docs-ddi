@@ -4,7 +4,6 @@ title: StorPortPoFxSetComponentLatency function (storport.h)
 description: The StorPortPoFxSetComponentLatency routine specifies the maximum latency that can be tolerated in the transition from the idle condition to the active condition in the specified storage device component.
 old-location: storage\storportpofxsetcomponentlatency.htm
 tech.root: storage
-ms.assetid: F175ED42-3DB6-4568-96CA-EFC283B14887
 ms.date: 03/29/2018
 keywords: ["StorPortPoFxSetComponentLatency function"]
 ms.keywords: StorPortPoFxSetComponentLatency, StorPortPoFxSetComponentLatency routine [Storage Devices], storage.storportpofxsetcomponentlatency, storport/StorPortPoFxSetComponentLatency
@@ -50,24 +49,24 @@ The <b>StorPortPoFxSetComponentLatency</b> routine specifies the maximum latency
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA). This is the device extension used to register the device in a prior call to <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitializepofxpower">StorPortInitializePoFxPower</a>.
 
-### -param Address 
+### -param Address [in, optional]
 
-[in, optional]
+
 The address of a storage device unit. This parameter is <b>NULL</b> when setting the latency of a storage adapter component.
 
-### -param Component 
+### -param Component [in]
 
-[in]
+
 The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="/windows-hardware/drivers/ddi/storport/ns-storport-_stor_pofx_device">STOR_POFX_DEVICE</a> structure that the miniport driver registered for the device with a call to <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitializepofxpower">StorPortInitializePoFxPower</a>. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
 
-### -param Latency 
+### -param Latency [in]
 
-[in]
+
 The time, in units of 100 nanoseconds, that the storage device component can tolerate  for a transition from an  idle state the active state.
 
 ## -returns

@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_CREATEBLENDSTATE
 title: PFND3D10DDI_CREATEBLENDSTATE (d3d10umddi.h)
 description: The CreateBlendState function creates a blend state.
 old-location: display\createblendstate.htm
-ms.assetid: f203a83c-0108-4e20-9972-06857099378c
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_CREATEBLENDSTATE callback function"]
 ms.keywords: CreateBlendState, CreateBlendState callback function [Display Devices], PFND3D10DDI_CREATEBLENDSTATE, PFND3D10DDI_CREATEBLENDSTATE callback, UserModeDisplayDriverDx10_Functions_5c67ddaf-f8a2-4529-8684-1f0298221a8d.xml, d3d10umddi/CreateBlendState, display.createblendstate
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CreateBlendState
-product:
- - Windows
+ - PFND3D10DDI_CREATEBLENDSTATE
 ---
 
 # PFND3D10DDI_CREATEBLENDSTATE callback function
@@ -52,25 +49,25 @@ The <b>CreateBlendState</b> function creates a blend state.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pBlendDesc* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10_ddi_blend_desc">D3D10_DDI_BLEND_DESC</a> structure that describes the parameters that the user-mode display driver uses to create a blend state.
 
-### -param Arg3
+### -param unnamedParam3
 
 *hBlendState* [in]
 
 A handle to the driver's private data for the blend state.
 
-### -param Arg4
+### -param unnamedParam4
 
 *hRTBlendState* [in]
 
@@ -103,3 +100,4 @@ The user-mode display driver is not required to create more than 4,096 unique in
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

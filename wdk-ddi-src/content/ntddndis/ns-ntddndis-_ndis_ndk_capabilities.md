@@ -4,7 +4,6 @@ title: _NDIS_NDK_CAPABILITIES (ntddndis.h)
 description: The NDIS_NDK_CAPABILITIES structure specifies the capabilities of an NDK adapter.
 old-location: netvista\ndis_ndk_capabilities.htm
 tech.root: netvista
-ms.assetid: 4E8AD6FA-BB89-4CB0-A06E-7B4917390311
 ms.date: 05/02/2018
 keywords: ["NDIS_NDK_CAPABILITIES structure"]
 ms.keywords: "*PNDIS_NDK_CAPABILITIES, NDIS_NDK_CAPABILITIES, NDIS_NDK_CAPABILITIES structure [Network Drivers Starting with Windows Vista], PNDIS_NDK_CAPABILITIES, PNDIS_NDK_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], _NDIS_NDK_CAPABILITIES, netvista.ndis_ndk_capabilities, ntddndis/NDIS_NDK_CAPABILITIES, ntddndis/PNDIS_NDK_CAPABILITIES"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_NDK_CAPABILITIES
+ - PNDIS_NDK_CAPABILITIES
  - NDIS_NDK_CAPABILITIES
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_NDK_CAPABILITIES</b> structure specifies the capabilities of an NDK 
 
 ### -field Header
 
-The <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure that describes this <b>NDIS_NDK_CAPABILITIES</b> structure. Set the members of the <b>NDIS_OBJECT_HEADER</b> structure as follows:
+The <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure that describes this <b>NDIS_NDK_CAPABILITIES</b> structure. Set the members of the <b>NDIS_OBJECT_HEADER</b> structure as follows:
 
 <ul>
 <li>Set the <b>Type</b> member to <b>NDIS_OBJECT_TYPE_DEFAULT</b>.</li>
@@ -110,7 +111,7 @@ A bitmask that identifies counters that an NDK provider does not support. NDK pr
 
 ### -field NdkInfo
 
-A pointer to an <a href="/windows/win32/api/ndkinfo/ns-ndkinfo-ndk_adapter_info">NDK_ADAPTER_INFO</a> structure that specifies NDK adapter capabilities and limits that are relevant for an specific NDK consumer. These capabilities can be different from system-wide limits.
+A pointer to an <a href="/windows/win32/api/ndkinfo/ns-ndkinfo-ndk_adapter_info">NDK_ADAPTER_INFO</a> structure that specifies NDK adapter capabilities and limits that are relevant for a specific NDK consumer. These capabilities can be different from system-wide limits.
 
 ## -remarks
 
@@ -133,8 +134,9 @@ The <b>NDIS_NDK_CAPABILITIES</b> structure is used in the <a href="/windows-hard
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows/win32/api/ndkinfo/ns-ndkinfo-ndk_adapter_info">NDK_ADAPTER_INFO</a>
+

@@ -4,7 +4,6 @@ title: WDF_USB_CONTINUOUS_READER_CONFIG_INIT function (wdfusb.h)
 description: The WDF_USB_CONTINUOUS_READER_CONFIG_INIT function initializes a WDF_USB_CONTINUOUS_READER_CONFIG structure.
 old-location: wdf\wdf_usb_continuous_reader_config_init.htm
 tech.root: wdf
-ms.assetid: d9bf6c47-b7ce-413d-8871-4d9d68e27715
 ms.date: 02/26/2018
 keywords: ["WDF_USB_CONTINUOUS_READER_CONFIG_INIT function"]
 ms.keywords: DFUsbRef_a179cacd-e450-4a53-93e7-4eb3a59fc605.xml, WDF_USB_CONTINUOUS_READER_CONFIG_INIT, WDF_USB_CONTINUOUS_READER_CONFIG_INIT function, kmdf.wdf_usb_continuous_reader_config_init, wdf.wdf_usb_continuous_reader_config_init, wdfusb/WDF_USB_CONTINUOUS_READER_CONFIG_INIT
@@ -52,24 +51,24 @@ The <b>WDF_USB_CONTINUOUS_READER_CONFIG_INIT</b> function initializes a <a href=
 
 ## -parameters
 
-### -param Config 
+### -param Config [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_continuous_reader_config">WDF_USB_CONTINUOUS_READER_CONFIG</a> structure.
 
-### -param EvtUsbTargetPipeReadComplete 
+### -param EvtUsbTargetPipeReadComplete [in]
 
-[in]
+
 A pointer to the driver's <a href="/windows-hardware/drivers/ddi/wdfusb/nc-wdfusb-evt_wdf_usb_reader_completion_routine">EvtUsbTargetPipeReadComplete</a> callback function.
 
-### -param EvtUsbTargetPipeReadCompleteContext 
+### -param EvtUsbTargetPipeReadCompleteContext [in]
 
-[in]
+
 An untyped pointer to driver-defined context information that the framework passes to the driver's <a href="/windows-hardware/drivers/ddi/wdfusb/nc-wdfusb-evt_wdf_usb_reader_completion_routine">EvtUsbTargetPipeReadComplete</a> callback function.
 
-### -param TransferLength 
+### -param TransferLength [in]
 
-[in]
+
 The maximum length, in bytes, of data that can be received from the device.
 
 ## -remarks

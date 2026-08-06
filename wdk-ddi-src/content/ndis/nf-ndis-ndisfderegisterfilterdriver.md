@@ -4,7 +4,6 @@ title: NdisFDeregisterFilterDriver function (ndis.h)
 description: A filter drivers calls the NdisFDeregisterFilterDriver function to release resources that it previously allocated with the NdisFRegisterFilterDriver function.
 old-location: netvista\ndisfderegisterfilterdriver.htm
 tech.root: netvista
-ms.assetid: f97ecce3-73b9-4c51-b4a4-e114420af2c9
 ms.date: 05/02/2018
 keywords: ["NdisFDeregisterFilterDriver function"]
 ms.keywords: NdisFDeregisterFilterDriver, NdisFDeregisterFilterDriver function [Network Drivers Starting with Windows Vista], filter_ndis_functions_ref_d158c9c1-1e83-464f-b00a-421b658c8c32.xml, ndis/NdisFDeregisterFilterDriver, netvista.ndisfderegisterfilterdriver
@@ -54,9 +53,9 @@ A filter drivers calls the
 
 ## -parameters
 
-### -param NdisFilterDriverHandle 
+### -param NdisFilterDriverHandle [in]
 
-[in]
+
 The filter driver handle that identifies this filter driver. NDIS returned the handle to the
      filter driver in a call to 
      <b>NdisFRegisterFilterDriver</b>.

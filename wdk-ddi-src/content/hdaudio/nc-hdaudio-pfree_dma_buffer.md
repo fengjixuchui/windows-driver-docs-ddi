@@ -4,7 +4,6 @@ title: PFREE_DMA_BUFFER (hdaudio.h)
 description: The FreeDmaBuffer routine frees a DMA buffer that was previously allocated by a call to AllocateDmaBuffer.The function pointer type for a FreeDmaBuffer routine is defined as follows.
 old-location: audio\freedmabuffer.htm
 tech.root: audio
-ms.assetid: 658e32d2-40e2-4479-8212-df7140fe6b74
 ms.date: 05/08/2018
 keywords: ["PFREE_DMA_BUFFER callback function"]
 ms.keywords: FreeDmaBuffer, FreeDmaBuffer callback function [Audio Devices], PFREE_DMA_BUFFER, PFREE_DMA_BUFFER callback, aud-prop2_22e95124-bf77-40d9-9ad7-4edc394818df.xml, audio.freedmabuffer, hdaudio/FreeDmaBuffer
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - hdaudio.h
 api_name:
- - FreeDmaBuffer
+ - PFREE_DMA_BUFFER
 ---
 
 # PFREE_DMA_BUFFER callback function
@@ -52,14 +51,14 @@ The function pointer type for a <code>FreeDmaBuffer</code> routine is defined as
 
 ## -parameters
 
-### -param _context 
+### -param _context [in]
 
-[in]
+
 Specifies the context value from the <b>Context</b> member of the <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface">HDAUDIO_BUS_INTERFACE</a> or the <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a> structure.
 
-### -param Handle 
+### -param Handle [in]
 
-[in]
+
 Handle identifying the DMA engine. This handle value was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_capture_dma_engine">AllocateCaptureDmaEngine</a> or <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_render_dma_engine">AllocateRenderDmaEngine</a>.
 
 ## -returns
@@ -138,3 +137,4 @@ The stream is in a state other than reset.
 
 
 <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-psetup_dma_engine_with_bdl">SetupDmaEngineWithBdl</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:ks.KsFilterRegisterAggregatedClientUnknown
 title: KsFilterRegisterAggregatedClientUnknown function (ks.h)
-description: This inline function is a wrapper for KsRegisterAggregatedClientUnknown.
+description: The KsFilterRegisterAggregatedClientUnknown function is an inline function that is a wrapper for KsRegisterAggregatedClientUnknown.
 old-location: stream\ksfilterregisteraggregatedclientunknown.htm
 tech.root: stream
-ms.assetid: aac70408-83b8-4bfd-8ce9-9b74483f6282
 ms.date: 04/23/2018
 keywords: ["KsFilterRegisterAggregatedClientUnknown function"]
 ms.keywords: KsFilterRegisterAggregatedClientUnknown, KsFilterRegisterAggregatedClientUnknown function [Streaming Media Devices], avfunc_c485334a-83bd-474e-abfc-ced331ca55db.xml, ks/KsFilterRegisterAggregatedClientUnknown, stream.ksfilterregisteraggregatedclientunknown
@@ -50,14 +49,14 @@ This inline function is a wrapper for <a href="/windows-hardware/drivers/ddi/ks/
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in]
 
-[in]
+
 A pointer to the specified AVStream <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter">KSFILTER</a> structure.
 
-### -param ClientUnknown 
+### -param ClientUnknown [in]
 
-[in]
+
 The client <b>IUnknown</b> interface object.
 
 ## -returns

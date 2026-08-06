@@ -4,7 +4,6 @@ title: StorPortGetPhysicalAddress function (storport.h)
 description: The StorPortGetPhysicalAddress routine converts a given virtual address range to a physical address range for a DMA operation.
 old-location: storage\storportgetphysicaladdress.htm
 tech.root: storage
-ms.assetid: 2b39a6e4-2e11-4b4e-9218-92336629ae80
 ms.date: 03/29/2018
 keywords: ["StorPortGetPhysicalAddress function"]
 ms.keywords: StorPortGetPhysicalAddress, StorPortGetPhysicalAddress routine [Storage Devices], storage.storportgetphysicaladdress, storport/StorPortGetPhysicalAddress, storprt_fea6d754-844c-4ee9-8153-97f2f0e9ee80.xml
@@ -51,24 +50,24 @@ The <b>StorPortGetPhysicalAddress</b> routine converts a given virtual address r
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver in the <b>DeviceExtension->HwDeviceExtension</b> member of the device object for the HBA immediately after the miniport driver calls <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
 
-### -param Srb 
+### -param Srb [in, optional]
 
-[in, optional]
-Pointer to the SCSI request block if the virtual address to be converted comes from that SRB's <b>DataBuffer</b> member or <b>SenseInfoBuffer</b> member. Otherwise, this parameter must be <b>NULL</b>.
 
-### -param VirtualAddress 
+Pointer to the SCSI request block if the virtual address to be converted comes from that SRB's <b>DataBuffer</b>, <b>SenseInfoBuffer</b>, or <b>SrbExtension</b> member. Otherwise, this parameter must be <b>NULL</b>.
 
-[in]
+### -param VirtualAddress [in]
+
+
 Pointer to the base virtual address to be converted. If this virtual address falls within the range for an SRB-supplied <b>DataBuffer</b>, the caller also must provide the <i>Srb</i> pointer.
 
-### -param Length 
+### -param Length [out]
 
-[out]
+
 Pointer to a value indicating the number of bytes mapped, starting at the returned physical address.
 
 ## -returns
@@ -102,3 +101,4 @@ The <b>STOR_PHYSICAL_ADDRESS</b> type is an operating system-independent data ty
 
 
 <a href="/windows-hardware/drivers/ddi/srb/nf-srb-scsiportgetphysicaladdress">ScsiPortGetPhysicalAddress</a>
+

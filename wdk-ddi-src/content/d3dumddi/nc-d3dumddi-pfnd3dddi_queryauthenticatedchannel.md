@@ -4,7 +4,6 @@ title: PFND3DDDI_QUERYAUTHENTICATEDCHANNEL (d3dumddi.h)
 description: The QueryAuthenticatedChannel function queries an authenticated channel for capability and state information.
 old-location: display\queryauthenticatedchannel.htm
 tech.root: display
-ms.assetid: 13b65b5a-9512-4d67-b629-479bdd74674e
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_QUERYAUTHENTICATEDCHANNEL callback function"]
 ms.keywords: PFND3DDDI_QUERYAUTHENTICATEDCHANNEL, PFND3DDDI_QUERYAUTHENTICATEDCHANNEL callback, QueryAuthenticatedChannel, QueryAuthenticatedChannel callback function [Display Devices], UserModeDisplayDriver_Functions_4d4f5258-9b7c-42c8-b256-223b6b99d1f6.xml, d3dumddi/QueryAuthenticatedChannel, display.queryauthenticatedchannel
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - QueryAuthenticatedChannel
-product:
- - Windows
+ - PFND3DDDI_QUERYAUTHENTICATEDCHANNEL
 ---
 
 # PFND3DDDI_QUERYAUTHENTICATEDCHANNEL callback function
@@ -56,7 +53,7 @@ The <i>QueryAuthenticatedChannel</i> function queries an authenticated channel f
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -88,3 +85,4 @@ Except for those situations in which the application incorrectly specifies an ou
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_queryauthenicatedchannel">D3DDDIARG_QUERYAUTHENTICATEDCHANNEL</a>
+

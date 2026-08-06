@@ -3,8 +3,7 @@ UID: NC:netpacketqueue.EVT_PACKET_QUEUE_STOP
 title: EVT_PACKET_QUEUE_STOP (netpacketqueue.h)
 description: The EvtPacketQueueStop callback function is implemented by the client driver to stop the data path for a packet queue before it is deleted.
 tech.root: netvista
-ms.assetid: 42ae223c-fe68-48ff-b086-92d8a406d4b6
-ms.date: 07/18/2018
+ms.date: 04/01/2022
 keywords: ["EVT_PACKET_QUEUE_STOP callback function"]
 req.header: netpacketqueue.h
 req.include-header: netadaptercx.h 
@@ -12,7 +11,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.27
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -47,7 +46,7 @@ The *EvtPacketQueueStop* callback function is an optional callback that is imple
 
 ## -parameters
 
-### -param PacketQueue
+### -param PacketQueue [_In_]
 
 A handle to a packet queue.
 

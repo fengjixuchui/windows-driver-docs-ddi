@@ -4,7 +4,6 @@ title: RtlInt8ToUChar function (ntintsafe.h)
 description: Converts a value of type INT8 to a value of type UCHAR.
 old-location: kernel\rtlint8touchar.htm
 tech.root: kernel
-ms.assetid: 3E8BF45A-D968-4C9F-8C38-65B39665496B
 ms.date: 04/30/2018
 keywords: ["RtlInt8ToUChar function"]
 ms.keywords: RtlInt8ToUChar, RtlInt8ToUChar function [Kernel-Mode Driver Architecture], kernel.rtlint8touchar, ntintsafe/RtlInt8ToUChar
@@ -50,14 +49,14 @@ Converts a value of type <b>INT8</b> to a value of type <b>UCHAR</b>.
 
 ## -parameters
 
-### -param i8Operand 
+### -param i8Operand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pch 
+### -param pch [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

@@ -4,7 +4,6 @@ title: FltRemoveOpenReparseEntry function (fltkernel.h)
 description: This routine removes an OPEN_REPARSE_LIST_ENTRY structure (added by FltAddOpenReparseEntry) from a create operation.
 old-location: ifsk\fltremoveopenreparseentry.htm
 tech.root: ifsk
-ms.assetid: FD8C3A32-E578-47E9-9B2A-E1809D62F7B8
 ms.date: 04/16/2018
 keywords: ["FltRemoveOpenReparseEntry function"]
 ms.keywords: FltAddOpenReparseEntry, FltAddOpenReparseEntry routine [Installable File System Drivers], FltRemoveOpenReparseEntry, fltkernel/FltAddOpenReparseEntry, ifsk.fltremoveopenreparseentry
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: _IRQL_requires_max_(APC_LEVEL)
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - fltKernel.h
 api_name:
- - FltAddOpenReparseEntry
+ - FltRemoveOpenReparseEntry
 ---
 
 # FltRemoveOpenReparseEntry function
@@ -54,22 +53,23 @@ This routine removes an <a href="/previous-versions/mt734265(v=vs.85)">OPEN_REPA
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in]
 
-[in]
+
 The filter to dereference.
 
-### -param Data 
+### -param Data [in]
 
-[in]
+
 The create operation to remove open reparse information
                        from.
 
-### -param OpenReparseEntry 
+### -param OpenReparseEntry [in]
 
-[in]
+
 The open reparse information to remove, of type <a href="/previous-versions/mt734265(v=vs.85)">OPEN_REPARSE_LIST_ENTRY</a>.
 
 ## -returns
 
 This routine does not return a value.
+

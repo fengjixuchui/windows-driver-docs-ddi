@@ -3,7 +3,6 @@ UID: NF:mbbcx.MbbDeviceReportWakeReason
 title: MbbDeviceReportWakeReason function (mbbcx.h)
 description: The MbbDeviceReportWakeReason method reports to the framework the reason that a mobile broadband device has generated a wake-up event.
 tech.root: netvista
-ms.assetid: 57af271e-cd06-4749-abd1-89f4d3c7075c
 ms.date: 11/07/2019
 keywords: ["MbbDeviceReportWakeReason function"]
 ms.keywords: MbbDeviceReportWakeReason
@@ -37,8 +36,6 @@ api_location:
  - mbbcxstub.lib
 api_name:
  - MbbDeviceReportWakeReason
-product:
- - Windows
 ---
 
 # MbbDeviceReportWakeReason function
@@ -57,10 +54,6 @@ A handle to the WDFDEVICE object.
 ### -param Reason
 
 A [**MBB_WAKE_REASON_TYPE**](../mbbcx/ne-mbbcx-_mbb_wake_reason_type.md) value that describes the reason for the wake-up event.
-
-## -returns
-
-This method does not return a value.
 
 ## -remarks
 

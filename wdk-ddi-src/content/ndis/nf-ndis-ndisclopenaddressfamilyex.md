@@ -4,7 +4,6 @@ title: NdisClOpenAddressFamilyEx function (ndis.h)
 description: The NdisClOpenAddressFamilyEx function registers an address family (AF) that is associated with a call manager for a connection-oriented client.
 old-location: netvista\ndisclopenaddressfamilyex.htm
 tech.root: netvista
-ms.assetid: 54170917-60b4-4d8f-bf92-df7d7dc0faee
 ms.date: 05/02/2018
 keywords: ["NdisClOpenAddressFamilyEx function"]
 ms.keywords: NdisClOpenAddressFamilyEx, NdisClOpenAddressFamilyEx function [Network Drivers Starting with Windows Vista], condis_client_ref_6590ccca-3e48-4f83-a7d0-66ce9b6b1eef.xml, ndis/NdisClOpenAddressFamilyEx, netvista.ndisclopenaddressfamilyex
@@ -53,17 +52,17 @@ The
 
 ## -parameters
 
-### -param NdisBindingHandle 
+### -param NdisBindingHandle [in]
 
-[in]
+
 The handle that 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a> returns and that
      identifies the target network interface card (NIC) or the virtual adapter of the next-lower driver that
      the caller is bound to.
 
-### -param AddressFamily 
+### -param AddressFamily [in]
 
-[in]
+
 A pointer to a 
      <a href="/previous-versions/windows/hardware/network/ff545368(v=vs.85)">CO_ADDRESS_FAMILY</a> structure that describes
      the call manager and AF to be opened. 
@@ -74,17 +73,17 @@ This pointer is an input parameter to the client's
      ProtocolCoAfRegisterNotify</a> function, which calls 
      <b>NdisClOpenAddressFamilyEx</b>.
 
-### -param ClientAfContext 
+### -param ClientAfContext [in]
 
-[in]
+
 The handle to a caller-supplied resident context area in which the client maintains state for this
      AF after the AF has been opened. NDIS passes this handle back to the client in all subsequent calls
      concerning this AF if the call to 
      <b>NdisClOpenAddressFamilyEx</b> succeeds.
 
-### -param NdisAfHandle 
+### -param NdisAfHandle [out]
 
-[out]
+
 A pointer to a caller-supplied variable in which 
      <b>NdisClOpenAddressFamilyEx</b> returns a handle that represents the newly opened address family.
 

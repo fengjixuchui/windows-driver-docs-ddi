@@ -4,7 +4,6 @@ title: RtlUnicodeStringVPrintf function (ntstrsafe.h)
 description: The RtlUnicodeStringVPrintf function creates a text string, with formatting that is based on supplied formatting information, and stores the string in a UNICODE_STRING structure.
 old-location: kernel\rtlunicodestringvprintf.htm
 tech.root: kernel
-ms.assetid: d8ca2c47-e3b6-4ead-8d8e-2b2a4fe97658
 ms.date: 04/30/2018
 keywords: ["RtlUnicodeStringVPrintf function"]
 ms.keywords: RtlUnicodeStringVPrintf, RtlUnicodeStringVPrintf function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringvprintf, ntstrsafe/RtlUnicodeStringVPrintf, safestrings_45fb9433-8fea-42ec-83fc-772e943a3169.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,19 +50,19 @@ The <b>RtlUnicodeStringVPrintf</b> function creates a text string, with formatti
 
 ## -parameters
 
-### -param DestinationString 
+### -param DestinationString [out]
 
-[out]
+
 A pointer to a <b>UNICODE_STRING</b> structure that receives a formatted string. <b>RtlUnicodeStringVPrintf</b> creates this string from the formatting string that <i>pszFormat</i> specifies and the function's argument list. The maximum number of characters in the string is NTSTRSAFE_UNICODE_STRING_MAX_CCH.
 
-### -param pszFormat 
+### -param pszFormat [in]
 
-[in]
+
 A pointer to a null-terminated text string that contains <b>printf</b>-styled formatting directives.
 
-### -param argList 
+### -param argList [in]
 
-[in]
+
 A <b>va_list</b>-typed argument list. Arguments in this argument list will be interpreted by using the formatting string that <i>pszFormat</i> specifies.
 
 ## -returns

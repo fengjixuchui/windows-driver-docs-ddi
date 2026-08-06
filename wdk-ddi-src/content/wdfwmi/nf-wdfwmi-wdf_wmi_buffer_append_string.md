@@ -4,7 +4,6 @@ title: WDF_WMI_BUFFER_APPEND_STRING function (wdfwmi.h)
 description: The WDF_WMI_BUFFER_APPEND_STRING function copies a specified Unicode string into a specified buffer in the format that WMI requires.
 old-location: wdf\wdf_wmi_buffer_append_string.htm
 tech.root: wdf
-ms.assetid: 23d65788-23ce-4ed7-8b68-890c1c3a4100
 ms.date: 02/26/2018
 keywords: ["WDF_WMI_BUFFER_APPEND_STRING function"]
 ms.keywords: DFWMIRef_db6f29cb-fcdc-4948-9ea3-9b36e9f969e8.xml, WDF_WMI_BUFFER_APPEND_STRING, WDF_WMI_BUFFER_APPEND_STRING function, kmdf.wdf_wmi_buffer_append_string, wdf.wdf_wmi_buffer_append_string, wdfwmi/WDF_WMI_BUFFER_APPEND_STRING
@@ -53,24 +52,24 @@ The <b>WDF_WMI_BUFFER_APPEND_STRING</b> function copies a specified Unicode stri
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 A pointer to a destination buffer that receives the string.
 
-### -param BufferLength 
+### -param BufferLength [in]
 
-[in]
+
 The length, in bytes, of the destination buffer that receives the string.
 
-### -param String 
+### -param String [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains the string to be copied.
 
-### -param RequiredSize 
+### -param RequiredSize [out]
 
-[out]
+
 A pointer to a location that receives the number of bytes that are required to store the specified string in the destination buffer.
 
 ## -returns

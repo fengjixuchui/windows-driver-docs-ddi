@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSystemObjects2.GetThreadIdBySystemId
 title: IDebugSystemObjects2::GetThreadIdBySystemId (dbgeng.h)
-description: The GetThreadIdBySystemId method returns the engine thread ID for the specified thread. The thread is specified by its system thread ID.
+description: The (IDebugSystemObjects2) GetThreadIdBySystemId method returns the engine thread ID for a thread specified by its system thread ID.
 old-location: debugger\getthreadidbysystemid.htm
 tech.root: debugger
-ms.assetid: 2dcb7703-df66-4795-bf59-d0851c4ccf0f
 ms.date: 05/03/2018
 keywords: ["IDebugSystemObjects2::GetThreadIdBySystemId"]
 ms.keywords: GetThreadIdBySystemId, GetThreadIdBySystemId method [Windows Debugging], GetThreadIdBySystemId method [Windows Debugging],IDebugSystemObjects interface, GetThreadIdBySystemId method [Windows Debugging],IDebugSystemObjects2 interface, GetThreadIdBySystemId method [Windows Debugging],IDebugSystemObjects3 interface, GetThreadIdBySystemId method [Windows Debugging],IDebugSystemObjects4 interface, IDebugSystemObjects interface [Windows Debugging],GetThreadIdBySystemId method, IDebugSystemObjects2 interface [Windows Debugging],GetThreadIdBySystemId method, IDebugSystemObjects2.GetThreadIdBySystemId, IDebugSystemObjects2::GetThreadIdBySystemId, IDebugSystemObjects3 interface [Windows Debugging],GetThreadIdBySystemId method, IDebugSystemObjects3::GetThreadIdBySystemId, IDebugSystemObjects4 interface [Windows Debugging],GetThreadIdBySystemId method, IDebugSystemObjects4::GetThreadIdBySystemId, IDebugSystemObjects::GetThreadIdBySystemId, IDebugSystemObjects_d9c3c65f-9078-4be8-b301-dddc789cd8b0.xml, dbgeng/IDebugSystemObjects2::GetThreadIdBySystemId, dbgeng/IDebugSystemObjects3::GetThreadIdBySystemId, dbgeng/IDebugSystemObjects4::GetThreadIdBySystemId, dbgeng/IDebugSystemObjects::GetThreadIdBySystemId, debugger.getthreadidbysystemid
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSystemObjects.GetThreadIdBySystemId
- - IDebugSystemObjects2.GetThreadIdBySystemId
- - IDebugSystemObjects3.GetThreadIdBySystemId
- - IDebugSystemObjects4.GetThreadIdBySystemId
+ - IDebugSystemObjects2::GetThreadIdBySystemId
 ---
 
 # IDebugSystemObjects2::GetThreadIdBySystemId
@@ -53,14 +49,14 @@ The <b>GetThreadIdBySystemId</b> method returns the engine thread ID for the spe
 
 ## -parameters
 
-### -param SysId 
+### -param SysId [in]
 
-[in]
+
 Specifies the system thread ID.
 
-### -param Id 
+### -param Id [out]
 
-[out]
+
 Receives the engine thread ID.
 
 ## -returns
@@ -101,3 +97,4 @@ The target is a kernel-mode target.
 This method is only available in user-mode debugging.
 
 For more information about threads, see <a href="/windows-hardware/drivers/debugger/threads-and-processes">Threads and Processes</a>.
+

@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_83
+UID: NS:ks.KSHANDSHAKE
 title: KSHANDSHAKE (ks.h)
 description: The KSHANDSHAKE structure is used to pass information back and forth while pins are handshaking in an attempt to negotiate a private interface.
 old-location: stream\kshandshake.htm
 tech.root: stream
-ms.assetid: fe163d23-0eaf-4a3e-b371-2f65f2235251
 ms.date: 04/23/2018
 keywords: ["KSHANDSHAKE structure"]
 ms.keywords: "*PKSHANDSHAKE, KSHANDSHAKE, KSHANDSHAKE structure [Streaming Media Devices], PKSHANDSHAKE, PKSHANDSHAKE structure pointer [Streaming Media Devices], avstruct_65ba3a40-5560-4acb-bf85-90fa9ad46fc1.xml, ks/KSHANDSHAKE, ks/PKSHANDSHAKE, stream.kshandshake"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSHANDSHAKE
  - KSHANDSHAKE
 ---
 
@@ -77,3 +77,4 @@ Pin handshaking is a concept that is usable only between two pins that support I
 
 
 <a href="/windows-hardware/drivers/ddi/ks/nf-ks-kspinhandshake">KsPinHandshake</a>
+

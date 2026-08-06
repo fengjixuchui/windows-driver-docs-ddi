@@ -3,8 +3,7 @@ UID: NF:netadapter.NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA
 title: NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA function (netadapter.h)
 description: The NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA function initializes a NET_ADAPTER_TX_CAPABILITIES structure for a net adapter that has specified the use of DMA in its transmit data path.
 tech.root: netvista
-ms.assetid: aae4a208-75b7-4b11-868b-c4620497d171
-ms.date: 09/27/2019
+ms.date: 03/30/2022
 keywords: ["NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA function"]
 ms.keywords: NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA
 req.header: netadapter.h
@@ -47,21 +46,17 @@ The **NET_ADAPTER_TX_CAPABILITIES_INIT_FOR_DMA** function initializes a [NET_ADA
 
 ## -parameters
 
-### -param TxCapabilities
+### -param TxCapabilities [_Out_]
 
 A pointer to a driver-allocated [NET_ADAPTER_TX_CAPABILITIES](ns-netadapter-_net_adapter_tx_capabilities.md) structure.
 
-### -param DmaCapabilities
+### -param DmaCapabilities [_In_]
 
 A pointer to a driver-allocated and initialized [NET_ADAPTER_DMA_CAPABILITIES](ns-netadapter-_net_adapter_dma_capabilities.md) structure.
 
-### -param MaximumNumberOfQueues
+### -param MaximumNumberOfQueues [_In_]
 
 The maximum number of transmit queues that the adapter supports.
-
-## -returns
-
-This function does not return a value.
 
 ## -remarks
 

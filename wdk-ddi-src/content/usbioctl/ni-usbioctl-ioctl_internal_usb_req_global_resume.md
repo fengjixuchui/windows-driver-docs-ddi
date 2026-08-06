@@ -4,7 +4,6 @@ title: IOCTL_INTERNAL_USB_REQ_GLOBAL_RESUME (usbioctl.h)
 description: The IOCTL_INTERNAL_USB_REQ_GLOBAL_RESUME IOCTL is used by the USB hub driver. Do not use.
 old-location: buses\ioctl_internal_usb_req_global_resume.htm
 tech.root: usbref
-ms.assetid: 4da6cf19-745e-49ea-b5f9-d4a51f7bbcf4
 ms.date: 05/07/2018
 keywords: ["IOCTL_INTERNAL_USB_REQ_GLOBAL_RESUME IOCTL"]
 ms.keywords: IOCTL_INTERNAL_USB_REQ_GLOBAL_RESUME, IOCTL_INTERNAL_USB_REQ_GLOBAL_RESUME control, IOCTL_INTERNAL_USB_REQ_GLOBAL_RESUME control code [Buses], buses.ioctl_internal_usb_req_global_resume, usbioctl/IOCTL_INTERNAL_USB_REQ_GLOBAL_RESUME
@@ -49,6 +48,10 @@ api_name:
  The <b>IOCTL_INTERNAL_USB_REQ_GLOBAL_RESUME</b> IOCTL is used by the USB hub driver. Do not use.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
+
+[IRP_MJ_INTERNAL_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
 ### -input-buffer
 

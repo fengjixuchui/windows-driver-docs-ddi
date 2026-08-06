@@ -4,7 +4,6 @@ title: _NDIS_WWAN_SYS_CAPS_INFO (ndiswwan.h)
 description: The NDIS_WWAN_SYS_CAPS_INFO structure represents the overall modem's system capability.
 old-location: netvista\ndis_wwan_sys_caps.htm
 tech.root: netvista
-ms.assetid: 6A4963A0-4724-4709-A940-817B8AEBE1C9
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_SYS_CAPS_INFO structure"]
 ms.keywords: "*PNDIS_WWAN_SYS_CAPS_INFO, NDIS_WWAN_SYS_CAPS_INFO, NDIS_WWAN_SYS_CAPS_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SYS_CAPS_INFO, PNDIS_WWAN_SYS_CAPS_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_SYS_CAPS_INFO, ndiswwan/NDIS_WWAN_SYS_CAPS_INFO, ndiswwan/PNDIS_WWAN_SYS_CAPS_INFO, netvista.ndis_wwan_sys_caps"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_SYS_CAPS_INFO
+ - PNDIS_WWAN_SYS_CAPS_INFO
  - NDIS_WWAN_SYS_CAPS_INFO
 ---
 
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_SYS_CAPS_INFO)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field uStatus
 
@@ -175,7 +176,7 @@ A formatted <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_sys_caps_i
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -188,3 +189,4 @@ A formatted <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_sys_caps_i
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_sys_caps_info">WWAN_SYS_CAPS_INFO</a>
+

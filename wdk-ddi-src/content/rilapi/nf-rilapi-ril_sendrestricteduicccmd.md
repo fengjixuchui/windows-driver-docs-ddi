@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_SendRestrictedUiccCmd
 title: RIL_SendRestrictedUiccCmd function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_SendRestrictedUiccCmd function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_sendrestricteduicccmd.htm
 tech.root: netvista
-ms.assetid: f9341659-105b-4ec7-bce7-878698de8c14
 ms.date: 05/02/2018
 keywords: ["RIL_SendRestrictedUiccCmd function"]
 ms.keywords: RIL_SendRestrictedUiccCmd, RIL_SendRestrictedUiccCmd method [Network Drivers Starting with Windows Vista], netvista.ril_sendrestricteduicccmd, rilapi/RIL_SendRestrictedUiccCmd

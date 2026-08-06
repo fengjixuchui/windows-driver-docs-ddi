@@ -2,7 +2,6 @@
 UID: NF:sensorsutils.IsCollectionListSame
 title: IsCollectionListSame function (sensorsutils.h)
 description: This routine compares two collection lists to see if they are the same.
-ms.assetid: 5bbf7dfc-b18a-4d4e-9297-4b1ffdcc1d12
 ms.date: 08/08/2018
 keywords: ["IsCollectionListSame function"]
 tech.root: sensors
@@ -37,8 +36,6 @@ api_location:
  - sensorsutils.h
 api_name:
  - IsCollectionListSame
-product:
- - Windows
 ---
 
 # IsCollectionListSame function
@@ -50,13 +47,13 @@ This routine compares two collection lists and determines if they are the same.
 
 ## -parameters
 
-### -param ListA
+### -param ListA [in]
 
-[in] Pointer to a collection list.
+Pointer to a collection list.
 
-### -param ListB
+### -param ListB [in]
 
-[in] Pointer to a second collection list to compare against the first.
+Pointer to a second collection list to compare against the first.
 
 ## -returns
 

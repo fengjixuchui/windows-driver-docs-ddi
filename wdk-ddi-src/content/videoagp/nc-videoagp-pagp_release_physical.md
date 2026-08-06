@@ -4,7 +4,6 @@ title: PAGP_RELEASE_PHYSICAL (videoagp.h)
 description: The AgpReleasePhysical function frees a physical address range reserved by a previous call to AgpReservePhysical.
 old-location: display\agpreleasephysical.htm
 tech.root: display
-ms.assetid: 4da0f5cb-a017-4df5-958b-c76b7a08495a
 ms.date: 05/10/2018
 keywords: ["PAGP_RELEASE_PHYSICAL callback function"]
 ms.keywords: AgpReleasePhysical, AgpReleasePhysical callback function [Display Devices], PAGP_RELEASE_PHYSICAL, PAGP_RELEASE_PHYSICAL callback, VideoPort_Functions_427923a7-3205-41a7-a470-dbc7d531e47f.xml, display.agpreleasephysical, videoagp/AgpReleasePhysical
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - videoagp.h
 api_name:
- - AgpReleasePhysical
+ - PAGP_RELEASE_PHYSICAL
 ---
 
 # PAGP_RELEASE_PHYSICAL callback function
@@ -50,14 +49,14 @@ The <b>AgpReleasePhysical</b> function frees a physical address range reserved b
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's device extension.
 
-### -param PhysicalReserveContext 
+### -param PhysicalReserveContext [in]
 
-[in]
+
 Is the context handle that identifies the reserved physical address range to be released. This context was obtained from <a href="/windows-hardware/drivers/ddi/videoagp/nc-videoagp-pagp_reserve_physical">AgpReservePhysical</a>.
 
 ## -remarks
@@ -71,3 +70,4 @@ The miniport driver must call <a href="/windows-hardware/drivers/ddi/videoagp/nc
 
 
 <a href="/windows-hardware/drivers/ddi/videoagp/nc-videoagp-pagp_reserve_physical">AgpReservePhysical</a>
+

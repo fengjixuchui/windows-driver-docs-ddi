@@ -4,7 +4,6 @@ title: wiasUpdateValidFormat function (wiamdef.h)
 description: The wiasUpdateValidFormat function updates the valid format of the property context for the current minidriver.
 old-location: image\wiasupdatevalidformat.htm
 tech.root: image
-ms.assetid: 04e66f34-3771-4b09-b546-f814e4b41906
 ms.date: 05/03/2018
 keywords: ["wiasUpdateValidFormat function"]
 ms.keywords: image.wiasupdatevalidformat, wiamdef/wiasUpdateValidFormat, wiasFncs_dfbd0aa5-1c7c-4b4f-a1da-82176b36e914.xml, wiasUpdateValidFormat, wiasUpdateValidFormat function [Imaging Devices]
@@ -50,19 +49,19 @@ The <b>wiasUpdateValidFormat</b> function updates the valid format of the proper
 
 ## -parameters
 
-### -param pWiasContext 
+### -param pWiasContext [in]
 
-[in]
+
 Pointer to a WIA item context.
 
-### -param pContext 
+### -param pContext [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_wia_property_context">WIA_PROPERTY_CONTEXT</a> structure containing a property context.
 
-### -param pIMiniDrv 
+### -param pIMiniDrv [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/wiamindr_lh/nn-wiamindr_lh-iwiaminidrv">IWiaMiniDrv Interface</a> of the current minidriver.
 
 ## -returns

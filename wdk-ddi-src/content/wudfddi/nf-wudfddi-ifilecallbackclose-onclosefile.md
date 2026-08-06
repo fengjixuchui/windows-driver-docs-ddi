@@ -4,7 +4,6 @@ title: IFileCallbackClose::OnCloseFile (wudfddi.h)
 description: The OnCloseFile method is called when the last reference count on a file object goes down to zero and before the file object is released.
 old-location: wdf\ifilecallbackclose_onclosefile.htm
 tech.root: wdf
-ms.assetid: ca3bd7af-b270-497e-a90a-6d79ce66d968
 ms.date: 02/26/2018
 keywords: ["IFileCallbackClose::OnCloseFile"]
 ms.keywords: IFileCallbackClose interface,OnCloseFile method, IFileCallbackClose.OnCloseFile, IFileCallbackClose::OnCloseFile, OnCloseFile, OnCloseFile method, OnCloseFile method,IFileCallbackClose interface, UMDFFileObjectRef_8aa60206-80e0-4c49-b2fd-c79f5e703c18.xml, umdf.ifilecallbackclose_onclosefile, wdf.ifilecallbackclose_onclosefile, wudfddi/IFileCallbackClose::OnCloseFile
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IFileCallbackClose.OnCloseFile
+ - IFileCallbackClose::OnCloseFile
 ---
 
 # IFileCallbackClose::OnCloseFile
@@ -52,9 +51,9 @@ The <b>OnCloseFile</b> method is called when the last reference count on a file 
 
 ## -parameters
 
-### -param pWdfFileObject 
+### -param pWdfFileObject [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile">IWDFFile</a> interface for the file object that is associated with the device.
 
 ## -remarks
@@ -74,3 +73,4 @@ For information about when the framework calls <b>OnCloseFile</b>, see <a href="
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile">IWDFFile</a>
+

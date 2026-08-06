@@ -4,7 +4,6 @@ title: RtlUnicodeStringPrintfEx function (ntstrsafe.h)
 description: The RtlUnicodeStringPrintfEx function creates a text string, with formatting that is based on supplied formatting information, and stores the string in a UNICODE_STRING structure.
 old-location: kernel\rtlunicodestringprintfex.htm
 tech.root: kernel
-ms.assetid: 8a08cb8d-d933-4dc6-8bf2-8f435ffc9eb1
 ms.date: 04/30/2018
 keywords: ["RtlUnicodeStringPrintfEx function"]
 ms.keywords: RtlUnicodeStringPrintfEx, RtlUnicodeStringPrintfEx function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringprintfex, ntstrsafe/RtlUnicodeStringPrintfEx, safestrings_06495952-554e-4e33-8610-dc34b7f1b879.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,19 +50,19 @@ The <b>RtlUnicodeStringPrintfEx</b> function creates a text string, with formatt
 
 ## -parameters
 
-### -param DestinationString 
+### -param DestinationString [out]
 
-[out]
+
 Optional. A pointer to a <b>UNICODE_STRING</b> structure that receives a formatted string. <b>RtlUnicodeStringPrintfEx</b> creates this string from both the formatting string that <i>pszFormat</i> specifies and the function's argument list. The maximum number of characters in the string is NTSTRSAFE_UNICODE_STRING_MAX_CCH. <i>DestinationString</i> can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.
 
-### -param RemainingString 
+### -param RemainingString [out, optional]
 
-[out, optional]
+
 Optional. If the caller supplies a non-<b>NULL</b> pointer to a <b>UNICODE_STRING</b> structure, <b>RtlUnicodeStringPrintfEx</b> sets this structure's <b>Buffer</b> member to the end of the formatted string, sets the structure's <b>Length</b> member to zero, and sets the structure's <b>MaximumLength</b> member to the number of bytes that are remaining in the destination buffer. <i>RemainingString</i> can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.
 
-### -param dwFlags 
+### -param dwFlags [in]
 
-[in]
+
 One or more flags and, optionally, a fill byte. The flags are defined as follows:
 
 
@@ -104,19 +103,12 @@ If this flag is set and the function returns STATUS_BUFFER_OVERFLOW, the content
 
 If this flag is set and the function returns STATUS_BUFFER_OVERFLOW, the destination string length is set to zero bytes.
 
-### -param pszFormat 
+### -param pszFormat [in]
 
-[in]
+
 A pointer to a null-terminated text string that contains <b>printf</b>-styled formatting directives. This pointer can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.
 
-### -param param
-
-<p>Optional. A list of arguments that <b>RtlUnicodeStringPrintfEx</b> interprets, based on formatting directives that the <i>pszFormat</i> string specifies.</p>
-
-
-
-
-####### - ...
+### -param ...
 
 Optional. A list of arguments that <b>RtlUnicodeStringPrintfEx</b> interprets, based on formatting directives that the <i>pszFormat</i> string specifies.
 
@@ -204,3 +196,4 @@ For more information about the safe string functions, see <a href="/windows-hard
 
 
 <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a>
+

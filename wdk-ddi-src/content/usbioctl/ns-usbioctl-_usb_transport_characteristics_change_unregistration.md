@@ -4,7 +4,6 @@ title: _USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION (usbioctl.h)
 description: Contains unregistration information for the IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE request.
 old-location: buses\usb_transport_characteristics_change_unregistration.htm
 tech.root: usbref
-ms.assetid: 22F185EB-103D-4D7D-94B7-D34D48B1C526
 ms.date: 05/07/2018
 keywords: ["USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION structure"]
 ms.keywords: "*PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION, PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION, PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION structure pointer [Buses], USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION, USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION structure [Buses], _USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION, buses.usb_transport_characteristics_change_unregistration, usbioctl/PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION, usbioctl/USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Usbioctl.h
 api_name:
+ - _USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION
+ - PUSB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION
  - USB_TRANSPORT_CHARACTERISTICS_CHANGE_UNREGISTRATION
 ---
 
@@ -63,3 +64,4 @@ An opaque handle for registration that the client driver obtained in the previou
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_unregister_for_transport_characteristics_change">IOCTL_USB_UNREGISTER_FOR_TRANSPORT_CHARACTERISTICS_CHANGE</a>
+

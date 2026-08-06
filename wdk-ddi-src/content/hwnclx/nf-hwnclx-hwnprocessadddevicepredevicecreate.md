@@ -4,7 +4,6 @@ title: HwNProcessAddDevicePreDeviceCreate function (hwnclx.h)
 description: Supplies the device prepare/release and entry/exit callbacks to the Windows Driver Foundation (WDF) for transitioning the device into different states.
 old-location: gpiobtn\hwnprocessadddevicepredevicecreate.htm
 tech.root: gpiobtn
-ms.assetid: c7bbba08-e9d0-4f78-93d8-e451e4dc2573
 ms.date: 02/15/2018
 keywords: ["HwNProcessAddDevicePreDeviceCreate function"]
 ms.keywords: HwNProcessAddDevicePreDeviceCreate, HwNProcessAddDevicePreDeviceCreate function, gpiobtn.hwnprocessadddevicepredevicecreate, hwnclx/HwNProcessAddDevicePreDeviceCreate
@@ -51,19 +50,19 @@ Supplies the device prepare/release and entry/exit callbacks to the Windows Driv
 
 ## -parameters
 
-### -param Driver 
+### -param Driver [in]
 
-[in]
+
 Handle to the client drivers framework driver object.
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A pointer to a framework-allocated <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
-### -param FdoAttributes 
+### -param FdoAttributes [out]
 
-[out]
+
 Pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that describes the attributes of the client driver’s device object when it’s created.
 
 ## -returns
@@ -86,4 +85,4 @@ FORCEINLINE NTSTATUS  HwNProcessAddDevicePreDeviceCreate(
 
 
 
-<a href="/windows-hardware/drivers/ddi/index">Hardware notifications reference</a>
+<a href="/windows-hardware/drivers/ddi/_gpio">Hardware notifications reference</a>

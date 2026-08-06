@@ -4,7 +4,6 @@ title: _CIP_NOTIFY_INFO (61883.h)
 description: The CIP_NOTIFY_INFO structure contains information about the frame.
 old-location: ieee\cip_notify_info.htm
 tech.root: IEEE
-ms.assetid: 60b0d44b-0178-43ce-a1ad-7f5825bed3ba
 ms.date: 02/15/2018
 keywords: ["CIP_NOTIFY_INFO structure"]
 ms.keywords: "*PCIP_NOTIFY_INFO, 61883/CIP_NOTIFY_INFO, 61883/PCIP_NOTIFY_INFO, 61883_structures_383bc74c-1168-4478-8284-b2724f9ec654.xml, CIP_NOTIFY_INFO, CIP_NOTIFY_INFO structure [Buses], IEEE.cip_notify_info, PCIP_NOTIFY_INFO, PCIP_NOTIFY_INFO structure pointer [Buses], _CIP_NOTIFY_INFO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _CIP_NOTIFY_INFO
+ - PCIP_NOTIFY_INFO
  - CIP_NOTIFY_INFO
 ---
 
@@ -73,3 +74,4 @@ The IEC-61883 protocol driver allocates and initializes this structure from the 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cip_frame">CIP_FRAME</a>
+

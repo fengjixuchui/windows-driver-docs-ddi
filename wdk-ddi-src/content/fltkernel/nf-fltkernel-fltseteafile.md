@@ -4,7 +4,6 @@ title: FltSetEaFile function (fltkernel.h)
 description: FltSetEaFile sets extended-attribute (EA) values for a file.
 old-location: ifsk\fltseteafile.htm
 tech.root: ifsk
-ms.assetid: 06427ef2-43e9-46c1-92e5-ab1b6146cc43
 ms.date: 04/16/2018
 keywords: ["FltSetEaFile function"]
 ms.keywords: FltApiRef_p_to_z_7e886e7f-a5f4-4a87-9322-7818e31c84af.xml, FltSetEaFile, FltSetEaFile function [Installable File System Drivers], fltkernel/FltSetEaFile, ifsk.fltseteafile
@@ -50,24 +49,24 @@ api_name:
 
 ## -parameters
 
-### -param Instance 
+### -param Instance [in]
 
-[in]
+
 Opaque instance pointer for the minifilter driver instance that the SetEa operation is to be sent to. The instance must be attached to the volume where the file resides.
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 File object pointer for the file.
 
-### -param EaBuffer 
+### -param EaBuffer [in]
 
-[in]
+
 Pointer to a caller-supplied, <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_full_ea_information">FILE_FULL_EA_INFORMATION</a>-structured input buffer that contains the extended attribute (EA) values to be set.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Length, in bytes, of the buffer that the <i>EaBuffer</i> parameter points to.
 
 ## -returns

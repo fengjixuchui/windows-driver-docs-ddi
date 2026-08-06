@@ -4,7 +4,6 @@ title: IPrintOemUni::TTYGetInfo (prcomoem.h)
 description: The IPrintOemUni::TTYGetInfo method enables a rendering plug-in to supply Unidrv with information relevant to text-only printers.
 old-location: print\iprintoemuni_ttygetinfo.htm
 tech.root: print
-ms.assetid: 0df8c555-4298-47e7-a6a7-43f101620e04
 ms.date: 04/20/2018
 keywords: ["IPrintOemUni::TTYGetInfo"]
 ms.keywords: IPrintOemUni interface [Print Devices],TTYGetInfo method, IPrintOemUni.TTYGetInfo, IPrintOemUni::TTYGetInfo, TTYGetInfo, TTYGetInfo method [Print Devices], TTYGetInfo method [Print Devices],IPrintOemUni interface, prcomoem/IPrintOemUni::TTYGetInfo, print.iprintoemuni_ttygetinfo, print_unidrv-pscript_rendering_d98708b3-8e01-4037-a545-aee0e32a46c6.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemUni.TTYGetInfo
+ - IPrintOemUni::TTYGetInfo
 ---
 
 # IPrintOemUni::TTYGetInfo
@@ -149,3 +148,4 @@ The method is not implemented.
 ## -remarks
 
 The <code>IPrintOemUni::TTYGetInfo</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-getimplementedmethod">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "TTYGetInfo" as input.
+

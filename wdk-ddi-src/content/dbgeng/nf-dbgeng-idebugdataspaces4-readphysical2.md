@@ -4,7 +4,6 @@ title: IDebugDataSpaces4::ReadPhysical2 (dbgeng.h)
 description: The ReadPhysical2 method reads the target's memory from the specified physical address.
 old-location: debugger\readphysical2.htm
 tech.root: debugger
-ms.assetid: ad376a6f-b8e3-40ba-9b00-df1410c1293c
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces4::ReadPhysical2"]
 ms.keywords: IDebugDataSpaces4 interface [Windows Debugging],ReadPhysical2 method, IDebugDataSpaces4.ReadPhysical2, IDebugDataSpaces4::ReadPhysical2, IDebugDataSpaces_b7eb9d7f-98a3-4be4-a264-68d9ac1eaea7.xml, ReadPhysical2, ReadPhysical2 method [Windows Debugging], ReadPhysical2 method [Windows Debugging],IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces4::ReadPhysical2, debugger.readphysical2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugDataSpaces4.ReadPhysical2
+ - IDebugDataSpaces4::ReadPhysical2
 ---
 
 # IDebugDataSpaces4::ReadPhysical2
@@ -50,14 +49,14 @@ The <b>ReadPhysical2</b> method reads the target's memory from the specified phy
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the physical address of the memory to read.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies the properties of the physical memory to be read.  This must match the way the physical memory was advertised to the operating system on the target.  Possible values are listed in the following table.
 
 <table>
@@ -107,19 +106,19 @@ The physical memory is write-combined.
 </tr>
 </table>
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 Receives the memory that is read.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size, in bytes, of the <i>Buffer</i> buffer.  This is the maximum number of bytes that will be read.
 
-### -param BytesRead 
+### -param BytesRead [out, optional]
 
-[out, optional]
+
 Receives the number of bytes read from the target's memory.  If <i>BytesRead</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -162,3 +161,4 @@ The flags DEBUG_PHYSICAL_CACHED, DEBUG_PHYSICAL_UNCACHED, and DEBUG_PHYSICAL_WRI
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugdataspaces4-writephysical2">WritePhysical2</a>
+

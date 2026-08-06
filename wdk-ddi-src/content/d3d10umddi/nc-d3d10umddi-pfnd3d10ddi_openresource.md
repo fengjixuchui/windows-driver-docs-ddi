@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_OPENRESOURCE
 title: PFND3D10DDI_OPENRESOURCE (d3d10umddi.h)
 description: The OpenResource(D3D10) function opens a shared resource.
 old-location: display\openresource_d3d10_.htm
-ms.assetid: 95f6d1e5-0c85-41ce-ad6d-f10d5103e2eb
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_OPENRESOURCE callback function"]
 ms.keywords: OpenResource, OpenResource callback function [Display Devices], PFND3D10DDI_OPENRESOURCE, PFND3D10DDI_OPENRESOURCE callback, UserModeDisplayDriverDx10_Functions_ea9696b9-fb0f-4feb-be35-db3e59c74b4e.xml, d3d10umddi/OpenResource, display.openresource_d3d10_
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - OpenResource
-product:
- - Windows
+ - PFND3D10DDI_OPENRESOURCE
 ---
 
 # PFND3D10DDI_OPENRESOURCE callback function
@@ -52,25 +49,25 @@ The <i>OpenResource(D3D10)</i> function opens a shared resource.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pOpenResource* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddiarg_openresource">D3D10DDIARG_OPENRESOURCE</a> structure that describes the parameters that the user-mode display driver uses to open a shared resource.
 
-### -param Arg3
+### -param unnamedParam3
 
 *hResource* [in]
 
 A handle to the driver's private data for the resource.
 
-### -param Arg4
+### -param unnamedParam4
 
 *hRTResource* [in]
 
@@ -105,3 +102,4 @@ The driver might run out of memory. Therefore, the driver can pass E_OUTOFMEMORY
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

@@ -4,7 +4,6 @@ title: PCAM_PROCESS_PACKET_ROUTINE (usbcamdi.h)
 description: A camera minidriver's CamProcessUSBPacket callback function processes a USB packet.
 old-location: stream\camprocessusbpacket.htm
 tech.root: stream
-ms.assetid: 2b83d1b1-82f6-455b-b22a-ae9433dd9f27
 ms.date: 04/23/2018
 keywords: ["PCAM_PROCESS_PACKET_ROUTINE callback function"]
 ms.keywords: CamProcessUSBPacket, CamProcessUSBPacket callback function [Streaming Media Devices], PCAM_PROCESS_PACKET_ROUTINE, PCAM_PROCESS_PACKET_ROUTINE callback, stream.camprocessusbpacket, usbcamdi/CamProcessUSBPacket, usbcmdpr_7eeca66e-b106-4cb0-b0c3-d7d07d82d841.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - usbcamdi.h
 api_name:
- - CamProcessUSBPacket
+ - PCAM_PROCESS_PACKET_ROUTINE
 ---
 
 # PCAM_PROCESS_PACKET_ROUTINE callback function
@@ -112,3 +111,4 @@ This function is optional.
 
 
 <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_iso_packet_descriptor">USBD_ISO_PACKET_DESCRIPTOR</a>
+

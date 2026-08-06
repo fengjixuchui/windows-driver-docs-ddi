@@ -3,7 +3,6 @@ UID: NS:wwan._WWAN_SET_SAR_TRANSMISSION_STATUS
 title: _WWAN_SET_SAR_TRANSMISSION_STATUS (wwan.h)
 description: The WWAN_SET_SAR_TRANSMISSION_STATUS structure sets Specific Absorption Rate (SAR) transmission status in a mobile broadband (MBB) modem.
 tech.root: netvista
-ms.assetid: 6c80431c-c97b-41c8-969b-fd298e363e9d
 ms.date: 08/20/2018
 keywords: ["WWAN_SET_SAR_TRANSMISSION_STATUS structure"]
 ms.keywords: _WWAN_SET_SAR_TRANSMISSION_STATUS, WWAN_SET_SAR_TRANSMISSION_STATUS, *PWWAN_SET_SAR_TRANSMISSION_STATUS,
@@ -37,6 +36,8 @@ api_location:
  - wwan.h
 api_name:
  - _WWAN_SET_SAR_TRANSMISSION_STATUS
+ - PWWAN_SET_SAR_TRANSMISSION_STATUS
+ - WWAN_SET_SAR_TRANSMISSION_STATUS
 ---
 
 # _WWAN_SET_SAR_TRANSMISSION_STATUS structure
@@ -54,7 +55,7 @@ A [**WWAN_SAR_TRANSMISSION_STATUS_NOTIFICATION_STATE**](ne-wwan-_wwan_sar_transm
 
 ### -field HysteresisTimer
 
-A Hysteresis indicator that is used by the modem to determine when to send the a [NDIS_STATUS_WWAN_SAR_TRANSMISSION_STATUS](/windows-hardware/drivers/network/ndis-status-wwan-sar-transmission-status) notification to the host. This value is the timer the modem sees as a continuous no-transmit activity before it sends an OFF indicator to host. This timer should be set in seconds, ranging from 1 second to 5 seconds.
+A Hysteresis indicator that is used by the modem to determine when to send a [NDIS_STATUS_WWAN_SAR_TRANSMISSION_STATUS](/windows-hardware/drivers/network/ndis-status-wwan-sar-transmission-status) notification to the host. This value is the timer the modem sees as a continuous no-transmit activity before it sends an OFF indicator to host. This timer should be set in seconds, ranging from 1 second to 5 seconds.
 
 ## -remarks
 
@@ -69,3 +70,4 @@ This structure is used in the [**NDIS_WWAN_SET_SAR_TRANSMISSION_STATUS**](../ndi
 [NDIS_STATUS_WWAN_SAR_TRANSMISSION_STATUS](/windows-hardware/drivers/network/ndis-status-wwan-sar-transmission-status)
 
 [**NDIS_WWAN_SET_SAR_TRANSMISSION_STATUS**](../ndiswwan/ns-ndiswwan-_ndis_wwan_set_sar_transmission_status.md)
+

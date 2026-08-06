@@ -4,7 +4,6 @@ title: SeUnregisterLogonSessionTerminatedRoutine function (ntifs.h)
 description: The SeUnregisterLogonSessionTerminatedRoutine routine unregisters a callback routine that was registered by an earlier call to SeRegisterLogonSessionTerminatedRoutine.
 old-location: ifsk\seunregisterlogonsessionterminatedroutine.htm
 tech.root: ifsk
-ms.assetid: 74f24296-cd42-402b-a61f-0199c4a07fd0
 ms.date: 04/16/2018
 keywords: ["SeUnregisterLogonSessionTerminatedRoutine function"]
 ms.keywords: SeUnregisterLogonSessionTerminatedRoutine, SeUnregisterLogonSessionTerminatedRoutine routine [Installable File System Drivers], ifsk.seunregisterlogonsessionterminatedroutine, ntifs/SeUnregisterLogonSessionTerminatedRoutine, seref_dbf0d7bc-c252-4805-99e1-075ce9e08ddc.xml
@@ -50,9 +49,9 @@ The <b>SeUnregisterLogonSessionTerminatedRoutine</b> routine unregisters a callb
 
 ## -parameters
 
-### -param CallbackRoutine 
+### -param CallbackRoutine [in]
 
-[in]
+
 Address of routine that was originally passed in to <b>SeRegisterLogonSessionTerminatedRoutine</b>.
 
 ## -returns
@@ -103,7 +102,7 @@ A list entry could not be found for the callback routine.
 
 Each call to <b>SeRegisterLogonSessionTerminatedRoutine</b> must be matched by a subsequent call to <b>SeUnregisterLogonSessionTerminatedRoutine</b>.
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

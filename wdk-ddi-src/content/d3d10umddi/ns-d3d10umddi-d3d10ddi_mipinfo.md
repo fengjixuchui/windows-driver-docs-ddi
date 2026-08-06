@@ -3,7 +3,6 @@ UID: NS:d3d10umddi.D3D10DDI_MIPINFO
 title: D3D10DDI_MIPINFO (d3d10umddi.h)
 description: The D3D10DDI_MIPINFO structure describes the MIP-level texture and physical coordinates of a surface.
 old-location: display\d3d10ddi_mipinfo.htm
-ms.assetid: 5f00ff32-5ecf-40ca-91bb-aacc542bb7f4
 ms.date: 05/10/2018
 keywords: ["D3D10DDI_MIPINFO structure"]
 ms.keywords: D3D10DDI_MIPINFO, D3D10DDI_MIPINFO structure [Display Devices], UMDisplayDriver_Dx10param_Structs_67768e5f-a18d-4bd9-a1be-96587f267c36.xml, d3d10umddi/D3D10DDI_MIPINFO, display.d3d10ddi_mipinfo
@@ -50,29 +49,29 @@ The D3D10DDI_MIPINFO structure describes the MIP-level texture and physical coor
 
 ## -struct-fields
 
-### -field TexelWidth
+### -field TexelWidth [in]
 
-[in] The width, in texels, of the surface or volume, or the length, in texels, of the linear resource.
+The width, in texels, of the surface or volume, or the length, in texels, of the linear resource.
 
-### -field TexelHeight
+### -field TexelHeight [in]
 
-[in] The height, in texels, of the surface or volume.
+The height, in texels, of the surface or volume.
 
-### -field TexelDepth
+### -field TexelDepth [in]
 
-[in] The depth, in texels, of the volume.
+The depth, in texels, of the volume.
 
-### -field PhysicalWidth
+### -field PhysicalWidth [in]
 
-[in] The width, in pixels, of the surface or volume, or the length, in pixels, of the linear resource.
+The width, in pixels, of the surface or volume, or the length, in pixels, of the linear resource.
 
-### -field PhysicalHeight
+### -field PhysicalHeight [in]
 
-[in] The height, in pixels, of the surface or volume.
+The height, in pixels, of the surface or volume.
 
-### -field PhysicalDepth
+### -field PhysicalDepth [in]
 
-[in] The depth, in pixels, of the volume.
+The depth, in pixels, of the volume.
 
 ## -see-also
 

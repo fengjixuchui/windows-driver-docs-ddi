@@ -4,7 +4,6 @@ title: _WDF_IO_QUEUE_STATE (wdfio.h)
 description: The WDF_IO_QUEUE_STATE enumeration type identifies the status of a framework queue object. The enumerators are used as bit masks.
 old-location: wdf\wdf_io_queue_state.htm
 tech.root: wdf
-ms.assetid: d89c4d4c-d3c2-47fc-9eb8-e2eb8424d5cc
 ms.date: 02/26/2018
 keywords: ["WDF_IO_QUEUE_STATE enumeration"]
 ms.keywords: DFQueueObjectRef_210e9189-4d80-4c0f-930b-319af65697d2.xml, WDF_IO_QUEUE_STATE, WDF_IO_QUEUE_STATE enumeration, WdfIoQueueAcceptRequests, WdfIoQueueDispatchRequests, WdfIoQueueDriverNoRequests, WdfIoQueueNoRequests, WdfIoQueuePnpHeld, _WDF_IO_QUEUE_STATE, kmdf.wdf_io_queue_state, wdf.wdf_io_queue_state, wdfio/WDF_IO_QUEUE_STATE, wdfio/WdfIoQueueAcceptRequests, wdfio/WdfIoQueueDispatchRequests, wdfio/WdfIoQueueDriverNoRequests, wdfio/WdfIoQueueNoRequests, wdfio/WdfIoQueuePnpHeld
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfio.h
 api_name:
+ - _WDF_IO_QUEUE_STATE
  - WDF_IO_QUEUE_STATE
 ---
 
@@ -54,25 +54,25 @@ The <b>WDF_IO_QUEUE_STATE</b> enumeration type identifies the status of a framew
 
 ## -enum-fields
 
-### -field WdfIoQueueAcceptRequests
+### -field WdfIoQueueAcceptRequests:0x01
 
 If set, the I/O queue can accept new I/O requests from the I/O manager and requests that are forwarded by the <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceconfigurerequestdispatching">WdfDeviceConfigureRequestDispatching</a> and <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestforwardtoioqueue">WdfRequestForwardToIoQueue</a> (or <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestforwardtoparentdeviceioqueue">WdfRequestForwardToParentDeviceIoQueue</a>) methods. 
 
 If not set, the framework cancels requests from the I/O manager and <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceconfigurerequestdispatching">WdfDeviceConfigureRequestDispatching</a> and fails requests from <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestforwardtoioqueue">WdfRequestForwardToIoQueue</a> (or <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestforwardtoparentdeviceioqueue">WdfRequestForwardToParentDeviceIoQueue</a>) with STATUS_WDF_BUSY.
 
-### -field WdfIoQueueDispatchRequests
+### -field WdfIoQueueDispatchRequests:0x02
 
 If set, the framework delivers the queue's requests to the driver (unless the <b>WdfIoQueuePnpHeld</b> bit is also set). If not set, the driver cannot obtain requests from the queue.
 
-### -field WdfIoQueueNoRequests
+### -field WdfIoQueueNoRequests:0x04
 
 If set, the I/O queue is empty.
 
-### -field WdfIoQueueDriverNoRequests
+### -field WdfIoQueueDriverNoRequests:0x08
 
 If set, all requests that have been delivered to the driver have been completed.
 
-### -field WdfIoQueuePnpHeld
+### -field WdfIoQueuePnpHeld:0x10
 
 If set, the framework has stopped delivering requests to the driver because the underlying device is not in its working (D0) state.
 
@@ -85,3 +85,4 @@ The following functions are defined in <i>wdfio.h</i>:
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuegetstate">WdfIoQueueGetState</a>
+

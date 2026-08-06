@@ -4,7 +4,6 @@ title: EVT_VMB_CHANNEL_POST_STARTED (vmbuskernelmodeclientlibapi.h)
 description: The EvtVmbChannelPostStarted callback function is invoked at either endpoint after packets can be received from the opposite endpoint.
 old-location: netvista\evt_vmb_channel_post_started.htm
 tech.root: netvista
-ms.assetid: 0F48459F-BA02-4A0E-9228-BC064A6AD150
 ms.date: 05/02/2018
 keywords: ["EVT_VMB_CHANNEL_POST_STARTED callback function"]
 ms.keywords: EVT_VMB_CHANNEL_POST_STARTED, EVT_VMB_CHANNEL_POST_STARTED callback, EvtVmbChannelPostStarted, EvtVmbChannelPostStarted callback function [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_POST_STARTED, PFN_VMB_CHANNEL_POST_STARTED callback function pointer [Network Drivers Starting with Windows Vista], netvista.evt_vmb_channel_post_started, vmbuskernelmodeclientlibapi/EvtVmbChannelPostStarted
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - VmbusKernelModeClientLibApi.h
 api_name:
- - PFN_VMB_CHANNEL_POST_STARTED
+ - EVT_VMB_CHANNEL_POST_STARTED
 ---
 
 # EVT_VMB_CHANNEL_POST_STARTED callback function
@@ -53,9 +52,9 @@ the opposite endpoint.
 
 ## -parameters
 
-### -param Channel 
+### -param Channel [in]
 
-[in]
+
 The channel for these endpoints.
 
 ## -remarks
@@ -86,3 +85,4 @@ You can wait for sent packets to complete in this function, such as by using the
 
 
 <a href="/windows-hardware/drivers/ddi/vmbuskernelmodeclientlibapi/nf-vmbuskernelmodeclientlibapi-vmbchannelsendsynchronousrequest">VmbChannelSendSynchronousRequest</a>
+

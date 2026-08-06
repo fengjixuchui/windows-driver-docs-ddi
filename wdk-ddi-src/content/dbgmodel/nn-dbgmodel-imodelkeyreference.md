@@ -1,8 +1,7 @@
 ---
 UID: NN:dbgmodel.IModelKeyReference
 title: IModelKeyReference (dbgmodel.h)
-description: A reference to a key on a data model object.
-ms.assetid: f92f8963-479b-4f90-abef-5ad227e8781c
+description: The IModelKeyReference (dbgmodel.h) interface defines methods that provide a reference to a key on a data model object.
 ms.date: 07/16/2018
 keywords: ["IModelKeyReference interface"]
 req.header: dbgmodel.h
@@ -43,7 +42,7 @@ A reference to a key on a data model object.
 
 ## -inheritance
 
-IModelKeyReference interits from IUnknown.
+IModelKeyReference inherits from IUnknown.
 
 ## -remarks
 

@@ -4,7 +4,6 @@ title: _OEMFONTINSTPARAM (prntfont.h)
 description: The OEMFONTINSTPARAM structure is used as an input parameter to a user interface plug-in's IPrintOemUI::FontInstallerDlgProc method.
 old-location: print\oemfontinstparam.htm
 tech.root: print
-ms.assetid: cdd3ed28-a077-4b89-9222-ba282b9c7205
 ms.date: 04/20/2018
 keywords: ["OEMFONTINSTPARAM structure"]
 ms.keywords: "*POEMFONTINSTPARAM, OEMFONTINSTPARAM, OEMFONTINSTPARAM structure [Print Devices], POEMFONTINSTPARAM, POEMFONTINSTPARAM structure pointer [Print Devices], _OEMFONTINSTPARAM, print.oemfontinstparam, print_unidrv-pscript_ui_d306ca78-7f06-4ccf-a501-7470f33f96cb.xml, prntfont/OEMFONTINSTPARAM, prntfont/POEMFONTINSTPARAM"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - prntfont.h
 api_name:
+ - _OEMFONTINSTPARAM
+ - POEMFONTINSTPARAM
  - OEMFONTINSTPARAM
 ---
 
@@ -77,3 +78,4 @@ Unidrv-supplied flags. The only defined flag is FG_CANCHANGE which, if set, indi
 ### -field pFontInstallerName
 
 Pointer to a string representing the font installer's name. The <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-fontinstallerdlgproc">IPrintOemUI::FontInstallerDlgProc</a> method must supply this string if the received message is WM_USER+WM_FI_NAME. The string must be placed in memory allocated using <b>hHeap</b>.
+

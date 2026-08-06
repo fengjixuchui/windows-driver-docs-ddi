@@ -4,7 +4,6 @@ title: IPnpCallbackHardware (wudfddi.h)
 description: The IPnpCallbackHardware interface is a Plug and Play (PnP) and power management (PM) interface.
 old-location: wdf\ipnpcallbackhardware.htm
 tech.root: wdf
-ms.assetid: 2746e7ab-690c-4382-be9a-124a7d68cf72
 ms.date: 02/26/2018
 keywords: ["IPnpCallbackHardware interface"]
 ms.keywords: IPnpCallbackHardware, IPnpCallbackHardware interface, IPnpCallbackHardware interface,described, UMDFDeviceObjectRef_4b39ad3c-6fa6-4c47-aba8-676a6f628f1b.xml, umdf.ipnpcallbackhardware, wdf.ipnpcallbackhardware, wudfddi/IPnpCallbackHardware
@@ -52,9 +51,9 @@ The <b>IPnpCallbackHardware</b> interface is a Plug and Play (PnP) and power man
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPnpCallbackHardware</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPnpCallbackHardware</b> also has these types of members:
+The <b>IPnpCallbackHardware</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPnpCallbackHardware</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>
 
 ## -remarks

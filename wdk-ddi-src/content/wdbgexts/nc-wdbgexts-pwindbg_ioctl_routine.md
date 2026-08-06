@@ -4,8 +4,7 @@ title: PWINDBG_IOCTL_ROUTINE (wdbgexts.h)
 description: The PWINDBG_IOCTL_ROUTINE (Ioctl) function performs a variety of different operations. Much of its functionality mirrors the functionality of other functions in wdbgexts.h.
 old-location: debugger\ioctl.htm
 tech.root: debugger
-ms.assetid: fe35d032-fa34-44a7-9e61-dcb1ca2a2e85
-ms.date: 05/03/2018
+ms.date: 07/26/2023
 keywords: ["PWINDBG_IOCTL_ROUTINE callback function"]
 ms.keywords: Ioctl, Ioctl callback function [Windows Debugging], PWINDBG_IOCTL_ROUTINE, PWINDBG_IOCTL_ROUTINE callback, WdbgExts_Ref_fa1f5367-924d-478c-a3cb-ca08bf8dde2f.xml, debugger.ioctl, wdbgexts/Ioctl
 req.header: wdbgexts.h
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - wdbgexts.h
 api_name:
- - Ioctl
+ - PWINDBG_IOCTL_ROUTINE
 ---
 
 # PWINDBG_IOCTL_ROUTINE callback function
-
 
 ## -description
 
@@ -59,8 +57,6 @@ Specifies which <b>Ioctl</b> operation to perform. For a list of possible <i>Ioc
 Points to the address of a data structure. The type of structure that is required depends on the value of <i>IoctlType</i>.
 
 ### -param cbSize
-
-#### - cbSizeOfContext
 
 Specifies the size of the structure that <i>lpvData</i> points to.
 
@@ -571,3 +567,4 @@ This operation is only available in kernel-mode debugging, and is only useful wh
 When the kernel is started with the <b>/nolowmem</b> option, the kernel, drivers, operating system, and applications are loaded in memory above 4 GB, while the low 4 GB of memory is filled with a unique pattern. The IG_LOWMEM_CHECK <b>Ioctl</b> operation checks this pattern for corruption.
 
 This can be used to verify that a driver works correctly when using physical addresses greater than 32 bits in length. See <i>Physical Address Extension (PAE)</i>, <b>/pae</b>,  and <b>/nolowmem</b> in the Windows Driver Kit.
+

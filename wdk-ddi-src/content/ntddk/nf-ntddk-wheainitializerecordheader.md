@@ -1,9 +1,8 @@
 ---
 UID: NF:ntddk.WheaInitializeRecordHeader
 title: WheaInitializeRecordHeader function
-description: Reserved for system use.
-tech.root: 
-ms.assetid: 82722a7a-bd96-434c-bffe-c51ea3b013ae
+description: "Microsoft reserves the WheaInitializeRecordHeader function for internal use only. Don't use this function in your code."
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WheaInitializeRecordHeader function"]
 ms.keywords: WheaInitializeRecordHeader
@@ -37,8 +36,6 @@ api_location:
  - ntddk.h
 api_name:
  - WheaInitializeRecordHeader
-product:
- - Windows
 ---
 
 # WheaInitializeRecordHeader function

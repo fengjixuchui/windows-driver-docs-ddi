@@ -2,8 +2,7 @@
 UID: NC:d3dkmthk.PFND3DKMT_GETPROCESSSCHEDULINGPRIORITYCLASS
 title: PFND3DKMT_GETPROCESSSCHEDULINGPRIORITYCLASS (d3dkmthk.h)
 description: Pfnd3dkmtGetprocessschedulingpriorityclass retrieves the scheduling priority for a process.
-ms.assetid: 40923029-966b-4782-9d13-f647ddbc6ec0
-ms.date: 10/19/2018
+ms.date: 03/04/2022
 keywords: ["PFND3DKMT_GETPROCESSSCHEDULINGPRIORITYCLASS callback function"]
 req.header: d3dkmthk.h
 req.include-header: 
@@ -42,40 +41,37 @@ dev_langs:
 
 # PFND3DKMT_GETPROCESSSCHEDULINGPRIORITYCLASS callback function
 
-
 ## -description
 
-Pfnd3dkmtGetprocessschedulingpriorityclass retrieves the scheduling priority for a process.
+**PfnD3dkmtGetProcessSchedulingPriorityClass** retrieves the scheduling priority for a process.
 
-## -parameters
-
-### -param Arg1
-
-A handle to a display device.
-
-## -returns
-
-Returns NTSTATUS.
-
-## -prototype
+## -syntax
 
 ```cpp
-//Declaration
+PFND3DKMT_GETPROCESSSCHEDULINGPRIORITYCLASS PfnD3dkmtGetProcessSchedulingPriorityClass;
 
-PFND3DKMT_GETPROCESSSCHEDULINGPRIORITYCLASS Pfnd3dkmtGetprocessschedulingpriorityclass; 
-
-// Definition
-
-NTSTATUS Pfnd3dkmtGetprocessschedulingpriorityclass 
-(
-	HANDLE Arg1
-	D3DKMT_SCHEDULINGPRIORITYCLASS *
+NTSTATUS PfnD3dkmtGetProcessSchedulingPriorityClass(
+    HANDLE unnamedParam1
+    D3DKMT_SCHEDULINGPRIORITYCLASS *unnamedParam2
 )
 {...}
 
 ```
 
+## -parameters
+
+### -param unnamedParam1
+
+A handle to a display device.
+
+### -param unnamedParam2
+
+Pointer to a [D3DKMT_SCHEDULINGPRIORITYCLASS](ne-d3dkmthk-_d3dkmt_schedulingpriorityclass.md) enum value representing the scheduling priority class.
+
+## -returns
+
+The method returns **STATUS_SUCCESS** if the operation succeeds. Otherwise, this method might return an appropriate **[NTSTATUS](/windows-hardware/drivers/kernel/ntstatus-values)** error code.
+
 ## -remarks
 
 ## -see-also
-

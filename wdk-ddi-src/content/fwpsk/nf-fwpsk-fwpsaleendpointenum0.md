@@ -4,7 +4,6 @@ title: FwpsAleEndpointEnum0 function (fwpsk.h)
 description: The FwpsAleEndpointEnum0 function enumerates application layer enforcement (ALE) endpoints.Note  FwpsAleEndpointEnum0 is a specific version of FwpsAleEndpointEnum.
 old-location: netvista\fwpsaleendpointenum0.htm
 tech.root: netvista
-ms.assetid: 8b3257ea-9eeb-426b-8c82-a4f0242861a8
 ms.date: 05/02/2018
 keywords: ["FwpsAleEndpointEnum0 function"]
 ms.keywords: FwpsAleEndpointEnum0, FwpsAleEndpointEnum0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsAleEndpointEnum0, netvista.fwpsaleendpointenum0, wfp_ref_2_funct_3_fwps_A-B_daf596f9-09c1-4e1c-8869-8c6aec4da6cd.xml
@@ -53,38 +52,38 @@ The
 
 ## -parameters
 
-### -param engineHandle 
+### -param engineHandle [in]
 
-[in]
+
 The handle for an open session with the filter engine. This handle is obtained when a session is
      opened by calling 
      <a href="/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmengineopen0">FwpmEngineOpen0</a>.
 
-### -param enumHandle 
+### -param enumHandle [in]
 
-[in]
+
 The enumeration handle created by a previous call to 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsaleendpointdestroyenumhandle0">FwpsAleEndpointDestroyEnumHandle0</a>.
 
-### -param numEntriesRequested 
+### -param numEntriesRequested [in]
 
-[in]
+
 The maximum number of endpoint property entries to return. The actual number of entries enumerated
      is returned in 
      <i>numEntriesReturned</i>. The actual number is less than the requested number only if fewer endpoints
      than the requested are present.
 
-### -param entries 
+### -param entries [out]
 
-[out]
+
 A pointer to an array of 
      <a href="/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_ale_endpoint_properties0">FWPS_ALE_ENDPOINT_PROPERTIES0</a> structure pointers. Each structure contains the properties of a
      single endpoint. The array contains as many elements as the value returned in 
      <i>numEntriesReturned</i>.
 
-### -param numEntriesReturned 
+### -param numEntriesReturned [out]
 
-[out]
+
 On return, the number of elements in the array of endpoint property structures pointed to by 
      <i>entries</i>.
 
@@ -133,6 +132,9 @@ To enumerate ALE endpoints, the callout driver must first obtain an enumeration 
 After obtaining a handle, the callout driver can call 
     <b>FwpsAleEndpointEnum0</b> to get information about the endpoints that match the enumeration parameters
     of the handle.
+
+Note that the localV4Address field from the returned FWPS_ALE_ENDPOINT_PROPERTIES0 is in host-byte order, while the localV6Address is in network-byte order. To use the IPv4 address
+    from the localV4Address field, you must call htonl() on the localV4Address to store it in an in_addr structure and ensure the sockaddr is correctly formatted.
 
 When finished examining endpoint properties, the callout driver must call 
     <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsaleendpointdestroyenumhandle0">FwpsAleEndpointDestroyEnumHandle0</a> to release the system resources associated with the enumeration

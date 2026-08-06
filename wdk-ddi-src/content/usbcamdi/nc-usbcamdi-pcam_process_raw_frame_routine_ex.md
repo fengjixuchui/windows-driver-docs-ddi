@@ -4,7 +4,6 @@ title: PCAM_PROCESS_RAW_FRAME_ROUTINE_EX (usbcamdi.h)
 description: A camera minidriver's CamProcessRawVideoFrameEx callback function decodes a raw video frame.
 old-location: stream\camprocessrawvideoframeex.htm
 tech.root: stream
-ms.assetid: 07b0d1ea-c099-474e-8dc8-cddec44836e2
 ms.date: 04/23/2018
 keywords: ["PCAM_PROCESS_RAW_FRAME_ROUTINE_EX callback function"]
 ms.keywords: CamProcessRawVideoFrameEx, CamProcessRawVideoFrameEx routine [Streaming Media Devices], PCAM_PROCESS_RAW_FRAME_ROUTINE_EX, stream.camprocessrawvideoframeex, usbcamdi/CamProcessRawVideoFrameEx, usbcmdpr_7ca6e89a-089c-4cf0-83e3-6324357a8566.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - usbcamdi.h
 api_name:
- - CamProcessRawVideoFrameEx
+ - PCAM_PROCESS_RAW_FRAME_ROUTINE_EX
 ---
 
 # PCAM_PROCESS_RAW_FRAME_ROUTINE_EX callback function
@@ -113,3 +112,4 @@ USBCAMD clears the stream header options flag before passing the raw frame to th
 The original USBCAMD does not call <b>CamProcessRawVideoFrameEx</b>.
 
 This function is optional.
+

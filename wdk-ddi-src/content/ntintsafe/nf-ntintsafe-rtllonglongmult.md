@@ -4,7 +4,6 @@ title: RtlLongLongMult function (ntintsafe.h)
 description: Multiplies one value of type LONGLONG by another.
 old-location: kernel\rtllonglongmult.htm
 tech.root: kernel
-ms.assetid: E5FE5EDB-D11D-4EF7-9CEA-CF059398A063
 ms.date: 04/30/2018
 keywords: ["RtlLongLongMult function"]
 ms.keywords: RtlLongLongMult, RtlLongLongMult function [Kernel-Mode Driver Architecture], kernel.rtllonglongmult, ntintsafe/RtlLongLongMult
@@ -50,19 +49,19 @@ Multiplies one value of type <b>LONGLONG</b> by another.
 
 ## -parameters
 
-### -param llMultiplicand 
+### -param llMultiplicand [in]
 
-[in]
+
 The value to be multiplied by <i>llMultiplier</i>.
 
-### -param llMultiplier 
+### -param llMultiplier [in]
 
-[in]
+
 The value by which to multiply <i>llMultiplicand</i>.
 
-### -param pllResult 
+### -param pllResult [out]
 
-[out]
+
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

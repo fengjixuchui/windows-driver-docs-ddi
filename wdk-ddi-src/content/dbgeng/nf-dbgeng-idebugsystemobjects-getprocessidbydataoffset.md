@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSystemObjects.GetProcessIdByDataOffset
 title: IDebugSystemObjects::GetProcessIdByDataOffset (dbgeng.h)
-description: The GetProcessIdByDataOffset method returns the engine process ID for the specified process. The process is specified by its data offset.
+description: "The IDebugSystemObjects::GetProcessIdByDataOffset method returns the engine process ID for the specified process. The process is specified by its data offset."
 old-location: debugger\getprocessidbydataoffset.htm
 tech.root: debugger
-ms.assetid: a2c094f4-f54d-4c3c-95e7-75df717db8cc
 ms.date: 05/03/2018
 keywords: ["IDebugSystemObjects::GetProcessIdByDataOffset"]
 ms.keywords: GetProcessIdByDataOffset, GetProcessIdByDataOffset method [Windows Debugging], GetProcessIdByDataOffset method [Windows Debugging],IDebugSystemObjects interface, GetProcessIdByDataOffset method [Windows Debugging],IDebugSystemObjects2 interface, GetProcessIdByDataOffset method [Windows Debugging],IDebugSystemObjects3 interface, GetProcessIdByDataOffset method [Windows Debugging],IDebugSystemObjects4 interface, IDebugSystemObjects interface [Windows Debugging],GetProcessIdByDataOffset method, IDebugSystemObjects.GetProcessIdByDataOffset, IDebugSystemObjects2 interface [Windows Debugging],GetProcessIdByDataOffset method, IDebugSystemObjects2::GetProcessIdByDataOffset, IDebugSystemObjects3 interface [Windows Debugging],GetProcessIdByDataOffset method, IDebugSystemObjects3::GetProcessIdByDataOffset, IDebugSystemObjects4 interface [Windows Debugging],GetProcessIdByDataOffset method, IDebugSystemObjects4::GetProcessIdByDataOffset, IDebugSystemObjects::GetProcessIdByDataOffset, IDebugSystemObjects_8c7f276b-9a12-41ac-8c56-4e37b68d491d.xml, dbgeng/IDebugSystemObjects2::GetProcessIdByDataOffset, dbgeng/IDebugSystemObjects3::GetProcessIdByDataOffset, dbgeng/IDebugSystemObjects4::GetProcessIdByDataOffset, dbgeng/IDebugSystemObjects::GetProcessIdByDataOffset, debugger.getprocessidbydataoffset
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSystemObjects.GetProcessIdByDataOffset
- - IDebugSystemObjects2.GetProcessIdByDataOffset
- - IDebugSystemObjects3.GetProcessIdByDataOffset
- - IDebugSystemObjects4.GetProcessIdByDataOffset
+ - IDebugSystemObjects::GetProcessIdByDataOffset
 ---
 
 # IDebugSystemObjects::GetProcessIdByDataOffset
@@ -53,14 +49,14 @@ The <b>GetProcessIdByDataOffset</b> method returns the engine process ID for the
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the location in the target's virtual address space of the data offset of the process.
 
-### -param Id 
+### -param Id [out]
 
-[out]
+
 Receives the engine process ID for the process.
 
 ## -returns
@@ -103,3 +99,4 @@ This method is currently not available in kernel-mode debugging.
 In user-mode debugging, this method behaves the same as <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsystemobjects4-getprocessidbypeb">GetProcessIdByPeb</a>.
 
 For more information about processes, see <a href="/windows-hardware/drivers/debugger/threads-and-processes">Threads and Processes</a>.
+

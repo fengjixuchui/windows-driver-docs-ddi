@@ -1,11 +1,10 @@
 ---
 UID: NC:wdfcompanion.EVT_WDF_COMPANION_POST_RELEASE_HARDWARE
 title: EVT_WDF_COMPANION_POST_RELEASE_HARDWARE (wdfcompanion.h)
-description: For internal use only.
+description: This EVT_WDF_COMPANION_POST_RELEASE_HARDWARE article is for internal use only.
 old-location: wdf\evt_wdf_companion_post_release_hardware.htm
 tech.root: wdf
-ms.assetid: ebba5344-dc3a-443f-a080-991dd784eb54
-ms.date: 02/26/2018
+ms.date: 11/01/2021
 keywords: ["EVT_WDF_COMPANION_POST_RELEASE_HARDWARE callback function"]
 ms.keywords: EVT_WDF_COMPANION_POST_RELEASE_HARDWARE, EVT_WDF_COMPANION_POST_RELEASE_HARDWARE callback, EVT_WDF_COMPANION_POST_RELEASE_HARDWARE callback function, wdf.evt_wdf_companion_post_release_hardware, wdfcompanion/EVT_WDF_COMPANION_POST_RELEASE_HARDWARE
 req.header: wdfcompanion.h
@@ -50,11 +49,11 @@ api_name:
 
 ## -parameters
 
-### -param Companion 
+### -param Companion [in]
 
-[in]
 
-### -param ResourcesTranslated 
 
-[in]
+### -param ResourcesTranslated [in]
+
+## -returns
 

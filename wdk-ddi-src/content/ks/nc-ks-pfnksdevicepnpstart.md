@@ -4,7 +4,6 @@ title: PFNKSDEVICEPNPSTART (ks.h)
 description: An AVStream minidriver's AVStrMiniDeviceStart routine is called when an IRP_MN_START_DEVICE request is sent for a specified device.
 old-location: stream\avstrminidevicestart.htm
 tech.root: stream
-ms.assetid: 5a09a8b1-7a20-42e3-a58d-ecd4e7a0558e
 ms.date: 04/23/2018
 keywords: ["PFNKSDEVICEPNPSTART callback function"]
 ms.keywords: AVStrMiniDeviceStart, AVStrMiniDeviceStart routine [Streaming Media Devices], PFNKSDEVICEPNPSTART, avstclbk_b9fd90e7-3d9b-47a3-86c4-8df35f000269.xml, ks/AVStrMiniDeviceStart, stream.avstrminidevicestart
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - AVStrMiniDeviceStart
+ - PFNKSDEVICEPNPSTART
 ---
 
 # PFNKSDEVICEPNPSTART callback function
@@ -50,24 +49,24 @@ An AVStream minidriver's <i>AVStrMiniDeviceStart</i> routine is called when an <
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice">KSDEVICE</a> structure describing the device to be started.
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/kernel/irp-mn-start-device">IRP_MN_START_DEVICE</a> that was received.
 
-### -param TranslatedResourceList 
+### -param TranslatedResourceList [in, optional]
 
-[in, optional]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_resource_list">CM_RESOURCE_LIST</a> structure that contains the translated resource list extracted from <i>Irp</i>. Equals <b>NULL</b> if <i>Device</i> has no assigned resources. Optional.
 
-### -param UntranslatedResourceList 
+### -param UntranslatedResourceList [in, optional]
 
-[in, optional]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_resource_list">CM_RESOURCE_LIST</a> structure that contains the untranslated resource list extracted from <i>Irp</i>. Equals <b>NULL</b> if the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice">KSDEVICE</a> member of this parameter list has no assigned resources. Optional.
 
 ## -returns
@@ -93,3 +92,4 @@ This routine is optional.
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice_dispatch">KSDEVICE_DISPATCH</a>
+

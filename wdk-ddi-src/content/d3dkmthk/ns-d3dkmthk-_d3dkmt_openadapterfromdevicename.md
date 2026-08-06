@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_OPENADAPTERFROMDEVICENAME
 title: _D3DKMT_OPENADAPTERFROMDEVICENAME (d3dkmthk.h)
 description: The D3DKMT_OPENADAPTERFROMDEVICENAME structure describes the mapping of the given name of a device to a graphics adapter handle and monitor output.
 old-location: display\d3dkmt_openadapterfromdevicename.htm
-ms.assetid: 4e633c7c-fd88-4b8f-9d29-2c7a3daa3d32
 ms.date: 05/10/2018
 keywords: ["D3DKMT_OPENADAPTERFROMDEVICENAME structure"]
 ms.keywords: D3DKMT_OPENADAPTERFROMDEVICENAME, D3DKMT_OPENADAPTERFROMDEVICENAME structure [Display Devices], OpenGL_Structs_f710fec6-a0f4-4b86-b4ba-5f8411deb490.xml, _D3DKMT_OPENADAPTERFROMDEVICENAME, d3dkmthk/D3DKMT_OPENADAPTERFROMDEVICENAME, display.d3dkmt_openadapterfromdevicename
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_OPENADAPTERFROMDEVICENAME
  - D3DKMT_OPENADAPTERFROMDEVICENAME
 ---
 
@@ -52,18 +52,19 @@ The D3DKMT_OPENADAPTERFROMDEVICENAME structure describes the mapping of the give
 
 ## -struct-fields
 
-### -field pDeviceName
+### -field pDeviceName [in]
 
-[in] A Null-terminated string that contains the name of the device from which to open an adapter instance.
+A Null-terminated string that contains the name of the device from which to open an adapter instance.
 
-### -field hAdapter
+### -field hAdapter [out]
 
-[out] A handle to the graphics adapter for the device that <b>pDeviceName</b> specifies. The adapter handle is returned from the call to the <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtopenadapterfromdevicename">D3DKMTOpenAdapterFromDeviceName</a> function.
+A handle to the graphics adapter for the device that <b>pDeviceName</b> specifies. The adapter handle is returned from the call to the <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtopenadapterfromdevicename">D3DKMTOpenAdapterFromDeviceName</a> function.
 
-### -field AdapterLuid
+### -field AdapterLuid [out]
 
-[out] The locally unique identifier (<a href="/windows-hardware/drivers/ddi/igpupvdev/ns-igpupvdev-_luid">LUID</a>) of the graphics adapter for the device that <b>pDeviceName</b> specifies. The LUID is returned from the <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtopenadapterfromdevicename">D3DKMTOpenAdapterFromDeviceName</a> call.
+The locally unique identifier (<a href="/windows-hardware/drivers/ddi/igpupvdev/ns-igpupvdev-_luid">LUID</a>) of the graphics adapter for the device that <b>pDeviceName</b> specifies. The LUID is returned from the <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtopenadapterfromdevicename">D3DKMTOpenAdapterFromDeviceName</a> call.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtopenadapterfromdevicename">D3DKMTOpenAdapterFromDeviceName</a>
+

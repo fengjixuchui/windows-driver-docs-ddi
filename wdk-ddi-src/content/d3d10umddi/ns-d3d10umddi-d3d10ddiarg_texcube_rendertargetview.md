@@ -3,7 +3,6 @@ UID: NS:d3d10umddi.D3D10DDIARG_TEXCUBE_RENDERTARGETVIEW
 title: D3D10DDIARG_TEXCUBE_RENDERTARGETVIEW (d3d10umddi.h)
 description: The D3D10DDIARG_TEXCUBE_RENDERTARGETVIEW structure describes a cube texture that is used to create a render target view in a call to the CreateRenderTargetView function.
 old-location: display\d3d10ddiarg_texcube_rendertargetview.htm
-ms.assetid: cffd2c5d-847b-4ecd-b99d-5916e7b5bbd0
 ms.date: 05/10/2018
 keywords: ["D3D10DDIARG_TEXCUBE_RENDERTARGETVIEW structure"]
 ms.keywords: D3D10DDIARG_TEXCUBE_RENDERTARGETVIEW, D3D10DDIARG_TEXCUBE_RENDERTARGETVIEW structure [Display Devices], UMDisplayDriver_Dx10param_Structs_ae4aad64-f7e2-4c42-9abc-0f241842170a.xml, d3d10umddi/D3D10DDIARG_TEXCUBE_RENDERTARGETVIEW, display.d3d10ddiarg_texcube_rendertargetview
@@ -50,17 +49,17 @@ The D3D10DDIARG_TEXCUBE_RENDERTARGETVIEW structure describes a cube texture that
 
 ## -struct-fields
 
-### -field MipSlice
+### -field MipSlice [in]
 
-[in] The identifier of the MIP-map slice.
+The identifier of the MIP-map slice.
 
-### -field FirstArraySlice
+### -field FirstArraySlice [in]
 
-[in] The identifier of the first array slice.
+The identifier of the first array slice.
 
-### -field ArraySize
+### -field ArraySize [in]
 
-[in] The number of array slices for the texture.
+The number of array slices for the texture.
 
 ## -see-also
 

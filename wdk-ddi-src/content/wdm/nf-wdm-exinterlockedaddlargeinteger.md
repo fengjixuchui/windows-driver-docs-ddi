@@ -4,7 +4,6 @@ title: ExInterlockedAddLargeInteger function (wdm.h)
 description: The ExInterlockedAddLargeInteger routine adds a large integer value to the specified variable as an atomic operation.
 old-location: kernel\exinterlockedaddlargeinteger.htm
 tech.root: kernel
-ms.assetid: ace8405b-74a7-4797-8d3d-3caf673dace2
 ms.date: 04/30/2018
 keywords: ["ExInterlockedAddLargeInteger function"]
 ms.keywords: ExInterlockedAddLargeInteger, ExInterlockedAddLargeInteger routine [Kernel-Mode Driver Architecture], k102_934a3a64-9f63-402c-8b55-db7e2b4d9d4b.xml, kernel.exinterlockedaddlargeinteger, wdm/ExInterlockedAddLargeInteger
@@ -50,19 +49,19 @@ The <b>ExInterlockedAddLargeInteger</b> routine adds a large integer value to th
 
 ## -parameters
 
-### -param Addend 
+### -param Addend [in, out]
 
-[in, out]
+
 A pointer to the variable to be adjusted by the <i>Increment</i> value.
 
-### -param Increment 
+### -param Increment [in]
 
-[in]
+
 Specifies a value to be added to <i>Addend</i>.
 
-### -param Lock 
+### -param Lock [in, out]
 
-[in, out]
+
 A pointer to a spin lock to be used to synchronize access to <i>Addend</i>.
 
 ## -returns

@@ -4,7 +4,6 @@ title: PFND3DDDI_OFFERRESOURCES (d3dumddi.h)
 description: Called by the Microsoft Direct3D runtime to request that the user-mode display driver offer video memory resources for reuse.
 old-location: display\offerresources.htm
 tech.root: display
-ms.assetid: 68551AD7-AC0C-4138-948F-33773F02DA41
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_OFFERRESOURCES callback function"]
 ms.keywords: OfferResources, OfferResources callback function [Display Devices], PFND3DDDI_OFFERRESOURCES, PFND3DDDI_OFFERRESOURCES callback, d3dumddi/OfferResources, display.offerresources
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - OfferResources
-product:
- - Windows
+ - PFND3DDDI_OFFERRESOURCES
 ---
 
 # PFND3DDDI_OFFERRESOURCES callback function
@@ -56,7 +53,7 @@ Called by the Microsoft Direct3D runtime to request that the user-mode display d
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -96,3 +93,4 @@ If the driver uses the <a href="/windows-hardware/drivers/display/requesting-to-
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_reclaimresources">ReclaimResources</a>
+

@@ -4,7 +4,6 @@ title: StorPortFreeTimer function (storport.h)
 description: Frees a Storport timer context object previously created by the StorPortInitializeTimer routine.
 old-location: storage\storportfreetimer.htm
 tech.root: storage
-ms.assetid: AF6B1693-6242-4F09-8226-472E75B809F3
 ms.date: 03/29/2018
 keywords: ["StorPortFreeTimer function"]
 ms.keywords: StorPortFreeTimer, StorPortFreeTimer routine [Storage Devices], storage.storportfreetimer, storport/StorPortFreeTimer
@@ -50,14 +49,14 @@ Frees a Storport timer context object previously created by the <a href="/window
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param TimerHandle 
+### -param TimerHandle [in]
 
-[in]
+
 A pointer to an opaque buffer for the timer context returned by <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitializetimer">StorPortInitializeTimer</a>.
 
 ## -returns

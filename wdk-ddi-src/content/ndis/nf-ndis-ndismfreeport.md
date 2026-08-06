@@ -4,7 +4,6 @@ title: NdisMFreePort function (ndis.h)
 description: The NdisMFreePort function frees an NDIS port that was previously allocated with the NdisMAllocatePort function.
 old-location: netvista\ndismfreeport.htm
 tech.root: netvista
-ms.assetid: 38d53977-ada2-41b9-8b6a-a3bd691f4525
 ms.date: 05/02/2018
 keywords: ["NdisMFreePort function"]
 ms.keywords: NdisMFreePort, NdisMFreePort function [Network Drivers Starting with Windows Vista], ndis/NdisMFreePort, ndis_ports_ref_b5b73dda-9bc0-4d7d-a265-d50d1436c8f4.xml, netvista.ndismfreeport
@@ -60,9 +59,9 @@ The miniport adapter handle that NDIS passed to the
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">
      MiniportInitializeEx</a> function.
 
-### -param PortNumber 
+### -param PortNumber [in]
 
-[in]
+
 The number of the NDIS port that NDIS should free. The 
      <i>PortNumber</i> value is an NDIS_PORT_NUMBER value, which has a ULONG data type. NDIS provided the port
      number in the 

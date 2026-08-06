@@ -4,7 +4,6 @@ title: IOCTL_PAR_GET_DEVICE_CAPS (ntddpar.h)
 description: The IOCTL_PAR_GET_DEVICE_CAPS request does the following:Specifies the protocols that the system-supplied bus driver for parallel ports must not use with a parallel deviceReturns the operating protocols that the parallel device supportsFor more information, see Setting and Clearing a Communication Mode for a Parallel Device.
 old-location: parports\ioctl_par_get_device_caps.htm
 tech.root: parports
-ms.assetid: 6446d667-1a35-4055-b9e7-41d372df9db2
 ms.date: 02/15/2018
 keywords: ["IOCTL_PAR_GET_DEVICE_CAPS IOCTL"]
 ms.keywords: IOCTL_PAR_GET_DEVICE_CAPS, IOCTL_PAR_GET_DEVICE_CAPS control code [Parallel Ports], cisspd_ea215140-7641-4554-bf95-362942d13143.xml, ntddpar/IOCTL_PAR_GET_DEVICE_CAPS, parports.ioctl_par_get_device_caps
@@ -67,6 +66,8 @@ Returns the operating protocols that the parallel device supports
 For more information, see <a href="/previous-versions/ff544797(v=vs.85)">Setting and Clearing a Communication Mode for a Parallel Device</a>.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

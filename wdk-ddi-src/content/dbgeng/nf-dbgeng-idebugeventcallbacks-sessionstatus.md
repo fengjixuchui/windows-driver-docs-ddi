@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugEventCallbacks.SessionStatus
 title: IDebugEventCallbacks::SessionStatus (dbgeng.h)
-description: The SessionStatus callback method is called by the engine when a change occurs in the debugger session.
+description: The SessionStatus callback method is called by the engine when a change occurs in the debugger session. This method belongs to IDebugEventCallbacks.
 old-location: debugger\idebugeventcallbacks_sessionstatus.htm
 tech.root: debugger
-ms.assetid: 127c4e48-87db-4735-8d3d-e01fed6a9cf0
 ms.date: 05/03/2018
 keywords: ["IDebugEventCallbacks::SessionStatus"]
 ms.keywords: ComCallbacks_72cb31db-cc24-41b7-b891-65921c50ce12.xml, IDebugEventCallbacks interface [Windows Debugging],SessionStatus method, IDebugEventCallbacks.SessionStatus, IDebugEventCallbacks::SessionStatus, SessionStatus, SessionStatus method [Windows Debugging], SessionStatus method [Windows Debugging],IDebugEventCallbacks interface, dbgeng/IDebugEventCallbacks::SessionStatus, debugger.idebugeventcallbacks_sessionstatus
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugEventCallbacks.SessionStatus
+ - IDebugEventCallbacks::SessionStatus
 ---
 
 # IDebugEventCallbacks::SessionStatus
@@ -50,9 +49,9 @@ The <b>SessionStatus</b> callback method is called by the engine when a change o
 
 ## -parameters
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 Specifies the new status of the debugger session.  The following table describes the possible values.
 
 <table>
@@ -155,3 +154,4 @@ After the engine has notified all the event callbacks of the change in the sessi
 In the DEBUG_SESSION_ACTIVE case, the engine follows the debugger session change notification with a target state change notification by calling <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugeventcallbacks-changedebuggeestate">IDebugEventCallbacks::ChangeDebuggeeState</a> on the event callbacks and passing DEBUG_CDS_ALL in the <i>Flags</i> parameter.  In all other cases, the engine precedes this notification with an engine state change notification by calling <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugeventcallbacks-changeenginestate">IDebugEventCallbacks::ChangeEngineState</a> on the event callbacks and passing DEBUG_CES_EXECUTION_STATUS in the <i>Flags</i> parameter.
 
 For more information about handling events, see <a href="/windows-hardware/drivers/debugger/monitoring-events">Monitoring Events</a>.  For information about debugger sessions, see <a href="/windows-hardware/drivers/debugger/debugging-session-and-execution-model">Debugging Session and Execution Model</a>.
+

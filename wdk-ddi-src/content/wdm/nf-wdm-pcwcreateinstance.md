@@ -2,10 +2,8 @@
 UID: NF:wdm.PcwCreateInstance
 title: PcwCreateInstance function (wdm.h)
 description: The PcwCreateInstance function creates a new instance for the specified registered counterset.
-old-location: devtest\pcwcreateinstance.htm
 tech.root: devtest
-ms.assetid: ed9bd8fa-a6e6-465a-8415-3e9c19233419
-ms.date: 07/28/2020
+ms.date: 01/12/2023
 keywords: ["PcwCreateInstance function"]
 ms.keywords: PcwCreateInstance, PcwCreateInstance function [Driver Development Tools], devtest.pcwcreateinstance, km_pcw_32dba149-fed7-4e86-b68c-1f3a6348cb7a.xml, wdm/PcwCreateInstance
 req.header: wdm.h
@@ -24,7 +22,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -41,47 +39,44 @@ api_name:
  - PcwCreateInstance
 ---
 
-# PcwCreateInstance function
-
-
 ## -description
 
 The `PcwCreateInstance` function creates a new counterset instance. Most developers will use a [CTRPP](/windows/win32/perfctrs/ctrpp)-generated CreateXxx function instead of calling this function directly.
 
 ## -parameters
 
-### -param Instance
+### -param Instance [out]
 
-[out] A pointer to receive the newly created instance. The instance should be closed using [PcwCloseInstance](nf-wdm-pcwcloseinstance.md).
+A pointer to receive the newly created instance. The instance should be closed using [PcwCloseInstance](nf-wdm-pcwcloseinstance.md).
 
-### -param Registration
+### -param Registration [in]
 
-[in] A pointer to the counterset registration that owns this instance. The registration is created using [PcwRegister](nf-wdm-pcwregister.md).
+A pointer to the counterset registration that owns this instance. The registration is created using [PcwRegister](nf-wdm-pcwregister.md).
 
-### -param Name
+### -param Name [in]
 
-[in] A pointer to the Unicode string that contains the name of the instance of the counterset. This must not be NULL.
+A pointer to the Unicode string that contains the name of the instance of the counterset. This must not be NULL.
 
 Instance `Name` values MUST be stable over time (the same logical instance should use the same `Name` value for all invocations of the callback) and MUST be unique. If the counterset is registered as single-instance, the instance `Name` should be blank (0-length). If the counterset registered as multi-instance, the instance `Name` should not be blank. Instance name matching is not case-sensitive, so `Name` values should not differ only by case.
 
-### -param Count
+### -param Count [in]
 
-[in] The number of descriptors provided in the `Data` parameter.
+The number of descriptors provided in the `Data` parameter.
 
-### -param Data
+### -param Data [in]
 
-[in] An array of descriptors for the provider data blocks that contain the counter values of this instance. The data blocks referenced by the descriptors may be accessed at any time and must remain valid until the instance is closed by `PcwCloseInstance` or `PcwUnregister`.
+An array of descriptors for the provider data blocks that contain the counter values of this instance. The data blocks referenced by the descriptors may be accessed at any time and must remain valid until the instance is closed by `PcwCloseInstance` or `PcwUnregister`.
 
 ## -returns
 
 `PcwCreateInstance` returns one of the following values:
 
-|Return code|Description
-|---|---
-|`STATUS_SUCCESS`|The instance was successfully created.
-|`STATUS_INVALID_PARAMETER_4`|The number of structures, specified by `Count`, is not valid for the registered provider.
-|`STATUS_INVALID_BUFFER_SIZE`|One of the provider data blocks is too small. For example, suppose that during the call to [PcwRegister](nf-wdm-pcwregister.md), the provider specifies that counter `X` is at offset 100 of the first data block of size 4 bytes. If the call to `PcwCreateInstance` specifies that the first data block is 50 bytes, this error status is returned.
-|`STATUS_INTEGER_OVERFLOW`|The size of the structure, specified by `Count`, overflows the data buffer,
+| Return code | Description |
+|---|---|
+| `STATUS_SUCCESS` | The instance was successfully created. |
+| `STATUS_INVALID_PARAMETER_4` | The number of structures, specified by `Count`, is not valid for the registered provider. |
+| `STATUS_INVALID_BUFFER_SIZE` | One of the provider data blocks is too small. For example, suppose that during the call to [PcwRegister](nf-wdm-pcwregister.md), the provider specifies that counter `X` is at offset 100 of the first data block of size 4 bytes. If the call to `PcwCreateInstance` specifies that the first data block is 50 bytes, this error status is returned. |
+| `STATUS_INTEGER_OVERFLOW` | The size of the structure, specified by `Count`, overflows the data buffer. |
 
 ## -remarks
 
@@ -104,7 +99,7 @@ Use the PcwCloseInstance function to close the instance.
 
 Most developers do not need to call `PcwCreateInstance` directly. Instead, they will compile a manifest with the CTRPP tool and use the CreateXxx function from the CTRPP-generated header. The generated function will look like this:
 
-```C
+```c
 EXTERN_C __inline NTSTATUS
 CreateMyCounterset(
     __deref_out PPCW_INSTANCE *Instance,

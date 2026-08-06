@@ -4,7 +4,6 @@ title: GPIO_CLX_RegisterClient function (gpioclx.h)
 description: The GPIO_CLX_RegisterClient method registers a general-purpose I/O (GPIO) controller driver as a client of the GPIO framework extension (GpioClx).
 old-location: gpio\gpio_clx_registerclient.htm
 tech.root: GPIO
-ms.assetid: C87385E0-7B3F-44DA-90D0-E644C58AB375
 ms.date: 02/15/2018
 keywords: ["GPIO_CLX_RegisterClient function"]
 ms.keywords: GPIO.gpio_clx_registerclient, GPIO_CLX_RegisterClient, GPIO_CLX_RegisterClient method [Parallel Ports], gpioclx/GPIO_CLX_RegisterClient
@@ -51,19 +50,19 @@ The <b>GPIO_CLX_RegisterClient</b> method registers a general-purpose I/O (GPIO)
 
 ## -parameters
 
-### -param Driver 
+### -param Driver [in]
 
-[in]
+
 A WDFDRIVER handle to the framework driver object for the GPIO controller driver.
 
-### -param RegistrationPacket 
+### -param RegistrationPacket [in, out]
 
-[in, out]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_client_registration_packet">GPIO_CLIENT_REGISTRATION_PACKET</a> structure that contains the caller's registration information. This structure contains pointers to the event callback functions that the GPIO controller driver implements. Additionally, this structure specifies the size of the device context that the GPIO controller driver requires for its internal configuration data and state information.
 
-### -param RegistryPath 
+### -param RegistryPath [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains the path name of the registry key for the  GPIO controller driver. This parameter should be the registry path name that was passed to the driver's <a href="/windows-hardware/drivers/storage/driverentry-of-ide-controller-minidriver">DriverEntry</a> routine. For more information about driver registry keys, see <a href="/windows-hardware/drivers/install/overview-of-registry-trees-and-keys">Registry Trees for Devices and Drivers</a>.
 
 ## -returns

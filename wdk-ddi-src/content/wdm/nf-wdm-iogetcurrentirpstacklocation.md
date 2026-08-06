@@ -4,7 +4,6 @@ title: IoGetCurrentIrpStackLocation function (wdm.h)
 description: The IoGetCurrentIrpStackLocation routine returns a pointer to the caller's I/O stack location in the specified IRP.
 old-location: kernel\iogetcurrentirpstacklocation.htm
 tech.root: kernel
-ms.assetid: 75144188-728b-4613-ac69-8cadf0f60233
 ms.date: 04/30/2018
 keywords: ["IoGetCurrentIrpStackLocation function"]
 ms.keywords: IoGetCurrentIrpStackLocation, IoGetCurrentIrpStackLocation routine [Kernel-Mode Driver Architecture], k104_f92e53c7-8a26-4cb0-859b-b0a7be4dce6a.xml, kernel.iogetcurrentirpstacklocation, wdm/IoGetCurrentIrpStackLocation
@@ -50,9 +49,9 @@ The <b>IoGetCurrentIrpStackLocation</b> routine returns a pointer to the caller'
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp">IRP</a>.
 
 ## -returns
@@ -63,7 +62,7 @@ A pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp">IRP</a>
 
 Every driver must call <b>IoGetCurrentIrpStackLocation</b> with each IRP it is sent in order to get any parameters for the current request. Unless a driver supplies a dispatch routine for each <b>IRP_MJ_<i>XXX</i></b> code that the driver handles, the driver also must check its I/O stack location in the IRP to determine what operation is being requested.
 
-If a driver is passing the same parameters that it received to the next-lower driver, it should call <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext">IoCopyCurrentIrpStackLocationToNext</a> or <a href="/windows-hardware/drivers/kernel/mm-bad-pointer">IoSkipCurrentIrpStackLocation</a> instead of getting a pointer to the next-lower stack location and copying the parameters manually.
+If a driver is passing the same parameters that it received to the next-lower driver, it should call <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iocopycurrentirpstacklocationtonext">IoCopyCurrentIrpStackLocationToNext</a> or [IoSkipCurrentIrpStackLocation](./nf-wdm-ioskipcurrentirpstacklocation.md) instead of getting a pointer to the next-lower stack location and copying the parameters manually.
 
 ## -see-also
 

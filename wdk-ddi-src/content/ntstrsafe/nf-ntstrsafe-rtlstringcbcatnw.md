@@ -1,10 +1,9 @@
 ---
 UID: NF:ntstrsafe.RtlStringCbCatNW
 title: RtlStringCbCatNW function (ntstrsafe.h)
-description: The RtlStringCbCatNW and RtlStringCbCatNA functions concatenate two byte-counted strings while limiting the size of the appended string.
+description: Learn how the RtlStringCbCatNW and RtlStringCbCatNA functions concatenate two byte-counted strings while limiting the size of the appended string.
 old-location: kernel\rtlstringcbcatn.htm
 tech.root: kernel
-ms.assetid: 60ecabb1-5607-4962-82c6-8081916b507d
 ms.date: 04/30/2018
 keywords: ["RtlStringCbCatNW function"]
 ms.keywords: RtlStringCbCatN, RtlStringCbCatNA, RtlStringCbCatNW, RtlStringCbCatNW function [Kernel-Mode Driver Architecture], kernel.rtlstringcbcatn, ntstrsafe/RtlStringCbCatNA, ntstrsafe/RtlStringCbCatNW, safestrings_3f453d8e-bae5-466f-a55a-2b6a68d5cb57.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -40,8 +39,6 @@ api_location:
  - Ntstrsafe.dll
 api_name:
  - RtlStringCbCatNW
- - RtlStringCbCatNA
- - RtlStringCbCatNW
 ---
 
 # RtlStringCbCatNW function
@@ -53,23 +50,23 @@ The <b>RtlStringCbCatNW</b> and <b>RtlStringCbCatNA</b> functions concatenate tw
 
 ## -parameters
 
-### -param pszDest 
+### -param pszDest [in, out]
 
-[in, out]
+
 Pointer to a buffer which, on input, contains a null-terminated string to which <i>pszSrc</i> will be concatenated. On output, this is the destination buffer that contains the entire resultant string. The string at <i>pszSrc</i>, up to <i>cbMaxAppend</i> bytes, is added to the end of the string at <i>pszDest</i> and terminated with a null character.
 
-### -param cbDest 
+### -param cbDest [in]
 
-[in]
+
 The size of the destination buffer, in bytes. The buffer must be large enough to include both strings and the terminating null character.
 
 For Unicode strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * sizeof(WCHAR). 
 
 For ANSI strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * sizeof(char).
 
-### -param pszSrc 
+### -param pszSrc [in]
 
-[in]
+
 Pointer to a null-terminated string. This string will be concatenated to the end of the string that is contained in the buffer at <i>pszDest</i>.
 
 ### -param cbToAppend
@@ -200,3 +197,4 @@ For more information about the safe string functions, see <a href="/windows-hard
 
 
 <a href="/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcchcatna">RtlStringCchCatN</a>
+

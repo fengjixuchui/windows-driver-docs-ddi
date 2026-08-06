@@ -4,7 +4,6 @@ title: IMiniportStreamAudioEngineNode::SetStreamChannelMute (portcls.h)
 description: Sets the state of the Mute node in the path of the audio stream.
 old-location: audio\iminiportstreamaudioenginenode_setstreamchannelmute.htm
 tech.root: audio
-ms.assetid: AAD0101E-13FB-48A2-8834-799472B93931
 ms.date: 05/08/2018
 keywords: ["IMiniportStreamAudioEngineNode::SetStreamChannelMute"]
 ms.keywords: IMiniportStreamAudioEngineNode interface [Audio Devices],SetStreamChannelMute method, IMiniportStreamAudioEngineNode.SetStreamChannelMute, IMiniportStreamAudioEngineNode::SetStreamChannelMute, SetStreamChannelMute, SetStreamChannelMute method [Audio Devices], SetStreamChannelMute method [Audio Devices],IMiniportStreamAudioEngineNode interface, audio.iminiportstreamaudioenginenode_setstreamchannelmute, portcls/IMiniportStreamAudioEngineNode::SetStreamChannelMute
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IMiniportStreamAudioEngineNode.SetStreamChannelMute
+ - IMiniportStreamAudioEngineNode::SetStreamChannelMute
 ---
 
 # IMiniportStreamAudioEngineNode::SetStreamChannelMute
@@ -50,14 +49,14 @@ Sets the state of the Mute node in the path of the audio stream.
 
 ## -parameters
 
-### -param ulChannel 
+### -param ulChannel [in]
 
-[in]
+
 The channel for the audio stream.
 
-### -param bMute 
+### -param bMute [in]
 
-[in]
+
 The state to which the Mute node will be set.
 
 ## -returns
@@ -69,3 +68,4 @@ code.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportstreamaudioenginenode">IMiniportStreamAudioEngineNode</a>
+

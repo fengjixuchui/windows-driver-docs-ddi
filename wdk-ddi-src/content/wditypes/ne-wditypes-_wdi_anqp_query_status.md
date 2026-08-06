@@ -4,7 +4,6 @@ title: _WDI_ANQP_QUERY_STATUS (wditypes.h)
 description: The WDI_ANQP_QUERY_STATUS enumeration defines the Access Network Query Protocol (ANQP) query status values.
 old-location: netvista\wdi_anqp_query_status.htm
 tech.root: netvista
-ms.assetid: 5EC1B41D-2A6F-43B7-9E22-8A65CF4E11CA
 ms.date: 05/02/2018
 keywords: ["WDI_ANQP_QUERY_STATUS enumeration"]
 ms.keywords: WDI_ANQP_QUERY_STATUS, WDI_ANQP_QUERY_STATUS enumeration [Network Drivers Starting with Windows Vista], WDI_ANQP_QUERY_STATUS_ACCESS_ISSUES, WDI_ANQP_QUERY_STATUS_ADVERTISEMENT_PROTOCOL_NOT_SUPPORTED_ON_REMOTE, WDI_ANQP_QUERY_STATUS_ADVERTISEMENT_SERVER_NOT_RESPONDING, WDI_ANQP_QUERY_STATUS_FAILURE, WDI_ANQP_QUERY_STATUS_GAS_PROTOCOL_FAILURE, WDI_ANQP_QUERY_STATUS_RESOURCES, WDI_ANQP_QUERY_STATUS_SUCCESS, WDI_ANQP_QUERY_STATUS_TIMED_OUT, _WDI_ANQP_QUERY_STATUS, netvista.wdi_anqp_query_status, netvista.wifi_anqp_query_status, wditypes/WDI_ANQP_QUERY_STATUS, wditypes/WDI_ANQP_QUERY_STATUS_ACCESS_ISSUES, wditypes/WDI_ANQP_QUERY_STATUS_ADVERTISEMENT_PROTOCOL_NOT_SUPPORTED_ON_REMOTE, wditypes/WDI_ANQP_QUERY_STATUS_ADVERTISEMENT_SERVER_NOT_RESPONDING, wditypes/WDI_ANQP_QUERY_STATUS_FAILURE, wditypes/WDI_ANQP_QUERY_STATUS_GAS_PROTOCOL_FAILURE, wditypes/WDI_ANQP_QUERY_STATUS_RESOURCES, wditypes/WDI_ANQP_QUERY_STATUS_SUCCESS, wditypes/WDI_ANQP_QUERY_STATUS_TIMED_OUT
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_ANQP_QUERY_STATUS
  - WDI_ANQP_QUERY_STATUS
 ---
 
@@ -47,6 +47,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_ANQP_QUERY_STATUS enumeration defines the Access Network Query Protocol (ANQP) query status values.
 

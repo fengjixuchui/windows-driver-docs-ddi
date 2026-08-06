@@ -4,7 +4,6 @@ title: SdpCreateNodeUInt8 function (sdplib.h)
 description: The Bluetooth SdpCreateNodeUInt8 function is used to allocate and initialize an SDP_NODE structure to an unsigned 8-bit integer type.
 old-location: bltooth\sdpcreatenodeuint8.htm
 tech.root: bltooth
-ms.assetid: b5ac8079-032f-4d25-ba12-8fdc0622b8b5
 ms.date: 04/27/2018
 keywords: ["SdpCreateNodeUInt8 function"]
 ms.keywords: SdpCreateNodeUInt8, SdpCreateNodeUInt8 function [Bluetooth Devices], bltooth.sdpcreatenodeuint8, bth_funcs_836c7c8c-76a0-4bce-8b30-79550dd5f173.xml, sdplib/SdpCreateNodeUInt8
@@ -53,14 +52,14 @@ The Bluetooth
 
 ## -parameters
 
-### -param ucVal 
+### -param ucVal [in]
 
-[in]
+
 The unsigned 8-bit integer value that is used to initialize the SDP_NODE structure.
 
-### -param tag 
+### -param tag [in]
 
-[in]
+
 A profile driver defined tag to associate with the node.
 
 ## -returns

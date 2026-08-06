@@ -4,7 +4,6 @@ title: IOCTL_NFCSE_HCE_REMOTE_RECV (nfcsedev.h)
 description: Either returns the next data buffer available, or if there are no more buffered data, the request shall stay pending until an APDU buffer is available for reading.
 old-location: nfpdrivers\ioctl_nfcse_hce_remote_recv.htm
 tech.root: nfpdrivers
-ms.assetid: 398AFAEF-D0A9-4BBE-8884-1854C95AA878
 ms.date: 02/15/2018
 keywords: ["IOCTL_NFCSE_HCE_REMOTE_RECV IOCTL"]
 ms.keywords: IOCTL_NFCSE_HCE_REMOTE_RECV, IOCTL_NFCSE_HCE_REMOTE_RECV control, IOCTL_NFCSE_HCE_REMOTE_RECV control code [Near-Field Proximity Drivers], nfcsedev/IOCTL_NFCSE_HCE_REMOTE_RECV, nfpdrivers.ioctl_nfcse_hce_remote_recv
@@ -49,6 +48,8 @@ api_name:
 Either returns the next data buffer available, or if there are no more buffered data, the request shall stay pending until an APDU buffer is available for reading. The data buffer shall then be returned to the caller. Note that the caller must allocate an output buffer large enough to hold the largest APDU that has been received + 4 bytes overhead.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

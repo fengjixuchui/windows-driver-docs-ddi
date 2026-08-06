@@ -4,7 +4,6 @@ title: IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR (bthhfpddi.h)
 description: The audio driver issues the IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR control code to get information about an enabled GUID_DEVINTERFACE_BLUETOOTH_HFP_SCO_HCIBYPASS device interface.
 old-location: audio\ioctl_bthhfp_device_get_descriptor.htm
 tech.root: audio
-ms.assetid: 94B5E83E-8151-4BD6-9E1E-6C96B460D65F
 ms.date: 05/08/2018
 keywords: ["IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR IOCTL"]
 ms.keywords: IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR, IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR control, IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR control code [Audio Devices], audio.ioctl_bthhfp_device_get_descriptor, bthhfpddi/IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR
@@ -51,6 +50,8 @@ The audio driver issues the <b>IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR</b>
 <div class="alert"><b>Note</b>  This IOCTL supersedes <a href="/windows-hardware/drivers/ddi/bthhfpddi/ni-bthhfpddi-ioctl_bthhfp_device_get_ksnodetypes">IOCTL_BTHHFP_DEVICE_GET_KSNODETYPES</a> and <a href="/windows-hardware/drivers/ddi/bthhfpddi/ni-bthhfpddi-ioctl_bthhfp_device_get_containerid">IOCTL_BTHHFP_DEVICE_GET_CONTAINERID</a> which have now been deprecated.</div><div> </div>
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

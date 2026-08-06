@@ -4,7 +4,6 @@ title: IoSetIoPriorityHint function (wdm.h)
 description: The IoSetIoPriorityHint routine sets the priority hint value for an IRP.
 old-location: kernel\iosetiopriorityhint.htm
 tech.root: kernel
-ms.assetid: ecd4ed14-b9f2-45ff-a42b-5c67f1ccfd91
 ms.date: 04/30/2018
 keywords: ["IoSetIoPriorityHint function"]
 ms.keywords: IoSetIoPriorityHint, IoSetIoPriorityHint routine [Kernel-Mode Driver Architecture], k104_9d72dacc-03a6-4dda-8c2b-69b59a817392.xml, kernel.iosetiopriorityhint, wdm/IoSetIoPriorityHint
@@ -50,14 +49,14 @@ The <b>IoSetIoPriorityHint</b> routine sets the <a href="/windows-hardware/drive
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Specifies the IRP to set the priority hint value for.
 
-### -param PriorityHint 
+### -param PriorityHint [in]
 
-[in]
+
 Specifies the <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_io_priority_hint">IO_PRIORITY_HINT</a> value that indicates the new priority hint.
 
 ## -returns

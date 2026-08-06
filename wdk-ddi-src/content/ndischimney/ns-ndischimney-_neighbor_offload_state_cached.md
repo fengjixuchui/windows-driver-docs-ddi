@@ -4,7 +4,6 @@ title: _NEIGHBOR_OFFLOAD_STATE_CACHED (ndischimney.h)
 description: The NEIGHBOR_OFFLOAD_STATE_CACHED structure contains the cached variables of a neighbor state object.
 old-location: netvista\neighbor_offload_state_cached.htm
 tech.root: netvista
-ms.assetid: 5dedffa8-9745-4668-8646-0e896942b9c8
 ms.date: 05/02/2018
 keywords: ["NEIGHBOR_OFFLOAD_STATE_CACHED structure"]
 ms.keywords: "*PNEIGHBOR_OFFLOAD_STATE_CACHED, NEIGHBOR_OFFLOAD_STATE_CACHED, NEIGHBOR_OFFLOAD_STATE_CACHED structure [Network Drivers Starting with Windows Vista], PNEIGHBOR_OFFLOAD_STATE_CACHED, PNEIGHBOR_OFFLOAD_STATE_CACHED structure pointer [Network Drivers Starting with Windows Vista], _NEIGHBOR_OFFLOAD_STATE_CACHED, ndischimney/NEIGHBOR_OFFLOAD_STATE_CACHED, ndischimney/PNEIGHBOR_OFFLOAD_STATE_CACHED, netvista.neighbor_offload_state_cached, tcp_chim_struct_053f9a79-057c-4d4b-8ad1-2910f0ad4a9a.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndischimney.h
 api_name:
+ - _NEIGHBOR_OFFLOAD_STATE_CACHED
+ - PNEIGHBOR_OFFLOAD_STATE_CACHED
  - NEIGHBOR_OFFLOAD_STATE_CACHED
 ---
 
@@ -95,7 +96,7 @@ Cached variables are owned and maintained by the host stack. An offload target m
 When passed to an offload target, a NEIGHBOR_OFFLOAD_STATE_CACHED structure is associated with an 
     <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_miniport_offload_block_list">
     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure, which contains a header that is formatted as an 
-    <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure. The 
+    <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure. The 
     <b>Revision</b> member of the NDIS_OBJECT_HEADER structure, in this case, specifies the revision number of
     the NEIGHBOR_OFFLOAD_STATE_CACHED structure.
 
@@ -109,7 +110,7 @@ When passed to an offload target, a NEIGHBOR_OFFLOAD_STATE_CACHED structure is a
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -123,3 +124,4 @@ When passed to an offload target, a NEIGHBOR_OFFLOAD_STATE_CACHED structure is a
 
 
 <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_offload_state_header">OFFLOAD_STATE_HEADER</a>
+

@@ -1,9 +1,8 @@
 ---
 UID: NS:wdm._KBUGCHECK_SECONDARY_DUMP_DATA_EX
 title: _KBUGCHECK_SECONDARY_DUMP_DATA_EX
-description: 
-tech.root: 
-ms.assetid: 85ff55ca-e626-4214-9844-2eac78b9dcc5
+description: "Learn more about: _KBUGCHECK_SECONDARY_DUMP_DATA_EX structure"
+tech.root: devtest
 ms.date: 06/03/2019
 keywords: ["KBUGCHECK_SECONDARY_DUMP_DATA_EX structure"]
 ms.keywords: KBUGCHECK_SECONDARY_DUMP_DATA_EX, KBUGCHECK_SECONDARY_DUMP_DATA_EX, *PKBUGCHECK_SECONDARY_DUMP_DATA_EX,
@@ -36,8 +35,8 @@ api_location:
  - wdm.h
 api_name:
  - _KBUGCHECK_SECONDARY_DUMP_DATA_EX
-product:
- - Windows
+ - PKBUGCHECK_SECONDARY_DUMP_DATA_EX
+ - KBUGCHECK_SECONDARY_DUMP_DATA_EX
 ---
 
 # _KBUGCHECK_SECONDARY_DUMP_DATA_EX structure
@@ -139,3 +138,4 @@ For more information about bug check callback routines, see <a href="/windows-ha
 
 <a href="/windows-hardware/drivers/kernel/writing-a-bug-check-callback-routine">Writing a Bug Check Callback Routine</a>.
 [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](./nc-wdm-kbugcheck_reason_callback_routine.md)
+

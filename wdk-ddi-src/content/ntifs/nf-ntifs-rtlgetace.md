@@ -4,14 +4,13 @@ title: RtlGetAce function (ntifs.h)
 description: The RtlGetAce routine obtains a pointer to an access control entry (ACE) in an access control list (ACL).
 old-location: ifsk\rtlgetace.htm
 tech.root: ifsk
-ms.assetid: f528d20a-16f8-401f-a6e6-ab165a40e18a
 ms.date: 04/16/2018
 keywords: ["RtlGetAce function"]
 ms.keywords: RtlGetAce, RtlGetAce routine [Installable File System Drivers], ifsk.rtlgetace, ntifs/RtlGetAce, rtlref_e018acc3-f776-4d15-9e0b-9e34d286a746.xml
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows XP and later.
+req.target-min-winverclnt: Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -51,19 +50,19 @@ The <b>RtlGetAce</b> routine obtains a pointer to an access control entry (ACE) 
 
 ## -parameters
 
-### -param Acl 
+### -param Acl [in]
 
-[in]
+
 Pointer to an ACL containing the ACE to be retrieved.
 
-### -param AceIndex 
+### -param AceIndex [in]
 
-[in]
+
 Specifies the ACE to which a pointer is retrieved. A value of zero corresponds to the first ACE in the ACL, 1 to the second ACE, and so on.
 
-### -param Ace 
+### -param Ace [out]
 
-[out]
+
 Pointer to a caller-allocated variable to receive the address of the ACE within the ACL.
 
 ## -returns
@@ -72,7 +71,7 @@ Pointer to a caller-allocated variable to receive the address of the ACE within 
 
 ## -remarks
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

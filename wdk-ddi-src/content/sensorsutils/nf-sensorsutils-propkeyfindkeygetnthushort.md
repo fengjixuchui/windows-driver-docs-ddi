@@ -2,7 +2,6 @@
 UID: NF:sensorsutils.PropKeyFindKeyGetNthUshort
 title: PropKeyFindKeyGetNthUshort function (sensorsutils.h)
 description: This routine gets the nth USHORT value from a PROPVARIANT within a collection list based on the PROPERTYKEY.
-ms.assetid: 74a78f9f-10a9-4e19-98ac-ac118d3631b9
 ms.date: 08/08/2018
 keywords: ["PropKeyFindKeyGetNthUshort function"]
 tech.root: sensors
@@ -37,8 +36,6 @@ api_location:
  - sensorsutils.h
 api_name:
  - PropKeyFindKeyGetNthUshort
-product:
- - Windows
 ---
 
 # PropKeyFindKeyGetNthUshort function
@@ -50,21 +47,21 @@ This routine gets the nth USHORT value from a PROPVARIANT within a collection li
 
 ## -parameters
 
-### -param pList
+### -param pList [in]
 
-[in] Pointer to the list of PROPVARIANT collection.
+Pointer to the list of PROPVARIANT collection.
 
-### -param pKey
+### -param pKey [in]
 
-[in] Pointer to a PROPERTYKEY for the target PROPVARIANT
+Pointer to a PROPERTYKEY for the target PROPVARIANT
 
-### -param Occurrence
+### -param Occurrence [in]
 
-[in] Zero-based number of occurrence the PROPERTYKEY must be found before returning the value.
+Zero-based number of occurrence the PROPERTYKEY must be found before returning the value.
 
-### -param pRetValue
+### -param pRetValue [out]
 
-[out] Pointer to the output buffer.
+Pointer to the output buffer.
 
 ## -returns
 

@@ -4,7 +4,6 @@ title: PHW_PRIORITY_ROUTINE (strmini.h)
 description: StrMiniPriorityRoutine is a minidriver-supplied callback routine to be executed at a specified priority level.
 old-location: stream\strminipriorityroutine.htm
 tech.root: stream
-ms.assetid: 775ab6aa-eda7-4774-8fe8-8b1838b3972f
 ms.date: 04/23/2018
 keywords: ["PHW_PRIORITY_ROUTINE callback function"]
 ms.keywords: PHW_PRIORITY_ROUTINE, StrMiniPriorityRoutine, StrMiniPriorityRoutine routine [Streaming Media Devices], stream.strminipriorityroutine, strmini-routines_718339c9-e072-4d3e-a9ec-a0ce2cce4f90.xml, strmini/StrMiniPriorityRoutine
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - strmini.h
 api_name:
- - StrMiniPriorityRoutine
+ - PHW_PRIORITY_ROUTINE
 ---
 
 # PHW_PRIORITY_ROUTINE callback function
@@ -50,9 +49,9 @@ api_name:
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to a minidriver-allocated buffer. The minidriver provides a pointer to this buffer in the Context parameter of its call to <a href="/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclasscallatnewpriority">StreamClassCallAtNewPriority</a>.
 
 ## -remarks
@@ -62,3 +61,4 @@ The minidriver provides a pointer to this routine in the <b>Priority</b> paramet
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/strmini/nf-strmini-streamclasscallatnewpriority">StreamClassCallAtNewPriority</a>
+

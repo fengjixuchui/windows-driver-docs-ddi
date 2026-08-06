@@ -1,9 +1,8 @@
 ---
 UID: NE:d3dkmthk._D3DKMT_GPU_PREFERENCE_QUERY_STATE
-title: _D3DKMT_GPU_PREFERENCE_QUERY_STATE (d3dkmthk.h)
-description: Specifies the GPU preference query state.
-ms.assetid: ff9a92ba-1cc6-4814-941d-33c829de7ca2
-ms.date: 10/19/2018
+title: D3DKMT_GPU_PREFERENCE_QUERY_STATE (d3dkmthk.h)
+description: Learn more about the D3DKMT_GPU_PREFERENCE_QUERY_STATE enumeration.
+ms.date: 04/10/2024
 keywords: ["D3DKMT_GPU_PREFERENCE_QUERY_STATE enumeration"]
 ms.keywords: _D3DKMT_GPU_PREFERENCE_QUERY_STATE, D3DKMT_GPU_PREFERENCE_QUERY_STATE,
 req.header: d3dkmthk.h
@@ -32,42 +31,47 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_GPU_PREFERENCE_QUERY_STATE
+ - D3DKMT_GPU_PREFERENCE_QUERY_STATE
 dev_langs:
  - c++
 ---
 
-# _D3DKMT_GPU_PREFERENCE_QUERY_STATE enumeration
-
+# D3DKMT_GPU_PREFERENCE_QUERY_STATE enumeration
 
 ## -description
 
-Specifies the GPU preference query state.
+A **D3DKMT_GPU_PREFERENCE_QUERY_STATE** value specifies the GPU preference for a query.
 
 ## -enum-fields
 
 ### -field D3DKMT_GPU_PREFERENCE_STATE_UNINITIALIZED
 
-Unitialized.
+The GPU preference isn't initialized.
 
 ### -field D3DKMT_GPU_PREFERENCE_STATE_HIGH_PERFORMANCE
 
-High performance.
+The highest performing GPU is preferred.
 
 ### -field D3DKMT_GPU_PREFERENCE_STATE_MINIMUM_POWER
 
-Minimum power.
+The minimum-powered GPU is preferred.
 
 ### -field D3DKMT_GPU_PREFERENCE_STATE_UNSPECIFIED
 
-Unspecified.
+A GPU preference isn't specified.
+
+### -field D3DKMT_GPU_PREFERENCE_STATE_NOT_FOUND
+
+The GPU preference isn't found.
+
+### -field D3DKMT_GPU_PREFERENCE_USER_SPECIFIED_GPU
+
+The GPU preference is specified by the user.
 
 ## -remarks
 
-The user preference should be on of the following three options:
+The user preference should be one of the following three options:
 
 * D3DKMT_GPU_PREFERENCE_STATE_HIGH_PERFORMANCE
 * D3DKMT_GPU_PREFERENCE_STATE_MINIMUM_POWER
 * D3DKMT_GPU_PREFERENCE_STATE_UNSPECIFIED
-
-## -see-also
-

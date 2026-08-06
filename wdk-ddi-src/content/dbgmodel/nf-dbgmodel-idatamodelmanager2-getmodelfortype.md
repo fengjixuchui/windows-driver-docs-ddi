@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelManager2.GetModelForType
 title: IDataModelManager2::GetModelForType (dbgmodel.h)
-description: The GetModelForType method returns the data model which is the canonical visualizer for a given type instance.
-ms.assetid: feaec7e1-6dda-43c6-95c9-7ccbca6472fb
+description: "The IDataModelManager2::GetModelForType method returns the data model that is the canonical visualizer for a given type instance."
 ms.date: 09/11/2018
 keywords: ["IDataModelManager2::GetModelForType"]
 ms.keywords: IDataModelManager2::GetModelForType, GetModelForType, IDataModelManager2.GetModelForType, IDataModelManager2::GetModelForType, IDataModelManager2.GetModelForType
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager2.GetModelForType
+ - IDataModelManager2::GetModelForType
 ---
 
 # IDataModelManager2::GetModelForType

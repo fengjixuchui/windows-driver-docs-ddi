@@ -1,10 +1,9 @@
 ---
 UID: NS:d3dumddi.D3DDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO
 title: D3DDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO (d3dumddi.h)
-description: Specifies info about a multiplane overlay allocation.
+description: The D3DDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO structure specifies information about a multiplane overlay allocation.
 old-location: display\d3dddi_multiplane_allocation_info.htm
 tech.root: display
-ms.assetid: ce3610ab-a927-45e7-8ceb-3f38b5f50f00
 ms.date: 05/10/2018
 keywords: ["D3DDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO structure"]
 ms.keywords: D3DDDI_MULTIPLANE_ALLOCATION_INFO, D3DDDI_MULTIPLANE_ALLOCATION_INFO structure [Display Devices], D3DDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO, d3dumddi/D3DDDI_MULTIPLANE_ALLOCATION_INFO, display.d3dddi_multiplane_allocation_info
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dumddi.h
 api_name:
+ - D3DDDI_MULTIPLANE_OVERLAY_ALLOCATION_INFO
  - D3DDDI_MULTIPLANE_ALLOCATION_INFO
 ---
 
@@ -52,11 +52,11 @@ Specifies info about a multiplane overlay allocation.
 
 ## -struct-fields
 
-### -field PresentAllocation
+### -field PresentAllocation [in]
 
-[in] A handle to the multiplane overlay allocation.
+A handle to the multiplane overlay allocation.
 
-### -field SubResourceIndex
+### -field SubResourceIndex [in]
 
-[in] The zero-based index into the resource which the handle in the <b>PresentAllocation</b> member specifies. This index indicates the display surface.
+The zero-based index into the resource which the handle in the <b>PresentAllocation</b> member specifies. This index indicates the display surface.
 

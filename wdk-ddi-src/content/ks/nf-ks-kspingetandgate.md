@@ -4,7 +4,6 @@ title: KsPinGetAndGate function (ks.h)
 description: The KsPinGetAndGate function returns the processing control gate for Pin.
 old-location: stream\kspingetandgate.htm
 tech.root: stream
-ms.assetid: abd4da69-c0c3-442f-af58-e77362c637da
 ms.date: 04/23/2018
 keywords: ["KsPinGetAndGate function"]
 ms.keywords: KsPinGetAndGate, KsPinGetAndGate function [Streaming Media Devices], avfunc_a4159ef9-1a69-4716-96ce-4fabd1ee6218.xml, ks/KsPinGetAndGate, stream.kspingetandgate
@@ -51,9 +50,9 @@ The<b> KsPinGetAndGate</b> function returns the processing control gate for <i>P
 
 ## -parameters
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a> for which to return the processing control gate.
 
 ## -returns

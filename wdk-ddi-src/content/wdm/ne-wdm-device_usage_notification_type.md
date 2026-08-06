@@ -1,9 +1,8 @@
 ---
 UID: NE:wdm._DEVICE_USAGE_NOTIFICATION_TYPE
 title: DEVICE_USAGE_NOTIFICATION_TYPE
-description: 
-tech.root: 
-ms.assetid: ebe20129-2ac5-42f3-adac-3f8ea4092ce8
+description: "Learn more about: DEVICE_USAGE_NOTIFICATION_TYPE enumeration"
+tech.root: kernel
 ms.date: 08/19/2019
 keywords: ["DEVICE_USAGE_NOTIFICATION_TYPE enumeration"]
 ms.keywords: DEVICE_USAGE_NOTIFICATION_TYPE, DEVICE_USAGE_NOTIFICATION_TYPE,
@@ -31,9 +30,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _DEVICE_USAGE_NOTIFICATION_TYPE
  - DEVICE_USAGE_NOTIFICATION_TYPE
-product:
- - Windows
 ---
 
 # DEVICE_USAGE_NOTIFICATION_TYPE enumeration
@@ -43,17 +41,19 @@ product:
 
 ## -enum-fields
 
-### -field DeviceUsageTypeUndefined 
+### -field DeviceUsageTypeUndefined
 
-### -field DeviceUsageTypePaging 
+### -field DeviceUsageTypePaging
 
-### -field DeviceUsageTypeHibernation 
+### -field DeviceUsageTypeHibernation
 
-### -field DeviceUsageTypeDumpFile 
+### -field DeviceUsageTypeDumpFile
 
-### -field DeviceUsageTypeBoot 
+### -field DeviceUsageTypeBoot
 
-### -field DeviceUsageTypePostDisplay 
+### -field DeviceUsageTypePostDisplay
+
+### -field DeviceUsageTypeGuestAssigned
 
 ## -remarks
 

@@ -4,7 +4,6 @@ title: AuxKlibGetImageExportDirectory function (aux_klib.h)
 description: The AuxKlibGetImageExportDirectory routine returns an image module's export directory.
 old-location: kernel\auxklibgetimageexportdirectory.htm
 tech.root: kernel
-ms.assetid: 994ba853-88b6-4456-8fdb-3199979df05e
 ms.date: 04/30/2018
 keywords: ["AuxKlibGetImageExportDirectory function"]
 ms.keywords: AuxKlibGetImageExportDirectory, AuxKlibGetImageExportDirectory routine [Kernel-Mode Driver Architecture], aux_klib/AuxKlibGetImageExportDirectory, aux_klib_266e4e59-eaf6-47a4-a5d0-27fc55426273.xml, kernel.auxklibgetimageexportdirectory
@@ -51,9 +50,9 @@ The <b>AuxKlibGetImageExportDirectory</b> routine returns an image module's expo
 
 ## -parameters
 
-### -param ImageBase 
+### -param ImageBase [in]
 
-[in]
+
 A pointer to the base of an image, which is obtained by calling <a href="/windows-hardware/drivers/ddi/aux_klib/nf-aux_klib-auxklibquerymoduleinformation">AuxKlibQueryModuleInformation</a>.
 
 ## -returns

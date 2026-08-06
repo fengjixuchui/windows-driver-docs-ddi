@@ -4,7 +4,6 @@ title: IWDFDeviceInitialize2::SetIoTypePreference (wudfddi.h)
 description: The SetIoTypePreference method specifies your preferences for how UMDF and the driver access the data buffers of a device's I/O requests.
 old-location: wdf\iwdfdeviceinitialize2_setiotypepreference.htm
 tech.root: wdf
-ms.assetid: 7d79f34d-42aa-4ac7-a63d-2f17ee0dfcf0
 ms.date: 02/26/2018
 keywords: ["IWDFDeviceInitialize2::SetIoTypePreference"]
 ms.keywords: IWDFDeviceInitialize2 interface,SetIoTypePreference method, IWDFDeviceInitialize2.SetIoTypePreference, IWDFDeviceInitialize2::SetIoTypePreference, SetIoTypePreference, SetIoTypePreference method, SetIoTypePreference method,IWDFDeviceInitialize2 interface, UMDFDeviceObjectRef_33317875-3e52-47fc-9d6b-0e886f802dde.xml, umdf.iwdfdeviceinitialize2_setiotypepreference, wdf.iwdfdeviceinitialize2_setiotypepreference, wudfddi/IWDFDeviceInitialize2::SetIoTypePreference
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDeviceInitialize2.SetIoTypePreference
+ - IWDFDeviceInitialize2::SetIoTypePreference
 ---
 
 # IWDFDeviceInitialize2::SetIoTypePreference
@@ -52,19 +51,19 @@ The <b>SetIoTypePreference</b> method specifies your preferences for how UMDF an
 
 ## -parameters
 
-### -param RetrievalMode 
+### -param RetrievalMode [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_device_io_buffer_retrieval">WDF_DEVICE_IO_BUFFER_RETRIEVAL</a>-typed value that specifies the buffer retrieval mode that you prefer UMDF to use to make an I/O request's buffers available to the driver.
 
-### -param ReadWritePreference 
+### -param ReadWritePreference [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_device_io_type">WDF_DEVICE_IO_TYPE</a>-typed value that specifies the buffer access method that you prefer UMDF to use for the data buffers of read and write requests.
 
-### -param IoControlPreference 
+### -param IoControlPreference [in]
 
-[in]
+
 A WDF_DEVICE_IO_TYPE-typed value that specifies the buffer access method that you prefer UMDF to use for the data buffers of device I/O control requests.
 
 ## -remarks
@@ -111,7 +110,6 @@ HRESULT
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdeviceinitialize2">IWDFDeviceInitialize2</a>
@@ -135,3 +133,4 @@ HRESULT
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetiotypeex">WdfDeviceInitSetIoTypeEx</a>
+

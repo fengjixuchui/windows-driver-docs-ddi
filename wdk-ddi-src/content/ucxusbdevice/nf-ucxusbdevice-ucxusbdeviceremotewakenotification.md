@@ -4,7 +4,6 @@ title: UcxUsbDeviceRemoteWakeNotification function (ucxusbdevice.h)
 description: Notifies UCX that a remote wake signal from the device is received.
 old-location: buses\_ucxusbdeviceremotewakenotification.htm
 tech.root: usbref
-ms.assetid: 0C95831F-2E20-461C-8478-9A40C1F063E2
 ms.date: 05/07/2018
 keywords: ["UcxUsbDeviceRemoteWakeNotification function"]
 ms.keywords: UcxUsbDeviceRemoteWakeNotification, UcxUsbDeviceRemoteWakeNotification method [Buses], buses._ucxusbdeviceremotewakenotification, ucxusbdevice/UcxUsbDeviceRemoteWakeNotification
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ Notifies UCX that a remote wake signal from the device is received.
 
 ## -parameters
 
-### -param UsbDevice 
+### -param UsbDevice [in]
 
-[in]
+
 A handle to the USB device object for which the remote wake is received. The client driver retrieved the handle in a previous call to <a href="/windows-hardware/drivers/ddi/ucxusbdevice/nf-ucxusbdevice-ucxusbdevicecreate">UcxUsbDeviceCreate</a>.
 
-### -param Interface 
+### -param Interface [in]
 
-[in]
+
 The interface number that sent the remote wake notification.
 
 ## -remarks

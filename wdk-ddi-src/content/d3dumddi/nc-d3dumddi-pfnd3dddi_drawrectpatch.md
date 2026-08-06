@@ -4,7 +4,6 @@ title: PFND3DDDI_DRAWRECTPATCH (d3dumddi.h)
 description: The DrawRectPatch function draws a new or cached rectangular patch or updates the specification of a previously defined patch.
 old-location: display\drawrectpatch.htm
 tech.root: display
-ms.assetid: c0e3046c-f2af-4406-ac5a-c3e44f40b1fd
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DRAWRECTPATCH callback function"]
 ms.keywords: DrawRectPatch, DrawRectPatch callback function [Display Devices], PFND3DDDI_DRAWRECTPATCH, PFND3DDDI_DRAWRECTPATCH callback, UserModeDisplayDriver_Functions_a32bf010-d5a9-4cf7-b885-4f0fb407a4ad.xml, d3dumddi/DrawRectPatch, display.drawrectpatch
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - DrawRectPatch
+ - PFND3DDDI_DRAWRECTPATCH
 ---
 
 # PFND3DDDI_DRAWRECTPATCH callback function
@@ -50,24 +49,24 @@ The <b>DrawRectPatch</b> function draws a new or cached rectangular patch or upd
 
 ## -parameters
 
-### -param hDevice 
+### -param hDevice [in]
 
-[in]
+
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_drawrectpatch">D3DDDIARG_DRAWRECTPATCH</a> structure that describes the rectangular patch to draw.
 
-### -param Arg3
+### -param unnamedParam3
 
 *pInfo* [in]
 
 Optional. A pointer to a D3DDDIRECTPATCH_INFO structure that describes information about the rectangular patch.
 
-### -param Arg4
+### -param unnamedParam4
 
 *pPatch* [in]
 
@@ -116,3 +115,4 @@ The driver receives notification to release cached patch information through the
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

@@ -3,9 +3,7 @@ UID: NS:d3d12umddi.D3D12DDIARG_CREATE_SHADER_0026
 title: D3D12DDIARG_CREATE_SHADER_0026
 description: Describes the parameters that the display driver uses to create a shader.
 tech.root: display
-ms.assetid: 0806447d-f18e-455b-b5d5-40bb21ff50f6
-ms.date: 03/24/2020
-ms.topic: struct
+ms.date: 05/24/2022
 ms.keywords: D3D12DDIARG_CREATE_SHADER_0026, D3D12DDIARG_CREATE_SHADER_0026,
 req.header: d3d12umddi.h
 req.include-header: 
@@ -29,8 +27,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - D3D12DDIARG_CREATE_SHADER_0026
-product:
- - Windows
 f1_keywords:
  - D3D12DDIARG_CREATE_SHADER_0026
  - d3d12umddi/D3D12DDIARG_CREATE_SHADER_0026
@@ -38,10 +34,9 @@ f1_keywords:
 
 # D3D12DDIARG_CREATE_SHADER_0026 structure
 
-
 ## -description
 
-Describes the parameters that the display driver uses to create a shader.
+The **D3D12DDIARG_CREATE_SHADER_0026** structure contains the parameters that the display driver uses to create a shader.
 
 ## -struct-fields
 
@@ -65,6 +60,10 @@ Pointer to a D3D12DDIARG_STAGE_IO_SIGNATURES structure.
 
 Pointer to a D3D12DDIARG_TESSELLATION_IO_SIGNATURES structure.
 
+### -field IOSignatures.Mesh
+
+Pointer to a [**D3D12DDIARG_MESH_IO_SIGNATURES**](ns-d3d12umddi-d3d12ddiarg_mesh_io_signatures.md) structure.
+
 ### -field Flags
 
 A [**D3D12DDI_CREATE_SHADER_FLAGS**](ne-d3d12umddi-d3d12ddi_create_shader_flags.md) value specifying the flags for shader creation.
@@ -75,7 +74,7 @@ A [**D3D12DDI_LIBRARY_REFERENCE_0010**](ns-d3d12umddi-d3d12ddi_library_reference
 
 ### -field ShaderCodeHash
 
-A [**D3D12DDI_SHADERCACHE_HASH**](ns-d3d12umddi-d3d12ddi_shadercache_hash.md) structure containing a hash value.
+A [**D3D12DDI_SHADERCACHE_HASH**](ns-d3d12umddi-d3d12ddi_shadercache_hash.md) structure containing a hash value to associate with the shader for shader cache lookup.
 
 ## -remarks
 
@@ -88,4 +87,3 @@ See the [Mesh Shader specification](https://microsoft.github.io/DirectX-Specs/d3
 [**D3D12DDI_LIBRARY_REFERENCE_0010**](ns-d3d12umddi-d3d12ddi_library_reference_0010.md)
 
 [**D3D12DDI_SHADERCACHE_HASH**](ns-d3d12umddi-d3d12ddi_shadercache_hash.md)
-

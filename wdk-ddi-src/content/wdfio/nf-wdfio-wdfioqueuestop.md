@@ -4,7 +4,6 @@ title: WdfIoQueueStop function (wdfio.h)
 description: The WdfIoQueueStop method prevents an I/O queue from delivering I/O requests, but the queue receives and stores new requests.
 old-location: wdf\wdfioqueuestop.htm
 tech.root: wdf
-ms.assetid: 50ff8064-b28c-4b2b-89d2-bad5e503b2d6
 ms.date: 02/26/2018
 keywords: ["WdfIoQueueStop function"]
 ms.keywords: DFQueueObjectRef_c1ac397c-5601-4976-9c42-41b118d429c1.xml, WdfIoQueueStop, WdfIoQueueStop method, kmdf.wdfioqueuestop, wdf.wdfioqueuestop, wdfio/WdfIoQueueStop
@@ -55,19 +54,19 @@ The <b>WdfIoQueueStop</b> method prevents an I/O queue from delivering I/O reque
 
 ## -parameters
 
-### -param Queue 
+### -param Queue [in]
 
-[in]
+
 A handle to a framework queue object.
 
-### -param StopComplete 
+### -param StopComplete [in, optional]
 
-[in, optional]
+
 A pointer to a driver-supplied <a href="/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_state">EvtIoQueueState</a> callback function. This parameter is optional and can be <b>NULL</b>.
 
-### -param Context 
+### -param Context [in, optional]
 
-[in, optional]
+
 An untyped pointer to driver-supplied context information that the framework passes to the <a href="/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_state">EvtIoQueueState</a> callback function. This parameter is optional and can be <b>NULL</b>.
 
 ## -remarks

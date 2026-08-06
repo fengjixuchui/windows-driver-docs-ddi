@@ -4,7 +4,6 @@ title: TmSinglePhaseReject function (wdm.h)
 description: The TmSinglePhaseReject routine informs KTM that the calling resource manager will not support a single-phase commit operation for a specified enlistment.
 old-location: kernel\tmsinglephasereject.htm
 tech.root: kernel
-ms.assetid: 8fc92d51-40be-439b-abee-54ad19a86a89
 ms.date: 04/30/2018
 keywords: ["TmSinglePhaseReject function"]
 ms.keywords: TmSinglePhaseReject, TmSinglePhaseReject routine [Kernel-Mode Driver Architecture], kernel.tmsinglephasereject, ktm_ref_16802b39-057c-4d45-9da0-3f63f4589a44.xml, wdm/TmSinglePhaseReject
@@ -52,14 +51,14 @@ The <b>TmSinglePhaseReject</b> routine informs KTM that the calling resource man
 
 ## -parameters
 
-### -param Enlistment 
+### -param Enlistment [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/kernel/enlistment-objects">enlistment object</a>. Your component can receive this pointer as input to a <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-ptm_rm_notification">ResourceManagerNotification</a> callback routine. Alternatively, your component can call <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle">ObReferenceObjectByHandle</a> and supply the object handle that a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment">ZwCreateEnlistment</a>, <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-tmcreateenlistment">TmCreateEnlistment</a>, or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a> provided.
 
-### -param TmVirtualClock 
+### -param TmVirtualClock [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/kernel/using-virtual-clock-values">virtual clock value</a>. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

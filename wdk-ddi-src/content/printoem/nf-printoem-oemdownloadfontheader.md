@@ -1,11 +1,9 @@
 ---
 UID: NF:printoem.OEMDownloadFontHeader
 title: OEMDownloadFontHeader function (printoem.h)
-description: OEMDownloadFontHeader function
-old-location: print\oemdownloadfontheader.htm
+description: Describes the OEMDownloadFontHeader function.
 tech.root: print
-ms.assetid: 3865a206-840c-4acf-97be-86764cf522db
-ms.date: 04/20/2018
+ms.date: 08/08/2022
 keywords: ["OEMDownloadFontHeader function"]
 ms.keywords: OEMDownloadFontHeader, OEMDownloadFontHeader function [Print Devices], print.oemdownloadfontheader, print_obsoletefunctions_733001dd-14a7-43a6-b386-5be4b514ae0b.xml, printoem/OEMDownloadFontHeader
 req.header: printoem.h
@@ -41,14 +39,20 @@ api_name:
  - OEMDownloadFontHeader
 ---
 
-# OEMDownloadFontHeader function
-
-
 ## -description
+
+Describes the **OEMDownloadFontHeader** function.
 
 ## -parameters
 
 ### -param pdevobj
 
+Defines the **PDEVOBJ** parameter *pdevobj*.
+
 ### -param pUFObj
 
+Defines the **PUNIFONTOBJ** parameter *pUFObj*.
+
+## -returns
+
+Returns a **DWORD** value.

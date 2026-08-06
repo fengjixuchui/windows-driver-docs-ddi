@@ -4,7 +4,6 @@ title: _WDI_CIPHER_ALGORITHM (wditypes.h)
 description: The WDI_CIPHER_ALGORITHM enumeration defines the cipher algorithm values.
 old-location: netvista\wdi_cipher_algorithm.htm
 tech.root: netvista
-ms.assetid: 08413358-DFBC-4AC3-97B3-380D98EFFBF3
 ms.date: 05/02/2018
 keywords: ["WDI_CIPHER_ALGORITHM enumeration"]
 ms.keywords: WDI_CIPHER_ALGORITHM, WDI_CIPHER_ALGORITHM enumeration [Device and Driver Installation], WDI_CIPHER_ALGO_BIP, WDI_CIPHER_ALGO_CCMP, WDI_CIPHER_ALGO_GCMP, WDI_CIPHER_ALGO_IHV_END, WDI_CIPHER_ALGO_IHV_START, WDI_CIPHER_ALGO_NONE, WDI_CIPHER_ALGO_RSN_USE_GROUP, WDI_CIPHER_ALGO_TKIP, WDI_CIPHER_ALGO_WEP, WDI_CIPHER_ALGO_WEP104, WDI_CIPHER_ALGO_WEP40, WDI_CIPHER_ALGO_WPA_USE_GROUP, _WDI_CIPHER_ALGORITHM, netvista.wdi_cipher_algorithm, netvista.wifi_cipher_algorithm, wditypes/WDI_CIPHER_ALGORITHM, wditypes/WDI_CIPHER_ALGO_BIP, wditypes/WDI_CIPHER_ALGO_CCMP, wditypes/WDI_CIPHER_ALGO_GCMP, wditypes/WDI_CIPHER_ALGO_IHV_END, wditypes/WDI_CIPHER_ALGO_IHV_START, wditypes/WDI_CIPHER_ALGO_NONE, wditypes/WDI_CIPHER_ALGO_RSN_USE_GROUP, wditypes/WDI_CIPHER_ALGO_TKIP, wditypes/WDI_CIPHER_ALGO_WEP, wditypes/WDI_CIPHER_ALGO_WEP104, wditypes/WDI_CIPHER_ALGO_WEP40, wditypes/WDI_CIPHER_ALGO_WPA_USE_GROUP
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_CIPHER_ALGORITHM
  - WDI_CIPHER_ALGORITHM
 ---
 
@@ -47,6 +47,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_CIPHER_ALGORITHM enumeration defines the cipher algorithm values.
 
@@ -80,7 +83,37 @@ Specifies a BIP cipher algorithm.
 
 Added in Windows 10, version 1607, WDI version 1.0.21.
 
-Specifies a GCMP (Galois/Counter Mode Protocol) cipher algorithm. It is the only encryption protocol supported for 802.11ad (DMG) Phy.
+Specifies a Galois/Counter Mode Protocol (GCMP) cipher algorithm. It is the only encryption protocol supported for 802.11ad (DMG) Phy.
+
+### -field WDI_CIPHER_ALGO_GCMP_256
+
+Added in Windows 10, version 2004, WDI version 1.1.9.
+
+Specifies a GCMP cipher algorithm with a 256-bit cipher key.
+
+### -field WDI_CIPHER_ALGO_CCMP_256
+
+Added in Windows 10, version 2004, WDI version 1.1.9.
+
+Specifies an AES-CCMP algorithm with a 256-bit cipher key.
+
+### -field WDI_CIPHER_ALGO_BIP_GMAC_128
+
+Added in Windows 10, version 2004, WDI version 1.1.9.
+
+Specifies a Broadcast Integrity Protocol Galois Message Authentication Code (BIP-GMAC) cipher algorithm with a 128-bit cipher key.
+
+### -field WDI_CIPHER_ALGO_BIP_GMAC_256
+
+Added in Windows 10, version 2004, WDI version 1.1.9.
+
+Specifies a BIP-GMAC cipher algorithm with a 256-bit cipher key.
+
+### -field WDI_CIPHER_ALGO_BIP_CMAC_256
+
+Added in Windows 10, version 2004, WDI version 1.1.9.
+
+Specifies a Broadcast Integrity Protocol Cipher-based Message Authentication Code (BIP-CMAC) cipher algorithm with a 256-bit cipher key.
 
 ### -field WDI_CIPHER_ALGO_WPA_USE_GROUP
 

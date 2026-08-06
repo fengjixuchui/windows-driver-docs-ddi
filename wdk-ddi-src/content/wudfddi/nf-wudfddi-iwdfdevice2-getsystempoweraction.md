@@ -4,7 +4,6 @@ title: IWDFDevice2::GetSystemPowerAction (wudfddi.h)
 description: The GetSystemPowerAction method returns the system power action, if any, that is currently occurring for the computer.
 old-location: wdf\iwdfdevice2_getsystempoweraction.htm
 tech.root: wdf
-ms.assetid: 0030d64b-3f88-4bb3-b7d2-fcdc57d4d887
 ms.date: 02/26/2018
 keywords: ["IWDFDevice2::GetSystemPowerAction"]
 ms.keywords: GetSystemPowerAction, GetSystemPowerAction method, GetSystemPowerAction method,IWDFDevice2 interface, IWDFDevice2 interface,GetSystemPowerAction method, IWDFDevice2.GetSystemPowerAction, IWDFDevice2::GetSystemPowerAction, UMDFDeviceObjectRef_a0135e99-c33a-4480-afb3-189d6a89b5d2.xml, umdf.iwdfdevice2_getsystempoweraction, wdf.iwdfdevice2_getsystempoweraction, wudfddi/IWDFDevice2::GetSystemPowerAction
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice2.GetSystemPowerAction
+ - IWDFDevice2::GetSystemPowerAction
 ---
 
 # IWDFDevice2::GetSystemPowerAction
@@ -52,7 +51,7 @@ The <b>GetSystemPowerAction</b> method returns the <a href="/windows-hardware/dr
 
 ## -returns
 
-<b>GetSystemPowerAction</b> returns a <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-ppower_action">POWER_ACTION</a>-typed enumerator value. The value indicates the <a href="/windows-hardware/drivers/kernel/system-power-actions">system power action</a> that is currently occurring for the computer. For more information, see the following Remarks section.
+<b>GetSystemPowerAction</b> returns a <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-power_action">POWER_ACTION</a>-typed enumerator value. The value indicates the <a href="/windows-hardware/drivers/kernel/system-power-actions">system power action</a> that is currently occurring for the computer. For more information, see the following Remarks section.
 
 ## -remarks
 
@@ -103,7 +102,7 @@ The following code example obtains the <a href="/windows-hardware/drivers/ddi/wu
     SAFE_RELEASE(pDevice2);
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice2">IWDFDevice2</a>
+

@@ -4,7 +4,6 @@ title: GPIO_CLIENT_PREPARE_CONTROLLER (gpioclx.h)
 description: The CLIENT_PrepareController event callback function performs any operations that are needed to make the general-purpose I/O (GPIO) controller ready to be accessed by the GPIO controller driver.
 old-location: gpio\client_preparecontroller.htm
 tech.root: GPIO
-ms.assetid: FAB86862-C0A1-4FC1-A80F-44F235B9B37D
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_PREPARE_CONTROLLER callback function"]
 ms.keywords: CLIENT_PrepareController, CLIENT_PrepareController callback, CLIENT_PrepareController callback function [Parallel Ports], GPIO.client_preparecontroller, GPIO_CLIENT_PREPARE_CONTROLLER, gpioclx/CLIENT_PrepareController
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_PrepareController
+ - GPIO_CLIENT_PREPARE_CONTROLLER
 ---
 
 # GPIO_CLIENT_PREPARE_CONTROLLER callback function
@@ -50,24 +49,24 @@ The <i>CLIENT_PrepareController</i> event callback function performs any operati
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the GPIO controller.
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param ResourcesRaw 
+### -param ResourcesRaw [in]
 
-[in]
+
 A WDFCMRESLIST handle to a collection of framework resource objects. This collection identifies the raw (bus-relative) hardware resources that the Plug and Play (PnP) manager has assigned to the GPIO controller device.
 
-### -param ResourcesTranslated 
+### -param ResourcesTranslated [in]
 
-[in]
+
 A WDFCMRESLIST handle to a collection of framework resource objects. This collection identifies the translated (system-physical) hardware resources that the PnP manager has assigned to the GPIO controller device.
 
 ## -returns
@@ -110,7 +109,7 @@ Then, implement your callback function as follows:
 ```
 _Use_decl_annotations_
 NTSTATUS
-  MyEvtGpioPrepareControllerr(
+  MyEvtGpioPrepareController(
     WDFDEVICE Device,
     PVOID Context,
     WDFCMRESLIST ResourcesRaw,
@@ -134,3 +133,4 @@ The GPIO_CLIENT_PREPARE_CONTROLLER function type is defined in the Gpioclx.h hea
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/nf-gpioclx-gpio_clx_registerclient">GPIO_CLX_RegisterClient</a>
+

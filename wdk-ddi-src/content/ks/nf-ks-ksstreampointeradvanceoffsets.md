@@ -4,7 +4,6 @@ title: KsStreamPointerAdvanceOffsets function (ks.h)
 description: The KsStreamPointerAdvanceOffsets function advances the offsets of StreamPointer.
 old-location: stream\ksstreampointeradvanceoffsets.htm
 tech.root: stream
-ms.assetid: 0377371b-b755-4473-a449-9a85e1ca456c
 ms.date: 04/23/2018
 keywords: ["KsStreamPointerAdvanceOffsets function"]
 ms.keywords: KsStreamPointerAdvanceOffsets, KsStreamPointerAdvanceOffsets function [Streaming Media Devices], avfunc_31a73e93-c2b5-4867-9bb1-40090d0ea07e.xml, ks/KsStreamPointerAdvanceOffsets, stream.ksstreampointeradvanceoffsets
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ks.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,28 +50,28 @@ The<b> KsStreamPointerAdvanceOffsets</b> function advances the offsets of <i>Str
 
 ## -parameters
 
-### -param StreamPointer 
+### -param StreamPointer [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksstream_pointer">KSSTREAM_POINTER</a> structure representing the stream pointer for which to advance the offsets. <i>StreamPointer</i> should be in the locked state when this function is called.
 
-### -param InUsed 
+### -param InUsed [in]
 
-[in]
+
 The number of bytes to advance the input pointer of this stream pointer. 
 
 (StreamPointer -> OffsetIn)
 
-### -param OutUsed 
+### -param OutUsed [in]
 
-[in]
+
 The number of bytes to advance the output pointer of this stream pointer 
 
 (StreamPointer -> OffsetOut)
 
-### -param Eject 
+### -param Eject [in]
 
-[in]
+
 This parameter indicates whether the stream pointer should be advanced to the next data frame If this parameter is set to <b>TRUE</b>, AVStream advances the stream pointer regardless of whether advancing the offsets causes the stream pointer to point to the end of a frame.
 
 ## -returns

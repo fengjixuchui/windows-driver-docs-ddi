@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10_1DDI_CREATESHADERRESOURCEVIEW
 title: PFND3D10_1DDI_CREATESHADERRESOURCEVIEW (d3d10umddi.h)
 description: The CreateShaderResourceView(D3D10_1) function creates a shader resource view.
 old-location: display\createshaderresourceview_d3d10_1_.htm
-ms.assetid: 7a0a92d2-a5df-4bee-a950-8a89aeb3dbb8
 ms.date: 05/10/2018
 keywords: ["PFND3D10_1DDI_CREATESHADERRESOURCEVIEW callback function"]
 ms.keywords: CreateShaderResourceView_d3d10_1_, CreateShaderResourceView_d3d10_1_ callback function [Display Devices], PFND3D10_1DDI_CREATESHADERRESOURCEVIEW, PFND3D10_1DDI_CREATESHADERRESOURCEVIEW callback, UserModeDisplayDriverDx10_Functions_e8a41f3e-a247-4350-aa1d-3967ec2f903d.xml, d3d10umddi/CreateShaderResourceView_d3d10_1_, display.createshaderresourceview_d3d10_1_
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CreateShaderResourceView_d3d10_1_
-product:
- - Windows
+ - PFND3D10_1DDI_CREATESHADERRESOURCEVIEW
 ---
 
 # PFND3D10_1DDI_CREATESHADERRESOURCEVIEW callback function
@@ -52,25 +49,25 @@ The <b>CreateShaderResourceView(D3D10_1)</b> function creates a shader resource 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCreateShaderResourceView* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10_1ddiarg_createshaderresourceview">D3D10_1DDIARG_CREATESHADERRESOURCEVIEW</a> structure that describes the parameters that the user-mode display driver uses to create a shader resource view.
 
-### -param Arg3
+### -param unnamedParam3
 
 *hShaderResourceView* [in]
 
 A handle to the driver's private data for the shader resource view.
 
-### -param Arg4
+### -param unnamedParam4
 
 *hRTShaderResourceView* [in]
 
@@ -102,3 +99,4 @@ The driver might run out of memory. Therefore, the driver can pass E_OUTOFMEMORY
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

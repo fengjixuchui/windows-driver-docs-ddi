@@ -4,7 +4,6 @@ title: WdfInterruptReportActive function (wdfinterrupt.h)
 description: The WdfInterruptReportActive informs the system that the interrupt is active and the driver is ready to process interrupt requests on the associated lines.
 old-location: wdf\wdfinterruptreportactive.htm
 tech.root: wdf
-ms.assetid: 9A7B4181-0592-4C40-BC5A-99AFFA57846C
 ms.date: 02/26/2018
 keywords: ["WdfInterruptReportActive function"]
 ms.keywords: WdfInterruptReportActive, WdfInterruptReportActive method, kmdf._wdfinterruptreportactive, kmdf.wdfinterruptreportactive, wdf.wdfinterruptreportactive, wdfinterrupt/WdfInterruptReportActive
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,9 +54,9 @@ api_name:
 
 ## -parameters
 
-### -param Interrupt 
+### -param Interrupt [in]
 
-[in]
+
 A handle to a framework interrupt object.
 
 ## -remarks

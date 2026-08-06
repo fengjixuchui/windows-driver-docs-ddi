@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILIMSSTATUS_V2
 title: RILIMSSTATUS_V2 (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILIMSSTATUS_V2 structure for internal use only. Don't use the RILIMSSTATUS_V2 structure in your code."
 old-location: netvista\rilimsstatus_v2.htm
 tech.root: netvista
-ms.assetid: afc17375-a65d-495d-b68a-b74146cb8f69
 ms.date: 05/02/2018
 keywords: ["RILIMSSTATUS_V2 structure"]
 ms.keywords: "*LPRILIMSSTATUS_V2, RILIMSSTATUS_V2, RILIMSSTATUS_V2 structure [Network Drivers Starting with Windows Vista], netvista.rilimsstatus_v2, ntddrilapitypes/RILIMSSTATUS_V2"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILIMSSTATUS_V2
+ - LPRILIMSSTATUS_V2
 ---
 
 # RILIMSSTATUS_V2 structure (ntddrilapitypes.h)

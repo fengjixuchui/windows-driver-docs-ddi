@@ -4,7 +4,6 @@ title: NmrRegisterProvider function (netioddk.h)
 description: The NmrRegisterProvider function registers a provider module with the NMR.
 old-location: netvista\nmrregisterprovider.htm
 tech.root: netvista
-ms.assetid: aac9382c-5177-4216-bf3d-7970b18662eb
 ms.date: 05/02/2018
 keywords: ["NmrRegisterProvider function"]
 ms.keywords: NmrRegisterProvider, NmrRegisterProvider function [Network Drivers Starting with Windows Vista], netioddk/NmrRegisterProvider, netvista.nmrregisterprovider, nmrref_ad505c0b-91dd-413d-be24-ab331f8eadca.xml
@@ -52,18 +51,18 @@ The
 
 ## -parameters
 
-### -param ProviderCharacteristics 
+### -param ProviderCharacteristics [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/netioddk/ns-netioddk-_npi_provider_characteristics">
      NPI_PROVIDER_CHARACTERISTICS</a> structure that describes the characteristics of the provider module.
      The provider module must make sure that this structure remains valid and resident in memory as long as
      the provider module is registered with the NMR.
 
-### -param ProviderContext 
+### -param ProviderContext [in]
 
-[in]
+
 A pointer to a caller-supplied context for the registration. The provider module uses this context
      to keep track of the state of the provider registration. The contents of the provider module's
      registration context are opaque to the NMR. The NMR passes this pointer to the provider module whenever
@@ -72,9 +71,9 @@ A pointer to a caller-supplied context for the registration. The provider module
      function. The provider module must make sure that this context remains valid and resident in memory as
      long as the provider module is registered with the NMR.
 
-### -param NmrProviderHandle 
+### -param NmrProviderHandle [out]
 
-[out]
+
 A pointer to a variable that receives a handle used by the NMR to represent the registration of
      the provider module. The provider module must save this handle and pass it as a parameter to the 
      <a href="/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrderegisterprovider">NmrDeregisterProvider</a> function when

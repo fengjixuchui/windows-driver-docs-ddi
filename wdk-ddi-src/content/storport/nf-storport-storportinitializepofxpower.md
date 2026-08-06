@@ -4,7 +4,6 @@ title: StorPortInitializePoFxPower function (storport.h)
 description: A miniport driver calls StorPortInitializePoFxPower to register a storage device with the power management framework (PoFx).
 old-location: storage\storportinitializepofxpower.htm
 tech.root: storage
-ms.assetid: 154EAF9B-4B30-4124-B31D-6C7D09B52674
 ms.date: 03/29/2018
 keywords: ["StorPortInitializePoFxPower function"]
 ms.keywords: StorPortInitializePoFxPower, StorPortInitializePoFxPower routine [Storage Devices], storage.storportinitializepofxpower, storport/StorPortInitializePoFxPower
@@ -50,24 +49,24 @@ A miniport driver calls <b>StorPortInitializePoFxPower</b> to register a storage
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param Address 
+### -param Address [in, optional]
 
-[in, optional]
+
 The address of a storage device unit. This parameter is <b>NULL</b> when registering for a storage adapter.
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A pointer to a <b>STOR_POFX_DEVICE_V2</b> structure cast to a pointer to <a href="/windows-hardware/drivers/ddi/storport/ns-storport-_stor_pofx_device">STOR_POFX_DEVICE</a>. This structure contains a component list with F-states for a storage device.
 
-### -param D3ColdEnabled 
+### -param D3ColdEnabled [in, out]
 
-[in, out]
+
 A pointer to a <b>BOOLEAN</b> value which the Storport driver will set to indicate whether the D3 Cold state is enabled for the storage device.
 
 ## -returns

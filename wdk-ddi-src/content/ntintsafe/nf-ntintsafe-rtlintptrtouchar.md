@@ -4,7 +4,6 @@ title: RtlIntPtrToUChar function (ntintsafe.h)
 description: Converts a value of type INT_PTR to a value of type UCHAR.
 old-location: kernel\rtlintptrtouchar.htm
 tech.root: kernel
-ms.assetid: 67D61FBA-15E9-4157-9286-72D51DE18275
 ms.date: 04/30/2018
 keywords: ["RtlIntPtrToUChar function"]
 ms.keywords: RtlIntPtrToUChar, RtlIntPtrToUChar function [Kernel-Mode Driver Architecture], kernel.rtlintptrtouchar, ntintsafe/RtlIntPtrToUChar
@@ -50,14 +49,14 @@ Converts a value of type <b>INT_PTR</b> to a value of type <b>UCHAR</b>.
 
 ## -parameters
 
-### -param iOperand 
+### -param iOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pch 
+### -param pch [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

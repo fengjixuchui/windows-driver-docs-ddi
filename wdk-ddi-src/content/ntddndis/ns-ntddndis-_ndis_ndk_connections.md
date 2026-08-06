@@ -4,7 +4,6 @@ title: _NDIS_NDK_CONNECTIONS (ntddndis.h)
 description: The NDIS_NDK_CONNECTIONS structure describes the NDK connections that are active on a miniport adapter.
 old-location: netvista\ndis_ndk_connections.htm
 tech.root: netvista
-ms.assetid: 24149E73-6BA8-4C5E-8649-25A90A3D01AF
 ms.date: 05/02/2018
 keywords: ["NDIS_NDK_CONNECTIONS structure"]
 ms.keywords: NDIS_NDK_CONNECTIONS, NDIS_NDK_CONNECTIONS structure [Network Drivers Starting with Windows Vista], PNDIS_NDK_CONNECTIONS, PNDIS_NDK_CONNECTIONS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_NDK_CONNECTIONS, netvista.ndis_ndk_connections, ntddndis/NDIS_NDK_CONNECTIONS, ntddndis/PNDIS_NDK_CONNECTIONS
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_NDK_CONNECTIONS
  - NDIS_NDK_CONNECTIONS
 ---
 
@@ -54,7 +54,7 @@ The <b>NDIS_NDK_CONNECTIONS</b> structure describes the NDK connections that are
 
 ### -field Header
 
-An <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure that describes this <b>NDIS_NDK_CONNECTIONS</b> structure. Set the members of the <b>NDIS_OBJECT_HEADER</b> structure as follows:
+An <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure that describes this <b>NDIS_NDK_CONNECTIONS</b> structure. Set the members of the <b>NDIS_OBJECT_HEADER</b> structure as follows:
 
 <ul>
 <li>Set the <b>Type</b> member to <b>NDIS_OBJECT_TYPE_DEFAULT</b>.</li>
@@ -78,7 +78,7 @@ A variable-sized array of <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntd
 
 ## -remarks
 
-The <b>NDIS_NDK_CONNECTIONS</b> structure is returned with the <a href="/windows-hardware/drivers/network/oid-ndk-connections">OID_NDK_CONNECTIONS</a> OID. The <b>InformationBuffer</b> member of the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure contains a pointer to this structure.
+The <b>NDIS_NDK_CONNECTIONS</b> structure is returned with the <a href="/windows-hardware/drivers/network/oid-ndk-connections">OID_NDK_CONNECTIONS</a> OID. The <b>InformationBuffer</b> member of the <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure contains a pointer to this structure.
 
 
 
@@ -102,8 +102,9 @@ If the RDMA technology for the NDK provider requires the provider to map ND conn
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/network/oid-ndk-connections">OID_NDK_CONNECTIONS</a>
+

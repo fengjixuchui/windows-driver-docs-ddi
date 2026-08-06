@@ -4,7 +4,6 @@ title: RtlAppendUnicodeToString function (wdm.h)
 description: The RtlAppendUnicodeToString routine concatenates the supplied Unicode string to a buffered Unicode string.
 old-location: kernel\rtlappendunicodetostring.htm
 tech.root: kernel
-ms.assetid: 688f033b-1f0e-4f0a-9ccd-457ba726d728
 ms.date: 04/30/2018
 keywords: ["RtlAppendUnicodeToString function"]
 ms.keywords: RtlAppendUnicodeToString, RtlAppendUnicodeToString routine [Kernel-Mode Driver Architecture], k109_7bbe9676-db08-4bf2-b2d5-37b257621336.xml, kernel.rtlappendunicodetostring, wdm/RtlAppendUnicodeToString
@@ -51,14 +50,14 @@ The <b>RtlAppendUnicodeToString</b> routine concatenates the supplied Unicode st
 
 ## -parameters
 
-### -param Destination 
+### -param Destination [in, out]
 
-[in, out]
+
 A pointer to the buffered string.
 
-### -param Source 
+### -param Source [in, optional]
 
-[in, optional]
+
 A pointer to the null-terminated string to append to the <i>Destination</i> string.
 
 ## -returns

@@ -3,17 +3,16 @@ UID: NS:netadaptercxtypes._NET_DRIVER_GLOBALS
 title: _NET_DRIVER_GLOBALS (netadaptercxtypes.h)
 description: Call NET_DRIVER_GLOBALS_INIT to initialize this structure.
 tech.root: netvista
-ms.assetid: 865a1096-836a-4b4c-82a1-7811c2806a58
 ms.date: 02/07/2018
 keywords: ["NET_DRIVER_GLOBALS structure"]
 ms.keywords: _NET_DRIVER_GLOBALS, *PNET_DRIVER_GLOBALS, NET_DRIVER_GLOBALS,
 req.header: netadaptercxtypes.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: 
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.21
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -37,6 +36,8 @@ api_type:
 api_location:
  - netadaptercxtypes.h
 api_name:
+ - _NET_DRIVER_GLOBALS
+ - PNET_DRIVER_GLOBALS
  - NET_DRIVER_GLOBALS
 ---
 

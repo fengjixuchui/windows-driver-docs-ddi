@@ -1,17 +1,13 @@
 ---
 UID: NS:ntddscsi._SCSI_PASS_THROUGH_EX
-title: _SCSI_PASS_THROUGH_EX (ntddscsi.h)
+title: SCSI_PASS_THROUGH_EX (ntddscsi.h)
 description: The SCSI_PASS_THROUGH_EX structure is used in conjunction with an IOCTL_SCSI_PASS_THROUGH_EX request to instruct the port driver to send an embedded SCSI command to the target device.
-old-location: storage\scsi_pass_through_ex.htm
 tech.root: storage
-ms.assetid: 3D00B42C-7320-4044-BA7D-71A9BD05B30E
-ms.date: 03/29/2018
-keywords: ["SCSI_PASS_THROUGH_EX structure"]
-ms.keywords: "*PSCSI_PASS_THROUGH_EX, PSCSI_PASS_THROUGH_EX, PSCSI_PASS_THROUGH_EX structure pointer [Storage Devices], SCSI_PASS_THROUGH_EX, SCSI_PASS_THROUGH_EX structure [Storage Devices], _SCSI_PASS_THROUGH_EX, ntddscsi/PSCSI_PASS_THROUGH_EX, ntddscsi/SCSI_PASS_THROUGH_EX, storage.scsi_pass_through_ex"
+ms.date: 09/22/2025
 req.header: ntddscsi.h
 req.include-header: Ntddscsi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,16 +38,19 @@ api_type:
 api_location:
  - ntddscsi.h
 api_name:
+ - _SCSI_PASS_THROUGH_EX
+ - PSCSI_PASS_THROUGH_EX
  - SCSI_PASS_THROUGH_EX
 ---
 
-# _SCSI_PASS_THROUGH_EX structure
-
+# SCSI_PASS_THROUGH_EX structure
 
 ## -description
 
-The <b>SCSI_PASS_THROUGH_EX</b> structure is used in conjunction with an <b>IOCTL_SCSI_PASS_THROUGH_EX</b> request to instruct the port driver to send an embedded SCSI command to the target device. <b>SCSI_PASS_THROUGH_EX</b> can contain a bi-directional data transfers and a variable length command data block.
-<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="/windows-hardware/drivers/storage/storport-driver-overview">Storport driver</a> and <a href="/windows-hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
+The **SCSI_PASS_THROUGH_EX** structure is used in conjunction with an **IOCTL_SCSI_PASS_THROUGH_EX** request to instruct the port driver to send an embedded SCSI command to the target device. **SCSI_PASS_THROUGH_EX** can contain a bi-directional data transfers and a variable length command data block.
+
+> [!NOTE]
+> The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, use the [Storport driver](/windows-hardware/drivers/storage/storport-driver-overview) and [Storport miniport](/windows-hardware/drivers/storage/storport-miniport-drivers) driver models.
 
 ## -struct-fields
 
@@ -61,15 +60,15 @@ The version of this structure. Set to 0.
 
 ### -field Length
 
-The size of the this structure. Set to <b>sizeof</b>(SCSI_PASS_THROUGH_EX).
+The size of this structure, in bytes. Set to ```sizeof(SCSI_PASS_THROUGH_EX)```.
 
 ### -field CdbLength
 
-Indicates the size in bytes of the SCSI command descriptor block in <b>Cdb</b>.
+The size of the SCSI command descriptor block in **Cdb**, in bytes.
 
 ### -field StorAddressLength
 
-The length of the storage device address structure at the offset of <b>StorAddressOffset</b> after this structure.
+The length, in bytes, of the storage device address structure at the offset of **StorAddressOffset** after this structure.
 
 ### -field ScsiStatus
 
@@ -77,15 +76,18 @@ Reports the SCSI status that was returned by the HBA or the target device.
 
 ### -field SenseInfoLength
 
-Indicates the size in bytes of the request-sense buffer. This member is optional and can be set to 0.
+The size in bytes of the request-sense buffer. This member is optional and can be set to 0.
 
 ### -field DataDirection
 
-#####  This field must have one of these values:
+Indicates whether the SCSI command will read or write data. This field must be one of the following values:
 
-
-
-########
+| Value | Meaning |
+| ----- | ------- |
+| SCSI_IOCTL_DATA_OUT                | Write data to the device.                |
+| SCSI_IOCTL_DATA_IN                 | Read data from the device.               |
+| SCSI_IOCTL_DATA_UNSPECIFIED        | No data is being transferred.            |
+| SCSI_IOCTL_DATA_BIDIRECTIONAL      | Data is valid for both input and output. |
 
 ### -field Reserved
 
@@ -93,7 +95,12 @@ Reserved. Set to 0.
 
 ### -field TimeOutValue
 
-Indicates the interval in seconds that the request can execute before the port driver considers it timed out.
+Indicates the interval in seconds that the request can execute before the port driver considers it timed out. Do not set this value to 0. Default values often range from:
+
+* Typical operations: 30 to 60 seconds
+* Short operations: 10 to 30 seconds
+* Medium operations: 30 to 120 seconds
+* Long operations (like format, extended self-test): 300 to 3600 seconds or more
 
 ### -field StorAddressOffset
 
@@ -105,11 +112,11 @@ Offset from the beginning of this structure to the request-sense buffer. Set to 
 
 ### -field DataOutTransferLength
 
-Indicates the size in bytes of the output data buffer. Many devices transfer chunks of data of predefined length. The value in <b>DataOutTransferLength</b> must be an integral multiple of this predefined, minimum length that is specified by the device. If an underrun occurs, the miniport driver must update this member to the number of bytes actually transferred. If no output data buffer is present, this member is set to 0.
+Indicates the size in bytes of the output data buffer. Many devices transfer chunks of data of predefined length. The value in **DataOutTransferLength** must be an integral multiple of this predefined, minimum length that is specified by the device. If an underrun occurs, the miniport driver must update this member to the number of bytes actually transferred. If no output data buffer is present, this member is set to 0.
 
 ### -field DataInTransferLength
 
-Indicates the size in bytes of the input data buffer. Many devices transfer chunks of data of predefined length. The value in <b>DataInTransferLength</b> must be an integral multiple of this predefined, minimum length that is specified by the device. If an underrun occurs, the miniport driver must update this member to the number of bytes actually transferred. If no input data buffer is present, this member is set to 0.
+Indicates the size in bytes of the input data buffer. Many devices transfer chunks of data of predefined length. The value in **DataInTransferLength** must be an integral multiple of this predefined, minimum length that is specified by the device. If an underrun occurs, the miniport driver must update this member to the number of bytes actually transferred. If no input data buffer is present, this member is set to 0.
 
 ### -field DataOutBufferOffset
 
@@ -125,19 +132,15 @@ Specifies the SCSI command descriptor block to be sent to the target device.
 
 ## -remarks
 
-The <b>SCSI_PASS_THROUGH_EX</b> structure is used with the  <a href="/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through_ex">IOCTL_SCSI_PASS_THROUGH_EX</a> control code, which is a buffered device control request. To bypass buffering in system memory, callers should use <a href="/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through_direct_ex">IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</a>. When handling an <b>IOCTL_SCSI_PASS_THROUGH_DIRECT_EX</b> request, the system locks down the buffer in user memory and the device accesses this memory directly. 
+The **SCSI_PASS_THROUGH_EX** structure is used with the [**IOCTL_SCSI_PASS_THROUGH_EX**](ni-ntddscsi-ioctl_scsi_pass_through_ex.md) control code, which is a buffered device control request. To bypass buffering in system memory, callers should use [**IOCTL_SCSI_PASS_THROUGH_DIRECT_EX**](ni-ntddscsi-ioctl_scsi_pass_through_direct_ex.md). When handling an **IOCTL_SCSI_PASS_THROUGH_DIRECT_EX** request, the system locks down the buffer in user memory and the device accesses this memory directly.
 
-<div class="alert"><b>Note</b>  Drivers executing on a 64 bit version of Windows must use the <b>SCSI_PASS_THROUGH32_EX</b> structure as the request data type  when handling an <a href="/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through_ex">IOCTL_SCSI_PASS_THROUGH_EX</a> request from a 32 bit process.</div>
-<div> </div>
+> [!NOTE]
+> Drivers executing on a 64-bit version of Windows must use the **SCSI_PASS_THROUGH32_EX** structure as the request data type when handling an [**IOCTL_SCSI_PASS_THROUGH_EX**](ni-ntddscsi-ioctl_scsi_pass_through_ex.md) request from a 32-bit process.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through">IOCTL_SCSI_PASS_THROUGH</a>
+[**IOCTL_SCSI_PASS_THROUGH**](ni-ntddscsi-ioctl_scsi_pass_through.md)
 
+[**IOCTL_SCSI_PASS_THROUGH_EX**](ni-ntddscsi-ioctl_scsi_pass_through_ex.md)
 
-
-<a href="/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_pass_through_ex">IOCTL_SCSI_PASS_THROUGH_EX</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/ntddscsi/ns-ntddscsi-_scsi_pass_through">SCSI_PASS_THROUGH</a>
+[**SCSI_PASS_THROUGH**](ns-ntddscsi-_scsi_pass_through.md)

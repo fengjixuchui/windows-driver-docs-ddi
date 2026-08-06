@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_DMM_ESCAPE
 title: _D3DKMT_DMM_ESCAPE (d3dkmthk.h)
 description: Do not use the D3DKMT_DMM_ESCAPE structure; it is for testing purposes only. The D3DKMT_DMM_ESCAPE structure describes how to control the display mode manager (DMM) in a call to the D3DKMTEscape function.
 old-location: display\d3dkmt_dmm_escape.htm
-ms.assetid: 9d4a317d-bb0c-47d4-b9f2-e668adc4d0d4
 ms.date: 05/10/2018
 keywords: ["D3DKMT_DMM_ESCAPE structure"]
 ms.keywords: D3DKMT_DMM_ESCAPE, D3DKMT_DMM_ESCAPE structure [Display Devices], OpenGL_Structs_670cf3b6-6c85-4ddc-af88-8891e3f8f6ce.xml, _D3DKMT_DMM_ESCAPE, d3dkmthk/D3DKMT_DMM_ESCAPE, display.d3dkmt_dmm_escape
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_DMM_ESCAPE
  - D3DKMT_DMM_ESCAPE
 ---
 
@@ -74,3 +74,4 @@ minimum required size of Data[] array to contain requested data.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_escape">D3DKMT_ESCAPE</a>
+

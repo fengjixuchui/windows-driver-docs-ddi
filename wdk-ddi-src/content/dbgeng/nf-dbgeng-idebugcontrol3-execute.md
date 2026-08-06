@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl3.Execute
 title: IDebugControl3::Execute (dbgeng.h)
-description: The Execute method executes the specified debugger commands.
+description: The Execute method executes the specified debugger commands. This method belongs to the IDebugControl3 interface.
 old-location: debugger\execute.htm
 tech.root: debugger
-ms.assetid: 595aa371-ff7e-48e2-b29a-a7aabc70ebd7
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::Execute"]
 ms.keywords: Execute, Execute method [Windows Debugging], Execute method [Windows Debugging],IDebugControl interface, Execute method [Windows Debugging],IDebugControl2 interface, Execute method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],Execute method, IDebugControl2 interface [Windows Debugging],Execute method, IDebugControl2::Execute, IDebugControl3 interface [Windows Debugging],Execute method, IDebugControl3.Execute, IDebugControl3::Execute, IDebugControl::Execute, IDebugControl_d49bfbf9-c9e1-4a43-8f2c-8778ef51db79.xml, dbgeng/IDebugControl2::Execute, dbgeng/IDebugControl3::Execute, dbgeng/IDebugControl::Execute, debugger.execute
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.Execute
- - IDebugControl2.Execute
- - IDebugControl3.Execute
+ - IDebugControl3::Execute
 ---
 
 # IDebugControl3::Execute
@@ -52,19 +49,19 @@ The <b>Execute</b>  method executes the specified debugger commands.
 
 ## -parameters
 
-### -param OutputControl 
+### -param OutputControl [in]
 
-[in]
+
 Specifies the output control to use while executing the command.  For possible values, see <a href="/windows-hardware/drivers/debugger/debug-outctl-xxx">DEBUG_OUTCTL_XXX</a>.  For more information about output, see <a href="/windows-hardware/drivers/debugger/input-and-output">Input and Output</a>.
 
-### -param Command 
+### -param Command [in]
 
-[in]
+
 Specifies the command string to execute.  The command is interpreted like those typed into a debugger command window.  This command string can contain multiple commands for the engine to execute.  See <a href="/windows-hardware/drivers/debugger/debugger-commands">Debugger Commands</a> for the command reference.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies a bit field of execution options for the command.  The default options are to log the command but to not send it to the output.  The following table lists the bits that can be set.
 
 <table>
@@ -148,3 +145,4 @@ This method executes the given command string.  If the string has multiple comma
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
+

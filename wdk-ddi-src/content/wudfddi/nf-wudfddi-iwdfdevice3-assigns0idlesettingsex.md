@@ -4,7 +4,6 @@ title: IWDFDevice3::AssignS0IdleSettingsEx (wudfddi.h)
 description: The AssignS0IdleSettingsEx method provides driver-supplied information that the framework uses when a device is idle and the system is in its working (S0) state.
 old-location: wdf\iwdfdevice3_assigns0idlesettingsex.htm
 tech.root: wdf
-ms.assetid: D020B8AA-7353-47E1-A111-82BFE6F5F03D
 ms.date: 02/26/2018
 keywords: ["IWDFDevice3::AssignS0IdleSettingsEx"]
 ms.keywords: AssignS0IdleSettingsEx, AssignS0IdleSettingsEx method, AssignS0IdleSettingsEx method,IWDFDevice3 interface, IWDFDevice3 interface,AssignS0IdleSettingsEx method, IWDFDevice3.AssignS0IdleSettingsEx, IWDFDevice3::AssignS0IdleSettingsEx, umdf.iwdfdevice3_assigns0idlesettingsex, wdf.iwdfdevice3_assigns0idlesettingsex, wudfddi/IWDFDevice3::AssignS0IdleSettingsEx
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice3.AssignS0IdleSettingsEx
+ - IWDFDevice3::AssignS0IdleSettingsEx
 ---
 
 # IWDFDevice3::AssignS0IdleSettingsEx
@@ -53,9 +52,9 @@ The
 
 ## -parameters
 
-### -param IdleSettings 
+### -param IdleSettings [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wudfddi_types/ns-wudfddi_types-_wudf_device_power_policy_idle_settings">WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure that was initialized by a call to the <a href="/windows-hardware/drivers/ddi/wudfdevice/nf-wudfdevice-wudf_device_power_policy_idle_settings_init">WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT</a> macro.
 
 ## -returns
@@ -106,7 +105,6 @@ SAFE_RELEASE(pIWDFDevice3);
    
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice2-assigns0idlesettings">IWDFDevice2::AssignS0IdleSettings</a>
@@ -118,3 +116,4 @@ SAFE_RELEASE(pIWDFDevice3);
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceassigns0idlesettings">WdfDeviceAssignS0IdleSettings</a>
+

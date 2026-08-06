@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGK_POINTERFLAGS
 title: _DXGK_POINTERFLAGS (d3dkmddi.h)
 description: The DXGK_POINTERFLAGS structure identifies mouse pointer capabilities of the display miniport driver that the driver provides through a call to its DxgkDdiQueryAdapterInfo function.
 old-location: display\dxgk_pointerflags.htm
-ms.assetid: 0d49a089-700e-42c0-a1f3-7b181b8aef96
 ms.date: 05/10/2018
 keywords: ["DXGK_POINTERFLAGS structure"]
 ms.keywords: DXGK_POINTERFLAGS, DXGK_POINTERFLAGS structure [Display Devices], DmStructs_e2e2d800-cf64-44f9-95a2-a5eca8b8c303.xml, _DXGK_POINTERFLAGS, d3dkmddi/DXGK_POINTERFLAGS, display.dxgk_pointerflags
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_POINTERFLAGS
  - DXGK_POINTERFLAGS
 ---
 
@@ -89,3 +89,4 @@ The driver always specifies a color mouse pointer by using a A8R8G8B8 pixel form
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo">DxgkDdiQueryAdapterInfo</a>
+

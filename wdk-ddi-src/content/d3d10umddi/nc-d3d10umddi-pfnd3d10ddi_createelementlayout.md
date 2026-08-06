@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_CREATEELEMENTLAYOUT
 title: PFND3D10DDI_CREATEELEMENTLAYOUT (d3d10umddi.h)
 description: The CreateElementLayout function creates an element layout.
 old-location: display\createelementlayout.htm
-ms.assetid: 5af2189a-a064-4c62-be09-733c1d632983
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_CREATEELEMENTLAYOUT callback function"]
 ms.keywords: CreateElementLayout, CreateElementLayout callback function [Display Devices], PFND3D10DDI_CREATEELEMENTLAYOUT, PFND3D10DDI_CREATEELEMENTLAYOUT callback, UserModeDisplayDriverDx10_Functions_ca001144-74f8-4ff7-9cce-664d4070ad3d.xml, d3d10umddi/CreateElementLayout, display.createelementlayout
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CreateElementLayout
-product:
- - Windows
+ - PFND3D10DDI_CREATEELEMENTLAYOUT
 ---
 
 # PFND3D10DDI_CREATEELEMENTLAYOUT callback function
@@ -52,25 +49,25 @@ The <b>CreateElementLayout</b> function creates an element layout.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCreateElementLayout* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddiarg_createelementlayout">D3D10DDIARG_CREATEELEMENTLAYOUT</a> structure that describes the parameters that the user-mode display driver uses to create an element layout.
 
-### -param Arg3
+### -param unnamedParam3
 
 *hElementLayout* [in]
 
 A handle to the driver's private data for the element layout.
 
-### -param Arg4
+### -param unnamedParam4
 
 *hRTElementLayout* [in]
 
@@ -101,3 +98,4 @@ The driver can pass E_OUTOFMEMORY (if the driver runs out of memory) or D3DDDIER
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

@@ -1,17 +1,17 @@
 ---
+description: "Learn more about: Ndischimney.h header"
 UID: NA:ndischimney
 title: Ndischimney.h header
 ms.assetid: 900f2233-6276-3f86-a288-4789cc50ae6f
 ms.date: 05/09/2018
 keywords: ["Ndischimney.h header"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 tech.root: netvista
 f1_keywords:
  - ndischimney
  - ndischimney/ndischimney
+api_name:
+ - ndischimney
 ---
 
 # Ndischimney.h header
@@ -19,7 +19,7 @@ f1_keywords:
 
 ## -description
 
-This header is used by netvista. For more information, see:
+This header is used by network. For more information, see:
 
-- [Networking drivers for Windows Vista and later](../_netvista/index.md)
+- [Network](../_netvista/index.md)
 

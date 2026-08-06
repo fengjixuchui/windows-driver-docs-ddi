@@ -4,14 +4,13 @@ title: _D3DKMDT_VIDPN_HW_CAPABILITY (d3dkmdt.h)
 description: The D3DKMDT_VIDPN_HW_CAPABILITY structure describes the capabilities of the display miniport driver to perform display operations on a specified functional VidPN without dedicated GPU hardware support.
 old-location: display\d3dkmdt_vidpn_hw_capability.htm
 tech.root: display
-ms.assetid: 8d881133-3ea7-43c4-99cc-d843026573d6
 ms.date: 05/10/2018
 keywords: ["D3DKMDT_VIDPN_HW_CAPABILITY structure"]
 ms.keywords: D3DKMDT_VIDPN_HW_CAPABILITY, D3DKMDT_VIDPN_HW_CAPABILITY structure [Display Devices], DmStructs_93529025-7af3-49d1-8f38-2b0355682743.xml, _D3DKMDT_VIDPN_HW_CAPABILITY, d3dkmdt/D3DKMDT_VIDPN_HW_CAPABILITY, display.d3dkmdt_vidpn_hw_capability
 req.header: d3dkmdt.h
-req.include-header: D3dkmdt.h
+req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows 7
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmdt.h
 api_name:
+ - _D3DKMDT_VIDPN_HW_CAPABILITY
  - D3DKMDT_VIDPN_HW_CAPABILITY
 ---
 
@@ -111,3 +111,4 @@ The following definitions of terms are used in this topic.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddiformat">D3DDDIFORMAT</a>
+

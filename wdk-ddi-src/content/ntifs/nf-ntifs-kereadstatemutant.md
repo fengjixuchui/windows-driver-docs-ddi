@@ -1,11 +1,10 @@
 ---
 UID: NF:ntifs.KeReadStateMutant
 title: KeReadStateMutant function (ntifs.h)
-description: Reserved for system use.
+description: "Microsoft reserves the KeReadStateMutant function for internal use only. Don't use this function in your code."
 old-location: ifsk\kereadstatemutant.htm
 tech.root: ifsk
-ms.assetid: caf5d3fc-f9bb-412c-af5f-e0c5e4d45efc
-ms.date: 04/16/2018
+ms.date: 05/24/2022
 keywords: ["KeReadStateMutant function"]
 ms.keywords: KeReadStateMutant, KeReadStateMutant function [Installable File System Drivers], ifsk.kereadstatemutant, keref_71f98f36-f8ae-4ea9-9a54-8fb34694b18c.xml, ntifs/KeReadStateMutant
 req.header: ntifs.h
@@ -43,13 +42,16 @@ api_name:
 
 # KeReadStateMutant function
 
-
 ## -description
 
-The <b>KeReadStateMutant</b> routine is reserved for system use. See <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kereadstatemutex">KeReadStateMutex</a>.
+The **KeReadStateMutant** routine is reserved for system use. See [**KeReadStateMutex**](../wdm/nf-wdm-kereadstatemutex.md).
 
 ## -parameters
 
 ### -param Mutant
 
-<p>Reserved.</p>
+Reserved.
+
+## -returns
+
+Reserved.

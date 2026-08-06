@@ -4,7 +4,6 @@ title: PFND3DDDI_SETDEPTHSTENCIL (d3dumddi.h)
 description: The SetDepthStencil function sets the depth buffer in the driver's context.
 old-location: display\setdepthstencil.htm
 tech.root: display
-ms.assetid: 7c4b01c8-2376-4956-9b18-649647c19b2b
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETDEPTHSTENCIL callback function"]
 ms.keywords: PFND3DDDI_SETDEPTHSTENCIL, PFND3DDDI_SETDEPTHSTENCIL callback, SetDepthStencil, SetDepthStencil callback function [Display Devices], UserModeDisplayDriver_Functions_0279a98e-e1a5-4e33-8ced-9ac07e5e2921.xml, d3dumddi/SetDepthStencil, display.setdepthstencil
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - SetDepthStencil
-product:
- - Windows
+ - PFND3DDDI_SETDEPTHSTENCIL
 ---
 
 # PFND3DDDI_SETDEPTHSTENCIL callback function
@@ -56,7 +53,7 @@ The <i>SetDepthStencil</i> function sets the depth buffer in the driver's contex
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -77,3 +74,4 @@ The user-mode display driver should store the depth buffer in the driver's conte
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

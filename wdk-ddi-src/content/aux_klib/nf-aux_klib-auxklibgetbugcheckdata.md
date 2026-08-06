@@ -4,7 +4,6 @@ title: AuxKlibGetBugCheckData function (aux_klib.h)
 description: The AuxKlibGetBugCheckData routine retrieves information about a bug check that has just occurred.
 old-location: kernel\auxklibgetbugcheckdata.htm
 tech.root: kernel
-ms.assetid: d41d0eba-14e3-48ff-874d-e52589cf716c
 ms.date: 04/30/2018
 keywords: ["AuxKlibGetBugCheckData function"]
 ms.keywords: AuxKlibGetBugCheckData, AuxKlibGetBugCheckData routine [Kernel-Mode Driver Architecture], aux_klib/AuxKlibGetBugCheckData, aux_klib_3cb977df-feb6-4b52-afa1-b5e3038fc287.xml, kernel.auxklibgetbugcheckdata
@@ -51,9 +50,9 @@ The <b>AuxKlibGetBugCheckData</b> routine retrieves information about a bug chec
 
 ## -parameters
 
-### -param BugCheckData 
+### -param BugCheckData [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/aux_klib/ns-aux_klib-_kbugcheck_data">KBUGCHECK_DATA</a> structure that contains information about the bug check. The <i>BugCheckData</i> size of this structure should be set equal to the size, in bytes, of the <b>KBUGCHECK_DATA</b> structure.
 
 ## -returns

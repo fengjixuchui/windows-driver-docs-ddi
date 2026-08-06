@@ -1,11 +1,9 @@
 ---
 UID: NF:ks.KsValidateAllocatorFramingEx
 title: KsValidateAllocatorFramingEx function (ks.h)
-description: For system use only.
-old-location: stream\ksvalidateallocatorframingex.htm
+description: The KsValidateAllocatorFramingEx function is reserved for system use only.
 tech.root: stream
-ms.assetid: c30e1bae-08fc-496e-8781-2f47398a7b82
-ms.date: 04/23/2018
+ms.date: 07/13/2022
 keywords: ["KsValidateAllocatorFramingEx function"]
 ms.keywords: KsValidateAllocatorFramingEx, KsValidateAllocatorFramingEx function [Streaming Media Devices], ks/KsValidateAllocatorFramingEx, ksfunc_11744207-4d37-4b6c-a0bf-c454d7502b38.xml, stream.ksvalidateallocatorframingex
 req.header: ks.h
@@ -41,12 +39,9 @@ api_name:
  - KsValidateAllocatorFramingEx
 ---
 
-# KsValidateAllocatorFramingEx function
-
-
 ## -description
 
-For system use only.
+The **KsValidateAllocatorFramingEx** function is reserved for system use only.
 
 ## -parameters
 
@@ -56,3 +51,6 @@ For system use only.
 
 ### -param PinFraming
 
+## -returns
+
+Reserved for system use only.

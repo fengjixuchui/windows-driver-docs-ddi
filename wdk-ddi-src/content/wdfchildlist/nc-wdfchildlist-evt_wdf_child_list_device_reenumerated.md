@@ -4,7 +4,6 @@ title: EVT_WDF_CHILD_LIST_DEVICE_REENUMERATED (wdfchildlist.h)
 description: A driver's EvtChildListDeviceReenumerated event callback function enables the driver to approve or cancel a reenumeration of a specified device.
 old-location: wdf\evtchildlistdevicereenumerated.htm
 tech.root: wdf
-ms.assetid: 404436c3-6ddb-4212-ad51-23a956d7df52
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_CHILD_LIST_DEVICE_REENUMERATED callback function"]
 ms.keywords: DFDeviceObjectChildListRef_70b8a1c2-d157-4d57-85d3-09566977b649.xml, EVT_WDF_CHILD_LIST_DEVICE_REENUMERATED, EVT_WDF_CHILD_LIST_DEVICE_REENUMERATED callback, EvtChildListDeviceReenumerated, EvtChildListDeviceReenumerated callback function, kmdf.evtchildlistdevicereenumerated, wdf.evtchildlistdevicereenumerated, wdfchildlist/EvtChildListDeviceReenumerated
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfChildlist.h
 api_name:
- - EvtChildListDeviceReenumerated
+ - EVT_WDF_CHILD_LIST_DEVICE_REENUMERATED
 ---
 
 # EVT_WDF_CHILD_LIST_DEVICE_REENUMERATED callback function
@@ -52,24 +51,24 @@ A driver's <i>EvtChildListDeviceReenumerated</i> event callback function enables
 
 ## -parameters
 
-### -param ChildList 
+### -param ChildList [in]
 
-[in]
+
 A handle to a framework child list object.
 
-### -param OldDevice 
+### -param OldDevice [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param OldAddressDescription 
+### -param OldAddressDescription [in]
 
-[in]
+
 Optional pointer to a <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_address_description_header">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a> structure that identifies a child address description, or NULL. If provided, this structure contains address information that was relevant before the device was reenumerated.
 
-### -param NewAddressDescription 
+### -param NewAddressDescription [out]
 
-[out]
+
 Optional pointer to a <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_address_description_header">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a> structure that identifies a child address description, or NULL. If provided, the callback function fills in this structure with new address information about the device.
 
 ## -returns
@@ -117,3 +116,4 @@ For more information about dynamic enumeration, see <a href="/windows-hardware/d
 
 
 <a href="/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitsetdefaultchildlistconfig">WdfFdoInitSetDefaultChildListConfig</a>
+

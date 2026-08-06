@@ -4,7 +4,6 @@ title: StorPortInterlockedPushEntrySList function (storport.h)
 description: Inserts an item at the front of a Storport managed singly linked list. Access to the list is synchronized on a multiprocessor system.
 old-location: storage\storportinterlockedpushentryslist.htm
 tech.root: storage
-ms.assetid: 74C32E55-79C6-449A-AFA3-27858CF4EA6B
 ms.date: 03/29/2018
 keywords: ["StorPortInterlockedPushEntrySList function"]
 ms.keywords: StorPortInterlockedPushEntrySList, StorPortInterlockedPushEntrySList routine [Storage Devices], storage.storportinterlockedpushentryslist, storport/StorPortInterlockedPushEntrySList
@@ -50,25 +49,25 @@ Inserts  an item at the front of a Storport managed singly linked list. Access t
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param SListHead 
+### -param SListHead [in, out]
 
-[in, out]
+
 A pointer to an <b>STOR_SLIST_HEADER</b> structure that represents the head of a singly linked list. This structure is considered opaque and is for use by the Storport driver only.
 
-### -param SListEntry 
+### -param SListEntry [in, out]
 
-[in, out]
+
 A pointer to an <b>STOR_SLIST_ENTRY</b> structure that represents the item to insert into the singly linked list.
 
-### -param Result 
+### -param Result [out]
 
-[out]
-A pointer to a list entry pointer. The value returned is a pointer to  the previous item that existed  at the front of the list. This pervious item remains in the list behind the item new item added from <i>SListEntry</i>. If the list is empty, then <b>NULL</b> is returned in value pointed to by <i>Result</i>.
+
+A pointer to a list entry pointer. The value returned is a pointer to  the previous item that existed  at the front of the list. This previous item remains in the list behind the item new item added from <i>SListEntry</i>. If the list is empty, then <b>NULL</b> is returned in value pointed to by <i>Result</i>.
 
 ## -returns
 

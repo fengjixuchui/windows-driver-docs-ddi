@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILCALLAUDIOMEDIASTATE
 title: RILCALLAUDIOMEDIASTATE (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILCALLAUDIOMEDIASTATE structure for internal use only. Don't use the RILCALLAUDIOMEDIASTATE structure in your code."
 old-location: netvista\rilcallaudiomediastate.htm
 tech.root: netvista
-ms.assetid: f8e65085-6837-4d49-a39e-784942ee39a4
 ms.date: 05/02/2018
 keywords: ["RILCALLAUDIOMEDIASTATE structure"]
 ms.keywords: "*LPRILCALLAUDIOMEDIASTATE, RILCALLAUDIOMEDIASTATE, RILCALLAUDIOMEDIASTATE structure [Network Drivers Starting with Windows Vista], netvista.rilcallaudiomediastate, ntddrilapitypes/RILCALLAUDIOMEDIASTATE"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILCALLAUDIOMEDIASTATE
+ - LPRILCALLAUDIOMEDIASTATE
 ---
 
 # RILCALLAUDIOMEDIASTATE structure (ntddrilapitypes.h)

@@ -4,7 +4,6 @@ title: _MSiSCSI_QMIPSECStats (iscsiprf.h)
 description: The MSiSCSI_QMIPSECStats structure can be used by an iSCSI initiator to report IPsec statistics for an HBA.
 old-location: storage\msiscsi_qmipsecstats.htm
 tech.root: storage
-ms.assetid: 265ed956-1065-44be-ac8e-94bab2e4e8b8
 ms.date: 03/29/2018
 keywords: ["MSiSCSI_QMIPSECStats structure"]
 ms.keywords: "*PMSiSCSI_QMIPSECStats, MSiSCSI_QMIPSECStats, MSiSCSI_QMIPSECStats structure [Storage Devices], PMSiSCSI_QMIPSECStats, PMSiSCSI_QMIPSECStats structure pointer [Storage Devices], _MSiSCSI_QMIPSECStats, iscsiprf/MSiSCSI_QMIPSECStats, iscsiprf/PMSiSCSI_QMIPSECStats, storage.msiscsi_qmipsecstats, structs-iSCSI_979ce8ac-35be-4ac1-930a-6614053fc805.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsiprf.h
 api_name:
+ - _MSiSCSI_QMIPSECStats
+ - PMSiSCSI_QMIPSECStats
  - MSiSCSI_QMIPSECStats
 ---
 
@@ -133,3 +134,4 @@ It is optional that you implement this class.
 ## -see-also
 
 <a href="/windows-hardware/drivers/storage/msiscsi-qmipsecstats-wmi-class">MSiSCSI_QMIPSECStats WMI Class</a>
+

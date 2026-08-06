@@ -2,10 +2,8 @@
 UID: NF:ks.KsGenerateThermalEvent
 title: KsGenerateThermalEvent function (ks.h)
 description: This function is used by clients (miniport drivers) that do not want to subscribe to the thermal manager, but want to do their own thermal management.
-old-location: stream\ksgeneratethermalevent.htm
 tech.root: stream
-ms.assetid: CE450017-1792-4B69-8289-902396D0D7B1
-ms.date: 04/23/2018
+ms.date: 11/11/2022
 keywords: ["KsGenerateThermalEvent function"]
 ms.keywords: KsGenerateThermalEvent, KsGenerateThermalEvent function [Streaming Media Devices], ks/KsGenerateThermalEvent, stream.ksgeneratethermalevent
 req.header: ks.h
@@ -42,25 +40,20 @@ api_name:
  - KsGenerateThermalEvent
 ---
 
-# KsGenerateThermalEvent function
-
-
 ## -description
 
-This function is used by clients (miniport drivers) that do not want to subscribe to the thermal manager, but want to do their own thermal management. 
+This function is used by clients (miniport drivers) that do not want to subscribe to the thermal manager, but want to do their own thermal management.
 
 There is a check that verifies whether the miniport driver has the query interface support for a thermal manager (for example, the device is actively managed by a thermal manager). In cases of devices managed by a thermal manager, this call is rejected.
 
 ## -parameters
 
-### -param Object 
+### -param Object [in]
 
-[in]
-Can be  <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice">KSDEVICE</a>, <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter">KSFILTER</a>, or <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a>. Depending on the object passed, the thermal notification is sent device-wide, filter-wide, or to the pin.
+Can be [**KSDEVICE**](./ns-ks-_ksdevice.md), [**KSFILTER**](./ns-ks-_ksfilter.md), or [**KSPIN**](./ns-ks-_kspin.md). Depending on the object passed, the thermal notification is sent device-wide, filter-wide, or to the pin.
 
-### -param Value 
+### -param Value [in]
 
-[in]
 KSDEVICE_THERMAL_STATE_LOW or KSDEVICE_THERMAL_STATE_HIGH
 
 ## -returns

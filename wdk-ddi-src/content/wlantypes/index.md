@@ -1,17 +1,17 @@
 ---
+description: "Learn more about: Wlantypes.h header"
 UID: NA:wlantypes
 title: Wlantypes.h header
 ms.assetid: a8c636e3-169e-3e30-bdde-bae849febabd
 ms.date: 05/09/2018
 keywords: ["Wlantypes.h header"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 tech.root: netvista
 f1_keywords:
  - wlantypes
  - wlantypes/wlantypes
+api_name:
+ - wlantypes
 ---
 
 # Wlantypes.h header
@@ -19,7 +19,7 @@ f1_keywords:
 
 ## -description
 
-This header is used by netvista. For more information, see:
+This header is used by network. For more information, see:
 
-- [Networking drivers for Windows Vista and later](../_netvista/index.md)
+- [Network](../_netvista/index.md)
 

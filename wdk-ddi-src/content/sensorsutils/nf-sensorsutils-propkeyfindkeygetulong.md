@@ -2,7 +2,6 @@
 UID: NF:sensorsutils.PropKeyFindKeyGetUlong
 title: PropKeyFindKeyGetUlong function (sensorsutils.h)
 description: This routine gets a ULONG value from a PROPVARIANT within a collection list based on the PROPERTYKEY.
-ms.assetid: e3c390be-bebf-400d-9650-b7e3d0ff5a23
 ms.date: 08/08/2018
 keywords: ["PropKeyFindKeyGetUlong function"]
 tech.root: sensors
@@ -37,8 +36,6 @@ api_location:
  - sensorsutils.h
 api_name:
  - PropKeyFindKeyGetUlong
-product:
- - Windows
 ---
 
 # PropKeyFindKeyGetUlong function
@@ -50,17 +47,17 @@ This routine gets a ULONG value from a PROPVARIANT within a collection list base
 
 ## -parameters
 
-### -param pList
+### -param pList [in]
 
-[in] Pointer to the list of PROPVARIANT collection.
+Pointer to the list of PROPVARIANT collection.
 
-### -param pKey
+### -param pKey [in]
 
-[in] Pointer to a PROPERTYKEY for the target PROPVARIANT.
+Pointer to a PROPERTYKEY for the target PROPVARIANT.
 
-### -param pRetValue
+### -param pRetValue [out]
 
-[out] Pointer to the output buffer.
+Pointer to the output buffer.
 
 ## -returns
 

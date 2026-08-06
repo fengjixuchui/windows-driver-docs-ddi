@@ -4,7 +4,6 @@ title: NdisMUpdateOffloadComplete function (ndischimney.h)
 description: An offload target calls the NdisMUpdateOffloadComplete function to complete an update offload operation that was initiated by a previous call to the MiniportUpdateOffload function of the offload target.
 old-location: netvista\ndismupdateoffloadcomplete.htm
 tech.root: netvista
-ms.assetid: aa2c549c-eb16-4d59-9280-1913c8c0266a
 ms.date: 05/02/2018
 keywords: ["NdisMUpdateOffloadComplete function"]
 ms.keywords: NdisMUpdateOffloadComplete, NdisMUpdateOffloadComplete function [Network Drivers Starting with Windows Vista], ndischimney/NdisMUpdateOffloadComplete, netvista.ndismupdateoffloadcomplete, tcp_chim_ndis_func_c525f7d7-2a4d-47ef-8337-85551fb1f7ab.xml
@@ -56,16 +55,16 @@ An offload target calls the
 
 ## -parameters
 
-### -param NdisMiniportHandle 
+### -param NdisMiniportHandle [in]
 
-[in]
+
 The handle that the offload target obtained in a previous call to 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver">
      NdisMRegisterMiniportDriver</a>.
 
-### -param OffloadBlockList 
+### -param OffloadBlockList [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_miniport_offload_block_list">
      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure. The offload target obtained this pointer as an input

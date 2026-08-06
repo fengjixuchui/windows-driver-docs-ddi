@@ -1,10 +1,9 @@
 ---
 UID: NF:engextcpp.ExtRemoteData.ExtRemoteData(ULONG64,ULONG)
 title: ExtRemoteData::ExtRemoteData(ULONG64,ULONG) (engextcpp.h)
-description: The ExtRemoteData constructor creates a new instance of the ExtRemoteData class.
+description: The ExtRemoteData(ULONG64,ULONG) constructor creates an instance of the ExtRemoteData class. For a specified memory region, contents are read from the target.
 old-location: debugger\extremotedata_extremotedata_offset_bytes.htm
 tech.root: debugger
-ms.assetid: 0785b24d-e2f3-45f2-9b05-f2f477ad3d99
 ms.date: 08/09/2018
 keywords: ["ExtRemoteData::ExtRemoteData(ULONG64,ULONG)"]
 ms.keywords: ExtRemoteData, ExtRemoteData class [Windows Debugging],ExtRemoteData constructor, ExtRemoteData constructor [Windows Debugging], ExtRemoteData constructor [Windows Debugging],ExtRemoteData class, ExtRemoteData.ExtRemoteData, ExtRemoteData.ExtRemoteData(ULONG64,ULONG), ExtRemoteData::ExtRemoteData, ExtRemoteData::ExtRemoteData(ULONG64,ULONG), debugger.extremotedata_extremotedata_offset_bytes
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteData.ExtRemoteData
+ - ExtRemoteData::ExtRemoteData
 ---
 
 # ExtRemoteData::ExtRemoteData(ULONG64,ULONG)
@@ -51,13 +50,13 @@ The <b>ExtRemoteData</b> constructor creates a new instance of the[ExtRemoteData
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]Location of the beginning of the memory region in the target's virtual address space.
+Location of the beginning of the memory region in the target's virtual address space.
 
-### -param Bytes 
+### -param Bytes [in]
 
-[in]Number of bytes in the memory region.
+Number of bytes in the memory region.
 
 ## -remarks
 
@@ -72,3 +71,4 @@ The constructor is called by the ExtRemoteData::Set(Typed), ExtRemoteData::Set(O
 [ExtRemoteData::GetData](nf-engextcpp-extremotedata-getdata.md) 
 
 <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotedata-extremotedata(pcstr_ulong64_ulong)">ExtRemoteData::ExtRemoteData (Name, Offset, Bytes)</a>
+

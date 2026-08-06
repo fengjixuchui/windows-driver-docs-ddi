@@ -4,7 +4,6 @@ title: IDebugSymbols3::GetOffsetByLineWide (dbgeng.h)
 description: The GetOffsetByLineWide method returns the location of the instruction that corresponds to a specified line in the source code.
 old-location: debugger\getoffsetbylinewide.htm
 tech.root: debugger
-ms.assetid: ba09333e-84a5-4166-a859-e09c0cf74347
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::GetOffsetByLineWide"]
 ms.keywords: GetOffsetByLineWide, GetOffsetByLineWide method [Windows Debugging], GetOffsetByLineWide method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],GetOffsetByLineWide method, IDebugSymbols3.GetOffsetByLineWide, IDebugSymbols3::GetOffsetByLineWide, dbgeng/IDebugSymbols3::GetOffsetByLineWide, debugger.getoffsetbylinewide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols3.GetOffsetByLineWide
+ - IDebugSymbols3::GetOffsetByLineWide
 ---
 
 # IDebugSymbols3::GetOffsetByLineWide
@@ -50,19 +49,19 @@ The <b>GetOffsetByLineWide</b>  method returns the location of the instruction t
 
 ## -parameters
 
-### -param Line 
+### -param Line [in]
 
-[in]
+
 Specifies the line number in the source file.
 
-### -param File 
+### -param File [in]
 
-[in]
+
 Specifies the file name of the source file.
 
-### -param Offset 
+### -param Offset [out]
 
-[out]
+
 Receives the location in the target's virtual address space of an instruction for the specified line.
 
 ## -returns
@@ -100,3 +99,4 @@ For more information about source files, see <a href="/windows-hardware/drivers/
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

@@ -4,14 +4,13 @@ title: _FILE_ACCESS_INFORMATION (ntifs.h)
 description: The FILE_ACCESS_INFORMATION structure is used to query for or set the access rights of a file.
 old-location: kernel\file_access_information.htm
 tech.root: kernel
-ms.assetid: f5a09843-caf7-4550-bbc6-c0d799d66cd6
 ms.date: 04/30/2018
 keywords: ["FILE_ACCESS_INFORMATION structure"]
 ms.keywords: "*PFILE_ACCESS_INFORMATION, FILE_ACCESS_INFORMATION, FILE_ACCESS_INFORMATION structure [Kernel-Mode Driver Architecture], PFILE_ACCESS_INFORMATION, PFILE_ACCESS_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _FILE_ACCESS_INFORMATION, kernel.file_access_information, kstruct_b_3419b751-aa57-41e2-a51d-35bb5a6f38c8.xml, ntifs/FILE_ACCESS_INFORMATION, ntifs/PFILE_ACCESS_INFORMATION"
 req.header: ntifs.h
 req.include-header: Ntifs.h, Fltkernel.h
 req.target-type: Windows
-req.target-min-winverclnt: Supported in Windows XP and later versions of Windows.
+req.target-min-winverclnt: Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntifs.h
 api_name:
+ - _FILE_ACCESS_INFORMATION
+ - PFILE_ACCESS_INFORMATION
  - FILE_ACCESS_INFORMATION
 ---
 
@@ -71,3 +72,4 @@ The <i>AccessFlags</i> parameter is an access mask that encodes the user rights 
 
 
 <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryinformationfile">ZwQueryInformationFile</a>
+

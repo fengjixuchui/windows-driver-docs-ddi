@@ -4,7 +4,6 @@ title: _NDIS_NDK_LOCAL_ENDPOINTS (ntddndis.h)
 description: The NDIS_NDK_LOCAL_ENDPOINTS structure describes the NDK local endpoints that are on a miniport adapter.
 old-location: netvista\ndis_ndk_local_endpoints.htm
 tech.root: netvista
-ms.assetid: AF14B883-780E-42BE-9D8F-75C17011425B
 ms.date: 05/02/2018
 keywords: ["NDIS_NDK_LOCAL_ENDPOINTS structure"]
 ms.keywords: NDIS_NDK_LOCAL_ENDPOINTS, NDIS_NDK_LOCAL_ENDPOINTS structure [Network Drivers Starting with Windows Vista], PNDIS_NDK_LOCAL_ENDPOINTS, PNDIS_NDK_LOCAL_ENDPOINTS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_NDK_LOCAL_ENDPOINTS, netvista.ndis_ndk_local_endpoints, ntddndis/NDIS_NDK_LOCAL_ENDPOINTS, ntddndis/PNDIS_NDK_LOCAL_ENDPOINTS
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_NDK_LOCAL_ENDPOINTS
  - NDIS_NDK_LOCAL_ENDPOINTS
 ---
 
@@ -54,7 +54,7 @@ The <b>NDIS_NDK_LOCAL_ENDPOINTS</b> structure describes the NDK local endpoints 
 
 ### -field Header
 
-An <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure that describes this <b>NDIS_NDK_LOCAL_ENDPOINTS</b> structure. Set the members of the <b>NDIS_OBJECT_HEADER</b> structure as follows:
+An <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure that describes this <b>NDIS_NDK_LOCAL_ENDPOINTS</b> structure. Set the members of the <b>NDIS_OBJECT_HEADER</b> structure as follows:
 
 <ul>
 <li>Set the <b>Type</b> member to <b>NDIS_OBJECT_TYPE_DEFAULT</b>.</li>
@@ -78,7 +78,7 @@ A variable-sized array of <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntd
 
 ## -remarks
 
-The <b>NDIS_NDK_LOCAL_ENDPOINTS</b> structure is returned with the <a href="/windows-hardware/drivers/network/oid-ndk-local-endpoints">OID_NDK_LOCAL_ENDPOINTS</a> OID. The <b>InformationBuffer</b> member of the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure contains a pointer to this structure.
+The <b>NDIS_NDK_LOCAL_ENDPOINTS</b> structure is returned with the <a href="/windows-hardware/drivers/network/oid-ndk-local-endpoints">OID_NDK_LOCAL_ENDPOINTS</a> OID. The <b>InformationBuffer</b> member of the <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure contains a pointer to this structure.
 
 
 
@@ -102,12 +102,13 @@ If the RDMA technology for the NDK provider requires the provider to map ND loca
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 
 <a href="/windows-hardware/drivers/network/oid-ndk-local-endpoints">OID_NDK_LOCAL_ENDPOINTS</a>
+

@@ -1,11 +1,9 @@
 ---
 UID: NN:printerextension.IPrinterScriptablePropertyBag2
 title: IPrinterScriptablePropertyBag2 (printerextension.h)
-description: 
-old-location: print\iprinterscriptablepropertybag2.htm
+description: Defines the IPrinterScriptablePropertyBag2 interface.
 tech.root: print
-ms.assetid: 97586B8D-D070-4DF1-AECE-50EB4D28414B
-ms.date: 04/20/2018
+ms.date: 08/04/2022
 keywords: ["IPrinterScriptablePropertyBag2 interface"]
 ms.keywords: IPrinterScriptablePropertyBag2, IPrinterScriptablePropertyBag2 interface [Print Devices], IPrinterScriptablePropertyBag2 interface [Print Devices],described, print.iprinterscriptablepropertybag2, printerextension/IPrinterScriptablePropertyBag2
 req.header: printerextension.h
@@ -39,17 +37,12 @@ api_location:
  - Printerextension.h
 api_name:
  - IPrinterScriptablePropertyBag2
- - IPrinterScriptablePropertyBag2.GetReadStreamAsXML
 ---
-
-# IPrinterScriptablePropertyBag2 interface
-
 
 ## -description
 
+Defines the **IPrinterScriptablePropertyBag2** interface.
+
 ## -inheritance
 
-The <b xmlns:loc="https://microsoft.com/wdcml/l10n">IPrinterScriptablePropertyBag2</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPrinterScriptablePropertyBag2</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The **IPrinterScriptablePropertyBag2** interface inherits from the [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface.

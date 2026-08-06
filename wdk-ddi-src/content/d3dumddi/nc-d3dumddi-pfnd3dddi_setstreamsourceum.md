@@ -4,7 +4,6 @@ title: PFND3DDDI_SETSTREAMSOURCEUM (d3dumddi.h)
 description: The SetStreamSourceUM function binds a vertex stream source to a user memory buffer.
 old-location: display\setstreamsourceum.htm
 tech.root: display
-ms.assetid: 75a70801-0338-45ed-a691-5f84202575d5
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETSTREAMSOURCEUM callback function"]
 ms.keywords: PFND3DDDI_SETSTREAMSOURCEUM, PFND3DDDI_SETSTREAMSOURCEUM callback, SetStreamSourceUM, SetStreamSourceUM callback function [Display Devices], UserModeDisplayDriver_Functions_0bea09c2-3bd9-4c60-9688-1c5a687e0dc9.xml, d3dumddi/SetStreamSourceUM, display.setstreamsourceum
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - SetStreamSourceUM
+ - PFND3DDDI_SETSTREAMSOURCEUM
 ---
 
 # PFND3DDDI_SETSTREAMSOURCEUM callback function
@@ -50,18 +49,18 @@ The <i>SetStreamSourceUM</i> function binds a vertex stream source to a user mem
 
 ## -parameters
 
-### -param hDevice 
+### -param hDevice [in]
 
-[in]
+
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_setstreamsourceum">D3DDDIARG_SETSTREAMSOURCEUM</a> structure that specifies the vertex stream source to bind.
 
-### -param Arg3
+### -param unnamedParam3
 
 *pUMBuffer* [in]
 
@@ -78,3 +77,4 @@ A pointer to the user-memory buffer that supplies the vertex data for the vertex
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

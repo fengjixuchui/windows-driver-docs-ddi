@@ -4,7 +4,6 @@ title: ClfsScanLogContainers function (wdm.h)
 description: The ClfsScanLogContainers routine retrieves descriptive information for a sequence of containers that belong to a particular CLFS log.
 old-location: kernel\clfsscanlogcontainers.htm
 tech.root: kernel
-ms.assetid: 76f97976-f48b-4ead-88d6-a9e1fdb21f08
 ms.date: 04/30/2018
 keywords: ["ClfsScanLogContainers function"]
 ms.keywords: ClfsScanLogContainers, ClfsScanLogContainers routine [Kernel-Mode Driver Architecture], Clfs_eec877a8-028a-49f8-91ff-b8363e124011.xml, kernel.clfsscanlogcontainers, wdm/ClfsScanLogContainers
@@ -51,14 +50,14 @@ The <b>ClfsScanLogContainers</b> routine retrieves descriptive information for a
 
 ## -parameters
 
-### -param pcxScan 
+### -param pcxScan [in, out]
 
-[in, out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_scan_context">CLFS_SCAN_CONTEXT</a> structure. The caller previously allocated the structure and initialized it by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfscreatescancontext">ClfsCreateScanContext</a>. In particular, the <b>pInfoContainer</b> member was initialized to point to an array of <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_container_information">CLFS_CONTAINER_INFORMATION</a> structures, and the <b>cContainers</b> member was initialized to the number of elements in the array. On return, the structures in the array receive descriptive information for the containers in the sequence.
 
-### -param eScanMode 
+### -param eScanMode [in]
 
-[in]
+
 A set of flags that specify the direction of the scan and whether the scan context should be closed. The following flags are available to callers of this routine.
 
 <table>

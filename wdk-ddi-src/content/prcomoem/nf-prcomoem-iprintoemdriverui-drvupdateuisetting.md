@@ -4,7 +4,6 @@ title: IPrintOemDriverUI::DrvUpdateUISetting (prcomoem.h)
 description: The IPrintOemDriverUI::DrvUpdateUISetting method is provided by the Unidrv and Pscript5 minidrivers so that user interface plug-ins can notify the driver of a modified user interface option.
 old-location: print\iprintoemdriverui_drvupdateuisetting.htm
 tech.root: print
-ms.assetid: f5dec76e-16ad-4df0-b3c9-f0cbfb9b8c41
 ms.date: 04/20/2018
 keywords: ["IPrintOemDriverUI::DrvUpdateUISetting"]
 ms.keywords: DrvUpdateUISetting, DrvUpdateUISetting method [Print Devices], DrvUpdateUISetting method [Print Devices],IPrintOemDriverUI interface, IPrintOemDriverUI interface [Print Devices],DrvUpdateUISetting method, IPrintOemDriverUI.DrvUpdateUISetting, IPrintOemDriverUI::DrvUpdateUISetting, prcomoem/IPrintOemDriverUI::DrvUpdateUISetting, print.iprintoemdriverui_drvupdateuisetting, print_unidrv-pscript_ui_7a403e81-0021-463c-954c-659dd8c578b0.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemDriverUI.DrvUpdateUISetting
+ - IPrintOemDriverUI::DrvUpdateUISetting
 ---
 
 # IPrintOemDriverUI::DrvUpdateUISetting
@@ -145,3 +144,4 @@ The method is not implemented.
 If you are providing a user interface plug-in that implements the <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-documentpropertysheets">IPrintOemUI::DocumentPropertySheets</a> method or the <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-devicepropertysheets">IPrintOemUI::DevicePropertySheets</a> method, you typically also supply a <a href="/windows-hardware/drivers/ddi/compstui/nc-compstui-_cpsuicallback">_CPSUICALLBACK</a>-typed callback function to handle user modifications. This callback function must call <code>IPrintOemDriverUI::DrvUpdateUISetting</code> to inform the driver when the value associated with a user interface setting has been modified, if the value is stored in the driver's <a href="/windows/win32/api/wingdi/ns-wingdi-devmodew">DEVMODEW</a> structure (instead of the plug-in's private DEVMODEW members ) or in registry keys.
 
 The value specified for <i>dwMode</i> should be based on which method specified the callback function.
+

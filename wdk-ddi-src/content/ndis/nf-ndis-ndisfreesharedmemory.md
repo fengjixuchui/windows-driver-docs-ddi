@@ -4,7 +4,6 @@ title: NdisFreeSharedMemory function (ndis.h)
 description: The NdisFreeSharedMemory function frees shared memory that a driver allocated from a shared memory provider.
 old-location: netvista\ndisfreesharedmemory.htm
 tech.root: netvista
-ms.assetid: 5d0a1790-cec0-4c28-85dd-5f4d7d518d63
 ms.date: 05/02/2018
 keywords: ["NdisFreeSharedMemory function"]
 ms.keywords: NdisFreeSharedMemory, NdisFreeSharedMemory function [Network Drivers Starting with Windows Vista], ndis/NdisFreeSharedMemory, ndis_shared_memory_ref_b020f3ba-6e10-422f-9342-650236ace5f8.xml, netvista.ndisfreesharedmemory
@@ -53,18 +52,18 @@ The
 
 ## -parameters
 
-### -param NdisHandle 
+### -param NdisHandle [in]
 
-[in]
+
 An NDIS driver or instance handle that was obtained during caller initialization. This should be
      the same handle that was passed to the 
      <i>NdisHandle</i> parameter of the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatesharedmemory">
      NdisAllocateSharedMemory</a> function when the shared memory was allocated.
 
-### -param AllocationHandle 
+### -param AllocationHandle [in]
 
-[in]
+
 A handle for a context area that identifies the shared memory block. This is the handle that NDIS
      supplied at the 
      <i>pSharedMemoryProviderContext</i> parameter of the 

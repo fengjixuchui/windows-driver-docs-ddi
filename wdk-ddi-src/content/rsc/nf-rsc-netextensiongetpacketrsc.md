@@ -3,7 +3,6 @@ UID: NF:rsc.NetExtensionGetPacketRsc
 title: NetExtensionGetPacketRsc function (rsc.h)
 description: The NetExtensionGetPacketRsc function retrieves receive segment coalescence (RSC) information for a packet.
 tech.root: netvista
-ms.assetid: 1798e870-cfaf-44fc-920f-4167de3842ef
 ms.date: 09/24/2019
 keywords: ["NetExtensionGetPacketRsc function"]
 ms.keywords: NetExtensionGetPacketRsc
@@ -13,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -37,8 +36,6 @@ api_location:
  - rsc.h
 api_name:
  - NetExtensionGetPacketRsc
-product:
- - Windows
 ---
 
 # NetExtensionGetPacketRsc function

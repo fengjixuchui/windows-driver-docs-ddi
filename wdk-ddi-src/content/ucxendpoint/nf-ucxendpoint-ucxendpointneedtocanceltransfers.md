@@ -4,7 +4,6 @@ title: UcxEndpointNeedToCancelTransfers function (ucxendpoint.h)
 description: The client driver calls this method before it cancels transfers on the wire.
 old-location: buses\_ucxendpointneedtocanceltransfers.htm
 tech.root: usbref
-ms.assetid: 4DA3FB63-D2D3-43E1-9420-29303176B837
 ms.date: 05/07/2018
 keywords: ["UcxEndpointNeedToCancelTransfers function"]
 ms.keywords: UcxEndpointNeedToCancelTransfers, UcxEndpointNeedToCancelTransfers method [Buses], buses._ucxendpointneedtocanceltransfers, ucxendpoint/UcxEndpointNeedToCancelTransfers
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The client driver calls this method before it cancels transfers on the wire.
 
 ## -parameters
 
-### -param Endpoint 
+### -param Endpoint [in]
 
-[in]
+
 A handle to the endpoint object. The client driver retrieved the handle in a previous call to <a href="/windows-hardware/drivers/ddi/ucxendpoint/nf-ucxendpoint-ucxendpointcreate">UcxEndpointCreate</a>.
 
 ## -remarks

@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTALPHAFILLMODE
 title: PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTALPHAFILLMODE (d3d10umddi.h)
 description: Sets the alpha fill mode for data that the video processor writes to the render target.
 old-location: display\videoprocessorsetoutputalphafillmode.htm
-ms.assetid: 0c2cbb8f-d031-4267-b32f-620ed1ad065c
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTALPHAFILLMODE callback function"]
 ms.keywords: PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTALPHAFILLMODE, PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTALPHAFILLMODE callback, d3d10umddi/pfnVideoProcessorSetOutputAlphaFillMode, display.videoprocessorsetoutputalphafillmode, pfnVideoProcessorSetOutputAlphaFillMode, pfnVideoProcessorSetOutputAlphaFillMode callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoProcessorSetOutputAlphaFillMode
+ - PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTALPHAFILLMODE
 ---
 
 # PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTALPHAFILLMODE callback function
@@ -50,25 +49,25 @@ Sets the alpha fill mode for data that the video processor writes to the render 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hVideoProcessor* [in]
 
 A handle to the video processor object that was created through a call to the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a> function.
 
-### -param Arg3
+### -param unnamedParam3
 
 *FillMode* [in]
 
 The alpha fill mode, specified as a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d11_1ddi_video_processor_alpha_fill_mode">D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE</a> value. For more information, see the Remarks section.
 
-### -param Arg4
+### -param unnamedParam4
 
 *StreamIndex* [in]
 
@@ -103,3 +102,4 @@ The default fill mode is <b>D3D11_VIDEO_PROCESSOR_ALPHA_FILL_MODE_OPAQUE</b>.
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorcaps">GetVideoProcessorCaps</a>
+

@@ -4,7 +4,6 @@ title: RtlUIntPtrToLong function (ntintsafe.h)
 description: Converts a value of type UINT_PTR to a value of type LONG.
 old-location: kernel\rtluintptrtolong.htm
 tech.root: kernel
-ms.assetid: 03138EBA-F041-47E4-B379-25A96B04E491
 ms.date: 04/30/2018
 keywords: ["RtlUIntPtrToLong function"]
 ms.keywords: RtlUIntPtrToLong, RtlUIntPtrToLong function [Kernel-Mode Driver Architecture], kernel.rtluintptrtolong, ntintsafe/RtlUIntPtrToLong
@@ -54,9 +53,9 @@ Converts a value of type <b>UINT_PTR</b> to a value of type <b>LONG</b>.
 
 <p>The value to be converted.</p>
 
-### -param plResult 
+### -param plResult [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

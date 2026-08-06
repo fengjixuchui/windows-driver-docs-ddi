@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IModelKeyReference2.GetOriginalObject
 title: IModelKeyReference2::GetOriginalObject (dbgmodel.h)
-description: The GetOriginalObject method returns the instance object from which the key reference was created.
-ms.assetid: ed57ca76-772c-48ee-b7d3-ab1107569859
+description: "The IModelKeyReference2::GetOriginalObject method, when called on a key reference, gets the instance object from which the key reference was created."
 ms.date: 08/14/2018
 keywords: ["IModelKeyReference2::GetOriginalObject"]
 ms.keywords: IModelKeyReference2::GetOriginalObject, GetOriginalObject, IModelKeyReference2.GetOriginalObject, IModelKeyReference2::GetOriginalObject, IModelKeyReference2.GetOriginalObject
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IModelKeyReference2.GetOriginalObject
+ - IModelKeyReference2::GetOriginalObject
 ---
 
 # IModelKeyReference2::GetOriginalObject

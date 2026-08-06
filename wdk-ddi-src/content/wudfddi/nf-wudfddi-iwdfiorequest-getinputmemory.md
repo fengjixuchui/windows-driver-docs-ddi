@@ -4,7 +4,6 @@ title: IWDFIoRequest::GetInputMemory (wudfddi.h)
 description: The GetInputMemory method retrieves the memory object that represents the input buffer in an I/O request.
 old-location: wdf\iwdfiorequest_getinputmemory.htm
 tech.root: wdf
-ms.assetid: be3f965b-69fe-4d5e-b1b6-3a370603cd7b
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequest::GetInputMemory"]
 ms.keywords: GetInputMemory, GetInputMemory method, GetInputMemory method,IWDFIoRequest interface, IWDFIoRequest interface,GetInputMemory method, IWDFIoRequest.GetInputMemory, IWDFIoRequest::GetInputMemory, UMDFRequestObjectRef_80c18660-b423-42b0-879d-a8732d2e7796.xml, umdf.iwdfiorequest_getinputmemory, wdf.iwdfiorequest_getinputmemory, wudfddi/IWDFIoRequest::GetInputMemory
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequest.GetInputMemory
+ - IWDFIoRequest::GetInputMemory
 ---
 
 # IWDFIoRequest::GetInputMemory
@@ -52,9 +51,9 @@ The <b>GetInputMemory</b> method retrieves the memory object that represents the
 
 ## -parameters
 
-### -param ppWdfMemory 
+### -param ppWdfMemory [out]
 
-[out]
+
 A pointer to a variable that receives a pointer to the reference-counted <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfmemory">IWDFMemory</a> interface for the memory object. Note that returning <b>NULL</b> is valid; in this situation, no input memory is associated with the I/O request.
 
 ## -remarks
@@ -91,3 +90,4 @@ For a code example of how to use the <b>GetInputMemory</b> method, see <a href="
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfmemory-getdatabuffer">IWDFMemory::GetDataBuffer</a>
+

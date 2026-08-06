@@ -4,7 +4,6 @@ title: VideoPortMapDmaMemory function (video.h)
 description: The VideoPortMapDmaMemory function is obsolete in Windows 2000 and later.VideoPortMapDmaMemory maps a range of memory for use in DMA transfers.
 old-location: display\videoportmapdmamemory.htm
 tech.root: display
-ms.assetid: 51148c26-c10d-4c57-9e3e-c7d82d6a1c79
 ms.date: 05/10/2018
 keywords: ["VideoPortMapDmaMemory function"]
 ms.keywords: VideoPortMapDmaMemory, VideoPortMapDmaMemory function [Display Devices], VideoPort_Functions_f2a97e55-d165-4884-a121-52e98f8f46cd.xml, display.videoportmapdmamemory, video/VideoPortMapDmaMemory
@@ -52,29 +51,29 @@ The <b>VideoPortMapDmaMemory</b> function is <b>obsolete</b> in Windows 2000 and
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's device extension.
 
-### -param pVrp 
+### -param pVrp [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/video/ns-video-_video_request_packet">VIDEO_REQUEST_PACKET</a>.
 
-### -param BoardAddress 
+### -param BoardAddress [in]
 
-[in]
+
 Specifies the adapter's beginning address.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Specifies the length, in bytes, of the range of memory.
 
-### -param InIoSpace 
+### -param InIoSpace [in]
 
-[in]
+
 Indicates the location of the range. This parameter can be one of the following values:
 
 |Value|Meaning|
@@ -85,19 +84,19 @@ Indicates the location of the range. This parameter can be one of the following 
 |VIDEO_MEMORY_SPACE_P6CACHE|P6 MTRR caching, which is equivalent to write-combine caching. (kernel and user mode).|
 |VIDEO_MEMORY_SPACE_USER_MODE|Memory pointer for application use.|
 
-### -param MappedUserEvent 
+### -param MappedUserEvent [in]
 
-[in]
+
 Is reserved for system use.
 
-### -param DisplayDriverEvent 
+### -param DisplayDriverEvent [in]
 
-[in]
+
 Is reserved for system use.
 
-### -param VirtualAddress 
+### -param VirtualAddress [in, out]
 
-[in, out]
+
 Is reserved for system use.
 
 ## -returns

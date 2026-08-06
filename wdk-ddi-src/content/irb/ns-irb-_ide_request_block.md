@@ -4,7 +4,6 @@ title: _IDE_REQUEST_BLOCK (irb.h)
 description: The IDE_REQUEST_BLOCK structure defines an IDE request block.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\ide_request_block.htm
 tech.root: storage
-ms.assetid: 9e112984-0a7e-4bb9-a10f-b50ab67ce4f3
 ms.date: 03/29/2018
 keywords: ["IDE_REQUEST_BLOCK structure"]
 ms.keywords: "*PIDE_REQUEST_BLOCK, IDE_REQUEST_BLOCK, IDE_REQUEST_BLOCK structure [Storage Devices], PIDE_REQUEST_BLOCK, PIDE_REQUEST_BLOCK structure pointer [Storage Devices], _IDE_REQUEST_BLOCK, irb/IDE_REQUEST_BLOCK, irb/PIDE_REQUEST_BLOCK, storage.ide_request_block, structs-ATA_d1c6164f-8964-4e37-a9d4-9948215ed7cc.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - irb.h
 api_name:
+ - _IDE_REQUEST_BLOCK
+ - PIDE_REQUEST_BLOCK
  - IDE_REQUEST_BLOCK
 ---
 
@@ -297,7 +298,7 @@ Reserved for future use.
 
 ### -field IrbFlags
 
-Qualifies the request with ceratin actions that need to be performed. The table below describes them in detail.
+Qualifies the request with certain actions that need to be performed. The table below describes them in detail.
 
 <table>
 <tr>
@@ -462,7 +463,7 @@ The IDE_REQUEST_BLOCK structure provides a functionality similar to the <a href=
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/irb/nf-irb-ataportdevicebusy">AtaportDeviceBusy</a>
+<a href="/windows-hardware/drivers/ddi/irb/nf-irb-ataportdevicebusy">AtaPortDeviceBusy</a>
 
 
 
@@ -475,3 +476,4 @@ The IDE_REQUEST_BLOCK structure provides a functionality similar to the <a href=
 
 
 <a href="/windows-hardware/drivers/ddi/srb/ns-srb-_scsi_request_block">SCSI_REQUEST_BLOCK</a>
+

@@ -3,8 +3,7 @@ UID: NF:netpacketqueue.NET_PACKET_QUEUE_CONFIG_INIT
 title: NET_PACKET_QUEUE_CONFIG_INIT function (netpacketqueue.h)
 description: The NET_PACKET_QUEUE_CONFIG_INIT function initializes a NET_PACKET_QUEUE_CONFIG structure.
 tech.root: netvista
-ms.assetid: 5dd456ed-b2ec-4a60-8a43-0803a87eac84
-ms.date: 07/16/2018
+ms.date: 04/01/2022
 keywords: ["NET_PACKET_QUEUE_CONFIG_INIT function"]
 ms.keywords: NET_PACKET_QUEUE_CONFIG_INIT
 req.header: netpacketqueue.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.27
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: netadaptercxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -48,21 +47,21 @@ The **NET_PACKET_QUEUE_CONFIG_INIT** function initializes a [**NET_PACKET_QUEUE_
 
 ## -parameters
 
-### -param Config
+### -param Config [_Out_]
 
 A pointer to the driver-allocated [**NET_PACKET_QUEUE_CONFIG**](ns-netpacketqueue-_net_packet_queue_config.md) structure to initialize.
 
-### -param EvtAdvance
+### -param EvtAdvance [_In_]
 
 A pointer to the client driver's implementation of the [*EVT_PACKET_QUEUE_ADVANCE*](nc-netpacketqueue-evt_packet_queue_advance.md) callback function for this packet queue.
 
-### -param EvtSetNotificationEnabled
+### -param EvtSetNotificationEnabled [_In_]
 
 A pointer to the client driver's implementation of the [*EVT_PACKET_QUEUE_SET_NOTIFICATION_ENABLED*](nc-netpacketqueue-evt_packet_queue_advance.md) callback function for this packet queue.
 
-### -param EvtCancel
+### -param EvtCancel [_In_]
 
-A pointer to the client driver's implementation of the [*EVT_PACKET_QUEUE_CANCEL*](nc-netpacketqueue-evt_packet_queue_advance.md) callback function for this packet queue.
+A pointer to the client driver's implementation of the [*EVT_PACKET_QUEUE_CANCEL*](nc-netpacketqueue-evt_packet_queue_cancel.md) callback function for this packet queue.
 
 ## -remarks
 

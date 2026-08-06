@@ -4,7 +4,6 @@ title: W_TERMINATE_OFFLOAD_HANDLER (ndischimney.h)
 description: The MiniportTerminateOffload function terminates the offload of one or more state objects.
 old-location: netvista\miniportterminateoffload.htm
 tech.root: netvista
-ms.assetid: 1b808e3c-2d64-44c9-88d3-0a0311e1dc99
 ms.date: 05/02/2018
 keywords: ["W_TERMINATE_OFFLOAD_HANDLER callback function"]
 ms.keywords: MiniportTerminateOffload, MiniportTerminateOffload callback function [Network Drivers Starting with Windows Vista], W_TERMINATE_OFFLOAD_HANDLER, W_TERMINATE_OFFLOAD_HANDLER callback, ndischimney/MiniportTerminateOffload, netvista.miniportterminateoffload, tcp_chim_miniport_func_73171220-b803-4d9e-bf13-fe4daebbe5dc.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndischimney.h
 api_name:
- - MiniportTerminateOffload
+ - W_TERMINATE_OFFLOAD_HANDLER
 ---
 
 # W_TERMINATE_OFFLOAD_HANDLER callback function
@@ -53,9 +52,9 @@ The
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 The handle to an offload-target allocated context area in which the offload target maintains state
      information about this instance of the adapter. The offload target provided this handle to NDIS when it
      called 
@@ -64,9 +63,9 @@ The handle to an offload-target allocated context area in which the offload targ
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">
      MiniportInitializeEx</a> function.
 
-### -param OffloadBlockList 
+### -param OffloadBlockList [in, out]
 
-[in, out]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_miniport_offload_block_list">
      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure, which can be the root of a linked list of such
@@ -130,3 +129,4 @@ All outstanding receive and disconnect calls have returned.
 
 
 <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_tcp_offload_state_delegated">TCP_OFFLOAD_STATE_DELEGATED</a>
+

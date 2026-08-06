@@ -4,7 +4,6 @@ title: PDEBUG_EXTENSION_KNOWN_STRUCT (dbgeng.h)
 description: The engine calls the KnownStructOutput callback function to request information about structures that the extension DLL can format for printing. The engine calls this function for the following reasons.
 old-location: debugger\knownstructoutput.htm
 tech.root: debugger
-ms.assetid: 76b7e097-4953-4988-8999-07bbfbd65912
 ms.date: 05/03/2018
 keywords: ["PDEBUG_EXTENSION_KNOWN_STRUCT callback function"]
 ms.keywords: Extensions_Ref_dfff8fda-36a7-42ab-9ad7-1698c352c028.xml, KnownStructOutput, KnownStructOutput callback function [Windows Debugging], PDEBUG_EXTENSION_KNOWN_STRUCT, PDEBUG_EXTENSION_KNOWN_STRUCT callback, dbgeng/KnownStructOutput, debugger.knownstructoutput
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - KnownStructOutput
+ - PDEBUG_EXTENSION_KNOWN_STRUCT
 ---
 
 # PDEBUG_EXTENSION_KNOWN_STRUCT callback function
@@ -56,12 +55,11 @@ The engine calls the <i>KnownStructOutput</i> callback function to request infor
  CALLBACK* PDEBUG_EXTENSION_KNOWN_STRUCT KnownStructOutput;
 ```
 
-
 ## -parameters
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 One of the following values, depending on what information the engine wants to obtain from the extension DLL.
 
 <table>
@@ -101,36 +99,36 @@ Get  a single-line representation of a structure.
 </tr>
 </table>
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 <b>When getting a list of names:</b> Unused.
 
 <b>When asking whether a name should be printed:</b> Unused.
 
 <b>When getting a single-line representation:</b>  Specifies the location in the target's memory address space of the structure to be printed.
 
-### -param TypeName 
+### -param TypeName [in]
 
-[in]
+
 <b>When getting a list of names:</b>  Unused.
 
 <b>When asking whether a name should be printed:</b> Specifies the name of the structure.  This is one of the names returned from the DEBUG_KNOWN_STRUCT_GET_NAMES query.
 
 <b>When getting a single-line representation:</b>  Specifies the name of the structure.  This is one of the names returned from the DEBUG_KNOWN_STRUCT_GET_NAMES query.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 <b>When getting a list of names:</b>  Receives a list of the names of the structures that the extension can format for printing.  One null character must appear between each pair of names.  The list must be terminated with two null characters. The number of characters written to this buffer must not exceed the value of <i>BufferSize</i>.
 
 <b>When asking whether a name should be printed:</b> Unused.
 
 <b>When getting a single-line representation:</b>  Receives a representation  of the structure, identified by <i>StructName</i> and <i>Address</i>, as a string. The number of characters written to this buffer must not exceed the value of <i>BufferSize</i>.
 
-### -param BufferChars 
+### -param BufferChars [in, out]
 
-[in, out]
+
 <b>When getting a list of names:</b>  On input, specifies the size, in characters, of  <i>Buffer</i>. On output, if the buffer is too small, receives the required buffer size.
 
 <b>When asking whether a name should be printed:</b> Unused.
@@ -191,3 +189,4 @@ After initializing the extension DLL, the engine calls this function to query th
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nc-dbgeng-pdebug_extension_initialize">DebugExtensionInitialize</a>
+

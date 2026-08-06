@@ -4,7 +4,6 @@ title: PFND3DDDI_UNLOCK (d3dumddi.h)
 description: The Unlock function unlocks a resource or a surface within the resource that was previously locked by the Lock function.
 old-location: display\unlock.htm
 tech.root: display
-ms.assetid: 23cc9c64-99d4-4602-a1b0-234fe7fcc3da
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_UNLOCK callback function"]
 ms.keywords: PFND3DDDI_UNLOCK, PFND3DDDI_UNLOCK callback, Unlock, Unlock callback function [Display Devices], UserModeDisplayDriver_Functions_20b0d6f7-4bda-4d0f-9c3a-27d4011d2591.xml, d3dumddi/Unlock, display.unlock
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - Unlock
-product:
- - Windows
+ - PFND3DDDI_UNLOCK
 ---
 
 # PFND3DDDI_UNLOCK callback function
@@ -56,7 +53,7 @@ The <i>Unlock</i> function unlocks a resource or a surface within the resource t
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -99,3 +96,4 @@ The runtime calls the user-mode display driver's <i>Unlock</i> function to unloc
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_unlockcb">pfnUnlockCb</a>
+

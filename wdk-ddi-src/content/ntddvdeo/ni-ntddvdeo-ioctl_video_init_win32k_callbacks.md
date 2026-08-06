@@ -1,10 +1,9 @@
 ---
 UID: NI:ntddvdeo.IOCTL_VIDEO_INIT_WIN32K_CALLBACKS
 title: IOCTL_VIDEO_INIT_WIN32K_CALLBACKS (ntddvdeo.h)
-description: This IOCTL is for internal use only.
+description: "Microsoft reserves the IOCTL_VIDEO_INIT_WIN32K_CALLBACKS system call for internal use only. Don't use this system call in your code."
 old-location: display\ioctl_video_init_win32k_callbacks.htm
 tech.root: display
-ms.assetid: 1b003614-e80c-459d-a315-0dfdabcec5cc
 ms.date: 05/10/2018
 keywords: ["IOCTL_VIDEO_INIT_WIN32K_CALLBACKS IOCTL"]
 ms.keywords: IOCTL_VIDEO_INIT_WIN32K_CALLBACKS, IOCTL_VIDEO_INIT_WIN32K_CALLBACKS control, IOCTL_VIDEO_INIT_WIN32K_CALLBACKS control code [Display Devices], Video_IOCTLs_b482cd12-bd15-47b4-ba9c-fca652800d62.xml, display.ioctl_video_init_win32k_callbacks, ntddvdeo/IOCTL_VIDEO_INIT_WIN32K_CALLBACKS
@@ -49,6 +48,8 @@ api_name:
 This IOCTL is for internal use only.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

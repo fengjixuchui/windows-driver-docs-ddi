@@ -4,7 +4,6 @@ title: MINIPORT_WDI_RX_THROTTLE (dot11wdi.h)
 description: The MiniportWdiRxThrottle handler function tells the TAL/target to enable mechanisms to reduce the rate of RX MSDUs.
 old-location: netvista\miniportwdirxthrottle.htm
 tech.root: netvista
-ms.assetid: A5985C6D-3768-4ACE-B52B-3D3494334114
 ms.date: 05/02/2018
 keywords: ["MINIPORT_WDI_RX_THROTTLE callback function"]
 ms.keywords: MINIPORT_WDI_RX_THROTTLE, MINIPORT_WDI_RX_THROTTLE callback, MiniportWdiRxThrottle, MiniportWdiRxThrottle callback function [Network Drivers Starting with Windows Vista], dot11wdi/MiniportWdiRxThrottle, netvista.miniportwdirxthrottle
@@ -38,13 +37,16 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
- - MiniportWdiRxThrottle
+ - MINIPORT_WDI_RX_THROTTLE
 ---
 
 # MINIPORT_WDI_RX_THROTTLE callback function
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The 
   MiniportWdiRxThrottle handler function  tells the TAL/target to enable mechanisms to reduce the rate of RX MSDUs.
@@ -55,14 +57,14 @@ This is a WDI miniport handler inside <a href="/windows-hardware/drivers/ddi/dot
 
 ## -parameters
 
-### -param MiniportTalTxRxContext 
+### -param MiniportTalTxRxContext [in]
 
-[in]
+
 TAL device handle returned by the IHV miniport in <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tal_txrx_initialize">MiniportWdiTalTxRxInitialize</a>.
 
-### -param RxThrottleLevel 
+### -param RxThrottleLevel [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-_wdi_rx_throttle_level">WDI_RX_THROTTLE_LEVEL</a> enumeration value that specifies the throttle level.
 
 ## -see-also
@@ -80,3 +82,4 @@ A <a href="/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-_wdi_rx_throttle_l
 
 
 <a href="/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-_wdi_rx_throttle_level">WDI_RX_THROTTLE_LEVEL</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_StartModemLogs
 title: RIL_StartModemLogs function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_StartModemLogs function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_startmodemlogs.htm
 tech.root: netvista
-ms.assetid: 6f9b79a0-0947-4f69-b2b6-f35ad2ee70d5
 ms.date: 05/02/2018
 keywords: ["RIL_StartModemLogs function"]
 ms.keywords: RIL_StartModemLogs, RIL_StartModemLogs method [Network Drivers Starting with Windows Vista], netvista.ril_startmodemlogs, rilapi/RIL_StartModemLogs

@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.PoRegisterSystemState
 title: PoRegisterSystemState function (wdm.h)
-description: The PoRegisterSystemState routine registers the system as busy due to certain activity.
+description: The PoRegisterSystemState routine in wdm.h registers the system as busy due to certain activity as indicated by the flags.
 old-location: kernel\poregistersystemstate.htm
 tech.root: kernel
-ms.assetid: 851c694f-6c47-498c-8035-132a63c0fa62
 ms.date: 04/30/2018
 keywords: ["PoRegisterSystemState function"]
 ms.keywords: PoRegisterSystemState, PoRegisterSystemState routine [Kernel-Mode Driver Architecture], kernel.poregistersystemstate, portn_477a2d72-00f7-45a1-b7ca-504b741c5fe0.xml, wdm/PoRegisterSystemState
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ The <b>PoRegisterSystemState</b> routine registers the system as busy due to cer
 
 ## -parameters
 
-### -param StateHandle 
+### -param StateHandle [in, out]
 
-[in, out]
+
 A pointer to a caller-supplied buffer for a registration state handle. The size, in bytes, of the buffer is <b>sizeof</b>(ULONG). If <b>NULL</b>, this is a new registration. If non-<b>NULL</b>, this parameter points to a handle that was returned by a previous call to <b>PoRegisterSystemState</b>.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Indicates the type of activity, as specified by a bitwise OR of one or more of the following values:
 
 

@@ -3,7 +3,6 @@ UID: NC:d3dkmddi.DXGKDDI_RENDERGDI
 title: DXGKDDI_RENDERGDI (d3dkmddi.h)
 description: DxgkDdiRenderGdi is used when submitting Windows Graphics Device Interface (GDI) commands for contexts that support virtual addressing.
 old-location: display\dxgkddirendergdi.htm
-ms.assetid: 90C34125-FC32-46E3-81F7-6B2AACED9BAC
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_RENDERGDI callback function"]
 ms.keywords: DXGKDDI_RENDERGDI, DXGKDDI_RENDERGDI callback, DxgkDdiRenderGdi, DxgkDdiRenderGdi callback function [Display Devices], d3dkmddi/DxgkDdiRenderGdi, display.dxgkddirendergdi
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiRenderGdi
-product:
- - Windows
+ - DXGKDDI_RENDERGDI
 ---
 
 # DXGKDDI_RENDERGDI callback function
@@ -70,3 +67,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_rendergdi">DXGKARG_RENDERGDI</a>
+

@@ -4,7 +4,6 @@ title: NDK_FN_CREATE_LISTENER (ndkpi.h)
 description: The NdkCreateListener (NDK_FN_CREATE_LISTENER) function creates an NDK listener object.
 old-location: netvista\ndk_fn_create_listener.htm
 tech.root: netvista
-ms.assetid: CC6259B8-AF3B-4FCE-94E3-7A5CD80C64A7
 ms.date: 05/02/2018
 keywords: ["NDK_FN_CREATE_LISTENER callback function"]
 ms.keywords: NDK_FN_CREATE_LISTENER, NDK_FN_CREATE_LISTENER callback, NdkCreateListener, NdkCreateListener callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkCreateListener, netvista.ndk_fn_create_listener
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkCreateListener
+ - NDK_FN_CREATE_LISTENER
 ---
 
 # NDK_FN_CREATE_LISTENER callback function
@@ -50,32 +49,32 @@ The <i>NdkCreateListener</i> (<i>NDK_FN_CREATE_LISTENER</i>) function creates an
 
 ## -parameters
 
-### -param pNdkAdapter 
+### -param pNdkAdapter [in]
 
-[in]
+
 A pointer to an NDK adapter object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_adapter">NDK_ADAPTER</a>).
 
-### -param ConnectEvent 
+### -param ConnectEvent [in]
 
-[in]
+
 A pointer to the <i>NdkConnectEventCallback </i> function   (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_connect_event_callback">NDK_FN_CONNECT_EVENT_CALLBACK</a>) that the provider uses to notify the consumer for each incoming connection request.
 
-### -param ConnectEventContext 
+### -param ConnectEventContext [in, optional]
 
-[in, optional]
+
 A context value that the NDK provider passes back to the <i>NdkConnectEventCallback </i> function that is specified in the <i>ConnectEvent</i> parameter.
 
-### -param CreateCompletion 
+### -param CreateCompletion [in]
 
-[in]
+
 A pointer to an <i>NdkCreateCompletion</i> (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_create_completion">NDK_FN_CREATE_COMPLETION</a>) function that completes the creation of an NDK object.
 
-### -param RequestContext 
+### -param RequestContext [in, optional]
 
-[in, optional]
+
 A context value that the NDK provider passes back to the <i>NdkCreateCompletion</i> function that is specified in the <i>CreateCompletion</i> parameter.
 
-### -param *ppNdkListener
+### -param ppNdkListener
 
 A pointer to the created NDK  listener object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_listener">NDK_LISTENER</a>) is returned in this location if request succeeds without returning STATUS_PENDING. If <i>NdkCreateListener</i> returns STATUS_PENDING this parameter is ignored and the created object is returned  with the callback that is specified in the  <i>CreateCompletion</i> parameter.
 
@@ -164,3 +163,4 @@ The <i>NdkCreateListener</i> function creates an NDK listener object. If the fun
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_listener">NDK_LISTENER</a>
+

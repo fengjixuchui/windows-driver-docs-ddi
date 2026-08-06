@@ -4,7 +4,6 @@ title: EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE (ufxclient.h)
 description: The client driver's implementation to set or clear the specified power feature on the function controller.
 old-location: buses\evt_ufx_device_super_speed_power_feature.htm
 tech.root: usbref
-ms.assetid: 5A2B787B-13B8-48E9-B53E-7F6409820B88
 ms.date: 05/07/2018
 keywords: ["EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE callback function"]
 ms.keywords: EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE, EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE callback, EvtUfxDeviceSuperSpeedPowerFeature, EvtUfxDeviceSuperSpeedPowerFeature callback function [Buses], PFN_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE, PFN_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE callback function pointer [Buses], buses.evt_ufx_device_super_speed_power_feature, ufxclient/EvtUfxDeviceSuperSpeedPowerFeature
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ufxclient.h
 api_name:
- - PFN_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE
+ - EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE
 ---
 
 # EVT_UFX_DEVICE_SUPER_SPEED_POWER_FEATURE callback function
@@ -50,7 +49,11 @@ The client driver's implementation to set or clear the specified power feature o
 
 ## -parameters
 
-#### - Feature [in]
+### -param unnamedParam1 [in]
+
+The handle to a  USB device object that the client driver received in a previous call to  the <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
+
+### -param unnamedParam2 [in]
 
 Feature selector for the power feature that is set or cleared, as defined in section 9.4 of the USB 3.0 Specification.  The feature selector can be one of these values: 
 
@@ -60,16 +63,12 @@ Feature selector for the power feature that is set or cleared, as defined in sec
 </li>
 </ul>
 
-#### - Set [in]
+
+### -param unnamedParam3 [in]
 
 If TRUE, set the feature.
 
 If FALSE, clear the feature.
-
-
-#### - UfxDevice [in]
-
-The handle to a  USB device object that the client driver received in a previous call to  the <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
 
 ## -remarks
 
@@ -144,7 +143,6 @@ Arguments:
 
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>
@@ -152,3 +150,4 @@ Arguments:
 
 
 <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdeviceeventcomplete">UfxDeviceEventComplete</a>
+

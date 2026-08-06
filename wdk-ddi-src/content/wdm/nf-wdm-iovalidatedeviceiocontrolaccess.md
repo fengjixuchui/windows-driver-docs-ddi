@@ -4,7 +4,6 @@ title: IoValidateDeviceIoControlAccess function (wdm.h)
 description: For more information, see the WdmlibIoValidateDeviceIoControlAccess function.
 old-location: kernel\iovalidatedeviceiocontrolaccess.htm
 tech.root: kernel
-ms.assetid: 45e8279f-b7a5-4b45-92b7-5f740f6c1117
 ms.date: 04/30/2018
 keywords: ["IoValidateDeviceIoControlAccess function"]
 ms.keywords: IoValidateDeviceIoControlAccess, IoValidateDeviceIoControlAccess routine [Kernel-Mode Driver Architecture], k104_724cb845-fabf-4b5a-8712-901829f1f79d.xml, kernel.iovalidatedeviceiocontrolaccess, wdm/IoValidateDeviceIoControlAccess
@@ -50,14 +49,14 @@ For more information, see  the <a href="/windows-hardware/drivers/ddi/wdmsec/nf-
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 For more information, see  the <a href="/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiovalidatedeviceiocontrolaccess">WdmlibIoValidateDeviceIoControlAccess</a> function.
 
-### -param RequiredAccess 
+### -param RequiredAccess [in]
 
-[in]
+
 For more information, see  the <a href="/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibiovalidatedeviceiocontrolaccess">WdmlibIoValidateDeviceIoControlAccess</a> function.
 
 ## -returns

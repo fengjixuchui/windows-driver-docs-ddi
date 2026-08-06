@@ -2,7 +2,6 @@
 UID: NC:dispmprt.DXGK_BRIGHTNESS_SET_BACKLIGHT_OPTIMIZATION_3
 title: DXGK_BRIGHTNESS_SET_BACKLIGHT_OPTIMIZATION_3 (dispmprt.h)
 description: Implemented by the client driver to set the level of optimization used to control the brightness of a panel.
-ms.assetid: 07bffb8b-08d5-4f24-bdf3-c3a4648e8724
 ms.date: 10/19/2018
 keywords: ["DXGK_BRIGHTNESS_SET_BACKLIGHT_OPTIMIZATION_3 callback function"]
 req.header: dispmprt.h
@@ -35,8 +34,6 @@ api_location:
  - dispmprt.h
 api_name:
  - DXGK_BRIGHTNESS_SET_BACKLIGHT_OPTIMIZATION_3
-product:
- - Windows
 ---
 
 # DXGK_BRIGHTNESS_SET_BACKLIGHT_OPTIMIZATION_3 callback function
@@ -48,17 +45,17 @@ Implemented by the client driver to set the level of optimization used to contro
 
 ## -parameters
 
-### -param Context
+### -param Context [in]
 
-[in] Context pointer provided when querying the interface.
+Context pointer provided when querying the interface.
 
-### -param ChildUid
+### -param ChildUid [in]
 
-[in] An integer that uniquely identifies the child device. The display miniport driver's [DxgkDdiQueryChildRelations](../dispmprt/nc-dispmprt-dxgkddi_query_child_relations.md) function previously provided this identifier to the display port driver.
+An integer that uniquely identifies the child device. The display miniport driver's [DxgkDdiQueryChildRelations](../dispmprt/nc-dispmprt-dxgkddi_query_child_relations.md) function previously provided this identifier to the display port driver.
 
-### -param OptimizationLevel
+### -param OptimizationLevel [in]
 
-[in] A value of type [DXGK_BACKLIGHT_OPTIMIZATION_LEVEL](../d3dkmdt/ne-d3dkmdt-dxgk_backlight_optimization_level.md) that indicates the optimization level of brightness control.
+A value of type [DXGK_BACKLIGHT_OPTIMIZATION_LEVEL](../d3dkmdt/ne-d3dkmdt-dxgk_backlight_optimization_level.md) that indicates the optimization level of brightness control.
 
 ## -returns
 

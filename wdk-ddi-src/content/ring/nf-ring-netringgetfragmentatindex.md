@@ -3,7 +3,6 @@ UID: NF:ring.NetRingGetFragmentAtIndex
 title: NetRingGetFragmentAtIndex function (ring.h)
 description: The NetRingGetFragmentAtIndex function retrieves a fragment from a net ring.
 tech.root: netvista
-ms.assetid: 4cd64469-7623-437b-b85d-3fd5535495be
 ms.date: 09/25/2019
 keywords: ["NetRingGetFragmentAtIndex function"]
 ms.keywords: NetRingGetFragmentAtIndex
@@ -13,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -37,8 +36,6 @@ api_location:
  - ring.h
 api_name:
  - NetRingGetFragmentAtIndex
-product:
- - Windows
 ---
 
 # NetRingGetFragmentAtIndex function

@@ -4,7 +4,6 @@ title: NdisInterlockedRemoveHeadList macro (ndis.h)
 description: The NdisInterlockedRemoveHeadList function removes an entry, usually a packet, from the head of a doubly linked list so that access to the list is synchronized in a multiprocessor-safe way.
 old-location: netvista\ndisinterlockedremoveheadlist.htm
 tech.root: netvista
-ms.assetid: 85cbc158-7132-4666-8161-a78251a62e4d
 ms.date: 05/02/2018
 keywords: ["NdisInterlockedRemoveHeadList macro"]
 ms.keywords: NdisInterlockedRemoveHeadList, NdisInterlockedRemoveHeadList macro [Network Drivers Starting with Windows Vista], ndis/NdisInterlockedRemoveHeadList, ndis_interlocked_ref_5aacd492-068c-4cfe-afa6-4e0e63cf66e9.xml, netvista.ndisinterlockedremoveheadlist
@@ -27,6 +26,7 @@ req.dll:
 req.irql: Any level
 targetos: Windows
 req.typenames: 
+returns-override: true
 f1_keywords:
  - NdisInterlockedRemoveHeadList
  - ndis/NdisInterlockedRemoveHeadList
@@ -51,17 +51,29 @@ The
   <b>NdisInterlockedRemoveHeadList</b> function removes an entry, usually a packet, from the head of a doubly
   linked list so that access to the list is synchronized in a multiprocessor-safe way.
 
+## -syntax
+```cpp
+PLIST_ENTRY NdisInterlockedRemoveHeadList(
+  [in]  _ListHead,
+  [in]  _SpinLock
+);
+```
+
 ## -parameters
 
-### -param _ListHead 
+### -param _ListHead [in]
 
-[in]
+
 A pointer to the head of the doubly linked list from which an entry is to be removed.
 
-### -param _SpinLock 
+### -param _SpinLock [in]
 
-[in]
+
 A pointer to a caller-supplied spin lock, used to synchronize access to the list.
+
+## -returns
+
+<b>NdisInterlockedRemoveHeadList</b> returns a pointer to the <a href="/windows/win32/api/ntdef/ns-ntdef-list_entry">LIST_ENTRY</a> structure removed from the list. If the list was empty, the routine returns <b>NULL</b>.
 
 ## -remarks
 
@@ -89,7 +101,7 @@ The caller-supplied spin lock prevents any other function from accessing the dri
     <b>NdisInterlockedRemoveHeadList</b> cannot be pageable code.
 
 To convert a returned value back to the address of the inserted entry, a driver can use the 
-    <a href="/windows-hardware/drivers/kernel/mm-bad-pointer">CONTAINING_RECORD</a> macro.
+    [**CONTAINING_RECORD**](/windows/win32/api/ntdef/nf-ntdef-containing_record) macro.
 
 If 
     <b>NdisInterlockedRemoveHeadList</b> is called at IRQL >= DISPATCH_LEVEL, the storage for the 
@@ -97,7 +109,7 @@ If
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/kernel/mm-bad-pointer">CONTAINING_RECORD</a>
+[**CONTAINING_RECORD**](/windows/win32/api/ntdef/nf-ntdef-containing_record)
 
 
 

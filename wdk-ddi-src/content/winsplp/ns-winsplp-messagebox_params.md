@@ -1,10 +1,9 @@
 ---
-UID: NS:winsplp.__unnamed_struct_7
+UID: NS:winsplp.MESSAGEBOX_PARAMS
 title: MESSAGEBOX_PARAMS (winsplp.h)
 description: The MESSAGEBOX_PARAMS structure is used by the SplPromptUIInUsersSession function to hold information about the appearance and behavior of a message box.
 old-location: print\messagebox_params.htm
 tech.root: print
-ms.assetid: 28a94e25-9beb-46a1-9e9d-9fe4823372be
 ms.date: 04/20/2018
 keywords: ["MESSAGEBOX_PARAMS structure"]
 ms.keywords: "*PMESSAGEBOX_PARAMS, MESSAGEBOX_PARAMS, MESSAGEBOX_PARAMS structure [Print Devices], PMESSAGEBOX_PARAMS, PMESSAGEBOX_PARAMS structure pointer [Print Devices], print.messagebox_params, spoolfnc_c70908b4-e8de-4e3e-810d-d76cf2104d91.xml, winsplp/MESSAGEBOX_PARAMS, winsplp/PMESSAGEBOX_PARAMS"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - winsplp.h
 api_name:
+ - PMESSAGEBOX_PARAMS
  - MESSAGEBOX_PARAMS
 ---
 
@@ -74,7 +74,7 @@ Specifies the time, in seconds, to wait for the user's response, provided that t
 
 ### -field bWait
 
-Specifies whether the <b>SplPromptUIInUsersSession</b> function should wait for a user's response. If <b>bWait</b> is <b>TRUE</b>, <b>SplPromptUIInUsersSession</b> does not return until either the user responds or the time-out interval elapses. If <b>dwTimeout</b> is zero, <b>SplPromptUIInUsersSession</b> does not return until the user responds. If <b>bWait</b> is <b>FALSE</b>, the function returns immediately with *<i>pResponse</i> set to IDASYNC.
+Specifies whether the <b>SplPromptUIInUsersSession</b> function should wait for a user's response. If <b>bWait</b> is <b>TRUE</b>, <b>SplPromptUIInUsersSession</b> does not return until either the user responds or the time-out interval elapses. If <b>dwTimeout</b> is zero, <b>SplPromptUIInUsersSession</b> does not return until the user responds. If <b>bWait</b> is <b>FALSE</b>, the function returns immediately with **pResponse* set to IDASYNC.
 
 ## -remarks
 
@@ -87,3 +87,4 @@ One member of the <a href="/windows-hardware/drivers/ddi/winsplp/ns-winsplp-show
 
 
 <a href="/windows-hardware/drivers/ddi/winsplp/nf-winsplp-splpromptuiinuserssession">SplPromptUIInUsersSession</a>
+

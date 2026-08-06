@@ -4,7 +4,6 @@ title: PGET_LOCATION_STRING (ntddk.h)
 description: The PnpGetLocationString routine provides the device-specific part of the device's SPDRP_LOCATION_PATHS property.
 old-location: kernel\pnpgetlocationstring.htm
 tech.root: kernel
-ms.assetid: 03ebdeed-10f0-4633-a9cd-4db683a8c3a7
 ms.date: 04/30/2018
 keywords: ["PGET_LOCATION_STRING callback function"]
 ms.keywords: PGET_LOCATION_STRING, PnpGetLocationString, PnpGetLocationString routine [Kernel-Mode Driver Architecture], drvr_interface_86bd2a9c-408f-430f-9ab7-5c368600de1e.xml, kernel.pnpgetlocationstring, ntddk/PnpGetLocationString
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ntddk.h
 api_name:
- - PnpGetLocationString
+ - PGET_LOCATION_STRING
 ---
 
 # PGET_LOCATION_STRING callback function
@@ -50,14 +49,14 @@ The <i>PnpGetLocationString</i> routine provides the device-specific part of the
 
 ## -parameters
 
-### -param Context 
+### -param Context [in, out]
 
-[in, out]
+
 A pointer to interface-specific context information.  The caller passes the value that is passed as the <b>Context</b> member of the <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_pnp_location_interface">PNP_LOCATION_INTERFACE</a> structure.
 
-### -param LocationStrings 
+### -param LocationStrings [out]
 
-[out]
+
 A pointer to a sequence of null-terminated Unicode strings, that is terminated by another zero. Each string serves as a location string for the device. Drivers typically return a single string.
 
 ## -returns
@@ -87,3 +86,4 @@ The <i>PnpGetLocationString</i> routine calls a routine such as <a href="/window
 
 
 <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_pnp_location_interface">PNP_LOCATION_INTERFACE</a>
+

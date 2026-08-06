@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.RtlInitStringEx
 title: RtlInitStringEx function (wdm.h)
-description: The RtlInitStringEx routine initializes a counted string of 8-bit characters.
+description: The RtlInitStringEx routine in wdm.h initializes a counted string of 8-bit characters. RtlInitStringEx does not alter the source string.
 old-location: kernel\rtl_init_string_ex.htm
 tech.root: kernel
-ms.assetid: D59E6B78-2B51-4A5D-A9EA-E6D8DD90C374
 ms.date: 04/30/2018
 keywords: ["RtlInitStringEx function"]
 ms.keywords: RtlInitString, RtlInitString routine [Kernel-Mode Driver Architecture], RtlInitStringEx, kernel.rtl_init_string_ex, wdm/RtlInitString
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - NtosKrnl.exe
 api_name:
- - RtlInitString
+ - RtlInitStringEx
 ---
 
 # RtlInitStringEx function (wdm.h)
@@ -50,14 +49,14 @@ The <b>RtlInitStringEx</b> routine initializes a counted string of 8-bit charact
 
 ## -parameters
 
-### -param DestinationString 
+### -param DestinationString [out]
 
-[out]
+
 A pointer to the <b>STRING</b> structure to be initialized. The Ntdef.h header file defines this structure to be identical to the <a href="/windows/win32/api/ntdef/ns-ntdef-string">ANSI_STRING</a> structure.
 
-### -param SourceString 
+### -param SourceString [in, optional]
 
-[in, optional]
+
 A pointer to a null-terminated character string. This string is used to initialize the counted string pointed to by <i>DestinationString</i>.
 
 ## -returns
@@ -77,3 +76,4 @@ Callers of <b>RtlInitStringEx</b> can be running at IRQL <= DISPATCH_LEVEL if th
 ## -see-also
 
 <a href="/windows/win32/api/ntdef/ns-ntdef-string">ANSI_STRING</a>
+

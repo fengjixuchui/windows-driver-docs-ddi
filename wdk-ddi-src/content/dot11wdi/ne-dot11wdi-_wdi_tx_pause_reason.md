@@ -4,7 +4,6 @@ title: _WDI_TX_PAUSE_REASON (dot11wdi.h)
 description: The WDI_TX_PAUSE_REASON enumeration defines the reasons for a TX pause.
 old-location: netvista\wdi_tx_pause_reason.htm
 tech.root: netvista
-ms.assetid: 2585d243-e3b0-414d-a932-28d91b69f1f4
 ms.date: 05/02/2018
 keywords: ["WDI_TX_PAUSE_REASON enumeration"]
 ms.keywords: WDI_TX_PAUSE_REASON, WDI_TX_PAUSE_REASON enumeration [Network Drivers Starting with Windows Vista], WDI_TX_PAUSE_REASON_CREDIT, WDI_TX_PAUSE_REASON_IHV_END, WDI_TX_PAUSE_REASON_IHV_START, WDI_TX_PAUSE_REASON_NULL, WDI_TX_PAUSE_REASON_PEER_CREATE, WDI_TX_PAUSE_REASON_PS, _WDI_TX_PAUSE_REASON, dot11wdi/WDI_TX_PAUSE_REASON, dot11wdi/WDI_TX_PAUSE_REASON_CREDIT, dot11wdi/WDI_TX_PAUSE_REASON_IHV_END, dot11wdi/WDI_TX_PAUSE_REASON_IHV_START, dot11wdi/WDI_TX_PAUSE_REASON_NULL, dot11wdi/WDI_TX_PAUSE_REASON_PEER_CREATE, dot11wdi/WDI_TX_PAUSE_REASON_PS, netvista.wdi_tx_pause_reason, netvista.wifi_tx_pause_reason
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
+ - _WDI_TX_PAUSE_REASON
  - WDI_TX_PAUSE_REASON
 ---
 
@@ -47,6 +47,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_TX_PAUSE_REASON enumeration defines the reasons for a TX pause.
 
@@ -79,3 +82,4 @@ Inclusive end of range of valid pause reasons for IHV use.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_txrx_target_capabilities">WDI_TXRX_CAPABILITIES</a>
+

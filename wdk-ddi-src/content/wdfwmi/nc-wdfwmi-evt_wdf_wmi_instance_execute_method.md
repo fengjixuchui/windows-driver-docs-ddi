@@ -4,7 +4,6 @@ title: EVT_WDF_WMI_INSTANCE_EXECUTE_METHOD (wdfwmi.h)
 description: A driver's EvtWmiInstanceExecuteMethod callback function executes a specified method that the driver provides for a WMI data provider's instance.
 old-location: wdf\evtwmiinstanceexecutemethod.htm
 tech.root: wdf
-ms.assetid: b14de1d7-0df2-46d1-a3bd-c23f33d3ed75
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_WMI_INSTANCE_EXECUTE_METHOD callback function"]
 ms.keywords: DFWMIRef_d54dc0b0-bdef-40a7-b863-5946f4d8e5f5.xml, EVT_WDF_WMI_INSTANCE_EXECUTE_METHOD, EVT_WDF_WMI_INSTANCE_EXECUTE_METHOD callback, EvtWmiInstanceExecuteMethod, EvtWmiInstanceExecuteMethod callback function, kmdf.evtwmiinstanceexecutemethod, wdf.evtwmiinstanceexecutemethod, wdfwmi/EvtWmiInstanceExecuteMethod
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfWMI.h
 api_name:
- - EvtWmiInstanceExecuteMethod
+ - EVT_WDF_WMI_INSTANCE_EXECUTE_METHOD
 ---
 
 # EVT_WDF_WMI_INSTANCE_EXECUTE_METHOD callback function
@@ -52,34 +51,34 @@ A driver's <i>EvtWmiInstanceExecuteMethod</i> callback function executes a speci
 
 ## -parameters
 
-### -param WmiInstance 
+### -param WmiInstance [in]
 
-[in]
+
 A handle to a WMI instance object.
 
-### -param MethodId 
+### -param MethodId [in]
 
-[in]
+
 A value that identifies a method in a provider instance. This value corresponds to the <a href="/windows-hardware/drivers/kernel/wmi-property-qualifiers">WmiMethodId</a> value that is specified in the provider's MOF file.
 
-### -param InBufferSize 
+### -param InBufferSize [in]
 
-[in]
+
 The number of bytes of input data.
 
-### -param OutBufferSize 
+### -param OutBufferSize [in]
 
-[in]
+
 The number of bytes of output data that the buffer that <i>Buffer</i> points to can hold.
 
-### -param Buffer 
+### -param Buffer [in, out]
 
-[in, out]
+
 A pointer to a buffer that is used for input, output, or both, as determined by the specified method. If both input and output data are provided, the driver overwrites the input data with the output data.
 
-### -param BufferUsed 
+### -param BufferUsed [out]
 
-[out]
+
 A pointer to a location that receives the number of bytes that the driver wrote into the output buffer. If the output buffer size that the <i>OutBufferSize</i> parameter specifies is too small, the driver sets this location to the required buffer size.
 
 ## -returns
@@ -119,3 +118,4 @@ For more information about the <i>EvtWmiInstanceExecuteMethod</i> callback funct
 
 
 <a href="/windows-hardware/drivers/ddi/wdfwmi/nf-wdfwmi-wdfwmiinstancecreate">WdfWmiInstanceCreate</a>
+

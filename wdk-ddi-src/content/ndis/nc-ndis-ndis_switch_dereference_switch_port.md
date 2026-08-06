@@ -4,7 +4,6 @@ title: NDIS_SWITCH_DEREFERENCE_SWITCH_PORT (ndis.h)
 description: The DereferenceSwitchPort function decrements the Hyper-V extensible switch reference counter for an extensible switch port. The reference counter was incremented through a previous call to ReferenceSwitchPort.
 old-location: netvista\DereferenceSwitchPort.htm
 tech.root: netvista
-ms.assetid: 976D3A69-C539-4C8E-9664-F85717E5F712
 ms.date: 05/02/2018
 keywords: ["NDIS_SWITCH_DEREFERENCE_SWITCH_PORT callback function"]
 ms.keywords: DereferenceSwitchPort, DereferenceSwitchPort callback function [Network Drivers Starting with Windows Vista], NDIS_SWITCH_DEREFERENCE_SWITCH_PORT, NDIS_SWITCH_DEREFERENCE_SWITCH_PORT callback, ndis/DereferenceSwitchPort, netvista.DereferenceSwitchPort
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - DereferenceSwitchPort
+ - NDIS_SWITCH_DEREFERENCE_SWITCH_PORT
 ---
 
 # NDIS_SWITCH_DEREFERENCE_SWITCH_PORT callback function
@@ -50,14 +49,14 @@ The <i>DereferenceSwitchPort</i> function decrements the Hyper-V extensible swit
 
 ## -parameters
 
-### -param NdisSwitchContext 
+### -param NdisSwitchContext [in]
 
-[in]
+
 An NDIS_SWITCH_CONTEXT value that contains the handle of the extensible switch module to which the Hyper-V extensible switch extension is attached. When the extension calls <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfgetoptionalswitchhandlers">NdisFGetOptionalSwitchHandlers</a>,  this handle is returned through the <i>NdisSwitchContext</i> parameter.
 
-### -param SwitchPortId 
+### -param SwitchPortId [in]
 
-[in]
+
 An NDIS_SWITCH_PORT_ID value that contains the unique identifier of the extensible switch port for which the extensible switch reference counter is incremented.
 
 ## -returns
@@ -85,3 +84,4 @@ The extension must call <i>DereferenceSwitchPort</i> if it had previously called
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_port">ReferenceSwitchPort</a>
+

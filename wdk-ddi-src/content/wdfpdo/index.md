@@ -1,17 +1,17 @@
 ---
+description: "Learn more about: Wdfpdo.h header"
 UID: NA:wdfpdo
 title: Wdfpdo.h header
 ms.assetid: ac342a18-24b7-36b8-9447-8ee711b42a24
 ms.date: 05/09/2018
 keywords: ["Wdfpdo.h header"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 tech.root: wdf
 f1_keywords:
  - wdfpdo
  - wdfpdo/wdfpdo
+api_name:
+ - wdfpdo
 ---
 
 # Wdfpdo.h header
@@ -85,3 +85,4 @@ The categories on this page are:
 
 - [**WDF_PDO_EVENT_CALLBACKS**](./ns-wdfpdo-_wdf_pdo_event_callbacks.md)
 - [**WDF_PDO_EVENT_CALLBACKS_INIT**](./nf-wdfpdo-wdf_pdo_event_callbacks_init.md)
+

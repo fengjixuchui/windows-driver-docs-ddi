@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_SendFlash
 title: RIL_SendFlash function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_SendFlash function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_sendflash.htm
 tech.root: netvista
-ms.assetid: 9a23fae8-7142-48a1-871e-1fa3a6d8e112
 ms.date: 05/02/2018
 keywords: ["RIL_SendFlash function"]
 ms.keywords: RIL_SendFlash, RIL_SendFlash method [Network Drivers Starting with Windows Vista], netvista.ril_sendflash, rilapi/RIL_SendFlash

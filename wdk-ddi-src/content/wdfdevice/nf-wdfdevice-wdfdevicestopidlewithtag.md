@@ -3,7 +3,6 @@ UID: NF:wdfdevice.WdfDeviceStopIdleWithTag
 title: WdfDeviceStopIdleWithTag macro (wdfdevice.h)
 description: The WdfDeviceStopIdleWithTag macro increments the power reference count for a specified framework device object and assigns the driver's current file name and line number to the reference. The macro also assigns a tag value to the reference.
 tech.root: wdf
-ms.assetid: 792A5EA8-5273-4284-B0EE-01BE1DCB9863
 ms.date: 02/26/2018
 keywords: ["WdfDeviceStopIdleWithTag macro"]
 ms.keywords: DFDeviceObjectGeneralRef_3dbde224-ecdf-429e-9389-9bdb49b16040.xml, WdfDeviceStopIdleWithTag, WdfDeviceStopIdleWithTag method, kmdf.WdfDeviceStopIdleWithTag, wdf.WdfDeviceStopIdleWithTag, wdfdevice/WdfDeviceStopIdleWithTag
@@ -54,19 +53,19 @@ The **WdfDeviceStopIdleWithTag** macro increments the power reference count for 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param WaitForD0 
+### -param WaitForD0 [in]
 
-[in]
+
 A Boolean value that indicates when **WdfDeviceStopIdleWithTag** will return. If **TRUE**, it returns only after the specified device has entered the D0 device power state. If **FALSE**, the method returns immediately.
 
-### -param Tag 
+### -param Tag [in]
 
-[in]
+
 A driver-defined value that the framework stores as an identification tag for the power reference.
 
 ## -syntax

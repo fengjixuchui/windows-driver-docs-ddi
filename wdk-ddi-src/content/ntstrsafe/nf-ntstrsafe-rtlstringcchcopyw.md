@@ -1,10 +1,9 @@
 ---
 UID: NF:ntstrsafe.RtlStringCchCopyW
 title: RtlStringCchCopyW function (ntstrsafe.h)
-description: The RtlStringCchCopyW and RtlStringCchCopyA functions copy a null-terminated source string into a destination buffer of specified length.
+description: Learn how the RtlStringCchCopyW and RtlStringCchCopyA functions copy a null-terminated source string into a destination buffer of specified length.
 old-location: kernel\rtlstringcchcopy.htm
 tech.root: kernel
-ms.assetid: d5c6d7d2-fe14-49d5-9e81-3a425a4cf1b3
 ms.date: 04/30/2018
 keywords: ["RtlStringCchCopyW function"]
 ms.keywords: RtlStringCchCopy, RtlStringCchCopyA, RtlStringCchCopyW, RtlStringCchCopyW function [Kernel-Mode Driver Architecture], kernel.rtlstringcchcopy, ntstrsafe/RtlStringCchCopyA, ntstrsafe/RtlStringCchCopyW, safestrings_75c329c3-0463-4c8f-a363-ac26ec15c923.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -40,8 +39,6 @@ api_location:
  - Ntstrsafe.dll
 api_name:
  - RtlStringCchCopyW
- - RtlStringCchCopyA
- - RtlStringCchCopyW
 ---
 
 # RtlStringCchCopyW function
@@ -53,19 +50,19 @@ The <b>RtlStringCchCopyW</b> and <b>RtlStringCchCopyA</b> functions copy a null-
 
 ## -parameters
 
-### -param pszDest 
+### -param pszDest [out]
 
-[out]
+
 A pointer to a caller-supplied buffer that receives the copied string. The string at <i>pszSrc</i> is copied to the buffer at <i>pszDest</i> and terminated with a null character.
 
-### -param cchDest 
+### -param cchDest [in]
 
-[in]
+
 The size, in characters, of the destination buffer. The maximum number of characters allowed is NTSTRSAFE_MAX_CCH.
 
-### -param pszSrc 
+### -param pszSrc [in]
 
-[in]
+
 A pointer to a caller-supplied, null-terminated string.
 
 ## -returns
@@ -189,3 +186,4 @@ For more information about the safe string functions, see <a href="/windows-hard
 
 
 <a href="/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcchcopyexa">RtlStringCchCopyEx</a>
+

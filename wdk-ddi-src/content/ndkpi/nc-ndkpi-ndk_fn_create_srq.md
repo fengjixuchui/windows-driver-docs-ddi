@@ -4,7 +4,6 @@ title: NDK_FN_CREATE_SRQ (ndkpi.h)
 description: The NdkCreateSrq (NDK_FN_CREATE_SRQ) function creates an NDK shared receive queue (SRQ) object.
 old-location: netvista\ndk_fn_create_srq.htm
 tech.root: netvista
-ms.assetid: 83125C65-021F-4EEE-8819-B73752908DE7
 ms.date: 05/02/2018
 keywords: ["NDK_FN_CREATE_SRQ callback function"]
 ms.keywords: NDK_FN_CREATE_SRQ, NDK_FN_CREATE_SRQ callback, NdkCreateSrq, NdkCreateSrq callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkCreateSrq, netvista.ndk_fn_create_srq
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkCreateSrq
+ - NDK_FN_CREATE_SRQ
 ---
 
 # NDK_FN_CREATE_SRQ callback function
@@ -50,52 +49,52 @@ The <i>NdkCreateSrq</i> (<i>NDK_FN_CREATE_SRQ</i>) function creates an NDK share
 
 ## -parameters
 
-### -param pNdkPd 
+### -param pNdkPd [in]
 
-[in]
+
 A pointer to an NDK protection domain (PD) object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_pd">NDK_PD</a>).
 
-### -param SrqDepth 
+### -param SrqDepth [in]
 
-[in]
+
 The maximum number of receive requests that can be outstanding over the SRQ. This value  must be less than or equal to the value in the <b>MaxSrqDepth</b> member that is specified in the <a href="/windows/win32/api/ndkinfo/ns-ndkinfo-ndk_adapter_info">NDK_ADAPTER_INFO</a> structure.
 
-### -param MaxReceiveRequestSge 
+### -param MaxReceiveRequestSge [in]
 
-[in]
+
 The maximum number of SGEs that are supported in a single receive request. This value must be less than or equal to the value in the <b>MaxReceiveRequestSge</b> member that is specified in the NDK_ADAPTER_INFO structure.
 
-### -param NotifyThreshold 
+### -param NotifyThreshold [in]
 
-[in]
+
 The minimum number of queued receive requests for triggering SRQ notification callbacks.
 
-### -param SrqNotification 
+### -param SrqNotification [in, optional]
 
-[in, optional]
+
 An optional <i>NdkSrqNotificationCallback</i> function(<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_srq_notification_callback">NDK_FN_SRQ_NOTIFICATION_CALLBACK</a>) which the provider calls if the  queued receive request count falls below the threshold that is specified in the  <i>NotifyThreshold</i> parameter.
 
-### -param SrqNotificationContext 
+### -param SrqNotificationContext [in, optional]
 
-[in, optional]
+
 A context value that the NDK provider passes back to the <i>NdkSrqNotificationCallback</i> function that is specified in the <i>SrqNotification</i> parameter.
 
-### -param Affinity 
+### -param Affinity [in, optional]
 
-[in, optional]
+
 An affinity mask (<a href="/windows-hardware/drivers/ddi/miniport/ns-miniport-_group_affinity">GROUP_AFFINITY</a>) that specifies preferred processors that the consumer would choose to run the <i>NdkSrqNotificationCallback</i> callbacks. Providers should honor the processor preferences if their underlying hardware allows it, but consumers cannot assume that <i>NdkSrqNotificationCallback</i> callbacks will occur only on the preferred processors. Set <i>Affinity</i> to NULL if there are no preferred processors.
 
-### -param CreateCompletion 
+### -param CreateCompletion [in]
 
-[in]
+
 A pointer to an <i>NdkCreateCompletion</i> (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_create_completion">NDK_FN_CREATE_COMPLETION</a>) function that completes the creation of an NDK object.
 
-### -param RequestContext 
+### -param RequestContext [in, optional]
 
-[in, optional]
+
 A context value that the NDK provider passes back to the <i>NdkCreateCompletion</i> function that is specified in the <i>CreateCompletion</i> parameter.
 
-### -param *ppNdkSrq
+### -param ppNdkSrq
 
 A pointer to a created SRQ object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_srq">NDK_SRQ</a>) is returned in this location if the request succeeds without returning STATUS_PENDING. If the request returns STATUS_PENDING then this parameter is ignored and the created object is returned with the callback that is specified in the  <i>CreateCompletion</i> parameter.
 
@@ -200,3 +199,4 @@ The <i>NdkCreateSrq</i> function creates an NDK shared receive queue (SRQ) objec
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_srq">NDK_SRQ</a>
+

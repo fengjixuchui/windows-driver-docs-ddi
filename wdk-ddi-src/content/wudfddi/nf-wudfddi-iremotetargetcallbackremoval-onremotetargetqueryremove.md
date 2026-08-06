@@ -4,7 +4,6 @@ title: IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove (wudfddi.h)
 description: A UMDF-based driver's OnRemoteTargetQueryRemove event callback function determines whether a remote I/O target's device can be stopped and removed.
 old-location: wdf\iremotetargetcallbackremoval_onremotetargetqueryremove.htm
 tech.root: wdf
-ms.assetid: 10a9510a-a11c-46fa-adb8-b122f6c571f4
 ms.date: 02/26/2018
 keywords: ["IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove"]
 ms.keywords: IRemoteTargetCallbackRemoval interface,OnRemoteTargetQueryRemove method, IRemoteTargetCallbackRemoval.OnRemoteTargetQueryRemove, IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove, OnRemoteTargetQueryRemove, OnRemoteTargetQueryRemove method, OnRemoteTargetQueryRemove method,IRemoteTargetCallbackRemoval interface, UMDFIoTargetObjectRef_7cdc408d-7527-4af9-9fef-d8ccb9c1d4c3.xml, umdf.iremotetargetcallbackremoval_onremotetargetqueryremove, wdf.iremotetargetcallbackremoval_onremotetargetqueryremove, wudfddi/IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IRemoteTargetCallbackRemoval.OnRemoteTargetQueryRemove
+ - IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove
 ---
 
 # IRemoteTargetCallbackRemoval::OnRemoteTargetQueryRemove
@@ -52,9 +51,9 @@ A UMDF-based driver's <b>OnRemoteTargetQueryRemove</b> event callback function d
 
 ## -parameters
 
-### -param pWdfRemoteTarget 
+### -param pWdfRemoteTarget [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfremotetarget">IWDFRemoteTarget</a> interface of a remote target object that represents a <a href="/windows-hardware/drivers/wdf/general-i-o-targets-in-umdf">remote I/O target</a>. The driver obtains this pointer when it calls <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice2-createremotetarget">IWDFDevice2::CreateRemoteTarget</a>.
 
 ## -returns
@@ -96,3 +95,4 @@ For more information about the <b>OnRemoteTargetQueryRemove</b> event callback f
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iremotetargetcallbackremoval-onremotetargetremovecomplete">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete</a>
+

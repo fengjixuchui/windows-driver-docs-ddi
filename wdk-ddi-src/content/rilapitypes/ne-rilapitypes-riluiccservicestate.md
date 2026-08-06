@@ -1,10 +1,9 @@
 ---
 UID: NE:rilapitypes.RILUICCSERVICESTATE
 title: RILUICCSERVICESTATE (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this enumeration in your code. Microsoft reserves the RILUICCSERVICESTATE enumeration for internal use only."
 old-location: netvista\riluiccservicestate.htm
 tech.root: netvista
-ms.assetid: 01d64333-3f49-45e1-bd2b-dda0aeb6a083
 ms.date: 05/02/2018
 keywords: ["RILUICCSERVICESTATE enumeration"]
 ms.keywords: RILUICCSERVICESTATE, RILUICCSERVICESTATE enumeration [Network Drivers Starting with Windows Vista], RIL_UICCSERVICESTATE_DISABLED, RIL_UICCSERVICESTATE_ENABLED, RIL_UICCSERVICESTATE_MAX, netvista.riluiccservicestate, ntddrilapitypes/RILUICCSERVICESTATE, ntddrilapitypes/RIL_UICCSERVICESTATE_DISABLED, ntddrilapitypes/RIL_UICCSERVICESTATE_ENABLED, ntddrilapitypes/RIL_UICCSERVICESTATE_MAX

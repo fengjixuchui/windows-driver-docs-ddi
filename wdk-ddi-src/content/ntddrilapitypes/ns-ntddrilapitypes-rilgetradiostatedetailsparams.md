@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILGETRADIOSTATEDETAILSPARAMS
 title: RILGETRADIOSTATEDETAILSPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILGETRADIOSTATEDETAILSPARAMS structure in your code."
 old-location: netvista\rilgetradiostatedetailsparams.htm
 tech.root: netvista
-ms.assetid: faee1991-a183-4285-af14-402094dc6694
 ms.date: 05/02/2018
 keywords: ["RILGETRADIOSTATEDETAILSPARAMS structure"]
 ms.keywords: "*LPRILGETRADIOSTATEDETAILSPARAMS, RILGETRADIOSTATEDETAILSPARAMS, RILGETRADIOSTATEDETAILSPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilgetradiostatedetailsparams, ntddrilapitypes/RILGETRADIOSTATEDETAILSPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILGETRADIOSTATEDETAILSPARAMS
+ - LPRILGETRADIOSTATEDETAILSPARAMS
 ---
 
 # RILGETRADIOSTATEDETAILSPARAMS structure (ntddrilapitypes.h)

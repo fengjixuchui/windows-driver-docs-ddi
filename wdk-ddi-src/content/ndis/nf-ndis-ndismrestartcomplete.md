@@ -4,7 +4,6 @@ title: NdisMRestartComplete function (ndis.h)
 description: A miniport driver must call the NdisMRestartComplete function to complete a restart operation if the driver returned NDIS_STATUS_PENDING from its MiniportRestart function.
 old-location: netvista\ndismrestartcomplete.htm
 tech.root: netvista
-ms.assetid: f43137ed-2ea3-4b7c-8d61-bda76bcb5f34
 ms.date: 05/02/2018
 keywords: ["NdisMRestartComplete function"]
 ms.keywords: NdisMRestartComplete, NdisMRestartComplete function [Network Drivers Starting with Windows Vista], miniport_ndis_functions_ref_ee1a63ca-c2c4-422b-8c8a-163785c58802.xml, ndis/NdisMRestartComplete, netvista.ndismrestartcomplete
@@ -54,17 +53,17 @@ A miniport driver must call the
 
 ## -parameters
 
-### -param MiniportAdapterHandle 
+### -param MiniportAdapterHandle [in]
 
-[in]
+
 The miniport adapter handle that NDIS passed to the 
      <i>MiniportAdapterHandle</i> parameter of the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">
      MiniportInitializeEx</a> function.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 The final status of the restart operation. The following status values are supported:
      
 

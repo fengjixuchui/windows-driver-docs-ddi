@@ -1,10 +1,9 @@
 ---
 UID: NS:dxgiddi.DXGI_DDI_ARG_PRESENTSURFACE
 title: DXGI_DDI_ARG_PRESENTSURFACE (dxgiddi.h)
-description: Describes a surface to display.
+description: The DXGI_DDI_ARG_PRESENTSURFACE structure contains a resource handle and a subresource index that describes a surface to display.
 old-location: display\dxgi_ddi_arg_presentsurface.htm
 tech.root: display
-ms.assetid: 1A1E2644-7411-4D69-8D45-B19D707221AB
 ms.date: 05/10/2018
 keywords: ["DXGI_DDI_ARG_PRESENTSURFACE structure"]
 ms.keywords: DXGI_DDI_ARG_PRESENTSURFACE, DXGI_DDI_ARG_PRESENTSURFACE structure [Display Devices], display.dxgi_ddi_arg_presentsurface, dxgiddi/DXGI_DDI_ARG_PRESENTSURFACE
@@ -50,9 +49,9 @@ Describes a surface to display.
 
 ## -struct-fields
 
-### -field hSurface
+### -field hSurface [in]
 
-[in] A handle to the resource that contains the surface.
+A handle to the resource that contains the surface.
 
 ### -field SubResourceIndex
 

@@ -1,17 +1,16 @@
 ---
 UID: NI:storport.IOCTL_SCSI_MINIPORT_DSM
 title: IOCTL_SCSI_MINIPORT_DSM (storport.h)
-description: A Data Set Management (DSM) notification is transferred to a miniport driver in a IOCTL_SCSI_MINIPORT_DSM control code request.
+description: Learn how a Data Set Management (DSM) notification is transferred to a miniport driver in a IOCTL_SCSI_MINIPORT_DSM control code request.
 old-location: storage\ioctl_scsi_miniport_dsm.htm
 tech.root: storage
-ms.assetid: CA91B623-F926-453D-A348-92655875D801
 ms.date: 03/29/2018
 keywords: ["IOCTL_SCSI_MINIPORT_DSM IOCTL"]
 ms.keywords: IOCTL_SCSI_MINIPORT_DSM, IOCTL_SCSI_MINIPORT_DSM control, IOCTL_SCSI_MINIPORT_DSM control code [Storage Devices], scsi/IOCTL_SCSI_MINIPORT_DSM, storage.ioctl_scsi_miniport_dsm
 req.header: storport.h
 req.include-header: Ntddscsi.h, Storport.h
 req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows 8.1.
+req.target-min-winverclnt: Windows 8.1.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -51,6 +50,8 @@ A Data Set Management (DSM) notification is transferred to a miniport driver in 
 <div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="/windows-hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="/windows-hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 
@@ -118,7 +119,7 @@ The LBA ranges are included in the  in <b>DataSetRanges</b> member of <b>DSM_NOT
 
 
 ```
-rypedef struct _MP_DEVICE_DATA_SET_RANGE {
+typedef struct _MP_DEVICE_DATA_SET_RANGE {
     LONGLONG    StartingOffset;
     ULONGLONG   LengthInBytes;
 } MP_DEVICE_DATA_SET_RANGE, *PMP_DEVICE_DATA_SET_RANGE;

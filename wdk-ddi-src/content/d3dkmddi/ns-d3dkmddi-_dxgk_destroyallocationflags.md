@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGK_DESTROYALLOCATIONFLAGS
 title: _DXGK_DESTROYALLOCATIONFLAGS (d3dkmddi.h)
 description: The DXGK_DESTROYALLOCATIONFLAGS structure identifies how to release allocations.
 old-location: display\dxgk_destroyallocationflags.htm
-ms.assetid: 8f848d68-cef4-45a2-bdda-1bc8c9df6272
 ms.date: 05/10/2018
 keywords: ["DXGK_DESTROYALLOCATIONFLAGS structure"]
 ms.keywords: DXGK_DESTROYALLOCATIONFLAGS, DXGK_DESTROYALLOCATIONFLAGS structure [Display Devices], DmStructs_acc32f8d-3d16-493e-be05-e739bc635bd0.xml, _DXGK_DESTROYALLOCATIONFLAGS, d3dkmddi/DXGK_DESTROYALLOCATIONFLAGS, display.dxgk_destroyallocationflags
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_DESTROYALLOCATIONFLAGS
  - DXGK_DESTROYALLOCATIONFLAGS
 ---
 
@@ -69,3 +69,4 @@ A member in the union that DXGK_DESTROYALLOCATIONFLAGS contains that can hold a 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_destroyallocation">DXGKARG_DESTROYALLOCATION</a>
+

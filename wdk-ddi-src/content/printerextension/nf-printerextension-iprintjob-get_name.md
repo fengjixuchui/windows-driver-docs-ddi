@@ -2,17 +2,15 @@
 UID: NF:printerextension.IPrintJob.get_Name
 title: IPrintJob::get_Name (printerextension.h)
 description: Gets the name of the print job.
-old-location: print\iprintjob_name.htm
 tech.root: print
-ms.assetid: E060EDA8-691F-4860-B422-24DFB7FCAFEF
-ms.date: 04/20/2018
+ms.date: 07/29/2022
 keywords: ["IPrintJob::get_Name"]
 ms.keywords: IPrintJob interface [Print Devices],Name property, IPrintJob.Name, IPrintJob.get_Name, IPrintJob::Name, IPrintJob::get_Name, Name property [Print Devices], Name property [Print Devices],IPrintJob interface, get_Name, print.iprintjob_name, printerextension/IPrintJob::Name, printerextension/IPrintJob::get_Name
 req.header: printerextension.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Windows 8.1
-req.target-min-winversvr: Windows Server 2012 R2
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 
@@ -38,12 +36,8 @@ api_type:
 api_location:
  - Printerextension.h
 api_name:
- - IPrintJob.Name
- - IPrintJob.get_Name
+ - IPrintJob::get_Name
 ---
-
-# IPrintJob::get_Name
-
 
 ## -description
 
@@ -53,6 +47,14 @@ This property is read-only.
 
 ## -parameters
 
+### -param pbstrName
+
+Defines the **BSTR** parameter *pbstrName*.
+
+## -returns
+
+Returns an **HRESULT** value.
+
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintjob">IPrintJob</a>
+[IPrintJob](./nn-printerextension-iprintjob.md)

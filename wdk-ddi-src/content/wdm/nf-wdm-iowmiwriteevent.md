@@ -4,7 +4,6 @@ title: IoWMIWriteEvent function (wdm.h)
 description: The IoWMIWriteEvent routine delivers a given event to the user-mode WMI components for notification.
 old-location: kernel\iowmiwriteevent.htm
 tech.root: kernel
-ms.assetid: 6b98861c-b108-4b07-b494-e3647d03de4c
 ms.date: 04/30/2018
 keywords: ["IoWMIWriteEvent function"]
 ms.keywords: IoWMIWriteEvent, IoWMIWriteEvent routine [Kernel-Mode Driver Architecture], k104_ec484b7e-1653-4054-8a54-021a94303ec4.xml, kernel.iowmiwriteevent, wdm/IoWMIWriteEvent
@@ -50,9 +49,9 @@ The <b>IoWMIWriteEvent</b> routine delivers a given event to the user-mode WMI c
 
 ## -parameters
 
-### -param WnodeEventItem 
+### -param WnodeEventItem [in, out]
 
-[in, out]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/wmistr/ns-wmistr-tagwnode_event_item">WNODE_EVENT_ITEM</a> structure to be delivered to the user-mode WMI components that requested notification of the event.
 
 ## -returns
@@ -120,7 +119,7 @@ Callers of this routine must be running at IRQL <= APC_LEVEL, with one exception
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmideviceobjecttoproviderid">IoWmiDeviceObjectToProviderId</a>
+<a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmideviceobjecttoproviderid">IoWMIDeviceObjectToProviderId</a>
 
 
 

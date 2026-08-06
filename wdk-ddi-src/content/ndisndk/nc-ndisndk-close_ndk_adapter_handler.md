@@ -4,7 +4,6 @@ title: CLOSE_NDK_ADAPTER_HANDLER (ndisndk.h)
 description: The CloseNDKAdapterHandler (CLOSE_NDK_ADAPTER_HANDLER) function closes an NDK adapter instance on an NDK-capable NDIS miniport adapter.
 old-location: netvista\close_ndk_adapter_handler.htm
 tech.root: netvista
-ms.assetid: 9D5980F1-A244-4C5C-B032-68C10BF9D6E7
 ms.date: 05/02/2018
 keywords: ["CLOSE_NDK_ADAPTER_HANDLER callback function"]
 ms.keywords: CLOSE_NDK_ADAPTER_HANDLER, CLOSE_NDK_ADAPTER_HANDLER callback, CloseNdkAdapterHandler, CloseNdkAdapterHandler callback function [Network Drivers Starting with Windows Vista], ndisndk/CloseNdkAdapterHandler, netvista.close_ndk_adapter_handler
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndisndk.h
 api_name:
- - CloseNdkAdapterHandler
+ - CLOSE_NDK_ADAPTER_HANDLER
 ---
 
 # CLOSE_NDK_ADAPTER_HANDLER callback function
@@ -50,14 +49,14 @@ The <i>CloseNDKAdapterHandler</i> (<i>CLOSE_NDK_ADAPTER_HANDLER</i>) function cl
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 A handle to a context area that the miniport driver allocated in its <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a> function. The miniport driver uses this context area to maintain state information for an NDIS  miniport adapter.
 
-### -param pNdkAdapter 
+### -param pNdkAdapter [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_adapter">NDK_ADAPTER</a> instance to close.
 
 ## -remarks
@@ -80,3 +79,4 @@ The <i>CLOSE_NDK_ADAPTER_HANDLER</i> function closes an <a href="/windows-hardwa
 
 
 <a href="/windows-hardware/drivers/ddi/ndisndk/nc-ndisndk-open_ndk_adapter_handler">OPEN_NDK_ADAPTER_HANDLER</a>
+

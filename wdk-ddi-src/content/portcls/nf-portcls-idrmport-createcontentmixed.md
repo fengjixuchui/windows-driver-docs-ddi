@@ -3,7 +3,6 @@ UID: NF:portcls.IDrmPort.CreateContentMixed
 title: IDrmPort::CreateContentMixed (portcls.h)
 description: The CreateContentMixed method computes the DRM content rights for a composite stream containing mixed content from some number of KS audio streams.
 tech.root: audio
-ms.assetid: 26ea9bd4-5540-4be7-bf34-8a56e2812ccd
 ms.date: 02/20/2019
 keywords: ["IDrmPort::CreateContentMixed"]
 ms.keywords: IDrmPort::CreateContentMixed, CreateContentMixed, IDrmPort.CreateContentMixed, IDrmPort::CreateContentMixed, IDrmPort.CreateContentMixed
@@ -35,9 +34,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IDrmPort.CreateContentMixed
-product:
- - Windows
+ - IDrmPort::CreateContentMixed
 ---
 
 # IDrmPort::CreateContentMixed
@@ -82,3 +79,4 @@ DrmCreateContentMixed performs the same function as PcCreateContentMixed and IDr
 ## -see-also
 
 [IDrmPort](nn-portcls-idrmport.md)
+

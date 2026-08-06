@@ -4,7 +4,6 @@ title: FltFsControlFile function (fltkernel.h)
 description: The FltFsControlFile routine sends a control code directly to a specified file system or file system filter driver, causing the corresponding driver to perform the specified action.
 old-location: ifsk\fltfscontrolfile.htm
 tech.root: ifsk
-ms.assetid: afc72cdf-ea29-4e78-95a0-fc621e3290a7
 ms.date: 04/16/2018
 keywords: ["FltFsControlFile function"]
 ms.keywords: FltApiRef_e_to_o_3cad833f-9ece-410a-896d-1b3fe897c251.xml, FltFsControlFile, FltFsControlFile routine [Installable File System Drivers], fltkernel/FltFsControlFile, ifsk.fltfscontrolfile
@@ -50,44 +49,44 @@ The <b>FltFsControlFile</b> routine sends a control code directly to a specified
 
 ## -parameters
 
-### -param Instance 
+### -param Instance [in]
 
-[in]
+
 Opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>.
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 File object pointer for the file or directory that is the target of this request. This parameter is required and cannot be <b>NULL</b>.
 
-### -param FsControlCode 
+### -param FsControlCode [in]
 
-[in]
+
 FSCTL_<i>XXX</i> code that indicates which file system operation is to be carried out. The value of this parameter determines the formats and required lengths of the <i>InputBuffer</i> and <i>OutputBuffer</i>, and it determines which of the following parameter pairs (<i>InputBuffer</i> and <i>InputBufferLength</i>, <i>OutputBuffer</i> and <i>OutputBufferLength</i>) is required.
 
-### -param InputBuffer 
+### -param InputBuffer [in, optional]
 
-[in, optional]
+
 Pointer to a caller-allocated input buffer that contains device-specific information to be given to the target driver. If the <i>FsControlCode</i> parameter specifies an operation that does not require input data, this parameter is optional and can be <b>NULL</b>.
 
-### -param InputBufferLength 
+### -param InputBufferLength [in]
 
-[in]
+
 Size, in bytes, of the buffer at <i>InputBuffer</i>. This value is ignored if <i>InputBuffer</i> is <b>NULL</b>.
 
-### -param OutputBuffer 
+### -param OutputBuffer [out, optional]
 
-[out, optional]
+
 Pointer to a caller-allocated output buffer in which information is returned from the target driver. If the <i>FsControlCode</i> parameter specifies an operation that does not require output data, this parameter is optional and can be <b>NULL</b>.
 
-### -param OutputBufferLength 
+### -param OutputBufferLength [in]
 
-[in]
+
 Size, in bytes, of the buffer at <i>OutputBuffer</i>. This value is ignored if <i>OutputBuffer</i> is <b>NULL</b>.
 
-### -param LengthReturned 
+### -param LengthReturned [out, optional]
 
-[out, optional]
+
 Pointer to a caller-allocated variable that receives the size, in bytes, of the information returned in the buffer at <i>OutputBuffer</i>. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns
@@ -96,7 +95,7 @@ Pointer to a caller-allocated variable that receives the size, in bytes, of the 
 
 ## -remarks
 
-Minifilter drivers should call this routine instead of <a href="/previous-versions/ff566462(v=vs.85)">ZwFsControlFile</a>. 
+Minifilter drivers should call this routine instead of <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwfscontrolfile">ZwFsControlFile</a>.
 
 The following FSCTL codes are currently documented for kernel-mode drivers: 
 
@@ -152,4 +151,4 @@ For more information about the system-defined FSCTL_<i>XXX</i> codes, see the Re
 
 
 
-<a href="/previous-versions/ff566462(v=vs.85)">ZwFsControlFile</a>
+<a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwfscontrolfile">ZwFsControlFile</a>

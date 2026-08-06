@@ -4,7 +4,6 @@ title: _WDF_PROPERTY_STORE_DISPOSITION (wudfddi_types.h)
 description: The WDF_PROPERTY_STORE_DISPOSITION enumeration contains values that indicate whether a registry value was created or already existed when a driver obtained a property store interface.
 old-location: wdf\wdf_property_store_disposition.htm
 tech.root: wdf
-ms.assetid: 107b55f5-0c06-45cc-9cbb-ba9e2fbca1e4
 ms.date: 02/26/2018
 keywords: ["WDF_PROPERTY_STORE_DISPOSITION enumeration"]
 ms.keywords: CreatedNewStore, OpenedExistingStore, WDF_PROPERTY_STORE_DISPOSITION, WDF_PROPERTY_STORE_DISPOSITION enumeration, _WDF_PROPERTY_STORE_DISPOSITION, umdf.wdf_property_store_disposition, umdfstructs_a25f5c08-88c9-41c0-9bab-023ea91d0a22.xml, wdf.wdf_property_store_disposition, wudfddi_types/CreatedNewStore, wudfddi_types/OpenedExistingStore, wudfddi_types/WDF_PROPERTY_STORE_DISPOSITION
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Wudfddi_types.h
 api_name:
+ - _WDF_PROPERTY_STORE_DISPOSITION
  - WDF_PROPERTY_STORE_DISPOSITION
 ---
 
@@ -77,3 +77,4 @@ The <b>WDF_PROPERTY_STORE_DISPOSITION</b> enumeration is used as output from the
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfpropertystorefactory-retrievedevicepropertystore">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a>
+

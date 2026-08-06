@@ -2,10 +2,8 @@
 UID: NS:d3dumddi._D3DDDI_BATCHEDMARKERDATA
 title: D3DDDI_BATCHEDMARKERDATA
 ms.date: 03/24/2020
-ms.topic: language-reference
 targetos: Windows
 tech.root: display
-ms.assetid: fd8977d8-74dd-42a8-a02d-50bbe1741ed7
 description: The D3DDDI_BATCHEDMARKERDATA structure provides high-performance marker data from D3D12 drivers.
 req.construct-type: structure
 req.ddi-compliance: 
@@ -64,7 +62,7 @@ Array of the low bits of API sequence numbers represented by this batch of marke
 
 ## -remarks
 
-The driver is responsible for filling out this structure when submitting rendering work or history buffers to the runtime, and when the driver uses the D3DDDIMLT_BATCHED value for the **MarkerLogType** field in the structure that contains this structure. The containing structure could be one of [**D3DDDICB_RENDER**](ns-d3dumddi-_d3dddicb_render.md), [**D3DDDICB_SUBMITCOMMAND**](ns-d3dumddi-_d3dddicb_submitcommand.md), or [**D3DDDICB_SUBMITHISTORYSEQUENCE**](ns-d3dumddi-_d3dddicb_submithistorysequence.md). See [**D3DDDI_MARKERLOGTYPE**](ne-d3dumddi-d3dddi_markerlogtype.md) for details on when a driver should set D3DDDIMLT_BATCHED.
+The driver is responsible for filling out this structure when submitting rendering work or history buffers to the runtime, and when the driver uses the D3DDDIMLT_BATCHED value for the **MarkerLogType** field in the structure that contains this structure. The containing structure could be one of [**D3DDDICB_RENDER**](ns-d3dumddi-_d3dddicb_render.md), [**D3DDDICB_SUBMITCOMMAND**](ns-d3dumddi-_d3dddicb_submitcommand.md), or [**D3DDDICB_SUBMITHISTORYSEQUENCE**](ns-d3dumddi-d3dddicb_submithistorysequence.md). See [**D3DDDI_MARKERLOGTYPE**](ne-d3dumddi-d3dddi_markerlogtype.md) for details on when a driver should set D3DDDIMLT_BATCHED.
 
 ## -see-also
 
@@ -74,4 +72,4 @@ The driver is responsible for filling out this structure when submitting renderi
 
 [**D3DDDICB_SUBMITCOMMAND**](ns-d3dumddi-_d3dddicb_submitcommand.md)
 
-[**D3DDDICB_SUBMITHISTORYSEQUENCE**](ns-d3dumddi-_d3dddicb_submithistorysequence.md)
+[**D3DDDICB_SUBMITHISTORYSEQUENCE**](ns-d3dumddi-d3dddicb_submithistorysequence.md)

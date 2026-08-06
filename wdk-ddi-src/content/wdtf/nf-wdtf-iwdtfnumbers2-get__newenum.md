@@ -1,11 +1,10 @@
 ---
 UID: NF:wdtf.IWDTFNumbers2.get__NewEnum
 title: IWDTFNumbers2::get__NewEnum (wdtf.h)
-description: Gets a new iteration variable that the For Each loop structure implicitly uses.
+description: The get__NewEnum method gets a new iteration variable that the For Each loop structure implicitly uses.
 old-location: dtf\iwdtfnumbers2__newenum.htm
 tech.root: dtf
-ms.assetid: 6ebe02a7-3881-4b33-b1dc-ee41f6cde0a0
-ms.date: 04/04/2018
+ms.date: 08/14/2023
 keywords: ["IWDTFNumbers2::get__NewEnum"]
 ms.keywords: IWDTFNumbers2 interface [Windows Device Testing Framework],_NewEnum property, IWDTFNumbers2._NewEnum, IWDTFNumbers2.get__NewEnum, IWDTFNumbers2::_NewEnum, IWDTFNumbers2::get__NewEnum, Microsoft.WDTF.IWDTFNumbers2._NewEnum, Microsoft::WDTF::IWDTFNumbers2::_NewEnum, _NewEnum property [Windows Device Testing Framework], _NewEnum property [Windows Device Testing Framework],IWDTFNumbers2 interface, dtf.iwdtfnumbers2__newenum, get__NewEnum, wdtf/IWDTFNumbers2::_NewEnum, wdtf/IWDTFNumbers2::get__NewEnum
 req.header: wdtf.h
@@ -38,12 +37,10 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFNumbers2._NewEnum
- - IWDTFNumbers2.get__NewEnum
+ - IWDTFNumbers2::get__NewEnum
 ---
 
 # IWDTFNumbers2::get__NewEnum
-
 
 ## -description
 
@@ -54,10 +51,13 @@ This property is read-only.
 
 ## -parameters
 
+### -param ppNewEnum
+
+## -returns
+
 ## -remarks
 
-You cannot access the <b>_NewEnum</b> property from the 
-JScript programming language.
+You cannot access the <b>_NewEnum</b> property from the JScript programming language.
 
 You must use the Active Template Library (ATL) to implement this functionality. 
 For more information about how ATL implements this functionality, see the 

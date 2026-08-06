@@ -4,7 +4,6 @@ title: HidP_MaxUsageListLength function (hidpi.h)
 description: The HidP_MaxUsageListLength routine returns the maximum number of HID usages that HidP_GetUsages can return for a specified type of HID report and a specified top-level collection.
 old-location: hid\hidp_maxusagelistlength.htm
 tech.root: hid
-ms.assetid: 90491024-f623-4528-8d37-4a6acb394473
 ms.date: 04/30/2018
 keywords: ["HidP_MaxUsageListLength function"]
 ms.keywords: HidP_MaxUsageListLength, HidP_MaxUsageListLength routine [Human Input Devices], hid.hidp_maxusagelistlength, hidfunc_a038fac0-7532-40e4-b083-e0dbe046ad85.xml, hidpi/HidP_MaxUsageListLength
@@ -51,19 +50,19 @@ The <b>HidP_MaxUsageListLength</b> routine returns the maximum number of <a href
 
 ## -parameters
 
-### -param ReportType 
+### -param ReportType [in]
 
-[in]
+
 Specifies a <a href="/windows-hardware/drivers/ddi/hidpi/ne-hidpi-_hidp_report_type">HIDP_REPORT_TYPE</a> enumerator value that indicates the report type.
 
-### -param UsagePage 
+### -param UsagePage [in]
 
-[in]
+
 Specifies a <a href="/windows-hardware/drivers/hid/hid-usages">usage page</a> as a search criteria. If <i>UsagePage</i> is zero, the routine returns the number of all the buttons in the collection.
 
-### -param PreparsedData 
+### -param PreparsedData [in]
 
-[in]
+
 Pointer to a top-level collection's <a href="/windows-hardware/drivers/hid/preparsed-data">preparsed data</a>.
 
 ## -returns

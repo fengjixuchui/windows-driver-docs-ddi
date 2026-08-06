@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_55
+UID: NS:ks.KSFRAMETIME
 title: KSFRAMETIME (ks.h)
 description: The KSFRAMETIME structure is supported by rendering pins, and is used to return the duration of the next frame of data, and flags associated with that frame.
 old-location: stream\ksframetime.htm
 tech.root: stream
-ms.assetid: 0e3beb72-2b00-41be-a7b4-341bcf065e92
 ms.date: 06/25/2020
 keywords: ["KSFRAMETIME structure"]
 ms.keywords: "*PKSFRAMETIME, KSFRAMETIME, KSFRAMETIME structure [Streaming Media Devices], PKSFRAMETIME, PKSFRAMETIME structure pointer [Streaming Media Devices], ks-struct_3abc9b81-d7e7-455c-a577-2efa7c986cc5.xml, ks/KSFRAMETIME, ks/PKSFRAMETIME, stream.ksframetime"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSFRAMETIME
  - KSFRAMETIME
 ---
 
@@ -67,3 +67,4 @@ Set to zero.
 ## -remarks
 
 Note that this is an optional property, which need only be implemented if the pin instance understands the specifics of the media type it is transporting.
+

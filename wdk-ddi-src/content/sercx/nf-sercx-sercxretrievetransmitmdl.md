@@ -4,7 +4,6 @@ title: SerCxRetrieveTransmitMdl function (sercx.h)
 description: The SerCxRetrieveTransmitMdl method retrieves the MDL that describes the buffer that contains the next block of output data to be transmitted.
 old-location: serports\sercxretrievetransmitmdl.htm
 tech.root: serports
-ms.assetid: C0FF3667-9641-4032-826E-7E297F57CDFA
 ms.date: 04/23/2018
 keywords: ["SerCxRetrieveTransmitMdl function"]
 ms.keywords: 1/SerCxRetrieveTransmitMdl, SerCxRetrieveTransmitMdl, SerCxRetrieveTransmitMdl method [Serial Ports], serports.sercxretrievetransmitmdl
@@ -50,14 +49,14 @@ The <b>SerCxRetrieveTransmitMdl</b> method retrieves the MDL that describes the 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the serial controller.
 
-### -param Mdl 
+### -param Mdl [out]
 
-[out]
+
 A pointer to a location into which the method writes a pointer to the MDL.
 
 ## -returns

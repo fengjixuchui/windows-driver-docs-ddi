@@ -4,7 +4,6 @@ title: IddCxSwapChainFinishedProcessingFrame function (iddcx.h)
 description: An OS callback function the driver calls report all GPU command for processing this frame have been queue.
 old-location: display\iddcxswapchainfinishedprocessingframe.htm
 tech.root: display
-ms.assetid: 46c4a592-b3d4-479d-b5db-06202b5be290
 ms.date: 05/10/2018
 keywords: ["IddCxSwapChainFinishedProcessingFrame function"]
 ms.keywords: IddCxSwapChainFinishedProcessingFrame, IddCxSwapChainFinishedProcessingFrame method [Display Devices], display.iddcxswapchainfinishedprocessingframe, iddcx/IddCxSwapChainFinishedProcessingFrame
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: IddCxStub.lib
 req.dll: IddCx.dll
-req.irql: _Must_inspect_result_
+req.irql: 
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ api_name:
 
 ## -parameters
 
-### -param SwapChainObject 
+### -param SwapChainObject [in]
 
-[in]
+
 The swap-chain object whose current frame is being queried.
 
 ## -returns

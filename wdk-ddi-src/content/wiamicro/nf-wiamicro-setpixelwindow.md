@@ -4,7 +4,6 @@ title: SetPixelWindow function (wiamicro.h)
 description: The SetPixelWindow function sets the image area to be scanned.
 old-location: image\setpixelwindow.htm
 tech.root: image
-ms.assetid: e1b5af5d-9bb8-4bf0-898a-5972f1f09a35
 ms.date: 05/03/2018
 keywords: ["SetPixelWindow function"]
 ms.keywords: MicroDrv_45542a77-e61e-49ba-a9f3-df7d8dd57402.xml, SetPixelWindow, SetPixelWindow function [Imaging Devices], image.setpixelwindow, wiamicro/SetPixelWindow
@@ -50,9 +49,9 @@ The **SetPixelWindow** function sets the image area to be scanned.
 
 ## -parameters
 
-### -param pScanInfo 
+### -param pScanInfo [in, out]
 
-[in, out]
+
 Points to a [SCANINFO](./ns-wiamicro-_scaninfo.md) structure that represents the current state of the device. This is stored by the WIA Flatbed driver to guarantee synchronized settings between the microdriver and the WIA Flatbed driver.
 
 ### -param x

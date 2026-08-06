@@ -4,7 +4,6 @@ title: IOCTL_BIOMETRIC_SET_INDICATOR (winbio_ioctl.h)
 description: The IOCTL_BIOMETRIC_SET_INDICATOR IOCTL directs the driver to update the status of the indicator light.
 old-location: biometric\ioctl_biometric_set_indicator.htm
 tech.root: biometric
-ms.assetid: 5aaaf178-a137-4a98-a77f-b426514a8cd9
 ms.date: 02/20/2018
 keywords: ["IOCTL_BIOMETRIC_SET_INDICATOR IOCTL"]
 ms.keywords: IOCTL_BIOMETRIC_SET_INDICATOR, IOCTL_BIOMETRIC_SET_INDICATOR control, IOCTL_BIOMETRIC_SET_INDICATOR control code [Biometric Devices], biometric.ioctl_biometric_set_indicator, biometric_ref_46e6f908-83fd-4e5b-9cc4-183da4f178d2.xml, winbio_ioctl/IOCTL_BIOMETRIC_SET_INDICATOR
@@ -50,6 +49,8 @@ The IOCTL_BIOMETRIC_SET_INDICATOR IOCTL directs the driver to update the status 
 
 ## -ioctlparameters
 
+### -ioctl-major-code
+
 ### -input-buffer
 
 <a href="/windows-hardware/drivers/ddi/winbio_ioctl/ns-winbio_ioctl-_winbio_set_indicator">WINBIO_SET_INDICATOR</a>
@@ -64,7 +65,7 @@ The AssociatedIrp.SystemBuffer member points to a buffer that contains a WINBIO_
 
 ### -output-buffer-length
 
-The smallest valid output buffer size is the size of DWORD.  If the driver receives an DWORD-sized output buffer, the driver should return the buffer size necessary for the requested operation.
+The smallest valid output buffer size is the size of DWORD.  If the driver receives a DWORD-sized output buffer, the driver should return the buffer size necessary for the requested operation.
 
 ### -in-out-buffer
 

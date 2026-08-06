@@ -2,7 +2,6 @@
 UID: NS:d3dukmdt._D3DKMDT_3X4_COLORSPACE_TRANSFORM
 title: _D3DKMDT_3X4_COLORSPACE_TRANSFORM (d3dukmdt.h)
 description: Structure to describe the three programmable sub-stages of the 3 by 4 matrix color space transform.
-ms.assetid: 2797701a-8924-4292-ad6f-d015993d86a3
 ms.date: 10/19/2018
 keywords: ["D3DKMDT_3X4_COLORSPACE_TRANSFORM structure"]
 ms.keywords: _D3DKMDT_3X4_COLORSPACE_TRANSFORM, D3DKMDT_3x4_COLORSPACE_TRANSFORM, *PD3DDDI_3x4_COLORSPACE_TRANSFORM,
@@ -37,6 +36,8 @@ api_location:
  - d3dukmdt.h
 api_name:
  - _D3DKMDT_3X4_COLORSPACE_TRANSFORM
+ - PD3DDDI_3x4_COLORSPACE_TRANSFORM
+ - D3DKMDT_3x4_COLORSPACE_TRANSFORM
 dev_langs:
  - c++
 ---
@@ -50,17 +51,17 @@ Structure to describe the three programmable sub-stages of the 3 by 4 matrix col
 
 ## -struct-fields
 
-### -field ColorMatrix3x4
+### -field ColorMatrix3x4 [in]
 
-[in] A 3x3 matrix and 3x1 addition to be applied to each pixel, stored in row-major order. Transforms colors within CIEXYZ.
+A 3x3 matrix and 3x1 addition to be applied to each pixel, stored in row-major order. Transforms colors within CIEXYZ.
 
-### -field ScalarMultiplier
+### -field ScalarMultiplier [in]
 
-[in] A scalar to be multiplied into each element of ColorMatrix3x4.
+A scalar to be multiplied into each element of ColorMatrix3x4.
 
-### -field LookupTable1D
+### -field LookupTable1D [in]
 
-[in] 1D look-up table. Transforms colors within the color space specified by [DXGK_SET_TIMING_PATH_INFO](../d3dkmddi/ns-d3dkmddi-_dxgk_set_timing_path_info.md).
+1D look-up table. Transforms colors within the color space specified by [DXGK_SET_TIMING_PATH_INFO](../d3dkmddi/ns-d3dkmddi-_dxgk_set_timing_path_info.md).
 
 ## -remarks
 

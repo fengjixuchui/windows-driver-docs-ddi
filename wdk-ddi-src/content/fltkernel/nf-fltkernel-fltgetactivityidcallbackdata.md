@@ -4,7 +4,6 @@ title: FltGetActivityIdCallbackData function (fltkernel.h)
 description: The FltGetActivityIdCallbackData routine retrieves the current activity ID associated with a request in a minifilter's callback data.
 old-location: ifsk\fltgetactivityidcallbackdata.htm
 tech.root: ifsk
-ms.assetid: 3DAA2135-768E-4A37-B2FD-9915F16D8A66
 ms.date: 04/16/2018
 keywords: ["FltGetActivityIdCallbackData function"]
 ms.keywords: FltGetActivityIdCallbackData, FltGetActivityIdCallbackData routine [Installable File System Drivers], fltkernel/FltGetActivityIdCallbackData, ifsk.fltgetactivityidcallbackdata
@@ -50,14 +49,14 @@ The <b>FltGetActivityIdCallbackData</b> routine retrieves the current activity I
 
 ## -parameters
 
-### -param CallbackData 
+### -param CallbackData [in]
 
-[in]
+
 A pointer to the callback data containing the request with an associated activity ID.
 
-### -param Guid 
+### -param Guid [out]
 
-[out]
+
 A pointer to the GUID structure receiving the activity ID.
 
 ## -returns

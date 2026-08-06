@@ -4,7 +4,6 @@ title: WDF_IO_QUEUE_CONFIG_INIT function (wdfio.h)
 description: The WDF_IO_QUEUE_CONFIG_INIT function initializes a driver's WDF_IO_QUEUE_CONFIG structure.
 old-location: wdf\wdf_io_queue_config_init.htm
 tech.root: wdf
-ms.assetid: 54f85485-e652-4132-a5bf-385ad9bf53f8
 ms.date: 02/26/2018
 keywords: ["WDF_IO_QUEUE_CONFIG_INIT function"]
 ms.keywords: DFQueueObjectRef_637df7c0-f8bc-4436-9144-628c85bfae1a.xml, WDF_IO_QUEUE_CONFIG_INIT, WDF_IO_QUEUE_CONFIG_INIT function, kmdf.wdf_io_queue_config_init, wdf.wdf_io_queue_config_init, wdfio/WDF_IO_QUEUE_CONFIG_INIT
@@ -52,14 +51,14 @@ The <b>WDF_IO_QUEUE_CONFIG_INIT</b> function initializes a driver's <a href="/wi
 
 ## -parameters
 
-### -param Config 
+### -param Config [out]
 
-[out]
+
 A pointer to the driver's <a href="/windows-hardware/drivers/ddi/wdfio/ns-wdfio-_wdf_io_queue_config">WDF_IO_QUEUE_CONFIG</a> structure.
 
-### -param DispatchType 
+### -param DispatchType [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfio/ne-wdfio-_wdf_io_queue_dispatch_type">WDF_IO_QUEUE_DISPATCH_TYPE</a> enumerator that identifies the request dispatching type for the queue.
 
 ## -remarks

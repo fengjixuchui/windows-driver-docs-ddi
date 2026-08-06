@@ -1,10 +1,9 @@
 ---
 UID: NC:miniport.PINTERFACE_REFERENCE
 title: PINTERFACE_REFERENCE (miniport.h)
-description: The InterfaceReference routine increments the reference count on a driver-defined interface.
+description: The PINTERFACE_REFERENCE callback function (miniport.h) increments the reference count on a driver-defined interface.
 old-location: kernel\interfacereference.htm
 tech.root: kernel
-ms.assetid: 21737c1a-dd9d-4011-85c0-7ff871265ed5
 ms.date: 04/30/2018
 keywords: ["PINTERFACE_REFERENCE callback function"]
 ms.keywords: InterfaceReference, InterfaceReference routine [Kernel-Mode Driver Architecture], PINTERFACE_REFERENCE, drvr_interface_d7092619-d2e6-4ca6-bbd3-f857d775f73e.xml, kernel.interfacereference, wdm/InterfaceReference
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - InterfaceReference
+ - PINTERFACE_REFERENCE
 ---
 
 # PINTERFACE_REFERENCE callback function (miniport.h)
@@ -50,9 +49,9 @@ The <i>InterfaceReference</i> routine increments the reference count on a driver
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface">INTERFACE</a> structure for the interface.
 
 ## -remarks
@@ -72,3 +71,4 @@ The driver that exports the interface is responsible for calling <i>InterfaceRef
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pinterface_dereference">InterfaceDereference</a>
+

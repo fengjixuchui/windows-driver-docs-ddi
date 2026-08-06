@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILPROVISIONSTATUS
 title: RILPROVISIONSTATUS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILPROVISIONSTATUS structure for internal use only. Don't use the RILPROVISIONSTATUS structure in your code."
 old-location: netvista\rilprovisionstatus.htm
 tech.root: netvista
-ms.assetid: 5295f07d-9800-47f0-a827-515fcdad04eb
 ms.date: 05/02/2018
 keywords: ["RILPROVISIONSTATUS structure"]
 ms.keywords: "*LPRILPROVISIONSTATUS, RILPROVISIONSTATUS, RILPROVISIONSTATUS structure [Network Drivers Starting with Windows Vista], netvista.rilprovisionstatus, ntddrilapitypes/RILPROVISIONSTATUS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILPROVISIONSTATUS
+ - LPRILPROVISIONSTATUS
 ---
 
 # RILPROVISIONSTATUS structure (ntddrilapitypes.h)

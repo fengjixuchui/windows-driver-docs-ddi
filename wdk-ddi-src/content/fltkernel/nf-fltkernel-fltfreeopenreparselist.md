@@ -4,7 +4,6 @@ title: FltFreeOpenReparseList function (fltkernel.h)
 description: This routine deallocates any information copied into a create operation by a previous call to FltCopyOpenReparseList.
 old-location: ifsk\fltfreeopenreparselist.htm
 tech.root: ifsk
-ms.assetid: 78FA1585-F834-48E4-BB15-78BA5563F9D0
 ms.date: 04/16/2018
 keywords: ["FltFreeOpenReparseList function"]
 ms.keywords: FltAddOpenReparseEntry, FltAddOpenReparseEntry routine [Installable File System Drivers], FltFreeOpenReparseList, fltkernel/FltAddOpenReparseEntry, ifsk.fltfreeopenreparselist
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: _IRQL_requires_max_(APC_LEVEL)
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - fltKernel.h
 api_name:
- - FltAddOpenReparseEntry
+ - FltFreeOpenReparseList
 ---
 
 # FltFreeOpenReparseList function
@@ -51,17 +50,18 @@ This routine deallocates any information copied into a create operation by
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in]
 
-[in]
+
 The filter to dereference.
 
-### -param EcpList 
+### -param EcpList [in]
 
-[in]
+
 The ECP list whose open reparse information should
                        be deallocated.
 
 ## -returns
 
 This routine does not return a value.
+

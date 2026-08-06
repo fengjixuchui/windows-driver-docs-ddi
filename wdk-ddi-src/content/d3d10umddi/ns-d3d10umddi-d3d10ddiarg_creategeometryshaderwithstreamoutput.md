@@ -3,7 +3,6 @@ UID: NS:d3d10umddi.D3D10DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT
 title: D3D10DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT (d3d10umddi.h)
 description: The D3D10DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT structure describes the geometry shader with stream output to create.
 old-location: display\d3d10ddiarg_creategeometryshaderwithstreamoutput.htm
-ms.assetid: 172af07e-9cc7-48d1-900a-93f18bdc37a9
 ms.date: 05/10/2018
 keywords: ["D3D10DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT structure"]
 ms.keywords: D3D10DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT, D3D10DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT structure [Display Devices], UMDisplayDriver_Dx10param_Structs_c41e18d8-8aca-4902-b921-0916f3ca2042.xml, d3d10umddi/D3D10DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT, display.d3d10ddiarg_creategeometryshaderwithstreamoutput
@@ -50,21 +49,21 @@ The D3D10DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT structure describes the geo
 
 ## -struct-fields
 
-### -field pShaderCode
+### -field pShaderCode [in]
 
-[in] An array of CONST UINT tokens that make up the geometry shader code.
+An array of CONST UINT tokens that make up the geometry shader code.
 
-### -field pOutputStreamDecl
+### -field pOutputStreamDecl [in]
 
-[in] An array of <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddiarg_stream_output_declaration_entry">D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY</a> structures that describes the stream output for the geometry shader.
+An array of <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddiarg_stream_output_declaration_entry">D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY</a> structures that describes the stream output for the geometry shader.
 
-### -field NumEntries
+### -field NumEntries [in]
 
-[in] The number of elements in that array that the <b>pOutputStreamDecl</b> member specifies.
+The number of elements in that array that the <b>pOutputStreamDecl</b> member specifies.
 
-### -field StreamOutputStrideInBytes
+### -field StreamOutputStrideInBytes [in]
 
-[in] The size, in bytes, from one vertex to the next vertex.
+The size, in bytes, from one vertex to the next vertex.
 
 ## -see-also
 

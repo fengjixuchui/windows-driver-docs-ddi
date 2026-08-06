@@ -4,14 +4,13 @@ title: RtlIsPartialPlaceholderFileInfo function (ntifs.h)
 description: The RtlIsPartialPlaceholderFileInfo routine determines if a file is a known type of placeholder, based on the information returned by NtQueryInformationFile or NtQueryDirectoryFile.
 old-location: ifsk\rtlispartialplaceholderfileinfo.htm
 tech.root: ifsk
-ms.assetid: B84CC8C1-639D-45B4-A2A4-03BA2F1FF04B
 ms.date: 04/16/2018
 keywords: ["RtlIsPartialPlaceholderFileInfo function"]
 ms.keywords: RtlIsPartialPlaceholderFileInfo, RtlIsPartialPlaceholderFileInfo routine [Installable File System Drivers], ifsk.rtlispartialplaceholderfileinfo, ntifs/RtlIsPartialPlaceholderFileInfo
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows 10, version 1709.
+req.target-min-winverclnt: Windows 10, version 1709.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -51,21 +50,21 @@ The <b>RtlIsPartialPlaceholderFileInfo</b> routine determines if a file is a kno
 
 ## -parameters
 
-### -param InfoBuffer 
+### -param InfoBuffer [in]
 
-[in]
+
 Specifies a pointer to a caller-allocated buffer which contains information about the file object. If this is from a call
         to <b>NtQueryDirectoryFile</b>, this may point to the first or any subsequent
         subsequent entry in the buffer (found by walking the buffer).
 
-### -param InfoClass 
+### -param InfoClass [in]
 
-[in]
+
  Specifies which File Information class to use to query InfoBuffer.
 
-### -param IsPartialPlaceholder 
+### -param IsPartialPlaceholder [out]
 
-[out]
+
 <b>IsPartialPlaceholder</b> is a pointer to a boolean which returns <b>TRUE</b> if the file or directory is a placeholder. It  returns <b>FALSE</b> if either the
         file or directory is not a placeholder or is a full placeholder. Returns undefined on failure.
 

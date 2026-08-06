@@ -4,7 +4,6 @@ title: WdfDmaTransactionSetTransferCompleteCallback function (wdfdmatransaction.
 description: The WdfDmaTransactionSetTransferCompleteCallback method registers a transfer completion event callback function for a system-mode DMA transaction.
 old-location: wdf\wdfdmatransactionsettransfercompletecallback.htm
 tech.root: wdf
-ms.assetid: B97FF6B1-BFCB-4293-B2F0-EE08E12CFCFF
 ms.date: 02/26/2018
 keywords: ["WdfDmaTransactionSetTransferCompleteCallback function"]
 ms.keywords: WdfDmaTransactionSetTransferCompleteCallback, WdfDmaTransactionSetTransferCompleteCallback method, kmdf.wdfdmatransactionsettransfercompletecallback, wdf.wdfdmatransactionsettransfercompletecallback, wdfdmatransaction/WdfDmaTransactionSetTransferCompleteCallback
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -54,19 +53,19 @@ api_name:
 
 ## -parameters
 
-### -param DmaTransaction 
+### -param DmaTransaction [in]
 
-[in]
+
 A handle to an initialized DMA transaction object for which to set or clear the transfer completion callback.
 
-### -param DmaCompletionRoutine 
+### -param DmaCompletionRoutine [in, optional]
 
-[in, optional]
+
 A pointer to the driver's <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nc-wdfdmatransaction-evt_wdf_dma_transaction_dma_transfer_complete">EvtDmaTransactionDmaTransferComplete</a> event callback function, or NULL to clear a previously set callback function.
 
-### -param DmaCompletionContext 
+### -param DmaCompletionContext [in, optional]
 
-[in, optional]
+
 A pointer to a buffer containing the driver-specified context to be provided to the driver's <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nc-wdfdmatransaction-evt_wdf_dma_transaction_dma_transfer_complete">EvtDmaTransactionDmaTransferComplete</a> event callback function, or NULL.
 
 ## -remarks

@@ -4,7 +4,6 @@ title: IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER (ntdd8042.h)
 description: The IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER request writes data to the i8042 port controller to control operation of a keyboard device.
 old-location: hid\ioctl_internal_i8042_keyboard_write_buffer.htm
 tech.root: hid
-ms.assetid: 583263fc-8b95-47d9-9f20-306b2200b573
 ms.date: 04/30/2018
 keywords: ["IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER IOCTL"]
 ms.keywords: IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER, IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER control, IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER control code [Human Input Devices], hid.ioctl_internal_i8042_keyboard_write_buffer, i8042ref_a981431f-38cd-4cc4-899e-a79799da0e01.xml, ntdd8042/IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER
@@ -51,6 +50,10 @@ The IOCTL_INTERNAL_I8042_KEYBOARD_WRITE_BUFFER request writes data to the i8042 
 I8042prt synchronizes write buffer requests and other keyboard requests that write to the i8042 port controller, including <a href="/windows/win32/api/ntddkbd/ni-ntddkbd-ioctl_keyboard_set_indicators">IOCTL_KEYBOARD_SET_INDICATORS</a> and <a href="/windows/win32/api/ntddkbd/ni-ntddkbd-ioctl_keyboard_set_typematic">IOCTL_KEYBOARD_SET_TYPEMATIC</a>. I8042prt synchronizes the actual write of data with the keyboard ISR.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
+
+[IRP_MJ_INTERNAL_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
 ### -input-buffer
 

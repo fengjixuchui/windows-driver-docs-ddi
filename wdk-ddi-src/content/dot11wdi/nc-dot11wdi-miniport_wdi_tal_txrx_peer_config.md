@@ -4,7 +4,6 @@ title: MINIPORT_WDI_TAL_TXRX_PEER_CONFIG (dot11wdi.h)
 description: The MiniportWdiTalTxRxPeerConfig handler function specifies the port ID, peer ID, and peer capabilities (for example, QoS capabilities). It is invoked after the peer has associated, which involves creation of the peer object in the TAL.
 old-location: netvista\miniportwditaltxrxpeerconfig.htm
 tech.root: netvista
-ms.assetid: 48BB554D-A19E-46C0-8278-690A686A731D
 ms.date: 05/02/2018
 keywords: ["MINIPORT_WDI_TAL_TXRX_PEER_CONFIG callback function"]
 ms.keywords: MINIPORT_WDI_TAL_TXRX_PEER_CONFIG, MINIPORT_WDI_TAL_TXRX_PEER_CONFIG callback, MiniportWdiTalTxRxPeerConfig, MiniportWdiTalTxRxPeerConfig callback function [Network Drivers Starting with Windows Vista], dot11wdi/MiniportWdiTalTxRxPeerConfig, netvista.miniportwditaltxrxpeerconfig
@@ -38,13 +37,16 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
- - MiniportWdiTalTxRxPeerConfig
+ - MINIPORT_WDI_TAL_TXRX_PEER_CONFIG
 ---
 
 # MINIPORT_WDI_TAL_TXRX_PEER_CONFIG callback function
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The 
   MiniportWdiTalTxRxPeerConfig handler function specifies the port ID, peer ID,  and peer capabilities  (for example, QoS capabilities). It is invoked after the peer has associated, which involves creation of the peer object in the TAL.
@@ -55,24 +57,24 @@ This is a WDI miniport handler inside <a href="/windows-hardware/drivers/ddi/dot
 
 ## -parameters
 
-### -param MiniportTalTxRxContext 
+### -param MiniportTalTxRxContext [in]
 
-[in]
+
 TAL device handle returned by the IHV miniport in <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tal_txrx_initialize">MiniportWdiTalTxRxInitialize</a>.
 
-### -param PortId 
+### -param PortId [in]
 
-[in]
+
 Port ID associated with the peer.
 
-### -param PeerId 
+### -param PeerId [in]
 
-[in]
+
 Peer ID for the peer.
 
-### -param pPeerCfg 
+### -param pPeerCfg [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_txrx_peer_cfg">WDI_TXRX_PEER_CFG</a> structure that contains negotiated QoS settings.
 
 ## -see-also
@@ -94,3 +96,4 @@ Pointer to a <a href="/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_tx
 
 
 <a href="/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_txrx_peer_cfg">WDI_TXRX_PEER_CFG</a>
+

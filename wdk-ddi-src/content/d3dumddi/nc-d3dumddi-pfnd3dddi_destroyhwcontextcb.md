@@ -4,7 +4,6 @@ title: PFND3DDDI_DESTROYHWCONTEXTCB (d3dumddi.h)
 description: A callback to destroy a hardware context.
 old-location: display\pfnd3dddi_destroyhwcontextcb.htm
 tech.root: display
-ms.assetid: CD3B8EE1-8B54-4F0A-B3C7-3B6F7D968497
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DESTROYHWCONTEXTCB callback function"]
 ms.keywords: PFND3DDDI_DESTROYHWCONTEXTCB, PFND3DDDI_DESTROYHWCONTEXTCB callback, PFND3DDDI_DESTROYHWCONTEXTCB callback function [Display Devices], d3dumddi/PFND3DDDI_DESTROYHWCONTEXTCB, display.pfnd3dddi_destroyhwcontextcb
@@ -39,8 +38,6 @@ api_location:
  - d3dumddi.h
 api_name:
  - PFND3DDDI_DESTROYHWCONTEXTCB
-product:
- - Windows
 ---
 
 # PFND3DDDI_DESTROYHWCONTEXTCB callback function
@@ -56,7 +53,7 @@ A callback to destroy a hardware context.
 
 A handle to the device.
 
-### -param Arg2
+### -param unnamedParam2
 
 *destroyHwContext* [in]
 

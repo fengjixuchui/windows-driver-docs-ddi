@@ -4,7 +4,6 @@ title: IPortableDeviceValues::GetStringValue (portabledevicetypes.h)
 description: Retrieves a string value (type VT_LPWSTR) that is specified by a key.
 old-location: wpddk\iportabledevicevalues_getstringvalue.htm
 tech.root: wpd_dk
-ms.assetid: 6c63adae-ab57-4826-aaa2-6953ab918ddd
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::GetStringValue"]
 ms.keywords: GetStringValue, GetStringValue method, GetStringValue method,IPortableDeviceValues interface, IPortableDeviceValues interface,GetStringValue method, IPortableDeviceValues.GetStringValue, IPortableDeviceValues::GetStringValue, IPortableDeviceValuesGetStringValue, portabledevicetypes/IPortableDeviceValues::GetStringValue, wpddk.iportabledevicevalues_getstringvalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.GetStringValue
+ - IPortableDeviceValues::GetStringValue
 ---
 
 # IPortableDeviceValues::GetStringValue
@@ -51,14 +50,14 @@ Retrieves a string value (type VT_LPWSTR) that is specified by a key.
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> key that specifies the item to retrieve.
 
-### -param pValue 
+### -param pValue [out]
 
-[out]
+
 Pointer to the retrieved <b>LPWSTR</b> value. The caller is responsible for calling <b>CoTaskMemFree</b> to release the memory.
 
 ## -returns
@@ -120,3 +119,4 @@ None.
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-setstringvalue">IPortableDeviceValues::SetStringValue</a>
+

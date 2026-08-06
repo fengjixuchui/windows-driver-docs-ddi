@@ -1,10 +1,9 @@
 ---
 UID: NE:rilapitypes.RILDISPLAYINFOPARAMMASK
 title: RILDISPLAYINFOPARAMMASK (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this enumeration in your code. Microsoft reserves the RILDISPLAYINFOPARAMMASK enumeration for internal use only."
 old-location: netvista\rildisplayinfoparammask.htm
 tech.root: netvista
-ms.assetid: deb9da97-7a61-4642-bebd-ab0e4082b410
 ms.date: 05/02/2018
 keywords: ["RILDISPLAYINFOPARAMMASK enumeration"]
 ms.keywords: RILDISPLAYINFOPARAMMASK, RILDISPLAYINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_DISPLAY_ALL, RIL_PARAM_DISPLAY_MESSAGE, RIL_PARAM_DISPLAY_MESSAGESIZE, RIL_PARAM_DISPLAY_TAG, RIL_PARAM_DISPLAY_TYPE, netvista.rildisplayinfoparammask, ntddrilapitypes/RILDISPLAYINFOPARAMMASK, ntddrilapitypes/RIL_PARAM_DISPLAY_ALL, ntddrilapitypes/RIL_PARAM_DISPLAY_MESSAGE, ntddrilapitypes/RIL_PARAM_DISPLAY_MESSAGESIZE, ntddrilapitypes/RIL_PARAM_DISPLAY_TAG, ntddrilapitypes/RIL_PARAM_DISPLAY_TYPE

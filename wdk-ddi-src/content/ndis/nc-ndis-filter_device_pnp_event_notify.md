@@ -4,7 +4,6 @@ title: FILTER_DEVICE_PNP_EVENT_NOTIFY (ndis.h)
 description: NDIS calls a filter driver's FilterDevicePnPEventNotify function to notify the driver of device Plug and Play (PnP) and Power Management events.Note  You must declare the function by using the FILTER_DEVICE_PNP_EVENT_NOTIFY type.
 old-location: netvista\filterdevicepnpeventnotify.htm
 tech.root: netvista
-ms.assetid: dea4ab30-ba1d-4c9c-9f00-e48cc3cc0b46
 ms.date: 05/02/2018
 keywords: ["FILTER_DEVICE_PNP_EVENT_NOTIFY callback function"]
 ms.keywords: FILTER_DEVICE_PNP_EVENT_NOTIFY, FILTER_DEVICE_PNP_EVENT_NOTIFY callback, FilterDevicePnPEventNotify, FilterDevicePnPEventNotify callback function [Network Drivers Starting with Windows Vista], filter_functions_ref_3e688903-ea36-44b3-bd06-533f7e573478.xml, ndis/FilterDevicePnPEventNotify, netvista.filterdevicepnpeventnotify
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - FilterDevicePnPEventNotify
+ - FILTER_DEVICE_PNP_EVENT_NOTIFY
 ---
 
 # FILTER_DEVICE_PNP_EVENT_NOTIFY callback function
@@ -54,16 +53,16 @@ NDIS calls a filter driver's
 
 ## -parameters
 
-### -param FilterModuleContext 
+### -param FilterModuleContext [in]
 
-[in]
+
 A handle to the context area for the filter module. The filter driver created and initialized this
      context area in the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach">FilterAttach</a> function.
 
-### -param NetDevicePnPEvent 
+### -param NetDevicePnPEvent [in]
 
-[in]
+
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_device_pnp_event">NET_DEVICE_PNP_EVENT</a> structure that
      describes a device Plug and Play event.
@@ -136,3 +135,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiswriteeventlogentry">NdisWriteEventLogEntry</a>
+

@@ -4,7 +4,6 @@ title: IWDFIoRequest::GetOutputMemory (wudfddi.h)
 description: The GetOutputMemory method retrieves the memory object that represents the output buffer for an I/O request.
 old-location: wdf\iwdfiorequest_getoutputmemory.htm
 tech.root: wdf
-ms.assetid: 12862fb2-4cdb-4446-aa20-ec911c9cd65f
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequest::GetOutputMemory"]
 ms.keywords: GetOutputMemory, GetOutputMemory method, GetOutputMemory method,IWDFIoRequest interface, IWDFIoRequest interface,GetOutputMemory method, IWDFIoRequest.GetOutputMemory, IWDFIoRequest::GetOutputMemory, UMDFRequestObjectRef_618a405c-a272-4427-809b-46b7f46b75de.xml, umdf.iwdfiorequest_getoutputmemory, wdf.iwdfiorequest_getoutputmemory, wudfddi/IWDFIoRequest::GetOutputMemory
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequest.GetOutputMemory
+ - IWDFIoRequest::GetOutputMemory
 ---
 
 # IWDFIoRequest::GetOutputMemory
@@ -52,9 +51,9 @@ The <b>GetOutputMemory</b> method retrieves the memory object that represents th
 
 ## -parameters
 
-### -param ppWdfMemory 
+### -param ppWdfMemory [out]
 
-[out]
+
 A pointer to a variable that receives a pointer to the reference-counted <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfmemory">IWDFMemory</a> interface for the memory object. Note that returning <b>NULL</b> is valid; in this situation, no output memory is associated with the I/O request.
 
 ## -remarks
@@ -91,3 +90,4 @@ For a code example of how to use the <b>GetOutputMemory</b> method, see <a href=
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfmemory-getdatabuffer">IWDFMemory::GetDataBuffer</a>
+

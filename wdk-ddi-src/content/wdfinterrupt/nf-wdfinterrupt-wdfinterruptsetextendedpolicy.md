@@ -4,7 +4,6 @@ title: WdfInterruptSetExtendedPolicy function (wdfinterrupt.h)
 description: The WdfInterruptSetExtendedPolicy method specifies the interrupt priority, processor affinity, affinity policy, and processor group for a specified interrupt.
 old-location: wdf\wdfinterruptsetextendedpolicy.htm
 tech.root: wdf
-ms.assetid: 043c15dc-ebd7-4d91-8f65-d89d6064cc7c
 ms.date: 02/26/2018
 keywords: ["WdfInterruptSetExtendedPolicy function"]
 ms.keywords: DFInterruptObjectRef_ed600fb0-0e09-4c00-a132-cd4947dd2b04.xml, WdfInterruptSetExtendedPolicy, WdfInterruptSetExtendedPolicy method, kmdf.wdfinterruptsetextendedpolicy, wdf.wdfinterruptsetextendedpolicy, wdfinterrupt/WdfInterruptSetExtendedPolicy
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfInterruptSetExtendedPolicy</b> method specifies the interrupt priority
 
 ## -parameters
 
-### -param Interrupt 
+### -param Interrupt [in]
 
-[in]
+
 A handle to a framework interrupt object.
 
-### -param PolicyAndGroup 
+### -param PolicyAndGroup [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfinterrupt/ns-wdfinterrupt-_wdf_interrupt_extended_policy">WDF_INTERRUPT_EXTENDED_POLICY</a> structure that the caller allocates and initializes.
 
 ## -remarks

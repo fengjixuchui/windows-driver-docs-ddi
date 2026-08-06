@@ -1,10 +1,9 @@
 ---
 UID: NI:ntdddisk.IOCTL_DISK_CHECK_VERIFY
 title: IOCTL_DISK_CHECK_VERIFY (ntdddisk.h)
-description: In Microsoft Windows 2000 and later operating systems, this IOCTL is replaced by IOCTL_STORAGE_CHECK_VERIFY. The only difference between the two IOCTLs is the base value.
+description: The IOCTL_DISK_CHECK_VERIFY IOCTL is replaced by IOCTL_STORAGE_CHECK_VERIFY In Microsoft Windows 2000 and later operating systems.
 old-location: storage\ioctl_disk_check_verify.htm
 tech.root: storage
-ms.assetid: bf2604fe-e7d3-43af-916e-b03979ee71aa
 ms.date: 03/29/2018
 keywords: ["IOCTL_DISK_CHECK_VERIFY IOCTL"]
 ms.keywords: IOCTL_DISK_CHECK_VERIFY, IOCTL_DISK_CHECK_VERIFY control, IOCTL_DISK_CHECK_VERIFY control code [Storage Devices], k307_6a32996e-8526-466a-bcbe-b79b8bacadc6.xml, ntdddisk/IOCTL_DISK_CHECK_VERIFY, storage.ioctl_disk_check_verify
@@ -49,6 +48,8 @@ api_name:
 In Microsoft Windows 2000 and later operating systems, this IOCTL is replaced by <a href="/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_check_verify">IOCTL_STORAGE_CHECK_VERIFY</a>. The only difference between the two IOCTLs is the base value.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

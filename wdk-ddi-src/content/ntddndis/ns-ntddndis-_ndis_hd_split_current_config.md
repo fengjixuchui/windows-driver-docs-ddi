@@ -4,7 +4,6 @@ title: _NDIS_HD_SPLIT_CURRENT_CONFIG (ntddndis.h)
 description: The NDIS_HD_SPLIT_CURRENT_CONFIG structure provides the current header-data split configuration of a miniport adapter.
 old-location: netvista\ndis_hd_split_current_config.htm
 tech.root: netvista
-ms.assetid: 866fe9e6-0cb1-45cd-84b4-4e2df9c9c45a
 ms.date: 05/02/2018
 keywords: ["NDIS_HD_SPLIT_CURRENT_CONFIG structure"]
 ms.keywords: "*PNDIS_HD_SPLIT_CURRENT_CONFIG, NDIS_HD_SPLIT_CURRENT_CONFIG, NDIS_HD_SPLIT_CURRENT_CONFIG structure [Network Drivers Starting with Windows Vista], PNDIS_HD_SPLIT_CURRENT_CONFIG, PNDIS_HD_SPLIT_CURRENT_CONFIG structure pointer [Network Drivers Starting with Windows Vista], _NDIS_HD_SPLIT_CURRENT_CONFIG, header_data_split_ref_7275dcfc-6fe4-4648-9b4c-0b5a37aa850b.xml, netvista.ndis_hd_split_current_config, ntddndis/NDIS_HD_SPLIT_CURRENT_CONFIG, ntddndis/PNDIS_HD_SPLIT_CURRENT_CONFIG"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_HD_SPLIT_CURRENT_CONFIG
+ - PNDIS_HD_SPLIT_CURRENT_CONFIG
  - NDIS_HD_SPLIT_CURRENT_CONFIG
 ---
 
@@ -58,7 +59,7 @@ The NDIS_HD_SPLIT_CURRENT_CONFIG structure provides the current header-data spli
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_HD_SPLIT_CURRENT_CONFIG structure. The driver sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -187,7 +188,7 @@ The NDIS_HD_SPLIT_CURRENT_CONFIG structure is used in the
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -196,3 +197,4 @@ The NDIS_HD_SPLIT_CURRENT_CONFIG structure is used in the
 
 
 <a href="/windows-hardware/drivers/network/oid-gen-hd-split-current-config">OID_GEN_HD_SPLIT_CURRENT_CONFIG</a>
+

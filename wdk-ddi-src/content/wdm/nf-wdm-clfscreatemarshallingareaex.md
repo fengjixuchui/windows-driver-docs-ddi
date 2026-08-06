@@ -1,9 +1,9 @@
 ---
 UID: NF:wdm.ClfsCreateMarshallingAreaEx
 title: ClfsCreateMarshallingAreaEx function (wdm.h)
-description: Initalizes a marshalling area for a physical or client log file stream.
-ms.assetid: 00a9624d-0cc9-4429-8050-74934176bbdd
+description: Initializes a marshalling area for a physical or client log file stream.
 ms.date: 10/19/2018
+tech.root: ifsk
 keywords: ["ClfsCreateMarshallingAreaEx function"]
 ms.keywords: ClfsCreateMarshallingAreaEx
 req.header: wdm.h
@@ -42,7 +42,7 @@ api_name:
 
 ## -description
 
-Initalizes a marshalling area for a physical or client log file stream.
+Initializes a marshalling area for a physical or client log file stream.
 
 ## -parameters
 
@@ -76,7 +76,7 @@ The maximum number of allocated read buffers.
 
 ### -param cAlignmentSize
 
-The alignment size of mashalling buffers.
+The alignment size of marshalling buffers.
 
 ### -param fFlags
 

@@ -2,8 +2,7 @@
 UID: NC:uart.UART_PUT_BYTE
 title: UART_PUT_BYTE (uart.h)
 description: Writes a data byte to the UART device.
-tech.root: serports
-ms.assetid: d4db9a6d-b9ef-4b88-9f12-b4fe437eaa4b
+tech.root: uart
 ms.date: 10/19/2018
 keywords: ["UART_PUT_BYTE callback function"]
 req.header: uart.h
@@ -46,9 +45,9 @@ Writes a data byte to the UART device.
 
 ## -parameters
 
-### -param Port
+### -param Port [_Inout_]
 
-[_Inout_] A pointer to a [**_CPPORT**](ns-uart-_cpport.md) structure that contains the  address of the port object that describes the UART hardware.
+A pointer to a [**_CPPORT**](ns-uart-_cpport.md) structure that contains the  address of the port object that describes the UART hardware.
 
 ### -param Byte
 
@@ -93,3 +92,4 @@ Register your implementation of this callback function by setting the appropriat
 
 [**UART_STATUS**](ne-uart-uart_status.md)
 
+[**uart.h**](index.md)

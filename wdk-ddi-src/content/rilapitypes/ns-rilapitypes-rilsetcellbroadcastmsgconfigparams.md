@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILSETCELLBROADCASTMSGCONFIGPARAMS
 title: RILSETCELLBROADCASTMSGCONFIGPARAMS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILSETCELLBROADCASTMSGCONFIGPARAMS structure for internal use only."
 old-location: netvista\rilsetcellbroadcastmsgconfigparams.htm
 tech.root: netvista
-ms.assetid: bfaad47a-44eb-471d-9ed9-e1adf845ab9c
 ms.date: 05/02/2018
 keywords: ["RILSETCELLBROADCASTMSGCONFIGPARAMS structure"]
 ms.keywords: "*LPRILSETCELLBROADCASTMSGCONFIGPARAMS, RILSETCELLBROADCASTMSGCONFIGPARAMS, RILSETCELLBROADCASTMSGCONFIGPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsetcellbroadcastmsgconfigparams, ntddrilapitypes/RILSETCELLBROADCASTMSGCONFIGPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSETCELLBROADCASTMSGCONFIGPARAMS
+ - LPRILSETCELLBROADCASTMSGCONFIGPARAMS
 ---
 
 # RILSETCELLBROADCASTMSGCONFIGPARAMS structure (rilapitypes.h)

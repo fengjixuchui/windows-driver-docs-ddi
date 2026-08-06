@@ -4,7 +4,6 @@ title: _NDIS_DEVICE_OBJECT_ATTRIBUTES (ndis.h)
 description: The NDIS_DEVICE_OBJECT_ATTRIBUTES structure defines the attributes of a device that an NDIS filter or miniport driver can pass to the NdisRegisterDeviceEx function.
 old-location: netvista\ndis_device_object_attributes.htm
 tech.root: netvista
-ms.assetid: 658e1597-eacf-4e9e-9f10-37f7646d38ad
 ms.date: 05/02/2018
 keywords: ["NDIS_DEVICE_OBJECT_ATTRIBUTES structure"]
 ms.keywords: "*PNDIS_DEVICE_OBJECT_ATTRIBUTES, NDIS_DEVICE_OBJECT_ATTRIBUTES, NDIS_DEVICE_OBJECT_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], PNDIS_DEVICE_OBJECT_ATTRIBUTES, PNDIS_DEVICE_OBJECT_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], _NDIS_DEVICE_OBJECT_ATTRIBUTES, ndis/NDIS_DEVICE_OBJECT_ATTRIBUTES, ndis/PNDIS_DEVICE_OBJECT_ATTRIBUTES, ndis_devices_ref_85d7040d-1d34-42e4-ab6b-ef03ed95eeb9.xml, netvista.ndis_device_object_attributes"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_DEVICE_OBJECT_ATTRIBUTES
+ - PNDIS_DEVICE_OBJECT_ATTRIBUTES
  - NDIS_DEVICE_OBJECT_ATTRIBUTES
 ---
 
@@ -59,7 +60,7 @@ The NDIS_DEVICE_OBJECT_ATTRIBUTES structure defines the attributes of a device t
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_DEVICE_OBJECT_ATTRIBUTES structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEVICE_OBJECT_ATTRIBUTES, the 
@@ -146,7 +147,7 @@ An NDIS filter or miniport driver can call the
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -155,3 +156,4 @@ An NDIS filter or miniport driver can call the
 
 
 <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a>
+

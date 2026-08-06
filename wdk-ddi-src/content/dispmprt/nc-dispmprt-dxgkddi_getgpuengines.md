@@ -3,7 +3,6 @@ UID: NC:dispmprt.DXGKDDI_GETGPUENGINES
 title: DXGKDDI_GETGPUENGINES
 description: This function is no longer used and maybe be deleted in the near future.  It is currently required, but will never be called.
 tech.root: display
-ms.assetid: 2516376d-9fb4-47a5-8178-304f2b549f48
 ms.date: 04/04/2019
 keywords: ["DXGKDDI_GETGPUENGINES callback function"]
 req.header: dispmprt.h
@@ -36,8 +35,6 @@ api_location:
  - dispmprt.h
 api_name:
  - DXGKDDI_GETGPUENGINES
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,13 +48,13 @@ This function is no longer used and maybe be deleted in the near future.  It is 
 
 ## -parameters
 
-### -param Context
+### -param Context [in]
 
-[in] The miniport context that is returned by the driver in the [DXGKDDI_GPU_PARTITION_INTERFACE](ns-dispmprt-_dxgkddi_gpu_partition_interface.md) structure.
+The miniport context that is returned by the driver in the [DXGKDDI_GPU_PARTITION_INTERFACE](ns-dispmprt-_dxgkddi_gpu_partition_interface.md) structure.
 
-### -param pArgs 
+### -param pArgs [in]
 
-[in] A pointer to the DXGKARG_GETGPUENGINES structure.
+A pointer to the DXGKARG_GETGPUENGINES structure.
 
 ## -returns
 

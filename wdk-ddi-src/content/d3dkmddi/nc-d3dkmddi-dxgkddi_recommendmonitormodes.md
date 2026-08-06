@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_RECOMMENDMONITORMODES
 title: DXGKDDI_RECOMMENDMONITORMODES (d3dkmddi.h)
 description: The DxgkDdiRecommendMonitorModes function inspects the monitor source mode set that is associated with a particular video present target and possibly adds modes to the set.
 old-location: display\dxgkddirecommendmonitormodes.htm
-ms.assetid: 1fa29ab6-1faa-4be6-ae87-4cac9057471d
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_RECOMMENDMONITORMODES callback function"]
 ms.keywords: DXGKDDI_RECOMMENDMONITORMODES, DXGKDDI_RECOMMENDMONITORMODES callback, DmFunctions_0e8f1382-ec41-4953-8e1e-f2a5121acc0c.xml, DxgkDdiRecommendMonitorModes, DxgkDdiRecommendMonitorModes callback function [Display Devices], d3dkmddi/DxgkDdiRecommendMonitorModes, display.dxgkddirecommendmonitormodes
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiRecommendMonitorModes
-product:
- - Windows
+ - DXGKDDI_RECOMMENDMONITORMODES
 ---
 
 # DXGKDDI_RECOMMENDMONITORMODES callback function
@@ -52,13 +49,13 @@ The <i>DxgkDdiRecommendMonitorModes</i> function inspects the monitor source mod
 
 ## -parameters
 
-### -param hAdapter
+### -param hAdapter [in]
 
-[in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
+A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
 
-### -param pRecommendMonitorModes
+### -param pRecommendMonitorModes [in]
 
-[in] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_recommendmonitormodes">DXGKARG_RECOMMENDMONITORMODES</a> structure that contains function arguments.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_recommendmonitormodes">DXGKARG_RECOMMENDMONITORMODES</a> structure that contains function arguments.
 
 ## -returns
 
@@ -78,3 +75,4 @@ The miniport driver should pass through any error code that it gets from the ope
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/index">Monitor Source Mode Set Interface</a>
+

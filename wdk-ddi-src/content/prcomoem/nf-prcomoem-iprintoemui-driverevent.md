@@ -4,7 +4,6 @@ title: IPrintOemUI::DriverEvent (prcomoem.h)
 description: The printer driver's DrvDriverEvent function calls a user interface plug-in's IPrintOemUI::DriverEvent method for additional processing of printer driver events.
 old-location: print\iprintoemui_driverevent.htm
 tech.root: print
-ms.assetid: aacddaea-3a6f-4018-92ac-fe4aa2ddabd3
 ms.date: 04/20/2018
 keywords: ["IPrintOemUI::DriverEvent"]
 ms.keywords: DriverEvent, DriverEvent method [Print Devices], DriverEvent method [Print Devices],IPrintOemUI interface, IPrintOemUI interface [Print Devices],DriverEvent method, IPrintOemUI.DriverEvent, IPrintOemUI::DriverEvent, prcomoem/IPrintOemUI::DriverEvent, print.iprintoemui_driverevent, print_unidrv-pscript_ui_797a9e90-b481-4bae-9bfd-e00e362e9a7a.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemUI.DriverEvent
+ - IPrintOemUI::DriverEvent
 ---
 
 # IPrintOemUI::DriverEvent
@@ -194,3 +193,4 @@ For more information about creating and installing user interface plug-ins, see 
 
 
 <a href="/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintoemui">IPrintOemUI</a>
+

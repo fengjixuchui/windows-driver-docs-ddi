@@ -4,7 +4,6 @@ title: RtlFindSetBitsAndClear function (wdm.h)
 description: The RtlFindSetBitsAndClear routine searches for a range of set bits of a requested size within a bitmap and clears all bits in the range when it has been located.
 old-location: kernel\rtlfindsetbitsandclear.htm
 tech.root: kernel
-ms.assetid: d88797c6-c06c-4c3b-a3e4-baf412e051ef
 ms.date: 04/30/2018
 keywords: ["RtlFindSetBitsAndClear function"]
 ms.keywords: RtlFindSetBitsAndClear, RtlFindSetBitsAndClear routine [Kernel-Mode Driver Architecture], k109_a6043f35-d317-434a-93c1-1c44aa9e8cd4.xml, kernel.rtlfindsetbitsandclear, wdm/RtlFindSetBitsAndClear
@@ -50,19 +49,19 @@ The <b>RtlFindSetBitsAndClear</b> routine searches for a range of set bits of a 
 
 ## -parameters
 
-### -param BitMapHeader 
+### -param BitMapHeader [in]
 
-[in]
-A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-### -param NumberToFind 
+A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-[in]
+### -param NumberToFind [in]
+
+
 Specifies how many contiguous set bits will satisfy this request.
 
-### -param HintIndex 
+### -param HintIndex [in]
 
-[in]
+
 Specifies a zero-based bit position around which to start looking for a set bit range of the given size.
 
 ## -returns
@@ -77,7 +76,7 @@ Callers of <b>RtlFindSetBitsAndClear</b> must be running at IRQL <= APC_LEVEL if
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a>
+<a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a>
 
 
 

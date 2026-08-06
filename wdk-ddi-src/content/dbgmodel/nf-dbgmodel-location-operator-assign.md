@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.Location.operator-assign
 title: operator= function (dbgmodel.h)
 description: The copy assignment operator for the location function.
-ms.assetid: 76ea5143-73e8-476a-8913-d47fea290a48
 ms.date: 09/28/2018
 keywords: ["operator= function"]
 ms.keywords: operator=
@@ -35,7 +34,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - operator=
+ - Location::operator=
 ---
 
 # operator= function
@@ -60,3 +59,4 @@ This function returns Location &.
 ## -see-also
 
 [dbgmodel.h header](./index.md)
+

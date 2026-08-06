@@ -4,7 +4,6 @@ title: RtlShortSub function (ntintsafe.h)
 description: Subtracts one value of type SHORT from another.
 old-location: kernel\rtlshortsub.htm
 tech.root: kernel
-ms.assetid: F94435C2-A2FC-44F4-8A21-E56CBEB8CC37
 ms.date: 04/30/2018
 keywords: ["RtlShortSub function"]
 ms.keywords: RtlShortSub, RtlShortSub function [Kernel-Mode Driver Architecture], kernel.rtlshortsub, ntintsafe/RtlShortSub
@@ -50,19 +49,19 @@ Subtracts one value of type <b>SHORT</b> from another.
 
 ## -parameters
 
-### -param sMinuend 
+### -param sMinuend [in]
 
-[in]
+
 The value from which <i>sSubtrahend</i> is subtracted.
 
-### -param sSubtrahend 
+### -param sSubtrahend [in]
 
-[in]
+
 The value to subtract from <i>sMinuend</i>.
 
-### -param psResult 
+### -param psResult [out]
 
-[out]
+
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

@@ -4,7 +4,6 @@ title: KeInitializeSemaphore function (wdm.h)
 description: The KeInitializeSemaphore routine initializes a semaphore object with a specified count and specifies an upper limit that the count can attain.
 old-location: kernel\keinitializesemaphore.htm
 tech.root: kernel
-ms.assetid: 447a7ba5-8357-4383-987f-51f5b3c9996c
 ms.date: 04/30/2018
 keywords: ["KeInitializeSemaphore function"]
 ms.keywords: KeInitializeSemaphore, KeInitializeSemaphore routine [Kernel-Mode Driver Architecture], k105_a966274e-6afe-4569-ae7c-65dccbb3f1dc.xml, kernel.keinitializesemaphore, wdm/KeInitializeSemaphore
@@ -50,19 +49,19 @@ The <b>KeInitializeSemaphore</b> routine initializes a semaphore object with a s
 
 ## -parameters
 
-### -param Semaphore 
+### -param Semaphore [out]
 
-[out]
+
 Pointer to a dispatcher object of type semaphore, for which the caller provides the storage.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the initial count value to be assigned to the semaphore. This value must be positive. A nonzero value sets the initial state of the semaphore to signaled.
 
-### -param Limit 
+### -param Limit [in]
 
-[in]
+
 Specifies the maximum count value that the semaphore can attain. This value must be positive. It determines how many waiting threads become eligible for execution when the semaphore is set to the signaled state and can therefore access the resource that the semaphore protects.
 
 ## -remarks

@@ -4,7 +4,6 @@ title: _NDIS_BIND_FAILED_NOTIFICATION (ndis.h)
 description: The NDIS_BIND_FAILED_NOTIFICATION structure describes a binding event failure.
 old-location: netvista\ndis_bind_failed_notification.htm
 tech.root: netvista
-ms.assetid: 5420839B-EB81-43CC-B7BD-9D1FA2560A3D
 ms.date: 05/02/2018
 keywords: ["NDIS_BIND_FAILED_NOTIFICATION structure"]
 ms.keywords: "*PNDIS_BIND_FAILED_NOTIFICATION, NDIS_BIND_FAILED_NOTIFICATION, NDIS_BIND_FAILED_NOTIFICATION structure [Network Drivers Starting with Windows Vista], PNDIS_BIND_FAILED_NOTIFICATION, PNDIS_BIND_FAILED_NOTIFICATION structure pointer [Network Drivers Starting with Windows Vista], _NDIS_BIND_FAILED_NOTIFICATION, ndis/NDIS_BIND_FAILED_NOTIFICATION, ndis/PNDIS_BIND_FAILED_NOTIFICATION, netvista.ndis_bind_failed_notification"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_BIND_FAILED_NOTIFICATION
+ - PNDIS_BIND_FAILED_NOTIFICATION
  - NDIS_BIND_FAILED_NOTIFICATION
 ---
 
@@ -57,7 +58,7 @@ The <b>NDIS_BIND_FAILED_NOTIFICATION</b> structure describes a binding event fai
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_BIND_FAILED_NOTIFICATION</b> structure. NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_DEFAULT</b>, the 
@@ -68,3 +69,4 @@ The
 
 The NDIS network interface
      name (<i>ifName</i> in RFC 2863) of the miniport adapter.
+

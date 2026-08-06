@@ -4,7 +4,6 @@ title: PDEBUG_EXTENSION_CALL (dbgeng.h)
 description: Callback functions of the type PDEBUG_EXTENSION_CALL are called by the engine to execute extension commands. You can give these functions any name you want, as long as it contains no uppercase letters.
 old-location: debugger\pdebug_extension_call.htm
 tech.root: debugger
-ms.assetid: 325af2f4-9fb7-4fb3-9294-cd6d20d803c6
 ms.date: 05/03/2018
 keywords: ["PDEBUG_EXTENSION_CALL callback function"]
 ms.keywords: DebugExtensionCall, DebugExtensionCall callback function [Windows Debugging], Extensions_Ref_fc621d91-0419-4ae3-8e53-71f4c522c318.xml, PDEBUG_EXTENSION_CALL, PDEBUG_EXTENSION_CALL callback, dbgeng/DebugExtensionCall, debugger.pdebug_extension_call
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - DebugExtensionCall
+ - PDEBUG_EXTENSION_CALL
 ---
 
 # PDEBUG_EXTENSION_CALL callback function
-
 
 ## -description
 
@@ -50,14 +48,12 @@ Callback functions of the type <b>PDEBUG_EXTENSION_CALL</b> are called by the en
 
 ## -parameters
 
-### -param Client 
+### -param Client [in]
 
-[in]
 Specifies an interface pointer to the client.  This can be used to interact with the engine.  Typically, this is the client through which the extension command was issued.
 
-### -param Args 
+### -param Args [in, optional]
 
-[in, optional]
 Specifies the arguments passed to the extension command.  In particular, if the extension command was called from a command line, <i>Args</i> contains the rest of the command line.  It can be <b>NULL</b> or empty.
 
 ## -returns
@@ -105,3 +101,4 @@ DebugExtensionCall is called <b>PDEBUG_EXTENSION_CALL</b>   in the Dbgeng.h head
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient">IDebugClient</a>
+

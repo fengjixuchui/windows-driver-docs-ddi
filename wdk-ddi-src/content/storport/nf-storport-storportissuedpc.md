@@ -4,7 +4,6 @@ title: StorPortIssueDpc function (storport.h)
 description: The StorPortIssueDpc routine issues a deferred procedure call (DPC).
 old-location: storage\storportissuedpc.htm
 tech.root: storage
-ms.assetid: a0c46c51-f6c4-4609-9dba-b730f33c3ed6
 ms.date: 03/29/2018
 keywords: ["StorPortIssueDpc function"]
 ms.keywords: StorPortIssueDpc, StorPortIssueDpc routine [Storage Devices], storage.storportissuedpc, storport/StorPortIssueDpc, storprt_e9cbe677-4d21-4c07-97a2-9db50858321f.xml
@@ -50,24 +49,24 @@ The <b>StorPortIssueDpc</b> routine issues a deferred procedure call (DPC).
 
 ## -parameters
 
-### -param DeviceExtension 
+### -param DeviceExtension [in]
 
-[in]
+
 Pointer to the per-adapter device extension.
 
-### -param Dpc 
+### -param Dpc [in]
 
-[in]
+
 Pointer to a buffer containing an initialized DPC object of type <a href="/windows-hardware/drivers/ddi/storport/ns-storport-_stor_dpc">STOR_DPC</a> returned by the <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitializedpc">StorPortInitializeDpc</a> routine.
 
-### -param SystemArgument1 
+### -param SystemArgument1 [in]
 
-[in]
+
 Pointer to caller-supplied information that will be passed to the deferred routine.
 
-### -param SystemArgument2 
+### -param SystemArgument2 [in]
 
-[in]
+
 Pointer to caller-supplied information that will be passed to the deferred routine.
 
 ## -returns

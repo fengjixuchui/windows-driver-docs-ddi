@@ -1,10 +1,9 @@
 ---
 UID: NS:d3dhal._D3DHAL_DP2RESPONSEQUERY
 title: _D3DHAL_DP2RESPONSEQUERY (d3dhal.h)
-description: DirectX 9.0 and later versions only.
+description: The D3DHAL_DP2RESPONSEQUERY structure is returned by the D3dDrawPrimitives2 callback and specifies the availability of responses to previously issued queries.
 old-location: display\d3dhal_dp2responsequery.htm
 tech.root: display
-ms.assetid: fda36df2-d346-47a5-b391-dd4509446ca1
 ms.date: 05/10/2018
 keywords: ["D3DHAL_DP2RESPONSEQUERY structure"]
 ms.keywords: "*LPD3DHAL_DP2RESPONSEQUERY, D3DHAL_DP2RESPONSEQUERY, D3DHAL_DP2RESPONSEQUERY structure [Display Devices], LPD3DHAL_DP2RESPONSEQUERY, LPD3DHAL_DP2RESPONSEQUERY structure pointer [Display Devices], _D3DHAL_DP2RESPONSEQUERY, d3dhal/D3DHAL_DP2RESPONSEQUERY, d3dhal/LPD3DHAL_DP2RESPONSEQUERY, d3dstrct_6164398f-06cc-4d18-8793-8dbbbdd63b40.xml, display.d3dhal_dp2responsequery"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dhal.h
 api_name:
+ - _D3DHAL_DP2RESPONSEQUERY
  - D3DHAL_DP2RESPONSEQUERY
 ---
 
@@ -117,3 +117,4 @@ D3DDP2OP_RESPONSEQUERY
 
 
 <a href="/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb">D3dDrawPrimitives2</a>
+

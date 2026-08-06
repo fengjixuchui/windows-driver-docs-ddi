@@ -3,7 +3,6 @@ UID: NS:d3d10umddi.D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW
 title: D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW (d3d10umddi.h)
 description: The D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW structure describes a two-dimensional (2-D) texture that is used to create a depth stencil view in a call to the CreateDepthStencilView function.
 old-location: display\d3d10ddiarg_tex2d_depthstencilview.htm
-ms.assetid: f659584f-e0a5-46b6-b20d-c19aba421114
 ms.date: 05/10/2018
 keywords: ["D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW structure"]
 ms.keywords: D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW, D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW structure [Display Devices], UMDisplayDriver_Dx10param_Structs_6887e338-dbab-4f35-bce1-e4412598d9bc.xml, d3d10umddi/D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW, display.d3d10ddiarg_tex2d_depthstencilview
@@ -50,17 +49,17 @@ The D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW structure describes a two-dimensional (2-
 
 ## -struct-fields
 
-### -field MipSlice
+### -field MipSlice [in]
 
-[in] The identifier of the MIP-map slice.
+The identifier of the MIP-map slice.
 
-### -field FirstArraySlice
+### -field FirstArraySlice [in]
 
-[in] The identifier of the first array slice.
+The identifier of the first array slice.
 
-### -field ArraySize
+### -field ArraySize [in]
 
-[in] The number of array slices for the texture.
+The number of array slices for the texture.
 
 ## -see-also
 

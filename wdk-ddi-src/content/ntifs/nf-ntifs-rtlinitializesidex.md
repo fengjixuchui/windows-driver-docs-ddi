@@ -4,14 +4,13 @@ title: RtlInitializeSidEx function (ntifs.h)
 description: The RtlInitializeSidEx routine initializes a pre-allocated security identifier (SID) structure.
 old-location: ifsk\rtlinitializesidex.htm
 tech.root: ifsk
-ms.assetid: 367D8BC1-07F4-474E-913A-5F825320A70C
 ms.date: 04/16/2018
 keywords: ["RtlInitializeSidEx function"]
 ms.keywords: RtlInitializeSidEx, RtlInitializeSidEx routine [Installable File System Drivers], ifsk.rtlinitializesidex, ntifs/RtlInitializeSidEx
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Windows 10 and later.
+req.target-min-winverclnt: Windows 10
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,29 +49,22 @@ The <b>RtlInitializeSidEx</b> routine initializes a pre-allocated security ident
 
 ## -parameters
 
-### -param Sid 
+### -param Sid [out]
 
-[out]
+
 Pointer to a caller-allocated SID structure to be initialized.
 
-### -param IdentifierAuthority 
+### -param IdentifierAuthority [in]
 
-[in]
+
 Pointer to an <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_sid_identifier_authority">SID_IDENTIFIER_AUTHORITY</a> structure to set in the SID structure.
 
-### -param SubAuthorityCount 
+### -param SubAuthorityCount [in]
 
-[in]
+
 Number of sub-authorities to set in the SID.
 
-### -param param
-
-<p>The values to set each sub-authority. The caller must specify the SubAuthorityCount argument.</p>
-
-
-
-
-####### - ...
+### -param ...
 
 The values to set each sub-authority. The caller must specify the SubAuthorityCount argument.
 
@@ -111,7 +103,7 @@ The specified <i>SubAuthorityCount</i> value is invalid.
 
 ## -remarks
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 
@@ -124,3 +116,4 @@ For more information about security and access control, see the documentation on
 
 
 <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_sid_identifier_authority">SID_IDENTIFIER_AUTHORITY</a>
+

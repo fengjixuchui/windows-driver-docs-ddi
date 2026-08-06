@@ -4,7 +4,6 @@ title: _WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS (wudfddi_types.h)
 description: The WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS structure contains driver-supplied information that the framework uses when a device is idle and the system is in the system working state (S0).
 old-location: wdf\wudf_device_power_policy_idle_settings.htm
 tech.root: wdf
-ms.assetid: E6EF8852-E39C-491B-9430-0308CA6276C0
 ms.date: 02/26/2018
 keywords: ["WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS structure"]
 ms.keywords: "*PWUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, PWUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, PWUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS structure pointer, WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS structure, _WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, umdf.wudf_device_power_policy_idle_settings, wdf.wudf_device_power_policy_idle_settings, wudfddi_types/PWUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS, wudfddi_types/WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wudfddi_types.h
 api_name:
+ - _WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS
+ - PWUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS
  - WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS
 ---
 
@@ -113,7 +114,7 @@ A <a href="/windows-hardware/drivers/ddi/wdftypes/ne-wdftypes-_wdf_tri_state">WD
 <li>The ACPI firmware indicates that the device supports the D3cold power state.</li>
 <li>If the driver specified <b>IdleCanWakeFromS0</b> or <b>IdleUsbSelectiveSuspend</b> in the <b>IdleCaps</b> member of this structure, the device can respond to an external wake-up event while in the D3cold power state. Otherwise, this requirement does not apply.</li>
 </ul>
-<b>WdfUseDefault</b> - The framework examines the <i>DDInstall</i><b>.HW</b> section of the driver's INF file. If the following lines are present, this value has the same meaning as <b>WdfFalse</b>:<pre class="syntax" xml:space="preserve"><code>Include = machine.inf
+<b>WdfUseDefault</b> - The framework examines the <i>DDInstall</i><b>.HW</b> section of the driver's INF file. If the following lines are present, this value has the same meaning as <b>WdfFalse</b>:<pre class="syntax"><code>Include = machine.inf
 Needs = PciD3ColdSupported
 </code></pre> Otherwise, this value has the same meaning as <b>WdfTrue</b>.
 
@@ -185,3 +186,4 @@ To initialize its <b>WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</b> structure, your 
 
 
 <a href="/windows-hardware/drivers/ddi/wudfdevice/nf-wudfdevice-wudf_device_power_policy_idle_settings_init">WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT</a>
+

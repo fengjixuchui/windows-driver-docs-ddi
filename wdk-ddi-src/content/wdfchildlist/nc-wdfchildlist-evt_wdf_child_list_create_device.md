@@ -4,7 +4,6 @@ title: EVT_WDF_CHILD_LIST_CREATE_DEVICE (wdfchildlist.h)
 description: A bus driver'sEvtChildListCreateDevice event callback function creates a framework device object for a new device that has been dynamically enumerated.
 old-location: wdf\evtchildlistcreatedevice.htm
 tech.root: wdf
-ms.assetid: 296fbe06-1680-43a8-b5c3-1a1faa19c6c3
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_CHILD_LIST_CREATE_DEVICE callback function"]
 ms.keywords: DFDeviceObjectChildListRef_e3abb118-d40f-46f5-9b70-80d0fc8c531f.xml, EVT_WDF_CHILD_LIST_CREATE_DEVICE, EVT_WDF_CHILD_LIST_CREATE_DEVICE callback, EvtChildListCreateDevice, EvtChildListCreateDevice callback function, kmdf.evtchildlistcreatedevice, wdf.evtchildlistcreatedevice, wdfchildlist/EvtChildListCreateDevice
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfChildlist.h
 api_name:
- - EvtChildListCreateDevice
+ - EVT_WDF_CHILD_LIST_CREATE_DEVICE
 ---
 
 # EVT_WDF_CHILD_LIST_CREATE_DEVICE callback function
@@ -48,23 +47,23 @@ api_name:
 
 <p class="CCE_Message">[Applies to KMDF only]</p>
 
-A bus driver's<i>EvtChildListCreateDevice</i> event callback function creates a framework device object for a new device that has been dynamically enumerated.
+A bus driver's <i>EvtChildListCreateDevice</i> event callback function creates a framework device object for a new device that has been dynamically enumerated.
 
 ## -parameters
 
-### -param ChildList 
+### -param ChildList [in]
 
-[in]
+
 A handle to the framework child-list object that the driver specified when it called <a href="/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent">WdfChildListAddOrUpdateChildDescriptionAsPresent</a>.
 
-### -param IdentificationDescription 
+### -param IdentificationDescription [in]
 
-[in]
+
 A pointer to a copy of the <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a> structure that the driver specified when it called <a href="/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistaddorupdatechilddescriptionaspresent">WdfChildListAddOrUpdateChildDescriptionAsPresent</a>.
 
-### -param ChildInit 
+### -param ChildInit [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
 ## -returns
@@ -112,3 +111,4 @@ For more information about dynamic enumeration, see <a href="/windows-hardware/d
 
 
 <a href="/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitsetdefaultchildlistconfig">WdfFdoInitSetDefaultChildListConfig</a>
+

@@ -4,7 +4,6 @@ title: PFND3DDDI_DECODEEXECUTE (d3dumddi.h)
 description: The DecodeExecute function performs a decode operation by using the given Microsoft DirectX Video Accelerator (VA) decode device.
 old-location: display\decodeexecute.htm
 tech.root: display
-ms.assetid: e12496c0-e3e4-437e-9f84-a30ee99b4541
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DECODEEXECUTE callback function"]
 ms.keywords: DecodeExecute, DecodeExecute callback function [Display Devices], PFND3DDDI_DECODEEXECUTE, PFND3DDDI_DECODEEXECUTE callback, UserModeDisplayDriver_Functions_6e4181b3-2ba5-4c77-a05a-4c8bb2d0d97c.xml, d3dumddi/DecodeExecute, display.decodeexecute
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - DecodeExecute
-product:
- - Windows
+ - PFND3DDDI_DECODEEXECUTE
 ---
 
 # PFND3DDDI_DECODEEXECUTE callback function
@@ -56,7 +53,7 @@ The <b>DecodeExecute</b> function performs a decode operation by using the given
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -84,3 +81,4 @@ DirectX VA 1.0 supported an external synchronization mechanism through a call to
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

@@ -4,7 +4,6 @@ title: NDIS_WDI_RX_FLUSH_CONFIRM (dot11wdi.h)
 description: The NdisWdiRxFlushConfirm callback function indicates completion of a MiniportWdiRxFlush request. The RxEngine must complete the discard of all RX data frames that match the flush request prior to issuing NdisWdiRxFlushConfirm.
 old-location: netvista\ndiswdirxflushconfirm.htm
 tech.root: netvista
-ms.assetid: CEED709C-F295-4633-B7C1-4719EDDC7CD4
 ms.date: 05/02/2018
 keywords: ["NDIS_WDI_RX_FLUSH_CONFIRM callback function"]
 ms.keywords: NDIS_WDI_RX_FLUSH_CONFIRM, NDIS_WDI_RX_FLUSH_CONFIRM callback, NdisWdiRxFlushConfirm, NdisWdiRxFlushConfirm callback function [Network Drivers Starting with Windows Vista], dot11wdi/NdisWdiRxFlushConfirm, netvista.ndiswdirxflushconfirm
@@ -38,13 +37,16 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
- - NdisWdiRxFlushConfirm
+ - NDIS_WDI_RX_FLUSH_CONFIRM
 ---
 
 # NDIS_WDI_RX_FLUSH_CONFIRM callback function
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The NdisWdiRxFlushConfirm callback function indicates completion of a <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_rx_flush">MiniportWdiRxFlush</a> request. The RxEngine must complete the discard of all RX data frames that match the flush request prior to issuing <i>NdisWdiRxFlushConfirm</i>.
 
@@ -67,3 +69,4 @@ The NdisMiniportDataPathHandle passed to the IHV miniport in <a href="/windows-h
 
 
 <a href="/windows-hardware/drivers/network/wdi-rx-path">WDI RX path</a>
+

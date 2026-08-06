@@ -4,7 +4,6 @@ title: EVT_UDECX_USB_ENDPOINT_START (udecxusbendpoint.h)
 description: The USB device emulation class extension (UdeCx) invokes this callback function to start processing I/O requests on the specified endpoint of the virtual USB device.
 old-location: buses\evt_udecx_usb_endpoint_start.htm
 tech.root: usbref
-ms.assetid: 3F58B6FF-65C5-4B28-81DD-3726B6695BF7
 ms.date: 05/07/2018
 keywords: ["EVT_UDECX_USB_ENDPOINT_START callback function"]
 ms.keywords: EVT_UDECX_USB_ENDPOINT_START, EVT_UDECX_USB_ENDPOINT_START callback, EvtUsbEndpointStart, EvtUsbEndpointStart callback function [Buses], buses.evt_udecx_usb_endpoint_start, udecxusbendpoint/EvtUsbEndpointStart
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - UdecxUsbEndpoint.h
 api_name:
- - EvtUsbEndpointStart
+ - EVT_UDECX_USB_ENDPOINT_START
 ---
 
 # EVT_UDECX_USB_ENDPOINT_START callback function
@@ -50,9 +49,9 @@ The USB device emulation class extension (UdeCx) invokes this callback function 
 
 ## -parameters
 
-### -param UdecxUsbEndpoint 
+### -param UdecxUsbEndpoint [in]
 
-[in]
+
 A handle to a UDE endpoint object that represents the endpoint which can start receiving I/O requests. The client driver retrieved this pointer in the previous call to <a href="/windows-hardware/drivers/ddi/udecxusbendpoint/nf-udecxusbendpoint-udecxusbendpointcreate">UdecxUsbEndpointCreate</a>.
 
 ## -remarks
@@ -76,3 +75,4 @@ After the client driver creates an endpoint, it does not automatically start rec
 
 
 <a href="/windows-hardware/drivers/usbcon/">Write a UDE client driver</a>
+

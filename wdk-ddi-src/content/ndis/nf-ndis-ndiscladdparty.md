@@ -4,7 +4,6 @@ title: NdisClAddParty function (ndis.h)
 description: NdisClAddParty adds a party on the client's multipoint VC.
 old-location: netvista\ndiscladdparty.htm
 tech.root: netvista
-ms.assetid: e48357b2-52dc-48af-aeb1-8d84ea107579
 ms.date: 05/02/2018
 keywords: ["NdisClAddParty function"]
 ms.keywords: NdisClAddParty, NdisClAddParty function [Network Drivers Starting with Windows Vista], condis_client_ref_90d23e8e-f3a5-4a19-9eeb-b68a28f7f915.xml, ndis/NdisClAddParty, netvista.ndiscladdparty
@@ -51,28 +50,28 @@ api_name:
 
 ## -parameters
 
-### -param NdisVcHandle 
+### -param NdisVcHandle [in]
 
-[in]
+
 Pointer to the VC handle returned by 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscocreatevc">NdisCoCreateVc</a>.
 
-### -param ProtocolPartyContext 
+### -param ProtocolPartyContext [in]
 
-[in]
+
 Specifies the handle to a caller-allocated resident context area in which the client will maintain
      per-party state if its call succeeds.
 
-### -param CallParameters 
+### -param CallParameters [in, out]
 
-[in, out]
+
 Pointer to a structure of type 
      <a href="/previous-versions/windows/hardware/network/ff545384(v=vs.85)">CO_CALL_PARAMETERS</a> in which the caller has
      specified the addressing information for the party to be added on its multipoint VC.
 
-### -param NdisPartyHandle 
+### -param NdisPartyHandle [out]
 
-[out]
+
 Pointer to a variable to be set by NDIS if the add-party operation succeeds.
 
 ## -returns

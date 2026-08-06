@@ -4,7 +4,6 @@ title: RILNETWORKCODE (ntddrilapitypes.h)
 description: This structure represents a RILNETWORKCODE.
 old-location: netvista\rilnetworkcode.htm
 tech.root: netvista
-ms.assetid: b0fa761c-8e28-4067-ae9e-d39e2853fb05
 ms.date: 02/16/2018
 keywords: ["RILNETWORKCODE structure"]
 ms.keywords: "*LPRILNETWORKCODE, RILNETWORKCODE, RILNETWORKCODE structure [Network Drivers Starting with Windows Vista], netvista.rilnetworkcode, rilapitypes/RILNETWORKCODE"
@@ -41,6 +40,7 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILNETWORKCODE
+ - LPRILNETWORKCODE
 ---
 
 # RILNETWORKCODE structure (ntddrilapitypes.h)
@@ -102,3 +102,4 @@ struct RILNETWORKCODE {
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/cellular/dn946511(v=vs.85)">Cellular COM structures</a>
+

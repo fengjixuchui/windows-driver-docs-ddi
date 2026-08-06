@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_SetSystemSelectionPrefs_V1
 title: RIL_SetSystemSelectionPrefs_V1 function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_SetSystemSelectionPrefs_V1 function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_setsystemselectionprefs_v1.htm
 tech.root: netvista
-ms.assetid: 736ba738-eb28-471c-bf65-236217f5aa11
 ms.date: 05/02/2018
 keywords: ["RIL_SetSystemSelectionPrefs_V1 function"]
 ms.keywords: RIL_SetSystemSelectionPrefs_V1, RIL_SetSystemSelectionPrefs_V1 method [Network Drivers Starting with Windows Vista], netvista.ril_setsystemselectionprefs_v1, rilapi/RIL_SetSystemSelectionPrefs_V1

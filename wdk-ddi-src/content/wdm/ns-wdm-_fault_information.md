@@ -2,8 +2,8 @@
 UID: NS:wdm._FAULT_INFORMATION
 title: _FAULT_INFORMATION (wdm.h)
 description: Contains information to set the fault report on a device.
-ms.assetid: 26ccbf2c-be6b-4c8c-8bd1-57977f7b4263
 ms.date: 10/19/2018
+tech.root: devtest
 keywords: ["FAULT_INFORMATION structure"]
 ms.keywords: _FAULT_INFORMATION, *PFAULT_INFORMATION, FAULT_INFORMATION,
 req.header: wdm.h
@@ -35,6 +35,8 @@ api_location:
  - wdm.h
 api_name:
  - _FAULT_INFORMATION
+ - PFAULT_INFORMATION
+ - FAULT_INFORMATION
 ---
 
 # _FAULT_INFORMATION structure
@@ -50,9 +52,13 @@ Contains information to set the fault report on a device. This structure is used
 
 A [**FAULT_INFORMATION_ARCH**](ne-wdm-_fault_information_arch.md)-type value that indicates the system architecture.
 
+### -field IsStage1
+
 ### -field Arm64
 
 A [**FAULT_INFORMATION_ARM64**](ns-wdm-_fault_information_arm64.md) structure that contains fault information on an ARM64 system.
+
+### -field X64
 
 ## -remarks
 

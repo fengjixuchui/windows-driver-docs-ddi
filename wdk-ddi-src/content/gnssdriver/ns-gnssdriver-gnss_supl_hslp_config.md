@@ -1,11 +1,9 @@
 ---
-UID: NS:gnssdriver.__unnamed_struct_40
+UID: NS:gnssdriver.GNSS_SUPL_HSLP_CONFIG
 title: GNSS_SUPL_HSLP_CONFIG (gnssdriver.h)
-description: This structure contains SUPL H-SLP configuration information.
-old-location: gnss\gnss_supl_hslp_config.htm
+description: The GNSS_SUPL_HSLP_CONFIG structure contains SUPL H-SLP configuration information.
 tech.root: gnss
-ms.assetid: 08CCC4A8-2D85-436D-B18E-77C91A24F59C
-ms.date: 02/15/2018
+ms.date: 06/20/2022
 keywords: ["GNSS_SUPL_HSLP_CONFIG structure"]
 ms.keywords: "*PGNSS_SUPL_HSLP_CONFIG, GNSS_SUPL_HSLP_CONFIG, GNSS_SUPL_HSLP_CONFIG structure [Sensor Devices], PGNSS_SUPL_HSLP_CONFIG, PGNSS_SUPL_HSLP_CONFIG structure pointer [Sensor Devices], gnss.gnss_supl_hslp_config, gnssdriver/GNSS_SUPL_HSLP_CONFIG, gnssdriver/PGNSS_SUPL_HSLP_CONFIG"
 req.header: gnssdriver.h
@@ -40,15 +38,13 @@ api_type:
 api_location:
  - gnssdriver.h
 api_name:
+ - PGNSS_SUPL_HSLP_CONFIG
  - GNSS_SUPL_HSLP_CONFIG
 ---
 
-# GNSS_SUPL_HSLP_CONFIG structure
-
-
 ## -description
 
-This structure contains SUPL H-SLP configuration information.
+The **GNSS_SUPL_HSLP_CONFIG** structure contains SUPL H-SLP configuration information.
 
 ## -struct-fields
 
@@ -62,7 +58,11 @@ Version number.
 
 ### -field SuplHslp
 
+This is the SUPL server address with TCP port. The server address will be a FQDN as indicated in the OMA SUPL specs.
+
 ### -field SuplHslpFromImsi
+
+This is the SUPL server address as derived from IMSI.
 
 ### -field Reserved
 
@@ -70,22 +70,5 @@ Reserved for future use.
 
 ### -field Unused
 
- 
-
-
-
-
-#### - SuplHslpFromImsi[MAX_SERVER_URL_NAME]
-
-This is the SUPL server address as derived from IMSI.
-
-
-#### - SuplHslp[MAX_SERVER_URL_NAME]
-
-This is the SUPL server address with TCP port. The server address will be a FQDN as indicated in the OMA SUPL specs.
-
-
-#### - Unused[512]
-
-Padding buffer.
+Padding buffer reserved for future use.
 

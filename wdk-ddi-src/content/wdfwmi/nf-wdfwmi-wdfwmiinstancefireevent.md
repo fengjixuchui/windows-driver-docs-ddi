@@ -4,7 +4,6 @@ title: WdfWmiInstanceFireEvent function (wdfwmi.h)
 description: The WdfWmiInstanceFireEvent method sends a WMI event to WMI clients that have registered to receive event notification.
 old-location: wdf\wdfwmiinstancefireevent.htm
 tech.root: wdf
-ms.assetid: 7bef79ab-78d6-47b6-a3f4-d9733ffcb53d
 ms.date: 02/26/2018
 keywords: ["WdfWmiInstanceFireEvent function"]
 ms.keywords: DFWMIRef_1062330c-9a9b-4bd3-a039-e1373c07ceee.xml, WdfWmiInstanceFireEvent, WdfWmiInstanceFireEvent method, kmdf.wdfwmiinstancefireevent, wdf.wdfwmiinstancefireevent, wdfwmi/WdfWmiInstanceFireEvent
@@ -53,19 +52,19 @@ The <b>WdfWmiInstanceFireEvent</b> method sends a WMI event to WMI clients that 
 
 ## -parameters
 
-### -param WmiInstance 
+### -param WmiInstance [in]
 
-[in]
+
 A handle to a WMI instance object that the driver obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfwmi/nf-wdfwmi-wdfwmiinstancecreate">WdfWmiInstanceCreate</a>.
 
-### -param EventDataSize 
+### -param EventDataSize [in, optional]
 
-[in, optional]
+
 The size, in bytes, of the event data that <i>EventData</i> points to.
 
-### -param EventData 
+### -param EventData [in, optional]
 
-[in, optional]
+
 A pointer to the event data, or <b>NULL</b> if there is no event data.
 
 ## -returns

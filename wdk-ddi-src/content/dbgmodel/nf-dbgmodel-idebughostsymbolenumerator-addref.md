@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostSymbolEnumerator.AddRef
 title: IDebugHostSymbolEnumerator::AddRef (dbgmodel.h)
-description: Increments the reference count for an interface on an object. This method should be called for every new copy of a pointer to an interface on an object.
-ms.assetid: ecb389b7-66ca-49fa-bc98-587a3a3fd94b
+description: "The IDebugHostSymbolEnumerator::AddRef method increments the reference count for an interface on an object."
 ms.date: 09/21/2018
 keywords: ["IDebugHostSymbolEnumerator::AddRef"]
 ms.keywords: IDebugHostSymbolEnumerator::AddRef, AddRef, IDebugHostSymbolEnumerator.AddRef, IDebugHostSymbolEnumerator::AddRef, IDebugHostSymbolEnumerator.AddRef
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostSymbolEnumerator.AddRef
+ - IDebugHostSymbolEnumerator::AddRef
 ---
 
 # IDebugHostSymbolEnumerator::AddRef
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IDebugHostSymbolEnumerator interface](nn-dbgmodel-idebughostsymbolenumerator.md)
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_GetRadioStateGroups
 title: RIL_GetRadioStateGroups function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_GetRadioStateGroups function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_getradiostategroups.htm
 tech.root: netvista
-ms.assetid: 7143e3a1-f383-4ea8-8e97-d9d7a9089db4
 ms.date: 05/02/2018
 keywords: ["RIL_GetRadioStateGroups function"]
 ms.keywords: RIL_GetRadioStateGroups, RIL_GetRadioStateGroups method [Network Drivers Starting with Windows Vista], netvista.ril_getradiostategroups, rilapi/RIL_GetRadioStateGroups

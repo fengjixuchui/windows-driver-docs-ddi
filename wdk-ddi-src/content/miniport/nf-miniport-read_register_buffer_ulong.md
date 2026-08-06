@@ -1,10 +1,9 @@
 ---
 UID: NF:miniport.READ_REGISTER_BUFFER_ULONG
 title: READ_REGISTER_BUFFER_ULONG function (miniport.h)
-description: The READ_REGISTER_BUFFER_ULONG routine reads a number of ULONG values from the specified register address into a buffer.
+description: The READ_REGISTER_BUFFER_ULONG function (miniport.h) reads a number of ULONG values from the specified register address into a buffer.
 old-location: kernel\read_register_buffer_ulong.htm
 tech.root: kernel
-ms.assetid: a80d361e-81d3-483c-8ddb-d5e5a69c8ba4
 ms.date: 04/30/2018
 keywords: ["READ_REGISTER_BUFFER_ULONG function"]
 ms.keywords: READ_REGISTER_BUFFER_ULONG, READ_REGISTER_BUFFER_ULONG routine [Kernel-Mode Driver Architecture], k103_8349c675-ef3b-441a-b11c-730cc43ee09a.xml, kernel.read_register_buffer_ulong, wdm/READ_REGISTER_BUFFER_ULONG
@@ -50,19 +49,19 @@ The <b>READ_REGISTER_BUFFER_ULONG</b> routine reads a number of ULONG values fro
 
 ## -parameters
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 Pointer to the register, which must be a mapped range in memory space.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 Pointer to a buffer into which an array of ULONG values is read.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of ULONG values to be read into the buffer.
 
 ## -remarks

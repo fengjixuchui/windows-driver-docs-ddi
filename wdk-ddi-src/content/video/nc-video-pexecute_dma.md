@@ -4,7 +4,6 @@ title: PEXECUTE_DMA (video.h)
 description: HwVidExecuteDma is a miniport driver-implemented callback routine that is responsible for retrieving physical address/length pairs from a scatter/gather list, and for programming the hardware to start the actual DMA transfer.
 old-location: display\hwvidexecutedma.htm
 tech.root: display
-ms.assetid: 262c4b9b-fdca-4899-a635-fb273bbf4cc8
 ms.date: 05/10/2018
 keywords: ["PEXECUTE_DMA callback function"]
 ms.keywords: HwVidExecuteDma, HwVidExecuteDma callback function [Display Devices], PEXECUTE_DMA, PEXECUTE_DMA callback, VideoMiniport_Functions_5819a796-9dfd-41fe-9158-6ec09ac14760.xml, display.hwvidexecutedma, video/HwVidExecuteDma
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - video.h
 api_name:
- - HwVidExecuteDma
+ - PEXECUTE_DMA
 ---
 
 # PEXECUTE_DMA callback function
@@ -95,3 +94,4 @@ The last task that the video port driver's <b>VideoPortStartDma</b> function per
 
 
 <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportstartdma">VideoPortStartDma</a>
+

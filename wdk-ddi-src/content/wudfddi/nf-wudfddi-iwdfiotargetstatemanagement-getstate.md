@@ -4,7 +4,6 @@ title: IWDFIoTargetStateManagement::GetState (wudfddi.h)
 description: The GetState method returns the current state of a local I/O target.
 old-location: wdf\iwdfiotargetstatemanagement_getstate.htm
 tech.root: wdf
-ms.assetid: f915294f-457f-4913-b4b0-e94e1806a06d
 ms.date: 02/26/2018
 keywords: ["IWDFIoTargetStateManagement::GetState"]
 ms.keywords: GetState, GetState method, GetState method,IWDFIoTargetStateManagement interface, IWDFIoTargetStateManagement interface,GetState method, IWDFIoTargetStateManagement.GetState, IWDFIoTargetStateManagement::GetState, UMDFIoTargetObjectRef_0a52ff77-9947-49a1-958a-ffe6e61ec169.xml, umdf.iwdfiotargetstatemanagement_getstate, wdf.iwdfiotargetstatemanagement_getstate, wudfddi/IWDFIoTargetStateManagement::GetState
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoTargetStateManagement.GetState
+ - IWDFIoTargetStateManagement::GetState
 ---
 
 # IWDFIoTargetStateManagement::GetState
@@ -78,7 +77,6 @@ The following code example determines whether a local I/O target is stopped.
 
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotargetstatemanagement">IWDFIoTargetStateManagement</a>
@@ -86,3 +84,4 @@ The following code example determines whether a local I/O target is stopped.
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfremotetarget-getstate">IWDFRemoteTarget::GetState</a>
+

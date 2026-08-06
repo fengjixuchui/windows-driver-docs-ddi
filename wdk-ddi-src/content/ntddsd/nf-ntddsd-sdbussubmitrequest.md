@@ -4,7 +4,6 @@ title: SdBusSubmitRequest function (ntddsd.h)
 description: The SdBusSubmitRequest routine sends a synchronous Secure Digital (SD) request to the bus driver.
 old-location: sd\sdbussubmitrequest.htm
 tech.root: SD
-ms.assetid: 8f794681-afa9-474b-a3b9-bc7c21c7c423
 ms.date: 02/15/2018
 keywords: ["SdBusSubmitRequest function"]
 ms.keywords: SD.sdbussubmitrequest, SdBusSubmitRequest, SdBusSubmitRequest function [Buses], ntddsd/SdBusSubmitRequest, sd-rtns_2709a5bb-0cc9-42b0-9fd1-2b8206a383d5.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <DISPATCH_LEVEL
+req.irql: < DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>SdBusSubmitRequest</b> routine sends a synchronous Secure Digital (SD) re
 
 ## -parameters
 
-### -param InterfaceContext 
+### -param InterfaceContext [in]
 
-[in]
+
 Contains the context information returned by the <a href="/windows-hardware/drivers/ddi/ntddsd/nf-ntddsd-sdbusopeninterface">SdBusOpenInterface</a> routine in the <b>Context</b> member of the <a href="/previous-versions/windows/hardware/drivers/ff537923(v=vs.85)">SDBUS_INTERFACE_STANDARD</a> structure.
 
 ### -param Packet

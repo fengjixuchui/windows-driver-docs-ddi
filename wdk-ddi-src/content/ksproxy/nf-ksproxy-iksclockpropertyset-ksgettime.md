@@ -4,7 +4,6 @@ title: IKsClockPropertySet::KsGetTime (ksproxy.h)
 description: The KsGetTime method retrieves the time of the underlying clock.
 old-location: stream\iksclockpropertyset_ksgettime.htm
 tech.root: stream
-ms.assetid: 0d22baeb-d08f-4554-9af4-dae9480a471a
 ms.date: 04/23/2018
 keywords: ["IKsClockPropertySet::KsGetTime"]
 ms.keywords: IKsClockPropertySet interface [Streaming Media Devices],KsGetTime method, IKsClockPropertySet.KsGetTime, IKsClockPropertySet::KsGetTime, KsGetTime, KsGetTime method [Streaming Media Devices], KsGetTime method [Streaming Media Devices],IKsClockPropertySet interface, ksproxy/IKsClockPropertySet::KsGetTime, ksproxy_056c73f0-b713-4f86-a38c-a3455e33b773.xml, stream.iksclockpropertyset_ksgettime
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ksproxy.h
 api_name:
- - IKsClockPropertySet.KsGetTime
+ - IKsClockPropertySet::KsGetTime
 ---
 
 # IKsClockPropertySet::KsGetTime
@@ -50,9 +49,9 @@ The <b>KsGetTime</b> method retrieves the time of the underlying clock.
 
 ## -parameters
 
-### -param Time 
+### -param Time [out]
 
-[out]
+
 Pointer to a variable that receives the current clock time.
 
 ## -returns
@@ -70,3 +69,4 @@ The proxy uses the <a href="/windows-hardware/drivers/stream/ksproperty-clock-ti
 
 
 <a href="/windows-hardware/drivers/stream/ksproperty-clock-time">KSPROPERTY_CLOCK_TIME</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NC:srb.PHW_STARTIO
 title: PHW_STARTIO (srb.h)
-description: The PHW_INITIALIZE routine prototype declares a routine that initializes the miniport driver after a reboot or power failure occurs.
+description: Learn how this routine prototype declares a routine that initializes the miniport driver after a reboot or power failure occurs.
 old-location: storage\phw_startio.htm
 tech.root: storage
-ms.assetid: 1b177ef5-2b58-425e-9b9a-428bbe15de69
 ms.date: 03/29/2018
 keywords: ["PHW_STARTIO callback"]
 ms.keywords: "(*PHW_STARTIO), (*PHW_STARTIO) callback function [Storage Devices], ide_minikr_16fd699a-4cb9-4741-9e50-3fa8177f49f2.xml, srb/(*PHW_STARTIO), storage.phw_startio"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product: Windows 10 or later.
 f1_keywords:
  - PHW_STARTIO
  - srb/PHW_STARTIO
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - srb.h
 api_name:
- - (*PHW_STARTIO)
+ - PHW_STARTIO
 ---
 
 # PHW_STARTIO callback
@@ -51,14 +49,14 @@ The PHW_INITIALIZE routine prototype declares a routine that initializes the min
 
 ## -parameters
 
-### -param DeviceExtension 
+### -param DeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's per-HBA storage area.
 
-### -param Srb 
+### -param Srb [in]
 
-[in]
+
 Pointer to the SCSI request block to be started.
 
 ## -returns
@@ -80,3 +78,4 @@ For more information about the miniport driver's start I/O routine that is used 
 
 
 <a href="/windows-hardware/drivers/ddi/storport/nc-storport-hw_startio">HwStorStartIo</a>
+

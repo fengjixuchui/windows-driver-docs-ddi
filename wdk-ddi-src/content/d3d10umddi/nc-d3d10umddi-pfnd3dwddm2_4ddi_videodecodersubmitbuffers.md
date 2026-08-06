@@ -1,8 +1,7 @@
 ---
 UID: NC:d3d10umddi.PFND3DWDDM2_4DDI_VIDEODECODERSUBMITBUFFERS
 title: PFND3DWDDM2_4DDI_VIDEODECODERSUBMITBUFFERS (d3d10umddi.h)
-description: Submits one or more video frame buffers for DirectX Video Acceleration (DXVA) decoding.
-ms.assetid: c5e55baf-a822-42ce-ac97-830873b75da0
+description: "The PFND3DWDDM2_4DDI_VIDEODECODERSUBMITBUFFERS callback function submits one or more video frame buffers for DirectX Video Acceleration (DXVA) decoding."
 ms.date: 10/19/2018
 keywords: ["PFND3DWDDM2_4DDI_VIDEODECODERSUBMITBUFFERS callback function"]
 req.header: d3d10umddi.h
@@ -35,8 +34,6 @@ api_location:
  - d3d10umddi.h
 api_name:
  - PFND3DWDDM2_4DDI_VIDEODECODERSUBMITBUFFERS
-product:
- - Windows
 ---
 
 # PFND3DWDDM2_4DDI_VIDEODECODERSUBMITBUFFERS callback function
@@ -48,21 +45,21 @@ Submits one or more video frame buffers for DirectX Video Acceleration (DXVA) de
 
 ## -parameters
 
-### -param hDevice
+### -param hDevice [in]
 
-[in] A handle to the display device (graphics context).
+A handle to the display device (graphics context).
 
-### -param hDecode
+### -param hDecode [in]
 
-[in] A handle to the video decoder object that was created through a call to the CreateVideoDecoder function.
+A handle to the video decoder object that was created through a call to the CreateVideoDecoder function.
 
-### -param BufferCount
+### -param BufferCount [in]
 
-[in] The number of buffers in the array that is referenced by the pBufferDesc parameter.
+The number of buffers in the array that is referenced by the pBufferDesc parameter.
 
-### -param pBufferDesc
+### -param pBufferDesc [in]
 
-[in] A pointer to an array of one or more D3DWDDM2_4DDI_VIDEO_DECODER_BUFFER_DESC structures. For more information, see the Remarks section.
+A pointer to an array of one or more D3DWDDM2_4DDI_VIDEO_DECODER_BUFFER_DESC structures. For more information, see the Remarks section.
 
 ## -returns
 

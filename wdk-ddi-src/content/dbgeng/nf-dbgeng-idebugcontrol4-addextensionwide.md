@@ -4,7 +4,6 @@ title: IDebugControl4::AddExtensionWide (dbgeng.h)
 description: The AddExtensionWide method loads an extension library into the debugger engine.
 old-location: debugger\addextensionwide.htm
 tech.root: debugger
-ms.assetid: 5c918f44-1ee7-4666-b83a-e13ce02e26db
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::AddExtensionWide"]
 ms.keywords: AddExtensionWide, AddExtensionWide method [Windows Debugging], AddExtensionWide method [Windows Debugging],IDebugControl4 interface, IDebugControl4 interface [Windows Debugging],AddExtensionWide method, IDebugControl4.AddExtensionWide, IDebugControl4::AddExtensionWide, dbgeng/IDebugControl4::AddExtensionWide, debugger.addextensionwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugControl4.AddExtensionWide
+ - IDebugControl4::AddExtensionWide
 ---
 
 # IDebugControl4::AddExtensionWide
@@ -50,19 +49,19 @@ The <b>AddExtensionWide</b>  method loads an extension library into the <a href=
 
 ## -parameters
 
-### -param Path 
+### -param Path [in]
 
-[in]
+
 Specifies the fully qualified path and file name of the extension library to load.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Set to zero.
 
-### -param Handle 
+### -param Handle [out]
 
-[out]
+
 Receives the handle of the loaded extension library.
 
 ## -returns
@@ -107,3 +106,4 @@ For more information on using extension libraries, see <a href="/windows-hardwar
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-removeextension">RemoveExtension</a>
+

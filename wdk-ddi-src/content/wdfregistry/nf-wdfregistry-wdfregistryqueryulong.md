@@ -4,7 +4,6 @@ title: WdfRegistryQueryULong function (wdfregistry.h)
 description: The WdfRegistryQueryULong method retrieves the unsigned long word (REG_DWORD) data that is currently assigned to a specified registry value and copies the data to a specified location.
 old-location: wdf\wdfregistryqueryulong.htm
 tech.root: wdf
-ms.assetid: 54583406-9c60-4622-a78d-085c35ce7593
 ms.date: 02/26/2018
 keywords: ["WdfRegistryQueryULong function"]
 ms.keywords: DFRegKeyObjectRef_537593c8-1f9c-4392-9228-6a0e5d89a964.xml, WdfRegistryQueryULong, WdfRegistryQueryULong method, kmdf.wdfregistryqueryulong, wdf.wdfregistryqueryulong, wdfregistry/WdfRegistryQueryULong
@@ -55,19 +54,19 @@ The <b>WdfRegistryQueryULong</b> method retrieves the unsigned long word (REG_DW
 
 ## -parameters
 
-### -param Key 
+### -param Key [in]
 
-[in]
+
 A handle to a registry-key object that represents an opened registry key.
 
-### -param ValueName 
+### -param ValueName [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a name for the registry value.
 
-### -param Value 
+### -param Value [out]
 
-[out]
+
 A pointer to a location that receives the data that is assigned to the registry value that <i>ValueName</i> specifies.
 
 ## -returns

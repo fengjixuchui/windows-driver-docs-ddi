@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILUICCSERVICEINFO
 title: RILUICCSERVICEINFO (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILUICCSERVICEINFO structure for internal use only."
 old-location: netvista\riluiccserviceinfo.htm
 tech.root: netvista
-ms.assetid: 80abf9a7-0a34-4fc2-ab5a-afcb678b7003
 ms.date: 05/02/2018
 keywords: ["RILUICCSERVICEINFO structure"]
 ms.keywords: "*LPRILUICCSERVICEINFO, RILUICCSERVICEINFO, RILUICCSERVICEINFO structure [Network Drivers Starting with Windows Vista], netvista.riluiccserviceinfo, ntddrilapitypes/RILUICCSERVICEINFO"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILUICCSERVICEINFO
+ - LPRILUICCSERVICEINFO
 ---
 
 # RILUICCSERVICEINFO structure (rilapitypes.h)

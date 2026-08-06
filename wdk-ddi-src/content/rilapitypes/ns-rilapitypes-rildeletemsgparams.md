@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILDELETEMSGPARAMS
 title: RILDELETEMSGPARAMS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILDELETEMSGPARAMS structure for internal use only."
 old-location: netvista\rildeletemsgparams.htm
 tech.root: netvista
-ms.assetid: e87104d2-96e4-4840-8609-8a75247a039a
 ms.date: 05/02/2018
 keywords: ["RILDELETEMSGPARAMS structure"]
 ms.keywords: "*LPRILDELETEMSGPARAMS, RILDELETEMSGPARAMS, RILDELETEMSGPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rildeletemsgparams, ntddrilapitypes/RILDELETEMSGPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILDELETEMSGPARAMS
+ - LPRILDELETEMSGPARAMS
 ---
 
 # RILDELETEMSGPARAMS structure (rilapitypes.h)

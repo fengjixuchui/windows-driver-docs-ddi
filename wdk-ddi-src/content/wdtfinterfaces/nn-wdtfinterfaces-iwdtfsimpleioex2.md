@@ -4,7 +4,6 @@ title: IWDTFSimpleIOEx2 (wdtfinterfaces.h)
 description: Defines operations for a simple synchronous I/O functionality test.
 old-location: dtf\iwdtfsimpleioex2.htm
 tech.root: dtf
-ms.assetid: a916e6b1-692c-47e9-83cc-3aeae80fb624
 ms.date: 04/04/2018
 keywords: ["IWDTFSimpleIOEx2 interface"]
 ms.keywords: IWDTFSimpleIOEx2, IWDTFSimpleIOEx2 interface [Windows Device Testing Framework], IWDTFSimpleIOEx2 interface [Windows Device Testing Framework],described, Microsoft.WDTF.IWDTFSimpleIOEx2, dtf.iwdtfsimpleioex2, wdtfinterfaces/IWDTFSimpleIOEx2
@@ -50,9 +49,9 @@ Defines operations for a simple synchronous I/O functionality test.
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDTFSimpleIOEx2</b> interface inherits from <b>IWDTFAction2</b>. <b>IWDTFSimpleIOEx2</b> also has these types of members:
+The <b>IWDTFSimpleIOEx2</b> interface inherits from <b>IWDTFAction2</b>. <b>IWDTFSimpleIOEx2</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li><a href="/">Methods</a></li>
 </ul>
 
 ## -remarks

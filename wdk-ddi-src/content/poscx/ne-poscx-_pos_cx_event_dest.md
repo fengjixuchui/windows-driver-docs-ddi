@@ -4,7 +4,6 @@ title: _POS_CX_EVENT_DEST (poscx.h)
 description: The POS_CX_EVENT_DEST defines which applications receive this event.
 old-location: pos\pos_cx_event_dest.htm
 tech.root: pos
-ms.assetid: 63D16B9E-82CC-4171-B80A-D0FA6F2066E2
 ms.date: 02/23/2018
 keywords: ["POS_CX_EVENT_DEST enumeration"]
 ms.keywords: POS_CX_EVENT_DEST, POS_CX_EVENT_DEST enumeration, POS_CX_EVENT_DEST_ALL, POS_CX_EVENT_DEST_DEVICE_OWNER, POS_CX_EVENT_DEST_INVALID, _POS_CX_EVENT_DEST, pos.pos_cx_event_dest, poscx/POS_CX_EVENT_DEST, poscx/POS_CX_EVENT_DEST_ALL, poscx/POS_CX_EVENT_DEST_DEVICE_OWNER, poscx/POS_CX_EVENT_DEST_INVALID
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: POS_CX_EVENT_DEST
-req.product: Windows 10 or later.
 f1_keywords:
  - _POS_CX_EVENT_DEST
  - poscx/_POS_CX_EVENT_DEST
@@ -41,6 +39,7 @@ api_type:
 api_location:
  - poscx.h
 api_name:
+ - _POS_CX_EVENT_DEST
  - POS_CX_EVENT_DEST
 ---
 

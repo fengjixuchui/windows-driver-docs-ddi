@@ -1,10 +1,9 @@
 ---
 UID: NS:miniport._CM_MCA_POS_DATA
 title: _CM_MCA_POS_DATA (miniport.h)
-description: The CM_MCA_POS_DATA structure is obsolete. It defines IBM-compatible MCA POS configuration information for a slot.
+description: The _CM_MCA_POS_DATA structure (miniport.h) is obsolete. It defines IBM-compatible MCA POS configuration information for a slot.
 old-location: kernel\cm_mca_pos_data.htm
 tech.root: kernel
-ms.assetid: 2b14eef2-dac4-48c8-b2a2-96bf085171aa
 ms.date: 04/30/2018
 keywords: ["CM_MCA_POS_DATA structure"]
 ms.keywords: "*PCM_MCA_POS_DATA, CM_MCA_POS_DATA, CM_MCA_POS_DATA structure [Kernel-Mode Driver Architecture], PCM_MCA_POS_DATA, PCM_MCA_POS_DATA structure pointer [Kernel-Mode Driver Architecture], _CM_MCA_POS_DATA, kernel.cm_mca_pos_data, kstruct_a_a0edcef2-abf9-4660-8f40-76a2f8ff1193.xml, wdm/CM_MCA_POS_DATA, wdm/PCM_MCA_POS_DATA"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _CM_MCA_POS_DATA
+ - PCM_MCA_POS_DATA
  - CM_MCA_POS_DATA
 ---
 
@@ -75,3 +76,4 @@ This structure is used by the obsolete <a href="/previous-versions/windows/hardw
 
 
 <a href="/previous-versions/windows/hardware/drivers/ff546644(v=vs.85)">HalGetBusDataByOffset</a>
+

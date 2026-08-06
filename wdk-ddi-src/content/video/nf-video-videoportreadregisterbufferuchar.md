@@ -4,7 +4,6 @@ title: VideoPortReadRegisterBufferUchar function (video.h)
 description: The VideoPortReadRegisterBufferUchar function reads a number of bytes from a mapped device memory range and writes them into a buffer.
 old-location: display\videoportreadregisterbufferuchar.htm
 tech.root: display
-ms.assetid: 2058374a-b74d-49e2-9c42-5972b11af677
 ms.date: 05/10/2018
 keywords: ["VideoPortReadRegisterBufferUchar function"]
 ms.keywords: VideoPortReadRegisterBufferUchar, VideoPortReadRegisterBufferUchar function [Display Devices], VideoPort_Functions_9b0878ff-64ba-4d19-81aa-c5932ffa1953.xml, display.videoportreadregisterbufferuchar, video/VideoPortReadRegisterBufferUchar
@@ -54,9 +53,9 @@ The <b>VideoPortReadRegisterBufferUchar</b> function reads a number of bytes fro
 
 Pointer to the register. The given <i>Register</i> must be in a mapped memory-space range returned by <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportgetdevicebase">VideoPortGetDeviceBase</a>.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 Pointer to a buffer into which the UCHAR values are written.
 
 ### -param Count

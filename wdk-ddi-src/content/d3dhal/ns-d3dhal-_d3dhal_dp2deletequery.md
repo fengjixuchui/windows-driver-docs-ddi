@@ -1,10 +1,9 @@
 ---
 UID: NS:d3dhal._D3DHAL_DP2DELETEQUERY
 title: _D3DHAL_DP2DELETEQUERY (d3dhal.h)
-description: DirectX 9.0 and later versions only.
+description: The D3DHAL_DP2DELETEQUERY structure is used by the D3dDrawPrimitives2 callback function to release resources for queries.
 old-location: display\d3dhal_dp2deletequery.htm
 tech.root: display
-ms.assetid: c125e21f-20be-42c1-ba24-b13f2475f02e
 ms.date: 05/10/2018
 keywords: ["D3DHAL_DP2DELETEQUERY structure"]
 ms.keywords: "*LPD3DHAL_DP2DELETEQUERY, D3DHAL_DP2DELETEQUERY, D3DHAL_DP2DELETEQUERY structure [Display Devices], LPD3DHAL_DP2DELETEQUERY, LPD3DHAL_DP2DELETEQUERY structure pointer [Display Devices], _D3DHAL_DP2DELETEQUERY, d3dhal/D3DHAL_DP2DELETEQUERY, d3dhal/LPD3DHAL_DP2DELETEQUERY, d3dstrct_3194de0d-21ee-4f44-9be3-2f2ebe6b06e2.xml, display.d3dhal_dp2deletequery"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dhal.h
 api_name:
+ - _D3DHAL_DP2DELETEQUERY
  - D3DHAL_DP2DELETEQUERY
 ---
 
@@ -78,3 +78,4 @@ D3DDP2OP_DELETEQUERY
 
 
 <a href="/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb">D3dDrawPrimitives2</a>
+

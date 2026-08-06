@@ -4,7 +4,6 @@ title: EVT_UCX_CONTROLLER_RESET (ucxcontroller.h)
 description: The client driver's implementation that UCX calls to reset the controller.
 old-location: buses\evt_ucx_controller_reset.htm
 tech.root: usbref
-ms.assetid: 8c01d677-5ce4-44f6-8342-2152e851de87
 ms.date: 05/07/2018
 keywords: ["EVT_UCX_CONTROLLER_RESET callback function"]
 ms.keywords: EVT_UCX_CONTROLLER_RESET, EVT_UCX_CONTROLLER_RESET callback, EvtUcxControllerReset, EvtUcxControllerReset callback function [Buses], PEVT_UCX_CONTROLLER_RESET, PEVT_UCX_CONTROLLER_RESET callback function pointer [Buses], buses.evt_ucx_controller_reset, ucxcontroller/EvtUcxControllerReset
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ucxcontroller.h
 api_name:
- - PEVT_UCX_CONTROLLER_RESET
+ - EVT_UCX_CONTROLLER_RESET
 ---
 
 # EVT_UCX_CONTROLLER_RESET callback function
@@ -50,9 +49,9 @@ The client driver's implementation that UCX calls to reset the controller.
 
 ## -parameters
 
-### -param UcxController 
+### -param UcxController [in]
 
-[in]
+
  A handle to the UCX controller that the client driver received in a previous call to  the <a href="/previous-versions/windows/hardware/drivers/mt188033(v=vs.85)">UcxControllerCreate</a> method.
 
 ## -remarks
@@ -94,7 +93,6 @@ Controller_EvtControllerReset(
 }
 ```
 
-
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/drivers/mt188033(v=vs.85)">UcxControllerCreate</a>
@@ -106,3 +104,4 @@ Controller_EvtControllerReset(
 
 
 <a href="/windows-hardware/drivers/ddi/ucxcontroller/nf-ucxcontroller-ucxcontrollerresetcomplete">UcxControllerResetComplete</a>
+

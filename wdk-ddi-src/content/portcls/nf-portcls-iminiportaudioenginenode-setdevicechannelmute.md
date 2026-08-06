@@ -4,7 +4,6 @@ title: IMiniportAudioEngineNode::SetDeviceChannelMute (portcls.h)
 description: Sets the state of the Mute node for the audio device channel.
 old-location: audio\iminiportaudioenginenode_setdevicechannelmute.htm
 tech.root: audio
-ms.assetid: 272B83D4-AACE-419D-9DD7-A1AE1C8A931A
 ms.date: 05/08/2018
 keywords: ["IMiniportAudioEngineNode::SetDeviceChannelMute"]
 ms.keywords: IMiniportAudioEngineNode interface [Audio Devices],SetDeviceChannelMute method, IMiniportAudioEngineNode.SetDeviceChannelMute, IMiniportAudioEngineNode::SetDeviceChannelMute, SetDeviceChannelMute, SetDeviceChannelMute method [Audio Devices], SetDeviceChannelMute method [Audio Devices],IMiniportAudioEngineNode interface, audio.iminiportaudioenginenode_setdevicechannelmute, portcls/IMiniportAudioEngineNode::SetDeviceChannelMute
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IMiniportAudioEngineNode.SetDeviceChannelMute
+ - IMiniportAudioEngineNode::SetDeviceChannelMute
 ---
 
 # IMiniportAudioEngineNode::SetDeviceChannelMute
@@ -50,19 +49,19 @@ Sets the state of the Mute node for the audio device channel.
 
 ## -parameters
 
-### -param ulNodeId 
+### -param ulNodeId [in]
 
-[in]
+
 The ID for the node that represents the audio device.
 
-### -param ulChannel 
+### -param ulChannel [in]
 
-[in]
+
 The audio device channel.
 
-### -param bMute 
+### -param bMute [in]
 
-[in]
+
 The state to which the Mute node for the audio device channel will be set.
 
 ## -returns
@@ -74,3 +73,4 @@ code.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportaudioenginenode">IMiniportAudioEngineNode</a>
+

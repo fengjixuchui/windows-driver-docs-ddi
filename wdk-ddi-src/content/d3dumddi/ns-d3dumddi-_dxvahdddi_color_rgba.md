@@ -4,7 +4,6 @@ title: _DXVAHDDDI_COLOR_RGBA (d3dumddi.h)
 description: The DXVAHDDDI_COLOR_RGBA structure describes color in RGB terms.
 old-location: display\dxvahdddi_color_rgba.htm
 tech.root: display
-ms.assetid: 73779eb1-514e-4103-9af2-0dc0c86cb04e
 ms.date: 05/10/2018
 keywords: ["DXVAHDDDI_COLOR_RGBA structure"]
 ms.keywords: DXVA2_Structs_ecf8ab79-edb1-42c8-b873-39cc1f7a1ef8.xml, DXVAHDDDI_COLOR_RGBA, DXVAHDDDI_COLOR_RGBA structure [Display Devices], _DXVAHDDDI_COLOR_RGBA, d3dumddi/DXVAHDDDI_COLOR_RGBA, display.dxvahdddi_color_rgba
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVAHDDDI_COLOR_RGBA
  - DXVAHDDDI_COLOR_RGBA
 ---
 
@@ -52,21 +52,21 @@ The DXVAHDDDI_COLOR_RGBA structure describes color in RGB terms.
 
 ## -struct-fields
 
-### -field R
+### -field R [in]
 
-[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the red component of the RGB color.
+A FLOAT value in the 0.0 to 1.0 range that is used to describe the red component of the RGB color.
 
-### -field G
+### -field G [in]
 
-[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the green component of the RGB color.
+A FLOAT value in the 0.0 to 1.0 range that is used to describe the green component of the RGB color.
 
-### -field B
+### -field B [in]
 
-[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the blue component of the RGB color.
+A FLOAT value in the 0.0 to 1.0 range that is used to describe the blue component of the RGB color.
 
-### -field A
+### -field A [in]
 
-[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the alpha component (that is, the transparency level) of the RGB color.
+A FLOAT value in the 0.0 to 1.0 range that is used to describe the alpha component (that is, the transparency level) of the RGB color.
 
 ## -remarks
 
@@ -79,3 +79,4 @@ A DXVAHDDDI_COLOR_YCbCrA structure is specified in the <b>RGB</b> member of the 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvahdddi_color">DXVAHDDDI_COLOR</a>
+

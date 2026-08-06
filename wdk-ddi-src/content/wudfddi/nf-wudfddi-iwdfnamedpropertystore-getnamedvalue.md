@@ -4,7 +4,6 @@ title: IWDFNamedPropertyStore::GetNamedValue (wudfddi.h)
 description: The GetNamedValue method retrieves the value of a property.
 old-location: wdf\iwdfnamedpropertystore_getnamedvalue.htm
 tech.root: wdf
-ms.assetid: 9581e3af-f7f8-4365-8bb2-daedcb7a3280
 ms.date: 02/26/2018
 keywords: ["IWDFNamedPropertyStore::GetNamedValue"]
 ms.keywords: GetNamedValue, GetNamedValue method, GetNamedValue method,IWDFNamedPropertyStore interface, IWDFNamedPropertyStore interface,GetNamedValue method, IWDFNamedPropertyStore.GetNamedValue, IWDFNamedPropertyStore::GetNamedValue, UMDFPropertyStoreObjectRef_ba3dd45a-7045-4798-81c6-35cb1a743cc4.xml, umdf.iwdfnamedpropertystore_getnamedvalue, wdf.iwdfnamedpropertystore_getnamedvalue, wudfddi/IWDFNamedPropertyStore::GetNamedValue
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFNamedPropertyStore.GetNamedValue
+ - IWDFNamedPropertyStore::GetNamedValue
 ---
 
 # IWDFNamedPropertyStore::GetNamedValue
@@ -52,14 +51,14 @@ The <b>GetNamedValue</b> method retrieves the value of a property.
 
 ## -parameters
 
-### -param pszName 
+### -param pszName [in]
 
-[in]
+
 A pointer to a null-terminated string that contains the name of the property.
 
-### -param pv 
+### -param pv [out]
 
-[out]
+
 A pointer to a variable that receives the value for the property.
 
 ## -returns
@@ -70,7 +69,7 @@ A pointer to a variable that receives the value for the property.
 
 The <b>GetNamedValue</b> method allocates memory for a string in the <a href="/windows/win32/api/propidlbase/ns-propidlbase-propvariant">PROPVARIANT</a> structure pointed to by the <i>pv</i> parameter.   The caller must then free this memory by calling the <a href="/windows/win32/api/propidl/nf-propidl-propvariantclear">PropVariantClear</a> function, as shown in the following snippet:
 
-<pre class="syntax" xml:space="preserve"><code>hr = pPropStore->GetNamedValue(L"Host", &val);
+<pre class="syntax"><code>hr = pPropStore->GetNamedValue(L"Host", &val);
 ...
 PropVariantClear(&val);</code></pre>
 If the caller does not free the memory, a memory leak may result.
@@ -188,3 +187,4 @@ For more information, see <a href="/windows-hardware/drivers/wdf/using-the-regis
 
 
 <a href="/windows/win32/api/propidl/nf-propidl-propvariantclear">PropVariantClear</a>
+

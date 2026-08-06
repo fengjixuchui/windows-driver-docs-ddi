@@ -4,7 +4,6 @@ title: _DXVA_COPPStatusData (dxva.h)
 description: The DXVA_COPPStatusData structure contains the status information returned from a query on a protected video session that is associated with a DirectX VA COPP device.
 old-location: display\dxva_coppstatusdata.htm
 tech.root: display
-ms.assetid: f459cfa7-9fda-4b46-9fc9-05bdc9e5c964
 ms.date: 05/10/2018
 keywords: ["DXVA_COPPStatusData structure"]
 ms.keywords: DXVA_COPPStatusData, DXVA_COPPStatusData structure [Display Devices], _DXVA_COPPStatusData, display.dxva_coppstatusdata, dxva/DXVA_COPPStatusData, dxvaref_76d7144b-c4a7-4530-bf35-be9b9955c9d6.xml
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - dxva.h
 api_name:
+ - _DXVA_COPPStatusData
  - DXVA_COPPStatusData
 ---
 
@@ -226,3 +226,4 @@ The display driver returns status information through the <i>pOutput</i> paramet
 
 
 <a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_coppstatusoutput">DXVA_COPPStatusOutput</a>
+

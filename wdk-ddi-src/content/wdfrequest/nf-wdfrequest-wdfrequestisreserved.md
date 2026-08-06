@@ -4,7 +4,6 @@ title: WdfRequestIsReserved function (wdfrequest.h)
 description: The WdfRequestIsReserved method determines whether a specified request object is one that the framework reserved to support guaranteed forward progress during low-memory situations.
 old-location: wdf\wdfrequestisreserved.htm
 tech.root: wdf
-ms.assetid: 8cbf75c4-d54c-45e0-9abb-bef8e76fb9fe
 ms.date: 02/26/2018
 keywords: ["WdfRequestIsReserved function"]
 ms.keywords: DFRequestObjectRef_286c4c9a-cbec-48f1-9d78-516cbaab2d45.xml, WdfRequestIsReserved, WdfRequestIsReserved method, kmdf.wdfrequestisreserved, wdf.wdfrequestisreserved, wdfrequest/WdfRequestIsReserved
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,9 +52,9 @@ The <b>WdfRequestIsReserved</b> method determines whether a specified request ob
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
 ## -returns

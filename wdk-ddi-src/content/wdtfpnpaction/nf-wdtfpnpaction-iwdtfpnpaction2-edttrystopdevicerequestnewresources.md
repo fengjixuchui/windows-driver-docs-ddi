@@ -4,7 +4,6 @@ title: IWDTFPNPAction2::EDTTryStopDeviceRequestNewResources (wdtfpnpaction.h)
 description: Attempts to send an IRP_MN_STOP_DEVICE event to the target device and assign new resources to the target device.
 old-location: dtf\iwdtfpnpaction2_edttrystopdevicerequestnewresources.htm
 tech.root: dtf
-ms.assetid: 19d3a72c-f7a5-483c-9fd1-5853c0a3e906
 ms.date: 04/04/2018
 keywords: ["IWDTFPNPAction2::EDTTryStopDeviceRequestNewResources"]
 ms.keywords: EDTTryStopDeviceRequestNewResources, EDTTryStopDeviceRequestNewResources method [Windows Device Testing Framework], EDTTryStopDeviceRequestNewResources method [Windows Device Testing Framework],IWDTFPNPAction2 interface, IWDTFPNPAction2 interface [Windows Device Testing Framework],EDTTryStopDeviceRequestNewResources method, IWDTFPNPAction2.EDTTryStopDeviceRequestNewResources, IWDTFPNPAction2::EDTTryStopDeviceRequestNewResources, Microsoft.WDTF.IWDTFPNPAction2.EDTTryStopDeviceRequestNewResources, Microsoft::WDTF::IWDTFPNPAction2::EDTTryStopDeviceRequestNewResources, dtf.iwdtfpnpaction2_edttrystopdevicerequestnewresources, wdtfpnpaction/IWDTFPNPAction2::EDTTryStopDeviceRequestNewResources
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTFDriverPNPAction.Interop.dll
 api_name:
- - IWDTFPNPAction2.EDTTryStopDeviceRequestNewResources
+ - IWDTFPNPAction2::EDTTryStopDeviceRequestNewResources
 ---
 
 # IWDTFPNPAction2::EDTTryStopDeviceRequestNewResources
@@ -51,9 +50,9 @@ assign new resources to the target device.
 
 ## -parameters
 
-### -param pbSuccess 
+### -param pbSuccess [out, retval]
 
-[out, retval]
+
 True if the operation succeeds; otherwise, false.
 
 ## -returns
@@ -84,3 +83,4 @@ run this method on the parent USB controller instead.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtfpnpaction/nn-wdtfpnpaction-iwdtfpnpaction2">IWDTFPNPAction2</a>
+

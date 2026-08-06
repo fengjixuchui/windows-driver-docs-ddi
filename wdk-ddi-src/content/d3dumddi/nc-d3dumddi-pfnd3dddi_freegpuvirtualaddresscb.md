@@ -4,7 +4,6 @@ title: PFND3DDDI_FREEGPUVIRTUALADDRESSCB (d3dumddi.h)
 description: pfnFreeGpuVirtualAddressCb releases a range of graphics processing unit (GPU) virtual addresses that was previously reserved or mapped.
 old-location: display\pfnfreegpuvirtualaddresscb.htm
 tech.root: display
-ms.assetid: 92F2A43C-699B-4580-8A56-472D837A76E2
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_FREEGPUVIRTUALADDRESSCB callback function"]
 ms.keywords: PFND3DDDI_FREEGPUVIRTUALADDRESSCB, PFND3DDDI_FREEGPUVIRTUALADDRESSCB callback, d3dumddi/pfnFreeGpuVirtualAddressCb, display.pfnfreegpuvirtualaddresscb, pfnFreeGpuVirtualAddressCb, pfnFreeGpuVirtualAddressCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnFreeGpuVirtualAddressCb
-product:
- - Windows
+ - PFND3DDDI_FREEGPUVIRTUALADDRESSCB
 ---
 
 # PFND3DDDI_FREEGPUVIRTUALADDRESSCB callback function
@@ -64,7 +61,7 @@ The user mode driver  must ensure that no allocation, which is used for current 
 
 A handle to the display device.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -89,3 +86,4 @@ If this callback function succeeds, it returns **S_OK**. Otherwise, it returns a
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb">pfnUpdateGpuVirtualAddressCb</a>
+

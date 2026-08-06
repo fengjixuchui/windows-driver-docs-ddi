@@ -4,7 +4,6 @@ title: IOCTL_MPIO_PASS_THROUGH_PATH_EX (ntddscsi.h)
 description: The IOCTL_MPIO_PASS_THROUGH_PATH_EX control code request is the extended version of the IOCTL_MPIO_PASS_THROUGH_PATH request. This request provides support for bidirectional data transfers and allows a command data block (CDB) > 16 bytes.
 old-location: storage\ioctl_mpio_pass_through_path_ex.htm
 tech.root: storage
-ms.assetid: 2E7DB48A-FFCF-4EEC-98FA-D206E33D6603
 ms.date: 03/29/2018
 keywords: ["IOCTL_MPIO_PASS_THROUGH_PATH_EX IOCTL"]
 ms.keywords: IOCTL_MPIO_PASS_THROUGH_PATH_EX, IOCTL_MPIO_PASS_THROUGH_PATH_EX control, IOCTL_MPIO_PASS_THROUGH_PATH_EX control code [Storage Devices], ntddscsi/IOCTL_MPIO_PASS_THROUGH_PATH_EX, storage.ioctl_mpio_pass_through_path_ex
@@ -49,7 +48,7 @@ api_name:
 The <b>IOCTL_MPIO_PASS_THROUGH_PATH_EX</b>
      control code request is the extended version of the <a href="/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_mpio_pass_through_path">IOCTL_MPIO_PASS_THROUGH_PATH</a> request. This request provides support for bidirectional data transfers and allows a command data block (CDB) > 16 bytes.
 
-This I/O control code allows an application or kernel driver to send a SCSI command to a designated real LUN. The following restrictions apply to the use of this I/O control code:
+This I/O control code allows an application or kernel driver to send an SCSI command to a designated real LUN. The following restrictions apply to the use of this I/O control code:
 <ul>
 <li>
 If a class driver for the pseudo LUN exists, the application must send the request to that class driver. Thus, an application can send this request directly to MPIO only if there is no class driver for the device.
@@ -64,7 +63,7 @@ Applications do not require administrative privileges to send a pass-through req
 
 </li>
 <li>
-The request comprises a SCSI pass-through request (in an embedded <a href="/windows-hardware/drivers/ddi/ntddscsi/ns-ntddscsi-_scsi_pass_through_ex">SCSI_PASS_THROUGH_EX</a> structure) as well as certain directives.
+The request comprises an SCSI pass-through request (in an embedded <a href="/windows-hardware/drivers/ddi/ntddscsi/ns-ntddscsi-_scsi_pass_through_ex">SCSI_PASS_THROUGH_EX</a> structure) as well as certain directives.
 
 </li>
 <li>
@@ -82,6 +81,8 @@ The request must specify the real LUN that is comprised by the pseudo LUN in ter
 </ul>
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

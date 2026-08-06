@@ -4,7 +4,6 @@ title: NDIS_PD_QUERY_COUNTER (ndis.h)
 description: The PacketDirect (PD) platform calls a PD-capable miniport driver's NdisPDQueryCounter function to query the current values stored in a counter object.
 old-location: netvista\ndispdquerycounter.htm
 tech.root: netvista
-ms.assetid: C4860A43-2C53-4967-81A8-41FFF5CD2A5E
 ms.date: 05/02/2018
 keywords: ["NDIS_PD_QUERY_COUNTER callback function"]
 ms.keywords: NDIS_PD_QUERY_COUNTER, NDIS_PD_QUERY_COUNTER callback, NdisPDQueryCounter, NdisPDQueryCounter callback function [Network Drivers Starting with Windows Vista], ndis/NdisPDQueryCounter, netvista.ndispdquerycounter
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - NdisPDQueryCounter
+ - NDIS_PD_QUERY_COUNTER
 ---
 
 # NDIS_PD_QUERY_COUNTER callback function
@@ -53,14 +52,14 @@ The PacketDirect (PD) platform calls a PD-capable miniport driver's
 
 ## -parameters
 
-### -param CounterHandle 
+### -param CounterHandle [in]
 
-[in]
+
 A counter handle that the miniport driver allocated in its <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_pd_allocate_counter">NdisPDAllocateCounter</a> function.
 
-### -param CounterValue 
+### -param CounterValue [out]
 
-[out]
+
 The miniport returns a pointer to a <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_counter_value">NDIS_PD_COUNTER_VALUE</a> structure that contains the values stored in  the counter object.
 
 ## -returns
@@ -70,3 +69,4 @@ This callback function does not return a value.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_counter_value">NDIS_PD_COUNTER_VALUE</a>
+

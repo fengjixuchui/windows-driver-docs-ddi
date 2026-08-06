@@ -1,11 +1,10 @@
 ---
 UID: NF:fltkernel.FltGetStreamHandleContext
 title: FltGetStreamHandleContext function (fltkernel.h)
-description: The FltGetStreamHandleContext routine retrieves a context that was set for a stream handle by a given minifilter driver instance.
+description: Learn more about the FltGetStreamHandleContext function.
 old-location: ifsk\fltgetstreamhandlecontext.htm
 tech.root: ifsk
-ms.assetid: c6e7c0d8-8005-4a40-a13b-ee58feeabbf0
-ms.date: 04/16/2018
+ms.date: 04/25/2023
 keywords: ["FltGetStreamHandleContext function"]
 ms.keywords: FltApiRef_e_to_o_4a329c48-3a48-47bc-b998-3aaee454fbef.xml, FltGetStreamHandleContext, FltGetStreamHandleContext routine [Installable File System Drivers], fltkernel/FltGetStreamHandleContext, ifsk.fltgetstreamhandlecontext
 req.header: fltkernel.h
@@ -43,89 +42,55 @@ api_name:
 
 # FltGetStreamHandleContext function
 
-
 ## -description
 
-The <b>FltGetStreamHandleContext</b> routine retrieves a context that was set for a stream handle by a given minifilter driver instance.
+The **FltGetStreamHandleContext** routine retrieves a context that was set for a stream handle by a given minifilter driver instance.
 
 ## -parameters
 
-### -param Instance 
+### -param Instance [in]
 
-[in]
 Opaque instance pointer for the minifilter driver instance whose context is to be retrieved.
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
 Pointer to a file object for the stream handle.
 
-### -param Context 
+### -param Context [out]
 
-[out]
-Pointer to a caller-allocated variable that receives the address of the context.
+Pointer to a caller-allocated variable that receives the address of the context. This parameter can't be set to NULL.
 
 ## -returns
 
-<b>FltGetStreamHandleContext</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value, such as one of the following: 
+**FltGetStreamHandleContext** returns STATUS_SUCCESS when it successfully returns the requested context. Otherwise, it returns an appropriate NTSTATUS value such as one of the following:
 
-<table>
-<tr>
-<th>Return code</th>
-<th>Description</th>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>STATUS_NOT_FOUND</b></dt>
-</dl>
-</td>
-<td width="60%">
-No matching context was found. This is an error code. 
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>STATUS_NOT_SUPPORTED</b></dt>
-</dl>
-</td>
-<td width="60%">
-The file system does not support per-stream contexts for this file stream. This is an error code. 
-
-</td>
-</tr>
-</table>
+| Return code | Description |
+| ----------- | ----------- |
+| STATUS_NOT_FOUND | No matching context was found on this file at this time, so *FltMgr* set **Context** to NULL_CONTEXT. This is an error code. |
+| STATUS_NOT_SUPPORTED | The file system does not support per-stream contexts for this file stream. This is an error code. |
 
 ## -remarks
 
-<b>FltGetStreamHandleContext</b> retrieves a context that was set for a stream handle by a given minifilter driver. 
+For more information about contexts, see [About minifilter contexts](/windows-hardware/drivers/ifs/managing-contexts-in-a-minifilter-driver).
 
-<b>FltGetStreamHandleContext</b> increments the reference count on the context that the <i>Context </i>parameter points to. When this context pointer is no longer needed, the caller must decrement its reference count by calling <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltreleasecontext">FltReleaseContext</a>. Thus every successful call to <b>FltGetStreamHandleContext</b> must be matched by a subsequent call to <b>FltReleaseContext</b>. 
+**FltGetStreamHandleContext** retrieves a context that was set for a stream handle by a given minifilter driver.
 
-To set a context for a stream handle, call <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltsetstreamhandlecontext">FltSetStreamHandleContext</a>. 
+**FltGetStreamHandleContext** increments the reference count on the context that the *Context* parameter points to. When this context pointer is no longer needed, the caller must decrement its reference count by calling [**FltReleaseContext**](nf-fltkernel-fltreleasecontext.md). Thus every successful call to **FltGetStreamHandleContext** must be matched by a subsequent call to **FltReleaseContext**.
 
-To allocate a new context, call <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecontext">FltAllocateContext</a>. 
+To set a context for a stream handle, call [**FltSetStreamHandleContext**](nf-fltkernel-fltsetstreamhandlecontext.md)
 
-To delete a stream handle context, call <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdeletestreamhandlecontext">FltDeleteStreamHandleContext</a> or <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdeletecontext">FltDeleteContext</a>.
+To allocate a new context, call [**FltAllocateContext**](nf-fltkernel-fltallocatecontext.md).
+
+To delete a stream handle context, call [**FltDeleteStreamHandleContext**](nf-fltkernel-fltdeletestreamhandlecontext.md) or [**FltDeleteContext**](nf-fltkernel-fltdeletecontext.md).
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecontext">FltAllocateContext</a>
+[**FltAllocateContext**](nf-fltkernel-fltallocatecontext.md)
 
+[**FltDeleteContext**](nf-fltkernel-fltdeletecontext.md)
 
+[**FltDeleteStreamHandleContext**](nf-fltkernel-fltdeletestreamhandlecontext.md)
 
-<a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdeletecontext">FltDeleteContext</a>
+[**FltReleaseContext**](nf-fltkernel-fltreleasecontext.md)
 
-
-
-<a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltdeletestreamhandlecontext">FltDeleteStreamHandleContext</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltreleasecontext">FltReleaseContext</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltsetstreamhandlecontext">FltSetStreamHandleContext</a>
+[**FltSetStreamHandleContext**](nf-fltkernel-fltsetstreamhandlecontext.md)

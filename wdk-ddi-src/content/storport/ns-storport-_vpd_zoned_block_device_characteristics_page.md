@@ -1,10 +1,9 @@
 ---
 UID: NS:storport._VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
 title: _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE (storport.h)
-description: Note  This structure is for internal use only and should not be called from your code. .
+description: "Microsoft reserves the VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE structure for internal use only. Don't use the VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE structure in your code."
 old-location: storage\vpd_zoned_block_device_characteristics_page.htm
 tech.root: storage
-ms.assetid: 9b1f83fd-e367-4b0d-8f93-24f35d9a5fd8
 ms.date: 03/29/2018
 keywords: ["VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE structure"]
 ms.keywords: "*PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE structure pointer [Storage Devices], VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE structure [Storage Devices], _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, scsi/PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, scsi/VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, storage.vpd_zoned_block_device_characteristics_page"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - scsi.h
 api_name:
+ - _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
+ - PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
  - VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE
 ---
 

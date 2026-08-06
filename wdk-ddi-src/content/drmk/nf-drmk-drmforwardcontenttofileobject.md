@@ -4,7 +4,6 @@ title: DrmForwardContentToFileObject function (drmk.h)
 description: The DrmForwardContentToFileObject function is obsolete and is maintained only to support existing drivers.
 old-location: audio\drmforwardcontenttofileobject.htm
 tech.root: audio
-ms.assetid: 84d81ae3-708d-48ee-99c5-b79f085a9592
 ms.date: 05/08/2018
 keywords: ["DrmForwardContentToFileObject function"]
 ms.keywords: DrmForwardContentToFileObject, DrmForwardContentToFileObject function [Audio Devices], aud-prop2_f0deebf5-ef63-406b-a424-b084e775333c.xml, audio.drmforwardcontenttofileobject, drmk/DrmForwardContentToFileObject
@@ -51,14 +50,14 @@ The <code>DrmForwardContentToFileObject</code> function is obsolete and is maint
 
 ## -parameters
 
-### -param ContentId 
+### -param ContentId [in]
 
-[in]
+
 Specifies the DRM content ID. This parameter identifies a protected KS audio stream.
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to a file object that represents the KS audio pin to which the KS audio stream is sent.
 
 ## -returns

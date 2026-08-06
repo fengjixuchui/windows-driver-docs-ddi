@@ -4,7 +4,6 @@ title: PFND3DDDI_CONFIGUREAUTHENICATEDCHANNEL (d3dumddi.h)
 description: The ConfigureAuthenticatedChannel function sets state within an authenticated channel.
 old-location: display\configureauthenticatedchannel.htm
 tech.root: display
-ms.assetid: 95485e96-fa4f-4c88-b88b-97b79f507abd
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CONFIGUREAUTHENICATEDCHANNEL callback function"]
 ms.keywords: ConfigureAuthenticatedChannel, ConfigureAuthenticatedChannel callback function [Display Devices], PFND3DDDI_CONFIGUREAUTHENICATEDCHANNEL, PFND3DDDI_CONFIGUREAUTHENICATEDCHANNEL callback, UserModeDisplayDriver_Functions_183c7dec-91c3-4929-a86d-c648d1b59ceb.xml, d3dumddi/ConfigureAuthenticatedChannel, display.configureauthenticatedchannel
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - ConfigureAuthenticatedChannel
-product:
- - Windows
+ - PFND3DDDI_CONFIGUREAUTHENICATEDCHANNEL
 ---
 
 # PFND3DDDI_CONFIGUREAUTHENICATEDCHANNEL callback function
@@ -56,7 +53,7 @@ The <b>ConfigureAuthenticatedChannel</b> function sets state within an authentic
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -86,3 +83,4 @@ Except for those situations in which the application incorrectly specifies an ou
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_configureauthenicatedchannel">D3DDDIARG_CONFIGUREAUTHENTICATEDCHANNEL</a>
+

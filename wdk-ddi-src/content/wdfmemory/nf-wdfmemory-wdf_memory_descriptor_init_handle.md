@@ -4,7 +4,6 @@ title: WDF_MEMORY_DESCRIPTOR_INIT_HANDLE function (wdfmemory.h)
 description: The WDF_MEMORY_DESCRIPTOR_INIT_HANDLE function initializes a WDF_MEMORY_DESCRIPTOR structure so that it describes a specified framework memory object.
 old-location: wdf\wdf_memory_descriptor_init_handle.htm
 tech.root: wdf
-ms.assetid: e5449684-dd37-4d49-ae9f-372f295cecf8
 ms.date: 02/26/2018
 keywords: ["WDF_MEMORY_DESCRIPTOR_INIT_HANDLE function"]
 ms.keywords: DFMemoryObjectRef_1cec1e9e-7279-4278-a5c2-2eaaaa7a8074.xml, WDF_MEMORY_DESCRIPTOR_INIT_HANDLE, WDF_MEMORY_DESCRIPTOR_INIT_HANDLE function, kmdf.wdf_memory_descriptor_init_handle, wdf.wdf_memory_descriptor_init_handle, wdfmemory/WDF_MEMORY_DESCRIPTOR_INIT_HANDLE
@@ -52,19 +51,19 @@ The <b>WDF_MEMORY_DESCRIPTOR_INIT_HANDLE</b> function initializes a <a href="/wi
 
 ## -parameters
 
-### -param Descriptor 
+### -param Descriptor [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfmemory/ns-wdfmemory-_wdf_memory_descriptor">WDF_MEMORY_DESCRIPTOR</a> structure.
 
-### -param Memory 
+### -param Memory [in]
 
-[in]
+
 A handle to a framework memory object.
 
-### -param Offsets 
+### -param Offsets [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfmemory/ns-wdfmemory-_wdfmemory_offset">WDFMEMORY_OFFSET</a> structure. This parameter is optional and can be <b>NULL</b>.
 
 ## -remarks

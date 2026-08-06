@@ -4,7 +4,6 @@ title: FltApplyPriorityInfoThread function (fltkernel.h)
 description: The FltApplyPriorityInfoThread routine is used by a minifilter driver to apply priority information to a thread.
 old-location: ifsk\fltapplypriorityinfothread.htm
 tech.root: ifsk
-ms.assetid: 62fd46a8-ee34-4c61-8e87-7fbe1a4622be
 ms.date: 04/16/2018
 keywords: ["FltApplyPriorityInfoThread function"]
 ms.keywords: FltApiRef_a_to_d_446351ed-afa7-4548-8197-f9bf92d671e5.xml, FltApplyPriorityInfoThread, FltApplyPriorityInfoThread routine [Installable File System Drivers], fltkernel/FltApplyPriorityInfoThread, ifsk.fltapplypriorityinfothread
@@ -51,19 +50,19 @@ The <b>FltApplyPriorityInfoThread</b> routine is used by a minifilter driver to 
 
 ## -parameters
 
-### -param InputPriorityInfo 
+### -param InputPriorityInfo [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_io_priority_info">IO_PRIORITY_INFO</a> structure that is used to set the priority state of the given thread.  This IO_PRIORITY_INFO structure must have its members set by an appropriate routine - see the following Remarks section.  This parameter is required and cannot be <b>NULL</b>.
 
-### -param OutputPriorityInfo 
+### -param OutputPriorityInfo [out, optional]
 
-[out, optional]
+
 An optional pointer to an IO_PRIORITY_INFO structure used to receive the priority state of the thread before the <i>InputPriorityInfo</i> priority information is applied to the thread by <b>FltApplyPriorityInfoThread</b>.  This parameter is optional and can be <b>NULL</b>.
 
-### -param Thread 
+### -param Thread [in]
 
-[in]
+
 A pointer to the thread in which to apply the <i>InputPriorityInfo</i> priority information to.  This parameter is required and cannot be <b>NULL</b>.
 
 ## -returns

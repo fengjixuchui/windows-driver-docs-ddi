@@ -4,7 +4,6 @@ title: TapeClassAllocateSrbBuffer function (minitape.h)
 description: The TapeClassAllocateSrbBuffer routine allocates an Srb->DataBuffer.
 old-location: storage\tapeclassallocatesrbbuffer.htm
 tech.root: storage
-ms.assetid: f6762d9b-5a3d-49a3-b954-48e4e4a9eacb
 ms.date: 03/29/2018
 keywords: ["TapeClassAllocateSrbBuffer function"]
 ms.keywords: TapeClassAllocateSrbBuffer, TapeClassAllocateSrbBuffer routine [Storage Devices], minitape/TapeClassAllocateSrbBuffer, storage.tapeclassallocatesrbbuffer, tapeclas_77717175-fd25-4cbe-8baf-8c326a5ec152.xml
@@ -51,14 +50,14 @@ The <b>TapeClassAllocateSrbBuffer</b> routine allocates an <b>Srb->DataBuffer</b
 
 ## -parameters
 
-### -param Srb 
+### -param Srb [in, out]
 
-[in, out]
+
 Pointer to the SRB.
 
-### -param SrbBufferSize 
+### -param SrbBufferSize [in]
 
-[in]
+
 Specifies the size, in bytes, of the <b>DataBuffer</b> to be allocated.
 
 ## -returns

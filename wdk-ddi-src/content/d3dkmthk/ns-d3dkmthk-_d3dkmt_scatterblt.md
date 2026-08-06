@@ -1,16 +1,13 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_SCATTERBLT
-title: _D3DKMT_SCATTERBLT (d3dkmthk.h)
-description: Reserved for system use.
-ms.assetid: 29027f99-a81c-4621-b2a1-6d60be4c52d9
-ms.date: 10/19/2018
-keywords: ["D3DKMT_SCATTERBLT structure"]
-ms.keywords: _D3DKMT_SCATTERBLT, D3DKMT_SCATTERBLT,
+title: D3DKMT_SCATTERBLT (d3dkmthk.h)
+description: Learn more about the D3DKMT_SCATTERBLT structure.
+ms.date: 07/17/2024
 req.header: d3dkmthk.h
 req.include-header: 
 req.target-type: 
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
 req.kmdf-ver: 
 req.umdf-ver: 
 req.lib: 
@@ -35,16 +32,16 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_SCATTERBLT
+ - D3DKMT_SCATTERBLT
 dev_langs:
  - c++
 ---
 
-# _D3DKMT_SCATTERBLT structure
-
+# D3DKMT_SCATTERBLT structure
 
 ## -description
 
-Reserved for system use.
+The **D3DKMT_SCATTERBLT** structure is reserved for system use. Don't use it in your driver.
 
 ## -struct-fields
 
@@ -66,10 +63,8 @@ The source rectangle.
 
 ### -field DestinationOffset
 
- 
 The destination offset.
 
 ## -remarks
 
 ## -see-also
-

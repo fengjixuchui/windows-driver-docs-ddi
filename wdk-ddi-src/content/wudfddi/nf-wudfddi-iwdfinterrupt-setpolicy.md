@@ -4,7 +4,6 @@ title: IWDFInterrupt::SetPolicy (wudfddi.h)
 description: The SetPolicy method specifies the interrupt priority, processor affinity, and affinity policy for a specified interrupt.
 old-location: wdf\iwdfinterrupt_setpolicy.htm
 tech.root: wdf
-ms.assetid: EDBCBB37-41A4-4234-BE8C-4C8739BC287B
 ms.date: 02/26/2018
 keywords: ["IWDFInterrupt::SetPolicy"]
 ms.keywords: IWDFInterrupt interface,SetPolicy method, IWDFInterrupt.SetPolicy, IWDFInterrupt::SetPolicy, SetPolicy, SetPolicy method, SetPolicy method,IWDFInterrupt interface, umdf.iwdfinterrupt_setpolicy, wdf.iwdfinterrupt_setpolicy, wudfddi/IWDFInterrupt::SetPolicy
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFInterrupt.SetPolicy
+ - IWDFInterrupt::SetPolicy
 ---
 
 # IWDFInterrupt::SetPolicy
@@ -52,19 +51,19 @@ The <b>SetPolicy</b> method specifies the interrupt priority, processor affinity
 
 ## -parameters
 
-### -param Policy 
+### -param Policy [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wudfinterrupt/ne-wudfinterrupt-_wdf_interrupt_policy">WDF_INTERRUPT_POLICY</a>-typed enumerator that specifies a processor affinity policy for the interrupt.
 
-### -param Priority 
+### -param Priority [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfinterrupt/ne-wdfinterrupt-_wdf_interrupt_priority">WDF_INTERRUPT_PRIORITY</a>-typed enumerator that specifies a priority for the interrupt.
 
-### -param TargetProcessorSet 
+### -param TargetProcessorSet [in]
 
-[in]
+
 A [**KAFFINITY**](/windows-hardware/drivers/kernel/interrupt-affinity-and-priority#about-kaffinity)-typed value that specifies a processor affinity for the interrupt, if the <i>Policy</i> parameter is set to <b>WdfIrqPolicySpecifiedProcessors</b>.
 
 ## -remarks
@@ -99,7 +98,6 @@ pIWdfInterrupt->SetPolicy(
 
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfinterrupt">IWDFInterrupt</a>
@@ -115,3 +113,4 @@ pIWdfInterrupt->SetPolicy(
 
 
 <a href="/windows-hardware/drivers/ddi/wdfinterrupt/ne-wdfinterrupt-_wdf_interrupt_priority">WDF_INTERRUPT_PRIORITY</a>
+

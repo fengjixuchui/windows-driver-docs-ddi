@@ -4,7 +4,6 @@ title: IWDFDevice2 (wudfddi.h)
 description: Drivers obtain the IWDFDevice2 interface by calling IWDFDevice::QueryInterface.
 old-location: wdf\iwdfdevice2.htm
 tech.root: wdf
-ms.assetid: f4d3d2cf-8877-4071-8e75-f971803beca4
 ms.date: 02/26/2018
 keywords: ["IWDFDevice2 interface"]
 ms.keywords: IWDFDevice2, IWDFDevice2 interface, IWDFDevice2 interface,described, UMDFDeviceObjectRef_0b02d642-234d-4f98-b6d1-5557aa74eb14.xml, umdf.iwdfdevice2, wdf.iwdfdevice2, wudfddi/IWDFDevice2
@@ -52,7 +51,7 @@ Drivers obtain the <b>IWDFDevice2</b> interface by calling <b>IWDFDevice::QueryI
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFDevice2</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice">IWDFDevice</a>. <b>IWDFDevice2</b> also has these types of members:
+The <b>IWDFDevice2</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice">IWDFDevice</a>. <b>IWDFDevice2</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>

@@ -4,7 +4,6 @@ title: IOCTL_CDROM_EXCLUSIVE_ACCESS (ntddcdrm.h)
 description: The IOCTL_CDROM_EXCLUSIVE_ACCESS request instructs the CD-ROM class driver to:Report the access state of a CD-ROM device.
 old-location: storage\ioctl_cdrom_exclusive_access.htm
 tech.root: storage
-ms.assetid: 449936d8-9257-4044-a38f-e68d8e8d5c68
 ms.date: 03/29/2018
 keywords: ["IOCTL_CDROM_EXCLUSIVE_ACCESS IOCTL"]
 ms.keywords: IOCTL_CDROM_EXCLUSIVE_ACCESS, IOCTL_CDROM_EXCLUSIVE_ACCESS control, IOCTL_CDROM_EXCLUSIVE_ACCESS control code [Storage Devices], k307_d22cebb2-93c2-4eb8-9c2f-6c6c559ee020.xml, ntddcdrm/IOCTL_CDROM_EXCLUSIVE_ACCESS, storage.ioctl_cdrom_exclusive_access
@@ -63,6 +62,8 @@ Unlock a CD-ROM device for exclusive access.
 A valid FileObject handle must exist in order for this IOCTL to succeed. The FileObject handle protects the system from unexpected application termination or accidental acquisition of an exclusive access lock without subsequent release of the exclusive access lock. A valid FileObject handle is necessary because when an application closes, the CD-ROM class driver will receive CLEANUP and CLOSE I/O Request Packets (IRPs), which it can use to automatically release an exclusive access lock obtained by that handle. This simple method protects against the majority of accidental releases of exclusive access. Any methods used to avoid this functionality may reduce the safety and effectiveness of the exclusive access locking method.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

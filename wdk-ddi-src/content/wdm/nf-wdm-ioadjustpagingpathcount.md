@@ -4,7 +4,6 @@ title: IoAdjustPagingPathCount macro (wdm.h)
 description: The IoAdjustPagingPathCount routine increments or decrements a caller-supplied page-file counter as an atomic operation.
 old-location: kernel\ioadjustpagingpathcount.htm
 tech.root: kernel
-ms.assetid: be353d10-1d8a-4fea-a415-e1729184e451
 ms.date: 04/30/2018
 keywords: ["IoAdjustPagingPathCount macro"]
 ms.keywords: IoAdjustPagingPathCount, IoAdjustPagingPathCount routine [Kernel-Mode Driver Architecture], k104_f52acd6d-f3f6-43c2-a339-3060a12a6298.xml, kernel.ioadjustpagingpathcount, wdm/IoAdjustPagingPathCount
@@ -50,14 +49,14 @@ The <b>IoAdjustPagingPathCount</b> routine increments or decrements a caller-sup
 
 ## -parameters
 
-### -param _count_
+### -param _count_ [in]
 
-[in]
+
 Pointer to a caller-supplied variable that contains a counter. A driver typically stores a page-file counter in the device extension for the device.
 
-### -param _paging_
+### -param _paging_ [in]
 
-[in]
+
 
 Specifies whether the counter is to be incremented or decremented. A value of <b>TRUE</b> specifies an increment operation.
 

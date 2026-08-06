@@ -4,7 +4,6 @@ title: PVIDEO_WRITE_CLOCK_LINE (video.h)
 description: WriteClockLine sets the I2C serial clock line to high or low.
 old-location: display\writeclockline.htm
 tech.root: display
-ms.assetid: 4dfd6223-420e-4087-b5bd-8277575321f7
 ms.date: 05/10/2018
 keywords: ["PVIDEO_WRITE_CLOCK_LINE callback function"]
 ms.keywords: PVIDEO_WRITE_CLOCK_LINE, PVIDEO_WRITE_CLOCK_LINE callback, VideoMiniport_Functions_7d36df35-ac09-4a82-af0c-47a733617d9a.xml, WriteClockLine, WriteClockLine callback function [Display Devices], display.writeclockline, video/WriteClockLine
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - video.h
 api_name:
- - WriteClockLine
+ - PVIDEO_WRITE_CLOCK_LINE
 ---
 
 # PVIDEO_WRITE_CLOCK_LINE callback function
@@ -85,3 +84,4 @@ Supplies a value that specifies whether to set the serial clock line to high or 
 
 
 <a href="/windows-hardware/drivers/ddi/video/nc-video-pvideo_write_data_line">WriteDataLine</a>
+

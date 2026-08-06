@@ -4,7 +4,6 @@ title: KsStreamPointerGetIrp function (ks.h)
 description: The KsStreamPointerGetIrp function returns the IRP associated with the frame that is referenced by the given stream pointer.
 old-location: stream\ksstreampointergetirp.htm
 tech.root: stream
-ms.assetid: 3ed4ed2f-66be-4429-b2d6-2d9d3f9bcf3e
 ms.date: 04/23/2018
 keywords: ["KsStreamPointerGetIrp function"]
 ms.keywords: KsStreamPointerGetIrp, KsStreamPointerGetIrp function [Streaming Media Devices], avfunc_57ecd1af-c967-473c-b475-1d91bc42f2eb.xml, ks/KsStreamPointerGetIrp, stream.ksstreampointergetirp
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ks.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,19 +50,19 @@ The<b> KsStreamPointerGetIrp </b>function returns the IRP associated with the fr
 
 ## -parameters
 
-### -param StreamPointer 
+### -param StreamPointer [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksstream_pointer">KSSTREAM_POINTER</a> structure that references the frame for which the associated IRP is returned.
 
-### -param FirstFrameInIrp 
+### -param FirstFrameInIrp [out, optional]
 
-[out, optional]
+
 A pointer to a caller-supplied BOOLEAN value set to <b>TRUE</b> on return if the frame referenced by <i>StreamPointer</i> is the first frame in the returned IRP and <b>FALSE</b> if not. If <b>NULL</b>, AVStream does not test this condition.
 
-### -param LastFrameInIrp 
+### -param LastFrameInIrp [out, optional]
 
-[out, optional]
+
 A pointer to a caller-supplied BOOLEAN value set to <b>TRUE</b> if the frame referenced by the stream pointer is the last frame in the returned IRP and <b>FALSE</b> if not. If <b>NULL</b>, AVStream does not test this condition.
 
 ## -returns

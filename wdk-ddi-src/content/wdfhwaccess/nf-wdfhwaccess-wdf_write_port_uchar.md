@@ -4,7 +4,6 @@ title: WDF_WRITE_PORT_UCHAR function (wdfhwaccess.h)
 description: The WDF_WRITE_PORT_UCHAR function writes a byte to the specified port address.
 old-location: wdf\wdf_write_port_uchar.htm
 tech.root: wdf
-ms.assetid: F7F40415-87E9-4870-8B10-83009159543E
 ms.date: 02/26/2018
 keywords: ["WDF_WRITE_PORT_UCHAR function"]
 ms.keywords: WDF_WRITE_PORT_UCHAR, WDF_WRITE_PORT_UCHAR function, wdf.wdf_write_port_uchar, wdfhwaccess/WDF_WRITE_PORT_UCHAR
@@ -52,18 +51,18 @@ The <b>WDF_WRITE_PORT_UCHAR</b> function writes a byte to the specified port add
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 A pointer to the port, which must be a mapped memory range in I/O space.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies a byte to be written to the port.
 

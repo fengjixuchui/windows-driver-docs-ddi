@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_CHECKMONITORPOWERSTATE
 title: _D3DKMT_CHECKMONITORPOWERSTATE (d3dkmthk.h)
 description: The D3DKMT_CHECKMONITORPOWERSTATE structure describes the connection to the monitor for which to check the power state.
 old-location: display\d3dkmt_checkmonitorpowerstate.htm
-ms.assetid: aa7cee9a-5051-4ebc-be7c-ac9ac91ba631
 ms.date: 05/10/2018
 keywords: ["D3DKMT_CHECKMONITORPOWERSTATE structure"]
 ms.keywords: D3DKMT_CHECKMONITORPOWERSTATE, D3DKMT_CHECKMONITORPOWERSTATE structure [Display Devices], OpenGL_Structs_2c4ec2cb-c35a-4447-8e35-dc8e4964e8b2.xml, _D3DKMT_CHECKMONITORPOWERSTATE, d3dkmthk/D3DKMT_CHECKMONITORPOWERSTATE, display.d3dkmt_checkmonitorpowerstate
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_CHECKMONITORPOWERSTATE
  - D3DKMT_CHECKMONITORPOWERSTATE
 ---
 
@@ -52,14 +52,15 @@ The D3DKMT_CHECKMONITORPOWERSTATE structure describes the connection to the moni
 
 ## -struct-fields
 
-### -field hAdapter
+### -field hAdapter [in]
 
-[in] A handle to the graphics adapter.
+A handle to the graphics adapter.
 
-### -field VidPnSourceId
+### -field VidPnSourceId [in]
 
-[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the monitor is connected to.
+The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the monitor is connected to.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtcheckmonitorpowerstate">D3DKMTCheckMonitorPowerState</a>
+

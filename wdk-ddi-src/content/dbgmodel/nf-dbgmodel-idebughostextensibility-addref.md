@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostExtensibility.AddRef
 title: IDebugHostExtensibility::AddRef (dbgmodel.h)
-description: Increments the reference count for an interface on an object. This method should be called for every new copy of a pointer to an interface on an object.
-ms.assetid: f60be701-5952-46ae-bdf8-361fdd76202a
+description: "The IDebugHostExtensibility::AddRef method increments the reference count for an interface on an object."
 ms.date: 09/21/2018
 keywords: ["IDebugHostExtensibility::AddRef"]
 ms.keywords: IDebugHostExtensibility::AddRef, AddRef, IDebugHostExtensibility.AddRef, IDebugHostExtensibility::AddRef, IDebugHostExtensibility.AddRef
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostExtensibility.AddRef
+ - IDebugHostExtensibility::AddRef
 ---
 
 # IDebugHostExtensibility::AddRef
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IDebugHostExtensibility interface](nn-dbgmodel-idebughostextensibility.md)
+

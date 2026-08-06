@@ -4,14 +4,13 @@ title: DXGKDDI_DPC_ROUTINE (dispmprt.h)
 description: The DxgkDdiDpcRoutine function is called back at IRQL DISPATCH_LEVEL after the display miniport driver calls DxgkCbQueueDpc.
 old-location: display\dxgkddidpcroutine.htm
 tech.root: display
-ms.assetid: 2767906a-f084-4ccc-b24f-ba7d66c96477
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_DPC_ROUTINE callback function"]
 ms.keywords: DXGKDDI_DPC_ROUTINE, DXGKDDI_DPC_ROUTINE callback, DmFunctions_12213354-74a5-40a5-a061-fa47d5a8cb03.xml, DxgkDdiDpcRoutine, DxgkDdiDpcRoutine callback function [Display Devices], display.dxgkddidpcroutine, dispmprt/DxgkDdiDpcRoutine
 req.header: dispmprt.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
- - DxgkDdiDpcRoutine
+ - DXGKDDI_DPC_ROUTINE
 ---
 
 # DXGKDDI_DPC_ROUTINE callback function
@@ -50,9 +49,9 @@ The <i>DxgkDdiDpcRoutine</i> function is called back at IRQL DISPATCH_LEVEL afte
 
 ## -parameters
 
-### -param MiniportDeviceContext 
+### -param MiniportDeviceContext [in]
 
-[in]
+
 A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem.
 
 ## -remarks
@@ -64,3 +63,4 @@ If the display miniport driver is supporting several display adapters, the <i>Dx
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_interrupt_routine">DxgkDdiInterruptRoutine</a>
+

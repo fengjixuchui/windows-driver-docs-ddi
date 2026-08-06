@@ -4,7 +4,6 @@ title: RxCreateNetFcb function (fcb.h)
 description: RxCreateNetFCB allocates, initializes, and inserts a new FCB structure into the in-memory data structures for a V_NET_ROOT that this FCB is being opened on. The structure allocated has space for a SRV_OPEN and an FOBX structure.
 old-location: ifsk\rxcreatenetfcb.htm
 tech.root: ifsk
-ms.assetid: 8be20f25-d72d-4c4d-be05-abb38cdd492d
 ms.date: 04/16/2018
 keywords: ["RxCreateNetFcb function"]
 ms.keywords: RxCreateNetFCB, RxCreateNetFcb, RxCreateNetFcb function [Installable File System Drivers], fcb/RxCreateNetFcb, ifsk.rxcreatenetfcb, rxref_d5f0cde4-daba-475d-9a63-b56047cc24e2.xml
@@ -50,24 +49,24 @@ api_name:
 
 ## -parameters
 
-### -param RxContext 
+### -param RxContext [in]
 
-[in]
+
 A pointer to the RX_CONTEXT structure describing a create operation.
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 A pointer to the IRP encapsulated by this RX_CONTEXT structure.
 
-### -param VNetRoot 
+### -param VNetRoot [in]
 
-[in]
+
 A pointer to the V_NET_ROOT structure that this FCB is being opened on.
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 The name of the FCB. The V_NET_ROOT may contain a name prefix that is to be prepended here.
 
 ## -returns

@@ -4,7 +4,6 @@ title: UDECX_USB_DEVICE_PLUG_IN_OPTIONS_INIT function (udecxusbdevice.h)
 description: Initializes a UDECX_USB_DEVICE_PLUG_IN_OPTIONS structure.
 old-location: buses\udecx_usb_device_plug_in_options_init.htm
 tech.root: usbref
-ms.assetid: 3188E2EE-E011-476D-9DDC-1DF61ECF9413
 ms.date: 05/07/2018
 keywords: ["UDECX_USB_DEVICE_PLUG_IN_OPTIONS_INIT function"]
 ms.keywords: UDECX_USB_DEVICE_PLUG_IN_OPTIONS_INIT, UDECX_USB_DEVICE_PLUG_IN_OPTIONS_INIT function [Buses], buses.udecx_usb_device_plug_in_options_init, udecxusbdevice/UDECX_USB_DEVICE_PLUG_IN_OPTIONS_INIT
@@ -51,9 +50,9 @@ Initializes a <a href="/windows-hardware/drivers/ddi/udecxusbdevice/ns-udecxusbd
 
 ## -parameters
 
-### -param Options 
+### -param Options [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/udecxusbdevice/ns-udecxusbdevice-_udecx_usb_device_plug_in_options">UDECX_USB_DEVICE_PLUG_IN_OPTIONS</a> structure to initialize.
 
 ## -remarks

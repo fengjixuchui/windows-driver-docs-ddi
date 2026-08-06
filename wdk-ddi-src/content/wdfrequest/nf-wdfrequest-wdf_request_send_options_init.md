@@ -4,7 +4,6 @@ title: WDF_REQUEST_SEND_OPTIONS_INIT function (wdfrequest.h)
 description: The WDF_REQUEST_SEND_OPTIONS_INIT function initializes a driver's WDF_REQUEST_SEND_OPTIONS structure.
 old-location: wdf\wdf_request_send_options_init.htm
 tech.root: wdf
-ms.assetid: 65e57147-f8a1-4b9b-b856-51f89bcba149
 ms.date: 02/26/2018
 keywords: ["WDF_REQUEST_SEND_OPTIONS_INIT function"]
 ms.keywords: DFRequestObjectRef_9a31e96a-4cb1-43ea-b429-591f820838d8.xml, WDF_REQUEST_SEND_OPTIONS_INIT, WDF_REQUEST_SEND_OPTIONS_INIT function, kmdf.wdf_request_send_options_init, wdf.wdf_request_send_options_init, wdfrequest/WDF_REQUEST_SEND_OPTIONS_INIT
@@ -52,14 +51,14 @@ The <b>WDF_REQUEST_SEND_OPTIONS_INIT</b> function initializes a driver's <a href
 
 ## -parameters
 
-### -param Options 
+### -param Options [out]
 
-[out]
+
 A pointer to a caller-supplied <a href="/windows-hardware/drivers/ddi/wdfrequest/ns-wdfrequest-_wdf_request_send_options">WDF_REQUEST_SEND_OPTIONS</a> structure.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A bitwise OR of <a href="/windows-hardware/drivers/ddi/wdfrequest/ne-wdfrequest-_wdf_request_send_options_flags">WDF_REQUEST_SEND_OPTIONS_FLAGS</a>-typed flags.
 
 ## -remarks

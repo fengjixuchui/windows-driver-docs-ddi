@@ -3,7 +3,6 @@ UID: NE:wwan._WWAN_SAR_TRANSMISSION_STATUS
 title: _WWAN_SAR_TRANSMISSION_STATUS (wwan.h)
 description: The WWAN_SAR_TRANSMISSION_STATUS enumeration describes whether a mobile broadband (MBB) modem has transmit (Tx) traffic during its hysteresis timer.
 tech.root: netvista
-ms.assetid: c671215d-f05a-48bc-a001-80c4a4fc0121
 ms.date: 08/20/2018
 keywords: ["WWAN_SAR_TRANSMISSION_STATUS enumeration"]
 ms.keywords: _WWAN_SAR_TRANSMISSION_STATUS, WWAN_SAR_TRANSMISSION_STATUS, *PWWAN_SAR_TRANSMISSION_STATUS,
@@ -34,6 +33,8 @@ api_location:
  - wwan.h
 api_name:
  - _WWAN_SAR_TRANSMISSION_STATUS
+ - PWWAN_SAR_TRANSMISSION_STATUS
+ - WWAN_SAR_TRANSMISSION_STATUS
 ---
 
 # _WWAN_SAR_TRANSMISSION_STATUS enumeration
@@ -64,3 +65,4 @@ This enumeration is used in the [**WWAN_SAR_TRANSMISSION_STATUS_INFO**](ns-wwan-
 [OID_WWAN_SAR_TRANSMISSION_STATUS](/windows-hardware/drivers/network/oid-wwan-sar-transmission-status)
 
 [**WWAN_SAR_TRANSMISSION_STATUS_INFO**](ns-wwan-_wwan_sar_transmission_status_info.md)
+

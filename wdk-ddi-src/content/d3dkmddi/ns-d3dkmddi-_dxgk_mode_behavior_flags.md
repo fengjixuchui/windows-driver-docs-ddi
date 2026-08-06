@@ -2,7 +2,6 @@
 UID: NS:d3dkmddi._DXGK_MODE_BEHAVIOR_FLAGS
 title: DXGK_MODE_BEHAVIOR_FLAGS (d3dkmddi.h)
 description: The high-level mode and setting behaviors which the OS may request.
-ms.assetid: 309de6f3-d699-475b-a667-9d16cdf779d9
 ms.date: 10/14/2019
 keywords: ["DXGK_MODE_BEHAVIOR_FLAGS structure"]
 ms.keywords: _DXGK_MODE_BEHAVIOR_FLAGS, DXGK_MODE_BEHAVIOR_FLAGS,
@@ -34,15 +33,17 @@ api_location:
  - d3dkmddi.h
 api_name:
  - _DXGK_MODE_BEHAVIOR_FLAGS
-product:
- - Windows
+ - DXGK_MODE_BEHAVIOR_FLAGS
 ---
 
 # DXGK_MODE_BEHAVIOR_FLAGS structure
 
+
 ## -description
 
 The high-level mode and setting behaviors which the OS may request. The same union is used in different fields to describe the input request to the driver and the output results from the driver.
+
+## -struct-fields
 
 ### -field PrioritizeHDR
 
@@ -73,3 +74,4 @@ The following table describes how the driver should set the value of **Colorimet
 ## -see-also
 
 [DXGKARG_CONTROLMODEBEHAVIOR](ns-d3dkmddi-_dxgkarg_controlmodebehavior.md)
+

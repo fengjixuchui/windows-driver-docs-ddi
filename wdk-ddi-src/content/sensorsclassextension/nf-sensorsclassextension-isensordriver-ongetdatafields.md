@@ -4,7 +4,6 @@ title: ISensorDriver::OnGetDataFields (sensorsclassextension.h)
 description: The ISensorDriver::OnGetDataFields method retrieves current sensor data.
 old-location: sensors\isensordriver_ongetdatafields.htm
 tech.root: sensors
-ms.assetid: a9233a0f-ac80-46be-9abe-7b87d25736f9
 ms.date: 05/03/2018
 keywords: ["ISensorDriver::OnGetDataFields"]
 ms.keywords: ISensorDriver interface [Sensor Devices],OnGetDataFields method, ISensorDriver.OnGetDataFields, ISensorDriver::OnGetDataFields, OnGetDataFields, OnGetDataFields method [Sensor Devices], OnGetDataFields method [Sensor Devices],ISensorDriver interface, sensors.isensordriver_ongetdatafields, sensorsclassextension/ISensorDriver::OnGetDataFields
@@ -39,7 +38,7 @@ api_location:
  - SensorsClassExtension.lib
  - SensorsClassExtension.dll
 api_name:
- - OnGetDataFields
+ - ISensorDriver::OnGetDataFields
 ---
 
 # ISensorDriver::OnGetDataFields
@@ -82,7 +81,7 @@ Data fields contain sensor-generated data, as opposed to properties, which descr
 
 Each <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues">IPortableDeviceValues</a> object returned by this method must contain a time stamp, as described in <a href="/windows-hardware/drivers/sensors/sensor-category-all">SENSOR_CATEGORY_ALL</a>. 
 
-The sensor class extension is responsibile for freeing any <b>PROPVARIANT</b> structures returned by this method.
+The sensor class extension is responsible for freeing any <b>PROPVARIANT</b> structures returned by this method.
 
 The sensor class extension calls this method only for sensors for which the user has granted permission through Control Panel.
 
@@ -93,3 +92,4 @@ The sensor class extension calls this method only for sensors for which the user
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/sensorsclassextension/nn-sensorsclassextension-isensordriver">ISensorDriver</a>
+

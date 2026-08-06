@@ -4,7 +4,6 @@ title: ScsiPortReadPortUlong function (srb.h)
 description: The ScsiPortReadPortUlong routine reads a ULONG value from the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
 old-location: storage\scsiportreadportulong.htm
 tech.root: storage
-ms.assetid: 2b45d62f-1e0c-4445-a8ad-e8d263f7d43c
 ms.date: 03/29/2018
 keywords: ["ScsiPortReadPortUlong function"]
 ms.keywords: ScsiPortReadPortUlong, ScsiPortReadPortUlong routine [Storage Devices], scsiprt_af6cc9e1-eaa8-4c05-a695-ed54690d0f3b.xml, srb/ScsiPortReadPortUlong, storage.scsiportreadportulong
@@ -52,9 +51,9 @@ The <b>ScsiPortReadPortUlong</b> routine reads a ULONG value from the HBA.
 
 ## -parameters
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Pointer to the I/O port. The given <i>Port</i> must be in a mapped I/O-space range returned by <b>ScsiPortGetDeviceBase</b>.
 
 ## -returns

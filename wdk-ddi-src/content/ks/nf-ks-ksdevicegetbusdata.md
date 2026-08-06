@@ -4,7 +4,6 @@ title: KsDeviceGetBusData function (ks.h)
 description: The KsDeviceGetBusData function reads data from the bus where the given AVStream device resides.
 old-location: stream\ksdevicegetbusdata.htm
 tech.root: stream
-ms.assetid: 40971ff3-6fd3-480b-aba9-7f572d6e1ce2
 ms.date: 04/23/2018
 keywords: ["KsDeviceGetBusData function"]
 ms.keywords: KsDeviceGetBusData, KsDeviceGetBusData function [Streaming Media Devices], avfunc_3106cd50-9e8c-407c-bcb0-c5e9c86d8dc7.xml, ks/KsDeviceGetBusData, stream.ksdevicegetbusdata
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ks.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section)
+req.irql: PASSIVE_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,29 +50,29 @@ The<b> KsDeviceGetBusData</b> function reads data from the bus where the given A
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice">KSDEVICE</a> structure representing the given AVStream device for which data from the bus should be read.
 
-### -param DataType 
+### -param DataType [in]
 
-[in]
+
 This parameter indicates the type of bus data to be read. Zero corresponds to configuration space. For further information, see the discussion of <b>WhichSpace</b> in the reference page for <a href="/windows-hardware/drivers/kernel/irp-mn-read-config">IRP_MN_READ_CONFIG</a>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to a buffer that receives the data read from the bus. Must be at least as large as <i>Length</i>.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 This parameter contains the byte offset in the space specified by <i>DataType</i> from which data is read.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 This parameter specifies the number of bytes to read into <i>Buffer</i>.
 
 ## -returns

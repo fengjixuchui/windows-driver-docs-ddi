@@ -1,10 +1,9 @@
 ---
 UID: NF:engextcpp.ExtRemoteTyped.ExtRemoteTyped(PCSTR,ULONG64,bool,PULONG64,PCSTR)
 title: ExtRemoteTyped::ExtRemoteTyped(PCSTR,ULONG64,bool,PULONG64,PCSTR) (engextcpp.h)
-description: The ExtRemoteTyped constructor creates a new instance of the ExtRemoteTyped class.
+description: The ExtRemoteTyped(PCSTR,ULONG64,bool,PULONG64,PCSTR) constructor creates a new instance of the ExtRemoteTyped class.
 old-location: debugger\extremotetyped_extremotetyped_pcstr_ulong64_bool.htm
 tech.root: debugger
-ms.assetid: 824f47da-2a56-4e09-b23a-a9754c1e2063
 ms.date: 05/03/2018
 keywords: ["ExtRemoteTyped::ExtRemoteTyped(PCSTR,ULONG64,bool,PULONG64,PCSTR)"]
 ms.keywords: ExtRemoteTyped, ExtRemoteTyped class [Windows Debugging],ExtRemoteTyped constructor, ExtRemoteTyped constructor [Windows Debugging], ExtRemoteTyped constructor [Windows Debugging],ExtRemoteTyped class, ExtRemoteTyped.ExtRemoteTyped, ExtRemoteTyped.ExtRemoteTyped(PCSTR,ULONG64,bool,PULONG64,PCSTR), ExtRemoteTyped::ExtRemoteTyped, ExtRemoteTyped::ExtRemoteTyped(PCSTR,ULONG64,bool,PULONG64,PCSTR), debugger.extremotetyped_extremotetyped_pcstr_ulong64_bool
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteTyped.ExtRemoteTyped
+ - ExtRemoteTyped::ExtRemoteTyped
 ---
 
 # ExtRemoteTyped::ExtRemoteTyped(PCSTR,ULONG64,bool,PULONG64,PCSTR)
@@ -51,24 +50,24 @@ The <b>ExtRemoteTyped</b> constructor creates a new instance of the <b>ExtRemote
 
 ## -parameters
 
-### -param Type 
+### -param Type [in]
 
-[in]
+
 An expression that evaluates to the desired symbol.  This expression is evaluated by the default expression evaluator.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 The location of the data in the target's virtual address space.
 
-### -param PtrTo 
+### -param PtrTo [in]
 
-[in]
+
 Specifies whether or not to set the <a href="/windows-hardware/drivers/ddi/engextcpp/nl-engextcpp-extremotetyped">ExtRemoteTyped</a> instance to the specified typed data, or to a pointer to the specified typed data. If <i>PtrTo</i> is true, the <b>ExtRemoteTyped</b> instance will contain a pointer to the typed data.
 
-### -param CacheCookie 
+### -param CacheCookie [in, out, optional]
 
-[in, out, optional]
+
 The cache cookie to use for caching type information. If <i>CacheCookie</i> is <b>NULL</b>, the debugger engine will search for type information each time.
 
 
@@ -101,9 +100,9 @@ For more information about <i>CacheCookie</i>, see the following methods:
 </li>
 </ul>
 
-### -param LinkField 
+### -param LinkField [in, optional]
 
-[in, optional]
+
 The name of a field in the typed data that contains the pointer to the next item in a list. <i>LinkField</i> should be set if <i>CacheCookie</i> is being used for the first time and will later be used with <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotetypedlist-extremotetypedlist(extremotedata__pcstr_pcstr_ulong64_ulong_pulong64_bool)">ExtRemoteTypedList</a>.
 
 ## -see-also
@@ -157,3 +156,4 @@ The name of a field in the typed data that contains the pointer to the next item
 
 
 <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotetypedlist-extremotetypedlist(extremotedata__pcstr_pcstr_ulong64_ulong_pulong64_bool)">ExtRemoteTypedList</a>
+

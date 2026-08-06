@@ -4,7 +4,6 @@ title: RtlUnicodeStringPrintf function (ntstrsafe.h)
 description: The RtlUnicodeStringPrintf function creates a text string, with formatting that is based on supplied formatting information, and stores the string in a UNICODE_STRING structure.
 old-location: kernel\rtlunicodestringprintf.htm
 tech.root: kernel
-ms.assetid: a646a63a-9a92-49ae-adfc-97d6b726caac
 ms.date: 04/30/2018
 keywords: ["RtlUnicodeStringPrintf function"]
 ms.keywords: RtlUnicodeStringPrintf, RtlUnicodeStringPrintf function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringprintf, ntstrsafe/RtlUnicodeStringPrintf, safestrings_9ad0c4dc-1e0a-41b3-a5d8-e5d80e876226.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,24 +50,17 @@ The <b>RtlUnicodeStringPrintf</b> function creates a text string, with formattin
 
 ## -parameters
 
-### -param DestinationString 
+### -param DestinationString [out]
 
-[out]
+
 A pointer to a <b>UNICODE_STRING</b> structure that receives a formatted string. <b>RtlUnicodeStringPrintf</b> creates this string from the formatting string that <i>pszFormat</i> specifies and the function's argument list. The maximum number of characters in the string is NTSTRSAFE_UNICODE_STRING_MAX_CCH.
 
-### -param pszFormat 
+### -param pszFormat [in]
 
-[in]
+
 A pointer to a null-terminated text string that contains <b>printf</b>-styled formatting directives.
 
-### -param param
-
-<p>Optional. A list of arguments that the function interprets, based on formatting directives that the <i>pszFormat</i> string contains.</p>
-
-
-
-
-####### - ...
+### -param ...
 
 Optional. A list of arguments that the function interprets, based on formatting directives that the <i>pszFormat</i> string contains.
 
@@ -152,3 +144,4 @@ For more information about the safe string functions, see <a href="/windows-hard
 
 
 <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a>
+

@@ -1,9 +1,9 @@
 ---
 UID: NE:wdm.MEM_SECTION_EXTENDED_PARAMETER_TYPE
 title: MEM_SECTION_EXTENDED_PARAMETER_TYPE (wdm.h)
-description: 
-ms.assetid: befad141-3eee-4c01-8763-9d92e6b6942e
+description: "Learn more about: MEM_SECTION_EXTENDED_PARAMETER_TYPE enumeration"
 ms.date: 09/30/2018
+tech.root: kernel
 keywords: ["MEM_SECTION_EXTENDED_PARAMETER_TYPE enumeration"]
 ms.keywords: MEM_SECTION_EXTENDED_PARAMETER_TYPE, MEM_SECTION_EXTENDED_PARAMETER_TYPE, *PMEM_SECTION_EXTENDED_PARAMETER_TYPE,
 req.header: wdm.h
@@ -31,6 +31,7 @@ api_location:
  - wdm.h
 api_name:
  - MEM_SECTION_EXTENDED_PARAMETER_TYPE
+ - PMEM_SECTION_EXTENDED_PARAMETER_TYPE
 ---
 
 # MEM_SECTION_EXTENDED_PARAMETER_TYPE enumeration
@@ -42,13 +43,15 @@ Defines values for the type of extended parameters.
 
 ## -enum-fields
 
-### -field MemSectionExtendedParameterInvalidType 
+### -field MemSectionExtendedParameterInvalidType:0
 
-### -field MemSectionExtendedParameterUserPhysicalFlags 
+### -field MemSectionExtendedParameterUserPhysicalFlags
 
-### -field MemSectionExtendedParameterNumaNode 
+### -field MemSectionExtendedParameterNumaNode
 
-### -field MemSectionExtendedParameterMax 
+### -field MemSectionExtendedParameterSigningLevel
+
+### -field MemSectionExtendedParameterMax
 
 ## -remarks
 

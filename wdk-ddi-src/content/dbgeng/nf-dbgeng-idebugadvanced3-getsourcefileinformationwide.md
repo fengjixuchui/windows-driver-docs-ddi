@@ -4,7 +4,6 @@ title: IDebugAdvanced3::GetSourceFileInformationWide (dbgeng.h)
 description: The GetSourceFileInformationWide method returns specified information about a source file.
 old-location: debugger\getsourcefileinformationwide.htm
 tech.root: debugger
-ms.assetid: 1b7b26be-b7be-4dc7-9863-413f7293707c
 ms.date: 05/03/2018
 keywords: ["IDebugAdvanced3::GetSourceFileInformationWide"]
 ms.keywords: GetSourceFileInformationWide, GetSourceFileInformationWide method [Windows Debugging], GetSourceFileInformationWide method [Windows Debugging],IDebugAdvanced3 interface, IDebugAdvanced3 interface [Windows Debugging],GetSourceFileInformationWide method, IDebugAdvanced3.GetSourceFileInformationWide, IDebugAdvanced3::GetSourceFileInformationWide, dbgeng/IDebugAdvanced3::GetSourceFileInformationWide, debugger.getsourcefileinformationwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugAdvanced3.GetSourceFileInformationWide
+ - IDebugAdvanced3::GetSourceFileInformationWide
 ---
 
 # IDebugAdvanced3::GetSourceFileInformationWide
@@ -50,9 +49,9 @@ The <b>GetSourceFileInformationWide</b> method returns specified information abo
 
 ## -parameters
 
-### -param Which 
+### -param Which [in]
 
-[in]
+
 Specifies the piece of information to return.  The <i>Which</i> parameter can take one of the values in the following table.
 
 
@@ -69,34 +68,34 @@ Returns a token representing the specified source file on a source server.  This
 
 Queries a source server for the command to extract the source file from source control.  This includes the name of the executable file and its command-line parameters. The command is returned to the <i>Buffer</i> buffer as a Unicode string.
 
-### -param SourceFile 
+### -param SourceFile [in]
 
-[in]
+
 Specifies the source file whose information is being requested.  The source file is looked up on all the source servers in the source path.
 
-### -param Arg64 
+### -param Arg64 [in]
 
-[in]
+
 Specifies a 64-bit argument.  The value of <i>Which</i> specifies the module whose symbol token is requested.  Regardless of the value of <i>Which</i>, <i>Arg64</i> is a location within the memory allocation of the module.
 
-### -param Arg32 
+### -param Arg32 [in]
 
-[in]
+
 Specifies a 32-bit argument.  This parameter is currently unused.
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Receives the requested symbol information.  The type of the data returned depends on the value of <i>Which</i>.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size in bytes of the <i>Buffer</i> buffer. If <i>Buffer</i> is <b>NULL</b>, <i>BufferSize</i> must also be <b>NULL</b>.
 
-### -param InfoSize 
+### -param InfoSize [out, optional]
 
-[out, optional]
+
 Specifies the size in bytes of the information returned to the <i>Buffer</i> buffer. This parameter can be NULL if the data is not required.
 
 ## -returns
@@ -143,3 +142,4 @@ For more information about source files, see <a href="/windows-hardware/drivers/
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugadvanced3">IDebugAdvanced3</a>
+

@@ -4,7 +4,6 @@ title: _DXGK_PTE (d3dukmdt.h)
 description: A page table entry (PTE) provides a physical address of a page and other attributes. The exact format of PTE depends on hardware implementation.
 old-location: display\dxgk_pte.htm
 tech.root: display
-ms.assetid: 2d5c1f3e-69a6-4f7f-9c99-bbaf94e6401b
 ms.date: 05/10/2018
 keywords: ["DXGK_PTE structure"]
 ms.keywords: DXGK_PTE, DXGK_PTE structure [Display Devices], DmStructs_701e980c-29dc-46d2-8f03-ce8485a4cc70.xml, _DXGK_PTE, d3dukmdt/DXGK_PTE, display.dxgk_pte
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dukmdt.h
 api_name:
+ - _DXGK_PTE
  - DXGK_PTE
 ---
 
@@ -117,3 +117,4 @@ The high 52 bits of the 64 bit physical address of a memory page. The low 12 bit
 The high 52 bits of the 64 bit physical address of a lower level page table. The low 12 bits are zero. The address is an offset from the start of the segment, defined by <b>Segment</b>, or a system memory address.
 
 Supported starting with Windows 10.
+

@@ -4,7 +4,6 @@ title: IStillImageW::Initialize (sti.h)
 description: The IStillImage::Initialize method initializes an instance of the COM object that defines the IStillImage COM interface. This method is for internal system use only.
 old-location: image\istillimage_initialize.htm
 tech.root: image
-ms.assetid: 2410f27f-f880-4870-a86a-2d6000b651fd
 ms.date: 05/03/2018
 keywords: ["IStillImageW::Initialize"]
 ms.keywords: IStillImageW interface [Imaging Devices],Initialize method, IStillImageW.Initialize, IStillImageW::Initialize, Initialize, Initialize method [Imaging Devices], Initialize method [Imaging Devices],IStillImageW interface, image.istillimage_initialize, sti/IStillImageW::Initialize, stifnc_31e54f97-84af-47bf-a1b1-17ab697caef3.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - sti.h
 api_name:
- - IStillImageW.Initialize
+ - IStillImageW::Initialize
 ---
 
 # IStillImageW::Initialize
@@ -50,9 +49,9 @@ The <b>IStillImage::Initialize</b> method initializes an instance of the COM obj
 
 ## -parameters
 
-### -param hinst 
+### -param hinst [in]
 
-[in]
+
 Caller-supplied instance handle of the calling process. This handle is obtained by calling <b>GetModuleName</b>(NULL).
 
 ### -param dwVersion
@@ -68,3 +67,4 @@ If the operation succeeds, the method returns S_OK. Otherwise, it returns one of
 The <b>IStillImage::Initialize</b> method initializes the COM object instance that was created by calling <a href="/previous-versions/windows/hardware/drivers/ff543804(v=vs.85)">IStillImage::StiCreateInstance</a>.
 
 Because <b>IStillImage::Initialize</b> is called by <b>IStillImage::StiCreateInstance</b>, clients of the <b>IStillImage</b> COM interface do not typically call this method directly.
+

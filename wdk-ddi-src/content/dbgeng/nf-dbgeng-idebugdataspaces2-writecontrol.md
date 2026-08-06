@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugDataSpaces2.WriteControl
 title: IDebugDataSpaces2::WriteControl (dbgeng.h)
-description: The WriteControl method writes implementation-specific system data.
+description: The WriteControl method writes implementation-specific system data. This method belongs to the IDebugDataSpaces2 interface.
 old-location: debugger\writecontrol.htm
 tech.root: debugger
-ms.assetid: 0b512c66-7cd8-4605-87d5-13b78d790c8c
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces2::WriteControl"]
 ms.keywords: IDebugDataSpaces interface [Windows Debugging],WriteControl method, IDebugDataSpaces2 interface [Windows Debugging],WriteControl method, IDebugDataSpaces2.WriteControl, IDebugDataSpaces2::WriteControl, IDebugDataSpaces3 interface [Windows Debugging],WriteControl method, IDebugDataSpaces3::WriteControl, IDebugDataSpaces4 interface [Windows Debugging],WriteControl method, IDebugDataSpaces4::WriteControl, IDebugDataSpaces::WriteControl, IDebugDataSpaces_7da7d848-6188-4325-8da5-3fa3df3c68b9.xml, WriteControl, WriteControl method [Windows Debugging], WriteControl method [Windows Debugging],IDebugDataSpaces interface, WriteControl method [Windows Debugging],IDebugDataSpaces2 interface, WriteControl method [Windows Debugging],IDebugDataSpaces3 interface, WriteControl method [Windows Debugging],IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces2::WriteControl, dbgeng/IDebugDataSpaces3::WriteControl, dbgeng/IDebugDataSpaces4::WriteControl, dbgeng/IDebugDataSpaces::WriteControl, debugger.writecontrol
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugDataSpaces.WriteControl
- - IDebugDataSpaces2.WriteControl
- - IDebugDataSpaces3.WriteControl
- - IDebugDataSpaces4.WriteControl
+ - IDebugDataSpaces2::WriteControl
 ---
 
 # IDebugDataSpaces2::WriteControl
@@ -53,29 +49,29 @@ The <b>WriteControl</b> method writes implementation-specific system data.
 
 ## -parameters
 
-### -param Processor 
+### -param Processor [in]
 
-[in]
+
 Specifies the processor whose information is to be written.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the offset of the control space of the memory to write.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Specifies the data to write to the control-space memory.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size in bytes of the buffer <i>Buffer</i>.  This is the maximum number of bytes that will be written.
 
-### -param BytesWritten 
+### -param BytesWritten [out, optional]
 
-[out, optional]
+
 Receives the number of bytes returned in the buffer <i>Buffer</i>.  If <i>BytesWritten</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -103,3 +99,4 @@ The method was successful.
 ## -remarks
 
 This method is only available in kernel-mode debugging.
+

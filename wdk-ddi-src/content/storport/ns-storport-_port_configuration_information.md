@@ -1,10 +1,9 @@
 ---
 UID: NS:storport._PORT_CONFIGURATION_INFORMATION
-title: _PORT_CONFIGURATION_INFORMATION (storport.h)
+title: PORT_CONFIGURATION_INFORMATION (storport.h)
 description: PORT_CONFIGURATION_INFORMATION contains configuration information for a host bus adapter (HBA).
 tech.root: storage
-ms.assetid: f3c9d851-d30d-4757-82a3-225ee67528c1
-ms.date: 04/03/2020
+ms.date: 09/24/2025
 keywords: ["PORT_CONFIGURATION_INFORMATION structure"]
 ms.keywords: "*PPORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION structure [Storage Devices], PPORT_CONFIGURATION_INFORMATION, PPORT_CONFIGURATION_INFORMATION structure pointer [Storage Devices], _PORT_CONFIGURATION_INFORMATION, _PORT_CONFIGURATION_INFORMATION structure [Storage Devices]"
 req.header: storport.h
@@ -41,14 +40,16 @@ api_type:
 api_location:
  - srb.h
 api_name:
+ - _PORT_CONFIGURATION_INFORMATION
+ - PPORT_CONFIGURATION_INFORMATION
  - PORT_CONFIGURATION_INFORMATION
 ---
 
-# _PORT_CONFIGURATION_INFORMATION structure (storport.h)
+# PORT_CONFIGURATION_INFORMATION structure (storport.h)
 
 ## -description
 
-PORT_CONFIGURATION_INFORMATION contains configuration information for a host bus adapter (HBA).
+**PORT_CONFIGURATION_INFORMATION** contains configuration information for a host bus adapter (HBA).
 
 ## -struct-fields
 
@@ -109,7 +110,7 @@ Mask indicating the alignment restrictions for buffers required by the HBA for t
 | FILE_BYTE_ALIGNMENT (0x00000000)     | Data is byte aligned (no alignment requirements for the device) |
 | FILE_WORD_ALIGNMENT (0x00000001)     | Data must be aligned on a 2-byte boundary.  |
 | FILE_LONG_ALIGNMENT (0x00000003)     | Data must be aligned on a 4-byte boundary.  |
-| FILE_QUAD_ALIGNMENT (0x00000007)     | Data must be aligned on a 8-byte boundary.  |
+| FILE_QUAD_ALIGNMENT (0x00000007)     | Data must be aligned on an 8-byte boundary.  |
 | FILE_OCTA_ALIGNMENT (0x0000000f)     | Data must be aligned on a 16-byte boundary. |
 | FILE_32_BYTE_ALIGNMENT (0x0000001f)  | Data must be aligned on a 32-byte boundary.  |
 | FILE_64_BYTE_ALIGNMENT (0x0000003f)  | Data must be aligned on a 64-byte boundary.  |
@@ -129,9 +130,13 @@ Pointer to an array of [**ACCESS_RANGE**](./ns-storport-_access_range.md)-type e
 
 Pointer to a dump context used during a crashdump or a hibernation.
 
+### -field Reserved
+
+Reserved for system use (pre-Windows 8).
+
 ### -field NumberOfBuses
 
-Number of buses controlled by the adapter. By default, the value of this member is zero. This member has a maximum value of SCSI_MAXIMUM_BUSES_PER_ADAPTER.
+Number of buses controlled by the adapter. By default, the value of this member is zero. This member has a maximum value of SCSI_MAXIMUM_BUSES_PER_ADAPTER. This member is available starting in Windows 8.
 
 ### -field InitiatorBusId
 
@@ -214,7 +219,7 @@ Number of target peripherals the adapter can control. By default, the value of t
 
 ### -field SrbType
 
-Type of SRBs to be sent to the miniport driver. This is set to one of the following values:
+Type of SRBs to be sent to the miniport driver. Available starting in Windows 8. This is set to one of the following values:
 
 | Value | Meaning |
 | ----- | ------- |
@@ -223,11 +228,15 @@ Type of SRBs to be sent to the miniport driver. This is set to one of the follow
 
 ### -field AddressType
 
-Address type used between Storport and the miniport driver. This can be set to the following value:
+Address type used between Storport and the miniport driver. Available starting in Windows 8. This can be set to the following value:
 
 | Value | Meaning |
 | ----- | ------- |
 | STORAGE_ADDRESS_TYPE_BTL8 | Bus, Target, and LUN (BTL) 8-bit addressing. |
+
+### -field ReservedUchars
+
+Reserved for system use (pre-Windows 8).
 
 ### -field SlotNumber
 
@@ -366,19 +375,19 @@ If the HBA can support more than 1000 outstanding I/O operations, the miniport c
 
 ### -field MaxIOsPerLun
 
-Maximum number of I/O requests supported on a LUN. Storport will set this to a default value of 255. If a LUN does not support 255 outstanding I/O requests, the miniport should adjust this member to an appropriate smaller value. This member must be <= **MaxNumberOfIO**. To support **MaxIOsPerLun** > 255, the **SrbType** field must be set to **SRB_TYPE_STORAGE_REQUEST_BLOCK**.
+Maximum number of I/O requests supported on a LUN. Storport will set this to a default value of 255. If a LUN does not support 255 outstanding I/O requests, the miniport should adjust this member to an appropriate smaller value. This member must be <= **MaxNumberOfIO**. To support **MaxIOsPerLun** > 255, the **SrbType** field must be set to **SRB_TYPE_STORAGE_REQUEST_BLOCK**. Available starting in Windows 8.
 
 ### -field InitialLunQueueDepth
 
-The initial LUN I/O queue depth. Storport set this to a default value of 20 for physical miniports and to 250 for virtual miniports. This member adjusts the initial queue depth for all LUNs on the adapter. The queue depth for an individual LUN is set by calling [**StorPortSetDeviceQueueDepth**](./nf-storport-storportsetdevicequeuedepth.md). This member is typically set to the same value as **MaxIOsPerLun**.
+The initial LUN I/O queue depth. Storport set this to a default value of 20 for physical miniports and to 250 for virtual miniports. This member adjusts the initial queue depth for all LUNs on the adapter. The queue depth for an individual LUN is set by calling [**StorPortSetDeviceQueueDepth**](./nf-storport-storportsetdevicequeuedepth.md). This member is typically set to the same value as **MaxIOsPerLun**. Available starting in Windows 8.
 
 ### -field BusResetHoldTime
 
-The amount of time, in microseconds, to pause the adapter after a reset is detected. Set this value to 0 if no wait time is needed after a bus reset.
+The amount of time, in microseconds, to pause the adapter after a reset is detected. Set this value to 0 if no wait time is needed after a bus reset. Available starting in Windows 8.
 
 ### -field FeatureSupport
 
-Storport features requested for the adapter. A miniport driver can set this member to be a bitwise mask of any of the following values:
+Storport features requested for the adapter. Available starting in Windows 8. A miniport driver can set this member to be a bitwise mask of any of the following values:
 
 | Value | Meaning |
 | ----- | ------- |
@@ -388,7 +397,8 @@ Storport features requested for the adapter. A miniport driver can set this memb
  | STOR_ADAPTER_DMA_V3_PREFERRED                    0x00000008    | The miniport driver prefers to use DMA V3 kernel API for the adapter. |
  | STOR_ADAPTER_FEATURE_ABORT_COMMAND               0x00000010    | The miniport driver supports the ability to abort an outstanding command via SRB_FUNCTION_ABORT_COMMAND. |
  | STOR_ADAPTER_FEATURE_RICH_TEMPERATURE_THRESHOLD  0x00000020    | The adapter supports richer temperature threshold information than defined in SCSI SPC4 spec. |
- | STOR_ADAPTER_DMA_ADDRESS_WIDTH_SPECIFIED         0x00000040    | The miniport driver specified the DMA address width in **DmaAddressWidth** for the adapter. This value can be used starting in Windows 10, version 2004.|
+ | STOR_ADAPTER_DMA_ADDRESS_WIDTH_SPECIFIED         0x00000040    | The miniport driver specified the DMA address width in **DmaAddressWidth** for the adapter. This value was added in Windows 10, version 2004.|
+| STOR_ADAPTER_FEATURE_UNIQUE_QUEUEING_TAG       0x00000080 | The miniport driver supports unique queueing tags for I/O operations. This value was added in Windows 11, version 24H2. |
 
 ## -remarks
 

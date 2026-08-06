@@ -4,7 +4,6 @@ title: _NDIS_MINIPORT_WDI_DATA_HANDLERS (dot11wdi.h)
 description: The NDIS_MINIPORT_WDI_DATA_HANDLERS structure specifies the entry points for the IHV miniport datapath handlers.
 old-location: netvista\ndis_miniport_wdi_data_handlers.htm
 tech.root: netvista
-ms.assetid: DBDB5F08-9988-4D9B-A731-DA65BBA67813
 ms.date: 05/02/2018
 keywords: ["NDIS_MINIPORT_WDI_DATA_HANDLERS structure"]
 ms.keywords: "*PNDIS_MINIPORT_WDI_DATA_HANDLERS, NDIS_MINIPORT_WDI_DATA_HANDLERS, NDIS_MINIPORT_WDI_DATA_HANDLERS structure [Network Drivers Starting with Windows Vista], PNDIS_MINIPORT_WDI_DATA_HANDLERS, PNDIS_MINIPORT_WDI_DATA_HANDLERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_MINIPORT_WDI_DATA_HANDLERS, dot11wdi/NDIS_MINIPORT_WDI_DATA_HANDLERS, dot11wdi/PNDIS_MINIPORT_WDI_DATA_HANDLERS, netvista.ndis_miniport_wdi_data_handlers"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
+ - _NDIS_MINIPORT_WDI_DATA_HANDLERS
+ - PNDIS_MINIPORT_WDI_DATA_HANDLERS
  - NDIS_MINIPORT_WDI_DATA_HANDLERS
 ---
 
@@ -50,6 +51,9 @@ api_name:
 
 ## -description
 
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
+
 The NDIS_MINIPORT_WDI_DATA_HANDLERS structure specifies the entry points for the IHV miniport datapath handlers.
 
 ## -struct-fields
@@ -57,7 +61,7 @@ The NDIS_MINIPORT_WDI_DATA_HANDLERS structure specifies the entry points for the
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_MINIPORT_WDI_DATA_HANDLERS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_MINIPORT_WDI_DATA_HANDLERS.
@@ -174,3 +178,4 @@ The entry point of the <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11w
 ### -field TxSuspectFrameAbortHandler
 
 The entry point of the [MiniportWdiTxSuspectFrameAbort](nc-dot11wdi-miniport_wdi_tx_suspect_frame_list_abort.md) handler function.
+

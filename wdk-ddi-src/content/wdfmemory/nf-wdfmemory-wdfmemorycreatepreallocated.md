@@ -4,7 +4,6 @@ title: WdfMemoryCreatePreallocated function (wdfmemory.h)
 description: The WdfMemoryCreatePreallocated method creates a framework memory object for a driver-supplied memory buffer.
 old-location: wdf\wdfmemorycreatepreallocated.htm
 tech.root: wdf
-ms.assetid: 8c4f9abc-f03d-4084-b0ce-34aea5dd7d96
 ms.date: 02/26/2018
 keywords: ["WdfMemoryCreatePreallocated function"]
 ms.keywords: DFMemoryObjectRef_03f219cd-a77b-4a17-b67a-2b01e0aeb3e6.xml, WdfMemoryCreatePreallocated, WdfMemoryCreatePreallocated method, kmdf.wdfmemorycreatepreallocated, wdf.wdfmemorycreatepreallocated, wdfmemory/WdfMemoryCreatePreallocated
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,24 +54,24 @@ The <b>WdfMemoryCreatePreallocated</b> method creates a framework memory object 
 
 ## -parameters
 
-### -param Attributes 
+### -param Attributes [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains object attributes for the new memory object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to a driver-supplied buffer.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 The nonzero size, in bytes, of the buffer that <i>Buffer</i> points to.
 
-### -param Memory 
+### -param Memory [out]
 
-[out]
+
 A pointer to a location that receives a handle to the new memory object.
 
 ## -returns
@@ -153,7 +152,7 @@ WDF_OBJECT_ATTRIBUTES_INIT(&attributes);
 attributes.ParentObject = requestHandle;
 
 status = WdfMemoryCreatePreallocated(
-                                     attributes,
+                                     &attributes,
                                      pBuffer,
                                      MY_BUFFER_SIZE,
                                      &memHandle

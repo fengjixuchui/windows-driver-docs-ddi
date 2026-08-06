@@ -4,7 +4,6 @@ title: _MITIGABLE_DEVICE_INTERFACE (pcivirt.h)
 description: Stores function pointers to callback functions implemented by the physical function (PF) driver for the mitigable device interface.
 old-location: pci\mitigable_device_interface.htm
 tech.root: PCI
-ms.assetid: 1fac7c03-2a48-4b29-951d-c777fbec7dd3
 ms.date: 02/24/2018
 keywords: ["MITIGABLE_DEVICE_INTERFACE structure"]
 ms.keywords: "*PMITIGABLE_DEVICE_INTERFACE, MITIGABLE_DEVICE_INTERFACE, MITIGABLE_DEVICE_INTERFACE structure [Buses], PCI.mitigable_device_interface, _MITIGABLE_DEVICE_INTERFACE, pcivirt/MITIGABLE_DEVICE_INTERFACE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Pcivirt.h
 api_name:
+ - _MITIGABLE_DEVICE_INTERFACE
+ - PMITIGABLE_DEVICE_INTERFACE
  - MITIGABLE_DEVICE_INTERFACE
 ---
 
@@ -96,3 +97,4 @@ typedef struct _MITIGABLE_DEVICE_INTERFACE {
 This callback function is implemented by the physical function (PF) driver. This function reads and writes mitigated address spaces, in the form required by GUID_MITIGABLE_DEVICE_INTERFACE.
 
 The PF driver registers its implementation by setting the <b>ReadVfConfig</b> member of the <a href="/windows-hardware/drivers/ddi/pcivirt/ns-pcivirt-_sriov_device_interface_standard">SRIOV_DEVICE_INTERFACE_STANDARD</a>, configuring a <a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>.
+

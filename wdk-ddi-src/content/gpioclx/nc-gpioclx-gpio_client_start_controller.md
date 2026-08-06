@@ -4,7 +4,6 @@ title: GPIO_CLIENT_START_CONTROLLER (gpioclx.h)
 description: The CLIENT_StartController event callback function performs operations that are needed when the general-purpose I/O (GPIO) controller device enters the D0 power state.
 old-location: gpio\client_startcontroller.htm
 tech.root: GPIO
-ms.assetid: 311C5273-1C16-4EA7-96B4-838CCE6926BA
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_START_CONTROLLER callback function"]
 ms.keywords: CLIENT_StartController, CLIENT_StartController callback, CLIENT_StartController callback function [Parallel Ports], GPIO.client_startcontroller, GPIO_CLIENT_START_CONTROLLER, gpioclx/CLIENT_StartController
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_StartController
+ - GPIO_CLIENT_START_CONTROLLER
 ---
 
 # GPIO_CLIENT_START_CONTROLLER callback function
@@ -50,19 +49,19 @@ The <i>CLIENT_StartController</i> event callback function performs operations th
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param RestoreContext 
+### -param RestoreContext [in]
 
-[in]
+
 Whether the client driver should restore the GPIO controller to a previously saved hardware context. If TRUE, the hardware context should be restored. If FALSE, the hardware context should not be restored. For more information, see Remarks.
 
-### -param PreviousPowerState 
+### -param PreviousPowerState [in]
 
-[in]
+
 The previous device power state. This parameter is a <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_power_device_state">WDF_POWER_DEVICE_STATE</a> enumeration value that specifies the low-power state from which the device entered the D0 power state. The GPIO controller driver can use this information to determine how to configure the controller device so that it is ready to use.
 
 ## -returns
@@ -117,3 +116,4 @@ The GPIO_CLIENT_START_CONTROLLER function type is defined in the Gpioclx.h heade
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/nf-gpioclx-gpio_clx_registerclient">GPIO_CLX_RegisterClient</a>
+

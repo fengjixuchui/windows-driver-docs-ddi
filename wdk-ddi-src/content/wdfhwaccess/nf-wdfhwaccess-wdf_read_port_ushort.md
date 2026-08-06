@@ -4,7 +4,6 @@ title: WDF_READ_PORT_USHORT function (wdfhwaccess.h)
 description: The WDF_READ_PORT_USHORT function reads a USHORT value from the specified port address.
 old-location: wdf\wdf_read_port_ushort.htm
 tech.root: wdf
-ms.assetid: F9688E1F-D8A3-432E-8724-2D601946E707
 ms.date: 02/26/2018
 keywords: ["WDF_READ_PORT_USHORT function"]
 ms.keywords: WDF_READ_PORT_USHORT, WDF_READ_PORT_USHORT function, wdf.wdf_read_port_ushort, wdfhwaccess/WDF_READ_PORT_USHORT
@@ -52,14 +51,14 @@ The <b>WDF_READ_PORT_USHORT</b>  function reads a USHORT value from the specifie
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Specifies the port address, which must be a mapped memory range in I/O space.
 
 ## -returns

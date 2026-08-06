@@ -4,7 +4,6 @@ title: SeMarkLogonSessionForTerminationNotification function (ntifs.h)
 description: The SeMarkLogonSessionForTerminationNotification routine marks a logon session so that the caller's registered callback routine is called when the logon session terminates.
 old-location: ifsk\semarklogonsessionforterminationnotification.htm
 tech.root: ifsk
-ms.assetid: ca259e03-4770-48ce-a4c0-a26159a172aa
 ms.date: 04/16/2018
 keywords: ["SeMarkLogonSessionForTerminationNotification function"]
 ms.keywords: SeMarkLogonSessionForTerminationNotification, SeMarkLogonSessionForTerminationNotification routine [Installable File System Drivers], ifsk.semarklogonsessionforterminationnotification, ntifs/SeMarkLogonSessionForTerminationNotification, seref_417d6aa1-b506-463d-9506-3a3651873c4a.xml
@@ -50,9 +49,9 @@ The <b>SeMarkLogonSessionForTerminationNotification</b> routine marks a logon se
 
 ## -parameters
 
-### -param LogonId 
+### -param LogonId [in]
 
-[in]
+
 Pointer to the logon ID of the logon session.
 
 ## -returns
@@ -90,7 +89,7 @@ The logon session was not found.
 
 To register the callback routine, use <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seregisterlogonsessionterminatedroutine">SeRegisterLogonSessionTerminatedRoutine</a>.
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

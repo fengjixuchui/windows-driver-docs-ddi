@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostMemory2.ReadBytes
 title: IDebugHostMemory2::ReadBytes (dbgmodel.h)
-description: Reads a number of bytes from the address space of the target as defined by the inpassed context and location.
-ms.assetid: db0ae688-692c-468f-aa1b-7dca69a53ee2
+description: "The IDebugHostMemory2::ReadBytes method reads a number of bytes from the address space of the target for a given context and location."
 ms.date: 09/28/2018
 keywords: ["IDebugHostMemory2::ReadBytes"]
 ms.keywords: IDebugHostMemory2::ReadBytes, ReadBytes, IDebugHostMemory2.ReadBytes, IDebugHostMemory2::ReadBytes, IDebugHostMemory2.ReadBytes
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostMemory2.ReadBytes
+ - IDebugHostMemory2::ReadBytes
 ---
 
 # IDebugHostMemory2::ReadBytes

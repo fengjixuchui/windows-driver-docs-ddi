@@ -1,10 +1,9 @@
 ---
 UID: NF:wudfddi_hwaccess.WRITE_REGISTER_BUFFER_USHORT
 title: WRITE_REGISTER_BUFFER_USHORT function (wudfddi_hwaccess.h)
-description: The WRITE_REGISTER_BUFFER_USHORT routine writes a number of USHORT values from a buffer to the specified register.
+description: The WRITE_REGISTER_BUFFER_USHORT function (wudfddi_hwaccess.h) writes a number of USHORT values from a buffer to the specified register.
 old-location: wdf\write_register_buffer_ushort.htm
 tech.root: wdf
-ms.assetid: 45E51355-9570-4548-B056-D1655BED5462
 ms.date: 02/26/2018
 keywords: ["WRITE_REGISTER_BUFFER_USHORT function"]
 ms.keywords: WRITE_REGISTER_BUFFER_USHORT, WRITE_REGISTER_BUFFER_USHORT function, umdf.write_register_buffer_ushort, wdf.write_register_buffer_ushort, wudfddi_hwaccess/WRITE_REGISTER_BUFFER_USHORT
@@ -52,24 +51,24 @@ The <b>WRITE_REGISTER_BUFFER_USHORT</b> routine writes a number of USHORT values
 
 ## -parameters
 
-### -param pDevice 
+### -param pDevice [in]
 
-[in]
+
 Specifies a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a> interface for the device object of the device to access.
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the register, which must be a mapped range in memory space.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to a buffer into which an array of USHORT values is to be written.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of USHORT values to write to the register.
 
 ## -remarks

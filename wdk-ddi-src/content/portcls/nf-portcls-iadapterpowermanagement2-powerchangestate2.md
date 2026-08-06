@@ -4,7 +4,6 @@ title: IAdapterPowerManagement2::PowerChangeState2 (portcls.h)
 description: Portcls calls the IAdapterPowerManagement2::PowerChangeState2 method to request a change to the new power state. This request is passed on to the adapter driver.
 old-location: audio\iadapterpowermanagement2_powerchangestate2.htm
 tech.root: audio
-ms.assetid: 72068476-5821-4646-88b3-06f3a1917fca
 ms.date: 05/08/2018
 keywords: ["IAdapterPowerManagement2::PowerChangeState2"]
 ms.keywords: IAdapterPowerManagement2 interface [Audio Devices],PowerChangeState2 method, IAdapterPowerManagement2.PowerChangeState2, IAdapterPowerManagement2::PowerChangeState2, PowerChangeState2, PowerChangeState2 method [Audio Devices], PowerChangeState2 method [Audio Devices],IAdapterPowerManagement2 interface, audio.iadapterpowermanagement2_powerchangestate2, audmp-routines_d145e24a-5ef1-44a3-b51b-9ee2c8a89772.xml, portcls/IAdapterPowerManagement2::PowerChangeState2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IAdapterPowerManagement2.PowerChangeState2
+ - IAdapterPowerManagement2::PowerChangeState2
 ---
 
 # IAdapterPowerManagement2::PowerChangeState2
@@ -50,14 +49,14 @@ Portcls calls the <code>IAdapterPowerManagement2::PowerChangeState2</code> metho
 
 ## -parameters
 
-### -param NewDeviceState 
+### -param NewDeviceState [in]
 
-[in]
+
 Specifies the new power state that Portcls has requested for the device. This parameter is an enumeration of type <a href="/windows-hardware/drivers/ddi/wudfddi/ne-wudfddi-_device_power_state">DEVICE_POWER_STATE</a>.
 
-### -param NewSystemState 
+### -param NewSystemState [in]
 
-[in]
+
 Specifies the new power state that Portcls has requested for the system. This parameter is an enumeration of type <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_system_power_state">SYSTEM_POWER_STATE</a>.
 
 ## -remarks
@@ -85,3 +84,4 @@ For more information about system power states, see <a href="/windows-hardware/d
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_system_power_state">SYSTEM_POWER_STATE</a>
+

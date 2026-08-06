@@ -4,7 +4,6 @@ title: InterlockedCompareExchange function (miniport.h)
 description: The InterlockedCompareExchange routine performs an atomic operation that compares the input value pointed to by Destination with the value of Comparand.
 old-location: kernel\interlockedcompareexchange.htm
 tech.root: kernel
-ms.assetid: 925a5481-d626-4824-8cbe-4fc2a0a6ad92
 ms.date: 04/30/2018
 keywords: ["InterlockedCompareExchange function"]
 ms.keywords: InterlockedCompareExchange, InterlockedCompareExchange routine [Kernel-Mode Driver Architecture], k102_d40d8288-4c0d-43ed-af9f-3f9afabe1455.xml, kernel.interlockedcompareexchange, wdm/InterlockedCompareExchange
@@ -55,9 +54,9 @@ The <b>InterlockedCompareExchange</b> routine performs an atomic operation that 
 
 ## -parameters
 
-### -param Destination 
+### -param Destination [in, out]
 
-[in, out]
+
 A pointer to the input value that is compared with the value of <i>Comparand</i>.
 
 ### -param ExChange
@@ -70,11 +69,11 @@ A pointer to the input value that is compared with the value of <i>Comparand</i>
 
 ## -returns
 
-<b>InterlockedCompareExchange</b> returns the original value of *<i>Destination</i>.
+<b>InterlockedCompareExchange</b> returns the original value of **Destination*.
 
 ## -remarks
 
-If <i>Comparand</i> is equal to *<i>Destination</i>, then *<i>Destination</i> is set to equal <i>Exchange</i>. Otherwise, *<i>Destination</i> is unchanged.
+If <i>Comparand</i> is equal to **Destination*, then **Destination* is set to equal <i>Exchange</i>. Otherwise, **Destination* is unchanged.
 
 <b>InterlockedCompareExchange</b> provides a fast, atomic way to synchronize the testing and updating of a variable that is shared by multiple threads. If the input value pointed to by <i>Destination</i> equals the value of <i>Comparand</i>, the output value of <i>Destination</i> is set to the value of <i>Exchange</i>. 
 

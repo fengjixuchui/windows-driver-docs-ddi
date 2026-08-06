@@ -2,9 +2,9 @@
 UID: NS:wdm._NPEM_CAPABILITY_STANDARD
 title: NPEM_CAPABILITY_STANDARD
 ms.date: 04/28/2020
-ms.topic: language-reference
+tech.root: PCI
 targetos: Windows
-description: 
+description: "Learn more about: NPEM_CAPABILITY_STANDARD"
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -28,6 +28,7 @@ api_location:
  - wdm.h
 api_name:
  - _NPEM_CAPABILITY_STANDARD
+ - PNPEM_CAPABILITY_STANDARD
  - NPEM_CAPABILITY_STANDARD
 f1_keywords:
  - _NPEM_CAPABILITY_STANDARD

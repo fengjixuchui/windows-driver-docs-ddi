@@ -1,9 +1,8 @@
 ---
 UID: NC:d3dkmthk.PFND3DKMT_SUBMITPRESENTBLTTOHWQUEUE
 title: PFND3DKMT_SUBMITPRESENTBLTTOHWQUEUE (d3dkmthk.h)
-description: Implemented by the client driver to submit a present Blt to hardware queue.
-ms.assetid: 779315a3-96ce-493a-82b3-63c8b9d289c3
-ms.date: 10/19/2018
+description: The PFND3DKMT_SUBMITPRESENTBLTTOHWQUEUE callback function is implemented by the client driver to submit a present Blt to the hardware queue.
+ms.date: 03/04/2022
 keywords: ["PFND3DKMT_SUBMITPRESENTBLTTOHWQUEUE callback function"]
 req.header: d3dkmthk.h
 req.include-header: 
@@ -35,48 +34,35 @@ api_location:
  - d3dkmthk.h
 api_name:
  - PFND3DKMT_SUBMITPRESENTBLTTOHWQUEUE
-product:
- - Windows
 ---
 
 # PFND3DKMT_SUBMITPRESENTBLTTOHWQUEUE callback function
-
 
 ## -description
 
 Implemented by the client driver to submit a present Blt to hardware queue.
 
+## -syntax
+
+```cpp
+PFND3DKMT_SUBMITPRESENTBLTTOHWQUEUE PfnD3dkmtSubmitPresentBltToHwQueue;
+
+NTSTATUS PfnD3dkmtSubmitPresentBltToHwQueue(
+    const D3DKMT_SUBMITPRESENTBLTTOHWQUEUE *unnamedParam1
+)
+{...}
+```
+
 ## -parameters
 
-### -param D3DKMT_SUBMITPRESENTBLTTOHWQUEUE *
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_SUBMITPRESENTBLTTOHWQUEUE](ns-d3dkmthk-_d3dkmt_submitpresentblttohwqueue.md) structure that contains information to submit a present Blt to hardware queue.
 
 ## -returns
 
-Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate NTSTATUS Values error code.
-
-## -prototype
-
-```cpp
-//Declaration
-
-PFND3DKMT_SUBMITPRESENTBLTTOHWQUEUE Pfnd3dkmtSubmitpresentblttohwqueue;
-
-// Definition
-
-NTSTATUS Pfnd3dkmtSubmitpresentblttohwqueue
-(
-	CONST D3DKMT_SUBMITPRESENTBLTTOHWQUEUE *
-)
-{...}
-
-PFND3DKMT_SUBMITPRESENTBLTTOHWQUEUE
-
-
-```
+The method returns **STATUS_SUCCESS** if the operation succeeds. Otherwise, this method might return an appropriate **[NTSTATUS](/windows-hardware/drivers/kernel/ntstatus-values)** error code.
 
 ## -remarks
 
-Register your implementation of this callback function by setting the appropriate member of [D3DKMT_SUBMITPRESENTBLTTOHWQUEUE](ns-d3dkmthk-_d3dkmt_submitpresentblttohwqueue.md) and then calling Pfnd3dkmtSubmitpresentblttohwqueue.
-
+Register your implementation of this callback function by setting the appropriate member of [D3DKMT_SUBMITPRESENTBLTTOHWQUEUE](ns-d3dkmthk-_d3dkmt_submitpresentblttohwqueue.md) and then calling **PfnD3dkmtSubmitPresentBltToHwQueue**.

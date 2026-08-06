@@ -4,7 +4,6 @@ title: USBD_RegisterHcFilter function (usbdlib.h)
 description: The USBD_RegisterHcFilter routine has been deprecated in Windows XP and later operating systems.
 old-location: buses\usbd_registerhcfilter.htm
 tech.root: usbref
-ms.assetid: 2cc24024-75ec-45ba-867c-efc8e7da7587
 ms.date: 05/07/2018
 keywords: ["USBD_RegisterHcFilter function"]
 ms.keywords: USBD_RegisterHcFilter, USBD_RegisterHcFilter routine [Buses], buses.usbd_registerhcfilter, usbdlib/USBD_RegisterHcFilter, usbfunc_de494163-188c-4356-bd91-c6fa38693d55.xml
@@ -53,14 +52,14 @@ On  Windows XP and later operating systems, a filter driver that is installed be
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the device object that is the current top of the stack as reported by <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ioattachdevicetodevicestack">IoAttachDeviceToDeviceStack</a>.
 
-### -param FilterDeviceObject 
+### -param FilterDeviceObject [in]
 
-[in]
+
 Pointer to the filter device object created by the filter driver for its operations.
 
 ## -remarks

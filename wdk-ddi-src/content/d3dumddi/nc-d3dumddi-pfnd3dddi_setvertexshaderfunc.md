@@ -4,7 +4,6 @@ title: PFND3DDDI_SETVERTEXSHADERFUNC (d3dumddi.h)
 description: The SetVertexShaderFunc function sets the vertex shader code so that all of the subsequent drawing operations use that code.
 old-location: display\setvertexshaderfunc.htm
 tech.root: display
-ms.assetid: 2cea4812-7eba-4558-9c2e-30de460be21f
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETVERTEXSHADERFUNC callback function"]
 ms.keywords: PFND3DDDI_SETVERTEXSHADERFUNC, PFND3DDDI_SETVERTEXSHADERFUNC callback, SetVertexShaderFunc, SetVertexShaderFunc callback function [Display Devices], UserModeDisplayDriver_Functions_aeaa5094-5619-4cf5-b2c3-c4b6aeed9b33.xml, d3dumddi/SetVertexShaderFunc, display.setvertexshaderfunc
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - SetVertexShaderFunc
-product:
- - Windows
+ - PFND3DDDI_SETVERTEXSHADERFUNC
 ---
 
 # PFND3DDDI_SETVERTEXSHADERFUNC callback function
@@ -56,7 +53,7 @@ The <i>SetVertexShaderFunc</i> function sets the vertex shader code so that all 
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hShaderHandle* [in]
 
@@ -75,3 +72,4 @@ For user-mode display drivers that support vertex shaders before version 2.0, th
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

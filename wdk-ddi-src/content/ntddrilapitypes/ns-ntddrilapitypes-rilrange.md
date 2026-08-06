@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILRANGE
 title: RILRANGE (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILRANGE structure for internal use only. Don't use the RILRANGE structure in your code."
 old-location: netvista\rilrange.htm
 tech.root: netvista
-ms.assetid: 2f704899-eb5e-4632-a76d-eb474f3273f9
 ms.date: 05/02/2018
 keywords: ["RILRANGE structure"]
 ms.keywords: "*LPRILRANGE, RILRANGE, RILRANGE structure [Network Drivers Starting with Windows Vista], netvista.rilrange, ntddrilapitypes/RILRANGE"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILRANGE
+ - LPRILRANGE
 ---
 
 # RILRANGE structure (ntddrilapitypes.h)

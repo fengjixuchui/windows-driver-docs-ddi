@@ -4,7 +4,6 @@ title: EVT_WDF_DRIVER_DEVICE_ADD (wdfdriver.h)
 description: A driver's EvtDriverDeviceAdd event callback function performs device initialization operations when the Plug and Play (PnP) manager reports the existence of a device.
 old-location: wdf\evtdriverdeviceadd.htm
 tech.root: wdf
-ms.assetid: b20db029-ee2c-4fb1-bd69-ccd2e37fdc9a
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DRIVER_DEVICE_ADD callback function"]
 ms.keywords: DFDriverObjectRef_9b5ff898-9b1b-4eb6-87f7-42bee5deab18.xml, EVT_WDF_DRIVER_DEVICE_ADD, EVT_WDF_DRIVER_DEVICE_ADD callback, EvtDriverDeviceAdd, EvtDriverDeviceAdd callback function, kmdf.evtdriverdeviceadd, wdf.evtdriverdeviceadd, wdfdriver/EvtDriverDeviceAdd
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfdriver.h
 api_name:
- - EvtDriverDeviceAdd
+ - EVT_WDF_DRIVER_DEVICE_ADD
 ---
 
 # EVT_WDF_DRIVER_DEVICE_ADD callback function
@@ -52,14 +51,14 @@ A driver's <i>EvtDriverDeviceAdd</i> event callback function performs device ini
 
 ## -parameters
 
-### -param Driver 
+### -param Driver [in]
 
-[in]
+
 A handle to a framework driver object that represents the driver.
 
-### -param DeviceInit 
+### -param DeviceInit [in, out]
 
-[in, out]
+
 A pointer to a framework-allocated <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
 ## -returns
@@ -129,3 +128,4 @@ If a filter driver's <i>EvtDriverDeviceAdd</i> callback function does not return
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate">WdfDriverCreate</a>
+

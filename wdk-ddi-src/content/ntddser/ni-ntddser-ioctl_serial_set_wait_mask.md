@@ -4,7 +4,6 @@ title: IOCTL_SERIAL_SET_WAIT_MASK (ntddser.h)
 description: The IOCTL_SERIAL_SET_WAIT_MASK request configures the serial controller driver to notify a client after the occurrence of any one of a specified set of wait events.
 old-location: serports\ioctl_serial_set_wait_mask.htm
 tech.root: serports
-ms.assetid: 78d7fca7-d705-407f-95f1-670a417e2202
 ms.date: 04/23/2018
 keywords: ["IOCTL_SERIAL_SET_WAIT_MASK IOCTL"]
 ms.keywords: IOCTL_SERIAL_SET_WAIT_MASK, IOCTL_SERIAL_SET_WAIT_MASK control, IOCTL_SERIAL_SET_WAIT_MASK control code [Serial Ports], ntddser/IOCTL_SERIAL_SET_WAIT_MASK, serports.ioctl_serial_set_wait_mask, serref_8aa3f08e-f48b-44b2-91aa-849890097cef.xml
@@ -55,6 +54,8 @@ A client specifies wait events by setting an input event wait mask to the bitwis
 A client uses an <a href="/windows-hardware/drivers/ddi/ntddser/ni-ntddser-ioctl_serial_wait_on_mask">IOCTL_SERIAL_WAIT_ON_MASK</a> request to wait for the occurrence of a wait event. If a wait-on-mask request is already pending when a set-wait-mask request is processed, the pending wait-on-event request is completed with a status of STATUS_SUCCESS and the output wait event mask is set to zero.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

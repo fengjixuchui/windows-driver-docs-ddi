@@ -4,14 +4,13 @@ title: _FILE_PIPE_LOCAL_INFORMATION (ntifs.h)
 description: The FILE_PIPE_LOCAL_INFORMATION structure contains information about the local end of a named pipe.
 old-location: ifsk\file_pipe_local_information.htm
 tech.root: ifsk
-ms.assetid: 7ca66b75-e5ff-46a6-8a40-47aa53bf0f6f
 ms.date: 04/16/2018
 keywords: ["FILE_PIPE_LOCAL_INFORMATION structure"]
 ms.keywords: "*PFILE_PIPE_LOCAL_INFORMATION, FILE_PIPE_LOCAL_INFORMATION, FILE_PIPE_LOCAL_INFORMATION structure [Installable File System Drivers], PFILE_PIPE_LOCAL_INFORMATION, PFILE_PIPE_LOCAL_INFORMATION structure pointer [Installable File System Drivers], _FILE_PIPE_LOCAL_INFORMATION, ifsk.file_pipe_local_information, ntifs/FILE_PIPE_LOCAL_INFORMATION, ntifs/PFILE_PIPE_LOCAL_INFORMATION"
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating system.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntifs.h
 api_name:
+ - _FILE_PIPE_LOCAL_INFORMATION
+ - PFILE_PIPE_LOCAL_INFORMATION
  - FILE_PIPE_LOCAL_INFORMATION
 ---
 
@@ -184,3 +185,4 @@ The type of the named pipe end, which specifies whether this is the client or th
 ## -remarks
 
 For information about pipes, see <a href="/windows/desktop/ipc/pipes">Pipes</a>.
+

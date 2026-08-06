@@ -4,7 +4,6 @@ title: IPrintOemUni::TTDownloadMethod (prcomoem.h)
 description: The IPrintOemUni::TTDownloadMethod method enables a rendering plug-in to indicate the format that Unidrv should use for a specified TrueType soft font.
 old-location: print\iprintoemuni_ttdownloadmethod.htm
 tech.root: print
-ms.assetid: bf8c2baf-eaca-4d0e-a6d6-dba67b2f85db
 ms.date: 04/20/2018
 keywords: ["IPrintOemUni::TTDownloadMethod"]
 ms.keywords: IPrintOemUni interface [Print Devices],TTDownloadMethod method, IPrintOemUni.TTDownloadMethod, IPrintOemUni::TTDownloadMethod, TTDownloadMethod, TTDownloadMethod method [Print Devices], TTDownloadMethod method [Print Devices],IPrintOemUni interface, prcomoem/IPrintOemUni::TTDownloadMethod, print.iprintoemuni_ttdownloadmethod, print_unidrv-pscript_rendering_8a4dc2b9-3318-492d-8585-9fb5e6d8fd9d.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemUni.TTDownloadMethod
+ - IPrintOemUni::TTDownloadMethod
 ---
 
 # IPrintOemUni::TTDownloadMethod
@@ -58,9 +57,9 @@ Caller-supplied pointer to a <a href="/windows-hardware/drivers/ddi/printoem/ns-
 
 Caller-supplied pointer to a <a href="/windows-hardware/drivers/ddi/printoem/ns-printoem-_unifontobj">UNIFONTOBJ</a> structure.
 
-### -param pdwResult 
+### -param pdwResult [out]
 
-[out]
+
 Receives one of the following method-supplied constant values:
 
 <table>
@@ -185,3 +184,4 @@ For additional information see <a href="/windows-hardware/drivers/print/customiz
 
 
 <a href="/windows-hardware/drivers/ddi/printoem/ns-printoem-_unifontobj">UNIFONTOBJ</a>
+

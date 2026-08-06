@@ -4,7 +4,6 @@ title: WdfDmaTransactionSetMaximumLength function (wdfdmatransaction.h)
 description: The WdfDmaTransactionSetMaximumLength method sets the maximum length for the DMA transfers that are associated with a specified DMA transaction.
 old-location: wdf\wdfdmatransactionsetmaximumlength.htm
 tech.root: wdf
-ms.assetid: b195c6df-79c4-427d-b722-309f43a4e150
 ms.date: 02/26/2018
 keywords: ["WdfDmaTransactionSetMaximumLength function"]
 ms.keywords: DFDmaObjectRef_966c396e-c161-46d6-856e-9bc9aa30c610.xml, WdfDmaTransactionSetMaximumLength, WdfDmaTransactionSetMaximumLength method, kmdf.wdfdmatransactionsetmaximumlength, wdf.wdfdmatransactionsetmaximumlength, wdfdmatransaction/WdfDmaTransactionSetMaximumLength
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfDmaTransactionSetMaximumLength</b> method sets the maximum length for 
 
 ## -parameters
 
-### -param DmaTransaction 
+### -param DmaTransaction [in]
 
-[in]
+
 A handle to a DMA transaction object that the driver obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioncreate">WdfDmaTransactionCreate</a>.
 
-### -param MaximumLength 
+### -param MaximumLength [in]
 
-[in]
+
 The maximum size, in bytes, that the device can handle in a single DMA transfer operation. If your driver must run on versions of the Microsoft Windows operating systems that support a maximum of 16 <a href="/windows-hardware/drivers/kernel/map-registers">map registers</a>, <i>MaximumLength</i> must be less than 65536.
 
 The <i>MaximumLength</i> value applies only to the specified DMA transaction, as follows:

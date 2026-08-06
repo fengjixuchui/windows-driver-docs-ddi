@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient3.GetRunningProcessSystemIdByExecutableNameWide
 title: IDebugClient3::GetRunningProcessSystemIdByExecutableNameWide (dbgeng.h)
-description: The GetRunningProcessSystemIdByExecutableNameWide method searches for a process with a given executable file name and return its process ID.
+description: The IDebugClient3::GetRunningProcessSystemIdByExecutableNameWide method searches for a process with a given executable file name and return its process ID.
 old-location: debugger\getrunningprocesssystemidbyexecutablenamewide.htm
 tech.root: debugger
-ms.assetid: ab21286e-96cd-402c-bb8d-d33b4ee7938e
 ms.date: 05/03/2018
 keywords: ["IDebugClient3::GetRunningProcessSystemIdByExecutableNameWide"]
 ms.keywords: GetRunningProcessSystemIdByExecutableNameWide, GetRunningProcessSystemIdByExecutableNameWide method [Windows Debugging], GetRunningProcessSystemIdByExecutableNameWide method [Windows Debugging],IDebugClient3 interface, GetRunningProcessSystemIdByExecutableNameWide method [Windows Debugging],IDebugClient4 interface, GetRunningProcessSystemIdByExecutableNameWide method [Windows Debugging],IDebugClient5 interface, IDebugClient3 interface [Windows Debugging],GetRunningProcessSystemIdByExecutableNameWide method, IDebugClient3.GetRunningProcessSystemIdByExecutableNameWide, IDebugClient3::GetRunningProcessSystemIdByExecutableNameWide, IDebugClient4 interface [Windows Debugging],GetRunningProcessSystemIdByExecutableNameWide method, IDebugClient4::GetRunningProcessSystemIdByExecutableNameWide, IDebugClient5 interface [Windows Debugging],GetRunningProcessSystemIdByExecutableNameWide method, IDebugClient5::GetRunningProcessSystemIdByExecutableNameWide, dbgeng/IDebugClient3::GetRunningProcessSystemIdByExecutableNameWide, dbgeng/IDebugClient4::GetRunningProcessSystemIdByExecutableNameWide, dbgeng/IDebugClient5::GetRunningProcessSystemIdByExecutableNameWide, debugger.getrunningprocesssystemidbyexecutablenamewide
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient3.GetRunningProcessSystemIdByExecutableNameWide
- - IDebugClient4.GetRunningProcessSystemIdByExecutableNameWide
- - IDebugClient5.GetRunningProcessSystemIdByExecutableNameWide
+ - IDebugClient3::GetRunningProcessSystemIdByExecutableNameWide
 ---
 
 # IDebugClient3::GetRunningProcessSystemIdByExecutableNameWide
@@ -52,19 +49,19 @@ The <b>GetRunningProcessSystemIdByExecutableNameWide</b> method searches for a p
 
 ## -parameters
 
-### -param Server 
+### -param Server [in]
 
-[in]
+
 Specifies the process server to search for the executable name.  If <i>Server</i> is zero, the engine will search for the executable name among the processes running on the local computer.
 
-### -param ExeName 
+### -param ExeName [in]
 
-[in]
+
 Specifies the executable file name for which to search.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies a bit-set that controls how the executable name is matched.  The following flags may be present:
 
 <table>
@@ -96,9 +93,9 @@ Require that only one process match the executable file name <i>ExeName</i>.
 </tr>
 </table>
 
-### -param Id 
+### -param Id [out]
 
-[out]
+
 Receives the process ID of the first process to match <i>ExeName</i>.
 
 ## -returns
@@ -182,3 +179,4 @@ For more information about creating and attaching to live user-mode targets, see
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient5">IDebugClient5</a>
+

@@ -4,7 +4,6 @@ title: IOCTL_NFCSE_ENUM_ENDPOINTS (nfcsedev.h)
 description: Returns information regarding the list of all the secure elements attached to the NFC controller.
 old-location: nfpdrivers\ioctl_nfcse_enum_endpoints.htm
 tech.root: nfpdrivers
-ms.assetid: BDE62A2B-423E-4656-91CC-5EBDE50C6BB0
 ms.date: 02/15/2018
 keywords: ["IOCTL_NFCSE_ENUM_ENDPOINTS IOCTL"]
 ms.keywords: IOCTL_NFCSE_ENUM_ENDPOINTS, IOCTL_NFCSE_ENUM_ENDPOINTS control, IOCTL_NFCSE_ENUM_ENDPOINTS control code [Near-Field Proximity Drivers], _IOCTL_NFCSE_ENUM_ENDPOINTS, nfcsedev/IOCTL_NFCSE_ENUM_ENDPOINTS, nfpdrivers.ioctl_nfcse_enum_endpoints
@@ -49,6 +48,8 @@ api_name:
  Returns information regarding the list of all the secure elements attached to the NFC controller. Note that the caller must allocate an output buffer large enough to hold information regarding all the secure elements that were enumerated by the driver i.e. Total number of SEs Enumerated x Size of the SE endpoint info otherwise the driver should return a STATUS_BUFFER_OVERFLOW error code to the client with the NumberOfEndpoints field containing the number of secure elements enumerated. The GUID identifying the secure element which maybe used to refer to a particular secure element.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

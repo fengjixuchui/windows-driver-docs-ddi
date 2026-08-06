@@ -4,7 +4,6 @@ title: StorPortBusy function (storport.h)
 description: The StorPortBusy routine notifies the port driver that the adapter is currently busy, handling outstanding requests.
 old-location: storage\storportbusy.htm
 tech.root: storage
-ms.assetid: 81e5b26d-78b5-4ee7-a47c-fc92d01752d1
 ms.date: 03/29/2018
 keywords: ["StorPortBusy function"]
 ms.keywords: StorPortBusy, StorPortBusy routine [Storage Devices], storage.storportbusy, storport/StorPortBusy, storprt_b4765f8e-c48f-4920-bd1a-1ff9dbdd8656.xml
@@ -51,14 +50,14 @@ The <b>StorPortBusy</b> routine notifies the port driver that the adapter is cur
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
 
-### -param RequestsToComplete 
+### -param RequestsToComplete [in]
 
-[in]
+
 Indicates the number of requests that the adapter must complete before resuming I/O requests to the miniport driver. If <i>RequestsToComplete</i> is greater than the number of currently outstanding requests, the Storport driver will complete all outstanding requests to the adapter before resuming requests.
 
 ## -returns

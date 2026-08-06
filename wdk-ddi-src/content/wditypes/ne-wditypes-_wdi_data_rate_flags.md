@@ -4,7 +4,6 @@ title: _WDI_DATA_RATE_FLAGS (wditypes.h)
 description: The WDI_DATA_RATE_FLAGS enumeration defines the data rate flags.
 old-location: netvista\wdi_data_rate_flags.htm
 tech.root: netvista
-ms.assetid: 937D1C48-AC5A-4D55-8722-BDC1192613A9
 ms.date: 05/02/2018
 keywords: ["WDI_DATA_RATE_FLAGS enumeration"]
 ms.keywords: WDI_DATA_RATE_FLAGS, WDI_DATA_RATE_FLAGS enumeration [Device and Driver Installation], WDI_DATA_RATE_NON_STANDARD, WDI_DATA_RATE_RX_RATE, WDI_DATA_RATE_TX_RATE, _WDI_DATA_RATE_FLAGS, netvista.wdi_data_rate_flags, netvista.wifi_data_rate_flags, wditypes/WDI_DATA_RATE_FLAGS, wditypes/WDI_DATA_RATE_NON_STANDARD, wditypes/WDI_DATA_RATE_RX_RATE, wditypes/WDI_DATA_RATE_TX_RATE
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_DATA_RATE_FLAGS
  - WDI_DATA_RATE_FLAGS
 ---
 
@@ -47,6 +47,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_DATA_RATE_FLAGS enumeration defines the data rate flags.
 

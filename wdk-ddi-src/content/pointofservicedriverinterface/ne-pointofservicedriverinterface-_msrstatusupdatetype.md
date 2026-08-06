@@ -4,7 +4,6 @@ title: _MsrStatusUpdateType (pointofservicedriverinterface.h)
 description: This enumeration defines the constants that indicate the magnetic stripe reader (MSR) status.
 old-location: pos\msrstatusupdatetype.htm
 tech.root: pos
-ms.assetid: f7e055ac-df7c-4993-b7aa-f455c4548d5e
 ms.date: 02/23/2018
 keywords: ["MsrStatusUpdateType enumeration"]
 ms.keywords: MsrStatusUpdateType, MsrStatusUpdateType enumeration, MsrStatusUpdateType_Authenticated, MsrStatusUpdateType_Extended, MsrStatusUpdateType_Off, MsrStatusUpdateType_OffOrOffline, MsrStatusUpdateType_Offline, MsrStatusUpdateType_Online, MsrStatusUpdateType_Unauthenticated, _MsrStatusUpdateType, pointofservicedriverinterface/MsrStatusUpdateType, pointofservicedriverinterface/MsrStatusUpdateType_Authenticated, pointofservicedriverinterface/MsrStatusUpdateType_Extended, pointofservicedriverinterface/MsrStatusUpdateType_Off, pointofservicedriverinterface/MsrStatusUpdateType_OffOrOffline, pointofservicedriverinterface/MsrStatusUpdateType_Offline, pointofservicedriverinterface/MsrStatusUpdateType_Online, pointofservicedriverinterface/MsrStatusUpdateType_Unauthenticated, pos.msrstatusupdatetype
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - pointofservicedriverinterface.h
 api_name:
+ - _MsrStatusUpdateType
  - MsrStatusUpdateType
 ---
 
@@ -79,3 +79,4 @@ The device is authenticated. This is valid if the device supports authentication
 ### -field MsrStatusUpdateType_Extended
 
 Vendor-specific status information. Reported in IMagneticStripeReaderStatusUpdatedEventArgs.ExtendedStatus.
+

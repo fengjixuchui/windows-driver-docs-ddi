@@ -1,10 +1,9 @@
 ---
 UID: NF:engextcpp.ExtRemoteTyped.Clear
 title: ExtRemoteTyped::Clear method (engextcpp.h)
-description: The ExtRemoteTyped class provides the ability to manipulate typed data on the target.
+description: The Clear method of the ExtRemoteTyped class. The ExtRemoteTyped class provides the ability to manipulate typed data on the target.
 old-location: debugger\extremotetyped.htm
 tech.root: debugger
-ms.assetid: 1f5d71a5-fa60-4819-9838-2b035ef21374
 ms.date: 08/09/2018
 keywords: ["ExtRemoteTyped::Clear method"]
 ms.keywords: ExtRemoteTyped class [Windows Debugging], described, ExtRemoteTyped, engextcpp/ExtRemoteTyped, ExtRemoteTyped class [Windows Debugging], debugger.extremotetyped, Clear, EngExtCpp_Ref_04970dac-e759-4a04-a1e0-8dab752c1418.xml, ExtRemoteTyped::Clear
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteTyped
+ - ExtRemoteTyped::Clear
 ---
 
 # ExtRemoteTyped::Clear method

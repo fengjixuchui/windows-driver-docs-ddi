@@ -4,7 +4,6 @@ title: IOCTL_ATA_PASS_THROUGH (ntddscsi.h)
 description: Allows an application to send almost any ATA command to a target device, with the following restrictions:\_If a class driver for the target type of device exists, the application must send the request to the class driver.
 old-location: storage\ioctl_ata_pass_through.htm
 tech.root: storage
-ms.assetid: 350d9777-18d7-412a-ab60-1e17070a12af
 ms.date: 03/29/2018
 keywords: ["IOCTL_ATA_PASS_THROUGH IOCTL"]
 ms.keywords: IOCTL_ATA_PASS_THROUGH, IOCTL_ATA_PASS_THROUGH control, IOCTL_ATA_PASS_THROUGH control code [Storage Devices], k307_e93738e1-b773-452b-8776-854f9c616967.xml, ntddscsi/IOCTL_ATA_PASS_THROUGH, storage.ioctl_ata_pass_through
@@ -69,6 +68,8 @@ Applications do not require administrative privileges to send a pass-through req
 The calling application provides the ATA task file register contents for the intended command in the <a href="/windows-hardware/drivers/ddi/ntddscsi/ns-ntddscsi-_ata_pass_through_ex">ATA_PASS_THROUGH_EX</a> structure. The system double buffers all data transfers. This request is typically used for transferring small amounts of data (less than 16 KB).
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

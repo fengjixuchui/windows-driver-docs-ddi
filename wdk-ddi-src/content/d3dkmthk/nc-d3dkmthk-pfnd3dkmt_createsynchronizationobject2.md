@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_CREATESYNCHRONIZATIONOBJECT2
 title: PFND3DKMT_CREATESYNCHRONIZATIONOBJECT2 (d3dkmthk.h)
 description: The PFND3DKMT_CREATESYNCHRONIZATIONOBJECT2 callback function creates a synchronization object.
-ms.assetid: 5fff0987-f4dd-4a6e-9415-0e9bf5be4d00
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_CREATESYNCHRONIZATIONOBJECT2 callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The PFND3DKMT_CREATESYNCHRONIZATIONOBJECT2 callback function creates a synchroni
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_CREATESYNCHRONIZATIONOBJECT2](ns-d3dkmthk-_d3dkmt_createsynchronizationobject2.md) structure.
 

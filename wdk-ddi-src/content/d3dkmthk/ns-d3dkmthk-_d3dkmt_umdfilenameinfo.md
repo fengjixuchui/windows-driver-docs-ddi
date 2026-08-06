@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_UMDFILENAMEINFO
 title: _D3DKMT_UMDFILENAMEINFO (d3dkmthk.h)
 description: The D3DKMT_UMDFILENAMEINFO structure contains the name of an OpenGL ICD that is based on the specified version of the DirectX runtime.
 old-location: display\d3dkmt_umdfilenameinfo.htm
-ms.assetid: 456aef5a-f297-4670-8a83-b468569d23ad
 ms.date: 05/10/2018
 keywords: ["D3DKMT_UMDFILENAMEINFO structure"]
 ms.keywords: D3DKMT_UMDFILENAMEINFO, D3DKMT_UMDFILENAMEINFO structure [Display Devices], OpenGL_Structs_631f8c52-0978-4f26-bd6b-08348676795b.xml, _D3DKMT_UMDFILENAMEINFO, d3dkmthk/D3DKMT_UMDFILENAMEINFO, display.d3dkmt_umdfilenameinfo
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_UMDFILENAMEINFO
  - D3DKMT_UMDFILENAMEINFO
 ---
 
@@ -52,9 +52,9 @@ The D3DKMT_UMDFILENAMEINFO structure contains the name of an OpenGL ICD that is 
 
 ## -struct-fields
 
-### -field Version
+### -field Version [in]
 
-[in] A KMTUMDVERSION-typed value that indicates the version of the DirectX runtime to retrieve the name of an OpenGL ICD for. The following table lists the possible values.
+A KMTUMDVERSION-typed value that indicates the version of the DirectX runtime to retrieve the name of an OpenGL ICD for. The following table lists the possible values.
 
 |Value|Meaning|
 |--- |--- |
@@ -62,7 +62,7 @@ The D3DKMT_UMDFILENAMEINFO structure contains the name of an OpenGL ICD that is 
 |KMTUMDVERSION_DX10 (1)|DirectX version 10.0|
 |KMTUMDVERSION_DX11 (2)|DirectX version 11.0|
 
-### -field UmdFileName
+### -field UmdFileName [out]
 
-[out] A string that contains the name of the OpenGL ICD.
+A string that contains the name of the OpenGL ICD.
 

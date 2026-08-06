@@ -4,7 +4,6 @@ title: IWDFRemoteInterface (wudfddi.h)
 description: UMDF drivers receive a pointer to this interface by calling the IWDFDevice2::CreateRemoteInterface method.
 old-location: wdf\iwdfremoteinterface.htm
 tech.root: wdf
-ms.assetid: 10d4cd20-c797-455c-b16d-00982be5c1b7
 ms.date: 02/26/2018
 keywords: ["IWDFRemoteInterface interface"]
 ms.keywords: IWDFRemoteInterface, IWDFRemoteInterface interface, IWDFRemoteInterface interface, described, wdf.iwdfremoteinterface, wudfddi/IWDFRemoteInterface
@@ -27,7 +26,6 @@ req.dll: WUDFx.dll
 req.irql: 
 targetos: Windows
 req.typenames: POWER_ACTION, *PPOWER_ACTION
-req.product: Windows 10 or later.
 f1_keywords:
  - IWDFRemoteInterface
  - wudfddi/IWDFRemoteInterface

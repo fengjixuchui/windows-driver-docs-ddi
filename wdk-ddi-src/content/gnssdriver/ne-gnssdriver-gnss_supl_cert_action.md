@@ -1,10 +1,9 @@
 ---
-UID: NE:gnssdriver.__unnamed_enum_10
+UID: NE:gnssdriver.GNSS_SUPL_CERT_ACTION
 title: GNSS_SUPL_CERT_ACTION (gnssdriver.h)
 description: This enumeration indicates the action to take upon receipt of the SUPL certificate, which is defined by the GNSS_SUPL_CERT_CONFIG structure.
 old-location: gnss\gnss_supl_cert_action.htm
 tech.root: gnss
-ms.assetid: DE51CB88-E761-40DC-B437-7572CD95FB4A
 ms.date: 02/15/2018
 keywords: ["GNSS_SUPL_CERT_ACTION enumeration"]
 ms.keywords: GNSS_SUPL_CERT_ACTION, GNSS_SUPL_CERT_ACTION enumeration [Sensor Devices], GNSS_Supl_Cert_Delete, GNSS_Supl_Cert_Inject, GNSS_Supl_Cert_Purge, gnss.gnss_supl_cert_action, gnssdriver/GNSS_SUPL_CERT_ACTION, gnssdriver/GNSS_Supl_Cert_Delete, gnssdriver/GNSS_Supl_Cert_Inject, gnssdriver/GNSS_Supl_Cert_Purge
@@ -61,3 +60,4 @@ Indicates that the certificate specified by the <b>SuplCertName</b> member of th
 ### -field GNSS_Supl_Cert_Purge
 
 Indicates that all certificates previously injected into the GNSS driver should be deleted.
+

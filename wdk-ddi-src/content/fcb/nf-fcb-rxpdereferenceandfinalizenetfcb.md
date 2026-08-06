@@ -4,7 +4,6 @@ title: RxpDereferenceAndFinalizeNetFcb function (fcb.h)
 description: RxpDereferenceAndFinalizeNetFcb decrements the reference count and finalizes an FCB structure.
 old-location: ifsk\rxpdereferenceandfinalizenetfcb.htm
 tech.root: ifsk
-ms.assetid: 954a4811-4515-4ed4-a4f1-df598d08fc77
 ms.date: 04/16/2018
 keywords: ["RxpDereferenceAndFinalizeNetFcb function"]
 ms.keywords: RxpDereferenceAndFinalizeNetFcb, RxpDereferenceAndFinalizeNetFcb function [Installable File System Drivers], fcb/RxpDereferenceAndFinalizeNetFcb, ifsk.rxpdereferenceandfinalizenetfcb, rxref_474f30d3-858e-4179-8236-3068a2325818.xml
@@ -54,19 +53,19 @@ api_name:
 
 <p>A pointer to the FCB structure to be dereferenced and finalized.</p>
 
-### -param RxContext 
+### -param RxContext [in]
 
-[in]
+
 A pointer to the RX_CONTEXT structure associated with the <i>Fcb</i> parameter.
 
-### -param RecursiveFinalize 
+### -param RecursiveFinalize [in]
 
-[in]
+
 A parameter that indicates if this should be a recursive finalize operation.
 
-### -param ForceFinalize 
+### -param ForceFinalize [in]
 
-[in]
+
 A parameter that indicates if this routine should force the <i>Fcb</i> parameter to be finalized.
 
 ## -returns

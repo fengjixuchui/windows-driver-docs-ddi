@@ -4,7 +4,6 @@ title: wiauDbgError function (wiautil.h)
 description: The wiauDbgError function logs an error message.
 old-location: image\wiaudbgerror.htm
 tech.root: image
-ms.assetid: 112d6f90-33b3-446b-943c-8995e6ec3378
 ms.date: 05/03/2018
 keywords: ["wiauDbgError function"]
 ms.keywords: image.wiaudbgerror, wiauDbgError, wiauDbgError function [Imaging Devices], wiauFncs_73184286-df53-4272-9fa8-aae1d1fb3dbc.xml, wiautil/wiauDbgError
@@ -58,7 +57,7 @@ Pointer to a string containing the name of the function or method into which the
 
 Pointer to a format string that specifies a variable argument list, which starts with an ANSI format string containing the message and any conversion specifiers. The ellipsis (...) specifies a variable number of arguments that are to be output.
 
-### -param param
+### -param ...
 
 ####### - fmt, ...
 
@@ -79,3 +78,4 @@ wiauDbgError("Read", "Attempting to read past end of buffer");
 [wiauDbgTrace](./nf-wiautil-wiaudbgtrace.md)
 
 [wiauDbgWarning](./nf-wiautil-wiaudbgwarning.md)
+

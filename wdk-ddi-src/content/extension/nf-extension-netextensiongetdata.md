@@ -3,7 +3,6 @@ UID: NF:extension.NetExtensionGetData
 title: NetExtensionGetData function (extension.h)
 description: The NetExtensionGetData function retrieves packet extension data for a net packet.
 tech.root: netvista
-ms.assetid: D2B02C1E-3BF1-4380-8D59-C93FAF811CC8
 ms.date: 02/06/2019
 keywords: ["NetExtensionGetData function"]
 ms.keywords: NetExtensionGetData
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.29
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -28,13 +27,13 @@ targetos: Windows
 f1_keywords:
  - NetExtensionGetData
  - extension/NetExtensionGetData
-topictype:
+topic_type:
  - apiref
-apitype:
+api_type:
  - DllExport
-apilocation:
+api_location:
  - NtosKrnl.exe
-apiname:
+api_name:
  - NetExtensionGetData
 ---
 
@@ -64,7 +63,7 @@ Returns a pointer to the structure that holds the extension information for this
 Client drivers should not call this function directly. Instead, they should call the appropriate wrapper function for the type of extension they are getting:
 
 - For checksum offload information, the client driver calls [**NetExtensionGetPacketChecksum**](../checksum/nf-checksum-netextensiongetpacketchecksum.md).
-- For Large Send Offload (LSO) information, the client driver calls [**NetExtensionGetPacketLso**](../lso/nf-lso-netextensiongetpacketlso.md).
+- For Generic Segmentation Offload (GSO) information, the client driver calls [**NetExtensionGetPacketLso**](../gso/nf-gso-netextensiongetpacketgso.md).
 - For Receive Segment Coalescence (RSC) offload information, the client driver calls [**NetExtensionGetPacketRsc**](../rsc/nf-rsc-netextensiongetpacketrsc.md).
 
 ## -see-aextension
@@ -75,6 +74,6 @@ Client drivers should not call this function directly. Instead, they should call
 
 [**NetExtensionGetPacketChecksum**](../checksum/nf-checksum-netextensiongetpacketchecksum.md)
 
-[**NetExtensionGetPacketLso**](../lso/nf-lso-netextensiongetpacketlso.md)
+[**NetExtensionGetPacketGso**](../gso/nf-gso-netextensiongetpacketgso.md)
 
 [**NetExtensionGetPacketRsc**](../rsc/nf-rsc-netextensiongetpacketrsc.md)

@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILTDSCDMAMRL
 title: RILTDSCDMAMRL (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILTDSCDMAMRL structure for internal use only. Don't use this structure in your code."
 old-location: netvista\riltdscdmamrl_2.htm
 tech.root: netvista
-ms.assetid: 42cf6592-345c-4e4c-8614-37dc82ed6470
 ms.date: 02/26/2018
 keywords: ["RILTDSCDMAMRL structure"]
 ms.keywords: "*LPRILTDSCDMAMRL, RILTDSCDMAMRL, RILTDSCDMAMRL structure [Network Drivers Starting with Windows Vista], netvista.riltdscdmamrl_2, rilapitypes/RILTDSCDMAMRL"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: RILTDSCDMAMRL, *LPRILTDSCDMAMRL
-req.product: Windows 10 or later.
 f1_keywords:
  - RILTDSCDMAMRL
  - rilapitypes/RILTDSCDMAMRL
@@ -42,6 +40,7 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILTDSCDMAMRL
+ - LPRILTDSCDMAMRL
 ---
 
 # RILTDSCDMAMRL structure (rilapitypes.h)

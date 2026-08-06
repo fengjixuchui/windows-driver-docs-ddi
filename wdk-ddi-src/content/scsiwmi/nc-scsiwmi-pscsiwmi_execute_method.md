@@ -4,7 +4,6 @@ title: PSCSIWMI_EXECUTE_METHOD (scsiwmi.h)
 description: A miniport driver's HwScsiWmiExecuteMethod routine is called to execute a method associated with a data block.
 old-location: storage\hwscsiwmiexecutemethod.htm
 tech.root: storage
-ms.assetid: 67a82442-591e-4e52-aaaf-b3cdb68c483a
 ms.date: 03/29/2018
 keywords: ["PSCSIWMI_EXECUTE_METHOD callback function"]
 ms.keywords: HwScsiWmiExecuteMethod, HwScsiWmiExecuteMethod callback function [Storage Devices], PSCSIWMI_EXECUTE_METHOD, PSCSIWMI_EXECUTE_METHOD callback, Scsimini_a0b3e943-a363-478d-9d68-09acf0c5b591.xml, scsiwmi/HwScsiWmiExecuteMethod, storage.hwscsiwmiexecutemethod
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - scsiwmi.h
 api_name:
- - HwScsiWmiExecuteMethod
+ - PSCSIWMI_EXECUTE_METHOD
 ---
 
 # PSCSIWMI_EXECUTE_METHOD callback function
@@ -51,44 +50,44 @@ A miniport driver's <b>HwScsiWmiExecuteMethod</b> routine is called to execute a
 
 ## -parameters
 
-### -param DeviceContext 
+### -param DeviceContext [in]
 
-[in]
+
 Points to the miniport driver-defined context value passed to <a href="/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmidispatchfunction">ScsiPortWmiDispatchFunction</a>.
 
-### -param RequestContext 
+### -param RequestContext [in]
 
-[in]
+
 Points to the SCSIWMI_REQUEST_CONTEXT structure that the miniport driver passed to <a href="/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmidispatchfunction">ScsiPortWmiDispatchFunction</a>.
 
-### -param GuidIndex 
+### -param GuidIndex [in]
 
-[in]
+
 Specifies the data block by its index into the list of GUIDs in the SCSI_WMILIB_CONTEXT structure that the miniport driver passed to <a href="/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmidispatchfunction">ScsiPortWmiDispatchFunction</a>.
 
-### -param InstanceIndex 
+### -param InstanceIndex [in]
 
-[in]
+
 If the block specified by <i>GuidIndex</i> has multiple instances, <i>InstanceIndex</i> specifies the instance.
 
-### -param MethodId 
+### -param MethodId [in]
 
-[in]
+
 Specifies the ID of the method to execute. The miniport driver defines the method ID as an item in a data block.
 
-### -param InBufferSize 
+### -param InBufferSize [in]
 
-[in]
+
 Indicates the size in bytes of the input data. If there is no input data, <i>InBufferSize</i> is zero.
 
-### -param OutBufferSize 
+### -param OutBufferSize [in]
 
-[in]
+
 Indicates the number of bytes available in the buffer for output data.
 
-### -param Buffer 
+### -param Buffer [in, out]
 
-[in, out]
+
 Points to a buffer that holds the input data and receives the output data, if any, from the method. If the buffer is too small to receive all of the output, the miniport driver calls <b>ScsiPortWmiPostProcess</b> with SRB_STATUS_DATA_OVERRUN and the size required.
 
 ## -returns
@@ -120,3 +119,4 @@ The miniport driver executes the method and writes output, if any, to the buffer
 
 
 <a href="/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmipostprocess">ScsiPortWmiPostProcess</a>
+

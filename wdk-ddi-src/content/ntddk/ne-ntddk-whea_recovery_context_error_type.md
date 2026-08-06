@@ -1,9 +1,8 @@
 ---
 UID: NE:ntddk._WHEA_RECOVERY_CONTEXT_ERROR_TYPE
 title: WHEA_RECOVERY_CONTEXT_ERROR_TYPE
-description: 
-tech.root: 
-ms.assetid: cae5ce3d-64b2-4422-a681-1b7652387df7
+description: "Learn more about: WHEA_RECOVERY_CONTEXT_ERROR_TYPE enumeration"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEA_RECOVERY_CONTEXT_ERROR_TYPE enumeration"]
 ms.keywords: WHEA_RECOVERY_CONTEXT_ERROR_TYPE, WHEA_RECOVERY_CONTEXT_ERROR_TYPE, *PWHEA_RECOVERY_CONTEXT_ERROR_TYPE,
@@ -33,9 +32,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_RECOVERY_CONTEXT_ERROR_TYPE
+ - PWHEA_RECOVERY_CONTEXT_ERROR_TYPE
  - WHEA_RECOVERY_CONTEXT_ERROR_TYPE
-product:
- - Windows
 ---
 
 # WHEA_RECOVERY_CONTEXT_ERROR_TYPE enumeration

@@ -1,10 +1,9 @@
 ---
-UID: NE:ksproxy.__unnamed_enum_7
+UID: NE:ksproxy.KSIOOPERATION
 title: KSIOOPERATION (ksproxy.h)
-description: 
+description: "Learn more about: KSIOOPERATION enumeration"
 old-location: stream\ksiooperation.htm
 tech.root: stream
-ms.assetid: 993909CB-B00C-40C0-ADDA-DB4389D9812E
 ms.date: 04/23/2018
 keywords: ["KSIOOPERATION enumeration"]
 ms.keywords: KSIOOPERATION, KSIOOPERATION enumeration [Streaming Media Devices], KsIoOperation_Read, KsIoOperation_Write, ksproxy/KSIOOPERATION, ksproxy/KsIoOperation_Read, ksproxy/KsIoOperation_Write, stream.ksiooperation

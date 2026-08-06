@@ -1,10 +1,9 @@
 ---
 UID: NE:ntifs._RTL_MEMORY_TYPE
-title: _RTL_MEMORY_TYPE (ntifs.h)
+title: RTL_MEMORY_TYPE (ntifs.h)
 description: Defines the memory type the heap is supposed to use.
-ms.assetid: ba671026-62dc-4e7e-aef4-bd2507d58ecb
 tech.root: ifsk
-ms.date: 10/19/2018
+ms.date: 05/24/2022
 keywords: ["RTL_MEMORY_TYPE enumeration"]
 ms.keywords: _RTL_MEMORY_TYPE, RTL_MEMORY_TYPE, *PRTL_MEMORY_TYPE,
 req.header: ntifs.h
@@ -32,10 +31,11 @@ api_location:
  - ntifs.h
 api_name:
  - _RTL_MEMORY_TYPE
+ - PRTL_MEMORY_TYPE
+ - RTL_MEMORY_TYPE
 ---
 
-# _RTL_MEMORY_TYPE enumeration
-
+# RTL_MEMORY_TYPE enumeration
 
 ## -description
 
@@ -43,29 +43,34 @@ Defines the memory type the heap is supposed to use.
 
 ## -enum-fields
 
-### -field MemoryTypePaged 
+### -field MemoryTypePaged
 
-Specifies the memory type is paged.
+The memory type is paged.
 
-### -field MemoryTypeNonPaged 
+### -field MemoryTypeNonPaged
 
-Specifies the memory type is non-paged.
+The memory type is non-paged.
+
+### -field MemoryType64KPage
+
+The memory type is a 64K page.
 
 ### -field MemoryTypeLargePage
 
-Specifies the memory type is a large page.
+The memory type is a large page.
 
-### -field MemoryTypeHugePage 
+### -field MemoryTypeHugePage
 
-Specifies the memory type is a huge page. Not supported on 32-bit systems.
+The memory type is a huge page. Not supported on 32-bit systems.
 
-### -field MemoryTypeMax 
+### -field MemoryTypeCustom
 
-Specifies the memory type is the maximum page size.
+The memory type is a custom memory type.
 
-## -remarks
+### -field MemoryTypeMax
+
+Maximum value for this enumeration.
 
 ## -see-also
 
-[_RTL_SEGMENT_HEAP_MEMORY_SOURCE](ns-ntifs-_rtl_segment_heap_memory_source.md)
-
+[**RTL_SEGMENT_HEAP_MEMORY_SOURCE**](ns-ntifs-_rtl_segment_heap_memory_source.md)

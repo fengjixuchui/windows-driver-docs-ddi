@@ -4,7 +4,6 @@ title: _HDAUDIO_BUS_INTERFACE_V2 (hdaudio.h)
 description: The HDAUDIO_BUS_INTERFACE_V2 structure specifies the information that a client requires to call the routines in the HDAUDIO_BUS_INTERFACE_V2 version of the HD Audio DDI.
 old-location: audio\hdaudio_bus_interface_v2.htm
 tech.root: audio
-ms.assetid: 7d639909-dc56-4ec5-b596-bfbbf262a3d9
 ms.date: 05/08/2018
 keywords: ["HDAUDIO_BUS_INTERFACE_V2 structure"]
 ms.keywords: "*PHDAUDIO_BUS_INTERFACE_V2, HDAUDIO_BUS_INTERFACE_V2, HDAUDIO_BUS_INTERFACE_V2 structure [Audio Devices], PHDAUDIO_BUS_INTERFACE_V2, PHDAUDIO_BUS_INTERFACE_V2 structure pointer [Audio Devices], _HDAUDIO_BUS_INTERFACE_V2, aud-prop2_42a4681c-608a-479b-a33d-725f9625d64b.xml, audio.hdaudio_bus_interface_v2, hdaudio/HDAUDIO_BUS_INTERFACE_V2, hdaudio/PHDAUDIO_BUS_INTERFACE_V2"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hdaudio.h
 api_name:
+ - _HDAUDIO_BUS_INTERFACE_V2
+ - PHDAUDIO_BUS_INTERFACE_V2
  - HDAUDIO_BUS_INTERFACE_V2
 ---
 
@@ -223,3 +224,4 @@ The names and definitions of the first five members of the <b>HDAUDIO_BUS_INTERF
 
 
 <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-punregister_notification_event">UnregisterNotificationEvent</a>
+

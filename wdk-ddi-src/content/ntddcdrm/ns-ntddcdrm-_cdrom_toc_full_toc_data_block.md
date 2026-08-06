@@ -4,7 +4,6 @@ title: _CDROM_TOC_FULL_TOC_DATA_BLOCK (ntddcdrm.h)
 description: The CDROM_TOC_FULL_TOC_DATA_BLOCK structure contains track descriptor data used in conjunction with the data from the CDROM_TOC_FULL_TOC_DATA structure.
 old-location: storage\cdrom_toc_full_toc_data_block.htm
 tech.root: storage
-ms.assetid: 8d6d1283-b64e-4c3b-8a45-376cfe76a19d
 ms.date: 01/08/2020
 keywords: ["CDROM_TOC_FULL_TOC_DATA_BLOCK structure"]
 ms.keywords: "*PCDROM_TOC_FULL_TOC_DATA_BLOCK, CDROM_TOC_FULL_TOC_DATA_BLOCK, CDROM_TOC_FULL_TOC_DATA_BLOCK structure [Storage Devices], PCDROM_TOC_FULL_TOC_DATA_BLOCK, PCDROM_TOC_FULL_TOC_DATA_BLOCK structure pointer [Storage Devices], _CDROM_TOC_FULL_TOC_DATA_BLOCK, ntddcdrm/CDROM_TOC_FULL_TOC_DATA_BLOCK, ntddcdrm/PCDROM_TOC_FULL_TOC_DATA_BLOCK, storage.cdrom_toc_full_toc_data_block, structs-CD-ROM_c55aee22-f6ca-4567-82c6-7bb960f4976a.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddcdrm.h
 api_name:
+ - _CDROM_TOC_FULL_TOC_DATA_BLOCK
+ - PCDROM_TOC_FULL_TOC_DATA_BLOCK
  - CDROM_TOC_FULL_TOC_DATA_BLOCK
 ---
 
@@ -107,3 +108,4 @@ Contains the minute, second, and frame. Msf[0] contains the minutes field. Msf[1
 [CDROM_TOC_FULL_TOC_DATA](./ns-ntddcdrm-_cdrom_toc_full_toc_data.md)
 
 [IOCTL_CDROM_READ_TOC_EX](./ni-ntddcdrm-ioctl_cdrom_read_toc_ex.md)
+

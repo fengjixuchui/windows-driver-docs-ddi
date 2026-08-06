@@ -4,7 +4,6 @@ title: PFNKSPINSETDATAFORMAT (ks.h)
 description: An AVStream minidriver's AVStrMiniPinSetDataFormat routine is called at pin creation time to verify that the previously agreed upon data format is acceptable for this KSPIN structure and a match for this KSDATARANGE structure.
 old-location: stream\avstrminipinsetdataformat.htm
 tech.root: stream
-ms.assetid: f38222e8-f432-4a28-ba2f-2e4f60edd762
 ms.date: 04/23/2018
 keywords: ["PFNKSPINSETDATAFORMAT callback function"]
 ms.keywords: AVStrMiniPinSetDataFormat, AVStrMiniPinSetDataFormat routine [Streaming Media Devices], PFNKSPINSETDATAFORMAT, avstclbk_c72cee40-d3d3-45df-8ece-2eb0a8b52e38.xml, ks/AVStrMiniPinSetDataFormat, stream.avstrminipinsetdataformat
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - AVStrMiniPinSetDataFormat
+ - PFNKSPINSETDATAFORMAT
 ---
 
 # PFNKSPINSETDATAFORMAT callback function
@@ -50,29 +49,29 @@ An AVStream minidriver's <i>AVStrMiniPinSetDataFormat</i> routine is called at p
 
 ## -parameters
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a> structure for which the data format is changing.
 
-### -param OldFormat 
+### -param OldFormat [in, optional]
 
-[in, optional]
+
 Optional. Pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat">KSDATAFORMAT</a> structure. Minidrivers can use this field to determine the data format that the pin was using before this call. If <b>NULL</b>, indicates that no data format has been set for the pin and that <i>Pin's</i> create dispatch has not yet been made. A <b>NULL</b> value here indicates that this routine was called at initialization time for format verification.
 
-### -param OldAttributeList 
+### -param OldAttributeList [in, optional]
 
-[in, optional]
+
 Optional. Pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksmultiple_item">KSMULTIPLE_ITEM</a> structure that stores attributes for the previous format.
 
-### -param DataRange 
+### -param DataRange [in]
 
-[in]
+
 Pointer to a <a href="/previous-versions/ff561658(v=vs.85)">KSDATARANGE</a> structure. The data range for the new format.
 
-### -param AttributeRange 
+### -param AttributeRange [in, optional]
 
-[in, optional]
+
 Optional. The attribute range for the new format.
 
 ## -returns
@@ -114,3 +113,4 @@ This routine is optional.
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin_dispatch">KSPIN_DISPATCH</a>
+

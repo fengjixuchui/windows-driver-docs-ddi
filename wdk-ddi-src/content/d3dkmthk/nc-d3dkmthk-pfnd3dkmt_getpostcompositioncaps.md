@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_GETPOSTCOMPOSITIONCAPS
 title: PFND3DKMT_GETPOSTCOMPOSITIONCAPS (d3dkmthk.h)
 description: Pfnd3dkmtGetpostcompositioncaps retrieves post composition capabilities.
-ms.assetid: 4c14764f-5dfd-4ec2-9185-6aaeca02bafd
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_GETPOSTCOMPOSITIONCAPS callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ Pfnd3dkmtGetpostcompositioncaps retrieves post composition capabilities.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_GET_POST_COMPOSITION_CAPS](ns-d3dkmthk-_d3dkmt_get_post_composition_caps.md) structure.
 

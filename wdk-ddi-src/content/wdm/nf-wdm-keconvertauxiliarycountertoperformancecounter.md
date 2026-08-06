@@ -4,7 +4,6 @@ title: KeConvertAuxiliaryCounterToPerformanceCounter function (wdm.h)
 description: The KeConvertAuxiliaryCounterToPerformanceCounter routine converts the specified auxiliary counter value into a performance counter value.
 old-location: kernel\keconvertauxiliarycountertoperformancecounter.htm
 tech.root: kernel
-ms.assetid: 90F4CE6D-F51A-4B18-B328-63AF4D71A690
 ms.date: 04/30/2018
 keywords: ["KeConvertAuxiliaryCounterToPerformanceCounter function"]
 ms.keywords: KeConvertAuxiliaryCounterToPerformanceCounter, KeConvertAuxiliaryCounterToPerformanceCounter routine [Kernel-Mode Driver Architecture], kernel.keconvertauxiliarycountertoperformancecounter, wdm/KeConvertAuxiliaryCounterToPerformanceCounter
@@ -50,19 +49,19 @@ The  <b>KeConvertAuxiliaryCounterToPerformanceCounter</b> routine converts the s
 
 ## -parameters
 
-### -param AuxiliaryCounterValue 
+### -param AuxiliaryCounterValue [in]
 
-[in]
+
 The auxiliary counter value to convert.
 
-### -param PerformanceCounterValue 
+### -param PerformanceCounterValue [out]
 
-[out]
+
 A pointer to the variable that contains the converted performance counter value.
 
-### -param ConversionError 
+### -param ConversionError [out, optional]
 
-[out, optional]
+
 A pointer to a variable that contains the estimated conversion error in units of nanosecond.
 
 ## -returns

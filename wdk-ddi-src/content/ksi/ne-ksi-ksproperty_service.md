@@ -1,10 +1,9 @@
 ---
-UID: NE:ksi.__unnamed_enum_0
+UID: NE:ksi.KSPROPERTY_SERVICE
 title: KSPROPERTY_SERVICE (ksi.h)
-description: 
+description: "Learn more about: KSPROPERTY_SERVICE enumeration"
 old-location: stream\ksproperty_service.htm
 tech.root: stream
-ms.assetid: 771027AA-E64D-4AC8-9C52-D1F96A761FAD
 ms.date: 04/23/2018
 keywords: ["KSPROPERTY_SERVICE enumeration"]
 ms.keywords: KSPROPERTY_SERVICE, KSPROPERTY_SERVICE enumeration [Streaming Media Devices], KSPROPERTY_SERVICE_BUILDCACHE, KSPROPERTY_SERVICE_MERIT, ksi/KSPROPERTY_SERVICE, ksi/KSPROPERTY_SERVICE_BUILDCACHE, ksi/KSPROPERTY_SERVICE_MERIT, stream.ksproperty_service

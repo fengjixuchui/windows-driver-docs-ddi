@@ -4,7 +4,6 @@ title: ExtRemoteTyped::ArrayElement (engextcpp.h)
 description: The ArrayElement method returns the typed data in the specified array element of the typed data represented by the ExtRemoteTyped object.
 old-location: debugger\extremotetyped_arrayelement.htm
 tech.root: debugger
-ms.assetid: abe43441-3e00-4d85-ae84-dd738303ab1b
 ms.date: 05/03/2018
 keywords: ["ExtRemoteTyped::ArrayElement"]
 ms.keywords: ArrayElement, ArrayElement method [Windows Debugging], ArrayElement method [Windows Debugging],ExtRemoteTyped interface, EngExtCpp_Ref_086fc0ab-cf63-4079-86d4-552dd2a1593d.xml, ExtRemoteTyped interface [Windows Debugging],ArrayElement method, ExtRemoteTyped.ArrayElement, ExtRemoteTyped::ArrayElement, debugger.extremotetyped_arrayelement
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteTyped.ArrayElement
+ - ExtRemoteTyped::ArrayElement
 ---
 
 # ExtRemoteTyped::ArrayElement
@@ -50,9 +49,9 @@ The <b>ArrayElement</b> method returns the typed data in the specified array ele
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 The index of the array element.
 
 ## -returns
@@ -72,3 +71,4 @@ The <a href="/previous-versions/windows/hardware/previsioning-framework/ff544357
 
 
 <a href="/previous-versions/windows/hardware/previsioning-framework/ff544357(v=vs.85)">ExtRemoteTyped::operator[]</a>
+

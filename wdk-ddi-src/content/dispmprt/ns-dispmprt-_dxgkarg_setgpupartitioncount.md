@@ -3,11 +3,8 @@ UID: NS:dispmprt._DXGKARG_SETGPUPARTITIONCOUNT
 title: _DXGKARG_SETGPUPARTITIONCOUNT
 description: Arguments used to set GPU partition count.
 tech.root: display
-ms.assetid: 41645d4f-e0f3-4b01-bfa7-65b1c6bed62f
 ms.date: 04/04/2019
 keywords: ["DXGKARG_SETGPUPARTITIONCOUNT structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _DXGKARG_SETGPUPARTITIONCOUNT, DXGKARG_SETGPUPARTITIONCOUNT, *PDXGKARG_SETGPUPARTITIONCOUNT,
 req.header: dispmprt.h
 req.include-header: 
@@ -39,8 +36,8 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGKARG_SETGPUPARTITIONCOUNT
-product:
- - Windows
+ - PDXGKARG_SETGPUPARTITIONCOUNT
+ - DXGKARG_SETGPUPARTITIONCOUNT
 dev_langs:
  - c++
 ---

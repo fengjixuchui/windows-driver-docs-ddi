@@ -4,7 +4,6 @@ title: FWPS_CALLOUT_NOTIFY_FN2 (fwpsk.h)
 description: The filter engine calls a callout's notifyFn2 callout function to notify the callout driver about events that are associated with the callout.Note  notifyFn2 is the specific version of notifyFn used in Windows 8 and later.
 old-location: netvista\notifyfn2.htm
 tech.root: netvista
-ms.assetid: c70c987b-5b4c-4ddd-8eb8-8c3c40003ab3
 ms.date: 10/29/2019
 keywords: ["FWPS_CALLOUT_NOTIFY_FN2 callback function"]
 ms.keywords: FWPS_CALLOUT_NOTIFY_FN2, FWPS_CALLOUT_NOTIFY_FN2 callback, fwpsk/notifyFn2, netvista.notifyfn2, notifyFn2, notifyFn2 callback function [Network Drivers Starting with Windows Vista]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Fwpsk.h
 api_name:
- - notifyFn2
+ - FWPS_CALLOUT_NOTIFY_FN2
 ---
 
 # FWPS_CALLOUT_NOTIFY_FN2 callback function
@@ -53,9 +52,9 @@ The filter engine calls a callout's
 
 ## -parameters
 
-### -param notifyType 
+### -param notifyType [in]
 
-[in]
+
 A value that indicates the type of notification that the filter engine is sending to the callout.
      Valid values for this parameter are:
      
@@ -82,17 +81,17 @@ A filter is being deleted from the filter engine that specifies the callout for 
 
 A maximum value for testing purposes.
 
-### -param filterKey 
+### -param filterKey [in]
 
-[in]
+
 A pointer to the management identifier for the filter, as specified by the application or driver
      that is adding or deleting the filter. Must be NULL if the 
      <i>notifyType</i> parameter is set to FWPS_CALLOUT_NOTIFY_DELETE_FILTER. For more information, see the
      following Remarks section.
 
-### -param filter 
+### -param filter [in, out]
 
-[in, out]
+
 A pointer to an 
      <a href="/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_filter2">FWPS_FILTER2</a> structure. This structure
      describes the filter that is being added to or deleted from the filter engine.
@@ -211,3 +210,4 @@ This function is essentially identical to the previous version,
 
 
 <a href="/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_notify_fn1">notifyFn1</a>
+

@@ -4,7 +4,6 @@ title: PoFxNotifySurprisePowerOn function (wdm.h)
 description: The PoFxNotifySurprisePowerOn routine notifies the power management framework (PoFx) that a device was turned on as a side effect of supplying power to some other device.
 old-location: kernel\pofxnotifysurprisepoweron.htm
 tech.root: kernel
-ms.assetid: AB9C7D32-D536-4B2B-9C85-DF5A0031798C
 ms.date: 04/30/2018
 keywords: ["PoFxNotifySurprisePowerOn function"]
 ms.keywords: PoFxNotifySurprisePowerOn, PoFxNotifySurprisePowerOn routine [Kernel-Mode Driver Architecture], kernel.pofxnotifysurprisepoweron, wdm/PoFxNotifySurprisePowerOn
@@ -50,9 +49,9 @@ The <b>PoFxNotifySurprisePowerOn</b> routine notifies the power management frame
 
 ## -parameters
 
-### -param Pdo 
+### -param Pdo [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/">physical device object</a> (PDO). This parameter points to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure that represents the physical device that was turned on as a side effect. The caller is always the bus driver that enumerated the PDO.
 
 ## -remarks

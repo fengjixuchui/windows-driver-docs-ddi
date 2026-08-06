@@ -3,7 +3,6 @@ UID: NS:d3d10umddi.D3D10_DDI_VIEWPORT
 title: D3D10_DDI_VIEWPORT (d3d10umddi.h)
 description: The D3D10_DDI_VIEWPORT structure describes a viewport.
 old-location: display\d3d10_ddi_viewport.htm
-ms.assetid: 5b2025ce-e0dd-434d-b92b-16ecaf24808f
 ms.date: 05/10/2018
 keywords: ["D3D10_DDI_VIEWPORT structure"]
 ms.keywords: D3D10_DDI_VIEWPORT, D3D10_DDI_VIEWPORT structure [Display Devices], UMDisplayDriver_Dx10param_Structs_820ac08a-01a2-4e47-8573-aedf3c3769e1.xml, d3d10umddi/D3D10_DDI_VIEWPORT, display.d3d10_ddi_viewport
@@ -50,29 +49,29 @@ The D3D10_DDI_VIEWPORT structure describes a viewport.
 
 ## -struct-fields
 
-### -field TopLeftX
+### -field TopLeftX [in]
 
-[in] A single-precision float vector for the top-left x-coordinate of the viewport.
+A single-precision float vector for the top-left x-coordinate of the viewport.
 
-### -field TopLeftY
+### -field TopLeftY [in]
 
-[in] A single-precision float vector for the top-left y-coordinate of the viewport.
+A single-precision float vector for the top-left y-coordinate of the viewport.
 
 ### -field Width
 
       [in] A single-precision float vector for the width of the viewport.
 
-### -field Height
+### -field Height [in]
 
-[in] A single-precision float vector for the height of the viewport.
+A single-precision float vector for the height of the viewport.
 
-### -field MinDepth
+### -field MinDepth [in]
 
-[in] A single-precision float vector for the minimum depth of the viewport.
+A single-precision float vector for the minimum depth of the viewport.
 
-### -field MaxDepth
+### -field MaxDepth [in]
 
-[in] A single-precision float vector for the maximum depth of the viewport.
+A single-precision float vector for the maximum depth of the viewport.
 
 ## -see-also
 

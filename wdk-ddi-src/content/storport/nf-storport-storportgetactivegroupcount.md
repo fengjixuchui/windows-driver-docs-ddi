@@ -4,7 +4,6 @@ title: StorPortGetActiveGroupCount function (storport.h)
 description: The StorPortGetActiveGroupCount routine returns the number of processor groups that are present in the system.
 old-location: storage\storportgetactivegroupcount.htm
 tech.root: storage
-ms.assetid: 640dd836-a5f9-4a88-b2a3-038a66a50868
 ms.date: 03/29/2018
 keywords: ["StorPortGetActiveGroupCount function"]
 ms.keywords: StorPortGetActiveGroupCount, StorPortGetActiveGroupCount routine [Storage Devices], storage.storportgetactivegroupcount, storport/StorPortGetActiveGroupCount, storprt_d26e001f-a43e-4d7e-9278-9ba48a74574a.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ The <b>StorPortGetActiveGroupCount</b> routine returns the number of processor g
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param NumberGroups 
+### -param NumberGroups [out]
 
-[out]
+
 A pointer to a variable that holds the number of groups.
 
 ## -returns

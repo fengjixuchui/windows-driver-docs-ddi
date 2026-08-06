@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.IDataModelManager2.CreateErrorObject
 title: IDataModelManager2::CreateErrorObject (dbgmodel.h)
 description: The CreateErrorObject method creates an "error object".
-ms.assetid: 78cbba35-8827-4e76-bcb3-97aeb0378d33
 ms.date: 08/21/2018
 keywords: ["IDataModelManager2::CreateErrorObject"]
 ms.keywords: IDataModelManager2::CreateErrorObject, CreateErrorObject, IDataModelManager2.CreateErrorObject, IDataModelManager2::CreateErrorObject, IDataModelManager2.CreateErrorObject
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager2.CreateErrorObject
+ - IDataModelManager2::CreateErrorObject
 ---
 
 # IDataModelManager2::CreateErrorObject

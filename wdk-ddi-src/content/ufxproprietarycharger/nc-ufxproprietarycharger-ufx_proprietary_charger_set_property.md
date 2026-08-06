@@ -4,7 +4,6 @@ title: UFX_PROPRIETARY_CHARGER_SET_PROPERTY (ufxproprietarycharger.h)
 description: The filter driver's implementation to set a configurable property on the charger.
 old-location: buses\ufx_proprietary_charger_set_property.htm
 tech.root: usbref
-ms.assetid: 504878FA-3234-4BE7-95D9-6CCE08DB4D8A
 ms.date: 05/07/2018
 keywords: ["UFX_PROPRIETARY_CHARGER_SET_PROPERTY callback function"]
 ms.keywords: PFN_UFX_PROPRIETARY_CHARGER_SET_PROPERTY, PFN_UFX_PROPRIETARY_CHARGER_SET_PROPERTY callback function pointer [Buses], UFX_PROPRIETARY_CHARGER_SET_PROPERTY, UFX_PROPRIETARY_CHARGER_SET_PROPERTY callback, UfxProprietaryChargerSetProperty, UfxProprietaryChargerSetProperty callback function [Buses], buses.ufx_proprietary_charger_set_property, ufxproprietarycharger/UfxProprietaryChargerSetProperty
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ufxproprietarycharger.h
 api_name:
- - PFN_UFX_PROPRIETARY_CHARGER_SET_PROPERTY
+ - UFX_PROPRIETARY_CHARGER_SET_PROPERTY
 ---
 
 # UFX_PROPRIETARY_CHARGER_SET_PROPERTY callback function
@@ -50,14 +49,14 @@ The filter driver's implementation to set a configurable property on the charger
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
     A pointer to a driver-defined context.
 
-### -param Property 
+### -param Property [in]
 
-[in]
+
     A pointer to a <b>CONFIGURABLE_CHARGER_PROPERTY_HEADER</b> structure (defined in charging.h) that describes the configurable charger property to set.
 
 ## -returns
@@ -73,3 +72,4 @@ In this callback function, the driver sets the specified property value. For exa
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/drivers/mt188012(v=vs.85)">USB filter driver for supporting proprietary chargers</a>
+

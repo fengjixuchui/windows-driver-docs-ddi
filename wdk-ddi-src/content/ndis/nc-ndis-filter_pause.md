@@ -4,7 +4,6 @@ title: FILTER_PAUSE (ndis.h)
 description: NDIS calls a filter driver's FilterPause function to initiate a pause operation for the specified filter module.Note  You must declare the function by using the FILTER_PAUSE type.
 old-location: netvista\filterpause.htm
 tech.root: netvista
-ms.assetid: a239889e-ec39-48fc-9e82-c8bc3d7ca51a
 ms.date: 05/02/2018
 keywords: ["FILTER_PAUSE callback function"]
 ms.keywords: FILTER_PAUSE, FILTER_PAUSE callback, FilterPause, FilterPause callback function [Network Drivers Starting with Windows Vista], filter_functions_ref_2f28fa9f-47cb-4638-b673-e938872f54f1.xml, ndis/FilterPause, netvista.filterpause
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - FilterPause
+ - FILTER_PAUSE
 ---
 
 # FILTER_PAUSE callback function
@@ -53,17 +52,14 @@ NDIS calls a filter driver's
 
 ## -parameters
 
-### -param FilterModuleContext 
+### -param FilterModuleContext [in]
 
-[in]
+
 A handle to the context area for the filter module that the filter driver should pause. The filter
      driver created and initialized this context area in the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach">FilterAttach</a> function.
 
-### -param PauseParameters
-
-#### - FilterPauseParameters 
-[in]
+### -param PauseParameters [in]
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_filter_pause_parameters">
      NDIS_FILTER_PAUSE_PARAMETERS</a> structure that defines the pause parameters for the filter
@@ -229,7 +225,7 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -247,3 +243,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiswriteeventlogentry">NdisWriteEventLogEntry</a>
+

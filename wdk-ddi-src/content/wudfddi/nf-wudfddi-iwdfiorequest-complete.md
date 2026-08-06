@@ -4,7 +4,6 @@ title: IWDFIoRequest::Complete (wudfddi.h)
 description: The Complete method completes an I/O request.
 old-location: wdf\iwdfiorequest_complete.htm
 tech.root: wdf
-ms.assetid: 2fa389f8-8277-4795-a89e-ac5d92004310
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequest::Complete"]
 ms.keywords: Complete, Complete method, Complete method,IWDFIoRequest interface, IWDFIoRequest interface,Complete method, IWDFIoRequest.Complete, IWDFIoRequest::Complete, UMDFRequestObjectRef_2c1cf2cc-30a2-438c-8e5a-b918fbcd5eee.xml, umdf.iwdfiorequest_complete, wdf.iwdfiorequest_complete, wudfddi/IWDFIoRequest::Complete
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequest.Complete
+ - IWDFIoRequest::Complete
 ---
 
 # IWDFIoRequest::Complete
@@ -52,9 +51,9 @@ The <b>Complete</b> method completes an I/O request.
 
 ## -parameters
 
-### -param CompletionStatus 
+### -param CompletionStatus [in]
 
-[in]
+
 A status value to complete the request with.
 
 ## -remarks
@@ -80,7 +79,6 @@ The following code example completes a request with the failure that occurred wh
     }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest">IWDFIoRequest</a>
@@ -88,3 +86,4 @@ The following code example completes a request with the failure that occurred wh
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-completewithinformation">IWDFIoRequest::CompleteWithInformation</a>
+

@@ -1,11 +1,10 @@
 ---
 UID: NS:rilapitypes.RILCALLDISCONNECTDETAILS
 title: RILCALLDISCONNECTDETAILS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILCALLDISCONNECTDETAILS structure for internal use only. "
 old-location: netvista\rilcalldisconnectdetails.htm
 tech.root: netvista
-ms.assetid: c933e219-47bb-4896-b5ee-bd2fd59f4e8c
-ms.date: 05/02/2018
+ms.date: 12/10/2021
 keywords: ["RILCALLDISCONNECTDETAILS structure"]
 ms.keywords: "*LPRILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS, RILCALLDISCONNECTDETAILS structure [Network Drivers Starting with Windows Vista], netvista.rilcalldisconnectdetails, ntddrilapitypes/RILCALLDISCONNECTDETAILS"
 req.header: rilapitypes.h
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILCALLDISCONNECTDETAILS
+ - LPRILCALLDISCONNECTDETAILS
 ---
 
 # RILCALLDISCONNECTDETAILS structure (rilapitypes.h)
@@ -56,34 +56,19 @@ This topic supports the Windows driver infrastructure and is not intended to be 
 
 ### -field causeUnion
 
-### -field causeUnion.unGPPCause
+### -field RILCAUSEUNION.unGPPCause
 
-### -field causeUnion.unGPPRejectCause
+### -field RILCAUSEUNION.unGPPRejectCause
 
-### -field causeUnion.unGPP2Cause
+### -field RILCAUSEUNION.unGPP2Cause
 
-### -field causeUnion.unIMSSIPCause
+### -field RILCAUSEUNION.unIMSSIPCause
 
-### -field causeUnion.dwASCode
+### -field RILCAUSEUNION.dwASCode
 
-### -field causeUnion.dwOtherCode
+### -field RILCAUSEUNION.dwOtherCode
 
 ### -field RILCAUSEUNION
 
-#### - dwASCode
 
-
-#### - dwOtherCode
-
-
-#### - unGPP2Cause
-
-
-#### - unGPPCause
-
-
-#### - unGPPRejectCause
-
-
-#### - unIMSSIPCause
 

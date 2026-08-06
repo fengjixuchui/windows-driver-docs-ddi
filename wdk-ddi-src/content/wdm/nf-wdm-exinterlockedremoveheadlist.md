@@ -4,7 +4,6 @@ title: ExInterlockedRemoveHeadList function (wdm.h)
 description: The ExInterlockedRemoveHeadList routine removes an entry from the beginning of a doubly linked list of LIST_ENTRY structures.
 old-location: kernel\exinterlockedremoveheadlist.htm
 tech.root: kernel
-ms.assetid: d024da2c-9629-4907-98b8-a29dc6022ac0
 ms.date: 04/30/2018
 keywords: ["ExInterlockedRemoveHeadList function"]
 ms.keywords: ExInterlockedRemoveHeadList, ExInterlockedRemoveHeadList routine [Kernel-Mode Driver Architecture], k102_6ab2420a-7522-4445-9a6e-c8a603f5cff8.xml, kernel.exinterlockedremoveheadlist, wdm/ExInterlockedRemoveHeadList
@@ -50,14 +49,14 @@ The <b>ExInterlockedRemoveHeadList</b> routine removes an entry from the beginni
 
 ## -parameters
 
-### -param ListHead 
+### -param ListHead [in, out]
 
-[in, out]
+
 A pointer to the <a href="/windows/win32/api/ntdef/ns-ntdef-list_entry">LIST_ENTRY</a> structure that serves as the list header.
 
-### -param Lock 
+### -param Lock [in, out]
 
-[in, out]
+
 A pointer to a <b>KSPIN_LOCK</b> structure that serves as the spin lock used to synchronize access to the list. The storage for the spin lock must be resident and must have been initialized by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializespinlock">KeInitializeSpinLock</a>. You must use this spin lock only with the <b>ExInterlocked<i>Xxx</i>List</b> routines.
 
 ## -returns

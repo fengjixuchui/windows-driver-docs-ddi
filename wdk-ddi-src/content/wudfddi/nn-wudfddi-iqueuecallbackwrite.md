@@ -4,7 +4,6 @@ title: IQueueCallbackWrite (wudfddi.h)
 description: An I/O queue object notifies a driver when a write request is available for the driver.
 old-location: wdf\iqueuecallbackwrite.htm
 tech.root: wdf
-ms.assetid: 8b44e1e1-c648-4eec-bb3e-ab327dc08f98
 ms.date: 02/26/2018
 keywords: ["IQueueCallbackWrite interface"]
 ms.keywords: IQueueCallbackWrite, IQueueCallbackWrite interface, IQueueCallbackWrite interface,described, UMDFQueueObjectRef_4abdce88-185f-4dab-823a-00da96d7d630.xml, umdf.iqueuecallbackwrite, wdf.iqueuecallbackwrite, wudfddi/IQueueCallbackWrite
@@ -52,9 +51,9 @@ An I/O queue object notifies a driver when a write request is available for the 
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IQueueCallbackWrite</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IQueueCallbackWrite</b> also has these types of members:
+The <b>IQueueCallbackWrite</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IQueueCallbackWrite</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>
 
 ## -remarks

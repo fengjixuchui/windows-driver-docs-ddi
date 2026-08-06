@@ -4,7 +4,6 @@ title: PROTOCOL_CM_DEREGISTER_SAP (ndis.h)
 description: The ProtocolCmDeregisterSap function is required.
 old-location: netvista\protocolcmderegistersap.htm
 tech.root: netvista
-ms.assetid: 738c426e-aa4f-4f59-b955-fbf67071303f
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CM_DEREGISTER_SAP callback function"]
 ms.keywords: PROTOCOL_CM_DEREGISTER_SAP, PROTOCOL_CM_DEREGISTER_SAP callback, ProtocolCmDeregisterSap, ProtocolCmDeregisterSap callback function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_fce09df2-cd92-4c6e-8596-91ecdb5f0c2c.xml, ndis/ProtocolCmDeregisterSap, netvista.protocolcmderegistersap
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolCmDeregisterSap
+ - PROTOCOL_CM_DEREGISTER_SAP
 ---
 
 # PROTOCOL_CM_DEREGISTER_SAP callback function
@@ -54,9 +53,9 @@ The
 
 ## -parameters
 
-### -param CallMgrSapContext 
+### -param CallMgrSapContext [in]
 
-[in]
+
 Specifies the handle to a call manager-allocated context area in which the call manager maintains
      its per-SAP state information. The call manager supplied this handle to NDIS from its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_reg_sap">
@@ -173,3 +172,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_reg_sap">ProtocolCmRegisterSap</a>
+

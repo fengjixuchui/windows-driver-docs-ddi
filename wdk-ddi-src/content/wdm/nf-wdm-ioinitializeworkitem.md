@@ -4,7 +4,6 @@ title: IoInitializeWorkItem function (wdm.h)
 description: The IoInitializeWorkItem routine initializes a work item that the caller has already allocated.
 old-location: kernel\ioinitializeworkitem.htm
 tech.root: kernel
-ms.assetid: b7f4370e-75db-4238-8e23-9e48028a03f5
 ms.date: 04/30/2018
 keywords: ["IoInitializeWorkItem function"]
 ms.keywords: IoInitializeWorkItem, IoInitializeWorkItem routine [Kernel-Mode Driver Architecture], k104_06024bfe-5558-4039-a9b1-327895ba9b74.xml, kernel.ioinitializeworkitem, wdm/IoInitializeWorkItem
@@ -50,14 +49,14 @@ The <b>IoInitializeWorkItem</b> routine initializes a work item that the caller 
 
 ## -parameters
 
-### -param IoObject 
+### -param IoObject [in]
 
-[in]
+
 Pointer to the caller's driver object or to one of the caller's device objects. If the caller will later pass the work item to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ioqueueworkitem">IoQueueWorkItem</a>, <i>IoObject</i> must point to a device object.
 
-### -param IoWorkItem 
+### -param IoWorkItem [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">IO_WORKITEM</a> structure to initialize.
 
 ## -remarks

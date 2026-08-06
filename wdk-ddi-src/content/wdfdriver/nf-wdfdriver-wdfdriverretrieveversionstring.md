@@ -4,7 +4,6 @@ title: WdfDriverRetrieveVersionString function (wdfdriver.h)
 description: The WdfDriverRetrieveVersionString method retrieves a Unicode string that identifies the version of the Kernel-Mode Driver Framework that the driver is running with.
 old-location: wdf\wdfdriverretrieveversionstring.htm
 tech.root: wdf
-ms.assetid: cbea7a3c-faae-4779-9a27-6c2b60f2b35c
 ms.date: 02/26/2018
 keywords: ["WdfDriverRetrieveVersionString function"]
 ms.keywords: DFDriverObjectRef_42298067-6221-4d0c-af6b-8579f95d2047.xml, WdfDriverRetrieveVersionString, WdfDriverRetrieveVersionString method, kmdf.wdfdriverretrieveversionstring, wdf.wdfdriverretrieveversionstring, wdfdriver/WdfDriverRetrieveVersionString
@@ -55,14 +54,14 @@ The <b>WdfDriverRetrieveVersionString</b> method retrieves a Unicode string that
 
 ## -parameters
 
-### -param Driver 
+### -param Driver [in]
 
-[in]
+
 A handle to the driver's framework driver object that the driver obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate">WdfDriverCreate</a> or <a href="/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfgetdriver">WdfGetDriver</a>.
 
-### -param String 
+### -param String [in]
 
-[in]
+
 A handle to a framework string object that the driver obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfstring/nf-wdfstring-wdfstringcreate">WdfStringCreate</a>. The framework assigns the version string to the string object.
 
 ## -returns

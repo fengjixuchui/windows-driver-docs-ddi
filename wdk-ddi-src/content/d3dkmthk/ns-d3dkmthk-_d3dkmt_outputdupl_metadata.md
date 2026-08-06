@@ -1,16 +1,13 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_OUTPUTDUPL_METADATA
-title: _D3DKMT_OUTPUTDUPL_METADATA (d3dkmthk.h)
-description: Contains output duplicate metadata.
-ms.assetid: f00de807-143b-4836-97bd-6db63f2ec4e8
-ms.date: 10/19/2018
-keywords: ["D3DKMT_OUTPUTDUPL_METADATA structure"]
-ms.keywords: _D3DKMT_OUTPUTDUPL_METADATA, D3DKMT_OUTPUTDUPL_METADATA,
+title: D3DKMT_OUTPUTDUPL_METADATA (d3dkmthk.h)
+description: Learn more about the D3DKMT_OUTPUTDUPL_METADATA structure.
+ms.date: 07/17/2024
 req.header: d3dkmthk.h
 req.include-header: 
 req.target-type: 
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
 req.kmdf-ver: 
 req.umdf-ver: 
 req.lib: 
@@ -35,16 +32,16 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_OUTPUTDUPL_METADATA
+ - D3DKMT_OUTPUTDUPL_METADATA
 dev_langs:
  - c++
 ---
 
-# _D3DKMT_OUTPUTDUPL_METADATA structure
-
+# D3DKMT_OUTPUTDUPL_METADATA structure
 
 ## -description
 
-Contains output duplicate metadata.
+The **D3DKMT_OUTPUTDUPL_METADATA** structure contains output duplicate metadata.
 
 ## -struct-fields
 
@@ -70,10 +67,8 @@ A pointer to the buffer.
 
 ### -field BufferSizeRequired
 
- 
 The required buffer size.
 
 ## -remarks
 
 ## -see-also
-

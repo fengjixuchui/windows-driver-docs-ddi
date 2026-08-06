@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_union_10
+UID: NS:ks.KSPROPERTY_BOUNDS_LONGLONG
 title: KSPROPERTY_BOUNDS_LONGLONG (ks.h)
 description: The KSPROPERTY_BOUNDS_LONGLONG structure defines the bounds for a 64-bit property.
 old-location: stream\ksproperty_bounds_longlong.htm
 tech.root: stream
-ms.assetid: 25e3e430-abce-4d14-a336-4cb32a4fe5df
 ms.date: 04/23/2018
 keywords: ["KSPROPERTY_BOUNDS_LONGLONG structure"]
 ms.keywords: "*PKSPROPERTY_BOUNDS_LONGLONG, KSPROPERTY_BOUNDS_LONGLONG, KSPROPERTY_BOUNDS_LONGLONG union [Streaming Media Devices], PKSPROPERTY_BOUNDS_LONGLONG, PKSPROPERTY_BOUNDS_LONGLONG union pointer [Streaming Media Devices], ks-struct_553b35b1-55c4-404d-af6b-a9fb2bbfb6b9.xml, ks/KSPROPERTY_BOUNDS_LONGLONG, ks/PKSPROPERTY_BOUNDS_LONGLONG, stream.ksproperty_bounds_longlong"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSPROPERTY_BOUNDS_LONGLONG
  - KSPROPERTY_BOUNDS_LONGLONG
 ---
 
@@ -56,7 +56,11 @@ The KSPROPERTY_BOUNDS_LONGLONG structure defines the bounds for a 64-bit propert
 
 ### -field _SIGNED64.SignedMinimum
 
+Specifies a minimum bound as a signed 64-bit value.
+
 ### -field _SIGNED64.SignedMaximum
+
+Specifies a maximum bound as a signed 64-bit value.
 
 ### -field SignedMinimum
 
@@ -70,7 +74,11 @@ Specifies a maximum bound as a signed 64-bit value.
 
 ### -field _UNSIGNED64.UnsignedMinimum
 
+Specifies a minimum bound as an unsigned 64-bit value.
+
 ### -field _UNSIGNED64.UnsignedMaximum
+
+Specifies a maximum bound as an unsigned 64-bit value.
 
 ### -field UnsignedMinimum
 
@@ -99,3 +107,4 @@ Also see related information in <a href="/windows-hardware/drivers/stream/ks-pro
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_values">KSPROPERTY_VALUES</a>
+

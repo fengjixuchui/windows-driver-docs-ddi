@@ -4,7 +4,6 @@ title: IOCTL_GPIO_WRITE_PINS (gpio.h)
 description: The IOCTL_GPIO_WRITE_PINS I/O control code enables a client of the general-purpose I/O (GPIO) controller to write to a set of GPIO pins that are configured as outputs.
 old-location: gpio\ioctl_gpio_write_pins.htm
 tech.root: GPIO
-ms.assetid: 579462C6-2C0B-41AC-836D-2D3448080AD8
 ms.date: 02/15/2018
 keywords: ["IOCTL_GPIO_WRITE_PINS IOCTL"]
 ms.keywords: GPIO.ioctl_gpio_write_pins, IOCTL_GPIO_WRITE_PINS, IOCTL_GPIO_WRITE_PINS control, IOCTL_GPIO_WRITE_PINS control code [Parallel Ports], gpio/IOCTL_GPIO_WRITE_PINS
@@ -49,6 +48,8 @@ api_name:
 The <b>IOCTL_GPIO_WRITE_PINS</b> I/O control code enables a client of the general-purpose I/O (GPIO) controller to write to a set of GPIO pins that are configured as outputs. Typically, the clients of a GPIO controller are drivers for peripheral devices that connect to GPIO pins.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

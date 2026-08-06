@@ -4,7 +4,6 @@ title: IDebugRegisters2::GetIndexByNameWide (dbgeng.h)
 description: The GetIndexByNameWide method returns the index of the named register.
 old-location: debugger\getindexbynamewide.htm
 tech.root: debugger
-ms.assetid: eb6a50b4-275f-42c9-8121-17677971ebb2
 ms.date: 05/03/2018
 keywords: ["IDebugRegisters2::GetIndexByNameWide"]
 ms.keywords: GetIndexByNameWide, GetIndexByNameWide method [Windows Debugging], GetIndexByNameWide method [Windows Debugging],IDebugRegisters2 interface, IDebugRegisters2 interface [Windows Debugging],GetIndexByNameWide method, IDebugRegisters2.GetIndexByNameWide, IDebugRegisters2::GetIndexByNameWide, dbgeng/IDebugRegisters2::GetIndexByNameWide, debugger.getindexbynamewide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugRegisters2.GetIndexByNameWide
+ - IDebugRegisters2::GetIndexByNameWide
 ---
 
 # IDebugRegisters2::GetIndexByNameWide
@@ -50,14 +49,14 @@ The <b>GetIndexByNameWide</b> method returns the index of the named register.
 
 ## -parameters
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 Specifies the name of the register whose index is requested.
 
-### -param Index 
+### -param Index [out]
 
-[out]
+
 Receives the index of the register.
 
 ## -returns
@@ -96,3 +95,4 @@ The register was not found.
 ## -remarks
 
 For an overview of the <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugregisters">IDebugRegisters</a> interface and other register-related methods, see <a href="/windows-hardware/drivers/debugger/registers">Registers</a>.
+

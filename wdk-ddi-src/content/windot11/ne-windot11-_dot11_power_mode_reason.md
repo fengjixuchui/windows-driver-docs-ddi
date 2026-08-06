@@ -4,7 +4,6 @@ title: _DOT11_POWER_MODE_REASON (windot11.h)
 description: The DOT11_POWER_MODE_REASON lists the different reasons for changes to auto power save mode state.
 old-location: netvista\dot11_power_mode_reason.htm
 tech.root: netvista
-ms.assetid: 0B8402B5-CFDA-402F-BA7A-A44478333C04
 ms.date: 02/16/2018
 keywords: ["DOT11_POWER_MODE_REASON enumeration"]
 ms.keywords: DOT11_POWER_MODE_REASON, DOT11_POWER_MODE_REASON enumeration [Network Drivers Starting with Windows Vista], _DOT11_POWER_MODE_REASON, dot11_power_mode_reason_compliant_AP, dot11_power_mode_reason_compliant_WFD_device, dot11_power_mode_reason_legacy_WFD_device, dot11_power_mode_reason_no_change, dot11_power_mode_reason_noncompliant_AP, dot11_power_mode_reason_others, netvista.dot11_power_mode_reason, windot11/DOT11_POWER_MODE_REASON, windot11/dot11_power_mode_reason_compliant_AP, windot11/dot11_power_mode_reason_compliant_WFD_device, windot11/dot11_power_mode_reason_legacy_WFD_device, windot11/dot11_power_mode_reason_no_change, windot11/dot11_power_mode_reason_noncompliant_AP, windot11/dot11_power_mode_reason_others
@@ -40,9 +39,8 @@ api_type:
 api_location:
  - Windot11.h
 api_name:
+ - _DOT11_POWER_MODE_REASON
  - DOT11_POWER_MODE_REASON
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_POWER_MODE_REASON enumeration
@@ -50,7 +48,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_POWER_MODE_REASON lists the different reasons for changes to auto power save mode  state.
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_POWER_MODE_REASON lists the different reasons for changes to auto power save mode  state.
 
 ## -enum-fields
 
@@ -90,3 +91,4 @@ typedef enum _DOT11_POWER_MODE_REASON {
   dot11_power_mode_reason_others                = 5
 } DOT11_POWER_MODE_REASON;
 ```
+

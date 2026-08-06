@@ -4,7 +4,6 @@ title: _D3DDDIARG_DRAWTRIPATCH (d3dumddi.h)
 description: The D3DDDIARG_DRAWTRIPATCH structure describes a triangular patch to draw.
 old-location: display\d3dddiarg_drawtripatch.htm
 tech.root: display
-ms.assetid: 296ed752-ddb6-41db-957f-606acc53b3b5
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_DRAWTRIPATCH structure"]
 ms.keywords: D3DDDIARG_DRAWTRIPATCH, D3DDDIARG_DRAWTRIPATCH structure [Display Devices], UMDisplayDriver_param_Structs_e4f18b26-f2ae-46e2-af49-6ae55f79b2be.xml, _D3DDDIARG_DRAWTRIPATCH, d3dumddi/D3DDDIARG_DRAWTRIPATCH, display.d3dddiarg_drawtripatch
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_DRAWTRIPATCH
  - D3DDDIARG_DRAWTRIPATCH
 ---
 
@@ -52,9 +52,9 @@ The D3DDDIARG_DRAWTRIPATCH structure describes a triangular patch to draw.
 
 ## -struct-fields
 
-### -field Handle
+### -field Handle [in]
 
-[in] The handle to the patch surface.
+The handle to the patch surface.
 
 ## -remarks
 
@@ -63,3 +63,4 @@ The <b>Handle</b> member refers to the patch surface, so that the next time the 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_drawtripatch">DrawTriPatch</a>
+

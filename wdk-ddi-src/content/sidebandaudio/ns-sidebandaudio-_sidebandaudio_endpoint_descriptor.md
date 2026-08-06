@@ -1,9 +1,8 @@
 ---
 UID: NS:sidebandaudio._SIDEBANDAUDIO_ENDPOINT_DESCRIPTOR
 title: _SIDEBANDAUDIO_ENDPOINT_DESCRIPTOR (sidebandaudio.h)
-description: Describes the characteristics of the audio Endpoint driver.
-ms.assetid: cd266b60-42df-4655-9d71-d35ddaa6c9a7
-ms.date: 09/06/2018
+description: "The SIDEBANDAUDIO_ENDPOINT_DESCRIPTOR structure describes the characteristics of a Sideband audio Endpoint."
+ms.date: 06/26/2023
 keywords: ["SIDEBANDAUDIO_ENDPOINT_DESCRIPTOR structure"]
 ms.keywords: _SIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, SIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, *PSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR,
 req.header: sidebandaudio.h
@@ -37,14 +36,15 @@ api_location:
  - sidebandaudio.h
 api_name:
  - _SIDEBANDAUDIO_ENDPOINT_DESCRIPTOR
+ - PSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR
+ - SIDEBANDAUDIO_ENDPOINT_DESCRIPTOR
 ---
 
 # _SIDEBANDAUDIO_ENDPOINT_DESCRIPTOR structure
 
-
 ## -description
 
-Describes the characteristics of an Sideband audio Endpoint. Audio driver should query this information to build the KS filter representing this endpoint.
+The **SIDEBANDAUDIO_ENDPOINT_DESCRIPTOR** structure describes the characteristics of a Sideband audio Endpoint. Audio driver should query this information to build the KS filter representing this endpoint.
 
 ## -struct-fields
 
@@ -58,7 +58,7 @@ Pnp Container ID for connected device. See <a href="/windows-hardware/drivers/au
 
 ### -field Category
 
- KSPIN_DESCRIPTOR.Category to indicate form factor. Specifies a pointer to a KS pin category GUID. The KS pin category GUID identifies the general category of functionality that the pin provides. Examples of KS pin category GUIDs are KSNODETYPE_SPEAKER, KSNODETYPE_HEADPHONES, and KSNODETYPE_MICROPHONE, which are all defined in Ksmedia.h. See <a href="/windows-hardware/drivers/audio/pin-category-property">Pin Category Property</a>.
+KSPIN_DESCRIPTOR.Category to indicate form factor. Specifies a pointer to a KS pin category GUID. The KS pin category GUID identifies the general category of functionality that the pin provides. Examples of KS pin category GUIDs are KSNODETYPE_SPEAKER, KSNODETYPE_HEADPHONES, and KSNODETYPE_MICROPHONE, which are all defined in Ksmedia.h. See <a href="/windows-hardware/drivers/audio/pin-category-property">Pin Category Property</a>.
 
 ### -field Direction
 
@@ -66,7 +66,7 @@ Specifies either KSPIN_DATAFLOW_IN or KSPIN_DATAFLOW_OUT. See <a href="/windows-
 
 ### -field Capabilities
 
- Capabilities of the endpoint like (mute, volume, sidetone, etc.). See See <a href="/windows-hardware/drivers/ddi/sidebandaudio/ns-sidebandaudio-_sidebandaudio_endpoint_capabilities">SIDEBANDAUDIO_ENDPOINT_CAPABILITIES</a>.
+Capabilities of the endpoint like (mute, volume, sidetone, etc.). See <a href="/windows-hardware/drivers/ddi/sidebandaudio/ns-sidebandaudio-_sidebandaudio_endpoint_capabilities">SIDEBANDAUDIO_ENDPOINT_CAPABILITIES</a>.
 
 ### -field FriendlyName
 
@@ -80,7 +80,17 @@ If remote volume control is supported, this member contains the size of the data
 
 If remote volume control is supported, this member contains the size of the data returned by the <a href="/windows-hardware/drivers/ddi/sidebandaudio/ni-sidebandaudio-ioctl_sbaud_get_sidetone_volumepropertyvalues">IOCTL_SBAUD_GET_SIDETONE_VOLUMEPROPERTYVALUES</a> request.
 
+### -field MutePropertyValuesSize
+
+If remote mute is supported, the member contains the size of data returned by [IOCTL_SBAUD_GET_MUTEPROPERTYVALUES](./ni-sidebandaudio-ioctl_sbaud_get_mutepropertyvalues.md).
+
 ## -remarks
+
+## -requirements
+
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Header** | sidebandaudio.h |
 
 ## -see-also
 
@@ -91,3 +101,4 @@ If remote volume control is supported, this member contains the size of the data
 <a href="/windows-hardware/drivers/ddi/sidebandaudio/ni-sidebandaudio-ioctl_sbaud_get_volumepropertyvalues">IOCTL_SBAUD_GET_VOLUMEPROPERTYVALUES</a>
 
 <a href="/windows-hardware/drivers/ddi/sidebandaudio/ni-sidebandaudio-ioctl_sbaud_get_sidetone_volumepropertyvalues">IOCTL_SBAUD_GET_SIDETONE_VOLUMEPROPERTYVALUES</a>
+

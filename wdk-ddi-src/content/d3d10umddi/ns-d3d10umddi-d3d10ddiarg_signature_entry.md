@@ -3,7 +3,6 @@ UID: NS:d3d10umddi.D3D10DDIARG_SIGNATURE_ENTRY
 title: D3D10DDIARG_SIGNATURE_ENTRY (d3d10umddi.h)
 description: The D3D10DDIARG_SIGNATURE_ENTRY structure describes an entry for a signature.
 old-location: display\d3d10ddiarg_signature_entry.htm
-ms.assetid: 9a7a595e-59b1-4cc2-ab09-ba22aebae9ca
 ms.date: 05/10/2018
 keywords: ["D3D10DDIARG_SIGNATURE_ENTRY structure"]
 ms.keywords: D3D10DDIARG_SIGNATURE_ENTRY, D3D10DDIARG_SIGNATURE_ENTRY structure [Display Devices], UMDisplayDriver_Dx10param_Structs_8f54c330-f382-4bae-939f-7b96fd9b1a46.xml, d3d10umddi/D3D10DDIARG_SIGNATURE_ENTRY, display.d3d10ddiarg_signature_entry
@@ -50,9 +49,9 @@ The D3D10DDIARG_SIGNATURE_ENTRY structure describes an entry for a signature.
 
 ## -struct-fields
 
-### -field SystemValue
+### -field SystemValue [in]
 
-[in] The D3D10_SB_NAME-typed value that indicates the system name of the signature entry. The D3D10_SB_NAME enumeration is defined in the D3d10tokenizedprogramformat.hpp header file. One of the following values can be set.
+The D3D10_SB_NAME-typed value that indicates the system name of the signature entry. The D3D10_SB_NAME enumeration is defined in the D3d10tokenizedprogramformat.hpp header file. One of the following values can be set.
 
 |Value|System name|
 |--- |--- |
@@ -67,13 +66,13 @@ The D3D10DDIARG_SIGNATURE_ENTRY structure describes an entry for a signature.
 |D3D10_SB_NAME_INSTANCE_ID (8)|Instance ID.|
 |D3D10_SB_NAME_IS_FRONT_FACE (9)|Is front face.|
 
-### -field Register
+### -field Register [in]
 
-[in] The number of the register for the signature entry.
+The number of the register for the signature entry.
 
-### -field Mask
+### -field Mask [in]
 
-[in] The xyzw mask for the signature entry. The four least significant bits (LSBs) of the mask represent xyzw respectively.
+The xyzw mask for the signature entry. The four least significant bits (LSBs) of the mask represent xyzw respectively.
 
 ## -see-also
 

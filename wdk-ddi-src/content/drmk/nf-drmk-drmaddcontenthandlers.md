@@ -4,7 +4,6 @@ title: DrmAddContentHandlers function (drmk.h)
 description: The DrmAddContentHandlers function provides the system with a list of functions that handle protected content.
 old-location: audio\drmaddcontenthandlers.htm
 tech.root: audio
-ms.assetid: da2ec371-052a-4ea1-9336-9e32df936227
 ms.date: 05/08/2018
 keywords: ["DrmAddContentHandlers function"]
 ms.keywords: DrmAddContentHandlers, DrmAddContentHandlers function [Audio Devices], aud-prop2_94f530fb-9766-4d61-a002-b1c7bd5183d5.xml, audio.drmaddcontenthandlers, drmk/DrmAddContentHandlers
@@ -51,19 +50,19 @@ The <code>DrmAddContentHandlers</code> function provides the system with a list 
 
 ## -parameters
 
-### -param ContentId 
+### -param ContentId [in]
 
-[in]
+
 Specifies the DRM content ID. This parameter identifies a protected KS audio stream.
 
-### -param paHandlers 
+### -param paHandlers [in]
 
-[in]
+
 Pointer to an array of function pointers. Each array element points to a content handler.
 
-### -param NumHandlers 
+### -param NumHandlers [in]
 
-[in]
+
 Specifies the number of function pointers in the <i>paHandlers</i> array.
 
 ## -returns

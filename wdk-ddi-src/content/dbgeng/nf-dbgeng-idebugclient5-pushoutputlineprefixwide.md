@@ -4,7 +4,6 @@ title: IDebugClient5::PushOutputLinePrefixWide (dbgeng.h)
 description: Saves a wide string output line prefix.
 old-location: debugger\idebugclient5_pushoutputlineprefixwide.htm
 tech.root: debugger
-ms.assetid: B3D4AE97-9CDB-425D-A04B-E164852FDF19
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::PushOutputLinePrefixWide"]
 ms.keywords: IDebugClient5 interface [Windows Debugging],PushOutputLinePrefixWide method, IDebugClient5.PushOutputLinePrefixWide, IDebugClient5::PushOutputLinePrefixWide, PushOutputLinePrefixWide, PushOutputLinePrefixWide method [Windows Debugging], PushOutputLinePrefixWide method [Windows Debugging],IDebugClient5 interface, dbgeng/IDebugClient5::PushOutputLinePrefixWide, debugger.idebugclient5_pushoutputlineprefixwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient5.PushOutputLinePrefixWide
+ - IDebugClient5::PushOutputLinePrefixWide
 ---
 
 # IDebugClient5::PushOutputLinePrefixWide
@@ -50,14 +49,14 @@ api_name:
 
 ## -parameters
 
-### -param NewPrefix 
+### -param NewPrefix [in, optional]
 
-[in, optional]
+
 A pointer to the new output line Unicode character prefix.
 
-### -param Handle 
+### -param Handle [out]
 
-[out]
+
 The handle of the previous output line prefix.
 
 ## -returns
@@ -67,3 +66,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient5">IDebugClient5</a>
+

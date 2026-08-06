@@ -4,7 +4,6 @@ title: WskCaptureProviderNPI function (wsk.h)
 description: The WskCaptureProviderNPI function captures a provider Network Programming Interface (NPI) when it becomes available from the WSK subsystem.
 old-location: netvista\wskcaptureprovidernpi.htm
 tech.root: netvista
-ms.assetid: b5c6667e-33b4-4482-8817-c01d9d314c3a
 ms.date: 05/02/2018
 keywords: ["WskCaptureProviderNPI function"]
 ms.keywords: WskCaptureProviderNPI, WskCaptureProviderNPI function [Network Drivers Starting with Windows Vista], netvista.wskcaptureprovidernpi, wsk/WskCaptureProviderNPI, wskref_571be642-7c1c-471d-bf35-73bd6b271cbe.xml
@@ -54,17 +53,17 @@ The
 
 ## -parameters
 
-### -param WskRegistration 
+### -param WskRegistration [in]
 
-[in]
+
 A pointer to the memory location initialized by 
      <a href="/windows-hardware/drivers/ddi/wsk/nf-wsk-wskregister">WskRegister</a> that identifies a WSK
      application's registration instance. For more information, see 
      <a href="/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_registration">WSK_REGISTRATION</a>.
 
-### -param WaitTimeout 
+### -param WaitTimeout [in]
 
-[in]
+
 The time, in milliseconds, that the 
      <b>WskCaptureProviderNPI</b> function can wait until the WSK provider NPI becomes available. Alternately,
      the following can be specified:
@@ -88,9 +87,9 @@ For more information about how this parameter is used, see
      <a href="/windows-hardware/drivers/network/registering-a-winsock-kernel-application">Registering a Winsock
      Kernel Application</a>.
 
-### -param WskProviderNpi 
+### -param WskProviderNpi [out]
 
-[out]
+
 A pointer to the NPI returned by the WSK provider. This 
      <a href="/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_provider_npi">WSK_PROVIDER_NPI</a> structure contains a
      pointer to the WSK provider dispatch table of WSK functions that the WSK application can call.

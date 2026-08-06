@@ -4,8 +4,7 @@ title: RtlIsNtDdiVersionAvailable function (wdm.h)
 description: The RtlIsNtDdiVersionAvailable routine determines if a specified version of the Microsoft Windows device driver interface (DDI) is available.
 old-location: kernel\rtlisntddiversionavailable.htm
 tech.root: kernel
-ms.assetid: 54017f67-b01f-48bd-a5bb-598902672c4f
-ms.date: 04/30/2018
+ms.date: 01/16/2024
 keywords: ["RtlIsNtDdiVersionAvailable function"]
 ms.keywords: RtlIsNtDdiVersionAvailable, RtlIsNtDdiVersionAvailable routine [Kernel-Mode Driver Architecture], k109_62b3efdd-6678-4e88-92cb-eaacff80bfab.xml, kernel.rtlisntddiversionavailable, wdm/RtlIsNtDdiVersionAvailable
 req.header: wdm.h
@@ -47,19 +46,33 @@ api_name:
 
 ## -description
 
+>[!WARNING]
+> The **RtlIsNtDdiVersionAvailable** routine is obsolete. Use [**RtlVerifyVersionInfo**](nf-wdm-rtlverifyversioninfo.md) instead.
+
 The <b>RtlIsNtDdiVersionAvailable</b> routine determines if a specified version of the Microsoft Windows device driver interface (DDI) is available.
 
 ## -parameters
 
-### -param Version 
+### -param Version [in]
 
-[in]
+
 The version of the Windows DDI that is available. The following table lists the possible values for the <i>Version</i> parameter.
 
 <table>
 <tr>
 <th>Constant</th>
 <th>Windows version</th>
+</tr>
+<tr>
+<td>
+NTDDI_WIN10
+
+</td>
+<td>
+Windows 11<br/>
+Windows 10
+
+</td>
 </tr>
 <tr>
 <td>
@@ -165,3 +178,5 @@ For more information about <b>RtlIsNtDdiVersionAvailable</b> and <b>RtlIsService
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlisservicepackversioninstalled">RtlIsServicePackVersionInstalled</a>
+
+[**RtlVerifyVersionInfo**](nf-wdm-rtlverifyversioninfo.md)

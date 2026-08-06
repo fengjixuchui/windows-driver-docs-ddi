@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCONSTRICTION
 title: PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCONSTRICTION (d3d10umddi.h)
 description: Sets the amount of downsampling to perform on the output.
 old-location: display\videoprocessorsetoutputconstriction.htm
-ms.assetid: 4b34a76b-2e56-4656-9112-ad2e1d53525d
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCONSTRICTION callback function"]
 ms.keywords: PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCONSTRICTION, PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCONSTRICTION callback, d3d10umddi/pfnVideoProcessorSetOutputConstriction, display.videoprocessorsetoutputconstriction, pfnVideoProcessorSetOutputConstriction, pfnVideoProcessorSetOutputConstriction callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoProcessorSetOutputConstriction
+ - PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCONSTRICTION
 ---
 
 # PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCONSTRICTION callback function
@@ -50,25 +49,25 @@ Sets the amount of downsampling to perform on the output.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hVideoProcessor* [in]
 
 A handle to the video processor object that was created through a call to the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a> function.
 
-### -param Arg3
+### -param unnamedParam3
 
 *Enabled* [in]
 
 If <b>TRUE</b>, downsampling is enabled. Otherwise, downsampling is disabled and the <i>ConstrictonSize</i> member is ignored.
 
-### -param Arg4
+### -param unnamedParam4
 
 *ConstrictonSize* [in]
 
@@ -96,3 +95,4 @@ The driver reports its ability to support downsampling through the <a href="/win
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a>
+

@@ -4,7 +4,6 @@ title: PUNREGISTER_EVENT_CALLBACK (hdaudio.h)
 description: The UnregisterEventCallback routine deletes the registration of an event callback that was previously registered by a call to RegisterEventCallback.The function pointer type for an UnregisterEventCallback routine is defined as follows.
 old-location: audio\unregistereventcallback.htm
 tech.root: audio
-ms.assetid: 698017a0-13d5-4ed5-a1ce-1a50a62135e0
 ms.date: 05/08/2018
 keywords: ["PUNREGISTER_EVENT_CALLBACK callback function"]
 ms.keywords: PUNREGISTER_EVENT_CALLBACK, PUNREGISTER_EVENT_CALLBACK callback, UnregisterEventCallback, UnregisterEventCallback callback function [Audio Devices], aud-prop2_9d6c50d7-56ac-4364-9a1e-74ea0d934046.xml, audio.unregistereventcallback, hdaudio/UnregisterEventCallback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - hdaudio.h
 api_name:
- - UnregisterEventCallback
+ - PUNREGISTER_EVENT_CALLBACK
 ---
 
 # PUNREGISTER_EVENT_CALLBACK callback function
@@ -52,14 +51,14 @@ The function pointer type for an <i>UnregisterEventCallback</i> routine is defin
 
 ## -parameters
 
-### -param _context 
+### -param _context [in]
 
-[in]
+
 Specifies the context value from the <b>Context</b> member of the <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface">HDAUDIO_BUS_INTERFACE</a><u>, </u><a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a>, or <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl">HDAUDIO_BUS_INTERFACE_BDL</a> structure.
 
-### -param Tag 
+### -param Tag [in]
 
-[in]
+
 Specifies the tag value that was associated with the callback by the preceding call to <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pregister_event_callback">RegisterEventCallback</a>.
 
 ## -returns
@@ -105,3 +104,4 @@ Before calling this routine, the function driver is responsible for programming 
 <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pregister_event_callback">RegisterEventCallback</a>
  
 [hdaudio.h](../hdaudio/index.md)
+

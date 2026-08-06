@@ -4,7 +4,6 @@ title: _RemoveRADIUSServer_OUT (iscsiop.h)
 description: The RemoveiSNSServer_OUT structure holds the output data for the RemoveRADIUSServer method.
 old-location: storage\removeradiusserver_out.htm
 tech.root: storage
-ms.assetid: da5be900-a362-4d74-9ac7-65b96f0348ce
 ms.date: 03/29/2018
 keywords: ["RemoveRADIUSServer_OUT structure"]
 ms.keywords: "*PRemoveRADIUSServer_OUT, PRemoveRADIUSServer_OUT, PRemoveRADIUSServer_OUT structure pointer [Storage Devices], RemoveRADIUSServer_OUT, RemoveRADIUSServer_OUT structure [Storage Devices], _RemoveRADIUSServer_OUT, iscsiop/PRemoveRADIUSServer_OUT, iscsiop/RemoveRADIUSServer_OUT, storage.removeradiusserver_out, structs-iSCSI_dea5813a-b7e8-4702-af57-f7a40360efb9.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsiop.h
 api_name:
+ - _RemoveRADIUSServer_OUT
+ - PRemoveRADIUSServer_OUT
  - RemoveRADIUSServer_OUT
 ---
 
@@ -73,3 +74,4 @@ It is optional that you implement this method.
 
 
 <a href="/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_removeradiusserver_in">RemoveRADIUSServer_IN</a>
+

@@ -4,7 +4,6 @@ title: RtlTimeToTimeFields function (wdm.h)
 description: The RtlTimeToTimeFields routine converts system time into a TIME_FIELDS structure.
 old-location: kernel\rtltimetotimefields.htm
 tech.root: kernel
-ms.assetid: 128fe592-8dc1-46cf-8aa6-0f3de0896cc5
 ms.date: 04/30/2018
 keywords: ["RtlTimeToTimeFields function"]
 ms.keywords: RtlTimeToTimeFields, RtlTimeToTimeFields routine [Kernel-Mode Driver Architecture], k109_574f7b2f-cbb5-447c-84d5-88179cbe4cb7.xml, kernel.rtltimetotimefields, wdm/RtlTimeToTimeFields
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql: Any level (See Remarks section)
+req.irql: Any level (see Remarks section)
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -44,22 +43,19 @@ api_name:
 
 # RtlTimeToTimeFields function
 
-
 ## -description
 
 The RtlTimeToTimeFields routine converts system time into a <b>TIME_FIELDS</b> structure.
 
 ## -parameters
 
-### -param Time 
+### -param Time [in]
 
-[in]
 Pointer to a buffer containing the absolute system time as a large integer, accurate to 100-nanosecond resolution.
 
-### -param TimeFields 
+### -param TimeFields [out]
 
-[out]
-Pointer to a caller-allocated buffer, which must be at least <b>sizeof</b>(<b>TIME_FIELDS</b>), to contain the returned information.
+Pointer to a structure of type [**TIME_FIELDS**](./ns-wdm-time_fields.md) to contain the returned information.
 
 ## -returns
 
@@ -69,20 +65,14 @@ None
 
 Callers of <b>RtlTimeToTimeFields</b> can be running at any IRQL if both input buffers are resident.
 
-For more info about the **TIME_FIELDS** structure, see [RtlTimeFieldsToTime function](./nf-wdm-rtltimefieldstotime.md).
-
 ## -see-also
+
+[**TIME_FIELDS** structure](./ns-wdm-time_fields.md)
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exlocaltimetosystemtime">ExLocalTimeToSystemTime</a>
 
-
-
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exsystemtimetolocaltime">ExSystemTimeToLocalTime</a>
 
-
-
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kequerysystemtime">KeQuerySystemTime</a>
-
-
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtltimefieldstotime">RtlTimeFieldsToTime</a>

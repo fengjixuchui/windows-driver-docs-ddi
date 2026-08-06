@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugRegisters2.GetInstructionOffset
 title: IDebugRegisters2::GetInstructionOffset (dbgeng.h)
-description: The GetInstructionOffset method returns the location of the current thread's current instruction.
+description: The GetInstructionOffset method returns the location of the current thread's current instruction. This method belongs to the IDebugRegisters2 interface.
 old-location: debugger\getinstructionoffset.htm
 tech.root: debugger
-ms.assetid: f82416c9-1f4a-4083-b4df-f0d97eae2127
 ms.date: 05/03/2018
 keywords: ["IDebugRegisters2::GetInstructionOffset"]
 ms.keywords: GetInstructionOffset, GetInstructionOffset method [Windows Debugging], GetInstructionOffset method [Windows Debugging],IDebugRegisters interface, GetInstructionOffset method [Windows Debugging],IDebugRegisters2 interface, IDebugRegisters interface [Windows Debugging],GetInstructionOffset method, IDebugRegisters2 interface [Windows Debugging],GetInstructionOffset method, IDebugRegisters2.GetInstructionOffset, IDebugRegisters2::GetInstructionOffset, IDebugRegisters::GetInstructionOffset, IDebugRegisters_229180dd-2da4-4ff1-9284-520bef0b6843.xml, dbgeng/IDebugRegisters2::GetInstructionOffset, dbgeng/IDebugRegisters::GetInstructionOffset, debugger.getinstructionoffset
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugRegisters.GetInstructionOffset
- - IDebugRegisters2.GetInstructionOffset
+ - IDebugRegisters2::GetInstructionOffset
 ---
 
 # IDebugRegisters2::GetInstructionOffset
@@ -51,9 +49,9 @@ The <b>GetInstructionOffset</b> method returns the location of the current threa
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [out]
 
-[out]
+
 Receives the location in the target's virtual address space of the target's current instruction.
 
 ## -returns
@@ -97,3 +95,4 @@ For an overview of the <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-i
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugregisters2">IDebugRegisters2</a>
+

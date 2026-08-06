@@ -4,7 +4,6 @@ title: NmrWaitForProviderDeregisterComplete function (netioddk.h)
 description: The NmrWaitForProviderDeregisterComplete function waits for the deregistration of a provider module to complete.
 old-location: netvista\nmrwaitforproviderderegistercomplete.htm
 tech.root: netvista
-ms.assetid: ec6e75e8-f24a-4d76-b6e1-af35b5402f91
 ms.date: 05/02/2018
 keywords: ["NmrWaitForProviderDeregisterComplete function"]
 ms.keywords: NmrWaitForProviderDeregisterComplete, NmrWaitForProviderDeregisterComplete function [Network Drivers Starting with Windows Vista], netioddk/NmrWaitForProviderDeregisterComplete, netvista.nmrwaitforproviderderegistercomplete, nmrref_bd063787-0438-49de-9816-e5a110528d54.xml
@@ -53,9 +52,9 @@ The
 
 ## -parameters
 
-### -param NmrProviderHandle 
+### -param NmrProviderHandle [in]
 
-[in]
+
 A handle used by the NMR to represent the registration of the provider module. The NMR returns
      this handle to the provider module when the provider module calls the 
      <a href="/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrregisterprovider">NmrRegisterProvider</a> function.

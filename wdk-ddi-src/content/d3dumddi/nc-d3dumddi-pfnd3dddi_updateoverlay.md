@@ -4,7 +4,6 @@ title: PFND3DDDI_UPDATEOVERLAY (d3dumddi.h)
 description: The UpdateOverlay function reconfigures or moves an overlay that is being displayed.
 old-location: display\updateoverlay.htm
 tech.root: display
-ms.assetid: 80d7cc5c-51d8-4b91-9581-b073f9b0e68a
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_UPDATEOVERLAY callback function"]
 ms.keywords: PFND3DDDI_UPDATEOVERLAY, PFND3DDDI_UPDATEOVERLAY callback, UpdateOverlay, UpdateOverlay callback function [Display Devices], UserModeDisplayDriver_Functions_58c588ce-de18-4aa0-bb22-0c33d053e22f.xml, d3dumddi/UpdateOverlay, display.updateoverlay
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - UpdateOverlay
-product:
- - Windows
+ - PFND3DDDI_UPDATEOVERLAY
 ---
 
 # PFND3DDDI_UPDATEOVERLAY callback function
@@ -56,7 +53,7 @@ The <i>UpdateOverlay</i> function reconfigures or moves an overlay that is being
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -85,3 +82,4 @@ Overlays are independent from the resources that are displayed by using the over
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

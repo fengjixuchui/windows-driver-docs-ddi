@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_CREATEKEYEDMUTEX2_FLAGS
 title: _D3DKMT_CREATEKEYEDMUTEX2_FLAGS (d3dkmthk.h)
 description: Indicates how a handle to a keyed mutex is specified.
 old-location: display\d3dkmt_createkeyedmutex2_flags.htm
-ms.assetid: 21c2d262-bf8c-48a3-9801-5c2bd73f0282
 ms.date: 05/10/2018
 keywords: ["D3DKMT_CREATEKEYEDMUTEX2_FLAGS structure"]
 ms.keywords: D3DKMT_CREATEKEYEDMUTEX2_FLAGS, D3DKMT_CREATEKEYEDMUTEX2_FLAGS structure [Display Devices], _D3DKMT_CREATEKEYEDMUTEX2_FLAGS, d3dkmthk/D3DKMT_CREATEKEYEDMUTEX2_FLAGS, display.d3dkmt_createkeyedmutex2_flags
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
+ - _D3DKMT_CREATEKEYEDMUTEX2_FLAGS
  - D3DKMT_CREATEKEYEDMUTEX2_FLAGS
 ---
 
@@ -64,9 +64,9 @@ If <b>NtSecuritySharing</b> is set to zero (<b>FALSE</b>), the keyed mutex has a
 
 This member is reserved and should be set to zero. Setting this member is equivalent to setting the remaining 31 bits (0xFFFFFFFE) of a 32-bit value to zeros.
 
-### -field Value
+### -field Value [in]
 
-[in] A member in the union that <b>D3DKMT_CREATEKEYEDMUTEX2_FLAGS</b> contains that can hold a 32-bit value that identifies the keyed mutex  sharing type.
+A member in the union that <b>D3DKMT_CREATEKEYEDMUTEX2_FLAGS</b> contains that can hold a 32-bit value that identifies the keyed mutex  sharing type.
 
 ## -see-also
 
@@ -79,3 +79,4 @@ This member is reserved and should be set to zero. Setting this member is equiva
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_createkeyedmutex2">D3DKMT_CREATEKEYEDMUTEX2</a>
+

@@ -4,7 +4,6 @@ title: IPortableDeviceValues::GetKeyValue (portabledevicetypes.h)
 description: Retrieves a PROPERTYKEY value (type VT_UNKNOWN) that is specified by a key.
 old-location: wpddk\iportabledevicevalues_getkeyvalue.htm
 tech.root: wpd_dk
-ms.assetid: 00d0f564-05ab-4f87-8477-efedc172e296
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::GetKeyValue"]
 ms.keywords: GetKeyValue, GetKeyValue method, GetKeyValue method,IPortableDeviceValues interface, IPortableDeviceValues interface,GetKeyValue method, IPortableDeviceValues.GetKeyValue, IPortableDeviceValues::GetKeyValue, IPortableDeviceValuesGetKeyValue, portabledevicetypes/IPortableDeviceValues::GetKeyValue, wpddk.iportabledevicevalues_getkeyvalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.GetKeyValue
+ - IPortableDeviceValues::GetKeyValue
 ---
 
 # IPortableDeviceValues::GetKeyValue
@@ -51,14 +50,14 @@ Retrieves a <b>PROPERTYKEY</b> value (type VT_UNKNOWN) that is specified by a ke
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> key that specifies the item to retrieve.
 
-### -param pValue 
+### -param pValue [out]
 
-[out]
+
 Pointer to the retrieved <b>PROPERTYKEY</b> value.
 
 ## -returns
@@ -116,3 +115,4 @@ None.
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-setkeyvalue">IPortableDeviceValues::SetKeyValue</a>
+

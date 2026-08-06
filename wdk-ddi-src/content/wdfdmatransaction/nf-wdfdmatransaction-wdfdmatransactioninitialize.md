@@ -4,7 +4,6 @@ title: WdfDmaTransactionInitialize function (wdfdmatransaction.h)
 description: The WdfDmaTransactionInitialize method initializes a specified DMA transaction.
 old-location: wdf\wdfdmatransactioninitialize.htm
 tech.root: wdf
-ms.assetid: cb17b31a-a069-4d41-a613-81a9815ac9a3
 ms.date: 02/26/2018
 keywords: ["WdfDmaTransactionInitialize function"]
 ms.keywords: DFDmaObjectRef_d7f9d480-a08b-4d5e-a4a2-bfc2de6b4d34.xml, WdfDmaTransactionInitialize, WdfDmaTransactionInitialize method, kmdf.wdfdmatransactioninitialize, wdf.wdfdmatransactioninitialize, wdfdmatransaction/WdfDmaTransactionInitialize
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,34 +52,34 @@ The <b>WdfDmaTransactionInitialize</b> method initializes a specified DMA transa
 
 ## -parameters
 
-### -param DmaTransaction 
+### -param DmaTransaction [in]
 
-[in]
+
 A handle to a DMA transaction object that the driver obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioncreate">WdfDmaTransactionCreate</a>.
 
-### -param EvtProgramDmaFunction 
+### -param EvtProgramDmaFunction [in]
 
-[in]
+
 A pointer to the driver's <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nc-wdfdmatransaction-evt_wdf_program_dma">EvtProgramDma</a> event callback function.
 
-### -param DmaDirection 
+### -param DmaDirection [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfdmaenabler/ne-wdfdmaenabler-_wdf_dma_direction">WDF_DMA_DIRECTION</a>-typed value.
 
-### -param Mdl 
+### -param Mdl [in]
 
-[in]
+
 A pointer to a memory descriptor list (MDL) that describes the buffer that will be used for the DMA transaction. See more information in <b>Remarks</b>.
 
-### -param VirtualAddress 
+### -param VirtualAddress [in]
 
-[in]
+
 The virtual address of the buffer that will be used for the DMA transaction.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The number of bytes to be transferred.
 
 ## -returns
@@ -242,7 +241,7 @@ if(!NT_SUCCESS(status)) {
 
 
 
-<a href="/windows-hardware/drivers/kernel/mm-bad-pointer">MmGetMdlVirtualAddress</a>
+[MmGetMdlVirtualAddress](../wdm/nf-wdm-mmgetmdlvirtualaddress.md)
 
 
 

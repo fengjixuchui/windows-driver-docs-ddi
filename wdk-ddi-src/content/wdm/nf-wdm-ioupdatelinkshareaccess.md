@@ -4,7 +4,6 @@ title: IoUpdateLinkShareAccess function (wdm.h)
 description: The IoUpdateLinkShareAccess routine updates the share access for the given file object, usually when the file is being opened.
 old-location: kernel\ioupdatelinkshareaccess.htm
 tech.root: kernel
-ms.assetid: C92E53C8-3411-4E6E-B48E-B16F6B815488
 ms.date: 04/30/2018
 keywords: ["IoUpdateLinkShareAccess function"]
 ms.keywords: IoUpdateLinkShareAccess, IoUpdateLinkShareAccess function [Kernel-Mode Driver Architecture], kernel.ioupdatelinkshareaccess, wdm/IoUpdateLinkShareAccess
@@ -51,19 +50,19 @@ The <b>IoUpdateLinkShareAccess</b> routine updates the share access for the give
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to the file object, which usually is being closed by the current thread.
 
-### -param ShareAccess 
+### -param ShareAccess [in, out]
 
-[in, out]
+
 A pointer to the common share-access data structure that is associated with <i>FileObject</i>. Drivers should treat this structure as opaque.
 
-### -param LinkShareAccess 
+### -param LinkShareAccess [in, out, optional]
 
-[in, out, optional]
+
 A pointer to the common link share-access data structure (<a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_link_share_access">LINK_SHARE_ACCESS</a>) that is associated with <i>FileObject</i>. Drivers should treat this structure as opaque.
 
 ## -remarks

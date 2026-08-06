@@ -1,10 +1,10 @@
 ---
 UID: NS:ntddk._WHEA_AZCC_ROOT_BUS_LIST_EVENT
 title: WHEA_AZCC_ROOT_BUS_LIST_EVENT
+tech.root: whea
 ms.date: 04/28/2020
-ms.topic: language-reference
 targetos: Windows
-description: 
+description: "Learn more about: WHEA_AZCC_ROOT_BUS_LIST_EVENT"
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -28,6 +28,7 @@ api_location:
  - ntddk.h
 api_name:
  - _WHEA_AZCC_ROOT_BUS_LIST_EVENT
+ - PWHEA_AZCC_ROOT_BUS_LIST_EVENT
  - WHEA_AZCC_ROOT_BUS_LIST_EVENT
 f1_keywords:
  - _WHEA_AZCC_ROOT_BUS_LIST_EVENT

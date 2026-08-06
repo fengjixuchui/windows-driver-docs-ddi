@@ -4,7 +4,6 @@ title: SerCx2PioTransmitPurgeFifoComplete function (sercx.h)
 description: The SerCx2PioTransmitPurgeFifoComplete method notifies version 2 of the serial framework extension (SerCx2) that the serial controller driver has finished purging the data from the transmit FIFO in the serial controller hardware.
 old-location: serports\sercx2piotransmitpurgefifocomplete.htm
 tech.root: serports
-ms.assetid: D5877A1C-0963-4C11-B440-122182CBA624
 ms.date: 04/23/2018
 keywords: ["SerCx2PioTransmitPurgeFifoComplete function"]
 ms.keywords: 2/SerCx2PioTransmitPurgeFifoComplete, SerCx2PioTransmitPurgeFifoComplete, SerCx2PioTransmitPurgeFifoComplete method [Serial Ports], serports.sercx2piotransmitpurgefifocomplete
@@ -50,14 +49,14 @@ The <b>SerCx2PioTransmitPurgeFifoComplete</b> method notifies version 2 of the s
 
 ## -parameters
 
-### -param PioTransmit 
+### -param PioTransmit [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitcreate">SerCx2PioTransmitCreate</a> method to create this object.
 
-### -param BytesPurged 
+### -param BytesPurged [in]
 
-[in]
+
 The number of bytes of unsent data that the serial controller driver purged from the transmit FIFO.
 
 ## -remarks

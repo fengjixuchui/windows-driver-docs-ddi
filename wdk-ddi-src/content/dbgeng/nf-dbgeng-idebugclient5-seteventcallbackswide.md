@@ -4,7 +4,6 @@ title: IDebugClient5::SetEventCallbacksWide (dbgeng.h)
 description: The SetEventCallbacksWide method registers an event callbacks object with this client.
 old-location: debugger\seteventcallbackswide.htm
 tech.root: debugger
-ms.assetid: f5aecd1f-e0f2-47a9-aa70-767a42fefdff
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::SetEventCallbacksWide"]
 ms.keywords: IDebugClient5 interface [Windows Debugging],SetEventCallbacksWide method, IDebugClient5.SetEventCallbacksWide, IDebugClient5::SetEventCallbacksWide, SetEventCallbacksWide, SetEventCallbacksWide method [Windows Debugging], SetEventCallbacksWide method [Windows Debugging],IDebugClient5 interface, dbgeng/IDebugClient5::SetEventCallbacksWide, debugger.seteventcallbackswide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient5.SetEventCallbacksWide
+ - IDebugClient5::SetEventCallbacksWide
 ---
 
 # IDebugClient5::SetEventCallbacksWide
@@ -50,9 +49,9 @@ The <b>SetEventCallbacksWide</b> method registers an event callbacks object with
 
 ## -parameters
 
-### -param Callbacks 
+### -param Callbacks [in]
 
-[in]
+
 Specifies the interface pointer to the event callbacks object to register with this client.
 
 ## -returns
@@ -98,3 +97,4 @@ For more information about callbacks, see <a href="/windows-hardware/drivers/deb
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugeventcallbacks">IDebugEventCallbacks</a>
+

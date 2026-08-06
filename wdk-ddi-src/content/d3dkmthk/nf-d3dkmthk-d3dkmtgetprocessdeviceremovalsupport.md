@@ -1,9 +1,8 @@
 ---
 UID: NF:d3dkmthk.D3DKMTGetProcessDeviceRemovalSupport
 title: D3DKMTGetProcessDeviceRemovalSupport function (d3dkmthk.h)
-description: Used to get process device removal support.
-ms.assetid: 3f055101-a1de-4997-9c39-ebaffe736991
-ms.date: 08/03/2018
+description: The D3DKMTGetProcessDeviceRemovalSupport function determines whether a process using the specified adapter can recover from graphics device removal.
+ms.date: 02/25/2022
 keywords: ["D3DKMTGetProcessDeviceRemovalSupport function"]
 ms.keywords: D3DKMTGetProcessDeviceRemovalSupport
 req.header: d3dkmthk.h
@@ -36,12 +35,9 @@ api_location:
  - Gdi32.dll
 api_name:
  - D3DKMTGetProcessDeviceRemovalSupport
-product:
- - Windows
 ---
 
 # D3DKMTGetProcessDeviceRemovalSupport function
-
 
 ## -description
 
@@ -49,11 +45,10 @@ Used to get process device removal support.
 
 ## -parameters
 
-### -param D3DKMT_GETPROCESSDEVICEREMOVALSUPPORT*
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_GETPROCESSDEVICEREMOVALSUPPORT](ns-d3dkmthk-_d3dkmt_getprocessdeviceremovalsupport.md) structure.
 
 ## -returns
 
-This function returns NTSTATUS.
-
+This function returns **NTSTATUS**.

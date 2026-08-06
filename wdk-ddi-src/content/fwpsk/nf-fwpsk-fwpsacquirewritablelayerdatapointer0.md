@@ -4,7 +4,6 @@ title: FwpsAcquireWritableLayerDataPointer0 function (fwpsk.h)
 description: The FwpsAcquireWritableLayerDataPointer0 function returns layer-specific data that can be inspected and changed.Note  FwpsAcquireWritableLayerDataPointer0 is a specific version of FwpsAcquireWritableLayerDataPointer.
 old-location: netvista\fwpsacquirewritablelayerdatapointer0.htm
 tech.root: netvista
-ms.assetid: 79816d01-bf27-49d0-b6f1-083b7e87cc4e
 ms.date: 05/02/2018
 keywords: ["FwpsAcquireWritableLayerDataPointer0 function"]
 ms.keywords: FwpsAcquireWritableLayerDataPointer0, FwpsAcquireWritableLayerDataPointer0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsAcquireWritableLayerDataPointer0, netvista.fwpsacquirewritablelayerdatapointer0, wfp_ref_2_funct_3_fwps_A-B_adf2c5a7-ebcb-4c05-aa5a-3b794b60dc74.xml
@@ -54,17 +53,17 @@ The
 
 ## -parameters
 
-### -param classifyHandle 
+### -param classifyHandle [in]
 
-[in]
+
 A handle for the classify request.
      This handle is obtained by calling 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsacquireclassifyhandle0">
      FwpsAcquireClassifyHandle0</a>.
 
-### -param filterId 
+### -param filterId [in]
 
-[in]
+
 The value of the 
      <b>FilterId</b> member of the 
      <a href="/windows-hardware/drivers/ddi/_netvista/">classifyFn</a> function's 
@@ -72,21 +71,21 @@ The value of the
      <b>FilterId</b> member, see 
      <a href="/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_filter1">FWPS_FILTER1</a>.
 
-### -param flags 
+### -param flags [in]
 
-[in]
+
 Reserved for future use. Set to zero.
 
-### -param writableLayerData 
+### -param writableLayerData [out]
 
-[out]
+
 A data buffer that contains the modifiable data for the layer. The supported data types, which are listed in the following Remarks section, are defined as
      structures. On return, the data can be accessed by casting the void pointer to the appropriate structure
      type.
 
-### -param classifyOut 
+### -param classifyOut [in, out]
 
-[in, out]
+
 Set to the 
      <i>classifyOut</i> parameter of the callout driver's 
      <a href="/windows-hardware/drivers/ddi/_netvista/">classifyFn</a> function. The 
@@ -133,7 +132,7 @@ An error occurred.
 
 <b>FwpsAcquireWritableLayerDataPointer0</b> sets the following members of the <a href="/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_classify_out0">FWPS_CLASSIFY_OUT0</a> structure:<ul>
 <li><i>classifyOut</i>-><b>actionType</b> = <b>FWP_ACTION_BLOCK</b></li>
-<li><i>classifyOut</i>-><b>rights</b> = ~<b>FWPS_RIGHT_ACTION_WRITE</b></li>
+<li><i>classifyOut</i>-><b>rights</b> &= ~<b>FWPS_RIGHT_ACTION_WRITE</b></li>
 </ul>
 
 

@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddk._PCI_EXPRESS_LINK_CONTROL_REGISTER
 title: _PCI_EXPRESS_LINK_CONTROL_REGISTER (ntddk.h)
-description: The PCI_EXPRESS_LINK_CONTROL_REGISTER structure describes a PCI Express (PCIe) link control register of a PCIe capability structure.
+description: The _PCI_EXPRESS_LINK_CONTROL_REGISTER structure (ntddk.h) describes a PCI Express (PCIe) link control register of a PCIe capability structure.
 old-location: pci\pci_express_link_control_register.htm
 tech.root: PCI
-ms.assetid: f4f8bd0d-fad7-4712-92ca-44d45969142d
 ms.date: 02/24/2018
 keywords: ["PCI_EXPRESS_LINK_CONTROL_REGISTER structure"]
 ms.keywords: "*PPCI_EXPRESS_LINK_CONTROL_REGISTER, PCI.pci_express_link_control_register, PCI_EXPRESS_LINK_CONTROL_REGISTER, PCI_EXPRESS_LINK_CONTROL_REGISTER union [Buses], PPCI_EXPRESS_LINK_CONTROL_REGISTER, PPCI_EXPRESS_LINK_CONTROL_REGISTER union pointer [Buses], _PCI_EXPRESS_LINK_CONTROL_REGISTER, ntddk/PCI_EXPRESS_LINK_CONTROL_REGISTER, ntddk/PPCI_EXPRESS_LINK_CONTROL_REGISTER, pci_struct_0fc5be0f-aae8-4d59-a569-030eb593e927.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _PCI_EXPRESS_LINK_CONTROL_REGISTER
+ - PPCI_EXPRESS_LINK_CONTROL_REGISTER
  - PCI_EXPRESS_LINK_CONTROL_REGISTER
 ---
 
@@ -50,7 +51,7 @@ api_name:
 
 ## -description
 
-The PCI_EXPRESS_LINK_CONTROL_REGISTER structure describes a PCI Express (PCIe) link control register of a PCIe capability structure.
+The **PCI_EXPRESS_LINK_CONTROL_REGISTER** structure describes a PCI Express (PCIe) link control register of a PCIe capability structure.
 
 ## -struct-fields
 
@@ -58,76 +59,72 @@ The PCI_EXPRESS_LINK_CONTROL_REGISTER structure describes a PCI Express (PCIe) l
 
 ### -field AsUSHORT
 
-A USHORT representation of the contents of the PCI_EXPRESS_LINK_CONTROL_REGISTER structure.
+A **USHORT** representation of the contents of the **PCI_EXPRESS_LINK_CONTROL_REGISTER** structure.
 
 
-#### - ActiveStatePMControl
+### -field DUMMYSTRUCTNAME.ActiveStatePMControl
 
 The level of active state power management that is enabled on the PCIe link. Possible values are:
 
+<table>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><b>L0sAndL1EntryDisabled</b></td>
+<td>L0s and L1 are both disabled.</td>
+</tr>
+<tr>
+<td><b>L0sEntryEnabled</b></td>
+<td>L0s is enabled.</td>
+</tr>
+<tr>
+<td><b>L1EntryEnabled</b></td>
+<td>L1 is enabled.</td>
+</tr>
+<tr>
+<td><b>L0sAndL1EntryEnabled</b></td>
+<td>L0s and L1 are both enabled.</td>
+</tr>
+</table>
 
 
-
-
-#### L0sAndL1EntryDisabled
-
-L0s and L1 are both disabled.
-
-
-
-#### L0sEntryEnabled
-
-L0s is enabled.
-
-
-
-#### L1EntryEnabled
-
-L1 is enabled.
-
-
-
-#### L0sAndL1EntryEnabled
-
-L0s and L1 are both enabled.
-
-
-#### - CommonClockConfig
+### -field DUMMYSTRUCTNAME.CommonClockConfig
 
 A single bit that indicates that this component and the component at the opposite end of the link are operating with a distributed common reference clock. If this bit is clear, this component and the component at the opposite end of the link are operating with an asynchronous reference clock.
 
 
-#### - EnableClockPowerManagement
+### -field DUMMYSTRUCTNAME.EnableClockPowerManagement
 
 A single bit that indicates that clock power management is enabled.
 
 
-#### - ExtendedSynch
+### -field DUMMYSTRUCTNAME.ExtendedSynch
 
 A single bit that indicates that additional ordered sets are transmitted when exiting the L0s state and when in the recovery state.
 
 
-#### - LinkDisable
+### -field DUMMYSTRUCTNAME.LinkDisable
 
 A single bit that indicates that the link is disabled. This member is not applicable for endpoint devices, PCIe-to-PCI or PCI-X bridges, and upstream ports of switches.
 
 
-#### - ReadCompletionBoundary
+### -field DUMMYSTRUCTNAME.ReadCompletionBoundary
 
 The read completion boundary (RCB) value for the root port or the root port upstream from the endpoint. If the bit is clear, the RCB is 64 byte. If the bit is set, the RCB is 128 byte. This member is not applicable for switch ports.
 
 
-#### - RetrainLink
+### -field DUMMYSTRUCTNAME.RetrainLink
 
 A single bit that is used to initiate retraining of the link. Reads of this bit always return zero. This member is not applicable for endpoint devices, PCIe-to-PCI or PCI-X bridges, and upstream ports of switches.
 
 
-#### - Rsvd1
+### -field DUMMYSTRUCTNAME.Rsvd1
 
 Reserved.
 
-
-#### - Rsvd2
+### -field DUMMYSTRUCTNAME.Rsvd2
 
 Reserved.
 
@@ -152,10 +149,12 @@ typedef union _PCI_EXPRESS_LINK_CONTROL_REGISTER {
 
 ## -remarks
 
-The PCI_EXPRESS_LINK_CONTROL_REGISTER structure is available in Windows Server 2008 and later versions of Windows.
+The **PCI_EXPRESS_LINK_CONTROL_REGISTER** structure is available in Windows Server 2008 and later versions of Windows.
 
-A PCI_EXPRESS_LINK_CONTROL_REGISTER structure is contained in the <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_pci_express_capability">PCI_EXPRESS_CAPABILITY</a> structure.
+A **PCI_EXPRESS_LINK_CONTROL_REGISTER** structure is contained in the [PCI_EXPRESS_CAPABILITY_REGISTER](ns-ntddk-_pci_express_capability.md) structure.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_pci_express_capability">PCI_EXPRESS_CAPABILITY</a>
+[PCI_EXPRESS_CAPABILITY_REGISTER](ns-ntddk-_pci_express_capability.md)
+
+[PCI_EXPRESS_LINK_CONTROL_2_REGISTER](ns-ntddk-pci_express_link_control_2_register.md)

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols3.GetModuleParameters
 title: IDebugSymbols3::GetModuleParameters (dbgeng.h)
-description: The GetModuleParameters method returns parameters for modules in the target.
+description: The GetModuleParameters method returns parameters for modules in the target. This method belongs to the IDebugSymbols3 interface.
 old-location: debugger\getmoduleparameters.htm
 tech.root: debugger
-ms.assetid: f744cd2e-a4ec-43be-a5cc-9135a73bce80
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::GetModuleParameters"]
 ms.keywords: GetModuleParameters, GetModuleParameters method [Windows Debugging], GetModuleParameters method [Windows Debugging],IDebugSymbols interface, GetModuleParameters method [Windows Debugging],IDebugSymbols2 interface, GetModuleParameters method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],GetModuleParameters method, IDebugSymbols2 interface [Windows Debugging],GetModuleParameters method, IDebugSymbols2::GetModuleParameters, IDebugSymbols3 interface [Windows Debugging],GetModuleParameters method, IDebugSymbols3.GetModuleParameters, IDebugSymbols3::GetModuleParameters, IDebugSymbols::GetModuleParameters, IDebugSymbols_0a78fd64-15b7-4032-83a8-9867037e5081.xml, dbgeng/IDebugSymbols2::GetModuleParameters, dbgeng/IDebugSymbols3::GetModuleParameters, dbgeng/IDebugSymbols::GetModuleParameters, debugger.getmoduleparameters
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.GetModuleParameters
- - IDebugSymbols2.GetModuleParameters
- - IDebugSymbols3.GetModuleParameters
+ - IDebugSymbols3::GetModuleParameters
 ---
 
 # IDebugSymbols3::GetModuleParameters
@@ -52,24 +49,24 @@ The <b>GetModuleParameters</b> method returns parameters for <a href="/windows-h
 
 ## -parameters
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of modules whose parameters are desired.
 
-### -param Bases 
+### -param Bases [in, optional]
 
-[in, optional]
+
 Specifies an array of locations in the target's virtual address space representing the base address of the modules whose parameters are desired.  The size of this array is the value of <i>Count</i>.  If <i>Bases</i> is <b>NULL</b>, the <i>Start</i> parameter is used to specify the modules by index.
 
-### -param Start 
+### -param Start [in]
 
-[in]
+
 Specifies the index of the first module whose parameters are desired.  If <i>Bases</i> is not <b>NULL</b>, this parameter is ignored.
 
-### -param Params 
+### -param Params [out]
 
-[out]
+
 Receives the parameters.  The size of this array is the value of <i>Count</i>.  See <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_module_parameters">DEBUG_MODULE_PARAMETERS</a>.
 
 ## -returns
@@ -126,3 +123,4 @@ For more information about modules, see <a href="/windows-hardware/drivers/debug
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

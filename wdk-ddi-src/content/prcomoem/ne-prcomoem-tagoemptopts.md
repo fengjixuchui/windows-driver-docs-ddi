@@ -1,15 +1,13 @@
 ---
 UID: NE:prcomoem.tagOEMPTOPTS
-title: tagOEMPTOPTS (prcomoem.h)
-description: 
-old-location: print\oemptopts.htm
+title: OEMPTOPTS (prcomoem.h)
+description: Describes the OEMPTOPTS enumeration.
 tech.root: print
-ms.assetid: A63C115D-7215-422A-B4F9-C88820FC8168
-ms.date: 04/20/2018
+ms.date: 07/25/2022
 keywords: ["tagOEMPTOPTS enumeration"]
 ms.keywords: "*POEMPTOPTS, OEMPTOPTS, OEMPTOPTS enumeration [Print Devices], OEMPT_DEFAULT, OEMPT_NOSHAPSHOT, POEMPTOPTS, POEMPTOPTS enumeration pointer [Print Devices], prcomoem/OEMPTOPTS, prcomoem/OEMPT_DEFAULT, prcomoem/OEMPT_NOSHAPSHOT, prcomoem/POEMPTOPTS, print.oemptopts, tagOEMPTOPTS"
 req.header: prcomoem.h
-req.include-header: 
+req.include-header: Prcomoem.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -42,19 +40,21 @@ api_type:
 api_location:
  - Prcomoem.h
 api_name:
+ - tagOEMPTOPTS
+ - POEMPTOPTS
  - OEMPTOPTS
 ---
 
-# tagOEMPTOPTS enumeration
-
-
 ## -description
+
+Describes the **OEMPTOPTS** enumeration.
 
 ## -enum-fields
 
 ### -field OEMPT_DEFAULT
 
+Defines the OEMPT_DEFAULT constant.
+
 ### -field OEMPT_NOSNAPSHOT
 
-#### - OEMPT_NOSHAPSHOT
-
+Defines the OEMPT_NOSNAPSHOT constant.

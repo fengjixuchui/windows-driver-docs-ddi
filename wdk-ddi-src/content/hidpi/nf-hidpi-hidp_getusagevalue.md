@@ -4,7 +4,6 @@ title: HidP_GetUsageValue function (hidpi.h)
 description: The HidP_GetUsageValue routine extracts the data associated with a HID control value that matches the selection criteria in a HID report.
 old-location: hid\hidp_getusagevalue.htm
 tech.root: hid
-ms.assetid: 5f2d1536-4676-4afe-aa5c-08e7c74d1dd2
 ms.date: 04/30/2018
 keywords: ["HidP_GetUsageValue function"]
 ms.keywords: HidP_GetUsageValue, HidP_GetUsageValue routine [Human Input Devices], hid.hidp_getusagevalue, hidfunc_d046d7e6-bd4c-4d80-80a8-f8e2d000eeee.xml, hidpi/HidP_GetUsageValue
@@ -51,44 +50,44 @@ The <b>HidP_GetUsageValue</b> routine extracts the data associated with a HID co
 
 ## -parameters
 
-### -param ReportType 
+### -param ReportType [in]
 
-[in]
+
 Specifies a <a href="/windows-hardware/drivers/ddi/hidpi/ne-hidpi-_hidp_report_type">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.
 
-### -param UsagePage 
+### -param UsagePage [in]
 
-[in]
+
 Specifies the value's <a href="/windows-hardware/drivers/hid/hid-usages">usage page</a>.
 
-### -param LinkCollection 
+### -param LinkCollection [in]
 
-[in]
+
 Specifies the <a href="/windows-hardware/drivers/hid/link-collections">link collection</a> that contains the value. If <i>LinkCollection</i> is nonzero, the routine only searches for the usage in this link collection; otherwise, if <i>LinkCollection</i> is zero, the routine searches for the usage in the <a href="/windows-hardware/drivers/hid/top-level-collections">top-level collection</a> associated with <i>PreparsedData</i>.
 
-### -param Usage 
+### -param Usage [in]
 
-[in]
+
 Specifies the usage of the value.
 
-### -param UsageValue 
+### -param UsageValue [out]
 
-[out]
+
 Pointer to a buffer in which the routine returns the value data.
 
-### -param PreparsedData 
+### -param PreparsedData [in]
 
-[in]
+
 Pointer to a top-level collection's <a href="/windows-hardware/drivers/hid/preparsed-data">preparsed data</a>.
 
-### -param Report 
+### -param Report [in]
 
-[in]
+
 Pointer to a report that contains values.
 
-### -param ReportLength 
+### -param ReportLength [in]
 
-[in]
+
 Specifies the length, in bytes, of the report located at <i>Report</i>.
 
 ## -returns
@@ -114,7 +113,7 @@ The routine successfully returned the value data.
 <tr>
 <td width="40%">
 <dl>
-<dt><b>HIDP_INVALID_REPORT_LENGTH</b></dt>
+<dt><b>HIDP_STATUS_INVALID_REPORT_LENGTH</b></dt>
 </dl>
 </td>
 <td width="60%">
@@ -125,7 +124,7 @@ The report length is not valid.
 <tr>
 <td width="40%">
 <dl>
-<dt><b>HIDP_INVALID_REPORT_TYPE</b></dt>
+<dt><b>HIDP_STATUS_INVALID_REPORT_TYPE</b></dt>
 </dl>
 </td>
 <td width="60%">

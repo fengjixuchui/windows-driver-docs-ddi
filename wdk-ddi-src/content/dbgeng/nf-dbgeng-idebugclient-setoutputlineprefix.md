@@ -4,7 +4,6 @@ title: IDebugClient::SetOutputLinePrefix (dbgeng.h)
 description: Sets a prefix for multiple lines of output.
 old-location: debugger\idebugclient_setoutputlineprefix.htm
 tech.root: debugger
-ms.assetid: 59A3FD7D-153D-4580-84C1-2408A485F684
 ms.date: 05/03/2018
 keywords: ["IDebugClient::SetOutputLinePrefix"]
 ms.keywords: IDebugClient interface [Windows Debugging],SetOutputLinePrefix method, IDebugClient.SetOutputLinePrefix, IDebugClient::SetOutputLinePrefix, SetOutputLinePrefix, SetOutputLinePrefix method [Windows Debugging], SetOutputLinePrefix method [Windows Debugging],IDebugClient interface, dbgeng/IDebugClient::SetOutputLinePrefix, debugger.idebugclient_setoutputlineprefix
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.SetOutputLinePrefix
+ - IDebugClient::SetOutputLinePrefix
 ---
 
 # IDebugClient::SetOutputLinePrefix
@@ -50,9 +49,9 @@ api_name:
 
 ## -parameters
 
-### -param Prefix 
+### -param Prefix [in, optional]
 
-[in, optional]
+
 A pointer to the prefix value.
 
 ## -returns
@@ -89,3 +88,4 @@ Some of the engine commands produce
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient">IDebugClient</a>
+

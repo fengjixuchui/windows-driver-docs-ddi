@@ -1,10 +1,9 @@
 ---
-UID: NE:ks.__unnamed_enum_25
+UID: NE:ks.KSPPROPERTY_ALLOCATOR_MDLCACHING
 title: KSPPROPERTY_ALLOCATOR_MDLCACHING (ks.h)
-description: This enumeration is used internally by the operating system.
+description: The KSPPROPERTY_ALLOCATOR_MDLCACHING enumeration contains values that are used internally by the operating system.
 old-location: stream\kspproperty_allocator_mdlcaching.htm
 tech.root: stream
-ms.assetid: 91BB915F-E964-41D9-8D2A-3D5EF6F5B398
 ms.date: 04/23/2018
 keywords: ["KSPPROPERTY_ALLOCATOR_MDLCACHING enumeration"]
 ms.keywords: KSPPROPERTY_ALLOCATOR_MDLCACHING, KSPPROPERTY_ALLOCATOR_MDLCACHING enumeration [Streaming Media Devices], KSPROPERTY_ALLOCATOR_CLEANUP_CACHEDMDLPAGES, ks/KSPPROPERTY_ALLOCATOR_MDLCACHING, ks/KSPROPERTY_ALLOCATOR_CLEANUP_CACHEDMDLPAGES, stream.kspproperty_allocator_mdlcaching

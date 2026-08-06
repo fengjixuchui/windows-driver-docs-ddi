@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_SETCONTEXTSCHEDULINGPRIORITY
 title: _D3DKMT_SETCONTEXTSCHEDULINGPRIORITY (d3dkmthk.h)
 description: The D3DKMT_SETCONTEXTSCHEDULINGPRIORITY structure describes parameters for setting scheduling priority for a device context.
 old-location: display\d3dkmt_setcontextschedulingpriority.htm
-ms.assetid: 879c7117-080a-4056-b94f-6462b370f434
 ms.date: 05/10/2018
 keywords: ["D3DKMT_SETCONTEXTSCHEDULINGPRIORITY structure"]
 ms.keywords: D3DKMT_SETCONTEXTSCHEDULINGPRIORITY, D3DKMT_SETCONTEXTSCHEDULINGPRIORITY structure [Display Devices], OpenGL_Structs_d0a33042-237e-469f-93af-f6031cf54098.xml, _D3DKMT_SETCONTEXTSCHEDULINGPRIORITY, d3dkmthk/D3DKMT_SETCONTEXTSCHEDULINGPRIORITY, display.d3dkmt_setcontextschedulingpriority
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_SETCONTEXTSCHEDULINGPRIORITY
  - D3DKMT_SETCONTEXTSCHEDULINGPRIORITY
 ---
 
@@ -52,14 +52,15 @@ The D3DKMT_SETCONTEXTSCHEDULINGPRIORITY structure describes parameters for setti
 
 ## -struct-fields
 
-### -field hContext
+### -field hContext [in]
 
-[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device context that scheduling priority is set on.
+A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device context that scheduling priority is set on.
 
-### -field Priority
+### -field Priority [in]
 
-[in] The priority level to set for the device context.
+The priority level to set for the device context.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtsetcontextschedulingpriority">D3DKMTSetContextSchedulingPriority</a>
+

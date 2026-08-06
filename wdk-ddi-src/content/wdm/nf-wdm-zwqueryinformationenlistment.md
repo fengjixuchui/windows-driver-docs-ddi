@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.ZwQueryInformationEnlistment
 title: ZwQueryInformationEnlistment function (wdm.h)
-description: The ZwQueryInformationEnlistment routine retrieves information about a specified enlistment object.
+description: Learn how the ZwQueryInformationEnlistment routine retrieves information about a specified enlistment object.
 old-location: kernel\zwqueryinformationenlistment.htm
 tech.root: kernel
-ms.assetid: d8aa5227-7150-4fb1-a8ab-cb0f8ae4f74a
 ms.date: 04/30/2018
 keywords: ["ZwQueryInformationEnlistment function"]
 ms.keywords: NtQueryInformationEnlistment, ZwQueryInformationEnlistment, ZwQueryInformationEnlistment routine [Kernel-Mode Driver Architecture], kernel.zwqueryinformationenlistment, ktm_ref_f9039d82-41a8-4696-9393-cb9ea0d8d279.xml, wdm/NtQueryInformationEnlistment, wdm/ZwQueryInformationEnlistment
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - ZwQueryInformationEnlistment
- - NtQueryInformationEnlistment
 ---
 
 # ZwQueryInformationEnlistment function
@@ -51,14 +49,14 @@ The <b>ZwQueryInformationEnlistment</b> routine retrieves information about a sp
 
 ## -parameters
 
-### -param EnlistmentHandle 
+### -param EnlistmentHandle [in]
 
-[in]
+
 A handle to an enlistment object that was obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment">ZwCreateEnlistment</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a>. The handle must have ENLISTMENT_QUERY_INFORMATION access to the object.
 
-### -param EnlistmentInformationClass 
+### -param EnlistmentInformationClass [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_enlistment_information_class">ENLISTMENT_INFORMATION_CLASS</a>-typed enumeration value that specifies the information to be obtained. This value must be one of the following values:
 
 <ul>
@@ -73,19 +71,19 @@ An <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_enlistment_information_cla
 </ul>
 The enumeration's <b>EnlistmentFullInformation</b> value is not used with <b>ZwQueryInformationEnlistment</b>.
 
-### -param EnlistmentInformation 
+### -param EnlistmentInformation [out]
 
-[out]
+
 A pointer to a caller-allocated buffer that receives the information that the <i>EnlistmentInformationClass </i>parameter specifies. If the <i>EnlistmentInformationClass</i> parameter's value is <b>EnlistmentBasicInformation</b>, this buffer's structure type must be <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_enlistment_basic_information">ENLISTMENT_BASIC_INFORMATION</a>. If the <i>EnlistmentInformationClass</i> parameter's value is <b>EnlistmentRecoveryInformation</b>, this buffer's type must match the caller-defined type that the caller used when it called <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntsetinformationenlistment">ZwSetInformationEnlistment</a>.
 
-### -param EnlistmentInformationLength 
+### -param EnlistmentInformationLength [in]
 
-[in]
+
 The length, in bytes, of the buffer that the <i>EnlistmentInformation</i> parameter points to.
 
-### -param ReturnLength 
+### -param ReturnLength [out, optional]
 
-[out, optional]
+
 A pointer to a caller-allocated variable that receives the length, in bytes, of the information that KTM writes to the <i>EnlistmentInformation </i>buffer. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns
@@ -192,3 +190,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntsetinformationenlistment">ZwSetInformationEnlistment</a>
+

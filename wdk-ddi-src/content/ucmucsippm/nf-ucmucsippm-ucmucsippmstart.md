@@ -3,7 +3,6 @@ UID: NF:ucmucsippm.UcmUcsiPpmStart
 title: UcmUcsiPpmStart function (ucmucsippm.h)
 tech.root: usbref
 description: Instructs the class extension to start sending requests to the client driver.
-ms.assetid: b0899727-573a-4cd6-b1b4-3ca6b682bffa
 ms.date: 09/30/2018
 keywords: ["UcmUcsiPpmStart function"]
 ms.keywords: UcmUcsiPpmStart
@@ -48,9 +47,9 @@ Instructs the UcmUcsiCx class extension to start sending requests to the client 
 
 ## -parameters
 
-### -param PpmObject 
+### -param PpmObject [in]
 
-[in]A handle to a Platform Policy Manager (PPM) object that the client driver received in the previous call to [**UcmUcsiPpmCreate**](nf-ucmucsippm-ucmucsippmcreate.md).
+A handle to a Platform Policy Manager (PPM) object that the client driver received in the previous call to [**UcmUcsiPpmCreate**](nf-ucmucsippm-ucmucsippmcreate.md).
 
 ## -returns
 

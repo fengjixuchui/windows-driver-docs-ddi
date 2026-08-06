@@ -4,7 +4,6 @@ title: _MSFC_PortEvent (hbapiwmi.h)
 description: A WMI provider uses the MSFC_PortEvent structure to report port events for the indicated adapter.
 old-location: storage\msfc_portevent.htm
 tech.root: storage
-ms.assetid: bf9e2d58-9379-4b88-9043-580a97ec7cd9
 ms.date: 03/29/2018
 keywords: ["MSFC_PortEvent structure"]
 ms.keywords: "*PMSFC_PortEvent, MSFC_PortEvent, MSFC_PortEvent structure [Storage Devices], PMSFC_PortEvent, PMSFC_PortEvent structure pointer [Storage Devices], _MSFC_PortEvent, hbapiwmi/MSFC_PortEvent, hbapiwmi/PMSFC_PortEvent, storage.msfc_portevent, structs-Fibre_21739c44-07d2-412e-bc03-3cc25b14bb9d.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hbapiwmi.h
 api_name:
+ - _MSFC_PortEvent
+ - PMSFC_PortEvent
  - MSFC_PortEvent
 ---
 
@@ -69,3 +70,4 @@ Contains the worldwide name that indicates the port for which the event occurred
 ## -see-also
 
 <a href="/windows-hardware/drivers/storage/event-types-qualifiers">EVENT_TYPE_QUALIFIERS</a>
+

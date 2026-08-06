@@ -4,7 +4,6 @@ title: wiasCreateDrvItem function (wiamdef.h)
 description: The wiasCreateDrvItem function creates an IWiaDrvItem Interface object.
 old-location: image\wiascreatedrvitem.htm
 tech.root: image
-ms.assetid: bc91133a-ae6a-447a-8519-65fbe2929521
 ms.date: 05/03/2018
 keywords: ["wiasCreateDrvItem function"]
 ms.keywords: image.wiascreatedrvitem, wiamdef/wiasCreateDrvItem, wiasCreateDrvItem, wiasCreateDrvItem function [Imaging Devices], wiasFncs_9bede31d-0ac0-4cc7-bdd5-7734e5f82dfc.xml
@@ -62,23 +61,23 @@ Specifies a string that contains the item name without path information.
 
 Specifies a string that contains the item name with path information.
 
-### -param pIMiniDrv 
+### -param pIMiniDrv [in, out]
 
-[in, out]
+
 Pointer to the [IWiaMiniDrv Interface](../wiamindr_lh/nn-wiamindr_lh-iwiaminidrv.md) of the current minidriver.
 
 ### -param cbDevSpecContext
 
 Specifies the size in bytes of the device specific context.
 
-### -param ppDevSpecContext 
+### -param ppDevSpecContext [out]
 
-[out]
+
 Pointer to a memory location that receives the address of the device specific context. Set this to **NULL** if the information is not needed.
 
-### -param ppIWiaDrvItem 
+### -param ppIWiaDrvItem [out]
 
-[out]
+
 Pointer to a memory location that receives the address of an [IWiaDrvItem Interface](../wiamindr_lh/nn-wiamindr_lh-iwiadrvitem.md) for the newly created **IWiaDrvItem** object.
 
 ## -returns

@@ -4,7 +4,6 @@ title: _CMP_MONITOR_PLUGS (61883.h)
 description: This structure is used to monitor plug access. The request allows a driver to monitor all access to local oPCR and iPCR plugs.
 old-location: ieee\cmp_monitor_plugs.htm
 tech.root: IEEE
-ms.assetid: D281BCBB-CDC6-442C-9A47-DF07D1BE1B28
 ms.date: 02/15/2018
 keywords: ["CMP_MONITOR_PLUGS structure"]
 ms.keywords: "*PCMP_MONITOR_PLUGS, 61883/CMP_MONITOR_PLUGS, 61883/PCMP_MONITOR_PLUGS, CMP_MONITOR_PLUGS, CMP_MONITOR_PLUGS structure [Buses], IEEE.cmp_monitor_plugs, PCMP_MONITOR_PLUGS, PCMP_MONITOR_PLUGS structure pointer [Buses], _CMP_MONITOR_PLUGS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _CMP_MONITOR_PLUGS
+ - PCMP_MONITOR_PLUGS
  - CMP_MONITOR_PLUGS
 ---
 
@@ -60,7 +61,7 @@ On input, the caller sets this member to REGISTER_MONITOR_PLUG_NOTIFY to registe
 
 ### -field pfnNotify
 
-On input, aointer to a caller-supplied function to be called by the protocol driver when a local plug is accessed. 
+On input, a pointer to a caller-supplied function to be called by the protocol driver when a local plug is accessed. 
 
 This function uses the following prototype: 
 
@@ -93,3 +94,4 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp->IoStatu
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_av_61883_request">AV_61883_REQUEST</a>
+

@@ -1,11 +1,9 @@
 ---
 UID: NS:printoem._UNIDRV_PRIVATE_DEVMODE
-title: _UNIDRV_PRIVATE_DEVMODE (printoem.h)
+title: UNIDRV_PRIVATE_DEVMODE (printoem.h)
 description: The UNIDRV_PRIVATE_DEVMODE structure enables Unidrv plug-ins to determine the size of the private portion of Unidrv's DEVMODEW structure.
-old-location: print\unidrv_private_devmode.htm
 tech.root: print
-ms.assetid: 91b8ba63-5276-43f8-81a6-07afc1a77ced
-ms.date: 04/20/2018
+ms.date: 08/12/2022
 keywords: ["UNIDRV_PRIVATE_DEVMODE structure"]
 ms.keywords: "*PUNIDRV_PRIVATE_DEVMODE, PUNIDRV_PRIVATE_DEVMODE, PUNIDRV_PRIVATE_DEVMODE structure pointer [Print Devices], UNIDRV_PRIVATE_DEVMODE, UNIDRV_PRIVATE_DEVMODE structure [Print Devices], _UNIDRV_PRIVATE_DEVMODE, print.unidrv_private_devmode, print_unidrv-pscript_ui_accecb33-b4e7-4e2d-a2f2-d792456eb9db.xml, printoem/PUNIDRV_PRIVATE_DEVMODE, printoem/UNIDRV_PRIVATE_DEVMODE"
 req.header: printoem.h
@@ -42,15 +40,16 @@ api_type:
 api_location:
  - printoem.h
 api_name:
+ - _UNIDRV_PRIVATE_DEVMODE
+ - PUNIDRV_PRIVATE_DEVMODE
  - UNIDRV_PRIVATE_DEVMODE
 ---
 
 # _UNIDRV_PRIVATE_DEVMODE structure
 
-
 ## -description
 
-The UNIDRV_PRIVATE_DEVMODE structure enables Unidrv plug-ins to determine the size of the private portion of Unidrv's DEVMODEW structure.
+The **UNIDRV_PRIVATE_DEVMODE** structure enables Unidrv plug-ins to determine the size of the private portion of Unidrv's **DEVMODEW** structure.
 
 ## -struct-fields
 
@@ -60,13 +59,13 @@ Reserved for system use.
 
 ### -field wSize
 
-The size, in bytes, of the private portion of Unidrv's [DEVMODEW](/windows/win32/api/wingdi/ns-wingdi-devmodew) structure.
+The size, in bytes, of the private portion of Unidrv's [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-devmodew) structure.
 
 ## -remarks
 
-For information about the public and private sections of the DEVMODEW structure, see [The DEVMODEW Structure](/windows-hardware/drivers/display/the-devmodew-structure).
+For information about the public and private sections of the **DEVMODEW** structure, see [**DEVMODEW**](/windows-hardware/drivers/display/the-devmodew-structure).
 
-Printoem.h defines a macro for determining the size of the private portion of Unidrv's DEVMODEW structure.
+*Printoem.h* defines a macro for determining the size of the private portion of Unidrv's **DEVMODEW** structure.
 
 ```cpp
 #define GET_UNIDRV_PRIVATE_DEVMODE_SIZE(pdm)\
@@ -74,23 +73,23 @@ Printoem.h defines a macro for determining the size of the private portion of Un
     ((PUNIDRV_PRIVATE_DEVMODE)((PBYTE)(pdm) + (pdm)-> dmSize)) -> wSize : 0 )
 ```
 
-The pdm argument in the **GET_UNIDRV_PRIVATE_DEVMODE_SIZE** macro is a pointer to a DEVMODEW structure. The macro determines whether the value of the **dmDriverExtra** member of the DEVMODEW structure is larger than the byte offset of the **wSize** member of the UNIDRV_PRIVATE_DEVMODE structure. If so, the macro returns the value of the **wSize** member in the UNIDRV_PRIVATE_DEVMODE structure. If not, the macro returns zero.
+The pdm argument in the **GET_UNIDRV_PRIVATE_DEVMODE_SIZE** macro is a pointer to a **DEVMODEW** structure. The macro determines whether the value of the **dmDriverExtra** member of the **DEVMODEW** structure is larger than the byte offset of the **wSize** member of the UNIDRV_PRIVATE_DEVMODE structure. If so, the macro returns the value of the **wSize** member in the UNIDRV_PRIVATE_DEVMODE structure. If not, the macro returns zero.
 
-To safely determine the address of the private portion of your plug-in's DEVMODEW structure, do the following:
+To safely determine the address of the private portion of your plug-in's **DEVMODEW** structure, do the following:
 
-1. Call the **GET_UNIDRV_PRIVATE_DEVMODE_SIZE** macro, passing the address of the DEVMODEW structure in the call.
+1. Call the **GET_UNIDRV_PRIVATE_DEVMODE_SIZE** macro, passing the address of the **DEVMODEW** structure in the call.
 
-2. Verify that (pdm)->dmDriverExtra is larger than the value returned by the macro. (The macro returns the value of the **wSize** member of the UNIDRV_PRIVATE_DEVMODE structure.)
+1. Verify that (pdm)->dmDriverExtra is larger than the value returned by the macro. (The macro returns the value of the **wSize** member of the **UNIDRV_PRIVATE_DEVMODE** structure.)
 
-3. Determine the address of the private portion of your plug-in's DEVMODEW structure as follows.
+1. Determine the address of the private portion of your plug-in's **DEVMODEW** structure as follows.
 
     ```cpp
     pdmPlugin = (PBYTE)(pdm) + (pdm)->dmSize + wSize;
     ```
 
-    The preceding example starts with the address of the public DEVMODEW structure (pdm), adds the number of bytes of this structure (pdm->dmSize), and then adds the size in bytes of the Unidrv private DEVMODEW structure (**wSize**). A plug-in's private DEVMODEW data begins at this memory address. If there are multiple plug-ins chained together, the address returned by this example is that of the first plug-in's private DEVMODEW data. The second plug-in's private DEVMODEW data follows the first plug-in's private DEVMODEW data, the third plug-in's private DEVMODEW data follows that of the second plug-in's private DEVMODEW data, and so on. A plug-in developer who needs to determine the address of the *n*-th plug-in's private DEVMODEW data must know the sizes of the private DEVMODEW data for the first *n* - 1 plug-ins.
+    The preceding example starts with the address of the public **DEVMODEW** structure (pdm), adds the number of bytes of this structure (pdm->dmSize), and then adds the size in bytes of the Unidrv private **DEVMODEW** structure (**wSize**). A plug-in's private **DEVMODEW** data begins at this memory address. If there are multiple plug-ins chained together, the address returned by this example is that of the first plug-in's private **DEVMODEW** data. The second plug-in's private **DEVMODEW** data follows the first plug-in's private **DEVMODEW** data, the third plug-in's private **DEVMODEW** data follows that of the second plug-in's private **DEVMODEW** data, and so on. A plug-in developer who needs to determine the address of the *n*-th plug-in's private **DEVMODEW** data must know the sizes of the private **DEVMODEW** data for the first *n* - 1 plug-ins.
 
-4. Verify that the private portion of your plug-in's DEVMODEW structure begins with a valid [OEM_DMEXTRAHEADER](./ns-printoem-_oem_dmextraheader.md) structure.
+1. Verify that the private portion of your plug-in's **DEVMODEW** structure begins with a valid [OEM_DMEXTRAHEADER](./ns-printoem-_oem_dmextraheader.md) structure.
 
 ## -see-also
 

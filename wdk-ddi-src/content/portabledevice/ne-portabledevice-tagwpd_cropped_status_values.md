@@ -4,7 +4,6 @@ title: WPD_CROPPED_STATUS_VALUES (portabledevice.h)
 description: The WPD_CROPPED_STATUS_VALUES enumeration type describes the cropping status of an image.
 old-location: wpddk\wpd_cropped_status_values.htm
 tech.root: wpd_dk
-ms.assetid: 2006f55e-1d1b-41ef-93db-b7501f974c11
 ms.date: 02/15/2018
 keywords: ["tagWPD_CROPPED_STATUS_VALUES enumeration"]
 ms.keywords: WPD_CROPPED_STATUS_CROPPED, WPD_CROPPED_STATUS_NOT_CROPPED, WPD_CROPPED_STATUS_SHOULD_NOT_BE_CROPPED, WPD_CROPPED_STATUS_VALUES, WPD_CROPPED_STATUS_VALUES enumeration, enumeration, portabledevice/WPD_CROPPED_STATUS_CROPPED, portabledevice/WPD_CROPPED_STATUS_NOT_CROPPED, portabledevice/WPD_CROPPED_STATUS_SHOULD_NOT_BE_CROPPED, portabledevice/WPD_CROPPED_STATUS_VALUES, tagWPD_CROPPED_STATUS_VALUES, wpddk.wpd_cropped_status_values
@@ -41,6 +40,7 @@ api_type:
 api_location:
  - PortableDevice.h
 api_name:
+ - tagWPD_CROPPED_STATUS_VALUES
  - WPD_CROPPED_STATUS_VALUES
 ---
 
@@ -72,3 +72,4 @@ Indicates the cropped status of an image. This enumeration is used by the [**WPD
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/drivers/ff597672(v=vs.85)">Structures and Enumeration Types</a>
+

@@ -4,7 +4,6 @@ title: NdisRawWritePortUchar macro (ndis.h)
 description: NdisRawWritePortUchar writes a byte to an I/O port on the NIC.
 old-location: netvista\ndisrawwriteportuchar.htm
 tech.root: netvista
-ms.assetid: 9fcbf570-d272-4373-86ca-8466fb5fc18c
 ms.date: 05/02/2018
 keywords: ["NdisRawWritePortUchar macro"]
 ms.keywords: NdisRawWritePortUchar, NdisRawWritePortUchar macro [Network Drivers Starting with Windows Vista], miniport_port_raw_ref_00cc5f8f-4965-4cc3-bdc6-25dcf2128582.xml, ndis/NdisRawWritePortUchar, netvista.ndisrawwriteportuchar
@@ -50,16 +49,16 @@ api_name:
 
 ## -parameters
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Specifies the I/O port. This address falls in a range that was mapped during initialization with 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterioportrange">
      NdisMRegisterIoPortRange</a>.
 
-### -param Data 
+### -param Data [in]
 
-[in]
+
 Specifies the byte to be written.
 
 ## -remarks

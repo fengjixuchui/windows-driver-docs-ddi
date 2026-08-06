@@ -4,7 +4,6 @@ title: GPIO_CLIENT_READ_PINS (gpioclx.h)
 description: The CLIENT_ReadGpioPins event callback function reads a set of general-purpose I/O (GPIO) pins that are configured as data inputs.
 old-location: gpio\client_readgpiopins.htm
 tech.root: GPIO
-ms.assetid: FE1AB8D5-DEA7-47BE-921E-BB33BBB61AC9
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_READ_PINS callback function"]
 ms.keywords: CLIENT_ReadGpioPins, CLIENT_ReadGpioPins callback, CLIENT_ReadGpioPins callback function [Parallel Ports], GPIO.client_readgpiopins, GPIO_CLIENT_READ_PINS, gpioclx/CLIENT_ReadGpioPins
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_ReadGpioPins
+ - GPIO_CLIENT_READ_PINS
 ---
 
 # GPIO_CLIENT_READ_PINS callback function
@@ -50,14 +49,14 @@ The <i>CLIENT_ReadGpioPins</i> event callback function reads a set of general-pu
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param ReadParameters 
+### -param ReadParameters [in, out]
 
-[in, out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_read_pins_parameters">GPIO_READ_PINS_PARAMETERS</a> structure that, on entry, describes the GPIO pins to read, and, on exit, contains the data that was read from the GPIO pins.
 
 ## -returns
@@ -122,3 +121,4 @@ The GPIO_CLIENT_READ_PINS function type is defined in the Gpioclx.h header file.
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_read_pins_parameters">GPIO_READ_PINS_PARAMETERS</a>
+

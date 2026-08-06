@@ -4,7 +4,6 @@ title: NDIS_SWITCH_GET_NET_BUFFER_LIST_DESTINATIONS (ndis.h)
 description: The GetNetBufferListDestinations function returns the Hyper-V extensible switch destination ports of a packet that is specified by a NET_BUFFER_LIST structure.
 old-location: netvista\GetNetBufferListDestinations.htm
 tech.root: netvista
-ms.assetid: 55B5C0B4-5359-410B-9110-79EDDBA3010C
 ms.date: 05/02/2018
 keywords: ["NDIS_SWITCH_GET_NET_BUFFER_LIST_DESTINATIONS callback function"]
 ms.keywords: GetNetBufferListDestinations, GetNetBufferListDestinations callback function [Network Drivers Starting with Windows Vista], NDIS_SWITCH_GET_NET_BUFFER_LIST_DESTINATIONS, NDIS_SWITCH_GET_NET_BUFFER_LIST_DESTINATIONS callback, ndis/GetNetBufferListDestinations, netvista.GetNetBufferListDestinations
@@ -27,6 +26,7 @@ req.dll:
 req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
+returns-override: true
 f1_keywords:
  - NDIS_SWITCH_GET_NET_BUFFER_LIST_DESTINATIONS
  - ndis/NDIS_SWITCH_GET_NET_BUFFER_LIST_DESTINATIONS
@@ -38,7 +38,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - GetNetBufferListDestinations
+ - NDIS_SWITCH_GET_NET_BUFFER_LIST_DESTINATIONS
 ---
 
 # NDIS_SWITCH_GET_NET_BUFFER_LIST_DESTINATIONS callback function
@@ -46,26 +46,26 @@ api_name:
 
 ## -description
 
-The <i>GetNetBufferListDestinations</i> function returns the Hyper-V extensible switch destination ports of a packet that is specified by a <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure.
+The <i>GetNetBufferListDestinations</i> function returns the Hyper-V extensible switch destination ports of a packet that is specified by a <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure.
 
 ## -parameters
 
-### -param NdisSwitchContext 
+### -param NdisSwitchContext [in]
 
-[in]
+
 An NDIS_SWITCH_CONTEXT value that contains the handle of the extensible switch module to which the Hyper-V extensible switch extension is attached. When the extension calls <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfgetoptionalswitchhandlers">NdisFGetOptionalSwitchHandlers</a>,  this handle is returned through the <i>NdisSwitchContext</i> parameter.
 
-### -param NetBufferList 
+### -param NetBufferList [in, out]
 
-[in, out]
-A pointer to a linked list of <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures.  
 
-<div class="alert"><b>Note</b>  If the <i>NetBufferList</i> parameter contains a pointer to a linked-list of multiple <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures, the destination ports are only returned from the first  <b>NET_BUFFER_LIST</b> structure in the list.</div>
+A pointer to a linked list of <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures.  
+
+<div class="alert"><b>Note</b>  If the <i>NetBufferList</i> parameter contains a pointer to a linked-list of multiple <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures, the destination ports are only returned from the first  <b>NET_BUFFER_LIST</b> structure in the list.</div>
 <div> </div>
 
-### -param Destinations 
+### -param Destinations [out]
 
-[out]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_forwarding_destination_array">NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</a> structure. This structure specifies the extensible switch destination ports of the packet.
 
 ## -returns
@@ -96,7 +96,7 @@ For more information, see <a href="/windows-hardware/drivers/network/modifying-a
 
 </li>
 </ul>
-<div class="alert"><b>Note</b>  The <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_forwarding_destination_array">NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</a> structure is guaranteed to be valid while the extension retains ownership of the packet's <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure.</div>
+<div class="alert"><b>Note</b>  The <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_forwarding_destination_array">NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</a> structure is guaranteed to be valid while the extension retains ownership of the packet's <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure.</div>
 <div> </div>
 
 ## -see-also
@@ -117,12 +117,13 @@ For more information, see <a href="/windows-hardware/drivers/network/modifying-a
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a>
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfgetoptionalswitchhandlers">NdisFGetOptionalSwitchHandlers</a>
+

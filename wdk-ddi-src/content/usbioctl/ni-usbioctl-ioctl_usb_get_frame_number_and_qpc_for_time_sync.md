@@ -1,10 +1,9 @@
 ---
 UID: NI:usbioctl.IOCTL_USB_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC
 title: IOCTL_USB_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC (usbioctl.h)
-description: "."
+description: The IOCTL_USB_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC IOCTL function gets the system query performance counter (QPC) value for a specific frame and microframe.
 old-location: buses\_ioctl_usb_get_frame_number_and_qpc_for_time_sync.htm
 tech.root: usbref
-ms.assetid: 701A7ED2-F35F-4B6B-BC91-ADCF60E294D2
 ms.date: 05/07/2018
 keywords: ["IOCTL_USB_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC IOCTL"]
 ms.keywords: IOCTL_USB_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC, IOCTL_USB_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC control, IOCTL_USB_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC control code [Buses], buses._ioctl_usb_get_frame_number_and_qpc_for_time_sync, usbioctl/ IOCTL_USB_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC
@@ -50,6 +49,8 @@ Retrieves the system query performance counter (QPC) value  synchronized with th
 
 ## -ioctlparameters
 
+### -ioctl-major-code
+
 ### -input-buffer
 
 ### -input-buffer-length
@@ -70,7 +71,7 @@ The size of the <a href="/windows-hardware/drivers/ddi/usbioctl/ns-usbioctl-_usb
 
 ### -status-block
 
-<b>Irp->IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> indicates an the appropriate error condition as a <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS</a> code.
+<b>Irp->IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> indicates an appropriate error condition as a <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS</a> code.
 
 ## -remarks
 

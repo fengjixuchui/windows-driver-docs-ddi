@@ -4,7 +4,6 @@ title: NdisBuildScatterGatherList function (ndis.h)
 description: The NdisBuildScatterGatherList function builds a scatter/gather list by using the specified parameters.
 old-location: netvista\ndisbuildscattergatherlist.htm
 tech.root: netvista
-ms.assetid: 439d68ec-9d27-484b-b6a3-9bae732d142e
 ms.date: 05/02/2018
 keywords: ["NdisBuildScatterGatherList function"]
 ms.keywords: NdisBuildScatterGatherList, NdisBuildScatterGatherList function [Network Drivers Starting with Windows Vista], ndis/NdisBuildScatterGatherList, ndis_shared_memory_ref_a0497f0f-75af-4813-81c9-544c02a7b372.xml, netvista.ndisbuildscattergatherlist
@@ -53,9 +52,9 @@ The
 
 ## -parameters
 
-### -param NdisHandle 
+### -param NdisHandle [in]
 
-[in]
+
 An NDIS driver or instance handle that was obtained during caller initialization. For example, a
      miniport driver can use the NDIS handle that it obtained from the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver">
@@ -71,9 +70,9 @@ An NDIS driver or instance handle that was obtained during caller initialization
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a>
 
-### -param SGListParameters 
+### -param SGListParameters [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_scatter_gather_list_parameters">
      NDIS_SCATTER_GATHER_LIST_PARAMETERS</a> structure that specifies the parameters for allocating the

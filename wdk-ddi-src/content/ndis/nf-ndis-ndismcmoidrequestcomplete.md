@@ -1,10 +1,9 @@
 ---
 UID: NF:ndis.NdisMCmOidRequestComplete
 title: NdisMCmOidRequestComplete macro (ndis.h)
-description: The NdisMCmOidRequestComplete function returns the final status of a CoNDIS OID requestthat a miniport call manager (MCM) driver's ProtocolCoOidRequest function previously returned NDIS_STATUS_PENDING for.
+description: The NdisMCmOidRequestComplete function returns the final status of a CoNDIS OID request that a miniport call manager (MCM) driver's ProtocolCoOidRequest function previously returned NDIS_STATUS_PENDING for.
 old-location: netvista\ndismcmoidrequestcomplete.htm
 tech.root: netvista
-ms.assetid: 4c45be9f-3d07-4150-830a-3aa6d74531ff
 ms.date: 05/02/2018
 keywords: ["NdisMCmOidRequestComplete macro"]
 ms.keywords: NdisMCmOidRequestComplete, NdisMCmOidRequestComplete macro [Network Drivers Starting with Windows Vista], condis_request_ref_fc46ea1a-b820-4f1d-b986-e879adb27ad6.xml, ndis/NdisMCmOidRequestComplete, netvista.ndismcmoidrequestcomplete
@@ -47,7 +46,7 @@ api_name:
 ## -description
 
 The 
-  <b>NdisMCmOidRequestComplete</b> function returns the final status of a CoNDIS OID requestthat a miniport
+  <b>NdisMCmOidRequestComplete</b> function returns the final status of a CoNDIS OID request that a miniport
   call manager (MCM) driver's 
   <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_oid_request">ProtocolCoOidRequest</a> function
   previously returned NDIS_STATUS_PENDING for.
@@ -78,7 +77,7 @@ A party handle that NDIS passed to the MCM's
 ### -param _R_
 
 A pointer to an 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure that the caller
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure that the caller
      of the 
      <b>NdisCoOidRequest</b> function supplied.
 
@@ -106,7 +105,7 @@ For more information about the OIDs defined to use with CONDIS drivers, see
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 

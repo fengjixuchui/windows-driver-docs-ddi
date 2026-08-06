@@ -2,10 +2,8 @@
 UID: NF:ksproxy.IKsAllocatorEx.KsSetAllocatorHandle
 title: IKsAllocatorEx::KsSetAllocatorHandle (ksproxy.h)
 description: Sets the handle for an allocator.
-old-location: stream\iksallocatorex_kssetallocatorhandle.htm
 tech.root: stream
-ms.assetid: E259B3D0-7536-4287-A7A2-367407D97F33
-ms.date: 11/19/2019
+ms.date: 06/11/2021
 keywords: ["IKsAllocatorEx::KsSetAllocatorHandle"]
 ms.keywords: IKsAllocatorEx interface [Streaming Media Devices],KsSetAllocatorHandle method, IKsAllocatorEx.KsSetAllocatorHandle, IKsAllocatorEx::KsSetAllocatorHandle, KsSetAllocatorHandle, KsSetAllocatorHandle method [Streaming Media Devices], KsSetAllocatorHandle method [Streaming Media Devices],IKsAllocatorEx interface, ksproxy/IKsAllocatorEx::KsSetAllocatorHandle, stream.iksallocatorex_kssetallocatorhandle
 req.header: ksproxy.h
@@ -38,16 +36,12 @@ api_type:
 api_location:
  - ksproxy.h
 api_name:
- - IKsAllocatorEx.KsSetAllocatorHandle
+ - IKsAllocatorEx::KsSetAllocatorHandle
 ---
 
 # IKsAllocatorEx::KsSetAllocatorHandle
 
-
 ## -description
-
-> [!IMPORTANT]
-> Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 Sets the handle for an allocator.
 

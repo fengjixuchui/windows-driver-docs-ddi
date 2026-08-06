@@ -3,11 +3,8 @@ UID: NC:hdaudio.PUNREGISTER_NOTIFICATION_CALLBACK
 title: PUNREGISTER_NOTIFICATION_CALLBACK
 description: The PUNREGISTER_NOTIFICATION_CALLBACK callback function deletes the registration of a notification callback routine that was previously registered by a call to RegisterNotificationCallback.
 tech.root: audio
-ms.assetid: 453c5313-24a0-4009-98bd-9bba2a546a75
 ms.date: 04/08/2019
 keywords: ["PUNREGISTER_NOTIFICATION_CALLBACK callback function"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: hdaudio.h
 req.include-header: 
 req.target-type: 
@@ -38,8 +35,6 @@ api_location:
  - hdaudio.h
 api_name:
  - PUNREGISTER_NOTIFICATION_CALLBACK
-product:
- - Windows
 ---
 
 # PUNREGISTER_NOTIFICATION_CALLBACK callback function
@@ -77,7 +72,7 @@ For more information, see [NTSTATUS Values](/windows-hardware/drivers/kernel/nts
 
 The function pointer type for an UnregisterNotificationCallback routine is defined as follows.
 
-```
+```cpp
 //Declaration
 
 PUNREGISTER_NOTIFICATION_CALLBACK PUnregisterNotificationCallback;

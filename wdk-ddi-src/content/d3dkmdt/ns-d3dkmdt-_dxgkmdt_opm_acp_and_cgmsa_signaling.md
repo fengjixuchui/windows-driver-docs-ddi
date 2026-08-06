@@ -4,14 +4,13 @@ title: _DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING (d3dkmdt.h)
 description: The DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING structure describes how the signal that goes through the physical connector that is associated with the protected output object is protected.
 old-location: display\dxgkmdt_opm_acp_and_cgmsa_signaling.htm
 tech.root: display
-ms.assetid: edc0472c-d222-49f5-9d26-6b7e8c032031
 ms.date: 05/10/2018
 keywords: ["DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING structure"]
 ms.keywords: DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING, DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING structure [Display Devices], DmStructs_0d89c3c0-96f1-4b88-8c79-a33ad8246e4a.xml, _DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING, d3dkmdt/DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING, display.dxgkmdt_opm_acp_and_cgmsa_signaling
 req.header: d3dkmdt.h
-req.include-header: D3dkmdt.h
+req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmdt.h
 api_name:
+ - _DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING
  - DXGKMDT_OPM_ACP_AND_CGMSA_SIGNALING
 ---
 
@@ -115,3 +115,4 @@ Reserved. Must be set to zero.
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_get_copp_compatible_information">DxgkDdiOPMGetCOPPCompatibleInformation</a>
+

@@ -3,9 +3,7 @@ UID: NE:ntddstor._DEVICE_INTERNAL_STATUS_DATA_SET
 title: DEVICE_INTERNAL_STATUS_DATA_SET
 description: DEVICE_INTERNAL_STATUS_DATA_SET identifies the device internal status data set to query.
 tech.root: storage
-ms.assetid: 1357eabc-2d9f-410a-b79c-775c7e0f5c19
 ms.date: 11/30/2019
-ms.topic: enum
 ms.keywords: DEVICE_INTERNAL_STATUS_DATA_SET, DEVICE_INTERNAL_STATUS_DATA_SET, *PDEVICE_INTERNAL_STATUS_DATA_SET,
 req.header: ntddstor.h
 req.include-header: 
@@ -32,9 +30,9 @@ api_type:
 api_location:
  - ntddstor.h
 api_name:
+ - _DEVICE_INTERNAL_STATUS_DATA_SET
+ - PDEVICE_INTERNAL_STATUS_DATA_SET
  - DEVICE_INTERNAL_STATUS_DATA_SET
-product:
- - Windows
 ---
 
 # DEVICE_INTERNAL_STATUS_DATA_SET enumeration

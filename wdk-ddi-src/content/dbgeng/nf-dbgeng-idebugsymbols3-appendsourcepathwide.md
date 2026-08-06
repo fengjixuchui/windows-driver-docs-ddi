@@ -4,7 +4,6 @@ title: IDebugSymbols3::AppendSourcePathWide (dbgeng.h)
 description: The AppendSourcePathWide method appends directories to the source path.
 old-location: debugger\appendsourcepathwide.htm
 tech.root: debugger
-ms.assetid: 54f78169-4253-4dea-921f-981658df311e
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::AppendSourcePathWide"]
 ms.keywords: AppendSourcePathWide, AppendSourcePathWide method [Windows Debugging], AppendSourcePathWide method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],AppendSourcePathWide method, IDebugSymbols3.AppendSourcePathWide, IDebugSymbols3::AppendSourcePathWide, dbgeng/IDebugSymbols3::AppendSourcePathWide, debugger.appendsourcepathwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSymbols3.AppendSourcePathWide
+ - IDebugSymbols3::AppendSourcePathWide
 ---
 
 # IDebugSymbols3::AppendSourcePathWide
@@ -50,9 +49,9 @@ The <b>AppendSourcePathWide</b>  method appends directories to the source path.
 
 ## -parameters
 
-### -param Addition 
+### -param Addition [in]
 
-[in]
+
 Specifies the directories to append to the source path.  This is a string that contains source path elements separated by semicolons (;).  Each source path element can specify either a directory or a source server.
 
 ## -returns
@@ -99,3 +98,4 @@ For more information about manipulating the source path, see <a href="/windows-h
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-setsourcepath">SetSourcePath</a>
+

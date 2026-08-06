@@ -4,7 +4,6 @@ title: IDebugEventCallbacks::GetInterestMask (dbgeng.h)
 description: The GetInterestMask callback method is called to determine which events the IDebugEventCallbacks object is interested in. The engine calls GetInterestMask when the object is registered with a client by using SetEventCallbacks.
 old-location: debugger\idebugeventcallbacks_getinterestmask.htm
 tech.root: debugger
-ms.assetid: 165c83cb-c0be-4a09-9220-a5208f660308
 ms.date: 05/03/2018
 keywords: ["IDebugEventCallbacks::GetInterestMask"]
 ms.keywords: ComCallbacks_564e7fce-ee9a-404e-9ae4-06805cb0b677.xml, GetInterestMask, GetInterestMask method [Windows Debugging], GetInterestMask method [Windows Debugging],IDebugEventCallbacks interface, IDebugEventCallbacks interface [Windows Debugging],GetInterestMask method, IDebugEventCallbacks.GetInterestMask, IDebugEventCallbacks::GetInterestMask, dbgeng/IDebugEventCallbacks::GetInterestMask, debugger.idebugeventcallbacks_getinterestmask
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugEventCallbacks.GetInterestMask
+ - IDebugEventCallbacks::GetInterestMask
 ---
 
 # IDebugEventCallbacks::GetInterestMask
@@ -50,10 +49,10 @@ The <b>GetInterestMask</b> callback method is called to determine which <a href=
 
 ## -parameters
 
-### -param Mask 
+### -param Mask [out]
 
-[out]
-Receives a bitmask that indicates which events the object is interested in.  The engine will call only those methods that correspond to the bit flags set by <b>GetInterestMask</b>.  For a description of the bit flags and their corresponding methods, see <a href="/previous-versions/ff541478(v=vs.85)">DEBUG_EVENT_XXX</a>.
+
+Receives a bitmask that indicates which events the object is interested in.  The engine will call only those methods that correspond to the bit flags set by <b>GetInterestMask</b>.  For a description of the bit flags and their corresponding methods, see <a href="/windows-hardware/drivers/debugger/debug-event-xxx">DEBUG_EVENT_XXX</a>.
 
 ## -returns
 
@@ -62,3 +61,4 @@ The return value S_OK indicates the method was successful.  All other return val
 ## -remarks
 
 For more information about handling events, see <a href="/windows-hardware/drivers/debugger/monitoring-events">Monitoring Events</a>.
+

@@ -4,8 +4,7 @@ title: IWDTFDeviceDepot2::get_Item (wdtf.h)
 description: Gets an individual device in the DeviceDepot.
 old-location: dtf\iwdtfdevicedepot2_item.htm
 tech.root: dtf
-ms.assetid: 9411437c-60d8-424e-b54c-7750f1c4dd9e
-ms.date: 04/04/2018
+ms.date: 09/29/2022
 keywords: ["IWDTFDeviceDepot2::get_Item"]
 ms.keywords: IWDTFDeviceDepot2 interface [Windows Device Testing Framework],Item property, IWDTFDeviceDepot2.Item, IWDTFDeviceDepot2.get_Item, IWDTFDeviceDepot2::Item, IWDTFDeviceDepot2::get_Item, Item property [Windows Device Testing Framework], Item property [Windows Device Testing Framework],IWDTFDeviceDepot2 interface, Microsoft.WDTF.IWDTFDeviceDepot2.Item, Microsoft::WDTF::IWDTFDeviceDepot2::Item, dtf.iwdtfdevicedepot2_item, get_Item, wdtf/IWDTFDeviceDepot2::Item, wdtf/IWDTFDeviceDepot2::get_Item
 req.header: wdtf.h
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFDeviceDepot2.Item
- - IWDTFDeviceDepot2.get_Item
+ - IWDTFDeviceDepot2::get_Item
 ---
 
 # IWDTFDeviceDepot2::get_Item
@@ -53,6 +51,12 @@ This property is read-only.
 
 ## -parameters
 
+### -param Index
+
+### -param ppTarget
+
+### -returns
+
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtfdevicedepot2">IWDTFDeviceDepot2</a>
@@ -60,3 +64,4 @@ This property is read-only.
 
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftarget2">IWDTFTarget2</a>
+

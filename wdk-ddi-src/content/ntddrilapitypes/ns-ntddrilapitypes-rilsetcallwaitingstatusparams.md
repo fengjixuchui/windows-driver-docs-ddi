@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILSETCALLWAITINGSTATUSPARAMS
 title: RILSETCALLWAITINGSTATUSPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILSETCALLWAITINGSTATUSPARAMS structure in your code."
 old-location: netvista\rilsetcallwaitingstatusparams.htm
 tech.root: netvista
-ms.assetid: 1ba8d745-96bf-4d9d-8784-e6594360c632
 ms.date: 05/02/2018
 keywords: ["RILSETCALLWAITINGSTATUSPARAMS structure"]
 ms.keywords: "*LPRILSETCALLWAITINGSTATUSPARAMS, RILSETCALLWAITINGSTATUSPARAMS, RILSETCALLWAITINGSTATUSPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsetcallwaitingstatusparams, ntddrilapitypes/RILSETCALLWAITINGSTATUSPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSETCALLWAITINGSTATUSPARAMS
+ - LPRILSETCALLWAITINGSTATUSPARAMS
 ---
 
 # RILSETCALLWAITINGSTATUSPARAMS structure (ntddrilapitypes.h)

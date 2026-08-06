@@ -4,7 +4,6 @@ title: MINIPORT_WDI_ALLOCATE_ADAPTER (dot11wdi.h)
 description: The MiniportWdiAllocateAdapter handler function allocates a WDI miniport adapter.
 old-location: netvista\miniportwdiallocateadapter.htm
 tech.root: netvista
-ms.assetid: 4CBC7230-6480-40C9-90B7-A286FCEB1FA8
 ms.date: 05/02/2018
 keywords: ["MINIPORT_WDI_ALLOCATE_ADAPTER callback function"]
 ms.keywords: MINIPORT_WDI_ALLOCATE_ADAPTER, MINIPORT_WDI_ALLOCATE_ADAPTER callback, MiniportWdiAllocateAdapter, MiniportWdiAllocateAdapter callback function [Network Drivers Starting with Windows Vista], dot11wdi/MiniportWdiAllocateAdapter, netvista.miniportwdiallocateadapter
@@ -38,13 +37,16 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
- - MiniportWdiAllocateAdapter
+ - MINIPORT_WDI_ALLOCATE_ADAPTER
 ---
 
 # MINIPORT_WDI_ALLOCATE_ADAPTER callback function
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The MiniportWdiAllocateAdapter handler function allocates a WDI miniport adapter.
 
@@ -54,29 +56,29 @@ This is a WDI miniport handler inside <a href="/windows-hardware/drivers/ddi/dot
 
 ## -parameters
 
-### -param NdisMiniportHandle 
+### -param NdisMiniportHandle [in]
 
-[in]
+
 The NDIS-supplied handle that identifies the miniport adapter.
 
-### -param MiniportDriverContext 
+### -param MiniportDriverContext [in]
 
-[in]
+
 The handle to a driver-allocated context area where the driver maintains state and configuration information. The miniport driver passed this context area to the <a href="/windows-hardware/drivers/ddi/dot11wdi/nf-dot11wdi-ndismregisterwdiminiportdriver">NdisMRegisterWdiMiniportDriver</a> function.
 
-### -param MiniportInitParameters 
+### -param MiniportInitParameters [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_init_parameters">NDIS_MINIPORT_INIT_PARAMETERS</a> structure that defines the initialization parameters for the miniport adapter.
 
-### -param NdisWdiInitParameters 
+### -param NdisWdiInitParameters [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_ndis_wdi_init_parameters">NDIS_WDI_INIT_PARAMETERS</a> structure that defines the WDI initialization parameters for the miniport adapter.
 
-### -param RegistrationAttributes 
+### -param RegistrationAttributes [in, out]
 
-[in, out]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_registration_attributes">NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</a> structure that defines registration attributes that are associated with the miniport adapter.
 
 ## -returns
@@ -127,3 +129,4 @@ MiniportWdiAllocateAdapter could not allocate the necessary resources.
 
 
 <a href="/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_ndis_wdi_init_parameters">NDIS_WDI_INIT_PARAMETERS</a>
+

@@ -4,7 +4,6 @@ title: EVT_WDF_DEVICE_SELF_MANAGED_IO_INIT (wdfdevice.h)
 description: A driver's EvtDeviceSelfManagedIoInit event callback function initializes and starts the device's self-managed I/O operations.
 old-location: wdf\evtdeviceselfmanagedioinit.htm
 tech.root: wdf
-ms.assetid: 9dbc66db-ea94-4e6a-9618-00999a9dd641
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DEVICE_SELF_MANAGED_IO_INIT callback function"]
 ms.keywords: DFDeviceObjectGeneralRef_7c67b851-b6d0-450d-bdc9-2a32aa384a36.xml, EVT_WDF_DEVICE_SELF_MANAGED_IO_INIT, EVT_WDF_DEVICE_SELF_MANAGED_IO_INIT callback, EvtDeviceSelfManagedIoInit, EvtDeviceSelfManagedIoInit callback function, kmdf.evtdeviceselfmanagedioinit, wdf.evtdeviceselfmanagedioinit, wdfdevice/EvtDeviceSelfManagedIoInit
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfdevice.h
 api_name:
- - EvtDeviceSelfManagedIoInit
+ - EVT_WDF_DEVICE_SELF_MANAGED_IO_INIT
 ---
 
 # EVT_WDF_DEVICE_SELF_MANAGED_IO_INIT callback function
@@ -52,9 +51,9 @@ A driver's <i>EvtDeviceSelfManagedIoInit</i> event callback function initializes
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
 ## -returns
@@ -92,3 +91,4 @@ For more information about drivers that provide this callback function, see <a h
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_self_managed_io_suspend">EvtDeviceSelfManagedIoSuspend</a>
+

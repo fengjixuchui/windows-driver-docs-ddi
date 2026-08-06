@@ -4,7 +4,6 @@ title: _D3DDDICB_UPDATEGPUVIRTUALADDRESS (d3dumddi.h)
 description: D3DDDICB_UPDATEGPUVIRTUALADDRESS is used with pfnUpdateGpuVirtualAddressCb to allow the user mode driver to specify a number of mapping operations to be applied to the process virtual address space in a single batch of page table updates.
 old-location: display\d3dddicb_updategpuvirtualaddress.htm
 tech.root: display
-ms.assetid: 6D460EBF-1D5D-4A99-90EE-FCBBC56B8EA4
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_UPDATEGPUVIRTUALADDRESS structure"]
 ms.keywords: D3DDDICB_UPDATEGPUVIRTUALADDRESS, D3DDDICB_UPDATEGPUVIRTUALADDRESS structure [Display Devices], _D3DDDICB_UPDATEGPUVIRTUALADDRESS, d3dumddi/D3DDDICB_UPDATEGPUVIRTUALADDRESS, display.d3dddicb_updategpuvirtualaddress
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDICB_UPDATEGPUVIRTUALADDRESS
  - D3DDDICB_UPDATEGPUVIRTUALADDRESS
 ---
 
@@ -54,7 +54,7 @@ api_name:
 
 ### -field hContext
 
-Specifies the context against which the map operation will be synchronized against. This also determines which kernel context the map operation will be executed against. In an linked display adapter configuration <b>hContext</b> defines a physical GPU, whose page tables are modified.
+Specifies the context against which the map operation will be synchronized against. This also determines which kernel context the map operation will be executed against. In a linked display adapter configuration <b>hContext</b> defines a physical GPU, whose page tables are modified.
 
 ### -field hFenceObject
 
@@ -101,3 +101,4 @@ The consolidated value of the <b>Flags</b> union.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb">pfnUpdateGpuVirtualAddressCb</a>
+

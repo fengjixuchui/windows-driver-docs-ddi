@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_CALCPRIVATECOMMANDQUEUESIZE_0050
 title: PFND3D12DDI_CALCPRIVATECOMMANDQUEUESIZE_0050 (d3d12umddi.h)
 description: The PFND3D12DDI_CALCPRIVATECOMMANDQUEUESIZE_0050 callback function is used to calculate the size of a private command queue.
-ms.assetid: fb388ce0-5de8-438f-b92a-c2c82733e4fd
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CALCPRIVATECOMMANDQUEUESIZE_0050 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CALCPRIVATECOMMANDQUEUESIZE_0050
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ The PFND3D12DDI_CALCPRIVATECOMMANDQUEUESIZE_0050 callback function is used to ca
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 The handle of a device.
 
-### -param Arg2
+### -param unnamedParam2
 
 *_In_ CreateCommandQueue*
 

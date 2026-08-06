@@ -2,7 +2,6 @@
 UID: NF:d3dkmthk.D3DKMTAdjustFullscreenGamma
 title: D3DKMTAdjustFullscreenGamma function (d3dkmthk.h)
 description: Adjusts full screen gamma.
-ms.assetid: 194c2969-02b8-4caa-ba6c-a20fb87507d2
 ms.date: 10/19/2018
 keywords: ["D3DKMTAdjustFullscreenGamma function"]
 ms.keywords: D3DKMTAdjustFullscreenGamma
@@ -50,7 +49,7 @@ Adjusts full screen gamma.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_ADJUSTFULLSCREENGAMMA](ns-d3dkmthk-_d3dkmt_adjustfullscreengamma.md) structure.
 

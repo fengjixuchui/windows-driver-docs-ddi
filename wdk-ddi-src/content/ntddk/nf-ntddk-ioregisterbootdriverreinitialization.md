@@ -4,7 +4,6 @@ title: IoRegisterBootDriverReinitialization function (ntddk.h)
 description: The IoRegisterBootDriverReinitialization routine is called by a boot driver to register the driver's reinitialization routine with the I/O manager to be called after all devices have been enumerated and started.
 old-location: kernel\ioregisterbootdriverreinitialization.htm
 tech.root: kernel
-ms.assetid: af1c1f4b-7710-4cf7-9596-32d11db98abb
 ms.date: 04/30/2018
 keywords: ["IoRegisterBootDriverReinitialization function"]
 ms.keywords: IoRegisterBootDriverReinitialization, IoRegisterBootDriverReinitialization routine [Kernel-Mode Driver Architecture], k104_492655f7-02ee-48ad-83b8-80ac50716b89.xml, kernel.ioregisterbootdriverreinitialization, ntddk/IoRegisterBootDriverReinitialization
@@ -50,19 +49,19 @@ The <b>IoRegisterBootDriverReinitialization</b> routine is called by a boot driv
 
 ## -parameters
 
-### -param DriverObject 
+### -param DriverObject [in]
 
-[in]
+
 Pointer to the driver object for the boot driver to be reinitialized.
 
-### -param DriverReinitializationRoutine 
+### -param DriverReinitializationRoutine [in]
 
-[in]
+
 Pointer to the driver's <a href="/windows-hardware/drivers/ddi/ntddk/nc-ntddk-driver_reinitialize">Reinitialize</a> routine.
 
-### -param Context 
+### -param Context [in, optional]
 
-[in, optional]
+
 Optional context pointer to be passed to the driver's reinitialization routine.
 
 ## -remarks

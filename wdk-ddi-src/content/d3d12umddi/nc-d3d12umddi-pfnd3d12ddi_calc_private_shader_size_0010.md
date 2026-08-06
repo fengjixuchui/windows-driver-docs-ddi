@@ -1,8 +1,7 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_CALC_PRIVATE_SHADER_SIZE_0010
 title: PFND3D12DDI_CALC_PRIVATE_SHADER_SIZE_0010 (d3d12umddi.h)
-description: Determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for a shader.
-ms.assetid: e0dff433-c376-40a9-a69c-3e5a5e76742d
+description: PFND3D12DDI_CALC_PRIVATE_SHADER_SIZE_0010 determines the size of the private memory region used by the user-mode display driver for a shader.
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CALC_PRIVATE_SHADER_SIZE_0010 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CALC_PRIVATE_SHADER_SIZE_0010
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ Determines the size of the user-mode display driver's private region of memory (
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 Used to create a shader.
 

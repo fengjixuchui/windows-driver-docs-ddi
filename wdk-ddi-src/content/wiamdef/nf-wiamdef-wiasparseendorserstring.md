@@ -4,7 +4,6 @@ title: wiasParseEndorserString function (wiamdef.h)
 description: The wiasParseEndorserString function parses an endorser string, replacing WIA service-defined and vendor-defined tokens in the string with values associated with those tokens.
 old-location: image\wiasparseendorserstring.htm
 tech.root: image
-ms.assetid: c724a4f5-55ef-413d-bd1a-9cd39d3e42f5
 ms.date: 05/03/2018
 keywords: ["wiasParseEndorserString function"]
 ms.keywords: image.wiasparseendorserstring, wiamdef/wiasParseEndorserString, wiasFncs_09a845d0-52f1-4985-baf6-2cb2676fad3e.xml, wiasParseEndorserString, wiasParseEndorserString function [Imaging Devices]
@@ -50,23 +49,23 @@ The **wiasParseEndorserString** function parses an endorser string, replacing WI
 
 ## -parameters
 
-### -param pWiasContext 
+### -param pWiasContext [in]
 
-[in]
+
 Pointer to a WIA Item context (the context of the item containing the WIA_DPS_ENDORSER_STRING property (described in the Microsoft Windows SDK documentation)).
 
 ### -param lFlags
 
 Reserved for system use and should be set to 0.
 
-### -param pInfo 
+### -param pInfo [out, optional]
 
-[out, optional]
+
 Pointer to a [WIAS_ENDORSER_INFO](../wiamindr_lh/ns-wiamindr_lh-_wias_endorser_info.md) structure containing the page count and a list of custom token/value pairs. Can be **NULL**.
 
-### -param pOutputString 
+### -param pOutputString [out]
 
-[out]
+
 Pointer to a memory location that receives the address of the parsed endorser string. If **pOutputString* is non-NULL on entry, then the function assumes that the caller allocated the buffer; otherwise the WIA service will allocate it. Note that the WIA service assumes the *maximum* resultant endorser string is MAX_PATH (defined in *stdlib.h*) characters long. If the driver expects the string to be longer, it should allocate the buffer itself. If the caller allocates the buffer, it *must* initialize the contents of the buffer to zero before using this function.
 
 ## -returns

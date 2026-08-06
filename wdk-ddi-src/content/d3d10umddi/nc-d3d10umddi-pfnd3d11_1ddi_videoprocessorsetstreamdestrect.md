@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMDESTRECT
 title: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMDESTRECT (d3d10umddi.h)
 description: Sets the destination rectangle for an input stream on the video processor.
 old-location: display\videoprocessorsetstreamdestrect.htm
-ms.assetid: 84AD6C4F-A674-4CCC-B2E9-378E3E55EEF3
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMDESTRECT callback function"]
 ms.keywords: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMDESTRECT, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMDESTRECT callback, d3d10umddi/pfnVideoProcessorSetStreamDestRect, display.videoprocessorsetstreamdestrect, pfnVideoProcessorSetStreamDestRect, pfnVideoProcessorSetStreamDestRect callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoProcessorSetStreamDestRect
-product:
- - Windows
+ - PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMDESTRECT
 ---
 
 # PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMDESTRECT callback function
@@ -52,31 +49,31 @@ Sets the destination rectangle for an input stream on the video processor.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hVideoProcessor* [in]
 
 A handle to the video processor object that was created through a call to the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a> function.
 
-### -param Arg3
+### -param unnamedParam3
 
 *StreamIndex* [in]
 
 The zero-based index of the input stream.
 
-### -param Arg4
+### -param unnamedParam4
 
 *Enable* [in]
 
 If <b>TRUE</b>, the destination rectangle specified by the <i>pDestRect</i> parameter should be used by the video processor.
 
-### -param Arg5
+### -param unnamedParam5
 
 *pDestRect* [in]
 
@@ -98,3 +95,4 @@ The default destination rectangle is an empty rectangle (0, 0, 0, 0). If the <i>
 
 
 <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a>
+

@@ -4,7 +4,6 @@ title: IStillImageW::WriteToErrorLog (sti.h)
 description: The IStillImage::WriteToErrorLog method writes a message to the still image error log.
 old-location: image\istillimage_writetoerrorlog.htm
 tech.root: image
-ms.assetid: 24795026-41bc-447e-812f-8fc3a1c573b9
 ms.date: 05/03/2018
 keywords: ["IStillImageW::WriteToErrorLog"]
 ms.keywords: IStillImageW interface [Imaging Devices],WriteToErrorLog method, IStillImageW.WriteToErrorLog, IStillImageW::WriteToErrorLog, IStillImageW::WriteToErrorLogiwiade, WriteToErrorLog, WriteToErrorLog method [Imaging Devices], WriteToErrorLog method [Imaging Devices],IStillImageW interface, image.istillimage_writetoerrorlog, sti/IStillImageW::WriteToErrorLog, stifnc_1f27ad38-72b2-4b5f-8bb1-3456bfbd207a.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - sti.h
 api_name:
- - IStillImageW.WriteToErrorLog
+ - IStillImageW::WriteToErrorLog
 ---
 
 # IStillImageW::WriteToErrorLog
@@ -60,9 +59,9 @@ STI_TRACE_WARNING
 
 STI_TRACE_ERROR
 
-### -param pszMessage 
+### -param pszMessage [in]
 
-[in]
+
 Caller-supplied pointer to the message string to be written to the log file.
 
 ## -returns
@@ -76,3 +75,4 @@ The still image error log file is named <i>sti_trace.log</i> and is located in t
 Error messages should be reserved for critical error conditions, such as device hardware failures. Informational messages can be used for your own debugging purposes. Logged messages aren't visible to users, but they might be used by a support engineer to help debug a user's problems.
 
 Before calling <b>IStillImage::WriteToErrorLog</b>, clients of the <b>IStillImage</b> COM interface must call <a href="/previous-versions/windows/hardware/drivers/ff543804(v=vs.85)">IStillImage::StiCreateInstance</a> to obtain an <b>IStillImage</b> interface pointer.
+

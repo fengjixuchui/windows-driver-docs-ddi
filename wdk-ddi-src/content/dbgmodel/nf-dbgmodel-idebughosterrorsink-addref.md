@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostErrorSink.AddRef
 title: IDebugHostErrorSink::AddRef (dbgmodel.h)
-description: Increments the reference count for an interface on an object. This method should be called for every new copy of a pointer to an interface on an object.
-ms.assetid: dc3fe2ae-10cd-433d-a3b0-d8bcf8314581
+description: "The IDebugHostErrorSink::AddRef method increments the reference count for an interface on an object."
 ms.date: 09/21/2018
 keywords: ["IDebugHostErrorSink::AddRef"]
 ms.keywords: IDebugHostErrorSink::AddRef, AddRef, IDebugHostErrorSink.AddRef, IDebugHostErrorSink::AddRef, IDebugHostErrorSink.AddRef
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostErrorSink.AddRef
+ - IDebugHostErrorSink::AddRef
 ---
 
 # IDebugHostErrorSink::AddRef
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IDebugHostErrorSink interface](nn-dbgmodel-idebughosterrorsink.md)
+

@@ -4,7 +4,6 @@ title: IWDFIoTarget2::FormatRequestForQueryInformation (wudfddi.h)
 description: The FormatRequestForQueryInformation method formats an I/O request to obtain information about a file, but it does not send the request to an I/O target.
 old-location: wdf\iwdfiotarget2_formatrequestforqueryinformation.htm
 tech.root: wdf
-ms.assetid: 24ce2918-1d9f-41eb-add1-a50b888f0a99
 ms.date: 02/26/2018
 keywords: ["IWDFIoTarget2::FormatRequestForQueryInformation"]
 ms.keywords: FormatRequestForQueryInformation, FormatRequestForQueryInformation method, FormatRequestForQueryInformation method,IWDFIoTarget2 interface, IWDFIoTarget2 interface,FormatRequestForQueryInformation method, IWDFIoTarget2.FormatRequestForQueryInformation, IWDFIoTarget2::FormatRequestForQueryInformation, UMDFIoTargetObjectRef_8057f7bc-65c3-491b-9aa3-a5fc9e790524.xml, umdf.iwdfiotarget2_formatrequestforqueryinformation, wdf.iwdfiotarget2_formatrequestforqueryinformation, wudfddi/IWDFIoTarget2::FormatRequestForQueryInformation
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoTarget2.FormatRequestForQueryInformation
+ - IWDFIoTarget2::FormatRequestForQueryInformation
 ---
 
 # IWDFIoTarget2::FormatRequestForQueryInformation
@@ -52,29 +51,29 @@ The <b>FormatRequestForQueryInformation</b> method formats an I/O request to obt
 
 ## -parameters
 
-### -param pRequest 
+### -param pRequest [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest">IWDFIoRequest</a> interface of the request object that represents the I/O request.
 
-### -param InformationClass 
+### -param InformationClass [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdffileobject/ne-wdffileobject-_wdf_file_information_class">WDF_FILE_INFORMATION_CLASS</a>-typed value that specifies the type of information to obtain.
 
-### -param pFile 
+### -param pFile [in, optional]
 
-[in, optional]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile">IWDFFile</a> interface of the file object that is associated with the I/O request. This parameter is required for local and remote <a href="/windows-hardware/drivers/wdf/using-i-o-targets-in-umdf">I/O targets</a>, and is optional (can be <b>NULL</b>) for file handle I/O targets.
 
-### -param pInformationMemory 
+### -param pInformationMemory [in, optional]
 
-[in, optional]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfmemory">IWDFMemory</a> interface of a memory object. This object represents the output buffer, which receives the file information that the <i>InformationClass</i> parameter specifies. This parameter is optional and can be <b>NULL</b>.
 
-### -param pInformationMemoryOffset 
+### -param pInformationMemoryOffset [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wudfddi_types/ns-wudfddi_types-_wdfmemory_offset">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. The framework uses these values to determine the beginning address and length, within the output buffer, for the data transfer. If this pointer is <b>NULL</b>, the data transfer begins at the beginning of the output buffer, and the transfer size is the buffer size.
 
 ## -returns
@@ -185,7 +184,6 @@ Error;
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotarget2">IWDFIoTarget2</a>
@@ -193,3 +191,4 @@ Error;
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiotarget2-formatrequestforsetinformation">IWDFIoTarget2::FormatRequestForSetInformation</a>
+

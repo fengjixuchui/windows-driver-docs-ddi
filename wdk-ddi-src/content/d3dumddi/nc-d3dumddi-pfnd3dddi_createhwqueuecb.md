@@ -4,7 +4,6 @@ title: PFND3DDDI_CREATEHWQUEUECB (d3dumddi.h)
 description: A callback to create a new hardware queue.
 old-location: display\pfnd3dddi_createhwqueuecb.htm
 tech.root: display
-ms.assetid: 1BA2E4DD-3E91-4D2E-AA90-9C85D53EE9E3
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CREATEHWQUEUECB callback function"]
 ms.keywords: PFND3DDDI_CREATEHWQUEUECB, PFND3DDDI_CREATEHWQUEUECB callback, PFND3DDDI_CREATEHWQUEUECB callback function [Display Devices], d3dumddi/PFND3DDDI_CREATEHWQUEUECB, display.pfnd3dddi_createhwqueuecb
@@ -39,8 +38,6 @@ api_location:
  - d3dumddi.h
 api_name:
  - PFND3DDDI_CREATEHWQUEUECB
-product:
- - Windows
 ---
 
 # PFND3DDDI_CREATEHWQUEUECB callback function
@@ -56,7 +53,7 @@ A callback to create a new hardware queue
 
 A handle to the device.
 
-### -param Arg2
+### -param unnamedParam2
 
 *createHwQueue* [in, out]
 

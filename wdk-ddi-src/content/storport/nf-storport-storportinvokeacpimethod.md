@@ -4,7 +4,6 @@ title: StorPortInvokeAcpiMethod function (storport.h)
 description: The StorPortInvokeAcpiMethod routine executes an ACPI method for a storage device.
 old-location: storage\storportinvokeacpimethod.htm
 tech.root: storage
-ms.assetid: 2A8EF694-B699-46A0-9B1D-B7D0831F3944
 ms.date: 03/29/2018
 keywords: ["StorPortInvokeAcpiMethod function"]
 ms.keywords: StorPortInvokeAcpiMethod, StorPortInvokeAcpiMethod routine [Storage Devices], storage.storportinvokeacpimethod, storport/StorPortInvokeAcpiMethod
@@ -50,44 +49,44 @@ The <b>StorPortInvokeAcpiMethod</b> routine executes an ACPI method for a storag
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param Address 
+### -param Address [in, optional]
 
-[in, optional]
+
 The address of the target device. This parameter is optional. If <i>Address</i> is set to <b>NULL</b>, the adapter is the target.
 
-### -param MethodName 
+### -param MethodName [in]
 
-[in]
+
 A four-byte name for the ACPI method. For example, ((ULONG) 'DDS_') would name the _SDD, or 'Set Device Data',  ACPI method for an AHCI controller.
 
-### -param InputBuffer 
+### -param InputBuffer [in, optional]
 
-[in, optional]
+
 A pointer to the input data to the method.
 
-### -param InputBufferLength 
+### -param InputBufferLength [in]
 
-[in]
+
 The length, in bytes, of the buffer in <i>InputBuffer</i>.
 
-### -param OutputBuffer 
+### -param OutputBuffer [in, optional]
 
-[in, optional]
+
 A pointer to the output data from the method.
 
-### -param OutputBufferLength 
+### -param OutputBufferLength [in]
 
-[in]
+
 The length, in bytes, of the buffer in <i>OutputBuffer</i>.
 
-### -param BytesReturned 
+### -param BytesReturned [out, optional]
 
-[out, optional]
+
 A pointer to the length, in bytes, of the data returned in <i>OutputBuffer</i>.
 
 ## -returns

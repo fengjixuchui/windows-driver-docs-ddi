@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.IDataModelManager2.CreateNoValue
 title: IDataModelManager2::CreateNoValue (dbgmodel.h)
 description: The CreateNoValue method creates a "no value" object, boxes it into an IModelObject, and returns it.
-ms.assetid: 2533e73e-a094-4e55-8c33-b52384037932
 ms.date: 09/11/2018
 keywords: ["IDataModelManager2::CreateNoValue"]
 ms.keywords: IDataModelManager2::CreateNoValue, CreateNoValue, IDataModelManager2.CreateNoValue, IDataModelManager2::CreateNoValue, IDataModelManager2.CreateNoValue
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager2.CreateNoValue
+ - IDataModelManager2::CreateNoValue
 ---
 
 # IDataModelManager2::CreateNoValue

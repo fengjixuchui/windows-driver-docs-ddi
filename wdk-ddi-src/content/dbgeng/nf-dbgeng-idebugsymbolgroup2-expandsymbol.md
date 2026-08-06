@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbolGroup2.ExpandSymbol
 title: IDebugSymbolGroup2::ExpandSymbol (dbgeng.h)
-description: The ExpandSymbol method adds or removes the children of a symbol from a symbol group.
+description: The ExpandSymbol method adds or removes the children of a symbol from a symbol group. This method belongs to the IDebugSymbolGroup2 interface.
 old-location: debugger\expandsymbol.htm
 tech.root: debugger
-ms.assetid: 314fdeea-10be-4cb3-8bd7-9b1b4b12e534
 ms.date: 05/03/2018
 keywords: ["IDebugSymbolGroup2::ExpandSymbol"]
 ms.keywords: ComOther_894f45d2-9f7b-4d8d-85e3-9240d020ebbe.xml, ExpandSymbol, ExpandSymbol method [Windows Debugging], ExpandSymbol method [Windows Debugging],IDebugSymbolGroup interface, ExpandSymbol method [Windows Debugging],IDebugSymbolGroup2 interface, IDebugSymbolGroup interface [Windows Debugging],ExpandSymbol method, IDebugSymbolGroup2 interface [Windows Debugging],ExpandSymbol method, IDebugSymbolGroup2.ExpandSymbol, IDebugSymbolGroup2::ExpandSymbol, IDebugSymbolGroup::ExpandSymbol, dbgeng/IDebugSymbolGroup2::ExpandSymbol, dbgeng/IDebugSymbolGroup::ExpandSymbol, debugger.expandsymbol
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbolGroup.ExpandSymbol
- - IDebugSymbolGroup2.ExpandSymbol
+ - IDebugSymbolGroup2::ExpandSymbol
 ---
 
 # IDebugSymbolGroup2::ExpandSymbol
@@ -51,14 +49,14 @@ The <b>ExpandSymbol</b> method adds or removes the children of a symbol from a s
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 The index of the symbol whose children will be added or removed.  The index of a symbol is an identification number. The index ranges from zero through the number of symbols in the symbol group minus one.
 
-### -param Expand 
+### -param Expand [in]
 
-[in]
+
 A Boolean value that specifies whether to add or remove the symbols children from the symbol group.  If <i>Expand</i> is true, the children are added.  If <i>Expand</i> is false, the children are removed.
 
 ## -returns
@@ -121,3 +119,4 @@ For more information about symbol groups, see <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbolgroup2">IDebugSymbolGroup2</a>
+

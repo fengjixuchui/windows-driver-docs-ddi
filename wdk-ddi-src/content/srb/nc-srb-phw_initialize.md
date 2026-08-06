@@ -1,10 +1,9 @@
 ---
 UID: NC:srb.PHW_INITIALIZE
 title: PHW_INITIALIZE (srb.h)
-description: The PHW_INITIALIZE routine prototype declares a routine that initializes the miniport driver after a reboot or power failure occurs.
+description: Learn how the PHW_INITIALIZE routine prototype declares a routine that initializes the miniport driver after a reboot or power failure occurs.
 old-location: storage\phw_initialize.htm
 tech.root: storage
-ms.assetid: dd678196-62f6-4c27-845f-a9b52c663e2a
 ms.date: 03/29/2018
 keywords: ["PHW_INITIALIZE callback"]
 ms.keywords: "(*PHW_INITIALIZE), (*PHW_INITIALIZE) callback function [Storage Devices], ide_minikr_95bb126d-6d4c-4091-b2fa-6b891d587186.xml, srb/(*PHW_INITIALIZE), storage.phw_initialize"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product: Windows 10 or later.
 f1_keywords:
  - PHW_INITIALIZE
  - srb/PHW_INITIALIZE
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - srb.h
 api_name:
- - (*PHW_INITIALIZE)
+ - PHW_INITIALIZE
 ---
 
 # PHW_INITIALIZE callback
@@ -51,9 +49,9 @@ The PHW_INITIALIZE routine prototype declares a routine that initializes the min
 
 ## -parameters
 
-### -param DeviceExtension 
+### -param DeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's per-HBA storage area.
 
 ## -returns
@@ -75,3 +73,4 @@ For more information about the miniport driver initialization routine that is us
 
 
 <a href="/windows-hardware/drivers/ddi/storport/nc-storport-hw_initialize">HwStorInitialize</a>
+

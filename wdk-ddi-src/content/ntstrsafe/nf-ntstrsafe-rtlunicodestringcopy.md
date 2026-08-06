@@ -4,7 +4,6 @@ title: RtlUnicodeStringCopy function (ntstrsafe.h)
 description: The RtlUnicodeStringCopy function copies a string from one UNICODE_STRING structure to another.
 old-location: kernel\rtlunicodestringcopy.htm
 tech.root: kernel
-ms.assetid: 7cc94f22-37af-420c-824e-ca9c8a4b42be
 ms.date: 04/30/2018
 keywords: ["RtlUnicodeStringCopy function"]
 ms.keywords: RtlUnicodeStringCopy, RtlUnicodeStringCopy function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringcopy, ntstrsafe/RtlUnicodeStringCopy, safestrings_d5885cd9-d024-4757-8458-14a787b11a9f.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,14 +50,14 @@ The <b>RtlUnicodeStringCopy</b> function copies a string from one <a href="/wind
 
 ## -parameters
 
-### -param DestinationString 
+### -param DestinationString [out]
 
-[out]
+
 A pointer to a <b>UNICODE_STRING</b> structure. The source string is copied to the destination string. The maximum number of bytes in the structure's string buffer is NTSTRSAFE_UNICODE_STRING_MAX_CCH * sizeof(WCHAR).
 
-### -param SourceString 
+### -param SourceString [in]
 
-[in]
+
 A pointer to a <b>UNICODE_STRING</b> structure. This structure includes a buffer that contains the source string. This string will be copied to the destination string. The maximum number of bytes in the structure's string buffer is NTSTRSAFE_UNICODE_STRING_MAX_CCH * sizeof(WCHAR).
 
 ## -returns

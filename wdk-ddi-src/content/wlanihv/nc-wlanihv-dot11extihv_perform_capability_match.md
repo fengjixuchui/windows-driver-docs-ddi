@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_PERFORM_CAPABILITY_MATCH
 title: DOT11EXTIHV_PERFORM_CAPABILITY_MATCH (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_PERFORM_CAPABILITY_MATCH callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvperformcapabilitymatch.htm
 tech.root: netvista
-ms.assetid: c49b23c0-4707-4626-8035-a83ccf7638eb
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_PERFORM_CAPABILITY_MATCH callback"]
 ms.keywords: DOT11EXTIHV_PERFORM_CAPABILITY_MATCH, Dot11ExtIhvPerformCapabilityMatch, Dot11ExtIhvPerformCapabilityMatch callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_98cf7a9a-aaf4-45d0-8b1d-3142e947e415.xml, netvista.dot11extihvperformcapabilitymatch, wlanihv/Dot11ExtIhvPerformCapabilityMatch
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_PERFORM_CAPABILITY_MATCH
  - wlanihv/DOT11EXTIHV_PERFORM_CAPABILITY_MATCH
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtIhvPerformCapabilityMatch
+ - DOT11EXTIHV_PERFORM_CAPABILITY_MATCH
 ---
 
 # DOT11EXTIHV_PERFORM_CAPABILITY_MATCH callback
@@ -56,41 +54,41 @@ The operating system calls the
 
 ## -parameters
 
-### -param hIhvExtAdapter 
+### -param hIhvExtAdapter [in, optional]
 
-[in, optional]
+
 The handle used by the IHV Extensions DLL to reference the wireless LAN (WLAN) adapter. This
      handle value was specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param pIhvProfileParams 
+### -param pIhvProfileParams [in, optional]
 
-[in, optional]
+
 A pointer to a
      <a href="..\wlanihvtypes\ns-wlanihvtypes-_dot11ext_ihv_profile_params.md">
      DOT11EXT_IHV_PROFILE_PARAMS</a> structure. This structure defines the attributes of the basic service
      set (BSS) network to which the profile extensions will be applied.
 
-### -param pIhvConnProfile 
+### -param pIhvConnProfile [in]
 
-[in]
+
 A pointer to a
      <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_connectivity_profile.md">
      DOT11EXT_IHV_CONNECTIVITY_PROFILE</a> structure that contains connectivity settings for the IHV
      profile.
 
-### -param pIhvSecProfile 
+### -param pIhvSecProfile [in]
 
-[in]
+
 A pointer to a
      <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_security_profile.md">
      DOT11EXT_IHV_SECURITY_PROFILE</a> structure that contains security settings for the IHV
      profile.
 
-### -param pConnectableBssid 
+### -param pConnectableBssid [in, optional]
 
-[in, optional]
+
 A pointer to a
      <a href="..\wlclient\ns-wlclient-_dot11_bss_list.md">DOT11_BSS_LIST</a> structure, which contains one
      or more 802.11 Beacon or Probe Response frames received from a BSS network. This list is derived from
@@ -102,9 +100,9 @@ A pointer to a
 <div class="alert"><b>Note</b>  For Windows Vista, the IHV Extensions DLL supports only infrastructure basic
      service set (BSS) networks.</div>
 
-### -param pdwReasonCode 
+### -param pdwReasonCode [out]
 
-[out]
+
 A pointer to a DWORD value, which provides additional information for the return value of the
      <i>Dot11ExtIhvPerformCapabilityMatch</i> function. The IHV Extensions DLL must set *
      <i>pdwReasonCode</i> to an L2_REASON_CODE_xxxx value, which are defined in
@@ -210,3 +208,4 @@ For more information about the Native 802.11 XML schema, refer to the Microsoft 
 
 
 <a href="..\wlanihvtypes\ns-wlanihvtypes-_dot11ext_ihv_profile_params.md">DOT11EXT_IHV_PROFILE_PARAMS</a>
+

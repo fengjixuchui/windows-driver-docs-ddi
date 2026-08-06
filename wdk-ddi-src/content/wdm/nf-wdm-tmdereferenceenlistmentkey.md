@@ -4,7 +4,6 @@ title: TmDereferenceEnlistmentKey function (wdm.h)
 description: The TmDereferenceEnlistmentKey routine decrements the reference count for the key of a specified enlistment object.
 old-location: kernel\tmdereferenceenlistmentkey.htm
 tech.root: kernel
-ms.assetid: e03b5f4d-58d5-43d5-a0c3-8a3cc83bd38a
 ms.date: 04/30/2018
 keywords: ["TmDereferenceEnlistmentKey function"]
 ms.keywords: TmDereferenceEnlistmentKey, TmDereferenceEnlistmentKey routine [Kernel-Mode Driver Architecture], kernel.tmdereferenceenlistmentkey, ktm_ref_88254e83-cb2a-4da1-9216-b12314ea73ea.xml, wdm/TmDereferenceEnlistmentKey
@@ -52,14 +51,14 @@ The <b>TmDereferenceEnlistmentKey</b> routine decrements the reference count for
 
 ## -parameters
 
-### -param Enlistment 
+### -param Enlistment [in]
 
-[in]
+
 A pointer to an enlistment object. Your component can receive this pointer as input to a <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-ptm_rm_notification">ResourceManagerNotification</a> callback routine. Alternatively, your component can call <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle">ObReferenceObjectByHandle</a> and supply the object handle that a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment">ZwCreateEnlistment</a>, <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-tmcreateenlistment">TmCreateEnlistment</a>, or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a> provided.
 
-### -param LastReference 
+### -param LastReference [out, optional]
 
-[out, optional]
+
 A pointer to a BOOLEAN-typed variable. This variable receives <b>TRUE</b> if the reference count is zero after <b>TmDereferenceEnlistmentKey</b> decrements it. Otherwise, the variable receives <b>FALSE</b>.
 
 ## -returns

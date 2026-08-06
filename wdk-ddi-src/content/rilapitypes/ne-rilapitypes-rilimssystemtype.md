@@ -1,10 +1,9 @@
 ---
 UID: NE:rilapitypes.RILIMSSYSTEMTYPE
 title: RILIMSSYSTEMTYPE (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILIMSSYSTEMTYPE enumeration for internal use only. Don't use this enumeration in your code."
 old-location: netvista\rilimssystemtype_2.htm
 tech.root: netvista
-ms.assetid: 94c37721-372f-448f-8cd9-d4c64dd285cb
 ms.date: 02/26/2018
 keywords: ["RILIMSSYSTEMTYPE enumeration"]
 ms.keywords: RILIMSSYSTEMTYPE, RILIMSSYSTEMTYPE enumeration [Network Drivers Starting with Windows Vista], RIL_IMSSYSTEMTYPE_LTE, RIL_IMSSYSTEMTYPE_MAX, RIL_IMSSYSTEMTYPE_WIFI, netvista.rilimssystemtype_2, rilapitypes/RILIMSSYSTEMTYPE, rilapitypes/RIL_IMSSYSTEMTYPE_LTE, rilapitypes/RIL_IMSSYSTEMTYPE_MAX, rilapitypes/RIL_IMSSYSTEMTYPE_WIFI
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: RILIMSSYSTEMTYPE
-req.product: Windows 10 or later.
 f1_keywords:
  - RILIMSSYSTEMTYPE
  - rilapitypes/RILIMSSYSTEMTYPE

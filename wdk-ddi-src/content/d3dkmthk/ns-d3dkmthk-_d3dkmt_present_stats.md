@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_PRESENT_STATS
 title: _D3DKMT_PRESENT_STATS (d3dkmthk.h)
 description: The D3DKMT_PRESENT_STATS structure describes present status for a rendering device.
 old-location: display\d3dkmt_present_stats.htm
-ms.assetid: fd292f3c-2cf7-4f17-999b-a82b2a3a8e0e
 ms.date: 05/10/2018
 keywords: ["D3DKMT_PRESENT_STATS structure"]
 ms.keywords: D3DKMT_PRESENT_STATS, D3DKMT_PRESENT_STATS structure [Display Devices], OpenGL_Structs_181828f7-c22f-4f23-914d-83a8961cdefe.xml, _D3DKMT_PRESENT_STATS, d3dkmthk/D3DKMT_PRESENT_STATS, display.d3dkmt_present_stats
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_PRESENT_STATS
  - D3DKMT_PRESENT_STATS
 ---
 
@@ -52,25 +52,25 @@ The D3DKMT_PRESENT_STATS structure describes present status for a rendering devi
 
 ## -struct-fields
 
-### -field PresentCount
+### -field PresentCount [out]
 
-[out] A UINT value that indicates the number of times that the OpenGL installable client driver (ICD) called the <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtpresent">D3DKMTPresent</a> function on a rendering device or swap chain. After the maximum value is reached, <b>PresentCount</b> starts over at zero. When a new rendering device is created, <b>PresentCount</b> is initialized to zero. The operating system maintains a present counter for each swap chain that is created.
+A UINT value that indicates the number of times that the OpenGL installable client driver (ICD) called the <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtpresent">D3DKMTPresent</a> function on a rendering device or swap chain. After the maximum value is reached, <b>PresentCount</b> starts over at zero. When a new rendering device is created, <b>PresentCount</b> is initialized to zero. The operating system maintains a present counter for each swap chain that is created.
 
-### -field PresentRefreshCount
+### -field PresentRefreshCount [out]
 
-[out] A UINT value that indicates the number of times the display controller outputs a new video frame, which occurs at the beginning of each vertical retrace period. The operating system maintains a present refresh counter for each video display controller output in the operating system. <b>PresentRefreshCount</b> is initialized to an unspecified value.
+A UINT value that indicates the number of times the display controller outputs a new video frame, which occurs at the beginning of each vertical retrace period. The operating system maintains a present refresh counter for each video display controller output in the operating system. <b>PresentRefreshCount</b> is initialized to an unspecified value.
 
-### -field SyncRefreshCount
+### -field SyncRefreshCount [out]
 
-[out] A UINT value that indicates the number of the most recent capture of the timing information in the <b>SyncQPCTime</b> and <b>SyncGPUTime</b> members.
+A UINT value that indicates the number of the most recent capture of the timing information in the <b>SyncQPCTime</b> and <b>SyncGPUTime</b> members.
 
-### -field SyncQPCTime
+### -field SyncQPCTime [out]
 
-[out] The computer processing unit (CPU) time that the current video frame was output at (that is, the CPU time that the vertical retrace started).
+The computer processing unit (CPU) time that the current video frame was output at (that is, the CPU time that the vertical retrace started).
 
-### -field SyncGPUTime
+### -field SyncGPUTime [out]
 
-[out] The graphics processing unit (GPU) time that the current video frame was output at (that is, the GPU time that the vertical retrace started).
+The graphics processing unit (GPU) time that the current video frame was output at (that is, the GPU time that the vertical retrace started).
 
 ## -remarks
 
@@ -90,3 +90,4 @@ Present statistics cannot work for windowed-mode devices. For windowed mode, eac
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_devicepresent_state">D3DKMT_DEVICEPRESENT_STATE</a>
+

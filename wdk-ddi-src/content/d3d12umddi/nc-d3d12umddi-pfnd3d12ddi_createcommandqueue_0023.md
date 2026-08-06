@@ -3,7 +3,6 @@ UID: NC:d3d12umddi.PFND3D12DDI_CREATECOMMANDQUEUE_0023
 title: PFND3D12DDI_CREATECOMMANDQUEUE_0023 (d3d12umddi.h)
 description: The pfnCreateCommandQueue callback function is used to create command queue.
 old-location: display\pfnd3d12ddi_createcommandqueue_0023.htm
-ms.assetid: 1DA52354-2338-4214-8489-B6BFCD6060FB
 ms.date: 05/10/2018
 keywords: ["PFND3D12DDI_CREATECOMMANDQUEUE_0023 callback function"]
 ms.keywords: PFND3D12DDI_CREATECOMMANDQUEUE_0023, PFND3D12DDI_CREATECOMMANDQUEUE_0023 callback, d3d12umddi/pfnCreateCommandQueue, display.pfnd3d12ddi_createcommandqueue_0023, pfnCreateCommandQueue, pfnCreateCommandQueue callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d12umddi.h
 api_name:
- - pfnCreateCommandQueue
-product:
- - Windows
+ - PFND3D12DDI_CREATECOMMANDQUEUE_0023
 ---
 
 # PFND3D12DDI_CREATECOMMANDQUEUE_0023 callback function
@@ -52,19 +49,19 @@ The <i>pfnCreateCommandQueue</i> callback function is used to create command que
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 The handle of a device.
 
-### -param Arg2
+### -param unnamedParam2
 
 An argument used to create a command queue.
 
-### -param Arg3
+### -param unnamedParam3
 
 The handle of the command queue for the driver to use when it calls back into the runtime.
 
-### -param Arg4
+### -param unnamedParam4
 
 ## -returns
 

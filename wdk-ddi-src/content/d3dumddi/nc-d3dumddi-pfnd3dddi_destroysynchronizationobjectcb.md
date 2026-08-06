@@ -4,7 +4,6 @@ title: PFND3DDDI_DESTROYSYNCHRONIZATIONOBJECTCB (d3dumddi.h)
 description: The pfnDestroySynchronizationObjectCb function destroys the synchronization object that was created through a call to the pfnCreateSynchronizationObjectCb function.
 old-location: display\pfndestroysynchronizationobjectcb.htm
 tech.root: display
-ms.assetid: 7ba549a2-f165-4b5e-8cf4-ab707222532c
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DESTROYSYNCHRONIZATIONOBJECTCB callback function"]
 ms.keywords: D3Druntime_Functions_a2b3f092-097e-4eb1-b38d-8f68e5edbcca.xml, PFND3DDDI_DESTROYSYNCHRONIZATIONOBJECTCB, PFND3DDDI_DESTROYSYNCHRONIZATIONOBJECTCB callback, d3dumddi/pfnDestroySynchronizationObjectCb, display.pfndestroysynchronizationobjectcb, pfnDestroySynchronizationObjectCb, pfnDestroySynchronizationObjectCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnDestroySynchronizationObjectCb
-product:
- - Windows
+ - PFND3DDDI_DESTROYSYNCHRONIZATIONOBJECTCB
 ---
 
 # PFND3DDDI_DESTROYSYNCHRONIZATIONOBJECTCB callback function
@@ -56,7 +53,7 @@ The <b>pfnDestroySynchronizationObjectCb</b> function destroys the synchronizati
 
 A handle to a display device (that is, the graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -81,3 +78,4 @@ This function might also return other HRESULT values.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createsynchronizationobjectcb">pfnCreateSynchronizationObjectCb</a>
+

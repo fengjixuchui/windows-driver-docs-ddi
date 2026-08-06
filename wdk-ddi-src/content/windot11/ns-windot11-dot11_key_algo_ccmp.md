@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11.DOT11_KEY_ALGO_CCMP
 title: DOT11_KEY_ALGO_CCMP (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_KEY_ALGO_CCMP structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_key_algo_ccmp.htm
 tech.root: netvista
-ms.assetid: cf89ee80-d19d-4d97-b71f-8ebee4b96562
 ms.date: 02/16/2018
 keywords: ["DOT11_KEY_ALGO_CCMP structure"]
 ms.keywords: "*PDOT11_KEY_ALGO_CCMP, DOT11_KEY_ALGO_CCMP, DOT11_KEY_ALGO_CCMP structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_37999ce3-5aae-4c91-80f0-f47a7182a963.xml, PDOT11_KEY_ALGO_CCMP, PDOT11_KEY_ALGO_CCMP structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_key_algo_ccmp, windot11/DOT11_KEY_ALGO_CCMP, windot11/PDOT11_KEY_ALGO_CCMP"
@@ -41,8 +40,7 @@ api_location:
  - windot11.h
 api_name:
  - DOT11_KEY_ALGO_CCMP
-product:
- - Windows 10 or later.
+ - PDOT11_KEY_ALGO_CCMP
 ---
 
 # DOT11_KEY_ALGO_CCMP structure
@@ -50,7 +48,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_KEY_ALGO_CCMP structure defines a cipher key that is used by the AES-CCMP algorithm for
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_KEY_ALGO_CCMP structure defines a cipher key that is used by the AES-CCMP algorithm for
   data encryption and decryption.
 
 ## -struct-fields
@@ -111,3 +112,4 @@ Initialize the PN counter used for the send path to any value.
 
 <a href="..\windot11\ns-windot11-dot11_cipher_default_key_value.md">
    DOT11_CIPHER_DEFAULT_KEY_VALUE</a>
+

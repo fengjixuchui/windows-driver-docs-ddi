@@ -4,7 +4,6 @@ title: _DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS (dxgiddi.h)
 description: Used in a call to the pfnGetMultiplaneOverlayGroupCaps function to get a group of overlay plane capabilities.
 old-location: display\dxgi_ddi_arg_getmultiplaneoverlaygroupcaps.htm
 tech.root: display
-ms.assetid: C63125FA-7ADF-406A-A729-67C6ACA47D96
 ms.date: 05/10/2018
 keywords: ["DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS structure"]
 ms.keywords: DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS, DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS structure [Display Devices], _DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS, display.dxgi_ddi_arg_getmultiplaneoverlaygroupcaps, dxgiddi/DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Dxgiddi.h
 api_name:
+ - _DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS
  - DXGI_DDI_ARG_GETMULTIPLANEOVERLAYGROUPCAPS
 ---
 
@@ -52,23 +52,23 @@ Used in a call to the <a href="/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-
 
 ## -struct-fields
 
-### -field hDevice
+### -field hDevice [in]
 
-[in] A handle to the display device (graphics context) for which overlay plane capabilities are needed.
+A handle to the display device (graphics context) for which overlay plane capabilities are needed.
 
 The Direct3D runtime passed this handle to the driver in the <b>hDrvDevice</b> member of the <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddiarg_createdevice">D3D10DDIARG_CREATEDEVICE</a> structure when it created the device by calling the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdevice">CreateDevice(D3D10)</a> routine.
 
-### -field VidPnSourceId
+### -field VidPnSourceId [in]
 
-[in] The zero-based video present network (VidPN) source identification number of the input for which the capabilities are queried.
+The zero-based video present network (VidPN) source identification number of the input for which the capabilities are queried.
 
-### -field GroupIndex
+### -field GroupIndex [in]
 
-[in] The index of the overlay capability group for which capabilities are queried. This value is always between zero and (<a href="/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi_ddi_multiplane_overlay_caps">DXGI_DDI_MULTIPLANE_OVERLAY_CAPS</a>.<b>NumCapabilityGroups</b> – 1).
+The index of the overlay capability group for which capabilities are queried. This value is always between zero and (<a href="/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi_ddi_multiplane_overlay_caps">DXGI_DDI_MULTIPLANE_OVERLAY_CAPS</a>.<b>NumCapabilityGroups</b> – 1).
 
-### -field MultiplaneOverlayGroupCaps
+### -field MultiplaneOverlayGroupCaps [out]
 
-[out] The overlay plane capabilities for the requested capability group, given as a <a href="/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi_ddi_multiplane_overlay_group_caps">DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS</a> structure.
+The overlay plane capabilities for the requested capability group, given as a <a href="/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi_ddi_multiplane_overlay_group_caps">DXGI_DDI_MULTIPLANE_OVERLAY_GROUP_CAPS</a> structure.
 
 ## -see-also
 
@@ -89,3 +89,4 @@ The Direct3D runtime passed this handle to the driver in the <b>hDrvDevice</b> m
 
 
 <a href="/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi_ddi_base_functions">pfnGetMultiplaneOverlayGroupCaps</a>
+

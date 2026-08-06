@@ -1,10 +1,9 @@
 ---
 UID: NS:pep_x._PEP_ACPI_RESOURCE
 title: _PEP_ACPI_RESOURCE (pep_x.h)
-description: The PEP_ACPI_RESOURCE structure contains hardware details for a specific ACPI resource.
+description: Learn how the PEP_ACPI_RESOURCE structure contains hardware details for a specific ACPI resource.
 old-location: kernel\pep_acpi_resource.htm
 tech.root: kernel
-ms.assetid: 534F736D-906C-48B5-9CEE-0E37459DA03F
 ms.date: 04/30/2018
 keywords: ["PEP_ACPI_RESOURCE structure"]
 ms.keywords: "*PPEP_ACPI_RESOURCE, PEP_ACPI_RESOURCE, PEP_ACPI_RESOURCE union [Kernel-Mode Driver Architecture], PPEP_ACPI_RESOURCE, PPEP_ACPI_RESOURCE union pointer [Kernel-Mode Driver Architecture], _PEP_ACPI_RESOURCE, kernel.pep_acpi_resource, pepfx/PEP_ACPI_RESOURCE, pepfx/PPEP_ACPI_RESOURCE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_ACPI_RESOURCE
+ - PPEP_ACPI_RESOURCE
  - PEP_ACPI_RESOURCE
 ---
 
@@ -117,3 +118,4 @@ If <b>Type</b> is <b>PepAcpiExtendedMemory</b> or <b>PepAcpiExtendedIo</b>, this
 
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_acpi_spb_uart_resource">PEP_ACPI_SPB_UART_RESOURCE</a>
+

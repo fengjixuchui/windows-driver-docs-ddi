@@ -4,7 +4,6 @@ title: SdBusSubmitRequestAsync function (ntddsd.h)
 description: The SdBusSubmitRequestAsync routine sends an asynchronous Secure Digital (SD) request to the bus driver interface.
 old-location: sd\sdbussubmitrequestasync.htm
 tech.root: SD
-ms.assetid: c4425ba5-adf7-4734-a400-1a233a441047
 ms.date: 02/15/2018
 keywords: ["SdBusSubmitRequestAsync function"]
 ms.keywords: SD.sdbussubmitrequestasync, SdBusSubmitRequestAsync, SdBusSubmitRequestAsync function [Buses], ntddsd/SdBusSubmitRequestAsync, sd-rtns_69f249eb-f2e8-48fa-8857-b47c732faea6.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,29 +49,29 @@ The <b>SdBusSubmitRequestAsync</b> routine sends an asynchronous Secure Digital 
 
 ## -parameters
 
-### -param InterfaceContext 
+### -param InterfaceContext [in]
 
-[in]
+
 Contains the context information returned by the <a href="/windows-hardware/drivers/ddi/ntddsd/nf-ntddsd-sdbusopeninterface">SdBusOpenInterface</a> routine in the <b>Context</b> member of the <a href="/previous-versions/windows/hardware/drivers/ff537923(v=vs.85)">SDBUS_INTERFACE_STANDARD</a> structure.
 
-### -param Packet 
+### -param Packet [in]
 
-[in]
+
 Pointer to a caller-supplied structure of type <a href="/previous-versions/windows/hardware/drivers/ff537931(v=vs.85)">SDBUS_REQUEST_PACKET</a> that describes the request.
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Points to a caller-supplied IRP that the SD library uses to transmit the request packet. The <b>SdBusSubmitRequestAsync</b> routine stores the packet in the next stack location of the IRP, which allows the caller to reuse IRPs created by a driver higher in the stack.
 
-### -param CompletionRoutine 
+### -param CompletionRoutine [in]
 
-[in]
+
 Pointer to a completion routine of type <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-io_completion_routine">IoCompletion</a> that <b>SdBusSubmitRequestAsync</b> registers for the IRP specified in the <i>Irp </i>parameter.
 
-### -param UserContext 
+### -param UserContext [in]
 
-[in]
+
 Pointer to context data that the system passes to the completion routine registered for the IRP specified by the <i>Irp </i>parameter.
 
 ## -returns

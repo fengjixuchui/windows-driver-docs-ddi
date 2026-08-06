@@ -4,7 +4,6 @@ title: _D3DDDICB_RENDERFLAGS (d3dumddi.h)
 description: The D3DDDICB_RENDERFLAGS structure identifies information about a command buffer to be rendered.
 old-location: display\d3dddicb_renderflags.htm
 tech.root: display
-ms.assetid: 18ae8ec2-a9e9-40e2-8b11-93fd163a801d
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_RENDERFLAGS structure"]
 ms.keywords: D3DDDICB_RENDERFLAGS, D3DDDICB_RENDERFLAGS structure [Display Devices], D3D_other_Structs_559cfa58-5c9b-470e-aa4b-6c145045ed82.xml, _D3DDDICB_RENDERFLAGS, d3dumddi/D3DDDICB_RENDERFLAGS, display.d3dddicb_renderflags
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDICB_RENDERFLAGS
  - D3DDDICB_RENDERFLAGS
 ---
 
@@ -91,3 +91,4 @@ A member in the union that is contained in D3DDDICB_RENDERFLAGS that can hold on
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_rendercb">pfnRenderCb</a>
+

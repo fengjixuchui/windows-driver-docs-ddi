@@ -1,12 +1,12 @@
 ---
 UID: NC:ntddk.pHalQuerySystemInformation
 title: pHalQuerySystemInformation (ntddk.h)
-description: 
-ms.assetid: 1470096d-c598-4724-9107-10678ae46a71
-ms.date: 10/19/2018
+description: The pHalQuerySystemInformation callback function reads the MCA banks' status registers.
+tech.root: kernel
+ms.date: 01/19/2023
 keywords: ["pHalQuerySystemInformation callback function"]
 req.header: ntddk.h
-req.include-header: 
+req.include-header: Ntddk.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -36,26 +36,24 @@ api_name:
  - pHalQuerySystemInformation
 ---
 
-# pHalQuerySystemInformation callback function
-
-
 ## -description
 
-Read MCA banks' status registers.
+The *pHalQuerySystemInformation* callback function reads the MCA banks' status registers.
 
 ## -parameters
 
-### -param InformationClass
+### -param InformationClass [in]
 
-[in] The HalMcaLogInformation to read the current MCA error log. If any of the uncorrected Machine Check errors is found, it is returned in the buffer. For Itanium systems, specify HalCmcLogInformation to read the current corrected CPU error log and HalCpeLogInformation to read the current corrected platform error log.
+The HalMcaLogInformation to read the current MCA error log. If any of the uncorrected Machine Check errors is found, it is returned in the buffer. For Itanium systems, specify HalCmcLogInformation to read the current corrected CPU error log and HalCpeLogInformation to read the current corrected platform error log.
 
-### -param BufferSize
+### -param BufferSize [in]
 
-[in] The size, in bytes, of the buffer that the caller supplies.
+The size, in bytes, of the buffer that the caller supplies.
 
-### -param Buffer
+### -param Buffer [out]
 
-[out] A pointer to a caller-supplied buffer of type MCA_EXCEPTION that will contain the information returned by this routine. For Intel Itanium processors, the returned information must be compliant, at a minimum, with the V3.0 SAL specification, Error Record Structures, January 2001, Appendix B"". For Intel Pentium Pro processors, the information is as described in the following code example.
+A pointer to a caller-supplied buffer of type MCA_EXCEPTION that will contain the information returned by this routine. For Intel Itanium processors, the returned information must be compliant, at a minimum, with the V3.0 SAL specification, Error Record Structures, January 2001, Appendix B"". For Intel Pentium Pro processors, the information is as described in the following code example.
+
 ```cpp
 typedef union _MCI_STATS {
   struct {
@@ -109,36 +107,13 @@ typedef struct _MCA_EXCEPTION {
 } MCA_EXCEPTION, *PMCA_EXCEPTION;
 ```
 
-### -param ReturnedLength
+### -param ReturnedLength [out]
 
-[out] The number of bytes that are returned in Buffer.
+The number of bytes that are returned in Buffer.
 
 ## -returns
 
 Returns STATUS_SUCCESS if an error log exists.
-
-## -prototype
-
-```cpp
-//Declaration
-
-pHalQuerySystemInformation Phalquerysysteminformation; 
-
-// Definition
-
-NTSTATUS Phalquerysysteminformation 
-(
-	HAL_QUERY_INFORMATION_CLASS InformationClass
-	ULONG BufferSize
-	PVOID Buffer
-	PULONG ReturnedLength
-)
-{...}
-
-pHalQuerySystemInformation 
-
-
-```
 
 ## -remarks
 

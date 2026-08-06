@@ -4,7 +4,6 @@ title: ISensorDriver::OnClientConnect (sensorsclassextension.h)
 description: The ISensorDriver::OnClientConnect method notifies the sensor driver that a client application has connected.
 old-location: sensors\isensordriver_onclientconnect.htm
 tech.root: sensors
-ms.assetid: 0f64288b-5100-4529-af2f-3e867375da39
 ms.date: 05/03/2018
 keywords: ["ISensorDriver::OnClientConnect"]
 ms.keywords: ISensorDriver interface [Sensor Devices],OnClientConnect method, ISensorDriver.OnClientConnect, ISensorDriver::OnClientConnect, OnClientConnect, OnClientConnect method [Sensor Devices], OnClientConnect method [Sensor Devices],ISensorDriver interface, sensors.isensordriver_onclientconnect, sensorsclassextension/ISensorDriver::OnClientConnect
@@ -39,7 +38,7 @@ api_location:
  - SensorsClassExtension.lib
  - SensorsClassExtension.dll
 api_name:
- - OnClientConnect
+ - ISensorDriver::OnClientConnect
 ---
 
 # ISensorDriver::OnClientConnect
@@ -76,3 +75,4 @@ For more information about how to use this method, see <a href="/windows-hardwar
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/sensorsclassextension/nn-sensorsclassextension-isensordriver">ISensorDriver</a>
+

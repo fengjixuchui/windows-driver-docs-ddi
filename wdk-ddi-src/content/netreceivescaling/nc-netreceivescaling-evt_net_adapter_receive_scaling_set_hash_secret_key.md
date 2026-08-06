@@ -3,8 +3,7 @@ UID: NC:netreceivescaling.EVT_NET_ADAPTER_RECEIVE_SCALING_SET_HASH_SECRET_KEY
 title: EVT_NET_ADAPTER_RECEIVE_SCALING_SET_HASH_SECRET_KEY (netreceivescaling.h)
 description: The EvtNetAdapterReceiveScalingSetHashSecretKey callback function is implemented by the client driver to set the hash secret key for the network interface controller (NIC).
 tech.root: netvista
-ms.assetid: 9144fad7-c6d6-4d67-9ad7-45e9a0cf31f6
-ms.date: 02/01/2019
+ms.date: 04/01/2022
 keywords: ["EVT_NET_ADAPTER_RECEIVE_SCALING_SET_HASH_SECRET_KEY callback function"]
 req.header: netreceivescaling.h
 req.include-header: netadaptercx.h 
@@ -12,7 +11,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.25
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -27,13 +26,13 @@ targetos: Windows
 f1_keywords:
  - EVT_NET_ADAPTER_RECEIVE_SCALING_SET_HASH_SECRET_KEY
  - netreceivescaling/EVT_NET_ADAPTER_RECEIVE_SCALING_SET_HASH_SECRET_KEY
-topictype:
+topic_type:
  - apiref
-apitype:
+api_type:
  - UserDefined
-apilocation:
+api_location:
  - netreceivescaling.h
-apiname:
+api_name:
  - EVT_NET_ADAPTER_RECEIVE_SCALING_SET_HASH_SECRET_KEY
 ---
 
@@ -46,11 +45,11 @@ The *EvtNetAdapterReceiveScalingSetHashSecretKey* callback function is implement
 
 ## -parameters
 
-### -param Adapter 
+### -param Adapter [_In_]
 
 The NETADAPTER object the client driver obtained in a previous call to [**NetAdapterCreate**](../netadapter/nf-netadapter-netadaptercreate.md).
 
-### -param HashSecretKey
+### -param HashSecretKey [_In_]
 
 A pointer to a [NET_ADAPTER_RECEIVE_SCALING_HASH_SECRET_KEY](ns-netreceivescaling-_net_adapter_receive_scaling_hash_secret_key.md) structure that contains the hash secret key for validating hash calculations.
 

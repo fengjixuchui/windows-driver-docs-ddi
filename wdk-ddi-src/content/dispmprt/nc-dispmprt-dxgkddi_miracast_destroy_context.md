@@ -4,7 +4,6 @@ title: DXGKDDI_MIRACAST_DESTROY_CONTEXT (dispmprt.h)
 description: Destroys an instance of a Miracast device.
 old-location: display\dxgkddimiracastdestroycontext.htm
 tech.root: display
-ms.assetid: 2DEEB379-C9E8-45E4-920D-D94F8C27A4EF
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_MIRACAST_DESTROY_CONTEXT callback function"]
 ms.keywords: DXGKDDI_MIRACAST_DESTROY_CONTEXT, DXGKDDI_MIRACAST_DESTROY_CONTEXT callback, DxgkDdiMiracastDestroyContext, DxgkDdiMiracastDestroyContext callback function [Display Devices], display.dxgkddimiracastdestroycontext, dispmprt/DxgkDdiMiracastDestroyContext
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dispmprt.h
 api_name:
- - DxgkDdiMiracastDestroyContext
+ - DXGKDDI_MIRACAST_DESTROY_CONTEXT
 ---
 
 # DXGKDDI_MIRACAST_DESTROY_CONTEXT callback function
@@ -50,14 +49,14 @@ Destroys an instance of a Miracast device.
 
 ## -parameters
 
-### -param DriverContext 
+### -param DriverContext [in]
 
-[in]
+
 A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.
 
-### -param MiracastContext 
+### -param MiracastContext [in]
 
-[in]
+
 The Miracast device context, supplied by the operating system. This context was previously provided by the driver in a call to the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_miracast_create_context">DxgkDdiMiracastCreateContext</a> function.
 
 ## -remarks
@@ -96,3 +95,4 @@ The operating system groups the <a href="/windows-hardware/drivers/ddi/dispmprt/
 
 
 <a href="/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_stop_miracast_session">StopMiracastSession</a>
+

@@ -4,7 +4,6 @@ title: ExtExtension::* ExtKnownStructMethod (engextcpp.h)
 description: The ExtKnownStructMethod callback method is called by the engine to format an instance of a structure for output on a single line.
 old-location: debugger\extknownstructmethod.htm
 tech.root: debugger
-ms.assetid: 33199207-9bb1-4761-9492-15d6287c90df
 ms.date: 05/03/2018
 keywords: ["ExtExtension::* ExtKnownStructMethod callback function"]
 ms.keywords: "* ExtKnownStructMethod, EngExtCpp_Ref_bd64fb5a-ca77-4195-b5ba-6d647c133353.xml, ExtExtension::* ExtKnownStructMethod, ExtKnownStructMethod, ExtKnownStructMethod callback, ExtKnownStructMethod callback function [Windows Debugging], debugger.extknownstructmethod, engextcpp/ExtKnownStructMethod"
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - Engextcpp.hpp
 api_name:
- - ExtKnownStructMethod
+ - ExtExtension::* ExtKnownStructMethod
 ---
 
 # ExtExtension::* ExtKnownStructMethod callback function
@@ -51,19 +50,19 @@ The <b>ExtKnownStructMethod</b> callback method is called by the engine to forma
 
 ## -parameters
 
-### -param TypeName 
+### -param TypeName [in]
 
-[in]
+
 Specifies the name of the type of the structure pointed to by <i>Offset</i>.  This is the same as the <b>TypeName</b> field of the <a href="/windows-hardware/drivers/ddi/engextcpp/ns-engextcpp-extknownstruct">ExtKnownStruct</a> structure used to register this callback method.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies bit flags that indicate how the output should be formatted.  Currently, this is set to DEBUG_KNOWN_STRUCT_GET_SINGLE_LINE_OUTPUT, which indicates that the output should be formatted for output on a single line.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the location in the target's memory of the instance of the structure to be formatted for output.
 
 ## -remarks
@@ -87,3 +86,4 @@ When the debugger engine calls a known structure method, it wraps the call in a 
 
 
 <a href="/previous-versions/windows/hardware/previsioning-framework/ff550945(v=vs.85)">Initialize</a>
+

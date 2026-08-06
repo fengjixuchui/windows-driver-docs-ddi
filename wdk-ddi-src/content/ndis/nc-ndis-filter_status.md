@@ -4,7 +4,6 @@ title: FILTER_STATUS (ndis.h)
 description: The FilterStatus function indicates status changes that are reported by NDIS or an underlying driver.Note  You must declare the function by using the FILTER_STATUS type.
 old-location: netvista\filterstatus.htm
 tech.root: netvista
-ms.assetid: 051ce37c-a7a5-4367-9495-023fc51349ba
 ms.date: 05/02/2018
 keywords: ["FILTER_STATUS callback function"]
 ms.keywords: FILTER_STATUS, FILTER_STATUS callback, FilterStatus, FilterStatus callback function [Network Drivers Starting with Windows Vista], ndis/FilterStatus, ndis_status_ref_4bddf4b3-3869-4e47-ba86-021e9f25484b.xml, netvista.filterstatus
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - FilterStatus
+ - FILTER_STATUS
 ---
 
 # FILTER_STATUS callback function
@@ -54,16 +53,16 @@ The
 
 ## -parameters
 
-### -param FilterModuleContext 
+### -param FilterModuleContext [in]
 
-[in]
+
 A handle to the context area for the filter module. The filter driver created and initialized this
      context area in the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach">FilterAttach</a> function.
 
-### -param StatusIndication 
+### -param StatusIndication [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication">NDIS_STATUS_INDICATION</a> structure
      that contains the status information.
@@ -132,3 +131,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfregisterfilterdriver">NdisFRegisterFilterDriver</a>
+

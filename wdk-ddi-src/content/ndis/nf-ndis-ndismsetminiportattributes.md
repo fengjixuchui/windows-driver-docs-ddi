@@ -4,8 +4,7 @@ title: NdisMSetMiniportAttributes function (ndis.h)
 description: A miniport driver must call the NdisMSetMiniportAttributes function from its MiniportInitializeEx function to identify a context area for miniport adapter to NDIS, and to provide NDIS with information about the miniport adapter.
 old-location: netvista\ndismsetminiportattributes.htm
 tech.root: netvista
-ms.assetid: 861626af-23ea-40dc-a91a-7da42d4b0a1c
-ms.date: 05/02/2018
+ms.date: 07/23/2025
 keywords: ["NdisMSetMiniportAttributes function"]
 ms.keywords: NdisMSetMiniportAttributes, NdisMSetMiniportAttributes function [Network Drivers Starting with Windows Vista], miniport_ndis_functions_ref_2fc47304-466b-4ae0-8450-44c636cecf64.xml, ndis/NdisMSetMiniportAttributes, netvista.ndismsetminiportattributes
 req.header: ndis.h
@@ -61,9 +60,9 @@ The miniport adapter handle that NDIS passed to the
      <i>MiniportAdapterHandle</i> parameter of 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a>.
 
-### -param MiniportAttributes 
+### -param MiniportAttributes [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_attributes">
      NDIS_MINIPORT_ADAPTER_ATTRIBUTES</a> union which contains a driver-allocated attributes structure. The
@@ -136,7 +135,7 @@ The driver provides a
     <i>MiniportXxx</i> functions. This context area contains miniport-adapter-specific state information.
 
 Miniport drivers must set the attributes in the 
-    <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes">
+    <a href="/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes">
     NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a> structure after they set the registration attributes in
     the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_registration_attributes">NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</a> structure and before they set any additional
     attributes.
@@ -158,7 +157,7 @@ A miniport driver can also call <b>NdisMSetMiniportAttributes</b> from its <a hr
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes">
+<a href="/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes">
    NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a>
 
 

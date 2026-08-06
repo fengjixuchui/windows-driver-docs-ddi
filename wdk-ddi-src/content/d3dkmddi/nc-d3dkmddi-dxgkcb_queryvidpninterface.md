@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKCB_QUERYVIDPNINTERFACE
 title: DXGKCB_QUERYVIDPNINTERFACE (d3dkmddi.h)
 description: The DxgkCbQueryVidPnInterface function returns a pointer to a DXGK_VIDPN_INTERFACE structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter a VidPN object.
 old-location: display\dxgkcbqueryvidpninterface.htm
-ms.assetid: 649ce7fc-6852-43f3-b944-b2b64fcba874
-ms.date: 05/10/2018
+ms.date: 10/13/2021
 keywords: ["DXGKCB_QUERYVIDPNINTERFACE callback function"]
 ms.keywords: DXGKCB_QUERYVIDPNINTERFACE, DXGKCB_QUERYVIDPNINTERFACE callback, DpFunctions_0bbf993b-c05b-402b-af4a-cf1a3ec4d4b8.xml, DxgkCbQueryVidPnInterface, DxgkCbQueryVidPnInterface callback function [Display Devices], d3dkmddi/DxgkCbQueryVidPnInterface, display.dxgkcbqueryvidpninterface
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista (WDDM 1.0)
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,35 +37,32 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkCbQueryVidPnInterface
-product:
- - Windows
+ - DXGKCB_QUERYVIDPNINTERFACE
 ---
 
 # DXGKCB_QUERYVIDPNINTERFACE callback function
 
-
 ## -description
 
-The <b>DxgkCbQueryVidPnInterface</b> function returns a pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpn_interface">DXGK_VIDPN_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter a VidPN object.
+**DXGKCB_QUERYVIDPNINTERFACE** obtains a pointer to a [**DXGK_VIDPN_INTERFACE**](ns-d3dkmddi-_dxgk_vidpn_interface.md) structure, which contains pointers to functions that the display miniport driver can call to inspect and alter a VidPN object.
 
 ## -parameters
 
-### -param hVidPn
+### -param hVidPn [in]
 
-[in] A handle to a VidPN object. The VidPN manager previously provided the display miniport driver with this handle by calling <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a>, <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_issupportedvidpn">DxgkDdiIsSupportedVidPn</a>, or <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_recommendfunctionalvidpn">DxgkDdiRecommendFunctionalVidPn</a>.
+A handle to a VidPN object. The VidPN manager previously provided the display miniport driver with this handle by calling [DxgkDdiEnumVidPnCofuncModality](nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality.md), [DxgkDdiIsSupportedVidPn](nc-d3dkmddi-dxgkddi_issupportedvidpn.md), or [DxgkDdiRecommendFunctionalVidPn](nc-d3dkmddi-dxgkddi_recommendfunctionalvidpn.md).
 
-### -param VidPnInterfaceVersion
+### -param VidPnInterfaceVersion [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_vidpn_interface_version">DXGK_VIDPN_INTERFACE_VERSION</a> enumerator that specifies the version of the VidPN interface being requested. Callers must set this parameter to <b>DXGK_VIDPN_INTERFACE_VERSION_V1</b>.
+A [DXGK_VIDPN_INTERFACE_VERSION](ne-d3dkmddi-_dxgk_vidpn_interface_version.md) enumerator that specifies the version of the VidPN interface being requested. Callers must set this parameter to **DXGK_VIDPN_INTERFACE_VERSION_V1**.
 
-### -param ppVidPnInterface
+### -param ppVidPnInterface [out]
 
-[out] A pointer to a variable that receives a pointer to the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpn_interface">DXGK_VIDPN_INTERFACE</a> structure.
+A pointer to a variable that receives a pointer to the [DXGK_VIDPN_INTERFACE](ns-d3dkmddi-_dxgk_vidpn_interface.md) structure.
 
 ## -returns
 
-<b>DxgkCbQueryVidPnInterface </b>returns one of the following values:
+**DxgkCbQueryVidPnInterface** returns one of the following values:
 
 |Return code|Description|
 |--- |--- |
@@ -75,22 +71,20 @@ The <b>DxgkCbQueryVidPnInterface</b> function returns a pointer to a <a href="/w
 |STATUS_GRAPHICS_INVALID_VIDPN|The handle passed to hVidPn is not valid.|
 |STATUS_NOT_SUPPORTED|The interface version specified by VidPnInterfaceVersion is not supported.|
 
+## -remarks
+
+*DXGKCB_XXX* functions are implemented by *Dxgkrnl*. To use this callback function, the kernel-mode driver calls **DxgkCbQueryVidPnInterface** via the [**DXGKRNL_INTERFACE**](../dispmprt/ns-dispmprt-_dxgkrnl_interface.md).
+
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/index">Monitor Source Mode Set Interface</a>
+[VidPN Objects and Interfaces](/windows-hardware/drivers/display/vidpn-objects-and-interfaces)
 
+[Monitor Source Mode Set Interface](ns-d3dkmddi-_dxgk_monitorsourcemodeset_interface.md)
 
+[VidPN Interface](ns-d3dkmddi-_dxgk_vidpn_interface.md)
 
-<a href="/windows-hardware/drivers/ddi/index">VidPN Interface</a>
+[VidPN Source Mode Set Interface](ns-d3dkmddi-_dxgk_vidpnsourcemodeset_interface.md)
 
+[VidPN Target Mode Set Interface](ns-d3dkmddi-_dxgk_vidpntargetmodeset_interface.md)
 
-
-<a href="/windows-hardware/drivers/ddi/index">VidPN Source Mode Set Interface</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/index">VidPN Target Mode Set Interface</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/index">VidPN Topology Interface</a>
+[VidPN Topology Interface](ns-d3dkmddi-_dxgk_vidpntopology_interface.md)

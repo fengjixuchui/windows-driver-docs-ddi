@@ -4,7 +4,6 @@ title: FltCancelFileOpen function (fltkernel.h)
 description: A minifilter driver can use the FltCancelFileOpen routine to close a newly opened or created file.
 old-location: ifsk\fltcancelfileopen.htm
 tech.root: ifsk
-ms.assetid: adc1a1fd-ddbc-4ed5-85e3-4d4e85d710b1
 ms.date: 04/16/2018
 keywords: ["FltCancelFileOpen function"]
 ms.keywords: FltApiRef_a_to_d_6000a551-04a6-47d6-b2d8-816decb93d89.xml, FltCancelFileOpen, FltCancelFileOpen routine [Installable File System Drivers], fltkernel/FltCancelFileOpen, ifsk.fltcancelfileopen
@@ -50,14 +49,14 @@ A minifilter driver can use the <b>FltCancelFileOpen</b> routine to close a newl
 
 ## -parameters
 
-### -param Instance 
+### -param Instance [in]
 
-[in]
+
 Opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>.
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 File object pointer for the file. This parameter is required and cannot be <b>NULL</b>.
 
 ## -returns

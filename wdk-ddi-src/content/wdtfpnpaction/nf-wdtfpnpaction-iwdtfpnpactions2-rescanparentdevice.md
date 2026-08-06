@@ -1,10 +1,9 @@
 ---
 UID: NF:wdtfpnpaction.IWDTFPNPActions2.RescanParentDevice
 title: IWDTFPNPActions2::RescanParentDevice (wdtfpnpaction.h)
-description: Rescans and re-enumerates the target device's parent device.
+description: Learn how the method rescans and re-enumerates the target device's parent device.
 old-location: dtf\iwdtfpnpactions2_rescanparentdevice.htm
 tech.root: dtf
-ms.assetid: 10365869-3512-41cc-95eb-7b8658bffd9b
 ms.date: 04/04/2018
 keywords: ["IWDTFPNPActions2::RescanParentDevice"]
 ms.keywords: IWDTFPNPActions2 interface [Windows Device Testing Framework],RescanParentDevice method, IWDTFPNPActions2.RescanParentDevice, IWDTFPNPActions2::RescanParentDevice, RescanParentDevice, RescanParentDevice method [Windows Device Testing Framework], RescanParentDevice method [Windows Device Testing Framework],IWDTFPNPActions2 interface, dtf.iwdtfpnpactions2_rescanparentdevice, wdtfpnpaction/IWDTFPNPActions2::RescanParentDevice
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdtfpnpaction.h
 api_name:
- - IWDTFPNPActions2.RescanParentDevice
+ - IWDTFPNPActions2::RescanParentDevice
 ---
 
 # IWDTFPNPActions2::RescanParentDevice
@@ -50,9 +49,9 @@ Rescans and re-enumerates the target device's parent device.
 
 ## -parameters
 
-### -param pbSuccess 
+### -param pbSuccess [out, retval]
 
-[out, retval]
+
 True if the operation succeeds; otherwise, false.
 
 ## -returns
@@ -65,6 +64,3 @@ In essence, <b>RescanParentDevice</b> calls
 <b>CM_Reenumerate_DevNode()</b>. See the MSDN documentation for 
 <b>CM_Reenumerate_DevNode()</b>.
 
-## -see-also
-
-<a href="/windows-hardware/drivers/ddi/index">IWDTFPNPActions2</a>

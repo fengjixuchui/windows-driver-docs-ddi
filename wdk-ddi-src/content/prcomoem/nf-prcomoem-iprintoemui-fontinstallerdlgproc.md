@@ -4,7 +4,6 @@ title: IPrintOemUI::FontInstallerDlgProc (prcomoem.h)
 description: A user interface plug-in's IPrintOemUI::FontInstallerDlgProc method replaces the Unidrv font installer's user interface.
 old-location: print\iprintoemui_fontinstallerdlgproc.htm
 tech.root: print
-ms.assetid: 6f63d48d-7c2f-4531-b6db-fd4fdcfbce27
 ms.date: 04/20/2018
 keywords: ["IPrintOemUI::FontInstallerDlgProc"]
 ms.keywords: FontInstallerDlgProc, FontInstallerDlgProc method [Print Devices], FontInstallerDlgProc method [Print Devices],IPrintOemUI interface, IPrintOemUI interface [Print Devices],FontInstallerDlgProc method, IPrintOemUI.FontInstallerDlgProc, IPrintOemUI::FontInstallerDlgProc, prcomoem/IPrintOemUI::FontInstallerDlgProc, print.iprintoemui_fontinstallerdlgproc, print_unidrv-pscript_ui_f5a028b9-eb7b-4d07-81e8-d7aadc5b8ceb.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemUI.FontInstallerDlgProc
+ - IPrintOemUI::FontInstallerDlgProc
 ---
 
 # IPrintOemUI::FontInstallerDlgProc
@@ -125,3 +124,4 @@ If the message received for <i>usMsg</i> is WM_INIT or WM_USER+WM_FI_NAME, <i>lP
 
 
 <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemui-updateexternalfonts">IPrintOemUI::UpdateExternalFonts</a>
+

@@ -4,7 +4,6 @@ title: PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK (wdm.h)
 description: The ClfsLogGrowthCompleteCallback function implements the actions that the client will take when space is freed in a log that had previously been full.
 old-location: kernel\clfsloggrowthcompletecallback.htm
 tech.root: kernel
-ms.assetid: f8ebeaa9-e487-461b-8d95-50094bcc2bf5
 ms.date: 04/30/2018
 keywords: ["PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK callback function"]
 ms.keywords: ClfsLogGrowthCompleteCallback, ClfsLogGrowthCompleteCallback callback function [Kernel-Mode Driver Architecture], Clfs_management_656d5a55-7a42-48c3-a788-d1eec6b5e11e.xml, PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK, PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK callback, kernel.clfsloggrowthcompletecallback, wdm/ClfsLogGrowthCompleteCallback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - ClfsLogGrowthCompleteCallback
+ - PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK
 ---
 
 # PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK callback function
@@ -50,24 +49,24 @@ The <i>ClfsLogGrowthCompleteCallback</i> function implements the actions that th
 
 ## -parameters
 
-### -param LogFile 
+### -param LogFile [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">LOG_FILE_OBJECT</a> structure that represents the CLFS log stream whose log has finished growing.
 
-### -param OperationStatus 
+### -param OperationStatus [in]
 
-[in]
+
 The status of the client's earlier request to handle a log file full condition. This will be either STATUS_SUCCESS or an error status that indicates the reason that the request could not be completed successfully.
 
-### -param LogIsPinned 
+### -param LogIsPinned [in]
 
-[in]
+
 If <b>TRUE</b>, specifies that the log tail is currently pinned;  <b>FALSE</b> if the log tail is not pinned.
 
-### -param ClientData 
+### -param ClientData [in]
 
-[in]
+
 A pointer to client-supplied information.
 
 ## -remarks
@@ -97,3 +96,4 @@ When a client uses the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsmgm
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsmgmtregistermanagedclient">ClfsMgmtRegisterManagedClient</a>
+

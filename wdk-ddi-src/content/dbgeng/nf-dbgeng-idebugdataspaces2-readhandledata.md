@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugDataSpaces2.ReadHandleData
 title: IDebugDataSpaces2::ReadHandleData (dbgeng.h)
-description: The ReadHandleData method retrieves information about a system object specified by a system handle.
+description: Learn how the ReadHandleData method retrieves information about a system object specified by a system handle.
 old-location: debugger\readhandledata.htm
 tech.root: debugger
-ms.assetid: 9ad8e8c1-6aee-4eac-93e6-5997212c63d0
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces2::ReadHandleData"]
 ms.keywords: IDebugDataSpaces2 interface [Windows Debugging],ReadHandleData method, IDebugDataSpaces2.ReadHandleData, IDebugDataSpaces2::ReadHandleData, IDebugDataSpaces3 interface [Windows Debugging],ReadHandleData method, IDebugDataSpaces3::ReadHandleData, IDebugDataSpaces4 interface [Windows Debugging],ReadHandleData method, IDebugDataSpaces4::ReadHandleData, IDebugDataSpaces_cbad043a-7b6e-4c5c-8a14-9a7b20a0b125.xml, ReadHandleData, ReadHandleData method [Windows Debugging], ReadHandleData method [Windows Debugging],IDebugDataSpaces2 interface, ReadHandleData method [Windows Debugging],IDebugDataSpaces3 interface, ReadHandleData method [Windows Debugging],IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces2::ReadHandleData, dbgeng/IDebugDataSpaces3::ReadHandleData, dbgeng/IDebugDataSpaces4::ReadHandleData, debugger.readhandledata
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugDataSpaces2.ReadHandleData
- - IDebugDataSpaces3.ReadHandleData
- - IDebugDataSpaces4.ReadHandleData
+ - IDebugDataSpaces2::ReadHandleData
 ---
 
 # IDebugDataSpaces2::ReadHandleData
@@ -52,14 +49,14 @@ The <b>ReadHandleData</b> method retrieves information about a system object spe
 
 ## -parameters
 
-### -param Handle 
+### -param Handle [in]
 
-[in]
+
 Specifies the system handle of the object whose data is requested.  See Handles for information about system handles.
 
-### -param DataType 
+### -param DataType [in]
 
-[in]
+
 Specifies the data type to return for the system handle.  The following table contains the valid values, along with the corresponding return type:
 
 <table>
@@ -141,21 +138,21 @@ In this case, the argument <i>Buffer</i> can be considered to have type PWSTR.
 </tr>
 </table>
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Receives the object data.  Upon successful completion of the method, the contents of this buffer may be accessed by casting <i>Buffer</i> to the type specified in the above table.
 
 If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size in bytes of the buffer <i>Buffer</i>.  This is the maximum number of bytes that will be returned.
 
-### -param DataSize 
+### -param DataSize [out, optional]
 
-[out, optional]
+
 Receives the size of the data in bytes.  If <i>DataSize</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -200,3 +197,4 @@ Handles
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugdataspaces4">IDebugDataSpaces4</a>
+

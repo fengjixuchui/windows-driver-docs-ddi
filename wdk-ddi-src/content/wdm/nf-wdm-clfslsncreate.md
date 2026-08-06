@@ -4,7 +4,6 @@ title: ClfsLsnCreate function (wdm.h)
 description: The ClfsLsnCreate routine creates a log sequence number (LSN), given a container identifier, a block offset, and a record sequence number.
 old-location: kernel\clfslsncreate.htm
 tech.root: kernel
-ms.assetid: 2b183911-0c4d-4b67-834d-e876d22c99af
 ms.date: 04/30/2018
 keywords: ["ClfsLsnCreate function"]
 ms.keywords: ClfsLsnCreate, ClfsLsnCreate routine [Kernel-Mode Driver Architecture], Clfs_5eea5630-3db0-45bb-8e16-c9e69081f972.xml, kernel.clfslsncreate, wdm/ClfsLsnCreate
@@ -51,19 +50,19 @@ The <b>ClfsLsnCreate</b> routine creates a log sequence number (LSN), given a co
 
 ## -parameters
 
-### -param cidContainer 
+### -param cidContainer [in]
 
-[in]
+
 An integer in the range 0x0 through 0xFFFFFFFF that supplies the container identifier.
 
-### -param offBlock 
+### -param offBlock [in]
 
-[in]
+
 The block offset. This parameter must be a multiple of 512.
 
-### -param cRecord 
+### -param cRecord [in]
 
-[in]
+
 An integer in the range 0 - 511 that supplies the record sequence number.
 
 ## -returns

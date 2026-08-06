@@ -3,7 +3,6 @@ UID: NE:wwan._WWAN_CONTEXT_LTE_ATTACH_STATE
 title: _WWAN_CONTEXT_LTE_ATTACH_STATE (wwan.h)
 description: The WWAN_CONTEXT_LTE_ATTACH_STATE enumeration indicates whether a mobile broadband (MBB) device is currently attached to an LTE network or not.
 tech.root: netvista
-ms.assetid: 175870ff-079c-4111-97e5-30b2cea7b43e
 ms.date: 08/23/2018
 keywords: ["WWAN_CONTEXT_LTE_ATTACH_STATE enumeration"]
 ms.keywords: _WWAN_CONTEXT_LTE_ATTACH_STATE, WWAN_CONTEXT_LTE_ATTACH_STATE, *PWWAN_CONTEXT_LTE_ATTACH_STATE,
@@ -34,8 +33,8 @@ api_location:
  - wwan.h
 api_name:
  - _WWAN_CONTEXT_LTE_ATTACH_STATE
-product:
- - Windows
+ - PWWAN_CONTEXT_LTE_ATTACH_STATE
+ - WWAN_CONTEXT_LTE_ATTACH_STATE
 ---
 
 # _WWAN_CONTEXT_LTE_ATTACH_STATE enumeration
@@ -68,3 +67,4 @@ This enumeration is used in the [**WWAN_LTE_ATTACH_STATUS**](ns-wwan-_wwan_lte_a
 [MB LTE Attach Operations](/windows-hardware/drivers/network/mb-lte-attach-operations)
 
 [**WWAN_LTE_ATTACH_STATUS**](ns-wwan-_wwan_lte_attach_status.md)
+

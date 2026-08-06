@@ -4,7 +4,6 @@ title: KsFilterReleaseControl function (ks.h)
 description: The KsFilterReleaseControl function releases the control mutex for the AVStream filter specified by Filter.
 old-location: stream\ksfilterreleasecontrol.htm
 tech.root: stream
-ms.assetid: 4f868e88-ef5c-4fad-be53-2b5116a6385b
 ms.date: 04/23/2018
 keywords: ["KsFilterReleaseControl function"]
 ms.keywords: KsFilterReleaseControl, KsFilterReleaseControl function [Streaming Media Devices], avfunc_ca99338c-1cae-4ef4-8ef5-76ee368ae1d6.xml, ks/KsFilterReleaseControl, stream.ksfilterreleasecontrol
@@ -50,9 +49,9 @@ The<b> KsFilterReleaseControl </b>function releases the control mutex for the AV
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter">KSFILTER</a> structure representing the AVStream filter for which to release the control mutex.
 
 ## -remarks

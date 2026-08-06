@@ -4,7 +4,6 @@ title: HidP_GetSpecificButtonCaps function (hidpi.h)
 description: The HidP_GetSpecificButtonCaps routine returns a button capability array that describes all HID control buttons in a top-level collection that meet a specified selection criteria.
 old-location: hid\hidp_getspecificbuttoncaps.htm
 tech.root: hid
-ms.assetid: 923693a2-cb46-4f74-bb1b-cd7bb07014e8
 ms.date: 04/30/2018
 keywords: ["HidP_GetSpecificButtonCaps function"]
 ms.keywords: HidP_GetSpecificButtonCaps, HidP_GetSpecificButtonCaps routine [Human Input Devices], hid.hidp_getspecificbuttoncaps, hidfunc_dd31da1d-fb42-4ac9-a15e-4c6585785c20.xml, hidpi/HidP_GetSpecificButtonCaps
@@ -51,39 +50,39 @@ The <b>HidP_GetSpecificButtonCaps</b> routine returns a <a href="/windows-hardwa
 
 ## -parameters
 
-### -param ReportType 
+### -param ReportType [in]
 
-[in]
+
 Specifies a <a href="/windows-hardware/drivers/ddi/hidpi/ne-hidpi-_hidp_report_type">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.
 
-### -param UsagePage 
+### -param UsagePage [in]
 
-[in]
+
 Specifies a usage page as a search criteria. If <i>UsagePage</i> is nonzero, only buttons that specify this usage page are returned.
 
-### -param LinkCollection 
+### -param LinkCollection [in]
 
-[in]
+
 Specifies a <a href="/windows-hardware/drivers/hid/link-collections">link collection</a> as a search criteria. If <i>LinkCollection</i> is nonzero, only buttons that are part of this link collection are returned.
 
-### -param Usage 
+### -param Usage [in]
 
-[in]
+
 Specifies a <a href="/windows-hardware/drivers/hid/hid-usages">HID usage</a> as a search criteria. If <i>Usage</i> is nonzero, only buttons that specify this usage will be returned.
 
-### -param ButtonCaps 
+### -param ButtonCaps [out]
 
-[out]
+
 Pointer to a caller-allocated buffer in which the routine returns a button capability array for the specified report type.
 
-### -param ButtonCapsLength 
+### -param ButtonCapsLength [in, out]
 
-[in, out]
+
 Specifies the length on input, in array elements, of the buffer provided at <i>ButtonCaps</i>. On output, this parameter is set to the number of elements that the routine actually returned.
 
-### -param PreparsedData 
+### -param PreparsedData [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/hid/top-level-collections">top-level collection's</a> <a href="/windows-hardware/drivers/hid/preparsed-data">preparsed data</a>.
 
 ## -returns

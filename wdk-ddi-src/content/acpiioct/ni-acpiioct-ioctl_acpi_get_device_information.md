@@ -4,7 +4,6 @@ title: IOCTL_ACPI_GET_DEVICE_INFORMATION (acpiioct.h)
 description: A driver for a device can use the IOCTL_ACPI_GET_DEVICE_INFORMATION device control request to obtain fine-grained identification information about its device.
 old-location: acpi\ioctl_acpi_get_device_information.htm
 tech.root: acpi
-ms.assetid: 08C27EC1-0948-4E8F-A391-01FE2C1A34DB
 ms.date: 02/15/2018
 keywords: ["IOCTL_ACPI_GET_DEVICE_INFORMATION IOCTL"]
 ms.keywords: IOCTL_ACPI_GET_DEVICE_INFORMATION, IOCTL_ACPI_GET_DEVICE_INFORMATION control, IOCTL_ACPI_GET_DEVICE_INFORMATION control code [ACPI Devices], acpi.ioctl_acpi_get_device_information, acpiioct/IOCTL_ACPI_GET_DEVICE_INFORMATION
@@ -49,6 +48,8 @@ api_name:
 A driver for a device can use the IOCTL_ACPI_GET_DEVICE_INFORMATION device control request to obtain fine-grained identification information about its device. This IOCTL is typically used by drivers that support multiple versions or revisions of a device, and need to examine the component parts that make up the device's HW ID string to identify the exact device. The driver should call <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iobuilddeviceiocontrolrequest">IoBuildDeviceIoControlRequest</a> and pass the following input and output parameters to build this request.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

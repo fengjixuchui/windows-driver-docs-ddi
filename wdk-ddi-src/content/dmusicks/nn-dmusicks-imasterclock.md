@@ -4,7 +4,6 @@ title: IMasterClock (dmusicks.h)
 description: The IMasterClock interface provides Microsoft DirectMusic streams with access to the current reference time from the master clock.
 old-location: audio\imasterclock.htm
 tech.root: audio
-ms.assetid: 754aad8a-834c-4197-8505-dbf1cd74c697
 ms.date: 05/08/2018
 keywords: ["IMasterClock interface"]
 ms.keywords: IMasterClock, IMasterClock interface [Audio Devices], IMasterClock interface [Audio Devices],described, audio.imasterclock, audmp-routines_b8172e0e-55ac-4abd-8b62-39be5d708f9b.xml, dmusicks/IMasterClock
@@ -50,7 +49,5 @@ The <code>IMasterClock</code> interface provides Microsoft DirectMusic streams w
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMasterClock</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IMasterClock</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IMasterClock</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IMasterClock</b> also has these types of members:
+

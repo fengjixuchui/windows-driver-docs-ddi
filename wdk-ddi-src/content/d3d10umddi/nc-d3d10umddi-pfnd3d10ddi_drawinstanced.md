@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_DRAWINSTANCED
 title: PFND3D10DDI_DRAWINSTANCED (d3d10umddi.h)
 description: The DrawInstanced function draws particular instances of nonindexed primitives.
 old-location: display\drawinstanced.htm
-ms.assetid: c539cf8b-e056-476a-9b23-7e360917a7d9
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_DRAWINSTANCED callback function"]
 ms.keywords: DrawInstanced, DrawInstanced callback function [Display Devices], PFND3D10DDI_DRAWINSTANCED, PFND3D10DDI_DRAWINSTANCED callback, UserModeDisplayDriverDx10_Functions_15fe8a07-36ca-4ab1-8570-01250eed4866.xml, d3d10umddi/DrawInstanced, display.drawinstanced
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - DrawInstanced
+ - PFND3D10DDI_DRAWINSTANCED
 ---
 
 # PFND3D10DDI_DRAWINSTANCED callback function
@@ -50,31 +49,31 @@ The <b>DrawInstanced</b> function draws particular instances of nonindexed primi
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *VertexCountPerInstance* [in]
 
 The number of vertices per instance of the buffer that vertices are read from to draw the primitives.
 
-### -param Arg3
+### -param unnamedParam3
 
 *InstanceCount* [in]
 
 The number of instances of the buffer that vertices are read from to draw the primitives.
 
-### -param Arg4
+### -param unnamedParam4
 
 *StartVertexLocation* [in]
 
 The first vertex in the buffer that vertices are read from to draw the primitives.
 
-### -param Arg5
+### -param unnamedParam5
 
 *StartInstanceLocation* [in]
 
@@ -95,3 +94,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

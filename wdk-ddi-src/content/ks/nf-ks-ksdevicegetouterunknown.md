@@ -4,7 +4,6 @@ title: KsDeviceGetOuterUnknown function (ks.h)
 description: The KsDeviceGetOuterUnknown function returns the outer IUnknown of the AVStream device specified by Device.
 old-location: stream\ksdevicegetouterunknown.htm
 tech.root: stream
-ms.assetid: a63cdc50-6bbb-4bff-8536-0bf31fed01de
 ms.date: 04/23/2018
 keywords: ["KsDeviceGetOuterUnknown function"]
 ms.keywords: KsDeviceGetOuterUnknown, KsDeviceGetOuterUnknown function [Streaming Media Devices], avfunc_c1b85ab7-92b9-4c7c-a9c8-0cf1f9e93458.xml, ks/KsDeviceGetOuterUnknown, stream.ksdevicegetouterunknown
@@ -50,9 +49,9 @@ The<b> KsDeviceGetOuterUnknown</b> function returns the outer <b>IUnknown</b> of
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice">KSDEVICE</a> structure for which to get the outer unknown interface.
 
 ## -returns

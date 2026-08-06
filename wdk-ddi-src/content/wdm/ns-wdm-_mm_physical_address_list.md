@@ -4,7 +4,6 @@ title: _MM_PHYSICAL_ADDRESS_LIST (wdm.h)
 description: The MM_PHYSICAL_ADDRESS_LIST structure specifies a range of physical addresses.
 old-location: kernel\mm_physical_address_list.htm
 tech.root: kernel
-ms.assetid: D653607A-7C37-408D-AD19-B4A8988CDACE
 ms.date: 04/30/2018
 keywords: ["MM_PHYSICAL_ADDRESS_LIST structure"]
 ms.keywords: "*PMM_PHYSICAL_ADDRESS_LIST, MM_PHYSICAL_ADDRESS_LIST, MM_PHYSICAL_ADDRESS_LIST structure [Kernel-Mode Driver Architecture], PMM_PHYSICAL_ADDRESS_LIST, PMM_PHYSICAL_ADDRESS_LIST structure pointer [Kernel-Mode Driver Architecture], _MM_PHYSICAL_ADDRESS_LIST, kernel.mm_physical_address_list, wdm/MM_PHYSICAL_ADDRESS_LIST, wdm/PMM_PHYSICAL_ADDRESS_LIST"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _MM_PHYSICAL_ADDRESS_LIST
+ - PMM_PHYSICAL_ADDRESS_LIST
  - MM_PHYSICAL_ADDRESS_LIST
 ---
 
@@ -69,3 +70,4 @@ The first parameter to the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-mma
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatemdlforiospace">MmAllocateMdlForIoSpace</a>
+

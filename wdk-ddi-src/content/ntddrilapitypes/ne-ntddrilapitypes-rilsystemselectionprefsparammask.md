@@ -1,10 +1,9 @@
 ---
 UID: NE:ntddrilapitypes.RILSYSTEMSELECTIONPREFSPARAMMASK
 title: RILSYSTEMSELECTIONPREFSPARAMMASK (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this enumeration for internal use only. Don't use the RILSYSTEMSELECTIONPREFSPARAMMASK enumeration in your code."
 old-location: netvista\rilsystemselectionprefsparammask.htm
 tech.root: netvista
-ms.assetid: 69560c05-8a54-4a67-a441-2b3c2ec4c332
 ms.date: 05/02/2018
 keywords: ["RILSYSTEMSELECTIONPREFSPARAMMASK enumeration"]
 ms.keywords: RILSYSTEMSELECTIONPREFSPARAMMASK, RILSYSTEMSELECTIONPREFSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_SSP_ACQUISITIONORDER, RIL_PARAM_SSP_ACQUISITIONORDERSIZE, RIL_PARAM_SSP_ALL, RIL_PARAM_SSP_MODE, RIL_PARAM_SSP_PLMNINFO, RIL_PARAM_SSP_ROAMINGMODE, RIL_PARAM_SSP_SYSTEMTYPES, netvista.rilsystemselectionprefsparammask, ntddrilapitypes/RILSYSTEMSELECTIONPREFSPARAMMASK, ntddrilapitypes/RIL_PARAM_SSP_ACQUISITIONORDER, ntddrilapitypes/RIL_PARAM_SSP_ACQUISITIONORDERSIZE, ntddrilapitypes/RIL_PARAM_SSP_ALL, ntddrilapitypes/RIL_PARAM_SSP_MODE, ntddrilapitypes/RIL_PARAM_SSP_PLMNINFO, ntddrilapitypes/RIL_PARAM_SSP_ROAMINGMODE, ntddrilapitypes/RIL_PARAM_SSP_SYSTEMTYPES

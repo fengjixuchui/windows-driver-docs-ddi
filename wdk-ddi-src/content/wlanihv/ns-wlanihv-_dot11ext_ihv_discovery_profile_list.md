@@ -1,10 +1,9 @@
 ---
 UID: NS:wlanihv._DOT11EXT_IHV_DISCOVERY_PROFILE_LIST
 title: _DOT11EXT_IHV_DISCOVERY_PROFILE_LIST (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_IHV_DISCOVERY_PROFILE_LIST structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11ext_ihv_discovery_profile_list.htm
 tech.root: netvista
-ms.assetid: 8fa104bd-b594-4909-bb49-0c9d013b1696
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_IHV_DISCOVERY_PROFILE_LIST structure"]
 ms.keywords: "*PDOT11EXT_IHV_DISCOVERY_PROFILE_LIST, DOT11EXT_IHV_DISCOVERY_PROFILE_LIST, DOT11EXT_IHV_DISCOVERY_PROFILE_LIST structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_824a6794-5502-459a-9a47-409d51a6871a.xml, PDOT11EXT_IHV_DISCOVERY_PROFILE_LIST, PDOT11EXT_IHV_DISCOVERY_PROFILE_LIST structure pointer [Network Drivers Starting with Windows Vista], _DOT11EXT_IHV_DISCOVERY_PROFILE_LIST, netvista.dot11ext_ihv_discovery_profile_list, wlanihv/DOT11EXT_IHV_DISCOVERY_PROFILE_LIST, wlanihv/PDOT11EXT_IHV_DISCOVERY_PROFILE_LIST"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DOT11EXT_IHV_DISCOVERY_PROFILE_LIST, *PDOT11EXT_IHV_DISCOVERY_PROFILE_LIST
-req.product: Windows 10 or later.
 f1_keywords:
  - _DOT11EXT_IHV_DISCOVERY_PROFILE_LIST
  - wlanihv/_DOT11EXT_IHV_DISCOVERY_PROFILE_LIST
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
+ - _DOT11EXT_IHV_DISCOVERY_PROFILE_LIST
+ - PDOT11EXT_IHV_DISCOVERY_PROFILE_LIST
  - DOT11EXT_IHV_DISCOVERY_PROFILE_LIST
 ---
 
@@ -80,3 +80,4 @@ typedef struct _DOT11EXT_IHV_DISCOVERY_PROFILE_LIST {
 
 <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_discovery_profile.md">
    DOT11EXT_IHV_DISCOVERY_PROFILE</a>
+

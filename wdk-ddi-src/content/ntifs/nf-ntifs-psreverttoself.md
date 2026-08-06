@@ -4,14 +4,13 @@ title: PsRevertToSelf function (ntifs.h)
 description: The PsRevertToSelf routine ends the calling thread's impersonation of a client.
 old-location: ifsk\psreverttoself.htm
 tech.root: ifsk
-ms.assetid: 21ae3a61-55c6-437d-8c1e-84d720de9dd5
 ms.date: 04/16/2018
 keywords: ["PsRevertToSelf function"]
 ms.keywords: PsRevertToSelf, PsRevertToSelf routine [Installable File System Drivers], ifsk.psreverttoself, ntifs/PsRevertToSelf, psref_da555465-d8ee-4ae6-af44-cf0af7633458.xml
 req.header: ntifs.h
 req.include-header: Ntifs.h, FltKernel.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 

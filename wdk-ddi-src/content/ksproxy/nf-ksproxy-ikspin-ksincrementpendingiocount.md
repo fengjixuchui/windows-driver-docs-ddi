@@ -4,7 +4,6 @@ title: IKsPin::KsIncrementPendingIoCount (ksproxy.h)
 description: The KsIncrementPendingIoCount method increments the number of input/output (I/O) operations that are in progress on a pin.
 old-location: stream\ikspin_ksincrementpendingiocount.htm
 tech.root: stream
-ms.assetid: e79ae2ac-6636-491d-8c98-70a5ff3a23ef
 ms.date: 04/23/2018
 keywords: ["IKsPin::KsIncrementPendingIoCount"]
 ms.keywords: IKsPin interface [Streaming Media Devices],KsIncrementPendingIoCount method, IKsPin.KsIncrementPendingIoCount, IKsPin::KsIncrementPendingIoCount, KsIncrementPendingIoCount, KsIncrementPendingIoCount method [Streaming Media Devices], KsIncrementPendingIoCount method [Streaming Media Devices],IKsPin interface, ksproxy/IKsPin::KsIncrementPendingIoCount, ksproxy_c654f701-d58e-4953-ad55-76d98096b7f0.xml, stream.ikspin_ksincrementpendingiocount
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ksproxy.h
 api_name:
- - IKsPin.KsIncrementPendingIoCount
+ - IKsPin::KsIncrementPendingIoCount
 ---
 
 # IKsPin::KsIncrementPendingIoCount
@@ -94,3 +93,4 @@ The client calls the <a href="/windows-hardware/drivers/ddi/ksproxy/nf-ksproxy-i
 
 
 <a href="/windows-hardware/drivers/ddi/ksproxy/nf-ksproxy-ikspin-ksdecrementpendingiocount">IKsPin::KsDecrementPendingIoCount</a>
+

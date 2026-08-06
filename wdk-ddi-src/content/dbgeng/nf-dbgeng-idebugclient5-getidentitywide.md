@@ -4,7 +4,6 @@ title: IDebugClient5::GetIdentityWide (dbgeng.h)
 description: The GetIdentityWide method returns a string describing the computer and user this client represents.
 old-location: debugger\getidentitywide.htm
 tech.root: debugger
-ms.assetid: 8e55f829-2f55-4b83-8e0d-2554246a5d59
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::GetIdentityWide"]
 ms.keywords: GetIdentityWide, GetIdentityWide method [Windows Debugging], GetIdentityWide method [Windows Debugging],IDebugClient5 interface, IDebugClient5 interface [Windows Debugging],GetIdentityWide method, IDebugClient5.GetIdentityWide, IDebugClient5::GetIdentityWide, dbgeng/IDebugClient5::GetIdentityWide, debugger.getidentitywide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient5.GetIdentityWide
+ - IDebugClient5::GetIdentityWide
 ---
 
 # IDebugClient5::GetIdentityWide
@@ -50,19 +49,19 @@ The <b>GetIdentityWide</b> method returns a string describing the computer and u
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Specifies the buffer to receive the string.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size of the buffer <i>Buffer</i>.
 
-### -param IdentitySize 
+### -param IdentitySize [out, optional]
 
-[out, optional]
+
 Receives the size of the string. If <i>IdentitySize</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -111,3 +110,4 @@ For more information about client objects, see <a href="/windows-hardware/driver
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-outputidentity">OutputIdentity</a>
+

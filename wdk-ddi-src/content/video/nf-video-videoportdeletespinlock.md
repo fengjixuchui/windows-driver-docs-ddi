@@ -4,7 +4,6 @@ title: VideoPortDeleteSpinLock function (video.h)
 description: The VideoPortDeleteSpinLock function deletes a given spin lock.
 old-location: display\videoportdeletespinlock.htm
 tech.root: display
-ms.assetid: 74845e4d-0fa1-4625-96a7-2fddec8b901d
 ms.date: 05/10/2018
 keywords: ["VideoPortDeleteSpinLock function"]
 ms.keywords: VideoPortDeleteSpinLock, VideoPortDeleteSpinLock function [Display Devices], VideoPort_Functions_d98d74d6-bf9c-441b-95e3-a3455927dd45.xml, display.videoportdeletespinlock, video/VideoPortDeleteSpinLock
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Videoprt.lib
 req.dll: Videoprt.sys
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ The <b>VideoPortDeleteSpinLock</b> function deletes a given spin lock.
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's device extension.
 
-### -param SpinLock 
+### -param SpinLock [in]
 
-[in]
+
 Pointer to the spin lock to delete.
 
 ## -returns

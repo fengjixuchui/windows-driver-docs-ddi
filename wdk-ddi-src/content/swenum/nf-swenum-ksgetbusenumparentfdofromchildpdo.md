@@ -4,7 +4,6 @@ title: KsGetBusEnumParentFDOFromChildPDO function (swenum.h)
 description: The KsGetBusEnumParentFDOFromChildPDO function retrieves the FDO of the parent of the given child PDO.
 old-location: stream\ksgetbusenumparentfdofromchildpdo.htm
 tech.root: stream
-ms.assetid: 5d860c5c-e29e-4ea2-b6f7-bcaab0d4584d
 ms.date: 04/23/2018
 keywords: ["KsGetBusEnumParentFDOFromChildPDO function"]
 ms.keywords: KsGetBusEnumParentFDOFromChildPDO, KsGetBusEnumParentFDOFromChildPDO function [Streaming Media Devices], ksfunc_592bfe23-7135-4118-9acf-6783691c55ea.xml, stream.ksgetbusenumparentfdofromchildpdo, swenum/KsGetBusEnumParentFDOFromChildPDO
@@ -53,14 +52,14 @@ The <b>KsGetBusEnumParentFDOFromChildPDO </b>function retrieves the FDO of the p
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the child's PDO.
 
-### -param FunctionalDeviceObject 
+### -param FunctionalDeviceObject [out]
 
-[out]
+
 Pointer to the device object to receive the parent's FDO.
 
 ## -returns

@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMSTEREOFORMAT
 title: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMSTEREOFORMAT (d3d10umddi.h)
 description: Enables or disables stereo 3D video for an input stream on the video processor. In addition, this function specifies the layout of the video frames in memory.
 old-location: display\videoprocessorsetstreamstereoformat.htm
-ms.assetid: bc79f431-d23e-4440-a8c5-50c29c48444e
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMSTEREOFORMAT callback function"]
 ms.keywords: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMSTEREOFORMAT, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMSTEREOFORMAT callback, d3d10umddi/pfnVideoProcessorSetStreamStereoFormat, display.videoprocessorsetstreamstereoformat, pfnVideoProcessorSetStreamStereoFormat, pfnVideoProcessorSetStreamStereoFormat callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoProcessorSetStreamStereoFormat
+ - PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMSTEREOFORMAT
 ---
 
 # PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMSTEREOFORMAT callback function
@@ -50,25 +49,25 @@ Enables or disables stereo 3D video for an input stream on the video processor. 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hVideoProcessor* [in]
 
 A handle to the video processor object that was created through a call to the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a> function.
 
-### -param Arg3
+### -param unnamedParam3
 
 *StreamIndex* [in]
 
 The zero-based index of the input stream.
 
-### -param Arg4
+### -param unnamedParam4
 
 *Enable* [in]
 
@@ -80,13 +79,13 @@ If <b>FALSE</b>, stereo 3D is disabled for the input stream.
 
 The driver must ignore the remaining parameters for this function.
 
-### -param Arg5
+### -param unnamedParam5
 
 *StereoFormat* [in]
 
 Specifies the layout of the two stereo views in memory, as a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d11_1ddi_video_processor_stereo_format">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FORMAT</a> value.
 
-### -param Arg6
+### -param unnamedParam6
 
 *LeftViewFrame0* [in]
 
@@ -108,7 +107,7 @@ This parameter is ignored for the following <a href="/windows-hardware/drivers/d
 </li>
 </ul>
 
-### -param Arg7
+### -param unnamedParam7
 
 *BaseViewFrame0* [in]
 
@@ -131,13 +130,13 @@ This parameter is ignored for the following <a href="/windows-hardware/drivers/d
 </li>
 </ul>
 
-### -param Arg8
+### -param unnamedParam8
 
 *FlipMode* [in]
 
 A <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d11_1ddi_video_processor_stereo_flip_mode">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_FLIP_MODE</a> enumeration value that specifies whether one of the views is flipped.
 
-### -param Arg9
+### -param unnamedParam9
 
 *MonoOffset* [in]
 
@@ -195,3 +194,4 @@ Specifies a single resource for the mono input data of the base view.
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorblt">VideoProcessorBlt</a>
+

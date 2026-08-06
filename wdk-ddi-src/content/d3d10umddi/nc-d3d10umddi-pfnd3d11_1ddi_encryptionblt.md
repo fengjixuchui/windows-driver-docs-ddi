@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_ENCRYPTIONBLT
 title: PFND3D11_1DDI_ENCRYPTIONBLT (d3d10umddi.h)
 description: Reads encrypted data from a protected surface.
 old-location: display\encryptionblt1.htm
-ms.assetid: ea6f1b8c-d65a-4d6d-a7ae-998374bf5bfb
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_ENCRYPTIONBLT callback function"]
 ms.keywords: EncryptionBlt, EncryptionBlt callback function [Display Devices], PFND3D11_1DDI_ENCRYPTIONBLT, PFND3D11_1DDI_ENCRYPTIONBLT callback, d3d10umddi/EncryptionBlt, display.encryptionblt1, display.pfnencryptionblt1
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - EncryptionBlt
-product:
- - Windows
+ - PFND3D11_1DDI_ENCRYPTIONBLT
 ---
 
 # PFND3D11_1DDI_ENCRYPTIONBLT callback function
@@ -137,3 +134,4 @@ For other encryption types, a different structure might be used, or the encrypti
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_aes_ctr_iv">D3D11_1DDI_AES_CTR_IV</a>
+

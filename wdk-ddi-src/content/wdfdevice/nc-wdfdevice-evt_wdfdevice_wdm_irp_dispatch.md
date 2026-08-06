@@ -4,7 +4,6 @@ title: EVT_WDFDEVICE_WDM_IRP_DISPATCH (wdfdevice.h)
 description: A driver's EvtDeviceWdmIrpDispatch event callback function receives an IRP before the framework processes the IRP.
 old-location: wdf\evtdevicewdmirpdispatch.htm
 tech.root: wdf
-ms.assetid: C6BED59F-066E-42F6-86AE-B0423E0E847F
 ms.date: 02/26/2018
 keywords: ["EVT_WDFDEVICE_WDM_IRP_DISPATCH callback function"]
 ms.keywords: EVT_WDFDEVICE_WDM_IRP_DISPATCH, EVT_WDFDEVICE_WDM_IRP_DISPATCH callback, EvtDeviceWdmIrpDispatch, EvtDeviceWdmIrpDispatch callback function, kmdf.evtdevicewdmirpdispatch, wdf.evtdevicewdmirpdispatch, wdfdevice/EvtDeviceWdmIrpDispatch
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfdevice.h
 api_name:
- - EvtDeviceWdmIrpDispatch
+ - EVT_WDFDEVICE_WDM_IRP_DISPATCH
 ---
 
 # EVT_WDFDEVICE_WDM_IRP_DISPATCH callback function
@@ -52,39 +51,39 @@ A driver's <i>EvtDeviceWdmIrpDispatch</i> event callback function receives an IR
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param MajorFunction 
+### -param MajorFunction [in]
 
-[in]
+
 One of the IRP major function codes that are defined in wdm.h.
 
-### -param MinorFunction 
+### -param MinorFunction [in]
 
-[in]
+
 One of the I/O IRP minor function codes that are defined in wdm.h for the <i>MajorFunction</i> code.
 
-### -param Code 
+### -param Code [in]
 
-[in]
+
 Specifies an I/O control code value.  This parameter is valid only if <i>MajorFunction</i> is set to IRP_MJ_DEVICE_CONTROL.
 
-### -param DriverContext 
+### -param DriverContext [in]
 
-[in]
+
 An untyped pointer to driver-defined context information that the driver provided when it called <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceconfigurewdmirpdispatchcallback">WdfDeviceConfigureWdmIrpDispatchCallback</a>.
 
-### -param Irp 
+### -param Irp [in, out]
 
-[in, out]
+
 A pointer to an IRP structure.
 
-### -param DispatchContext 
+### -param DispatchContext [in]
 
-[in]
+
 An untyped pointer to the framework's dispatch  context information. The driver must provide this parameter when it calls <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicewdmdispatchirp">WdfDeviceWdmDispatchIrp</a>.
 
 ## -returns
@@ -127,3 +126,4 @@ In its <i>EvtDeviceWdmIrpDispatch</i> callback function, a driver should not set
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicewdmdispatchirptoioqueue">WdfDeviceWdmDispatchIrpToIoQueue</a>
+

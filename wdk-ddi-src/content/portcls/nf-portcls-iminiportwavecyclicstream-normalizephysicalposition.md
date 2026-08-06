@@ -4,7 +4,6 @@ title: IMiniportWaveCyclicStream::NormalizePhysicalPosition (portcls.h)
 description: The NormalizePhysicalPosition method converts a physical buffer position to a time-based value.
 old-location: audio\iminiportwavecyclicstream_normalizephysicalposition.htm
 tech.root: audio
-ms.assetid: 554cad50-d952-4658-904b-b2a8a8f75b76
 ms.date: 05/08/2018
 keywords: ["IMiniportWaveCyclicStream::NormalizePhysicalPosition"]
 ms.keywords: IMiniportWaveCyclicStream interface [Audio Devices],NormalizePhysicalPosition method, IMiniportWaveCyclicStream.NormalizePhysicalPosition, IMiniportWaveCyclicStream::NormalizePhysicalPosition, NormalizePhysicalPosition, NormalizePhysicalPosition method [Audio Devices], NormalizePhysicalPosition method [Audio Devices],IMiniportWaveCyclicStream interface, audio.iminiportwavecyclicstream_normalizephysicalposition, audmp-routines_a1b6d530-8199-4c5d-87ee-8f00d60436b0.xml, portcls/IMiniportWaveCyclicStream::NormalizePhysicalPosition
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWaveCyclicStream.NormalizePhysicalPosition
+ - IMiniportWaveCyclicStream::NormalizePhysicalPosition
 ---
 
 # IMiniportWaveCyclicStream::NormalizePhysicalPosition
@@ -50,9 +49,9 @@ The <code>NormalizePhysicalPosition</code> method converts a physical buffer pos
 
 ## -parameters
 
-### -param PhysicalPosition 
+### -param PhysicalPosition [in, out]
 
-[in, out]
+
 Pointer to a caller-allocated variable that contains either the physical position or the time-based value. On entry, this buffer contains the physical-position value to convert. On return, the buffer contains the converted value, which is time-based.
 
 ## -returns

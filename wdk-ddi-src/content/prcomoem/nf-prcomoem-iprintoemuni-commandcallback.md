@@ -4,7 +4,6 @@ title: IPrintOemUni::CommandCallback (prcomoem.h)
 description: The IPrintOemUni::CommandCallback method is used to provide dynamically generated printer commands for Unidrv-supported printers.
 old-location: print\iprintoemuni_commandcallback.htm
 tech.root: print
-ms.assetid: e1708017-a546-4770-8ad1-7052b3d4e264
 ms.date: 04/20/2018
 keywords: ["IPrintOemUni::CommandCallback"]
 ms.keywords: CommandCallback, CommandCallback method [Print Devices], CommandCallback method [Print Devices],IPrintOemUni interface, IPrintOemUni interface [Print Devices],CommandCallback method, IPrintOemUni.CommandCallback, IPrintOemUni::CommandCallback, prcomoem/IPrintOemUni::CommandCallback, print.iprintoemuni_commandcallback, print_unidrv-pscript_rendering_edbed499-5cc1-48dc-92cd-dbe70d8560aa.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemUni.CommandCallback
+ - IPrintOemUni::CommandCallback
 ---
 
 # IPrintOemUni::CommandCallback
@@ -66,9 +65,9 @@ Caller-supplied value representing the number of elements in the array pointed t
 
 Caller-supplied pointer to an array of DWORD-sized parameters containing values specified by the printer commands *<b>Params</b> attribute in the printer's GPD file. (For more information, see the following Remarks section.) Can be <b>NULL</b>.
 
-### -param piResult 
+### -param piResult [out]
 
-[out]
+
 Receives a method-supplied result value. See the following Remarks section.
 
 ## -returns
@@ -130,3 +129,4 @@ The method is responsible for constructing a printer command, and then sending t
 The value supplied for <i>piResult</i> should always return zero unless the method is processing a cursor command. For <a href="/windows-hardware/drivers/print/cursor-commands">cursor commands</a> that move the cursor in either the <i>x</i> or <i></i> direction, the method should return the new cursor position.
 
 The <code>IPrintOemUni::CommandCallback</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-getimplementedmethod">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "CommandCallback" as input.
+

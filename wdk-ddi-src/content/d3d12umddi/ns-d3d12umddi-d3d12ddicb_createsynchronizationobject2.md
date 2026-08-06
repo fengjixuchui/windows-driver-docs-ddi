@@ -3,11 +3,8 @@ UID: NS:d3d12umddi.D3D12DDICB_CREATESYNCHRONIZATIONOBJECT2
 title: D3D12DDICB_CREATESYNCHRONIZATIONOBJECT2
 description: Used to create a synchronized object.
 tech.root: display
-ms.assetid: 0c3c3192-2267-4c10-aa3e-ef6f8911832a
 ms.date: 04/04/2019
 keywords: ["D3D12DDICB_CREATESYNCHRONIZATIONOBJECT2 structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: D3D12DDICB_CREATESYNCHRONIZATIONOBJECT2, D3D12DDICB_CREATESYNCHRONIZATIONOBJECT2,
 req.header: d3d12umddi.h
 req.include-header: 
@@ -35,8 +32,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - D3D12DDICB_CREATESYNCHRONIZATIONOBJECT2
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -50,14 +45,14 @@ Used to create a synchronized object.
 
 ## -struct-fields
 
-### -field Info
+### -field Info [in, out]
 
-[in, out] Attributes of the synchronization object to create.
+Attributes of the synchronization object to create.
 
-### -field hSyncObject
+### -field hSyncObject [out]
 
  
-[out] Handle to the created object.
+Handle to the created object.
 
 ## -remarks
 

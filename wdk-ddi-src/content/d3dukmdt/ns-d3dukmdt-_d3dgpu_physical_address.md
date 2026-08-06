@@ -1,9 +1,8 @@
 ---
 UID: NS:d3dukmdt._D3DGPU_PHYSICAL_ADDRESS
-title: _D3DGPU_PHYSICAL_ADDRESS (d3dukmdt.h)
-description: The GPU's physical address.
-ms.assetid: c0e476ef-bd49-46e6-8e16-eabb6178f9d7
-ms.date: 10/19/2018
+title: D3DGPU_PHYSICAL_ADDRESS (d3dukmdt.h)
+description: Learn more about the D3DGPU_PHYSICAL_ADDRESS structure.
+ms.date: 10/04/2023
 keywords: ["D3DGPU_PHYSICAL_ADDRESS structure"]
 ms.keywords: _D3DGPU_PHYSICAL_ADDRESS, D3DGPU_PHYSICAL_ADDRESS,
 req.header: d3dukmdt.h
@@ -35,16 +34,16 @@ api_location:
  - d3dukmdt.h
 api_name:
  - _D3DGPU_PHYSICAL_ADDRESS
+ - D3DGPU_PHYSICAL_ADDRESS
 dev_langs:
  - c++
 ---
 
-# _D3DGPU_PHYSICAL_ADDRESS structure
-
+# D3DGPU_PHYSICAL_ADDRESS structure
 
 ## -description
 
-The GPU's physical address.
+The **D3DGPU_PHYSICAL_ADDRESS** structure specifies a GPU physical address.
 
 ## -struct-fields
 
@@ -52,9 +51,12 @@ The GPU's physical address.
 
 The segment Id.
 
+### -field Padding
+
+Padding.
+
 ### -field SegmentOffset
 
- 
 The segment offset.
 
 ## -remarks

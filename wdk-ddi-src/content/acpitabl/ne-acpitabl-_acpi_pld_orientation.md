@@ -2,8 +2,7 @@
 UID: NE:acpitabl._ACPI_PLD_ORIENTATION
 title: _ACPI_PLD_ORIENTATION enumeration (acpitabl.h)
 description: Describes orientation bit 78.
-ms.assetid: b58d55f1-47b4-4f2d-93f6-85bc2dee4426
-ms.date: 10/02/2018
+ms.date: 11/19/2020
 keywords: ["ACPI_PLD_ORIENTATION enumeration"]
 ms.keywords: _ACPI_PLD_ORIENTATION, ACPI_PLD_ORIENTATION, *PACPI_PLD_ORIENTATION,
 req.header: acpitabl.h
@@ -17,6 +16,7 @@ req.ddi-compliance:
 req.max-support: 
 req.typenames: ACPI_PLD_ORIENTATION, *PACPI_PLD_ORIENTATION
 targetos: Windows
+tech.root: acpi
 f1_keywords:
  - _ACPI_PLD_ORIENTATION
  - acpitabl/_ACPI_PLD_ORIENTATION
@@ -32,6 +32,8 @@ api_location:
  - acpitabl.h
 api_name:
  - _ACPI_PLD_ORIENTATION
+ - PACPI_PLD_ORIENTATION
+ - ACPI_PLD_ORIENTATION
 ---
 
 # _ACPI_PLD_ORIENTATION enumeration
@@ -43,11 +45,11 @@ Describes orientation bit 78.
 
 ## -enum-fields
 
-### -field AcpiPldOrientationHorizontal 
+### -field AcpiPldOrientationHorizontal
 
 Value is 0.
 
-### -field AcpiPldOrientationVertical 
+### -field AcpiPldOrientationVertical
 
 Value is 1.
 

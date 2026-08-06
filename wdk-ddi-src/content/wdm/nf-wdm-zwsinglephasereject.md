@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.ZwSinglePhaseReject
 title: ZwSinglePhaseReject function (wdm.h)
-description: The ZwSinglePhaseReject routine informs KTM that the calling resource manager will not support single-phase commit operations for a specified enlistment.
+description: Learn how the ZwSinglePhaseReject routine informs KTM that the calling resource manager will not support single-phase commit operations for a specified enlistment.
 old-location: kernel\zwsinglephasereject.htm
 tech.root: kernel
-ms.assetid: a653a980-8ad6-46e7-ad9d-f060ab333731
 ms.date: 04/30/2018
 keywords: ["ZwSinglePhaseReject function"]
 ms.keywords: NtSinglePhaseReject, ZwSinglePhaseReject, ZwSinglePhaseReject routine [Kernel-Mode Driver Architecture], kernel.zwsinglephasereject, ktm_ref_9bc69cd9-19ee-4f3e-b5c8-fea8ddb05e17.xml, wdm/NtSinglePhaseReject, wdm/ZwSinglePhaseReject
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - ZwSinglePhaseReject
- - NtSinglePhaseReject
 ---
 
 # ZwSinglePhaseReject function
@@ -51,14 +49,14 @@ The <b>ZwSinglePhaseReject</b> routine informs KTM that the calling resource man
 
 ## -parameters
 
-### -param EnlistmentHandle 
+### -param EnlistmentHandle [in]
 
-[in]
+
 A handle to an <a href="/windows-hardware/drivers/kernel/enlistment-objects">enlistment object</a> that was obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment">ZwCreateEnlistment</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a>. The handle must have ENLISTMENT_SUBORDINATE_RIGHTS access to the object.
 
-### -param TmVirtualClock 
+### -param TmVirtualClock [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows-hardware/drivers/kernel/using-virtual-clock-values">virtual clock value</a>. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns
@@ -144,3 +142,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a>
+

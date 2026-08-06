@@ -4,7 +4,6 @@ title: _AV_61883_REQUEST (61883.h)
 description: The AV_61883_REQUEST structure is used to pass requests to the IEC-61883 protocol driver.
 old-location: ieee\av_61883_request.htm
 tech.root: IEEE
-ms.assetid: 697fbf86-5c99-4e35-bcb4-a6f5272cc987
 ms.date: 02/15/2018
 keywords: ["AV_61883_REQUEST structure"]
 ms.keywords: "*PAV_61883_REQUEST, 61883/AV_61883_REQUEST, 61883/PAV_61883_REQUEST, 61883_structures_d914a3cc-63dd-4eaf-9d0f-2682e1da78c9.xml, AV_61883_REQUEST, AV_61883_REQUEST structure [Buses], IEEE.av_61883_request, PAV_61883_REQUEST, PAV_61883_REQUEST structure pointer [Buses], _AV_61883_REQUEST"
@@ -42,10 +41,12 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _AV_61883_REQUEST
+ - PAV_61883_REQUEST
  - AV_61883_REQUEST
 ---
 
-# _AV_61883_REQUEST structure
+# _
 
 
 ## -description
@@ -72,11 +73,11 @@ A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_get_unit_info">GET_UNIT
 
 ### -field SetUnitInfo
 
-A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_set_unit_info">SET_UNIT_INFO</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff537002">Av61883_SetUnitInfo</a>.
+A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_set_unit_info">SET_UNIT_INFO</a> structure, used if the <b>Function</b> member is <b>Av61883_SetUnitInfo</b>.
 
 ### -field GetPlugHandle
 
-A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cmp_get_plug_handle">CMP_GET_PLUG_HANDLE</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536979">Av61883_GetPlugHandle</a>.
+A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cmp_get_plug_handle">CMP_GET_PLUG_HANDLE</a> structure, used if the <b>Function</b> member is <b>Av61883_GetPlugHandle</b>.
 
 ### -field GetPlugState
 
@@ -84,83 +85,83 @@ A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cmp_get_plug_state">CMP
 
 ### -field Connect
 
-A CMP_CONNECT structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536958">Av61883_Connect</a>.
+A CMP_CONNECT structure, used if the <b>Function</b> member is <b>Av61883_Connect</b>.
 
 ### -field Disconnect
 
-A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cmp_disconnect">CMP_DISCONNECT</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536966">Av61883_Disconnect</a>.
+A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cmp_disconnect">CMP_DISCONNECT</a> structure, used if the <b>Function</b> member is <b>Av61883_Disconnect</b>.
 
 ### -field AttachFrame
 
-A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cip_attach_frame">CIP_ATTACH_FRAME</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536950">Av61883_AttachFrame</a>.
+A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cip_attach_frame">CIP_ATTACH_FRAME</a> structure, used if the <b>Function</b> member is <b>Av61883_AttachFrame</b>.
 
 ### -field CancelFrame
 
-A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cip_cancel_frame">CIP_CANCEL_FRAME</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536956">Av61883_CancelFrame</a>.
+A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cip_cancel_frame">CIP_CANCEL_FRAME</a> structure, used if the <b>Function</b> member is <b>Av61883_CancelFrame</b>.
 
 ### -field Talk
 
-A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cip_talk">CIP_TALK</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff537007">Av61883_Talk</a>.
+A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cip_talk">CIP_TALK</a> structure, used if the <b>Function</b> member is <b>Av61883_Talk</b>.
 
 ### -field Listen
 
-A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cip_listen">CIP_LISTEN</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536985">Av61883_Listen</a>.
+A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cip_listen">CIP_LISTEN</a> structure, used if the <b>Function</b> member is <b>Av61883_Listen</b>.
 
 ### -field Stop
 
-A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cip_stop">CIP_STOP</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff537005">Av61883_Stop</a>.
+A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cip_stop">CIP_STOP</a> structure, used if the <b>Function</b> member is <b>Av61883_Stop</b>.
 
 ### -field Request
 
-An <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_fcp_send_request">FCP_SEND_REQUEST</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536992">Av61883_SendFcpResponse</a>.
+An <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_fcp_send_request">FCP_SEND_REQUEST</a> structure, used if the <b>Function</b> member is <b>Av61883_SendFcpResponse</b>.
 
 ### -field Response
 
-An <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_fcp_get_response">FCP_GET_RESPONSE</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536977">Av61883_GetFcpResponse</a>.
+An <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_fcp_get_response">FCP_GET_RESPONSE</a> structure, used if the <b>Function</b> member is <b>Av61883_GetFcpResponse</b>.
 
 ### -field SendRequest
 
-An <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_fcp_send_request">FCP_SEND_REQUEST</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536992">Av61883_SendFcpResponse</a>.
+An <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_fcp_send_request">FCP_SEND_REQUEST</a> structure, used if the <b>Function</b> member is <b>Av61883_SendFcpResponse</b>.
 
 ### -field GetResponse
 
-An <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_fcp_get_response">FCP_GET_RESPONSE</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536977">Av61883_GetFcpResponse</a>.
+An <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_fcp_get_response">FCP_GET_RESPONSE</a> structure, used if the <b>Function</b> member is <b>Av61883_GetFcpResponse</b>.
 
 ### -field GetRequest
 
-An <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_fcp_get_request">FCP_GET_REQUEST</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536974">Av61883_GetFcpRequest</a>.
+An <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_fcp_get_request">FCP_GET_REQUEST</a> structure, used if the <b>Function</b> member is <b>Av61883_GetFcpRequest</b>.
 
 ### -field SendResponse
 
-An <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_fcp_send_response">FCP_SEND_RESPONSE</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536992">Av61883_SendFcpResponse</a>.
+An <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_fcp_send_response">FCP_SEND_RESPONSE</a> structure, used if the <b>Function</b> member is <b>Av61883_SendFcpResponse</b>.
 
 ### -field SetFcpNotify
 
-A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_set_fcp_notify">SET_FCP_NOTIFY</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536993">Av61883_SetFcpNotify</a>.
+A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_set_fcp_notify">SET_FCP_NOTIFY</a> structure, used if the <b>Function</b> member is <b>Av61883_SetFcpNotify</b>.
 
 ### -field CreatePlug
 
-A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cmp_create_plug">CMP_CREATE_PLUG</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536961">Av61883_CreatePlug</a>.
+A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cmp_create_plug">CMP_CREATE_PLUG</a> structure, used if the <b>Function</b> member is <b>Av61883_CreatePlug</b>.
 
 ### -field DeletePlug
 
-A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cmp_delete_plug">CMP_DELETE_PLUG</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536964">Av61883_DeletePlug</a>.
+A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cmp_delete_plug">CMP_DELETE_PLUG</a> structure, used if the <b>Function</b> member is <b>Av61883_DeletePlug</b>.
 
 ### -field SetPlug
 
-A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cmp_set_plug">CMP_SET_PLUG</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536995">Av61883_SetPlug</a>.
+A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cmp_set_plug">CMP_SET_PLUG</a> structure, used if the <b>Function</b> member is <b>Av61883_SetPlug</b>.
 
 ### -field BusResetNotify
 
-A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_bus_reset_notify">BUS_RESET_NOTIFY</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536955">Av61883_BusResetNotify</a>.
+A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_bus_reset_notify">BUS_RESET_NOTIFY</a> structure, used if the <b>Function</b> member is <b>Av61883_BusResetNotify</b>.
 
 ### -field SetUnitDirectory
 
-A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_set_unit_directory">SET_UNIT_DIRECTORY</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536998">Av61883_SetUnitDirectory</a>.
+A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_set_unit_directory">SET_UNIT_DIRECTORY</a> structure, used if the <b>Function</b> member is <b>Av61883_SetUnitDirectory</b>.
 
 ### -field MonitorPlugs
 
-A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cmp_monitor_plugs">CMP_MONITOR_PLUGS</a> structure, used if the <b>Function</b> member is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536987">Av61883_MonitorPlugs</a>.
+A <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cmp_monitor_plugs">CMP_MONITOR_PLUGS</a> structure, used if the <b>Function</b> member is <b>Av61883_MonitorPlugs</b>.
 
 ## -remarks
 
@@ -173,3 +174,4 @@ The <b>Parameters-></b><b>Others.Arguments1</b> member of an <a href="/windows-h
 
 
 <a href="/windows-hardware/drivers/ddi/61883/ni-61883-ioctl_61883_class">IOCTL_61883_CLASS</a>
+

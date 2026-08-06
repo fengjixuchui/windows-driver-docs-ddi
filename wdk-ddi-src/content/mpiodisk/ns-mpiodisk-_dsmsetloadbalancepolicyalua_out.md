@@ -4,7 +4,6 @@ title: _DsmSetLoadBalancePolicyALUA_OUT (mpiodisk.h)
 description: The DsmSetLoadBalancePolicyALUA_OUT structure reports the output of the DsmSetLoadBalancePolicyALUA method.
 old-location: storage\dsmsetloadbalancepolicyalua_out.htm
 tech.root: storage
-ms.assetid: 00c5f766-299e-4c07-a3e0-61077518a37a
 ms.date: 03/29/2018
 keywords: ["DsmSetLoadBalancePolicyALUA_OUT structure"]
 ms.keywords: "*PDsmSetLoadBalancePolicyALUA_OUT, DsmSetLoadBalancePolicyALUA_OUT, DsmSetLoadBalancePolicyALUA_OUT structure [Storage Devices], PDsmSetLoadBalancePolicyALUA_OUT, PDsmSetLoadBalancePolicyALUA_OUT structure pointer [Storage Devices], _DsmSetLoadBalancePolicyALUA_OUT, mpiodisk/DsmSetLoadBalancePolicyALUA_OUT, mpiodisk/PDsmSetLoadBalancePolicyALUA_OUT, storage.dsmsetloadbalancepolicyalua_out, structs-scsibus_59bfe47a-52c1-4a7c-95c4-784f0e8ae92e.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - mpiodisk.h
 api_name:
+ - _DsmSetLoadBalancePolicyALUA_OUT
+ - PDsmSetLoadBalancePolicyALUA_OUT
  - DsmSetLoadBalancePolicyALUA_OUT
 ---
 
@@ -57,3 +58,4 @@ The<b> DsmSetLoadBalancePolicyALUA_OUT</b> structure reports the output of the <
 ### -field Status
 
 The status of the <a href="/windows-hardware/drivers/storage/dsmsetloadbalancepolicyalua">DsmSetLoadBalancePolicyALUA</a> operation.
+

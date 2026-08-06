@@ -4,7 +4,6 @@ title: IOCTL_POINT_OF_SERVICE_CHECK_HEALTH (pointofservicedriverinterface.h)
 description: This I/O control function checks the device health.
 old-location: pos\ioctl_point_of_service_check_health.htm
 tech.root: pos
-ms.assetid: b11be48b-e791-4599-80da-2446791f3816
 ms.date: 08/21/2020
 keywords: ["IOCTL_POINT_OF_SERVICE_CHECK_HEALTH IOCTL"]
 ms.keywords: IOCTL_POINT_OF_SERVICE_CHECK_HEALTH, IOCTL_POINT_OF_SERVICE_CHECK_HEALTH control, IOCTL_POINT_OF_SERVICE_CHECK_HEALTH control code, pointofservicedriverinterface/IOCTL_POINT_OF_SERVICE_CHECK_HEALTH, pos.ioctl_point_of_service_check_health
@@ -49,6 +48,8 @@ api_name:
 This I/O control function checks the device health.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

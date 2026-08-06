@@ -4,7 +4,6 @@ title: _CM_FULL_RESOURCE_DESCRIPTOR (wdm.h)
 description: The CM_FULL_RESOURCE_DESCRIPTOR structure specifies a set of system hardware resources of various types, assigned to a device that is connected to a specific bus. This structure is contained within a CM_RESOURCE_LIST structure.
 old-location: kernel\cm_full_resource_descriptor.htm
 tech.root: kernel
-ms.assetid: e405c545-da0c-4b47-84c2-dd26d746da94
 ms.date: 04/30/2018
 keywords: ["CM_FULL_RESOURCE_DESCRIPTOR structure"]
 ms.keywords: "*PCM_FULL_RESOURCE_DESCRIPTOR, CM_FULL_RESOURCE_DESCRIPTOR, CM_FULL_RESOURCE_DESCRIPTOR structure [Kernel-Mode Driver Architecture], PCM_FULL_RESOURCE_DESCRIPTOR, PCM_FULL_RESOURCE_DESCRIPTOR structure pointer [Kernel-Mode Driver Architecture], _CM_FULL_RESOURCE_DESCRIPTOR, kernel.cm_full_resource_descriptor, kstruct_a_eb7de4ac-cd02-44cc-9e26-a9c2a99eb8e6.xml, wdm/CM_FULL_RESOURCE_DESCRIPTOR, wdm/PCM_FULL_RESOURCE_DESCRIPTOR"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _CM_FULL_RESOURCE_DESCRIPTOR
+ - PCM_FULL_RESOURCE_DESCRIPTOR
  - CM_FULL_RESOURCE_DESCRIPTOR
 ---
 
@@ -73,3 +74,4 @@ A <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_partial_resource_list">C
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_resource_list">CM_RESOURCE_LIST</a>
+

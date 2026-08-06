@@ -4,7 +4,6 @@ title: IDebugClient5::GetQuitLockStringWide (dbgeng.h)
 description: Gets a Unicode character quit lock string.
 old-location: debugger\idebugclient5_getquitlockstringwide.htm
 tech.root: debugger
-ms.assetid: 0C69F19C-D048-47EB-9286-6F8C6E3398CC
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::GetQuitLockStringWide"]
 ms.keywords: GetQuitLockStringWide, GetQuitLockStringWide method [Windows Debugging], GetQuitLockStringWide method [Windows Debugging],IDebugClient5 interface, IDebugClient5 interface [Windows Debugging],GetQuitLockStringWide method, IDebugClient5.GetQuitLockStringWide, IDebugClient5::GetQuitLockStringWide, dbgeng/IDebugClient5::GetQuitLockStringWide, debugger.idebugclient5_getquitlockstringwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient5.GetQuitLockStringWide
+ - IDebugClient5::GetQuitLockStringWide
 ---
 
 # IDebugClient5::GetQuitLockStringWide
@@ -50,19 +49,19 @@ Gets a Unicode character quit lock string.
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 The buffer in which to write the Unicode character string.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 The size of the buffer.
 
-### -param StringSize 
+### -param StringSize [out, optional]
 
-[out, optional]
+
 A pointer to the string size.
 
 ## -returns
@@ -80,3 +79,4 @@ The quit lock string
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient5">IDebugClient5</a>
+

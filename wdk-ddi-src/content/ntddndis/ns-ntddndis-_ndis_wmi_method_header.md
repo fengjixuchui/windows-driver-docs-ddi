@@ -4,7 +4,6 @@ title: _NDIS_WMI_METHOD_HEADER (ntddndis.h)
 description: The NDIS_WMI_METHOD_HEADER structure provides information about a GUID method request from WMI clients.
 old-location: netvista\ndis_wmi_method_header.htm
 tech.root: netvista
-ms.assetid: c39a9438-d3be-4f01-96d5-01c7339a666a
 ms.date: 05/02/2018
 keywords: ["NDIS_WMI_METHOD_HEADER structure"]
 ms.keywords: "*PNDIS_WMI_METHOD_HEADER, NDIS_WMI_METHOD_HEADER, NDIS_WMI_METHOD_HEADER structure [Network Drivers Starting with Windows Vista], PNDIS_WMI_METHOD_HEADER, PNDIS_WMI_METHOD_HEADER structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WMI_METHOD_HEADER, ndis_wmi_ref_fa232798-c72c-4823-806a-c8b7cf28001d.xml, netvista.ndis_wmi_method_header, ntddndis/NDIS_WMI_METHOD_HEADER, ntddndis/PNDIS_WMI_METHOD_HEADER"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_WMI_METHOD_HEADER
+ - PNDIS_WMI_METHOD_HEADER
  - NDIS_WMI_METHOD_HEADER
 ---
 
@@ -58,7 +59,7 @@ The NDIS_WMI_METHOD_HEADER structure provides information about a GUID method re
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for this
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for this
      NDIS_WMI_METHOD_HEADER structure. Set the 
      <b>Type</b> member of NDIS_OBJECT_HEADER to NDIS_WMI_OBJECT_TYPE_METHOD, the 
      <b>Revision</b> member to NDIS_GUID_HEADER_REVISION_1, and the 
@@ -96,7 +97,7 @@ NDIS or overlying drivers can also use the
      <b>RequestId</b> is zero, the miniport driver can ignore this member.
 
 For more information about this member, see 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>.
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>.
 
 ### -field Timeout
 
@@ -104,7 +105,7 @@ A time-out, in seconds, for the request. NDIS can reset the driver or cancel the
       time-out expires before the driver completes the request.
 
 For more information about this member, see 
-      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>.
+      <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>.
 
 ### -field Padding
 
@@ -128,4 +129,5 @@ WMI method GUID requests that are specific to NDIS 6.0 and later versions includ
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
+

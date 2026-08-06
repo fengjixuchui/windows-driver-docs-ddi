@@ -4,7 +4,6 @@ title: IDebugControl3::ReturnInput (dbgeng.h)
 description: The ReturnInput method is used by IDebugInputCallbacks objects to send an input string to the engine following a request for input.
 old-location: debugger\returninput.htm
 tech.root: debugger
-ms.assetid: 1f4c63da-8583-4382-a208-8279b4fe0906
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::ReturnInput"]
 ms.keywords: IDebugControl interface [Windows Debugging],ReturnInput method, IDebugControl2 interface [Windows Debugging],ReturnInput method, IDebugControl2::ReturnInput, IDebugControl3 interface [Windows Debugging],ReturnInput method, IDebugControl3.ReturnInput, IDebugControl3::ReturnInput, IDebugControl::ReturnInput, IDebugControl_e060c1a6-43cd-46a1-ba4c-e9aa69bcf205.xml, ReturnInput, ReturnInput method [Windows Debugging], ReturnInput method [Windows Debugging],IDebugControl interface, ReturnInput method [Windows Debugging],IDebugControl2 interface, ReturnInput method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::ReturnInput, dbgeng/IDebugControl3::ReturnInput, dbgeng/IDebugControl::ReturnInput, debugger.returninput
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.ReturnInput
- - IDebugControl2.ReturnInput
- - IDebugControl3.ReturnInput
+ - IDebugControl3::ReturnInput
 ---
 
 # IDebugControl3::ReturnInput
@@ -52,9 +49,9 @@ The <b>ReturnInput</b>  method is used by <b>IDebugInputCallbacks</b> objects to
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Specifies the input string being sent to the engine.
 
 ## -returns
@@ -94,3 +91,4 @@ This method may also return error values.  See <a href="/windows-hardware/driver
 ## -remarks
 
 For an overview of input in the debugger engine, see <a href="/windows-hardware/drivers/debugger/input-and-output">Input and Output</a>.
+

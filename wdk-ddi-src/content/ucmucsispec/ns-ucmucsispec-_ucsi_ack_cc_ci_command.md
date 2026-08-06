@@ -3,7 +3,6 @@ UID: NS:ucmucsispec._UCSI_ACK_CC_CI_COMMAND
 title: _UCSI_ACK_CC_CI_COMMAND (ucmucsispec.h)
 tech.root: usbref
 description: Used in the ACK_CC_CI command. See Table 4-7.
-ms.assetid: 9b7f17fa-451c-4abc-ab51-a7c2ff09493c
 ms.date: 09/30/2018
 keywords: ["UCSI_ACK_CC_CI_COMMAND structure"]
 ms.keywords: _UCSI_ACK_CC_CI_COMMAND, UCSI_ACK_CC_CI_COMMAND, *PUCSI_ACK_CC_CI_COMMAND,
@@ -37,6 +36,8 @@ api_location:
  - ucmucsispec.h
 api_name:
  - _UCSI_ACK_CC_CI_COMMAND
+ - PUCSI_ACK_CC_CI_COMMAND
+ - UCSI_ACK_CC_CI_COMMAND
 ---
 
 # _UCSI_ACK_CC_CI_COMMAND structure
@@ -44,7 +45,7 @@ api_name:
 
 ## -description
 
-Used in the ACK_CC_CI command. See Table 4-7 in [UCSI spec version 1.1](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
+Used in the ACK_CC_CI command. See Table 4-7 in [UCSI spec version 1.2](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
 
 ## -struct-fields
 

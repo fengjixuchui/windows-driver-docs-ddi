@@ -4,7 +4,6 @@ title: ScsiPortWritePortBufferUchar function (srb.h)
 description: The ScsiPortWritePortBufferUchar routine transfers a given number of unsigned bytes from a buffer to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
 old-location: storage\scsiportwriteportbufferuchar.htm
 tech.root: storage
-ms.assetid: 83b6425f-52fa-4c57-aac5-698d3a586248
 ms.date: 03/29/2018
 keywords: ["ScsiPortWritePortBufferUchar function"]
 ms.keywords: ScsiPortWritePortBufferUchar, ScsiPortWritePortBufferUchar routine [Storage Devices], scsiprt_19277863-04fb-4f72-85f5-9bc877bd83c1.xml, srb/ScsiPortWritePortBufferUchar, storage.scsiportwriteportbufferuchar
@@ -52,19 +51,19 @@ The <b>ScsiPortWritePortBufferUchar</b> routine transfers a given number of unsi
 
 ## -parameters
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Pointer to the I/O port. The given <i>Port</i> must be in a mapped I/O-space range returned by <b>ScsiPortGetDeviceBase</b>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to a buffer.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of bytes to be written to the HBA.
 
 ## -returns

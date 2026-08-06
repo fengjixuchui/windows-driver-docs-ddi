@@ -4,7 +4,6 @@ title: _FLT_CREATEFILE_TARGET_ECP_CONTEXT (fltkernel.h)
 description: The FLT_CREATEFILE_TARGET_ECP_CONTEXT structure is an extra create parameter (ECP) used to return reparse target information back to the caller of FltCreateFileEx2.
 old-location: ifsk\flt_createfile_target_ecp_context.htm
 tech.root: ifsk
-ms.assetid: 95BDB715-E476-48EF-9867-112CF665B66D
 ms.date: 04/16/2018
 keywords: ["FLT_CREATEFILE_TARGET_ECP_CONTEXT structure"]
 ms.keywords: "*PFLT_CREATEFILE_TARGET_ECP_CONTEXT, FLTTCFL_AUTO_REPARSE, FLT_CREATEFILE_TARGET_ECP_CONTEXT, FLT_CREATEFILE_TARGET_ECP_CONTEXT structure [Installable File System Drivers], PFLT_CREATEFILE_TARGET_ECP_CONTEXT, PFLT_CREATEFILE_TARGET_ECP_CONTEXT structure pointer [Installable File System Drivers], _FLT_CREATEFILE_TARGET_ECP_CONTEXT, fltkernel/FLT_CREATEFILE_TARGET_ECP_CONTEXT, fltkernel/PFLT_CREATEFILE_TARGET_ECP_CONTEXT, ifsk.flt_createfile_target_ecp_context"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - fltkernel.h
 api_name:
+ - _FLT_CREATEFILE_TARGET_ECP_CONTEXT
+ - PFLT_CREATEFILE_TARGET_ECP_CONTEXT
  - FLT_CREATEFILE_TARGET_ECP_CONTEXT
 ---
 
@@ -432,7 +433,6 @@ CrossVolumeCreateExit:
 
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcreatefileex2">FltCreateFileEx2</a>
@@ -444,3 +444,4 @@ CrossVolumeCreateExit:
 
 
 <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltreleasefilenameinformation">FltReleaseFileNameInformation</a>
+

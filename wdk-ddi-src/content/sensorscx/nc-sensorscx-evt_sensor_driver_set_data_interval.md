@@ -4,7 +4,6 @@ title: EVT_SENSOR_DRIVER_SET_DATA_INTERVAL (sensorscx.h)
 description: This callback function sets the data interval for a specified sensor.
 old-location: sensors\evtsensorsetdatainterval.htm
 tech.root: sensors
-ms.assetid: 56A1D005-C060-4C6E-8CA4-0BAC4FBADABE
 ms.date: 05/03/2018
 keywords: ["EVT_SENSOR_DRIVER_SET_DATA_INTERVAL callback function"]
 ms.keywords: EVT_SENSOR_DRIVER_SET_DATA_INTERVAL, EVT_SENSOR_DRIVER_SET_DATA_INTERVAL callback, EvtSensorSetDataInterval, EvtSensorSetDataInterval callback function [Sensor Devices], sensors.evtsensorsetdatainterval, sensorscx/EvtSensorSetDataInterval
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - SensorsCx.h
 api_name:
- - EvtSensorSetDataInterval
+ - EVT_SENSOR_DRIVER_SET_DATA_INTERVAL
 ---
 
 # EVT_SENSOR_DRIVER_SET_DATA_INTERVAL callback function
@@ -50,13 +49,13 @@ This callback function sets the data interval for a specified sensor.
 
 ## -parameters
 
-### -param Sensor
+### -param Sensor [in]
 
-[in] A reference to a sensor object.
+A reference to a sensor object.
 
-### -param DataRateMs
+### -param DataRateMs [in]
 
-[in] The data interval to set for the <b>Sensor</b>.
+The data interval to set for the <b>Sensor</b>.
 
 ## -returns
 

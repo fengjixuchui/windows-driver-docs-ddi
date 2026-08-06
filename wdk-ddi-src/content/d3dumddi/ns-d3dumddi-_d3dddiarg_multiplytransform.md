@@ -4,7 +4,6 @@ title: _D3DDDIARG_MULTIPLYTRANSFORM (d3dumddi.h)
 description: The D3DDDIARG_MULTIPLYTRANSFORM structure describes how to modify the current transform.
 old-location: display\d3dddiarg_multiplytransform.htm
 tech.root: display
-ms.assetid: 4f14532f-8937-4715-aa9f-e38f18179af7
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_MULTIPLYTRANSFORM structure"]
 ms.keywords: D3DDDIARG_MULTIPLYTRANSFORM, D3DDDIARG_MULTIPLYTRANSFORM structure [Display Devices], UMDisplayDriver_param_Structs_9bae119f-aead-46d7-8a10-18cd6e227102.xml, _D3DDDIARG_MULTIPLYTRANSFORM, d3dumddi/D3DDDIARG_MULTIPLYTRANSFORM, display.d3dddiarg_multiplytransform
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_MULTIPLYTRANSFORM
  - D3DDDIARG_MULTIPLYTRANSFORM
 ---
 
@@ -52,9 +52,9 @@ The D3DDDIARG_MULTIPLYTRANSFORM structure describes how to modify the current tr
 
 ## -struct-fields
 
-### -field TransformType
+### -field TransformType [in]
 
-[in] A D3DTRANSFORMSTATETYPE-typed value that indicates the type of the transform that is being modified. This member can be one of the following values.
+A D3DTRANSFORMSTATETYPE-typed value that indicates the type of the transform that is being modified. This member can be one of the following values.
 
 | **Value** | **Meaning** | 
 |:--|:--|
@@ -62,9 +62,9 @@ The D3DDDIARG_MULTIPLYTRANSFORM structure describes how to modify the current tr
 | D3DTRANSFORMSTATE_VIEW | View transformation | 
 | D3DTRANSFORMSTATE_WORLD | World transformation |
 
-### -field Matrix
+### -field Matrix [in]
 
-[in] A D3DMATRIX structure that describes the matrix that is used to modify the current transform. For more information about D3DMATRIX, see the Microsoft Windows SDK documentation.
+A D3DMATRIX structure that describes the matrix that is used to modify the current transform. For more information about D3DMATRIX, see the Microsoft Windows SDK documentation.
 
 ## -remarks
 
@@ -73,3 +73,4 @@ The Microsoft Direct3D runtime uses D3DDDIARG_MULTIPLYTRANSFORM in a call to the
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_multiplytransform">MultiplyTransform</a>
+

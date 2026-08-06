@@ -4,7 +4,6 @@ title: _ISCSI_TargetPortal (iscsidef.h)
 description: The ISCSI_TargetPortal structure provides a definition of a target portal.
 old-location: storage\iscsi_targetportal.htm
 tech.root: storage
-ms.assetid: 1adb1dbf-3ec4-4e32-bfe8-cfcf992f67ca
 ms.date: 03/29/2018
 keywords: ["ISCSI_TargetPortal structure"]
 ms.keywords: "*PISCSI_TargetPortal, ISCSI_TargetPortal, ISCSI_TargetPortal structure [Storage Devices], PISCSI_TargetPortal, PISCSI_TargetPortal structure pointer [Storage Devices], _ISCSI_TargetPortal, iscsidef/ISCSI_TargetPortal, iscsidef/PISCSI_TargetPortal, storage.iscsi_targetportal, structs-iSCSI_fcbc99fd-e52d-45f4-b525-03c2d925f382.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsidef.h
 api_name:
+ - _ISCSI_TargetPortal
+ - PISCSI_TargetPortal
  - ISCSI_TargetPortal
 ---
 
@@ -73,3 +74,4 @@ Socket number associated with the target.
 
 
 <a href="/windows-hardware/drivers/storage/iscsi-targetportal-wmi-class">ISCSI_TargetPortal WMI Class</a>
+

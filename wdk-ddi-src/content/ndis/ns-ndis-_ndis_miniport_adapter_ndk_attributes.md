@@ -4,7 +4,6 @@ title: _NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES (ndis.h)
 description: The NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES structure specifies the NDK-capabilities of a miniport adapter. This structure is used in the NDKAttributes member of the NDIS_MINIPORT_ADAPTER_ATTRIBUTES union.
 old-location: netvista\ndis_miniport_adapter_ndk_attributes.htm
 tech.root: netvista
-ms.assetid: 615A190E-D8F5-4E84-A475-FFF38077BC09
 ms.date: 05/02/2018
 keywords: ["NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES structure"]
 ms.keywords: "*PNDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], PNDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, PNDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], _NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, ndis/NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, ndis/PNDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES, netvista.ndis_miniport_adapter_ndk_attributes"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES
+ - PNDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES
  - NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES</b> structure specifies the NDK-capa
 
 ### -field Header
 
-A <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure that describes this <b>NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES</b> structure. 
+A <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure that describes this <b>NDIS_MINIPORT_ADAPTER_NDK_ATTRIBUTES</b> structure. 
 
 Set the members of the <b>NDIS_OBJECT_HEADER</b> structure as follows:
 
@@ -98,8 +99,9 @@ To report its NDK capabilities, the miniport adapter stores an  <b>NDIS_MINIPORT
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+

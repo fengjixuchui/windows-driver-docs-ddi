@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_GetPositionInfo
 title: RIL_GetPositionInfo function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_GetPositionInfo function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_getpositioninfo.htm
 tech.root: netvista
-ms.assetid: a34ed9ad-13b6-4f09-88c1-c5462a421ad8
 ms.date: 05/02/2018
 keywords: ["RIL_GetPositionInfo function"]
 ms.keywords: RIL_GetPositionInfo, RIL_GetPositionInfo method [Network Drivers Starting with Windows Vista], netvista.ril_getpositioninfo, rilapi/RIL_GetPositionInfo

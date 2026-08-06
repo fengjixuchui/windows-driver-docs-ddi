@@ -1,9 +1,8 @@
 ---
 UID: NS:d3dkmddi._DXGKARG_PRESENT_DISPLAYONLY
 title: _DXGKARG_PRESENT_DISPLAYONLY (d3dkmddi.h)
-description: Indicates how a kernel mode display-only driver (KMDOD) is to perform a present operation.
+description: The DXGKARG_PRESENT_DISPLAYONLY structure specifies how a kernel mode display-only driver (KMDOD) will perform a present operation.
 old-location: display\dxgkarg_present_displayonly.htm
-ms.assetid: 7679d4f2-55c6-458c-afd3-020c3b7fd7e2
 ms.date: 05/10/2018
 keywords: ["DXGKARG_PRESENT_DISPLAYONLY structure"]
 ms.keywords: DXGKARG_PRESENT_DISPLAYONLY, DXGKARG_PRESENT_DISPLAYONLY structure [Display Devices], _DXGKARG_PRESENT_DISPLAYONLY, d3dkmddi/DXGKARG_PRESENT_DISPLAYONLY, display.dxgkarg_present_displayonly
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmddi.h
 api_name:
+ - _DXGKARG_PRESENT_DISPLAYONLY
  - DXGKARG_PRESENT_DISPLAYONLY
 ---
 
@@ -111,3 +111,4 @@ Reserved for system use. The operating system sets this member to <b>NULL</b>.
 
 
 <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a>
+

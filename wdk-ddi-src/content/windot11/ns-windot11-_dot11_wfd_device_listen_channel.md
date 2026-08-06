@@ -4,7 +4,6 @@ title: _DOT11_WFD_DEVICE_LISTEN_CHANNEL (windot11.h)
 description: The DOT11_WFD_DEVICE_LISTEN_CHANNEL structure describes the Wi-Fi Direct device's listen channel when responding to a OID_DOT11_WFD_DEVICE_LISTEN_CHANNEL set or query request.
 old-location: netvista\dot11_wfd_device_listen_channel.htm
 tech.root: netvista
-ms.assetid: F493F295-A133-454B-99AD-E216D105E707
 ms.date: 02/16/2018
 keywords: ["DOT11_WFD_DEVICE_LISTEN_CHANNEL structure"]
 ms.keywords: "*PDOT11_WFD_DEVICE_LISTEN_CHANNEL, DOT11_WFD_DEVICE_LISTEN_CHANNEL, DOT11_WFD_DEVICE_LISTEN_CHANNEL structure [Network Drivers Starting with Windows Vista], PDOT11_WFD_DEVICE_LISTEN_CHANNEL, PDOT11_WFD_DEVICE_LISTEN_CHANNEL structure pointer [Network Drivers Starting with Windows Vista], _DOT11_WFD_DEVICE_LISTEN_CHANNEL, netvista.dot11_wfd_device_listen_channel, windot11/DOT11_WFD_DEVICE_LISTEN_CHANNEL, windot11/PDOT11_WFD_DEVICE_LISTEN_CHANNEL"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - Windot11.h
 api_name:
+ - _DOT11_WFD_DEVICE_LISTEN_CHANNEL
+ - PDOT11_WFD_DEVICE_LISTEN_CHANNEL
  - DOT11_WFD_DEVICE_LISTEN_CHANNEL
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_WFD_DEVICE_LISTEN_CHANNEL structure
@@ -52,7 +51,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The <b>DOT11_WFD_DEVICE_LISTEN_CHANNEL</b> structure describes the Wi-Fi Direct device's listen channel when responding to a <a href="/windows-hardware/drivers/network/oid-dot11-wfd-device-listen-channel">OID_DOT11_WFD_DEVICE_LISTEN_CHANNEL</a> set or query request.
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The <b>DOT11_WFD_DEVICE_LISTEN_CHANNEL</b> structure describes the Wi-Fi Direct device's listen channel when responding to a <a href="/windows-hardware/drivers/network/oid-dot11-wfd-device-listen-channel">OID_DOT11_WFD_DEVICE_LISTEN_CHANNEL</a> set or query request.
 
 ## -struct-fields
 
@@ -95,3 +97,4 @@ typedef struct _DOT11_WFD_DEVICE_LISTEN_CHANNEL {
 ## -see-also
 
 <a href="/windows-hardware/drivers/network/oid-dot11-wfd-device-listen-channel">OID_DOT11_WFD_DEVICE_LISTEN_CHANNEL</a>
+

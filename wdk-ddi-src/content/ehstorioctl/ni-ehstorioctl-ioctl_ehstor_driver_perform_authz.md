@@ -4,7 +4,6 @@ title: IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ (ehstorioctl.h)
 description: IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ is sent by the Enhanced Storage Class Driver (EHSTOR) to the silo driver to initiate on-demand authentication or deauthentication.
 old-location: storage\ioctl_ehstor_driver_perform_authz.htm
 tech.root: storage
-ms.assetid: 689EE1EB-820A-4873-92C5-08F5F1873825
 ms.date: 03/29/2018
 keywords: ["IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ IOCTL"]
 ms.keywords: IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ, IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ control, IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ control code [Storage Devices], ehstorioctl/IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ, storage.ioctl_ehstor_driver_perform_authz
@@ -49,6 +48,8 @@ api_name:
 <b>IOCTL_EHSTOR_DRIVER_PERFORM_AUTHZ</b> is sent by the Enhanced Storage Class Driver (EHSTOR) to the silo driver to initiate on-demand authentication or deauthentication.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 
@@ -105,7 +106,7 @@ STATUS_SUCCESS is returned in the <b>Status</b> field by the silo driver if the 
 
 ## -remarks
 
-This IOCTL is sent by EHSTOR to a silo driver that supports on-demand authentication. The silo driver notifies EHSTOR of this capability in a prior <a href="/windows-hardware/drivers/ddi/ehstorioctl/ni-ehstorioctl-ioctl_ehstor_driver_report_capabilities">IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES</a> request with the <b>CAP_ON_DEMAND_AUTHENTICATION</b> flag set in the <b>Capabilities</b> member of <a href="/windows-hardware/drivers/ddi/ehstorioctl/ns-ehstorioctl-tagact_authz_state">SILO_DRIVER_CAPABILITES</a>. 
+This IOCTL is sent by EHSTOR to a silo driver that supports on-demand authentication. The silo driver notifies EHSTOR of this capability in a prior <a href="/windows-hardware/drivers/ddi/ehstorioctl/ni-ehstorioctl-ioctl_ehstor_driver_report_capabilities">IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES</a> request with the <b>CAP_ON_DEMAND_AUTHENTICATION</b> flag set in the <b>Capabilities</b> member of <a href="/windows-hardware/drivers/ddi/ehstorioctl/ns-ehstorioctl-_silo_driver_capabilities">SILO_DRIVER_CAPABILITIES</a>. 
 
 In response to this IOCTL, the silo driver performs authentication or deauthentication for the device. For banded devices, the silo driver will, depending on the specified operation in the system buffer, unlock or lock as many bands as possible for reads and writes.
 
@@ -121,4 +122,4 @@ If a device supports multiple silos, authentication by each silo is exclusive. A
 
 
 
-<a href="/windows-hardware/drivers/ddi/ehstorioctl/ns-ehstorioctl-tagact_authz_state">SILO_DRIVER_CAPABILITES</a>
+<a href="/windows-hardware/drivers/ddi/ehstorioctl/ns-ehstorioctl-_silo_driver_capabilities">SILO_DRIVER_CAPABILITIES</a>

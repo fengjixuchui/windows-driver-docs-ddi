@@ -4,7 +4,6 @@ title: WskRegister function (wsk.h)
 description: The WskRegister function registers a WSK application, given the application's WSK client Network Programming Interface (NPI).
 old-location: netvista\wskregister.htm
 tech.root: netvista
-ms.assetid: 340933ad-1a71-421c-b1e1-360aa9c441fd
 ms.date: 05/02/2018
 keywords: ["WskRegister function"]
 ms.keywords: WskRegister, WskRegister function [Network Drivers Starting with Windows Vista], netvista.wskregister, wsk/WskRegister, wskref_21a26aab-f817-457f-bfde-28bcf1e2c8d0.xml
@@ -54,14 +53,14 @@ The
 
 ## -parameters
 
-### -param WskClientNpi 
+### -param WskClientNpi [in]
 
-[in]
+
 A pointer to the client NPI implemented by the WSK application.
 
-### -param WskRegistration 
+### -param WskRegistration [out]
 
-[out]
+
 A pointer to a memory location that identifies a WSK application's registration instance. This
      memory location will be initialized by the 
      <b>WskRegister</b> call and will be used by the other 

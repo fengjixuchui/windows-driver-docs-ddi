@@ -4,7 +4,6 @@ title: READ_PORT_BUFFER_ULONG function (wudfddi_hwaccess.h)
 description: The READ_PORT_BUFFER_ULONG function reads a number of ULONG values from the specified port address into a buffer.
 old-location: wdf\read_port_buffer_ulong.htm
 tech.root: wdf
-ms.assetid: 5E1FFE55-49EE-4D8B-8826-023C751C7520
 ms.date: 02/26/2018
 keywords: ["READ_PORT_BUFFER_ULONG function"]
 ms.keywords: READ_PORT_BUFFER_ULONG, READ_PORT_BUFFER_ULONG function, umdf.read_port_buffer_ulong, wdf.read_port_buffer_ulong, wudfddi_hwaccess/READ_PORT_BUFFER_ULONG
@@ -52,24 +51,24 @@ The <b>READ_PORT_BUFFER_ULONG</b> function reads a number of ULONG values from t
 
 ## -parameters
 
-### -param pDevice 
+### -param pDevice [in]
 
-[in]
+
 Specifies a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a> interface for the device object of the device to access.
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Specifies the port address, which must be a mapped memory range in I/O space.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 A pointer to a buffer into which an array of ULONG values is read.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of ULONG values to be read into the buffer.
 
 ## -remarks

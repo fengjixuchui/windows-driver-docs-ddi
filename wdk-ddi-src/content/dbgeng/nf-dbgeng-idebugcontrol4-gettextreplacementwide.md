@@ -4,7 +4,6 @@ title: IDebugControl4::GetTextReplacementWide (dbgeng.h)
 description: The GetTextReplacementWide method returns the value of a user-named alias or an automatic alias.
 old-location: debugger\gettextreplacementwide.htm
 tech.root: debugger
-ms.assetid: 39a609f3-8f79-4a8b-9d29-0cfe09070f2b
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::GetTextReplacementWide"]
 ms.keywords: GetTextReplacementWide, GetTextReplacementWide method [Windows Debugging], GetTextReplacementWide method [Windows Debugging],IDebugControl4 interface, IDebugControl4 interface [Windows Debugging],GetTextReplacementWide method, IDebugControl4.GetTextReplacementWide, IDebugControl4::GetTextReplacementWide, dbgeng/IDebugControl4::GetTextReplacementWide, debugger.gettextreplacementwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.GetTextReplacementWide
+ - IDebugControl4::GetTextReplacementWide
 ---
 
 # IDebugControl4::GetTextReplacementWide
@@ -50,44 +49,44 @@ The <b>GetTextReplacementWide</b>  method returns the value of a user-named alia
 
 ## -parameters
 
-### -param SrcText 
+### -param SrcText [in, optional]
 
-[in, optional]
+
 Specifies the name of the alias.  The engine first searches the user-named aliases for one with this name. Then, if no match is found, the automatic aliases are searched.  If <i>SrcText</i> is <b>NULL</b>, <i>Index</i> is used to specify the alias.
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 Specifies the index of an alias.  The indexes of the user-named aliases come before the indexes of the automatic aliases.  <i>Index</i> is only used if <i>SrcText</i> is <b>NULL</b>.  <i>Index</i> can be used along with <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getnumbertextreplacements">GetNumberTextReplacements</a> to iterate over all the user-named and automatic aliases.
 
-### -param SrcBuffer 
+### -param SrcBuffer [out, optional]
 
-[out, optional]
+
 Receives the name of the alias.  This is the name specified in <i>SrcText</i>, if <i>SrcText</i> is not <b>NULL</b>.  If <i>SrcBuffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param SrcBufferSize 
+### -param SrcBufferSize [in]
 
-[in]
+
 Specifies the size, in characters, of the <i>SrcBuffer</i> buffer.
 
-### -param SrcSize 
+### -param SrcSize [out, optional]
 
-[out, optional]
+
 Receives the size, in characters, of the name of the alias.  If <i>SrcSize</i> is <b>NULL</b>, this information is not returned.
 
-### -param DstBuffer 
+### -param DstBuffer [out, optional]
 
-[out, optional]
+
 Receives the value of the alias specified by <i>SrcText</i> and <i>Index</i>.  If <i>DstBuffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param DstBufferSize 
+### -param DstBufferSize [in]
 
-[in]
+
 Specifies the size, in characters, of the <i>DstBuffer</i> buffer.
 
-### -param DstSize 
+### -param DstSize [out, optional]
 
-[out, optional]
+
 Receives the size, in characters, of the value of the alias.  If <i>DstSize</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -141,3 +140,4 @@ For an overview of aliases used by the <a href="/windows-hardware/drivers/debugg
 
 
 <a href="/windows-hardware/drivers/debugger/al--list-aliases-">al (List Aliases)</a>
+

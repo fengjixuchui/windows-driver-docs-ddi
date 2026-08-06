@@ -4,7 +4,6 @@ title: PCLFS_CLIENT_ADVANCE_TAIL_CALLBACK (wdm.h)
 description: The ClfsAdvanceTailCallback function advances the base log sequence number (LSN) of the client's log.
 old-location: kernel\clfsadvancetailcallback.htm
 tech.root: kernel
-ms.assetid: e5c3ac56-9e9f-40b8-b8a8-2eb4d41bca52
 ms.date: 04/30/2018
 keywords: ["PCLFS_CLIENT_ADVANCE_TAIL_CALLBACK callback function"]
 ms.keywords: ClfsAdvanceTailCallback, ClfsAdvanceTailCallback callback function [Kernel-Mode Driver Architecture], Clfs_management_86e7d14f-866d-4023-9f97-d495ac16989f.xml, PCLFS_CLIENT_ADVANCE_TAIL_CALLBACK, PCLFS_CLIENT_ADVANCE_TAIL_CALLBACK callback, kernel.clfsadvancetailcallback, wdm/ClfsAdvanceTailCallback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - ClfsAdvanceTailCallback
+ - PCLFS_CLIENT_ADVANCE_TAIL_CALLBACK
 ---
 
 # PCLFS_CLIENT_ADVANCE_TAIL_CALLBACK callback function
@@ -50,19 +49,19 @@ The <i>ClfsAdvanceTailCallback</i> function advances the base log sequence numbe
 
 ## -parameters
 
-### -param LogFile 
+### -param LogFile [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">LOG_FILE_OBJECT</a> structure that represents the CLFS log stream whose tail should be advanced.
 
-### -param TargetLsn 
+### -param TargetLsn [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_lsn">CLFS_LSN</a> structure that contains the LSN that the client should advance its tail to or beyond.
 
-### -param ClientData 
+### -param ClientData [in]
 
-[in]
+
 A pointer to client-supplied information. You specify this data in the <b>AdvanceTailCallbackData</b> member of the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_clfs_mgmt_client_registration">CLFS_MGMT_CLIENT_REGISTRATION</a> structure.
 
 ## -returns
@@ -102,3 +101,4 @@ When a client calls the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsmg
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsmgmttailadvancefailure">ClfsMgmtTailAdvanceFailure</a>
+

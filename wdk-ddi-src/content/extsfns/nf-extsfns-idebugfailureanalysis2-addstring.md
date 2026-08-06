@@ -4,7 +4,6 @@ title: IDebugFailureAnalysis2::AddString (extsfns.h)
 description: The AddString method adds a new FA entry to a DebugFailureAnalysis object and sets the data block of the FA entry to a specified string.
 old-location: debugger\idebugfailureanalysis2_addstring.htm
 tech.root: debugger
-ms.assetid: 98023A9B-9091-4C0D-ADE0-978816E8F762
 ms.date: 05/03/2018
 keywords: ["IDebugFailureAnalysis2::AddString"]
 ms.keywords: AddString, AddString method [Windows Debugging], AddString method [Windows Debugging],IDebugFailureAnalysis2 interface, IDebugFailureAnalysis2 interface [Windows Debugging],AddString method, IDebugFailureAnalysis2.AddString, IDebugFailureAnalysis2::AddString, debugger.idebugfailureanalysis2_addstring, extsfns/IDebugFailureAnalysis2::AddString
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - extsfns.h
 api_name:
- - IDebugFailureAnalysis2.AddString
+ - IDebugFailureAnalysis2::AddString
 ---
 
 # IDebugFailureAnalysis2::AddString
@@ -54,9 +53,9 @@ The <b>AddString</b> method adds a new <a href="/windows-hardware/drivers/debugg
 
 A value in the <a href="/windows-hardware/drivers/debugger/writing-an-analysis-extension-to-extend--analyze">FA_TAG</a> enumeration. The data type associated with this tag must be <b>DEBUG_FA_ENTRY_ANSI_STRING</b>.
 
-### -param Str 
+### -param Str [in]
 
-[in]
+
 A pointer to a null-terminated ANSI string to be written to the data block of the new <a href="/windows-hardware/drivers/debugger/failure-analysis-entries">FA entry</a>.
 
 ## -returns
@@ -72,9 +71,6 @@ Each tag is associated with one of the data types in the <a href="/windows-hardw
 To get a pointer to an <a href="/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfaentrytags">IDebugFAEntryTags</a> interface, call the <a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis2-getdebugfatagcontrol">GetDebugFATagControl</a> method of the <a href="/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfailureanalysis2">IDebugFailureAnalysis2</a> interface.
 
 ## -see-also
-
-<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis2-getstring">GetString</a>
-
 
 
 <a href="/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfaentrytags">IDebugFAEntryTags</a>
@@ -94,3 +90,4 @@ To get a pointer to an <a href="/windows-hardware/drivers/ddi/extsfns/nn-extsfns
 
 
 <a href="/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin">_EFN_Analyze</a>
+

@@ -4,7 +4,6 @@ title: _DOT11_WFD_GO_INTENT (windot11.h)
 description: The DOT11_WFD_GO_INTENT structure represents the Group Intent value used during Group Owner Negotiation
 old-location: netvista\_dot11_wfd_go_intent.htm
 tech.root: netvista
-ms.assetid: 8E4F88EF-04A9-4313-AE6A-2467DA08044A
 ms.date: 02/16/2018
 keywords: ["DOT11_WFD_GO_INTENT structure"]
 ms.keywords: "*PDOT11_WFD_GO_INTENT, DOT11_WFD_GO_INTENT, DOT11_WFD_GO_INTENT structure [Network Drivers Starting with Windows Vista], PDOT11_WFD_GO_INTENT, PDOT11_WFD_GO_INTENT structure pointer [Network Drivers Starting with Windows Vista], _DOT11_WFD_GO_INTENT, netvista._dot11_wfd_go_intent, windot11/DOT11_WFD_GO_INTENT, windot11/PDOT11_WFD_GO_INTENT"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - Windot11.h
 api_name:
+ - _DOT11_WFD_GO_INTENT
+ - PDOT11_WFD_GO_INTENT
  - DOT11_WFD_GO_INTENT
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_WFD_GO_INTENT structure
@@ -52,22 +51,20 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The <b>DOT11_WFD_GO_INTENT</b> structure represents the Group Intent value used during Group Owner Negotiation
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The <b>DOT11_WFD_GO_INTENT</b> structure represents the Group Intent value used during Group Owner Negotiation
 
 ## -struct-fields
 
 ### -field TieBreaker
 
+If set, indicates that group ownership is granted.
+
 ### -field Intent
 
-#### - Intent:7
-
-Group ownership intent level. The value of the local device intent is compared to the remote device intent to negociate ownership.
-
-
-#### - TieBreaker:1
-
-If set, indicates that group ownership is granted.
+Group ownership intent level. The value of the local device intent is compared to the remote device intent to negotiate ownership.
 
 ## -syntax
 
@@ -77,3 +74,4 @@ typedef struct _DOT11_WFD_GO_INTENT {
   UCHAR Intent:7;
 } DOT11_WFD_GO_INTENT, *PDOT11_WFD_GO_INTENT;
 ```
+

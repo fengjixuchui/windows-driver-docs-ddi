@@ -4,7 +4,6 @@ title: FILTER_DIRECT_OID_REQUEST (ndis.h)
 description: NDIS calls a filter driver's FilterDirectOidRequest function to process a direct OID request that is associated with the specified filter module.Note  You must declare the function by using the FILTER_DIRECT_OID_REQUEST type.
 old-location: netvista\filterdirectoidrequest.htm
 tech.root: netvista
-ms.assetid: a39f4b50-0183-4f92-82f2-3c8e2e2d0632
 ms.date: 05/02/2018
 keywords: ["FILTER_DIRECT_OID_REQUEST callback function"]
 ms.keywords: FILTER_DIRECT_OID_REQUEST, FILTER_DIRECT_OID_REQUEST callback, FilterDirectOidRequest, FilterDirectOidRequest callback function [Network Drivers Starting with Windows Vista], ndis/FilterDirectOidRequest, ndis_request_direct_ref_47a005b0-4a5b-4539-a1dc-2d9423022567.xml, netvista.filterdirectoidrequest
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - FilterDirectOidRequest
+ - FILTER_DIRECT_OID_REQUEST
 ---
 
 # FILTER_DIRECT_OID_REQUEST callback function
@@ -54,18 +53,18 @@ NDIS calls a filter driver's
 
 ## -parameters
 
-### -param FilterModuleContext 
+### -param FilterModuleContext [in]
 
-[in]
+
 A handle to the context area for the filter module that is the target of this request. The filter
      driver created and initialized this context area in the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach">FilterAttach</a> function.
 
-### -param OidRequest 
+### -param OidRequest [in]
 
-[in]
+
 A pointer to an 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure that specifies
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure that specifies
      the operation requested, including the OID_
      <i>Xx</i> code. The structure can specify either a query request or a set
      request
@@ -149,7 +148,7 @@ The buffer that
 <td width="60%">
 For a query operation, the 
        <b>InformationBufferLength</b> member of the 
-       <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure does not
+       <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure does not
        match the length that the given OID requires. 
        <i>FilterDirectOidRequest</i> returned the required buffer size, in bytes, in the 
        <b>BytesNeeded</b> member of the NDIS_OID_REQUEST structure.
@@ -225,7 +224,7 @@ NDIS calls the filter driver's
 
 Before the driver calls 
     <b>NdisFDirectOidRequest</b>, the driver must allocate an 
-    <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure and transfer the
+    <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure and transfer the
     request information to the new structure by calling the 
     <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatecloneoidrequest">
     NdisAllocateCloneOidRequest</a> function.
@@ -303,7 +302,7 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 
@@ -321,3 +320,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiswriteerrorlogentry">NdisWriteErrorLogEntry</a>
+

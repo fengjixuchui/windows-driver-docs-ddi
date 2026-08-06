@@ -4,7 +4,6 @@ title: NdisMInvalidateOffloadComplete function (ndischimney.h)
 description: An offload target calls the NdisMInvalidateOffloadComplete function to complete an invalidate offload operation that was initiated by a previous call to the MiniportInvalidateOffload function of the offload target.
 old-location: netvista\ndisminvalidateoffloadcomplete.htm
 tech.root: netvista
-ms.assetid: fd14e983-ea4b-41f2-973d-88b114306e75
 ms.date: 05/02/2018
 keywords: ["NdisMInvalidateOffloadComplete function"]
 ms.keywords: NdisMInvalidateOffloadComplete, NdisMInvalidateOffloadComplete function [Network Drivers Starting with Windows Vista], ndischimney/NdisMInvalidateOffloadComplete, netvista.ndisminvalidateoffloadcomplete, tcp_chim_ndis_func_14e16158-2af9-4901-a986-0bfa329d9ac5.xml
@@ -56,19 +55,19 @@ An offload target calls the
 
 ## -parameters
 
-### -param NdisMiniportHandle 
+### -param NdisMiniportHandle [in]
 
-[in]
+
 The handle that the offload target obtained in a previous call to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver">
      NdisMRegisterMiniportDriver</a> function.
 
-### -param OffloadBlockList 
+### -param OffloadBlockList [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_miniport_offload_block_list">
-     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure. The ofload target obtained this pointer as an input
+     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure. The offload target obtained this pointer as an input
      parameter to its 
      <a href="/windows-hardware/drivers/ddi/ndischimney/nc-ndischimney-w_invalidate_offload_handler">
      MiniportInvalidateOffload</a> function.

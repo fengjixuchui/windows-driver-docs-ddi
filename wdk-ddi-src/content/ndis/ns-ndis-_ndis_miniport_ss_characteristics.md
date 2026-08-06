@@ -4,7 +4,6 @@ title: _NDIS_MINIPORT_SS_CHARACTERISTICS (ndis.h)
 description: The NDIS_MINIPORT_SS_CHARACTERISTICS structure specifies the pointers to a miniport driver's NDIS selective suspend handler functions. These functions are called by NDIS to issue idle notifications to the driver during a selective suspend operation.
 old-location: netvista\ndis_miniport_ss_characteristics.htm
 tech.root: netvista
-ms.assetid: 325E5717-6B84-45AE-85D4-BA1839DB76A2
 ms.date: 05/02/2018
 keywords: ["NDIS_MINIPORT_SS_CHARACTERISTICS structure"]
 ms.keywords: "*PNDIS_MINIPORT_SS_CHARACTERISTICS, NDIS_MINIPORT_SS_CHARACTERISTICS, NDIS_MINIPORT_SS_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], PNDIS_MINIPORT_SS_CHARACTERISTICS, PNDIS_MINIPORT_SS_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_MINIPORT_SS_CHARACTERISTICS, ndis/NDIS_MINIPORT_SS_CHARACTERISTICS, ndis/PNDIS_MINIPORT_SS_CHARACTERISTICS, netvista.ndis_miniport_ss_characteristics"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
+ - _NDIS_MINIPORT_SS_CHARACTERISTICS
+ - PNDIS_MINIPORT_SS_CHARACTERISTICS
  - NDIS_MINIPORT_SS_CHARACTERISTICS
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_MINIPORT_SS_CHARACTERISTICS</b> structure specifies the pointers to 
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_MINIPORT_SS_CHARACTERISTICS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_MINIPORT_SS_CHARACTERISTICS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_MINIPORT_SS_CHARACTERISTICS. To specify the version of the <b>NDIS_MINIPORT_SS_CHARACTERISTICS</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
 
@@ -116,8 +117,9 @@ For more information on how to handle idle notifications for NDIS selective susp
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissetoptionalhandlers">NdisSetOptionalHandlers</a>
+

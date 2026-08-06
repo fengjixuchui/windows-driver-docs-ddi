@@ -1,10 +1,9 @@
 ---
 UID: NE:wdm._MEMORY_CACHING_TYPE
 title: _MEMORY_CACHING_TYPE (wdm.h)
-description: The MEMORY_CACHING_TYPE enumeration type specifies the permitted caching behavior when allocating or mapping memory.
+description: The _MEMORY_CACHING_TYPE enumeration (wdm.h) type specifies the permitted caching behavior when allocating or mapping memory.
 old-location: kernel\memory_caching_type.htm
 tech.root: kernel
-ms.assetid: 14cde545-e9bb-4b96-ba10-a63595e8a107
 ms.date: 04/30/2018
 keywords: ["MEMORY_CACHING_TYPE enumeration"]
 ms.keywords: MEMORY_CACHING_TYPE, MEMORY_CACHING_TYPE enumeration [Kernel-Mode Driver Architecture], MmCached, MmHardwareCoherentCached, MmMaximumCacheType, MmNonCached, MmNonCachedUnordered, MmUSWCCached, MmWriteCombined, _MEMORY_CACHING_TYPE, kernel.memory_caching_type, sysenum_8e18fde8-a812-4d6a-a203-1c87d4d825cf.xml, wdm/MEMORY_CACHING_TYPE, wdm/MmCached, wdm/MmHardwareCoherentCached, wdm/MmMaximumCacheType, wdm/MmNonCached, wdm/MmNonCachedUnordered, wdm/MmUSWCCached, wdm/MmWriteCombined
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _MEMORY_CACHING_TYPE
  - MEMORY_CACHING_TYPE
 ---
 
@@ -105,3 +105,4 @@ Processor translation buffers cache virtual to physical address translations. Th
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmaplockedpageswithreservedmapping">MmMapLockedPagesWithReservedMapping</a>
+

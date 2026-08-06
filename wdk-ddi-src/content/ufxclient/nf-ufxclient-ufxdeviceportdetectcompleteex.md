@@ -4,7 +4,6 @@ title: UfxDevicePortDetectCompleteEx function (ufxclient.h)
 description: Notifies UFX about the port type that was detected, and optionally requests an action.
 old-location: buses\ufxdeviceportdetectcompleteex.htm
 tech.root: usbref
-ms.assetid: EB3A65B5-EB21-45CA-B26D-F57A28F9F2CB
 ms.date: 05/07/2018
 keywords: ["UfxDevicePortDetectCompleteEx function"]
 ms.keywords: UfxDevicePortDetectCompleteEx, UfxDevicePortDetectCompleteEx method [Buses], buses.ufxdeviceportdetectcompleteex, ufxclient/UfxDevicePortDetectCompleteEx
@@ -50,19 +49,19 @@ Notifies UFX about the port type that was detected, and optionally requests an a
 
 ## -parameters
 
-### -param UfxDevice 
+### -param UfxDevice [in]
 
-[in]
+
 A handle to a UFX device object that the driver created by calling <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
 
-### -param PortType 
+### -param PortType [in]
 
-[in]
+
 Contains an enumeration value of type <a href="/windows-hardware/drivers/ddi/usbfnbase/ne-usbfnbase-_usbfn_port_type">USBFN_PORT_TYPE</a>.
 
-### -param Action 
+### -param Action [in]
 
-[in]
+
 Contains an enumeration value of type <a href="/windows-hardware/drivers/ddi/ufxbase/ne-ufxbase-_usbfn_action">USBFN_ACTION</a>.
 
 ## -remarks

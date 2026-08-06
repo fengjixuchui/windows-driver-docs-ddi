@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_SETVIDPNSOURCEOWNER
 title: PFND3DKMT_SETVIDPNSOURCEOWNER (d3dkmthk.h)
 description: The PFND3DKMT_SETVIDPNSOURCEOWNER callback function sets and releases the video present source in the path of a video present network (VidPN) topology that owns the VidPN.
-ms.assetid: 3773cd36-d9ba-46b4-9851-389da4f37d69
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_SETVIDPNSOURCEOWNER callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The PFND3DKMT_SETVIDPNSOURCEOWNER callback function sets and releases the video 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_SETVIDPNSOURCEOWNER](ns-d3dkmthk-_d3dkmt_setvidpnsourceowner.md) structure.
 

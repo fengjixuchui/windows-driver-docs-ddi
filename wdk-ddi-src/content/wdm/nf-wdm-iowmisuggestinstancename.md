@@ -4,7 +4,6 @@ title: IoWMISuggestInstanceName function (wdm.h)
 description: The IoWMISuggestInstanceName routine is used to request that WMI suggest a base name which a driver can use to build WMI instance names for the device.
 old-location: kernel\iowmisuggestinstancename.htm
 tech.root: kernel
-ms.assetid: a07ff2f6-e67e-489e-a477-6dc4b4ce6fed
 ms.date: 04/30/2018
 keywords: ["IoWMISuggestInstanceName function"]
 ms.keywords: IoWMISuggestInstanceName, IoWMISuggestInstanceName routine [Kernel-Mode Driver Architecture], k104_dc84cc9c-d6ca-40d2-93af-f54a149be7d1.xml, kernel.iowmisuggestinstancename, wdm/IoWMISuggestInstanceName
@@ -50,24 +49,24 @@ The <b>IoWMISuggestInstanceName</b> routine is used to request that WMI suggest 
 
 ## -parameters
 
-### -param PhysicalDeviceObject 
+### -param PhysicalDeviceObject [in, optional]
 
-[in, optional]
+
 If supplied, points to the driver's physical device object.
 
-### -param SymbolicLinkName 
+### -param SymbolicLinkName [in, optional]
 
-[in, optional]
+
 If supplied, points to the symbolic link name returned from <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterdeviceinterface">IoRegisterDeviceInterface</a>.
 
-### -param CombineNames 
+### -param CombineNames [in]
 
-[in]
+
 If <b>TRUE</b> then the suggested names returned will combine the <i>PhysicalDeviceObject</i> and <i>SymbolicLinkName</i> information.
 
-### -param SuggestedInstanceName 
+### -param SuggestedInstanceName [out]
 
-[out]
+
 A pointer to a buffer which upon successful completion will contain a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> which contains the suggested instance name. The caller is responsible for freeing this buffer when it is no longer needed.
 
 ## -returns

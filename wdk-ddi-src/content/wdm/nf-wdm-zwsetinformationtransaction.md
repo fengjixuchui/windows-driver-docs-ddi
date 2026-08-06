@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.ZwSetInformationTransaction
 title: ZwSetInformationTransaction function (wdm.h)
-description: The ZwSetInformationTransaction routine sets information for a specified transaction.
+description: Learn how the ZwSetInformationTransaction routine sets information for a specified transaction.
 old-location: kernel\zwsetinformationtransaction.htm
 tech.root: kernel
-ms.assetid: 47e729d8-241e-47f0-a595-d95c5ac516a4
 ms.date: 04/30/2018
 keywords: ["ZwSetInformationTransaction function"]
 ms.keywords: NtSetInformationTransaction, ZwSetInformationTransaction, ZwSetInformationTransaction routine [Kernel-Mode Driver Architecture], kernel.zwsetinformationtransaction, ktm_ref_575490bd-1003-43b3-8e41-676c4b0e4f25.xml, wdm/NtSetInformationTransaction, wdm/ZwSetInformationTransaction
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - ZwSetInformationTransaction
- - NtSetInformationTransaction
 ---
 
 # ZwSetInformationTransaction function
@@ -51,24 +49,24 @@ The <b>ZwSetInformationTransaction</b> routine sets information for a specified 
 
 ## -parameters
 
-### -param TransactionHandle 
+### -param TransactionHandle [in]
 
-[in]
+
 A handle to a <a href="/windows-hardware/drivers/kernel/transaction-objects">transaction object</a> that was obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreatetransaction">ZwCreateTransaction</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopentransaction">ZwOpenTransaction</a>. The handle must have TRANSACTION_SET_INFORMATION access to the object.
 
-### -param TransactionInformationClass 
+### -param TransactionInformationClass [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_transaction_information_class">TRANSACTION_INFORMATION_CLASS</a>-typed value that specifies the type of information to set. The value must be <b>TransactionPropertiesInformation</b>.
 
-### -param TransactionInformation 
+### -param TransactionInformation [in]
 
-[in]
+
 A pointer to a caller-allocated buffer that contains the information to set. The buffer's structure type must be <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_transaction_properties_information">TRANSACTION_PROPERTIES_INFORMATION</a>.
 
-### -param TransactionInformationLength 
+### -param TransactionInformationLength [in]
 
-[in]
+
 The length, in bytes, of the buffer that the <i>TransactionInformation</i> parameter points to.
 
 ## -returns
@@ -182,3 +180,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntqueryinformationtransaction">ZwQueryInformationTransaction</a>
+

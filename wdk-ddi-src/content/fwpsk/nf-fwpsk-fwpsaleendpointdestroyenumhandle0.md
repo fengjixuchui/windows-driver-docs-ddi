@@ -4,7 +4,6 @@ title: FwpsAleEndpointDestroyEnumHandle0 function (fwpsk.h)
 description: The FwpsAleEndpointDestroyEnumHandle0 function destroys an endpoint enumeration handle that was created by calling FwpsAleEndpointCreateEnumHandle0.Note  FwpsAleEndpointDestroyEnumHandle0 is a specific version of FwpsAleEndpointDestroyEnumHandle.
 old-location: netvista\fwpsaleendpointdestroyenumhandle0.htm
 tech.root: netvista
-ms.assetid: 45ec429e-d324-40c9-bedc-acd75ccb160e
 ms.date: 05/02/2018
 keywords: ["FwpsAleEndpointDestroyEnumHandle0 function"]
 ms.keywords: FwpsAleEndpointDestroyEnumHandle0, FwpsAleEndpointDestroyEnumHandle0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsAleEndpointDestroyEnumHandle0, netvista.fwpsaleendpointdestroyenumhandle0, wfp_ref_2_funct_3_fwps_A-B_3230abaf-8185-43b4-b46f-b1c1688ede2d.xml
@@ -56,16 +55,16 @@ The
 
 ## -parameters
 
-### -param engineHandle 
+### -param engineHandle [in]
 
-[in]
+
 The handle for an open session with the filter engine. This handle is obtained when a session is
      opened by calling 
      <a href="/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmengineopen0">FwpmEngineOpen0</a>.
 
-### -param enumHandle 
+### -param enumHandle [in, out]
 
-[in, out]
+
 The enumeration handle created by a previous call to 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsaleendpointcreateenumhandle0">
      FwpsAleEndpointCreateEnumHandle0</a>.

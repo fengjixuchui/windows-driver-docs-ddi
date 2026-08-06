@@ -4,7 +4,6 @@ title: _FEATURE_DATA_CD_TRACK_AT_ONCE (ntddmmc.h)
 description: The FEATURE_DATA_CD_TRACK_AT_ONCE structure holds information about the CD Track at Once feature.
 old-location: storage\feature_data_cd_track_at_once.htm
 tech.root: storage
-ms.assetid: e3ce42a6-0d94-46cb-9831-c29f92a677cd
 ms.date: 03/29/2018
 keywords: ["FEATURE_DATA_CD_TRACK_AT_ONCE structure"]
 ms.keywords: "*PFEATURE_DATA_CD_TRACK_AT_ONCE, FEATURE_DATA_CD_TRACK_AT_ONCE, FEATURE_DATA_CD_TRACK_AT_ONCE structure [Storage Devices], PFEATURE_DATA_CD_TRACK_AT_ONCE, PFEATURE_DATA_CD_TRACK_AT_ONCE structure pointer [Storage Devices], _FEATURE_DATA_CD_TRACK_AT_ONCE, ntddmmc/FEATURE_DATA_CD_TRACK_AT_ONCE, ntddmmc/PFEATURE_DATA_CD_TRACK_AT_ONCE, storage.feature_data_cd_track_at_once, structs-CD-ROM_d2648aa5-b3d5-49f2-98d1-01e90dd72332.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddmmc.h
 api_name:
+ - _FEATURE_DATA_CD_TRACK_AT_ONCE
+ - PFEATURE_DATA_CD_TRACK_AT_ONCE
  - FEATURE_DATA_CD_TRACK_AT_ONCE
 ---
 
@@ -109,3 +110,4 @@ This structure holds data for the feature named "CD Track at Once" by the <i>MMC
 
 
 <a href="/windows-hardware/drivers/ddi/ntddmmc/ne-ntddmmc-_feature_number">FEATURE_NUMBER</a>
+

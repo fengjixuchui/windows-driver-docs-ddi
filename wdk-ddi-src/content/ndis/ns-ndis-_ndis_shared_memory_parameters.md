@@ -4,7 +4,6 @@ title: _NDIS_SHARED_MEMORY_PARAMETERS (ndis.h)
 description: The NDIS_SHARED_MEMORY_PARAMETERS structure specifies the shared memory parameters for a shared memory allocation request.
 old-location: netvista\ndis_shared_memory_parameters.htm
 tech.root: netvista
-ms.assetid: 286b08f6-179e-426e-ae65-b108529d049a
 ms.date: 05/02/2018
 keywords: ["NDIS_SHARED_MEMORY_PARAMETERS structure"]
 ms.keywords: "*PNDIS_SHARED_MEMORY_PARAMETERS, NDIS_SHARED_MEMORY_PARAMETERS, NDIS_SHARED_MEMORY_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_SHARED_MEMORY_PARAMETERS, PNDIS_SHARED_MEMORY_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SHARED_MEMORY_PARAMETERS, ndis/NDIS_SHARED_MEMORY_PARAMETERS, ndis/PNDIS_SHARED_MEMORY_PARAMETERS, ndis_shared_memory_ref_76b2c89f-c221-42de-ae92-ad10cf2297f2.xml, netvista.ndis_shared_memory_parameters"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_SHARED_MEMORY_PARAMETERS
+ - PNDIS_SHARED_MEMORY_PARAMETERS
  - NDIS_SHARED_MEMORY_PARAMETERS
 ---
 
@@ -57,7 +58,7 @@ The NDIS_SHARED_MEMORY_PARAMETERS structure specifies the shared memory paramete
 
 ### -field Header
 
-The type, revision, and size of the NDIS_SHARED_MEMORY_PARAMETERS structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the NDIS_SHARED_MEMORY_PARAMETERS structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the NDIS_SHARED_MEMORY_PARAMETERS structure, the driver must set the <b>Revision</b> member of <b>Header</b> to one of the following values: 
 
@@ -143,7 +144,7 @@ An NDIS_NIC_SWITCH_VPORT_ID value that specifies a virtual port (VPort) identifi
 
 
 
-<div class="alert"><b>Note</b>  Miniport drivers that support the VMQ interface must set this member to zero. Miniport drivers that support the SR-IOV interface must not set this member to zero (DEFAULT_VPORT_ID).</div>
+<div class="alert"><b>Note</b>  Miniport drivers that support the VMQ interface must set this member to zero. Miniport drivers that support the SR-IOV interface must not set this member to zero (NDIS_DEFAULT_VPORT_ID).</div>
 <div> </div>
 
 ## -remarks
@@ -159,7 +160,7 @@ NDIS drivers pass this structure to the
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -176,3 +177,4 @@ NDIS drivers pass this structure to the
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_scatter_gather_list">SCATTER_GATHER_LIST</a>
+

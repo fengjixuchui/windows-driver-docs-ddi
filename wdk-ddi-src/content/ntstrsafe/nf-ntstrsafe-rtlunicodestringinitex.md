@@ -4,7 +4,6 @@ title: RtlUnicodeStringInitEx function (ntstrsafe.h)
 description: The RtlUnicodeStringInitEx function initializes a UNICODE_STRING structure.
 old-location: kernel\rtlunicodestringinitex.htm
 tech.root: kernel
-ms.assetid: d57fee0b-2dd3-4fad-bc7e-d413c08e2441
 ms.date: 04/30/2018
 keywords: ["RtlUnicodeStringInitEx function"]
 ms.keywords: RtlUnicodeStringInitEx, RtlUnicodeStringInitEx function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringinitex, ntstrsafe/RtlUnicodeStringInitEx, safestrings_fab7496b-3acf-416d-8425-6936a73f1ca7.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,19 +50,19 @@ The <b>RtlUnicodeStringInitEx</b> function initializes a <a href="/windows/win32
 
 ## -parameters
 
-### -param DestinationString 
+### -param DestinationString [out]
 
-[out]
+
 Optional. A pointer to a <b>UNICODE_STRING</b> structure to be initialized. The <i>pszSrc</i> pointer is copied into the <i>DestinationString</i> parameter's <b>UNICODE_STRING</b> structure. The maximum number of characters in the string that <i>pszSrc</i> points to is NTSTRSAFE_UNICODE_STRING_MAX_CCH. <i>DestinationString</i> can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.
 
-### -param pszSrc 
+### -param pszSrc [in, optional]
 
-[in, optional]
+
 Optional. A pointer to a null-terminated string constant. This string pointer will be copied to the <b>Buffer</b> member of the <b>UNICODE_STRING</b> structure pointed to by the <i>DestinationString</i> parameter. This string pointer can be <b>NULL</b>.
 
-### -param dwFlags 
+### -param dwFlags [in]
 
-[in]
+
 The following flag is defined: 
 
 

@@ -4,7 +4,6 @@ title: ClfsLsnGreater function (wdm.h)
 description: The ClfsLsnGreater routine determines whether one LSN is greater than another LSN. The two LSNs must be from the same stream.
 old-location: kernel\clfslsngreater.htm
 tech.root: kernel
-ms.assetid: 77ad073e-5dac-4d89-869e-547e1aec25da
 ms.date: 04/30/2018
 keywords: ["ClfsLsnGreater function"]
 ms.keywords: ClfsLsnGreater, ClfsLsnGreater routine [Kernel-Mode Driver Architecture], Clfs_e258803f-9e95-4601-9b4e-2d775836864b.xml, kernel.clfslsngreater, wdm/ClfsLsnGreater
@@ -51,14 +50,14 @@ The <b>ClfsLsnGreater</b> routine determines whether one LSN is greater than ano
 
 ## -parameters
 
-### -param plsn1 
+### -param plsn1 [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_lsn">CLFS_LSN</a> structure that supplies one of the LSNs to be compared.
 
-### -param plsn2 
+### -param plsn2 [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_lsn">CLFS_LSN</a> structure that supplies the other LSN to be compared.
 
 ## -returns

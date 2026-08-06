@@ -1,10 +1,9 @@
 ---
 UID: NF:wdtfpnpaction.IWDTFPNPActions2.EDTTryStopDevice
 title: IWDTFPNPActions2::EDTTryStopDevice (wdtfpnpaction.h)
-description: Attempts to send an IRP_MN_STOP_DEVICE event to the target device.
+description: Learn how the method attempts to send an IRP_MN_STOP_DEVICE event to the target device.
 old-location: dtf\iwdtfpnpactions2_edttrystopdevice.htm
 tech.root: dtf
-ms.assetid: 407210ca-7288-4647-b3ff-508bd8bb8e05
 ms.date: 04/04/2018
 keywords: ["IWDTFPNPActions2::EDTTryStopDevice"]
 ms.keywords: EDTTryStopDevice, EDTTryStopDevice method [Windows Device Testing Framework], EDTTryStopDevice method [Windows Device Testing Framework],IWDTFPNPActions2 interface, IWDTFPNPActions2 interface [Windows Device Testing Framework],EDTTryStopDevice method, IWDTFPNPActions2.EDTTryStopDevice, IWDTFPNPActions2::EDTTryStopDevice, dtf.iwdtfpnpactions2_edttrystopdevice, wdtfpnpaction/IWDTFPNPActions2::EDTTryStopDevice
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdtfpnpaction.h
 api_name:
- - IWDTFPNPActions2.EDTTryStopDevice
+ - IWDTFPNPActions2::EDTTryStopDevice
 ---
 
 # IWDTFPNPActions2::EDTTryStopDevice
@@ -50,9 +49,9 @@ Attempts to send an IRP_MN_STOP_DEVICE event to the target device.
 
 ## -parameters
 
-### -param pbSuccess 
+### -param pbSuccess [out, retval]
 
-[out, retval]
+
 True if the operation succeeds; otherwise, false.
 
 ## -returns
@@ -77,6 +76,3 @@ the drivers and applications handle the PnP resource rebalance, you can instead 
 which does consume hardware resources. For example, if your device is a USB mouse, you can run 
 <b>EDTTryStopDevice</b> on the parent USB controller instead.
 
-## -see-also
-
-<a href="/windows-hardware/drivers/ddi/index">IWDTFPNPActions2</a>

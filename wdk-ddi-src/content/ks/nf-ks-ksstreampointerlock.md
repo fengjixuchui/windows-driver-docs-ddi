@@ -4,7 +4,6 @@ title: KsStreamPointerLock function (ks.h)
 description: The KsStreamPointerLock function attempts to lock the specified stream pointer.
 old-location: stream\ksstreampointerlock.htm
 tech.root: stream
-ms.assetid: eb960301-2afa-42f7-a2ea-129d85c49db9
 ms.date: 04/23/2018
 keywords: ["KsStreamPointerLock function"]
 ms.keywords: KsStreamPointerLock, KsStreamPointerLock function [Streaming Media Devices], avfunc_c7a4d7fb-9708-480d-a452-f398637bc82a.xml, ks/KsStreamPointerLock, stream.ksstreampointerlock
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ks.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,9 +50,9 @@ The<b> KsStreamPointerLock </b>function attempts to lock the specified stream po
 
 ## -parameters
 
-### -param StreamPointer 
+### -param StreamPointer [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksstream_pointer">KSSTREAM_POINTER</a> structure representing the stream pointer to attempt to lock.
 
 ## -returns

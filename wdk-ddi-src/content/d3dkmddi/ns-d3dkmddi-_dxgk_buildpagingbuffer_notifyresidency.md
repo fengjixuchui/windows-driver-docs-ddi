@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY
 title: _DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY (d3dkmddi.h)
 description: DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY describes a residency allocation change operation.
 old-location: display\dxgk_buildpagingbuffer_notifyresidency.htm
-ms.assetid: 0E70F621-03CD-4593-88C7-DF6F2ADC902A
 ms.date: 05/10/2018
 keywords: ["DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY structure"]
 ms.keywords: DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY, DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY structure [Display Devices], _DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY, d3dkmddi/DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY, display.dxgk_buildpagingbuffer_notifyresidency
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY
  - DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY
 ---
 
@@ -86,3 +86,4 @@ Note that the <i>NotifyResidency</i> operation will be issued only once during a
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation">DxgkDdiCreateAllocation</a>
+

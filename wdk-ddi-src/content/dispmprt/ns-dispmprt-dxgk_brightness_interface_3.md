@@ -1,85 +1,102 @@
 ---
 UID: NS:dispmprt.DXGK_BRIGHTNESS_INTERFACE_3
 title: DXGK_BRIGHTNESS_INTERFACE_3 (dispmprt.h)
-description:
-ms.assetid: eccaf527-4b7b-4ebb-a2ab-e4d94a1d357d
-ms.date: 10/19/2018
-keywords: ["DXGK_BRIGHTNESS_INTERFACE_3 structure"]
+description: "Learn more about: DXGK_BRIGHTNESS_INTERFACE_3 structure"
+ms.date: 08/14/2025
+req.header: dispmprt.h
+req.include-header: 
+req.target-type: 
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.kmdf-ver: 
+req.umdf-ver: 
+req.lib: 
+req.dll: 
+req.ddi-compliance: 
+req.unicode-ansi: 
+req.max-support: 
+req.typenames: DXGK_BRIGHTNESS_INTERFACE_3, *PDXGK_BRIGHTNESS_INTERFACE_3
+targetos: Windows
+tech.root: display
 f1_keywords:
  - "dispmprt/DXGK_BRIGHTNESS_INTERFACE_3"
  - "DXGK_BRIGHTNESS_INTERFACE_3"
-ms.keywords: DXGK_BRIGHTNESS_INTERFACE_3, *PDXGK_BRIGHTNESS_INTERFACE_3, DXGK_BRIGHTNESS_INTERFACE_3,
-req.header: dispmprt.h
-req.include-header:
-req.target-type:
-req.target-min-winverclnt:
-req.target-min-winversvr:
-req.kmdf-ver:
-req.umdf-ver:
-req.lib:
-req.dll:
-req.ddi-compliance:
-req.unicode-ansi:
-req.max-support:
-req.typenames: DXGK_BRIGHTNESS_INTERFACE_3, *PDXGK_BRIGHTNESS_INTERFACE_3
 topic_type:
-- apiref
+ - apiref
 api_type:
-- HeaderDef
+ - HeaderDef
 api_location:
-- dispmprt.h
+ - dispmprt.h
 api_name:
-- DXGK_BRIGHTNESS_INTERFACE_3
-product: 
-- Windows
-targetos: Windows
-tech.root: display
+ - DXGK_BRIGHTNESS_INTERFACE_3
 ---
-
-# DXGK_BRIGHTNESS_INTERFACE_3 structure
 
 ## -description
 
-Contains pointers to functions in the Panel Brightness Control Interface Version 3. Used by Windows Display Driver Model (WDDM) 2.4 and later display miniport drivers that supports multiple displays that can be set to calibrated nit-based brightness levels.
+The **DXGK_BRIGHTNESS_INTERFACE_3** structure contains pointers to the kernel-mode display driver's (KMD) functions for Version 3 of the Panel Brightness Control Interface.
 
 ## -struct-fields
 
-### -field Size
+### -field Size [in]
 
-[in] The size, in bytes, of this structure.
+The size, in bytes, of this structure.
 
-### -field Version
+### -field Version [in]
 
-[in] The version number of the brightness interface. Version number constants are defined in Dispmprt.h.
+The version number of the brightness interface. Must be set to **DXGK_BRIGHTNESS_INTERFACE_VERSION_3**. Version number constants are defined in *Dispmprt.h*.
 
-### -field Context
+### -field Context [out]
 
-[out] A pointer to a private context block.
+A pointer to a private context block.
 
-### -field InterfaceReference
+### -field InterfaceReference [out]
 
-[out] A pointer to an interface reference function that is implemented by the display miniport driver.
+A pointer to an interface reference function that is implemented by the KMD.
 
-### -field InterfaceDereference
+### -field InterfaceDereference [out]
 
-[out] A pointer to an interface dereference function that is implemented by the display miniport driver.
+A pointer to an interface dereference function that is implemented by the KMD.
 
-### -field SetBrightness
+### -field SetBrightness [out]
 
-[out] A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_set_3.md">DxgkDdiSetBrightness3</a> function.
+A pointer to the KMD's [DxgkDdiSetBrightness3](nc-dispmprt-dxgk_brightness_set_3.md) function.
 
-### -field GetBrightness
+### -field GetBrightness [out]
 
-[out] A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_get_3.md">DxgkDdiGetBrightness3</a> function.
+A pointer to the KMD's [DxgkDdiGetBrightness3](nc-dispmprt-dxgk_brightness_get_3.md) function.
 
-### -field GetBrightnessCaps
+### -field GetBrightnessCaps [out]
 
-[out] A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_get_caps_3.md">DxgkDdiGetBrightnessCaps3</a> function. This function is available starting with Windows 10.
+A pointer to the KMD's [DxgkDdiGetBrightnessCaps3](nc-dispmprt-dxgk_brightness_get_caps_3.md) function. This function is available starting with Windows 10.
 
-### -field GetNitRanges
+### -field GetNitRanges [out]
 
-[out] A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_get_nit_ranges.md">DxgkDdiGetNitRanges</a> function. This function is available starting with Windows 10.
+A pointer to the KMD's [DxgkDdiGetNitRanges](nc-dispmprt-dxgk_brightness_get_nit_ranges.md) function. This function is available starting with Windows 10.
 
-### -field SetBacklightOptimization
+### -field SetBacklightOptimization [out]
 
-[out] A pointer to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgk_brightness_set_backlight_optimization_3.md">DxgkBrightnessSetBacklightOptimization3</a> function. This function is available starting with Windows 10.
+A pointer to the KMD's [DxgkBrightnessSetBacklightOptimization3](nc-dispmprt-dxgk_brightness_set_backlight_optimization_3.md) function. This function is available starting with Windows 10.
+
+## -remarks
+
+Version 3 is used by Windows Display Driver Model (WDDM) 2.4 and later KMDs that support multiple displays that can be set to calibrated nit-based brightness levels.
+
+A kernel-mode component such as *Dxgkrnl* that must use the brightness interface initiates a call to the KMD's [DxgkDdiQueryInterface](nc-dispmprt-dxgkddi_query_interface.md) function to retrieve the interface and passes a GUID_DEVINTERFACE_BRIGHTNESS_3 in the **InterfaceType** member of the [QUERY_INTERFACE](../video/ns-video-_query_interface.md) structure that the **QueryInterface** parameter points to.
+
+For more information, see [Supporting brightness controls on integrated display panels](/windows-hardware/drivers/display/supporting-brightness-controls-on-integrated-display-panels).
+
+## -see-also
+
+[DXGK_BRIGHTNESS_INTERFACE_2](ns-dispmprt-dxgk_brightness_interface_2.md)
+
+[DXGK_BRIGHTNESS_INTERFACE](ns-dispmprt-dxgk_brightness_interface.md)
+
+[DxgkDdiGetBrightness3](nc-dispmprt-dxgk_brightness_get_3.md)
+
+[DxgkDdiGetPossibleBrightness](nc-dispmprt-dxgk_brightness_get_possible.md)
+
+[DxgkddiQueryInterface](nc-dispmprt-dxgkddi_query_interface.md)
+
+[DxgkDdiSetBrightness3](nc-dispmprt-dxgk_brightness_set_3.md)
+
+[QUERY_INTERFACE](../video/ns-video-_query_interface.md)

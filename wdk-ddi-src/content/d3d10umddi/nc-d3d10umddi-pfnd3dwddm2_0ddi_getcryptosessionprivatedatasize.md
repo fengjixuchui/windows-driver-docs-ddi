@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3DWDDM2_0DDI_GETCRYPTOSESSIONPRIVATEDATASIZE
 title: PFND3DWDDM2_0DDI_GETCRYPTOSESSIONPRIVATEDATASIZE (d3d10umddi.h)
 description: GetCryptoSessionPrivateDataSize retrieves sizes for optional private driver data.
 old-location: display\getcryptosessionprivatedatasize.htm
-ms.assetid: 1D135203-AA20-4D5D-A0F2-A53BDF5104C0
 ms.date: 05/10/2018
 keywords: ["PFND3DWDDM2_0DDI_GETCRYPTOSESSIONPRIVATEDATASIZE callback function"]
 ms.keywords: PFND3DWDDM2_0DDI_GETCRYPTOSESSIONPRIVATEDATASIZE, PFND3DWDDM2_0DDI_GETCRYPTOSESSIONPRIVATEDATASIZE callback, d3d10umddi/pfnGetCryptoSessionPrivateDataSize, display.getcryptosessionprivatedatasize, pfnGetCryptoSessionPrivateDataSize, pfnGetCryptoSessionPrivateDataSize callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnGetCryptoSessionPrivateDataSize
-product:
- - Windows
+ - PFND3DWDDM2_0DDI_GETCRYPTOSESSIONPRIVATEDATASIZE
 ---
 
 # PFND3DWDDM2_0DDI_GETCRYPTOSESSIONPRIVATEDATASIZE callback function
@@ -106,3 +103,4 @@ When <b>pKeyExchangeType</b> is <b>D3D11_KEY_EXCHANGE_HW_PROTECTION</b>, the fol
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_createdevice">D3DDDIARG_CREATEDEVICE</a>
+

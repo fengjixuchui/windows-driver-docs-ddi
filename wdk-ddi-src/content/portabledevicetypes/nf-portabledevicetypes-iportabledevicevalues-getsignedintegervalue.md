@@ -4,7 +4,6 @@ title: IPortableDeviceValues::GetSignedIntegerValue (portabledevicetypes.h)
 description: Retrieves a LONG value (type VT_I4) that is specified by a key.
 old-location: wpddk\iportabledevicevalues_getsignedintegervalue.htm
 tech.root: wpd_dk
-ms.assetid: 4867effa-a471-498f-9b06-e66204fa139c
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::GetSignedIntegerValue"]
 ms.keywords: GetSignedIntegerValue, GetSignedIntegerValue method, GetSignedIntegerValue method,IPortableDeviceValues interface, IPortableDeviceValues interface,GetSignedIntegerValue method, IPortableDeviceValues.GetSignedIntegerValue, IPortableDeviceValues::GetSignedIntegerValue, IPortableDeviceValuesGetSignedIntegerValue, portabledevicetypes/IPortableDeviceValues::GetSignedIntegerValue, wpddk.iportabledevicevalues_getsignedintegervalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.GetSignedIntegerValue
+ - IPortableDeviceValues::GetSignedIntegerValue
 ---
 
 # IPortableDeviceValues::GetSignedIntegerValue
@@ -51,14 +50,14 @@ Retrieves a <b>LONG</b> value (type VT_I4) that is specified by a key.
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> key that specifies the item to retrieve.
 
-### -param pValue 
+### -param pValue [out]
 
-[out]
+
 Pointer to the retrieved <b>LONG</b> value.
 
 ## -returns
@@ -116,3 +115,4 @@ None.
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-setsignedintegervalue">IPortableDeviceValues::SetSignedIntegerValue</a>
+

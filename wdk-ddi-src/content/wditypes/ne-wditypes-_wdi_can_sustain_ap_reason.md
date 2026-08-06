@@ -4,7 +4,6 @@ title: _WDI_CAN_SUSTAIN_AP_REASON (wditypes.h)
 description: The WDI_CAN_SUSTAIN_AP_REASON enumeration defines the reasons the port is ready to receive a OID_WDI_TASK_START_AP request.
 old-location: netvista\wdi_can_sustain_ap_reason.htm
 tech.root: netvista
-ms.assetid: 9AAE4B3F-7C5C-457D-9388-63E6E6AB8A2E
 ms.date: 05/02/2018
 keywords: ["WDI_CAN_SUSTAIN_AP_REASON enumeration"]
 ms.keywords: WDI_CAN_SUSTAIN_AP_REASON, WDI_CAN_SUSTAIN_AP_REASON enumeration [Network Drivers Starting with Windows Vista], WDI_CAN_SUSTAIN_AP_REASON_IHV_END, WDI_CAN_SUSTAIN_AP_REASON_IHV_START, _WDI_CAN_SUSTAIN_AP_REASON, netvista.wdi_can_sustain_ap_reason, wditypes/WDI_CAN_SUSTAIN_AP_REASON, wditypes/WDI_CAN_SUSTAIN_AP_REASON_IHV_END, wditypes/WDI_CAN_SUSTAIN_AP_REASON_IHV_START
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_CAN_SUSTAIN_AP_REASON
  - WDI_CAN_SUSTAIN_AP_REASON
 ---
 
@@ -47,6 +47,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_CAN_SUSTAIN_AP_REASON enumeration defines the reasons the port is ready to receive a <a href="/windows-hardware/drivers/network/oid-wdi-task-start-ap">OID_WDI_TASK_START_AP</a> request.
 
@@ -59,3 +62,4 @@ The start value of possible IHV-specified reasons.
 ### -field WDI_CAN_SUSTAIN_AP_REASON_IHV_END
 
 The end value of possible IHV-specified reasons.
+

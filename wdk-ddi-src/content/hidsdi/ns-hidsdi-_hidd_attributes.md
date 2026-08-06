@@ -4,7 +4,6 @@ title: _HIDD_ATTRIBUTES (hidsdi.h)
 description: The HIDD_ATTRIBUTES structure contains vendor information about a HIDClass device.
 old-location: hid\hidd_attributes.htm
 tech.root: hid
-ms.assetid: 31bfa863-459f-4fb2-af41-2d40d0396dd7
 ms.date: 04/30/2018
 keywords: ["HIDD_ATTRIBUTES structure"]
 ms.keywords: "*PHIDD_ATTRIBUTES, HIDD_ATTRIBUTES, HIDD_ATTRIBUTES structure [Human Input Devices], PHIDD_ATTRIBUTES, PHIDD_ATTRIBUTES structure pointer [Human Input Devices], _HIDD_ATTRIBUTES, hid.hidd_attributes, hidsdi/HIDD_ATTRIBUTES, hidsdi/PHIDD_ATTRIBUTES, hidstrct_450ed87e-655a-414d-b24a-8b1aec7564b8.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hidsdi.h
 api_name:
+ - _HIDD_ATTRIBUTES
+ - PHIDD_ATTRIBUTES
  - HIDD_ATTRIBUTES
 ---
 
@@ -79,3 +80,4 @@ Before using a HIDD_ATTRIBUTES structure with <a href="/windows-hardware/drivers
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/hidsdi/nf-hidsdi-hidd_getattributes">HidD_GetAttributes</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11._DOT11_SUPPORTED_DATA_RATES_VALUE_V2
 title: _DOT11_SUPPORTED_DATA_RATES_VALUE_V2 (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_SUPPORTED_DATA_RATES_VALUE_V2 structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_supported_data_rates_value_v2.htm
 tech.root: netvista
-ms.assetid: 2407204b-215c-481e-876d-740bc3d55ee3
 ms.date: 02/16/2018
 keywords: ["DOT11_SUPPORTED_DATA_RATES_VALUE_V2 structure"]
 ms.keywords: "*PDOT11_SUPPORTED_DATA_RATES_VALUE_V1, *PDOT11_SUPPORTED_DATA_RATES_VALUE_V2, DOT11_SUPPORTED_DATA_RATES_VALUE_V1, DOT11_SUPPORTED_DATA_RATES_VALUE_V2, DOT11_SUPPORTED_DATA_RATES_VALUE_V2 structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_20f2b1ba-9639-4a8b-b5c1-f7441300bea5.xml, PDOT11_SUPPORTED_DATA_RATES_VALUE_V2, PDOT11_SUPPORTED_DATA_RATES_VALUE_V2 structure pointer [Network Drivers Starting with Windows Vista], _DOT11_SUPPORTED_DATA_RATES_VALUE_V2, netvista.dot11_supported_data_rates_value_v2, windot11/DOT11_SUPPORTED_DATA_RATES_VALUE_V2, windot11/PDOT11_SUPPORTED_DATA_RATES_VALUE_V2"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - windot11.h
 api_name:
+ - _DOT11_SUPPORTED_DATA_RATES_VALUE_V2
+ - PDOT11_SUPPORTED_DATA_RATES_VALUE_V2
  - DOT11_SUPPORTED_DATA_RATES_VALUE_V2
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_SUPPORTED_DATA_RATES_VALUE_V2 structure
@@ -52,7 +51,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_SUPPORTED_DATA_RATES_VALUE_V2 structure specifies a list of transmit and receive data rates
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_SUPPORTED_DATA_RATES_VALUE_V2 structure specifies a list of transmit and receive data rates
   for a PHY on the 802.11 station.
 
 ## -struct-fields
@@ -111,3 +113,4 @@ If the number of supported rates in either array is less than 255, the miniport 
 
 <a href="/windows-hardware/drivers/network/oid-dot11-supported-data-rates-value">
    OID_DOT11_SUPPORTED_DATA_RATES_VALUE</a>
+

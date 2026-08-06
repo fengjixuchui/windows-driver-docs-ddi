@@ -4,7 +4,6 @@ title: PCONVERTSTREAMTOTREE (bthsdpddi.h)
 description: The Bluetooth SdpConvertStreamToTree function is used to create a Microsoft proprietary tree-based representation of an SDP record, while leaving the original stream-based representation unmodified.
 old-location: bltooth\sdpconvertstreamtotree.htm
 tech.root: bltooth
-ms.assetid: 3b285a32-c1bc-4103-aa2e-0f6c8f5cc7ec
 ms.date: 04/27/2018
 keywords: ["PCONVERTSTREAMTOTREE callback function"]
 ms.keywords: PCONVERTSTREAMTOTREE, PCONVERTSTREAMTOTREE callback, SdpConvertStreamToTree, SdpConvertStreamToTree callback function [Bluetooth Devices], bltooth.sdpconvertstreamtotree, bth_funcs_7155961d-c993-428b-a16e-4fdcf85e28c2.xml, bthsdpddi/SdpConvertStreamToTree
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - BthSdpddi.h
 api_name:
- - SdpConvertStreamToTree
-product:
- - Windows
+ - PCONVERTSTREAMTOTREE
 ---
 
 # PCONVERTSTREAMTOTREE callback function
@@ -109,7 +106,7 @@ Each SDP_NODE structure contains an
     <code>Node.hdr.Link.Blink</code>, drivers can obtain the addresses of peer
     nodes in the tree. Keep in mind that the pointers in the LIST_ENTRY structure hold addresses to other
     LIST_ENTRY structures, and that Bluetooth drivers must use the 
-    <a href="/windows-hardware/drivers/kernel/mm-bad-pointer">CONTAINING_RECORD</a> memory manager macro to
+    [**CONTAINING_RECORD**](/windows/win32/api/ntdef/nf-ntdef-containing_record) memory manager macro to
     extract the address of the containing node record.
 
 By using the 
@@ -120,7 +117,7 @@ By using the
     <b>SDP_TYPE_SEQUENCE</b>, the node is an SDP sequence. If the data type of the node is 
     <b>SDP_TYPE_ALTERNATIVE</b>, the node is an SDP alternative sequence. In the first case, the sequence
     member is valid and contains the information necessary to access the portion of the tree corresponding
-    with the sequnce. In the second case, the alternative member is valid and contains the information
+    with the sequence. In the second case, the alternative member is valid and contains the information
     necessary to access the portion of the tree corresponding to the alternative. The 
     <b>sequence</b> or 
     <b>alternative</b> member, when used, contains an extra SDP_NODE_HEADER structure that is used to access
@@ -143,7 +140,7 @@ Bluetooth profile drivers can obtain a pointer to this function through the
 
 
 
-<a href="/windows-hardware/drivers/kernel/mm-bad-pointer">CONTAINING_RECORD</a>
+[**CONTAINING_RECORD**](/windows/win32/api/ntdef/nf-ntdef-containing_record)
 
 
 
@@ -168,3 +165,4 @@ Bluetooth profile drivers can obtain a pointer to this function through the
 
 
 <a href="/windows-hardware/drivers/ddi/sdplib/nf-sdplib-sdpfreetree">SdpFreeTree</a>
+

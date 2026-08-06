@@ -4,7 +4,6 @@ title: PFND3DDDI_SETSTREAMSOURCEFREQ (d3dumddi.h)
 description: The SetStreamSourceFreq function sets the frequency divisor of a stream source that is bound to a vertex buffer.
 old-location: display\setstreamsourcefreq.htm
 tech.root: display
-ms.assetid: 92cb270c-1548-4239-81cd-5b3483769fc8
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETSTREAMSOURCEFREQ callback function"]
 ms.keywords: PFND3DDDI_SETSTREAMSOURCEFREQ, PFND3DDDI_SETSTREAMSOURCEFREQ callback, SetStreamSourceFreq, SetStreamSourceFreq callback function [Display Devices], UserModeDisplayDriver_Functions_4cb72b36-4cea-424f-b7a3-149435170f24.xml, d3dumddi/SetStreamSourceFreq, display.setstreamsourcefreq
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - SetStreamSourceFreq
-product:
- - Windows
+ - PFND3DDDI_SETSTREAMSOURCEFREQ
 ---
 
 # PFND3DDDI_SETSTREAMSOURCEFREQ callback function
@@ -56,7 +53,7 @@ The <i>SetStreamSourceFreq</i> function sets the frequency divisor of a stream s
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -104,3 +101,4 @@ The driver ignores the setting of a stream's frequency divisor either for indexe
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_drawprimitive">DrawPrimitive</a>
+

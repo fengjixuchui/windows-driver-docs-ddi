@@ -4,7 +4,6 @@ title: IMiniportWaveRTOutputStream::SetWritePacket (portcls.h)
 description: SetWritePacket informs the driver that the OS has written valid data to the WaveRT buffer.
 old-location: audio\iminiportwavertoutputstream_setwritepacket.htm
 tech.root: audio
-ms.assetid: 28C73FBA-9122-4CFD-959E-495062CEEF41
 ms.date: 05/08/2018
 keywords: ["IMiniportWaveRTOutputStream::SetWritePacket"]
 ms.keywords: IMiniportWaveRTOutputStream interface [Audio Devices],SetWritePacket method, IMiniportWaveRTOutputStream.SetWritePacket, IMiniportWaveRTOutputStream::SetWritePacket, SetWritePacket, SetWritePacket method [Audio Devices], SetWritePacket method [Audio Devices],IMiniportWaveRTOutputStream interface, audio.iminiportwavertoutputstream_setwritepacket, portcls/IMiniportWaveRTOutputStream::SetWritePacket
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Passive level
+req.irql: PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWaveRTOutputStream.SetWritePacket
+ - IMiniportWaveRTOutputStream::SetWritePacket
 ---
 
 # IMiniportWaveRTOutputStream::SetWritePacket
@@ -50,21 +49,21 @@ SetWritePacket informs the driver that the OS has written valid data to the Wave
 
 ## -parameters
 
-### -param PacketNumber 
+### -param PacketNumber [in]
 
-[in]
+
 The number of the packet written by the OS to the WaveRT buffer.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Additional attributes related to the packet or stream.
 
 KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM - This flag indicates that this packet represents the end of the data stream.
 
-### -param EosPacketLength 
+### -param EosPacketLength [in]
 
-[in]
+
 The length of the EOS packet if KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM is specified in Flags. Zero is a valid value. If KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM is not specified in Flags, this parameter is ignored.
 
 ## -returns
@@ -101,3 +100,4 @@ Depending on hardware capabilities, if the KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertoutputstream">IMiniportWaveRTOutputStream</a>
+

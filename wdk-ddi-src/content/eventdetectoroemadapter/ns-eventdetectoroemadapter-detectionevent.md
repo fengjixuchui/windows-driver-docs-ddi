@@ -3,7 +3,6 @@ UID: NS:eventdetectoroemadapter.__MIDL___MIDL_itf_eventdetectoroemadapter_0000_0
 title: DETECTIONEVENT
 description: Structure to specify uniquely supported detection events available.
 tech.root: audio
-ms.assetid: 6c9e3e30-1598-4537-bc76-da5ffc552de3
 ms.date: 04/11/2019
 keywords: ["DETECTIONEVENT structure"]
 ms.keywords: DETECTIONEVENT, DETECTIONEVENT,
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - eventdetectoroemadapter.h
 api_name:
+ - __MIDL___MIDL_itf_eventdetectoroemadapter_0000_0000_0003
  - DETECTIONEVENT
-product:
- - Windows
 ---
 
 # DETECTIONEVENT structure
@@ -79,3 +77,4 @@ This structure is the part of the Event Detector OEM interface to be used for ha
 - [eventdetectoroemadapter](../eventdetectoroemadapter/index.md)
 
 - [Audio](../_audio/index.md)
+

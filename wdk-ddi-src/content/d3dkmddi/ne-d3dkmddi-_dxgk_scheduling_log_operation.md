@@ -2,7 +2,6 @@
 UID: NE:d3dkmddi._DXGK_SCHEDULING_LOG_OPERATION
 title: _DXGK_SCHEDULING_LOG_OPERATION (d3dkmddi.h)
 description: Describes the log operations.
-ms.assetid: d1e9190a-1454-4faa-801b-a449a2864d1f
 ms.date: 10/19/2018
 keywords: ["DXGK_SCHEDULING_LOG_OPERATION enumeration"]
 ms.keywords: _DXGK_SCHEDULING_LOG_OPERATION, DXGK_SCHEDULING_LOG_OPERATION,
@@ -32,8 +31,7 @@ api_location:
  - d3dkmddi.h
 api_name:
  - _DXGK_SCHEDULING_LOG_OPERATION
-product:
- - Windows
+ - DXGK_SCHEDULING_LOG_OPERATION
 dev_langs:
  - c++
 ---

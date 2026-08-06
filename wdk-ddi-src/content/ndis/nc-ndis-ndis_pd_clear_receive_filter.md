@@ -4,7 +4,6 @@ title: NDIS_PD_CLEAR_RECEIVE_FILTER (ndis.h)
 description: The PacketDirect (PD) platform calls a PD-capable miniport driver's NdisPDClearReceiveFilter function to clear this filter from the PD platform.
 old-location: netvista\ndispdclearreceivefilter.htm
 tech.root: netvista
-ms.assetid: C91F2E5D-C37F-48A9-9AE0-F5A8C5D8F54D
 ms.date: 05/02/2018
 keywords: ["NDIS_PD_CLEAR_RECEIVE_FILTER callback function"]
 ms.keywords: NDIS_PD_CLEAR_RECEIVE_FILTER, NDIS_PD_CLEAR_RECEIVE_FILTER callback, NdisPDClearReceiveFilter, NdisPDClearReceiveFilter callback function [Network Drivers Starting with Windows Vista], ndis/NdisPDClearReceiveFilter, netvista.ndispdclearreceivefilter
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - NdisPDClearReceiveFilter
+ - NDIS_PD_CLEAR_RECEIVE_FILTER
 ---
 
 # NDIS_PD_CLEAR_RECEIVE_FILTER callback function
@@ -53,9 +52,9 @@ The PacketDirect (PD) platform calls a PD-capable miniport driver's
 
 ## -parameters
 
-### -param FilterHandle 
+### -param FilterHandle [in]
 
-[in]
+
 A handle to a PD platform filter.
 
 ## -returns
@@ -91,3 +90,4 @@ VOID
 The <b>NDIS_PD_CLEAR_RECEIVE_FILTER</b> function type is defined in the Ntddndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>NDIS_PD_CLEAR_RECEIVE_FILTER</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="/windows-hardware/drivers/devtest/declaring-functions-by-using-function-role-types-for-ndis-drivers">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
 For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-quality/annotating-function-behavior">Annotating Function Behavior</a>.
+

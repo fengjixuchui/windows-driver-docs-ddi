@@ -4,7 +4,6 @@ title: WdfIoResourceListAppendDescriptor function (wdfresource.h)
 description: The WdfIoResourceListAppendDescriptor method adds a resource descriptor to the end of a resource requirements list's logical configuration.
 old-location: wdf\wdfioresourcelistappenddescriptor.htm
 tech.root: wdf
-ms.assetid: da9213c1-e519-44ad-aabf-fd05bdbd2079
 ms.date: 02/26/2018
 keywords: ["WdfIoResourceListAppendDescriptor function"]
 ms.keywords: DFResourceObjectRef_547a6869-7e4a-4140-9851-0b1ca9810eaa.xml, WdfIoResourceListAppendDescriptor, WdfIoResourceListAppendDescriptor method, kmdf.wdfioresourcelistappenddescriptor, wdf.wdfioresourcelistappenddescriptor, wdfresource/WdfIoResourceListAppendDescriptor
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfIoResourceListAppendDescriptor</b> method adds a resource descriptor t
 
 ## -parameters
 
-### -param ResourceList 
+### -param ResourceList [in]
 
-[in]
+
 A handle to a framework resource-range-list object that represents a logical configuration of hardware resources for a device.
 
-### -param Descriptor 
+### -param Descriptor [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a> structure that describes a hardware resource.
 
 ## -returns

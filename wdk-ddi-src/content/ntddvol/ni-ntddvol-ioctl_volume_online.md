@@ -4,7 +4,6 @@ title: IOCTL_VOLUME_ONLINE (ntddvol.h)
 description: The IOCTL_VOLUME_ONLINE IOCTL puts the volume in an ONLINE state, which is a state where read and write operations will be executed.
 old-location: storage\ioctl_volume_online.htm
 tech.root: storage
-ms.assetid: 3391bda9-2eec-4c03-84ed-76b89e2c0cf0
 ms.date: 03/29/2018
 keywords: ["IOCTL_VOLUME_ONLINE IOCTL"]
 ms.keywords: IOCTL_VOLUME_ONLINE, IOCTL_VOLUME_ONLINE control, IOCTL_VOLUME_ONLINE control code [Storage Devices], k307_236159f9-4ec2-4dec-9d34-5b4ecb8a2147.xml, ntddvol/IOCTL_VOLUME_ONLINE, storage.ioctl_volume_online
@@ -57,6 +56,8 @@ But for volumes controlled by NoAutoMount, assigning a drive letter will cause <
 For volumes that are controlled by the cluster service, <b>IOCTL_VOLUME_ONLINE</b> is sent by the cluster service when the local node owns the volume. The cluster service uses both <b>IOCTL_VOLUME_ONLINE</b> and <b>IOCTL_VOLUME_ONLINE</b> to allow I/O to a disk volume when the disk volume is owned by the local server. Until the cluster service puts the disk volume in an ONLINE state, no I/O is permitted to the disk volume. This prevents disk volume corruption that could result from multiple cluster nodes writing to the same disk volume simultaneously.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

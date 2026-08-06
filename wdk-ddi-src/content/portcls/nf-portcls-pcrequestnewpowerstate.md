@@ -4,7 +4,6 @@ title: PcRequestNewPowerState function (portcls.h)
 description: The PcRequestNewPowerState function is used to request a new power state for the device. This function is typically not needed by adapter drivers but can occasionally be useful in working around some kinds of hardware problems.
 old-location: audio\pcrequestnewpowerstate.htm
 tech.root: audio
-ms.assetid: fbe2c665-a7e8-43e4-95e5-a7e87521e163
 ms.date: 05/08/2018
 keywords: ["PcRequestNewPowerState function"]
 ms.keywords: PcRequestNewPowerState, PcRequestNewPowerState function [Audio Devices], audio.pcrequestnewpowerstate, audpc-routines_c3341fb0-4609-4b3f-a0b2-ef589c804f1d.xml, portcls/PcRequestNewPowerState
@@ -51,15 +50,15 @@ The <b>PcRequestNewPowerState</b> function is used to request a new power state 
 
 ## -parameters
 
-### -param pDeviceObject 
+### -param pDeviceObject [in]
 
-[in]
+
 Pointer to the adapter's <a href="/windows-hardware/drivers/">functional device object (FDO)</a>. This parameter must point to a system structure of type <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a>.
 
-### -param RequestedNewState 
+### -param RequestedNewState [in]
 
-[in]
-Specifies the device power state being requested. Set this parameter to one of the following DEVICE_POWER_STATE enumeration values: <b>PowerDeviceD0</b>, <b>PowerDeviceD1</b>, <b>PowerDeviceD2</b>, or <b>PowerDeviceD3</b>.
+
+Specifies the device power state being requested. Set this parameter to one of the following <a href="/windows-hardware/drivers/ddi/wudfddi/ne-wudfddi-_device_power_state">DEVICE_POWER_STATE</a> enumeration values: <b>PowerDeviceD0</b>, <b>PowerDeviceD1</b>, <b>PowerDeviceD2</b>, or <b>PowerDeviceD3</b>.
 
 ## -returns
 
@@ -69,7 +68,7 @@ Specifies the device power state being requested. Set this parameter to one of t
 
 An adapter driver can call <b>PcRequestNewPowerState</b> to compensate for hardware design flaws. For example, if the functions in an audio adapter are not mutually independent and need to be shut down in a particular order, the adapter can call <b>PcRequestNewPowerState</b> to ensure that a particular subdevice is shut down first.
 
-The <b>RequestedNewState</b> parameter can be set to one of the DEVICE_POWER_STATE enumeration values in the following table.
+The <b>RequestedNewState</b> parameter can be set to one of the <a href="/windows-hardware/drivers/ddi/wudfddi/ne-wudfddi-_device_power_state">DEVICE_POWER_STATE</a> enumeration values in the following table.
 
 <table>
 <tr>

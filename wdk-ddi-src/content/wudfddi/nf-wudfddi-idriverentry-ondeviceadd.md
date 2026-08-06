@@ -4,7 +4,6 @@ title: IDriverEntry::OnDeviceAdd (wudfddi.h)
 description: The OnDeviceAdd method adds a new device to a system.
 old-location: wdf\idriverentry_ondeviceadd.htm
 tech.root: wdf
-ms.assetid: f2953b0d-6745-4804-bcda-47c7ddfb901f
 ms.date: 02/26/2018
 keywords: ["IDriverEntry::OnDeviceAdd"]
 ms.keywords: IDriverEntry interface,OnDeviceAdd method, IDriverEntry.OnDeviceAdd, IDriverEntry::OnDeviceAdd, OnDeviceAdd, OnDeviceAdd method, OnDeviceAdd method,IDriverEntry interface, UMDFDriverObjectRef_81d1022a-84b6-4a2e-a227-57f30c515171.xml, umdf.idriverentry_ondeviceadd, wdf.idriverentry_ondeviceadd, wudfddi/IDriverEntry::OnDeviceAdd
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IDriverEntry.OnDeviceAdd
+ - IDriverEntry::OnDeviceAdd
 ---
 
 # IDriverEntry::OnDeviceAdd
@@ -52,14 +51,14 @@ The <b>OnDeviceAdd</b> method adds a new device to a system.
 
 ## -parameters
 
-### -param pWdfDriver 
+### -param pWdfDriver [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdriver">IWDFDriver</a> interface for the parent driver object that the new device belongs to.
 
-### -param pWdfDeviceInit 
+### -param pWdfDeviceInit [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdeviceinitialize">IWDFDeviceInitialize</a> interface that the driver uses to initialize the newly created device.
 
 ## -returns
@@ -99,3 +98,4 @@ For more information, see <a href="/windows-hardware/drivers/wdf/adding-a-device
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createdevice">IWDFDriver::CreateDevice</a>
+

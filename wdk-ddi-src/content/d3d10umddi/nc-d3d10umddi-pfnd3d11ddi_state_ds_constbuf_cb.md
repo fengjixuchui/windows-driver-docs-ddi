@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_STATE_DS_CONSTBUF_CB
 title: PFND3D11DDI_STATE_DS_CONSTBUF_CB (d3d10umddi.h)
 description: The pfnStateDsConstBufCb function causes the Microsoft Direct3D 11 runtime to refresh the domain shader constant buffer state.
 old-location: display\pfnstatedsconstbufcb.htm
-ms.assetid: 8170be69-3e75-4e33-a123-3039e3f9d0c0
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_STATE_DS_CONSTBUF_CB callback function"]
 ms.keywords: PFND3D11DDI_STATE_DS_CONSTBUF_CB, PFND3D11DDI_STATE_DS_CONSTBUF_CB callback, d3d10umddi/pfnStateDsConstBufCb, d3d11state_functions_5672a801-6215-48f3-b107-82281c9e8a9d.xml, display.pfnstatedsconstbufcb, pfnStateDsConstBufCb, pfnStateDsConstBufCb callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - pfnStateDsConstBufCb
+ - PFND3D11DDI_STATE_DS_CONSTBUF_CB
 ---
 
 # PFND3D11DDI_STATE_DS_CONSTBUF_CB callback function
@@ -50,19 +49,19 @@ The <b>pfnStateDsConstBufCb</b> function causes the Microsoft Direct3D 11 runtim
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hRuntimeDevice* [in]
 
 A handle to a context for the core Direct3D runtime. This handle is supplied to the driver in a call to the driver's <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdevice">CreateDevice(D3D10)</a> function.
 
-### -param Arg2
+### -param unnamedParam2
 
 *Base* [in]
 
 The beginning constant buffer for which the runtime should refresh state.
 
-### -param Arg3
+### -param unnamedParam3
 
 *Count* [in]
 
@@ -75,3 +74,4 @@ The total number of constant buffers. The number can be -1, which specifies that
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11ddi_corelayer_devicecallbacks">D3D11DDI_CORELAYER_DEVICECALLBACKS</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:ntddk.MmFreeContiguousMemorySpecifyCache
 title: MmFreeContiguousMemorySpecifyCache function (ntddk.h)
-description: The MmFreeContiguousMemorySpecifyCache routine frees a buffer that was allocated by an MmAllocateContiguousMemorySpecifyCacheXxx routine.
+description: The MmFreeContiguousMemorySpecifyCache routine frees a buffer that was allocated by a MmAllocateContiguousMemorySpecifyCacheXxx routine.
 old-location: kernel\mmfreecontiguousmemoryspecifycache.htm
 tech.root: kernel
-ms.assetid: e5958dd7-b287-4f0d-8677-75d850885262
 ms.date: 04/30/2018
 keywords: ["MmFreeContiguousMemorySpecifyCache function"]
 ms.keywords: MmFreeContiguousMemorySpecifyCache, MmFreeContiguousMemorySpecifyCache routine [Kernel-Mode Driver Architecture], k106_256e3525-d48d-4045-872c-2e2fd6302525.xml, kernel.mmfreecontiguousmemoryspecifycache, wdm/MmFreeContiguousMemorySpecifyCache
@@ -50,19 +49,19 @@ The <b>MmFreeContiguousMemorySpecifyCache</b> routine frees a buffer that was al
 
 ## -parameters
 
-### -param BaseAddress 
+### -param BaseAddress [in]
 
-[in]
+
 Specifies the base address of the buffer to be freed. Must match the address returned by the <b>MmAllocateContiguousMemorySpecifyCache<i>Xxx</i></b> call that allocated the buffer.
 
-### -param NumberOfBytes 
+### -param NumberOfBytes [in]
 
-[in]
+
 Specifies the size in bytes of the buffer to be freed. Must match the size requested when the buffer was allocated by the <b>MmAllocateContiguousMemorySpecifyCache<i>Xxx</i></b> routine.
 
-### -param CacheType 
+### -param CacheType [in]
 
-[in]
+
 Specifies the cache type of the buffer to be freed. Must match the cache type requested when the buffer was allocated by the <b>MmAllocateContiguousMemorySpecifyCache<i>Xxx</i></b> routine.
 
 ## -remarks

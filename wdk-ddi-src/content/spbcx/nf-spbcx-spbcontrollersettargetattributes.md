@@ -4,7 +4,6 @@ title: SpbControllerSetTargetAttributes function (spbcx.h)
 description: The SpbControllerSetTargetAttributes method sets object attributes that will be used for all SPBTARGET objects that the SPB framework extension (SpbCx) delivers to the SPB controller driver.
 old-location: spb\spbcontrollersettargetattributes.htm
 tech.root: SPB
-ms.assetid: 8EC415AA-F578-42BF-B785-52613B20A2AC
 ms.date: 04/30/2018
 keywords: ["SpbControllerSetTargetAttributes function"]
 ms.keywords: SPB.spbcontrollersettargetattributes, SpbControllerSetTargetAttributes, SpbControllerSetTargetAttributes method [Buses], spbcx/SpbControllerSetTargetAttributes
@@ -51,14 +50,14 @@ The <b>SpbControllerSetTargetAttributes</b> method sets object attributes that w
 
 ## -parameters
 
-### -param FxDevice 
+### -param FxDevice [in]
 
-[in]
+
 A WDFDEVICE handle to the device object that represents the SPB controller.
 
-### -param ObjectAttributes 
+### -param ObjectAttributes [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the controller's SPBTARGET objects.
 
 ## -remarks

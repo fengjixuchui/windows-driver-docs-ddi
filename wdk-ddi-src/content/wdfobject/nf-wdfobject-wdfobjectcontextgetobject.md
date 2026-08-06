@@ -4,7 +4,6 @@ title: WdfObjectContextGetObject function (wdfobject.h)
 description: The WdfObjectContextGetObject method returns a handle to the framework object that a specified context space belongs to.
 old-location: wdf\wdfobjectcontextgetobject.htm
 tech.root: wdf
-ms.assetid: 7288a7e5-8e64-4ac3-9779-edc27a3888bb
 ms.date: 02/26/2018
 keywords: ["WdfObjectContextGetObject function"]
 ms.keywords: DFGenObjectRef_cf11ce54-dbb0-4835-919d-6f0bec903e2d.xml, WdfObjectContextGetObject, WdfObjectContextGetObject method, kmdf.wdfobjectcontextgetobject, wdf.wdfobjectcontextgetobject, wdfobject/WdfObjectContextGetObject
@@ -55,9 +54,9 @@ The <b>WdfObjectContextGetObject</b> method returns a handle to the framework ob
 
 ## -parameters
 
-### -param ContextPointer 
+### -param ContextPointer [in]
 
-[in]
+
 A pointer to object context space. The driver can obtain this pointer by calling <a href="/windows-hardware/drivers/wdf/wdfobjectgettypedcontext">WdfObjectGetTypedContext</a>.
 
 ## -returns

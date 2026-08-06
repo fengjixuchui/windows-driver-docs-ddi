@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_PREEMPTCOMMAND
 title: DXGKDDI_PREEMPTCOMMAND (d3dkmddi.h)
 description: The DxgkDdiPreemptCommand function preempts a direct memory access (DMA) buffer that was previously submitted to and currently queued in the hardware command execution unit.
 old-location: display\dxgkddipreemptcommand.htm
-ms.assetid: 8cea02d4-f25e-4ff4-8c9e-aa360a764c4b
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_PREEMPTCOMMAND callback function"]
 ms.keywords: DXGKDDI_PREEMPTCOMMAND, DXGKDDI_PREEMPTCOMMAND callback, DmFunctions_a378e47e-622c-41bf-95e7-21e4088d7026.xml, DxgkDdiPreemptCommand, DxgkDdiPreemptCommand callback function [Display Devices], d3dkmddi/DxgkDdiPreemptCommand, display.dxgkddipreemptcommand
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiPreemptCommand
-product:
- - Windows
+ - DXGKDDI_PREEMPTCOMMAND
 ---
 
 # DXGKDDI_PREEMPTCOMMAND callback function
@@ -52,13 +49,13 @@ The <i>DxgkDdiPreemptCommand</i> function preempts a direct memory access (DMA) 
 
 ## -parameters
 
-### -param hAdapter
+### -param hAdapter [in]
 
-[in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
+A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
 
-### -param pPreemptCommand
+### -param pPreemptCommand [in]
 
-[in] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_preemptcommand">DXGKARG_PREEMPTCOMMAND</a> structure that describes the command that is used to preempt a DMA buffer previously submitted to the hardware command execution unit.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_preemptcommand">DXGKARG_PREEMPTCOMMAND</a> structure that describes the command that is used to preempt a DMA buffer previously submitted to the hardware command execution unit.
 
 ## -returns
 
@@ -109,3 +106,4 @@ If the driver returns an error code, the Microsoft DirectX graphics kernel subsy
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_interrupt_routine">DxgkDdiInterruptRoutine</a>
+

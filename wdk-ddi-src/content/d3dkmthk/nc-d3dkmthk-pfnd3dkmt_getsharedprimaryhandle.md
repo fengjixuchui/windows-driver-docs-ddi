@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_GETSHAREDPRIMARYHANDLE
 title: PFND3DKMT_GETSHAREDPRIMARYHANDLE (d3dkmthk.h)
 description: Pfnd3dkmtGetsharedprimaryhandle retrieves the global shared handle for the primary surface.
-ms.assetid: 264423b0-f635-4530-a0e8-c9ac3dac9e4c
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_GETSHAREDPRIMARYHANDLE callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ Pfnd3dkmtGetsharedprimaryhandle retrieves the global shared handle for the prima
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_GETSHAREDPRIMARYHANDLE](ns-d3dkmthk-_d3dkmt_getsharedprimaryhandle.md) structure.
 

@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_CLOSEADAPTER
 title: _D3DKMT_CLOSEADAPTER (d3dkmthk.h)
 description: The D3DKMT_CLOSEADAPTER structure specifies the graphics adapter to close.
 old-location: display\d3dkmt_closeadapter.htm
-ms.assetid: ef85d18a-c4cd-4999-8782-19e4114a0594
 ms.date: 11/21/2018
 keywords: ["D3DKMT_CLOSEADAPTER structure"]
 ms.keywords: D3DKMT_CLOSEADAPTER, D3DKMT_CLOSEADAPTER structure [Display Devices], OpenGL_Structs_578046d6-1625-4485-b43c-16ce2b7e812c.xml, _D3DKMT_CLOSEADAPTER, d3dkmthk/D3DKMT_CLOSEADAPTER, display.d3dkmt_closeadapter
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_CLOSEADAPTER
  - D3DKMT_CLOSEADAPTER
 ---
 

@@ -4,7 +4,6 @@ title: EVT_UCX_USBDEVICE_RESET (ucxusbdevice.h)
 description: The client driver's implementation that UCX calls when the port to which the device is attached is reset.
 old-location: buses\evt_ucx_usbdevice_reset.htm
 tech.root: usbref
-ms.assetid: 6876e35c-f293-4849-915f-c686a9d91dd1
 ms.date: 05/07/2018
 keywords: ["EVT_UCX_USBDEVICE_RESET callback function"]
 ms.keywords: EVT_UCX_USBDEVICE_RESET, EVT_UCX_USBDEVICE_RESET callback, EvtUcxUsbDeviceReset, EvtUcxUsbDeviceReset callback function [Buses], PEVT_UCX_USBDEVICE_RESET, PEVT_UCX_USBDEVICE_RESET callback function pointer [Buses], buses.evt_ucx_usbdevice_reset, ucxusbdevice/EvtUcxUsbDeviceReset
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ucxusbdevice.h
 api_name:
- - PEVT_UCX_USBDEVICE_RESET
+ - EVT_UCX_USBDEVICE_RESET
 ---
 
 # EVT_UCX_USBDEVICE_RESET callback function
@@ -51,14 +50,14 @@ The client driver's implementation that UCX calls when the port to which the dev
 
 ## -parameters
 
-### -param UcxController 
+### -param UcxController [in]
 
-[in]
+
  A handle to the UCX controller that the client driver received in a previous call to  the <a href="/previous-versions/windows/hardware/drivers/mt188033(v=vs.85)">UcxControllerCreate</a> method.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 Contains the <a href="/windows-hardware/drivers/ddi/ucxusbdevice/ns-ucxusbdevice-_usbdevice_reset">USBDEVICE_RESET</a> structure.
 
 ## -remarks
@@ -95,7 +94,6 @@ UsbDevice_EvtUcxUsbDeviceReset(
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ucxusbdevice/ns-ucxusbdevice-_usbdevice_reset">USBDEVICE_RESET</a>
@@ -103,3 +101,4 @@ UsbDevice_EvtUcxUsbDeviceReset(
 
 
 <a href="/windows-hardware/drivers/ddi/ucxusbdevice/nf-ucxusbdevice-ucxusbdevicecreate">UcxUsbDeviceCreate</a>
+

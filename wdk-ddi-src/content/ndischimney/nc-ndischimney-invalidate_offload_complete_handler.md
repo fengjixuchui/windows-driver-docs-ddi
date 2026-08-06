@@ -4,7 +4,6 @@ title: INVALIDATE_OFFLOAD_COMPLETE_HANDLER (ndischimney.h)
 description: NDIS calls a protocol driver's or intermediate driver's ProtocolInvalidateOffloadComplete function to complete an invalidate operation that the driver previously initiated by calling the NdisInvalidateOffload function.
 old-location: netvista\protocolinvalidateoffloadcomplete.htm
 tech.root: netvista
-ms.assetid: 6d2c71d0-9686-4eb5-9715-27de3dc8b390
 ms.date: 05/02/2018
 keywords: ["INVALIDATE_OFFLOAD_COMPLETE_HANDLER callback function"]
 ms.keywords: INVALIDATE_OFFLOAD_COMPLETE_HANDLER, INVALIDATE_OFFLOAD_COMPLETE_HANDLER callback, ProtocolInvalidateOffloadComplete, ProtocolInvalidateOffloadComplete callback function [Network Drivers Starting with Windows Vista], ndischimney/ProtocolInvalidateOffloadComplete, netvista.protocolinvalidateoffloadcomplete, tcp_chim_protocol_func_af2a329a-730b-4ccb-afc6-702e88a763f2.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndischimney.h
 api_name:
- - ProtocolInvalidateOffloadComplete
+ - INVALIDATE_OFFLOAD_COMPLETE_HANDLER
 ---
 
 # INVALIDATE_OFFLOAD_COMPLETE_HANDLER callback function
@@ -55,17 +54,17 @@ NDIS calls a protocol driver's or intermediate driver's
 
 ## -parameters
 
-### -param ProtocolBindingContext 
+### -param ProtocolBindingContext [in]
 
-[in]
+
 A handle to a context area allocated by the protocol driver. The driver maintains the per binding
      context information in this context area. The driver supplied this handle to NDIS when the driver called
      the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a> function.
 
-### -param OffloadBlockList 
+### -param OffloadBlockList [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_protocol_offload_block_list">
      NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST</a> structure that can be a stand-alone structure or the root of a
@@ -121,3 +120,4 @@ From the NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure that was passed to its
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a>
+

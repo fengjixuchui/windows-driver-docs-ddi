@@ -4,7 +4,6 @@ title: PCREATE_PROCESS_NOTIFY_ROUTINE_EX (ntddk.h)
 description: A callback routine implemented by a driver to notify the caller when a process is created or exits.
 old-location: kernel\pcreate_process_notify_routine_ex.htm
 tech.root: kernel
-ms.assetid: 071BD24F-AA58-4A39-8059-CEF6D7105DB6
 ms.date: 04/30/2018
 keywords: ["PCREATE_PROCESS_NOTIFY_ROUTINE_EX callback function"]
 ms.keywords: PCREATE_PROCESS_NOTIFY_ROUTINE_EX, PCREATE_PROCESS_NOTIFY_ROUTINE_EX callback, SetCreateProcessNotifyRoutineEx, SetCreateProcessNotifyRoutineEx callback function [Kernel-Mode Driver Architecture], kernel.pcreate_process_notify_routine_ex, ntddk/SetCreateProcessNotifyRoutineEx
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ntddk.h
 api_name:
- - SetCreateProcessNotifyRoutineEx
+ - PCREATE_PROCESS_NOTIFY_ROUTINE_EX
 ---
 
 # PCREATE_PROCESS_NOTIFY_ROUTINE_EX callback function
@@ -47,23 +46,25 @@ api_name:
 ## -description
 
 A callback routine implemented by a driver to notify the caller when a process is created or exits.
-<div class="alert"><b>Warning</b>  The actions that  you can perform in this routine are restricted for safe calls. See <a href="/windows-hardware/drivers/kernel/windows-kernel-mode-process-and-thread-manager#best">Best Practices</a>. </div><div> </div>
+
+> [!WARNING]
+> The actions that you can perform in this routine are restricted for safe calls. See <a href="/windows-hardware/drivers/kernel/windows-kernel-mode-process-and-thread-manager#best">Best Practices</a>.
 
 ## -parameters
 
-### -param Process 
+### -param Process [_Inout_]
 
-[_Inout_]
+
 A pointer to the EPROCESS structure that represents the process. Drivers can use the [**PsGetCurrentProcess**](../wdm/nf-wdm-iogetcurrentprocess.md) and [**ObReferenceObjectByHandle**](../wdm/nf-wdm-obreferenceobjectbyhandle.md) routines to obtain a pointer to the EPROCESS structure for a process.
 
-### -param ProcessId 
+### -param ProcessId [in]
 
-[in]
+
 The process ID of the process.
 
-### -param CreateInfo 
+### -param CreateInfo [in, out, optional]
 
-[in, out, optional]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_ps_create_notify_info">PS_CREATE_NOTIFY_INFO</a> structure that contains information about the new process. If this parameter is NULL, the specified process is exiting.
 
 ## -remarks
@@ -77,3 +78,4 @@ Highest-level drivers call <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk
 
 
 <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pssetcreateprocessnotifyroutineex2">PsSetCreateProcessNotifyRoutineEx2</a>
+

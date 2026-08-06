@@ -4,7 +4,6 @@ title: KsGateInitializeAnd function (ks.h)
 description: The KsGateInitializeAnd function initializes a KSGATE structure as an AND gate and attaches it to the OR gate specified by NextOrGate.
 old-location: stream\ksgateinitializeand.htm
 tech.root: stream
-ms.assetid: ac03889a-1e02-4852-8ed9-487674c6e0de
 ms.date: 04/23/2018
 keywords: ["KsGateInitializeAnd function"]
 ms.keywords: KsGateInitializeAnd, KsGateInitializeAnd function [Streaming Media Devices], avfunc_9eb102c9-08f4-44f7-bc3e-889aa8f85f23.xml, ks/KsGateInitializeAnd, stream.ksgateinitializeand
@@ -50,14 +49,14 @@ The<b> KsGateInitializeAnd</b> function initializes a <a href="/windows-hardware
 
 ## -parameters
 
-### -param AndGate 
+### -param AndGate [in]
 
-[in]
+
 A pointer to the KSGATE structure to initialize as a new AND gate.
 
-### -param NextOrGate 
+### -param NextOrGate [in, optional]
 
-[in, optional]
+
 A pointer to an existing KSGATE structure to which <i>AndGate</i> attaches. This parameter should be an OR gate and is optional.
 
 ## -remarks

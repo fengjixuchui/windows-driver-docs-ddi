@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11._DOT11_STATUS_INDICATION
 title: _DOT11_STATUS_INDICATION (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_STATUS_INDICATION structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_status_indication.htm
 tech.root: netvista
-ms.assetid: 77b2eae8-1fa5-4f87-97e4-713bfca627b2
 ms.date: 02/16/2018
 keywords: ["DOT11_STATUS_INDICATION structure"]
 ms.keywords: "*PDOT11_STATUS_INDICATION, DOT11_STATUS_INDICATION, DOT11_STATUS_INDICATION structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_4bd90807-e039-426f-a5d9-daa7bca20bad.xml, PDOT11_STATUS_INDICATION, PDOT11_STATUS_INDICATION structure pointer [Network Drivers Starting with Windows Vista], _DOT11_STATUS_INDICATION, netvista.dot11_status_indication, windot11/DOT11_STATUS_INDICATION, windot11/PDOT11_STATUS_INDICATION"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - windot11.h
 api_name:
+ - _DOT11_STATUS_INDICATION
+ - PDOT11_STATUS_INDICATION
  - DOT11_STATUS_INDICATION
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_STATUS_INDICATION structure
@@ -52,7 +51,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_STATUS_INDICATION structure returns the completion results of an operation that is
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_STATUS_INDICATION structure returns the completion results of an operation that is
   performed by a set request of a Native 802.11 OID.
 
 ## -struct-fields
@@ -93,3 +95,4 @@ For the Windows Vista operating system, only
 ## -see-also
 
 <a href="/windows-hardware/drivers/network/oid-dot11-reset-request">OID_DOT11_RESET_REQUEST</a>
+

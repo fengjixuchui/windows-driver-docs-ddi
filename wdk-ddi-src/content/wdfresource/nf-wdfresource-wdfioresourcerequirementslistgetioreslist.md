@@ -4,7 +4,6 @@ title: WdfIoResourceRequirementsListGetIoResList function (wdfresource.h)
 description: The WdfIoResourceRequirementsListGetIoResList method returns a handle to the framework resource-range-list object that represents a specified logical configuration in a specified resource requirements list.
 old-location: wdf\wdfioresourcerequirementslistgetioreslist.htm
 tech.root: wdf
-ms.assetid: b15c0ccf-0863-4415-b31f-b4217f249feb
 ms.date: 02/26/2018
 keywords: ["WdfIoResourceRequirementsListGetIoResList function"]
 ms.keywords: DFResourceObjectRef_a90ce2a4-5690-49c8-ac63-6ccf89f4e5f3.xml, WdfIoResourceRequirementsListGetIoResList, WdfIoResourceRequirementsListGetIoResList method, kmdf.wdfioresourcerequirementslistgetioreslist, wdf.wdfioresourcerequirementslistgetioreslist, wdfresource/WdfIoResourceRequirementsListGetIoResList
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfIoResourceRequirementsListGetIoResList</b> method returns a handle to 
 
 ## -parameters
 
-### -param RequirementsList 
+### -param RequirementsList [in]
 
-[in]
+
 A handle to a framework resource-requirements-list object that represents a device's resource requirements list.
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 A zero-based value that is used as an index into the resource requirements list that <i>RequirementsList</i> specifies.
 
 ## -returns

@@ -4,7 +4,6 @@ title: IDebugSymbols3::AddSyntheticSymbolWide (dbgeng.h)
 description: The AddSyntheticSymbolWide method adds a synthetic symbol to a module in the current process.
 old-location: debugger\addsyntheticsymbolwide.htm
 tech.root: debugger
-ms.assetid: 06d4d1f1-8d28-46cc-8c80-8a67cf4ae4c3
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::AddSyntheticSymbolWide"]
 ms.keywords: AddSyntheticSymbolWide, AddSyntheticSymbolWide method [Windows Debugging], AddSyntheticSymbolWide method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],AddSyntheticSymbolWide method, IDebugSymbols3.AddSyntheticSymbolWide, IDebugSymbols3::AddSyntheticSymbolWide, dbgeng/IDebugSymbols3::AddSyntheticSymbolWide, debugger.addsyntheticsymbolwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSymbols3.AddSyntheticSymbolWide
+ - IDebugSymbols3::AddSyntheticSymbolWide
 ---
 
 # IDebugSymbols3::AddSyntheticSymbolWide
@@ -50,29 +49,29 @@ The <b>AddSyntheticSymbolWide</b>  method adds a synthetic symbol to a module in
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the location in the process's virtual address space of the synthetic symbol.
 
-### -param Size 
+### -param Size [in]
 
-[in]
+
 Specifies the size in bytes of the synthetic symbol.
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 Specifies the name of the synthetic symbol.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Set to DEBUG_ADDSYNTHSYM_DEFAULT.
 
-### -param Id 
+### -param Id [out, optional]
 
-[out, optional]
+
 Receives the <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_module_and_id">DEBUG_MODULE_AND_ID</a> structure that identifies the synthetic symbol.  If <i>Id</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -117,3 +116,4 @@ For more information about synthetic symbols, see <a href="/windows-hardware/dri
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-removesyntheticsymbol">RemoveSyntheticSymbol</a>
+

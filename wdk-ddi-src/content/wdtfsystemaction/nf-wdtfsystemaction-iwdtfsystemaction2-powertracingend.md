@@ -4,7 +4,6 @@ title: IWDTFSystemAction2::PowerTracingEnd (wdtfsystemaction.h)
 description: This method ends a power trace session.
 old-location: dtf\iwdtfsystemaction2_powertracingend.htm
 tech.root: dtf
-ms.assetid: d27678cb-8aad-4cbe-a65e-64828ff4944a
 ms.date: 04/04/2018
 keywords: ["IWDTFSystemAction2::PowerTracingEnd"]
 ms.keywords: IWDTFSystemAction2 interface [Windows Device Testing Framework],PowerTracingEnd method, IWDTFSystemAction2.PowerTracingEnd, IWDTFSystemAction2::PowerTracingEnd, Microsoft.WDTF.IWDTFSystemAction2.PowerTracingEnd, Microsoft::WDTF::IWDTFSystemAction2::PowerTracingEnd, PowerTracingEnd, PowerTracingEnd method [Windows Device Testing Framework], PowerTracingEnd method [Windows Device Testing Framework],IWDTFSystemAction2 interface, dtf.iwdtfsystemaction2_powertracingend, wdtfsystemaction/IWDTFSystemAction2::PowerTracingEnd
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTFSystemAction.Interop.dll
 api_name:
- - IWDTFSystemAction2.PowerTracingEnd
+ - IWDTFSystemAction2::PowerTracingEnd
 ---
 
 # IWDTFSystemAction2::PowerTracingEnd
@@ -57,3 +56,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtfsystemaction/nn-wdtfsystemaction-iwdtfsystemaction2">IWDTFSystemAction2</a>
+

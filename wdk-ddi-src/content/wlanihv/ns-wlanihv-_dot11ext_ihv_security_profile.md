@@ -1,10 +1,9 @@
 ---
 UID: NS:wlanihv._DOT11EXT_IHV_SECURITY_PROFILE
 title: _DOT11EXT_IHV_SECURITY_PROFILE (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_IHV_SECURITY_PROFILE structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11ext_ihv_security_profile.htm
 tech.root: netvista
-ms.assetid: cbfeace3-6492-4011-9ca8-c40ba4f47d22
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_IHV_SECURITY_PROFILE structure"]
 ms.keywords: "*PDOT11EXT_IHV_SECURITY_PROFILE, DOT11EXT_IHV_SECURITY_PROFILE, DOT11EXT_IHV_SECURITY_PROFILE structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_7761c811-0068-48d5-8b46-da550a008a9c.xml, PDOT11EXT_IHV_SECURITY_PROFILE, PDOT11EXT_IHV_SECURITY_PROFILE structure pointer [Network Drivers Starting with Windows Vista], _DOT11EXT_IHV_SECURITY_PROFILE, netvista.dot11ext_ihv_security_profile, wlanihv/DOT11EXT_IHV_SECURITY_PROFILE, wlanihv/PDOT11EXT_IHV_SECURITY_PROFILE"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DOT11EXT_IHV_SECURITY_PROFILE, *PDOT11EXT_IHV_SECURITY_PROFILE
-req.product: Windows 10 or later.
 f1_keywords:
  - _DOT11EXT_IHV_SECURITY_PROFILE
  - wlanihv/_DOT11EXT_IHV_SECURITY_PROFILE
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
+ - _DOT11EXT_IHV_SECURITY_PROFILE
+ - PDOT11EXT_IHV_SECURITY_PROFILE
  - DOT11EXT_IHV_SECURITY_PROFILE
 ---
 
@@ -72,3 +72,4 @@ typedef struct _DOT11EXT_IHV_SECURITY_PROFILE {
   BOOL   bUseMSOnex;
 } DOT11EXT_IHV_SECURITY_PROFILE, *PDOT11EXT_IHV_SECURITY_PROFILE;
 ```
+

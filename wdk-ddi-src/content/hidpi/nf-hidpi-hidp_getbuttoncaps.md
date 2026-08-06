@@ -4,7 +4,6 @@ title: HidP_GetButtonCaps function (hidpi.h)
 description: The HidP_GetButtonCaps routine returns a button capability array that describes all the HID control buttons in a top-level collection for a specified type of HID report.
 old-location: hid\hidp_getbuttoncaps.htm
 tech.root: hid
-ms.assetid: 228b95b0-1087-422f-a995-809743c6103e
 ms.date: 04/30/2018
 keywords: ["HidP_GetButtonCaps function"]
 ms.keywords: HidP_GetButtonCaps, HidP_GetButtonCaps routine [Human Input Devices], hid.hidp_getbuttoncaps, hidfunc_57425ae7-03dd-42b7-b9b3-0581569ab442.xml, hidpi/HidP_GetButtonCaps
@@ -51,24 +50,24 @@ The <b>HidP_GetButtonCaps</b> routine returns a <a href="/windows-hardware/drive
 
 ## -parameters
 
-### -param ReportType 
+### -param ReportType [in]
 
-[in]
+
 Specifies a <a href="/windows-hardware/drivers/ddi/hidpi/ne-hidpi-_hidp_report_type">HIDP_REPORT_TYPE</a> enumerator value that identifies the report type.
 
-### -param ButtonCaps 
+### -param ButtonCaps [out]
 
-[out]
+
 Pointer to a caller-allocated buffer that the routine uses to return a button capability array for the specified report type.
 
-### -param ButtonCapsLength 
+### -param ButtonCapsLength [in, out]
 
-[in, out]
+
 Specifies the length on input, in array elements, of the buffer provided at <i>ButtonCaps</i>. On output, this parameter is set to the actual number of elements that the routine returns.
 
-### -param PreparsedData 
+### -param PreparsedData [in]
 
-[in]
+
 Pointer to a top-level collection's <a href="/windows-hardware/drivers/hid/preparsed-data">preparsed data</a>.
 
 ## -returns

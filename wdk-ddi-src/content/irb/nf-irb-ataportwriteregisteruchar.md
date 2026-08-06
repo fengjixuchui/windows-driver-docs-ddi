@@ -4,7 +4,6 @@ title: AtaPortWriteRegisterUchar function (irb.h)
 description: The AtaPortWriteRegisterUchar routine transfers an unsigned byte to the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\ataportwriteregisteruchar.htm
 tech.root: storage
-ms.assetid: c7c887e6-6861-4366-b8b4-fe6292ac5c99
 ms.date: 03/29/2018
 keywords: ["AtaPortWriteRegisterUchar function"]
 ms.keywords: AtaPortWriteRegisterUchar, AtaPortWriteRegisterUchar routine [Storage Devices], atartns_14d5eb64-a6b7-4eb4-94f6-0bd0952d2263.xml, irb/AtaPortWriteRegisterUchar, storage.ataportwriteregisteruchar
@@ -54,14 +53,14 @@ The <b>AtaPortWriteRegisterUchar</b> routine transfers an unsigned byte to the H
 
 ## -parameters
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the destination register. The address value that is assigned to this parameter must be within the range of mapped I/O space addresses that are obtained by a call to <a href="/windows-hardware/drivers/ddi/irb/nf-irb-ataportgetdevicebase">AtaPortGetDeviceBase</a>.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies the value to write to the register for the HBA.
 
 ## -see-also

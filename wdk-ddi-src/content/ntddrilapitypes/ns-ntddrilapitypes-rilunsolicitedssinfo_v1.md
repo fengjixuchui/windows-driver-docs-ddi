@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILUNSOLICITEDSSINFO_V1
 title: RILUNSOLICITEDSSINFO_V1 (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILUNSOLICITEDSSINFO_V1 structure in your code."
 old-location: netvista\rilunsolicitedssinfo_v1.htm
 tech.root: netvista
-ms.assetid: c9681207-6cdd-40b6-8878-7ea37f383e4f
 ms.date: 05/02/2018
 keywords: ["RILUNSOLICITEDSSINFO_V1 structure"]
 ms.keywords: "*LPRILUNSOLICITEDSSINFO_V1, RILUNSOLICITEDSSINFO_V1, RILUNSOLICITEDSSINFO_V1 structure [Network Drivers Starting with Windows Vista], netvista.rilunsolicitedssinfo_v1, ntddrilapitypes/RILUNSOLICITEDSSINFO_V1"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILUNSOLICITEDSSINFO_V1
+ - LPRILUNSOLICITEDSSINFO_V1
 ---
 
 # RILUNSOLICITEDSSINFO_V1 structure (ntddrilapitypes.h)

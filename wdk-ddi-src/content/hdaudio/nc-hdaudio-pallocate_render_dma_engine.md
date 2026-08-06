@@ -4,7 +4,6 @@ title: PALLOCATE_RENDER_DMA_ENGINE (hdaudio.h)
 description: The AllocateRenderDmaEngine routine allocates a DMA engine for a render stream.The function pointer type for an AllocateRenderDmaEngine routine is defined as follows.
 old-location: audio\allocaterenderdmaengine.htm
 tech.root: audio
-ms.assetid: fb2a64ca-7e8e-4352-86c6-b9500e535c75
 ms.date: 05/08/2018
 keywords: ["PALLOCATE_RENDER_DMA_ENGINE callback function"]
 ms.keywords: AllocateRenderDmaEngine, AllocateRenderDmaEngine callback function [Audio Devices], PALLOCATE_RENDER_DMA_ENGINE, PALLOCATE_RENDER_DMA_ENGINE callback, aud-prop2_69a03ff9-5eda-4f39-85cf-e4af523214e1.xml, audio.allocaterenderdmaengine, hdaudio/AllocateRenderDmaEngine
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - hdaudio.h
 api_name:
- - AllocateRenderDmaEngine
+ - PALLOCATE_RENDER_DMA_ENGINE
 ---
 
 # PALLOCATE_RENDER_DMA_ENGINE callback function
@@ -52,29 +51,29 @@ The function pointer type for an <code>AllocateRenderDmaEngine</code> routine is
 
 ## -parameters
 
-### -param _context 
+### -param _context [in]
 
-[in]
+
 Specifies the context value from the <b>Context</b> members of the <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface">HDAUDIO_BUS_INTERFACE</a><u>,</u><a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a>, or <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl">HDAUDIO_BUS_INTERFACE_BDL</a> structures.
 
-### -param StreamFormat 
+### -param StreamFormat [in]
 
-[in]
+
 Specifies the requested stream format. This parameter points to a caller-allocated structure of type <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_stream_format">HDAUDIO_STREAM_FORMAT</a> that specifies a data format for the stream.
 
-### -param Stripe 
+### -param Stripe [in]
 
-[in]
+
 Specifies whether to enable striping. If <b>TRUE</b>, the routine enables striping in the DMA transfers. If <b>FALSE</b>, striping is disabled.
 
-### -param Handle 
+### -param Handle [out]
 
-[out]
+
 Retrieves the handle to the DMA engine. This parameter points to a caller-allocated HANDLE variable into which the routine writes a handle that identifies the DMA engine.
 
-### -param ConverterFormat 
+### -param ConverterFormat [out]
 
-[out]
+
 Retrieves the converter format. This parameter points to a caller-allocated structure of type <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_converter_format">HDAUDIO_CONVERTER_FORMAT</a> into which the routine writes the encoded format.
 
 ## -returns
@@ -184,3 +183,4 @@ A WDM audio driver calls <code>AllocateRenderDmaEngine</code> at pin-creation ti
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepci-newstream">IMiniportWavePci::NewStream</a>
+

@@ -4,7 +4,6 @@ title: _UDECX_ENDPOINT_TYPE (udecxusbdevice.h)
 description: Defines values for endpoint types supported by a virtual USB device.
 old-location: buses\udecx_endpoint_type.htm
 tech.root: usbref
-ms.assetid: EFA5DDC0-9E6B-450E-B191-1DA9FBAC269C
 ms.date: 05/07/2018
 keywords: ["UDECX_ENDPOINT_TYPE enumeration"]
 ms.keywords: "*PUDECX_ENDPOINT_TYPE, UDECX_ENDPOINT_TYPE, UDECX_ENDPOINT_TYPE enumeration [Buses], UdecxEndpointTypeDynamic, UdecxEndpointTypeInvalid, UdecxEndpointTypeSimple, _UDECX_ENDPOINT_TYPE, buses.udecx_endpoint_type, udecxusbdevice/UDECX_ENDPOINT_TYPE, udecxusbdevice/UdecxEndpointTypeDynamic, udecxusbdevice/UdecxEndpointTypeInvalid, udecxusbdevice/UdecxEndpointTypeSimple"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - UdecxUsbDevice.h
 api_name:
+ - _UDECX_ENDPOINT_TYPE
+ - PUDECX_ENDPOINT_TYPE
  - UDECX_ENDPOINT_TYPE
 ---
 
@@ -73,3 +74,4 @@ The endpoint is dynamically created in the client driver's implementation of the
 
 
 <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdeviceinitsetendpointstype">UdecxUsbDeviceInitSetEndpointsType</a>
+

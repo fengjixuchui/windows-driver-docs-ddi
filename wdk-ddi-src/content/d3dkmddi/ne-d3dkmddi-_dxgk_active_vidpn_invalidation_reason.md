@@ -3,14 +3,13 @@ UID: NE:d3dkmddi._DXGK_ACTIVE_VIDPN_INVALIDATION_REASON
 title: _DXGK_ACTIVE_VIDPN_INVALIDATION_REASON (d3dkmddi.h)
 description: The DXGK_ACTIVE_VIDPN_INVALIDATION_REASON enumeration is used to indicate the reason why an active VidPN is invalidated and a new VidPN is requested.
 old-location: display\dxgk_active_vidpn_invalidation_reason.htm
-ms.assetid: e1f33307-1bb0-4cdd-aa47-954f6e551582
 ms.date: 05/10/2018
 keywords: ["DXGK_ACTIVE_VIDPN_INVALIDATION_REASON enumeration"]
 ms.keywords: DXGK_ACTIVE_VIDPN_INVALIDATION_REASON, DXGK_ACTIVE_VIDPN_INVALIDATION_REASON enumeration [Display Devices], DXGK_AVIR_HOTKEY, DXGK_AVIR_UNINITIALIZED, DXGK_AVIR_USERMODE, DmEnums_9a263431-3cae-4e33-a2f0-310ec88c1343.xml, _DXGK_ACTIVE_VIDPN_INVALIDATION_REASON, d3dkmddi/DXGK_ACTIVE_VIDPN_INVALIDATION_REASON, d3dkmddi/DXGK_AVIR_HOTKEY, d3dkmddi/DXGK_AVIR_UNINITIALIZED, d3dkmddi/DXGK_AVIR_USERMODE, display.dxgk_active_vidpn_invalidation_reason
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_ACTIVE_VIDPN_INVALIDATION_REASON
  - DXGK_ACTIVE_VIDPN_INVALIDATION_REASON
 ---
 
@@ -67,3 +67,4 @@ Indicates that a call to the <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtinvalidateactivevidpn">D3DKMTInvalidateActiveVidPN</a>
+

@@ -4,7 +4,6 @@ title: IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES (ehstorioctl.h)
 description: This IOCTL is used to inform the enhanced storage (EHSTOR) class driver of the silo driver's capabilities.
 old-location: storage\ioctl_ehstor_driver_report_capabilities.htm
 tech.root: storage
-ms.assetid: AD78ABAD-5DCF-4E1A-B521-8063B5BEA6A6
 ms.date: 03/29/2018
 keywords: ["IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES IOCTL"]
 ms.keywords: IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES, IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES control, IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES control code [Storage Devices], ehstorioctl/IOCTL_EHSTOR_DRIVER_REPORT_CAPABILITIES, storage.ioctl_ehstor_driver_report_capabilities
@@ -46,13 +45,15 @@ api_name:
 
 ## -description
 
-This IOCTL is used to inform the enhanced storage (EHSTOR) class driver of the silo  driver's capabilities.  The silo driver sends this IOCTL with a <a href="/windows-hardware/drivers/ddi/ehstorioctl/ns-ehstorioctl-tagact_authz_state">SILO_DRIVER_CAPABILITES</a> structure that indicates whether authentication and banding are supported along with a list of EHSTOR IOCTLs it will handle.
+This IOCTL is used to inform the enhanced storage (EHSTOR) class driver of the silo  driver's capabilities.  The silo driver sends this IOCTL with a <a href="/windows-hardware/drivers/ddi/ehstorioctl/ns-ehstorioctl-_silo_driver_capabilities">SILO_DRIVER_CAPABILITIES</a> structure that indicates whether authentication and banding are supported along with a list of EHSTOR IOCTLs it will handle.
 
 ## -ioctlparameters
 
+### -ioctl-major-code
+
 ### -input-buffer
 
-The input buffer at <b>Irp->AssociatedIrp.SystemBuffer</b> must contain a structure of type <a href="/windows-hardware/drivers/ddi/ehstorioctl/ns-ehstorioctl-tagact_authz_state">SILO_DRIVER_CAPABILITES</a>. This structure is followed immediately by a list of which redirected IOCTLs the silo driver will handle.
+The input buffer at <b>Irp->AssociatedIrp.SystemBuffer</b> must contain a structure of type <a href="/windows-hardware/drivers/ddi/ehstorioctl/ns-ehstorioctl-_silo_driver_capabilities">SILO_DRIVER_CAPABILITIES</a>. This structure is followed immediately by a list of which redirected IOCTLs the silo driver will handle.
 
 ### -input-buffer-length
 

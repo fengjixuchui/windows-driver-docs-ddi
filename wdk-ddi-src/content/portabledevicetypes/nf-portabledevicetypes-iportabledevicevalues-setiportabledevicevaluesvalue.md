@@ -4,7 +4,6 @@ title: IPortableDeviceValues::SetIPortableDeviceValuesValue (portabledevicetypes
 description: Adds a new IPortableDeviceValues value (type VT_UNKNOWN) or overwrites an existing one.
 old-location: wpddk\iportabledevicevalues_setiportabledevicevaluesvalue.htm
 tech.root: wpd_dk
-ms.assetid: 2ab54174-9e1b-4b52-894c-489d67b7f1be
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::SetIPortableDeviceValuesValue"]
 ms.keywords: IPortableDeviceValues interface,SetIPortableDeviceValuesValue method, IPortableDeviceValues.SetIPortableDeviceValuesValue, IPortableDeviceValues::SetIPortableDeviceValuesValue, IPortableDeviceValuesSetIPortableDeviceValuesValue, SetIPortableDeviceValuesValue, SetIPortableDeviceValuesValue method, SetIPortableDeviceValuesValue method,IPortableDeviceValues interface, portabledevicetypes/IPortableDeviceValues::SetIPortableDeviceValuesValue, wpddk.iportabledevicevalues_setiportabledevicevaluesvalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.SetIPortableDeviceValuesValue
+ - IPortableDeviceValues::SetIPortableDeviceValuesValue
 ---
 
 # IPortableDeviceValues::SetIPortableDeviceValuesValue
@@ -51,14 +50,14 @@ Adds a new <b>IPortableDeviceValues</b> value (type VT_UNKNOWN) or overwrites an
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> that specifies the item to create or overwrite.
 
-### -param pValue 
+### -param pValue [in]
 
-[in]
+
 Pointer to an <b>IPortableDeviceValues</b> interface that specifies the new value. The SDK copies a reference to the submitted interface and calls <b>AddRef</b> on it.
 
 ## -returns
@@ -94,3 +93,4 @@ If an existing value has the same key that is specified by the <i>key</i> parame
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-getiportabledevicevaluesvalue">IPortableDeviceValues::GetIPortableDeviceValuesValue</a>
+

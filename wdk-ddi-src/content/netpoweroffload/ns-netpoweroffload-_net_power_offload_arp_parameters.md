@@ -3,17 +3,16 @@ UID: NS:netpoweroffload._NET_POWER_OFFLOAD_ARP_PARAMETERS
 title: NET_POWER_OFFLOAD_ARP_PARAMETERS (netpoweroffload.h)
 description: The NET_POWER_OFFLOAD_ARP_PARAMETERS structure contains IPv4 ARP low-power protocol offload parameters for a net adapter.
 tech.root: netvista
-ms.assetid: bec3ab2b-5884-4c7d-895a-76b8a44126bf
 ms.date: 09/30/2019
 keywords: ["NET_POWER_OFFLOAD_ARP_PARAMETERS structure"]
 ms.keywords: NET_POWER_OFFLOAD_ARP_PARAMETERS, NET_POWER_OFFLOAD_ARP_PARAMETERS,
 req.header: netpoweroffload.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: 
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - netpoweroffload.h
 api_name:
+ - _NET_POWER_OFFLOAD_ARP_PARAMETERS
  - NET_POWER_OFFLOAD_ARP_PARAMETERS
-product:
- - Windows
 ---
 
 # NET_POWER_OFFLOAD_ARP_PARAMETERS structure
@@ -86,3 +84,4 @@ For more information about the ARP protocol, see [RFC 826](https://tools.ietf.or
 [**NET_POWER_OFFLOAD_ARP_PARAMETERS_INIT**](../netpoweroffload/nf-netpoweroffload-net_power_offload_arp_parameters_init.md)
 
 [**NetPowerOffloadGetArpParameters**](../netpoweroffload/nf-netpoweroffload-netpoweroffloadgetarpparameters.md)
+

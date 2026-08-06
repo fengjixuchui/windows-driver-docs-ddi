@@ -4,8 +4,7 @@ title: WdfDeviceMapIoSpace function (wdfdevice.h)
 description: The WdfDeviceMapIoSpace function maps the given physical address range to system address space and returns a pseudo base address.
 old-location: wdf\wdfdevicemapiospace.htm
 tech.root: wdf
-ms.assetid: 13ECF87D-13F7-4154-A17E-D49A2BB0F83A
-ms.date: 02/26/2018
+ms.date: 08/20/2024
 keywords: ["WdfDeviceMapIoSpace function"]
 ms.keywords: WdfDeviceMapIoSpace, WdfDeviceMapIoSpace function, wdf.wdfdevicemapiospace, wdfdevice/WdfDeviceMapIoSpace
 req.header: wdfdevice.h
@@ -52,29 +51,29 @@ The <b>WdfDeviceMapIoSpace</b> function maps the given physical address range to
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param PhysicalAddress 
+### -param PhysicalAddress [in]
 
-[in]
+
 Specifies the starting 64-bit physical address of the I/O range to be mapped.
 
-### -param NumberOfBytes 
+### -param NumberOfBytes [in]
 
-[in]
+
 Specifies a value greater than zero, indicating the number of bytes to be mapped.
 
-### -param CacheType 
+### -param CacheType [in]
 
-[in]
+
 Specifies a <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_memory_caching_type">MEMORY_CACHING_TYPE</a> value, which indicates the cache attribute to use to map the physical address range. The MEMORY_CACHING_TYPE enumeration type is defined in Wdfdevice.h.
 
-### -param PseudoBaseAddress 
+### -param PseudoBaseAddress [out]
 
-[out]
+
 The address of a location that receives a pointer to the pseudo base address.
 
 ## -returns
@@ -97,9 +96,9 @@ A driver that calls <b>WdfDeviceMapIoSpace</b> must set the <b>UmdfDirectHardwar
 
  For more information about  INF directives that UMDF drivers can use, see <a href="/windows-hardware/drivers/wdf/specifying-wdf-directives-in-inf-files">Specifying WDF Directives in INF Files</a>.
 
-For more information about parsing hardware resources starting in UMDF version 2, see <a href="/windows-hardware/drivers/wdf/handling-client-impersonation-in-umdf-drivers">Handling Hardware Resources in a UMDF Driver</a>.
+For more information about parsing hardware resources starting in UMDF version 2, see <a href="/windows-hardware/drivers/wdf/finding-and-mapping-hardware-resources">Handling Hardware Resources in a UMDF Driver</a>.
 
-The PHYSICAL_ADDRESS type is defined in Wudfwdm.h, as follows:<pre class="syntax" xml:space="preserve"><code>typedef LARGE_INTEGER PHYSICAL_ADDRESS;</code></pre>
+The PHYSICAL_ADDRESS type is defined in Wudfwdm.h, as follows:<pre class="syntax"><code>typedef LARGE_INTEGER PHYSICAL_ADDRESS;</code></pre>
 
 
 For an example that shows how a driver finds and maps memory-mapped register resources, see <a href="/windows-hardware/drivers/wdf/reading-and-writing-to-device-registers">Reading and Writing to Device Registers</a>.

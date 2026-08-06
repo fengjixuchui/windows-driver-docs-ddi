@@ -4,7 +4,6 @@ title: NdisMIdleNotificationConfirm function (ndis.h)
 description: Miniport drivers call NdisMIdleNotificationConfirm to notify NDIS that the idle network adapter can safely be suspended and transitioned to a low-power state.Miniport drivers call this function during an NDIS selective suspend operation.
 old-location: netvista\ndismidlenotificationconfirm.htm
 tech.root: netvista
-ms.assetid: 726B392E-3C7F-4F55-B045-CE022C242F0A
 ms.date: 05/02/2018
 keywords: ["NdisMIdleNotificationConfirm function"]
 ms.keywords: NdisMIdleNotificationConfirm, NdisMIdleNotificationConfirm function [Network Drivers Starting with Windows Vista], ndis/NdisMIdleNotificationConfirm, netvista.ndismidlenotificationconfirm
@@ -53,14 +52,14 @@ Miniport drivers call this function during an NDIS selective suspend operation. 
 
 ## -parameters
 
-### -param MiniportAdapterHandle 
+### -param MiniportAdapterHandle [in]
 
-[in]
+
 The network adapter handle that NDIS passed to the <i>MiniportAdapterHandle</i> parameter of <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a>.
 
-### -param IdlePowerState 
+### -param IdlePowerState [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/ddi/ntddndis/ne-ntddndis-_ndis_device_power_state">NDIS_DEVICE_POWER_STATE</a> enumeration value that specifies the lowest power state that the network adapter supports for a low-power state transition.
 
 <div class="alert"><b>Note</b>  For USB network adapters, this parameter must be <b>NdisDeviceStateD2</b>.

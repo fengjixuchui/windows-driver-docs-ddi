@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_140
+UID: NS:ksmedia.KSPROPERTY_TIMECODE_NODE_S
 title: KSPROPERTY_TIMECODE_NODE_S (ksmedia.h)
 description: The KSPROPERTY_TIMECODE_NODE_S structure describes a timecode.
 old-location: stream\ksproperty_timecode_node_s.htm
 tech.root: stream
-ms.assetid: deb218b4-4478-46f6-9859-c1a6d7b73784
 ms.date: 04/30/2019
 keywords: ["KSPROPERTY_TIMECODE_NODE_S structure"]
 ms.keywords: "*PKSPROPERTY_TIMECODE_NODE_S, KSPROPERTY_TIMECODE_NODE_S, KSPROPERTY_TIMECODE_NODE_S structure [Streaming Media Devices], PKSPROPERTY_TIMECODE_NODE_S, PKSPROPERTY_TIMECODE_NODE_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_TIMECODE_NODE_S, ksmedia/PKSPROPERTY_TIMECODE_NODE_S, stream.ksproperty_timecode_node_s, vidcapstruct_3c1b784a-1cd7-40b8-a0af-35c60b02cc50.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_TIMECODE_NODE_S
  - KSPROPERTY_TIMECODE_NODE_S
 ---
 
@@ -62,7 +62,7 @@ Specifies the timecode sample. Timecode, absolute track number (ATN) and relativ
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -71,3 +71,4 @@ Specifies the timecode sample. Timecode, absolute track number (ATN) and relativ
 
 
 <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tagtimecode_sample">TIMECODE_SAMPLE</a>
+

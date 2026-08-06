@@ -1,9 +1,8 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_PRESENT_MULTIPLANE_OVERLAY_FLAGS
-title: _D3DKMT_PRESENT_MULTIPLANE_OVERLAY_FLAGS (d3dkmthk.h)
-description: Present multi-plane overlay flags.
-ms.assetid: c393bd00-8e07-4f67-ab94-c8a348d39fe5
-ms.date: 10/19/2018
+title: D3DKMT_PRESENT_MULTIPLANE_OVERLAY_FLAGS (d3dkmthk.h)
+description: Learn more about the D3DKMT_PRESENT_MULTIPLANE_OVERLAY_FLAGS structure.
+ms.date: 04/10/2024
 keywords: ["D3DKMT_PRESENT_MULTIPLANE_OVERLAY_FLAGS structure"]
 ms.keywords: _D3DKMT_PRESENT_MULTIPLANE_OVERLAY_FLAGS, D3DKMT_PRESENT_MULTIPLANE_OVERLAY_FLAGS,
 req.header: d3dkmthk.h
@@ -35,12 +34,12 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_PRESENT_MULTIPLANE_OVERLAY_FLAGS
+ - D3DKMT_PRESENT_MULTIPLANE_OVERLAY_FLAGS
 dev_langs:
  - c++
 ---
 
-# _D3DKMT_PRESENT_MULTIPLANE_OVERLAY_FLAGS structure
-
+# D3DKMT_PRESENT_MULTIPLANE_OVERLAY_FLAGS structure
 
 ## -description
 
@@ -54,7 +53,7 @@ Specifies whether the driver should flip both left and right images of a stereo 
 
 ### -field FlipStereoTemporaryMono
 
-Specifies whether the driver should use the left image of a stereo allocation for the right and left portions of a stereo frame. The driver performs the same present operation as with <b>FlipStereo</b>, except that it should scan out only from the left image to produce both images of a stereo frame.
+Specifies whether the driver should use the left image of a stereo allocation for the right and left portions of a stereo frame. The driver performs the same present operation as with **FlipStereo**, except that it should scan out only from the left image to produce both images of a stereo frame.
 
 ### -field FlipStereoPreferRight
 
@@ -80,7 +79,7 @@ Indicates whether the duration is valid.
 
 ### -field HDRMetaDataValid
 
-Indicates whether the HDR metadata is valide.
+Indicates whether the HDR metadata is valid.
 
 ### -field HMD
 
@@ -88,7 +87,11 @@ The HMD (head mounted display).
 
 ### -field TrueImmediate
 
-The true immediate.
+If a present interval is 0, allow tearing rather than override a previously queued flip.
+
+### -field FromDDisplay
+
+Indicates the present is from DirectDisplay.
 
 ### -field Reserved
 
@@ -96,10 +99,8 @@ Reserved for internal use.
 
 ### -field Value
 
- 
 The value used to operate over the other members.
 
 ## -remarks
 
 ## -see-also
-

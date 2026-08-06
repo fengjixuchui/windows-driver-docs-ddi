@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_STATE_OM_RENDERTARGETS_CB
 title: PFND3D10DDI_STATE_OM_RENDERTARGETS_CB (d3d10umddi.h)
 description: The pfnStateOmRenderTargetsCb function causes the Microsoft Direct3D 10 runtime to refresh the output merger's bound render targets.
 old-location: display\pfnstateomrendertargetscb.htm
-ms.assetid: d17cd31d-44a1-4f7d-82be-1201c0d5769f
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_STATE_OM_RENDERTARGETS_CB callback function"]
 ms.keywords: PFND3D10DDI_STATE_OM_RENDERTARGETS_CB, PFND3D10DDI_STATE_OM_RENDERTARGETS_CB callback, d3d10state_functions_d1d161af-c985-4d8d-b734-7acda03b13ce.xml, d3d10umddi/pfnStateOmRenderTargetsCb, display.pfnstateomrendertargetscb, pfnStateOmRenderTargetsCb, pfnStateOmRenderTargetsCb callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - pfnStateOmRenderTargetsCb
+ - PFND3D10DDI_STATE_OM_RENDERTARGETS_CB
 ---
 
 # PFND3D10DDI_STATE_OM_RENDERTARGETS_CB callback function
@@ -50,7 +49,7 @@ The <b>pfnStateOmRenderTargetsCb</b> function causes the Microsoft Direct3D 10 r
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hRuntimeDevice* [in]
 
@@ -71,3 +70,4 @@ The <b>pfnStateOmRenderTargetsCb</b> function calls the user-mode display driver
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setrendertargets">SetRenderTargets</a>
+

@@ -4,7 +4,6 @@ title: RxFinalizeVNetRoot function (fcb.h)
 description: RxFinalizeVNetRoot finalizes the given V_NET_ROOT structure. The caller must have an exclusive lock on the netname table associated with the device object.
 old-location: ifsk\rxfinalizevnetroot.htm
 tech.root: ifsk
-ms.assetid: 7a24d8b4-cd07-453c-9813-d794b75b039e
 ms.date: 04/16/2018
 keywords: ["RxFinalizeVNetRoot function"]
 ms.keywords: RxFinalizeVNetRoot, RxFinalizeVNetRoot function [Installable File System Drivers], fcb/RxFinalizeVNetRoot, ifsk.rxfinalizevnetroot, rxref_1c20872c-4783-4c7d-a1fa-44ca6170ab00.xml
@@ -50,19 +49,19 @@ api_name:
 
 ## -parameters
 
-### -param ThisVNetRoot 
+### -param ThisVNetRoot [out]
 
-[out]
+
 A pointer to the V_NET_ROOT structure to finalize.
 
-### -param RecursiveFinalize 
+### -param RecursiveFinalize [in]
 
-[in]
+
 The value indicating whether the finalization should be done recursively. This parameter in not currently used.
 
-### -param ForceFinalize 
+### -param ForceFinalize [in]
 
-[in]
+
 The value indicating whether the finalization should be forced, regardless of the reference count. 
 
 If <i>ForceFinalize</i> is <b>FALSE</b>, then the <b>NodeReferenceCount</b> member of the V_NET_ROOT structure pointed to by <i>ThisVNetRoot</i> must be 1 for the V_NET_ROOT to be finalized.

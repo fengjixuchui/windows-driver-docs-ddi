@@ -4,7 +4,6 @@ title: WdfIoResourceListRemove function (wdfresource.h)
 description: The WdfIoResourceListRemove method removes a resource descriptor from a resource requirements list's logical configuration.
 old-location: wdf\wdfioresourcelistremove.htm
 tech.root: wdf
-ms.assetid: fc67afc9-7542-4fca-bfc7-4b03b9d39735
 ms.date: 02/26/2018
 keywords: ["WdfIoResourceListRemove function"]
 ms.keywords: DFResourceObjectRef_c8550890-69b9-493b-83d5-8a160eb85b8a.xml, WdfIoResourceListRemove, WdfIoResourceListRemove method, kmdf.wdfioresourcelistremove, wdf.wdfioresourcelistremove, wdfresource/WdfIoResourceListRemove
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfIoResourceListRemove</b> method removes a resource descriptor from a r
 
 ## -parameters
 
-### -param ResourceList 
+### -param ResourceList [in]
 
-[in]
+
 A handle to a framework resource-range-list object that represents a logical configuration of hardware resources for a device.
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 A zero-based value that is used as an index into the logical configuration that <i>ResourceList</i> specifies.
 
 ## -remarks

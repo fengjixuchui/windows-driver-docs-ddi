@@ -4,7 +4,6 @@ title: PDEBUG_EXTENSION_PROVIDE_VALUE (dbgeng.h)
 description: The DebugExtensionProvideValue callback function sets pseudo-register values.C++ CALLBACK* PDEBUG_EXTENSION_PROVIDE_VALUE DebugExtensionProvideValue;
 old-location: debugger\debugextensionprovidevalue.htm
 tech.root: debugger
-ms.assetid: b4b1953c-dc1b-495a-ab58-5cfaa6064b23
 ms.date: 05/03/2018
 keywords: ["PDEBUG_EXTENSION_PROVIDE_VALUE callback function"]
 ms.keywords: DEBUG_EXT_PVTYPE_IS_POINTER, DEBUG_EXT_PVTYPE_IS_VALUE, DebugExtensionProvideValue, DebugExtensionProvideValue callback function [Windows Debugging], Extensions_Ref_fa822b69-6941-46e9-8b68-d57dd8d19d14.xml, PDEBUG_EXTENSION_PROVIDE_VALUE, PDEBUG_EXTENSION_PROVIDE_VALUE callback, dbgeng/DebugExtensionProvideValue, debugger.debugextensionprovidevalue
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - DebugExtensionProvideValue
+ - PDEBUG_EXTENSION_PROVIDE_VALUE
 ---
 
 # PDEBUG_EXTENSION_PROVIDE_VALUE callback function
@@ -52,42 +51,41 @@ The <b>DebugExtensionProvideValue</b> callback function sets <a href="/windows-h
  CALLBACK* PDEBUG_EXTENSION_PROVIDE_VALUE DebugExtensionProvideValue;
 ```
 
-
 ## -parameters
 
-### -param Client 
+### -param Client [in]
 
-[in]
+
 A client to use if the extension needs DbgEng functions.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Provides behavioral flags. This parameter is currently reserved.
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 The name of the value to return. This name might be one of the names that the <a href="/windows-hardware/drivers/ddi/dbgeng/nc-dbgeng-pdebug_extension_query_value_names">DebugExtensionQueryValueNames</a> function returned or a name that the caller might already be aware of.
 
-### -param Value 
+### -param Value [out]
 
-[out]
+
 A pointer to the value to be set.
 
-### -param TypeModBase 
+### -param TypeModBase [out]
 
-[out]
+
 The base starting address for <i>Client.</i>
 
-### -param TypeId 
+### -param TypeId [out]
 
-[out]
+
 A pointer to the ID for the type of <i>Value</i>.
 
-### -param TypeFlags 
+### -param TypeFlags [out]
 
-[out]
+
 A parameter that you can use to return one of the following flags: 
 
 <table>
@@ -167,3 +165,4 @@ The name that the <i>Name</i> parameter specifies must start with <b>$$</b> and 
 
 
 <i>KnownStructOutput</i>
+

@@ -4,7 +4,6 @@ title: WdfFileObjectGetDevice function (wdffileobject.h)
 description: The WdfFileObjectGetDevice method returns the framework device object that is associated with a specified framework file object.
 old-location: wdf\wdffileobjectgetdevice.htm
 tech.root: wdf
-ms.assetid: 10bb8bbd-0347-4ceb-844e-87f049813684
 ms.date: 02/26/2018
 keywords: ["WdfFileObjectGetDevice function"]
 ms.keywords: DFFileObjectRef_4986a619-be10-4eca-84dd-9ae1dcac423f.xml, WdfFileObjectGetDevice, WdfFileObjectGetDevice method, kmdf.wdffileobjectgetdevice, wdf.wdffileobjectgetdevice, wdffileobject/WdfFileObjectGetDevice
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,9 +54,9 @@ The <b>WdfFileObjectGetDevice</b> method returns the framework device object tha
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 A handle to a framework file object.
 
 ## -returns

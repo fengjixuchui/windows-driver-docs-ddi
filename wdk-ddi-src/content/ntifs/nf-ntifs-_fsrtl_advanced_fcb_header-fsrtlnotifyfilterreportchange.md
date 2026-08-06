@@ -4,14 +4,13 @@ title: FsRtlNotifyFilterReportChange function (ntifs.h)
 description: FsRtlNotifyFilterReportChange completes IRP_MN_NOTIFY_CHANGE_DIRECTORY requests that are pending in the specified notify list.
 old-location: ifsk\fsrtlnotifyfilterreportchange.htm
 tech.root: ifsk
-ms.assetid: 7924405f-9862-4704-bff1-05e0285592b9
 ms.date: 04/16/2018
 keywords: ["FsRtlNotifyFilterReportChange function"]
 ms.keywords: FsRtlNotifyFilterReportChange, FsRtlNotifyFilterReportChange function [Installable File System Drivers], fsrtlref_c4a79c57-aa80-40f3-9882-76ed887c99cb.xml, ifsk.fsrtlnotifyfilterreportchange, ntifs/FsRtlNotifyFilterReportChange
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
+req.target-min-winverclnt: Windows 2000 SP4 Update Rollup; Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -53,54 +52,54 @@ dev_langs:
 
 ## -parameters
 
-### -param NotifySync 
+### -param NotifySync [in]
 
-[in]
+
 Pointer to an opaque synchronization object for the change directory notify list that is pointed to by the <i>NotifyList</i> parameter.
 
-### -param NotifyList 
+### -param NotifyList [in]
 
-[in]
+
 Pointer to the head of the change directory notify list for the current volume. Each element in the list is an opaque notify structure.
 
-### -param FullTargetName 
+### -param FullTargetName [in]
 
-[in]
+
 Pointer to an ANSI or Unicode string that contains the full pathname of the file or directory that changed.
 
-### -param TargetNameOffset 
+### -param TargetNameOffset [in]
 
-[in]
+
 Offset, in bytes, within the <i>FullTargetName</i> string of the final component of the file name for the file or directory that changed.
 
-### -param StreamName 
+### -param StreamName [in, optional]
 
-[in, optional]
+
 Optional pointer to an ANSI or Unicode string that contains a stream name to store with the file name.
 
-### -param NormalizedParentName 
+### -param NormalizedParentName [in, optional]
 
-[in, optional]
+
 Optional pointer to an ANSI or Unicode string that contains the same path as in the <i>FullTargetName</i> string, but with all short names replaced by the corresponding long names.
 
-### -param FilterMatch 
+### -param FilterMatch [in]
 
-[in]
+
 Bitmask of flags to be compared with the completion filter in the notify structure. If any of the corresponding bits in the completion filter are set, then a notify condition exists. For possible flag values, see the <i>CompletionFilter</i> parameter of <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfilterchangedirectory">FsRtlNotifyFilterChangeDirectory</a>.
 
-### -param Action 
+### -param Action [in]
 
-[in]
+
 Specifies the action code to store in the user's buffer if present. For possible action code values, see the <i>Action</i> parameter of <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullreportchange">FsRtlNotifyFullReportChange</a>.
 
-### -param TargetContext 
+### -param TargetContext [in, optional]
 
-[in, optional]
+
 Context pointer to pass to the file system if performing a traverse check in the case of a tree being watched. For more information, see the <i>TraverseCallback</i> parameter of <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfilterchangedirectory">FsRtlNotifyFilterChangeDirectory</a>.
 
-### -param FilterContext 
+### -param FilterContext [in, optional]
 
-[in, optional]
+
 Context pointer to pass to the filter callback routine. For more information, see the <i>FilterCallback</i> parameter of <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfilterchangedirectory">FsRtlNotifyFilterChangeDirectory</a>.
 
 ## -remarks

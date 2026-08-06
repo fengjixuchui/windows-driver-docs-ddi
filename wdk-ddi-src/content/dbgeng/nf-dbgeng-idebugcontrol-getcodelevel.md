@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl.GetCodeLevel
 title: IDebugControl::GetCodeLevel (dbgeng.h)
-description: The GetCodeLevel method returns the current code level and is mainly used when stepping through code.
+description: The GetCodeLevel method returns the current code level and is mainly used when stepping through code. This method belongs to the IDebugControl interface.
 old-location: debugger\getcodelevel.htm
 tech.root: debugger
-ms.assetid: 965565ee-ef4c-4a1d-a6f1-77b6d63c6ee8
 ms.date: 05/03/2018
 keywords: ["IDebugControl::GetCodeLevel"]
 ms.keywords: GetCodeLevel, GetCodeLevel method [Windows Debugging], GetCodeLevel method [Windows Debugging],IDebugControl interface, GetCodeLevel method [Windows Debugging],IDebugControl2 interface, GetCodeLevel method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],GetCodeLevel method, IDebugControl.GetCodeLevel, IDebugControl2 interface [Windows Debugging],GetCodeLevel method, IDebugControl2::GetCodeLevel, IDebugControl3 interface [Windows Debugging],GetCodeLevel method, IDebugControl3::GetCodeLevel, IDebugControl::GetCodeLevel, IDebugControl_8533dd3f-f004-4d89-9f02-b7835fc6169e.xml, dbgeng/IDebugControl2::GetCodeLevel, dbgeng/IDebugControl3::GetCodeLevel, dbgeng/IDebugControl::GetCodeLevel, debugger.getcodelevel
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.GetCodeLevel
- - IDebugControl2.GetCodeLevel
- - IDebugControl3.GetCodeLevel
+ - IDebugControl::GetCodeLevel
 ---
 
 # IDebugControl::GetCodeLevel
@@ -52,9 +49,9 @@ The <b>GetCodeLevel</b> method returns the current code level and is mainly used
 
 ## -parameters
 
-### -param Level 
+### -param Level [out]
 
-[out]
+
 Receives the current code level.  <i>Level</i> can take one of the values in the following table.
 
 <table>
@@ -125,3 +122,4 @@ For more information about the code level, see <a href="/windows-hardware/driver
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setcodelevel">SetCodeLevel</a>
+

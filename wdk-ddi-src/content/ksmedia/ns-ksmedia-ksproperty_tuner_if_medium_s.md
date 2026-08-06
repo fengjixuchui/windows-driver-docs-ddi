@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_97
+UID: NS:ksmedia.KSPROPERTY_TUNER_IF_MEDIUM_S
 title: KSPROPERTY_TUNER_IF_MEDIUM_S (ksmedia.h)
 description: The KSPROPERTY_TUNER_IF_MEDIUM_S structure returns the Medium GUID for the pin that is capable of supporting tuning to an intermediate frequency.
 old-location: stream\ksproperty_tuner_if_medium_s.htm
 tech.root: stream
-ms.assetid: 19f79b01-1a3c-4695-96ec-2f7410f6b4aa
 ms.date: 04/30/2019
 keywords: ["KSPROPERTY_TUNER_IF_MEDIUM_S structure"]
 ms.keywords: "*PKSPROPERTY_TUNER_IF_MEDIUM_S, KSPROPERTY_TUNER_IF_MEDIUM_S, KSPROPERTY_TUNER_IF_MEDIUM_S structure [Streaming Media Devices], PKSPROPERTY_TUNER_IF_MEDIUM_S, PKSPROPERTY_TUNER_IF_MEDIUM_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_TUNER_IF_MEDIUM_S, ksmedia/PKSPROPERTY_TUNER_IF_MEDIUM_S, stream.ksproperty_tuner_if_medium_s, vidcapstruct_8fb32d31-0264-49c3-b8de-3773e37441cc.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_TUNER_IF_MEDIUM_S
  - KSPROPERTY_TUNER_IF_MEDIUM_S
 ---
 
@@ -54,7 +54,7 @@ The KSPROPERTY_TUNER_IF_MEDIUM_S structure returns the Medium GUID for the pin t
 
 ### -field Property
 
-Specifies an initialized <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+Specifies an initialized <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 ### -field IFMedium
 
@@ -66,7 +66,7 @@ Support for the <a href="/windows-hardware/drivers/stream/ksproperty-tuner-if-me
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -75,3 +75,4 @@ Support for the <a href="/windows-hardware/drivers/stream/ksproperty-tuner-if-me
 
 
 <a href="/windows-hardware/drivers/stream/propsetid-tuner">PROPSETID_TUNER</a>
+

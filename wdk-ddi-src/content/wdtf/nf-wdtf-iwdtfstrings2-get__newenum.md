@@ -1,10 +1,9 @@
 ---
 UID: NF:wdtf.IWDTFStrings2.get__NewEnum
 title: IWDTFStrings2::get__NewEnum (wdtf.h)
-description: Gets a new iteration variable that the For Each loop structure implicitly uses.
+description: Learn how the get__NewEnum method of the IWDTFStrings2 interface gets a new iteration variable that the For Each loop structure implicitly uses.
 old-location: dtf\iwdtfstrings2__newenum.htm
 tech.root: dtf
-ms.assetid: 1e912b01-e5d1-44f6-b054-1cb5082ccdc4
 ms.date: 04/04/2018
 keywords: ["IWDTFStrings2::get__NewEnum"]
 ms.keywords: IWDTFStrings2 interface [Windows Device Testing Framework],_NewEnum property, IWDTFStrings2._NewEnum, IWDTFStrings2.get__NewEnum, IWDTFStrings2::_NewEnum, IWDTFStrings2::get__NewEnum, Microsoft.WDTF.IWDTFStrings2._NewEnum, Microsoft::WDTF::IWDTFStrings2::_NewEnum, _NewEnum property [Windows Device Testing Framework], _NewEnum property [Windows Device Testing Framework],IWDTFStrings2 interface, dtf.iwdtfstrings2__newenum, get__NewEnum, wdtf/IWDTFStrings2::_NewEnum, wdtf/IWDTFStrings2::get__NewEnum
@@ -38,30 +37,28 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFStrings2._NewEnum
- - IWDTFStrings2.get__NewEnum
+ - IWDTFStrings2::get__NewEnum
 ---
 
 # IWDTFStrings2::get__NewEnum
 
-
 ## -description
 
-Gets a new iteration variable that the <b>For Each</b> 
-loop structure implicitly uses.
+Gets a new iteration variable that the <b>For Each</b> loop structure implicitly uses.
 
 This property is read-only.
 
 ## -parameters
 
+### -param ppNewEnum
+
+## -returns
+
 ## -remarks
 
-You cannot access the <b>_NewEnum</b> property from the 
-JScript programming language.
+You cannot access the <b>_NewEnum</b> property from the JScript programming language.
 
-You must use the Active Template Library (ATL) to implement this functionality. 
-For more information about how ATL implements this functionality, see the 
-<b>ICollectionOnSTLImpl </b>interface in the MSDN Library.
+You must use the Active Template Library (ATL) to implement this functionality. For more information about how ATL implements this functionality, see the <b>ICollectionOnSTLImpl </b>interface in the MSDN Library.
 
 ## -see-also
 

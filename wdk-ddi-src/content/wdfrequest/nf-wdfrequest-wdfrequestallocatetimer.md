@@ -4,7 +4,6 @@ title: WdfRequestAllocateTimer function (wdfrequest.h)
 description: The WdfRequestAllocateTimer method allocates a timer for a specified I/O request.
 old-location: wdf\wdfrequestallocatetimer.htm
 tech.root: wdf
-ms.assetid: e77aece7-df27-42d8-8e25-6907a5401ff9
 ms.date: 02/26/2018
 keywords: ["WdfRequestAllocateTimer function"]
 ms.keywords: DFRequestObjectRef_ae292896-d156-44ae-b0cd-3f807fbc1765.xml, WdfRequestAllocateTimer, WdfRequestAllocateTimer method, kmdf.wdfrequestallocatetimer, wdf.wdfrequestallocatetimer, wdfrequest/WdfRequestAllocateTimer
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,9 +54,9 @@ The <b>WdfRequestAllocateTimer</b> method allocates a timer for a specified I/O 
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
 ## -returns

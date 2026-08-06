@@ -1,11 +1,9 @@
 ---
 UID: NF:printoem.OEMSendFontCmd
 title: OEMSendFontCmd function (printoem.h)
-description: This function is obsolete.
-old-location: print\oemsendfontcmd.htm
+description: This function (OEMSendFontCmdSW) is obsolete.
 tech.root: print
-ms.assetid: 4dcc2ec0-6a75-4fc0-800c-c1ce12e3fd6a
-ms.date: 11/18/2019
+ms.date: 08/12/2022
 keywords: ["OEMSendFontCmd function"]
 ms.keywords: OEMSendFontCmd, OEMSendFontCmd function [Print Devices], print.oemsendfontcmd, print_obsoletefunctions_f54bf949-57eb-49ea-a69b-f9edfdfb9da6.xml, printoem/OEMSendFontCmd
 req.header: printoem.h
@@ -41,9 +39,6 @@ api_name:
  - OEMSendFontCmd
 ---
 
-# OEMSendFontCmd function
-
-
 ## -description
 
 This function is obsolete for Windows XP and later. It is supported only for earlier Unidrv plug-ins.
@@ -54,6 +49,12 @@ Use [IPrintOemUni::SendFontCmd](../prcomoem/nf-prcomoem-iprintoemuni-sendfontcmd
 
 ### -param pdevobj
 
+Defines the **PDEVOBJ** parameter *pdevobj*.
+
 ### -param pUFObj
 
+Defines the **PUNIFONTOBJ** parameter *pUFObj*.
+
 ### -param pFInv
+
+Defines the **PFINVOCATION** parameter *pFInv*.

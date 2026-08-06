@@ -4,7 +4,6 @@ title: IWDFIoRequestCompletionParams::GetReadParameters (wudfddi.h)
 description: The GetReadParameters method retrieves parameters that are associated with the completion of a read request.
 old-location: wdf\iwdfiorequestcompletionparams_getreadparameters.htm
 tech.root: wdf
-ms.assetid: 8f38616e-498b-485e-84c8-de62477b5871
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequestCompletionParams::GetReadParameters"]
 ms.keywords: GetReadParameters, GetReadParameters method, GetReadParameters method,IWDFIoRequestCompletionParams interface, IWDFIoRequestCompletionParams interface,GetReadParameters method, IWDFIoRequestCompletionParams.GetReadParameters, IWDFIoRequestCompletionParams::GetReadParameters, UMDFRequestObjectRef_008ca4d6-ddbe-4288-9b5d-d6ccb35518db.xml, umdf.iwdfiorequestcompletionparams_getreadparameters, wdf.iwdfiorequestcompletionparams_getreadparameters, wudfddi/IWDFIoRequestCompletionParams::GetReadParameters
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequestCompletionParams.GetReadParameters
+ - IWDFIoRequestCompletionParams::GetReadParameters
 ---
 
 # IWDFIoRequestCompletionParams::GetReadParameters
@@ -52,23 +51,23 @@ The <b>GetReadParameters</b> method retrieves parameters that are associated wit
 
 ## -parameters
 
-### -param ppReadMemory 
+### -param ppReadMemory [out]
 
-[out]
+
 A pointer to a variable that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfmemory">IWDFMemory</a> interface for access to the read buffer for the completion of the read request. 
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information.
 
-### -param pBytesRead 
+### -param pBytesRead [out]
 
-[out]
+
 A pointer to a variable that receives the size, in bytes, of the read buffer for the completion of the read request.
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information.
 
-### -param pReadMemoryOffset 
+### -param pReadMemoryOffset [out]
 
-[out]
+
 A pointer to a variable that receives the offset, in bytes, into the read buffer for the completion of the read request.
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information.
@@ -80,3 +79,4 @@ This parameter is optional. The driver can pass <b>NULL</b> if the driver does n
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfmemory">IWDFMemory</a>
+

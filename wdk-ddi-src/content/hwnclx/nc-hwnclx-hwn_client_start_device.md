@@ -4,7 +4,6 @@ title: HWN_CLIENT_START_DEVICE (hwnclx.h)
 description: Implemented by the client driver to start the hardware notification component. It is invoked as a result of a call to EVT_WDF_DEVICE_D0_ENTRY.
 old-location: gpiobtn\hwn_client_start_device.htm
 tech.root: gpiobtn
-ms.assetid: 79ad880a-74a2-48e8-b16b-0d488003889f
 ms.date: 02/15/2018
 keywords: ["HWN_CLIENT_START_DEVICE callback"]
 ms.keywords: "*PHWN_CLIENT_START_DEVICE, *PHWN_CLIENT_START_DEVICE callback function pointer, HWN_CLIENT_START_DEVICE, HwnClientStartDevice, HwnClientStartDevice callback function, gpiobtn.hwn_client_start_device, hwnclx/HwnClientStartDevice"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Hwnclx.h
 api_name:
- - PHWN_CLIENT_START_DEVICE
+ - HWN_CLIENT_START_DEVICE
 ---
 
 # HWN_CLIENT_START_DEVICE callback
@@ -50,9 +49,9 @@ Implemented by the client driver to start the hardware notification component. I
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to the client driver's context information. This memory space is available for use by the client driver. It is allocated as part of the framework object context space by <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>. For more information, see <a href="/windows-hardware/drivers/gpiobtn/create-a-hardware-notification-client-driver">HWN_CLIENT_REGISTRATION_PACKET</a> and <a href="/windows-hardware/drivers/wdf/framework-object-context-space">Framework Object Context Space</a>.
 
 ## -returns
@@ -82,4 +81,5 @@ Register your implementation of this callback function by setting the appropriat
 
 
 
-<a href="/windows-hardware/drivers/ddi/index">Hardware notifications reference</a>
+<a href="/windows-hardware/drivers/ddi/_gpio">Hardware notifications reference</a>
+

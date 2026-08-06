@@ -1,13 +1,10 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_CALC_PRIVATE_SHADER_SIZE_0026
 title: PFND3D12DDI_CALC_PRIVATE_SHADER_SIZE_0026 (d3d12umddi.h)
-description: Determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for a shader.
+description: PFND3D12DDI_CALC_PRIVATE_SHADER_SIZE_0026 determines the size of the private memory region used by the user-mode display driver for a shader.
 tech.root: display
-ms.assetid: ea84faa8-df7d-41e3-8250-d11dd75531c8
 ms.date: 11/28/2018
 keywords: ["PFND3D12DDI_CALC_PRIVATE_SHADER_SIZE_0026 callback function"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: d3d12umddi.h
 req.include-header: 
 req.target-type: 
@@ -37,8 +34,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CALC_PRIVATE_SHADER_SIZE_0026
-product:
- - Windows
 ---
 
 # PFND3D12DDI_CALC_PRIVATE_SHADER_SIZE_0026 callback function
@@ -50,11 +45,11 @@ Determines the size of the user-mode display driver's private region of memory (
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 Pointer to a D3D12DDIARG_CREATE_SHADER_0026 structure.
 

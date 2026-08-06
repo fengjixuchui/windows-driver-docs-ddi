@@ -4,7 +4,6 @@ title: WdfIoTargetCreate function (wdfiotarget.h)
 description: The WdfIoTargetCreate method creates a remote I/O target for a specified device.
 old-location: wdf\wdfiotargetcreate.htm
 tech.root: wdf
-ms.assetid: 21a2fa9c-24c1-4964-aaa7-96ac86b8c078
 ms.date: 02/26/2018
 keywords: ["WdfIoTargetCreate function"]
 ms.keywords: DFIOTargetRef_3de8d750-e0e1-4a74-8e2b-977a27db024f.xml, WdfIoTargetCreate, WdfIoTargetCreate method, kmdf.wdfiotargetcreate, wdf.wdfiotargetcreate, wdfiotarget/WdfIoTargetCreate
@@ -55,19 +54,19 @@ The <b>WdfIoTargetCreate</b> method creates a <a href="/windows-hardware/drivers
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param IoTargetAttributes 
+### -param IoTargetAttributes [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the I/O target object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param IoTarget 
+### -param IoTarget [out]
 
-[out]
+
 A pointer to a location that receives a handle to an I/O target object.
 
 ## -returns

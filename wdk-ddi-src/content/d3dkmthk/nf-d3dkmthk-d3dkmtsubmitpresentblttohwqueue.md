@@ -2,7 +2,6 @@
 UID: NF:d3dkmthk.D3DKMTSubmitPresentBltToHwQueue
 title: D3DKMTSubmitPresentBltToHwQueue function (d3dkmthk.h)
 description: Submits a present Blt to hardware queue.
-ms.assetid: 3dfcbcf4-f07d-4f22-9209-c9f3e6eb45ef
 ms.date: 01/04/2019
 keywords: ["D3DKMTSubmitPresentBltToHwQueue function"]
 ms.keywords: D3DKMTSubmitPresentBltToHwQueue
@@ -36,8 +35,6 @@ api_location:
  - Gdi32.dll
 api_name:
  - D3DKMTSubmitPresentBltToHwQueue
-product:
- - Windows
 ---
 
 # D3DKMTSubmitPresentBltToHwQueue function
@@ -49,7 +46,7 @@ Submits a present Blt to hardware queue.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A [D3DKMT_SUBMITPRESENTBLTTOHWQUEUE](ns-d3dkmthk-_d3dkmt_submitpresentblttohwqueue.md) structure.
 

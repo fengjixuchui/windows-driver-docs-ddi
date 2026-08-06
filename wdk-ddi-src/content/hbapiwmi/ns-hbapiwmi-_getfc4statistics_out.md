@@ -4,7 +4,6 @@ title: _GetFC4Statistics_OUT (hbapiwmi.h)
 description: The GetFC4Statistics_OUT structure is used to report the output parameter data of the GetFC4Statistics WMI method to the WMI client.
 old-location: storage\getfc4statistics_out.htm
 tech.root: storage
-ms.assetid: fc747ff1-cc84-4863-a66a-ae172f45f2bd
 ms.date: 03/29/2018
 keywords: ["GetFC4Statistics_OUT structure"]
 ms.keywords: "*PGetFC4Statistics_OUT, GetFC4Statistics_OUT, GetFC4Statistics_OUT structure [Storage Devices], PGetFC4Statistics_OUT, PGetFC4Statistics_OUT structure pointer [Storage Devices], _GetFC4Statistics_OUT, hbapiwmi/GetFC4Statistics_OUT, hbapiwmi/PGetFC4Statistics_OUT, storage.getfc4statistics_out, structs-Fibre_2a49fe85-534d-42df-8d8f-d07d0c4a7193.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hbapiwmi.h
 api_name:
+ - _GetFC4Statistics_OUT
+ - PGetFC4Statistics_OUT
  - GetFC4Statistics_OUT
 ---
 
@@ -71,3 +72,4 @@ The WMI tool suite generates a declaration of the GetFC4Statistics_OUT structure
 ## -see-also
 
 <a href="/windows-hardware/drivers/storage/getfc4statistics">GetFC4Statistics</a>
+

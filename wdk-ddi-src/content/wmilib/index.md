@@ -1,17 +1,17 @@
 ---
+description: "Learn more about: Wmilib.h header"
 UID: NA:wmilib
 title: Wmilib.h header
 ms.assetid: bca56998-667b-3fd4-9561-ba760c2275b6
 ms.date: 05/09/2018
 keywords: ["Wmilib.h header"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 tech.root: kernel
 f1_keywords:
  - wmilib
  - wmilib/wmilib
+api_name:
+ - wmilib
 ---
 
 # Wmilib.h header
@@ -33,3 +33,4 @@ To handle WMI IRPs by calling WmiSystemControl, a driver must implement certain 
 For more information, see:
 
 - [Implementing WMI](/windows-hardware/drivers/kernel/implementing-wmi)
+

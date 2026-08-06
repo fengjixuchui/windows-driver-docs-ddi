@@ -4,7 +4,6 @@ title: AtaPortRegistryChannelSubkeyWriteDeferred function (irb.h)
 description: The AtaPortRegistryChannelSubKeyWriteDeferred routine writes data asynchronously to the indicated value name under the registry key HKLM\CurrentControlSet\Services\<service name>\ControllerN\ChannelM, where N is the number of the controller and M is the number of the channel.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
 old-location: storage\ataportregistrychannelsubkeywritedeferred.htm
 tech.root: storage
-ms.assetid: 332f6921-1ad2-42ae-9728-001f243b8cff
 ms.date: 03/29/2018
 keywords: ["AtaPortRegistryChannelSubkeyWriteDeferred function"]
 ms.keywords: AtaPortRegistryChannelSubKeyWriteDeferred, AtaPortRegistryChannelSubkeyWriteDeferred, AtaPortRegistryChannelSubkeyWriteDeferred routine [Storage Devices], atartns_ddf14e05-c641-4382-88b4-18abb54e0f17.xml, irb/AtaPortRegistryChannelSubkeyWriteDeferred, storage.ataportregistrychannelsubkeywritedeferred
@@ -51,24 +50,24 @@ The <b>AtaPortRegistryChannelSubKeyWriteDeferred</b> routine writes data asynchr
 
 ## -parameters
 
-### -param ChannelExtension 
+### -param ChannelExtension [in]
 
-[in]
+
 A pointer to the channel extension.
 
-### -param ControllerNumber 
+### -param ControllerNumber [in]
 
-[in]
+
 Contains the controller number.
 
-### -param ValueName 
+### -param ValueName [in]
 
-[in]
+
 Contains the name of the registry value to write to.
 
-### -param ValueType 
+### -param ValueType [in]
 
-[in]
+
 Indicates the type of data that is contained in the registry value. This member should be assigned one of values indicated in the following table. 
 
 <table>
@@ -108,9 +107,9 @@ A null-terminated. Unicode string.
 </tr>
 </table>
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to the source buffer that contains the data to be written to the registry.
 
 ### -param BufferLength

@@ -4,7 +4,6 @@ title: SERCX_BUFFER_DESCRIPTOR_INIT function (sercx.h)
 description: The SERCX_BUFFER_DESCRIPTOR_INIT function initializes a SERCX_BUFFER_DESCRIPTOR structure.
 old-location: serports\sercx_buffer_descriptor_init.htm
 tech.root: serports
-ms.assetid: 73C7C38A-F6E1-4276-A66A-0C16BC6E8F1C
 ms.date: 04/23/2018
 keywords: ["SERCX_BUFFER_DESCRIPTOR_INIT function"]
 ms.keywords: 1/SERCX_BUFFER_DESCRIPTOR_INIT, SERCX_BUFFER_DESCRIPTOR_INIT, SERCX_BUFFER_DESCRIPTOR_INIT function [Serial Ports], serports.sercx_buffer_descriptor_init
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any IRQL
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>SERCX_BUFFER_DESCRIPTOR_INIT</b> function initializes a <a href="/windows
 
 ## -parameters
 
-### -param Descriptor 
+### -param Descriptor [out]
 
-[out]
+
 A pointer to the <b>SERCX_BUFFER_DESCRIPTOR</b> structure that is to be initialized.
 
 ## -see-also

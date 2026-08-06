@@ -4,7 +4,6 @@ title: IMiniportStreamAudioEngineNode::GetStreamChannelMute (portcls.h)
 description: Gets the state of the Mute node in the path of the audio stream.
 old-location: audio\iminiportstreamaudioenginenode_getstreamchannelmute.htm
 tech.root: audio
-ms.assetid: 16010297-5B08-466C-AB79-4ED12A9539D9
 ms.date: 05/08/2018
 keywords: ["IMiniportStreamAudioEngineNode::GetStreamChannelMute"]
 ms.keywords: GetStreamChannelMute, GetStreamChannelMute method [Audio Devices], GetStreamChannelMute method [Audio Devices],IMiniportStreamAudioEngineNode interface, IMiniportStreamAudioEngineNode interface [Audio Devices],GetStreamChannelMute method, IMiniportStreamAudioEngineNode.GetStreamChannelMute, IMiniportStreamAudioEngineNode::GetStreamChannelMute, audio.iminiportstreamaudioenginenode_getstreamchannelmute, portcls/IMiniportStreamAudioEngineNode::GetStreamChannelMute
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IMiniportStreamAudioEngineNode.GetStreamChannelMute
+ - IMiniportStreamAudioEngineNode::GetStreamChannelMute
 ---
 
 # IMiniportStreamAudioEngineNode::GetStreamChannelMute
@@ -50,14 +49,14 @@ Gets the state of the Mute node in the path of the audio stream.
 
 ## -parameters
 
-### -param ulChannel 
+### -param ulChannel [in]
 
-[in]
+
 The audio stream channel.
 
-### -param pbMute 
+### -param pbMute [out]
 
-[out]
+
 The state of the Mute node.
 
 ## -returns
@@ -69,3 +68,4 @@ code.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportstreamaudioenginenode">IMiniportStreamAudioEngineNode</a>
+

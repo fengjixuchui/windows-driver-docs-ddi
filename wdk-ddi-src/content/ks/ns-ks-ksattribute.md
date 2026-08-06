@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_31
+UID: NS:ks.KSATTRIBUTE
 title: KSATTRIBUTE (ks.h)
 description: The KSATTRIBUTE structure defines an additional attribute of a data format or data range that is not covered by the KSDATAFORMAT and KSDATARANGE structures or the extended information based on the format and range specifiers.
 old-location: stream\ksattribute.htm
 tech.root: stream
-ms.assetid: 985d9f12-11c6-40e6-9cb6-572196bc04f4
 ms.date: 04/23/2018
 keywords: ["KSATTRIBUTE structure"]
 ms.keywords: "*PKSATTRIBUTE, KSATTRIBUTE, KSATTRIBUTE structure [Streaming Media Devices], PKSATTRIBUTE, PKSATTRIBUTE structure pointer [Streaming Media Devices], ks-struct_02cb064e-813f-4d67-8cf3-a33e05af7421.xml, ks/KSATTRIBUTE, ks/PKSATTRIBUTE, stream.ksattribute"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSATTRIBUTE
  - KSATTRIBUTE
 ---
 
@@ -75,3 +75,4 @@ Note that KSATTRIBUTE is used in conjunction with data formats and data ranges; 
 
 
 <a href="/previous-versions/ff561658(v=vs.85)">KSDATARANGE</a>
+

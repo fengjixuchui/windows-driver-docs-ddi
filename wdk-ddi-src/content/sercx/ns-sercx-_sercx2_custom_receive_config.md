@@ -4,7 +4,6 @@ title: _SERCX2_CUSTOM_RECEIVE_CONFIG (sercx.h)
 description: The SERCX2_CUSTOM_RECEIVE_CONFIG structure contains information that version 2 of the serial framework extension (SerCx2) uses to configure a new custom-receive object.
 old-location: serports\sercx2_custom_receive_config.htm
 tech.root: serports
-ms.assetid: 815DB069-4AB5-4C00-BB7A-BAAA4050C8CF
 ms.date: 04/23/2018
 keywords: ["SERCX2_CUSTOM_RECEIVE_CONFIG structure"]
 ms.keywords: "*PSERCX2_CUSTOM_RECEIVE_CONFIG, 2/PSERCX2_CUSTOM_RECEIVE_CONFIG, 2/SERCX2_CUSTOM_RECEIVE_CONFIG, PSERCX2_CUSTOM_RECEIVE_CONFIG, PSERCX2_CUSTOM_RECEIVE_CONFIG structure pointer [Serial Ports], SERCX2_CUSTOM_RECEIVE_CONFIG, SERCX2_CUSTOM_RECEIVE_CONFIG structure [Serial Ports], _SERCX2_CUSTOM_RECEIVE_CONFIG, serports.sercx2_custom_receive_config"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
+ - _SERCX2_CUSTOM_RECEIVE_CONFIG
+ - PSERCX2_CUSTOM_RECEIVE_CONFIG
  - SERCX2_CUSTOM_RECEIVE_CONFIG
 ---
 
@@ -103,3 +104,4 @@ The <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customreceivecre
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customreceivecreate">SerCx2CustomReceiveCreate</a>
+

@@ -3,17 +3,16 @@ UID: NS:netpoweroffloadlist._NET_POWER_OFFLOAD_LIST
 title: NET_POWER_OFFLOAD_LIST (netpoweroffloadlist.h)
 description: The NET_POWER_OFFLOAD_LIST structure represents a list of low power protocol offloads to a net adapter.
 tech.root: netvista
-ms.assetid: a8cc5703-68a3-4adf-97b5-ec3271c1fdc3
 ms.date: 10/03/2019
 keywords: ["NET_POWER_OFFLOAD_LIST structure"]
 ms.keywords: NET_POWER_OFFLOAD_LIST, NET_POWER_OFFLOAD_LIST,
 req.header: netpoweroffloadlist.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: 
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - netpoweroffloadlist.h
 api_name:
+ - _NET_POWER_OFFLOAD_LIST
  - NET_POWER_OFFLOAD_LIST
-product:
- - Windows
 ---
 
 # NET_POWER_OFFLOAD_LIST structure
@@ -77,3 +75,4 @@ For a code sample of working with NETPOWEROFFLOAD objects, see [Configuring powe
 [**NetPowerOffloadListGetElement**](../netpoweroffloadlist/nf-netpoweroffloadlist-netpoweroffloadlistgetelement.md)
 
 [**NetPowerOffloadGetType**](../netpoweroffload/nf-netpoweroffload-netpoweroffloadgettype.md)
+

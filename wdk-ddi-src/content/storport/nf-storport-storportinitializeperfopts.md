@@ -4,7 +4,6 @@ title: StorPortInitializePerfOpts function (storport.h)
 description: The StorPortInitializePerfOpts function initializes the performance optimizations that both the miniport driver and the Storport driver support using a PERF_CONFIGURATION_DATA structure.
 old-location: storage\storportinitializeperfopts.htm
 tech.root: storage
-ms.assetid: fbaf864c-d499-456c-be3b-b486c637877e
 ms.date: 03/29/2018
 keywords: ["StorPortInitializePerfOpts function"]
 ms.keywords: StorPortInitializePerfOpts, StorPortInitializePerfOpts function [Storage Devices], storage.storportinitializeperfopts, storport/StorPortInitializePerfOpts, storprt_84998f54-51fe-40fd-a8cc-ba0367a592ce.xml
@@ -50,19 +49,19 @@ The <b>StorPortInitializePerfOpts</b> function initializes the performance optim
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA). This parameter must not be <b>NULL</b>.
 
-### -param Query 
+### -param Query [in]
 
-[in]
+
 If set to <b>TRUE</b>, Storport will set the flags in <i>PerfConfigData</i> corresponding to the optimizations Storport supports. If set to <b>FALSE</b>, Storport will initialize the optimizations specified by the flags in <i>PerfConfigData</i>.
 
-### -param PerfConfigData 
+### -param PerfConfigData [in, out]
 
-[in, out]
+
 A pointer to a PERF_CONFIGURATION_DATA structure that is supplied by the miniport driver. This parameter must not be <b>NULL</b>.
 
 ## -returns

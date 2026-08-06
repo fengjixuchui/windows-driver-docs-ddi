@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_CREATEVIDEODECODEROUTPUTVIEW
 title: PFND3D11_1DDI_CREATEVIDEODECODEROUTPUTVIEW (d3d10umddi.h)
 description: Creates a resource view for a video decoder. This view defines the output sample for the video decoding operation.
 old-location: display\createvideodecoderoutputview.htm
-ms.assetid: a5a32b4e-799c-4d18-995d-f804e6dff85c
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_CREATEVIDEODECODEROUTPUTVIEW callback function"]
 ms.keywords: CreateVideoDecoderOutputView, CreateVideoDecoderOutputView callback function [Display Devices], PFND3D11_1DDI_CREATEVIDEODECODEROUTPUTVIEW, PFND3D11_1DDI_CREATEVIDEODECODEROUTPUTVIEW callback, d3d10umddi/CreateVideoDecoderOutputView, display.createvideodecoderoutputview
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - CreateVideoDecoderOutputView
-product:
- - Windows
+ - PFND3D11_1DDI_CREATEVIDEODECODEROUTPUTVIEW
 ---
 
 # PFND3D11_1DDI_CREATEVIDEODECODEROUTPUTVIEW callback function
@@ -52,25 +49,25 @@ Creates a resource view for a video decoder. This view defines the output sample
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCreateData* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddiarg_createvideodecoderoutputview">D3D11_1DDIARG_CREATEVIDEODECODEROUTPUTVIEW</a> structure. This structure specifies the attributes of the video decoder output view to be created.
 
-### -param Arg3
+### -param unnamedParam3
 
 *hView* [in]
 
 A handle to the driver's private data for the video decoder output view.
 
-### -param Arg4
+### -param unnamedParam4
 
 *hRTView* [in]
 
@@ -107,3 +104,4 @@ When the runtime  calls <i>CreateVideoDecoderOutputView</i>, it passes the handl
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_videodecoderbeginframe">VideoDecoderBeginFrame</a>
+

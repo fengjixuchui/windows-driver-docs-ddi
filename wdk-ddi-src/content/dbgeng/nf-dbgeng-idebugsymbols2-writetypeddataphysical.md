@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols2.WriteTypedDataPhysical
 title: IDebugSymbols2::WriteTypedDataPhysical (dbgeng.h)
-description: The WriteTypedDataPhysical method writes the value of a variable in the target computer's physical memory.
+description: The WriteTypedDataPhysical method writes the value of a variable in the target computer's physical memory. This method belongs to the IDebugSymbols2 interface.
 old-location: debugger\writetypeddataphysical.htm
 tech.root: debugger
-ms.assetid: 5f29249f-bb62-45d1-aa0e-108db1d7f906
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols2::WriteTypedDataPhysical"]
 ms.keywords: IDebugSymbols interface [Windows Debugging],WriteTypedDataPhysical method, IDebugSymbols2 interface [Windows Debugging],WriteTypedDataPhysical method, IDebugSymbols2.WriteTypedDataPhysical, IDebugSymbols2::WriteTypedDataPhysical, IDebugSymbols3 interface [Windows Debugging],WriteTypedDataPhysical method, IDebugSymbols3::WriteTypedDataPhysical, IDebugSymbols::WriteTypedDataPhysical, IDebugSymbols_b5205296-88eb-4af8-8448-b2a79f08e7b0.xml, WriteTypedDataPhysical, WriteTypedDataPhysical method [Windows Debugging], WriteTypedDataPhysical method [Windows Debugging],IDebugSymbols interface, WriteTypedDataPhysical method [Windows Debugging],IDebugSymbols2 interface, WriteTypedDataPhysical method [Windows Debugging],IDebugSymbols3 interface, dbgeng/IDebugSymbols2::WriteTypedDataPhysical, dbgeng/IDebugSymbols3::WriteTypedDataPhysical, dbgeng/IDebugSymbols::WriteTypedDataPhysical, debugger.writetypeddataphysical
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.WriteTypedDataPhysical
- - IDebugSymbols2.WriteTypedDataPhysical
- - IDebugSymbols3.WriteTypedDataPhysical
+ - IDebugSymbols2::WriteTypedDataPhysical
 ---
 
 # IDebugSymbols2::WriteTypedDataPhysical
@@ -52,34 +49,34 @@ The <b>WriteTypedDataPhysical</b> method writes the value of a variable in the t
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the physical address in the target computer's memory of the variable.
 
-### -param Module 
+### -param Module [in]
 
-[in]
+
 Specifies the base address of the module containing the type of the variable.
 
-### -param TypeId 
+### -param TypeId [in]
 
-[in]
+
 Specifies the type ID of the type of the variable.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Specifies the buffer containing the data to be written.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size in bytes of the buffer <i>Buffer</i>.  This is the maximum number of bytes to be written.
 
-### -param BytesWritten 
+### -param BytesWritten [out, optional]
 
-[out, optional]
+
 Receives the number of bytes that were written.  If <i>BytesWritten</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -124,3 +121,4 @@ The number of bytes this method attempts to write is the smaller of the size of 
 This is a convenience method.  The same result can be obtained by calling <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-gettypesize">GetTypeSize</a> and <a href="/windows-hardware/drivers/ddi/wdbgexts/nf-wdbgexts-writephysical">WritePhysical</a>.
 
 For more information about types, see <a href="/windows-hardware/drivers/debugger/types">Types</a>.
+

@@ -2,8 +2,7 @@
 UID: NS:treepaymentservice._PAYMENT_SERVICE_OUT
 title: _PAYMENT_SERVICE_OUT structure (treepaymentservice.h)
 description: Output structure for PAYMENT_SERVICE_OUT.
-ms.assetid: 3d13bd2a-ca37-43e5-b555-b858aed687ee
-ms.date: 10/19/2018
+ms.date: 11/20/2020
 keywords: ["PAYMENT_SERVICE_OUT structure"]
 ms.keywords: _PAYMENT_SERVICE_OUT, PAYMENT_SERVICE_OUT, *PPAYMENT_SERVICE_OUT,
 req.header: treepaymentservice.h
@@ -20,6 +19,7 @@ req.unicode-ansi:
 req.max-support: 
 req.typenames: PAYMENT_SERVICE_OUT, *PPAYMENT_SERVICE_OUT
 targetos: Windows
+tech.root: treedrv
 f1_keywords:
  - _PAYMENT_SERVICE_OUT
  - treepaymentservice/_PAYMENT_SERVICE_OUT
@@ -35,6 +35,8 @@ api_location:
  - treepaymentservice.h
 api_name:
  - _PAYMENT_SERVICE_OUT
+ - PPAYMENT_SERVICE_OUT
+ - PAYMENT_SERVICE_OUT
 ---
 
 # _PAYMENT_SERVICE_OUT structure

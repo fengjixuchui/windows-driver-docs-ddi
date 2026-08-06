@@ -2,7 +2,6 @@
 UID: NS:d3dkmthk._D3DKMT_UNREGISTERBUDGETCHANGENOTIFICATION
 title: _D3DKMT_UNREGISTERBUDGETCHANGENOTIFICATION (d3dkmthk.h)
 description: Used to unregister budget change notification.
-ms.assetid: 76138641-3d2e-4af9-b7b0-547bfdc2472b
 ms.date: 10/19/2018
 keywords: ["D3DKMT_UNREGISTERBUDGETCHANGENOTIFICATION structure"]
 ms.keywords: _D3DKMT_UNREGISTERBUDGETCHANGENOTIFICATION, D3DKMT_UNREGISTERBUDGETCHANGENOTIFICATION,
@@ -35,6 +34,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_UNREGISTERBUDGETCHANGENOTIFICATION
+ - D3DKMT_UNREGISTERBUDGETCHANGENOTIFICATION
 dev_langs:
  - c++
 ---
@@ -48,10 +48,10 @@ Used to unregister budget change notification.
 
 ## -struct-fields
 
-### -field Handle
+### -field Handle [in]
 
  
-[in] A handle to the register.
+A handle to the register.
 
 ## -remarks
 

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbolGroup.RemoveSymbolByIndex
 title: IDebugSymbolGroup::RemoveSymbolByIndex (dbgeng.h)
-description: The RemoveSymbolByIndex method removes the specified symbol from a symbol group.
+description: The RemoveSymbolByIndex method removes the specified symbol from a symbol group. This method belongs to the IDebugSymbolGroup interface.
 old-location: debugger\removesymbolbyindex.htm
 tech.root: debugger
-ms.assetid: 1903d454-02d1-4528-9b8f-3c2eab8c6a6a
 ms.date: 05/03/2018
 keywords: ["IDebugSymbolGroup::RemoveSymbolByIndex"]
 ms.keywords: ComOther_d532b37e-11c9-4cff-a619-0b9dffef0af1.xml, IDebugSymbolGroup interface [Windows Debugging],RemoveSymbolByIndex method, IDebugSymbolGroup.RemoveSymbolByIndex, IDebugSymbolGroup2 interface [Windows Debugging],RemoveSymbolByIndex method, IDebugSymbolGroup2::RemoveSymbolByIndex, IDebugSymbolGroup::RemoveSymbolByIndex, RemoveSymbolByIndex, RemoveSymbolByIndex method [Windows Debugging], RemoveSymbolByIndex method [Windows Debugging],IDebugSymbolGroup interface, RemoveSymbolByIndex method [Windows Debugging],IDebugSymbolGroup2 interface, dbgeng/IDebugSymbolGroup2::RemoveSymbolByIndex, dbgeng/IDebugSymbolGroup::RemoveSymbolByIndex, debugger.removesymbolbyindex
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbolGroup.RemoveSymbolByIndex
- - IDebugSymbolGroup2.RemoveSymbolByIndex
+ - IDebugSymbolGroup::RemoveSymbolByIndex
 ---
 
 # IDebugSymbolGroup::RemoveSymbolByIndex
@@ -51,9 +49,9 @@ The <b>RemoveSymbolByIndex</b> method removes the specified symbol from a symbol
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 The index of the symbol to remove. The index of a symbol is an identification number. The index ranges from zero through the number of symbols in the symbol group minus one.
 
 ## -returns
@@ -106,3 +104,4 @@ For more information about symbol groups, see <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbolgroup2-removesymbolbyname">RemoveSymbolByName</a>
+

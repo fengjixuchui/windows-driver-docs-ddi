@@ -3,7 +3,6 @@ UID: NS:ndiswwan._NDIS_WWAN_UICC_RESPONSE
 title: _NDIS_WWAN_UICC_RESPONSE (ndiswwan.h)
 description: The NDIS_WWAN_UICC_RESPONSE structure describes a UICC response to a file read or write operation.
 tech.root: netvista
-ms.assetid: 765B74B7-0609-4A2F-BCF7-A5BBF9C15D32
 ms.date: 04/10/2019
 keywords: ["NDIS_WWAN_UICC_RESPONSE structure"]
 ms.keywords: _NDIS_WWAN_UICC_RESPONSE, NDIS_WWAN_UICC_RESPONSE, *PNDIS_WWAN_UICC_RESPONSE,
@@ -37,6 +36,8 @@ api_location:
  - ndiswwan.h
 api_name:
  - _NDIS_WWAN_UICC_RESPONSE
+ - PNDIS_WWAN_UICC_RESPONSE
+ - NDIS_WWAN_UICC_RESPONSE
 ---
 
 # _NDIS_WWAN_UICC_RESPONSE structure
@@ -58,7 +59,7 @@ The header with type, revision, and size information about the **NDIS_WWAN_UICC_
 | Revision | NDIS_WWAN_UICC_RESPONSE_REVISION_1 |
 | Size | sizeof(NDIS_WWAN_UICC_RESPONSE) |
 
-For more information about these members, see [**NDIS_OBJECT_HEADER**](../ntddndis/ns-ntddndis-_ndis_object_header.md).
+For more information about these members, see [**NDIS_OBJECT_HEADER**](../objectheader/ns-objectheader-ndis_object_header.md).
 
 ### -field uStatus
 
@@ -92,3 +93,4 @@ This structure is used in either the [NDIS_STATUS_WWAN_UICC_BINARY_RESPONSE](/wi
 [NDIS_STATUS_WWAN_UICC_RECORD_RESPONSE](/windows-hardware/drivers/network/ndis-status-wwan-uicc-record-response)
 
 [**WWAN_UICC_RESPONSE**](../wwan/ns-wwan-_wwan_uicc_response.md)
+

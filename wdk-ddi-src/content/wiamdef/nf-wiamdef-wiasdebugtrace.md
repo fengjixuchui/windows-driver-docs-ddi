@@ -4,7 +4,6 @@ title: wiasDebugTrace function (wiamdef.h)
 description: The wiasDebugTrace function is obsolete.
 old-location: image\wiasdebugtrace.htm
 tech.root: image
-ms.assetid: db39c7f6-d966-4538-8ee9-d3623995535c
 ms.date: 11/18/2019
 keywords: ["wiasDebugTrace function"]
 ms.keywords: image.wiasdebugtrace, wiamdef/wiasDebugTrace, wiasDebugTrace, wiasDebugTrace function [Imaging Devices], wiasFncs_b6582555-3674-4261-a542-9a6388649bb0.xml
@@ -58,7 +57,7 @@ Te handle of calling module.
 
 ### -param pszFormat
 
-### -param param
+### -param ...
 
 ####### - pszFormat, ...
 
@@ -73,3 +72,4 @@ To enable tracing in free builds, drivers must define the WIAS_DEBUG macro. Trac
 [WIAS_LTRACE](./nf-wiamdef-wias_ltrace.md)
 
 [WIAS_TRACE](./nf-wiamdef-wias_trace.md)
+

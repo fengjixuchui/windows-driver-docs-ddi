@@ -4,7 +4,6 @@ title: IMiniportWaveCyclic::Init method (portcls.h)
 description: The Init method initializes the WaveCyclic miniport object. Initialization includes verification of the hardware using the resources specified in the resource list.
 old-location: audio\iminiportwavecyclic_init.htm
 tech.root: audio
-ms.assetid: 2f0147d0-9c1d-4f3e-890f-941568220605
 ms.date: 03/19/2018
 keywords: ["IMiniportWaveCyclic::Init method"]
 ms.keywords: IMiniportWaveCyclic, IMiniportWaveCyclic::Init, IMiniportWavweCyclic interface [Audio Devices], Init method, IMiniportWavweCyclic::Init, Init method [Audio Devices], Init method [Audio Devices], IMiniportWavweCyclic interface, Init,IMiniportWaveCyclic.Init, audio.iminiportwavecyclic_init, audmp-routines_d18e9242-160d-4f55-9204-2e425b1f1669.xml, portcls/IMiniportWavweCyclic::Init
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWavweCyclic.Init
+ - IMiniportWaveCyclic::Init
 ---
 
 # IMiniportWaveCyclic::Init method
@@ -50,19 +49,19 @@ The <code>Init</code> method initializes the WaveCyclic miniport object. Initial
 
 ## -parameters
 
-### -param UnknownAdapter 
+### -param UnknownAdapter [in]
 
-[in]
+
 Pointer to the <b>IUnknown</b> interface of the adapter object whose miniport object is being initialized. For more information, see the following Remarks section.
 
-### -param ResourceList 
+### -param ResourceList [in]
 
-[in]
+
 Pointer to <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iresourcelist">IResourceList</a> interface of the resource list object that is to be supplied to the miniport driver during initialization. After passing this reference to the miniport driver, the port driver is free to examine the contents of the resource list but will not modify the contents of this list. For more information, see the following Remarks section.
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavecyclic">IPortWaveCyclic</a> object that is bound to this miniport driver. The caller specifies a valid, non-NULL pointer for this parameter.
 
 ## -returns
@@ -90,3 +89,4 @@ The <i>UnknownAdapter</i>, <i>ResourceList</i>, and <i>Port</i> parameters follo
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iresourcelist">IResourceList</a>
+

@@ -4,7 +4,6 @@ title: _WDF_DEVICE_STATE (wdfdevice.h)
 description: The WDF_DEVICE_STATE structure specifies a device's Plug and Play state.
 old-location: wdf\wdf_device_state.htm
 tech.root: wdf
-ms.assetid: 5d0a2303-df2b-45fe-9c88-df4bb19a2a9f
 ms.date: 02/26/2018
 keywords: ["WDF_DEVICE_STATE structure"]
 ms.keywords: "*PWDF_DEVICE_STATE, DFDeviceObjectGeneralRef_a5705164-b38f-4307-8b7d-5b3156aadf62.xml, PWDF_DEVICE_STATE, PWDF_DEVICE_STATE structure pointer, WDF_DEVICE_STATE, WDF_DEVICE_STATE structure, _WDF_DEVICE_STATE, kmdf.wdf_device_state, wdf.wdf_device_state, wdfdevice/PWDF_DEVICE_STATE, wdfdevice/WDF_DEVICE_STATE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdfdevice.h
 api_name:
+ - _WDF_DEVICE_STATE
+ - PWDF_DEVICE_STATE
  - WDF_DEVICE_STATE
 ---
 
@@ -84,6 +85,10 @@ A <a href="/windows-hardware/drivers/ddi/wdftypes/ne-wdftypes-_wdf_tri_state">WD
 
 A <a href="/windows-hardware/drivers/ddi/wdftypes/ne-wdftypes-_wdf_tri_state">WDF_TRI_STATE</a>-typed value that, if set to <b>WdfTrue</b>, indicates that the device's resource requirements have changed.
 
+### -field AssignedToGuest
+
+A <a href="/windows-hardware/drivers/ddi/wdftypes/ne-wdftypes-_wdf_tri_state">WDF_TRI_STATE</a>-typed value that, if set to <b>WdfTrue</b>, indicates that the device is reporting itself as assigned to a guest partition.
+
 ## -remarks
 
 Structure members use the <a href="/windows-hardware/drivers/ddi/wdftypes/ne-wdftypes-_wdf_tri_state">WDF_TRI_STATE</a> type. A value of <b>WdfUseDefault</b> indicates the framework will use the value that was provided by a lower driver in the stack. For example, if a bus driver specifies <b>WdfTrue</b> for <b>NotDisableable</b> and the device's function driver specifies <b>WdfUseDefault</b>, the framework uses <b>WdfTrue</b> for the device state.
@@ -93,3 +98,4 @@ The <b>WDF_DEVICE_STATE</b> structure is used as a parameter to <a href="/window
 To initialize a <b>WDF_DEVICE_STATE</b> structure, the driver must call <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdf_device_state_init">WDF_DEVICE_STATE_INIT</a>.
 
 For more information about the members of the <b>WDF_DEVICE_STATE</b> structure, see [PNP_DEVICE_STATE](/windows-hardware/drivers/kernel/handling-an-irp-mn-surprise-removal-request#about-pnp_device_state).
+

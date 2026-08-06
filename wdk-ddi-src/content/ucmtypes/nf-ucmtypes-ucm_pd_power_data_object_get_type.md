@@ -4,7 +4,6 @@ title: UCM_PD_POWER_DATA_OBJECT_GET_TYPE function (ucmtypes.h)
 description: Retrieves the type of Power Data Object from the UCM_PD_POWER_DATA_OBJECT structure.
 old-location: buses\ucm_pd_power_data_object_get_type.htm
 tech.root: usbref
-ms.assetid: ACB0AB92-5EC8-4792-AB40-853FC5AAD125
 ms.date: 05/07/2018
 keywords: ["UCM_PD_POWER_DATA_OBJECT_GET_TYPE function"]
 ms.keywords: UCM_PD_POWER_DATA_OBJECT_GET_TYPE, UCM_PD_POWER_DATA_OBJECT_GET_TYPE function [Buses], buses.ucm_pd_power_data_object_get_type, ucmtypes/UCM_PD_POWER_DATA_OBJECT_GET_TYPE
@@ -50,9 +49,9 @@ Retrieves the type of Power Data Object from the <a href="/windows-hardware/driv
 
 ## -parameters
 
-### -param Pdo 
+### -param Pdo [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ucmtypes/ns-ucmtypes-_ucm_pd_power_data_object">UCM_PD_POWER_DATA_OBJECT</a> structure that contains the type of Power Data Object.
 
 ## -returns

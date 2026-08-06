@@ -4,7 +4,6 @@ title: WDF_READ_PORT_ULONG function (wdfhwaccess.h)
 description: The WDF_READ_PORT_ULONG function reads a ULONG value from the specified port address.
 old-location: wdf\wdf_read_port_ulong.htm
 tech.root: wdf
-ms.assetid: 7553FE66-8138-4172-843F-84EE2D5A90BE
 ms.date: 02/26/2018
 keywords: ["WDF_READ_PORT_ULONG function"]
 ms.keywords: WDF_READ_PORT_ULONG, WDF_READ_PORT_ULONG function, wdf.wdf_read_port_ulong, wdfhwaccess/WDF_READ_PORT_ULONG
@@ -52,14 +51,14 @@ The <b>WDF_READ_PORT_ULONG</b>  function reads a ULONG value from the specified 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Specifies the port address, which must be a mapped memory range in I/O space.
 
 ## -returns

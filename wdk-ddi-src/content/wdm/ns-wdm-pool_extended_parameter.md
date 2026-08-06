@@ -3,9 +3,8 @@ UID: NS:wdm._POOL_EXTENDED_PARAMETER
 title: POOL_EXTENDED_PARAMETER
 tech.root: kernel
 ms.date: 03/01/2020
-ms.topic: language-reference
 targetos: Windows
-description: 
+description: "Learn more about: POOL_EXTENDED_PARAMETER"
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -28,6 +27,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _POOL_EXTENDED_PARAMETER
+ - PPOOL_EXTENDED_PARAMETER
  - POOL_EXTENDED_PARAMETER
 f1_keywords:
  - _POOL_EXTENDED_PARAMETER
@@ -74,28 +75,14 @@ Reserved for future use.
 
 If **Type** is set to **PoolExtendedParameterPriority**, this field must contain a valid [**EX_POOL_PRIORITY**](ne-wdm-ex_pool_priority.md) value.
 
-## -syntax
+### -field DUMMYUNIONNAME.SecurePoolParams
 
-```cpp
-#define POOL_EXTENDED_PARAMETER_TYPE_BITS    8
-#define POOL_EXTENDED_PARAMETER_REQUIRED_FIELD_BITS    1
-#define POOL_EXTENDED_PARAMETER_RESERVED_BITS    (64 - POOL_EXTENDED_PARAMETER_TYPE_BITS - POOL_EXTENDED_PARAMETER_REQUIRED_FIELD_BITS)
+### -field DUMMYUNIONNAME.PreferredNode
 
-typedef struct _POOL_EXTENDED_PARAMETER {
-    struct {
-        ULONG64 Type : POOL_EXTENDED_PARAMETER_TYPE_BITS;
-        ULONG64 Optional : POOL_EXTENDED_PARAMETER_REQUIRED_FIELD_BITS;
-        ULONG64 Reserved : POOL_EXTENDED_PARAMETER_RESERVED_BITS;
-    } DUMMYSTRUCTNAME;
-
-    union {
-        ULONG64 Reserved2;
-        PVOID Reserved3;
-        EX_POOL_PRIORITY Priority;
-    } DUMMYUNIONNAME;
-} POOL_EXTENDED_PARAMETER, *PPOOL_EXTENDED_PARAMETER;
-typedef CONST POOL_EXTENDED_PARAMETER *PCPOOL_EXTENDED_PARAMETER;
-```
+If **Type** is set to **PoolExtendedParameterNumaNode** this field should contain a valid NUMA node index numbered 0 through N-1.
+If the field also contains MM_ANY_NODE_OK, the call prefers the specified NUMA node but tries others if it is unavailable.
+If MM_ANY_NODE_OK is not set, the call fails if the requested NUMA node cannot satisfy the allocation.
+This parameter is valid only for allocations made with POOL_FLAG_NON_PAGED pool.
 
 ## -remarks
 

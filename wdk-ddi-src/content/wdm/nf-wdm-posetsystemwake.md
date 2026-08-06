@@ -4,7 +4,6 @@ title: PoSetSystemWake function (wdm.h)
 description: The PoSetSystemWake routine marks the specified IRP as one that contributed to waking the system from a sleep state.
 old-location: kernel\posetsystemwake.htm
 tech.root: kernel
-ms.assetid: e79ed9a1-b271-4c0a-a82f-9fecab930569
 ms.date: 04/30/2018
 keywords: ["PoSetSystemWake function"]
 ms.keywords: PoSetSystemWake, PoSetSystemWake routine [Kernel-Mode Driver Architecture], kernel.posetsystemwake, portn_09bfa419-5a6c-4305-87ee-58a0e032d0c4.xml, wdm/PoSetSystemWake
@@ -50,9 +49,9 @@ The <b>PoSetSystemWake</b> routine marks the specified IRP as one that contribut
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in, out]
 
-[in, out]
+
 A pointer to the wait/wake IRP.
 
 ## -remarks

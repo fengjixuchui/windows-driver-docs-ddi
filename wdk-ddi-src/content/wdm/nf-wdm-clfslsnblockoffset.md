@@ -4,7 +4,6 @@ title: ClfsLsnBlockOffset function (wdm.h)
 description: The ClfsLsnBlockOffset routine returns the sector-aligned block offset contained in a specified LSN.
 old-location: kernel\clfslsnblockoffset.htm
 tech.root: kernel
-ms.assetid: 8b2cf728-8859-4b7d-99f0-2ee7604ab480
 ms.date: 04/30/2018
 keywords: ["ClfsLsnBlockOffset function"]
 ms.keywords: ClfsLsnBlockOffset, ClfsLsnBlockOffset routine [Kernel-Mode Driver Architecture], Clfs_700ff9e8-40ea-4659-b4a5-99432fb1577c.xml, kernel.clfslsnblockoffset, wdm/ClfsLsnBlockOffset
@@ -51,9 +50,9 @@ The <b>ClfsLsnBlockOffset</b> routine returns the sector-aligned block offset co
 
 ## -parameters
 
-### -param plsn 
+### -param plsn [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_lsn">CLFS_LSN</a> structure from which the block offset is retrieved.
 
 ## -returns

@@ -4,7 +4,6 @@ title: _GPIO_DISABLE_INTERRUPT_PARAMETERS (gpioclx.h)
 description: The GPIO_DISABLE_INTERRUPT_PARAMETERS structure describes a general-purpose I/O (GPIO) interrupt pin to disable.
 old-location: gpio\gpio_disable_interrupt_parameters.htm
 tech.root: GPIO
-ms.assetid: 6F71C67C-ACA6-405A-9371-9DC72CC6DDCE
 ms.date: 02/15/2018
 keywords: ["GPIO_DISABLE_INTERRUPT_PARAMETERS structure"]
 ms.keywords: "*PGPIO_DISABLE_INTERRUPT_PARAMETERS, GPIO.gpio_disable_interrupt_parameters, GPIO_DISABLE_INTERRUPT_PARAMETERS, GPIO_DISABLE_INTERRUPT_PARAMETERS structure [Parallel Ports], PGPIO_DISABLE_INTERRUPT_PARAMETERS, PGPIO_DISABLE_INTERRUPT_PARAMETERS structure pointer [Parallel Ports], _GPIO_DISABLE_INTERRUPT_PARAMETERS, gpioclx/GPIO_DISABLE_INTERRUPT_PARAMETERS, gpioclx/PGPIO_DISABLE_INTERRUPT_PARAMETERS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
+ - _GPIO_DISABLE_INTERRUPT_PARAMETERS
+ - PGPIO_DISABLE_INTERRUPT_PARAMETERS
  - GPIO_DISABLE_INTERRUPT_PARAMETERS
 ---
 
@@ -85,3 +86,4 @@ After a <i>CLIENT_DisableInterrupt</i> call fails, GpioClx might retry the call 
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/nc-gpioclx-gpio_client_query_controller_basic_information">CLIENT_QueryControllerBasicInformation</a>
+

@@ -4,7 +4,6 @@ title: PFN_WSK_CLOSE_SOCKET (wsk.h)
 description: The WskCloseSocket function closes a socket and frees any associated resources.
 old-location: netvista\wskclosesocket.htm
 tech.root: netvista
-ms.assetid: 4d4e4a40-db76-4746-8049-3af8c4541283
 ms.date: 05/02/2018
 keywords: ["PFN_WSK_CLOSE_SOCKET callback function"]
 ms.keywords: PFN_WSK_CLOSE_SOCKET, PFN_WSK_CLOSE_SOCKET callback, WskCloseSocket, WskCloseSocket callback function [Network Drivers Starting with Windows Vista], netvista.wskclosesocket, wsk/WskCloseSocket, wskref_c8c37dfe-294f-4a40-9b3a-f4ca609ad4d8.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wsk.h
 api_name:
- - WskCloseSocket
+ - PFN_WSK_CLOSE_SOCKET
 ---
 
 # PFN_WSK_CLOSE_SOCKET callback function
@@ -51,16 +50,16 @@ The
 
 ## -parameters
 
-### -param Socket 
+### -param Socket [in]
 
-[in]
+
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_socket">WSK_SOCKET</a> structure that specifies the socket
      object for the socket that is being closed.
 
-### -param Irp 
+### -param Irp [in, out]
 
-[in, out]
+
 A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the close operation
      asynchronously. For more information about using IRPs with WSK functions, see 
      <a href="/windows-hardware/drivers/network/using-irps-with-winsock-kernel-functions">Using IRPs with Winsock
@@ -189,3 +188,4 @@ For connection-oriented sockets, the
 
 
 <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect">WskSocketConnect</a>
+

@@ -4,7 +4,6 @@ title: _DD_GETEXTENDEDMODEDATA (d3dhal.h)
 description: DirectX 9.0 and later versions only. DD_GETEXTENDEDMODEDATA is the data structure pointed to by the lpvData field of DD_GETDRIVERINFODATA for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETEXTENDEDMODE.
 old-location: display\dd_getextendedmodedata.htm
 tech.root: display
-ms.assetid: 50b2a1fd-4214-4ad8-b087-f48c14dbe587
 ms.date: 05/10/2018
 keywords: ["DD_GETEXTENDEDMODEDATA structure"]
 ms.keywords: DD_GETEXTENDEDMODEDATA, DD_GETEXTENDEDMODEDATA structure [Display Devices], _DD_GETEXTENDEDMODEDATA, d3dhal/DD_GETEXTENDEDMODEDATA, d3dstrct_a39e1e5a-9b07-48eb-a7c6-40bcac8a21d6.xml, display.dd_getextendedmodedata
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dhal.h
 api_name:
+ - _DD_GETEXTENDEDMODEDATA
  - DD_GETEXTENDEDMODEDATA
 ---
 
@@ -86,3 +86,4 @@ For more information about D3DDISPLAYMODE, see the DirectX SDK documentation.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_dd_getextendedmodecountdata">DD_GETEXTENDEDMODECOUNTDATA</a>
+

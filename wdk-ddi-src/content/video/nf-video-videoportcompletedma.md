@@ -4,7 +4,6 @@ title: VideoPortCompleteDma function (video.h)
 description: The VideoPortCompleteDma function flushes any data remaining in a bus-master adapter's internal cache at the end of a DMA transfer operation, and then frees the previously allocated map registers and scatter/gather list used in scatter/gather DMA operations.
 old-location: display\videoportcompletedma.htm
 tech.root: display
-ms.assetid: 8af5a397-7945-4f72-a253-04d227bf3ca1
 ms.date: 05/10/2018
 keywords: ["VideoPortCompleteDma function"]
 ms.keywords: VideoPortCompleteDma, VideoPortCompleteDma function [Display Devices], VideoPort_Functions_1ee3a02f-e0bb-4230-8161-957ceba37206.xml, display.videoportcompletedma, video/VideoPortCompleteDma
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Videoprt.lib
 req.dll: Videoprt.sys
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,24 +49,24 @@ The <b>VideoPortCompleteDma</b> function flushes any data remaining in a bus-mas
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's device extension.
 
-### -param VpDmaAdapter 
+### -param VpDmaAdapter [in]
 
-[in]
+
 Pointer to a <a href="/previous-versions/ff570570(v=vs.85)">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This structure was returned by a call to <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportgetdmaadapter">VideoPortGetDmaAdapter</a>.
 
-### -param VpScatterGather 
+### -param VpScatterGather [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/video/ns-video-_vp_scatter_gather_list">VP_SCATTER_GATHER_LIST</a> structure previously passed to the miniport driver callback routine, <a href="/windows-hardware/drivers/ddi/video/nc-video-pexecute_dma">HwVidExecuteDma</a>.
 
-### -param WriteToDevice 
+### -param WriteToDevice [in]
 
-[in]
+
 Specifies the direction of the DMA transfer. A value of <b>TRUE</b> denotes a transfer from the buffer to the device, and a value of <b>FALSE</b> denotes a transfer from the device to the buffer.
 
 ## -returns

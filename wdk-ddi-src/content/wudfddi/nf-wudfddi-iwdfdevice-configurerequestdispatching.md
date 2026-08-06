@@ -4,7 +4,6 @@ title: IWDFDevice::ConfigureRequestDispatching (wudfddi.h)
 description: The ConfigureRequestDispatching method configures the queuing of I/O requests of the specified type to the specified I/O queue.
 old-location: wdf\iwdfdevice_configurerequestdispatching.htm
 tech.root: wdf
-ms.assetid: b3318695-e9f2-480a-9133-9008ef0002b7
 ms.date: 02/26/2018
 keywords: ["IWDFDevice::ConfigureRequestDispatching"]
 ms.keywords: ConfigureRequestDispatching, ConfigureRequestDispatching method, ConfigureRequestDispatching method,IWDFDevice interface, IWDFDevice interface,ConfigureRequestDispatching method, IWDFDevice.ConfigureRequestDispatching, IWDFDevice::ConfigureRequestDispatching, UMDFDeviceObjectRef_1fbf31c6-856c-45d2-aa86-3b36372821c8.xml, umdf.iwdfdevice_configurerequestdispatching, wdf.iwdfdevice_configurerequestdispatching, wudfddi/IWDFDevice::ConfigureRequestDispatching
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice.ConfigureRequestDispatching
+ - IWDFDevice::ConfigureRequestDispatching
 ---
 
 # IWDFDevice::ConfigureRequestDispatching
@@ -52,19 +51,19 @@ The <b>ConfigureRequestDispatching</b> method configures the queuing of I/O requ
 
 ## -parameters
 
-### -param pQueue 
+### -param pQueue [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfioqueue">IWDFIoQueue</a> interface for the I/O queue to configure.
 
-### -param RequestType 
+### -param RequestType [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfrequest/ne-wdfrequest-_wdf_request_type">WDF_REQUEST_TYPE</a>-typed value that identifies the request type to be queued. The only valid <b>WDF_REQUEST_TYPE</b> values are <b>WdfRequestCreate</b>, <b>WdfRequestRead</b>, <b>WdfRequestWrite</b>, and <b>WdfRequestDeviceIoControl</b>.
 
-### -param Forward 
+### -param Forward [in]
 
-[in]
+
 A BOOL value that specifies whether requests of the specified type are queued. <b>TRUE</b> indicates to enable queuing requests; <b>FALSE</b> indicates to disable queuing requests.
 
 ## -returns
@@ -82,3 +81,4 @@ A BOOL value that specifies whether requests of the specified type are queued. <
 
 
 <a href="/windows-hardware/drivers/ddi/wdfrequest/ne-wdfrequest-_wdf_request_type">WDF_REQUEST_TYPE</a>
+

@@ -4,7 +4,6 @@ title: WdfRequestRetrieveOutputMemory function (wdfrequest.h)
 description: The WdfRequestRetrieveOutputMemory method retrieves a handle to a framework memory object that represents an I/O request's output buffer.
 old-location: wdf\wdfrequestretrieveoutputmemory.htm
 tech.root: wdf
-ms.assetid: c61e343a-5276-4cb8-87ff-9852ad167ff5
 ms.date: 02/26/2018
 keywords: ["WdfRequestRetrieveOutputMemory function"]
 ms.keywords: DFRequestObjectRef_fdcaef98-5478-42af-a61e-669eec37907e.xml, WdfRequestRetrieveOutputMemory, WdfRequestRetrieveOutputMemory method, kmdf.wdfrequestretrieveoutputmemory, wdf.wdfrequestretrieveoutputmemory, wdfrequest/WdfRequestRetrieveOutputMemory
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfRequestRetrieveOutputMemory</b> method retrieves a handle to a framewo
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
-### -param Memory 
+### -param Memory [out]
 
-[out]
+
 A pointer to a location that receives a handle to a framework memory object.
 
 ## -returns

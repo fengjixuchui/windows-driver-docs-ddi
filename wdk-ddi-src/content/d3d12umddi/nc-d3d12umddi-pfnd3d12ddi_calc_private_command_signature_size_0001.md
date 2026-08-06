@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_CALC_PRIVATE_COMMAND_SIGNATURE_SIZE_0001
 title: PFND3D12DDI_CALC_PRIVATE_COMMAND_SIGNATURE_SIZE_0001 (d3d12umddi.h)
 description: Calculates the command signature size.
-ms.assetid: 227d7c48-2d0d-48a9-ac1e-03a1e649685a
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CALC_PRIVATE_COMMAND_SIGNATURE_SIZE_0001 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CALC_PRIVATE_COMMAND_SIGNATURE_SIZE_0001
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ Calculates the command signature size.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 Pointer to a D3D12DDIARG_CREATE_COMMAND_SIGNATURE_0001 structure that contains the arguments to calculate a command signature size.
 

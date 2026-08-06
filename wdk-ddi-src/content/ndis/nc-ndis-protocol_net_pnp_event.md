@@ -4,7 +4,6 @@ title: PROTOCOL_NET_PNP_EVENT (ndis.h)
 description: NDIS calls the ProtocolNetPnPEvent function to indicate a network Plug and Play event, an NDIS PnP event, or a power management event to a protocol driver.Note  You must declare the function by using the PROTOCOL_NET_PNP_EVENT type.
 old-location: netvista\protocolnetpnpevent.htm
 tech.root: netvista
-ms.assetid: 3f50bcba-c7d2-4d81-bd8b-6080e08fbe74
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_NET_PNP_EVENT callback function"]
 ms.keywords: PROTOCOL_NET_PNP_EVENT, PROTOCOL_NET_PNP_EVENT callback, ProtocolNetPnPEvent, ProtocolNetPnPEvent callback function [Network Drivers Starting with Windows Vista], ndis/ProtocolNetPnPEvent, netvista.protocolnetpnpevent, protocol_functions_ref_24f290b7-d0fc-4d50-9aff-f40f4847a451.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolNetPnPEvent
+ - PROTOCOL_NET_PNP_EVENT
 ---
 
 # PROTOCOL_NET_PNP_EVENT callback function
@@ -54,9 +53,9 @@ NDIS calls the
 
 ## -parameters
 
-### -param ProtocolBindingContext 
+### -param ProtocolBindingContext [in]
 
-[in]
+
 The handle to a protocol-driver-allocated context area in which this driver maintains per-binding
      run-time state information. The protocol driver supplied this handle when it called the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a> function. A 
@@ -66,9 +65,7 @@ The handle to a protocol-driver-allocated context area in which this driver main
      <b>NetEventReconfigure</b> can be indicated with a specified 
      <i>ProtocolBindingContext</i> or with a <b>NULL</b><i>ProtocolBindingContext</i>.
 
-### -param NetPnPEventNotification
-
-#### - NetPnPEvent [in]
+### -param NetPnPEventNotification [in]
 
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event_notification">
@@ -372,3 +369,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pounregistersystemstate">PoUnregisterSystemState</a>
+

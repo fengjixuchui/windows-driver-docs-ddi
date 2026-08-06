@@ -4,7 +4,6 @@ title: ExtBuffer::Set method (engextcpp.h)
 description: The Set method sets the typed data represented by the ExtRemoteTyped object.
 old-location: debugger\extremotetyped_set_bool.htm
 tech.root: debugger
-ms.assetid: e75c17d2-fdf7-4dba-9892-74c764956924
 ms.date: 01/19/2018
 keywords: ["ExtBuffer::Set method"]
 ms.keywords: Set method [Windows Debugging], Set, ExtBuffer::Set, ExtRemoteTyped class [Windows Debugging], Set method, ExtBuffer, debugger.extremotetyped_set_bool, Set method [Windows Debugging], ExtRemoteTyped class
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteTyped.Set
+ - ExtBuffer::Set
 ---
 
 # ExtBuffer::Set method
-
 
 ## -description
 
@@ -58,22 +56,19 @@ The <b>Set</b> method sets the typed data represented by the <a href="..\engextc
 
 ### -param Used
 
-#### - PtrTo [in]
+### -param PtrTo [in]
 
 Specifies whether or not to set the <b>ExtRemoteTyped</b> instance to the specified typed data, or to a pointer to the specified typed data.  If <i>PtrTo</i> is <code>true</code>, the <b>ExtRemoteTyped</b> instance will be a pointer to the typed data.
 
-
-#### - TypeModBase [in]
+### -param TypeModBase [in]
 
 The base address of the module to which the type belongs.
 
-
-#### - TypeId [in]
+### -param TypeId [in]
 
 The type ID of the type.
 
-
-#### - Offset [in]
+### -param Offset [in]
 
 Specifies the location of the data in the target's memory.
 
@@ -90,14 +85,10 @@ void Set(
 
 ## -see-also
 
-<a href="..\engextcpp\nf-engextcpp-extbuffer-set.md">ExtRemoteTyped::Set (PCSTR)</a>
+<a href="..\engextcpp\nf-engextcpp-extremotetyped-set(pcstr).md">ExtRemoteTyped::Set (PCSTR)</a>
 
 <a href="..\engextcpp\nl-engextcpp-extremotetypedlist.md">ExtRemoteTypedList</a>
 
 <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotetyped-setprint">ExtRemoteTyped::SetPrint</a>
 
-<a href="..\engextcpp\nf-engextcpp-extbuffer-set.md">ExtRemoteTyped::Set (PCSTR, ULONG64)</a>
-
 <a href="..\engextcpp\nl-engextcpp-extremotetyped.md">ExtRemoteTyped</a>
-
-<a href="..\engextcpp\nf-engextcpp-extbuffer-set.md">ExtRemoteTyped::Set (PCSTR, ULONG64, bool)</a>

@@ -4,7 +4,6 @@ title: _NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST (ndischimney.h)
 description: The NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure.
 old-location: netvista\ndis_protocol_offload_block_list.htm
 tech.root: netvista
-ms.assetid: 64febd55-1ab8-4e2e-b738-340167866333
 ms.date: 05/02/2018
 keywords: ["NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure"]
 ms.keywords: "*PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure [Network Drivers Starting with Windows Vista], PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure pointer [Network Drivers Starting with Windows Vista], _NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, ndischimney/NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, ndischimney/PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST, netvista.ndis_protocol_offload_block_list, tcp_chim_struct_77380eae-055d-471e-a94a-67575124981b.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndischimney.h
 api_name:
+ - _NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
+ - PNDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
  - NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
 ---
 
@@ -59,7 +60,7 @@ The NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure.
 ### -field Header
 
 The header of the NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure. The header is formatted as an 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure. The
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure. The
      NDIS_OBJECT_HEADER structure contains the revision number of the NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
      structure, the type of offload state that immediately follows the NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST
      structure in memory, and the size of the NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure, including the
@@ -491,10 +492,10 @@ When the protocol or intermediate driver specifies a <b>NULL</b> value,
 
 When a protocol or intermediate driver specifies a non-<b>NULL</b> value, 
       <b>NetBufferListChain</b> points to a 
-      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure that can be a
+      <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure that can be a
       stand-alone structure or the first structure in a linked list of such structures. Each NET_BUFFER_LIST
       structure in the linked list describes one 
-      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a> structure. The NET_BUFFER structure
+      <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a> structure. The NET_BUFFER structure
       maps to a chain of memory descriptor lists (MDLs). The NET_BUFFER_LIST and associated structures are
       locked so that they remain resident in physical memory. However, they are not mapped into system
       memory.
@@ -535,7 +536,7 @@ An NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure can be immediately followed in mem
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -564,7 +565,7 @@ An NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure can be immediately followed in mem
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndischimney/nf-ndischimney-ndisqueryoffloadstate">NdisQueryOffload</a>
+<a href="/windows-hardware/drivers/ddi/ndischimney/nf-ndischimney-ndisqueryoffloadstate">NdisQueryOffloadState</a>
 
 
 
@@ -622,3 +623,4 @@ An NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure can be immediately followed in mem
 
 
 <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_tcp_offload_state_delegated">TCP_OFFLOAD_STATE_DELEGATED</a>
+

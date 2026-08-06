@@ -4,7 +4,6 @@ title: _LPIT (acpitabl.h)
 description: Defines an LPI ACPI table.
 old-location: acpi\lpit.htm
 tech.root: acpi
-ms.assetid: 351BC859-E703-4F75-B691-A503C08560CF
 ms.date: 02/15/2018
 keywords: ["LPIT structure"]
 ms.keywords: "*PLPIT, LPIT, LPIT structure [ACPI Devices], PLPIT, PLPIT structure pointer [ACPI Devices], _LPIT, acpi.lpit, acpitabl/LPIT, acpitabl/PLPIT"
@@ -42,11 +41,12 @@ api_type:
 api_location:
  - acpitabl.h
 api_name:
+ - _LPIT
+ - PLPIT
  - LPIT
 ---
 
 # _LPIT structure
-
 
 ## -description
 
@@ -61,4 +61,3 @@ A header.
 ### -field LpiStates
 
 An array of states.
-

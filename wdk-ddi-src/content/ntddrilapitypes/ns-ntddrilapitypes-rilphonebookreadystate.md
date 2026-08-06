@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILPHONEBOOKREADYSTATE
 title: RILPHONEBOOKREADYSTATE (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILPHONEBOOKREADYSTATE structure for internal use only. Don't use the RILPHONEBOOKREADYSTATE structure in your code."
 old-location: netvista\rilphonebookreadystate.htm
 tech.root: netvista
-ms.assetid: cd71234b-4b46-4b7b-953b-32e6f014af03
 ms.date: 05/02/2018
 keywords: ["RILPHONEBOOKREADYSTATE structure"]
 ms.keywords: "*LPRILPHONEBOOKREADYSTATE, RILPHONEBOOKREADYSTATE, RILPHONEBOOKREADYSTATE structure [Network Drivers Starting with Windows Vista], netvista.rilphonebookreadystate, ntddrilapitypes/RILPHONEBOOKREADYSTATE"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILPHONEBOOKREADYSTATE
+ - LPRILPHONEBOOKREADYSTATE
 ---
 
 # RILPHONEBOOKREADYSTATE structure (ntddrilapitypes.h)

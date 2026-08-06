@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_GetNumberOfModems
 title: RIL_GetNumberOfModems function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_GetNumberOfModems function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_getnumberofmodems.htm
 tech.root: netvista
-ms.assetid: 81747f24-d1ed-412a-b0ae-95b737059b0d
 ms.date: 05/02/2018
 keywords: ["RIL_GetNumberOfModems function"]
 ms.keywords: RIL_GetNumberOfModems, RIL_GetNumberOfModems method [Network Drivers Starting with Windows Vista], netvista.ril_getnumberofmodems, rilapi/RIL_GetNumberOfModems

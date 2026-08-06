@@ -4,7 +4,6 @@ title: _NDIS_INTERRUPT_MODERATION_PARAMETERS (ntddndis.h)
 description: The NDIS_INTERRUPT_MODERATION_PARAMETERS structure defines interrupt parameters for the OID_GEN_INTERRUPT_MODERATION OID.
 old-location: netvista\ndis_interrupt_moderation_parameters.htm
 tech.root: netvista
-ms.assetid: e2270dbc-0bc3-4bef-9e11-26006d8f0d71
 ms.date: 05/02/2018
 keywords: ["NDIS_INTERRUPT_MODERATION_PARAMETERS structure"]
 ms.keywords: "*PNDIS_INTERRUPT_MODERATION_PARAMETERS, NDIS_INTERRUPT_MODERATION_PARAMETERS, NDIS_INTERRUPT_MODERATION_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_INTERRUPT_MODERATION_PARAMETERS, PNDIS_INTERRUPT_MODERATION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_INTERRUPT_MODERATION_PARAMETERS, netvista.ndis_interrupt_moderation_parameters, ntddndis/NDIS_INTERRUPT_MODERATION_PARAMETERS, ntddndis/PNDIS_INTERRUPT_MODERATION_PARAMETERS, oid_structures_ref_448cef08-e024-4e5b-a370-fb6e8d78c9cd.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_INTERRUPT_MODERATION_PARAMETERS
+ - PNDIS_INTERRUPT_MODERATION_PARAMETERS
  - NDIS_INTERRUPT_MODERATION_PARAMETERS
 ---
 
@@ -58,7 +59,7 @@ The NDIS_INTERRUPT_MODERATION_PARAMETERS structure defines interrupt parameters 
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_INTERRUPT_MODERATION_PARAMETERS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -139,8 +140,9 @@ The NDIS_INTERRUPT_MODERATION_PARAMETERS structure defines interrupt parameters 
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/network/oid-gen-interrupt-moderation">OID_GEN_INTERRUPT_MODERATION</a>
+

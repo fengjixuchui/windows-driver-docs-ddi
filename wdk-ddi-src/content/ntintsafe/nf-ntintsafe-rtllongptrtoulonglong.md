@@ -4,7 +4,6 @@ title: RtlLongPtrToULongLong function (ntintsafe.h)
 description: Converts a value of type LONG_PTR to a value of type ULONGLONG.
 old-location: kernel\rtllongptrtoulonglong.htm
 tech.root: kernel
-ms.assetid: E0CAA44B-2432-4199-B2E6-8105FD7BA504
 ms.date: 04/30/2018
 keywords: ["RtlLongPtrToULongLong function"]
 ms.keywords: RtlLongPtrToULongLong, RtlLongPtrToULongLong function [Kernel-Mode Driver Architecture], kernel.rtllongptrtoulonglong, ntintsafe/RtlLongPtrToULongLong
@@ -50,14 +49,14 @@ Converts a value of type <b>LONG_PTR</b> to a value of type <b>ULONGLONG</b>.
 
 ## -parameters
 
-### -param lOperand 
+### -param lOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pullResult 
+### -param pullResult [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

@@ -4,7 +4,6 @@ title: PFNKSSTREAMPOINTER (ks.h)
 description: AVStream calls a minidriver's AVStrMiniCancelCallback routine when the IRP that is associated with a cloned stream pointer is canceled. This routine is optional.
 old-location: stream\avstrminicancelcallback.htm
 tech.root: stream
-ms.assetid: 4c95ccb6-c796-4bb2-b344-aa8eea28e131
 ms.date: 04/23/2018
 keywords: ["PFNKSSTREAMPOINTER callback function"]
 ms.keywords: AVStrMiniCancelCallback, AVStrMiniCancelCallback routine [Streaming Media Devices], PFNKSSTREAMPOINTER, avstclbk_b23a511e-6e6a-4eaf-a64e-707983534d6f.xml, ks/AVStrMiniCancelCallback, stream.avstrminicancelcallback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - AVStrMiniCancelCallback
+ - PFNKSSTREAMPOINTER
 ---
 
 # PFNKSSTREAMPOINTER callback function
@@ -50,9 +49,9 @@ AVStream calls a minidriver's <i>AVStrMiniCancelCallback</i> routine when the IR
 
 ## -parameters
 
-### -param StreamPointer 
+### -param StreamPointer [in]
 
-[in]
+
 A pointer to the clone <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksstream_pointer">KSSTREAM_POINTER</a> that is associated with the IRP that was canceled. <i>StreamPointer</i> was created by a call to <a href="/windows-hardware/drivers/devtest/ks-ksstreampointerclone">KsStreamPointerClone</a>.
 
 ## -remarks
@@ -78,3 +77,4 @@ Finally, the minidriver must call <a href="/windows-hardware/drivers/ddi/ks/nf-k
 
 
 <a href="/windows-hardware/drivers/ddi/ks/nf-ks-ksstreampointerdelete">KsStreamPointerDelete</a>
+

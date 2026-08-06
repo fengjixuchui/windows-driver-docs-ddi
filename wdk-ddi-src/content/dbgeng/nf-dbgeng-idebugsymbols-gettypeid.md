@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols.GetTypeId
 title: IDebugSymbols::GetTypeId (dbgeng.h)
-description: The GetTypeId method looks up the specified type and return its type ID.
+description: The GetTypeId method looks up the specified type and return its type ID. This method belongs to the IDebugSymbols interface.
 old-location: debugger\gettypeid.htm
 tech.root: debugger
-ms.assetid: 4bc82faf-a5f9-4363-8317-ad685d5b2166
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols::GetTypeId"]
 ms.keywords: GetTypeId, GetTypeId method [Windows Debugging], GetTypeId method [Windows Debugging],IDebugSymbols interface, GetTypeId method [Windows Debugging],IDebugSymbols2 interface, GetTypeId method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],GetTypeId method, IDebugSymbols.GetTypeId, IDebugSymbols2 interface [Windows Debugging],GetTypeId method, IDebugSymbols2::GetTypeId, IDebugSymbols3 interface [Windows Debugging],GetTypeId method, IDebugSymbols3::GetTypeId, IDebugSymbols::GetTypeId, IDebugSymbols_cf0d81fd-9bd1-4b90-a7d5-99f1cb225036.xml, dbgeng/IDebugSymbols2::GetTypeId, dbgeng/IDebugSymbols3::GetTypeId, dbgeng/IDebugSymbols::GetTypeId, debugger.gettypeid
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.GetTypeId
- - IDebugSymbols2.GetTypeId
- - IDebugSymbols3.GetTypeId
+ - IDebugSymbols::GetTypeId
 ---
 
 # IDebugSymbols::GetTypeId
@@ -52,19 +49,19 @@ The <b>GetTypeId</b>  method looks up the specified type and return its type ID.
 
 ## -parameters
 
-### -param Module 
+### -param Module [in]
 
-[in]
+
 Specifies the base address of the module to which the type belongs.  For more information, see <a href="/windows-hardware/drivers/debugger/modules">Modules</a>.  If <i>Name</i> contains a module name, <i>Module</i> is ignored.
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 Specifies the name of the type whose type ID is desired.  If <i>Name</i> is a module-qualified name (for example <b>mymodule!main</b>), the <i>Module</i> parameter is ignored.
 
-### -param TypeId 
+### -param TypeId [out]
 
-[out]
+
 Receives the type ID of the symbol.
 
 ## -returns
@@ -125,3 +122,4 @@ For more information about symbols and symbol names, see <a href="/windows-hardw
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

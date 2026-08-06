@@ -4,7 +4,6 @@ title: _SM_GetRNIDMgmtInfo_OUT (hbapiwmi.h)
 description: The SM_GetRNIDMgmtInfo_OUT structure is used to receive output parameters from the SM_GetRNIDMgmtInfo method.
 old-location: storage\sm_getrnidmgmtinfo_out.htm
 tech.root: storage
-ms.assetid: e12bd494-4d2a-44a9-95dc-0bc78fa73a97
 ms.date: 03/29/2018
 keywords: ["SM_GetRNIDMgmtInfo_OUT structure"]
 ms.keywords: "*PSM_GetRNIDMgmtInfo_OUT, PSM_GetRNIDMgmtInfo_OUT, PSM_GetRNIDMgmtInfo_OUT structure pointer [Storage Devices], SM_GetRNIDMgmtInfo_OUT, SM_GetRNIDMgmtInfo_OUT structure [Storage Devices], _SM_GetRNIDMgmtInfo_OUT, hbapiwmi/PSM_GetRNIDMgmtInfo_OUT, hbapiwmi/SM_GetRNIDMgmtInfo_OUT, storage.sm_getrnidmgmtinfo_out, structs-Fibre_c5f33dc4-bde0-43bb-8528-9cb2e0d2ee3f.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hbapiwmi.h
 api_name:
+ - _SM_GetRNIDMgmtInfo_OUT
+ - PSM_GetRNIDMgmtInfo_OUT
  - SM_GetRNIDMgmtInfo_OUT
 ---
 
@@ -65,3 +66,4 @@ A structure of type HBAFC3MgmtInfo that holds FC3 management information. The FC
 ## -remarks
 
 The WMI tool suite generates a declaration of the SM_GetRNIDMgmtInfo_OUTstructure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.
+

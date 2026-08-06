@@ -4,7 +4,6 @@ title: IOCTL_INTERNAL_USB_GET_DEVICE_HANDLE_EX (usbioctl.h)
 description: The IOCTL_INTERNAL_USB_GET_DEVICE_HANDLE_EX IOCTL is used by the USB hub driver. Do not use.
 old-location: buses\ioctl_internal_usb_get_device_handle_ex.htm
 tech.root: usbref
-ms.assetid: 76b89f35-4751-4eda-88f7-69f1a9835bbb
 ms.date: 05/07/2018
 keywords: ["IOCTL_INTERNAL_USB_GET_DEVICE_HANDLE_EX IOCTL"]
 ms.keywords: IOCTL_INTERNAL_USB_GET_DEVICE_HANDLE_EX, IOCTL_INTERNAL_USB_GET_DEVICE_HANDLE_EX control, IOCTL_INTERNAL_USB_GET_DEVICE_HANDLE_EX control code [Buses], buses.ioctl_internal_usb_get_device_handle_ex, usbioctl/IOCTL_INTERNAL_USB_GET_DEVICE_HANDLE_EX
@@ -49,6 +48,10 @@ api_name:
  The <b>IOCTL_INTERNAL_USB_GET_DEVICE_HANDLE_EX</b> IOCTL is used by the USB hub driver. Do not use.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
+
+[IRP_MJ_INTERNAL_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
 ### -input-buffer
 

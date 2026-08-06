@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_DESTROYUNORDEREDACCESSVIEW
 title: PFND3D11DDI_DESTROYUNORDEREDACCESSVIEW (d3d10umddi.h)
 description: Destroys an unordered access view.
 old-location: display\destroyunorderedaccessview.htm
-ms.assetid: 1bce3519-f333-4b47-b29b-bde1b5c3005c
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_DESTROYUNORDEREDACCESSVIEW callback function"]
 ms.keywords: DestroyUnorderedAccessView, DestroyUnorderedAccessView callback function [Display Devices], PFND3D11DDI_DESTROYUNORDEREDACCESSVIEW, PFND3D11DDI_DESTROYUNORDEREDACCESSVIEW callback, UserModeDisplayDriverDx11_Functions_65ca10d0-2325-40f6-befa-8ad6ea5f0efd.xml, d3d10umddi/DestroyUnorderedAccessView, display.destroyunorderedaccessview
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - DestroyUnorderedAccessView
+ - PFND3D11DDI_DESTROYUNORDEREDACCESSVIEW
 ---
 
 # PFND3D11DDI_DESTROYUNORDEREDACCESSVIEW callback function
@@ -50,13 +49,13 @@ Destroys an unordered access view.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hUnorderedAccessView* [in]
 
@@ -97,3 +96,4 @@ The driver can work around this problem by following these steps:
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

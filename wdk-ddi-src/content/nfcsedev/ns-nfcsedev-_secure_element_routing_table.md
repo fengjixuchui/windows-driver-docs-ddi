@@ -4,8 +4,7 @@ title: _SECURE_ELEMENT_ROUTING_TABLE (nfcsedev.h)
 description: SECURE_ELEMENT_ROUTING_TABLE is an input parameter for IOCTL_NFCSE_SET_ROUTING_TABLE.
 old-location: nfpdrivers\_secure_element_routing_table.htm
 tech.root: nfpdrivers
-ms.assetid: AD5E6434-BBBF-44CB-8153-B8F4D4F75E94
-ms.date: 02/15/2018
+ms.date: 08/02/2022
 keywords: ["SECURE_ELEMENT_ROUTING_TABLE structure"]
 ms.keywords: "*PSECURE_ELEMENT_ROUTING_TABLE, PSECURE_ELEMENT_ROUTING_TABLE, P_SECURE_ELEMENT_ROUTING_TABLE, P_SECURE_ELEMENT_ROUTING_TABLE structure pointer [Near-Field Proximity Drivers], SECURE_ELEMENT_ROUTING_TABLE, SECURE_ELEMENT_ROUTING_TABLE structure [Near-Field Proximity Drivers], _SECURE_ELEMENT_ROUTING_TABLE, nfcsedev/P_SECURE_ELEMENT_ROUTING_TABLE, nfcsedev/_SECURE_ELEMENT_ROUTING_TABLE, nfpdrivers._secure_element_routing_table"
 req.header: nfcsedev.h
@@ -42,15 +41,16 @@ api_type:
 api_location:
  - nfcsedev.h
 api_name:
+ - _SECURE_ELEMENT_ROUTING_TABLE
+ - PSECURE_ELEMENT_ROUTING_TABLE
  - SECURE_ELEMENT_ROUTING_TABLE
 ---
 
 # _SECURE_ELEMENT_ROUTING_TABLE structure
 
-
 ## -description
 
-SECURE_ELEMENT_ROUTING_TABLE is an input parameter for <a href="/windows-hardware/drivers/ddi/nfcsedev/ni-nfcsedev-ioctl_nfcse_set_routing_table">IOCTL_NFCSE_SET_ROUTING_TABLE</a>.
+SECURE_ELEMENT_ROUTING_TABLE is an input parameter for [IOCTL_NFCSE_SET_ROUTING_TABLE](./ni-nfcsedev-ioctl_nfcse_set_routing_table.md).
 
 ## -struct-fields
 
@@ -58,13 +58,6 @@ SECURE_ELEMENT_ROUTING_TABLE is an input parameter for <a href="/windows-hardwar
 
 Number of routing table entries.
 
-### -field TableEntries
-
- 
-
-
-
-
-#### - TableEntries[ANYSIZE_ARRAY]
+### -field TableEntries[ANYSIZE_ARRAY]
 
 Listen mode routing table.

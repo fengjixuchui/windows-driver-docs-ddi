@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddchgr._CHANGER_ELEMENT_STATUS
 title: _CHANGER_ELEMENT_STATUS (ntddchgr.h)
-description: The ChangerGetElementStatus routine returns status information in this structure.
+description: The _CHANGER_ELEMENT_STATUS structure contains the status of the specified CHANGER_ELEMENT reported by a changer miniclass driver.
 old-location: storage\changer_element_status.htm
 tech.root: storage
-ms.assetid: 3debcf76-bb84-48ec-933e-03e099ad764f
 ms.date: 03/29/2018
 keywords: ["CHANGER_ELEMENT_STATUS structure"]
 ms.keywords: "*PCHANGER_ELEMENT_STATUS, CHANGER_ELEMENT_STATUS, CHANGER_ELEMENT_STATUS structure [Storage Devices], PCHANGER_ELEMENT_STATUS, PCHANGER_ELEMENT_STATUS structure pointer [Storage Devices], _CHANGER_ELEMENT_STATUS, ntddchgr/CHANGER_ELEMENT_STATUS, ntddchgr/PCHANGER_ELEMENT_STATUS, storage.changer_element_status, structs-changer_6dd054a8-1224-42f1-ab26-29b2c108ce27.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddchgr.h
 api_name:
+ - _CHANGER_ELEMENT_STATUS
+ - PCHANGER_ELEMENT_STATUS
  - CHANGER_ELEMENT_STATUS
 ---
 
@@ -265,3 +266,4 @@ For most element types, changer miniclass drivers use CHANGER_ELEMENT_STATUS to 
 
 
 <a href="/windows-hardware/drivers/ddi/ntddchgr/ni-ntddchgr-ioctl_changer_get_element_status">IOCTL_CHANGER_GET_ELEMENT_STATUS</a>
+

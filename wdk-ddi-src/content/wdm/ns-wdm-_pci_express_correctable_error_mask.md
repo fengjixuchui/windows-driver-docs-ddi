@@ -1,10 +1,9 @@
 ---
 UID: NS:wdm._PCI_EXPRESS_CORRECTABLE_ERROR_MASK
 title: _PCI_EXPRESS_CORRECTABLE_ERROR_MASK (wdm.h)
-description: The PCI_EXPRESS_CORRECTABLE_ERROR_MASK structure describes a PCI Express (PCIe) correctable error mask register of a PCIe advanced error reporting capability structure.
+description: The _PCI_EXPRESS_CORRECTABLE_ERROR_MASK structure (wdm.h) describes a PCI Express (PCIe) correctable error mask register used in advanced error reporting.
 old-location: pci\pci_express_correctable_error_mask.htm
 tech.root: PCI
-ms.assetid: d666cdd3-a673-4105-b982-e7cc942131ee
 ms.date: 02/24/2018
 keywords: ["PCI_EXPRESS_CORRECTABLE_ERROR_MASK structure"]
 ms.keywords: "*PPCI_CORRECTABLE_ERROR_MASK, PCI.pci_express_correctable_error_mask, PCI_EXPRESS_CORRECTABLE_ERROR_MASK, PCI_EXPRESS_CORRECTABLE_ERROR_MASK union [Buses], PPCI_CORRECTABLE_ERROR_MASK, PPCI_CORRECTABLE_ERROR_MASK union pointer [Buses], _PCI_EXPRESS_CORRECTABLE_ERROR_MASK, pci_struct_770185be-12f9-4519-8077-6d90e8344590.xml, wdm/PCI_EXPRESS_CORRECTABLE_ERROR_MASK, wdm/PPCI_CORRECTABLE_ERROR_MASK"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: PASSIVE_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: PCI_EXPRESS_CORRECTABLE_ERROR_MASK, *PPCI_CORRECTABLE_ERROR_MASK
-req.product: Windows 10 or later.
 f1_keywords:
  - _PCI_EXPRESS_CORRECTABLE_ERROR_MASK
  - wdm/_PCI_EXPRESS_CORRECTABLE_ERROR_MASK
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _PCI_EXPRESS_CORRECTABLE_ERROR_MASK
+ - PPCI_CORRECTABLE_ERROR_MASK
  - PCI_EXPRESS_CORRECTABLE_ERROR_MASK
 ---
 
@@ -57,54 +57,57 @@ The PCI_EXPRESS_CORRECTABLE_ERROR_MASK structure describes a PCI Express (PCIe) 
 
 ### -field DUMMYSTRUCTNAME
 
-### -field AsULONG
 
-A ULONG representation of the contents of the PCI_EXPRESS_CORRECTABLE_ERROR_MASK structure.
-
-
-#### - AdvisoryNonFatalError
+### -field DUMMYSTRUCTNAME.AdvisoryNonFatalError
 
 A single bit that indicates that the reporting of advisory non-fatal errors is masked.
 
 
-#### - BadDLLP
+### -field DUMMYSTRUCTNAME.BadDLLP
 
 A single bit that indicates that the reporting of bad data link layer packets (DLLPs) is masked.
 
 
-#### - BadTLP
+### -field DUMMYSTRUCTNAME.BadTLP
 
 A single bit that indicates that the reporting of bad transaction layer packets (TLPs) is masked.
 
 
-#### - ReceiverError
+### -field DUMMYSTRUCTNAME.ReceiverError
 
 A single bit that indicates that the reporting of receiver errors is masked.
 
 
-#### - ReplayNumRollover
+### -field DUMMYSTRUCTNAME.ReplayNumRollover
 
 A single bit that indicates that the reporting of rollovers of the counter that counts the number of times the retry buffer has been re-transmitted is masked.
 
 
-#### - ReplayTimerTimeout
+### -field DUMMYSTRUCTNAME.ReplayTimerTimeout
 
 A single bit that indicates that the reporting of timeouts of the replay timer is masked.
 
 
-#### - Reserved1
+### -field DUMMYSTRUCTNAME.Reserved1
 
 Reserved.
 
 
-#### - Reserved2
+### -field DUMMYSTRUCTNAME.Reserved2
 
 Reserved.
 
+### -field DUMMYSTRUCTNAME.CorrectedInternalError
 
-#### - Reserved3
+### -field DUMMYSTRUCTNAME.HeaderLogOverflow
+
+### -field DUMMYSTRUCTNAME.Reserved3
 
 Reserved.
+
+### -field AsULONG
+
+A ULONG representation of the contents of the PCI_EXPRESS_CORRECTABLE_ERROR_MASK structure.
 
 ## -syntax
 
@@ -142,3 +145,4 @@ A PCI_EXPRESS_CORRECTABLE_ERROR_MASK structure is contained in the <a href="/win
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_pci_express_rootport_aer_capability">PCI_EXPRESS_ROOTPORT_AER_CAPABILITY</a>
+

@@ -4,7 +4,6 @@ title: EVT_SERCX2_PURGE_FIFOS (sercx.h)
 description: The EvtSerCx2PurgeFifos event callback function is called by version 2 of the serial framework extension (SerCx2) to purge the FIFO buffers in the serial controller hardware.
 old-location: serports\evtsercx2purgefifos.htm
 tech.root: serports
-ms.assetid: 52875B36-F52B-4D29-9C9D-76DB12BFEEA6
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX2_PURGE_FIFOS callback function"]
 ms.keywords: 2/EvtSerCx2PurgeFifos, EVT_SERCX2_PURGE_FIFOS, EVT_SERCX2_PURGE_FIFOS callback, EvtSerCx2PurgeFifos, EvtSerCx2PurgeFifos callback function [Serial Ports], serports.evtsercx2purgefifos
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
- - EvtSerCx2PurgeFifos
+ - EVT_SERCX2_PURGE_FIFOS
 ---
 
 # EVT_SERCX2_PURGE_FIFOS callback function
@@ -50,19 +49,19 @@ The <i>EvtSerCx2PurgeFifos</i> event callback function is called by version 2 of
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the serial controller. The serial controller driver created this object in its <a href="/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add">EvtDriverDeviceAdd</a> callback function. For more information, see <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2initializedevice">SerCx2InitializeDevice</a>.
 
-### -param PurgeRxFifo 
+### -param PurgeRxFifo [in]
 
-[in]
+
 Whether to purge the receive FIFO. If this parameter is set to <b>TRUE</b>, purge the receive FIFO. If <b>FALSE</b>, do not purge the receive FIFO.
 
-### -param PurgeTxFifo 
+### -param PurgeTxFifo [in]
 
-[in]
+
 Whether to purge the transmit FIFO. If this parameter is set to <b>TRUE</b>, purge the transmit FIFO. If <b>FALSE</b>, do not purge the transmit FIFO.
 
 ## -remarks
@@ -110,3 +109,4 @@ The <b>EVT_SERCX2_PURGE_FIFOS</b> function type is defined in the Sercx.h header
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2initializedevice">SerCx2InitializeDevice</a>
+

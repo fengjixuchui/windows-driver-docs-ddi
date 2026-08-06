@@ -4,14 +4,13 @@ title: KeStackAttachProcess function (ntifs.h)
 description: The KeStackAttachProcess routine attaches the current thread to the address space of the target process.
 old-location: ifsk\kestackattachprocess.htm
 tech.root: ifsk
-ms.assetid: 52ac1410-8f8f-405a-9c81-a534c3cfbf51
 ms.date: 04/16/2018
 keywords: ["KeStackAttachProcess function"]
 ms.keywords: KeStackAttachProcess, KeStackAttachProcess routine [Installable File System Drivers], ifsk.kestackattachprocess, keref_de4fc228-753f-4077-8372-e5330c96d317.xml, ntifs/KeStackAttachProcess
 req.header: ntifs.h
 req.include-header: Ntifs.h, Fltkernel.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -55,9 +54,9 @@ The <b>KeStackAttachProcess</b> routine attaches the current thread to the addre
 
 Pointer to the target process object. This parameter can be a PEPROCESS pointer returned by <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetcurrentprocess">IoGetCurrentProcess</a> or [PsGetCurrentProcess](/windows-hardware/drivers/kernel/mm-bad-pointer#psgetcurrentprocess).
 
-### -param ApcState 
+### -param ApcState [out]
 
-[out]
+
 An opaque pointer to a KAPC_STATE structure. The caller must allocate storage for this structure either from nonpaged pool or from the caller's own thread stack.
 
 ## -remarks

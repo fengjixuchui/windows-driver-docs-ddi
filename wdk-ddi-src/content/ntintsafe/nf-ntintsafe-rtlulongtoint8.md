@@ -4,7 +4,6 @@ title: RtlULongToInt8 function (ntintsafe.h)
 description: Converts a value of type ULONG to a value of type INT8.
 old-location: kernel\rtlulongtoint8.htm
 tech.root: kernel
-ms.assetid: E44C756E-BD9B-4DC0-9F6D-07A366ED72B7
 ms.date: 04/30/2018
 keywords: ["RtlULongToInt8 function"]
 ms.keywords: RtlULongToInt8, RtlULongToInt8 function [Kernel-Mode Driver Architecture], kernel.rtlulongtoint8, ntintsafe/RtlULongToInt8
@@ -50,14 +49,14 @@ Converts a value of type <b>ULONG</b> to a value of type <b>INT8</b>.
 
 ## -parameters
 
-### -param ulOperand 
+### -param ulOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pi8Result 
+### -param pi8Result [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

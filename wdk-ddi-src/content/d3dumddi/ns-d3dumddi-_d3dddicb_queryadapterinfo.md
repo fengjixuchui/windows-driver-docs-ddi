@@ -4,7 +4,6 @@ title: _D3DDDICB_QUERYADAPTERINFO (d3dumddi.h)
 description: The D3DDDICB_QUERYADAPTERINFO structure contains information that describes the graphics adapter.
 old-location: display\d3dddicb_queryadapterinfo.htm
 tech.root: display
-ms.assetid: 484406a5-54be-49fa-839a-2e55747020f4
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_QUERYADAPTERINFO structure"]
 ms.keywords: D3DDDICB_QUERYADAPTERINFO, D3DDDICB_QUERYADAPTERINFO structure [Display Devices], D3D_param_Structs_24ed4d09-d2ff-4b79-95fc-5a1c7d146faa.xml, _D3DDDICB_QUERYADAPTERINFO, d3dumddi/D3DDDICB_QUERYADAPTERINFO, display.d3dddicb_queryadapterinfo
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDICB_QUERYADAPTERINFO
  - D3DDDICB_QUERYADAPTERINFO
 ---
 
@@ -52,14 +52,15 @@ The D3DDDICB_QUERYADAPTERINFO structure contains information that describes the 
 
 ## -struct-fields
 
-### -field pPrivateDriverData
+### -field pPrivateDriverData [out]
 
-[out] A pointer to a buffer that the display miniport driver can fill with information about the graphics adapter.
+A pointer to a buffer that the display miniport driver can fill with information about the graphics adapter.
 
-### -field PrivateDriverDataSize
+### -field PrivateDriverDataSize [in/out]
 
-[in/out] The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to.
+The size, in bytes, of the buffer that <b>pPrivateDriverData</b> points to.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_queryadapterinfocb">pfnQueryAdapterInfoCb</a>
+

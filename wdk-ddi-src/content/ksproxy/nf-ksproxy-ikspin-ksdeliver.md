@@ -4,7 +4,6 @@ title: IKsPin::KsDeliver (ksproxy.h)
 description: The KsDeliver method delivers a media sample from an output pin to an input pin, continues an I/O operation by retrieving the next buffer from an allocator, and submits the buffer to the associated device.
 old-location: stream\ikspin_ksdeliver.htm
 tech.root: stream
-ms.assetid: e527a659-7ed5-4262-bed2-3bab58919401
 ms.date: 04/23/2018
 keywords: ["IKsPin::KsDeliver"]
 ms.keywords: IKsPin interface [Streaming Media Devices],KsDeliver method, IKsPin.KsDeliver, IKsPin::KsDeliver, KsDeliver, KsDeliver method [Streaming Media Devices], KsDeliver method [Streaming Media Devices],IKsPin interface, ksproxy/IKsPin::KsDeliver, ksproxy_3608c6b5-20e3-43e1-b1aa-a283f8d00f17.xml, stream.ikspin_ksdeliver
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ksproxy.h
 api_name:
- - IKsPin.KsDeliver
+ - IKsPin::KsDeliver
 ---
 
 # IKsPin::KsDeliver
@@ -50,14 +49,14 @@ The <b>KsDeliver</b> method delivers a media sample from an output pin to an inp
 
 ## -parameters
 
-### -param Sample 
+### -param Sample [in]
 
-[in]
+
 Pointer to the <b>IMediaSample</b> interface for the associated media sample.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies a bitmask enumerating information about the stream header of the media sample. A bitwise OR combination of the following flags is possible:
 
 KSSTREAM_HEADER_OPTIONSF_SPLICEPOINT
@@ -103,3 +102,4 @@ For more information about <b>IMediaSample</b>, see the Microsoft Windows SDK do
 
 
 <a href="/windows-hardware/drivers/ddi/ksproxy/nf-ksproxy-iksinterfacehandler-kscompleteio">IKsInterfaceHandler::KsCompleteIo</a>
+

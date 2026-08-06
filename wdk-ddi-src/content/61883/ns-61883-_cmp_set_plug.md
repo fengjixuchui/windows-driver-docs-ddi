@@ -4,7 +4,6 @@ title: _CMP_SET_PLUG (61883.h)
 description: This structure is used to assign settings to a plug.
 old-location: ieee\cmp_set_plug.htm
 tech.root: IEEE
-ms.assetid: 2C47165D-9D04-46C8-A1EC-04E6F32AE516
 ms.date: 02/15/2018
 keywords: ["CMP_SET_PLUG structure"]
 ms.keywords: "*PCMP_SET_PLUG, 61883/CMP_SET_PLUG, 61883/PCMP_SET_PLUG, CMP_SET_PLUG, CMP_SET_PLUG structure [Buses], IEEE.cmp_set_plug, PCMP_SET_PLUG, PCMP_SET_PLUG structure pointer [Buses], _CMP_SET_PLUG"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _CMP_SET_PLUG
+ - PCMP_SET_PLUG
  - CMP_SET_PLUG
 ---
 
@@ -73,3 +74,4 @@ If a driver attempts to set the contents of a plug register it did not create, t
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_av_61883_request">AV_61883_REQUEST</a>
+

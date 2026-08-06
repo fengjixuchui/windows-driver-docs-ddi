@@ -4,7 +4,6 @@ title: TmInitializeTransactionManager function (wdm.h)
 description: The TmInitializeTransactionManager routine initializes a transaction manager object.
 old-location: kernel\tminitializetransactionmanager_.htm
 tech.root: kernel
-ms.assetid: A44B4B93-4EC7-4FC3-B64F-BF1FF19D067E
 ms.date: 04/30/2018
 keywords: ["TmInitializeTransactionManager function"]
 ms.keywords: TmInitializeTransactionManager, TmInitializeTransactionManager , TmInitializeTransactionManager routine [Kernel-Mode Driver Architecture], kernel.tminitializetransactionmanager_, wdm/TmInitializeTransactionManager
@@ -52,24 +51,24 @@ The <b>TmInitializeTransactionManager</b> routine initializes a transaction mana
 
 ## -parameters
 
-### -param TransactionManager 
+### -param TransactionManager [in]
 
-[in]
+
 A pointer to the transaction manager object to initialize.
 
-### -param LogFileName 
+### -param LogFileName [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains the path and file name of a <a href="/windows-hardware/drivers/kernel/windows-kernel-mode-clfs-library">CLFS</a> log file stream associated with the transaction manager object.
 
-### -param TmId 
+### -param TmId [in]
 
-[in]
+
 Specifies a pointer to a GUID that identifies  the name of the transaction manager object to initialize.
 
-### -param CreateOptions 
+### -param CreateOptions [in, optional]
 
-[in, optional]
+
 Optional object creation flags. The following table contains the available flags.
 
 <table>

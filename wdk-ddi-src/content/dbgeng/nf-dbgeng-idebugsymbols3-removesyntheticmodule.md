@@ -4,7 +4,6 @@ title: IDebugSymbols3::RemoveSyntheticModule (dbgeng.h)
 description: The RemoveSyntheticModule method removes a synthetic module from the module list the debugger maintains for the current process.
 old-location: debugger\removesyntheticmodule.htm
 tech.root: debugger
-ms.assetid: 951b42b6-4d6a-45af-a27f-6e8056676bb0
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::RemoveSyntheticModule"]
 ms.keywords: IDebugSymbols3 interface [Windows Debugging],RemoveSyntheticModule method, IDebugSymbols3.RemoveSyntheticModule, IDebugSymbols3::RemoveSyntheticModule, IDebugSymbols_f1ed1ce4-53ad-469f-9ab8-17900b6870e8.xml, RemoveSyntheticModule, RemoveSyntheticModule method [Windows Debugging], RemoveSyntheticModule method [Windows Debugging],IDebugSymbols3 interface, dbgeng/IDebugSymbols3::RemoveSyntheticModule, debugger.removesyntheticmodule
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols3.RemoveSyntheticModule
+ - IDebugSymbols3::RemoveSyntheticModule
 ---
 
 # IDebugSymbols3::RemoveSyntheticModule
@@ -50,9 +49,9 @@ The <b>RemoveSyntheticModule</b> method removes a synthetic module from the modu
 
 ## -parameters
 
-### -param Base 
+### -param Base [in]
 
-[in]
+
 Specifies the location in the process's virtual address space of the base of the synthetic module.
 
 ## -returns
@@ -106,3 +105,4 @@ For more information about synthetic modules, see Synthetic Modules.
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-removesyntheticsymbol">RemoveSyntheticSymbol</a>
+

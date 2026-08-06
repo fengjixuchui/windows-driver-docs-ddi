@@ -4,7 +4,6 @@ title: _CMP_CREATE_PLUG (61883.h)
 description: This structure is used to create a plug.
 old-location: ieee\cmp_create_plug.htm
 tech.root: IEEE
-ms.assetid: 4FE3FE9E-9F00-431D-99F0-002B1368CE34
 ms.date: 02/15/2018
 keywords: ["CMP_CREATE_PLUG structure"]
 ms.keywords: "*PCMP_CREATE_PLUG, 61883/CMP_CREATE_PLUG, 61883/PCMP_CREATE_PLUG, CMP_CREATE_PLUG, CMP_CREATE_PLUG structure [Buses], IEEE.cmp_create_plug, PCMP_CREATE_PLUG, PCMP_CREATE_PLUG structure pointer [Buses], _CMP_CREATE_PLUG"
@@ -42,10 +41,13 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _CMP_CREATE_PLUG
+ - PCMP_CREATE_PLUG
  - CMP_CREATE_PLUG
 ---
 
 # _CMP_CREATE_PLUG structure
+
 
 ## -description
 
@@ -67,7 +69,7 @@ An input plug, which receives data sent by the bus to the device.
 
 ### -field Pcr
 
-On input, an [AV_PCR](https://docs.microsoft.com/windows-hardware/drivers/ddi/61883/ns-61883-_av_pcr) structure that contains values used by the protocol driver to initialize the plug.
+On input, an [AV_PCR](./ns-61883-_av_pcr.md) structure that contains values used by the protocol driver to initialize the plug.
 
 ### -field pfnNotify
 
@@ -85,11 +87,11 @@ On output, the plug number.
 
 On output, the handle of the created plug
 
-### -PlugNum
+## -PlugNum
 
 The plug number of the newly created plug. If the plug could not be created, **PlugNum** is zero (0).
 
-### -hPlug
+## -hPlug
 
 A handle to the newly created plug. If the plug could not be created, **hPlug** is null.
 
@@ -103,4 +105,5 @@ If the protocol driver is unable to allocate resources, it sets **Irp->IoStatus.
 
 ## -see-also
 
-[AV_61883_REQUEST](https://docs.microsoft.com/windows-hardware/drivers/ddi/61883/ns-61883-_av_61883_request)
+[AV_61883_REQUEST](./ns-61883-_av_61883_request.md)
+

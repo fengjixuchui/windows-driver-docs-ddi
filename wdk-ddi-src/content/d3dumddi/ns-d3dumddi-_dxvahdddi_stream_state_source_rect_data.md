@@ -4,7 +4,6 @@ title: _DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA (d3dumddi.h)
 description: The DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA structure describes stream-state data that specifies the source rectangle of the input stream.
 old-location: display\dxvahdddi_stream_state_source_rect_data.htm
 tech.root: display
-ms.assetid: 2ce67fd7-03f6-432c-9229-a99f66f7eb73
 ms.date: 05/10/2018
 keywords: ["DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA structure"]
 ms.keywords: DXVA2_Structs_82045602-8c6c-4a80-8698-06b34f0ca8d9.xml, DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA, DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA structure [Display Devices], _DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA, d3dumddi/DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA, display.dxvahdddi_stream_state_source_rect_data
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA
  - DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA
 ---
 
@@ -52,13 +52,13 @@ The DXVAHDDDI_STREAM_STATE_SOURCE_RECT_DATA structure describes stream-state dat
 
 ## -struct-fields
 
-### -field Enable
+### -field Enable [in]
 
-[in] A Boolean value that specifies whether the driver should use the <b>SourceRect</b> member or the entire input surface as the source. The default value is <b>FALSE</b>, which indicates that the entire input surface is the source.
+A Boolean value that specifies whether the driver should use the <b>SourceRect</b> member or the entire input surface as the source. The default value is <b>FALSE</b>, which indicates that the entire input surface is the source.
 
-### -field SourceRect
+### -field SourceRect [in]
 
-[in] A <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a> structure that specifies the source rectangle in the coordinates of the input surface. This member is relevant only when the <b>Enable</b> member is set to <b>TRUE</b>. The default value is (0,0,0,0).
+A <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a> structure that specifies the source rectangle in the coordinates of the input surface. This member is relevant only when the <b>Enable</b> member is set to <b>TRUE</b>. The default value is (0,0,0,0).
 
 ## -remarks
 
@@ -69,3 +69,4 @@ The application can use the source rectangle to specify the active rectangle (di
 ## -see-also
 
 <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a>
+

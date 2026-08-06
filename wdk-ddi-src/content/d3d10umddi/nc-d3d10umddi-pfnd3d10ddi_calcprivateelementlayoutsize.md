@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d10umddi.PFND3D10DDI_CALCPRIVATEELEMENTLAYOUTSIZE
 title: PFND3D10DDI_CALCPRIVATEELEMENTLAYOUTSIZE (d3d10umddi.h)
-description: The CalcPrivateElementLayoutSize function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for an element layout.
+description: PFND3D10DDI_CALCPRIVATEELEMENTLAYOUTSIZE determines the size of the private memory region used by the user-mode display driver for an element layout.
 old-location: display\calcprivateelementlayoutsize.htm
-ms.assetid: 9fc80cea-8e4a-467a-b232-74333d2ceb5f
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_CALCPRIVATEELEMENTLAYOUTSIZE callback function"]
 ms.keywords: CalcPrivateElementLayoutSize, CalcPrivateElementLayoutSize callback function [Display Devices], PFND3D10DDI_CALCPRIVATEELEMENTLAYOUTSIZE, PFND3D10DDI_CALCPRIVATEELEMENTLAYOUTSIZE callback, UserModeDisplayDriverDx10_Functions_7c153781-eabd-4f5e-b949-0ac5c9e0d94b.xml, d3d10umddi/CalcPrivateElementLayoutSize, display.calcprivateelementlayoutsize
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CalcPrivateElementLayoutSize
-product:
- - Windows
+ - PFND3D10DDI_CALCPRIVATEELEMENTLAYOUTSIZE
 ---
 
 # PFND3D10DDI_CALCPRIVATEELEMENTLAYOUTSIZE callback function
@@ -52,13 +49,13 @@ The <i>CalcPrivateElementLayoutSize</i> function determines the size of the user
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCreateElementLayout* [in]
 
@@ -75,3 +72,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddi_devicefuncs">D3D10DDI_DEVICEFUNCS</a>
+

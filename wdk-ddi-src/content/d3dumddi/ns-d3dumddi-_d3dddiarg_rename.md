@@ -4,7 +4,6 @@ title: _D3DDDIARG_RENAME (d3dumddi.h)
 description: The D3DDDIARG_RENAME structure describes a resource or a surface within the resource to rename with a new allocation.
 old-location: display\d3dddiarg_rename.htm
 tech.root: display
-ms.assetid: 3ecddaf4-bce7-4ea0-b53d-e4872fa21f81
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_RENAME structure"]
 ms.keywords: D3DDDIARG_RENAME, D3DDDIARG_RENAME structure [Display Devices], UMDisplayDriver_param_Structs_5acf671e-94e3-4752-89c1-b3c9e33cba7a.xml, _D3DDDIARG_RENAME, d3dumddi/D3DDDIARG_RENAME, display.d3dddiarg_rename
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_RENAME
  - D3DDDIARG_RENAME
 ---
 
@@ -52,17 +52,17 @@ The D3DDDIARG_RENAME structure describes a resource or a surface within the reso
 
 ## -struct-fields
 
-### -field hResource
+### -field hResource [in]
 
-[in] A handle to the resource to be renamed.
+A handle to the resource to be renamed.
 
-### -field SubResourceIndex
+### -field SubResourceIndex [in]
 
-[in] The zero-based index into the resource that <b>hResource</b> specifies. This index indicates the subresource or surface to be renamed.
+The zero-based index into the resource that <b>hResource</b> specifies. This index indicates the subresource or surface to be renamed.
 
-### -field hCookie
+### -field hCookie [in]
 
-[in] A handle that represents the renamed surface instance that the <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_lockasync">LockAsync</a> function previously returned.
+A handle that represents the renamed surface instance that the <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_lockasync">LockAsync</a> function previously returned.
 
 ### -field GpuVirtualAddress
 
@@ -77,3 +77,4 @@ This member is available beginning with Windows 7.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_rename">Rename</a>
+

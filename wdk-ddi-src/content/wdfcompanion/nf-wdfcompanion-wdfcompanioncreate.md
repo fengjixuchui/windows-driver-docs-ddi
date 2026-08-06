@@ -1,10 +1,9 @@
 ---
 UID: NF:wdfcompanion.WdfCompanionCreate
 title: WdfCompanionCreate function (wdfcompanion.h)
-description: For internal use only.
+description: This WdfCompanionCreate function article is for internal use only.
 old-location: wdf\wdfcompanioncreate.htm
 tech.root: wdf
-ms.assetid: 78b9eccf-34ef-40ae-b7fc-6fa8400f8c2a
 ms.date: 02/26/2018
 keywords: ["WdfCompanionCreate function"]
 ms.keywords: WdfCompanionCreate, WdfCompanionCreate method, wdf.wdfcompanioncreate, wdfcompanion/WdfCompanionCreate
@@ -50,15 +49,15 @@ api_name:
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in, out]
 
-[in, out]
 
-### -param DeviceAttributes 
 
-[in, optional]
+### -param DeviceAttributes [in, optional]
 
-### -param Companion 
 
-[out]
 
+### -param Companion [out]
+
+
+## -returns

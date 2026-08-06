@@ -4,7 +4,6 @@ title: EVT_VMB_CHANNEL_RESTORE_PACKET (vmbuskernelmodeclientlibapi.h)
 description: The EvtVmbChannelRestorePacket callback function is invoked when the virtualization service provider (VSP) server endpoint must restore the state associated with a packet object.
 old-location: netvista\evt_vmb_channel_restore_packet.htm
 tech.root: netvista
-ms.assetid: 9C89CFCB-4B8A-40D3-B982-2F7836A636A3
 ms.date: 05/02/2018
 keywords: ["EVT_VMB_CHANNEL_RESTORE_PACKET callback function"]
 ms.keywords: EVT_VMB_CHANNEL_RESTORE_PACKET, EVT_VMB_CHANNEL_RESTORE_PACKET callback, EvtVmbChannelRestorePacket, EvtVmbChannelRestorePacket callback function [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_RESTORE_PACKET, PFN_VMB_CHANNEL_RESTORE_PACKET callback function pointer [Network Drivers Starting with Windows Vista], netvista.evt_vmb_channel_restore_packet, vmbuskernelmodeclientlibapi/EvtVmbChannelRestorePacket
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - VmbusKernelModeClientLibApi.h
 api_name:
- - PFN_VMB_CHANNEL_RESTORE_PACKET
+ - EVT_VMB_CHANNEL_RESTORE_PACKET
 ---
 
 # EVT_VMB_CHANNEL_RESTORE_PACKET callback function
@@ -53,29 +52,29 @@ endpoint must restore the state associated with a packet object.
 
 ## -parameters
 
-### -param Channel 
+### -param Channel [in]
 
-[in]
+
 The channel on which the packet arrives.
 
-### -param LibBuf 
+### -param LibBuf [in]
 
-[in]
+
 Pointer to packet object state internal to the Kernel Mode Client Library (KMCL).
 
-### -param LibBufSize 
+### -param LibBufSize [in]
 
-[in]
+
 Size of the <i>LibBuf</i> parameter, in bytes.
 
-### -param SaveBuf 
+### -param SaveBuf [in]
 
-[in]
+
 Pointer to transaction state specific to the VSP.
 
-### -param SaveBufSize 
+### -param SaveBufSize [in]
 
-[in]
+
 Size of the <i>SaveBuf</i> parameter, in bytes.
 
 ## -returns
@@ -107,3 +106,4 @@ callback function, then this is provided in <i>SaveBuf</i>, and restored by the 
 
 
 <a href="/windows-hardware/drivers/ddi/vmbuskernelmodeclientlibapi/nf-vmbuskernelmodeclientlibapi-vmbserverchannelinitsetsaverestorepacketcallbacks">VmbServerChannelInitSetSaveRestorePacketCallbacks</a>
+

@@ -4,7 +4,6 @@ title: PFND3DDDI_GETMULTISAMPLEMETHODLISTCB (d3dumddi.h)
 description: The pfnGetMultisampleMethodListCb function retrieves a list of multiple-sample methods that are used for the given width, height, and format of an allocation.
 old-location: display\pfngetmultisamplemethodlistcb.htm
 tech.root: display
-ms.assetid: 2e3f9ee9-83a0-4b81-a22b-594e5bd4d046
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_GETMULTISAMPLEMETHODLISTCB callback function"]
 ms.keywords: D3Druntime_Functions_301eb3f8-0145-40dc-8aa4-6b29a6876eee.xml, PFND3DDDI_GETMULTISAMPLEMETHODLISTCB, PFND3DDDI_GETMULTISAMPLEMETHODLISTCB callback, d3dumddi/pfnGetMultisampleMethodListCb, display.pfngetmultisamplemethodlistcb, pfnGetMultisampleMethodListCb, pfnGetMultisampleMethodListCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnGetMultisampleMethodListCb
-product:
- - Windows
+ - PFND3DDDI_GETMULTISAMPLEMETHODLISTCB
 ---
 
 # PFND3DDDI_GETMULTISAMPLEMETHODLISTCB callback function
@@ -56,7 +53,7 @@ The <b>pfnGetMultisampleMethodListCb</b> function retrieves a list of multiple-s
 
 A handle to the graphics adapter object.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -100,3 +97,4 @@ The user-mode display driver typically uses the <b>pfnGetMultisampleMethodListCb
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

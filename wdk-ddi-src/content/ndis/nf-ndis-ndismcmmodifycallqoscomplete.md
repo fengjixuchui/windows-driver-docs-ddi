@@ -4,7 +4,6 @@ title: NdisMCmModifyCallQoSComplete macro (ndis.h)
 description: NdisMCmModifyCallQoSComplete indicates the completion of the client's request, for which the MCM driver previously returned NDIS_STATUS_PENDING, to modify the quality of service on a VC.
 old-location: netvista\ndismcmmodifycallqoscomplete.htm
 tech.root: netvista
-ms.assetid: 66157bc7-8094-481f-8aae-a438031b61d0
 ms.date: 05/02/2018
 keywords: ["NdisMCmModifyCallQoSComplete macro"]
 ms.keywords: NdisMCmModifyCallQoSComplete, NdisMCmModifyCallQoSComplete macro [Network Drivers Starting with Windows Vista], condis_mcm_ref_4b742f65-7e96-4e8b-aa3d-64f9c90aa4be.xml, ndis/NdisMCmModifyCallQoSComplete, netvista.ndismcmmodifycallqoscomplete
@@ -103,7 +102,7 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscmmodifycallqoscomplete">NdisCmModifyCallQosComplete</a>
+<a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscmmodifycallqoscomplete">NdisCmModifyCallQoSComplete</a>
 
 
 

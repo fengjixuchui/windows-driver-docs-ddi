@@ -4,7 +4,6 @@ title: _NDIS_RECEIVE_QUEUE_FREE_PARAMETERS (ntddndis.h)
 description: The NDIS_RECEIVE_QUEUE_FREE_PARAMETERS structure identifies a receive queue to free.
 old-location: netvista\ndis_receive_queue_free_parameters.htm
 tech.root: netvista
-ms.assetid: b67e7929-e6b3-4d0b-aff9-943a7fbae8ee
 ms.date: 05/02/2018
 keywords: ["NDIS_RECEIVE_QUEUE_FREE_PARAMETERS structure"]
 ms.keywords: "*PNDIS_RECEIVE_QUEUE_FREE_PARAMETERS, NDIS_RECEIVE_QUEUE_FREE_PARAMETERS, NDIS_RECEIVE_QUEUE_FREE_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_RECEIVE_QUEUE_FREE_PARAMETERS, PNDIS_RECEIVE_QUEUE_FREE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_QUEUE_FREE_PARAMETERS, netvista.ndis_receive_queue_free_parameters, ntddndis/NDIS_RECEIVE_QUEUE_FREE_PARAMETERS, ntddndis/PNDIS_RECEIVE_QUEUE_FREE_PARAMETERS, virtual_machine_queue_ref_6084d20e-050b-4e7c-af0e-6ab23269abb0.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_RECEIVE_QUEUE_FREE_PARAMETERS
+ - PNDIS_RECEIVE_QUEUE_FREE_PARAMETERS
  - NDIS_RECEIVE_QUEUE_FREE_PARAMETERS
 ---
 
@@ -57,7 +58,7 @@ The <b>NDIS_RECEIVE_QUEUE_FREE_PARAMETERS</b> structure identifies a receive que
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_RECEIVE_QUEUE_FREE_PARAMETERS</b> structure. The driver sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_DEFAULT</b>, the 
@@ -84,8 +85,9 @@ The <b>NDIS_RECEIVE_QUEUE_FREE_PARAMETERS</b> structure is used in the
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/network/oid-receive-filter-free-queue">OID_RECEIVE_FILTER_FREE_QUEUE</a>
+

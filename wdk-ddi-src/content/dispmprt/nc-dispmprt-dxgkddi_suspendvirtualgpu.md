@@ -1,9 +1,8 @@
 ---
 UID: NC:dispmprt.DXGKDDI_SUSPENDVIRTUALGPU
 title: DXGKDDI_SUSPENDVIRTUALGPU
-description: Virtual GPU suspend/resume is not supported.
+description: The DXGKDDI_SUSPENDVIRTUALGPU callback function suspends execution of the specified virtual GPU. This callback function is not supported and is never used.
 tech.root: display
-ms.assetid: a4433fed-25d6-4002-b4f3-a7bfebcce44d
 ms.date: 04/04/2019
 keywords: ["DXGKDDI_SUSPENDVIRTUALGPU callback function"]
 req.header: dispmprt.h
@@ -36,8 +35,6 @@ api_location:
  - dispmprt.h
 api_name:
  - DXGKDDI_SUSPENDVIRTUALGPU
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -54,13 +51,13 @@ This function suspends execution of all engines and operation of the given virtu
 
 ## -parameters
 
-### -param Context
+### -param Context [in]
 
-[in] The miniport context that is returned by the driver in the [DXGKDDI_GPU_PARTITION_INTERFACE](ns-dispmprt-_dxgkddi_gpu_partition_interface.md) structure.
+The miniport context that is returned by the driver in the [DXGKDDI_GPU_PARTITION_INTERFACE](ns-dispmprt-_dxgkddi_gpu_partition_interface.md) structure.
 
-### -param pArgs
+### -param pArgs [in]
 
-[in] A pointer to a DXGKARG_SUSPENDVIRTUALGPU structure.
+A pointer to a DXGKARG_SUSPENDVIRTUALGPU structure.
 
 ## -returns
 

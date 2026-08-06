@@ -4,7 +4,6 @@ title: RtlNumberOfSetBits function (wdm.h)
 description: The RtlNumberOfSetBits routine returns a count of the set bits in a given bitmap variable.
 old-location: kernel\rtlnumberofsetbits.htm
 tech.root: kernel
-ms.assetid: 6208f750-4871-43b9-b848-011180d39fd8
 ms.date: 04/30/2018
 keywords: ["RtlNumberOfSetBits function"]
 ms.keywords: RtlNumberOfSetBits, RtlNumberOfSetBits routine [Kernel-Mode Driver Architecture], k109_b8b2c3f8-3ec3-4690-90bb-e5b120b5b062.xml, kernel.rtlnumberofsetbits, wdm/RtlNumberOfSetBits
@@ -51,10 +50,10 @@ The <b>RtlNumberOfSetBits</b> routine returns a count of the set bits in a given
 
 ## -parameters
 
-### -param BitMapHeader 
+### -param BitMapHeader [in]
 
-[in]
-A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
+
+A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
 ## -returns
 
@@ -66,7 +65,7 @@ Callers of <b>RtlNumberOfSetBits</b> must be running at IRQL <= APC_LEVEL if the
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a>
+<a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a>
 
 
 

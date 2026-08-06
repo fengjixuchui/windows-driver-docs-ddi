@@ -4,7 +4,6 @@ title: WdfRequestForwardToParentDeviceIoQueue function (wdfrequest.h)
 description: The WdfRequestForwardToParentDeviceIoQueue method requeues an I/O request from a child device's I/O queue to a specified I/O queue of the child's parent device.
 old-location: wdf\wdfrequestforwardtoparentdeviceioqueue.htm
 tech.root: wdf
-ms.assetid: 81511d81-206c-420b-a956-42cf68b57fc4
 ms.date: 02/26/2018
 keywords: ["WdfRequestForwardToParentDeviceIoQueue function"]
 ms.keywords: DFRequestObjectRef_0bfa4a8a-7b79-4256-84df-5bdabfff234b.xml, WdfRequestForwardToParentDeviceIoQueue, WdfRequestForwardToParentDeviceIoQueue method, kmdf.wdfrequestforwardtoparentdeviceioqueue, wdf.wdfrequestforwardtoparentdeviceioqueue, wdfrequest/WdfRequestForwardToParentDeviceIoQueue
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,19 +52,19 @@ The <b>WdfRequestForwardToParentDeviceIoQueue</b> method requeues an I/O request
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
-### -param ParentDeviceQueue 
+### -param ParentDeviceQueue [in]
 
-[in]
+
 A handle to a framework queue object.
 
-### -param ForwardOptions 
+### -param ForwardOptions [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfrequest/ns-wdfrequest-_wdf_request_forward_options">WDF_REQUEST_FORWARD_OPTIONS</a> structure.
 
 ## -returns
@@ -122,7 +121,7 @@ The specified I/O queue does not belong to the parent device.
 
 </li>
 <li>
-The driver has enabled <a href="/windows-hardware/drivers/wdf/guaranteeing-forward-progress-of-i-o-operations">guaranted forward progress</a> and the specified I/O request is reserved for low-memory situations.
+The driver has enabled <a href="/windows-hardware/drivers/wdf/guaranteeing-forward-progress-of-i-o-operations">guaranteed forward progress</a> and the specified I/O request is reserved for low-memory situations.
 
 </li>
 <li>

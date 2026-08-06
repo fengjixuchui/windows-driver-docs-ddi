@@ -4,7 +4,6 @@ title: IWDFPropertyStoreFactory (wudfddi.h)
 description: The IWDFPropertyStoreFactory interface is a factory interface that is used to create a property store interface.
 old-location: wdf\iwdfpropertystorefactory.htm
 tech.root: wdf
-ms.assetid: 41d77cf1-6f85-4f43-b2d8-1da4c9dac380
 ms.date: 02/26/2018
 keywords: ["IWDFPropertyStoreFactory interface"]
 ms.keywords: IWDFPropertyStoreFactory, IWDFPropertyStoreFactory interface, IWDFPropertyStoreFactory interface,described, UMDFDeviceObjectRef_07ada2e1-57a4-4b48-9145-fd38baef01cf.xml, umdf.iwdfpropertystorefactory, wdf.iwdfpropertystorefactory, wudfddi/IWDFPropertyStoreFactory
@@ -52,9 +51,9 @@ The <b>IWDFPropertyStoreFactory</b> interface is a factory interface that is use
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFPropertyStoreFactory</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IWDFPropertyStoreFactory</b> also has these types of members:
+The <b>IWDFPropertyStoreFactory</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IWDFPropertyStoreFactory</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>
 
 ## -remarks

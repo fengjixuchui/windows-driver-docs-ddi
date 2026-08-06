@@ -1,8 +1,7 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_OPENHEAPANDRESOURCE_0043
 title: PFND3D12DDI_OPENHEAPANDRESOURCE_0043 (d3d12umddi.h)
-description: Implemented by the client driver to open heap and resource.
-ms.assetid: e4387638-208c-4ea7-9858-773c2da0d2ba
+description: The PFND3D12DDI_OPENHEAPANDRESOURCE_0043 callback function opens a heap and resource. The function is called by a client driver.
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_OPENHEAPANDRESOURCE_0043 callback function"]
 req.header: d3d12umddi.h
@@ -35,8 +34,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_OPENHEAPANDRESOURCE_0043
-product:
- - Windows
 ---
 
 # PFND3D12DDI_OPENHEAPANDRESOURCE_0043 callback function
@@ -48,27 +45,27 @@ Implemented by the client driver to open heap and resource.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 Open heap and resource.
 
-### -param Arg3
+### -param unnamedParam3
 
 Used to create a heap.
 
-### -param Arg4
+### -param unnamedParam4
 
 Used to create a resource.
 
-### -param Arg5
+### -param unnamedParam5
 
 The protected resource session.
 
-### -param Arg6
+### -param unnamedParam6
 
 The hardware resource.
 

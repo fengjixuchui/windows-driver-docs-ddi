@@ -4,7 +4,6 @@ title: TRANSLATE_BUS_ADDRESS (wdm.h)
 description: The TranslateBusAddress routine translates addresses on the parent bus to logical addresses.
 old-location: kernel\translatebusaddress.htm
 tech.root: kernel
-ms.assetid: DDED1237-74B7-4127-8E86-D0794A1FB49B
 ms.date: 04/30/2018
 keywords: ["TRANSLATE_BUS_ADDRESS callback function"]
 ms.keywords: TRANSLATE_BUS_ADDRESS, TranslateBusAddress, TranslateBusAddress routine [Kernel-Mode Driver Architecture], drvr_interface_68887adb-724b-47ca-80e6-b8b934ae2414.xml, kernel.bustranslatebusaddress, kernel.translatebusaddress, wdm/TranslateBusAddress
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdm.h
 api_name:
- - TranslateBusAddress
+ - TRANSLATE_BUS_ADDRESS
 ---
 
 # TRANSLATE_BUS_ADDRESS callback function
@@ -50,29 +49,29 @@ The <i>TranslateBusAddress</i> routine translates addresses on the parent bus to
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_bus_interface_standard">BUS_INTERFACE_STANDARD</a> structure for the interface.
 
-### -param BusAddress 
+### -param BusAddress [in]
 
-[in]
+
 The bus-relative address to be translated.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The length, in bytes, of the input memory that <i>BusAddress</i> points to.
 
-### -param AddressSpace 
+### -param AddressSpace [in, out]
 
-[in, out]
+
 On input, the address space in which the device's hardware address resides. A value of 0x0 signifies memory space, and a value of 0x1 signifies port I/O space. On output, <i>AddressSpace</i> indicates the address space in which the <i>TranslatedAddress</i> resides.
 
-### -param TranslatedAddress 
+### -param TranslatedAddress [out]
 
-[out]
+
 The translated (logical) address that corresponds to the bus-relative address that the caller provides in <i>BusAddress</i>.
 
 ## -returns
@@ -83,3 +82,4 @@ The
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_bus_interface_standard">BUS_INTERFACE_STANDARD</a>
+

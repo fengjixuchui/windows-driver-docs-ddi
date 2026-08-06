@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d10umddi.PFND3D11_1DDI_CHECKDIRECTFLIPSUPPORT
 title: PFND3D11_1DDI_CHECKDIRECTFLIPSUPPORT (d3d10umddi.h)
-description: Called by the Desktop Window Manager (DWM) to verify that the user-mode driver supports Direct Flip operations, in which video memory is seamlessly flipped between an application's managed primary allocations and the DWM's managed primary allocations.
+description: PFND3D11_1DDI_CHECKDIRECTFLIPSUPPORT is called by the Desktop Window Manager to verify that the user-mode display driver supports Direct Flip operations.
 old-location: display\checkdirectflipsupport_d3d11_1_.htm
-ms.assetid: 2acf84cb-5e51-4aa8-96ce-96abc6ceec8c
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_CHECKDIRECTFLIPSUPPORT callback function"]
 ms.keywords: CheckDirectFlipSupport(D3D11_1), CheckDirectFlipSupport(D3D11_1) callback function [Display Devices], PFND3D11_1DDI_CHECKDIRECTFLIPSUPPORT, PFND3D11_1DDI_CHECKDIRECTFLIPSUPPORT callback, d3d10umddi/CheckDirectFlipSupport(D3D11_1), display.checkdirectflipsupport_d3d11_1_, display.pfncheckdirectflipsupport
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - CheckDirectFlipSupport(D3D11_1)
+ - PFND3D11_1DDI_CHECKDIRECTFLIPSUPPORT
 ---
 
 # PFND3D11_1DDI_CHECKDIRECTFLIPSUPPORT callback function
@@ -50,19 +49,19 @@ Called by the Desktop Window Manager (DWM) to verify that the user-mode driver s
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hResource1*
 
 A resource in the application's swapchain.
 
-### -param Arg3
+### -param unnamedParam3
 
 *hResource2*
 
@@ -72,9 +71,9 @@ A resource in the DWM's swapchain.
 
 If this parameter has a value of <b>D3D11_1DDI_CHECK_DIRECT_FLIP_IMMEDIATE</b>, seamless flipping should occur immediately and does not have to be synchronized with a VSync interrupt.
 
-### -param pSupported 
+### -param pSupported [out]
 
-[out]
+
 Set to <b>TRUE</b> if the driver can seamlessly flip video memory between  an application's managed primary allocations and the DWM's managed primary allocations. Otherwise, set to <b>FALSE</b>.
 
 ## -remarks
@@ -107,3 +106,4 @@ The user-mode driver might need to call the kernel-mode driver to perform these 
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_escapecb">pfnEscapeCb</a>
+

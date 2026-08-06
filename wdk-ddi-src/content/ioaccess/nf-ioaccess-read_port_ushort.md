@@ -1,10 +1,9 @@
 ---
 UID: NF:ioaccess.READ_PORT_USHORT
 title: READ_PORT_USHORT function (ioaccess.h)
-description: The READ_PORT_USHORT routine reads a USHORT value from the specified port address.
+description: The READ_PORT_USHORT function (ioaccess.h) returns a USHORT value that is read from the specified port address in resident, mapped device memory.
 old-location: kernel\read_port_ushort.htm
 tech.root: kernel
-ms.assetid: 55f759dc-8fc7-4d47-9b3d-55d8902ed805
 ms.date: 04/30/2018
 keywords: ["READ_PORT_USHORT function"]
 ms.keywords: READ_PORT_USHORT, READ_PORT_USHORT routine [Kernel-Mode Driver Architecture], k103_b7b22427-572f-43d7-b6bd-dcf2dd7ac104.xml, kernel.read_port_ushort, wdm/READ_PORT_USHORT
@@ -51,9 +50,9 @@ The <b>READ_PORT_USHORT</b> routine reads a USHORT value from the specified port
 
 ## -parameters
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Specifies the port address, which must be a mapped range in I/O space.
 
 ## -returns

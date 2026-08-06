@@ -4,7 +4,6 @@ title: AtaPortRegistryControllerKeyWriteDeferred function (irb.h)
 description: The AtaPortRegistryControllerKeyWriteDeferred routine writes the data asynchronously to the indicated value name under the registry key HKLM\CurrentControlSet\Services\<service name>\ControllerN, where N is the number of the controller.
 old-location: storage\ataportregistrycontrollerkeywritedeferred.htm
 tech.root: storage
-ms.assetid: f4297e91-06ae-4c7a-87bc-12e3f5b0238c
 ms.date: 03/29/2018
 keywords: ["AtaPortRegistryControllerKeyWriteDeferred function"]
 ms.keywords: AtaPortRegistryControllerKeyWriteDeferred, AtaPortRegistryControllerKeyWriteDeferred routine [Storage Devices], atartns_cd43ce27-787a-4ffb-99d5-de7f410c4b32.xml, irb/AtaPortRegistryControllerKeyWriteDeferred, storage.ataportregistrycontrollerkeywritedeferred
@@ -51,24 +50,24 @@ The <b>AtaPortRegistryControllerKeyWriteDeferred</b> routine writes the data asy
 
 ## -parameters
 
-### -param ChannelExtension 
+### -param ChannelExtension [in]
 
-[in]
+
 A pointer to the channel extension.
 
-### -param ControllerNumber 
+### -param ControllerNumber [in]
 
-[in]
+
 Contains the controller number.
 
-### -param ValueName 
+### -param ValueName [in]
 
-[in]
+
 Contains the name of the registry value to write to.
 
-### -param ValueType 
+### -param ValueType [in]
 
-[in]
+
 Indicates the type of data that is contained in the registry value. This member should be assigned one of values indicated in the following table. 
 
 <table>
@@ -108,9 +107,9 @@ A null-terminated, Unicode string.
 </tr>
 </table>
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to the source buffer that contains the data to write to the registry value.
 
 ### -param BufferLength

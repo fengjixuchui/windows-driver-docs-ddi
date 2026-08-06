@@ -4,7 +4,6 @@ title: IWDFIoRequestCompletionParams::GetWriteParameters (wudfddi.h)
 description: The GetWriteParameters method retrieves parameters that are associated with the completion of a write request.
 old-location: wdf\iwdfiorequestcompletionparams_getwriteparameters.htm
 tech.root: wdf
-ms.assetid: 7161ba67-d94a-4f05-bb8f-a97ef418e580
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequestCompletionParams::GetWriteParameters"]
 ms.keywords: GetWriteParameters, GetWriteParameters method, GetWriteParameters method,IWDFIoRequestCompletionParams interface, IWDFIoRequestCompletionParams interface,GetWriteParameters method, IWDFIoRequestCompletionParams.GetWriteParameters, IWDFIoRequestCompletionParams::GetWriteParameters, UMDFRequestObjectRef_018d6259-d6c5-4004-966a-6d18bca94057.xml, umdf.iwdfiorequestcompletionparams_getwriteparameters, wdf.iwdfiorequestcompletionparams_getwriteparameters, wudfddi/IWDFIoRequestCompletionParams::GetWriteParameters
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequestCompletionParams.GetWriteParameters
+ - IWDFIoRequestCompletionParams::GetWriteParameters
 ---
 
 # IWDFIoRequestCompletionParams::GetWriteParameters
@@ -52,23 +51,23 @@ The <b>GetWriteParameters</b> method retrieves parameters that are associated wi
 
 ## -parameters
 
-### -param ppWriteMemory 
+### -param ppWriteMemory [out]
 
-[out]
+
 A pointer to a variable that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfmemory">IWDFMemory</a> interface for access to the write buffer for the completion of the write request. 
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information.
 
-### -param pBytesWritten 
+### -param pBytesWritten [out]
 
-[out]
+
 A pointer to a variable that receives the size, in bytes, of the write buffer for the completion of the write request. 
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information.
 
-### -param pWriteMemoryOffset 
+### -param pWriteMemoryOffset [out]
 
-[out]
+
 A pointer to a variable that receives the offset, in bytes, into the write buffer for the completion of the write request. 
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information.
@@ -80,3 +79,4 @@ This parameter is optional. The driver can pass <b>NULL</b> if the driver does n
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfmemory">IWDFMemory</a>
+

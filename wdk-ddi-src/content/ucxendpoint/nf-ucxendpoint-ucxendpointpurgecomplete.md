@@ -4,7 +4,6 @@ title: UcxEndpointPurgeComplete function (ucxendpoint.h)
 description: Notifies UCX that a purge operation has been completed on the specified endpoint object.
 old-location: buses\_ucxendpointpurgecomplete.htm
 tech.root: usbref
-ms.assetid: F640D54B-277F-4382-9478-8A7AFAD242E2
 ms.date: 05/07/2018
 keywords: ["UcxEndpointPurgeComplete function"]
 ms.keywords: UcxEndpointPurgeComplete, UcxEndpointPurgeComplete method [Buses], buses._ucxendpointpurgecomplete, ucxendpoint/UcxEndpointPurgeComplete
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ Notifies UCX that a purge operation has been completed  on the specified endpoin
 
 ## -parameters
 
-### -param Endpoint 
+### -param Endpoint [in]
 
-[in]
+
 A handle to the endpoint object. The client driver retrieved the handle in a previous call to <a href="/windows-hardware/drivers/ddi/ucxendpoint/nf-ucxendpoint-ucxendpointcreate">UcxEndpointCreate</a>.
 
 ## -see-also

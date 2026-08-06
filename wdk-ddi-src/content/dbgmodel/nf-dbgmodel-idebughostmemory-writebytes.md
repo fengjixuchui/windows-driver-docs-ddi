@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostMemory.WriteBytes
 title: IDebugHostMemory::WriteBytes (dbgmodel.h)
-description: Writes a number of bytes to the address space of the target as defined by the inpassed context and location.
-ms.assetid: dc230851-0655-418f-8cba-0e9bc4f885a5
+description: "The IDebugHostMemory::WriteBytes method writes a number of bytes to the address space of the target for a given context and location."
 ms.date: 09/28/2018
 keywords: ["IDebugHostMemory::WriteBytes"]
 ms.keywords: IDebugHostMemory::WriteBytes, WriteBytes, IDebugHostMemory.WriteBytes, IDebugHostMemory::WriteBytes, IDebugHostMemory.WriteBytes
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostMemory.WriteBytes
+ - IDebugHostMemory::WriteBytes
 ---
 
 # IDebugHostMemory::WriteBytes

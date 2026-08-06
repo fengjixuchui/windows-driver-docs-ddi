@@ -4,7 +4,6 @@ title: NdisFIndicateStatus function (ndis.h)
 description: The NdisFIndicateStatus function passes on a filtered status indication from an underlying driver or originates a status indication.
 old-location: netvista\ndisfindicatestatus.htm
 tech.root: netvista
-ms.assetid: fd81d777-8479-41e3-8f71-e5f4134b60a0
 ms.date: 05/02/2018
 keywords: ["NdisFIndicateStatus function"]
 ms.keywords: NdisFIndicateStatus, NdisFIndicateStatus function [Network Drivers Starting with Windows Vista], ndis/NdisFIndicateStatus, ndis_status_ref_e649b130-878b-4019-b377-dd099de6eb8e.xml, netvista.ndisfindicatestatus
@@ -53,16 +52,16 @@ The
 
 ## -parameters
 
-### -param NdisFilterHandle 
+### -param NdisFilterHandle [in]
 
-[in]
+
 The NDIS handle that identifies this filter module. NDIS passed the handle to the filter driver in
      a call to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach">FilterAttach</a> function.
 
-### -param StatusIndication 
+### -param StatusIndication [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_status_indication">NDIS_STATUS_INDICATION</a> structure
      that contains the status information.

@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.IModelObject.SetConcept
 title: IModelObject::SetConcept (dbgmodel.h)
 description: The SetConcept method will place a specified concept on the object instance specified by the this pointer.
-ms.assetid: 498fef63-ad2a-4021-9f48-b5441ae0d81f
 ms.date: 06/10/2019
 keywords: ["IModelObject::SetConcept"]
 ms.keywords: IModelObject::SetConcept, SetConcept, IModelObject.SetConcept, IModelObject::SetConcept, IModelObject.SetConcept
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IModelObject.SetConcept
+ - IModelObject::SetConcept
 ---
 
 # IModelObject::SetConcept
@@ -113,3 +112,4 @@ if (spStringConverter != nullptr)
 [IKeyStore interface](nn-dbgmodel-ikeystore.md)
 
 [IModelObject interface](nn-dbgmodel-imodelobject.md)
+

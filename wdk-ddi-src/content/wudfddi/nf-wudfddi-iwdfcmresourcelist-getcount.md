@@ -4,7 +4,6 @@ title: IWDFCmResourceList::GetCount (wudfddi.h)
 description: The GetCount method returns the number of resource descriptors that are contained in this interface's resource list.
 old-location: wdf\iwdfcmresourcelist_getcount.htm
 tech.root: wdf
-ms.assetid: 91F88EC2-C0BD-42E1-8C57-437909E2CCA2
 ms.date: 02/26/2018
 keywords: ["IWDFCmResourceList::GetCount"]
 ms.keywords: GetCount, GetCount method, GetCount method,IWDFCmResourceList interface, IWDFCmResourceList interface,GetCount method, IWDFCmResourceList.GetCount, IWDFCmResourceList::GetCount, umdf.iwdfcmresourcelist_getcount, wdf.iwdfcmresourcelist_getcount, wudfddi/IWDFCmResourceList::GetCount
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFCmResourceList.GetCount
+ - IWDFCmResourceList::GetCount
 ---
 
 # IWDFCmResourceList::GetCount
@@ -69,3 +68,4 @@ See example code in <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iw
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfcmresourcelist">IWDFCmResourceList</a>
+

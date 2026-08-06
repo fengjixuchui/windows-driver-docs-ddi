@@ -4,7 +4,6 @@ title: FltSetCancelCompletion function (fltkernel.h)
 description: A minifilter driver calls FltSetCancelCompletion to specify a cancel routine to be called if a given I/O operation is canceled.
 old-location: ifsk\fltsetcancelcompletion.htm
 tech.root: ifsk
-ms.assetid: 3f15d3b2-321d-45ca-8fe4-d8706fe61d48
 ms.date: 04/16/2018
 keywords: ["FltSetCancelCompletion function"]
 ms.keywords: FltApiRef_p_to_z_36fb8e4e-a50b-4b9c-a208-9d6189f5b5a7.xml, FltSetCancelCompletion, FltSetCancelCompletion routine [Installable File System Drivers], fltkernel/FltSetCancelCompletion, ifsk.fltsetcancelcompletion
@@ -50,14 +49,14 @@ A minifilter driver calls <b>FltSetCancelCompletion</b> to specify a cancel rout
 
 ## -parameters
 
-### -param CallbackData 
+### -param CallbackData [in]
 
-[in]
+
 Pointer to the callback data (<a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data">FLT_CALLBACK_DATA</a>) structure for the I/O operation. The operation must be an IRP-based I/O operation and must not be a paging I/O operation. To determine whether a given callback data structure represents an IRP-based I/O operation, use the <a href="/previous-versions/ff544654(v=vs.85)">FLT_IS_IRP_OPERATION</a> macro. This parameter is required and cannot be <b>NULL</b>.
 
-### -param CanceledCallback 
+### -param CanceledCallback [in]
 
-[in]
+
 Pointer to a caller-supplied cancel routine. The Filter Manager calls this routine if the I/O operation represented by <i>CallbackData</i> is canceled. 
 
 This routine is declared as follows: 

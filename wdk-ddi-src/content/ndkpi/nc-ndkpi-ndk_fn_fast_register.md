@@ -4,7 +4,6 @@ title: NDK_FN_FAST_REGISTER (ndkpi.h)
 description: The NdkFastRegister (NDK_FN_FAST_REGISTER) function fast-registers an array of adapter logical pages over an existing memory region.
 old-location: netvista\ndk_fn_fast_register.htm
 tech.root: netvista
-ms.assetid: 4A37BEF6-8526-430D-AAE6-294363D0EDE7
 ms.date: 05/02/2018
 keywords: ["NDK_FN_FAST_REGISTER callback function"]
 ms.keywords: NDK_FN_FAST_REGISTER, NDK_FN_FAST_REGISTER callback, NDK_OP_FLAG_ALLOW_LOCAL_WRITE, NDK_OP_FLAG_ALLOW_REMOTE_READ, NDK_OP_FLAG_ALLOW_REMOTE_WRITE, NDK_OP_FLAG_DEFER, NDK_OP_FLAG_READ_FENCE, NDK_OP_FLAG_SILENT_SUCCESS, NdkFastRegister, NdkFastRegister callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkFastRegister, netvista.ndk_fn_fast_register
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkFastRegister
+ - NDK_FN_FAST_REGISTER
 ---
 
 # NDK_FN_FAST_REGISTER callback function
@@ -50,46 +49,45 @@ The <i>NdkFastRegister</i> (<i>NDK_FN_FAST_REGISTER</i>) function fast-registers
 
 ## -parameters
 
-### -param pNdkQp 
+### -param pNdkQp [in]
 
-[in]
+
 A pointer to an NDK queue pair (QP) object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_qp">NDK_QP</a>).
 
-### -param RequestContext 
+### -param RequestContext [in, optional]
 
-[in, optional]
+
 A  context value to return in the <b>RequestContext</b> member of the <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_result">NDK_RESULT</a> structure for this request.
 
-### -param pMr 
+### -param pMr [in]
 
-[in]
+
 A pointer to an NDK memory region (MR) object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_mr">NDK_MR</a>) that was initialized for fast registration.
 
-### -param AdapterPageCount 
+### -param AdapterPageCount [in]
 
-[in]
+
 The number of pages in the <i>AdapterPageArray</i> parameter. The size of each page in the <i>AdapterPageArray</i> is <b>PAGE_SIZE</b> bytes.
 
-### -param NDK_LOGICAL_ADDRESS
 
-### -param FBO 
+### -param FBO [in]
 
-[in]
+
 The first byte offset (FBO) within the first page. The registered region starts at this offset.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The length, in bytes, of the region being registered starting at the FBO. The length must be less than or equal to the total number of bytes that are represented by the first set (<i>AdapterPageCount</i>) of pages that are contained in the <i>AdapterPageArray</i> array minus the FBO.
 
-### -param BaseVirtualAddress 
+### -param BaseVirtualAddress [in]
 
-[in]
+
 The consumer-specified virtual address value to refer to the first byte location of the memory region. This value must be a multiple of <b>PAGE_SIZE</b> plus FBO. So, the allowed values include  FBO, or FBO plus  n times the <b>PAGE_SIZE</b> where n is greater than or equal to zero. Zero is a valid value only if FBO is zero.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A bitwise OR of flags which specifies the operations that are allowed. The following flags are supported:
 
 <table>
@@ -169,7 +167,7 @@ Indicates to the NDK provider that it may defer indicating the request to hardwa
  
 
 
-#### - AdapterPageArray
+### -param AdapterPageArray
 
 An array of adapter logical addresses (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_logical_address_mapping">NDK_LOGICAL_ADDRESS</a>) where each address is the starting logical address for a page. Each address must be aligned  pages that are <b>PAGE_SIZE</b> bytes in length. Consecutive addresses in the array are not necessarily consecutive in terms of the logical address space, but the array as a whole represents a virtually contiguous memory region from the perspective of the host system.
 
@@ -272,3 +270,4 @@ If an NDK consumer passes the <b>NDK_OP_FLAG_RDMA_READ_SINK</b> flag on an adapt
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_result">NDK_RESULT</a>
+

@@ -4,14 +4,13 @@ title: RtlCreateSystemVolumeInformationFolder function (ntifs.h)
 description: The RtlCreateSystemVolumeInformationFolder routine verifies the existence of the &#0034;System Volume Information&#0034; folder on a file system volume. If the folder is not present, then the folder is created.
 old-location: ifsk\rtlcreatesystemvolumeinformationfolder.htm
 tech.root: ifsk
-ms.assetid: bcbbddc7-6675-4555-bd05-588762148554
 ms.date: 04/16/2018
 keywords: ["RtlCreateSystemVolumeInformationFolder function"]
 ms.keywords: RtlCreateSystemVolumeInformationFolder, RtlCreateSystemVolumeInformationFolder routine [Installable File System Drivers], ifsk.rtlcreatesystemvolumeinformationfolder, ntifs/RtlCreateSystemVolumeInformationFolder, rtlref_f854cbbb-1aa4-4f0a-8d2d-5b160634a155.xml
 req.header: ntifs.h
 req.include-header: Ntifs.h, FltKernel.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Windows XP and later Windows operating systems.
+req.target-min-winverclnt: Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,9 +49,9 @@ The <b>RtlCreateSystemVolumeInformationFolder</b> routine verifies the existence
 
 ## -parameters
 
-### -param VolumeRootPath 
+### -param VolumeRootPath [in]
 
-[in]
+
 A pointer to a path to the root of the volume.
 
 ## -returns
@@ -85,7 +84,7 @@ If the folder is not present, then the folder is created. If the volume is an NT
 
 If the folder is already present and the volume is an NTFS volume, the ACE that indicates full control for SYSTEM will be checked and if necessary modified to have the inheritance bits set.
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

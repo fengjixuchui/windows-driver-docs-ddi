@@ -4,7 +4,6 @@ title: RtlUnicodeStringInit function (ntstrsafe.h)
 description: The RtlUnicodeStringInit function initializes a UNICODE_STRING structure.
 old-location: kernel\rtlunicodestringinit.htm
 tech.root: kernel
-ms.assetid: 319d1d6e-a4a2-4c2c-9c30-948c5f03a2be
 ms.date: 04/30/2018
 keywords: ["RtlUnicodeStringInit function"]
 ms.keywords: RtlUnicodeStringInit, RtlUnicodeStringInit function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringinit, ntstrsafe/RtlUnicodeStringInit, safestrings_7540072b-061a-46be-a2ea-72c4da1790dd.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,14 +50,14 @@ The <b>RtlUnicodeStringInit</b> function initializes a <a href="/windows/win32/a
 
 ## -parameters
 
-### -param DestinationString 
+### -param DestinationString [out]
 
-[out]
+
 A pointer to a <b>UNICODE_STRING</b> structure to be initialized. The <i>pszSrc </i>pointer is copied into the <i>DestinationString</i> parameter's <b>UNICODE_STRING</b> structure. The maximum number of characters in the string that <i>pszSrc</i> points to is NTSTRSAFE_UNICODE_STRING_MAX_CCH.
 
-### -param pszSrc 
+### -param pszSrc [in, optional]
 
-[in, optional]
+
 Optional. A pointer to a null-terminated string constant. This string pointer will be copied to the <b>Buffer</b> member of the <b>UNICODE_STRING</b> structure pointed to by the <i>DestinationString</i> parameter. This string pointer can be <b>NULL</b>.
 
 ## -returns

@@ -4,7 +4,6 @@ title: NDK_FN_CREATE_MR (ndkpi.h)
 description: The NdkCreateMr (NDK_FN_CREATE_MR) function creates an NDK memory region (MR) object.
 old-location: netvista\ndk_fn_create_mr.htm
 tech.root: netvista
-ms.assetid: AD0F1FA1-0CE5-40BE-86B8-537C9C8C0B8F
 ms.date: 05/02/2018
 keywords: ["NDK_FN_CREATE_MR callback function"]
 ms.keywords: NDK_FN_CREATE_MR, NDK_FN_CREATE_MR callback, NdkCreateMr, NdkCreateMr callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkCreateMr, netvista.ndk_fn_create_mr
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkCreateMr
+ - NDK_FN_CREATE_MR
 ---
 
 # NDK_FN_CREATE_MR callback function
@@ -50,27 +49,27 @@ The <i>NdkCreateMr</i> (<i>NDK_FN_CREATE_MR</i>) function creates an NDK memory 
 
 ## -parameters
 
-### -param pNdkPd 
+### -param pNdkPd [in]
 
-[in]
+
 A pointer to an NDK protection domain (PD) object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_pd">NDK_PD</a>).
 
-### -param FastRegister 
+### -param FastRegister [in]
 
-[in]
+
 If TRUE, MR is for fast-register only. Otherwise, MR is for normal register only.
 
-### -param CreateCompletion 
+### -param CreateCompletion [in]
 
-[in]
+
 A pointer to an <i>NdkCreateCompletion</i> (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_create_completion">NDK_FN_CREATE_COMPLETION</a>) function that completes the creation of an NDK object.
 
-### -param RequestContext 
+### -param RequestContext [in, optional]
 
-[in, optional]
+
 A context value that the NDK provider passes back to the <i>NdkCreateCompletion</i> function that is specified in the <i>CreateCompletion</i> parameter.
 
-### -param *ppNdkMr
+### -param ppNdkMr
 
 A pointer to the created MR object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_mr">NDK_MR</a>) is returned in this location if request succeeds without returning <b>STATUS_PENDING</b>. If <i>NdkCreateMr</i> returns <b>STATUS_PENDING</b>, this parameter is ignored and the created object is returned  with the callback that is specified in the  <i>CreateCompletion</i> parameter.
 
@@ -152,3 +151,4 @@ The <i>NdkCreateMr</i> function creates an NDK memory region (MR) object that ca
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_pd">NDK_PD</a>
+

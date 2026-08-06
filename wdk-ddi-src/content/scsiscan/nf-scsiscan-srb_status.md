@@ -1,9 +1,8 @@
 ---
 UID: NF:scsiscan.SRB_STATUS
 title: SRB_STATUS macro (scsiscan.h)
-description: 
-ms.assetid: ec99b574-4519-44c4-8cef-639d2c0a00c3
-ms.date: 10/19/2018
+description: "Learn more about: SRB_STATUS macro"
+ms.date: 11/18/2020
 keywords: ["SRB_STATUS macro"]
 ms.keywords: SRB_STATUS
 req.header: scsiscan.h
@@ -24,6 +23,7 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 targetos: Windows
+tech.root: image
 ms.custom: RS5
 f1_keywords:
  - SRB_STATUS
@@ -36,14 +36,11 @@ api_location:
  - scsiscan.h
 api_name:
  - SRB_STATUS
-product:
- - Windows
 dev_langs:
  - c++
 ---
 
 # SRB_STATUS macro
-
 
 ## -description
 
@@ -54,4 +51,3 @@ dev_langs:
 ## -remarks
 
 ## -see-also
-

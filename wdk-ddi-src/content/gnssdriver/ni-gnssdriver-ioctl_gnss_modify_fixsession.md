@@ -4,7 +4,6 @@ title: IOCTL_GNSS_MODIFY_FIXSESSION (gnssdriver.h)
 description: The IOCTL_GNSS_MODIFY_FIXSESSION control code is used by the GNSS adapter to modify the fix session parameters of an active fix session.
 old-location: gnss\ioctl_gnss_modify_fixsession.htm
 tech.root: gnss
-ms.assetid: AFBD14A5-AEDC-4C8B-AF5F-0F4D8DD61B78
 ms.date: 02/15/2018
 keywords: ["IOCTL_GNSS_MODIFY_FIXSESSION IOCTL"]
 ms.keywords: IOCTL_GNSS_MODIFY_FIXSESSION, IOCTL_GNSS_MODIFY_FIXSESSION control, IOCTL_GNSS_MODIFY_FIXSESSION control code [Sensor Devices], gnss.ioctl_gnss_modify_fixsession, gnssdriver/IOCTL_GNSS_MODIFY_FIXSESSION
@@ -49,6 +48,8 @@ api_name:
 The <b>IOCTL_GNSS_MODIFY_FIXSESSION</b> control code is used by the GNSS adapter to modify the fix session parameters of an active fix session. This is only required when the GNSS driver does not support multiple fix session of the same fix type, for example, when the <b>SupportMultipleFixSession</b> capability of the driver is FALSE.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

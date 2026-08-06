@@ -3,7 +3,6 @@ UID: NF:portcls.IMiniportWaveRTStream.SetState
 title: IMiniportWaveRTStream::SetState (portcls.h)
 description: The SetState method changes the transport state of the audio stream.
 tech.root: audio
-ms.assetid: 840b43a1-0c6d-416c-ad0c-5c5739744b4f
 ms.date: 09/29/2020
 keywords: ["IMiniportWaveRTStream::SetState"]
 ms.keywords: IMiniportWaveRTStream::SetState, SetState, IMiniportWaveRTStream.SetState, IMiniportWaveRTStream::SetState, IMiniportWaveRTStream.SetState
@@ -35,12 +34,11 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWaveRTStream.SetState
-product:
- - Windows
+ - IMiniportWaveRTStream::SetState
 ---
 
 # IMiniportWaveRTStream::SetState
+
 
 ## -description
 
@@ -48,11 +46,11 @@ The SetState method changes the transport state of the audio stream.
 
 ## -parameters
 
-### -param State
+### -param State [in]
 
-[in]
 
-Specifies the new state of the stream. This parameter is a [KSSTATE](/windows-hardware/drivers/ddi/ks/ne-ks-ksstate) enumeration value.
+
+Specifies the new state of the stream. This parameter is a [KSSTATE](../ks/ne-ks-ksstate.md) enumeration value.
 
 ## -returns
 
@@ -76,4 +74,5 @@ The [IMiniportWaveRT::NewStream](nf-portcls-iminiportwavert-newstream.md) method
 
 [IMiniportWaveRT::NewStream](nf-portcls-iminiportwavert-newstream.md)
 
-[KSSTATE](/windows-hardware/drivers/ddi/ks/ne-ks-ksstate)
+[KSSTATE](../ks/ne-ks-ksstate.md)
+

@@ -4,7 +4,6 @@ title: MmMapLockedPages function (wdm.h)
 description: The MmMapLockedPages routine is obsolete for Windows 2000 and later versions of Windows, and for Windows Me.
 old-location: kernel\mmmaplockedpages.htm
 tech.root: kernel
-ms.assetid: f27b7622-614b-4c9e-8253-51f4638e5eb0
 ms.date: 04/30/2018
 keywords: ["MmMapLockedPages function"]
 ms.keywords: MmMapLockedPages, MmMapLockedPages routine [Kernel-Mode Driver Architecture], k106_009bdc6a-6bbc-4a7f-927e-ea5c6de8fa95.xml, kernel.mmmaplockedpages, wdm/MmMapLockedPages
@@ -52,14 +51,14 @@ The <b>MmMapLockedPages</b> routine maps the physical pages that are described b
 
 ## -parameters
 
-### -param MemoryDescriptorList 
+### -param MemoryDescriptorList [in]
 
-[in]
+
 Pointer to an MDL that was updated by <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-mmprobeandlockpages">MmProbeAndLockPages</a>.
 
-### -param AccessMode 
+### -param AccessMode [in]
 
-[in]
+
 Specifies the access mode in which to map the MDL, either <b>KernelMode</b> or <b>UserMode</b>. Almost all drivers should use <b>KernelMode</b>.
 
 ## -returns
@@ -80,7 +79,7 @@ Callers of <b>MmMapLockedPages</b> must be running at IRQL <= DISPATCH_LEVEL if 
 
 
 
-<a href="/windows-hardware/drivers/kernel/mm-bad-pointer">MmGetSystemAddressForMdlSafe</a>
+[MmGetSystemAddressForMdlSafe](../wdm/nf-wdm-mmgetsystemaddressformdlsafe.md)
 
 
 

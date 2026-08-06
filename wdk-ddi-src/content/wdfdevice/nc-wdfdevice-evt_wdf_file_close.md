@@ -4,7 +4,6 @@ title: EVT_WDF_FILE_CLOSE (wdfdevice.h)
 description: A driver's EvtFileClose callback function handles operations that must be performed when all of an application's accesses to a device have been closed.
 old-location: wdf\evtfileclose.htm
 tech.root: wdf
-ms.assetid: 8ddcb9cb-d184-4ec8-a321-599394a8512e
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_FILE_CLOSE callback function"]
 ms.keywords: DFDeviceObjectGeneralRef_490bda33-9f36-43ab-9108-8622a3ea79b0.xml, EVT_WDF_FILE_CLOSE, EVT_WDF_FILE_CLOSE callback, EvtFileClose, EvtFileClose callback function, kmdf.evtfileclose, wdf.evtfileclose, wdfdevice/EvtFileClose
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfdevice.h
 api_name:
- - EvtFileClose
+ - EVT_WDF_FILE_CLOSE
 ---
 
 # EVT_WDF_FILE_CLOSE callback function
@@ -48,13 +47,13 @@ api_name:
 
 <p class="CCE_Message">[Applies to KMDF and UMDF]</p>
 
-A driver's <i>EvtFileClose</i> callback function handles operations that must be performed when all of an application's accesses to a device have been closed.
+A driver's *EvtFileClose* callback function handles operations that must be performed when all of an application's accesses to a device have been closed.
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 A handle to a framework file object, which was previously received by the driver's <a href="/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_file_create">EvtDeviceFileCreate</a> callback function.
 
 ## -remarks
@@ -74,3 +73,4 @@ For more information about framework file objects and the <i>EvtFileClose</i> ca
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_fileobject_config">WDF_FILEOBJECT_CONFIG</a>
+

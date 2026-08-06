@@ -4,7 +4,6 @@ title: _DXVA_COPPSetProtectionLevelCmdData (dxva.h)
 description: The DXVA_COPPSetProtectionLevelCmdData structure describes the protection types and levels to set on the physical connector associated with a COPP DirectX VA device.
 old-location: display\dxva_coppsetprotectionlevelcmddata.htm
 tech.root: display
-ms.assetid: d68d6e50-1373-43bc-a22b-dd9db47614c8
 ms.date: 05/10/2018
 keywords: ["DXVA_COPPSetProtectionLevelCmdData structure"]
 ms.keywords: DXVA_COPPSetProtectionLevelCmdData, DXVA_COPPSetProtectionLevelCmdData structure [Display Devices], _DXVA_COPPSetProtectionLevelCmdData, display.dxva_coppsetprotectionlevelcmddata, dxva/DXVA_COPPSetProtectionLevelCmdData, dxvaref_ac7e802b-dd23-49da-ab02-21d80eaabe86.xml
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - dxva.h
 api_name:
+ - _DXVA_COPPSetProtectionLevelCmdData
  - DXVA_COPPSetProtectionLevelCmdData
 ---
 
@@ -119,3 +119,4 @@ Specifies additional 32-bit data for the protection type in <b>ProtType</b>. Not
 
 
 <a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_coppcommand">DXVA_COPPCommand</a>
+

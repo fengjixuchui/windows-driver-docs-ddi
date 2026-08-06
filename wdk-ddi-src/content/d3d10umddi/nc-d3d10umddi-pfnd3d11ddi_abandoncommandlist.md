@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_ABANDONCOMMANDLIST
 title: PFND3D11DDI_ABANDONCOMMANDLIST (d3d10umddi.h)
 description: The AbandonCommandList function abandons the command list.
 old-location: display\abandoncommandlist.htm
-ms.assetid: fc8347da-25ac-47ea-b482-61b7873ca5bc
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_ABANDONCOMMANDLIST callback function"]
 ms.keywords: AbandonCommandList, AbandonCommandList callback function [Display Devices], PFND3D11DDI_ABANDONCOMMANDLIST, PFND3D11DDI_ABANDONCOMMANDLIST callback, UserModeDisplayDriverDx11_Functions_1f9b5b27-499e-41a0-adf3-7b1c2f0021c7.xml, d3d10umddi/AbandonCommandList, display.abandoncommandlist
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - AbandonCommandList
+ - PFND3D11DDI_ABANDONCOMMANDLIST
 ---
 
 # PFND3D11DDI_ABANDONCOMMANDLIST callback function
@@ -50,7 +49,7 @@ The <b>AbandonCommandList</b> function abandons the command list.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
@@ -81,3 +80,4 @@ The driver is only required to implement <b>AbandonCommandList</b> if the driver
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10_2ddi_getcaps">GetCaps(D3D10_2)</a>
+

@@ -4,7 +4,6 @@ title: _D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2 (d3dumddi.h)
 description: Describes the parameters that are required to set up the wait in a call to the pfnWaitForSynchronizationObject2Cb function.
 old-location: display\d3dddicb_waitforsynchronizationobject2.htm
 tech.root: display
-ms.assetid: b5dbd1f3-4475-41d2-879a-34618b28b485
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2 structure"]
 ms.keywords: D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2 structure [Display Devices], _D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2, d3dumddi/D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2, display.d3dddicb_waitforsynchronizationobject2
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dumddi.h
 api_name:
+ - _D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2
  - D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT2
 ---
 
@@ -52,25 +52,25 @@ Describes the parameters that are required to set up the wait in a call to the <
 
 ## -struct-fields
 
-### -field hContext
+### -field hContext [in]
 
-[in] A handle to a Direct3D context that waits for the synchronization objects in the array that the <b>ObjectHandleArray</b> member specifies to occur.
+A handle to a Direct3D context that waits for the synchronization objects in the array that the <b>ObjectHandleArray</b> member specifies to occur.
 
-### -field ObjectCount
+### -field ObjectCount [in]
 
-[in] The number of synchronization objects in the <b>ObjectHandleArray</b> array.
+The number of synchronization objects in the <b>ObjectHandleArray</b> array.
 
 <b>ObjectHandleArray</b> must be set to 1 if the GPU synchronization object is of type <b>D3DDDI_FENCE</b>—namely, the <b>Type</b> member of the <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_synchronizationobjectinfo2">D3DDDI_SYNCHRONIZATIONOBJECTINFO2</a> structure has a value of <b>D3DDDI_FENCE</b>.
 
-### -field ObjectHandleArray
+### -field ObjectHandleArray [in]
 
-[in] An array of handles to the GPU synchronization objects that are to be signaled. The <b>D3DDDI_MAX_OBJECT_WAITED_ON</b> constant, which is defined as 32, indicates the maximum number of synchronization objects that the context can wait for.
+An array of handles to the GPU synchronization objects that are to be signaled. The <b>D3DDDI_MAX_OBJECT_WAITED_ON</b> constant, which is defined as 32, indicates the maximum number of synchronization objects that the context can wait for.
 
 All synchronization objects must be created on a logical adapter that has its context specified by the <b>hContext</b> member.
 
-### -field FenceValue
+### -field FenceValue [in]
 
-[in] A 64-bit value that specifies the current fence value of the GPU synchronization object that is to be waited on.
+A 64-bit value that specifies the current fence value of the GPU synchronization object that is to be waited on.
 
 This value applies only if the GPU synchronization object is of type <b>D3DDDI_FENCE</b>—namely, the <b>Type</b> member of the <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_synchronizationobjectinfo2">D3DDDI_SYNCHRONIZATIONOBJECTINFO2</a> structure has a value of <b>D3DDDI_FENCE</b>.
 
@@ -85,3 +85,4 @@ Synchronization objects of type <b>D3DDDI_CPU_NOTIFICATION</b> cannot be used to
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_waitforsynchronizationobject2cb">pfnWaitForSynchronizationObject2Cb</a>
+

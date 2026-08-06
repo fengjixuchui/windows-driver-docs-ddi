@@ -4,7 +4,6 @@ title: VideoPortAssociateEventsWithDmaHandle function (video.h)
 description: The VideoPortAssociateEventsWithDmaHandle function is obsolete in Windows 2000 and later.VideoPortAssociateEventsWithDmaHandle associates an event, which is shared by the video display driver and the video miniport driver, with a DMA handle.
 old-location: display\videoportassociateeventswithdmahandle.htm
 tech.root: display
-ms.assetid: d8a64a06-41b9-429b-a5ac-6de4996c702b
 ms.date: 05/10/2018
 keywords: ["VideoPortAssociateEventsWithDmaHandle function"]
 ms.keywords: VideoPortAssociateEventsWithDmaHandle, VideoPortAssociateEventsWithDmaHandle function [Display Devices], VideoPort_Functions_0b61cb97-6bee-4882-83c9-1a56b8c2807b.xml, display.videoportassociateeventswithdmahandle, video/VideoPortAssociateEventsWithDmaHandle
@@ -52,24 +51,24 @@ The <b>VideoPortAssociateEventsWithDmaHandle</b> function is <b>obsolete</b> in 
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's device extension.
 
-### -param pVrp 
+### -param pVrp [in, out]
 
-[in, out]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/video/ns-video-_video_request_packet">VIDEO_REQUEST_PACKET</a>.
 
-### -param MappedUserEvent 
+### -param MappedUserEvent [in]
 
-[in]
+
 Is reserved for system use.
 
-### -param DisplayDriverEvent 
+### -param DisplayDriverEvent [in]
 
-[in]
+
 Is reserved for system use.
 
 ## -returns

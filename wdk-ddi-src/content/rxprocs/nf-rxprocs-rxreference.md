@@ -4,7 +4,6 @@ title: RxReference function (rxprocs.h)
 description: RxReference increments the NodeReferenceCount member of a structure by one for several of the reference counted data structures used by RDBSS.
 old-location: ifsk\rxreference.htm
 tech.root: ifsk
-ms.assetid: 436cd161-6984-4101-931a-221a829f40d0
 ms.date: 04/16/2018
 keywords: ["RxReference function"]
 ms.keywords: RxReference, RxReference function [Installable File System Drivers], ifsk.rxreference, rxprocs/RxReference, rxref_3c87a6aa-d0c8-4308-8152-fce322dcb035.xml
@@ -50,9 +49,9 @@ api_name:
 
 ## -parameters
 
-### -param Instance 
+### -param Instance [in, out]
 
-[in, out]
+
 A pointer to the reference-counted data structure to be referenced (incremented).
 
 ## -remarks

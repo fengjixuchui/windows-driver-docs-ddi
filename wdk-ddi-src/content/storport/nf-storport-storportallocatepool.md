@@ -4,7 +4,6 @@ title: StorPortAllocatePool function (storport.h)
 description: The StorPortAllocatePool routine allocates a block of non-contiguous, non-paged pool memory.
 old-location: storage\storportallocatepool.htm
 tech.root: storage
-ms.assetid: e6823b9c-9717-49ab-8e67-c1d522774826
 ms.date: 07/19/2019
 keywords: ["StorPortAllocatePool function"]
 ms.keywords: StorPortAllocatePool, StorPortAllocatePool routine [Storage Devices], storage.storportallocatepool, storport/StorPortAllocatePool, storprt_4ede181d-6ccf-47af-974d-b0daaa6e723a.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,24 +49,24 @@ The **StorPortAllocatePool** routine allocates a block of non-contiguous, non-pa
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param NumberOfBytes 
+### -param NumberOfBytes [in]
 
-[in]
+
 The size, in bytes, of the block of memory being allocated.
 
-### -param Tag 
+### -param Tag [in]
 
-[in]
+
 The pool tag for the allocated memory. Drivers specify the pool tag as a string of four ASCII characters, delimited by single quotation marks. The string is usually specified in reverse order.
 
-### -param BufferPointer 
+### -param BufferPointer [out]
 
-[out]
+
 A pointer to the address of the allocated memory block or **NULL** if not successful.
 
 ## -returns

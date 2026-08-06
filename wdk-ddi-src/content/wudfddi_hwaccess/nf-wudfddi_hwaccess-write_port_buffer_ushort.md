@@ -4,7 +4,6 @@ title: WRITE_PORT_BUFFER_USHORT function (wudfddi_hwaccess.h)
 description: The WRITE_PORT_BUFFER_USHORT function writes a number of USHORT values from a buffer to the specified port address.
 old-location: wdf\write_port_buffer_ushort.htm
 tech.root: wdf
-ms.assetid: 04F51A7D-70D8-4844-973D-70B7A7797221
 ms.date: 02/26/2018
 keywords: ["WRITE_PORT_BUFFER_USHORT function"]
 ms.keywords: WRITE_PORT_BUFFER_USHORT, WRITE_PORT_BUFFER_USHORT function, umdf.write_port_buffer_ushort, wdf.write_port_buffer_ushort, wudfddi_hwaccess/WRITE_PORT_BUFFER_USHORT
@@ -52,24 +51,24 @@ The <b>WRITE_PORT_BUFFER_USHORT</b> function writes a number of USHORT values fr
 
 ## -parameters
 
-### -param pDevice 
+### -param pDevice [in]
 
-[in]
+
 Specifies a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a> interface for the device object of the device to access.
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 A pointer to the port, which must be a mapped memory range in I/O space.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to a buffer from which an array of USHORT values is to be written.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of USHORT values to be written to the buffer.
 
 ## -remarks

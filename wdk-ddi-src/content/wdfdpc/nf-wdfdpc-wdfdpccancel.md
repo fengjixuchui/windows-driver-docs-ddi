@@ -4,7 +4,6 @@ title: WdfDpcCancel function (wdfdpc.h)
 description: The WdfDpcCancel method attempts to cancel the execution of a DPC object's scheduled EvtDpcFunc callback function.
 old-location: wdf\wdfdpccancel.htm
 tech.root: wdf
-ms.assetid: 6eb56c5b-d198-4542-a239-c54b49561196
 ms.date: 02/26/2018
 keywords: ["WdfDpcCancel function"]
 ms.keywords: DFDpcObjectRef_4efcdae1-0c0a-4808-a1d8-640dea3555cb.xml, WdfDpcCancel, WdfDpcCancel method, kmdf.wdfdpccancel, wdf.wdfdpccancel, wdfdpc/WdfDpcCancel
@@ -53,14 +52,14 @@ The <b>WdfDpcCancel</b> method attempts to cancel the execution of a DPC object'
 
 ## -parameters
 
-### -param Dpc 
+### -param Dpc [in]
 
-[in]
+
 A handle to a framework DPC object.
 
-### -param Wait 
+### -param Wait [in]
 
-[in]
+
 A Boolean value that, if <b>TRUE</b>, indicates that the <b>WdfDpcCancel</b> method will not return until the DPC object's <a href="/windows-hardware/drivers/ddi/wdfdpc/nc-wdfdpc-evt_wdf_dpc">EvtDpcFunc</a> callback function is either canceled or finishes executing. If <b>FALSE</b>, the <b>WdfDpcCancel</b> method returns immediately.
 
 ## -returns

@@ -3,7 +3,6 @@ UID: NF:mbbcx.MBB_DEVICE_WAKE_CAPABILITIES_INIT
 title: MBB_DEVICE_WAKE_CAPABILITIES_INIT function (mbbcx.h)
 description: The MBB_DEVICE_WAKE_CAPABILITIES_INIT method initializes a MBB_DEVICE_WAKE_CAPABILITIES structure.
 tech.root: netvista
-ms.assetid: ee266a4a-b7a2-4959-8bea-beb6309d9fed
 ms.date: 11/07/2019
 keywords: ["MBB_DEVICE_WAKE_CAPABILITIES_INIT function"]
 ms.keywords: MBB_DEVICE_WAKE_CAPABILITIES_INIT
@@ -37,8 +36,6 @@ api_location:
  - mbbcx.h
 api_name:
  - MBB_DEVICE_WAKE_CAPABILITIES_INIT
-product:
- - Windows
 ---
 
 # MBB_DEVICE_WAKE_CAPABILITIES_INIT function
@@ -54,9 +51,6 @@ The **MBB_DEVICE_WAKE_CAPABILITIES_INIT** method initializes a [**MBB_DEVICE_WAK
 
 A pointer to a driver-allocated [**MBB_DEVICE_WAKE_CAPABILITIES**](../mbbcx/ns-mbbcx-_mbb_device_wake_capabilities.md) structure.
 
-## -returns
-
-This method does not return a value.
 
 ## -remarks
 

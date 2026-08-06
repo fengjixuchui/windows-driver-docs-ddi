@@ -4,7 +4,6 @@ title: PFN_DESTROY_MIRACAST_CONTEXT (netdispumdddi.h)
 description: Called by the operating system to destroy a user-mode Miracast context.
 old-location: display\destroymiracastcontext.htm
 tech.root: display
-ms.assetid: 1b155e15-1e4e-45bb-98cc-f1c19923ed2c
 ms.date: 05/10/2018
 keywords: ["PFN_DESTROY_MIRACAST_CONTEXT callback function"]
 ms.keywords: DestroyMiracastContext, DestroyMiracastContext callback function [Display Devices], PFN_DESTROY_MIRACAST_CONTEXT, PFN_DESTROY_MIRACAST_CONTEXT callback, display.destroymiracastcontext, netdispumdddi/DestroyMiracastContext
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Netdispumdddi.h
 api_name:
- - DestroyMiracastContext
+ - PFN_DESTROY_MIRACAST_CONTEXT
 ---
 
 # PFN_DESTROY_MIRACAST_CONTEXT callback function
@@ -50,9 +49,9 @@ Called by the operating system to destroy a user-mode Miracast context.
 
 ## -parameters
 
-### -param pMiracastContext 
+### -param pMiracastContext [in]
 
-[in]
+
 A pointer to a context associated with a display adapter.
 
 The operating system obtained the context when it called the Miracast user-mode driver's <a href="/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_create_miracast_context">CreateMiracastContext</a> function.
@@ -83,3 +82,4 @@ The operating system guarantees that only one of the <a href="/windows-hardware/
 
 
 <a href="/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_stop_miracast_session">StopMiracastSession</a>
+

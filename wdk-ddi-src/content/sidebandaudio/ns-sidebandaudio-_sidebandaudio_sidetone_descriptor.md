@@ -1,9 +1,8 @@
 ---
 UID: NS:sidebandaudio._SIDEBANDAUDIO_SIDETONE_DESCRIPTOR
 title: _SIDEBANDAUDIO_SIDETONE_DESCRIPTOR (sidebandaudio.h)
-description: Describes mute and volume components of the sidetone topology.
-ms.assetid: 0ecd0629-ed33-4507-8231-f52bc5d47af4
-ms.date: 09/06/2018
+description: The SIDEBANDAUDIO_SIDETONE_DESCRIPTOR structure describes mute and volume components of the sidetone topology.
+ms.date: 07/11/2023
 keywords: ["SIDEBANDAUDIO_SIDETONE_DESCRIPTOR structure"]
 ms.keywords: _SIDEBANDAUDIO_SIDETONE_DESCRIPTOR, SIDEBANDAUDIO_SIDETONE_DESCRIPTOR, *PSIDEBANDAUDIO_SIDETONE_DESCRIPTOR,
 req.header: sidebandaudio.h
@@ -37,28 +36,34 @@ api_location:
  - sidebandaudio.h
 api_name:
  - _SIDEBANDAUDIO_SIDETONE_DESCRIPTOR
+ - PSIDEBANDAUDIO_SIDETONE_DESCRIPTOR
+ - SIDEBANDAUDIO_SIDETONE_DESCRIPTOR
 ---
 
-# _SIDEBANDAUDIO_SIDETONE_DESCRIPTOR structure
-
+# SIDEBANDAUDIO_SIDETONE_DESCRIPTOR structure
 
 ## -description
 
-Describes mute and volume components of the sidetone topology.
+The **SIDEBANDAUDIO_SIDETONE_DESCRIPTOR** structure describes mute and volume components of the sidetone topology.
 
 ## -struct-fields
 
 ### -field Volume
 
-TBD
+Describes if Volume is supported on the endpoint.
 
 ### -field Mute
 
-TBD
+Indicates if Mute is supported with sidetone.
 
 ## -remarks
+
+## -requirements
+
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Header** | sidebandaudio.h |
 
 ## -see-also
 
 [sidebandaudio.h](index.md)
-

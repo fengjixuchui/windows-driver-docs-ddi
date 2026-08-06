@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_BUILDPAGINGBUFFER
 title: DXGKDDI_BUILDPAGINGBUFFER (d3dkmddi.h)
 description: The DxgkDdiBuildPagingBuffer function builds paging buffers for memory operations.
 old-location: display\dxgkddibuildpagingbuffer.htm
-ms.assetid: d315ff53-4a9f-46a3-ad74-d65a5eb72de1
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_BUILDPAGINGBUFFER callback function"]
 ms.keywords: DXGKDDI_BUILDPAGINGBUFFER, DXGKDDI_BUILDPAGINGBUFFER callback, DmFunctions_0d7a4d5b-3cd4-4c3c-9ffc-7b6e88342f81.xml, DxgkDdiBuildPagingBuffer, DxgkDdiBuildPagingBuffer callback function [Display Devices], d3dkmddi/DxgkDdiBuildPagingBuffer, display.dxgkddibuildpagingbuffer
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3dkmddi.h
 api_name:
- - DxgkDdiBuildPagingBuffer
-product:
- - Windows
+ - DXGKDDI_BUILDPAGINGBUFFER
 ---
 
 # DXGKDDI_BUILDPAGINGBUFFER callback function
@@ -52,13 +49,13 @@ The <i>DxgkDdiBuildPagingBuffer</i> function builds paging buffers for memory op
 
 ## -parameters
 
-### -param hAdapter
+### -param hAdapter [in]
 
-[in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
+A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
 
-### -param pBuildPagingBuffer
+### -param pBuildPagingBuffer [in/out]
 
-[in/out] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_buildpagingbuffer">DXGKARG_BUILDPAGINGBUFFER</a> structure that contains information for building a paging buffer.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_buildpagingbuffer">DXGKARG_BUILDPAGINGBUFFER</a> structure that contains information for building a paging buffer.
 
 ## -returns
 
@@ -265,3 +262,4 @@ do {
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_lockcb">pfnLockCb</a>
+

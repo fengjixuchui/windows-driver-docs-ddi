@@ -4,7 +4,6 @@ title: PGET_DEVICE_INFORMATION (hdaudio.h)
 description: The GetDeviceInformation routine retrieves information about the HD Audio controller device.The function pointer type for a GetDeviceInformation routine is defined as follows.
 old-location: audio\getdeviceinformation.htm
 tech.root: audio
-ms.assetid: bdd08133-0641-4eea-bfa3-75f700356132
 ms.date: 05/08/2018
 keywords: ["PGET_DEVICE_INFORMATION callback function"]
 ms.keywords: GetDeviceInformation, GetDeviceInformation callback function [Audio Devices], PGET_DEVICE_INFORMATION, PGET_DEVICE_INFORMATION callback, aud-prop2_9e39061d-0e06-4871-b92c-d4bd7aa98815.xml, audio.getdeviceinformation, hdaudio/GetDeviceInformation
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - hdaudio.h
 api_name:
- - GetDeviceInformation
+ - PGET_DEVICE_INFORMATION
 ---
 
 # PGET_DEVICE_INFORMATION callback function
@@ -52,14 +51,14 @@ The function pointer type for a <code>GetDeviceInformation</code> routine is def
 
 ## -parameters
 
-### -param _context 
+### -param _context [in]
 
-[in]
+
 Specifies the context value from the <b>Context</b> member of the <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface">HDAUDIO_BUS_INTERFACE</a> or the <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a> structure.
 
-### -param DeviceInformation 
+### -param DeviceInformation [in, out]
 
-[in, out]
+
 Retrieves information about the HD Audio controller device. This parameter points to a caller-allocated <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_device_information">HDAUDIO_DEVICE_INFORMATION</a> structure into which the routine writes the device information.
 
 ## -returns
@@ -101,3 +100,4 @@ The <i>deviceInformation</i> parameter is a pointer to a buffer that contains an
 
 
 <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_device_information">HDAUDIO_DEVICE_INFORMATION</a>
+

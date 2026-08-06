@@ -4,7 +4,6 @@ title: _D3DDDICB_LOCKFLAGS (d3dukmdt.h)
 description: The D3DDDICB_LOCKFLAGS structure identifies how to lock an allocation.
 old-location: display\d3dddicb_lockflags.htm
 tech.root: display
-ms.assetid: 4b3a266f-4d60-4d39-81fb-ea2b4aa12a8d
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_LOCKFLAGS structure"]
 ms.keywords: D3DDDICB_LOCKFLAGS, D3DDDICB_LOCKFLAGS structure [Display Devices], D3D_other_Structs_6238800f-60d9-472d-aa18-10343abbcee7.xml, _D3DDDICB_LOCKFLAGS, d3dukmdt/D3DDDICB_LOCKFLAGS, display.d3dddicb_lockflags
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dukmdt.h
 api_name:
+ - _D3DDDICB_LOCKFLAGS
  - D3DDDICB_LOCKFLAGS
 ---
 
@@ -220,3 +220,4 @@ An allocation that is locked with a swizzled range must be unlocked before it ca
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_lockcb">pfnLockCb</a>
+

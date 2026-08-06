@@ -1,15 +1,14 @@
 ---
 UID: NS:d3dkmddi._DXGKARGCB_INVALIDATEHWCONTEXT
-title: _DXGKARGCB_INVALIDATEHWCONTEXT (d3dkmddi.h)
+title: DXGKARGCB_INVALIDATEHWCONTEXT (d3dkmddi.h)
 description: Invalidates hardware context.
-ms.assetid: 1291e94b-ddaf-43ec-a205-7dda7d63ff01
-ms.date: 10/19/2018
+ms.date: 07/01/2024
 keywords: ["DXGKARGCB_INVALIDATEHWCONTEXT structure"]
 ms.keywords: _DXGKARGCB_INVALIDATEHWCONTEXT, DXGKARGCB_INVALIDATEHWCONTEXT,
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 10, version 1703 (WDDM 2.2)
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -34,28 +33,33 @@ api_location:
  - d3dkmddi.h
 api_name:
  - _DXGKARGCB_INVALIDATEHWCONTEXT
-product:
- - Windows
+ - DXGKARGCB_INVALIDATEHWCONTEXT
 ---
 
-# _DXGKARGCB_INVALIDATEHWCONTEXT structure
-
+# DXGKARGCB_INVALIDATEHWCONTEXT structure
 
 ## -description
 
-Invalidates hardware context.
+The **DXGKARGCB_INVALIDATEHWCONTEXT** structure contains the arguments used in the [**DXGKCB_INVALIDATEHWCONTEXT**](nc-d3dkmddi-dxgkcb_invalidatehwcontext.md) callback function, to invalidate a hardware context.
 
 ## -struct-fields
 
-### -field hAdapter
+### -field hAdapter [in]
 
-[in] Handle to the display adapter.
+Handle to the display adapter.
 
-### -field hHwContext
+### -field hHwContext [in]
 
-[in] For contexts that were invalidated by HW engine reset operation, DXG assigned value for the context that was passed to DxgkDdiCreateContext.
+The *Dxgkrnl*-assigned value for the context that was passed to [**DxgkDdiCreateContext**](nc-d3dkmddi-dxgkddi_createcontext.md).
 
-### -field Flags
+### -field Flags [in]
 
-Flags.
+A [**DXGK_INVALIDATEHWCONTEXTFLAGS**](ns-d3dkmddi-_dxgk_invalidatehwcontextflags.md) structure that contains flag values associated with the context being invalidated.
 
+## -see-also
+
+[**DXGK_INVALIDATEHWCONTEXTFLAGS**](ns-d3dkmddi-_dxgk_invalidatehwcontextflags.md)
+
+[**DXGKCB_INVALIDATEHWCONTEXT**](nc-d3dkmddi-dxgkcb_invalidatehwcontext.md)
+
+[**DxgkDdiCreateContext**](nc-d3dkmddi-dxgkddi_createcontext.md)

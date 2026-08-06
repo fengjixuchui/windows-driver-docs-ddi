@@ -1,9 +1,8 @@
 ---
 UID: NS:d3d12umddi.D3D12DDI_VIDEO_PROCESSOR_SIZE_DATA_0043
 title: D3D12DDI_VIDEO_PROCESSOR_SIZE_DATA_0043 (d3d12umddi.h)
-description: Retrieves the memory allocation size of a video processor created with the given properties.
-ms.assetid: 0c42a649-c528-4813-bfd8-1f5e85f048dc
-ms.date: 10/19/2018
+description: The D3D12DDI_VIDEO_PROCESSOR_SIZE_DATA_0043 structure retrieves the memory allocation size of a video processor created with the given properties.
+ms.date: 05/24/2022
 keywords: ["D3D12DDI_VIDEO_PROCESSOR_SIZE_DATA_0043 structure"]
 ms.keywords: D3D12DDI_VIDEO_PROCESSOR_SIZE_DATA_0043, D3D12DDI_VIDEO_PROCESSOR_SIZE_DATA_0043,
 req.header: d3d12umddi.h
@@ -32,8 +31,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - D3D12DDI_VIDEO_PROCESSOR_SIZE_DATA_0043
-product:
- - Windows
 ---
 
 # D3D12DDI_VIDEO_PROCESSOR_SIZE_DATA_0043 structure
@@ -41,7 +38,7 @@ product:
 
 ## -description
 
-Data structure for the D3D12DDICAPS_TYPE_VIDEO_0032_PROCESSOR_SIZE capability check. Retrieves the memory allocation size of a video processor created with the given properties.
+Data structure for the [**D3D12DDICAPS_TYPE_VIDEO_0032_PROCESSOR_SIZE**](ne-d3d12umddi-d3d12ddicaps_type_video_0020.md) capability check when the video feature version is **D3D12DDI_FEATURE_VERSION_VIDEO_0043_0**. Retrieves the memory allocation size of a video processor created with the given properties.
 
 ## -struct-fields
 

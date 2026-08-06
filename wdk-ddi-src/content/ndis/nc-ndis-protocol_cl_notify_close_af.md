@@ -4,7 +4,6 @@ title: PROTOCOL_CL_NOTIFY_CLOSE_AF (ndis.h)
 description: The ProtocolClNotifyCloseAf function notifies a CoNDIS client that the client should close the associated address family (AF).Note  You must declare the function by using the PROTOCOL_CL_NOTIFY_CLOSE_AF type.
 old-location: netvista\protocolclnotifycloseaf.htm
 tech.root: netvista
-ms.assetid: 0f595daa-9822-4ca6-8f25-e6f82030d4ea
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CL_NOTIFY_CLOSE_AF callback function"]
 ms.keywords: PROTOCOL_CL_NOTIFY_CLOSE_AF, PROTOCOL_CL_NOTIFY_CLOSE_AF callback, ProtocolClNotifyCloseAf, ProtocolClNotifyCloseAf callback function [Network Drivers Starting with Windows Vista], condis_client_ref_0b778346-7d48-4d72-807d-16d8be2da913.xml, ndis/ProtocolClNotifyCloseAf, netvista.protocolclnotifycloseaf
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolClNotifyCloseAf
+ - PROTOCOL_CL_NOTIFY_CLOSE_AF
 ---
 
 # PROTOCOL_CL_NOTIFY_CLOSE_AF callback function
@@ -54,9 +53,7 @@ The
 
 ## -parameters
 
-### -param ClientAfContext
-
-#### - ProtocolAfContext [in]
+### -param ClientAfContext [in]
 
 A client-supplied handle to its context area for the associated AF. The client allocated this
      context area and passed this handle to NDIS in its call to the 
@@ -219,3 +216,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclopenaddressfamilyex">NdisClOpenAddressFamilyEx</a>
+

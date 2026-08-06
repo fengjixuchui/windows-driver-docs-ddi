@@ -4,7 +4,6 @@ title: WDF_USB_DEVICE_CREATE_CONFIG_INIT function (wdfusb.h)
 description: The WDF_USB_DEVICE_CREATE_CONFIG_INIT function initializes a WDF_USB_DEVICE_CREATE_CONFIG structure.
 old-location: wdf\wdf_usb_device_create_config_init.htm
 tech.root: wdf
-ms.assetid: 01053A65-45A4-4232-A9F2-1651DC820026
 ms.date: 02/26/2018
 keywords: ["WDF_USB_DEVICE_CREATE_CONFIG_INIT function"]
 ms.keywords: WDF_USB_DEVICE_CREATE_CONFIG_INIT, WDF_USB_DEVICE_CREATE_CONFIG_INIT function, kmdf.wdf_usb_device_create_config_init, kmdf.wdf_usbtarget_device_config_init, wdf.wdf_usb_device_create_config_init, wdfusb/WDF_USB_DEVICE_CREATE_CONFIG_INIT
@@ -53,14 +52,14 @@ The <b>WDF_USB_DEVICE_CREATE_CONFIG_INIT</b> function
 
 ## -parameters
 
-### -param Config 
+### -param Config [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_device_create_config">WDF_USB_DEVICE_CREATE_CONFIG</a> structure.
 
-### -param USBDClientContractVersion 
+### -param USBDClientContractVersion [in]
 
-[in]
+
 The contract version that the client driver supports. <b>USBDClientContractVersion</b> must be USBD_CLIENT_CONTRACT_VERSION_602.
 
 ## -remarks

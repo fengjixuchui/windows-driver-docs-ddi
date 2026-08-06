@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_DESTROYHEAPANDRESOURCE
 title: PFND3D12DDI_DESTROYHEAPANDRESOURCE (d3d12umddi.h)
 description: Destroy heap and resource.
-ms.assetid: 12c5cdc3-981a-4a34-af3c-b62ff7872877
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_DESTROYHEAPANDRESOURCE callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_DESTROYHEAPANDRESOURCE
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,15 +48,15 @@ Destroy heap and resource.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 A heap handle.
 
-### -param Arg3
+### -param unnamedParam3
 
 A resource handle.
 

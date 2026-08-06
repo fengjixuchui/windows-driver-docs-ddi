@@ -4,7 +4,6 @@ title: IWDFIoRequest::GetFileObject (wudfddi.h)
 description: The GetFileObject method retrieves a pointer to the IWDFFile interface that is associated with an I/O request.
 old-location: wdf\iwdfiorequest_getfileobject.htm
 tech.root: wdf
-ms.assetid: 2d6567f1-9e2a-405f-ae8d-eb531cc29275
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequest::GetFileObject"]
 ms.keywords: GetFileObject, GetFileObject method, GetFileObject method,IWDFIoRequest interface, IWDFIoRequest interface,GetFileObject method, IWDFIoRequest.GetFileObject, IWDFIoRequest::GetFileObject, UMDFRequestObjectRef_50a8506d-039a-448a-8459-30e89ac1021c.xml, umdf.iwdfiorequest_getfileobject, wdf.iwdfiorequest_getfileobject, wudfddi/IWDFIoRequest::GetFileObject
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequest.GetFileObject
+ - IWDFIoRequest::GetFileObject
 ---
 
 # IWDFIoRequest::GetFileObject
@@ -52,9 +51,9 @@ The <b>GetFileObject</b> method retrieves a pointer to the <a href="/windows-har
 
 ## -parameters
 
-### -param ppFileObject 
+### -param ppFileObject [out]
 
-[out]
+
 A pointer to a buffer that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile">IWDFFile</a> interface for the file object. Note that returning <b>NULL</b> is valid.
 
 ## -remarks
@@ -84,7 +83,6 @@ The following code example is taken from the WpdMultiTransportDriver sample in t
   
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile">IWDFFile</a>
@@ -92,3 +90,4 @@ The following code example is taken from the WpdMultiTransportDriver sample in t
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest">IWDFIoRequest</a>
+

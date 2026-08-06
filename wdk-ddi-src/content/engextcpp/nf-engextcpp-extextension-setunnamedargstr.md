@@ -4,7 +4,6 @@ title: ExtExtension::SetUnnamedArgStr (engextcpp.h)
 description: The SetUnnamedArgStr method sets an unnamed string argument for the current extension command.
 old-location: debugger\setunnamedargstr.htm
 tech.root: debugger
-ms.assetid: 96e309ca-1267-4a5d-97c6-1b15de9190d5
 ms.date: 05/03/2018
 keywords: ["ExtExtension::SetUnnamedArgStr"]
 ms.keywords: EngExtCpp_Ref_0d8a550a-c727-47e5-a5fe-10971e373a9d.xml, ExtExtension class [Windows Debugging],SetUnnamedArgStr method, ExtExtension.SetUnnamedArgStr, ExtExtension::SetUnnamedArgStr, SetUnnamedArgStr, SetUnnamedArgStr method [Windows Debugging], SetUnnamedArgStr method [Windows Debugging],ExtExtension class, debugger.setunnamedargstr
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Engextcpp.hpp
 api_name:
- - ExtExtension.SetUnnamedArgStr
+ - ExtExtension::SetUnnamedArgStr
 ---
 
 # ExtExtension::SetUnnamedArgStr
@@ -50,19 +49,19 @@ The <b>SetUnnamedArgStr</b> method sets an unnamed string argument for the curre
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 Specifies the index of the argument.  The command-line description used in <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-ext_command">EXT_COMMAND</a> must specify that the type of this argument is string.  <i>Index</i> should be between zero and the number of unnamed arguments - as specified in the command-line description used in EXT_COMMAND - minus one.
 
-### -param Arg 
+### -param Arg [in]
 
-[in]
+
 A string that specifies the value of the unnamed argument.  A pointer to the first non-space character is saved as the argument.
 
-### -param OnlyIfUnset 
+### -param OnlyIfUnset [in]
 
-[in]
+
 Specifies what happens if the argument is already set.  If <i>OnlyIfUnset</i> is <code>true</code> and the argument has already been set, the argument will not be changed.  If <i>OnlyIfUnset</i> is <code>false</code> and the argument has already been set, the argument will be changed.
 
 ## -returns
@@ -82,3 +81,4 @@ This method should only be called during the execution of an extension command p
 
 
 <a href="/previous-versions/ff543981(v=vs.85)">ExtExtension</a>
+

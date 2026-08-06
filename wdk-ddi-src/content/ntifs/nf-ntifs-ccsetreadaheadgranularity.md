@@ -4,7 +4,6 @@ title: CcSetReadAheadGranularity function (ntifs.h)
 description: The CcSetReadAheadGranularity routine sets the read-ahead granularity for a cached file.
 old-location: ifsk\ccsetreadaheadgranularity.htm
 tech.root: ifsk
-ms.assetid: 3ab0c8b8-1f41-48b7-9c42-ea843ebcd82e
 ms.date: 04/16/2018
 keywords: ["CcSetReadAheadGranularity function"]
 ms.keywords: CcSetReadAheadGranularity, CcSetReadAheadGranularity routine [Installable File System Drivers], ccref_9b995224-0e59-43c6-b827-c15d9ae6e86c.xml, ifsk.ccsetreadaheadgranularity, ntifs/CcSetReadAheadGranularity
@@ -50,14 +49,14 @@ The <b>CcSetReadAheadGranularity</b> routine sets the read-ahead granularity for
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to a file object for the cached file whose read-ahead granularity is to be set.
 
-### -param Granularity 
+### -param Granularity [in]
 
-[in]
+
 Specifies the desired read-ahead granularity, which must be an even power of two and must be greater than or equal to PAGE_SIZE.
 
 ## -remarks

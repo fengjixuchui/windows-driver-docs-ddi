@@ -4,7 +4,6 @@ title: NdisRegisterProtocolDriver function (ndis.h)
 description: A protocol driver calls the NdisRegisterProtocolDriver function to register its ProtocolXxx functions with NDIS.
 old-location: netvista\ndisregisterprotocoldriver.htm
 tech.root: netvista
-ms.assetid: b48571eb-13a2-4541-80ac-c8d31f378d37
 ms.date: 05/02/2018
 keywords: ["NdisRegisterProtocolDriver function"]
 ms.keywords: NdisRegisterProtocolDriver, NdisRegisterProtocolDriver function [Network Drivers Starting with Windows Vista], ndis/NdisRegisterProtocolDriver, netvista.ndisregisterprotocoldriver, protocol_ndis_functions_ref_023b338a-65cf-4ccb-bce8-d1506f37f632.xml
@@ -53,24 +52,24 @@ A protocol driver calls the
 
 ## -parameters
 
-### -param ProtocolDriverContext 
+### -param ProtocolDriverContext [in, optional]
 
-[in, optional]
+
 A handle to a driver-allocated context area where the driver maintains state and configuration
      information.
 
-### -param ProtocolCharacteristics 
+### -param ProtocolCharacteristics [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_protocol_driver_characteristics">
      NDIS_PROTOCOL_DRIVER_CHARACTERISTICS</a> structure that the protocol driver created and initialized
      with its 
      <i>ProtocolXxx</i> function entry points.
 
-### -param NdisProtocolHandle 
+### -param NdisProtocolHandle [out]
 
-[out]
+
 A pointer to a caller-supplied handle variable. NDIS writes a handle to this variable that
      uniquely identifies the driver that is registering. The driver must save this handle for use in
      subsequent 

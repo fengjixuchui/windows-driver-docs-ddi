@@ -3,11 +3,8 @@ UID: NS:dispmprt._DXGKARG_GETVIRTUALGPUINFO
 title: _DXGKARG_GETVIRTUALGPUINFO
 description: Arguments used to get virtual GPU info.
 tech.root: display
-ms.assetid: e6b55c00-3abf-42fa-8dfc-8bd5e5731362
 ms.date: 04/04/2019
 keywords: ["DXGKARG_GETVIRTUALGPUINFO structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _DXGKARG_GETVIRTUALGPUINFO, DXGKARG_GETVIRTUALGPUINFO, *PDXGKARG_GETVIRTUALGPUINFO,
 req.header: dispmprt.h
 req.include-header: 
@@ -39,8 +36,8 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGKARG_GETVIRTUALGPUINFO
-product:
- - Windows
+ - PDXGKARG_GETVIRTUALGPUINFO
+ - DXGKARG_GETVIRTUALGPUINFO
 dev_langs:
  - c++
 ---

@@ -1,10 +1,9 @@
 ---
 UID: NE:rilapitypes.RILREMOTEPARTYINFOVALUEPARAM
 title: RILREMOTEPARTYINFOVALUEPARAM (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this enumeration in your code. Microsoft reserves the RILREMOTEPARTYINFOVALUEPARAM enumeration for internal use only."
 old-location: netvista\rilremotepartyinfovalueparam.htm
 tech.root: netvista
-ms.assetid: 2e0d5214-d2ec-4cb4-8437-a9f5605ea85a
 ms.date: 05/02/2018
 keywords: ["RILREMOTEPARTYINFOVALUEPARAM enumeration"]
 ms.keywords: RILREMOTEPARTYINFOPARAM, RILREMOTEPARTYINFOVALUEPARAM, RILREMOTEPARTYINFOVALUEPARAM enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_RPI_ADDRESS, RIL_PARAM_RPI_ALL, RIL_PARAM_RPI_DESCRIPTION, RIL_PARAM_RPI_ID, RIL_PARAM_RPI_NAME_PRES_IND, RIL_PARAM_RPI_NUM_PRES_IND, RIL_PARAM_RPI_SUBADDRESS, netvista.rilremotepartyinfovalueparam, ntddrilapitypes/RILREMOTEPARTYINFOVALUEPARAM, ntddrilapitypes/RIL_PARAM_RPI_ADDRESS, ntddrilapitypes/RIL_PARAM_RPI_ALL, ntddrilapitypes/RIL_PARAM_RPI_DESCRIPTION, ntddrilapitypes/RIL_PARAM_RPI_ID, ntddrilapitypes/RIL_PARAM_RPI_NAME_PRES_IND, ntddrilapitypes/RIL_PARAM_RPI_NUM_PRES_IND, ntddrilapitypes/RIL_PARAM_RPI_SUBADDRESS

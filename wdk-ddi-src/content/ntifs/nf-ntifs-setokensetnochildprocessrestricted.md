@@ -4,14 +4,13 @@ title: SeTokenSetNoChildProcessRestricted function (ntifs.h)
 description: The SeTokenSetNoChildProcessRestricted routine sets the TOKEN_AUDIT_NO_CHILD_PROCESS or TOKEN_AUDIT_NO_CHILD_PROCESS flags in the token.
 old-location: ifsk\setokensetnochildprocessrestricted.htm
 tech.root: ifsk
-ms.assetid: FCFCBF4C-CBAA-4284-A6F4-67630608CF19
 ms.date: 04/16/2018
 keywords: ["SeTokenSetNoChildProcessRestricted function"]
 ms.keywords: SeTokenSetNoChildProcessRestricted, SeTokenSetNoChildProcessRestricted function [Installable File System Drivers], ifsk.setokensetnochildprocessrestricted, ntifs/SeTokenSetNoChildProcessRestricted
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows 10, version 1709.
+req.target-min-winverclnt: Windows 10, version 1709.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -51,19 +50,19 @@ The <b>SeTokenSetNoChildProcessRestricted</b> routine sets the <b>TOKEN_NO_CHILD
 
 ## -parameters
 
-### -param Token 
+### -param Token [in]
 
-[in]
+
 Specifies a pointer to the access token.
 
-### -param UnlessSecure 
+### -param UnlessSecure [in]
 
-[in]
+
 A pointer to a boolean that indicates that secure process creation should always be enabled.
 
-### -param AuditOnly 
+### -param AuditOnly [in]
 
-[in]
+
 A pointer to a boolean that indicates if the mitigation should be enabled in
                 audit-only mode.
 

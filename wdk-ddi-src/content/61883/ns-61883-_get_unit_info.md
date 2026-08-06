@@ -4,7 +4,6 @@ title: _GET_UNIT_INFO (61883.h)
 description: This structure is used to get unit information.
 old-location: ieee\get_unit_info.htm
 tech.root: IEEE
-ms.assetid: 2FE13A53-5B88-40B8-B129-8DD141F1B160
 ms.date: 02/15/2018
 keywords: ["GET_UNIT_INFO structure"]
 ms.keywords: "*PGET_UNIT_INFO, 61883/GET_UNIT_INFO, 61883/PGET_UNIT_INFO, GET_UNIT_INFO, GET_UNIT_INFO structure [Buses], IEEE.get_unit_info, PGET_UNIT_INFO, PGET_UNIT_INFO structure pointer [Buses], _GET_UNIT_INFO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _GET_UNIT_INFO
+ - PGET_UNIT_INFO
  - GET_UNIT_INFO
 ---
 
@@ -148,3 +149,4 @@ The protocol driver writes current diag level to the caller-allocated <a href="/
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_av_61883_request">AV_61883_REQUEST</a>
+

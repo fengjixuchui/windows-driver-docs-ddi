@@ -4,7 +4,6 @@ title: KsStreamPointerAdvance function (ks.h)
 description: The KsStreamPointerAdvance function advances a stream pointer to the next data frame.
 old-location: stream\ksstreampointeradvance.htm
 tech.root: stream
-ms.assetid: 98d0b8ce-5485-4584-b164-a1bc698b08ba
 ms.date: 04/23/2018
 keywords: ["KsStreamPointerAdvance function"]
 ms.keywords: KsStreamPointerAdvance, KsStreamPointerAdvance function [Streaming Media Devices], avfunc_1c66466d-2144-4d67-ac1f-31156bc3b07d.xml, ks/KsStreamPointerAdvance, stream.ksstreampointeradvance
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ks.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,9 +50,9 @@ The<b> KsStreamPointerAdvance </b>function advances a stream pointer to the next
 
 ## -parameters
 
-### -param StreamPointer 
+### -param StreamPointer [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksstream_pointer">KSSTREAM_POINTER</a> structure representing the stream pointer to advance to reference the next available data frame.
 
 ## -returns

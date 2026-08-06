@@ -4,8 +4,7 @@ title: imp_WppRecorderIsDefaultLogAvailable function (wpprecorder.h)
 description: The WppRecorderIsDefaultLogAvailable method determines whether the default log is available.
 old-location: devtest\wpprecorderisdefaultlogavailable.htm
 tech.root: devtest
-ms.assetid: 5685540F-B4C4-4ED9-B783-85A898EC5A62
-ms.date: 02/23/2018
+ms.date: 07/28/2025
 keywords: ["imp_WppRecorderIsDefaultLogAvailable function"]
 ms.keywords: WppRecorderIsDefaultLogAvailable, devtest.wpprecorderisdefaultlogavailable, imp_WppRecorderIsDefaultLogAvailable, imp_WppRecorderIsDefaultLogAvailable function [Driver Development Tools], wpprecorder/imp_WppRecorderIsDefaultLogAvailable
 req.header: wpprecorder.h
@@ -41,20 +40,18 @@ api_name:
  - imp_WppRecorderIsDefaultLogAvailable
 ---
 
-# imp_WppRecorderIsDefaultLogAvailable function
-
+# WppRecorderIsDefaultLogAvailable function
 
 ## -description
 
-The <b>WppRecorderIsDefaultLogAvailable</b> method determines whether the default log is available.
+The **WppRecorderIsDefaultLogAvailable** method determines whether the default log is available.
 
 ## -parameters
 
 ### -param WppCb
 
-TBD
+Pointer to a trace control block.
 
 ## -returns
 
 TRUE if the default log is available; otherwise, FALSE.
-

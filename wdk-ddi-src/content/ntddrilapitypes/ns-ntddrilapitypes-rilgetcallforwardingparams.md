@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILGETCALLFORWARDINGPARAMS
 title: RILGETCALLFORWARDINGPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILGETCALLFORWARDINGPARAMS structure in your code."
 old-location: netvista\rilgetcallforwardingparams.htm
 tech.root: netvista
-ms.assetid: 94e24172-a149-4e74-9600-2fcb7396ef34
 ms.date: 05/02/2018
 keywords: ["RILGETCALLFORWARDINGPARAMS structure"]
 ms.keywords: "*LPRILGETCALLFORWARDINGPARAMS, RILGETCALLFORWARDINGPARAMS, RILGETCALLFORWARDINGPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilgetcallforwardingparams, ntddrilapitypes/RILGETCALLFORWARDINGPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILGETCALLFORWARDINGPARAMS
+ - LPRILGETCALLFORWARDINGPARAMS
 ---
 
 # RILGETCALLFORWARDINGPARAMS structure (ntddrilapitypes.h)

@@ -4,7 +4,6 @@ title: PFN_REGISTER_DATARATE_NOTIFICATIONS (netdispumdddi.h)
 description: Called by the user-mode driver to register with the operating system to receive network quality of service (QoS) notifications and the current network bandwidth of the Miracast connection.The data type of this function is PFN_REGISTER_DATARATE_NOTIFICATIONS.
 old-location: display\registerfordataratenotifications.htm
 tech.root: display
-ms.assetid: 81500bb9-27f1-4688-b244-37dfd766f3c8
 ms.date: 05/10/2018
 keywords: ["PFN_REGISTER_DATARATE_NOTIFICATIONS callback function"]
 ms.keywords: PFN_REGISTER_DATARATE_NOTIFICATIONS, PFN_REGISTER_DATARATE_NOTIFICATIONS callback, RegisterForDataRateNotifications, RegisterForDataRateNotifications callback function [Display Devices], display.registerfordataratenotifications, netdispumdddi/RegisterForDataRateNotifications
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Netdispumdddi.h
 api_name:
- - RegisterForDataRateNotifications
+ - PFN_REGISTER_DATARATE_NOTIFICATIONS
 ---
 
 # PFN_REGISTER_DATARATE_NOTIFICATIONS callback function
@@ -50,19 +49,19 @@ Called by the user-mode driver to register with the operating system to receive 
 
 ## -parameters
 
-### -param hMiracastDeviceHandle 
+### -param hMiracastDeviceHandle [in]
 
-[in]
+
 A handle that represents a Miracast device. The Miracast user-mode driver previously obtained this handle as the <i>hMiracastDeviceHandle</i> parameter in a call to the <a href="/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_create_miracast_context">CreateMiracastContext</a> function.
 
-### -param pNotificationContext 
+### -param pNotificationContext [in, optional]
 
-[in, optional]
+
 The context that will be passed to the <a href="/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_datarate_notification">pfnDataRateNotify</a> function when the Miracast data rate changes.
 
-### -param pfnDataRateNotify 
+### -param pfnDataRateNotify [in, optional]
 
-[in, optional]
+
 A pointer to the driver routine that will be called when the bit rate of the Miracast network link has changed. See Remarks for more info.
 
 The driver can supply a <b>NULL</b> value to unregister for notifications.
@@ -104,3 +103,4 @@ The function fails if the driver attempts to register while it is already regist
 
 
 <a href="/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_datarate_notification">pfnDataRateNotify</a>
+

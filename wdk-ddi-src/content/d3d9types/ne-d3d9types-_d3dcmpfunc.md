@@ -1,9 +1,9 @@
 ---
 UID: NE:d3d9types._D3DCMPFUNC
 title: _D3DCMPFUNC (d3d9types.h)
-description: 
-ms.assetid: f7ce8d22-bd17-407b-a8d8-7a849183ba7e
+description: "Learn more about: _D3DCMPFUNC enumeration"
 ms.date: 10/19/2018
+tech.root: display
 keywords: ["D3DCMPFUNC enumeration"]
 ms.keywords: _D3DCMPFUNC, D3DCMPFUNC,
 req.header: d3d9types.h
@@ -31,6 +31,7 @@ api_location:
  - d3d9types.h
 api_name:
  - _D3DCMPFUNC
+ - D3DCMPFUNC
 dev_langs:
  - c++
 ---

@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_OFFERRESOURCES
 title: PFND3D12DDI_OFFERRESOURCES (d3d12umddi.h)
 description: Offer resources.
-ms.assetid: 794a29be-a6e8-4548-9de8-8230cb781cf8
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_OFFERRESOURCES callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_OFFERRESOURCES
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ Implemented by the client driver to offer resources.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 Pointer to a D3D12DDIARG_OFFERRESOURCES structure.
 

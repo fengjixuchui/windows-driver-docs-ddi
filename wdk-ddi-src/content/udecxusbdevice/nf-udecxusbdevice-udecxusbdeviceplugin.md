@@ -4,7 +4,6 @@ title: UdecxUsbDevicePlugIn function (udecxusbdevice.h)
 description: Notifies the USB device emulation class extension (UdeCx) that the USB device has been plugged in the specified port.
 old-location: buses\udecxusbdeviceplugin.htm
 tech.root: usbref
-ms.assetid: 6F1A1545-5B64-4481-B795-0B6433304C06
 ms.date: 05/07/2018
 keywords: ["UdecxUsbDevicePlugIn function"]
 ms.keywords: UdecxUsbDevicePlugIn, UdecxUsbDevicePlugIn function [Buses], buses.udecxusbdeviceplugin, udecxusbdevice/UdecxUsbDevicePlugIn
@@ -51,14 +50,14 @@ Notifies the USB device emulation class extension (UdeCx) that the USB device ha
 
 ## -parameters
 
-### -param UdecxUsbDevice 
+### -param UdecxUsbDevice [in]
 
-[in]
+
 A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.
 
-### -param Options 
+### -param Options [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/udecxusbdevice/ns-udecxusbdevice-_udecx_usb_device_plug_in_options">UDECX_USB_DEVICE_PLUG_IN_OPTIONS</a>-type value that indicates the port to which the device is plugged. At most one of Usb20PortNumber, Usb30PortNumber can be non-zero. NULL disables plug-in options (use defaults).
 
 ## -returns

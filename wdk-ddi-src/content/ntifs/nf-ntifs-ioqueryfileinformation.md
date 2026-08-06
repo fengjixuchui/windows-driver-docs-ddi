@@ -1,11 +1,10 @@
 ---
 UID: NF:ntifs.IoQueryFileInformation
 title: IoQueryFileInformation function (ntifs.h)
-description: Reserved for system use.
+description: "Microsoft reserves the IoQueryFileInformation function for internal use only. Don't use this function in your code."
 old-location: ifsk\ioqueryfileinformation.htm
 tech.root: ifsk
-ms.assetid: cfaa6068-979c-49c3-b671-c51ede023776
-ms.date: 04/16/2018
+ms.date: 05/24/2022
 keywords: ["IoQueryFileInformation function"]
 ms.keywords: IoQueryFileInformation, IoQueryFileInformation function [Installable File System Drivers], ifsk.ioqueryfileinformation, ioref_7dc69c37-bd12-4857-ae49-69d0d29d8e72.xml, ntifs/IoQueryFileInformation
 req.header: ntifs.h
@@ -43,16 +42,15 @@ api_name:
 
 # IoQueryFileInformation function
 
-
 ## -description
 
-The <b>IoQueryFileInformation</b> routine is reserved for system use. See <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryinformationfile">ZwQueryInformationFile</a>.
+The **IoQueryFileInformation** routine is reserved for system use. See [**ZwQueryInformationFile**](../wdm/nf-wdm-zwqueryinformationfile.md).
 
 ## -parameters
 
 ### -param FileObject
 
-<p>Reserved.</p>
+Reserved.
 
 ### -param FileInformationClass
 
@@ -67,5 +65,9 @@ Reserved.
 Reserved.
 
 ### -param ReturnedLength
+
+Reserved.
+
+## -returns
 
 Reserved.

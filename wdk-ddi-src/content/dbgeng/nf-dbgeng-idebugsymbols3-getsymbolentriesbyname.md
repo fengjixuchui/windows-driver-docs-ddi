@@ -4,7 +4,6 @@ title: IDebugSymbols3::GetSymbolEntriesByName (dbgeng.h)
 description: The GetSymbolEntriesByName method returns the symbols whose names match a given pattern.
 old-location: debugger\getsymbolentriesbyname.htm
 tech.root: debugger
-ms.assetid: 90e6c1aa-30d5-40e7-bc35-92b0359485e0
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::GetSymbolEntriesByName"]
 ms.keywords: GetSymbolEntriesByName, GetSymbolEntriesByName method [Windows Debugging], GetSymbolEntriesByName method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],GetSymbolEntriesByName method, IDebugSymbols3.GetSymbolEntriesByName, IDebugSymbols3::GetSymbolEntriesByName, IDebugSymbols_4c157d74-d5e8-43d5-87f9-5ad089adb4a0.xml, dbgeng/IDebugSymbols3::GetSymbolEntriesByName, debugger.getsymbolentriesbyname
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols3.GetSymbolEntriesByName
+ - IDebugSymbols3::GetSymbolEntriesByName
 ---
 
 # IDebugSymbols3::GetSymbolEntriesByName
@@ -50,29 +49,29 @@ The <b>GetSymbolEntriesByName</b>  method returns the <a href="/windows-hardware
 
 ## -parameters
 
-### -param Symbol 
+### -param Symbol [in]
 
-[in]
+
 Specifies the pattern used to determine which symbols to return.  This method returns the symbols whose name matches the <a href="/windows-hardware/drivers/debugger/string-wildcard-syntax">string wildcard syntax</a> pattern <i>Symbol</i>.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Set to zero.
 
-### -param Ids 
+### -param Ids [out, optional]
 
-[out, optional]
+
 Receives the symbols.  This is an array of <i>IdsCount</i> entries of type <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_module_and_id">DEBUG_MODULE_AND_ID</a>.  If <i>Ids</i> is <b>NULL</b>, this information is not returned.
 
-### -param IdsCount 
+### -param IdsCount [in]
 
-[in]
+
 Specifies the number of entries that the array <i>Ids</i> can hold.
 
-### -param Entries 
+### -param Entries [out, optional]
 
-[out, optional]
+
 Receives the number of symbols whose names match the pattern <i>Symbol</i>.  If <i>entries</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -108,3 +107,4 @@ For more information about symbols, see <a href="/windows-hardware/drivers/debug
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

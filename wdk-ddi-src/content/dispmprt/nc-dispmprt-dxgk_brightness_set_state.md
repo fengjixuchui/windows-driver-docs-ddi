@@ -4,7 +4,6 @@ title: DXGK_BRIGHTNESS_SET_STATE (dispmprt.h)
 description: Enables smooth brightness control on an integrated display panel.
 old-location: display\dxgkddisetbrightnessstate.htm
 tech.root: display
-ms.assetid: 804046ff-0cc7-4ff0-be07-b574cb40fd2b
 ms.date: 05/10/2018
 keywords: ["DXGK_BRIGHTNESS_SET_STATE callback function"]
 ms.keywords: DXGK_BRIGHTNESS_SET_STATE, DXGK_BRIGHTNESS_SET_STATE callback, DxgkDdiSetBrightnessState, DxgkDdiSetBrightnessState callback function [Display Devices], display.dxgkddisetbrightnessstate, dispmprt/DxgkDdiSetBrightnessState
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dispmprt.h
 api_name:
- - DxgkDdiSetBrightnessState
+ - DXGK_BRIGHTNESS_SET_STATE
 ---
 
 # DXGK_BRIGHTNESS_SET_STATE callback function
@@ -50,14 +49,14 @@ Enables smooth brightness control on an integrated display panel.
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.
 
-### -param BrightnessState 
+### -param BrightnessState [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_dxgk_brightness_state">DXGK_BRIGHTNESS_STATE</a> structure that indicates that the display miniport driver should enable the smooth brightness control for the integrated display panel.
 
 ## -returns
@@ -79,3 +78,4 @@ This function should be made pageable.
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgk_brightness_set">DxgkDdiSetBrightness</a>
+

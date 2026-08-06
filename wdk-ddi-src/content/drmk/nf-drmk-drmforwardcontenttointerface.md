@@ -4,7 +4,6 @@ title: DrmForwardContentToInterface function (drmk.h)
 description: The DrmForwardContentToInterface function accepts a pointer to the COM interface of an object to which the caller intends to forward protected content.
 old-location: audio\drmforwardcontenttointerface.htm
 tech.root: audio
-ms.assetid: 13326eae-3160-42e5-9254-089c8cdc97a3
 ms.date: 05/08/2018
 keywords: ["DrmForwardContentToInterface function"]
 ms.keywords: DrmForwardContentToInterface, DrmForwardContentToInterface function [Audio Devices], aud-prop2_c065f793-db14-4fc9-8804-f6d86754e106.xml, audio.drmforwardcontenttointerface, drmk/DrmForwardContentToInterface
@@ -51,19 +50,19 @@ The <code>DrmForwardContentToInterface</code> function accepts a pointer to the 
 
 ## -parameters
 
-### -param ContentId 
+### -param ContentId [in]
 
-[in]
+
 Specifies the DRM content ID. This parameter identifies a protected KS audio stream.
 
-### -param pUnknown 
+### -param pUnknown [in]
 
-[in]
+
 Pointer to a COM interface that directly receives KS audio stream data for a KS audio filter.
 
-### -param NumMethods 
+### -param NumMethods [in]
 
-[in]
+
 Specifies the total number of methods in the COM interface that <i>pUnknown</i> points to, including all the methods in its base interfaces.
 
 ## -returns

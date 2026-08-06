@@ -1,10 +1,9 @@
 ---
-UID: NS:portcls.__unnamed_struct_4
+UID: NS:portcls.PCPIN_DESCRIPTOR
 title: PCPIN_DESCRIPTOR (portcls.h)
 description: The PCPIN_DESCRIPTOR structure describes a pin factory.
 old-location: audio\pcpin_descriptor.htm
 tech.root: audio
-ms.assetid: 1eeee706-b7f4-4b4d-93c8-969eac7c56d9
 ms.date: 05/08/2018
 keywords: ["PCPIN_DESCRIPTOR structure"]
 ms.keywords: "*PPCPIN_DESCRIPTOR, PCPIN_DESCRIPTOR, PCPIN_DESCRIPTOR structure [Audio Devices], PPCPIN_DESCRIPTOR, PPCPIN_DESCRIPTOR structure pointer [Audio Devices], audio.pcpin_descriptor, audpc-struct_475141ba-bf2e-4425-92ac-02649248e19f.xml, portcls/PCPIN_DESCRIPTOR, portcls/PPCPIN_DESCRIPTOR"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
+ - PPCPIN_DESCRIPTOR
  - PCPIN_DESCRIPTOR
 ---
 
@@ -143,3 +143,4 @@ For more information, see <a href="/windows-hardware/drivers/audio/pin-factories
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/ns-portcls-pcautomation_table">PCAUTOMATION_TABLE</a>
+

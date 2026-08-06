@@ -4,7 +4,6 @@ title: IDebugControl4::EvaluateWide (dbgeng.h)
 description: The EvaluateWide method evaluates an expression, returning the result.
 old-location: debugger\evaluatewide.htm
 tech.root: debugger
-ms.assetid: 1a40e8a7-ba7b-4aaf-975f-4095f9ef7ba7
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::EvaluateWide"]
 ms.keywords: EvaluateWide, EvaluateWide method [Windows Debugging], EvaluateWide method [Windows Debugging],IDebugControl4 interface, IDebugControl4 interface [Windows Debugging],EvaluateWide method, IDebugControl4.EvaluateWide, IDebugControl4::EvaluateWide, dbgeng/IDebugControl4::EvaluateWide, debugger.evaluatewide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.EvaluateWide
+ - IDebugControl4::EvaluateWide
 ---
 
 # IDebugControl4::EvaluateWide
@@ -50,24 +49,24 @@ The <b>EvaluateWide</b>  method evaluates an expression, returning the result.
 
 ## -parameters
 
-### -param Expression 
+### -param Expression [in]
 
-[in]
+
 Specifies the expression to be evaluated.
 
-### -param DesiredType 
+### -param DesiredType [in]
 
-[in]
+
 Specifies the desired return type.  Possible values are described in <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_value">DEBUG_VALUE</a>; with the addition of DEBUG_VALUE_INVALID, which indicates that the return type should be the expression's natural type.
 
-### -param Value 
+### -param Value [out]
 
-[out]
+
 Receives the value of the expression.
 
-### -param RemainderIndex 
+### -param RemainderIndex [out, optional]
 
-[out, optional]
+
 Receives the index of the first character of the expression not used in the evaluation.  If <i>RemainderIndex</i> is <b>NULL</b>, this information isn't returned.
 
 ## -returns
@@ -126,3 +125,4 @@ If an error occurs while evaluating the expression, returning E_FAIL, the <i>Rem
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setexpressionsyntaxbyname">SetExpressionSyntaxByName</a>
+

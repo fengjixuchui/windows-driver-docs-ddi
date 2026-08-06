@@ -4,7 +4,6 @@ title: wiauDbgWarning function (wiautil.h)
 description: The wiauDbgWarning function logs a warning message.
 old-location: image\wiaudbgwarning.htm
 tech.root: image
-ms.assetid: f10f1c28-0bfd-44c5-a0aa-9f9227f775d2
 ms.date: 05/03/2018
 keywords: ["wiauDbgWarning function"]
 ms.keywords: image.wiaudbgwarning, wiauDbgWarning, wiauDbgWarning function [Imaging Devices], wiauFncs_1248626b-0d4f-445c-855c-9ba477cf306c.xml, wiautil/wiauDbgWarning
@@ -56,7 +55,7 @@ Pointer to a string containing the name of the function or method into which the
 
 ### -param fmt
 
-### -param param
+### -param ...
 
 ####### - fmt, ...
 
@@ -77,3 +76,4 @@ Pointer to a format string that specifies a variable argument list, which starts
 
 
 <a href="/windows-hardware/drivers/ddi/wiautil/nf-wiautil-wiaudbgtrace">wiauDbgTrace</a>
+

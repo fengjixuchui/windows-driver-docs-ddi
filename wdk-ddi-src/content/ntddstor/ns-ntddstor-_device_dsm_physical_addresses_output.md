@@ -3,7 +3,6 @@ UID: NS:ntddstor._DEVICE_DSM_PHYSICAL_ADDRESSES_OUTPUT
 title: DEVICE_DSM_PHYSICAL_ADDRESSES_OUTPUT
 description: The DEVICE_DSM_PHYSICAL_ADDRESSES_OUTPUT structure stores physical address ranges that correspond with one or more logical block ranges.
 tech.root: storage
-ms.assetid: 0eb514dd-588f-41ee-bd30-5dad00c19141
 ms.date: 08/23/2019
 keywords: ["DEVICE_DSM_PHYSICAL_ADDRESSES_OUTPUT structure"]
 ms.keywords: DEVICE_DSM_PHYSICAL_ADDRESSES_OUTPUT, DEVICE_DSM_PHYSICAL_ADDRESSES_OUTPUT, *PDEVICE_DSM_PHYSICAL_ADDRESSES_OUTPUT,
@@ -35,9 +34,9 @@ api_type:
 api_location:
  - ntddstor.h
 api_name:
+ - _DEVICE_DSM_PHYSICAL_ADDRESSES_OUTPUT
+ - PDEVICE_DSM_PHYSICAL_ADDRESSES_OUTPUT
  - DEVICE_DSM_PHYSICAL_ADDRESSES_OUTPUT
-product:
- - Windows
 ---
 
 # DEVICE_DSM_PHYSICAL_ADDRESSES_OUTPUT structure
@@ -80,3 +79,4 @@ The output block in the payload of an [IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES]
 [DEVICE_STORAGE_ADDRESS_RANGE](ns-ntddstor_device_storage_address_range.md)
 
 [IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES](./ni-ntddstor-ioctl_storage_manage_data_set_attributes.md)
+

@@ -1,9 +1,8 @@
 ---
 UID: NF:dbgmodel.SymbolSearchInfo.SymbolSearchInfo~r1
-title: SymbolSearchInfo function (dbgmodel.h)
-description: The search record passed to EnumerateChildrenEx in order to restrict symbol searches.
-ms.assetid: a2b85960-ae07-4f5f-8f41-5dd9784eaae9
-ms.date: 10/04/2018
+title: SymbolSearchInfo::SymbolSearchInfo Constructor function (dbgmodel.h)
+description: The SymbolSearchInfo constructor function (dbgmodel.h) constructs a SymbolSearchInfo, a search record passed to EnumerateChildrenEx to restrict symbol searches.
+ms.date: 11/28/2023
 keywords: ["SymbolSearchInfo function"]
 ms.keywords: SymbolSearchInfo
 req.header: dbgmodel.h
@@ -36,11 +35,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - SymbolSearchInfo
+ - SymbolSearchInfo::SymbolSearchInfo
 ---
 
-# SymbolSearchInfo function
-
+# SymbolSearchInfo Constructor function
 
 ## -description
 
@@ -48,12 +46,13 @@ The search record passed to EnumerateChildrenEx in order to restrict symbol sear
 
 A given kind of symbol (as indicated by the SymbolKind enumeration) searched may have its own derived type.
 
-## -returns
+## -remarks
+
+### Returns
 
 This function is a constructor and does not return a value.
-
-## -remarks
 
 ## -see-also
 
 [dbgmodel.h header](./index.md)
+

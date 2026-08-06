@@ -4,7 +4,6 @@ title: NdisReadRegisterUchar macro (ndis.h)
 description: NdisReadRegisterUchar is called by the miniport driver to read a UCHAR from a memory-mapped device register.
 old-location: netvista\ndisreadregisteruchar.htm
 tech.root: netvista
-ms.assetid: 1723672b-aff7-49ca-a027-14a6eb3c2196
 ms.date: 05/02/2018
 keywords: ["NdisReadRegisterUchar macro"]
 ms.keywords: NdisReadRegisterUchar, NdisReadRegisterUchar macro [Network Drivers Starting with Windows Vista], miniport_register_ref_04023727-eaf7-45fb-b70d-5a67eda4a54d.xml, ndis/NdisReadRegisterUchar, netvista.ndisreadregisteruchar
@@ -51,16 +50,15 @@ api_name:
 
 ## -parameters
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 Pointer to the memory-mapped register. This virtual address must fall within a range returned by
-     an initialization-time call to 
-     <a href="/windows-hardware/drivers/devtest/ndis-ndismmapiospace">NdisMMapIoSpace</a>.
+     an initialization-time call to [**NdisMMapIoSpace**](nf-ndis-ndismmapiospace.md).
 
-### -param Data 
+### -param Data [out]
 
-[out]
+
 Pointer to the caller-supplied variable in which this function returns the UCHAR read from 
      <i>Register</i> .
 
@@ -75,7 +73,7 @@ If a driver calls this function, a NIC's device registers must be mapped to nonc
 
 
 
-<a href="/windows-hardware/drivers/devtest/ndis-ndismmapiospace">NdisMMapIoSpace</a>
+[**NdisMMapIoSpace**](nf-ndis-ndismmapiospace.md)
 
 
 

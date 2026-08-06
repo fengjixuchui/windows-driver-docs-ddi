@@ -4,7 +4,6 @@ title: RtlUIntToChar function (ntintsafe.h)
 description: Converts a value of type UINT to a value of type CHAR.
 old-location: kernel\rtluinttochar.htm
 tech.root: kernel
-ms.assetid: 1E4620A9-5CAA-4E45-9D43-1E183D7EB572
 ms.date: 04/30/2018
 keywords: ["RtlUIntToChar function"]
 ms.keywords: RtlUIntToChar, RtlUIntToChar function [Kernel-Mode Driver Architecture], kernel.rtluinttochar, ntintsafe/RtlUIntToChar
@@ -50,14 +49,14 @@ Converts a value of type <b>UINT</b> to a value of type <b>CHAR</b>.
 
 ## -parameters
 
-### -param uOperand 
+### -param uOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pch 
+### -param pch [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

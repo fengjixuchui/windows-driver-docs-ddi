@@ -1,10 +1,9 @@
 ---
 UID: NF:portabledevicetypes.IPortableDeviceValuesCollection.Add
 title: IPortableDeviceValuesCollection::Add (portabledevicetypes.h)
-description: Adds an item to the collection.
+description: Learn how the Add method adds an item to the collection.
 old-location: wpddk\iportabledevicevaluescollection_add.htm
 tech.root: wpd_dk
-ms.assetid: 1e95fb27-b6a6-41da-8765-e17bac4f35a1
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValuesCollection::Add"]
 ms.keywords: Add, Add method, Add method,IPortableDeviceValuesCollection interface, IPortableDeviceValuesCollection interface,Add method, IPortableDeviceValuesCollection.Add, IPortableDeviceValuesCollection::Add, IPortableDeviceValuesCollectionAdd, portabledevicetypes/IPortableDeviceValuesCollection::Add, wpddk.iportabledevicevaluescollection_add
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValuesCollection.Add
+ - IPortableDeviceValuesCollection::Add
 ---
 
 # IPortableDeviceValuesCollection::Add
@@ -51,9 +50,9 @@ Adds an item to the collection.
 
 ## -parameters
 
-### -param pValues 
+### -param pValues [in]
 
-[in]
+
 Pointer to an <b>IPortableDeviceValues</b> interface to add to the collection. The interface is not actually copied, but <b>AddRef</b> is called on it.
 
 ## -returns
@@ -96,3 +95,4 @@ None.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevaluescollection">IPortableDeviceValuesCollection Interface</a>
+

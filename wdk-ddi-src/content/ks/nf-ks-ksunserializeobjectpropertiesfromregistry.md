@@ -4,7 +4,6 @@ title: KsUnserializeObjectPropertiesFromRegistry function (ks.h)
 description: The KsUnserializeObjectPropertiesFromRegistry function, when given a destination object and a registry path, enumerates the named values and applies them as serialized data to the specified property sets listed in the serialized data.
 old-location: stream\ksunserializeobjectpropertiesfromregistry.htm
 tech.root: stream
-ms.assetid: e08ddef7-5942-4943-9dbe-9658279892f0
 ms.date: 04/23/2018
 keywords: ["KsUnserializeObjectPropertiesFromRegistry function"]
 ms.keywords: KsUnserializeObjectPropertiesFromRegistry, KsUnserializeObjectPropertiesFromRegistry function [Streaming Media Devices], ks/KsUnserializeObjectPropertiesFromRegistry, ksfunc_09710ce5-9236-47cc-84b2-4ced36aa654b.xml, stream.ksunserializeobjectpropertiesfromregistry
@@ -51,19 +50,19 @@ The <b>KsUnserializeObjectPropertiesFromRegistry</b> function, when given a dest
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Specifies the file object whose properties are being set.
 
-### -param ParentKey 
+### -param ParentKey [in, optional]
 
-[in, optional]
+
 Optionally contains a handle to the parent of the path, or <b>NULL</b>. The Parent Key and/or the <i>RegistryPath</i> must be passed.
 
-### -param RegistryPath 
+### -param RegistryPath [in, optional]
 
-[in, optional]
+
 Optionally contains the path to the key whose subkeys will be enumerated as property sets, or otherwise <b>NULL</b>. The <i>ParentKey</i> and/or the Registry Path must be passed.
 
 ## -returns

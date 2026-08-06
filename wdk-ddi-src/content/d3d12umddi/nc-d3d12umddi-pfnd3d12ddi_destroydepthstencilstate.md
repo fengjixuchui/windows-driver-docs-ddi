@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_DESTROYDEPTHSTENCILSTATE
 title: PFND3D12DDI_DESTROYDEPTHSTENCILSTATE (d3d12umddi.h)
 description: Destroy depth stencil state.
-ms.assetid: 36db022f-0740-4864-9f13-9bce157fdb3a
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_DESTROYDEPTHSTENCILSTATE callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_DESTROYDEPTHSTENCILSTATE
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ Destroy depth stencil state.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 A depth stencil state handle.
 

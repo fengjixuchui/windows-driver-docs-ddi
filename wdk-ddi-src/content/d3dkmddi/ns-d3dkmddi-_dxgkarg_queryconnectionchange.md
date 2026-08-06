@@ -1,10 +1,9 @@
 ---
 UID: NS:d3dkmddi._DXGKARG_QUERYCONNECTIONCHANGE
-title: _DXGKARG_QUERYCONNECTIONCHANGE (d3dkmddi.h)
-description: Used to hold the arguments for DXGKDDI_QUERYCONNECTIONCHANGE.
+title: DXGKARG_QUERYCONNECTIONCHANGE (d3dkmddi.h)
+description: Learn more about the DXGKARG_QUERYCONNECTIONCHANGE structure.
 old-location: display\dxgkarg_queryconnectionchange.htm
-ms.assetid: 6B91F3F0-B02D-46F3-9086-EA32F043FC16
-ms.date: 05/10/2018
+ms.date: 08/26/2022
 keywords: ["DXGKARG_QUERYCONNECTIONCHANGE structure"]
 ms.keywords: "*IN_PDXGKARG_QUERYCONNECTIONCHANGE, DXGKARG_QUERYCONNECTIONCHANGE, DXGKARG_QUERYCONNECTIONCHANGE structure [Display Devices], _DXGKARG_QUERYCONNECTIONCHANGE, d3dkmddi/DXGKARG_QUERYCONNECTIONCHANGE, display.dxgkarg_queryconnectionchange"
 req.header: d3dkmddi.h
@@ -40,18 +39,26 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_QUERYCONNECTIONCHANGE
  - DXGKARG_QUERYCONNECTIONCHANGE
 ---
 
-# _DXGKARG_QUERYCONNECTIONCHANGE structure
-
+# DXGKARG_QUERYCONNECTIONCHANGE structure
 
 ## -description
 
-Used to hold the arguments for <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryconnectionchange">DXGKDDI_QUERYCONNECTIONCHANGE</a>.
+A **DXGKARG_QUERYCONNECTIONCHANGE** structure holds the arguments for [**DXGKDDI_QUERYCONNECTIONCHANGE**](nc-d3dkmddi-dxgkddi_queryconnectionchange.md).
 
 ## -struct-fields
 
 ### -field ConnectionChange
 
-[out] Buffer into which the oldest available change is copied by driver.
+[out] A [**DXGK_CONNECTION_CHANGE**](ns-d3dkmddi-_dxgk_connection_change.md) structure into which the driver copies the oldest available connection change.
+
+### -field Usb4MonitorInfo
+
+[out] An OS-allocated [**DXGK_CONNECTION_USB4_INFO**](ns-d3dkmddi-dxgk_connection_usb4_info.md) structure that the driver should complete if [**MonitorConnectFlags.Usb4DisplayPortMonitor**](ns-d3dkmddi-dxgk_connection_monitor_connect_flags.md) was set. Available starting in Windows 11 (WDDM 3.0). See [Supporting DisplayPort monitors over USB4 in KMD](/windows-hardware/drivers/display/supporting-usb4) for more information.
+
+## -see-also
+
+[**DXGKDDI_QUERYCONNECTIONCHANGE**](nc-d3dkmddi-dxgkddi_queryconnectionchange.md)

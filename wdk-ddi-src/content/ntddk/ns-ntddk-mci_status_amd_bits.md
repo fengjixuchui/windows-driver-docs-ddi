@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._MCI_STATUS_AMD_BITS
 title: MCI_STATUS_AMD_BITS
-description: 
-tech.root: 
-ms.assetid: d4119011-157e-4f51-b95a-6ab20cf553c0
+description: "Learn more about: MCI_STATUS_AMD_BITS structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["MCI_STATUS_AMD_BITS structure"]
 ms.keywords: MCI_STATUS_AMD_BITS, MCI_STATUS_AMD_BITS, *PMCI_STATUS_AMD_BITS,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _MCI_STATUS_AMD_BITS
+ - PMCI_STATUS_AMD_BITS
  - MCI_STATUS_AMD_BITS
-product:
- - Windows
 ---
 
 # MCI_STATUS_AMD_BITS structure

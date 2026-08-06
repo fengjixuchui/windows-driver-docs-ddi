@@ -4,7 +4,6 @@ title: IAllocatorMXF (dmusicks.h)
 description: The IAllocatorMXF interface manages buffer storage for DirectMusic streams.
 old-location: audio\iallocatormxf.htm
 tech.root: audio
-ms.assetid: 4ed81d77-e140-4633-8582-d21170ecc645
 ms.date: 05/08/2018
 keywords: ["IAllocatorMXF interface"]
 ms.keywords: IAllocatorMXF, IAllocatorMXF interface [Audio Devices], IAllocatorMXF interface [Audio Devices],described, audio.iallocatormxf, audmp-routines_3ab3f61f-aa26-4a37-b1ff-68c1b0ae97c4.xml, dmusicks/IAllocatorMXF
@@ -54,7 +53,5 @@ The allocator also abstracts the allocation of the additional memory that is nee
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IAllocatorMXF</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IAllocatorMXF</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IAllocatorMXF</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IAllocatorMXF</b> also has these types of members:
+

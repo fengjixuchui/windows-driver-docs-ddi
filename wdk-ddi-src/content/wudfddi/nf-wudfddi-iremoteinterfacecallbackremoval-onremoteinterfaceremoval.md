@@ -4,7 +4,6 @@ title: IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval (wudfddi.h)
 description: A UMDF-based driver's OnRemoteInterfaceRemoval event callback function notifies the driver that it cannot use a device interface because the interface has been removed.
 old-location: wdf\iremoteinterfacecallbackremoval_onremoteinterfaceremoval.htm
 tech.root: wdf
-ms.assetid: 0dfa2eb8-a7f6-46d9-9599-5e2aaf583f78
 ms.date: 02/26/2018
 keywords: ["IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval"]
 ms.keywords: IRemoteInterfaceCallbackRemoval interface,OnRemoteInterfaceRemoval method, IRemoteInterfaceCallbackRemoval.OnRemoteInterfaceRemoval, IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval, OnRemoteInterfaceRemoval, OnRemoteInterfaceRemoval method, OnRemoteInterfaceRemoval method,IRemoteInterfaceCallbackRemoval interface, UMDFIoTargetObjectRef_17c1557c-2046-4bea-8b7f-88fea7103155.xml, umdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval, wdf.iremoteinterfacecallbackremoval_onremoteinterfaceremoval, wudfddi/IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IRemoteInterfaceCallbackRemoval.OnRemoteInterfaceRemoval
+ - IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval
 ---
 
 # IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval
@@ -52,9 +51,9 @@ A UMDF-based driver's <b>OnRemoteInterfaceRemoval</b> event callback function no
 
 ## -parameters
 
-### -param pWdfRemoteInterface 
+### -param pWdfRemoteInterface [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfremoteinterface">IWDFRemoteInterface</a> interface of a remote interface object that represents a device interface. The driver obtains this pointer when it calls <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice2-createremoteinterface">IWDFDevice2::CreateRemoteInterface</a>.
 
 ## -remarks
@@ -76,3 +75,4 @@ For more information about a driver's <b>OnRemoteInterfaceRemoval</b> event call
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iremoteinterfacecallbackremoval">IRemoteInterfaceCallbackRemoval</a>
+

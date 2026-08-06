@@ -4,7 +4,6 @@ title: MmIsDriverSuspectForVerifier function (wdm.h)
 description: The MmIsDriverSuspectForVerifier routine indicates whether the driver represented by the specified driver object is in the list of drivers that are selected to be verified by Driver Verifier.
 old-location: kernel\mmisdriversuspectforverifier.htm
 tech.root: kernel
-ms.assetid: 049BDC6E-2FB2-421F-9229-320F2ED98663
 ms.date: 04/30/2018
 keywords: ["MmIsDriverSuspectForVerifier function"]
 ms.keywords: MmIsDriverSuspectForVerifier, MmIsDriverSuspectForVerifier routine [Kernel-Mode Driver Architecture], kernel.mmisdriversuspectforverifier, wdm/MmIsDriverSuspectForVerifier
@@ -50,9 +49,9 @@ The <b>MmIsDriverSuspectForVerifier</b> routine indicates whether the driver rep
 
 ## -parameters
 
-### -param DriverObject 
+### -param DriverObject [in]
 
-[in]
+
 A pointer to the driver object. This object is a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_driver_object">DRIVER_OBJECT</a> structure that represents a loaded driver image. The driver receives this pointer as an input parameter to its <a href="/windows-hardware/drivers/storage/driverentry-of-ide-controller-minidriver">DriverEntry</a> routine.
 
 ## -returns

@@ -4,7 +4,6 @@ title: ExDeletePagedLookasideList function (wdm.h)
 description: The ExDeletePagedLookasideList routine destroys a paged lookaside list.
 old-location: kernel\exdeletepagedlookasidelist.htm
 tech.root: kernel
-ms.assetid: da3784a8-6fc5-47cc-932e-52ec16392e49
 ms.date: 04/30/2018
 keywords: ["ExDeletePagedLookasideList function"]
 ms.keywords: ExDeletePagedLookasideList, ExDeletePagedLookasideList routine [Kernel-Mode Driver Architecture], k102_6e78a15a-e6e1-4282-a8de-a4f38f74ebc6.xml, kernel.exdeletepagedlookasidelist, wdm/ExDeletePagedLookasideList
@@ -50,9 +49,9 @@ The <b>ExDeletePagedLookasideList</b> routine destroys a paged lookaside list.
 
 ## -parameters
 
-### -param Lookaside 
+### -param Lookaside [in, out]
 
-[in, out]
+
 A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">PAGED_LOOKASIDE_LIST</a> structure for the lookaside list, which the caller already initialized with <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializepagedlookasidelist">ExInitializePagedLookasideList</a>, which the caller originally set up with <b>ExInitializePagedLookasideList</b>.
 
 ## -remarks

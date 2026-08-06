@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_CALC_PRIVATE_STATE_OBJECT_SIZE_0054
 title: PFND3D12DDI_CALC_PRIVATE_STATE_OBJECT_SIZE_0054 (d3d12umddi.h)
 description: Calculates the private state object size.
-ms.assetid: cfefa406-e5de-4256-be0c-97c6b62fb10d
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CALC_PRIVATE_STATE_OBJECT_SIZE_0054 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CALC_PRIVATE_STATE_OBJECT_SIZE_0054
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ Calculates the private state object size.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 Pointer to a [D3D12DDIARG_CREATE_STATE_OBJECT_0054](ns-d3d12umddi-d3d12ddiarg_create_state_object_0054.md) structure that contains the arguments for a state object.
 

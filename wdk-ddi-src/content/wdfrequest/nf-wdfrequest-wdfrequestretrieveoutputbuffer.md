@@ -4,7 +4,6 @@ title: WdfRequestRetrieveOutputBuffer function (wdfrequest.h)
 description: The WdfRequestRetrieveOutputBuffer method retrieves an I/O request's output buffer.
 old-location: wdf\wdfrequestretrieveoutputbuffer.htm
 tech.root: wdf
-ms.assetid: 5f12dd97-d8e7-4fef-91bf-00243c0cdd52
 ms.date: 02/26/2018
 keywords: ["WdfRequestRetrieveOutputBuffer function"]
 ms.keywords: DFRequestObjectRef_05ab728b-3b70-4095-acca-294443797557.xml, WdfRequestRetrieveOutputBuffer, WdfRequestRetrieveOutputBuffer method, kmdf.wdfrequestretrieveoutputbuffer, wdf.wdfrequestretrieveoutputbuffer, wdfrequest/WdfRequestRetrieveOutputBuffer
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,24 +54,24 @@ The <b>WdfRequestRetrieveOutputBuffer</b> method retrieves an I/O request's outp
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
-### -param MinimumRequiredSize 
+### -param MinimumRequiredSize [in]
 
-[in]
+
 The minimum buffer size, in bytes, that the driver needs to process the I/O request.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 A pointer to a location that receives the buffer's address.
 
-### -param Length 
+### -param Length [out, optional]
 
-[out, optional]
+
 A pointer to a location that receives the buffer's size, in bytes. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

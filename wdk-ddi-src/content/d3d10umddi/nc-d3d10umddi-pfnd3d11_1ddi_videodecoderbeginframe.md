@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEODECODERBEGINFRAME
 title: PFND3D11_1DDI_VIDEODECODERBEGINFRAME (d3d10umddi.h)
-description: Starts a DirectX Video Acceleration (DXVA) decoding operation to decode a video frame.
+description: "The PFND3D11_1DDI_VIDEODECODERBEGINFRAME callback function starts a DirectX Video Acceleration (DXVA) decoding operation on a video frame."
 old-location: display\videodecoderbeginframe.htm
-ms.assetid: 5aebc8c9-baa1-457f-9e46-3a86929ba0b5
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_VIDEODECODERBEGINFRAME callback function"]
 ms.keywords: PFND3D11_1DDI_VIDEODECODERBEGINFRAME, PFND3D11_1DDI_VIDEODECODERBEGINFRAME callback, d3d10umddi/pfnVideoDecoderBeginFrame, display.videodecoderbeginframe, pfnVideoDecoderBeginFrame, pfnVideoDecoderBeginFrame callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoDecoderBeginFrame
-product:
- - Windows
+ - PFND3D11_1DDI_VIDEODECODERBEGINFRAME
 ---
 
 # PFND3D11_1DDI_VIDEODECODERBEGINFRAME callback function
@@ -52,19 +49,19 @@ Starts a DirectX Video Acceleration (DXVA) decoding operation to decode a video 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hDecoder* [in]
 
 A handle to the video decoder object that was created through a call to the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideodecoder">CreateVideoDecoder</a> function.
 
-### -param Arg3
+### -param unnamedParam3
 
 *pBeginFrame* [in]
 
@@ -117,3 +114,4 @@ If the <b>pContentKey</b> member is set to NULL, the video frame data should be 
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_videodecodersubmitbuffers">VideoDecoderSubmitBuffers</a>
+

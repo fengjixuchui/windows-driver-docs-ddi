@@ -4,7 +4,6 @@ title: PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK (fltkernel.h)
 description: A minifilter driver can optionally register a routine of type PFLT_CONTEXT_ALLOCATE_CALLBACK as the minifilter driver's SectionNotificationCallback routine.
 old-location: ifsk\pflt_section_conflict_notification_callback.htm
 tech.root: ifsk
-ms.assetid: 22840772-7DFC-4339-9C06-4900E47048B4
 ms.date: 04/25/2019
 keywords: ["PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK callback function"]
 ms.keywords: PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK, SectionNotificationCallback, SectionNotificationCallback routine [Installable File System Drivers], fltkernel/SectionNotificationCallback, ifsk.pflt_section_conflict_notification_callback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - fltkernel.h
 api_name:
- - SectionNotificationCallback
+ - PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK
 ---
 
 # PFLT_SECTION_CONFLICT_NOTIFICATION_CALLBACK callback function
@@ -50,19 +49,19 @@ A minifilter driver can optionally register a routine of type PFLT_SECTION_CONFL
 
 ## -parameters
 
-### -param Instance 
+### -param Instance [in]
 
-[in]
+
 An opaque instance pointer to the minifilter driver instance that is initiating the I/O operation.
 
-### -param SectionContext 
+### -param SectionContext [in]
 
-[in]
+
 A pointer to the section context that incurred a data scan section conflict.
 
-### -param Data 
+### -param Data [in]
 
-[in]
+
 A pointer to a caller-allocated structure that contains the callback data.
 
 ## -returns

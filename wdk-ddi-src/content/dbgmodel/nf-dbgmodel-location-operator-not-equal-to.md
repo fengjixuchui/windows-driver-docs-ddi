@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.Location.operator-not-equal-to
 title: operator!= function (dbgmodel.h)
 description: Not equal to comparison operator for the location function.
-ms.assetid: a2206ed4-c0a8-4b21-84ba-87ecd6693f5b
 ms.date: 09/28/2018
 keywords: ["operator!= function"]
 ms.keywords: operator!=
@@ -35,7 +34,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - operator!=
+ - Location::operator!=
 ---
 
 # operator!= function
@@ -60,3 +59,4 @@ This function returns whether the two locations refer to different places.
 ## -see-also
 
 [dbgmodel.h header](./index.md)
+

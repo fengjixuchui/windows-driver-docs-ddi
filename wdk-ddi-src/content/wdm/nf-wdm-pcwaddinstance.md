@@ -2,10 +2,8 @@
 UID: NF:wdm.PcwAddInstance
 title: PcwAddInstance function (wdm.h)
 description: The PcwAddInstance function adds the specified instance of the counterset to the consumer buffer.
-old-location: devtest\pcwaddinstance.htm
 tech.root: devtest
-ms.assetid: 041761dd-ce52-4018-a226-c5181858326c
-ms.date: 07/28/2020
+ms.date: 01/12/2023
 keywords: ["PcwAddInstance function"]
 ms.keywords: PcwAddInstance, PcwAddInstance function [Driver Development Tools], devtest.pcwaddinstance, km_pcw_1819c4ec-a951-4069-a8ff-24cf11f1b68c.xml, wdm/PcwAddInstance
 req.header: wdm.h
@@ -24,7 +22,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -41,47 +39,44 @@ api_name:
  - PcwAddInstance
 ---
 
-# PcwAddInstance function
-
-
 ## -description
 
 The `PcwAddInstance` function adds the specified instance of the counterset to the consumer buffer. Most developers will use a [CTRPP](/windows/win32/perfctrs/ctrpp)-generated AddXxx function instead of calling this function directly. See Remarks below for more info.
 
 ## -parameters
 
-### -param Buffer
+### -param Buffer [in]
 
-[in] A handle to the system-managed buffer to which the instance of the counterset will be added. When the buffer comes from a `PcwCallbackEnumerateInstances` notification, `PcwAddInstance` will record only the Name and Id of the instance. When the buffer comes from a `PcwCallbackCollectData` notification, `PcwAddInstance` will record the Name, Id, and Data (counter values) of the instance.
+A handle to the system-managed buffer to which the instance of the counterset will be added. When the buffer comes from a `PcwCallbackEnumerateInstances` notification, `PcwAddInstance` will record only the Name and Id of the instance. When the buffer comes from a `PcwCallbackCollectData` notification, `PcwAddInstance` will record the Name, Id, and Data (counter values) of the instance.
 
-### -param Name
+### -param Name [in]
 
-[in] A pointer to the Unicode string that contains the name of the counterset instance. This must not be NULL.
+A pointer to the Unicode string that contains the name of the counterset instance. This must not be NULL.
 
 Instance `Name` values MUST be stable over time (the same logical instance should use the same `Name` value for all invocations of the callback) and MUST be unique. If the counterset is registered as single-instance, the instance `Name` should be blank (0-length). If the counterset registered as multi-instance, the instance `Name` should not be blank. Instance name matching is not case-sensitive, so `Name` values should not differ only by case.
 
-### -param Id
+### -param Id [in]
 
-[in] A numeric value that specifies the `Id` (identifier) associated with the counterset instance.
+A numeric value that specifies the `Id` (identifier) associated with the counterset instance.
 
 Instance `Id` values MUST be stable over time (the same instance should use the same `Id` value for all invocations of the callback), should be unique (e.g. do not use 0 for all instances), and should be less than 0xFFFFFFFE (do not use `PCW_ANY_INSTANCE_ID` for any instances). When possible, the instance `Id` should be meaningful (e.g. a Process counterset might use a PID as the `Id`) instead of arbitrary (e.g. a sequence number).
 
-### -param Count
+### -param Count [in]
 
-[in] The number of descriptors provided in the `Data` parameter.
+The number of descriptors provided in the `Data` parameter.
 
-### -param Data
+### -param Data [in]
 
-[in] An array of descriptors for the provider data blocks that contain the counter values of this instance.
+An array of descriptors for the provider data blocks that contain the counter values of this instance.
 
 ## -returns
 
 `PcwAddInstance` returns one of the following values:
 
-|Return code|Description
-|---|---
-|`STATUS_SUCCESS`|The instance was successfully added to the buffer.
-|`STATUS_INVALID_BUFFER_SIZE`|One of the provider data blocks is too small. For example, suppose that during the call to [PcwRegister](nf-wdm-pcwregister.md), the provider specifies that counter `X` is at offset 100 of the first data block of size 4 bytes. If the call to `PcwAddInstance` specifies that the first data block is 50 bytes, this error status is returned.
+| Return code | Description |
+|---|---|
+| `STATUS_SUCCESS` | The instance was successfully added to the buffer. |
+| `STATUS_INVALID_BUFFER_SIZE` | One of the provider data blocks is too small. For example, suppose that during the call to [PcwRegister](nf-wdm-pcwregister.md), the provider specifies that counter `X` is at offset 100 of the first data block of size 4 bytes. If the call to `PcwAddInstance` specifies that the first data block is 50 bytes, this error status is returned. |
 
 ## -remarks
 
@@ -93,7 +88,7 @@ When called for a `PcwCallbackEnumerateInstances` notification, `PcwAddInstance`
 
 Most developers do not need to call `PcwAddInstance` directly. Instead, they will compile a manifest with the CTRPP tool and use the Add\*\*\* function from the CTRPP-generated header. The generated function will look like this:
 
-```C
+```c
 EXTERN_C __inline NTSTATUS
 AddMyCounterset(
     __in PPCW_BUFFER Buffer,

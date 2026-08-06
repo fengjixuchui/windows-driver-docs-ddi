@@ -4,14 +4,13 @@ title: FsRtlInsertPerFileContext function (ntifs.h)
 description: The FsRtlInsertPerFileContext routine associates a FSRTL_PER_FILE_CONTEXT object with a driver-specified context object for a file.
 old-location: ifsk\fsrtlinsertperfilecontext.htm
 tech.root: ifsk
-ms.assetid: accc3600-9614-48e0-912d-1e8b324e659f
 ms.date: 04/16/2018
 keywords: ["FsRtlInsertPerFileContext function"]
 ms.keywords: FsRtlInsertPerFileContext, FsRtlInsertPerFileContext routine [Installable File System Drivers], fsrtlref_570a2352-733f-4b83-8f63-f4bfed0e2f56.xml, ifsk.fsrtlinsertperfilecontext, ntifs/FsRtlInsertPerFileContext
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating system.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ The <b>FsRtlInsertPerFileContext</b> routine associates a <a href="/previous-ver
 
 ## -parameters
 
-### -param PerFileContextPointer 
+### -param PerFileContextPointer [in]
 
-[in]
+
 A pointer to an opaque pointer used by the file system runtime library (FSRTL) package to track file contexts. To retrieve this pointer from a file object, use the <a href="/previous-versions/ff546051(v=vs.85)">FsRtlGetPerFileContextPointer</a> macro.
 
-### -param Ptr 
+### -param Ptr [in]
 
-[in]
+
 A pointer to the driver-specific context structure.
 
 ## -returns

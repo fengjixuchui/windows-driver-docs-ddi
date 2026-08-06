@@ -4,7 +4,6 @@ title: EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION (sercx.h)
 description: The EvtSerCx2PioTransmitEnableReadyNotification event callback function is called by version 2 of the serial framework extension (SerCx2) to enable the serial controller driver to notify SerCx2 when the transmit FIFO in the serial controller is ready to accept more data.
 old-location: serports\evtsercx2piotransmitenablereadynotification.htm
 tech.root: serports
-ms.assetid: 05E5F48B-4E82-4BC3-B6D1-7E9E3435BDB3
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION callback function"]
 ms.keywords: 2/EvtSerCx2PioTransmitEnableReadyNotification, EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION, EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION callback, EvtSerCx2PioTransmitEnableReadyNotification, EvtSerCx2PioTransmitEnableReadyNotification callback function [Serial Ports], serports.evtsercx2piotransmitenablereadynotification
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
- - EvtSerCx2PioTransmitEnableReadyNotification
+ - EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION
 ---
 
 # EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION callback function
@@ -50,9 +49,9 @@ The <i>EvtSerCx2PioTransmitEnableReadyNotification</i> event callback function i
 
 ## -parameters
 
-### -param PioTransmit 
+### -param PioTransmit [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitcreate">SerCx2PioTransmitCreate</a> method to create this object.
 
 ## -remarks
@@ -122,3 +121,4 @@ The <b>EVT_SERCX2_PIO_TRANSMIT_ENABLE_READY_NOTIFICATION</b> function type is de
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitready">SerCx2PioTransmitReady</a>
+

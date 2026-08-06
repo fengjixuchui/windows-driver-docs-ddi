@@ -4,7 +4,6 @@ title: _CREATE_DISK_GPT (ntdddisk.h)
 description: The CREATE_DISK_GPT structure is used with the IOCTL IOCTL_DISK_CREATE_DISK to initialize a disk with an empty GPT partition table.
 old-location: storage\create_disk_gpt.htm
 tech.root: storage
-ms.assetid: 24ae7329-064f-43bf-8c1d-8aad9fdf2254
 ms.date: 03/29/2018
 keywords: ["CREATE_DISK_GPT structure"]
 ms.keywords: "*PCREATE_DISK_GPT, CREATE_DISK_GPT, CREATE_DISK_GPT structure [Storage Devices], PCREATE_DISK_GPT, PCREATE_DISK_GPT structure pointer [Storage Devices], _CREATE_DISK_GPT, ntdddisk/CREATE_DISK_GPT, ntdddisk/PCREATE_DISK_GPT, storage.create_disk_gpt, structs-disk_c5c62f65-c252-482b-bbf7-1bb021920649.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntdddisk.h
 api_name:
+ - _CREATE_DISK_GPT
+ - PCREATE_DISK_GPT
  - CREATE_DISK_GPT
 ---
 
@@ -69,3 +70,4 @@ Specifies the maximum number of partitions allowed on the disk.
 
 
 <a href="/windows-hardware/drivers/ddi/ntdddisk/ni-ntdddisk-ioctl_disk_create_disk">IOCTL_DISK_CREATE_DISK</a>
+

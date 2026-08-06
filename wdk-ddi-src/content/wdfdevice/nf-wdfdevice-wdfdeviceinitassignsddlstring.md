@@ -4,7 +4,6 @@ title: WdfDeviceInitAssignSDDLString function (wdfdevice.h)
 description: The WdfDeviceInitAssignSDDLString method assigns a security setting for a device.
 old-location: wdf\wdfdeviceinitassignsddlstring.htm
 tech.root: wdf
-ms.assetid: 6f7d2511-5a9b-476e-a771-a528c2bead10
 ms.date: 02/26/2018
 keywords: ["WdfDeviceInitAssignSDDLString function"]
 ms.keywords: DFDeviceObjectGeneralRef_36d9ccc6-bc81-4605-a14a-1192734d66cb.xml, WdfDeviceInitAssignSDDLString, WdfDeviceInitAssignSDDLString method, kmdf.wdfdeviceinitassignsddlstring, wdf.wdfdeviceinitassignsddlstring, wdfdevice/WdfDeviceInitAssignSDDLString
@@ -53,14 +52,14 @@ The <b>WdfDeviceInitAssignSDDLString</b> method assigns a security setting for a
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
-### -param SDDLString 
+### -param SDDLString [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that describes a Unicode string. This string is an SDDL representation of a security descriptor.
 
 ## -returns

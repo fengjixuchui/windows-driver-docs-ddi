@@ -3,7 +3,6 @@ UID: NF:netadapter.NetAdapterWakeSetPacketFilterCapabilities
 title: NetAdapterWakeSetPacketFilterCapabilities function (netadapter.h)
 description: The NetAdapterWakeSetPacketFilterCapabilities function sets a net adapter's packet filter wake on LAN (WoL) capabilities.
 tech.root: netvista
-ms.assetid: dc2bb935-961f-4a34-a01f-a94cb43e9373
 ms.date: 10/25/2019
 keywords: ["NetAdapterWakeSetPacketFilterCapabilities function"]
 ms.keywords: NetAdapterWakeSetPacketFilterCapabilities
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: netadaptercxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -37,8 +36,6 @@ api_location:
  - netadaptercxstub.lib
 api_name:
  - NetAdapterWakeSetPacketFilterCapabilities
-product:
- - Windows
 ---
 
 # NetAdapterWakeSetPacketFilterCapabilities function
@@ -50,17 +47,14 @@ The **NetAdapterWakeSetPacketFilterCapabilities** function sets a net adapter's 
 
 ## -parameters
 
-### -param Adapter
+### -param Adapter [_In_]
 
 A handle to a NETADAPTER object that the client driver obtained from a previous call to [**NetAdapterCreate**](../netadapter/nf-netadapter-netadaptercreate.md).
 
-### -param Capabilities
+### -param Capabilities [_In_]
 
 A pointer to a client driver-allocated and initialized [**NET_ADAPTER_WAKE_PACKET_FILTER_CAPABILITIES**](../netadapter/ns-netadapter-_net_adapter_wake_packet_filter_capabilities.md) structure.
 
-## -returns
-
-This function does not return a value.
 
 ## -remarks
 

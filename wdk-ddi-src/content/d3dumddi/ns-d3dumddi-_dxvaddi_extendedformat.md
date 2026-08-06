@@ -4,7 +4,6 @@ title: _DXVADDI_EXTENDEDFORMAT (d3dumddi.h)
 description: The DXVADDI_EXTENDEDFORMAT structure describes the extended format of the video frame.
 old-location: display\dxvaddi_extendedformat.htm
 tech.root: display
-ms.assetid: e4f863bd-12ec-489d-a6e0-6b9242fbb0b0
 ms.date: 05/10/2018
 keywords: ["DXVADDI_EXTENDEDFORMAT structure"]
 ms.keywords: DXVA2_Structs_31dd9223-b889-4db9-acc0-520c8f16410a.xml, DXVADDI_EXTENDEDFORMAT, DXVADDI_EXTENDEDFORMAT structure [Display Devices], _DXVADDI_EXTENDEDFORMAT, d3dumddi/DXVADDI_EXTENDEDFORMAT, display.dxvaddi_extendedformat
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVADDI_EXTENDEDFORMAT
  - DXVADDI_EXTENDEDFORMAT
 ---
 
@@ -52,33 +52,33 @@ The DXVADDI_EXTENDEDFORMAT structure describes the extended format of the video 
 
 ## -struct-fields
 
-### -field SampleFormat
+### -field SampleFormat [in]
 
-[in] A UINT value that specifies how a video frame is sampled. The eight bits are defined by one of the values in the <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvaddi_sampleformat">DXVADDI_SAMPLEFORMAT</a> enumeration type.
+A UINT value that specifies how a video frame is sampled. The eight bits are defined by one of the values in the <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvaddi_sampleformat">DXVADDI_SAMPLEFORMAT</a> enumeration type.
 
-### -field VideoChromaSubsampling
+### -field VideoChromaSubsampling [in]
 
-[in] The chroma encoding scheme for Y'Cb'Cr' data. The four bits are defined by a bitwise OR of the values in the <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvaddi_videochromasubsampling">DXVADDI_VIDEOCHROMASUBSAMPLING</a> enumeration type.
+The chroma encoding scheme for Y'Cb'Cr' data. The four bits are defined by a bitwise OR of the values in the <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvaddi_videochromasubsampling">DXVADDI_VIDEOCHROMASUBSAMPLING</a> enumeration type.
 
-### -field NominalRange
+### -field NominalRange [in]
 
-[in] A UINT value that specifies whether sample data includes headroom (that is, values beyond 1.0 white) and toeroom (that is, superblacks below the reference 0.0 black). The three bits are defined by one of the values in the <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvaddi_nominalrange">DXVADDI_NOMINALRANGE</a> enumeration type.
+A UINT value that specifies whether sample data includes headroom (that is, values beyond 1.0 white) and toeroom (that is, superblacks below the reference 0.0 black). The three bits are defined by one of the values in the <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvaddi_nominalrange">DXVADDI_NOMINALRANGE</a> enumeration type.
 
-### -field VideoTransferMatrix
+### -field VideoTransferMatrix [in]
 
-[in] The conversion matrix from Y'Cb'Cr' to (studio) R'G'B'. The three bits are defined by one of the values in the <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvaddi_videotransfermatrix">DXVADDI_VIDEOTRANSFERMATRIX</a> enumeration type.
+The conversion matrix from Y'Cb'Cr' to (studio) R'G'B'. The three bits are defined by one of the values in the <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvaddi_videotransfermatrix">DXVADDI_VIDEOTRANSFERMATRIX</a> enumeration type.
 
-### -field VideoLighting
+### -field VideoLighting [in]
 
-[in] Lighting conditions for viewing video. The four bits are defined by one of the values in the <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvaddi_videolighting">DXVADDI_VIDEOLIGHTING</a> enumeration type.
+Lighting conditions for viewing video. The four bits are defined by one of the values in the <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvaddi_videolighting">DXVADDI_VIDEOLIGHTING</a> enumeration type.
 
-### -field VideoPrimaries
+### -field VideoPrimaries [in]
 
-[in] Color primaries, which state which RGB basis functions are used. The five bits are defined by one of the values in the <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvaddi_videoprimaries">DXVADDI_VIDEOPRIMARIES</a> enumeration type.
+Color primaries, which state which RGB basis functions are used. The five bits are defined by one of the values in the <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvaddi_videoprimaries">DXVADDI_VIDEOPRIMARIES</a> enumeration type.
 
-### -field VideoTransferFunction
+### -field VideoTransferFunction [in]
 
-[in] The conversion function from R'G'B' to RGB. The five bits are defined by the <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvaddi_videotransferfunction">DXVADDI_VIDEOTRANSFERFUNCTION</a> enumeration type.
+The conversion function from R'G'B' to RGB. The five bits are defined by the <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvaddi_videotransferfunction">DXVADDI_VIDEOTRANSFERFUNCTION</a> enumeration type.
 
 ### -field Value
 
@@ -87,3 +87,4 @@ A 32-bit value that describes the extended format of the video frame.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_videodesc">DXVADDI_VIDEODESC</a>
+

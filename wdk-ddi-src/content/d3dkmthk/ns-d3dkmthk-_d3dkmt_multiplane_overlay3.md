@@ -1,9 +1,8 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_MULTIPLANE_OVERLAY3
-title: _D3DKMT_MULTIPLANE_OVERLAY3 (d3dkmthk.h)
-description: Multiplane overlay structure.
-ms.assetid: e46eb90f-6c33-46bd-89c3-f7c87b246609
-ms.date: 10/19/2018
+title: D3DKMT_MULTIPLANE_OVERLAY3 (d3dkmthk.h)
+description: Learn more about the D3DKMT_MULTIPLANE_OVERLAY3 structure.
+ms.date: 04/10/2024
 keywords: ["D3DKMT_MULTIPLANE_OVERLAY3 structure"]
 ms.keywords: _D3DKMT_MULTIPLANE_OVERLAY3, D3DKMT_MULTIPLANE_OVERLAY3,
 req.header: d3dkmthk.h
@@ -35,12 +34,12 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_MULTIPLANE_OVERLAY3
+ - D3DKMT_MULTIPLANE_OVERLAY3
 dev_langs:
  - c++
 ---
 
-# _D3DKMT_MULTIPLANE_OVERLAY3 structure
-
+# D3DKMT_MULTIPLANE_OVERLAY3 structure
 
 ## -description
 
@@ -82,10 +81,24 @@ Pointer to driver private data.
 
 ### -field pPlaneAttributes
 
- 
 A structure that contains the plane attributes.
 
-## -remarks
+### -field hFlipToFence
+
+Handle to the fence for a flip that is about to occur.
+
+### -field hFlipAwayFence
+
+Handle to the fence for a flip that has just completed.
+
+### -field FlipToFenceValue
+
+Fence value for the flip that is about to occur.
+
+## -field FlipAwayFenceValue
+
+Fence value for the flip that has just completed.
 
 ## -see-also
 
+[**D3DKMT_PRESENT_MULTIPLANE_OVERLAY3**](ns-d3dkmthk-_d3dkmt_present_multiplane_overlay3.md)

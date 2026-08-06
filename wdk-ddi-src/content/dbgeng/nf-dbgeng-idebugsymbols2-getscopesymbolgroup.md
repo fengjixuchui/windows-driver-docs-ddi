@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols2.GetScopeSymbolGroup
 title: IDebugSymbols2::GetScopeSymbolGroup (dbgeng.h)
-description: The GetScopeSymbolGroup method returns a symbol group containing the symbols in the current target's scope.
+description: The GetScopeSymbolGroup method returns a symbol group containing the symbols in the current target's scope. This method belongs to the IDebugSymbols2 interface.
 old-location: debugger\getscopesymbolgroup.htm
 tech.root: debugger
-ms.assetid: 002af3f1-4879-40e9-a5c6-bf62a3b26e02
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols2::GetScopeSymbolGroup"]
 ms.keywords: GetScopeSymbolGroup, GetScopeSymbolGroup method [Windows Debugging], GetScopeSymbolGroup method [Windows Debugging],IDebugSymbols interface, GetScopeSymbolGroup method [Windows Debugging],IDebugSymbols2 interface, GetScopeSymbolGroup method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],GetScopeSymbolGroup method, IDebugSymbols2 interface [Windows Debugging],GetScopeSymbolGroup method, IDebugSymbols2.GetScopeSymbolGroup, IDebugSymbols2::GetScopeSymbolGroup, IDebugSymbols3 interface [Windows Debugging],GetScopeSymbolGroup method, IDebugSymbols3::GetScopeSymbolGroup, IDebugSymbols::GetScopeSymbolGroup, IDebugSymbols_a51f6be3-09dc-48a4-ae45-149fea6bfb1b.xml, dbgeng/IDebugSymbols2::GetScopeSymbolGroup, dbgeng/IDebugSymbols3::GetScopeSymbolGroup, dbgeng/IDebugSymbols::GetScopeSymbolGroup, debugger.getscopesymbolgroup
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.GetScopeSymbolGroup
- - IDebugSymbols2.GetScopeSymbolGroup
- - IDebugSymbols3.GetScopeSymbolGroup
+ - IDebugSymbols2::GetScopeSymbolGroup
 ---
 
 # IDebugSymbols2::GetScopeSymbolGroup
@@ -52,9 +49,9 @@ The <b>GetScopeSymbolGroup</b>  method returns a symbol group containing the sym
 
 ## -parameters
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies a bit-set used to determine which symbols to include in the symbol group.  To include all symbols, set <i>Flags</i> to DEBUG_SCOPE_GROUP_ALL.  The following bit-flags determine which symbols are included.
 
 <table>
@@ -84,14 +81,14 @@ Include the local variables for the current scope.
 </tr>
 </table>
 
-### -param Update 
+### -param Update [in, optional]
 
-[in, optional]
+
 Specifies a previously created symbol group that will be updated to reflect the current scope.  If <i>Update</i> is <b>NULL</b>, a new symbol group interface object is created.
 
-### -param Symbols 
+### -param Symbols [out]
 
-[out]
+
 Receives the symbol group interface object for the current scope.  For details on this interface, see <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbolgroup">IDebugSymbolGroup</a>
 
 ## -returns
@@ -141,3 +138,4 @@ For more information about scopes and symbol groups, see <a href="/windows-hardw
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

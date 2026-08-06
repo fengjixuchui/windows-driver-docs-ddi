@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3DWDDM2_2DDI_CREATE_SHADERCACHE_SESSION
 title: PFND3DWDDM2_2DDI_CREATE_SHADERCACHE_SESSION (d3d10umddi.h)
 description: The pfnCreateShaderCacheSession callback function creates a shader cache session.
 old-location: display\pfnd3dwddm2_2ddi_create_shadercache_session.htm
-ms.assetid: 14B3AB7A-DB27-412F-9578-5BA44628ECE7
 ms.date: 05/10/2018
 keywords: ["PFND3DWDDM2_2DDI_CREATE_SHADERCACHE_SESSION callback function"]
 ms.keywords: PFND3DWDDM2_2DDI_CREATE_SHADERCACHE_SESSION, PFND3DWDDM2_2DDI_CREATE_SHADERCACHE_SESSION callback, d3d10umddi/pfnCreateShaderCacheSession, display.pfnd3dwddm2_2ddi_create_shadercache_session, pfnCreateShaderCacheSession, pfnCreateShaderCacheSession callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - pfnCreateShaderCacheSession
+ - PFND3DWDDM2_2DDI_CREATE_SHADERCACHE_SESSION
 ---
 
 # PFND3DWDDM2_2DDI_CREATE_SHADERCACHE_SESSION callback function
@@ -50,19 +49,19 @@ The <i>pfnCreateShaderCacheSession</i> callback function creates a shader cache 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 The handle of a device.
 
-### -param Arg2
+### -param unnamedParam2
 
 *hCacheSession*
 
 The handle of a cache session.
 
-### -param Arg3
+### -param unnamedParam3
 
 *hRTCacheSession*
 
@@ -77,3 +76,4 @@ Access this callback function by using the <a href="/windows-hardware/drivers/dd
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3dwddm2_2ddi_devicefuncs">D3DWDDM2_2DDI_DEVICEFUNCS</a>
+

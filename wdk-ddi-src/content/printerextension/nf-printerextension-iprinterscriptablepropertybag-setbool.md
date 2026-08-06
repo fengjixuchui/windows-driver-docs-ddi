@@ -1,18 +1,16 @@
 ---
 UID: NF:printerextension.IPrinterScriptablePropertyBag.SetBool
 title: IPrinterScriptablePropertyBag::SetBool (printerextension.h)
-description: Writes a specified boolean property value.
-old-location: print\iprinterscriptablepropertybag_setbool.htm
+description: Learn how this method writes a specified boolean property value.
 tech.root: print
-ms.assetid: 8970833A-7CBA-40EB-85A8-60E7730C052F
-ms.date: 04/20/2018
+ms.date: 08/02/2022
 keywords: ["IPrinterScriptablePropertyBag::SetBool"]
 ms.keywords: IPrinterScriptablePropertyBag interface [Print Devices],SetBool method, IPrinterScriptablePropertyBag.SetBool, IPrinterScriptablePropertyBag::SetBool, SetBool, SetBool method [Print Devices], SetBool method [Print Devices],IPrinterScriptablePropertyBag interface, print.iprinterscriptablepropertybag_setbool, printerextension/IPrinterScriptablePropertyBag::SetBool
 req.header: printerextension.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 
@@ -38,11 +36,8 @@ api_type:
 api_location:
  - Printerextension.h
 api_name:
- - IPrinterScriptablePropertyBag.SetBool
+ - IPrinterScriptablePropertyBag::SetBool
 ---
-
-# IPrinterScriptablePropertyBag::SetBool
-
 
 ## -description
 
@@ -50,24 +45,22 @@ Writes a specified boolean property value.
 
 ## -parameters
 
-### -param bstrName 
+### -param bstrName [in]
 
-[in]
 The property to set.
 
-### -param bValue 
+### -param bValue [in]
 
-[in]
 The value to set.
 
 ## -returns
 
-This method returns an <b>HRESULT</b> value.
+This method returns an **HRESULT** value.
 
 ## -remarks
 
-A call to <b>SetBool</b> will throw an exception, if the specified property is not found. We recommend that you use a try-catch statement around calls to this method, to allow your app to handle any failures gracefully.
+A call to **SetBool** will throw an exception, if the specified property is not found. We recommend that you use a try-catch statement around calls to this method, to allow your app to handle any failures gracefully.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablepropertybag">IPrinterScriptablePropertyBag</a>
+[IPrinterScriptablePropertyBag](./nn-printerextension-iprinterscriptablepropertybag.md)

@@ -4,7 +4,6 @@ title: WdfDmaTransactionSetSingleTransferRequirement function (wdfdmatransaction
 description: The WdfDmaTransactionSetSingleTransferRequirement method specifies that a DMA transaction must complete in a single transfer.
 old-location: wdf\wdfdmatransactionsetsingletransferrequirement.htm
 tech.root: wdf
-ms.assetid: 988c7e70-3b2a-4a0f-91cf-dfab3ea07f05
 ms.date: 02/26/2018
 keywords: ["WdfDmaTransactionSetSingleTransferRequirement function"]
 ms.keywords: WdfDmaTransactionSetSingleTransferRequirement, WdfDmaTransactionSetSingleTransferRequirement method, wdf.wdfdmatransactionsetsingletransferrequirement, wdfdmatransaction/WdfDmaTransactionSetSingleTransferRequirement
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfDmaTransactionSetSingleTransferRequirement</b> method specifies that a
 
 ## -parameters
 
-### -param DmaTransaction 
+### -param DmaTransaction [in]
 
-[in]
+
 A handle to a DMA transaction object that the driver obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioncreate">WdfDmaTransactionCreate</a>.
 
-### -param RequireSingleTransfer 
+### -param RequireSingleTransfer [in]
 
-[in]
+
 A Boolean value that, if <b>TRUE</b>, specifies that the DMA transaction requires a single transfer.
 
 ## -remarks

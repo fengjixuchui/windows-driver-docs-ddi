@@ -4,7 +4,6 @@ title: IOCTL_HID_ENABLE_WAKE_ON_SX (hidclass.h)
 description: The IOCTL_HID_ENABLE_WAKE_ON_SX request is used to indicate the requirement for a device to be able to wake from system sleep.
 old-location: hid\ioctl_hid_enable_wake_on_sx.htm
 tech.root: hid
-ms.assetid: E06B1444-F270-48A0-A096-E0289DD4DBBA
 ms.date: 04/30/2018
 keywords: ["IOCTL_HID_ENABLE_WAKE_ON_SX IOCTL"]
 ms.keywords: IOCTL_HID_ENABLE_WAKE_ON_SX, IOCTL_HID_ENABLE_WAKE_ON_SX control, IOCTL_HID_ENABLE_WAKE_ON_SX control code [Human Input Devices], hid.ioctl_hid_enable_wake_on_sx, hidclass/IOCTL_HID_ENABLE_WAKE_ON_SX
@@ -52,6 +51,8 @@ The <b>IOCTL_HID_ENABLE_WAKE_ON_SX</b>
 User mode clients, including user mode driver framework (UMDF) drivers, use this IOCTL to let a device know about the "<i>wake from sleep</i>" requirement. The user mode clients use this IOCTL because they are not able to send an I/O request packet (IRP) to a device.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

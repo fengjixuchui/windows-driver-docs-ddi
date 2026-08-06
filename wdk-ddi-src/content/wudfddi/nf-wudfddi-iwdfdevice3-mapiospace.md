@@ -4,7 +4,6 @@ title: IWDFDevice3::MapIoSpace (wudfddi.h)
 description: The MapIoSpace method maps the given physical address range to system address space and returns a pseudo base address.
 old-location: wdf\iwdfdevice3_mapiospace.htm
 tech.root: wdf
-ms.assetid: 243C7299-7C74-408A-8FB9-32FB3315251F
 ms.date: 02/26/2018
 keywords: ["IWDFDevice3::MapIoSpace"]
 ms.keywords: IWDFDevice3 interface,MapIoSpace method, IWDFDevice3.MapIoSpace, IWDFDevice3::\_MapIoSpace, IWDFDevice3::MapIoSpace, MapIoSpace, MapIoSpace method, MapIoSpace method,IWDFDevice3 interface, umdf.iwdfdevice3_mapiospace, wdf.iwdfdevice3_mapiospace, wudfddi/IWDFDevice3::\_MapIoSpace
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice3.MapIoSpace
+ - IWDFDevice3::MapIoSpace
 ---
 
 # IWDFDevice3::MapIoSpace
@@ -52,24 +51,24 @@ The <b>MapIoSpace</b> method maps the given physical address range to system add
 
 ## -parameters
 
-### -param PhysicalAddress 
+### -param PhysicalAddress [in]
 
-[in]
+
 Specifies the starting 64-bit physical address of the I/O range to be mapped.
 
-### -param NumberOfBytes 
+### -param NumberOfBytes [in]
 
-[in]
+
 Specifies a value greater than zero, indicating the number of bytes to be mapped.
 
-### -param CacheType 
+### -param CacheType [in]
 
-[in]
+
 Specifies a <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_memory_caching_type">MEMORY_CACHING_TYPE</a> value, which indicates the cache attribute to use to map the physical address range. The MEMORY_CACHING_TYPE enumeration type is defined in Wudfwdm.h.
 
-### -param pPseudoBaseAddress 
+### -param pPseudoBaseAddress [out]
 
-[out]
+
 The address of a location that receives a pointer to the pseudo base address.
 
 ## -returns
@@ -88,7 +87,7 @@ A driver that calls <b>MapIoSpace</b> must set the <b>UmdfDirectHardwareAccess</
 
  For more information about  INF directives that UMDF drivers can use, see <a href="/windows-hardware/drivers/wdf/specifying-wdf-directives-in-inf-files">Specifying WDF Directives in INF Files</a>.
 
-The PHYSICAL_ADDRESS type is defined in Wudfwdm.h, as follows:<pre class="syntax" xml:space="preserve"><code>typedef LARGE_INTEGER PHYSICAL_ADDRESS;</code></pre>
+The PHYSICAL_ADDRESS type is defined in Wudfwdm.h, as follows:<pre class="syntax"><code>typedef LARGE_INTEGER PHYSICAL_ADDRESS;</code></pre>
 
 
 
@@ -192,7 +191,7 @@ CMyDevice::OnReleaseHardware(
 
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a>
+

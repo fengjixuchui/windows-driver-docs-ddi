@@ -4,7 +4,6 @@ title: _WDI_ACTION_FRAME_CATEGORY (wditypes.h)
 description: The WDI_ACTION_FRAME_CATEGORY enumeration defines the action frame categories.
 old-location: netvista\wdi_action_frame_category.htm
 tech.root: netvista
-ms.assetid: F2A3D1F0-E6E7-46DC-875A-7F36E6ACBC6D
 ms.date: 05/02/2018
 keywords: ["WDI_ACTION_FRAME_CATEGORY enumeration"]
 ms.keywords: WDI_ACTION_FRAME_CATEGORY, WDI_ACTION_FRAME_CATEGORY enumeration [Device and Driver Installation], WDI_ACTION_FRAME_CATEGORY_FAST_BSS_TRANSITION, WDI_ACTION_FRAME_CATEGORY_PUBLIC, WDI_ACTION_FRAME_CATEGORY_RADIO_MEASUREMENT, WDI_ACTION_FRAME_CATEGORY_WNM, _WDI_ACTION_FRAME_CATEGORY, netvista.wdi_action_frame_category, netvista.wifi_action_frame_category, wditypes/WDI_ACTION_FRAME_CATEGORY, wditypes/WDI_ACTION_FRAME_CATEGORY_FAST_BSS_TRANSITION, wditypes/WDI_ACTION_FRAME_CATEGORY_PUBLIC, wditypes/WDI_ACTION_FRAME_CATEGORY_RADIO_MEASUREMENT, wditypes/WDI_ACTION_FRAME_CATEGORY_WNM
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_ACTION_FRAME_CATEGORY
  - WDI_ACTION_FRAME_CATEGORY
 ---
 
@@ -47,6 +47,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_ACTION_FRAME_CATEGORY enumeration defines the action frame categories.
 

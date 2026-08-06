@@ -4,7 +4,6 @@ title: UcmConnectorPdConnectionStateChanged function (ucmmanager.h)
 description: Notifies the USB connector manager framework extension (UcmCx) with the connection capabilities of the currently negotiated PD contract (if any).
 old-location: buses\ucmconnectorpdconnectionstatechanged.htm
 tech.root: usbref
-ms.assetid: 2DE78869-9AFC-423A-BCB0-B7BBAB0C06BC
 ms.date: 05/07/2018
 keywords: ["UcmConnectorPdConnectionStateChanged function"]
 ms.keywords: UcmConnectorPdConnectionStateChanged, UcmConnectorPdConnectionStateChanged method [Buses], buses.ucmconnectorpdconnectionstatechanged, ucmmanager/UcmConnectorPdConnectionStateChanged
@@ -51,14 +50,14 @@ Notifies the USB connector manager framework extension (UcmCx) with the connecti
 
 ## -parameters
 
-### -param Connector 
+### -param Connector [in]
 
-[in]
+
 Handle to the connector object that the client driver received in the previous call to <a href="/windows-hardware/drivers/ddi/ucmmanager/nf-ucmmanager-ucmconnectorcreate">UcmConnectorCreate</a>.
 
-### -param Params 
+### -param Params [in]
 
-[in]
+
 Pointer to a  <a href="/windows-hardware/drivers/ddi/ucmmanager/ns-ucmmanager-_ucm_connector_pd_conn_state_changed_params">UCM_CONNECTOR_PD_CONN_STATE_CHANGED_PARAMS</a> structure contains driver-supplied state of the connector.
 
 ## -returns

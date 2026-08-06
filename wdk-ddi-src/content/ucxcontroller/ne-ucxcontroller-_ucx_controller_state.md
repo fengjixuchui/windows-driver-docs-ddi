@@ -4,7 +4,6 @@ title: _UCX_CONTROLLER_STATE (ucxcontroller.h)
 description: This enumeration provides values to specify the UCX controller state after a reset.
 old-location: buses\ucx_controller_state.htm
 tech.root: usbref
-ms.assetid: 717BE2D2-2CF3-4A8C-B7DC-41E45C56B02B
 ms.date: 05/07/2018
 keywords: ["UCX_CONTROLLER_STATE enumeration"]
 ms.keywords: UCX_CONTROLLER_STATE, UCX_CONTROLLER_STATE enumeration [Buses], UcxControllerStateLost, UcxControllerStatePreserved, _UCX_CONTROLLER_STATE, buses.ucx_controller_state, ucxcontroller/UCX_CONTROLLER_STATE, ucxcontroller/UcxControllerStateLost, ucxcontroller/UcxControllerStatePreserved
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Ucxcontroller.h
 api_name:
+ - _UCX_CONTROLLER_STATE
  - UCX_CONTROLLER_STATE
 ---
 
@@ -63,3 +63,4 @@ Indicates the controller state was preserved after reset.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ucxcontroller/ns-ucxcontroller-_ucx_controller_reset_complete_info">UCX_CONTROLLER_RESET_COMPLETE_INFO</a>
+

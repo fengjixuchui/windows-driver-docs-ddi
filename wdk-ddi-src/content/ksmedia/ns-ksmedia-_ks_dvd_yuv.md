@@ -4,7 +4,6 @@ title: _KS_DVD_YUV (ksmedia.h)
 description: The KS_DVD_YUV structure is used to describe a color in the YUV colorspace.
 old-location: stream\ks_dvd_yuv.htm
 tech.root: stream
-ms.assetid: 9b155d09-6fb2-4c6c-bde6-7eadeb09bc40
 ms.date: 04/23/2018
 keywords: ["KS_DVD_YUV structure"]
 ms.keywords: "*PKS_DVD_YUV, KS_DVD_YUV, KS_DVD_YUV structure [Streaming Media Devices], PKS_DVD_YUV, PKS_DVD_YUV structure pointer [Streaming Media Devices], _KS_DVD_YUV, dvdref_ea41e501-8a59-4d54-8dde-792ce2673b8c.xml, ksmedia/KS_DVD_YUV, ksmedia/PKS_DVD_YUV, stream.ks_dvd_yuv"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - _KS_DVD_YUV
+ - PKS_DVD_YUV
  - KS_DVD_YUV
 ---
 
@@ -77,3 +78,4 @@ The KS_DVD_YUV structure is used
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_dvd_ycrcb">KS_DVD_YCrCb</a>
+

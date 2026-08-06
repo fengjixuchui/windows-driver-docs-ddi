@@ -3,7 +3,6 @@ UID: NC:d3dkmddi.DXGKDDI_RESTOREMEMORYFORHOTUPDATE
 title: DXGKDDI_RESTOREMEMORYFORHOTUPDATE
 description: Restores memory for driver hot update.
 tech.root: display
-ms.assetid: de5d59c6-2ce9-442c-866d-a64b3fa58952
 ms.date: 04/04/2019
 keywords: ["DXGKDDI_RESTOREMEMORYFORHOTUPDATE callback function"]
 req.header: d3dkmddi.h
@@ -49,13 +48,13 @@ Restores memory for driver hot update. This callback function does not initializ
 
 ## -parameters
 
-### -param hContext
+### -param hContext [in]
 
-[in] A handle to the driver miniport context.
+A handle to the driver miniport context.
 
-### -param pArgs
+### -param pArgs [in]
 
-[in] A pointer to the [DXGKARG_RESTOREMEMORYFORHOTUPDATE](ns-d3dkmddi-dxgkarg_restorememoryforhotupdate.md) structure.
+A pointer to the [DXGKARG_RESTOREMEMORYFORHOTUPDATE](ns-d3dkmddi-dxgkarg_restorememoryforhotupdate.md) structure.
 
 ## -returns
 

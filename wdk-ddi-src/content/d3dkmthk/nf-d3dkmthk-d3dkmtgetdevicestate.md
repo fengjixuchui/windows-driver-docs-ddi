@@ -3,14 +3,13 @@ UID: NF:d3dkmthk.D3DKMTGetDeviceState
 title: D3DKMTGetDeviceState function (d3dkmthk.h)
 description: The D3DKMTGetDeviceState function retrieves the state of a device.
 old-location: display\d3dkmtgetdevicestate.htm
-ms.assetid: 8ea84934-63a7-40bf-8523-ccd2b9e5aceb
 ms.date: 05/10/2018
 keywords: ["D3DKMTGetDeviceState function"]
 ms.keywords: D3DKMTGetDeviceState, D3DKMTGetDeviceState function [Display Devices], OpenGL_Functions_396da637-bbc6-478c-8ec9-534d82691c45.xml, d3dkmthk/D3DKMTGetDeviceState, display.d3dkmtgetdevicestate
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -53,11 +52,11 @@ The <b>D3DKMTGetDeviceState</b> function retrieves the state of a device.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in/out]
 
 *pData* [in, out]
 
-[in/out] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_getdevicestate">D3DKMT_GETDEVICESTATE</a> structure that describes parameters for retrieving the state of a device.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_getdevicestate">D3DKMT_GETDEVICESTATE</a> structure that describes parameters for retrieving the state of a device.
 
 ## -returns
 

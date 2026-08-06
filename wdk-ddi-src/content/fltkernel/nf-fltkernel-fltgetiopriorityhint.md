@@ -4,7 +4,6 @@ title: FltGetIoPriorityHint function (fltkernel.h)
 description: The FltGetIoPriorityHint routine is used by a minifilter driver to get IO priority information from Callback Data.
 old-location: ifsk\fltgetiopriorityhint.htm
 tech.root: ifsk
-ms.assetid: 51c2068b-3dde-4e63-985c-51b8f7020948
 ms.date: 04/16/2018
 keywords: ["FltGetIoPriorityHint function"]
 ms.keywords: FltApiRef_e_to_o_55aba7ac-700d-4cca-9ad1-abf80293041d.xml, FltGetIoPriorityHint, FltGetIoPriorityHint routine [Installable File System Drivers], fltkernel/FltGetIoPriorityHint, ifsk.fltgetiopriorityhint
@@ -50,9 +49,9 @@ The <b>FltGetIoPriorityHint</b> routine is used by a minifilter driver to get IO
 
 ## -parameters
 
-### -param Data 
+### -param Data [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data">FLT_CALLBACK_DATA</a> structure that represents an I/O operation. This parameter is required and cannot be <b>NULL</b>.
 
 ## -returns

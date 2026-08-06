@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_67
+UID: NS:ks.KSFASTPROPERTY_ITEM
 title: KSFASTPROPERTY_ITEM (ks.h)
 description: The KSFASTPROPERTY_ITEM structure is used with items for fast I/O dispatching.
 old-location: stream\ksfastproperty_item.htm
 tech.root: stream
-ms.assetid: 8a39b7cb-cd05-4fb8-9e50-7425e689a36f
 ms.date: 04/23/2018
 keywords: ["KSFASTPROPERTY_ITEM structure"]
 ms.keywords: "*PKSFASTPROPERTY_ITEM, KSFASTPROPERTY_ITEM, KSFASTPROPERTY_ITEM structure [Streaming Media Devices], PKSFASTPROPERTY_ITEM, PKSFASTPROPERTY_ITEM structure pointer [Streaming Media Devices], ks-struct_dddb648f-ea8a-436a-b948-397364fe2db6.xml, ks/KSFASTPROPERTY_ITEM, ks/PKSFASTPROPERTY_ITEM, stream.ksfastproperty_item"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSFASTPROPERTY_ITEM
  - KSFASTPROPERTY_ITEM
 ---
 
@@ -79,3 +79,4 @@ Reserved and set to zero.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ks/nc-ks-pfnksfasthandler">KStrFastHandler</a>
+

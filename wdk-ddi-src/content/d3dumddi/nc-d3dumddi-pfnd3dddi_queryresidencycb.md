@@ -4,7 +4,6 @@ title: PFND3DDDI_QUERYRESIDENCYCB (d3dumddi.h)
 description: The pfnQueryResidencyCb function queries the residency status of a resource or list of allocations.
 old-location: display\pfnqueryresidencycb.htm
 tech.root: display
-ms.assetid: 707ba050-e70c-49f8-aac0-0bcc8fe9bf8b
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_QUERYRESIDENCYCB callback function"]
 ms.keywords: D3Druntime_Functions_9c92da7d-b114-4aab-adfe-13b5afebb4c8.xml, PFND3DDDI_QUERYRESIDENCYCB, PFND3DDDI_QUERYRESIDENCYCB callback, d3dumddi/pfnQueryResidencyCb, display.pfnqueryresidencycb, pfnQueryResidencyCb, pfnQueryResidencyCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnQueryResidencyCb
-product:
- - Windows
+ - PFND3DDDI_QUERYRESIDENCYCB
 ---
 
 # PFND3DDDI_QUERYRESIDENCYCB callback function
@@ -56,7 +53,7 @@ The <b>pfnQueryResidencyCb</b> function queries the residency status of a resour
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -139,3 +136,4 @@ CD3DContext::QueryResourceResidency(CONST D3DDDIARG_QUERYRESOURCERESIDENCY* pQRR
 
 
 <a href="/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi_ddi_base_functions">QueryResourceResidencyDXGI</a>
+

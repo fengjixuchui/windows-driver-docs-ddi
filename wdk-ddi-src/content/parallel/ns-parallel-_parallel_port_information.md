@@ -4,7 +4,6 @@ title: _PARALLEL_PORT_INFORMATION (parallel.h)
 description: The PARALLEL_PORT_INFORMATION structure specifies information about the resources assigned to a parallel port, the capabilities of the parallel port, and pointers to callback routines that a kernel-mode driver can use to operate the parallel port.
 old-location: parports\parallel_port_information.htm
 tech.root: parports
-ms.assetid: 9f170425-2c65-469e-adae-e845b11b9c8e
 ms.date: 02/15/2018
 keywords: ["PARALLEL_PORT_INFORMATION structure"]
 ms.keywords: "*PPARALLEL_PORT_INFORMATION, PARALLEL_PORT_INFORMATION, PARALLEL_PORT_INFORMATION structure [Parallel Ports], PPARALLEL_PORT_INFORMATION, PPARALLEL_PORT_INFORMATION structure pointer [Parallel Ports], _PARALLEL_PORT_INFORMATION, cisspd_ca857237-0c57-46e9-aedf-f6d40a25dbf8.xml, parallel/PARALLEL_PORT_INFORMATION, parallel/PPARALLEL_PORT_INFORMATION, parports.parallel_port_information"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - parallel.h
 api_name:
+ - _PARALLEL_PORT_INFORMATION
+ - PPARALLEL_PORT_INFORMATION
  - PARALLEL_PORT_INFORMATION
 ---
 
@@ -137,3 +138,4 @@ For more information, see <a href="/previous-versions/ff544223(v=vs.85)">Obtaini
 
 
 <a href="..\parallel\nc-parallel-pparallel_query_waiters_routine.md">PPARALLEL_QUERY_WAITERS_ROUTINE</a>
+

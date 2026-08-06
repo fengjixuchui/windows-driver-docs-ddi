@@ -4,7 +4,6 @@ title: IDebugSymbols3::SetSourcePathWide (dbgeng.h)
 description: The SetSourcePathWide method sets the source path.
 old-location: debugger\setsourcepathwide.htm
 tech.root: debugger
-ms.assetid: 1fdb4e2c-ece7-407e-840c-fbd6dfe46d78
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::SetSourcePathWide"]
 ms.keywords: IDebugSymbols3 interface [Windows Debugging],SetSourcePathWide method, IDebugSymbols3.SetSourcePathWide, IDebugSymbols3::SetSourcePathWide, SetSourcePathWide, SetSourcePathWide method [Windows Debugging], SetSourcePathWide method [Windows Debugging],IDebugSymbols3 interface, dbgeng/IDebugSymbols3::SetSourcePathWide, debugger.setsourcepathwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols3.SetSourcePathWide
+ - IDebugSymbols3::SetSourcePathWide
 ---
 
 # IDebugSymbols3::SetSourcePathWide
@@ -50,9 +49,9 @@ The <b>SetSourcePathWide</b>  method sets the source path.
 
 ## -parameters
 
-### -param Path 
+### -param Path [in]
 
-[in]
+
 Specifies the new source path.  This is a string that contains source path elements separated by semicolons (<b>;</b>).  Each source path element can specify either a directory or a source server.
 
 ## -returns
@@ -94,3 +93,4 @@ For more information about manipulating the source path, see <a href="/windows-h
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

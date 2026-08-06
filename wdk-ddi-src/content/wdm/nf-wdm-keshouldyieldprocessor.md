@@ -1,11 +1,11 @@
 ---
 UID: NF:wdm.KeShouldYieldProcessor
 title: KeShouldYieldProcessor
+tech.root: kernel
 ms.date: 11/8/2019
 keywords: ["KeShouldYieldProcessor function"]
-ms.topic: language-reference
 targetos: Windows
-description: 
+description: "Learn more about: KeShouldYieldProcessor function"
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 

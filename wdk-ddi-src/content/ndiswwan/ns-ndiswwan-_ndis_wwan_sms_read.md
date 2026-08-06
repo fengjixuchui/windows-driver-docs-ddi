@@ -4,7 +4,6 @@ title: _NDIS_WWAN_SMS_READ (ndiswwan.h)
 description: The NDIS_WWAN_SMS_READ structure represents an SMS message to read.
 old-location: netvista\ndis_wwan_sms_read.htm
 tech.root: netvista
-ms.assetid: 2c15c16f-773b-415d-80a1-fd0b3bcf6fbf
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_SMS_READ structure"]
 ms.keywords: "*PNDIS_WWAN_SMS_READ, NDIS_WWAN_SMS_READ, NDIS_WWAN_SMS_READ structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_READ, PNDIS_WWAN_SMS_READ structure pointer [Network Drivers Starting with Windows Vista], WwanRef_7264d34b-78a0-4537-a386-bd77d210d7ae.xml, _NDIS_WWAN_SMS_READ, ndiswwan/NDIS_WWAN_SMS_READ, ndiswwan/PNDIS_WWAN_SMS_READ, netvista.ndis_wwan_sms_read"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_SMS_READ
+ - PNDIS_WWAN_SMS_READ
  - NDIS_WWAN_SMS_READ
 ---
 
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_SMS_READ)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field SmsRead
 
@@ -112,8 +113,9 @@ A formatted
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_sms_read">WWAN_SMS_READ</a>
+

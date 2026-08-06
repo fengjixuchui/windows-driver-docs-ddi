@@ -4,7 +4,6 @@ title: IPortableDeviceValues::SetUnsignedLargeIntegerValue (portabledevicetypes.
 description: Adds a new ULONGLONG value (type VT_UI8) or overwrites an existing one.
 old-location: wpddk\iportabledevicevalues_setunsignedlargeintegervalue.htm
 tech.root: wpd_dk
-ms.assetid: 717d1ea8-3315-4fa4-b066-c1529f57090f
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::SetUnsignedLargeIntegerValue"]
 ms.keywords: IPortableDeviceValues interface,SetUnsignedLargeIntegerValue method, IPortableDeviceValues.SetUnsignedLargeIntegerValue, IPortableDeviceValues::SetUnsignedLargeIntegerValue, IPortableDeviceValuesSetUnsignedLargeIntegerValue, SetUnsignedLargeIntegerValue, SetUnsignedLargeIntegerValue method, SetUnsignedLargeIntegerValue method,IPortableDeviceValues interface, portabledevicetypes/IPortableDeviceValues::SetUnsignedLargeIntegerValue, wpddk.iportabledevicevalues_setunsignedlargeintegervalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.SetUnsignedLargeIntegerValue
+ - IPortableDeviceValues::SetUnsignedLargeIntegerValue
 ---
 
 # IPortableDeviceValues::SetUnsignedLargeIntegerValue
@@ -51,14 +50,14 @@ Adds a new <b>ULONGLONG</b> value (type VT_UI8) or overwrites an existing one.
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> that specifies the item to create or overwrite.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 A <b>ULONGLONG</b> that specifies the new value.
 
 ## -returns
@@ -94,3 +93,4 @@ None.
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-getunsignedlargeintegervalue">IPortableDeviceValues::GetUnsignedLargeIntegerValue</a>
+

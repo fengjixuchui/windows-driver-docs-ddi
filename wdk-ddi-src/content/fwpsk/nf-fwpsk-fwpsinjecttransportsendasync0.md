@@ -4,7 +4,6 @@ title: FwpsInjectTransportSendAsync0 function (fwpsk.h)
 description: The FwpsInjectTransportSendAsync0 function injects packet data from the transport, datagram data, or ICMP error layers into the send data path.Note  FwpsInjectTransportSendAsync0 is the specific version of FwpsInjectTransportSendAsync used in Windows Vista and later. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information. For Windows 7, FwpsInjectTransportSendAsync1 is available.
 old-location: netvista\fwpsinjecttransportsendasync0.htm
 tech.root: netvista
-ms.assetid: 1298a825-16c4-49ab-b038-19247975ea46
 ms.date: 05/02/2018
 keywords: ["FwpsInjectTransportSendAsync0 function"]
 ms.keywords: FwpsInjectTransportSendAsync0, FwpsInjectTransportSendAsync0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsInjectTransportSendAsync0, netvista.fwpsinjecttransportsendasync0, wfp_ref_2_funct_3_fwps_I_76082863-1d74-4916-9766-c65b745dca60.xml
@@ -54,24 +53,24 @@ The
 
 ## -parameters
 
-### -param injectionHandle 
+### -param injectionHandle [in]
 
-[in]
+
 An injection handle that was previously created by a call to the 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectionhandlecreate0">
      FwpsInjectionHandleCreate0</a> function.
 
-### -param injectionContext 
+### -param injectionContext [in, optional]
 
-[in, optional]
+
 An optional handle to the injection context. If specified, it can be obtained by calling the 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsquerypacketinjectionstate0">FwpsQueryPacketInjectionState0</a> function when the packet injection state 
      <a href="/windows-hardware/drivers/ddi/fwpsk/ne-fwpsk-fwps_packet_injection_state_">FWPS_PACKET_INJECTION_STATE</a> is
      <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF</b>.
 
-### -param endpointHandle 
+### -param endpointHandle [in]
 
-[in]
+
 A handle that indicates the stack transport endpoint in the send data path into which the packet
      is to be injected. This endpoint handle is provided to a callout through the 
      <b>transportEndpointHandle</b> member of the 
@@ -82,23 +81,23 @@ A handle that indicates the stack transport endpoint in the send data path into 
      possible, before the socket associated with the stack endpoint is closed and the handle becomes no
      longer valid.
 
-### -param flags 
+### -param flags [in]
 
-[in]
+
 Reserved. Callout drivers must set this parameter to zero.
 
-### -param sendArgs 
+### -param sendArgs [in, optional]
 
-[in, optional]
+
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_transport_send_params0_">
      FWPS_TRANSPORT_SEND_PARAMS0</a> structure that specifies the properties of the current outbound
      packet. Can be <b>NULL</b> only if the net buffer list to be injected contains an IP header (for example, if
      the packet is sent via a raw socket).
 
-### -param addressFamily 
+### -param addressFamily [in]
 
-[in]
+
 One of the following address families:
      
 
@@ -116,9 +115,9 @@ The IPv4 address family.
 
 The IPv6 address family.
 
-### -param compartmentId 
+### -param compartmentId [in]
 
-[in]
+
 The identifier of the routing compartment into which the packet data is injected, specified as a 
      <a href="/windows/win32/api/winnt/ne-winnt-compartment_id">COMPARTMENT_ID</a> type. This identifier is provided
      to a callout through the 
@@ -130,11 +129,11 @@ The identifier of the routing compartment into which the packet data is injected
      the 
      <b>currentMetadataValues</b> member. Otherwise, set this parameter to UNSPECIFIED_COMPARTMENT_ID.
 
-### -param netBufferList 
+### -param netBufferList [in, out]
 
-[in, out]
+
 A pointer to a 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure that describes
+     <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure that describes
      the packet data that is being injected. A callout driver allocates a <b>NET_BUFFER_LIST</b> structure to use to
      inject packet data by calling either the 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsallocateclonenetbufferlist0">
@@ -142,17 +141,17 @@ A pointer to a
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsallocatenetbufferandnetbufferlist0">
      FwpsAllocateNetBufferAndNetBufferList0</a> function.
 
-### -param completionFn 
+### -param completionFn [in]
 
-[in]
+
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_inject_complete0">completionFn</a> callout function provided by
      the callout driver. The filter engine calls this function after the packet data, described by the 
      <i>netBufferList</i> parameter, has been injected into the network stack.
 
-### -param completionContext 
+### -param completionContext [in, optional]
 
-[in, optional]
+
 A pointer to a callout driver-provided context that is passed to the callout function pointed to
      by the 
      <i>completionFn</i> parameter. This parameter is optional and can be <b>NULL</b>.
@@ -178,7 +177,7 @@ The packet data injection was initiated successfully. The filter engine will cal
        function after the filter engine has completed injecting the packet data into the network stack, or
        when an error occurred subsequently. In case of an error, the 
        <b>Status</b> member of the completed 
-       <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure will indicate
+       <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure will indicate
        the reason for failure.
 
 </td>
@@ -350,7 +349,7 @@ FWPS_LAYER_DATAGRAM_DATA_V6 (when outbound direction is specified with FWP_DIREC
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 

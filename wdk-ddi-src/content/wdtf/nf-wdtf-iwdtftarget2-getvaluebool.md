@@ -4,7 +4,6 @@ title: IWDTFTarget2::GetValueBool (wdtf.h)
 description: Returns a boolean value from the target that is associated with a specified attribute.
 old-location: dtf\iwdtftarget2_getvaluebool.htm
 tech.root: dtf
-ms.assetid: 53be5e16-7c04-41c3-a808-828982eda440
 ms.date: 04/04/2018
 keywords: ["IWDTFTarget2::GetValueBool"]
 ms.keywords: GetValueBool, GetValueBool method [Windows Device Testing Framework], GetValueBool method [Windows Device Testing Framework],IWDTFTarget2 interface, IWDTFTarget2 interface [Windows Device Testing Framework],GetValueBool method, IWDTFTarget2.GetValueBool, IWDTFTarget2::GetValueBool, Microsoft.WDTF.IWDTFTarget2.GetValueBool, Microsoft::WDTF::IWDTFTarget2::GetValueBool, dtf.iwdtftarget2_getvaluebool, wdtf/IWDTFTarget2::GetValueBool
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFTarget2.GetValueBool
+ - IWDTFTarget2::GetValueBool
 ---
 
 # IWDTFTarget2::GetValueBool
@@ -50,14 +49,14 @@ Returns a boolean value from the target that is associated with a specified attr
 
 ## -parameters
 
-### -param SDEL 
+### -param SDEL [in]
 
-[in]
+
 An SDEL statement that specifies the attribute value to retrieve.
 
-### -param pValue 
+### -param pValue [out, retval]
 
-[out, retval]
+
 The address of a variable that receives the result of this method.
 
 ## -returns
@@ -75,3 +74,4 @@ to work properly.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftarget2">IWDTFTarget2</a>
+

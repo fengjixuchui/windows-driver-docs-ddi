@@ -4,7 +4,6 @@ title: IDebugOutputCallbacksWide (dbgeng.h)
 description: IDebugOutputCallbacksWide interface
 old-location: debugger\idebugoutputcallbackswide.htm
 tech.root: debugger
-ms.assetid: 2f0c10f7-009a-4108-ad23-d6b6e2e1257e
 ms.date: 05/03/2018
 keywords: ["IDebugOutputCallbacksWide interface"]
 ms.keywords: IDebugOutputCallbacksWide, IDebugOutputCallbacksWide interface [Windows Debugging], IDebugOutputCallbacksWide interface [Windows Debugging],described, dbgeng/IDebugOutputCallbacksWide, debugger.idebugoutputcallbackswide
@@ -48,10 +47,8 @@ api_name:
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugOutputCallbacksWide</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IDebugOutputCallbacksWide</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IDebugOutputCallbacksWide</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IDebugOutputCallbacksWide</b> also has these types of members:
+
 
 ## -see-also
 

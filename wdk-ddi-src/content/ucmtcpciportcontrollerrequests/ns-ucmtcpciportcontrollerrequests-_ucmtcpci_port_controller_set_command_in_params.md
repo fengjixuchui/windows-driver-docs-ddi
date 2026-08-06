@@ -4,7 +4,6 @@ title: _UCMTCPCI_PORT_CONTROLLER_SET_COMMAND_IN_PARAMS (ucmtcpciportcontrollerre
 description: Stores the specified command registers. This structure is used in the IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_COMMAND request.
 old-location: buses\ucmtcpci_port_controller_set_command_in_params.htm
 tech.root: usbref
-ms.assetid: 0c41328d-a40a-4b76-a738-5e255aba7f58
 ms.date: 05/07/2018
 keywords: ["UCMTCPCI_PORT_CONTROLLER_SET_COMMAND_IN_PARAMS structure"]
 ms.keywords: "*PUCMTCPCI_PORT_CONTROLLER_SET_COMMAND_IN_PARAMS, PUCMTCPCI_PORT_CONTROLLER_SET_COMMAND_IN_PARAMS, PUCMTCPCI_PORT_CONTROLLER_SET_COMMAND_IN_PARAMS structure pointer [Buses], UCMTCPCI_PORT_CONTROLLER_SET_COMMAND_IN_PARAMS, UCMTCPCI_PORT_CONTROLLER_SET_COMMAND_IN_PARAMS structure [Buses], _UCMTCPCI_PORT_CONTROLLER_SET_COMMAND_IN_PARAMS, buses.ucmtcpci_port_controller_set_command_in_params, ucmtcpciportcontrollerrequests/PUCMTCPCI_PORT_CONTROLLER_SET_COMMAND_IN_PARAMS, ucmtcpciportcontrollerrequests/UCMTCPCI_PORT_CONTROLLER_SET_COMMAND_IN_PARAMS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - UcmTcpciPortControllerRequests.h
 api_name:
+ - _UCMTCPCI_PORT_CONTROLLER_SET_COMMAND_IN_PARAMS
+ - PUCMTCPCI_PORT_CONTROLLER_SET_COMMAND_IN_PARAMS
  - UCMTCPCI_PORT_CONTROLLER_SET_COMMAND_IN_PARAMS
 ---
 
@@ -67,3 +68,4 @@ Handle to the port controller object that the client driver received in the prev
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ucmtcpciportcontrollerrequests/ni-ucmtcpciportcontrollerrequests-ioctl_ucmtcpci_port_controller_set_command">IOCTL_UCMTCPCI_PORT_CONTROLLER_SET_COMMAND</a>
+

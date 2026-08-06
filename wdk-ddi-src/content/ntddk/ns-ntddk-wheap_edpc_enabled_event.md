@@ -1,15 +1,16 @@
 ---
 UID: NS:ntddk._WHEAP_EDPC_ENABLED_EVENT
-title: WHEAP_EDPC_ENABLED_EVENT
-ms.date: 04/28/2020
-ms.topic: language-reference
+tech.root: whea
+title: WHEAP_EDPC_ENABLED_EVENT (ntddk.h)
+ms.date: 03/03/2022
 targetos: Windows
-description: 
+description: The WHEAP_EDPC_ENABLED_EVENT structure is reserved for system use. Do not use.
+prerelease: false
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
 req.header: ntddk.h
-req.include-header: 
+req.include-header: Ntddk.h
 req.kmdf-ver: 
 req.lib: 
 req.max-support: 
@@ -28,6 +29,7 @@ api_location:
  - ntddk.h
 api_name:
  - _WHEAP_EDPC_ENABLED_EVENT
+ - PWHEAP_EDPC_ENABLED_EVENT
  - WHEAP_EDPC_ENABLED_EVENT
 f1_keywords:
  - _WHEAP_EDPC_ENABLED_EVENT
@@ -38,11 +40,13 @@ f1_keywords:
  - ntddk/WHEAP_EDPC_ENABLED_EVENT
 dev_langs:
  - c++
+helpviewer_keywords:
+ - _WHEAP_EDPC_ENABLED_EVENT
 ---
 
 ## -description
 
-Reserved for system use.
+The **WHEAP_EDPC_ENABLED_EVENT** structure is reserved for system use. Do not use.
 
 ## -struct-fields
 
@@ -50,7 +54,8 @@ Reserved for system use.
 
 ### -field eDPCEnabled
 
+### -field eDPCRecovEnabled
+
 ## -remarks
 
 ## -see-also
-

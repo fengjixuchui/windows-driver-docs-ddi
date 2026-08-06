@@ -4,7 +4,6 @@ title: StorPortGetRequestInfo function (storport.h)
 description: The StorPortGetRequestInfo routine retrieves the IO request information associated with a SCSI request block (SRB) and returns it in a STOR_REQUEST_INFO structure.
 old-location: storage\storportgetrequestinfo.htm
 tech.root: storage
-ms.assetid: 3B0A25E8-6DBC-4AA9-A0D0-DDB36B402F43
 ms.date: 03/29/2018
 keywords: ["StorPortGetRequestInfo function"]
 ms.keywords: StorPortGetRequestInfo, StorPortGetRequestInfo routine [Storage Devices], storage.storportgetrequestinfo, storport/StorPortGetRequestInfo
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,19 +49,19 @@ api_name:
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param Srb 
+### -param Srb [in]
 
-[in]
+
 A pointer to the SRB to be queried.
 
-### -param RequestInfo 
+### -param RequestInfo [out]
 
-[out]
+
 A pointer to a caller-supplied <a href="/windows-hardware/drivers/ddi/storport/ns-storport-_stor_request_info_v1">STOR_REQUEST_INFO</a> structure.
 
 ## -returns

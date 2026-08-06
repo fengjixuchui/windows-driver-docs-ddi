@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11._DOT11_CURRENT_OPERATION_MODE
 title: _DOT11_CURRENT_OPERATION_MODE (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_CURRENT_OPERATION_MODE structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_current_operation_mode.htm
 tech.root: netvista
-ms.assetid: 085ee8f4-7e96-416a-a59f-f35c8ad0dbf4
 ms.date: 02/16/2018
 keywords: ["DOT11_CURRENT_OPERATION_MODE structure"]
 ms.keywords: "*PDOT11_CURRENT_OPERATION_MODE, DOT11_CURRENT_OPERATION_MODE, DOT11_CURRENT_OPERATION_MODE structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_d2f0f1a7-3e89-4ac1-acbd-a032909837a2.xml, PDOT11_CURRENT_OPERATION_MODE, PDOT11_CURRENT_OPERATION_MODE structure pointer [Network Drivers Starting with Windows Vista], _DOT11_CURRENT_OPERATION_MODE, netvista.dot11_current_operation_mode, windot11/DOT11_CURRENT_OPERATION_MODE, windot11/PDOT11_CURRENT_OPERATION_MODE"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - windot11.h
 api_name:
+ - _DOT11_CURRENT_OPERATION_MODE
+ - PDOT11_CURRENT_OPERATION_MODE
  - DOT11_CURRENT_OPERATION_MODE
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_CURRENT_OPERATION_MODE structure
@@ -52,7 +51,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_CURRENT_OPERATION_MODE structure defines the current Native 802.11 operation mode on the
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_CURRENT_OPERATION_MODE structure defines the current Native 802.11 operation mode on the
   instance of a miniport driver that manages a wireless LAN (WLAN) adapter.
 
 ## -struct-fields
@@ -142,3 +144,4 @@ For more information about Native 802.11 operation modes, see
 
 <a href="/windows-hardware/drivers/network/oid-dot11-current-operation-mode">
    OID_DOT11_CURRENT_OPERATION_MODE</a>
+

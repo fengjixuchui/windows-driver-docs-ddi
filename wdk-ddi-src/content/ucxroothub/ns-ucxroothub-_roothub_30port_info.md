@@ -4,7 +4,6 @@ title: _ROOTHUB_30PORT_INFO (ucxroothub.h)
 description: Provides information about a USB 3.0 root hub port. This structure is passed by UCX in the EVT_UCX_ROOTHUB_GET_30PORT_INFO callback function.
 old-location: buses\_roothub_30port_info.htm
 tech.root: usbref
-ms.assetid: 5C39C0EB-AC7F-44E5-95EB-9F067DBE0801
 ms.date: 05/07/2018
 keywords: ["ROOTHUB_30PORT_INFO structure"]
 ms.keywords: "*PROOTHUB_30PORT_INFO, P_ROOTHUB_30PORT_INFO, P_ROOTHUB_30PORT_INFO structure pointer [Buses], ROOTHUB_30PORT_INFO, ROOTHUB_30PORT_INFO structure [Buses], _ROOTHUB_30PORT_INFO, buses._roothub_30port_info, ucxroothub/P_ROOTHUB_30PORT_INFO, ucxroothub/_ROOTHUB_30PORT_INFO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ucxroothub.h
 api_name:
+ - _ROOTHUB_30PORT_INFO
+ - PROOTHUB_30PORT_INFO
  - ROOTHUB_30PORT_INFO
 ---
 
@@ -73,3 +74,4 @@ A <a href="/windows-hardware/drivers/ddi/ucxroothub/ne-ucxroothub-_tristate">TRI
 ### -field DebugCapable
 
 A <a href="/windows-hardware/drivers/ddi/ucxroothub/ne-ucxroothub-_tristate">TRISTATE</a> value that indicates if the port is debug capable.
+

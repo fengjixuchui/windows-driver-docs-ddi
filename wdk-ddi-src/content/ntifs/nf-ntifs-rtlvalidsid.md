@@ -4,7 +4,6 @@ title: RtlValidSid function (ntifs.h)
 description: The RtlValidSid routine validates a security identifier (SID) by verifying that the revision number is within a known range and that the number of subauthorities is less than the maximum.
 old-location: ifsk\rtlvalidsid.htm
 tech.root: ifsk
-ms.assetid: d4579703-0d51-4e23-b458-b2be43951dac
 ms.date: 04/16/2018
 keywords: ["RtlValidSid function"]
 ms.keywords: RtlValidSid, RtlValidSid routine [Installable File System Drivers], ifsk.rtlvalidsid, ntifs/RtlValidSid, rtlref_8d79344c-bb78-433f-be34-84e314b232a0.xml
@@ -51,9 +50,9 @@ The <b>RtlValidSid</b> routine validates a security identifier (SID) by verifyin
 
 ## -parameters
 
-### -param Sid 
+### -param Sid [in]
 
-[in]
+
 Pointer to the SID structure to validate.
 
 ## -returns
@@ -62,7 +61,7 @@ Pointer to the SID structure to validate.
 
 ## -remarks
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

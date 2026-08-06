@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_RECOMMENDFUNCTIONALVIDPN
 title: DXGKDDI_RECOMMENDFUNCTIONALVIDPN (d3dkmddi.h)
 description: The DxgkDdiRecommendFunctionalVidPn function creates a functional VidPN that can be implemented on a specified display adapter.
 old-location: display\dxgkddirecommendfunctionalvidpn.htm
-ms.assetid: 320a77a7-d7d4-47b9-8a40-2b6e12819e4b
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_RECOMMENDFUNCTIONALVIDPN callback function"]
 ms.keywords: DXGKDDI_RECOMMENDFUNCTIONALVIDPN, DXGKDDI_RECOMMENDFUNCTIONALVIDPN callback, DmFunctions_9b5062a8-31fa-4351-bf10-a90f57bbaed8.xml, DxgkDdiRecommendFunctionalVidPn, DxgkDdiRecommendFunctionalVidPn callback function [Display Devices], d3dkmddi/DxgkDdiRecommendFunctionalVidPn, display.dxgkddirecommendfunctionalvidpn
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiRecommendFunctionalVidPn
-product:
- - Windows
+ - DXGKDDI_RECOMMENDFUNCTIONALVIDPN
 ---
 
 # DXGKDDI_RECOMMENDFUNCTIONALVIDPN callback function
@@ -52,13 +49,13 @@ The <i>DxgkDdiRecommendFunctionalVidPn</i> function creates a functional VidPN t
 
 ## -parameters
 
-### -param hAdapter
+### -param hAdapter [in]
 
-[in] A handle to a context block associated with a display adapter. The display miniport driver previously provided this handle to the DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
+A handle to a context block associated with a display adapter. The display miniport driver previously provided this handle to the DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
 
-### -param pRecommendFunctionalVidPn
+### -param pRecommendFunctionalVidPn [in]
 
-[in] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_recommendfunctionalvidpn">DXGKARG_RECOMMENDFUNCTIONALVIDPN</a> structure that contains function arguments. The caller supplies the <b>hRecommendedFunctionalVidPn</b> member, which is a handle to an empty VidPN object. <i>DxgkDdiRecommendFunctionalVidPn</i> populates the VidPN object with the elements of a functional VidPN: topology, mode sets, pinned modes.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_recommendfunctionalvidpn">DXGKARG_RECOMMENDFUNCTIONALVIDPN</a> structure that contains function arguments. The caller supplies the <b>hRecommendedFunctionalVidPn</b> member, which is a handle to an empty VidPN object. <i>DxgkDdiRecommendFunctionalVidPn</i> populates the VidPN object with the elements of a functional VidPN: topology, mode sets, pinned modes.
 
 ## -returns
 
@@ -107,3 +104,4 @@ Create a new target mode set and add one target mode to the set. Assign the targ
 For information about how to add paths, add mode sets, assign modes, and pin modes, see <a href="/windows-hardware/drivers/display/vidpn-objects-and-interfaces">VidPN Objects and Interfaces</a>.
 
 <i>DxgkDdiRecommendFunctionalVidPn</i> should be made pageable.
+

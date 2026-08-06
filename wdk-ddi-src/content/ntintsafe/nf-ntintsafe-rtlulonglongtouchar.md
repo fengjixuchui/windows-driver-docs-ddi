@@ -4,7 +4,6 @@ title: RtlULongLongToUChar function (ntintsafe.h)
 description: Converts a value of type ULONGLONG to a value of type UCHAR.
 old-location: kernel\rtlulonglongtouchar.htm
 tech.root: kernel
-ms.assetid: 3A701A1B-257F-42C4-80A7-8CFF0DAD1A83
 ms.date: 04/30/2018
 keywords: ["RtlULongLongToUChar function"]
 ms.keywords: RtlULongLongToUChar, RtlULongLongToUChar function [Kernel-Mode Driver Architecture], kernel.rtlulonglongtouchar, ntintsafe/RtlULongLongToUChar
@@ -50,14 +49,14 @@ Converts a value of type <b>ULONGLONG</b> to a value of type <b>UCHAR</b>.
 
 ## -parameters
 
-### -param ullOperand 
+### -param ullOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pch 
+### -param pch [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

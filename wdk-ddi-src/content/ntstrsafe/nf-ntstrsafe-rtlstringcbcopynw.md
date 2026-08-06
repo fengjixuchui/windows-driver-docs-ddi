@@ -1,10 +1,9 @@
 ---
 UID: NF:ntstrsafe.RtlStringCbCopyNW
 title: RtlStringCbCopyNW function (ntstrsafe.h)
-description: The RtlStringCbCopyNW and RtlStringCbCopyNA functions copy a byte-counted string to a buffer while limiting the size of the copied string.
+description: Learn how the RtlStringCbCopyNW and RtlStringCbCopyNA functions copy a byte-counted string to a buffer while limiting the size of the copied string.
 old-location: kernel\rtlstringcbcopyn.htm
 tech.root: kernel
-ms.assetid: d64fb3e6-fba1-4383-bdb0-a63dc7c16033
 ms.date: 04/30/2018
 keywords: ["RtlStringCbCopyNW function"]
 ms.keywords: RtlStringCbCopyN, RtlStringCbCopyNA, RtlStringCbCopyNW, RtlStringCbCopyNW function [Kernel-Mode Driver Architecture], kernel.rtlstringcbcopyn, ntstrsafe/RtlStringCbCopyNA, ntstrsafe/RtlStringCbCopyNW, safestrings_a3f7f7a8-b4a1-4c7c-b384-2243b3c97a4e.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -40,8 +39,6 @@ api_location:
  - Ntstrsafe.dll
 api_name:
  - RtlStringCbCopyNW
- - RtlStringCbCopyNA
- - RtlStringCbCopyNW
 ---
 
 # RtlStringCbCopyNW function
@@ -53,23 +50,23 @@ The <b>RtlStringCbCopyNW</b> and <b>RtlStringCbCopyNA</b> functions copy a byte-
 
 ## -parameters
 
-### -param pszDest 
+### -param pszDest [out]
 
-[out]
+
 A pointer to a caller-supplied buffer that receives the copied string. The string at <i>pszSrc</i>, up to <i>cbSrc</i> bytes, is copied to the buffer at <i>pszDest</i> and terminated with a null character.
 
-### -param cbDest 
+### -param cbDest [in]
 
-[in]
+
 The size, in bytes, of the destination buffer. The buffer must be large enough for both the string and the terminating null character.
 
 For Unicode strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * <b>sizeof</b>(WCHAR). 
 
 For ANSI strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * <b>sizeof</b>(<b>char</b>).
 
-### -param pszSrc 
+### -param pszSrc [in]
 
-[in]
+
 A pointer to a caller-supplied, null-terminated string.
 
 ### -param cbToCopy
@@ -190,3 +187,4 @@ For more information about the safe string functions, see <a href="/windows-hard
 
 
 <a href="/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcchcopyna">RtlStringCchCopyN</a>
+

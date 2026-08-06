@@ -4,7 +4,6 @@ title: ExUnregisterCallback function (wdm.h)
 description: The ExUnregisterCallback routine removes a callback routine previously registered with a callback object from the list of routines to be called during the notification process.
 old-location: kernel\exunregistercallback.htm
 tech.root: kernel
-ms.assetid: a7631732-fac5-458a-b644-eaffd5e53c31
 ms.date: 04/30/2018
 keywords: ["ExUnregisterCallback function"]
 ms.keywords: ExUnregisterCallback, ExUnregisterCallback routine [Kernel-Mode Driver Architecture], k102_981ea9e7-42fc-4c63-9cc9-5d7aa3d35b72.xml, kernel.exunregistercallback, wdm/ExUnregisterCallback
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>ExUnregisterCallback</b> routine removes a callback routine previously re
 
 ## -parameters
 
-### -param CallbackRegistration 
+### -param CallbackRegistration [in, out]
 
-[in, out]
+
 Specifies the callback routine to unregister. This must be the value returned by <b>ExRegisterCallback</b> when the callback was registered.
 
 ## -remarks

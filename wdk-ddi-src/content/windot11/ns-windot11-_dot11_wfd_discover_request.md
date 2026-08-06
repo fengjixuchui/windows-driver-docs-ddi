@@ -4,7 +4,6 @@ title: _DOT11_WFD_DISCOVER_REQUEST (windot11.h)
 description: The OID_DOT11_WFD_DISCOVER_REQUEST structure is the input data for an OID_DOT11_WFD_DISCOVER_REQUEST request. The structure contains the parameters for a Wi-Fi Direct device discovery.
 old-location: netvista\_dot11_wfd_discover_request.htm
 tech.root: netvista
-ms.assetid: 231318AA-9112-41E2-9E7A-FEC64E5FB30A
 ms.date: 02/16/2018
 keywords: ["DOT11_WFD_DISCOVER_REQUEST structure"]
 ms.keywords: "*PDOT11_WFD_DISCOVER_REQUEST, DOT11_WFD_DISCOVER_REQUEST, DOT11_WFD_DISCOVER_REQUEST structure [Network Drivers Starting with Windows Vista], PDOT11_WFD_DISCOVER_REQUEST, PDOT11_WFD_DISCOVER_REQUEST structure pointer [Network Drivers Starting with Windows Vista], _DOT11_WFD_DISCOVER_REQUEST, netvista._dot11_wfd_discover_request, windot11/ DOT11_WFD_DISCOVER_REQUEST, windot11/PDOT11_WFD_DISCOVER_REQUEST"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - Windot11.h
 api_name:
+ - _DOT11_WFD_DISCOVER_REQUEST
+ - PDOT11_WFD_DISCOVER_REQUEST
  - DOT11_WFD_DISCOVER_REQUEST
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_WFD_DISCOVER_REQUEST structure
@@ -52,14 +51,17 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The <b>OID_DOT11_WFD_DISCOVER_REQUEST</b> structure is the input  data for an <a href="/windows-hardware/drivers/network/oid-dot11-wfd-discover-request">OID_DOT11_WFD_DISCOVER_REQUEST</a> request.  The structure contains the parameters for a Wi-Fi Direct device discovery.
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The <b>OID_DOT11_WFD_DISCOVER_REQUEST</b> structure is the input  data for an <a href="/windows-hardware/drivers/network/oid-dot11-wfd-discover-request">OID_DOT11_WFD_DISCOVER_REQUEST</a> request.  The structure contains the parameters for a Wi-Fi Direct device discovery.
 
 ## -struct-fields
 
 ### -field Header
 
 The type, revision, and size of the<b>OID_DOT11_WFD_DISCOVER_REQUEST</b> structure. This member is formatted as an
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+     <a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 
 The miniport driver must set the members of
@@ -87,7 +89,7 @@ This member must be set to
        <b>sizeof</b>(<b>DOT11_SIZEOF_WFD_DISCOVER_REQUEST_REVISION_1</b>).
 
 For more information about these members, see
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+     <a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 ### -field DiscoverType
 
@@ -107,7 +109,7 @@ The offset to the list of P2P Device filters, which specifies the P2P devices an
 
 When a list entry specifies a non-broadcast MAC address as the Device ID, the driver must use this MAC address in the Device ID Attribute of the P2P IEs it includes in the probe requests.
 
-The offset in the <b>InformationBuffer</b> of the <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> where a list of P2P device identifiers begins. These are the identifiers to for during device discovery.
+The offset in the <b>InformationBuffer</b> of the <a href="..\oidrequest\ns-oidrequest-ndis_oid_request.md">NDIS_OID_REQUEST</a> where a list of P2P device identifiers begins. These are the identifiers to for during device discovery.
 
 ### -field uNumDeviceFilters
 
@@ -115,7 +117,7 @@ The number of P2P device filters to use during WFD device discovery. The default
 
 ### -field uIEsOffset
 
-The offset in the <b>InformationBuffer</b> of the <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure where the additional Informational Elements (IEs) begin.
+The offset in the <b>InformationBuffer</b> of the <a href="..\oidrequest\ns-oidrequest-ndis_oid_request.md">NDIS_OID_REQUEST</a> structure where the additional Informational Elements (IEs) begin.
 
 ### -field uIEsLength
 
@@ -161,4 +163,5 @@ The IEs present at <b>uIEsOffset</b>, for the duration of the device discovery, 
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+

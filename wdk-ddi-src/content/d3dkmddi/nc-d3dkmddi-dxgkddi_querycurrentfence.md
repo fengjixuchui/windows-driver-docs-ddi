@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_QUERYCURRENTFENCE
 title: DXGKDDI_QUERYCURRENTFENCE (d3dkmddi.h)
 description: The DxgkDdiQueryCurrentFence function queries about the latest completed submission fence identifier in the hardware command execution unit.
 old-location: display\dxgkddiquerycurrentfence.htm
-ms.assetid: 0ca4d42f-3036-4b81-91a4-fbce7ac891fe
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_QUERYCURRENTFENCE callback function"]
 ms.keywords: DXGKDDI_QUERYCURRENTFENCE, DXGKDDI_QUERYCURRENTFENCE callback, DmFunctions_d8fe2a82-bd21-4071-9dcf-5b3a12fe25ef.xml, DxgkDdiQueryCurrentFence, DxgkDdiQueryCurrentFence callback function [Display Devices], d3dkmddi/DxgkDdiQueryCurrentFence, display.dxgkddiquerycurrentfence
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3dkmddi.h
 api_name:
- - DxgkDdiQueryCurrentFence
+ - DXGKDDI_QUERYCURRENTFENCE
 ---
 
 # DXGKDDI_QUERYCURRENTFENCE callback function
@@ -50,13 +49,13 @@ The <i>DxgkDdiQueryCurrentFence</i> function queries about the latest completed 
 
 ## -parameters
 
-### -param hAdapter
+### -param hAdapter [in]
 
-[in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
+A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
 
-### -param pCurrentFence
+### -param pCurrentFence [in/out]
 
-[in/out] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_querycurrentfence">DXGKARG_QUERYCURRENTFENCE</a> structure that contains information about the current fence data.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_querycurrentfence">DXGKARG_QUERYCURRENTFENCE</a> structure that contains information about the current fence data.
 
 ## -returns
 
@@ -127,3 +126,4 @@ At device interrupt IRQL, calls <a href="/windows-hardware/drivers/ddi/d3dkmddi/
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_interrupt_routine">DxgkDdiInterruptRoutine</a>
+

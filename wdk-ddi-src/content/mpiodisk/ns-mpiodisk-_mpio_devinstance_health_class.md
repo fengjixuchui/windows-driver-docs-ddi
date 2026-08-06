@@ -1,10 +1,9 @@
 ---
 UID: NS:mpiodisk._MPIO_DEVINSTANCE_HEALTH_CLASS
 title: _MPIO_DEVINSTANCE_HEALTH_CLASS (mpiodisk.h)
-description: The MPIO_DEVINSTANCE_HEALTH_CLASS structure holds the health information for a instance of a device exposed through the specified path identifiers.
+description: The MPIO_DEVINSTANCE_HEALTH_CLASS structure holds the health information for an instance of a device exposed through the specified path identifiers.
 old-location: storage\mpio_devinstance_health_class.htm
 tech.root: storage
-ms.assetid: 6d0afab5-4aba-4ebc-a864-85c83cf464d0
 ms.date: 03/29/2018
 keywords: ["MPIO_DEVINSTANCE_HEALTH_CLASS structure"]
 ms.keywords: "*PMPIO_DEVINSTANCE_HEALTH_CLASS, MPIO_DEVINSTANCE_HEALTH_CLASS, MPIO_DEVINSTANCE_HEALTH_CLASS structure [Storage Devices], PMPIO_DEVINSTANCE_HEALTH_CLASS, PMPIO_DEVINSTANCE_HEALTH_CLASS structure pointer [Storage Devices], _MPIO_DEVINSTANCE_HEALTH_CLASS, mpiodisk/MPIO_DEVINSTANCE_HEALTH_CLASS, mpiodisk/PMPIO_DEVINSTANCE_HEALTH_CLASS, storage.mpio_devinstance_health_class, structs-scsibus_aae91588-5920-42bb-8c74-13604bed0bfc.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - mpiodisk.h
 api_name:
+ - _MPIO_DEVINSTANCE_HEALTH_CLASS
+ - PMPIO_DEVINSTANCE_HEALTH_CLASS
  - MPIO_DEVINSTANCE_HEALTH_CLASS
 ---
 
@@ -50,7 +51,7 @@ api_name:
 
 ## -description
 
-The MPIO_DEVINSTANCE_HEALTH_CLASS structure holds the health information for a instance of a device exposed through the specified path identifiers.
+The MPIO_DEVINSTANCE_HEALTH_CLASS structure holds the health information for an instance of a device exposed through the specified path identifiers.
 
 ## -struct-fields
 

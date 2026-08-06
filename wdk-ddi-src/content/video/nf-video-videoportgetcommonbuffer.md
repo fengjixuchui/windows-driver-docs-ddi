@@ -4,7 +4,6 @@ title: VideoPortGetCommonBuffer function (video.h)
 description: The VideoPortGetCommonBuffer function is obsolete in Windows XP and later, and is supported only for backward compatibility with existing drivers.
 old-location: display\videoportgetcommonbuffer.htm
 tech.root: display
-ms.assetid: c8329d26-fb6f-46f1-aacd-ba78ee4ea5d5
 ms.date: 05/10/2018
 keywords: ["VideoPortGetCommonBuffer function"]
 ms.keywords: VideoPortGetCommonBuffer, VideoPortGetCommonBuffer function [Display Devices], VideoPort_Functions_eead14aa-271b-49a2-8ded-482ffc73741e.xml, display.videoportgetcommonbuffer, video/VideoPortGetCommonBuffer
@@ -52,34 +51,34 @@ The <b>VideoPortGetCommonBuffer</b> function is <b>obsolete</b> in Windows XP an
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's device extension.
 
-### -param DesiredLength 
+### -param DesiredLength [in]
 
-[in]
+
 Specifies the requested number of bytes of memory.
 
-### -param Alignment 
+### -param Alignment [in]
 
-[in]
+
 Specifies the requested alignment of the buffer. The video port driver currently ignores this parameter.
 
-### -param LogicalAddress 
+### -param LogicalAddress [out]
 
-[out]
+
 Pointer to a variable that receives the logical address to be used by the adapter to access the allocated buffer.
 
-### -param pActualLength 
+### -param pActualLength [out]
 
-[out]
+
 Pointer to a variable that receives the actual size, in bytes, of the buffer allocated for this request.
 
-### -param CacheEnabled 
+### -param CacheEnabled [in]
 
-[in]
+
 Specifies whether the allocated memory can be cached.
 
 ## -returns

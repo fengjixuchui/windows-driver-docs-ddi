@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILREADPHONEBOOKENTRIESPARAMS
 title: RILREADPHONEBOOKENTRIESPARAMS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILREADPHONEBOOKENTRIESPARAMS structure for internal use only."
 old-location: netvista\rilreadphonebookentriesparams.htm
 tech.root: netvista
-ms.assetid: af74f94a-497a-4771-aee4-d1ba8d2f3ad9
 ms.date: 05/02/2018
 keywords: ["RILREADPHONEBOOKENTRIESPARAMS structure"]
 ms.keywords: "*LPRILREADPHONEBOOKENTRIESPARAMS, RILREADPHONEBOOKENTRIESPARAMS, RILREADPHONEBOOKENTRIESPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilreadphonebookentriesparams, ntddrilapitypes/RILREADPHONEBOOKENTRIESPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILREADPHONEBOOKENTRIESPARAMS
+ - LPRILREADPHONEBOOKENTRIESPARAMS
 ---
 
 # RILREADPHONEBOOKENTRIESPARAMS structure (rilapitypes.h)

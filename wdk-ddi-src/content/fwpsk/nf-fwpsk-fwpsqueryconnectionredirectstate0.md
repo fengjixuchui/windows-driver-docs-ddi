@@ -4,7 +4,6 @@ title: FwpsQueryConnectionRedirectState0 function (fwpsk.h)
 description: The FwpsQueryConnectionRedirectState0 function returns the connection redirect state.Note  FwpsQueryConnectionRedirectState0 is a specific version of FwpsQueryConnectionRedirectState.
 old-location: netvista\fwpsqueryconnectionredirectstate0.htm
 tech.root: netvista
-ms.assetid: 6db0a5ac-edab-4e84-b378-30ed0c23cd4b
 ms.date: 05/02/2018
 keywords: ["FwpsQueryConnectionRedirectState0 function"]
 ms.keywords: FwpsQueryConnectionRedirectState0, FwpsQueryConnectionRedirectState0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsQueryConnectionRedirectState0, netvista.fwpsqueryconnectionredirectstate0
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Fwpkclnt.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:

@@ -4,7 +4,6 @@ title: _SUB_Q_CHANNEL_DATA (ntddcdrm.h)
 description: Device control IRPs with a control code of IOCTL_CDROM_READ_Q_CHANNEL return their output data in this union.
 old-location: storage\sub_q_channel_data.htm
 tech.root: storage
-ms.assetid: d0304ac7-cb19-499c-81af-98be33312951
 ms.date: 03/29/2018
 keywords: ["SUB_Q_CHANNEL_DATA structure"]
 ms.keywords: "*PSUB_Q_CHANNEL_DATA, PSUB_Q_CHANNEL_DATA, PSUB_Q_CHANNEL_DATA union pointer [Storage Devices], SUB_Q_CHANNEL_DATA, SUB_Q_CHANNEL_DATA union [Storage Devices], _SUB_Q_CHANNEL_DATA, ntddcdrm/PSUB_Q_CHANNEL_DATA, ntddcdrm/SUB_Q_CHANNEL_DATA, storage.sub_q_channel_data, structs-CD-ROM_f35761c8-b362-48eb-9cfa-6ee5e7232411.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddcdrm.h
 api_name:
+ - _SUB_Q_CHANNEL_DATA
+ - PSUB_Q_CHANNEL_DATA
  - SUB_Q_CHANNEL_DATA
 ---
 
@@ -89,3 +90,4 @@ The value of the <b>Format </b>member of the CDROM_SUB_Q_DATA_FORMAT structure t
 
 
 <a href="/windows-hardware/drivers/ddi/ntddcdrm/ns-ntddcdrm-_sub_q_track_isrc">SUB_Q_TRACK_ISRC</a>
+

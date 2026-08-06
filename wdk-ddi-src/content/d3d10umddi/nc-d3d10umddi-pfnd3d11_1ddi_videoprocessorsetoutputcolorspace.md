@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCOLORSPACE
 title: PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCOLORSPACE (d3d10umddi.h)
 description: Sets the output color space for the video processor.
 old-location: display\videoprocessorsetoutputcolorspace.htm
-ms.assetid: a6d1020d-e8e1-465f-a133-59afdfe1cfce
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCOLORSPACE callback function"]
 ms.keywords: PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCOLORSPACE, PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCOLORSPACE callback, d3d10umddi/pfnVideoProcessorSetOutputColorSpace, display.videoprocessorsetoutputcolorspace, pfnVideoProcessorSetOutputColorSpace, pfnVideoProcessorSetOutputColorSpace callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoProcessorSetOutputColorSpace
-product:
- - Windows
+ - PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCOLORSPACE
 ---
 
 # PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTCOLORSPACE callback function
@@ -52,19 +49,19 @@ Sets the output color space for the video processor.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hVideoProcessor* [in]
 
 A handle to the video processor object that was created through a call to the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a> function.
 
-### -param Arg3
+### -param unnamedParam3
 
 *pColorspace* [in]
 
@@ -86,7 +83,7 @@ The <b>RGB_Range</b> member specifies the RGB color range. If this member is set
 <li>
 The <b>YCbCr_Matrix </b> member specifies the YCbCr transfer matrix. If this member is set to zero, the transfer matrix is based on the BT.601 format. If this member is set to one, the transfer matrix is based on the BT.709 format.
 
-<div class="alert"><b>Note</b>  Both of these transfer matrixes define the black point as index 16 and the white point as index 235.</div>
+<div class="alert"><b>Note</b>  Both of these transfer matrices define the black point as index 16 and the white point as index 235.</div>
 <div> </div>
 </li>
 <li>
@@ -108,3 +105,4 @@ If this member is set to one, the format that is used is the extended xvYCC form
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_video_processor_color_space">D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE</a>
+

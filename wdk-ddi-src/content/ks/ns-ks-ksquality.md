@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_62
+UID: NS:ks.KSQUALITY
 title: KSQUALITY (ks.h)
 description: The KSQUALITY structure is used to report QM problems in both kernel and user mode to their respective quality managers.
 old-location: stream\ksquality.htm
 tech.root: stream
-ms.assetid: 36caaea9-2354-4ed8-9649-5eb102def8d5
 ms.date: 04/23/2018
 keywords: ["KSQUALITY structure"]
 ms.keywords: "*PKSQUALITY, KSQUALITY, KSQUALITY structure [Streaming Media Devices], PKSQUALITY, PKSQUALITY structure pointer [Streaming Media Devices], ks-struct_a2b63e1c-e5b4-437d-a5ba-0746f8388eef.xml, ks/KSQUALITY, ks/PKSQUALITY, stream.ksquality"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSQUALITY
  - KSQUALITY
 ---
 

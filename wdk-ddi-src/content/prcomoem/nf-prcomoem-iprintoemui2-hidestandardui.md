@@ -4,7 +4,6 @@ title: IPrintOemUI2::HideStandardUI (prcomoem.h)
 description: The IPrintOemUI2::HideStandardUI method allows a user interface plug-in to specify whether the standard property sheets should be displayed or hidden.
 old-location: print\iprintoemui2_hidestandardui.htm
 tech.root: print
-ms.assetid: 144618d0-0d77-487c-a074-8bd9f6030de2
 ms.date: 04/20/2018
 keywords: ["IPrintOemUI2::HideStandardUI"]
 ms.keywords: HideStandardUI, HideStandardUI method [Print Devices], HideStandardUI method [Print Devices],IPrintOemUI2 interface, IPrintOemUI2 interface [Print Devices],HideStandardUI method, IPrintOemUI2.HideStandardUI, IPrintOemUI2::HideStandardUI, prcomoem/IPrintOemUI2::HideStandardUI, print.iprintoemui2_hidestandardui, print_unidrv-pscript_ui_27b169d4-4e08-496c-b9d1-1b73dc27995b.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemUI2.HideStandardUI
+ - IPrintOemUI2::HideStandardUI
 ---
 
 # IPrintOemUI2::HideStandardUI
@@ -174,3 +173,4 @@ When the printer has multiple UI plug-ins installed, the driver calls UI plug-in
 
 
 <a href="/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintoemui2">IPrintOemUI2</a>
+

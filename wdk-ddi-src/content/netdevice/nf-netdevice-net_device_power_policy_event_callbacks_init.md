@@ -3,8 +3,7 @@ UID: NF:netdevice.NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS_INIT
 title: NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS_INIT function (netdevice.h)
 description: The NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS_INIT function initializes a NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS structure.
 tech.root: netvista
-ms.assetid: adf5b2fc-1b9a-4dad-97ad-e23f382acb8c
-ms.date: 10/11/2019
+ms.date: 04/01/2022
 keywords: ["NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS_INIT function"]
 ms.keywords: NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS_INIT
 req.header: netdevice.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -37,8 +36,6 @@ api_location:
  - netdevice.h
 api_name:
  - NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS_INIT
-product:
- - Windows
 ---
 
 # NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS_INIT function
@@ -50,13 +47,10 @@ The **NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS_INIT** function initializes a [**N
 
 ## -parameters
 
-### -param Callbacks
+### -param Callbacks [_Out_]
 
 A pointer to a driver-allocated [**NET_DEVICE_POWER_POLICY_EVENT_CALLBACKS**](../netdevice/ns-netdevice-_net_device_power_policy_event_callbacks.md) structure.
 
-## -returns
-
-This function does not return a value.
 
 ## -remarks
 

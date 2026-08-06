@@ -3,7 +3,6 @@ UID: NF:portcls.IAdapterPnpManagement.GetSupportedRebalanceType
 title: IAdapterPnpManagement::GetSupportedRebalanceType (portcls.h)
 description: The GetSupportedRebalanceType method returns the type of rebalancing supported.
 tech.root: audio
-ms.assetid: 7feb6a3f-cb3f-4aaa-8386-d7c803201a6c
 ms.date: 10/31/2018
 keywords: ["IAdapterPnpManagement::GetSupportedRebalanceType"]
 ms.keywords: IAdapterPnpManagement::GetSupportedRebalanceType, GetSupportedRebalanceType, IAdapterPnpManagement.GetSupportedRebalanceType, IAdapterPnpManagement::GetSupportedRebalanceType, IAdapterPnpManagement.GetSupportedRebalanceType
@@ -35,9 +34,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IAdapterPnpManagement.GetSupportedRebalanceType
-product:
- - Windows
+ - IAdapterPnpManagement::GetSupportedRebalanceType
 ---
 
 # IAdapterPnpManagement::GetSupportedRebalanceType
@@ -62,3 +59,4 @@ For more information, see [Implement PnP Rebalance for PortCls Audio Drivers](/w
 ## -see-also
 
 [IAdapterPnpManagement](nn-portcls-iadapterpnpmanagement.md)
+

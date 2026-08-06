@@ -4,7 +4,6 @@ title: SerCxInitialize function (sercx.h)
 description: The SerCxInitialize method completes the initialization of the serial framework extension (SerCx) after this driver creates the associated device object.
 old-location: serports\sercxinitialize.htm
 tech.root: serports
-ms.assetid: 2837C3BE-71EB-4949-AB46-5333CF4575A8
 ms.date: 04/23/2018
 keywords: ["SerCxInitialize function"]
 ms.keywords: 1/SerCxInitialize, SerCxInitialize, SerCxInitialize method [Serial Ports], serports.sercxinitialize
@@ -50,14 +49,14 @@ The <b>SerCxInitialize</b> method completes the initialization of the serial fra
 
 ## -parameters
 
-### -param FxDevice 
+### -param FxDevice [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the serial controller.
 
-### -param Config 
+### -param Config [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/sercx/ns-sercx-_sercx_config">SERCX_CONFIG</a> structure that contains configuration information for SerCx. The caller previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx_config_init">SERCX_CONFIG_INIT</a> function to initialize this structure.
 
 ## -returns

@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILEXCHANGEUICCAPDUPARAMS
 title: RILEXCHANGEUICCAPDUPARAMS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILEXCHANGEUICCAPDUPARAMS structure for internal use only."
 old-location: netvista\rilexchangeuiccapduparams.htm
 tech.root: netvista
-ms.assetid: be77f9e2-acf7-4b59-9a46-abda7c43817b
 ms.date: 05/02/2018
 keywords: ["RILEXCHANGEUICCAPDUPARAMS structure"]
 ms.keywords: "*LPRILEXCHANGEUICCAPDUPARAMS, RILEXCHANGEUICCAPDUPARAMS, RILEXCHANGEUICCAPDUPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilexchangeuiccapduparams, ntddrilapitypes/RILEXCHANGEUICCAPDUPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILEXCHANGEUICCAPDUPARAMS
+ - LPRILEXCHANGEUICCAPDUPARAMS
 ---
 
 # RILEXCHANGEUICCAPDUPARAMS structure (rilapitypes.h)

@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_138
+UID: NS:ksmedia.KSPROPERTY_EXTXPORT_NODE_S
 title: KSPROPERTY_EXTXPORT_NODE_S (ksmedia.h)
 description: The KSPROPERTY_EXTXPORT_NODE_S structure describes an external transport and its capabilities.
 old-location: stream\ksproperty_extxport_node_s.htm
 tech.root: stream
-ms.assetid: e0321fa8-610b-4920-8be8-dd91a3452beb
 ms.date: 04/30/2019
 keywords: ["KSPROPERTY_EXTXPORT_NODE_S structure"]
 ms.keywords: "*PKSPROPERTY_EXTXPORT_NODE_S, KSPROPERTY_EXTXPORT_NODE_S, KSPROPERTY_EXTXPORT_NODE_S structure [Streaming Media Devices], PKSPROPERTY_EXTXPORT_NODE_S, PKSPROPERTY_EXTXPORT_NODE_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_EXTXPORT_NODE_S, ksmedia/PKSPROPERTY_EXTXPORT_NODE_S, stream.ksproperty_extxport_node_s, vidcapstruct_06823ca7-5d41-494c-879e-0835ab0b447f.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_EXTXPORT_NODE_S
  - KSPROPERTY_EXTXPORT_NODE_S
 ---
 
@@ -122,7 +122,7 @@ Any ED_TRANSCAP_Xxx or ED_TRANSBASIC_Xxx tokens are defined in <i>xprtdefs.h</i>
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -135,3 +135,4 @@ Any ED_TRANSCAP_Xxx or ED_TRANSBASIC_Xxx tokens are defined in <i>xprtdefs.h</i>
 
 
 <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-transport_state">TRANSPORT_STATE</a>
+

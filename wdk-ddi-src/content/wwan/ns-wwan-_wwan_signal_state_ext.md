@@ -3,7 +3,6 @@ UID: NS:wwan._WWAN_SIGNAL_STATE_EXT
 title: _WWAN_SIGNAL_STATE_EXT (wwan.h)
 description: The WWAN_SIGNAL_STATE_EXT structure represents an extension to the signal state of the MB device.
 tech.root: netvista
-ms.assetid: 575B91C4-FF8A-488B-A12E-2DB13FE6C900
 ms.date: 04/05/2019
 keywords: ["WWAN_SIGNAL_STATE_EXT structure"]
 ms.keywords: "*PWWAN_SIGNAL_STATE_EXT, PWWAN_SIGNAL_STATE_EXT, PWWAN_SIGNAL_STATE_EXT structure pointer [Network Drivers Starting with Windows Vista], WWAN_SIGNAL_STATE_EXT, WWAN_SIGNAL_STATE_EXT structure [Network Drivers Starting with Windows Vista], WwanRef_6a92457b-8b82-4956-9dce-98e5aeec9091.xml, _WWAN_SIGNAL_STATE_EXT, netvista.wwan_signal_state_EXT, wwan/PWWAN_SIGNAL_STATE_EXT, wwan/WWAN_SIGNAL_STATE_EXT"
@@ -41,6 +40,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_SIGNAL_STATE_EXT
+ - PWWAN_SIGNAL_STATE_EXT
  - WWAN_SIGNAL_STATE_EXT
 ---
 
@@ -49,7 +50,7 @@ api_name:
 
 ## -description
 
-The **WWAN_SIGNAL_STATE_EXT** structure represents an extension to the signal state of the MB device. In Windows 10, version 1903 and later, [**WWAN_SIGNAL_STATE_EX**](../wwan/ns-wwan-_wwan_signal_state.md) contains primary information about the signal state of the device, including an array of **WWAN_SIGNAL_STATE_EXT** structures that contain signal state information specific to 5G.
+The **WWAN_SIGNAL_STATE_EXT** structure represents an extension to the signal state of the MB device. In Windows 10, version 1903 and later, **WWAN_SIGNAL_STATE_EXT** contains primary information about the signal state of the device, including an array of **WWAN_SIGNAL_STATE_EXT** structures that contain signal state information specific to 5G.
 
 For more info about 5G data class support, see [MB 5G data class support](/windows-hardware/drivers/network/mb-5g-data-class-support).
 
@@ -132,3 +133,4 @@ Indicates the data class for which the parameters are valid. Only if either **WW
 
  
 [**WWAN_SIGNAL_STATE**](../wwan/ns-wwan-_wwan_signal_state.md)
+

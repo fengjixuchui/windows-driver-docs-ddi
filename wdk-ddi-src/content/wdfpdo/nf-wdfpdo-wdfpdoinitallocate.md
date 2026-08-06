@@ -4,7 +4,6 @@ title: WdfPdoInitAllocate function (wdfpdo.h)
 description: The WdfPdoInitAllocate method allocates a WDFDEVICE_INIT structure for a framework-based bus driver, which the bus driver uses when reporting a new device.
 old-location: wdf\wdfpdoinitallocate.htm
 tech.root: wdf
-ms.assetid: 86e48354-d4cd-4ad0-a6bd-e8ba662075d8
 ms.date: 02/26/2018
 keywords: ["WdfPdoInitAllocate function"]
 ms.keywords: DFDeviceObjectFdoPdoRef_bc23c37b-d595-4672-ad92-4a29aea9c2dd.xml, WdfPdoInitAllocate, WdfPdoInitAllocate method, kmdf.wdfpdoinitallocate, wdf.wdfpdoinitallocate, wdfpdo/WdfPdoInitAllocate
@@ -53,9 +52,9 @@ The <b>WdfPdoInitAllocate</b> method allocates a <a href="/windows-hardware/driv
 
 ## -parameters
 
-### -param ParentDevice 
+### -param ParentDevice [in]
 
-[in]
+
 A handle to a framework device object that represents the parent device of the new device. The framework device object must represent a functional device object (FDO).
 
 ## -returns

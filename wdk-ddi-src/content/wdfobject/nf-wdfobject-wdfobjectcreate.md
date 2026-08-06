@@ -4,7 +4,6 @@ title: WdfObjectCreate function (wdfobject.h)
 description: The WdfObjectCreate method creates a general framework object.
 old-location: wdf\wdfobjectcreate.htm
 tech.root: wdf
-ms.assetid: fd56c529-c7ad-4fc4-8fcc-950a1e8e21e5
 ms.date: 02/26/2018
 keywords: ["WdfObjectCreate function"]
 ms.keywords: DFGenObjectRef_6d84af32-c9c6-4327-be42-cda437dc80a1.xml, WdfObjectCreate, WdfObjectCreate method, kmdf.wdfobjectcreate, wdf.wdfobjectcreate, wdfobject/WdfObjectCreate
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfObjectCreate</b> method creates a general framework object.
 
 ## -parameters
 
-### -param Attributes 
+### -param Attributes [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains driver-supplied attributes for the new object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param Object 
+### -param Object [out]
 
-[out]
+
 A pointer to a location that receives a handle to the new framework object.
 
 ## -returns

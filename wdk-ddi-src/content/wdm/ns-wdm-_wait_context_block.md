@@ -1,9 +1,9 @@
 ---
 UID: NS:wdm._WAIT_CONTEXT_BLOCK
 title: _WAIT_CONTEXT_BLOCK (wdm.h)
-description: Reserved. Do not use.
-ms.assetid: 6b495490-3f9c-4d80-8e87-ec468237d1e1
+description: Reserved for WAIT_CONTEXT_BLOCK. Do not use.
 ms.date: 10/19/2018
+tech.root: kernel
 keywords: ["WAIT_CONTEXT_BLOCK structure"]
 ms.keywords: _WAIT_CONTEXT_BLOCK, WAIT_CONTEXT_BLOCK, *PWAIT_CONTEXT_BLOCK,
 req.header: wdm.h
@@ -36,6 +36,8 @@ api_location:
  - wdm.h
 api_name:
  - _WAIT_CONTEXT_BLOCK
+ - PWAIT_CONTEXT_BLOCK
+ - WAIT_CONTEXT_BLOCK
 ---
 
 # _WAIT_CONTEXT_BLOCK structure

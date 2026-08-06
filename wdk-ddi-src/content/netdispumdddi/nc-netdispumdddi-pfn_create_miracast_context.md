@@ -4,7 +4,6 @@ title: PFN_CREATE_MIRACAST_CONTEXT (netdispumdddi.h)
 description: Called by the operating system to create a user-mode Miracast context.
 old-location: display\createmiracastcontext.htm
 tech.root: display
-ms.assetid: 3b10ddd9-a48d-4f96-b35e-db017d1f9583
 ms.date: 05/10/2018
 keywords: ["PFN_CREATE_MIRACAST_CONTEXT callback function"]
 ms.keywords: CreateMiracastContext, CreateMiracastContext callback function [Display Devices], PFN_CREATE_MIRACAST_CONTEXT, PFN_CREATE_MIRACAST_CONTEXT callback, display.createmiracastcontext, netdispumdddi/CreateMiracastContext
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Netdispumdddi.h
 api_name:
- - CreateMiracastContext
+ - PFN_CREATE_MIRACAST_CONTEXT
 ---
 
 # PFN_CREATE_MIRACAST_CONTEXT callback function
@@ -50,19 +49,19 @@ Called by the operating system to create a user-mode Miracast context.
 
 ## -parameters
 
-### -param hMiracastDeviceHandle 
+### -param hMiracastDeviceHandle [in]
 
-[in]
+
 A handle to the current Miracast display device, supplied by the operating system.
 
-### -param pMiracastCallbacks 
+### -param pMiracastCallbacks [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/netdispumdddi/ns-netdispumdddi-_miracast_callbacks">MIRACAST_CALLBACKS</a> structure that has pointers to callback functions, supplied by the operating system,  that the Miracast user-mode driver can call.
 
-### -param ppMiracastContext 
+### -param ppMiracastContext [out]
 
-[out]
+
 A pointer to a buffer, supplied by the operating system, that holds the Miracast context that the Miracast user-mode driver returns.
 
 ## -returns
@@ -95,3 +94,4 @@ The operating system guarantees that only one of the <i>CreateMiracastContext</i
 
 
 <a href="/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_stop_miracast_session">StopMiracastSession</a>
+

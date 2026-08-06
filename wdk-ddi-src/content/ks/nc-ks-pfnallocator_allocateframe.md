@@ -4,7 +4,6 @@ title: PFNALLOCATOR_ALLOCATEFRAME (ks.h)
 description: The KStrAllocateFrame routine describes a vendor-supplied frame allocation function.
 old-location: stream\kstrallocateframe.htm
 tech.root: stream
-ms.assetid: 1b6eec23-82b4-4e8f-89d0-e76d6449906e
 ms.date: 04/23/2018
 keywords: ["PFNALLOCATOR_ALLOCATEFRAME callback function"]
 ms.keywords: KStrAllocateFrame, KStrAllocateFrame routine [Streaming Media Devices], PFNALLOCATOR_ALLOCATEFRAME, ks/KStrAllocateFrame, ksfunc_a90af96e-53df-43f5-b847-ba1876b788fd.xml, stream.kstrallocateframe
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - KStrAllocateFrame
+ - PFNALLOCATOR_ALLOCATEFRAME
 ---
 
 # PFNALLOCATOR_ALLOCATEFRAME callback function
@@ -50,14 +49,14 @@ The <i>KStrAllocateFrame</i> routine describes a vendor-supplied frame allocatio
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">FILE_OBJECT</a> structure for which to allocate frames.
 
-### -param Frame 
+### -param Frame [out]
 
-[out]
+
 A pointer to a caller-allocated buffer in which the new frame is returned.
 
 ## -returns
@@ -77,3 +76,4 @@ You can pass an instance of this structure as part of a <a href="/windows-hardwa
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksstreamallocator_functiontable">KSSTREAMALLOCATOR_FUNCTIONTABLE</a>
+

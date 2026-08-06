@@ -4,7 +4,6 @@ title: ClfsMgmtDeregisterManagedClient function (wdm.h)
 description: The ClfsMgmtDeregisterManagedClient routine removes the connection between a client and a log, so that the client no longer manages the log.
 old-location: kernel\clfsmgmtderegistermanagedclient.htm
 tech.root: kernel
-ms.assetid: 5dee3b70-9c8d-420d-86f9-9795b4d8b1e8
 ms.date: 04/30/2018
 keywords: ["ClfsMgmtDeregisterManagedClient function"]
 ms.keywords: ClfsMgmtDeregisterManagedClient, ClfsMgmtDeregisterManagedClient routine [Kernel-Mode Driver Architecture], Clfs_management_6a802f4a-8157-42c8-8eda-740a1207714a.xml, kernel.clfsmgmtderegistermanagedclient, wdm/ClfsMgmtDeregisterManagedClient
@@ -54,13 +53,6 @@ The <b>ClfsMgmtDeregisterManagedClient</b> routine removes the connection betwee
 ### -param ClientCookie
 
 The cookie we give back to the caller for future use of the API.
-
-
-
-
-#### - Client [in]
-
-A pointer to the client. This is the value that was obtained through a call to the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsmgmtregistermanagedclient">ClfsMgmtRegisterManagedClient</a> routine.
 
 ## -returns
 

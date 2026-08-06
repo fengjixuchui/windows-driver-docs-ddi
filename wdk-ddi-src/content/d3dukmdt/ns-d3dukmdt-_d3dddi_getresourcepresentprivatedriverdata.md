@@ -4,7 +4,6 @@ title: _D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA (d3dukmdt.h)
 description: D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA is used with pfnGetResourcePresentPrivateDriverDataCb to query the resource private data, which is associated with the resource during Present.
 old-location: display\d3dddi_getresourcepresentprivatedriverdata.htm
 tech.root: display
-ms.assetid: 4473E808-D22E-47C4-8619-7427C8BA682E
 ms.date: 05/10/2018
 keywords: ["D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA structure"]
 ms.keywords: D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA, D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA structure [Display Devices], _D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA, d3dukmdt/D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA, display.d3dddi_getresourcepresentprivatedriverdata
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dukmdt.h
 api_name:
+ - _D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA
  - D3DDDI_GETRESOURCEPRESENTPRIVATEDRIVERDATA
 ---
 
@@ -52,21 +52,22 @@ api_name:
 
 ## -struct-fields
 
-### -field hResource
+### -field hResource [in]
 
-[in] A DirectX graphics kernel resource handle.
+A DirectX graphics kernel resource handle.
 
-### -field PrivateDriverDataSize
+### -field PrivateDriverDataSize [in, out]
 
-[in, out] The size of the <b>pPrivateDriverData</b> buffer in bytes. When zero or when there is insufficient space, the size of the required buffer is returned back to the caller along with a <b>STATUS_INVALID_BUFFER_SIZE</b><b>HRESULT</b> value from the calling method. 
+The size of the <b>pPrivateDriverData</b> buffer in bytes. When zero or when there is insufficient space, the size of the required buffer is returned back to the caller along with a <b>STATUS_INVALID_BUFFER_SIZE</b><b>HRESULT</b> value from the calling method. 
 
 <div class="alert"><b>Note</b>  By the time another call is made with the new buffer size, the resource could be associated with a different sized buffer.</div>
 <div> </div>
 
-### -field pPrivateDriverData
+### -field pPrivateDriverData [in, out]
 
-[in, out] The buffer where the private data will be written to.
+The buffer where the private data will be written to.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getresourcepresentprivatedriverdatacb">pfnGetResourcePresentPrivateDriverDataCb</a>
+

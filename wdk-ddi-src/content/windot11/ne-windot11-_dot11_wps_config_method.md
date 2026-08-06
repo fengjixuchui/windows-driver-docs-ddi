@@ -4,7 +4,6 @@ title: _DOT11_WPS_CONFIG_METHOD (windot11.h)
 description: The DOT11_WPS_CONFIG_METHOD enumeration specifies the Wi-Fi Protected Setup methods.
 old-location: netvista\dot11_wps_config_method.htm
 tech.root: netvista
-ms.assetid: FFA5B3FF-57AF-4701-97FB-E1182CDE8F7A
 ms.date: 02/16/2018
 keywords: ["DOT11_WPS_CONFIG_METHOD enumeration"]
 ms.keywords: "*PDOT11_WPS_CONFIG_METHOD, DOT11_WPS_CONFIG_METHOD, DOT11_WPS_CONFIG_METHOD enumeration [Network Drivers Starting with Windows Vista], DOT11_WPS_CONFIG_METHOD_DISPLAY, DOT11_WPS_CONFIG_METHOD_KEYPAD, DOT11_WPS_CONFIG_METHOD_NULL, DOT11_WPS_CONFIG_METHOD_PUSHBUTTON, _DOT11_WPS_CONFIG_METHOD, netvista.dot11_wps_config_method, windot11/DOT11_WPS_CONFIG_METHOD, windot11/DOT11_WPS_CONFIG_METHOD_DISPLAY, windot11/DOT11_WPS_CONFIG_METHOD_KEYPAD, windot11/DOT11_WPS_CONFIG_METHOD_NULL, windot11/DOT11_WPS_CONFIG_METHOD_PUSHBUTTON"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - Windot11.h
 api_name:
+ - _DOT11_WPS_CONFIG_METHOD
+ - PDOT11_WPS_CONFIG_METHOD
  - DOT11_WPS_CONFIG_METHOD
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_WPS_CONFIG_METHOD enumeration
@@ -52,7 +51,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_WPS_CONFIG_METHOD enumeration specifies the Wi-Fi Protected Setup methods.
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_WPS_CONFIG_METHOD enumeration specifies the Wi-Fi Protected Setup methods.
 
 ## -enum-fields
 
@@ -88,3 +90,4 @@ typedef enum _DOT11_WPS_CONFIG_METHOD {
   DOT11_WPS_CONFIG_METHOD_KEYPAD      = 0x0100
 } DOT11_WPS_CONFIG_METHOD;
 ```
+

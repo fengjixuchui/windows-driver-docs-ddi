@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IComparableConcept.AddRef
 title: IComparableConcept::AddRef (dbgmodel.h)
-description: Increments the reference count for an interface on an object. This method should be called for every new copy of a pointer to an interface on an object.
-ms.assetid: 45a2d8e9-075e-4312-8d94-f5656c20cd1f
+description: "The IComparableConcept::AddRef method increments the reference count for an interface on an object."
 ms.date: 09/21/2018
 keywords: ["IComparableConcept::AddRef"]
 ms.keywords: IComparableConcept::AddRef, AddRef, IComparableConcept.AddRef, IComparableConcept::AddRef, IComparableConcept.AddRef
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IComparableConcept.AddRef
+ - IComparableConcept::AddRef
 ---
 
 # IComparableConcept::AddRef
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IComparableConcept interface](nn-dbgmodel-icomparableconcept.md)
+

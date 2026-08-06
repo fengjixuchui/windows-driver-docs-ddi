@@ -4,7 +4,6 @@ title: IWpdSerializer::WriteIPortableDeviceValuesToBuffer (portabledevicetypes.h
 description: Serializes an IPortableDeviceValues interface to a caller-allocated byte array.
 old-location: wpddk\iwpdserializer_writeiportabledevicevaluestobuffer.htm
 tech.root: wpd_dk
-ms.assetid: ceddaff0-2c97-4de9-9a2e-3727f48eab87
 ms.date: 02/15/2018
 keywords: ["IWpdSerializer::WriteIPortableDeviceValuesToBuffer"]
 ms.keywords: IWpdSerializer interface,WriteIPortableDeviceValuesToBuffer method, IWpdSerializer.WriteIPortableDeviceValuesToBuffer, IWpdSerializer::WriteIPortableDeviceValuesToBuffer, IWpdSerializerWriteIPortableDeviceValuesToBuffer, WriteIPortableDeviceValuesToBuffer, WriteIPortableDeviceValuesToBuffer method, WriteIPortableDeviceValuesToBuffer method,IWpdSerializer interface, portabledevicetypes/IWpdSerializer::WriteIPortableDeviceValuesToBuffer, wpddk.iwpdserializer_writeiportabledevicevaluestobuffer
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IWpdSerializer.WriteIPortableDeviceValuesToBuffer
+ - IWpdSerializer::WriteIPortableDeviceValuesToBuffer
 ---
 
 # IWpdSerializer::WriteIPortableDeviceValuesToBuffer
@@ -51,24 +50,24 @@ Serializes an <b>IPortableDeviceValues</b> interface to a caller-allocated byte 
 
 ## -parameters
 
-### -param dwOutputBufferLength 
+### -param dwOutputBufferLength [in]
 
-[in]
+
 <b>DWORD</b> that specifies the size of <i>pBuffer</i>, in bytes.
 
-### -param pResults 
+### -param pResults [in]
 
-[in]
+
 Pointer to an <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues">IPortableDeviceValues</a> interface to serialize.
 
-### -param pBuffer 
+### -param pBuffer [out]
 
-[out]
+
 Pointer to a caller-allocated buffer. To learn the size of the required buffer, call <b>GetSerializedSize</b>.
 
-### -param pdwBytesWritten 
+### -param pdwBytesWritten [out]
 
-[out]
+
 Pointer to a <b>DWORD</b> that indicates the number of bytes that were actually written to the caller-allocated buffer.
 
 ## -returns
@@ -122,3 +121,4 @@ This method copies an <b>IPortableDeviceValues</b> interface into an existing bu
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iwpdserializer">IWpdSerializer Interface</a>
+

@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_18
+UID: NS:ks.KSINTERVAL
 title: KSINTERVAL (ks.h)
 description: The KSINTERVAL structure specifies a base time and time interval for recurring events.
 old-location: stream\ksinterval.htm
 tech.root: stream
-ms.assetid: 9e363bd1-3bfd-48cc-adc1-a14d23868a57
 ms.date: 04/23/2018
 keywords: ["KSINTERVAL structure"]
 ms.keywords: "*PKSINTERVAL, KSINTERVAL, KSINTERVAL structure [Streaming Media Devices], PKSINTERVAL, PKSINTERVAL structure pointer [Streaming Media Devices], ks-struct_56fded71-9af4-46a7-b872-1660582179ad.xml, ks/KSINTERVAL, ks/PKSINTERVAL, stream.ksinterval"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSINTERVAL
  - KSINTERVAL
 ---
 
@@ -67,3 +67,4 @@ Specifies a recurrence interval, also 64-bit.
 
 
 <a href="/windows-hardware/drivers/stream/ksevent-clock-position-mark">KSEVENT_CLOCK_POSITION_MARK</a>
+

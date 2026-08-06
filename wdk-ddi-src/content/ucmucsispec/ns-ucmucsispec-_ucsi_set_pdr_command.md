@@ -2,7 +2,6 @@
 UID: NS:ucmucsispec._UCSI_SET_PDR_COMMAND
 title: _UCSI_SET_PDR_COMMAND (ucmucsispec.h)
 description: Used in the SET_PDR command. See Table 4-22.
-ms.assetid: 795c8e74-6b3e-4027-89aa-06070d4119a2
 tech.root: usbref
 ms.date: 09/30/2018
 keywords: ["UCSI_SET_PDR_COMMAND structure"]
@@ -37,6 +36,8 @@ api_location:
  - ucmucsispec.h
 api_name:
  - _UCSI_SET_PDR_COMMAND
+ - PUCSI_SET_PDR_COMMAND
+ - UCSI_SET_PDR_COMMAND
 ---
 
 # _UCSI_SET_PDR_COMMAND structure
@@ -44,7 +45,7 @@ api_name:
 
 ## -description
 
-Used in the SET_PDR command. See Table 4-22 in [UCSI spec version 1.1](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
+Used in the SET_PDR command. See Table 4-22 in [UCSI spec version 1.2](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
 
 ## -struct-fields
 

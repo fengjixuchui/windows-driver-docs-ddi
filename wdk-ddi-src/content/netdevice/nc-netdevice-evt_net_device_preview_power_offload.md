@@ -3,8 +3,7 @@ UID: NC:netdevice.EVT_NET_DEVICE_PREVIEW_POWER_OFFLOAD
 title: EVT_NET_DEVICE_PREVIEW_POWER_OFFLOAD (netdevice.h)
 description: Implement this optional callback to reject protocol offloads that are not compatible with your hardware.
 tech.root: netvista
-ms.assetid: 7429f331-19e5-4a1c-8153-b814c57871d6
-ms.date: 10/10/2019
+ms.date: 04/01/2022
 keywords: ["EVT_NET_DEVICE_PREVIEW_POWER_OFFLOAD callback function"]
 req.header: netdevice.h
 req.include-header: netadaptercx.h 
@@ -12,7 +11,7 @@ req.target-type:
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -36,8 +35,6 @@ api_location:
  - netdevice.h
 api_name:
  - EVT_NET_DEVICE_PREVIEW_POWER_OFFLOAD
-product:
- - Windows
 ---
 
 # EVT_NET_DEVICE_PREVIEW_POWER_OFFLOAD callback function
@@ -49,11 +46,11 @@ Implement this optional callback to reject protocol offloads that are not compat
 
 ## -parameters
 
-### -param Device: 
+### -param Device [_In_]
 
 The WDFDEVICE object that the client driver previously obtained with a call to [**WdfDeviceCreate**](../wdfdevice/nf-wdfdevice-wdfdevicecreate.md).
 
-### -param PowerOffload: 
+### -param PowerOffload [_In_]
 
 A NETPOWEROFFLOAD object that represents the low power protocol offload to examine.
 

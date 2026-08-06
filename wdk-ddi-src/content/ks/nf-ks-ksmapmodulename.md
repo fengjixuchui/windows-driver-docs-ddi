@@ -4,7 +4,6 @@ title: KsMapModuleName function (ks.h)
 description: The KsMapModuleName function returns the image name and resource identifier that corresponds to the PhysicalDeviceObject and ModuleName parameters.
 old-location: stream\ksmapmodulename.htm
 tech.root: stream
-ms.assetid: 3223a1bb-ab6c-45d7-9f9a-367a3aa7d465
 ms.date: 04/23/2018
 keywords: ["KsMapModuleName function"]
 ms.keywords: KsMapModuleName, KsMapModuleName function [Streaming Media Devices], ks/KsMapModuleName, ksfunc_76aec7fa-5e31-46d7-b94d-d7bccac7c3cd.xml, stream.ksmapmodulename
@@ -51,29 +50,29 @@ The <b>KsMapModuleName</b> function returns the image name and resource identifi
 
 ## -parameters
 
-### -param PhysicalDeviceObject 
+### -param PhysicalDeviceObject [in]
 
-[in]
+
 Pointer to a DEVICE_OBJECT for which to return the requested information.
 
-### -param ModuleName 
+### -param ModuleName [in]
 
-[in]
+
 Pointer to a buffer that contains the module name for which to return the requested information.
 
-### -param ImageName 
+### -param ImageName [out]
 
-[out]
+
 A caller-allocated buffer that receives the image name for the specified resource.
 
-### -param ResourceId 
+### -param ResourceId [out]
 
-[out]
+
 Pointer to a caller-supplied variable that receives the resource identifier.
 
-### -param ValueType 
+### -param ValueType [out]
 
-[out]
+
 Pointer to a location into which the function returns the value type of the specified resource.
 
 ## -returns

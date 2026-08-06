@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl2.OpenLogFile
 title: IDebugControl2::OpenLogFile (dbgeng.h)
-description: The OpenLogFile method opens a log file that will receive output from the client objects.
+description: Learn about the OpenLogFile method, which opens a log file that receives output from the client objects.
 old-location: debugger\openlogfile.htm
 tech.root: debugger
-ms.assetid: aba8839e-4c44-4c10-8b6f-9f5832c12166
 ms.date: 05/03/2018
 keywords: ["IDebugControl2::OpenLogFile"]
 ms.keywords: IDebugControl interface [Windows Debugging],OpenLogFile method, IDebugControl2 interface [Windows Debugging],OpenLogFile method, IDebugControl2.OpenLogFile, IDebugControl2::OpenLogFile, IDebugControl3 interface [Windows Debugging],OpenLogFile method, IDebugControl3::OpenLogFile, IDebugControl::OpenLogFile, IDebugControl_984f684e-c1c0-4819-b8ac-02718581c6ad.xml, OpenLogFile, OpenLogFile method [Windows Debugging], OpenLogFile method [Windows Debugging],IDebugControl interface, OpenLogFile method [Windows Debugging],IDebugControl2 interface, OpenLogFile method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::OpenLogFile, dbgeng/IDebugControl3::OpenLogFile, dbgeng/IDebugControl::OpenLogFile, debugger.openlogfile
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.OpenLogFile
- - IDebugControl2.OpenLogFile
- - IDebugControl3.OpenLogFile
+ - IDebugControl2::OpenLogFile
 ---
 
 # IDebugControl2::OpenLogFile
@@ -52,14 +49,14 @@ The <b>OpenLogFile</b>  method opens a log file that will receive output from th
 
 ## -parameters
 
-### -param File 
+### -param File [in]
 
-[in]
+
 Specifies the name of the log file.  <i>File</i> can include a relative or absolute path; relative paths are relative to the directory in which the debugger  was started.  If the file does not exist, it will be created.
 
-### -param Append 
+### -param Append [in]
 
-[in]
+
 Specifies whether or not to append log messages to an existing log file.  If <b>TRUE</b>, log messages will be appended to the file; if <b>FALSE</b>, the contents of any existing file matching <i>File</i> are discarded.
 
 ## -returns
@@ -131,3 +128,4 @@ For more information about log files, see <a href="/windows-hardware/drivers/deb
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setlogmask">SetLogMask</a>
+

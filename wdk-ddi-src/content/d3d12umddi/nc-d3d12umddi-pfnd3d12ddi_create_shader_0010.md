@@ -1,8 +1,7 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_CREATE_SHADER_0010
 title: PFND3D12DDI_CREATE_SHADER_0010 (d3d12umddi.h)
-description: Create shader.
-ms.assetid: 56c7add3-70b2-4a2b-9412-ed7d3a839592
+description: The PFND3D12DDI_CREATE_SHADER_0010 callback function creates a display device shader.
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CREATE_SHADER_0010 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CREATE_SHADER_0010
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,15 +48,15 @@ Create shader.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 Pointer to a D3D12DDIARG_CREATE_SHADER_0010 structure.
 
-### -param Arg3
+### -param unnamedParam3
 
 Shader handle.
 

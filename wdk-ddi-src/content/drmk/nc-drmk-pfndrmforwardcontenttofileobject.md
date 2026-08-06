@@ -1,10 +1,9 @@
 ---
 UID: NC:drmk.PFNDRMFORWARDCONTENTTOFILEOBJECT
 title: PFNDRMFORWARDCONTENTTOFILEOBJECT (drmk.h)
-description: This callback function is reserved for system use.
+description: "Microsoft reserves the PFNDRMFORWARDCONTENTTOFILEOBJECT callback function for internal use only. Don't use this function in your code."
 old-location: audio\pfndrmforwardcontenttofileobject.htm
 tech.root: audio
-ms.assetid: 00ACCBFF-FEDE-4223-8503-4D75426E2BD6
 ms.date: 05/08/2018
 keywords: ["PFNDRMFORWARDCONTENTTOFILEOBJECT callback function"]
 ms.keywords: DRMForwardContentToFileObject, DRMForwardContentToFileObject callback function [Audio Devices], PFNDRMFORWARDCONTENTTOFILEOBJECT, PFNDRMFORWARDCONTENTTOFILEOBJECT callback, PfnDRMForwardContentToFileObject, PfnDRMForwardContentToFileObject callback function [Audio Devices], audio.pfndrmforwardcontenttofileobject, drmk/PfnDRMForwardContentToFileObject
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Drmk.h
 api_name:
- - DRMForwardContentToFileObject
+ - PFNDRMFORWARDCONTENTTOFILEOBJECT
 ---
 
 # PFNDRMFORWARDCONTENTTOFILEOBJECT callback function
@@ -50,14 +49,14 @@ This callback function is reserved for system use.
 
 ## -parameters
 
-### -param ContentId 
+### -param ContentId [in]
 
-[in]
+
 This parameter is reserved for system use.
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 This parameter is reserved for system use.
 
 ## -returns

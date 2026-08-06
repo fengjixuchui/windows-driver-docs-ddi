@@ -4,7 +4,6 @@ title: READ_PORT_USHORT function (wudfddi_hwaccess.h)
 description: The READ_PORT_USHORT function reads a USHORT value from the specified port address.
 old-location: wdf\read_port_ushort.htm
 tech.root: wdf
-ms.assetid: 522C2745-A758-4C58-9891-BD2A70DBE498
 ms.date: 02/26/2018
 keywords: ["READ_PORT_USHORT function"]
 ms.keywords: READ_PORT_USHORT, READ_PORT_USHORT function, umdf.read_port_ushort, wdf.read_port_ushort, wudfddi_hwaccess/READ_PORT_USHORT
@@ -52,14 +51,14 @@ The <b>READ_PORT_USHORT</b>  function reads a USHORT value from the specified po
 
 ## -parameters
 
-### -param pDevice 
+### -param pDevice [in]
 
-[in]
+
 Specifies a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a> interface for the device object of the device to access.
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Specifies the port address, which must be a mapped memory range in I/O space.
 
 ## -returns

@@ -4,7 +4,6 @@ title: WdfPdoAddEjectionRelationsPhysicalDevice function (wdfpdo.h)
 description: The WdfPdoAddEjectionRelationsPhysicalDevice method indicates that a specified device is ejected when another specified device is ejected.
 old-location: wdf\wdfpdoaddejectionrelationsphysicaldevice.htm
 tech.root: wdf
-ms.assetid: 23a9ab2a-be8e-40ff-8654-adf170adc6f2
 ms.date: 02/26/2018
 keywords: ["WdfPdoAddEjectionRelationsPhysicalDevice function"]
 ms.keywords: DFDeviceObjectFdoPdoRef_c13c9c42-f704-4042-b70d-952ddb8a27b8.xml, WdfPdoAddEjectionRelationsPhysicalDevice, WdfPdoAddEjectionRelationsPhysicalDevice method, kmdf.wdfpdoaddejectionrelationsphysicaldevice, wdf.wdfpdoaddejectionrelationsphysicaldevice, wdfpdo/WdfPdoAddEjectionRelationsPhysicalDevice
@@ -53,14 +52,14 @@ The <b>WdfPdoAddEjectionRelationsPhysicalDevice</b> method indicates that a spec
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param PhysicalDevice 
+### -param PhysicalDevice [in]
 
-[in]
+
 A pointer to a caller-supplied <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure that represents a physical device object (PDO).
 
 ## -returns

@@ -3,8 +3,7 @@ UID: NF:nettxqueue.NetTxQueueGetRingCollection
 title: NetTxQueueGetRingCollection function (nettxqueue.h)
 description: The NetTxQueueGetRingCollection function retrieves the NET_DATAPATH_DESCRIPTOR structure for a transmit (Tx) queue.
 tech.root: netvista
-ms.assetid: 0767d0c0-d648-4dca-a664-a514de495c3d
-ms.date: 01/31/2019
+ms.date: 04/01/2022
 keywords: ["NetTxQueueGetRingCollection function"]
 ms.keywords: NetTxQueueGetRingCollection
 req.header: nettxqueue.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.29
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -28,13 +27,13 @@ targetos: Windows
 f1_keywords:
  - NetTxQueueGetRingCollection
  - nettxqueue/NetTxQueueGetRingCollection
-topictype:
+topic_type:
  - apiref
-apitype:
+api_type:
  - DllExport
-apilocation:
+api_location:
  - NtosKrnl.exe
-apiname:
+api_name:
  - NetTxQueueGetRingCollection
 ---
 
@@ -47,7 +46,7 @@ The **NetTxQueueGetRingCollection** function retrieves the [**NET_RING_COLLECTIO
 
 ## -parameters
 
-### -param PacketQueue
+### -param PacketQueue [_In_]
 
 A pointer to a NetAdapterCx-allocated **NETPACKETQUEUE** structure. The client driver receives a pointer to this **NETPACKETQUEUE** structure in its *[EVT_NET_ADAPTER_CREATE_TXQUEUE](../netadapter/nc-netadapter-evt_net_adapter_create_txqueue.md)* callback function.
 

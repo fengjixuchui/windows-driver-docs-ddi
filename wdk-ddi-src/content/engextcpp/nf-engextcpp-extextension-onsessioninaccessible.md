@@ -4,7 +4,6 @@ title: ExtExtension::OnSessionInaccessible (engextcpp.h)
 description: The OnSessionInaccessible method is called by the engine to inform the EngExtCpp extension library when the debugging session becomes inaccessible.
 old-location: debugger\onsessioninaccessible.htm
 tech.root: debugger
-ms.assetid: ba2c158a-11be-40fe-971e-f58f19a9c1b6
 ms.date: 05/03/2018
 keywords: ["ExtExtension::OnSessionInaccessible"]
 ms.keywords: EngExtCpp_Ref_3b2329d1-7a01-42d7-951c-777d9b93faa7.xml, ExtExtension.OnSessionInaccessible, ExtExtension::OnSessionInaccessible, OnSessionInaccessible, OnSessionInaccessible method [Windows Debugging], debugger.onsessioninaccessible
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Engextcpp.hpp
 api_name:
- - OnSessionInaccessible
+ - ExtExtension::OnSessionInaccessible
 ---
 
 # ExtExtension::OnSessionInaccessible
@@ -50,9 +49,9 @@ The <b>OnSessionInaccessible</b> method is called by the engine to inform the En
 
 ## -parameters
 
-### -param Argument 
+### -param Argument [in]
 
-[in]
+
 Set to zero. (Reserved for future use).
 
 ## -returns
@@ -72,3 +71,4 @@ This method is called when a target starts executing.
 
 
 <a href="/previous-versions/windows/hardware/previsioning-framework/ff552310(v=vs.85)">OnSessionAccessible</a>
+

@@ -4,7 +4,6 @@ title: PAGP_COMMIT_VIRTUAL (videoagp.h)
 description: The AgpCommitVirtual function maps reserved virtual memory to an associated range of AGP-decodable physical addresses.
 old-location: display\agpcommitvirtual.htm
 tech.root: display
-ms.assetid: 8a3e7fcd-d838-47ad-a42b-7eb070f81418
 ms.date: 05/10/2018
 keywords: ["PAGP_COMMIT_VIRTUAL callback function"]
 ms.keywords: AgpCommitVirtual, AgpCommitVirtual callback function [Display Devices], PAGP_COMMIT_VIRTUAL, PAGP_COMMIT_VIRTUAL callback, VideoPort_Functions_74f16518-6071-45bb-a44d-80fe042814ea.xml, display.agpcommitvirtual, videoagp/AgpCommitVirtual
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - videoagp.h
 api_name:
- - AgpCommitVirtual
+ - PAGP_COMMIT_VIRTUAL
 ---
 
 # PAGP_COMMIT_VIRTUAL callback function
@@ -50,24 +49,24 @@ The <b>AgpCommitVirtual</b> function maps reserved virtual memory to an associat
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the device extension of the miniport driver'.
 
-### -param VirtualReserveContext 
+### -param VirtualReserveContext [in]
 
-[in]
+
 Identifies a reserved virtual address range. The context handle was obtained from <a href="/windows-hardware/drivers/ddi/videoagp/nc-videoagp-pagp_reserve_virtual">AgpReserveVirtual</a>.
 
-### -param Pages 
+### -param Pages [in]
 
-[in]
+
 Specifies the number of pages of virtual memory to map.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the page offset at which to commit the pages. The offset is applied to the reserved virtual address range that is identified by <b>VirtualReserveContext</b>.
 
 ## -returns
@@ -111,3 +110,4 @@ When a miniport driver calls <b>AgpCommitVirtual</b>, a portion of the virtual a
 
 
 <a href="/windows-hardware/drivers/ddi/videoagp/nc-videoagp-pagp_reserve_virtual">AgpReserveVirtual</a>
+

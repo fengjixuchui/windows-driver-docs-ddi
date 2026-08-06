@@ -2,7 +2,6 @@
 UID: NS:ucmucsispec._UCSI_GET_CURRENT_CAM_IN
 title: _UCSI_GET_CURRENT_CAM_IN (ucmucsispec.h)
 description: Used in the GET_CURRENT_CAM command. See Table 4-31.
-ms.assetid: 92a7f060-0cbe-451d-9c99-1668e1604962
 tech.root: usbref
 ms.date: 09/30/2018
 keywords: ["UCSI_GET_CURRENT_CAM_IN structure"]
@@ -37,6 +36,8 @@ api_location:
  - ucmucsispec.h
 api_name:
  - _UCSI_GET_CURRENT_CAM_IN
+ - PUCSI_GET_CURRENT_CAM_IN
+ - UCSI_GET_CURRENT_CAM_IN
 ---
 
 # _UCSI_GET_CURRENT_CAM_IN structure
@@ -44,7 +45,7 @@ api_name:
 
 ## -description
 
-Used in the GET_CURRENT_CAM command. See Table 4-31 in [UCSI spec version 1.1](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
+Used in the GET_CURRENT_CAM command. See Table 4-31 in [UCSI spec version 1.2](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
 
 ## -struct-fields
 

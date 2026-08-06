@@ -4,7 +4,6 @@ title: RtlUpcaseUnicodeString function (ntddk.h)
 description: The RtlUpcaseUnicodeString routine converts a copy of the source string to uppercase and writes the converted string in the destination buffer.
 old-location: kernel\rtlupcaseunicodestring.htm
 tech.root: kernel
-ms.assetid: fe3c6010-532b-4f3d-b3d3-a1c27d4a05f1
 ms.date: 04/30/2018
 keywords: ["RtlUpcaseUnicodeString function"]
 ms.keywords: RtlUpcaseUnicodeString, RtlUpcaseUnicodeString routine [Kernel-Mode Driver Architecture], k109_617db3d7-18d8-46eb-a555-59f99d9cae78.xml, kernel.rtlupcaseunicodestring, ntddk/RtlUpcaseUnicodeString
@@ -51,19 +50,19 @@ The <b>RtlUpcaseUnicodeString</b> routine converts a copy of the source string t
 
 ## -parameters
 
-### -param DestinationString 
+### -param DestinationString [in, out]
 
-[in, out]
+
 Pointer to a caller-allocated buffer for the converted Unicode string.
 
-### -param SourceString 
+### -param SourceString [in]
 
-[in]
+
 Pointer to the source Unicode string to be converted to uppercase.
 
-### -param AllocateDestinationString 
+### -param AllocateDestinationString [in]
 
-[in]
+
 Specifies if <b>RtlUpcaseUnicodeString</b> is to allocate the buffer space for the <i>DestinationString</i>. If it does, the buffer must be deallocated by calling <b>RtlFreeUnicodeString</b>.
 
 ## -returns

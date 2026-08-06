@@ -4,14 +4,13 @@ title: StorPortGetDataInBufferMdl function (storport.h)
 description: Returns an MDL associated with the input data buffer of a SCSI request block (SRB).
 old-location: storage\storportgetdatainbuffermdl.htm
 tech.root: storage
-ms.assetid: 9D41810A-7698-4462-802D-79EF793C9A9D
 ms.date: 03/29/2018
 keywords: ["StorPortGetDataInBufferMdl function"]
 ms.keywords: StorPortGetDataInBufferMdl, StorPortGetDataInBufferMdl routine [Storage Devices], storage.storportgetdatainbuffermdl, storport/StorPortGetDataInBufferMdl
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Storport.lib
 req.dll: 
-req.irql: Any
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,19 +50,19 @@ Returns an MDL associated with the input data buffer  of a SCSI request block (S
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param Srb 
+### -param Srb [in]
 
-[in]
+
 The request block to containing the data described by the MDL pointed to by <i>Mdl</i>.
 
-### -param Mdl 
+### -param Mdl [out]
 
-[out]
+
 A pointer to  an MDL address to receive the MDL for <i>Srb</i>.
 
 ## -returns

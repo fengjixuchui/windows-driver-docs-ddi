@@ -1,10 +1,9 @@
 ---
 UID: NF:wudfddi_hwaccess.WRITE_REGISTER_USHORT
 title: WRITE_REGISTER_USHORT function (wudfddi_hwaccess.h)
-description: The WRITE_REGISTER_USHORT routine writes a USHORT value to the specified address.
+description: The WRITE_REGISTER_USHORT function (wudfddi_hwaccess.h) writes a USHORT value to the specified register address.
 old-location: wdf\write_register_ushort.htm
 tech.root: wdf
-ms.assetid: F41E7DD6-336C-477D-87AD-0151A523DD0A
 ms.date: 02/26/2018
 keywords: ["WRITE_REGISTER_USHORT function"]
 ms.keywords: WRITE_REGISTER_USHORT, WRITE_REGISTER_USHORT function, umdf.write_register_ushort, wdf.write_register_ushort, wudfddi_hwaccess/WRITE_REGISTER_USHORT
@@ -52,19 +51,19 @@ The <b>WRITE_REGISTER_USHORT</b> routine writes a USHORT value to the specified 
 
 ## -parameters
 
-### -param pDevice 
+### -param pDevice [in]
 
-[in]
+
 Specifies a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a> interface for the device object of the device to access.
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the register address, which must be a mapped range in memory space.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies a USHORT value to write to the register.
 
 ## -remarks

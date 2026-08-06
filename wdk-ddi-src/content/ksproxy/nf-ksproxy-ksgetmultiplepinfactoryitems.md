@@ -4,7 +4,6 @@ title: KsGetMultiplePinFactoryItems function (ksproxy.h)
 description: The KsGetMultiplePinFactoryItems function retrieves pin property items in a variable length data buffer.
 old-location: stream\ksgetmultiplepinfactoryitems.htm
 tech.root: stream
-ms.assetid: 43210484-dcae-49b7-bda3-50d6c06ee2c0
 ms.date: 04/23/2018
 keywords: ["KsGetMultiplePinFactoryItems function"]
 ms.keywords: KsGetMultiplePinFactoryItems, KsGetMultiplePinFactoryItems function [Streaming Media Devices], ksproxy/KsGetMultiplePinFactoryItems, ksproxy_cd252212-9317-4e1a-9f57-ee18afc23766.xml, stream.ksgetmultiplepinfactoryitems
@@ -51,24 +50,24 @@ The <b>KsGetMultiplePinFactoryItems</b> function retrieves pin property items in
 
 ## -parameters
 
-### -param FilterHandle 
+### -param FilterHandle [in]
 
-[in]
+
 Handle to the filter that contains the pin factory to query.
 
-### -param PinFactoryId 
+### -param PinFactoryId [in]
 
-[in]
+
 Identifier of the pin factory against which the property items are being returned.
 
-### -param PropertyId 
+### -param PropertyId [in]
 
-[in]
+
 Identifier of the property in the pin property set (<a href="/windows-hardware/drivers/stream/kspropsetid-pin">KSPROPSETID_Pin</a>) to query.
 
-### -param Items 
+### -param Items [out]
 
-[out]
+
 Pointer to a buffer to receive the property items. If successfully retrieved, this pointer must be subsequently deleted with the <b>CoTaskMemFree</b> function.
 
 ## -returns
@@ -87,7 +86,7 @@ For more information about <b>CoTaskMemFree</b>, see the Microsoft Windows SDK d
 
 
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 

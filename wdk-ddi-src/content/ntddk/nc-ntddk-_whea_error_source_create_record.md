@@ -1,13 +1,12 @@
 ---
 UID: NC:ntddk._WHEA_ERROR_SOURCE_CREATE_RECORD
-title: _WHEA_ERROR_SOURCE_CREATE_RECORD
-description: 
-tech.root: 
-ms.assetid: 161a7a07-a498-4e45-b356-4083179c71d6
-ms.date: 08/19/2019
+title: WHEA_ERROR_SOURCE_CREATE_RECORD
+description: WHEA_ERROR_SOURCE_CREATE_RECORD is reserved for system use.
+tech.root: whea
+ms.date: 01/19/2023
 keywords: ["WHEA_ERROR_SOURCE_CREATE_RECORD callback function"]
 req.header: ntddk.h
-req.include-header: 
+req.include-header: Ntddk.h
 req.target-type: 
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -24,7 +23,6 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 targetos: Windows
-ms.custom: 19H1
 f1_keywords:
  - _WHEA_ERROR_SOURCE_CREATE_RECORD
  - ntddk/_WHEA_ERROR_SOURCE_CREATE_RECORD
@@ -36,12 +34,7 @@ api_location:
  - ntddk.h
 api_name:
  - _WHEA_ERROR_SOURCE_CREATE_RECORD
-product:
- - Windows
 ---
-
-# _WHEA_ERROR_SOURCE_CREATE_RECORD callback function
-
 
 ## -description
 
@@ -49,23 +42,18 @@ Reserved for system use.
 
 ## -parameters
 
-### -param ErrorSource: 
+### -param ErrorSource
 
-### -param ErrorPacket: 
+### -param ErrorPacket
 
-### -param ErrorRecord: 
+### -param ErrorRecord
 
-### -param BufferSize: 
+### -param BufferSize
 
-### -param Context: 
+### -param Context
 
 ## -returns
-
-## -prototype
-
-`
 
 ## -remarks
 
 ## -see-also
-

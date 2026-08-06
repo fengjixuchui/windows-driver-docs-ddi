@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT2
 title: PFND3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT2 (d3dkmthk.h)
 description: The PFND3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT2 callback function checks the details of hardware support for multiplane overlays.
-ms.assetid: 2c7e8c79-ec9a-46f1-b217-8e6bd95b21d9
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT2 callback function"]
 req.header: d3dkmthk.h
@@ -51,9 +50,9 @@ The PFND3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT2 callback function checks the detail
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in, out]
 
-[in, out] Pointer to a [D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT2](ns-d3dkmthk-_d3dkmt_checkmultiplaneoverlaysupport2.md) structure.
+Pointer to a [D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT2](ns-d3dkmthk-_d3dkmt_checkmultiplaneoverlaysupport2.md) structure.
 
 ## -returns
 

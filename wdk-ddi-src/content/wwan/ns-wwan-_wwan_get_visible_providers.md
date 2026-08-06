@@ -4,7 +4,6 @@ title: _WWAN_GET_VISIBLE_PROVIDERS (wwan.h)
 description: The WWAN_GET_VISIBLE_PROVIDERS structure provides information about the type of visible providers to return.
 old-location: netvista\wwan_get_visible_providers.htm
 tech.root: netvista
-ms.assetid: 62516178-11F9-43F3-A70D-42C8FDDAE2DB
 ms.date: 05/02/2018
 keywords: ["WWAN_GET_VISIBLE_PROVIDERS structure"]
 ms.keywords: "*PWWAN_GET_VISIBLE_PROVIDERS, PWWAN_GET_VISIBLE_PROVIDERS, PWWAN_GET_VISIBLE_PROVIDERS structure pointer [Network Drivers Starting with Windows Vista], WWAN_GET_VISIBLE_PROVIDERS, WWAN_GET_VISIBLE_PROVIDERS structure [Network Drivers Starting with Windows Vista], _WWAN_GET_VISIBLE_PROVIDERS, netvista.wwan_get_visible_providers, wwan/PWWAN_GET_VISIBLE_PROVIDERS, wwan/WWAN_GET_VISIBLE_PROVIDERS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_GET_VISIBLE_PROVIDERS
+ - PWWAN_GET_VISIBLE_PROVIDERS
  - WWAN_GET_VISIBLE_PROVIDERS
 ---
 
@@ -97,3 +98,4 @@ Only providers that are currently visible and that can be set as home provider s
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_get_visible_providers">NDIS_WWAN_GET_VISIBLE_PROVIDERS</a>
+

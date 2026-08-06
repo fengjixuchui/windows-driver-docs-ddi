@@ -4,7 +4,6 @@ title: KsPinHandshake function (ks.h)
 description: The KsPinHandshake function attempts a protocol handshake with a connected pin.
 old-location: stream\kspinhandshake.htm
 tech.root: stream
-ms.assetid: 31855688-9221-4128-89c5-dbc4f3e6f794
 ms.date: 04/23/2018
 keywords: ["KsPinHandshake function"]
 ms.keywords: KsPinHandshake, KsPinHandshake function [Streaming Media Devices], avfunc_a7b6afa8-acb0-4847-9e86-136100c4dd48.xml, ks/KsPinHandshake, stream.kspinhandshake
@@ -50,19 +49,19 @@ The<b> KsPinHandshake </b>function attempts a protocol handshake with a connecte
 
 ## -parameters
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a> structure that is initiating the handshake. The handshake request is passed on to the pin connected to this object.
 
-### -param In 
+### -param In [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-kshandshake">KSHANDSHAKE</a> structure containing the handshake information to be passed to the connected pin.
 
-### -param Out 
+### -param Out [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-kshandshake">KSHANDSHAKE</a> structure that is filled in with handshake information by the connected pin.
 
 ## -returns

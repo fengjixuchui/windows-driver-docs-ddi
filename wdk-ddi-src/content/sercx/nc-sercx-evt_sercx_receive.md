@@ -4,7 +4,6 @@ title: EVT_SERCX_RECEIVE (sercx.h)
 description: The EvtSerCxReceive event callback function prepares the serial controller device (UART) to do a read (receive) operation.
 old-location: serports\evtsercxreceive.htm
 tech.root: serports
-ms.assetid: C862D632-5425-4EEB-9C5D-BC3721D9F132
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX_RECEIVE callback function"]
 ms.keywords: 1/EvtSerCxReceive, EVT_SERCX_RECEIVE, EVT_SERCX_RECEIVE callback, EvtSerCxReceive, EvtSerCxReceive callback function [Serial Ports], serports.evtsercxreceive
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 1.0\Sercx.h
 api_name:
- - EvtSerCxReceive
+ - EVT_SERCX_RECEIVE
 ---
 
 # EVT_SERCX_RECEIVE callback function
@@ -50,14 +49,14 @@ The <i>EvtSerCxReceive</i> event callback function prepares the serial controlle
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the serial controller.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The number of bytes to be received. The controller driver can use this value as a hint to decide whether to use PIO or DMA to perform the data transfer.
 
 ## -returns
@@ -120,3 +119,4 @@ For more information about SDV requirements for function declarations, see <a hr
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdpc/nf-wdfdpc-wdfdpcenqueue">WdfDpcEnqueue</a>
+

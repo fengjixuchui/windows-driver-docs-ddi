@@ -4,7 +4,6 @@ title: ExtRemoteTyped::operator=(const ExtRemoteTyped &) (engextcpp.h)
 description: The operator= overloaded assignment operator sets the typed data represented by the ExtRemoteTyped object by copying the information from another object.
 old-location: debugger\extremotetyped_operatorequals_extremotetyped.htm
 tech.root: debugger
-ms.assetid: c6ca8078-a331-4952-9854-831ba95404ee
 ms.date: 05/03/2018
 keywords: ["ExtRemoteTyped::operator=(const ExtRemoteTyped &)"]
 ms.keywords: ExtRemoteTyped class [Windows Debugging],operator= method, ExtRemoteTyped.operator=, ExtRemoteTyped.operator=(const ExtRemoteTyped &), ExtRemoteTyped.operator=(const ExtRemoteTyped&), ExtRemoteTyped::operator=, ExtRemoteTyped::operator=(const ExtRemoteTyped &), debugger.extremotetyped_operatorequals_extremotetyped, operator=, operator= method [Windows Debugging], operator= method [Windows Debugging],ExtRemoteTyped class
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteTyped.operator=
+ - ExtRemoteTyped::operator=
 ---
 
 # ExtRemoteTyped::operator=(const ExtRemoteTyped &)
@@ -50,9 +49,9 @@ The <b>operator=</b> overloaded assignment operator sets the typed data represen
 
 ## -parameters
 
-### -param Typed 
+### -param Typed [in, ref]
 
-[in, ref]
+
 An existing <a href="/windows-hardware/drivers/ddi/engextcpp/nl-engextcpp-extremotetyped">ExtRemoteTyped</a> object that represents the data and type to be assigned to this object.
 
 ## -returns
@@ -74,3 +73,4 @@ The typed data can also be copied using the <a href="/windows-hardware/drivers/d
 
 
 <a href="/previous-versions/windows/hardware/previsioning-framework/ff544342(v=vs.85)">ExtRemoteTyped::Operator= (DEBUG_TYPED_DATA)</a>
+

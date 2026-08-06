@@ -4,7 +4,6 @@ title: _DXVA_ConfigPictureDecode (dxva.h)
 description: The DXVA_ConfigPictureDecode structure is sent by the host decoder to the accelerator to set the configuration for compressed picture decoding.
 old-location: display\dxva_configpicturedecode.htm
 tech.root: display
-ms.assetid: b36c2901-33ca-4c76-98d0-8dbe6551226b
 ms.date: 05/10/2018
 keywords: ["DXVA_ConfigPictureDecode structure"]
 ms.keywords: "*LPDXVA_ConfigPictureDecode, DXVA_ConfigPictureDecode, DXVA_ConfigPictureDecode structure [Display Devices], LPDXVA_ConfigPictureDecode, LPDXVA_ConfigPictureDecode structure pointer [Display Devices], _DXVA_ConfigPictureDecode, display.dxva_configpicturedecode, dxva/DXVA_ConfigPictureDecode, dxva/LPDXVA_ConfigPictureDecode, dxvaref_857a5bfe-282a-49c2-8db6-a0fde8e26a61.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dxva.h
 api_name:
+ - _DXVA_ConfigPictureDecode
+ - LPDXVA_ConfigPictureDecode
  - DXVA_ConfigPictureDecode
 ---
 
@@ -227,3 +228,4 @@ For some types of bitstreams, forcing macroblock control commands within each ma
 
 
 <a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_tcoefsingle">DXVA_TCoefSingle</a>
+

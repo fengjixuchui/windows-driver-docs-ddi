@@ -4,8 +4,8 @@ title: ZwQueryFullAttributesFile function (wdm.h)
 description: The ZwQueryFullAttributesFile routine supplies network open information for the specified file.
 old-location: kernel\zwqueryfullattributesfile.htm
 tech.root: kernel
-ms.assetid: 896ea6aa-54e8-4109-8597-58d8d2cd75ce
 ms.date: 04/30/2018
+author: lorihollasch
 keywords: ["ZwQueryFullAttributesFile function"]
 ms.keywords: NtQueryFullAttributesFile, ZwQueryFullAttributesFile, ZwQueryFullAttributesFile routine [Kernel-Mode Driver Architecture], k111_58eefadc-2aff-4252-82a6-6f0c9ab43a19.xml, kernel.zwqueryfullattributesfile, wdm/NtQueryFullAttributesFile, wdm/ZwQueryFullAttributesFile
 req.header: wdm.h
@@ -39,7 +39,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - ZwQueryFullAttributesFile
- - NtQueryFullAttributesFile
 ---
 
 # ZwQueryFullAttributesFile function
@@ -51,14 +50,14 @@ The <b>ZwQueryFullAttributesFile</b> routine supplies network open information f
 
 ## -parameters
 
-### -param ObjectAttributes 
+### -param ObjectAttributes [in]
 
-[in]
+
 A pointer to an <a href="/windows/win32/api/ntdef/ns-ntdef-_object_attributes">OBJECT_ATTRIBUTES</a> structure that supplies the attributes to be used for the file object.
 
-### -param FileInformation 
+### -param FileInformation [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_network_open_information">FILE_NETWORK_OPEN_INFORMATION</a> structure that receives the returned file attributes information.
 
 ## -returns
@@ -84,3 +83,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/kernel/using-nt-and-zw-versions-of-the-native-system-services-routines">Using Nt and Zw Versions of the Native System Services Routines</a>
+

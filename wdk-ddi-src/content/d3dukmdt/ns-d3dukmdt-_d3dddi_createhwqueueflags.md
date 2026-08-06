@@ -1,17 +1,14 @@
 ---
 UID: NS:d3dukmdt._D3DDDI_CREATEHWQUEUEFLAGS
-title: _D3DDDI_CREATEHWQUEUEFLAGS (d3dukmdt.h)
-description: A structure used to create hardware queue flags.
-old-location: display\d3dddi_createhwqueueflags_.htm
+title: D3DDDI_CREATEHWQUEUEFLAGS (d3dukmdt.h)
+description: Learn more about the D3DDDI_CREATEHWQUEUEFLAGS structure.
 tech.root: display
-ms.assetid: 50318DEC-8EE4-4208-8E7D-E8BFEA4BA06B
-ms.date: 03/24/2020
+ms.date: 06/17/2024
 keywords: ["D3DDDI_CREATEHWQUEUEFLAGS structure"]
-ms.keywords: D3DDDI_CREATEHWQUEUEFLAGS, D3DDDI_CREATEHWQUEUEFLAGS , D3DDDI_CREATEHWQUEUEFLAGS structure [Display Devices], _D3DDDI_CREATEHWQUEUEFLAGS, d3dukmdt/D3DDDI_CREATEHWQUEUEFLAGS, display.d3dddi_createhwqueueflags_
 req.header: d3dukmdt.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 10, version 1703 (WDDM 2.2)
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,21 +37,17 @@ api_type:
 api_location:
  - d3dukmdt.h
 api_name:
+ - _D3DDDI_CREATEHWQUEUEFLAGS
  - D3DDDI_CREATEHWQUEUEFLAGS
 ---
 
-# _D3DDDI_CREATEHWQUEUEFLAGS structure
-
+# D3DDDI_CREATEHWQUEUEFLAGS structure
 
 ## -description
 
-A structure used to create hardware queue flags.
+The **D3DDDI_CREATEHWQUEUEFLAGS** structure specifies flags to use when creating a hardware queue.
 
 ## -struct-fields
-
-### -field Value
-
-This value is used to operate over the members collectively.
 
 ### -field DisableGpuTimeout
 
@@ -68,13 +61,30 @@ When set, indicates to the OS that the hardware queue being created does not hav
 
 When set, indicates to the OS that the hardware queue being created does not have application observable behavior, and it should not be blocked behind in D3D12 command queue fence wait operation. This flag was introduced in Windows 10, version 2004.
 
+### -field NoKmdAccess
+
+Reserved for system use.
+
+### -field UserModeSubmission
+
+When set, indicates to the OS that the hardware queue being created uses the user-mode submission model. Hardware queues created using this flag can't use the regular kernel-mode work submission path and must rely on the doorbell mechanism for work submission on the queue.
+
+### -field NativeProgressFence
+
+When set, indicates that the [**DXGKARG_CREATEHWQUEUE::hHwQueueProgressFence**](../d3dkmddi/ns-d3dkmddi-dxgkarg_createhwqueue.md) handle points to the driver handle of a native GPU fence object previously created using [**DxgkDdiCreateNativeFence**](../d3dkmddi/nc-d3dkmddi-dxgkddi_createnativefence.md). For more information, see [Native GPU fence objects](/windows-hardware/drivers/display/native-gpu-fence-objects). Available starting with Windows 11, version 24H2.
+
+### -field TestQueue
+
+When set, indicates that the hardware queue being created is a test queue for [kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing-of-wddm-features). Available starting with Windows 11, version 24H2.
+
 ### -field Reserved
 
-This value is reserved for system use.
+Reserved for system use.
+
+### -field Value
+
+This value can be used to operate over the structure members collectively.
 
 ## -see-also
 
-[**D3DKMT_CREATEHWQUEUE**](../d3dkmthk/ns-d3dkmthk-_d3dkmt_createhwqueue.md)
-
-[**PFND3DKMT_CREATEHWQUEUE**](../d3dkmthk/nc-d3dkmthk-pfnd3dkmt_createhwqueue.md)
-
+[**DxgkDdiCreateHwQueue**](../d3dkmddi/nc-d3dkmddi-dxgkddi_createhwqueue.md)

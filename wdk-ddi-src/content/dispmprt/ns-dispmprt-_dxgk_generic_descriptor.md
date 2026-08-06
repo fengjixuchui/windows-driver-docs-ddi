@@ -4,14 +4,13 @@ title: _DXGK_GENERIC_DESCRIPTOR (dispmprt.h)
 description: The DXGK_GENERIC_DESCRIPTOR structure contains descriptive information about a child device of the display adapter.
 old-location: display\dxgk_generic_descriptor.htm
 tech.root: display
-ms.assetid: 181df1a6-044d-406d-bc6d-1b35b3d744fc
 ms.date: 05/10/2018
 keywords: ["DXGK_GENERIC_DESCRIPTOR structure"]
 ms.keywords: "*PDXGK_GENERIC_DESCRIPTOR, DXGK_GENERIC_DESCRIPTOR, DXGK_GENERIC_DESCRIPTOR structure [Display Devices], DmStructs_f77c03e6-d887-43ba-9499-ce1740cb6c9e.xml, PDXGK_GENERIC_DESCRIPTOR, PDXGK_GENERIC_DESCRIPTOR structure pointer [Display Devices], _DXGK_GENERIC_DESCRIPTOR, display.dxgk_generic_descriptor, dispmprt/DXGK_GENERIC_DESCRIPTOR, dispmprt/PDXGK_GENERIC_DESCRIPTOR"
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
+ - _DXGK_GENERIC_DESCRIPTOR
+ - PDXGK_GENERIC_DESCRIPTOR
  - DXGK_GENERIC_DESCRIPTOR
 ---
 
@@ -77,3 +78,4 @@ The display adapter has two types of child devices: <b>TypeVideoOutput</b> and <
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_device_descriptor">DXGK_DEVICE_DESCRIPTOR</a>
+

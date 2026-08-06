@@ -4,7 +4,6 @@ title: PFND3DDDI_COMPOSERECTS (d3dumddi.h)
 description: The ComposeRects function composes two-dimensional areas from a source surface to a destination surface.
 old-location: display\composerects.htm
 tech.root: display
-ms.assetid: b6a6b549-7590-4b27-b759-631fa62a76d2
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_COMPOSERECTS callback function"]
 ms.keywords: ComposeRects, ComposeRects callback function [Display Devices], PFND3DDDI_COMPOSERECTS, PFND3DDDI_COMPOSERECTS callback, UserModeDisplayDriver_Functions_fca43b4e-1c5d-46b9-a68f-928378ed22a1.xml, d3dumddi/ComposeRects, display.composerects
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - ComposeRects
-product:
- - Windows
+ - PFND3DDDI_COMPOSERECTS
 ---
 
 # PFND3DDDI_COMPOSERECTS callback function
@@ -56,7 +53,7 @@ The <b>ComposeRects</b> function composes two-dimensional areas from a source su
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -137,3 +134,4 @@ for (UINT i=0; i < COMPOSERECTS.NumDstRects; i++) {
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

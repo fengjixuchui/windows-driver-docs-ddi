@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugBreakpoint2.GetCurrentPassCount
 title: IDebugBreakpoint2::GetCurrentPassCount (dbgeng.h)
-description: The GetCurrentPassCount method returns the remaining number of times that the target must reach the breakpoint location before the breakpoint is triggered.
+description: The IDebugBreakpoint2::GetCurrentPassCount method returns the number that the target must reach the breakpoint location before the breakpoint is triggered.
 old-location: debugger\getcurrentpasscount.htm
 tech.root: debugger
-ms.assetid: ff9b9988-6790-48d1-8423-60c63b0a90cf
 ms.date: 05/03/2018
 keywords: ["IDebugBreakpoint2::GetCurrentPassCount"]
 ms.keywords: ComOther_b9308489-679e-4ced-bd73-84cbeaadc669.xml, GetCurrentPassCount, GetCurrentPassCount method [Windows Debugging], GetCurrentPassCount method [Windows Debugging],IDebugBreakpoint interface, GetCurrentPassCount method [Windows Debugging],IDebugBreakpoint2 interface, IDebugBreakpoint interface [Windows Debugging],GetCurrentPassCount method, IDebugBreakpoint2 interface [Windows Debugging],GetCurrentPassCount method, IDebugBreakpoint2.GetCurrentPassCount, IDebugBreakpoint2::GetCurrentPassCount, IDebugBreakpoint::GetCurrentPassCount, dbgeng/IDebugBreakpoint2::GetCurrentPassCount, dbgeng/IDebugBreakpoint::GetCurrentPassCount, debugger.getcurrentpasscount
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugBreakpoint.GetCurrentPassCount
- - IDebugBreakpoint2.GetCurrentPassCount
+ - IDebugBreakpoint2::GetCurrentPassCount
 ---
 
 # IDebugBreakpoint2::GetCurrentPassCount
@@ -51,9 +49,9 @@ The <b>GetCurrentPassCount</b> method returns the remaining number of times that
 
 ## -parameters
 
-### -param Count 
+### -param Count [out]
 
-[out]
+
 The remaining number of times that the target must hit the breakpoint before it is triggered.  The number of times that the target must pass the breakpoint <u>without</u> triggering it is the value that is returned to <i>Count</i>, minus one.
 
 ## -returns
@@ -90,3 +88,4 @@ If the debugger executes the code at the breakpoint location while stepping thro
 The <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getparameters">GetParameters</a> method also returns the information that is returned in <i>Count</i>.
 
 For more information about breakpoint properties, see <a href="/windows-hardware/drivers/debugger/controlling-breakpoint-flags-and-parameters">Controlling Breakpoint Flags and Parameters</a>.
+

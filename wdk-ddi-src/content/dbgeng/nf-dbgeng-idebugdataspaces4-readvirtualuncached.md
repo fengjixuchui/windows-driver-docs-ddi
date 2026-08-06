@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugDataSpaces4.ReadVirtualUncached
 title: IDebugDataSpaces4::ReadVirtualUncached (dbgeng.h)
-description: The ReadVirtualUncached method reads memory from the target's virtual address space.
+description: The ReadVirtualUncached method reads memory from the target's virtual address space. This method belongs to the IDebugDataSpaces4 interface.
 old-location: debugger\readvirtualuncached.htm
 tech.root: debugger
-ms.assetid: 91674220-3160-40d2-9d68-56d854244711
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces4::ReadVirtualUncached"]
 ms.keywords: IDebugDataSpaces interface [Windows Debugging],ReadVirtualUncached method, IDebugDataSpaces2 interface [Windows Debugging],ReadVirtualUncached method, IDebugDataSpaces2::ReadVirtualUncached, IDebugDataSpaces3 interface [Windows Debugging],ReadVirtualUncached method, IDebugDataSpaces3::ReadVirtualUncached, IDebugDataSpaces4 interface [Windows Debugging],ReadVirtualUncached method, IDebugDataSpaces4.ReadVirtualUncached, IDebugDataSpaces4::ReadVirtualUncached, IDebugDataSpaces::ReadVirtualUncached, IDebugDataSpaces_265817a7-d690-4b8c-957f-06ec5d4f2f08.xml, ReadVirtualUncached, ReadVirtualUncached method [Windows Debugging], ReadVirtualUncached method [Windows Debugging],IDebugDataSpaces interface, ReadVirtualUncached method [Windows Debugging],IDebugDataSpaces2 interface, ReadVirtualUncached method [Windows Debugging],IDebugDataSpaces3 interface, ReadVirtualUncached method [Windows Debugging],IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces2::ReadVirtualUncached, dbgeng/IDebugDataSpaces3::ReadVirtualUncached, dbgeng/IDebugDataSpaces4::ReadVirtualUncached, dbgeng/IDebugDataSpaces::ReadVirtualUncached, debugger.readvirtualuncached
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugDataSpaces.ReadVirtualUncached
- - IDebugDataSpaces2.ReadVirtualUncached
- - IDebugDataSpaces3.ReadVirtualUncached
- - IDebugDataSpaces4.ReadVirtualUncached
+ - IDebugDataSpaces4::ReadVirtualUncached
 ---
 
 # IDebugDataSpaces4::ReadVirtualUncached
@@ -53,24 +49,24 @@ The <b>ReadVirtualUncached</b> method reads memory from the target's virtual add
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the location in the target's virtual address space to be read.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 Specifies the buffer to read the memory into.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size in bytes of the buffer.  This is also the number of bytes being requested.
 
-### -param BytesRead 
+### -param BytesRead [out, optional]
 
-[out, optional]
+
 Receives the number of bytes that were read.  If it is set to <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -125,3 +121,4 @@ This method behaves identically to <a href="/windows-hardware/drivers/ddi/dbgeng
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugdataspaces4-writevirtualuncached">WriteVirtualUncached</a>
+

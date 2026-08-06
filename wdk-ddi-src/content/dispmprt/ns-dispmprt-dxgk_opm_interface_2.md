@@ -2,7 +2,6 @@
 UID: NS:dispmprt._DXGK_OPM_INTERFACE_2
 title: DXGK_OPM_INTERFACE_2
 ms.date: 08/21/2020
-ms.topic: language-reference
 targetos: Windows
 description: The DXGK_OPM_INTERFACE_2 structure contains pointers to functions in the Output Protection Manager (OPM) Interface, which is implemented by the display miniport driver.
 tech.root: display
@@ -29,6 +28,7 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGK_OPM_INTERFACE_2
+ - PDXGK_OPM_INTERFACE_2
  - DXGK_OPM_INTERFACE_2
 f1_keywords:
  - _DXGK_OPM_INTERFACE_2
@@ -42,6 +42,7 @@ dev_langs:
 ---
 
 # DXGK_OPM_INTERFACE_2 structure
+
 
 ## -description
 
@@ -140,3 +141,4 @@ For more information on how to use this structure with the OPM interface, see [R
 [**DxgkDdiQueryInterface**](nc-dispmprt-dxgkddi_query_interface.md)
 
 [**INTERFACE**](../wdm/ns-wdm-_interface.md)
+

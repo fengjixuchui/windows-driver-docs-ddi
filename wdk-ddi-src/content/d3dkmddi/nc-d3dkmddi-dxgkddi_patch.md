@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_PATCH
 title: DXGKDDI_PATCH (d3dkmddi.h)
 description: The DxgkDdiPatch function assigns physical addresses to the given direct memory access (DMA) buffer before the DMA buffer is submitted to the graphics hardware.
 old-location: display\dxgkddipatch.htm
-ms.assetid: 363be784-0e3b-4f9a-a643-80857478bbae
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_PATCH callback function"]
 ms.keywords: DXGKDDI_PATCH, DXGKDDI_PATCH callback, DmFunctions_dc8691fa-b688-4762-a641-93e4625d8931.xml, DxgkDdiPatch, DxgkDdiPatch callback function [Display Devices], d3dkmddi/DxgkDdiPatch, display.dxgkddipatch
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiPatch
-product:
- - Windows
+ - DXGKDDI_PATCH
 ---
 
 # DXGKDDI_PATCH callback function
@@ -52,13 +49,13 @@ The <i>DxgkDdiPatch</i> function assigns physical addresses to the given direct 
 
 ## -parameters
 
-### -param hAdapter
+### -param hAdapter [in]
 
-[in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
+A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
 
-### -param pPatch
+### -param pPatch [in]
 
-[in] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_patch">DXGKARG_PATCH</a> structure that describes the DMA buffer to be patched with physical addresses.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_patch">DXGKARG_PATCH</a> structure that describes the DMA buffer to be patched with physical addresses.
 
 ## -returns
 
@@ -89,3 +86,4 @@ If the driver returns an error code, the Microsoft DirectX graphics kernel subsy
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a>
+

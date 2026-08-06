@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddtape._TAPE_ERASE
 title: _TAPE_ERASE (ntddtape.h)
-description: The TAPE_ERASE structure is used in conjunction with the IOCTL_TAPE_ERASE request to erase the current tape partition.
+description: The _TAPE_ERASE structure (ntddtape.h) contains the information needed to erase the current tape partition.
 old-location: storage\tape_erase.htm
 tech.root: storage
-ms.assetid: dc17efe6-9183-4908-8ca5-69c6ae38db6d
 ms.date: 03/29/2018
 keywords: ["TAPE_ERASE structure"]
 ms.keywords: "*PTAPE_ERASE, PTAPE_ERASE, PTAPE_ERASE structure pointer [Storage Devices], TAPE_ERASE, TAPE_ERASE structure [Storage Devices], _TAPE_ERASE, ntddtape/PTAPE_ERASE, ntddtape/TAPE_ERASE, storage.tape_erase, structs-tape_56c14eca-358e-438f-9ff4-06345d2b2434.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddtape.h
 api_name:
+ - _TAPE_ERASE
+ - PTAPE_ERASE
  - TAPE_ERASE
 ---
 
@@ -65,3 +66,4 @@ Indicates that the target device should return status immediately, when set to <
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntddtape/ni-ntddtape-ioctl_tape_erase">IOCTL_TAPE_ERASE</a>
+

@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP
 title: _D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP (d3dkmthk.h)
 description: The D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP structure describes the parameters to determine the video present source in the path of a video present network (VidPN) topology that exclusively owns the VidPN.
 old-location: display\d3dkmt_checkvidpnexclusiveownership.htm
-ms.assetid: 5a7f05a0-11ae-49ed-9015-f2712cc77880
 ms.date: 05/10/2018
 keywords: ["D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP structure"]
 ms.keywords: D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP, D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP structure [Display Devices], OpenGL_Structs_23afa7dd-8aaa-402b-9b99-235be17cd26e.xml, _D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP, d3dkmthk/D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP, display.d3dkmt_checkvidpnexclusiveownership
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP
  - D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP
 ---
 
@@ -52,14 +52,15 @@ The D3DKMT_CHECKVIDPNEXCLUSIVEOWNERSHIP structure describes the parameters to de
 
 ## -struct-fields
 
-### -field hAdapter
+### -field hAdapter [in]
 
-[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the graphics adapter.
+A D3DKMT_HANDLE data type that represents a kernel-mode handle to the graphics adapter.
 
-### -field VidPnSourceId
+### -field VidPnSourceId [in]
 
-[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology to check about.
+The zero-based identification number of the video present source in a path of a video present network (VidPN) topology to check about.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtcheckvidpnexclusiveownership">D3DKMTCheckVidPnExclusiveOwnership</a>
+

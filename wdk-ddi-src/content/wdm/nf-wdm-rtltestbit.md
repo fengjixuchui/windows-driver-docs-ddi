@@ -4,7 +4,6 @@ title: RtlTestBit function (wdm.h)
 description: The RtlTestBit routine returns the value of a bit in a bitmap.
 old-location: kernel\rtltestbit.htm
 tech.root: kernel
-ms.assetid: 52f892a8-e82d-465d-aef5-630f5e971e8f
 ms.date: 04/30/2018
 keywords: ["RtlTestBit function"]
 ms.keywords: RtlTestBit, RtlTestBit routine [Kernel-Mode Driver Architecture], k109_552764bc-c69d-4039-8284-8cc8f41dc16a.xml, kernel.rtltestbit, wdm/RtlTestBit
@@ -50,14 +49,14 @@ The <b>RtlTestBit</b> routine returns the value of a bit in a bitmap.
 
 ## -parameters
 
-### -param BitMapHeader 
+### -param BitMapHeader [in]
 
-[in]
-Pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-### -param BitNumber 
+Pointer to the <a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-[in]
+### -param BitNumber [in]
+
+
 Specifies the zero-based index of the bit within the bitmap. The routine returns the value of this bit.
 
 ## -returns
@@ -70,7 +69,7 @@ Callers of <b>RtlTestBit</b> must be running at IRQL <= APC_LEVEL if the memory 
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a>
+<a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a>
 
 
 

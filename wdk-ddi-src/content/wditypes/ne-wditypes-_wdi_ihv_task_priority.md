@@ -4,7 +4,6 @@ title: _WDI_IHV_TASK_PRIORITY (wditypes.h)
 description: The WDI_IHV_TASK_PRIORITY enumeration defines IHV task priorities.
 old-location: netvista\wdi_ihv_task_priority.htm
 tech.root: netvista
-ms.assetid: 606CF45C-5398-4157-92A7-382B6162D806
 ms.date: 05/02/2018
 keywords: ["WDI_IHV_TASK_PRIORITY enumeration"]
 ms.keywords: WDI_IHV_TASK_PRIORITY, WDI_IHV_TASK_PRIORITY enumeration [Network Drivers Starting with Windows Vista], WDI_IHV_TASK_PRIORITY_HIGH, WDI_IHV_TASK_PRIORITY_LOW, WDI_IHV_TASK_PRIORITY_MEDIUM, _WDI_IHV_TASK_PRIORITY, netvista.wdi_ihv_task_priority, netvista.wifi_ihv_task_priority, wditypes/WDI_IHV_TASK_PRIORITY, wditypes/WDI_IHV_TASK_PRIORITY_HIGH, wditypes/WDI_IHV_TASK_PRIORITY_LOW, wditypes/WDI_IHV_TASK_PRIORITY_MEDIUM
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_IHV_TASK_PRIORITY
  - WDI_IHV_TASK_PRIORITY
 ---
 
@@ -47,6 +47,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_IHV_TASK_PRIORITY enumeration defines IHV task priorities.
 

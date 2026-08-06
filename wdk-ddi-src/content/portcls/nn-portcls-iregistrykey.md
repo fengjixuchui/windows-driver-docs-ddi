@@ -4,7 +4,6 @@ title: IRegistryKey (portcls.h)
 description: The IRegistryKey interface provides an abstraction of a registry key that a miniport driver can use to access the key and its subkeys.
 old-location: audio\iregistrykey.htm
 tech.root: audio
-ms.assetid: 41601234-7b8e-4d53-9455-626a5a3c4ff3
 ms.date: 05/08/2018
 keywords: ["IRegistryKey interface"]
 ms.keywords: IRegistryKey, IRegistryKey interface [Audio Devices], IRegistryKey interface [Audio Devices],described, audio.iregistrykey, audmp-routines_40bea095-17f2-4b5f-96e8-ab2fed6d82d4.xml, portcls/IRegistryKey
@@ -52,7 +51,5 @@ For more information, see <a href="/windows-hardware/drivers/audio/registry-key-
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IRegistryKey</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IRegistryKey</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IRegistryKey</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IRegistryKey</b> also has these types of members:
+

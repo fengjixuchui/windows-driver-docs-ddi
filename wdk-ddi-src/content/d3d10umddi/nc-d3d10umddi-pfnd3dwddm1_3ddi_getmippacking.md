@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3DWDDM1_3DDI_GETMIPPACKING
 title: PFND3DWDDM1_3DDI_GETMIPPACKING (d3d10umddi.h)
 description: For a given tiled resource, returns how many mips are packed, and how many tiles are needed to store all the packed mips.
 old-location: display\getmippacking.htm
-ms.assetid: 8AF361B5-279D-4525-AD98-843A4A746201
 ms.date: 05/10/2018
 keywords: ["PFND3DWDDM1_3DDI_GETMIPPACKING callback function"]
 ms.keywords: GetMipPacking, GetMipPacking callback function [Display Devices], PFND3DWDDM1_3DDI_GETMIPPACKING, PFND3DWDDM1_3DDI_GETMIPPACKING callback, d3d10umddi/GetMipPacking, display.getmippacking
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - GetMipPacking
-product:
- - Windows
+ - PFND3DWDDM1_3DDI_GETMIPPACKING
 ---
 
 # PFND3DWDDM1_3DDI_GETMIPPACKING callback function
@@ -70,7 +67,7 @@ If there is no packing, a value of zero should be returned.
 
 A pointer to a variable that receives the number of tiles that the packed mips fit into, for a given array slice.
 
-This parameter is ignored if *<i>pNumPackedMips</i> returns zero.
+This parameter is ignored if **pNumPackedMips* returns zero.
 
 ## -remarks
 
@@ -97,3 +94,4 @@ in the packing overall), and thus loses some freedom.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

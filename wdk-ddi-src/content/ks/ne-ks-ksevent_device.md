@@ -1,10 +1,9 @@
 ---
-UID: NE:ks.__unnamed_enum_30
+UID: NE:ks.KSEVENT_DEVICE
 title: KSEVENT_DEVICE (ks.h)
 description: Specifies event notifications that the driver generates to indicate that a device has been lost or preempted.
 old-location: stream\ksevent_device.htm
 tech.root: stream
-ms.assetid: 92594bdd-a458-4262-ac4c-013cffb7a725
 ms.date: 04/23/2018
 keywords: ["KSEVENT_DEVICE enumeration"]
 ms.keywords: KSEVENT_DEVICE, KSEVENT_DEVICE enumeration [Streaming Media Devices], KSEVENT_DEVICE_LOST, KSEVENT_DEVICE_PREEMPTED, ks/KSEVENT_DEVICE, ks/KSEVENT_DEVICE_LOST, ks/KSEVENT_DEVICE_PREEMPTED, stream.ksevent_device
@@ -69,3 +68,4 @@ A camera device has been preempted by a new Windows app. See <a href="/windows-h
 
 
 <a href="/windows-hardware/drivers/stream/ksevent-device-preempted">KSEVENT_DEVICE_PREEMPTED</a>
+

@@ -4,7 +4,6 @@ title: _D3DHAL_DP2COMMAND (d3dhal.h)
 description: One or more D3DHAL_DP2COMMAND structures are parsed from the command buffer by the D3dDrawPrimitives2 callback, which uses the information it receives to draw one or more primitives.
 old-location: display\d3dhal_dp2command.htm
 tech.root: display
-ms.assetid: 3fa32e5c-32d5-4e26-82b5-45dbf5389f2b
 ms.date: 05/10/2018
 keywords: ["D3DHAL_DP2COMMAND structure"]
 ms.keywords: "*LPD3DHAL_DP2COMMAND, D3DHAL_DP2COMMAND, D3DHAL_DP2COMMAND structure [Display Devices], LPD3DHAL_DP2COMMAND, LPD3DHAL_DP2COMMAND structure pointer [Display Devices], _D3DHAL_DP2COMMAND, d3dhal/D3DHAL_DP2COMMAND, d3dhal/LPD3DHAL_DP2COMMAND, d3dstrct_9497e802-c325-4d08-ba6c-f482d17da6c5.xml, display.d3dhal_dp2command"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - d3dhal.h
 api_name:
+ - _D3DHAL_DP2COMMAND
+ - LPD3DHAL_DP2COMMAND
  - D3DHAL_DP2COMMAND
 ---
 
@@ -85,3 +86,4 @@ D3DDP2OP_TEXTURESTAGESTATE
 
 
 <a href="/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb">D3dDrawPrimitives2</a>
+

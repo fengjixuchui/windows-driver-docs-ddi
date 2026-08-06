@@ -4,7 +4,6 @@ title: PFND3DDDI_CREATEDECODEDEVICE (d3dumddi.h)
 description: The CreateDecodeDevice function creates a Microsoft DirectX Video Acceleration (DirectX VA) decode device that is used to decode video.
 old-location: display\createdecodedevice.htm
 tech.root: display
-ms.assetid: 4d9a062a-2fdf-4e55-a335-c03c5d5665ff
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CREATEDECODEDEVICE callback function"]
 ms.keywords: CreateDecodeDevice, CreateDecodeDevice callback function [Display Devices], PFND3DDDI_CREATEDECODEDEVICE, PFND3DDDI_CREATEDECODEDEVICE callback, UserModeDisplayDriver_Functions_a6618d5f-ea60-467f-bc0b-e1fe3ee268fe.xml, d3dumddi/CreateDecodeDevice, display.createdecodedevice
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - CreateDecodeDevice
-product:
- - Windows
+ - PFND3DDDI_CREATEDECODEDEVICE
 ---
 
 # PFND3DDDI_CREATEDECODEDEVICE callback function
@@ -56,7 +53,7 @@ The <b>CreateDecodeDevice</b> function creates a Microsoft DirectX Video Acceler
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -78,3 +75,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dd
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_destroydecodedevice">DestroyDecodeDevice</a>
+

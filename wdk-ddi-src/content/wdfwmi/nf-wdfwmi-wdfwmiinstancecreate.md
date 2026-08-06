@@ -4,7 +4,6 @@ title: WdfWmiInstanceCreate function (wdfwmi.h)
 description: The WdfWmiInstanceCreate method creates a WMI instance object that represents an instance of a WMI data provider.
 old-location: wdf\wdfwmiinstancecreate.htm
 tech.root: wdf
-ms.assetid: ed662d6f-c42f-4dcb-86c5-135a302c59d7
 ms.date: 02/26/2018
 keywords: ["WdfWmiInstanceCreate function"]
 ms.keywords: DFWMIRef_8d75a5ee-d683-46fb-ba16-a2f8a2e892e3.xml, WdfWmiInstanceCreate, WdfWmiInstanceCreate method, kmdf.wdfwmiinstancecreate, wdf.wdfwmiinstancecreate, wdfwmi/WdfWmiInstanceCreate
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,24 +52,24 @@ The <b>WdfWmiInstanceCreate</b> method creates a WMI instance object that repres
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object that represents the device that the instance is being created for. The device object cannot be a <a href="/windows-hardware/drivers/wdf/using-control-device-objects">control device object</a>.
 
-### -param InstanceConfig 
+### -param InstanceConfig [in]
 
-[in]
+
 A pointer to a caller-initialized <a href="/windows-hardware/drivers/ddi/wdfwmi/ns-wdfwmi-_wdf_wmi_instance_config">WDF_WMI_INSTANCE_CONFIG</a> structure, which contains configuration information for an instance of a WMI data provider.
 
-### -param InstanceAttributes 
+### -param InstanceAttributes [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains driver-supplied object attributes for the new WMI instance object. (The structure's <b>ParentObject</b> member must be <b>NULL</b>.) This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param Instance 
+### -param Instance [out, optional]
 
-[out, optional]
+
 A pointer to a location that receives a handle to the new WMI instance object. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

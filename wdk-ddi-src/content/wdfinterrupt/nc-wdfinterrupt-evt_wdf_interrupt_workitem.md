@@ -4,7 +4,6 @@ title: EVT_WDF_INTERRUPT_WORKITEM (wdfinterrupt.h)
 description: A driver's EvtInterruptWorkItem event callback function processes interrupt information that the driver's EvtInterruptIsr callback function has stored.
 old-location: wdf\evtinterruptworkitem.htm
 tech.root: wdf
-ms.assetid: 1A473A08-EA23-4DFE-8B58-EBB4AC977891
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_INTERRUPT_WORKITEM callback function"]
 ms.keywords: EVT_WDF_INTERRUPT_WORKITEM, EVT_WDF_INTERRUPT_WORKITEM callback, EvtInterruptWorkItem, EvtInterruptWorkItem callback function, kmdf.evtinterruptworkitem, wdf.evtinterruptworkitem, wdfinterrupt/EvtInterruptWorkItem
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfinterrupt.h
 api_name:
- - EvtInterruptWorkItem
+ - EVT_WDF_INTERRUPT_WORKITEM
 ---
 
 # EVT_WDF_INTERRUPT_WORKITEM callback function
@@ -52,14 +51,14 @@ A driver's <i>EvtInterruptWorkItem</i> event callback function processes interru
 
 ## -parameters
 
-### -param Interrupt 
+### -param Interrupt [in]
 
-[in]
+
 A handle to a framework interrupt object.
 
-### -param AssociatedObject 
+### -param AssociatedObject [in]
 
-[in]
+
 A handle to the framework device object that the driver passed to <a href="/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdfinterruptcreate">WdfInterruptCreate</a>.
 
 ## -remarks
@@ -78,7 +77,7 @@ If your driver creates multiple framework interrupt objects for each device, you
 
 Drivers that implement either DIRQL  interrupt handling or passive level interrupt handling can queue an <i>EvtInterruptWorkItem</i> callback.
 
- A driver cannot queue both an <a href="/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_dpc">EvtInterruptDpc</a> and a <i>EvtInterruptWorkItem</i> callback.
+ A driver cannot queue both an <a href="/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_dpc">EvtInterruptDpc</a> and an <i>EvtInterruptWorkItem</i> callback.
 
 If the driver has set the <b>AutomaticSerialization</b> member to TRUE in the interrupt's <a href="/windows-hardware/drivers/ddi/wdfinterrupt/ns-wdfinterrupt-_wdf_interrupt_config">WDF_INTERRUPT_CONFIG</a> structure, the framework  synchronizes execution of the interrupt object's <i>EvtInterruptWorkItem</i> callback function with callback functions from other objects that are underneath the interrupt's parent object.  For information about callback synchronization locks, see <a href="/windows-hardware/drivers/wdf/using-framework-locks">Using Framework Locks</a>.
 
@@ -91,3 +90,4 @@ If  <b>AutomaticSerialization</b> is set to TRUE, a driver's <i>EvtInterruptWork
 <a href="/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdfinterruptdisable">WdfInterruptDisable</a>
 <a href="/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdfinterruptenable">WdfInterruptEnable</a>
 For more information about handling interrupts in framework-based drivers, see <a href="/windows-hardware/drivers/wdf/handling-hardware-interrupts">Handling Hardware Interrupts</a>.
+

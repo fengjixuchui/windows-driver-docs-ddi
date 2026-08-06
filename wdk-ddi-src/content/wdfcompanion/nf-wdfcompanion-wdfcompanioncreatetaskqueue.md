@@ -1,11 +1,10 @@
 ---
 UID: NF:wdfcompanion.WdfCompanionCreateTaskQueue
 title: WdfCompanionCreateTaskQueue function (wdfcompanion.h)
-description: For internal use only.
+description: This WdfCompanionCreateTaskQueue function article is for internal use only.
 old-location: wdf\wdfcompanioncreatetaskqueue.htm
 tech.root: wdf
-ms.assetid: 05298ffe-75e5-444e-9843-54dd063f59f5
-ms.date: 02/26/2018
+ms.date: 11/01/2021
 keywords: ["WdfCompanionCreateTaskQueue function"]
 ms.keywords: WdfCompanionCreateTaskQueue, WdfCompanionCreateTaskQueue method, wdf.wdfcompanioncreatetaskqueue, wdfcompanion/WdfCompanionCreateTaskQueue
 req.header: wdfcompanion.h
@@ -50,19 +49,19 @@ api_name:
 
 ## -parameters
 
-### -param Companion 
+### -param Companion [in]
 
-[in]
 
-### -param Config 
 
-[in]
+### -param Config [in]
 
-### -param QueueAttributes 
 
-[in, optional]
 
-### -param Queue 
+### -param QueueAttributes [in, optional]
 
-[out, optional]
 
+
+### -param Queue [out, optional]
+
+
+## -returns

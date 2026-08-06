@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFRAMEFORMAT
 title: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFRAMEFORMAT (d3d10umddi.h)
 description: Specifies whether an input stream on the video processor contains interlaced or progressive frames.
 old-location: display\videoprocessorsetstreamframeformat.htm
-ms.assetid: 49310ddf-403a-4fb4-98bb-9ef00ef28310
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFRAMEFORMAT callback function"]
 ms.keywords: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFRAMEFORMAT, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFRAMEFORMAT callback, d3d10umddi/pfnVideoProcessorSetStreamFrameFormat, display.videoprocessorsetstreamframeformat, pfnVideoProcessorSetStreamFrameFormat, pfnVideoProcessorSetStreamFrameFormat callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoProcessorSetStreamFrameFormat
+ - PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFRAMEFORMAT
 ---
 
 # PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFRAMEFORMAT callback function
@@ -50,25 +49,25 @@ Specifies whether an input stream on the video processor contains interlaced or 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hVideoProcessor* [in]
 
 A handle to the video processor object that was created through a call to the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a> function.
 
-### -param Arg3
+### -param unnamedParam3
 
 *StreamIndex* [in]
 
 The zero-based index of the input stream.
 
-### -param Arg4
+### -param unnamedParam4
 
 *Format* [in]
 
@@ -81,3 +80,4 @@ A <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d11_1ddi_vid
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d11_1ddi_video_frame_format">D3D11_1DDI_VIDEO_FRAME_FORMAT</a>
+

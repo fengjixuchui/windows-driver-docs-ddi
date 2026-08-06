@@ -2,7 +2,6 @@
 UID: NS:d3dumddi.D3DDDICB_OFFERALLOCATIONS2
 title: D3DDDICB_OFFERALLOCATIONS2 (d3dumddi.h)
 description: Used to offer allocations.
-ms.assetid: 96f8b4fd-05e2-4250-8492-f861793d0b12
 ms.date: 10/19/2018
 keywords: ["D3DDDICB_OFFERALLOCATIONS2 structure"]
 ms.keywords: D3DDDICB_OFFERALLOCATIONS2, D3DDDICB_OFFERALLOCATIONS2,
@@ -50,13 +49,13 @@ Used to offer allocations.
 
 An array of Direct3D runtime resource handles.
 
-### -field HandleList
+### -field HandleList [in]
 
-[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the allocations.
+An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the allocations.
 
-### -field NumAllocations
+### -field NumAllocations [in]
 
-[in] The number of elements in the allocation list.
+The number of elements in the allocation list.
 
 ### -field Priority
 

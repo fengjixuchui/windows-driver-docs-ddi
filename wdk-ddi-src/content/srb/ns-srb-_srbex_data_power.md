@@ -1,10 +1,9 @@
 ---
 UID: NS:srb._SRBEX_DATA_POWER
 title: _SRBEX_DATA_POWER (srb.h)
-description: The SRBEX_DATA_POWER structure contains the request data for an extended power SRB.
+description: The _SRBEX_DATA_POWER structure (srb.h) contains the request data for an extended power SCSI Request Block (SRB).
 old-location: storage\srbex_data_power.htm
 tech.root: storage
-ms.assetid: 61F5C316-5214-45A6-B4BA-DEE6A224E811
 ms.date: 03/29/2018
 keywords: ["SRBEX_DATA_POWER structure"]
 ms.keywords: "*PSRBEX_DATA_POWER, PSRBEX_DATA_POWER, PSRBEX_DATA_POWER structure pointer [Storage Devices], SRBEX_DATA_POWER, SRBEX_DATA_POWER structure [Storage Devices], _SRBEX_DATA_POWER, storage.srbex_data_power, storport/PSRBEX_DATA_POWER, storport/SRBEX_DATA_POWER"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Storport.h
 api_name:
+ - _SRBEX_DATA_POWER
+ - PSRBEX_DATA_POWER
  - SRBEX_DATA_POWER
 ---
 
@@ -90,3 +91,4 @@ An enumerator value of type <a href="/windows-hardware/drivers/ddi/storport/ne-s
 
 
 <a href="/windows-hardware/drivers/ddi/storport/ne-storport-stor_power_action">STOR_POWER_ACTION</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_ALLOCATE_BUFFER
 title: DOT11EXT_ALLOCATE_BUFFER (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_ALLOCATE_BUFFER callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extallocatebuffer.htm
 tech.root: netvista
-ms.assetid: 22c61f1d-027c-4e3e-af34-c513d4e1d0cc
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_ALLOCATE_BUFFER callback"]
 ms.keywords: DOT11EXT_ALLOCATE_BUFFER, Dot11ExtAllocateBuffer, Dot11ExtAllocateBuffer callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_5f683d7c-9185-4786-9f39-2e397b93fbf0.xml, netvista.dot11extallocatebuffer, wlanihv/Dot11ExtAllocateBuffer
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_ALLOCATE_BUFFER
  - wlanihv/DOT11EXT_ALLOCATE_BUFFER
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtAllocateBuffer
+ - DOT11EXT_ALLOCATE_BUFFER
 ---
 
 # DOT11EXT_ALLOCATE_BUFFER callback
@@ -53,14 +51,14 @@ api_name:
 
 ## -parameters
 
-### -param dwByteCount 
+### -param dwByteCount [in]
 
-[in]
+
 Size, in bytes, of the buffer to allocate.
 
-### -param ppvBuffer 
+### -param ppvBuffer [out]
 
-[out]
+
 A pointer to a caller-supplied variable that stores the address of the allocated buffer. The
      <i>ppvBuffer</i> parameter has a valid non-null value if the return value is ERROR_SUCCESS.
 
@@ -147,3 +145,4 @@ In this situation, the DLL must free the memory buffer by calling
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_free_buffer.md">Dot11ExtFreeBuffer</a>
+

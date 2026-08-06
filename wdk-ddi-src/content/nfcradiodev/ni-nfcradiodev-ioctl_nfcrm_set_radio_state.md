@@ -4,7 +4,6 @@ title: IOCTL_NFCRM_SET_RADIO_STATE (nfcradiodev.h)
 description: This IOCTL is used by the radio management application or service to set the radio power state of the proximity device.
 old-location: nfpdrivers\ioctl_nfcrm_set_radio_state.htm
 tech.root: nfpdrivers
-ms.assetid: C54C774A-3FBB-4850-BBB2-2B330CC64A8D
 ms.date: 02/15/2018
 keywords: ["IOCTL_NFCRM_SET_RADIO_STATE IOCTL"]
 ms.keywords: IOCTL_NFCRM_SET_RADIO_STATE, IOCTL_NFCRM_SET_RADIO_STATE control, IOCTL_NFCRM_SET_RADIO_STATE control code [Near-Field Proximity Drivers], _IOCTL_NFCRM_SET_RADIO_STATE, nfcradiodev/IOCTL_NFCRM_SET_RADIO_STATE, nfpdrivers.ioctl_nfcrm_set_radio_state
@@ -49,6 +48,8 @@ api_name:
 This IOCTL is used by the radio management application or service to set the radio power state of the proximity device. The MediaRadioOn field is used to indicate the request power state. When the proximity radio power state is disabled, the driver should disable the proximity device interfaces (GUID_DEVINTERFACE_NFP and GUID_DEVINTERFACE_SMARTCARD_READER interfaces) and disable the P2P and reader/writer modes of the device. If the proximity radio power state is enabled, the driver should enable the proximity device interfaces and enable P2P and reader/writer modes of the controller. For more information about optimizing power modes on this device, see <a href="/windows-hardware/drivers/nfc/nfc-power-management">NFC Power Management</a>.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

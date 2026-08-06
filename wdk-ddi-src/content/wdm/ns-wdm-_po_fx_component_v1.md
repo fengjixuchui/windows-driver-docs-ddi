@@ -4,7 +4,6 @@ title: _PO_FX_COMPONENT_V1 (wdm.h)
 description: The PO_FX_COMPONENT structure describes the power state attributes of a component in a device.
 old-location: kernel\po_fx_component.htm
 tech.root: kernel
-ms.assetid: 4ACCA041-C638-4124-AFC1-3F34671C9EF8
 ms.date: 04/30/2018
 keywords: ["PO_FX_COMPONENT_V1 structure"]
 ms.keywords: "*PPO_FX_COMPONENT, *PPO_FX_COMPONENT_V1, PO_FX_COMPONENT, PO_FX_COMPONENT structure [Kernel-Mode Driver Architecture], PO_FX_COMPONENT_V1, PO_FX_COMPONENT_V2, PO_FX_COMPONENT_V2 structure [Kernel-Mode Driver Architecture], PPO_FX_COMPONENT_V2, PPO_FX_COMPONENT_V2 structure pointer [Kernel-Mode Driver Architecture], _PO_FX_COMPONENT_V1, kernel.po_fx_component, wdm/PO_FX_COMPONENT, wdm/PO_FX_COMPONENT_V2, wdm/PPO_FX_COMPONENT_V2"
@@ -42,7 +41,9 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - PO_FX_COMPONENT_V2
+ - _PO_FX_COMPONENT_V1
+ - PPO_FX_COMPONENT_V1
+ - PO_FX_COMPONENT_V1
 ---
 
 # _PO_FX_COMPONENT_V1 structure
@@ -70,20 +71,6 @@ The index of the deepest Fx state from which the component can wake. Specify 0 f
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_po_fx_component_idle_state">PO_FX_COMPONENT_IDLE_STATE</a> array. The length of this array is specified by the <b>IdleStateCount</b> member. Each array element specifies the attributes of an Fx power state that is supported by the component. Element 0 describes F0, element 1 describes F1, and so on.
 
-
-#### - Flags
-
-This member can be set to the following flag bit: <b>PO_FX_COMPONENT_FLAG_F0_ON_DX</b>. For more information, see Remarks.
-
-
-#### - ProviderCount
-
-A value that specifies the number of components this component depends on. For more information, see <i>Component dependencies</i> under Remarks.
-
-
-#### - Providers
-
-A pointer to an array of component indexes this component depends on. For more information, see <i>Component dependencies</i> under Remarks.
 
 ## -remarks
 
@@ -117,3 +104,4 @@ When the component transitions to the idle state, PoFx first makes the dependent
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_po_fx_device_v1">PO_FX_DEVICE</a>
+

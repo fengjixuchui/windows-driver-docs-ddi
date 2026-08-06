@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_24
+UID: NS:ks.KSTOPOLOGY
 title: KSTOPOLOGY (ks.h)
 description: The KSTOPOLOGY structure describes the topology of pins and nodes.
 old-location: stream\kstopology.htm
 tech.root: stream
-ms.assetid: 8dbd37ed-5d71-43bd-a3ca-caa5b0d08075
 ms.date: 04/23/2018
 keywords: ["KSTOPOLOGY structure"]
 ms.keywords: "*PKSTOPOLOGY, KSTOPOLOGY, KSTOPOLOGY structure [Streaming Media Devices], PKSTOPOLOGY, PKSTOPOLOGY structure pointer [Streaming Media Devices], ks-struct_1d55c5f9-18d4-43d0-9fe9-291134e84115.xml, ks/KSTOPOLOGY, ks/PKSTOPOLOGY, stream.kstopology"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSTOPOLOGY
  - KSTOPOLOGY
 ---
 
@@ -103,3 +103,4 @@ A stream class minidriver creates and passes this structure as part of its <a hr
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-kstopology_connection">KSTOPOLOGY_CONNECTION</a>
+

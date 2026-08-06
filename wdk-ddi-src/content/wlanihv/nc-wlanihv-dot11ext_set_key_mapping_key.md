@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_SET_KEY_MAPPING_KEY
 title: DOT11EXT_SET_KEY_MAPPING_KEY (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_SET_KEY_MAPPING_KEY callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extsetkeymappingkey.htm
 tech.root: netvista
-ms.assetid: 7fbca90d-c5cd-40d4-a284-ca059aa6cacf
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_SET_KEY_MAPPING_KEY callback"]
 ms.keywords: DOT11EXT_SET_KEY_MAPPING_KEY, Dot11ExtSetKeyMappingKey, Dot11ExtSetKeyMappingKey callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_a96af10f-97f4-406e-bc75-2cdc19564df0.xml, netvista.dot11extsetkeymappingkey, wlanihv/Dot11ExtSetKeyMappingKey
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_SET_KEY_MAPPING_KEY
  - wlanihv/DOT11EXT_SET_KEY_MAPPING_KEY
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtSetKeyMappingKey
+ - DOT11EXT_SET_KEY_MAPPING_KEY
 ---
 
 # DOT11EXT_SET_KEY_MAPPING_KEY callback
@@ -54,17 +52,17 @@ api_name:
 
 ## -parameters
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the WLAN adapter. This handle value was
      specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param pKey 
+### -param pKey [in]
 
-[in]
+
 A pointer to a
      <a href="..\windot11\ns-windot11-dot11_cipher_key_mapping_key_value.md">
      DOT11_CIPHER_KEY_MAPPING_KEY_VALUE</a> structure, which defines the cipher key.
@@ -114,3 +112,4 @@ A call to the
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+

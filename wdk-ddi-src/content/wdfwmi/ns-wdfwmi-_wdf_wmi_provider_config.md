@@ -4,7 +4,6 @@ title: _WDF_WMI_PROVIDER_CONFIG (wdfwmi.h)
 description: The WDF_WMI_PROVIDER_CONFIG structure contains configuration information for a driver's WMI data block.
 old-location: wdf\wdf_wmi_provider_config.htm
 tech.root: wdf
-ms.assetid: 91b8e4e8-f144-4469-bedf-18f40be7e649
 ms.date: 02/26/2018
 keywords: ["WDF_WMI_PROVIDER_CONFIG structure"]
 ms.keywords: "*PWDF_WMI_PROVIDER_CONFIG, DFWMIRef_6cf9c574-aa7a-4184-97c7-bd2b2134f5ac.xml, PWDF_WMI_PROVIDER_CONFIG, PWDF_WMI_PROVIDER_CONFIG structure pointer, WDF_WMI_PROVIDER_CONFIG, WDF_WMI_PROVIDER_CONFIG structure, _WDF_WMI_PROVIDER_CONFIG, kmdf.wdf_wmi_provider_config, wdf.wdf_wmi_provider_config, wdfwmi/PWDF_WMI_PROVIDER_CONFIG, wdfwmi/WDF_WMI_PROVIDER_CONFIG"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdfwmi.h
 api_name:
+ - _WDF_WMI_PROVIDER_CONFIG
+ - PWDF_WMI_PROVIDER_CONFIG
  - WDF_WMI_PROVIDER_CONFIG
 ---
 
@@ -105,3 +106,4 @@ To initialize a <b>WDF_WMI_PROVIDER_CONFIG</b> structure, your driver should cal
 
 
 <a href="/windows-hardware/drivers/ddi/wdfwmi/nf-wdfwmi-wdfwmiprovidercreate">WdfWmiProviderCreate</a>
+

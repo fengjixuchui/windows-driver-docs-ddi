@@ -4,7 +4,6 @@ title: WdfUsbInterfaceGetDescriptor function (wdfusb.h)
 description: The WdfUsbInterfaceGetDescriptor method retrieves the USB interface descriptor that is associated with a specified alternate setting of a specified USB interface.
 old-location: wdf\wdfusbinterfacegetdescriptor.htm
 tech.root: wdf
-ms.assetid: 70156bfa-8271-42f6-9a22-0d0b77e63b66
 ms.date: 02/26/2018
 keywords: ["WdfUsbInterfaceGetDescriptor function"]
 ms.keywords: DFUsbRef_eb98efa1-720d-408c-824f-59cfef80bbba.xml, WdfUsbInterfaceGetDescriptor, WdfUsbInterfaceGetDescriptor method, kmdf.wdfusbinterfacegetdescriptor, wdf.wdfusbinterfacegetdescriptor, wdfusb/WdfUsbInterfaceGetDescriptor
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,19 +54,19 @@ The <b>WdfUsbInterfaceGetDescriptor</b> method retrieves the USB interface descr
 
 ## -parameters
 
-### -param UsbInterface 
+### -param UsbInterface [in]
 
-[in]
+
 A handle to a USB interface object that was obtained by calling <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>.
 
-### -param SettingIndex 
+### -param SettingIndex [in]
 
-[in]
+
 An index value that identifies an alternate setting for the interface. For more information about alternate settings, see the USB specification.
 
-### -param InterfaceDescriptor 
+### -param InterfaceDescriptor [out]
 
-[out]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_interface_descriptor">USB_INTERFACE_DESCRIPTOR</a> structure that the framework fills in.
 
 ## -remarks

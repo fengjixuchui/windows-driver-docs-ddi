@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_16
+UID: NS:ks.KSEVENT_TIME_MARK
 title: KSEVENT_TIME_MARK (ks.h)
 description: The KSEVENT_TIME_MARK structure is used in various events within the KSEVENTSETID_Clock event set.
 old-location: stream\ksevent_time_mark.htm
 tech.root: stream
-ms.assetid: c1e756a8-4850-4ddc-9bbf-97146a798554
 ms.date: 04/23/2018
 keywords: ["KSEVENT_TIME_MARK structure"]
 ms.keywords: "*PKSEVENT_TIME_MARK, KSEVENT_TIME_MARK, KSEVENT_TIME_MARK structure [Streaming Media Devices], PKSEVENT_TIME_MARK, PKSEVENT_TIME_MARK structure pointer [Streaming Media Devices], ks-struct_66e60015-261c-4e6d-a58f-dab8d50cf4d6.xml, ks/KSEVENT_TIME_MARK, ks/PKSEVENT_TIME_MARK, stream.ksevent_time_mark"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSEVENT_TIME_MARK
  - KSEVENT_TIME_MARK
 ---
 
@@ -71,3 +71,4 @@ The flags indicate the type of units for the interval. The interval can be speci
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksevent_time_interval">KSEVENT_TIME_INTERVAL</a>
+

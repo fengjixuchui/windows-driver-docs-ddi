@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient3.OpenDumpFile
 title: IDebugClient3::OpenDumpFile (dbgeng.h)
-description: The OpenDumpFile method opens a dump file as a debugger target.
+description: The OpenDumpFile method opens a dump file as a debugger target. This method belongs to the IDebugClient3 interface.
 old-location: debugger\opendumpfile.htm
 tech.root: debugger
-ms.assetid: c04b79a0-ef20-4ba5-aba9-9335b095cfef
 ms.date: 05/03/2018
 keywords: ["IDebugClient3::OpenDumpFile"]
 ms.keywords: IDebugClient interface [Windows Debugging],OpenDumpFile method, IDebugClient2 interface [Windows Debugging],OpenDumpFile method, IDebugClient2::OpenDumpFile, IDebugClient3 interface [Windows Debugging],OpenDumpFile method, IDebugClient3.OpenDumpFile, IDebugClient3::OpenDumpFile, IDebugClient4 interface [Windows Debugging],OpenDumpFile method, IDebugClient4::OpenDumpFile, IDebugClient5 interface [Windows Debugging],OpenDumpFile method, IDebugClient5::OpenDumpFile, IDebugClient::OpenDumpFile, IDebugClient_4ab673e2-629c-455a-8d40-27465005375f.xml, OpenDumpFile, OpenDumpFile method [Windows Debugging], OpenDumpFile method [Windows Debugging],IDebugClient interface, OpenDumpFile method [Windows Debugging],IDebugClient2 interface, OpenDumpFile method [Windows Debugging],IDebugClient3 interface, OpenDumpFile method [Windows Debugging],IDebugClient4 interface, OpenDumpFile method [Windows Debugging],IDebugClient5 interface, dbgeng/IDebugClient2::OpenDumpFile, dbgeng/IDebugClient3::OpenDumpFile, dbgeng/IDebugClient4::OpenDumpFile, dbgeng/IDebugClient5::OpenDumpFile, dbgeng/IDebugClient::OpenDumpFile, debugger.opendumpfile
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.OpenDumpFile
- - IDebugClient2.OpenDumpFile
- - IDebugClient3.OpenDumpFile
- - IDebugClient4.OpenDumpFile
- - IDebugClient5.OpenDumpFile
+ - IDebugClient3::OpenDumpFile
 ---
 
 # IDebugClient3::OpenDumpFile
@@ -54,9 +49,9 @@ The <b>OpenDumpFile</b> method opens a dump file as a debugger target.
 
 ## -parameters
 
-### -param DumpFile 
+### -param DumpFile [in]
 
-[in]
+
 Specifies the name of the dump file to open.  <i>DumpFile</i> must include the file name extension. <i>DumpFile</i> can include a relative or absolute path; relative paths are relative to the directory in which the debugger was started.  <i>DumpFile</i> can have the form of a file URL, starting with "file://".  If <i>DumpFile</i> specifies a cabinet (.cab) file, the cabinet file is searched for the first file with extension .kdmp, then .hdmp, then .mdmp, and finally .dmp.
 
 ## -returns
@@ -124,3 +119,4 @@ For more information about crash dump files, see <a href="/windows-hardware/driv
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-opendumpfilewide">OpenDumpFileWide</a>
+

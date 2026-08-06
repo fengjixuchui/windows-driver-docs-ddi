@@ -4,7 +4,6 @@ title: NDK_FN_MODIFY_SRQ (ndkpi.h)
 description: The NdkModifySrq (NDK_FN_MODIFY_SRQ) function modifies the size and notification threshold of an NDK shared receive queue (SRQ).
 old-location: netvista\ndk_fn_modify_srq.htm
 tech.root: netvista
-ms.assetid: ABB42AC6-8483-420C-B9A9-063C91E4FB13
 ms.date: 05/02/2018
 keywords: ["NDK_FN_MODIFY_SRQ callback function"]
 ms.keywords: NDK_FN_MODIFY_SRQ, NDK_FN_MODIFY_SRQ callback, NdkModifySrq, NdkModifySrq callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkModifySrq, netvista.ndk_fn_modify_srq
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkModifySrq
+ - NDK_FN_MODIFY_SRQ
 ---
 
 # NDK_FN_MODIFY_SRQ callback function
@@ -50,31 +49,31 @@ The <i>NdkModifySrq</i> (<i>NDK_FN_MODIFY_SRQ</i>) function modifies the size an
 
 ## -parameters
 
-### -param pNdkSrq 
+### -param pNdkSrq [in]
 
-[in]
+
 A pointer to an NDK shared receive queue (SRQ) object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_srq">NDK_SRQ</a>).
 
-### -param SrqDepth 
+### -param SrqDepth [in]
 
-[in]
+
 
 The new size of the SRQ. The new size must be less than or equal to the  size that is specified in the <b>MaxSrqDepth</b> member of the <a href="/windows/win32/api/ndkinfo/ns-ndkinfo-ndk_adapter_info">NDK_ADAPTER_INFO</a> structure.
 A size of zero means no depth modification is requested. That is,  the existing SRQ depth value must be preserved.
 
-### -param NotifyThreshold 
+### -param NotifyThreshold [in]
 
-[in]
+
 The number of queued receive requests  that will trigger an SRQ notification callback. If this value is greater than zero,  the NDK provider must arm the SRQ notification to trigger  when the number of queued receive requests falls below the specified  value. If the number of queued receive requests is already below the threshold value at the time of this function call, an SRQ notification must be generated. After an SRQ notification is generated, further notifications are disarmed until the NDK consumer invokes this function again with a non-zero threshold value. If a threshold value of zero is specified, the provider must preserve the current SRQ notification threshold and arming status.
 
-### -param RequestCompletion 
+### -param RequestCompletion [in]
 
-[in]
+
 A pointer to a request completion callback routine <i>NdkRequestCompletion</i> (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_request_completion">NDK_FN_REQUEST_COMPLETION</a>).
 
-### -param RequestContext 
+### -param RequestContext [in, optional]
 
-[in, optional]
+
 A context value to pass to the <i>Context</i> parameter of the  callback function that is specified in the <i>RequestCompletion</i> parameter.
 
 ## -returns
@@ -154,3 +153,4 @@ An error occurred.
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_srq">NDK_SRQ</a>
+

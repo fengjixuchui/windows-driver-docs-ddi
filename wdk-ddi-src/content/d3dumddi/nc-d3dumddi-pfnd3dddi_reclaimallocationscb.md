@@ -4,7 +4,6 @@ title: PFND3DDDI_RECLAIMALLOCATIONSCB (d3dumddi.h)
 description: Called by the user-mode display driver to reclaim video memory allocations that were previously offered for reuse.
 old-location: display\pfnreclaimallocationscb.htm
 tech.root: display
-ms.assetid: BAC27F24-B348-48D5-9E9B-20897B4D8E2D
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_RECLAIMALLOCATIONSCB callback function"]
 ms.keywords: PFND3DDDI_RECLAIMALLOCATIONSCB, d3dumddi/pfnReclaimAllocationsCb, display.pfnreclaimallocationscb, pfnReclaimAllocationsCb, pfnReclaimAllocationsCb callback, pfnReclaimAllocationsCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnReclaimAllocationsCb
-product:
- - Windows
+ - PFND3DDDI_RECLAIMALLOCATIONSCB
 ---
 
 # PFND3DDDI_RECLAIMALLOCATIONSCB callback function
@@ -56,7 +53,7 @@ Called by the user-mode display driver   to reclaim video memory allocations tha
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -83,3 +80,4 @@ Returns one of the following values.
 
 
 <a href="/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi1_2_ddi_base_functions">pfnReclaimResources</a>
+

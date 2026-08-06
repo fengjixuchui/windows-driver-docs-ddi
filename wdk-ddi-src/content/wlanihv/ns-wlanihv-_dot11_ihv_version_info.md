@@ -1,10 +1,9 @@
 ---
 UID: NS:wlanihv._DOT11_IHV_VERSION_INFO
 title: _DOT11_IHV_VERSION_INFO (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_IHV_VERSION_INFO structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_ihv_version_info.htm
 tech.root: netvista
-ms.assetid: d482abdc-c6c1-4789-a1fc-39e76c32e78a
 ms.date: 02/16/2018
 keywords: ["DOT11_IHV_VERSION_INFO structure"]
 ms.keywords: "*PDOT11_IHV_VERSION_INFO, DOT11_IHV_VERSION_INFO, DOT11_IHV_VERSION_INFO structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_65cab8b1-5ff7-4775-a3e9-b93e161e6bd3.xml, PDOT11_IHV_VERSION_INFO, PDOT11_IHV_VERSION_INFO structure pointer [Network Drivers Starting with Windows Vista], _DOT11_IHV_VERSION_INFO, netvista.dot11_ihv_version_info, wlanihv/DOT11_IHV_VERSION_INFO, wlanihv/PDOT11_IHV_VERSION_INFO"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DOT11_IHV_VERSION_INFO, *PDOT11_IHV_VERSION_INFO
-req.product: Windows 10 or later.
 f1_keywords:
  - _DOT11_IHV_VERSION_INFO
  - wlanihv/_DOT11_IHV_VERSION_INFO
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
+ - _DOT11_IHV_VERSION_INFO
+ - PDOT11_IHV_VERSION_INFO
  - DOT11_IHV_VERSION_INFO
 ---
 
@@ -101,3 +101,4 @@ Prior to starting the IHV Extensions DLL through a call to the
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_get_version_info.md">Dot11ExtIhvGetVersionInfo</a>
+

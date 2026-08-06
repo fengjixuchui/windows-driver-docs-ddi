@@ -4,7 +4,6 @@ title: _WHEA_ERROR_RECORD_HEADER (ntddk.h)
 description: The WHEA_ERROR_RECORD_HEADER structure describes general information about a hardware error condition.
 old-location: whea\whea_error_record_header.htm
 tech.root: whea
-ms.assetid: 2e6476c7-d096-4756-bebb-56fe559dce6d
 ms.date: 02/20/2018
 keywords: ["WHEA_ERROR_RECORD_HEADER structure"]
 ms.keywords: "*PWHEA_ERROR_RECORD_HEADER, PWHEA_ERROR_RECORD_HEADER, PWHEA_ERROR_RECORD_HEADER structure pointer [WHEA Drivers and Applications], WHEA_ERROR_RECORD_HEADER, WHEA_ERROR_RECORD_HEADER structure [WHEA Drivers and Applications], _WHEA_ERROR_RECORD_HEADER, ntddk/PWHEA_ERROR_RECORD_HEADER, ntddk/WHEA_ERROR_RECORD_HEADER, whea.whea_error_record_header, whearef_25871c17-6a61-422d-ba94-d63b633c7f5a.xml"
@@ -43,6 +42,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_ERROR_RECORD_HEADER
+ - PWHEA_ERROR_RECORD_HEADER
  - WHEA_ERROR_RECORD_HEADER
 ---
 
@@ -165,6 +166,10 @@ A <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_persistence_info">
 
 Reserved for system use.
 
+### -field OsBuildNumber
+
+### -field Reserved2
+
 ## -remarks
 
 A WHEA_ERROR_RECORD_HEADER structure is contained within the <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_record">WHEA_ERROR_RECORD</a> structure. The WHEA_ERROR_RECORD_HEADER structure describes general information about the hardware error condition that is described by the error record.
@@ -192,3 +197,4 @@ A WHEA_ERROR_RECORD_HEADER structure is contained within the <a href="/windows-h
 
 
 <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_timestamp">WHEA_TIMESTAMP</a>
+

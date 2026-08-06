@@ -2,7 +2,6 @@
 UID: NS:ucmucsispec._UCSI_GET_CONNECTOR_STATUS_IN
 title: _UCSI_GET_CONNECTOR_STATUS_IN (ucmucsispec.h)
 description: Used in the GET_CONNECTOR_STATUS command. See Table 4-42.
-ms.assetid: 09365116-affe-4b3e-9b31-e98bcf6c3518
 tech.root: usbref
 ms.date: 09/30/2018
 keywords: ["UCSI_GET_CONNECTOR_STATUS_IN structure"]
@@ -37,6 +36,8 @@ api_location:
  - ucmucsispec.h
 api_name:
  - _UCSI_GET_CONNECTOR_STATUS_IN
+ - PUCSI_GET_CONNECTOR_STATUS_IN
+ - UCSI_GET_CONNECTOR_STATUS_IN
 ---
 
 # _UCSI_GET_CONNECTOR_STATUS_IN structure
@@ -44,7 +45,7 @@ api_name:
 
 ## -description
 
-Used in the GET_CONNECTOR_STATUS command. See Table 4-42 in [UCSI spec version 1.1](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
+Used in the GET_CONNECTOR_STATUS command. See Table 4-42 in [UCSI spec version 1.2](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
 
 ## -struct-fields
 

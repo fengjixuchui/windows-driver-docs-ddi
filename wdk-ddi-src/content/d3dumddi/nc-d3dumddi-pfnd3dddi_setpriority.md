@@ -4,7 +4,6 @@ title: PFND3DDDI_SETPRIORITY (d3dumddi.h)
 description: The SetPriority function sets the eviction-from-memory priority for a managed texture.
 old-location: display\setpriority.htm
 tech.root: display
-ms.assetid: 61ac2d28-7aed-4796-8d09-591db936013b
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETPRIORITY callback function"]
 ms.keywords: PFND3DDDI_SETPRIORITY, PFND3DDDI_SETPRIORITY callback, SetPriority, SetPriority callback function [Display Devices], UserModeDisplayDriver_Functions_6e8f2a2a-f88b-45b6-9c59-b942cb44664b.xml, d3dumddi/SetPriority, display.setpriority
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - SetPriority
-product:
- - Windows
+ - PFND3DDDI_SETPRIORITY
 ---
 
 # PFND3DDDI_SETPRIORITY callback function
@@ -56,7 +53,7 @@ The <i>SetPriority</i> function sets the eviction-from-memory priority for a man
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -86,3 +83,4 @@ The Microsoft Direct3D runtime calls <i>SetPriority</i> to set the priority leve
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_setprioritycb">pfnSetPriorityCb</a>
+

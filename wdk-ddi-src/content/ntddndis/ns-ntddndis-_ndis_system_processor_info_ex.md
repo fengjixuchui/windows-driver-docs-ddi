@@ -4,7 +4,6 @@ title: _NDIS_SYSTEM_PROCESSOR_INFO_EX (ntddndis.h)
 description: The NDIS_SYSTEM_PROCESSOR_INFO_EX structure specifies information about the CPU topology of the local computer.
 old-location: netvista\ndis_system_processor_info_ex.htm
 tech.root: netvista
-ms.assetid: ba3c6641-98bc-4c44-9889-7583c4cf61f0
 ms.date: 05/02/2018
 keywords: ["NDIS_SYSTEM_PROCESSOR_INFO_EX structure"]
 ms.keywords: "*PNDIS_SYSTEM_PROCESSOR_INFO_EX, NDIS_SYSTEM_PROCESSOR_INFO_EX, NDIS_SYSTEM_PROCESSOR_INFO_EX structure [Network Drivers Starting with Windows Vista], PNDIS_SYSTEM_PROCESSOR_INFO_EX, PNDIS_SYSTEM_PROCESSOR_INFO_EX structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SYSTEM_PROCESSOR_INFO_EX, ndis_processor_group_ref_754737d7-8279-4786-b89d-4326da949464.xml, netvista.ndis_system_processor_info_ex, ntddndis/NDIS_SYSTEM_PROCESSOR_INFO_EX, ntddndis/PNDIS_SYSTEM_PROCESSOR_INFO_EX"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_SYSTEM_PROCESSOR_INFO_EX
+ - PNDIS_SYSTEM_PROCESSOR_INFO_EX
  - NDIS_SYSTEM_PROCESSOR_INFO_EX
 ---
 
@@ -58,7 +59,7 @@ The <b>NDIS_SYSTEM_PROCESSOR_INFO_EX</b> structure specifies information about t
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_SYSTEM_PROCESSOR_INFO_EX structure. NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -126,7 +127,7 @@ NDIS network drivers use the NDIS_SYSTEM_PROCESSOR_INFO_EX structure in calls to
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -144,3 +145,4 @@ NDIS network drivers use the NDIS_SYSTEM_PROCESSOR_INFO_EX structure in calls to
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisgetprocessorinformationex">
    NdisGetProcessorInformationEx</a>
+

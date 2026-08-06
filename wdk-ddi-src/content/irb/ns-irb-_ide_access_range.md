@@ -4,7 +4,6 @@ title: _IDE_ACCESS_RANGE (irb.h)
 description: The IDE_ACCESS_RANGE structure contains the address ranges allocated for an IDE controller.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\ide_access_range.htm
 tech.root: storage
-ms.assetid: e81441a2-0659-4d32-97f4-415abef6c87a
 ms.date: 03/29/2018
 keywords: ["IDE_ACCESS_RANGE structure"]
 ms.keywords: "*PIDE_ACCESS_RANGE, IDE_ACCESS_RANGE, IDE_ACCESS_RANGE structure [Storage Devices], PIDE_ACCESS_RANGE, PIDE_ACCESS_RANGE structure pointer [Storage Devices], _IDE_ACCESS_RANGE, irb/IDE_ACCESS_RANGE, irb/PIDE_ACCESS_RANGE, storage.ide_access_range, structs-ATA_6c50e733-2896-4052-a867-ae2c9d119ff2.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - irb.h
 api_name:
+ - _IDE_ACCESS_RANGE
+ - PIDE_ACCESS_RANGE
  - IDE_ACCESS_RANGE
 ---
 
@@ -74,3 +75,4 @@ Flag that indicates if this is a memory mapped resource. If cleared, this is an 
 ### -field Bar
 
 The number of the PCI Base Address Range that this resource was found in.
+

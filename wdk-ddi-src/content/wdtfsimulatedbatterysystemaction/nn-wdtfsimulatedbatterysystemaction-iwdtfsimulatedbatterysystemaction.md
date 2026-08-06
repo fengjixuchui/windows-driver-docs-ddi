@@ -4,7 +4,6 @@ title: IWDTFSimulatedBatterySystemAction (wdtfsimulatedbatterysystemaction.h)
 description: IWDTFSimulatedBatterySystemAction Interface
 old-location: dtf\iwdtfsimulatedbatterysystemaction.htm
 tech.root: dtf
-ms.assetid: 38df72bd-5206-4655-846c-ae925ed648eb
 ms.date: 04/04/2018
 keywords: ["IWDTFSimulatedBatterySystemAction interface"]
 ms.keywords: IWDTFSimulatedBatterySystemAction, IWDTFSimulatedBatterySystemAction interface [Windows Device Testing Framework], IWDTFSimulatedBatterySystemAction interface [Windows Device Testing Framework],described, dtf.iwdtfsimulatedbatterysystemaction, wdtfsimulatedbatterysystemaction/IWDTFSimulatedBatterySystemAction
@@ -50,8 +49,8 @@ IWDTFSimulatedBatterySystemAction Interface
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDTFSimulatedBatterySystemAction</b> interface inherits from <b>IWDTFAction2</b>. <b>IWDTFSimulatedBatterySystemAction</b> also has these types of members:
+The <b>IWDTFSimulatedBatterySystemAction</b> interface inherits from <b>IWDTFAction2</b>. <b>IWDTFSimulatedBatterySystemAction</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li><a href="/">Methods</a></li>
 </ul>
 

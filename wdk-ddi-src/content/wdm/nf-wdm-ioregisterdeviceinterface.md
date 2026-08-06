@@ -4,7 +4,6 @@ title: IoRegisterDeviceInterface function (wdm.h)
 description: The IoRegisterDeviceInterface routine registers a device interface class, if it has not been previously registered, and creates a new instance of the interface class, which a driver can subsequently enable for use by applications or other system components.
 old-location: kernel\ioregisterdeviceinterface.htm
 tech.root: kernel
-ms.assetid: 4d0782c7-0516-4326-9994-7820446f2af6
 ms.date: 04/30/2018
 keywords: ["IoRegisterDeviceInterface function"]
 ms.keywords: IoRegisterDeviceInterface, IoRegisterDeviceInterface routine [Kernel-Mode Driver Architecture], k104_4916c641-8510-425d-953f-68ed7a3f8976.xml, kernel.ioregisterdeviceinterface, wdm/IoRegisterDeviceInterface
@@ -50,28 +49,28 @@ The <b>IoRegisterDeviceInterface</b> routine registers a [device interface class
 
 ## -parameters
 
-### -param PhysicalDeviceObject 
+### -param PhysicalDeviceObject [in]
 
-[in]
+
 A pointer to the PDO for the device.
 
-### -param InterfaceClassGuid 
+### -param InterfaceClassGuid [in]
 
-[in]
+
 A pointer to the class GUID that identifies the functionality (the device interface class) being registered.
 
-### -param ReferenceString 
+### -param ReferenceString [in, optional]
 
-[in, optional]
+
 Optionally points to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a>. The string must not contain any path separator characters ("/" or "\\"). Function drivers typically specify <b>NULL</b> for this parameter. Filter drivers must specify <b>NULL</b>.
 
 Reference strings are only used by a few bus drivers, such as <i>swenum</i>, which is a bus driver that uses device interface instances as placeholders for software devices created on demand. When an instance of an interface is opened, the I/O manager passes the instance's reference string to the driver. The string becomes part of the interface instance's name (as an appended path component). The driver can then use the reference string to differentiate between two interface instances of the same class for a single device.
 
 On Microsoft Windows 98/Me systems, the <i>ReferenceString</i> value can be no longer than MAX_PATH characters. There is no length limit on Windows 2000 and later versions of Windows.
 
-### -param SymbolicLinkName 
+### -param SymbolicLinkName [out]
 
-[out]
+
 A pointer to a Unicode string structure allocated by the caller. If this routine is successful, it initializes the Unicode string and allocates the string buffer containing the kernel-mode path to the symbolic link for an instance of the specified device interface class. 
 
 The caller must treat <i>SymbolicLinkName</i> as opaque and must not disassemble it.

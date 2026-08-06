@@ -4,7 +4,6 @@ title: _BAND_SECURITY_INFO (ehstorbandmgmt.h)
 description: The BAND_SECURITY_INFO structure specifies the security information for a band table entry query.
 old-location: storage\band_security_info.htm
 tech.root: storage
-ms.assetid: 310F996F-F350-4F25-BC8A-386513908557
 ms.date: 03/29/2018
 keywords: ["BAND_SECURITY_INFO structure"]
 ms.keywords: "*PBAND_SECURITY_INFO, BAND_LOCATION_INFO, BAND_LOCATION_INFO structure [Storage Devices], BAND_SECURITY_INFO, BAND_SECURITY_INFO structure [Storage Devices], PBAND_LOCATION_INFO, PBAND_LOCATION_INFO structure pointer [Storage Devices], _BAND_SECURITY_INFO, ehstorbandmgmt/BAND_SECURITY_INFO, ehstorbandmgmt/PBAND_LOCATION_INFO, storage.band_security_info"
@@ -42,7 +41,9 @@ api_type:
 api_location:
  - EhStorBandMgmt.h
 api_name:
- - BAND_LOCATION_INFO
+ - _BAND_SECURITY_INFO
+ - PBAND_SECURITY_INFO
+ - BAND_SECURITY_INFO
 ---
 
 # _BAND_SECURITY_INFO structure
@@ -185,3 +186,4 @@ When <b>BAND_SECURITY_INFO</b> is used in an input parameter set, <b>CryptoAlgoI
 
 
 <a href="/windows-hardware/drivers/ddi/ehstorbandmgmt/ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_enumerate_bands">IOCTL_EHSTOR_BANDMGMT_ENUMERATE_BANDS</a>
+

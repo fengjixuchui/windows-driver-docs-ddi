@@ -3,7 +3,6 @@ UID: NS:wwan._WWAN_LTE_ATTACH_CONFIG
 title: _WWAN_LTE_ATTACH_CONFIG (wwan.h)
 description: The WWAN_LTE_ATTACH_CONFIG structure describes default LTE attach contexts for the inserted SIM's provider (MCC/MNC pair).
 tech.root: netvista
-ms.assetid: 44f9e6c7-0dea-41d6-be9b-73f9945f32a6
 ms.date: 08/22/2018
 keywords: ["WWAN_LTE_ATTACH_CONFIG structure"]
 ms.keywords: _WWAN_LTE_ATTACH_CONFIG, WWAN_LTE_ATTACH_CONFIG, *PWWAN_LTE_ATTACH_CONFIG,
@@ -37,8 +36,8 @@ api_location:
  - wwan.h
 api_name:
  - _WWAN_LTE_ATTACH_CONFIG
-product:
- - Windows
+ - PWWAN_LTE_ATTACH_CONFIG
+ - WWAN_LTE_ATTACH_CONFIG
 ---
 
 # _WWAN_LTE_ATTACH_CONFIG structure
@@ -70,3 +69,4 @@ This structure is used in the [**NDIS_WWAN_LTE_ATTACH_CONTEXTS**](../ndiswwan/ns
 [**NDIS_WWAN_LTE_ATTACH_CONTEXTS**](../ndiswwan/ns-ndiswwan-_ndis_wwan_lte_attach_contexts.md)
 
 [**WWAN_CONTEXT_V2**](ns-wwan-_wwan_context_v2.md)
+

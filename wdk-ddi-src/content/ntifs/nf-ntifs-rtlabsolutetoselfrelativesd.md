@@ -4,14 +4,13 @@ title: RtlAbsoluteToSelfRelativeSD function (ntifs.h)
 description: The RtlAbsoluteToSelfRelativeSD routine creates a new security descriptor in self-relative format by using a security descriptor in absolute format as a template.
 old-location: ifsk\rtlabsolutetoselfrelativesd.htm
 tech.root: ifsk
-ms.assetid: e6247856-5abf-44ea-afe8-9be3f61271a4
 ms.date: 04/16/2018
 keywords: ["RtlAbsoluteToSelfRelativeSD function"]
 ms.keywords: RtlAbsoluteToSelfRelativeSD, RtlAbsoluteToSelfRelativeSD routine [Installable File System Drivers], ifsk.rtlabsolutetoselfrelativesd, ntifs/RtlAbsoluteToSelfRelativeSD, rtlref_809e562f-be24-43d2-8357-ffd83eac421a.xml
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows Server 2003 SP1 and later.
+req.target-min-winverclnt: Windows Server 2003 SP1
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -51,19 +50,19 @@ The <b>RtlAbsoluteToSelfRelativeSD</b> routine creates a new security descriptor
 
 ## -parameters
 
-### -param AbsoluteSecurityDescriptor 
+### -param AbsoluteSecurityDescriptor [in]
 
-[in]
+
 Pointer to a caller-allocated buffer that contains a <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor">SECURITY_DESCRIPTOR</a> structure in absolute format. <b>RtlAbsoluteToSelfRelativeSD</b> creates a version of this security descriptor in self-relative format without modifying the original.
 
-### -param SelfRelativeSecurityDescriptor 
+### -param SelfRelativeSecurityDescriptor [out]
 
-[out]
+
 Pointer to a caller-allocated buffer that receives a security descriptor in self-relative format.
 
-### -param BufferLength 
+### -param BufferLength [in, out]
 
-[in, out]
+
 Pointer to a caller-allocated variable that specifies the size, in bytes, of the buffer pointed to by the <i>SelfRelativeSecurityDescriptor</i> parameter. If the buffer is not large enough to hold the security descriptor, <b>RtlAbsoluteToSelfRelativeSD</b> returns STATUS_BUFFER_TOO_SMALL and sets this variable to the minimum required size.
 
 ## -returns

@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGKARG_RECOMMENDFUNCTIONALVIDPN
 title: _DXGKARG_RECOMMENDFUNCTIONALVIDPN (d3dkmddi.h)
 description: The DXGKARG_RECOMMENDFUNCTIONALVIDPN structure contains arguments for the DxgkDdiRecommendFunctionalVidPn function.
 old-location: display\dxgkarg_recommendfunctionalvidpn.htm
-ms.assetid: 58031257-5363-4e4f-b95f-aa3cd603c113
 ms.date: 05/10/2018
 keywords: ["DXGKARG_RECOMMENDFUNCTIONALVIDPN structure"]
 ms.keywords: DXGKARG_RECOMMENDFUNCTIONALVIDPN, DXGKARG_RECOMMENDFUNCTIONALVIDPN structure [Display Devices], DmStructs_15342273-6bfe-4cee-8f8e-1d89c7683e4b.xml, _DXGKARG_RECOMMENDFUNCTIONALVIDPN, d3dkmddi/DXGKARG_RECOMMENDFUNCTIONALVIDPN, display.dxgkarg_recommendfunctionalvidpn
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_RECOMMENDFUNCTIONALVIDPN
  - DXGKARG_RECOMMENDFUNCTIONALVIDPN
 ---
 
@@ -79,3 +79,4 @@ The size, in bytes, of the data block pointed to by <i>pPrivateDriverData</i>.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_recommendfunctionalvidpn">DxgkDdiRecommendFunctionalVidPn</a>
+

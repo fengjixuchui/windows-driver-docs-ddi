@@ -1,10 +1,9 @@
 ---
 UID: NE:rilapitypes.RILCALLAUDIOSOURCE
 title: RILCALLAUDIOSOURCE (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this enumeration in your code. Microsoft reserves the RILCALLAUDIOSOURCE enumeration for internal use only. "
 old-location: netvista\rilcallaudiosource.htm
 tech.root: netvista
-ms.assetid: ec6d45ba-3afe-44cb-a699-ef3b3b804b6b
 ms.date: 05/02/2018
 keywords: ["RILCALLAUDIOSOURCE enumeration"]
 ms.keywords: RILCALLAUDIOSOURCE, RILCALLAUDIOSOURCE enumeration [Network Drivers Starting with Windows Vista], RIL_CALLAUDIOSOURCE_MAX, RIL_CALLAUDIOSOURCE_PKT_APP, RIL_CALLAUDIOSOURCE_PKT_MODEM, netvista.rilcallaudiosource, ntddrilapitypes/RILCALLAUDIOSOURCE, ntddrilapitypes/RIL_CALLAUDIOSOURCE_MAX, ntddrilapitypes/RIL_CALLAUDIOSOURCE_PKT_APP, ntddrilapitypes/RIL_CALLAUDIOSOURCE_PKT_MODEM

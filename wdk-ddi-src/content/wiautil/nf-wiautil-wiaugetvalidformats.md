@@ -4,7 +4,6 @@ title: wiauGetValidFormats function (wiautil.h)
 description: The wiauGetValidFormats function calls the IWiaMiniDrv::drvGetWiaFormatInfo method and makes a list of valid formats, using a specified tymed value.
 old-location: image\wiaugetvalidformats.htm
 tech.root: image
-ms.assetid: 8bf1d76a-2e5b-4e9a-85fc-187fea72d38c
 ms.date: 05/03/2018
 keywords: ["wiauGetValidFormats function"]
 ms.keywords: image.wiaugetvalidformats, wiauFncs_f311862b-03fe-4fe6-8b30-46cd9a53513b.xml, wiauGetValidFormats, wiauGetValidFormats function [Imaging Devices], wiautil/wiauGetValidFormats
@@ -50,28 +49,28 @@ The <b>wiauGetValidFormats</b> function calls the <a href="/windows-hardware/dri
 
 ## -parameters
 
-### -param pDrv 
+### -param pDrv [in]
 
-[in]
+
 Points to the WIA minidriver object. This parameter should be set to <b>this</b>.
 
-### -param pWiasContext 
+### -param pWiasContext [in]
 
-[in]
+
 Pointer to a WIA item context.
 
 ### -param TymedValue
 
 Specifies the tymed value to search for.
 
-### -param pNumFormats 
+### -param pNumFormats [out]
 
-[out]
+
 Pointer to a memory location that receives the number of formats.
 
-### -param ppFormatArray 
+### -param ppFormatArray [out]
 
-[out]
+
 Pointer to a memory location that receives the address of the array of format GUIDs.
 
 ## -returns

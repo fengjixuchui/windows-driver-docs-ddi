@@ -4,7 +4,6 @@ title: RxFinalizeNetFobx function (fcb.h)
 description: RxFinalizeNetFOBX finalizes the given FOBX structure. The caller must have an exclusive lock on the FCB associated with FOBX structure.
 old-location: ifsk\rxfinalizenetfobx.htm
 tech.root: ifsk
-ms.assetid: 052e7995-fab8-4863-a3a2-8b9bd6f21ec9
 ms.date: 04/16/2018
 keywords: ["RxFinalizeNetFobx function"]
 ms.keywords: RxFinalizeNetFOBX, RxFinalizeNetFobx, RxFinalizeNetFobx function [Installable File System Drivers], fcb/RxFinalizeNetFobx, ifsk.rxfinalizenetfobx, rxref_72a759e2-f9e6-44ce-b561-cb968b668a6f.xml
@@ -50,19 +49,19 @@ api_name:
 
 ## -parameters
 
-### -param ThisFobx 
+### -param ThisFobx [out]
 
-[out]
+
 A pointer to the FOBX structure to finalize.
 
-### -param RecursiveFinalize 
+### -param RecursiveFinalize [in]
 
-[in]
+
 The value indicating whether the finalization should be done recursively. This parameter is not currently used.
 
-### -param ForceFinalize 
+### -param ForceFinalize [in]
 
-[in]
+
 The value indicating whether the finalization should be forced, regardless of the reference count. 
 
 If <i>ForceFinalize</i> is <b>FALSE</b>, then the <b>NodeReferenceCount</b> member of the FOBX structure pointed to by <i>ThisFobx </i>must be 0 for the FOBX to be finalized.

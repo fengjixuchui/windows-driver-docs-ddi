@@ -4,7 +4,6 @@ title: PFN_WSK_FREE_ADDRESS_INFO (wsk.h)
 description: The WskFreeAddressInfo function frees address information that the WskGetAddressInfo function has dynamically allocated.
 old-location: netvista\wskfreeaddressinfo.htm
 tech.root: netvista
-ms.assetid: 552b4024-03d3-4e9b-b149-cf584c7e7259
 ms.date: 05/02/2018
 keywords: ["PFN_WSK_FREE_ADDRESS_INFO callback function"]
 ms.keywords: PFN_WSK_FREE_ADDRESS_INFO, PFN_WSK_FREE_ADDRESS_INFO callback, WskFreeAddressInfo, WskFreeAddressInfo callback function [Network Drivers Starting with Windows Vista], netvista.wskfreeaddressinfo, wsk/WskFreeAddressInfo, wskref_dff141b0-8164-439d-9ad7-69a4d2207f31.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wsk.h
 api_name:
- - WskFreeAddressInfo
+ - PFN_WSK_FREE_ADDRESS_INFO
 ---
 
 # PFN_WSK_FREE_ADDRESS_INFO callback function
@@ -53,9 +52,9 @@ The
 
 ## -parameters
 
-### -param Client 
+### -param Client [in]
 
-[in]
+
 [in] A pointer to a 
      <a href="/windows-hardware/drivers/network/wsk-client">WSK_CLIENT</a> structure that was returned through
      the 
@@ -63,9 +62,9 @@ The
      <a href="/windows-hardware/drivers/ddi/wsk/nf-wsk-wskcaptureprovidernpi">
      WskCaptureProviderNPI</a> function.
 
-### -param AddrInfo 
+### -param AddrInfo [in]
 
-[in]
+
 [in] A pointer to a linked list of one or more <a href="/windows/win32/api/ws2def/ns-ws2def-addrinfoexw">ADDRINFOEXW</a> structures that contain response
      information about the host. This pointer was returned through the 
      <i>Result</i> parameter of the 
@@ -93,3 +92,4 @@ The <a href="/windows/win32/api/ws2def/ns-ws2def-addrinfoexw">ADDRINFOEXW</a> st
 
 
 <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_get_address_info">WskGetAddressInfo</a>
+

@@ -4,7 +4,6 @@ title: RILPOSITIONINFOUMTS (ntddrilapitypes.h)
 description: This structure represents a RILPOSITIONINFOUMTS.
 old-location: netvista\rilpositioninfoumts.htm
 tech.root: netvista
-ms.assetid: c17760c4-6f75-41e8-84a5-f13e26735af5
 ms.date: 02/16/2018
 keywords: ["RILPOSITIONINFOUMTS structure"]
 ms.keywords: "*LPRILPOSITIONINFOUMTS, RILPOSITIONINFOUMTS, RILPOSITIONINFOUMTS structure [Network Drivers Starting with Windows Vista], netvista.rilpositioninfoumts, rilapitypes/RILPOSITIONINFOUMTS"
@@ -41,6 +40,7 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILPOSITIONINFOUMTS
+ - LPRILPOSITIONINFOUMTS
 ---
 
 # RILPOSITIONINFOUMTS structure (ntddrilapitypes.h)
@@ -127,3 +127,4 @@ struct RILPOSITIONINFOUMTS {
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/cellular/dn946511(v=vs.85)">Cellular COM structures</a>
+

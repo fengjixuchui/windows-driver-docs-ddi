@@ -1,10 +1,9 @@
 ---
 UID: NS:miniport._PCI_SLOT_NUMBER
 title: _PCI_SLOT_NUMBER (miniport.h)
-description: The PCI_SLOT_NUMBER structure is obsolete.
+description: The _PCI_SLOT_NUMBER structure (miniport.h) is obsolete. It defines the format of the Slot parameter to the obsolete HalXxxBusData routines.
 old-location: kernel\pci_slot_number.htm
 tech.root: kernel
-ms.assetid: 0e04813d-e138-435e-8357-562f79a3a4a2
 ms.date: 04/30/2018
 keywords: ["PCI_SLOT_NUMBER structure"]
 ms.keywords: "*PPCI_SLOT_NUMBER, PCI_SLOT_NUMBER, PCI_SLOT_NUMBER structure [Kernel-Mode Driver Architecture], PPCI_SLOT_NUMBER, PPCI_SLOT_NUMBER structure pointer [Kernel-Mode Driver Architecture], _PCI_SLOT_NUMBER, kernel.pci_slot_number, kstruct_c_e9aa5e88-0c5d-4740-80f3-4b59da610598.xml, wdm/PCI_SLOT_NUMBER, wdm/PPCI_SLOT_NUMBER"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _PCI_SLOT_NUMBER
+ - PPCI_SLOT_NUMBER
  - PCI_SLOT_NUMBER
 ---
 
@@ -99,3 +100,4 @@ For example, a driver might search for devices it supports on all PCI buses in t
 
 
 <a href="/previous-versions/windows/hardware/drivers/ff537455(v=vs.85)">PCI_COMMON_CONFIG</a>
+

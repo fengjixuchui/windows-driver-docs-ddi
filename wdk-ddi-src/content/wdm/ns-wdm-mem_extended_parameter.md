@@ -1,9 +1,9 @@
 ---
 UID: NS:wdm.MEM_EXTENDED_PARAMETER
 title: MEM_EXTENDED_PARAMETER (wdm.h)
-description: 
-ms.assetid: b554961b-11ab-4457-8c3f-d4ab7c28b76e
+description: "Learn more about: MEM_EXTENDED_PARAMETER structure"
 ms.date: 09/30/2018
+tech.root: kernel
 keywords: ["MEM_EXTENDED_PARAMETER structure"]
 ms.keywords: MEM_EXTENDED_PARAMETER, MEM_EXTENDED_PARAMETER, *PMEM_EXTENDED_PARAMETER,
 req.header: wdm.h
@@ -34,6 +34,7 @@ api_location:
  - wdm.h
 api_name:
  - MEM_EXTENDED_PARAMETER
+ - PMEM_EXTENDED_PARAMETER
 ---
 
 # MEM_EXTENDED_PARAMETER structure
@@ -70,3 +71,4 @@ A pointer to a caller-allocated [**MEM_ADDRESS_REQUIREMENTS**](/windows/win32/ap
 ## -remarks
 
 ## -see-also
+

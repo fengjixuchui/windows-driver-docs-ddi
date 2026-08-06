@@ -4,7 +4,6 @@ title: NdisIfAllocateNetLuidIndex function (ndis.h)
 description: The NdisIfAllocateNetLuidIndex function allocates a NET_LUID index for an NDIS network interface provider.
 old-location: netvista\ndisifallocatenetluidindex.htm
 tech.root: netvista
-ms.assetid: bc62da04-242a-4d9a-8a85-2342a1b3e628
 ms.date: 05/02/2018
 keywords: ["NdisIfAllocateNetLuidIndex function"]
 ms.keywords: NdisIfAllocateNetLuidIndex, NdisIfAllocateNetLuidIndex function [Network Drivers Starting with Windows Vista], ndis/NdisIfAllocateNetLuidIndex, net_if_functions_ref_3ffcc5c8-7475-475d-8732-dc59ee632285.xml, netvista.ndisifallocatenetluidindex
@@ -61,9 +60,9 @@ The Internet Assigned Numbers Authority (IANA) interface type for an index. For 
      <i>IfType</i> that is assigned to any Ethernet-like interface. For a list of interface types, see 
      <a href="/windows-hardware/drivers/network/ndis-interface-types">NDIS Interface Types</a>.
 
-### -param pNetLuidIndex 
+### -param pNetLuidIndex [out]
 
-[out]
+
 A pointer to a caller-supplied 
      <a href="/windows/win32/api/ifdef/ns-ifdef-net_luid_lh">NET_LUID</a> index variable. If allocation is
      successful, 

@@ -4,7 +4,6 @@ title: RECORDER_CONFIGURE_PARAMS_INIT function (wpprecorder.h)
 description: The RECORDER_CONFIGURE_PARAMS_INIT function is used to initialize the RECORDER_CONFIGURE_PARAMS structure.
 old-location: devtest\recorder_configure_params_init.htm
 tech.root: devtest
-ms.assetid: 840716D6-505E-4654-A54D-ABAF3A553E5E
 ms.date: 02/23/2018
 keywords: ["RECORDER_CONFIGURE_PARAMS_INIT function"]
 ms.keywords: RECORDER_CONFIGURE_PARAMS_INIT, RECORDER_CONFIGURE_PARAMS_INIT function [Driver Development Tools], devtest.recorder_configure_params_init, wpprecorder/RECORDER_CONFIGURE_PARAMS_INIT
@@ -50,9 +49,9 @@ The <b>RECORDER_CONFIGURE_PARAMS_INIT</b> function is used to initialize the <a 
 
 ## -parameters
 
-### -param Params 
+### -param Params [out]
 
-[out]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wpprecorder/ns-wpprecorder-_recorder_configure_params">RECORDER_CONFIGURE_PARAMS</a> structure to initialize.
 
 ## -see-also

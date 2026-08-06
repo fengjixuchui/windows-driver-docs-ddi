@@ -1,10 +1,9 @@
 ---
 UID: NE:ntddrilapitypes.RILMSGMWIDETAILLISTPARAMMASK
 title: RILMSGMWIDETAILLISTPARAMMASK (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this enumeration for internal use only. Don't use the RILMSGMWIDETAILLISTPARAMMASK enumeration in your code."
 old-location: netvista\rilmsgmwidetaillistparammask.htm
 tech.root: netvista
-ms.assetid: cc13eebd-810c-44b0-8909-4a4c3fc5b320
 ms.date: 05/02/2018
 keywords: ["RILMSGMWIDETAILLISTPARAMMASK enumeration"]
 ms.keywords: RILMSGMWIDETAILLISTPARAMMASK, RILMSGMWIDETAILLISTPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_MWIDETAIL_ALL, RIL_PARAM_MWIDETAIL_DETAILITEMS, RIL_PARAM_MWIDETAIL_NUMDETAILITEMS, RIL_PARAM_MWIDETAIL_REFNUM, netvista.rilmsgmwidetaillistparammask, ntddrilapitypes/RILMSGMWIDETAILLISTPARAMMASK, ntddrilapitypes/RIL_PARAM_MWIDETAIL_ALL, ntddrilapitypes/RIL_PARAM_MWIDETAIL_DETAILITEMS, ntddrilapitypes/RIL_PARAM_MWIDETAIL_NUMDETAILITEMS, ntddrilapitypes/RIL_PARAM_MWIDETAIL_REFNUM

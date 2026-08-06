@@ -4,7 +4,6 @@ title: PFREE_COMMON_BUFFER (wdm.h)
 description: The FreeCommonBuffer routine frees a common buffer allocated by AllocateCommonBuffer, along with all resources the buffer uses.
 old-location: kernel\freecommonbuffer.htm
 tech.root: kernel
-ms.assetid: 9e026bde-657a-42ea-907c-71cc217dbd8d
 ms.date: 04/30/2018
 keywords: ["PFREE_COMMON_BUFFER callback function"]
 ms.keywords: FreeCommonBuffer, FreeCommonBuffer callback function [Kernel-Mode Driver Architecture], PFREE_COMMON_BUFFER, PFREE_COMMON_BUFFER callback, kdma_73f76fbd-2641-4002-90c8-ca412e969418.xml, kernel.freecommonbuffer, wdm/FreeCommonBuffer
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdm.h
 api_name:
- - FreeCommonBuffer
+ - PFREE_COMMON_BUFFER
 ---
 
 # PFREE_COMMON_BUFFER callback function
@@ -50,29 +49,29 @@ The <b>FreeCommonBuffer</b> routine frees a common buffer allocated by <a href="
 
 ## -parameters
 
-### -param DmaAdapter 
+### -param DmaAdapter [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_adapter">DMA_ADAPTER</a> structure returned by <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter">IoGetDmaAdapter</a> that represents the bus-master adapter or DMA controller.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Specifies the number of bytes to deallocate.
 
-### -param LogicalAddress 
+### -param LogicalAddress [in]
 
-[in]
+
 Specifies the logical address of the allocated memory range.
 
-### -param VirtualAddress 
+### -param VirtualAddress [in]
 
-[in]
+
 Pointer to the corresponding virtual address of the allocated memory range.
 
-### -param CacheEnabled 
+### -param CacheEnabled [in]
 
-[in]
+
 Indicates whether the allocated memory is cached.
 
 ## -remarks
@@ -99,3 +98,4 @@ To release a common buffer, a driver calls <b>FreeCommonBuffer</b> to unmap both
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter">IoGetDmaAdapter</a>
+

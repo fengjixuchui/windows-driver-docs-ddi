@@ -4,7 +4,6 @@ title: PFN_WSK_INSPECT_EVENT (wsk.h)
 description: The WskInspectEvent event callback function notifies a WSK application that an incoming connection request on a listening socket that has conditional accept mode enabled has been received.
 old-location: netvista\wskinspectevent.htm
 tech.root: netvista
-ms.assetid: 40f184ac-4ef3-485a-a529-71c1f2716427
 ms.date: 05/02/2018
 keywords: ["PFN_WSK_INSPECT_EVENT callback function"]
 ms.keywords: PFN_WSK_INSPECT_EVENT, PFN_WSK_INSPECT_EVENT callback, WskInspectEvent, WskInspectEvent callback function [Network Drivers Starting with Windows Vista], netvista.wskinspectevent, wsk/WskInspectEvent, wskref_096ba538-90c2-454b-9334-d6241425945e.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wsk.h
 api_name:
- - WskInspectEvent
+ - PFN_WSK_INSPECT_EVENT
 ---
 
 # PFN_WSK_INSPECT_EVENT callback function
@@ -52,31 +51,31 @@ The
 
 ## -parameters
 
-### -param SocketContext 
+### -param SocketContext [in, optional]
 
-[in, optional]
+
 A pointer to the socket context for the listening socket on which the incoming connection request
      was received. The WSK application provided this pointer to the WSK subsystem when it called the 
      <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket">WskSocket</a> function to create the listening
      socket.
 
-### -param LocalAddress 
+### -param LocalAddress [in]
 
-[in]
+
 A pointer to a buffer that contains the local transport address on which the incoming connection
      request arrived. The buffer contains the specific SOCKADDR structure type that corresponds to the
      address family that the WSK application specified when it created the listening socket.
 
-### -param RemoteAddress 
+### -param RemoteAddress [in]
 
-[in]
+
 A pointer to a buffer that contains the remote transport address from which the incoming
      connection request originated. The buffer contains the specific SOCKADDR structure type that corresponds
      to the address family that the WSK application specified when it created the listening socket.
 
-### -param InspectID 
+### -param InspectID [in, optional]
 
-[in, optional]
+
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_inspect_id">WSK_INSPECT_ID</a> structure. The contents of
      the structure identify the incoming connection request that is being inspected. If this pointer is <b>NULL</b>,
@@ -98,7 +97,7 @@ A WSK application's
 <tr>
 <td width="40%">
 <dl>
-<dt><b><b>WskInspectAccept</b></b></dt>
+<dt><b>WskInspectAccept</b></dt>
 </dl>
 </td>
 <td width="60%">
@@ -109,7 +108,7 @@ The incoming connection request is accepted.
 <tr>
 <td width="40%">
 <dl>
-<dt><b><b>WskInspectReject</b></b></dt>
+<dt><b>WskInspectReject</b></dt>
 </dl>
 </td>
 <td width="60%">
@@ -120,7 +119,7 @@ The incoming connection request is rejected.
 <tr>
 <td width="40%">
 <dl>
-<dt><b><b>WskInspectPend</b></b></dt>
+<dt><b>WskInspectPend</b></dt>
 </dl>
 </td>
 <td width="60%">
@@ -229,3 +228,4 @@ A WSK application's <i>WskInspectEvent</i> event callback function must not wait
 
 
 <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket">WskSocket</a>
+

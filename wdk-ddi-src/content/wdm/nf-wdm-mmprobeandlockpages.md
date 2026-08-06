@@ -4,7 +4,6 @@ title: MmProbeAndLockPages function (wdm.h)
 description: The MmProbeAndLockPages routine probes the specified virtual memory pages, makes them resident, and locks them in memory.
 old-location: kernel\mmprobeandlockpages.htm
 tech.root: kernel
-ms.assetid: d958004f-1730-412d-be75-e51628e6fcdc
 ms.date: 04/30/2018
 keywords: ["MmProbeAndLockPages function"]
 ms.keywords: MmProbeAndLockPages, MmProbeAndLockPages routine [Kernel-Mode Driver Architecture], k106_ccfec34d-c0f9-4826-81e3-ee967da40677.xml, kernel.mmprobeandlockpages, wdm/MmProbeAndLockPages
@@ -46,23 +45,24 @@ api_name:
 
 ## -description
 
-The <b>MmProbeAndLockPages</b> routine probes the specified virtual memory pages, makes them resident, and locks them in memory.
+The <b>MmProbeAndLockPages</b> routine probes the specified virtual memory pages, makes them resident, and locks them in memory (say for a DMA transfer).  This ensures the pages cannot be freed and reallocated while a device driver (or hardware) is still using them.
+
 
 ## -parameters
 
-### -param MemoryDescriptorList 
+### -param MemoryDescriptorList [in, out]
 
-[in, out]
+
 A pointer to an MDL that specifies a virtual memory buffer. If the routine successfully locks the pages in memory, the MDL is updated to describe the underlying physical pages.
 
-### -param AccessMode 
+### -param AccessMode [in]
 
-[in]
+
 The access mode in which to probe the arguments, either <b>KernelMode</b> or <b>UserMode</b>.
 
-### -param Operation 
+### -param Operation [in]
 
-[in]
+
 The type of operation for which the caller wants the access rights probed and the pages locked. Set this parameter to <b>IoReadAccess</b>, <b>IoWriteAccess</b>, or <b>IoModifyAccess</b>. <b>IoReadAccess</b> indicates that the driver can examine the contents of the buffer but cannot change the contents. <b>IoWriteAccess</b> and <b>IoModifyAccess</b>, which are equivalent, indicate that the driver has both read and write access to the buffer.
 
 ## -remarks
@@ -100,6 +100,8 @@ Calls to <b>MmProbeAndLockPages</b> must be enclosed in a <b>try/except</b> bloc
 Callers of <b>MmProbeAndLockPages</b> must be running at IRQL <= APC_LEVEL for pageable addresses, or at IRQL <= DISPATCH_LEVEL for nonpageable addresses.
 
 This routine does not provide any guarantees about the virtual address that describes these pages (that is, the virtual address might be unmapped, reused, and so on). However, the physical pages are guaranteed to be locked on successful return.
+
+To avoid page faults, use [**VirtualLock**](/windows/win32/api/memoryapi/nf-memoryapi-virtuallock) to lock the virtual address so it will not be trimmed unless the app unlocks it or explicitly frees it by calling [**VirtualFree**](/windows/win32/api/memoryapi/nf-memoryapi-virtualfree) or [**UnmapViewOfFile**](/windows/win32/api/memoryapi/nf-memoryapi-unmapviewoffile).
 
 ## -see-also
 

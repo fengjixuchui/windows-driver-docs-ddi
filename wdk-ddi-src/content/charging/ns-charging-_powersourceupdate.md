@@ -1,11 +1,10 @@
 ---
 UID: NS:charging._POWERSOURCEUPDATE
 title: _POWERSOURCEUPDATE (charging.h)
-description: This structure is for internal use only.
+description: "Microsoft reserves the POWERSOURCEUPDATE structure for internal use only. Don't use this structure in your code."
 old-location: battery\powersourceupdate.htm
 tech.root: battery
-ms.assetid: A1BFCCE4-14F0-4F41-A062-71B001CE14AA
-ms.date: 02/15/2018
+ms.date: 07/25/2023
 keywords: ["POWERSOURCEUPDATE structure"]
 ms.keywords: "*PPOWERSOURCEUPDATE, POWERSOURCEUPDATE, POWERSOURCEUPDATE structure [Battery Devices], _POWERSOURCEUPDATE, battery.powersourceupdate, charging/BATTERY_INFORMATION"
 req.header: charging.h
@@ -42,11 +41,12 @@ api_type:
 api_location:
  - Charging.h
 api_name:
- - BATTERY_INFORMATION
+ - _POWERSOURCEUPDATE
+ - PPOWERSOURCEUPDATE
+ - POWERSOURCEUPDATE
 ---
 
 # _POWERSOURCEUPDATE structure
-
 
 ## -description
 
@@ -54,3 +54,14 @@ This structure is for internal use only.
 
 ## -struct-fields
 
+### -field PowerSourceId
+
+### -field MaxChargeCurrent
+
+### -field PowerSourceAvailableStatus
+
+### -field PowerSourceInformation
+
+## -see-also
+
+[**charging.h**](index.md)

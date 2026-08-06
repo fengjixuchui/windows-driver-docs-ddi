@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSystemObjects.GetProcessIdByPeb
 title: IDebugSystemObjects::GetProcessIdByPeb (dbgeng.h)
-description: The GetProcessIdByPeb method returns the engine process ID for the specified process. The process is specified by its process environment block (PEB).
+description: The GetProcessIdByPeb method returns the engine process ID for the specified process. This method belongs to the IDebugSystemObjects interface.
 old-location: debugger\getprocessidbypeb.htm
 tech.root: debugger
-ms.assetid: 2ee2b610-30c7-4932-b8f6-df5040a5bad8
 ms.date: 05/03/2018
 keywords: ["IDebugSystemObjects::GetProcessIdByPeb"]
 ms.keywords: GetProcessIdByPeb, GetProcessIdByPeb method [Windows Debugging], GetProcessIdByPeb method [Windows Debugging],IDebugSystemObjects interface, GetProcessIdByPeb method [Windows Debugging],IDebugSystemObjects2 interface, GetProcessIdByPeb method [Windows Debugging],IDebugSystemObjects3 interface, GetProcessIdByPeb method [Windows Debugging],IDebugSystemObjects4 interface, IDebugSystemObjects interface [Windows Debugging],GetProcessIdByPeb method, IDebugSystemObjects.GetProcessIdByPeb, IDebugSystemObjects2 interface [Windows Debugging],GetProcessIdByPeb method, IDebugSystemObjects2::GetProcessIdByPeb, IDebugSystemObjects3 interface [Windows Debugging],GetProcessIdByPeb method, IDebugSystemObjects3::GetProcessIdByPeb, IDebugSystemObjects4 interface [Windows Debugging],GetProcessIdByPeb method, IDebugSystemObjects4::GetProcessIdByPeb, IDebugSystemObjects::GetProcessIdByPeb, IDebugSystemObjects_f5f2396d-d537-40a0-987d-314a9dfb01ff.xml, dbgeng/IDebugSystemObjects2::GetProcessIdByPeb, dbgeng/IDebugSystemObjects3::GetProcessIdByPeb, dbgeng/IDebugSystemObjects4::GetProcessIdByPeb, dbgeng/IDebugSystemObjects::GetProcessIdByPeb, debugger.getprocessidbypeb
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSystemObjects.GetProcessIdByPeb
- - IDebugSystemObjects2.GetProcessIdByPeb
- - IDebugSystemObjects3.GetProcessIdByPeb
- - IDebugSystemObjects4.GetProcessIdByPeb
+ - IDebugSystemObjects::GetProcessIdByPeb
 ---
 
 # IDebugSystemObjects::GetProcessIdByPeb
@@ -53,14 +49,14 @@ The <b>GetProcessIdByPeb</b> method returns the engine process ID for the specif
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the location in the target's virtual address space of the PEB of the process whose process ID is requested.
 
-### -param Id 
+### -param Id [out]
 
-[out]
+
 Receives the engine process ID.
 
 ## -returns
@@ -101,3 +97,4 @@ The target is a kernel-mode target.  This method is currently not available in k
 This method is not available in kernel-mode debugging.
 
 For more information about processes, see <a href="/windows-hardware/drivers/debugger/threads-and-processes">Threads and Processes</a>.
+

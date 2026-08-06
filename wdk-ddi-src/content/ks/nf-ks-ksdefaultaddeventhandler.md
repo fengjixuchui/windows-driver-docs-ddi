@@ -4,7 +4,6 @@ title: KsDefaultAddEventHandler function (ks.h)
 description: The KsDefaultAddEventHandler function is a default routine to handle event 'add' requests.
 old-location: stream\ksdefaultaddeventhandler.htm
 tech.root: stream
-ms.assetid: 8e429a48-4e86-4673-aa32-85b640e2f64f
 ms.date: 04/23/2018
 keywords: ["KsDefaultAddEventHandler function"]
 ms.keywords: KsDefaultAddEventHandler, KsDefaultAddEventHandler function [Streaming Media Devices], avfunc_7e4e393b-c3ab-4538-8790-9fe4c4f964cd.xml, ks/KsDefaultAddEventHandler, stream.ksdefaultaddeventhandler
@@ -51,19 +50,19 @@ The<b> KsDefaultAddEventHandler </b>function is a default routine to handle even
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 The event <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp">IRP</a>. This contains the object into which the event is inserted.
 
-### -param EventData 
+### -param EventData [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata">KSEVENTDATA</a> structure that describes an event notification method.
 
-### -param EventEntry 
+### -param EventEntry [in, out]
 
-[in, out]
+
 The event entry that is to be inserted into the object's event list. The object is determined by <i>Irp</i>.
 
 ## -returns

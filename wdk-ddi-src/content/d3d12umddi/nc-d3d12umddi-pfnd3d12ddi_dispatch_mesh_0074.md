@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_DISPATCH_MESH_0074
 title: PFND3D12DDI_DISPATCH_MESH_0074 (d3d12umddi.h)
 description: PFND3D12DDI_DISPATCH_MESH_0074 launches the threadgroups for the amplification shader, or for the mesh shader in a case where no amplification shader is attached.
-ms.assetid: b95069c7-dbe8-43e0-aceb-587d59817576
 ms.date: 03/24/2020
 keywords: ["PFND3D12DDI_DISPATCH_MESH_0074 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_DISPATCH_MESH_0074
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,19 +48,19 @@ dev_langs:
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the command list.
 
-### -param Arg2
+### -param unnamedParam2
 
 Thread group count in X direction.
 
-### -param Arg3
+### -param unnamedParam3
 
 Thread group count in Y direction.
 
-### -param Arg4
+### -param unnamedParam4
 
 Thread group count in Z direction.
 

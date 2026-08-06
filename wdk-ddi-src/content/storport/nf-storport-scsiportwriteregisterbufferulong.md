@@ -1,10 +1,9 @@
 ---
 UID: NF:storport.ScsiPortWriteRegisterBufferUlong
 title: ScsiPortWriteRegisterBufferUlong macro (storport.h)
-description: The ScsiPortWriteRegisterBufferUlong routine transfers a given number of ULONG values from a buffer to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+description: Learn how the ScsiPortWriteRegisterBufferUlong routine transfers a given number of ULONG values from a buffer to the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
 old-location: storage\scsiportwriteregisterbufferulong.htm
 tech.root: storage
-ms.assetid: d77b188e-45b2-47c3-bee5-557886925d3f
 ms.date: 03/29/2018
 keywords: ["ScsiPortWriteRegisterBufferUlong macro"]
 ms.keywords: ScsiPortWriteRegisterBufferUlong, ScsiPortWriteRegisterBufferUlong routine [Storage Devices], scsiprt_f6ce8fd2-0d06-4bda-9673-983af38f08e9.xml, srb/ScsiPortWriteRegisterBufferUlong, storage.scsiportwriteregisterbufferulong
@@ -52,19 +51,19 @@ The <b>ScsiPortWriteRegisterBufferUlong</b> routine transfers a given number of 
 
 ## -parameters
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 Pointer to the register. The given <i>Register</i> must be in a mapped memory-space range returned by <b>ScsiPortGetDeviceBase</b>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to a buffer containing the data to be written.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of ULONG values to be transferred to the HBA.
 
 ## -see-also

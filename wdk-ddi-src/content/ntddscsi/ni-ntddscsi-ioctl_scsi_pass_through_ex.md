@@ -4,7 +4,6 @@ title: IOCTL_SCSI_PASS_THROUGH_EX (ntddscsi.h)
 description: The IOCTL_SCSI_PASS_THROUGH_EX control code request is the extended version of the IOCTL_SCSI_PASS_THROUGH request. This request provides support for bidirectional data transfers and allows a command data block (CDB) > 16 bytes.
 old-location: storage\ioctl_scsi_pass_through_ex.htm
 tech.root: storage
-ms.assetid: BDF4375D-660D-4AF0-A692-16EEA59954B3
 ms.date: 03/29/2018
 keywords: ["IOCTL_SCSI_PASS_THROUGH_EX IOCTL"]
 ms.keywords: IOCTL_SCSI_PASS_THROUGH_EX, IOCTL_SCSI_PASS_THROUGH_EX control, IOCTL_SCSI_PASS_THROUGH_EX control code [Storage Devices], ntddscsi/IOCTL_SCSI_PASS_THROUGH_EX, storage.ioctl_scsi_pass_through_ex
@@ -84,6 +83,8 @@ Storage class drivers set the minor IRP number to IRP_MN_SCSI_CLASS to indicate 
 
 ## -ioctlparameters
 
+### -ioctl-major-code
+
 ### -input-buffer
 
 This structure includes a SCSI CDB, which must be initialized by the caller except for the path, target ID, and logical unit number (LUN), which are filled in by the port driver. For a data-out command, the data to be transferred is included in the buffer at <b>Irp->AssociatedIrp.SystemBuffer</b> at <b>DataInBufferOffset</b> in the <a href="/windows-hardware/drivers/ddi/ntddscsi/ns-ntddscsi-_scsi_pass_through_ex">SCSI_PASS_THROUGH_EX</a> structure. However, the caller must allocate additional storage, immediately following <b>SCSI_PASS_THROUGH_EX</b>, if the caller asks for request-sense data.
@@ -111,7 +112,7 @@ The <b>Information</b> field is set to the number of bytes returned in the outpu
 
 ## -remarks
 
-In order to issue an <b>IOCTL_SCSI_PASS_THROUGH_EX</b> request, the underlying storage device must support extended SRBs. This means that the supported SRB type is <b>SRB_TYPE_STORAGE_REQUEST_BLOCK</b>. An application can query for SRB support with the <b>IOCTL_STORAGE_QUERY_PROPERTY</b> request with a query type of <b>PropertyStandardQuery</b> and a property type of <b>StorageDeviceProperty</b>. The <b>SrbType</b> member returned in the <a href="/windows-hardware/drivers/ddi/ntddstor/ns-ntddstor-_storage_adapter_descriptor">STORAGE_ADAPTER_DESCRIPTIOR</a> structure will indicate either <b>SRB_TYPE_SCSI_REQUEST_BLOCK</b> or <b>SRB_TYPE_STORAGE_REQUEST_BLOCK</b>.
+In order to issue an <b>IOCTL_SCSI_PASS_THROUGH_EX</b> request, the underlying storage device must support extended SRBs. This means that the supported SRB type is <b>SRB_TYPE_STORAGE_REQUEST_BLOCK</b>. An application can query for SRB support with the <b>IOCTL_STORAGE_QUERY_PROPERTY</b> request with a query type of <b>PropertyStandardQuery</b> and a property type of <b>StorageDeviceProperty</b>. The <b>SrbType</b> member returned in the <a href="/windows-hardware/drivers/ddi/ntddstor/ns-ntddstor-_storage_adapter_descriptor">STORAGE_ADAPTER_DESCRIPTOR</a> structure will indicate either <b>SRB_TYPE_SCSI_REQUEST_BLOCK</b> or <b>SRB_TYPE_STORAGE_REQUEST_BLOCK</b>.
 
 ## -see-also
 

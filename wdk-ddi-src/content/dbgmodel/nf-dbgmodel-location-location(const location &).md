@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.Location.Location(constLocation&)
-title: Location function (dbgmodel.h)
-description: Copy constructs a location.
-ms.assetid: d653fca1-8a9a-4fd5-b37a-2d3e506c1a77
+title: Location(constLocation&) function (dbgmodel.h)
+description: The Location(constLocation&) function copy constructs a new Location using the specified address of another Location.
 ms.date: 10/02/2018
 keywords: ["Location function"]
 ms.keywords: Location
@@ -36,11 +35,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - Location
+ - Location::Location
 ---
 
-# Location function
-
+# Location(constLocation&) function
 
 ## -description
 
@@ -52,11 +50,11 @@ Copy constructs a location.
 
 The location from which to copy construct a new location.
 
-## -returns
+## -remarks
+
+### Returns
 
 This function is a constructor and does not return value.
-
-## -remarks
 
 ## -see-also
 

@@ -4,7 +4,6 @@ title: WdfDeviceEnqueueRequest function (wdfdevice.h)
 description: The WdfDeviceEnqueueRequest method delivers a specified I/O request to the framework, so that the framework can subsequently add the request to one of the I/O queues that the driver has created for the specified device.
 old-location: wdf\wdfdeviceenqueuerequest.htm
 tech.root: wdf
-ms.assetid: f669790f-0370-46a0-ba38-05e35cdf23b3
 ms.date: 02/26/2018
 keywords: ["WdfDeviceEnqueueRequest function"]
 ms.keywords: DFDeviceObjectGeneralRef_f97fc280-163f-4931-a222-6a8ccf3251d2.xml, WdfDeviceEnqueueRequest, WdfDeviceEnqueueRequest method, kmdf.wdfdeviceenqueuerequest, wdf.wdfdeviceenqueuerequest, wdfdevice/WdfDeviceEnqueueRequest
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <= DISPATCH_LEVEL (See remarks section)
+req.irql: <= DISPATCH_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfDeviceEnqueueRequest</b> method delivers a specified I/O request to th
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
 ## -returns

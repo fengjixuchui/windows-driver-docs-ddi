@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_RECOMMENDVIDPNTOPOLOGY
 title: DXGKDDI_RECOMMENDVIDPNTOPOLOGY (d3dkmddi.h)
 description: The DxgkDdiRecommendVidPnTopology function creates the topology of a specified VidPN or augments the topology with a new path to video present targets.
 old-location: display\dxgkddirecommendvidpntopology.htm
-ms.assetid: a7c31d2c-3893-4d25-837d-d4650aeb1cd1
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_RECOMMENDVIDPNTOPOLOGY callback function"]
 ms.keywords: DXGKDDI_RECOMMENDVIDPNTOPOLOGY, DXGKDDI_RECOMMENDVIDPNTOPOLOGY callback, DmFunctions_8036db05-72c0-4b67-9151-a33da1df4fb8.xml, DxgkDdiRecommendVidPnTopology, DxgkDdiRecommendVidPnTopology callback function [Display Devices], d3dkmddi/DxgkDdiRecommendVidPnTopology, display.dxgkddirecommendvidpntopology
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiRecommendVidPnTopology
-product:
- - Windows
+ - DXGKDDI_RECOMMENDVIDPNTOPOLOGY
 ---
 
 # DXGKDDI_RECOMMENDVIDPNTOPOLOGY callback function
@@ -56,9 +53,9 @@ The <i>DxgkDdiRecommendVidPnTopology</i> function creates the topology of a spec
 
 A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
 
-### -param pRecommendVidPnTopology
+### -param pRecommendVidPnTopology [in]
 
-[in] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_recommendvidpntopology">DXGKARG_RECOMMENDVIDPNTOPOLOGY</a> structure that contains function arguments.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_recommendvidpntopology">DXGKARG_RECOMMENDVIDPNTOPOLOGY</a> structure that contains function arguments.
 
 ## -returns
 
@@ -81,3 +78,4 @@ The miniport driver should pass through any error code that it gets from the ope
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/index">VidPn Topology Interface</a>
+

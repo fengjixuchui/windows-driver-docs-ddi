@@ -4,7 +4,6 @@ title: _STORAGE_IDENTIFIER (ntddstor.h)
 description: The STORAGE_IDENTIFIER structure represents a SCSI identification descriptor.
 old-location: storage\storage_identifier.htm
 tech.root: storage
-ms.assetid: f2b0610a-dffa-48fb-bc5a-355fa9f05770
 ms.date: 03/29/2018
 keywords: ["STORAGE_IDENTIFIER structure"]
 ms.keywords: "*PSTORAGE_IDENTIFIER, PSTORAGE_IDENTIFIER, PSTORAGE_IDENTIFIER structure pointer [Storage Devices], STORAGE_IDENTIFIER, STORAGE_IDENTIFIER structure [Storage Devices], _STORAGE_IDENTIFIER, ntddstor/PSTORAGE_IDENTIFIER, ntddstor/STORAGE_IDENTIFIER, storage.storage_identifier, structs-general_29c666d7-3e61-44fe-a36e-979418dbb958.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddstor.h
 api_name:
+ - _STORAGE_IDENTIFIER
+ - PSTORAGE_IDENTIFIER
  - STORAGE_IDENTIFIER
 ---
 
@@ -89,3 +90,4 @@ Every device identification page (page code 0x83) of SCSI vital product data con
 
 
 <a href="/previous-versions/windows/hardware/drivers/ff566990(v=vs.85)">STORAGE_IDENTIFIER_TYPE</a>
+

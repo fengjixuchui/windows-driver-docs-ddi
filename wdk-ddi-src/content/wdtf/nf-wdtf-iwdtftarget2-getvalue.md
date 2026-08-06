@@ -4,7 +4,6 @@ title: IWDTFTarget2::GetValue (wdtf.h)
 description: Returns a value from the target that is associated with a specified attribute.
 old-location: dtf\iwdtftarget2_getvalue.htm
 tech.root: dtf
-ms.assetid: 41805e57-770b-416a-989f-25f81ee4d757
 ms.date: 04/04/2018
 keywords: ["IWDTFTarget2::GetValue"]
 ms.keywords: GetValue, GetValue method [Windows Device Testing Framework], GetValue method [Windows Device Testing Framework],IWDTFTarget2 interface, IWDTFTarget2 interface [Windows Device Testing Framework],GetValue method, IWDTFTarget2.GetValue, IWDTFTarget2::GetValue, Microsoft.WDTF.IWDTFTarget2.GetValue, Microsoft::WDTF::IWDTFTarget2::GetValue, dtf.iwdtftarget2_getvalue, wdtf/IWDTFTarget2::GetValue
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFTarget2.GetValue
+ - IWDTFTarget2::GetValue
 ---
 
 # IWDTFTarget2::GetValue
@@ -50,14 +49,14 @@ Returns a value from the target that is associated with a specified attribute.
 
 ## -parameters
 
-### -param SDEL 
+### -param SDEL [in]
 
-[in]
+
 An SDEL statement that specifies the attribute value to retrieve.
 
-### -param pValue 
+### -param pValue [out, retval]
 
-[out, retval]
+
 The address of a variable that receives the result of this method. 
 The result can be any automation-compatible <b>VARIANT</b>.
 
@@ -91,3 +90,4 @@ see <a href="/windows-hardware/drivers/wdtf/simple-data-evaluation-language-over
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftarget2">IWDTFTarget2</a>
+

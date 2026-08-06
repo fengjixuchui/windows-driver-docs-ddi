@@ -3,14 +3,13 @@ UID: NF:d3dkmthk.D3DKMTGetSharedPrimaryHandle
 title: D3DKMTGetSharedPrimaryHandle function (d3dkmthk.h)
 description: The D3DKMTGetSharedPrimaryHandle function retrieves the global shared handle for the primary surface.
 old-location: display\d3dkmtgetsharedprimaryhandle.htm
-ms.assetid: 927a6ddd-caac-4460-b9df-3ba22db69398
 ms.date: 05/10/2018
 keywords: ["D3DKMTGetSharedPrimaryHandle function"]
 ms.keywords: D3DKMTGetSharedPrimaryHandle, D3DKMTGetSharedPrimaryHandle function [Display Devices], OpenGL_Functions_bb0d000e-4846-4851-a6c5-c70330ef8921.xml, d3dkmthk/D3DKMTGetSharedPrimaryHandle, display.d3dkmtgetsharedprimaryhandle
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -53,7 +52,7 @@ The <b>D3DKMTGetSharedPrimaryHandle</b> function retrieves the global shared han
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in, out]
 

@@ -3,14 +3,13 @@ UID: NF:d3dkmthk.D3DKMTGetMultisampleMethodList
 title: D3DKMTGetMultisampleMethodList function (d3dkmthk.h)
 description: The D3DKMTGetMultisampleMethodList function retrieves a list of multiple-sample methods that are used for an allocation.
 old-location: display\d3dkmtgetmultisamplemethodlist.htm
-ms.assetid: 10084238-dfeb-42a5-9bf0-06cb9b4f440c
 ms.date: 05/10/2018
 keywords: ["D3DKMTGetMultisampleMethodList function"]
 ms.keywords: D3DKMTGetMultisampleMethodList, D3DKMTGetMultisampleMethodList function [Display Devices], OpenGL_Functions_8adebfdd-1a02-4e17-8aef-e183587202d2.xml, d3dkmthk/D3DKMTGetMultisampleMethodList, display.d3dkmtgetmultisamplemethodlist
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -53,11 +52,11 @@ The <b>D3DKMTGetMultisampleMethodList</b> function retrieves a list of multiple-
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in, out]
 
 *pData* 
 
-[in, out] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_getmultisamplemethodlist">D3DKMT_GETMULTISAMPLEMETHODLIST</a> structure that describes the list of multiple-sample methods for an allocation.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_getmultisamplemethodlist">D3DKMT_GETMULTISAMPLEMETHODLIST</a> structure that describes the list of multiple-sample methods for an allocation.
 
 ## -returns
 

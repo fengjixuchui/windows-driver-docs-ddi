@@ -4,7 +4,6 @@ title: WdfRequestCompleteWithInformation function (wdfrequest.h)
 description: The WdfRequestCompleteWithInformation method stores completion information and then completes a specified I/O request with a supplied completion status.
 old-location: wdf\wdfrequestcompletewithinformation.htm
 tech.root: wdf
-ms.assetid: dc8f5570-5bdd-492a-a830-e166f146879a
 ms.date: 02/26/2018
 keywords: ["WdfRequestCompleteWithInformation function"]
 ms.keywords: DFRequestObjectRef_29eec73c-aa09-4814-85f9-61979df03412.xml, WdfRequestCompleteWithInformation, WdfRequestCompleteWithInformation method, kmdf.wdfrequestcompletewithinformation, wdf.wdfrequestcompletewithinformation, wdfrequest/WdfRequestCompleteWithInformation
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfRequestCompleteWithInformation</b> method stores completion informatio
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to the request object.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS value</a> that represents the completion status of the request. Valid status values include, but are not limited to, the following:
 
 
@@ -85,16 +84,18 @@ The driver canceled the request.
 
 The driver encountered an error while processing the request.
 
-### -param Information 
+### -param Information [in]
 
-[in]
-Driver-defined completion status information for the request, such as the number of bytes that were transferred.
+
+A ULONG_PTR that is set to a request-dependent value. For example, on successful completion of a transfer request, this is set to the number of bytes transferred. This field is not extensible by the driver.
 
 ## -remarks
 
 A bug check occurs if the driver supplies an invalid object handle.
 
+For read, write and IOCTL requests, it is necessary for the driver to call **WdfRequestCompleteWithInformation**
 
+For a non-data transfer request, calling [**WdfRequestComplete**](./nf-wdfrequest-wdfrequestcomplete.md) instead is an option.
 
 Calling <b>WdfRequestCompleteWithInformation</b> is equivalent to calling <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestsetinformation">WdfRequestSetInformation</a> and then calling <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcomplete">WdfRequestComplete</a>.
 

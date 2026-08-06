@@ -4,7 +4,6 @@ title: PAGP_RESERVE_VIRTUAL (videoagp.h)
 description: The AgpReserveVirtual function reserves a range of virtual addresses for AGP.
 old-location: display\agpreservevirtual.htm
 tech.root: display
-ms.assetid: 966dfc6c-6830-4872-b411-2801e3a4b753
 ms.date: 05/10/2018
 keywords: ["PAGP_RESERVE_VIRTUAL callback function"]
 ms.keywords: AgpReserveVirtual, AgpReserveVirtual callback function [Display Devices], PAGP_RESERVE_VIRTUAL, PAGP_RESERVE_VIRTUAL callback, VideoPort_Functions_ed4d4e19-25f2-4169-a80e-8c57c80ffd2b.xml, display.agpreservevirtual, videoagp/AgpReserveVirtual
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - videoagp.h
 api_name:
- - AgpReserveVirtual
+ - PAGP_RESERVE_VIRTUAL
 ---
 
 # PAGP_RESERVE_VIRTUAL callback function
@@ -50,24 +49,24 @@ The <b>AgpReserveVirtual</b> function reserves a range of virtual addresses for 
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's device extension.
 
-### -param ProcessHandle 
+### -param ProcessHandle [in]
 
-[in]
+
 Handle of the process in which to reserve the virtual address range. If <b>ProcessHandle</b> is 0, then the virtual address range is allocated in system space.
 
-### -param PhysicalReserveContext 
+### -param PhysicalReserveContext [in]
 
-[in]
+
 Is the context handle that identifies the reserved physical address range with which to associate the virtual memory reservation. This context was obtained from <a href="/windows-hardware/drivers/ddi/videoagp/nc-videoagp-pagp_reserve_physical">AgpReservePhysical</a>.
 
-### -param VirtualReserveContext 
+### -param VirtualReserveContext [out]
 
-[out]
+
 Is the location in which the video port driver writes a context handle that identifies the reserved virtual memory.
 
 ## -returns
@@ -101,3 +100,4 @@ The miniport driver should call <a href="/windows-hardware/drivers/ddi/videoagp/
 
 
 <a href="/windows-hardware/drivers/ddi/videoagp/nc-videoagp-pagp_reserve_physical">AgpReservePhysical</a>
+

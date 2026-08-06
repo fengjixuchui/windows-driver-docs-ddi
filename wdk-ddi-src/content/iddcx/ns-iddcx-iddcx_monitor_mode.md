@@ -4,14 +4,13 @@ title: IDDCX_MONITOR_MODE (iddcx.h)
 description: Gives information about the current monitor mode.
 old-location: display\iddcx_monitor_mode.htm
 tech.root: display
-ms.assetid: 95e1778a-4f65-40ee-8ad2-f797ce9e95b0
-ms.date: 05/10/2018
+ms.date: 09/22/2023
 keywords: ["IDDCX_MONITOR_MODE structure"]
 ms.keywords: IDDCX_MONITOR_MODE, IDDCX_MONITOR_MODE structure [Display Devices], display.iddcx_monitor_mode, iddcx/IDDCX_MONITOR_MODE
 req.header: iddcx.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 10
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -43,24 +42,30 @@ api_name:
 
 # IDDCX_MONITOR_MODE structure
 
-
 ## -description
 
-                 Gives information about the current monitor mode.
+A **IDDCX_MONITOR_MODE** structure provides information about the current monitor mode.
 
 ## -struct-fields
 
 ### -field Size
 
-                     Total size of the structure.
+Total size in bytes of this structure.
 
 ### -field Origin
 
-                     Where the driver derived this mode from.
+A [**IDDCX_MONITOR_MODE_ORIGIN**](ne-iddcx-iddcx_monitor_mode_origin.md) value from which the driver derived this mode.
 
 ### -field MonitorVideoSignalInfo
 
-                     This is the details of the Monitor mode.
+A [**DISPLAYCONFIG_VIDEO_SIGNAL_INFO**](/windows/win32/api/wingdi/ns-wingdi-displayconfig_video_signal_info) structure that provides the details of the Monitor mode.
 
-<div class="alert"><b>Note</b>  The<a href="/windows/win32/api/wingdi/ns-wingdi-displayconfig_video_signal_info">DISPLAYCONFIG_VIDEO_SIGNAL_INFO</a><b>AdditionalSignalInfo</b> value vSyncFreqDivider has to have a zero value.</div>
-<div> </div>
+**MonitorVideoSignalInfo.AdditionalSignalInfo**'s union value of **vSyncFreqDivider** must be zero.
+
+## -see-also
+
+[**EVT_IDD_CX_PARSE_MONITOR_DESCRIPTION**](nc-iddcx-evt_idd_cx_parse_monitor_description.md)
+
+[**IDARG_IN_PARSEMONITORDESCRIPTION**](ns-iddcx-idarg_in_parsemonitordescription.md)
+
+[**IDARG_OUT_PARSEMONITORDESCRIPTION**](ns-iddcx-idarg_out_parsemonitordescription.md)

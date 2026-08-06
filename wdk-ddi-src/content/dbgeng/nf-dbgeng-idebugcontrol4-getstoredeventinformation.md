@@ -4,7 +4,6 @@ title: IDebugControl4::GetStoredEventInformation (dbgeng.h)
 description: The GetStoredEventInformation method retrieves information about an event of interest available in the current target.
 old-location: debugger\getstoredeventinformation.htm
 tech.root: debugger
-ms.assetid: 94cc33bf-cd44-4892-a4e1-991eb6339cc3
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::GetStoredEventInformation"]
 ms.keywords: GetStoredEventInformation, GetStoredEventInformation method [Windows Debugging], GetStoredEventInformation method [Windows Debugging],IDebugControl4 interface, IDebugControl4 interface [Windows Debugging],GetStoredEventInformation method, IDebugControl4.GetStoredEventInformation, IDebugControl4::GetStoredEventInformation, IDebugControl_2d615fc9-52f1-4169-9265-430a1ce0f940.xml, dbgeng/IDebugControl4::GetStoredEventInformation, debugger.getstoredeventinformation
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.GetStoredEventInformation
+ - IDebugControl4::GetStoredEventInformation
 ---
 
 # IDebugControl4::GetStoredEventInformation
@@ -50,49 +49,49 @@ The <b>GetStoredEventInformation</b> method retrieves information about an event
 
 ## -parameters
 
-### -param Type 
+### -param Type [out]
 
-[out]
+
 Receives the type of the stored event.  For a list of possible types, see <a href="/previous-versions/ff541478(v=vs.85)">DEBUG_EVENT_XXX</a>.
 
-### -param ProcessId 
+### -param ProcessId [out]
 
-[out]
+
 Receives the process ID of the process in which the event occurred.  If this information is not available, DEBUG_ANY_ID will be returned instead.
 
-### -param ThreadId 
+### -param ThreadId [out]
 
-[out]
+
 Receives the thread ID of the thread in which the last event occurred.  If this information is not available, DEBUG_ANY_ID will be returned instead.
 
-### -param Context 
+### -param Context [out, optional]
 
-[out, optional]
+
 Receives the <a href="/windows-hardware/drivers/debugger/scopes-and-symbol-groups">thread context</a> of the stored event.  The type of the thread context is the CONTEXT structure for the target's effective processor at the time of the event.  The <i>Context</i> buffer must be large enough to hold this structure.  If <i>Context</i> is <b>NULL</b>, this information is not returned.
 
-### -param ContextSize 
+### -param ContextSize [in]
 
-[in]
+
 Specifies the size, in bytes, of the buffer that <i>Context</i> specifies.
 
-### -param ContextUsed 
+### -param ContextUsed [out, optional]
 
-[out, optional]
+
 Receives the size in bytes of the context.  If <i>ContextUsed</i> is <b>NULL</b>, this information is not returned.
 
-### -param ExtraInformation 
+### -param ExtraInformation [out, optional]
 
-[out, optional]
+
 Receives extra information about the event.  The contents of this extra information depends on the type of the event.  If <i>ExtraInformation</i> is <b>NULL</b>, this information is not returned.
 
-### -param ExtraInformationSize 
+### -param ExtraInformationSize [in]
 
-[in]
+
 Specifies the size, in bytes, of the buffer that <i>ExtraInformation</i> specifies.
 
-### -param ExtraInformationUsed 
+### -param ExtraInformationUsed [out, optional]
 
-[out, optional]
+
 Receives the size in bytes of extra information.  If <i>ExtraInformationUsed</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -132,3 +131,4 @@ For more information, see the topic <a href="/windows-hardware/drivers/debugger/
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol4">IDebugControl4</a>
+

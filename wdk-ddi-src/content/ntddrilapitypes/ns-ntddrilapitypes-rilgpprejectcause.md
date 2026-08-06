@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILGPPREJECTCAUSE
 title: RILGPPREJECTCAUSE (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILGPPREJECTCAUSE structure for internal use only."
 old-location: netvista\rilgpprejectcause.htm
 tech.root: netvista
-ms.assetid: 3008a69e-25d8-4e54-afb3-317a8ca82d34
 ms.date: 05/02/2018
 keywords: ["RILGPPREJECTCAUSE structure"]
 ms.keywords: "*LPRILGPPREJECTCAUSE, RILGPPREJECTCAUSE, RILGPPREJECTCAUSE structure [Network Drivers Starting with Windows Vista], netvista.rilgpprejectcause, ntddrilapitypes/RILGPPREJECTCAUSE"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILGPPREJECTCAUSE
+ - LPRILGPPREJECTCAUSE
 ---
 
 # RILGPPREJECTCAUSE structure (ntddrilapitypes.h)

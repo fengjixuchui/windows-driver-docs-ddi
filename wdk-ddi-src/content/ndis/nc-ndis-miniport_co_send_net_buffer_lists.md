@@ -4,7 +4,6 @@ title: MINIPORT_CO_SEND_NET_BUFFER_LISTS (ndis.h)
 description: The MiniportCoSendNetBufferLists function transmits network data that is contained in a specified linked list of NET_BUFFER_LIST structures.Note  You must declare the function by using the MINIPORT_CO_SEND_NET_BUFFER_LISTS type.
 old-location: netvista\miniportcosendnetbufferlists.htm
 tech.root: netvista
-ms.assetid: 4a717842-6d71-488e-a56a-57c6e6e0c5d7
 ms.date: 05/02/2018
 keywords: ["MINIPORT_CO_SEND_NET_BUFFER_LISTS callback function"]
 ms.keywords: MINIPORT_CO_SEND_NET_BUFFER_LISTS, MINIPORT_CO_SEND_NET_BUFFER_LISTS callback, MiniportCoSendNetBufferLists, MiniportCoSendNetBufferLists callback function [Network Drivers Starting with Windows Vista], condis_sendrcv_ref_28cddc06-235d-4274-a783-554dec10ad84.xml, ndis/MiniportCoSendNetBufferLists, netvista.miniportcosendnetbufferlists
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportCoSendNetBufferLists
+ - MINIPORT_CO_SEND_NET_BUFFER_LISTS
 ---
 
 # MINIPORT_CO_SEND_NET_BUFFER_LISTS callback function
@@ -49,32 +48,32 @@ api_name:
 The 
   <i>MiniportCoSendNetBufferLists</i> function transmits network data that is contained in a specified linked
   list of 
-  <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures.
+  <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures.
 <div class="alert"><b>Note</b>  You must declare the function by using the <b>MINIPORT_CO_SEND_NET_BUFFER_LISTS</b> type. For more
    information, see the following Examples section.</div><div> </div>
 
 ## -parameters
 
-### -param MiniportVcContext 
+### -param MiniportVcContext [in]
 
-[in]
+
 A handle to a miniport driver-allocated context area in which the miniport driver maintains its
      per-virtual connection (VC) state. The miniport driver supplied this handle to NDIS from its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_create_vc">MiniportCoCreateVc</a> function.
 
-### -param NetBufferLists 
+### -param NetBufferLists [in]
 
-[in]
+
 A pointer to the first 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure in a linked list
+     <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure in a linked list
      of <b>NET_BUFFER_LIST</b> structures. Each <b>NET_BUFFER_LIST</b> structure in the list describes a list of 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a> structures. Each <b>NET_BUFFER</b> structure
+     <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a> structures. Each <b>NET_BUFFER</b> structure
      in the list maps to a chain of memory descriptor lists (MDLs). The MDLs contain the network data that 
      <i>MiniportCoSendNetBufferLists</i> transmits.
 
-### -param SendFlags 
+### -param SendFlags [in]
 
-[in]
+
 Flags that define attributes for the send operation. The flags can be combined with a bitwise OR
      operation. To clear all of the flags, set this parameter to zero. 
      <i>MiniportCoSendNetBufferLists</i> supports the following flags:
@@ -95,7 +94,7 @@ The caller can optionally set this flag if the current IRQL is DISPATCH_LEVEL. F
 
 NDIS should check for loopback. By default, NDIS does not loop back data to the driver that
        submitted the send request. An overlying driver can override this behavior by setting the
-       <b>NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK</b> flag. When this flag is set, NDIS identifies all of the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a>
+       <b>NDIS_SEND_FLAGS_CHECK_FOR_LOOPBACK</b> flag. When this flag is set, NDIS identifies all of the <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a>
        structures that contain data that matches the receive criteria for the binding. NDIS indicates
        <b>NET_BUFFER</b> structures that match the criteria to the overlying driver. This flag does not affect
        checking for loopback, or looping back, on other bindings.
@@ -110,7 +109,7 @@ The
     <i>MiniportCoSendNetBufferLists</i> function of the bound miniport driver.
 
 The order of the linked list of 
-    <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures that NDIS passes
+    <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures that NDIS passes
     at 
     <i>NetBufferLists</i> represents the order in which the miniport driver should transmit the network data.
     In addition, a miniport driver should send the <b>NET_BUFFER_LIST</b> structures from multiple 
@@ -120,18 +119,18 @@ The order of the linked list of
 CoNDIS miniport drivers must accept all of the send requests that NDIS makes by calling the 
     <i>MiniportCoSendNetBufferLists</i> function. If a miniport driver cannot complete a send request
     immediately, the driver must hold the request in a queue until it can complete the request. While a send
-    request is pending, the miniport driver retains ownership of the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures and all of
+    request is pending, the miniport driver retains ownership of the <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures and all of
     the resources that are associated with the <b>NET_BUFFER_LIST</b> structures.
 
 The miniport driver must call the 
     <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcosendnetbufferlistscomplete">
     NdisMCoSendNetBufferListsComplete</a> function to complete all CoNDIS send requests. To improve
     computer performance, the driver can create a linked list that contains the 
-    <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures from multiple
+    <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures from multiple
     send requests. The driver can then pass such a linked list in a single call to 
     <b>NdisMCoSendNetBufferListsComplete</b>.
 
-In addition, you should assume that the miniport driver cannot access the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures
+In addition, you should assume that the miniport driver cannot access the <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures
     and other associated resources as soon as the driver calls 
     <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcosendnetbufferlistscomplete">NdisMCoSendNetBufferListsComplete</a>.
 
@@ -184,11 +183,11 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a>
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 
@@ -198,3 +197,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcosendnetbufferlistscomplete">
    NdisMCoSendNetBufferListsComplete</a>
+

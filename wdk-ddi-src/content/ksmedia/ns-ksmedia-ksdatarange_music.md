@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_55
+UID: NS:ksmedia.KSDATARANGE_MUSIC
 title: KSDATARANGE_MUSIC (ksmedia.h)
 description: The KSDATARANGE_MUSIC structure specifies a range of DirectMusic MIDI formats.
 old-location: audio\ksdatarange_music.htm
 tech.root: audio
-ms.assetid: 2ada5d1c-9c46-4f7b-99e5-72aa8f6fee9f
 ms.date: 04/30/2019
 keywords: ["KSDATARANGE_MUSIC structure"]
 ms.keywords: "*PKSDATARANGE_MUSIC, KSDATARANGE_MUSIC, KSDATARANGE_MUSIC structure [Audio Devices], PKSDATARANGE_MUSIC, PKSDATARANGE_MUSIC structure pointer [Audio Devices], aud-prop_5c82e83d-000e-440e-bfcb-8daef30f5056.xml, audio.ksdatarange_music, ksmedia/KSDATARANGE_MUSIC, ksmedia/PKSDATARANGE_MUSIC"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSDATARANGE_MUSIC
  - KSDATARANGE_MUSIC
 ---
 
@@ -125,3 +125,4 @@ For information about data ranges and intersection handling, see <a href="/windo
 ## -see-also
 
 <a href="/previous-versions/ff561658(v=vs.85)">KSDATARANGE</a>
+

@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_EVICT2
 title: PFND3D12DDI_EVICT2 (d3d12umddi.h)
 description: PFND3D12DDI_EVICT2 instructs the OS to decrement the residency reference count. Once this count reaches zero, it will remove the allocation from the device residency list.
-ms.assetid: 2ebce9ab-3827-4fa4-848f-58c9eb10f82a
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_EVICT2 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_EVICT2
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ PFND3D12DDI_EVICT2 instructs the OS to decrement the residency reference count. 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device.
 
-### -param Arg2
+### -param unnamedParam2
 
 A pointer to a [D3D12DDIARG_EVICT](ns-d3d12umddi-d3d12ddiarg_evict.md) structure that describes the memory pages to evict.
 

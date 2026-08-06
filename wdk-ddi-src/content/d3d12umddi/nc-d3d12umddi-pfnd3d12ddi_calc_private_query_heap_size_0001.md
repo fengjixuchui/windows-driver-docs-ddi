@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_CALC_PRIVATE_QUERY_HEAP_SIZE_0001
 title: PFND3D12DDI_CALC_PRIVATE_QUERY_HEAP_SIZE_0001 (d3d12umddi.h)
 description: Determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for a query.
-ms.assetid: 9f438444-7eb1-47ba-9bc2-36603467a77f
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CALC_PRIVATE_QUERY_HEAP_SIZE_0001 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CALC_PRIVATE_QUERY_HEAP_SIZE_0001
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ Determines the size of the user-mode display driver's private region of memory (
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 Used to create a query heap.
 

@@ -4,7 +4,6 @@ title: PcRegisterIoTimeout function (portcls.h)
 description: The PcRegisterIoTimeout function registers a driver-supplied I/O-timer callback routine for a specified device object.
 old-location: audio\pcregisteriotimeout.htm
 tech.root: audio
-ms.assetid: 9cd7c366-1745-45b0-b9e9-87a259110621
 ms.date: 05/08/2018
 keywords: ["PcRegisterIoTimeout function"]
 ms.keywords: PcRegisterIoTimeout, PcRegisterIoTimeout function [Audio Devices], audio.pcregisteriotimeout, audpc-routines_1a63a1fa-c80a-4fe4-87d6-95543e6e2f1d.xml, portcls/PcRegisterIoTimeout
@@ -54,19 +53,19 @@ Once registered, the port-class driver calls the timer callback approximately on
 
 ## -parameters
 
-### -param pDeviceObject 
+### -param pDeviceObject [in]
 
-[in]
+
 Pointer to a device object representing a device on which I/O operations can time out. This parameter must point to a system structure of type <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a>. When calling the I/O-timer callback routine, the port class driver passes this pointer as the first of two call parameters. For more information, see the following Remarks section.
 
-### -param pTimerRoutine 
+### -param pTimerRoutine [in]
 
-[in]
+
 Pointer to the driver-supplied I/O-timer callback routine. For more information, see the following Remarks section.
 
-### -param pContext 
+### -param pContext [in]
 
-[in]
+
 Pointer to the driver-specific context. When calling the I/O-timer callback routine, the port class driver passes this pointer as the second of two call parameters. For more information, see the following Remarks section.
 
 ## -returns

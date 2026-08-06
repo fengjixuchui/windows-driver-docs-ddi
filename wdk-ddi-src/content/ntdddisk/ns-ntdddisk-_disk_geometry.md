@@ -4,7 +4,6 @@ title: _DISK_GEOMETRY (ntdddisk.h)
 description: The DISK_GEOMETRY structure is obsolete and provided only to support existing drivers.
 old-location: storage\disk_geometry.htm
 tech.root: storage
-ms.assetid: f92d1f63-4361-4775-88f8-be1c9bf781ef
 ms.date: 03/29/2018
 keywords: ["DISK_GEOMETRY structure"]
 ms.keywords: "*PDISK_GEOMETRY, DISK_GEOMETRY, DISK_GEOMETRY structure [Storage Devices], PDISK_GEOMETRY, PDISK_GEOMETRY structure pointer [Storage Devices], _DISK_GEOMETRY, ntdddisk/DISK_GEOMETRY, ntdddisk/PDISK_GEOMETRY, storage.disk_geometry, structs-disk_3ad908b7-8f42-4a06-914e-92b631cc1a56.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntdddisk.h
 api_name:
+ - _DISK_GEOMETRY
+ - PDISK_GEOMETRY
  - DISK_GEOMETRY
 ---
 
@@ -92,3 +93,4 @@ Indicates the number of bytes in a disk sector.
 
 
 <a href="/windows-hardware/drivers/ddi/ntdddisk/ni-ntdddisk-ioctl_disk_get_media_types">IOCTL_DISK_GET_MEDIA_TYPES</a>
+

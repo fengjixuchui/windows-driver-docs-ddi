@@ -4,7 +4,6 @@ title: _WSK_TRANSPORT (wsk.h)
 description: The WSK_TRANSPORT structure specifies an available transport that is supported by the WSK subsystem.
 old-location: netvista\wsk_transport.htm
 tech.root: netvista
-ms.assetid: aaf7b5ac-0401-4b6a-a478-3d50559817db
 ms.date: 05/02/2018
 keywords: ["WSK_TRANSPORT structure"]
 ms.keywords: "*PWSK_TRANSPORT, PWSK_TRANSPORT, PWSK_TRANSPORT structure pointer [Network Drivers Starting with Windows Vista], WSK_TRANSPORT, WSK_TRANSPORT structure [Network Drivers Starting with Windows Vista], _WSK_TRANSPORT, netvista.wsk_transport, wsk/PWSK_TRANSPORT, wsk/WSK_TRANSPORT, wskref_be7d6a6d-971e-49de-bc64-ebd1f1d04085.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wsk.h
 api_name:
+ - _WSK_TRANSPORT
+ - PWSK_TRANSPORT
  - WSK_TRANSPORT
 ---
 
@@ -85,19 +86,19 @@ Supports unreliable connectionless datagram communication.
 Supports raw access to the transport protocol.
 
 For more information about the socket types that are supported for each supported address family, see     
-     <a href="/previous-versions/windows/hardware/drivers/mt808757(v=vs.85)">WSK Address Families</a>.
+     <a href="/windows-hardware/drivers/network/ws2def-h">WSK Address Families</a>.
 
 ### -field Protocol
 
 The protocol that is supported by the transport. For more information about the protocols that are
      supported for each supported address family, see 
-     <a href="/previous-versions/windows/hardware/drivers/mt808757(v=vs.85)">WSK Address Families</a>.
+     <a href="/windows-hardware/drivers/network/ws2def-h">WSK Address Families</a>.
 
 ### -field AddressFamily
 
 The address family that is supported by the transport. For more information about supported
      address families, see 
-     <a href="/previous-versions/windows/hardware/drivers/mt808757(v=vs.85)">WSK Address Families</a>.
+     <a href="/windows-hardware/drivers/network/ws2def-h">WSK Address Families</a>.
 
 ### -field ProviderId
 
@@ -137,3 +138,4 @@ A single transport provider can support multiple combinations of values for the
 
 
 <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect">WskSocketConnect</a>
+

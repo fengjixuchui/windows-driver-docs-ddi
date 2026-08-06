@@ -2,7 +2,6 @@
 UID: NS:dispmprt._DXGK_DSI_RESET
 title: DXGK_DSI_RESET
 ms.date: 03/24/2020
-ms.topic: language-reference
 targetos: Windows
 description: The DXGK_DSI_RESET structure is used with IOCTL_MIPI_DSI_RESET.
 tech.root: display
@@ -29,6 +28,7 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGK_DSI_RESET
+ - PDXGK_DSI_RESET
  - DXGK_DSI_RESET
 f1_keywords:
  - _DXGK_DSI_RESET

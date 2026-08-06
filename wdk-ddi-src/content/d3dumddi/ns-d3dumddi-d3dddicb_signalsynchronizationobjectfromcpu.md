@@ -4,7 +4,6 @@ title: D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU (d3dumddi.h)
 description: D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU is used with pfnSignalSynchronizationObjectFromCpuCb to enable a driver to signal a monitored fence.
 old-location: display\d3dddicb_signalsynchronizationobjectfromcpu.htm
 tech.root: display
-ms.assetid: 14CA5FD1-00CB-474B-A2A3-4264CAFA063A
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU structure"]
 ms.keywords: D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU structure [Display Devices], d3dumddi/D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMCPU, display.d3dddicb_signalsynchronizationobjectfromcpu
@@ -50,17 +49,17 @@ api_name:
 
 ## -struct-fields
 
-### -field ObjectCount
+### -field ObjectCount [in]
 
-[in] The number of synchronization objects in the <b>ObjectHandleArray</b> and fence values in the <b>FenceValueArray</b>.
+The number of synchronization objects in the <b>ObjectHandleArray</b> and fence values in the <b>FenceValueArray</b>.
 
-### -field ObjectHandleArray
+### -field ObjectHandleArray [in]
 
-[in] An array of kernel-mode handles to the synchronization events to signal.
+An array of kernel-mode handles to the synchronization events to signal.
 
-### -field FenceValueArray
+### -field FenceValueArray [in]
 
-[in] An array of 64 bit monitored fence values to signal, each corresponding to an object in the <b>ObjectHandleArray</b>.
+An array of 64 bit monitored fence values to signal, each corresponding to an object in the <b>ObjectHandleArray</b>.
 
 ## -see-also
 

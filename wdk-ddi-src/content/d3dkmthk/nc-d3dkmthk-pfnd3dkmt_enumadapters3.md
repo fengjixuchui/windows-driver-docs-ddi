@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_ENUMADAPTERS3
 title: PFND3DKMT_ENUMADAPTERS3 (d3dkmthk.h)
 description: The PFND3DKMT_ENUMADAPTERS3 callback function enumerates all graphics adapters on the system.
-ms.assetid: 5943cc94-cdd6-4d68-8592-43fb9c29487f
 ms.date: 03/24/2020
 keywords: ["PFND3DKMT_ENUMADAPTERS3 callback function"]
 req.header: d3dkmthk.h
@@ -49,9 +48,9 @@ The **PFND3DKMT_ENUMADAPTERS3** callback function enumerates graphics and displa
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in/out]
 
-[in/out] A [D3DKMT_ENUMADAPTERS3](ns-d3dkmthk-_d3dkmt_enumadapters3.md) structure. The caller passes in the array size and an empty array space. The callee verifies that there is enough room in the array, fills out the array, and passes back how much of the array was used.
+A [D3DKMT_ENUMADAPTERS3](ns-d3dkmthk-_d3dkmt_enumadapters3.md) structure. The caller passes in the array size and an empty array space. The callee verifies that there is enough room in the array, fills out the array, and passes back how much of the array was used.
 
 ## -returns
 

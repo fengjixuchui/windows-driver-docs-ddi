@@ -2,10 +2,8 @@
 UID: NN:filterpipeline.IXpsDocument
 title: IXpsDocument (filterpipeline.h)
 description: The IXpsDocument interface represents the root of an XPS document.
-old-location: print\ixpsdocument.htm
 tech.root: print
-ms.assetid: 1d4a9ad3-6ac1-44c3-9ddd-0dc5f996d70d
-ms.date: 04/20/2018
+ms.date: 06/11/2021
 keywords: ["IXpsDocument interface"]
 ms.keywords: IXpsDocument, IXpsDocument interface [Print Devices], IXpsDocument interface [Print Devices],described, filterpipeline/IXpsDocument, filterpipeline_d2db5467-7b2d-439c-8ad1-3ffb607a3167.xml, print.ixpsdocument
 req.header: filterpipeline.h
@@ -43,14 +41,10 @@ api_name:
 
 # IXpsDocument interface
 
-
 ## -description
 
-The <code>IXpsDocument</code> interface represents the root of an XPS document.
+The **IXpsDocument** interface represents the root of an XPS document.
 
 ## -inheritance
 
-The <b xmlns:loc="https://microsoft.com/wdcml/l10n">IXpsDocument</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IXpsDocument</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The **IXpsDocument** interface inherits from the [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface.

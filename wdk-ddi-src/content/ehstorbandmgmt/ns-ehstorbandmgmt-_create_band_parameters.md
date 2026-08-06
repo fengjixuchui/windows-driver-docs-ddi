@@ -4,7 +4,6 @@ title: _CREATE_BAND_PARAMETERS (ehstorbandmgmt.h)
 description: The parameters to create a band on a storage device for an IOCTL_EHSTOR_BANDMGMT_CREATE_BAND request are specified in a CREATE_BAND_PARAMETERS structure.
 old-location: storage\create_band_parameters.htm
 tech.root: storage
-ms.assetid: DFDD92F8-95B7-40F7-950C-A105F035B2E9
 ms.date: 03/29/2018
 keywords: ["CREATE_BAND_PARAMETERS structure"]
 ms.keywords: "*PCREATE_BAND_PARAMETERS, CREATEBAND_AUTHKEY_CACHING_ENABLED, CREATE_BAND_PARAMETERS, CREATE_BAND_PARAMETERS structure [Storage Devices], PCREATE_BAND_PARAMETERS, PCREATE_BAND_PARAMETERS structure pointer [Storage Devices], _CREATE_BAND_PARAMETERS, ehstorbandmgmt/CREATE_BAND_PARAMETERS, ehstorbandmgmt/PCREATE_BAND_PARAMETERS, storage.create_band_parameters"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - EhStorBandMgmt.h
 api_name:
+ - _CREATE_BAND_PARAMETERS
+ - PCREATE_BAND_PARAMETERS
  - CREATE_BAND_PARAMETERS
 ---
 
@@ -131,3 +132,4 @@ The <b>CryptoAlgoIdType</b> and <b>CryptoAlgoOidString</b> members of the <a hre
 
 
 <a href="/windows-hardware/drivers/ddi/ehstorbandmgmt/ni-ehstorbandmgmt-ioctl_ehstor_bandmgmt_create_band">IOCTL_EHSTOR_BANDMGMT_CREATE_BAND</a>
+

@@ -4,7 +4,6 @@ title: EVT_WDF_IO_TARGET_REMOVE_CANCELED (wdfiotarget.h)
 description: A driver's EvtIoTargetRemoveCanceled event callback function performs operations when the removal of a specified remote I/O target is canceled.
 old-location: wdf\evtiotargetremovecanceled.htm
 tech.root: wdf
-ms.assetid: 9f275a2c-6f40-461d-bd2c-767b2494ad1c
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_IO_TARGET_REMOVE_CANCELED callback function"]
 ms.keywords: DFIOTargetRef_5e8c3229-8657-4c26-8bfc-01c8436a8171.xml, EVT_WDF_IO_TARGET_REMOVE_CANCELED, EVT_WDF_IO_TARGET_REMOVE_CANCELED callback, EvtIoTargetRemoveCanceled, EvtIoTargetRemoveCanceled callback function, kmdf.evtiotargetremovecanceled, wdf.evtiotargetremovecanceled, wdfiotarget/EvtIoTargetRemoveCanceled
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfIoTarget.h
 api_name:
- - EvtIoTargetRemoveCanceled
+ - EVT_WDF_IO_TARGET_REMOVE_CANCELED
 ---
 
 # EVT_WDF_IO_TARGET_REMOVE_CANCELED callback function
@@ -52,9 +51,9 @@ A driver's <i>EvtIoTargetRemoveCanceled</i> event callback function performs ope
 
 ## -parameters
 
-### -param IoTarget 
+### -param IoTarget [in]
 
-[in]
+
 A handle to an I/O target object.
 
 ## -remarks
@@ -88,3 +87,4 @@ For more information about the <i>EvtIoTargetRemoveCanceled</i> callback functio
 
 
 <a href="/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetopen">WdfIoTargetOpen</a>
+

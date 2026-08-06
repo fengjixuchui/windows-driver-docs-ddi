@@ -4,7 +4,6 @@ title: PFREE_ADAPTER_CHANNEL (wdm.h)
 description: The FreeAdapterChannel routine releases the system DMA controller when a driver has completed all DMA operations necessary to satisfy the current IRP.
 old-location: kernel\freeadapterchannel.htm
 tech.root: kernel
-ms.assetid: 916531dd-4768-436a-910c-07d49924ac48
 ms.date: 04/30/2018
 keywords: ["PFREE_ADAPTER_CHANNEL callback function"]
 ms.keywords: FreeAdapterChannel, FreeAdapterChannel callback function [Kernel-Mode Driver Architecture], PFREE_ADAPTER_CHANNEL, PFREE_ADAPTER_CHANNEL callback, kdma_f48025a6-96a2-4bdd-8b48-6c939bdf738b.xml, kernel.freeadapterchannel, wdm/FreeAdapterChannel
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdm.h
 api_name:
- - FreeAdapterChannel
+ - PFREE_ADAPTER_CHANNEL
 ---
 
 # PFREE_ADAPTER_CHANNEL callback function
@@ -50,9 +49,9 @@ The <b>FreeAdapterChannel</b> routine releases the system DMA controller when a 
 
 ## -parameters
 
-### -param DmaAdapter 
+### -param DmaAdapter [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_adapter">DMA_ADAPTER</a>  structure returned by <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter">IoGetDmaAdapter</a> that represents the bus-master adapter or DMA controller.
 
 ## -remarks
@@ -93,3 +92,4 @@ After a driver has transferred all the data and called <a href="/windows-hardwar
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer">MapTransfer</a>
+

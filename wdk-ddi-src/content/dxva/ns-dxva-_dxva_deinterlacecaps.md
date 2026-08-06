@@ -4,7 +4,6 @@ title: _DXVA_DeinterlaceCaps (dxva.h)
 description: The DXVA_DeinterlaceCaps structure describes the driver capabilities for a deinterlace mode.
 old-location: display\dxva_deinterlacecaps.htm
 tech.root: display
-ms.assetid: be503505-fb20-4a8d-b395-7e807cde9fb6
 ms.date: 05/10/2018
 keywords: ["DXVA_DeinterlaceCaps structure"]
 ms.keywords: "*LPDXVA_DeinterlaceCaps, DXVA_DeinterlaceCaps, DXVA_DeinterlaceCaps structure [Display Devices], LPDXVA_DeinterlaceCaps, LPDXVA_DeinterlaceCaps structure pointer [Display Devices], _DXVA_DeinterlaceCaps, display.dxva_deinterlacecaps, dxva/DXVA_DeinterlaceCaps, dxva/LPDXVA_DeinterlaceCaps, dxvaref_daa1a58d-aec2-4370-9baa-7a3b8cbcacf8.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dxva.h
 api_name:
+ - _DXVA_DeinterlaceCaps
+ - LPDXVA_DeinterlaceCaps
  - DXVA_DeinterlaceCaps
 ---
 
@@ -99,3 +100,4 @@ The driver receives the DXVA_DeinterlaceCaps structure with the <b>Size</b> memb
 
 
 <a href="/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_videoprocesscaps">DXVA_VideoProcessCaps</a>
+

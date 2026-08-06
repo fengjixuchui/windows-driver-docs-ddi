@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3DWDDM2_0DDI_SETHARDWAREPROTECTION
 title: PFND3DWDDM2_0DDI_SETHARDWAREPROTECTION (d3d10umddi.h)
 description: SetHardwareProtection allows the Desktop Window Manager (DWM) full-screen swap chain buffers to transfer between protected and non-protected states without having to be recreated.
 old-location: display\sethardwareprotection.htm
-ms.assetid: 9D41C504-1F84-4F1A-B767-D3B423A8AA46
 ms.date: 05/10/2018
 keywords: ["PFND3DWDDM2_0DDI_SETHARDWAREPROTECTION callback function"]
 ms.keywords: PFND3DWDDM2_0DDI_SETHARDWAREPROTECTION, PFND3DWDDM2_0DDI_SETHARDWAREPROTECTION callback, d3d10umddi/pfnSetHardwareProtection, display.sethardwareprotection, pfnSetHardwareProtection, pfnSetHardwareProtection callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnSetHardwareProtection
+ - PFND3DWDDM2_0DDI_SETHARDWAREPROTECTION
 ---
 
 # PFND3DWDDM2_0DDI_SETHARDWAREPROTECTION callback function
@@ -83,3 +82,4 @@ Destroying and re-creating the DWM swap chain buffers is a heavyweight operation
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_createdevice">D3DDDIARG_CREATEDEVICE</a>
+

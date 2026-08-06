@@ -4,7 +4,6 @@ title: IMiniportAudioEngineNode::GetDeviceChannelPeakMeter (portcls.h)
 description: Gets the PeakMeter value for the audio device channel.
 old-location: audio\iminiportaudioenginenode_getdevicechannelpeakmeter.htm
 tech.root: audio
-ms.assetid: 31F291ED-0B04-4CDF-A83B-7CF3717EC234
 ms.date: 05/08/2018
 keywords: ["IMiniportAudioEngineNode::GetDeviceChannelPeakMeter"]
 ms.keywords: GetDeviceChannelPeakMeter, GetDeviceChannelPeakMeter method [Audio Devices], GetDeviceChannelPeakMeter method [Audio Devices],IMiniportAudioEngineNode interface, IMiniportAudioEngineNode interface [Audio Devices],GetDeviceChannelPeakMeter method, IMiniportAudioEngineNode.GetDeviceChannelPeakMeter, IMiniportAudioEngineNode::GetDeviceChannelPeakMeter, audio.iminiportaudioenginenode_getdevicechannelpeakmeter, portcls/IMiniportAudioEngineNode::GetDeviceChannelPeakMeter
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IMiniportAudioEngineNode.GetDeviceChannelPeakMeter
+ - IMiniportAudioEngineNode::GetDeviceChannelPeakMeter
 ---
 
 # IMiniportAudioEngineNode::GetDeviceChannelPeakMeter
@@ -50,19 +49,19 @@ Gets the PeakMeter value  for the audio device channel.
 
 ## -parameters
 
-### -param ulNodeId 
+### -param ulNodeId [in]
 
-[in]
+
 The ID for the node that represents the audio device.
 
-### -param ulChannel 
+### -param ulChannel [in]
 
-[in]
+
 The audio device channel.
 
-### -param plPeakMeter 
+### -param plPeakMeter [out]
 
-[out]
+
 The PeakMeter value for the audio device channel.
 
 ## -returns
@@ -74,3 +73,4 @@ code.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportaudioenginenode">IMiniportAudioEngineNode</a>
+

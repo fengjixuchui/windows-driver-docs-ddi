@@ -3,7 +3,6 @@ UID: NS:d3d10umddi.D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW
 title: D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW (d3d10umddi.h)
 description: The D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW structure describes a buffer that is used to create a shader resource view in a call to the CreateShaderResourceView(D3D11) function.
 old-location: display\d3d11ddiarg_bufferex_shaderresourceview.htm
-ms.assetid: b3585a06-fdb0-4fe9-8d5c-63680039a789
 ms.date: 05/10/2018
 keywords: ["D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW structure"]
 ms.keywords: D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW, D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW structure [Display Devices], UMDisplayDriver_Dx11param_Structs_49ef78b9-8a6f-4b67-bf2f-bae79086b6c7.xml, d3d10umddi/D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW, display.d3d11ddiarg_bufferex_shaderresourceview
@@ -50,25 +49,25 @@ The D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW structure describes a buffer that is
 
 ## -struct-fields
 
-### -field FirstElement
+### -field FirstElement [in]
 
-[in] The offset, in bytes, to the first element in the buffer.
+The offset, in bytes, to the first element in the buffer.
 
-### -field ElementOffset
+### -field ElementOffset [in]
 
-[in] The offset, in bytes, to the first element in the buffer.
+The offset, in bytes, to the first element in the buffer.
 
-### -field NumElements
+### -field NumElements [in]
 
-[in] The number of elements in the buffer.
+The number of elements in the buffer.
 
-### -field ElementWidth
+### -field ElementWidth [in]
 
-[in] The width, in elements, in the buffer.
+The width, in elements, in the buffer.
 
-### -field Flags
+### -field Flags [in]
 
-[in] A valid bitwise OR of flag values that describe the buffer. Currently, the Direct3D runtime supports only the D3D11_DDI_BUFFEREX_SRV_FLAG_RAW (0x00000001) flag. If this flag is set, the buffer is in raw format.
+A valid bitwise OR of flag values that describe the buffer. Currently, the Direct3D runtime supports only the D3D11_DDI_BUFFEREX_SRV_FLAG_RAW (0x00000001) flag. If this flag is set, the buffer is in raw format.
 
 ## -see-also
 

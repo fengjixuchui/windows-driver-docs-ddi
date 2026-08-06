@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._WHEA_RECOVERY_CONTEXT
 title: WHEA_RECOVERY_CONTEXT
-description: 
-tech.root: 
-ms.assetid: 7ce30722-7df7-4eac-95eb-5e2117a8f263
+description: "Learn more about: WHEA_RECOVERY_CONTEXT structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEA_RECOVERY_CONTEXT structure"]
 ms.keywords: WHEA_RECOVERY_CONTEXT, WHEA_RECOVERY_CONTEXT, *PWHEA_RECOVERY_CONTEXT,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_RECOVERY_CONTEXT
+ - PWHEA_RECOVERY_CONTEXT
  - WHEA_RECOVERY_CONTEXT
-product:
- - Windows
 ---
 
 # WHEA_RECOVERY_CONTEXT structure
@@ -62,9 +61,17 @@ Reserved for system use.
 
 ### -field MemoryError.RestartIpValid
 
+### -field MemoryError.ClearPoison
+
+### -field PmemError
+
+### -field PmemError.PmemErrInfo
+
 ### -field PartitionId
 
 ### -field VpIndex
+
+### -field ErrorType
 
 ## -remarks
 

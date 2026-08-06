@@ -4,7 +4,6 @@ title: IOCTL_SERIAL_GET_WAIT_MASK (ntddser.h)
 description: The IOCTL_SERIAL_GET_WAIT_MASK request returns the event wait mask that is currently set for the serial controller.
 old-location: serports\ioctl_serial_get_wait_mask.htm
 tech.root: serports
-ms.assetid: 2ee8591a-f48e-43ad-8b88-74a1401aad07
 ms.date: 04/23/2018
 keywords: ["IOCTL_SERIAL_GET_WAIT_MASK IOCTL"]
 ms.keywords: IOCTL_SERIAL_GET_WAIT_MASK, IOCTL_SERIAL_GET_WAIT_MASK control, IOCTL_SERIAL_GET_WAIT_MASK control code [Serial Ports], ntddser/IOCTL_SERIAL_GET_WAIT_MASK, serports.ioctl_serial_get_wait_mask, serref_d06a9ed8-0871-455b-8d91-8f530adfcfe9.xml
@@ -53,6 +52,8 @@ A client can wait for the wait events represented by flag bits <b>SERIAL_EV_RXCH
 To set an event wait mask, a client can use an <a href="/windows-hardware/drivers/ddi/ntddser/ni-ntddser-ioctl_serial_set_wait_mask">IOCTL_SERIAL_SET_WAIT_MASK</a> request. To wait for the occurrence of a wait event, a client uses an <a href="/windows-hardware/drivers/ddi/ntddser/ni-ntddser-ioctl_serial_wait_on_mask">IOCTL_SERIAL_WAIT_ON_MASK</a> request.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

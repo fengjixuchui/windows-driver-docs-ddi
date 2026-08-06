@@ -4,7 +4,6 @@ title: _WWAN_UICCSLOT_STATE (wwan.h)
 description: The WWAN_UICCSLOT_STATE enumeration lists the different states of a UICC (SIM) card slot on a modem. The slot state represents a summary of both the slot state and the card state.
 old-location: netvista\wwan_uiccslot_state.htm
 tech.root: netvista
-ms.assetid: 63A3C2AA-6EBF-469D-933A-C51F5EC31C47
 ms.date: 05/02/2018
 keywords: ["WWAN_UICCSLOT_STATE enumeration"]
 ms.keywords: "*PWWAN_UICCSLOT_STATE, UICCSlotStateActive, UICCSlotStateEmpty, UICCSlotStateError, UICCSlotStateNotReady, UICCSlotStateOff, UICCSlotStateOffEmpty, UICCSlotStateUnknown, WWAN_UICCSLOT_STATE, WWAN_UICCSLOT_STATE enumeration [Network Drivers Starting with Windows Vista], _WWAN_UICCSLOT_STATE, netvista.wwan_uiccslot_state, wwan/UICCSlotStateActive, wwan/UICCSlotStateEmpty, wwan/UICCSlotStateError, wwan/UICCSlotStateNotReady, wwan/UICCSlotStateOff, wwan/UICCSlotStateOffEmpty, wwan/UICCSlotStateUnknown, wwan/WWAN_UICCSLOT_STATE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_UICCSLOT_STATE
+ - PWWAN_UICCSLOT_STATE
  - WWAN_UICCSLOT_STATE
 ---
 
@@ -101,3 +102,4 @@ The set of reported states is constrained by the capability of the slot hardware
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_slot_info">WWAN_SLOT_INFO</a>
+

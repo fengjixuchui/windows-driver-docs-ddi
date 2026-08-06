@@ -4,7 +4,6 @@ title: IOCTL_BIOMETRIC_GET_SUPPORTED_ALGORITHMS (winbio_ioctl.h)
 description: The IOCTL_BIOMETRIC_GET_SUPPORTED_ALGORITHMS IOCTL retrieves a list of cryptographic hash algorithms that are supported by the device. This IOCTL is optional.
 old-location: biometric\ioctl_biometric_get_supported_algorithms.htm
 tech.root: biometric
-ms.assetid: 0bc373a8-af60-419a-88e1-58888b88f24d
 ms.date: 02/20/2018
 keywords: ["IOCTL_BIOMETRIC_GET_SUPPORTED_ALGORITHMS IOCTL"]
 ms.keywords: IOCTL_BIOMETRIC_GET_SUPPORTED_ALGORITHMS, IOCTL_BIOMETRIC_GET_SUPPORTED_ALGORITHMS control, IOCTL_BIOMETRIC_GET_SUPPORTED_ALGORITHMS control code [Biometric Devices], biometric.ioctl_biometric_get_supported_algorithms, biometric_ref_64928d1a-978a-4bc9-8f4a-bac423c00133.xml, winbio_ioctl/IOCTL_BIOMETRIC_GET_SUPPORTED_ALGORITHMS
@@ -50,6 +49,8 @@ The IOCTL_BIOMETRIC_GET_SUPPORTED_ALGORITHMS IOCTL retrieves a list of cryptogra
 
 ## -ioctlparameters
 
+### -ioctl-major-code
+
 ### -input-buffer
 
 None.
@@ -64,7 +65,7 @@ The <b>AssociatedIrp</b>.<b>SystemBuffer</b> member points to a buffer that cont
 
 ### -output-buffer-length
 
-The smallest valid output buffer size is the size of DWORD.  If the driver receives an DWORD-sized output buffer, the driver should return the buffer size necessary for the requested operation.
+The smallest valid output buffer size is the size of DWORD.  If the driver receives a DWORD-sized output buffer, the driver should return the buffer size necessary for the requested operation.
 
 ### -in-out-buffer
 

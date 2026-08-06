@@ -4,7 +4,6 @@ title: _PHYSICAL_COUNTER_RESOURCE_LIST (ntddk.h)
 description: The PHYSICAL_COUNTER_RESOURCE_LIST structure describes an array of PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR structures.
 old-location: kernel\physical_counter_resource_list.htm
 tech.root: kernel
-ms.assetid: a8b22839-6a5d-48e2-a0e5-dae811d729ef
 ms.date: 04/30/2018
 keywords: ["PHYSICAL_COUNTER_RESOURCE_LIST structure"]
 ms.keywords: "*PPHYSICAL_COUNTER_RESOURCE_LIST, PHYSICAL_COUNTER_RESOURCE_LIST, PHYSICAL_COUNTER_RESOURCE_LIST structure [Kernel-Mode Driver Architecture], PPHYSICAL_COUNTER_RESOURCE_LIST, PPHYSICAL_COUNTER_RESOURCE_LIST structure pointer [Kernel-Mode Driver Architecture], _PHYSICAL_COUNTER_RESOURCE_LIST, kernel.physical_counter_resource_list, kstruct_c_17d0a58a-6ac5-4360-a481-d33f0942b521.xml, ntddk/PHYSICAL_COUNTER_RESOURCE_LIST, ntddk/PPHYSICAL_COUNTER_RESOURCE_LIST"
@@ -43,6 +42,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _PHYSICAL_COUNTER_RESOURCE_LIST
+ - PPHYSICAL_COUNTER_RESOURCE_LIST
  - PHYSICAL_COUNTER_RESOURCE_LIST
 ---
 
@@ -78,3 +79,4 @@ The <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-halallocatehardwarecou
 
 
 [PHYSICAL_COUNTER_RESOURCE_DESCRIPTOR](ns-ntddk-_physical_counter_resource_descriptor.md)
+

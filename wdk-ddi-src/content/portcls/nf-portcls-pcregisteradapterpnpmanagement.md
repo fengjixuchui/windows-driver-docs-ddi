@@ -4,7 +4,6 @@ title: PcRegisterAdapterPnpManagement function (portcls.h)
 description: The PcRegisterAdapterPnpManagement function registers the adapter's PnP-management interface with the PortCls system driver. It is used to support PnP rebalance.
 old-location: audio\pcregisteradapterpnpmanagement.htm
 tech.root: audio
-ms.assetid: DF597216-FB81-466C-871E-5E08C69B78DA
 ms.date: 05/08/2018
 keywords: ["PcRegisterAdapterPnpManagement function"]
 ms.keywords: PcRegisterAdapterPnPManagement, PcRegisterAdapterPnPManagement function [Audio Devices], PcRegisterAdapterPnpManagement, audio.pcregisteradapterpnpmanagement, portcls/PcRegisterAdapterPnPManagement
@@ -39,7 +38,7 @@ api_location:
  - Portcls.lib
  - Portcls.dll
 api_name:
- - PcRegisterAdapterPnPManagement
+ - PcRegisterAdapterPnpManagement
 ---
 
 # PcRegisterAdapterPnpManagement function
@@ -55,9 +54,9 @@ The  PcRegisterAdapterPnpManagement function registers the adapter's PnP-managem
 
 <p>Pointer to an adapter driver object's <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown"><b>IUnknown</b></a> interface. The PortCls system driver queries this object for its <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iadapterpnpmanagement">IAdapterPnpManagement</a> interface.</p>
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Specifies a pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
 
 ## -returns
@@ -85,3 +84,4 @@ For more information,  see <a href="/windows-hardware/drivers/audio/implement-pn
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-pcunregisteradapterpnpmanagement">PcUnregisterAdapterPnpManagement</a>
+

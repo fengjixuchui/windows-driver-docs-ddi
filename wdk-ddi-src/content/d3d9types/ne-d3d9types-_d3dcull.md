@@ -1,9 +1,9 @@
 ---
 UID: NE:d3d9types._D3DCULL
 title: _D3DCULL (d3d9types.h)
-description: 
-ms.assetid: f22fb406-d3b5-4965-9a5a-dbac6560e30e
+description: "Learn more about: _D3DCULL enumeration"
 ms.date: 10/19/2018
+tech.root: display
 keywords: ["D3DCULL enumeration"]
 ms.keywords: _D3DCULL, D3DCULL,
 req.header: d3d9types.h
@@ -31,6 +31,7 @@ api_location:
  - d3d9types.h
 api_name:
  - _D3DCULL
+ - D3DCULL
 dev_langs:
  - c++
 ---

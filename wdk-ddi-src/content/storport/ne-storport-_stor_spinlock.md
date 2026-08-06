@@ -1,17 +1,15 @@
 ---
 UID: NE:storport._STOR_SPINLOCK
-title: _STOR_SPINLOCK (storport.h)
-description: The STOR_SPINLOCK enumeration is used to specify the type of a spinlock.
-old-location: storage\stor_spinlock.htm
+title: STOR_SPINLOCK (storport.h)
+description: Learn more about the STOR_SPINLOCK enumeration.
 tech.root: storage
-ms.assetid: 73e5e994-4133-4651-bb94-1d21386be1cd
-ms.date: 03/29/2018
+ms.date: 02/28/2024
 keywords: ["STOR_SPINLOCK enumeration"]
 ms.keywords: DpcLock, InterruptLock, STOR_SPINLOCK, STOR_SPINLOCK enumeration [Storage Devices], StartIoLock, _STOR_SPINLOCK, storage.stor_spinlock, storport/DpcLock, storport/InterruptLock, storport/STOR_SPINLOCK, storport/StartIoLock, structs-general_53d45f74-68b2-4839-81c1-c93a2773f0d8.xml
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Windows
-req.target-min-winverclnt: 
+req.target-min-winverclnt:
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,17 +38,21 @@ api_type:
 api_location:
  - storport.h
 api_name:
+ - _STOR_SPINLOCK
  - STOR_SPINLOCK
 ---
 
-# _STOR_SPINLOCK enumeration
-
+# STOR_SPINLOCK enumeration
 
 ## -description
 
-The STOR_SPINLOCK enumeration is used to specify the type of a spinlock.
+The **STOR_SPINLOCK** enumeration is used to specify the type of a spinlock.
 
 ## -enum-fields
+
+### -field InvalidLock
+
+Indicates an invalid spinlock. This value should never be used.
 
 ### -field DpcLock
 
@@ -64,6 +66,21 @@ Indicates a StartIo spinlock.
 
 Indicates an Interrupt spinlock.
 
+### -field ThreadedDpcLock
+
+Indicates a threaded DPC spinlock.
+
+### -field DpcLevelLock
+
+Indicates a spinlock that is to be used when the IRQL level is already at DPC level.
+
+## -remarks
+
+[**StorPortAcquireSpinLockEx**](nf-storport-storportacquirespinlockex.md)
+supports all of the spinlock types. [**StorPortAcquireSpinLock**](nf-storport-storportacquirespinlock.md) only supports: **DpcLock**, **StartIoLock**, and **InterruptLock**.
+
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportacquirespinlock">StorPortAcquireSpinLock</a>
+[**StorPortAcquireSpinLock**](nf-storport-storportacquirespinlock.md)
+
+[**StorPortAcquireSpinLockEx**](nf-storport-storportacquirespinlockex.md)

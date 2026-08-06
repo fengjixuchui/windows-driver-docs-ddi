@@ -4,7 +4,6 @@ title: IPortWavePciStream::ReleaseMapping (portcls.h)
 description: The ReleaseMapping method releases a mapping that was obtained by a previous call to IPortWavePciStream::GetMapping.
 old-location: audio\iportwavepcistream_releasemapping.htm
 tech.root: audio
-ms.assetid: c4464fba-cc23-47d2-87d6-82b3eba8ddbe
 ms.date: 05/08/2018
 keywords: ["IPortWavePciStream::ReleaseMapping"]
 ms.keywords: IPortWavePciStream interface [Audio Devices],ReleaseMapping method, IPortWavePciStream.ReleaseMapping, IPortWavePciStream::ReleaseMapping, ReleaseMapping, ReleaseMapping method [Audio Devices], ReleaseMapping method [Audio Devices],IPortWavePciStream interface, audio.iportwavepcistream_releasemapping, audmp-routines_a4e274f7-02f8-4775-854f-befdc7dc6f03.xml, portcls/IPortWavePciStream::ReleaseMapping
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IPortWavePciStream.ReleaseMapping
+ - IPortWavePciStream::ReleaseMapping
 ---
 
 # IPortWavePciStream::ReleaseMapping
@@ -50,9 +49,9 @@ The <code>ReleaseMapping</code> method releases a mapping that was obtained by a
 
 ## -parameters
 
-### -param Tag 
+### -param Tag [in]
 
-[in]
+
 Specifies a tag value identifying the mapping that is to be released. For more information, see the following Remarks section.
 
 ## -returns
@@ -86,3 +85,4 @@ To avoid potential deadlocks, the miniport driver must avoid holding a spin lock
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasespinlock">KeReleaseSpinLock</a>
+

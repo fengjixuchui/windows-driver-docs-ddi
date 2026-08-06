@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelManager.UnregisterModelForTypeSignature
 title: IDataModelManager::UnregisterModelForTypeSignature (dbgmodel.h)
-description: The UnregisterModelForTypeSignature method undoes a prior call to the RegisterModelForTypeSignature method.
-ms.assetid: 8c924b81-7865-4aa3-9959-18b2c57255d0
+description: "The IDataModelManager::UnregisterModelForTypeSignature method undoes a prior call to the RegisterModelForTypeSignature method."
 ms.date: 07/19/2018
 keywords: ["IDataModelManager::UnregisterModelForTypeSignature"]
 ms.keywords: IDataModelManager::UnregisterModelForTypeSignature, UnregisterModelForTypeSignature, IDataModelManager.UnregisterModelForTypeSignature, IDataModelManager::UnregisterModelForTypeSignature, IDataModelManager.UnregisterModelForTypeSignature
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager.UnregisterModelForTypeSignature
+ - IDataModelManager::UnregisterModelForTypeSignature
 ---
 
 # IDataModelManager::UnregisterModelForTypeSignature

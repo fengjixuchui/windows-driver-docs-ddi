@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_EnumerateSlots
 title: RIL_EnumerateSlots function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_EnumerateSlots function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_enumerateslots.htm
 tech.root: netvista
-ms.assetid: 58df87d5-1e7b-4ec8-8e88-631bbd78757a
 ms.date: 05/02/2018
 keywords: ["RIL_EnumerateSlots function"]
 ms.keywords: RIL_EnumerateSlots, RIL_EnumerateSlots method [Network Drivers Starting with Windows Vista], netvista.ril_enumerateslots, rilapi/RIL_EnumerateSlots

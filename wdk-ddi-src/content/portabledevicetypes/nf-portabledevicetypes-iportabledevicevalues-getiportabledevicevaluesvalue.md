@@ -4,7 +4,6 @@ title: IPortableDeviceValues::GetIPortableDeviceValuesValue (portabledevicetypes
 description: Retrieves an IPortableDeviceValues value (type VT_UNKNOWN) that is specified by a key.
 old-location: wpddk\iportabledevicevalues_getiportabledevicevaluesvalue.htm
 tech.root: wpd_dk
-ms.assetid: f0ec918d-57a2-40a4-b7ca-878484fc46ac
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::GetIPortableDeviceValuesValue"]
 ms.keywords: GetIPortableDeviceValuesValue, GetIPortableDeviceValuesValue method, GetIPortableDeviceValuesValue method,IPortableDeviceValues interface, IPortableDeviceValues interface,GetIPortableDeviceValuesValue method, IPortableDeviceValues.GetIPortableDeviceValuesValue, IPortableDeviceValues::GetIPortableDeviceValuesValue, IPortableDeviceValuesGetIPortableDeviceValuesValue, portabledevicetypes/IPortableDeviceValues::GetIPortableDeviceValuesValue, wpddk.iportabledevicevalues_getiportabledevicevaluesvalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.GetIPortableDeviceValuesValue
+ - IPortableDeviceValues::GetIPortableDeviceValuesValue
 ---
 
 # IPortableDeviceValues::GetIPortableDeviceValuesValue
@@ -51,14 +50,14 @@ Retrieves an <b>IPortableDeviceValues</b> value (type VT_UNKNOWN) that is specif
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> key that specifies the item to retrieve.
 
-### -param ppValue 
+### -param ppValue [out]
 
-[out]
+
 Address of a variable that receives a pointer to the retrieved <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues">IPortableDeviceValues</a> interface. The caller is responsible for calling <b>Release</b> on the retrieved interface.
 
 ## -returns
@@ -116,3 +115,4 @@ None.
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-setiportabledevicevaluesvalue">IPortableDeviceValues::SetIPortableDeviceValuesValue</a>
+

@@ -4,7 +4,6 @@ title: FltIsIoRedirectionAllowedForOperation function (fltkernel.h)
 description: The FltIsIoRedirectionAllowedForOperation routine determines whether I/O can be redirected from the filter instance associated with the specified FLT_CALLBACK_DATA structure to the specified filter instance.
 old-location: ifsk\fltisioredirectionallowedforoperation.htm
 tech.root: ifsk
-ms.assetid: 601a155d-587f-47fc-960e-d1162eabd4b9
 ms.date: 04/16/2018
 keywords: ["FltIsIoRedirectionAllowedForOperation function"]
 ms.keywords: FltIsIoRedirectionAllowedForOperation, FltIsIoRedirectionAllowedForOperation routine [Installable File System Drivers], fltkernel/FltIsIoRedirectionAllowedForOperation, ifsk.fltisioredirectionallowedforoperation
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: FltMgr.lib
 req.dll: Fltmgr.sys
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,24 +49,24 @@ The <b>FltIsIoRedirectionAllowedForOperation</b> routine determines whether I/O 
 
 ## -parameters
 
-### -param Data 
+### -param Data [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data">FLT_CALLBACK_DATA</a> structure representing the I/O operation.
 
-### -param TargetInstance 
+### -param TargetInstance [in]
 
-[in]
+
 A filter instance on the target device stack.
 
-### -param RedirectionAllowedThisIo 
+### -param RedirectionAllowedThisIo [out]
 
-[out]
+
 A value of <b>TRUE</b> if this I/O can be redirected to the target device stack by changing the filter instance referenced.
 
-### -param RedirectionAllowedAllIo 
+### -param RedirectionAllowedAllIo [out, optional]
 
-[out, optional]
+
 This optional parameter has a value of <b>TRUE</b> if all I/O to the device stack to which the I/O operation is issued can be redirected to the target device by changing the filter instance referenced,  otherwise <b>FALSE</b>.
 
 ## -returns

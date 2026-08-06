@@ -4,7 +4,6 @@ title: KeBugCheck function (ntddk.h)
 description: The KeBugCheck routine brings down the system in a controlled manner when the caller discovers an unrecoverable inconsistency that would corrupt the system if the caller continued to run.
 old-location: kernel\kebugcheck.htm
 tech.root: kernel
-ms.assetid: 46337a5f-dc8a-42bc-a618-0d1440270f91
 ms.date: 04/30/2018
 keywords: ["KeBugCheck function"]
 ms.keywords: KeBugCheck, KeBugCheck routine [Kernel-Mode Driver Architecture], k105_0d6fece0-a301-44af-92b4-0ff735195c2b.xml, kernel.kebugcheck, ntddk/KeBugCheck
@@ -50,9 +49,9 @@ The <b>KeBugCheck</b> routine brings down the system in a controlled manner when
 
 ## -parameters
 
-### -param BugCheckCode 
+### -param BugCheckCode [in]
 
-[in]
+
 Specifies a value that indicates the reason for the bug check.
 
 ## -remarks
@@ -65,7 +64,7 @@ A driver or other kernel-mode component should call this routine only in cases o
 
 <b>KeBugCheck</b> can be useful in the early stages of developing a driver, or while it is undergoing testing. In these circumstances, the <i>BugCheckCode</i> passed to this routine should be distinct from those codes already in use by Windows or its drivers. For a list of these codes, see <a href="/windows-hardware/drivers/debugger/bug-check-code-reference2">Bug Check Codes</a>.
 
-However, even during driver development, this routine is of only limited utility, since it results in a complete system shutdown. A more effective debugging method is to attach a kernel debugger to the system and then use routines that send messages to the debugger or break into the debugger. For further information, see <a href="/windows-hardware/drivers/devtest/using-debugging-code-in-a-driver">Using Debugging Code in a Driver</a>.
+However, even during driver development, this routine is of only limited utility, since it results in a complete system shutdown. A more effective debugging method is to attach a kernel debugger to the system and then use routines that send messages to the debugger or break into the debugger. For further information, see <a href="/windows-hardware/drivers/debugger/getting-started-with-windbg--kernel-mode-">Get started with WinDbg (kernel-mode)</a>.
 
 When a bug check is unavoidable, most system components call <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kebugcheckex">KeBugCheckEx</a>, which provides more information about the cause of such an inconsistency than <b>KeBugCheck</b>.
 

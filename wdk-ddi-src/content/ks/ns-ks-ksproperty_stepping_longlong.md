@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_12
+UID: NS:ks.KSPROPERTY_STEPPING_LONGLONG
 title: KSPROPERTY_STEPPING_LONGLONG (ks.h)
 description: The KSPROPERTY_STEPPING_LONGLONG structure defines the valid range of values for a 64-bit property.
 old-location: stream\ksproperty_stepping_longlong.htm
 tech.root: stream
-ms.assetid: 14ec504e-baf6-441a-b908-2d8c051dd45a
 ms.date: 04/23/2018
 keywords: ["KSPROPERTY_STEPPING_LONGLONG structure"]
 ms.keywords: "*PKSPROPERTY_STEPPING_LONGLONG, KSPROPERTY_STEPPING_LONGLONG, KSPROPERTY_STEPPING_LONGLONG structure [Streaming Media Devices], PKSPROPERTY_STEPPING_LONGLONG, PKSPROPERTY_STEPPING_LONGLONG structure pointer [Streaming Media Devices], ks-struct_f7cc7036-e7b5-4765-bf2e-abd24f5f06a6.xml, ks/KSPROPERTY_STEPPING_LONGLONG, ks/PKSPROPERTY_STEPPING_LONGLONG, stream.ksproperty_stepping_longlong"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSPROPERTY_STEPPING_LONGLONG
  - KSPROPERTY_STEPPING_LONGLONG
 ---
 
@@ -75,3 +75,4 @@ For more information, see <a href="/windows-hardware/drivers/stream/ks-propertie
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_memberslist">KSPROPERTY_MEMBERSLIST</a>
+

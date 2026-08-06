@@ -1,11 +1,10 @@
 ---
 UID: NE:wudfddi_types._WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS
 title: _WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS (wudfddi_types.h)
-description: WDF_CALLBACK_CONSTRAINT enumeration
+description: This article describes the WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS enumeration.
 old-location: wdf\wdf_callback_constraint.htm
 tech.root: wdf
-ms.assetid: 118a9dcc-8dd4-454a-bab2-1558821781a7
-ms.date: 02/26/2018
+ms.date: 08/12/2022
 keywords: ["WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS enumeration"]
 ms.keywords: None, WDF_CALLBACK_CONSTRAINT, WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS, WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS enumeration, WdfDeviceLevel, WdfLevelReserved, _WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS, wdf.wdf_callback_constraint, wudfddi_types/None, wudfddi_types/WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS, wudfddi_types/WdfDeviceLevel, wudfddi_types/WdfLevelReserved
 req.header: wudfddi_types.h
@@ -40,11 +39,11 @@ api_type:
 api_location:
  - wudfddi_types.h
 api_name:
- - WDF_CALLBACK_CONSTRAINT
+ - _WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS
+ - WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS
 ---
 
 # _WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS enumeration (wudfddi_types.h)
-
 
 ## -description
 
@@ -52,21 +51,7 @@ api_name:
 
 ### -field IdleTimeoutDefaultConstant
 
-#### - None
-
-No callback functions into the driver are synchronized.  The driver must handle all synchronization.
-
-
-#### - WdfDeviceLevel
-
-All callback functions into the driver that are associated with the device are synchronized, including all callback functions that are associated with I/O queues. Only one event handler that is associated with the device can run at any given time.
-
-
-#### - WdfLevelReserved
-
-Reserved.
-
 ## -remarks
 
-Note that the above locking models apply only for I/O (that is, open, read, write, and device I/O control) operations and not for Plug and Play (PnP) and power management notifications.
-
+> [!NOTE]
+> The above locking models apply only for I/O (that is, open, read, write, and device I/O control) operations and not for Plug and Play (PnP) and power management notifications.

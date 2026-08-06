@@ -3,7 +3,6 @@ UID: NS:netadapter._NET_ADAPTER_DMA_CAPABILITIES
 title: _NET_ADAPTER_DMA_CAPABILITIES (netadapter.h)
 description: The NET_ADAPTER_DMA_CAPABILITIES structure describes the DMA capabilities of an adapter.
 tech.root: netvista
-ms.assetid: b0b5cd8b-807c-42d2-9f6b-4843f82c6309
 ms.date: 07/11/2018
 keywords: ["NET_ADAPTER_DMA_CAPABILITIES structure"]
 ms.keywords: _NET_ADAPTER_DMA_CAPABILITIES, *PNET_ADAPTER_DMA_CAPABILITIES, NET_ADAPTER_DMA_CAPABILITIES,
@@ -34,6 +33,7 @@ api_location:
  - netadapter.h
 api_name:
  - _NET_ADAPTER_DMA_CAPABILITIES
+ - NET_ADAPTER_DMA_CAPABILITIES
 ---
 
 # _NET_ADAPTER_DMA_CAPABILITIES structure
@@ -72,7 +72,7 @@ The preferred NUMA node to use when allocating memory. If this member is set to 
 
 Call [NET_ADAPTER_DMA_CAPABILITIES_INIT](nf-netadapter-net_adapter_dma_capabilities_init.md) to initialize this structure.
 
-This structure can be used either in the receive path, as a member of the [NET_ADAPTER_RX_CAPABILITIES](ns-netadapter-_net_adapter_rx_capabilities.md) structure, or in the transmit path as a member of the [NET_ADAPTER_TX_CAPABILITIES](nf-netadapter-net_adapter_tx_capabilities_init_for_dma.md) structure.
+This structure can be used either in the receive path, as a member of the [NET_ADAPTER_RX_CAPABILITIES](ns-netadapter-_net_adapter_rx_capabilities.md) structure, or in the transmit path as a member of the [NET_ADAPTER_TX_CAPABILITIES](ns-netadapter-_net_adapter_tx_capabilities.md) structure.
 
 ## -see-also
 
@@ -80,5 +80,5 @@ This structure can be used either in the receive path, as a member of the [NET_A
 
 [NET_ADAPTER_RX_CAPABILITIES](ns-netadapter-_net_adapter_rx_capabilities.md)
 
-[NET_ADAPTER_TX_CAPABILITIES](nf-netadapter-net_adapter_tx_capabilities_init_for_dma.md)
+[NET_ADAPTER_TX_CAPABILITIES](ns-netadapter-_net_adapter_tx_capabilities.md)
 

@@ -1,10 +1,9 @@
 ---
 UID: NS:1394._SPEED_MAP
 title: _SPEED_MAP (1394.h)
-description: The SPEED_MAP structure is stores a IEEE 1394 bus speed map.
+description: The SPEED_MAP structure is stores an IEEE 1394 bus speed map.
 old-location: ieee\speed_map.htm
 tech.root: IEEE
-ms.assetid: 52b2b97e-217b-445b-9c7a-093808f37aba
 ms.date: 02/15/2018
 keywords: ["SPEED_MAP structure"]
 ms.keywords: "*PSPEED_MAP, 1394/PSPEED_MAP, 1394/SPEED_MAP, 1394stct_0df32f88-2279-4df2-a7f3-856ddfdacb56.xml, IEEE.speed_map, PSPEED_MAP, PSPEED_MAP structure pointer [Buses], SPEED_MAP, SPEED_MAP structure [Buses], _SPEED_MAP"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _SPEED_MAP
+ - PSPEED_MAP
  - SPEED_MAP
 ---
 
@@ -50,7 +51,7 @@ api_name:
 
 ## -description
 
-The SPEED_MAP structure is stores a IEEE 1394 bus speed map.
+The SPEED_MAP structure is stores an IEEE 1394 bus speed map.
 
 ## -struct-fields
 
@@ -82,5 +83,5 @@ The SPEED_MAP structure describes the maximum speed that devices on the bus can 
 
 ## -see-also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537646">REQUEST_GET_SPEED_TOPOLOGY_MAPS</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_GET_SPEED_TOPOLOGY_MAPS</a>
 

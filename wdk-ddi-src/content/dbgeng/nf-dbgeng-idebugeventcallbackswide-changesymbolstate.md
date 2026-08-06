@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugEventCallbacksWide.ChangeSymbolState
 title: IDebugEventCallbacksWide::ChangeSymbolState (dbgeng.h)
-description: The ChangeSymbolState callback method is called by the engine when the symbol state changes.
+description: The ChangeSymbolState callback method is called by the engine when the symbol state changes. This method belongs to the IDebugEventCallbacksWide interface.
 old-location: debugger\idebugeventcallbackswide_changesymbolstate.htm
 tech.root: debugger
-ms.assetid: ea331612-5c48-4320-a658-101c3d93e7be
 ms.date: 05/03/2018
 keywords: ["IDebugEventCallbacksWide::ChangeSymbolState"]
 ms.keywords: ChangeSymbolState, ChangeSymbolState method [Windows Debugging], ChangeSymbolState method [Windows Debugging],IDebugEventCallbacksWide interface, IDebugEventCallbacksWide interface [Windows Debugging],ChangeSymbolState method, IDebugEventCallbacksWide.ChangeSymbolState, IDebugEventCallbacksWide::ChangeSymbolState, dbgeng/IDebugEventCallbacksWide::ChangeSymbolState, debugger.idebugeventcallbackswide_changesymbolstate
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugEventCallbacksWide.ChangeSymbolState
+ - IDebugEventCallbacksWide::ChangeSymbolState
 ---
 
 # IDebugEventCallbacksWide::ChangeSymbolState
@@ -50,9 +49,9 @@ The <b>ChangeSymbolState</b> callback method is called by the engine when the sy
 
 ## -parameters
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies a bit-set indicating the nature of the change to the symbol state.  The following bit flags might be set.
 
 <table>
@@ -122,9 +121,9 @@ The type options have changed.
 </tr>
 </table>
 
-### -param Argument 
+### -param Argument [in]
 
-[in]
+
 Provides additional information about the change to the symbol state.   If more than one bit flag is set in the <i>Flags</i> parameter, the <i>Argument</i> parameter is not used.  Otherwise, the value of <i>Argument</i> depends on the value of <i>Flags</i>:
 
 
@@ -174,3 +173,4 @@ The return value is ignored by the engine unless it indicates a remote procedure
 This method is only called by the engine if the DEBUG_EVENT_CHANGE_SYMBOL_STATE flag is set in the mask returned by <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugeventcallbackswide-getinterestmask">IDebugEventCallbacksWide::GetInterestMask</a>.
 
 For more information about handling events, see <a href="/windows-hardware/drivers/debugger/monitoring-events">Monitoring Events</a>.
+

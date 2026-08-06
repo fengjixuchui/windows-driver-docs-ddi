@@ -1,8 +1,7 @@
 ---
 UID: NN:dbgmodel.IDynamicConceptProviderConcept
 title: IDynamicConceptProviderConcept (dbgmodel.h)
-description: If a client wants to take over the storage of keys and values for an object, it can implement this concept interface.
-ms.assetid: b3cb8b59-ea20-4db7-badc-25dac000bcaa
+description: The IDynamicConceptProviderConcept (dbgmodel.h) interface provides methods that allow a client to take over the storage of keys and values for an object.
 ms.date: 07/13/2018
 keywords: ["IDynamicConceptProviderConcept interface"]
 req.header: dbgmodel.h
@@ -45,7 +44,7 @@ The object is a dynamic provider of keys and wishes to take over all key queries
 
 ## -inheritance
 
-IDynamicConceptProviderConcept interits from IUnknown.
+IDynamicConceptProviderConcept inherits from IUnknown.
 
 ## -remarks
 

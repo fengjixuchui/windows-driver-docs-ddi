@@ -4,7 +4,6 @@ title: UDECX_WDF_DEVICE_CONFIG_INIT function (udecxwdfdevice.h)
 description: Initializes a UDECX_WDF_DEVICE_CONFIG structure.
 old-location: buses\udecx_wdf_device_config_init.htm
 tech.root: usbref
-ms.assetid: EC26EDCA-1C9E-4D06-A970-71FB96FEB0DF
 ms.date: 05/07/2018
 keywords: ["UDECX_WDF_DEVICE_CONFIG_INIT function"]
 ms.keywords: UDECX_WDF_DEVICE_CONFIG_INIT, UDECX_WDF_DEVICE_CONFIG_INIT function [Buses], buses.udecx_wdf_device_config_init, udecxwdfdevice/UDECX_WDF_DEVICE_CONFIG_INIT
@@ -51,14 +50,14 @@ Initializes a <a href="/windows-hardware/drivers/ddi/udecxwdfdevice/ns-udecxwdfd
 
 ## -parameters
 
-### -param Config 
+### -param Config [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/udecxwdfdevice/ns-udecxwdfdevice-_udecx_wdf_device_config">UDECX_WDF_DEVICE_CONFIG</a> structure to initialize.
 
-### -param EvtUdecxWdfDeviceQueryUsbCapability 
+### -param EvtUdecxWdfDeviceQueryUsbCapability [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/udecxwdfdevice/nc-udecxwdfdevice-evt_udecx_wdf_device_query_usb_capability">EVT_UDECX_WDF_DEVICE_QUERY_USB_CAPABILITY</a> callback function.
 
 ## -see-also

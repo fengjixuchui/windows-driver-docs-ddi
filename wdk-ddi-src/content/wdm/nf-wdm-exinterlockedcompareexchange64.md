@@ -4,7 +4,6 @@ title: ExInterlockedCompareExchange64 macro (wdm.h)
 description: The ExInterlockedCompareExchange64 routine compares one integer variable to another and, if they are equal, sets the first variable to a caller-supplied value.
 old-location: kernel\exinterlockedcompareexchange64.htm
 tech.root: kernel
-ms.assetid: 7d13ca70-e05a-49e0-8dd8-5ab47b4d8169
 ms.date: 04/30/2018
 keywords: ["ExInterlockedCompareExchange64 macro"]
 ms.keywords: ExInterlockedCompareExchange64, ExInterlockedCompareExchange64 routine [Kernel-Mode Driver Architecture], k102_424c24f9-3965-40fd-b02b-f9bf1f7df4ec.xml, kernel.exinterlockedcompareexchange64, wdm/ExInterlockedCompareExchange64
@@ -50,23 +49,23 @@ The <b>ExInterlockedCompareExchange64</b> routine compares one integer variable 
 
 ## -parameters
 
-### -param Destination 
+### -param Destination [in, out]
 
-[in, out]
+
 A pointer to an integer that will be compared and possibly replaced.
 
-### -param Exchange 
+### -param Exchange [in]
 
-[in]
+
 A pointer to an integer that will replace the one at <i>Destination</i> if the comparison results in equality.
 
 ### -param Comperand
 
 A pointer to an integer with which the value at <i>Destination</i> will be compared.
 
-### -param Lock 
+### -param Lock [in]
 
-[in]
+
 A pointer to a caller-allocated spin-lock that is used if the host system does not support an 8-byte atomic compare-and-exchange operation.
 
 ## -remarks

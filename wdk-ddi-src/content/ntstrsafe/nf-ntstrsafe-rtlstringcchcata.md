@@ -4,7 +4,6 @@ title: RtlStringCchCatA function (ntstrsafe.h)
 description: The RtlStringCchCatW and RtlStringCchCatA functions concatenate two character-counted strings.
 old-location: kernel\rtlstringcchcat.htm
 tech.root: kernel
-ms.assetid: 4d2d0c14-a311-4235-9ceb-4b703ef602fe
 ms.date: 04/30/2018
 keywords: ["RtlStringCchCatA function"]
 ms.keywords: RtlStringCchCat, RtlStringCchCatA, RtlStringCchCatW, RtlStringCchCatW function [Kernel-Mode Driver Architecture], kernel.rtlstringcchcat, ntstrsafe/RtlStringCchCatA, ntstrsafe/RtlStringCchCatW, safestrings_03a0e306-3b4e-4808-b257-a8327b688a08.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -39,9 +38,7 @@ api_location:
  - Ntstrsafe.lib
  - Ntstrsafe.dll
 api_name:
- - RtlStringCchCatW
  - RtlStringCchCatA
- - RtlStringCchCatW
 ---
 
 # RtlStringCchCatA function
@@ -53,19 +50,19 @@ The <b>RtlStringCchCatW</b> and <b>RtlStringCchCatA</b> functions concatenate tw
 
 ## -parameters
 
-### -param pszDest 
+### -param pszDest [in, out]
 
-[in, out]
+
 A pointer to a buffer which, on input, contains a null-terminated string to which <i>pszSrc</i> will be concatenated. On output, this is the destination buffer that contains the entire resultant string. The string at <i>pszSrc</i> is added to the end of the string at <i>pszDest</i> and terminated with a null character.
 
-### -param cchDest 
+### -param cchDest [in]
 
-[in]
+
 The size, in characters, of the destination buffer. The maximum number of characters allowed is NTSTRSAFE_MAX_CCH.
 
-### -param pszSrc 
+### -param pszSrc [in]
 
-[in]
+
 A pointer to a null-terminated string. This string will be concatenated to the end of the string that is contained in the buffer at <i>pszDest</i>.
 
 ## -returns
@@ -193,3 +190,4 @@ For more information about the safe string functions, see <a href="/windows-hard
 
 
 <a href="/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcchcatna">RtlStringCchCatN</a>
+

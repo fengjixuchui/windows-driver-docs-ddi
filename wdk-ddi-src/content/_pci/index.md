@@ -1,13 +1,10 @@
 ---
+description: "Learn more about: PCI"
 UID: TP:pci
-title: PCI
-ms.assetid: 8ff09fc0-6843-3e40-9d39-7509ce88abbc
-ms.date: 05/09/2018
+title: PCI overview
+ms.date: 03/23/2022
 keywords: ["PCI"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 ---
 
 # PCI
@@ -17,5 +14,3 @@ ms.topic: portal
 Overview of the Pci technology.
 
 The Pci technology is not associated with any headers.
-
-

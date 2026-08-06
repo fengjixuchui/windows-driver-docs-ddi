@@ -4,7 +4,6 @@ title: EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_COPY (wdfchildlist.h)
 description: A driver's EvtChildListAddressDescriptionCopy event callback function copies a child address description from one specified location to another.
 old-location: wdf\evtchildlistaddressdescriptioncopy.htm
 tech.root: wdf
-ms.assetid: b73ec39c-8d93-4992-8791-5070a088701a
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_COPY callback function"]
 ms.keywords: DFDeviceObjectChildListRef_9ee2403b-4dcb-41cc-9f53-9e96f6f41c4f.xml, EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_COPY, EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_COPY callback, EvtChildListAddressDescriptionCopy, EvtChildListAddressDescriptionCopy callback function, kmdf.evtchildlistaddressdescriptioncopy, wdf.evtchildlistaddressdescriptioncopy, wdfchildlist/EvtChildListAddressDescriptionCopy
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfChildlist.h
 api_name:
- - EvtChildListAddressDescriptionCopy
+ - EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_COPY
 ---
 
 # EVT_WDF_CHILD_LIST_ADDRESS_DESCRIPTION_COPY callback function
@@ -52,19 +51,19 @@ A driver's <i>EvtChildListAddressDescriptionCopy</i> event callback function cop
 
 ## -parameters
 
-### -param ChildList 
+### -param ChildList [in]
 
-[in]
+
 A handle to a framework child-list object.
 
-### -param SourceAddressDescription 
+### -param SourceAddressDescription [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_address_description_header">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a> structure that identifies the source location of the child address description.
 
-### -param DestinationAddressDescription 
+### -param DestinationAddressDescription [out]
 
-[out]
+
 A pointer to a WDF_CHILD_ADDRESS_DESCRIPTION_HEADER structure that identifies the destination location of the child address description.
 
 ## -remarks
@@ -156,3 +155,4 @@ For more information about dynamic enumeration, see <a href="/windows-hardware/d
 
 
 <a href="/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitsetdefaultchildlistconfig">WdfFdoInitSetDefaultChildListConfig</a>
+

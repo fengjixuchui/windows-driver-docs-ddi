@@ -4,7 +4,6 @@ title: _D3DDDIARG_CREATELIGHT (d3dumddi.h)
 description: The D3DDDIARG_CREATELIGHT structure contains the index into the light array.
 old-location: display\d3dddiarg_createlight.htm
 tech.root: display
-ms.assetid: 14dcff4a-3295-435b-a1b2-f3aa15117673
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_CREATELIGHT structure"]
 ms.keywords: D3DDDIARG_CREATELIGHT, D3DDDIARG_CREATELIGHT structure [Display Devices], UMDisplayDriver_param_Structs_683ae423-2e77-49e2-8028-3980a2f1a32d.xml, _D3DDDIARG_CREATELIGHT, d3dumddi/D3DDDIARG_CREATELIGHT, display.d3dddiarg_createlight
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_CREATELIGHT
  - D3DDDIARG_CREATELIGHT
 ---
 
@@ -52,10 +52,11 @@ The D3DDDIARG_CREATELIGHT structure contains the index into the light array.
 
 ## -struct-fields
 
-### -field Index
+### -field Index [in]
 
-[in] The index of the light to create.
+The index of the light to create.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createlight">CreateLight</a>
+

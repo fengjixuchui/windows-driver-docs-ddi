@@ -4,7 +4,6 @@ title: _RemoveTarget_IN (hbapiwmi.h)
 description: The RemoveTarget_IN structure is used by a WMI client to deliver input parameter data to the RemoveTarget WMI method.
 old-location: storage\removetarget_in.htm
 tech.root: storage
-ms.assetid: 54fcbb64-09ce-4f18-963b-fee2627d4231
 ms.date: 03/29/2018
 keywords: ["RemoveTarget_IN structure"]
 ms.keywords: "*PRemoveTarget_IN, PRemoveTarget_IN, PRemoveTarget_IN structure pointer [Storage Devices], RemoveTarget_IN, RemoveTarget_IN structure [Storage Devices], _RemoveTarget_IN, hbapiwmi/PRemoveTarget_IN, hbapiwmi/RemoveTarget_IN, storage.removetarget_in, structs-Fibre_e284d48f-3a57-449f-8227-2e8637118dcd.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hbapiwmi.h
 api_name:
+ - _RemoveTarget_IN
+ - PRemoveTarget_IN
  - RemoveTarget_IN
 ---
 
@@ -73,3 +74,4 @@ The WMI tool suite generates a declaration of the RemoveTarget_IN structure in <
 ## -see-also
 
 <a href="/windows-hardware/drivers/storage/removetarget">RemoveTarget</a>
+

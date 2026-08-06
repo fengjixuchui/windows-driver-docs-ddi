@@ -1,10 +1,9 @@
 ---
 UID: NS:bdatypes._BDA_ISDBCAS_RESPONSEDATA
 title: _BDA_ISDBCAS_RESPONSEDATA (bdatypes.h)
-description: 
+description: "Learn more about: _BDA_ISDBCAS_RESPONSEDATA structure"
 old-location: stream\bda_isdbcas_responsedata.htm
 tech.root: stream
-ms.assetid: 70BD9007-6CA4-49EC-8A30-3544FE62C18E
 ms.date: 04/23/2018
 keywords: ["BDA_ISDBCAS_RESPONSEDATA structure"]
 ms.keywords: "*PBDA_ISDBCAS_RESPONSEDATA, BDA_ISDBCAS_RESPONSEDATA, BDA_ISDBCAS_RESPONSEDATA structure [Streaming Media Devices], PBDA_ISDBCAS_RESPONSEDATA, PBDA_ISDBCAS_RESPONSEDATA structure pointer [Streaming Media Devices], _BDA_ISDBCAS_RESPONSEDATA, bdatypes/BDA_ISDBCAS_RESPONSEDATA, bdatypes/PBDA_ISDBCAS_RESPONSEDATA, stream.bda_isdbcas_responsedata"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Bdatypes.h
 api_name:
+ - _BDA_ISDBCAS_RESPONSEDATA
+ - PBDA_ISDBCAS_RESPONSEDATA
  - BDA_ISDBCAS_RESPONSEDATA
 ---
 

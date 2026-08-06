@@ -4,7 +4,6 @@ title: IDebugFAEntryTags::IsValidTagToSet (extsfns.h)
 description: The IsValidTagToSet method determines whether it is OK to set the data of a specified tag.
 old-location: debugger\idebugfaentrytags_isvalidtagtoset.htm
 tech.root: debugger
-ms.assetid: 83B5C54F-182B-4D2F-8ED2-7A0B529F1D2E
 ms.date: 05/03/2018
 keywords: ["IDebugFAEntryTags::IsValidTagToSet"]
 ms.keywords: IDebugFAEntryTags interface [Windows Debugging],IsValidTagToSet method, IDebugFAEntryTags.IsValidTagToSet, IDebugFAEntryTags::IsValidTagToSet, IsValidTagToSet, IsValidTagToSet method [Windows Debugging], IsValidTagToSet method [Windows Debugging],IDebugFAEntryTags interface, debugger.idebugfaentrytags_isvalidtagtoset, extsfns/IDebugFAEntryTags::IsValidTagToSet
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - extsfns.h
 api_name:
- - IDebugFAEntryTags.IsValidTagToSet
+ - IDebugFAEntryTags::IsValidTagToSet
 ---
 
 # IDebugFAEntryTags::IsValidTagToSet
@@ -73,3 +72,4 @@ This method returns TRUE if it is OK to set the data of the specified tag. Other
 
 
 <a href="/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin">_EFN_Analyze</a>
+

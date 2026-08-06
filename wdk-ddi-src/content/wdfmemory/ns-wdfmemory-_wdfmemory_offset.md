@@ -4,7 +4,6 @@ title: _WDFMEMORY_OFFSET (wdfmemory.h)
 description: The WDFMEMORY_OFFSET structure identifies a subsection of a memory object's buffer.
 old-location: wdf\wdfmemory_offset.htm
 tech.root: wdf
-ms.assetid: ca891a21-e7ab-4230-bfc4-adfdb413838b
 ms.date: 02/26/2018
 keywords: ["WDFMEMORY_OFFSET structure"]
 ms.keywords: "*PWDFMEMORY_OFFSET, DFMemoryObjectRef_d6ea5bd1-f672-4624-9663-f1e5f70eb8b2.xml, PWDFMEMORY_OFFSET, PWDFMEMORY_OFFSET structure pointer, WDFMEMORY_OFFSET, WDFMEMORY_OFFSET structure, _WDFMEMORY_OFFSET, kmdf.wdfmemory_offset, wdf.wdfmemory_offset, wdfmemory/PWDFMEMORY_OFFSET, wdfmemory/WDFMEMORY_OFFSET"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdfmemory.h
 api_name:
+ - _WDFMEMORY_OFFSET
+ - PWDFMEMORY_OFFSET
  - WDFMEMORY_OFFSET
 ---
 
@@ -71,3 +72,4 @@ The <b>WDFMEMORY_OFFSET</b> structure is used as a member of the <a href="/windo
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfmemory/ns-wdfmemory-_wdf_memory_descriptor">WDF_MEMORY_DESCRIPTOR</a>
+

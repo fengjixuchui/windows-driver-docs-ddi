@@ -1,10 +1,9 @@
 ---
 UID: NS:wdm._PCI_CAPABILITIES_HEADER
 title: _PCI_CAPABILITIES_HEADER (wdm.h)
-description: The PCI_CAPABILITIES_HEADER structure defines a header that is present in every PCI capability structure.
+description: The _PCI_CAPABILITIES_HEADER structure (wdm.h) defines a header that is present in every PCI capability structure.
 old-location: pci\pci_capabilities_header.htm
 tech.root: PCI
-ms.assetid: 6a2ee9be-03bc-436d-91c7-f00222911b19
 ms.date: 02/24/2018
 keywords: ["PCI_CAPABILITIES_HEADER structure"]
 ms.keywords: "*PPCI_CAPABILITIES_HEADER, PCI.pci_capabilities_header, PCI_CAPABILITIES_HEADER, PCI_CAPABILITIES_HEADER structure [Buses], PPCI_CAPABILITIES_HEADER, PPCI_CAPABILITIES_HEADER structure pointer [Buses], _PCI_CAPABILITIES_HEADER, pci_struct_4e7e5552-8a1b-4081-9197-df863319b01d.xml, wdm/PCI_CAPABILITIES_HEADER, wdm/PPCI_CAPABILITIES_HEADER"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: PASSIVE_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: PCI_CAPABILITIES_HEADER, *PPCI_CAPABILITIES_HEADER
-req.product: Windows 10 or later.
 f1_keywords:
  - _PCI_CAPABILITIES_HEADER
  - wdm/_PCI_CAPABILITIES_HEADER
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _PCI_CAPABILITIES_HEADER
+ - PPCI_CAPABILITIES_HEADER
  - PCI_CAPABILITIES_HEADER
 ---
 
@@ -264,3 +264,4 @@ All PCI Capability structures have the header described by PCI_CAPABILITIES_HEAD
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_pci_pmcsr_bse">PCI_PMCSR_BSE</a>
+

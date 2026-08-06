@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._WHEAP_CLEARED_POISON_EVENT
 title: WHEAP_CLEARED_POISON_EVENT
-description: 
-tech.root: 
-ms.assetid: 77b44885-a7c4-4aca-ac5e-e4da87ecc90b
+description: "Learn more about: WHEAP_CLEARED_POISON_EVENT structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEAP_CLEARED_POISON_EVENT structure"]
 ms.keywords: WHEAP_CLEARED_POISON_EVENT, WHEAP_CLEARED_POISON_EVENT, *PWHEAP_CLEARED_POISON_EVENT,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEAP_CLEARED_POISON_EVENT
+ - PWHEAP_CLEARED_POISON_EVENT
  - WHEAP_CLEARED_POISON_EVENT
-product:
- - Windows
 ---
 
 # WHEAP_CLEARED_POISON_EVENT structure

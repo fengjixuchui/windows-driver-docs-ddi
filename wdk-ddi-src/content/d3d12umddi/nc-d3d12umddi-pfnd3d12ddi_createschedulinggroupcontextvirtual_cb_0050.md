@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_CREATESCHEDULINGGROUPCONTEXTVIRTUAL_CB_0050
 title: PFND3D12DDI_CREATESCHEDULINGGROUPCONTEXTVIRTUAL_CB_0050 (d3d12umddi.h)
 description: Creates a virtual context associated with a scheduling group.
-ms.assetid: 2f9548d8-0cde-42f4-9eee-ce1af049265b
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CREATESCHEDULINGGROUPCONTEXTVIRTUAL_CB_0050 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CREATESCHEDULINGGROUPCONTEXTVIRTUAL_CB_0050
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -55,7 +52,7 @@ Creates a virtual context associated with a scheduling group.
 
 A D3D12DDI_HRTSCHEDULINGGROUP_0050 runtime handle type that represents the contexts associated with a hardware scheduling group.
 
-### -param Arg2
+### -param unnamedParam2
 
 A pointer to a [D3DDDICB_CREATECONTEXTVIRTUAL](../d3dumddi/ns-d3dumddi-_d3dddicb_createcontextvirtual.md) structure that describes the context to create.
 

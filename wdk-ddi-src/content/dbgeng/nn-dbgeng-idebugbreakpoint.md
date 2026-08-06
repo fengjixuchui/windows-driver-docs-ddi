@@ -4,7 +4,6 @@ title: IDebugBreakpoint (dbgeng.h)
 description: IDebugBreakpoint interface
 old-location: debugger\idebugbreakpoint.htm
 tech.root: debugger
-ms.assetid: ad4bcabb-304e-4427-9b0d-2e22429e8cdd
 ms.date: 05/03/2018
 keywords: ["IDebugBreakpoint interface"]
 ms.keywords: ComOther_93345db9-13c0-4b46-be4a-d3fbb6039cc7.xml, IDebugBreakpoint, IDebugBreakpoint interface [Windows Debugging], IDebugBreakpoint interface [Windows Debugging],described, dbgeng/IDebugBreakpoint, debugger.idebugbreakpoint
@@ -48,10 +47,8 @@ api_name:
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugBreakpoint</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IDebugBreakpoint</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IDebugBreakpoint</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IDebugBreakpoint</b> also has these types of members:
+
 
 ## -remarks
 

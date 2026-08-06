@@ -1,17 +1,16 @@
 ---
 UID: NS:storport._STOR_CRYPTO_CAPABILITY
-title: _STOR_CRYPTO_CAPABILITY (storport.h)
-description: Reserved for system use.
+title: STOR_CRYPTO_CAPABILITY (storport.h)
+description: "Microsoft reserves the STOR_CRYPTO_CAPABILITY structure for internal use only. Don't use this structure in your code."
 old-location: storage\stor_crypto_capability.htm
 tech.root: storage
-ms.assetid: AC8EBE07-92D6-4985-A575-8AD3321D29FB
-ms.date: 03/29/2018
+ms.date: 03/26/2024
 keywords: ["STOR_CRYPTO_CAPABILITY structure"]
 ms.keywords: "*PSTOR_CRYPTO_CAPABILITY, PSTOR_CRYPTO_CAPABILITY, PSTOR_CRYPTO_CAPABILITY structure pointer [Storage Devices], STOR_CRYPTO_CAPABILITY, STOR_CRYPTO_CAPABILITY structure [Storage Devices], _STOR_CRYPTO_CAPABILITY, storage.stor_crypto_capability, storport/PSTOR_CRYPTO_CAPABILITY, storport/STOR_CRYPTO_CAPABILITY"
 req.header: storport.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,11 +41,12 @@ api_type:
 api_location:
  - Storport.h
 api_name:
+ - _STOR_CRYPTO_CAPABILITY
+ - PSTOR_CRYPTO_CAPABILITY
  - STOR_CRYPTO_CAPABILITY
 ---
 
-# _STOR_CRYPTO_CAPABILITY structure
-
+# STOR_CRYPTO_CAPABILITY structure
 
 ## -description
 
@@ -54,3 +54,50 @@ Reserved for system use.
 
 ## -struct-fields
 
+### -field Version
+
+Reserved for system use.
+
+### -field Size
+
+Reserved for system use.
+
+### -field CryptoCapabilityIndex
+
+Reserved for system use.
+
+### -field DataUnitSizeBitmask
+
+Reserved for system use.
+
+### -field AlgorithmId
+
+Reserved for system use.
+
+### -field KeySize
+
+Reserved for system use.
+
+### -field MaxIVBitSize
+
+Reserved for system use.
+
+### -field Reserved
+
+Reserved for system use.
+
+### -field SecurityComplianceBitmask
+
+Reserved for system use.
+
+### -field SecurityComplianceBitmask.FIPS
+
+Reserved for system use.
+
+### -field SecurityComplianceBitmask.Reserved
+
+Reserved for system use.
+
+### -field SecurityComplianceBitmask.AsUchar
+
+Reserved for system use.

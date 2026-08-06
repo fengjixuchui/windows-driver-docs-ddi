@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILCLOSEUICCLOGICALCHANNELPARAMS
 title: RILCLOSEUICCLOGICALCHANNELPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILCLOSEUICCLOGICALCHANNELPARAMS structure in your code."
 old-location: netvista\rilcloseuicclogicalchannelparams.htm
 tech.root: netvista
-ms.assetid: 0c06bcd7-d475-40b8-b997-fe65047db331
 ms.date: 05/02/2018
 keywords: ["RILCLOSEUICCLOGICALCHANNELPARAMS structure"]
 ms.keywords: "*LPRILCLOSEUICCLOGICALCHANNELPARAMS, RILCLOSEUICCLOGICALCHANNELPARAMS, RILCLOSEUICCLOGICALCHANNELPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilcloseuicclogicalchannelparams, ntddrilapitypes/RILCLOSEUICCLOGICALCHANNELPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILCLOSEUICCLOGICALCHANNELPARAMS
+ - LPRILCLOSEUICCLOGICALCHANNELPARAMS
 ---
 
 # RILCLOSEUICCLOGICALCHANNELPARAMS structure (ntddrilapitypes.h)

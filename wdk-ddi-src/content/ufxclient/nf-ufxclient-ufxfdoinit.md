@@ -4,7 +4,6 @@ title: UfxFdoInit function (ufxclient.h)
 description: Initializes the WDFDEVICE_INIT structure that the client driver subsequently provides when it calls WdfDeviceCreate.
 old-location: buses\ufxfdoinit.htm
 tech.root: usbref
-ms.assetid: 11CDA6DA-6B26-41BC-8F0B-2F18FC03B3C2
 ms.date: 05/07/2018
 keywords: ["UfxFdoInit function"]
 ms.keywords: UfxFdoInit, UfxFdoInit method [Buses], buses.ufxfdoinit, ufxclient/UfxFdoInit
@@ -50,19 +49,19 @@ Initializes the WDFDEVICE_INIT structure that the client driver subsequently pro
 
 ## -parameters
 
-### -param WdfDriver 
+### -param WdfDriver [in]
 
-[in]
+
 A handle to the driver's WDF driver object that the driver obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate">WdfDriverCreate</a> or <a href="/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfgetdriver">WdfGetDriver</a>.
 
-### -param DeviceInit 
+### -param DeviceInit [in, out]
 
-[in, out]
+
 A pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
-### -param FdoAttributes 
+### -param FdoAttributes [in, out]
 
-[in, out]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that describes object attributes for the
 
 ## -returns

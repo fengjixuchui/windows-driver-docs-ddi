@@ -2,9 +2,8 @@
 UID: NF:ntddk.WheaRemoveErrorSourceDeviceDriver
 title: WheaRemoveErrorSourceDeviceDriver function
 description: To remove a previously added error source, a device driver calls WheaRemoveErrorSourceDeviceDriver.
-tech.root: 
-ms.assetid: 9b631fc8-da91-4d04-b84f-b9c40497db55
-ms.date: 04/28/2020
+tech.root: whea
+ms.date: 04/28/2025
 keywords: ["WheaRemoveErrorSourceDeviceDriver function"]
 ms.keywords: WheaRemoveErrorSourceDeviceDriver
 req.header: ntddk.h
@@ -25,7 +24,6 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 targetos: Windows
-ms.custom: 19H1
 f1_keywords:
  - WheaRemoveErrorSourceDeviceDriver
  - ntddk/WheaRemoveErrorSourceDeviceDriver
@@ -37,12 +35,7 @@ api_location:
  - ntddk.h
 api_name:
  - WheaRemoveErrorSourceDeviceDriver
-product:
- - Windows
 ---
-
-# WheaRemoveErrorSourceDeviceDriver function
-
 
 ## -description
 
@@ -69,6 +62,3 @@ For more info, see [Using WHEA on Windows 10](/windows-hardware/drivers/whea/usi
 ## -see-also
 
 [**WheaAddErrorSourceDeviceDriver**](nf-ntddk-wheaadderrorsourcedevicedriver.md)
-
-[**WheaReportHwErrorDeviceDriver**](nf-ntddk-whearemoveerrorsourcedevicedriver.md)
-

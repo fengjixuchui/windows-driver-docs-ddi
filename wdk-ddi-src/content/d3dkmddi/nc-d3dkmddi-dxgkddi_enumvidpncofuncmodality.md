@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_ENUMVIDPNCOFUNCMODALITY
 title: DXGKDDI_ENUMVIDPNCOFUNCMODALITY (d3dkmddi.h)
 description: The DxgkDdiEnumVidPnCofuncModality function makes the source and target modes sets of a VidPN cofunctional with the VidPN's topology and the modes that have already been pinned.
 old-location: display\dxgkddienumvidpncofuncmodality.htm
-ms.assetid: 6dda82bd-1a43-4ffe-b398-a9f8cee6d1c1
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_ENUMVIDPNCOFUNCMODALITY callback function"]
 ms.keywords: DXGKDDI_ENUMVIDPNCOFUNCMODALITY, DXGKDDI_ENUMVIDPNCOFUNCMODALITY callback, DmFunctions_e8c49ebf-a4af-4a36-a32b-0ab6874e660a.xml, DxgkDdiEnumVidPnCofuncModality, DxgkDdiEnumVidPnCofuncModality callback function [Display Devices], d3dkmddi/DxgkDdiEnumVidPnCofuncModality, display.dxgkddienumvidpncofuncmodality
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiEnumVidPnCofuncModality
-product:
- - Windows
+ - DXGKDDI_ENUMVIDPNCOFUNCMODALITY
 ---
 
 # DXGKDDI_ENUMVIDPNCOFUNCMODALITY callback function
@@ -83,3 +80,4 @@ Update each mode set that is not the pivot and does not already have a pinned mo
 Note that if a source or target is identified as the pivot of the enumeration, the mode set for that source or target must not change. For more information about how to update source and target mode sets, see <a href="/windows-hardware/drivers/display/enumerating-cofunctional-vidpn-source-and-target-modes">Enumerating Cofunctional VidPN Source and Target Modes</a>. 
 
 The <i>DxgkDdiEnumVidPnCofuncModality</i> function should be made pageable.
+

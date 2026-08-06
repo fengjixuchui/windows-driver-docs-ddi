@@ -4,7 +4,6 @@ title: MINIPORT_WDI_POST_ADAPTER_RESTART (dot11wdi.h)
 description: The MiniportWdiPostAdapterRestart handler function is called by the Microsoft component after it finishes restarting the data path as part of the NDIS MiniportRestart requirements.
 old-location: netvista\miniportwdipostadapterrestart.htm
 tech.root: netvista
-ms.assetid: 1686A3CA-AD4A-4560-8665-9AFBE920CDDA
 ms.date: 05/02/2018
 keywords: ["MINIPORT_WDI_POST_ADAPTER_RESTART callback function"]
 ms.keywords: MINIPORT_WDI_POST_ADAPTER_RESTART, MINIPORT_WDI_POST_ADAPTER_RESTART callback, MiniportWdiPostAdapterRestart, MiniportWdiPostAdapterRestart callback function [Network Drivers Starting with Windows Vista], dot11wdi/MiniportWdiPostAdapterRestart, netvista.miniportwdipostadapterrestart
@@ -38,13 +37,16 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
- - MiniportWdiPostAdapterRestart
+ - MINIPORT_WDI_POST_ADAPTER_RESTART
 ---
 
 # MINIPORT_WDI_POST_ADAPTER_RESTART callback function
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The MiniportWdiPostAdapterRestart handler function is called by the Microsoft component after it finishes restarting the data path as part of the NDIS <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_restart">MiniportRestart</a> requirements.
 
@@ -56,14 +58,14 @@ The NDIS <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_restart">M
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 The handle to the context area that the miniport driver allocated.
 
-### -param RestartParameters 
+### -param RestartParameters [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_restart_parameters">NDIS_MINIPORT_RESTART_PARAMETERS</a> structure that defines the restart parameters for the miniport adapter.
 
 ## -returns
@@ -125,3 +127,4 @@ The driver indicates <b>NDIS_STATUS_FAILURE</b> if none of the preceding values 
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_restart_parameters">NDIS_MINIPORT_RESTART_PARAMETERS</a>
+

@@ -4,7 +4,6 @@ title: UfxDeviceEventComplete function (ufxclient.h)
 description: Informs UFX that the client driver has completed processing a UFX callback function.
 old-location: buses\ufxdeviceeventcomplete.htm
 tech.root: usbref
-ms.assetid: DAC18721-5747-4D5E-8A25-24B80DE77C99
 ms.date: 05/07/2018
 keywords: ["UfxDeviceEventComplete function"]
 ms.keywords: UfxDeviceEventComplete, UfxDeviceEventComplete method [Buses], buses.ufxdeviceeventcomplete, ufxclient/UfxDeviceEventComplete
@@ -50,14 +49,14 @@ Informs UFX that the client driver has completed processing a UFX callback funct
 
 ## -parameters
 
-### -param UfxDevice 
+### -param UfxDevice [in]
 
-[in]
+
 A handle to a UFX device object that the driver created by calling <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 Status of the event being completed.
 
 ## -remarks

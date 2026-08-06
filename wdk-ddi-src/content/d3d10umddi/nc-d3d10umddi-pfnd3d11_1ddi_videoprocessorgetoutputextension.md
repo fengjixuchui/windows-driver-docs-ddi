@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORGETOUTPUTEXTENSION
 title: PFND3D11_1DDI_VIDEOPROCESSORGETOUTPUTEXTENSION (d3d10umddi.h)
 description: Returns private state data from a video processor to an application.
 old-location: display\videoprocessorgetoutputextension.htm
-ms.assetid: 16f314f7-a54b-4c79-9cd6-1472ed454bbe
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_VIDEOPROCESSORGETOUTPUTEXTENSION callback function"]
 ms.keywords: PFND3D11_1DDI_VIDEOPROCESSORGETOUTPUTEXTENSION, PFND3D11_1DDI_VIDEOPROCESSORGETOUTPUTEXTENSION callback, d3d10umddi/pfnVideoProcessorGetOutputExtension, display.videoprocessorgetoutputextension, pfnVideoProcessorGetOutputExtension, pfnVideoProcessorGetOutputExtension callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoProcessorGetOutputExtension
+ - PFND3D11_1DDI_VIDEOPROCESSORGETOUTPUTEXTENSION
 ---
 
 # PFND3D11_1DDI_VIDEOPROCESSORGETOUTPUTEXTENSION callback function
@@ -50,31 +49,31 @@ Returns private state data from a video processor to an application.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hVideoProcessor* [in]
 
 A handle to the video processor object that was created through a call to the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a> function.
 
-### -param Arg3
+### -param unnamedParam3
 
 *pGuid* [in]
 
 A pointer to a GUID that identifies the private state data. The meaning of this GUID is defined by the graphics driver.
 
-### -param Arg4
+### -param unnamedParam4
 
 *DataSize* [in]
 
 The size, in bytes, of the private state data in the buffer referenced by the <i>pData</i> parameter.
 
-### -param Arg5
+### -param unnamedParam5
 
 *pData* [in, out]
 
@@ -98,3 +97,4 @@ The Microsoft Direct3D runtime does not validate any parameter data before it ca
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a>
+

@@ -4,7 +4,6 @@ title: SpbControllerSetRequestAttributes function (spbcx.h)
 description: The SpbControllerSetRequestAttributes method sets object attributes that will be used for all SPBREQUEST objects that the SPB framework extension (SpbCx) delivers to the SPB controller driver.
 old-location: spb\spbcontrollersetrequestattributes.htm
 tech.root: SPB
-ms.assetid: 9BE790DB-DB7A-44A3-8A89-673CBFCF4D65
 ms.date: 04/30/2018
 keywords: ["SpbControllerSetRequestAttributes function"]
 ms.keywords: SPB.spbcontrollersetrequestattributes, SpbControllerSetRequestAttributes, SpbControllerSetRequestAttributes method [Buses], spbcx/SpbControllerSetRequestAttributes
@@ -51,14 +50,14 @@ The <b>SpbControllerSetRequestAttributes</b> method  sets object attributes that
 
 ## -parameters
 
-### -param FxDevice 
+### -param FxDevice [in]
 
-[in]
+
 A WDFDEVICE handle to the device object that represents the SPB controller.
 
-### -param RequestAttributes 
+### -param RequestAttributes [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the SPB controller's SPBREQUEST objects.
 
 ## -remarks

@@ -2,8 +2,8 @@
 UID: NE:wdm._FAULT_INFORMATION_ARCH
 title: _FAULT_INFORMATION_ARCH (wdm.h)
 description: Defines values for type of system architecture.
-ms.assetid: cee58e78-b1d7-471f-80e4-c1aa4e5189a5
 ms.date: 10/19/2018
+tech.root: devtest
 keywords: ["FAULT_INFORMATION_ARCH enumeration"]
 ms.keywords: _FAULT_INFORMATION_ARCH, *PFAULT_INFORMATION_ARCH, FAULT_INFORMATION_ARCH,
 req.header: wdm.h
@@ -32,6 +32,8 @@ api_location:
  - wdm.h
 api_name:
  - _FAULT_INFORMATION_ARCH
+ - PFAULT_INFORMATION_ARCH
+ - FAULT_INFORMATION_ARCH
 ---
 
 # _FAULT_INFORMATION_ARCH enumeration
@@ -49,7 +51,11 @@ The architecture type is not valid.
 
 ### -field FaultInformationArm64
 
-ARM64 architecture.
+Specifies ARM64 architecture.
+
+### -field FaultInformationX64
+
+Specifies x64 architecture.
 
 ## -remarks
 

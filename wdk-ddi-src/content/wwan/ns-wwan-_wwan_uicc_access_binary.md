@@ -3,7 +3,6 @@ UID: NS:wwan._WWAN_UICC_ACCESS_BINARY
 title: _WWAN_UICC_ACCESS_BINARY (wwan.h)
 description: The WWAN_UICC_ACCESS_BINARY structure describes information about a UICC binary file to read or to which to write.
 tech.root: netvista
-ms.assetid: D22866FC-A344-4D8B-B4C4-A72DF90F1505
 ms.date: 04/10/2019
 keywords: ["WWAN_UICC_ACCESS_BINARY structure"]
 ms.keywords: _WWAN_UICC_ACCESS_BINARY, WWAN_UICC_ACCESS_BINARY, *PWWAN_UICC_ACCESS_BINARY,
@@ -37,6 +36,8 @@ api_location:
  - wwan.h
 api_name:
  - _WWAN_UICC_ACCESS_BINARY
+ - PWWAN_UICC_ACCESS_BINARY
+ - WWAN_UICC_ACCESS_BINARY
 ---
 
 # _WWAN_UICC_ACCESS_BINARY structure
@@ -95,3 +96,4 @@ This structure is used in the [**NDIS_WWAN_UICC_ACCESS_BINARY**](../ndiswwan/ns-
 [OID_WWAN_UICC_ACCESS_BINARY](/windows-hardware/drivers/network/oid-wwan-uicc-access-binary)
 
 [**NDIS_WWAN_UICC_ACCESS_BINARY**](../ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_access_binary.md)
+

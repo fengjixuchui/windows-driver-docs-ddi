@@ -4,7 +4,6 @@ title: FltAllocatePoolAlignedWithTag function (fltkernel.h)
 description: FltAllocatePoolAlignedWithTag allocates a device-aligned buffer for use in a noncached I/O operation.
 old-location: ifsk\fltallocatepoolalignedwithtag.htm
 tech.root: ifsk
-ms.assetid: ffb1493f-6076-4b93-8431-b3ffd4679f96
 ms.date: 04/16/2018
 keywords: ["FltAllocatePoolAlignedWithTag function"]
 ms.keywords: FltAllocatePoolAlignedWithTag, FltAllocatePoolAlignedWithTag function [Installable File System Drivers], FltApiRef_a_to_d_b617aed0-5103-4a1e-aa0d-86247d99e803.xml, fltkernel/FltAllocatePoolAlignedWithTag, ifsk.fltallocatepoolalignedwithtag
@@ -51,14 +50,14 @@ api_name:
 
 ## -parameters
 
-### -param Instance 
+### -param Instance [in]
 
-[in]
+
 Opaque instance pointer for a caller-owned minifilter driver instance that is attached to the volume. This parameter is required and cannot be <b>NULL</b>.
 
-### -param PoolType 
+### -param PoolType [in]
 
-[in]
+
 Type of pool to allocate. One of the following: 
 
 <b>NonPagedPool</b>
@@ -71,14 +70,14 @@ Type of pool to allocate. One of the following:
 
 See <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type">POOL_TYPE</a> for a description of the available pool memory types.
 
-### -param NumberOfBytes 
+### -param NumberOfBytes [in]
 
-[in]
+
 Number of bytes to allocate. This parameter is required and can be zero.
 
-### -param Tag 
+### -param Tag [in]
 
-[in]
+
 Specifies the pool tag for the allocated memory. Drivers normally specify the pool tag as a string of one to four 7-bit ASCII characters, delimited by single quotation marks (for example, 'abcd'). This parameter is required and cannot be zero.
 
 ## -returns

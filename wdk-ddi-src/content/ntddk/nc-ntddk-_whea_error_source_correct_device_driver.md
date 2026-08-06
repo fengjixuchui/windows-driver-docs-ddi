@@ -1,13 +1,12 @@
 ---
 UID: NC:ntddk._WHEA_ERROR_SOURCE_CORRECT_DEVICE_DRIVER
-title: _WHEA_ERROR_SOURCE_CORRECT_DEVICE_DRIVER
-description: 
-tech.root: 
-ms.assetid: c1f0bed8-0dec-4034-a586-bb2a39a8b08f
-ms.date: 08/19/2019
+title: WHEA_ERROR_SOURCE_CORRECT_DEVICE_DRIVER
+description: WHEA_ERROR_SOURCE_CORRECT_DEVICE_DRIVER is reserved for system use.
+tech.root: whea
+ms.date: 01/19/2023
 keywords: ["WHEA_ERROR_SOURCE_CORRECT_DEVICE_DRIVER callback function"]
 req.header: ntddk.h
-req.include-header: 
+req.include-header: Ntddk.h
 req.target-type: 
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -24,7 +23,6 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 targetos: Windows
-ms.custom: 19H1
 f1_keywords:
  - _WHEA_ERROR_SOURCE_CORRECT_DEVICE_DRIVER
  - ntddk/_WHEA_ERROR_SOURCE_CORRECT_DEVICE_DRIVER
@@ -36,12 +34,7 @@ api_location:
  - ntddk.h
 api_name:
  - _WHEA_ERROR_SOURCE_CORRECT_DEVICE_DRIVER
-product:
- - Windows
 ---
-
-# _WHEA_ERROR_SOURCE_CORRECT_DEVICE_DRIVER callback function
-
 
 ## -description
 
@@ -49,15 +42,12 @@ Reserved for system use.
 
 ## -parameters
 
-### -param ErrorSourceDesc: 
+### -param ErrorSourceDesc
 
-### -param MaximumSectionLength: 
+### -param MaximumSectionLength
 
 ## -returns
-
-## -prototype
 
 ## -remarks
 
 ## -see-also
-

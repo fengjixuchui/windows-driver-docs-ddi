@@ -4,7 +4,6 @@ title: UFX_PROPRIETARY_CHARGER_DETECT (ufxproprietarycharger.h)
 description: The filter driver's implementation to detect if a charger is attached and get details about the charger.
 old-location: buses\ufx_proprietary_charger_detect.htm
 tech.root: usbref
-ms.assetid: E95D2713-8F95-460E-9107-4793B002A6AC
 ms.date: 05/07/2018
 keywords: ["UFX_PROPRIETARY_CHARGER_DETECT callback function"]
 ms.keywords: PFN_UFX_PROPRIETARY_CHARGER_DETECT, PFN_UFX_PROPRIETARY_CHARGER_DETECT callback function pointer [Buses], UFX_PROPRIETARY_CHARGER_DETECT, UFX_PROPRIETARY_CHARGER_DETECT callback, UfxProprietaryChargerDetect, UfxProprietaryChargerDetect callback function [Buses], buses.ufx_proprietary_charger_detect, ufxproprietarycharger/UfxProprietaryChargerDetect
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ufxproprietarycharger.h
 api_name:
- - PFN_UFX_PROPRIETARY_CHARGER_DETECT
+ - UFX_PROPRIETARY_CHARGER_DETECT
 ---
 
 # UFX_PROPRIETARY_CHARGER_DETECT callback function
@@ -50,14 +49,14 @@ The filter driver's implementation to detect if a charger is attached  and get d
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
     A pointer to a driver-defined context.
 
-### -param DetectedCharger 
+### -param DetectedCharger [out]
 
-[out]
+
 A pointer to a     <a href="/windows-hardware/drivers/ddi/ufxproprietarycharger/ns-ufxproprietarycharger-_ufx_proprietary_charger">UFX_PROPRIETARY_CHARGER</a> structure that the driver fills with charger information.
 
 ## -returns
@@ -149,7 +148,7 @@ UsbLowerFilter_ProprietaryChargerDetect(
 }
 ```
 
-
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/drivers/mt188012(v=vs.85)">USB filter driver for supporting proprietary chargers</a>
+

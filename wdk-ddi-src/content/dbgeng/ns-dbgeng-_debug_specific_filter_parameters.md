@@ -4,7 +4,6 @@ title: _DEBUG_SPECIFIC_FILTER_PARAMETERS (dbgeng.h)
 description: The DEBUG_SPECIFIC_FILTER_PARAMETERS structure contains the parameters for a specific event filter.
 old-location: debugger\debug_specific_filter_parameters.htm
 tech.root: debugger
-ms.assetid: 06926380-aae5-4d9f-94e0-43098f8a0423
 ms.date: 05/03/2018
 keywords: ["DEBUG_SPECIFIC_FILTER_PARAMETERS structure"]
 ms.keywords: "*PDEBUG_SPECIFIC_FILTER_PARAMETERS, DEBUG_SPECIFIC_FILTER_PARAMETERS, DEBUG_SPECIFIC_FILTER_PARAMETERS structure [Windows Debugging], PDEBUG_SPECIFIC_FILTER_PARAMETERS, PDEBUG_SPECIFIC_FILTER_PARAMETERS structure pointer [Windows Debugging], Structures_b0152b9b-4809-46c8-81a7-5f571720eca1.xml, _DEBUG_SPECIFIC_FILTER_PARAMETERS, dbgeng/DEBUG_SPECIFIC_FILTER_PARAMETERS, dbgeng/PDEBUG_SPECIFIC_FILTER_PARAMETERS, debugger.debug_specific_filter_parameters"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - DbgEng.h
 api_name:
+ - _DEBUG_SPECIFIC_FILTER_PARAMETERS
+ - PDEBUG_SPECIFIC_FILTER_PARAMETERS
  - DEBUG_SPECIFIC_FILTER_PARAMETERS
 ---
 
@@ -84,3 +85,4 @@ Specifies the size, in characters, of the specific event filter argument.  This 
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setspecificfilterparameters">SetSpecificFilterParameters</a>
+

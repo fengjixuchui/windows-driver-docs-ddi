@@ -4,7 +4,6 @@ title: wiauDbgLegacyError2 function (wiautil.h)
 description: The wiauDbgLegacyError2 function logs an error message.
 old-location: image\wiaudbglegacyerror2.htm
 tech.root: image
-ms.assetid: 981fef6c-65a7-4ba1-ad6a-c7c9c2795feb
 ms.date: 05/03/2018
 keywords: ["wiauDbgLegacyError2 function"]
 ms.keywords: image.wiaudbglegacyerror2, wiauDbgLegacyError2, wiauDbgLegacyError2 function [Imaging Devices], wiauFncs_647f5e2c-bcc7-4e9a-9746-2f0685f29fcf.xml, wiautil/wiauDbgLegacyError2
@@ -39,6 +38,7 @@ api_location:
  - Wiautil.h
 api_name:
  - wiauDbgLegacyError2
+ - wiauDbgLegacyError
 ---
 
 # wiauDbgLegacyError2 function
@@ -56,7 +56,7 @@ Specifies the handle to the DLL instance.
 
 ### -param fmt
 
-### -param param
+### -param ...
 
 ####### - fmt, ...
 
@@ -69,3 +69,4 @@ The <b>wiauDbgLegacyError2</b> function is identical to the <a href="/windows-ha
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wiautil/nf-wiautil-wiaudbgerror">wiauDbgError</a>
+

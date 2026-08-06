@@ -4,7 +4,6 @@ title: _D3DPrimCaps (d3dcaps.h)
 description: Obsolete in DirectX 8.0 and later versions; see Remarks. The D3DPRIMCAPS structure defines the capabilities for each primitive type.
 old-location: display\d3dprimcaps.htm
 tech.root: display
-ms.assetid: fa725534-ccc3-4e71-a83f-b25fd4c72c14
 ms.date: 05/10/2018
 keywords: ["D3DPrimCaps structure"]
 ms.keywords: "*LPD3DPRIMCAPS, D3DPRIMCAPS, D3DPRIMCAPS structure [Display Devices], LPD3DPRIMCAPS, LPD3DPRIMCAPS structure pointer [Display Devices], _D3DPrimCaps, d3dcaps/D3DPRIMCAPS, d3dcaps/LPD3DPRIMCAPS, d3dstrct_671f3c02-cad3-47bc-871e-df1388f8cf1a.xml, display.d3dprimcaps"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - d3dcaps.h
 api_name:
+ - _D3DPrimCaps
+ - LPD3DPRIMCAPS
  - D3DPRIMCAPS
 ---
 
@@ -258,3 +259,4 @@ This structure is used when a device is created and when the capabilities of a d
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dhal/ns-d3dhal-_d3ddevicedesc_v1">D3DDEVICEDESC_V1</a>
+

@@ -4,7 +4,6 @@ title: _D3DDDIARG_CREATEAUTHENICATEDCHANNEL (d3dumddi.h)
 description: The D3DDDIARG_CREATEAUTHENTICATEDCHANNEL structure identifies a channel to create.
 old-location: display\d3dddiarg_createauthenticatedchannel.htm
 tech.root: display
-ms.assetid: 00f8fbbc-1a4d-4cfe-8b87-fd70bf5a2d48
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_CREATEAUTHENICATEDCHANNEL structure"]
 ms.keywords: D3DDDIARG_CREATEAUTHENTICATEDCHANNEL, D3DDDIARG_CREATEAUTHENTICATEDCHANNEL structure [Display Devices], UMDisplayDriver_param_Structs_3cdac44d-7cac-43f6-80f5-dd601183fa8b.xml, _D3DDDIARG_CREATEAUTHENICATEDCHANNEL, d3dumddi/D3DDDIARG_CREATEAUTHENTICATEDCHANNEL, display.d3dddiarg_createauthenticatedchannel
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_CREATEAUTHENICATEDCHANNEL
  - D3DDDIARG_CREATEAUTHENTICATEDCHANNEL
 ---
 
@@ -52,18 +52,18 @@ The D3DDDIARG_CREATEAUTHENTICATEDCHANNEL structure identifies a channel to creat
 
 ## -struct-fields
 
-### -field ChannelType
+### -field ChannelType [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_ddiauthenticatedchanneltype">DDIAUTHENTICATEDCHANNELTYPE</a>-typed value that indicates the channel type to create. This member can be one of the following values.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_ddiauthenticatedchanneltype">DDIAUTHENTICATEDCHANNELTYPE</a>-typed value that indicates the channel type to create. This member can be one of the following values.
 
 | **Value** | **Meaning** | 
 |:--|:--|
 | DDIAUTHENTICATEDCHANNEL_DRIVER_SOFTWARE (2) | The authenticated-channel type is software. | 
 | DDIAUTHENTICATEDCHANNEL_DRIVER_HARDWARE (3) | The authenticated-channel type is hardware. |
 
-### -field hChannel
+### -field hChannel [out]
 
-[out] A handle to the channel. The user-mode display driver's <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createauthenticatedchannel">CreateAuthenticatedChannel</a> function returns this handle to the Microsoft Direct3D runtime.
+A handle to the channel. The user-mode display driver's <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createauthenticatedchannel">CreateAuthenticatedChannel</a> function returns this handle to the Microsoft Direct3D runtime.
 
 ## -see-also
 
@@ -72,3 +72,4 @@ The D3DDDIARG_CREATEAUTHENTICATEDCHANNEL structure identifies a channel to creat
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_ddiauthenticatedchanneltype">DDIAUTHENTICATEDCHANNELTYPE</a>
+

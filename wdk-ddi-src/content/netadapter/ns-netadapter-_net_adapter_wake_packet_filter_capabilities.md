@@ -3,17 +3,16 @@ UID: NS:netadapter._NET_ADAPTER_WAKE_PACKET_FILTER_CAPABILITIES
 title: NET_ADAPTER_WAKE_PACKET_FILTER_CAPABILITIES (netadapter.h)
 description: The NET_ADAPTER_WAKE_PACKET_FILTER_CAPABILITIES structure describes a net adapter's wake on LAN (WoL) capabilities for waking from a packet filter match.
 tech.root: netvista
-ms.assetid: 4c04cbbb-a926-4371-a717-bfe6bf0742c4
 ms.date: 11/07/2019
 keywords: ["NET_ADAPTER_WAKE_PACKET_FILTER_CAPABILITIES structure"]
 ms.keywords: NET_ADAPTER_WAKE_PACKET_FILTER_CAPABILITIES, NET_ADAPTER_WAKE_PACKET_FILTER_CAPABILITIES,
 req.header: netadapter.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: 
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - netadapter.h
 api_name:
+ - _NET_ADAPTER_WAKE_PACKET_FILTER_CAPABILITIES
  - NET_ADAPTER_WAKE_PACKET_FILTER_CAPABILITIES
-product:
- - Windows
 ---
 
 # NET_ADAPTER_WAKE_PACKET_FILTER_CAPABILITIES structure
@@ -69,3 +67,4 @@ Call [**NET_ADAPTER_WAKE_PACKET_FILTER_CAPABILITIES_INIT**](../netadapter/nf-net
 [**NetAdapterWakeSetPacketFilterCapabilities**](../netadapter/nf-netadapter-netadapterwakesetpacketfiltercapabilities.md)
 
 [**NetAdapterStart**](../netadapter/nf-netadapter-netadapterstart.md)
+

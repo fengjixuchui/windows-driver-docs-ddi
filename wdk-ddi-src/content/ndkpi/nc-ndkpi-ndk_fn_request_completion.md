@@ -4,7 +4,6 @@ title: NDK_FN_REQUEST_COMPLETION (ndkpi.h)
 description: The NdkRequestCompletion (NDK_FN_REQUEST_COMPLETION) function completes a pending NDK request.
 old-location: netvista\ndk_fn_request_completion.htm
 tech.root: netvista
-ms.assetid: EB507DE2-354C-41D2-9BEE-091C4AE299EC
 ms.date: 05/02/2018
 keywords: ["NDK_FN_REQUEST_COMPLETION callback function"]
 ms.keywords: NDK_FN_REQUEST_COMPLETION, NDK_FN_REQUEST_COMPLETION callback, NdkRequestCompletion, NdkRequestCompletion callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkRequestCompletion, netvista.ndk_fn_request_completion
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkRequestCompletion
+ - NDK_FN_REQUEST_COMPLETION
 ---
 
 # NDK_FN_REQUEST_COMPLETION callback function
@@ -50,14 +49,14 @@ The <i>NdkRequestCompletion</i> (<i>NDK_FN_REQUEST_COMPLETION</i>) function comp
 
 ## -parameters
 
-### -param Context 
+### -param Context [in, optional]
 
-[in, optional]
+
 The context value passed to the NDK provider when a consumer calls an asynchronous request function. The asynchronous request function  provides the context with the with the <i>NdkRequestCompletion</i> (<i>NDK_FN_REQUEST_COMPLETION</i>) function pointer.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 The asynchronous completion status for the request. See the asynchronous request  functions (for example, <a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_accept">NDK_FN_ACCEPT</a>) for completion status codes that can be returned for each type of request.
 
 ## -remarks
@@ -67,3 +66,4 @@ Many NDK requests can be completed asynchronously. Asynchronous request function
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_accept">NDK_FN_ACCEPT</a>
+

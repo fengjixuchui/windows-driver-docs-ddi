@@ -4,7 +4,6 @@ title: IRequestCallbackCancel::OnCancel (wudfddi.h)
 description: The OnCancel method is called when an application cancels an I/O operation through the Microsoft Win32 CancelIo, CancelIoEx, or CancelSynchronousIo function.
 old-location: wdf\irequestcallbackcancel_oncancel.htm
 tech.root: wdf
-ms.assetid: 67c85eaa-bb47-4384-8e37-fdbbc879b352
 ms.date: 02/26/2018
 keywords: ["IRequestCallbackCancel::OnCancel"]
 ms.keywords: IRequestCallbackCancel interface,OnCancel method, IRequestCallbackCancel.OnCancel, IRequestCallbackCancel::OnCancel, OnCancel, OnCancel method, OnCancel method,IRequestCallbackCancel interface, UMDFRequestObjectRef_bdb47237-28bf-4b07-9bcb-f8d029636d2d.xml, umdf.irequestcallbackcancel_oncancel, wdf.irequestcallbackcancel_oncancel, wudfddi/IRequestCallbackCancel::OnCancel
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IRequestCallbackCancel.OnCancel
+ - IRequestCallbackCancel::OnCancel
 ---
 
 # IRequestCallbackCancel::OnCancel
@@ -52,9 +51,9 @@ The <b>OnCancel</b> method is called when an application cancels an I/O operatio
 
 ## -parameters
 
-### -param pWdfRequest 
+### -param pWdfRequest [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest">IWDFIoRequest</a> interface that represents the framework request object to cancel.
 
 ## -remarks
@@ -82,3 +81,4 @@ The User-Mode Driver Framework (UMDF) allows only one <b>OnCancel</b> method per
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-markcancelable">IWDFIoRequest::MarkCancelable</a>
+

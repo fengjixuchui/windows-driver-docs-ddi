@@ -3,8 +3,7 @@ UID: NF:netwakesource.NetWakeSourceGetAdapter
 title: NetWakeSourceGetAdapter function (netwakesource.h)
 description: The NetWakeSourceGetAdapter function gets the net adapter for a wake-on-LAN (WoL) source.
 tech.root: netvista
-ms.assetid: 75706f44-2e82-420d-a435-73ee32e5090a
-ms.date: 10/07/2019
+ms.date: 04/01/2022
 keywords: ["NetWakeSourceGetAdapter function"]
 ms.keywords: NetWakeSourceGetAdapter
 req.header: netwakesource.h
@@ -13,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: netadaptercxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -37,8 +36,6 @@ api_location:
  - netadaptercxstub.lib
 api_name:
  - NetWakeSourceGetAdapter
-product:
- - Windows
 ---
 
 # NetWakeSourceGetAdapter function
@@ -50,7 +47,7 @@ The **NetWakeSourceGetAdapter** function gets the net adapter for a wake-on-LAN 
 
 ## -parameters
 
-### -param WakeSource
+### -param WakeSource [_In_]
 
 The NETWAKESOURCE object that represents the source of the wake-up event.
 

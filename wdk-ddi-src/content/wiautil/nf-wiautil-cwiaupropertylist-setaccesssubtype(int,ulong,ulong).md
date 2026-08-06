@@ -4,7 +4,6 @@ title: CWiauPropertyList::SetAccessSubType(INT,ULONG,ULONG) (wiautil.h)
 description: The CWiauPropertyList::SetAccessSubType(INT,ULONG,ULONG) method resets a property's access and subtype.
 old-location: image\cwiaupropertylist_setaccesssubtype.htm
 tech.root: image
-ms.assetid: 207125d3-0833-4c5d-b66f-aa49c96a6a2d
 ms.date: 09/07/2018
 keywords: ["CWiauPropertyList::SetAccessSubType(INT,ULONG,ULONG)"]
 ms.keywords: CWiauPropertyList interface [Imaging Devices],SetAccessSubType method, CWiauPropertyList.SetAccessSubType, CWiauPropertyList.SetAccessSubType(INT,ULONG,ULONG), CWiauPropertyList::SetAccessSubType, CWiauPropertyList::SetAccessSubType(INT,ULONG,ULONG), SetAccessSubType, SetAccessSubType method [Imaging Devices], SetAccessSubType method [Imaging Devices],CWiauPropertyList interface, image.cwiaupropertylist_setaccesssubtype, wiauFncs_ab4b792f-54f0-4efa-bb13-5b71d94e03e0.xml, wiautil/CWiauPropertyList::SetAccessSubType
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - Wiautil.h
 api_name:
- - CWiauPropertyList.SetAccessSubType
+ - CWiauPropertyList::SetAccessSubType
 ---
 
 # CWiauPropertyList::SetAccessSubType(INT,ULONG,ULONG)
@@ -65,7 +64,7 @@ Specifies the property subtype, one of WIA_PROP_FLAG, WIA_PROP_LIST, WIA_PROP_RA
 
 ## -returns
 
-This method does not return a value.
+This method returns an NTSTATUS value.
 
 ## -remarks
 

@@ -4,7 +4,6 @@ title: IWpdSerializer::GetSerializedSize (portabledevicetypes.h)
 description: Calculates the buffer size that is required to hold a serialized IPortableDeviceValues interface.
 old-location: wpddk\iwpdserializer_getserializedsize.htm
 tech.root: wpd_dk
-ms.assetid: 85b87586-d4aa-4590-9a4b-73439fa8cf6a
 ms.date: 02/15/2018
 keywords: ["IWpdSerializer::GetSerializedSize"]
 ms.keywords: GetSerializedSize, GetSerializedSize method, GetSerializedSize method,IWpdSerializer interface, IWpdSerializer interface,GetSerializedSize method, IWpdSerializer.GetSerializedSize, IWpdSerializer::GetSerializedSize, IWpdSerializerGetSerializedSize, portabledevicetypes/IWpdSerializer::GetSerializedSize, wpddk.iwpdserializer_getserializedsize
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IWpdSerializer.GetSerializedSize
+ - IWpdSerializer::GetSerializedSize
 ---
 
 # IWpdSerializer::GetSerializedSize
@@ -51,14 +50,14 @@ Calculates the buffer size that is required to hold a serialized <b>IPortableDev
 
 ## -parameters
 
-### -param pSource 
+### -param pSource [in]
 
-[in]
+
 Pointer to an <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues">IPortableDeviceValues</a> interface whose size you want to request.
 
-### -param pdwSize 
+### -param pdwSize [out]
 
-[out]
+
 Pointer to a <b>DWORD</b> that indicates the buffer size that is required to serialize <i>pSource</i>, in bytes.
 
 ## -returns
@@ -112,3 +111,4 @@ None.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iwpdserializer">IWpdSerializer Interface</a>
+

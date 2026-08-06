@@ -4,7 +4,6 @@ title: IWDTFActions2 (wdtf.h)
 description: Defines operations and properties for the collection of actions that the IWDTFTargets::GetInterfaces method returns.
 old-location: dtf\iwdtfactions2.htm
 tech.root: dtf
-ms.assetid: cf78bd7f-7d92-421f-8f68-e56db5e7c7d4
 ms.date: 04/04/2018
 keywords: ["IWDTFActions2 interface"]
 ms.keywords: IWDTFActions2, IWDTFActions2 interface [Windows Device Testing Framework], IWDTFActions2 interface [Windows Device Testing Framework],described, dtf.iwdtfactions2, wdtf/IWDTFActions2
@@ -51,9 +50,6 @@ method returns.
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDTFActions2</b> interface inherits from <b>ITracing</b>. <b>IWDTFActions2</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-<li><a href="https://docs.microsoft.com/">Properties</a></li>
-</ul>
+The <b>IWDTFActions2</b> interface inherits from <b>ITracing</b>. <b>IWDTFActions2</b> also has these types of members:
+
 

@@ -4,7 +4,6 @@ title: IKsReferenceClock::GetResolution (ks.h)
 description: The IKsReferenceClock::GetResolution method queries the associated reference clock for its resolution.
 old-location: stream\iksreferenceclock_getresolution.htm
 tech.root: stream
-ms.assetid: 7fb70431-db09-470b-b795-826aba3a8b77
 ms.date: 04/23/2018
 keywords: ["IKsReferenceClock::GetResolution"]
 ms.keywords: GetResolution, GetResolution method [Streaming Media Devices], GetResolution method [Streaming Media Devices],IKsReferenceClock interface, IKsReferenceClock interface [Streaming Media Devices],GetResolution method, IKsReferenceClock.GetResolution, IKsReferenceClock::GetResolution, avintfc_941baf81-e369-45bc-a798-15270a6d8a29.xml, ks/IKsReferenceClock::GetResolution, stream.iksreferenceclock_getresolution
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - IKsReferenceClock.GetResolution
+ - IKsReferenceClock::GetResolution
 ---
 
 # IKsReferenceClock::GetResolution
@@ -50,9 +49,9 @@ The <b>IKsReferenceClock::GetResolution</b> method queries the associated refere
 
 ## -parameters
 
-### -param Resolution 
+### -param Resolution [out]
 
-[out]
+
 Specifies granularity and notification error of the clock in a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksresolution">KSRESOLUTION</a> structure.
 
 ## -returns
@@ -72,3 +71,4 @@ AVStream uses the <a href="/windows-hardware/drivers/stream/ksproperty-clock-res
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ks/nf-ks-kspingetreferenceclockinterface">KsPinGetReferenceClockInterface</a>
+

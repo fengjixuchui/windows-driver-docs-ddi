@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_59
+UID: NS:ksmedia.SYSAUDIO_INSTANCE_INFO
 title: SYSAUDIO_INSTANCE_INFO (ksmedia.h)
 description: The SYSAUDIO_INSTANCE_INFO structure specifies which virtual audio device to open and includes flags for configuring that device.
 old-location: audio\sysaudio_instance_info.htm
 tech.root: audio
-ms.assetid: 3468b29d-e62c-46b4-b95e-06df846ebd81
 ms.date: 04/30/2019
 keywords: ["SYSAUDIO_INSTANCE_INFO structure"]
 ms.keywords: "*PSYSAUDIO_INSTANCE_INFO, PSYSAUDIO_INSTANCE_INFO, PSYSAUDIO_INSTANCE_INFO structure pointer [Audio Devices], SYSAUDIO_INSTANCE_INFO, SYSAUDIO_INSTANCE_INFO structure [Audio Devices], aud-prop_dd4269d6-0f6e-476a-a4d3-ea71f3b9a96a.xml, audio.sysaudio_instance_info, ksmedia/PSYSAUDIO_INSTANCE_INFO, ksmedia/SYSAUDIO_INSTANCE_INFO"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PSYSAUDIO_INSTANCE_INFO
  - SYSAUDIO_INSTANCE_INFO
 ---
 
@@ -54,7 +54,7 @@ The SYSAUDIO_INSTANCE_INFO structure specifies which virtual audio device to ope
 
 ### -field Property
 
-Specifies the property. This parameter is a structure of type <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>.
+Specifies the property. This parameter is a structure of type <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>.
 
 ### -field Flags
 
@@ -76,7 +76,7 @@ This property is similar to <a href="/windows-hardware/drivers/audio/ksproperty-
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -89,3 +89,4 @@ This property is similar to <a href="/windows-hardware/drivers/audio/ksproperty-
 
 
 <a href="/windows-hardware/drivers/audio/ksproperty-sysaudio-instance-info">KSPROPERTY_SYSAUDIO_INSTANCE_INFO</a>
+

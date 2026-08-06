@@ -4,7 +4,6 @@ title: _PCI_EXPRESS_LINK_QUIESCENT_INTERFACE (wdm.h)
 description: The PCI_EXPRESS_LINK_QUIESCENT_INTERFACE structure is reserved for system use.
 old-location: pci\pci_express_link_quiescent_interface_.htm
 tech.root: PCI
-ms.assetid: c57ef3e0-5d4d-4545-9c70-b2e11e5823ec
 ms.date: 02/24/2018
 keywords: ["PCI_EXPRESS_LINK_QUIESCENT_INTERFACE structure"]
 ms.keywords: "*PPCI_EXPRESS_LINK_QUIESCENT_INTERFACE, PCI.pci_express_link_quiescent_interface_, PCI_EXPRESS_LINK_QUIESCENT_INTERFACE, PCI_EXPRESS_LINK_QUIESCENT_INTERFACE structure [Buses], _PCI_EXPRESS_LINK_QUIESCENT_INTERFACE, wdm/"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: PASSIVE_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: PCI_EXPRESS_LINK_QUIESCENT_INTERFACE, *PPCI_EXPRESS_LINK_QUIESCENT_INTERFACE
-req.product: Windows 10 or later.
 f1_keywords:
  - _PCI_EXPRESS_LINK_QUIESCENT_INTERFACE
  - wdm/_PCI_EXPRESS_LINK_QUIESCENT_INTERFACE
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _PCI_EXPRESS_LINK_QUIESCENT_INTERFACE
+ - PPCI_EXPRESS_LINK_QUIESCENT_INTERFACE
  - PCI_EXPRESS_LINK_QUIESCENT_INTERFACE
 ---
 
@@ -55,3 +55,16 @@ The <b>PCI_EXPRESS_LINK_QUIESCENT_INTERFACE</b>  structure is reserved for syste
 
 ## -struct-fields
 
+### -field Size
+
+### -field Version
+
+### -field Context
+
+### -field InterfaceReference
+
+### -field InterfaceDereference
+
+### -field PciExpressEnterLinkQuiescentMode
+
+### -field PciExpressExitLinkQuiescentMode

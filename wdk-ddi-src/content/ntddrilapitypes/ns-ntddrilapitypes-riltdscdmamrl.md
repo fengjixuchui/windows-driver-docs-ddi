@@ -4,7 +4,6 @@ title: RILTDSCDMAMRL (ntddrilapitypes.h)
 description: This structure represents RILTDSCDMAMRL, which is a TD_SCDMA network measurement report.
 old-location: netvista\riltdscdmamrl.htm
 tech.root: netvista
-ms.assetid: 26399c62-c17a-40ad-964e-144badc55614
 ms.date: 02/16/2018
 keywords: ["RILTDSCDMAMRL structure"]
 ms.keywords: "*LPRILTDSCDMAMRL, RILTDSCDMAMRL, RILTDSCDMAMRL structure [Network Drivers Starting with Windows Vista], netvista.riltdscdmamrl, rilapitypes/RILTDSCDMAMRL"
@@ -41,6 +40,7 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILTDSCDMAMRL
+ - LPRILTDSCDMAMRL
 ---
 
 # RILTDSCDMAMRL structure (ntddrilapitypes.h)
@@ -107,3 +107,4 @@ struct RILTDSCDMAMRL {
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/cellular/dn946511(v=vs.85)">Cellular COM structures</a>
+

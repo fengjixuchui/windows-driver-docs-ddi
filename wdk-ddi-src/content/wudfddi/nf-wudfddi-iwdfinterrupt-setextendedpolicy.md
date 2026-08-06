@@ -4,7 +4,6 @@ title: IWDFInterrupt::SetExtendedPolicy (wudfddi.h)
 description: The SetExtendedPolicy method specifies the interrupt priority, processor affinity, affinity policy, and processor group for a specified interrupt.
 old-location: wdf\iwdfinterrupt_setextendedpolicy.htm
 tech.root: wdf
-ms.assetid: 6637E939-010E-4462-92CE-50C4DB867694
 ms.date: 02/26/2018
 keywords: ["IWDFInterrupt::SetExtendedPolicy"]
 ms.keywords: IWDFInterrupt interface,SetExtendedPolicy method, IWDFInterrupt.SetExtendedPolicy, IWDFInterrupt::SetExtendedPolicy, SetExtendedPolicy, SetExtendedPolicy method, SetExtendedPolicy method,IWDFInterrupt interface, umdf.iwdfinterrupt_setextendedpolicy, wdf.iwdfinterrupt_setextendedpolicy, wudfddi/IWDFInterrupt::SetExtendedPolicy
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFInterrupt.SetExtendedPolicy
+ - IWDFInterrupt::SetExtendedPolicy
 ---
 
 # IWDFInterrupt::SetExtendedPolicy
@@ -52,9 +51,9 @@ The <b>SetExtendedPolicy</b> method specifies the interrupt priority, processor 
 
 ## -parameters
 
-### -param PolicyAndGroup 
+### -param PolicyAndGroup [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfinterrupt/ns-wdfinterrupt-_wdf_interrupt_extended_policy">WDF_INTERRUPT_EXTENDED_POLICY</a> structure that the driver has previously initialized by calling <a href="/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdf_interrupt_extended_policy_init">WDF_INTERRUPT_EXTENDED_POLICY_INIT</a>.
 
 ## -remarks
@@ -92,7 +91,6 @@ pInterrupt->SetExtendedPolicy(
  );
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfinterrupt">IWDFInterrupt</a>
@@ -104,3 +102,4 @@ pInterrupt->SetExtendedPolicy(
 
 
 <a href="/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdf_interrupt_extended_policy_init">WDF_INTERRUPT_EXTENDED_POLICY_INIT</a>
+

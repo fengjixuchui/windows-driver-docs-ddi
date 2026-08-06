@@ -4,7 +4,6 @@ title: CcMdlWriteComplete function (ntifs.h)
 description: The CcMdlWriteComplete routine frees the memory descriptor lists (MDL) created by CcPrepareMdlWrite for a cached file.
 old-location: ifsk\ccmdlwritecomplete.htm
 tech.root: ifsk
-ms.assetid: dcd13afa-1467-407c-b843-ff88bd6526c3
 ms.date: 04/16/2018
 keywords: ["CcMdlWriteComplete function"]
 ms.keywords: CcMdlWriteComplete, CcMdlWriteComplete routine [Installable File System Drivers], ccref_fe5a4900-c0bc-4100-b3e9-e2b7d780a9d2.xml, ifsk.ccmdlwritecomplete, ntifs/CcMdlWriteComplete
@@ -50,19 +49,19 @@ The <b>CcMdlWriteComplete</b> routine frees the memory descriptor lists (MDL) cr
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 File object pointer that was passed to <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccpreparemdlwrite">CcPrepareMdlWrite</a>.
 
-### -param FileOffset 
+### -param FileOffset [in]
 
-[in]
+
 Value of <i>FileOffset</i> that was passed to <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccpreparemdlwrite">CcPrepareMdlWrite</a>.
 
-### -param MdlChain 
+### -param MdlChain [in]
 
-[in]
+
 Address of the MDL chain returned by <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccpreparemdlwrite">CcPrepareMdlWrite</a>.
 
 ## -remarks

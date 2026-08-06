@@ -4,7 +4,6 @@ title: WdfUsbTargetPipeIsInEndpoint function (wdfusb.h)
 description: The WdfUsbTargetPipeIsInEndpoint method determines whether a specified USB pipe is connected to an input endpoint.
 old-location: wdf\wdfusbtargetpipeisinendpoint.htm
 tech.root: wdf
-ms.assetid: 431d8f18-18db-460c-9f2f-454a5378825c
 ms.date: 02/26/2018
 keywords: ["WdfUsbTargetPipeIsInEndpoint function"]
 ms.keywords: DFUsbRef_55ca68a2-c334-47b9-9716-68a492987897.xml, WdfUsbTargetPipeIsInEndpoint, WdfUsbTargetPipeIsInEndpoint method, kmdf.wdfusbtargetpipeisinendpoint, wdf.wdfusbtargetpipeisinendpoint, wdfusb/WdfUsbTargetPipeIsInEndpoint
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,9 +54,9 @@ The <b>WdfUsbTargetPipeIsInEndpoint</b> method determines whether a specified US
 
 ## -parameters
 
-### -param Pipe 
+### -param Pipe [in]
 
-[in]
+
 A handle to a framework pipe object that represents a bulk pipe or interrupt pipe and was obtained by calling <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbinterfacegetconfiguredpipe">WdfUsbInterfaceGetConfiguredPipe</a>.
 
 ## -returns

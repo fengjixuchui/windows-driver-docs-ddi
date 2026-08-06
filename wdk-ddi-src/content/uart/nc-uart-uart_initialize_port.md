@@ -2,8 +2,7 @@
 UID: NC:uart.UART_INITIALIZE_PORT
 title: UART_INITIALIZE_PORT (uart.h)
 description: Initializes or resets the UART hardware.
-tech.root: serports
-ms.assetid: f5691b9c-0c57-4333-adc3-dbbdfdc5ecb8
+tech.root: uart
 ms.date: 10/19/2018
 keywords: ["UART_INITIALIZE_PORT callback function"]
 req.header: uart.h
@@ -50,9 +49,9 @@ Initializes or resets the UART hardware. This callback function is called before
 
  [_In_opt_Optional _Null_terminated_] A null-terminated load option string.
 
-### -param Port
+### -param Port [_Inout_]
 
-[_Inout_] A pointer to a [**_CPPORT**](ns-uart-_cpport.md) structure that is filled with information about port initialization.
+A pointer to a [**_CPPORT**](ns-uart-_cpport.md) structure that is filled with information about port initialization.
 
 ### -param MemoryMapped
 
@@ -101,3 +100,4 @@ Register your implementation of this callback function by setting the appropriat
 
 [**_CPPORT**](ns-uart-_cpport.md)
 
+[**uart.h**](index.md)

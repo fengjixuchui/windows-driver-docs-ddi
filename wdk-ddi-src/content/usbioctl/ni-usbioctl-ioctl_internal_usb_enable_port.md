@@ -4,7 +4,6 @@ title: IOCTL_INTERNAL_USB_ENABLE_PORT (usbioctl.h)
 description: The IOCTL_INTERNAL_USB_ENABLE_PORT IOCTL has been deprecated. Do not use.
 old-location: buses\ioctl_internal_usb_enable_port.htm
 tech.root: usbref
-ms.assetid: 6f15a559-fb6b-47d5-a101-43464ed80d0f
 ms.date: 05/07/2018
 keywords: ["IOCTL_INTERNAL_USB_ENABLE_PORT IOCTL"]
 ms.keywords: IOCTL_INTERNAL_USB_ENABLE_PORT, IOCTL_INTERNAL_USB_ENABLE_PORT control, IOCTL_INTERNAL_USB_ENABLE_PORT control code [Buses], buses.ioctl_internal_usb_enable_port, usbioctl/IOCTL_INTERNAL_USB_ENABLE_PORT, usbirp_eee71b69-fc0a-446a-807b-6f776e634c9d.xml
@@ -49,6 +48,10 @@ api_name:
 The <b>IOCTL_INTERNAL_USB_ENABLE_PORT</b> IOCTL has been deprecated. Do not use.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
+
+[IRP_MJ_INTERNAL_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
 ### -input-buffer
 

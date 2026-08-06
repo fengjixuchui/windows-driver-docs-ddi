@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGKARG_GETSCANLINE
 title: _DXGKARG_GETSCANLINE (d3dkmddi.h)
 description: The DXGKARG_GETSCANLINE structure contains information about a video present target's vertical blanking status.
 old-location: display\dxgkarg_getscanline.htm
-ms.assetid: 92138511-46cf-4c8b-84d0-a11fe9208be5
 ms.date: 05/10/2018
 keywords: ["DXGKARG_GETSCANLINE structure"]
 ms.keywords: "*INOUT_PDXGKARG_GETSCANLINE, DXGKARG_GETSCANLINE, DXGKARG_GETSCANLINE structure [Display Devices], DmStructs_9e2cdcde-c2ca-4474-9c96-ee66a80f0295.xml, _DXGKARG_GETSCANLINE, d3dkmddi/DXGKARG_GETSCANLINE, display.dxgkarg_getscanline"
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_GETSCANLINE
  - DXGKARG_GETSCANLINE
 ---
 
@@ -52,17 +52,17 @@ The DXGKARG_GETSCANLINE structure contains information about a video present tar
 
 ## -struct-fields
 
-### -field VidPnTargetId
+### -field VidPnTargetId [in]
 
-[in] The identifier of a display adapter's video present target.
+The identifier of a display adapter's video present target.
 
-### -field InVerticalBlank
+### -field InVerticalBlank [out]
 
-[out] A Boolean variable that receives <b>TRUE</b> if the video present target is in vertical blanking mode and <b>FALSE</b> if the video present target is not in vertical blanking mode.
+A Boolean variable that receives <b>TRUE</b> if the video present target is in vertical blanking mode and <b>FALSE</b> if the video present target is not in vertical blanking mode.
 
-### -field ScanLine
+### -field ScanLine [out]
 
-[out] The video present target's current scan line.
+The video present target's current scan line.
 
 ## -remarks
 
@@ -71,3 +71,4 @@ A video present path represents a connection between a video present source (vie
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_getscanline">DxgkDdiGetScanLine</a>
+

@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_UNREGISTERTRIMNOTIFICATION
 title: PFND3DKMT_UNREGISTERTRIMNOTIFICATION (d3dkmthk.h)
 description: PFND3DKMT_UNREGISTERTRIMNOTIFICATION callback function removes a callback registration for a kernel mode device receiving notifications from a graphics framework (such as OpenGL).
-ms.assetid: 3e329473-b630-4e29-ace3-7ae0c2606198
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_UNREGISTERTRIMNOTIFICATION callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ PFND3DKMT_UNREGISTERTRIMNOTIFICATION callback function removes a callback regist
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_UNREGISTERTRIMNOTIFICATION](ns-d3dkmthk-_d3dkmt_unregistertrimnotification.md) structure.
 

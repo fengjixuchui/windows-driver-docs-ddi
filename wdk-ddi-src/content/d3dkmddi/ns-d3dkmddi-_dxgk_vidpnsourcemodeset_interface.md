@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGK_VIDPNSOURCEMODESET_INTERFACE
 title: _DXGK_VIDPNSOURCEMODESET_INTERFACE (d3dkmddi.h)
 description: The DXGK_VIDPNSOURCEMODESET_INTERFACE structure contains pointers to functions that belong to the VidPn Source Mode Set interface, which is implemented by the video present network (VidPN) manager.
 old-location: display\dxgk_vidpnsourcemodeset_interface.htm
-ms.assetid: c608643f-e791-44b8-8719-4e98e10fa7b0
 ms.date: 10/30/2018
 keywords: ["DXGK_VIDPNSOURCEMODESET_INTERFACE structure"]
 ms.keywords: DXGK_VIDPNSOURCEMODESET_INTERFACE, DXGK_VIDPNSOURCEMODESET_INTERFACE structure [Display Devices], DmStructs_8e8b4b99-8121-4cff-9d1b-f88a9041e7cd.xml, _DXGK_VIDPNSOURCEMODESET_INTERFACE, d3dkmddi/DXGK_VIDPNSOURCEMODESET_INTERFACE, display.dxgk_vidpnsourcemodeset_interface
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_VIDPNSOURCEMODESET_INTERFACE
  - DXGK_VIDPNSOURCEMODESET_INTERFACE
 ---
 
@@ -103,3 +103,4 @@ The display miniport driver calls the <a href="/windows-hardware/drivers/ddi/d3d
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_acquiresourcemodeset">pfnAcquireSourceModeSet</a>
+

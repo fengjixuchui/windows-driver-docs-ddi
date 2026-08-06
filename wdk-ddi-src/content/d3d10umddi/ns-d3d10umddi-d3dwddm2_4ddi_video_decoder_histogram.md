@@ -1,8 +1,7 @@
 ---
 UID: NS:d3d10umddi.D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM
 title: D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM (d3d10umddi.h)
-description: Contains decode histogram output buffer information such as decode profile, resolution, and format.
-ms.assetid: 29d827ff-d958-44dc-8206-cb5017115265
+description: The D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM structure contains decode histogram output buffer information such as decode profile, resolution, and format.
 ms.date: 10/19/2018
 keywords: ["D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM structure"]
 ms.keywords: D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM, D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM,
@@ -32,8 +31,6 @@ api_location:
  - d3d10umddi.h
 api_name:
  - D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM
-product:
- - Windows
 ---
 
 # D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM structure

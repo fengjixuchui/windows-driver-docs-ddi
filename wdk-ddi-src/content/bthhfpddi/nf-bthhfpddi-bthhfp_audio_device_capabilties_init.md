@@ -4,7 +4,6 @@ title: BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT function (bthhfpddi.h)
 description: The BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT method returns a pointer to an initialized BTHHFP_AUDIO_DEVICE_CAPABILTIES data structure.
 old-location: audio\bthhfp_audio_device_capabilties_init.htm
 tech.root: audio
-ms.assetid: c00b8f19-6708-4ec2-928b-610158850247
 ms.date: 05/08/2018
 keywords: ["BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT function"]
 ms.keywords: BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT, BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT method [Audio Devices], audio.bthhfp_audio_device_capabilties_init, bthhfpddi/BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT
@@ -50,7 +49,7 @@ The <b>BTHHFP_AUDIO_DEVICE_CAPABILTIES_INIT</b> method returns a pointer to an i
 
 ## -parameters
 
-### -param caps 
+### -param caps [out]
 
-[out]
+
 A pointer to an initialized <a href="/windows-hardware/drivers/ddi/bthhfpddi/ns-bthhfpddi-_bthhfp_audio_device_capabilties">BTHHFP_AUDIO_DEVICE_CAPABILTIES</a> data structure.

@@ -4,7 +4,6 @@ title: IPrintOemUni::OutputCharStr (prcomoem.h)
 description: The IPrintOemUni::OutputCharStr method enables a rendering plug-in to control the printing of font glyphs.
 old-location: print\iprintoemuni_outputcharstr.htm
 tech.root: print
-ms.assetid: 73518253-d65a-40ab-8735-44e92fbbed57
 ms.date: 04/20/2018
 keywords: ["IPrintOemUni::OutputCharStr"]
 ms.keywords: IPrintOemUni interface [Print Devices],OutputCharStr method, IPrintOemUni.OutputCharStr, IPrintOemUni::OutputCharStr, OutputCharStr, OutputCharStr method [Print Devices], OutputCharStr method [Print Devices],IPrintOemUni interface, prcomoem/IPrintOemUni::OutputCharStr, print.iprintoemuni_outputcharstr, print_unidrv-pscript_rendering_89b41d7b-5ceb-44a1-9b48-71751df6e40a.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemUni.OutputCharStr
+ - IPrintOemUni::OutputCharStr
 ---
 
 # IPrintOemUni::OutputCharStr
@@ -174,3 +173,4 @@ If the specified font is a soft font, the method can just call <b>IPrintOemDrive
 The <code>IPrintOemUni::OutputCharStr</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-getimplementedmethod">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "OutputCharStr" as input.
 
 For additional information see <a href="/windows-hardware/drivers/print/customized-font-management">Customized Font Management</a>.
+

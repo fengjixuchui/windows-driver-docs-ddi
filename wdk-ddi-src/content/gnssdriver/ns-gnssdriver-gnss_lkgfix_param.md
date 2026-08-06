@@ -1,10 +1,9 @@
 ---
-UID: NS:gnssdriver.__unnamed_struct_8
+UID: NS:gnssdriver.GNSS_LKGFIX_PARAM
 title: GNSS_LKGFIX_PARAM (gnssdriver.h)
 description: This structure is not used currently by the system and is not required to be implemented.
 old-location: gnss\gnss_lkgfix_param.htm
 tech.root: gnss
-ms.assetid: AE4F03D6-A3A7-40DD-9DD9-D9B8F25FD567
 ms.date: 02/15/2018
 keywords: ["GNSS_LKGFIX_PARAM structure"]
 ms.keywords: "*PGNSS_LKGFIX_PARAM, GNSS_LKGFIX_PARAM, GNSS_LKGFIX_PARAM structure [Sensor Devices], PGNSS_LKGFIX_PARAM, PGNSS_LKGFIX_PARAM structure pointer [Sensor Devices], gnss.gnss_lkgfix_param, gnssdriver/GNSS_LKGFIX_PARAM, gnssdriver/PGNSS_LKGFIX_PARAM"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - gnssdriver.h
 api_name:
+ - PGNSS_LKGFIX_PARAM
  - GNSS_LKGFIX_PARAM
 ---
 

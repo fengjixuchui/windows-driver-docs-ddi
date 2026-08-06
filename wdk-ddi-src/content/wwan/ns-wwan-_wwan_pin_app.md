@@ -3,7 +3,6 @@ UID: NS:wwan._WWAN_PIN_APP
 title: _WWAN_PIN_APP (wwan.h)
 description: The WWAN_PIN_APP structure specifies the target application ID for a UICC application whose PIN is being queried.
 tech.root: netvista
-ms.assetid: 1061618C-EE4E-466A-AAB1-238798EC7C76
 ms.date: 04/10/2019
 keywords: ["WWAN_PIN_APP structure"]
 ms.keywords: _WWAN_PIN_APP, WWAN_PIN_APP, *PWWAN_PIN_APP,
@@ -37,6 +36,8 @@ api_location:
  - wwan.h
 api_name:
  - _WWAN_PIN_APP
+ - PWWAN_PIN_APP
+ - WWAN_PIN_APP
 ---
 
 # _WWAN_PIN_APP structure
@@ -71,3 +72,4 @@ This structure is used in the [**NDIS_WWAN_PIN_APP**](../ndiswwan/ns-ndiswwan-_n
 [OID_WWAN_PIN_EX2](/windows-hardware/drivers/network/oid-wwan-pin-ex2)
 
 [**NDIS_WWAN_PIN_APP**](../ndiswwan/ns-ndiswwan-_ndis_wwan_pin_app.md)
+

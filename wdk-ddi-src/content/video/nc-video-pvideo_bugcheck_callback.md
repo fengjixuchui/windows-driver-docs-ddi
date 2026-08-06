@@ -4,7 +4,6 @@ title: PVIDEO_BUGCHECK_CALLBACK (video.h)
 description: The HwVidBugcheckCallback function enables the miniport driver to append data to a dump file when a bug check occurs.
 old-location: display\hwvidbugcheckcallback.htm
 tech.root: display
-ms.assetid: 1223534f-a89c-45b4-b07d-75c2c8383b73
 ms.date: 05/10/2018
 keywords: ["PVIDEO_BUGCHECK_CALLBACK callback function"]
 ms.keywords: HwVidBugcheckCallback, HwVidBugcheckCallback callback function [Display Devices], PVIDEO_BUGCHECK_CALLBACK, PVIDEO_BUGCHECK_CALLBACK callback, VideoMiniport_Functions_d3dcce93-d172-4948-8cc5-395dd2a1f9a5.xml, display.hwvidbugcheckcallback, video/HwVidBugcheckCallback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - video.h
 api_name:
- - HwVidBugcheckCallback
+ - PVIDEO_BUGCHECK_CALLBACK
 ---
 
 # PVIDEO_BUGCHECK_CALLBACK callback function
@@ -50,24 +49,24 @@ The <i>HwVidBugcheckCallback</i> function enables the miniport driver to append 
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's per-adapter storage area. For more information, see <a href="/windows-hardware/drivers/kernel/device-extensions">Device Extensions</a>.
 
-### -param BugcheckCode 
+### -param BugcheckCode [in]
 
-[in]
+
 Specifies a <a href="/windows-hardware/drivers/debugger/bug-check-code-reference2">bug check code</a>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to the memory location where the miniport driver can store the data that is to be appended to the dump file.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size, in bytes, of the buffer pointed to by the <i>Buffer</i> parameter.
 
 ## -remarks
@@ -80,10 +79,11 @@ A video miniport driver registers the <i>HwVidBugcheckCallback</i> function by c
 
 To facilitate system recovery after a bug check, any registers that are accessed by this function must not impede the ability of the hardware to transfer to fallback mode, regardless of the state of the device. Also, the function <i>must</i> return control to its caller.
 
-Because a system can consist of multiple video miniport drivers, venders should add an identifying string to the data that this function appends to the dump file. 
+Because a system can consist of multiple video miniport drivers, vendors should add an identifying string to the data that this function appends to the dump file. 
 
 The function is called at raised IRQL and must not attempt to access pageable code or data.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportregisterbugcheckcallback">VideoPortRegisterBugcheckCallback</a>
+

@@ -4,7 +4,6 @@ title: _ADDRESS_OFFSET (1394.h)
 description: The ADDRESS_OFFSET structure specifies the 48-bit address within a device's IEEE 1394 address space.
 old-location: ieee\address_offset.htm
 tech.root: IEEE
-ms.assetid: e1ee536f-40e4-48b7-b2d0-6ead22520ec8
 ms.date: 02/15/2018
 keywords: ["ADDRESS_OFFSET structure"]
 ms.keywords: "*PADDRESS_OFFSET, 1394/ADDRESS_OFFSET, 1394/PADDRESS_OFFSET, 1394stct_7b2efd3c-fcd3-4a01-8ece-8a70975787b1.xml, ADDRESS_OFFSET, ADDRESS_OFFSET structure [Buses], IEEE.address_offset, PADDRESS_OFFSET, PADDRESS_OFFSET structure pointer [Buses], _ADDRESS_OFFSET"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _ADDRESS_OFFSET
+ - PADDRESS_OFFSET
  - ADDRESS_OFFSET
 ---
 
@@ -72,4 +73,5 @@ Specifies the low order offset for a IEEE 1394 address.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537632">REQUEST_ALLOCATE_ADDRESS_RANGE</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ALLOCATE_ADDRESS_RANGE</a>
+

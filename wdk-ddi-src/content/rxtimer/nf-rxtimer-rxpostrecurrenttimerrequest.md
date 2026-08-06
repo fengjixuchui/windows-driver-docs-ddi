@@ -4,7 +4,6 @@ title: RxPostRecurrentTimerRequest function (rxtimer.h)
 description: RxPostRecurrentTimerRequest initializes a recurrent timer request. The passed in pointer to a worker thread routine is called at regular intervals when the recurrent timer fires based on the input parameters to this routine.
 old-location: ifsk\rxpostrecurrenttimerrequest.htm
 tech.root: ifsk
-ms.assetid: a44fb478-4f78-415e-b557-bf383199578c
 ms.date: 04/16/2018
 keywords: ["RxPostRecurrentTimerRequest function"]
 ms.keywords: RxPostRecurrentTimerRequest, RxPostRecurrentTimerRequest routine [Installable File System Drivers], ifsk.rxpostrecurrenttimerrequest, rxref_64318843-28af-4351-9273-06061b94578f.xml, rxtimer/RxPostRecurrentTimerRequest
@@ -50,24 +49,24 @@ api_name:
 
 ## -parameters
 
-### -param pDeviceObject 
+### -param pDeviceObject [in]
 
-[in]
+
 A pointer to the device object to be associated with this timer.
 
-### -param Routine 
+### -param Routine [in]
 
-[in]
+
 A pointer to the worker thread routine to call when this timer expires.
 
-### -param pContext 
+### -param pContext [in]
 
-[in]
+
 A pointer to the context parameter to be associated with this timer.
 
-### -param TimeInterval 
+### -param TimeInterval [in]
 
-[in]
+
 The time interval, in 100-nanosecond ticks.
 
 ## -returns

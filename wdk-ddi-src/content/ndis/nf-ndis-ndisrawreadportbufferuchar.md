@@ -4,7 +4,6 @@ title: NdisRawReadPortBufferUchar macro (ndis.h)
 description: NdisRawReadPortBufferUchar reads a specified number of bytes into a caller-supplied buffer.
 old-location: netvista\ndisrawreadportbufferuchar.htm
 tech.root: netvista
-ms.assetid: de629357-6176-4c98-ba71-ac1eea0c8ff1
 ms.date: 05/02/2018
 keywords: ["NdisRawReadPortBufferUchar macro"]
 ms.keywords: NdisRawReadPortBufferUchar, NdisRawReadPortBufferUchar macro [Network Drivers Starting with Windows Vista], miniport_port_raw_ref_acd96d67-c82f-48dd-b6f1-cb77564e4bd6.xml, ndis/NdisRawReadPortBufferUchar, netvista.ndisrawreadportbufferuchar
@@ -50,24 +49,24 @@ api_name:
 
 ## -parameters
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Specifies the I/O port. This address falls in a range that was mapped during initialization with 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterioportrange">
      NdisMRegisterIoPortRange</a>.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 Pointer to a caller-allocated buffer, in resident memory, into which the bytes will be transferred
      from the NIC's port. The caller must allocate a buffer at least 
      sizeof(
      <i>Length</i> ).
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Specifies how many bytes to transfer from the NIC.
 
 ## -remarks

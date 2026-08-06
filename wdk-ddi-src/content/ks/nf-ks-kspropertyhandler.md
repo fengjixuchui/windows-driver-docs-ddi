@@ -4,7 +4,6 @@ title: KsPropertyHandler function (ks.h)
 description: Drivers call KsPropertyHandler function for IRP handling.
 old-location: stream\kspropertyhandler.htm
 tech.root: stream
-ms.assetid: af94f36f-6e1a-4ac5-be6d-64a9a8dade9e
 ms.date: 04/23/2018
 keywords: ["KsPropertyHandler function"]
 ms.keywords: KsPropertyHandler, KsPropertyHandler function [Streaming Media Devices], ks/KsPropertyHandler, ksfunc_9595b49a-6957-4ebc-8d45-3a92f9190734.xml, stream.kspropertyhandler
@@ -51,19 +50,19 @@ Drivers call <b>KsPropertyHandler</b> function for IRP handling.
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Specifies the IRP with the property request being handled.
 
-### -param PropertySetsCount 
+### -param PropertySetsCount [in]
 
-[in]
+
 Specifies the number of property sets being passed.
 
-### -param PropertySet 
+### -param PropertySet [in]
 
-[in]
+
 Points to an array of <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_set">KSPROPERTY_SET</a> structures. The driver should provide one structure for each property set it wants KsPropertyHandler to handle.
 
 ## -returns

@@ -2,16 +2,14 @@
 UID: NF:printerextension.IPrinterScriptableSequentialStream.Write
 title: IPrinterScriptableSequentialStream::Write (printerextension.h)
 description: The Write method writes the provided JavaScript array to the stream and returns the number of bytes written.
-old-location: print\iprinterscriptablesequentialstream_write.htm
 tech.root: print
-ms.assetid: 1140F881-A6E1-4342-A069-BE9EB3BD4BF8
-ms.date: 04/20/2018
+ms.date: 08/02/2022
 keywords: ["IPrinterScriptableSequentialStream::Write"]
 ms.keywords: IPrinterScriptableSequentialStream interface [Print Devices],Write method, IPrinterScriptableSequentialStream.Write, IPrinterScriptableSequentialStream::Write, Write, Write method [Print Devices], Write method [Print Devices],IPrinterScriptableSequentialStream interface, print.iprinterscriptablesequentialstream_write, printerextension/IPrinterScriptableSequentialStream::Write
 req.header: printerextension.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Windows 8
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,11 +36,8 @@ api_type:
 api_location:
  - printerextension.h
 api_name:
- - IPrinterScriptableSequentialStream.Write
+ - IPrinterScriptableSequentialStream::Write
 ---
-
-# IPrinterScriptableSequentialStream::Write
-
 
 ## -description
 
@@ -52,20 +47,16 @@ The Write method writes the provided JavaScript array to the stream and returns 
 
 ### -param pArray
 
-### -param pcbWritten 
-
-[out, retval]
-The number of bytes written.
-
-
-#### - pdispArray [in]
-
 The array to write.
+
+### -param pcbWritten [out, retval]
+
+The number of bytes written.
 
 ## -returns
 
-This method returns an <b>HRESULT</b> value.
+This method returns an **HRESULT** value.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablesequentialstream">IPrinterScriptableSequentialStream</a>
+[IPrinterScriptableSequentialStream](./nn-printerextension-iprinterscriptablesequentialstream.md)

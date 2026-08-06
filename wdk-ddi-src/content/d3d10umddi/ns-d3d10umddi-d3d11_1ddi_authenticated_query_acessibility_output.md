@@ -3,7 +3,6 @@ UID: NS:d3d10umddi.D3D11_1DDI_AUTHENTICATED_QUERY_ACESSIBILITY_OUTPUT
 title: D3D11_1DDI_AUTHENTICATED_QUERY_ACESSIBILITY_OUTPUT (d3d10umddi.h)
 description: Contains the response to a QueryAuthenticatedChannel(D3D11_1) query with a D3D11_1DDI_AUTHENTICATED_QUERY_OUTPUT.QueryType value of D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_ATTRIBUTES.
 old-location: display\d3d11_1ddi_authenticated_query_acessibility_output.htm
-ms.assetid: 0b32d283-9a5f-4e37-9b03-3c0f5c33c11d
 ms.date: 05/10/2018
 keywords: ["D3D11_1DDI_AUTHENTICATED_QUERY_ACESSIBILITY_OUTPUT structure"]
 ms.keywords: D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_OUTPUT, D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_OUTPUT structure [Display Devices], D3D11_1DDI_AUTHENTICATED_QUERY_ACESSIBILITY_OUTPUT, D3D11_1DDI_AUTHENTICATED_QUERY_ACESSIBILITY_OUTPUT structure [Display Devices], d3d10umddi/D3D11_1DDI_AUTHENTICATED_QUERY_ACESSIBILITY_OUTPUT, display.d3d11_1ddi_authenticated_query_acessibility_output
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
+ - D3D11_1DDI_AUTHENTICATED_QUERY_ACESSIBILITY_OUTPUT
  - D3D11_1DDI_AUTHENTICATED_QUERY_ACCESSIBILITY_OUTPUT
 ---
 
@@ -79,3 +79,4 @@ If <b>TRUE</b>, non-contiguous blocks of video memory may be accessible to the C
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_queryauthenticatedchannel">QueryAuthenticatedChannel(D3D11_1)</a>
+

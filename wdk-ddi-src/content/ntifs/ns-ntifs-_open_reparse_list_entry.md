@@ -4,7 +4,6 @@ title: _OPEN_REPARSE_LIST_ENTRY (ntifs.h)
 description: This structure supports callers opening specific reparse points without inhibiting reparse behavior for all classes of reparse points.
 old-location: ifsk\open_reparse_list_entry_.htm
 tech.root: ifsk
-ms.assetid: A6D28F60-FA38-45EA-9E3C-D2E6F899333E
 ms.date: 04/16/2018
 keywords: ["OPEN_REPARSE_LIST_ENTRY structure"]
 ms.keywords: "*POPEN_REPARSE_LIST_ENTRY, OPEN_REPARSE_LIST_ENTRY, OPEN_REPARSE_LIST_ENTRY , OPEN_REPARSE_LIST_ENTRY structure [Installable File System Drivers], OPEN_REPARSE_POINT_REPARSE_IF_CHILD_EXISTS, OPEN_REPARSE_POINT_REPARSE_IF_CHILD_NOT_EXISTS, OPEN_REPARSE_POINT_REPARSE_IF_DIRECTORY_FINAL_COMPONENT, OPEN_REPARSE_POINT_TAG_ENCOUNTERED, OPEN_REPARSE_POINT_VERSION_EX, POPEN_REPARSE_LIST_ENTRY, POPEN_REPARSE_LIST_ENTRY structure pointer [Installable File System Drivers], _OPEN_REPARSE_LIST_ENTRY, ifsk.open_reparse_list_entry_, ntifs/OPEN_REPARSE_LIST_ENTRY, ntifs/POPEN_REPARSE_LIST_ENTRY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntifs.h
 api_name:
+ - _OPEN_REPARSE_LIST_ENTRY
+ - POPEN_REPARSE_LIST_ENTRY
  - OPEN_REPARSE_LIST_ENTRY
 ---
 
@@ -160,3 +161,4 @@ structures specifying the tag and possibly GUID that should be
   opened directly without returning <b>STATUS_REPARSE</b>.
 If a match is found, the corresponding <b>OPEN_REPARSE_LIST_ENTRY</b>  structure will have the <b>OPEN_REPARSE_POINT_TAG_ENCOUNTERED</b> flag set to indicate that the object that was opened matched the given criteria. If a match is found for a directory that is not the final path  component and <b>STATUS_REPARSE</b> is returned, the unprocessed path
   length will be set in the <b>RemainingLength</b> field.
+

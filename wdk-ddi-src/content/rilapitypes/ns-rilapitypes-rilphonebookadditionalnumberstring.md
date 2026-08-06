@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILPHONEBOOKADDITIONALNUMBERSTRING
 title: RILPHONEBOOKADDITIONALNUMBERSTRING (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILPHONEBOOKADDITIONALNUMBERSTRING structure for internal use only."
 old-location: netvista\rilphonebookadditionalnumberstring.htm
 tech.root: netvista
-ms.assetid: 1d201c4d-606d-4461-ad3d-df48d3455724
 ms.date: 05/02/2018
 keywords: ["RILPHONEBOOKADDITIONALNUMBERSTRING structure"]
 ms.keywords: "*LPRILPHONEBOOKADDITIONALNUMBERSTRING, RILPHONEBOOKADDITIONALNUMBERSTRING, RILPHONEBOOKADDITIONALNUMBERSTRING structure [Network Drivers Starting with Windows Vista], netvista.rilphonebookadditionalnumberstring, ntddrilapitypes/RILPHONEBOOKADDITIONALNUMBERSTRING"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILPHONEBOOKADDITIONALNUMBERSTRING
+ - LPRILPHONEBOOKADDITIONALNUMBERSTRING
 ---
 
 # RILPHONEBOOKADDITIONALNUMBERSTRING structure (rilapitypes.h)

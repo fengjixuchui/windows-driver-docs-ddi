@@ -4,7 +4,6 @@ title: KsSetDefaultClockTime function (ks.h)
 description: The KsSetDefaultClockTime function sets the current time of the clock.
 old-location: stream\kssetdefaultclocktime.htm
 tech.root: stream
-ms.assetid: c8b4fef4-cfbb-4cdd-b762-062b8ae4a423
 ms.date: 04/23/2018
 keywords: ["KsSetDefaultClockTime function"]
 ms.keywords: KsSetDefaultClockTime, KsSetDefaultClockTime function [Streaming Media Devices], ks/KsSetDefaultClockTime, ksfunc_737648d0-8fc4-405c-96c8-61778e6758e9.xml, stream.kssetdefaultclocktime
@@ -53,14 +52,14 @@ The function can be called at DISPATCH_LEVEL.
 
 ## -parameters
 
-### -param DefaultClock 
+### -param DefaultClock [in]
 
-[in]
+
 Specifies an initialize default clock structure that is shared among instances of the default clock for the parent.
 
-### -param Time 
+### -param Time [in]
 
-[in]
+
 Specifies the new time to set the clock.
 
 ## -returns

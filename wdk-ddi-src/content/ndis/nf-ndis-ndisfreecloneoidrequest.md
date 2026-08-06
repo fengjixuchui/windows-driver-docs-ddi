@@ -4,7 +4,6 @@ title: NdisFreeCloneOidRequest function (ndis.h)
 description: The NdisFreeCloneOidRequest function frees a cloned NDIS_OID_REQUEST structure.
 old-location: netvista\ndisfreecloneoidrequest.htm
 tech.root: netvista
-ms.assetid: f610fdf7-5c0e-41e0-994b-6da575541fca
 ms.date: 05/02/2018
 keywords: ["NdisFreeCloneOidRequest function"]
 ms.keywords: NdisFreeCloneOidRequest, NdisFreeCloneOidRequest function [Network Drivers Starting with Windows Vista], ndis/NdisFreeCloneOidRequest, ndis_request_ref_450d80e2-3414-4c02-aca1-848c75f824a6.xml, netvista.ndisfreecloneoidrequest
@@ -49,21 +48,21 @@ api_name:
 
 The 
   <b>NdisFreeCloneOidRequest</b> function frees a cloned 
-  <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure.
+  <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure.
 
 ## -parameters
 
-### -param SourceHandle 
+### -param SourceHandle [in]
 
-[in]
+
 An NDIS handle that identifies a filter module or an intermediate driver's protocol
      binding.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A pointer to the 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure that is to be
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure that is to be
      freed.
 
 ## -remarks
@@ -75,7 +74,7 @@ An NDIS intermediate driver or filter driver calls
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 

@@ -4,7 +4,6 @@ title: _MCD_INIT_DATA (mcd.h)
 description: The changer miniclass driver fills the MCD_INIT_DATA structure with pointers to its internal command processing routines and passes them to the changer class driver.
 old-location: storage\mcd_init_data.htm
 tech.root: storage
-ms.assetid: 4fc4c36f-a2ad-4b9f-a30b-e7ed600c38e9
 ms.date: 03/29/2018
 keywords: ["MCD_INIT_DATA structure"]
 ms.keywords: "*PMCD_INIT_DATA, MCD_INIT_DATA, MCD_INIT_DATA structure [Storage Devices], PMCD_INIT_DATA, PMCD_INIT_DATA structure pointer [Storage Devices], _MCD_INIT_DATA, mcd/MCD_INIT_DATA, mcd/PMCD_INIT_DATA, storage.mcd_init_data, structs-changer_f8810f4b-8465-4751-a885-cc68a88e45fb.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - mcd.h
 api_name:
+ - _MCD_INIT_DATA
+ - PMCD_INIT_DATA
  - MCD_INIT_DATA
 ---
 
@@ -71,7 +72,6 @@ ULONG
   );
 ```
 
-
 ### -field ChangerInitialize
 
 Pointer to changer miniclass driver routine that does miniclass driver-specific initialization and readies the changer to receive other requests. This routine has the following prototype:
@@ -84,7 +84,6 @@ NTSTATUS
   IN PDEVICE_OBJECT  DeviceObject
   );
 ```
-
 
 ### -field ChangerError
 
@@ -102,7 +101,6 @@ VOID
   );
 ```
 
-
 ### -field ChangerPerformDiagnostics
 
 Pointer to changer miniclass driver routine that performs diagnostic tests on the device. This routine has the following prototype:
@@ -116,7 +114,6 @@ NTSTATUS
   OUT PWMI_CHANGER_PROBLEM_DEVICE_ERROR  changerDeviceError
   );
 ```
-
 
 ### -field ChangerGetParameters
 
@@ -132,7 +129,6 @@ NTSTATUS
   );
 ```
 
-
 ### -field ChangerGetStatus
 
 Pointer to changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="/windows-hardware/drivers/ddi/ntddchgr/ni-ntddchgr-ioctl_changer_get_status">IOCTL_CHANGER_GET_STATUS</a>. This routine has the following prototype:
@@ -146,7 +142,6 @@ NTSTATUS
   IN PIRP  Irp
   );
 ```
-
 
 ### -field ChangerGetProductData
 
@@ -162,7 +157,6 @@ NTSTATUS
   );
 ```
 
-
 ### -field ChangerSetAccess
 
 Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="/windows-hardware/drivers/ddi/ntddchgr/ni-ntddchgr-ioctl_changer_set_access">IOCTL_CHANGER_SET_ACCESS</a>. This routine has the following prototype:
@@ -176,7 +170,6 @@ NTSTATUS
   IN PIRP  Irp
   );
 ```
-
 
 ### -field ChangerGetElementStatus
 
@@ -192,7 +185,6 @@ NTSTATUS
   );
 ```
 
-
 ### -field ChangerInitializeElementStatus
 
 Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="/windows-hardware/drivers/ddi/ntddchgr/ni-ntddchgr-ioctl_changer_initialize_element_status">IOCTL_CHANGER_INITIALIZE_ELEMENT_STATUS</a>. This routine has the following prototype:
@@ -206,7 +198,6 @@ NTSTATUS
   IN PIRP  Irp
   );
 ```
-
 
 ### -field ChangerSetPosition
 
@@ -222,7 +213,6 @@ NTSTATUS
   );
 ```
 
-
 ### -field ChangerExchangeMedium
 
 Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="/windows-hardware/drivers/ddi/ntddchgr/ni-ntddchgr-ioctl_changer_exchange_medium">IOCTL_CHANGER_EXCHANGE_MEDIUM</a>. This routine has the following prototype:
@@ -236,7 +226,6 @@ NTSTATUS
   IN PIRP  Irp
   );
 ```
-
 
 ### -field ChangerMoveMedium
 
@@ -252,7 +241,6 @@ NTSTATUS
   );
 ```
 
-
 ### -field ChangerReinitializeUnit
 
 Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="/windows-hardware/drivers/ddi/ntddchgr/ni-ntddchgr-ioctl_changer_reinitialize_transport">IOCTL_CHANGER_REINITIALIZE_TRANSPORT</a>. This routine has the following prototype:
@@ -267,7 +255,6 @@ NTSTATUS
   );
 ```
 
-
 ### -field ChangerQueryVolumeTags
 
 Pointer to a changer miniclass driver routine that handles the device-specific aspects of a device-control IRP with the IOCTL code of <a href="/windows-hardware/drivers/ddi/ntddchgr/ni-ntddchgr-ioctl_changer_query_volume_tags">IOCTL_CHANGER_QUERY_VOLUME_TAGS</a>. This routine has the following prototype:
@@ -281,7 +268,6 @@ NTSTATUS
   IN PIRP  Irp
   );
 ```
-
 
 ## -remarks
 
@@ -382,3 +368,4 @@ This structure is used by the changer driver in Windows XP and later operating s
 
 
 <a href="/windows-hardware/drivers/ddi/ntddchgr/ni-ntddchgr-ioctl_changer_set_position">IOCTL_CHANGER_SET_POSITION</a>
+

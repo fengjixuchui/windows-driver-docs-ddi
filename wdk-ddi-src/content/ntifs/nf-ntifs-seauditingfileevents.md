@@ -4,7 +4,6 @@ title: SeAuditingFileEvents function (ntifs.h)
 description: The SeAuditingFileEvents routine determines whether file open events are currently being audited.
 old-location: ifsk\seauditingfileevents.htm
 tech.root: ifsk
-ms.assetid: f9e9a53f-9f4a-4f44-befa-f11d1fb3372a
 ms.date: 04/16/2018
 keywords: ["SeAuditingFileEvents function"]
 ms.keywords: SeAuditingFileEvents, SeAuditingFileEvents routine [Installable File System Drivers], ifsk.seauditingfileevents, ntifs/SeAuditingFileEvents, seref_b4b8468e-cfb2-4685-9811-2b2733e9fb36.xml
@@ -50,14 +49,14 @@ The <b>SeAuditingFileEvents</b> routine determines whether file open events are 
 
 ## -parameters
 
-### -param AccessGranted 
+### -param AccessGranted [in]
 
-[in]
+
 Set to <b>TRUE</b> if the access attempt was successful, <b>FALSE</b> otherwise.
 
-### -param SecurityDescriptor 
+### -param SecurityDescriptor [in]
 
-[in]
+
 This parameter is ignored.
 
 ## -returns
@@ -66,7 +65,7 @@ This parameter is ignored.
 
 ## -remarks
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

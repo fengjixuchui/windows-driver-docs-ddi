@@ -4,7 +4,6 @@ title: NdisMMapIoSpace function (ndis.h)
 description: NdisMMapIoSpace maps a given bus-relative &#0034;physical&#0034; range of device RAM or registers onto a system-space virtual range.
 old-location: netvista\ndismmapiospace.htm
 tech.root: netvista
-ms.assetid: 16c62146-ed8d-4bf7-9d5e-0c5dbbf3c9c4
 ms.date: 05/02/2018
 keywords: ["NdisMMapIoSpace function"]
 ms.keywords: NdisMMapIoSpace, NdisMMapIoSpace function [Network Drivers Starting with Windows Vista], miniport_memory_mapped_ref_b346fbc3-62d5-447e-82af-329afbafdb73.xml, ndis/NdisMMapIoSpace, netvista.ndismmapiospace
@@ -52,26 +51,26 @@ api_name:
 
 ## -parameters
 
-### -param VirtualAddress 
+### -param VirtualAddress [out]
 
-[out]
+
 Pointer to a caller-supplied variable that is set to the converted virtual address if the call is
      successful.
 
-### -param MiniportAdapterHandle 
+### -param MiniportAdapterHandle [in]
 
-[in]
+
 Specifies the handle input to 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a>.
 
-### -param PhysicalAddress 
+### -param PhysicalAddress [in]
 
-[in]
+
 Specifies the bus-relative base physical address of the device memory range to be mapped.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Specifies the number of bytes to be mapped.
 
 ## -returns

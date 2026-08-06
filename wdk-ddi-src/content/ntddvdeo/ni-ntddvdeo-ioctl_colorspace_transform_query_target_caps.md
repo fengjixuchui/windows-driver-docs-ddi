@@ -3,7 +3,6 @@ UID: NI:ntddvdeo.IOCTL_COLORSPACE_TRANSFORM_QUERY_TARGET_CAPS
 title: IOCTL_COLORSPACE_TRANSFORM_QUERY_TARGET_CAPS
 description: A colorspace transform control IOCTL that must be handled by the monitor, OEM-panel, or port/miniport driver.
 tech.root: display
-ms.assetid: 7e6fa172-48c2-436a-a990-08089568ce76
 ms.date: 04/04/2019
 keywords: ["IOCTL_COLORSPACE_TRANSFORM_QUERY_TARGET_CAPS IOCTL"]
 req.header: ntddvdeo.h
@@ -46,29 +45,25 @@ A colorspace transform control IOCTL that must be handled by the monitor, OEM-pa
 
 ## -ioctlparameters
 
+### -ioctl-major-code
+
 ### -input-buffer
 
-<text></text>
 
 ### -input-buffer-length 
 
-<text></text>
 
 ### -output-buffer
 
-<text></text>
 
 ### -output-buffer-length 
 
-<text></text>
 
 ### -in-out-buffer
 
-<text></text>
 
 ### -inout-buffer-length 
 
-<text></text>
 
 ### -status-block
 

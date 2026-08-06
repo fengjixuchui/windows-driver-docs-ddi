@@ -1,15 +1,13 @@
 ---
 UID: NF:prnasntp.IBidiAsyncNotifyChannel.SendNotification
 title: IBidiAsyncNotifyChannel::SendNotification (prnasntp.h)
-description: 
-old-location: print\ibidiasyncnotifychannel_sendnotification.htm
+description: Defines the IBidiAsyncNotifyChannel::SendNotification method.
 tech.root: print
-ms.assetid: FADB79BD-0404-4116-9EE8-AE7C063DBF26
-ms.date: 04/20/2018
+ms.date: 07/26/2022
 keywords: ["IBidiAsyncNotifyChannel::SendNotification"]
 ms.keywords: IBidiAsyncNotifyChannel interface [Print Devices],SendNotification method, IBidiAsyncNotifyChannel.SendNotification, IBidiAsyncNotifyChannel::SendNotification, SendNotification, SendNotification method [Print Devices], SendNotification method [Print Devices],IBidiAsyncNotifyChannel interface, print.ibidiasyncnotifychannel_sendnotification, prnasntp/IBidiAsyncNotifyChannel::SendNotification
 req.header: prnasntp.h
-req.include-header: 
+req.include-header: Prnasntp.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -38,18 +36,24 @@ api_type:
 api_location:
  - Prnasntp.h
 api_name:
- - IBidiAsyncNotifyChannel.SendNotification
+ - IBidiAsyncNotifyChannel::SendNotification
 ---
-
-# IBidiAsyncNotifyChannel::SendNotification
 
 
 ## -description
 
+Defines the **IBidiAsyncNotifyChannel::SendNotification** method.
+
+## -parameters
+
+### -param unnamedParam1
+
+Defines the **IPrintAsyncNotifyDataObject** parameter *unnamedParam1*.
+
 ## -returns
 
-If this method succeeds, it returns <b xmlns:loc="https://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="https://microsoft.com/wdcml/l10n">HRESULT</b> error code.
+If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/prnasntp/nn-prnasntp-ibidiasyncnotifychannel">IBidiAsyncNotifyChannel</a>
+[IBidiAsyncNotifyChannel](./nn-prnasntp-ibidiasyncnotifychannel.md)

@@ -1,13 +1,10 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_QUERY_VIDEO_MEMORY_INFO_0054
 title: PFND3D12DDI_QUERY_VIDEO_MEMORY_INFO_0054
-description: Queries for video memory info.
+description: The PFND3D12DDI_QUERY_VIDEO_MEMORY_INFO_0054 callback function queries video memory information.
 tech.root: display
-ms.assetid: 775ee197-fb24-4b5b-8be6-690759569538
 ms.date: 04/04/2019
 keywords: ["PFND3D12DDI_QUERY_VIDEO_MEMORY_INFO_0054 callback function"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: d3d12umddi.h
 req.include-header: 
 req.target-type: 
@@ -38,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_QUERY_VIDEO_MEMORY_INFO_0054
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -53,21 +48,21 @@ Queries for video memory info.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in]
 
-[in] Handle to the device to query.
+Handle to the device to query.
 
-### -param NodeIndex
+### -param NodeIndex [in]
 
-[in] The index of the GPU node.
+The index of the GPU node.
 
-### -param MemorySegmentGroup
+### -param MemorySegmentGroup [in]
 
-[in] The memory segment group to query.
+The memory segment group to query.
 
-### -param pVideoMemoryInfo
+### -param pVideoMemoryInfo [out]
 
-[out] Pointer to a D3D12DDI_QUERY_VIDEO_MEMORY_INFO_0054 structure that contains the video memory info.
+Pointer to a D3D12DDI_QUERY_VIDEO_MEMORY_INFO_0054 structure that contains the video memory info.
 
 ## -prototype
 

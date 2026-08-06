@@ -1,9 +1,8 @@
 ---
 UID: NC:d3dkmthk.PFND3DKMT_CHECKSHAREDRESOURCEACCESS
 title: PFND3DKMT_CHECKSHAREDRESOURCEACCESS (d3dkmthk.h)
-description: The D3DKMTCheckSharedResourceAccess function determines if a process can access a shared resource.
+description: The PFND3DKMT_CHECKSHAREDRESOURCEACCESS function determines whether a process can access a shared resource.
 old-location: display\d3dkmtchecksharedresourceaccess.htm
-ms.assetid: ca1861d3-a838-4b4a-9304-e75dcca04f0d
 ms.date: 05/10/2018
 keywords: ["PFND3DKMT_CHECKSHAREDRESOURCEACCESS callback function"]
 ms.keywords: D3DKMTCheckSharedResourceAccess, D3DKMTCheckSharedResourceAccess callback function [Display Devices], OpenGL_Functions_b9ffd997-0bfe-47ad-a769-c2ed8148fe4b.xml, PFND3DKMT_CHECKSHAREDRESOURCEACCESS, PFND3DKMT_CHECKSHAREDRESOURCEACCESS callback, d3dkmthk/D3DKMTCheckSharedResourceAccess, display.d3dkmtchecksharedresourceaccess
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
- - D3DKMTCheckSharedResourceAccess
+ - PFND3DKMT_CHECKSHAREDRESOURCEACCESS
 ---
 
 # PFND3DKMT_CHECKSHAREDRESOURCEACCESS callback function
@@ -50,7 +49,7 @@ The <b>D3DKMTCheckSharedResourceAccess</b> function determines if a process can 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in]
 
@@ -71,3 +70,4 @@ This function might also return other <b>NTSTATUS</b> values.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_checksharedresourceaccess">D3DKMT_CHECKSHAREDRESOURCEACCESS</a>
+

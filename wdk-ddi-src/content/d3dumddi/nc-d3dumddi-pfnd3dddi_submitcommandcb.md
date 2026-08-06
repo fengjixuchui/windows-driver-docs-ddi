@@ -4,7 +4,6 @@ title: PFND3DDDI_SUBMITCOMMANDCB (d3dumddi.h)
 description: pfnSubmitCommandCb is used to submit command buffers on contexts that support graphics processing unit (GPU) virtual addressing.
 old-location: display\pfnsubmitcommandcb.htm
 tech.root: display
-ms.assetid: 60300845-9050-4D0A-83D1-76A45EA823C1
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SUBMITCOMMANDCB callback function"]
 ms.keywords: PFND3DDDI_SUBMITCOMMANDCB, PFND3DDDI_SUBMITCOMMANDCB callback, d3dumddi/pfnSubmitCommandCb, display.pfnsubmitcommandcb, pfnSubmitCommandCb, pfnSubmitCommandCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnSubmitCommandCb
-product:
- - Windows
+ - PFND3DDDI_SUBMITCOMMANDCB
 ---
 
 # PFND3DDDI_SUBMITCOMMANDCB callback function
@@ -62,7 +59,7 @@ Some kernel mode drivers need information from their user mode driver on how to 
 
 A handle to the display device.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -79,3 +76,4 @@ If this callback function succeeds, it returns **S_OK**. Otherwise, it returns a
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_rendercb">pfnRenderCb</a>
+

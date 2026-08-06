@@ -1,10 +1,9 @@
 ---
 UID: NE:rilapitypes.RILSMSSUPPORTCAPS
 title: RILSMSSUPPORTCAPS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILSMSSUPPORTCAPS enumeration for internal use only. Don't use the RILSMSSUPPORTCAPS enumeration in your code."
 old-location: netvista\rilsmssupportcaps.htm
 tech.root: netvista
-ms.assetid: 723c6bf7-beb9-4ab8-8b84-ac22388022b9
 ms.date: 05/02/2018
 keywords: ["RILSMSSUPPORTCAPS enumeration"]
 ms.keywords: RILSMSSUPPORTCAPS, RILSMSSUPPORTCAPS enumeration [Network Drivers Starting with Windows Vista], RIL_CAPS_SMSSUPPORT_16BITREFERENCENUMBER, RIL_CAPS_SMSSUPPORT_ALL, netvista.rilsmssupportcaps, ntddrilapitypes/RILSMSSUPPORTCAPS, ntddrilapitypes/RIL_CAPS_SMSSUPPORT_16BITREFERENCENUMBER, ntddrilapitypes/RIL_CAPS_SMSSUPPORT_ALL

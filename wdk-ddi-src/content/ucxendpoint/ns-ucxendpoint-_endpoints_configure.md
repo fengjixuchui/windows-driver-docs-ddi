@@ -4,7 +4,6 @@ title: _ENDPOINTS_CONFIGURE (ucxendpoint.h)
 description: Describes endpoints to enable or disable endpoints. This structure is passed by UCX in the EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE callback function.
 old-location: buses\_endpoints_configure.htm
 tech.root: usbref
-ms.assetid: C24B7D85-AEA9-43B3-9BEE-262CAA255834
 ms.date: 05/07/2018
 keywords: ["ENDPOINTS_CONFIGURE structure"]
 ms.keywords: "*PENDPOINTS_CONFIGURE, ENDPOINTS_CONFIGURE, ENDPOINTS_CONFIGURE structure [Buses], P_ENDPOINTS_CONFIGURE, P_ENDPOINTS_CONFIGURE structure pointer [Buses], _ENDPOINTS_CONFIGURE, buses._endpoints_configure, ucxendpoint/P_ENDPOINTS_CONFIGURE, ucxendpoint/_ENDPOINTS_CONFIGURE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ucxendpoint.h
 api_name:
+ - _ENDPOINTS_CONFIGURE
+ - PENDPOINTS_CONFIGURE
  - ENDPOINTS_CONFIGURE
 ---
 
@@ -109,3 +110,4 @@ The setting number of the alternate setting that contains the endpoints.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ucxusbdevice/nc-ucxusbdevice-evt_ucx_usbdevice_endpoints_configure">EVT_UCX_USBDEVICE_ENDPOINTS_CONFIGURE</a>
+

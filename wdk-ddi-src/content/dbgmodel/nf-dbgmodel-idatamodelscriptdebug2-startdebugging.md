@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelScriptDebug2.StartDebugging
 title: IDataModelScriptDebug2::StartDebugging (dbgmodel.h)
-description: The StartDebugging method "turns on" the debugger for a particular script.
-ms.assetid: 2cebdd6c-9883-492a-881d-f3b9175804f2
+description: "The IDataModelScriptDebug2::StartDebugging method turns on the debugger for a particular script but does not begin execution break or stepping."
 ms.date: 09/11/2018
 keywords: ["IDataModelScriptDebug2::StartDebugging"]
 ms.keywords: IDataModelScriptDebug2::StartDebugging, StartDebugging, IDataModelScriptDebug2.StartDebugging, IDataModelScriptDebug2::StartDebugging, IDataModelScriptDebug2.StartDebugging
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelScriptDebug2.StartDebugging
+ - IDataModelScriptDebug2::StartDebugging
 ---
 
 # IDataModelScriptDebug2::StartDebugging

@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_34
+UID: NS:ksmedia.KSRTAUDIO_GETREADPACKET_INFO
 title: KSRTAUDIO_GETREADPACKET_INFO (ksmedia.h)
 description: The KSRTAUDIO_GETREADPACKET_INFO structure describes information for an audio packet.
 old-location: audio\ksrtaudio_getreadpacket_info.htm
 tech.root: audio
-ms.assetid: 0157FA09-C227-4BB2-BB75-0AB5802BC150
 ms.date: 05/08/2018
 keywords: ["KSRTAUDIO_GETREADPACKET_INFO structure"]
 ms.keywords: "*PKSRTAUDIO_GETREADPACKET_INFO, KSRTAUDIO_GETREADPACKET_INFO, KSRTAUDIO_GETREADPACKET_INFO structure [Audio Devices], PKSRTAUDIO_GETREADPACKET_INFO, PKSRTAUDIO_GETREADPACKET_INFO structure pointer [Audio Devices], audio.ksrtaudio_getreadpacket_info, ksmedia/KSRTAUDIO_GETREADPACKET_INFO, ksmedia/PKSRTAUDIO_GETREADPACKET_INFO"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSRTAUDIO_GETREADPACKET_INFO
  - KSRTAUDIO_GETREADPACKET_INFO
 ---
 
@@ -62,7 +62,7 @@ Reserved for future use. Must be set to 0.
 
 ### -field PerformanceCounterValue
 
-Returns the performance counter value corresponding to the sampling instant of the first sample in the packet.
+Returns the performance counter value corresponding to the sampling instance of the first sample in the packet.
 
 ### -field MoreData
 
@@ -71,3 +71,4 @@ Returns TRUE if there is more data ready immediately. The OS may optionally imme
 ## -see-also
 
 <a href="/windows-hardware/drivers/audio/ksproperty-rtaudio-getreadpacket">KSPROPERTY_RTAUDIO_GETREADPACKET</a>
+

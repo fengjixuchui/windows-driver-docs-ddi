@@ -4,7 +4,6 @@ title: IoCreateStreamFileObject function (ntifs.h)
 description: The IoCreateStreamFileObject routine creates a new stream file object.
 old-location: ifsk\iocreatestreamfileobject.htm
 tech.root: ifsk
-ms.assetid: 4186a362-f75d-4633-b9eb-5b0810bf56dc
 ms.date: 04/16/2018
 keywords: ["IoCreateStreamFileObject function"]
 ms.keywords: IoCreateStreamFileObject, IoCreateStreamFileObject routine [Installable File System Drivers], ifsk.iocreatestreamfileobject, ioref_b800437d-cde5-4605-955f-c14152aa0576.xml, ntifs/IoCreateStreamFileObject
@@ -50,14 +49,14 @@ The <b>IoCreateStreamFileObject</b> routine creates a new stream file object.
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in, optional]
 
-[in, optional]
+
 Pointer to the file object to which the new stream file is related. This parameter is optional and can be <b>NULL</b>.
 
-### -param DeviceObject 
+### -param DeviceObject [in, optional]
 
-[in, optional]
+
 Pointer to a device object for the device on which the stream file is to be opened. If the caller specifies a non-<b>NULL</b> value for <i>FileObject</i>, the value of <i>DeviceObject</i> is ignored. Otherwise, the caller must specify a non-<b>NULL</b> value for <i>DeviceObject</i>.
 
 ## -returns

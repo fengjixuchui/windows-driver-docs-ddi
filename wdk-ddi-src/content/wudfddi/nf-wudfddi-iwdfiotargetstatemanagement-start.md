@@ -4,7 +4,6 @@ title: IWDFIoTargetStateManagement::Start (wudfddi.h)
 description: The Start method starts sending queued requests to a local I/O target.
 old-location: wdf\iwdfiotargetstatemanagement_start.htm
 tech.root: wdf
-ms.assetid: e242b62a-7a4f-491b-b1a7-3388cf9c5a40
 ms.date: 02/26/2018
 keywords: ["IWDFIoTargetStateManagement::Start"]
 ms.keywords: IWDFIoTargetStateManagement interface,Start method, IWDFIoTargetStateManagement.Start, IWDFIoTargetStateManagement::Start, Start, Start method, Start method,IWDFIoTargetStateManagement interface, UMDFIoTargetObjectRef_931a0267-704f-44f7-8f52-0344afb86f81.xml, umdf.iwdfiotargetstatemanagement_start, wdf.iwdfiotargetstatemanagement_start, wudfddi/IWDFIoTargetStateManagement::Start
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoTargetStateManagement.Start
+ - IWDFIoTargetStateManagement::Start
 ---
 
 # IWDFIoTargetStateManagement::Start
@@ -145,7 +144,6 @@ CMyDevice::OnD0Entry(
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotargetstatemanagement">IWDFIoTargetStateManagement</a>
@@ -153,3 +151,4 @@ CMyDevice::OnD0Entry(
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfremotetarget-stop">IWDFRemoteTarget::Stop</a>
+

@@ -4,7 +4,6 @@ title: KeQueryPriorityThread function (wdm.h)
 description: The KeQueryPriorityThread routine returns the current priority of a particular thread.
 old-location: kernel\kequeryprioritythread.htm
 tech.root: kernel
-ms.assetid: 69a8ad3f-641d-4aaf-9184-e56dee6ca347
 ms.date: 04/30/2018
 keywords: ["KeQueryPriorityThread function"]
 ms.keywords: KeQueryPriorityThread, KeQueryPriorityThread routine [Kernel-Mode Driver Architecture], k105_6a330d84-aa5a-4822-a4d3-7b68aa9e8882.xml, kernel.kequeryprioritythread, wdm/KeQueryPriorityThread
@@ -50,9 +49,9 @@ The <b>KeQueryPriorityThread</b> routine returns the current priority of a parti
 
 ## -parameters
 
-### -param Thread 
+### -param Thread [in]
 
-[in]
+
 Pointer to a dispatcher object of type KTHREAD.
 
 ## -returns

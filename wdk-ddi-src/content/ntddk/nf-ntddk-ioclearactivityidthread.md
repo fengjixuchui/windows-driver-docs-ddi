@@ -4,7 +4,6 @@ title: IoClearActivityIdThread function (ntddk.h)
 description: The IoClearActivityIdThread routine clears the activity ID of the current thread.
 old-location: kernel\ioclearactivityidthread.htm
 tech.root: kernel
-ms.assetid: 2F69FC2F-C336-4B51-8EFC-0A9AA22121B9
 ms.date: 04/30/2018
 keywords: ["IoClearActivityIdThread function"]
 ms.keywords: IoClearActivityIdThread, IoClearActivityIdThread routine [Kernel-Mode Driver Architecture], kernel.ioclearactivityidthread, ntddk/IoClearActivityIdThread
@@ -50,8 +49,8 @@ The IoClearActivityIdThread routine clears the activity ID of the current thread
 
 ## -parameters
 
-### -param OriginalId 
+### -param OriginalId [in]
 
-[in]
+
 The activity ID that was previously set on the thread.
 

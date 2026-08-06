@@ -4,7 +4,6 @@ title: IWDFRemoteTarget::Start (wudfddi.h)
 description: The IWDFRemoteTarget::Start method restarts a remote I/O target that is stopped.
 old-location: wdf\iwdfremotetarget_start.htm
 tech.root: wdf
-ms.assetid: f0f21d34-21f2-48ac-994f-e050f4447745
 ms.date: 02/26/2018
 keywords: ["IWDFRemoteTarget::Start"]
 ms.keywords: IWDFRemoteTarget interface,Start method, IWDFRemoteTarget.Start, IWDFRemoteTarget::Start, Start, Start method, Start method,IWDFRemoteTarget interface, UMDFIoTargetObjectRef_8e44c1ab-5ce6-4c4a-a7dc-e9de4b10ba12.xml, umdf.iwdfremotetarget_start, wdf.iwdfremotetarget_start, wudfddi/IWDFRemoteTarget::Start
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFRemoteTarget.Start
+ - IWDFRemoteTarget::Start
 ---
 
 # IWDFRemoteTarget::Start
@@ -96,7 +95,6 @@ if (S_OK == RemoteTarget->Start())
 ...}
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfremotetarget">IWDFRemoteTarget</a>
@@ -104,3 +102,4 @@ if (S_OK == RemoteTarget->Start())
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfremotetarget-stop">IWDFRemoteTarget::Stop</a>
+

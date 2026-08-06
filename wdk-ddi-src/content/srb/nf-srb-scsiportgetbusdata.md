@@ -4,7 +4,6 @@ title: ScsiPortGetBusData function (srb.h)
 description: The ScsiPortGetBusData routine returns bus-type-specific configuration information that a miniport driver's HwScsiFindAdapter routine might use to determine whether it supports a particular adapter on a particular I/O bus, and to configure the HBA if it does.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
 old-location: storage\scsiportgetbusdata.htm
 tech.root: storage
-ms.assetid: 43d30c99-9f9e-4516-8c50-e096f760a774
 ms.date: 03/29/2018
 keywords: ["ScsiPortGetBusData function"]
 ms.keywords: ScsiPortGetBusData, ScsiPortGetBusData routine [Storage Devices], scsiprt_85566dfe-b1b6-4b6d-9f80-69fbdd82904a.xml, srb/ScsiPortGetBusData, storage.scsiportgetbusdata
@@ -52,36 +51,36 @@ The <b>ScsiPortGetBusData</b> routine returns bus-type-specific configuration in
 
 ## -parameters
 
-### -param DeviceExtension 
+### -param DeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's per-HBA storage area.
 
-### -param BusDataType 
+### -param BusDataType [in]
 
-[in]
+
 Contains a value of type <a href="/windows-hardware/drivers/ddi/ntddk/ne-ntddk-_bus_data_type">BUS_DATA_TYPE</a> that specifies the type of bus-specific configuration data to be returned. Currently, this value can be one of the following: <b>Cmos</b>, <b>EisaConfiguration</b>, <b>Pos</b>, or <b>PCIConfiguration</b>. However, additional types of bus configuration will be supported in the future. The upper bound on the types supported is always <b>MaximumBusDataType</b>.
 
-### -param SystemIoBusNumber 
+### -param SystemIoBusNumber [in]
 
-[in]
+
 Specifies the system-assigned number of the I/O bus. The miniport driver's <a href="/previous-versions/windows/hardware/drivers/ff557300(v=vs.85)">HwScsiFindAdapter</a> routine obtains this value from the input PORT_CONFIGURATION_INFORMATION <b>SystemIoBusNumber</b> member.
 
-### -param SlotNumber 
+### -param SlotNumber [in]
 
-[in]
+
 Specifies the logical slot number or location of the device.
 
 If <b>PCIConfiguration</b> is specified as the <i>BusDataType</i>, this parameter must be specified as a PCI_SLOT_NUMBER-type value.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to a buffer or area to which the configuration data is returned or, if the given <i>Length</i> is zero, points to a location to which the operating system-specific port driver returns a pointer to a buffer that it allocates.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Specifies the maximum number of bytes to return at <i>Buffer</i>, or zero if the caller requires the operating system-specific port driver to allocate a buffer to contain the data.
 
 ## -returns

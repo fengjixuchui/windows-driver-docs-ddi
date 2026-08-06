@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_PROCESS_UI_RESPONSE
 title: DOT11EXTIHV_PROCESS_UI_RESPONSE (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_PROCESS_UI_RESPONSE callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvprocessuiresponse.htm
 tech.root: netvista
-ms.assetid: 1483be56-71c5-435b-843d-821f73dc79d7
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_PROCESS_UI_RESPONSE callback"]
 ms.keywords: DOT11EXTIHV_PROCESS_UI_RESPONSE, Dot11ExtIhvProcessUIResponse, Dot11ExtIhvProcessUIResponse callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_6bf65442-0a9a-4061-81a3-855b0ae80df4.xml, netvista.dot11extihvprocessuiresponse, wlanihv/Dot11ExtIhvProcessUIResponse
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_PROCESS_UI_RESPONSE
  - wlanihv/DOT11EXTIHV_PROCESS_UI_RESPONSE
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtIhvProcessUIResponse
+ - DOT11EXTIHV_PROCESS_UI_RESPONSE
 ---
 
 # DOT11EXTIHV_PROCESS_UI_RESPONSE callback
@@ -54,23 +52,23 @@ api_name:
 
 ## -parameters
 
-### -param guidUIRequest 
+### -param guidUIRequest [in]
 
-[in]
+
 The GUID that identifies the request. This GUID value was created by the IHV Extensions DLL and
      passed through the
      <i>pIhvUIRequest</i> parameter of the call to
      <a href="..\wlanihv\nc-wlanihv-dot11ext_send_ui_request.md">Dot11ExtSendUIRequest</a>.
 
-### -param dwByteCount 
+### -param dwByteCount [in]
 
-[in]
+
 The length, in bytes, of the data referenced through the
      <i>pvResponseBuffer</i> parameter.
 
-### -param pvResponseBuffer 
+### -param pvResponseBuffer [in, optional]
 
-[in, optional]
+
 A pointer to the buffer that contains the user data.
 
 ## -returns
@@ -123,3 +121,4 @@ After receiving this data from the IHV Extensions DLL, the operating system call
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_send_ui_request.md">Dot11ExtSendUIRequest</a>
+

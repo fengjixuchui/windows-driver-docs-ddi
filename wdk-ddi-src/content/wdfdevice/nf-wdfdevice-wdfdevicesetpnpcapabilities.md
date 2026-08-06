@@ -4,7 +4,6 @@ title: WdfDeviceSetPnpCapabilities function (wdfdevice.h)
 description: The WdfDeviceSetPnpCapabilities method reports a device's Plug and Play capabilities.
 old-location: wdf\wdfdevicesetpnpcapabilities.htm
 tech.root: wdf
-ms.assetid: fba8bc7d-b776-44e8-a4bf-12de707f2e4f
 ms.date: 02/26/2018
 keywords: ["WdfDeviceSetPnpCapabilities function"]
 ms.keywords: DFDeviceObjectGeneralRef_5f299c2e-344d-4213-a2fa-8266f056896c.xml, WdfDeviceSetPnpCapabilities, WdfDeviceSetPnpCapabilities method, kmdf.wdfdevicesetpnpcapabilities, wdf.wdfdevicesetpnpcapabilities, wdfdevice/WdfDeviceSetPnpCapabilities
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfDeviceSetPnpCapabilities</b> method reports a device's Plug and Play c
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param PnpCapabilities 
+### -param PnpCapabilities [in]
 
-[in]
+
 A pointer to a driver-allocated <a href="/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_pnp_capabilities">WDF_DEVICE_PNP_CAPABILITIES</a> structure.
 
 ## -remarks

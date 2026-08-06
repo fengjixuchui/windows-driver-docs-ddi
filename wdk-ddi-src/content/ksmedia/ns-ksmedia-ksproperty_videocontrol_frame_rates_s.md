@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_154
+UID: NS:ksmedia.KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S
 title: KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S (ksmedia.h)
 description: The KSPROPERTY_VIDEOCONTROL_FRAME_RATES structure describes available frame rates in 100-nanosecond units.
 old-location: stream\ksproperty_videocontrol_frame_rates_s.htm
 tech.root: stream
-ms.assetid: fbd45594-a7cb-4376-b05c-d1e09462c78c
 ms.date: 04/30/2019
 keywords: ["KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S structure"]
 ms.keywords: "*PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S, KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S, KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S structure [Streaming Media Devices], PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S, PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S, ksmedia/PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S, stream.ksproperty_videocontrol_frame_rates_s, vidcapstruct_6f4d2262-8995-4b48-9029-595a7e7c1e15.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S
  - KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S
 ---
 
@@ -54,7 +54,7 @@ The KSPROPERTY_VIDEOCONTROL_FRAME_RATES structure describes available frame rate
 
 ### -field Property
 
-Specifies an initialized <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+Specifies an initialized <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 ### -field StreamIndex
 
@@ -74,8 +74,9 @@ The minidriver should return a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-k
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
 <a href="/windows-hardware/drivers/stream/propsetid-vidcap-videocontrol">PROPSETID_VIDCAP_VIDEOCONTROL</a>
+

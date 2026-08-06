@@ -4,7 +4,6 @@ title: NDIS_TIMER_FUNCTION (ndis.h)
 description: The NdisTimerFunction function is called by NDIS after a driver sets a one-shot or periodic timer when a timer fires.Note  You must declare the function by using the NDIS_TIMER_FUNCTION type.
 old-location: netvista\nettimercallback.htm
 tech.root: netvista
-ms.assetid: 76e59376-58a4-4e35-bac4-ec5938c88cd7
 ms.date: 05/02/2018
 keywords: ["NDIS_TIMER_FUNCTION callback function"]
 ms.keywords: NDIS_TIMER_FUNCTION, NDIS_TIMER_FUNCTION callback, NdisTimerFunction, NdisTimerFunction callback function [Network Drivers Starting with Windows Vista], ndis/NdisTimerFunction, ndis_timer_ref_9040f7c2-905a-457d-a7c3-07253e2fb3da.xml, netvista.nettimercallback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - NdisTimerFunction
+ - NDIS_TIMER_FUNCTION
 ---
 
 # NDIS_TIMER_FUNCTION callback function
@@ -54,14 +53,14 @@ The
 
 ## -parameters
 
-### -param SystemSpecific1 
+### -param SystemSpecific1 [in]
 
-[in]
+
 A pointer to a system-specific value that is reserved for system use.
 
-### -param FunctionContext 
+### -param FunctionContext [in]
 
-[in]
+
 A pointer to a driver-supplied context area that the driver passed to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissettimerobject">NdisSetTimerObject</a> function. If the 
      <i>FunctionContext</i> parameter of 
@@ -71,14 +70,14 @@ A pointer to a driver-supplied context area that the driver passed to the
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatetimerobject">NdisAllocateTimerObject</a> function
      to initialize the associated timer object.
 
-### -param SystemSpecific2 
+### -param SystemSpecific2 [in]
 
-[in]
+
 A pointer to a system-specific value that is reserved for system use.
 
-### -param SystemSpecific3 
+### -param SystemSpecific3 [in]
 
-[in]
+
 A pointer to a system-specific value that is reserved for system use.
 
 ## -remarks
@@ -164,3 +163,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/network/setting-and-clearing-timers">Setting and Clearing Timers</a>
+

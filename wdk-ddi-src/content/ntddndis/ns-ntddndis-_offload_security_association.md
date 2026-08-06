@@ -4,7 +4,6 @@ title: _OFFLOAD_SECURITY_ASSOCIATION (ntddndis.h)
 description: The OFFLOAD_SECURITY_ASSOCIATION structure specifies a single security association (SA).
 old-location: netvista\offload_security_association.htm
 tech.root: netvista
-ms.assetid: 2c392a13-4db4-4b22-aacf-4450eb1e191c
 ms.date: 05/02/2018
 keywords: ["OFFLOAD_SECURITY_ASSOCIATION structure"]
 ms.keywords: "*POFFLOAD_SECURITY_ASSOCIATION, 216offload_3c6a958b-81b2-4f18-b974-b0669b6294e1.xml, OFFLOAD_SECURITY_ASSOCIATION, OFFLOAD_SECURITY_ASSOCIATION structure [Network Drivers Starting with Windows Vista], POFFLOAD_SECURITY_ASSOCIATION, POFFLOAD_SECURITY_ASSOCIATION structure pointer [Network Drivers Starting with Windows Vista], _OFFLOAD_SECURITY_ASSOCIATION, netvista.offload_security_association, ntddndis/OFFLOAD_SECURITY_ASSOCIATION, ntddndis/POFFLOAD_SECURITY_ASSOCIATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _OFFLOAD_SECURITY_ASSOCIATION
+ - POFFLOAD_SECURITY_ASSOCIATION
  - OFFLOAD_SECURITY_ASSOCIATION
 ---
 
@@ -111,3 +112,4 @@ The OFFLOAD_SECURITY_ASSOCIATION structure is used with the
 
 <a href="/windows-hardware/drivers/network/oid-tcp-task-ipsec-add-udpesp-sa">
    OID_TCP_TASK_IPSEC_ADD_UDPESP_SA</a>
+

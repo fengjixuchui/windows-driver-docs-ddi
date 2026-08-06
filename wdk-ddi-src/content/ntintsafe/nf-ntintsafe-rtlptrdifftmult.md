@@ -4,7 +4,6 @@ title: RtlPtrdiffTMult function (ntintsafe.h)
 description: Multiplies one value of type PTRDIFF_T by another.
 old-location: kernel\rtlptrdifftmult.htm
 tech.root: kernel
-ms.assetid: 71F6D886-D32E-4C90-B5BA-A4A1BBCD0B8F
 ms.date: 04/30/2018
 keywords: ["RtlPtrdiffTMult function"]
 ms.keywords: RtlPtrdiffTMult, RtlPtrdiffTMult function [Kernel-Mode Driver Architecture], kernel.rtlptrdifftmult, ntintsafe/RtlPtrdiffTMult
@@ -50,19 +49,19 @@ Multiplies one value of type <b>PTRDIFF_T</b> by another.
 
 ## -parameters
 
-### -param Multiplicand 
+### -param Multiplicand [in]
 
-[in]
+
 The value to be multiplied by <i>Multiplier</i>.
 
-### -param Multiplier 
+### -param Multiplier [in]
 
-[in]
+
 The value by which to multiply <i>Multiplicand</i>.
 
-### -param pResult 
+### -param pResult [out]
 
-[out]
+
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

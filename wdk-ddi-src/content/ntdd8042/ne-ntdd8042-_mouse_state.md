@@ -4,7 +4,6 @@ title: _MOUSE_STATE (ntdd8042.h)
 description: The MOUSE_STATE enumeration type identifies the current state of input from a mouse.
 old-location: hid\mouse_state.htm
 tech.root: hid
-ms.assetid: 6d2af5a8-f12a-4d22-945c-8cba32b3f277
 ms.date: 04/30/2018
 keywords: ["MOUSE_STATE enumeration"]
 ms.keywords: "*PMOUSE_STATE, MOUSE_STATE, MOUSE_STATE enumeration [Human Input Devices], MouseExpectingACK, MouseIdle, MouseResetting, PMOUSE_STATE, PMOUSE_STATE enumeration pointer [Human Input Devices], XMovement, YMovement, ZMovement, _MOUSE_STATE, hid.mouse_state, i8042ref_80f54e52-c6ff-4346-ba46-708cce3af17c.xml, ntdd8042/MOUSE_STATE, ntdd8042/MouseExpectingACK, ntdd8042/MouseIdle, ntdd8042/MouseResetting, ntdd8042/PMOUSE_STATE, ntdd8042/XMovement, ntdd8042/YMovement, ntdd8042/ZMovement"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntdd8042.h
 api_name:
+ - _MOUSE_STATE
+ - PMOUSE_STATE
  - MOUSE_STATE
 ---
 
@@ -89,3 +90,4 @@ The MOUSE_STATE enumerator is used as input to a <a href="/windows-hardware/driv
 
 
 <a href="/windows-hardware/drivers/ddi/ntdd8042/nc-ntdd8042-pi8042_mouse_isr">PI8042_MOUSE_ISR</a>
+

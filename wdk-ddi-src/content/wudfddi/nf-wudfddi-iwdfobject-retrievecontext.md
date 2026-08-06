@@ -4,7 +4,6 @@ title: IWDFObject::RetrieveContext (wudfddi.h)
 description: The RetrieveContext method retrieves a context that was previously registered through the IWDFObject::AssignContext method.
 old-location: wdf\iwdfobject_retrievecontext.htm
 tech.root: wdf
-ms.assetid: b76acae1-3c37-4095-bf8b-1785dc90f378
 ms.date: 02/26/2018
 keywords: ["IWDFObject::RetrieveContext"]
 ms.keywords: IWDFObject interface,RetrieveContext method, IWDFObject.RetrieveContext, IWDFObject::RetrieveContext, RetrieveContext, RetrieveContext method, RetrieveContext method,IWDFObject interface, UMDFBaseObjectRef_e12f4a9b-d71b-4fc1-96df-0244b7513f32.xml, umdf.iwdfobject_retrievecontext, wdf.iwdfobject_retrievecontext, wudfddi/IWDFObject::RetrieveContext
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFObject.RetrieveContext
+ - IWDFObject::RetrieveContext
 ---
 
 # IWDFObject::RetrieveContext
@@ -52,9 +51,9 @@ The <b>RetrieveContext</b> method retrieves a context that was previously regist
 
 ## -parameters
 
-### -param ppvContext 
+### -param ppvContext [out]
 
-[out]
+
 A pointer to a buffer that receives a pointer to the previously registered context.
 
 ## -returns
@@ -83,3 +82,4 @@ For a code example of how to use the <b>RetrieveContext</b> method, see <a href=
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfobject-assigncontext">IWDFObject::AssignContext</a>
+

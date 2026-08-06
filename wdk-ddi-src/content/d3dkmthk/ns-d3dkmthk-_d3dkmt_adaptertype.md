@@ -3,8 +3,7 @@ UID: NS:d3dkmthk._D3DKMT_ADAPTERTYPE
 title: _D3DKMT_ADAPTERTYPE (d3dkmthk.h)
 description: Specifies the type of display device that the graphics adapter supports.
 old-location: display\d3dkmt_adaptertype.htm
-ms.assetid: a92865bc-620f-434d-a185-b837924599fc
-ms.date: 05/10/2018
+ms.date: 03/08/2022
 keywords: ["D3DKMT_ADAPTERTYPE structure"]
 ms.keywords: D3DKMT_ADAPTERTYPE, D3DKMT_ADAPTERTYPE structure [Display Devices], _D3DKMT_ADAPTERTYPE, d3dkmthk/D3DKMT_ADAPTERTYPE, display.d3dkmt_adaptertype
 req.header: d3dkmthk.h
@@ -40,11 +39,11 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
+ - _D3DKMT_ADAPTERTYPE
  - D3DKMT_ADAPTERTYPE
 ---
 
 # _D3DKMT_ADAPTERTYPE structure
-
 
 ## -description
 
@@ -70,19 +69,41 @@ The adapter supports a power-on self-test (POST) device.
 
 ### -field HybridDiscrete
 
+The adapter supports a hybrid discrete device.
+
 ### -field HybridIntegrated
+
+The adapter supports a hybrid integrated device.
 
 ### -field IndirectDisplayDevice
 
+The adapter supports an indirect display device.
+
 ### -field Paravirtualized
 
-The adapter supports paravirtualization.
+The adapter supports para-virtualization.
 
 ### -field ACGSupported
+
+The adapter supports Arbitrary Code Guard (ACG).
 
 ### -field SupportSetTimingsFromVidPn
 
 ### -field Detachable
+
+The adapter supports a detachable device.
+
+### -field ComputeOnly
+
+The adapter supports a compute-only device.
+
+### -field Prototype
+
+The adapter supports a prototype device.
+
+### -field RuntimePowerManagement
+
+The adapter supports a runtime power management device.
 
 ### -field Reserved
 
@@ -91,4 +112,3 @@ Reserved for internal use.
 ### -field Value
 
 The value used to operate over the other members.
-

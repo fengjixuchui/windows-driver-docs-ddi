@@ -4,7 +4,6 @@ title: WdfDpcCreate function (wdfdpc.h)
 description: The WdfDpcCreate method creates a framework DPC object and registers an EvtDpcFunc callback function.
 old-location: wdf\wdfdpccreate.htm
 tech.root: wdf
-ms.assetid: 46c6ffd1-4c01-4d1d-b7da-8f97f728ac71
 ms.date: 02/26/2018
 keywords: ["WdfDpcCreate function"]
 ms.keywords: DFDpcObjectRef_865403a4-b5c1-4113-b3b1-1929285bb82d.xml, WdfDpcCreate, WdfDpcCreate method, kmdf.wdfdpccreate, wdf.wdfdpccreate, wdfdpc/WdfDpcCreate
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,19 +52,19 @@ The <b>WdfDpcCreate</b> method creates a framework DPC object and registers an <
 
 ## -parameters
 
-### -param Config 
+### -param Config [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfdpc/ns-wdfdpc-_wdf_dpc_config">WDF_DPC_CONFIG</a> structure.
 
-### -param Attributes 
+### -param Attributes [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that specifies attributes for the new DPC object.
 
-### -param Dpc 
+### -param Dpc [out]
 
-[out]
+
 A pointer to a location that receives a handle to the new framework DPC object.
 
 ## -returns

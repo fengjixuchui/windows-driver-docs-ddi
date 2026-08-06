@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostType.GetHashCode
 title: IDebugHostType::GetHashCode (dbgmodel.h)
-description: The GetHashCode method returns a 32-bit hash code for the type.
-ms.assetid: e99f9667-bcb2-4209-9581-bd6c55ba9426
+description: "The IDebugHostType::GetHashCode method, when called on a type, gets a 32-bit hash code for the type."
 ms.date: 08/22/2018
 keywords: ["IDebugHostType::GetHashCode"]
 ms.keywords: IDebugHostType::GetHashCode, GetHashCode, IDebugHostType.GetHashCode, IDebugHostType::GetHashCode, IDebugHostType.GetHashCode
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostType.GetHashCode
+ - IDebugHostType::GetHashCode
 ---
 
 # IDebugHostType::GetHashCode

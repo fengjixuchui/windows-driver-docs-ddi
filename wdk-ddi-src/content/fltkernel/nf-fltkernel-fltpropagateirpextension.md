@@ -3,7 +3,6 @@ UID: NF:fltkernel.FltPropagateIrpExtension
 title: FltPropagateIrpExtension function (fltkernel.h)
 description: The FltPropagateIrpExtension routine copies the IRP extension from one minifilter's callback data to another's callback data.
 tech.root: ifsk
-ms.assetid: d74bc90e-5118-49ea-8aab-70d172eb0196
 ms.date: 01/02/2020
 keywords: ["FltPropagateIrpExtension function"]
 ms.keywords: FltPropagateIrpExtension, FltPropagateIrpExtension routine, fltkernel/FltPropagateIrpExtension
@@ -49,19 +48,19 @@ The **FltPropagateIrpExtension** routine copies the IRP extension from one minif
 
 ## -parameters
 
-### -param SourceData 
+### -param SourceData [in]
 
-[in]
+
 Pointer to the callback data context from which to copy the extension data.
 
-### -param TargetData 
+### -param TargetData [in/out]
 
-[in/out]
+
 Pointer to the callback data context in which to copy the extension data.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Reserved; must be set to 0.
 
 ## -returns

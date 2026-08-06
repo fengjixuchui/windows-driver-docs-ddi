@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugBreakpoint.SetFlags
 title: IDebugBreakpoint::SetFlags (dbgeng.h)
-description: The SetFlags method sets the flags for a breakpoint.
+description: The SetFlags method sets the flags for a breakpoint. This method belongs to the IDebugBreakpoint interface.
 old-location: debugger\setflags.htm
 tech.root: debugger
-ms.assetid: 126741ba-b373-466e-986d-44e33c841eee
 ms.date: 05/03/2018
 keywords: ["IDebugBreakpoint::SetFlags"]
 ms.keywords: ComOther_0fb1a5d9-2c1f-4966-9838-e7d0ae17a43f.xml, IDebugBreakpoint interface [Windows Debugging],SetFlags method, IDebugBreakpoint.SetFlags, IDebugBreakpoint2 interface [Windows Debugging],SetFlags method, IDebugBreakpoint2::SetFlags, IDebugBreakpoint::SetFlags, SetFlags, SetFlags method [Windows Debugging], SetFlags method [Windows Debugging],IDebugBreakpoint interface, SetFlags method [Windows Debugging],IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint2::SetFlags, dbgeng/IDebugBreakpoint::SetFlags, debugger.setflags
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugBreakpoint.SetFlags
- - IDebugBreakpoint2.SetFlags
+ - IDebugBreakpoint::SetFlags
 ---
 
 # IDebugBreakpoint::SetFlags
@@ -51,9 +49,9 @@ The <b>SetFlags</b> method sets the flags for a breakpoint.
 
 ## -parameters
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 The new flags for the breakpoint.  <i>Flags</i> is a bit field. It replaces the existing flag bits.  For more information about the flag bit field and an explanation of each flag, see <a href="/windows-hardware/drivers/debugger/controlling-breakpoint-flags-and-parameters">Controlling Breakpoint Flags and Parameters</a>.  You cannot change the DEBUG_BREAKPOINT_DEFERRED flag in the engine. This bit in <i>Flags</i> must always be zero.
 
 ## -returns
@@ -82,3 +80,4 @@ This method can also return error values.  For more information, see <a href="/w
 ## -remarks
 
 For more information about breakpoint properties, see <a href="/windows-hardware/drivers/debugger/controlling-breakpoint-flags-and-parameters">Controlling Breakpoint Flags and Parameters</a>.
+

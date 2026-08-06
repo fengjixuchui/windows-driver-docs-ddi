@@ -1,16 +1,15 @@
 ---
 UID: NC:d3dkmthk.PFND3DKMT_CREATEALLOCATION
 title: PFND3DKMT_CREATEALLOCATION (d3dkmthk.h)
-description: The D3DKMTCreateAllocation function creates allocations of system or video memory.
+description: The PFND3DKMT_CREATEALLOCATION function creates or adds allocations of system or video memory. The allocations can be standalone or associated with a resource.
 old-location: display\d3dkmtcreateallocation.htm
-ms.assetid: 1374ad6f-3a79-4db1-acc9-28c8bd9aa93d
 ms.date: 05/10/2018
 keywords: ["PFND3DKMT_CREATEALLOCATION callback function"]
 ms.keywords: D3DKMTCreateAllocation, D3DKMTCreateAllocation callback function [Display Devices], OpenGL_Functions_dfd80d2b-c3c7-4aca-833c-153090153b96.xml, PFND3DKMT_CREATEALLOCATION, PFND3DKMT_CREATEALLOCATION callback, d3dkmthk/D3DKMTCreateAllocation, display.d3dkmtcreateallocation
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
- - D3DKMTCreateAllocation
+ - PFND3DKMT_CREATEALLOCATION
 ---
 
 # PFND3DKMT_CREATEALLOCATION callback function
@@ -50,7 +49,7 @@ The <b>D3DKMTCreateAllocation</b> function creates allocations of system or vide
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in, out]
 
@@ -152,3 +151,4 @@ HRESULT CreateSysmemResource(D3DKMT_HANDLE hDevice,
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_createallocation">D3DKMT_CREATEALLOCATION</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NS:wdm._PCI_EXPRESS_ROOT_ERROR_COMMAND
 title: _PCI_EXPRESS_ROOT_ERROR_COMMAND (wdm.h)
-description: The PCI_EXPRESS_ROOT_ERROR_COMMAND structure describes a PCI Express (PCIe) root error command register of a PCIe advanced error reporting capability structure.
+description: The _PCI_EXPRESS_ROOT_ERROR_COMMAND structure (wdm.h) describes a PCI Express (PCIe) root error command register for advanced error reporting.
 old-location: pci\pci_express_root_error_command.htm
 tech.root: PCI
-ms.assetid: 659c0612-5623-4615-b9c5-6d2656097b89
 ms.date: 02/24/2018
 keywords: ["PCI_EXPRESS_ROOT_ERROR_COMMAND structure"]
 ms.keywords: "*PPCI_EXPRESS_ROOT_ERROR_COMMAND, PCI.pci_express_root_error_command, PCI_EXPRESS_ROOT_ERROR_COMMAND, PCI_EXPRESS_ROOT_ERROR_COMMAND union [Buses], PPCI_EXPRESS_ROOT_ERROR_COMMAND, PPCI_EXPRESS_ROOT_ERROR_COMMAND union pointer [Buses], _PCI_EXPRESS_ROOT_ERROR_COMMAND, pci_struct_f7834746-d8b5-4765-8434-8f7837a47871.xml, wdm/PCI_EXPRESS_ROOT_ERROR_COMMAND, wdm/PPCI_EXPRESS_ROOT_ERROR_COMMAND"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: PASSIVE_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: PCI_EXPRESS_ROOT_ERROR_COMMAND, *PPCI_EXPRESS_ROOT_ERROR_COMMAND
-req.product: Windows 10 or later.
 f1_keywords:
  - _PCI_EXPRESS_ROOT_ERROR_COMMAND
  - wdm/_PCI_EXPRESS_ROOT_ERROR_COMMAND
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _PCI_EXPRESS_ROOT_ERROR_COMMAND
+ - PPCI_EXPRESS_ROOT_ERROR_COMMAND
  - PCI_EXPRESS_ROOT_ERROR_COMMAND
 ---
 
@@ -62,22 +62,22 @@ The PCI_EXPRESS_ROOT_ERROR_COMMAND structure describes a PCI Express (PCIe) root
 A ULONG representation of the contents of the PCI_EXPRESS_ROOT_ERROR_COMMAND structure.
 
 
-#### - CorrectableErrorReportingEnable
+### -field DUMMYSTRUCTNAME.CorrectableErrorReportingEnable
 
 A single bit that indicates that interrupts are enabled for when a correctable error is reported by any of the devices in the hierarchy that are associated with this root port.
 
 
-#### - FatalErrorReportingEnable
+### -field DUMMYSTRUCTNAME.FatalErrorReportingEnable
 
 A single bit that indicates that interrupts are enabled for when a non-fatal error is reported by any of the devices in the hierarchy that are associated with this root port.
 
 
-#### - NonFatalErrorReportingEnable
+### -field DUMMYSTRUCTNAME.NonFatalErrorReportingEnable
 
 A single bit that indicates that interrupts are enabled for when a non-fatal error is reported by any of the devices in the hierarchy that are associated with this root port.
 
 
-#### - Reserved
+### -field DUMMYSTRUCTNAME.Reserved
 
 Reserved.
 
@@ -104,3 +104,4 @@ A PCI_EXPRESS_ROOT_ERROR_COMMAND structure is contained in the <a href="/windows
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_pci_express_rootport_aer_capability">PCI_EXPRESS_ROOTPORT_AER_CAPABILITY</a>
+

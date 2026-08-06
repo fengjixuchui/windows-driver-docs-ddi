@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILUICCCARDINFO
 title: RILUICCCARDINFO (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILUICCCARDINFO structure for internal use only."
 old-location: netvista\riluicccardinfo.htm
 tech.root: netvista
-ms.assetid: 761f1ab6-75e6-4c40-b79c-01f2e92df495
 ms.date: 05/02/2018
 keywords: ["RILUICCCARDINFO structure"]
 ms.keywords: "*LPRILUICCCARDINFO, RILUICCCARDINFO, RILUICCCARDINFO structure [Network Drivers Starting with Windows Vista], netvista.riluicccardinfo, ntddrilapitypes/RILUICCCARDINFO"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILUICCCARDINFO
+ - LPRILUICCCARDINFO
 ---
 
 # RILUICCCARDINFO structure (rilapitypes.h)

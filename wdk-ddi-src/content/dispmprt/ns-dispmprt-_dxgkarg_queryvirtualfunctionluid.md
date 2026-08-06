@@ -3,11 +3,8 @@ UID: NS:dispmprt._DXGKARG_QUERYVIRTUALFUNCTIONLUID
 title: _DXGKARG_QUERYVIRTUALFUNCTIONLUID
 description: Arguments used to query virtual function LUID.
 tech.root: display
-ms.assetid: 0eeb7491-5e3c-47fa-9e81-8a02111672ca
 ms.date: 04/04/2019
 keywords: ["DXGKARG_QUERYVIRTUALFUNCTIONLUID structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _DXGKARG_QUERYVIRTUALFUNCTIONLUID, DXGKARG_QUERYVIRTUALFUNCTIONLUID, *PDXGKARG_QUERYVIRTUALFUNCTIONLUID,
 req.header: dispmprt.h
 req.include-header: 
@@ -39,8 +36,8 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGKARG_QUERYVIRTUALFUNCTIONLUID
-product:
- - Windows
+ - PDXGKARG_QUERYVIRTUALFUNCTIONLUID
+ - DXGKARG_QUERYVIRTUALFUNCTIONLUID
 dev_langs:
  - c++
 ---

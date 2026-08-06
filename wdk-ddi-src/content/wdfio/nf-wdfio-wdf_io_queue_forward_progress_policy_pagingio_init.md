@@ -4,7 +4,6 @@ title: WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT function (wdfio.h)
 description: The WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT function initializes a driver's WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY structure.
 old-location: wdf\wdf_io_queue_forward_progress_policy_pagingio_init.htm
 tech.root: wdf
-ms.assetid: e8839d4d-b7cb-4f18-b122-42c87e779d7f
 ms.date: 02/26/2018
 keywords: ["WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT function"]
 ms.keywords: DFQueueObjectRef_57ac1d7b-3417-4757-bd62-21bc8b13c782.xml, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT, WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT function, kmdf.wdf_io_queue_forward_progress_policy_pagingio_init, wdf.wdf_io_queue_forward_progress_policy_pagingio_init, wdfio/WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT
@@ -52,14 +51,14 @@ The <b>WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY_PAGINGIO_INIT</b> function initializ
 
 ## -parameters
 
-### -param Policy 
+### -param Policy [out]
 
-[out]
+
 A pointer to the driver's <a href="/windows-hardware/drivers/ddi/wdfio/ns-wdfio-_wdf_io_queue_forward_progress_policy">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</a> structure.
 
-### -param TotalForwardProgressRequests 
+### -param TotalForwardProgressRequests [in]
 
-[in]
+
 The number of request objects that the framework will attempt to reserve for use in low-memory situations. This number must be greater than zero.
 
 ## -remarks

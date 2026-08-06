@@ -1,9 +1,8 @@
 ---
 UID: NF:eventdetectoroemadapter.IEventDetectorOemAdapter.GetCapabilities
 title: IEventDetectorOemAdapter::GetCapabilities
-description: Returns langauges and detector features supported by the object.
+description: Returns languages and detector features supported by the object.
 tech.root: audio
-ms.assetid: cd025bdc-7f10-4881-9620-b77570455c18
 ms.date: 02/25/2019
 keywords: ["IEventDetectorOemAdapter::GetCapabilities"]
 ms.keywords: IEventDetectorOemAdapter::GetCapabilities, GetCapabilities, IEventDetectorOemAdapter.GetCapabilities, IEventDetectorOemAdapter::GetCapabilities, IEventDetectorOemAdapter.GetCapabilities
@@ -36,9 +35,7 @@ api_type:
 api_location:
  - eventdetectoroemadapter.h
 api_name:
- - IEventDetectorOemAdapter.GetCapabilities
-product:
- - Windows
+ - IEventDetectorOemAdapter::GetCapabilities
 ---
 
 # IEventDetectorOemAdapter::GetCapabilities
@@ -46,7 +43,7 @@ product:
 
 ## -description
 
-Returns langauges and detector features supported by the object.
+Returns languages and detector features supported by the object.
 
 ## -parameters
 
@@ -83,3 +80,4 @@ This function is the part of the Event Detector OEM interface to be used for har
 - [eventdetectoroemadapter](../eventdetectoroemadapter/index.md)
 
 - [Audio](../_audio/index.md)
+

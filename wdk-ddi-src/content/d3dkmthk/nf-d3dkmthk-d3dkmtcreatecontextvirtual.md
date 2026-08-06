@@ -3,7 +3,6 @@ UID: NF:d3dkmthk.D3DKMTCreateContextVirtual
 title: D3DKMTCreateContextVirtual function (d3dkmthk.h)
 description: The D3DKMTCreateContextVirtual function creates a kernel mode device context that supports virtual addressing.
 old-location: display\d3dkmtcreatecontextvirtual.htm
-ms.assetid: 1E95228E-7513-46D2-8402-28CA6D26F3EB
 ms.date: 05/10/2018
 keywords: ["D3DKMTCreateContextVirtual function"]
 ms.keywords: D3DKMTCreateContextVirtual, D3DKMTCreateContextVirtual function [Display Devices], d3dkmthk/D3DKMTCreateContextVirtual, display.d3dkmtcreatecontextvirtual
@@ -51,7 +50,7 @@ The <b>D3DKMTCreateContextVirtual</b> function creates a kernel mode device cont
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in]
 

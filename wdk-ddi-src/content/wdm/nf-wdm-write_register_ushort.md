@@ -1,11 +1,10 @@
 ---
 UID: NF:wdm.WRITE_REGISTER_USHORT
 title: WRITE_REGISTER_USHORT function (wdm.h)
-description: The WRITE_REGISTER_USHORT routine writes a USHORT value to the specified address.
+description: The WRITE_REGISTER_USHORT function (wdm.h) writes a USHORT value to the specified register address in resident, mapped device memory.
 old-location: kernel\write_register_ushort.htm
 tech.root: kernel
-ms.assetid: ebcbec0c-c5ee-4af1-be3c-36c730f82f4e
-ms.date: 04/30/2018
+ms.date: 09/07/2021
 keywords: ["WRITE_REGISTER_USHORT function"]
 ms.keywords: WRITE_REGISTER_USHORT, WRITE_REGISTER_USHORT routine [Kernel-Mode Driver Architecture], k103_bc20d667-b3c7-4e46-a21d-06123e73d348.xml, kernel.write_register_ushort, wdm/WRITE_REGISTER_USHORT
 req.header: wdm.h
@@ -46,20 +45,23 @@ api_name:
 
 ## -description
 
-The <b>WRITE_REGISTER_USHORT</b> routine writes a USHORT value to the specified address.
+The **WRITE_REGISTER_USHORT** routine dereferences the supplied pointer, inserts a memory barrier, and writes a USHORT value to the specified address.
 
-## -parameters
+### -parameters
 
-#### - Register [in]
+### -param Register [in]
 
 Pointer to the register, which must be a mapped range in memory space.
 
 
-#### - Value [in]
+### -param Value [in]
 
 Specifies a USHORT value to be written to the register.
 
 ## -remarks
 
-Callers of <b>WRITE_REGISTER_USHORT</b> can be running at any IRQL, assuming the <i>Register</i> is resident, mapped device memory.
+This routine inserts a memory barrier into your code. This barrier guarantees that every operation that appears in the source code before the call to this routine will complete before any operation that appears after the call.
 
+For more info about memory barriers, see [**KeMemoryBarrier**](./nf-wdm-kememorybarrier.md).
+
+Callers of <b>WRITE_REGISTER_USHORT</b> can be running at any IRQL, assuming the <i>Register</i> is resident, mapped device memory.

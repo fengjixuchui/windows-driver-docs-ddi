@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugBreakpoint2.GetCommand
 title: IDebugBreakpoint2::GetCommand (dbgeng.h)
-description: The GetCommand method returns the command string that is executed when a breakpoint is triggered.
+description: Learn how the GetCommand method returns the command string that is executed when a breakpoint is triggered.
 old-location: debugger\getcommand.htm
 tech.root: debugger
-ms.assetid: 3f7b704f-be73-459a-bb5a-bbe649751900
 ms.date: 05/03/2018
 keywords: ["IDebugBreakpoint2::GetCommand"]
 ms.keywords: ComOther_4bb08d44-5a99-4177-b8a4-8926f1e45dcf.xml, GetCommand, GetCommand method [Windows Debugging], GetCommand method [Windows Debugging],IDebugBreakpoint interface, GetCommand method [Windows Debugging],IDebugBreakpoint2 interface, IDebugBreakpoint interface [Windows Debugging],GetCommand method, IDebugBreakpoint2 interface [Windows Debugging],GetCommand method, IDebugBreakpoint2.GetCommand, IDebugBreakpoint2::GetCommand, IDebugBreakpoint::GetCommand, dbgeng/IDebugBreakpoint2::GetCommand, dbgeng/IDebugBreakpoint::GetCommand, debugger.getcommand
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugBreakpoint.GetCommand
- - IDebugBreakpoint2.GetCommand
+ - IDebugBreakpoint2::GetCommand
 ---
 
 # IDebugBreakpoint2::GetCommand
@@ -51,19 +49,19 @@ The <b>GetCommand</b>  method returns the command string that is executed when a
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 The command string that is executed when the breakpoint is triggered.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 The size, in characters, of the buffer that <i>Buffer</i> points to.
 
-### -param CommandSize 
+### -param CommandSize [out, optional]
 
-[out, optional]
+
 The size of the command string.  If <i>CommandSize</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -107,3 +105,4 @@ The command string is a list of debugger commands that are separated by semicolo
 The <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getparameters">GetParameters</a> method also returns the size of the breakpoint's command, <i>CommandSize</i>.
 
 For more information about breakpoint properties, see <a href="/windows-hardware/drivers/debugger/controlling-breakpoint-flags-and-parameters">Controlling Breakpoint Flags and Parameters</a>.
+

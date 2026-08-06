@@ -3,7 +3,6 @@ UID: NF:netpoweroffload.NET_POWER_OFFLOAD_NS_PARAMETERS_INIT
 title: NET_POWER_OFFLOAD_NS_PARAMETERS_INIT function (netpoweroffload.h)
 description: The NET_POWER_OFFLOAD_NS_PARAMETERS_INIT function initializes a NET_POWER_OFFLOAD_NS_PARAMETERS structure.
 tech.root: netvista
-ms.assetid: 5838984e-4df8-4bda-ae31-92c56d699e1b
 ms.date: 09/30/2019
 keywords: ["NET_POWER_OFFLOAD_NS_PARAMETERS_INIT function"]
 ms.keywords: NET_POWER_OFFLOAD_NS_PARAMETERS_INIT
@@ -13,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -37,8 +36,6 @@ api_location:
  - netpoweroffload.h
 api_name:
  - NET_POWER_OFFLOAD_NS_PARAMETERS_INIT
-product:
- - Windows
 ---
 
 # NET_POWER_OFFLOAD_NS_PARAMETERS_INIT function
@@ -50,13 +47,10 @@ The **NET_POWER_OFFLOAD_NS_PARAMETERS_INIT** function initializes a [**NET_POWER
 
 ## -parameters
 
-### -param Parameters
+### -param Parameters [_Out_]
 
 A pointer to a client driver-allocated [**NET_POWER_OFFLOAD_NS_PARAMETERS**](../netpoweroffload/ns-netpoweroffload-_net_power_offload_ns_parameters.md) structure.
 
-## -returns
-
-This function does not return a value.
 
 ## -remarks
 

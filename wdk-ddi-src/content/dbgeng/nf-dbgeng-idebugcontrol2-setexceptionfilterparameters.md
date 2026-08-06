@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl2.SetExceptionFilterParameters
 title: IDebugControl2::SetExceptionFilterParameters (dbgeng.h)
-description: The SetExceptionFilterParameters method changes the break status and handling status for some exception filters.
+description: Learn about the SetExceptionFilterParameters method, which changes the break status and handling status for some exception filters.
 old-location: debugger\setexceptionfilterparameters.htm
 tech.root: debugger
-ms.assetid: b749f96d-d04a-48f2-9012-b7c853e0de14
 ms.date: 05/03/2018
 keywords: ["IDebugControl2::SetExceptionFilterParameters"]
 ms.keywords: IDebugControl interface [Windows Debugging],SetExceptionFilterParameters method, IDebugControl2 interface [Windows Debugging],SetExceptionFilterParameters method, IDebugControl2.SetExceptionFilterParameters, IDebugControl2::SetExceptionFilterParameters, IDebugControl3 interface [Windows Debugging],SetExceptionFilterParameters method, IDebugControl3::SetExceptionFilterParameters, IDebugControl::SetExceptionFilterParameters, IDebugControl_4e60bce4-e40d-46b6-83ad-55559b97fbad.xml, SetExceptionFilterParameters, SetExceptionFilterParameters method [Windows Debugging], SetExceptionFilterParameters method [Windows Debugging],IDebugControl interface, SetExceptionFilterParameters method [Windows Debugging],IDebugControl2 interface, SetExceptionFilterParameters method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::SetExceptionFilterParameters, dbgeng/IDebugControl3::SetExceptionFilterParameters, dbgeng/IDebugControl::SetExceptionFilterParameters, debugger.setexceptionfilterparameters
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.SetExceptionFilterParameters
- - IDebugControl2.SetExceptionFilterParameters
- - IDebugControl3.SetExceptionFilterParameters
+ - IDebugControl2::SetExceptionFilterParameters
 ---
 
 # IDebugControl2::SetExceptionFilterParameters
@@ -52,14 +49,14 @@ The <b>SetExceptionFilterParameters</b> method changes the <a href="/windows-har
 
 ## -parameters
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of exception filters to change the parameters for.
 
-### -param Params 
+### -param Params [in]
 
-[in]
+
 Specifies an array of exception filter parameters of type <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_exception_filter_parameters">DEBUG_EXCEPTION_FILTER_PARAMETERS</a>.  Only the <b>ExecutionOption</b>, <b>ContinueOption</b>, and <b>ExceptionCode</b> fields of these parameters are used.  The <b>ExceptionCode</b> field is used to identify the <a href="/windows-hardware/drivers/">exception</a> whose exception filter will be changed.  <b>ExceptionOption</b> specifies the new break status and <b>ContinueOption</b> specifies the new handling status.
 
 If the value of the <b>ExceptionOption</b> field is DEBUG_FILTER_REMOVE and the exception filter is an arbitrary exception filter, the exception filter will be removed.
@@ -128,3 +125,4 @@ For more information about <a href="/windows-hardware/drivers/debugger/event-fil
 
 
 <a href="/windows-hardware/drivers/debugger/sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-">sx, sxd, sxe, sxi, sxn (Set Exceptions)</a>
+

@@ -4,7 +4,6 @@ title: IWDTFEnhancedDeviceTestSupportAction2::IsEnabled (wdtfedtaction.h)
 description: Gets a value that indicates whether the Enhanced Device Test (EDT) filter driver is enabled on the target device.
 old-location: dtf\iwdtfenhanceddevicetestsupportaction2_isenabled.htm
 tech.root: dtf
-ms.assetid: 7d75d8e7-1416-4075-bc75-b4d2cd4f65a5
 ms.date: 04/04/2018
 keywords: ["IWDTFEnhancedDeviceTestSupportAction2::IsEnabled"]
 ms.keywords: IWDTFEnhancedDeviceTestSupportAction2 interface [Windows Device Testing Framework],IsEnabled method, IWDTFEnhancedDeviceTestSupportAction2.IsEnabled, IWDTFEnhancedDeviceTestSupportAction2::IsEnabled, IsEnabled, IsEnabled method [Windows Device Testing Framework], IsEnabled method [Windows Device Testing Framework],IWDTFEnhancedDeviceTestSupportAction2 interface, Microsoft.WDTF.IWDTFEnhancedDeviceTestSupportAction2.IsEnabled, Microsoft::WDTF::IWDTFEnhancedDeviceTestSupportAction2::IsEnabled, dtf.iwdtfenhanceddevicetestsupportaction2_isenabled, wdtfedtaction/IWDTFEnhancedDeviceTestSupportAction2::IsEnabled
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTFDriverEDTAction.Interop.dll
 api_name:
- - IWDTFEnhancedDeviceTestSupportAction2.IsEnabled
+ - IWDTFEnhancedDeviceTestSupportAction2::IsEnabled
 ---
 
 # IWDTFEnhancedDeviceTestSupportAction2::IsEnabled
@@ -51,9 +50,9 @@ on the target device.
 
 ## -parameters
 
-### -param pbEnabled 
+### -param pbEnabled [out, retval]
 
-[out, retval]
+
 True if the EDT driver is enabled; otherwise, false.
 
 ## -returns
@@ -63,3 +62,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtfedtaction/nn-wdtfedtaction-iwdtfenhanceddevicetestsupportaction2">IWDTFEnhancedDeviceTestSupportAction2</a>
+

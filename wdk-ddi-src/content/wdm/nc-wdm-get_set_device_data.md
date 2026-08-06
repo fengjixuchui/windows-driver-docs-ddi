@@ -4,7 +4,6 @@ title: GET_SET_DEVICE_DATA (wdm.h)
 description: The GetBusData routine reads data from the device's configuration space.
 old-location: kernel\getbusdata.htm
 tech.root: kernel
-ms.assetid: F5BDB3DF-6AC9-424E-BC69-27071F3D3820
 ms.date: 04/30/2018
 keywords: ["GET_SET_DEVICE_DATA callback function"]
 ms.keywords: GET_SET_DEVICE_DATA, GetBusData, GetBusData routine [Kernel-Mode Driver Architecture], drvr_interface_f4fd2eab-5924-4ffa-b39e-fd7e0f74e5df.xml, kernel.busgetdevicedata, kernel.getbusdata, wdm/GetBusData
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdm.h
 api_name:
- - GetBusData
+ - GET_SET_DEVICE_DATA
 ---
 
 # GET_SET_DEVICE_DATA callback function
@@ -50,29 +49,29 @@ The <i>GetBusData</i> routine reads data from the device's configuration space.
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_bus_interface_standard">BUS_INTERFACE_STANDARD</a> structure for the interface.
 
-### -param DataType 
+### -param DataType [in]
 
-[in]
+
 The type of bus data to read. For more information, see the discussion of the <i>WhichSpace</i> parameter in <a href="/windows-hardware/drivers/kernel/irp-mn-read-config">IRP_MN_READ_CONFIG</a>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to the buffer that holds the configuration information to be read from the device's configuration space.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 The offset into the bus-specific device data where this read operation begins. For example, if the <i>DataType</i> parameter is <b>PCI_WHICHSPACE_CONFIG</b>, the <i>Offset</i> parameter value is the offset into PCI Configuration Space.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The length, in bytes, of data to read.
 
 ## -returns
@@ -165,3 +164,4 @@ In order to read PCI Configuration data for the VF at IRQL = DISPATCH_LEVEL, the
 
 
 <a href="/windows-hardware/drivers/kernel/irp-mn-read-config">IRP_MN_READ_CONFIG</a>
+

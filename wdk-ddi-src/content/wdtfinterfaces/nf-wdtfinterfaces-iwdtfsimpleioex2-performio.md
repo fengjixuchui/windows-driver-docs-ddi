@@ -4,7 +4,6 @@ title: IWDTFSimpleIOEx2::PerformIO (wdtfinterfaces.h)
 description: Performs a small amount of simple I/O to the device.
 old-location: dtf\iwdtfsimpleioex2_performio.htm
 tech.root: dtf
-ms.assetid: 795dcbed-e0ce-444d-a6a8-95d0bc658f5b
 ms.date: 04/04/2018
 keywords: ["IWDTFSimpleIOEx2::PerformIO"]
 ms.keywords: IWDTFSimpleIOEx2 interface [Windows Device Testing Framework],PerformIO method, IWDTFSimpleIOEx2.PerformIO, IWDTFSimpleIOEx2::PerformIO, Microsoft.WDTF.IWDTFSimpleIOEx2.PerformIO, Microsoft::WDTF::IWDTFSimpleIOEx2::PerformIO, PerformIO, PerformIO method [Windows Device Testing Framework], PerformIO method [Windows Device Testing Framework],IWDTFSimpleIOEx2 interface, dtf.iwdtfsimpleioex2_performio, wdtfinterfaces/IWDTFSimpleIOEx2::PerformIO
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTFInterfaces.Interop.dll
 api_name:
- - IWDTFSimpleIOEx2.PerformIO
+ - IWDTFSimpleIOEx2::PerformIO
 ---
 
 # IWDTFSimpleIOEx2::PerformIO
@@ -50,9 +49,9 @@ Performs a small amount of simple I/O to the device.
 
 ## -parameters
 
-### -param pResult 
+### -param pResult [out, retval]
 
-[out, retval]
+
 True if the operation succeeds; otherwise, false.
 
 ## -returns
@@ -71,3 +70,4 @@ the <a href="/windows-hardware/drivers/ddi/wdtfinterfaces/nf-wdtfinterfaces-iwdt
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtfinterfaces/nn-wdtfinterfaces-iwdtfsimpleioex2">IWDTFSimpleIOEx2</a>
+

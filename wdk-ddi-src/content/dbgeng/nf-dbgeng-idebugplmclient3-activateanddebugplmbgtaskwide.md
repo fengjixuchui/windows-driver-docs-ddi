@@ -4,7 +4,6 @@ title: IDebugPlmClient3::ActivateAndDebugPlmBgTaskWide (dbgeng.h)
 description: Launches and attaches to a Process Lifecycle Management (PLM) background task.
 old-location: debugger\idebugplmclient3_activateanddebugplmbgtaskwide.htm
 tech.root: debugger
-ms.assetid: 77358032-1777-46F4-BF16-5DFFAC15E672
 ms.date: 05/03/2018
 keywords: ["IDebugPlmClient3::ActivateAndDebugPlmBgTaskWide"]
 ms.keywords: ActivateAndDebugPlmBgTaskWide, ActivateAndDebugPlmBgTaskWide method [Windows Debugging], ActivateAndDebugPlmBgTaskWide method [Windows Debugging],IDebugPlmClient3 interface, IDebugPlmClient3 interface [Windows Debugging],ActivateAndDebugPlmBgTaskWide method, IDebugPlmClient3.ActivateAndDebugPlmBgTaskWide, IDebugPlmClient3::ActivateAndDebugPlmBgTaskWide, dbgeng/IDebugPlmClient3::ActivateAndDebugPlmBgTaskWide, debugger.idebugplmclient3_activateanddebugplmbgtaskwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugPlmClient3.ActivateAndDebugPlmBgTaskWide
+ - IDebugPlmClient3::ActivateAndDebugPlmBgTaskWide
 ---
 
 # IDebugPlmClient3::ActivateAndDebugPlmBgTaskWide
@@ -50,19 +49,19 @@ api_name:
 
 ## -parameters
 
-### -param Server 
+### -param Server [in]
 
-[in]
+
 The server of the task.
 
-### -param PackageFullName 
+### -param PackageFullName [in]
 
-[in]
+
 A pointer to the package name.
 
-### -param BackgroundTaskId 
+### -param BackgroundTaskId [in]
 
-[in]
+
 A pointer to the task ID.
 
 ## -returns
@@ -74,3 +73,4 @@ If a debugger session is not already started, this method starts one.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugplmclient3">IDebugPlmClient3</a>
+

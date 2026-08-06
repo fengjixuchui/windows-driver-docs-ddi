@@ -4,7 +4,6 @@ title: IWDTFTarget2::GetValueLongNumbers (wdtf.h)
 description: Returns a collection of long number values from the target that are associated with a specified attribute.
 old-location: dtf\iwdtftarget2_getvaluelongnumbers.htm
 tech.root: dtf
-ms.assetid: 178a28be-b592-45a7-8d46-47cbf9904fc6
 ms.date: 04/04/2018
 keywords: ["IWDTFTarget2::GetValueLongNumbers"]
 ms.keywords: GetValueLongNumbers, GetValueLongNumbers method [Windows Device Testing Framework], GetValueLongNumbers method [Windows Device Testing Framework],IWDTFTarget2 interface, IWDTFTarget2 interface [Windows Device Testing Framework],GetValueLongNumbers method, IWDTFTarget2.GetValueLongNumbers, IWDTFTarget2::GetValueLongNumbers, Microsoft.WDTF.IWDTFTarget2.GetValueLongNumbers, Microsoft::WDTF::IWDTFTarget2::GetValueLongNumbers, dtf.iwdtftarget2_getvaluelongnumbers, wdtf/IWDTFTarget2::GetValueLongNumbers
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFTarget2.GetValueLongNumbers
+ - IWDTFTarget2::GetValueLongNumbers
 ---
 
 # IWDTFTarget2::GetValueLongNumbers
@@ -50,14 +49,14 @@ Returns a collection of long number values from the target that are associated w
 
 ## -parameters
 
-### -param SDEL 
+### -param SDEL [in]
 
-[in]
+
 An SDEL statement that specifies the attribute value to retrieve.
 
-### -param ppValue 
+### -param ppValue [out, retval]
 
-[out, retval]
+
 The address of a variable that receives the result of this method.
 
 ## -returns
@@ -75,3 +74,4 @@ to work properly.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftarget2">IWDTFTarget2</a>
+

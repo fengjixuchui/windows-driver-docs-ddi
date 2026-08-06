@@ -4,7 +4,6 @@ title: WdfFdoQueryForInterface function (wdffdo.h)
 description: The WdfFdoQueryForInterface method obtains access to another driver's GUID-identified interface.
 old-location: wdf\wdffdoqueryforinterface.htm
 tech.root: wdf
-ms.assetid: 12bbc77b-c1cd-4899-aff2-e18e0d58b6b9
 ms.date: 02/26/2018
 keywords: ["WdfFdoQueryForInterface function"]
 ms.keywords: DFDeviceObjectFdoPdoRef_949fcc50-3604-4970-9516-666da06e3c9e.xml, WdfFdoQueryForInterface, WdfFdoQueryForInterface method, kmdf.wdffdoqueryforinterface, wdf.wdffdoqueryforinterface, wdffdo/WdfFdoQueryForInterface
@@ -53,33 +52,33 @@ The <b>WdfFdoQueryForInterface</b> method obtains access to another driver's GUI
 
 ## -parameters
 
-### -param Fdo
+### -param Fdo [in]
 
 <p>A handle to a framework device object.</p>
 
-### -param InterfaceType 
+### -param InterfaceType [in]
 
-[in]
+
 A pointer to a GUID that identifies the interface.
 
-### -param Interface 
+### -param Interface [out]
 
-[out]
+
 A pointer to a driver-allocated structure that receives the requested interface. This structure is defined by the driver that exports the requested interface and must begin with an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface">INTERFACE</a> structure.
 
-### -param Size 
+### -param Size [in]
 
-[in]
+
 The size, in bytes, of the driver-allocated structure that represents the requested interface.
 
-### -param Version 
+### -param Version [in]
 
-[in]
+
 The version number of the requested interface. The format of this value is defined by the driver that exports the requested interface.
 
-### -param InterfaceSpecificData 
+### -param InterfaceSpecificData [in, optional]
 
-[in, optional]
+
 Additional interface-specific information. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

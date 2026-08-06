@@ -3,7 +3,6 @@ UID: NS:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE
 title: D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE (d3d10umddi.h)
 description: Specifies the color space for video processing.
 old-location: display\d3d11_1ddi_video_processor_color_space.htm
-ms.assetid: 2878b36e-3850-4af8-aeca-9c5d2da717f9
 ms.date: 05/10/2018
 keywords: ["D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE structure"]
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE, D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE structure [Display Devices], d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_COLOR_SPACE, display.d3d11_1ddi_video_processor_color_space
@@ -89,9 +88,9 @@ Specifies whether the output uses conventional YCbCr or extended YCbCr (xvYCC). 
 |0|Conventional YCbCr|
 |1|Extended YCbCr (xvYCC)|
 
-### -field Nominal_Range
+### -field Nominal_Range [in]
 
-[in] A UINT value that specifies that the luminance range of YUV data is described by the <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d11_1ddi_video_processor_nominal_range">D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE</a> enumeration. The default state value is zero, which indicates the studio luminance range of 16 to 235, inclusive [16, 235].
+A UINT value that specifies that the luminance range of YUV data is described by the <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d11_1ddi_video_processor_nominal_range">D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE</a> enumeration. The default state value is zero, which indicates the studio luminance range of 16 to 235, inclusive [16, 235].
 
 When YUV-format data is converted to RGB format, the luminance range specified by <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d11_1ddi_video_processor_nominal_range">D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE</a> is applied to the YUV data before the conversion to RGB.
 

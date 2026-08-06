@@ -2,7 +2,6 @@
 UID: NS:d3dkmthk._D3DKMT_REGISTERBUDGETCHANGENOTIFICATION
 title: _D3DKMT_REGISTERBUDGETCHANGENOTIFICATION (d3dkmthk.h)
 description: Used to register budget change notification.
-ms.assetid: b68c9dc0-56e6-478c-8624-b4904cedd311
 ms.date: 10/19/2018
 keywords: ["D3DKMT_REGISTERBUDGETCHANGENOTIFICATION structure"]
 ms.keywords: _D3DKMT_REGISTERBUDGETCHANGENOTIFICATION, D3DKMT_REGISTERBUDGETCHANGENOTIFICATION,
@@ -35,6 +34,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_REGISTERBUDGETCHANGENOTIFICATION
+ - D3DKMT_REGISTERBUDGETCHANGENOTIFICATION
 dev_langs:
  - c++
 ---
@@ -48,22 +48,22 @@ Used to register budget change notification.
 
 ## -struct-fields
 
-### -field hDevice
+### -field hDevice [in]
 
-[in] A handle to the device.
+A handle to the device.
 
-### -field Callback
+### -field Callback [in]
 
-[in] Pointer to the [PFND3DKMT_BUDGETCHANGENOTIFICATIONCALLBACK](nc-d3dkmthk-pfnd3dkmt_budgetchangenotificationcallback.md) callback.
+Pointer to the [PFND3DKMT_BUDGETCHANGENOTIFICATIONCALLBACK](nc-d3dkmthk-pfnd3dkmt_budgetchangenotificationcallback.md) callback.
 
-### -field Context
+### -field Context [in]
 
-[in] The callback context.
+The callback context.
 
-### -field Handle
+### -field Handle [out]
 
  
-[out] A handle to unregister.
+A handle to unregister.
 
 ## -remarks
 

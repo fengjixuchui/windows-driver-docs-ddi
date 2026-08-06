@@ -1,11 +1,9 @@
 ---
 UID: NS:d3dkmdt._DXGK_MONITORLINKINFO_USAGEHINTS
-title: _DXGK_MONITORLINKINFO_USAGEHINTS (d3dkmdt.h)
-description: Hints to the driver on the intended usage of the display device.
-old-location: display\dxgk_monitorlinkinfo_usagehints.htm
+title: DXGK_MONITORLINKINFO_USAGEHINTS (d3dkmdt.h)
+description: Learn about the DXGK_MONITORLINKINFO_USAGEHINTS structure.
 tech.root: display
-ms.assetid: 4FC2509A-9983-41F8-901F-60DCEDBC163F
-ms.date: 05/10/2018
+ms.date: 05/20/2024
 keywords: ["DXGK_MONITORLINKINFO_USAGEHINTS structure"]
 ms.keywords: "*PDXGK_MONITORLINKINFO_USAGEHINTS, DXGK_MONITORLINKINFO_USAGEHINTS, DXGK_MONITORLINKINFO_USAGEHINTS union [Display Devices], PDXGK_MONITORLINKINFO_USAGEHINTS, PDXGK_MONITORLINKINFO_USAGEHINTS union pointer [Display Devices], _DXGK_MONITORLINKINFO_USAGEHINTS, d3dkmdt/DXGK_MONITORLINKINFO_USAGEHINTS, d3dkmdt/PDXGK_MONITORLINKINFO_USAGEHINTS, display.dxgk_monitorlinkinfo_usagehints"
 req.header: d3dkmdt.h
@@ -42,21 +40,26 @@ api_type:
 api_location:
  - d3dkmdt.h
 api_name:
+ - _DXGK_MONITORLINKINFO_USAGEHINTS
+ - PDXGK_MONITORLINKINFO_USAGEHINTS
  - DXGK_MONITORLINKINFO_USAGEHINTS
 ---
 
-# _DXGK_MONITORLINKINFO_USAGEHINTS structure
-
+# DXGK_MONITORLINKINFO_USAGEHINTS structure
 
 ## -description
 
-Hints to the driver on the intended usage of the display device.
+The **DXGK_MONITORLINKINFO_USAGEHINTS** structure provides hints to the driver on the intended usage of the display device (monitor).
 
 ## -struct-fields
 
 ### -field Hidden
 
-If TRUE, DxgKrnl will hide this display from Win32 so it cannot be a part of the desktop.
+When set, *DxgKrnl* will hide this display from Win32 so it cannot be a part of the desktop.
+
+### -field HeadMounted
+
+When set, the monitor is part of a head-mounted display (HMD) device.
 
 ### -field Reserved
 
@@ -64,3 +67,4 @@ This value is reserved for system use.
 
 ### -field Value
 
+The collective value of the flags as a single value.

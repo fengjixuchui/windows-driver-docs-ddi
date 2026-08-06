@@ -4,7 +4,6 @@ title: IPnpCallbackHardware::OnPrepareHardware (wudfddi.h)
 description: The OnPrepareHardware method notifies a driver to make the specified hardware accessible.
 old-location: wdf\ipnpcallbackhardware_onpreparehardware.htm
 tech.root: wdf
-ms.assetid: c821231a-446d-45dd-9c12-9ab05aeb1108
 ms.date: 02/26/2018
 keywords: ["IPnpCallbackHardware::OnPrepareHardware"]
 ms.keywords: IPnpCallbackHardware interface,OnPrepareHardware method, IPnpCallbackHardware.OnPrepareHardware, IPnpCallbackHardware::OnPrepareHardware, OnPrepareHardware, OnPrepareHardware method, OnPrepareHardware method,IPnpCallbackHardware interface, UMDFDeviceObjectRef_3b9db069-02f0-4d3e-855d-835bb1bb6d2d.xml, umdf.ipnpcallbackhardware_onpreparehardware, wdf.ipnpcallbackhardware_onpreparehardware, wudfddi/IPnpCallbackHardware::OnPrepareHardware
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IPnpCallbackHardware.OnPrepareHardware
+ - IPnpCallbackHardware::OnPrepareHardware
 ---
 
 # IPnpCallbackHardware::OnPrepareHardware
@@ -52,9 +51,9 @@ The <b>OnPrepareHardware</b> method notifies a driver to make the specified hard
 
 ## -parameters
 
-### -param pWdfDevice 
+### -param pWdfDevice [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice">IWDFDevice</a> interface for the device object of the device to make accessible.
 
 ## -returns
@@ -98,3 +97,4 @@ For more information, see <a href="/windows-hardware/drivers/wdf/finding-and-map
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createdevice">IWDFDriver::CreateDevice</a>
+

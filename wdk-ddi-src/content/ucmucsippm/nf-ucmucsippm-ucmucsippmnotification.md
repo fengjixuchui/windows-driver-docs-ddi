@@ -3,7 +3,6 @@ UID: NF:ucmucsippm.UcmUcsiPpmNotification
 title: UcmUcsiPpmNotification function (ucmucsippm.h)
 tech.root: usbref
 description: Informs the UcmUcsiCx class extension about a UCSI notification.
-ms.assetid: 471cd707-c453-4033-a17b-52cdf429eaab
 ms.date: 09/30/2018
 keywords: ["UcmUcsiPpmNotification function"]
 ms.keywords: UcmUcsiPpmNotification
@@ -16,7 +15,7 @@ req.kmdf-ver: 1.27
 req.umdf-ver: N/A
 req.lib: UcmUcsiCxStub.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 req.ddi-compliance: 
 req.unicode-ansi: 
 req.idl: 
@@ -48,13 +47,13 @@ Informs the UcmUcsiCx class extension about a UCSI notification.
 
 ## -parameters
 
-### -param PpmObject 
+### -param PpmObject [in]
 
-[in]A handle to a Platform Policy Manager (PPM) object that the client driver received in the previous call to [**UcmUcsiPpmCreate**](nf-ucmucsippm-ucmucsippmcreate.md).
+A handle to a Platform Policy Manager (PPM) object that the client driver received in the previous call to [**UcmUcsiPpmCreate**](nf-ucmucsippm-ucmucsippmcreate.md).
 
-### -param DataBlock 
+### -param DataBlock [in]
 
-[in]A pointer to a [**UCSI_DATA_BLOCK**] structure that contains information about the USCI notification.
+A pointer to a [**UCSI_DATA_BLOCK**] structure that contains information about the USCI notification.
 
 ## -remarks
 

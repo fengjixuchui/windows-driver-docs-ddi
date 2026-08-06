@@ -2,7 +2,6 @@
 UID: NC:d3dumddi.PFND3DDDI_QUERYDLISTFORAPPLICATION
 title: PFND3DDDI_QUERYDLISTFORAPPLICATION (d3dumddi.h)
 description: The PFND3DDDI_QUERYDLISTFORAPPLICATION callback function queries a DList for an application.
-ms.assetid: 9debfb9c-534e-4342-8c36-64f403d03756
 ms.date: 10/19/2018
 keywords: ["PFND3DDDI_QUERYDLISTFORAPPLICATION callback function"]
 req.header: d3dumddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3dumddi.h
 api_name:
  - PFND3DDDI_QUERYDLISTFORAPPLICATION
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,9 +48,9 @@ The PFND3DDDI_QUERYDLISTFORAPPLICATION callback function queries a DList for an 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [out]
 
-[out] Indicates whether or not there is an application in the DList.
+Indicates whether or not there is an application in the DList.
 
 ## -returns
 

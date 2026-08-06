@@ -4,8 +4,7 @@ title: _WWAN_MODEM_CONFIG_INFO (wwan.h)
 description: The WWAN_MODEM_CONFIG_INFO structure represents the modem's configuration information.
 old-location: netvista\wwan_modem_config_info.htm
 tech.root: netvista
-ms.assetid: 14FBFA51-F4A5-417A-8905-241CEA543774
-ms.date: 05/02/2018
+ms.date: 12/30/2021
 keywords: ["WWAN_MODEM_CONFIG_INFO structure"]
 ms.keywords: "*PWWAN_MODEM_CONFIG_INFO, PWWAN_MODEM_CONFIG_INFO, PWWAN_MODEM_CONFIG_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_MODEM_CONFIG_INFO, WWAN_MODEM_CONFIG_INFO structure [Network Drivers Starting with Windows Vista], _WWAN_MODEM_CONFIG_INFO, netvista.wwan_modem_config_info, wwan/PWWAN_MODEM_CONFIG_INFO, wwan/WWAN_MODEM_CONFIG_INFO"
 req.header: wwan.h
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_MODEM_CONFIG_INFO
+ - PWWAN_MODEM_CONFIG_INFO
  - WWAN_MODEM_CONFIG_INFO
 ---
 
@@ -78,6 +79,12 @@ A formatted [**WWAN_MODEM_CONFIG_ID**](ns-wwan-_wwan_modem_config_id.md) structu
 
 A DWORD value that indicates if the current configuration is the default configuration.
 
+### -field ConfigName
+
+### -field NSSAIListHeader
+
+A [**WWAN_LIST_HEADER**](ns-wwan-_wwan_list_header.md) object that represents a pre-configured Single Network Slice Selection Assistance Information (S-NSSAI).
+
 ## -see-also
 
 <a href="/windows-hardware/drivers/network/ndis-status-wwan-modem-config-info">NDIS_STATUS_WWAN_MODEM_CONFIG_INFO</a>
@@ -97,3 +104,4 @@ A DWORD value that indicates if the current configuration is the default configu
 
 
 <a href="/previous-versions/mt813894(v=vs.85)">WWAN_MODEM_CONFIG_STATUS</a>
+

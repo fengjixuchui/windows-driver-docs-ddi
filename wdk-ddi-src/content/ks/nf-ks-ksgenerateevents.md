@@ -4,7 +4,6 @@ title: KsGenerateEvents function (ks.h)
 description: The KsGenerateEvents function generates events of an indicated type that are present in Object's event list.
 old-location: stream\ksgenerateevents.htm
 tech.root: stream
-ms.assetid: 3c96012f-8307-417c-be8f-bb466c576669
 ms.date: 04/23/2018
 keywords: ["KsGenerateEvents function"]
 ms.keywords: KsGenerateEvents, KsGenerateEvents function [Streaming Media Devices], avfunc_47306d1b-67f9-4ea6-81bb-3b76b848667a.xml, ks/KsGenerateEvents, stream.ksgenerateevents
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ks.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,39 +50,39 @@ The **KsGenerateEvents** function generates events of an indicated type that are
 
 ## -parameters
 
-### -param Object 
+### -param Object [in]
 
-[in]
+
 The object on which to generate events. This can be an AVStream filter or pin object.
 
-### -param EventSet 
+### -param EventSet [in, optional]
 
-[in, optional]
+
 The event set GUID to match to determine which events to generate. If this parameter is **NULL**, set GUID is not taken into account for determining matching events.
 
-### -param EventId 
+### -param EventId [in]
 
-[in]
+
 The event ID to match to determine which events to generate.
 
-### -param DataSize 
+### -param DataSize [in]
 
-[in]
+
 The size in bytes of the data with which to generate the data event.
 
-### -param Data 
+### -param Data [in, optional]
 
-[in, optional]
+
 A pointer to a data buffer to include in the event notification. If the driver does not need to convey additional information via the notification, set this optional parameter to **NULL**.
 
-### -param CallBack 
+### -param CallBack [in, optional]
 
-[in, optional]
-A pointer to a caller-specified function that is called to determine whether a given event should be generated. If this is **NULL**, no callback verification is performed to determine whether an event should be generated (only *EventSet *and *EventId* are used).
 
-### -param CallBackContext 
+A pointer to a caller-specified function that is called to determine whether a given event should be generated. If this is **NULL**, no callback verification is performed to determine whether an event should be generated (only *EventSet* and *EventId* are used).
 
-[in, optional]
+### -param CallBackContext [in, optional]
+
+
 A pointer to a caller-specified context that is passed to the callback function *CallBack*.
 
 ## -remarks
@@ -92,7 +91,7 @@ When calling this function, a minidriver must place *Data* and *CallBackContext*
 
 Minidrivers typically do not call this function directly and instead use one of the versions that performs appropriate casting: [KsFilterGenerateEvents](./nf-ks-ksfiltergenerateevents.md) or [KsPinGenerateEvents](./nf-ks-kspingenerateevents.md).
 
-An event is generated if it is present in *Object's *event list and *EventId *matches the event's ID, *EventSet* either matches the event's set GUID or is **NULL**, and *CallBack *is either **NULL** or authorizes the match.
+An event is generated if it is present in *Object's *event list and *EventId* matches the event's ID, *EventSet* either matches the event's set GUID or is **NULL**, and *CallBack* is either **NULL** or authorizes the match.
 
 *CallBack* is a caller-specified callback used for additional match determination. It is prototyped as follows:
 

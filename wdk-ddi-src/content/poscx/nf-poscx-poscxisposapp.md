@@ -4,7 +4,6 @@ title: PosCxIsPosApp function (poscx.h)
 description: PosCxIsPosApp checks if the open instance is associated with a point-of-service application.
 old-location: pos\poscxisposapp.htm
 tech.root: pos
-ms.assetid: 890A0ACB-9717-4BF8-87B5-A6C1FAD661C2
 ms.date: 02/23/2018
 keywords: ["PosCxIsPosApp function"]
 ms.keywords: PosCxIsPosApp, PosCxIsPosApp function, pos.poscxisposapp, poscx/PosCxIsPosApp
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: 
-req.product: Windows 10 or later.
 f1_keywords:
  - PosCxIsPosApp
  - poscx/PosCxIsPosApp
@@ -51,14 +49,14 @@ PosCxIsPosApp checks if the open instance is associated with a point-of-service 
 
 ## -parameters
 
-### -param device 
+### -param device [in]
 
-[in]
+
 A handle to a framework device object that represents the device.
 
-### -param fileObject 
+### -param fileObject [in]
 
-[in]
+
 A handle to a framework file object that identifies the caller, usually acquired with <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestgetfileobject">WdfRequestGetFileObject</a>.
 
 ## -returns

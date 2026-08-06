@@ -1,10 +1,9 @@
 ---
 UID: NF:storport.ScsiPortReadRegisterUlong
 title: ScsiPortReadRegisterUlong macro (storport.h)
-description: The ScsiPortReadRegisterUlong routine reads a ULONG value from the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+description: Learn how the ScsiPortReadRegisterUlong routine reads a ULONG value from the HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
 old-location: storage\scsiportreadregisterulong.htm
 tech.root: storage
-ms.assetid: e644fce4-2367-4851-8252-47a25faf0b6d
 ms.date: 03/29/2018
 keywords: ["ScsiPortReadRegisterUlong macro"]
 ms.keywords: ScsiPortReadRegisterUlong, ScsiPortReadRegisterUlong routine [Storage Devices], scsiprt_fe99fb31-bbec-4213-bfe5-88efbe2e71e9.xml, srb/ScsiPortReadRegisterUlong, storage.scsiportreadregisterulong
@@ -52,9 +51,9 @@ The <b>ScsiPortReadRegisterUlong</b> routine reads a ULONG value from the HBA.
 
 ## -parameters
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 Pointer to the register. The given <i>Register</i> must be in a mapped memory-space range returned by <b>ScsiPortGetDeviceBase</b>.
 
 ## -remarks

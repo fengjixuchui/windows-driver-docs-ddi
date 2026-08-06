@@ -4,7 +4,6 @@ title: WdfRequestCompleteWithPriorityBoost function (wdfrequest.h)
 description: The WdfRequestCompleteWithPriorityBoost method completes a specified I/O request and supplies a completion status. It also specifies a value that the system can use to boost the run-time priority of the thread that requested the I/O operation.
 old-location: wdf\wdfrequestcompletewithpriorityboost.htm
 tech.root: wdf
-ms.assetid: c09ea33d-a20e-4535-8b5c-4645a30841a7
 ms.date: 02/26/2018
 keywords: ["WdfRequestCompleteWithPriorityBoost function"]
 ms.keywords: DFRequestObjectRef_a396672f-9267-489a-af15-44b4b01831b2.xml, WdfRequestCompleteWithPriorityBoost, WdfRequestCompleteWithPriorityBoost method, kmdf.wdfrequestcompletewithpriorityboost, wdf.wdfrequestcompletewithpriorityboost, wdfrequest/WdfRequestCompleteWithPriorityBoost
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfRequestCompleteWithPriorityBoost</b> method completes a specified I/O 
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to the framework request object that represents the I/O request that is being completed.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS value</a> that represents the completion status of the request. Valid status values include, but are not limited to, the following:
 
 
@@ -83,9 +82,9 @@ The driver canceled the request.
 
 The driver encountered an error while processing the request.
 
-### -param PriorityBoost 
+### -param PriorityBoost [in]
 
-[in]
+
 A system-defined constant value by which to increment the run-time priority of the original thread that requested the operation. Constant values are device-type-specific and are defined in <i>Wdm.h</i>. The format for the constant names is <i>XXX</i>_INCREMENT. For more information about priority boost values, see <a href="/windows-hardware/drivers/wdf/specifying-priority-boosts-when-completing-i-o-requests">Specifying Priority Boosts When Completing I/O Requests</a>.
 
 ## -remarks

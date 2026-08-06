@@ -1,8 +1,7 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_CREATE_OUTPUTDUPL
 title: _D3DKMT_CREATE_OUTPUTDUPL (d3dkmthk.h)
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: c3d26e7c-7d05-4965-a725-8a9269c80a7c
+description: "Microsoft reserves the D3DKMT_CREATE_OUTPUTDUPL structure for internal use only. Don't use this structure in your driver."
 ms.date: 10/19/2018
 keywords: ["D3DKMT_CREATE_OUTPUTDUPL structure"]
 ms.keywords: _D3DKMT_CREATE_OUTPUTDUPL, D3DKMT_CREATE_OUTPUTDUPL,
@@ -35,6 +34,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_CREATE_OUTPUTDUPL
+ - D3DKMT_CREATE_OUTPUTDUPL
 dev_langs:
  - c++
 ---
@@ -52,17 +52,17 @@ Reserved for system use. Do not use in your driver.
 
 A handle to the display adapter.
 
-### -field VidPnSourceId
+### -field VidPnSourceId [in]
 
-[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the display mode applies to.
+The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the display mode applies to.
 
-### -field KeyedMutexCount
+### -field KeyedMutexCount [in]
 
-[in] The number of keyed mutexs. If zero, then this the pre-create check.
+The number of keyed mutexs. If zero, then this the pre-create check.
 
-### -field RequiredKeyedMutexCount
+### -field RequiredKeyedMutexCount [out]
 
-[out] The number of keyed mutexs needed.
+The number of keyed mutexs needed.
 
 ### -field KeyedMutexs
 

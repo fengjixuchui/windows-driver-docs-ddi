@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.KeSetImportanceDpc
 title: KeSetImportanceDpc function (wdm.h)
-description: The KeSetImportanceDpc routine specifies how soon the DPC routine is run.
+description: Learn how the KeSetImportanceDpc routine specifies how soon the DPC routine is run.
 old-location: kernel\kesetimportancedpc.htm
 tech.root: kernel
-ms.assetid: 0feb053b-6b58-4b26-8549-a6cf3996a3e6
 ms.date: 04/30/2018
 keywords: ["KeSetImportanceDpc function"]
 ms.keywords: KeSetImportanceDpc, KeSetImportanceDpc routine [Kernel-Mode Driver Architecture], k105_dc95afd2-5be3-4d48-a99f-0a9f2d8dab9b.xml, kernel.kesetimportancedpc, wdm/KeSetImportanceDpc
@@ -50,14 +49,14 @@ The <b>KeSetImportanceDpc</b> routine specifies how soon the DPC routine is run.
 
 ## -parameters
 
-### -param Dpc 
+### -param Dpc [in, out]
 
-[in, out]
+
 Pointer to the caller's DPC object, which <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializedpc">KeInitializeDpc</a> already initialized.
 
-### -param Importance 
+### -param Importance [in]
 
-[in]
+
 Specifies one of the following system-defined values to determine the behavior of <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keinsertqueuedpc">KeInsertQueueDpc</a> and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iorequestdpc">IoRequestDpc</a> when either routine is used to queue the DPC.
 
 

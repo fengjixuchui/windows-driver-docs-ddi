@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_SETSCISSORRECTS
 title: PFND3D10DDI_SETSCISSORRECTS (d3d10umddi.h)
 description: The SetScissorRects function marks portions of render targets that rendering is confined to.
 old-location: display\setscissorrects.htm
-ms.assetid: ef61f50b-a82b-43df-865f-2f9d9ca906d4
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_SETSCISSORRECTS callback function"]
 ms.keywords: PFND3D10DDI_SETSCISSORRECTS, PFND3D10DDI_SETSCISSORRECTS callback, SetScissorRects, SetScissorRects callback function [Display Devices], UserModeDisplayDriverDx10_Functions_c1eec8b9-134e-4066-9f31-d1693e0c4b66.xml, d3d10umddi/SetScissorRects, display.setscissorrects
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - SetScissorRects
-product:
- - Windows
+ - PFND3D10DDI_SETSCISSORRECTS
 ---
 
 # PFND3D10DDI_SETSCISSORRECTS callback function
@@ -52,23 +49,23 @@ The <i>SetScissorRects</i> function marks portions of render targets that render
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param NumRects
+### -param NumRects [in]
 
-[in] The total number of render-target portions that the <i>pRects</i> parameter specifies.
+The total number of render-target portions that the <i>pRects</i> parameter specifies.
 
-### -param ClearRects
+### -param ClearRects [in]
 
-[in] The number of render-target portions after the number of render-target portions that <i>NumScissorRects </i>specifies to be set to <b>NULL</b>. This number represents the difference between the previous number of render-target portions (that is, when the Microsoft Direct3D runtime previously called <i>SetScissorRects</i>) and the new number of render-target portions. 
+The number of render-target portions after the number of render-target portions that <i>NumScissorRects </i>specifies to be set to <b>NULL</b>. This number represents the difference between the previous number of render-target portions (that is, when the Microsoft Direct3D runtime previously called <i>SetScissorRects</i>) and the new number of render-target portions. 
 
 Note that the number that <i>ClearScissorRects</i> specifies is only an optimization aid because the user-mode display driver could calculate this number.
 
-### -param Arg4
+### -param unnamedParam4
 
 *pRects* [in]
 
@@ -107,3 +104,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

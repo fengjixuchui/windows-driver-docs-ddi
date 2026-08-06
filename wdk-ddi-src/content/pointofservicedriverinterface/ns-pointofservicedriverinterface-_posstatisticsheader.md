@@ -4,7 +4,6 @@ title: _PosStatisticsHeader (pointofservicedriverinterface.h)
 description: This structure defines Unified Point of Service (UPOS) standard information about a device. This structure is the header for an incoming statistic.
 old-location: pos\posstatisticsheader.htm
 tech.root: pos
-ms.assetid: 75567f14-07fe-4861-9f78-e4de6d0bb023
 ms.date: 02/23/2018
 keywords: ["PosStatisticsHeader structure"]
 ms.keywords: PosStatisticsHeader, PosStatisticsHeader structure, _PosStatisticsHeader, pointofservicedriverinterface/PosStatisticsHeader, pos.posstatisticsheader
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - PointOfServiceDriverInterface.h
 api_name:
+ - _PosStatisticsHeader
  - PosStatisticsHeader
 ---
 
@@ -63,3 +63,4 @@ A <a href="/windows-hardware/drivers/ddi/pointofservicecommontypes/ns-pointofser
 ### -field DataLength
 
 Indicates the length, in bytes, of the **PosStatisticsHeader** and the buffer of <a href="/windows-hardware/drivers/ddi/pointofservicedriverinterface/ns-pointofservicedriverinterface-_posvaluestatisticsentry">PosValueStatisticsEntry</a> that follow this structure in memory.
+

@@ -4,7 +4,6 @@ title: HW_WORKITEM (storport.h)
 description: A miniport-provided callback function for processing a Storport work item request.
 old-location: storage\hwstorworkitem.htm
 tech.root: storage
-ms.assetid: CBBB1350-66BE-4F74-A0CE-0400245352F3
 ms.date: 03/29/2018
 keywords: ["HW_WORKITEM callback function"]
 ms.keywords: HW_WORKITEM, HwStorWorkItem, HwStorWorkItem routine [Storage Devices], storage.hwstorworkitem, storport/HwStorWorkItem
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - storport.h
 api_name:
- - HwStorWorkItem
+ - HW_WORKITEM
 ---
 
 # HW_WORKITEM callback function
-
 
 ## -description
 
@@ -50,31 +48,27 @@ A miniport-provided callback function for processing a Storport work item reques
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
 A pointer to the miniport driver's per-HBA storage area.
 
-### -param Context 
+### -param Context [in, optional]
 
-[in, optional]
-Optional context provided by the miniport in the <i>Callback</i> parameter of <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportqueueworkitem">StorPortQueueWorkItem</a>.
+Optional context provided by the miniport in the **Callback** parameter of [**StorPortQueueWorkItem**](nf-storport-storportqueueworkitem.md).
 
-### -param Worker 
+### -param Worker [in]
 
-[in]
-A pointer to an opaque buffer that holds context information for the work item returned by <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitializeworker">StorPortInitializeWorker</a>.
+A pointer to an opaque buffer that holds context information for the work item returned by [**StorPortInitializeWorker**](nf-storport-storportinitializeworker.md).
 
 ## -remarks
 
-If needed, a work item can be queued within <b>HwStorWorkItem</b>. Call <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportqueueworkitem">StorPortQueueWorkItem</a> with the current work item to reuse it. Otherwise, call <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportfreeworker">StorPortFreeWorker</a> to release the work item.
+If needed, a work item can be queued within **HwStorWorkItem**. Call [**StorPortQueueWorkItem**](nf-storport-storportqueueworkitem.md) with the current work item to reuse it. Otherwise, call [**StorPortFreeWorker**](nf-storport-storportfreeworker.md) to release the work item.
 
 No locks are acquired by Storport when the callback is invoked. The miniport is responsible for any synchronization required in the callback routine.
 
-The name <i>HwStorWorkItem</i> is just a placeholder for the miniport function that is pointed to by the <i>Callback</i> parameter of  <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportqueueworkitem">StorPortQueueWorkItem</a>. The actual prototype of this routine is defined in <i>Storport.h</i> as follows:
+The name **HwStorWorkItem** is just a placeholder for the miniport function that is pointed to by the **Callback** parameter of [**StorPortQueueWorkItem**](nf-storport-storportqueueworkitem.md). The actual prototype of this routine is defined in *Storport.h* as follows:
 
-
-```
+``` c
 typedef
 VOID
 HW_WORKITEM (
@@ -84,15 +78,10 @@ HW_WORKITEM (
     );
 ```
 
-
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportfreeworker">StorPortFreeWorker</a>
+[**StorPortFreeWorker**](nf-storport-storportfreeworker.md)
 
+[**StorPortInitializeWorker**](nf-storport-storportinitializeworker.md)
 
-
-<a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitializeworker">StorPortInitializeWorker</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportqueueworkitem">StorPortQueueWorkItem</a>
+[**StorPortQueueWorkItem**](nf-storport-storportqueueworkitem.md)

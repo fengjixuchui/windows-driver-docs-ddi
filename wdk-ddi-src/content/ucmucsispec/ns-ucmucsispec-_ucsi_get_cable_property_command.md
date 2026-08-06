@@ -3,7 +3,6 @@ UID: NS:ucmucsispec._UCSI_GET_CABLE_PROPERTY_COMMAND
 title: _UCSI_GET_CABLE_PROPERTY_COMMAND (ucmucsispec.h)
 tech.root: usbref
 description: Used in the GET_CABLE_PROPERTY command. See Table 4-37.
-ms.assetid: 74e3602c-0c7c-4fba-b3b2-d311cb4d531f
 ms.date: 09/30/2018
 keywords: ["UCSI_GET_CABLE_PROPERTY_COMMAND structure"]
 ms.keywords: _UCSI_GET_CABLE_PROPERTY_COMMAND, UCSI_GET_CABLE_PROPERTY_COMMAND, *PUCSI_GET_CABLE_PROPERTY_COMMAND,
@@ -37,6 +36,8 @@ api_location:
  - ucmucsispec.h
 api_name:
  - _UCSI_GET_CABLE_PROPERTY_COMMAND
+ - PUCSI_GET_CABLE_PROPERTY_COMMAND
+ - UCSI_GET_CABLE_PROPERTY_COMMAND
 ---
 
 # _UCSI_GET_CABLE_PROPERTY_COMMAND structure
@@ -44,7 +45,7 @@ api_name:
 
 ## -description
 
-Used in the GET_CABLE_PROPERTY command. See Table 4-37 in [UCSI spec version 1.1](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
+Used in the GET_CABLE_PROPERTY command. See Table 4-37 in [UCSI spec version 1.2](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
 
 ## -struct-fields
 

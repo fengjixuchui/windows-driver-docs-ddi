@@ -2,14 +2,12 @@
 UID: NN:prcomoem.IPrintOemDriverPS
 title: IPrintOemDriverPS (prcomoem.h)
 description: This section describes the methods defined for the IPrintOemDriverPS COM Interface.
-old-location: print\iprintoemdriverps_interface.htm
 tech.root: print
-ms.assetid: 39f791e6-aae3-46f6-8195-c165761d0df5
-ms.date: 04/20/2018
+ms.date: 06/11/2021
 keywords: ["IPrintOemDriverPS interface"]
 ms.keywords: IPrintOemDriverPS, IPrintOemDriverPS interface [Print Devices], IPrintOemDriverPS interface [Print Devices],described, prcomoem/IPrintOemDriverPS, print.iprintoemdriverps_interface, print_unidrv-pscript_rendering_a44b8943-0472-41da-9e5b-2f82d34e1f9a.xml
 req.header: prcomoem.h
-req.include-header: 
+req.include-header: Prcomoem.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -43,14 +41,10 @@ api_name:
 
 # IPrintOemDriverPS interface
 
-
 ## -description
 
-This section describes the methods defined for the IPrintOemDriverPS COM Interface.
+This section describes the methods defined for the **IPrintOemDriverPS** COM Interface.
 
 ## -inheritance
 
-The <b xmlns:loc="https://microsoft.com/wdcml/l10n">IPrintOemDriverPS</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPrintOemDriverPS</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The **IPrintOemDriverPS** interface inherits from the [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface.

@@ -4,7 +4,6 @@ title: VideoPortGetBytesUsed function (video.h)
 description: The VideoPortGetBytesUsed function is obsolete in Windows 2000 and later.VideoPortGetBytesUsed determines the size, in bytes, of the buffer associated with a DMA handle.
 old-location: display\videoportgetbytesused.htm
 tech.root: display
-ms.assetid: 67fe089d-4cde-4caa-a4ad-8e879a30b516
 ms.date: 05/10/2018
 keywords: ["VideoPortGetBytesUsed function"]
 ms.keywords: VideoPortGetBytesUsed, VideoPortGetBytesUsed function [Display Devices], VideoPort_Functions_315c6ad1-757d-44d3-8059-d94ab407ea69.xml, display.videoportgetbytesused, video/VideoPortGetBytesUsed
@@ -52,14 +51,14 @@ The <b>VideoPortGetBytesUsed</b> function is <b>obsolete</b> in Windows 2000 and
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's device extension.
 
-### -param pDma 
+### -param pDma [in]
 
-[in]
+
 Pointer to a DMA handle. To obtain the appropriate DMA handle, use the value in the <b>OutputBuffer</b> member of the <i>pVrp</i> parameter after <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportlockpages">VideoPortLockPages</a> returns.
 
 ## -returns

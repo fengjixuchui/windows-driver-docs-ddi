@@ -3,8 +3,7 @@ UID: NF:netadapter.NetAdapterSetLinkLayerCapabilities
 title: NetAdapterSetLinkLayerCapabilities function (netadapter.h)
 description: Sets the link layer capabilities of the network adapter.
 tech.root: netvista
-ms.assetid: cf6bc60a-837a-44c1-bd8a-15ffb7c696a9
-ms.date: 02/06/2018
+ms.date: 07/23/2025
 keywords: ["NetAdapterSetLinkLayerCapabilities function"]
 ms.keywords: NetAdapterSetLinkLayerCapabilities
 req.header: netadapter.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.21
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -50,11 +49,11 @@ Sets the link layer capabilities of the network adapter.
 
 ## -parameters
 
-### -param Adapter
+### -param Adapter [_In_]
 
 The network adapter object that the client created in a prior call to [**NetAdapterCreate**](nf-netadapter-netadaptercreate.md).
 
-### -param LinkLayerCapabilities
+### -param LinkLayerCapabilities [_In_]
 
 A pointer to an allocated and initialized [**NET_ADAPTER_LINK_LAYER_CAPABILITIES**](ns-netadapter-_net_adapter_link_layer_capabilities.md) structure.
 
@@ -62,7 +61,7 @@ A pointer to an allocated and initialized [**NET_ADAPTER_LINK_LAYER_CAPABILITIES
 
 The client driver calls this function when starting a net adapter, before calling [**NetAdapterStart**](nf-netadapter-netadapterstart.md).
 
-This function, along with a few other set capability functions (see below), is the replacement for the [**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](../ndis/ns-ndis-_ndis_miniport_adapter_general_attributes.md) union that a (non-WDF) client of Ndis.sys sets by calling [**NdisMSetMiniportAttributes**](../ndis/nf-ndis-ndismsetminiportattributes.md).
+This function, along with a few other set capability functions (see below), is the replacement for the [**NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES**](../miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes.md) union that a (non-WDF) client of Ndis.sys sets by calling [**NdisMSetMiniportAttributes**](../ndis/nf-ndis-ndismsetminiportattributes.md).
 
 ## -see-also
 

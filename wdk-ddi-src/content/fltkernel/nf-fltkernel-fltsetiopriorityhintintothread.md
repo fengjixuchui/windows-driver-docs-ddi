@@ -4,7 +4,6 @@ title: FltSetIoPriorityHintIntoThread function (fltkernel.h)
 description: The FltSetIoPriorityHintIntoThread routine is used by a minifilter driver to set the IO priority information in a thread.
 old-location: ifsk\fltsetiopriorityhintintothread.htm
 tech.root: ifsk
-ms.assetid: 924fadbe-2703-43f8-985c-db5a7bb960a6
 ms.date: 04/16/2018
 keywords: ["FltSetIoPriorityHintIntoThread function"]
 ms.keywords: FltApiRef_p_to_z_acdf2d2e-c98e-4e7d-8074-fb2b89594771.xml, FltSetIoPriorityHintIntoThread, FltSetIoPriorityHintIntoThread routine [Installable File System Drivers], fltkernel/FltSetIoPriorityHintIntoThread, ifsk.fltsetiopriorityhintintothread
@@ -50,14 +49,14 @@ The <b>FltSetIoPriorityHintIntoThread</b> routine is used by a minifilter driver
 
 ## -parameters
 
-### -param Thread 
+### -param Thread [in]
 
-[in]
+
 A pointer to the thread to modify. This parameter is required and cannot be <b>NULL</b>.
 
-### -param PriorityHint 
+### -param PriorityHint [in]
 
-[in]
+
 The  <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_io_priority_hint">IO_PRIORITY_HINT</a> enumeration value to set for the thread information pointed to by <i>Thread</i>.
 
 ## -returns

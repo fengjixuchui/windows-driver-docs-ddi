@@ -4,7 +4,6 @@ title: PFND3DDDI_SETPALETTE (d3dumddi.h)
 description: The SetPalette function associates a palette with a texture.
 old-location: display\setpalette.htm
 tech.root: display
-ms.assetid: 5d1c8c2d-7886-4876-b48e-1e6b252ae8f7
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETPALETTE callback function"]
 ms.keywords: PFND3DDDI_SETPALETTE, PFND3DDDI_SETPALETTE callback, SetPalette, SetPalette callback function [Display Devices], UserModeDisplayDriver_Functions_9366fa90-a9d7-4c03-9c96-a8bc4eba6abb.xml, d3dumddi/SetPalette, display.setpalette
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - SetPalette
-product:
- - Windows
+ - PFND3DDDI_SETPALETTE
 ---
 
 # PFND3DDDI_SETPALETTE callback function
@@ -56,7 +53,7 @@ The <i>SetPalette</i> function associates a palette with a texture.
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -77,3 +74,4 @@ The user-mode display driver uses the members in the <a href="/windows-hardware/
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

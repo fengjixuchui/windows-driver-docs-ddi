@@ -4,8 +4,7 @@ title: IDebugFailureAnalysis2::AddExtensionCommand (extsfns.h)
 description: The AddExtensionCommand method adds a new FA entry to a DebugFailureAnalysis object and sets the data block of the FA entry to a specified debugger command.
 old-location: debugger\idebugfailureanalysis2_addextensioncommand.htm
 tech.root: debugger
-ms.assetid: 370A4EBA-80BF-46B2-8F52-9F04A4EC98D7
-ms.date: 05/03/2018
+ms.date: 08/10/2023
 keywords: ["IDebugFailureAnalysis2::AddExtensionCommand"]
 ms.keywords: AddExtensionCommand, AddExtensionCommand method [Windows Debugging], AddExtensionCommand method [Windows Debugging],IDebugFailureAnalysis2 interface, IDebugFailureAnalysis2 interface [Windows Debugging],AddExtensionCommand method, IDebugFailureAnalysis2.AddExtensionCommand, IDebugFailureAnalysis2::AddExtensionCommand, debugger.idebugfailureanalysis2_addextensioncommand, extsfns/IDebugFailureAnalysis2::AddExtensionCommand
 req.header: extsfns.h
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - extsfns.h
 api_name:
- - IDebugFailureAnalysis2.AddString
+ - IDebugFailureAnalysis2::AddExtensionCommand
 ---
 
 # IDebugFailureAnalysis2::AddExtensionCommand
-
 
 ## -description
 
@@ -54,9 +52,7 @@ The <b>AddExtensionCommand</b> method adds a new <a href="/windows-hardware/driv
 
 A value in the <a href="/windows-hardware/drivers/debugger/writing-an-analysis-extension-to-extend--analyze">FA_TAG</a> enumeration. The data type associated with this tag must be <b>DEBUG_FA_ENTRY_EXTENSION_CMD</b> or <b>DEBUG_FA_ENTRY_ANSI_STRING</b>.
 
-### -param Extension
-
-#### - Str [in]
+### -param Extension [in]
 
 A pointer to a null-terminated ANSI string that is the debugger command. An example of debugger command is "!analyze -v".
 
@@ -93,7 +89,6 @@ typedef struct _FA_TAG_PROPS
 } FA_TAG_PROPS, *PFA_TAG_PROPS;
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfaentrytags">IDebugFAEntryTags</a>
@@ -113,3 +108,4 @@ typedef struct _FA_TAG_PROPS
 
 
 <a href="/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin">_EFN_Analyze</a>
+

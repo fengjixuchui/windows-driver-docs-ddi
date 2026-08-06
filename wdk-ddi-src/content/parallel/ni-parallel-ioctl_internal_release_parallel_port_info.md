@@ -4,7 +4,6 @@ title: IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO (parallel.h)
 description: The IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO request returns STATUS_SUCCESS.
 old-location: parports\ioctl_internal_release_parallel_port_info.htm
 tech.root: parports
-ms.assetid: 1a28e6db-b140-42aa-be52-fb5655983383
 ms.date: 02/15/2018
 keywords: ["IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO IOCTL"]
 ms.keywords: IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO, IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO control code [Parallel Ports], cisspd_3bbcd68f-ea0d-46c8-8aab-0e33dcb4afad.xml, parallel/IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO, parports.ioctl_internal_release_parallel_port_info
@@ -56,6 +55,10 @@ The <b>IOCTL_INTERNAL_RELEASE_PARALLEL_PORT_INFO</b> request returns STATUS_SUCC
 <div class="alert"><b>Note</b>    The intended purpose of this IOCTL is to make it possible to page the callback routines supported by the system-supplied function driver for parallel ports. However, this capability is not yet implemented.</div><div> </div>
 
 ## -ioctlparameters
+
+### -ioctl-major-code
+
+[IRP_MJ_INTERNAL_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
 ### -input-buffer
 

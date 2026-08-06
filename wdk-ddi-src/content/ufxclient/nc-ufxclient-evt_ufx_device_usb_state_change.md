@@ -4,7 +4,6 @@ title: EVT_UFX_DEVICE_USB_STATE_CHANGE (ufxclient.h)
 description: The client driver's implementation to update the state of the USB device.
 old-location: buses\evt_ufx_device_usb_state_change.htm
 tech.root: usbref
-ms.assetid: 81D4F3C5-7412-4148-A5B4-0C56DD9ADB35
 ms.date: 05/07/2018
 keywords: ["EVT_UFX_DEVICE_USB_STATE_CHANGE callback function"]
 ms.keywords: EVT_UFX_DEVICE_USB_STATE_CHANGE, EVT_UFX_DEVICE_USB_STATE_CHANGE callback, EvtUfxDeviceUsbStateChange, EvtUfxDeviceUsbStateChange callback function [Buses], PFN_UFX_DEVICE_USB_STATE_CHANGE, PFN_UFX_DEVICE_USB_STATE_CHANGE callback function pointer [Buses], buses.evt_ufx_device_usb_state_change, ufxclient/EvtUfxDeviceUsbStateChange
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ufxclient.h
 api_name:
- - PFN_UFX_DEVICE_USB_STATE_CHANGE
+ - EVT_UFX_DEVICE_USB_STATE_CHANGE
 ---
 
 # EVT_UFX_DEVICE_USB_STATE_CHANGE callback function
@@ -50,12 +49,12 @@ The client driver's implementation to update the state of the USB device.
 
 ## -parameters
 
-#### - UfxDevice [in]
+### -param unnamedParam1 [in]
 
 The handle to a  USB device object that the client driver received in a previous call to  the <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
 
 
-#### - UsbDeviceState [in]
+### -param unnamedParam2 [in]
 
 A USBFN_DEVICE_STATE-typed flag that indicates state of the USB device.
 
@@ -149,7 +148,6 @@ Arguments:
 
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>
@@ -157,3 +155,4 @@ Arguments:
 
 
 <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdeviceeventcomplete">UfxDeviceEventComplete</a>
+

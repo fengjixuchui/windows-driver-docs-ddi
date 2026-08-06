@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILUICCTOOLKITCMD
 title: RILUICCTOOLKITCMD (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILUICCTOOLKITCMD structure for internal use only."
 old-location: netvista\riluicctoolkitcmd.htm
 tech.root: netvista
-ms.assetid: f5fc28df-ee06-4efd-8509-a05ed0ebf322
 ms.date: 05/02/2018
 keywords: ["RILUICCTOOLKITCMD structure"]
 ms.keywords: "*LPRILUICCTOOLKITCMD, RILUICCTOOLKITCMD, RILUICCTOOLKITCMD structure [Network Drivers Starting with Windows Vista], netvista.riluicctoolkitcmd, ntddrilapitypes/RILUICCTOOLKITCMD"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILUICCTOOLKITCMD
+ - LPRILUICCTOOLKITCMD
 ---
 
 # RILUICCTOOLKITCMD structure (rilapitypes.h)

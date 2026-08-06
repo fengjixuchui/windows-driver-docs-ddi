@@ -4,14 +4,13 @@ title: _DXGK_START_INFO (dispmprt.h)
 description: The DXGK_START_INFO structure holds information that is needed by the display miniport driver's DxgkDdiStartDevice function.
 old-location: display\dxgk_start_info.htm
 tech.root: display
-ms.assetid: 4d28bc79-5145-48a0-99e8-3f81b2ec4a05
 ms.date: 05/10/2018
 keywords: ["DXGK_START_INFO structure"]
 ms.keywords: "*PDXGK_START_INFO, DXGK_START_INFO, DXGK_START_INFO structure [Display Devices], DmStructs_c2f6faad-cd05-43ea-ab58-b296bc130e09.xml, PDXGK_START_INFO, PDXGK_START_INFO structure pointer [Display Devices], _DXGK_START_INFO, display.dxgk_start_info, dispmprt/DXGK_START_INFO, dispmprt/PDXGK_START_INFO"
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
+ - _DXGK_START_INFO
+ - PDXGK_START_INFO
  - DXGK_START_INFO
 ---
 
@@ -73,3 +74,4 @@ A locally unique identifier (LUID) that will serve as an identifier for the adap
 The DirectX graphics kernel subsystem submits DMA buffers to the display miniport driver by calling <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_submitcommand">DxgkDdiSubmitCommand</a>.
 
 The <i>DxgkStartInfo</i> parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device">DxgkDdiStartDevice</a> function is a pointer to a DXGK_START_INFO structure.
+

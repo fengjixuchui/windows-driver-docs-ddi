@@ -4,7 +4,6 @@ title: MINIPORT_WDI_TAL_TXRX_SET_PORT_OPMODE (dot11wdi.h)
 description: The MiniportWdiTalTxRxSetPortOpMode handler function specifies the opmode used for the port so that the TxEngine and RxEngine enable the corresponding functionality.
 old-location: netvista\miniportwditaltxrxsetportopmode.htm
 tech.root: netvista
-ms.assetid: 86F3005E-8BB3-4309-AFDE-7FA6E0427BFD
 ms.date: 05/02/2018
 keywords: ["MINIPORT_WDI_TAL_TXRX_SET_PORT_OPMODE callback function"]
 ms.keywords: MINIPORT_WDI_TAL_TXRX_SET_PORT_OPMODE, MINIPORT_WDI_TAL_TXRX_SET_PORT_OPMODE callback, MiniportWdiTalTxRxSetPortOpMode, MiniportWdiTalTxRxSetPortOpMode callback function [Network Drivers Starting with Windows Vista], dot11wdi/MiniportWdiTalTxRxSetPortOpMode, netvista.miniportwditaltxrxsetportopmode
@@ -38,13 +37,16 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
- - MiniportWdiTalTxRxSetPortOpMode
+ - MINIPORT_WDI_TAL_TXRX_SET_PORT_OPMODE
 ---
 
 # MINIPORT_WDI_TAL_TXRX_SET_PORT_OPMODE callback function
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The 
   MiniportWdiTalTxRxSetPortOpMode handler function specifies the opmode used for the port so that the TxEngine and RxEngine enable the corresponding functionality. It is called after the set-opmode command has been completed on the control path, but before a BSS is created (connect or start GO).
@@ -55,19 +57,19 @@ This is a WDI miniport handler inside <a href="/windows-hardware/drivers/ddi/dot
 
 ## -parameters
 
-### -param MiniportTalTxRxContext 
+### -param MiniportTalTxRxContext [in]
 
-[in]
+
 TAL device handle returned by the IHV miniport in <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tal_txrx_initialize">MiniportWdiTalTxRxInitialize</a>.
 
-### -param PortId 
+### -param PortId [in]
 
-[in]
+
 Port ID for the port.
 
-### -param Opmode 
+### -param Opmode [in]
 
-[in]
+
 
 <a href="/windows-hardware/drivers/ddi/dot11wdi/ne-dot11wdi-_wdi_operation_mode">WDI_OPERATION_MODE</a> value that specifies the operation mode for the port.
 
@@ -90,3 +92,4 @@ Port ID for the port.
 
 
 <a href="/windows-hardware/drivers/network/wdi-port-id">WDI_PORT_ID</a>
+

@@ -4,7 +4,6 @@ title: wiasWritePropBin function (wiamdef.h)
 description: The wiasWritePropBin function writes a single binary-data property value to a WIA item.
 old-location: image\wiaswritepropbin.htm
 tech.root: image
-ms.assetid: 953a43dd-1cab-442b-9d77-f310805166ee
 ms.date: 05/03/2018
 keywords: ["wiasWritePropBin function"]
 ms.keywords: image.wiaswritepropbin, wiamdef/wiasWritePropBin, wiasFncs_fa38d5cc-94dd-4a1f-9e24-e12c42ce0429.xml, wiasWritePropBin, wiasWritePropBin function [Imaging Devices]
@@ -50,9 +49,9 @@ The <b>wiasWritePropBin </b>function writes a single binary-data property value 
 
 ## -parameters
 
-### -param pWiasContext 
+### -param pWiasContext [in]
 
-[in]
+
 Pointer to a WIA item context.
 
 ### -param propid
@@ -63,9 +62,9 @@ Specifies the property identifier.
 
 Specifies the total number of bytes to write to the item.
 
-### -param pbVal 
+### -param pbVal [in]
 
-[in]
+
 Pointer to the first byte of an array of bytes to be written to the item.
 
 ## -returns

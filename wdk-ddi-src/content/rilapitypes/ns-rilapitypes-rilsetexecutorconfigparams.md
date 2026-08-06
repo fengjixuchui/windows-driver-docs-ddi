@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILSETEXECUTORCONFIGPARAMS
 title: RILSETEXECUTORCONFIGPARAMS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILSETEXECUTORCONFIGPARAMS structure for internal use only."
 old-location: netvista\rilsetexecutorconfigparams.htm
 tech.root: netvista
-ms.assetid: de392c8c-3153-48e8-85ad-dc1a5ed2812c
 ms.date: 05/02/2018
 keywords: ["RILSETEXECUTORCONFIGPARAMS structure"]
 ms.keywords: "*LPRILSETEXECUTORCONFIGPARAMS, RILSETEXECUTORCONFIGPARAMS, RILSETEXECUTORCONFIGPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsetexecutorconfigparams, ntddrilapitypes/RILSETEXECUTORCONFIGPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSETEXECUTORCONFIGPARAMS
+ - LPRILSETEXECUTORCONFIGPARAMS
 ---
 
 # RILSETEXECUTORCONFIGPARAMS structure (rilapitypes.h)

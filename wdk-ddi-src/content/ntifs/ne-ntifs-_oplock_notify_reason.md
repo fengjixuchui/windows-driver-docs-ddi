@@ -1,11 +1,9 @@
 ---
-UID: NE:ntifs.__unnamed_enum_3
+UID: NE:ntifs.OPLOCK_NOTIFY_REASON
 title: _OPLOCK_NOTIFY_REASON (ntifs.h)
 description: OPLOCK_NOTIFY_REASON specifies the reason for calling the notification callback provided to FsRtlCheckOplockEx2.
-ms.assetid: fd212e75-7ba1-4764-a860-57b21d8eef4a
 tech.root: ifsk
 ms.date: 03/24/2020
-ms.topic: enum
 ms.keywords: _OPLOCK_NOTIFY_REASON, OPLOCK_NOTIFY_REASON,
 req.header: ntifs.h
 req.include-header: 
@@ -29,12 +27,13 @@ api_type:
 api_location:
  - ntifs.h
 api_name:
- - _OPLOCK_NOTIFY_REASON
+ - OPLOCK_NOTIFY_REASON
 dev_langs:
  - c++
 ---
 
 # _OPLOCK_NOTIFY_REASON enumeration
+
 
 ## -description
 
@@ -59,3 +58,4 @@ The OPLOCK_NOTIFY_REASON is specified in the *NotifyReason* member of the OPLOCK
 [**FsRtlCheckOplockEx2**](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcheckoplockex2.md)
 
 [OPLOCK_NOTIFY_PARAMS](ns-ntifs-_oplock_notify_params.md)
+

@@ -1,9 +1,9 @@
 ---
 UID: NE:d3d9types._D3DSHADEMODE
 title: _D3DSHADEMODE (d3d9types.h)
-description: 
-ms.assetid: bd32b4df-aac7-43ae-93bb-f11bd678c01e
+description: "Learn more about: _D3DSHADEMODE enumeration"
 ms.date: 10/19/2018
+tech.root: display
 keywords: ["D3DSHADEMODE enumeration"]
 ms.keywords: _D3DSHADEMODE, D3DSHADEMODE,
 req.header: d3d9types.h
@@ -31,6 +31,7 @@ api_location:
  - d3d9types.h
 api_name:
  - _D3DSHADEMODE
+ - D3DSHADEMODE
 dev_langs:
  - c++
 ---

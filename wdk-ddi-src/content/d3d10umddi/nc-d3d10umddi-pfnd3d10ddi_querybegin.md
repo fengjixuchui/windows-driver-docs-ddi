@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_QUERYBEGIN
 title: PFND3D10DDI_QUERYBEGIN (d3d10umddi.h)
 description: The QueryBegin function marks the beginning of a sequence of graphics commands for a query and transitions the query to the "building" state.
 old-location: display\querybegin.htm
-ms.assetid: 2f0a7462-83a6-47df-b5f6-b3706b875349
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_QUERYBEGIN callback function"]
 ms.keywords: PFND3D10DDI_QUERYBEGIN, PFND3D10DDI_QUERYBEGIN callback, QueryBegin, QueryBegin callback function [Display Devices], UserModeDisplayDriverDx10_Functions_d456daf9-09b9-4174-8eba-7591ec45cd20.xml, d3d10umddi/QueryBegin, display.querybegin
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - QueryBegin
+ - PFND3D10DDI_QUERYBEGIN
 ---
 
 # PFND3D10DDI_QUERYBEGIN callback function
@@ -50,13 +49,13 @@ The *QueryBegin* function marks the beginning of a sequence of graphics commands
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hQuery* [in]
 
@@ -81,3 +80,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 [SetPredication](./nc-d3d10umddi-pfnd3d10ddi_setpredication.md)
 
 [pfnSetErrorCb](./nc-d3d10umddi-pfnd3d10ddi_seterror_cb.md)
+

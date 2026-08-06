@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_COMMANDLISTEXECUTE
 title: PFND3D11DDI_COMMANDLISTEXECUTE (d3d10umddi.h)
 description: The CommandListExecute function runs a command list.
 old-location: display\commandlistexecute.htm
-ms.assetid: 49f44f29-52f6-40d9-8617-a24aa3d30736
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_COMMANDLISTEXECUTE callback function"]
 ms.keywords: CommandListExecute, CommandListExecute callback function [Display Devices], PFND3D11DDI_COMMANDLISTEXECUTE, PFND3D11DDI_COMMANDLISTEXECUTE callback, UserModeDisplayDriverDx11_Functions_14a50e02-5483-4d83-83d7-79064981f4c8.xml, d3d10umddi/CommandListExecute, display.commandlistexecute
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CommandListExecute
+ - PFND3D11DDI_COMMANDLISTEXECUTE
 ---
 
 # PFND3D11DDI_COMMANDLISTEXECUTE callback function
@@ -50,13 +49,13 @@ The <b>CommandListExecute</b> function runs a command list.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hCommandList* [in]
 
@@ -91,3 +90,4 @@ The driver can pass E_OUTOFMEMORY (if the driver runs out of memory) or D3DDDIER
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

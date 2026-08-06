@@ -4,7 +4,6 @@ title: IPrintOemUni::DownloadCharGlyph (prcomoem.h)
 description: The IPrintOemUni::DownloadCharGlyph method enables a rendering plug-in for Unidrv to send a character glyph for a specified soft font to the printer.
 old-location: print\iprintoemuni_downloadcharglyph.htm
 tech.root: print
-ms.assetid: 1ce7ebaa-759e-418a-af07-e530b1102567
 ms.date: 04/20/2018
 keywords: ["IPrintOemUni::DownloadCharGlyph"]
 ms.keywords: DownloadCharGlyph, DownloadCharGlyph method [Print Devices], DownloadCharGlyph method [Print Devices],IPrintOemUni interface, IPrintOemUni interface [Print Devices],DownloadCharGlyph method, IPrintOemUni.DownloadCharGlyph, IPrintOemUni::DownloadCharGlyph, prcomoem/IPrintOemUni::DownloadCharGlyph, print.iprintoemuni_downloadcharglyph, print_unidrv-pscript_rendering_da86807b-5b3c-41af-8504-337da544dd93.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemUni.DownloadCharGlyph
+ - IPrintOemUni::DownloadCharGlyph
 ---
 
 # IPrintOemUni::DownloadCharGlyph
@@ -66,9 +65,9 @@ Caller-supplied glyph handle.
 
 Caller-supplied pointer to receive the method-supplied width of the character.
 
-### -param pdwResult 
+### -param pdwResult [out]
 
-[out]
+
 Receives a method-supplied value representing the amount of printer memory, in bytes, required to store the character glyph. If the operation fails, the returned value should be zero.
 
 ## -returns
@@ -144,3 +143,4 @@ The <code>IPrintOemUni::DownloadCharGlyph</code> method is optional. If a render
 If you implement the <code>IPrintOemUni::DownloadCharGlyph</code> method, you must also implement the <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-downloadfontheader">IPrintOemUni::DownloadFontHeader</a> method.
 
 For additional information see <a href="/windows-hardware/drivers/print/customized-font-management">Customized Font Management</a>.
+

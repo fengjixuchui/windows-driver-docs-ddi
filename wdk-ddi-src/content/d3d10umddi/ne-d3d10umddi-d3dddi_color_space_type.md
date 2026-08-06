@@ -1,14 +1,11 @@
 ---
 UID: NE:d3d10umddi.D3DDDI_COLOR_SPACE_TYPE
 title: D3DDDI_COLOR_SPACE_TYPE
-description: 
+description: "Learn more about: D3DDDI_COLOR_SPACE_TYPE enumeration (d3d10umddi.h)"
 tech.root: display
-ms.assetid: 9d3b7a33-e1ac-4ade-a5d3-d22ea4739f65
 ms.date: 04/04/2019
 keywords: ["D3DDDI_COLOR_SPACE_TYPE enumeration"]
 ms.keywords: D3DDDI_COLOR_SPACE_TYPE, ,
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: d3d10umddi.h
 req.include-header: 
 req.target-type: 
@@ -32,8 +29,6 @@ api_location:
  - d3d10umddi.h
 api_name:
  - D3DDDI_COLOR_SPACE_TYPE
-product:
- - Windows
 ---
 
 # D3DDDI_COLOR_SPACE_TYPE enumeration (d3d10umddi.h)

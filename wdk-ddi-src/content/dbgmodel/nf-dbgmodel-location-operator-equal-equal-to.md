@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.Location.operator-equal-equal-to
 title: operator== function (dbgmodel.h)
 description: Equivalence operator for the location function.
-ms.assetid: a384b22c-b14c-4609-b981-e6162dac005f
 ms.date: 09/28/2018
 keywords: ["operator== function"]
 ms.keywords: operator==
@@ -35,7 +34,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - operator==
+ - Location::operator==
 ---
 
 # operator== function
@@ -60,3 +59,4 @@ This function returns an indication of whether the two locations refer to the sa
 ## -see-also
 
 [dbgmodel.h header](./index.md)
+

@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGK_ALLOCATIONUSAGEHINT
 title: _DXGK_ALLOCATIONUSAGEHINT (d3dkmddi.h)
 description: The DXGK_ALLOCATIONUSAGEHINT structure contains allocation usage and version information that is used as a hint about how to use an allocation.
 old-location: display\dxgk_allocationusagehint.htm
-ms.assetid: 04cceb5e-d185-4f43-a627-71a61a45b8aa
 ms.date: 05/10/2018
 keywords: ["DXGK_ALLOCATIONUSAGEHINT structure"]
 ms.keywords: DXGK_ALLOCATIONUSAGEHINT, DXGK_ALLOCATIONUSAGEHINT structure [Display Devices], DmStructs_9597c610-bb79-496c-b7b3-9fb5abb30a46.xml, _DXGK_ALLOCATIONUSAGEHINT, d3dkmddi/DXGK_ALLOCATIONUSAGEHINT, display.dxgk_allocationusagehint
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_ALLOCATIONUSAGEHINT
  - DXGK_ALLOCATIONUSAGEHINT
 ---
 
@@ -52,13 +52,13 @@ The DXGK_ALLOCATIONUSAGEHINT structure contains allocation usage and version inf
 
 ## -struct-fields
 
-### -field Version
+### -field Version [out]
 
-[out] A positive integer that indicates the version of the allocation.
+A positive integer that indicates the version of the allocation.
 
-### -field v1
+### -field v1 [out]
 
-[out] A <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_allocationusageinfo1">DXGK_ALLOCATIONUSAGEINFO1</a> structure that describes how an allocation can be used in direct memory access (DMA) buffering.
+A <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_allocationusageinfo1">DXGK_ALLOCATIONUSAGEINFO1</a> structure that describes how an allocation can be used in direct memory access (DMA) buffering.
 
 ## -see-also
 
@@ -75,3 +75,4 @@ The DXGK_ALLOCATIONUSAGEHINT structure contains allocation usage and version inf
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation">DxgkDdiCreateAllocation</a>
+

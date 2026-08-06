@@ -4,7 +4,6 @@ title: WDF_IO_QUEUE_STOPPED function (wdfio.h)
 description: The WDF_IO_QUEUE_STOPPED function returns TRUE if an I/O queue's state indicates that the queue is stopped.
 old-location: wdf\wdf_io_queue_stopped.htm
 tech.root: wdf
-ms.assetid: 8257c636-824d-4909-b0cb-76d72ac980fa
 ms.date: 02/26/2018
 keywords: ["WDF_IO_QUEUE_STOPPED function"]
 ms.keywords: DFQueueObjectRef_55457efd-0074-4be5-b078-bb223963bfca.xml, WDF_IO_QUEUE_STOPPED, WDF_IO_QUEUE_STOPPED function, kmdf.wdf_io_queue_stopped, wdf.wdf_io_queue_stopped, wdfio/WDF_IO_QUEUE_STOPPED
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: None
 req.dll: 
-req.irql: Any IRQL.
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,9 +52,9 @@ The <b>WDF_IO_QUEUE_STOPPED</b> function returns <b>TRUE</b> if an I/O queue's s
 
 ## -parameters
 
-### -param State 
+### -param State [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfio/ne-wdfio-_wdf_io_queue_state">WDF_IO_QUEUE_STATE</a>-typed value that <a href="/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuegetstate">WdfIoQueueGetState</a> returns.
 
 ## -returns

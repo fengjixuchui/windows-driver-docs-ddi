@@ -4,7 +4,6 @@ title: _D3DDDIARG_CLEAR (d3dumddi.h)
 description: The D3DDDIARG_CLEAR structure describes the parameters of a hardware-assisted clearing operation.
 old-location: display\d3dddiarg_clear.htm
 tech.root: display
-ms.assetid: f437f94c-075e-43e6-bf28-0e7c7bd78c5a
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_CLEAR structure"]
 ms.keywords: D3DDDIARG_CLEAR, D3DDDIARG_CLEAR structure [Display Devices], UMDisplayDriver_param_Structs_64efff84-8fe3-40d4-b823-27e4a235fd86.xml, _D3DDDIARG_CLEAR, d3dumddi/D3DDDIARG_CLEAR, display.d3dddiarg_clear
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_CLEAR
  - D3DDDIARG_CLEAR
 ---
 
@@ -52,9 +52,9 @@ The D3DDDIARG_CLEAR structure describes the parameters of a hardware-assisted cl
 
 ## -struct-fields
 
-### -field Flags
+### -field Flags [in]
 
-[in] A UINT value that specifies which buffers the driver should clear and how the clear operation should be performed. This member can be a bitwise OR of the following values. For more information, see the Remarks section in the <a href="/windows-hardware/drivers/ddi/index">Clear</a> reference page.
+A UINT value that specifies which buffers the driver should clear and how the clear operation should be performed. This member can be a bitwise OR of the following values. For more information, see the Remarks section in the <a href="/windows-hardware/drivers/ddi/index">Clear</a> reference page.
 
 | **Value** | **Meaning** | 
 |:--|:--|
@@ -63,17 +63,17 @@ The D3DDDIARG_CLEAR structure describes the parameters of a hardware-assisted cl
 | D3DCLEAR_ZBUFFER (0x00000002l) | The driver should clear the context's depth buffer to the depth that is specified by the FillDepth member. This value is defined in D3d8types.h. | 
 | D3DCLEAR_COMPUTERECTS (0x00000008l) | If rectangles are specified for clearing, the driver should clip them against the current viewport. If no rectangles are specified, the driver should clear the entire viewport. This value is defined in D3dhal.h. |
 
-### -field FillColor
+### -field FillColor [in]
 
-[in] The color value that the driver should clear the context's render target to.
+The color value that the driver should clear the context's render target to.
 
-### -field FillDepth
+### -field FillDepth [in]
 
-[in] The value that the driver should use to set the depth in the context's depth buffer. This member can be a value in the range from 0.0 through 1.0.
+The value that the driver should use to set the depth in the context's depth buffer. This member can be a value in the range from 0.0 through 1.0.
 
-### -field FillStencil
+### -field FillStencil [in]
 
-[in] The value that the driver should clear the context's stencil buffer to. This member can be an integer in the range from 0 through 2ⁿ-1, where <i>n</i> is the number of bits in the stencil buffer.
+The value that the driver should clear the context's stencil buffer to. This member can be an integer in the range from 0 through 2ⁿ-1, where <i>n</i> is the number of bits in the stencil buffer.
 
 ## -remarks
 
@@ -82,3 +82,4 @@ In a call to the user-mode display driver's <a href="/windows-hardware/drivers/d
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/index">Clear</a>
+

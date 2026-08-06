@@ -4,7 +4,6 @@ title: _UNIFM_HDR (prntfont.h)
 description: The UNIFM_HDR structure is used to define the contents of Unidrv font metrics files (.ufm files).
 old-location: print\unifm_hdr.htm
 tech.root: print
-ms.assetid: 9490d090-2156-4653-9e56-a233d23c2fb3
 ms.date: 04/20/2018
 keywords: ["UNIFM_HDR structure"]
 ms.keywords: "*PUNIFM_HDR, PUNIFM_HDR, PUNIFM_HDR structure pointer [Print Devices], UNIFM_HDR, UNIFM_HDR structure [Print Devices], _UNIFM_HDR, print.unifm_hdr, print_unidrv-pscript_fonts_eaf5dd18-df64-41bc-91b5-836b6ed165b6.xml, prntfont/PUNIFM_HDR, prntfont/UNIFM_HDR"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - prntfont.h
 api_name:
+ - _UNIFM_HDR
+ - PUNIFM_HDR
  - UNIFM_HDR
 ---
 
@@ -111,7 +112,7 @@ If **lGlyphSetDataRCID** is not CC_DEFAULT, then the following rules apply:
     // System predefined character conversion
     //
     // UNIDRV is going to support  following system predefined character conversion.
-    // By speciffying these number in UNIFM.dwGlyphSetDataRCID;
+    // By specifying these number in UNIFM.dwGlyphSetDataRCID;
     //
 
     #define CC_NOPRECNV 0x0000FFFF // Not use predefined
@@ -132,11 +133,11 @@ If **lGlyphSetDataRCID** is not CC_DEFAULT, then the following rules apply:
     #define CC_ISC      -11 // Unicode to Korean Industrial Standard. Codepage 949.
     #define CC_JIS      -12 // Unicode to JIS X0208. Codepage 932.
     #define CC_JIS_ANK  -13 // Unicode to JIS X0208 except ANK. Codepage 932.
-    #define CC_NS86     -14 // Big-5 to National Standstand conversion. Codepage 950
+    #define CC_NS86     -14 // Big-5 to National Standard conversion. Codepage 950
     #define CC_TCA      -15 // Big-5 to Taipei Computer Association. Codepage 950.
     #define CC_GB2312   -16 // Unicode to GB2312. Codepage 936
     #define CC_SJIS     -17 // Unicode to Shift-JIS. Codepage 932.
-    #define CC_WANSUNG  -18 // Unicode to Extented Wansung. Codepage 949.
+    #define CC_WANSUNG  -18 // Unicode to Extended Wansung. Codepage 949.
     ```
 
 If **lGlyphSetDataRCID** is CC_DEFAULT, there are no restrictions on the value specified for **ulDefaultCodepage**, but a default code page must be specified.
@@ -154,3 +155,4 @@ If **lGlyphSetDataRCID** is CC_DEFAULT, there are no restrictions on the value s
 [UNI_CODEPAGEINFO](./ns-prntfont-_uni_codepageinfo.md)
 
 [WIDTHTABLE](./ns-prntfont-_widthtable.md)
+

@@ -4,7 +4,6 @@ title: IWDFDevice::AssignDeviceInterfaceState (wudfddi.h)
 description: The AssignDeviceInterfaceState method enables or disables the specified device interface instance for a device.
 old-location: wdf\iwdfdevice_assigndeviceinterfacestate.htm
 tech.root: wdf
-ms.assetid: 466af310-f2a7-4bd7-b927-df644e2e9c24
 ms.date: 02/26/2018
 keywords: ["IWDFDevice::AssignDeviceInterfaceState"]
 ms.keywords: AssignDeviceInterfaceState, AssignDeviceInterfaceState method, AssignDeviceInterfaceState method,IWDFDevice interface, IWDFDevice interface,AssignDeviceInterfaceState method, IWDFDevice.AssignDeviceInterfaceState, IWDFDevice::AssignDeviceInterfaceState, UMDFDeviceObjectRef_d3c15e61-9df6-4b55-a479-375486383064.xml, umdf.iwdfdevice_assigndeviceinterfacestate, wdf.iwdfdevice_assigndeviceinterfacestate, wudfddi/IWDFDevice::AssignDeviceInterfaceState
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice.AssignDeviceInterfaceState
+ - IWDFDevice::AssignDeviceInterfaceState
 ---
 
 # IWDFDevice::AssignDeviceInterfaceState
@@ -52,19 +51,19 @@ The <b>AssignDeviceInterfaceState</b> method enables or disables the specified d
 
 ## -parameters
 
-### -param pDeviceInterfaceGuid 
+### -param pDeviceInterfaceGuid [in]
 
-[in]
+
 A pointer to the GUID for a device interface class.
 
-### -param pReferenceString 
+### -param pReferenceString [in, optional]
 
-[in, optional]
+
 A pointer to a <b>NULL</b>-terminated string that contains the name of the instance of the device interface. This parameter is optional. The driver can pass <b>NULL</b> if the driver does not have to supply a name. If the driver must supply a name, the string that the driver passes must not contain any path separator characters ("/" or "\\").
 
-### -param Enable 
+### -param Enable [in]
 
-[in]
+
 A BOOL value that specifies whether the device interface instance should be enabled or disabled. <b>TRUE</b> indicates to enable; <b>FALSE</b> indicates to disable.
 
 ## -returns
@@ -95,3 +94,4 @@ For a code example of how to use the <b>AssignDeviceInterfaceState</b> method, s
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice-createdeviceinterface">IWDFDevice::CreateDeviceInterface</a>
+

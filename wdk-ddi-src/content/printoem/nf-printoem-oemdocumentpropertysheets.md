@@ -1,11 +1,9 @@
 ---
 UID: NF:printoem.OEMDocumentPropertySheets
 title: OEMDocumentPropertySheets function (printoem.h)
-description: OEMDocumentPropertySheets function
-old-location: print\oemdocumentpropertysheets.htm
+description: Describes the OEMDocumentPropertySheets function.
 tech.root: print
-ms.assetid: 81c5eced-3d68-4202-83b9-57d661fe4952
-ms.date: 04/20/2018
+ms.date: 08/08/2022
 keywords: ["OEMDocumentPropertySheets function"]
 ms.keywords: OEMDocumentPropertySheets, OEMDocumentPropertySheets function [Print Devices], print.oemdocumentpropertysheets, print_obsoletefunctions_793a8444-a6ec-46b0-82bf-ea9cfecdf98a.xml, printoem/OEMDocumentPropertySheets
 req.header: printoem.h
@@ -41,16 +39,20 @@ api_name:
  - OEMDocumentPropertySheets
 ---
 
-# OEMDocumentPropertySheets function
-
-
 ## -description
+
+Describes the OEMDocumentPropertySheets function.
 
 ## -parameters
 
-### -param pPSUIInfo 
+### -param pPSUIInfo [in]
 
-[in]
+Defines the **PPROPSHEETUI_INFO** parameter *pPSUIInfo*.
 
 ### -param lParam
 
+Defines the **LPARAM** parameter *lParam*.
+
+## -returns
+
+Returns an **LRESULT** value.

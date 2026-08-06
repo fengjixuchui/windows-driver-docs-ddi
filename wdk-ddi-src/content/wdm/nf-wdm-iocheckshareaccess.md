@@ -4,7 +4,6 @@ title: IoCheckShareAccess function (wdm.h)
 description: The IoCheckShareAccess routine is called by file system drivers (FSDs) or other highest-level drivers to check whether shared access to a file object is permitted.
 old-location: kernel\iocheckshareaccess.htm
 tech.root: kernel
-ms.assetid: a249c76b-7389-467f-bfb0-befe06df2fa4
 ms.date: 04/30/2018
 keywords: ["IoCheckShareAccess function"]
 ms.keywords: IoCheckShareAccess, IoCheckShareAccess routine [Kernel-Mode Driver Architecture], k104_0411033a-da5d-4803-a970-f6e7289a6200.xml, kernel.iocheckshareaccess, wdm/IoCheckShareAccess
@@ -50,14 +49,14 @@ The <b>IoCheckShareAccess</b> routine is called by file system drivers (FSDs) or
 
 ## -parameters
 
-### -param DesiredAccess 
+### -param DesiredAccess [in]
 
-[in]
+
 Specifies an <a href="/windows-hardware/drivers/kernel/access-mask">ACCESS_MASK</a> value that indicates the desired type of access to the given <i>FileObject</i> for the current open request. Drivers compute the value of this parameter by taking the requested access in the <a href="/windows-hardware/drivers/ifs/irp-mj-create">IRP_MJ_CREATE</a> request and then applying <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-seaccesscheck">SeAccessCheck</a> for each security descriptor to determine the actual access granted. If the granted access is more restrictive than the desired access, then that is an error, and the driver should complete the current IRP with a status of STATUS_ACCESS_DENIED. (Note that <b>SeAccessCheck</b> clears the MAXIMUM_ALLOWED bit in the granted access; be sure to not use that bit when comparing desired access to granted access.) The driver then passes the granted access as the value of <i>DesiredAccess</i>.
 
-### -param DesiredShareAccess 
+### -param DesiredShareAccess [in]
 
-[in]
+
 Specifies the desired type of shared access to <i>FileObject</i> for the current open request. The value of this parameter is usually the same as the <i>ShareAccess</i> passed to the file system or highest-level driver by the I/O manager when the open request was made. This value can be zero, or any combination of the following:
 
 FILE_SHARE_READ
@@ -66,19 +65,19 @@ FILE_SHARE_WRITE
 
 FILE_SHARE_DELETE
 
-### -param FileObject 
+### -param FileObject [in, out]
 
-[in, out]
+
 Pointer to the file object for which to check access for the current open request.
 
-### -param ShareAccess 
+### -param ShareAccess [in, out]
 
-[in, out]
+
 Pointer to the common share-access data structure associated with <i>FileObject</i>. Drivers should treat this structure as opaque.
 
-### -param Update 
+### -param Update [in]
 
-[in]
+
 Specifies whether to update the share-access status for <i>FileObject</i>. A Boolean value of <b>TRUE</b> means this routine will update the share access information for the file object if the open request is permitted.
 
 ## -returns

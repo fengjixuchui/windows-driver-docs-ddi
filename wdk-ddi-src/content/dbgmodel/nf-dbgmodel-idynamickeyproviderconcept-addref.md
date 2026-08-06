@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDynamicKeyProviderConcept.AddRef
 title: IDynamicKeyProviderConcept::AddRef (dbgmodel.h)
-description: Increments the reference count for an interface on an object. This method should be called for every new copy of a pointer to an interface on an object.
-ms.assetid: 2d12274d-75b0-4494-bec7-c962ec80e1aa
+description: "The IDynamicKeyProviderConcept::AddRef method increments the reference count for an interface on an object."
 ms.date: 09/21/2018
 keywords: ["IDynamicKeyProviderConcept::AddRef"]
 ms.keywords: IDynamicKeyProviderConcept::AddRef, AddRef, IDynamicKeyProviderConcept.AddRef, IDynamicKeyProviderConcept::AddRef, IDynamicKeyProviderConcept.AddRef
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDynamicKeyProviderConcept.AddRef
+ - IDynamicKeyProviderConcept::AddRef
 ---
 
 # IDynamicKeyProviderConcept::AddRef
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IDynamicKeyProviderConcept interface](nn-dbgmodel-idynamickeyproviderconcept.md)
+

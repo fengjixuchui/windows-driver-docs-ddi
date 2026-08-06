@@ -4,7 +4,6 @@ title: FreePrintPropertyValue function (winspool.h)
 description: Frees the value that is retrieved using GetJobNamedPropertyValue function.
 old-location: print\freeprintpropertyvalue.htm
 tech.root: print
-ms.assetid: 38B760D9-CB6E-45AD-A83F-3C26D1B31A30
 ms.date: 11/18/2019
 keywords: ["FreePrintPropertyValue function"]
 ms.keywords: FreePrintPropertyValue, FreePrintPropertyValue function [Print Devices], print.freeprintpropertyvalue, winspool/FreePrintPropertyValue
@@ -51,7 +50,7 @@ Frees the value that is retrieved using the [GetJobNamedPropertyValue](./nf-wins
 
 ## -parameters
 
-### -param pValue 
+### -param pValue [in, out]
 
-[in, out]
+
 Pointer to **PrintPropertyValue** structure that is returned from [GetJobNamedPropertyValue](./nf-winspool-getjobnamedpropertyvalue.md).

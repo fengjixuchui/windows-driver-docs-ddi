@@ -4,7 +4,6 @@ title: IWDFIoRequest::GetCompletionParams (wudfddi.h)
 description: The GetCompletionParams method retrieves the parameters object for the completion of an I/O request object.
 old-location: wdf\iwdfiorequest_getcompletionparams.htm
 tech.root: wdf
-ms.assetid: aaca14ff-9ea2-43f4-bfa9-9151d855c3af
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequest::GetCompletionParams"]
 ms.keywords: GetCompletionParams, GetCompletionParams method, GetCompletionParams method,IWDFIoRequest interface, IWDFIoRequest interface,GetCompletionParams method, IWDFIoRequest.GetCompletionParams, IWDFIoRequest::GetCompletionParams, UMDFRequestObjectRef_dbfb5f9c-c1ad-425d-9bcb-627cc961d00d.xml, umdf.iwdfiorequest_getcompletionparams, wdf.iwdfiorequest_getcompletionparams, wudfddi/IWDFIoRequest::GetCompletionParams
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequest.GetCompletionParams
+ - IWDFIoRequest::GetCompletionParams
 ---
 
 # IWDFIoRequest::GetCompletionParams
@@ -52,9 +51,9 @@ The <b>GetCompletionParams</b> method retrieves the parameters object for the co
 
 ## -parameters
 
-### -param ppCompletionParams 
+### -param ppCompletionParams [out]
 
-[out]
+
 A pointer to a variable that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfrequestcompletionparams">IWDFRequestCompletionParams</a> interface.
 
 ## -see-also
@@ -68,3 +67,4 @@ A pointer to a variable that receives a pointer to the <a href="/windows-hardwar
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfrequestcompletionparams">IWDFRequestCompletionParams</a>
+

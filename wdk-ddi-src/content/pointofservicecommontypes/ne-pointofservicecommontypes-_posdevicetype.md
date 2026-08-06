@@ -2,10 +2,8 @@
 UID: NE:pointofservicecommontypes._PosDeviceType
 title: _PosDeviceType (pointofservicecommontypes.h)
 description: This enumeration defines values used in the PosDeviceBasicsType structure to indicate the type of device (for instance, barcode scanner or magnetic stripe reader).
-old-location: pos\posdevicetype.htm
 tech.root: pos
-ms.assetid: 1e0b4b66-f9aa-4315-a07d-b6fd47f10371
-ms.date: 02/23/2018
+ms.date: 04/18/2022
 keywords: ["PosDeviceType enumeration"]
 ms.keywords: PosDeviceType, PosDeviceType enumeration, PosDeviceType_BarcodeScanner, PosDeviceType_CashDrawer, PosDeviceType_MagneticStripeReader, PosDeviceType_Max, PosDeviceType_Printer, PosDeviceType_Unknown, _PosDeviceType, pointofservicecommontypes/PosDeviceType, pointofservicecommontypes/PosDeviceType_BarcodeScanner, pointofservicecommontypes/PosDeviceType_CashDrawer, pointofservicecommontypes/PosDeviceType_MagneticStripeReader, pointofservicecommontypes/PosDeviceType_Max, pointofservicecommontypes/PosDeviceType_Printer, pointofservicecommontypes/PosDeviceType_Unknown, pos.posdevicetype
 req.header: pointofservicecommontypes.h
@@ -40,15 +38,13 @@ api_type:
 api_location:
  - pointofservicecommontypes.h
 api_name:
+ - _PosDeviceType
  - PosDeviceType
 ---
 
-# _PosDeviceType enumeration
-
-
 ## -description
 
-This enumeration defines values used in the <a href="/windows-hardware/drivers/ddi/pointofservicedriverinterface/ns-pointofservicedriverinterface-_posdevicebasicstype">PosDeviceBasicsType</a> structure to indicate the type of device (for instance, barcode scanner or magnetic stripe reader).
+This enumeration defines values used in the [PosDeviceBasicsType](../pointofservicedriverinterface/ns-pointofservicedriverinterface-_posdevicebasicstype.md) structure to indicate the type of device (for instance, barcode scanner or magnetic stripe reader).
 
 ## -enum-fields
 
@@ -63,16 +59,6 @@ Indicates that the type of device is a barcode scanner.
 ### -field PosDeviceType_MagneticStripeReader
 
 Indicates that the type of device is a magnetic stripe reader.
-
-### -field PosDeviceType_Printer
-
-Indicates that the type of device is a printer.
-
-### -field PosDeviceType_CashDrawer
-
-Indicates that the type of device is a cash drawer.
-
-### -field PosDeviceType_LineDisplay
 
 ### -field PosDeviceType_Max
 

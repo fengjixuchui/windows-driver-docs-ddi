@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugDataSpaces.ReadDebuggerData
 title: IDebugDataSpaces::ReadDebuggerData (dbgeng.h)
-description: The ReadDebuggerData method returns information about the target that the debugger engine has queried or determined during the current session.
+description: Learn about the ReadDebuggerData method, which returns information about the target that the debugger engine has queried or determined during the current session.
 old-location: debugger\readdebuggerdata.htm
 tech.root: debugger
-ms.assetid: 54e4d3b9-db9d-4844-938f-c8ca8819d182
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces::ReadDebuggerData"]
 ms.keywords: IDebugDataSpaces interface [Windows Debugging],ReadDebuggerData method, IDebugDataSpaces.ReadDebuggerData, IDebugDataSpaces2 interface [Windows Debugging],ReadDebuggerData method, IDebugDataSpaces2::ReadDebuggerData, IDebugDataSpaces3 interface [Windows Debugging],ReadDebuggerData method, IDebugDataSpaces3::ReadDebuggerData, IDebugDataSpaces4 interface [Windows Debugging],ReadDebuggerData method, IDebugDataSpaces4::ReadDebuggerData, IDebugDataSpaces::ReadDebuggerData, IDebugDataSpaces_618b8518-3e32-4518-8e4b-38f66484d554.xml, ReadDebuggerData, ReadDebuggerData method [Windows Debugging], ReadDebuggerData method [Windows Debugging],IDebugDataSpaces interface, ReadDebuggerData method [Windows Debugging],IDebugDataSpaces2 interface, ReadDebuggerData method [Windows Debugging],IDebugDataSpaces3 interface, ReadDebuggerData method [Windows Debugging],IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces2::ReadDebuggerData, dbgeng/IDebugDataSpaces3::ReadDebuggerData, dbgeng/IDebugDataSpaces4::ReadDebuggerData, dbgeng/IDebugDataSpaces::ReadDebuggerData, debugger.readdebuggerdata
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugDataSpaces.ReadDebuggerData
- - IDebugDataSpaces2.ReadDebuggerData
- - IDebugDataSpaces3.ReadDebuggerData
- - IDebugDataSpaces4.ReadDebuggerData
+ - IDebugDataSpaces::ReadDebuggerData
 ---
 
 # IDebugDataSpaces::ReadDebuggerData
@@ -53,9 +49,9 @@ The <b>ReadDebuggerData</b> method returns information about the target that the
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 Specifies the index of the data to retrieve.  The following values are valid:
 
 <table>
@@ -1599,19 +1595,19 @@ Returns the address of the kernel variable <b>KdPrintBufferSize</b>.
 </tr>
 </table>
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 Receives the value of the specified debugger data.  The "Return Type" column in the above table specifies the data type that is returned.  The data can be accessed by casting <i>Buffer</i> to a pointer to that type.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size in bytes of the buffer <i>Buffer</i>.
 
-### -param DataSize 
+### -param DataSize [out, optional]
 
-[out, optional]
+
 Receives the number of bytes used in the buffer <i>Buffer</i>.  If <i>DataSize</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -1642,3 +1638,4 @@ This method can also return error values.  See <a href="/windows-hardware/driver
 Some or all of the values may be unavailable in certain debugging sessions.  For example, some of the values are only available for particular versions of the operating system.
 
 For details on the different values returned by <b>ReadDebuggerData</b>, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich, the Microsoft Windows SDK, and the Windows Driver Kit (WDK).
+

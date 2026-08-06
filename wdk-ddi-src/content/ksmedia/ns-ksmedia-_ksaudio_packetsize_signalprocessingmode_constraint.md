@@ -4,7 +4,6 @@ title: _KSAUDIO_PACKETSIZE_SIGNALPROCESSINGMODE_CONSTRAINT (ksmedia.h)
 description: The KSAUDIO_PACKETSIZE_PROCESSINGMODE_CONSTRAINT structure describes the constraints specific to any signal processing mode.
 old-location: audio\ksaudio_packetsize_processingmode_constraint.htm
 tech.root: audio
-ms.assetid: 0BC6A03C-CF6D-4F56-985E-933E87200DFE
 ms.date: 05/08/2018
 keywords: ["KSAUDIO_PACKETSIZE_SIGNALPROCESSINGMODE_CONSTRAINT structure"]
 ms.keywords: KSAUDIO_PACKETSIZE_PROCESSINGMODE_CONSTRAINT, KSAUDIO_PACKETSIZE_PROCESSINGMODE_CONSTRAINT structure [Audio Devices], _KSAUDIO_PACKETSIZE_SIGNALPROCESSINGMODE_CONSTRAINT, audio.ksaudio_packetsize_processingmode_constraint, ksmedia/KSAUDIO_PACKETSIZE_PROCESSINGMODE_CONSTRAINT
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - _KSAUDIO_PACKETSIZE_SIGNALPROCESSINGMODE_CONSTRAINT
  - KSAUDIO_PACKETSIZE_PROCESSINGMODE_CONSTRAINT
 ---
 
@@ -67,3 +67,4 @@ The processing frame size for the processing mode, expressed in hundred-nanoseco
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudio_packetsize_constraints">KSAUDIO_PACKETSIZE_CONSTRAINTS</a>
+

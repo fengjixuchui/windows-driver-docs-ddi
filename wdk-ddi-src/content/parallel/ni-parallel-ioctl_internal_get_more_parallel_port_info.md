@@ -4,7 +4,6 @@ title: IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO (parallel.h)
 description: The IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO request returns information about a parallel port.
 old-location: parports\ioctl_internal_get_more_parallel_port_info.htm
 tech.root: parports
-ms.assetid: fe5b9b54-b1b6-48e2-b464-f0f3e9845917
 ms.date: 02/15/2018
 keywords: ["IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO IOCTL"]
 ms.keywords: IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO, IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO control code [Parallel Ports], cisspd_3f4efeec-5579-44c6-8438-bdb4b4983194.xml, parallel/IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO, parports.ioctl_internal_get_more_parallel_port_info
@@ -57,6 +56,10 @@ The <b>IOCTL_INTERNAL_GET_MORE_PARALLEL_PORT_INFO</b> request returns informatio
 For more information, see <a href="/previous-versions/ff544223(v=vs.85)">Obtaining Information About a ParallelPort</a>.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
+
+[IRP_MJ_INTERNAL_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
 ### -input-buffer
 

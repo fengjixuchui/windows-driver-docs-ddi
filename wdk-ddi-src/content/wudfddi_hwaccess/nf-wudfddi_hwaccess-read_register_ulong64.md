@@ -1,10 +1,9 @@
 ---
 UID: NF:wudfddi_hwaccess.READ_REGISTER_ULONG64
 title: READ_REGISTER_ULONG64 function (wudfddi_hwaccess.h)
-description: The READ_REGISTER_ULONG64 function reads a ULONG64 value from the specified register address.
+description: The READ_REGISTER_ULONG64 function (wudfddi_hwaccess.h) reads a ULONG64 value from the specified register address.
 old-location: wdf\read_register_ulong64.htm
 tech.root: wdf
-ms.assetid: D8AB8735-8909-463E-B10E-1FE5FD557FBB
 ms.date: 02/26/2018
 keywords: ["READ_REGISTER_ULONG64 function"]
 ms.keywords: READ_REGISTER_ULONG64, READ_REGISTER_ULONG64 function, umdf.read_register_ulong64, wdf.read_register_ulong64, wudfddi_hwaccess/READ_REGISTER_ULONG64
@@ -52,14 +51,14 @@ The <b>READ_REGISTER_ULONG64</b> function reads a ULONG64 value from the specifi
 
 ## -parameters
 
-### -param pDevice 
+### -param pDevice [in]
 
-[in]
+
 Specifies a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a> interface for the device object of the device to access.
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the register address, which must be a mapped range in memory space.
 
 ## -returns

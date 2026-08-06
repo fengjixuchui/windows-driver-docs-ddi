@@ -1,10 +1,9 @@
 ---
 UID: NE:wudfinterrupt._WDF_INTERRUPT_PRIORITY
 title: _WDF_INTERRUPT_PRIORITY (wudfinterrupt.h)
-description: The WDF_INTERRUPT_PRIORITY enumeration type identifies relative priorities for device interrupts.
+description: Learn how this enumeration type identifies relative priorities for device interrupts.
 old-location: wdf\wdf_interrupt_priority_umdf.htm
 tech.root: wdf
-ms.assetid: ECAB84B8-1C39-473C-A6AE-41D1EBDB1FF4
 ms.date: 02/26/2018
 keywords: ["WDF_INTERRUPT_PRIORITY enumeration"]
 ms.keywords: "*PWDF_INTERRUPT_PRIORITY, PWDF_INTERRUPT_PRIORITY, PWDF_INTERRUPT_PRIORITY enumeration pointer, WDF_INTERRUPT_PRIORITY, WDF_INTERRUPT_PRIORITY enumeration, WdfIrqPriorityHigh, WdfIrqPriorityLow, WdfIrqPriorityNormal, WdfIrqPriorityUndefined, _WDF_INTERRUPT_PRIORITY, umdf.wdf_interrupt_priority, wdf.wdf_interrupt_priority_umdf, wudfinterrupt/PWDF_INTERRUPT_PRIORITY, wudfinterrupt/WDF_INTERRUPT_PRIORITY, wudfinterrupt/WdfIrqPriorityHigh, wudfinterrupt/WdfIrqPriorityLow, wudfinterrupt/WdfIrqPriorityNormal, wudfinterrupt/WdfIrqPriorityUndefined"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wudfinterrupt.h
 api_name:
+ - _WDF_INTERRUPT_PRIORITY
+ - PWDF_INTERRUPT_PRIORITY
  - WDF_INTERRUPT_PRIORITY
 ---
 
@@ -80,3 +81,4 @@ The <a href="/windows-hardware/drivers/ddi/wdfinterrupt/ne-wdfinterrupt-_wdf_int
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfinterrupt-setpolicy">IWDFInterrupt::SetPolicy</a>
+

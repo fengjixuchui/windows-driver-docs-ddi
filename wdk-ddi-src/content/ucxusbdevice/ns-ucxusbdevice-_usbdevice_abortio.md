@@ -4,7 +4,6 @@ title: _USBDEVICE_ABORTIO (ucxusbdevice.h)
 description: Contains a handle for the Universal Serial Bus (USB) hub or device for which to abort data transfers.
 old-location: buses\_usbdevice_abortio.htm
 tech.root: usbref
-ms.assetid: 69720940-4D3E-43E6-B587-427ED2049FCC
 ms.date: 05/07/2018
 keywords: ["USBDEVICE_ABORTIO structure"]
 ms.keywords: "*PUSBDEVICE_ABORTIO, P_USBDEVICE_ABORTIO, P_USBDEVICE_ABORTIO structure pointer [Buses], USBDEVICE_ABORTIO, USBDEVICE_ABORTIO structure [Buses], _USBDEVICE_ABORTIO, buses._usbdevice_abortio, ucxusbdevice/P_USBDEVICE_ABORTIO, ucxusbdevice/_USBDEVICE_ABORTIO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ucxusbdevice.h
 api_name:
+ - _USBDEVICE_ABORTIO
+ - PUSBDEVICE_ABORTIO
  - USBDEVICE_ABORTIO
 ---
 
@@ -69,3 +70,4 @@ A <a href="/windows-hardware/drivers/ddi/ucxusbdevice/ns-ucxusbdevice-_usbdevice
 
 
 <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestgetparameters">WdfRequestGetParameters</a>
+

@@ -4,7 +4,6 @@ title: KsSetTargetState function (ks.h)
 description: Sets the enabled state of a target device associated with the specified object header.
 old-location: stream\kssettargetstate.htm
 tech.root: stream
-ms.assetid: 36f14936-8cc6-4488-aa0f-343e4fbb84e3
 ms.date: 04/23/2018
 keywords: ["KsSetTargetState function"]
 ms.keywords: KsSetTargetState, KsSetTargetState function [Streaming Media Devices], ks/KsSetTargetState, ksfunc_7e05a5c0-2c82-4b20-a199-3955c61c6e40.xml, stream.kssettargetstate
@@ -51,14 +50,14 @@ Sets the enabled state of a target device associated with the specified object h
 
 ## -parameters
 
-### -param Header 
+### -param Header [in]
 
-[in]
+
 Points to a header previously allocated by <a href="/windows-hardware/drivers/ddi/ks/nf-ks-ksallocatedeviceheader">KsAllocateDeviceHeader</a>.
 
-### -param TargetState 
+### -param TargetState [in]
 
-[in]
+
 Contains the new state of the target associated with this object header. This may be either KSTARGET_STATE_DISABLED or KSTARGET_STATE_ENABLED.
 
 ## -returns

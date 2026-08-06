@@ -4,7 +4,6 @@ title: UPDATE_OFFLOAD_COMPLETE_HANDLER (ndischimney.h)
 description: NDIS calls a protocol driver's or intermediate driver's ProtocolUpdateOffloadComplete function to complete an update offload operation that the driver previously initiated by calling the NdisUpdateOffload function.
 old-location: netvista\protocolupdateoffloadcomplete.htm
 tech.root: netvista
-ms.assetid: 3cd7a32a-d560-429b-b191-aeabb87433f3
 ms.date: 05/02/2018
 keywords: ["UPDATE_OFFLOAD_COMPLETE_HANDLER callback function"]
 ms.keywords: ProtocolUpdateOffloadComplete, ProtocolUpdateOffloadComplete callback function [Network Drivers Starting with Windows Vista], UPDATE_OFFLOAD_COMPLETE_HANDLER, UPDATE_OFFLOAD_COMPLETE_HANDLER callback, ndischimney/ProtocolUpdateOffloadComplete, netvista.protocolupdateoffloadcomplete, tcp_chim_protocol_func_dd66a468-9cad-4763-8eea-f7502811368e.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndischimney.h
 api_name:
- - ProtocolUpdateOffloadComplete
+ - UPDATE_OFFLOAD_COMPLETE_HANDLER
 ---
 
 # UPDATE_OFFLOAD_COMPLETE_HANDLER callback function
@@ -55,17 +54,17 @@ NDIS calls a protocol driver's or intermediate driver's
 
 ## -parameters
 
-### -param ProtocolBindingContext 
+### -param ProtocolBindingContext [in]
 
-[in]
+
 A handle to a context area allocated by the protocol driver. The driver maintains the per binding
      context information in this context area. The driver supplied this handle to NDIS when the driver called
      the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a> function
 
-### -param OffloadBlockList 
+### -param OffloadBlockList [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_protocol_offload_block_list">
      NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST</a> structure that can be a stand-alone structure or the root of a
@@ -120,3 +119,4 @@ From the NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST structure that was passed to its
 
 
 <a href="/windows-hardware/drivers/ddi/ndischimney/nf-ndischimney-ndisupdateoffload">NdisUpdateOffload</a>
+

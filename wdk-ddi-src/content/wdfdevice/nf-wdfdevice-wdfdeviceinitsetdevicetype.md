@@ -4,7 +4,6 @@ title: WdfDeviceInitSetDeviceType function (wdfdevice.h)
 description: The WdfDeviceInitSetDeviceType method sets the device type for a specified device.
 old-location: wdf\wdfdeviceinitsetdevicetype.htm
 tech.root: wdf
-ms.assetid: 26c5c998-fb10-45c3-b28c-91a759fa941e
 ms.date: 02/26/2018
 keywords: ["WdfDeviceInitSetDeviceType function"]
 ms.keywords: DFDeviceObjectGeneralRef_872eb4dd-0d40-46ed-a7ed-4eae8ec67240.xml, WdfDeviceInitSetDeviceType, WdfDeviceInitSetDeviceType method, kmdf.wdfdeviceinitsetdevicetype, wdf.wdfdeviceinitsetdevicetype, wdfdevice/WdfDeviceInitSetDeviceType
@@ -53,14 +52,14 @@ The <b>WdfDeviceInitSetDeviceType</b> method sets the device type for a specifie
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
-### -param DeviceType 
+### -param DeviceType [in]
 
-[in]
+
 A FILE_DEVICE_XXXX value that identifies the device type. For more information about FILE_DEVICE_XXXX values, see <a href="/windows-hardware/drivers/kernel/specifying-device-types">Specifying Device Types</a>.
 
 ## -remarks

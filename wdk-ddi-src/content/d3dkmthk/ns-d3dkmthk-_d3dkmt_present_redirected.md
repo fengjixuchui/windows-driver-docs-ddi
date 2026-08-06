@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_PRESENT_REDIRECTED
 title: _D3DKMT_PRESENT_REDIRECTED (d3dkmthk.h)
 description: Used to give information on the status of the present history token.
 old-location: display\d3dkmt-present-redirected.htm
-ms.assetid: a883d80a-0240-4a2a-b3d8-ca87080717ee
 ms.date: 05/10/2018
 keywords: ["D3DKMT_PRESENT_REDIRECTED structure"]
 ms.keywords: D3DKMT_PRESENT_REDIRECTED, D3DKMT_PRESENT_REDIRECTED structure [Display Devices], _D3DKMT_PRESENT_REDIRECTED, d3dkmthk/D3DKMT_PRESENT_REDIRECTED, display.d3dkmt-present-redirected
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_PRESENT_REDIRECTED
  - D3DKMT_PRESENT_REDIRECTED
 ---
 
@@ -52,35 +52,35 @@ Used to give information on the status of the present history token.
 
 ## -struct-fields
 
-### -field hDevice
+### -field hDevice [in]
 
-[in] Device associated with the present
+Device associated with the present
 
-### -field hSyncObj
+### -field hSyncObj [in]
 
-[in] The sync object that the PHT waits on.
+The sync object that the PHT waits on.
 
-### -field WaitedFenceValue
+### -field WaitedFenceValue [in]
 
-[in] The fence value of hSyncObj that PHT waits on
+The fence value of hSyncObj that PHT waits on
 
-### -field PresentHistoryToken
+### -field PresentHistoryToken [in]
 
-[in] The present history token.
+The present history token.
 
 ### -field Flags
 
 The flags needed to give the status of the present history token.
 
-### -field hSource
+### -field hSource [in]
 
-[in] Source allocation to present from
+Source allocation to present from
 
-### -field PrivateDriverDataSize
+### -field PrivateDriverDataSize [in]
 
-[in] The size of pPrivateDriverData.
+The size of pPrivateDriverData.
 
-### -field pPrivateDriverData
+### -field pPrivateDriverData [in]
 
-[in] Private driver data to pass to DdiPresent and DdiSetVidPnSourceAddress
+Private driver data to pass to DdiPresent and DdiSetVidPnSourceAddress
 

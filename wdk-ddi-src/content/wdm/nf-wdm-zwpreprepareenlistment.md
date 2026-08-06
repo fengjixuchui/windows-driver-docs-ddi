@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.ZwPrePrepareEnlistment
 title: ZwPrePrepareEnlistment function (wdm.h)
-description: The ZwPrePrepareEnlistment routine initiates the pre-prepare operation for a specified enlistment's transaction.
+description: Learn how the ZwPrePrepareEnlistment routine initiates the pre-prepare operation for a specified enlistment's transaction.
 old-location: kernel\zwpreprepareenlistment.htm
 tech.root: kernel
-ms.assetid: adf2513c-9a0e-4552-baad-010ab243e9dc
 ms.date: 04/30/2018
 keywords: ["ZwPrePrepareEnlistment function"]
 ms.keywords: NtPrePrepareEnlistment, ZwPrePrepareEnlistment, ZwPrePrepareEnlistment routine [Kernel-Mode Driver Architecture], kernel.zwpreprepareenlistment, ktm_ref_42a63780-131c-4b65-ad22-ec32b713c0fe.xml, wdm/NtPrePrepareEnlistment, wdm/ZwPrePrepareEnlistment
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - ZwPrePrepareEnlistment
- - NtPrePrepareEnlistment
 ---
 
 # ZwPrePrepareEnlistment function
@@ -51,14 +49,14 @@ The <b>ZwPrePrepareEnlistment</b> routine initiates the pre-prepare operation fo
 
 ## -parameters
 
-### -param EnlistmentHandle 
+### -param EnlistmentHandle [in]
 
-[in]
+
 A handle to an <a href="/windows-hardware/drivers/kernel/enlistment-objects">enlistment object</a> that was obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment">ZwCreateEnlistment</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a>. The object must represent a <a href="/windows-hardware/drivers/kernel/creating-a-superior-transaction-manager">superior enlistment</a> and the handle must have ENLISTMENT_SUPERIOR_RIGHTS access to the object.
 
-### -param TmVirtualClock 
+### -param TmVirtualClock [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows-hardware/drivers/kernel/using-virtual-clock-values">virtual clock value</a>. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns
@@ -170,3 +168,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a>
+

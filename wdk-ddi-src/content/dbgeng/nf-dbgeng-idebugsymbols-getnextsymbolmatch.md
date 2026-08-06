@@ -1,11 +1,10 @@
 ---
 UID: NF:dbgeng.IDebugSymbols.GetNextSymbolMatch
 title: IDebugSymbols::GetNextSymbolMatch (dbgeng.h)
-description: The GetNextSymbolMatch method returns the next symbol found in a symbol search.
+description: The GetNextSymbolMatch method returns the next symbol found in a symbol search. This method belongs to the IDebugSymbols interface.
 old-location: debugger\getnextsymbolmatch.htm
 tech.root: debugger
-ms.assetid: 0de394a0-9ae8-4ac9-970b-8575bb7dcc99
-ms.date: 05/03/2018
+ms.date: 02/06/2022
 keywords: ["IDebugSymbols::GetNextSymbolMatch"]
 ms.keywords: GetNextSymbolMatch, GetNextSymbolMatch method [Windows Debugging], GetNextSymbolMatch method [Windows Debugging],IDebugSymbols interface, GetNextSymbolMatch method [Windows Debugging],IDebugSymbols2 interface, GetNextSymbolMatch method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],GetNextSymbolMatch method, IDebugSymbols.GetNextSymbolMatch, IDebugSymbols2 interface [Windows Debugging],GetNextSymbolMatch method, IDebugSymbols2::GetNextSymbolMatch, IDebugSymbols3 interface [Windows Debugging],GetNextSymbolMatch method, IDebugSymbols3::GetNextSymbolMatch, IDebugSymbols::GetNextSymbolMatch, IDebugSymbols_9918b348-5b29-4b38-849e-3a36414b773d.xml, dbgeng/IDebugSymbols2::GetNextSymbolMatch, dbgeng/IDebugSymbols3::GetNextSymbolMatch, dbgeng/IDebugSymbols::GetNextSymbolMatch, debugger.getnextsymbolmatch
 req.header: dbgeng.h
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.GetNextSymbolMatch
- - IDebugSymbols2.GetNextSymbolMatch
- - IDebugSymbols3.GetNextSymbolMatch
+ - IDebugSymbols::GetNextSymbolMatch
 ---
 
 # IDebugSymbols::GetNextSymbolMatch
@@ -52,29 +49,29 @@ The <b>GetNextSymbolMatch</b>  method returns the next symbol found in a symbol 
 
 ## -parameters
 
-### -param Handle 
+### -param Handle [in]
 
-[in]
+
 Specifies the handle returned by <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-startsymbolmatch">StartSymbolMatch</a> when the search was initialized.
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Receives the name of the symbol.  If <i>Buffer</i> is <b>NULL</b>, the same symbol will be returned again next time one of these methods are called (with the same handle); this can be used to determine the size of the name of the symbol.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
-Specifies the size in characters of the buffer.
 
-### -param MatchSize 
+Specifies the size in characters of the buffer. This size includes the space for the '\0' terminating character.
 
-[out, optional]
-Receives the size in characters of the name of the symbol.  If <i>MatchSize</i> is <b>NULL</b>, this information is not returned.
+### -param MatchSize [out, optional]
 
-### -param Offset 
 
-[out, optional]
+Receives the size in characters of the name of the symbol. This size includes the space for the '\0' terminating character. If <i>MatchSize</i> is <b>NULL</b>, this information is not returned.
+
+### -param Offset [out, optional]
+
+
 Receives the location in the target's virtual address space of the symbol.  If <i>Offset</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -146,3 +143,4 @@ For more information about symbols, see <a href="/windows-hardware/drivers/debug
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-startsymbolmatch">StartSymbolMatch</a>
+

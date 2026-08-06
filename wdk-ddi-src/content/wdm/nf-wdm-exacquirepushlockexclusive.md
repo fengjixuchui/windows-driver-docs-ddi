@@ -2,7 +2,7 @@
 UID: NF:wdm.ExAcquirePushLockExclusive
 title: ExAcquirePushLockExclusive macro (wdm.h)
 description: Acquires the given push lock for exclusive access by the calling thread.
-ms.assetid: ba752619-f885-4977-b0e6-7c0339373b78
+tech.root: kernel
 ms.date: 09/30/2018
 keywords: ["ExAcquirePushLockExclusive macro"]
 ms.keywords: ExAcquirePushLockExclusive
@@ -62,7 +62,7 @@ When the caller is given exclusive access to the given push lock, depends on the
 
 - If the push lock has already been acquired for exclusive or shared access by another thread, the current thread is put into a wait state until the push lock can be acquired. 
 
-The caller is required call  [**KeEnterCriticalRegion**](../ntddk/nf-ntddk-keentercriticalregion.md) before calling **ExAcquirePushLockExclusive**.
+Before calling this routine, the driver must disable normal kernel APC delivery by calling [**KeEnterCriticalRegion**](../ntddk/nf-ntddk-keentercriticalregion.md). Reenable delivery after the push lock is released by calling [**KeLeaveCriticalRegion**](../ntddk/nf-ntddk-keleavecriticalregion.md). For more information, see [Disabling APCs](/windows-hardware/drivers/kernel/disabling-apcs).
 
 To release the push lock after it is acquired, call [**ExReleasePushLockExclusive**](nf-wdm-exreleasepushlockexclusive.md). Every call to ExAcquirePushLockExclusive must be matched by a subsequent call to [**ExReleasePushLockExclusive**](nf-wdm-exreleasepushlockexclusive.md).
 

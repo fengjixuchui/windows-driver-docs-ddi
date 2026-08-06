@@ -4,7 +4,6 @@ title: NDIS_PD_QUERY_QUEUE_DEPTH (ndis.h)
 description: The PacketDirect (PD) platform calls a PD-capable miniport driver's PDQueryQueueDepth function to return the number of unprocessed PD_BUFFER structures that are posted to the Queue.
 old-location: netvista\pdqueryqueuedepth.htm
 tech.root: netvista
-ms.assetid: 0061E269-4A19-4D65-B988-29DB582BA960
 ms.date: 05/02/2018
 ms.keywords: NDIS_PD_QUERY_QUEUE_DEPTH_HANDLER, NDIS_PD_QUERY_QUEUE_DEPTH_HANDLER callback function pointer
 req.header: ndis.h
@@ -37,9 +36,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - NDIS_PD_QUERY_QUEUE_DEPTH_HANDLER
-product:
- - Windows
+ - NDIS_PD_QUERY_QUEUE_DEPTH
 ---
 
 # NDIS_PD_QUERY_QUEUE_DEPTH callback function
@@ -54,14 +51,14 @@ The PacketDirect (PD) platform calls a PD-capable miniport driver's
 
 ## -parameters
 
-### -param Queue 
+### -param Queue [in]
 
-[in]
+
 A pointer to a transmit or receive queue.
 
-### -param Depth 
+### -param Depth [out]
 
-[out]
+
 On a receive queue, this is the number of <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_pd_buffer">PD_BUFFER</a> structures that are available for placing incoming packets into. For example, if 10 buffers were posted, and 3 of the 10 have already been fetched by the provider for placing incoming packets into, this value should be 7. On a transmit queue, this is the number of <b>PD_BUFFER</b> structures that the provider has not yet fetched from the queue for transmitting.
 
 ## -returns
@@ -98,3 +95,4 @@ VOID
 The <b>NDIS_PD_QUERY_QUEUE_DEPTH</b> function type is defined in the Ntddndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>NDIS_PD_QUERY_QUEUE_DEPTH</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="/windows-hardware/drivers/devtest/declaring-functions-by-using-function-role-types-for-ndis-drivers">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
 For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-quality/annotating-function-behavior">Annotating Function Behavior</a>.
+

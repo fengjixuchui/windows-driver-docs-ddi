@@ -4,7 +4,6 @@ title: IWDFIoRequest2::GetRequestorMode (wudfddi.h)
 description: The GetRequestorMode method indicates whether an I/O request came from a kernel-mode driver or a user-mode component (either an application or a user-mode driver).
 old-location: wdf\iwdfiorequest2_getrequestormode.htm
 tech.root: wdf
-ms.assetid: 8f918bc4-d2d0-4d5b-93c8-89f02c81a701
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequest2::GetRequestorMode"]
 ms.keywords: GetRequestorMode, GetRequestorMode method, GetRequestorMode method,IWDFIoRequest2 interface, IWDFIoRequest2 interface,GetRequestorMode method, IWDFIoRequest2.GetRequestorMode, IWDFIoRequest2::GetRequestorMode, UMDFRequestObjectRef_ab2c358c-de7c-4bc3-b0cf-a598a1c69bd1.xml, umdf.iwdfiorequest2_getrequestormode, wdf.iwdfiorequest2_getrequestormode, wudfddi/IWDFIoRequest2::GetRequestorMode
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequest2.GetRequestorMode
+ - IWDFIoRequest2::GetRequestorMode
 ---
 
 # IWDFIoRequest2::GetRequestorMode
@@ -92,7 +91,6 @@ STDMETHODCALLTYPE
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest2">IWDFIoRequest2</a>
@@ -100,3 +98,4 @@ STDMETHODCALLTYPE
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest2-isfromusermodedriver">IWDFIoRequest2::IsFromUserModeDriver</a>
+

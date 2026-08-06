@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl3.GetCurrentSystemUpTime
 title: IDebugControl3::GetCurrentSystemUpTime (dbgeng.h)
-description: The GetCurrentSystemUpTime method returns the number of seconds the current target's computer has been running since it was last started.
+description: The IDebugControl3::GetCurrentSystemUpTime method returns the number of seconds the current target's computer has been running since it was last started.
 old-location: debugger\getcurrentsystemuptime.htm
 tech.root: debugger
-ms.assetid: 0009e11d-73d0-4ca2-afbc-5f2999e829ac
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::GetCurrentSystemUpTime"]
 ms.keywords: GetCurrentSystemUpTime, GetCurrentSystemUpTime method [Windows Debugging], GetCurrentSystemUpTime method [Windows Debugging],IDebugControl2 interface, GetCurrentSystemUpTime method [Windows Debugging],IDebugControl3 interface, IDebugControl2 interface [Windows Debugging],GetCurrentSystemUpTime method, IDebugControl2::GetCurrentSystemUpTime, IDebugControl3 interface [Windows Debugging],GetCurrentSystemUpTime method, IDebugControl3.GetCurrentSystemUpTime, IDebugControl3::GetCurrentSystemUpTime, IDebugControl_e10ddd31-60fe-4353-befe-45a04154615b.xml, dbgeng/IDebugControl2::GetCurrentSystemUpTime, dbgeng/IDebugControl3::GetCurrentSystemUpTime, debugger.getcurrentsystemuptime
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl2.GetCurrentSystemUpTime
- - IDebugControl3.GetCurrentSystemUpTime
+ - IDebugControl3::GetCurrentSystemUpTime
 ---
 
 # IDebugControl3::GetCurrentSystemUpTime
@@ -51,9 +49,9 @@ The <b>GetCurrentSystemUpTime</b> method returns the number of seconds the curre
 
 ## -parameters
 
-### -param UpTime 
+### -param UpTime [out]
 
-[out]
+
 Receives the number of seconds the computer has been running, or <b>0</b> if the engine is unable to determine the running time.
 
 ## -returns
@@ -93,3 +91,4 @@ For more information, see <a href="/windows-hardware/drivers/debugger/target-inf
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
+

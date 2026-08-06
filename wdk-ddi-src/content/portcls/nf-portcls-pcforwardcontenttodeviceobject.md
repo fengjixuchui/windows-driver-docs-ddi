@@ -4,7 +4,6 @@ title: PcForwardContentToDeviceObject function (portcls.h)
 description: The PcForwardContentToDeviceObject function accepts a device object representing a device to which the caller intends to forward protected content.
 old-location: audio\pcforwardcontenttodeviceobject.htm
 tech.root: audio
-ms.assetid: 24891f90-422f-4104-97f4-395205e2b862
 ms.date: 05/08/2018
 keywords: ["PcForwardContentToDeviceObject function"]
 ms.keywords: PcForwardContentToDeviceObject, PcForwardContentToDeviceObject function [Audio Devices], audio.pcforwardcontenttodeviceobject, audpc-routines_1dec7e58-07b2-41ce-82d3-5f0670bbc273.xml, portcls/PcForwardContentToDeviceObject
@@ -51,19 +50,19 @@ The <b>PcForwardContentToDeviceObject</b> function accepts a device object repre
 
 ## -parameters
 
-### -param ContentId 
+### -param ContentId [in]
 
-[in]
+
 Specifies the DRM content ID. This parameter identifies a protected KS audio stream.
 
-### -param Reserved 
+### -param Reserved [in, optional]
 
-[in, optional]
+
 Reserved for future use. Set to <b>NULL</b>.
 
-### -param DrmForward 
+### -param DrmForward [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/drmk/ns-drmk-tagdrmforward">DRMFORWARD</a> structure specifying a device object and file object that identify the target device and a KS audio pin on that device, respectively. The structure also contains the context value that the <a href="/previous-versions/ff537351(v=vs.85)">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a>set-property request passes to the device.
 
 ## -returns

@@ -4,7 +4,6 @@ title: wiauDbgHelper2 function (wiautil.h)
 description: The wiauDbgHelper2 function writes a message to a log file, or debugger, or both.
 old-location: image\wiaudbghelper2.htm
 tech.root: image
-ms.assetid: 577ce93a-5a90-4e85-afc6-3791f402c238
 ms.date: 05/03/2018
 keywords: ["wiauDbgHelper2 function"]
 ms.keywords: image.wiaudbghelper2, wiauDbgHelper2, wiauDbgHelper2 function [Imaging Devices], wiauFncs_6ccf146a-ec2e-4ca4-827a-dec2f8ea629d.xml, wiautil/wiauDbgHelper2
@@ -62,7 +61,7 @@ Pointer to a string containing the name of the function or method into which the
 
 Pointer to a format string that specifies a variable argument list, which starts with an ANSI format string containing the message and any conversion specifiers. The ellipsis (...) specifies a variable number of arguments that are to be output. The text should be prefixed with the full name of the method or function generating the message in the format of "class::method, message-text".
 
-### -param param
+### -param ...
 
 ####### - fmt, ...
 
@@ -87,3 +86,4 @@ wiauDbgHelper2("ERROR", "MyFunc", "Buffer size too small - %d bytes", BufSize);
 [wiauDbgTrace](./nf-wiautil-wiaudbgtrace.md)
 
 [wiauDbgWarning](./nf-wiautil-wiaudbgwarning.md)
+

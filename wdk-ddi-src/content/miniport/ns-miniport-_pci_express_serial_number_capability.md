@@ -1,10 +1,9 @@
 ---
 UID: NS:miniport._PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY
 title: _PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY (miniport.h)
-description: The PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY structure describes a serial number for a PCI Express (PCIe) device.
+description: The _PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY structure (miniport.h) describes a serial number for a PCI Express (PCIe) device.
 old-location: pci\pci_express_serial_number_capability.htm
 tech.root: PCI
-ms.assetid: ad8b8740-35bc-4aa4-a190-00d1a78e447a
 ms.date: 02/24/2018
 keywords: ["PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY structure"]
 ms.keywords: "*PPCI_EXPRESS_SERIAL_NUMBER_CAPABILITY, PCI.pci_express_serial_number_capability, PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY, PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY structure [Buses], PPCI_EXPRESS_SERIAL_NUMBER_CAPABILITY, PPCI_EXPRESS_SERIAL_NUMBER_CAPABILITY structure pointer [Buses], _PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY, pci_struct_0d9ab097-6980-40b4-8c25-02ad8239588b.xml, wdm/PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY, wdm/PPCI_EXPRESS_SERIAL_NUMBER_CAPABILITY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY
+ - PPCI_EXPRESS_SERIAL_NUMBER_CAPABILITY
  - PCI_EXPRESS_SERIAL_NUMBER_CAPABILITY
 ---
 
@@ -85,3 +86,4 @@ The PCIe device serial number capability is an optional extended capability that
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_pci_express_enhanced_capability_header">PCI_EXPRESS_ENHANCED_CAPABILITY_HEADER</a>
+

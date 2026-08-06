@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGKARG_COMMITVIDPN_FLAGS
 title: _DXGKARG_COMMITVIDPN_FLAGS (d3dkmddi.h)
 description: The DXGKARG_COMMITVIDPN_FLAGS structure identifies details about a call to the DxgkDdiCommitVidPn function.
 old-location: display\dxgkarg_commitvidpn_flags.htm
-ms.assetid: 02fe4216-101e-4ba7-88df-029f8bba9c17
 ms.date: 05/10/2018
 keywords: ["DXGKARG_COMMITVIDPN_FLAGS structure"]
 ms.keywords: DXGKARG_COMMITVIDPN_FLAGS, DXGKARG_COMMITVIDPN_FLAGS structure [Display Devices], DmStructs_267e916a-7058-4ce7-892d-9ed9d6f74bce.xml, _DXGKARG_COMMITVIDPN_FLAGS, d3dkmddi/DXGKARG_COMMITVIDPN_FLAGS, display.dxgkarg_commitvidpn_flags
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_COMMITVIDPN_FLAGS
  - DXGKARG_COMMITVIDPN_FLAGS
 ---
 
@@ -101,3 +101,4 @@ If a system resume operation is triggered after monitors were turned off for a s
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_set_power_state">DxgkDdiSetPowerState</a>
+

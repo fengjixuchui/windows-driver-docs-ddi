@@ -4,7 +4,6 @@ title: MmFreeMappingAddress function (wdm.h)
 description: The MmFreeMappingAddress routine frees a range of virtual memory reserved by the MmAllocateMappingAddress routine.
 old-location: kernel\mmfreemappingaddress.htm
 tech.root: kernel
-ms.assetid: df5afc18-da83-46b4-b7ab-8cef4353b951
 ms.date: 04/30/2018
 keywords: ["MmFreeMappingAddress function"]
 ms.keywords: MmFreeMappingAddress, MmFreeMappingAddress routine [Kernel-Mode Driver Architecture], k106_fa09359d-0552-429a-b3af-048f03ea7a15.xml, kernel.mmfreemappingaddress, wdm/MmFreeMappingAddress
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ The <b>MmFreeMappingAddress</b> routine frees a range of virtual memory reserved
 
 ## -parameters
 
-### -param BaseAddress 
+### -param BaseAddress [in]
 
-[in]
+
 Pointer to the beginning of the reserved memory buffer to free. This must be an address previously returned by <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatemappingaddress">MmAllocateMappingAddress</a>.
 
-### -param PoolTag 
+### -param PoolTag [in]
 
-[in]
+
 Specifies the pool tag for the reserved memory buffer. This must be identical to the value specified in the <i>PoolTag</i> parameter of the call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatemappingaddress">MmAllocateMappingAddress</a> that reserved the buffer.
 
 ## -remarks

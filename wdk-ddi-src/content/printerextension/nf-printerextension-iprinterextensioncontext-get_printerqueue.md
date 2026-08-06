@@ -2,17 +2,15 @@
 UID: NF:printerextension.IPrinterExtensionContext.get_PrinterQueue
 title: IPrinterExtensionContext::get_PrinterQueue (printerextension.h)
 description: Gets the queue for the printer.
-old-location: print\iprinterextensioncontext_printerqueue.htm
 tech.root: print
-ms.assetid: 304C8AF5-EA4E-4401-A8EC-6E1B279038E8
-ms.date: 04/20/2018
+ms.date: 08/03/2022
 keywords: ["IPrinterExtensionContext::get_PrinterQueue"]
 ms.keywords: IPrinterExtensionContext interface [Print Devices],PrinterQueue property, IPrinterExtensionContext.PrinterQueue, IPrinterExtensionContext.get_PrinterQueue, IPrinterExtensionContext::PrinterQueue, IPrinterExtensionContext::get_PrinterQueue, PrinterQueue property [Print Devices], PrinterQueue property [Print Devices],IPrinterExtensionContext interface, get_PrinterQueue, print.iprinterextensioncontext_printerqueue, printerextension/IPrinterExtensionContext::PrinterQueue, printerextension/IPrinterExtensionContext::get_PrinterQueue
 req.header: printerextension.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 
@@ -38,12 +36,8 @@ api_type:
 api_location:
  - Printerextension.h
 api_name:
- - IPrinterExtensionContext.PrinterQueue
- - IPrinterExtensionContext.get_PrinterQueue
+ - IPrinterExtensionContext::get_PrinterQueue
 ---
-
-# IPrinterExtensionContext::get_PrinterQueue
-
 
 ## -description
 
@@ -53,10 +47,16 @@ This property is read-only.
 
 ## -parameters
 
+### -param ppQueue
+
+Defines the **IPrinterQueue** parameter *ppQueue*.
+
+## -returns
+
+Returns an **HRESULT** value. If the property call was not successful, it returns the appropriate **HRESULT** error code.
+
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioncontext">IPrinterExtensionContext</a>
+[IPrinterExtensionContext](./nn-printerextension-iprinterextensioncontext.md)
 
-
-
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterqueue">IPrinterQueue</a>
+[IPrinterQueue](./nn-printerextension-iprinterqueue.md)

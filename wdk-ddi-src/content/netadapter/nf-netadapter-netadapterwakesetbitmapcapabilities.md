@@ -3,8 +3,7 @@ UID: NF:netadapter.NetAdapterWakeSetBitmapCapabilities
 title: NetAdapterWakeSetBitmapCapabilities function (netadapter.h)
 description: The NetAdapterWakeSetBitmapCapabilities function sets a net adapter's bitmap pattern wake on LAN (WoL) capabilities.
 tech.root: netvista
-ms.assetid: 1c6006b8-6241-418f-b81c-b32a318eeea6
-ms.date: 10/24/2019
+ms.date: 03/30/2022
 keywords: ["NetAdapterWakeSetBitmapCapabilities function"]
 ms.keywords: NetAdapterWakeSetBitmapCapabilities
 req.header: netadapter.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: netadaptercxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -37,8 +36,6 @@ api_location:
  - netadaptercxstub.lib
 api_name:
  - NetAdapterWakeSetBitmapCapabilities
-product:
- - Windows
 ---
 
 # NetAdapterWakeSetBitmapCapabilities function
@@ -50,17 +47,14 @@ The **NetAdapterWakeSetBitmapCapabilities** function sets a net adapter's bitmap
 
 ## -parameters
 
-### -param Adapter
+### -param Adapter [_In_]
 
 A handle to a NETADAPTER object that the client driver obtained from a previous call to [**NetAdapterCreate**](../netadapter/nf-netadapter-netadaptercreate.md).
 
-### -param Capabilities
+### -param Capabilities [_In_]
 
 A pointer to a client driver-allocated and initialized [**NET_ADAPTER_WAKE_BITMAP_CAPABILITIES**](../netadapter/ns-netadapter-_net_adapter_wake_bitmap_capabilities.md) structure.
 
-## -returns
-
-This function does not return a value.
 
 ## -remarks
 

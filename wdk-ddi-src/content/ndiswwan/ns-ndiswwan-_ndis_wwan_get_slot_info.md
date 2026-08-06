@@ -4,7 +4,6 @@ title: _NDIS_WWAN_GET_SLOT_INFO (ndiswwan.h)
 description: The NDIS_WWAN_GET_SLOT_INFO structure represents the status of a slot in the modem of the MB device.
 old-location: netvista\ndis_wwan_get_slot_info_status.htm
 tech.root: netvista
-ms.assetid: 214AFAD3-B211-4D66-8CFC-58F8EB407B83
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_GET_SLOT_INFO structure"]
 ms.keywords: "*PNDIS_WWAN_GET_SLOT_INFO, NDIS_WWAN_GET_SLOT_INFO, NDIS_WWAN_GET_SLOT_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_GET_SLOT_INFO, PNDIS_WWAN_GET_SLOT_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_GET_SLOT_INFO, ndiswwan/NDIS_WWAN_GET_SLOT_INFO, ndiswwan/PNDIS_WWAN_GET_SLOT_INFO, netvista.ndis_wwan_get_slot_info_status"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_GET_SLOT_INFO
+ - PNDIS_WWAN_GET_SLOT_INFO
  - NDIS_WWAN_GET_SLOT_INFO
 ---
 
@@ -102,23 +103,19 @@ sizeof(NDIS_WWAN_GET_SLOT_INFO)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field GetSlotInfo
 
  
 
-
-
-
-#### - SlotInfoStatus
-
 A formatted <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_get_slot_info">WWAN_GET_SLOT_INFO</a> structure which contains the slot index to specify which slot's status the query request is for.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_get_slot_info">WWAN_GET_SLOT_INFO</a>
+

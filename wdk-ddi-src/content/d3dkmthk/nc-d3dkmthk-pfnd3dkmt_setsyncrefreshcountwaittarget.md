@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_SETSYNCREFRESHCOUNTWAITTARGET
 title: PFND3DKMT_SETSYNCREFRESHCOUNTWAITTARGET (d3dkmthk.h)
 description: The PFND3DKMT_SETSYNCREFRESHCOUNTWAITTARGET callback function sets sync refresh count for wait target.
-ms.assetid: 012ee806-e75f-49c3-aedf-395298324cbc
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_SETSYNCREFRESHCOUNTWAITTARGET callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The PFND3DKMT_SETSYNCREFRESHCOUNTWAITTARGET callback function sets sync refresh 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_SETSYNCREFRESHCOUNTWAITTARGET](ns-d3dkmthk-_d3dkmt_setsyncrefreshcountwaittarget.md) structure.
 

@@ -4,7 +4,6 @@ title: IoInvalidateDeviceRelations function (wdm.h)
 description: The IoInvalidateDeviceRelations routine notifies the PnP manager that the relations for a device (such as bus relations, ejection relations, removal relations, and the target device relation) have changed.
 old-location: kernel\ioinvalidatedevicerelations.htm
 tech.root: kernel
-ms.assetid: f312afec-10b3-4049-a4c1-154c11b4a869
 ms.date: 04/30/2018
 keywords: ["IoInvalidateDeviceRelations function"]
 ms.keywords: IoInvalidateDeviceRelations, IoInvalidateDeviceRelations routine [Kernel-Mode Driver Architecture], k104_c839e20b-2be6-4586-86c9-57c773bf755f.xml, kernel.ioinvalidatedevicerelations, wdm/IoInvalidateDeviceRelations
@@ -50,14 +49,14 @@ The <b>IoInvalidateDeviceRelations</b> routine notifies the PnP manager that the
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the PDO for the device.
 
-### -param Type 
+### -param Type [in]
 
-[in]
+
 Specifies a <b>DEVICE_RELATION_TYPE</b> enumeration value that describes the type of relations that have changed. Possible values include <b>BusRelations</b>, <b>EjectionRelations</b>, <b>RemovalRelations</b>, and <b>TargetDeviceRelation</b>. Starting with Windows 7, the <b>PowerRelations</b> value is also supported.
 
 ## -remarks

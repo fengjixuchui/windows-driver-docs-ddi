@@ -1,10 +1,9 @@
 ---
 UID: NF:miniport.WRITE_REGISTER_BUFFER_ULONG
 title: WRITE_REGISTER_BUFFER_ULONG function (miniport.h)
-description: The WRITE_REGISTER_BUFFER_ULONG routine writes a number of ULONG values from a buffer to the specified register.
+description: The WRITE_REGISTER_BUFFER_ULONG function (miniport.h) writes a number of ULONG values from a buffer to the specified register.
 old-location: kernel\write_register_buffer_ulong.htm
 tech.root: kernel
-ms.assetid: dae9cc3d-b793-4f2a-99a6-1f77af396110
 ms.date: 04/30/2018
 keywords: ["WRITE_REGISTER_BUFFER_ULONG function"]
 ms.keywords: WRITE_REGISTER_BUFFER_ULONG, WRITE_REGISTER_BUFFER_ULONG routine [Kernel-Mode Driver Architecture], k103_9ef495b2-fe86-484a-bec2-5390df6ee246.xml, kernel.write_register_buffer_ulong, wdm/WRITE_REGISTER_BUFFER_ULONG
@@ -50,19 +49,19 @@ The <b>WRITE_REGISTER_BUFFER_ULONG</b> routine writes a number of ULONG values f
 
 ## -parameters
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 Pointer to the register, which must be a mapped range in memory space.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to a buffer from which an array of ULONG values is to be written.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of ULONG values to be written to the register.
 
 ## -remarks

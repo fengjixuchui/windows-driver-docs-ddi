@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_ENUMADAPTERS
 title: _D3DKMT_ENUMADAPTERS (d3dkmthk.h)
 description: Supplies information for enumerating all graphics adapters on the system.
 old-location: display\d3dkmt_enumadapters.htm
-ms.assetid: a05252bc-6bc4-4cef-aa42-e2c03556847a
 ms.date: 05/10/2018
 keywords: ["D3DKMT_ENUMADAPTERS structure"]
 ms.keywords: D3DKMT_ENUMADAPTERS, D3DKMT_ENUMADAPTERS structure [Display Devices], _D3DKMT_ENUMADAPTERS, d3dkmthk/D3DKMT_ENUMADAPTERS, display.d3dkmt_enumadapters
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
+ - _D3DKMT_ENUMADAPTERS
  - D3DKMT_ENUMADAPTERS
 ---
 
@@ -52,9 +52,9 @@ Supplies information for  enumerating all graphics adapters on the system.
 
 ## -struct-fields
 
-### -field NumAdapters
+### -field NumAdapters [in]
 
-[in] The number of graphics adapters.
+The number of graphics adapters.
 
 ### -field Adapters
 
@@ -63,3 +63,4 @@ An array of <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_adapterinfo">D3DKMT_ADAPTERINFO</a>
+

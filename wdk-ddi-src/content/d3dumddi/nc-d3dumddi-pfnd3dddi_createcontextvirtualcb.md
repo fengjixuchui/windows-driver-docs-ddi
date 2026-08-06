@@ -4,7 +4,6 @@ title: PFND3DDDI_CREATECONTEXTVIRTUALCB (d3dumddi.h)
 description: pfnCreateContextVirtualCb should be used with contexts that support virtual addressing.
 old-location: display\pfncreatecontextvirtualcb.htm
 tech.root: display
-ms.assetid: 7787FEDF-E18C-4120-A073-A13933856F57
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CREATECONTEXTVIRTUALCB callback function"]
 ms.keywords: PFND3DDDI_CREATECONTEXTVIRTUALCB, PFND3DDDI_CREATECONTEXTVIRTUALCB callback, d3dumddi/pfnCreateContextVirtualCb, display.pfncreatecontextvirtualcb, pfnCreateContextVirtualCb, pfnCreateContextVirtualCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnCreateContextVirtualCb
-product:
- - Windows
+ - PFND3DDDI_CREATECONTEXTVIRTUALCB
 ---
 
 # PFND3DDDI_CREATECONTEXTVIRTUALCB callback function
@@ -56,7 +53,7 @@ product:
 
 A handle to the display device.
 
-### -param Arg2
+### -param unnamedParam2
 
 pData [in, out]
 

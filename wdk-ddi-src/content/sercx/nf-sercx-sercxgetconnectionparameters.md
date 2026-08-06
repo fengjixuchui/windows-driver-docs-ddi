@@ -4,7 +4,6 @@ title: SerCxGetConnectionParameters function (sercx.h)
 description: The SerCxGetConnectionParameters method retrieves the connection parameters for the associated peripheral device.
 old-location: serports\sercxgetconnectionparameters.htm
 tech.root: serports
-ms.assetid: 361BC3A7-AE86-4C92-B7E1-A30D467D4A65
 ms.date: 04/23/2018
 keywords: ["SerCxGetConnectionParameters function"]
 ms.keywords: 1/SerCxGetConnectionParameters, SerCxGetConnectionParameters, SerCxGetConnectionParameters method [Serial Ports], serports.sercxgetconnectionparameters
@@ -50,14 +49,14 @@ The <b>SerCxGetConnectionParameters</b> method retrieves the connection paramete
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the serial controller.
 
-### -param ConnectionParameters 
+### -param ConnectionParameters [out]
 
-[out]
+
 A pointer to a location into which the method writes a pointer to the connection parameters. The caller must cast this pointer to the appropriate pointer type, parse the data structure for the connection parameters, read the configuration settings from this structure, and apply these settings to the serial controller hardware.
 
 ## -remarks

@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_VIDPNTARGETMODESET_GETNUMMODES
 title: DXGKDDI_VIDPNTARGETMODESET_GETNUMMODES (d3dkmddi.h)
 description: The pfnGetNumModes function returns the number of target modes in a specified VidPN target mode set.
 old-location: display\dxgk_vidpntargetmodeset_interface_pfngetnummodes.htm
-ms.assetid: 1197989a-c76e-4dee-a1c7-677b6558677c
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_VIDPNTARGETMODESET_GETNUMMODES callback function"]
 ms.keywords: DXGKDDI_VIDPNTARGETMODESET_GETNUMMODES, DXGKDDI_VIDPNTARGETMODESET_GETNUMMODES callback, VidPnFunctions_f2fa9ea6-6ce7-485d-bcd2-b3c340ca66fc.xml, d3dkmddi/pfnGetNumModes, display.dxgk_vidpntargetmodeset_interface_pfngetnummodes, pfnGetNumModes, pfnGetNumModes callback function [Display Devices]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - pfnGetNumModes
-product:
- - Windows
+ - DXGKDDI_VIDPNTARGETMODESET_GETNUMMODES
 ---
 
 # DXGKDDI_VIDPNTARGETMODESET_GETNUMMODES callback function
@@ -80,3 +77,4 @@ The D3DKMDT_HVIDPNTARGETMODESET data type is defined in <i>D3dkmdt.h</i>.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpntargetmodeset_acquirenextmodeinfo">pfnAcquireNextModeInfo</a>
+

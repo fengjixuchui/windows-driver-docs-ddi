@@ -4,7 +4,6 @@ title: WdfDeviceSetStaticStopRemove function (wdfdevice.h)
 description: The WdfDeviceSetStaticStopRemove method informs the framework whether a device can be stopped and removed.
 old-location: wdf\wdfdevicesetstaticstopremove.htm
 tech.root: wdf
-ms.assetid: b2776618-2585-4a7a-9f8f-536f1d28745b
 ms.date: 02/26/2018
 keywords: ["WdfDeviceSetStaticStopRemove function"]
 ms.keywords: DFDeviceObjectGeneralRef_9874b784-6344-4336-9753-0b172563f981.xml, WdfDeviceSetStaticStopRemove, WdfDeviceSetStaticStopRemove method, kmdf.wdfdevicesetstaticstopremove, wdf.wdfdevicesetstaticstopremove, wdfdevice/WdfDeviceSetStaticStopRemove
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfDeviceSetStaticStopRemove</b> method informs the framework whether a d
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Stoppable 
+### -param Stoppable [in]
 
-[in]
+
 A Boolean value that indicates whether the specified device can be stopped and removed. If <b>TRUE</b>, the device can be stopped and removed. If <b>FALSE</b>, the device cannot be stopped and removed.
 
 ## -remarks

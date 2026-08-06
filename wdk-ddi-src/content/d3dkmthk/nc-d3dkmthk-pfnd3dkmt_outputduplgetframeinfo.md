@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_OUTPUTDUPLGETFRAMEINFO
 title: PFND3DKMT_OUTPUTDUPLGETFRAMEINFO (d3dkmthk.h)
 description: The PFND3DKMT_OUTPUTDUPLGETFRAMEINFO callback function gets output duplicate frame info.
-ms.assetid: a4f73b4b-cfc5-4fa6-b597-9309a1dce8d2
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_OUTPUTDUPLGETFRAMEINFO callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The PFND3DKMT_OUTPUTDUPLGETFRAMEINFO callback function gets output duplicate fra
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_OUTPUTDUPL_GET_FRAMEINFO](ns-d3dkmthk-_d3dkmt_outputdupl_get_frameinfo.md) structure.
 

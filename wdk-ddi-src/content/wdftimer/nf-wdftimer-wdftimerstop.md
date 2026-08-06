@@ -4,8 +4,7 @@ title: WdfTimerStop function (wdftimer.h)
 description: The WdfTimerStop method stops a timer's clock.
 old-location: wdf\wdftimerstop.htm
 tech.root: wdf
-ms.assetid: 394593f5-92eb-4f84-adbe-67e0e5320ff0
-ms.date: 02/26/2018
+ms.date: 10/01/2024
 keywords: ["WdfTimerStop function"]
 ms.keywords: DFTimerObjectRef_6b433db6-e7a0-4521-961d-56c3de8a97ad.xml, WdfTimerStop, WdfTimerStop method, kmdf.wdftimerstop, wdf.wdftimerstop, wdftimer/WdfTimerStop
 req.header: wdftimer.h
@@ -55,14 +54,14 @@ The <b>WdfTimerStop</b> method stops a timer's clock.
 
 ## -parameters
 
-### -param Timer 
+### -param Timer [in]
 
-[in]
+
 A handle to a framework timer object that was obtained by calling <a href="/windows-hardware/drivers/ddi/wdftimer/nf-wdftimer-wdftimercreate">WdfTimerCreate</a>.
 
-### -param Wait 
+### -param Wait [in]
 
-[in]
+
 <b>KMDF </b>A Boolean value that, if <b>TRUE</b>, specifies that the framework does not return until all queued calls to the driver's deferred procedure calls (DPCs), including the driver's <a href="/windows-hardware/drivers/ddi/wdftimer/nc-wdftimer-evt_wdf_timer">EvtTimerFunc</a> callback functions, have executed. 
 
 <b>UMDF </b>A Boolean value that, if <b>TRUE</b>, specifies that the framework does not return until all queued calls to the timer's <a href="/windows-hardware/drivers/ddi/wdftimer/nc-wdftimer-evt_wdf_timer">EvtTimerFunc</a> callback function have executed.
@@ -81,10 +80,10 @@ For more information about framework timer objects, see <a href="/windows-hardwa
 
 <b>WdfTimerStop</b> must be called at IRQL = PASSIVE_LEVEL if the <i>Wait</i> parameter is <b>TRUE</b>. Otherwise, this method must be called at IRQL <= DISPATCH_LEVEL.
 
-
-
 Do not call <b>WdfTimerStop</b> from inside <a href="/windows-hardware/drivers/ddi/wdftimer/nc-wdftimer-evt_wdf_timer">EvtTimerFunc</a> with the <i>Wait</i> parameter set to <b>TRUE</b>.  Doing so may result in deadlock.
 
+> [!CAUTION]
+>Concurrent calls to **WdfTimerStop** on the same timer object will break into the debugger if Verifier is enabled. For more info, see [Using KMDF Verifier](/windows-hardware/drivers/wdf/using-kmdf-verifier).
 
 #### Examples
 

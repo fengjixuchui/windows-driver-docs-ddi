@@ -4,7 +4,6 @@ title: WDF_READ_REGISTER_UCHAR function (wdfhwaccess.h)
 description: The WDF_READ_REGISTER_UCHAR function reads a byte from the specified register address.
 old-location: wdf\wdf_read_register_uchar.htm
 tech.root: wdf
-ms.assetid: C8633689-0900-42BB-9D0D-6F95CBA13A37
 ms.date: 02/26/2018
 keywords: ["WDF_READ_REGISTER_UCHAR function"]
 ms.keywords: WDF_READ_REGISTER_UCHAR, WDF_READ_REGISTER_UCHAR function, wdf.wdf_read_register_uchar, wdfhwaccess/WDF_READ_REGISTER_UCHAR
@@ -52,14 +51,14 @@ The <b>WDF_READ_REGISTER_UCHAR</b> function reads a byte from the specified regi
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the register address, which must be a mapped range in memory space.
 
 ## -returns

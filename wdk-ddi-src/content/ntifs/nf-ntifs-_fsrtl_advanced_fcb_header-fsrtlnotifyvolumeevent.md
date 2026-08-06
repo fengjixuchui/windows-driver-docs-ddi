@@ -4,14 +4,13 @@ title: FsRtlNotifyVolumeEvent function (ntifs.h)
 description: The FsRtlNotifyVolumeEvent routine notifies any registered applications that a volume event is occurring.
 old-location: ifsk\fsrtlnotifyvolumeevent.htm
 tech.root: ifsk
-ms.assetid: a630d986-10a7-4b3f-a5b4-05de7879b146
 ms.date: 04/16/2018
 keywords: ["FsRtlNotifyVolumeEvent function"]
 ms.keywords: FsRtlNotifyVolumeEvent, FsRtlNotifyVolumeEvent routine [Installable File System Drivers], fsrtlref_a242139a-dc66-4522-85a2-4f910d999d4d.xml, ifsk.fsrtlnotifyvolumeevent, ntifs/FsRtlNotifyVolumeEvent
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows XP and later.
+req.target-min-winverclnt: Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -53,14 +52,14 @@ The <b>FsRtlNotifyVolumeEvent</b> routine notifies any registered applications t
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 A pointer to a file object for the given volume.
 
-### -param EventCode 
+### -param EventCode [in]
 
-[in]
+
 Specifies an event code for the event that is occurring. This code can be one of the following values.
 
 <table>

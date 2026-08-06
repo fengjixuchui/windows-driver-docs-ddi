@@ -4,7 +4,6 @@ title: _LOCK_STATE_EX (ndis.h)
 description: The LOCK_STATE_EX structure tracks the state of a read/write lock.
 old-location: netvista\lock_state_ex.htm
 tech.root: netvista
-ms.assetid: 558b6fba-a1d8-4255-bca6-e2d83afe9e46
 ms.date: 05/02/2018
 keywords: ["LOCK_STATE_EX structure"]
 ms.keywords: "*PLOCK_STATE_EX, LOCK_STATE_EX, LOCK_STATE_EX structure [Network Drivers Starting with Windows Vista], PLOCK_STATE_EX, PLOCK_STATE_EX structure pointer [Network Drivers Starting with Windows Vista], _LOCK_STATE_EX, ndis/LOCK_STATE_EX, ndis/PLOCK_STATE_EX, ndis_processor_group_ref_0b6d70d3-0671-49df-977a-c435eb599667.xml, netvista.lock_state_ex"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _LOCK_STATE_EX
+ - PLOCK_STATE_EX
  - LOCK_STATE_EX
 ---
 
@@ -70,3 +71,4 @@ Reserved.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_lock_state">LOCK_STATE</a>
+

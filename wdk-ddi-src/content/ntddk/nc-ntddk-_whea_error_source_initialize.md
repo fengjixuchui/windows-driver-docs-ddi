@@ -1,13 +1,12 @@
 ---
 UID: NC:ntddk._WHEA_ERROR_SOURCE_INITIALIZE
-title: _WHEA_ERROR_SOURCE_INITIALIZE
-description: 
-tech.root: 
-ms.assetid: 0e3a95d0-97a1-4a2f-b0b0-8f80efc874ee
-ms.date: 08/19/2019
+title: WHEA_ERROR_SOURCE_INITIALIZE
+description: WHEA_ERROR_SOURCE_INITIALIZE is reserved for system use.
+tech.root: whea
+ms.date: 01/19/2023
 keywords: ["WHEA_ERROR_SOURCE_INITIALIZE callback function"]
 req.header: ntddk.h
-req.include-header: 
+req.include-header: Ntddk.h
 req.target-type: 
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -24,7 +23,6 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 targetos: Windows
-ms.custom: 19H1
 f1_keywords:
  - _WHEA_ERROR_SOURCE_INITIALIZE
  - ntddk/_WHEA_ERROR_SOURCE_INITIALIZE
@@ -36,12 +34,7 @@ api_location:
  - ntddk.h
 api_name:
  - _WHEA_ERROR_SOURCE_INITIALIZE
-product:
- - Windows
 ---
-
-# _WHEA_ERROR_SOURCE_INITIALIZE callback function
-
 
 ## -description
 
@@ -49,17 +42,14 @@ Reserved for system use.
 
 ## -parameters
 
-### -param Phase: 
+### -param Phase
 
-### -param ErrorSource: 
+### -param ErrorSource
 
-### -param Context: 
+### -param Context
 
 ## -returns
-
-## -prototype
 
 ## -remarks
 
 ## -see-also
-

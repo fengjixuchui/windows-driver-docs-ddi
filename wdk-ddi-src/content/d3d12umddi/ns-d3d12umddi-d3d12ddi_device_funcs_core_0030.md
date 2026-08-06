@@ -1,9 +1,8 @@
 ---
 UID: NS:d3d12umddi.D3D12DDI_DEVICE_FUNCS_CORE_0030
 title: D3D12DDI_DEVICE_FUNCS_CORE_0030 (d3d12umddi.h)
-description: Core device functions.
+description: The D3D12DDI_DEVICE_FUNCS_CORE_0030 structure contains core device functions for user-mode display drivers.
 old-location: display\d3d12ddi-device-funcs-core-0030.htm
-ms.assetid: 421e6b72-a771-4b18-9776-0b5e8e7a1e29
 ms.date: 05/10/2018
 keywords: ["D3D12DDI_DEVICE_FUNCS_CORE_0030 structure"]
 ms.keywords: D3D12DDI_DEVICE_FUNCS_CORE_0030, D3D12DDI_DEVICE_FUNCS_CORE_0030 structure [Display Devices], d3d12umddi/D3D12DDI_DEVICE_FUNCS_CORE_0030, display.d3d12ddi-device-funcs-core-0030
@@ -106,7 +105,7 @@ Create rasterizer state.
 
 ### -field pfnDestroyRasterizerState
 
-Destory rasterizer state.
+Destroy rasterizer state.
 
 ### -field pfnCalcPrivateShaderSize
 
@@ -408,7 +407,7 @@ Calculate serialized library size.
 
 ### -field pfnSerializeLibrary
 
-Serialized libary.
+Serialized library.
 
 ### -field pfnGetDebugAllocationInfo
 

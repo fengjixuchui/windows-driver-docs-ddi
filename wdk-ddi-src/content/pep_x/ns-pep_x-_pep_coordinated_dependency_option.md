@@ -1,10 +1,9 @@
 ---
 UID: NS:pep_x._PEP_COORDINATED_DEPENDENCY_OPTION
 title: _PEP_COORDINATED_DEPENDENCY_OPTION (pep_x.h)
-description: The PEP_COORIDNATED_DEPENDENCY_OPTION structure describes a coordinated idle state's dependency to the OS.
+description: Learn how the PEP_COORIDNATED_DEPENDENCY_OPTION structure describes a coordinated idle state's dependency to the OS.
 old-location: kernel\pep_coordinated_dependency_option.htm
 tech.root: kernel
-ms.assetid: DE95A3E9-3542-49EE-AA62-3430A6B2D7C7
 ms.date: 04/30/2018
 keywords: ["PEP_COORDINATED_DEPENDENCY_OPTION structure"]
 ms.keywords: "*PPEP_COORDINATED_DEPENDENCY_OPTION, PEP_COORDINATED_DEPENDENCY_OPTION, PEP_COORDINATED_DEPENDENCY_OPTION structure [Kernel-Mode Driver Architecture], PPEP_COORDINATED_DEPENDENCY_OPTION, PPEP_COORDINATED_DEPENDENCY_OPTION structure pointer [Kernel-Mode Driver Architecture], _PEP_COORDINATED_DEPENDENCY_OPTION, kernel.pep_coordinated_dependency_option, pepfx/PEP_COORDINATED_DEPENDENCY_OPTION, pepfx/PPEP_COORDINATED_DEPENDENCY_OPTION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_COORDINATED_DEPENDENCY_OPTION
+ - PPEP_COORDINATED_DEPENDENCY_OPTION
  - PEP_COORDINATED_DEPENDENCY_OPTION
 ---
 
@@ -80,3 +81,4 @@ Indicates if this state is a valid state for a dependent processor to be in.
 
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_ppm_query_coordinated_dependency">PEP_PPM_QUERY_COORDINATED_DEPENDENCY</a>
+

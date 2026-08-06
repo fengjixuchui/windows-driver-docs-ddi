@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_SET_DEFAULT_KEY_ID
 title: DOT11EXT_SET_DEFAULT_KEY_ID (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_SET_DEFAULT_KEY_ID callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extsetdefaultkeyid.htm
 tech.root: netvista
-ms.assetid: 405da147-9b41-4563-8694-6619f86ed366
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_SET_DEFAULT_KEY_ID callback"]
 ms.keywords: DOT11EXT_SET_DEFAULT_KEY_ID, Dot11ExtSetDefaultKeyId, Dot11ExtSetDefaultKeyId callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_60922941-d9b1-4d73-8029-513d127944e2.xml, netvista.dot11extsetdefaultkeyid, wlanihv/Dot11ExtSetDefaultKeyId
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_SET_DEFAULT_KEY_ID
  - wlanihv/DOT11EXT_SET_DEFAULT_KEY_ID
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtSetDefaultKeyId
+ - DOT11EXT_SET_DEFAULT_KEY_ID
 ---
 
 # DOT11EXT_SET_DEFAULT_KEY_ID callback
@@ -54,17 +52,17 @@ api_name:
 
 ## -parameters
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the WLAN adapter. This handle value was
      specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param uDefaultKeyId 
+### -param uDefaultKeyId [in]
 
-[in]
+
 The index value of the key within the adapter's default or per-station cipher key tables.
 
 
@@ -113,3 +111,4 @@ A call to the
 
 
 <a href="/windows-hardware/drivers/network/802-11-cipher-key-types">802.11 Cipher Key Types</a>
+

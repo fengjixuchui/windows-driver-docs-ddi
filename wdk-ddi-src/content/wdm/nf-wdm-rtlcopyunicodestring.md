@@ -4,7 +4,6 @@ title: RtlCopyUnicodeString function (wdm.h)
 description: The RtlCopyUnicodeString routine copies a source string to a destination string.
 old-location: kernel\rtlcopyunicodestring.htm
 tech.root: kernel
-ms.assetid: 241801a5-4a02-46f3-a007-f571d58c7825
 ms.date: 04/30/2018
 keywords: ["RtlCopyUnicodeString function"]
 ms.keywords: RtlCopyUnicodeString, RtlCopyUnicodeString routine [Kernel-Mode Driver Architecture], k109_5d0b341c-a440-4137-bdc3-77e0da0db58c.xml, kernel.rtlcopyunicodestring, wdm/RtlCopyUnicodeString
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql: Any level (See Remarks section)
+req.irql: Any level (see Remarks section)
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,14 +50,14 @@ The <b>RtlCopyUnicodeString</b> routine copies a source string to a destination 
 
 ## -parameters
 
-### -param DestinationString 
+### -param DestinationString [in, out]
 
-[in, out]
+
 A pointer to the destination string buffer. This parameter points to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure.
 
-### -param SourceString 
+### -param SourceString [in, optional]
 
-[in, optional]
+
 A pointer to the source string buffer. This parameter points to a <b>UNICODE_STRING</b> structure.
 
 ## -returns

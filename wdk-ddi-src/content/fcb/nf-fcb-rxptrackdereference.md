@@ -4,7 +4,6 @@ title: RxpTrackDereference function (fcb.h)
 description: RxpTrackDereference is used in checked builds to track requests to dereference SRV_CALL, NET_ROOT, V_NET_ROOT, FOBX, FCB, and SRV_OPEN structures in checked builds. A log of these dereference requests can be accessed by the logging system and WMI.
 old-location: ifsk\rxptrackdereference.htm
 tech.root: ifsk
-ms.assetid: eaff92d2-d866-4096-8528-0672255ced60
 ms.date: 04/16/2018
 keywords: ["RxpTrackDereference function"]
 ms.keywords: RxpTrackDereference, RxpTrackDereference function [Installable File System Drivers], fcb/RxpTrackDereference, ifsk.rxptrackdereference, rxref_60f3cce5-bd6b-47b9-a6cc-85b5ee027934.xml
@@ -50,9 +49,9 @@ api_name:
 
 ## -parameters
 
-### -param TraceType 
+### -param TraceType [in]
 
-[in]
+
 The value that determines which dereference request type is tracked. This value can be one of the following macros defined in <i>fcb.h</i>:
 
 
@@ -93,14 +92,14 @@ A dereference request on an FCB structure.
 
 A dereference request on a SRV_OPEN structure.
 
-### -param FileName 
+### -param FileName [in]
 
-[in]
+
 The name of the source file where this routine was called.
 
-### -param Line 
+### -param Line [in]
 
-[in]
+
 The line number in the source file where this routine was called.
 
 ### -param Instance

@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGK_ENGINESTATUS
 title: _DXGK_ENGINESTATUS (d3dkmddi.h)
 description: Indicates the progress of a node within an active physical display adapter (engine) specified by a DXGKARG_QUERYENGINESTATUS structure.
 old-location: display\dxgk_enginestatus.htm
-ms.assetid: e052e3bc-688e-4aa8-b987-88ed6963774a
 ms.date: 05/10/2018
 keywords: ["DXGK_ENGINESTATUS structure"]
 ms.keywords: DXGK_ENGINESTATUS, DXGK_ENGINESTATUS structure [Display Devices], _DXGK_ENGINESTATUS, d3dkmddi/DXGK_ENGINESTATUS, display.dxgk_enginestatus
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmddi.h
 api_name:
+ - _DXGK_ENGINESTATUS
  - DXGK_ENGINESTATUS
 ---
 
@@ -67,3 +67,4 @@ A 32-bit value that specifies the progress of the physical adapter.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_queryenginestatus">DXGKARG_QUERYENGINESTATUS</a>
+

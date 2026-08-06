@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.KeRaiseIrqlToDpcLevel
 title: KeRaiseIrqlToDpcLevel function (wdm.h)
-description: The KeRaiseIrqlToDpcLevel routine raises the hardware priority to IRQL = DISPATCH_LEVEL, thereby masking off interrupts of equivalent or lower IRQL on the current processor.
+description: Learn how the KeRaiseIrqlToDpcLevel routine raises the hardware priority to IRQL = DISPATCH_LEVEL, thereby masking off interrupts of equivalent or lower IRQL on the current processor.
 old-location: kernel\keraiseirqltodpclevel.htm
 tech.root: kernel
-ms.assetid: ac82e003-ec05-4b8b-a4fb-64498fb17f9b
 ms.date: 04/30/2018
 keywords: ["KeRaiseIrqlToDpcLevel function"]
 ms.keywords: KeRaiseIrqlToDpcLevel, KeRaiseIrqlToDpcLevel routine [Kernel-Mode Driver Architecture], k105_64c33a5b-8efa-4d97-9569-2ea68a227d17.xml, kernel.keraiseirqltodpclevel, wdm/KeRaiseIrqlToDpcLevel
@@ -54,7 +53,7 @@ The **KeRaiseIrqlToDpcLevel** routine raises the hardware priority to IRQL = DIS
 
 ## -remarks
 
-Any caller of **KeRaiseIrqlToDpcLevel** should save the returned IRQL value. Every such caller must restore the original IRQL as quickly as possible by passing this returned IRQL in a subsequent call to [KeLowerIrql](nf-wdm-kelowerirql~r1.md).
+Any caller of **KeRaiseIrqlToDpcLevel** should save the returned IRQL value. Every such caller must restore the original IRQL as quickly as possible by passing this returned IRQL in a subsequent call to [KeLowerIrql](nf-wdm-kelowerirql.md).
 
 Callers of **KeRaiseIrqlToDpcLevel** must be running at IRQL <= DISPATCH_LEVEL. Otherwise, a call to this routine causes a bug check.
 
@@ -62,7 +61,7 @@ Callers of **KeRaiseIrqlToDpcLevel** must be running at IRQL <= DISPATCH_LEVEL. 
 
 [KeGetCurrentIrql](nf-wdm-kegetcurrentirql.md)
 
-[KeLowerIrql](nf-wdm-kelowerirql~r1.md)
+[KeLowerIrql](nf-wdm-kelowerirql.md)
 
 [KeRaiseIrql](nf-wdm-keraiseirql.md)
 

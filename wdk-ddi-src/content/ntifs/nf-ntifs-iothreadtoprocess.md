@@ -4,7 +4,6 @@ title: IoThreadToProcess function (ntifs.h)
 description: The IoThreadToProcess routine returns a pointer to the process for the specified thread.
 old-location: ifsk\iothreadtoprocess.htm
 tech.root: ifsk
-ms.assetid: fcb51574-d966-4cd5-a946-c38dd2798b7f
 ms.date: 04/16/2018
 keywords: ["IoThreadToProcess function"]
 ms.keywords: IoThreadToProcess, IoThreadToProcess routine [Installable File System Drivers], ifsk.iothreadtoprocess, ioref_59269b9a-0a64-410d-aafa-b070b2eacfd7.xml, ntifs/IoThreadToProcess
@@ -50,16 +49,16 @@ The <b>IoThreadToProcess</b> routine returns a pointer to the process for the sp
 
 ## -parameters
 
-### -param Thread 
+### -param Thread [in]
 
-[in]
+
 Thread whose process is to be returned.
 
 ## -returns
 
 <b>IoThreadToProcess</b> returns a pointer to the thread's process.
 
-For more information about using system threads and managing synchronization within a nonarbitrary thread context, see <a href="/windows-hardware/drivers/ddi/index">Driver Threads, Dispatcher Objects, and Resources</a>.
+For more information about using system threads and managing synchronization within a nonarbitrary thread context, see <a href="/windows-hardware/drivers/ddi/_kernel/#driver-threads-dispatcher-objects-and-resources">Driver Threads, Dispatcher Objects, and Resources</a>.
 
 ## -see-also
 

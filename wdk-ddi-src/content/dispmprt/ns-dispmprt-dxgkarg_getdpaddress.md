@@ -2,7 +2,7 @@
 UID: NS:dispmprt._DXGKARG_GETDPADDRESS
 title: DXGKARG_GETDPADDRESS
 ms.date: 03/24/2020
-ms.topic: language-reference
+tech.root: display
 targetos: Windows
 description: The DXGKARG_GETDPADDRESS structure is a parameter for the DXGKDDI_GETDPADDRESS callback.
 req.construct-type: structure
@@ -28,6 +28,7 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGKARG_GETDPADDRESS
+ - PDXGKARG_GETDPADDRESS
  - DXGKARG_GETDPADDRESS
 f1_keywords:
  - _DXGKARG_GETDPADDRESS
@@ -76,3 +77,4 @@ DP Relative Address. The format is described in the DP specification.
 [**D3DDDI_VIDEO_PRESENT_TARGET_ID**](../d3dkmdt/ns-d3dkmdt-_d3dkmdt_video_present_target.md)
 
 [**DXGKDDI_GETDPADDRESS**](nc-dispmprt-dxgkddi_getdpaddress.md)
+

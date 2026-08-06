@@ -4,7 +4,6 @@ title: _NDIS_RSS_SET_INDIRECTION_ENTRIES (ntddndis.h)
 description: The NDIS_RSS_SET_INDIRECTION_ENTRIES structure represents a set of actions, where each action moves a single entry of the Receive Side Scaling (RSS) indirection table of a specified VPort to a specified target CPU.
 old-location: netvista\ndis_rss_set_indirection_entries.htm
 tech.root: netvista
-ms.assetid: 9AB69EC6-FE78-4242-89C7-D36AA16676BF
 ms.date: 05/02/2018
 keywords: ["NDIS_RSS_SET_INDIRECTION_ENTRIES structure"]
 ms.keywords: "*PNDIS_RSS_SET_INDIRECTION_ENTRIES, NDIS_RSS_SET_INDIRECTION_ENTRIES, NDIS_RSS_SET_INDIRECTION_ENTRIES structure [Network Drivers Starting with Windows Vista], PNDIS_RSS_SET_INDIRECTION_ENTRIES, PNDIS_RSS_SET_INDIRECTION_ENTRIES structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RSS_SET_INDIRECTION_ENTRIES, netvista.ndis_rss_set_indirection_entries, ntddndis/NDIS_RSS_SET_INDIRECTION_ENTRIES, ntddndis/PNDIS_RSS_SET_INDIRECTION_ENTRIES"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_RSS_SET_INDIRECTION_ENTRIES
+ - PNDIS_RSS_SET_INDIRECTION_ENTRIES
  - NDIS_RSS_SET_INDIRECTION_ENTRIES
 ---
 
@@ -62,7 +63,7 @@ The <b>NDIS_RSS_SET_INDIRECTION_ENTRIES</b> structure represents a set of action
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_RSS_SET_INDIRECTION_ENTRIES</b> structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_RSS_SET_INDIRECTION_ENTRIES</b>. 
@@ -93,7 +94,7 @@ The number of formatted <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddn
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -110,3 +111,4 @@ The number of formatted <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddn
 
 
 <a href="/windows-hardware/drivers/network/synchronous-oid-request-interface-in-ndis-6-80">Synchronous OID request interface in NDIS 6.80</a>
+

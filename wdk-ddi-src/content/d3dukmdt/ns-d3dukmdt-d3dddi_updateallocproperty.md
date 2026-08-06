@@ -1,17 +1,15 @@
 ---
 UID: NS:d3dukmdt.D3DDDI_UPDATEALLOCPROPERTY
 title: D3DDDI_UPDATEALLOCPROPERTY (d3dukmdt.h)
-description: D3DDDI_UPDATEALLOCPROPERTY describes the parameters needed to update an allocation.
-old-location: display\d3dddi_updateallocproperty.htm
+description: Learn more about the D3DDDI_UPDATEALLOCPROPERTY structure.
 tech.root: display
-ms.assetid: 4A8EBF10-23A3-4D91-BCF7-8FD4D0708949
-ms.date: 05/10/2018
+ms.date: 10/04/2023
 keywords: ["D3DDDI_UPDATEALLOCPROPERTY structure"]
 ms.keywords: D3DDDI_UPDATEALLOCPROPERTY, D3DDDI_UPDATEALLOCPROPERTY structure [Display Devices], d3dukmdt/D3DDDI_UPDATEALLOCPROPERTY, display.d3dddi_updateallocproperty
 req.header: d3dukmdt.h
 req.include-header: D3dumddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 10 and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows 10
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -43,10 +41,9 @@ api_name:
 
 # D3DDDI_UPDATEALLOCPROPERTY structure
 
-
 ## -description
 
-D3DDDI_UPDATEALLOCPROPERTY describes the parameters needed to update an allocation.
+The **D3DDDI_UPDATEALLOCPROPERTY** structure is used to update properties of a memory allocation.
 
 ## -struct-fields
 
@@ -76,27 +73,32 @@ D3DDDI_UPDATEALLOCPROPERTY describes the parameters needed to update an allocati
 
 ### -field SetAccessedPhysically
 
-A UINT value that specifies whether the allocation is accessed by its physical address.
+[in] When set, the driver will update the [**AccessedPhysically**](ns-d3dukmdt-d3dddi_updateallocproperty_flags.md) property of the allocation.
 
-Setting this member is equivalent to setting the first bit of the 32-bit <b>PropertyMaskValue</b> member (0x00000001).
+[in] Specifies whether the allocation is accessed by its physical address.
 
 ### -field SetSupportedSegmentSet
 
-A UINT value that specifies whether the supported segment is set to a new value.
-
-Setting this member is equivalent to setting the second bit of the 32-bit <b>PropertyMaskValue</b> member (0x00000010).
+[in] Specifies whether the supported segment is set to a new value.
 
 ### -field SetPreferredSegment
 
-A UINT value that specifies whether the preferred segment is set to a new value.
+[in] Specifies whether the preferred segment is set to a new value.
 
-Setting this member is equivalent to setting the third bit of the 32-bit <b>PropertyMaskValue</b> member (0x00000100).
+### -field SetUnmoveable
+
+[in] When set, the driver will update the [**Unmoveable**](ns-d3dukmdt-d3dddi_updateallocproperty_flags.md) property of the allocation to indicate that the allocation is unmoveable.
 
 ### -field Reserved
 
-This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 29 bits (0xFFFFFFFE) of the 32-bit <b>PropertyMaskValue</b> member to zeros.
+This member is reserved and should be set to zero.
 
 ### -field PropertyMaskValue
 
-A member in the union that is contained in D3DDDI_UPDATEALLOCPROPERTY that can hold one 32-bit value that identifies how to update an allocation.
+[in] A member in the union that is contained in D3DDDI_UPDATEALLOCPROPERTY that can hold one 32-bit value that identifies how to update an allocation.
 
+## -see-also
+
+[**D3DDDI_UPDATEALLOCPROPERTY_FLAGS**](ns-d3dukmdt-d3dddi_updateallocproperty_flags.md)
+
+[**D3DKMTUpdateAllocationProperty**](../d3dkmthk/nf-d3dkmthk-d3dkmtupdateallocationproperty.md)

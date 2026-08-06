@@ -4,7 +4,6 @@ title: EVT_VHF_READY_FOR_NEXT_READ_REPORT (vhf.h)
 description: The HID source driver implements this event call back function to use its buffering scheme for HID Input Reports, and wants to get notified when the next report can be submitted to VHF.
 old-location: hid\evtvhfreadyfornextreadreport.htm
 tech.root: hid
-ms.assetid: 02DDBE00-C342-474B-8D06-FBB929BA4760
 ms.date: 04/30/2018
 keywords: ["EVT_VHF_READY_FOR_NEXT_READ_REPORT callback function"]
 ms.keywords: EVT_VHF_READY_FOR_NEXT_READ_REPORT, EVT_VHF_READY_FOR_NEXT_READ_REPORT callback, EvtVhfReadyForNextReadReport, EvtVhfReadyForNextReadReport callback function [Human Input Devices], hid.evtvhfreadyfornextreadreport, vhf/EvtVhfReadyForNextReadReport
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - vhf.h
 api_name:
- - EvtVhfReadyForNextReadReport
+ - EVT_VHF_READY_FOR_NEXT_READ_REPORT
 ---
 
 # EVT_VHF_READY_FOR_NEXT_READ_REPORT callback function
@@ -50,9 +49,9 @@ The HID source driver implements this event call back function to use its buffer
 
 ## -parameters
 
-### -param VhfClientContext 
+### -param VhfClientContext [in]
 
-[in]
+
 Pointer to the HID source driver-defined context structure that the driver passed in the previous call to <a href="/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfcreate">VhfCreate</a> to create the virtual HID device.
 
 ## -remarks
@@ -64,3 +63,4 @@ If the HID source driver does not implement this callback function, VHF uses a d
 ## -see-also
 
 <a href="/windows-hardware/drivers/hid/virtual-hid-framework--vhf-">Write a HID source driver by using Virtual HID Framework (VHF)</a>
+

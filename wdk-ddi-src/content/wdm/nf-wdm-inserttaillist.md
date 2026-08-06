@@ -4,7 +4,6 @@ title: InsertTailList function (wdm.h)
 description: The InsertTailList routine inserts an entry at the tail of a doubly linked list of LIST_ENTRY structures.
 old-location: kernel\inserttaillist.htm
 tech.root: kernel
-ms.assetid: 9eb470c8-ee37-497e-982e-d32b4b9b7348
 ms.date: 04/30/2018
 keywords: ["InsertTailList function"]
 ms.keywords: InsertTailList, InsertTailList routine [Kernel-Mode Driver Architecture], k109_8f31d6a6-89a0-440c-9397-2bef61a5878f.xml, kernel.inserttaillist, wdm/InsertTailList
@@ -50,14 +49,14 @@ The <b>InsertTailList</b> routine inserts an entry at the tail of a doubly linke
 
 ## -parameters
 
-### -param ListHead 
+### -param ListHead [in, out]
 
-[in, out]
+
 Pointer to the <a href="/windows/win32/api/ntdef/ns-ntdef-list_entry">LIST_ENTRY</a> structure that represents the head of the list.
 
-### -param Entry 
+### -param Entry [in, out]
 
-[in, out]
+
 Pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-list_entry">LIST_ENTRY</a> structure that represents the entry to be inserted in the list.
 
 ## -remarks

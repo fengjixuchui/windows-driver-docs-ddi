@@ -2,11 +2,11 @@
 UID: NC:wdm.IOMMU_UNMAP_LOGICAL_RANGE
 title: IOMMU_UNMAP_LOGICAL_RANGE (wdm.h)
 description: Unmaps a linear range from a domain.
-ms.assetid: 48b802b6-980c-407b-91cc-02b67c80fdc5
-ms.date: 10/19/2018
+tech.root: kernel
+ms.date: 01/19/2023
 keywords: ["IOMMU_UNMAP_LOGICAL_RANGE callback function"]
 req.header: wdm.h
-req.include-header: 
+req.include-header: Wdm.h
 req.target-type: 
 req.target-min-winverclnt: Windows 10, version 1803
 req.target-min-winversvr: 
@@ -36,52 +36,27 @@ api_name:
  - IOMMU_UNMAP_LOGICAL_RANGE
 ---
 
-# IOMMU_UNMAP_LOGICAL_RANGE callback function
-
-
 ## -description
 
 Unmaps a linear range from a domain.
 
 ## -parameters
 
-### -param Domain
+### -param Domain [_In_]
 
-[_In_] A pointer to the handle to the domain.
+A pointer to the handle to the domain.
 
-### -param LogicalAddress
+### -param LogicalAddress [_In_]
 
-[_In_] The logical address at which unmapping begins. The address must be page aligned.
+The logical address at which unmapping begins. The address must be page aligned.
 
-### -param NumberOfPages
+### -param NumberOfPages [_In_]
 
-[_In_] The number of pages to unmap.
+The number of pages to unmap.
 
 ## -returns
 
 Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate NTSTATUS Values error code. For more information, see [NTSTATUS Values](/windows-hardware/drivers/kernel/ntstatus-values).
-
-## -prototype
-
-```cpp
-//Declaration
-
-IOMMU_UNMAP_LOGICAL_RANGE IommuUnmapLogicalRange; 
-
-// Definition
-
-NTSTATUS IommuUnmapLogicalRange 
-(
-	PIOMMU_DMA_DOMAIN Domain
-	ULONGLONG LogicalAddress
-	ULONGLONG NumberOfPages
-)
-{...}
-
-IOMMU_UNMAP_LOGICAL_RANGE *PIOMMU_UNMAP_LOGICAL_RANGE
-
-
-```
 
 ## -remarks
 

@@ -4,7 +4,6 @@ title: EVT_WDF_WMI_INSTANCE_SET_ITEM (wdfwmi.h)
 description: A driver's EvtWmiInstanceSetItem callback function sets a single item of a WMI data provider's instance data to a value that a WMI client supplies.
 old-location: wdf\evtwmiinstancesetitem.htm
 tech.root: wdf
-ms.assetid: 3011d92c-b12b-4240-8a4e-aa039ab8e053
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_WMI_INSTANCE_SET_ITEM callback function"]
 ms.keywords: DFWMIRef_edfeada6-2e85-42a5-9a28-6a6fb99a1c46.xml, EVT_WDF_WMI_INSTANCE_SET_ITEM, EVT_WDF_WMI_INSTANCE_SET_ITEM callback, EvtWmiInstanceSetItem, EvtWmiInstanceSetItem callback function, kmdf.evtwmiinstancesetitem, wdf.evtwmiinstancesetitem, wdfwmi/EvtWmiInstanceSetItem
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfWMI.h
 api_name:
- - EvtWmiInstanceSetItem
+ - EVT_WDF_WMI_INSTANCE_SET_ITEM
 ---
 
 # EVT_WDF_WMI_INSTANCE_SET_ITEM callback function
@@ -52,24 +51,24 @@ A driver's <i>EvtWmiInstanceSetItem</i> callback function sets a single item of 
 
 ## -parameters
 
-### -param WmiInstance 
+### -param WmiInstance [in]
 
-[in]
+
 A handle to a WMI instance object.
 
-### -param DataItemId 
+### -param DataItemId [in]
 
-[in]
+
 A value that identifies an item of data for a provider instance. This value corresponds to the <a href="/windows-hardware/drivers/kernel/wmi-property-qualifiers">WmiDataId</a> value that is specified in the provider's MOF file.
 
-### -param InBufferSize 
+### -param InBufferSize [in]
 
-[in]
+
 The size, in bytes, of the input buffer that <i>InBuffer</i> points to.
 
-### -param InBuffer 
+### -param InBuffer [in]
 
-[in]
+
 A pointer to the input buffer.
 
 ## -returns
@@ -107,3 +106,4 @@ For more information about the <i>EvtWmiInstanceSetItem</i> callback function, s
 
 
 <a href="/windows-hardware/drivers/ddi/wdfwmi/nf-wdfwmi-wdfwmiinstancecreate">WdfWmiInstanceCreate</a>
+

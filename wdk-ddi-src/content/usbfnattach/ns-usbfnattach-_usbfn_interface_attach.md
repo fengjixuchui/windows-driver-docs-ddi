@@ -4,7 +4,6 @@ title: _USBFN_INTERFACE_ATTACH (usbfnattach.h)
 description: Stores pointers to driver-implemented callback functions for handling attach and detach operations.
 old-location: buses\usbfn_interface_attach.htm
 tech.root: usbref
-ms.assetid: C7D7935C-0536-43E6-8924-1DC13B258007
 ms.date: 05/07/2018
 keywords: ["USBFN_INTERFACE_ATTACH structure"]
 ms.keywords: "*PUSBFN_INTERFACE_ATTACH, PUSBFN_INTERFACE_ATTACH, PUSBFN_INTERFACE_ATTACH structure pointer [Buses], USBFN_INTERFACE_ATTACH, USBFN_INTERFACE_ATTACH structure [Buses], _USBFN_INTERFACE_ATTACH, buses.usbfn_interface_attach, usbfnattach/PUSBFN_INTERFACE_ATTACH, usbfnattach/USBFN_INTERFACE_ATTACH"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - usbfnattach.h
 api_name:
+ - _USBFN_INTERFACE_ATTACH
+ - PUSBFN_INTERFACE_ATTACH
  - USBFN_INTERFACE_ATTACH
 ---
 
@@ -73,3 +74,4 @@ A pointer to the driver's implementation of the <a href="/windows-hardware/drive
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/drivers/mt188012(v=vs.85)">USB filter driver for supporting proprietary chargers</a>
+

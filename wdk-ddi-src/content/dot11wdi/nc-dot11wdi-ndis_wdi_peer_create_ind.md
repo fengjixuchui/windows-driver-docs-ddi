@@ -4,7 +4,6 @@ title: NDIS_WDI_PEER_CREATE_IND (dot11wdi.h)
 description: The NdisWdiPeerCreateIndication callback function specifies a peer ID to associate with a peer MAC address.
 old-location: netvista\ndiswdipeercreateindication.htm
 tech.root: netvista
-ms.assetid: 58B60160-FE04-4EDE-900F-244D0F76E50D
 ms.date: 05/02/2018
 keywords: ["NDIS_WDI_PEER_CREATE_IND callback function"]
 ms.keywords: NDIS_WDI_PEER_CREATE_IND, NDIS_WDI_PEER_CREATE_IND callback, NdisWdiPeerCreateIndication, NdisWdiPeerCreateIndication callback function [Network Drivers Starting with Windows Vista], dot11wdi/NdisWdiPeerCreateIndication, netvista.ndiswdipeercreateindication
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
- - NdisWdiPeerCreateIndication
+ - NDIS_WDI_PEER_CREATE_IND
 ---
 
 # NDIS_WDI_PEER_CREATE_IND callback function
@@ -46,30 +45,33 @@ api_name:
 
 ## -description
 
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
+
 The NdisWdiPeerCreateIndication callback function specifies a peer ID to associate with a peer MAC address.
 
 This is a callback inside <a href="/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_ndis_wdi_data_api">NDIS_WDI_DATA_API</a>.
 
 ## -parameters
 
-### -param NdisMiniportDataPathHandle 
+### -param NdisMiniportDataPathHandle [in]
 
-[in]
+
 The NdisMiniportDataPathHandle passed to IHV miniport in <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tal_txrx_initialize">MiniportWdiTalTxRxInitialize</a>.
 
-### -param PortId 
+### -param PortId [in]
 
-[in]
+
 The port ID.
 
-### -param PeerId 
+### -param PeerId [in]
 
-[in]
+
 The peer ID. This is used to identify the  peer in subsequent commands and indications.
 
-### -param PeerAddr 
+### -param PeerAddr [in]
 
-[in]
+
 The peer MAC address.
 
 ## -remarks
@@ -103,3 +105,4 @@ In peer queuing mode, a peer is created with all TIDs paused with <b>WDI_TX_PAUS
 
 
 <a href="/windows-hardware/drivers/network/wdi-port-id">WDI_PORT_ID</a>
+

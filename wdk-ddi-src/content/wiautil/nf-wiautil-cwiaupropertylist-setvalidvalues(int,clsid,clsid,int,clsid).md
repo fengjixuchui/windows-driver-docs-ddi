@@ -4,7 +4,6 @@ title: CWiauPropertyList::SetValidValues(INT,CLSID,CLSID,INT,CLSID) (wiautil.h)
 description: The CWiauPropertyList::SetValidValues(INT,CLSID,CLSID,INT,CLSID) method sets the type, as well as default, current, and valid values for a CLSID property associated with a list of values.
 old-location: image\cwiaupropertylist_setvalidvalues_clsid__list_.htm
 tech.root: image
-ms.assetid: d401ed85-de6b-4758-b7c4-d6fcd59c157e
 ms.date: 09/21/2020
 keywords: ["CWiauPropertyList::SetValidValues(INT,CLSID,CLSID,INT,CLSID)"]
 ms.keywords: CWiauPropertyList interface [Imaging Devices],SetValidValues method, CWiauPropertyList.SetValidValues, CWiauPropertyList.SetValidValues(INT,CLSID,CLSID,INT,CLSID), CWiauPropertyList::SetValidValues, CWiauPropertyList::SetValidValues(INT,CLSID*,CLSID*,INT,CLSID**), CWiauPropertyList::SetValidValues(INT,CLSID,CLSID,INT,CLSID), SetValidValues, SetValidValues method [Imaging Devices], SetValidValues method [Imaging Devices],CWiauPropertyList interface, SetValidValues(CLSID,(CWiauPropertyList), image.cwiaupropertylist_setvalidvalues_clsid__list_, wiauFncs_fb681759-0ab5-47ba-8e35-4a0a8d28e52f.xml, wiautil/CWiauPropertyList::SetValidValues
@@ -39,10 +38,11 @@ api_type:
 api_location:
  - Wiautil.h
 api_name:
- - CWiauPropertyList.SetValidValues
+ - CWiauPropertyList::SetValidValues
 ---
 
 # CWiauPropertyList::SetValidValues(INT,CLSID,CLSID,INT,CLSID) (wiautil.h)
+
 
 ## -description
 
@@ -77,3 +77,4 @@ Pointer to a memory location that contains the address of the first property in 
 [CWiauPropertyList::DefineProperty](nf-wiautil-cwiaupropertylist-defineproperty.md)
 
 [CWiauPropertyList::SendToWia](nf-wiautil-cwiaupropertylist-sendtowia.md)
+

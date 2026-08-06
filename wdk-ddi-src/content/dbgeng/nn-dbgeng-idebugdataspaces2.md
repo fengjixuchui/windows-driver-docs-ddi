@@ -4,7 +4,6 @@ title: IDebugDataSpaces2 (dbgeng.h)
 description: IDebugDataSpaces2 interface
 old-location: debugger\idebugdataspaces2.htm
 tech.root: debugger
-ms.assetid: a8548f9c-5cb6-4a13-b37c-da28d316b8e1
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces2 interface"]
 ms.keywords: IDebugDataSpaces2, IDebugDataSpaces2 interface [Windows Debugging], IDebugDataSpaces2 interface [Windows Debugging],described, dbgeng/IDebugDataSpaces2, debugger.idebugdataspaces2
@@ -48,10 +47,8 @@ api_name:
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugDataSpaces2</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugdataspaces">IDebugDataSpaces</a>. <b>IDebugDataSpaces2</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IDebugDataSpaces2</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugdataspaces">IDebugDataSpaces</a>. <b>IDebugDataSpaces2</b> also has these types of members:
+
 
 ## -see-also
 

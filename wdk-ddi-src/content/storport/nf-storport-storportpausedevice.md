@@ -4,7 +4,6 @@ title: StorPortPauseDevice function (storport.h)
 description: The StorPortPauseDevice routine pauses a specific logical unit device for the specified period of time.
 old-location: storage\storportpausedevice.htm
 tech.root: storage
-ms.assetid: b656882a-1cc7-45e8-bda4-c1450b599b4b
 ms.date: 03/29/2018
 keywords: ["StorPortPauseDevice function"]
 ms.keywords: StorPortPauseDevice, StorPortPauseDevice routine [Storage Devices], storage.storportpausedevice, storport/StorPortPauseDevice, storprt_5506e943-789f-49d7-a9bc-c837fcd1bba2.xml
@@ -51,24 +50,24 @@ The <b>StorPortPauseDevice</b> routine pauses a specific logical unit device for
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
 
-### -param PathId 
+### -param PathId [in]
 
-[in]
+
 Identifies the SCSI bus.
 
-### -param TargetId 
+### -param TargetId [in]
 
-[in]
+
 Identifies the target controller or device on the bus.
 
-### -param Lun 
+### -param Lun [in]
 
-[in]
+
 Identifies the logical unit number of the target device.
 
 ### -param Timeout

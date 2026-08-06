@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_DESCRIBEALLOCATION
 title: DXGKDDI_DESCRIBEALLOCATION (d3dkmddi.h)
 description: The DxgkDdiDescribeAllocation function retrieves information about an existing allocation that is not otherwise available to the Microsoft DirectX graphics kernel subsystem.
 old-location: display\dxgkddidescribeallocation.htm
-ms.assetid: 8ee65716-496c-4b0f-baa7-34a625847d5f
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_DESCRIBEALLOCATION callback function"]
 ms.keywords: DXGKDDI_DESCRIBEALLOCATION, DXGKDDI_DESCRIBEALLOCATION callback, DmFunctions_ba74cf3f-f0be-401c-8232-0672d490221a.xml, DxgkDdiDescribeAllocation, DxgkDdiDescribeAllocation callback function [Display Devices], d3dkmddi/DxgkDdiDescribeAllocation, display.dxgkddidescribeallocation
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiDescribeAllocation
-product:
- - Windows
+ - DXGKDDI_DESCRIBEALLOCATION
 ---
 
 # DXGKDDI_DESCRIBEALLOCATION callback function
@@ -52,13 +49,13 @@ The <i>DxgkDdiDescribeAllocation</i> function retrieves information about an exi
 
 ## -parameters
 
-### -param hAdapter
+### -param hAdapter [in]
 
-[in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
+A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
 
-### -param pDescribeAllocation
+### -param pDescribeAllocation [in/out]
 
-[in/out] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_describeallocation">DXGKARG_DESCRIBEALLOCATION</a> structure that describes an existing allocation.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_describeallocation">DXGKARG_DESCRIBEALLOCATION</a> structure that describes an existing allocation.
 
 ## -returns
 
@@ -99,3 +96,4 @@ Allocations that might be the source of a presentation (that is, allocations tha
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_allocatecb">pfnAllocateCb</a>
+

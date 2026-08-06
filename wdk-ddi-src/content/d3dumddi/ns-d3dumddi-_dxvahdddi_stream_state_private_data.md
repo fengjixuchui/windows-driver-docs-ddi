@@ -4,7 +4,6 @@ title: _DXVAHDDDI_STREAM_STATE_PRIVATE_DATA (d3dumddi.h)
 description: The DXVAHDDDI_STREAM_STATE_PRIVATE_DATA structure describes stream-state data that specifies a private stream state.
 old-location: display\dxvahdddi_stream_state_private_data.htm
 tech.root: display
-ms.assetid: 1352392f-62d4-46aa-aa59-651309c36e6f
 ms.date: 05/10/2018
 keywords: ["DXVAHDDDI_STREAM_STATE_PRIVATE_DATA structure"]
 ms.keywords: DXVA2_Structs_4c06fc77-dcae-41fa-b831-c3918ddbf467.xml, DXVAHDDDI_STREAM_STATE_PRIVATE_DATA, DXVAHDDDI_STREAM_STATE_PRIVATE_DATA structure [Display Devices], _DXVAHDDDI_STREAM_STATE_PRIVATE_DATA, d3dumddi/DXVAHDDDI_STREAM_STATE_PRIVATE_DATA, display.dxvahdddi_stream_state_private_data
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVAHDDDI_STREAM_STATE_PRIVATE_DATA
  - DXVAHDDDI_STREAM_STATE_PRIVATE_DATA
 ---
 
@@ -52,17 +52,17 @@ The DXVAHDDDI_STREAM_STATE_PRIVATE_DATA structure describes stream-state data th
 
 ## -struct-fields
 
-### -field Guid
+### -field Guid [in]
 
-[in] A GUID that identifies the private stream state.
+A GUID that identifies the private stream state.
 
-### -field DataSize
+### -field DataSize [in]
 
-[in] The size, in bytes, of the private stream-state data.
+The size, in bytes, of the private stream-state data.
 
-### -field pData
+### -field pData [in/out]
 
-[in/out] A pointer to the private stream-state data. The caller sets <b>pData</b> to <b>NULL</b> to retrieve the size of the private stream-state data.
+A pointer to the private stream-state data. The caller sets <b>pData</b> to <b>NULL</b> to retrieve the size of the private stream-state data.
 
 ## -remarks
 
@@ -85,3 +85,4 @@ To set private stream state, the application causes the Direct3D runtime to spec
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_dxvahd_setvideoprocessstreamstate">SetVideoProcessStreamState</a>
+

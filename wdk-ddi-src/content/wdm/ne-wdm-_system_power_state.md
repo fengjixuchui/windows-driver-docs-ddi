@@ -1,10 +1,9 @@
 ---
 UID: NE:wdm._SYSTEM_POWER_STATE
 title: _SYSTEM_POWER_STATE (wdm.h)
-description: The SYSTEM_POWER_STATE enumeration type is used to indicate a system power state.
+description: Learn how the SYSTEM_POWER_STATE enumeration type is used to indicate a system power state.
 old-location: kernel\system_power_state.htm
 tech.root: kernel
-ms.assetid: aa027f03-7d74-4c0e-8f62-d53f41ae86ae
 ms.date: 04/30/2018
 keywords: ["SYSTEM_POWER_STATE enumeration"]
 ms.keywords: "*PSYSTEM_POWER_STATE, PSYSTEM_POWER_STATE, PSYSTEM_POWER_STATE enumeration pointer [Kernel-Mode Driver Architecture], PowerSystemHibernate, PowerSystemMaximum, PowerSystemShutdown, PowerSystemSleeping1, PowerSystemSleeping2, PowerSystemSleeping3, PowerSystemUnspecified, PowerSystemWorking, SYSTEM_POWER_STATE, SYSTEM_POWER_STATE enumeration [Kernel-Mode Driver Architecture], _SYSTEM_POWER_STATE, kernel.system_power_state, sysenum_32377b1c-a5d3-491b-aebd-ee3d40798f73.xml, wdm/PSYSTEM_POWER_STATE, wdm/PowerSystemHibernate, wdm/PowerSystemMaximum, wdm/PowerSystemShutdown, wdm/PowerSystemSleeping1, wdm/PowerSystemSleeping2, wdm/PowerSystemSleeping3, wdm/PowerSystemUnspecified, wdm/PowerSystemWorking, wdm/SYSTEM_POWER_STATE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _SYSTEM_POWER_STATE
+ - PSYSTEM_POWER_STATE
  - SYSTEM_POWER_STATE
 ---
 
@@ -97,3 +98,4 @@ For more information about power management in general, see <a href="/windows-ha
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/ne-wudfddi-_device_power_state">DEVICE_POWER_STATE</a>
+

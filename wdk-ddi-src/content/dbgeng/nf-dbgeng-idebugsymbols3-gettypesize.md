@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols3.GetTypeSize
 title: IDebugSymbols3::GetTypeSize (dbgeng.h)
-description: The GetTypeSize method returns the number of bytes of memory an instance of the specified type requires.
+description: The GetTypeSize method returns the number of bytes of memory an instance of the specified type requires. This method belongs to the IDebugSymbols3 interface.
 old-location: debugger\gettypesize2.htm
 tech.root: debugger
-ms.assetid: b6f03eb5-e386-4e88-a729-db08f1fa460c
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::GetTypeSize"]
 ms.keywords: GetTypeSize, GetTypeSize method [Windows Debugging], GetTypeSize method [Windows Debugging],IDebugSymbols interface, GetTypeSize method [Windows Debugging],IDebugSymbols2 interface, GetTypeSize method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],GetTypeSize method, IDebugSymbols2 interface [Windows Debugging],GetTypeSize method, IDebugSymbols2::GetTypeSize, IDebugSymbols3 interface [Windows Debugging],GetTypeSize method, IDebugSymbols3.GetTypeSize, IDebugSymbols3::GetTypeSize, IDebugSymbols::GetTypeSize, IDebugSymbols_d1c65bea-0479-4ca8-bdfa-6c7a7376792a.xml, dbgeng/IDebugSymbols2::GetTypeSize, dbgeng/IDebugSymbols3::GetTypeSize, dbgeng/IDebugSymbols::GetTypeSize, debugger.gettypesize2
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.GetTypeSize
- - IDebugSymbols2.GetTypeSize
- - IDebugSymbols3.GetTypeSize
+ - IDebugSymbols3::GetTypeSize
 ---
 
 # IDebugSymbols3::GetTypeSize
@@ -52,19 +49,19 @@ The <b>GetTypeSize</b> method returns the number of bytes of memory an instance 
 
 ## -parameters
 
-### -param Module 
+### -param Module [in]
 
-[in]
+
 Specifies the base address of the module containing the type.  For more information, see <a href="/windows-hardware/drivers/debugger/modules">Modules</a>.
 
-### -param TypeId 
+### -param TypeId [in]
 
-[in]
+
 Specifies the type ID of the type.
 
-### -param Size 
+### -param Size [out]
 
-[out]
+
 Receives the number of bytes of memory an instance of the specified type requires.
 
 ## -returns
@@ -108,3 +105,4 @@ For more information about symbols, see <a href="/windows-hardware/drivers/debug
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

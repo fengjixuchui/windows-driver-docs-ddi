@@ -3,7 +3,6 @@ UID: NS:d3d10umddi.D3D10DDIARG_CREATEELEMENTLAYOUT
 title: D3D10DDIARG_CREATEELEMENTLAYOUT (d3d10umddi.h)
 description: The D3D10DDIARG_CREATEELEMENTLAYOUT structure describes the element layout to create.
 old-location: display\d3d10ddiarg_createelementlayout.htm
-ms.assetid: 3eb1555b-3274-496d-b6af-9cb0a6083ee4
 ms.date: 05/10/2018
 keywords: ["D3D10DDIARG_CREATEELEMENTLAYOUT structure"]
 ms.keywords: D3D10DDIARG_CREATEELEMENTLAYOUT, D3D10DDIARG_CREATEELEMENTLAYOUT structure [Display Devices], UMDisplayDriver_Dx10param_Structs_8c912e61-9cff-46ad-963f-16d3b9a13b10.xml, d3d10umddi/D3D10DDIARG_CREATEELEMENTLAYOUT, display.d3d10ddiarg_createelementlayout
@@ -50,13 +49,13 @@ The D3D10DDIARG_CREATEELEMENTLAYOUT structure describes the element layout to cr
 
 ## -struct-fields
 
-### -field pVertexElements
+### -field pVertexElements [in]
 
-[in] An array of <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddiarg_input_element_desc">D3D10DDIARG_INPUT_ELEMENT_DESC</a> structures that describes each element in the element layout.
+An array of <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddiarg_input_element_desc">D3D10DDIARG_INPUT_ELEMENT_DESC</a> structures that describes each element in the element layout.
 
-### -field NumElements
+### -field NumElements [in]
 
-[in] The number of elements in that array that the <b>pVertexElements</b> member specifies.
+The number of elements in that array that the <b>pVertexElements</b> member specifies.
 
 ## -see-also
 

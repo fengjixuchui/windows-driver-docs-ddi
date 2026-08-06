@@ -4,7 +4,6 @@ title: KsPinGetCopyRelationships function (ks.h)
 description: The KsPinGetCopyRelationships function returns copy relationship information for a pin that is contained within a pin-centric filter.
 old-location: stream\kspingetcopyrelationships.htm
 tech.root: stream
-ms.assetid: 7f74cbf1-2382-471c-ab07-fdb7e615cb0b
 ms.date: 04/23/2018
 keywords: ["KsPinGetCopyRelationships function"]
 ms.keywords: KsPinGetCopyRelationships, KsPinGetCopyRelationships function [Streaming Media Devices], avfunc_d44ce272-9171-4a32-89c6-023d9688fdfd.xml, ks/KsPinGetCopyRelationships, stream.kspingetcopyrelationships
@@ -51,19 +50,19 @@ The <b>KsPinGetCopyRelationships</b> function returns copy relationship informat
 
 ## -parameters
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a> structure from which you want to acquire copy information.
 
-### -param CopySource 
+### -param CopySource [out]
 
-[out]
+
 A pointer to a pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a> structure that is the copy source for <i>Pin</i>. If <i>Pin</i> is the copy source, AVStream sets this parameter to <b>NULL</b>.
 
-### -param DelegateBranch 
+### -param DelegateBranch [out]
 
-[out]
+
 A pointer to a pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a> structure that is the pin from which <i>Pin</i> receives delegated frames. If <i>Pin</i> is the delegator, AVStream sets this parameter to <b>NULL</b>.
 
 ## -remarks

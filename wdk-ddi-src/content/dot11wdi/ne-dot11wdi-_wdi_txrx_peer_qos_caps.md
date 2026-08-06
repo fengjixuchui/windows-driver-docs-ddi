@@ -4,7 +4,6 @@ title: _WDI_TXRX_PEER_QOS_CAPS (dot11wdi.h)
 description: The WDI_TXRX_PEER_QOS_CAPS enumeration defines the Quality of Service (QoS) capabilities.
 old-location: netvista\wdi_txrx_peer_qos_caps.htm
 tech.root: netvista
-ms.assetid: 34d53daa-3501-4532-82e3-e5b0ed452b66
 ms.date: 05/02/2018
 keywords: ["WDI_TXRX_PEER_QOS_CAPS enumeration"]
 ms.keywords: WDI_TXRX_PEER_QOS_CAPS, WDI_TXRX_PEER_QOS_CAPS enumeration [Network Drivers Starting with Windows Vista], WDI_TXRX_PeerCfgQosCapable, WDI_TXRX_PeerCfgQosNone, WDI_TXRX_PeerCfgQosUapsdTids, _WDI_TXRX_PEER_QOS_CAPS, dot11wdi/WDI_TXRX_PEER_QOS_CAPS, dot11wdi/WDI_TXRX_PeerCfgQosCapable, dot11wdi/WDI_TXRX_PeerCfgQosNone, dot11wdi/WDI_TXRX_PeerCfgQosUapsdTids, netvista.wdi_txrx_peer_qos_caps, netvista.wifi_txrx_peer_qos_caps
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
+ - _WDI_TXRX_PEER_QOS_CAPS
  - WDI_TXRX_PEER_QOS_CAPS
 ---
 
@@ -47,6 +47,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_TXRX_PEER_QOS_CAPS enumeration defines the Quality of Service (QoS) capabilities.
 
@@ -61,8 +64,6 @@ Specifies that QoS was not negotiated for this peer during association.
 Specifies that QoS was negotiated for this peer during association.
 
 ### -field WDI_TXRX_PeerCfgUapsdTids
-
-#### - WDI_TXRX_PeerCfgQosUapsdTids
 
 Reserved.
 

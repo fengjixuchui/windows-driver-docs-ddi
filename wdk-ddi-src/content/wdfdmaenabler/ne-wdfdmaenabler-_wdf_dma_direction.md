@@ -4,7 +4,6 @@ title: _WDF_DMA_DIRECTION (wdfdmaenabler.h)
 description: The WDF_DMA_DIRECTION enumeration defines the direction of a DMA transfer.
 old-location: wdf\wdf_dma_direction.htm
 tech.root: wdf
-ms.assetid: 813414fa-17b6-4b69-a3dd-f3a2e5190305
 ms.date: 02/26/2018
 keywords: ["WDF_DMA_DIRECTION enumeration"]
 ms.keywords: DFDmaObjectRef_e790f51f-b8cb-4e04-a5f3-49f24fabf5b8.xml, WDF_DMA_DIRECTION, WDF_DMA_DIRECTION enumeration, WdfDmaDirectionReadFromDevice, WdfDmaDirectionWriteToDevice, _WDF_DMA_DIRECTION, kmdf.wdf_dma_direction, wdf.wdf_dma_direction, wdfdmaenabler/WDF_DMA_DIRECTION, wdfdmaenabler/WdfDmaDirectionReadFromDevice, wdfdmaenabler/WdfDmaDirectionWriteToDevice
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfdmaenabler.h
 api_name:
+ - _WDF_DMA_DIRECTION
  - WDF_DMA_DIRECTION
 ---
 
@@ -54,11 +54,11 @@ The <b>WDF_DMA_DIRECTION</b> enumeration defines the direction of a DMA transfer
 
 ## -enum-fields
 
-### -field WdfDmaDirectionReadFromDevice
+### -field WdfDmaDirectionReadFromDevice:FALSE
 
 The DMA transfer direction is from the device (read).
 
-### -field WdfDmaDirectionWriteToDevice
+### -field WdfDmaDirectionWriteToDevice:TRUE
 
 The DMA transfer direction is to the device (write).
 
@@ -77,3 +77,4 @@ The <b>WDF_DMA_DIRECTION</b> enumeration is used as input to the <a href="/windo
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioninitializeusingrequest">WdfDmaTransactionInitializeUsingRequest</a>
+

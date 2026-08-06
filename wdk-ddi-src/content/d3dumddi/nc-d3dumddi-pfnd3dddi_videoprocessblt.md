@@ -4,7 +4,6 @@ title: PFND3DDDI_VIDEOPROCESSBLT (d3dumddi.h)
 description: The VideoProcessBlt function processes a video frame by using the specified Microsoft DirectX Video Accelerator (VA) video processing device.
 old-location: display\videoprocessblt.htm
 tech.root: display
-ms.assetid: 719465dd-4547-491c-ab30-ae63bba1b72c
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_VIDEOPROCESSBLT callback function"]
 ms.keywords: PFND3DDDI_VIDEOPROCESSBLT, PFND3DDDI_VIDEOPROCESSBLT callback, UserModeDisplayDriver_Functions_23e47fd3-a838-4b56-82c3-7894d2b173a1.xml, VideoProcessBlt, VideoProcessBlt callback function [Display Devices], d3dumddi/VideoProcessBlt, display.videoprocessblt
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - VideoProcessBlt
-product:
- - Windows
+ - PFND3DDDI_VIDEOPROCESSBLT
 ---
 
 # PFND3DDDI_VIDEOPROCESSBLT callback function
@@ -56,7 +53,7 @@ The <i>VideoProcessBlt</i> function processes a video frame by using the specifi
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -78,3 +75,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dd
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

@@ -4,7 +4,6 @@ title: IPortableDeviceValues::GetIPortableDeviceKeyCollectionValue (portabledevi
 description: Retrieves an IPortableDeviceKeyCollection value (type VT_UNKNOWN) that is specified by a key.
 old-location: wpddk\iportabledevicevalues_getiportabledevicekeycollectionvalue.htm
 tech.root: wpd_dk
-ms.assetid: 059e46f3-39d9-4d5e-9841-0ccb35ccb851
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::GetIPortableDeviceKeyCollectionValue"]
 ms.keywords: GetIPortableDeviceKeyCollectionValue, GetIPortableDeviceKeyCollectionValue method, GetIPortableDeviceKeyCollectionValue method,IPortableDeviceValues interface, IPortableDeviceValues interface,GetIPortableDeviceKeyCollectionValue method, IPortableDeviceValues.GetIPortableDeviceKeyCollectionValue, IPortableDeviceValues::GetIPortableDeviceKeyCollectionValue, IPortableDeviceValuesGetIPortableDeviceKeyCollectionValue, portabledevicetypes/IPortableDeviceValues::GetIPortableDeviceKeyCollectionValue, wpddk.iportabledevicevalues_getiportabledevicekeycollectionvalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.GetIPortableDeviceKeyCollectionValue
+ - IPortableDeviceValues::GetIPortableDeviceKeyCollectionValue
 ---
 
 # IPortableDeviceValues::GetIPortableDeviceKeyCollectionValue
@@ -51,14 +50,14 @@ Retrieves an <b>IPortableDeviceKeyCollection</b> value (type VT_UNKNOWN) that is
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> key that specifies the item to retrieve.
 
-### -param ppValue 
+### -param ppValue [out]
 
-[out]
+
 Pointer to the retrieved <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicekeycollection">IPortableDeviceKeyCollection</a> interface pointer. The caller is responsible for calling <b>Release</b> on the retrieved interface.
 
 ## -returns
@@ -116,3 +115,4 @@ None.
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-setiportabledevicekeycollectionvalue">IPortableDeviceValues::SetIPortableDeviceKeyCollectionValue</a>
+

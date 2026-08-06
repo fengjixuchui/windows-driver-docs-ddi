@@ -4,7 +4,6 @@ title: NdisCmDispatchIncomingCloseCall function (ndis.h)
 description: NdisCmDispatchIncomingCloseCall tells a client to tear down an active or offered call, usually because the call manager has received a request from the network to close the connection.
 old-location: netvista\ndiscmdispatchincomingclosecall.htm
 tech.root: netvista
-ms.assetid: f0f1221d-3d95-4d4c-acd0-6bcd653241c4
 ms.date: 05/02/2018
 keywords: ["NdisCmDispatchIncomingCloseCall function"]
 ms.keywords: NdisCmDispatchIncomingCloseCall, NdisCmDispatchIncomingCloseCall function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_877248ee-cc60-430c-836c-d2580627363f.xml, ndis/NdisCmDispatchIncomingCloseCall, netvista.ndiscmdispatchincomingclosecall
@@ -52,29 +51,29 @@ api_name:
 
 ## -parameters
 
-### -param CloseStatus 
+### -param CloseStatus [in]
 
-[in]
+
 Specifies a CM-determined NDIS_STATUS_<i>XXX</i>, indicating the reason for the disconnect request. During normal network operations, a call
      manager passes NDIS_STATUS_SUCCESS to indicate that it has received a request, initiated by the remote
      party, to close an active call.
 
-### -param NdisVcHandle 
+### -param NdisVcHandle [in]
 
-[in]
+
 Specifies the handle to the VC of the call being disconnected. This handle was supplied by NDIS
      when the VC was originally created, whether by the call manager or client, with 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscocreatevc">NdisCoCreateVc</a>.
 
-### -param Buffer 
+### -param Buffer [in, optional]
 
-[in, optional]
+
 Pointer to a caller-allocated resident buffer containing additional protocol-specific disconnect
      data, if any. Depending on the underlying medium, this pointer can be <b>NULL</b>
 
-### -param Size 
+### -param Size [in]
 
-[in]
+
 Specifies the size in bytes of the buffer, zero if 
      <i>Buffer</i> is <b>NULL</b>.
 
@@ -101,7 +100,7 @@ The call manager has notified a client of an incoming call offer. When the CM's
 
 </li>
 <li>
-Abormal network conditions force the call manager to tear down active calls. For example, if the
+Abnormal network conditions force the call manager to tear down active calls. For example, if the
       call manager is notified when any link on the connection between this client and the remote party to
       the connection goes down, the CM would call 
       <b>NdisCmDispatchIncomingCloseCall</b> to prevent the client from attempting (or expecting) further data

@@ -4,7 +4,6 @@ title: NdisInterlockedInsertTailList macro (ndis.h)
 description: The NdisInterlockedInsertTailList function inserts an entry, usually a packet, at the tail of a doubly linked list so that access to the list is synchronized in a multiprocessor-safe way.
 old-location: netvista\ndisinterlockedinserttaillist.htm
 tech.root: netvista
-ms.assetid: cc455bb1-3574-4dfb-9462-f2c67632132b
 ms.date: 05/02/2018
 keywords: ["NdisInterlockedInsertTailList macro"]
 ms.keywords: NdisInterlockedInsertTailList, NdisInterlockedInsertTailList macro [Network Drivers Starting with Windows Vista], ndis/NdisInterlockedInsertTailList, ndis_interlocked_ref_1fd860e3-2f63-41a0-9231-7e50a9b87e36.xml, netvista.ndisinterlockedinserttaillist
@@ -53,19 +52,19 @@ The
 
 ## -parameters
 
-### -param _ListHead 
+### -param _ListHead [in]
 
-[in]
+
 A pointer to the head of the doubly linked list into which an entry is to be inserted.
 
-### -param _ListEntry 
+### -param _ListEntry [in]
 
-[in]
+
 A pointer to the entry to be inserted at the end of the list.
 
-### -param _SpinLock 
+### -param _SpinLock [in]
 
-[in]
+
 A pointer to a caller-supplied spin lock, used to synchronize access to the list.
 
 ## -remarks
@@ -90,7 +89,7 @@ The caller-supplied spin lock prevents any other function from accessing the dri
     <b>NdisInterlockedInsertTailList</b> cannot be pageable code.
 
 To convert a returned value back to the address of the inserted entry, a driver can use the 
-    <a href="/windows-hardware/drivers/kernel/mm-bad-pointer">CONTAINING_RECORD</a> macro.
+    [**CONTAINING_RECORD**](/windows/win32/api/ntdef/nf-ntdef-containing_record) macro.
 
 If 
     <b>NdisInterlockedInsertTailList</b> is called at IRQL >= DISPATCH_LEVEL, the storage for the 
@@ -98,7 +97,7 @@ If
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/kernel/mm-bad-pointer">CONTAINING_RECORD</a>
+[**CONTAINING_RECORD**](/windows/win32/api/ntdef/nf-ntdef-containing_record)
 
 
 

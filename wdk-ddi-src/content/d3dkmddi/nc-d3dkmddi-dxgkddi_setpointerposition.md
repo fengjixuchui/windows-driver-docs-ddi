@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_SETPOINTERPOSITION
 title: DXGKDDI_SETPOINTERPOSITION (d3dkmddi.h)
 description: The DxgkDdiSetPointerPosition function sets the location and visibility state of the mouse pointer.
 old-location: display\dxgkddisetpointerposition.htm
-ms.assetid: b30e4f19-068c-4ab0-a2e9-b1f57592be1c
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_SETPOINTERPOSITION callback function"]
 ms.keywords: DXGKDDI_SETPOINTERPOSITION, DXGKDDI_SETPOINTERPOSITION callback, DmFunctions_1067a75d-aece-48c2-93c1-35465c57c07e.xml, DxgkDdiSetPointerPosition, DxgkDdiSetPointerPosition callback function [Display Devices], d3dkmddi/DxgkDdiSetPointerPosition, display.dxgkddisetpointerposition
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiSetPointerPosition
-product:
- - Windows
+ - DXGKDDI_SETPOINTERPOSITION
 ---
 
 # DXGKDDI_SETPOINTERPOSITION callback function
@@ -52,13 +49,13 @@ The <i>DxgkDdiSetPointerPosition</i> function sets the location and visibility s
 
 ## -parameters
 
-### -param hAdapter
+### -param hAdapter [in]
 
-[in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
+A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
 
-### -param pSetPointerPosition
+### -param pSetPointerPosition [in]
 
-[in] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_setpointerposition">DXGKARG_SETPOINTERPOSITION</a> structure that describes where and how to display the mouse pointer.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_setpointerposition">DXGKARG_SETPOINTERPOSITION</a> structure that describes where and how to display the mouse pointer.
 
 ## -returns
 
@@ -85,3 +82,4 @@ If you run a <i>DxgkDdiSetPointerPosition</i> thread simultaneously with another
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_setpointershape">DxgkDdiSetPointerShape</a>
+

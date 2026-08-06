@@ -4,7 +4,6 @@ title: WdfRequestForwardToIoQueue function (wdfrequest.h)
 description: The WdfRequestForwardToIoQueue method requeues an I/O request to one of the calling driver's I/O queues.
 old-location: wdf\wdfrequestforwardtoioqueue.htm
 tech.root: wdf
-ms.assetid: a98d7e74-8311-46bf-a0b9-a160f5675c3d
 ms.date: 02/26/2018
 keywords: ["WdfRequestForwardToIoQueue function"]
 ms.keywords: DFRequestObjectRef_91c731d6-de15-4ae6-a0d0-ae449a5a47b6.xml, WdfRequestForwardToIoQueue, WdfRequestForwardToIoQueue method, kmdf.wdfrequestforwardtoioqueue, wdf.wdfrequestforwardtoioqueue, wdfrequest/WdfRequestForwardToIoQueue
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfRequestForwardToIoQueue</b> method requeues an I/O request to one of t
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
-### -param DestinationQueue 
+### -param DestinationQueue [in]
 
-[in]
+
 A handle to a framework queue object.
 
 ## -returns

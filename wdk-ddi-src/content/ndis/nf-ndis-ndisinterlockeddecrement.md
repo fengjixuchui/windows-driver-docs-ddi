@@ -4,7 +4,6 @@ title: NdisInterlockedDecrement macro (ndis.h)
 description: The NdisInterlockedDecrement function decrements a caller-supplied variable of type LONG as an atomic operation.
 old-location: netvista\ndisinterlockeddecrement.htm
 tech.root: netvista
-ms.assetid: cf425cd6-88e6-479f-a5c7-364ae896145d
 ms.date: 05/02/2018
 keywords: ["NdisInterlockedDecrement macro"]
 ms.keywords: NdisInterlockedDecrement, NdisInterlockedDecrement macro [Network Drivers Starting with Windows Vista], ndis/NdisInterlockedDecrement, ndis_interlocked_ref_bbf1ad9d-0f18-4746-9fa3-b2b2c4101a41.xml, netvista.ndisinterlockeddecrement
@@ -27,6 +26,7 @@ req.dll:
 req.irql: Any level
 targetos: Windows
 req.typenames: 
+returns-override: true
 f1_keywords:
  - NdisInterlockedDecrement
  - ndis/NdisInterlockedDecrement
@@ -53,9 +53,9 @@ The
 
 ## -parameters
 
-### -param Addend 
+### -param Addend [in]
 
-[in]
+
 A pointer to the variable to be decremented.
 
 ## -returns

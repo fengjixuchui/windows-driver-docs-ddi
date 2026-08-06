@@ -4,7 +4,6 @@ title: _WSK_PROVIDER_STREAM_DISPATCH (wsk.h)
 description: The WSK_PROVIDER_STREAM_DISPATCH structure specifies the WSK subsystem's table of functions for a stream socket.
 old-location: netvista\wsk_provider_stream_dispatch.htm
 tech.root: netvista
-ms.assetid: A10B901E-9987-40E9-976B-4CD9455E0AEE
 ms.date: 05/02/2018
 keywords: ["WSK_PROVIDER_STREAM_DISPATCH structure"]
 ms.keywords: "*PWSK_PROVIDER_STREAM_DISPATCH, PWSK_PROVIDER_STREAM_DISPATCH, PWSK_PROVIDER_STREAM_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], WSK_PROVIDER_STREAM_DISPATCH, WSK_PROVIDER_STREAM_DISPATCH structure [Network Drivers Starting with Windows Vista], _WSK_PROVIDER_STREAM_DISPATCH, netvista.wsk_provider_stream_dispatch, wsk/PWSK_PROVIDER_STREAM_DISPATCH, wsk/WSK_PROVIDER_STREAM_DISPATCH"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wsk.h
 api_name:
+ - _WSK_PROVIDER_STREAM_DISPATCH
+ - PWSK_PROVIDER_STREAM_DISPATCH
  - WSK_PROVIDER_STREAM_DISPATCH
 ---
 
@@ -163,3 +164,4 @@ A WSK application receives a pointer to a WSK_PROVIDER_STREAM_DISPATCH structure
 
 
 <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket">WskSocket</a>
+

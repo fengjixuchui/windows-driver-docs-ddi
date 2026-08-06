@@ -4,7 +4,6 @@ title: _RemoveiSNSServer_IN (iscsiop.h)
 description: The RemoveiSNSServer_IN structure holds the input data for the user-mode RemoveISNSServer method, which is used to remove an iSNS server entry.
 old-location: storage\removeisnsserver_in.htm
 tech.root: storage
-ms.assetid: 10e72834-4866-42f2-842e-0a30278acab8
 ms.date: 03/29/2018
 keywords: ["RemoveiSNSServer_IN structure"]
 ms.keywords: "*PRemoveiSNSServer_IN, PRemoveiSNSServer_IN, PRemoveiSNSServer_IN structure pointer [Storage Devices], RemoveiSNSServer_IN, RemoveiSNSServer_IN structure [Storage Devices], _RemoveiSNSServer_IN, iscsiop/PRemoveiSNSServer_IN, iscsiop/RemoveiSNSServer_IN, storage.removeisnsserver_in, structs-iSCSI_b79fe0e4-386c-4b5c-9b43-ef8fdb7f4b6a.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsiop.h
 api_name:
+ - _RemoveiSNSServer_IN
+ - PRemoveiSNSServer_IN
  - RemoveiSNSServer_IN
 ---
 
@@ -65,3 +66,4 @@ It is optional that you implement this method.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_removeisnsserver_out">RemoveiSNSServer_OUT</a>
+

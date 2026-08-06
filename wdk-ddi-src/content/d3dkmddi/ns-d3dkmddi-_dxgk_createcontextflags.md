@@ -1,16 +1,14 @@
 ---
 UID: NS:d3dkmddi._DXGK_CREATECONTEXTFLAGS
-title: _DXGK_CREATECONTEXTFLAGS (d3dkmddi.h)
-description: The DXGK_CREATECONTEXTFLAGS structure identifies how to create contexts.
-old-location: display\dxgk_createcontextflags.htm
-ms.assetid: f7cadf78-c908-4034-889d-b5c7d0ffdaad
-ms.date: 05/10/2018
+title: DXGK_CREATECONTEXTFLAGS (d3dkmddi.h)
+description: Learn more about the DXGK_CREATECONTEXTFLAGS structure.
+ms.date: 05/21/2024
 keywords: ["DXGK_CREATECONTEXTFLAGS structure"]
 ms.keywords: DXGK_CREATECONTEXTFLAGS, DXGK_CREATECONTEXTFLAGS structure [Display Devices], DmStructs_19418464-77f9-407f-8b04-c6a35561069b.xml, _DXGK_CREATECONTEXTFLAGS, d3dkmddi/DXGK_CREATECONTEXTFLAGS, display.dxgk_createcontextflags
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,60 +38,58 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_CREATECONTEXTFLAGS
  - DXGK_CREATECONTEXTFLAGS
 ---
 
-# _DXGK_CREATECONTEXTFLAGS structure
-
+# DXGK_CREATECONTEXTFLAGS structure
 
 ## -description
 
-The DXGK_CREATECONTEXTFLAGS structure identifies how to create contexts.
+The **DXGK_CREATECONTEXTFLAGS** structure identifies how to create contexts.
 
 ## -struct-fields
 
 ### -field SystemContext
 
-A UINT value that specifies whether contexts that a driver's <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createcontext">DxgkDdiCreateContext</a> function creates are system contexts for the engine that the <b>EngineAffinity</b> member of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_createcontext">DXGKARG_CREATECONTEXT</a> structure specifies. A system context is created for the paging engine only.
-
-Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).
+A UINT value that specifies whether contexts that a driver's [**DxgkDdiCreateContext**](nc-d3dkmddi-dxgkddi_createcontext.md) function creates are system contexts for the engine that the **EngineAffinity** member of the [**DXGKARG_CREATECONTEXT**](ns-d3dkmddi-_dxgkarg_createcontext.md) structure specifies. A system context is created for the paging engine only.
 
 ### -field GdiContext
 
-A UINT value that specifies whether the contexts that a driver's <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createcontext">DxgkDdiCreateContext</a> function creates are GDI-specific contexts for the engine that the <b>EngineAffinity</b> member of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_createcontext">DXGKARG_CREATECONTEXT</a> structure specifies.
-
-Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).
+A UINT value that specifies whether the contexts that a driver's [**DxgkDdiCreateContext**](nc-d3dkmddi-dxgkddi_createcontext.md) function creates are GDI-specific contexts for the engine that the **EngineAffinity** member of the [**DXGKARG_CREATECONTEXT**](ns-d3dkmddi-_dxgkarg_createcontext.md) structure specifies.
 
 This member is available beginning with Windows 7.
 
 ### -field VirtualAddressing
 
-A UINT value that specifies whether the contexts that a driver's <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createcontext">DxgkDdiCreateContext</a> function creates use virtual addressing.
-
-Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).
+Specifies whether the contexts that a driver's [**DxgkDdiCreateContext**](nc-d3dkmddi-dxgkddi_createcontext.md) function creates use virtual addressing.
 
 Supported starting with Windows 10.
 
 ### -field SystemProtectedContext
 
-A UINT value that specifies whether the context being used to modify the VPR will have access to allocations outside the VPR.
+Specifies whether the context being used to modify the VPR will have access to allocations outside the VPR.
 
 Supported starting with Windows 10.
 
 ### -field HwQueueSupported
 
+Specifies whether the context supports hardware queues.
+
+### -field TestContext
+
+Specifies whether the context is a test context for [Kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing-of-wddm-features). Available starting with Windows 11, version 24H2 (WDDM 3.2).
+
 ### -field Reserved
 
-This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 28 bits (0xFFFFFFFB) of the 32-bit <b>Value</b> member to zeros.
+This member is reserved and should be set to zero.
 
 ### -field Value
 
-A member in the union that DXGK_CREATECONTEXTFLAGS contains that can hold a 32-bit value that identifies how to create contexts.
+A member in the union that **DXGK_CREATECONTEXTFLAGS** contains that can hold a 32-bit value that identifies how to create contexts.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_createcontext">DXGKARG_CREATECONTEXT</a>
+[**DXGKARG_CREATECONTEXT**](ns-d3dkmddi-_dxgkarg_createcontext.md)
 
-
-
-<a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createcontext">DxgkDdiCreateContext</a>
+[**DxgkDdiCreateContext**](nc-d3dkmddi-dxgkddi_createcontext.md)

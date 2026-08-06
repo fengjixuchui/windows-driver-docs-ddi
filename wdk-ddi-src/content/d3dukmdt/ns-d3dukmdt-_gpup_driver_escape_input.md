@@ -2,7 +2,6 @@
 UID: NS:d3dukmdt._GPUP_DRIVER_ESCAPE_INPUT
 title: _GPUP_DRIVER_ESCAPE_INPUT (d3dukmdt.h)
 description: The GPU partition driver escape input.
-ms.assetid: 9f1fe3e5-781b-434c-8e62-affc54a72891
 ms.date: 10/19/2018
 keywords: ["GPUP_DRIVER_ESCAPE_INPUT structure"]
 ms.keywords: _GPUP_DRIVER_ESCAPE_INPUT, GPUP_DRIVER_ESCAPE_INPUT, *PGPUP_DRIVER_ESCAPE_INPUT,
@@ -37,6 +36,8 @@ api_location:
  - d3dukmdt.h
 api_name:
  - _GPUP_DRIVER_ESCAPE_INPUT
+ - PGPUP_DRIVER_ESCAPE_INPUT
+ - GPUP_DRIVER_ESCAPE_INPUT
 dev_langs:
  - c++
 ---
@@ -53,7 +54,7 @@ The GPU partition driver escape input.
 ### -field vfLUID
 
  
-An LUID (locally unique identifier).
+A LUID (locally unique identifier).
 
 ## -remarks
 

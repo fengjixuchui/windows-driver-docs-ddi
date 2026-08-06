@@ -4,7 +4,6 @@ title: WheaIsValidErrorRecordSignature function (ntddk.h)
 description: The WheaIsValidErrorRecordSignature function verifies whether a WHEA error record is valid.
 old-location: whea\wheaisvaliderrorrecordsignature.htm
 tech.root: whea
-ms.assetid: 35149395-4238-41fd-ae96-6491534e3cc1
 ms.date: 02/20/2018
 keywords: ["WheaIsValidErrorRecordSignature function"]
 ms.keywords: WheaIsValidErrorRecordSignature, WheaIsValidErrorRecordSignature function [WHEA Drivers and Applications], ntddk/WheaIsValidErrorRecordSignature, whea.wheaisvaliderrorrecordsignature, whearef2_6ba74e00-cc1f-49e9-b6ee-b300571eb412.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>WheaIsValidErrorRecordSignature </b>function verifies whether a WHEA <a h
 
 ## -parameters
 
-### -param Record 
+### -param Record [in]
 
-[in]
+
 A pointer to a WHEA <a href="/windows-hardware/drivers/whea/error-records">error record</a> that is formatted as a <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_record">WHEA_ERROR_RECORD</a> structure.
 
 ## -returns

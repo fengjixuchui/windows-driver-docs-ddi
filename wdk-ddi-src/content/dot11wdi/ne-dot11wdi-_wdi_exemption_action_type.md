@@ -4,7 +4,6 @@ title: _WDI_EXEMPTION_ACTION_TYPE (dot11wdi.h)
 description: The WDI_EXEMPTION_ACTION_TYPE enumeration defines the exemption types.
 old-location: netvista\wdi_exemption_action_type.htm
 tech.root: netvista
-ms.assetid: 46640961-828c-411b-b1b9-bcceb04bdf17
 ms.date: 05/02/2018
 keywords: ["WDI_EXEMPTION_ACTION_TYPE enumeration"]
 ms.keywords: WDI_EXEMPTION_ACTION_TYPE, WDI_EXEMPTION_ACTION_TYPE enumeration [Network Drivers Starting with Windows Vista], WDI_EXEMPT_ALWAYS, WDI_EXEMPT_NO_EXEMPTION, WDI_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE, _WDI_EXEMPTION_ACTION_TYPE, dot11wdi/WDI_EXEMPTION_ACTION_TYPE, dot11wdi/WDI_EXEMPT_ALWAYS, dot11wdi/WDI_EXEMPT_NO_EXEMPTION, dot11wdi/WDI_EXEMPT_ON_KEY_MAPPING_KEY_UNAVAILABLE, netvista.wdi_exemption_action_type, netvista.wifi_exemption_action_type
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
+ - _WDI_EXEMPTION_ACTION_TYPE
  - WDI_EXEMPTION_ACTION_TYPE
 ---
 
@@ -47,6 +47,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_EXEMPTION_ACTION_TYPE enumeration defines the exemption types.
 

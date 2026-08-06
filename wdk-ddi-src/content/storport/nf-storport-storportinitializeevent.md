@@ -3,9 +3,7 @@ UID: NF:storport.StorPortInitializeEvent
 title: StorPortInitializeEvent function
 description: StorPortInitializeEvent initializes an event object as a synchronization or notification type event, and sets it to a signaled or not-signaled state.
 tech.root: storage
-ms.assetid: fb3aa321-9b9c-4138-8180-76bb8ed07748
 ms.date: 03/24/2020
-ms.topic: function
 ms.keywords: StorPortInitializeEvent
 req.header: storport.h
 req.include-header: 
@@ -37,8 +35,6 @@ api_location:
  - Storport.dll
 api_name:
  - StorPortInitializeEvent
-product:
- - Windows
 ---
 
 # StorPortInitializeEvent function
@@ -86,4 +82,4 @@ See [**KeInitializeEvent**](../wdm/nf-wdm-keinitializeevent.md) for more details
 
 [**StorPortSetEvent**](nf-storport-storportsetevent.md)
 
-[**StoPortWaitForSingleObject**](nf-storport-storportwaitforsingleobject.md)
+[**StorPortWaitForSingleObject**](nf-storport-storportwaitforsingleobject.md)

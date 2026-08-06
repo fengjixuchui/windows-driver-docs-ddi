@@ -4,7 +4,6 @@ title: _CIP_TALK (61883.h)
 description: This structure is used to begin transmission.
 old-location: ieee\cip_talk.htm
 tech.root: IEEE
-ms.assetid: DD5EB79D-122B-4D17-9109-37473AC49C4A
 ms.date: 02/15/2018
 keywords: ["CIP_TALK structure"]
 ms.keywords: "*PCIP_TALK, 61883/CIP_TALK, 61883/PCIP_TALK, CIP_TALK, CIP_TALK structure [Buses], IEEE.cip_talk, PCIP_TALK, PCIP_TALK structure pointer [Buses], _CIP_TALK"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _CIP_TALK
+ - PCIP_TALK
  - CIP_TALK
 ---
 
@@ -88,3 +89,4 @@ If the protocol driver is unable to allocate resources, it sets <b>Irp->IoStatus
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_av_61883_request">AV_61883_REQUEST</a>
+

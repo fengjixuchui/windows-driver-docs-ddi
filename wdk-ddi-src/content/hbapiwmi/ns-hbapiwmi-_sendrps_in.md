@@ -4,7 +4,6 @@ title: _SendRPS_IN (hbapiwmi.h)
 description: The SendRPS_IN structure is used to deliver input parameter data to the SendRPS WMI method.
 old-location: storage\sendrps_in.htm
 tech.root: storage
-ms.assetid: 7ab8986d-1e28-4d25-888f-cd10e310d623
 ms.date: 03/29/2018
 keywords: ["SendRPS_IN structure"]
 ms.keywords: "*PSendRPS_IN, PSendRPS_IN, PSendRPS_IN structure pointer [Storage Devices], SendRPS_IN, SendRPS_IN structure [Storage Devices], _SendRPS_IN, hbapiwmi/PSendRPS_IN, hbapiwmi/SendRPS_IN, storage.sendrps_in, structs-Fibre_52ab21d3-f6bf-4e1d-b5a7-3f9cd054038c.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hbapiwmi.h
 api_name:
+ - _SendRPS_IN
+ - PSendRPS_IN
  - SendRPS_IN
 ---
 
@@ -81,3 +82,4 @@ The WMI tool suite generates a declaration of the SendRPS_IN structure in <i>Hba
 ## -see-also
 
 <a href="/windows-hardware/drivers/storage/sendrps">SendRPS</a>
+

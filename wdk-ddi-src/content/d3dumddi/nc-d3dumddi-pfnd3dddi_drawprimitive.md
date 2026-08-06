@@ -4,7 +4,6 @@ title: PFND3DDDI_DRAWPRIMITIVE (d3dumddi.h)
 description: The DrawPrimitive function draws nonindexed primitives in which the Microsoft Direct3D runtime has not transformed the vertex data.
 old-location: display\drawprimitive.htm
 tech.root: display
-ms.assetid: 1a6de2b0-cab0-4fcf-be1b-a8cc1c1f79e9
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DRAWPRIMITIVE callback function"]
 ms.keywords: DrawPrimitive, DrawPrimitive callback function [Display Devices], PFND3DDDI_DRAWPRIMITIVE, PFND3DDDI_DRAWPRIMITIVE callback, UserModeDisplayDriver_Functions_c433d1f5-68ca-4461-a409-4353d8a581d8.xml, d3dumddi/DrawPrimitive, display.drawprimitive
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3dumddi.h
 api_name:
- - DrawPrimitive
+ - PFND3DDDI_DRAWPRIMITIVE
 ---
 
 # PFND3DDDI_DRAWPRIMITIVE callback function
@@ -50,18 +49,18 @@ The <b>DrawPrimitive</b> function draws nonindexed primitives in which the Micro
 
 ## -parameters
 
-### -param hDevice 
+### -param hDevice [in]
 
-[in]
+
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_drawprimitive">D3DDDIARG_DRAWPRIMITIVE</a> structure that describes the primitive to draw.
 
-### -param Arg3
+### -param unnamedParam3
 
 *pFlagBuffer* [in]
 
@@ -84,3 +83,4 @@ When the Microsoft Direct3D runtime specifies triangle-edge flags in the value t
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

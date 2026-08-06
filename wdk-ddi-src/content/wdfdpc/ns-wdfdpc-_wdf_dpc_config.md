@@ -4,7 +4,6 @@ title: _WDF_DPC_CONFIG (wdfdpc.h)
 description: The WDF_DPC_CONFIG structure contains configuration information for a DPC object.
 old-location: wdf\wdf_dpc_config.htm
 tech.root: wdf
-ms.assetid: e4203a9d-98f4-47f2-80ea-51074e4c0713
 ms.date: 02/26/2018
 keywords: ["WDF_DPC_CONFIG structure"]
 ms.keywords: "*PWDF_DPC_CONFIG, DFDpcObjectRef_797caee0-a119-4bae-837b-461e74022868.xml, PWDF_DPC_CONFIG, PWDF_DPC_CONFIG structure pointer, WDF_DPC_CONFIG, WDF_DPC_CONFIG structure, _WDF_DPC_CONFIG, kmdf.wdf_dpc_config, wdf.wdf_dpc_config, wdfdpc/PWDF_DPC_CONFIG, wdfdpc/WDF_DPC_CONFIG"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdfdpc.h
 api_name:
+ - _WDF_DPC_CONFIG
+ - PWDF_DPC_CONFIG
  - WDF_DPC_CONFIG
 ---
 
@@ -97,3 +98,4 @@ For more information about handling interrupts in framework-based drivers, see <
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdpc/nf-wdfdpc-wdfdpccreate">WdfDpcCreate</a>
+

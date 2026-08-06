@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.SeCaptureSubjectContext
 title: SeCaptureSubjectContext function (wdm.h)
-description: The SeCaptureSubjectContext routine captures the security context of the calling thread for access validation and auditing.
+description: The SeCaptureSubjectContext routine in wdm.h captures the security context of the calling thread for access validation and auditing.
 old-location: ifsk\secapturesubjectcontext.htm
 tech.root: ifsk
-ms.assetid: 7d41263e-a5f7-455e-859b-10a452a22ddf
 ms.date: 04/16/2018
 keywords: ["SeCaptureSubjectContext function"]
 ms.keywords: SeCaptureSubjectContext, SeCaptureSubjectContext routine [Installable File System Drivers], ifsk.secapturesubjectcontext, ntifs/SeCaptureSubjectContext, seref_192d13d7-4841-4c3e-831f-c12fe3cde04f.xml
@@ -50,9 +49,9 @@ The <b>SeCaptureSubjectContext</b> routine captures the security context of the 
 
 ## -parameters
 
-### -param SubjectContext 
+### -param SubjectContext [out]
 
-[out]
+
 Pointer to a caller-allocated <a href="/windows-hardware/drivers/kernel/eprocess">SECURITY_SUBJECT_CONTEXT</a> structure.
 
 ## -remarks

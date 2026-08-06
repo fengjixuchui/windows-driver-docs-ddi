@@ -4,7 +4,6 @@ title: FltFreeCallbackData function (fltkernel.h)
 description: The FltFreeCallbackData routine frees a callback data structure allocated by the FltAllocateCallbackData routine.
 old-location: ifsk\fltfreecallbackdata.htm
 tech.root: ifsk
-ms.assetid: 45cf398f-f7f0-4eb1-b490-4123c6c9f6fa
 ms.date: 04/16/2018
 keywords: ["FltFreeCallbackData function"]
 ms.keywords: FltApiRef_e_to_o_1ad2fa09-dd36-4178-a422-a6a1f3854182.xml, FltFreeCallbackData, FltFreeCallbackData routine [Installable File System Drivers], fltkernel/FltFreeCallbackData, ifsk.fltfreecallbackdata
@@ -51,9 +50,9 @@ The <b>FltFreeCallbackData</b> routine frees a callback data structure allocated
 
 ## -parameters
 
-### -param CallbackData 
+### -param CallbackData [in]
 
-[in]
+
 Pointer to the callback data structure to be freed. This <a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data">FLT_CALLBACK_DATA</a> structure must have been allocated by a previous call to <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecallbackdata">FltAllocateCallbackData</a>. This parameter is required and cannot be <b>NULL</b>.
 
 ## -returns

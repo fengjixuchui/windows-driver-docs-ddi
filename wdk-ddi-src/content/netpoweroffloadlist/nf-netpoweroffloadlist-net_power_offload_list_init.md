@@ -3,8 +3,7 @@ UID: NF:netpoweroffloadlist.NET_POWER_OFFLOAD_LIST_INIT
 title: NET_POWER_OFFLOAD_LIST_INIT function (netpoweroffloadlist.h)
 description: The NET_POWER_OFFLOAD_LIST_INIT function initializes a NET_POWER_OFFLOAD_LIST structure.
 tech.root: netvista
-ms.assetid: 69577bdf-fff6-498f-ba80-fb1678e8145f
-ms.date: 11/06/2019
+ms.date: 04/01/2022
 keywords: ["NET_POWER_OFFLOAD_LIST_INIT function"]
 ms.keywords: NET_POWER_OFFLOAD_LIST_INIT
 req.header: netpoweroffloadlist.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -37,8 +36,6 @@ api_location:
  - netpoweroffloadlist.h
 api_name:
  - NET_POWER_OFFLOAD_LIST_INIT
-product:
- - Windows
 ---
 
 # NET_POWER_OFFLOAD_LIST_INIT function
@@ -50,13 +47,9 @@ The **NET_POWER_OFFLOAD_LIST_INIT** function initializes a [**NET_POWER_OFFLOAD_
 
 ## -parameters
 
-### -param List
+### -param List [_Out_]
 
 A handle to a driver-allocated [**NET_POWER_OFFLOAD_LIST**](../netpoweroffloadlist/ns-netpoweroffloadlist-_net_power_offload_list.md) structure.
-
-## -returns
-
-This function does not return a value.
 
 ## -remarks
 

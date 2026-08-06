@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostType.GetGenericArgumentAt
 title: IDebugHostType::GetGenericArgumentAt (dbgmodel.h)
-description: For the "i"-th generic argument to the generic/template, this returns a new IDebugHostSymbol  which represents that argument.
-ms.assetid: 0ba1d2d4-a32e-4411-9810-85442c5d5c08
+description: "The IDebugHostType::GetGenericArgumentAt method, when called on a function type, gets a generic argument at a given index in the function's argument list."
 ms.date: 09/11/2018
 keywords: ["IDebugHostType::GetGenericArgumentAt"]
 ms.keywords: IDebugHostType::GetGenericArgumentAt, GetGenericArgumentAt, IDebugHostType.GetGenericArgumentAt, IDebugHostType::GetGenericArgumentAt, IDebugHostType.GetGenericArgumentAt
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostType.GetGenericArgumentAt
+ - IDebugHostType::GetGenericArgumentAt
 ---
 
 # IDebugHostType::GetGenericArgumentAt

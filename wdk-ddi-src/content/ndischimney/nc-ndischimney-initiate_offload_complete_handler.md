@@ -4,7 +4,6 @@ title: INITIATE_OFFLOAD_COMPLETE_HANDLER (ndischimney.h)
 description: NDIS calls a protocol driver's or intermediate driver's ProtocolInitiateOffloadComplete function to complete an offload operation that the driver previously initiated by calling the NdisInitiateOffload function.
 old-location: netvista\protocolinitiateoffloadcomplete.htm
 tech.root: netvista
-ms.assetid: 0300d841-b211-42f8-b60d-d7d37201e778
 ms.date: 05/02/2018
 keywords: ["INITIATE_OFFLOAD_COMPLETE_HANDLER callback function"]
 ms.keywords: INITIATE_OFFLOAD_COMPLETE_HANDLER, INITIATE_OFFLOAD_COMPLETE_HANDLER callback, ProtocolInitiateOffloadComplete, ProtocolInitiateOffloadComplete callback function [Network Drivers Starting with Windows Vista], ndischimney/ProtocolInitiateOffloadComplete, netvista.protocolinitiateoffloadcomplete, tcp_chim_protocol_func_24008ba0-91ac-43de-a1b7-ba82e15057ad.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndischimney.h
 api_name:
- - ProtocolInitiateOffloadComplete
+ - INITIATE_OFFLOAD_COMPLETE_HANDLER
 ---
 
 # INITIATE_OFFLOAD_COMPLETE_HANDLER callback function
@@ -52,14 +51,14 @@ NDIS calls a protocol driver's or intermediate driver's  <i>ProtocolInitiateOffl
 
 ## -parameters
 
-### -param ProtocolBindingContext 
+### -param ProtocolBindingContext [in]
 
-[in]
+
 A handle to a context area allocated by the protocol driver. The driver maintains the per binding context information in this context area. The driver supplied this handle to NDIS when the driver called the <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a> function.
 
-### -param OffloadBlockList 
+### -param OffloadBlockList [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_protocol_offload_block_list">NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST</a> structure that can be a stand-alone structure or the root of a linked list of such structures. These structures identify the state that was offloaded or that was attempted to be offloaded.
 
 ## -remarks
@@ -95,3 +94,4 @@ For more information, see <a href="/windows-hardware/drivers/network/reusing-an-
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a>
+

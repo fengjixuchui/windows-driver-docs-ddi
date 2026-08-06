@@ -1,18 +1,15 @@
 ---
 UID: NS:d3dkmddi._DXGKARGCB_ISFEATUREENABLED
-title: _DXGKARGCB_ISFEATUREENABLED
-description: Arguments used to query the driver feature is enabled.
+title: DXGKARGCB_ISFEATUREENABLED
+description: Learn more about the DXGKARGCB_ISFEATUREENABLED structure.
 tech.root: display
-ms.assetid: ebef9742-03ea-4402-a62e-9f45f11230cd
-ms.date: 04/04/2019
+ms.date: 03/29/2023
 keywords: ["DXGKARGCB_ISFEATUREENABLED structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _DXGKARGCB_ISFEATUREENABLED, DXGKARGCB_ISFEATUREENABLED, *INOUT_PDXGKARGCB_ISFEATUREENABLED
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: 
-req.target-min-winverclnt: Windows 10, version 1903
+req.target-min-winverclnt: Windows 10, version 1903 (WDDM 2.6)
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -37,36 +34,31 @@ api_location:
  - d3dkmddi.h
 api_name:
  - _DXGKARGCB_ISFEATUREENABLED
-product:
- - Windows
+ - DXGKARGCB_ISFEATUREENABLED
 dev_langs:
  - c++
 ---
 
-# _DXGKARGCB_ISFEATUREENABLED structure
-
+# DXGKARGCB_ISFEATUREENABLED structure
 
 ## -description
 
-Arguments used to query the driver feature's enabled state.
+The **DXGKARGCB_ISFEATUREENABLED** structure contains the arguments used in the [**DXGKCB_ISFEATUREENABLED**](nc-d3dkmddi-dxgkcb_isfeatureenabled.md) callback function, to query a driver feature's enabled state.
 
 ## -struct-fields
 
 ### -field DeviceHandle
 
- 
-[in] Device handle that was passed to the driver [DxgkDdiStartDevice](../dispmprt/nc-dispmprt-dxgkddi_start_device.md) function.
+[in] Device handle that was passed to the driver's [**DxgkDdiStartDevice**](../dispmprt/nc-dispmprt-dxgkddi_start_device.md) function.
 
 ### -field FeatureId
 
-[in] Feature ID to query enabled state for.
+[in] A [**DXGK_FEATURE_ID**](../d3dukmdt/ne-d3dukmdt-dxgk_feature_id.md) value that identifies the feature to query enabled state for.
 
 ### -field Enabled
 
- 
 [out] FALSE if the OS instructs the driver not to enable the feature. TRUE if the OS allows the driver to enable the feature.
-
-## -remarks
 
 ## -see-also
 
+[**DXGKCB_ISFEATUREENABLED**](nc-d3dkmddi-dxgkcb_isfeatureenabled.md)

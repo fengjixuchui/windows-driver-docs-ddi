@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient5.OutputServers
 title: IDebugClient5::OutputServers (dbgeng.h)
-description: The OutputServers method lists the servers running on a given computer.
+description: The OutputServers method lists the servers running on a given computer. This method belongs to the IDebugClient5 interface.
 old-location: debugger\outputservers.htm
 tech.root: debugger
-ms.assetid: cb08e0d9-8c4b-4b7f-be3d-4e7c87d7f3d4
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::OutputServers"]
 ms.keywords: IDebugClient interface [Windows Debugging],OutputServers method, IDebugClient2 interface [Windows Debugging],OutputServers method, IDebugClient2::OutputServers, IDebugClient3 interface [Windows Debugging],OutputServers method, IDebugClient3::OutputServers, IDebugClient4 interface [Windows Debugging],OutputServers method, IDebugClient4::OutputServers, IDebugClient5 interface [Windows Debugging],OutputServers method, IDebugClient5.OutputServers, IDebugClient5::OutputServers, IDebugClient::OutputServers, IDebugClient_8fecfb37-5e4d-4a2b-af1e-df081e636337.xml, OutputServers, OutputServers method [Windows Debugging], OutputServers method [Windows Debugging],IDebugClient interface, OutputServers method [Windows Debugging],IDebugClient2 interface, OutputServers method [Windows Debugging],IDebugClient3 interface, OutputServers method [Windows Debugging],IDebugClient4 interface, OutputServers method [Windows Debugging],IDebugClient5 interface, dbgeng/IDebugClient2::OutputServers, dbgeng/IDebugClient3::OutputServers, dbgeng/IDebugClient4::OutputServers, dbgeng/IDebugClient5::OutputServers, dbgeng/IDebugClient::OutputServers, debugger.outputservers
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.OutputServers
- - IDebugClient2.OutputServers
- - IDebugClient3.OutputServers
- - IDebugClient4.OutputServers
- - IDebugClient5.OutputServers
+ - IDebugClient5::OutputServers
 ---
 
 # IDebugClient5::OutputServers
@@ -54,14 +49,14 @@ The <b>OutputServers</b>  method lists the servers running on a given computer.
 
 ## -parameters
 
-### -param OutputControl 
+### -param OutputControl [in]
 
-[in]
+
 Specifies the output control to use while outputting the servers. For possible values, see <a href="/windows-hardware/drivers/debugger/debug-outctl-xxx">DEBUG_OUTCTL_XXX</a>.
 
-### -param Machine 
+### -param Machine [in]
 
-[in]
+
 Specifies the name of the computer whose servers will be listed.  <i>Machine</i> has the following form:
 
 
@@ -69,10 +64,9 @@ Specifies the name of the computer whose servers will be listed.  <i>Machine</i>
 \\computername
 ```
 
+### -param Flags [in]
 
-### -param Flags 
 
-[in]
 Specifies a bit-set that determines which servers to output.  The possible bit flags are:
 
 <table>
@@ -163,3 +157,4 @@ For more information about remote debugging, see <a href="/windows-hardware/driv
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-startserver">StartServer</a>
+

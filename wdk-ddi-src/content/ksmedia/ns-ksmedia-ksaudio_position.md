@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_7
+UID: NS:ksmedia.KSAUDIO_POSITION
 title: KSAUDIO_POSITION (ksmedia.h)
 description: The KSAUDIO_POSITION structure specifies the current positions of the play and write cursors in the sound buffer for an audio stream.
 old-location: audio\ksaudio_position.htm
 tech.root: audio
-ms.assetid: 91658dfc-dad4-4fbb-8688-13971e7275e2
 ms.date: 05/08/2018
 keywords: ["KSAUDIO_POSITION structure"]
 ms.keywords: "*PKSAUDIO_POSITION, KSAUDIO_POSITION, KSAUDIO_POSITION structure [Audio Devices], PKSAUDIO_POSITION, PKSAUDIO_POSITION structure pointer [Audio Devices], aud-prop_0518af7c-0c1d-4710-8879-43bb42e1ba2a.xml, audio.ksaudio_position, ksmedia/KSAUDIO_POSITION, ksmedia/PKSAUDIO_POSITION"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSAUDIO_POSITION
  - KSAUDIO_POSITION
 ---
 
@@ -111,3 +111,4 @@ For more information, see <a href="/windows-hardware/drivers/audio/audio-positio
 
 
 <a href="/windows-hardware/drivers/audio/ksproperty-audio-position">KSPROPERTY_AUDIO_POSITION</a>
+

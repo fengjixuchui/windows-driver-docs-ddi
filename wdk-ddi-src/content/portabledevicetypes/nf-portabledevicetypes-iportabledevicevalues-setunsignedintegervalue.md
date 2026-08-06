@@ -4,7 +4,6 @@ title: IPortableDeviceValues::SetUnsignedIntegerValue (portabledevicetypes.h)
 description: Adds a new ULONG value (type VT_UI4) or overwrites an existing one.
 old-location: wpddk\iportabledevicevalues_setunsignedintegervalue.htm
 tech.root: wpd_dk
-ms.assetid: a442a94a-2086-4b09-a795-86f53334fadd
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::SetUnsignedIntegerValue"]
 ms.keywords: IPortableDeviceValues interface,SetUnsignedIntegerValue method, IPortableDeviceValues.SetUnsignedIntegerValue, IPortableDeviceValues::SetUnsignedIntegerValue, IPortableDeviceValuesSetUnsignedIntegerValue, SetUnsignedIntegerValue, SetUnsignedIntegerValue method, SetUnsignedIntegerValue method,IPortableDeviceValues interface, portabledevicetypes/IPortableDeviceValues::SetUnsignedIntegerValue, wpddk.iportabledevicevalues_setunsignedintegervalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.SetUnsignedIntegerValue
+ - IPortableDeviceValues::SetUnsignedIntegerValue
 ---
 
 # IPortableDeviceValues::SetUnsignedIntegerValue
@@ -51,14 +50,14 @@ Adds a new <b>ULONG</b> value (type VT_UI4) or overwrites an existing one.
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> that specifies the item to create or overwrite.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 A <b>ULONG</b> that specifies the new value.
 
 ## -returns
@@ -94,3 +93,4 @@ If an existing value has the same key that is specified by the <i>key</i> parame
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-getunsignedintegervalue">IPortableDeviceValues::GetUnsignedIntegerValue</a>
+

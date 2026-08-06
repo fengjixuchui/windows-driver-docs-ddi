@@ -4,7 +4,6 @@ title: StorPortReleaseMSISpinLock function (storport.h)
 description: The StorPortReleaseMSISpinLock routine releases a previously acquired message signaled interrupt (MSI) spin lock for the specified message.
 old-location: storage\storportreleasemsispinlock.htm
 tech.root: storage
-ms.assetid: 5a2cf757-9dca-4717-a775-834a22c02a12
 ms.date: 03/29/2018
 keywords: ["StorPortReleaseMSISpinLock function"]
 ms.keywords: StorPortReleaseMSISpinLock, StorPortReleaseMSISpinLock routine [Storage Devices], storage.storportreleasemsispinlock, storport/StorPortReleaseMSISpinLock, storprt_212b8090-c4a3-4ea8-8c50-6704a6d0cee7.xml
@@ -50,18 +49,18 @@ The **StorPortReleaseMSISpinLock** routine releases a previously acquired messag
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
 ### -param MessageId
 
 The identifier of the message.
 
-### -param OldIrql 
+### -param OldIrql [in]
 
-[in]
+
 The IRQL that the [**StorPortAcquireMSISpinLock**](nf-storport-storportacquiremsispinlock.md) routine returned when the miniport driver acquired the spin lock.
 
 ## -returns

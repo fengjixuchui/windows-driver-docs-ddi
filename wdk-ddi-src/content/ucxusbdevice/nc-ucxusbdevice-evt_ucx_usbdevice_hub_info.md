@@ -4,7 +4,6 @@ title: EVT_UCX_USBDEVICE_HUB_INFO (ucxusbdevice.h)
 description: The client driver's implementation that UCX calls to retrieve hub properties.
 old-location: buses\evt_ucx_usbdevice_hub_info.htm
 tech.root: usbref
-ms.assetid: 5bf8000d-63d8-4901-b3fc-d3c43cefe37e
 ms.date: 05/07/2018
 keywords: ["EVT_UCX_USBDEVICE_HUB_INFO callback function"]
 ms.keywords: EVT_UCX_USBDEVICE_HUB_INFO, EVT_UCX_USBDEVICE_HUB_INFO callback, EvtUcxUsbDeviceHubInfo, EvtUcxUsbDeviceHubInfo callback function [Buses], PEVT_UCX_USBDEVICE_HUB_INFO, PEVT_UCX_USBDEVICE_HUB_INFO callback function pointer [Buses], buses.evt_ucx_usbdevice_hub_info, ucxusbdevice/EvtUcxUsbDeviceHubInfo
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ucxusbdevice.h
 api_name:
- - PEVT_UCX_USBDEVICE_HUB_INFO
+ - EVT_UCX_USBDEVICE_HUB_INFO
 ---
 
 # EVT_UCX_USBDEVICE_HUB_INFO callback function
@@ -51,14 +50,14 @@ retrieve hub properties.
 
 ## -parameters
 
-### -param UcxController 
+### -param UcxController [in]
 
-[in]
+
  A handle to the UCX controller that the client driver received in a previous call to  the <a href="/previous-versions/windows/hardware/drivers/mt188033(v=vs.85)">UcxControllerCreate</a> method.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 Contains the <a href="/windows-hardware/drivers/ddi/ucxusbdevice/ns-ucxusbdevice-_usbdevice_hub_info">USBDEVICE_HUB_INFO</a> structure.
 
 ## -remarks
@@ -101,7 +100,6 @@ UsbDevice_EvtUcxUsbDeviceHubInfo(
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ucxusbdevice/ns-ucxusbdevice-_ucx_usbdevice_event_callbacks">UCX_USBDEVICE_EVENT_CALLBACKS</a>
@@ -117,3 +115,4 @@ UsbDevice_EvtUcxUsbDeviceHubInfo(
 
 
 <a href="/windows-hardware/drivers/ddi/ucxusbdevice/nf-ucxusbdevice-ucxusbdevicecreate">UcxUsbDeviceCreate</a>
+

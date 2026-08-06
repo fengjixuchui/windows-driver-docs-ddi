@@ -4,7 +4,6 @@ title: USBD_ValidateConfigurationDescriptor function (usbdlib.h)
 description: The USBD_ValidateConfigurationDescriptor routine validates all descriptors returned by a device in its response to a configuration descriptor request.
 old-location: buses\usbd_validateconfigurationdescriptor.htm
 tech.root: usbref
-ms.assetid: 2fbe08ca-a9eb-4e3b-aa28-1ff34ad22a46
 ms.date: 05/07/2018
 keywords: ["USBD_ValidateConfigurationDescriptor function"]
 ms.keywords: USBD_ValidateConfigurationDescriptor, USBD_ValidateConfigurationDescriptor routine [Buses], buses.usbd_validateconfigurationdescriptor, usbdlib/USBD_ValidateConfigurationDescriptor
@@ -51,19 +50,19 @@ The <b>USBD_ValidateConfigurationDescriptor</b> routine validates all descriptor
 
 ## -parameters
 
-### -param ConfigDesc 
+### -param ConfigDesc [in]
 
-[in]
+
 Pointer to a configuration descriptor that includes all interface, endpoint, vendor, and class-specific descriptors retrieved from a USB device.
 
-### -param BufferLength 
+### -param BufferLength [in]
 
-[in]
+
 Size, in bytes, of the configuration descriptor being validated.
 
-### -param Level 
+### -param Level [in]
 
-[in]
+
 Level of validation to be performed.  The following are valid values:
 
 <ul>
@@ -73,14 +72,14 @@ Level of validation to be performed.  The following are valid values:
 <li>3-In addition to the validation for levels 1 and 2, level 3 validates plus validates the number of endpoints in each interface, enforces the USB specification's descriptor <b>bLength</b> sizes, and verifies that all interface numbers are in sequential order.</li>
 </ul>
 
-### -param Offset 
+### -param Offset [out]
 
-[out]
+
   Offset within configuration descriptor where validation failed.  Only valid when a status other than USBD_STATUS_SUCCESS is returned.
 
-### -param Tag 
+### -param Tag [in, optional]
 
-[in, optional]
+
 Pool tag used by <b>USBD_ValidateConfigurationDescriptor</b> when allocating memory.
 
 ## -returns

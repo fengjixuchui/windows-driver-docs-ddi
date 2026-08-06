@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostType.GetArrayDimensions
 title: IDebugHostType::GetArrayDimensions (dbgmodel.h)
-description: The GetArrayDimensions method returns a set of descriptors, one for each dimension of the array as indicated by the GetArrayDimensionality method.
-ms.assetid: a5950b75-3dea-4076-bcff-71d530899c98
+description: "The IDebugHostType::GetArrayDimensions method, when called on a type for an array, gets a set of descriptors, one for each dimension of the array."
 ms.date: 09/07/2018
 keywords: ["IDebugHostType::GetArrayDimensions"]
 ms.keywords: IDebugHostType::GetArrayDimensions, GetArrayDimensions, IDebugHostType.GetArrayDimensions, IDebugHostType::GetArrayDimensions, IDebugHostType.GetArrayDimensions
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostType.GetArrayDimensions
+ - IDebugHostType::GetArrayDimensions
 ---
 
 # IDebugHostType::GetArrayDimensions

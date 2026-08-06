@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.IModelObject.SetContextForDataModel
 title: IModelObject::SetContextForDataModel (dbgmodel.h)
 description: The SetContextForDataModel method is used by the implementation of a data model to place implementation data on instance objects.
-ms.assetid: 717eb159-c61b-4061-9ccf-3a7b21f353e1
 ms.date: 08/13/2018
 keywords: ["IModelObject::SetContextForDataModel"]
 ms.keywords: IModelObject::SetContextForDataModel, SetContextForDataModel, IModelObject.SetContextForDataModel, IModelObject::SetContextForDataModel, IModelObject.SetContextForDataModel
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IModelObject.SetContextForDataModel
+ - IModelObject::SetContextForDataModel
 ---
 
 # IModelObject::SetContextForDataModel

@@ -4,7 +4,6 @@ title: _GetFC3MgmtInfo_OUT (hbapiwmi.h)
 description: The GetFC3MgmtInfo_OUT structure is used to report the output parameter data of the GetFC3MgmtInfo WMI method to the WMI client.
 old-location: storage\getfc3mgmtinfo_out.htm
 tech.root: storage
-ms.assetid: 5cce25e7-582b-49b3-9f10-be59471e377f
 ms.date: 03/29/2018
 keywords: ["GetFC3MgmtInfo_OUT structure"]
 ms.keywords: "*PGetFC3MgmtInfo_OUT, GetFC3MgmtInfo_OUT, GetFC3MgmtInfo_OUT structure [Storage Devices], PGetFC3MgmtInfo_OUT, PGetFC3MgmtInfo_OUT structure pointer [Storage Devices], _GetFC3MgmtInfo_OUT, hbapiwmi/GetFC3MgmtInfo_OUT, hbapiwmi/PGetFC3MgmtInfo_OUT, storage.getfc3mgmtinfo_out, structs-Fibre_599fab97-a877-4299-8697-1decb1305672.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hbapiwmi.h
 api_name:
+ - _GetFC3MgmtInfo_OUT
+ - PGetFC3MgmtInfo_OUT
  - GetFC3MgmtInfo_OUT
 ---
 
@@ -79,3 +80,4 @@ The WMI tool suite generates a declaration of the GetEventBuffer_OUT structure i
 
 
 <a href="/windows-hardware/drivers/storage/hba-status">HBA_STATUS</a>
+

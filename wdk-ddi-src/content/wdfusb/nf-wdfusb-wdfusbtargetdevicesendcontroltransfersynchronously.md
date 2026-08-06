@@ -4,7 +4,6 @@ title: WdfUsbTargetDeviceSendControlTransferSynchronously function (wdfusb.h)
 description: The WdfUsbTargetDeviceSendControlTransferSynchronously method builds a USB control transfer request and sends it synchronously to an I/O target.
 old-location: wdf\wdfusbtargetdevicesendcontroltransfersynchronously.htm
 tech.root: wdf
-ms.assetid: 95150a1f-e323-4c29-8a4e-12ab4f231bc6
 ms.date: 02/26/2018
 keywords: ["WdfUsbTargetDeviceSendControlTransferSynchronously function"]
 ms.keywords: DFUsbRef_fe154a84-e5b4-4997-ad1f-6eb7f6829553.xml, WdfUsbTargetDeviceSendControlTransferSynchronously, WdfUsbTargetDeviceSendControlTransferSynchronously method, kmdf.wdfusbtargetdevicesendcontroltransfersynchronously, wdf.wdfusbtargetdevicesendcontroltransfersynchronously, wdfusb/WdfUsbTargetDeviceSendControlTransferSynchronously
@@ -55,34 +54,34 @@ The <b>WdfUsbTargetDeviceSendControlTransferSynchronously</b> method builds a US
 
 ## -parameters
 
-### -param UsbDevice 
+### -param UsbDevice [in]
 
-[in]
+
 A handle to a USB device object that was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>.
 
-### -param Request 
+### -param Request [in, optional]
 
-[in, optional]
+
 A handle to a framework request object. This parameter is optional and can be <b>NULL</b>. For more information, see the following Remarks section.
 
-### -param RequestOptions 
+### -param RequestOptions [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfrequest/ns-wdfrequest-_wdf_request_send_options">WDF_REQUEST_SEND_OPTIONS</a> structure that specifies options for the request. This pointer is optional and can be <b>NULL</b>. For more information, see the following Remarks section.
 
-### -param SetupPacket 
+### -param SetupPacket [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_control_setup_packet">WDF_USB_CONTROL_SETUP_PACKET</a> structure that describes the control transfer.
 
-### -param MemoryDescriptor 
+### -param MemoryDescriptor [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfmemory/ns-wdfmemory-_wdf_memory_descriptor">WDF_MEMORY_DESCRIPTOR</a> structure that describes either an input or an output buffer, depending on the device-specific command. This pointer is optional and can be <b>NULL</b>. For more information, see the following Remarks section.
 
-### -param BytesTransferred 
+### -param BytesTransferred [out, optional]
 
-[out, optional]
+
 A pointer to a location that receives the number of bytes that are transferred. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

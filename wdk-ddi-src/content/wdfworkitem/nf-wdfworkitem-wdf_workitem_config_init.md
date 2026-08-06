@@ -4,7 +4,6 @@ title: WDF_WORKITEM_CONFIG_INIT function (wdfworkitem.h)
 description: The WDF_WORKITEM_CONFIG_INIT function initializes a driver's WDF_WORKITEM_CONFIG structure.
 old-location: wdf\wdf_workitem_config_init.htm
 tech.root: wdf
-ms.assetid: d24d9aea-0cdd-4130-9904-4e50c825612e
 ms.date: 02/26/2018
 keywords: ["WDF_WORKITEM_CONFIG_INIT function"]
 ms.keywords: DFWorkItemObjectRef_fa6a881e-6591-448a-9fc3-81ab60ff370c.xml, WDF_WORKITEM_CONFIG_INIT, WDF_WORKITEM_CONFIG_INIT function, kmdf.wdf_workitem_config_init, wdf.wdf_workitem_config_init, wdfworkitem/WDF_WORKITEM_CONFIG_INIT
@@ -52,14 +51,14 @@ The <b>WDF_WORKITEM_CONFIG_INIT</b> function initializes a driver's <a href="/wi
 
 ## -parameters
 
-### -param Config 
+### -param Config [out]
 
-[out]
+
 A pointer to the caller-allocated <a href="/windows-hardware/drivers/ddi/wdfworkitem/ns-wdfworkitem-_wdf_workitem_config">WDF_WORKITEM_CONFIG</a> structure to initialize.
 
-### -param EvtWorkItemFunc 
+### -param EvtWorkItemFunc [in]
 
-[in]
+
 The address of the driver's <a href="/windows-hardware/drivers/ddi/wdfworkitem/nc-wdfworkitem-evt_wdf_workitem">EvtWorkItem</a> event callback function.
 
 ## -remarks

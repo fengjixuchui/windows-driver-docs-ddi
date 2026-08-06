@@ -3,11 +3,8 @@ UID: NC:d3d12umddi.PFND3D12DDI_BEGIN_END_QUERY
 title: PFND3D12DDI_BEGIN_END_QUERY (d3d12umddi.h)
 description: The pfnBeginEndQuery callback function defines the beginning of the portion of a command list to which a query applies.
 tech.root: display
-ms.assetid: 2032148a-3b57-4fce-be81-c91bef88fd51
 ms.date: 11/28/2018
 keywords: ["PFND3D12DDI_BEGIN_END_QUERY callback function"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: d3d12umddi.h
 req.include-header: d3d12umddi.h
 req.target-type: 
@@ -37,8 +34,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_BEGIN_END_QUERY
-product:
- - Windows
 ---
 
 # PFND3D12DDI_BEGIN_END_QUERY callback function
@@ -50,25 +45,25 @@ The pfnBeginEndQuery callback function defines the beginning of the portion of a
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hCommandList*
 
 A handle to the driver's data for the command list. The driver uses this region of memory to store internal data structures that are related to its command list.
 
-### -param Arg2
+### -param unnamedParam2
 
 *hQueryHeap*
 
 The handle of a query heap, which represents an array of query results. The underlying data representation of a query result is IHV dependent in query heaps and opaque to applications.  Query results are stored in a query heap until they are later “resolved” into the API defined format.
 
-### -param Arg3
+### -param unnamedParam3
 
 *StartElement*
 
 The value of the start element.
 
-### -param Arg4
+### -param unnamedParam4
 
 *QueryType*
 

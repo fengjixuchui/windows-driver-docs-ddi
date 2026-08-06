@@ -4,7 +4,6 @@ title: _WDF_EXECUTION_LEVEL (wdfobject.h)
 description: The WDF_EXECUTION_LEVEL enumeration type specifies the maximum IRQL at which the framework will call the event callback functions that a driver has supplied for a framework object.
 old-location: wdf\wdf_execution_level.htm
 tech.root: wdf
-ms.assetid: 82b1fe8e-054c-4710-9a32-d620a62a070e
 ms.date: 02/26/2018
 keywords: ["WDF_EXECUTION_LEVEL enumeration"]
 ms.keywords: DFGenObjectRef_f9a9ae20-9dba-4c23-910b-04c60e1f9539.xml, WDF_EXECUTION_LEVEL, WDF_EXECUTION_LEVEL enumeration, WdfExecutionLevelDispatch, WdfExecutionLevelInheritFromParent, WdfExecutionLevelInvalid, WdfExecutionLevelPassive, _WDF_EXECUTION_LEVEL, kmdf.wdf_execution_level, wdf.wdf_execution_level, wdfobject/WDF_EXECUTION_LEVEL, wdfobject/WdfExecutionLevelDispatch, wdfobject/WdfExecutionLevelInheritFromParent, wdfobject/WdfExecutionLevelInvalid, wdfobject/WdfExecutionLevelPassive
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfobject.h
 api_name:
+ - _WDF_EXECUTION_LEVEL
  - WDF_EXECUTION_LEVEL
 ---
 
@@ -54,7 +54,7 @@ The WDF_EXECUTION_LEVEL enumeration type specifies the maximum IRQL at which the
 
 ## -enum-fields
 
-### -field WdfExecutionLevelInvalid
+### -field WdfExecutionLevelInvalid:0x00
 
 Reserved for system use.
 
@@ -113,3 +113,4 @@ For more information about execution levels for event callback functions, see <a
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a>
+

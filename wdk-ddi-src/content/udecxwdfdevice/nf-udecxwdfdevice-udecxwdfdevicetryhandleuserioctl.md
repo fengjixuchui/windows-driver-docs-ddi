@@ -4,7 +4,6 @@ title: UdecxWdfDeviceTryHandleUserIoctl function (udecxwdfdevice.h)
 description: Attempts to handle an IOCTL request sent by a user-mode software.
 old-location: buses\udecxwdfdevicetryhandleuserioctl.htm
 tech.root: usbref
-ms.assetid: CC199F5C-BF05-4F1F-BEE4-8693F9156D8A
 ms.date: 05/07/2018
 keywords: ["UdecxWdfDeviceTryHandleUserIoctl function"]
 ms.keywords: UdecxWdfDeviceTryHandleUserIoctl, UdecxWdfDeviceTryHandleUserIoctl function [Buses], buses.udecxwdfdevicetryhandleuserioctl, udecxwdfdevice/UdecxWdfDeviceTryHandleUserIoctl
@@ -55,9 +54,9 @@ Attempts to handle an IOCTL request sent by a user-mode software.
 
 <p>A handle to a framework device object that represents the controller. The client driver initialized this object in the previous call to <a href="/windows-hardware/drivers/ddi/udecxwdfdevice/nf-udecxwdfdevice-udecxwdfdeviceaddusbdeviceemulation"><b>UdecxWdfDeviceAddUsbDeviceEmulation</b></a>.</p>
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object that represents the IOCTL request.
 
 ## -returns

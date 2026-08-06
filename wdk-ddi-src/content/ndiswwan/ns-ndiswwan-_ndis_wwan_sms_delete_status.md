@@ -4,7 +4,6 @@ title: _NDIS_WWAN_SMS_DELETE_STATUS (ndiswwan.h)
 description: The NDIS_WWAN_SMS_DELETE_STATUS structure represents the status of a deleted SMS text message.
 old-location: netvista\ndis_wwan_sms_delete_status.htm
 tech.root: netvista
-ms.assetid: 78591487-d534-4e9e-852a-5826b8a98a9b
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_SMS_DELETE_STATUS structure"]
 ms.keywords: "*PNDIS_WWAN_SMS_DELETE_STATUS, NDIS_WWAN_SMS_DELETE_STATUS, NDIS_WWAN_SMS_DELETE_STATUS structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_DELETE_STATUS, PNDIS_WWAN_SMS_DELETE_STATUS structure pointer [Network Drivers Starting with Windows Vista], WwanRef_aa4755ba-7eac-42ef-8901-170593ed60af.xml, _NDIS_WWAN_SMS_DELETE_STATUS, ndiswwan/NDIS_WWAN_SMS_DELETE_STATUS, ndiswwan/PNDIS_WWAN_SMS_DELETE_STATUS, netvista.ndis_wwan_sms_delete_status"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_SMS_DELETE_STATUS
+ - PNDIS_WWAN_SMS_DELETE_STATUS
  - NDIS_WWAN_SMS_DELETE_STATUS
 ---
 
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_SMS_DELETE_STATUS)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field uStatus
 
@@ -110,4 +111,5 @@ The status of the SMS delete operation.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
+

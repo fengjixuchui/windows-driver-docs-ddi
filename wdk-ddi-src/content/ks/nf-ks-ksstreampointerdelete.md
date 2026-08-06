@@ -4,7 +4,6 @@ title: KsStreamPointerDelete function (ks.h)
 description: The KsStreamPointerDelete function deletes a clone stream pointer, releasing a reference on the frame to which this stream pointer referred.
 old-location: stream\ksstreampointerdelete.htm
 tech.root: stream
-ms.assetid: 68819fe9-fd90-4391-a129-5aa0cae1558b
 ms.date: 04/23/2018
 keywords: ["KsStreamPointerDelete function"]
 ms.keywords: KsStreamPointerDelete, KsStreamPointerDelete function [Streaming Media Devices], avfunc_b21da27c-abf4-4277-8a22-232c31fbfe97.xml, ks/KsStreamPointerDelete, stream.ksstreampointerdelete
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ks.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,9 +50,9 @@ The<b> KsStreamPointerDelete </b>function deletes a clone stream pointer, releas
 
 ## -parameters
 
-### -param StreamPointer 
+### -param StreamPointer [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksstream_pointer">KSSTREAM_POINTER</a> structure representing the clone stream pointer to delete. Must be a clone stream pointer; cannot be the leading or trailing edge stream pointer.
 
 ## -remarks

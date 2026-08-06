@@ -4,7 +4,6 @@ title: UfxDeviceNotifySuspend function (ufxclient.h)
 description: Notifies UFX about a USB bus suspend event.
 old-location: buses\ufxdevicenotifysuspend.htm
 tech.root: usbref
-ms.assetid: 80786A5A-E585-4092-814F-B940DD6967C6
 ms.date: 05/07/2018
 keywords: ["UfxDeviceNotifySuspend function"]
 ms.keywords: UfxDeviceNotifySuspend, UfxDeviceNotifySuspend method [Buses], buses.ufxdevicenotifysuspend, ufxclient/UfxDeviceNotifySuspend
@@ -50,9 +49,9 @@ Notifies UFX about a USB bus suspend event.
 
 ## -parameters
 
-### -param UfxDevice 
+### -param UfxDevice [in]
 
-[in]
+
 A handle to a UFX device object that the driver created by calling <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
 
 ## -remarks

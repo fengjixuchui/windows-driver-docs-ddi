@@ -4,7 +4,6 @@ title: WdfFdoRetrieveNextStaticChild function (wdffdo.h)
 description: The WdfFdoRetrieveNextStaticChild method retrieves a handle to the next framework device object in a list of child devices.
 old-location: wdf\wdffdoretrievenextstaticchild.htm
 tech.root: wdf
-ms.assetid: ee0f458b-c8b3-46e7-87bd-25599d39203d
 ms.date: 02/26/2018
 keywords: ["WdfFdoRetrieveNextStaticChild function"]
 ms.keywords: DFDeviceObjectFdoPdoRef_013cf620-08fe-4c72-8a5e-c7e38a37b503.xml, WdfFdoRetrieveNextStaticChild, WdfFdoRetrieveNextStaticChild method, kmdf.wdffdoretrievenextstaticchild, wdf.wdffdoretrievenextstaticchild, wdffdo/WdfFdoRetrieveNextStaticChild
@@ -53,19 +52,19 @@ The <b>WdfFdoRetrieveNextStaticChild</b> method retrieves a handle to the next f
 
 ## -parameters
 
-### -param Fdo 
+### -param Fdo [in]
 
-[in]
+
 A handle to a framework device object that represents the parent device.
 
-### -param PreviousChild 
+### -param PreviousChild [in, optional]
 
-[in, optional]
+
 A handle to a framework device object that represents the child device that was returned by a previous call to <b>WdfFdoRetrieveNextStaticChild</b>. For the first call to <b>WdfFdoRetrieveNextStaticChild</b>, this value must be <b>NULL</b>.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfchildlist/ne-wdfchildlist-_wdf_retrieve_child_flags">WDF_RETRIEVE_CHILD_FLAGS</a>-typed enumerator value that identifies the type of child devices that the method should retrieve. This parameter cannot be zero.
 
 ## -returns

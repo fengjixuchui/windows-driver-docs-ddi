@@ -1,8 +1,7 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_MARKDEVICEASERROR
 title: _D3DKMT_MARKDEVICEASERROR (d3dkmthk.h)
-description: Marks a device as error.
-ms.assetid: d2fd01ec-02fe-4e9e-9fc9-68202f7de079
+description: The _D3DKMT_MARKDEVICEASERROR structure contains information that identifies a device and a reason for a device error.
 ms.date: 10/19/2018
 keywords: ["D3DKMT_MARKDEVICEASERROR structure"]
 ms.keywords: _D3DKMT_MARKDEVICEASERROR, D3DKMT_MARKDEVICEASERROR,
@@ -35,6 +34,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_MARKDEVICEASERROR
+ - D3DKMT_MARKDEVICEASERROR
 dev_langs:
  - c++
 ---

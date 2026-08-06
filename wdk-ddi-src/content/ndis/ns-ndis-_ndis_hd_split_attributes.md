@@ -4,7 +4,6 @@ title: _NDIS_HD_SPLIT_ATTRIBUTES (ndis.h)
 description: The NDIS_HD_SPLIT_ATTRIBUTES structure defines header-data split attributes, if any, that are associated with a miniport adapter.
 old-location: netvista\ndis_hd_split_attributes.htm
 tech.root: netvista
-ms.assetid: c3e28d66-1fe8-4cb0-ada0-4292387da19a
 ms.date: 05/02/2018
 keywords: ["NDIS_HD_SPLIT_ATTRIBUTES structure"]
 ms.keywords: "*PNDIS_HD_SPLIT_ATTRIBUTES, NDIS_HD_SPLIT_ATTRIBUTES, NDIS_HD_SPLIT_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], PNDIS_HD_SPLIT_ATTRIBUTES, PNDIS_HD_SPLIT_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], _NDIS_HD_SPLIT_ATTRIBUTES, header_data_split_ref_32bcb512-6620-48a5-8073-7b9ef0ef1f18.xml, ndis/NDIS_HD_SPLIT_ATTRIBUTES, ndis/PNDIS_HD_SPLIT_ATTRIBUTES, netvista.ndis_hd_split_attributes"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_HD_SPLIT_ATTRIBUTES
+ - PNDIS_HD_SPLIT_ATTRIBUTES
  - NDIS_HD_SPLIT_ATTRIBUTES
 ---
 
@@ -58,7 +59,7 @@ The NDIS_HD_SPLIT_ATTRIBUTES structure defines header-data split attributes, if 
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      provider characteristics structure (NDIS_HD_SPLIT_ATTRIBUTES). The driver sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_HD_SPLIT_ATTRIBUTES, the 
@@ -202,8 +203,9 @@ To support header-data split, a miniport driver passes a pointer to an
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+

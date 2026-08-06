@@ -4,7 +4,6 @@ title: StorPortResumeDevice function (storport.h)
 description: The StorPortResumeDevice routine resumes a previously paused logical unit.
 old-location: storage\storportresumedevice.htm
 tech.root: storage
-ms.assetid: 81b979a8-87bb-48f3-b44a-bac9286648fa
 ms.date: 03/29/2018
 keywords: ["StorPortResumeDevice function"]
 ms.keywords: StorPortResumeDevice, StorPortResumeDevice routine [Storage Devices], storage.storportresumedevice, storport/StorPortResumeDevice, storprt_62696d8f-cfb1-43fd-8b23-b14f1ac0d429.xml
@@ -51,24 +50,24 @@ The <b>StorPortResumeDevice</b> routine resumes a previously paused logical unit
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
 
-### -param PathId 
+### -param PathId [in]
 
-[in]
+
 Identifies the SCSI bus.
 
-### -param TargetId 
+### -param TargetId [in]
 
-[in]
+
 Identifies the target controller or device on the bus.
 
-### -param Lun 
+### -param Lun [in]
 
-[in]
+
 Identifies the logical unit number of the target device.
 
 ## -returns

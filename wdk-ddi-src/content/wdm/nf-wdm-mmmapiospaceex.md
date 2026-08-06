@@ -4,7 +4,6 @@ title: MmMapIoSpaceEx function (wdm.h)
 description: The MmMapIoSpaceEx routine maps the given physical address range to non-paged system space using the specified page protection.
 old-location: kernel\mmmapiospaceex.htm
 tech.root: kernel
-ms.assetid: 0A8216B2-822D-4157-876E-AA0A1A9D6D3F
 ms.date: 04/30/2018
 keywords: ["MmMapIoSpaceEx function"]
 ms.keywords: MmMapIoSpace, MmMapIoSpace routine [Kernel-Mode Driver Architecture], MmMapIoSpaceEx, kernel.mmmapiospaceex, wdm/MmMapIoSpace
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - NtosKrnl.exe
 api_name:
- - MmMapIoSpace
+ - MmMapIoSpaceEx
 ---
 
 # MmMapIoSpaceEx function
@@ -50,19 +49,19 @@ The <b>MmMapIoSpaceEx</b> routine maps the given physical address range to non-p
 
 ## -parameters
 
-### -param PhysicalAddress 
+### -param PhysicalAddress [in]
 
-[in]
+
 Specifies the starting physical address of the I/O range to be mapped.
 
-### -param NumberOfBytes 
+### -param NumberOfBytes [in]
 
-[in]
+
 Specifies a value greater than zero, indicating the number of bytes to be mapped.
 
-### -param Protect 
+### -param Protect [in]
 
-[in]
+
 Flag bits that specify the protection to use for the mapped range. The caller must set one of the following flag bits in the <i>Protect</i> parameter.
 
 <table>
@@ -137,3 +136,4 @@ For more information about using this routine, see <a href="/windows-hardware/dr
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-mmunmapiospace">MmUnmapIoSpace</a>
+

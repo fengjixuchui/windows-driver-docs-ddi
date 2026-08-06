@@ -4,7 +4,6 @@ title: PINT10_WRITE_MEMORY (video.h)
 description: The Int10WriteMemory function writes the contents of an input buffer to memory in the context of another thread.
 old-location: display\int10writememory.htm
 tech.root: display
-ms.assetid: a1143ca4-9c39-4bd7-92e1-473bdb447eb5
 ms.date: 05/10/2018
 keywords: ["PINT10_WRITE_MEMORY callback function"]
 ms.keywords: Int10WriteMemory, Int10WriteMemory callback function [Display Devices], PINT10_WRITE_MEMORY, PINT10_WRITE_MEMORY callback, VideoPort_Functions_6a882de2-2147-4b15-b4d8-6a87c49fa3d9.xml, display.int10writememory, video/Int10WriteMemory
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - video.h
 api_name:
- - Int10WriteMemory
+ - PINT10_WRITE_MEMORY
 ---
 
 # PINT10_WRITE_MEMORY callback function
@@ -50,29 +49,29 @@ The <i>Int10WriteMemory</i> function writes the contents of an input buffer to m
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to a video port driver-defined context for the interface. This should be the same as the value in the <b>Context</b> member of the <a href="/windows-hardware/drivers/ddi/video/ns-video-_video_port_int10_interface">VIDEO_PORT_INT10_INTERFACE</a> structure after <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportqueryservices">VideoPortQueryServices</a> returns.
 
-### -param Seg 
+### -param Seg [in]
 
-[in]
+
 Specifies the segment address of the buffer to be written.
 
-### -param Off 
+### -param Off [in]
 
-[in]
+
 Specifies the offset within the segment indicated by the <i>Seg</i> parameter.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to the memory location that marks the beginning of the input buffer.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Is the length, in bytes, of the input buffer specified by the <i>Buffer</i> parameter.
 
 ## -returns
@@ -86,3 +85,4 @@ The video port implements this function, which can be accessed through a pointer
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/video/ns-video-_video_port_int10_interface">VIDEO_PORT_INT10_INTERFACE</a>
+

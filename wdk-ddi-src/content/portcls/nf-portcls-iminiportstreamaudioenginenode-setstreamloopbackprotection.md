@@ -4,7 +4,6 @@ title: IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection (portcls.h)
 description: Sets the loopback protection status of the audio engine node.
 old-location: audio\iminiportstreamaudioenginenode_setstreamloopbackprotection.htm
 tech.root: audio
-ms.assetid: FAC9AC9B-9C4B-4D53-A59A-8901EC8755BC
 ms.date: 05/08/2018
 keywords: ["IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection"]
 ms.keywords: IMiniportStreamAudioEngineNode interface [Audio Devices],SetStreamLoopbackProtection method, IMiniportStreamAudioEngineNode.SetStreamLoopbackProtection, IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection, SetStreamLoopbackProtection, SetStreamLoopbackProtection method [Audio Devices], SetStreamLoopbackProtection method [Audio Devices],IMiniportStreamAudioEngineNode interface, audio.iminiportstreamaudioenginenode_setstreamloopbackprotection, portcls/IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IMiniportStreamAudioEngineNode.SetStreamLoopbackProtection
+ - IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection
 ---
 
 # IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection
@@ -50,9 +49,9 @@ Sets the loopback protection status of the audio engine node.
 
 ## -parameters
 
-### -param ProtectionOption 
+### -param ProtectionOption [in]
 
-[in]
+
 A CONSTRICTOR_OPTION enumeration  value that indicates status of the loopback protection option.
 
 ## -returns
@@ -74,3 +73,4 @@ CONSTRICTOR_OPTION
 
 
 <a href="/windows-hardware/drivers/audio/ksproperty-audioengine-loopback-protection">KSPROPERTY_AUDIOENGINE_LOOPBACK_PROTECTION</a>
+

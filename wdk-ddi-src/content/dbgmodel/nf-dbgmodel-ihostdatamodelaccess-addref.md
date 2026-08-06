@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IHostDataModelAccess.AddRef
 title: IHostDataModelAccess::AddRef (dbgmodel.h)
-description: Increments the reference count for an interface on an object. This method should be called for every new copy of a pointer to an interface on an object.
-ms.assetid: ded659de-3956-4532-bd8d-9a49074e5c6e
+description: "The IHostDataModelAccess::AddRef method increments the reference count for an interface on an object."
 ms.date: 07/20/2018
 keywords: ["IHostDataModelAccess::AddRef"]
 ms.keywords: IHostDataModelAccess::AddRef, AddRef, IHostDataModelAccess.AddRef, IHostDataModelAccess::AddRef, IHostDataModelAccess.AddRef
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IHostDataModelAccess.AddRef
+ - IHostDataModelAccess::AddRef
 ---
 
 # IHostDataModelAccess::AddRef
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IDataHostModelAccess interface](nn-dbgmodel-ihostdatamodelaccess.md)
+

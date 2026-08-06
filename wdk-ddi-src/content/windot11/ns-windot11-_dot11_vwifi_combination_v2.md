@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11._DOT11_VWIFI_COMBINATION_V2
 title: _DOT11_VWIFI_COMBINATION_V2 (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_VWIFI_COMBINATION_V2 structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_vwifi_combination_v2.htm
 tech.root: netvista
-ms.assetid: b30b868d-3012-4bdc-80f4-ffae2ebaa4d6
 ms.date: 02/16/2018
 keywords: ["DOT11_VWIFI_COMBINATION_V2 structure"]
 ms.keywords: "*PDOT11_VWIFI_COMBINATION_V2, DOT11_VWIFI_COMBINATION_V2, DOT11_VWIFI_COMBINATION_V2 structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_1210442c-19be-406c-bec5-12ad170fc90b.xml, PDOT11_VWIFI_COMBINATION_V2, PDOT11_VWIFI_COMBINATION_V2 structure pointer [Network Drivers Starting with Windows Vista], _DOT11_VWIFI_COMBINATION_V2, netvista.dot11_vwifi_combination_v2, windot11/DOT11_VWIFI_COMBINATION_V2, windot11/PDOT11_VWIFI_COMBINATION_V2"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - windot11.h
 api_name:
+ - _DOT11_VWIFI_COMBINATION_V2
+ - PDOT11_VWIFI_COMBINATION_V2
  - DOT11_VWIFI_COMBINATION_V2
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_VWIFI_COMBINATION_V2 structure
@@ -52,7 +51,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_VWIFI_COMBINATION_V2 structure specifies the combination of 802.11 MAC entities that an
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_VWIFI_COMBINATION_V2 structure specifies the combination of 802.11 MAC entities that an
   802.11 miniport driver can simultaneously support when it is virtualized.
 
 ## -struct-fields
@@ -61,7 +63,7 @@ product:
 
 The type, revision, and size of the DOT11_VWIFI_COMBINATION_V2 structure. This member is formatted
      as an
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+     <a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 
 The miniport driver must set the members of
@@ -89,7 +91,7 @@ This member must be set to
        sizeof(DOT11_VWIFI_COMBINATION_V2).
 
 For more information about these members, see
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+     <a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 ### -field uNumInfrastructure
 
@@ -173,4 +175,5 @@ Starting with Windows 7, the 802.11 miniport driver must only report one or more
 
 ## -see-also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+

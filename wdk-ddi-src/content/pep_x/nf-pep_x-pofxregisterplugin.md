@@ -1,10 +1,9 @@
 ---
 UID: NF:pep_x.PoFxRegisterPlugin
 title: PoFxRegisterPlugin function (pep_x.h)
-description: The PoFxRegisterPlugin routine registers a platform extension plug-in (PEP) with the Windows power management framework (PoFx).
+description: Learn how the PoFxRegisterPlugin routine registers a platform extension plug-in (PEP) with the Windows power management framework (PoFx).
 old-location: kernel\pofxregisterplugin.htm
 tech.root: kernel
-ms.assetid: BB50112E-6706-419C-9686-79F0F76926C3
 ms.date: 04/30/2018
 keywords: ["PoFxRegisterPlugin function"]
 ms.keywords: PoFxRegisterPlugin, PoFxRegisterPlugin routine [Kernel-Mode Driver Architecture], kernel.pofxregisterplugin, pepfx/PoFxRegisterPlugin
@@ -47,18 +46,18 @@ api_name:
 
 ## -description
 
-The <b>PoFxRegisterPlugin</b> routine registers a platform extension plug-in (PEP) with the Windows <a href="/windows-hardware/drivers/ddi/index">power management framework</a> (PoFx).
+The <b>PoFxRegisterPlugin</b> routine registers a platform extension plug-in (PEP) with the Windows <a href="/windows-hardware/drivers/ddi/_kernel/#device-power-management">power management framework</a> (PoFx).
 
 ## -parameters
 
-### -param PepInformation 
+### -param PepInformation [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_information">PEP_INFORMATION</a> structure.
 
-### -param KernelInformation 
+### -param KernelInformation [in, out]
 
-[in, out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_kernel_information_struct_v3">PEP_KERNEL_INFORMATION_STRUCT_V3</a> structure.
 
 ## -returns

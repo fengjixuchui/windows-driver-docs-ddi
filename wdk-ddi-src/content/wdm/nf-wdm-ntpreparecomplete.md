@@ -4,7 +4,6 @@ title: NtPrepareComplete function (wdm.h)
 description: The ZwPrepareComplete routine notifies KTM that the calling resource manager has finished preparing a transaction's data.
 old-location: kernel\zwpreparecomplete.htm
 tech.root: kernel
-ms.assetid: c3d9362e-8a9d-47df-a407-389a9bd65e3b
 ms.date: 04/30/2018
 keywords: ["NtPrepareComplete function"]
 ms.keywords: NtPrepareComplete, ZwPrepareComplete, ZwPrepareComplete routine [Kernel-Mode Driver Architecture], kernel.zwpreparecomplete, ktm_ref_2690208e-0252-4e3f-84c6-29750139da00.xml, wdm/NtPrepareComplete, wdm/ZwPrepareComplete
@@ -38,7 +37,6 @@ api_type:
 api_location:
  - NtosKrnl.exe
 api_name:
- - ZwPrepareComplete
  - NtPrepareComplete
 ---
 
@@ -51,14 +49,14 @@ The <b>ZwPrepareComplete</b> routine notifies KTM that the calling resource mana
 
 ## -parameters
 
-### -param EnlistmentHandle 
+### -param EnlistmentHandle [in]
 
-[in]
+
 A handle to an <a href="/windows-hardware/drivers/kernel/enlistment-objects">enlistment object</a> that was obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment">ZwCreateEnlistment</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a>. The handle must have ENLISTMENT_SUBORDINATE_RIGHTS access to the object.
 
-### -param TmVirtualClock 
+### -param TmVirtualClock [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows-hardware/drivers/kernel/using-virtual-clock-values">virtual clock value</a>. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns
@@ -150,3 +148,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntprepreparecomplete">ZwPrePrepareComplete</a>
+

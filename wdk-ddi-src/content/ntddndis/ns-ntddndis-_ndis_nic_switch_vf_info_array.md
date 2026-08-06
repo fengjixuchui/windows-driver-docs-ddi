@@ -4,7 +4,6 @@ title: _NDIS_NIC_SWITCH_VF_INFO_ARRAY (ntddndis.h)
 description: The NDIS_NIC_SWITCH_VF_INFO_ARRAY structure specifies an array. Each element in the array specifies the attributes of a PCI Express (PCIe) virtual functions (VF) that have been enabled and allocated on a network adapter.
 old-location: netvista\ndis_nic_switch_vf_info_array.htm
 tech.root: netvista
-ms.assetid: e772eafe-e0c7-4d98-8a9e-7eb56cface37
 ms.date: 05/02/2018
 keywords: ["NDIS_NIC_SWITCH_VF_INFO_ARRAY structure"]
 ms.keywords: "*PNDIS_NIC_SWITCH_VF_INFO_ARRAY, NDIS_NIC_SWITCH_VF_INFO_ARRAY, NDIS_NIC_SWITCH_VF_INFO_ARRAY structure [Network Drivers Starting with Windows Vista], PNDIS_NIC_SWITCH_VF_INFO_ARRAY, PNDIS_NIC_SWITCH_VF_INFO_ARRAY structure pointer [Network Drivers Starting with Windows Vista], _NDIS_NIC_SWITCH_VF_INFO_ARRAY, netvista.ndis_nic_switch_vf_info_array, ntddndis/NDIS_NIC_SWITCH_VF_INFO_ARRAY, ntddndis/PNDIS_NIC_SWITCH_VF_INFO_ARRAY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_NIC_SWITCH_VF_INFO_ARRAY
+ - PNDIS_NIC_SWITCH_VF_INFO_ARRAY
  - NDIS_NIC_SWITCH_VF_INFO_ARRAY
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_NIC_SWITCH_VF_INFO_ARRAY</b> structure specifies an array. Each elem
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_NIC_SWITCH_VF_INFO_ARRAY</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_NIC_SWITCH_VF_INFO_ARRAY</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 NDIS sets the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_NIC_SWITCH_VF_INFO_ARRAY</b> structure, NDIS sets the <b>Revision</b> member of <b>Header</b> to the following value: 
 
@@ -129,8 +130,9 @@ NDIS returns an <b>NDIS_NIC_SWITCH_VF_INFO_ARRAY</b> structure when it handles a
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/network/oid-nic-switch-enum-vfs">OID_NIC_SWITCH_ENUM_VFS</a>
+

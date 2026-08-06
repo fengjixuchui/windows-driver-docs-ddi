@@ -4,7 +4,6 @@ title: IWDTFStrings2::Remove (wdtf.h)
 description: Removes a string from the collection.
 old-location: dtf\iwdtfstrings2_remove.htm
 tech.root: dtf
-ms.assetid: cd32b54a-57e0-496c-b18c-84a6c75d8820
 ms.date: 04/04/2018
 keywords: ["IWDTFStrings2::Remove"]
 ms.keywords: IWDTFStrings2 interface [Windows Device Testing Framework],Remove method, IWDTFStrings2.Remove, IWDTFStrings2::Remove, Microsoft.WDTF.IWDTFStrings2.Remove, Microsoft::WDTF::IWDTFStrings2::Remove, Remove, Remove method [Windows Device Testing Framework], Remove method [Windows Device Testing Framework],IWDTFStrings2 interface, dtf.iwdtfstrings2_remove, wdtf/IWDTFStrings2::Remove
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFStrings2.Remove
+ - IWDTFStrings2::Remove
 ---
 
 # IWDTFStrings2::Remove
@@ -50,9 +49,9 @@ Removes a string from the collection.
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 The 0-based index value of the string to remove.
 
 ## -returns
@@ -62,3 +61,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtfstrings2">IWDTFStrings2</a>
+

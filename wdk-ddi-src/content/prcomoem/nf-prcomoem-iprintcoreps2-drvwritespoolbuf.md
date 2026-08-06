@@ -4,7 +4,6 @@ title: IPrintCorePS2::DrvWriteSpoolBuf (prcomoem.h)
 description: The IPrintCorePS2::DrvWriteSpoolBuf method is provided by the Pscript5 driver so that a rendering plug-in can send printer data to the spooler.
 old-location: print\iprintcoreps2_drvwritespoolbuf.htm
 tech.root: print
-ms.assetid: 25405dd8-730e-4de6-af44-9dd584ed3087
 ms.date: 04/20/2018
 keywords: ["IPrintCorePS2::DrvWriteSpoolBuf"]
 ms.keywords: DrvWriteSpoolBuf, DrvWriteSpoolBuf method [Print Devices], DrvWriteSpoolBuf method [Print Devices],IPrintCorePS2 interface, IPrintCorePS2 interface [Print Devices],DrvWriteSpoolBuf method, IPrintCorePS2.DrvWriteSpoolBuf, IPrintCorePS2::DrvWriteSpoolBuf, prcomoem/IPrintCorePS2::DrvWriteSpoolBuf, print.iprintcoreps2_drvwritespoolbuf, print_unidrv-pscript_rendering_56d81faa-5b82-4d07-beb1-9a8a82fc7409.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintCorePS2.DrvWriteSpoolBuf
+ - IPrintCorePS2::DrvWriteSpoolBuf
 ---
 
 # IPrintCorePS2::DrvWriteSpoolBuf
@@ -50,24 +49,24 @@ The <code>IPrintCorePS2::DrvWriteSpoolBuf</code> method is provided by the Pscri
 
 ## -parameters
 
-### -param pdevobj 
+### -param pdevobj [in]
 
-[in]
+
 Caller-supplied pointer to a <a href="/windows-hardware/drivers/ddi/printoem/ns-printoem-_devobj">DEVOBJ</a> structure.
 
-### -param pBuffer 
+### -param pBuffer [in]
 
-[in]
+
 Caller-supplied pointer to a buffer containing data to be sent to the print spooler.
 
-### -param cbSize 
+### -param cbSize [in]
 
-[in]
+
 Caller-supplied value representing the size, in bytes, of the buffer pointed to by <i>pBuffer</i>.
 
-### -param pdwResult 
+### -param pdwResult [out]
 
-[out]
+
 Receives a method-supplied value representing the number of bytes sent to the spooler.
 
 ## -returns
@@ -125,3 +124,4 @@ This method has the same behavior as <a href="/windows-hardware/drivers/ddi/prco
 
 
 <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemdriverps-drvwritespoolbuf">IPrintOemDriverPS::DrvWriteSpoolBuf</a>
+

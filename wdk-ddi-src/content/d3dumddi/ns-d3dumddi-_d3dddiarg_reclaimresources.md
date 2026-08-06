@@ -4,7 +4,6 @@ title: _D3DDDIARG_RECLAIMRESOURCES (d3dumddi.h)
 description: Describes video memory resources that are to be reclaimed and that the user-mode display driver previously offered for reuse. Used with the ReclaimResources function.
 old-location: display\d3dddiarg_reclaimresources.htm
 tech.root: display
-ms.assetid: 58e8738c-b10a-4c93-b179-03efcb65412d
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_RECLAIMRESOURCES structure"]
 ms.keywords: D3DDDIARG_RECLAIMRESOURCES, D3DDDIARG_RECLAIMRESOURCES structure [Display Devices], _D3DDDIARG_RECLAIMRESOURCES, d3dumddi/D3DDDIARG_RECLAIMRESOURCES, display.d3dddiarg_reclaimresources
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dumddi.h
 api_name:
+ - _D3DDDIARG_RECLAIMRESOURCES
  - D3DDDIARG_RECLAIMRESOURCES
 ---
 
@@ -52,13 +52,13 @@ Describes video memory resources that are to be reclaimed and that the user-mode
 
 ## -struct-fields
 
-### -field pResources
+### -field pResources [in]
 
-[in] A pointer to an array of handles to the resources that are to be reclaimed.
+A pointer to an array of handles to the resources that are to be reclaimed.
 
-### -field pDiscarded
+### -field pDiscarded [out]
 
-[out] An optional array of Boolean values that specify whether each resource or allocation was discarded.
+An optional array of Boolean values that specify whether each resource or allocation was discarded.
 
 Each Boolean value in this array corresponds to a resource at the same index location in the structure pointed to by <b>pResources</b>.
 
@@ -66,9 +66,9 @@ The driver sets each Boolean value to <b>TRUE</b> if the corresponding resource 
 
 If <b>pDiscarded</b> is <b>NULL</b>, the driver can ignore it.
 
-### -field Resources
+### -field Resources [in]
 
-[in] The number of elements in the arrays pointed to by <b>pResources</b> and <b>pDiscarded</b>.
+The number of elements in the arrays pointed to by <b>pResources</b> and <b>pDiscarded</b>.
 
 ## -see-also
 
@@ -77,3 +77,4 @@ If <b>pDiscarded</b> is <b>NULL</b>, the driver can ignore it.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_reclaimresources">ReclaimResources</a>
+

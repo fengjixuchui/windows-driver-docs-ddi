@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_20
+UID: NS:ksmedia.KSDATARANGE_AUDIO
 title: KSDATARANGE_AUDIO (ksmedia.h)
 description: The KSDATARANGE_AUDIO structure specifies a range of audio formats.
 old-location: audio\ksdatarange_audio.htm
 tech.root: audio
-ms.assetid: 53631f26-8377-4ab5-83db-ed241c11643a
 ms.date: 05/08/2018
 keywords: ["KSDATARANGE_AUDIO structure"]
 ms.keywords: "*PKSDATARANGE_AUDIO, KSDATARANGE_AUDIO, KSDATARANGE_AUDIO structure [Audio Devices], PKSDATARANGE_AUDIO, PKSDATARANGE_AUDIO structure pointer [Audio Devices], aud-prop_9a59d4cd-4c84-4c22-8a36-741cf53ec08d.xml, audio.ksdatarange_audio, ksmedia/KSDATARANGE_AUDIO, ksmedia/PKSDATARANGE_AUDIO"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSDATARANGE_AUDIO
  - KSDATARANGE_AUDIO
 ---
 
@@ -85,3 +85,4 @@ For information about data ranges and intersection handling, see <a href="/windo
 ## -see-also
 
 <a href="/previous-versions/ff561658(v=vs.85)">KSDATARANGE</a>
+

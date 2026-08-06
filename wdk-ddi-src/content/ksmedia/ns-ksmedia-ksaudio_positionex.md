@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_48
+UID: NS:ksmedia.KSAUDIO_POSITIONEX
 title: KSAUDIO_POSITIONEX (ksmedia.h)
 description: The KSAUDIO_POSITIONEX structure specifies the stream position and the associated timestamp information for a kernel streaming (KS)-based audio driver.
 old-location: audio\ksaudio_positionex.htm
 tech.root: audio
-ms.assetid: 63cd938c-1ccd-4f67-a4eb-2898002ae762
 ms.date: 04/30/2019
 keywords: ["KSAUDIO_POSITIONEX structure"]
 ms.keywords: "*PKSAUDIO_POSITIONEX, KSAUDIO_POSITIONEX, KSAUDIO_POSITIONEX structure [Audio Devices], PKSAUDIO_POSITIONEX, PKSAUDIO_POSITIONEX structure pointer [Audio Devices], aud-prop_9a418d76-9a4f-4626-b6db-64ed4fcedb18.xml, audio.ksaudio_positionex, ksmedia/KSAUDIO_POSITIONEX, ksmedia/PKSAUDIO_POSITIONEX"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSAUDIO_POSITIONEX
  - KSAUDIO_POSITIONEX
 ---
 
@@ -75,3 +75,4 @@ A KS-based audio driver can use the KSAUDIO_POSITIONEX structure along with the 
 ## -see-also
 
 <a href="/windows-hardware/drivers/audio/ksproperty-audio-positionex">KSPROPERTY_AUDIO_POSITIONEX</a>
+

@@ -4,14 +4,13 @@ title: DXGKDDI_PROTECTED_CALLBACK (dispmprt.h)
 description: The DxgkProtectedCallback callback routine is implemented by the display miniport driver and is called by DxgkCbExcludeAdapterAccess during a protected state when all access to the display adapter is prevented.
 old-location: display\dxgkprotectedcallback.htm
 tech.root: display
-ms.assetid: 7e282ec6-c159-47a4-af14-2b0cb8e34a8e
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_PROTECTED_CALLBACK callback function"]
 ms.keywords: DXGKDDI_PROTECTED_CALLBACK, DXGKDDI_PROTECTED_CALLBACK callback, DmFunctions_a4386149-d1c4-45f4-8649-5539783620f4.xml, DxgkProtectedCallback, DxgkProtectedCallback callback function [Display Devices], display.dxgkprotectedcallback, dispmprt/DxgkProtectedCallback
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
- - DxgkProtectedCallback
+ - DXGKDDI_PROTECTED_CALLBACK
 ---
 
 # DXGKDDI_PROTECTED_CALLBACK callback function
@@ -50,17 +49,17 @@ The <i>DxgkProtectedCallback</i> callback routine is implemented by the display 
 
 ## -parameters
 
-### -param MiniportDeviceContext
+### -param MiniportDeviceContext [in]
 
-[in] A handle to a context block associated with a display adapter. The display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.
+A handle to a context block associated with a display adapter. The display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.
 
-### -param ProtectedCallbackContext 
+### -param ProtectedCallbackContext [in]
 
-[in] A pointer to driver-defined information that was specified in a previous call to <a href="..\dispmprt\nc-dispmprt-dxgkcb_exclude_adapter_access.md">DxgkCbExcludeAdapterAccess</a>.
+A pointer to driver-defined information that was specified in a previous call to <a href="..\dispmprt\nc-dispmprt-dxgkcb_exclude_adapter_access.md">DxgkCbExcludeAdapterAccess</a>.
 
-### -param ProtectionStatus 
+### -param ProtectionStatus [in]
 
-[in] Status of the display adapter's protected state. If STATUS_SUCCESS, the adapter was successfully protected from access. A failure status code indicates that the adapter is not protected.
+Status of the display adapter's protected state. If STATUS_SUCCESS, the adapter was successfully protected from access. A failure status code indicates that the adapter is not protected.
 
 ## -prototype
 

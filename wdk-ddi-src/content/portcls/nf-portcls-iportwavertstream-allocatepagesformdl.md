@@ -4,7 +4,6 @@ title: IPortWaveRTStream::AllocatePagesForMdl (portcls.h)
 description: The AllocatePagesForMdl method allocates a list of nonpaged physical memory pages and returns a pointer to a memory descriptor list (MDL) that describes them.
 old-location: audio\iportwavertstream_allocatepagesformdl.htm
 tech.root: audio
-ms.assetid: 44839b9e-f206-49e6-a9f6-14e79d1e0ae2
 ms.date: 05/08/2018
 keywords: ["IPortWaveRTStream::AllocatePagesForMdl"]
 ms.keywords: AllocatePagesForMdl, AllocatePagesForMdl method [Audio Devices], AllocatePagesForMdl method [Audio Devices],IPortWaveRTStream interface, IPortWaveRTStream interface [Audio Devices],AllocatePagesForMdl method, IPortWaveRTStream.AllocatePagesForMdl, IPortWaveRTStream::AllocatePagesForMdl, audio.iportwavertstream_allocatepagesformdl, audmp-routines_2722e5c2-7fd2-4b72-acbf-474313bca229.xml, portcls/IPortWaveRTStream::AllocatePagesForMdl
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Passive level
+req.irql: PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IPortWaveRTStream.AllocatePagesForMdl
+ - IPortWaveRTStream::AllocatePagesForMdl
 ---
 
 # IPortWaveRTStream::AllocatePagesForMdl
@@ -50,14 +49,14 @@ The <code>AllocatePagesForMdl</code> method allocates a list of nonpaged physica
 
 ## -parameters
 
-### -param HighAddress 
+### -param HighAddress [in]
 
-[in]
+
 Specifies the high end of the address range from which the storage for the MDL can be allocated. The low end of the address range is implicitly zero.
 
-### -param TotalBytes 
+### -param TotalBytes [in]
 
-[in]
+
 Specifies the total number of bytes to allocate for the MDL. This method always allocates an integral number of memory pages.
 
 ## -returns
@@ -87,3 +86,4 @@ Like the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatepagesformdl
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-iportwavertstream-mapallocatedpages">IPortWaveRTStream::MapAllocatedPages</a>
+

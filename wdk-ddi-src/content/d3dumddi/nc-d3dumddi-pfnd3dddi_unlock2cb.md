@@ -4,7 +4,6 @@ title: PFND3DDDI_UNLOCK2CB (d3dumddi.h)
 description: The pfnUnlock2Cb function unlocks an allocation that was locked by a call to the pfnLock2Cb function.
 old-location: display\pfnunlock2cb.htm
 tech.root: display
-ms.assetid: 642C6A05-DA8C-453A-B1AA-030C59F32DA5
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_UNLOCK2CB callback function"]
 ms.keywords: PFND3DDDI_UNLOCK2CB, PFND3DDDI_UNLOCK2CB callback, d3dumddi/pfnUnlock2Cb, display.pfnunlock2cb, pfnUnlock2Cb, pfnUnlock2Cb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnUnlock2Cb
-product:
- - Windows
+ - PFND3DDDI_UNLOCK2CB
 ---
 
 # PFND3DDDI_UNLOCK2CB callback function
@@ -56,7 +53,7 @@ The <b>pfnUnlock2Cb</b> function unlocks an allocation that was locked by a call
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -65,3 +62,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dd
 ## -returns
 
 If this callback function succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
+

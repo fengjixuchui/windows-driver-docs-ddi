@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILCALLINFO_V4
 title: RILCALLINFO_V4 (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILCALLINFO_V4 structure for internal use only. Don't use the RILCALLINFO_V4 structure in your code."
 old-location: netvista\rilcallinfo_v4.htm
 tech.root: netvista
-ms.assetid: 456597d1-e24c-414c-b099-509078cafdc1
 ms.date: 05/02/2018
 keywords: ["RILCALLINFO_V4 structure"]
 ms.keywords: "*LPRILCALLINFO_V4, RILCALLINFO_V4, RILCALLINFO_V4 structure [Network Drivers Starting with Windows Vista], netvista.rilcallinfo_v4, ntddrilapitypes/RILCALLINFO_V4"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILCALLINFO_V4
+ - LPRILCALLINFO_V4
 ---
 
 # RILCALLINFO_V4 structure (ntddrilapitypes.h)

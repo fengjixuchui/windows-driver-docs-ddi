@@ -3,11 +3,8 @@ UID: NC:hdaudio.PHDAUDIO_DMA_NOTIFICATION_CALLBACK
 title: PHDAUDIO_DMA_NOTIFICATION_CALLBACK
 description: HDAudio codec DMA Notification Callback function.
 tech.root: audio
-ms.assetid: 5f618d11-1d66-4bf8-8176-91101c5355f3
-ms.date: 04/08/2019
+ms.date: 07/27/2023
 keywords: ["PHDAUDIO_DMA_NOTIFICATION_CALLBACK callback function"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: hdaudio.h
 req.include-header: hdaudio.h
 req.target-type: 
@@ -38,12 +35,9 @@ api_location:
  - hdaudio.h
 api_name:
  - PHDAUDIO_DMA_NOTIFICATION_CALLBACK
-product:
- - Windows
 ---
 
 # PHDAUDIO_DMA_NOTIFICATION_CALLBACK callback function
-
 
 ## -description
 
@@ -53,17 +47,17 @@ HDAudio codec DMA Notification Callback function.
 
 ## -parameters
 
-### -param Context:
+### -param unnamedParam1
 
-Driver-specific context value used when registering the callback routine.
+**Context** - Driver-specific context value used when registering the callback routine.
 
-### -param QPCDMANotificationTimestamp:
+### -param unnamedParam2
 
-The QPC time when the IOC ISR handled the DMA interrupt.
+**QPCDMANotificationTimestamp** - The QPC time when the IOC ISR handled the DMA interrupt.
 
 ## -prototype
 
-```
+```cpp
 //Declaration
 
 PHDAUDIO_DMA_NOTIFICATION_CALLBACK PHdAudioDmaNotificationCallback; 
@@ -76,7 +70,6 @@ VOID PHdAudioDmaNotificationCallback
 	LARGE_INTEGER QPCDMANotificationTimestamp 
 )
 {...}
-
 ```
 
 ## -remarks
@@ -84,4 +77,3 @@ VOID PHdAudioDmaNotificationCallback
 ## -see-also
 
 [hdaudio.h](../hdaudio/index.md)
-

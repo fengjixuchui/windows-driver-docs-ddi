@@ -4,7 +4,6 @@ title: MmMapMdl function (wdm.h)
 description: This function maps physical pages described by a memory descriptor list (MDL) into the system virtual address space.
 old-location: kernel\mmmapmdl.htm
 tech.root: kernel
-ms.assetid: 4272f7a2-9379-40dd-a0a1-784dd25bc8bc
 ms.date: 04/30/2018
 keywords: ["MmMapMdl function"]
 ms.keywords: MmMapMdl, MmMapMdl function [Kernel-Mode Driver Architecture], kernel.mmmapmdl, wdm/MmMapMdl
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe (kernel mode)
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,24 +50,24 @@ This function maps physical pages described by a memory descriptor
 
 ## -parameters
 
-### -param MemoryDescriptorList 
+### -param MemoryDescriptorList [in]
 
-[in]
+
 A pointer to a valid MDL.
 
-### -param Protection 
+### -param Protection [in]
 
-[in]
+
 A bitwise of flags that indicates the protection to set for the pages. Possible values are PAGE_Xxx constants defined in Wdm.h.
 
-### -param DriverRoutine 
+### -param DriverRoutine [in]
 
-[in]
+
  A pointer to a driver-supplied callback routine (<a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-mm_mdl_routine">MM_MDL_ROUTINE</a>) that is invoked after the MDL is mapped.
 
-### -param DriverContext 
+### -param DriverContext [in]
 
-[in]
+
 A pointer to a driver-defined context. The driver's callback function can store any status information  in the driver context and then examine the value, when the callback is invoked.
 
 ## -returns

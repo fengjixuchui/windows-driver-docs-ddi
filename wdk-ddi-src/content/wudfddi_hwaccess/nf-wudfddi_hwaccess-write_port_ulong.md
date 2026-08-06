@@ -4,7 +4,6 @@ title: WRITE_PORT_ULONG function (wudfddi_hwaccess.h)
 description: The WRITE_PORT_ULONG function writes a ULONG value to the specified port address.
 old-location: wdf\write_port_ulong.htm
 tech.root: wdf
-ms.assetid: 400823C4-5F71-4334-9160-FAC0690F209F
 ms.date: 02/26/2018
 keywords: ["WRITE_PORT_ULONG function"]
 ms.keywords: WRITE_PORT_ULONG, WRITE_PORT_ULONG function, umdf.write_port_ulong, wdf.write_port_ulong, wudfddi_hwaccess/WRITE_PORT_ULONG
@@ -52,19 +51,19 @@ The <b>WRITE_PORT_ULONG</b> function writes a ULONG value to the specified port 
 
 ## -parameters
 
-### -param pDevice 
+### -param pDevice [in]
 
-[in]
+
 Specifies a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a> interface for the device object of the device to access.
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 A pointer to the port, which must be a mapped memory range in I/O space.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies a ULONG value to be written to the port.
 
 ## -remarks

@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILSENDMSGRESPONSE
 title: RILSENDMSGRESPONSE (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILSENDMSGRESPONSE structure for internal use only."
 old-location: netvista\rilsendmsgresponse.htm
 tech.root: netvista
-ms.assetid: 64ff0ba7-726e-49ee-bb7c-338b77458fc1
 ms.date: 05/02/2018
 keywords: ["RILSENDMSGRESPONSE structure"]
 ms.keywords: "*LPRILSENDMSGRESPONSE, RILSENDMSGRESPONSE, RILSENDMSGRESPONSE structure [Network Drivers Starting with Windows Vista], netvista.rilsendmsgresponse, ntddrilapitypes/RILSENDMSGRESPONSE"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSENDMSGRESPONSE
+ - LPRILSENDMSGRESPONSE
 ---
 
 # RILSENDMSGRESPONSE structure (rilapitypes.h)

@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11.DOT11_BSS_ENTRY
 title: DOT11_BSS_ENTRY (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_BSS_ENTRY structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_bss_entry.htm
 tech.root: netvista
-ms.assetid: 50661fc9-2f1f-4c9a-bc15-1cdf7c1f6d01
 ms.date: 02/16/2018
 keywords: ["DOT11_BSS_ENTRY structure"]
 ms.keywords: "*PDOT11_BSS_ENTRY, DOT11_BSS_ENTRY, DOT11_BSS_ENTRY structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_f884f12d-d267-4ae3-b632-6c318b515880.xml, PDOT11_BSS_ENTRY, PDOT11_BSS_ENTRY structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_bss_entry, windot11/DOT11_BSS_ENTRY, windot11/PDOT11_BSS_ENTRY"
@@ -41,8 +40,7 @@ api_location:
  - windot11.h
 api_name:
  - DOT11_BSS_ENTRY
-product:
- - Windows 10 or later.
+ - PDOT11_BSS_ENTRY
 ---
 
 # DOT11_BSS_ENTRY structure
@@ -50,7 +48,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_BSS_ENTRY structure defines an IEEE 802.11 Beacon or Response Frame that the 802.11 station
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_BSS_ENTRY structure defines an IEEE 802.11 Beacon or Response Frame that the 802.11 station
   received during its last scan operation.
 
 ## -struct-fields
@@ -249,3 +250,4 @@ After the 802.11 station completes the scan operation, the miniport driver retur
 
 
 <a href="/windows-hardware/drivers/network/oid-dot11-enum-bss-list">OID_DOT11_ENUM_BSS_LIST</a>
+

@@ -2,7 +2,6 @@
 UID: NF:d3dkmthk.D3DKMTQueryFSEBlock
 title: D3DKMTQueryFSEBlock function (d3dkmthk.h)
 description: Query FSE block.
-ms.assetid: 1017fd2f-eae0-401e-aea0-49016415907b
 ms.date: 10/19/2018
 keywords: ["D3DKMTQueryFSEBlock function"]
 ms.keywords: D3DKMTQueryFSEBlock
@@ -50,7 +49,7 @@ Query FSE block.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_QUERYFSEBLOCK](ns-d3dkmthk-_d3dkmt_queryfseblock.md) structure.
 

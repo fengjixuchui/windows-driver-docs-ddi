@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._WHEAP_PROCESS_HEST_EVENT
 title: WHEAP_PROCESS_HEST_EVENT
-description: 
-tech.root: 
-ms.assetid: 35c15ccb-8d4d-4247-b7db-ec0bd0864605
+description: "Learn more about: WHEAP_PROCESS_HEST_EVENT structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEAP_PROCESS_HEST_EVENT structure"]
 ms.keywords: WHEAP_PROCESS_HEST_EVENT, WHEAP_PROCESS_HEST_EVENT, *PWHEAP_PROCESS_HEST_EVENT,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEAP_PROCESS_HEST_EVENT
+ - PWHEAP_PROCESS_HEST_EVENT
  - WHEAP_PROCESS_HEST_EVENT
-product:
- - Windows
 ---
 
 # WHEAP_PROCESS_HEST_EVENT structure

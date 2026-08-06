@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSystemObjects4.GetThreadIdByHandle
 title: IDebugSystemObjects4::GetThreadIdByHandle (dbgeng.h)
-description: The GetThreadIdByHandle method returns the engine thread ID for the specified thread. The thread is specified by its system handle.
+description: "The IDebugSystemObjects4::GetThreadIdByHandle method returns the engine thread ID for the specified thread. The thread is specified by its system handle."
 old-location: debugger\getthreadidbyhandle.htm
 tech.root: debugger
-ms.assetid: 80962f29-9a11-456b-b083-bd0f4e26e954
 ms.date: 05/03/2018
 keywords: ["IDebugSystemObjects4::GetThreadIdByHandle"]
 ms.keywords: GetThreadIdByHandle, GetThreadIdByHandle method [Windows Debugging], GetThreadIdByHandle method [Windows Debugging],IDebugSystemObjects interface, GetThreadIdByHandle method [Windows Debugging],IDebugSystemObjects2 interface, GetThreadIdByHandle method [Windows Debugging],IDebugSystemObjects3 interface, GetThreadIdByHandle method [Windows Debugging],IDebugSystemObjects4 interface, IDebugSystemObjects interface [Windows Debugging],GetThreadIdByHandle method, IDebugSystemObjects2 interface [Windows Debugging],GetThreadIdByHandle method, IDebugSystemObjects2::GetThreadIdByHandle, IDebugSystemObjects3 interface [Windows Debugging],GetThreadIdByHandle method, IDebugSystemObjects3::GetThreadIdByHandle, IDebugSystemObjects4 interface [Windows Debugging],GetThreadIdByHandle method, IDebugSystemObjects4.GetThreadIdByHandle, IDebugSystemObjects4::GetThreadIdByHandle, IDebugSystemObjects::GetThreadIdByHandle, IDebugSystemObjects_d1cb023a-dd00-42bf-9827-e2ee98878964.xml, dbgeng/IDebugSystemObjects2::GetThreadIdByHandle, dbgeng/IDebugSystemObjects3::GetThreadIdByHandle, dbgeng/IDebugSystemObjects4::GetThreadIdByHandle, dbgeng/IDebugSystemObjects::GetThreadIdByHandle, debugger.getthreadidbyhandle
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSystemObjects.GetThreadIdByHandle
- - IDebugSystemObjects2.GetThreadIdByHandle
- - IDebugSystemObjects3.GetThreadIdByHandle
- - IDebugSystemObjects4.GetThreadIdByHandle
+ - IDebugSystemObjects4::GetThreadIdByHandle
 ---
 
 # IDebugSystemObjects4::GetThreadIdByHandle
@@ -53,14 +49,14 @@ The <b>GetThreadIdByHandle</b> method returns the engine thread ID for the speci
 
 ## -parameters
 
-### -param Handle 
+### -param Handle [in]
 
-[in]
+
 Specifies the system handle of the thread whose thread ID is requested.
 
-### -param Id 
+### -param Id [out]
 
-[out]
+
 Receives the engine thread ID.
 
 ## -returns
@@ -90,3 +86,4 @@ The method was successful.
 In kernel-mode debugging, because the handle is an artificial handle for a processor,  this method returns the engine thread ID for the virtual thread representing that processor.
 
 For more information about threads, see <a href="/windows-hardware/drivers/debugger/threads-and-processes">Threads and Processes</a>.  For details on system handles, see <a href="/windows-hardware/drivers/">Handles</a>.
+

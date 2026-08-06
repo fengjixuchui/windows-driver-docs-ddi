@@ -4,7 +4,6 @@ title: IDebugClient5::SetOutputCallbacksWide (dbgeng.h)
 description: The SetOutputCallbacksWide method registers an output callbacks object with this client.
 old-location: debugger\setoutputcallbackswide.htm
 tech.root: debugger
-ms.assetid: cd6f68b2-2a62-4607-8c70-11a94fd75ecb
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::SetOutputCallbacksWide"]
 ms.keywords: IDebugClient5 interface [Windows Debugging],SetOutputCallbacksWide method, IDebugClient5.SetOutputCallbacksWide, IDebugClient5::SetOutputCallbacksWide, SetOutputCallbacksWide, SetOutputCallbacksWide method [Windows Debugging], SetOutputCallbacksWide method [Windows Debugging],IDebugClient5 interface, dbgeng/IDebugClient5::SetOutputCallbacksWide, debugger.setoutputcallbackswide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient5.SetOutputCallbacksWide
+ - IDebugClient5::SetOutputCallbacksWide
 ---
 
 # IDebugClient5::SetOutputCallbacksWide
@@ -50,9 +49,9 @@ The <b>SetOutputCallbacksWide</b> method registers an <a href="/windows-hardware
 
 ## -parameters
 
-### -param Callbacks 
+### -param Callbacks [in]
 
-[in]
+
 Specifies the interface pointer to the output callbacks object to register with this client.
 
 ## -returns
@@ -96,3 +95,4 @@ For more information about callbacks, see <a href="/windows-hardware/drivers/deb
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugoutputcallbacks">IDebugOutputCallbacks</a>
+

@@ -3,8 +3,7 @@ UID: NE:d3d12umddi.D3D12DDI_QUERY_HEAP_TYPE
 title: D3D12DDI_QUERY_HEAP_TYPE (d3d12umddi.h)
 description: Type of a query heap, which is an array of query results.
 old-location: display\d3d12ddi_query_heap_type.htm
-ms.assetid: 8A1A42B5-D978-4019-825B-94DB81C44FEA
-ms.date: 04/16/2018
+ms.date: 08/22/2022
 keywords: ["D3D12DDI_QUERY_HEAP_TYPE enumeration"]
 ms.keywords: D3D12DDI_QUERY_HEAP_TYPE, D3D12DDI_QUERY_HEAP_TYPE enumeration [Display Devices], D3D12DDI_QUERY_HEAP_TYPE_0020_VIDEO_DECODE_STATISTICS, D3D12DDI_QUERY_HEAP_TYPE_0032_COPY_QUEUE_TIMESTAMP, D3D12DDI_QUERY_HEAP_TYPE_OCCLUSION, D3D12DDI_QUERY_HEAP_TYPE_PIPELINE_STATISTICS, D3D12DDI_QUERY_HEAP_TYPE_SO_STATISTICS, D3D12DDI_QUERY_HEAP_TYPE_TIMESTAMP, d3d12umddi/D3D12DDI_QUERY_HEAP_TYPE, d3d12umddi/D3D12DDI_QUERY_HEAP_TYPE_0020_VIDEO_DECODE_STATISTICS, d3d12umddi/D3D12DDI_QUERY_HEAP_TYPE_0032_COPY_QUEUE_TIMESTAMP, d3d12umddi/D3D12DDI_QUERY_HEAP_TYPE_OCCLUSION, d3d12umddi/D3D12DDI_QUERY_HEAP_TYPE_PIPELINE_STATISTICS, d3d12umddi/D3D12DDI_QUERY_HEAP_TYPE_SO_STATISTICS, d3d12umddi/D3D12DDI_QUERY_HEAP_TYPE_TIMESTAMP, display.d3d12ddi_query_heap_type
 req.header: d3d12umddi.h
@@ -43,38 +42,44 @@ api_name:
 
 # D3D12DDI_QUERY_HEAP_TYPE enumeration
 
-
 ## -description
 
-Type of a query heap, which is an array of query results. Queries are used to capture information from the GPU, such as statistics and status codes which can later be consumed directly on the GPU or on CPU.
+A **D3D12DDI_QUERY_HEAP_TYPE** enum value identifies the type of a query heap, which is an array of query results.
 
 ## -enum-fields
 
-### -field D3D12DDI_QUERY_HEAP_TYPE_OCCLUSION
+### -field D3D12DDI_QUERY_HEAP_TYPE_OCCLUSION:0
 
-Occlusion.
+Returns a binary 0/1 result: 0 indicates that no samples passed depth and stencil testing, 1 indicates that at least one sample passed depth and stencil testing. This enables occlusion queries to not interfere with any GPU performance optimization associated with depth/stencil testing.
 
-### -field D3D12DDI_QUERY_HEAP_TYPE_TIMESTAMP
+### -field D3D12DDI_QUERY_HEAP_TYPE_TIMESTAMP:1
 
-Timestamp.
+The heap is for high-performance timing data.
 
-### -field D3D12DDI_QUERY_HEAP_TYPE_PIPELINE_STATISTICS
+### -field D3D12DDI_QUERY_HEAP_TYPE_PIPELINE_STATISTICS:2
 
-Pipeline statistics.
+The heap is to contain pre-D3D12 graphics pipeline data. See [**D3D11_DDI_QUERY_DATA_PIPELINE_STATISTICS**](../d3d10umddi/ns-d3d10umddi-d3d11_ddi_query_data_pipeline_statistics.md).
 
-### -field D3D12DDI_QUERY_HEAP_TYPE_SO_STATISTICS
+### -field D3D12DDI_QUERY_HEAP_TYPE_SO_STATISTICS:3
 
-SO statistics.
+The heap is to contain stream output data. See [**D3D10_DDI_QUERY_DATA_SO_STATISTICS**](../d3d10umddi/ns-d3d10umddi-d3d10_ddi_query_data_so_statistics.md)
 
-### -field D3D12DDI_QUERY_HEAP_TYPE_0020_VIDEO_DECODE_STATISTICS
+### -field D3D12DDI_QUERY_HEAP_TYPE_0020_VIDEO_DECODE_STATISTICS:4
 
-Video decode statistics.
+The heap is to contain video decode data. See [**D3D12DDI_QUERY_DATA_VIDEO_DECODE_STATISTICS_0022**](ns-d3d12umddi-d3d12ddi_query_data_video_decode_statistics_0022.md).
 
-### -field D3D12DDI_QUERY_HEAP_TYPE_0032_COPY_QUEUE_TIMESTAMP
+### -field D3D12DDI_QUERY_HEAP_TYPE_0032_COPY_QUEUE_TIMESTAMP:5
 
-Copy queue timestamp.
+The heap is to contain timestamp queries emitted exclusively by copy command lists. Copy queue timestamps can only be queried from a copy command list, and a copy command list can't emit to a regular timestamp query Heap.
+
+### -field D3D12DDI_QUERY_HEAP_TYPE_PIPELINE_STATISTICS1:7
+
+The heap is to contain pipeline data. See [**D3D12DDI_QUERY_DATA_PIPELINE_STATISTICS1**](ns-d3d12umddi-d3d12ddi_query_data_pipeline_statistics1.md).
 
 ## -remarks
 
-Queries are an existing D3D12 concept that are used to support retrieving status structures with D3D12DDI_QUERY_HEAP_TYPE_VIDEO_DECODE_STATISTICS and D3D12DDI_QUERY_TYPE_VIDEO_DECODE_STATISTICS. The D3D12DDI_QUERY_DATA_VIDEO_DECODE_STATISTICS structure defines the resolved data returned.  This status structure is used for all video decoders.
+Queries are used to capture information from the GPU, such as statistics and status codes which can later be consumed directly on the GPU or on CPU. Status structures associated with the query heap type define the resolved data that is returned.
 
+## -see-also
+
+[**pfnd3d12ddiCreateQueryHeap0001**](nc-d3d12umddi-pfnd3d12ddi_create_query_heap_0001.md)

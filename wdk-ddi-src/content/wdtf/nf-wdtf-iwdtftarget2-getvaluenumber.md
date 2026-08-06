@@ -4,7 +4,6 @@ title: IWDTFTarget2::GetValueNumber (wdtf.h)
 description: Returns a number value from the target that is associated with a specified attribute.
 old-location: dtf\iwdtftarget2_getvaluenumber.htm
 tech.root: dtf
-ms.assetid: 16f0e9be-129a-4d7d-94c8-bd27ec010b26
 ms.date: 04/04/2018
 keywords: ["IWDTFTarget2::GetValueNumber"]
 ms.keywords: GetValueNumber, GetValueNumber method [Windows Device Testing Framework], GetValueNumber method [Windows Device Testing Framework],IWDTFTarget2 interface, IWDTFTarget2 interface [Windows Device Testing Framework],GetValueNumber method, IWDTFTarget2.GetValueNumber, IWDTFTarget2::GetValueNumber, Microsoft.WDTF.IWDTFTarget2.GetValueNumber, Microsoft::WDTF::IWDTFTarget2::GetValueNumber, dtf.iwdtftarget2_getvaluenumber, wdtf/IWDTFTarget2::GetValueNumber
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFTarget2.GetValueNumber
+ - IWDTFTarget2::GetValueNumber
 ---
 
 # IWDTFTarget2::GetValueNumber
@@ -50,14 +49,14 @@ Returns a number value from the target that is associated with a specified attri
 
 ## -parameters
 
-### -param SDEL 
+### -param SDEL [in]
 
-[in]
+
 An SDEL statement that specifies the attribute value to retrieve.
 
-### -param pValue 
+### -param pValue [out, retval]
 
-[out, retval]
+
 The address of a variable that receives the result of this method.
 
 ## -returns
@@ -75,3 +74,4 @@ to work properly.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftarget2">IWDTFTarget2</a>
+

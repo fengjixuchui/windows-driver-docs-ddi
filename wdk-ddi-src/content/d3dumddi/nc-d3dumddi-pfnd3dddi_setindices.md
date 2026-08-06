@@ -4,7 +4,6 @@ title: PFND3DDDI_SETINDICES (d3dumddi.h)
 description: The SetIndices function sets the current index buffer.
 old-location: display\setindices.htm
 tech.root: display
-ms.assetid: 5348b3f9-78c5-4915-ba68-296d6f9f916c
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETINDICES callback function"]
 ms.keywords: PFND3DDDI_SETINDICES, PFND3DDDI_SETINDICES callback, SetIndices, SetIndices callback function [Display Devices], UserModeDisplayDriver_Functions_c51c5796-e271-4b76-a013-88038767d356.xml, d3dumddi/SetIndices, display.setindices
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - SetIndices
-product:
- - Windows
+ - PFND3DDDI_SETINDICES
 ---
 
 # PFND3DDDI_SETINDICES callback function
@@ -56,7 +53,7 @@ The <i>SetIndices</i> function sets the current index buffer.
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -77,3 +74,4 @@ The Microsoft Direct3D runtime supplies a handle value of zero in the <b>hIndexB
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

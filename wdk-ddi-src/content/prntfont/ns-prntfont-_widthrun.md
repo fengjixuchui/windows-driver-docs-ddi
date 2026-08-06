@@ -4,7 +4,6 @@ title: _WIDTHRUN (prntfont.h)
 description: The WIDTHRUN structure is used to define the contents of Unidrv font metrics files (.ufm files).
 old-location: print\widthrun.htm
 tech.root: print
-ms.assetid: 18cc608e-b94d-4588-98e9-c22a7949a3b6
 ms.date: 04/20/2018
 keywords: ["WIDTHRUN structure"]
 ms.keywords: "*PWIDTHRUN, PWIDTHRUN, PWIDTHRUN structure pointer [Print Devices], WIDTHRUN, WIDTHRUN structure [Print Devices], _WIDTHRUN, print.widthrun, print_unidrv-pscript_fonts_68b08066-7503-4496-bfab-001aba659926.xml, prntfont/PWIDTHRUN, prntfont/WIDTHRUN"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - prntfont.h
 api_name:
+ - _WIDTHRUN
+ - PWIDTHRUN
  - WIDTHRUN
 ---
 
@@ -107,3 +108,4 @@ For East Asian device fonts, the <b>fwdAveCharWidth</b> and <b>fwdMaxCharInc</b>
 
 
 <a href="/windows-hardware/drivers/ddi/prntfont/ns-prntfont-_widthtable">WIDTHTABLE</a>
+

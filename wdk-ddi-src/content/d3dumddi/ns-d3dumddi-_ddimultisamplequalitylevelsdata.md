@@ -4,7 +4,6 @@ title: _DDIMULTISAMPLEQUALITYLEVELSDATA (d3dumddi.h)
 description: The DDIMULTISAMPLEQUALITYLEVELSDATA structure describes the number of multiple-sample quality levels for a given render-target format.
 old-location: display\ddimultisamplequalitylevelsdata.htm
 tech.root: display
-ms.assetid: 48eeea6a-6a1d-43f7-a74c-3ca896c7b2d4
 ms.date: 05/10/2018
 keywords: ["DDIMULTISAMPLEQUALITYLEVELSDATA structure"]
 ms.keywords: D3D_other_Structs_a83f4a87-4963-41c8-9ef7-e1ce0b8843c5.xml, DDIMULTISAMPLEQUALITYLEVELSDATA, DDIMULTISAMPLEQUALITYLEVELSDATA structure [Display Devices], _DDIMULTISAMPLEQUALITYLEVELSDATA, d3dumddi/DDIMULTISAMPLEQUALITYLEVELSDATA, display.ddimultisamplequalitylevelsdata
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DDIMULTISAMPLEQUALITYLEVELSDATA
  - DDIMULTISAMPLEQUALITYLEVELSDATA
 ---
 
@@ -52,21 +52,21 @@ The DDIMULTISAMPLEQUALITYLEVELSDATA structure describes the number of multiple-s
 
 ## -struct-fields
 
-### -field Format
+### -field Format [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the surface format of the multiple-sampled render target.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the surface format of the multiple-sampled render target.
 
-### -field Flip
+### -field Flip [in]
 
-[in] A Boolean value that specifies whether the resolution is flip or bit-block transfer (blt) style. <b>TRUE</b> indicates flip-style resolution; <b>FALSE</b> indicates blt-style resolution.
+A Boolean value that specifies whether the resolution is flip or bit-block transfer (blt) style. <b>TRUE</b> indicates flip-style resolution; <b>FALSE</b> indicates blt-style resolution.
 
-### -field MsType
+### -field MsType [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddimultisample_type">D3DDDIMULTISAMPLE_TYPE</a>-typed value that indicates the level of full-scene multiple sampling. If the display device supports maskable multiple sampling (that is, more than one sample for a multiple-sample render-target format plus antialias support), the user-mode display driver must provide the number of quality levels for the D3DDDIMULTISAMPLE_NONMASKABLE (1) value.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddimultisample_type">D3DDDIMULTISAMPLE_TYPE</a>-typed value that indicates the level of full-scene multiple sampling. If the display device supports maskable multiple sampling (that is, more than one sample for a multiple-sample render-target format plus antialias support), the user-mode display driver must provide the number of quality levels for the D3DDDIMULTISAMPLE_NONMASKABLE (1) value.
 
-### -field QualityLevels
+### -field QualityLevels [in]
 
-[in] The number of multiple-sample quality levels that the user-mode display driver supports for the render-target format that is specified by the <b>Format</b>, <b>bFlip</b>, and <b>MSType</b> members.
+The number of multiple-sample quality levels that the user-mode display driver supports for the render-target format that is specified by the <b>Format</b>, <b>bFlip</b>, and <b>MSType</b> members.
 
 ## -see-also
 
@@ -87,3 +87,4 @@ The DDIMULTISAMPLEQUALITYLEVELSDATA structure describes the number of multiple-s
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps">GetCaps</a>
+

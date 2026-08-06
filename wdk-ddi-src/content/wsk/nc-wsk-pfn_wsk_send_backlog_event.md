@@ -4,7 +4,6 @@ title: PFN_WSK_SEND_BACKLOG_EVENT (wsk.h)
 description: The WskSendBacklogEvent event callback function notifies a WSK application when the ideal send backlog size changes for a connection-oriented socket.
 old-location: netvista\wsksendbacklogevent.htm
 tech.root: netvista
-ms.assetid: e944af6f-6753-48b0-b3f6-0709f24e3ff0
 ms.date: 05/02/2018
 keywords: ["PFN_WSK_SEND_BACKLOG_EVENT callback function"]
 ms.keywords: PFN_WSK_SEND_BACKLOG_EVENT, PFN_WSK_SEND_BACKLOG_EVENT callback, WskSendBacklogEvent, WskSendBacklogEvent callback function [Network Drivers Starting with Windows Vista], netvista.wsksendbacklogevent, wsk/WskSendBacklogEvent, wskref_9b34fa29-9c3a-4aa2-8ceb-3f637c4902cd.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wsk.h
 api_name:
- - WskSendBacklogEvent
+ - PFN_WSK_SEND_BACKLOG_EVENT
 ---
 
 # PFN_WSK_SEND_BACKLOG_EVENT callback function
@@ -52,9 +51,9 @@ The
 
 ## -parameters
 
-### -param SocketContext 
+### -param SocketContext [in, optional]
 
-[in, optional]
+
 A pointer to the socket context for the connection-oriented socket that is notifying the WSK
      application about a change to its ideal send backlog size. The WSK application provided this pointer to
      the WSK subsystem in one of the following ways:
@@ -86,9 +85,9 @@ Its
 </li>
 </ul>
 
-### -param IdealBacklogSize 
+### -param IdealBacklogSize [in]
 
-[in]
+
 A variable that contains the new ideal send backlog size.
 
 ## -returns
@@ -148,3 +147,4 @@ A WSK application's <i>WskSendBacklogEvent</i> event callback function must not 
 
 
 <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect">WskSocketConnect</a>
+

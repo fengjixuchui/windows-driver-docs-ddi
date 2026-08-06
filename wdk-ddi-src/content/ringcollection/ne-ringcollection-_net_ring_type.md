@@ -3,8 +3,7 @@ UID: NE:ringcollection._NET_RING_TYPE
 title: _NET_RING_TYPE (ringcollection.h)
 description: The NET_RING_TYPE enumeration defines types of net rings for a packet queue.
 tech.root: netvista
-ms.assetid: D14D96AB-E43E-4316-A737-E026C151FA67
-ms.date: 09/27/2019
+ms.date: 04/01/2022
 keywords: ["NET_RING_TYPE enumeration"]
 ms.keywords: _NET_RING_TYPE, NET_RING_TYPE,
 req.header: ringcollection.h
@@ -13,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.29
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.ddi-compliance: 
 req.max-support: 
 req.typenames: NET_RING_TYPE
@@ -23,14 +22,15 @@ f1_keywords:
  - ringcollection/_NET_RING_TYPE
  - NET_RING_TYPE
  - ringcollection/NET_RING_TYPE
-topictype:
+topic_type:
  - apiref
-apitype:
+api_type:
  - HeaderDef
-apilocation:
+api_location:
  - ringcollection.h
-apiname:
+api_name:
  - _NET_RING_TYPE
+ - NET_RING_TYPE
 ---
 
 # _NET_RING_TYPE enumeration
@@ -42,13 +42,16 @@ The **NET_RING_TYPE** enumeration defines types of net rings for a packet queue.
 
 ## -enum-fields
 
-### -field NetRingTypePacket : 
+### -field NetRingTypePacket:0
 
 The [**NET_RING**](../ring/ns-ring-_net_ring.md) is a packet ring.
 
-### -field NetRingTypeFragment : 
+### -field NetRingTypeFragment:1 
 
 The [**NET_RING**](../ring/ns-ring-_net_ring.md) is a fragment ring.
+
+### -field NetRingTypeDataBuffer
+Reserved for system use.
 
 ## -remarks
 
@@ -57,3 +60,4 @@ The [**NET_RING**](../ring/ns-ring-_net_ring.md) is a fragment ring.
 [Introduction to net rings](/windows-hardware/drivers/netcx/introduction-to-net-rings)
 
 [**NET_RING**](../ring/ns-ring-_net_ring.md)
+

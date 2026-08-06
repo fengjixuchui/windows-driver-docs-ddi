@@ -4,7 +4,6 @@ title: USBD_GetPdoRegistryParameter function (usbdlib.h)
 description: The USBD_GetPdoRegistryParameter routine retrieves the value from the specified key in the USB device's hardware registry.
 old-location: buses\usbd_getpdoregistryparameter.htm
 tech.root: usbref
-ms.assetid: f61be32a-2537-4b7f-8f22-4149b00a15a4
 ms.date: 05/07/2018
 keywords: ["USBD_GetPdoRegistryParameter function"]
 ms.keywords: USBD_GetPdoRegistryParameter, USBD_GetPdoRegistryParameter routine [Buses], buses.usbd_getpdoregistryparameter, usbdlib/USBD_GetPdoRegistryParameter, usbfunc_b85b350e-68ad-4256-b4df-f61ea0367b62.xml
@@ -51,29 +50,29 @@ The <b>USBD_GetPdoRegistryParameter</b> routine retrieves the value from the  sp
 
 ## -parameters
 
-### -param PhysicalDeviceObject 
+### -param PhysicalDeviceObject [in]
 
-[in]
+
 Specifies the device object for the USB device.
 
-### -param ParameterLength 
+### -param ParameterLength [in]
 
-[in]
+
 Size, in bytes, of the buffer that is pointed to by <i>Parameter</i>.
 
-### -param KeyName 
+### -param KeyName [in]
 
-[in]
+
 Pointer to a string containing the name of the registry key.
 
-### -param KeyNameLength 
+### -param KeyNameLength [in]
 
-[in]
+
 Size, in bytes, of the buffer that is pointed to by <i>KeyName</i>.
 
-### -param Parameter 
+### -param Parameter [in, out]
 
-[in, out]
+
 Pointer to a caller-allocated buffer that receives the registry value.
 
 ## -returns

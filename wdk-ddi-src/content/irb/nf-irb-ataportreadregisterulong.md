@@ -4,7 +4,6 @@ title: AtaPortReadRegisterUlong function (irb.h)
 description: The AtaPortReadRegisterUlong routine reads a ULONG value from the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\ataportreadregisterulong.htm
 tech.root: storage
-ms.assetid: c824bbbe-0f51-48b4-b7df-aa8a84f1f982
 ms.date: 03/29/2018
 keywords: ["AtaPortReadRegisterUlong function"]
 ms.keywords: AtaPortReadRegisterUlong, AtaPortReadRegisterUlong routine [Storage Devices], atartns_a5e1a904-214d-45fc-9ade-fc5ad7d56694.xml, irb/AtaPortReadRegisterUlong, storage.ataportreadregisterulong
@@ -54,9 +53,9 @@ The <b>AtaPortReadRegisterUlong</b> routine reads a ULONG value from the HBA.
 
 ## -parameters
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the register to read. The address value that is assigned to this parameter must be within the range of mapped I/O space addresses that are obtained by a call to <a href="/windows-hardware/drivers/ddi/irb/nf-irb-ataportgetdevicebase">AtaPortGetDeviceBase</a>.
 
 ## -returns

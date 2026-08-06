@@ -4,7 +4,6 @@ title: EVT_WDF_DEVICE_RESOURCES_QUERY (wdfpdo.h)
 description: A bus driver's EvtDeviceResourcesQuery event callback function creates a resource list that represents a specified device's boot configuration.
 old-location: wdf\evtdeviceresourcesquery.htm
 tech.root: wdf
-ms.assetid: 3210b28b-cbaa-4ad9-9ca8-3b5f03aee41e
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DEVICE_RESOURCES_QUERY callback function"]
 ms.keywords: DFDeviceObjectFdoPdoRef_89ca471c-ee81-4799-9b58-410aedd12f87.xml, EVT_WDF_DEVICE_RESOURCES_QUERY, EVT_WDF_DEVICE_RESOURCES_QUERY callback, EvtDeviceResourcesQuery, EvtDeviceResourcesQuery callback function, kmdf.evtdeviceresourcesquery, wdf.evtdeviceresourcesquery, wdfpdo/EvtDeviceResourcesQuery
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfpdo.h
 api_name:
- - EvtDeviceResourcesQuery
+ - EVT_WDF_DEVICE_RESOURCES_QUERY
 ---
 
 # EVT_WDF_DEVICE_RESOURCES_QUERY callback function
@@ -52,14 +51,14 @@ A bus driver's <i>EvtDeviceResourcesQuery</i> event callback function creates a 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Resources 
+### -param Resources [in]
 
-[in]
+
 A handle to a framework resource-list object that represents an empty resource list.
 
 ## -returns
@@ -83,3 +82,4 @@ To create a resource list, the driver calls <a href="/windows-hardware/drivers/d
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfpdo/nc-wdfpdo-evt_wdf_device_resource_requirements_query">EvtDeviceResourceRequirementsQuery</a>
+

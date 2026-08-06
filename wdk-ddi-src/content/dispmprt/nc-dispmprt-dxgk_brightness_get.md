@@ -4,14 +4,13 @@ title: DXGK_BRIGHTNESS_GET (dispmprt.h)
 description: The DxgkDdiGetBrightness function retrieves the currently active brightness level of an integrated display panel.
 old-location: display\dxgkddigetbrightness.htm
 tech.root: display
-ms.assetid: e226cd36-45af-4d80-9aba-8919b267483b
 ms.date: 05/10/2018
 keywords: ["DXGK_BRIGHTNESS_GET callback function"]
 ms.keywords: DXGK_BRIGHTNESS_GET, DXGK_BRIGHTNESS_GET callback, DmFunctions_be286481-7cef-4059-acb2-cac6554eb346.xml, DxgkDdiGetBrightness, DxgkDdiGetBrightness callback function [Display Devices], display.dxgkddigetbrightness, dispmprt/DxgkDdiGetBrightness
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
- - DxgkDdiGetBrightness
+ - DXGK_BRIGHTNESS_GET
 ---
 
 # DXGK_BRIGHTNESS_GET callback function
@@ -50,13 +49,13 @@ The <i>DxgkDdiGetBrightness</i> function retrieves the currently active brightne
 
 ## -parameters
 
-### -param Context
+### -param Context [in]
 
-[in] A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem.
+A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem.
 
-### -param Brightness
+### -param Brightness [in]
 
-[in] A pointer to a variable that receives the brightness level.
+A pointer to a variable that receives the brightness level.
 
 ## -returns
 
@@ -85,3 +84,4 @@ Because the monitor driver always gets the brightness level for the integrated d
 ## -see-also
 
 <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
+

@@ -4,7 +4,6 @@ title: PWINDBG_DISASM (wdbgexts.h)
 description: The PWINDBG_DISASM (Disasm) function disassembles the instruction pointed to by lpOffset and places the printable string into lpBuffer.
 old-location: debugger\disasm.htm
 tech.root: debugger
-ms.assetid: 1a986b7b-b45b-4546-a14e-4abb76ddf764
 ms.date: 05/03/2018
 keywords: ["PWINDBG_DISASM callback function"]
 ms.keywords: Disasm, Disasm callback function [Windows Debugging], PWINDBG_DISASM, PWINDBG_DISASM callback, WdbgExts_Ref_787ab353-1829-4111-8931-2192bfb9cd0c.xml, debugger.disasm, wdbgexts/Disasm
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdbgexts.h
 api_name:
- - Disasm
+ - PWINDBG_DISASM
 ---
 
 # PWINDBG_DISASM callback function
@@ -56,7 +55,7 @@ Points to the instruction to be disassembled.
 
 ### -param lpBuffer
 
-Receives the disassembled instruction.
+Receives the disassembled instruction. This buffer must be at least 2000 characters in length.
 
 ### -param fShowEffectiveAddress
 

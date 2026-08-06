@@ -4,7 +4,6 @@ title: PROTOCOL_CO_CREATE_VC (ndis.h)
 description: The ProtocolCoCreateVc function is a required function that allocates resources necessary for a call manager or client to activate and maintain a virtual connection (VC).Note  You must declare the function by using the PROTOCOL_CO_CREATE_VC type.
 old-location: netvista\protocolcocreatevc.htm
 tech.root: netvista
-ms.assetid: b086dd24-74f5-474a-8684-09bf92ac731b
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CO_CREATE_VC callback function"]
 ms.keywords: PROTOCOL_CO_CREATE_VC, PROTOCOL_CO_CREATE_VC callback, ProtocolCoCreateVc, ProtocolCoCreateVc callback function [Network Drivers Starting with Windows Vista], condis_protocol_ref_f0a7e657-70d5-4cd1-a42a-684cefe1dc60.xml, ndis/ProtocolCoCreateVc, netvista.protocolcocreatevc
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolCoCreateVc
+ - PROTOCOL_CO_CREATE_VC
 ---
 
 # PROTOCOL_CO_CREATE_VC callback function
@@ -54,9 +53,9 @@ The
 
 ## -parameters
 
-### -param ProtocolAfContext 
+### -param ProtocolAfContext [in]
 
-[in]
+
 Specifies the handle to a protocol-allocated context area in which the call manager or client
      maintains its per-open state. The call manager supplied this handle from its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_open_af">ProtocolCmOpenAf</a> function. The client
@@ -65,17 +64,17 @@ Specifies the handle to a protocol-allocated context area in which the call mana
      its 
      <i>ProtocolCoAfRegisterNotify</i> function.
 
-### -param NdisVcHandle 
+### -param NdisVcHandle [in]
 
-[in]
+
 Specifies a handle, supplied by NDIS, that uniquely identifies this virtual connection. This
      handle is opaque to the protocol driver and reserved for NDIS library use. However, the call manager and
      client must save this handle to pass in subsequent calls to 
      <b>NdisCo/Cl/Cm/MCm<i>Xxx</i></b> functions that concern this VC.
 
-### -param ProtocolVcContext 
+### -param ProtocolVcContext [out]
 
-[out]
+
 Specifies the handle to a protocol-supplied context area in which the call manager or client
      maintains state about this virtual connection.
 
@@ -253,3 +252,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_af_register_notify">ProtocolCoAfRegisterNotify</a>
+

@@ -4,7 +4,6 @@ title: PTM_RM_NOTIFICATION (wdm.h)
 description: A resource manager's ResourceManagerNotification callback routine receives and handles transaction notifications.
 old-location: kernel\resourcemanagernotification.htm
 tech.root: kernel
-ms.assetid: 86d8632a-be39-46ed-8ec6-f65edb4bb017
 ms.date: 04/30/2018
 keywords: ["PTM_RM_NOTIFICATION callback function"]
 ms.keywords: "(*PTM_RM_NOTIFICATION), (*PTM_RM_NOTIFICATION) callback function [Kernel-Mode Driver Architecture], PTM_RM_NOTIFICATION, ResourceManagerNotification callback, kernel.resourcemanagernotification, ktm_ref_f4bc7393-b895-4a03-8eb6-b0a71f26e1d5.xml, wdm/(*PTM_RM_NOTIFICATION)"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - (*PTM_RM_NOTIFICATION)
+ - PTM_RM_NOTIFICATION
 ---
 
 # PTM_RM_NOTIFICATION callback function
@@ -50,39 +49,39 @@ A resource manager's <i>ResourceManagerNotification</i> callback routine receive
 
 ## -parameters
 
-### -param EnlistmentObject 
+### -param EnlistmentObject [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/kernel/enlistment-objects">enlistment object</a>. The <i>ResourceManagerNotification</i> callback routine is receiving a notification for the enlistment that this object represents.
 
-### -param RMContext 
+### -param RMContext [in]
 
-[in]
+
 The value that the resource manager previously specified for the <i>RMKey</i> parameter of the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-tmenablecallbacks">TmEnableCallbacks</a> routine.
 
-### -param TransactionContext 
+### -param TransactionContext [in]
 
-[in]
+
 The value that the resource manager previously specified for the <i>EnlistmentKey</i> parameter of the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment">ZwCreateEnlistment</a> routine.
 
-### -param TransactionNotification 
+### -param TransactionNotification [in]
 
-[in]
+
 One of the TRANSACTION_NOTIFY_<i>XXX</i> values that are defined in Ktmtypes.h. This value specifies the type of transaction notification that KTM sent to the caller.
 
-### -param TmVirtualClock 
+### -param TmVirtualClock [in, out]
 
-[in, out]
+
 A pointer to a location that contains the <a href="/windows-hardware/drivers/kernel/using-virtual-clock-values">virtual clock value</a> at the time that KTM prepared the notification for delivery to the resource manager. If the callback routine increases this value before it returns, KTM updates the virtual clock to the new value. (Typically, resource managers do not modify the virtual clock value.)
 
-### -param ArgumentLength 
+### -param ArgumentLength [in]
 
-[in]
+
 The length, in bytes, of the buffer that the <i>Argument</i> parameter points to. This parameter is zero if a buffer is not available.
 
-### -param Argument 
+### -param Argument [in]
 
-[in]
+
 A pointer to a buffer that contains notification-specific arguments. This parameter is <b>NULL</b> if the notification that the <i>TransactionNotification</i> parameter specifies does not require an argument buffer. 
 
 For a list of notifications that include an additional argument buffer, see the Remarks section of <a href="/previous-versions/windows/hardware/drivers/ff564813(v=vs.85)">TRANSACTION_NOTIFICATION</a>.
@@ -122,3 +121,4 @@ The <i>ResourceManagerNotification</i> callback routine is called at IRQL = PASS
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntgetnotificationresourcemanager">ZwGetNotificationResourceManager</a>
+

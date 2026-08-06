@@ -4,7 +4,6 @@ title: IDebugSymbols3::GetSymbolTypeIdWide (dbgeng.h)
 description: The GetSymbolTypeIdWide method returns the type ID and module of the specified symbol.
 old-location: debugger\getsymboltypeidwide.htm
 tech.root: debugger
-ms.assetid: b68a5f89-1623-4cab-84bf-3cc6e4031d9b
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::GetSymbolTypeIdWide"]
 ms.keywords: GetSymbolTypeIdWide, GetSymbolTypeIdWide method [Windows Debugging], GetSymbolTypeIdWide method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],GetSymbolTypeIdWide method, IDebugSymbols3.GetSymbolTypeIdWide, IDebugSymbols3::GetSymbolTypeIdWide, dbgeng/IDebugSymbols3::GetSymbolTypeIdWide, debugger.getsymboltypeidwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols3.GetSymbolTypeIdWide
+ - IDebugSymbols3::GetSymbolTypeIdWide
 ---
 
 # IDebugSymbols3::GetSymbolTypeIdWide
@@ -50,19 +49,19 @@ The <b>GetSymbolTypeIdWide</b>  method returns the type ID and module of the spe
 
 ## -parameters
 
-### -param Symbol 
+### -param Symbol [in]
 
-[in]
+
 Specifies the expression whose type ID is requested.  See the Remarks section for details on the syntax of this expression.
 
-### -param TypeId 
+### -param TypeId [out]
 
-[out]
+
 Receives the type ID.
 
-### -param Module 
+### -param Module [out, optional]
 
-[out, optional]
+
 Receives the base address of the module containing the symbol.  For more information, see <a href="/windows-hardware/drivers/debugger/modules">Modules</a>.  If <i>Module</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -104,3 +103,4 @@ For more information about symbols, see <a href="/windows-hardware/drivers/debug
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

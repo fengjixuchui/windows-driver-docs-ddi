@@ -4,7 +4,6 @@ title: WRITE_PORT_BUFFER_UCHAR function (wudfddi_hwaccess.h)
 description: The WRITE_PORT_BUFFER_UCHAR function writes a number of bytes from a buffer to the specified port.
 old-location: wdf\write_port_buffer_uchar.htm
 tech.root: wdf
-ms.assetid: E0E0BD93-6A5B-4D60-B08C-8862D9F2670D
 ms.date: 02/26/2018
 keywords: ["WRITE_PORT_BUFFER_UCHAR function"]
 ms.keywords: WRITE_PORT_BUFFER_UCHAR, WRITE_PORT_BUFFER_UCHAR function, umdf.write_port_buffer_uchar, wdf.write_port_buffer_uchar, wudfddi_hwaccess/WRITE_PORT_BUFFER_UCHAR
@@ -52,24 +51,24 @@ The <b>WRITE_PORT_BUFFER_UCHAR</b> function writes a number of bytes from a buff
 
 ## -parameters
 
-### -param pDevice 
+### -param pDevice [in]
 
-[in]
+
 Specifies a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a> interface for the device object of the device to access.
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 A pointer to the port, which must be a mapped memory range in I/O space.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to a buffer from which an array of UCHAR values is to be written.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of bytes to be written to the buffer.
 
 ## -remarks

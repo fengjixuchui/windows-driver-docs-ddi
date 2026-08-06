@@ -1,10 +1,9 @@
 ---
 UID: NF:ntifs.FsRtlAddMcbEntry
 title: FsRtlAddMcbEntry function (ntifs.h)
-description: Obsolete.
+description: The FsRtlAddMcbEntry function is obsolete.
 old-location: ifsk\fsrtladdmcbentry.htm
 tech.root: ifsk
-ms.assetid: 4bf256b9-c0a0-4280-a283-9a2ab3c2b8cb
 ms.date: 04/16/2018
 keywords: ["FsRtlAddMcbEntry function"]
 ms.keywords: FsRtlAddMcbEntry, FsRtlAddMcbEntry function [Installable File System Drivers], fsrtlref_73de29f7-837c-40a4-b224-ab7266794840.xml, ifsk.fsrtladdmcbentry, ntifs/FsRtlAddMcbEntry
@@ -46,16 +45,15 @@ dev_langs:
 
 # FsRtlAddMcbEntry function
 
-
 ## -description
 
-The <b>FsRtlAddMcbEntry</b> routine is obsolete, but is exported to support existing driver binaries. Use <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtladdlargemcbentry">FsRtlAddLargeMcbEntry</a> instead.
+The **FsRtlAddMcbEntry** routine is obsolete, but is exported to support existing driver binaries. Use [**FsRtlAddLargeMcbEntry**](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtladdlargemcbentry.md) instead.
 
 ## -parameters
 
 ### -param Mcb
 
-<p>Reserved.</p>
+Reserved.
 
 ### -param Vbn
 
@@ -66,5 +64,9 @@ Reserved.
 Reserved.
 
 ### -param SectorCount
+
+Reserved.
+
+## -returns
 
 Reserved.

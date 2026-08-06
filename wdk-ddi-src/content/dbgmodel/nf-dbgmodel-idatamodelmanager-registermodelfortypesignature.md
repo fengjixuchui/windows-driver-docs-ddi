@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelManager.RegisterModelForTypeSignature
 title: IDataModelManager::RegisterModelForTypeSignature (dbgmodel.h)
-description: The RegisterModelForTypeSignature method is the primary method that a caller utilizes to register a canonical visualizer for a given type (or set of types).
-ms.assetid: 1ebbdc8c-a2dd-4fce-85d1-62d5a571798c
+description: "The IDataModelManager::RegisterModelForTypeSignature method registers a canonical visualizer for a given type signature."
 ms.date: 07/19/2018
 keywords: ["IDataModelManager::RegisterModelForTypeSignature"]
 ms.keywords: IDataModelManager::RegisterModelForTypeSignature, RegisterModelForTypeSignature, IDataModelManager.RegisterModelForTypeSignature, IDataModelManager::RegisterModelForTypeSignature, IDataModelManager.RegisterModelForTypeSignature
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager.RegisterModelForTypeSignature
+ - IDataModelManager::RegisterModelForTypeSignature
 ---
 
 # IDataModelManager::RegisterModelForTypeSignature

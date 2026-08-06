@@ -4,7 +4,6 @@ title: ClfsReadLogRecord function (wdm.h)
 description: The ClfsReadLogRecord routine reads a target record in a CLFS stream and returns a read context that the caller can use to read the records preceding or following it in the stream.
 old-location: kernel\clfsreadlogrecord.htm
 tech.root: kernel
-ms.assetid: 9bc64d00-3590-4bc2-aa1f-0d50bb0e628d
 ms.date: 04/30/2018
 keywords: ["ClfsReadLogRecord function"]
 ms.keywords: ClfsReadLogRecord, ClfsReadLogRecord routine [Kernel-Mode Driver Architecture], Clfs_e829153c-541e-463a-9ff3-85200929e3d2.xml, kernel.clfsreadlogrecord, wdm/ClfsReadLogRecord
@@ -51,34 +50,34 @@ The <b>ClfsReadLogRecord</b> routine reads a target record in a CLFS stream and 
 
 ## -parameters
 
-### -param pvMarshalContext 
+### -param pvMarshalContext [in]
 
-[in]
+
 A pointer to an opaque context that represents a marshalling area. The caller previously obtained this pointer by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfscreatemarshallingarea">ClfsCreateMarshallingArea</a>.
 
-### -param plsnFirst 
+### -param plsnFirst [in, out]
 
-[in, out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_lsn">CLFS_LSN</a> structure that supplies the LSN of the target record in the log.
 
-### -param peContextMode 
+### -param peContextMode [in]
 
-[in]
+
 A value from the <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_clfs_context_mode">CLFS_CONTEXT_MODE</a> enumeration that specifies the initial mode (ClfsContextUndoNext, ClfsContextPrevious, or ClfsContextForward) of the read context returned in <i>ppvReadContext</i>.
 
-### -param ppvReadBuffer 
+### -param ppvReadBuffer [out]
 
-[out]
+
 A pointer to a variable that receives a pointer to the data buffer of the target record.
 
-### -param pcbReadBuffer 
+### -param pcbReadBuffer [out]
 
-[out]
-A pointer to a ULONG-typed variable that receives the size, in bytes, of the buffer pointed to by *<i>ppvReadBuffer</i>. This is the length of the data buffer of the target record.
 
-### -param peRecordType 
+A pointer to a ULONG-typed variable that receives the size, in bytes, of the buffer pointed to by **ppvReadBuffer*. This is the length of the data buffer of the target record.
 
-[out]
+### -param peRecordType [out]
+
+
 A pointer to a variable of type CLFS_RECORD_TYPE that receives one of the following values.
 
 <table>
@@ -108,19 +107,19 @@ The target record is a restart record.
 </tr>
 </table>
 
-### -param plsnUndoNext 
+### -param plsnUndoNext [out]
 
-[out]
+
 A pointer to a <b>CLFS_LSN</b> structure that receives the undo-next LSN of the target record.
 
-### -param plsnPrevious 
+### -param plsnPrevious [out]
 
-[out]
+
 A pointer to a <b>CLFS_LSN</b> structure that receives the previous LSN of the target record.
 
-### -param ppvReadContext 
+### -param ppvReadContext [out]
 
-[out]
+
 A pointer to a variable that receives a pointer to an opaque read context. The client repeatedly passes this context to  <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreadnextlogrecord">ClfsReadNextLogRecord</a> to read the remaining records in a sequence. After the client has read all the records in the sequence, it calls <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsterminatereadlog">ClfsTerminateReadLog</a> to free the read context.
 
 ## -returns

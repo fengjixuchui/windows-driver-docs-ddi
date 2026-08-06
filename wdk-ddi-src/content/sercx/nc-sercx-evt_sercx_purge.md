@@ -4,7 +4,6 @@ title: EVT_SERCX_PURGE (sercx.h)
 description: The EvtSerCxPurge event callback function is called by the serial framework extension (SerCx) to purge the serial controller's hardware buffers.
 old-location: serports\evtsercxpurge.htm
 tech.root: serports
-ms.assetid: 036D9AAC-C740-4108-B952-0A4F91585488
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX_PURGE callback function"]
 ms.keywords: 1/EvtSerCxPurge, EVT_SERCX_PURGE, EVT_SERCX_PURGE callback, EvtSerCxPurge, EvtSerCxPurge callback function [Serial Ports], serports.evtsercxpurge
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 1.0\Sercx.h
 api_name:
- - EvtSerCxPurge
+ - EVT_SERCX_PURGE
 ---
 
 # EVT_SERCX_PURGE callback function
@@ -50,14 +49,14 @@ The <i>EvtSerCxPurge</i> event callback function is called by the serial framewo
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the serial controller.
 
-### -param PurgeMask 
+### -param PurgeMask [in]
 
-[in]
+
 A set of flags that describe the hardware buffers that are to be purged.  Currently, no flags are defined for purge operations that are performed by the serial controller. For more information, see Remarks.
 
 ## -returns
@@ -150,3 +149,4 @@ For more information about SDV requirements for function declarations, see <a hr
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercxinitialize">SerCxInitialize</a>
+

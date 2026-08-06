@@ -4,7 +4,6 @@ title: ClfsFlushBuffers function (wdm.h)
 description: The ClfsFlushBuffers routine forces all log I/O blocks in a specified marshalling area to stable storage.
 old-location: kernel\clfsflushbuffers.htm
 tech.root: kernel
-ms.assetid: 70e93c8f-a23c-4399-9299-c2743d097ded
 ms.date: 04/30/2018
 keywords: ["ClfsFlushBuffers function"]
 ms.keywords: ClfsFlushBuffers, ClfsFlushBuffers routine [Kernel-Mode Driver Architecture], Clfs_3c04240c-0914-472f-9b4b-97a00221e092.xml, kernel.clfsflushbuffers, wdm/ClfsFlushBuffers
@@ -51,9 +50,9 @@ The <b>ClfsFlushBuffers</b> routine forces all log I/O blocks in a specified mar
 
 ## -parameters
 
-### -param pvMarshalContext 
+### -param pvMarshalContext [in]
 
-[in]
+
 A pointer to an opaque context that represents a marshalling area. The caller previously obtained this pointer by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfscreatemarshallingarea">ClfsCreateMarshallingArea</a>.
 
 ## -returns

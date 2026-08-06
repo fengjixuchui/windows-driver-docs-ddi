@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl3.GetBreakpointByIndex
 title: IDebugControl3::GetBreakpointByIndex (dbgeng.h)
-description: The GetBreakpointByIndex method returns the breakpoint located at the specified index.
+description: The GetBreakpointByIndex method returns the breakpoint located at the specified index. This method belongs to the IDebugControl3 interface.
 old-location: debugger\getbreakpointbyindex.htm
 tech.root: debugger
-ms.assetid: 9389536e-30c3-4651-bb1e-2c75741694b2
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::GetBreakpointByIndex"]
 ms.keywords: GetBreakpointByIndex, GetBreakpointByIndex method [Windows Debugging], GetBreakpointByIndex method [Windows Debugging],IDebugControl interface, GetBreakpointByIndex method [Windows Debugging],IDebugControl2 interface, GetBreakpointByIndex method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],GetBreakpointByIndex method, IDebugControl2 interface [Windows Debugging],GetBreakpointByIndex method, IDebugControl2::GetBreakpointByIndex, IDebugControl3 interface [Windows Debugging],GetBreakpointByIndex method, IDebugControl3.GetBreakpointByIndex, IDebugControl3::GetBreakpointByIndex, IDebugControl::GetBreakpointByIndex, IDebugControl_d290fd1e-da1d-4d02-9503-a3c0f8337cec.xml, dbgeng/IDebugControl2::GetBreakpointByIndex, dbgeng/IDebugControl3::GetBreakpointByIndex, dbgeng/IDebugControl::GetBreakpointByIndex, debugger.getbreakpointbyindex
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.GetBreakpointByIndex
- - IDebugControl2.GetBreakpointByIndex
- - IDebugControl3.GetBreakpointByIndex
+ - IDebugControl3::GetBreakpointByIndex
 ---
 
 # IDebugControl3::GetBreakpointByIndex
@@ -52,14 +49,14 @@ The <b>GetBreakpointByIndex</b>  method returns the breakpoint located at the sp
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 Specifies the zero-based index of the breakpoint to return.  This is specific to the current process.  The value of <i>Index</i> should be between zero and the total number of breakpoints minus one. The total number of breakpoints can be determined by calling <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getnumberbreakpoints">GetNumberBreakpoints</a>.
 
-### -param Bp 
+### -param Bp [out]
 
-[out]
+
 Receives the returned breakpoint.
 
 ## -returns
@@ -114,3 +111,4 @@ The index and returned breakpoint are specific to the current process.  The same
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
+

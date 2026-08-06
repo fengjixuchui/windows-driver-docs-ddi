@@ -4,7 +4,6 @@ title: EVT_WDF_WMI_INSTANCE_SET_INSTANCE (wdfwmi.h)
 description: A driver's EvtWmiInstanceSetInstance callback function sets all of a WMI data provider's instance data to values that a WMI client supplies.
 old-location: wdf\evtwmiinstancesetinstance.htm
 tech.root: wdf
-ms.assetid: defd33c5-90ae-40c9-9123-7c3de2c77f35
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_WMI_INSTANCE_SET_INSTANCE callback function"]
 ms.keywords: DFWMIRef_28837d36-7a7e-4468-adbc-826bf4c75ef0.xml, EVT_WDF_WMI_INSTANCE_SET_INSTANCE, EVT_WDF_WMI_INSTANCE_SET_INSTANCE callback, EvtWmiInstanceSetInstance, EvtWmiInstanceSetInstance callback function, kmdf.evtwmiinstancesetinstance, wdf.evtwmiinstancesetinstance, wdfwmi/EvtWmiInstanceSetInstance
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfWMI.h
 api_name:
- - EvtWmiInstanceSetInstance
+ - EVT_WDF_WMI_INSTANCE_SET_INSTANCE
 ---
 
 # EVT_WDF_WMI_INSTANCE_SET_INSTANCE callback function
@@ -52,19 +51,19 @@ A driver's <i>EvtWmiInstanceSetInstance</i> callback function sets all of a WMI 
 
 ## -parameters
 
-### -param WmiInstance 
+### -param WmiInstance [in]
 
-[in]
+
 A handle to a WMI instance object.
 
-### -param InBufferSize 
+### -param InBufferSize [in]
 
-[in]
+
 The size, in bytes, of the input buffer that <i>InBuffer</i> points to.
 
-### -param InBuffer 
+### -param InBuffer [in]
 
-[in]
+
 A pointer to the input buffer.
 
 ## -returns
@@ -102,3 +101,4 @@ For more information about the <i>EvtWmiInstanceSetInstance</i> callback functio
 
 
 <a href="/windows-hardware/drivers/ddi/wdfwmi/nf-wdfwmi-wdfwmiinstancecreate">WdfWmiInstanceCreate</a>
+

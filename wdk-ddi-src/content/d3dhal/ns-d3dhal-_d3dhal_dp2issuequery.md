@@ -1,10 +1,9 @@
 ---
 UID: NS:d3dhal._D3DHAL_DP2ISSUEQUERY
 title: _D3DHAL_DP2ISSUEQUERY (d3dhal.h)
-description: DirectX 9.0 and later versions only.
+description: The D3DHAL_DP2ISSUEQUERY structure is used by the D3dDrawPrimitives2 callback function to query for various types of information.
 old-location: display\d3dhal_dp2issuequery.htm
 tech.root: display
-ms.assetid: e7870f7a-545e-43eb-99c5-42a740585c43
 ms.date: 05/10/2018
 keywords: ["D3DHAL_DP2ISSUEQUERY structure"]
 ms.keywords: "*LPD3DHAL_DP2ISSUEQUERY, D3DHAL_DP2ISSUEQUERY, D3DHAL_DP2ISSUEQUERY structure [Display Devices], LPD3DHAL_DP2ISSUEQUERY, LPD3DHAL_DP2ISSUEQUERY structure pointer [Display Devices], _D3DHAL_DP2ISSUEQUERY, d3dhal/D3DHAL_DP2ISSUEQUERY, d3dhal/LPD3DHAL_DP2ISSUEQUERY, d3dstrct_bc6a2c98-b3cf-4161-8aca-fadda2a6cceb.xml, display.d3dhal_dp2issuequery"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dhal.h
 api_name:
+ - _D3DHAL_DP2ISSUEQUERY
  - D3DHAL_DP2ISSUEQUERY
 ---
 
@@ -94,3 +94,4 @@ D3DDP2OP_ISSUEQUERY
 
 
 <a href="/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb">D3dDrawPrimitives2</a>
+

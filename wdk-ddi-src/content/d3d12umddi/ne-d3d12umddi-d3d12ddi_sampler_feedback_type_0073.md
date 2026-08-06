@@ -2,11 +2,9 @@
 UID: NE:d3d12umddi.D3D12DDI_SAMPLER_FEEDBACK_TYPE_0073
 title: D3D12DDI_SAMPLER_FEEDBACK_TYPE_0073
 ms.date: 03/24/2020
-ms.topic: language-reference
 targetos: Windows
-ms.assetid: 2cc8b100-b159-4def-97ed-7702a98650ab
 tech.root: display
-description: Deprecated - do not use.
+description: "Microsoft has deprecated the D3D12DDI_SAMPLER_FEEDBACK_TYPE_0073 structure. Don't use this structure in your code."
 req.construct-type: enumeration
 req.ddi-compliance: 
 req.header: d3d12umddi.h

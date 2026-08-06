@@ -4,7 +4,6 @@ title: IWDTFSystemAction2 (wdtfsystemaction.h)
 description: Defines operations and properties that support driver testing.
 old-location: dtf\iwdtfsystemaction2.htm
 tech.root: dtf
-ms.assetid: 783ddaaa-f39f-4e66-85aa-4788bf7959a6
 ms.date: 04/04/2018
 keywords: ["IWDTFSystemAction2 interface"]
 ms.keywords: IWDTFSystemAction2, IWDTFSystemAction2 interface [Windows Device Testing Framework], IWDTFSystemAction2 interface [Windows Device Testing Framework],described, Microsoft.WDTF.IWDTFSystemAction2, dtf.iwdtfsystemaction2, wdtfsystemaction/IWDTFSystemAction2
@@ -50,9 +49,9 @@ Defines operations and properties that support driver testing.
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDTFSystemAction2</b> interface inherits from <b>IWDTFAction2</b>. <b>IWDTFSystemAction2</b> also has these types of members:
+The <b>IWDTFSystemAction2</b> interface inherits from <b>IWDTFAction2</b>. <b>IWDTFSystemAction2</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-<li><a href="https://docs.microsoft.com/">Properties</a></li>
+<li><a href="/">Methods</a></li>
+<li><a href="/">Properties</a></li>
 </ul>
 

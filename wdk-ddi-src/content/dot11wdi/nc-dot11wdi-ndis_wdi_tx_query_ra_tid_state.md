@@ -4,7 +4,6 @@ title: NDIS_WDI_TX_QUERY_RA_TID_STATE (dot11wdi.h)
 description: The NdisWdiTxQueryRATIDState callback function is used by the TxEngine to query the state of a RA/TID or Port queue.
 old-location: netvista\ndiswditxqueryratidstate.htm
 tech.root: netvista
-ms.assetid: 76949336-3349-4869-83C7-60D7D8A6BE24
 ms.date: 05/02/2018
 keywords: ["NDIS_WDI_TX_QUERY_RA_TID_STATE callback function"]
 ms.keywords: NDIS_WDI_TX_QUERY_RA_TID_STATE, NDIS_WDI_TX_QUERY_RA_TID_STATE callback, NdisWdiTxQueryRATIDState, NdisWdiTxQueryRATIDState callback function [Network Drivers Starting with Windows Vista], dot11wdi/NdisWdiTxQueryRATIDState, netvista.ndiswditxqueryratidstate
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
- - NdisWdiTxQueryRATIDState
+ - NDIS_WDI_TX_QUERY_RA_TID_STATE
 ---
 
 # NDIS_WDI_TX_QUERY_RA_TID_STATE callback function
@@ -46,40 +45,43 @@ api_name:
 
 ## -description
 
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
+
 The NdisWdiTxQueryRATIDState callback function is used by the TxEngine to query the state of a RA/TID or Port queue.
 
 This is a callback inside <a href="/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_ndis_wdi_data_api">NDIS_WDI_DATA_API</a>.
 
 ## -parameters
 
-### -param NdisMiniportDataPathHandle 
+### -param NdisMiniportDataPathHandle [in]
 
-[in]
+
 The NdisMiniportDataPathHandle passed to the IHV miniport in <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tal_txrx_initialize">MiniportWdiTalTxRxInitialize</a>.
 
-### -param PortId 
+### -param PortId [in]
 
-[in]
+
 The port ID.
 
-### -param PeerId 
+### -param PeerId [in]
 
-[in]
+
 The peer ID.
 
-### -param ExTid 
+### -param ExTid [in]
 
-[in]
+
 The Extended Traffic ID (TID)
 
-### -param pWifiStatus 
+### -param pWifiStatus [out]
 
-[out]
+
 Indicates the result of the query operation.  See the <i>Remarks</i> section for more information.
 
-### -param pQueueLength 
+### -param pQueueLength [out]
 
-[out]
+
 The number of backlogged frames in the specified RA/TID  or Port queue.
 
 ## -remarks
@@ -107,3 +109,4 @@ If <b>TargetPriorityQueueing</b> is true, <a href="/windows-hardware/drivers/net
 
 
 <a href="/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_txrx_target_capabilities">WDI_TXRX_CAPABILITIES</a>
+

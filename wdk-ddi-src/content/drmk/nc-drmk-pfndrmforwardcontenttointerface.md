@@ -1,10 +1,9 @@
 ---
 UID: NC:drmk.PFNDRMFORWARDCONTENTTOINTERFACE
 title: PFNDRMFORWARDCONTENTTOINTERFACE (drmk.h)
-description: This callback function is reserved for system use.
+description: "Microsoft reserves the PFNDRMFORWARDCONTENTTOINTERFACE callback function for internal use only. Don't use this function in your code."
 old-location: audio\pfndrmforwardcontenttointerface.htm
 tech.root: audio
-ms.assetid: DFD077B7-307B-439B-828D-DC225FC5AAA0
 ms.date: 05/08/2018
 keywords: ["PFNDRMFORWARDCONTENTTOINTERFACE callback function"]
 ms.keywords: DRMForwardContentToInterface, DRMForwardContentToInterface callback function [Audio Devices], PFNDRMFORWARDCONTENTTOINTERFACE, PFNDRMFORWARDCONTENTTOINTERFACE callback, PfnDRMForwardContentToInterface, PfnDRMForwardContentToInterface callback function [Audio Devices], audio.pfndrmforwardcontenttointerface, drmk/PfnDRMForwardContentToInterface
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Drmk.h
 api_name:
- - DRMForwardContentToInterface
+ - PFNDRMFORWARDCONTENTTOINTERFACE
 ---
 
 # PFNDRMFORWARDCONTENTTOINTERFACE callback function
@@ -50,19 +49,19 @@ This callback function is reserved for system use.
 
 ## -parameters
 
-### -param ContentId 
+### -param ContentId [in]
 
-[in]
+
 This parameter is reserved for system use.
 
-### -param pUnknown 
+### -param pUnknown [in]
 
-[in]
+
 This parameter is reserved for system use.
 
-### -param NumMethods 
+### -param NumMethods [in]
 
-[in]
+
 This parameter is reserved for system use.
 
 ## -returns

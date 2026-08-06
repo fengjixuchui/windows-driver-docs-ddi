@@ -4,7 +4,6 @@ title: PFND3DDDI_SETMATERIAL (d3dumddi.h)
 description: The SetMaterial function sets the material properties that devices on the system use to create the required effect during rendering.
 old-location: display\setmaterial.htm
 tech.root: display
-ms.assetid: e1273478-a450-44fa-95d5-ee86cb3a46b2
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETMATERIAL callback function"]
 ms.keywords: PFND3DDDI_SETMATERIAL, PFND3DDDI_SETMATERIAL callback, SetMaterial, SetMaterial callback function [Display Devices], UserModeDisplayDriver_Functions_004e812d-4be5-4222-9a29-e206e17a2fa1.xml, d3dumddi/SetMaterial, display.setmaterial
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - SetMaterial
-product:
- - Windows
+ - PFND3DDDI_SETMATERIAL
 ---
 
 # PFND3DDDI_SETMATERIAL callback function
@@ -56,7 +53,7 @@ The <i>SetMaterial</i> function sets the material properties that devices on the
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -77,3 +74,4 @@ Material properties detail a material's diffuse reflection, ambient reflection, 
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

@@ -4,7 +4,6 @@ title: IPortClsPower::SetIdlePowerManagement (portcls.h)
 description: The SetIdlePowerManagement method provides a way for the adapter driver to opt in or opt out of idle state detection.
 old-location: audio\iportclspower_setidlepowermanagement.htm
 tech.root: audio
-ms.assetid: ccef350c-7c46-43fa-8834-b0d712d9cf38
 ms.date: 05/08/2018
 keywords: ["IPortClsPower::SetIdlePowerManagement"]
 ms.keywords: IPortClsPower interface [Audio Devices],SetIdlePowerManagement method, IPortClsPower.SetIdlePowerManagement, IPortClsPower::SetIdlePowerManagement, SetIdlePowerManagement, SetIdlePowerManagement method [Audio Devices], SetIdlePowerManagement method [Audio Devices],IPortClsPower interface, audio.iportclspower_setidlepowermanagement, audmp-routines_909c6232-f96f-4487-a51e-a127dc9ad317.xml, portcls/IPortClsPower::SetIdlePowerManagement
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL.
+req.irql: PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IPortClsPower.SetIdlePowerManagement
+ - IPortClsPower::SetIdlePowerManagement
 ---
 
 # IPortClsPower::SetIdlePowerManagement
@@ -50,14 +49,14 @@ The <code>SetIdlePowerManagement</code> method provides a way for the adapter dr
 
 ## -parameters
 
-### -param _DeviceObject 
+### -param _DeviceObject [in]
 
-[in]
+
 Specifies a pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
 
-### -param _bEnabled 
+### -param _bEnabled [in]
 
-[in]
+
 Specifies a Boolean variable that indicates whether idle state detection is enabled or disabled.
 
 ## -returns
@@ -79,3 +78,4 @@ When the <i>bEnabled</i> parameter is set to <b>TRUE</b>, it indicates that the 
 
 
 <a href="/windows-hardware/drivers/audio/immediate-idle-timeout-opt-in">Immediate Idle Timeout Opt-in</a>
+

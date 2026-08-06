@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_GetCallList
 title: RIL_GetCallList function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_GetCallList function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_getcalllist.htm
 tech.root: netvista
-ms.assetid: 7b2e0c82-c204-4d57-a2d2-066b8772ce13
 ms.date: 05/02/2018
 keywords: ["RIL_GetCallList function"]
 ms.keywords: RIL_GetCallList, RIL_GetCallList method [Network Drivers Starting with Windows Vista], netvista.ril_getcalllist, rilapi/RIL_GetCallList

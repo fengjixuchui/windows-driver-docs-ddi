@@ -4,7 +4,6 @@ title: PALLOCATE_ADAPTER_CHANNEL (wdm.h)
 description: The AllocateAdapterChannel routine prepares the system for a DMA operation on behalf of the target device object, and then calls the driver-supplied AdapterControl routine to carry out the DMA operation.
 old-location: kernel\allocateadapterchannel.htm
 tech.root: kernel
-ms.assetid: d3339754-1a54-48f0-90c8-6c7db59fb7cc
 ms.date: 04/30/2018
 keywords: ["PALLOCATE_ADAPTER_CHANNEL callback function"]
 ms.keywords: AllocateAdapterChannel, AllocateAdapterChannel callback function [Kernel-Mode Driver Architecture], PALLOCATE_ADAPTER_CHANNEL, PALLOCATE_ADAPTER_CHANNEL callback, kdma_b2d02da0-ab8f-4fc3-a7a5-a981920c071d.xml, kernel.allocateadapterchannel, wdm/AllocateAdapterChannel
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdm.h
 api_name:
- - AllocateAdapterChannel
+ - PALLOCATE_ADAPTER_CHANNEL
 ---
 
 # PALLOCATE_ADAPTER_CHANNEL callback function
@@ -50,29 +49,29 @@ The <b>AllocateAdapterChannel</b> routine prepares the system for a DMA operatio
 
 ## -parameters
 
-### -param DmaAdapter 
+### -param DmaAdapter [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_adapter">DMA_ADAPTER</a> structure returned by <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter">IoGetDmaAdapter</a> that represents the bus-master adapter or DMA controller.
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the device object that represents the target device for a requested DMA operation.
 
-### -param NumberOfMapRegisters 
+### -param NumberOfMapRegisters [in]
 
-[in]
+
 Specifies the number of map registers to be used in the transfer. This value is the lesser of the number of map registers needed to satisfy the current transfer request, and the number of available map registers returned by <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter">IoGetDmaAdapter</a>.
 
-### -param ExecutionRoutine 
+### -param ExecutionRoutine [in]
 
-[in]
+
 Pointer to a driver-supplied <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_control">AdapterControl</a> routine. The routine is called when the system DMA controller or bus-master adapter becomes available.
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to the driver-determined context to be passed to the <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_control">AdapterControl</a> routine.
 
 ## -returns
@@ -162,3 +161,4 @@ The system passes the value of the <b>CurrentIrp</b> member of <i>DeviceObject</
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pread_dma_counter">ReadDmaCounter</a>
+

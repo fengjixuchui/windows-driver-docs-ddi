@@ -4,7 +4,6 @@ title: IWDFIoRequest (wudfddi.h)
 description: The IWDFIoRequest interface exposes an I/O request object.
 old-location: wdf\iwdfiorequest.htm
 tech.root: wdf
-ms.assetid: 3104284a-4277-4f05-ae3f-3b2bb3c3437d
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequest interface"]
 ms.keywords: IWDFIoRequest, IWDFIoRequest interface, IWDFIoRequest interface,described, UMDFRequestObjectRef_65cbf2de-e966-4eb3-8f3f-2012dba23d99.xml, umdf.iwdfiorequest, wdf.iwdfiorequest, wudfddi/IWDFIoRequest
@@ -52,7 +51,7 @@ The <b>IWDFIoRequest</b> interface exposes an I/O request object.
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFIoRequest</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a>. <b>IWDFIoRequest</b> also has these types of members:
+The <b>IWDFIoRequest</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a>. <b>IWDFIoRequest</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>

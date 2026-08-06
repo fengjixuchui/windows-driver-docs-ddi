@@ -4,7 +4,6 @@ title: _DOT11_WFD_ATTRIBUTES (windot11.h)
 description: The DOT11_WFD_ATTRIBUTES structure is returned in an NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES indication. The structure defines the attributes related to Wi-Fi Direct (WFD) operation modes.
 old-location: netvista\dot11_wfd_attributes.htm
 tech.root: netvista
-ms.assetid: 7B221221-5C91-45DA-85C5-5E7CF71E6689
 ms.date: 02/16/2018
 keywords: ["DOT11_WFD_ATTRIBUTES structure"]
 ms.keywords: "*PDOT11_WFD_ATTRIBUTES, DOT11_WFD_ATTRIBUTES, DOT11_WFD_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], PDOT11_WFD_ATTRIBUTES, PDOT11_WFD_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], _DOT11_WFD_ATTRIBUTES, netvista.dot11_wfd_attributes, windot11/DOT11_WFD_ATTRIBUTES, windot11/PDOT11_WFD_ATTRIBUTES"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - Windot11.h
 api_name:
+ - _DOT11_WFD_ATTRIBUTES
+ - PDOT11_WFD_ATTRIBUTES
  - DOT11_WFD_ATTRIBUTES
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_WFD_ATTRIBUTES structure
@@ -52,7 +51,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The <b>DOT11_WFD_ATTRIBUTES</b> structure is returned in an <a href="/previous-versions/windows/hardware/wireless/ff565926(v=vs.85)">NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES</a> indication. The structure defines the  attributes related to Wi-Fi Direct (WFD) operation modes.
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The <b>DOT11_WFD_ATTRIBUTES</b> structure is returned in an <a href="/previous-versions/windows/hardware/wireless/ff565926(v=vs.85)">NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES</a> indication. The structure defines the  attributes related to Wi-Fi Direct (WFD) operation modes.
 
 ## -struct-fields
 
@@ -170,3 +172,4 @@ typedef struct _DOT11_WFD_ATTRIBUTES {
 
 
 <a href="/previous-versions/windows/hardware/wireless/ff565926(v=vs.85)">NDIS_MINIPORT_ADAPTER_NATIVE_802_11_ATTRIBUTES</a>
+

@@ -2,17 +2,15 @@
 UID: NF:printerextension.IPrinterExtensionEventArgs.get_BidiNotification
 title: IPrinterExtensionEventArgs::get_BidiNotification (printerextension.h)
 description: Gets the text of the bidirectional communication (Bidi) notification, if applicable.
-old-location: print\iprinterextensioneventargs_bidinotification.htm
 tech.root: print
-ms.assetid: 8AAC657A-218E-41CF-AE89-0199A5B35280
-ms.date: 04/20/2018
+ms.date: 08/03/2022
 keywords: ["IPrinterExtensionEventArgs::get_BidiNotification"]
 ms.keywords: BidiNotification property [Print Devices], BidiNotification property [Print Devices],IPrinterExtensionEventArgs interface, IPrinterExtensionEventArgs interface [Print Devices],BidiNotification property, IPrinterExtensionEventArgs.BidiNotification, IPrinterExtensionEventArgs.get_BidiNotification, IPrinterExtensionEventArgs::BidiNotification, IPrinterExtensionEventArgs::get_BidiNotification, get_BidiNotification, print.iprinterextensioneventargs_bidinotification, printerextension/IPrinterExtensionEventArgs::BidiNotification, printerextension/IPrinterExtensionEventArgs::get_BidiNotification
 req.header: printerextension.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 
@@ -38,12 +36,8 @@ api_type:
 api_location:
  - Printerextension.h
 api_name:
- - IPrinterExtensionEventArgs.BidiNotification
- - IPrinterExtensionEventArgs.get_BidiNotification
+ - IPrinterExtensionEventArgs::get_BidiNotification
 ---
-
-# IPrinterExtensionEventArgs::get_BidiNotification
-
 
 ## -description
 
@@ -53,6 +47,14 @@ This property is read-only.
 
 ## -parameters
 
+### -param pbstrBidiNotification
+
+Defines the **BSTR** parameter *pbstrBidiNotification*.
+
+## -returns
+
+Returns an **HRESULT** value. If the property call was not successful, it returns the appropriate **HRESULT** error code.
+
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioneventargs">IPrinterExtensionEventArgs</a>
+[IPrinterExtensionEventArgs](./nn-printerextension-iprinterextensioneventargs.md)

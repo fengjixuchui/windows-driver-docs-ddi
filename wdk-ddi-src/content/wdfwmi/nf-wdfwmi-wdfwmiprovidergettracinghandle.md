@@ -4,7 +4,6 @@ title: WdfWmiProviderGetTracingHandle function (wdfwmi.h)
 description: The WdfWmiProviderGetTracingHandle method returns a handle to the event logger of a WPP software tracing session.
 old-location: wdf\wdfwmiprovidergettracinghandle.htm
 tech.root: wdf
-ms.assetid: 44ab1cf3-abd3-4100-a6ad-51f2322881b1
 ms.date: 02/26/2018
 keywords: ["WdfWmiProviderGetTracingHandle function"]
 ms.keywords: DFWMIRef_eea0d3ab-8fb8-4053-8260-e5c396a06524.xml, WdfWmiProviderGetTracingHandle, WdfWmiProviderGetTracingHandle method, kmdf.wdfwmiprovidergettracinghandle, wdf.wdfwmiprovidergettracinghandle, wdfwmi/WdfWmiProviderGetTracingHandle
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,9 +52,9 @@ The <b>WdfWmiProviderGetTracingHandle</b> method returns a handle to the event l
 
 ## -parameters
 
-### -param WmiProvider 
+### -param WmiProvider [in]
 
-[in]
+
 A handle to a WMI provider object that the driver obtained by calling <a href="/windows-hardware/drivers/ddi/wdfwmi/nf-wdfwmi-wdfwmiprovidercreate">WdfWmiProviderCreate</a> or <a href="/windows-hardware/drivers/ddi/wdfwmi/nf-wdfwmi-wdfwmiinstancegetprovider">WdfWmiInstanceGetProvider</a>.
 
 ## -returns

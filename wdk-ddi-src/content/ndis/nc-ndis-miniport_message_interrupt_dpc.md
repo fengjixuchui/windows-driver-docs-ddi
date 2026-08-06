@@ -4,7 +4,6 @@ title: MINIPORT_MESSAGE_INTERRUPT_DPC (ndis.h)
 description: A miniport driver must provide a MiniportMessageInterruptDPC handler if the driver calls the NdisMRegisterInterruptEx function to register an interrupt.
 old-location: netvista\miniportmessageinterruptdpc.htm
 tech.root: netvista
-ms.assetid: c1eca20b-eda1-442c-8644-798fa864d5d7
 ms.date: 05/02/2018
 keywords: ["MINIPORT_MESSAGE_INTERRUPT_DPC callback function"]
 ms.keywords: MINIPORT_MESSAGE_INTERRUPT_DPC, MINIPORT_MESSAGE_INTERRUPT_DPC callback, MiniportMessageInterruptDPC, MiniportMessageInterruptDPC callback function [Network Drivers Starting with Windows Vista], ndis/MiniportMessageInterruptDPC, ndis_interrupts_miniport_functions_ref_eb463565-15ab-4751-be20-4239e6ccb987.xml, netvista.miniportmessageinterruptdpc
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportMessageInterruptDPC
+ - MINIPORT_MESSAGE_INTERRUPT_DPC
 ---
 
 # MINIPORT_MESSAGE_INTERRUPT_DPC callback function
@@ -55,18 +54,18 @@ A miniport driver must provide a
 
 ## -parameters
 
-### -param MiniportInterruptContext 
+### -param MiniportInterruptContext [in]
 
-[in]
+
 A handle to a block of interrupt context information. The miniport driver supplied this handle in
      the 
      <i>MiniportInterruptContext</i> parameter that the miniport driver passed to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterinterruptex">
      NdisMRegisterInterruptEx</a> function.
 
-### -param MessageId 
+### -param MessageId [in]
 
-[in]
+
 A message-signaled interrupt (MSI) message identifier. 
      <i>MessageId</i> is an index to an 
      <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_interrupt_message_info_entry">
@@ -77,9 +76,9 @@ A message-signaled interrupt (MSI) message identifier.
      <b>MessageInfoTable</b> member when the driver successfully registers for MSI with the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterinterruptex">NdisMRegisterInterruptEx</a> function.
 
-### -param MiniportDpcContext 
+### -param MiniportDpcContext [in]
 
-[in]
+
 A pointer to a context area that the miniport driver supplied when it called the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismqueuedpcex">NdisMQueueDpcEx</a> or 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismqueuedpc">NdisMQueueDpc</a> function. If NDIS called 
@@ -89,13 +88,13 @@ A pointer to a context area that the miniport driver supplied when it called the
      MiniportMessageInterrupt</a> function, then 
      <i>MiniportDpcContext</i> is <b>NULL</b>.
 
-### -param ReceiveThrottleParameters 
+### -param ReceiveThrottleParameters [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_receive_throttle_parameters">
      NDIS_RECEIVE_THROTTLE_PARAMETERS</a> structure specifies the maximum number of 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures that a miniport
+     <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures that a miniport
      driver should indicate in a DPC.
 
 <div class="alert"><b>Note</b>  In NDIS 6.1 and earlier, this parameter is named <i>NdisReserved1</i>, its datatype is <b>PULONG</b>, and it is reserved for NDIS.</div>
@@ -105,9 +104,9 @@ A pointer to an
 
 Reserved for NDIS.
 
-### -param NdisReserved2 
+### -param NdisReserved2 [in]
 
-[in]
+
 Reserved for NDIS.
 
 <div class="alert"><b>Note</b>  In NDIS 6.1 and earlier, this parameter's datatype is <b>PULONG</b>.</div>
@@ -247,7 +246,7 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 
@@ -273,3 +272,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/network/ndis-receive-side-scaling2">Receive Side Scaling (RSS)</a>
+

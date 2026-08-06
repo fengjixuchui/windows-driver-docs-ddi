@@ -4,7 +4,6 @@ title: FwpsAleEndpointGetSecurityInfo0 function (fwpsk.h)
 description: The FwpsAleEndpointGetSecurityInfo0 function retrieves security information about the application layer enforcement (ALE) endpoint enumeration session.Note  FwpsAleEndpointGetSecurityInfo0 is a specific version of FwpsAleEndpointGetSecurityInfo.
 old-location: netvista\fwpsaleendpointgetsecurityinfo0.htm
 tech.root: netvista
-ms.assetid: 0c825695-7fef-4eb1-8615-f41c526aa32d
 ms.date: 05/02/2018
 keywords: ["FwpsAleEndpointGetSecurityInfo0 function"]
 ms.keywords: FwpsAleEndpointGetSecurityInfo0, FwpsAleEndpointGetSecurityInfo0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsAleEndpointGetSecurityInfo0, netvista.fwpsaleendpointgetsecurityinfo0, wfp_ref_2_funct_3_fwps_A-B_83803cc6-94be-4b32-8b33-2d12cec31e9e.xml
@@ -54,43 +53,43 @@ The
 
 ## -parameters
 
-### -param engineHandle 
+### -param engineHandle [in]
 
-[in]
+
 A handle for an open session with the filter engine. This handle is obtained when a session is
      opened by calling 
      <a href="/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmengineopen0">FwpmEngineOpen0</a>.
 
-### -param securityInfo 
+### -param securityInfo [in]
 
-[in]
+
 A set of security information flags. For more information, see the 
      <a href="/windows-hardware/drivers/ifs/security-information">SECURITY_INFORMATION</a> description in the
      Installable File Systems driver documentation.
 
-### -param sidOwner 
+### -param sidOwner [out]
 
-[out]
+
 The security identifier of the security owner.
 
-### -param sidGroup 
+### -param sidGroup [out]
 
-[out]
+
 The security identifier of the security group.
 
-### -param dacl 
+### -param dacl [out]
 
-[out]
+
 The discretionary access control list.
 
-### -param sacl 
+### -param sacl [out]
 
-[out]
+
 The system access control list.
 
-### -param securityDescriptor 
+### -param securityDescriptor [out]
 
-[out]
+
 The security descriptor structure.
 
 ## -returns

@@ -4,7 +4,6 @@ title: GET_IDLE_WAKE_INFO (wdm.h)
 description: The GetIdleWakeInfo routine enables the driver for a device to discover the device power states from which the device can signal a wake event.
 old-location: kernel\getidlewakeinfo.htm
 tech.root: kernel
-ms.assetid: 51DE471E-5409-4ED9-BC50-29D18E8F5A16
 ms.date: 04/30/2018
 keywords: ["GET_IDLE_WAKE_INFO callback function"]
 ms.keywords: GET_IDLE_WAKE_INFO, GetIdleWakeInfo, GetIdleWakeInfo routine [Kernel-Mode Driver Architecture], kernel.getidlewakeinfo, wdm/GetIdleWakeInfo
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - GetIdleWakeInfo
+ - GET_IDLE_WAKE_INFO
 ---
 
 # GET_IDLE_WAKE_INFO callback function
@@ -50,14 +49,14 @@ The <i>GetIdleWakeInfo</i> routine enables the driver for a device to discover t
 
 ## -parameters
 
-### -param Context 
+### -param Context [in, optional]
 
-[in, optional]
+
 A pointer to interface-specific context information. The caller sets this parameter to the value of the <b>Context</b> member of the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_support_interface">D3COLD_SUPPORT_INTERFACE</a> structure for the interface.
 
-### -param SystemPowerState 
+### -param SystemPowerState [in]
 
-[in]
+
 System power state. Set this parameter to one of the following <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_system_power_state">SYSTEM_POWER_STATE</a> enumeration values:
 
 <ul>
@@ -69,9 +68,9 @@ System power state. Set this parameter to one of the following <a href="/windows
 </ul>
 These values represent system power states S0 (system working state) through S4. For the <i>SystemPowerState</i> value supplied by the caller, the routine determines the deepest device power state from which the device can issue a wake signal.
 
-### -param DeepestWakeableDstate 
+### -param DeepestWakeableDstate [out]
 
-[out]
+
 Deepest wakeable Dx state. This parameter is a pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_device_wake_depth">DEVICE_WAKE_DEPTH</a> variable. If the call is successful, the routine writes one of the following enumeration values to this variable:
 
 <ul>
@@ -112,7 +111,7 @@ The driver in this example can call the <i>GetIdleWakeInfo</i> routine to determ
 </ul>
 The driver should interpret either of these results to mean that the device cannot signal a wake event when the computer is in S0. Based on this information, the driver should keep the device in D0 until the computer prepares to exit S0.
 
-The drivers for most devices can treat an output value of <b>DeviceWakeDepthD0</b> the same as <b>DeviceWakeDepthNotWakeable</b>. Only a few drivers might have a reason to arm a wake signal when their devices are in D0. These are drivers for simple devices that monitor external events that trigger wake signals regardless of the whether the devices are in D0 or low-power Dx states. An example of such a device is a power button or a sleep button on a computer.
+The drivers for most devices can treat an output value of <b>DeviceWakeDepthD0</b> the same as <b>DeviceWakeDepthNotWakeable</b>. Only a few drivers might have a reason to arm a wake signal when their devices are in D0. These are drivers for simple devices that monitor external events that trigger wake signals regardless of whether the devices are in D0 or low-power Dx states. An example of such a device is a power button or a sleep button on a computer.
 
 The <i>GetIdleWakeInfo</i> routine queries the underlying bus driver and ACPI system firmware to determine the lowest device power state from which the device can signal a wake event. If the bus driver and firmware cannot supply this information, the routine fails and returns an error status code.
 
@@ -144,3 +143,4 @@ An inline helper function, <b>MapWakeDepthToDstate</b>, is provided to convert t
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_system_power_state">SYSTEM_POWER_STATE</a>
+

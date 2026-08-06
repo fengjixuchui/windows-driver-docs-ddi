@@ -4,7 +4,6 @@ title: IFixedPage::GetWriteStream (filterpipeline.h)
 description: The GetWriteStream method retrieves the stream object to write page markup to read . You can use this stream to change page markup.
 old-location: print\ifixedpage_getwritestream.htm
 tech.root: print
-ms.assetid: 1a095d51-b727-4d89-aa7c-f43998db4c2e
 ms.date: 04/20/2018
 keywords: ["IFixedPage::GetWriteStream"]
 ms.keywords: GetWriteStream, GetWriteStream method [Print Devices], GetWriteStream method [Print Devices],IFixedPage interface, IFixedPage interface [Print Devices],GetWriteStream method, IFixedPage.GetWriteStream, IFixedPage::GetWriteStream, filterpipeline/IFixedPage::GetWriteStream, filterpipeline_f253c020-8d3d-44c1-a9fb-e5093c29a637.xml, print.ifixedpage_getwritestream
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - filterpipeline.h
 api_name:
- - IFixedPage.GetWriteStream
+ - IFixedPage::GetWriteStream
 ---
 
 # IFixedPage::GetWriteStream
@@ -50,9 +49,9 @@ The <b>GetWriteStream</b> method retrieves the stream object to write page marku
 
 ## -parameters
 
-### -param ppWriteStream 
+### -param ppWriteStream [out]
 
-[out]
+
 The stream that the filter should use to write page markup to send data.
 
 ## -returns

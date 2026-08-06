@@ -1,10 +1,9 @@
 ---
 UID: NF:miniport.WRITE_REGISTER_BUFFER_USHORT
 title: WRITE_REGISTER_BUFFER_USHORT function (miniport.h)
-description: The WRITE_REGISTER_BUFFER_USHORT routine writes a number of USHORT values from a buffer to the specified register.
+description: The WRITE_REGISTER_BUFFER_USHORT function (miniport.h) writes a number of USHORT values from a buffer to the specified register.
 old-location: kernel\write_register_buffer_ushort.htm
 tech.root: kernel
-ms.assetid: 070fc2b0-045e-4778-82d4-0850cd2064a5
 ms.date: 04/30/2018
 keywords: ["WRITE_REGISTER_BUFFER_USHORT function"]
 ms.keywords: WRITE_REGISTER_BUFFER_USHORT, WRITE_REGISTER_BUFFER_USHORT routine [Kernel-Mode Driver Architecture], k103_31475540-7ba8-44b6-ad54-e794ffddf8ee.xml, kernel.write_register_buffer_ushort, wdm/WRITE_REGISTER_BUFFER_USHORT
@@ -50,19 +49,19 @@ The <b>WRITE_REGISTER_BUFFER_USHORT</b> routine writes a number of USHORT values
 
 ## -parameters
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 Pointer to the register, which must be a mapped range in memory space.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to a buffer from which an array of USHORT values is to be written.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of USHORT values to be written to the register.
 
 ## -remarks

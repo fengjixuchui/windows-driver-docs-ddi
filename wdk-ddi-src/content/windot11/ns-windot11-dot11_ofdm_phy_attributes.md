@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11.DOT11_OFDM_PHY_ATTRIBUTES
 title: DOT11_OFDM_PHY_ATTRIBUTES (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_OFDM_PHY_ATTRIBUTES structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_ofdm_phy_attributes.htm
 tech.root: netvista
-ms.assetid: edc9bd9b-938f-43df-80fd-5a4d49f6f768
 ms.date: 02/16/2018
 keywords: ["DOT11_OFDM_PHY_ATTRIBUTES structure"]
 ms.keywords: "*PDOT11_OFDM_PHY_ATTRIBUTES, DOT11_OFDM_PHY_ATTRIBUTES, DOT11_OFDM_PHY_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_20b6778d-4037-488b-a99f-304258498618.xml, PDOT11_OFDM_PHY_ATTRIBUTES, PDOT11_OFDM_PHY_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_ofdm_phy_attributes, windot11/DOT11_OFDM_PHY_ATTRIBUTES, windot11/PDOT11_OFDM_PHY_ATTRIBUTES"
@@ -41,8 +40,7 @@ api_location:
  - windot11.h
 api_name:
  - DOT11_OFDM_PHY_ATTRIBUTES
-product:
- - Windows 10 or later.
+ - PDOT11_OFDM_PHY_ATTRIBUTES
 ---
 
 # DOT11_OFDM_PHY_ATTRIBUTES structure
@@ -50,7 +48,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_OFDM_PHY_ATTRIBUTES structure defines the attributes specific to an orthogonal frequency
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_OFDM_PHY_ATTRIBUTES structure defines the attributes specific to an orthogonal frequency
   division multiplexing (OFDM) PHY type.
 
 ## -struct-fields
@@ -172,3 +173,4 @@ The miniport driver defines the attributes of a PHY on the 802.11 station throug
 ## -see-also
 
 <a href="..\windot11\ns-windot11-dot11_phy_attributes.md">DOT11_PHY_ATTRIBUTES</a>
+

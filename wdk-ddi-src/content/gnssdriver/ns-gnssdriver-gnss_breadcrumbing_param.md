@@ -1,15 +1,13 @@
 ---
-UID: NS:gnssdriver.__unnamed_struct_16
+UID: NS:gnssdriver.GNSS_BREADCRUMBING_PARAM
 title: GNSS_BREADCRUMBING_PARAM (gnssdriver.h)
-description: This structure contains the configuration passed into the start of breadcrumbing via IOCTL_GNSS_START_BREADCRUMBING.
-old-location: gnss\gnss_breadcrumbing_param.htm
+description: The GNSS_BREADCRUMBING_PARAM structure contains the configuration passed into the start of breadcrumbing via IOCTL_GNSS_START_BREADCRUMBING.
 tech.root: gnss
-ms.assetid: 1EAD5B17-B662-4D97-B045-ED09E4AF6E99
-ms.date: 02/15/2018
+ms.date: 06/17/2022
 keywords: ["GNSS_BREADCRUMBING_PARAM structure"]
 ms.keywords: "*PGNSS_BREADCRUMBING_PARAM, GNSS_BREADCRUMBING_PARAM, GNSS_BREADCRUMBING_PARAM structure [Sensor Devices], PGNSS_BREADCRUMBING_PARAM, PGNSS_BREADCRUMBING_PARAM structure pointer [Sensor Devices], gnss.gnss_breadcrumbing_param, gnssdriver/GNSS_BREADCRUMBING_PARAM, gnssdriver/PGNSS_BREADCRUMBING_PARAM"
 req.header: gnssdriver.h
-req.include-header: 
+req.include-header: Gnssdriver.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -40,15 +38,13 @@ api_type:
 api_location:
  - gnssdriver.h
 api_name:
+ - PGNSS_BREADCRUMBING_PARAM
  - GNSS_BREADCRUMBING_PARAM
 ---
 
-# GNSS_BREADCRUMBING_PARAM structure
-
-
 ## -description
 
-This structure contains the configuration passed into the start of breadcrumbing via <a href="/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_start_breadcrumbing">IOCTL_GNSS_START_BREADCRUMBING</a>.
+The **GNSS_BREADCRUMBING_PARAM** structure contains the configuration passed into the start of breadcrumbing via [IOCTL_GNSS_START_BREADCRUMBING](./ni-gnssdriver-ioctl_gnss_start_breadcrumbing.md).
 
 ## -struct-fields
 
@@ -66,7 +62,7 @@ Contains the maximum horizontal uncertainty value. Any fix with an error radius 
 
 ### -field MinDistanceBetweenFixes
 
-Contains the minimum distance between fixes. Only record a fix if the center of it is at least as  far apart as this value from center of the last fix, using a Haversine distance calculation.
+Contains the minimum distance between fixes. Only record a fix if the center of it is at least as far apart as this value from center of the last fix, using a Haversine distance calculation.
 
 ### -field MaximumErrorTimeoutMs
 
@@ -74,11 +70,5 @@ Contains the maximum error timeout in milliseconds. If the location of the devic
 
 ### -field Unused
 
- 
+Padding buffer reserved for future use.
 
-
-
-
-#### - Unused[512]
-
-Padding buffer.

@@ -4,7 +4,6 @@ title: __RxSynchronizeBlockingOperations function (rxcontx.h)
 description: "__RxSynchronizeBlockingOperations synchronizes blocking I/O requests to the same work queue."
 old-location: ifsk\__rxsynchronizeblockingoperations.htm
 tech.root: ifsk
-ms.assetid: e957f8bc-2ce3-4b9c-819e-ee068b39c4a0
 ms.date: 04/16/2018
 keywords: ["_RxSynchronizeBlockingOperations function"]
 ms.keywords: "__RxSynchronizeBlockingOperations, __RxSynchronizeBlockingOperations function [Installable File System Drivers], ifsk.__rxsynchronizeblockingoperations, rxcontx/__RxSynchronizeBlockingOperations, rxref_d35d9118-8942-402e-8c78-3168a2d9ad73.xml"
@@ -50,24 +49,24 @@ api_name:
 
 ## -parameters
 
-### -param RxContext 
+### -param RxContext [in, out]
 
-[in, out]
+
 A pointer to the RX_CONTEXT of the operation being synchronized.
 
-### -param Fcb 
+### -param Fcb [in]
 
-[in]
+
 A pointer to the FCB.
 
-### -param BlockingIoQ 
+### -param BlockingIoQ [in, out]
 
-[in, out]
+
 A pointer to the LIST_ENTRY for the queue.
 
-### -param DropFcbLock 
+### -param DropFcbLock [in]
 
-[in]
+
 A Boolean value that indicates if the FCB resource should be released. If this parameter is <b>TRUE</b>, then the FCB resource will be released.
 
 ## -returns

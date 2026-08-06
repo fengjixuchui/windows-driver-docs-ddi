@@ -4,7 +4,6 @@ title: WdfRegistryRemoveKey function (wdfregistry.h)
 description: The WdfRegistryRemoveKey method removes the registry key that is associated with a specified framework registry-key object and then deletes the registry-key object.
 old-location: wdf\wdfregistryremovekey.htm
 tech.root: wdf
-ms.assetid: b23d1c2f-15f0-4b9e-8a10-9b81056fa509
 ms.date: 02/26/2018
 keywords: ["WdfRegistryRemoveKey function"]
 ms.keywords: DFRegKeyObjectRef_448264d5-1720-46e3-b493-b195825db91f.xml, WdfRegistryRemoveKey, WdfRegistryRemoveKey method, kmdf.wdfregistryremovekey, wdf.wdfregistryremovekey, wdfregistry/WdfRegistryRemoveKey
@@ -55,9 +54,9 @@ The <b>WdfRegistryRemoveKey</b> method removes the registry key that is associat
 
 ## -parameters
 
-### -param Key 
+### -param Key [in]
 
-[in]
+
 A handle to a registry-key object that represents an opened registry key.
 
 ## -returns
@@ -112,13 +111,14 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 ## -remarks
 
+> [!NOTE]
+> Before calling **WdfRegistryRemoveKey**, ensure that all the keys and values under the given key have been deleted. Delete each subkey first, starting with the leaf keys and work your way up.
+
 <div class="alert"><b>Note</b>  <p class="note">From a KMDF driver, do not call <b>WdfRegistryRemoveKey</b> and then <a href="/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistryclose">WdfRegistryClose</a> on the same key. The WDFKEY is no longer valid after <b>WdfRegistryRemoveKey</b> returns.
 
 </div>
 <div> </div>
 While it is legal for a UMDF driver to call <b>WdfRegistryRemoveKey</b>, the call always returns <b>STATUS_NOT_IMPLEMENTED</b>.   To delete the WDFKEY object, a UMDF driver should instead call <a href="/windows-hardware/drivers/ddi/wdfregistry/nf-wdfregistry-wdfregistryclose">WdfRegistryClose</a>.
-
-<b>WdfRegistryRemoveKey</b> does not return STATUS_SUCCESS if the specified key object represents a registry key that has subkeys. In other words, the driver must remove the subkeys first.
 
 For more information about registry-key objects, see <a href="/windows-hardware/drivers/wdf/using-the-registry-in-wdf-drivers">Using the Registry in Framework-Based Drivers</a>.
 

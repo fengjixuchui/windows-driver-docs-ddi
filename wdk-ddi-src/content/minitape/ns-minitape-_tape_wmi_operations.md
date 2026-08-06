@@ -1,10 +1,9 @@
 ---
 UID: NS:minitape._TAPE_WMI_OPERATIONS
 title: _TAPE_WMI_OPERATIONS (minitape.h)
-description: The tape miniclass driver passes this structure to its TapeMiniWMIControl routine to indicate which WMI operation must be performed by the device.
+description: The _TAPE_WMI_OPERATIONS structure (minitape.h) contains information that indicates which WMI operation must be performed by the device.
 old-location: storage\tape_wmi_operations.htm
 tech.root: storage
-ms.assetid: 430d982e-4740-46ad-8391-aba5813a833a
 ms.date: 03/29/2018
 keywords: ["TAPE_WMI_OPERATIONS structure"]
 ms.keywords: "*PTAPE_WMI_OPERATIONS, PTAPE_WMI_OPERATIONS, PTAPE_WMI_OPERATIONS structure pointer [Storage Devices], TAPE_WMI_OPERATIONS, TAPE_WMI_OPERATIONS structure [Storage Devices], _TAPE_WMI_OPERATIONS, ntddtape/PTAPE_WMI_OPERATIONS, ntddtape/TAPE_WMI_OPERATIONS, storage.tape_wmi_operations, structs-tape_93f1d9af-45b2-4121-9b4c-70ed7eaf1782.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddtape.h
 api_name:
+ - _TAPE_WMI_OPERATIONS
+ - PTAPE_WMI_OPERATIONS
  - TAPE_WMI_OPERATIONS
 ---
 
@@ -97,3 +98,4 @@ Pointer to a buffer in which the tape minidriver returns the results of the oper
 
 
 <a href="/windows-hardware/drivers/ddi/minitape/nc-minitape-tape_process_command_routine">TapeMiniWMIControl</a>
+

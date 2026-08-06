@@ -4,7 +4,6 @@ title: FltNotifyFilterChangeDirectory function (fltkernel.h)
 description: The FltNotifyFilterChangeDirectory routine creates a notify structure for an IRP_MN_NOTIFY_CHANGE_DIRECTORY operation and adds it to the specified notify list.
 old-location: ifsk\fltnotifyfilterchangedirectory.htm
 tech.root: ifsk
-ms.assetid: bbeabd33-951e-4fd5-9845-cabed5f95fcd
 ms.date: 04/16/2018
 keywords: ["FltNotifyFilterChangeDirectory function"]
 ms.keywords: FltApiRef_e_to_o_855490c1-8b4e-4973-9a96-808b50c20740.xml, FltNotifyFilterChangeDirectory, FltNotifyFilterChangeDirectory routine [Installable File System Drivers], fltkernel/FltNotifyFilterChangeDirectory, ifsk.fltnotifyfilterchangedirectory
@@ -50,39 +49,39 @@ The <b>FltNotifyFilterChangeDirectory</b> routine creates a notify structure for
 
 ## -parameters
 
-### -param NotifySync 
+### -param NotifySync [in, out]
 
-[in, out]
+
 Pointer to an opaque synchronization object for the change directory notify list that the <i>NotifyList</i> parameter points to.
 
-### -param NotifyList 
+### -param NotifyList [in, out]
 
-[in, out]
+
 Pointer to the head of the change directory notify list for the current volume. Each element in the list is an opaque notify structure.
 
-### -param FsContext 
+### -param FsContext [in]
 
-[in]
+
 Pointer to a unique value assigned by the caller to identify the notify structure to be created. If a callback routine is supplied in the <i>TraverseCallback</i> parameter, <i>FsContext</i> is passed as the <i>NotifyContext</i> parameter to that routine.
 
-### -param FullDirectoryName 
+### -param FullDirectoryName [in]
 
-[in]
+
 Pointer to an ANSI or Unicode string that contains the full name for the directory associated with this notify structure.
 
-### -param WatchTree 
+### -param WatchTree [in]
 
-[in]
+
 Set to <b>TRUE</b> if all subdirectories of the directory that is specified by the <i>FullDirectoryName</i> parameter should also be watched. Set to <b>FALSE</b> if only the directory itself is to be watched.
 
-### -param IgnoreBuffer 
+### -param IgnoreBuffer [in]
 
-[in]
+
 Set to <b>TRUE</b> to ignore any user buffers and force the directory to be reenumerated. This action speeds the operation.
 
-### -param CompletionFilter 
+### -param CompletionFilter [in]
 
-[in]
+
 Bitmask of flags that specify the types of changes to files or directories that should cause the callback data structures in the notify list to be completed. The possible flag values are described in the following table.
 
 <table>
@@ -222,14 +221,14 @@ This file stream's data has changed.
 </tr>
 </table>
 
-### -param NotifyCallbackData 
+### -param NotifyCallbackData [in]
 
-[in]
+
 Pointer to the callback data structure for the operation to be added to the notify list. This parameter is required and cannot be <b>NULL</b>.
 
-### -param TraverseCallback 
+### -param TraverseCallback [in, optional]
 
-[in, optional]
+
 Optional pointer to a callback routine to be invoked when a change occurs in a subdirectory that is being watched in a directory tree. This pointer lets the file system check whether the watcher has traverse access to that directory. Such a caller-supplied routine is declared as follows:
 
 
@@ -244,14 +243,14 @@ NTSTATUS
 
 For more information about the <i>TargetContext</i> parameter, see the <i>TargetContext</i> parameter of the <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfullreportchange">FsRtlNotifyFullReportChange</a> routine.
 
-### -param SubjectContext 
+### -param SubjectContext [in, optional]
 
-[in, optional]
+
 Pointer to a context structure to be passed to <i>TraverseCallback</i>. <b>FltNotifyFilterChangeDirectory</b> releases the context and frees the structure after using it. If a <i>TraverseCallback</i> routine is supplied, <i>SubjectContext</i> is passed as the <i>SubjectContext</i> parameter to that routine.
 
-### -param FilterCallback 
+### -param FilterCallback [in, optional]
 
-[in, optional]
+
 Optional pointer to a callback routine to be invoked when a change occurs to the directory. If this callback routine returns <b>TRUE</b>, <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlnotifyfilterreportchange">FsRtlNotifyFilterReportChange</a> completes the pending IRP_MN_NOTIFY_CHANGE_DIRECTORY operations in the notify list; otherwise, it does not. Such a caller-supplied routine is declared as follows: 
 
 

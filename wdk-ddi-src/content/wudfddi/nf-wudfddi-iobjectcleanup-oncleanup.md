@@ -4,7 +4,6 @@ title: IObjectCleanup::OnCleanup (wudfddi.h)
 description: The OnCleanup method releases any references to a WDF object to prevent interface leakage.
 old-location: wdf\iobjectcleanup_oncleanup.htm
 tech.root: wdf
-ms.assetid: 6b66c496-d1cc-4b7a-ae50-f18fffa7275a
 ms.date: 02/26/2018
 keywords: ["IObjectCleanup::OnCleanup"]
 ms.keywords: IObjectCleanup interface,OnCleanup method, IObjectCleanup.OnCleanup, IObjectCleanup::OnCleanup, OnCleanup, OnCleanup method, OnCleanup method,IObjectCleanup interface, UMDFBaseObjectRef_1798eedf-b083-487c-b137-24d9caf1e7a7.xml, umdf.iobjectcleanup_oncleanup, wdf.iobjectcleanup_oncleanup, wudfddi/IObjectCleanup::OnCleanup
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IObjectCleanup.OnCleanup
+ - IObjectCleanup::OnCleanup
 ---
 
 # IObjectCleanup::OnCleanup
@@ -52,10 +51,10 @@ The <b>OnCleanup</b> method releases any references to a WDF object to prevent i
 
 ## -parameters
 
-### -param pWdfObject 
+### -param pWdfObject [in]
 
-[in]
-A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a> interface of a object that is about to be released.
+
+A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a> interface of an object that is about to be released.
 
 ## -remarks
 
@@ -143,3 +142,4 @@ A driver can register the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudf
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfobject-assigncontext">IWDFObject::AssignContext</a>
+

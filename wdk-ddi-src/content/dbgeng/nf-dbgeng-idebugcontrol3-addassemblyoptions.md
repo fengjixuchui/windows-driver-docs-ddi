@@ -4,7 +4,6 @@ title: IDebugControl3::AddAssemblyOptions (dbgeng.h)
 description: The AddAssemblyOptions method turns on some of the assembly and disassembly options.
 old-location: debugger\addassemblyoptions.htm
 tech.root: debugger
-ms.assetid: 9274c3eb-a5c0-43a9-a9d4-541482ddace1
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::AddAssemblyOptions"]
 ms.keywords: AddAssemblyOptions, AddAssemblyOptions method [Windows Debugging], AddAssemblyOptions method [Windows Debugging],IDebugControl3 interface, IDebugControl3 interface [Windows Debugging],AddAssemblyOptions method, IDebugControl3.AddAssemblyOptions, IDebugControl3::AddAssemblyOptions, IDebugControl_9cacf343-5c88-4a06-8f68-7c94b15419b8.xml, dbgeng/IDebugControl3::AddAssemblyOptions, debugger.addassemblyoptions
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugControl3.AddAssemblyOptions
+ - IDebugControl3::AddAssemblyOptions
 ---
 
 # IDebugControl3::AddAssemblyOptions
@@ -50,9 +49,9 @@ The <b>AddAssemblyOptions</b> method turns on some of the assembly and disassemb
 
 ## -parameters
 
-### -param Options 
+### -param Options [in]
 
-[in]
+
 Specifies the assembly and disassembly options to turn on.  <i>Options</i> is a bit-set that will be combined with the existing engine options using the bitwise OR operator.  For a description of the options, see <a href="/previous-versions/ff541443(v=vs.85)">DEBUG_ASMOPT_XXX</a>.
 
 ## -returns
@@ -113,3 +112,4 @@ For more information about using assembly with the <a href="/windows-hardware/dr
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setassemblyoptions">SetAssemblyOptions</a>
+

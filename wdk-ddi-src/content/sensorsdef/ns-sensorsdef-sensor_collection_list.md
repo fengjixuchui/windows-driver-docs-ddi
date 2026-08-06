@@ -4,7 +4,6 @@ title: SENSOR_COLLECTION_LIST (sensorsdef.h)
 description: This structure contains a list of all SENSOR_VALUE_PAIR structures for each sensor. This structure is returned by calling ReadFile.
 old-location: sensors\sensor_collection_list.htm
 tech.root: sensors
-ms.assetid: B842C707-C6E0-4C56-986E-35BFD32F265D
 ms.date: 05/03/2018
 keywords: ["SENSOR_COLLECTION_LIST structure"]
 ms.keywords: "*PSENSOR_COLLECTION_LIST, PSENSOR_COLLECTION_LIST, PSENSOR_COLLECTION_LIST structure pointer [Sensor Devices], SENSOR_COLLECTION_LIST, SENSOR_COLLECTION_LIST structure [Sensor Devices], sensors.sensor_collection_list, sensorsdef/PSENSOR_COLLECTION_LIST, sensorsdef/SENSOR_COLLECTION_LIST"
@@ -41,6 +40,7 @@ api_location:
  - Sensorsdef.h
 api_name:
  - SENSOR_COLLECTION_LIST
+ - PSENSOR_COLLECTION_LIST
 ---
 
 # SENSOR_COLLECTION_LIST structure
@@ -79,3 +79,4 @@ The SENSOR_COLLECTION_LIST structure works with the following helper functions:
 <a href="/windows-hardware/drivers/ddi/sensorsdef/nf-sensorsdef-sensor_collection_list_calculate_max_count">SENSOR_COLLECTION_LIST_CALCULATE_MAX_COUNT</a>
 </li>
 </ul>
+

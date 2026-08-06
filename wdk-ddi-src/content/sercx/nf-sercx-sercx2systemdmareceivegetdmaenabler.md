@@ -4,7 +4,6 @@ title: SerCx2SystemDmaReceiveGetDmaEnabler function (sercx.h)
 description: The SerCx2SystemDmaReceiveGetDmaEnabler method gets the DMA enabler for the system DMA controller that is used for system-DMA-receive transactions.
 old-location: serports\sercx2systemdmareceivegetdmaenabler.htm
 tech.root: serports
-ms.assetid: 0C1CEDD8-EA78-4188-AD05-99608B400C84
 ms.date: 04/23/2018
 keywords: ["SerCx2SystemDmaReceiveGetDmaEnabler function"]
 ms.keywords: 2/SerCx2SystemDmaReceiveGetDmaEnabler, SerCx2SystemDmaReceiveGetDmaEnabler, SerCx2SystemDmaReceiveGetDmaEnabler method [Serial Ports], serports.sercx2systemdmareceivegetdmaenabler
@@ -50,9 +49,9 @@ The <b>SerCx2SystemDmaReceiveGetDmaEnabler</b> method gets the DMA enabler for t
 
 ## -parameters
 
-### -param SystemDmaReceive 
+### -param SystemDmaReceive [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMARECEIVE</a> handle to a system-DMA-receive object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2systemdmareceivecreate">SerCx2SystemDmaReceiveCreate</a> method to create this object.
 
 ## -returns

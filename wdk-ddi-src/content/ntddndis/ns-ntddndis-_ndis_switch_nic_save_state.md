@@ -4,7 +4,6 @@ title: _NDIS_SWITCH_NIC_SAVE_STATE (ntddndis.h)
 description: The NDIS_SWITCH_NIC_SAVE_STATE structure specifies the run-time state information for a Hyper-V extensible switch port. The extensible switch extension uses this structure to save or restore run-time port information.
 old-location: netvista\ndis_switch_nic_save_state.htm
 tech.root: netvista
-ms.assetid: FBC2EE79-9D36-4CA9-A7BC-9C422DE51B13
 ms.date: 05/02/2018
 keywords: ["NDIS_SWITCH_NIC_SAVE_STATE structure"]
 ms.keywords: "*PNDIS_SWITCH_NIC_SAVE_STATE, NDIS_SWITCH_NIC_SAVE_STATE, NDIS_SWITCH_NIC_SAVE_STATE structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_NIC_SAVE_STATE, PNDIS_SWITCH_NIC_SAVE_STATE structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_NIC_SAVE_STATE, netvista.ndis_switch_nic_save_state, ntddndis/NDIS_SWITCH_NIC_SAVE_STATE, ntddndis/PNDIS_SWITCH_NIC_SAVE_STATE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_SWITCH_NIC_SAVE_STATE
+ - PNDIS_SWITCH_NIC_SAVE_STATE
  - NDIS_SWITCH_NIC_SAVE_STATE
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_SWITCH_NIC_SAVE_STATE</b> structure specifies the run-time state inf
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_SWITCH_NIC_SAVE_STATE</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_SWITCH_NIC_SAVE_STATE</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_NIC_SAVE_STATE</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
 
@@ -156,7 +157,7 @@ For more information on how to save or restore run-time port information, see <a
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -169,3 +170,4 @@ For more information on how to save or restore run-time port information, see <a
 
 
 <a href="/windows-hardware/drivers/network/oid-switch-nic-save-complete">OID_SWITCH_NIC_SAVE_COMPLETE</a>
+

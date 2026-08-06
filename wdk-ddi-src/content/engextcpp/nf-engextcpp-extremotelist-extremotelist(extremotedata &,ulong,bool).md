@@ -1,10 +1,9 @@
 ---
 UID: NF:engextcpp.ExtRemoteList.ExtRemoteList(ExtRemoteData&,ULONG,bool)
 title: ExtRemoteList::ExtRemoteList(ExtRemoteData &,ULONG,bool) (engextcpp.h)
-description: The ExtRemoteList constructors create a new instance that wraps a singly-linked or doubly-linked list.
+description: The ExtRemoteList(ExtRemoteData&,ULONG,bool) constructors create a new instance that wraps a singly-linked or doubly-linked list.
 old-location: debugger\extremotelist_extremotelist_extremotedata.htm
 tech.root: debugger
-ms.assetid: db670175-ad3b-4bed-b9ad-625494319256
 ms.date: 05/03/2018
 keywords: ["ExtRemoteList::ExtRemoteList(ExtRemoteData &,ULONG,bool)"]
 ms.keywords: ExtRemoteList, ExtRemoteList class [Windows Debugging],ExtRemoteList constructor, ExtRemoteList constructor [Windows Debugging], ExtRemoteList constructor [Windows Debugging],ExtRemoteList class, ExtRemoteList.ExtRemoteList, ExtRemoteList.ExtRemoteList(ExtRemoteData &,ULONG,bool), ExtRemoteList.ExtRemoteList(ExtRemoteData&,ULONG,bool), ExtRemoteList::ExtRemoteList, ExtRemoteList::ExtRemoteList(ExtRemoteData &,ULONG,bool), debugger.extremotelist_extremotelist_extremotedata
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteList.ExtRemoteList
+ - ExtRemoteList::ExtRemoteList
 ---
 
 # ExtRemoteList::ExtRemoteList(ExtRemoteData &,ULONG,bool)
@@ -51,19 +50,19 @@ The <b>ExtRemoteList</b> constructors create a new instance that wraps a singly-
 
 ## -parameters
 
-### -param Head 
+### -param Head [in, ref]
 
-[in, ref]
+
 A reference to an <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotedata-extremotedata(pcstr_ulong64_ulong)">ExtRemoteData</a> object, in the target's memory, that wraps the head of the list.  The head is not considered to be an item in the list.  The type of the head of the list is SINGLE_LIST_ENTRY or LIST_ENTRY.
 
-### -param LinkOffset 
+### -param LinkOffset [in]
 
-[in]
+
 The offset from the beginning of a list item to the pointer to the next item in the list.  This is the offset of the SINGLE_LIST_ENTRY or LIST_ENTRY structure embedded within the list item structure.
 
-### -param Double 
+### -param Double [in]
 
-[in]
+
 Specifies whether the list is singly-linked or doubly-linked.  If <i>Double</i> is <code>true</code>, the list is doubly-linked.  If <i>Double</i> is <code>false</code>, the list is singly-linked.
 
 ## -remarks
@@ -77,3 +76,4 @@ For more information about the SINGLE_LIST_ENTRY and LIST_ENTRY structures, see 
 
 
 <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotelist-extremotelist(ulong64_ulong_bool)">ExtRemoteList::ExtRemoteList (ULONG64)</a>
+

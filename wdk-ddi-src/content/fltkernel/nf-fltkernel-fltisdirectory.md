@@ -4,7 +4,6 @@ title: FltIsDirectory function (fltkernel.h)
 description: A minifilter driver calls the FltIsDirectory routine to determine whether a given file object represents a directory.
 old-location: ifsk\fltisdirectory.htm
 tech.root: ifsk
-ms.assetid: a9343e09-0b7b-4ed8-9b30-63ee0b38d13d
 ms.date: 04/16/2018
 keywords: ["FltIsDirectory function"]
 ms.keywords: FltApiRef_e_to_o_cdcea60b-c299-4445-9c96-126210f2a43e.xml, FltIsDirectory, FltIsDirectory routine [Installable File System Drivers], fltkernel/FltIsDirectory, ifsk.fltisdirectory
@@ -50,19 +49,19 @@ A minifilter driver calls the <b>FltIsDirectory</b> routine to determine whether
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to an already opened file object.
 
-### -param Instance 
+### -param Instance [in]
 
-[in]
+
 Opaque instance pointer for the instance associated with this file object.
 
-### -param IsDirectory 
+### -param IsDirectory [out]
 
-[out]
+
 Pointer to a caller-supplied Boolean variable. On return, this variable receives <b>TRUE</b> if the file object represents a directory, <b>FALSE</b> otherwise.
 
 ## -returns

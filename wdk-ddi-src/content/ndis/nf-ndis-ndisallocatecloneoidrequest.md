@@ -4,7 +4,6 @@ title: NdisAllocateCloneOidRequest function (ndis.h)
 description: The NdisAllocateCloneOidRequest function allocates memory for a new NDIS_OID_REQUEST structure and copies all the information from an existing NDIS_OID_REQUEST structure to the newly allocated structure.
 old-location: netvista\ndisallocatecloneoidrequest.htm
 tech.root: netvista
-ms.assetid: 426ff4f4-7924-4115-9f66-b4152e2ba5bb
 ms.date: 05/02/2018
 keywords: ["NdisAllocateCloneOidRequest function"]
 ms.keywords: NdisAllocateCloneOidRequest, NdisAllocateCloneOidRequest function [Network Drivers Starting with Windows Vista], ndis/NdisAllocateCloneOidRequest, ndis_request_ref_323c05f2-8b33-40c1-a4d8-385a8b0d0015.xml, netvista.ndisallocatecloneoidrequest
@@ -49,26 +48,26 @@ api_name:
 
 The 
   <b>NdisAllocateCloneOidRequest</b> function allocates memory for a new 
-  <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure and copies all the
+  <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure and copies all the
   information from an existing NDIS_OID_REQUEST structure to the newly allocated structure.
 
 ## -parameters
 
-### -param SourceHandle 
+### -param SourceHandle [in]
 
-[in]
+
 An NDIS handle that identifies a filter module or an intermediate driver's protocol
      binding.
 
 ### -param OidRequest
 
 A pointer to an existing 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure from which NDIS
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure from which NDIS
      copies the information to the newly allocated structure.
 
-### -param PoolTag 
+### -param PoolTag [in]
 
-[in]
+
 A kernel pool tag. The tag is a string, delimited by single quotation marks, with as many as four
      characters, usually specified in reverse order.
 
@@ -142,7 +141,7 @@ The driver failed to allocate the cloned structure for reasons other than those 
 To forward a request down to the underlying drivers, an NDIS intermediate driver or filter driver must
     call 
     <b>NdisAllocateCloneOidRequest</b> to allocate a cloned 
-    <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure. A filter driver
+    <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure. A filter driver
     or intermediate driver should not forward the original NDIS_OID_REQUEST structure to underlying
     drivers.
 
@@ -155,7 +154,7 @@ The driver must subsequently call the
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 

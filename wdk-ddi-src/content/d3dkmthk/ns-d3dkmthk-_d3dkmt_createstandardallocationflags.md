@@ -1,10 +1,8 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_CREATESTANDARDALLOCATIONFLAGS
-title: _D3DKMT_CREATESTANDARDALLOCATIONFLAGS (d3dkmthk.h)
-description: Used to create standard allocation flags.
-old-location: display\d3dkmt-createstandardallocationflags.htm
-ms.assetid: a1a4aa0c-2edc-48b9-ad49-c876be930955
-ms.date: 05/10/2018
+title: D3DKMT_CREATESTANDARDALLOCATIONFLAGS (d3dkmthk.h)
+description: Learn more about the D3DKMT_CREATESTANDARDALLOCATIONFLAGS structure.
+ms.date: 07/12/2023
 keywords: ["D3DKMT_CREATESTANDARDALLOCATIONFLAGS structure"]
 ms.keywords: D3DKMT_CREATESTANDARDALLOCATIONFLAGS, D3DKMT_CREATESTANDARDALLOCATIONFLAGS structure [Display Devices], _D3DKMT_CREATESTANDARDALLOCATIONFLAGS, d3dkmthk/D3DKMT_CREATESTANDARDALLOCATIONFLAGS, display.d3dkmt-createstandardallocationflags
 req.header: d3dkmthk.h
@@ -40,15 +38,15 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_CREATESTANDARDALLOCATIONFLAGS
  - D3DKMT_CREATESTANDARDALLOCATIONFLAGS
 ---
 
-# _D3DKMT_CREATESTANDARDALLOCATIONFLAGS structure
-
+# D3DKMT_CREATESTANDARDALLOCATIONFLAGS structure
 
 ## -description
 
-Used to create standard allocation flags.
+The **D3DKMT_CREATESTANDARDALLOCATIONFLAGS** structure specifies flags to use when creating a standard allocation.
 
 ## -struct-fields
 
@@ -60,3 +58,6 @@ This value is reserved for use by the operating system.
 
 The value used to operate over the other members.
 
+## -see-also
+
+[**D3DKMT_CREATESTANDARDALLOCATION**](ns-d3dkmthk-_d3dkmt_createstandardallocation.md)

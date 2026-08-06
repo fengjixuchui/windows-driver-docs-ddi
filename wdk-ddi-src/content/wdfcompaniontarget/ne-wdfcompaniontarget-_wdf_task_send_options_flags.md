@@ -1,10 +1,9 @@
 ---
 UID: NE:wdfcompaniontarget._WDF_TASK_SEND_OPTIONS_FLAGS
 title: _WDF_TASK_SEND_OPTIONS_FLAGS (wdfcompaniontarget.h)
-description: For internal use only.
+description: This WDF_TASK_SEND_OPTIONS_FLAGS article is for internal use only.
 old-location: wdf\wdf_task_send_options_flags.htm
 tech.root: wdf
-ms.assetid: 8ff13908-57f2-404f-a8ea-70c798ee3d7d
 ms.date: 02/26/2018
 keywords: ["WDF_TASK_SEND_OPTIONS_FLAGS enumeration"]
 ms.keywords: WDF_TASK_SEND_OPTIONS_FLAGS, WDF_TASK_SEND_OPTIONS_FLAGS enumeration, WDF_TASK_SEND_OPTION_SYNCHRONOUS, WDF_TASK_SEND_OPTION_TIMEOUT, _WDF_TASK_SEND_OPTIONS_FLAGS, wdf.wdf_task_send_options_flags, wdfcompaniontarget/WDF_TASK_SEND_OPTIONS_FLAGS, wdfcompaniontarget/WDF_TASK_SEND_OPTION_SYNCHRONOUS, wdfcompaniontarget/WDF_TASK_SEND_OPTION_TIMEOUT
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfcompaniontarget.h
 api_name:
+ - _WDF_TASK_SEND_OPTIONS_FLAGS
  - WDF_TASK_SEND_OPTIONS_FLAGS
 ---
 
@@ -52,7 +52,7 @@ For internal use only.
 
 ## -enum-fields
 
-### -field WDF_TASK_SEND_OPTION_TIMEOUT
+### -field WDF_TASK_SEND_OPTION_TIMEOUT:0x00000001
 
-### -field WDF_TASK_SEND_OPTION_SYNCHRONOUS
+### -field WDF_TASK_SEND_OPTION_SYNCHRONOUS:0x00000002
 

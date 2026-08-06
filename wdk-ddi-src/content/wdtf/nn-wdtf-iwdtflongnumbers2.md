@@ -4,7 +4,6 @@ title: IWDTFLongNumbers2 (wdtf.h)
 description: Defines operations and properties for a collection of long numbers.
 old-location: dtf\iwdtflongnumbers2.htm
 tech.root: dtf
-ms.assetid: 2a6c4cf7-179e-4e20-bab4-a4181a0ee64c
 ms.date: 04/04/2018
 keywords: ["IWDTFLongNumbers2 interface"]
 ms.keywords: IWDTFLongNumbers2, IWDTFLongNumbers2 interface [Windows Device Testing Framework], IWDTFLongNumbers2 interface [Windows Device Testing Framework],described, Microsoft.WDTF.IWDTFLongNumbers2, dtf.iwdtflongnumbers2, wdtf/IWDTFLongNumbers2
@@ -50,9 +49,9 @@ Defines operations and properties for a collection of long numbers.
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDTFLongNumbers2</b> interface inherits from <b>ITracing</b>. <b>IWDTFLongNumbers2</b> also has these types of members:
+The <b>IWDTFLongNumbers2</b> interface inherits from <b>ITracing</b>. <b>IWDTFLongNumbers2</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-<li><a href="https://docs.microsoft.com/">Properties</a></li>
+<li><a href="/">Methods</a></li>
+<li><a href="/">Properties</a></li>
 </ul>
 

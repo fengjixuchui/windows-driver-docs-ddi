@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGKARG_COLLECTDBGINFO_EXT
 title: _DXGKARG_COLLECTDBGINFO_EXT (d3dkmddi.h)
 description: The DXGKARG_COLLECTDBGINFO_EXT structure describes extension information for a debug report.
 old-location: display\dxgkarg_collectdbginfo_ext.htm
-ms.assetid: cbde31fe-06c1-44af-8940-b66e8044a5cd
 ms.date: 05/10/2018
 keywords: ["DXGKARG_COLLECTDBGINFO_EXT structure"]
 ms.keywords: DXGKARG_COLLECTDBGINFO_EXT, DXGKARG_COLLECTDBGINFO_EXT structure [Display Devices], DmStructs_3c280734-d3c8-4970-a6d8-8ad2b3dce913.xml, _DXGKARG_COLLECTDBGINFO_EXT, d3dkmddi/DXGKARG_COLLECTDBGINFO_EXT, display.dxgkarg_collectdbginfo_ext
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_COLLECTDBGINFO_EXT
  - DXGKARG_COLLECTDBGINFO_EXT
 ---
 
@@ -52,13 +52,13 @@ The DXGKARG_COLLECTDBGINFO_EXT structure describes extension information for a d
 
 ## -struct-fields
 
-### -field BucketingKey
+### -field BucketingKey [out]
 
-[out] The optional integer key for Microsoft Online Crash Analysis (OCA) bucketing (that is, the categorizing of minidumps).
+The optional integer key for Microsoft Online Crash Analysis (OCA) bucketing (that is, the categorizing of minidumps).
 
-### -field CurrentDmaBufferOffset
+### -field CurrentDmaBufferOffset [out]
 
-[out] The optional execution offset into the current DMA buffer. The operating system uses the offset to optimize DMA data collection.
+The optional execution offset into the current DMA buffer. The operating system uses the offset to optimize DMA data collection.
 
 ### -field Reserved2
 
@@ -91,3 +91,4 @@ Reserved for future use.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_collectdbginfo">DxgkDdiCollectDbgInfo</a>
+

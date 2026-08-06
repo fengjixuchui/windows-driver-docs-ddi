@@ -4,7 +4,6 @@ title: _INDICATION_CODE (bthddi.h)
 description: The INDICATION_CODE enumeration type indicates to a profile driver what type of L2CAP event has occurred.
 old-location: bltooth\indication_code.htm
 tech.root: bltooth
-ms.assetid: 7fc374e3-ca5b-476d-bc44-afb28ecf9920
 ms.date: 04/27/2018
 keywords: ["INDICATION_CODE enumeration"]
 ms.keywords: "*PINDICATION_CODE, INDICATION_CODE, INDICATION_CODE enumeration [Bluetooth Devices], IndicationAddReference, IndicationFreeExtraOptions, IndicationPairDevice, IndicationRecvPacket, IndicationReleaseReference, IndicationRemoteConfigRequest, IndicationRemoteConfigResponse, IndicationRemoteConnect, IndicationRemoteConnectLE, IndicationRemoteDisconnect, IndicationUnpairDevice, IndicationUnpersonalizeDevice, PINDICATION_CODE, PINDICATION_CODE enumeration pointer [Bluetooth Devices], _INDICATION_CODE, bltooth.indication_code, bth_enums_89c3fcea-8183-4227-b3fb-4e18c3612326.xml, bthddi/INDICATION_CODE, bthddi/IndicationAddReference, bthddi/IndicationFreeExtraOptions, bthddi/IndicationPairDevice, bthddi/IndicationRecvPacket, bthddi/IndicationReleaseReference, bthddi/IndicationRemoteConfigRequest, bthddi/IndicationRemoteConfigResponse, bthddi/IndicationRemoteConnect, bthddi/IndicationRemoteConnectLE, bthddi/IndicationRemoteDisconnect, bthddi/IndicationUnpairDevice, bthddi/IndicationUnpersonalizeDevice, bthddi/PINDICATION_CODE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - bthddi.h
 api_name:
+ - _INDICATION_CODE
+ - PINDICATION_CODE
  - INDICATION_CODE
 ---
 
@@ -161,3 +162,4 @@ A value from this enumeration is passed to a profile driver's
 
 
 <a href="/windows-hardware/drivers/ddi/bthddi/nc-bthddi-pfnbthport_indication_callback">L2CAP Callback Function</a>
+

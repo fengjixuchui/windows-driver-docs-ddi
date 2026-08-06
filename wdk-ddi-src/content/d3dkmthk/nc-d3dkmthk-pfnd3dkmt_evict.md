@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_EVICT
 title: PFND3DKMT_EVICT (d3dkmthk.h)
 description: The Pfnd3dkmtEvict instructs the OS to decrement the residency reference count.
-ms.assetid: ef46edbc-aebc-465a-90fc-7087b7fc857b
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_EVICT callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The Pfnd3dkmtEvict instructs the OS to decrement the residency reference count.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_EVICT](ns-d3dkmthk-_d3dkmt_evict.md) structure.
 

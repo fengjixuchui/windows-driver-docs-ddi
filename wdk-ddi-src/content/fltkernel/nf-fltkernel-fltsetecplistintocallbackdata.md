@@ -4,7 +4,6 @@ title: FltSetEcpListIntoCallbackData function (fltkernel.h)
 description: The FltSetEcpListIntoCallbackData routine attaches an extra create parameter context structure (ECP) list to a create operation callback-data object.
 old-location: ifsk\fltsetecplistintocallbackdata.htm
 tech.root: ifsk
-ms.assetid: 91179c1c-fe45-418f-8992-a40e41e3017a
 ms.date: 04/16/2018
 keywords: ["FltSetEcpListIntoCallbackData function"]
 ms.keywords: FltApiRef_p_to_z_01e8fac7-3c58-4ed2-85ac-38580cca36e6.xml, FltSetEcpListIntoCallbackData, FltSetEcpListIntoCallbackData routine [Installable File System Drivers], fltkernel/FltSetEcpListIntoCallbackData, ifsk.fltsetecplistintocallbackdata
@@ -50,18 +49,18 @@ The <b>FltSetEcpListIntoCallbackData </b>routine attaches an extra create parame
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in]
 
-[in]
+
 Opaque filter pointer to the minifilter driver. This pointer uniquely identifies the minifilter driver and remains constant as long as the minifilter driver is loaded.
 
 ### -param CallbackData
 
 <p>Pointer to a callback-data object of type <a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data"><b>FLT_CALLBACK_DATA</b></a>, which represents the create operation.</p>
 
-### -param EcpList 
+### -param EcpList [in]
 
-[in]
+
 Pointer to the ECP list, which contains one or more ECPs, to be attached to the callback-data object.
 
 ## -returns

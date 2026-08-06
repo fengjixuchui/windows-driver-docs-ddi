@@ -4,7 +4,6 @@ title: IPortableDeviceKeyCollection::Add (portabledevicetypes.h)
 description: Adds a property key to the collection.
 old-location: wpddk\iportabledevicekeycollection_add.htm
 tech.root: wpd_dk
-ms.assetid: 632888bc-4a2a-4554-b6c6-8ca54f021342
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceKeyCollection::Add"]
 ms.keywords: Add, Add method, Add method,IPortableDeviceKeyCollection interface, IPortableDeviceKeyCollection interface,Add method, IPortableDeviceKeyCollection.Add, IPortableDeviceKeyCollection::Add, IPortableDeviceKeyCollectionAdd, portabledevicetypes/IPortableDeviceKeyCollection::Add, wpddk.iportabledevicekeycollection_add
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceKeyCollection.Add
+ - IPortableDeviceKeyCollection::Add
 ---
 
 # IPortableDeviceKeyCollection::Add
@@ -51,9 +50,9 @@ Adds a property key to the collection.
 
 ## -parameters
 
-### -param Key 
+### -param Key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> to add to the collection. This method copies the key to the collection.
 
 ## -returns
@@ -96,3 +95,4 @@ None.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicekeycollection">IPortableDeviceKeyCollection Interface</a>
+

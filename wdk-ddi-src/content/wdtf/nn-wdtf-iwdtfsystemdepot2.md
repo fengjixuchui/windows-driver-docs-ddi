@@ -4,7 +4,6 @@ title: IWDTFSystemDepot2 (wdtf.h)
 description: Defines operations and properties for the SystemDepot - the object that represents the local computer.
 old-location: dtf\iwdtfsystemdepot2.htm
 tech.root: dtf
-ms.assetid: 7e6e5d35-66c3-4f69-8ac0-0c1100baa5c6
 ms.date: 04/04/2018
 keywords: ["IWDTFSystemDepot2 interface"]
 ms.keywords: IWDTFSystemDepot2, IWDTFSystemDepot2 interface [Windows Device Testing Framework], IWDTFSystemDepot2 interface [Windows Device Testing Framework],described, Microsoft.WDTF.IWDTFSystemDepot2, dtf.iwdtfsystemdepot2, wdtf/IWDTFSystemDepot2
@@ -51,9 +50,9 @@ local computer.
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDTFSystemDepot2</b> interface inherits from <b>ITracing</b>. <b>IWDTFSystemDepot2</b> also has these types of members:
+The <b>IWDTFSystemDepot2</b> interface inherits from <b>ITracing</b>. <b>IWDTFSystemDepot2</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-<li><a href="https://docs.microsoft.com/">Properties</a></li>
+<li><a href="/">Methods</a></li>
+<li><a href="/">Properties</a></li>
 </ul>
 

@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_RENDER
 title: PFND3DKMT_RENDER (d3dkmthk.h)
 description: The PFND3DKMT_RENDER callback function submits the current command buffer to the Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys).
-ms.assetid: 4eb9114d-9456-41a3-842f-ffa87079fbfa
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_RENDER callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The PFND3DKMT_RENDER callback function submits the current command buffer to the
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_RENDER](ns-d3dkmthk-_d3dkmt_render.md) structure.
 

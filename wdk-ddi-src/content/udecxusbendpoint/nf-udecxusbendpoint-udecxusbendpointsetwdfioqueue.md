@@ -4,7 +4,6 @@ title: UdecxUsbEndpointSetWdfIoQueue function (udecxusbendpoint.h)
 description: Sets a framework queue object with a UDE endpoint.
 old-location: buses\udecxusbendpointsetwdfioqueue.htm
 tech.root: usbref
-ms.assetid: 48744342-9137-48F5-9071-528974DE6AD5
 ms.date: 05/07/2018
 keywords: ["UdecxUsbEndpointSetWdfIoQueue function"]
 ms.keywords: UdecxUsbEndpointSetWdfIoQueue, UdecxUsbEndpointSetWdfIoQueue function [Buses], buses.udecxusbendpointsetwdfioqueue, udecxusbendpoint/UdecxUsbEndpointSetWdfIoQueue
@@ -51,14 +50,14 @@ Sets a framework queue object with a UDE endpoint.
 
 ## -parameters
 
-### -param UdecxUsbEndpoint 
+### -param UdecxUsbEndpoint [in]
 
-[in]
+
 A handle to a UDE endpoint object. The client driver retrieved this pointer in the previous call to <a href="/windows-hardware/drivers/ddi/udecxusbendpoint/nf-udecxusbendpoint-udecxusbendpointcreate">UdecxUsbEndpointCreate</a>.
 
-### -param WdfQueue 
+### -param WdfQueue [in]
 
-[in]
+
 A handle to a framework queue object that will handle requests sent to the endpoint. The client driver retrieved this pointer in the previous call to <a href="/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuecreate">WdfIoQueueCreate</a>.
 
 ## -see-also

@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGK_SAVEMEMORYFORHOTUPDATEFLAGS
 title: DXGK_SAVEMEMORYFORHOTUPDATEFLAGS
 description: Flags used when saving memory for driver hot updates.
 tech.root: display
-ms.assetid: 0862dcea-2d89-483d-a503-b1964dff971d
 ms.date: 04/04/2019
 keywords: ["DXGK_SAVEMEMORYFORHOTUPDATEFLAGS structure"]
 ms.keywords: DXGK_SAVEMEMORYFORHOTUPDATEFLAGS, DXGK_SAVEMEMORYFORHOTUPDATEFLAGS,
@@ -34,6 +33,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_SAVEMEMORYFORHOTUPDATEFLAGS
  - DXGK_SAVEMEMORYFORHOTUPDATEFLAGS
 dev_langs:
  - c++

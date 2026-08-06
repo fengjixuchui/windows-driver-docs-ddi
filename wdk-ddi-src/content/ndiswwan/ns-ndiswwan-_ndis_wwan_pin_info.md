@@ -4,7 +4,6 @@ title: _NDIS_WWAN_PIN_INFO (ndiswwan.h)
 description: The NDIS_WWAN_PIN_INFO structure represents the type and PIN-entry state of Personal Identification Number (PIN) information required by the MB device.
 old-location: netvista\ndis_wwan_pin_info.htm
 tech.root: netvista
-ms.assetid: 432e1d25-b7f4-4897-99dc-27ea14c851e2
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_PIN_INFO structure"]
 ms.keywords: "*PNDIS_WWAN_PIN_INFO, NDIS_WWAN_PIN_INFO, NDIS_WWAN_PIN_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_PIN_INFO, PNDIS_WWAN_PIN_INFO structure pointer [Network Drivers Starting with Windows Vista], WwanRef_9095fdd7-5593-439c-897a-1def216d3374.xml, _NDIS_WWAN_PIN_INFO, ndiswwan/NDIS_WWAN_PIN_INFO, ndiswwan/PNDIS_WWAN_PIN_INFO, netvista.ndis_wwan_pin_info"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_PIN_INFO
+ - PNDIS_WWAN_PIN_INFO
  - NDIS_WWAN_PIN_INFO
 ---
 
@@ -103,7 +104,7 @@ sizeof(NDIS_WWAN_PIN_INFO)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field uStatus
 
@@ -209,8 +210,9 @@ A formatted
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_pin_info">WWAN_PIN_INFO</a>
+

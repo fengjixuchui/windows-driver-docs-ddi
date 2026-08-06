@@ -1,10 +1,9 @@
 ---
 UID: NE:rilapitypes.RILMSGCDMAMSGDISPLAYMODE
 title: RILMSGCDMAMSGDISPLAYMODE (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this enumeration in your code. Microsoft reserves the RILMSGCDMAMSGDISPLAYMODE enumeration for internal use only."
 old-location: netvista\rilmsgcdmamsgdisplaymode.htm
 tech.root: netvista
-ms.assetid: ee75cf74-def7-4705-ae61-c2472bd4446e
 ms.date: 05/02/2018
 keywords: ["RILMSGCDMAMSGDISPLAYMODE enumeration"]
 ms.keywords: RILMSGCDMAMSGDISPLAYMODE, RILMSGCDMAMSGDISPLAYMODE enumeration [Network Drivers Starting with Windows Vista], RIL_MSGDISPLAYMODE_MAX, RIL_MSGDISPLAYMODE_MOBILEDEFAULT, RIL_MSGDISPLAYMODE_USERDEFAULT, netvista.rilmsgcdmamsgdisplaymode, ntddrilapitypes/RILMSGCDMAMSGDISPLAYMODE, ntddrilapitypes/RIL_MSGDISPLAYMODE_MAX, ntddrilapitypes/RIL_MSGDISPLAYMODE_MOBILEDEFAULT, ntddrilapitypes/RIL_MSGDISPLAYMODE_USERDEFAULT

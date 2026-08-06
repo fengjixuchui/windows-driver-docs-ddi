@@ -4,7 +4,6 @@ title: _MSiSCSI_SecurityCapabilities (iscsicfg.h)
 description: The MSiSCSI_SecurityCapabilities structure describes the security capabilities of an initiator.
 old-location: storage\msiscsi_securitycapabilities.htm
 tech.root: storage
-ms.assetid: a385283a-7b24-43aa-b291-541bfd6a91a6
 ms.date: 03/29/2018
 keywords: ["MSiSCSI_SecurityCapabilities structure"]
 ms.keywords: "*PMSiSCSI_SecurityCapabilities, MSiSCSI_SecurityCapabilities, MSiSCSI_SecurityCapabilities structure [Storage Devices], PMSiSCSI_SecurityCapabilities, PMSiSCSI_SecurityCapabilities structure pointer [Storage Devices], _MSiSCSI_SecurityCapabilities, iscsicfg/MSiSCSI_SecurityCapabilities, iscsicfg/PMSiSCSI_SecurityCapabilities, storage.msiscsi_securitycapabilities, structs-iSCSI_0e8b2bb9-69df-4d36-8002-ac32177b724a.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsicfg.h
 api_name:
+ - _MSiSCSI_SecurityCapabilities
+ - PMSiSCSI_SecurityCapabilities
  - MSiSCSI_SecurityCapabilities
 ---
 
@@ -64,7 +65,7 @@ A Boolean value that indicates whether the initiator can use IPsec to protect iS
 
 ### -field CertificatesSupported
 
-A Boolean value that indicates whether the initiator supports certificates. If this member is <b>TRUE</b>, the initiator supports certificates. If this member is <b>FALSE</b>, the initiatiator does not support certificates.
+A Boolean value that indicates whether the initiator supports certificates. If this member is <b>TRUE</b>, the initiator supports certificates. If this member is <b>FALSE</b>, the initiator does not support certificates.
 
 ### -field EncryptionAvailableCount
 
@@ -89,3 +90,4 @@ Initiators must register the MSiSCSI_SecurityCapabilities class using the name o
 
 
 <a href="/windows-hardware/drivers/storage/msiscsi-securitycapabilities-wmi-class">MSiSCSI_SecurityCapabilities WMI Class</a>
+

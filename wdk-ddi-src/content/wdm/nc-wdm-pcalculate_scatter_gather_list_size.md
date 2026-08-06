@@ -4,7 +4,6 @@ title: PCALCULATE_SCATTER_GATHER_LIST_SIZE (wdm.h)
 description: The CalculateScatterGatherList routine calculates the size, in bytes, of scatter/gather list necessary to hold a given buffer.
 old-location: kernel\calculatescattergatherlist.htm
 tech.root: kernel
-ms.assetid: d7509502-0965-44b9-8efb-cec4fbe3ac88
 ms.date: 04/30/2018
 keywords: ["PCALCULATE_SCATTER_GATHER_LIST_SIZE callback function"]
 ms.keywords: CalculateScatterGatherList, CalculateScatterGatherList callback function [Kernel-Mode Driver Architecture], PCALCULATE_SCATTER_GATHER_LIST_SIZE, PCALCULATE_SCATTER_GATHER_LIST_SIZE callback, kdma_f2e8ba68-4b5d-4a3c-9e81-1bf84cc7cc48.xml, kernel.calculatescattergatherlist, wdm/CalculateScatterGatherList
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdm.h
 api_name:
- - CalculateScatterGatherList
+ - PCALCULATE_SCATTER_GATHER_LIST_SIZE
 ---
 
 # PCALCULATE_SCATTER_GATHER_LIST_SIZE callback function
@@ -50,34 +49,32 @@ The <b>CalculateScatterGatherList</b> routine calculates the size, in bytes, of 
 
 ## -parameters
 
-### -param DmaAdapter 
+### -param DmaAdapter [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_adapter">DMA_ADAPTER</a> structure returned by <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter">IoGetDmaAdapter</a> that represents the bus-master adapter or DMA controller.
 
-### -param Mdl 
+### -param Mdl [in, optional]
 
-[in, optional]
+
 Either <b>NULL</b> or a pointer to the MDL that contains the buffer.
 
-### -param CurrentVa 
+### -param CurrentVa [in]
 
-[in]
+
 Pointer to the virtual address of the beginning of the buffer.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Specifies the length of the buffer, in bytes.
 
-### -param ScatterGatherListSize 
+### -param ScatterGatherListSize [out]
 
-[out]
+
 Pointer to the variable the routine uses to return the size of the scatter/gather list, in bytes.
 
-### -param pNumberOfMapRegisters
-
-#### - NumberOfMapRegisters [out, optional]
+### -param pNumberOfMapRegisters [out, optional]
 
 Either <b>NULL</b> or pointer to the variable the routine uses to return the number of map registers needed for DMA operations on the buffer.
 
@@ -159,3 +156,4 @@ A driver uses <b>CalculateScatterGatherList</b> to allocate a scatter/gather lis
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_scatter_gather_list">SCATTER_GATHER_LIST</a>
+

@@ -4,7 +4,6 @@ title: NDK_FN_CREATE_PD (ndkpi.h)
 description: The NdkCreatePd (NDK_FN_CREATE_PD) function creates an NDK protection domain (PD) object.
 old-location: netvista\ndk_fn_create_pd.htm
 tech.root: netvista
-ms.assetid: 18698FAC-1BE6-45E4-911E-661D63607B3F
 ms.date: 05/02/2018
 keywords: ["NDK_FN_CREATE_PD callback function"]
 ms.keywords: NDK_FN_CREATE_PD, NDK_FN_CREATE_PD callback, NdkCreatePd, NdkCreatePd callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkCreatePd, netvista.ndk_fn_create_pd
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkCreatePd
+ - NDK_FN_CREATE_PD
 ---
 
 # NDK_FN_CREATE_PD callback function
@@ -50,22 +49,22 @@ The <i>NdkCreatePd</i> (<i>NDK_FN_CREATE_PD</i>) function creates an NDK protect
 
 ## -parameters
 
-### -param pNdkAdapter 
+### -param pNdkAdapter [in]
 
-[in]
+
 A pointer to an NDK adapter object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_adapter">NDK_ADAPTER</a>).
 
-### -param CreateCompletion 
+### -param CreateCompletion [in]
 
-[in]
+
 A pointer to an <i>NdkCreateCompletion</i> (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_create_completion">NDK_FN_CREATE_COMPLETION</a>) function that completes the creation of an NDK object.
 
-### -param RequestContext 
+### -param RequestContext [in, optional]
 
-[in, optional]
+
 A context value that the NDK provider passes back to the <i>NdkCreateCompletion</i> function that is specified in the <i>CreateCompletion</i> parameter.
 
-### -param *ppNdkPd
+### -param ppNdkPd
 
 A pointer to a created PD object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_pd">NDK_PD</a>) is returned in this location if the request succeeds without returning STATUS_PENDING. If  the request returns STATUS_PENDING then this parameter is ignored and the created object is returned  with the callback that is specified in the  <i>CreateCompletion</i> parameter.
 
@@ -151,3 +150,4 @@ The <i>NdkCreatePd</i> function creates an  NDK protection domain (PD) object. I
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_pd">NDK_PD</a>
+

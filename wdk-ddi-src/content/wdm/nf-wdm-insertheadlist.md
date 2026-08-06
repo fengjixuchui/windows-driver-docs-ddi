@@ -4,7 +4,6 @@ title: InsertHeadList function (wdm.h)
 description: The InsertHeadList routine inserts an entry at the head of a doubly linked list of LIST_ENTRY structures.
 old-location: kernel\insertheadlist.htm
 tech.root: kernel
-ms.assetid: c3ad9d93-93e1-406b-9a58-26dcbf428b50
 ms.date: 04/30/2018
 keywords: ["InsertHeadList function"]
 ms.keywords: InsertHeadList, InsertHeadList routine [Kernel-Mode Driver Architecture], k109_dde56187-8543-45cc-97fd-3fde2475e428.xml, kernel.insertheadlist, wdm/InsertHeadList
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level (See Remarks section)
+req.irql: Any level (see Remarks section)
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ The <b>InsertHeadList</b> routine inserts an entry at the head of a doubly linke
 
 ## -parameters
 
-### -param ListHead 
+### -param ListHead [in, out]
 
-[in, out]
+
 Pointer to the <a href="/windows/win32/api/ntdef/ns-ntdef-list_entry">LIST_ENTRY</a> structure that represents the head of the list.
 
-### -param Entry 
+### -param Entry [in, out]
 
-[in, out]
+
 Pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-list_entry">LIST_ENTRY</a> structure that represents the entry to be inserted into the list.
 
 ## -remarks

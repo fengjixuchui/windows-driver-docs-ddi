@@ -4,7 +4,6 @@ title: PcGetContentRights function (portcls.h)
 description: The PcGetContentRights function retrieves the DRM content rights assigned to a DRM content ID. Note that this function call is identical in operation to the DrmGetContentRights function, and its parameter definitions and return value are also identical.
 old-location: audio\pcgetcontentrights.htm
 tech.root: audio
-ms.assetid: a4e8aee0-d3ac-4086-99a3-a0339b198372
 ms.date: 05/08/2018
 keywords: ["PcGetContentRights function"]
 ms.keywords: PcGetContentRights, PcGetContentRights function [Audio Devices], audio.pcgetcontentrights, audpc-routines_0f94b5f4-2667-488d-a191-4cf13a1f3a27.xml, portcls/PcGetContentRights
@@ -51,14 +50,14 @@ The <b>PcGetContentRights</b> function retrieves the DRM content rights assigned
 
 ## -parameters
 
-### -param ContentId 
+### -param ContentId [in]
 
-[in]
+
 Specifies the DRM content ID. This parameter identifies a KS audio stream.
 
-### -param DrmRights 
+### -param DrmRights [out]
 
-[out]
+
 Specifies the DRM content rights that are assigned to the stream that is identified by <i>ContentId</i>. This parameter is a pointer to a <a href="/windows-hardware/drivers/ddi/drmk/ns-drmk-tagdrmrights">DRMRIGHTS</a> structure.
 
 ## -returns

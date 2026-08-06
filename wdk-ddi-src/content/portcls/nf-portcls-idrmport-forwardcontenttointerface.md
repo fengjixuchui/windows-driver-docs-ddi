@@ -3,7 +3,6 @@ UID: NF:portcls.IDrmPort.ForwardContentToInterface
 title: IDrmPort::ForwardContentToInterface (portcls.h)
 description: The ForwardContentToInterface method accepts a pointer to the COM interface of an object to which the caller intends to forward protected content.
 tech.root: audio
-ms.assetid: 8ccec5e2-2239-4d3d-a789-f7d1800966d7
 ms.date: 02/20/2019
 keywords: ["IDrmPort::ForwardContentToInterface"]
 ms.keywords: IDrmPort::ForwardContentToInterface, ForwardContentToInterface, IDrmPort.ForwardContentToInterface, IDrmPort::ForwardContentToInterface, IDrmPort.ForwardContentToInterface
@@ -35,9 +34,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IDrmPort.ForwardContentToInterface
-product:
- - Windows
+ - IDrmPort::ForwardContentToInterface
 ---
 
 # IDrmPort::ForwardContentToInterface
@@ -72,3 +69,4 @@ See comments in [DrmForwardContentToInterface](../drmk/nf-drmk-drmforwardcontent
 ## -see-also
 
 [IDrmPort](nn-portcls-idrmport.md)
+

@@ -4,7 +4,6 @@ title: ISensorDriver::OnProcessWpdMessage (sensorsclassextension.h)
 description: The ISensorDriver::OnProcessWpdMessage method handles Windows Portable Device (WPD) commands that the ISensorClassExtension::ProcessIoControl method does not handle internally.
 old-location: sensors\isensordriver_onprocesswpdmessage.htm
 tech.root: sensors
-ms.assetid: 4780d0ea-a54a-4125-b3b6-2210a14eff71
 ms.date: 05/03/2018
 keywords: ["ISensorDriver::OnProcessWpdMessage"]
 ms.keywords: ISensorDriver interface [Sensor Devices],OnProcessWpdMessage method, ISensorDriver.OnProcessWpdMessage, ISensorDriver::OnProcessWpdMessage, OnProcessWpdMessage, OnProcessWpdMessage method [Sensor Devices], OnProcessWpdMessage method [Sensor Devices],ISensorDriver interface, sensors.isensordriver_onprocesswpdmessage, sensorsclassextension/ISensorDriver::OnProcessWpdMessage
@@ -39,7 +38,7 @@ api_location:
  - SensorsClassExtension.lib
  - SensorsClassExtension.dll
 api_name:
- - OnProcessWpdMessage
+ - ISensorDriver::OnProcessWpdMessage
 ---
 
 # ISensorDriver::OnProcessWpdMessage
@@ -70,3 +69,4 @@ This method enables you to extend the WPD commands and interfaces in a device-sp
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/sensorsclassextension/nn-sensorsclassextension-isensordriver">ISensorDriver</a>
+

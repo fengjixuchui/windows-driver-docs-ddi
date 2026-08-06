@@ -4,7 +4,6 @@ title: WheaGetErrPacketFromErrRecord function (ntddk.h)
 description: The WheaGetErrPacketFromErrRecord function returns a pointer to the hardware error packet that is contained within a WHEA error record. The hardware error packet is formatted as a WHEA_ERROR_PACKET structure.
 old-location: whea\wheageterrpacketfromerrrecord.htm
 tech.root: whea
-ms.assetid: 8b4a835f-b1ec-4308-8e0d-a13c0f421dc8
 ms.date: 02/20/2018
 keywords: ["WheaGetErrPacketFromErrRecord function"]
 ms.keywords: WheaGetErrPacketFromErrRecord, WheaGetErrPacketFromErrRecord function [WHEA Drivers and Applications], ntddk/WheaGetErrPacketFromErrRecord, whea.wheageterrpacketfromerrrecord, whearef2_c7c202ca-0ed0-4a12-a3f0-64723e6483c6.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>WheaGetErrPacketFromErrRecord</b> function returns a pointer to the hardw
 
 ## -parameters
 
-### -param Record 
+### -param Record [in]
 
-[in]
+
 A pointer to a WHEA <a href="/windows-hardware/drivers/whea/error-records">error record</a> that is formatted as a <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_record">WHEA_ERROR_RECORD</a> structure.
 
 ## -returns

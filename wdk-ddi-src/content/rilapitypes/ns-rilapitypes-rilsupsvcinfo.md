@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILSUPSVCINFO
 title: RILSUPSVCINFO (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: Don't use the structure in your code. Microsoft reserves the RILSUPSVCINFO structure for internal use only.
 old-location: netvista\rilsupsvcinfo.htm
 tech.root: netvista
-ms.assetid: 1f8f7c8c-f09a-4bf5-a15b-42f210122b54
 ms.date: 05/02/2018
 keywords: ["RILSUPSVCINFO structure"]
 ms.keywords: "*LPRILSUPSVCINFO, RILSUPSVCINFO, RILSUPSVCINFO structure [Network Drivers Starting with Windows Vista], netvista.rilsupsvcinfo, ntddrilapitypes/RILSUPSVCINFO"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSUPSVCINFO
+ - LPRILSUPSVCINFO
 ---
 
 # RILSUPSVCINFO structure (rilapitypes.h)

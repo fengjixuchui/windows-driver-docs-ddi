@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugAdvanced3.Request
 title: IDebugAdvanced3::Request (dbgeng.h)
-description: The Request method performs a variety of different operations.
+description: The (IDebugAdvanced3) Request method performs a variety of different operations specified by the Request parameter.
 old-location: debugger\request.htm
 tech.root: debugger
-ms.assetid: efb3c93c-5405-418b-a063-afa8e5e9e59a
 ms.date: 05/03/2018
 keywords: ["IDebugAdvanced3::Request"]
 ms.keywords: IDebugAdvanced2 interface [Windows Debugging],Request method, IDebugAdvanced2::Request, IDebugAdvanced3 interface [Windows Debugging],Request method, IDebugAdvanced3.Request, IDebugAdvanced3::Request, IDebugAdvanced_8fbf249e-5550-42c0-b16d-d42aaa4de660.xml, Request, Request method [Windows Debugging], Request method [Windows Debugging],IDebugAdvanced2 interface, Request method [Windows Debugging],IDebugAdvanced3 interface, dbgeng/IDebugAdvanced2::Request, dbgeng/IDebugAdvanced3::Request, debugger.request
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugAdvanced2.Request
- - IDebugAdvanced3.Request
+ - IDebugAdvanced3::Request
 ---
 
 # IDebugAdvanced3::Request
@@ -51,9 +49,9 @@ The <b>Request</b> method performs a variety of different operations.
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 Specifies which operation to perform.  <b>Request</b> can be one of the values in the following table.  Details of each operation can be found by following the link in the "Request" column.
 
 <table>
@@ -219,29 +217,29 @@ Perform a variety of different operations that aid in the interpretation of type
 </tr>
 </table>
 
-### -param InBuffer 
+### -param InBuffer [in, optional]
 
-[in, optional]
+
 Specifies the input to this method.  The type and interpretation of the input depends on the <i>Request</i> parameter.
 
-### -param InBufferSize 
+### -param InBufferSize [in]
 
-[in]
+
 Specifies the size of the input buffer <i>InBuffer</i>.  If the request requires no input, <i>InBufferSize</i> should be set to zero.
 
-### -param OutBuffer 
+### -param OutBuffer [out, optional]
 
-[out, optional]
+
 Receives the output from this method.  The type and interpretation of the output depends on the <i>Request</i> parameter.  If <i>OutBuffer</i> is <b>NULL</b>, the output is not returned.
 
-### -param OutBufferSize 
+### -param OutBufferSize [in]
 
-[in]
+
 Specifies the size of the output buffer <i>OutBufferSize</i>.  If the type of the output returned to <i>OutBuffer</i> has a known size, <i>OutBufferSize</i> is usually expected to be exactly that size, even if <i>OutBuffer</i> is set to <b>NULL</b>.
 
-### -param OutSize 
+### -param OutSize [out, optional]
 
-[out, optional]
+
 Receives the size of the output returned in the output buffer <i>OutBuffer</i>.  If <i>OutSize</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -346,3 +344,4 @@ This method may also return error values.  See <a href="/windows-hardware/driver
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugadvanced3">IDebugAdvanced3</a>
+

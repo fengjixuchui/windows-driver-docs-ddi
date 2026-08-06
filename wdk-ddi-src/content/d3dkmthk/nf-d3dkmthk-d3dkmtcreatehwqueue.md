@@ -1,12 +1,9 @@
 ---
 UID: NF:d3dkmthk.D3DKMTCreateHwQueue
 title: D3DKMTCreateHwQueue function (d3dkmthk.h)
-description: Used to create a new hardware queue.
-old-location: display\d3dkmtcreatehwqueue.htm
-ms.assetid: FD4E892F-DDC6-449A-B77F-6C7F8240E467
-ms.date: 05/10/2018
+description: Learn more about the D3DKMTCreateHwQueue function.
+ms.date: 03/21/2024
 keywords: ["D3DKMTCreateHwQueue function"]
-ms.keywords: D3DKMTCreateHwQueue, D3DKMTCreateHwQueue method [Display Devices], d3dkmthk/D3DKMTCreateHwQueue, display.d3dkmtcreatehwqueue
 req.header: d3dkmthk.h
 req.include-header: 
 req.target-type: Windows
@@ -43,20 +40,16 @@ api_name:
 
 # D3DKMTCreateHwQueue function
 
-
 ## -description
 
-Used to create a new hardware queue.
+*Dxgkrnl* calls **D3DKMTCreateHwQueue** to create a new hardware queue.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
-*createHwQueue* [in, out]
-
-A structure holding the information needed to create a new hardware queue.
+[in/out] Pointer to a [**D3DKMT_CREATEHWQUEUE**](ns-d3dkmthk-_d3dkmt_createhwqueue.md) structure that describes the hardware queue to create.
 
 ## -returns
 
-Returns STATUS_SUCCESS if called successfully.
-
+**D3DKMTCreateHwQueue** returns STATUS_SUCCESS upon successful completion. Otherwise, it returns an appropriate NSTATUS code.

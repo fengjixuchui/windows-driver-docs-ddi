@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostField.Release
 title: IDebugHostField::Release (dbgmodel.h)
-description: Decrements the reference count for an interface on an object.
-ms.assetid: ea7c4767-6ff7-41af-a7a0-7c5e45e6287c
+description: "The IDebugHostField::Release method decrements the reference count for an interface on an object."
 ms.date: 09/12/2018
 keywords: ["IDebugHostField::Release"]
 ms.keywords: IDebugHostField::Release, Release, IDebugHostField.Release, IDebugHostField::Release, IDebugHostField.Release
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostField.Release
+ - IDebugHostField::Release
 ---
 
 # IDebugHostField::Release
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IDebugHostField interface](nn-dbgmodel-idebughostfield.md)
+

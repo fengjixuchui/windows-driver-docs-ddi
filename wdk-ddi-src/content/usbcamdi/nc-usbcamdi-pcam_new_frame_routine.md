@@ -4,7 +4,6 @@ title: PCAM_NEW_FRAME_ROUTINE (usbcamdi.h)
 description: A camera minidriver's CamNewVideoFrame callback function initializes a new video frame context structure.
 old-location: stream\camnewvideoframe.htm
 tech.root: stream
-ms.assetid: b647cc94-e5eb-494f-b103-22aa30da8946
 ms.date: 04/23/2018
 keywords: ["PCAM_NEW_FRAME_ROUTINE callback function"]
 ms.keywords: CamNewVideoFrame, CamNewVideoFrame callback function [Streaming Media Devices], PCAM_NEW_FRAME_ROUTINE, PCAM_NEW_FRAME_ROUTINE callback, stream.camnewvideoframe, usbcamdi/CamNewVideoFrame, usbcmdpr_5f488227-2c1a-497e-975a-dc2b388f8489.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - usbcamdi.h
 api_name:
- - CamNewVideoFrame
+ - PCAM_NEW_FRAME_ROUTINE
 ---
 
 # PCAM_NEW_FRAME_ROUTINE callback function
@@ -72,3 +71,4 @@ This function is optional.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/usbcamdi/nc-usbcamdi-pcam_new_frame_routine_ex">CamNewVideoFrameEx</a>
+

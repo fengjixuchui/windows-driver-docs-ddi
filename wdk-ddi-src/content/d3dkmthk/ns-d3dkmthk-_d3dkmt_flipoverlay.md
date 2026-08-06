@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_FLIPOVERLAY
 title: _D3DKMT_FLIPOVERLAY (d3dkmthk.h)
 description: The D3DKMT_FLIPOVERLAY structure describes a new allocation to display for the overlay.
 old-location: display\d3dkmt_flipoverlay.htm
-ms.assetid: 7e224009-dccb-41e5-99e8-01f1479aa79f
 ms.date: 05/10/2018
 keywords: ["D3DKMT_FLIPOVERLAY structure"]
 ms.keywords: D3DKMT_FLIPOVERLAY, D3DKMT_FLIPOVERLAY structure [Display Devices], OpenGL_Structs_a7694ad8-b12e-41ad-b7e3-159d26fe2f41.xml, _D3DKMT_FLIPOVERLAY, d3dkmthk/D3DKMT_FLIPOVERLAY, display.d3dkmt_flipoverlay
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_FLIPOVERLAY
  - D3DKMT_FLIPOVERLAY
 ---
 
@@ -52,26 +52,27 @@ The D3DKMT_FLIPOVERLAY structure describes a new allocation to display for the o
 
 ## -struct-fields
 
-### -field hDevice
+### -field hDevice [in]
 
-[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device that the overlay is associated with.
+A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device that the overlay is associated with.
 
-### -field hOverlay
+### -field hOverlay [in]
 
-[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the create-overlay function and that identifies the kernel-mode overlay object to be flipped.
+A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the create-overlay function and that identifies the kernel-mode overlay object to be flipped.
 
-### -field hSource
+### -field hSource [in]
 
-[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the source allocation to be displayed.
+A D3DKMT_HANDLE data type that represents a kernel-mode handle to the source allocation to be displayed.
 
-### -field pPrivateDriverData
+### -field pPrivateDriverData [in]
 
-[in] A pointer to a block of private data, which is passed from the OpenGL ICD to the display miniport driver.
+A pointer to a block of private data, which is passed from the OpenGL ICD to the display miniport driver.
 
-### -field PrivateDriverDataSize
+### -field PrivateDriverDataSize [in]
 
-[in] The size, in bytes, of the block of private data that <b>pPrivateDriverData</b> points to.
+The size, in bytes, of the block of private data that <b>pPrivateDriverData</b> points to.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtflipoverlay">D3DKMTFlipOverlay</a>
+

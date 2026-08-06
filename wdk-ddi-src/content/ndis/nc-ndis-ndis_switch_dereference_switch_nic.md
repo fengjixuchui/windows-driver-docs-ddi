@@ -4,7 +4,6 @@ title: NDIS_SWITCH_DEREFERENCE_SWITCH_NIC (ndis.h)
 description: The DereferenceSwitchNic function decrements the Hyper-V extensible switch reference counter for a network adapter that is connected to an extensible switch port. The reference counter was incremented through a previous call to ReferenceSwitchNic.
 old-location: netvista\DereferenceSwitchNic.htm
 tech.root: netvista
-ms.assetid: 58C72F81-07B9-45FE-A8BA-0405DBE4CA20
 ms.date: 05/02/2018
 keywords: ["NDIS_SWITCH_DEREFERENCE_SWITCH_NIC callback function"]
 ms.keywords: DereferenceSwitchNic, DereferenceSwitchNic callback function [Network Drivers Starting with Windows Vista], NDIS_SWITCH_DEREFERENCE_SWITCH_NIC, NDIS_SWITCH_DEREFERENCE_SWITCH_NIC callback, ndis/DereferenceSwitchNic, netvista.DereferenceSwitchNic
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - DereferenceSwitchNic
+ - NDIS_SWITCH_DEREFERENCE_SWITCH_NIC
 ---
 
 # NDIS_SWITCH_DEREFERENCE_SWITCH_NIC callback function
@@ -50,19 +49,19 @@ The <i>DereferenceSwitchNic</i> function decrements the Hyper-V extensible switc
 
 ## -parameters
 
-### -param NdisSwitchContext 
+### -param NdisSwitchContext [in]
 
-[in]
+
 An NDIS_SWITCH_CONTEXT value that contains the handle of the extensible switch module to which the Hyper-V extensible switch extension is attached. When the extension calls <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfgetoptionalswitchhandlers">NdisFGetOptionalSwitchHandlers</a>,  this handle is returned through the <i>NdisSwitchContext</i> parameter.
 
-### -param SwitchPortId 
+### -param SwitchPortId [in]
 
-[in]
+
 An NDIS_SWITCH_PORT_ID value that contains the unique identifier of the extensible switch port  to which the virtual network adapter is connected.
 
-### -param SwitchNicIndex 
+### -param SwitchNicIndex [in]
 
-[in]
+
 An NDIS_SWITCH_NIC_INDEX value that specifies the index of the virtual network adapter for which the extensible switch reference counter is to be incremented.
 
 For more information on NDIS_SWITCH_NIC_INDEX values, see <a href="/windows-hardware/drivers/network/network-adapter-index-values">Network Adapter Index Values</a>.
@@ -92,3 +91,4 @@ The extension must call <i>DereferenceSwitchNic</i> if it had previously called 
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_switch_reference_switch_nic">ReferenceSwitchNic</a>
+

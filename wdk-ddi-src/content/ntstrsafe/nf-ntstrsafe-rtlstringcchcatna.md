@@ -4,7 +4,6 @@ title: RtlStringCchCatNA function (ntstrsafe.h)
 description: The RtlStringCchCatNW and RtlStringCchCatNA functions concatenate two character-counted strings while limiting the size of the appended string.
 old-location: kernel\rtlstringcchcatn.htm
 tech.root: kernel
-ms.assetid: 2cd45c9e-b9dd-47fb-a480-63258b2fccd4
 ms.date: 04/30/2018
 keywords: ["RtlStringCchCatNA function"]
 ms.keywords: RtlStringCchCatN, RtlStringCchCatNA, RtlStringCchCatNW, RtlStringCchCatNW function [Kernel-Mode Driver Architecture], kernel.rtlstringcchcatn, ntstrsafe/RtlStringCchCatNA, ntstrsafe/RtlStringCchCatNW, safestrings_499b4858-de9a-4be2-a82d-de2da48d37f5.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -39,9 +38,7 @@ api_location:
  - Ntstrsafe.lib
  - Ntstrsafe.dll
 api_name:
- - RtlStringCchCatNW
  - RtlStringCchCatNA
- - RtlStringCchCatNW
 ---
 
 # RtlStringCchCatNA function
@@ -53,19 +50,19 @@ The <b>RtlStringCchCatNW</b> and <b>RtlStringCchCatNA</b> functions concatenate 
 
 ## -parameters
 
-### -param pszDest 
+### -param pszDest [in, out]
 
-[in, out]
+
 A pointer to a buffer which, on input, contains a null-terminated string to which <i>pszSrc</i> will be concatenated. On output, this is the destination buffer that contains the entire resultant string. The string at <i>pszSrc</i>, up to <i>cchMaxAppend</i> characters, is added to the end of the string at <i>pszDest</i> and terminated with a null character.
 
-### -param cchDest 
+### -param cchDest [in]
 
-[in]
+
 The size of the destination buffer, in characters. The maximum number of characters allowed is NTSTRSAFE_MAX_CCH.
 
-### -param pszSrc 
+### -param pszSrc [in]
 
-[in]
+
 A pointer to a null-terminated string. This string will be concatenated to the end of the string that is contained in the buffer at <i>pszDest</i>.
 
 ### -param cchToAppend
@@ -197,3 +194,4 @@ For more information about the safe string functions, see <a href="/windows-hard
 
 
 <a href="/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcchcatnexa">RtlStringCchCatNEx</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient.EndSession
 title: IDebugClient::EndSession (dbgeng.h)
-description: The EndSession method ends the current debugger session.
+description: The EndSession method ends the current debugger session. This method belongs to the IDebugClient interface.
 old-location: debugger\endsession.htm
 tech.root: debugger
-ms.assetid: 521a0e4a-99c6-4ad4-886d-3fff9855e1fd
 ms.date: 05/03/2018
 keywords: ["IDebugClient::EndSession"]
 ms.keywords: EndSession, EndSession method [Windows Debugging], EndSession method [Windows Debugging],IDebugClient interface, EndSession method [Windows Debugging],IDebugClient2 interface, EndSession method [Windows Debugging],IDebugClient3 interface, EndSession method [Windows Debugging],IDebugClient4 interface, EndSession method [Windows Debugging],IDebugClient5 interface, IDebugClient interface [Windows Debugging],EndSession method, IDebugClient.EndSession, IDebugClient2 interface [Windows Debugging],EndSession method, IDebugClient2::EndSession, IDebugClient3 interface [Windows Debugging],EndSession method, IDebugClient3::EndSession, IDebugClient4 interface [Windows Debugging],EndSession method, IDebugClient4::EndSession, IDebugClient5 interface [Windows Debugging],EndSession method, IDebugClient5::EndSession, IDebugClient::EndSession, IDebugClient_b3243254-eb98-4ee6-8dc9-92fe4c998500.xml, dbgeng/IDebugClient2::EndSession, dbgeng/IDebugClient3::EndSession, dbgeng/IDebugClient4::EndSession, dbgeng/IDebugClient5::EndSession, dbgeng/IDebugClient::EndSession, debugger.endsession
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.EndSession
- - IDebugClient2.EndSession
- - IDebugClient3.EndSession
- - IDebugClient4.EndSession
- - IDebugClient5.EndSession
+ - IDebugClient::EndSession
 ---
 
 # IDebugClient::EndSession
@@ -54,9 +49,9 @@ The <b>EndSession</b> method ends the current debugger session.
 
 ## -parameters
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies how to end the session.  <i>Flags</i> can be one of the following values:
 
 <table>
@@ -147,3 +142,4 @@ This method may be called at any time with <i>Flags</i> set to DEBUG_END_REENTRA
 Using DEBUG_END_REENTRANT may leave the engine in an indeterminate state. If this flag is used, no subsequent calls should be made to the engine.
 
 For more information about debugger sessions, see <a href="/windows-hardware/drivers/debugger/debugging-session-and-execution-model">Debugging Session and Execution Model</a>.
+

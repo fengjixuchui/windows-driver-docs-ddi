@@ -4,7 +4,6 @@ title: _PD_BUFFER (ndis.h)
 description: This structure represents a PacketDirect (PD) packet, or a portion of a PD packet in a queue.
 old-location: netvista\pd_buffer.htm
 tech.root: netvista
-ms.assetid: 91555FBA-30F5-4CED-BA0D-2F0BE40BFF9E
 ms.date: 05/02/2018
 keywords: ["PD_BUFFER structure"]
 ms.keywords: PD_BUFFER, PD_BUFFER structure [Network Drivers Starting with Windows Vista], PPD_BUFFER, PPD_BUFFER structure pointer [Network Drivers Starting with Windows Vista], _PD_BUFFER, ndis/PD_BUFFER, ndis/PPD_BUFFER, netvista.pd_buffer
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
+ - _PD_BUFFER
  - PD_BUFFER
 ---
 
@@ -134,7 +134,7 @@ This field denotes where the packet starts relative to the original starting add
 
 ### -field DataLength
 
-The length of the this packet or partial packet data.
+The length of the packet or partial packet data.
 
 ### -field MetaDataV0
 
@@ -318,3 +318,4 @@ When posting <b>PD_BUFFER</b> structures to receive queues, DataLength is ignore
     When posting <b>PD_BUFFER</b> structures to transmit queues, DataLength denotes the length
     of the packet to be sent. When draining completed <b>PD_BUFFER</b> structures from
     transmit queues, the provider leaves the DataLength field unmodified.
+

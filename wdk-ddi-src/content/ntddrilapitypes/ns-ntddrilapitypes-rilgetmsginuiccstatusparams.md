@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILGETMSGINUICCSTATUSPARAMS
 title: RILGETMSGINUICCSTATUSPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILGETMSGINUICCSTATUSPARAMS structure in your code."
 old-location: netvista\rilgetmsginuiccstatusparams.htm
 tech.root: netvista
-ms.assetid: 8f8ccc6e-ceb5-49df-bf1f-7a804850728a
 ms.date: 05/02/2018
 keywords: ["RILGETMSGINUICCSTATUSPARAMS structure"]
 ms.keywords: "*LPRILGETMSGINUICCSTATUSPARAMS, RILGETMSGINUICCSTATUSPARAMS, RILGETMSGINUICCSTATUSPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilgetmsginuiccstatusparams, ntddrilapitypes/RILGETMSGINUICCSTATUSPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILGETMSGINUICCSTATUSPARAMS
+ - LPRILGETMSGINUICCSTATUSPARAMS
 ---
 
 # RILGETMSGINUICCSTATUSPARAMS structure (ntddrilapitypes.h)

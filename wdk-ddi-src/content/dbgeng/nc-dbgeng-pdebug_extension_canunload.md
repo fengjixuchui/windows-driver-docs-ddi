@@ -4,7 +4,6 @@ title: PDEBUG_EXTENSION_CANUNLOAD (dbgeng.h)
 description: The DebugExtensionCanUnload callback function checks whether a debug extension can unload after the uninitialization call.
 old-location: debugger\debugextensioncanunload.htm
 tech.root: debugger
-ms.assetid: 6CF651D7-7F5F-4622-8FDF-8BFF4E4A701D
 ms.date: 05/03/2018
 keywords: ["PDEBUG_EXTENSION_CANUNLOAD callback function"]
 ms.keywords: DebugExtensionCanUnload, DebugExtensionCanUnload callback function [Windows Debugging], PDEBUG_EXTENSION_CANUNLOAD, PDEBUG_EXTENSION_CANUNLOAD callback, dbgeng/DebugExtensionCanUnload, debugger.debugextensioncanunload
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - DebugExtensionCanUnload
+ - PDEBUG_EXTENSION_CANUNLOAD
 ---
 
 # PDEBUG_EXTENSION_CANUNLOAD callback function
-
 
 ## -description
 
@@ -51,11 +49,6 @@ The <i>DebugExtensionCanUnload</i> callback function checks whether a debug exte
 ```cpp
  CALLBACK* PDEBUG_EXTENSION_CANUNLOAD DebugExtensionCanUnload;
 ```
-
-
-## -parameters
-
-### -param Arg1
 
 ## -returns
 
@@ -76,7 +69,6 @@ The extension was successfully initialized.
 </td>
 </tr>
 </table>
- 
 
 Any other value indicates that the extension DLL was unable to initialize and the engine will unload it.
 
@@ -91,7 +83,5 @@ This callback function is the debugger's equivalent of <a href="/windows/win32/a
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nc-dbgeng-pdebug_extension_uninitialize">DebugExtensionUninitialize</a>
-
-
 
 <a href="/windows/win32/api/combaseapi/nf-combaseapi-dllcanunloadnow">DllCanUnloadNow</a>

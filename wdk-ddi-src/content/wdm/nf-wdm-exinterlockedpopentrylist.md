@@ -4,7 +4,6 @@ title: ExInterlockedPopEntryList function (wdm.h)
 description: The ExInterlockedPopEntryList routine atomically removes an entry from the beginning of a singly linked list of SINGLE_LIST_ENTRY structures.
 old-location: kernel\exinterlockedpopentrylist.htm
 tech.root: kernel
-ms.assetid: 339e688f-64ec-402f-bd28-9fa487acb984
 ms.date: 04/30/2018
 keywords: ["ExInterlockedPopEntryList function"]
 ms.keywords: ExInterlockedPopEntryList, ExInterlockedPopEntryList routine [Kernel-Mode Driver Architecture], k102_4673c5a1-a650-48c3-934f-c35c202277cc.xml, kernel.exinterlockedpopentrylist, wdm/ExInterlockedPopEntryList
@@ -50,14 +49,14 @@ The <b>ExInterlockedPopEntryList</b> routine atomically removes an entry from th
 
 ## -parameters
 
-### -param ListHead 
+### -param ListHead [in, out]
 
-[in, out]
-A pointer to the <a href="/windows/win32/api/ntdef/ns-ntdef-single_list_entry">SINGLE_LIST_ENTRY</a> structure that serves as the list header.
 
-### -param Lock 
+A pointer to the <a href="/windows/win32/api/ntdef/ns-ntdef-single_list_entry">SINGLE_LIST_ENTRY</a> structure that serves as the list header.  The storage for <i>ListHead</i> must be resident at all IRQLs.
 
-[in, out]
+### -param Lock [in, out]
+
+
 A pointer to a <b>KSPIN_LOCK</b> structure that serves as the spin lock used to synchronize access to the list. The storage for the spin lock must be resident and must have been initialized by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializespinlock">KeInitializeSpinLock</a>. You must use this spin lock only with the <b>ExInterlocked<i>Xxx</i>List</b> routines.
 
 ## -returns

@@ -4,7 +4,6 @@ title: WDF_WRITE_REGISTER_UCHAR function (wdfhwaccess.h)
 description: The WDF_WRITE_REGISTER_UCHAR routine writes a byte to the specified address.
 old-location: wdf\wdf_write_register_uchar.htm
 tech.root: wdf
-ms.assetid: 5738654A-83B1-44B4-BA45-52E2B60C852D
 ms.date: 02/26/2018
 keywords: ["WDF_WRITE_REGISTER_UCHAR function"]
 ms.keywords: WDF_WRITE_REGISTER_UCHAR, WDF_WRITE_REGISTER_UCHAR function, wdf.wdf_write_register_uchar, wdfhwaccess/WDF_WRITE_REGISTER_UCHAR
@@ -52,18 +51,18 @@ The <b>WDF_WRITE_REGISTER_UCHAR</b> routine writes a byte to the specified addre
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the register, which must be a mapped range in memory space.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies a byte to write to the register.
 

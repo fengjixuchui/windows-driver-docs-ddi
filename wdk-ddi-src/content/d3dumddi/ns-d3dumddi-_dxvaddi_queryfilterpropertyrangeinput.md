@@ -4,7 +4,6 @@ title: _DXVADDI_QUERYFILTERPROPERTYRANGEINPUT (d3dumddi.h)
 description: The DXVADDI_QUERYFILTERPROPERTYRANGEINPUT structure describes a filter setting on a video stream that range information is requested for.
 old-location: display\dxvaddi_queryfilterpropertyrangeinput.htm
 tech.root: display
-ms.assetid: d073d326-6cc6-4216-b312-809d707aef3b
 ms.date: 05/10/2018
 keywords: ["DXVADDI_QUERYFILTERPROPERTYRANGEINPUT structure"]
 ms.keywords: DXVA2_Structs_28a2aed9-57a1-4bd6-b8dc-c09bb9e821b0.xml, DXVADDI_QUERYFILTERPROPERTYRANGEINPUT, DXVADDI_QUERYFILTERPROPERTYRANGEINPUT structure [Display Devices], _DXVADDI_QUERYFILTERPROPERTYRANGEINPUT, d3dumddi/DXVADDI_QUERYFILTERPROPERTYRANGEINPUT, display.dxvaddi_queryfilterpropertyrangeinput
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVADDI_QUERYFILTERPROPERTYRANGEINPUT
  - DXVADDI_QUERYFILTERPROPERTYRANGEINPUT
 ---
 
@@ -52,21 +52,21 @@ The DXVADDI_QUERYFILTERPROPERTYRANGEINPUT structure describes a filter setting o
 
 ## -struct-fields
 
-### -field pVideoProcGuid
+### -field pVideoProcGuid [in]
 
-[in] A pointer to a GUID that represents the video processing device type.
+A pointer to a GUID that represents the video processing device type.
 
-### -field VideoDesc
+### -field VideoDesc [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_videodesc">DXVADDI_VIDEODESC</a> structure that describes the video stream.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_videodesc">DXVADDI_VIDEODESC</a> structure that describes the video stream.
 
-### -field RenderTargetFormat
+### -field RenderTargetFormat [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the render target for the video processing device.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the render target for the video processing device.
 
-### -field FilterSetting
+### -field FilterSetting [in]
 
-[in] A filter setting that range information is requested for. This member can be one of the following settings:
+A filter setting that range information is requested for. This member can be one of the following settings:
 
 <ul>
 <li>
@@ -138,3 +138,4 @@ DXVADDI_DETAILFILTER_CHROMARADIUS
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps">GetCaps</a>
+

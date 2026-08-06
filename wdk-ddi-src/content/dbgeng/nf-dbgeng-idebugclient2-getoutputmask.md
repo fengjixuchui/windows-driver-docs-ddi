@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient2.GetOutputMask
 title: IDebugClient2::GetOutputMask (dbgeng.h)
-description: The GetOutputMask method returns the output mask currently set for the client.
+description: The GetOutputMask method returns the output mask currently set for the client. This method belongs to the IDebugClient2 interface.
 old-location: debugger\getoutputmask.htm
 tech.root: debugger
-ms.assetid: b1076b17-9175-4823-abb7-1c864670e8d5
 ms.date: 05/03/2018
 keywords: ["IDebugClient2::GetOutputMask"]
 ms.keywords: GetOutputMask, GetOutputMask method [Windows Debugging], GetOutputMask method [Windows Debugging],IDebugClient interface, GetOutputMask method [Windows Debugging],IDebugClient2 interface, GetOutputMask method [Windows Debugging],IDebugClient3 interface, GetOutputMask method [Windows Debugging],IDebugClient4 interface, GetOutputMask method [Windows Debugging],IDebugClient5 interface, IDebugClient interface [Windows Debugging],GetOutputMask method, IDebugClient2 interface [Windows Debugging],GetOutputMask method, IDebugClient2.GetOutputMask, IDebugClient2::GetOutputMask, IDebugClient3 interface [Windows Debugging],GetOutputMask method, IDebugClient3::GetOutputMask, IDebugClient4 interface [Windows Debugging],GetOutputMask method, IDebugClient4::GetOutputMask, IDebugClient5 interface [Windows Debugging],GetOutputMask method, IDebugClient5::GetOutputMask, IDebugClient::GetOutputMask, IDebugClient_ff2626fe-2299-4008-b655-0b7dbd46ef8b.xml, dbgeng/IDebugClient2::GetOutputMask, dbgeng/IDebugClient3::GetOutputMask, dbgeng/IDebugClient4::GetOutputMask, dbgeng/IDebugClient5::GetOutputMask, dbgeng/IDebugClient::GetOutputMask, debugger.getoutputmask
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.GetOutputMask
- - IDebugClient2.GetOutputMask
- - IDebugClient3.GetOutputMask
- - IDebugClient4.GetOutputMask
- - IDebugClient5.GetOutputMask
+ - IDebugClient2::GetOutputMask
 ---
 
 # IDebugClient2::GetOutputMask
@@ -54,9 +49,9 @@ The <b>GetOutputMask</b> method returns the output mask currently set for the cl
 
 ## -parameters
 
-### -param Mask 
+### -param Mask [out]
 
-[out]
+
 Receives the output mask for the client.  See <a href="/windows-hardware/drivers/debugger/debug-output-xxx">DEBUG_OUTPUT_XXX</a> for details on how to interpret this value.
 
 ## -returns
@@ -112,3 +107,4 @@ For an overview of output in the debugger engine, see <a href="/windows-hardware
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-setoutputmask">SetOutputMask</a>
+

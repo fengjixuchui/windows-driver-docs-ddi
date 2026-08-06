@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_CALC_PRIVATE_ADD_TO_STATE_OBJECT_SIZE_0072
 title: PFND3D12DDI_PFND3D12DDI_CALC_PRIVATE_ADD_TO_STATE_OBJECT_SIZE_0072 (d3d12umddi.h)
 description: PFND3D12DDI_CALC_PRIVATE_ADD_TO_STATE_OBJECT_SIZE_0072 calculates the size of the state object.
-ms.assetid: d95f0900-e252-48c1-9846-00bd8973e3c7
 ms.date: 03/24/2020
 keywords: ["PFND3D12DDI_CALC_PRIVATE_ADD_TO_STATE_OBJECT_SIZE_0072 callback function"]
 req.header: d3d12umddi.h
@@ -35,8 +34,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CALC_PRIVATE_ADD_TO_STATE_OBJECT_SIZE_0072
-product:
- - Windows
 ---
 
 # PFND3D12DDI_CALC_PRIVATE_ADD_TO_STATE_OBJECT_SIZE_0072 callback function
@@ -48,13 +45,13 @@ product:
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2 [in]
 
-[in] Pointer to a [**D3D12DDIARG_ADD_TO_STATE_OBJECT_0072**](ns-d3d12umddi-d3d12ddiarg_add_to_state_object_0072.md) structure.
+Pointer to a [**D3D12DDIARG_ADD_TO_STATE_OBJECT_0072**](ns-d3d12umddi-d3d12ddiarg_add_to_state_object_0072.md) structure.
 
 ## -returns
 

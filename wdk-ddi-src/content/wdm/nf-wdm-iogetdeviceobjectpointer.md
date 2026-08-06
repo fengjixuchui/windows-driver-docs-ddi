@@ -4,7 +4,6 @@ title: IoGetDeviceObjectPointer function (wdm.h)
 description: The IoGetDeviceObjectPointer routine returns a pointer to the top object in the named device object's stack and a pointer to the corresponding file object, if the requested access to the objects can be granted.
 old-location: kernel\iogetdeviceobjectpointer.htm
 tech.root: kernel
-ms.assetid: aeb088f3-92c3-4619-9c3b-756bd70307e7
 ms.date: 04/30/2018
 keywords: ["IoGetDeviceObjectPointer function"]
 ms.keywords: IoGetDeviceObjectPointer, IoGetDeviceObjectPointer routine [Kernel-Mode Driver Architecture], k104_c57b87e5-8316-4c45-a245-0fe7592c3471.xml, kernel.iogetdeviceobjectpointer, wdm/IoGetDeviceObjectPointer
@@ -50,24 +49,24 @@ The <b>IoGetDeviceObjectPointer</b> routine returns a pointer to the top object 
 
 ## -parameters
 
-### -param ObjectName 
+### -param ObjectName [in]
 
-[in]
+
 Pointer to a buffer that contains a Unicode string that is the name of the device object.
 
-### -param DesiredAccess 
+### -param DesiredAccess [in]
 
-[in]
+
 Specifies the <a href="/windows-hardware/drivers/kernel/access-mask">ACCESS_MASK</a> value that represents the desired access. Usually <i>DesiredAccess</i> is FILE_READ_DATA. Infrequently, the FILE_WRITE_DATA, or FILE_ALL_ACCESS access rights are specified.
 
-### -param FileObject 
+### -param FileObject [out]
 
-[out]
+
 Pointer to the file object that represents the corresponding device object to user-mode code if the call is successful.
 
-### -param DeviceObject 
+### -param DeviceObject [out]
 
-[out]
+
 Pointer to the device object that represents the named logical, virtual, or physical device if the call is successful.
 
 ## -returns

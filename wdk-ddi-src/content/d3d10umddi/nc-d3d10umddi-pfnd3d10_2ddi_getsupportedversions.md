@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10_2DDI_GETSUPPORTEDVERSIONS
 title: PFND3D10_2DDI_GETSUPPORTEDVERSIONS (d3d10umddi.h)
 description: The GetSupportedVersions function queries for the Direct3D interface versions that the driver supports.
 old-location: display\getsupportedversions.htm
-ms.assetid: b38683f3-42f2-4f5e-9482-f72e9f2e0a34
 ms.date: 05/10/2018
 keywords: ["PFND3D10_2DDI_GETSUPPORTEDVERSIONS callback function"]
 ms.keywords: GetSupportedVersions, GetSupportedVersions callback function [Display Devices], PFND3D10_2DDI_GETSUPPORTEDVERSIONS, PFND3D10_2DDI_GETSUPPORTEDVERSIONS callback, UserModeDisplayDriverDx11_Functions_065e47e6-c02d-4091-b614-a93aa834cbfb.xml, d3d10umddi/GetSupportedVersions, display.getsupportedversions
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - GetSupportedVersions
-product:
- - Windows
+ - PFND3D10_2DDI_GETSUPPORTEDVERSIONS
 ---
 
 # PFND3D10_2DDI_GETSUPPORTEDVERSIONS callback function
@@ -52,7 +49,7 @@ The <i>GetSupportedVersions</i> function queries for the Direct3D interface vers
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hAdapter* [in]
 
@@ -90,3 +87,4 @@ When the Direct3D runtime calls the driver's <a href="/windows-hardware/drivers/
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_openadapter">OpenAdapter10_2</a>
+

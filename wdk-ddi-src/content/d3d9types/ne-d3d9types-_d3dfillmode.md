@@ -1,9 +1,9 @@
 ---
 UID: NE:d3d9types._D3DFILLMODE
 title: _D3DFILLMODE (d3d9types.h)
-description: 
-ms.assetid: d581af24-b229-428e-9dfd-45e1ff38fa79
+description: "Learn more about: _D3DFILLMODE enumeration"
 ms.date: 10/19/2018
+tech.root: display
 keywords: ["D3DFILLMODE enumeration"]
 ms.keywords: _D3DFILLMODE, D3DFILLMODE,
 req.header: d3d9types.h
@@ -31,6 +31,7 @@ api_location:
  - d3d9types.h
 api_name:
  - _D3DFILLMODE
+ - D3DFILLMODE
 dev_langs:
  - c++
 ---

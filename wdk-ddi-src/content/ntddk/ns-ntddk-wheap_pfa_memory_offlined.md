@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddk._WHEAP_PFA_MEMORY_OFFLINED
 title: WHEAP_PFA_MEMORY_OFFLINED
-description: 
-tech.root: 
-ms.assetid: 930541d1-adbb-41d0-a0dd-c20a54165506
-ms.date: 08/19/2019
+description: The WHEAP_PFA_MEMORY_OFFLINED structure is reserved for system use only.
+tech.root: whea
+ms.date: 02/22/2023
 keywords: ["WHEAP_PFA_MEMORY_OFFLINED structure"]
 ms.keywords: WHEAP_PFA_MEMORY_OFFLINED, WHEAP_PFA_MEMORY_OFFLINED, *PWHEAP_PFA_MEMORY_OFFLINED,
 req.header: ntddk.h
@@ -21,7 +20,6 @@ req.unicode-ansi:
 req.max-support: 
 req.typenames: WHEAP_PFA_MEMORY_OFFLINED, *PWHEAP_PFA_MEMORY_OFFLINED
 targetos: Windows
-ms.custom: 19H1
 f1_keywords:
  - _WHEAP_PFA_MEMORY_OFFLINED
  - ntddk/_WHEAP_PFA_MEMORY_OFFLINED
@@ -36,13 +34,10 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEAP_PFA_MEMORY_OFFLINED
+ - PWHEAP_PFA_MEMORY_OFFLINED
  - WHEAP_PFA_MEMORY_OFFLINED
-product:
- - Windows
 ---
-
-# WHEAP_PFA_MEMORY_OFFLINED structure
-
 
 ## -description
 
@@ -58,7 +53,8 @@ Reserved for system use.
 
 ### -field Page
 
+### -field NotifyVid
+
 ## -remarks
 
 ## -see-also
-

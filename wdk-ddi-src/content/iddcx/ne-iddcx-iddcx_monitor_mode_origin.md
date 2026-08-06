@@ -1,17 +1,15 @@
 ---
 UID: NE:iddcx.IDDCX_MONITOR_MODE_ORIGIN
 title: IDDCX_MONITOR_MODE_ORIGIN (iddcx.h)
-description: Used to describe a mode the monitor supports based on the monitor description.
-old-location: display\iddcx_monitor_mode_origin.htm
+description: Learn more about the IDDCX_MONITOR_MODE_ORIGIN enumeration.
 tech.root: display
-ms.assetid: 96aac09b-c6fc-43a7-a6d8-36f642e0f5d7
-ms.date: 05/10/2018
+ms.date: 09/22/2023
 keywords: ["IDDCX_MONITOR_MODE_ORIGIN enumeration"]
 ms.keywords: IDDCX_MONITOR_MODE_ORIGIN, IDDCX_MONITOR_MODE_ORIGIN enumeration [Display Devices], IDDCX_MONITOR_MODE_ORIGIN_DRIVER, IDDCX_MONITOR_MODE_ORIGIN_MONITORDESCRIPTOR, IDDCX_MONITOR_MODE_ORIGIN_UNINITIALIZED, display.iddcx_monitor_mode_origin, iddcx/IDDCX_MONITOR_MODE_ORIGIN, iddcx/IDDCX_MONITOR_MODE_ORIGIN_DRIVER, iddcx/IDDCX_MONITOR_MODE_ORIGIN_MONITORDESCRIPTOR, iddcx/IDDCX_MONITOR_MODE_ORIGIN_UNINITIALIZED
 req.header: iddcx.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 10
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -43,25 +41,26 @@ api_name:
 
 # IDDCX_MONITOR_MODE_ORIGIN enumeration
 
-
 ## -description
 
-                     Used to describe a mode the monitor supports based on the monitor description.
+A **IDDCX_MONITOR_MODE_ORIGIN** value describes a mode the monitor supports based on the monitor description.
 
 ## -enum-fields
 
-### -field IDDCX_MONITOR_MODE_ORIGIN_UNINITIALIZED
+### -field IDDCX_MONITOR_MODE_ORIGIN_UNINITIALIZED:0
 
-                        
-                    Indicates that an <b>IDDCX_MONITOR_MODE_ORIGIN</b> variable has not yet been assigned a meaningful value.
+Indicates that an **IDDCX_MONITOR_MODE_ORIGIN** variable has not yet been assigned a meaningful value.
 
-### -field IDDCX_MONITOR_MODE_ORIGIN_MONITORDESCRIPTOR
+### -field IDDCX_MONITOR_MODE_ORIGIN_MONITORDESCRIPTOR:1
 
-                        Indicates that the driver added this mode from directly processing the monitor description
+Indicates that the driver added this mode from directly processing the monitor description.
 
-### -field IDDCX_MONITOR_MODE_ORIGIN_DRIVER
+### -field IDDCX_MONITOR_MODE_ORIGIN_DRIVER:2
 
-                        Indicates that the driver did not add this mode as a direct resolution of processing the modes/ supported by the monitor but because of separate additional knowledge it has about the monitor
+Indicates that the driver did not add this mode as a direct resolution of processing the modes/ supported by the monitor but because of separate additional knowledge it has about the monitor.
 
-### -field UINT
+## -see-also
 
+[**EVT_IDD_CX_PARSE_MONITOR_DESCRIPTION**](nc-iddcx-evt_idd_cx_parse_monitor_description.md)
+
+[**IDDCX_MONITOR_MODE**](ns-iddcx-iddcx_monitor_mode.md)

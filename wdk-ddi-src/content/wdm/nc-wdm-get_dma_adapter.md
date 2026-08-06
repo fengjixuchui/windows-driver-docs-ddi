@@ -4,7 +4,6 @@ title: GET_DMA_ADAPTER (wdm.h)
 description: The GetDmaAdapter routine returns a DMA_ADAPTER structure for the target device.
 old-location: kernel\getdmaadapter.htm
 tech.root: kernel
-ms.assetid: 0F703E88-2650-4451-9F5A-05FBCF33C131
 ms.date: 04/30/2018
 keywords: ["GET_DMA_ADAPTER callback function"]
 ms.keywords: GET_DMA_ADAPTER, GetDmaAdapter, GetDmaAdapter routine [Kernel-Mode Driver Architecture], drvr_interface_5c7fd89d-0b6c-45e7-8559-8666f43beb9a.xml, kernel.busgetdmaadapter, kernel.getdmaadapter, ntddk/GetDmaAdapter
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ntddk.h
 api_name:
- - GetDmaAdapter
+ - GET_DMA_ADAPTER
 ---
 
 # GET_DMA_ADAPTER callback function
@@ -50,19 +49,19 @@ The <i>GetDmaAdapter</i> routine returns a <a href="/windows-hardware/drivers/dd
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_bus_interface_standard">BUS_INTERFACE_STANDARD</a> structure for the interface.
 
-### -param DeviceDescriptor 
+### -param DeviceDescriptor [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_description">DEVICE_DESCRIPTION</a> structure that describes the attributes of the physical device.
 
-### -param NumberOfMapRegisters 
+### -param NumberOfMapRegisters [out]
 
-[out]
+
 A pointer to, on output, the maximum number of map registers that the driver can allocate for any DMA transfer operation. The caller must allocate a <b>LONG</b> variable to receive this data.
 
 ## -returns
@@ -90,3 +89,4 @@ However, if a driver must obtain an adapter object while running at IRQL ≥ DIS
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter">IoGetDmaAdapter</a>
+

@@ -4,7 +4,6 @@ title: IDebugSymbols3::GetSymbolModuleWide (dbgeng.h)
 description: The GetSymbolModuleWide method returns the base address of module which contains the specified symbol.
 old-location: debugger\getsymbolmodulewide.htm
 tech.root: debugger
-ms.assetid: 4c1284da-b086-46f3-aeea-0afe6a2f1031
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::GetSymbolModuleWide"]
 ms.keywords: GetSymbolModuleWide, GetSymbolModuleWide method [Windows Debugging], GetSymbolModuleWide method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],GetSymbolModuleWide method, IDebugSymbols3.GetSymbolModuleWide, IDebugSymbols3::GetSymbolModuleWide, dbgeng/IDebugSymbols3::GetSymbolModuleWide, debugger.getsymbolmodulewide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols3.GetSymbolModuleWide
+ - IDebugSymbols3::GetSymbolModuleWide
 ---
 
 # IDebugSymbols3::GetSymbolModuleWide
@@ -50,14 +49,14 @@ The <b>GetSymbolModuleWide</b> method returns the base address of module which c
 
 ## -parameters
 
-### -param Symbol 
+### -param Symbol [in]
 
-[in]
+
 Specifies the name of the symbol to look up.  See the Remarks section for details of the syntax of this name.
 
-### -param Base 
+### -param Base [out]
 
-[out]
+
 Receives the location in the target's memory address space of the base of the module.  For more information, see <a href="/windows-hardware/drivers/debugger/modules">Modules</a>.
 
 ## -returns
@@ -98,3 +97,4 @@ The symbol or module could not be found.
 The string <i>Symbol</i> must contain an exclamation point ( <b>!</b> ).  If <i>Symbol</i> is a module-qualified symbol name (for example, <b>mymodules!main</b>) or if the module name is omitted (for example, <b>!main</b>), the engine will search for this symbol and return the module in which it is found.  If <i>Symbol</i> contains just a module name (for example, <b>mymodule!</b>) the engine returns the first module with this module name.
 
 For more information about symbols, see <a href="/windows-hardware/drivers/debugger/symbols4">Symbols</a>.
+

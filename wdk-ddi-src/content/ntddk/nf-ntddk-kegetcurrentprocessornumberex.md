@@ -1,10 +1,9 @@
 ---
 UID: NF:ntddk.KeGetCurrentProcessorNumberEx
 title: KeGetCurrentProcessorNumberEx function (ntddk.h)
-description: The KeGetCurrentProcessorNumberEx routine gets the processor number of the logical processor that the caller is running on.
+description: The KeGetCurrentProcessorNumberEx function (ntddk.h) returns the processor number of the logical processor that the caller is running on.
 old-location: kernel\kegetcurrentprocessornumberex.htm
 tech.root: kernel
-ms.assetid: eb66a17e-2e85-453c-8b39-091f0dc8c29b
 ms.date: 04/30/2018
 keywords: ["KeGetCurrentProcessorNumberEx function"]
 ms.keywords: KeGetCurrentProcessorNumberEx, KeGetCurrentProcessorNumberEx routine [Kernel-Mode Driver Architecture], k105_3eea6705-7267-452a-88c2-1597c6f19828.xml, kernel.kegetcurrentprocessornumberex, wdm/KeGetCurrentProcessorNumberEx
@@ -50,9 +49,9 @@ The <b>KeGetCurrentProcessorNumberEx</b> routine gets the processor number of th
 
 ## -parameters
 
-### -param ProcNumber 
+### -param ProcNumber [out, optional]
 
-[out, optional]
+
 A pointer to a caller-allocated buffer into which the routine writes a <a href="/windows-hardware/drivers/ddi/miniport/ns-miniport-_processor_number">PROCESSOR_NUMBER</a> structure that identifies the current logical processor. This structure contains the group number and the group-relative processor number. You can set this parameter to <b>NULL</b> if you do not need this information.
 
 ## -returns

@@ -3,8 +3,7 @@ UID: NF:netpoweroffload.NET_POWER_OFFLOAD_ARP_PARAMETERS_INIT
 title: NET_POWER_OFFLOAD_ARP_PARAMETERS_INIT function (netpoweroffload.h)
 description: The NET_POWER_OFFLOAD_ARP_PARAMETERS_INIT function initializes a NET_POWER_OFFLOAD_ARP_PARAMETERS structure.
 tech.root: netvista
-ms.assetid: 1d8aa902-5b9e-4975-a0c7-829c6f27af0e
-ms.date: 09/30/2019
+ms.date: 04/01/2022
 keywords: ["NET_POWER_OFFLOAD_ARP_PARAMETERS_INIT function"]
 ms.keywords: NET_POWER_OFFLOAD_ARP_PARAMETERS_INIT
 req.header: netpoweroffload.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -37,8 +36,6 @@ api_location:
  - netpoweroffload.h
 api_name:
  - NET_POWER_OFFLOAD_ARP_PARAMETERS_INIT
-product:
- - Windows
 ---
 
 # NET_POWER_OFFLOAD_ARP_PARAMETERS_INIT function
@@ -50,13 +47,10 @@ The **NET_POWER_OFFLOAD_ARP_PARAMETERS_INIT** function initializes a [**NET_POWE
 
 ## -parameters
 
-### -param Parameters
+### -param Parameters [_Out_]
 
 A pointer to a client driver-allocated [**NET_POWER_OFFLOAD_ARP_PARAMETERS**](../netpoweroffload/ns-netpoweroffload-_net_power_offload_arp_parameters.md) structure.
 
-## -returns
-
-This function does not return a value.
 
 ## -remarks
 

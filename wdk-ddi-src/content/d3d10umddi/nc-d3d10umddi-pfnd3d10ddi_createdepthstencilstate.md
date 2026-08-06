@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_CREATEDEPTHSTENCILSTATE
 title: PFND3D10DDI_CREATEDEPTHSTENCILSTATE (d3d10umddi.h)
 description: The CreateDepthStencilState function creates a depth stencil state.
 old-location: display\createdepthstencilstate.htm
-ms.assetid: ed2da104-c4e8-43eb-80e0-10273b575020
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_CREATEDEPTHSTENCILSTATE callback function"]
 ms.keywords: CreateDepthStencilState, CreateDepthStencilState callback function [Display Devices], PFND3D10DDI_CREATEDEPTHSTENCILSTATE, PFND3D10DDI_CREATEDEPTHSTENCILSTATE callback, UserModeDisplayDriverDx10_Functions_1d472cf5-dd58-4989-afa5-12243f6c9301.xml, d3d10umddi/CreateDepthStencilState, display.createdepthstencilstate
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CreateDepthStencilState
-product:
- - Windows
+ - PFND3D10DDI_CREATEDEPTHSTENCILSTATE
 ---
 
 # PFND3D10DDI_CREATEDEPTHSTENCILSTATE callback function
@@ -52,25 +49,25 @@ The <b>CreateDepthStencilState</b> function creates a depth stencil state.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pDepthStencilDesc* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10_ddi_depth_stencil_desc">D3D10_DDI_DEPTH_STENCIL_DESC</a> structure that describes the parameters that the user-mode display driver uses to create a depth stencil state.
 
-### -param Arg3
+### -param unnamedParam3
 
 *hDepthStencilState* [in]
 
 A handle to the driver's private data for the depth stencil state.
 
-### -param Arg4
+### -param unnamedParam4
 
 *hRTDepthStencilState* [in]
 
@@ -107,3 +104,4 @@ The user-mode display driver is not required to create more than 4,096 unique in
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

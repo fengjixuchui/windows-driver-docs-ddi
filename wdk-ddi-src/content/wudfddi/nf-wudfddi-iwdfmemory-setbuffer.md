@@ -4,7 +4,6 @@ title: IWDFMemory::SetBuffer (wudfddi.h)
 description: The SetBuffer method assigns a specified buffer to a memory object that a driver created by calling IWDFDriver::CreatePreallocatedWdfMemory.
 old-location: wdf\iwdfmemory_setbuffer.htm
 tech.root: wdf
-ms.assetid: 1399922d-684c-44a4-8bc7-b9e45ba05086
 ms.date: 02/26/2018
 keywords: ["IWDFMemory::SetBuffer"]
 ms.keywords: IWDFMemory interface,SetBuffer method, IWDFMemory.SetBuffer, IWDFMemory::SetBuffer, SetBuffer, SetBuffer method, SetBuffer method,IWDFMemory interface, UMDFMemoryObjectRef_34339a6a-7426-46fc-8df9-7f5281b03308.xml, umdf.iwdfmemory_setbuffer, wdf.iwdfmemory_setbuffer, wudfddi/IWDFMemory::SetBuffer
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFMemory.SetBuffer
+ - IWDFMemory::SetBuffer
 ---
 
 # IWDFMemory::SetBuffer
@@ -52,14 +51,14 @@ The <b>SetBuffer</b> method assigns a specified buffer to a memory object that a
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to a driver-supplied buffer.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 The nonzero size, in bytes, of the buffer that <i>Buffer</i> points to.
 
 ## -remarks
@@ -73,3 +72,4 @@ The <b>SetBuffer</b> method can assign a buffer to a memory object that <a href=
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfmemory">IWDFMemory</a>
+

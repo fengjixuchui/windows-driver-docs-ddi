@@ -1,15 +1,13 @@
 ---
 UID: NF:prnasntp.IBidiAsyncNotifyChannel.GetChannelNotificationType
 title: IBidiAsyncNotifyChannel::GetChannelNotificationType (prnasntp.h)
-description: 
-old-location: print\ibidiasyncnotifychannel_getchannelnotificationtype.htm
+description: Defines the IBidiAsyncNotifyChannel::GetChannelNotificationType method.
 tech.root: print
-ms.assetid: EB0F515D-A2FF-4744-ABC8-8FFD9DD08F24
-ms.date: 04/20/2018
+ms.date: 07/25/2022
 keywords: ["IBidiAsyncNotifyChannel::GetChannelNotificationType"]
 ms.keywords: GetChannelNotificationType, GetChannelNotificationType method [Print Devices], GetChannelNotificationType method [Print Devices],IBidiAsyncNotifyChannel interface, IBidiAsyncNotifyChannel interface [Print Devices],GetChannelNotificationType method, IBidiAsyncNotifyChannel.GetChannelNotificationType, IBidiAsyncNotifyChannel::GetChannelNotificationType, print.ibidiasyncnotifychannel_getchannelnotificationtype, prnasntp/IBidiAsyncNotifyChannel::GetChannelNotificationType
 req.header: prnasntp.h
-req.include-header: 
+req.include-header: Prnasntp.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -38,18 +36,23 @@ api_type:
 api_location:
  - Prnasntp.h
 api_name:
- - IBidiAsyncNotifyChannel.GetChannelNotificationType
+ - IBidiAsyncNotifyChannel::GetChannelNotificationType
 ---
-
-# IBidiAsyncNotifyChannel::GetChannelNotificationType
-
 
 ## -description
 
+Defines the **IBidiAsyncNotifyChannel::GetChannelNotificationType** method.
+
+## -parameters
+
+### -param unnamedParam1
+
+Defines the **IPrintAsyncNotifyDataObject** parameter *unnamedParam1*.
+
 ## -returns
 
-If this method succeeds, it returns <b xmlns:loc="https://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="https://microsoft.com/wdcml/l10n">HRESULT</b> error code.
+If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/prnasntp/nn-prnasntp-ibidiasyncnotifychannel">IBidiAsyncNotifyChannel</a>
+[IBidiAsyncNotifyChannel](./nn-prnasntp-ibidiasyncnotifychannel.md)

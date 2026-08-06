@@ -4,8 +4,7 @@ title: HW_TRACING_ENABLED (storport.h)
 description: The HwStorTracingEnabled callback routine enables the Storport to notify a miniport that event tracing is enabled.
 old-location: storage\hwstortracingenabled.htm
 tech.root: storage
-ms.assetid: 2B56A2D3-1FA6-4212-A83C-3C20D826353B
-ms.date: 03/29/2018
+ms.date: 05/24/2022
 keywords: ["HW_TRACING_ENABLED callback function"]
 ms.keywords: HW_TRACING_ENABLED, HwStorTracingEnabled, HwStorTracingEnabled routine [Storage Devices], storage.hwstortracingenabled, storport/HwStorTracingEnabled
 req.header: storport.h
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Storport.h
 api_name:
- - HwStorTracingEnabled
+ - HW_TRACING_ENABLED
 ---
 
 # HW_TRACING_ENABLED callback function
@@ -51,13 +50,11 @@ The **HwStorTracingEnabled** callback routine enables the Storport to notify a m
 
 ### -param HwDeviceExtension
 
-### -param Enabled
-
-[in] True to enable tracing in the miniport. Otherwise, false.
-
-#### - DeviceExtension
-
 [in] A pointer to the miniport driver's per-HBA storage area.
+
+### -param Enabled [in]
+
+True to enable tracing in the miniport. Otherwise, false.
 
 ## -remarks
 

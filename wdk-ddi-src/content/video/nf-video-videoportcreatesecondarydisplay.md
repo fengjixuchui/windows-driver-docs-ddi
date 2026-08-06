@@ -4,7 +4,6 @@ title: VideoPortCreateSecondaryDisplay function (video.h)
 description: The VideoPortCreateSecondaryDisplay function enables dual-view support by creating a secondary device object for the given device.
 old-location: display\videoportcreatesecondarydisplay.htm
 tech.root: display
-ms.assetid: 49dc9ed8-a506-475e-910f-5dce2ad9b168
 ms.date: 05/10/2018
 keywords: ["VideoPortCreateSecondaryDisplay function"]
 ms.keywords: VideoPortCreateSecondaryDisplay, VideoPortCreateSecondaryDisplay function [Display Devices], VideoPort_Functions_eda677fc-91b7-47d3-8407-615d5fbfcb3a.xml, display.videoportcreatesecondarydisplay, video/VideoPortCreateSecondaryDisplay
@@ -50,19 +49,19 @@ The <b>VideoPortCreateSecondaryDisplay</b> function enables dual-view support by
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's device extension. This is the hardware extension for the device that wants to create additional display device objects.
 
-### -param SecondaryDeviceExtension 
+### -param SecondaryDeviceExtension [in, out]
 
-[in, out]
+
 Pointer to the location in which to store the hardware device extension for the secondary display device.
 
-### -param ulFlag 
+### -param ulFlag [in]
 
-[in]
+
 Is a set of attributes for the secondary display device. This parameter is restricted to the following value:
 
 |Value|Meaning|
@@ -79,6 +78,6 @@ In Windows XP and later, a removable logical device will never become the <a hre
 
 Note that on some editions of Windows XP, <b>VideoPortCreateSecondaryDisplay</b> can deliberately fail to enable Dualview. In such cases, the display driver should remain in SingleView mode.
 
-When the video minport driver calls <b>VideoPortCreateSecondaryDisplay</b>, the value of the <i>ulFlags</i> parameter must be equal to VIDEO_DUALVIEW_REMOVABLE, which is defined in <i>ntddvdeo.h</i>.
+When the video miniport driver calls <b>VideoPortCreateSecondaryDisplay</b>, the value of the <i>ulFlags</i> parameter must be equal to VIDEO_DUALVIEW_REMOVABLE, which is defined in <i>ntddvdeo.h</i>.
 
 The flags VIDEO_DUALVIEW_PRIMARY and VIDEO_DUALVIEW_SECONDARY, which are defined in <i>ntddvdeo.h</i>, are for internal use only. The video miniport driver must never set these flags.

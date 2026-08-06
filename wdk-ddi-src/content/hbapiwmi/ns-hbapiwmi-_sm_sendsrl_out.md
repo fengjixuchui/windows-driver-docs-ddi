@@ -4,7 +4,6 @@ title: _SM_SendSRL_OUT (hbapiwmi.h)
 description: The SM_SendSRL_OUT structure is used to receive output parameters from the SM_SendSRL method.
 old-location: storage\sm_sendsrl_out.htm
 tech.root: storage
-ms.assetid: 1e6d1a97-b175-4f76-8f4d-15ec089538e8
 ms.date: 03/29/2018
 keywords: ["SM_SendSRL_OUT structure"]
 ms.keywords: "*PSM_SendSRL_OUT, PSM_SendSRL_OUT, PSM_SendSRL_OUT structure pointer [Storage Devices], SM_SendSRL_OUT, SM_SendSRL_OUT structure [Storage Devices], _SM_SendSRL_OUT, hbapiwmi/PSM_SendSRL_OUT, hbapiwmi/SM_SendSRL_OUT, storage.sm_sendsrl_out, structs-Fibre_35335fb8-61e9-47bd-9b55-48f28a53483b.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hbapiwmi.h
 api_name:
+ - _SM_SendSRL_OUT
+ - PSM_SendSRL_OUT
  - SM_SendSRL_OUT
 ---
 
@@ -73,3 +74,4 @@ The results of the common transport command.
 ## -remarks
 
 The WMI tool suite generates a declaration of the SM_SendSRL_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.
+

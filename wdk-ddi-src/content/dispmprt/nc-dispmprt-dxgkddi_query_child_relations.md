@@ -4,14 +4,13 @@ title: DXGKDDI_QUERY_CHILD_RELATIONS (dispmprt.h)
 description: The DxgkDdiQueryChildRelations function enumerates the child devices of a display adapter.
 old-location: display\dxgkddiquerychildrelations.htm
 tech.root: display
-ms.assetid: eb1a0df0-6239-4d82-8477-7dd015f80b6e
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_QUERY_CHILD_RELATIONS callback function"]
 ms.keywords: DXGKDDI_QUERY_CHILD_RELATIONS, DXGKDDI_QUERY_CHILD_RELATIONS callback, DmFunctions_783a9c6c-f6ac-4949-87f0-674dae768d36.xml, DxgkDdiQueryChildRelations, DxgkDdiQueryChildRelations callback function [Display Devices], display.dxgkddiquerychildrelations, dispmprt/DxgkDdiQueryChildRelations
 req.header: dispmprt.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
- - DxgkDdiQueryChildRelations
+ - DXGKDDI_QUERY_CHILD_RELATIONS
 ---
 
 # DXGKDDI_QUERY_CHILD_RELATIONS callback function
@@ -50,19 +49,19 @@ The <i>DxgkDdiQueryChildRelations</i> function enumerates the child devices of a
 
 ## -parameters
 
-### -param MiniportDeviceContext 
+### -param MiniportDeviceContext [in]
 
-[in]
+
 A handle to a context block associated with a display adapter. The display miniport driver's <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.
 
-### -param ChildRelations 
+### -param ChildRelations [in, out]
 
-[in, out]
+
 A pointer to an array of <a href="/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_child_descriptor">DXGK_CHILD_DESCRIPTOR</a> structures allocated and zeroed by the caller. The number of elements in the array is one greater than the value returned by <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device">DxgkDdiStartDevice</a> in the <i>NumberOfChildren</i> parameter. <i>DxgkDdiQueryChildRelations</i> must fill in all but the last structure in the array with information that describes the child devices of the display adapter. The last structure in the array must remain zeroed.
 
-### -param ChildRelationsSize 
+### -param ChildRelationsSize [in]
 
-[in]
+
 The total size, in bytes, of the <i>ChildRelations</i> array including the zeroed structure at the end.
 
 ## -returns
@@ -92,3 +91,4 @@ The <i>DxgkDdiQueryChildRelations</i> function should be made pageable.
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_device_descriptor">DxgkDdiQueryDeviceDescriptor</a>
+

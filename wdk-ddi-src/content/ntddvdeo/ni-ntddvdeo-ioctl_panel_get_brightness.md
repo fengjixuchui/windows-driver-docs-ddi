@@ -2,7 +2,6 @@
 UID: NI:ntddvdeo.IOCTL_PANEL_GET_BRIGHTNESS
 title: IOCTL_PANEL_GET_BRIGHTNESS (ntddvdeo.h)
 description: Returns the brightness level for the display panel.
-ms.assetid: 1bbd8248-a81a-40dd-972b-80b187da28da
 ms.date: 10/19/2018
 keywords: ["IOCTL_PANEL_GET_BRIGHTNESS IOCTL"]
 req.header: ntddvdeo.h
@@ -30,8 +29,6 @@ api_location:
  - ntddvdeo.h
 api_name:
  - IOCTL_PANEL_GET_BRIGHTNESS
-product:
- - Windows
 ---
 
 # IOCTL_PANEL_GET_BRIGHTNESS IOCTL
@@ -44,6 +41,8 @@ product:
 Returns the brightness level for the display panel.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

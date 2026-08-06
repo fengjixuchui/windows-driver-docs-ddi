@@ -3,8 +3,7 @@ UID: NF:netadapter.NetAdapterSetLinkState
 title: NetAdapterSetLinkState function (netadapter.h)
 description: Sets the current link state of the of the network adapter.
 tech.root: netvista
-ms.assetid: 5c06c275-4eb8-46ba-9b90-50ca192c9a47
-ms.date: 01/18/2019
+ms.date: 03/30/2022
 keywords: ["NetAdapterSetLinkState function"]
 ms.keywords: NetAdapterSetLinkState
 req.header: netadapter.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.29
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: <= DISPATCH_LEVEL
@@ -31,13 +30,13 @@ targetos: Windows
 f1_keywords:
  - NetAdapterSetLinkState
  - netadapter/NetAdapterSetLinkState
-topictype:
+topic_type:
  - apiref
-apitype:
+api_type:
  - HeaderDef
-apilocation:
+api_location:
  - netadapter.h
-apiname:
+api_name:
  - NetAdapterSetLinkState
 ---
 
@@ -50,11 +49,11 @@ Sets the link state of the of the network adapter.
 
 ## -parameters
 
-### -param Adapter
+### -param Adapter [_In_]
 
 The network adapter object that the client created in a prior call to [**NetAdapterCreate**](nf-netadapter-netadaptercreate.md).
 
-### -param State
+### -param State [_In_]
 
 A pointer to an allocated and initialized [**NET_ADAPTER_LINK_STATE**](ns-netadapter-_net_adapter_link_state.md) structure that describes the link state of the adapter.
 

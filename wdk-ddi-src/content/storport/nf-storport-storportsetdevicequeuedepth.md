@@ -4,7 +4,6 @@ title: StorPortSetDeviceQueueDepth function (storport.h)
 description: The StorPortSetDeviceQueueDepth routine sets the maximum depth of the device queue for the indicated device.
 old-location: storage\storportsetdevicequeuedepth.htm
 tech.root: storage
-ms.assetid: e79b4294-5ba4-4fcc-97e2-69613b65f574
 ms.date: 03/29/2018
 keywords: ["StorPortSetDeviceQueueDepth function"]
 ms.keywords: StorPortSetDeviceQueueDepth, StorPortSetDeviceQueueDepth routine [Storage Devices], storage.storportsetdevicequeuedepth, storport/StorPortSetDeviceQueueDepth, storprt_1f3e0e5d-fa3e-4314-aa0a-4d8494c78fb2.xml
@@ -51,29 +50,29 @@ The **StorPortSetDeviceQueueDepth** routine sets the maximum depth of the device
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the miniport driver's per-HBA storage area.
 
-### -param PathId 
+### -param PathId [in]
 
-[in]
+
 Contains the path ID of the target device.
 
-### -param TargetId 
+### -param TargetId [in]
 
-[in]
+
 Contains the device number of the target device.
 
-### -param Lun 
+### -param Lun [in]
 
-[in]
+
 Contains the logical unit number of the target device.
 
-### -param Depth 
+### -param Depth [in]
 
-[in]
+
 Supplies the depth to which the queue is to be set. This value is always > 0.
 
 ## -returns

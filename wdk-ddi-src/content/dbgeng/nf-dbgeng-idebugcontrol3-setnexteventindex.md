@@ -4,7 +4,6 @@ title: IDebugControl3::SetNextEventIndex (dbgeng.h)
 description: The SetNextEventIndex method sets the next event for the current target by selecting the event from the static list of events for the target, if such a list exists.
 old-location: debugger\setnexteventindex.htm
 tech.root: debugger
-ms.assetid: fbff721a-fdd9-4343-b9a9-92f41fb21ba2
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::SetNextEventIndex"]
 ms.keywords: IDebugControl3 interface [Windows Debugging],SetNextEventIndex method, IDebugControl3.SetNextEventIndex, IDebugControl3::SetNextEventIndex, IDebugControl_9a902b9c-c621-4d71-bae7-d3fd288b1cd8.xml, SetNextEventIndex, SetNextEventIndex method [Windows Debugging], SetNextEventIndex method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl3::SetNextEventIndex, debugger.setnexteventindex
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl3.SetNextEventIndex
+ - IDebugControl3::SetNextEventIndex
 ---
 
 # IDebugControl3::SetNextEventIndex
@@ -50,14 +49,14 @@ The <b>SetNextEventIndex</b> method sets the next event for the current target b
 
 ## -parameters
 
-### -param Relation 
+### -param Relation [in]
 
-[in]
+
 Specifies how to interpret <i>Value</i> when setting the index of the next event.  Possible values are: DEBUG_EINDEX_FROM_START, DEBUG_EINDEX_FROM_END, and DEBUG_EINDEX_FROM_CURRENT.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies the index of the next event relative to the first, last, or current event.  The interpretation of <i>Value</i> depends on the value of <i>Relation</i>, as follows.
 
 <table>
@@ -100,9 +99,9 @@ The current event index plus <i>Value</i>.
 
 The resulting index must be greater than zero and one less than the number of events returned by <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getnumberevents">GetNumberEvents</a>.
 
-### -param NextIndex 
+### -param NextIndex [out]
 
-[out]
+
 Receives the index of the next event.  If <i>NextIndex</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -144,3 +143,4 @@ This method is only useful if the target offers a list of events.
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
+

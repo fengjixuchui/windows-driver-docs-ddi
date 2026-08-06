@@ -2,9 +2,8 @@
 UID: NS:dispmprt._DXGK_OPM_INTERFACE_2_JTP
 title: DXGK_OPM_INTERFACE_2_JTP
 ms.date: 03/24/2020
-ms.topic: language-reference
 targetos: Windows
-description: 
+description: "Learn more about: DXGK_OPM_INTERFACE_2_JTP structure"
 tech.root: display
 req.construct-type: structure
 req.ddi-compliance: 
@@ -29,6 +28,7 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGK_OPM_INTERFACE_2_JTP
+ - PDXGK_OPM_INTERFACE_2_JTP
  - DXGK_OPM_INTERFACE_2_JTP
 f1_keywords:
  - _DXGK_OPM_INTERFACE_2_JTP
@@ -42,6 +42,7 @@ dev_langs:
 ---
 
 # DXGK_OPM_INTERFACE_2_JTP structure
+
 
 ## -description
 
@@ -84,3 +85,4 @@ Use [**DXGK_OPM_INTERFACE_2**](ns-dispmprt-dxgk_opm_interface_2.md) (JTP = Janua
 ## -remarks
 
 ## -see-also
+

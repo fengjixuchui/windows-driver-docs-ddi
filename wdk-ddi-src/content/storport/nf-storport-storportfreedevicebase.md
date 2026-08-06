@@ -4,7 +4,6 @@ title: StorPortFreeDeviceBase function (storport.h)
 description: StorPortFreeDeviceBase frees a range of device I/O memory that was mapped by StorPortGetDeviceBase.
 old-location: storage\storportfreedevicebase.htm
 tech.root: storage
-ms.assetid: 4feb3bde-c243-493c-a6f9-4accd545955c
 ms.date: 03/29/2018
 keywords: ["StorPortFreeDeviceBase function"]
 ms.keywords: StorPortFreeDeviceBase, StorPortFreeDeviceBase function [Storage Devices], storage.storportfreedevicebase, storport/StorPortFreeDeviceBase, storprt_f8c3e4c6-8f38-4189-bdac-70c0c61e0f18.xml
@@ -51,14 +50,14 @@ api_name:
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
 
-### -param MappedAddress 
+### -param MappedAddress [in]
 
-[in]
+
 Pointer to region of memory to be freed.
 
 ## -returns

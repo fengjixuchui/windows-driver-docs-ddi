@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugBreakpoint.RemoveFlags
 title: IDebugBreakpoint::RemoveFlags (dbgeng.h)
-description: The RemoveFlags method removes flags from a breakpoint.
+description: The RemoveFlags method removes flags from a breakpoint. This method belongs to the IDebugBreakpoint interface.
 old-location: debugger\removeflags.htm
 tech.root: debugger
-ms.assetid: 60538544-6baf-4d23-a65f-5c5e82bd6f11
 ms.date: 05/03/2018
 keywords: ["IDebugBreakpoint::RemoveFlags"]
 ms.keywords: ComOther_15793582-5533-4f63-8278-9556b160e6d2.xml, IDebugBreakpoint interface [Windows Debugging],RemoveFlags method, IDebugBreakpoint.RemoveFlags, IDebugBreakpoint2 interface [Windows Debugging],RemoveFlags method, IDebugBreakpoint2::RemoveFlags, IDebugBreakpoint::RemoveFlags, RemoveFlags, RemoveFlags method [Windows Debugging], RemoveFlags method [Windows Debugging],IDebugBreakpoint interface, RemoveFlags method [Windows Debugging],IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint2::RemoveFlags, dbgeng/IDebugBreakpoint::RemoveFlags, debugger.removeflags
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugBreakpoint.RemoveFlags
- - IDebugBreakpoint2.RemoveFlags
+ - IDebugBreakpoint::RemoveFlags
 ---
 
 # IDebugBreakpoint::RemoveFlags
@@ -51,9 +49,9 @@ The <b>RemoveFlags</b> method removes flags from a breakpoint.
 
 ## -parameters
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Flags to remove from the breakpoint.  <i>Flags</i> is a bit field. The new value of the flags in the engine is the old value and not the value of <i>Flags</i>.  For more information about the flag bit field and an explanation of each flag, see <a href="/windows-hardware/drivers/debugger/controlling-breakpoint-flags-and-parameters">Controlling Breakpoint Flags and Parameters</a>.  You cannot modify the DEBUG_BREAKPOINT_DEFERRED flag in the engine. This bit in <i>Flags</i> must always be zero.
 
 ## -returns
@@ -84,3 +82,4 @@ This method can also return error values.  For more information, see <a href="/w
 ## -remarks
 
 For more information about breakpoint properties, see <a href="/windows-hardware/drivers/debugger/controlling-breakpoint-flags-and-parameters">Controlling Breakpoint Flags and Parameters</a>.
+

@@ -1,10 +1,9 @@
 ---
-UID: NS:ufs.__unnamed_struct_7
+UID: NS:ufs.UFS_INTERCONNECT_DESCRIPTOR
 title: UFS_INTERCONNECT_DESCRIPTOR (ufs.h)
 description: UFS_INTERCONNECT_DESCRIPTOR contains the MIPI M-PHY® specification version number and the MIPI 6338 UniPro℠ specification version number.
 old-location: storage\ufs_interconnect_descriptor.htm
 tech.root: storage
-ms.assetid: 6C6EAA96-40E9-467F-903B-AE44CE5B77CF
 ms.date: 03/29/2018
 keywords: ["UFS_INTERCONNECT_DESCRIPTOR structure"]
 ms.keywords: "*PUFS_INTERCONNECT_DESCRIPTOR, PUFS_INTERCONNECT_DESCRIPTOR, PUFS_INTERCONNECT_DESCRIPTOR structure pointer [Storage Devices], UFS_INTERCONNECT_DESCRIPTOR, UFS_INTERCONNECT_DESCRIPTOR structure [Storage Devices], storage.ufs_interconnect_descriptor, ufs/PUFS_INTERCONNECT_DESCRIPTOR, ufs/UFS_INTERCONNECT_DESCRIPTOR"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Ufs.h
 api_name:
+ - PUFS_INTERCONNECT_DESCRIPTOR
  - UFS_INTERCONNECT_DESCRIPTOR
 ---
 

@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGKARG_DESCRIBEALLOCATION
 title: _DXGKARG_DESCRIBEALLOCATION (d3dkmddi.h)
 description: The DXGKARG_DESCRIBEALLOCATION structure describes an existing allocation.
 old-location: display\dxgkarg_describeallocation.htm
-ms.assetid: fd01ff3b-83b7-43d5-bbc6-6959485edd15
 ms.date: 05/10/2018
 keywords: ["DXGKARG_DESCRIBEALLOCATION structure"]
 ms.keywords: "*INOUT_PDXGKARG_DESCRIBEALLOCATION, DXGKARG_DESCRIBEALLOCATION, DXGKARG_DESCRIBEALLOCATION structure [Display Devices], DmStructs_73e3d53a-788b-4c88-980c-df0d2038694f.xml, _DXGKARG_DESCRIBEALLOCATION, d3dkmddi/DXGKARG_DESCRIBEALLOCATION, display.dxgkarg_describeallocation"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_DESCRIBEALLOCATION
  - DXGKARG_DESCRIBEALLOCATION
 ---
 
@@ -52,45 +52,45 @@ The DXGKARG_DESCRIBEALLOCATION structure describes an existing allocation.
 
 ## -struct-fields
 
-### -field hAllocation
+### -field hAllocation [in]
 
-[in] A handle to an allocation that information is requested for. The driver previously returned this handle in the <b>hAllocation</b> member of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_allocationinfo">DXGK_ALLOCATIONINFO</a> structure from a call to the driver's <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation">DxgkDdiCreateAllocation</a> function.
+A handle to an allocation that information is requested for. The driver previously returned this handle in the <b>hAllocation</b> member of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_allocationinfo">DXGK_ALLOCATIONINFO</a> structure from a call to the driver's <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation">DxgkDdiCreateAllocation</a> function.
 
-### -field Width
+### -field Width [out]
 
-[out] The width of the allocation, in pixels. The driver returns the width value.
+The width of the allocation, in pixels. The driver returns the width value.
 
-### -field Height
+### -field Height [out]
 
-[out] The height of the allocation, in pixels. The driver returns the height value.
+The height of the allocation, in pixels. The driver returns the height value.
 
-### -field Format
+### -field Format [out]
 
-[out] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the allocation. The driver returns the format value.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the allocation. The driver returns the format value.
 
-### -field MultisampleMethod
+### -field MultisampleMethod [out]
 
-[out] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_multisamplingmethod">D3DDDI_MULTISAMPLINGMETHOD</a> structure that describes the multiple-sampling method that is used for the allocation. The driver returns the description.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_multisamplingmethod">D3DDDI_MULTISAMPLINGMETHOD</a> structure that describes the multiple-sampling method that is used for the allocation. The driver returns the description.
 
-### -field RefreshRate
+### -field RefreshRate [out]
 
-[out] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_rational">D3DDDI_RATIONAL</a> structure that indicates the refresh rate that the primary surface was created with, if applicable.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_rational">D3DDDI_RATIONAL</a> structure that indicates the refresh rate that the primary surface was created with, if applicable.
 
-### -field PrivateDriverFormatAttribute
+### -field PrivateDriverFormatAttribute [out]
 
-[out] A UINT value that specifies a private format attribute for the allocation. The driver specifies surface format attributes (for example, the pixel layout of a tiled surface) that it otherwise cannot expose to the operating system. 
+A UINT value that specifies a private format attribute for the allocation. The driver specifies surface format attributes (for example, the pixel layout of a tiled surface) that it otherwise cannot expose to the operating system. 
 
 The operating system uses the information in <b>PrivateDriverFormatAttribute</b> to compare two surfaces. For example, an A8R8B8G8 800x600 surface and an X8R8B8G8 800x600 surface should have the same information in <b>PrivateDriverFormatAttribute</b> if they have the same format attributes, which includes pixel layout.
 
-### -field Flags
+### -field Flags [out]
 
-[out] This member is reserved.
+This member is reserved.
 
 Supported starting with Windows 8.
 
-### -field Rotation
+### -field Rotation [out]
 
-[out] This member is reserved.
+This member is reserved.
 
 Supported starting with Windows 8.
 
@@ -125,3 +125,4 @@ Supported starting with Windows 8.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_describeallocation">DxgkDdiDescribeAllocation</a>
+

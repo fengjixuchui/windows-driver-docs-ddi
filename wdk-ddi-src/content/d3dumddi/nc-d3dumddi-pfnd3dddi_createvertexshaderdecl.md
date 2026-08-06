@@ -4,7 +4,6 @@ title: PFND3DDDI_CREATEVERTEXSHADERDECL (d3dumddi.h)
 description: The CreateVertexShaderDecl function converts the vertex shader declaration into a hardware-specific format and associates the declaration with a shader handle.
 old-location: display\createvertexshaderdecl.htm
 tech.root: display
-ms.assetid: 00c53e81-93db-46b8-b65c-c8d62059452a
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CREATEVERTEXSHADERDECL callback function"]
 ms.keywords: CreateVertexShaderDecl, CreateVertexShaderDecl callback function [Display Devices], PFND3DDDI_CREATEVERTEXSHADERDECL, PFND3DDDI_CREATEVERTEXSHADERDECL callback, UserModeDisplayDriver_Functions_9b214e45-8b3c-49e9-ae72-6b7c2391c256.xml, d3dumddi/CreateVertexShaderDecl, display.createvertexshaderdecl
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - CreateVertexShaderDecl
+ - PFND3DDDI_CREATEVERTEXSHADERDECL
 ---
 
 # PFND3DDDI_CREATEVERTEXSHADERDECL callback function
@@ -50,18 +49,18 @@ The <b>CreateVertexShaderDecl</b> function converts the vertex shader declaratio
 
 ## -parameters
 
-### -param hDevice 
+### -param hDevice [in]
 
-[in]
+
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_createvertexshaderdecl">D3DDDIARG_CREATEVERTEXSHADERDECL</a> structure that retrieves the shader handle that is associated with the vertex shader declaration that is specified by <i>pVertexElements</i>.
 
-### -param Arg3
+### -param unnamedParam3
 
 *pVertexElements* [in]
 
@@ -88,3 +87,4 @@ For more information about programming shader assemblers, see <a href="/windows-
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

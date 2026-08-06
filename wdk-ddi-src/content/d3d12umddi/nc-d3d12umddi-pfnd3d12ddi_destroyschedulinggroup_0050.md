@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_DESTROYSCHEDULINGGROUP_0050
 title: PFND3D12DDI_DESTROYSCHEDULINGGROUP_0050 (d3d12umddi.h)
 description: Destroys a hardware scheduling group.
-ms.assetid: 688cd4a2-6775-42e8-8dde-88a0d4d196b6
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_DESTROYSCHEDULINGGROUP_0050 callback function"]
 req.header: d3d12umddi.h
@@ -49,11 +48,11 @@ Destroys a hardware scheduling group.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 A D3D12DDI_HSCHEDULINGGROUP_0050 user mode driver handle type that represents a hardware scheduling group.
 

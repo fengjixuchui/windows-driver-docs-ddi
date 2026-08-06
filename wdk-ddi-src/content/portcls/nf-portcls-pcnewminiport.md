@@ -4,7 +4,6 @@ title: PcNewMiniport function (portcls.h)
 description: The PcNewMiniport function creates an instance of one of the system-supplied miniport drivers that are built into the PortCls system driver, portcls.sys.
 old-location: audio\pcnewminiport.htm
 tech.root: audio
-ms.assetid: 15046dc7-42ae-4ebe-acb9-2b0bbad1e833
 ms.date: 05/08/2018
 keywords: ["PcNewMiniport function"]
 ms.keywords: PcNewMiniport, PcNewMiniport function [Audio Devices], audio.pcnewminiport, audpc-routines_d0b1d8e9-e4e0-44de-8854-a1b18eac9ff5.xml, portcls/PcNewMiniport
@@ -51,14 +50,14 @@ The <b>PcNewMiniport</b> function creates an instance of one of the system-suppl
 
 ## -parameters
 
-### -param OutMiniPort 
+### -param OutMiniPort [out]
 
-[out]
+
 Output pointer for the miniport-driver object created by this function. This parameter points to a caller-allocated pointer variable into which the function outputs a reference to the newly created <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiport">IMiniport</a> object. This object is an instance of the miniport driver that is specified by the <i>ClassId</i> parameter. Specify a valid, non-NULL pointer value for this parameter.
 
-### -param ClassID 
+### -param ClassID [in]
 
-[in]
+
 Specifies the miniport interface that is being requested. For more information, see the following Remarks section.
 
 ## -returns

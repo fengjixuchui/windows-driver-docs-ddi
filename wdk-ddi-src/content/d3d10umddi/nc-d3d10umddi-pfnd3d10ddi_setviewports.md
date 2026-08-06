@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_SETVIEWPORTS
 title: PFND3D10DDI_SETVIEWPORTS (d3d10umddi.h)
 description: The SetViewports function sets viewports.
 old-location: display\setviewports.htm
-ms.assetid: f5a55dd3-a8c4-4741-b99e-105021d79603
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_SETVIEWPORTS callback function"]
 ms.keywords: PFND3D10DDI_SETVIEWPORTS, PFND3D10DDI_SETVIEWPORTS callback, SetViewports, SetViewports callback function [Display Devices], UserModeDisplayDriverDx10_Functions_fbab11b0-f3cc-41f1-afc8-e372a778255a.xml, d3d10umddi/SetViewports, display.setviewports
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - SetViewports
-product:
- - Windows
+ - PFND3D10DDI_SETVIEWPORTS
 ---
 
 # PFND3D10DDI_SETVIEWPORTS callback function
@@ -52,23 +49,23 @@ The <i>SetViewports</i> function sets viewports.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param NumViewports
+### -param NumViewports [in]
 
-[in] The total number of viewports that the <i>pViewports</i> parameter specifies.
+The total number of viewports that the <i>pViewports</i> parameter specifies.
 
-### -param ClearViewports
+### -param ClearViewports [in]
 
-[in] The number of viewports after the number of viewports that <i>NumViewports </i>specifies to be set to <b>NULL</b>. This number represents the difference between the previous number of viewports (that is, when the Microsoft Direct3D runtime previously called <i>SetViewports</i>) and the new number of viewports. 
+The number of viewports after the number of viewports that <i>NumViewports </i>specifies to be set to <b>NULL</b>. This number represents the difference between the previous number of viewports (that is, when the Microsoft Direct3D runtime previously called <i>SetViewports</i>) and the new number of viewports. 
 
 Note that the number that <i>ClearViewports</i> specifies is only an optimization aid because the user-mode display driver could calculate this number.
 
-### -param Arg4
+### -param unnamedParam4
 
 *pViewports* [in]
 
@@ -118,3 +115,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

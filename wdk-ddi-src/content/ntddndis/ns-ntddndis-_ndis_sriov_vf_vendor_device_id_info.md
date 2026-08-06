@@ -4,7 +4,6 @@ title: _NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO (ntddndis.h)
 description: The NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO structure specifies the PCI Express (PCIe) vendor and device identifiers (IDs) for a PCIe Virtual Function (VF) network adapter.
 old-location: netvista\ndis_sriov_vf_vendor_device_id_info.htm
 tech.root: netvista
-ms.assetid: ecf9f34a-ba05-4ad1-990c-b13d53fd78bb
 ms.date: 05/02/2018
 keywords: ["NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO structure"]
 ms.keywords: "*PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, netvista.ndis_sriov_vf_vendor_device_id_info, ntddndis/NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO, ntddndis/PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO
+ - PNDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO
  - NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO
 ---
 
@@ -58,7 +59,7 @@ The <b>NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO</b> structure contains information th
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SRIOV_VF_VENDOR_DEVICE_ID_INFO</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
 
@@ -99,7 +100,7 @@ A USHORT value that uniquely identifies the device type of the VF network adapte
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -108,3 +109,4 @@ A USHORT value that uniquely identifies the device type of the VF network adapte
 
 
 <a href="/windows-hardware/drivers/network/oid-sriov-vf-vendor-device-id">OID_SRIOV_VF_VENDOR_DEVICE_ID</a>
+

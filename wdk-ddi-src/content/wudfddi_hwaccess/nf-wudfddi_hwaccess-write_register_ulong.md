@@ -1,10 +1,9 @@
 ---
 UID: NF:wudfddi_hwaccess.WRITE_REGISTER_ULONG
 title: WRITE_REGISTER_ULONG function (wudfddi_hwaccess.h)
-description: The WRITE_REGISTER_ULONG routine writes a ULONG value to the specified address.
+description: The WRITE_REGISTER_ULONG function (wudfddi_hwaccess.h) writes a ULONG value to the specified register address.
 old-location: wdf\write_register_ulong.htm
 tech.root: wdf
-ms.assetid: E5C5DAEA-9F4E-4202-90BE-A8D41EE03BDA
 ms.date: 02/26/2018
 keywords: ["WRITE_REGISTER_ULONG function"]
 ms.keywords: WRITE_REGISTER_ULONG, WRITE_REGISTER_ULONG function, umdf.write_register_ulong, wdf.write_register_ulong, wudfddi_hwaccess/WRITE_REGISTER_ULONG
@@ -52,19 +51,19 @@ The <b>WRITE_REGISTER_ULONG</b> routine writes a ULONG value to the specified ad
 
 ## -parameters
 
-### -param pDevice 
+### -param pDevice [in]
 
-[in]
+
 Specifies a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a> interface for the device object of the device to access.
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the register, which must be a mapped range in memory space.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies a ULONG value to write to the register.
 
 ## -remarks

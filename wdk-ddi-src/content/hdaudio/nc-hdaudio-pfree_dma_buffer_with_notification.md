@@ -4,7 +4,6 @@ title: PFREE_DMA_BUFFER_WITH_NOTIFICATION (hdaudio.h)
 description: The FreeDmaBufferWithNotification routine frees a DMA buffer that was previously allocated by a call to AllocateDmaBufferWithNotification.The function pointer type for a FreeDmaBufferWithNotification routine is defined as follows.
 old-location: audio\freedmabufferwithnotification.htm
 tech.root: audio
-ms.assetid: 98fc6201-d9b4-4c85-b624-011f360df068
 ms.date: 05/08/2018
 keywords: ["PFREE_DMA_BUFFER_WITH_NOTIFICATION callback function"]
 ms.keywords: FreeDmaBufferWithNotification, FreeDmaBufferWithNotification callback function [Audio Devices], PFREE_DMA_BUFFER_WITH_NOTIFICATION, PFREE_DMA_BUFFER_WITH_NOTIFICATION callback, aud-prop2_065b7aad-f695-4076-9450-3311083ac17b.xml, audio.freedmabufferwithnotification, hdaudio/FreeDmaBufferWithNotification
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Hdaudio.h
 api_name:
- - FreeDmaBufferWithNotification
+ - PFREE_DMA_BUFFER_WITH_NOTIFICATION
 ---
 
 # PFREE_DMA_BUFFER_WITH_NOTIFICATION callback function
@@ -52,24 +51,24 @@ The function pointer type for a FreeDmaBufferWithNotification routine is defined
 
 ## -parameters
 
-### -param _context 
+### -param _context [in]
 
-[in]
+
 Specifies the context value from the Context member of the <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a> structure.
 
-### -param Handle 
+### -param Handle [in]
 
-[in]
+
 Handle that identifies the DMA engine. This handle value was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_capture_dma_engine">AllocateCaptureDmaEngine</a> or <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_render_dma_engine">AllocateRenderDmaEngine</a>.
 
-### -param BufferMdl 
+### -param BufferMdl [in]
 
-[in]
+
 A pointer to the buffer MDL. This value was obtained from a previous call to AllocateDmaBufferWithNotification.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 The size of the buffer to be freed. This value was obtained from a previous call to AllocateDmaBufferWithNotification.
 
 ## -returns
@@ -137,3 +136,4 @@ Callers of FreeDmaBufferWithNotification must be running at IRQL PASSIVE_LEVEL.
 
 
 <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a>
+

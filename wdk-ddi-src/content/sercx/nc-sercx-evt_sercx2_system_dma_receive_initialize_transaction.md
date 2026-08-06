@@ -4,7 +4,6 @@ title: EVT_SERCX2_SYSTEM_DMA_RECEIVE_INITIALIZE_TRANSACTION (sercx.h)
 description: The EvtSerCx2EvtSerCx2SystemDmaReceiveInitializeTransaction event callback function is called by version 2 of the serial framework extension (SerCx2) to prepare the serial controller driver to perform a system-DMA-receive transaction.
 old-location: serports\evtsercx2systemdmareceiveinitializetransaction.htm
 tech.root: serports
-ms.assetid: 34E016AF-439C-44CC-A2AE-78CD7B2B5443
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX2_SYSTEM_DMA_RECEIVE_INITIALIZE_TRANSACTION callback function"]
 ms.keywords: 2/EvtSerCx2SystemDmaReceiveInitializeTransaction, EVT_SERCX2_SYSTEM_DMA_RECEIVE_INITIALIZE_TRANSACTION, EVT_SERCX2_SYSTEM_DMA_RECEIVE_INITIALIZE_TRANSACTION callback, EvtSerCx2SystemDmaReceiveInitializeTransaction, EvtSerCx2SystemDmaReceiveInitializeTransaction callback function [Serial Ports], serports.evtsercx2systemdmareceiveinitializetransaction
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
- - EvtSerCx2SystemDmaReceiveInitializeTransaction
+ - EVT_SERCX2_SYSTEM_DMA_RECEIVE_INITIALIZE_TRANSACTION
 ---
 
 # EVT_SERCX2_SYSTEM_DMA_RECEIVE_INITIALIZE_TRANSACTION callback function
@@ -50,14 +49,14 @@ The <i>EvtSerCx2EvtSerCx2SystemDmaReceiveInitializeTransaction</i> event callbac
 
 ## -parameters
 
-### -param SystemDmaReceive 
+### -param SystemDmaReceive [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMARECEIVE</a> handle to a system-DMA-receive object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2systemdmareceivecreate">SerCx2SystemDmaReceiveCreate</a> method to create this object.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The number of bytes to be transferred in the system-DMA-receive transaction.
 
 ## -remarks
@@ -108,3 +107,4 @@ The <b>EVT_SERCX2_SYSTEM_DMA_RECEIVE_INITIALIZE_TRANSACTION</b> function type is
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2systemdmareceiveinitializetransactioncomplete">SerCx2SystemDmaReceiveInitializeTransactionComplete</a>
+

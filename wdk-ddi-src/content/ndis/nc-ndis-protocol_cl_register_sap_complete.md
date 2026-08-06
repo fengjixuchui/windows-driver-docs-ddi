@@ -4,7 +4,6 @@ title: PROTOCOL_CL_REGISTER_SAP_COMPLETE (ndis.h)
 description: A connection-oriented NDIS client that accepts incoming calls must have a ProtocolClRegisterSapComplete function to complete the asynchronous operations that it initiates with NdisClRegisterSap.
 old-location: netvista\protocolclregistersapcomplete.htm
 tech.root: netvista
-ms.assetid: b0a2a224-3353-4f20-b14f-ed5d633a6ead
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CL_REGISTER_SAP_COMPLETE callback function"]
 ms.keywords: PROTOCOL_CL_REGISTER_SAP_COMPLETE, PROTOCOL_CL_REGISTER_SAP_COMPLETE callback, ProtocolClRegisterSapComplete, ProtocolClRegisterSapComplete callback function [Network Drivers Starting with Windows Vista], condis_client_ref_6f2cf710-53e9-43ce-8b9a-46ec76d1146d.xml, ndis/ProtocolClRegisterSapComplete, netvista.protocolclregistersapcomplete
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolClRegisterSapComplete
+ - PROTOCOL_CL_REGISTER_SAP_COMPLETE
 ---
 
 # PROTOCOL_CL_REGISTER_SAP_COMPLETE callback function
@@ -57,9 +56,9 @@ A connection-oriented NDIS client that accepts incoming calls must have
 
 ## -parameters
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 Specifies the final status of the client's call to 
      <b>NdisClRegisterSap</b>, which can be one of the following:
      
@@ -100,25 +99,25 @@ The client supplied an invalid specification at
 The call manager encountered an error in attempting to register the given SAP and NDIS
        propagated this CM-determined failure status to the client.
 
-### -param ProtocolSapContext 
+### -param ProtocolSapContext [in]
 
-[in]
+
 Specifies the handle to the client's per-SAP context area, which the client originally supplied to
      NDIS when it called 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclregistersap">NdisClRegisterSap</a>. If the registration
      is successful, NDIS retains this context handle and uses it subsequently in calls to the client's 
      <i>ProtocolClIncomingCall</i> function pertaining to this SAP.
 
-### -param Sap 
+### -param Sap [in]
 
-[in]
+
 Pointer to the client-allocated buffer containing the specification for the SAP to be opened. The
      client originally passed this pointer to 
      <b>NdisClRegisterSap</b>.
 
-### -param NdisSapHandle 
+### -param NdisSapHandle [in]
 
-[in]
+
 If 
      <i>Status</i> is NDIS_STATUS_SUCCESS, specifies an NDIS-supplied valid handle to this registered SAP,
      effectively an association established with NDIS between the client and a particular call manager for
@@ -157,7 +156,7 @@ The format of a SAP is specific to the call manager. If the call manager does no
     that the client is attempting to register or if the specified SAP is already in use, the call manager can
     fail the SAP registration. 
     <i>ProtocolClRegisterSapComplete</i> should check the input 
-    <i>Status</i> for NDIS_STATUS_SUCCESS before proceding further. If the attempt to register the SAP failed,    
+    <i>Status</i> for NDIS_STATUS_SUCCESS before proceeding further. If the attempt to register the SAP failed,    
     <i>ProtocolClRegisterSapComplete</i> can either release the per-SAP context area and buffer at 
     <i>Sap</i> that the client allocated or prepare them for reuse in another call to 
     <b>NdisClRegisterSap</b>.
@@ -243,3 +242,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_af_register_notify">ProtocolCoAfRegisterNotify</a>
+

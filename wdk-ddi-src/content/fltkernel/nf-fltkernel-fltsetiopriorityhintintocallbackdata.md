@@ -4,7 +4,6 @@ title: FltSetIoPriorityHintIntoCallbackData function (fltkernel.h)
 description: The FltSetIoPriorityHintIntoCallbackData routine is used by a minifilter driver to set the I/O priority information in callback data.
 old-location: ifsk\fltsetiopriorityhintintocallbackdata.htm
 tech.root: ifsk
-ms.assetid: 25aba58b-654b-4492-9c54-83c53987342a
 ms.date: 04/16/2018
 keywords: ["FltSetIoPriorityHintIntoCallbackData function"]
 ms.keywords: FltApiRef_p_to_z_2d697ab8-c8ef-47f5-bfed-d0a82a61a1ef.xml, FltSetIoPriorityHintIntoCallbackData, FltSetIoPriorityHintIntoCallbackData routine [Installable File System Drivers], fltkernel/FltSetIoPriorityHintIntoCallbackData, ifsk.fltsetiopriorityhintintocallbackdata
@@ -50,14 +49,14 @@ The <b>FltSetIoPriorityHintIntoCallbackData</b> routine is used by a minifilter 
 
 ## -parameters
 
-### -param Data 
+### -param Data [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data">FLT_CALLBACK_DATA</a> structure that represents an I/O operation. This parameter is required and cannot be <b>NULL</b>.
 
-### -param PriorityHint 
+### -param PriorityHint [in]
 
-[in]
+
 The <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_io_priority_hint">IO_PRIORITY_HINT</a> enumeration value to set for the I/O operation in the callback data pointed to by <i>Data</i>.
 
 ## -returns

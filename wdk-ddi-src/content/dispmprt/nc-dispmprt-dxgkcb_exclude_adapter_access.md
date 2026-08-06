@@ -4,14 +4,13 @@ title: DXGKCB_EXCLUDE_ADAPTER_ACCESS (dispmprt.h)
 description: The DxgkCbExcludeAdapterAccess function prevents all access to the display adapter and calls a provided DxgkProtectedCallback callback routine while in this protected state.
 old-location: display\dxgkcbexcludeadapteraccess.htm
 tech.root: display
-ms.assetid: e74e79fe-3b36-427e-ae0b-4072a0438c4e
 ms.date: 05/10/2018
 keywords: ["DXGKCB_EXCLUDE_ADAPTER_ACCESS callback function"]
 ms.keywords: DXGKCB_EXCLUDE_ADAPTER_ACCESS, DXGKCB_EXCLUDE_ADAPTER_ACCESS callback, DpFunctions_8ad0a347-3d2f-429c-9b1f-67f000dbfc03.xml, DxgkCbExcludeAdapterAccess, DxgkCbExcludeAdapterAccess callback function [Display Devices], display.dxgkcbexcludeadapteraccess, dispmprt/DxgkCbExcludeAdapterAccess
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
- - DxgkCbExcludeAdapterAccess
+ - DXGKCB_EXCLUDE_ADAPTER_ACCESS
 ---
 
 # DXGKCB_EXCLUDE_ADAPTER_ACCESS callback function
@@ -50,14 +49,14 @@ The <b>DxgkCbExcludeAdapterAccess</b> function prevents all access to the displa
 
 ## -parameters
 
-### -param DeviceHandle 
+### -param DeviceHandle [in]
 
-[in]
+
 A handle that represents a display adapter. The display miniport driver obtained this handle in the <b>DeviceHandle</b> member of the <a href="/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that was passed to <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device">DxgkDdiStartDevice</a>.
 
-### -param Attributes 
+### -param Attributes [in]
 
-[in]
+
 A value that specifies video memory operations. This parameter can be any combination of the following bit flag values, except that DXGK_EXCLUDE_EVICT_ALL and DXGK_EXCLUDE_CALL_SYNCHRONOUS are mutually exclusive. These values are defined in <i>Dispmprt.h</i>.
 
 
@@ -80,14 +79,14 @@ Executes the protected <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmp
 
 Protects access to the PCI Express (PCIe) root port when the driver needs to access the root port configuration space. Set the <i>Attributes</i> parameter to this value before calling <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkcb_read_device_space">DxgkCbReadDeviceSpace</a> or <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkcb_write_device_space">DxgkCbWriteDeviceSpace</a> functions with the <i>DataType</i> parameter set to DXGK_WHICHSPACE_BRIDGE.
 
-### -param DxgkProtectedCallback 
+### -param DxgkProtectedCallback [in]
 
-[in]
+
 The callback routine to be called back when all access to the adapter has been halted.
 
-### -param ProtectedCallbackContext 
+### -param ProtectedCallbackContext [in]
 
-[in]
+
 A pointer to the value to pass to the <i>ProtectedCallbackContext</i> parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_protected_callback">DxgkProtectedCallback</a> callback routine.
 
 ## -returns
@@ -112,3 +111,4 @@ An exception to this blocking of application requests occurs when the user-mode 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_protected_callback">DxgkProtectedCallback</a>
+

@@ -4,7 +4,6 @@ title: KsPinGetConnectedFilterInterface function (ks.h)
 description: The KsPinGetConnectedFilterInterface function queries the filter to which Pin is connected in order to obtain a pointer to a COM interface.
 old-location: stream\kspingetconnectedfilterinterface.htm
 tech.root: stream
-ms.assetid: 19fb7a3e-d795-4d5a-9f28-cfbf37dbcd96
 ms.date: 04/23/2018
 keywords: ["KsPinGetConnectedFilterInterface function"]
 ms.keywords: KsPinGetConnectedFilterInterface, KsPinGetConnectedFilterInterface function [Streaming Media Devices], avfunc_d6f6f675-4d44-47c8-aa37-9ad533966603.xml, ks/KsPinGetConnectedFilterInterface, stream.kspingetconnectedfilterinterface
@@ -51,19 +50,19 @@ The<b> KsPinGetConnectedFilterInterface</b> function queries the filter to which
 
 ## -parameters
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a> structure. The filter to which this pin is attached is queried for the requested interface.
 
-### -param InterfaceId 
+### -param InterfaceId [in]
 
-[in]
+
 A pointer to a GUID representing the interface ID for the interface to obtain. A <b>QueryInterface</b> call is automatically performed for this interface.
 
-### -param Interface 
+### -param Interface [out]
 
-[out]
+
 A pointer to a PVOID. As in COM, the resulting interface pointer is deposited into <i>*Interface</i>. This interface has a corresponding reference count and <i>must</i> be released by the caller as in COM.
 
 ## -returns

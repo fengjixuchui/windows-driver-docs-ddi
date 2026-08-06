@@ -1,9 +1,8 @@
 ---
 UID: NC:d3dkmthk.PFND3DKMT_CREATEKEYEDMUTEX2
 title: PFND3DKMT_CREATEKEYEDMUTEX2 (d3dkmthk.h)
-description: Creates a keyed mutex object that includes private data.
+description: The PFND3DKMT_CREATEKEYEDMUTEX2 callback creates a keyed mutex object that includes private data. The function returns STATUS_SUCCESS on successful creation.
 old-location: display\d3dkmtcreatekeyedmutex2.htm
-ms.assetid: fedd7aa0-366c-4083-b6d2-692332813b3f
 ms.date: 05/10/2018
 keywords: ["PFND3DKMT_CREATEKEYEDMUTEX2 callback function"]
 ms.keywords: D3DKMTCreateKeyedMutex2, D3DKMTCreateKeyedMutex2 callback function [Display Devices], PFND3DKMT_CREATEKEYEDMUTEX2, PFND3DKMT_CREATEKEYEDMUTEX2 callback, d3dkmthk/D3DKMTCreateKeyedMutex2, display.d3dkmtcreatekeyedmutex2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
- - D3DKMTCreateKeyedMutex2
+ - PFND3DKMT_CREATEKEYEDMUTEX2
 ---
 
 # PFND3DKMT_CREATEKEYEDMUTEX2 callback function
@@ -50,7 +49,7 @@ Creates a keyed mutex object that includes private data.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in, out]
 
@@ -92,3 +91,4 @@ Keyed mutexes created with <b>D3DKMTCreateKeyedMutex2</b> are still compatible w
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_createkeyedmutex2">D3DKMT_CREATEKEYEDMUTEX2</a>
+

@@ -4,7 +4,6 @@ title: IPrintOemUni::ImageProcessing (prcomoem.h)
 description: The IPrintOemUni::ImageProcessing method can be used with Unidrv-supported printers to modify image bitmap data, in order to perform color formatting or halftoning.
 old-location: print\iprintoemuni_imageprocessing.htm
 tech.root: print
-ms.assetid: 201450cb-cda6-4dd3-93ee-056d1627b00d
 ms.date: 07/03/2018
 keywords: ["IPrintOemUni::ImageProcessing"]
 ms.keywords: IPrintOemUni interface [Print Devices],ImageProcessing method, IPrintOemUni.ImageProcessing, IPrintOemUni::ImageProcessing, ImageProcessing, ImageProcessing method [Print Devices], ImageProcessing method [Print Devices],IPrintOemUni interface, prcomoem/IPrintOemUni::ImageProcessing, print.iprintoemuni_imageprocessing, print_unidrv-pscript_rendering_7b1177ff-0077-4bee-9469-7825f42323eb.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemUni.ImageProcessing
+ - IPrintOemUni::ImageProcessing
 ---
 
 # IPrintOemUni::ImageProcessing
@@ -76,14 +75,14 @@ Caller-supplied value assigned to the *<b>IPCallbackID</b> attribute of the curr
 
 Caller-supplied pointer to an <a href="/windows-hardware/drivers/ddi/printoem/ns-printoem-ipparams">IPPARAMS</a> structure.
 
-### -param ppbResult 
+### -param ppbResult [out]
 
-[out]
+
 Pointer to a memory location that contains the address of a buffer. The contents of the buffer depend on where the converted DIB should be sent.
 
-If this method intends to send the converted DIB back to Unidrv and is successful in the conversion, it should set *<i>ppbResult</i> to the address of the buffer containing the converted DIB, and should return S_OK. If the conversion fails, the method should set *<i>ppbResult</i> to <b>NULL</b>, and should return E_FAIL.
+If this method intends to send the converted DIB back to Unidrv and is successful in the conversion, it should set **ppbResult* to the address of the buffer containing the converted DIB, and should return S_OK. If the conversion fails, the method should set **ppbResult* to <b>NULL</b>, and should return E_FAIL.
 
-If this method intends to send the converted DIB to the spooler and is successful in the conversion, the method should set *<i>ppbResult</i>  to <b>TRUE</b>, and should return S_OK. If the conversion fails, the method should set *<i>ppbResult</i> to <b>FALSE</b> and should return E_FAIL. For more information, see the discussion of the *<b>DevBPP</b> and *<b>DevNumOfPlanes</b> attributes in the Remarks section.
+If this method intends to send the converted DIB to the spooler and is successful in the conversion, the method should set **ppbResult*  to <b>TRUE</b>, and should return S_OK. If the conversion fails, the method should set **ppbResult* to <b>FALSE</b> and should return E_FAIL. For more information, see the discussion of the *<b>DevBPP</b> and *<b>DevNumOfPlanes</b> attributes in the Remarks section.
 
 ## -returns
 
@@ -200,7 +199,7 @@ If the format requires a color table, the table is pointed to by <i>pColorTable<
 
 </li>
 <li>
-Color data is in PRIMARY_ORDER_CBA format, as explained in the description of the <b>ulPrimaryOrder</b> member of the <a href="/windows/win32/api/winddi/ns-winddi-gdiinfo">GDIINFO</a> structure. In other words, if the color format is RGB or CMY, the least significant <i>n</i> bits must contain the blue or yellow value, the next <i>n</i> bits must contain the green or magenta value, and the next <i>n</i> bits must contain the red or cyan value. Unused bits are in the most significant position. If the format uses 4 bits per pixel, then <i>n</i> is 1. For 24 bits per pixel, <i>n</i> is 8, as shown in the following figure. For CYMK, the fourth group of <i>n</i> bits contains black.
+Color data is in PRIMARY_ORDER_CBA format, as explained in the description of the <b>ulPrimaryOrder</b> member of the <a href="/windows/win32/api/winddi/ns-winddi-gdiinfo">GDIINFO</a> structure. In other words, if the color format is RGB or CMY, the least significant <i>n</i> bits must contain the blue or yellow value, the next <i>n</i> bits must contain the green or magenta value, and the next <i>n</i> bits must contain the red or cyan value. Unused bits are in the most significant position. If the format uses 4 bits per pixel, then <i>n</i> is 1. For 24 bits per pixel, <i>n</i> is 8, as shown in the following figure. For CMYK, the fourth group of <i>n</i> bits contains black.
 
 </li>
 </ul>
@@ -245,3 +244,4 @@ The <code>IPrintOemUni::ImageProcessing</code> method is optional. If a renderin
 
 
 <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-filtergraphics">IPrintOemUni::FilterGraphics</a>
+

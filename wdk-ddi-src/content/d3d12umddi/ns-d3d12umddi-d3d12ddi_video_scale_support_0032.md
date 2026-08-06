@@ -3,7 +3,6 @@ UID: NS:d3d12umddi.D3D12DDI_VIDEO_SCALE_SUPPORT_0032
 title: D3D12DDI_VIDEO_SCALE_SUPPORT_0032 (d3d12umddi.h)
 description: Video scale support.
 old-location: display\d3d12ddi-video-scale-support-0032.htm
-ms.assetid: 630ee3fe-f97a-4e82-83d7-4efd05bc5d6e
 ms.date: 04/16/2018
 keywords: ["D3D12DDI_VIDEO_SCALE_SUPPORT_0032 structure"]
 ms.keywords: D3D12DDI_VIDEO_SCALE_SUPPORT_0032, D3D12DDI_VIDEO_SCALE_SUPPORT_0032 structure [Display Devices], d3d12umddi/D3D12DDI_VIDEO_SCALE_SUPPORT_0032, display.d3d12ddi-video-scale-support-0032
@@ -43,20 +42,19 @@ api_name:
 
 # D3D12DDI_VIDEO_SCALE_SUPPORT_0032 structure
 
-
 ## -description
 
-Describes a supported range of output sizes for a scaler.
+The **D3D12DDI_VIDEO_SCALE_SUPPORT_0032** structure describes a supported range of output sizes for a scaler.
 
 ## -struct-fields
 
 ### -field OutputSizeRange
 
-Supported range of output sizes for a scaler.
+A [**D3D12DDI_VIDEO_SIZE_RANGE_0032**](ns-d3d12umddi-d3d12ddi_video_size_range_0032.md) structure that specifies the supported range of output sizes for a scaler.
 
 ### -field Flags
 
-Flags that indicated level of scale support.
+A [**D3D12DDI_VIDEO_SCALE_SUPPORT_FLAGS_0022**](ne-d3d12umddi-d3d12ddi_video_scale_support_flags_0022.md) value that indicated level of scale support.
 
 ## -remarks
 
@@ -66,5 +64,10 @@ When scaling is not supported, the Min and Max sizes should both be set to the i
 
 ## -see-also
 
-[D3D12DDI_VIDEO_SIZE_RANGE_0032 structure](ns-d3d12umddi-d3d12ddi_video_size_range_0032.md)
+[**D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032**](ns-d3d12umddi-d3d12ddi_video_process_support_data_0032.md)
 
+[**D3D12DDI_VIDEO_PROCESS_SUPPORT_DATA_0032**](ns-d3d12umddi-d3d12ddi_video_process_support_data_0032.md)
+
+[**D3D12DDI_VIDEO_SCALE_SUPPORT_FLAGS_0022**](ne-d3d12umddi-d3d12ddi_video_scale_support_flags_0022.md)
+
+[**D3D12DDI_VIDEO_SIZE_RANGE_0032**](ns-d3d12umddi-d3d12ddi_video_size_range_0032.md)

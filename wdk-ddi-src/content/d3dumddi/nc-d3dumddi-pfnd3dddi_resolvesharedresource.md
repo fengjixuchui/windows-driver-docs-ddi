@@ -4,7 +4,6 @@ title: PFND3DDDI_RESOLVESHAREDRESOURCE (d3dumddi.h)
 description: The ResolveSharedResource function informs a user-mode display driver that ownership of a shared surface changed or that a surface is being used for GDI interoperation.
 old-location: display\resolvesharedresource.htm
 tech.root: display
-ms.assetid: 8ad9130e-bade-4fd2-b345-b6361fd001ef
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_RESOLVESHAREDRESOURCE callback function"]
 ms.keywords: PFND3DDDI_RESOLVESHAREDRESOURCE, PFND3DDDI_RESOLVESHAREDRESOURCE callback, ResolveSharedResource, ResolveSharedResource callback function [Display Devices], UserModeDisplayDriver_Functions_d1818521-a7ef-4daf-8bd7-47103bba2755.xml, d3dumddi/ResolveSharedResource, display.resolvesharedresource
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - ResolveSharedResource
-product:
- - Windows
+ - PFND3DDDI_RESOLVESHAREDRESOURCE
 ---
 
 # PFND3DDDI_RESOLVESHAREDRESOURCE callback function
@@ -56,7 +53,7 @@ The <i>ResolveSharedResource</i> function informs a user-mode display driver tha
 
 A handle to the display device (that is, the graphics context) that is associated with the shared surface or GDI interoperable surface.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -96,3 +93,4 @@ The driver implements <i>ResolveSharedResource</i> to appropriately manage resou
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient3.GetIdentity
 title: IDebugClient3::GetIdentity (dbgeng.h)
-description: The GetIdentity method returns a string describing the computer and user this client represents.
+description: The GetIdentity method returns a string describing the computer and user this client represents. This method belongs to the IDebugClient3 interface.
 old-location: debugger\getidentity.htm
 tech.root: debugger
-ms.assetid: 1d4e7c69-bc32-43f6-b45b-fcee2e04dc26
 ms.date: 05/03/2018
 keywords: ["IDebugClient3::GetIdentity"]
 ms.keywords: GetIdentity, GetIdentity method [Windows Debugging], GetIdentity method [Windows Debugging],IDebugClient interface, GetIdentity method [Windows Debugging],IDebugClient2 interface, GetIdentity method [Windows Debugging],IDebugClient3 interface, GetIdentity method [Windows Debugging],IDebugClient4 interface, GetIdentity method [Windows Debugging],IDebugClient5 interface, IDebugClient interface [Windows Debugging],GetIdentity method, IDebugClient2 interface [Windows Debugging],GetIdentity method, IDebugClient2::GetIdentity, IDebugClient3 interface [Windows Debugging],GetIdentity method, IDebugClient3.GetIdentity, IDebugClient3::GetIdentity, IDebugClient4 interface [Windows Debugging],GetIdentity method, IDebugClient4::GetIdentity, IDebugClient5 interface [Windows Debugging],GetIdentity method, IDebugClient5::GetIdentity, IDebugClient::GetIdentity, IDebugClient_7c54bffa-5190-49f5-919d-16bfb851ae36.xml, dbgeng/IDebugClient2::GetIdentity, dbgeng/IDebugClient3::GetIdentity, dbgeng/IDebugClient4::GetIdentity, dbgeng/IDebugClient5::GetIdentity, dbgeng/IDebugClient::GetIdentity, debugger.getidentity
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.GetIdentity
- - IDebugClient2.GetIdentity
- - IDebugClient3.GetIdentity
- - IDebugClient4.GetIdentity
- - IDebugClient5.GetIdentity
+ - IDebugClient3::GetIdentity
 ---
 
 # IDebugClient3::GetIdentity
@@ -54,19 +49,19 @@ The <b>GetIdentity</b>  method returns a string describing the computer and user
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Specifies the buffer to receive the string.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size of the buffer <i>Buffer</i>.
 
-### -param IdentitySize 
+### -param IdentitySize [out, optional]
 
-[out, optional]
+
 Receives the size of the string. If <i>IdentitySize</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -131,3 +126,4 @@ For more information about client objects, see <a href="/windows-hardware/driver
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-outputidentity">OutputIdentity</a>
+

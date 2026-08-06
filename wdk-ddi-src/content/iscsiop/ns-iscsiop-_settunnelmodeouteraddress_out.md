@@ -4,7 +4,6 @@ title: _SetTunnelModeOuterAddress_OUT (iscsiop.h)
 description: The SetTunnelModeOuterAddress_OUT structure holds the output data for the SetTunnelModeOuterAddress method.
 old-location: storage\settunnelmodeouteraddress_out.htm
 tech.root: storage
-ms.assetid: 2cfe935f-eba4-48aa-869d-6381ca038e70
 ms.date: 03/29/2018
 keywords: ["SetTunnelModeOuterAddress_OUT structure"]
 ms.keywords: "*PSetTunnelModeOuterAddress_OUT, PSetTunnelModeOuterAddress_OUT, PSetTunnelModeOuterAddress_OUT structure pointer [Storage Devices], SetTunnelModeOuterAddress_OUT, SetTunnelModeOuterAddress_OUT structure [Storage Devices], _SetTunnelModeOuterAddress_OUT, iscsiop/PSetTunnelModeOuterAddress_OUT, iscsiop/SetTunnelModeOuterAddress_OUT, storage.settunnelmodeouteraddress_out, structs-iSCSI_918f9bb3-ee9f-41d3-8e9e-c18a673a4302.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsiop.h
 api_name:
+ - _SetTunnelModeOuterAddress_OUT
+ - PSetTunnelModeOuterAddress_OUT
  - SetTunnelModeOuterAddress_OUT
 ---
 
@@ -73,3 +74,4 @@ You must implement this method.
 
 
 <a href="/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_settunnelmodeouteraddress_in">SetTunnelModeOuterAddress_IN</a>
+

@@ -4,7 +4,6 @@ title: _BDA_FILTER_TEMPLATE (bdasup.h)
 description: The BDA_FILTER_TEMPLATE structure describes the template topology for a BDA filter.
 old-location: stream\bda_filter_template.htm
 tech.root: stream
-ms.assetid: 93078225-3487-46db-b13e-e2013be86d97
 ms.date: 04/23/2018
 keywords: ["BDA_FILTER_TEMPLATE structure"]
 ms.keywords: "*PBDA_FILTER_TEMPLATE, BDA_FILTER_TEMPLATE, BDA_FILTER_TEMPLATE structure [Streaming Media Devices], PBDA_FILTER_TEMPLATE, PBDA_FILTER_TEMPLATE structure pointer [Streaming Media Devices], _BDA_FILTER_TEMPLATE, bdaref_cf65795d-632d-4c79-9136-95c256ae8b35.xml, bdasup/BDA_FILTER_TEMPLATE, bdasup/PBDA_FILTER_TEMPLATE, stream.bda_filter_template"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - bdasup.h
 api_name:
+ - _BDA_FILTER_TEMPLATE
+ - PBDA_FILTER_TEMPLATE
  - BDA_FILTER_TEMPLATE
 ---
 
@@ -81,3 +82,4 @@ Array of BDA_PIN_PAIRING structures that describe the topology between a pair of
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter_descriptor">KSFILTER_DESCRIPTOR</a>
+

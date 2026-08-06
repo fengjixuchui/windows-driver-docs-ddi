@@ -4,7 +4,6 @@ title: NDIS_WDI_TX_INJECT_FRAME_IND (dot11wdi.h)
 description: The NdisWdiTxInjectFrameIndication callback function allows the LE to inject frames through the regular datapath (for example, authentication/association requests/responses, Wi-Fi Direct action frames).
 old-location: netvista\ndiswditxinjectframeindication.htm
 tech.root: netvista
-ms.assetid: C384FAFF-E22D-4FA2-8B11-F6C046003C70
 ms.date: 05/02/2018
 keywords: ["NDIS_WDI_TX_INJECT_FRAME_IND callback function"]
 ms.keywords: NDIS_WDI_TX_INJECT_FRAME_IND, NDIS_WDI_TX_INJECT_FRAME_IND callback, NdisWdiTxInjectFrameIndication, NdisWdiTxInjectFrameIndication callback function [Network Drivers Starting with Windows Vista], dot11wdi/NdisWdiTxInjectFrameIndication, netvista.ndiswditxinjectframeindication
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
- - NdisWdiTxInjectFrameIndication
+ - NDIS_WDI_TX_INJECT_FRAME_IND
 ---
 
 # NDIS_WDI_TX_INJECT_FRAME_IND callback function
@@ -46,55 +45,58 @@ api_name:
 
 ## -description
 
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
+
 The NdisWdiTxInjectFrameIndication callback function allows the LE to inject frames through the regular datapath (for example, authentication/association requests/responses, Wi-Fi Direct action frames).
 
 This is a callback inside <a href="/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_ndis_wdi_data_api">NDIS_WDI_DATA_API</a>.
 
 ## -parameters
 
-### -param NdisMiniportDataPathHandle 
+### -param NdisMiniportDataPathHandle [in]
 
-[in]
+
 The NdisMiniportDataPathHandle passed to the IHV miniport in <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tal_txrx_initialize">MiniportWdiTalTxRxInitialize</a>.
 
-### -param PortId 
+### -param PortId [in]
 
-[in]
+
 The port ID.
 
-### -param PeerId 
+### -param PeerId [in]
 
-[in]
+
 The peer ID. When <b>TargetPriorityQueueing</b> is true, this must be set to the wildcard value.
 
-### -param ExTid 
+### -param ExTid [in]
 
-[in]
+
 The extended TID.
 
-### -param pNBL 
+### -param pNBL [in]
 
-[in]
-Pointer to a <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> chain.
 
-### -param bIsUnicast 
+Pointer to a <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> chain.
 
-[in]
+### -param bIsUnicast [in]
+
+
 Specifies if the frames are to a unicast receiver address.
 
-### -param bUseLegacyRates 
+### -param bUseLegacyRates [in]
 
-[in]
+
 Specifies if legacy rates should be used to send the frames.
 
-### -param Ethertype 
+### -param Ethertype [in]
 
-[in]
+
 Specifies the Ethertype of the frames.
 
-### -param ExemptionAction 
+### -param ExemptionAction [in]
 
-[in]
+
 Specifies the ExemptionAction of the frames.
 
 ## -see-also
@@ -103,7 +105,7 @@ Specifies the ExemptionAction of the frames.
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 
@@ -120,3 +122,4 @@ Specifies the ExemptionAction of the frames.
 
 
 <a href="/windows-hardware/drivers/network/wdi-port-id">WDI_PORT_ID</a>
+

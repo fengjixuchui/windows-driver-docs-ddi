@@ -3,7 +3,6 @@ UID: NS:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC
 title: D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC (d3d10umddi.h)
 description: Describes a video stream for a video processor.
 old-location: display\d3d11_1ddi_video_processor_content_desc.htm
-ms.assetid: f624ffc4-3313-46a3-9231-15a54c3f2791
 ms.date: 05/10/2018
 keywords: ["D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC structure"]
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC, D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC structure [Display Devices], d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC, display.d3d11_1ddi_video_processor_content_desc
@@ -43,7 +42,6 @@ api_name:
 
 # D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC structure
 
-
 ## -description
 
 Describes a video stream for a video processor.
@@ -52,11 +50,11 @@ Describes a video stream for a video processor.
 
 ### -field InputFrameFormat
 
-A member of the <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d11_1ddi_video_frame_format">D3D11_1DDI_VIDEO_FRAME_FORMAT</a> enumeration that describes how the video stream is interlaced.
+A member of the [**D3D11_1DDI_VIDEO_FRAME_FORMAT**](ne-d3d10umddi-d3d11_1ddi_video_frame_format.md) enumeration that describes how the video stream is interlaced.
 
 ### -field InputFrameRate
 
-The frame rate of the input video stream, specified as a <a href="https://msdn.microsoft.com/0a878d11-dc90-4cad-bde5-54a135e53a86">DXGI_RATIONAL</a> structure.
+The frame rate of the input video stream, specified as a [**DXGI_RATIONAL**](/windows/win32/api/dxgicommon/ns-dxgicommon-dxgi_rational) structure.
 
 ### -field InputWidth
 
@@ -68,7 +66,7 @@ The height of the input frames, in pixels.
 
 ### -field OutputFrameRate
 
-The frame rate of the output video stream, specified as a <a href="https://msdn.microsoft.com/0a878d11-dc90-4cad-bde5-54a135e53a86">DXGI_RATIONAL</a> structure.
+The frame rate of the output video stream, specified as a [**DXGI_RATIONAL**](/windows/win32/api/dxgicommon/ns-dxgicommon-dxgi_rational) structure.
 
 ### -field OutputWidth
 
@@ -80,16 +78,12 @@ The height of the output frames, in pixels.
 
 ### -field Usage
 
-A member of the <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d11_1ddi_video_usage">D3D11_1DDI_VIDEO_USAGE</a> enumeration that describes how the video processor will be used. The value indicates the desired trade-off between speed and video quality. The driver uses this flag as a hint when it creates the video processor.
+A member of the [**D3D11_1DDI_VIDEO_USAGE**](ne-d3d10umddi-d3d11_1ddi_video_usage.md) enumeration that describes how the video processor will be used. The value indicates the desired trade-off between speed and video quality. The driver uses this flag as a hint when it creates the video processor.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d11_1ddi_video_frame_format">D3D11_1DDI_VIDEO_FRAME_FORMAT</a>
+[**D3D11_1DDI_VIDEO_FRAME_FORMAT**](ne-d3d10umddi-d3d11_1ddi_video_frame_format.md)
 
+[**D3D11_1DDI_VIDEO_USAGE**](ne-d3d10umddi-d3d11_1ddi_video_usage.md)
 
-
-<a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d11_1ddi_video_usage">D3D11_1DDI_VIDEO_USAGE</a>
-
-
-
-<a href="https://msdn.microsoft.com/0a878d11-dc90-4cad-bde5-54a135e53a86">DXGI_RATIONAL</a>
+[**DXGI_RATIONAL**](/windows/win32/api/dxgicommon/ns-dxgicommon-dxgi_rational)

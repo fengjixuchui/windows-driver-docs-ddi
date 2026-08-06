@@ -1,9 +1,8 @@
 ---
 UID: NE:ntddstor._STORAGE_SET_TYPE
 title: STORAGE_SET_TYPE
-description: 
+description: "Learn more about: STORAGE_SET_TYPE enumeration"
 tech.root: storage
-ms.assetid: 0567d57c-b136-48f4-9f70-b076b6625b7d
 ms.date: 03/21/2019
 keywords: ["STORAGE_SET_TYPE enumeration"]
 ms.keywords: STORAGE_SET_TYPE, STORAGE_SET_TYPE, *PSTORAGE_SET_TYPE, STORAGE_PROPERTY_SET, IOCTL_STORAGE_SET_PROPERTY
@@ -33,9 +32,9 @@ api_type:
 api_location:
  - ntddstor.h
 api_name:
+ - _STORAGE_SET_TYPE
+ - PSTORAGE_SET_TYPE
  - STORAGE_SET_TYPE
-product:
- - Windows
 ---
 
 # STORAGE_SET_TYPE enumeration

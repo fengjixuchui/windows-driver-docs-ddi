@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_QUERYFSEBLOCK
 title: PFND3DKMT_QUERYFSEBLOCK (d3dkmthk.h)
 description: The PFND3DKMT_QUERYFSEBLOCK callback function queries FSE blocks.
-ms.assetid: 699577c3-0e0d-4518-88e7-40a6992a41ce
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_QUERYFSEBLOCK callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The PFND3DKMT_QUERYFSEBLOCK callback function queries FSE blocks.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_QUERYFSEBLOCK](ns-d3dkmthk-_d3dkmt_queryfseblock.md) structure.
 

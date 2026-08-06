@@ -4,7 +4,6 @@ title: _D3DDDICB_GETMULTISAMPLEMETHODLIST (d3dumddi.h)
 description: The D3DDDICB_GETMULTISAMPLEMETHODLIST structure describes parameters to retrieve the list of multiple-sample methods for an allocation.
 old-location: display\d3dddicb_getmultisamplemethodlist.htm
 tech.root: display
-ms.assetid: 07cabd0e-5b5c-42ff-9b2a-57bec527d690
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_GETMULTISAMPLEMETHODLIST structure"]
 ms.keywords: D3DDDICB_GETMULTISAMPLEMETHODLIST, D3DDDICB_GETMULTISAMPLEMETHODLIST structure [Display Devices], D3D_param_Structs_11da91d5-a4e6-4d24-b2b1-3645003ff25e.xml, _D3DDDICB_GETMULTISAMPLEMETHODLIST, d3dumddi/D3DDDICB_GETMULTISAMPLEMETHODLIST, display.d3dddicb_getmultisamplemethodlist
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDICB_GETMULTISAMPLEMETHODLIST
  - D3DDDICB_GETMULTISAMPLEMETHODLIST
 ---
 
@@ -52,29 +52,29 @@ The D3DDDICB_GETMULTISAMPLEMETHODLIST structure describes parameters to retrieve
 
 ## -struct-fields
 
-### -field VidPnSourceId
+### -field VidPnSourceId [in]
 
-[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the allocation is on.
+The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the allocation is on.
 
-### -field Width
+### -field Width [in]
 
-[in] The width of the allocation, in pixels.
+The width of the allocation, in pixels.
 
-### -field Height
+### -field Height [in]
 
-[in] The height of the allocation, in pixels.
+The height of the allocation, in pixels.
 
-### -field Format
+### -field Format [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the allocation.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the allocation.
 
-### -field pMethodList
+### -field pMethodList [out]
 
-[out] An array of <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_multisamplingmethod">D3DDDI_MULTISAMPLINGMETHOD</a> structures that describe the list of multiple-sampling methods that are used for the allocation or <b>NULL</b>.
+An array of <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_multisamplingmethod">D3DDDI_MULTISAMPLINGMETHOD</a> structures that describe the list of multiple-sampling methods that are used for the allocation or <b>NULL</b>.
 
-### -field MethodCount
+### -field MethodCount [in/out]
 
-[in/out] On input, the number of elements that the buffer at <b>pMethodList</b> can hold. On output, this member specifies the required number of elements that the buffer at <b>pMethodList</b> should hold.
+On input, the number of elements that the buffer at <b>pMethodList</b> can hold. On output, this member specifies the required number of elements that the buffer at <b>pMethodList</b> should hold.
 
 ## -remarks
 
@@ -91,3 +91,4 @@ If the runtime returns a non-<b>NULL</b> value in the <b>pMethodList</b> member,
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getmultisamplemethodlistcb">pfnGetMultisampleMethodListCb</a>
+

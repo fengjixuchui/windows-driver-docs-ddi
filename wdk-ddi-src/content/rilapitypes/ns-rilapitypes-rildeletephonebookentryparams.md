@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILDELETEPHONEBOOKENTRYPARAMS
 title: RILDELETEPHONEBOOKENTRYPARAMS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILDELETEPHONEBOOKENTRYPARAMS structure for internal use only."
 old-location: netvista\rildeletephonebookentryparams.htm
 tech.root: netvista
-ms.assetid: 1a372468-2bad-44d4-a19a-d3b517b7ed7b
 ms.date: 05/02/2018
 keywords: ["RILDELETEPHONEBOOKENTRYPARAMS structure"]
 ms.keywords: "*LPRILDELETEPHONEBOOKENTRYPARAMS, RILDELETEPHONEBOOKENTRYPARAMS, RILDELETEPHONEBOOKENTRYPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rildeletephonebookentryparams, ntddrilapitypes/RILDELETEPHONEBOOKENTRYPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILDELETEPHONEBOOKENTRYPARAMS
+ - LPRILDELETEPHONEBOOKENTRYPARAMS
 ---
 
 # RILDELETEPHONEBOOKENTRYPARAMS structure (rilapitypes.h)

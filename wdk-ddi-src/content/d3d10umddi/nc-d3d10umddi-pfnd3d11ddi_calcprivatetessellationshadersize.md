@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_CALCPRIVATETESSELLATIONSHADERSIZE
 title: PFND3D11DDI_CALCPRIVATETESSELLATIONSHADERSIZE (d3d10umddi.h)
 description: The CalcPrivateTessellationShaderSize function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for a hull or domain shader.
 old-location: display\calcprivatetessellationshadersize.htm
-ms.assetid: 604d7475-4696-429e-a645-781931509bb6
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_CALCPRIVATETESSELLATIONSHADERSIZE callback function"]
 ms.keywords: CalcPrivateTessellationShaderSize, CalcPrivateTessellationShaderSize callback function [Display Devices], PFND3D11DDI_CALCPRIVATETESSELLATIONSHADERSIZE, PFND3D11DDI_CALCPRIVATETESSELLATIONSHADERSIZE callback, UserModeDisplayDriverDx11_Functions_a669f28f-b275-4265-b6ae-5c3526d81b46.xml, d3d10umddi/CalcPrivateTessellationShaderSize, display.calcprivatetessellationshadersize
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CalcPrivateTessellationShaderSize
-product:
- - Windows
+ - PFND3D11DDI_CALCPRIVATETESSELLATIONSHADERSIZE
 ---
 
 # PFND3D11DDI_CALCPRIVATETESSELLATIONSHADERSIZE callback function
@@ -52,7 +49,7 @@ The <b>CalcPrivateTessellationShaderSize</b> function determines the size of the
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
@@ -60,7 +57,7 @@ A handle to the display device (graphics context).
 
 ### -param pShaderCode
 
-### -param Arg3
+### -param unnamedParam3
 
 *pCode* [in]
 
@@ -85,3 +82,4 @@ The Direct3D runtime calls the driver's <b>CalcPrivateTessellationShaderSize</b>
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11ddi_devicefuncs">D3D11DDI_DEVICEFUNCS</a>
+

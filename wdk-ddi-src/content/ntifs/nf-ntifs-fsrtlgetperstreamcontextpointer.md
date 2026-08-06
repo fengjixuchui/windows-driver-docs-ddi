@@ -4,14 +4,13 @@ title: FsRtlGetPerStreamContextPointer macro (ntifs.h)
 description: The FsRtlGetPerStreamContextPointer macro returns the file system's stream context for a file stream.
 old-location: ifsk\fsrtlgetperstreamcontextpointer.htm
 tech.root: ifsk
-ms.assetid: f3f9294a-23c0-450a-ae29-22add8176540
 ms.date: 04/16/2018
 keywords: ["FsRtlGetPerStreamContextPointer macro"]
 ms.keywords: FsRtlGetPerStreamContextPointer, FsRtlGetPerStreamContextPointer function [Installable File System Drivers], fsrtlref_c7e152d7-1815-435e-852a-975962e355a6.xml, ifsk.fsrtlgetperstreamcontextpointer, ntifs/FsRtlGetPerStreamContextPointer
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Desktop
-req.target-min-winverclnt: The FsRtlGetPerStreamContextPointer macro is available on Microsoft Windows XP and later, and on the Update Rollup for Windows 2000 Service Pack 4 (SP4).
+req.target-min-winverclnt: Windows XP; Windows 2000 SP4 Update Rollup
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -94,4 +93,4 @@ For more information, see <a href="/windows-hardware/drivers/ifs/tracking-per-st
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547295">FsRtlTeardownPerStreamContexts</a>
+<a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlteardownperstreamcontexts">FsRtlTeardownPerStreamContexts</a>

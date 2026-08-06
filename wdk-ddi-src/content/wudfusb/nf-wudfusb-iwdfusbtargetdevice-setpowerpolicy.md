@@ -4,7 +4,6 @@ title: IWDFUsbTargetDevice::SetPowerPolicy (wudfusb.h)
 description: The SetPowerPolicy method sets the WinUsb power policy.
 old-location: wdf\iwdfusbtargetdevice_setpowerpolicy.htm
 tech.root: wdf
-ms.assetid: e1b31df0-d383-43a3-bf9f-8874689cbf58
 ms.date: 02/26/2018
 keywords: ["IWDFUsbTargetDevice::SetPowerPolicy"]
 ms.keywords: IWDFUsbTargetDevice interface,SetPowerPolicy method, IWDFUsbTargetDevice.SetPowerPolicy, IWDFUsbTargetDevice::SetPowerPolicy, SetPowerPolicy, SetPowerPolicy method, SetPowerPolicy method,IWDFUsbTargetDevice interface, UMDFUSBref_fb6e31cc-0db6-4733-baea-d73514fb5160.xml, umdf.iwdfusbtargetdevice_setpowerpolicy, wdf.iwdfusbtargetdevice_setpowerpolicy, wudfusb/IWDFUsbTargetDevice::SetPowerPolicy
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFUsbTargetDevice.SetPowerPolicy
+ - IWDFUsbTargetDevice::SetPowerPolicy
 ---
 
 # IWDFUsbTargetDevice::SetPowerPolicy
@@ -52,19 +51,19 @@ The <b>SetPowerPolicy</b> method sets the WinUsb power policy.
 
 ## -parameters
 
-### -param PolicyType 
+### -param PolicyType [in]
 
-[in]
+
 The type of WinUsb power policy that the UMDF driver sets.
 
-### -param ValueLength 
+### -param ValueLength [in]
 
-[in]
+
 The size, in bytes, of the buffer that <b>SetPowerPolicy</b> supplies in <i>Value</i>.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 A pointer to the buffer that contains the WinUsb power policy.
 
 ## -returns
@@ -134,3 +133,4 @@ The <b>SetPowerPolicy</b> method generates a UMDF request and synchronously send
 
 
 <a href="/windows/win32/api/winusb/nf-winusb-winusb_setpowerpolicy">WinUsb_SetPowerPolicy</a>
+

@@ -4,7 +4,6 @@ title: PFND3DDDI_UPDATEOVERLAYCB (d3dumddi.h)
 description: The pfnUpdateOverlayCb function modifies a kernel-mode overlay object.
 old-location: display\pfnupdateoverlaycb.htm
 tech.root: display
-ms.assetid: 17f89cea-350c-43f6-a60d-32fc2d299dd7
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_UPDATEOVERLAYCB callback function"]
 ms.keywords: D3Druntime_Functions_9a6ce628-61ad-4c22-9fa7-aa2c83e680b6.xml, PFND3DDDI_UPDATEOVERLAYCB, PFND3DDDI_UPDATEOVERLAYCB callback, d3dumddi/pfnUpdateOverlayCb, display.pfnupdateoverlaycb, pfnUpdateOverlayCb, pfnUpdateOverlayCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnUpdateOverlayCb
-product:
- - Windows
+ - PFND3DDDI_UPDATEOVERLAYCB
 ---
 
 # PFND3DDDI_UPDATEOVERLAYCB callback function
@@ -56,7 +53,7 @@ The <b>pfnUpdateOverlayCb</b> function modifies a kernel-mode overlay object.
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -83,3 +80,4 @@ This function might also return other HRESULT values.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicecallbacks">D3DDDI_DEVICECALLBACKS</a>
+

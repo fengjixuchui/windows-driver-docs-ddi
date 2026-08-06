@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.PoSetPowerState
 title: PoSetPowerState function (wdm.h)
-description: The PoSetPowerState routine notifies the system of a change in the device power state for a device.
+description: The PoSetPowerState routine in wdm.h notifies the system of a change in the device power state for a device.
 old-location: kernel\posetpowerstate.htm
 tech.root: kernel
-ms.assetid: 9fff319e-0428-4185-a792-d3842ab9feb8
 ms.date: 04/30/2018
 keywords: ["PoSetPowerState function"]
 ms.keywords: PoSetPowerState, PoSetPowerState routine [Kernel-Mode Driver Architecture], kernel.posetpowerstate, portn_b6d6559d-e4c7-4fa8-b0f2-556b840391f9.xml, wdm/PoSetPowerState
@@ -50,19 +49,19 @@ The <b>PoSetPowerState</b> routine notifies the system of a change in the <a hre
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 A pointer to the target <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a>.
 
-### -param Type 
+### -param Type [in]
 
-[in]
+
 Indicates a <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_power_state_type">POWER_STATE_TYPE</a> value. Drivers must specify <b>DevicePowerState</b>.
 
-### -param State 
+### -param State [in]
 
-[in]
+
 Specifies the power state to be set. Drivers must specify a <a href="/windows-hardware/drivers/ddi/wudfddi/ne-wudfddi-_device_power_state">DEVICE_POWER_STATE</a> value.
 
 ## -returns

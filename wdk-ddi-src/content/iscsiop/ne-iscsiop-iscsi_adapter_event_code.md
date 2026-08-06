@@ -1,10 +1,9 @@
 ---
-UID: NE:iscsiop.__unnamed_enum_1
+UID: NE:iscsiop.ISCSI_ADAPTER_EVENT_CODE
 title: ISCSI_ADAPTER_EVENT_CODE (iscsiop.h)
 description: The ISCSI_ADAPTER_EVENT_CODE enumeration indicates the type of adapter event.
 old-location: storage\iscsi_adapter_event_code.htm
 tech.root: storage
-ms.assetid: 65fa2307-8d71-4c83-86b3-a965bd7f3da8
 ms.date: 03/29/2018
 keywords: ["ISCSI_ADAPTER_EVENT_CODE enumeration"]
 ms.keywords: "*PISCSI_ADAPTER_EVENT_CODE, ISCSI_ADAPTER_EVENT_CODE, ISCSI_ADAPTER_EVENT_CODE enumeration [Storage Devices], ISCSI_ADAPTER_TARGETS_CHANGED, PISCSI_ADAPTER_EVENT_CODE, PISCSI_ADAPTER_EVENT_CODE enumeration pointer [Storage Devices], iscsiop/ISCSI_ADAPTER_EVENT_CODE, iscsiop/ISCSI_ADAPTER_TARGETS_CHANGED, iscsiop/PISCSI_ADAPTER_EVENT_CODE, storage.iscsi_adapter_event_code, structs-iSCSI_68c678d4-b753-45f9-96ff-e811e8c374f7.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - iscsiop.h
 api_name:
+ - PISCSI_ADAPTER_EVENT_CODE
  - ISCSI_ADAPTER_EVENT_CODE
 ---
 
@@ -59,3 +59,4 @@ An adapter discovered that its list of targets changed.
 ## -see-also
 
 <a href="/windows-hardware/drivers/storage/msiscsi-adapterevent-wmi-class">MSiSCSI_AdapterEvent WMI Class</a>
+

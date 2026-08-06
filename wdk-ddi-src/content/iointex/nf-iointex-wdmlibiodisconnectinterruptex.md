@@ -4,7 +4,6 @@ title: WdmlibIoDisconnectInterruptEx function (iointex.h)
 description: The WdmlibIoDisconnectInterruptEx function unregisters an interrupt service routine (ISR) that was registered by a previous call to the WdmlibIoConnectInterruptEx function.
 old-location: kernel\wdmlibiodisconnectinterruptex.htm
 tech.root: kernel
-ms.assetid: B6F8663C-3A13-45DA-80FE-CC8B9194D083
 ms.date: 04/30/2018
 keywords: ["WdmlibIoDisconnectInterruptEx function"]
 ms.keywords: IoDisconnectInterruptEx, WdmlibIoDisconnectInterruptEx, WdmlibIoDisconnectInterruptEx function [Kernel-Mode Driver Architecture], iointex/IoDisconnectInterruptEx, iointex/WdmlibIoDisconnectInterruptEx, kernel.wdmlibiodisconnectinterruptex
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - WdmlibIoDisconnectInterruptEx
- - IoDisconnectInterruptEx
 ---
 
 # WdmlibIoDisconnectInterruptEx function
@@ -51,9 +49,9 @@ The  <b>WdmlibIoDisconnectInterruptEx</b> function unregisters an interrupt serv
 
 ## -parameters
 
-### -param Parameters 
+### -param Parameters [in, out]
 
-[in, out]
+
 Pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_disconnect_interrupt_parameters">IO_DISCONNECT_INTERRUPT_PARAMETERS</a> structure that contains the connection context for  the interrupt being disconnected.
 
 ## -returns
@@ -71,3 +69,4 @@ The driver should configure the device to issue interrupts only when these inter
 
 
 <a href="/windows-hardware/drivers/ddi/iointex/nf-iointex-wdmlibioconnectinterruptex">WdmlibIoConnectInterruptEx</a>
+

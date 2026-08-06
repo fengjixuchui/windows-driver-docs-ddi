@@ -3,11 +3,8 @@ UID: NC:d3d10umddi.PFND3DWDDM2_6DDI_PREPARE_SCANOUT_TRANSFORMATION
 title: PFND3DWDDM2_6DDI_PREPARE_SCANOUT_TRANSFORMATION
 description: Invokes the driver to schedule work to perform the necessary transformations from the input resource, to the "shadow" allocation which will actually be scanned out.
 tech.root: display
-ms.assetid: 84b01acb-e1cb-4ed4-b82c-5dfc427ac05d
 ms.date: 04/04/2019
 keywords: ["PFND3DWDDM2_6DDI_PREPARE_SCANOUT_TRANSFORMATION callback function"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: d3d10umddi.h
 req.include-header: 
 req.target-type: 
@@ -38,8 +35,6 @@ api_location:
  - d3d10umddi.h
 api_name:
  - PFND3DWDDM2_6DDI_PREPARE_SCANOUT_TRANSFORMATION
-product:
- - Windows
 ---
 
 # PFND3DWDDM2_6DDI_PREPARE_SCANOUT_TRANSFORMATION callback function
@@ -51,13 +46,13 @@ Invokes the driver to schedule work to perform the necessary transformations fro
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the device.
 
-### -param Arg2
+### -param unnamedParam2
 
 *hResource* [in]
 

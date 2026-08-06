@@ -4,7 +4,6 @@ title: _NDIS_WMI_SET_HEADER (ntddndis.h)
 description: The NDIS_WMI_SET_HEADER structure provides information about a GUID set request from WMI clients.
 old-location: netvista\ndis_wmi_set_header.htm
 tech.root: netvista
-ms.assetid: ea6f37e0-a46f-41d9-84f2-624f5727863a
 ms.date: 05/02/2018
 keywords: ["NDIS_WMI_SET_HEADER structure"]
 ms.keywords: "*PNDIS_WMI_SET_HEADER, NDIS_WMI_SET_HEADER, NDIS_WMI_SET_HEADER structure [Network Drivers Starting with Windows Vista], PNDIS_WMI_SET_HEADER, PNDIS_WMI_SET_HEADER structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WMI_SET_HEADER, ndis_wmi_ref_c7789da2-ca0f-48e3-8000-8abff7fe866e.xml, netvista.ndis_wmi_set_header, ntddndis/NDIS_WMI_SET_HEADER, ntddndis/PNDIS_WMI_SET_HEADER"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_WMI_SET_HEADER
+ - PNDIS_WMI_SET_HEADER
  - NDIS_WMI_SET_HEADER
 ---
 
@@ -58,7 +59,7 @@ The NDIS_WMI_SET_HEADER structure provides information about a GUID set request 
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for this
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for this
      NDIS_WMI_SET_HEADER structure. Set the 
      <b>Type</b> member of NDIS_OBJECT_HEADER to NDIS_WMI_OBJECT_TYPE_SET, the 
      <b>Revision</b> member to NDIS_WMI_SET_HEADER_REVISION_1, and the 
@@ -96,7 +97,7 @@ NDIS or overlying drivers can also use the
      <b>RequestId</b> is zero, the miniport driver can ignore this member.
 
 For more information about this member, see 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>.
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>.
 
 ### -field Timeout
 
@@ -104,7 +105,7 @@ A time-out, in seconds, for the request. NDIS can reset the driver or cancel the
       time-out expires before the driver completes the request.
 
 For more information about this member, see 
-      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>.
+      <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>.
 
 ### -field Padding
 
@@ -127,4 +128,5 @@ WMI GUID set requests that are specific to NDIS 6.0 and later versions include a
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
+

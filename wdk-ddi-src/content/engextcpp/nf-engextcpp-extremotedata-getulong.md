@@ -4,7 +4,6 @@ title: ExtRemoteData::GetUlong (engextcpp.h)
 description: The GetUlong method returns a ULONG version of the ExtRemoteData object, which represents the contents of the target's memory.
 old-location: debugger\extremotedata_getulong.htm
 tech.root: debugger
-ms.assetid: ce25b52e-5ac7-470d-902b-f45350718dff
 ms.date: 05/03/2018
 keywords: ["ExtRemoteData::GetUlong"]
 ms.keywords: EngExtCpp_Ref_41a112c3-0350-4e54-981c-b5c11697ef2d.xml, ExtRemoteData class [Windows Debugging],GetUlong method, ExtRemoteData.GetUlong, ExtRemoteData::GetUlong, GetUlong, GetUlong method [Windows Debugging], GetUlong method [Windows Debugging],ExtRemoteData class, debugger.extremotedata_getulong
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteData.GetUlong
+ - ExtRemoteData::GetUlong
 ---
 
 # ExtRemoteData::GetUlong
@@ -71,3 +70,4 @@ The size of the memory represented by the <a href="/windows-hardware/drivers/ddi
 
 
 <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotedata-getulong">ExtRemoteData::GetUlong</a>
+

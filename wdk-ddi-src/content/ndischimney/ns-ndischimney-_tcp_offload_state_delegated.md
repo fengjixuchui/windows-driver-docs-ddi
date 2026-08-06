@@ -4,7 +4,6 @@ title: _TCP_OFFLOAD_STATE_DELEGATED (ndischimney.h)
 description: The TCP_OFFLOAD_STATE_DELEGATED structure contains the delegated variables of a TCP connection state object.
 old-location: netvista\tcp_offload_state_delegated.htm
 tech.root: netvista
-ms.assetid: ab16cfa1-24f6-434a-a687-07e19172f185
 ms.date: 05/02/2018
 keywords: ["TCP_OFFLOAD_STATE_DELEGATED structure"]
 ms.keywords: "*PTCP_OFFLOAD_STATE_DELEGATED, PTCP_OFFLOAD_STATE_DELEGATED, PTCP_OFFLOAD_STATE_DELEGATED structure pointer [Network Drivers Starting with Windows Vista], TCP_OFFLOAD_STATE_DELEGATED, TCP_OFFLOAD_STATE_DELEGATED structure [Network Drivers Starting with Windows Vista], _TCP_OFFLOAD_STATE_DELEGATED, ndischimney/PTCP_OFFLOAD_STATE_DELEGATED, ndischimney/TCP_OFFLOAD_STATE_DELEGATED, netvista.tcp_offload_state_delegated, tcp_chim_struct_e835c163-e154-4b9c-b1bb-b658376fd89d.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndischimney.h
 api_name:
+ - _TCP_OFFLOAD_STATE_DELEGATED
+ - PTCP_OFFLOAD_STATE_DELEGATED
  - TCP_OFFLOAD_STATE_DELEGATED
 ---
 
@@ -273,7 +274,7 @@ The time, in clock ticks, remaining until the next retransmit timeout (see RFC 2
 ### -field SendDataHead
 
 A pointer to a 
-       <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure. This
+       <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure. This
        NET_BUFFER_LIST structure is in the linked list that is pointed to by the 
        <b>NetBufferListChain</b> member of the 
        <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_miniport_offload_block_list">
@@ -295,7 +296,7 @@ This variable is used only in an initiate offload or terminate offload operation
 ### -field SendDataTail
 
 A pointer to a 
-       <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure. This
+       <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure. This
        NET_BUFFER_LIST structure is in the linked list that is pointed to by the NetBufferListChain member of
        the NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure that immediately precedes the
        TCP_OFFLOAD_STATE_DELEGATED structure. If the NetBufferListChain pointer is <b>NULL</b>, SendDataTail is not
@@ -375,7 +376,7 @@ The host stack provides initial values for the TCP delegated variables when it o
 When passed to an offload target, a TCP_OFFLOAD_STATE_DELEGATED structure is associated with an 
     <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_miniport_offload_block_list">
     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure, which contains a header that is formatted as an 
-    <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure. The
+    <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure. The
     Revision member of the NDIS_OBJECT_HEADER structure, in this case, specifies the revision number of the
     TCP_OFFLOAD_STATE_DELEGATED structure.
 
@@ -389,7 +390,7 @@ When passed to an offload target, a TCP_OFFLOAD_STATE_DELEGATED structure is ass
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -402,3 +403,4 @@ When passed to an offload target, a TCP_OFFLOAD_STATE_DELEGATED structure is ass
 
 
 <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_tcp_offload_state_const">TCP_OFFLOAD_STATE_CONST</a>
+

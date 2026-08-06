@@ -4,7 +4,6 @@ title: ClfsRemoveLogContainer function (wdm.h)
 description: The ClfsRemoveLogContainer routine removes a container from a CLFS log.
 old-location: kernel\clfsremovelogcontainer.htm
 tech.root: kernel
-ms.assetid: 5c49bf4f-acc6-4c0f-bbc2-bafb68ea1a74
 ms.date: 04/30/2018
 keywords: ["ClfsRemoveLogContainer function"]
 ms.keywords: ClfsRemoveLogContainer, ClfsRemoveLogContainer routine [Kernel-Mode Driver Architecture], Clfs_f797d534-9c7e-4871-81d1-aff9ccedccf5.xml, kernel.clfsremovelogcontainer, wdm/ClfsRemoveLogContainer
@@ -51,19 +50,19 @@ The <b>ClfsRemoveLogContainer</b> routine removes a container from a CLFS log.
 
 ## -parameters
 
-### -param plfoLog 
+### -param plfoLog [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">LOG_FILE_OBJECT</a> structure that represents a CLFS log from which the container will be removed. The caller previously obtained this pointer by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfscreatelogfile">ClfsCreateLogFile</a>.
 
-### -param puszContainerPath 
+### -param puszContainerPath [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that supplies the path name for the container to be removed. The path name was created in a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsaddlogcontainer">ClfsAddLogContainer</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsaddlogcontainerset">ClfsAddLogContainerSet</a>. The path can be absolute or relative to the location of the base log file for the CLFS log that is represented by <i>plfoLog</i>. Paths that are relative to the base log file must begin with CLFS_CONTAINER_RELATIVE_PREFIX, which is the string literal (L"%BLF%\\"). The directories "." and ".." are not allowed in a relative path.
 
-### -param fForce 
+### -param fForce [in]
 
-[in]
+
 A Boolean value that specifies whether the container removal is forced (<b>TRUE</b>) or lazy (<b>FALSE</b>).
 
 ## -returns

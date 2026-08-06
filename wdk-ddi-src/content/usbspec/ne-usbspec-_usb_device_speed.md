@@ -4,7 +4,6 @@ title: _USB_DEVICE_SPEED (usbspec.h)
 description: The USB_DEVICE_SPEED enumeration defines constants for USB device speeds.
 old-location: buses\usb_device_speed.htm
 tech.root: usbref
-ms.assetid: e7c50bac-96ca-446d-a865-4ad87ad5b295
 ms.date: 05/07/2018
 keywords: ["USB_DEVICE_SPEED enumeration"]
 ms.keywords: USB_DEVICE_SPEED, USB_DEVICE_SPEED enumeration [Buses], UsbFullSpeed, UsbHighSpeed, UsbLowSpeed, UsbSuperSpeed, _USB_DEVICE_SPEED, buses.usb_device_speed, usbspec/USB_DEVICE_SPEED, usbspec/UsbFullSpeed, usbspec/UsbHighSpeed, usbspec/UsbLowSpeed, usbspec/UsbSuperSpeed, usbstrct_c458b58d-fcfa-4082-bbcf-34e22d504ab9.xml
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Usbspec.h
 api_name:
+ - _USB_DEVICE_SPEED
  - USB_DEVICE_SPEED
 ---
 
@@ -71,3 +71,4 @@ Indicates a SuperSpeed USB 3.0-compliant device.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/_usbref/#enumerations">USB Constants and Enumerations</a>
+

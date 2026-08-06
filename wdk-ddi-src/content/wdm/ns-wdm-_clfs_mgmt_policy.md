@@ -4,7 +4,6 @@ title: _CLFS_MGMT_POLICY (wdm.h)
 description: The CLFS_MGMT_POLICY structure holds a description of a policy for managing a CLFS log.
 old-location: kernel\clfs_mgmt_policy.htm
 tech.root: kernel
-ms.assetid: 6765ced9-e21f-4bd9-bb2b-45df1d6dba75
 ms.date: 04/30/2018
 keywords: ["CLFS_MGMT_POLICY structure"]
 ms.keywords: "*PCLFS_MGMT_POLICY, CLFS_MGMT_POLICY, CLFS_MGMT_POLICY structure [Kernel-Mode Driver Architecture], PCLFS_MGMT_POLICY, PCLFS_MGMT_POLICY structure pointer [Kernel-Mode Driver Architecture], _CLFS_MGMT_POLICY, kernel.clfs_mgmt_policy, kstruct_a_12bfc6be-5318-49df-b74a-251c40c0b916.xml, wdm/CLFS_MGMT_POLICY, wdm/PCLFS_MGMT_POLICY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _CLFS_MGMT_POLICY
+ - PCLFS_MGMT_POLICY
  - CLFS_MGMT_POLICY
 ---
 
@@ -195,3 +196,4 @@ You can only install a policy whose policy type specified in the <b>PolicyType</
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsmgmtremovepolicy">ClfsMgmtRemovePolicy</a>
+

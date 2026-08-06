@@ -4,7 +4,6 @@ title: RxCeBuildAddress function (rxce.h)
 description: RxCeBuildAddress associates a transport address with a transport binding.
 old-location: ifsk\rxcebuildaddress.htm
 tech.root: ifsk
-ms.assetid: e8845b15-4427-45ea-9192-352d82c89c6a
 ms.date: 04/16/2018
 keywords: ["RxCeBuildAddress function"]
 ms.keywords: RxCeBuildAddress, RxCeBuildAddress function [Installable File System Drivers], ifsk.rxcebuildaddress, rxce/RxCeBuildAddress, rxref_ee32329f-3111-4ee6-869f-2b8e21d6696c.xml
@@ -50,29 +49,29 @@ api_name:
 
 ## -parameters
 
-### -param pAddress 
+### -param pAddress [in, out]
 
-[in, out]
+
 On input, this parameter contains a pointer to an uninitialized RDBSS connection engine address structure. On output when this call is successful, the data members in the RXCE_ADDRESS structure will be properly initialized.
 
-### -param pTransport 
+### -param pTransport [in]
 
-[in]
+
 A pointer to the transport with which this address is to be associated.
 
-### -param pTransportAddress 
+### -param pTransportAddress [in]
 
-[in]
+
 A pointer to the transport address to be associated with the binding.
 
-### -param pHandler 
+### -param pHandler [in]
 
-[in]
+
 A pointer to the event handler associated with the registration.
 
-### -param pEventContext 
+### -param pEventContext [in]
 
-[in]
+
 A pointer to the context parameter to be passed back to the event handler.
 
 ## -returns

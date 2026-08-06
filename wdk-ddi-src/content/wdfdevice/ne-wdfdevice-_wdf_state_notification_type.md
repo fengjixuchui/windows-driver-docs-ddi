@@ -4,7 +4,6 @@ title: _WDF_STATE_NOTIFICATION_TYPE (wdfdevice.h)
 description: The WDF_STATE_NOTIFICATION_TYPE enumeration identifies the type of Plug and Play, power, or power policy notification that a framework-based driver will receive.
 old-location: wdf\wdf_state_notification_type.htm
 tech.root: wdf
-ms.assetid: fc44c970-482c-4fbf-a149-e6b732f6c9d8
 ms.date: 02/26/2018
 keywords: ["WDF_STATE_NOTIFICATION_TYPE enumeration"]
 ms.keywords: DFDeviceObjectGeneralRef_c1bdabfc-dd89-4eeb-b5ba-9f03a65414c5.xml, StateNotificationAllStates, StateNotificationEnterState, StateNotificationInvalid, StateNotificationLeaveState, StateNotificationPostProcessState, WDF_STATE_NOTIFICATION_TYPE, WDF_STATE_NOTIFICATION_TYPE enumeration, _WDF_STATE_NOTIFICATION_TYPE, kmdf.wdf_state_notification_type, wdf.wdf_state_notification_type, wdfdevice/StateNotificationAllStates, wdfdevice/StateNotificationEnterState, wdfdevice/StateNotificationInvalid, wdfdevice/StateNotificationLeaveState, wdfdevice/StateNotificationPostProcessState, wdfdevice/WDF_STATE_NOTIFICATION_TYPE
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfdevice.h
 api_name:
+ - _WDF_STATE_NOTIFICATION_TYPE
  - WDF_STATE_NOTIFICATION_TYPE
 ---
 
@@ -50,27 +50,30 @@ api_name:
 
 <p class="CCE_Message">[Applies to KMDF only]</p>
 
+>[!NOTE]
+>This enumeration is for Microsoft internal use only.
+
 The <b>WDF_STATE_NOTIFICATION_TYPE</b> enumeration identifies the type of Plug and Play, power, or power policy notification that a framework-based driver will receive.
 
 ## -enum-fields
 
-### -field StateNotificationInvalid
+### -field StateNotificationInvalid:0x0000
 
 For internal use only.
 
-### -field StateNotificationEnterState
+### -field StateNotificationEnterState:0x0001
 
 The driver is notified immediately before a device's Plug and Play, power, or power policy state machine enters a specified state.
 
-### -field StateNotificationPostProcessState
+### -field StateNotificationPostProcessState:0x0002
 
 The driver is notified immediately after a device's Plug and Play, power, or power policy state machine enters a specified state.
 
-### -field StateNotificationLeaveState
+### -field StateNotificationLeaveState:0x0004
 
 The driver is notified immediately before a device's Plug and Play, power, or power policy state machine leaves a specified state.
 
-### -field StateNotificationAllStates
+### -field StateNotificationAllStates:StateNotificationEnterState | StateNotificationPostProcessState | StateNotificationLeaveState
 
 The driver receives enter-state, postprocess-state, and leave-state notifications.
 
@@ -130,3 +133,4 @@ To register for notification of a change in state, the driver can call the follo
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_notification_data">WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</a>
+

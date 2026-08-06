@@ -4,7 +4,6 @@ title: GPIO_CLIENT_RECONFIGURE_INTERRUPT (gpioclx.h)
 description: The CLIENT_ReconfigureInterrupt event callback function reconfigures a general-purpose I/O (GPIO) pin that is used as an interrupt input.
 old-location: gpio\client_reconfigureinterrupt.htm
 tech.root: GPIO
-ms.assetid: 2F654D79-7DB6-45C4-8E6D-2EBAEF2DA7F5
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_RECONFIGURE_INTERRUPT callback function"]
 ms.keywords: CLIENT_ReconfigureInterrupt, CLIENT_ReconfigureInterrupt callback, CLIENT_ReconfigureInterrupt callback function [Parallel Ports], GPIO.client_reconfigureinterrupt, GPIO_CLIENT_RECONFIGURE_INTERRUPT, gpioclx/CLIENT_ReconfigureInterrupt
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_ReconfigureInterrupt
+ - GPIO_CLIENT_RECONFIGURE_INTERRUPT
 ---
 
 # GPIO_CLIENT_RECONFIGURE_INTERRUPT callback function
@@ -50,14 +49,14 @@ The <i>CLIENT_ReconfigureInterrupt</i> event callback function reconfigures a ge
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param ReconfigureParameters 
+### -param ReconfigureParameters [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_reconfigure_interrupts_parameters">GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS</a> structure that specifies how to reconfigure the GPIO interrupt pin.
 
 ## -returns
@@ -116,3 +115,4 @@ The GPIO_CLIENT_RECONFIGURE_INTERRUPT function type is defined in the Gpioclx.h 
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_reconfigure_interrupts_parameters">GPIO_RECONFIGURE_INTERRUPTS_PARAMETERS</a>
+

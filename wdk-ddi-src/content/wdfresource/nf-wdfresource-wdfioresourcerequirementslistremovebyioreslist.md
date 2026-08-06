@@ -4,7 +4,6 @@ title: WdfIoResourceRequirementsListRemoveByIoResList function (wdfresource.h)
 description: The WdfIoResourceRequirementsListRemoveByIoResList method removes a logical configuration from a resource requirements list.
 old-location: wdf\wdfioresourcerequirementslistremovebyioreslist.htm
 tech.root: wdf
-ms.assetid: 507729e9-96da-461c-badb-a3725abf6591
 ms.date: 02/26/2018
 keywords: ["WdfIoResourceRequirementsListRemoveByIoResList function"]
 ms.keywords: DFResourceObjectRef_fa50f423-3ade-4deb-89a0-d79cd3f98710.xml, WdfIoResourceRequirementsListRemoveByIoResList, WdfIoResourceRequirementsListRemoveByIoResList method, kmdf.wdfioresourcerequirementslistremovebyioreslist, wdf.wdfioresourcerequirementslistremovebyioreslist, wdfresource/WdfIoResourceRequirementsListRemoveByIoResList
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfIoResourceRequirementsListRemoveByIoResList</b> method removes a <a hr
 
 ## -parameters
 
-### -param RequirementsList 
+### -param RequirementsList [in]
 
-[in]
+
 A handle to a framework resource-requirements-list object that represents a device's resource requirements list.
 
-### -param IoResList 
+### -param IoResList [in]
 
-[in]
+
 A handle to a framework resource-range-list object that represents the logical configuration to be removed from the resource requirements list that <i>RequirementsList</i> specifies.
 
 ## -remarks

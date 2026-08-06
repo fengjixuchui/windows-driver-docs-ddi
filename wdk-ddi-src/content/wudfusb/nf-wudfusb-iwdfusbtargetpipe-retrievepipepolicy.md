@@ -4,7 +4,6 @@ title: IWDFUsbTargetPipe::RetrievePipePolicy (wudfusb.h)
 description: The RetrievePipePolicy method retrieves a WinUsb pipe policy.
 old-location: wdf\iwdfusbtargetpipe_retrievepipepolicy.htm
 tech.root: wdf
-ms.assetid: 578f7633-307e-4cda-b8fe-ae73a095976f
 ms.date: 02/26/2018
 keywords: ["IWDFUsbTargetPipe::RetrievePipePolicy"]
 ms.keywords: IWDFUsbTargetPipe interface,RetrievePipePolicy method, IWDFUsbTargetPipe.RetrievePipePolicy, IWDFUsbTargetPipe::RetrievePipePolicy, RetrievePipePolicy, RetrievePipePolicy method, RetrievePipePolicy method,IWDFUsbTargetPipe interface, UMDFUSBref_97c7b2db-213f-4cdd-8901-547af39b087e.xml, umdf.iwdfusbtargetpipe_retrievepipepolicy, wdf.iwdfusbtargetpipe_retrievepipepolicy, wudfusb/IWDFUsbTargetPipe::RetrievePipePolicy
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFUsbTargetPipe.RetrievePipePolicy
+ - IWDFUsbTargetPipe::RetrievePipePolicy
 ---
 
 # IWDFUsbTargetPipe::RetrievePipePolicy
@@ -52,19 +51,19 @@ The <b>RetrievePipePolicy</b> method retrieves a WinUsb pipe policy.
 
 ## -parameters
 
-### -param PolicyType 
+### -param PolicyType [in]
 
-[in]
+
 The type of WinUsb pipe policy that the UMDF driver requests.
 
-### -param ValueLength 
+### -param ValueLength [in, out]
 
-[in, out]
+
 A pointer to a variable that, on input, contains the size, in bytes, of the buffer that <b>RetrievePipePolicy</b> supplies for <i>Value</i>. On output, this parameter contains the size that <b>RetrievePipePolicy</b> requires for <i>Value</i>.
 
-### -param Value 
+### -param Value [out]
 
-[out]
+
 A pointer that receives the buffer that contains the WinUsb pipe policy.
 
 ## -returns
@@ -134,3 +133,4 @@ The <b>RetrievePipePolicy</b> method generates a UMDF request and synchronously 
 
 
 <a href="/windows/win32/api/winusb/nf-winusb-winusb_getpipepolicy">WinUsb_GetPipePolicy</a>
+

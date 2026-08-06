@@ -4,7 +4,6 @@ title: IWDFDevice::RetrieveDeviceName (wudfddi.h)
 description: The RetrieveDeviceName method retrieves the name of an underlying kernel-mode device.
 old-location: wdf\iwdfdevice_retrievedevicename.htm
 tech.root: wdf
-ms.assetid: 75304f5d-8a07-4db5-9f20-5764ff5d2ef6
 ms.date: 02/26/2018
 keywords: ["IWDFDevice::RetrieveDeviceName"]
 ms.keywords: IWDFDevice interface,RetrieveDeviceName method, IWDFDevice.RetrieveDeviceName, IWDFDevice::RetrieveDeviceName, RetrieveDeviceName, RetrieveDeviceName method, RetrieveDeviceName method,IWDFDevice interface, UMDFDeviceObjectRef_6d24ee3e-719a-4408-90ea-89cc9315b8cb.xml, umdf.iwdfdevice_retrievedevicename, wdf.iwdfdevice_retrievedevicename, wudfddi/IWDFDevice::RetrieveDeviceName
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice.RetrieveDeviceName
+ - IWDFDevice::RetrieveDeviceName
 ---
 
 # IWDFDevice::RetrieveDeviceName
@@ -52,14 +51,14 @@ The <b>RetrieveDeviceName</b> method retrieves the name of an underlying kernel-
 
 ## -parameters
 
-### -param pDeviceName 
+### -param pDeviceName [out]
 
-[out]
+
 A pointer to a buffer that receives a <b>NULL</b>-terminated string that represents the name of the underlying kernel-mode device, if the buffer is non-<b>NULL</b> and <b>RetrieveDeviceName</b> is successful.
 
-### -param pdwDeviceNameLength 
+### -param pdwDeviceNameLength [in, out]
 
-[in, out]
+
 A pointer to a variable that receives the number of characters, including the <b>NULL</b> character, in the device name.
 
 If the buffer at <i>pDeviceName</i> is <b>NULL</b>, the value that the driver supplies is zero. The framework then returns the size, in characters, that is required for the device name string.
@@ -125,7 +124,7 @@ The following code example shows how to retrieve the name of an underlying kerne
                          NULL);
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice">IWDFDevice</a>
+

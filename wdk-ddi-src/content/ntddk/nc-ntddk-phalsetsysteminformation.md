@@ -2,11 +2,11 @@
 UID: NC:ntddk.pHalSetSystemInformation
 title: pHalSetSystemInformation (ntddk.h)
 description: Register MCA driver with the HAL.
-ms.assetid: fb9491a9-7fbe-4a7f-9794-06d5020540ef
-ms.date: 10/19/2018
+tech.root: kernel
+ms.date: 01/19/2023
 keywords: ["pHalSetSystemInformation callback function"]
 req.header: ntddk.h
-req.include-header: 
+req.include-header: Ntddk.h
 req.target-type: Desktop
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -36,26 +36,23 @@ api_name:
  - pHalSetSystemInformation
 ---
 
-# pHalSetSystemInformation callback function
-
-
 ## -description
 
 Register MCA driver with the HAL.
 
 ## -parameters
 
-### -param InformationClass
+### -param InformationClass [in]
 
-[in] The HalMcaRegisterDriver to register MCA driver's callback routines with the HAL. There are two callback routines: ExceptionCallback and DpcCallback. The ExceptionCallback routine is called during the Machine Check Exception (MCE) handler nonrestartable error processing, before it issues a bug check for the system. The DpcCallback routine is called when the MCA error is restartable. For Itanium systems, specify HalCmcRegisterDriver to register a driver's Corrected CPU Error DpcCallback routine, and HalCpeRegisterDriver to register a driver's Corrected Platform Error DpcCallback.
+The HalMcaRegisterDriver to register MCA driver's callback routines with the HAL. There are two callback routines: ExceptionCallback and DpcCallback. The ExceptionCallback routine is called during the Machine Check Exception (MCE) handler non-restartable error processing, before it issues a bug check for the system. The DpcCallback routine is called when the MCA error is restartable. For Itanium systems, specify HalCmcRegisterDriver to register a driver's Corrected CPU Error DpcCallback routine, and HalCpeRegisterDriver to register a driver's Corrected Platform Error DpcCallback.
 
-### -param BufferSize
+### -param BufferSize [in]
 
-[in] The size, in bytes, of the buffer that the caller supplies.
+The size, in bytes, of the buffer that the caller supplies.
 
-### -param Buffer
+### -param Buffer [out]
 
-[out] A pointer to a caller-supplied buffer of type MCA_DRIVER_INFO, which is defined as follows.
+A pointer to a caller-supplied buffer of type MCA_DRIVER_INFO, which is defined as follows.
 
 ```cpp
 typedef struct _MCA_DRIVER_INFO {
@@ -66,38 +63,22 @@ typedef struct _MCA_DRIVER_INFO {
 ```
 
 This structure contains the following members:
+
 - ExceptionCallback
+
     The driver-supplied routine to be called when Machine Check Exception (MCE) occurs for uncorrected errors. A driver explicitly cannot use any kernel services or spin lock routines. The handler is restricted to the same constraints as a driver that operates at the highest IRQL.
+
 - DpcCallback
+
     A driver-supplied routine that is called for corrected errors that caused Machine Check Exception (MCE). This routine must be called at DISPATCH_LEVEL.
+
 - DeviceContext
+
     The device-specific context for this MCA driver.
 
 ## -returns
 
 Returns STATUS_SUCCESS if the registration is successful.
-
-## -prototype
-
-```cpp
-//Declaration
-
-pHalSetSystemInformation Phalsetsysteminformation; 
-
-// Definition
-
-NTSTATUS Phalsetsysteminformation 
-(
-	HAL_SET_INFORMATION_CLASS InformationClass
-	ULONG BufferSize
-	PVOID Buffer
-)
-{...}
-
-pHalSetSystemInformation 
-
-
-```
 
 ## -remarks
 

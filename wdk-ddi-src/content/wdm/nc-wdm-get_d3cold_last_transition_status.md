@@ -4,7 +4,6 @@ title: GET_D3COLD_LAST_TRANSITION_STATUS (wdm.h)
 description: The GetLastTransitionStatus routine enables the driver for a device to query whether the most recent transition to the D3hot substate was followed by a transition to the D3cold substate.
 old-location: kernel\getlasttransitionstatus.htm
 tech.root: kernel
-ms.assetid: 2ED5A28B-8668-411D-9462-8D6ED2F08B35
 ms.date: 04/30/2018
 keywords: ["GET_D3COLD_LAST_TRANSITION_STATUS callback function"]
 ms.keywords: GET_D3COLD_LAST_TRANSITION_STATUS, GetLastTransitionStatus, GetLastTransitionStatus routine [Kernel-Mode Driver Architecture], kernel.getlasttransitionstatus, wdm/GetLastTransitionStatus
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - GetLastTransitionStatus
+ - GET_D3COLD_LAST_TRANSITION_STATUS
 ---
 
 # GET_D3COLD_LAST_TRANSITION_STATUS callback function
@@ -50,14 +49,14 @@ The <i>GetLastTransitionStatus</i> routine enables the driver for a device to qu
 
 ## -parameters
 
-### -param Context 
+### -param Context [in, optional]
 
-[in, optional]
+
 A pointer to interface-specific context information. The caller sets this parameter to the value of the <b>Context</b> member of the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_support_interface">D3COLD_SUPPORT_INTERFACE</a> structure for the interface.
 
-### -param LastTransitionStatus 
+### -param LastTransitionStatus [out]
 
-[out]
+
 A pointer to a variable into which the routine writes one of the following <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_d3cold_last_transition_status">D3COLD_LAST_TRANSITION_STATUS</a> enumeration values:
 
 <ul>
@@ -80,3 +79,4 @@ For more information, see <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_d3c
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_d3cold_support_interface">D3COLD_SUPPORT_INTERFACE</a>
+

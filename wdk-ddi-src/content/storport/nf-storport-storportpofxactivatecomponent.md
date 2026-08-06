@@ -4,7 +4,6 @@ title: StorPortPoFxActivateComponent function (storport.h)
 description: The StorPortPoFxActivateComponent routine increments the activation reference count on the specified component of a storage device.
 old-location: storage\storportpofxactivatecomponent.htm
 tech.root: storage
-ms.assetid: 23872334-F9C3-4EB5-9B26-0BDB239D8F4E
 ms.date: 03/29/2018
 keywords: ["StorPortPoFxActivateComponent function"]
 ms.keywords: StorPortPoFxActivateComponent, StorPortPoFxActivateComponent routine [Storage Devices], storage.storportpofxactivatecomponent, storport/StorPortPoFxActivateComponent
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Storport.lib
 req.dll: 
-req.irql: IRQL <= DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,29 +50,29 @@ The <b>StorPortPoFxActivateComponent</b> routine increments the activation refer
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param Address 
+### -param Address [in, optional]
 
-[in, optional]
+
 The address of a storage device unit. This parameter is <b>NULL</b> when activating a storage adapter component.
 
-### -param Srb 
+### -param Srb [in, optional]
 
-[in, optional]
+
 The SRB triggering the component activation. This parameter is <b>NULL</b> if the miniport is activating a device component for a request not sent through Storport.
 
-### -param Component 
+### -param Component [in]
 
-[in]
+
 The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="/windows-hardware/drivers/ddi/storport/ns-storport-_stor_pofx_device">STOR_POFX_DEVICE</a> structure that the miniport driver registered for the device with a call to <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitializepofxpower">StorPortInitializePoFxPower</a>. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Not used. Set to 0.
 
 ## -returns
@@ -134,7 +133,7 @@ The <i>Flags</i> parameter is nonzero.
 </dl>
 </td>
 <td width="60%">
-TThe adapter or unit does not support PoFx.
+The adapter or unit does not support PoFx.
 
 </td>
 </tr>

@@ -4,7 +4,6 @@ title: WdfDeviceConfigureRequestDispatching function (wdfdevice.h)
 description: The WdfDeviceConfigureRequestDispatching method causes the framework to queue a specified type of I/O requests to a specified I/O queue.
 old-location: wdf\wdfdeviceconfigurerequestdispatching.htm
 tech.root: wdf
-ms.assetid: aba4cccd-267d-48cc-a6ff-be19802adfdc
 ms.date: 02/26/2018
 keywords: ["WdfDeviceConfigureRequestDispatching function"]
 ms.keywords: DFDeviceObjectGeneralRef_d1874c0c-e889-4225-8bbf-e8292edcb716.xml, WdfDeviceConfigureRequestDispatching, WdfDeviceConfigureRequestDispatching method, kmdf.wdfdeviceconfigurerequestdispatching, wdf.wdfdeviceconfigurerequestdispatching, wdfdevice/WdfDeviceConfigureRequestDispatching
@@ -55,19 +54,19 @@ The <b>WdfDeviceConfigureRequestDispatching</b> method causes the framework to q
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 Supplies a handle to a framework device object.
 
-### -param Queue 
+### -param Queue [in]
 
-[in]
+
 Supplies a handle to a framework queue object.
 
-### -param RequestType 
+### -param RequestType [in]
 
-[in]
+
 Supplies a <a href="/windows-hardware/drivers/ddi/wdfrequest/ne-wdfrequest-_wdf_request_type">WDF_REQUEST_TYPE</a>-typed enumerator that identifies the type of request to be queued. The only valid enumerators are: 
 
 <b>WdfRequestTypeCreate</b>

@@ -1,31 +1,22 @@
 ---
 UID: NE:ntddk._WHEA_EVENT_LOG_ENTRY_ID
-title: WHEA_EVENT_LOG_ENTRY_ID
-description: 
-tech.root: 
-ms.assetid: 9fc3e643-2374-4bb2-addc-8824ba4ce064
-ms.date: 08/19/2019
-keywords: ["WHEA_EVENT_LOG_ENTRY_ID enumeration"]
-ms.keywords: WHEA_EVENT_LOG_ENTRY_ID, WHEA_EVENT_LOG_ENTRY_ID, *PWHEA_EVENT_LOG_ENTRY_ID,
+tech.root: whea
+title: WHEA_EVENT_LOG_ENTRY_ID (ntddk.h)
+ms.date: 02/22/2023
+targetos: Windows
+description: The WHEA_EVENT_LOG_ENTRY_ID enumeration is reserved for system use. Do not use.
+prerelease: false
+req.construct-type: enumeration
+req.ddi-compliance: 
 req.header: ntddk.h
-req.include-header: 
-req.target-type: 
+req.include-header: Ntddk.h
+req.kmdf-ver: 
+req.max-support: 
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
-req.kmdf-ver: 
+req.target-type: 
+req.typenames: 
 req.umdf-ver: 
-req.ddi-compliance: 
-req.max-support: 
-req.typenames: WHEA_EVENT_LOG_ENTRY_ID, *PWHEA_EVENT_LOG_ENTRY_ID
-targetos: Windows
-ms.custom: 19H1
-f1_keywords:
- - _WHEA_EVENT_LOG_ENTRY_ID
- - ntddk/_WHEA_EVENT_LOG_ENTRY_ID
- - PWHEA_EVENT_LOG_ENTRY_ID
- - ntddk/PWHEA_EVENT_LOG_ENTRY_ID
- - WHEA_EVENT_LOG_ENTRY_ID
- - ntddk/WHEA_EVENT_LOG_ENTRY_ID
 topic_type:
  - apiref
 api_type:
@@ -33,25 +24,31 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_EVENT_LOG_ENTRY_ID
+ - PWHEA_EVENT_LOG_ENTRY_ID
  - WHEA_EVENT_LOG_ENTRY_ID
-product:
- - Windows
+f1_keywords:
+ - _WHEA_EVENT_LOG_ENTRY_ID
+ - ntddk/_WHEA_EVENT_LOG_ENTRY_ID
+ - PWHEA_EVENT_LOG_ENTRY_ID
+ - ntddk/PWHEA_EVENT_LOG_ENTRY_ID
+ - WHEA_EVENT_LOG_ENTRY_ID
+ - ntddk/WHEA_EVENT_LOG_ENTRY_ID
+dev_langs:
+ - c++
+helpviewer_keywords:
+ - _WHEA_EVENT_LOG_ENTRY_ID
 ---
-
-# WHEA_EVENT_LOG_ENTRY_ID enumeration
-
 
 ## -description
 
-Reserved for system use.
+The **WHEA_EVENT_LOG_ENTRY_ID** enumeration is reserved for system use. Do not use.
 
 ## -enum-fields
 
-### -field WheaEventLogEntryIdCmcPollingTimeout 
+### -field WheaEventLogEntryIdCmcPollingTimeout
 
-### -field WheaEventLogEntryIdWheaInit 
-
-### -field WheaEventLogEntryIdMax 
+### -field WheaEventLogEntryIdWheaInit
 
 ### -field WheaEventLogEntryIdCmcSwitchToPolling
 
@@ -95,9 +92,21 @@ Reserved for system use.
 
 ### -field WheaEventLogEntryIdErrorRecordLimit
 
-### -field WheaEventLogEntryIdSELEventFailed
+### -field WheaEventLogEntryIdAerNotGrantedToOs
 
 ### -field WheaEventLogEntryIdErrSrcArrayInvalid
+
+### -field WheaEventLogEntryIdAcpiTimeOut
+
+### -field WheaEventLogCmciRestart
+
+### -field WheaEventLogCmciFinalRestart
+
+### -field WheaEventLogEntryEtwOverFlow
+
+### -field WheaEventLogAzccRootBusSearchErr
+
+### -field WheaEventLogAzccRootBusList
 
 ### -field WheaEventLogEntryIdErrSrcInvalid
 
@@ -107,7 +116,136 @@ Reserved for system use.
 
 ### -field WheaEventLogEntryIdSELBugCheckProgress
 
+### -field WheaEventLogEntryIdPshedPluginLoad
+
+### -field WheaEventLogEntryIdPshedPluginUnload
+
+### -field WheaEventLogEntryIdPshedPluginSupported
+
+### -field WheaEventLogEntryIdDeviceDriver
+
+### -field WheaEventLogEntryIdCmciImplPresent
+
+### -field WheaEventLogEntryIdCmciInitError
+
+### -field WheaEventLogEntryIdSELBugCheckRecovery
+
+### -field WheaEventLogEntryIdDrvErrSrcInvalid
+
+### -field WheaEventLogEntryIdDrvHandleBusy
+
+### -field WheaEventLogEntryIdWheaHeartbeat
+
+### -field WheaEventLogAzccRootBusPoisonSet
+
+### -field WheaEventLogEntryIdSELBugCheckInfo
+
+### -field WheaEventLogEntryIdErrDimmInfoMismatch
+
+### -field WheaEventLogEntryIdeDpcEnabled
+
+### -field WheaEventLogEntryPageOfflineDone
+
+### -field WheaEventLogEntryPageOfflinePendMax
+
+### -field WheaEventLogEntryIdBadPageLimitReached
+
+### -field WheaEventLogEntrySrarDetail
+
+### -field WheaEventLogEntryEarlyError
+
+### -field WheaEventLogEntryIdPcieOverrideInfo
+
+### -field WheaEventLogEntryIdReadPcieOverridesErr
+
+### -field WheaEventLogEntryIdPcieConfigInfo
+
+### -field WheaEventLogEntryIdPcieSummaryFailed
+
+### -field WheaEventLogEntryIdThrottleRegCorrupt
+
+### -field WheaEventLogEntryIdThrottleAddErrSrcFailed
+
+### -field WheaEventLogEntryIdThrottleRegDataIgnored
+
+### -field WheaEventLogEntryIdEnableKeyNotifFailed
+
+### -field WheaEventLogEntryIdKeyNotificationFailed
+
+### -field WheaEventLogEntryIdPcieRemoveDevice
+
+### -field WheaEventLogEntryIdPcieAddDevice
+
+### -field WheaEventLogEntryIdPcieSpuriousErrSource
+
+### -field WheaEventLogEntryIdMemoryAddDevice
+
+### -field WheaEventLogEntryIdMemoryRemoveDevice
+
+### -field WheaEventLogEntryIdMemorySummaryFailed
+
+### -field WheaEventLogEntryIdPcieDpcError
+
+### -field WheaEventLogEntryIdCpuBusesInitFailed
+
+### -field WheaEventLogEntryIdPshedPluginInitFailed
+
+### -field WheaEventLogEntryIdFailedAddToDefectList
+
+### -field WheaEventLogEntryIdDefectListFull
+
+### -field WheaEventLogEntryIdDefectListUEFIVarFailed
+
+### -field WheaEventLogEntryIdDefectListCorrupt
+
+### -field WheaEventLogEntryIdBadHestNotifyData
+
+### -field WheaEventLogEntryIdRowFailure
+
+### -field WheaEventLogEntryIdSrasTableNotFound
+
+### -field WheaEventLogEntryIdSrasTableError
+
+### -field WheaEventLogEntryIdSrasTableEntries
+
+### -field WheaEventLogEntryIdPFANotifyCallbackAction
+
+### -field WheaEventLogEntryIdSELBugCheckCpusQuiesced
+
+### -field WheaEventLogEntryIdPshedPiCpuid
+
+### -field WheaEventLogEntryIdSrasTableBadData
+
+### -field WheaEventLogEntryIdDriFsStatus
+
+### -field WheaEventLogEntryIdCpusFrozen
+
+### -field WheaEventLogEntryIdCpusFrozenNoCrashDump
+
+### -field WheaEventLogEntryIdRegNotifyPolicyChange
+
+### -field WheaEventLogEntryIdRegError
+
+### -field WheaEventLogEntryIdRowOfflineEvent
+
+### -field WheaEventLogEntryIdBitOfflineEvent
+
+### -field WheaEventLogEntryIdBadGasFields
+
+### -field WheaEventLogEntryIdCrashDumpError
+
+### -field WheaEventLogEntryIdCrashDumpCheckpoint
+
+### -field WheaEventLogEntryIdCrashDumpProgressPercent
+
+### -field WheaEventLogEntryIdPreviousCrashBugCheckProgress
+
+### -field WheaEventLogEntryIdSELBugCheckStackDump
+
+### -field WheaEventLogEntryIdPciePromotedAerErr
+
+### -field WheaEventLogEntryIdPshedPiTraceLog
+
 ## -remarks
 
 ## -see-also
-

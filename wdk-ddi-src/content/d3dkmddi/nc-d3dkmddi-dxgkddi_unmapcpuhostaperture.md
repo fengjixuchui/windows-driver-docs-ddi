@@ -3,7 +3,6 @@ UID: NC:d3dkmddi.DXGKDDI_UNMAPCPUHOSTAPERTURE
 title: DXGKDDI_UNMAPCPUHOSTAPERTURE (d3dkmddi.h)
 description: DxgkDdiUnmapCpuHostAperture is used to unmap a previously mapped range of the CPU host aperture.
 old-location: display\dxgkddiunmapcpuhostaperture.htm
-ms.assetid: AFE6B92F-49DB-47F9-90BC-F75B5F37178D
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_UNMAPCPUHOSTAPERTURE callback function"]
 ms.keywords: DXGKDDI_UNMAPCPUHOSTAPERTURE, DXGKDDI_UNMAPCPUHOSTAPERTURE callback, DxgkDdiUnmapCpuHostAperture, DxgkDdiUnmapCpuHostAperture callback function [Display Devices], d3dkmddi/DxgkDdiUnmapCpuHostAperture, display.dxgkddiunmapcpuhostaperture
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiUnmapCpuHostAperture
+ - DXGKDDI_UNMAPCPUHOSTAPERTURE
 ---
 
 # DXGKDDI_UNMAPCPUHOSTAPERTURE callback function
@@ -65,3 +64,4 @@ A <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_unmapcpuh
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_unmapcpuhostaperture">DXGKARG_UNMAPCPUHOSTAPERTURE</a>
+

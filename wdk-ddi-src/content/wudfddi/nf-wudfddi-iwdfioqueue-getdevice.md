@@ -4,7 +4,6 @@ title: IWDFIoQueue::GetDevice (wudfddi.h)
 description: The GetDevice method retrieves the interface to the device that owns the I/O queue.
 old-location: wdf\iwdfioqueue_getdevice.htm
 tech.root: wdf
-ms.assetid: e1c1a67e-a18d-4eef-88ce-cd7edd371f54
 ms.date: 02/26/2018
 keywords: ["IWDFIoQueue::GetDevice"]
 ms.keywords: GetDevice, GetDevice method, GetDevice method,IWDFIoQueue interface, IWDFIoQueue interface,GetDevice method, IWDFIoQueue.GetDevice, IWDFIoQueue::GetDevice, UMDFQueueObjectRef_ecef922c-aff2-49ac-84bd-17e7e2e784a1.xml, umdf.iwdfioqueue_getdevice, wdf.iwdfioqueue_getdevice, wudfddi/IWDFIoQueue::GetDevice
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoQueue.GetDevice
+ - IWDFIoQueue::GetDevice
 ---
 
 # IWDFIoQueue::GetDevice
@@ -52,9 +51,9 @@ The <b>GetDevice</b> method retrieves the interface to the device that owns the 
 
 ## -parameters
 
-### -param ppWdfDevice 
+### -param ppWdfDevice [out]
 
-[out]
+
 A pointer to a variable that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice">IWDFDevice</a> interface for the device object, if the call succeeds; otherwise, this parameter is <b>NULL</b>.
 
 ## -see-also
@@ -64,3 +63,4 @@ A pointer to a variable that receives a pointer to the <a href="/windows-hardwar
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfioqueue">IWDFIoQueue</a>
+

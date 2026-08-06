@@ -1,17 +1,17 @@
 ---
+description: "Learn more about: Netadapter.h header"
 UID: NA:netadapter
 title: Netadapter.h header
 ms.assetid: a8daa0fe-db44-3a6f-a53f-7c78c290341e
 ms.date: 05/09/2018
 keywords: ["Netadapter.h header"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 tech.root: netvista
 f1_keywords:
  - netadapter
  - netadapter/netadapter
+api_name:
+ - netadapter
 ---
 
 # Netadapter.h header
@@ -19,7 +19,7 @@ f1_keywords:
 
 ## -description
 
-This header is used by netvista. For more information, see:
+This header is used by network. For more information, see:
 
-- [Networking drivers for Windows Vista and later](../_netvista/index.md)
+- [Network](../_netvista/index.md)
 

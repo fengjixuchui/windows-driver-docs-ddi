@@ -4,7 +4,6 @@ title: wiasSetPropertyAttributes function (wiamdef.h)
 description: The wiasSetPropertyAttributes function sets the access flags and valid values for a set of properties.
 old-location: image\wiassetpropertyattributes.htm
 tech.root: image
-ms.assetid: 210e69e7-b3b8-43b5-a0d3-f023c7256438
 ms.date: 05/03/2018
 keywords: ["wiasSetPropertyAttributes function"]
 ms.keywords: image.wiassetpropertyattributes, wiamdef/wiasSetPropertyAttributes, wiasFncs_630b9e1f-49f8-433e-b0f0-19e7e6c32460.xml, wiasSetPropertyAttributes, wiasSetPropertyAttributes function [Imaging Devices]
@@ -50,28 +49,28 @@ The <b>wiasSetPropertyAttributes </b>function sets the access flags and valid va
 
 ## -parameters
 
-### -param pWiasContext 
+### -param pWiasContext [in]
 
-[in]
+
 Pointer to a WIA item context.
 
 ### -param cPropSpec
 
 Specifies the number of properties.
 
-### -param pPropSpec 
+### -param pPropSpec [in]
 
-[in]
+
 Pointer to a PROPSPEC structure indicating the properties for which to set valid values and access flags.
 
-### -param pulAccessFlags 
+### -param pulAccessFlags [in]
 
-[in]
+
 Pointer to an array that contains the access flags to be written.
 
-### -param pPropVar 
+### -param pPropVar [out]
 
-[out]
+
 Pointer to an array of PROPVARIANT structures that contains the valid values to be written.
 
 ## -returns

@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS
 title: PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS (d3d10umddi.h)
 description: Queries the available content protection for a specified encryption algorithm and video decoder profile.
 old-location: display\getcontentprotectioncaps.htm
-ms.assetid: 51024d63-f58c-45a7-bd6f-9f24a6805878
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS callback function"]
 ms.keywords: PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS, PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS callback, d3d10umddi/pfnGetContentProtectionCaps, display.getcontentprotectioncaps, pfnGetContentProtectionCaps, pfnGetContentProtectionCaps callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnGetContentProtectionCaps
-product:
- - Windows
+ - PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS
 ---
 
 # PFND3D11_1DDI_GETCONTENTPROTECTIONCAPS callback function
@@ -93,3 +90,4 @@ The *pCryptoType* parameter can contain one of the following values:
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_video_content_protection_caps">D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS</a>
+

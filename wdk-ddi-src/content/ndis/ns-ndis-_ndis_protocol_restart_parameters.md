@@ -4,7 +4,6 @@ title: _NDIS_PROTOCOL_RESTART_PARAMETERS (ndis.h)
 description: The NDIS_PROTOCOL_RESTART_PARAMETERS structure defines restart parameters for a protocol driver when NDIS calls the ProtocolNetPnPEvent function to indicate a NetEventRestart event.
 old-location: netvista\ndis_protocol_restart_parameters.htm
 tech.root: netvista
-ms.assetid: 722287da-e0ee-41d5-b85a-0ec55eac41b9
 ms.date: 05/02/2018
 keywords: ["NDIS_PROTOCOL_RESTART_PARAMETERS structure"]
 ms.keywords: "*PNDIS_PROTOCOL_RESTART_PARAMETERS, NDIS_PROTOCOL_RESTART_PARAMETERS, NDIS_PROTOCOL_RESTART_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_PROTOCOL_RESTART_PARAMETERS, PNDIS_PROTOCOL_RESTART_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_PROTOCOL_RESTART_PARAMETERS, ndis/NDIS_PROTOCOL_RESTART_PARAMETERS, ndis/PNDIS_PROTOCOL_RESTART_PARAMETERS, netvista.ndis_protocol_restart_parameters, protocol_structures_ref_1a426da7-b2f9-49b0-9069-24ceddcd8ad1.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_PROTOCOL_RESTART_PARAMETERS
+ - PNDIS_PROTOCOL_RESTART_PARAMETERS
  - NDIS_PROTOCOL_RESTART_PARAMETERS
 ---
 
@@ -61,7 +62,7 @@ The NDIS_PROTOCOL_RESTART_PARAMETERS structure defines restart parameters for a 
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_PROTOCOL_RESTART_PARAMETERS structure. NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_PROTOCOL_RESTART_PARAMETERS, the 
@@ -125,7 +126,7 @@ Each name that is specified in the buffer in the
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -134,3 +135,4 @@ Each name that is specified in the buffer in the
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_net_pnp_event">ProtocolNetPnPEvent</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:ntifs.FsRtlPrivateLock
 title: FsRtlPrivateLock function (ntifs.h)
-description: Obsolete.
+description: The FsRtlPrivateLock function is obsolete.
 old-location: ifsk\fsrtlprivatelock.htm
 tech.root: ifsk
-ms.assetid: c0f6b5bd-991c-403c-9bda-82960b356ca9
 ms.date: 04/16/2018
 keywords: ["FsRtlPrivateLock function"]
 ms.keywords: FsRtlPrivateLock, FsRtlPrivateLock function [Installable File System Drivers], fsrtlref_950e4ca4-4e7f-4158-8e1e-083af825488d.xml, ifsk.fsrtlprivatelock, ntifs/FsRtlPrivateLock
@@ -46,16 +45,15 @@ dev_langs:
 
 # FsRtlPrivateLock function
 
-
 ## -description
 
-The <b>FsRtlPrivateLock</b> routine is obsolete, but is exported to support existing driver binaries. Use <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-fsrtlfastlock">FsRtlFastLock</a> instead.
+The **FsRtlPrivateLock** routine is obsolete, but is exported to support existing driver binaries. Use [**FsRtlFastLock**](nf-ntifs-fsrtlfastlock.md) instead.
 
 ## -parameters
 
 ### -param FileLock
 
-<p>Reserved.</p>
+Reserved.
 
 ### -param FileObject
 
@@ -98,5 +96,9 @@ Reserved.
 Reserved.
 
 ### -param AlreadySynchronized
+
+Reserved.
+
+## -returns
 
 Reserved.

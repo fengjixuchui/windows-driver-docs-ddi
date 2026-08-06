@@ -1,11 +1,9 @@
 ---
 UID: NF:wdm.IoQueryKsrPersistentMemorySize
 title: IoQueryKsrPersistentMemorySize function
-description: TBD
+description: "Microsoft reserves the IoQueryKsrPersistentMemorySize function for internal use only. Don't use this function in your code."
 tech.root: kernel
-ms.assetid: fdd9095f-124c-4bc5-a2da-5e126f92db95
 ms.date: 03/24/2020
-ms.topic: function
 ms.keywords: IoQueryKsrPersistentMemorySize
 req.header: wdm.h
 req.include-header: 
@@ -33,8 +31,6 @@ api_location:
  - wdm.h
 api_name:
  - IoQueryKsrPersistentMemorySize
-product:
- - Windows
 f1_keywords:
  - IoQueryKsrPersistentMemorySize
  - wdm/IoQueryKsrPersistentMemorySize
@@ -42,8 +38,9 @@ f1_keywords:
 
 # IoQueryKsrPersistentMemorySize function
 
-
 ## -description
+
+Reserved for system use.
 
 ## -parameters
 
@@ -55,9 +52,6 @@ f1_keywords:
 
 ## -returns
 
-This function returns NTSTATUS.
-
 ## -remarks
 
 ## -see-also
-

@@ -4,7 +4,6 @@ title: PFND3DDDI_CREATEAUTHENTICATEDCHANNEL (d3dumddi.h)
 description: The CreateAuthenticatedChannel function creates a channel that the Microsoft Direct3D runtime and the driver can use to set and query protections.
 old-location: display\createauthenticatedchannel.htm
 tech.root: display
-ms.assetid: 0a565bff-fc6f-41c1-a6fd-3a82dd0d7889
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CREATEAUTHENTICATEDCHANNEL callback function"]
 ms.keywords: CreateAuthenticatedChannel, CreateAuthenticatedChannel callback function [Display Devices], PFND3DDDI_CREATEAUTHENTICATEDCHANNEL, PFND3DDDI_CREATEAUTHENTICATEDCHANNEL callback, UserModeDisplayDriver_Functions_5645674c-e4e5-4b9c-9cbf-588b829df423.xml, d3dumddi/CreateAuthenticatedChannel, display.createauthenticatedchannel
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - CreateAuthenticatedChannel
-product:
- - Windows
+ - PFND3DDDI_CREATEAUTHENTICATEDCHANNEL
 ---
 
 # PFND3DDDI_CREATEAUTHENTICATEDCHANNEL callback function
@@ -56,7 +53,7 @@ The <b>CreateAuthenticatedChannel</b> function creates a channel that the Micros
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -81,3 +78,4 @@ The driver must keep track of the display device (<i>hDevice</i>) that was used 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_createauthenicatedchannel">D3DDDIARG_CREATEAUTHENTICATEDCHANNEL</a>
+

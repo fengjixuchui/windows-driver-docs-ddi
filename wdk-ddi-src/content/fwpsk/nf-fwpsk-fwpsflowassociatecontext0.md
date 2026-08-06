@@ -4,7 +4,6 @@ title: FwpsFlowAssociateContext0 function (fwpsk.h)
 description: The FwpsFlowAssociateContext0 function associates a callout driver-defined context with a data flow.Note  FwpsFlowAssociateContext0 is a specific version of FwpsFlowAssociateContext.
 old-location: netvista\fwpsflowassociatecontext0.htm
 tech.root: netvista
-ms.assetid: 0a339457-77df-480b-adb8-9406507ec8d8
 ms.date: 05/02/2018
 keywords: ["FwpsFlowAssociateContext0 function"]
 ms.keywords: FwpsFlowAssociateContext0, FwpsFlowAssociateContext0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsFlowAssociateContext0, netvista.fwpsflowassociatecontext0, wfp_ref_2_funct_3_fwps_D-H_a700b313-fb1e-4b66-a3be-837b1a2d89b3.xml
@@ -54,34 +53,34 @@ The
 
 ## -parameters
 
-### -param flowId 
+### -param flowId [in]
 
-[in]
+
 A run-time identifier that specifies the data flow with which to associate the context. The
      run-time identifier for a data flow is provided to a callout driver through the
      FWPS_METADATA_FIELD_FLOW_HANDLE metadata value that was passed to the callout driver's 
      <a href="/windows-hardware/drivers/ddi/_netvista/">classifyFn</a> callout function.
 
-### -param layerId 
+### -param layerId [in]
 
-[in]
+
 The run-time identifier for the filtering layer with which the context is being associated. The context will be associated only with the specified filtering layer. For
      more information, see 
      <a href="/windows/desktop/FWP/management-filtering-layer-identifiers-">Run-time Filtering Layer
      Identifiers</a>.
 
-### -param calloutId 
+### -param calloutId [in]
 
-[in]
+
 The run-time identifier for the callout in the filter engine. This identifier was returned when
      the callout driver called the 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister0">FwpsCalloutRegister0</a>, 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister1">FwpsCalloutRegister1</a>, or  <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister2">FwpsCalloutRegister2</a> function to
      register the callout with the filter engine.
 
-### -param flowContext 
+### -param flowContext [in]
 
-[in]
+
 The callout driver-defined context to be associated with the data flow. This parameter must not be
      zero. This context is opaque to the filter engine.
 

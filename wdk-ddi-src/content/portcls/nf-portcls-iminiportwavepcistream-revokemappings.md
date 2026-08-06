@@ -4,7 +4,6 @@ title: IMiniportWavePciStream::RevokeMappings (portcls.h)
 description: The RevokeMappings method revokes mappings that were previously obtained through IPortWavePciStream::GetMapping.
 old-location: audio\iminiportwavepcistream_revokemappings.htm
 tech.root: audio
-ms.assetid: a6534917-5fe6-449b-8e85-398d26730f66
 ms.date: 05/08/2018
 keywords: ["IMiniportWavePciStream::RevokeMappings"]
 ms.keywords: IMiniportWavePciStream interface [Audio Devices],RevokeMappings method, IMiniportWavePciStream.RevokeMappings, IMiniportWavePciStream::RevokeMappings, RevokeMappings, RevokeMappings method [Audio Devices], RevokeMappings method [Audio Devices],IMiniportWavePciStream interface, audio.iminiportwavepcistream_revokemappings, audmp-routines_f995bc15-917a-416d-9066-3d5667866973.xml, portcls/IMiniportWavePciStream::RevokeMappings
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWavePciStream.RevokeMappings
+ - IMiniportWavePciStream::RevokeMappings
 ---
 
 # IMiniportWavePciStream::RevokeMappings
@@ -50,19 +49,19 @@ The <code>RevokeMappings</code> method revokes mappings that were previously obt
 
 ## -parameters
 
-### -param FirstTag 
+### -param FirstTag [in]
 
-[in]
+
 Specifies the tag value that identifies the first mapping that is being revoked.
 
-### -param LastTag 
+### -param LastTag [in]
 
-[in]
+
 Specifies the tag value that identifies the last mapping that is being revoked.
 
-### -param MappingsRevoked 
+### -param MappingsRevoked [out]
 
-[out]
+
 Output pointer for the count of revoked mappings. This parameter points to a ULONG variable into which the method writes the number of mappings actually revoked by the call. This number excludes any mappings in the range <i>FirstTag</i> to <i>LastTag</i> that the miniport driver has already released. Due to synchronization issues, some of the mappings in the range might be released between the time that the port driver determines the list of mappings to be revoked and the call to <code>RevokeMappings</code>. For more information, see the following Remarks section.
 
 ## -returns
@@ -114,3 +113,4 @@ For more information about mappings, see <a href="/windows-hardware/drivers/audi
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kereleasespinlock">KeReleaseSpinLock</a>
+

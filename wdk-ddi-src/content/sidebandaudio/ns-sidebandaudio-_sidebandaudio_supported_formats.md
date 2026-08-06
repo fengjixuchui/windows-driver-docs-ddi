@@ -1,9 +1,8 @@
 ---
 UID: NS:sidebandaudio._SIDEBANDAUDIO_SUPPORTED_FORMATS
 title: _SIDEBANDAUDIO_SUPPORTED_FORMATS (sidebandaudio.h)
-description: Describes the formats supported by the Audio Endpoint.
-ms.assetid: 3aaefd01-561e-42be-859c-240f1305b266
-ms.date: 09/07/2018
+description: The SIDEBANDAUDIO_SUPPORTED_FORMATS structure describes the formats supported by the Audio Endpoint.
+ms.date: 07/11/2023
 keywords: ["SIDEBANDAUDIO_SUPPORTED_FORMATS structure"]
 ms.keywords: _SIDEBANDAUDIO_SUPPORTED_FORMATS, SIDEBANDAUDIO_SUPPORTED_FORMATS, *PSIDEBANDAUDIO_SUPPORTED_FORMATS,
 req.header: sidebandaudio.h
@@ -37,14 +36,15 @@ api_location:
  - sidebandaudio.h
 api_name:
  - _SIDEBANDAUDIO_SUPPORTED_FORMATS
+ - PSIDEBANDAUDIO_SUPPORTED_FORMATS
+ - SIDEBANDAUDIO_SUPPORTED_FORMATS
 ---
 
-# _SIDEBANDAUDIO_SUPPORTED_FORMATS structure
-
+# SIDEBANDAUDIO_SUPPORTED_FORMATS structure
 
 ## -description
 
-Describes the formats supported by the Audio Endpoint.
+The **SIDEBANDAUDIO_SUPPORTED_FORMATS** structure describes the formats supported by the Audio Endpoint.
 
 ## -struct-fields
 
@@ -65,6 +65,12 @@ Number of KSDATAFORMAT structures.
 Array of pointers of KSDATAFORMAT.
 
 ## -remarks
+
+## -requirements
+
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Header** | sidebandaudio.h |
 
 ## -see-also
 

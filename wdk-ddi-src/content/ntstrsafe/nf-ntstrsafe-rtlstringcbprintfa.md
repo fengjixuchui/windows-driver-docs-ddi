@@ -4,7 +4,6 @@ title: RtlStringCbPrintfA function (ntstrsafe.h)
 description: The RtlStringCbPrintfW and RtlStringCbPrintfA functions create a byte-counted text string, with formatting that is based on supplied formatting information.
 old-location: kernel\rtlstringcbprintf.htm
 tech.root: kernel
-ms.assetid: ff35590f-1834-462a-9a9e-f7a3268776e8
 ms.date: 04/30/2018
 keywords: ["RtlStringCbPrintfA function"]
 ms.keywords: RtlStringCbPrintf, RtlStringCbPrintfA, RtlStringCbPrintfW, RtlStringCbPrintfW function [Kernel-Mode Driver Architecture], kernel.rtlstringcbprintf, ntstrsafe/RtlStringCbPrintfA, ntstrsafe/RtlStringCbPrintfW, safestrings_066962fd-30e4-4535-b667-bf6f8fa2f2b2.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -39,9 +38,7 @@ api_location:
  - Ntstrsafe.lib
  - Ntstrsafe.dll
 api_name:
- - RtlStringCbPrintfW
  - RtlStringCbPrintfA
- - RtlStringCbPrintfW
 ---
 
 # RtlStringCbPrintfA function
@@ -53,33 +50,26 @@ The <b>RtlStringCbPrintfW</b> and <b>RtlStringCbPrintfA</b> functions create a b
 
 ## -parameters
 
-### -param pszDest 
+### -param pszDest [out]
 
-[out]
+
 A pointer to a caller-supplied buffer that receives a formatted, null-terminated string. The function creates this string from both the formatting string that is supplied by <i>pszFormat</i> and the function's argument list.
 
-### -param cbDest 
+### -param cbDest [in]
 
-[in]
+
 The size of the destination buffer, in bytes. The buffer must be large enough to contain the formatted string plus the terminating null character. 
 
 For Unicode strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * sizeof(WCHAR). 
 
 For ANSI strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * sizeof(char).
 
-### -param pszFormat 
+### -param pszFormat [in]
 
-[in]
+
 A pointer to a null-terminated text string that contains <b>printf</b>-styled <a href="/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions">formatting directives</a>.
 
-### -param param
-
-<p>A list of arguments that are interpreted by the function based on formatting directives contained in the <i>pszFormat</i> string.</p>
-
-
-
-
-####### - ...
+### -param ...
 
 A list of arguments that are interpreted by the function based on formatting directives contained in the <i>pszFormat</i> string.
 
@@ -236,3 +226,4 @@ The resultant string is "The answer is 1 + 2 = 3." It is contained in the buffer
 
 
 <a href="/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcchprintfa">RtlStringCchPrintf</a>
+

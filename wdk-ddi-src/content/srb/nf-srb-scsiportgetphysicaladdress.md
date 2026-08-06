@@ -4,7 +4,6 @@ title: ScsiPortGetPhysicalAddress function (srb.h)
 description: The ScsiPortGetPhysicalAddress routine converts a given virtual address range to a physical address range for a DMA operation.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
 old-location: storage\scsiportgetphysicaladdress.htm
 tech.root: storage
-ms.assetid: 4a0d0b10-9773-40d7-962c-cf2acffcee47
 ms.date: 03/29/2018
 keywords: ["ScsiPortGetPhysicalAddress function"]
 ms.keywords: ScsiPortGetPhysicalAddress, ScsiPortGetPhysicalAddress routine [Storage Devices], scsiprt_946bea8c-eb6d-4614-9dc0-004ee2501457.xml, srb/ScsiPortGetPhysicalAddress, storage.scsiportgetphysicaladdress
@@ -52,24 +51,24 @@ The <b>ScsiPortGetPhysicalAddress</b> routine converts a given virtual address r
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension->HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="/windows-hardware/drivers/ddi/srb/nf-srb-scsiportinitialize">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device.
 
-### -param Srb 
+### -param Srb [in]
 
-[in]
+
 Pointer to the SCSI request block if the <i>VirtualAddress</i> to be converted comes from that SRB's <b>DataBuffer</b> member or, possibly, from the <b>SenseInfoBuffer</b>. Otherwise, this parameter must be <b>NULL</b>.
 
-### -param VirtualAddress 
+### -param VirtualAddress [in]
 
-[in]
+
 Pointer to the base virtual address to be converted. If this virtual address falls within the range for an SRB-supplied <b>DataBuffer</b>, the caller also must provide the <i>Srb</i> pointer.
 
-### -param Length 
+### -param Length [out]
 
-[out]
+
 Returns the number of bytes mapped, starting at the returned physical address.
 
 ## -returns

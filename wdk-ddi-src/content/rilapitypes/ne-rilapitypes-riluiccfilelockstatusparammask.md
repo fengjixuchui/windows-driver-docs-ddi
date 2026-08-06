@@ -1,10 +1,9 @@
 ---
 UID: NE:rilapitypes.RILUICCFILELOCKSTATUSPARAMMASK
 title: RILUICCFILELOCKSTATUSPARAMMASK (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILUICCFILELOCKSTATUSPARAMMASK enumeration for internal use only. Don't use this enumeration in your code."
 old-location: netvista\riluiccfilelockstatusparammask_2.htm
 tech.root: netvista
-ms.assetid: 238bf0cc-c9ad-4a1a-aa91-b746b0fc5d9b
 ms.date: 02/26/2018
 keywords: ["RILUICCFILELOCKSTATUSPARAMMASK enumeration"]
 ms.keywords: RILUICCFILELOCKSTATUSPARAMMASK, RILUICCFILELOCKSTATUSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_UFLS_ALL, RIL_PARAM_UFLS_PINREFERENCE, netvista.riluiccfilelockstatusparammask_2, rilapitypes/RILUICCFILELOCKSTATUSPARAMMASK, rilapitypes/RIL_PARAM_UFLS_ALL, rilapitypes/RIL_PARAM_UFLS_PINREFERENCE
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: RILUICCFILELOCKSTATUSPARAMMASK
-req.product: Windows 10 or later.
 f1_keywords:
  - RILUICCFILELOCKSTATUSPARAMMASK
  - rilapitypes/RILUICCFILELOCKSTATUSPARAMMASK

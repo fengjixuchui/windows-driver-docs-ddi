@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugBreakpoint2.GetOffsetExpression
 title: IDebugBreakpoint2::GetOffsetExpression (dbgeng.h)
-description: The GetOffsetExpression methods return the expression string that evaluates to the location that triggers a breakpoint.
+description: The IDebugBreakpoint2::GetOffsetExpression methods return the expression string that evaluates to the location that triggers a breakpoint.
 old-location: debugger\getoffsetexpression.htm
 tech.root: debugger
-ms.assetid: 9fbdfa42-7231-4281-ba19-a33e854cd801
 ms.date: 05/03/2018
 keywords: ["IDebugBreakpoint2::GetOffsetExpression"]
 ms.keywords: ComOther_08bb15b2-f37d-4bd2-b19a-899ab9293f4a.xml, GetOffsetExpression, GetOffsetExpression method [Windows Debugging], GetOffsetExpression method [Windows Debugging],IDebugBreakpoint interface, GetOffsetExpression method [Windows Debugging],IDebugBreakpoint2 interface, IDebugBreakpoint interface [Windows Debugging],GetOffsetExpression method, IDebugBreakpoint2 interface [Windows Debugging],GetOffsetExpression method, IDebugBreakpoint2.GetOffsetExpression, IDebugBreakpoint2::GetOffsetExpression, IDebugBreakpoint::GetOffsetExpression, dbgeng/IDebugBreakpoint2::GetOffsetExpression, dbgeng/IDebugBreakpoint::GetOffsetExpression, debugger.getoffsetexpression
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugBreakpoint.GetOffsetExpression
- - IDebugBreakpoint2.GetOffsetExpression
+ - IDebugBreakpoint2::GetOffsetExpression
 ---
 
 # IDebugBreakpoint2::GetOffsetExpression
@@ -51,19 +49,19 @@ The <b>GetOffsetExpression</b>  methods return the expression string that evalua
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 The expression string that evaluates to the location on the target that triggers the breakpoint.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 The size, in characters, of the buffer that <i>Buffer </i>points to.
 
-### -param ExpressionSize 
+### -param ExpressionSize [out, optional]
 
-[out, optional]
+
 The size, in characters, of the expression string.  If <i>ExpressionSize</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -107,3 +105,4 @@ The expression is evaluated every time that a module is loaded or unloaded.  If 
 The <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getparameters">GetParameters</a> method also returns the size of the expression string that specifies the location that triggers the breakpoint, <i>ExpressionSize</i>.
 
 For more information about how to use breakpoints, see <a href="/windows-hardware/drivers/debugger/using-breakpoints2">Using Breakpoints</a>.
+

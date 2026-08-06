@@ -4,7 +4,6 @@ title: IResourceList::UntranslatedList (portcls.h)
 description: The UntranslatedList method returns the list of untranslated resources.
 old-location: audio\iresourcelist_untranslatedlist.htm
 tech.root: audio
-ms.assetid: b5b0a540-2730-40ef-8f65-135a19b9a732
 ms.date: 05/08/2018
 keywords: ["IResourceList::UntranslatedList"]
 ms.keywords: IResourceList interface [Audio Devices],UntranslatedList method, IResourceList.UntranslatedList, IResourceList::UntranslatedList, UntranslatedList, UntranslatedList method [Audio Devices], UntranslatedList method [Audio Devices],IResourceList interface, audio.iresourcelist_untranslatedlist, audmp-routines_b367743a-b341-49cc-a300-da84b91ec7a5.xml, portcls/IResourceList::UntranslatedList
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IResourceList.UntranslatedList
+ - IResourceList::UntranslatedList
 ---
 
 # IResourceList::UntranslatedList
@@ -59,3 +58,4 @@ The <code>UntranslatedList</code> method returns the list of untranslated resour
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iresourcelist">IResourceList</a>
+

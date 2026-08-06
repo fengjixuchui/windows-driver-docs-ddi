@@ -4,7 +4,6 @@ title: PFN_WSK_DISCONNECT_EVENT (wsk.h)
 description: The WskDisconnectEvent event callback function notifies a WSK application that a connection on a connection-oriented socket has been disconnected by the remote application.
 old-location: netvista\wskdisconnectevent.htm
 tech.root: netvista
-ms.assetid: bf12d7b3-080e-46d9-b276-76d42068e7c6
 ms.date: 05/02/2018
 keywords: ["PFN_WSK_DISCONNECT_EVENT callback function"]
 ms.keywords: PFN_WSK_DISCONNECT_EVENT, PFN_WSK_DISCONNECT_EVENT callback, WskDisconnectEvent, WskDisconnectEvent callback function [Network Drivers Starting with Windows Vista], netvista.wskdisconnectevent, wsk/WskDisconnectEvent, wskref_ec112b8d-f939-456f-9766-e181c7836e2c.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wsk.h
 api_name:
- - WskDisconnectEvent
+ - PFN_WSK_DISCONNECT_EVENT
 ---
 
 # PFN_WSK_DISCONNECT_EVENT callback function
@@ -52,9 +51,9 @@ The
 
 ## -parameters
 
-### -param SocketContext 
+### -param SocketContext [in, optional]
 
-[in, optional]
+
 A pointer to the socket context for the connection-oriented socket that has been disconnected. The
      WSK application provided this pointer to the WSK subsystem in one of the following ways:
      
@@ -85,9 +84,9 @@ Its
 </li>
 </ul>
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A ULONG value that contains a bitwise OR of a combination of the following flags:
      
 
@@ -174,3 +173,4 @@ A WSK application's <i>WskDisconnectEvent</i> event callback function must not w
 
 
 <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect">WskSocketConnect</a>
+

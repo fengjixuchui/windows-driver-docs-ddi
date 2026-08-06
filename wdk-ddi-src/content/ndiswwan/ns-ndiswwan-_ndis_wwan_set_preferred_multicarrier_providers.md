@@ -4,7 +4,6 @@ title: _NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS (ndiswwan.h)
 description: The NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS structure represents a list of preferred multicarrier providers associated with the MB device.
 old-location: netvista\ndis_wwan_set_preferred_multicarrier_providers.htm
 tech.root: netvista
-ms.assetid: D57068D9-D671-4E56-ABD0-CD91BD91404D
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS structure"]
 ms.keywords: "*PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, ndiswwan/NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, ndiswwan/PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS, netvista.ndis_wwan_set_preferred_multicarrier_providers"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS
+ - PNDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS
  - NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS
 ---
 
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_SET_PREFERRED_MULTICARRIER_PROVIDERS)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field PreferredListHeader
 
@@ -113,3 +114,4 @@ A formatted
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_list_header">WWAN_LIST_HEADER</a>
+

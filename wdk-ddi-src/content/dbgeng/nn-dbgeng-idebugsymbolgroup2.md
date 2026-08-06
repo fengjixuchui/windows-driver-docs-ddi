@@ -4,7 +4,6 @@ title: IDebugSymbolGroup2 (dbgeng.h)
 description: IDebugSymbolGroup2 interface
 old-location: debugger\idebugsymbolgroup2.htm
 tech.root: debugger
-ms.assetid: d702fe69-966c-4b9a-aa0e-b8376288cb79
 ms.date: 05/03/2018
 keywords: ["IDebugSymbolGroup2 interface"]
 ms.keywords: IDebugSymbolGroup2, IDebugSymbolGroup2 interface [Windows Debugging], IDebugSymbolGroup2 interface [Windows Debugging],described, dbgeng/IDebugSymbolGroup2, debugger.idebugsymbolgroup2
@@ -48,10 +47,8 @@ api_name:
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugSymbolGroup2</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbolgroup">IDebugSymbolGroup</a>. <b>IDebugSymbolGroup2</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IDebugSymbolGroup2</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbolgroup">IDebugSymbolGroup</a>. <b>IDebugSymbolGroup2</b> also has these types of members:
+
 
 ## -see-also
 

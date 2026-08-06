@@ -4,7 +4,6 @@ title: PFND3DDDI_QUERYADAPTERINFOCB (d3dumddi.h)
 description: The pfnQueryAdapterInfoCb function retrieves graphics adapter information.
 old-location: display\pfnqueryadapterinfocb.htm
 tech.root: display
-ms.assetid: 8008574f-a89e-4fed-b745-7cf5baa68e64
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_QUERYADAPTERINFOCB callback function"]
 ms.keywords: D3Druntime_Functions_ca5c02c9-ad59-4a10-8cb7-92d815cd6856.xml, PFND3DDDI_QUERYADAPTERINFOCB, PFND3DDDI_QUERYADAPTERINFOCB callback, d3dumddi/pfnQueryAdapterInfoCb, display.pfnqueryadapterinfocb, pfnQueryAdapterInfoCb, pfnQueryAdapterInfoCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnQueryAdapterInfoCb
-product:
- - Windows
+ - PFND3DDDI_QUERYADAPTERINFOCB
 ---
 
 # PFND3DDDI_QUERYADAPTERINFOCB callback function
@@ -56,7 +53,7 @@ The <b>pfnQueryAdapterInfoCb</b> function retrieves graphics adapter information
 
 A handle to the graphics adapter object.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -134,3 +131,4 @@ The following code example shows how to retrieve graphics adapter information.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps">GetCaps</a>
+

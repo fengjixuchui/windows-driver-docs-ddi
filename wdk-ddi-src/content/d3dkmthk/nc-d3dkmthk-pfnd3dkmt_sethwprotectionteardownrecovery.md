@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_SETHWPROTECTIONTEARDOWNRECOVERY
 title: PFND3DKMT_SETHWPROTECTIONTEARDOWNRECOVERY (d3dkmthk.h)
 description: The PFND3DKMT_SETHWPROTECTIONTEARDOWNRECOVERY callback function sets the hardware protection tear down recovery.
-ms.assetid: 7beb2a30-1171-4ad3-8ae3-8358e55921a0
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_SETHWPROTECTIONTEARDOWNRECOVERY callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The PFND3DKMT_SETHWPROTECTIONTEARDOWNRECOVERY callback function sets the hardwar
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_SETHWPROTECTIONTEARDOWNRECOVERY](ns-d3dkmthk-_d3dkmt_sethwprotectionteardownrecovery.md) structure.
 

@@ -4,7 +4,6 @@ title: FsRtlSetKernelEaFile function (ntifs.h)
 description: The routine FsRtlQueryKernelEaFile is used to set, modify and/or delete extended attribute (EA) values for a file and synchronously wait for it to complete, returning a result.
 old-location: ifsk\fsrtlsetkerneleafile.htm
 tech.root: ifsk
-ms.assetid: E5EA2E40-2CC3-4C7B-8BCC-4793F76ECBAD
 ms.date: 04/16/2018
 keywords: ["FsRtlSetKernelEaFile function"]
 ms.keywords: FsRtlSetKernelEaFile, FsRtlSetKernelEaFile routine [Installable File System Drivers], ifsk.fsrtlsetkerneleafile, ntifs/FsRtlSetKernelEaFile
@@ -53,19 +52,19 @@ The routine <b>FsRtlQueryKernelEaFile</b> is used to set, modify and/or delete e
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 A pointer to a <b>FileObject</b> to send the QueryEA request to.
 
-### -param EaBuffer 
+### -param EaBuffer [in]
 
-[in]
+
 A pointer to a caller-supplied, <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_full_ea_information">FILE_FULL_EA_INFORMATION</a>-structured input buffer that contains the extended attribute values to be set
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Specifies the length of the EA buffer.
 
 ## -returns

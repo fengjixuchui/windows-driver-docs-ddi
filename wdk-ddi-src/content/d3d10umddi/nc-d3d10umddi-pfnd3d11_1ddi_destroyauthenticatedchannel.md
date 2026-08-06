@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_DESTROYAUTHENTICATEDCHANNEL
 title: PFND3D11_1DDI_DESTROYAUTHENTICATEDCHANNEL (d3d10umddi.h)
 description: Releases resources for the authenticated channel that were created through a call to the CreateAuthenticatedChannel(D3D11_1) function.
 old-location: display\destroyauthenticatedchannel1.htm
-ms.assetid: 3eebda5e-72c6-4167-a886-58e877551923
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_DESTROYAUTHENTICATEDCHANNEL callback function"]
 ms.keywords: PFND3D11_1DDI_DESTROYAUTHENTICATEDCHANNEL, PFND3D11_1DDI_DESTROYAUTHENTICATEDCHANNEL callback, d3d10umddi/pfnDestroyAuthenticatedChannel, display.destroyauthenticatedchannel1, display.pfndestroyauthenticatedchannel1, pfnDestroyAuthenticatedChannel, pfnDestroyAuthenticatedChannel callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnDestroyAuthenticatedChannel
-product:
- - Windows
+ - PFND3D11_1DDI_DESTROYAUTHENTICATEDCHANNEL
 ---
 
 # PFND3D11_1DDI_DESTROYAUTHENTICATEDCHANNEL callback function
@@ -63,3 +60,4 @@ A handle to the driver's private data for the authenticated channel. This handle
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createauthenticatedchannel">CreateAuthenticatedChannel(D3D11_1)</a>
+

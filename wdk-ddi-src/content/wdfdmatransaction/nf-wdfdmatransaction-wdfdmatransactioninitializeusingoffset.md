@@ -4,7 +4,6 @@ title: WdfDmaTransactionInitializeUsingOffset function (wdfdmatransaction.h)
 description: The WdfDmaTransactionInitializeUsingOffset method initializes a specified DMA transaction by using a byte offset into an MDL chain.
 old-location: wdf\wdfdmatransactioninitializeusingoffset.htm
 tech.root: wdf
-ms.assetid: 896343A8-0C72-47D4-8465-A029EDCD66A0
 ms.date: 02/26/2018
 keywords: ["WdfDmaTransactionInitializeUsingOffset function"]
 ms.keywords: WdfDmaTransactionInitializeUsingOffset, WdfDmaTransactionInitializeUsingOffset method, kmdf.wdfdmatransactioninitializeusingoffset, wdf.wdfdmatransactioninitializeusingoffset, wdfdmatransaction/WdfDmaTransactionInitializeUsingOffset
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -54,34 +53,34 @@ The
 
 ## -parameters
 
-### -param DmaTransaction 
+### -param DmaTransaction [in]
 
-[in]
+
 A handle to a DMA transaction object that the driver obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioncreate">WdfDmaTransactionCreate</a>.
 
-### -param EvtProgramDmaFunction 
+### -param EvtProgramDmaFunction [in]
 
-[in]
+
 A pointer to the driver's <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nc-wdfdmatransaction-evt_wdf_program_dma">EvtProgramDma</a> event callback function.
 
-### -param DmaDirection 
+### -param DmaDirection [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfdmaenabler/ne-wdfdmaenabler-_wdf_dma_direction">WDF_DMA_DIRECTION</a>-typed value.
 
-### -param Mdl 
+### -param Mdl [in]
 
-[in]
+
 A pointer to a memory descriptor list (MDL) that describes the buffer that will be used for the DMA transaction. See more information in <b>Remarks</b>.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 The byte offset into the MDL chain for the current transaction.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The number of bytes to be transferred. This value must be greater than zero.
 
 ## -returns

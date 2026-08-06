@@ -4,7 +4,6 @@ title: PFNKSADDEVENT (ks.h)
 description: An AVStream minidriver's AVStrMiniAddEvent routine is called when a client registers to be notified of an event. This routine is optional.
 old-location: stream\avstrminiaddevent.htm
 tech.root: stream
-ms.assetid: ff80bbc7-93b1-4319-a549-f896ce0f4611
 ms.date: 04/23/2018
 keywords: ["PFNKSADDEVENT callback function"]
 ms.keywords: AVStrMiniAddEvent, AVStrMiniAddEvent routine [Streaming Media Devices], PFNKSADDEVENT, avstclbk_31147072-c3de-4b02-9fb1-b7f67765acc4.xml, ks/AVStrMiniAddEvent, stream.avstrminiaddevent
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - AVStrMiniAddEvent
+ - PFNKSADDEVENT
 ---
 
 # PFNKSADDEVENT callback function
@@ -50,19 +49,19 @@ An AVStream minidriver's <i>AVStrMiniAddEvent</i> routine is called when a clien
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Specifies the IRP describing the event add request.
 
-### -param EventData 
+### -param EventData [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata">KSEVENTDATA</a> structure describing the notification method for this event.
 
-### -param EventEntry 
+### -param EventEntry [in]
 
-[in]
+
 Pointer to an AVStream-generated <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksevent_entry">KSEVENT_ENTRY</a> structure describing how the event is triggered.
 
 ## -returns
@@ -114,3 +113,4 @@ If an AVStream minidriver specifies <b>AddHandler</b> as non-NULL, AVStream does
 
 
 <a href="/windows-hardware/drivers/ddi/ks/nf-ks-kspingenerateevents">KsPinGenerateEvents</a>
+

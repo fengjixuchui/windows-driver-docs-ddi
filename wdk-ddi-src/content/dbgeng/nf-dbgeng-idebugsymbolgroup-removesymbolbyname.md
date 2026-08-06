@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbolGroup.RemoveSymbolByName
 title: IDebugSymbolGroup::RemoveSymbolByName (dbgeng.h)
-description: The RemoveSymbolByName method removes the specified symbol from a symbol group.
+description: The RemoveSymbolByName method removes the specified symbol from a symbol group. This method belongs to the IDebugSymbolGroup interface.
 old-location: debugger\removesymbolbyname.htm
 tech.root: debugger
-ms.assetid: 2b03f010-cc3c-48a1-b86c-df470a832c94
 ms.date: 05/03/2018
 keywords: ["IDebugSymbolGroup::RemoveSymbolByName"]
 ms.keywords: ComOther_894176f1-bf26-4780-b287-a97993dd6e79.xml, IDebugSymbolGroup interface [Windows Debugging],RemoveSymbolByName method, IDebugSymbolGroup.RemoveSymbolByName, IDebugSymbolGroup2 interface [Windows Debugging],RemoveSymbolByName method, IDebugSymbolGroup2::RemoveSymbolByName, IDebugSymbolGroup::RemoveSymbolByName, RemoveSymbolByName, RemoveSymbolByName method [Windows Debugging], RemoveSymbolByName method [Windows Debugging],IDebugSymbolGroup interface, RemoveSymbolByName method [Windows Debugging],IDebugSymbolGroup2 interface, dbgeng/IDebugSymbolGroup2::RemoveSymbolByName, dbgeng/IDebugSymbolGroup::RemoveSymbolByName, debugger.removesymbolbyname
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbolGroup.RemoveSymbolByName
- - IDebugSymbolGroup2.RemoveSymbolByName
+ - IDebugSymbolGroup::RemoveSymbolByName
 ---
 
 # IDebugSymbolGroup::RemoveSymbolByName
@@ -51,9 +49,9 @@ The <b>RemoveSymbolByName</b>  method removes the specified symbol from a symbol
 
 ## -parameters
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 The name of the symbol to remove from the symbol group.
 
 ## -returns
@@ -106,3 +104,4 @@ For more information about symbol groups, see <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbolgroup2-removesymbolbyindex">RemoveSymbolByIndex</a>
+

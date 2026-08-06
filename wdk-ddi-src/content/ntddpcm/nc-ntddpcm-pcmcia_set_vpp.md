@@ -4,7 +4,6 @@ title: PCMCIA_SET_VPP (ntddpcm.h)
 description: The PCMCIA_SET_VPP interface routine sets the power level of the Vpp PCMCIA pin (secondary power source).
 old-location: pcmcia\pcmcia_set_vpp.htm
 tech.root: PCMCIA
-ms.assetid: 63c34784-6ea5-49e5-8ee7-79b70e5137f7
 ms.date: 02/15/2018
 keywords: ["PCMCIA_SET_VPP callback function"]
 ms.keywords: PCMCIA.pcmcia_set_vpp, PCMCIA_SET_VPP, PCMCIA_SET_VPP callback, SetVpp, SetVpp callback function [Buses], memcdref_fe05cf85-9e4b-4267-9214-b8809e42cd5a.xml, ntddpcm/SetVpp
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ntddpcm.h
 api_name:
- - SetVpp
+ - PCMCIA_SET_VPP
 ---
 
 # PCMCIA_SET_VPP callback function
@@ -50,14 +49,14 @@ The <b>PCMCIA_SET_VPP</b> interface routine sets the power level of the Vpp PCMC
 
 ## -parameters
 
-### -param Context 
+### -param Context [in, optional]
 
-[in, optional]
+
 Pointer to the context for the interface routine.
 
-### -param VppLevel 
+### -param VppLevel [in]
 
-[in]
+
 Specifies the voltage level to set on the Vpp pin. <i>VppLevel</i> must be one of the following values:
 
 
@@ -99,3 +98,4 @@ Callers of this routine can run at IRQL <= DISPATCH_LEVEL. To maintain overall s
 
 
 <a href="/windows-hardware/drivers/ddi/ntddpcm/nc-ntddpcm-pcmcia_modify_memory_window">PCMCIA_MODIFY_MEMORY_WINDOW</a>
+

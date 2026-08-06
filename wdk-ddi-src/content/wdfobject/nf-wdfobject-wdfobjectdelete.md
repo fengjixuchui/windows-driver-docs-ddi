@@ -4,7 +4,6 @@ title: WdfObjectDelete function (wdfobject.h)
 description: The WdfObjectDelete method deletes a framework object and its child objects.
 old-location: wdf\wdfobjectdelete.htm
 tech.root: wdf
-ms.assetid: 09eceeb4-8501-48c4-84f5-aa747914f9dd
 ms.date: 02/26/2018
 keywords: ["WdfObjectDelete function"]
 ms.keywords: DFGenObjectRef_d054ae6b-e88d-46e8-ad62-2bfb23a76cd7.xml, WdfObjectDelete, WdfObjectDelete method, kmdf.wdfobjectdelete, wdf.wdfobjectdelete, wdfobject/WdfObjectDelete
@@ -55,16 +54,17 @@ The <b>WdfObjectDelete</b> method deletes a framework object and its child objec
 
 ## -parameters
 
-### -param Object 
+### -param Object [in]
 
-[in]
+
 A handle to framework object.
 
 ## -remarks
 
 A bug check occurs if the driver supplies an invalid object handle.
 
-
+> [!NOTE]
+> Callback functions that are called at PASSIVE_LEVEL cannot delete timer objects. For more info, see [*EVT_WDF_TIMER* callback function](../wdftimer/nc-wdftimer-evt_wdf_timer.md#remarks).
 
 
 After a driver calls <b>WdfObjectDelete</b>, the specified object is deleted after its reference count becomes zero.

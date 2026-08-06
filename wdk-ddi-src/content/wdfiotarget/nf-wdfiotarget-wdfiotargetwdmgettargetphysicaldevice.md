@@ -4,7 +4,6 @@ title: WdfIoTargetWdmGetTargetPhysicalDevice function (wdfiotarget.h)
 description: The WdfIoTargetWdmGetTargetPhysicalDevice method returns a pointer to the Windows Driver Model (WDM) physical device object (PDO) that represents a remote I/O target's device.
 old-location: wdf\wdfiotargetwdmgettargetphysicaldevice.htm
 tech.root: wdf
-ms.assetid: ad24f1b4-ac7f-46df-8f8d-14c956c73a34
 ms.date: 02/26/2018
 keywords: ["WdfIoTargetWdmGetTargetPhysicalDevice function"]
 ms.keywords: DFIOTargetRef_43beb595-b555-4253-8a54-495e9e14f071.xml, WdfIoTargetWdmGetTargetPhysicalDevice, WdfIoTargetWdmGetTargetPhysicalDevice method, kmdf.wdfiotargetwdmgettargetphysicaldevice, wdf.wdfiotargetwdmgettargetphysicaldevice, wdfiotarget/WdfIoTargetWdmGetTargetPhysicalDevice
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,9 +52,9 @@ The <b>WdfIoTargetWdmGetTargetPhysicalDevice</b> method returns a pointer to the
 
 ## -parameters
 
-### -param IoTarget 
+### -param IoTarget [in]
 
-[in]
+
 A handle to a remote I/O target object. This handle was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetcreate">WdfIoTargetCreate</a>.
 
 ## -returns

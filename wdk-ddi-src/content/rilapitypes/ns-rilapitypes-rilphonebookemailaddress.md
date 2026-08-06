@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILPHONEBOOKEMAILADDRESS
 title: RILPHONEBOOKEMAILADDRESS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILPHONEBOOKEMAILADDRESS structure for internal use only."
 old-location: netvista\rilphonebookemailaddress.htm
 tech.root: netvista
-ms.assetid: 89dc64a4-dce9-4ed2-a657-d216d502cded
 ms.date: 05/02/2018
 keywords: ["RILPHONEBOOKEMAILADDRESS structure"]
 ms.keywords: "*LPRILPHONEBOOKEMAILADDRESS, RILPHONEBOOKEMAILADDRESS, RILPHONEBOOKEMAILADDRESS structure [Network Drivers Starting with Windows Vista], netvista.rilphonebookemailaddress, ntddrilapitypes/RILPHONEBOOKEMAILADDRESS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILPHONEBOOKEMAILADDRESS
+ - LPRILPHONEBOOKEMAILADDRESS
 ---
 
 # RILPHONEBOOKEMAILADDRESS structure (rilapitypes.h)

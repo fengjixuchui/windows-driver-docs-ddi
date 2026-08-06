@@ -4,7 +4,6 @@ title: WDF_WRITE_PORT_USHORT function (wdfhwaccess.h)
 description: The WDF_WRITE_PORT_USHORT function writes a USHORT value to the specified port address.
 old-location: wdf\wdf_write_port_ushort.htm
 tech.root: wdf
-ms.assetid: 310C55F8-E62C-4ABE-997E-E551CA6C4BB2
 ms.date: 02/26/2018
 keywords: ["WDF_WRITE_PORT_USHORT function"]
 ms.keywords: WDF_WRITE_PORT_USHORT, WDF_WRITE_PORT_USHORT function, wdf.wdf_write_port_ushort, wdfhwaccess/WDF_WRITE_PORT_USHORT
@@ -52,18 +51,18 @@ The <b>WDF_WRITE_PORT_USHORT</b> function writes a USHORT value to the specified
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 A pointer to the port, which must be a mapped memory range in I/O space.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies a USHORT value to be written to the port.
 

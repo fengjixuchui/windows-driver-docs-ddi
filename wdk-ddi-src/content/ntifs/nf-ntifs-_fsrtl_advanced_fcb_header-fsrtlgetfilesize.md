@@ -4,7 +4,6 @@ title: FsRtlGetFileSize function (ntifs.h)
 description: The FsRtlGetFileSize routine is used to get the size of a file.
 old-location: ifsk\fsrtlgetfilesize.htm
 tech.root: ifsk
-ms.assetid: 82fcf0da-e945-4cb4-90fc-bb095119ef20
 ms.date: 04/16/2018
 keywords: ["FsRtlGetFileSize function"]
 ms.keywords: FsRtlGetFileSize, FsRtlGetFileSize routine [Installable File System Drivers], fsrtlref_d1056cd3-20f5-436c-9bac-0f1c217bb569.xml, ifsk.fsrtlgetfilesize, ntifs/FsRtlGetFileSize
@@ -53,14 +52,14 @@ The <b>FsRtlGetFileSize</b> routine is used to get the size of a file.
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 A pointer to the file object to query.
 
-### -param FileSize 
+### -param FileSize [out]
 
-[out]
+
 A pointer to a large integer that receives the file size on output.
 
 ## -returns

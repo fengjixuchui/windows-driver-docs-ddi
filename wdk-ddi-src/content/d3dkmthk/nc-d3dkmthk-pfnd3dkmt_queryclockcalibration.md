@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_QUERYCLOCKCALIBRATION
 title: PFND3DKMT_QUERYCLOCKCALIBRATION (d3dkmthk.h)
 description: The PFND3DKMT_QUERYCLOCKCALIBRATION callback function queries clock calibration.
-ms.assetid: 1bbde800-aeee-4460-92e5-8097bf0349f9
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_QUERYCLOCKCALIBRATION callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The PFND3DKMT_QUERYCLOCKCALIBRATION callback function queries clock calibration.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_QUERYCLOCKCALIBRATION](../d3dkmdt/ns-d3dkmdt-_d3dkmt_queryclockcalibration.md) structure.
 

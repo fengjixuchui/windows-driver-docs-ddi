@@ -4,7 +4,6 @@ title: DXGKDDI_OPM_GET_RANDOM_NUMBER (dispmprt.h)
 description: The DxgkDdiOPMGetRandomNumber function retrieves the given protected output object's 128-bit cryptographically secure random number.
 old-location: display\dxgkddiopmgetrandomnumber.htm
 tech.root: display
-ms.assetid: 91b07a5c-ed25-4268-bd6d-273ae8b1ac28
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_OPM_GET_RANDOM_NUMBER callback function"]
 ms.keywords: DXGKDDI_OPM_GET_RANDOM_NUMBER, DXGKDDI_OPM_GET_RANDOM_NUMBER callback, Dm_Opm_functions_a7d335ef-61bf-452a-a811-20048ff28dbf.xml, DxgkDdiOPMGetRandomNumber, DxgkDdiOPMGetRandomNumber callback function [Display Devices], display.dxgkddiopmgetrandomnumber, dispmprt/DxgkDdiOPMGetRandomNumber
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
- - DxgkDdiOPMGetRandomNumber
+ - DXGKDDI_OPM_GET_RANDOM_NUMBER
 ---
 
 # DXGKDDI_OPM_GET_RANDOM_NUMBER callback function
@@ -50,19 +49,19 @@ The<i> DxgkDdiOPMGetRandomNumber</i> function retrieves the given protected outp
 
 ## -parameters
 
-### -param MiniportDeviceContext 
+### -param MiniportDeviceContext [in]
 
-[in]
+
 A handle to a context block associated with a display adapter. Previously, the display miniport driver's <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function provided this handle to the DirectX graphics kernel subsystem.
 
-### -param ProtectedOutputHandle 
+### -param ProtectedOutputHandle [in]
 
-[in]
+
 The handle to a protected output object. The <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_create_protected_output">DxgkDdiOPMCreateProtectedOutput</a> function creates the protected output object and returns the handle to the object.
 
-### -param RandomNumber 
+### -param RandomNumber [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_dxgkmdt_opm_random_number">DXGKMDT_OPM_RANDOM_NUMBER</a> structure that receives the protected output object's 128-bit cryptographically secure random number if <i>DxgkDdiOPMGetRandomNumber</i> returns successfully.
 
 If <i>DxgkDdiOPMGetRandomNumber</i> fails, the value that <i>RandomNumber</i> points to is unchanged.
@@ -96,3 +95,4 @@ For more information about cryptographically secure random numbers, see section 
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_set_signing_key_and_sequence_numbers">DxgkDdiOPMSetSigningKeyAndSequenceNumbers</a>
+

@@ -4,7 +4,6 @@ title: _PARTITION_INFORMATION (ntdddisk.h)
 description: The PARTITION_INFORMATION structure contains partition information for a partition with a traditional AT-style Master Boot Record (MBR).
 old-location: storage\partition_information.htm
 tech.root: storage
-ms.assetid: 06c3ed56-3640-431d-a4f0-bf3228a02cc2
 ms.date: 03/29/2018
 keywords: ["PARTITION_INFORMATION structure"]
 ms.keywords: "*PPARTITION_INFORMATION, PARTITION_INFORMATION, PARTITION_INFORMATION structure [Storage Devices], PPARTITION_INFORMATION, PPARTITION_INFORMATION structure pointer [Storage Devices], _PARTITION_INFORMATION, ntdddisk/PARTITION_INFORMATION, ntdddisk/PPARTITION_INFORMATION, storage.partition_information, structs-disk_19ff49c5-6929-46fb-a9c2-4850969a99a8.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntdddisk.h
 api_name:
+ - _PARTITION_INFORMATION
+ - PPARTITION_INFORMATION
  - PARTITION_INFORMATION
 ---
 
@@ -120,8 +121,9 @@ Disk drivers should now use structures [DRIVE_LAYOUT_INFORMATION_EX](ns-ntdddisk
 
 [IoReadPartitionTableEx](../ntddk/nf-ntddk-ioreadpartitiontableex.md)
 
-[IoSetPartitionInformation](../ntddk/nf-ntddk-ioreadpartitiontableex.md)
+[IoSetPartitionInformation](../ntddk/nf-ntddk-iosetpartitioninformation.md)
 
 [IoSetPartitionInformationEx](../ntddk/nf-ntddk-iosetpartitioninformationex.md)
 
 [PARTITION_INFORMATION_EX](ns-ntdddisk-_partition_information_ex.md)
+

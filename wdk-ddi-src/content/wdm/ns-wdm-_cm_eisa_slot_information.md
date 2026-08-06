@@ -1,10 +1,9 @@
 ---
 UID: NS:wdm._CM_EISA_SLOT_INFORMATION
 title: _CM_EISA_SLOT_INFORMATION (wdm.h)
-description: The CM_EISA_SLOT_INFORMATION structure defines EISA configuration header information returned by HalGetBusData for the input BusDataType = EisaConfiguration, or by HalGetBusDataByOffset for the inputs BusDataType = EisaConfiguration and Offset = 0, assuming the caller-allocated Buffer is of sufficient Length.
+description: The _CM_EISA_SLOT_INFORMATION structure (wdm.h) defines EISA configuration header information returned by HalGetBusData or by HalGetBusDataByOffset.
 old-location: kernel\cm_eisa_slot_information.htm
 tech.root: kernel
-ms.assetid: 443b6ed8-1d44-466f-93b0-bb8cd42aefaa
 ms.date: 04/30/2018
 keywords: ["CM_EISA_SLOT_INFORMATION structure"]
 ms.keywords: "*PCM_EISA_SLOT_INFORMATION, CM_EISA_SLOT_INFORMATION, CM_EISA_SLOT_INFORMATION structure [Kernel-Mode Driver Architecture], PCM_EISA_SLOT_INFORMATION, PCM_EISA_SLOT_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _CM_EISA_SLOT_INFORMATION, kernel.cm_eisa_slot_information, kstruct_a_07946ecf-4bcd-4626-a070-e3bca212c0ef.xml, wdm/CM_EISA_SLOT_INFORMATION, wdm/PCM_EISA_SLOT_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _CM_EISA_SLOT_INFORMATION
+ - PCM_EISA_SLOT_INFORMATION
  - CM_EISA_SLOT_INFORMATION
 ---
 
@@ -111,3 +112,4 @@ The driver of an EISA device might call <b>HalGetBusData</b> or <b>HalGetBusData
 
 
 <a href="/previous-versions/windows/hardware/drivers/ff546644(v=vs.85)">HalGetBusDataByOffset</a>
+

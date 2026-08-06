@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES
 title: _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES (d3dkmddi.h)
 description: Used by the display miniport driver to specify overlay plane attributes.
 old-location: display\dxgk_multiplane_overlay_attributes.htm
-ms.assetid: 1f48a08f-138c-44b4-b13f-efa9b448ce4f
 ms.date: 05/10/2018
 keywords: ["DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES structure"]
 ms.keywords: DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES, DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES structure [Display Devices], _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES, display.dxgk_multiplane_overlay_attributes
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmddi.h
 api_name:
+ - _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES
  - DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES
 ---
 
@@ -156,3 +156,4 @@ Specifies the overlay plane's stretch quality, given as a value from the <a href
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_multiplane_overlay_ycbcr_flags">DXGK_MULTIPLANE_OVERLAY_YCbCr_FLAGS</a>
+

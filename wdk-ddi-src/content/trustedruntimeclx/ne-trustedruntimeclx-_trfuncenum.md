@@ -1,9 +1,8 @@
 ---
 UID: NE:trustedruntimeclx._TRFUNCENUM
 title: _TRFUNCENUM (trustedruntimeclx.h)
-description: 
-ms.assetid: c7d03bb5-7c9e-4a6c-92f1-5c109061aaa7
-ms.date: 10/19/2018
+description: "Learn more about: _TRFUNCENUM enumeration"
+ms.date: 11/20/2020
 keywords: ["TRFUNCENUM enumeration"]
 ms.keywords: _TRFUNCENUM, TRFUNCENUM,
 req.header: trustedruntimeclx.h
@@ -18,6 +17,7 @@ req.max-support:
 req.typenames: TRFUNCENUM
 targetos: Windows
 ms.custom: RS5
+tech.root: treedrv
 f1_keywords:
  - _TRFUNCENUM
  - trustedruntimeclx/_TRFUNCENUM
@@ -31,6 +31,7 @@ api_location:
  - trustedruntimeclx.h
 api_name:
  - _TRFUNCENUM
+ - TRFUNCENUM
 ---
 
 # _TRFUNCENUM enumeration
@@ -40,19 +41,19 @@ api_name:
 
 ## -enum-fields
 
-### -field TrSecureDeviceHandoffMasterDeviceControlTableIndex 
+### -field TrSecureDeviceHandoffMasterDeviceControlTableIndex
 
-### -field TrSecureDeviceHandoffServiceDeviceControlTableIndex 
+### -field TrSecureDeviceHandoffServiceDeviceControlTableIndex
 
-### -field TrSecureDeviceLogMessageTableIndex 
+### -field TrSecureDeviceLogMessageTableIndex
 
-### -field TrSecureDeviceQueryOSServiceTableIndex 
+### -field TrSecureDeviceQueryOSServiceTableIndex
 
-### -field TrSecureDeviceCallOSServiceTableIndex 
+### -field TrSecureDeviceCallOSServiceTableIndex
 
-### -field TrSecureDeviceCompleteAsyncRequestTableIndex 
+### -field TrSecureDeviceCompleteAsyncRequestTableIndex
 
-### -field TrFunctionTableNumEntries 
+### -field TrFunctionTableNumEntries
 
 ## -remarks
 

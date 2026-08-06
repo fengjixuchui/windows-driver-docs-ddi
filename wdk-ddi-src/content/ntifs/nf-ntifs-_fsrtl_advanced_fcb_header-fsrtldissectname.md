@@ -4,7 +4,6 @@ title: FsRtlDissectName function (ntifs.h)
 description: Given a Unicode pathname string, the FsRtlDissectName routine returns two strings, one containing the first file name found in the string, the other containing the remaining unparsed portion of the pathname string.
 old-location: ifsk\fsrtldissectname.htm
 tech.root: ifsk
-ms.assetid: d97de0e1-0724-485d-95da-b9811036a21e
 ms.date: 04/16/2018
 keywords: ["FsRtlDissectName function"]
 ms.keywords: FsRtlDissectName, FsRtlDissectName routine [Installable File System Drivers], fsrtlref_a74da803-0994-46e4-90f7-bc7728b59fe5.xml, ifsk.fsrtldissectname, ntifs/FsRtlDissectName
@@ -53,19 +52,19 @@ Given a Unicode pathname string, the <b>FsRtlDissectName</b> routine returns two
 
 ## -parameters
 
-### -param Path 
+### -param Path [in]
 
-[in]
+
 Pathname string to be parsed.
 
-### -param FirstName 
+### -param FirstName [out]
 
-[out]
+
 Pointer to the first file name in the pathname string.
 
-### -param RemainingName 
+### -param RemainingName [out]
 
-[out]
+
 Pointer to the remaining unparsed portion of the pathname string.
 
 ## -remarks
@@ -199,7 +198,7 @@ UNICODE_STRING RemainingComponent;
 
 /*
 Do not allocate storage for the Buffer members of CurrentComponent
-and RemainingComponent in that they will point into the previoulsy
+and RemainingComponent in that they will point into the previously
 allocated storage of FullPathName's Buffer member:
 */
 FsRtlDissectName (FullPathName, &CurrentComponent, &RemainingComponent);
@@ -208,7 +207,7 @@ FsRtlDissectName (FullPathName, &CurrentComponent, &RemainingComponent);
 .
 ```
 
-For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/index">Strings</a>.
+For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/_kernel/#run-time-library-rtl-routines">Run-Time Library (RTL) Routines</a>.
 
 ## -see-also
 

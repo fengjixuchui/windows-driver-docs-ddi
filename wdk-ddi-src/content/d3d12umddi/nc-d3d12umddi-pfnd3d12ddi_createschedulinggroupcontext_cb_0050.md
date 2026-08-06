@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_CREATESCHEDULINGGROUPCONTEXT_CB_0050
 title: PFND3D12DDI_CREATESCHEDULINGGROUPCONTEXT_CB_0050 (d3d12umddi.h)
 description: Creates a context associated with a scheduling group.
-ms.assetid: 4a4f8d97-211a-46bd-b1ab-00c80b835ccb
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CREATESCHEDULINGGROUPCONTEXT_CB_0050 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CREATESCHEDULINGGROUPCONTEXT_CB_0050
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -55,7 +52,7 @@ Creates a context associated with a scheduling group.
 
 A D3D12DDI_HRTSCHEDULINGGROUP_0050 runtime handle type that represents the contexts associated with a hardware scheduling group.
 
-### -param Arg2
+### -param unnamedParam2
 
 Pointer to a [D3DDDICB_CREATECONTEXT](../d3dumddi/ns-d3dumddi-_d3dddicb_createcontext.md) structure that contains information needed to create a context.
 

@@ -2,7 +2,6 @@
 UID: NF:usbpmapi.USBPM_CONNECTOR_PROPERTIES_INIT
 title: USBPM_CONNECTOR_PROPERTIES_INIT function (usbpmapi.h)
 description: Initializes a **USBPM_CONNECTOR_PROPERTIES** structure.
-ms.assetid: 99379e0c-8bf7-4972-9883-7da58820b1a1
 ms.date: 09/30/2018
 keywords: ["USBPM_CONNECTOR_PROPERTIES_INIT function"]
 ms.keywords: USBPM_CONNECTOR_PROPERTIES_INIT
@@ -44,13 +43,13 @@ api_name:
 
 ## -description
 
-Initializes a [**USBPM_CONNECTOR_PROPERTIES**](ns-usbpmapi-_usbpm_connector_properties.md) structure. The client driver must call this function before calling [**UsbPm_RetrieveCoonnectorProperties**](nf-usbpmapi-usbpm_retrieveconnectorproperties.md).
+Initializes a [**USBPM_CONNECTOR_PROPERTIES**](ns-usbpmapi-_usbpm_connector_properties.md) structure. The client driver must call this function before calling [**UsbPm_RetrieveConnectorProperties**](nf-usbpmapi-usbpm_retrieveconnectorproperties.md).
 
 ## -parameters
 
-### -param Properties
+### -param Properties [Out]
 
-[Out] A pointer to a [**USBPM_CONNECTOR_PROPERTIES**](ns-usbpmapi-_usbpm_connector_properties.md) to initialize.
+A pointer to a [**USBPM_CONNECTOR_PROPERTIES**](ns-usbpmapi-_usbpm_connector_properties.md) to initialize.
 
 ## -remarks
 

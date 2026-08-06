@@ -4,7 +4,6 @@ title: tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION (ksmedia.h)
 description: The EV Compensation Control provides for exposure control that is adjusted by increments of EV compensation steps.
 old-location: stream\kscamera_extendedprop_evcompensation.htm
 tech.root: stream
-ms.assetid: C9CF39F2-5081-4B99-BFD1-9F7130B27369
 ms.date: 04/23/2018
 keywords: ["tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION structure"]
 ms.keywords: "*PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, KSCAMERA_EXTENDEDPROP_EVCOMPENSATION, KSCAMERA_EXTENDEDPROP_EVCOMPENSATION structure [Streaming Media Devices], PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION structure pointer [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_EVCOMPENSATION, ksmedia/PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, stream.kscamera_extendedprop_evcompensation, tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ksmedia.h
 api_name:
+ - tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION
+ - PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION
  - KSCAMERA_EXTENDEDPROP_EVCOMPENSATION
 ---
 
@@ -85,3 +86,4 @@ Reserved.
 
 
 <a href="/windows-hardware/drivers/stream/ksproperty-cameracontrol-extended-evcompensation">KSPROPERTY_CAMERACONTROL_EXTENDED_EVCOMPENSATION</a>
+

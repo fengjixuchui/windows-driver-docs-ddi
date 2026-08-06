@@ -4,7 +4,6 @@ title: PFNKSCANCELTIMER (ks.h)
 description: A streaming minidriver's KStrCancelTimer routine is called to cancel a custom timer object that was previously specified in the SetTimer parameter in a call to KsAllocateDefaultClockEx.
 old-location: stream\kstrcanceltimer.htm
 tech.root: stream
-ms.assetid: bdfe0fc3-1b25-493f-9d70-3b6d680fde50
 ms.date: 04/23/2018
 keywords: ["PFNKSCANCELTIMER callback function"]
 ms.keywords: KStrCancelTimer, KStrCancelTimer routine [Streaming Media Devices], PFNKSCANCELTIMER, ks/KStrCancelTimer, ksfunc_10ed86a1-d424-45d1-a420-3e4ce3a95a05.xml, stream.kstrcanceltimer
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - KStrCancelTimer
+ - PFNKSCANCELTIMER
 ---
 
 # PFNKSCANCELTIMER callback function
@@ -50,14 +49,14 @@ A streaming minidriver's <i>KStrCancelTimer</i> routine is called to cancel a cu
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to the minidriver-supplied information context. The minidriver passes the information context to <a href="/windows-hardware/drivers/ddi/ks/nf-ks-ksallocatedefaultclockex">KsAllocateDefaultClockEx</a> in the function's <i>DeferredContext</i> parameter when the minidriver allocates a custom DPC timer object.
 
-### -param Timer 
+### -param Timer [in]
 
-[in]
+
 Pointer to the minidriver's custom timer object to cancel.
 
 ## -returns
@@ -83,3 +82,4 @@ If a minidriver supplies a <i>KStrCancelTimer</i> callback function, the minidri
 
 
 <a href="/windows-hardware/drivers/ddi/ks/nf-ks-ksallocatedefaultclockex">KsAllocateDefaultClockEx</a>
+

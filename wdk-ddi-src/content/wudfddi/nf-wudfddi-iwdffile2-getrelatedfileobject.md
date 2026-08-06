@@ -4,7 +4,6 @@ title: IWDFFile2::GetRelatedFileObject (wudfddi.h)
 description: The GetRelatedFileObject method retrieves the IWDFFile interface of a related file object, which is a file object that has a technology-specific relationship with another file object.
 old-location: wdf\iwdffile2_getrelatedfileobject.htm
 tech.root: wdf
-ms.assetid: 0ac5c19a-b3ec-4f1e-a018-2c11cc18e58d
 ms.date: 02/26/2018
 keywords: ["IWDFFile2::GetRelatedFileObject"]
 ms.keywords: GetRelatedFileObject, GetRelatedFileObject method, GetRelatedFileObject method,IWDFFile2 interface, IWDFFile2 interface,GetRelatedFileObject method, IWDFFile2.GetRelatedFileObject, IWDFFile2::GetRelatedFileObject, UMDFFileObjectRef_f65433dc-ba63-456e-beff-ef7c9e2dffa8.xml, umdf.iwdffile2_getrelatedfileobject, wdf.iwdffile2_getrelatedfileobject, wudfddi/IWDFFile2::GetRelatedFileObject
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFFile2.GetRelatedFileObject
+ - IWDFFile2::GetRelatedFileObject
 ---
 
 # IWDFFile2::GetRelatedFileObject
@@ -52,9 +51,9 @@ The <b>GetRelatedFileObject</b> method retrieves the <a href="/windows-hardware/
 
 ## -parameters
 
-### -param ppRelatedFileObj 
+### -param ppRelatedFileObj [out]
 
-[out]
+
 The address of a location that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile">IWDFFile</a> interface of a UMDF file object. This file object is related to the file object that exposes the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile2">IWDFFile2</a> interface's parent <b>IWDFFile</b> interface.
 
 ## -remarks
@@ -94,7 +93,7 @@ CMyQueue::OnCreateFile(
     ...
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile2">IWDFFile2</a>
+

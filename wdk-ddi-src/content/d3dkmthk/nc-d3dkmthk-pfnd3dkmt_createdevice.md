@@ -1,16 +1,15 @@
 ---
 UID: NC:d3dkmthk.PFND3DKMT_CREATEDEVICE
 title: PFND3DKMT_CREATEDEVICE (d3dkmthk.h)
-description: The D3DKMTCreateDevice function creates a kernel-mode device context.
+description: The PFND3DKMT_CREATEDEVICE callback creates a kernel-mode device context. The function returns STATUS_SUCCESS on successful creation of the device context.
 old-location: display\d3dkmtcreatedevice.htm
-ms.assetid: 91f559cc-c84b-450d-b52c-8289e976f991
 ms.date: 05/10/2018
 keywords: ["PFND3DKMT_CREATEDEVICE callback function"]
 ms.keywords: D3DKMTCreateDevice, D3DKMTCreateDevice callback function [Display Devices], OpenGL_Functions_09099f43-bae3-4859-9465-434915af774a.xml, PFND3DKMT_CREATEDEVICE, PFND3DKMT_CREATEDEVICE callback, d3dkmthk/D3DKMTCreateDevice, display.d3dkmtcreatedevice
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
- - D3DKMTCreateDevice
+ - PFND3DKMT_CREATEDEVICE
 ---
 
 # PFND3DKMT_CREATEDEVICE callback function
@@ -50,7 +49,7 @@ The <b>D3DKMTCreateDevice</b> function creates a kernel-mode device context.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in, out]
 
@@ -72,3 +71,4 @@ This function might also return other <b>NTSTATUS</b> values.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_createdevice">D3DKMT_CREATEDEVICE</a>
+

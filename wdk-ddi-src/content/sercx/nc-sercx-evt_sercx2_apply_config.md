@@ -4,7 +4,6 @@ title: EVT_SERCX2_APPLY_CONFIG (sercx.h)
 description: The EvtSerCx2ApplyConfig event callback function is called by version 2 of the serial framework extension (SerCx2) to supply the serial controller driver with a list of device-specific configuration settings to apply to the serial controller hardware.
 old-location: serports\evtsercx2applyconfig.htm
 tech.root: serports
-ms.assetid: 8D9BC698-1E62-4DC2-B233-37022F330F98
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX2_APPLY_CONFIG callback function"]
 ms.keywords: 2/EvtSerCx2ApplyConfig, EVT_SERCX2_APPLY_CONFIG, EVT_SERCX2_APPLY_CONFIG callback, EvtSerCx2ApplyConfig, EvtSerCx2ApplyConfig callback function [Serial Ports], serports.evtsercx2applyconfig
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
- - EvtSerCx2ApplyConfig
+ - EVT_SERCX2_APPLY_CONFIG
 ---
 
 # EVT_SERCX2_APPLY_CONFIG callback function
@@ -50,14 +49,14 @@ The <i>EvtSerCx2ApplyConfig</i> event callback function is called by version 2 o
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the serial controller. The serial controller driver created this object in its <a href="/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add">EvtDriverDeviceAdd</a> callback function. For more information, see <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2initializedevice">SerCx2InitializeDevice</a>.
 
-### -param ConnectionParameters 
+### -param ConnectionParameters [in]
 
-[in]
+
 A pointer to the connection parameters structure. This function must cast the pointer to the appropriate pointer type, parse the data structure to obtain the configuration settings, and apply these settings to the serial controller hardware. The connection parameters structure is defined by the hardware platform vendor and is opaque to both SerCx2 and the operating system. For more information, see Remarks.
 
 ## -returns
@@ -210,3 +209,4 @@ The pshpack1.h and poppack.h header files in the preceding code example control 
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2initializedevice">SerCx2InitializeDevice</a>
+

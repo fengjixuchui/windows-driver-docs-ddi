@@ -4,7 +4,6 @@ title: _INTERNAL_I8042_HOOK_MOUSE (ntdd8042.h)
 description: INTERNAL_I8042_HOOK_MOUSE is used by I8042prt to connect an optional callback routine that supplements the operation of the mouse ISR. The callback can be supplied by an optional, vendor-supplied, upper-level filter driver.
 old-location: hid\internal_i8042_hook_mouse.htm
 tech.root: hid
-ms.assetid: 7ac9fc14-9e94-412b-811a-6013d46020a0
 ms.date: 04/30/2018
 keywords: ["INTERNAL_I8042_HOOK_MOUSE structure"]
 ms.keywords: "*PINTERNAL_I8042_HOOK_MOUSE, INTERNAL_I8042_HOOK_MOUSE, INTERNAL_I8042_HOOK_MOUSE structure [Human Input Devices], PINTERNAL_I8042_HOOK_MOUSE, PINTERNAL_I8042_HOOK_MOUSE structure pointer [Human Input Devices], _INTERNAL_I8042_HOOK_MOUSE, hid.internal_i8042_hook_mouse, i8042ref_23133caf-3bd0-4160-8213-899e37b7703e.xml, ntdd8042/INTERNAL_I8042_HOOK_MOUSE, ntdd8042/PINTERNAL_I8042_HOOK_MOUSE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntdd8042.h
 api_name:
+ - _INTERNAL_I8042_HOOK_MOUSE
+ - PINTERNAL_I8042_HOOK_MOUSE
  - INTERNAL_I8042_HOOK_MOUSE
 ---
 
@@ -101,3 +102,4 @@ This structure is only used with an <a href="/windows-hardware/drivers/ddi/ntdd8
 
 
 <a href="/windows-hardware/drivers/ddi/ntdd8042/nc-ntdd8042-pi8042_queue_packet">PI8042_QUEUE_PACKET</a>
+

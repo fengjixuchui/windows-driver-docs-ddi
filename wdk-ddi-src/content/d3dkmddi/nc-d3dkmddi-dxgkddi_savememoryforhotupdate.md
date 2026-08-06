@@ -3,7 +3,6 @@ UID: NC:d3dkmddi.DXGKDDI_SAVEMEMORYFORHOTUPDATE
 title: DXGKDDI_SAVEMEMORYFORHOTUPDATE
 description: Before the driver is unloaded, it must call the DXGKDDI_SAVEMEMORYFORHOTUPDATE callback function to save information.
 tech.root: display
-ms.assetid: c3061090-527b-4aff-a3aa-e9277b4a9a51
 ms.date: 04/04/2019
 keywords: ["DXGKDDI_SAVEMEMORYFORHOTUPDATE callback function"]
 req.header: d3dkmddi.h
@@ -49,13 +48,13 @@ Before the driver is unloaded, it must call the DXGKDDI_SAVEMEMORYFORHOTUPDATE c
 
 ## -parameters
 
-### -param hContext
+### -param hContext [in]
 
-[in] A handle to the miniport context that is returned by the driver in DXGKDDI_DRIVERHOTUPDATE_INTERFACE.
+A handle to the miniport context that is returned by the driver in DXGKDDI_DRIVERHOTUPDATE_INTERFACE.
 
-### -param pArgs
+### -param pArgs [in]
 
-[in] A pointer to a [PDXGKARG_SAVEMEMORYFORHOTUPDATE](ns-d3dkmddi-dxgkarg_savememoryforhotupdate.md) structure.
+A pointer to a [PDXGKARG_SAVEMEMORYFORHOTUPDATE](ns-d3dkmddi-dxgkarg_savememoryforhotupdate.md) structure.
 
 ## -returns
 

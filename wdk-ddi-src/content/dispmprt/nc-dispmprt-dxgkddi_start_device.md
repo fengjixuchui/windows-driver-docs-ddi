@@ -4,7 +4,6 @@ title: DXGKDDI_START_DEVICE (dispmprt.h)
 description: The DxgkDdiStartDevice function prepares a display adapter to receive I/O requests.
 old-location: display\dxgkddistartdevice.htm
 tech.root: display
-ms.assetid: ffacbb39-2581-4207-841d-28ce57fbc64d
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_START_DEVICE callback function"]
 ms.keywords: DXGKDDI_START_DEVICE, DXGKDDI_START_DEVICE callback, DmFunctions_3b4ea5b7-9ccb-408f-9f37-693965ee99cf.xml, DxgkDdiStartDevice, DxgkDdiStartDevice callback function [Display Devices], display.dxgkddistartdevice, dispmprt/DxgkDdiStartDevice
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
- - DxgkDdiStartDevice
+ - DXGKDDI_START_DEVICE
 ---
 
 # DXGKDDI_START_DEVICE callback function
@@ -50,29 +49,29 @@ The <i>DxgkDdiStartDevice</i> function prepares a display adapter to receive I/O
 
 ## -parameters
 
-### -param MiniportDeviceContext 
+### -param MiniportDeviceContext [in]
 
-[in]
+
 A handle to a context block associated with a display adapter. The display miniport driver's <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.
 
-### -param DxgkStartInfo 
+### -param DxgkStartInfo [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_start_info">DXGK_START_INFO</a> structure that contains information that the display miniport driver needs for initialization.
 
-### -param DxgkInterface 
+### -param DxgkInterface [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgkrnl_interface">DXGKRNL_INTERFACE</a> structure that contains pointers to functions, implemented by the DirectX graphics kernel subsystem, that the display miniport driver can call.
 
-### -param NumberOfVideoPresentSources 
+### -param NumberOfVideoPresentSources [out]
 
-[out]
+
 A pointer to a <b>ULONG</b> variable that receives the number of video present sources supported by the display adapter. For more information about video present sources, see <a href="/windows-hardware/drivers/display/multiple-monitors-and-video-present-networks">Multiple Monitors and Video Present Networks</a>.
 
-### -param NumberOfChildren 
+### -param NumberOfChildren [out]
 
-[out]
+
 A pointer to a <b>ULONG</b> variable that receives the total number of devices that are children of the display adapter represented by <i>MiniportDeviceContext</i>. This count must include potential child devices as well as child devices that are currently present. For example, if docking a portable computer will make additional video outputs available, those video outputs must be counted regardless of whether the portable computer is currently docked. For more information about child devices, see <a href="/windows-hardware/drivers/display/child-devices-of-the-display-adapter">Child Devices of the Display Adapter</a>.
 
 ## -returns
@@ -144,3 +143,4 @@ The <i>DxgkDdiStartDevice</i> function should be made pageable.
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_stop_device">DxgkDdiStopDevice</a>
+

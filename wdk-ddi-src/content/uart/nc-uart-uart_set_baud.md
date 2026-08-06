@@ -2,8 +2,7 @@
 UID: NC:uart.UART_SET_BAUD
 title: UART_SET_BAUD (uart.h)
 description: Changes the baud rate of the UART hardware.
-tech.root: serports
-ms.assetid: 1bce0489-47eb-4e27-b54c-6e920fde2039
+tech.root: uart
 ms.date: 10/19/2018
 keywords: ["UART_SET_BAUD callback function"]
 req.header: uart.h
@@ -46,9 +45,9 @@ Changes the baud rate of the UART hardware.
 
 ## -parameters
 
-### -param Port
+### -param Port [_Inout_]
 
-[_Inout_] A pointer to a [**_CPPORT**](ns-uart-_cpport.md) structure that contains the  address of the port object that describes the UART hardware.
+A pointer to a [**_CPPORT**](ns-uart-_cpport.md) structure that contains the  address of the port object that describes the UART hardware.
 
 ### -param Rate:
 
@@ -86,3 +85,4 @@ Register your implementation of this callback function by setting the appropriat
 
 [**_CPPORT**](ns-uart-_cpport.md)
 
+[**uart.h**](index.md)

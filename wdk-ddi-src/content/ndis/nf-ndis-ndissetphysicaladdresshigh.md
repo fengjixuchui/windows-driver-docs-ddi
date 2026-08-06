@@ -4,7 +4,6 @@ title: NdisSetPhysicalAddressHigh macro (ndis.h)
 description: NdisSetPhysicalAddressHigh sets the high-order part of a given physical address to a given value.
 old-location: netvista\ndissetphysicaladdresshigh.htm
 tech.root: netvista
-ms.assetid: bbe58583-ea65-4920-9056-ab46bd881618
 ms.date: 05/02/2018
 keywords: ["NdisSetPhysicalAddressHigh macro"]
 ms.keywords: NdisSetPhysicalAddressHigh, NdisSetPhysicalAddressHigh macro [Network Drivers Starting with Windows Vista], miniport_memory_shared_ref_4644a620-5ec7-449e-9886-ddee46d9ff2a.xml, ndis/NdisSetPhysicalAddressHigh, netvista.ndissetphysicaladdresshigh
@@ -51,14 +50,14 @@ api_name:
 
 ## -parameters
 
-### -param _PhysicalAddress 
+### -param _PhysicalAddress [in]
 
-[in]
+
 Specifies a physical address of an OS-dependent size.
 
-### -param _Value 
+### -param _Value [in]
 
-[in]
+
 Specifies the value to be written into the high-order part of the address.
 
 ## -see-also

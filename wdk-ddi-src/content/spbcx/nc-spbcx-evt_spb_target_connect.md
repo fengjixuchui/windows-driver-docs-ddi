@@ -4,7 +4,6 @@ title: EVT_SPB_TARGET_CONNECT (spbcx.h)
 description: An SPB controller driver's EvtSpbTargetConnect event callback function opens a connection to a target device on the bus.
 old-location: spb\evtspbtargetconnect.htm
 tech.root: SPB
-ms.assetid: D90DD169-A989-4D08-B1B8-BDE7EC9B7A82
 ms.date: 04/30/2018
 keywords: ["EVT_SPB_TARGET_CONNECT callback function"]
 ms.keywords: EVT_SPB_TARGET_CONNECT, EVT_SPB_TARGET_CONNECT callback, EvtSpbTargetConnect, EvtSpbTargetConnect callback function [Buses], SPB.evtspbtargetconnect, spbcx/EvtSpbTargetConnect
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Spbcx.h
 api_name:
- - EvtSpbTargetConnect
+ - EVT_SPB_TARGET_CONNECT
 ---
 
 # EVT_SPB_TARGET_CONNECT callback function
@@ -50,14 +49,14 @@ An SPB controller driver's <i>EvtSpbTargetConnect</i> event callback function op
 
 ## -parameters
 
-### -param Controller 
+### -param Controller [in]
 
-[in]
+
 A WDFDEVICE handle to the <a href="/windows-hardware/drivers/wdf/framework-device-object">framework device object</a> that represents the SPB controller.
 
-### -param Target 
+### -param Target [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a> handle to the target to open.  The target is a peripheral device or port that is attached to the bus.
 
 ## -returns
@@ -126,3 +125,4 @@ The EVT_SPB_TARGET_CONNECT function type is defined in the Spbcx.h header file. 
 
 
 <a href="/windows-hardware/drivers/ddi/spbcx/nf-spbcx-spbdeviceinitialize">SpbDeviceInitialize</a>
+

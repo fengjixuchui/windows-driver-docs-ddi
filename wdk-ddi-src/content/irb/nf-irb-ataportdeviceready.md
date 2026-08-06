@@ -4,7 +4,6 @@ title: AtaPortDeviceReady function (irb.h)
 description: The AtaPortDeviceReady routine informs the port driver that the indicated device is ready to accept new requests.
 old-location: storage\ataportdeviceready.htm
 tech.root: storage
-ms.assetid: 65cbed1a-35f9-44f7-941a-ffc87cc79649
 ms.date: 03/29/2018
 keywords: ["AtaPortDeviceReady function"]
 ms.keywords: AtaPortDeviceReady, AtaPortDeviceReady routine [Storage Devices], atartns_28cebf8c-cdda-46f4-9785-184552630769.xml, irb/AtaPortDeviceReady, storage.ataportdeviceready
@@ -51,19 +50,19 @@ The <b>AtaPortDeviceReady</b> routine informs the port driver that the indicated
 
 ## -parameters
 
-### -param ChannelExtension 
+### -param ChannelExtension [in]
 
-[in]
+
 A pointer to the channel extension.
 
-### -param TargetId 
+### -param TargetId [in]
 
-[in]
+
 Specifies the target identifier of the device.
 
-### -param Lun 
+### -param Lun [in]
 
-[in]
+
 Specifies the logical unit number (LUN) of the device.
 
 ## -remarks

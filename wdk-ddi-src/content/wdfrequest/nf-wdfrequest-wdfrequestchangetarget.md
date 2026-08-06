@@ -4,7 +4,6 @@ title: WdfRequestChangeTarget function (wdfrequest.h)
 description: The WdfRequestChangeTarget method verifies that a specified I/O request can be sent to a specified I/O target.
 old-location: wdf\wdfrequestchangetarget.htm
 tech.root: wdf
-ms.assetid: 562e92b4-fe68-4301-af40-f535cc408b9d
 ms.date: 02/26/2018
 keywords: ["WdfRequestChangeTarget function"]
 ms.keywords: DFRequestObjectRef_3d1f75eb-de12-4a8e-8cb8-d5ebe941e70f.xml, WdfRequestChangeTarget, WdfRequestChangeTarget method, kmdf.wdfrequestchangetarget, wdf.wdfrequestchangetarget, wdfrequest/WdfRequestChangeTarget
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfRequestChangeTarget</b> method verifies that a specified I/O request c
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
-### -param IoTarget 
+### -param IoTarget [in]
 
-[in]
+
 A handle to a framework I/O target object.
 
 ## -returns

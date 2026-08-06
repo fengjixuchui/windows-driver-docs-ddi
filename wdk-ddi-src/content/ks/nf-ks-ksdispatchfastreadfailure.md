@@ -4,7 +4,6 @@ title: KsDispatchFastReadFailure function (ks.h)
 description: The KsDispatchFastReadFailure function is used in a KSDISPATCH_TABLE.FastRead entry when fast I/O read is not handled. The function should always return FALSE.
 old-location: stream\ksdispatchfastreadfailure.htm
 tech.root: stream
-ms.assetid: 7e0c72ce-0959-4835-ac1a-3f37869cc81f
 ms.date: 04/23/2018
 keywords: ["KsDispatchFastReadFailure function"]
 ms.keywords: KsDispatchFastReadFailure, KsDispatchFastReadFailure function [Streaming Media Devices], KsDispatchFastWriteFailure, ks/KsDispatchFastReadFailure, ksfunc_fe3ea42f-80ae-4fbd-a2c2-55e957e913cc.xml, stream.ksdispatchfastreadfailure
@@ -51,44 +50,44 @@ The <b>KsDispatchFastReadFailure</b> function is used in a KSDISPATCH_TABLE.Fast
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Not used.
 
-### -param FileOffset 
+### -param FileOffset [in]
 
-[in]
+
 Not used.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Not used.
 
-### -param Wait 
+### -param Wait [in]
 
-[in]
+
 Not used.
 
-### -param LockKey 
+### -param LockKey [in]
 
-[in]
+
 Not used.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 Not used.
 
-### -param IoStatus 
+### -param IoStatus [out]
 
-[out]
+
 Not used.
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Not used.
 
 ## -returns

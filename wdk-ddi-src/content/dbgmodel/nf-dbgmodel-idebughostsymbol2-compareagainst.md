@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostSymbol2.CompareAgainst
 title: IDebugHostSymbol2::CompareAgainst (dbgmodel.h)
-description: Compares two symbols for equality.
-ms.assetid: abdc73ad-ae24-43cd-9b66-9f063a554cda
+description: "The IDebugHostSymbol2::CompareAgainst method, when called on a symbol, compares the symbol against another specified symbol for interface pointer equality."
 ms.date: 09/20/2018
 keywords: ["IDebugHostSymbol2::CompareAgainst"]
 ms.keywords: IDebugHostSymbol2::CompareAgainst, CompareAgainst, IDebugHostSymbol2.CompareAgainst, IDebugHostSymbol2::CompareAgainst, IDebugHostSymbol2.CompareAgainst
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostSymbol2.CompareAgainst
+ - IDebugHostSymbol2::CompareAgainst
 ---
 
 # IDebugHostSymbol2::CompareAgainst

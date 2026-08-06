@@ -2,7 +2,6 @@
 UID: NF:d3dkmthk.D3DKMTQueryClockCalibration
 title: D3DKMTQueryClockCalibration function (d3dkmthk.h)
 description: Queries clock calibration.
-ms.assetid: 133d6904-0c36-47a9-b53c-06b767499248
 ms.date: 10/19/2018
 keywords: ["D3DKMTQueryClockCalibration function"]
 ms.keywords: D3DKMTQueryClockCalibration
@@ -50,7 +49,7 @@ Queries clock calibration.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_QUERYCLOCKCALIBRATION](../d3dkmdt/ns-d3dkmdt-_d3dkmt_queryclockcalibration.md) structure.
 

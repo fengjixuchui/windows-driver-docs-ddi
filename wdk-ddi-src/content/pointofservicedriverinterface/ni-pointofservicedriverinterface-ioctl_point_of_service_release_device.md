@@ -4,7 +4,6 @@ title: IOCTL_POINT_OF_SERVICE_RELEASE_DEVICE (pointofservicedriverinterface.h)
 description: This I/O control function is called when a client is ready to relinquish its claim on a device.
 old-location: pos\ioctl_point_of_service_release_device.htm
 tech.root: pos
-ms.assetid: 623feb2b-8c49-41e8-9de5-d5955843c6f7
 ms.date: 08/21/2020
 keywords: ["IOCTL_POINT_OF_SERVICE_RELEASE_DEVICE IOCTL"]
 ms.keywords: IOCTL_POINT_OF_SERVICE_RELEASE_DEVICE, IOCTL_POINT_OF_SERVICE_RELEASE_DEVICE control, IOCTL_POINT_OF_SERVICE_RELEASE_DEVICE control code, pointofservicedriverinterface/IOCTL_POINT_OF_SERVICE_RELEASE_DEVICE, pos.ioctl_point_of_service_release_device
@@ -49,6 +48,8 @@ api_name:
 This I/O control function is called when a client is ready to relinquish its claim on a device.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

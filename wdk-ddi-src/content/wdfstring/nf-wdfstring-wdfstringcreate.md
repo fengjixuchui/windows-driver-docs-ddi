@@ -4,7 +4,6 @@ title: WdfStringCreate function (wdfstring.h)
 description: The WdfStringCreate method creates a framework string object and optionally assigns a specified Unicode string to the object.
 old-location: wdf\wdfstringcreate.htm
 tech.root: wdf
-ms.assetid: 491b99c6-5531-4d24-83a4-c404b58d111c
 ms.date: 02/26/2018
 keywords: ["WdfStringCreate function"]
 ms.keywords: DFStringObjectRef_1c460976-7e49-45c8-9fdb-c6651048d387.xml, WdfStringCreate, WdfStringCreate method, kmdf.wdfstringcreate, wdf.wdfstringcreate, wdfstring/WdfStringCreate
@@ -55,19 +54,19 @@ The <b>WdfStringCreate</b> method creates a framework string object and optional
 
 ## -parameters
 
-### -param UnicodeString 
+### -param UnicodeString [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a Unicode string constant. The framework copies the string to the new framework string object. This pointer is optional and can be <b>NULL</b>.
 
-### -param StringAttributes 
+### -param StringAttributes [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains driver-supplied attributes for the new string object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param String 
+### -param String [out]
 
-[out]
+
 A pointer to a location that receives a handle to the new string object.
 
 ## -returns

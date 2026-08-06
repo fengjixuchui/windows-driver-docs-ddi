@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl2.GetNotifyEventHandle
 title: IDebugControl2::GetNotifyEventHandle (dbgeng.h)
-description: The GetNotifyEventHandle method receives the handle of the event that will be signaled after the next exception in a target.
+description: Learn about the GetNotifyEventHandle method, which receives the handle of the event that will be signaled after the next exception in a target.
 old-location: debugger\getnotifyeventhandle.htm
 tech.root: debugger
-ms.assetid: a949a583-1ee1-4538-9117-4ad1482e8bc8
 ms.date: 05/03/2018
 keywords: ["IDebugControl2::GetNotifyEventHandle"]
 ms.keywords: GetNotifyEventHandle, GetNotifyEventHandle method [Windows Debugging], GetNotifyEventHandle method [Windows Debugging],IDebugControl interface, GetNotifyEventHandle method [Windows Debugging],IDebugControl2 interface, GetNotifyEventHandle method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],GetNotifyEventHandle method, IDebugControl2 interface [Windows Debugging],GetNotifyEventHandle method, IDebugControl2.GetNotifyEventHandle, IDebugControl2::GetNotifyEventHandle, IDebugControl3 interface [Windows Debugging],GetNotifyEventHandle method, IDebugControl3::GetNotifyEventHandle, IDebugControl::GetNotifyEventHandle, IDebugControl_73931ad2-ace6-4d38-ad22-c322f2e3c13c.xml, dbgeng/IDebugControl2::GetNotifyEventHandle, dbgeng/IDebugControl3::GetNotifyEventHandle, dbgeng/IDebugControl::GetNotifyEventHandle, debugger.getnotifyeventhandle
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.GetNotifyEventHandle
- - IDebugControl2.GetNotifyEventHandle
- - IDebugControl3.GetNotifyEventHandle
+ - IDebugControl2::GetNotifyEventHandle
 ---
 
 # IDebugControl2::GetNotifyEventHandle
@@ -52,9 +49,9 @@ The <b>GetNotifyEventHandle</b> method receives the handle of the event that wil
 
 ## -parameters
 
-### -param Handle 
+### -param Handle [out]
 
-[out]
+
 Receives the handle of the event that will be signaled.  If <i>Handle</i> is <b>NULL</b>, no event will be signaled.
 
 ## -returns
@@ -100,3 +97,4 @@ The event will only be signaled once.  After it has been signaled, this method w
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setnotifyeventhandle">SetNotifyEventHandle</a>
+

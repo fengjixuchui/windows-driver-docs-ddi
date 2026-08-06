@@ -4,7 +4,6 @@ title: _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS (dot11wdi.h)
 description: The NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS structure defines the set of handlers that a WDI miniport driver must implement.
 old-location: netvista\ndis_miniport_driver_wdi_characteristics.htm
 tech.root: netvista
-ms.assetid: 2F69C228-FF2D-4277-A4C9-14FBADA1CD31
 ms.date: 05/02/2018
 keywords: ["NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS structure"]
 ms.keywords: "*PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, dot11wdi/NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, dot11wdi/PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS, netvista.ndis_miniport_driver_wdi_characteristics"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
+ - _NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
+ - PNDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
  - NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS
 ---
 
@@ -50,6 +51,9 @@ api_name:
 
 ## -description
 
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
+
 The NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS structure defines the set of handlers that a WDI miniport driver must implement. It is used by the IHV driver to register additional handlers for the control path and the full set of handlers for the data path.
 
 ## -struct-fields
@@ -57,7 +61,7 @@ The NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS structure defines the set of handle
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_MINIPORT_DRIVER_WDI_CHARACTERISTICS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_MINIPORT_WDI_CHARACTERISTICS.
@@ -150,3 +154,4 @@ The entry point of the <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11w
 ### -field LeCancelIdleNotificationHandler
 
 The entry point of the <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_cancel_idle_notification">MiniportWdiCancelIdleNotification</a> handler function.
+

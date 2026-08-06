@@ -4,7 +4,6 @@ title: _HID_DESCRIPTOR (hidport.h)
 description: The HID_DESCRIPTOR structure represents a HID descriptor for a HIDClass device.
 old-location: hid\hid_descriptor.htm
 tech.root: hid
-ms.assetid: 80a6a5d8-b13a-418d-a4bd-941d3a913c1e
 ms.date: 04/30/2018
 keywords: ["HID_DESCRIPTOR structure"]
 ms.keywords: "*PHID_DESCRIPTOR, HID_DESCRIPTOR, HID_DESCRIPTOR structure [Human Input Devices], PHID_DESCRIPTOR, PHID_DESCRIPTOR structure pointer [Human Input Devices], _HID_DESCRIPTOR, hid.hid_descriptor, hidport/HID_DEVICE_ATTRIBUTES, hidport/PHID_DESCRIPTOR, hidstrct_07b2c0af-449d-484e-8aa8-9d7e3909d113.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hidport.h
 api_name:
+ - _HID_DESCRIPTOR
+ - PHID_DESCRIPTOR
  - HID_DESCRIPTOR
 ---
 
@@ -74,10 +75,11 @@ The HID_DESCRIPTOR structure represents a HID descriptor for a HIDClass device.
 
 ## -remarks
 
-The HID class driver uses an <a href="/previous-versions/hh439622(v=vs.85)">IOCTL_HID_GET_DEVICE_DESCRIPTOR</a> request to obtain a device's HID descriptor from a HID minidriver.
+The HID class driver uses an <a href="/windows-hardware/drivers/ddi/hidport/ni-hidport-ioctl_hid_get_device_descriptor">IOCTL_HID_GET_DEVICE_DESCRIPTOR</a> request to obtain a device's HID descriptor from a HID minidriver.
 
 For information about HID descriptors, see the Universal Serial Bus (USB) standard<i> Device Class Definition for Human Interface Devices (HID)</i> located at the <a href="https://www.usb.org/">USB Implementers Forum website</a>.
 
 ## -see-also
 
-<a href="/previous-versions/hh439622(v=vs.85)">IOCTL_HID_GET_DEVICE_DESCRIPTOR</a>
+<a href="/windows-hardware/drivers/ddi/hidport/ni-hidport-ioctl_hid_get_device_descriptor">IOCTL_HID_GET_DEVICE_DESCRIPTOR</a>
+

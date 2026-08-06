@@ -4,7 +4,6 @@ title: CcPrepareMdlWrite function (ntifs.h)
 description: The CcPrepareMdlWrite routine provides direct access to cached file memory so that the caller can write data to the file.
 old-location: ifsk\ccpreparemdlwrite.htm
 tech.root: ifsk
-ms.assetid: 84e231ad-50a1-471e-b514-6b769f2a7e1e
 ms.date: 04/16/2018
 keywords: ["CcPrepareMdlWrite function"]
 ms.keywords: CcPrepareMdlWrite, CcPrepareMdlWrite routine [Installable File System Drivers], ccref_2523ff15-d200-4f45-bc05-aab30afadc15.xml, ifsk.ccpreparemdlwrite, ntifs/CcPrepareMdlWrite
@@ -50,36 +49,36 @@ The <b>CcPrepareMdlWrite</b> routine provides direct access to cached file memor
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to a file object for the cached file.
 
-### -param FileOffset 
+### -param FileOffset [in]
 
-[in]
+
 Pointer to a variable that specifies the starting byte offset within the cached file where the data is to be written.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Length in bytes of the data to be written to the system cache.
 
-### -param MdlChain 
+### -param MdlChain [out]
 
-[out]
+
 A chain of one or more memory descriptor lists (MDL) describing the pages to which the data is to be written.
 
-### -param IoStatus 
+### -param IoStatus [out]
 
-[out]
+
 Pointer to an IO_STATUS_BLOCK structure. If the call to <b>CcPrepareMdlWrite</b> succeeds, <i>IoStatus.Status</i> is set to STATUS_SUCCESS. Otherwise, it is set to an appropriate NTSTATUS error code. <i>IoStatus.Information</i> is set to the actual number of bytes that were successfully locked down in the MDL chain.
 
 ## -remarks
 
 <b>CcPrepareMdlWrite</b> is similar to <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-cccopywrite">CcCopyWrite</a>, except that the data is not copied to the cached file. Instead, the physical pages to be overwritten in the system cache are locked in memory, and <b>CcPrepareMdlWrite</b> returns one or more memory descriptor lists (MDL) describing the specified byte range. These pages remain locked in memory until <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccmdlwritecomplete">CcMdlWriteComplete</a> or <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccmdlwriteabort">CcMdlWriteAbort</a> is called. Thus each call to <b>CcPrepareMdlWrite</b> must be followed by a call to <b>CcMdlWriteComplete</b> or <b>CcMdlWriteAbort</b>.
 
-Note that the pages described by the MDL are locked in memory, but not mapped in system space. The caller can perform this mapping by calling <a href="/windows-hardware/drivers/kernel/mm-bad-pointer">MmGetSystemAddressForMdlSafe</a>.
+Note that the pages described by the MDL are locked in memory, but not mapped in system space. The caller can perform this mapping by calling [MmGetSystemAddressForMdlSafe](../wdm/nf-wdm-mmgetsystemaddressformdlsafe.md).
 
 Note that even if the call to <b>CcPrepareMdlWrite</b> fails, one or more MDLs may have been allocated. The caller can examine the value of <i>IoStatus.Information</i> to determine whether this has occurred. If it has, the caller must call <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccmdlwritecomplete">CcMdlWriteComplete</a> to free the allocated MDLs.
 
@@ -117,15 +116,15 @@ To cache a file, use <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccini
 
 
 
-<a href="/windows-hardware/drivers/kernel/mm-bad-pointer">MmGetMdlByteOffset</a>
+[MmGetMdlByteOffset](../wdm/nf-wdm-mmgetmdlbyteoffset.md)
 
 
 
-<a href="/windows-hardware/drivers/kernel/mm-bad-pointer">MmGetMdlPfnArray</a>
+<a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-mmgetmdlpfnarray">MmGetMdlPfnArray</a>
 
 
 
-<a href="/windows-hardware/drivers/kernel/mm-bad-pointer">MmGetMdlVirtualAddress</a>
+[MmGetMdlVirtualAddress](../wdm/nf-wdm-mmgetmdlvirtualaddress.md)
 
 
 
@@ -133,11 +132,11 @@ To cache a file, use <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccini
 
 
 
-<a href="/windows-hardware/drivers/kernel/mm-bad-pointer">MmGetSystemAddressForMdlSafe</a>
+[MmGetSystemAddressForMdlSafe](../wdm/nf-wdm-mmgetsystemaddressformdlsafe.md)
 
 
 
-<a href="/windows-hardware/drivers/kernel/mm-bad-pointer">MmInitializeMdl</a>
+[MmInitializeMdl](../wdm/nf-wdm-mminitializemdl.md)
 
 
 
@@ -145,7 +144,7 @@ To cache a file, use <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccini
 
 
 
-<a href="/windows-hardware/drivers/kernel/mm-bad-pointer">MmPrepareMdlForReuse</a>
+[MmPrepareMdlForReuse](../wdm/nf-wdm-mmpreparemdlforreuse.md)
 
 
 

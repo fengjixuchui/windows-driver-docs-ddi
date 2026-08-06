@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostModule2.GetImageName
 title: IDebugHostModule2::GetImageName (dbgmodel.h)
-description: The GetImageName method returns the image name of the module.
-ms.assetid: 1849fc25-812b-46dd-b4ec-1c027ec68c6d
+description: "The IDebugHostModule2::GetImageName method gets the image name or full path of the module as an allocated string."
 ms.date: 09/18/2018
 keywords: ["IDebugHostModule2::GetImageName"]
 ms.keywords: IDebugHostModule2::GetImageName, GetImageName, IDebugHostModule2.GetImageName, IDebugHostModule2::GetImageName, IDebugHostModule2.GetImageName
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostModule2.GetImageName
+ - IDebugHostModule2::GetImageName
 ---
 
 # IDebugHostModule2::GetImageName
@@ -65,7 +64,7 @@ This method returns HRESULT which indicates success or failure.
 **Sample Code**
 
 ```cpp
-ComPtr<IDebugHostModule> spModule; /* get a module (see FindModuleByName) */
+ComPtr<IDebugHostModule2> spModule; /* get a module (see FindModuleByName) */
 
 BSTR imageName;
 if (SUCCEEDED(spModule->GetImageName(false, &imageName)))

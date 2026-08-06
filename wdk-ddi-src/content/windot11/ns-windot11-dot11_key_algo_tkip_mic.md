@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11.DOT11_KEY_ALGO_TKIP_MIC
 title: DOT11_KEY_ALGO_TKIP_MIC (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_KEY_ALGO_TKIP_MIC structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_key_algo_tkip_mic.htm
 tech.root: netvista
-ms.assetid: 2f6e08e3-50cf-4d2e-aac8-185a5c0b38ed
 ms.date: 02/16/2018
 keywords: ["DOT11_KEY_ALGO_TKIP_MIC structure"]
 ms.keywords: "*PDOT11_KEY_ALGO_TKIP_MIC, DOT11_KEY_ALGO_TKIP_MIC, DOT11_KEY_ALGO_TKIP_MIC structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_09def77d-63b7-4db5-8689-8be14e166738.xml, PDOT11_KEY_ALGO_TKIP_MIC, PDOT11_KEY_ALGO_TKIP_MIC structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_key_algo_tkip_mic, windot11/DOT11_KEY_ALGO_TKIP_MIC, windot11/PDOT11_KEY_ALGO_TKIP_MIC"
@@ -41,8 +40,7 @@ api_location:
  - windot11.h
 api_name:
  - DOT11_KEY_ALGO_TKIP_MIC
-product:
- - Windows 10 or later.
+ - PDOT11_KEY_ALGO_TKIP_MIC
 ---
 
 # DOT11_KEY_ALGO_TKIP_MIC structure
@@ -50,7 +48,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_KEY_ALGO_TKIP_MIC structure defines a cipher key that is used by the TKIP algorithm for
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_KEY_ALGO_TKIP_MIC structure defines a cipher key that is used by the TKIP algorithm for
   data encryption and decryption. The structure also defines a message integrity code (MIC) used by the
   Michael algorithm for verifying data integrity.
 
@@ -125,3 +126,4 @@ Initialize the TSC counter used for the send path to any value.
 
 <a href="..\windot11\ns-windot11-dot11_cipher_default_key_value.md">
    DOT11_CIPHER_DEFAULT_KEY_VALUE</a>
+

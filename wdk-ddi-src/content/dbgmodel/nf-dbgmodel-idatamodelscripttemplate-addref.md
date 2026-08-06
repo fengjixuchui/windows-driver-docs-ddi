@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelScriptTemplate.AddRef
 title: IDataModelScriptTemplate::AddRef (dbgmodel.h)
-description: Increments the reference count for an interface on an object. This method should be called for every new copy of a pointer to an interface on an object.
-ms.assetid: ba87c050-a2bf-4bdf-ab13-5ce5914aa616
+description: "The IDataModelScriptTemplate::AddRef method increments the reference count for an interface on an object."
 ms.date: 09/21/2018
 keywords: ["IDataModelScriptTemplate::AddRef"]
 ms.keywords: IDataModelScriptTemplate::AddRef, AddRef, IDataModelScriptTemplate.AddRef, IDataModelScriptTemplate::AddRef, IDataModelScriptTemplate.AddRef
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelScriptTemplate.AddRef
+ - IDataModelScriptTemplate::AddRef
 ---
 
 # IDataModelScriptTemplate::AddRef
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IDataModelScriptTemplate interface](nn-dbgmodel-idatamodelscripttemplate.md)
+

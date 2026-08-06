@@ -4,7 +4,6 @@ title: IDebugOutputCallbacks2::Output (dbgeng.h)
 description: This method is not used.
 old-location: debugger\idebugoutputcallbacks2_output.htm
 tech.root: debugger
-ms.assetid: 3C1A9993-8E95-455C-BC1D-DD2526A156D9
 ms.date: 05/03/2018
 keywords: ["IDebugOutputCallbacks2::Output"]
 ms.keywords: IDebugOutputCallbacks2 interface [Windows Debugging],Output method, IDebugOutputCallbacks2.Output, IDebugOutputCallbacks2::Output, Output, Output method [Windows Debugging], Output method [Windows Debugging],IDebugOutputCallbacks2 interface, dbgeng/IDebugOutputCallbacks2::Output, debugger.idebugoutputcallbacks2_output
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugOutputCallbacks2.Output
+ - IDebugOutputCallbacks2::Output
 ---
 
 # IDebugOutputCallbacks2::Output
@@ -50,14 +49,14 @@ This method is not used.
 
 ## -parameters
 
-### -param Mask 
+### -param Mask [in]
 
-[in]
+
 This value is not used.
 
-### -param Text 
+### -param Text [in]
 
-[in]
+
 This value is not used.
 
 ## -returns
@@ -67,3 +66,4 @@ This method is not used.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugoutputcallbacks2">IDebugOutputCallbacks2</a>
+

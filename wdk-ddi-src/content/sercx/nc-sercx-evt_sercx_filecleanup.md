@@ -4,7 +4,6 @@ title: EVT_SERCX_FILECLEANUP (sercx.h)
 description: The EvtSerCxFileCleanup event callback function notifies the serial controller driver that a client has closed the last handle to the file object that represents the serial controller device.
 old-location: serports\evtsercxfilecleanup.htm
 tech.root: serports
-ms.assetid: D9E19BD1-2C44-4F86-9AEB-F50443FAE8DC
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX_FILECLEANUP callback function"]
 ms.keywords: 1/EvtSerCxFileCleanup, EVT_SERCX_FILECLEANUP, EVT_SERCX_FILECLEANUP callback, EvtSerCxFileCleanup, EvtSerCxFileCleanup callback function [Serial Ports], serports.evtsercxfilecleanup
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 1.0\Sercx.h
 api_name:
- - EvtSerCxFileCleanup
+ - EVT_SERCX_FILECLEANUP
 ---
 
 # EVT_SERCX_FILECLEANUP callback function
@@ -50,9 +49,9 @@ The <i>EvtSerCxFileCleanup</i> event callback function notifies the serial contr
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the serial controller.
 
 ## -remarks
@@ -115,3 +114,4 @@ For more information about SDV requirements for function declarations, see <a hr
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercxinitialize">SerCxInitialize</a>
+

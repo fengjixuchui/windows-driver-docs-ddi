@@ -4,7 +4,6 @@ title: OpenPrintProcessor function (winsplp.h)
 description: A print processor's OpenPrintProcessor function prepares the print processor for printing a job and returns a handle.
 old-location: print\openprintprocessor.htm
 tech.root: print
-ms.assetid: bab79fb6-1bb0-48ec-9d60-fcb6e679b758
 ms.date: 04/20/2018
 keywords: ["OpenPrintProcessor function"]
 ms.keywords: OpenPrintProcessor, OpenPrintProcessor function [Print Devices], print.openprintprocessor, spoolfnc_b8a185f0-4289-49bb-bb98-b6f54b66fa70.xml, winsplp/OpenPrintProcessor
@@ -51,14 +50,14 @@ A print processor's <code>OpenPrintProcessor</code> function prepares the print 
 
 ## -parameters
 
-### -param pPrinterName 
+### -param pPrinterName [in]
 
-[in]
+
 Caller-supplied pointer to the name of the printer for which the print processor is being opened.
 
-### -param pPrintProcessorOpenData 
+### -param pPrintProcessorOpenData [in]
 
-[in]
+
 Caller-supplied pointer to a <a href="/windows-hardware/drivers/ddi/winsplp/ns-winsplp-_printprocessoropendata">PRINTPROCESSOROPENDATA</a> structure.
 
 ## -returns

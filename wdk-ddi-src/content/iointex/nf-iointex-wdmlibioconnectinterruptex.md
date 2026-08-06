@@ -4,7 +4,6 @@ title: WdmlibIoConnectInterruptEx function (iointex.h)
 description: The WdmlibIoConnectInterruptEx function registers an interrupt-handling routine for a device's interrupts.
 old-location: kernel\wdmlibioconnectinterruptex.htm
 tech.root: kernel
-ms.assetid: 172598B1-C486-489F-98F0-382EB8139A08
 ms.date: 04/30/2018
 keywords: ["WdmlibIoConnectInterruptEx function"]
 ms.keywords: IoConnectInterruptEx, WdmlibIoConnectInterruptEx, WdmlibIoConnectInterruptEx function [Kernel-Mode Driver Architecture], iointex/IoConnectInterruptEx, iointex/WdmlibIoConnectInterruptEx, kernel.wdmlibioconnectinterruptex
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - WdmlibIoConnectInterruptEx
- - IoConnectInterruptEx
 ---
 
 # WdmlibIoConnectInterruptEx function
@@ -51,9 +49,9 @@ The <b>WdmlibIoConnectInterruptEx</b> function registers an interrupt-handling r
 
 ## -parameters
 
-### -param Parameters 
+### -param Parameters [in, out]
 
-[in, out]
+
 Pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_connect_interrupt_parameters">IO_CONNECT_INTERRUPT_PARAMETERS</a> structure that specifies the device and interrupt-handling routine. On return,  <b>WdmlibIoConnectInterruptEx</b> updates this structure to hold information about the device's interrupts.
 
 ## -returns
@@ -152,3 +150,4 @@ For more information about registering an interrupt-handling routine, see <a hre
 
 
 <a href="/windows-hardware/drivers/ddi/iointex/nf-iointex-wdmlibiodisconnectinterruptex">WdmlibIoDisconnectInterruptEx</a>
+

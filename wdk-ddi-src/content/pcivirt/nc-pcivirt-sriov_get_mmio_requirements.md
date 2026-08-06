@@ -4,7 +4,6 @@ title: SRIOV_GET_MMIO_REQUIREMENTS (pcivirt.h)
 description: This callback function is not supported.
 old-location: pci\sriov_get_mmio_requirements.htm
 tech.root: PCI
-ms.assetid: e9de3042-35aa-4ffa-ae1e-5135799c9a3b
 ms.date: 02/24/2018
 keywords: ["SRIOV_GET_MMIO_REQUIREMENTS callback"]
 ms.keywords: "*PSRIOV_GET_MMIO_REQUIREMENTS, *PSRIOV_GET_MMIO_REQUIREMENTS callback function pointer [Buses], PCI.sriov_get_mmio_requirements, SRIOV_GET_MMIO_REQUIREMENTS, SriovGetMmioRequirements, SriovGetMmioRequirements callback function [Buses], pcivirt/SriovGetMmioRequirements"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Pcivirt.h
 api_name:
- - PSRIOV_GET_MMIO_REQUIREMENTS
+ - SRIOV_GET_MMIO_REQUIREMENTS
 ---
 
 # SRIOV_GET_MMIO_REQUIREMENTS callback
@@ -52,29 +51,29 @@ Gets the Memory-Mapped I/O space of the specified PCI Express SR-IOV Virtual Fun
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to a driver-defined context.
 
-### -param VfIndex 
+### -param VfIndex [in]
 
-[in]
+
 A zero-based index of the VF to which this read operation applies.
 
-### -param BlockId 
+### -param BlockId [in]
 
-[in]
+
 A number identifying the block to be read.  This is defined by the provider of the PF driver.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 A pointer to a buffer that receives the data read from the VF's  MMIO space.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The length in bytes of this read operation.
 
 ## -returns
@@ -103,3 +102,4 @@ typedef SRIOV_GET_MMIO_REQUIREMENTS *PSRIOV_GET_MMIO_REQUIREMENTS;
 This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to retrieve MMIO requirement of the specified VF.
 
 <code>(Question: How is this registered?)</code>
+

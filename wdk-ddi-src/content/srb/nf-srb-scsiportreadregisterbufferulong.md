@@ -4,7 +4,6 @@ title: ScsiPortReadRegisterBufferUlong function (srb.h)
 description: The ScsiPortReadRegisterBufferUlong routine transfers a specified number of ULONG values from the HBA to a buffer.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
 old-location: storage\scsiportreadregisterbufferulong.htm
 tech.root: storage
-ms.assetid: 6b2d1893-8878-4ccd-bc0c-845e1cb8f6bf
 ms.date: 03/29/2018
 keywords: ["ScsiPortReadRegisterBufferUlong function"]
 ms.keywords: ScsiPortReadRegisterBufferUlong, ScsiPortReadRegisterBufferUlong routine [Storage Devices], scsiprt_4356902d-5810-4006-acbe-40d41c2d68e4.xml, srb/ScsiPortReadRegisterBufferUlong, storage.scsiportreadregisterbufferulong
@@ -52,19 +51,19 @@ The <b>ScsiPortReadRegisterBufferUlong</b> routine transfers a specified number 
 
 ## -parameters
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 Pointer to the register. The given <i>Register</i> must be in a mapped memory-space range returned by <b>ScsiPortGetDeviceBase</b>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to the buffer.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of ULONG values to be read from the HBA.
 
 ## -returns

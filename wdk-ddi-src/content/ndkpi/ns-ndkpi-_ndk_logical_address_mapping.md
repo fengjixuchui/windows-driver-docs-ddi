@@ -4,7 +4,6 @@ title: _NDK_LOGICAL_ADDRESS_MAPPING (ndkpi.h)
 description: The NDK_LOGICAL_ADDRESS_MAPPING structure contains an array of adapter logical addresses.
 old-location: netvista\ndk_logical_address_mapping.htm
 tech.root: netvista
-ms.assetid: 7FB34813-5F89-4B9C-9594-B23E7D4736C6
 ms.date: 05/02/2018
 keywords: ["NDK_LOGICAL_ADDRESS_MAPPING structure"]
 ms.keywords: NDK_LOGICAL_ADDRESS_MAPPING, NDK_LOGICAL_ADDRESS_MAPPING structure [Network Drivers Starting with Windows Vista], PNDK_LOGICAL_ADDRESS_MAPPING, PNDK_LOGICAL_ADDRESS_MAPPING structure pointer [Network Drivers Starting with Windows Vista], _NDK_LOGICAL_ADDRESS_MAPPING, ndkpi/NDK_LOGICAL_ADDRESS_MAPPING, ndkpi/PNDK_LOGICAL_ADDRESS_MAPPING, netvista.ndk_logical_address_mapping
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
+ - _NDK_LOGICAL_ADDRESS_MAPPING
  - NDK_LOGICAL_ADDRESS_MAPPING
 ---
 
@@ -65,7 +65,7 @@ Reserved for the NDK provider's use. The NDK consumer must not modify this membe
 An array of adapter logical addresses. Each logical address in the array corresponds to a page, of <b>PAGE_SIZE</b> bytes in length, and must be <b>PAGE_SIZE</b>-aligned. The array of pages correspond to a virtually contiguous memory region.
 The <b>NDK_LOGICAL_ADDRESS</b> datatype is defined as follows:
 
-<pre class="syntax" xml:space="preserve"><code>typedef PHYSICAL_ADDRESS NDK_LOGICAL_ADDRESS;</code></pre>
+<pre class="syntax"><code>typedef PHYSICAL_ADDRESS NDK_LOGICAL_ADDRESS;</code></pre>
 
 ## -remarks
 
@@ -78,3 +78,4 @@ The <b>NDK_LOGICAL_ADDRESS</b> datatype is defined as follows:
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_release_lam">NDK_FN_RELEASE_LAM</a>
+

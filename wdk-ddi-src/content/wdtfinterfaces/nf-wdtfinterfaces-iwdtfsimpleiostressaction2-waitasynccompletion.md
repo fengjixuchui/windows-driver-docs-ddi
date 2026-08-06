@@ -4,7 +4,6 @@ title: IWDTFSimpleIOStressAction2::WaitAsyncCompletion (wdtfinterfaces.h)
 description: Waits for the completion of any of the asynchronous events.
 old-location: dtf\iwdtfsimpleiostressaction2_waitasynccompletion.htm
 tech.root: dtf
-ms.assetid: 7aaf56cf-ba31-495b-9f54-35e9238f188a
 ms.date: 04/04/2018
 keywords: ["IWDTFSimpleIOStressAction2::WaitAsyncCompletion"]
 ms.keywords: IWDTFSimpleIOStressAction2 interface [Windows Device Testing Framework],WaitAsyncCompletion method, IWDTFSimpleIOStressAction2.WaitAsyncCompletion, IWDTFSimpleIOStressAction2::WaitAsyncCompletion, Microsoft.WDTF.IWDTFSimpleIOStressAction2.WaitAsyncCompletion, Microsoft::WDTF::IWDTFSimpleIOStressAction2::WaitAsyncCompletion, WaitAsyncCompletion, WaitAsyncCompletion method [Windows Device Testing Framework], WaitAsyncCompletion method [Windows Device Testing Framework],IWDTFSimpleIOStressAction2 interface, dtf.iwdtfsimpleiostressaction2_waitasynccompletion, wdtfinterfaces/IWDTFSimpleIOStressAction2::WaitAsyncCompletion
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTFInterfaces.Interop.dll
 api_name:
- - IWDTFSimpleIOStressAction2.WaitAsyncCompletion
+ - IWDTFSimpleIOStressAction2::WaitAsyncCompletion
 ---
 
 # IWDTFSimpleIOStressAction2::WaitAsyncCompletion
@@ -50,9 +49,9 @@ Waits for the completion of any of the asynchronous events.
 
 ## -parameters
 
-### -param pResult 
+### -param pResult [out, retval]
 
-[out, retval]
+
 True if the last asynchronous event succeeded; otherwise, false.
 
 ## -returns
@@ -62,3 +61,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtfinterfaces/nn-wdtfinterfaces-iwdtfsimpleiostressaction2">IWDTFSimpleIOStressAction2</a>
+

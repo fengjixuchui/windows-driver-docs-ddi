@@ -4,7 +4,6 @@ title: FsRtlCheckLockForReadAccess function (ntifs.h)
 description: The FsRtlCheckLockForReadAccess routine determines whether the process associated with a given IRP has read access to a locked region of a file.
 old-location: ifsk\fsrtlchecklockforreadaccess.htm
 tech.root: ifsk
-ms.assetid: 3734b286-b5cb-4906-9947-3ad23ef54267
 ms.date: 04/16/2018
 keywords: ["FsRtlCheckLockForReadAccess function"]
 ms.keywords: FsRtlCheckLockForReadAccess, FsRtlCheckLockForReadAccess routine [Installable File System Drivers], fsrtlref_6ec3721a-c748-40c2-8469-336a56fd9eb6.xml, ifsk.fsrtlchecklockforreadaccess, ntifs/FsRtlCheckLockForReadAccess
@@ -53,14 +52,14 @@ The <b>FsRtlCheckLockForReadAccess</b> routine determines whether the process as
 
 ## -parameters
 
-### -param FileLock 
+### -param FileLock [in]
 
-[in]
+
 Pointer to the FILE_LOCK structure for the file. This structure must have been initialized by a previous call to <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlallocatefilelock">FsRtlAllocateFileLock</a> or <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializefilelock">FsRtlInitializeFileLock</a>.
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Pointer to the IRP. Must be an IRP for a read operation.
 
 ## -returns

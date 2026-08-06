@@ -4,7 +4,6 @@ title: IXpsPartIterator::Current (filterpipeline.h)
 description: The Current method provides the current URI and part.
 old-location: print\ixpspartiterator_current.htm
 tech.root: print
-ms.assetid: ccc8125a-c571-4267-860a-11fc313e395c
 ms.date: 04/20/2018
 keywords: ["IXpsPartIterator::Current"]
 ms.keywords: Current, Current method [Print Devices], Current method [Print Devices],IXpsPartIterator interface, IXpsPartIterator interface [Print Devices],Current method, IXpsPartIterator.Current, IXpsPartIterator::Current, filterpipeline/IXpsPartIterator::Current, filterpipeline_72cbd5d6-003c-410b-a943-bfd6552df8ee.xml, print.ixpspartiterator_current
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - filterpipeline.h
 api_name:
- - IXpsPartIterator.Current
+ - IXpsPartIterator::Current
 ---
 
 # IXpsPartIterator::Current
@@ -50,14 +49,14 @@ The <code>Current</code> method provides the current URI and part.
 
 ## -parameters
 
-### -param pUri 
+### -param pUri [out]
 
-[out]
+
 A pointer to the URI of the part. If <b>NULL</b>, the <i>ppXpsPartparameter</i> might still be valid.
 
-### -param ppXpsPart 
+### -param ppXpsPart [out]
 
-[out]
+
 The current part in the iterator. If <b>NULL</b>, the <i>pUri</i> parameter might still be valid.
 
 ## -returns
@@ -67,3 +66,4 @@ The current part in the iterator. If <b>NULL</b>, the <i>pUri</i> parameter migh
 ## -remarks
 
 Filters should call the <a href="/windows-hardware/drivers/ddi/filterpipeline/nf-filterpipeline-ixpspartiterator-isdone">IXpsPartIterator::IsDone</a> method before calling <code>Current</code>. One or both parameters can be <b>NULL</b>.
+

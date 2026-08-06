@@ -4,7 +4,6 @@ title: IDebugControl6::GetSynchronizationStatus (dbgeng.h)
 description: The GetSynchronizationStatus method returns information about the synchronization status of the debugger engine.
 old-location: debugger\idebugcontrol6_getsynchronizationstatus.htm
 tech.root: debugger
-ms.assetid: 94DD7FBF-2D4F-4DD9-A49E-A9FA494BF995
 ms.date: 05/03/2018
 keywords: ["IDebugControl6::GetSynchronizationStatus"]
 ms.keywords: GetSynchronizationStatus, GetSynchronizationStatus method [Windows Debugging], GetSynchronizationStatus method [Windows Debugging],IDebugControl6 interface, IDebugControl6 interface [Windows Debugging],GetSynchronizationStatus method, IDebugControl6.GetSynchronizationStatus, IDebugControl6::GetSynchronizationStatus, dbgeng/IDebugControl6::GetSynchronizationStatus, debugger.idebugcontrol6_getsynchronizationstatus
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl6.GetSynchronizationStatus
+ - IDebugControl6::GetSynchronizationStatus
 ---
 
 # IDebugControl6::GetSynchronizationStatus
@@ -50,14 +49,14 @@ The GetSynchronizationStatus method returns information about the synchronizatio
 
 ## -parameters
 
-### -param SendsAttempted 
+### -param SendsAttempted [out]
 
-[out]
+
 The number of packet sends that have been attempted by the current debugger-engine kernel transport mechanism. This number will be incremented if engine did not receive a packet "ACK" for the last packet sent by the engine to the target.
 
-### -param SecondsSinceLastResponse 
+### -param SecondsSinceLastResponse [out]
 
-[out]
+
 The number of seconds since the last response.
 
 ## -returns
@@ -93,3 +92,4 @@ When the client object connects to a session, the most recent output from the se
 
 
 <a href="/windows-hardware/drivers/debugger/synchronizing-with-the-target-computer">Synchronizing with the Target Computer</a>
+

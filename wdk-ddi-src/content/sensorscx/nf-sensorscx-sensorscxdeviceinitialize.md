@@ -4,7 +4,6 @@ title: SensorsCxDeviceInitialize function (sensorscx.h)
 description: This function initializes the sensor in the class extension.
 old-location: sensors\sensorscxdeviceinitialize.htm
 tech.root: sensors
-ms.assetid: F6F758AC-5C8C-4226-B906-972C5BCD7A3E
 ms.date: 05/03/2018
 keywords: ["SensorsCxDeviceInitialize function"]
 ms.keywords: SensorsCxDeviceInitialize, SensorsCxDeviceInitialize function [Sensor Devices], sensors.sensorscxdeviceinitialize, sensorscx/SensorsCxDeviceInitialize
@@ -50,14 +49,14 @@ This function initializes the sensor in the class extension.
 
 ## -parameters
 
-### -param FxDevice 
+### -param FxDevice [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the sensor.
 
-### -param pSensorConfig 
+### -param pSensorConfig [in]
 
-[in]
+
 A list of functions that the driver implements. For more information, see <a href="/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_controller_config">SENSOR_CONTROLLER_CONFIG</a>.
 
 ## -returns

@@ -4,7 +4,6 @@ title: FltGetRoutineAddress function (fltkernel.h)
 description: The FltGetRoutineAddress routine returns a pointer to a routine specified by the FltMgrRoutineName parameter.
 old-location: ifsk\fltgetroutineaddress.htm
 tech.root: ifsk
-ms.assetid: b2b74e79-5840-41a0-8af3-3d13e209aea7
 ms.date: 04/16/2018
 keywords: ["FltGetRoutineAddress function"]
 ms.keywords: FltApiRef_e_to_o_81848969-38e3-4f2f-bdc3-45027ea28202.xml, FltGetRoutineAddress, FltGetRoutineAddress routine [Installable File System Drivers], fltkernel/FltGetRoutineAddress, ifsk.fltgetroutineaddress
@@ -50,9 +49,9 @@ The <b>FltGetRoutineAddress</b> routine returns a pointer to a routine specified
 
 ## -parameters
 
-### -param FltMgrRoutineName 
+### -param FltMgrRoutineName [in]
 
-[in]
+
 Name of the filter manager routine to resolve.
 
 ## -returns

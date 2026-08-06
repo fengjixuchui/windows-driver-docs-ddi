@@ -4,7 +4,6 @@ title: KeReleaseInStackQueuedSpinLock function (wdm.h)
 description: The KeReleaseInStackQueuedSpinLock routine releases a queued spin lock acquired by KeAcquireInStackQueuedSpinLock.
 old-location: kernel\kereleaseinstackqueuedspinlock.htm
 tech.root: kernel
-ms.assetid: 5c36df75-6a95-47bb-99d8-14d87c102be4
 ms.date: 04/30/2018
 keywords: ["KeReleaseInStackQueuedSpinLock function"]
 ms.keywords: KeReleaseInStackQueuedSpinLock, KeReleaseInStackQueuedSpinLock routine [Kernel-Mode Driver Architecture], k105_1904b4b2-4f31-4061-895f-8564a1de04f6.xml, kernel.kereleaseinstackqueuedspinlock, wdm/KeReleaseInStackQueuedSpinLock
@@ -51,9 +50,9 @@ The <b>KeReleaseInStackQueuedSpinLock</b> routine releases a queued spin lock ac
 
 ## -parameters
 
-### -param LockHandle 
+### -param LockHandle [in]
 
-[in]
+
 Specifies the queued spin lock handle initialized by the call to <a href="/previous-versions/windows/hardware/drivers/ff551899(v=vs.85)">KeAcquireInStackQueuedSpinLock</a> that acquired the lock.
 
 ## -remarks

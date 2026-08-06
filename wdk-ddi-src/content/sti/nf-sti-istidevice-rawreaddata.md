@@ -4,7 +4,6 @@ title: IStiDevice::RawReadData (sti.h)
 description: The IStiDevice::RawReadData method reads data from a still image device.
 old-location: image\istidevice_rawreaddata.htm
 tech.root: image
-ms.assetid: b4510fac-839b-4744-9525-2bf96c5c724e
 ms.date: 05/03/2018
 keywords: ["IStiDevice::RawReadData"]
 ms.keywords: IStiDevice interface [Imaging Devices],RawReadData method, IStiDevice.RawReadData, IStiDevice::RawReadData, RawReadData, RawReadData method [Imaging Devices], RawReadData method [Imaging Devices],IStiDevice interface, image.istidevice_rawreaddata, sti/IStiDevice::RawReadData, stifnc_cbd37004-cf03-4a49-9422-374e01abe376.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - sti.h
 api_name:
- - IStiDevice.RawReadData
+ - IStiDevice::RawReadData
 ---
 
 # IStiDevice::RawReadData
@@ -50,19 +49,19 @@ The <b>IStiDevice::RawReadData</b> method reads data from a still image device.
 
 ## -parameters
 
-### -param lpBuffer 
+### -param lpBuffer [in, out]
 
-[in, out]
+
 Caller-supplied pointer to a buffer to receive data read from the device.
 
-### -param lpdwNumberOfBytes 
+### -param lpdwNumberOfBytes [in, out]
 
-[in, out]
+
 Caller-supplied pointer to a DWORD. The caller must load the DWORD with the number of bytes in the buffer pointed to by <i>lpBuffer</i>. On return, it will contain the number of bytes actually read.
 
-### -param lpOverlapped 
+### -param lpOverlapped [in, optional]
 
-[in, optional]
+
 Optional, caller-supplied pointer to an OVERLAPPED structure (described in the Microsoft Windows SDK documentation).
 
 ## -returns
@@ -84,3 +83,4 @@ A call to <b>IStiDevice::RawReadData</b> must be preceded by a call to <a href="
 
 
 <a href="/windows-hardware/drivers/ddi/sti/nf-sti-istidevice-rawreadcommand">IStiDevice::RawReadCommand</a>
+

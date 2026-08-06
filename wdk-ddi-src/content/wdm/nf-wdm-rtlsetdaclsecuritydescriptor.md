@@ -4,7 +4,6 @@ title: RtlSetDaclSecurityDescriptor function (wdm.h)
 description: The RtlSetDaclSecurityDescriptor routine sets the DACL information of an absolute-format security descriptor, or if there is already a DACL present in the security descriptor, it is superseded.
 old-location: kernel\rtlsetdaclsecuritydescriptor.htm
 tech.root: kernel
-ms.assetid: d22f4a14-2293-4210-bead-5814484a1471
 ms.date: 04/30/2018
 keywords: ["RtlSetDaclSecurityDescriptor function"]
 ms.keywords: RtlSetDaclSecurityDescriptor, RtlSetDaclSecurityDescriptor routine [Kernel-Mode Driver Architecture], k109_b2723172-ac75-4ada-b421-ae144d10d560.xml, kernel.rtlsetdaclsecuritydescriptor, wdm/RtlSetDaclSecurityDescriptor
@@ -51,24 +50,26 @@ The <b>RtlSetDaclSecurityDescriptor</b> routine sets the DACL information of an 
 
 ## -parameters
 
-### -param SecurityDescriptor 
+### -param SecurityDescriptor [in, out]
 
-[in, out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor">SECURITY_DESCRIPTOR</a> structure. This structure is the security descriptor to which the DACL is to be applied.
 
-### -param DaclPresent 
+### -param DaclPresent [in]
 
-[in]
+
 Whether to indicate that a DACL is present in the security descriptor. If this parameter is <b>FALSE</b>, <b>RtlSetDaclSecurityDescriptor</b> sets the SE_DACL_PRESENT control flag in the security descriptor to <b>FALSE</b>. In this case, the remaining optional parameters (<i>Dacl</i> and <i>DaclDefaulted</i>) are ignored. If <i>DaclPresent</i> is <b>TRUE</b>, the SE_DACL_PRESENT flag in the security descriptor is set to <b>TRUE</b> and the remaining optional parameters are <u>not</u> ignored. For more information about the SE_DACL_PRESENT flag, see <a href="/windows-hardware/drivers/ifs/security-descriptor-control">SECURITY_DESCRIPTOR_CONTROL</a>.
 
-### -param Dacl 
+### -param Dacl [in, optional]
 
-[in, optional]
+
 A pointer to the DACL for the security descriptor. If this parameter is <b>NULL</b>, the DACL pointer in the security descriptor is set to <b>NULL</b>. A <b>NULL</b> DACL pointer unconditionally grants all access to an object and is not the same as an empty DACL. An empty DACL denies all access to an object. If <i>Dacl</i> is non-<b>NULL</b>, the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_acl">ACL</a> structure supplied by the caller is referenced by, but not copied into, the security descriptor. The caller can allocate the <b>ACL</b> structure from paged system memory, and can call the <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlcreateacl">RtlCreateAcl</a> routine to initialize the structure.
 
-### -param DaclDefaulted 
+❗**WARNING**❗ Setting a <b>NULL</b> DACL allows unrestricted access the object and, therefore, should only be used in strategic scenarios where a security evaluation has validated that this is an acceptable outcome.  Consider using an <b>*empty*</b> DACL, which defaults to all access being denied by default.
 
-[in, optional]
+### -param DaclDefaulted [in, optional]
+
+
 Whether the DACL was supplied by some default mechanism, or was explicitly specified by the caller. If this parameter is <b>TRUE</b>, the DACL was supplied by a default mechanism. If <i>DaclDefaulted</i> is <b>FALSE</b>, the caller explicitly specified the DACL. <b>RtlSetDaclSecurityDescriptor</b> copies the value specified for this parameter to the SE_DACL_DEFAULTED control flag in the security descriptor. For more information about the SE_DACL_DEFAULTED flag, see <a href="/windows-hardware/drivers/ifs/security-descriptor-control">SECURITY_DESCRIPTOR_CONTROL</a>.
 
 ## -returns

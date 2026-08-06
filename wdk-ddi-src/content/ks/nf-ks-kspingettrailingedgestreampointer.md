@@ -4,7 +4,6 @@ title: KsPinGetTrailingEdgeStreamPointer function (ks.h)
 description: The KsPinGetTrailingEdgeStreamPointer function acquires the trailing edge stream pointer for the queue associated with the specified pin.
 old-location: stream\kspingettrailingedgestreampointer.htm
 tech.root: stream
-ms.assetid: 763f1f66-4d83-44aa-9db5-206cf6b6f9b1
 ms.date: 04/23/2018
 keywords: ["KsPinGetTrailingEdgeStreamPointer function"]
 ms.keywords: KsPinGetTrailingEdgeStreamPointer, KsPinGetTrailingEdgeStreamPointer function [Streaming Media Devices], avfunc_3fd3182e-6e4d-4654-9de7-e9cea1086e3e.xml, ks/KsPinGetTrailingEdgeStreamPointer, stream.kspingettrailingedgestreampointer
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ks.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,14 +50,14 @@ The<b> KsPinGetTrailingEdgeStreamPointer</b> function acquires the trailing edge
 
 ## -parameters
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a> structure for whose queue to return the trailing edge stream pointer.
 
-### -param State 
+### -param State [in]
 
-[in]
+
 This parameter specifies the state in which to acquire the trailing edge stream pointer. Can be one of the following:
 
 

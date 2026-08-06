@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_101
+UID: NS:ksmedia.KSPROPERTY_TUNER_STANDARD_S
 title: KSPROPERTY_TUNER_STANDARD_S (ksmedia.h)
 description: The KSPROPERTY_TUNER_STANDARD_S structure describe the standard of a TV tuner device, such as PAL, NTSC or SECAM.
 old-location: stream\ksproperty_tuner_standard_s.htm
 tech.root: stream
-ms.assetid: 3eea8ee2-1ad5-4e00-b0c3-0710b58a2518
 ms.date: 04/30/2019
 keywords: ["KSPROPERTY_TUNER_STANDARD_S structure"]
 ms.keywords: "*PKSPROPERTY_TUNER_STANDARD_S, KSPROPERTY_TUNER_STANDARD_S, KSPROPERTY_TUNER_STANDARD_S structure [Streaming Media Devices], PKSPROPERTY_TUNER_STANDARD_S, PKSPROPERTY_TUNER_STANDARD_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_TUNER_STANDARD_S, ksmedia/PKSPROPERTY_TUNER_STANDARD_S, stream.ksproperty_tuner_standard_s, vidcapstruct_b7568a5f-0825-495b-97ff-c8cee17ab8d3.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_TUNER_STANDARD_S
  - KSPROPERTY_TUNER_STANDARD_S
 ---
 
@@ -54,7 +54,7 @@ The KSPROPERTY_TUNER_STANDARD_S structure describe the standard of a TV tuner de
 
 ### -field Property
 
-Specifies an initialized <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+Specifies an initialized <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 ### -field Standard
 
@@ -62,7 +62,7 @@ Describes an analog video standard. This member may be set to one or more (logic
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -75,3 +75,4 @@ Describes an analog video standard. This member may be set to one or more (logic
 
 
 <a href="/windows-hardware/drivers/stream/propsetid-tuner">PROPSETID_TUNER</a>
+

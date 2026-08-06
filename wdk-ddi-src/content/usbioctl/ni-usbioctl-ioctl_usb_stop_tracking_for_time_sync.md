@@ -1,10 +1,9 @@
 ---
 UID: NI:usbioctl.IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC
 title: IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC (usbioctl.h)
-description: This request unegisters the caller with USB driver stack for time sync services.
+description: This request unregisters the caller with USB driver stack for time sync services.
 old-location: buses\_ioctl_usb_stop_tracking_for_time_sync.htm
 tech.root: usbref
-ms.assetid: 232AC14B-CE3C-44AC-9428-5594993CD749
 ms.date: 05/07/2018
 keywords: ["IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC IOCTL"]
 ms.keywords: IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC, IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC control, IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC control code [Buses], buses._ioctl_usb_stop_tracking_for_time_sync, usbioctl/ IOCTL_USB_STOP_TRACKING_FOR_TIME_SYNC
@@ -46,9 +45,11 @@ api_name:
 
 ## -description
 
-This request unegisters the caller with USB driver stack for time sync services.
+This request unregisters the caller with USB driver stack for time sync services.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 
@@ -68,7 +69,7 @@ The size of the <a href="/windows-hardware/drivers/ddi/usbioctl/ns-usbioctl-_usb
 
 ### -status-block
 
-<b>Irp->IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> indicates an the appropriate error condition as a <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS</a> code.
+<b>Irp->IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> indicates an appropriate error condition as a <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS</a> code.
 
 ## -see-also
 

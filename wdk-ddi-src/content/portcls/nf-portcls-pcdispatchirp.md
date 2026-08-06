@@ -4,7 +4,6 @@ title: PcDispatchIrp function (portcls.h)
 description: The PcDispatchIrp function dispatches an IRP to the PortCls system driver's default handler.
 old-location: audio\pcdispatchirp.htm
 tech.root: audio
-ms.assetid: 01add66e-a007-4b1d-add6-c5be71dd0d61
 ms.date: 05/08/2018
 keywords: ["PcDispatchIrp function"]
 ms.keywords: PcDispatchIrp, PcDispatchIrp function [Audio Devices], audio.pcdispatchirp, audpc-routines_c87193c2-a8f8-4ba1-bf47-422fb5ff452d.xml, portcls/PcDispatchIrp
@@ -51,14 +50,14 @@ The <b>PcDispatchIrp</b> function dispatches an IRP to the PortCls system driver
 
 ## -parameters
 
-### -param pDeviceObject 
+### -param pDeviceObject [in]
 
-[in]
+
 Pointer to the device object. This parameter must point to a system structure of type <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a>.
 
-### -param pIrp 
+### -param pIrp [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp">IRP</a> that is to be dispatched
 
 ## -returns

@@ -4,7 +4,6 @@ title: NdisInvalidateOffload function (ndischimney.h)
 description: A protocol or intermediate driver calls the NdisInvalidateOffload function to invalidate previously offloaded TCP chimney state objects.
 old-location: netvista\ndisinvalidateoffload.htm
 tech.root: netvista
-ms.assetid: d9cb2724-cf14-4814-8a19-1237e0862b1a
 ms.date: 05/02/2018
 keywords: ["NdisInvalidateOffload function"]
 ms.keywords: NdisInvalidateOffload, NdisInvalidateOffload function [Network Drivers Starting with Windows Vista], ndischimney/NdisInvalidateOffload, netvista.ndisinvalidateoffload, tcp_chim_ndis_func_f9049fdc-87ff-467c-9427-d42876e16aa3.xml
@@ -54,18 +53,18 @@ A protocol or intermediate driver calls the
 
 ## -parameters
 
-### -param NdisBindingHandle 
+### -param NdisBindingHandle [in]
 
-[in]
+
 The handle that NDIS provided at the 
      <i>NdisBindingHandle</i> parameter of 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a>. This handle
      identifies the binding between the caller and the underlying intermediate driver or offload
      target.
 
-### -param OffloadBlockList 
+### -param OffloadBlockList [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_protocol_offload_block_list">
      NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST</a> structure that can be a stand-alone structure or the root of a

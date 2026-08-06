@@ -4,7 +4,6 @@ title: _ISCSI_TargetMapping (iscsidef.h)
 description: The ISCSI_TargetMapping structure maps a collection of logical unit numbers (LUNs) that are locally defined to a group of 64-bit iSCSI logical unit numbers.
 old-location: storage\iscsi_targetmapping.htm
 tech.root: storage
-ms.assetid: 9b8c5024-5d37-4f85-be00-1a60dd9ab323
 ms.date: 03/29/2018
 keywords: ["ISCSI_TargetMapping structure"]
 ms.keywords: "*PISCSI_TargetMapping, ISCSI_TargetMapping, ISCSI_TargetMapping structure [Storage Devices], PISCSI_TargetMapping, PISCSI_TargetMapping structure pointer [Storage Devices], _ISCSI_TargetMapping, iscsidef/ISCSI_TargetMapping, iscsidef/PISCSI_TargetMapping, storage.iscsi_targetmapping, structs-iSCSI_5512347c-9b89-4d14-9c84-4e7b9191dbfa.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsidef.h
 api_name:
+ - _ISCSI_TargetMapping
+ - PISCSI_TargetMapping
  - ISCSI_TargetMapping
 ---
 
@@ -107,3 +108,4 @@ Management applications can use the ISCSI_TargetMapping structure to specify a l
 
 
 <a href="/windows-hardware/drivers/storage/logintotarget">LoginToTarget</a>
+

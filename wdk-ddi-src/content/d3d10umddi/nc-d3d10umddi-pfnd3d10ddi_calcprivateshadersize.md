@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_CALCPRIVATESHADERSIZE
 title: PFND3D10DDI_CALCPRIVATESHADERSIZE (d3d10umddi.h)
 description: The CalcPrivateShaderSize function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for a shader.
 old-location: display\calcprivateshadersize.htm
-ms.assetid: 76cdddb0-b927-4547-ae1d-f5105905633b
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_CALCPRIVATESHADERSIZE callback function"]
 ms.keywords: CalcPrivateShaderSize, CalcPrivateShaderSize callback function [Display Devices], PFND3D10DDI_CALCPRIVATESHADERSIZE, PFND3D10DDI_CALCPRIVATESHADERSIZE callback, UserModeDisplayDriverDx10_Functions_32a6a3cc-1a0d-4a20-a985-0e0e50daa914.xml, d3d10umddi/CalcPrivateShaderSize, display.calcprivateshadersize
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CalcPrivateShaderSize
-product:
- - Windows
+ - PFND3D10DDI_CALCPRIVATESHADERSIZE
 ---
 
 # PFND3D10DDI_CALCPRIVATESHADERSIZE callback function
@@ -52,7 +49,7 @@ The <b>CalcPrivateShaderSize</b> function determines the size of the user-mode d
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in] 
 
@@ -64,7 +61,7 @@ A handle to the display device (graphics context).
 
 An array of CONST UINT tokens that make up the shader code.
 
-### -param Arg3
+### -param unnamedParam3
 
 *pSignatures* [in] 
 
@@ -81,3 +78,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddi_devicefuncs">D3D10DDI_DEVICEFUNCS</a>
+

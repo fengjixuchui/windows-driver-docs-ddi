@@ -1,17 +1,16 @@
 ---
 UID: NS:storport._SRBEX_DATA_SCSI_CDB_VAR
 title: _SRBEX_DATA_SCSI_CDB_VAR (storport.h)
-description: The SRBEX_DATA_SCSI_CDB_VAR structure contains the extended SRB data for a variable length SCSI command data block (CDB).
+description: The _SRBEX_DATA_SCSI_CDB_VAR structure (storport.h) contains the extended SRB data for a variable length SCSI command data block (CDB).
 old-location: storage\srbex_data_scsi_cdb_var.htm
 tech.root: storage
-ms.assetid: 8D3BD2E0-02EA-4745-AA1C-86D829E6BA81
 ms.date: 03/29/2018
 keywords: ["SRBEX_DATA_SCSI_CDB_VAR structure"]
 ms.keywords: "*PSRBEX_DATA_SCSI_CDB_VAR, PSRBEX_DATA_SCSI_CDB_VAR, PSRBEX_DATA_SCSI_CDB_VAR structure pointer [Storage Devices], SRBEX_DATA_SCSI_CDB_VAR, SRBEX_DATA_SCSI_CDB_VAR structure [Storage Devices], _SRBEX_DATA_SCSI_CDB_VAR, storage.srbex_data_scsi_cdb_var, storport/PSRBEX_DATA_SCSI_CDB_VAR, storport/SRBEX_DATA_SCSI_CDB_VAR"
 req.header: storport.h
 req.include-header: Storport.h, Srb.h, Minitape.h
 req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Storport.h
 api_name:
+ - _SRBEX_DATA_SCSI_CDB_VAR
+ - PSRBEX_DATA_SCSI_CDB_VAR
  - SRBEX_DATA_SCSI_CDB_VAR
 ---
 
@@ -106,3 +107,4 @@ For CDB data sizes less than 32 bytes, the <a href="/windows-hardware/drivers/dd
 
 
 <a href="/windows-hardware/drivers/ddi/srb/ns-srb-_storage_request_block">STORAGE_REQUEST_BLOCK</a>
+

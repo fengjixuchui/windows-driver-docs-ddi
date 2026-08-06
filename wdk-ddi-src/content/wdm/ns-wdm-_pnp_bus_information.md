@@ -4,7 +4,6 @@ title: _PNP_BUS_INFORMATION (wdm.h)
 description: The PNP_BUS_INFORMATION structure describes a bus.
 old-location: kernel\pnp_bus_information.htm
 tech.root: kernel
-ms.assetid: 68372562-9af0-431d-90ae-c82678d9103e
 ms.date: 04/30/2018
 keywords: ["PNP_BUS_INFORMATION structure"]
 ms.keywords: "*PPNP_BUS_INFORMATION, PNP_BUS_INFORMATION, PNP_BUS_INFORMATION structure [Kernel-Mode Driver Architecture], PPNP_BUS_INFORMATION, PPNP_BUS_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _PNP_BUS_INFORMATION, kernel.pnp_bus_information, kstruct_c_a62e40f6-081a-4d2e-859b-28c98c2216f3.xml, wdm/PNP_BUS_INFORMATION, wdm/PPNP_BUS_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _PNP_BUS_INFORMATION
+ - PPNP_BUS_INFORMATION
  - PNP_BUS_INFORMATION
 ---
 
@@ -63,3 +64,4 @@ The <b>PNP_BUS_INFORMATION</b> structure describes a bus.
 ## -see-also
 
 <a href="/windows-hardware/drivers/kernel/irp-mn-query-bus-information">IRP_MN_QUERY_BUS_INFORMATION</a>
+

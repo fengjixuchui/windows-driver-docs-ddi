@@ -4,7 +4,6 @@ title: _WDI_TYPE_NONCE (wditypes.h)
 description: The WDI_TYPE_NONCE structure defines the SNonce or ANonce (802.11r).
 old-location: netvista\wdi_type_nonce.htm
 tech.root: netvista
-ms.assetid: 62E3A714-BA18-4DD5-ACFC-A9EFA37EABB4
 ms.date: 05/02/2018
 keywords: ["WDI_TYPE_NONCE structure"]
 ms.keywords: "*PWDI_TYPE_NONCE, PWDI_TYPE_NONCE, PWDI_TYPE_NONCE structure pointer [Network Drivers Starting with Windows Vista], WDI_TYPE_NONCE, WDI_TYPE_NONCE structure [Network Drivers Starting with Windows Vista], _WDI_TYPE_NONCE, netvista.wdi_type_nonce, wditypes/PWDI_TYPE_NONCE, wditypes/WDI_TYPE_NONCE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_TYPE_NONCE
+ - PWDI_TYPE_NONCE
  - WDI_TYPE_NONCE
 ---
 
@@ -49,6 +50,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_TYPE_NONCE structure defines the SNonce or ANonce (802.11r).
 

@@ -3,7 +3,6 @@ UID: NS:d3d10umddi.D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY
 title: D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY (d3d10umddi.h)
 description: The D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY structure describes a portion of the stream output for a geometry shader.
 old-location: display\d3d11ddiarg_stream_output_declaration_entry.htm
-ms.assetid: 336bfc9d-325b-4ff1-8d6b-ec2ef4158cb9
 ms.date: 05/10/2018
 keywords: ["D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY structure"]
 ms.keywords: D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY, D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY structure [Display Devices], UMDisplayDriver_Dx11param_Structs_c3324903-51b0-4679-ad77-b24cb5619bef.xml, d3d10umddi/D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY, display.d3d11ddiarg_stream_output_declaration_entry
@@ -50,19 +49,19 @@ The D3D11DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY structure describes a portion of
 
 ## -struct-fields
 
-### -field Stream
+### -field Stream [in]
 
-[in] The stream to output from, which is a value between zero and the maximum number of streams that are specified by the driver.
+The stream to output from, which is a value between zero and the maximum number of streams that are specified by the driver.
 
-### -field OutputSlot
+### -field OutputSlot [in]
 
-[in] The number of the slot for the portion of the stream output.
+The number of the slot for the portion of the stream output.
 
-### -field RegisterIndex
+### -field RegisterIndex [in]
 
-[in] The number of the register for the portion of the stream output.
+The number of the register for the portion of the stream output.
 
-### -field RegisterMask
+### -field RegisterMask [in]
 
-[in] The xyzw register mask for the portion of the stream output. That is, the four least significant bits (LSBs) of the mask represent xyzw respectively.
+The xyzw register mask for the portion of the stream output. That is, the four least significant bits (LSBs) of the mask represent xyzw respectively.
 

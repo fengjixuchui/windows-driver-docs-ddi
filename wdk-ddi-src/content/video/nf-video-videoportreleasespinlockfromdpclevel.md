@@ -4,7 +4,6 @@ title: VideoPortReleaseSpinLockFromDpcLevel function (video.h)
 description: The VideoPortReleaseSpinLockFromDpcLevel function releases the spin lock obtained by a previous call to VideoPortAcquireSpinLockAtDpcLevel.
 old-location: display\videoportreleasespinlockfromdpclevel.htm
 tech.root: display
-ms.assetid: 375158e7-3fb5-4e49-a7cf-ee9a1e5c07ca
 ms.date: 03/29/2018
 keywords: ["VideoPortReleaseSpinLockFromDpcLevel function"]
 ms.keywords: VideoPortReleaseSpinLockFromDpcLevel, VideoPortReleaseSpinLockFromDpcLevel function [Display Devices], VideoPort_Functions_2c3a3aa1-4ef4-4b7f-8cdf-b658a1128c35.xml, display.videoportreleasespinlockfromdpclevel, video/VideoPortReleaseSpinLockFromDpcLevel
@@ -27,7 +26,6 @@ req.dll: Videoprt.sys
 req.irql: DISPATCH_LEVEL
 targetos: Windows
 req.typenames: VIDEO_PORT_SERVICES
-req.product: Windows 10 or later.
 f1_keywords:
  - VideoPortReleaseSpinLockFromDpcLevel
  - video/VideoPortReleaseSpinLockFromDpcLevel
@@ -51,13 +49,13 @@ The <b>VideoPortReleaseSpinLockFromDpcLevel</b> function releases the spin lock 
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in] Pointer to the miniport driver's device extension.
+Pointer to the miniport driver's device extension.
 
-### -param SpinLock 
+### -param SpinLock [in, out]
 
-[in, out] Pointer to a memory location that contains the spin lock to be released.
+Pointer to a memory location that contains the spin lock to be released.
 
 ## -returns
 

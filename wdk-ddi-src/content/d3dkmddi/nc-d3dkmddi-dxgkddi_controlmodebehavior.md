@@ -3,7 +3,6 @@ UID: NC:d3dkmddi.DXGKDDI_CONTROLMODEBEHAVIOR
 title: DXGKDDI_CONTROLMODEBEHAVIOR
 description: The DxgkDdiControlModeBehavior function requests high-level mode enumeration and settings behaviors.
 tech.root: display
-ms.assetid: a98fa9dd-f514-4e30-8c77-71a424c1675c
 ms.date: 10/14/2019
 keywords: ["DXGKDDI_CONTROLMODEBEHAVIOR callback function"]
 req.header: d3dkmddi.h
@@ -32,8 +31,6 @@ api_location:
  - d3dkmddi.h
 api_name:
  - DXGKDDI_CONTROLMODEBEHAVIOR
-product:
- - Windows
 f1_keywords:
  - DXGKDDI_CONTROLMODEBEHAVIOR
  - d3dkmddi/DXGKDDI_CONTROLMODEBEHAVIOR
@@ -48,13 +45,13 @@ The **DxgkDdiControlModeBehavior** function requests high-level mode enumeration
 
 ## -parameters
 
-### -param hAdapter
+### -param hAdapter [in]
 
-[in] Handle to the WDDM display miniport adapter being queried.
+Handle to the WDDM display miniport adapter being queried.
 
-### -param pControlModeBehaviorArg
+### -param pControlModeBehaviorArg [in/out]
 
-[in/out] Pointer to a [DXGKARG_CONTROLMODEBEHAVIOR](ns-d3dkmddi-_dxgkarg_controlmodebehavior.md) structure that contains the display mode behaviors that the OS is requesting from the driver as input, and the results of the request as output.
+Pointer to a [DXGKARG_CONTROLMODEBEHAVIOR](ns-d3dkmddi-_dxgkarg_controlmodebehavior.md) structure that contains the display mode behaviors that the OS is requesting from the driver as input, and the results of the request as output.
 
 ## -returns
 

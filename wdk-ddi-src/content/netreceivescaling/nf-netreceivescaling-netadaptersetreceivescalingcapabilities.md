@@ -3,8 +3,7 @@ UID: NF:netreceivescaling.NetAdapterSetReceiveScalingCapabilities
 title: NetAdapterSetReceiveScalingCapabilities function (netreceivescaling.h)
 description: The NetAdapterSetReceiveScalingCapabilities function sets a net adapter's receive side scaling (RSS) capabilities.
 tech.root: netvista
-ms.assetid: facda650-4f68-40e4-bfe0-f9b7adae4c7f
-ms.date: 03/08/2018
+ms.date: 04/01/2022
 keywords: ["NetAdapterSetReceiveScalingCapabilities function"]
 ms.keywords: NetAdapterSetReceiveScalingCapabilities
 req.header: netreceivescaling.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.25
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -47,11 +46,11 @@ The **NetAdapterSetReceiveScalingCapabilities** function sets a net adapter's re
 
 ## -parameters
 
-### -param Adapter
+### -param Adapter [_In_]
 
 The **NETADAPTER** object the driver obtained in a previous call to [NetAdapterCreate](../netadapter/nf-netadapter-netadaptercreate.md).
 
-### -param Capabilities
+### -param Capabilities [_In_]
 
 A pointer to a driver-allocated and initialized [NET_ADAPTER_RECEIVE_SCALING_CAPABILITIES](ns-netreceivescaling-_net_adapter_receive_scaling_capabilities.md) structure.
 

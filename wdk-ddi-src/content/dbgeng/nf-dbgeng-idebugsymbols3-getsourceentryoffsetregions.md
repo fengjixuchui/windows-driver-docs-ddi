@@ -4,7 +4,6 @@ title: IDebugSymbols3::GetSourceEntryOffsetRegions (dbgeng.h)
 description: Returns all memory regions known to be associated with a source entry.
 old-location: debugger\idebugsymbols3_getsourceentryoffsetregions.htm
 tech.root: debugger
-ms.assetid: A39FF088-1AA3-4E2F-8EF6-AD7F79FBBC92
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::GetSourceEntryOffsetRegions"]
 ms.keywords: GetSourceEntryOffsetRegions, GetSourceEntryOffsetRegions method [Windows Debugging], GetSourceEntryOffsetRegions method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],GetSourceEntryOffsetRegions method, IDebugSymbols3.GetSourceEntryOffsetRegions, IDebugSymbols3::GetSourceEntryOffsetRegions, dbgeng/IDebugSymbols3::GetSourceEntryOffsetRegions, debugger.idebugsymbols3_getsourceentryoffsetregions
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSymbols3.GetSourceEntryOffsetRegions
+ - IDebugSymbols3::GetSourceEntryOffsetRegions
 ---
 
 # IDebugSymbols3::GetSourceEntryOffsetRegions
@@ -51,29 +50,29 @@ api_name:
 
 ## -parameters
 
-### -param Entry 
+### -param Entry [in]
 
-[in]
+
 An entry as a <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_symbol_source_entry">DEBUG_SYMBOL_SOURCE_ENTRY</a> structure.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A bit-set that contains options that affect the behavior of this method.
 
-### -param Regions 
+### -param Regions [out]
 
-[out]
+
 The memory regions associated with the source entry.
 
-### -param RegionsCount 
+### -param RegionsCount [in]
 
-[in]
+
 The number of regions associated with the entry.
 
-### -param RegionsAvail 
+### -param RegionsAvail [out, optional]
 
-[out, optional]
+
 A pointer to the number of regions available to the entry.
 
 ## -returns
@@ -95,3 +94,4 @@ This function returns all known memory regions that associated
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-getsymbolentryoffsetregions">IDebugSymbols3::GetSymbolEntryOffsetRegions</a>
+

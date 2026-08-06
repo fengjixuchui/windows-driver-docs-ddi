@@ -1,0 +1,116 @@
+---
+UID: NS:pktmonclntk._PKTMON_PACKET_HEADER_INFORMATION
+tech.root: netvista
+title: PKTMON_PACKET_HEADER_INFORMATION
+ms.date: 04/04/2025
+targetos: Windows
+description: The PKTMON_PACKET_HEADER_INFORMATION struct contains the packet header information.
+ai-usage: ai-assisted
+prerelease: false
+req.construct-type: structure
+req.ddi-compliance: 
+req.dll: 
+req.header: pktmonclntk.h
+req.include-header: 
+req.kmdf-ver: 
+req.lib: 
+req.max-support: 
+req.redist: 
+req.target-min-winverclnt: 
+req.target-min-winversvr: 
+req.target-type: 
+req.typenames:
+typedef_isUnnamed: false
+req.umdf-ver: 
+req.unicode-ansi: 
+topic_type:
+ - apiref
+api_type:
+ - HeaderDef
+api_location:
+ - pktmonclntk.h
+api_name:
+ - _PKTMON_PACKET_HEADER_INFORMATION
+ - PKTMON_PACKET_HEADER_INFORMATION
+f1_keywords:
+ - _PKTMON_PACKET_HEADER_INFORMATION
+ - pktmonclntk/_PKTMON_PACKET_HEADER_INFORMATION
+ - PKTMON_PACKET_HEADER_INFORMATION
+ - pktmonclntk/PKTMON_PACKET_HEADER_INFORMATION
+dev_langs:
+ - c
+ - c++
+helpviewer_keywords:
+ - _PKTMON_PACKET_HEADER_INFORMATION
+---
+
+## -description
+
+The **PKTMON_PACKET_HEADER_INFORMATION** struct contains the packet header information.
+
+## -struct-fields
+
+### -field SockAddrLocal
+
+The local socket address.
+
+### -field SockAddrRemote
+
+The remote socket address.
+
+### -field IpProtocol
+
+The IP protocol.
+
+### -field Transport
+
+A union that defines the transport protocol.
+
+### -field Transport.Udp
+
+The UDP protocol.
+
+### -field Transport.Udp.PortLocal
+
+The local port for the UDP protocol.
+
+### -field Transport.Udp.PortRemote
+
+The remote port for the UDP protocol.
+
+### -field Transport.Tcp
+
+The TCP protocol.
+
+### -field Transport.Tcp.PortLocal
+
+The local port for the TCP protocol.
+
+### -field Transport.Tcp.PortRemote
+
+The remote port for the TCP protocol.
+
+### -field Transport.Tcp.Flags
+
+Flags for the TCP protocol.
+
+### -field Transport.Icmp
+
+The ICMP protocol.
+
+### -field Transport.Icmp.Type
+
+The type for the ICMP protocol.
+
+### -field Transport.Icmp.Code
+
+The code for the ICMP protocol.
+
+## -remarks
+
+## -see-also
+
+- [PktMonClntNblLog](nf-pktmonclntk-pktmonclntnbllog.md)
+- [PktMonClntNblDrop](nf-pktmonclntk-pktmonclntnbldrop.md)
+- [PktMonClntHeaderInfoLog](nf-pktmonclntk-pktmonclntheaderinfolog.md)
+- [PktMonClntHeaderInfoDrop](nf-pktmonclntk-pktmonclntheaderinfodrop.md)

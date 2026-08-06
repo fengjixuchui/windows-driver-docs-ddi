@@ -1,10 +1,9 @@
 ---
 UID: NI:ntddcdrm.IOCTL_CDROM_READ_Q_CHANNEL
 title: IOCTL_CDROM_READ_Q_CHANNEL (ntddcdrm.h)
-description: Returns the current position, media catalog, or ISRC track data. Obsolete, beginning with Windows Vista.
+description: Returns the current position, media catalog, or ISRC track data. Reading the current position is obsolete, beginning with Windows Vista.
 old-location: storage\ioctl_cdrom_read_q_channel.htm
 tech.root: storage
-ms.assetid: bbcf1535-6454-45b5-bcbd-752b8bfd6517
 ms.date: 03/29/2018
 keywords: ["IOCTL_CDROM_READ_Q_CHANNEL IOCTL"]
 ms.keywords: IOCTL_CDROM_READ_Q_CHANNEL, IOCTL_CDROM_READ_Q_CHANNEL control, IOCTL_CDROM_READ_Q_CHANNEL control code [Storage Devices], k307_1b91e5f3-ecd0-429d-a4d1-8b77170d14e7.xml, ntddcdrm/IOCTL_CDROM_READ_Q_CHANNEL, storage.ioctl_cdrom_read_q_channel
@@ -46,9 +45,11 @@ api_name:
 
 ## -description
 
-Returns the current position, media catalog, or ISRC track data. Obsolete, beginning with Windows Vista.
+Returns the current position, media catalog, or ISRC track data. Reading the current position is obsolete, beginning with Windows Vista.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 
@@ -87,7 +88,7 @@ The <b>Information</b> field is set to the number of bytes returned. The <b>Stat
 
 ## -remarks
 
-Beginning with Windows Vista, CDROM class drivers do not use this IOCTL. Prior to Windows Vista, this IOCTL was used for audio playback on older CD-ROM drives that supported direct audio output in hardware.
+Beginning with Windows Vista, CDROM class drivers do not use this IOCTL with the format member set to IOCTL_CDROM_CURRENT_POSITION. Prior to Windows Vista, this IOCTL was used for audio playback on older CD-ROM drives that supported direct audio output in hardware.
 
 Client applications should use the <i>Media Control Interface (MCI) API</i> rather than issuing this IOCTL.
 

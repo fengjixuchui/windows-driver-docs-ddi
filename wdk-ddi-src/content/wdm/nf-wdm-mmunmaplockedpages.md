@@ -4,7 +4,6 @@ title: MmUnmapLockedPages function (wdm.h)
 description: The MmUnmapLockedPages routine releases a mapping that was set up by a preceding call to the MmMapLockedPages or MmMapLockedPagesSpecifyCache routine.
 old-location: kernel\mmunmaplockedpages.htm
 tech.root: kernel
-ms.assetid: ab5f33b9-5261-4d30-bceb-8e91a24ae0a8
 ms.date: 04/30/2018
 keywords: ["MmUnmapLockedPages function"]
 ms.keywords: MmUnmapLockedPages, MmUnmapLockedPages routine [Kernel-Mode Driver Architecture], k106_1ed6ae95-665b-4a6e-802a-4f80294c4f6e.xml, kernel.mmunmaplockedpages, wdm/MmUnmapLockedPages
@@ -50,14 +49,14 @@ The <b>MmUnmapLockedPages</b> routine releases a mapping that was set up by a pr
 
 ## -parameters
 
-### -param BaseAddress 
+### -param BaseAddress [in]
 
-[in]
+
 Pointer to the base virtual address to which the physical pages were mapped.
 
-### -param MemoryDescriptorList 
+### -param MemoryDescriptorList [in]
 
-[in]
+
 Pointer to an MDL.
 
 ## -remarks

@@ -3,8 +3,7 @@ UID: NF:netpoweroffload.NetPowerOffloadGetNSParameters
 title: NetPowerOffloadGetNSParameters function (netpoweroffload.h)
 description: The NetPowerOffloadGetNSParameters function gets parameters for an IPv6 Neighbor Solicitation (NS) low power protocol offload to a net adapter.
 tech.root: netvista
-ms.assetid: 4434a42f-2f3a-4d19-979c-52de51133b44
-ms.date: 10/03/2019
+ms.date: 04/01/2022
 keywords: ["NetPowerOffloadGetNSParameters function"]
 ms.keywords: NetPowerOffloadGetNSParameters
 req.header: netpoweroffload.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: netadaptercxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -37,8 +36,6 @@ api_location:
  - netadaptercxstub.lib
 api_name:
  - NetPowerOffloadGetNSParameters
-product:
- - Windows
 ---
 
 # NetPowerOffloadGetNSParameters function
@@ -50,17 +47,14 @@ The **NetPowerOffloadGetNSParameters** function gets parameters for an IPv6 Neig
 
 ## -parameters
 
-### -param PowerOffload
+### -param PowerOffload [_In_]
 
 The NETPOWEROFFLOAD object that represents this NS protocol offload.
 
-### -param Parameters
+### -param Parameters [_Inout_]
 
 A pointer to a driver-allocated [**NET_POWER_OFFLOAD_NS_PARAMETERS**](../netpoweroffload/ns-netpoweroffload-_net_power_offload_ns_parameters.md) structure that receives the NS parameter information.
 
-## -returns
-
-This function does not return a value.
 
 ## -remarks
 

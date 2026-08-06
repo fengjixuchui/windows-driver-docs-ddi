@@ -4,7 +4,6 @@ title: EVT_WDF_DEVICE_SET_LOCK (wdfpdo.h)
 description: A driver's EvtDeviceSetLock event callback function locks the specified device so that it cannot be ejected, or unlocks the device so that it can be ejected.
 old-location: wdf\evtdevicesetlock.htm
 tech.root: wdf
-ms.assetid: 2ac42710-9f44-4982-a0d9-c49048870aeb
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DEVICE_SET_LOCK callback function"]
 ms.keywords: DFDeviceObjectFdoPdoRef_932fbb3b-df8b-49ca-9b86-3d98b6fdd39f.xml, EVT_WDF_DEVICE_SET_LOCK, EVT_WDF_DEVICE_SET_LOCK callback, EvtDeviceSetLock, EvtDeviceSetLock callback function, kmdf.evtdevicesetlock, wdf.evtdevicesetlock, wdfpdo/EvtDeviceSetLock
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfpdo.h
 api_name:
- - EvtDeviceSetLock
+ - EVT_WDF_DEVICE_SET_LOCK
 ---
 
 # EVT_WDF_DEVICE_SET_LOCK callback function
@@ -52,14 +51,14 @@ A driver's <i>EvtDeviceSetLock</i> event callback function locks the specified d
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param IsLocked 
+### -param IsLocked [in]
 
-[in]
+
 A Boolean value that indicates whether the driver must lock or unlock the device. If <b>TRUE</b>, the driver must lock the device so that it cannot be ejected. If <b>FALSE</b>, the driver must unlock the device so that it can be ejected.
 
 ## -returns
@@ -83,3 +82,4 @@ For more information about return values, see <a href="/windows-hardware/drivers
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfpdo/nc-wdfpdo-evt_wdf_device_eject">EvtDeviceEject</a>
+

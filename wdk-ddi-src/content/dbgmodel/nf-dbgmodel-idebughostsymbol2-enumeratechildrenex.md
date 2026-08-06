@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.IDebugHostSymbol2.EnumerateChildrenEx
 title: IDebugHostSymbol2::EnumerateChildrenEx (dbgmodel.h)
 description: Enumerates all child symbols of the given type, name, and extended information which is present.
-ms.assetid: 8479d24b-be5f-4c21-adea-699af64adeb2
 ms.date: 06/10/2019
 keywords: ["IDebugHostSymbol2::EnumerateChildrenEx"]
 ms.keywords: IDebugHostSymbol2::EnumerateChildrenEx, EnumerateChildrenEx, IDebugHostSymbol2.EnumerateChildrenEx, IDebugHostSymbol2::EnumerateChildrenEx, IDebugHostSymbol2.EnumerateChildrenEx
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostSymbol2.EnumerateChildrenEx
+ - IDebugHostSymbol2::EnumerateChildrenEx
 ---
 
 # IDebugHostSymbol2::EnumerateChildrenEx
@@ -78,4 +77,3 @@ This method returns HRESULT which indicate success or failure.
 [SymbolSearchInfo structure](ns-dbgmodel-symbolsearchinfo.md)
 
 [IDebugHostSymbol2 interface](nn-dbgmodel-idebughostsymbol2.md)
-

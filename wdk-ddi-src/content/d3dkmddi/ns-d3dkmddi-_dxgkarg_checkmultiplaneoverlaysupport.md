@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT
 title: _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT (d3dkmddi.h)
 description: Used in a call to the DxgkDdiCheckMultiPlaneOverlaySupport function to check details on hardware support for multiplane overlays.
 old-location: display\dxgkarg_checkmultiplaneoverlaysupport.htm
-ms.assetid: BAFC7DD1-56F8-47CE-8914-54531BBC3165
 ms.date: 05/10/2018
 keywords: ["DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT structure"]
 ms.keywords: "*IN_OUT_PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT, DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT, DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT structure [Display Devices], PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT, PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT structure pointer [Display Devices], _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT, d3dkmddi/DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT, d3dkmddi/PDXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT, display.dxgkarg_checkmultiplaneoverlaysupport"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmddi.h
 api_name:
+ - _DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT
  - DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT
 ---
 
@@ -77,3 +77,4 @@ Specifies limitations on hardware support of multiplane overlays.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_checkmultiplaneoverlaysupport">DxgkDdiCheckMultiPlaneOverlaySupport</a>
+

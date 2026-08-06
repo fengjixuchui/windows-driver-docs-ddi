@@ -4,7 +4,6 @@ title: GPIO_CLIENT_QUERY_CONTROLLER_BASIC_INFORMATION (gpioclx.h)
 description: The CLIENT_QueryControllerBasicInformation event callback function retrieves the hardware attributes of the general-purpose I/O (GPIO) controller.
 old-location: gpio\client_querycontrollerbasicinformation.htm
 tech.root: GPIO
-ms.assetid: 5674317C-6785-46F5-880F-71FAF2CD3C64
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_QUERY_CONTROLLER_BASIC_INFORMATION callback function"]
 ms.keywords: CLIENT_QueryControllerBasicInformation, CLIENT_QueryControllerBasicInformation callback, CLIENT_QueryControllerBasicInformation callback function [Parallel Ports], GPIO.client_querycontrollerbasicinformation, GPIO_CLIENT_QUERY_CONTROLLER_BASIC_INFORMATION, gpioclx/CLIENT_QueryControllerBasicInformation
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_QueryControllerBasicInformation
+ - GPIO_CLIENT_QUERY_CONTROLLER_BASIC_INFORMATION
 ---
 
 # GPIO_CLIENT_QUERY_CONTROLLER_BASIC_INFORMATION callback function
@@ -50,14 +49,14 @@ The <i>CLIENT_QueryControllerBasicInformation</i> event callback function retrie
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param Information 
+### -param Information [out]
 
-[out]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_client_controller_basic_information">CLIENT_CONTROLLER_BASIC_INFORMATION</a> structure. The <i>CLIENT_QueryControllerBasicInformation</i> function writes the GPIO controller hardware attributes and configuration information into this structure.
 
 ## -returns
@@ -112,3 +111,4 @@ The GPIO_CLIENT_QUERY_CONTROLLER_BASIC_INFORMATION function type is defined in t
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/nf-gpioclx-gpio_clx_registerclient">GPIO_CLX_RegisterClient</a>
+

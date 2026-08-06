@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostErrorSink.Release
 title: IDebugHostErrorSink::Release (dbgmodel.h)
-description: Decrements the reference count for an interface on an object.
-ms.assetid: 317caa7e-8cdd-4f57-8155-37d6638da2e8
+description: "The IDebugHostErrorSink::Release method decrements the reference count for an interface on an object."
 ms.date: 09/12/2018
 keywords: ["IDebugHostErrorSink::Release"]
 ms.keywords: IDebugHostErrorSink::Release, Release, IDebugHostErrorSink.Release, IDebugHostErrorSink::Release, IDebugHostErrorSink.Release
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostErrorSink.Release
+ - IDebugHostErrorSink::Release
 ---
 
 # IDebugHostErrorSink::Release
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IDebugHostErrorSink interface](nn-dbgmodel-idebughosterrorsink.md)
+

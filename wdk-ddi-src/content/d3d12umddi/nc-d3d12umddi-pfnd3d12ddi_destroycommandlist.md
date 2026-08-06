@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_DESTROYCOMMANDLIST
 title: PFND3D12DDI_DESTROYCOMMANDLIST (d3d12umddi.h)
 description: Destroys a command list.
-ms.assetid: 275e31b7-359b-447d-90c7-7d69e6234645
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_DESTROYCOMMANDLIST callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_DESTROYCOMMANDLIST
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ Destroys a command list.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 A command list handle.
 

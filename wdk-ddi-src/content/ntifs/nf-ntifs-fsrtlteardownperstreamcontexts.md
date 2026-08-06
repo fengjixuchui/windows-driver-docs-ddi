@@ -4,14 +4,13 @@ title: FsRtlTeardownPerStreamContexts function (ntifs.h)
 description: The FsRtlTeardownPerStreamContexts routine frees all per-stream context structures associated with a given FSRTL_ADVANCED_FCB_HEADER structure.
 old-location: ifsk\fsrtlteardownperstreamcontexts.htm
 tech.root: ifsk
-ms.assetid: a37a921c-748a-4ac2-99c7-a6cf987a8f54
 ms.date: 04/16/2018
 keywords: ["FsRtlTeardownPerStreamContexts function"]
 ms.keywords: FsRtlTeardownPerStreamContexts, FsRtlTeardownPerStreamContexts routine [Installable File System Drivers], fsrtlref_15f597e3-b397-497b-9839-a61b6cf27745.xml, ifsk.fsrtlteardownperstreamcontexts, ntifs/FsRtlTeardownPerStreamContexts
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Microsoft Windows XP and later.
+req.target-min-winverclnt: Windows 2000 SP4 Update Rollup; Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,9 +49,9 @@ The <b>FsRtlTeardownPerStreamContexts</b> routine frees all per-stream context s
 
 ## -parameters
 
-### -param AdvancedHeader 
+### -param AdvancedHeader [in]
 
-[in]
+
 Pointer to the FSRTL_ADVANCED_FCB_HEADER structure.
 
 ## -remarks

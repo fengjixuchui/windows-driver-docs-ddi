@@ -4,7 +4,6 @@ title: _WDF_USB_BMREQUEST_RECIPIENT (wdfusb.h)
 description: The WDF_USB_BMREQUEST_RECIPIENT enumeration identifies the data transfer recipient for a USB control transfer.
 old-location: wdf\wdf_usb_bmrequest_recipient.htm
 tech.root: wdf
-ms.assetid: 0749d03d-8174-4f6e-816e-4689594c0c84
 ms.date: 02/26/2018
 keywords: ["WDF_USB_BMREQUEST_RECIPIENT enumeration"]
 ms.keywords: BmRequestToDevice, BmRequestToEndpoint, BmRequestToInterface, BmRequestToOther, DFUsbRef_646fa8bb-2b05-4247-b3e8-01daad8b204e.xml, WDF_USB_BMREQUEST_RECIPIENT, WDF_USB_BMREQUEST_RECIPIENT enumeration, _WDF_USB_BMREQUEST_RECIPIENT, kmdf.wdf_usb_bmrequest_recipient, wdf.wdf_usb_bmrequest_recipient, wdfusb/BmRequestToDevice, wdfusb/BmRequestToEndpoint, wdfusb/BmRequestToInterface, wdfusb/BmRequestToOther, wdfusb/WDF_USB_BMREQUEST_RECIPIENT
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfusb.h
 api_name:
+ - _WDF_USB_BMREQUEST_RECIPIENT
  - WDF_USB_BMREQUEST_RECIPIENT
 ---
 
@@ -54,7 +54,7 @@ The <b>WDF_USB_BMREQUEST_RECIPIENT</b> enumeration identifies the data transfer 
 
 ## -enum-fields
 
-### -field BmRequestToDevice
+### -field BmRequestToDevice:0
 
 The data transfer recipient is a device.
 
@@ -79,3 +79,4 @@ For more information about the data transfer recipient for a USB control transfe
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_control_setup_packet">WDF_USB_CONTROL_SETUP_PACKET</a>
+

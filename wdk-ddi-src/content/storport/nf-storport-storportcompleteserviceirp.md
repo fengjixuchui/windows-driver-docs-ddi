@@ -4,7 +4,6 @@ title: StorPortCompleteServiceIrp function (storport.h)
 description: The StorPortCompleteServiceIrp routine is called by a Storport virtual miniport driver when it needs to complete a request that it received in its HwStorProcessServiceRequest callback routine.
 old-location: storage\storportcompleteserviceirp.htm
 tech.root: storage
-ms.assetid: 359b1096-f987-4884-ab67-2290bf5196b5
 ms.date: 03/29/2018
 keywords: ["StorPortCompleteServiceIrp function"]
 ms.keywords: StorPortCompleteServiceIrp, StorPortCompleteServiceIrp routine [Storage Devices], storage.storportcompleteserviceirp, storport/StorPortCompleteServiceIrp, storprt_439990ea-8133-4114-b417-1c88e53cce14.xml
@@ -50,14 +49,14 @@ The <b>StorPortCompleteServiceIrp</b> routine is called by a Storport virtual mi
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the  mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 A pointer to the I/O request.
 
 ## -returns

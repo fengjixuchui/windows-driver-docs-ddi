@@ -4,7 +4,6 @@ title: IoReportDetectedDevice function (ntddk.h)
 description: The IoReportDetectedDevice routine reports a non-PnP device to the PnP manager.
 old-location: kernel\ioreportdetecteddevice.htm
 tech.root: kernel
-ms.assetid: b7756f69-feab-4a28-88d5-0262f86db54b
 ms.date: 04/30/2018
 keywords: ["IoReportDetectedDevice function"]
 ms.keywords: IoReportDetectedDevice, IoReportDetectedDevice routine [Kernel-Mode Driver Architecture], k104_b906486e-318a-49b5-aa6a-683c1889c10b.xml, kernel.ioreportdetecteddevice, ntddk/IoReportDetectedDevice
@@ -50,50 +49,50 @@ The <b>IoReportDetectedDevice</b> routine reports a non-PnP device to the PnP ma
 
 ## -parameters
 
-### -param DriverObject 
+### -param DriverObject [in]
 
-[in]
+
 Pointer to the driver object of the driver that detected the device.
 
-### -param LegacyBusType 
+### -param LegacyBusType [in]
 
-[in]
+
 Specifies the type of bus on which the device resides. The PnP manager uses this information to match the reported device to its PnP-enumerated instance, if one exists.
 
 The interface types, such as <b>PCIBus</b>, are defined in Wdm.h. If a driver does not know the <i>LegacyBusType</i> for the device, the driver supplies the value <b>InterfaceTypeUndefined</b> for this parameter.
 
-### -param BusNumber 
+### -param BusNumber [in]
 
-[in]
+
 Specifies the bus number for the device. The PnP manager uses this information to match the reported device to its PnP-enumerated instance, if one exists.
 
 The bus number distinguishes the bus on which the device resides from other buses of the same type on the computer. The bus-numbering scheme is bus-specific. If a driver does not know the <i>BusNumber</i> for the device, the driver supplies the value -1 for this parameter.
 
-### -param SlotNumber 
+### -param SlotNumber [in]
 
-[in]
+
 Specifies the logical slot number of the device. The PnP manager uses this information to match the reported device to its PnP-enumerated instance, if one exists.
 
 If a driver does not know the <i>SlotNumber</i> for the device, the driver supplies the value -1 for this parameter.
 
-### -param ResourceList 
+### -param ResourceList [in, optional]
 
-[in, optional]
+
 Pointer to the resource list the driver used to detect the device. Resources in this list are in raw, untranslated form.
 
-### -param ResourceRequirements 
+### -param ResourceRequirements [in, optional]
 
-[in, optional]
+
 Optionally points to a resource requirements list for the detected device. <b>NULL</b> if the caller does not have this information for the device.
 
-### -param ResourceAssigned 
+### -param ResourceAssigned [in]
 
-[in]
+
 Specifies whether the device's resources have already been reported to the PnP manager. If <i>ResourceAssigned</i> is <b>TRUE</b>, the resources have already been reported, possibly with <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-ioreportresourcefordetection">IoReportResourceForDetection</a>, and the PnP manager will not attempt to claim them on behalf of the device. If <b>TRUE</b>, the PnP manager will also not claim resources when the device is root-enumerated on subsequent boots.
 
-### -param DeviceObject 
+### -param DeviceObject [in, out]
 
-[in, out]
+
 Optionally points to a PDO for the detected device. 
 
 <b>NULL</b> if the caller does not have a PDO for the device, which is typically the case. If <i>DeviceObject</i> is <b>NULL</b>, the PnP manager creates a PDO for the device and returns a pointer to the caller.

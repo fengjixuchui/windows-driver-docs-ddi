@@ -1,11 +1,10 @@
 ---
 UID: NS:ntddstor._STORAGE_MINIPORT_DESCRIPTOR
-title: _STORAGE_MINIPORT_DESCRIPTOR (ntddstor.h)
-description: Reserved for system use.
+title: STORAGE_MINIPORT_DESCRIPTOR (ntddstor.h)
+description: "Microsoft reserves the STORAGE_MINIPORT_DESCRIPTOR structure for internal use only. Don't use this structure in your code."
 old-location: storage\storage_miniport_descriptor.htm
 tech.root: storage
-ms.assetid: 30497CA8-70B6-48F9-B5D5-45E606A3226E
-ms.date: 03/29/2018
+ms.date: 04/02/2024
 keywords: ["STORAGE_MINIPORT_DESCRIPTOR structure"]
 ms.keywords: "*PSTORAGE_MINIPORT_DESCRIPTOR, PSTORAGE_MINIPORT_DESCRIPTOR, PSTORAGE_MINIPORT_DESCRIPTOR structure pointer [Storage Devices], STORAGE_MINIPORT_DESCRIPTOR, STORAGE_MINIPORT_DESCRIPTOR structure [Storage Devices], _STORAGE_MINIPORT_DESCRIPTOR, ntddstor/PSTORAGE_MINIPORT_DESCRIPTOR, ntddstor/STORAGE_MINIPORT_DESCRIPTOR, storage.storage_miniport_descriptor"
 req.header: ntddstor.h
@@ -42,11 +41,12 @@ api_type:
 api_location:
  - ntddstor.h
 api_name:
+ - _STORAGE_MINIPORT_DESCRIPTOR
+ - PSTORAGE_MINIPORT_DESCRIPTOR
  - STORAGE_MINIPORT_DESCRIPTOR
 ---
 
-# _STORAGE_MINIPORT_DESCRIPTOR structure
-
+# STORAGE_MINIPORT_DESCRIPTOR structure
 
 ## -description
 
@@ -56,18 +56,15 @@ Reserved for system use.
 
 ### -field Version
 
-Contains the size of this structure, in bytes. The value of this member will change as members are added to 
-      the structure.
+Contains the size of this structure, in bytes. The value of this member will change as members are added to the structure.
 
 ### -field Size
 
-Specifies the total size of the data returned, in bytes. This may include data that follows this 
-      structure.
+Specifies the total size of the data returned, in bytes. This may include data that follows this structure.
 
 ### -field Portdriver
 
-Type of port driver as enumerated by the 
-     <a href="/previous-versions/windows/hardware/drivers/mt668773(v=vs.85)">STORAGE_PORT_CODE_SET</a> enumeration.
+Type of port driver as enumerated by the **[STORAGE_PORT_CODE_SET](/previous-versions/windows/hardware/drivers/mt668773(v=vs.85))** enumeration.
 
 ### -field LUNResetSupported
 
@@ -79,16 +76,36 @@ Indicates whether a target reset is supported.
 
 ### -field IoTimeoutValue
 
-<b>Introduced in Windows 8:  </b>Indicates the timeout value for the device, in milliseconds (ms).
+The timeout value for the device, in milliseconds (ms). Introduced in Windows 8.
 
 ### -field ExtraIoInfoSupported
 
-<b>Introduced in Windows 8.1:  </b>Indicates if extra I/O info is supported.
+Indicates whether extra I/O info is supported. Introduced in Windows 8.1
 
-### -field Reserved0
+### -field Flags
 
-<b>Introduced in Windows 8.1:  </b>Reserved for future use.
+### -field Flags.DUMMYSTRUCTNAME
+
+### -field Flags.DUMMYSTRUCTNAME.LogicalPoFxForDisk
+
+### -field Flags.DUMMYSTRUCTNAME.ForwardIo
+
+Reserved for internal use. Do not use.
+
+### -field Flags.DUMMYSTRUCTNAME.Reserved
+
+Reserved for future use.
+
+### -field Flags.AsUCHAR
+
+### -field Reserved0[2]
+
+Reserved for future use.
+
+### -field Reserved0[3]
+
+Reserved for future use.
 
 ### -field Reserved1
 
-<b>Introduced in Windows 8.1:  </b>Reserved for future use.
+Reserved for future use.

@@ -4,7 +4,6 @@ title: UcmTcpciDeviceInitInitialize function (ucmtcpcidevice.h)
 description: Initializes device initialization operations when the Plug and Play (PnP) manager reports the existence of a device.
 old-location: buses\ucmtcpcideviceinitinitialize.htm
 tech.root: usbref
-ms.assetid: a9afbac3-9494-466c-b36b-26a5839913f1
 ms.date: 05/07/2018
 keywords: ["UcmTcpciDeviceInitInitialize function"]
 ms.keywords: UcmTcpciDeviceInitInitialize, UcmTcpciDeviceInitInitialize method [Buses], buses.ucmtcpcideviceinitinitialize, ucmtcpcidevice/UcmTcpciDeviceInitInitialize
@@ -51,9 +50,9 @@ Initializes device initialization operations when the Plug and Play (PnP) manage
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A pointer to a framework-allocated <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
 ## -returns

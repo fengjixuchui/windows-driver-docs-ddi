@@ -4,7 +4,6 @@ title: FsRtlFindExtraCreateParameter function (ntifs.h)
 description: The FsRtlFindExtraCreateParameter routine searches a given ECP list for an ECP context structure of a given type and returns a pointer to this structure if it is found.
 old-location: ifsk\fsrtlfindextracreateparameter.htm
 tech.root: ifsk
-ms.assetid: e72958d0-b7ff-45b6-bdd2-f894d5b44cf4
 ms.date: 04/16/2018
 keywords: ["FsRtlFindExtraCreateParameter function"]
 ms.keywords: FsRtlFindExtraCreateParameter, FsRtlFindExtraCreateParameter routine [Installable File System Drivers], fsrtlref_3536c7a7-2d3c-4aa5-9a91-5579a8108655.xml, ifsk.fsrtlfindextracreateparameter, ntifs/FsRtlFindExtraCreateParameter
@@ -50,24 +49,24 @@ The <b>FsRtlFindExtraCreateParameter</b> routine searches a given ECP list for a
 
 ## -parameters
 
-### -param EcpList 
+### -param EcpList [in]
 
-[in]
+
 Pointer to the ECP list structure that <b>FsRtlFindExtraCreateParameter</b> uses to search for the ECP context structure, supplied by the <i>EcpType</i> parameter.
 
-### -param EcpType 
+### -param EcpType [in]
 
-[in]
+
 Pointer to a GUID that uniquely identifies the ECP context structure.  This GUID value is used by the <b>FsRtlFindExtraCreateParamter</b> routine to determine if the ECP context structure exists in the ECP list, supplied by the <i>EcpList</i> parameter.
 
-### -param EcpContext 
+### -param EcpContext [out, optional]
 
-[out, optional]
+
 Optional parameter that receives a pointer to the found ECP context structure.  If the ECP context structure is not found in the ECP list, <i>EcpContext</i> is set to <b>NULL</b>.  If <i>EcpContext</i> is set to <b>NULL</b> by the caller, the return value of <b>FsRtlFindExtraCreateParamter</b> can be used to determine if the ECP context structure is in the ECP list.
 
-### -param EcpContextSize 
+### -param EcpContextSize [out, optional]
 
-[out, optional]
+
 Optional parameter that receives the size, in bytes, of the found ECP context structure.  If the ECP context structure is not found, <i>EcpContextSize</i> is set to zero.
 
 ## -returns

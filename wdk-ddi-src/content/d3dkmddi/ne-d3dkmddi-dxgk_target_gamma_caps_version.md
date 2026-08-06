@@ -3,7 +3,6 @@ UID: NE:d3dkmddi._DXGK_TARGET_GAMMA_CAPS_VERSION
 title: DXGK_TARGET_GAMMA_CAPS_VERSION
 description: The kernel mode display driver target gamma capabilities version.
 tech.root: display
-ms.assetid: c28d7da0-a519-48c7-be21-c17553fc1b84
 ms.date: 04/04/2019
 keywords: ["DXGK_TARGET_GAMMA_CAPS_VERSION enumeration"]
 ms.keywords: DXGK_TARGET_GAMMA_CAPS_VERSION, DXGK_TARGET_GAMMA_CAPS_VERSION,
@@ -31,6 +30,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_TARGET_GAMMA_CAPS_VERSION
  - DXGK_TARGET_GAMMA_CAPS_VERSION
 dev_langs:
  - c++

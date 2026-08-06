@@ -4,14 +4,13 @@ title: _D3DKMDT_VIDEO_PRESENT_TARGET (d3dkmdt.h)
 description: The D3DKMDT_VIDEO_PRESENT_TARGET structure contains information about a video present target.
 old-location: display\d3dkmdt_video_present_target.htm
 tech.root: display
-ms.assetid: e36aba12-51fc-486c-a92c-47f72a4bcb0a
 ms.date: 05/10/2018
 keywords: ["D3DKMDT_VIDEO_PRESENT_TARGET structure"]
 ms.keywords: D3DKMDT_VIDEO_PRESENT_TARGET, D3DKMDT_VIDEO_PRESENT_TARGET structure [Display Devices], DmStructs_ef451c58-7ee5-4c52-9afe-9aab45114186.xml, _D3DKMDT_VIDEO_PRESENT_TARGET, d3dkmdt/D3DKMDT_VIDEO_PRESENT_TARGET, display.d3dkmdt_video_present_target
 req.header: d3dkmdt.h
-req.include-header: D3dkmdt.h
+req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmdt.h
 api_name:
+ - _D3DKMDT_VIDEO_PRESENT_TARGET
  - D3DKMDT_VIDEO_PRESENT_TARGET
 ---
 
@@ -95,3 +95,4 @@ For more information about video present targets, see <a href="/windows-hardware
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_child_relations">DxgkDdiQueryChildRelations</a>
+

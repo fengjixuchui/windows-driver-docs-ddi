@@ -1,33 +1,26 @@
 ---
 UID: NS:acpitabl._PROC_TOPOLOGY_NODE
-title: _PROC_TOPOLOGY_NODE (acpitabl.h)
+tech.root: acpi
+title: PROC_TOPOLOGY_NODE (acpitabl.h)
+ms.date: 10/03/2022
+targetos: Windows
 description: Defines the processor topology node structure.
-ms.assetid: f26eebde-0e00-4351-9d22-12d37e15af6b
-ms.date: 10/01/2018
-keywords: ["PROC_TOPOLOGY_NODE structure"]
-ms.keywords: _PROC_TOPOLOGY_NODE, PROC_TOPOLOGY_NODE, *PPROC_TOPOLOGY_NODE,
+prerelease: false
+req.construct-type: structure
+req.ddi-compliance: 
+req.dll: 
 req.header: acpitabl.h
-req.include-header: 
-req.target-type: 
+req.include-header: Acpitabl.h
+req.kmdf-ver: 
+req.lib: 
+req.max-support: 
+req.redist: 
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
-req.kmdf-ver: 
-req.umdf-ver: 
-req.lib: 
-req.dll: 
-req.ddi-compliance: 
-req.unicode-ansi: 
-req.max-support: 
+req.target-type: Windows
 req.typenames: PROC_TOPOLOGY_NODE, *PPROC_TOPOLOGY_NODE
-targetos: Windows
-ms.custom: RS5
-f1_keywords:
- - _PROC_TOPOLOGY_NODE
- - acpitabl/_PROC_TOPOLOGY_NODE
- - PPROC_TOPOLOGY_NODE
- - acpitabl/PPROC_TOPOLOGY_NODE
- - PROC_TOPOLOGY_NODE
- - acpitabl/PROC_TOPOLOGY_NODE
+req.umdf-ver: 
+req.unicode-ansi: 
 topic_type:
  - apiref
 api_type:
@@ -36,10 +29,20 @@ api_location:
  - acpitabl.h
 api_name:
  - _PROC_TOPOLOGY_NODE
+ - PPROC_TOPOLOGY_NODE
+ - PROC_TOPOLOGY_NODE
+f1_keywords:
+ - _PROC_TOPOLOGY_NODE
+ - acpitabl/_PROC_TOPOLOGY_NODE
+ - PPROC_TOPOLOGY_NODE
+ - acpitabl/PPROC_TOPOLOGY_NODE
+ - PROC_TOPOLOGY_NODE
+ - acpitabl/PROC_TOPOLOGY_NODE
+dev_langs:
+ - c++
+helpviewer_keywords:
+ - _PROC_TOPOLOGY_NODE
 ---
-
-# _PROC_TOPOLOGY_NODE structure
-
 
 ## -description
 
@@ -49,55 +52,104 @@ Defines the processor topology node structure.
 
 ### -field Type
 
+Defines the **UCHAR** member **Type**.
+
 ### -field Length
 
-### -field Reserved
+Defines the **UCHAR** member **Length**.
+
+### -field Reserved[2]
 
 Reserved for future use.
 
-### -field HeirarchyNode
+### -field HierarchyNode
 
-### -field HeirarchyNode.Flags
+Defines the **HierarchyNode** member structure.
 
-### -field HeirarchyNode.Parent
+### -field HierarchyNode.Flags
 
-### -field HeirarchyNode.ACPIProcessorId
+Defines the **PROC_TOPOLOGY_NODE_FLAGS** member **Flags**.
 
-### -field HeirarchyNode.NumberPrivateResources
+### -field HierarchyNode.Parent
 
-### -field HeirarchyNode.PrivateResources
+Defines the **ULONG** member **Parent**.
+
+### -field HierarchyNode.ACPIProcessorId
+
+Defines the **ULONG** member **ACPIProcessorId**.
+
+### -field HierarchyNode.NumberPrivateResources[ANYSIZE_ARRAY]
+
+Defines the **ULONG** member **NumberPrivateResources**.
+
+### -field HierarchyNode.PrivateResources
+
+Defines the **ULONG** member **PrivateResources**.
 
 ### -field CacheNode
 
+Defines the **CacheNode** member structure.
+
 ### -field CacheNode.Flags
+
+Defines the **PROC_TOPOLOGY_CACHE_FLAGS** member **Flags**.
 
 ### -field CacheNode.NextLevelCacheOffset
 
+Defines the **ULONG** member **NextLevelCacheOffset**.
+
 ### -field CacheNode.Size
+
+Defines the **ULONG** member **Size**.
 
 ### -field CacheNode.Sets
 
+Defines the **ULONG** member **Sets**.
+
 ### -field CacheNode.Associativity
+
+Defines the **UCHAR** member **Associativity**.
 
 ### -field CacheNode.Attributes
 
+Defines the **PROC_TOPOLOGY_CACHE_ATTRIBUTES** member **Attributes**.
+
 ### -field CacheNode.LineSize
+
+Defines the **USHORT** member **LineSize**.
+
+### -field CacheNode.CacheId
+
+Defines the **ULONG** member **CacheId**.
 
 ### -field IdNode
 
+Defines the **IdNode** member structure.
+
 ### -field IdNode.Vendor
+
+Defines the **ULONG** member **Vendor**.
 
 ### -field IdNode.Level1
 
+Defines the **ULONG64** member **Level1**.
+
 ### -field IdNode.Level2
+
+Defines the **ULONG64** member **Level2**.
 
 ### -field IdNode.Major
 
+Defines the **USHORT** member **Major**.
+
 ### -field IdNode.Minor
 
+Defines the **USHORT** member **Minor**.
+
 ### -field IdNode.Spin
+
+Defines the **USHORT** member **Spin**.
 
 ## -remarks
 
 ## -see-also
-

@@ -4,7 +4,6 @@ title: _WDF_DEVICE_FAILED_ACTION (wdfdevice.h)
 description: The WDF_DEVICE_FAILED_ACTION enumeration identifies the action that the framework will take when a driver reports an unrecoverable software or hardware failure.
 old-location: wdf\wdf_device_failed_action.htm
 tech.root: wdf
-ms.assetid: 260fdda5-bc97-4522-96ca-1c29d41e8542
 ms.date: 02/26/2018
 keywords: ["WDF_DEVICE_FAILED_ACTION enumeration"]
 ms.keywords: DFDeviceObjectGeneralRef_f23e41aa-e37c-45d0-b83b-0ee86eb24aba.xml, WDF_DEVICE_FAILED_ACTION, WDF_DEVICE_FAILED_ACTION enumeration, WdfDeviceFailedAttemptRestart, WdfDeviceFailedNoRestart, WdfDeviceFailedUndefined, _WDF_DEVICE_FAILED_ACTION, kmdf.wdf_device_failed_action, wdf.wdf_device_failed_action, wdfdevice/WDF_DEVICE_FAILED_ACTION, wdfdevice/WdfDeviceFailedAttemptRestart, wdfdevice/WdfDeviceFailedNoRestart, wdfdevice/WdfDeviceFailedUndefined
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfdevice.h
 api_name:
+ - _WDF_DEVICE_FAILED_ACTION
  - WDF_DEVICE_FAILED_ACTION
 ---
 
@@ -54,7 +54,7 @@ The WDF_DEVICE_FAILED_ACTION enumeration identifies the action that the framewor
 
 ## -enum-fields
 
-### -field WdfDeviceFailedUndefined
+### -field WdfDeviceFailedUndefined:0
 
 For internal use only.
 
@@ -77,3 +77,4 @@ For information about specifying <b>WdfDeviceFailedAttemptRestart</b> in a UMDF 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicesetfailed">WdfDeviceSetFailed</a>
+

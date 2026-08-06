@@ -1,8 +1,7 @@
 ---
 UID: NS:ntifs._VIRTUAL_STORAGE_SET_BEHAVIOR_INPUT
 title: _VIRTUAL_STORAGE_SET_BEHAVIOR_INPUT (ntifs.h)
-description: 
-ms.assetid: 072ced06-437c-461f-a6a9-5eac62897a54
+description: "Learn more about: _VIRTUAL_STORAGE_SET_BEHAVIOR_INPUT structure"
 ms.date: 10/19/2018
 tech.root: ifsk
 keywords: ["VIRTUAL_STORAGE_SET_BEHAVIOR_INPUT structure"]
@@ -35,6 +34,8 @@ api_location:
  - ntifs.h
 api_name:
  - _VIRTUAL_STORAGE_SET_BEHAVIOR_INPUT
+ - PVIRTUAL_STORAGE_SET_BEHAVIOR_INPUT
+ - VIRTUAL_STORAGE_SET_BEHAVIOR_INPUT
 ---
 
 # _VIRTUAL_STORAGE_SET_BEHAVIOR_INPUT structure

@@ -1,25 +1,24 @@
 ---
+description: "Learn more about: Prnasntp.h header"
 UID: NA:prnasntp
 title: Prnasntp.h header
-ms.assetid: 06a2babb-67c2-3b95-be24-a44b7eec0bcf
-ms.date: 05/09/2018
+ms.date: 03/02/2023
 keywords: ["Prnasntp.h header"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 tech.root: print
 f1_keywords:
  - prnasntp
  - prnasntp/prnasntp
+api_name:
+ - prnasntp
 ---
 
 # Prnasntp.h header
 
-
 ## -description
 
-This header is used by print. For more information, see:
+This header is used by print.
+
+For more information, see:
 
 - [Print devices](../_print/index.md)
-

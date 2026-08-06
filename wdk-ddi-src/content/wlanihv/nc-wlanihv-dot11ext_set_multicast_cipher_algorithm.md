@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_SET_MULTICAST_CIPHER_ALGORITHM
 title: DOT11EXT_SET_MULTICAST_CIPHER_ALGORITHM (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_SET_MULTICAST_CIPHER_ALGORITHM callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extsetmulticastcipheralgorithm.htm
 tech.root: netvista
-ms.assetid: af023bc5-af3e-429c-b9c4-c06e5598cfaf
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_SET_MULTICAST_CIPHER_ALGORITHM callback"]
 ms.keywords: DOT11EXT_SET_MULTICAST_CIPHER_ALGORITHM, Dot11ExtSetMulticastCipherAlgorithm, Dot11ExtSetMulticastCipherAlgorithm callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_67af4c54-7246-4d6e-a82f-35a7b23c8200.xml, netvista.dot11extsetmulticastcipheralgorithm, wlanihv/Dot11ExtSetMulticastCipherAlgorithm
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_SET_MULTICAST_CIPHER_ALGORITHM
  - wlanihv/DOT11EXT_SET_MULTICAST_CIPHER_ALGORITHM
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtSetMulticastCipherAlgorithm
+ - DOT11EXT_SET_MULTICAST_CIPHER_ALGORITHM
 ---
 
 # DOT11EXT_SET_MULTICAST_CIPHER_ALGORITHM callback
@@ -55,17 +53,17 @@ The IHV Extensions DLL calls the
 
 ## -parameters
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the WLAN adapter. This handle value was
      specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param dwMulticastCipherAlgo 
+### -param dwMulticastCipherAlgo [in]
 
-[in]
+
 A
      <a href="..\wlantypes\ne-wlantypes-_dot11_cipher_algorithm.md">DOT11_CIPHER_ALGORITHM</a> enumerator
      value that identifies the multicast cipher algorithm.
@@ -117,3 +115,4 @@ DWORD WINAPI * Dot11ExtSetMulticastCipherAlgorithm(
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+

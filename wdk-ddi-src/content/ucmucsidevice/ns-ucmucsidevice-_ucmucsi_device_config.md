@@ -3,7 +3,6 @@ UID: NS:ucmucsidevice._UCMUCSI_DEVICE_CONFIG
 title: _UCMUCSI_DEVICE_CONFIG (ucmucsidevice.h)
 tech.root: usbref
 description: Configuration structure for UcmUcsiDeviceInitialize.
-ms.assetid: e31e55aa-de96-4ea0-967e-ae12507ea643
 ms.date: 09/30/2018
 keywords: ["UCMUCSI_DEVICE_CONFIG structure"]
 ms.keywords: _UCMUCSI_DEVICE_CONFIG, UCMUCSI_DEVICE_CONFIG, *PUCMUCSI_DEVICE_CONFIG,
@@ -36,6 +35,8 @@ api_type:
 api_location:
  - ucmucsidevice.h
 api_name:
+ - _UCMUCSI_DEVICE_CONFIG
+ - PUCMUCSI_DEVICE_CONFIG
  - UCMUCSI_DEVICE_CONFIG
 ---
 
@@ -63,3 +64,4 @@ Size of this structure.
 [**UCMUCSI_DEVICE_CONFIG_INIT**](nf-ucmucsidevice-ucmucsi_device_config_init.md)
 
 [**WdfDeviceCreate**](../wdfdevice/nf-wdfdevice-wdfdevicecreate.md)
+

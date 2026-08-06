@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_FLIPINFOFLAGS
 title: _D3DKMT_FLIPINFOFLAGS (d3dkmthk.h)
 description: The D3DKMT_FLIPINFOFLAGS structure identifies flipping capabilities of the display miniport driver that the OpenGL installable client driver (ICD) obtains by calling the D3DKMTQueryAdapterInfo function.
 old-location: display\d3dkmt_flipinfoflags.htm
-ms.assetid: 61b6d477-5a4c-475c-8605-5ede592e75c1
 ms.date: 05/10/2018
 keywords: ["D3DKMT_FLIPINFOFLAGS structure"]
 ms.keywords: D3DKMT_FLIPINFOFLAGS, D3DKMT_FLIPINFOFLAGS structure [Display Devices], OpenGL_Structs_2e8d2e1b-7ae8-4ac4-916d-5cace7ef043e.xml, _D3DKMT_FLIPINFOFLAGS, d3dkmthk/D3DKMT_FLIPINFOFLAGS, display.d3dkmt_flipinfoflags
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_FLIPINFOFLAGS
  - D3DKMT_FLIPINFOFLAGS
 ---
 
@@ -73,3 +73,4 @@ This member is reserved and should be set to zero. Setting this member is equiva
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_queryadapterinfo">D3DKMT_QUERYADAPTERINFO</a>
+

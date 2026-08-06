@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugEventCallbacks.ExitThread
 title: IDebugEventCallbacks::ExitThread (dbgeng.h)
-description: The ExitThread callback method is called by the engine when an exit-thread debugging event occurs in the target.
+description: The ExitThread callback method is called by the engine when an exit-thread debugging event occurs in the target. This method belongs to IDebugEventCallbacks.
 old-location: debugger\idebugeventcallbacks_exitthread.htm
 tech.root: debugger
-ms.assetid: 03ff46cb-dfc5-409a-b652-bef8f2b37b59
 ms.date: 05/03/2018
 keywords: ["IDebugEventCallbacks::ExitThread"]
 ms.keywords: ComCallbacks_554f76a8-5f15-4bcc-b3ec-070ecc836ba9.xml, ExitThread, ExitThread method [Windows Debugging], ExitThread method [Windows Debugging],IDebugEventCallbacks interface, IDebugEventCallbacks interface [Windows Debugging],ExitThread method, IDebugEventCallbacks.ExitThread, IDebugEventCallbacks::ExitThread, dbgeng/IDebugEventCallbacks::ExitThread, debugger.idebugeventcallbacks_exitthread
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugEventCallbacks.ExitThread
+ - IDebugEventCallbacks::ExitThread
 ---
 
 # IDebugEventCallbacks::ExitThread
@@ -50,9 +49,9 @@ The <b>ExitThread</b> callback method is called by the engine when an exit-threa
 
 ## -parameters
 
-### -param ExitCode 
+### -param ExitCode [in]
 
-[in]
+
 Specifies the exit code for the thread.
 
 ## -returns
@@ -64,3 +63,4 @@ This method returns a <a href="/windows-hardware/drivers/debugger/debug-status-x
 This method is only called by the engine if the DEBUG_EVENT_EXIT_THREAD flag is set in the mask returned by <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugeventcallbacks-getinterestmask">IDebugEventCallbacks::GetInterestMask</a>.
 
 For more information about handling events, see <a href="/windows-hardware/drivers/debugger/monitoring-events">Monitoring Events</a>.  For information about threads, see <a href="/windows-hardware/drivers/debugger/threads-and-processes">Threads and Processes</a>.
+

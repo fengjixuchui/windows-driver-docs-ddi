@@ -4,7 +4,6 @@ title: IWDFUsbRequestCompletionParams::GetPipeWriteParameters (wudfusb.h)
 description: The GetPipeWriteParameters method retrieves parameters that are associated with the completion of a write request.
 old-location: wdf\iwdfusbrequestcompletionparams_getpipewriteparameters.htm
 tech.root: wdf
-ms.assetid: c6824215-0c16-471e-aea9-1b5cbeb2286b
 ms.date: 02/26/2018
 keywords: ["IWDFUsbRequestCompletionParams::GetPipeWriteParameters"]
 ms.keywords: GetPipeWriteParameters, GetPipeWriteParameters method, GetPipeWriteParameters method,IWDFUsbRequestCompletionParams interface, IWDFUsbRequestCompletionParams interface,GetPipeWriteParameters method, IWDFUsbRequestCompletionParams.GetPipeWriteParameters, IWDFUsbRequestCompletionParams::GetPipeWriteParameters, UMDFRequestObjectRef_430256d1-89c8-4ef7-9385-8ae29d848f57.xml, umdf.iwdfusbrequestcompletionparams_getpipewriteparameters, wdf.iwdfusbrequestcompletionparams_getpipewriteparameters, wudfusb/IWDFUsbRequestCompletionParams::GetPipeWriteParameters
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFUsbRequestCompletionParams.GetPipeWriteParameters
+ - IWDFUsbRequestCompletionParams::GetPipeWriteParameters
 ---
 
 # IWDFUsbRequestCompletionParams::GetPipeWriteParameters
@@ -52,19 +51,19 @@ The <b>GetPipeWriteParameters</b> method retrieves parameters that are associate
 
 ## -parameters
 
-### -param ppWriteMemory 
+### -param ppWriteMemory [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfmemory">IWDFMemory</a> interface, for access to the write buffer for the write request. This parameter is optional and can be <b>NULL</b>.
 
-### -param pBytesWritten 
+### -param pBytesWritten [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives the size, in bytes, of the write buffer for the write request. This parameter is optional and can be <b>NULL</b>.
 
-### -param pWriteMemoryOffset 
+### -param pWriteMemoryOffset [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives the offset, in bytes, into the write buffer for the write request. This parameter is optional and can be <b>NULL</b>.
 
 ## -see-also
@@ -74,3 +73,4 @@ A pointer to a variable that receives the offset, in bytes, into the write buffe
 
 
 <a href="/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbrequestcompletionparams">IWDFUsbRequestCompletionParams</a>
+

@@ -4,7 +4,6 @@ title: IDebugControl4::SetExceptionFilterSecondCommandWide (dbgeng.h)
 description: The SetExceptionFilterSecondCommandWide method sets the command that will be executed by the debugger engine on the second chance of a specified exception.
 old-location: debugger\setexceptionfiltersecondcommandwide.htm
 tech.root: debugger
-ms.assetid: cbc0e98b-eac7-441d-b2b5-512725403210
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::SetExceptionFilterSecondCommandWide"]
 ms.keywords: IDebugControl4 interface [Windows Debugging],SetExceptionFilterSecondCommandWide method, IDebugControl4.SetExceptionFilterSecondCommandWide, IDebugControl4::SetExceptionFilterSecondCommandWide, SetExceptionFilterSecondCommandWide, SetExceptionFilterSecondCommandWide method [Windows Debugging], SetExceptionFilterSecondCommandWide method [Windows Debugging],IDebugControl4 interface, dbgeng/IDebugControl4::SetExceptionFilterSecondCommandWide, debugger.setexceptionfiltersecondcommandwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.SetExceptionFilterSecondCommandWide
+ - IDebugControl4::SetExceptionFilterSecondCommandWide
 ---
 
 # IDebugControl4::SetExceptionFilterSecondCommandWide
@@ -50,14 +49,14 @@ The <b>SetExceptionFilterSecondCommandWide</b>  method sets the command that wil
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 Specifies the index of the exception filter whose second-chance command will be set.  <i>Index</i> must not refer to the specific event filters as these are not exception filters and only exception events get a second chance.  If <i>Index</i> refers to the default exception filter, the second-chance command is set for all exceptions that do not have an exception filter.
 
-### -param Command 
+### -param Command [in]
 
-[in]
+
 Receives the second-chance command for the exception filter.
 
 ## -returns
@@ -101,3 +100,4 @@ For more information about <a href="/windows-hardware/drivers/debugger/event-fil
 
 
 <a href="/windows-hardware/drivers/debugger/sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-">sx, sxd, sxe, sxi, sxn (Set Exceptions)</a>
+

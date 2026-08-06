@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_58
+UID: NS:ksmedia.SYSAUDIO_SELECT_GRAPH
 title: SYSAUDIO_SELECT_GRAPH (ksmedia.h)
 description: The SYSAUDIO_SELECT_GRAPH structure is used to specify a graph that includes an optional node such as an AEC control.
 old-location: audio\sysaudio_select_graph.htm
 tech.root: audio
-ms.assetid: f114e8ef-4fb7-4fdd-9c83-d8e74c91190e
 ms.date: 04/30/2019
 keywords: ["SYSAUDIO_SELECT_GRAPH structure"]
 ms.keywords: "*PSYSAUDIO_SELECT_GRAPH, PSYSAUDIO_SELECT_GRAPH, PSYSAUDIO_SELECT_GRAPH structure pointer [Audio Devices], SYSAUDIO_SELECT_GRAPH, SYSAUDIO_SELECT_GRAPH structure [Audio Devices], aud-prop_9dd94d88-2ed4-4908-ac6e-eb1a82ea152d.xml, audio.sysaudio_select_graph, ksmedia/PSYSAUDIO_SELECT_GRAPH, ksmedia/SYSAUDIO_SELECT_GRAPH"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PSYSAUDIO_SELECT_GRAPH
  - SYSAUDIO_SELECT_GRAPH
 ---
 
@@ -54,7 +54,7 @@ The SYSAUDIO_SELECT_GRAPH structure is used to specify a graph that includes an 
 
 ### -field Property
 
-Specifies the property to get or set. This parameter is a structure of type <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>.
+Specifies the property to get or set. This parameter is a structure of type <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>.
 
 ### -field PinId
 
@@ -74,8 +74,9 @@ Reserved. Set to zero.
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
 <a href="/windows-hardware/drivers/audio/ksproperty-sysaudio-select-graph">KSPROPERTY_SYSAUDIO_SELECT_GRAPH</a>
+

@@ -4,7 +4,6 @@ title: _SetPresharedKeyForId_OUT (iscsiop.h)
 description: The SetPresharedKeyForId_OUT structure holds the output data for the SetPresharedKeyForId method.
 old-location: storage\setpresharedkeyforid_out.htm
 tech.root: storage
-ms.assetid: 839041be-bb8c-4e02-a260-e9adcec98ff3
 ms.date: 03/29/2018
 keywords: ["SetPresharedKeyForId_OUT structure"]
 ms.keywords: "*PSetPresharedKeyForId_OUT, PSetPresharedKeyForId_OUT, PSetPresharedKeyForId_OUT structure pointer [Storage Devices], SetPresharedKeyForId_OUT, SetPresharedKeyForId_OUT structure [Storage Devices], _SetPresharedKeyForId_OUT, iscsiop/PSetPresharedKeyForId_OUT, iscsiop/SetPresharedKeyForId_OUT, storage.setpresharedkeyforid_out, structs-iSCSI_c0146684-fe9e-4bca-81d2-2a09b554d006.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsiop.h
 api_name:
+ - _SetPresharedKeyForId_OUT
+ - PSetPresharedKeyForId_OUT
  - SetPresharedKeyForId_OUT
 ---
 
@@ -73,3 +74,4 @@ You must implement this method.
 
 
 <a href="/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_setpresharedkeyforid_in">SetPresharedKeyForId_IN</a>
+

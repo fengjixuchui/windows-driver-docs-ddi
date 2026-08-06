@@ -3,7 +3,6 @@ UID: NS:d3d12umddi.D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032
 title: D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032 (d3d12umddi.h)
 description: Video decode conversion support data.
 old-location: display\d3d12ddi-video-decode-conversion-support-data-0032.htm
-ms.assetid: 1395fe30-9bbf-433c-8696-a0f842bad10e
 ms.date: 04/16/2018
 keywords: ["D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032 structure"]
 ms.keywords: D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032, D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032 structure [Display Devices], d3d12umddi/D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032, display.d3d12ddi-video-decode-conversion-support-data-0032
@@ -42,7 +41,6 @@ api_name:
 ---
 
 # D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_DATA_0032 structure
-
 
 ## -description
 
@@ -84,9 +82,10 @@ Indicates the supported output size range for decode conversion. See [D3D12DDI_V
 
 ## -remarks
 
+The check is made through [**pfnGetCaps**](nc-d3d12umddi-pfnd3d12ddi_video_getcaps.md) with the [**D3D12DDICAPS_TYPE**](ne-d3d12umddi-d3d12ddicaps_type.md) set to a value of **D3D12DDICAPS_TYPE_VIDEO_DECODE_CONVERSION_SUPPORT**.
+
 If the color space and format conversion is reported, **SupportedFlags** will have D3D12DDI_VIDEO_DECODE_SUPPORT_FLAGS_SUPPORTED set. Callers should check **ScaleSupport** to understand if the scale is supported.
 
 ## -see-also
 
 [D3D12DDI_VIDEO_DECODE_CONVERSION_SUPPORT_FLAGS](ne-d3d12umddi-d3d12ddi_video_decode_conversion_support_flags_0020.md)
-

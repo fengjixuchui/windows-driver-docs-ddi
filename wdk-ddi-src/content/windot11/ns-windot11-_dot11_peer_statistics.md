@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11._DOT11_PEER_STATISTICS
 title: _DOT11_PEER_STATISTICS (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_PEER_STATISTICS structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_peer_statistics.htm
 tech.root: netvista
-ms.assetid: 08ea7f19-e086-4d5a-bfc7-de9178d815cd
 ms.date: 02/16/2018
 keywords: ["DOT11_PEER_STATISTICS structure"]
 ms.keywords: "*PDOT11_PEER_STATISTICS, DOT11_PEER_STATISTICS, DOT11_PEER_STATISTICS structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_5e07a8dd-79f1-4cba-89d3-f70e04caad12.xml, PDOT11_PEER_STATISTICS, PDOT11_PEER_STATISTICS structure pointer [Network Drivers Starting with Windows Vista], _DOT11_PEER_STATISTICS, netvista.dot11_peer_statistics, windot11/DOT11_PEER_STATISTICS, windot11/PDOT11_PEER_STATISTICS"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - windot11.h
 api_name:
+ - _DOT11_PEER_STATISTICS
+ - PDOT11_PEER_STATISTICS
  - DOT11_PEER_STATISTICS
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_PEER_STATISTICS structure
@@ -52,7 +51,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_PEER_STATISTICS structure records statistical counters for the IEEE media access control
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_PEER_STATISTICS structure records statistical counters for the IEEE media access control
   (MAC) sublayer of a peer station within an independent basic service set (IBSS) network.
 <div class="alert"><b>Note</b>  IBSS (Ad hoc) and SoftAP are deprecated. Starting with Windows 8.1 and Windows Server 2012 R2, use <a href="/windows-hardware/drivers/partnerapps/wi-fi-direct">Wi-Fi Direct</a>.</div><div> </div>
 
@@ -101,4 +103,5 @@ typedef struct _DOT11_PEER_STATISTICS {
 
 ## -see-also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+

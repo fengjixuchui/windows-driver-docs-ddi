@@ -4,7 +4,6 @@ title: _UNI_GLYPHSETDATA (prntfont.h)
 description: The UNI_GLYPHSEDATA structure is one of the structures used to define the contents of glyph translation table files (.gtt files).
 old-location: print\uni_glyphsetdata.htm
 tech.root: print
-ms.assetid: a2c98783-c463-435e-9d78-c10686f1c75c
 ms.date: 04/20/2018
 keywords: ["UNI_GLYPHSETDATA structure"]
 ms.keywords: "*PUNI_GLYPHSETDATA, PUNI_GLYPHSETDATA, PUNI_GLYPHSETDATA structure pointer [Print Devices], UNI_GLYPHSETDATA, UNI_GLYPHSETDATA structure [Print Devices], _UNI_GLYPHSETDATA, print.uni_glyphsetdata, print_unidrv-pscript_fonts_51c5f97c-3b3c-4990-8dcb-9c7bf387b03f.xml, prntfont/PUNI_GLYPHSETDATA, prntfont/UNI_GLYPHSETDATA"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - prntfont.h
 api_name:
+ - _UNI_GLYPHSETDATA
+ - PUNI_GLYPHSETDATA
  - UNI_GLYPHSETDATA
 ---
 
@@ -113,3 +114,4 @@ A UNI_GLYPHSETDATA structure must be the first structure contained in a .gtt fil
 
 
 <a href="/windows-hardware/drivers/ddi/prntfont/ns-prntfont-_uni_codepageinfo">UNI_CODEPAGEINFO</a>
+

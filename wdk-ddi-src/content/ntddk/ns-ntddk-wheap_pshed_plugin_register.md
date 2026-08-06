@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._WHEAP_PSHED_PLUGIN_REGISTER
 title: WHEAP_PSHED_PLUGIN_REGISTER
-description: 
-tech.root: 
-ms.assetid: 033e896d-6d4e-411e-98a4-5f94d37de0bd
+description: "Learn more about: WHEAP_PSHED_PLUGIN_REGISTER structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEAP_PSHED_PLUGIN_REGISTER structure"]
 ms.keywords: WHEAP_PSHED_PLUGIN_REGISTER, WHEAP_PSHED_PLUGIN_REGISTER, *PWHEAP_PSHED_PLUGIN_REGISTER,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEAP_PSHED_PLUGIN_REGISTER
+ - PWHEAP_PSHED_PLUGIN_REGISTER
  - WHEAP_PSHED_PLUGIN_REGISTER
-product:
- - Windows
 ---
 
 # WHEAP_PSHED_PLUGIN_REGISTER structure

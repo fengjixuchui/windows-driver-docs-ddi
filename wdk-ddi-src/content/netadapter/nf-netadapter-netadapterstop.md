@@ -3,8 +3,7 @@ UID: NF:netadapter.NetAdapterStop
 title: NetAdapterStop function (netadapter.h)
 description: The NetAdapterStop function stops a NETADAPTER object.
 tech.root: netvista
-ms.assetid: b566be39-c819-4d37-bf35-9b3d56e04818
-ms.date: 03/05/2018
+ms.date: 03/30/2022
 keywords: ["NetAdapterStop function"]
 ms.keywords: NetAdapterStop
 req.header: netadapter.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.25
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -47,7 +46,7 @@ The **NetAdapterStop** function stops a NETADAPTER object.
 
 ## -parameters
 
-### -param Adapter
+### -param Adapter [_In_]
 
 The **NETADAPTER** object created by a prior call to [NetAdapterCreate](nf-netadapter-netadaptercreate.md).
 

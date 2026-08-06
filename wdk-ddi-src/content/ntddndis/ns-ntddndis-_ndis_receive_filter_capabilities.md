@@ -4,7 +4,6 @@ title: _NDIS_RECEIVE_FILTER_CAPABILITIES (ntddndis.h)
 description: The NDIS_RECEIVE_FILTER_CAPABILITIES structure specifies the receive filtering capabilities of a network adapter.
 old-location: netvista\ndis_receive_filter_capabilities.htm
 tech.root: netvista
-ms.assetid: aecc1fe0-03f9-44be-9a38-b689eee4c5a6
 ms.date: 05/02/2018
 keywords: ["NDIS_RECEIVE_FILTER_CAPABILITIES structure"]
 ms.keywords: "*PNDIS_RECEIVE_FILTER_CAPABILITIES, NDIS_RECEIVE_FILTER_CAPABILITIES, NDIS_RECEIVE_FILTER_CAPABILITIES structure [Network Drivers Starting with Windows Vista], PNDIS_RECEIVE_FILTER_CAPABILITIES, PNDIS_RECEIVE_FILTER_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_FILTER_CAPABILITIES, netvista.ndis_receive_filter_capabilities, ntddndis/NDIS_RECEIVE_FILTER_CAPABILITIES, ntddndis/PNDIS_RECEIVE_FILTER_CAPABILITIES, virtual_machine_queue_ref_51c84771-6803-4059-9011-df2d870614a0.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_RECEIVE_FILTER_CAPABILITIES
+ - PNDIS_RECEIVE_FILTER_CAPABILITIES
  - NDIS_RECEIVE_FILTER_CAPABILITIES
 ---
 
@@ -67,7 +68,7 @@ NDIS receive filters are used in the following NDIS interfaces:
 </li>
 <li>
 
-<a href="/windows-hardware/drivers/network/virtual-machine-queue--vmq-">Virtual Machine Queue (VMQ)</a>. For more information about how to use receive filters in this interface, see <a href="/windows-hardware/drivers/network/setting-and-clearing-vmq-filters">Setting and Clearing VMQ Filters</a>.
+<a href="/windows-hardware/drivers/network/virtual-machine-queue-architecture">Virtual Machine Queue (VMQ)</a>. For more information about how to use receive filters in this interface, see <a href="/windows-hardware/drivers/network/setting-and-clearing-vmq-filters">Setting and Clearing VMQ Filters</a>.
 
 </li>
 </ul>
@@ -77,7 +78,7 @@ NDIS receive filters are used in the following NDIS interfaces:
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_RECEIVE_FILTER_CAPABILITIES</b> structure. The driver sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT.
@@ -377,7 +378,7 @@ The network adapter supports inspecting and filtering that are based on the Ethe
 The network adapter supports inspecting and filtering that are based on the VLAN identifier in
        the MAC header.
 
-<div class="alert"><b>Note</b>  Starting with NDIS 6.30, this flag is optional. If the miniport driver does not set this flag, the network adapter should inspect and filter the specified MAC address fields. If a VLAN tag is present in the received packet, the network adapter must remove it from the packet data. The miniport driver must   put the VLAN tag in an <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_net_buffer_list_8021q_info">NDIS_NET_BUFFER_LIST_8021Q_INFO</a> structure that is associated with the packet's <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure.</div>
+<div class="alert"><b>Note</b>  Starting with NDIS 6.30, this flag is optional. If the miniport driver does not set this flag, the network adapter should inspect and filter the specified MAC address fields. If a VLAN tag is present in the received packet, the network adapter must remove it from the packet data. The miniport driver must   put the VLAN tag in an <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_net_buffer_list_8021q_info">NDIS_NET_BUFFER_LIST_8021Q_INFO</a> structure that is associated with the packet's <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure.</div>
 <div> </div>
 
 
@@ -543,7 +544,7 @@ Many of the members and flag settings of the <b>NDIS_RECEIVE_FILTER_CAPABILITIES
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -557,3 +558,4 @@ Many of the members and flag settings of the <b>NDIS_RECEIVE_FILTER_CAPABILITIES
 
 <a href="/windows-hardware/drivers/network/oid-receive-filter-hardware-capabilities">
    OID_RECEIVE_FILTER_HARDWARE_CAPABILITIES</a>
+

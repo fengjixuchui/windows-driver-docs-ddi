@@ -4,7 +4,6 @@ title: IPortWaveCyclic::NewSlaveDmaChannel (portcls.h)
 description: The NewSlaveDmaChannel method creates a new instance of a subordinate DMA channel.
 old-location: audio\iportwavecyclic_newslavedmachannel.htm
 tech.root: audio
-ms.assetid: 4d20bd03-9fde-4fcf-a90b-5933221cda93
 ms.date: 05/08/2018
 keywords: ["IPortWaveCyclic::NewSlaveDmaChannel"]
 ms.keywords: IPortWaveCyclic interface [Audio Devices],NewSlaveDmaChannel method, IPortWaveCyclic.NewSlaveDmaChannel, IPortWaveCyclic::NewSlaveDmaChannel, NewSlaveDmaChannel, NewSlaveDmaChannel method [Audio Devices], NewSlaveDmaChannel method [Audio Devices],IPortWaveCyclic interface, audio.iportwavecyclic_newslavedmachannel, audmp-routines_63146fe2-162d-4457-9dda-807f1d3931ac.xml, portcls/IPortWaveCyclic::NewSlaveDmaChannel
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IPortWaveCyclic.NewSlaveDmaChannel
+ - IPortWaveCyclic::NewSlaveDmaChannel
 ---
 
 # IPortWaveCyclic::NewSlaveDmaChannel
@@ -50,39 +49,39 @@ The <code>NewSlaveDmaChannel</code> method creates a new instance of a subordina
 
 ## -parameters
 
-### -param DmaChannel 
+### -param DmaChannel [out]
 
-[out]
+
 Pointer to a caller-allocated pointer variable into which the method writes a pointer to the new DMA-channel object's <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-idmachannelslave">IDmaChannelSlave</a> interface. Specify a valid, non-<b>NULL</b> pointer value for this parameter.
 
-### -param OuterUnknown 
+### -param OuterUnknown [in]
 
-[in]
+
 Pointer to the <b>IUnknown</b> interface of an object that needs to aggregate the DMA-channel object. This parameter is optional. If aggregation is not required, specify this parameter as <b>NULL</b>.
 
-### -param ResourceList 
+### -param ResourceList [in]
 
-[in]
+
 Pointer to an <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iresourcelist">IResourceList</a> object. This resource list contains the resource that describes the DMA channel.
 
-### -param DmaIndex 
+### -param DmaIndex [in]
 
-[in]
+
 Index in the resource list of the DMA-channel descriptor. The function uses this value as a call parameter to the <i>ResourceList</i> object's IResourceList::Find<i>xxx</i>Entry method.
 
-### -param MaximumLength 
+### -param MaximumLength [in]
 
-[in]
+
 Maximum length in bytes of the cyclic DMA buffer that will be associated with this channel.
 
-### -param DemandMode 
+### -param DemandMode [in]
 
-[in]
+
 Indicates whether the device associated with the DMA channel supports demand mode.
 
-### -param DmaSpeed 
+### -param DmaSpeed [in]
 
-[in]
+
 The DMA speed can be specified as one of the following DMA_SPEED enumeration values: <b>Compatible</b>, <b>TypeA</b>, <b>TypeB</b>, <b>TypeC</b>, or <b>TypeF</b>.
 
 ## -returns
@@ -123,3 +122,4 @@ The <i>DmaChannel</i>, <i>OuterUnknown</i>, and <i>ResourceList</i> parameters f
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iresourcelist">IResourceList</a>
+

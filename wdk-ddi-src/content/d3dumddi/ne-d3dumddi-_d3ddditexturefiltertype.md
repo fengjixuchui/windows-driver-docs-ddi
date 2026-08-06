@@ -2,7 +2,6 @@
 UID: NE:d3dumddi._D3DDDITEXTUREFILTERTYPE
 title: _D3DDDITEXTUREFILTERTYPE (d3dumddi.h)
 description: The texture filter type.
-ms.assetid: 4219ecb5-c052-4952-b955-4b8f3653744b
 ms.date: 10/19/2018
 keywords: ["D3DDDITEXTUREFILTERTYPE enumeration"]
 ms.keywords: _D3DDDITEXTUREFILTERTYPE, D3DDDITEXTUREFILTERTYPE,
@@ -32,8 +31,7 @@ api_location:
  - d3dumddi.h
 api_name:
  - _D3DDDITEXTUREFILTERTYPE
-product:
- - Windows
+ - D3DDDITEXTUREFILTERTYPE
 dev_langs:
  - c++
 ---

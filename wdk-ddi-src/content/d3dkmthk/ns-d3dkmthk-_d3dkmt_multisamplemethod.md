@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_MULTISAMPLEMETHOD
 title: _D3DKMT_MULTISAMPLEMETHOD (d3dkmthk.h)
 description: The D3DKMT_MULTISAMPLEMETHOD structure describes a multiple-sampling method.
 old-location: display\d3dkmt_multisamplemethod.htm
-ms.assetid: 6cdc0665-61e6-4c13-9b15-46ce301febec
 ms.date: 05/10/2018
 keywords: ["D3DKMT_MULTISAMPLEMETHOD structure"]
 ms.keywords: D3DKMT_MULTISAMPLEMETHOD, D3DKMT_MULTISAMPLEMETHOD structure [Display Devices], OpenGL_Structs_0617065f-aa53-4b1a-9a3f-e135972d4852.xml, _D3DKMT_MULTISAMPLEMETHOD, d3dkmthk/D3DKMT_MULTISAMPLEMETHOD, display.d3dkmt_multisamplemethod
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_MULTISAMPLEMETHOD
  - D3DKMT_MULTISAMPLEMETHOD
 ---
 
@@ -52,13 +52,13 @@ The D3DKMT_MULTISAMPLEMETHOD structure describes a multiple-sampling method.
 
 ## -struct-fields
 
-### -field NumSamples
+### -field NumSamples [out]
 
-[out] The number of subpixels that are used in the multiple-sampling method (for example, 2 for 2x and 8 for 8x multiple-sampling).
+The number of subpixels that are used in the multiple-sampling method (for example, 2 for 2x and 8 for 8x multiple-sampling).
 
-### -field NumQualityLevels
+### -field NumQualityLevels [out]
 
-[out] The upper bound on the quality range that is supported for the multiple-sampling method. The range extends from zero through the reported maximum quality setting.
+The upper bound on the quality range that is supported for the multiple-sampling method. The range extends from zero through the reported maximum quality setting.
 
 ### -field Reserved
 
@@ -75,3 +75,4 @@ The driver can partition its quality levels for a given multiple-sampling method
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_getmultisamplemethodlist">D3DKMT_GETMULTISAMPLEMETHODLIST</a>
+

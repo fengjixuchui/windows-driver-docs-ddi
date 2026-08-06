@@ -1,10 +1,9 @@
 ---
 UID: NF:engextcpp.ExtRemoteTyped.Set(PCSTR)
 title: ExtRemoteTyped::Set(PCSTR) (engextcpp.h)
-description: The Set method sets the typed data represented by the ExtRemoteTyped object.
+description: The Set(PCSTR) method sets the typed data represented by the ExtRemoteTyped object. This method does not return a value.
 old-location: debugger\extremotetyped_set_pcstr.htm
 tech.root: debugger
-ms.assetid: a19d6aff-c4e4-4188-8f27-3689e91023b4
 ms.date: 05/03/2018
 keywords: ["ExtRemoteTyped::Set(PCSTR)"]
 ms.keywords: ExtRemoteTyped class [Windows Debugging],Set method, ExtRemoteTyped.Set, ExtRemoteTyped.Set(PCSTR), ExtRemoteTyped::Set, ExtRemoteTyped::Set(PCSTR), Set, Set method [Windows Debugging], Set method [Windows Debugging],ExtRemoteTyped class, debugger.extremotetyped_set_pcstr
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteTyped.Set
+ - ExtRemoteTyped::Set
 ---
 
 # ExtRemoteTyped::Set(PCSTR) (engextcpp.h)
@@ -51,12 +50,13 @@ The <b>Set</b> method sets the typed data represented by the <a href="/windows-h
 
 ## -parameters
 
-### -param Expr 
+### -param Expr [in]
 
-[in]
 An expression that evaluates to the desired symbol.  This expression is evaluated by the default expression evaluator.
 
-## -returns
+## -remarks
+
+### Returns
 
 This method does not return a value.
 
@@ -83,3 +83,4 @@ This method does not return a value.
 
 
 <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotetypedlist-extremotetypedlist(extremotedata__pcstr_pcstr_ulong64_ulong_pulong64_bool)">ExtRemoteTypedList</a>
+

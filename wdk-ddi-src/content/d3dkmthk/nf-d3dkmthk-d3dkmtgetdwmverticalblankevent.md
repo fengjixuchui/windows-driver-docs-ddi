@@ -2,7 +2,6 @@
 UID: NF:d3dkmthk.D3DKMTGetDWMVerticalBlankEvent
 title: D3DKMTGetDWMVerticalBlankEvent function (d3dkmthk.h)
 description: Get DWM (desktop windows manager) vertical blank event.
-ms.assetid: ff9b94ac-9983-48e0-96a6-e5939a58695e
 ms.date: 10/19/2018
 keywords: ["D3DKMTGetDWMVerticalBlankEvent function"]
 ms.keywords: D3DKMTGetDWMVerticalBlankEvent
@@ -50,7 +49,7 @@ Get DWM (desktop windows manager) vertical blank event.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_GETVERTICALBLANKEVENT](ns-d3dkmthk-_d3dkmt_getverticalblankevent.md) structure.
 

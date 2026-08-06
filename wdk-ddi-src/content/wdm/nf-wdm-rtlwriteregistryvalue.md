@@ -4,7 +4,6 @@ title: RtlWriteRegistryValue function (wdm.h)
 description: The RtlWriteRegistryValue routine writes caller-supplied data into the registry along the specified relative path at the given value name.
 old-location: kernel\rtlwriteregistryvalue.htm
 tech.root: kernel
-ms.assetid: 97bcd205-ffc0-4645-87d4-659651ed579a
 ms.date: 04/30/2018
 keywords: ["RtlWriteRegistryValue function"]
 ms.keywords: RtlWriteRegistryValue, RtlWriteRegistryValue routine [Kernel-Mode Driver Architecture], k109_e0c16f81-5256-472b-9270-fe48d6a49893.xml, kernel.rtlwriteregistryvalue, wdm/RtlWriteRegistryValue
@@ -50,9 +49,9 @@ The <b>RtlWriteRegistryValue</b> routine writes caller-supplied data into the re
 
 ## -parameters
 
-### -param RelativeTo 
+### -param RelativeTo [in]
 
-[in]
+
 Specifies whether <i>Path</i> is an absolute registry path or is relative to a predefined path as one of the following.
 
 <table>
@@ -142,29 +141,29 @@ Specifies that the <i>Path</i> parameter is actually a registry handle to use. T
 </tr>
 </table>
 
-### -param Path 
+### -param Path [in]
 
-[in]
+
 Pointer to either an absolute registry path or a path relative to the known location specified by the <i>RelativeTo</i> parameter. If the RTL_REGISTRY_HANDLE flag is specified, this parameter is a registry handle for an already opened key to be used directly.
 
-### -param ValueName 
+### -param ValueName [in]
 
-[in]
+
 Pointer to the name of a subkey or value entry to be written into the registry.
 
-### -param ValueType 
+### -param ValueType [in]
 
-[in]
+
 Specifies a REG_<i>XXX</i> value that determines the type of the <i>ValueName</i> parameter. For a list of the possible values, see the <i>Type</i> parameter of <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-zwsetvaluekey">ZwSetValueKey</a>.
 
-### -param ValueData 
+### -param ValueData [in, optional]
 
-[in, optional]
+
 Pointer to the name of a subkey or values for its value entries (or both) to be written into the registry.
 
-### -param ValueLength 
+### -param ValueLength [in]
 
-[in]
+
 Specifies the number of bytes of <i>ValueData</i> to be written into the registry.
 
 ## -returns

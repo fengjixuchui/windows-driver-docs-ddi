@@ -1,11 +1,11 @@
 ---
 UID: NF:netdevice.NetDeviceRequestReset
 title: NetDeviceRequestReset
-ms.topic: language-reference
-ms.date: 07/02/2020
+ms.date: 03/10/2023
 ms.custom: Fe
 targetos: Windows
 description: The NetDeviceRequestReset function triggers the NetAdapterCx framework to perform the platform-level device reset operation that recovers an unresponsive NIC device.
+tech.root: netvista
 keywords: ["NetDeviceRequestReset function"]
 req.assembly:
 req.construct-type: function
@@ -20,11 +20,11 @@ req.lib:
 req.max-support:
 req.namespace:
 req.redist:
-req.target-min-winverclnt:
-req.target-min-winversvr:
+req.target-min-winverclnt: Windows 11
+req.target-min-winversvr: Windows Server 2022
 req.target-type:
 req.type-library:
-req.umdf-ver:
+req.umdf-ver: 2.33
 req.unicode-ansi:
 topic_type:
  - apiref
@@ -46,9 +46,9 @@ The **NetDeviceRequestReset** function triggers the NetAdapterCx framework to pe
 
 ## -parameters
 
-### -param Device
+### -param Device [_In_]
 
-[in] The WDFDEVICE object the client driver previously created with a call to [**WdfDeviceCreate**](../wdfdevice/nf-wdfdevice-wdfdevicecreate.md).
+The WDFDEVICE object the client driver previously created with a call to [**WdfDeviceCreate**](../wdfdevice/nf-wdfdevice-wdfdevicecreate.md).
 
 ## -remarks
 
@@ -56,8 +56,12 @@ A client driver calls **NetDeviceRequestReset** when it detects device failure. 
 
 **NetDeviceRequestReset** is nonblocking and returns immediately to the client driver. The client driver should cancel any ongoing jobs that access the currently failed device.
 
-We recommend that client drivers set up a [**NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES**](ns-netdevice-net_device_reset_diagnostics_capabilities.md) structure to collect meaningful reset diagnostics during the device reset and recovery process.
+We recommend that client drivers set up a [**NET_DEVICE_RESET_CAPABILITIES**](ns-netdevice-net_device_reset_capabilities.md) structure to collect meaningful reset diagnostics during the device reset and recovery process.
 For more on how to collect reset diagnostics, see [Register the optional diagnostics collection callback](/windows-hardware/drivers/netcx/platform-level-device-reset/#register-the-optional-diagnostics-collection-callback).
+
+**NetDeviceRequestReset** is only applicable for PCIe based NIC devices. For USB based NIC devices, follow the process described in [How to recover from USB pipe errors](/windows-hardware/drivers/usbcon/how-to-recover-from-usb-pipe-errors).
+
+If the device encounters an unrecoverable hardware or software error, the client driver can use the [WdfDeviceSetFailed](../wdfdevice/nf-wdfdevice-wdfdevicesetfailed.md) function.
 
 ## -see-also
 
@@ -65,4 +69,4 @@ For more on how to collect reset diagnostics, see [Register the optional diagnos
 
 [**WdfDeviceCreate**](../wdfdevice/nf-wdfdevice-wdfdevicecreate.md)
 
-[**NET_DEVICE_RESET_DIAGNOSTICS_CAPABILITIES**](ns-netdevice-net_device_reset_diagnostics_capabilities.md)
+[**NET_DEVICE_RESET_CAPABILITIES**](ns-netdevice-net_device_reset_capabilities.md)

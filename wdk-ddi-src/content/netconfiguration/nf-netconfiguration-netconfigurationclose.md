@@ -3,7 +3,6 @@ UID: NF:netconfiguration.NetConfigurationClose
 title: NetConfigurationClose function (netconfiguration.h)
 description: Releases the handle to the registry key that is associated with an adapter configuration object and then deletes the adapter configuration object.
 tech.root: netvista
-ms.assetid: 5a133c35-8f4c-4af0-8fc1-82f9ad427f56
 ms.date: 02/07/2018
 keywords: ["NetConfigurationClose function"]
 ms.keywords: NetConfigurationClose
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.21
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: netadaptercxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -49,7 +48,7 @@ Releases the handle to the registry key that is associated with an adapter confi
 
 ## -parameters
 
-### -param Configuration
+### -param Configuration [_In_]
 
 A handle to an adapter configuration object opened in a prior call to [NetAdapterOpenConfiguration](../netadapter/nf-netadapter-netadapteropenconfiguration.md) or [NetConfigurationOpenSubConfiguration](nf-netconfiguration-netconfigurationopensubconfiguration.md).
 

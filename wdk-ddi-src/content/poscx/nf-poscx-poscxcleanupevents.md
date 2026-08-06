@@ -4,7 +4,6 @@ title: PosCxCleanupEvents function (poscx.h)
 description: PosCxCleanupEvents is called to clean up all pending events for a given caller, identified by the open instance.
 old-location: pos\poscxcleanupevents.htm
 tech.root: pos
-ms.assetid: AD97BA14-8786-47A2-B551-2DB6FC7F83A8
 ms.date: 02/23/2018
 keywords: ["PosCxCleanupEvents function"]
 ms.keywords: PosCxCleanupEvents, PosCxCleanupEvents function, pos.poscxcleanupevents, poscx/PosCxCleanupEvents
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: 
-req.product: Windows 10 or later.
 f1_keywords:
  - PosCxCleanupEvents
  - poscx/PosCxCleanupEvents
@@ -51,13 +49,13 @@ PosCxCleanupEvents is called to clean up all pending events for a given caller, 
 
 ## -parameters
 
-### -param device 
+### -param device [in]
 
-[in]
+
 A handle to a framework device object that represents the device.
 
-### -param fileObject 
+### -param fileObject [in]
 
-[in]
+
 A handle to a framework file object for which all pending events should be cleaned up.
 

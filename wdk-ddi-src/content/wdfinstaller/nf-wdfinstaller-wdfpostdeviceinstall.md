@@ -4,7 +4,6 @@ title: WdfPostDeviceInstall function (wdfinstaller.h)
 description: The co-installer's WdfPostDeviceInstall function performs any operations that the co-installer might require after a non-Plug and Play (PnP) driver's installer has created the driver's kernel-mode service.
 old-location: wdf\wdfpostdeviceinstall.htm
 tech.root: wdf
-ms.assetid: 78942ef8-ecf9-481f-af60-2f1266a9e73f
 ms.date: 02/26/2018
 keywords: ["WdfPostDeviceInstall function"]
 ms.keywords: DFCoinstallerRef_6a05795f-99bb-4f4d-975f-8d2de85adff0.xml, WdfPostDeviceInstall, WdfPostDeviceInstall function, kmdf.wdfpostdeviceinstall, wdf.wdfpostdeviceinstall, wdfinstaller/WdfPostDeviceInstall
@@ -53,14 +52,14 @@ The co-installer's <b>WdfPostDeviceInstall</b> function performs any operations 
 
 ## -parameters
 
-### -param InfPath 
+### -param InfPath [in]
 
-[in]
+
 A pointer to a null-terminated wide-character string that contains the directory path to the driver's INF file. The driver's installer can obtain this string by calling <b>GetCurrentDirectory</b>, which is described in the Microsoft Windows SDK.
 
-### -param InfSectionName 
+### -param InfSectionName [in, optional]
 
-[in, optional]
+
 A pointer to a null-terminated wide-character string that contains the <i>Wdf-install-section</i> name in the driver's INF file. For more information about this name, see <a href="/windows-hardware/drivers/wdf/installing-the-framework-s-co-installer">Using the KMDF Co-installer</a>. If this pointer is <b>NULL</b>, the co-installer uses <b>WdfSection</b> for the name.
 
 ## -returns

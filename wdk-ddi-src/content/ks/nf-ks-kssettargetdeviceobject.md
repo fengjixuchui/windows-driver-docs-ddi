@@ -4,7 +4,6 @@ title: KsSetTargetDeviceObject function (ks.h)
 description: The KsSetTargetDeviceObject function sets the target device object of an object. The function adds the object header to a list of object headers that have target devices.
 old-location: stream\kssettargetdeviceobject.htm
 tech.root: stream
-ms.assetid: 0d90f70d-8cbe-4c95-ae54-494ff404631a
 ms.date: 04/23/2018
 keywords: ["KsSetTargetDeviceObject function"]
 ms.keywords: KsSetTargetDeviceObject, KsSetTargetDeviceObject function [Streaming Media Devices], ks/KsSetTargetDeviceObject, ksfunc_f5e0140d-a6f3-49a1-a319-f55bdd5f0734.xml, stream.kssettargetdeviceobject
@@ -51,14 +50,14 @@ The <b>KsSetTargetDeviceObject</b> function sets the target device object of an 
 
 ## -parameters
 
-### -param Header 
+### -param Header [in]
 
-[in]
+
 Points to a header previously allocated by <a href="/windows-hardware/drivers/ddi/ks/nf-ks-ksallocateobjectheader">KsAllocateObjectHeader</a>.
 
-### -param TargetDevice 
+### -param TargetDevice [in, optional]
 
-[in, optional]
+
 Optionally contains the target device object that will be used when recalculating the stack depth for the underlying device object. If the value is <b>NULL</b>, any current setting is removed. If the value is any setting other than <b>NULL</b>, the current setting is replaced.
 
 ## -returns

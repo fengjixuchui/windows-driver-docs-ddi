@@ -4,7 +4,6 @@ title: _WDI_TX_FRAME_STATUS (dot11wdi.h)
 description: The WDI_TX_FRAME_STATUS enumeration defines the TX frame status values.
 old-location: netvista\wdi_tx_frame_status.htm
 tech.root: netvista
-ms.assetid: 6ea8a7ac-96dc-4337-884f-d30fbee1f760
 ms.date: 05/02/2018
 keywords: ["WDI_TX_FRAME_STATUS enumeration"]
 ms.keywords: WDI_TX_FRAME_STATUS, WDI_TX_FRAME_STATUS enumeration [Network Drivers Starting with Windows Vista], WDI_TxFrameStatus_Discard, WDI_TxFrameStatus_NoAck, WDI_TxFrameStatus_Ok, WDI_TxFrameStatus_SendCancelled, WDI_TxFrameStatus_SendPostponed, WDI_TxFrameStatus_TransferCancelled, WDI_TxFrameStatus_TransferFailed, _WDI_TX_FRAME_STATUS, dot11wdi/WDI_TX_FRAME_STATUS, dot11wdi/WDI_TxFrameStatus_Discard, dot11wdi/WDI_TxFrameStatus_NoAck, dot11wdi/WDI_TxFrameStatus_Ok, dot11wdi/WDI_TxFrameStatus_SendCancelled, dot11wdi/WDI_TxFrameStatus_SendPostponed, dot11wdi/WDI_TxFrameStatus_TransferCancelled, dot11wdi/WDI_TxFrameStatus_TransferFailed, netvista.wdi_tx_frame_status, netvista.wifi_tx_frame_status
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
+ - _WDI_TX_FRAME_STATUS
  - WDI_TX_FRAME_STATUS
 ---
 
@@ -47,6 +47,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_TX_FRAME_STATUS enumeration defines the TX frame status values.
 
@@ -83,3 +86,4 @@ The transfer failed.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_txrx_target_capabilities">WDI_TXRX_CAPABILITIES</a>
+

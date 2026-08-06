@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl.RemoveBreakpoint
 title: IDebugControl::RemoveBreakpoint (dbgeng.h)
-description: The RemoveBreakpoint method removes a breakpoint.
+description: Learn how the RemoveBreakpoint method removes a breakpoint. See the parameters, returns, and remarks.
 old-location: debugger\removebreakpoint.htm
 tech.root: debugger
-ms.assetid: ce0f5e42-3f4e-48e1-9e73-96bca96e8e23
 ms.date: 05/03/2018
 keywords: ["IDebugControl::RemoveBreakpoint"]
 ms.keywords: IDebugControl interface [Windows Debugging],RemoveBreakpoint method, IDebugControl.RemoveBreakpoint, IDebugControl2 interface [Windows Debugging],RemoveBreakpoint method, IDebugControl2::RemoveBreakpoint, IDebugControl3 interface [Windows Debugging],RemoveBreakpoint method, IDebugControl3::RemoveBreakpoint, IDebugControl::RemoveBreakpoint, IDebugControl_431f31ce-38fb-4350-851b-49b103047943.xml, RemoveBreakpoint, RemoveBreakpoint method [Windows Debugging], RemoveBreakpoint method [Windows Debugging],IDebugControl interface, RemoveBreakpoint method [Windows Debugging],IDebugControl2 interface, RemoveBreakpoint method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::RemoveBreakpoint, dbgeng/IDebugControl3::RemoveBreakpoint, dbgeng/IDebugControl::RemoveBreakpoint, debugger.removebreakpoint
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.RemoveBreakpoint
- - IDebugControl2.RemoveBreakpoint
- - IDebugControl3.RemoveBreakpoint
+ - IDebugControl::RemoveBreakpoint
 ---
 
 # IDebugControl::RemoveBreakpoint
@@ -52,9 +49,9 @@ The <b>RemoveBreakpoint</b>  method removes a breakpoint.
 
 ## -parameters
 
-### -param Bp 
+### -param Bp [in]
 
-[in]
+
 Specifies an interface pointer to breakpoint to remove.
 
 ## -returns
@@ -107,3 +104,4 @@ For more details, see <a href="/windows-hardware/drivers/debugger/using-breakpoi
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
+

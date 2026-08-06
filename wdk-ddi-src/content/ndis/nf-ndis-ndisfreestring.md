@@ -4,7 +4,6 @@ title: NdisFreeString macro (ndis.h)
 description: The NdisFreeString function releases storage that was allocated by NdisInitializeString for a buffered string.
 old-location: netvista\ndisfreestring.htm
 tech.root: netvista
-ms.assetid: 62b4318a-b883-44fc-a2a5-86a7a884f039
 ms.date: 05/02/2018
 keywords: ["NdisFreeString macro"]
 ms.keywords: NdisFreeString, NdisFreeString macro [Network Drivers Starting with Windows Vista], ndis/NdisFreeString, ndis_string_ref_fbe6ac9f-c6a6-457e-a427-71e9739f3809.xml, netvista.ndisfreestring
@@ -53,9 +52,9 @@ The
 
 ## -parameters
 
-### -param String 
+### -param String [in]
 
-[in]
+
 An NDIS_STRING type value that describes the string to free. For Windows 2000 and later, NDIS
      defines the NDIS_STRING type as a 
      <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> type.

@@ -4,7 +4,6 @@ title: PDEBUG_EXTENSION_KNOWN_STRUCT_EX (dbgeng.h)
 description: The DebugExtensionKnownStructEx callback function is called by extensions in order to dump structures that are well known to them.
 old-location: debugger\debugextensionknownstructex.htm
 tech.root: debugger
-ms.assetid: 830BCD4C-0C3A-45F8-84E9-4F8596B8E1E8
 ms.date: 05/03/2018
 keywords: ["PDEBUG_EXTENSION_KNOWN_STRUCT_EX callback function"]
 ms.keywords: DebugExtensionKnownStructEx, DebugExtensionKnownStructEx callback function [Windows Debugging], PDEBUG_EXTENSION_KNOWN_STRUCT_EX, PDEBUG_EXTENSION_KNOWN_STRUCT_EX callback, dbgeng/DebugExtensionKnownStructEx, debugger.debugextensionknownstructex
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - DebugExtensionKnownStructEx
+ - PDEBUG_EXTENSION_KNOWN_STRUCT_EX
 ---
 
 # PDEBUG_EXTENSION_KNOWN_STRUCT_EX callback function
@@ -52,37 +51,36 @@ The <i>DebugExtensionKnownStructEx</i> callback function is called by extensions
  CALLBACK* PDEBUG_EXTENSION_KNOWN_STRUCT_EX DebugExtensionKnownStructEx;
 ```
 
-
 ## -parameters
 
-### -param Client 
+### -param Client [in]
 
-[in]
+
 A debug client.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Flags.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 An offset.
 
-### -param TypeName 
+### -param TypeName [in, optional]
 
-[in, optional]
+
 The name of a type.
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 An output buffer.
 
-### -param BufferChars 
+### -param BufferChars [in, out, optional]
 
-[in, out, optional]
+
 A pointer to the length of the output buffer.
 
 ## -returns

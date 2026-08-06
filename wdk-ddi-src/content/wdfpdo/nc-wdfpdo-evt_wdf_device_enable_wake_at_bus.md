@@ -4,7 +4,6 @@ title: EVT_WDF_DEVICE_ENABLE_WAKE_AT_BUS (wdfpdo.h)
 description: A bus driver's EvtDeviceEnableWakeAtBus event callback function performs bus-level operations that enable one of the bus's devices to trigger a wake-up signal on the bus.
 old-location: wdf\evtdeviceenablewakeatbus.htm
 tech.root: wdf
-ms.assetid: 902c9bdc-d83a-4bc2-802c-1aaba43c9e2e
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DEVICE_ENABLE_WAKE_AT_BUS callback function"]
 ms.keywords: DFDeviceObjectFdoPdoRef_c418526b-2cf2-4193-b75c-f6af5d669433.xml, EVT_WDF_DEVICE_ENABLE_WAKE_AT_BUS, EVT_WDF_DEVICE_ENABLE_WAKE_AT_BUS callback, EvtDeviceEnableWakeAtBus, EvtDeviceEnableWakeAtBus callback function, kmdf.evtdeviceenablewakeatbus, wdf.evtdeviceenablewakeatbus, wdfpdo/EvtDeviceEnableWakeAtBus
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfpdo.h
 api_name:
- - EvtDeviceEnableWakeAtBus
+ - EVT_WDF_DEVICE_ENABLE_WAKE_AT_BUS
 ---
 
 # EVT_WDF_DEVICE_ENABLE_WAKE_AT_BUS callback function
@@ -52,14 +51,14 @@ A bus driver's <i>EvtDeviceEnableWakeAtBus</i> event callback function performs 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param PowerState 
+### -param PowerState [in]
 
-[in]
+
 A SYSTEM_POWER_STATE-typed enumerator that identifies the system power state that the system or device will wake from.
 
 ## -returns
@@ -74,8 +73,13 @@ For more information about this callback function's return values, see <a href="
 
 ## -remarks
 
+To register this callback function, the bus driver must call <a href="/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitseteventcallbacks">WdfPdoInitSetEventCallbacks</a>.
+
 For more information about this callback function, see <a href="/windows-hardware/drivers/wdf/supporting-system-wake-up">Supporting System Wake-Up</a>.
 
 ## -see-also
 
+<a href="/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitseteventcallbacks">WdfPdoInitSetEventCallbacks</a>
+
 <a href="/windows-hardware/drivers/ddi/wdfpdo/nc-wdfpdo-evt_wdf_device_disable_wake_at_bus">EvtDeviceDisableWakeAtBus</a>
+

@@ -4,7 +4,6 @@ title: _SENSOR_CONFIG (sensorscx.h)
 description: This structure contains information that the sensor driver passes to the class extension about each sensor.
 old-location: sensors\sensor_config.htm
 tech.root: sensors
-ms.assetid: E21E2FEC-8733-4A8A-A0C4-899F10824F9B
 ms.date: 05/03/2018
 keywords: ["SENSOR_CONFIG structure"]
 ms.keywords: "*PSENSOR_CONFIG, PSENSOR_CONFIG, PSENSOR_CONFIG structure pointer [Sensor Devices], SENSOR_CONFIG, SENSOR_CONFIG structure [Sensor Devices], _SENSOR_CONFIG, sensors.sensor_config, sensorscx/PSENSOR_CONFIG, sensorscx/SENSOR_CONFIG"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - SensorsCx.h
 api_name:
+ - _SENSOR_CONFIG
+ - PSENSOR_CONFIG
  - SENSOR_CONFIG
 ---
 
@@ -71,3 +72,4 @@ The SENSOR_CONFIG structure works with the following helper function:
 <a href="/windows-hardware/drivers/ddi/sensorscx/nf-sensorscx-sensor_config_init">SENSOR_CONFIG_INIT</a>
 </li>
 </ul>
+

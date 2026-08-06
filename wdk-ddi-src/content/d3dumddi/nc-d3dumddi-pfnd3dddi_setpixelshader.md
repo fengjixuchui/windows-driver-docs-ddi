@@ -4,7 +4,6 @@ title: PFND3DDDI_SETPIXELSHADER (d3dumddi.h)
 description: The SetPixelShader function sets a pixel shader to be used in all drawing operations.
 old-location: display\setpixelshader.htm
 tech.root: display
-ms.assetid: b7ffd96d-086e-445a-89cf-6f34a5b8a5d4
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETPIXELSHADER callback function"]
 ms.keywords: PFND3DDDI_SETPIXELSHADER, PFND3DDDI_SETPIXELSHADER callback, SetPixelShader, SetPixelShader callback function [Display Devices], UserModeDisplayDriver_Functions_dd7fa75c-0753-4786-b04a-2fdd0d0e7071.xml, d3dumddi/SetPixelShader, display.setpixelshader
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - SetPixelShader
-product:
- - Windows
+ - PFND3DDDI_SETPIXELSHADER
 ---
 
 # PFND3DDDI_SETPIXELSHADER callback function
@@ -56,7 +53,7 @@ The <i>SetPixelShader</i> function sets a pixel shader to be used in all drawing
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hShaderHandle* [in]
 
@@ -75,3 +72,4 @@ For user-mode display drivers that support pixel shaders before version 2.0, the
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

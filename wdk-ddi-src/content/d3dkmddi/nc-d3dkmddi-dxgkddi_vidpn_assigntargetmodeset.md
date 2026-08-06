@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_VIDPN_ASSIGNTARGETMODESET
 title: DXGKDDI_VIDPN_ASSIGNTARGETMODESET (d3dkmddi.h)
 description: The pfnAssignTargetModeSet function assigns a target mode set to a particular target in a specified VidPN.
 old-location: display\dxgk_vidpn_interface_pfnassigntargetmodeset.htm
-ms.assetid: 846c6dd5-d4f8-4835-83a2-994725deaf36
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_VIDPN_ASSIGNTARGETMODESET callback function"]
 ms.keywords: DXGKDDI_VIDPN_ASSIGNTARGETMODESET, DXGKDDI_VIDPN_ASSIGNTARGETMODESET callback, VidPnFunctions_7051492a-0560-4898-8532-60e66ebcb001.xml, d3dkmddi/pfnAssignTargetModeSet, display.dxgk_vidpn_interface_pfnassigntargetmodeset, pfnAssignTargetModeSet, pfnAssignTargetModeSet callback function [Display Devices]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - pfnAssignTargetModeSet
-product:
- - Windows
+ - DXGKDDI_VIDPN_ASSIGNTARGETMODESET
 ---
 
 # DXGKDDI_VIDPN_ASSIGNTARGETMODESET callback function
@@ -52,17 +49,17 @@ The <b>pfnAssignTargetModeSet</b> function assigns a target mode set to a partic
 
 ## -parameters
 
-### -param hVidPn
+### -param hVidPn [in]
 
-[in] A handle to a VidPN object. The VidPN manager previously provided this handle to the display miniport driver by calling <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a> or <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_recommendfunctionalvidpn">DxgkDdiRecommendFunctionalVidPn</a>.
+A handle to a VidPN object. The VidPN manager previously provided this handle to the display miniport driver by calling <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a> or <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_recommendfunctionalvidpn">DxgkDdiRecommendFunctionalVidPn</a>.
 
-### -param VidPnTargetId
+### -param VidPnTargetId [in]
 
-[in] An integer that identifies one of the video present targets associated with the VidPN object.
+An integer that identifies one of the video present targets associated with the VidPN object.
 
-### -param hVidPnTargetModeSet
+### -param hVidPnTargetModeSet [in]
 
-[in] A handle to the target mode set object that is to be assigned to the target identified by <i>VidPnTargetId</i>. The display miniport driver previously obtained this handle by calling <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_createnewtargetmodeset">pfnCreateNewTargetModeSet</a>.
+A handle to the target mode set object that is to be assigned to the target identified by <i>VidPnTargetId</i>. The display miniport driver previously obtained this handle by calling <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_createnewtargetmodeset">pfnCreateNewTargetModeSet</a>.
 
 ## -returns
 
@@ -115,3 +112,4 @@ The D3DKMDT_HVIDPN and D3DKMDT_HVIDPNTARGETMODESET data types are defined in <i>
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_createnewtargetmodeset">pfnCreateNewTargetModeSet</a>
+

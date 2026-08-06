@@ -4,7 +4,6 @@ title: _NDIS_WWAN_READY_INFO (ndiswwan.h)
 description: The NDIS_WWAN_READY_INFO structure represents the ready-state of the MB device and Subscriber Identity Module (SIM card).
 old-location: netvista\ndis_wwan_ready_info.htm
 tech.root: netvista
-ms.assetid: 9f47b70a-426c-47a2-b438-fc00eadc002f
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_READY_INFO structure"]
 ms.keywords: "*PNDIS_WWAN_READY_INFO, NDIS_WWAN_READY_INFO, NDIS_WWAN_READY_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_READY_INFO, PNDIS_WWAN_READY_INFO structure pointer [Network Drivers Starting with Windows Vista], WwanRef_6ae45c84-c13d-4142-b39a-07b3a9f57253.xml, _NDIS_WWAN_READY_INFO, ndiswwan/NDIS_WWAN_READY_INFO, ndiswwan/PNDIS_WWAN_READY_INFO, netvista.ndis_wwan_ready_info"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_READY_INFO
+ - PNDIS_WWAN_READY_INFO
  - NDIS_WWAN_READY_INFO
 ---
 
@@ -103,7 +104,7 @@ sizeof(NDIS_WWAN_READY_INFO)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field ReadyInfo
 
@@ -113,8 +114,9 @@ A formatted
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_ready_info">WWAN_READY_INFO</a>
+

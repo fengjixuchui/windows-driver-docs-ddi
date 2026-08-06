@@ -4,7 +4,6 @@ title: _NDIS_QOS_CAPABILITIES (ntddndis.h)
 description: The NDIS_QOS_CAPABILITIES structure specifies the NDIS Quality of Service (QoS) capabilities of a network adapter that supports the IEEE 802.1 Data Center Bridging (DCB) interface.
 old-location: netvista\ndis_qos_capabilities.htm
 tech.root: netvista
-ms.assetid: 23698bb8-3fb6-4e60-aaac-75c2e3341d54
 ms.date: 05/02/2018
 keywords: ["NDIS_QOS_CAPABILITIES structure"]
 ms.keywords: NDIS_QOS_CAPABILITIES, NDIS_QOS_CAPABILITIES structure [Network Drivers Starting with Windows Vista], PNDIS_QOS_CAPABILITIES, PNDIS_QOS_CAPABILITIES structure pointer [Network Drivers Starting with Windows Vista], _NDIS_QOS_CAPABILITIES, netvista.ndis_qos_capabilities, ntddndis/NDIS_QOS_CAPABILITIES, ntddndis/PNDIS_QOS_CAPABILITIES
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_QOS_CAPABILITIES
+ - PNDIS_QOS_CAPABILITIES
  - NDIS_QOS_CAPABILITIES
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_QOS_CAPABILITIES</b> structure specifies the NDIS Quality of Service
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_QOS_CAPABILITIES</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_QOS_CAPABILITIES</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_QOS_CAPABILITIES. To specify the version of the <b>NDIS_QOS_CAPABILITIES</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
 
@@ -166,7 +167,7 @@ The <b>NDIS_QOS_CAPABILITIES</b> structure is also returned in OID query request
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -180,3 +181,4 @@ The <b>NDIS_QOS_CAPABILITIES</b> structure is also returned in OID query request
 
 
 <a href="/windows-hardware/drivers/network/oid-qos-hardware-capabilities">OID_QOS_HARDWARE_CAPABILITIES</a>
+

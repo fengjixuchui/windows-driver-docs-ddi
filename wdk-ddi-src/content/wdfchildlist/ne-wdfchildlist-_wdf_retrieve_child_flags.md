@@ -4,7 +4,6 @@ title: _WDF_RETRIEVE_CHILD_FLAGS (wdfchildlist.h)
 description: The WDF_RETRIEVE_CHILD_FLAGS enumeration defines flags that a driver can set before calling WdfChildListBeginIteration.
 old-location: wdf\wdf_retrieve_child_flags.htm
 tech.root: wdf
-ms.assetid: 43294943-cc73-45d4-8e0b-e7d29420bb7e
 ms.date: 02/26/2018
 keywords: ["WDF_RETRIEVE_CHILD_FLAGS enumeration"]
 ms.keywords: DFDeviceObjectChildListRef_f82096f7-f6f9-4e49-a3e3-2641f60f98d9.xml, WDF_RETRIEVE_CHILD_FLAGS, WDF_RETRIEVE_CHILD_FLAGS enumeration, WdfRetrieveAddedChildren, WdfRetrieveAllChildren, WdfRetrieveMissingChildren, WdfRetrievePendingChildren, WdfRetrievePresentChildren, WdfRetrieveUnspecified, _WDF_RETRIEVE_CHILD_FLAGS, kmdf.wdf_retrieve_child_flags, wdf.wdf_retrieve_child_flags, wdfchildlist/WDF_RETRIEVE_CHILD_FLAGS, wdfchildlist/WdfRetrieveAddedChildren, wdfchildlist/WdfRetrieveAllChildren, wdfchildlist/WdfRetrieveMissingChildren, wdfchildlist/WdfRetrievePendingChildren, wdfchildlist/WdfRetrievePresentChildren, wdfchildlist/WdfRetrieveUnspecified
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfchildlist.h
 api_name:
+ - _WDF_RETRIEVE_CHILD_FLAGS
  - WDF_RETRIEVE_CHILD_FLAGS
 ---
 
@@ -54,27 +54,27 @@ The <b>WDF_RETRIEVE_CHILD_FLAGS</b> enumeration defines flags that a driver can 
 
 ## -enum-fields
 
-### -field WdfRetrieveUnspecified
+### -field WdfRetrieveUnspecified:0x0000
 
 Reserved for internal use only.
 
-### -field WdfRetrievePresentChildren
+### -field WdfRetrievePresentChildren:0x0001
 
 Calls to <a href="/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistretrievenextdevice">WdfChildListRetrieveNextDevice</a> will retrieve child devices for which a framework device object exists.
 
-### -field WdfRetrieveMissingChildren
+### -field WdfRetrieveMissingChildren:0x0002
 
 Calls to <a href="/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistretrievenextdevice">WdfChildListRetrieveNextDevice</a> will retrieve child devices that are marked as missing.
 
-### -field WdfRetrievePendingChildren
+### -field WdfRetrievePendingChildren:0x0004
 
 Calls to <a href="/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistretrievenextdevice">WdfChildListRetrieveNextDevice</a> will retrieve child devices that the driver has reported as present, but for which a framework device object has not been created (because the framework has not called the driver's <a href="/windows-hardware/drivers/ddi/wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_create_device">EvtChildListCreateDevice</a> callback function).
 
-### -field WdfRetrieveAddedChildren
+### -field WdfRetrieveAddedChildren:(WdfRetrievePresentChildren | WdfRetrievePendingChildren)
 
 Calls to <a href="/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistretrievenextdevice">WdfChildListRetrieveNextDevice</a> will retrieve child devices that are present or pending.
 
-### -field WdfRetrieveAllChildren
+### -field WdfRetrieveAllChildren:(WdfRetrievePresentChildren | WdfRetrievePendingChildren | WdfRetrieveMissingChildren)
 
 Calls to <a href="/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistretrievenextdevice">WdfChildListRetrieveNextDevice</a> will retrieve child devices that are present, pending, or missing.
 
@@ -97,3 +97,4 @@ Before calling <a href="/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildli
 
 
 <a href="/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistretrievenextdevice">WdfChildListRetrieveNextDevice</a>
+

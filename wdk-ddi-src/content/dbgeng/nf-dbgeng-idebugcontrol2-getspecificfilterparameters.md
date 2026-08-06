@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl2.GetSpecificFilterParameters
 title: IDebugControl2::GetSpecificFilterParameters (dbgeng.h)
-description: The GetSpecificFilterParameters method returns the parameters for specific event filters.
+description: Learn about the GetSpecificFilterParameters method, which returns the parameters for specific event filters.
 old-location: debugger\getspecificfilterparameters.htm
 tech.root: debugger
-ms.assetid: d2140270-558d-4cd9-b497-f61be40c7a87
 ms.date: 05/03/2018
 keywords: ["IDebugControl2::GetSpecificFilterParameters"]
 ms.keywords: GetSpecificFilterParameters, GetSpecificFilterParameters method [Windows Debugging], GetSpecificFilterParameters method [Windows Debugging],IDebugControl interface, GetSpecificFilterParameters method [Windows Debugging],IDebugControl2 interface, GetSpecificFilterParameters method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],GetSpecificFilterParameters method, IDebugControl2 interface [Windows Debugging],GetSpecificFilterParameters method, IDebugControl2.GetSpecificFilterParameters, IDebugControl2::GetSpecificFilterParameters, IDebugControl3 interface [Windows Debugging],GetSpecificFilterParameters method, IDebugControl3::GetSpecificFilterParameters, IDebugControl::GetSpecificFilterParameters, IDebugControl_ebe245a7-c76c-4b31-aa58-ccad250ed92a.xml, dbgeng/IDebugControl2::GetSpecificFilterParameters, dbgeng/IDebugControl3::GetSpecificFilterParameters, dbgeng/IDebugControl::GetSpecificFilterParameters, debugger.getspecificfilterparameters
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.GetSpecificFilterParameters
- - IDebugControl2.GetSpecificFilterParameters
- - IDebugControl3.GetSpecificFilterParameters
+ - IDebugControl2::GetSpecificFilterParameters
 ---
 
 # IDebugControl2::GetSpecificFilterParameters
@@ -52,19 +49,19 @@ The <b>GetSpecificFilterParameters</b> method returns the parameters for specifi
 
 ## -parameters
 
-### -param Start 
+### -param Start [in]
 
-[in]
+
 Specifies the index of the first specific event filter whose parameters will be returned.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of specific event filters to return parameters for.
 
-### -param Params 
+### -param Params [out]
 
-[out]
+
 Receives the parameters for the specific event filters.  <i>Params</i> is an array of elements of type <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_specific_filter_parameters">DEBUG_SPECIFIC_FILTER_PARAMETERS</a>.
 
 ## -returns
@@ -116,3 +113,4 @@ For more information about <a href="/windows-hardware/drivers/debugger/event-fil
 
 
 <a href="/windows-hardware/drivers/debugger/sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-">sx, sxd, sxe, sxi, sxn (Set Exceptions)</a>
+

@@ -4,7 +4,6 @@ title: PROTOCOL_CM_DROP_PARTY (ndis.h)
 description: The ProtocolCmDropParty function is required.
 old-location: netvista\protocolcmdropparty.htm
 tech.root: netvista
-ms.assetid: be0fce3e-7308-42fa-b63a-4d5cfec7ea6c
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CM_DROP_PARTY callback function"]
 ms.keywords: PROTOCOL_CM_DROP_PARTY, PROTOCOL_CM_DROP_PARTY callback, ProtocolCmDropParty, ProtocolCmDropParty callback function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_cda3b3ab-baf4-43a7-b560-7a717687508e.xml, ndis/ProtocolCmDropParty, netvista.protocolcmdropparty
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolCmDropParty
+ - PROTOCOL_CM_DROP_PARTY
 ---
 
 # PROTOCOL_CM_DROP_PARTY callback function
@@ -55,23 +54,23 @@ The
 
 ## -parameters
 
-### -param CallMgrPartyContext 
+### -param CallMgrPartyContext [in]
 
-[in]
+
 Specifies the handle to a call manager-allocated context area in which the call manager maintains
      its per-party state. This handle was provided to NDIS in the call managers 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_add_party">ProtocolCmAddParty</a> function.
 
-### -param CloseData 
+### -param CloseData [in, optional]
 
-[in, optional]
+
 Pointer to a buffer containing connection-oriented client-specific data that should be sent across
      the connection before the party is dropped. This parameter is <b>NULL</b> if the underlying network medium does
      not support transfers of data when closing a connection.
 
-### -param Size 
+### -param Size [in, optional]
 
-[in, optional]
+
 Specifies the length, in bytes, of the buffer at 
      <i>CloseData</i>, zero if 
      <i>CloseData</i> is <b>NULL</b>.
@@ -182,3 +181,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_add_party">ProtocolCmAddParty</a>
+

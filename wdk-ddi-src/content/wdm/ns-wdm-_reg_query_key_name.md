@@ -4,7 +4,6 @@ title: _REG_QUERY_KEY_NAME (wdm.h)
 description: The REG_QUERY_KEY_NAME structure describes the full registry key name of an object being queried.
 old-location: kernel\reg_query_key_name.htm
 tech.root: kernel
-ms.assetid: 396DA33D-46E0-456C-9FCF-85A7D9915F48
 ms.date: 04/30/2018
 keywords: ["REG_QUERY_KEY_NAME structure"]
 ms.keywords: "*PREG_QUERY_KEY_NAME, PREG_QUERY_KEY_NAME, PREG_QUERY_KEY_NAME structure pointer [Kernel-Mode Driver Architecture], REG_QUERY_KEY_NAME, REG_QUERY_KEY_NAME structure [Kernel-Mode Driver Architecture], _REG_QUERY_KEY_NAME, kernel.reg_query_key_name, wdm/PREG_QUERY_KEY_NAME, wdm/REG_QUERY_KEY_NAME"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _REG_QUERY_KEY_NAME
+ - PREG_QUERY_KEY_NAME
  - REG_QUERY_KEY_NAME
 ---
 
@@ -81,11 +82,6 @@ A pointer to driver-defined context information that the driver has associated w
 
 This member is reserved for future use. 
 
-
-#### - ResultLength
-
-Pointer to a variable that receives (from the system) the amount of valid data, in bytes, in the <b>ObjectNameInfo</b> buffer.
-
 ## -remarks
 
 The system passes this structure to the <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-ex_callback_function">RegistryCallback</a> routine every time a thread attempts to query the full name of the registry key. 
@@ -99,3 +95,4 @@ For more information about registry filtering operations, see <a href="/windows-
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-ex_callback_function">RegistryCallback</a>
+

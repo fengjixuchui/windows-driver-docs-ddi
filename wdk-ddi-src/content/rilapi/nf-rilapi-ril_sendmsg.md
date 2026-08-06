@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_SendMsg
 title: RIL_SendMsg function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_SendMsg function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_sendmsg.htm
 tech.root: netvista
-ms.assetid: 0ae1ed49-af07-4e34-80fa-34a55c973cfb
 ms.date: 05/02/2018
 keywords: ["RIL_SendMsg function"]
 ms.keywords: RIL_SendMsg, RIL_SendMsg method [Network Drivers Starting with Windows Vista], netvista.ril_sendmsg, rilapi/RIL_SendMsg

@@ -4,7 +4,6 @@ title: WdfRequestIsCanceled function (wdfrequest.h)
 description: The WdfRequestIsCanceled method determines whether the I/O manager has attempted to cancel a specified I/O request.
 old-location: wdf\wdfrequestiscanceled.htm
 tech.root: wdf
-ms.assetid: 73ec4bf1-ba48-4b51-8824-61ce42f9708d
 ms.date: 02/26/2018
 keywords: ["WdfRequestIsCanceled function"]
 ms.keywords: DFRequestObjectRef_2306854d-71f7-475f-bd8c-a74e2e6630ca.xml, WdfRequestIsCanceled, WdfRequestIsCanceled method, kmdf.wdfrequestiscanceled, wdf.wdfrequestiscanceled, wdfrequest/WdfRequestIsCanceled
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,9 +54,9 @@ The <b>WdfRequestIsCanceled</b> method determines whether the I/O manager has at
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
 ## -returns

@@ -1,17 +1,17 @@
 ---
+description: "Learn more about: Fltuserstructures.h header"
 UID: NA:fltuserstructures
 title: Fltuserstructures.h header
 ms.assetid: 4d06680b-ef7a-3bca-aa48-aeb3044966ac
 ms.date: 05/09/2018
 keywords: ["Fltuserstructures.h header"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 tech.root: ifsk
 f1_keywords:
  - fltuserstructures
  - fltuserstructures/fltuserstructures
+api_name:
+ - fltuserstructures
 ---
 
 # Fltuserstructures.h header

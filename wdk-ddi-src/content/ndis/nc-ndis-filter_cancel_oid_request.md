@@ -4,7 +4,6 @@ title: FILTER_CANCEL_OID_REQUEST (ndis.h)
 description: NDIS calls a filter driver's FilterCancelOidRequest function to cancel an OID request.Note  You must declare the function by using the FILTER_CANCEL_OID_REQUEST type.
 old-location: netvista\filtercanceloidrequest.htm
 tech.root: netvista
-ms.assetid: e7e3f67e-5353-4355-bf19-8a8041cafc84
 ms.date: 05/02/2018
 keywords: ["FILTER_CANCEL_OID_REQUEST callback function"]
 ms.keywords: FILTER_CANCEL_OID_REQUEST, FILTER_CANCEL_OID_REQUEST callback, FilterCancelOidRequest, FilterCancelOidRequest callback function [Network Drivers Starting with Windows Vista], ndis/FilterCancelOidRequest, ndis_request_ref_495c5b9b-651d-4255-bf88-30789153314f.xml, netvista.filtercanceloidrequest
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - FilterCancelOidRequest
+ - FILTER_CANCEL_OID_REQUEST
 ---
 
 # FILTER_CANCEL_OID_REQUEST callback function
@@ -53,18 +52,18 @@ NDIS calls a filter driver's
 
 ## -parameters
 
-### -param FilterModuleContext 
+### -param FilterModuleContext [in]
 
-[in]
+
 A handle to the context area for the filter module that is the target of this request. The filter
      driver created and initialized this context area in the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach">FilterAttach</a> function.
 
-### -param RequestId 
+### -param RequestId [in]
 
-[in]
+
 A cancellation identifier for the request. This identifier specifies the 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structures that are being
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structures that are being
      canceled.
 
 ## -remarks
@@ -80,7 +79,7 @@ When NDIS calls
     as soon as possible.
 
 The request parameters are defined in the 
-    <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure at 
+    <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure at 
     <i>OidRequest</i> .
 
 If a filter driver does not queue OID requests, the driver is not required to provide a 
@@ -138,7 +137,7 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 
@@ -151,3 +150,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfregisterfilterdriver">NdisFRegisterFilterDriver</a>
+

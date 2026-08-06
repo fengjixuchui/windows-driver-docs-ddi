@@ -3,11 +3,8 @@ UID: NS:d3dkmthk._D3DKMT_OUTPUTDUPLPRESENTTOHWQUEUE
 title: _D3DKMT_OUTPUTDUPLPRESENTTOHWQUEUE
 description: Used by the D3DKMTOutputDuplPresentToHwQueue function to output the duplicate handle of a hardware queue.
 tech.root: display
-ms.assetid: f970fcdd-e98a-4ad5-9536-7b08bbd19645
 ms.date: 04/04/2019
 keywords: ["D3DKMT_OUTPUTDUPLPRESENTTOHWQUEUE structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _D3DKMT_OUTPUTDUPLPRESENTTOHWQUEUE, D3DKMT_OUTPUTDUPLPRESENTTOHWQUEUE,
 req.header: d3dkmthk.h
 req.include-header: 
@@ -37,8 +34,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_OUTPUTDUPLPRESENTTOHWQUEUE
-product:
- - Windows
+ - D3DKMT_OUTPUTDUPLPRESENTTOHWQUEUE
 dev_langs:
  - c++
 ---
@@ -83,3 +79,4 @@ A handle to the indirect hardware queue.
 ## -remarks
 
 ## -see-also
+

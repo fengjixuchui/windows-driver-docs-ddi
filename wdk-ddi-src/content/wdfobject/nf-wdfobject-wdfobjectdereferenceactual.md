@@ -4,7 +4,6 @@ title: WdfObjectDereferenceActual function (wdfobject.h)
 description: The WdfObjectDereferenceActual method decrements the reference count for a specified framework object and assigns a tag value, line number, and file name to the reference.
 old-location: wdf\wdfobjectdereferenceactual.htm
 tech.root: wdf
-ms.assetid: ff96ea2b-a1f9-417c-98e6-fbf9cc9f6827
 ms.date: 02/26/2018
 keywords: ["WdfObjectDereferenceActual function"]
 ms.keywords: DFGenObjectRef_d09786da-bccf-4735-bd7b-816bf2bd999d.xml, WdfObjectDereferenceActual, WdfObjectDereferenceActual method, kmdf.wdfobjectdereferenceactual, wdf.wdfobjectdereferenceactual, wdfobject/WdfObjectDereferenceActual
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,24 +54,24 @@ The <b>WdfObjectDereferenceActual</b> method decrements the reference count for 
 
 ## -parameters
 
-### -param Handle 
+### -param Handle [in]
 
-[in]
+
 A handle to a framework object.
 
-### -param Tag 
+### -param Tag [in, optional]
 
-[in, optional]
+
 A driver-defined value that identifies an object reference. The tag value must match a tag value that the driver previously supplied to <a href="/windows-hardware/drivers/ddi/wdfobject/nf-wdfobject-wdfobjectreferenceactual">WdfObjectReferenceActual</a>.
 
-### -param Line 
+### -param Line [in]
 
-[in]
+
 A numeric value that represents a line number in a driver source file.
 
-### -param File 
+### -param File [in, optional]
 
-[in, optional]
+
 A pointer to a null-terminated constant character string that represents the name of a driver source file. This parameter is optional and can be <b>NULL</b>.
 
 ## -remarks

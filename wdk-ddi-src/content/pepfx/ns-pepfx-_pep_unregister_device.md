@@ -4,7 +4,6 @@ title: _PEP_UNREGISTER_DEVICE (pepfx.h)
 description: The PEP_UNREGISTER_DEVICE structure identifies a device whose registration is being removed from the Windows power management framework (PoFx).
 old-location: kernel\pep_unregister_device.htm
 tech.root: kernel
-ms.assetid: B6A0F80C-8AE2-4FFE-A3EE-F0260A8774D6
 ms.date: 04/30/2018
 keywords: ["PEP_UNREGISTER_DEVICE structure"]
 ms.keywords: "*PPEP_UNREGISTER_DEVICE, PEP_UNREGISTER_DEVICE, PEP_UNREGISTER_DEVICE structure [Kernel-Mode Driver Architecture], PPEP_UNREGISTER_DEVICE, PPEP_UNREGISTER_DEVICE structure pointer [Kernel-Mode Driver Architecture], _PEP_UNREGISTER_DEVICE, kernel.pep_unregister_device, pepfx/PEP_UNREGISTER_DEVICE, pepfx/PPEP_UNREGISTER_DEVICE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_UNREGISTER_DEVICE
+ - PPEP_UNREGISTER_DEVICE
  - PEP_UNREGISTER_DEVICE
 ---
 
@@ -54,9 +55,9 @@ The <b>PEP_UNREGISTER_DEVICE</b> structure identifies a device whose registratio
 
 ## -struct-fields
 
-### -field DeviceHandle
+### -field DeviceHandle [in]
 
-[in] A PEPHANDLE value that identifies the device. The PEP supplied this handle in response to a previous <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_crashdump_device">PEP_DPM_REGISTER_DEVICE</a> notification.
+A PEPHANDLE value that identifies the device. The PEP supplied this handle in response to a previous <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_crashdump_device">PEP_DPM_REGISTER_DEVICE</a> notification.
 
 ## -remarks
 
@@ -69,3 +70,4 @@ This structure is used by the <a href="/windows-hardware/drivers/kernel/using-pe
 
 
 <a href="/windows-hardware/drivers/kernel/using-peps-for-acpi-services">PEP_DPM_UNREGISTER_DEVICE</a>
+

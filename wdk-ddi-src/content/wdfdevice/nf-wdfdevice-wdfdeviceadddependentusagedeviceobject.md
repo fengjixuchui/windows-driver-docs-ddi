@@ -4,7 +4,6 @@ title: WdfDeviceAddDependentUsageDeviceObject function (wdfdevice.h)
 description: The WdfDeviceAddDependentUsageDeviceObject method indicates that a specified device depends on another device when the specified device is used to store special files.
 old-location: wdf\wdfdeviceadddependentusagedeviceobject.htm
 tech.root: wdf
-ms.assetid: 025046e2-ffa1-4210-b4aa-ab3d6b211066
 ms.date: 02/26/2018
 keywords: ["WdfDeviceAddDependentUsageDeviceObject function"]
 ms.keywords: DFDeviceObjectGeneralRef_b31f8226-abd2-49a0-af66-ace2d05a6f17.xml, WdfDeviceAddDependentUsageDeviceObject, WdfDeviceAddDependentUsageDeviceObject method, kmdf.wdfdeviceadddependentusagedeviceobject, wdf.wdfdeviceadddependentusagedeviceobject, wdfdevice/WdfDeviceAddDependentUsageDeviceObject
@@ -53,14 +52,14 @@ The <b>WdfDeviceAddDependentUsageDeviceObject</b> method indicates that a specif
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param DependentDevice 
+### -param DependentDevice [in]
 
-[in]
+
 A pointer to a caller-supplied <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure that identifies a device that <i>Device</i> depends on.
 
 ## -returns

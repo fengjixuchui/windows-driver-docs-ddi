@@ -1,10 +1,9 @@
 ---
 UID: NF:rxprocs.FsRtlNotifyFullChangeDirectory
 title: FsRtlNotifyFullChangeDirectory macro (rxprocs.h)
-description: The FsRtlNotifyFullChangeDirectory routine creates a notify structure for a notification request and adds it to the specified notify list.
+description: Learn how the FsRtlNotifyFullChangeDirectory routine creates a notify structure for a notification request and adds it to the specified notify list.
 old-location: ifsk\fsrtlnotifyfullchangedirectory.htm
 tech.root: ifsk
-ms.assetid: 42e5340e-0be4-49d1-a219-88b7425a41ef
 ms.date: 04/16/2018
 keywords: ["FsRtlNotifyFullChangeDirectory macro"]
 ms.keywords: FsRtlNotifyFullChangeDirectory, FsRtlNotifyFullChangeDirectory routine [Installable File System Drivers], fsrtlref_551aff27-746f-49a4-b427-fa273249c36e.xml, ifsk.fsrtlnotifyfullchangedirectory, rxprocs/FsRtlNotifyFullChangeDirectory
@@ -199,7 +198,7 @@ The <b>FsRtlNotifyFullChangeDirectory</b> routine creates a notify structure for
 
 <p>Optional pointer to a callback routine to be invoked when a change occurs in a subdirectory being watched in a directory tree. This lets the file system check whether the watcher has traverse access to that directory. Such a caller-supplied routine is declared as follows:</p>
   <div class="code">
-    <span codelanguage="">
+    <span>
       <table>
         <tr>
           <th></th>

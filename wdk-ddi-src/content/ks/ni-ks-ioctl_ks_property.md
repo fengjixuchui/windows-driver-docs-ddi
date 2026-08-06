@@ -4,7 +4,6 @@ title: IOCTL_KS_PROPERTY (ks.h)
 description: An application can use IOCTL_KS_PROPERTY to get or set properties, or to determine the properties supported by a KS object. The application passes IOCTL_KS_PROPERTY with the parameters described below to the KsSynchronousDeviceControl function.
 old-location: stream\ioctl_ks_property.htm
 tech.root: stream
-ms.assetid: 66f29543-9677-4bae-baa4-6be8ebc52b66
 ms.date: 04/23/2018
 keywords: ["IOCTL_KS_PROPERTY IOCTL"]
 ms.keywords: IOCTL_KS_PROPERTY, IOCTL_KS_PROPERTY control, IOCTL_KS_PROPERTY control code [Streaming Media Devices], ks-ioctl_58152402-30ed-4938-af47-9e6a1838fec1.xml, ks/IOCTL_KS_PROPERTY, stream.ioctl_ks_property
@@ -50,6 +49,8 @@ An application can use IOCTL_KS_PROPERTY to get or set properties, or to determi
 
 ## -ioctlparameters
 
+### -ioctl-major-code
+
 ### -input-buffer
 
 The contents of the client-specified <b>InBuffer</b> parameter depend on the property request, and are documented for each property set. For instance, clients requesting properties in the <a href="/windows-hardware/drivers/stream/kspropsetid-pin">KSPROPSETID_Pin</a> property set specify a pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksp_pin">KSP_PIN</a> structure.
@@ -80,11 +81,11 @@ For more information about input and output buffers and their sizes, see <a href
 
 Filters and pins support property sets using the <b>IOCTL_KS_PROPERTY</b> device I/O control. Although this IOCTL is defined with the METHOD_NEITHER flag, the property data is passed as the output buffer to the IOCTL and probed for read access. The <a href="/windows-hardware/drivers/ddi/ks/nf-ks-kspropertyhandler">KsPropertyHandler</a> function handles properties requested through <b>IOCTL_KS_PROPERTY</b>.
 
-For a list of valid flags and corresponding descriptions, see the reference page for the <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure.
+For a list of valid flags and corresponding descriptions, see the reference page for the <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure.
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 

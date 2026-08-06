@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_141
+UID: NS:ksmedia.KSPROPERTY_CROSSBAR_CAPS_S
 title: KSPROPERTY_CROSSBAR_CAPS_S (ksmedia.h)
 description: The KSPROPERTY_CROSSBAR_CAPS_S structure describes the crossbar capabilities for a device.
 old-location: stream\ksproperty_crossbar_caps_s.htm
 tech.root: stream
-ms.assetid: 65c0b401-e437-485a-99bc-75ce5296ef34
 ms.date: 04/30/2019
 keywords: ["KSPROPERTY_CROSSBAR_CAPS_S structure"]
 ms.keywords: "*PKSPROPERTY_CROSSBAR_CAPS_S, KSPROPERTY_CROSSBAR_CAPS_S, KSPROPERTY_CROSSBAR_CAPS_S structure [Streaming Media Devices], PKSPROPERTY_CROSSBAR_CAPS_S, PKSPROPERTY_CROSSBAR_CAPS_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_CROSSBAR_CAPS_S, ksmedia/PKSPROPERTY_CROSSBAR_CAPS_S, stream.ksproperty_crossbar_caps_s, vidcapstruct_db0a7a6a-8f6f-45d8-9d05-c520c8396858.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_CROSSBAR_CAPS_S
  - KSPROPERTY_CROSSBAR_CAPS_S
 ---
 
@@ -54,7 +54,7 @@ The KSPROPERTY_CROSSBAR_CAPS_S structure describes the crossbar capabilities for
 
 ### -field Property
 
-Specifies an initialized <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+Specifies an initialized <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 ### -field NumberOfInputs
 
@@ -66,7 +66,7 @@ Indicates the number of audio and video output pins on the crossbar.
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -75,3 +75,4 @@ Indicates the number of audio and video output pins on the crossbar.
 
 
 <a href="/windows-hardware/drivers/stream/propsetid-vidcap-crossbar">PROPSETID_VIDCAP_CROSSBAR</a>
+

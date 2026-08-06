@@ -3,7 +3,6 @@ UID: NF:returncontext.NetExtensionGetFragmentReturnContext
 title: NetExtensionGetFragmentReturnContext function (returncontext.h)
 description: The NetExtensionGetFragmentReturnContext function retrieves the return context extension information for a net fragment.
 tech.root: netvista
-ms.assetid: 057827CD-03DD-429D-9DDF-7846D344DC88
 ms.date: 09/26/2019
 keywords: ["NetExtensionGetFragmentReturnContext function"]
 ms.keywords: NetExtensionGetFragmentReturnContext
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -37,8 +36,6 @@ api_location:
  - returncontext.h
 api_name:
  - NetExtensionGetFragmentReturnContext
-product:
- - Windows
 ---
 
 # NetExtensionGetFragmentReturnContext function

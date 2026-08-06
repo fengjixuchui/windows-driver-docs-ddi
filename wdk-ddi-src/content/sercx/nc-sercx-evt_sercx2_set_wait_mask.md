@@ -4,7 +4,6 @@ title: EVT_SERCX2_SET_WAIT_MASK (sercx.h)
 description: The EvtSerCx2SetWaitMask event callback function is called by version 2 of the serial framework extension (SerCx2) to configure the serial controller to monitor a set of hardware events that are specified by a wait mask.
 old-location: serports\evtsercx2setwaitmask.htm
 tech.root: serports
-ms.assetid: C248FEF0-8E0B-4296-940E-763165F80617
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX2_SET_WAIT_MASK callback function"]
 ms.keywords: 2/EvtSerCx2SetWaitMask, EVT_SERCX2_SET_WAIT_MASK, EVT_SERCX2_SET_WAIT_MASK callback, EvtSerCx2SetWaitMask, EvtSerCx2SetWaitMask callback function [Serial Ports], serports.evtsercx2setwaitmask
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
- - EvtSerCx2SetWaitMask
+ - EVT_SERCX2_SET_WAIT_MASK
 ---
 
 # EVT_SERCX2_SET_WAIT_MASK callback function
@@ -50,19 +49,19 @@ The <i>EvtSerCx2SetWaitMask</i> event callback function is called by version 2 o
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the serial controller. The serial controller driver created this object in its <a href="/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add">EvtDriverDeviceAdd</a> callback function. For more information, see <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2initializedevice">SerCx2InitializeDevice</a>.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A WDFREQUEST handle to the framework request object that represents the <a href="/windows-hardware/drivers/ddi/ntddser/ni-ntddser-ioctl_serial_set_wait_mask">IOCTL_SERIAL_SET_WAIT_MASK</a> request.
 
-### -param WaitMask 
+### -param WaitMask [in]
 
-[in]
+
 The new wait mask. For more information, see Remarks.
 
 ## -remarks
@@ -152,3 +151,4 @@ The <b>EVT_SERCX2_SET_WAIT_MASK</b> function type is defined in the Sercx.h head
 
 
 <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestcomplete">WdfRequestComplete</a>
+

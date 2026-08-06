@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl.SetExceptionFilterSecondCommand
 title: IDebugControl::SetExceptionFilterSecondCommand (dbgeng.h)
-description: The SetExceptionFilterSecondCommand method sets the command that will be executed by the debugger engine on the second chance of a specified exception.
+description: This method sets the command that's executed by the debugger engine on the second chance of a specified exception.
 old-location: debugger\setexceptionfiltersecondcommand.htm
 tech.root: debugger
-ms.assetid: c95fa025-9455-4a8e-99ef-84030255575c
 ms.date: 05/03/2018
 keywords: ["IDebugControl::SetExceptionFilterSecondCommand"]
 ms.keywords: IDebugControl interface [Windows Debugging],SetExceptionFilterSecondCommand method, IDebugControl.SetExceptionFilterSecondCommand, IDebugControl2 interface [Windows Debugging],SetExceptionFilterSecondCommand method, IDebugControl2::SetExceptionFilterSecondCommand, IDebugControl3 interface [Windows Debugging],SetExceptionFilterSecondCommand method, IDebugControl3::SetExceptionFilterSecondCommand, IDebugControl::SetExceptionFilterSecondCommand, IDebugControl_39380f22-4c68-40fe-b277-f7eace77bcee.xml, SetExceptionFilterSecondCommand, SetExceptionFilterSecondCommand method [Windows Debugging], SetExceptionFilterSecondCommand method [Windows Debugging],IDebugControl interface, SetExceptionFilterSecondCommand method [Windows Debugging],IDebugControl2 interface, SetExceptionFilterSecondCommand method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::SetExceptionFilterSecondCommand, dbgeng/IDebugControl3::SetExceptionFilterSecondCommand, dbgeng/IDebugControl::SetExceptionFilterSecondCommand, debugger.setexceptionfiltersecondcommand
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.SetExceptionFilterSecondCommand
- - IDebugControl2.SetExceptionFilterSecondCommand
- - IDebugControl3.SetExceptionFilterSecondCommand
+ - IDebugControl::SetExceptionFilterSecondCommand
 ---
 
 # IDebugControl::SetExceptionFilterSecondCommand
@@ -52,14 +49,14 @@ The <b>SetExceptionFilterSecondCommand</b>  method sets the command that will be
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 Specifies the index of the exception filter whose second-chance command will be set.  <i>Index</i> must not refer to the specific event filters as these are not exception filters and only exception events get a second chance.  If <i>Index</i> refers to the default exception filter, the second-chance command is set for all exceptions that do not have an exception filter.
 
-### -param Command 
+### -param Command [in]
 
-[in]
+
 Receives the second-chance command for the exception filter.
 
 ## -returns
@@ -111,3 +108,4 @@ For more information about <a href="/windows-hardware/drivers/debugger/event-fil
 
 
 <a href="/windows-hardware/drivers/debugger/sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-">sx, sxd, sxe, sxi, sxn (Set Exceptions)</a>
+

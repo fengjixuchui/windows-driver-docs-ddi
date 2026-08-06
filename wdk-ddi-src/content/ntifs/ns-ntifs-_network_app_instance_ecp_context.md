@@ -4,14 +4,13 @@ title: _NETWORK_APP_INSTANCE_ECP_CONTEXT (ntifs.h)
 description: The NETWORK_APP_INSTANCE_ECP_CONTEXT structure is an Extra Create Parameter (ECP) and contains an application instance identifier to associate with a file.
 old-location: ifsk\network_app_instance_ecp_context.htm
 tech.root: ifsk
-ms.assetid: ADB7550F-9191-4EAA-BEBA-0D0D29EC7B03
 ms.date: 04/16/2018
 keywords: ["NETWORK_APP_INSTANCE_ECP_CONTEXT structure"]
 ms.keywords: "*PNETWORK_APP_INSTANCE_ECP_CONTEXT, NETWORK_APP_INSTANCE_ECP_CONTEXT, NETWORK_APP_INSTANCE_ECP_CONTEXT structure [Installable File System Drivers], PNETWORK_APP_INSTANCE_ECP_CONTEXT, PNETWORK_APP_INSTANCE_ECP_CONTEXT structure pointer [Installable File System Drivers], _NETWORK_APP_INSTANCE_ECP_CONTEXT, ifsk.network_app_instance_ecp_context, ntifs/NETWORK_APP_INSTANCE_ECP_CONTEXT, ntifs/PNETWORK_APP_INSTANCE_ECP_CONTEXT"
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Windows
-req.target-min-winverclnt: This structure is available in Windows 8 and later versions of Windows.
+req.target-min-winverclnt: This structure is Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntifs.h
 api_name:
+ - _NETWORK_APP_INSTANCE_ECP_CONTEXT
+ - PNETWORK_APP_INSTANCE_ECP_CONTEXT
  - NETWORK_APP_INSTANCE_ECP_CONTEXT
 ---
 
@@ -83,3 +84,4 @@ For information about how to use ECPs to associate extra information with a file
 
 
 <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iocreatefileex">IoCreateFileEx</a>
+

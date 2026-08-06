@@ -4,7 +4,6 @@ title: FltOplockKeysEqual function (fltkernel.h)
 description: The FltOplockKeysEqual routine compares the opportunistic lock (oplock) keys that are stored in the file object extensions of two file objects.
 old-location: ifsk\fltoplockkeysequal.htm
 tech.root: ifsk
-ms.assetid: 660aa6f2-03d8-44aa-b263-29a74c912668
 ms.date: 04/16/2018
 keywords: ["FltOplockKeysEqual function"]
 ms.keywords: FltApiRef_e_to_o_66634abf-9f0a-44b1-a4e4-85ef958b05f5.xml, FltOplockKeysEqual, FltOplockKeysEqual routine [Installable File System Drivers], fltkernel/FltOplockKeysEqual, ifsk.fltoplockkeysequal
@@ -50,14 +49,14 @@ The <b>FltOplockKeysEqual</b> routine compares the opportunistic lock (oplock) k
 
 ## -parameters
 
-### -param Fo1 
+### -param Fo1 [in, optional]
 
-[in, optional]
+
 A pointer to the first file object for the comparison.
 
-### -param Fo2 
+### -param Fo2 [in, optional]
 
-[in, optional]
+
 A pointer to the second file object for the comparison.
 
 ## -returns

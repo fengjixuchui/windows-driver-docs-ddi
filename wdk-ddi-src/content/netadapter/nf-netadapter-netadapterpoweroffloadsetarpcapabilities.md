@@ -3,8 +3,7 @@ UID: NF:netadapter.NetAdapterPowerOffloadSetArpCapabilities
 title: NetAdapterPowerOffloadSetArpCapabilities function (netadapter.h)
 description: The NetAdapterPowerOffloadSetArpCapabilities function sets a net adapter's capabilities for IPv4 ARP low power protocol offload.
 tech.root: netvista
-ms.assetid: 213f7654-fb2a-4160-b1db-3d36d8e119f2
-ms.date: 10/22/2019
+ms.date: 03/30/2022
 keywords: ["NetAdapterPowerOffloadSetArpCapabilities function"]
 ms.keywords: NetAdapterPowerOffloadSetArpCapabilities
 req.header: netadapter.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: netadaptercxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -37,8 +36,6 @@ api_location:
  - netadaptercxstub.lib
 api_name:
  - NetAdapterPowerOffloadSetArpCapabilities
-product:
- - Windows
 ---
 
 # NetAdapterPowerOffloadSetArpCapabilities function
@@ -50,17 +47,14 @@ The **NetAdapterPowerOffloadSetArpCapabilities** function sets a net adapter's c
 
 ## -parameters
 
-### -param Adapter
+### -param Adapter [_In_]
 
 A handle to a NETADAPTER object that the client driver obtained from a previous call to [**NetAdapterCreate**](../netadapter/nf-netadapter-netadaptercreate.md).
 
-### -param Capabilities
+### -param Capabilities [_In_]
 
 A pointer to a client driver-allocated and initialized [**NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES**](../netadapter/ns-netadapter-_net_adapter_power_offload_arp_capabilities.md) structure.
 
-## -returns
-
-This function does not return a value.
 
 ## -remarks
 

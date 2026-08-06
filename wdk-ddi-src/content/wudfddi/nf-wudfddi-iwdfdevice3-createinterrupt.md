@@ -4,7 +4,6 @@ title: IWDFDevice3::CreateInterrupt (wudfddi.h)
 description: The CreateInterrupt method creates a framework interrupt object.
 old-location: wdf\iwdfdevice3_createinterrupt.htm
 tech.root: wdf
-ms.assetid: EE68BED8-5FDC-4590-8E95-B228F1DFD32D
 ms.date: 02/26/2018
 keywords: ["IWDFDevice3::CreateInterrupt"]
 ms.keywords: CreateInterrupt, CreateInterrupt method, CreateInterrupt method,IWDFDevice3 interface, IWDFDevice3 interface,CreateInterrupt method, IWDFDevice3.CreateInterrupt, IWDFDevice3::CreateInterrupt, umdf.iwdfdevice3_createinterrupt, wdf.iwdfdevice3_createinterrupt, wudfddi/IWDFDevice3::CreateInterrupt
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice3.CreateInterrupt
+ - IWDFDevice3::CreateInterrupt
 ---
 
 # IWDFDevice3::CreateInterrupt
@@ -52,14 +51,14 @@ The <b>CreateInterrupt</b> method creates a framework interrupt object.
 
 ## -parameters
 
-### -param Configuration 
+### -param Configuration [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wudfinterrupt/ns-wudfinterrupt-_wudf_interrupt_config">WUDF_INTERRUPT_CONFIG</a> structure that was initialized by a call to the <a href="/windows-hardware/drivers/ddi/wudfinterrupt/nf-wudfinterrupt-wudf_interrupt_config_init">WUDF_INTERRUPT_CONFIG_INIT</a> macro.
 
-### -param ppInterrupt 
+### -param ppInterrupt [out]
 
-[out]
+
 A pointer to a buffer that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfinterrupt">IWDFInterrupt</a>  interface for the new interrupt object.
 
 ## -returns
@@ -104,7 +103,6 @@ hr = pDevice->Create(&interruptConfig,
 
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a>
@@ -116,3 +114,4 @@ hr = pDevice->Create(&interruptConfig,
 
 
 <a href="/windows-hardware/drivers/ddi/wudfinterrupt/nf-wudfinterrupt-wudf_interrupt_config_init">WUDF_INTERRUPT_CONFIG_INIT</a>
+

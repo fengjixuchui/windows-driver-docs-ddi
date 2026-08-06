@@ -4,7 +4,6 @@ title: IDebugRegisters2::GetNumberPseudoRegisters (dbgeng.h)
 description: The GetNumberPseudoRegisters method returns the number of pseudo-registers that are maintained by the debugger engine.
 old-location: debugger\getnumberpseudoregisters.htm
 tech.root: debugger
-ms.assetid: 5a71a8e9-323e-4f14-8c97-d6ce4e9bfe65
 ms.date: 05/03/2018
 keywords: ["IDebugRegisters2::GetNumberPseudoRegisters"]
 ms.keywords: GetNumberPseudoRegisters, GetNumberPseudoRegisters method [Windows Debugging], GetNumberPseudoRegisters method [Windows Debugging],IDebugRegisters2 interface, IDebugRegisters2 interface [Windows Debugging],GetNumberPseudoRegisters method, IDebugRegisters2.GetNumberPseudoRegisters, IDebugRegisters2::GetNumberPseudoRegisters, IDebugRegisters_e12950ac-f9b2-4ed2-9ce1-bc3088b65ef1.xml, dbgeng/IDebugRegisters2::GetNumberPseudoRegisters, debugger.getnumberpseudoregisters
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugRegisters2.GetNumberPseudoRegisters
+ - IDebugRegisters2::GetNumberPseudoRegisters
 ---
 
 # IDebugRegisters2::GetNumberPseudoRegisters
@@ -50,9 +49,9 @@ The <b>GetNumberPseudoRegisters</b> method returns the number of pseudo-register
 
 ## -parameters
 
-### -param Number 
+### -param Number [out]
 
-[out]
+
 Receives the number of pseudo-registers that are maintained by the debugger engine.
 
 ## -returns
@@ -84,3 +83,4 @@ Not all of the pseudo-registers are available in all debugging sessions or at al
 The valid indices for pseudo-registers are between zero and the number of pseudo-registers, minus one.
 
 For an overview of the <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugregisters">IDebugRegisters</a> interface and other register-related methods, see <a href="/windows-hardware/drivers/debugger/registers">Registers</a>.
+

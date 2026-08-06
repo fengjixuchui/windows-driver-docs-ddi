@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_SETVIDPNSOURCEOWNER1
 title: _D3DKMT_SETVIDPNSOURCEOWNER1 (d3dkmthk.h)
 description: Describes the information, including output duplication options, needed to set or release the video present source in the path of a video present network (VidPN) topology that owns the VidPN.
 old-location: display\d3dkmt_setvidpnsourceowner1.htm
-ms.assetid: 3148c628-60e3-47a8-bae1-e33390af7e33
 ms.date: 05/10/2018
 keywords: ["D3DKMT_SETVIDPNSOURCEOWNER1 structure"]
 ms.keywords: D3DKMT_SETVIDPNSOURCEOWNER1, D3DKMT_SETVIDPNSOURCEOWNER1 structure [Display Devices], _D3DKMT_SETVIDPNSOURCEOWNER1, d3dkmthk/D3DKMT_SETVIDPNSOURCEOWNER1, display.d3dkmt_setvidpnsourceowner1
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
+ - _D3DKMT_SETVIDPNSOURCEOWNER1
  - D3DKMT_SETVIDPNSOURCEOWNER1
 ---
 
@@ -67,3 +67,4 @@ A <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_vidpnsourc
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_vidpnsourceowner_flags">D3DKMT_VIDPNSOURCEOWNER_FLAGS</a>
+

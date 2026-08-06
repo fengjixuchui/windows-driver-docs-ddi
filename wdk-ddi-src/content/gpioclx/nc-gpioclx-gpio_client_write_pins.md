@@ -4,7 +4,6 @@ title: GPIO_CLIENT_WRITE_PINS (gpioclx.h)
 description: The CLIENT_WriteGpioPins event callback function writes to a set of general-purpose I/O (GPIO) pins that are configured as data outputs.
 old-location: gpio\client_writegpiopins.htm
 tech.root: GPIO
-ms.assetid: 1C203107-258E-41DF-AFA7-B2597DCDF2E3
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_WRITE_PINS callback function"]
 ms.keywords: CLIENT_WriteGpioPins, CLIENT_WriteGpioPins callback, CLIENT_WriteGpioPins callback function [Parallel Ports], GPIO.client_writegpiopins, GPIO_CLIENT_WRITE_PINS, gpioclx/CLIENT_WriteGpioPins
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_WriteGpioPins
+ - GPIO_CLIENT_WRITE_PINS
 ---
 
 # GPIO_CLIENT_WRITE_PINS callback function
@@ -50,14 +49,14 @@ The <i>CLIENT_WriteGpioPins</i> event callback function writes to a set of gener
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param WriteParameters 
+### -param WriteParameters [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_write_pins_parameters">GPIO_WRITE_PINS_PARAMETERS</a> structure that describes a bank of GPIO pins and that contains the data to write to these pins.
 
 ## -returns
@@ -122,3 +121,4 @@ The GPIO_CLIENT_WRITE_PINS function type is defined in the Gpioclx.h header file
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_write_pins_parameters">GPIO_WRITE_PINS_PARAMETERS</a>
+

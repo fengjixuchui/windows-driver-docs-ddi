@@ -4,7 +4,6 @@ title: IStillImageW::LaunchApplicationForDevice (sti.h)
 description: The IStillImage::LaunchApplicationForDevice method starts a specified application for a specified still image device.
 old-location: image\istillimage_launchapplicationfordevice.htm
 tech.root: image
-ms.assetid: e5bb8d0e-9ae0-42dd-bbd0-c12e3d1e3f40
 ms.date: 06/10/2020
 keywords: ["IStillImageW::LaunchApplicationForDevice"]
 ms.keywords: IStillImageW interface [Imaging Devices],LaunchApplicationForDevice method, IStillImageW.LaunchApplicationForDevice, IStillImageW::LaunchApplicationForDevice, LaunchApplicationForDevice, LaunchApplicationForDevice method [Imaging Devices], LaunchApplicationForDevice method [Imaging Devices],IStillImageW interface, image.istillimage_launchapplicationfordevice, sti/IStillImageW::LaunchApplicationForDevice, stifnc_3ecda881-3b82-4323-b739-614e4f8f78a7.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - sti.h
 api_name:
- - IStillImageW.LaunchApplicationForDevice
+ - IStillImageW::LaunchApplicationForDevice
 ---
 
 # IStillImageW::LaunchApplicationForDevice
@@ -50,19 +49,19 @@ The **IStillImage::LaunchApplicationForDevice** method starts a specified applic
 
 ## -parameters
 
-### -param pwszDeviceName 
+### -param pwszDeviceName [in]
 
-[in]
+
 Caller-supplied pointer to a string representing an internal device name, obtained by calling [IStillImage::GetSTILaunchInformation](/previous-versions/windows/hardware/drivers/ff543790(v=vs.85)) or [IStillImage::GetDeviceList](/previous-versions/windows/hardware/drivers/ff543784(v=vs.85)).
 
-### -param pwszAppName 
+### -param pwszAppName [in]
 
-[in]
+
 Caller-supplied pointer to a string representing the short name of an application that was registered by calling [IStillImage::RegisterLaunchApplication](/previous-versions/windows/hardware/drivers/ff543798(v=vs.85)).
 
-### -param pStiNotify 
+### -param pStiNotify [in]
 
-[in]
+
 Caller-supplied pointer to an [STINOTIFY](./ns-sti-_stinotify.md) structure describing a device event. Typically,  the event's GUID is obtained by calling [IStiDevice::GetLastNotificationData](./nf-sti-istidevice-getlastnotificationdata.md).
 
 ## -returns
@@ -98,3 +97,4 @@ if (!SUCCEEDED(hRes))
         pStiInfoPtr->szDeviceInternalName,hReturn,hReturn);
 }
 ```
+

@@ -4,7 +4,6 @@ title: _WINBIO_DIAGNOSTICS (winbio_ioctl.h)
 description: The IOCTL_BIOMETRIC_GET_SENSOR_STATUS IOCTL returns the WINBIO_DIAGNOSTICS structure as output.
 old-location: biometric\winbio_diagnostics.htm
 tech.root: biometric
-ms.assetid: 06f6abf1-9b44-4cf3-96d3-2017e0f6adda
 ms.date: 02/20/2018
 keywords: ["WINBIO_DIAGNOSTICS structure"]
 ms.keywords: "*PWINBIO_DIAGNOSTICS, PWINBIO_DIAGNOSTICS, PWINBIO_DIAGNOSTICS structure pointer [Biometric Devices], WINBIO_DIAGNOSTICS, WINBIO_DIAGNOSTICS structure [Biometric Devices], _WINBIO_DIAGNOSTICS, biometric.winbio_diagnostics, biometric_ref_eca83e57-bec6-4d83-8596-978b73eed6de.xml, winbio_ioctl/PWINBIO_DIAGNOSTICS, winbio_ioctl/WINBIO_DIAGNOSTICS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - winbio_ioctl.h
 api_name:
+ - _WINBIO_DIAGNOSTICS
+ - PWINBIO_DIAGNOSTICS
  - WINBIO_DIAGNOSTICS
 ---
 
@@ -78,3 +79,4 @@ An optional <a href="/windows-hardware/drivers/ddi/winbio_ioctl/ns-winbio_ioctl-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/winbio_ioctl/ni-winbio_ioctl-ioctl_biometric_get_sensor_status">IOCTL_BIOMETRIC_GET_SENSOR_STATUS</a>
+

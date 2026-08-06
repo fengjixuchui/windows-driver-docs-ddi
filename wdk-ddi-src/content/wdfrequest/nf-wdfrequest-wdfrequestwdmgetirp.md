@@ -4,7 +4,6 @@ title: WdfRequestWdmGetIrp function (wdfrequest.h)
 description: The WdfRequestWdmGetIrp method returns the WDM IRP structure that is associated with a specified framework request object.
 old-location: wdf\wdfrequestwdmgetirp.htm
 tech.root: wdf
-ms.assetid: 414950c6-b082-4ea9-bba4-f3d12b4d2a9e
 ms.date: 02/26/2018
 keywords: ["WdfRequestWdmGetIrp function"]
 ms.keywords: DFRequestObjectRef_2f8bba17-817e-4edb-98f2-bd56eb3e34ac.xml, WdfRequestWdmGetIrp, WdfRequestWdmGetIrp method, kmdf.wdfrequestwdmgetirp, wdf.wdfrequestwdmgetirp, wdfrequest/WdfRequestWdmGetIrp
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,9 +52,9 @@ The <b>WdfRequestWdmGetIrp</b> method returns the WDM <a href="/windows-hardware
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
 ## -returns

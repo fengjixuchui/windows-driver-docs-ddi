@@ -4,7 +4,6 @@ title: ExInitializeSetTimerParameters function (wdm.h)
 description: The ExInitializeSetTimerParameters routine initializes an EXT_SET_PARAMETERS structure.
 old-location: kernel\exinitializesettimerparameters.htm
 tech.root: kernel
-ms.assetid: 43A07E6E-C69F-4D6C-9B9C-EB7FFDF7651E
 ms.date: 04/30/2018
 keywords: ["ExInitializeSetTimerParameters function"]
 ms.keywords: ExInitializeSetTimerParameters, ExInitializeSetTimerParameters routine [Kernel-Mode Driver Architecture], kernel.exinitializesettimerparameters, wdm/ExInitializeSetTimerParameters
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level.
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>ExInitializeSetTimerParameters</b> routine initializes an <a href="/windo
 
 ## -parameters
 
-### -param Parameters 
+### -param Parameters [out]
 
-[out]
+
 A pointer to the <b>EXT_SET_PARAMETER</b> structure that is to be initialized.
 
 ## -remarks

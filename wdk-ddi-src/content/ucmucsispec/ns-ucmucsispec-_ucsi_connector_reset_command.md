@@ -3,7 +3,6 @@ UID: NS:ucmucsispec._UCSI_CONNECTOR_RESET_COMMAND
 title: _UCSI_CONNECTOR_RESET_COMMAND (ucmucsispec.h)
 tech.root: usbref
 description: Used in the CONNECTOR_RESET command. See Table 4-5.
-ms.assetid: 7bbeb5e9-00ed-4cba-b6d8-eada6c226855
 ms.date: 09/30/2018
 keywords: ["UCSI_CONNECTOR_RESET_COMMAND structure"]
 ms.keywords: _UCSI_CONNECTOR_RESET_COMMAND, UCSI_CONNECTOR_RESET_COMMAND, *PUCSI_CONNECTOR_RESET_COMMAND,
@@ -37,6 +36,8 @@ api_location:
  - ucmucsispec.h
 api_name:
  - _UCSI_CONNECTOR_RESET_COMMAND
+ - PUCSI_CONNECTOR_RESET_COMMAND
+ - UCSI_CONNECTOR_RESET_COMMAND
 ---
 
 # _UCSI_CONNECTOR_RESET_COMMAND structure
@@ -44,7 +45,7 @@ api_name:
 
 ## -description
 
-Used in the CONNECTOR_RESET command. See Table 4-5 in [UCSI spec version 1.1](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
+Used in the CONNECTOR_RESET command. See Table 4-5 in [UCSI spec version 1.2](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
 
 ## -struct-fields
 

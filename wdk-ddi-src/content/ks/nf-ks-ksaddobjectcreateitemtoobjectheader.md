@@ -4,7 +4,6 @@ title: KsAddObjectCreateItemToObjectHeader function (ks.h)
 description: The KsAddObjectCreateItemToObjectHeader function adds the specified create-item to an empty item in the previously allocated create item list for this object header.
 old-location: stream\ksaddobjectcreateitemtoobjectheader.htm
 tech.root: stream
-ms.assetid: 9946e896-7f1a-4ff2-afa5-9e231047af11
 ms.date: 04/23/2018
 keywords: ["KsAddObjectCreateItemToObjectHeader function"]
 ms.keywords: KsAddObjectCreateItemToObjectHeader, KsAddObjectCreateItemToObjectHeader function [Streaming Media Devices], ks/KsAddObjectCreateItemToObjectHeader, ksfunc_de112daa-c37a-4d5b-b646-5fc45fd8ae1c.xml, stream.ksaddobjectcreateitemtoobjectheader
@@ -51,29 +50,29 @@ The <b>KsAddObjectCreateItemToObjectHeader</b> function adds the specified creat
 
 ## -parameters
 
-### -param Header 
+### -param Header [in]
 
-[in]
+
 Points to the object header that contains the previously allocated child- create table.
 
-### -param Create 
+### -param Create [in]
 
-[in]
+
 Specifies the create dispatch function to use.
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Specifies the context parameter.
 
-### -param ObjectClass 
+### -param ObjectClass [in]
 
-[in]
+
 Specifies a pointer to a <b>NULL</b>-terminated character string that is used for comparison on create requests. This pointer must remain valid while the object is active.
 
-### -param SecurityDescriptor 
+### -param SecurityDescriptor [in, optional]
 
-[in, optional]
+
 Specifies the security descriptor. This must remain valid while the object is active.
 
 ## -returns

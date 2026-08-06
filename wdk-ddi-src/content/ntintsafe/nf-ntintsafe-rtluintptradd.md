@@ -4,7 +4,6 @@ title: RtlUIntPtrAdd function (ntintsafe.h)
 description: Adds two values of type UINT_PTR.
 old-location: kernel\rtluintptradd.htm
 tech.root: kernel
-ms.assetid: 9106CE96-A26F-4358-9668-2C0E331BB793
 ms.date: 04/30/2018
 keywords: ["RtlUIntPtrAdd function"]
 ms.keywords: RtlUIntPtrAdd, RtlUIntPtrAdd function [Kernel-Mode Driver Architecture], kernel.rtluintptradd, ntintsafe/RtlUIntPtrAdd
@@ -50,19 +49,19 @@ Adds two values of type <b>UINT_PTR</b>.
 
 ## -parameters
 
-### -param uAugend 
+### -param uAugend [in]
 
-[in]
+
 The first value in the equation.
 
-### -param uAddend 
+### -param uAddend [in]
 
-[in]
+
 The value to add to <i>uAugend</i>.
 
-### -param puResult 
+### -param puResult [out]
 
-[out]
+
 A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

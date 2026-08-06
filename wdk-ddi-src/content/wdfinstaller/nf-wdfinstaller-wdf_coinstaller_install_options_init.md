@@ -4,7 +4,6 @@ title: WDF_COINSTALLER_INSTALL_OPTIONS_INIT function (wdfinstaller.h)
 description: The WDF_COINSTALLER_INSTALL_OPTIONS_INIT function initializes a WDF_COINSTALLER_INSTALL_OPTIONS structure.
 old-location: wdf\wdf_coinstaller_install_options_init.htm
 tech.root: wdf
-ms.assetid: 65fd2c27-7d9e-4dad-adef-8cb2bea9d9f2
 ms.date: 02/26/2018
 keywords: ["WDF_COINSTALLER_INSTALL_OPTIONS_INIT function"]
 ms.keywords: DFCoinstallerRef_7a993590-87f2-4613-93d4-ffbc76672d8e.xml, WDF_COINSTALLER_INSTALL_OPTIONS_INIT, WDF_COINSTALLER_INSTALL_OPTIONS_INIT function, kmdf.wdf_coinstaller_install_options_init, wdf.wdf_coinstaller_install_options_init, wdfinstaller/WDF_COINSTALLER_INSTALL_OPTIONS_INIT
@@ -52,9 +51,9 @@ The <b>WDF_COINSTALLER_INSTALL_OPTIONS_INIT</b> function initializes a <a href="
 
 ## -parameters
 
-### -param ClientOptions 
+### -param ClientOptions [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfinstaller/ns-wdfinstaller-_wdf_coinstaller_install_options">WDF_COINSTALLER_INSTALL_OPTIONS</a> structure.
 
 ## -remarks

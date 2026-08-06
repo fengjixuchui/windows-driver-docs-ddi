@@ -2,10 +2,8 @@
 UID: NF:wdm.PcwUnregister
 title: PcwUnregister function (wdm.h)
 description: The PcwUnregister function unregisters the provider of the specified counterset.
-old-location: devtest\pcwunregister.htm
 tech.root: devtest
-ms.assetid: cf6aeb30-732b-494c-a714-caa6326c0375
-ms.date: 07/28/2020
+ms.date: 01/12/2023
 keywords: ["PcwUnregister function"]
 ms.keywords: PcwUnregister, PcwUnregister function [Driver Development Tools], devtest.pcwunregister, km_pcw_842b91a3-a846-4d1c-adcd-7e1b3fdf4af5.xml, wdm/PcwUnregister
 req.header: wdm.h
@@ -24,7 +22,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -40,9 +38,6 @@ api_location:
 api_name:
  - PcwUnregister
 ---
-
-# PcwUnregister function
-
 
 ## -description
 
@@ -64,7 +59,7 @@ Before the provider uses this function, the provider must call the [PcwRegister]
 
 Most developers do not need to call `PcwUnregister` directly. Instead, they will compile a manifest with the CTRPP tool and use the UnregisterXxx function from the CTRPP-generated header. The generated function will look like this:
 
-```C
+```c
 EXTERN_C FORCEINLINE VOID
 UnregisterMyCounterset(
     VOID

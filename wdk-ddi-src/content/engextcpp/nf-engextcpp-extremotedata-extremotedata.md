@@ -1,10 +1,9 @@
 ---
 UID: NF:engextcpp.ExtRemoteData.ExtRemoteData
 title: ExtRemoteData::ExtRemoteData (engextcpp.h)
-description: The ExtRemoteData constructor creates a new instance of the ExtRemoteData class.
+description: The ExtRemoteData constructor creates a new instance of the ExtRemoteData class. For a specified memory region, contents are read from the target.
 old-location: debugger\extremotedata_extremotedata.htm
 tech.root: debugger
-ms.assetid: c463169e-5e18-44bb-b954-8a99d24edd0c
 ms.date: 08/09/2018
 keywords: ["ExtRemoteData::ExtRemoteData"]
 ms.keywords: EngExtCpp_Ref_8e376094-9e23-4ea4-81e3-c47e6695a687.xml, ExtRemoteData, ExtRemoteData class [Windows Debugging],ExtRemoteData constructor, ExtRemoteData constructor [Windows Debugging], ExtRemoteData constructor [Windows Debugging],ExtRemoteData class, ExtRemoteData.ExtRemoteData, ExtRemoteData.ExtRemoteData(), ExtRemoteData::ExtRemoteData, debugger.extremotedata_extremotedata
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteData.ExtRemoteData
+ - ExtRemoteData::ExtRemoteData
 ---
 
 # ExtRemoteData::ExtRemoteData (engextcpp.h)
@@ -61,3 +60,4 @@ The constructor is called by the ExtRemoteData::Set(Typed) or ExtRemoteData::Set
 [ExtRemoteData::GetData](nf-engextcpp-extremotedata-getdata.md)
 
 <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotedata-extremotedata(pcstr_ulong64_ulong)">ExtRemoteData::ExtRemoteData (Name, Offset, Bytes)</a>
+

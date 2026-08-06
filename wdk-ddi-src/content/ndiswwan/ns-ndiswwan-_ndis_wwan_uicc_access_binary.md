@@ -3,7 +3,6 @@ UID: NS:ndiswwan._NDIS_WWAN_UICC_ACCESS_BINARY
 title: _NDIS_WWAN_UICC_ACCESS_BINARY (ndiswwan.h)
 description: The NDIS_WWAN_UICC_ACCESS_BINARY structure describes information about a UICC binary file to read or to which to write.
 tech.root: netvista
-ms.assetid: E1DD7E29-CBD3-4262-9C5C-716AAA7518FE
 ms.date: 04/10/2019
 keywords: ["NDIS_WWAN_UICC_ACCESS_BINARY structure"]
 ms.keywords: _NDIS_WWAN_UICC_ACCESS_BINARY, NDIS_WWAN_UICC_ACCESS_BINARY, *PNDIS_WWAN_UICC_ACCESS_BINARY,
@@ -37,6 +36,8 @@ api_location:
  - ndiswwan.h
 api_name:
  - _NDIS_WWAN_UICC_ACCESS_BINARY
+ - PNDIS_WWAN_UICC_ACCESS_BINARY
+ - NDIS_WWAN_UICC_ACCESS_BINARY
 ---
 
 # _NDIS_WWAN_UICC_ACCESS_BINARY structure
@@ -58,7 +59,7 @@ The header with type, revision, and size information about the **NDIS_WWAN_UICC_
 | Revision | NDIS_WWAN_UICC_ACCESS_BINARY_REVISION_1 |
 | Size | sizeof(NDIS_WWAN_UICC_ACCESS_BINARY) |
 
-For more information about these members, see [**NDIS_OBJECT_HEADER**](../ntddndis/ns-ntddndis-_ndis_object_header.md).
+For more information about these members, see [**NDIS_OBJECT_HEADER**](../objectheader/ns-objectheader-ndis_object_header.md).
 
 ### -field UiccAccessBinary
 
@@ -77,3 +78,4 @@ This structure is used in the payload of an [OID_WWAN_UICC_ACCESS_BINARY](/windo
 [NDIS_STATUS_WWAN_UICC_BINARY_RESPONSE](/windows-hardware/drivers/network/ndis-status-wwan-uicc-binary-response)
 
 [**WWAN_UICC_ACCESS_BINARY**](../wwan/ns-wwan-_wwan_uicc_access_binary.md)
+

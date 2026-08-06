@@ -4,7 +4,6 @@ title: IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters (wudfu
 description: The GetDeviceControlTransferParameters method retrieves parameters that are associated with the completion of a device I/O control request.
 old-location: wdf\iwdfusbrequestcompletionparams_getdevicecontroltransferparameters.htm
 tech.root: wdf
-ms.assetid: 0c3fd576-48de-454b-8015-51767b21f17e
 ms.date: 02/26/2018
 keywords: ["IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters"]
 ms.keywords: GetDeviceControlTransferParameters, GetDeviceControlTransferParameters method, GetDeviceControlTransferParameters method,IWDFUsbRequestCompletionParams interface, IWDFUsbRequestCompletionParams interface,GetDeviceControlTransferParameters method, IWDFUsbRequestCompletionParams.GetDeviceControlTransferParameters, IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters, UMDFRequestObjectRef_b645716e-2ec3-45f3-a3b2-199374aadef8.xml, umdf.iwdfusbrequestcompletionparams_getdevicecontroltransferparameters, wdf.iwdfusbrequestcompletionparams_getdevicecontroltransferparameters, wudfusb/IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFUsbRequestCompletionParams.GetDeviceControlTransferParameters
+ - IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters
 ---
 
 # IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters
@@ -52,24 +51,24 @@ The <b>GetDeviceControlTransferParameters</b> method retrieves parameters that a
 
 ## -parameters
 
-### -param ppMemory 
+### -param ppMemory [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfmemory">IWDFMemory</a> interface, for access to the buffer for the device I/O control request. This parameter is optional and can be <b>NULL</b>.
 
-### -param pLengthTransferred 
+### -param pLengthTransferred [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives the size, in bytes, of transferred data. This parameter is optional and can be <b>NULL</b>.
 
-### -param pOffset 
+### -param pOffset [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives the offset, in bytes, into the buffer for the I/O control request. This parameter is optional and can be <b>NULL</b>.
 
-### -param pSetupPacket 
+### -param pSetupPacket [out, optional]
 
-[out, optional]
+
 A pointer that receives the WinUsb setup packet for the control transfer. This pointer is a PWINUSB_SETUP_PACKET data type that is defined as PVOID. This parameter is optional and can be <b>NULL</b>.
 
 ## -see-also
@@ -79,3 +78,4 @@ A pointer that receives the WinUsb setup packet for the control transfer. This p
 
 
 <a href="/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbrequestcompletionparams">IWDFUsbRequestCompletionParams</a>
+

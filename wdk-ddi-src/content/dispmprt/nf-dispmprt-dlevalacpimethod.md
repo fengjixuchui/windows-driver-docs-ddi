@@ -3,7 +3,6 @@ UID: NF:dispmprt.DlEvalAcpiMethod
 title: DlEvalAcpiMethod function
 description: Evaluates a specified ACPI method on a display adapter or on a child device of a display adapter.
 tech.root: display
-ms.assetid: dc58e082-25c3-45c1-ad62-718ab21a156c
 ms.date: 04/04/2019
 keywords: ["DlEvalAcpiMethod function"]
 ms.keywords: DlEvalAcpiMethod
@@ -38,8 +37,6 @@ api_location:
  - Displib.dll
 api_name:
  - DlEvalAcpiMethod
-product:
- - Windows
 dev_langs:
  - c++
 ---

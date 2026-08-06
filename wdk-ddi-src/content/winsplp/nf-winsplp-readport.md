@@ -4,7 +4,6 @@ title: ReadPort function (winsplp.h)
 description: A port monitor's ReadPort function reads data from a printer port.
 old-location: print\readport.htm
 tech.root: print
-ms.assetid: ab1fb259-edcb-4e19-9afb-18aa6688764a
 ms.date: 02/02/2018
 keywords: ["ReadPort function"]
 ms.keywords: ReadPort, spoolfnc_f4b817ce-afeb-4d3f-b8ce-e060b8de8143.xml, ReadPort function [Print Devices], print.readport, winsplp/ReadPort
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: NOTIFICATION_CONFIG_FLAGS
-req.product: Windows 10 or later.
 f1_keywords:
  - ReadPort
  - winsplp/ReadPort
@@ -51,23 +49,23 @@ A port monitor's <code>ReadPort</code> function reads data from a printer port.
 
 ## -parameters
 
-### -param hPort 
+### -param hPort [in]
 
-[in]
+
 Caller-supplied port handle.
 
-### -param pBuffer 
+### -param pBuffer [out]
 
-[out]
+
 Caller-supplied pointer to a buffer to receive data read from the port.
 
 ### -param cbBuffer
 
 Caller-supplied size, in bytes, of <i>pBuffer</i>.
 
-### -param pcbRead 
+### -param pcbRead [out]
 
-[out]
+
 Caller-supplied pointer to a location to receive the number of bytes successfully read from the port.
 
 ## -returns

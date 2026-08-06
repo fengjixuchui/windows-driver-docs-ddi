@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_QUERYRESOURCEINFO
 title: PFND3DKMT_QUERYRESOURCEINFO (d3dkmthk.h)
 description: The PFND3DKMT_QUERYRESOURCEINFO callback function retrieves information about a shared resource.
-ms.assetid: 4e48ccbd-d20b-433f-aa1d-9c44fc5d930a
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_QUERYRESOURCEINFO callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The PFND3DKMT_QUERYRESOURCEINFO callback function retrieves information about a 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_QUERYRESOURCEINFO](ns-d3dkmthk-_d3dkmt_queryresourceinfo.md) structure.
 

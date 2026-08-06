@@ -3,17 +3,16 @@ UID: NS:netadapter._NET_ADAPTER_DATAPATH_CALLBACKS
 title: _NET_ADAPTER_DATAPATH_CALLBACKS (netadapter.h)
 description: The NET_ADAPTER_DATAPATH_CALLBACKS structure describes a net adapter's callback functions for creating its datapath queues.
 tech.root: netvista
-ms.assetid: 831e94ef-28ba-4681-b0b6-07a8a38238fc
 ms.date: 07/27/2018
 keywords: ["NET_ADAPTER_DATAPATH_CALLBACKS structure"]
 ms.keywords: _NET_ADAPTER_DATAPATH_CALLBACKS, NET_ADAPTER_DATAPATH_CALLBACKS, *PNET_ADAPTER_DATAPATH_CALLBACKS,
 req.header: netadapter.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: 
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.27
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -35,6 +34,7 @@ api_location:
  - netadapter.h
 api_name:
  - _NET_ADAPTER_DATAPATH_CALLBACKS
+ - NET_ADAPTER_DATAPATH_CALLBACKS
 ---
 
 # _NET_ADAPTER_DATAPATH_CALLBACKS structure

@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGKARG_FLIPOVERLAY
 title: _DXGKARG_FLIPOVERLAY (d3dkmddi.h)
 description: The DXGKARG_FLIPOVERLAY structure describes a new allocation to display for the overlay.
 old-location: display\dxgkarg_flipoverlay.htm
-ms.assetid: c5396581-e9f2-47eb-bb82-1e54f5def4d0
 ms.date: 05/10/2018
 keywords: ["DXGKARG_FLIPOVERLAY structure"]
 ms.keywords: DXGKARG_FLIPOVERLAY, DXGKARG_FLIPOVERLAY structure [Display Devices], DmStructs_8ff06344-e7f5-44b1-95fc-d3b363428d43.xml, _DXGKARG_FLIPOVERLAY, d3dkmddi/DXGKARG_FLIPOVERLAY, display.dxgkarg_flipoverlay
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_FLIPOVERLAY
  - DXGKARG_FLIPOVERLAY
 ---
 
@@ -52,26 +52,27 @@ The DXGKARG_FLIPOVERLAY structure describes a new allocation to display for the 
 
 ## -struct-fields
 
-### -field hSource
+### -field hSource [in]
 
-[in] A handle to the source allocation to be displayed.
+A handle to the source allocation to be displayed.
 
-### -field SrcPhysicalAddress
+### -field SrcPhysicalAddress [in]
 
-[in] The physical address, within the segment that <b>SrcSegmentId</b> specifies, of the allocation to be displayed.
+The physical address, within the segment that <b>SrcSegmentId</b> specifies, of the allocation to be displayed.
 
-### -field SrcSegmentId
+### -field SrcSegmentId [in]
 
-[in] The identifier of a segment in which the allocation is currently paged.
+The identifier of a segment in which the allocation is currently paged.
 
-### -field pPrivateDriverData
+### -field pPrivateDriverData [in]
 
-[in] A pointer to a block of private data that is passed from the user-mode display driver to the display miniport driver.
+A pointer to a block of private data that is passed from the user-mode display driver to the display miniport driver.
 
-### -field PrivateDriverDataSize
+### -field PrivateDriverDataSize [in]
 
-[in] The size, in bytes, of the block of private data that <b>pPrivateDriverData</b> points to.
+The size, in bytes, of the block of private data that <b>pPrivateDriverData</b> points to.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_flipoverlay">DxgkDdiFlipOverlay</a>
+

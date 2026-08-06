@@ -4,8 +4,7 @@ title: RILUICCLOCKSTATELOCKSTATE (ntddrilapitypes.h)
 description: This enumeration describes the RILUICCLOCKSTATELOCKSTATE.
 old-location: netvista\riluicclockstatelockstate.htm
 tech.root: netvista
-ms.assetid: 95f73081-b809-407d-b73b-975b97301449
-ms.date: 02/16/2018
+ms.date: 01/26/2025
 keywords: ["RILUICCLOCKSTATELOCKSTATE enumeration"]
 ms.keywords: RILUICCLOCKSTATELOCKSTATE, RILUICCLOCKSTATELOCKSTATE enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_UICCLOCKSTATE_LOCKSTATE, RIL_UICCLOCKSTATE_BLOCKED, RIL_UICCLOCKSTATE_ENABLED, RIL_UICCLOCKSTATE_VERIFIED, netvista.riluicclockstatelockstate, rilapitypes/RILUICCLOCKSTATELOCKSTATE, rilapitypes/RIL_PARAM_UICCLOCKSTATE_LOCKSTATE, rilapitypes/RIL_UICCLOCKSTATE_BLOCKED, rilapitypes/RIL_UICCLOCKSTATE_ENABLED, rilapitypes/RIL_UICCLOCKSTATE_VERIFIED
 req.header: ntddrilapitypes.h
@@ -52,6 +51,8 @@ api_name:
 
 ### -field RIL_UICCLOCKSTATE_NONE
 
+None of the other state bits are set.
+
 ### -field RIL_UICCLOCKSTATE_VERIFIED
 
 Lock is verified.
@@ -66,19 +67,15 @@ Lock is blocked.
 
 ### -field RIL_UICCLOCKSTATE_ALL
 
-#### - RIL_PARAM_UICCLOCKSTATE_LOCKSTATE
-
-None of the other state bits are set.
-
 ## -syntax
 
 ```cpp
 enum RILUICCLOCKSTATELOCKSTATE {
-  RIL_PARAM_UICCLOCKSTATE_LOCKSTATE  = 0x0000000,
-  RIL_UICCLOCKSTATE_VERIFIED         = 0x0000001,
-  RIL_UICCLOCKSTATE_ENABLED          = 0x0000002,
-  RIL_UICCLOCKSTATE_BLOCKED          = 0x0000003
-
+  RIL_UICCLOCKSTATE_NONE = 0,
+  RIL_UICCLOCKSTATE_VERIFIED = 0x1,
+  RIL_UICCLOCKSTATE_ENABLED = 0x2,
+  RIL_UICCLOCKSTATE_BLOCKED = 0x4,
+  RIL_UICCLOCKSTATE_ALL = 0x7
 };
 ```
 

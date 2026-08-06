@@ -4,7 +4,6 @@ title: NdisMTerminateOffloadComplete function (ndischimney.h)
 description: An offload target calls the NdisMTerminateOffloadComplete function to complete a terminate offload operation that was initiated by a previous call to the MiniportTerminateOffload function of the offload target.
 old-location: netvista\ndismterminateoffloadcomplete.htm
 tech.root: netvista
-ms.assetid: d444eae5-2e7c-41f2-9fb2-55e172505cf6
 ms.date: 05/02/2018
 keywords: ["NdisMTerminateOffloadComplete function"]
 ms.keywords: NdisMTerminateOffloadComplete, NdisMTerminateOffloadComplete function [Network Drivers Starting with Windows Vista], ndischimney/NdisMTerminateOffloadComplete, netvista.ndismterminateoffloadcomplete, tcp_chim_ndis_func_3e692d5c-5cad-4567-8639-76f97bf2e39c.xml
@@ -56,16 +55,16 @@ An offload target calls the
 
 ## -parameters
 
-### -param NdisMiniportHandle 
+### -param NdisMiniportHandle [in]
 
-[in]
+
 The handle that the offload target obtained in a previous call to 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver">
      NdisMRegisterMiniportDriver</a>.
 
-### -param OffloadBlockList 
+### -param OffloadBlockList [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_miniport_offload_block_list">
      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure. The offload target obtained this pointer as an input
@@ -104,7 +103,7 @@ Before calling the
 
 <ul>
 <li>
-Complete any oustanding calls to the 
+Complete any outstanding calls to the 
       <a href="/windows-hardware/drivers/ddi/ndischimney/nc-ndischimney-w_invalidate_offload_handler">MiniportInvalidateOffload</a>,      
       <a href="/windows-hardware/drivers/ddi/ndischimney/nc-ndischimney-w_query_offload_handler">MiniportQueryOffload</a>, 
       <a href="/windows-hardware/drivers/ddi/ndischimney/nc-ndischimney-w_tcp_offload_receive_handler">MiniportTcpOffloadReceive</a>,      
@@ -129,7 +128,7 @@ Ensure that any outstanding calls to the
 </ul>
 If there is outstanding send data on a TCP connection that is being terminated, the offload target
     packages such data in net buffers and passes the packaged data to the host stack in a linked list of 
-    <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structures. In this case,
+    <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structures. In this case,
     the offload target specifies a non-<b>NULL</b> value for the 
     <b>NetBufferListChain</b> member of the NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure for that connection.
     (The NDIS_MINIPORT_OFFLOAD_BLOCK_LIST structure is in the linked list pointed to by the 

@@ -2,7 +2,6 @@
 UID: NS:ucmucsispec._UCSI_GET_PDOS_COMMAND
 title: _UCSI_GET_PDOS_COMMAND (ucmucsispec.h)
 description: Used in the GET_PDOS command. See Table 4-34.
-ms.assetid: e3f8b770-0582-434c-9d46-f882d5a55b0b
 tech.root: usbref
 ms.date: 09/30/2018
 keywords: ["UCSI_GET_PDOS_COMMAND structure"]
@@ -37,6 +36,8 @@ api_location:
  - ucmucsispec.h
 api_name:
  - _UCSI_GET_PDOS_COMMAND
+ - PUCSI_GET_PDOS_COMMAND
+ - UCSI_GET_PDOS_COMMAND
 ---
 
 # _UCSI_GET_PDOS_COMMAND structure
@@ -44,7 +45,7 @@ api_name:
 
 ## -description
 
-Used in the GET_PDOS command. See Table 4-34 in [UCSI spec version 1.1](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
+Used in the GET_PDOS command. See Table 4-34 in [UCSI spec version 1.2](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
 
 ## -struct-fields
 

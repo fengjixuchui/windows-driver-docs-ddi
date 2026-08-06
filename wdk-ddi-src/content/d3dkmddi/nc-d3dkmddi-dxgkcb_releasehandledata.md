@@ -2,19 +2,18 @@
 UID: NC:d3dkmddi.DXGKCB_RELEASEHANDLEDATA
 title: DXGKCB_RELEASEHANDLEDATA (d3dkmddi.h)
 description: Releases handle data.
-ms.assetid: b7a1b8b8-f631-478b-a441-c89dcd7bfd29
-ms.date: 10/19/2018
+ms.date: 05/24/2022
 keywords: ["DXGKCB_RELEASEHANDLEDATA callback function"]
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 10 (WDDM 2.0)
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
 req.lib: 
 req.dll: 
-req.irql: 
+req.irql: <= APC_LEVEL
 req.ddi-compliance: 
 req.unicode-ansi: 
 req.idl: 
@@ -42,24 +41,26 @@ dev_langs:
 
 # DXGKCB_RELEASEHANDLEDATA callback function
 
-
 ## -description
 
-Implemented by the client driver to release handle data.
+**DXGKCB_RELEASEHANDLEDATA** releases a reference to an allocation.
 
-## -prototype
+## -parameters
 
-```cpp
-//Declaration
+### -param unnamedParam1 [in]
 
-DXGKCB_RELEASEHANDLEDATA DxgkcbReleasehandledata; 
+A [**DXGKARGCB_RELEASEHANDLEDATA**](ns-d3dkmddi-dxgkargcb_releasehandledata.md) structure containing information about the allocation to be released.
 
-// Definition
+## -remarks
 
-VOID DxgkcbReleasehandledata 
-(
-)
-{...}
+The allocation reference was acquired in a prior call to [**DXGKCB_ACQUIREHANDLEDATA**](nc-d3dkmddi-dxgkcb_acquirehandledata.md).
 
-```
+*DXGKCB_XXX* functions are implemented by *Dxgkrnl*. To use this callback function, set the members of [**DXGKARGCB_RELEASEHANDLEDATA**](ns-d3dkmddi-dxgkargcb_releasehandledata.md) and then call **DxgkCbReleaseHandleData** via the [**DXGKRNL_INTERFACE**](../dispmprt/ns-dispmprt-_dxgkrnl_interface.md).
 
+## -see-also
+
+[**DXGKARGCB_RELEASEHANDLEDATA**](ns-d3dkmddi-dxgkargcb_releasehandledata.md)
+
+[**DXGKCB_ACQUIREHANDLEDATA**](nc-d3dkmddi-dxgkcb_acquirehandledata.md)
+
+[**DXGKRNL_INTERFACE**](../dispmprt/ns-dispmprt-_dxgkrnl_interface.md)

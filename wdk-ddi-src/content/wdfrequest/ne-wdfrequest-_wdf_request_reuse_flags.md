@@ -4,7 +4,6 @@ title: _WDF_REQUEST_REUSE_FLAGS (wdfrequest.h)
 description: The WDF_REQUEST_REUSE_FLAGS enumeration type defines flags that are used in a driver's WDF_REQUEST_REUSE_PARAMS structure.
 old-location: wdf\wdf_request_reuse_flags.htm
 tech.root: wdf
-ms.assetid: 3d1f8f38-b875-4661-9941-4dec28b7e8fb
 ms.date: 02/26/2018
 keywords: ["WDF_REQUEST_REUSE_FLAGS enumeration"]
 ms.keywords: DFRequestObjectRef_4b91ca45-4dbb-4942-83ce-72ca10170932.xml, WDF_REQUEST_REUSE_FLAGS, WDF_REQUEST_REUSE_FLAGS enumeration, WDF_REQUEST_REUSE_NO_FLAGS, WDF_REQUEST_REUSE_SET_NEW_IRP, _WDF_REQUEST_REUSE_FLAGS, kmdf.wdf_request_reuse_flags, wdf.wdf_request_reuse_flags, wdfrequest/WDF_REQUEST_REUSE_FLAGS, wdfrequest/WDF_REQUEST_REUSE_NO_FLAGS, wdfrequest/WDF_REQUEST_REUSE_SET_NEW_IRP
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfrequest.h
 api_name:
+ - _WDF_REQUEST_REUSE_FLAGS
  - WDF_REQUEST_REUSE_FLAGS
 ---
 
@@ -54,14 +54,15 @@ The <b>WDF_REQUEST_REUSE_FLAGS</b> enumeration type defines flags that are used 
 
 ## -enum-fields
 
-### -field WDF_REQUEST_REUSE_NO_FLAGS
+### -field WDF_REQUEST_REUSE_NO_FLAGS:0x00000000
 
 No flags are set.
 
-### -field WDF_REQUEST_REUSE_SET_NEW_IRP
+### -field WDF_REQUEST_REUSE_SET_NEW_IRP:0x00000001
 
 The <b>NewIrp</b> member of the <a href="/windows-hardware/drivers/ddi/wdfrequest/ns-wdfrequest-_wdf_request_reuse_params">WDF_REQUEST_REUSE_PARAMS</a> structure is valid.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfrequest/ns-wdfrequest-_wdf_request_reuse_params">WDF_REQUEST_REUSE_PARAMS</a>
+

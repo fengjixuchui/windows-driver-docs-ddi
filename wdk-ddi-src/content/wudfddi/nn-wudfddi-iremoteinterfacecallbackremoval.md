@@ -4,7 +4,6 @@ title: IRemoteInterfaceCallbackRemoval (wudfddi.h)
 description: The IRemoteInterfaceCallbackRemoval provides a callback function that the framework calls to notify the driver about the removal of a device interface.
 old-location: wdf\iremoteinterfacecallbackremoval.htm
 tech.root: wdf
-ms.assetid: f4cbad57-922f-4265-b436-847feeca853c
 ms.date: 02/26/2018
 keywords: ["IRemoteInterfaceCallbackRemoval interface"]
 ms.keywords: IRemoteInterfaceCallbackRemoval, IRemoteInterfaceCallbackRemoval interface, IRemoteInterfaceCallbackRemoval interface,described, UMDFIoTargetObjectRef_7eeb5a11-5f99-4b2c-a36f-0fd72466e278.xml, umdf.iremoteinterfacecallbackremoval, wdf.iremoteinterfacecallbackremoval, wudfddi/IRemoteInterfaceCallbackRemoval
@@ -52,9 +51,9 @@ The <b>IRemoteInterfaceCallbackRemoval</b> provides a callback function that the
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IRemoteInterfaceCallbackRemoval</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IRemoteInterfaceCallbackRemoval</b> also has these types of members:
+The <b>IRemoteInterfaceCallbackRemoval</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IRemoteInterfaceCallbackRemoval</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>
 
 ## -remarks

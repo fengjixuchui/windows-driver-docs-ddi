@@ -4,7 +4,6 @@ title: IPrintClassObjectFactory::GetPrintClassObject (filterpipeline.h)
 description: The GetPrintClassObject method creates a print filter-related object for a specified printer by using the IID of the interface object to create.
 old-location: print\iprintclassobjectfactory_getprintclassobject.htm
 tech.root: print
-ms.assetid: 96ba0c27-d512-4bca-9053-a753434e461d
 ms.date: 04/20/2018
 keywords: ["IPrintClassObjectFactory::GetPrintClassObject"]
 ms.keywords: GetPrintClassObject, GetPrintClassObject method [Print Devices], GetPrintClassObject method [Print Devices],IPrintClassObjectFactory interface, IPrintClassObjectFactory interface [Print Devices],GetPrintClassObject method, IPrintClassObjectFactory.GetPrintClassObject, IPrintClassObjectFactory::GetPrintClassObject, filterpipeline/IPrintClassObjectFactory::GetPrintClassObject, filterpipeline_18eaede9-1064-4387-a30b-2fc2e245e0ca.xml, print.iprintclassobjectfactory_getprintclassobject
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - filterpipeline.h
 api_name:
- - IPrintClassObjectFactory.GetPrintClassObject
+ - IPrintClassObjectFactory::GetPrintClassObject
 ---
 
 # IPrintClassObjectFactory::GetPrintClassObject
@@ -50,19 +49,19 @@ The <b>GetPrintClassObject</b> method creates a print filter-related object for 
 
 ## -parameters
 
-### -param pszPrinterName 
+### -param pszPrinterName [in]
 
-[in]
+
 The printer name.
 
-### -param riid 
+### -param riid [in]
 
-[in]
+
 The IID of the interface to create. Filters should use IID_IPrintAsyncNotify to create notification channels.
 
-### -param ppNewObject 
+### -param ppNewObject [out]
 
-[out]
+
 The new object that this method creates.
 
 ## -returns

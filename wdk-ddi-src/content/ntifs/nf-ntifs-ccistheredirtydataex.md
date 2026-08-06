@@ -4,14 +4,13 @@ title: CcIsThereDirtyDataEx function (ntifs.h)
 description: The CcIsThereDirtyDataEx routine determines whether a volume contains any files that have dirty data in the system cache.
 old-location: ifsk\ccistheredirtydataex.htm
 tech.root: ifsk
-ms.assetid: 88378f82-2975-4b53-9dde-53ab81df3c53
 ms.date: 04/16/2018
 keywords: ["CcIsThereDirtyDataEx function"]
 ms.keywords: CcIsThereDirtyDataEx, CcIsThereDirtyDataEx routine [Installable File System Drivers], ccref_13ae1f3e-b2ea-4bc6-a1cb-0101afd58d04.xml, ifsk.ccistheredirtydataex, ntifs/CcIsThereDirtyDataEx
 req.header: ntifs.h
 req.include-header: Ntifs.h, FltKernel.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of Windows.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,14 +49,14 @@ The <b>CcIsThereDirtyDataEx</b> routine determines whether a volume contains any
 
 ## -parameters
 
-### -param Vpb 
+### -param Vpb [in]
 
-[in]
+
 A pointer to a volume parameter block (VPB) for the volume.
 
-### -param NumberOfDirtyPages 
+### -param NumberOfDirtyPages [in, optional]
 
-[in, optional]
+
 An optional pointer to an unsigned long buffer that receives the number of dirty pages on the volume (associated with the Vpb parameter).
 
 ## -returns

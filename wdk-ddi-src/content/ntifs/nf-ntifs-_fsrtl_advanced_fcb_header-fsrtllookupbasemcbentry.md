@@ -3,7 +3,6 @@ UID: NF:ntifs.FsRtlLookupBaseMcbEntry
 title: FsRtlLookupBaseMcbEntry function (ntifs.h)
 description: The FsRtlLookupBaseMcbEntry routine retrieves the mapping of a Vbn to an Lbn from an Mcb. It indicates if the mapping exists and the size of the run.
 tech.root: ifsk
-ms.assetid: b997ada6-cfa2-4e3a-ae39-7f9a8c2b3234
 ms.date: 10/19/2018
 keywords: ["FsRtlLookupBaseMcbEntry function"]
 ms.keywords: FsRtlLookupBaseMcbEntry
@@ -42,7 +41,6 @@ dev_langs:
 ---
 
 # FsRtlLookupBaseMcbEntry function
-
 
 ## -description
 
@@ -83,8 +81,3 @@ Receives the index of the run found.
 This function returns TRUE if the Vbn is within the range of VBNs mapped by the MCB (even if it corresponds to a hole in the mapping), and FALSE if the Vbn is beyond the range of the MCB's mapping.
 
 For example, if an MCB has a mapping for VBNs 5 and 7 but not for 6, then a lookup on Vbn 5 or 7 will yield a non zero Lbn and a sector count of 1.  A lookup for Vbn 6 will return TRUE with an Lbn value of 0, and lookup for Vbn 8 or above will return FALSE.
-
-## -remarks
-
-## -see-also
-

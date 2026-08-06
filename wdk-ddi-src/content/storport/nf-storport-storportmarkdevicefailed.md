@@ -3,7 +3,6 @@ UID: NF:storport.StorPortMarkDeviceFailed
 title: StorPortMarkDeviceFailed function
 description: The StorPortMarkDeviceFailed routine marks a device with failed status.
 tech.root: storage
-ms.assetid: 91951a88-18ba-4ddc-b8e0-d789f179fa1f
 ms.date: 03/19/2019
 keywords: ["StorPortMarkDeviceFailed function"]
 ms.keywords: StorPortMarkDeviceFailed
@@ -37,8 +36,6 @@ api_location:
  - storport.h
 api_name:
  - StorPortMarkDeviceFailed
-product:
- - Windows
 dev_langs:
  - c++
 ---

@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_SETSTABLEPOWERSTATE
 title: PFND3DKMT_SETSTABLEPOWERSTATE (d3dkmthk.h)
 description: The PFND3DKMT_SETSTABLEPOWERSTATE callback function sets stable power state.
-ms.assetid: aa8f5012-ea44-46a1-923d-1649632d6656
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_SETSTABLEPOWERSTATE callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The PFND3DKMT_SETSTABLEPOWERSTATE callback function sets stable power state.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_SETSTABLEPOWERSTATE](ns-d3dkmthk-_d3dkmt_setstablepowerstate.md) structure.
 

@@ -2,7 +2,7 @@
 UID: NF:wdm.KzLowerIrql
 title: KzLowerIrql function (wdm.h)
 description: Restores the IRQL on the current processor to its original value.
-ms.assetid: 516b6d64-447e-427e-a544-88b9dc8bea66
+tech.root: kernel
 ms.date: 09/30/2018
 keywords: ["KzLowerIrql function"]
 ms.keywords: KzLowerIrql, KeLowerIrql
@@ -47,12 +47,12 @@ Restores the IRQL on the current processor to its original value. For informatio
 
 ## -parameters
 
-### -param NewIrql
+### -param NewIrql [in]
 
-[in] Specifies the IRQL that was returned from <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keraiseirql">KeRaiseIrql</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keraiseirqltodpclevel">KeRaiseIrqlToDpcLevel</a>.
+Specifies the IRQL that was returned from <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keraiseirql">KeRaiseIrql</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keraiseirqltodpclevel">KeRaiseIrqlToDpcLevel</a>.
 
 ## -remarks
 
-This function is same as the [**KeLowerIrql**](nf-wdm-kelowerirql~r1.md) function.
+This function is same as the [**KeLowerIrql**](nf-wdm-kelowerirql.md) function.
 
 ## -see-also

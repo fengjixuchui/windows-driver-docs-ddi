@@ -1,10 +1,9 @@
 ---
 UID: NS:miniport._GROUP_AFFINITY
 title: _GROUP_AFFINITY (miniport.h)
-description: The GROUP_AFFINITY structure specifies a group number and the processor affinity within that group.
+description: The _GROUP_AFFINITY structure (miniport.h) specifies a group number and the processor affinity within that group.
 old-location: kernel\group_affinity.htm
 tech.root: kernel
-ms.assetid: 8a6fd914-94f9-4ccf-9b0a-cc102fd90965
 ms.date: 04/30/2018
 keywords: ["GROUP_AFFINITY structure"]
 ms.keywords: "*PGROUP_AFFINITY, GROUP_AFFINITY, GROUP_AFFINITY structure [Kernel-Mode Driver Architecture], PGROUP_AFFINITY, PGROUP_AFFINITY structure pointer [Kernel-Mode Driver Architecture], _GROUP_AFFINITY, kernel.group_affinity, kstruct_b_9d437322-c6bb-4579-8d7b-144a7513bbd9.xml, miniport/GROUP_AFFINITY, miniport/PGROUP_AFFINITY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - miniport.h
 api_name:
+ - _GROUP_AFFINITY
+ - PGROUP_AFFINITY
  - GROUP_AFFINITY
 ---
 
@@ -89,3 +90,4 @@ A <b>GROUP_AFFINITY</b> structure can describe an interrupt affinity, which is a
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kesetsystemgroupaffinitythread">KeSetSystemGroupAffinityThread</a>
+

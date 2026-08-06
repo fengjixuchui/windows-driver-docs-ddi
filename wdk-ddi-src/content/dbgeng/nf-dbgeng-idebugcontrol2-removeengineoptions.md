@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl2.RemoveEngineOptions
 title: IDebugControl2::RemoveEngineOptions (dbgeng.h)
-description: The RemoveEngineOptions method turns off some of the engine's options.
+description: Learn about the RemoveEngineOptions method, which turns off some of the engine's options. You can specify which options to turn off.
 old-location: debugger\removeengineoptions.htm
 tech.root: debugger
-ms.assetid: ec4cf252-88c4-47de-9015-bcbbd1fd5d1d
 ms.date: 05/03/2018
 keywords: ["IDebugControl2::RemoveEngineOptions"]
 ms.keywords: IDebugControl interface [Windows Debugging],RemoveEngineOptions method, IDebugControl2 interface [Windows Debugging],RemoveEngineOptions method, IDebugControl2.RemoveEngineOptions, IDebugControl2::RemoveEngineOptions, IDebugControl3 interface [Windows Debugging],RemoveEngineOptions method, IDebugControl3::RemoveEngineOptions, IDebugControl::RemoveEngineOptions, IDebugControl_b1af0528-4fc2-4ea3-90e8-c7d92b0632f4.xml, RemoveEngineOptions, RemoveEngineOptions method [Windows Debugging], RemoveEngineOptions method [Windows Debugging],IDebugControl interface, RemoveEngineOptions method [Windows Debugging],IDebugControl2 interface, RemoveEngineOptions method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::RemoveEngineOptions, dbgeng/IDebugControl3::RemoveEngineOptions, dbgeng/IDebugControl::RemoveEngineOptions, debugger.removeengineoptions
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.RemoveEngineOptions
- - IDebugControl2.RemoveEngineOptions
- - IDebugControl3.RemoveEngineOptions
+ - IDebugControl2::RemoveEngineOptions
 ---
 
 # IDebugControl2::RemoveEngineOptions
@@ -52,9 +49,9 @@ The <b>RemoveEngineOptions</b> method turns off some of the engine's options.
 
 ## -parameters
 
-### -param Options 
+### -param Options [in]
 
-[in]
+
 Specifies the engine options to turn off.  <i>Options</i> is a bit-set; the new value of the engine's options will equal the bitwise-NOT of <i>Options</i> combined with old value using the bitwise-AND operator (<code>new_value := old_value AND NOT Options</code>).  For a description of the engine options, see <a href="/previous-versions/ff541475(v=vs.85)">DEBUG_ENGOPT_XXX</a>.
 
 ## -returns
@@ -107,3 +104,4 @@ After the engine options have been changed, the engine sends out notification to
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setengineoptions">SetEngineOptions</a>
+

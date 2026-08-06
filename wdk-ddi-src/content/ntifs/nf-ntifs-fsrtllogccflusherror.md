@@ -4,14 +4,13 @@ title: FsRtlLogCcFlushError function (ntifs.h)
 description: The FsRtlLogCcFlushError routine logs a lost delayed-write error and displays a dialog box to the user.
 old-location: ifsk\fsrtllogccflusherror.htm
 tech.root: ifsk
-ms.assetid: e516758d-d1fe-4977-93bb-f427972fdd3c
 ms.date: 04/16/2018
 keywords: ["FsRtlLogCcFlushError function"]
 ms.keywords: FsRtlLogCcFlushError, FsRtlLogCcFlushError routine [Installable File System Drivers], fsrtlref_5e72d84c-d788-4b6d-b5fe-3e9b06b0e074.xml, ifsk.fsrtllogccflusherror, ntifs/FsRtlLogCcFlushError
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating system.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,29 +49,29 @@ The <b>FsRtlLogCcFlushError</b> routine logs a lost delayed-write error and disp
 
 ## -parameters
 
-### -param FileName 
+### -param FileName [in]
 
-[in]
+
 The name of the file that could not be flushed.
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 A pointer to the device object that this log entry should be filed against.
 
-### -param SectionObjectPointer 
+### -param SectionObjectPointer [in]
 
-[in]
+
 A pointer to the section object for the file on which the flush failed.
 
-### -param FlushError 
+### -param FlushError [in]
 
-[in]
+
 The error returned by the call to <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccflushcache">CcFlushCache</a>.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A value of 0 or a bitwise combination of one or more of the following flags:
 
 <table>

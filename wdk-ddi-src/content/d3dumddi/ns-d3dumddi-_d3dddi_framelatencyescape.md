@@ -4,7 +4,6 @@ title: _D3DDDI_FRAMELATENCYESCAPE (d3dumddi.h)
 description: Specifies an app's maximum frame latency.
 old-location: display\d3dddi_framelatencyescape.htm
 tech.root: display
-ms.assetid: 19395349-375E-46AF-BCCF-FF5C92B374C4
 ms.date: 05/10/2018
 keywords: ["D3DDDI_FRAMELATENCYESCAPE structure"]
 ms.keywords: D3DDDI_FRAMELATENCYESCAPE, D3DDDI_FRAMELATENCYESCAPE structure [Display Devices], _D3DDDI_FRAMELATENCYESCAPE, d3dumddi/D3DDDI_FRAMELATENCYESCAPE, display.d3dddi_framelatencyescape
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dumddi.h
 api_name:
+ - _D3DDDI_FRAMELATENCYESCAPE
  - D3DDDI_FRAMELATENCYESCAPE
 ---
 
@@ -52,7 +52,7 @@ Specifies an app's maximum frame latency.
 
 ## -struct-fields
 
-### -field RequestedLatency
+### -field RequestedLatency [in]
 
-[in] The frame latency requested by the driver, specified as the number of frames that are allowed to be stored in a queue, before submission for rendering.
+The frame latency requested by the driver, specified as the number of frames that are allowed to be stored in a queue, before submission for rendering.
 

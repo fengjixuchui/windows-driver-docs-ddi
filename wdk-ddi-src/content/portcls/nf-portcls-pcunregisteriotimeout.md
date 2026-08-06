@@ -4,7 +4,6 @@ title: PcUnregisterIoTimeout function (portcls.h)
 description: The PcUnregisterIoTimeout function unregisters a driver-supplied I/O-timer callback routine for a specified device object.
 old-location: audio\pcunregisteriotimeout.htm
 tech.root: audio
-ms.assetid: 4266c775-a2e9-46f0-91ad-6f6cce06bea0
 ms.date: 05/08/2018
 keywords: ["PcUnregisterIoTimeout function"]
 ms.keywords: PcUnregisterIoTimeout, PcUnregisterIoTimeout function [Audio Devices], audio.pcunregisteriotimeout, audpc-routines_cb67c1bb-c5ad-4118-bdff-906735214653.xml, portcls/PcUnregisterIoTimeout
@@ -52,19 +51,19 @@ The <b>PcUnregisterIoTimeout</b> function unregisters a driver-supplied I/O-time
 
 ## -parameters
 
-### -param pDeviceObject 
+### -param pDeviceObject [in]
 
-[in]
+
 Pointer to the same device object that the driver supplied when it previously called <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisteriotimeout">PcRegisterIoTimeout</a>. The device object is a system structure of type <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a>.
 
-### -param pTimerRoutine 
+### -param pTimerRoutine [in]
 
-[in]
+
 Pointer to the same I/O-timer callback routine that the driver supplied when it previously called <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisteriotimeout">PcRegisterIoTimeout</a>
 
-### -param pContext 
+### -param pContext [in]
 
-[in]
+
 Pointer to the same driver-determined context that the driver supplied when it previously called <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregisteriotimeout">PcRegisterIoTimeout</a>
 
 ## -returns

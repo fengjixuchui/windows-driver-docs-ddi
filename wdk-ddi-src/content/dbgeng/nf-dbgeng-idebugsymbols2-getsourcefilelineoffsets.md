@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols2.GetSourceFileLineOffsets
 title: IDebugSymbols2::GetSourceFileLineOffsets (dbgeng.h)
-description: The GetSourceFileLineOffsets method maps each line in a source file to a location in the target's memory.
+description: The GetSourceFileLineOffsets method maps each line in a source file to a location in the target's memory. This method belongs to the IDebugSymbols2 interface.
 old-location: debugger\getsourcefilelineoffsets.htm
 tech.root: debugger
-ms.assetid: ace9e23a-d7ea-480a-8001-f25310adee22
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols2::GetSourceFileLineOffsets"]
 ms.keywords: GetSourceFileLineOffsets, GetSourceFileLineOffsets method [Windows Debugging], GetSourceFileLineOffsets method [Windows Debugging],IDebugSymbols interface, GetSourceFileLineOffsets method [Windows Debugging],IDebugSymbols2 interface, GetSourceFileLineOffsets method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],GetSourceFileLineOffsets method, IDebugSymbols2 interface [Windows Debugging],GetSourceFileLineOffsets method, IDebugSymbols2.GetSourceFileLineOffsets, IDebugSymbols2::GetSourceFileLineOffsets, IDebugSymbols3 interface [Windows Debugging],GetSourceFileLineOffsets method, IDebugSymbols3::GetSourceFileLineOffsets, IDebugSymbols::GetSourceFileLineOffsets, IDebugSymbols_18a64f21-a082-4953-8d69-2b3f7d805c60.xml, dbgeng/IDebugSymbols2::GetSourceFileLineOffsets, dbgeng/IDebugSymbols3::GetSourceFileLineOffsets, dbgeng/IDebugSymbols::GetSourceFileLineOffsets, debugger.getsourcefilelineoffsets
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.GetSourceFileLineOffsets
- - IDebugSymbols2.GetSourceFileLineOffsets
- - IDebugSymbols3.GetSourceFileLineOffsets
+ - IDebugSymbols2::GetSourceFileLineOffsets
 ---
 
 # IDebugSymbols2::GetSourceFileLineOffsets
@@ -52,24 +49,24 @@ The <b>GetSourceFileLineOffsets</b>  method maps each line in a source file to a
 
 ## -parameters
 
-### -param File 
+### -param File [in]
 
-[in]
+
 Specifies the name of the file whose lines will be turned into locations in the target's memory.  The symbols for each module in the target are queried for this file.  If the file is not located, the path is dropped and the symbols are queried again.
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Receives the locations in the target's memory that correspond to the lines of the source code.  The first entry returned to this array corresponds to the first line of the file, so that <code>Buffer[i]</code> contains the location for line <code>i+1</code>.  If no symbol information is available for a line, the corresponding entry in <i>Buffer</i> is set to DEBUG_INVALID_OFFSET.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferLines 
+### -param BufferLines [in]
 
-[in]
+
 Specifies the number of PULONG64 objects that the <i>Buffer</i> array can hold.
 
-### -param FileLines 
+### -param FileLines [out, optional]
 
-[out, optional]
+
 Receives the number of lines in the source file specified by <i>File</i>.
 
 ## -returns
@@ -128,3 +125,4 @@ For more information about using the source path, see <a href="/windows-hardware
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

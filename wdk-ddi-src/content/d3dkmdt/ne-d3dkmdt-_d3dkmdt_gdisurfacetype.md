@@ -4,14 +4,13 @@ title: _D3DKMDT_GDISURFACETYPE (d3dkmdt.h)
 description: The D3DKMDT_GDISURFACETYPE enumeration indicates the type of lockable surface that is used by the Desktop Window Manager (DWM) for redirection.
 old-location: display\d3dkmdt_gdisurfacetype.htm
 tech.root: display
-ms.assetid: b1c8fc0a-b877-4321-85b9-0c5c174ffc45
 ms.date: 05/10/2018
 keywords: ["D3DKMDT_GDISURFACETYPE enumeration"]
 ms.keywords: D3DKMDT_GDISURFACETYPE, D3DKMDT_GDISURFACETYPE enumeration [Display Devices], D3DKMDT_GDISURFACE_EXISTINGSYSMEM, D3DKMDT_GDISURFACE_INVALID, D3DKMDT_GDISURFACE_LOOKUPTABLE, D3DKMDT_GDISURFACE_STAGING, D3DKMDT_GDISURFACE_STAGING_CPUVISIBLE, D3DKMDT_GDISURFACE_TEXTURE, D3DKMDT_GDISURFACE_TEXTURE_CPUVISIBLE, D3DKMDT_GDISURFACE_TEXTURE_CPUVISIBLE_CROSSADAPTER, D3DKMDT_GDISURFACE_TEXTURE_CROSSADAPTER, DmEnums_5e870c41-1496-48ff-bddd-f01a2f9e36e6.xml, _D3DKMDT_GDISURFACETYPE, d3dkmdt/D3DKMDT_GDISURFACETYPE, d3dkmdt/D3DKMDT_GDISURFACE_EXISTINGSYSMEM, d3dkmdt/D3DKMDT_GDISURFACE_INVALID, d3dkmdt/D3DKMDT_GDISURFACE_LOOKUPTABLE, d3dkmdt/D3DKMDT_GDISURFACE_STAGING, d3dkmdt/D3DKMDT_GDISURFACE_STAGING_CPUVISIBLE, d3dkmdt/D3DKMDT_GDISURFACE_TEXTURE, d3dkmdt/D3DKMDT_GDISURFACE_TEXTURE_CPUVISIBLE, d3dkmdt/D3DKMDT_GDISURFACE_TEXTURE_CPUVISIBLE_CROSSADAPTER, d3dkmdt/D3DKMDT_GDISURFACE_TEXTURE_CROSSADAPTER, display.d3dkmdt_gdisurfacetype
 req.header: d3dkmdt.h
-req.include-header: D3dkmdt.h
+req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows 7
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmdt.h
 api_name:
+ - _D3DKMDT_GDISURFACETYPE
  - D3DKMDT_GDISURFACETYPE
 ---
 
@@ -226,3 +226,4 @@ Supported starting with Windows 8.1.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_renderkm_command">DXGK_RENDERKM_COMMAND</a>
+

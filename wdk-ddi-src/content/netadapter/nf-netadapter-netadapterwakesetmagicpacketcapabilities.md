@@ -3,8 +3,7 @@ UID: NF:netadapter.NetAdapterWakeSetMagicPacketCapabilities
 title: NetAdapterWakeSetMagicPacketCapabilities function (netadapter.h)
 description: The NetAdapterWakeSetMagicPacketCapabilities function sets a net adapter's magic packet wake on LAN (WoL) capabilities.
 tech.root: netvista
-ms.assetid: 43c226cd-11a2-4250-95d3-be9e2986acc2
-ms.date: 10/25/2019
+ms.date: 03/30/2022
 keywords: ["NetAdapterWakeSetMagicPacketCapabilities function"]
 ms.keywords: NetAdapterWakeSetMagicPacketCapabilities
 req.header: netadapter.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: netadaptercxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -37,8 +36,6 @@ api_location:
  - netadaptercxstub.lib
 api_name:
  - NetAdapterWakeSetMagicPacketCapabilities
-product:
- - Windows
 ---
 
 # NetAdapterWakeSetMagicPacketCapabilities function
@@ -50,17 +47,14 @@ The **NetAdapterWakeSetMagicPacketCapabilities** function sets a net adapter's m
 
 ## -parameters
 
-### -param Adapter
+### -param Adapter [_In_]
 
 A handle to a NETADAPTER object that the client driver obtained from a previous call to [**NetAdapterCreate**](../netadapter/nf-netadapter-netadaptercreate.md).
 
-### -param Capabilities
+### -param Capabilities [_In_]
 
 A pointer to a client driver-allocated and initialized [**NET_ADAPTER_WAKE_MAGIC_PACKET_CAPABILITIES**](../netadapter/ns-netadapter-_net_adapter_wake_magic_packet_capabilities.md) structure.
 
-## -returns
-
-This function does not return a value.
 
 ## -remarks
 

@@ -3,8 +3,7 @@ UID: NS:d3d10umddi.D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING
 title: D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING (d3d10umddi.h)
 description: D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING describes the details of a video decoder downsampling operation.
 old-location: display\d3dwddm2_0ddi_video_capability_decoder_downsampling.htm
-ms.assetid: 8D12F2AC-2A64-4FEF-813C-15899FBCA108
-ms.date: 05/10/2018
+ms.date: 12/09/2022
 keywords: ["D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING structure"]
 ms.keywords: D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING, D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING structure [Display Devices], d3d10umddi/D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING, display.d3dwddm2_0ddi_video_capability_decoder_downsampling
 req.header: d3d10umddi.h
@@ -43,59 +42,52 @@ api_name:
 
 # D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING structure
 
-
 ## -description
 
-<b>D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING</b> describes the details of a video decoder downsampling operation.
+**D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING** describes the details of a video decoder downsampling operation.
 
 ## -struct-fields
 
-### -field pInputDesc
+### -field pInputDesc [in]
 
-[in] Contains the decode profile used and the resolution and format of the reference frames.  This is the resolution/format to be downsampled (e.g. 4K, DXGI_FORMAT_P010).
+Contains the decode profile used and the resolution and format of the reference frames.  This is the resolution/format to be downsampled (e.g. 4K, DXGI_FORMAT_P010).
 
-### -field InputColorSpace
+### -field InputColorSpace [in]
 
-[in] Contains the color space information of the reference frame data.
+Contains the color space information of the reference frame data.
 
-### -field pInputConfig
+### -field pInputConfig [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_video_decoder_config">D3D11_1DDI_VIDEO_DECODER_CONFIG</a> structure that contains the configuration data associated with the decode profile .
+A [**D3D11_1DDI_VIDEO_DECODER_CONFIG**](ns-d3d10umddi-d3d11_1ddi_video_decoder_config.md) structure that contains the configuration data associated with the decode profile .
 
-### -field pFrameRate
+### -field pFrameRate [in]
 
-[in] Contains the frame rate of the video content.
+Contains the frame rate of the video content.
 
-### -field pOutputDesc
+### -field pOutputDesc [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_video_decoder_desc">D3D11_1DDI_VIDEO_DECODER_DESC</a> structure that contains the resolution and the format of the display frames.  This is the destination resolution and format of the down sample operation.
+A [**D3D11_1DDI_VIDEO_DECODER_DESC**](ns-d3d10umddi-d3d11_1ddi_video_decoder_desc.md) structure that contains the resolution and the format of the display frames.  This is the destination resolution and format of the down sample operation.
 
+The decode profile (**Guid**) member of **pOutputDesc** can be ignored.
 
+### -field OutputColorSpace [in]
 
-<div class="alert"><b>Note</b>  The decode profile (<b>Guid</b>) member of <b>pOutputDesc</b> can be ignored.
-</div>
-<div> </div>
+Contains the color space information of the display frame data.
 
-### -field OutputColorSpace
+### -field Supported [out]
 
-[in] Contains the color space information of the display frame data.
+The driver sets this to **TRUE** if the requested down sampling is supported.  Otherwise, the driver should set this to **FALSE**.
 
-### -field Supported
+### -field RealTime [out]
 
-[out] The driver sets this to <b>TRUE</b> if the requested down sampling is supported.  Otherwise, the driver should set this to <b>FALSE</b>.
-
-### -field RealTime
-
-[out] The driver sets this to <b>TRUE</b> if the requested down sampling is supported and the resulting decode operations can occur in real-time.  Otherwise, the driver should set this to <b>FALSE</b>.
+The driver sets this to **TRUE** if the requested down sampling is supported and the resulting decode operations can occur in real-time.  Otherwise, the driver should set this to **FALSE**.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_video_decoder_config">D3D11_1DDI_VIDEO_DECODER_CONFIG</a>
+[**D3DWDDM2_0DDI_VIDEO_CAPABILITY_QUERY**](ne-d3d10umddi-d3dwddm2_0ddi_video_capability_query.md)
 
+[**D3D11_1DDI_VIDEO_DECODER_CONFIG**](ns-d3d10umddi-d3d11_1ddi_video_decoder_config.md)
 
+[**D3D11_1DDI_VIDEO_DECODER_DESC**](ns-d3d10umddi-d3d11_1ddi_video_decoder_desc.md)
 
-<a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_video_decoder_desc">D3D11_1DDI_VIDEO_DECODER_DESC</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-d3dddi_color_space_type">D3DDDI_COLOR_SPACE_TYPE</a>
+[**D3DDDI_COLOR_SPACE_TYPE**](../d3dukmdt/ne-d3dukmdt-d3dddi_color_space_type.md)

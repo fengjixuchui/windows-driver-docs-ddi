@@ -4,7 +4,6 @@ title: IWDTFPNPAction2::EDTTryStopDevice (wdtfpnpaction.h)
 description: Attempts to send an IRP_MN_STOP_DEVICE event to the target device.
 old-location: dtf\iwdtfpnpaction2_edttrystopdevice.htm
 tech.root: dtf
-ms.assetid: 6a10f86e-163d-4307-b830-5c90e5cb1c45
 ms.date: 04/04/2018
 keywords: ["IWDTFPNPAction2::EDTTryStopDevice"]
 ms.keywords: EDTTryStopDevice, EDTTryStopDevice method [Windows Device Testing Framework], EDTTryStopDevice method [Windows Device Testing Framework],IWDTFPNPAction2 interface, IWDTFPNPAction2 interface [Windows Device Testing Framework],EDTTryStopDevice method, IWDTFPNPAction2.EDTTryStopDevice, IWDTFPNPAction2::EDTTryStopDevice, Microsoft.WDTF.IWDTFPNPAction2.EDTTryStopDevice, Microsoft::WDTF::IWDTFPNPAction2::EDTTryStopDevice, dtf.iwdtfpnpaction2_edttrystopdevice, wdtfpnpaction/IWDTFPNPAction2::EDTTryStopDevice
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTFDriverPNPAction.Interop.dll
 api_name:
- - IWDTFPNPAction2.EDTTryStopDevice
+ - IWDTFPNPAction2::EDTTryStopDevice
 ---
 
 # IWDTFPNPAction2::EDTTryStopDevice
@@ -50,9 +49,9 @@ Attempts to send an IRP_MN_STOP_DEVICE event to the target device.
 
 ## -parameters
 
-### -param pbSuccess 
+### -param pbSuccess [out, retval]
 
-[out, retval]
+
 True if the operation succeeds; otherwise, false.
 
 ## -returns
@@ -80,3 +79,4 @@ which does consume hardware resources. For example, if your device is a USB mous
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtfpnpaction/nn-wdtfpnpaction-iwdtfpnpaction2">IWDTFPNPAction2</a>
+

@@ -4,7 +4,6 @@ title: _WDF_IO_TARGET_PURGE_IO_ACTION (wdfiotarget.h)
 description: The WDF_IO_TARGET_PURGE_IO_ACTION enumeration identifies the actions that the framework can take when a driver calls WdfIoTargetPurge to purge an I/O target.
 old-location: wdf\wdf_io_target_purge_io_action.htm
 tech.root: wdf
-ms.assetid: E282976A-4143-468C-B944-FBBAD5BBA388
 ms.date: 02/26/2018
 keywords: ["WDF_IO_TARGET_PURGE_IO_ACTION enumeration"]
 ms.keywords: WDF_IO_TARGET_PURGE_IO_ACTION, WDF_IO_TARGET_PURGE_IO_ACTION enumeration, WdfIoTargetPurgeIo, WdfIoTargetPurgeIoAndWait, WdfIoTargetPurgeIoUndefined, _WDF_IO_TARGET_PURGE_IO_ACTION, kmdf.wdf_io_target_purge_io_action, wdf.wdf_io_target_purge_io_action, wdfiotarget/WDF_IO_TARGET_PURGE_IO_ACTION, wdfiotarget/WdfIoTargetPurgeIo, wdfiotarget/WdfIoTargetPurgeIoAndWait, wdfiotarget/WdfIoTargetPurgeIoUndefined
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfiotarget.h
 api_name:
+ - _WDF_IO_TARGET_PURGE_IO_ACTION
  - WDF_IO_TARGET_PURGE_IO_ACTION
 ---
 
@@ -56,15 +56,15 @@ api_name:
 
 ## -enum-fields
 
-### -field WdfIoTargetPurgeIoUndefined
+### -field WdfIoTargetPurgeIoUndefined:0
 
 Reserved for system use.
 
-### -field WdfIoTargetPurgeIoAndWait
+### -field WdfIoTargetPurgeIoAndWait:1
 
 The framework attempts to cancel all of the I/O requests in the target's queue, and waits until all delivered requests are completed or canceled, before <a href="/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetpurge">WdfIoTargetPurge</a> returns. If the framework receives additional requests for the queue, it completes them with a completion status value of STATUS_INVALID_DEVICE_STATE.
 
-### -field WdfIoTargetPurgeIo
+### -field WdfIoTargetPurgeIo:2
 
 The framework attempts to cancel all of the target queue's I/O requests, before <a href="/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetpurge">WdfIoTargetPurge</a> returns.
 
@@ -81,3 +81,4 @@ If your driver specifies the <b>WdfIoTargetPurgeIoAndWait</b> flag, the driver m
 
 
 <a href="/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetpurge">WdfIoTargetPurge</a>
+

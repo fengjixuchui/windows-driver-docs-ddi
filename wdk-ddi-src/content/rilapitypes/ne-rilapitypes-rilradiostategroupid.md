@@ -1,11 +1,10 @@
 ---
 UID: NE:rilapitypes.RILRADIOSTATEGROUPID
 title: RILRADIOSTATEGROUPID (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this enumeration in your code. Microsoft reserves the RILRADIOSTATEGROUPID enumeration for internal use only."
 old-location: netvista\rilradiostategroupid.htm
 tech.root: netvista
-ms.assetid: 147eb9f7-da0c-41c2-83b3-766164dbc905
-ms.date: 05/02/2018
+ms.date: 12/10/2021
 keywords: ["RILRADIOSTATEGROUPID enumeration"]
 ms.keywords: RILRADIOSTATEGROUPID, RILRADIOSTATEGROUPID enumeration [Network Drivers Starting with Windows Vista], netvista.rilradiostategroupid, ntddrilapitypes/RILRADIOSTATEGROUPID
 req.header: rilapitypes.h
@@ -50,3 +49,4 @@ This topic supports the Windows driver infrastructure and is not intended to be 
 
 ## -enum-fields
 
+### -field RIL_RADIOSTATE_GROUP_UNSPECIFIED

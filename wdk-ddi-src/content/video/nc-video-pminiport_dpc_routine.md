@@ -4,7 +4,6 @@ title: PMINIPORT_DPC_ROUTINE (video.h)
 description: The HwVidDpcRoutine function is a miniport driver-implemented callback that is called when a queued DPC gets scheduled.
 old-location: display\hwviddpcroutine.htm
 tech.root: display
-ms.assetid: d4b443a2-3665-4e7c-b84a-5388a8fe8681
 ms.date: 05/10/2018
 keywords: ["PMINIPORT_DPC_ROUTINE callback function"]
 ms.keywords: HwVidDpcRoutine, HwVidDpcRoutine callback function [Display Devices], PMINIPORT_DPC_ROUTINE, PMINIPORT_DPC_ROUTINE callback, VideoMiniport_Functions_5d605867-89d7-44a9-b08b-c49ffaa90244.xml, display.hwviddpcroutine, video/HwVidDpcRoutine
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - video.h
 api_name:
- - HwVidDpcRoutine
+ - PMINIPORT_DPC_ROUTINE
 ---
 
 # PMINIPORT_DPC_ROUTINE callback function
@@ -50,14 +49,14 @@ api_name:
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's hardware device extension. For more information, see <a href="/windows-hardware/drivers/kernel/device-extensions">Device Extensions</a>.
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Contains any miniport driver-supplied data this function may need. <i>Context</i> can be <b>NULL</b> if the DPC implementation does not require additional information.
 
 ## -remarks
@@ -69,3 +68,4 @@ Because <i>HwVidDpcRoutine </i>is called at DISPATCH_LEVEL, it must not manipula
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportqueuedpc">VideoPortQueueDpc</a>
+

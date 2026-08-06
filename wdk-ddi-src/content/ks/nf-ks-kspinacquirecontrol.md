@@ -4,7 +4,6 @@ title: KsPinAcquireControl function (ks.h)
 description: The KsPinAcquireControl function acquires the control mutex for the AVStream pin specified by Pin.
 old-location: stream\kspinacquirecontrol.htm
 tech.root: stream
-ms.assetid: 05ff1829-8305-4bc4-be22-233d391a5dc0
 ms.date: 04/23/2018
 keywords: ["KsPinAcquireControl function"]
 ms.keywords: KsPinAcquireControl, KsPinAcquireControl function [Streaming Media Devices], avfunc_fd5d1466-6403-42cf-aab7-d044014c4abf.xml, ks/KsPinAcquireControl, stream.kspinacquirecontrol
@@ -50,9 +49,9 @@ The<b> KsPinAcquireControl</b> function acquires the control mutex for the AVStr
 
 ## -parameters
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a> for which to acquire the control mutex.
 
 ## -remarks

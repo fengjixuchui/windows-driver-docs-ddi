@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_SETUNORDEREDACCESSVIEWS
 title: PFND3D11DDI_SETUNORDEREDACCESSVIEWS (d3d10umddi.h)
 description: The CsSetUnorderedAccessViews function sets unordered access view (UAV) objects for a compute shader.
 old-location: display\cssetunorderedaccessviews.htm
-ms.assetid: ab8c529b-19e2-4a2a-af68-0e3998829788
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_SETUNORDEREDACCESSVIEWS callback function"]
 ms.keywords: CsSetUnorderedAccessViews, CsSetUnorderedAccessViews callback function [Display Devices], PFND3D11DDI_SETUNORDEREDACCESSVIEWS, PFND3D11DDI_SETUNORDEREDACCESSVIEWS callback, UserModeDisplayDriverDx11_Functions_2e3d1f2b-5113-4cbe-afa8-11f4caf88859.xml, d3d10umddi/CsSetUnorderedAccessViews, display.cssetunorderedaccessviews
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CsSetUnorderedAccessViews
+ - PFND3D11DDI_SETUNORDEREDACCESSVIEWS
 ---
 
 # PFND3D11DDI_SETUNORDEREDACCESSVIEWS callback function
@@ -50,7 +49,7 @@ The <i>CsSetUnorderedAccessViews</i> function sets unordered access view (UAV) o
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
@@ -60,18 +59,18 @@ A handle to the display device (graphics context).
 
 The offset to the first view to set.
 
-### -param NumViews 
+### -param NumViews [in]
 
-[in]
+
 The total number of views to set.
 
-### -param Arg4
+### -param unnamedParam4
 
 *pUAVInitialCounts* [in]
 
 An array of append and consume buffer offsets. A value of -1 indicates that the current offset should be kept. Any other values set the hidden counter for that appendable and consumable UAV. <i>pUAVInitialCounts</i> is only relevant for UAVs  of the <i>phUnorderedAccessView</i> array that were created with either <b>D3D11_DDI_BUFFER_UAV_FLAG_APPEND</b>  or <b>D3D11_DDI_BUFFER_UAV_FLAG_COUNTER</b> specified in the <b>Flags</b> member of the <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11ddiarg_buffer_unorderedaccessview">D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW</a> structure when the UAV was created; otherwise, the argument is ignored.
 
-### -param Arg5
+### -param unnamedParam5
 
 *phUnorderedAccessView* [in]
 
@@ -96,3 +95,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

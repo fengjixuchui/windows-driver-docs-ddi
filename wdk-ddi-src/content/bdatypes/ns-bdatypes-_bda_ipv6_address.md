@@ -1,10 +1,9 @@
 ---
 UID: NS:bdatypes._BDA_IPv6_ADDRESS
 title: _BDA_IPv6_ADDRESS (bdatypes.h)
-description: 
+description: "Learn more about: _BDA_IPv6_ADDRESS structure"
 old-location: stream\bda_ipv6_address.htm
 tech.root: stream
-ms.assetid: 50D52380-1FBE-4046-A7DC-8415501D7FA6
 ms.date: 04/23/2018
 keywords: ["BDA_IPv6_ADDRESS structure"]
 ms.keywords: "*PBDA_IPv6_ADDRESS, BDA_IPv6_ADDRESS, BDA_IPv6_ADDRESS structure [Streaming Media Devices], PBDA_IPv6_ADDRESS, PBDA_IPv6_ADDRESS structure pointer [Streaming Media Devices], _BDA_IPv6_ADDRESS, bdatypes/BDA_IPv6_ADDRESS, bdatypes/PBDA_IPv6_ADDRESS, stream.bda_ipv6_address"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Bdatypes.h
 api_name:
+ - _BDA_IPv6_ADDRESS
+ - PBDA_IPv6_ADDRESS
  - BDA_IPv6_ADDRESS
 ---
 

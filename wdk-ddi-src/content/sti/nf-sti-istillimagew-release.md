@@ -4,7 +4,6 @@ title: IStillImageW::Release (sti.h)
 description: The IStillImage::Release method closes the instance of the COM object that was created by a previous call to IStillImage::StiCreateInstance, and removes access to the object's interface.
 old-location: image\istillimage_release.htm
 tech.root: image
-ms.assetid: 3c595531-a1b0-48a5-867c-f1e6558e46ff
 ms.date: 05/03/2018
 keywords: ["IStillImageW::Release"]
 ms.keywords: IStillImageW interface [Imaging Devices],Release method, IStillImageW.Release, IStillImageW::Release, Release, Release method [Imaging Devices], Release method [Imaging Devices],IStillImageW interface, image.istillimage_release, sti/IStillImageW::Release, stifnc_e1ab4835-ed24-4c92-a879-f57061656825.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Sti.h
 api_name:
- - IStillImageW.Release
+ - IStillImageW::Release
 ---
 
 # IStillImageW::Release
@@ -55,3 +54,4 @@ If the operation succeeds, the method returns S_OK. Otherwise, it returns one of
 ## -remarks
 
 Before calling <b>IStillImage::Release</b>, clients of the <b>IStillImage</b> COM interface must call <a href="/previous-versions/windows/hardware/drivers/ff543804(v=vs.85)">IStillImage::StiCreateInstance</a> to obtain an <b>IStillImage</b> interface pointer.
+

@@ -4,7 +4,6 @@ title: _D3DDDIARG_CREATECRYPTOSESSION (d3dumddi.h)
 description: The D3DDDIARG_CREATECRYPTOSESSION structure describes an encryption session to create.
 old-location: display\d3dddiarg_createcryptosession.htm
 tech.root: display
-ms.assetid: 45bc4d3f-d573-4a11-8d25-160cb8f233f4
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_CREATECRYPTOSESSION structure"]
 ms.keywords: D3DDDIARG_CREATECRYPTOSESSION, D3DDDIARG_CREATECRYPTOSESSION structure [Display Devices], UMDisplayDriver_param_Structs_39cf7246-689d-47f2-99f8-dcc3b2018958.xml, _D3DDDIARG_CREATECRYPTOSESSION, d3dumddi/D3DDDIARG_CREATECRYPTOSESSION, display.d3dddiarg_createcryptosession
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_CREATECRYPTOSESSION
  - D3DDDIARG_CREATECRYPTOSESSION
 ---
 
@@ -52,9 +52,9 @@ The D3DDDIARG_CREATECRYPTOSESSION structure describes an encryption session to c
 
 ## -struct-fields
 
-### -field CryptoType
+### -field CryptoType [in]
 
-[in] A GUID that indicates the encryption type, which the driver uses for the encryption session that the driver's <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createcryptosession">CreateCryptoSession</a> function creates. The GUID can be one of the following:
+A GUID that indicates the encryption type, which the driver uses for the encryption session that the driver's <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createcryptosession">CreateCryptoSession</a> function creates. The GUID can be one of the following:
 
 
 
@@ -74,10 +74,11 @@ A GUID that indicates a proprietary encryption algorithm.
 
  [in] A GUID that indicates the DirectX Video Acceleration (DirectX VA) decode profile that the driver uses for the encryption session that the driver's <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createcryptosession">CreateCryptoSession</a> function creates. The driver uses this decode profile in conjunction with the encryption type that the <b>CryptoType</b> member specifies.
 
-### -field hCryptoSession
+### -field hCryptoSession [in/out]
 
-[in/out] A handle to the encryption session. The user-mode display driver must set this handle to a value that the Microsoft Direct3D runtime can use to identify the encryption session in subsequent calls.
+A handle to the encryption session. The user-mode display driver must set this handle to a value that the Microsoft Direct3D runtime can use to identify the encryption session in subsequent calls.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createcryptosession">CreateCryptoSession</a>
+

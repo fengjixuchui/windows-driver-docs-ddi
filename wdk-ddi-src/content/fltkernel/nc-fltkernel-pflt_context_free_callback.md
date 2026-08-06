@@ -4,7 +4,6 @@ title: PFLT_CONTEXT_FREE_CALLBACK (fltkernel.h)
 description: A minifilter can register a routine of type PFLT_CONTEXT_FREE_CALLBACK as the minifilter driver's ContextFreeCallback routine.
 old-location: ifsk\pflt_context_free_callback.htm
 tech.root: ifsk
-ms.assetid: 11c397c2-51a5-4acd-8029-cd002f990366
 ms.date: 04/16/2018
 keywords: ["PFLT_CONTEXT_FREE_CALLBACK callback function"]
 ms.keywords: ContextFreeCallback, ContextFreeCallback routine [Installable File System Drivers], FltCallbacks_c7e2b5e1-5666-431c-9032-59914ef23336.xml, PFLT_CONTEXT_FREE_CALLBACK, fltkernel/ContextFreeCallback, ifsk.pflt_context_free_callback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - fltkernel.h
 api_name:
- - ContextFreeCallback
+ - PFLT_CONTEXT_FREE_CALLBACK
 ---
 
 # PFLT_CONTEXT_FREE_CALLBACK callback function
@@ -50,14 +49,14 @@ A minifilter can register a routine of type PFLT_CONTEXT_FREE_CALLBACK as the mi
 
 ## -parameters
 
-### -param Pool 
+### -param Pool [in]
 
-[in]
+
 A pointer to the context to be freed.
 
-### -param ContextType 
+### -param ContextType [in]
 
-[in]
+
 The type of context. This parameter is required and must be one of the following values: 
 
 FLT_FILE_CONTEXT (starting with  Windows Vista)
@@ -99,3 +98,4 @@ For more information about context registration, see the reference entry for <a 
 
 
 <a href="/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_context_cleanup_callback">PFLT_CONTEXT_CLEANUP_CALLBACK</a>
+

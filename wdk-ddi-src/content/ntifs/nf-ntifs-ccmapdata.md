@@ -4,7 +4,6 @@ title: CcMapData function (ntifs.h)
 description: The CcMapData routine maps a specified byte range of a cached file to a buffer in memory.
 old-location: ifsk\ccmapdata.htm
 tech.root: ifsk
-ms.assetid: dccc79ba-68d9-41cf-b86d-37adb83558a0
 ms.date: 04/16/2018
 keywords: ["CcMapData function"]
 ms.keywords: CcMapData, CcMapData routine [Installable File System Drivers], ccref_1eb788ce-2fb2-40b4-b696-14609a0c8556.xml, ifsk.ccmapdata, ntifs/CcMapData
@@ -50,24 +49,24 @@ The <b>CcMapData</b> routine maps a specified byte range of a cached file to a b
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to a file object for the file whose data is to be mapped for read access.
 
-### -param FileOffset 
+### -param FileOffset [in]
 
-[in]
+
 Pointer to a variable that specifies the starting byte offset within the cached file where the desired data resides.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Length of desired data in bytes.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Bitmask of flags specifying how the mapping operation is to be performed. This is a bitwise OR combination of one or more of the following values: 
 
 <table>
@@ -108,14 +107,14 @@ Only pages that are already resident in memory are to be mapped.
 
 Set to <b>TRUE</b> if the caller can be put into a wait state until the data has been mapped, <b>FALSE</b> otherwise.
 
-### -param Bcb 
+### -param Bcb [out]
 
-[out]
+
 On the first call this returns a pointer to a buffer control block (BCB) structure. This pointer must be supplied as input on all subsequent calls, for this buffer.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 Pointer to a buffer containing the mapped data.
 
 ## -returns

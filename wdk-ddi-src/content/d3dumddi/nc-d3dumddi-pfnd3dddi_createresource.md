@@ -4,7 +4,6 @@ title: PFND3DDDI_CREATERESOURCE (d3dumddi.h)
 description: The CreateResource function creates a resource.
 old-location: display\createresource.htm
 tech.root: display
-ms.assetid: 5b74c989-1a62-4415-a19a-dd0ba2fcff83
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CREATERESOURCE callback function"]
 ms.keywords: CreateResource, CreateResource callback function [Display Devices], PFND3DDDI_CREATERESOURCE, PFND3DDDI_CREATERESOURCE callback, UserModeDisplayDriver_Functions_c925b8ed-3e7f-4a56-a4b0-a3c8e2ba8ebf.xml, d3dumddi/CreateResource, display.createresource
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - CreateResource
-product:
- - Windows
+ - PFND3DDDI_CREATERESOURCE
 ---
 
 # PFND3DDDI_CREATERESOURCE callback function
@@ -56,7 +53,7 @@ The <b>CreateResource</b> function creates a resource.
 
 A handle to the display device (graphics context) that is used to create the resource.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pResource* [in, out]
 
@@ -183,3 +180,4 @@ If the runtime requests to create a vertex or index buffer and if the user-mode 
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_deallocatecb">pfnDeallocateCb</a>
+

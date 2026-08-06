@@ -4,7 +4,6 @@ title: IWDTFSimpleIOEx2::Close (wdtfinterfaces.h)
 description: Closes the device.
 old-location: dtf\iwdtfsimpleioex2_close.htm
 tech.root: dtf
-ms.assetid: e8061408-2efe-4620-bc57-4cf0c3e41874
 ms.date: 04/04/2018
 keywords: ["IWDTFSimpleIOEx2::Close"]
 ms.keywords: Close, Close method [Windows Device Testing Framework], Close method [Windows Device Testing Framework],IWDTFSimpleIOEx2 interface, IWDTFSimpleIOEx2 interface [Windows Device Testing Framework],Close method, IWDTFSimpleIOEx2.Close, IWDTFSimpleIOEx2::Close, Microsoft.WDTF.IWDTFSimpleIOEx2.Close, Microsoft::WDTF::IWDTFSimpleIOEx2::Close, dtf.iwdtfsimpleioex2_close, wdtfinterfaces/IWDTFSimpleIOEx2::Close
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTFInterfaces.Interop.dll
 api_name:
- - IWDTFSimpleIOEx2.Close
+ - IWDTFSimpleIOEx2::Close
 ---
 
 # IWDTFSimpleIOEx2::Close
@@ -50,9 +49,9 @@ Closes the device.
 
 ## -parameters
 
-### -param pResult 
+### -param pResult [out, retval]
 
-[out, retval]
+
 True if the operation succeeds; otherwise, false.
 
 ## -returns
@@ -67,3 +66,4 @@ the <a href="/windows-hardware/drivers/ddi/wdtfinterfaces/nf-wdtfinterfaces-iwdt
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtfinterfaces/nn-wdtfinterfaces-iwdtfsimpleioex2">IWDTFSimpleIOEx2</a>
+

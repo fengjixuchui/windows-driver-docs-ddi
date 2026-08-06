@@ -4,7 +4,6 @@ title: _WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS (wdfdevice.h)
 description: The WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS enumeration type defines flags that the driver can specify when it calls WdfDeviceWdmDispatchIrpToIoQueue.
 old-location: wdf\wdf_dispatch_irp_to_io_queue_flags.htm
 tech.root: wdf
-ms.assetid: 6A205F51-990F-4721-B4C7-B96E944D2A54
 ms.date: 02/26/2018
 keywords: ["WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS enumeration"]
 ms.keywords: WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS, WDF_DISPATCH_IRP_TO_IO_QUEUE_INVOKE_INCALLERCTX_CALLBACK, WDF_DISPATCH_IRP_TO_IO_QUEUE_NO_FLAGS, WDF_DISPATCH_IRP_TO_IO_QUEUE_PREPROCESSED_IRP, WDF_FORWARD_IRP_TO_IO_QUEUE_FLAGS, WDF_FORWARD_IRP_TO_IO_QUEUE_FLAGS enumeration, _WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS, kmdf.wdf_dispatch_irp_to_io_queue_flags, kmdf.wdf_forward_irp_to_io_queue_flags, kmdf.wdf_forward_irp_to_io_queue_options_flags, wdf.wdf_dispatch_irp_to_io_queue_flags, wdfdevice/WDF_DISPATCH_IRP_TO_IO_QUEUE_INVOKE_INCALLERCTX_CALLBACK, wdfdevice/WDF_DISPATCH_IRP_TO_IO_QUEUE_NO_FLAGS, wdfdevice/WDF_DISPATCH_IRP_TO_IO_QUEUE_PREPROCESSED_IRP, wdfdevice/WDF_FORWARD_IRP_TO_IO_QUEUE_FLAGS
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfdevice.h
 api_name:
+ - _WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS
  - WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS
 ---
 
@@ -54,15 +54,15 @@ The <b>WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS</b> enumeration type defines flags tha
 
 ## -enum-fields
 
-### -field WDF_DISPATCH_IRP_TO_IO_QUEUE_NO_FLAGS
+### -field WDF_DISPATCH_IRP_TO_IO_QUEUE_NO_FLAGS:0x00000000
 
 No flags are set.
 
-### -field WDF_DISPATCH_IRP_TO_IO_QUEUE_INVOKE_INCALLERCTX_CALLBACK
+### -field WDF_DISPATCH_IRP_TO_IO_QUEUE_INVOKE_INCALLERCTX_CALLBACK:0x00000001
 
 Specifies that the framework should call the <a href="/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_io_in_caller_context">EvtIoInCallerContext</a> callback function before inserting the request into the queue.
 
-### -field WDF_DISPATCH_IRP_TO_IO_QUEUE_PREPROCESSED_IRP
+### -field WDF_DISPATCH_IRP_TO_IO_QUEUE_PREPROCESSED_IRP:0x00000002
 
 Specifies that the IRP was preprocessed by the driver's <a href="/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdfdevice_wdm_irp_preprocess">EvtDeviceWdmIrpPreprocess</a> callback function.  Accordingly, the framework adjusts the IRP's stack location to the next entry before inserting it into the queue.
 
@@ -77,3 +77,4 @@ Specifies that the IRP was preprocessed by the driver's <a href="/windows-hardwa
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicewdmdispatchirptoioqueue">WdfDeviceWdmDispatchIrpToIoQueue</a>
+

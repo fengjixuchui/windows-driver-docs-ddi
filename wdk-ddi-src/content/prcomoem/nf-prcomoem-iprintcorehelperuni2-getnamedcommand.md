@@ -4,7 +4,6 @@ title: IPrintCoreHelperUni2::GetNamedCommand (prcomoem.h)
 description: The GetNamedCommand method returns the specified command.
 old-location: print\iprintcorehelperuni2_getnamedcommand.htm
 tech.root: print
-ms.assetid: A9C9C69E-8C89-4131-996F-A48AD9E9D244
 ms.date: 04/20/2018
 keywords: ["IPrintCoreHelperUni2::GetNamedCommand"]
 ms.keywords: GetNamedCommand, GetNamedCommand method [Print Devices], GetNamedCommand method [Print Devices],IPrintCoreHelperUni2 interface, IPrintCoreHelperUni2 interface [Print Devices],GetNamedCommand method, IPrintCoreHelperUni2.GetNamedCommand, IPrintCoreHelperUni2::GetNamedCommand, prcomoem/IPrintCoreHelperUni2::GetNamedCommand, print.iprintcorehelperuni2_getnamedcommand
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintCoreHelperUni2.GetNamedCommand
+ - IPrintCoreHelperUni2::GetNamedCommand
 ---
 
 # IPrintCoreHelperUni2::GetNamedCommand
@@ -50,19 +49,19 @@ The <b>GetNamedCommand</b> method returns the specified command.
 
 ## -parameters
 
-### -param pDevmode 
+### -param pDevmode [in]
 
-[in]
+
 A pointer to a DEVMODE structure.
 
-### -param cbSize 
+### -param cbSize [in]
 
-[in]
+
 The number of bytes in <i>pDevmode</i>, not the number of bytes written.
 
-### -param pszCommandName 
+### -param pszCommandName [in]
 
-[in]
+
 The command name. This parameter accepts standard command names from the GPD, except for those that require an *Order attribute. Those six sections of ordered command sequences are accessible via the following special command names:
 
 <ul>
@@ -74,14 +73,14 @@ The command name. This parameter accepts standard command names from the GPD, ex
 <li>L"SectionJobFinish"</li>
 </ul>
 
-### -param ppCommandBytes 
+### -param ppCommandBytes [out]
 
-[out]
+
 The output buffer. This buffer does not need to be freed by the caller.
 
-### -param pcbCommandSize 
+### -param pcbCommandSize [out]
 
-[out]
+
 The size of the output buffer.
 
 ## -returns
@@ -95,3 +94,4 @@ The <b>GetNamedCommand</b> method will not return commands containing references
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintcorehelperuni2">IPrintCoreHelperUni2</a>
+

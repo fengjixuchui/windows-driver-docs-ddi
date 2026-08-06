@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.IoSetStartIoAttributes
 title: IoSetStartIoAttributes function (wdm.h)
-description: The IoSetStartIoAttributes routine sets attributes for the driver's StartIo routine.
+description: The IoSetStartIoAttributes routine in wdm.h sets attributes for the driver's StartIo routine.
 old-location: kernel\iosetstartioattributes.htm
 tech.root: kernel
-ms.assetid: 47ae3578-231c-49c8-a851-9f165db27fb1
 ms.date: 04/30/2018
 keywords: ["IoSetStartIoAttributes function"]
 ms.keywords: IoSetStartIoAttributes, IoSetStartIoAttributes routine [Kernel-Mode Driver Architecture], k104_cf8613cc-f891-45f7-816c-224b3294f8dd.xml, kernel.iosetstartioattributes, wdm/IoSetStartIoAttributes
@@ -50,19 +49,19 @@ The <b>IoSetStartIoAttributes</b> routine sets attributes for the driver's <a hr
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the device object for the driver's device.
 
-### -param DeferredStartIo 
+### -param DeferredStartIo [in]
 
-[in]
+
 If <b>TRUE</b>, the I/O manager will defer any call to the driver's <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_startio">StartIo</a> routine while the driver is already inside the routine. In particular, if the <i>StartIo</i> routine calls <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iostartnextpacket">IoStartNextPacket</a>, the <i>StartIo</i> routine will not be called again until the current invocation completes. The default is <b>FALSE</b>.
 
-### -param NonCancelable 
+### -param NonCancelable [in]
 
-[in]
+
 If <b>TRUE</b>, the IRP cannot be canceled once it has been dequeued by a call to <b>IoStartNextPacket</b>. The default is <b>FALSE</b>. Drivers that set this member to <b>FALSE</b> must synchronize their IRP handling with the cancel spin lock.
 
 ## -see-also

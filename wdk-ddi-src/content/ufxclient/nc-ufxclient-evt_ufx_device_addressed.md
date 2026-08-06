@@ -4,7 +4,6 @@ title: EVT_UFX_DEVICE_ADDRESSED (ufxclient.h)
 description: The client driver's implementation to assign an address on the function controller.
 old-location: buses\evt_ufx_device_addressed.htm
 tech.root: usbref
-ms.assetid: 99120A01-4674-465A-BA75-58F1871BB820
 ms.date: 05/07/2018
 keywords: ["EVT_UFX_DEVICE_ADDRESSED callback function"]
 ms.keywords: EVT_UFX_DEVICE_ADDRESSED, EVT_UFX_DEVICE_ADDRESSED callback, EvtUfxDeviceAddressed, EvtUfxDeviceAddressed callback function [Buses], PFN_UFX_DEVICE_ADDRESSED, PFN_UFX_DEVICE_ADDRESSED callback function pointer [Buses], buses.evt_ufx_device_addressed, ufxclient/EvtUfxDeviceAddressed
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ufxclient.h
 api_name:
- - PFN_UFX_DEVICE_ADDRESSED
+ - EVT_UFX_DEVICE_ADDRESSED
 ---
 
 # EVT_UFX_DEVICE_ADDRESSED callback function
@@ -50,14 +49,14 @@ The client driver's implementation to assign an address on the function controll
 
 ## -parameters
 
-#### - DeviceAddress [in]
-
-New USB device address to assign. 
-
-
-#### - UfxDevice [in]
+### -param unnamedParam1 [in]
 
 The handle to a  USB device object that the client driver received in a previous call to  the <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
+
+
+### -param unnamedParam2 [in]
+
+New USB device address to assign.
 
 ## -remarks
 
@@ -112,7 +111,6 @@ Arguments:
 
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>
@@ -120,3 +118,4 @@ Arguments:
 
 
 <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdeviceeventcomplete">UfxDeviceEventComplete</a>
+

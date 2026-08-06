@@ -4,7 +4,6 @@ title: ScsiPortGetSrb function (srb.h)
 description: The ScsiPortGetSrb routine returns a pointer to an active SCSI request for a particular logical unit.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
 old-location: storage\scsiportgetsrb.htm
 tech.root: storage
-ms.assetid: c8f0e47c-4d06-445f-a6dd-9bd80fc490bc
 ms.date: 03/29/2018
 keywords: ["ScsiPortGetSrb function"]
 ms.keywords: ScsiPortGetSrb, ScsiPortGetSrb routine [Storage Devices], scsiprt_28205a6f-8758-4aed-8fae-94a12c216cf4.xml, srb/ScsiPortGetSrb, storage.scsiportgetsrb
@@ -52,29 +51,29 @@ The <b>ScsiPortGetSrb</b> routine returns a pointer to an active SCSI request fo
 
 ## -parameters
 
-### -param DeviceExtension 
+### -param DeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's per-HBA storage area.
 
-### -param PathId 
+### -param PathId [in]
 
-[in]
+
 Identifies the SCSI bus.
 
-### -param TargetId 
+### -param TargetId [in]
 
-[in]
+
 Identifies the target controller or device on the bus.
 
-### -param Lun 
+### -param Lun [in]
 
-[in]
+
 Identifies the logical unit number of the target device.
 
-### -param QueueTag 
+### -param QueueTag [in]
 
-[in]
+
 Specifies the queue tag if the miniport driver handles tagged requests; SP_UNTAGGED indicates that the request is not tagged.
 
 ## -returns

@@ -4,7 +4,6 @@ title: EVT_SENSOR_DRIVER_SET_DATA_THRESHOLDS (sensorscx.h)
 description: This callback function sets the threshold for one or more data fields associated with a sensor.
 old-location: sensors\evtsensorsetdatathresholds.htm
 tech.root: sensors
-ms.assetid: 297C0F35-8A18-47CF-8040-BA429963AC5F
 ms.date: 05/03/2018
 keywords: ["EVT_SENSOR_DRIVER_SET_DATA_THRESHOLDS callback function"]
 ms.keywords: EVT_SENSOR_DRIVER_SET_DATA_THRESHOLDS, EVT_SENSOR_DRIVER_SET_DATA_THRESHOLDS callback, EvtSensorSetDataThresholds, EvtSensorSetDataThresholds callback function [Sensor Devices], sensors.evtsensorsetdatathresholds, sensorscx/EvtSensorSetDataThresholds
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - SensorsCx.h
 api_name:
- - EvtSensorSetDataThresholds
+ - EVT_SENSOR_DRIVER_SET_DATA_THRESHOLDS
 ---
 
 # EVT_SENSOR_DRIVER_SET_DATA_THRESHOLDS callback function
@@ -50,13 +49,13 @@ This callback function sets the threshold for one or more data fields associated
 
 ## -parameters
 
-### -param Sensor 
+### -param Sensor [in]
 
-[in] A reference to a sensor object.
+A reference to a sensor object.
 
-### -param pThresholds 
+### -param pThresholds [in]
 
-[in] A list of thresholds and their values that are set for the <b>Sensor</b>. For more information, see <a href="/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list">SENSOR_COLLECTION_LIST</a>.
+A list of thresholds and their values that are set for the <b>Sensor</b>. For more information, see <a href="/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list">SENSOR_COLLECTION_LIST</a>.
 
 ## -returns
 
@@ -73,3 +72,4 @@ This function must be implemented by the driver and is called by the class exten
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/sensorsdef/ns-sensorsdef-sensor_collection_list">SENSOR_COLLECTION_LIST</a>
+

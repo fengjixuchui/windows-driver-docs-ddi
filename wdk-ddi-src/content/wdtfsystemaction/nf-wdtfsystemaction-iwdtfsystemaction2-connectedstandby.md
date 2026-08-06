@@ -4,7 +4,6 @@ title: IWDTFSystemAction2::ConnectedStandby (wdtfsystemaction.h)
 description: Puts the system into Connected Standby state and exits Connected Standby state after the desired time has passed. This method only works on a computer that supports Always On Always Connected (AOAC).
 old-location: dtf\iwdtfsystemaction2_connectedstandby.htm
 tech.root: dtf
-ms.assetid: 11d774b1-2af9-453e-b53e-c232d84bcbee
 ms.date: 04/04/2018
 keywords: ["IWDTFSystemAction2::ConnectedStandby"]
 ms.keywords: ConnectedStandby, ConnectedStandby method [Windows Device Testing Framework], ConnectedStandby method [Windows Device Testing Framework],IWDTFSystemAction2 interface, IWDTFSystemAction2 interface [Windows Device Testing Framework],ConnectedStandby method, IWDTFSystemAction2.ConnectedStandby, IWDTFSystemAction2::ConnectedStandby, Microsoft.WDTF.IWDTFSystemAction2.ConnectedStandby, Microsoft::WDTF::IWDTFSystemAction2::ConnectedStandby, dtf.iwdtfsystemaction2_connectedstandby, wdtfsystemaction/IWDTFSystemAction2::ConnectedStandby
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - WDTFSystemAction.Interop.dll
 api_name:
- - IWDTFSystemAction2.ConnectedStandby
+ - IWDTFSystemAction2::ConnectedStandby
 ---
 
 # IWDTFSystemAction2::ConnectedStandby
-
 
 ## -description
 
@@ -52,9 +50,8 @@ Puts the system into Connected Standby state and
 
 ## -parameters
 
-### -param TimeInMs 
+### -param TimeInMs [in]
 
-[in]
 Specifies how much time (in milliseconds) has to pass 
     before exiting Connected Standby.
 
@@ -65,3 +62,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtfsystemaction/nn-wdtfsystemaction-iwdtfsystemaction2">IWDTFSystemAction2</a>
+

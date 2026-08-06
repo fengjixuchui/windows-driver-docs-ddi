@@ -4,7 +4,6 @@ title: IDrmAudioStream::SetContentId (drmk.h)
 description: The SetContentId method sets the DRM content ID and its assigned DRM content rights on a KS audio stream.
 old-location: audio\idrmaudiostream_setcontentid.htm
 tech.root: audio
-ms.assetid: 0e9d13e8-c351-4730-8f00-6c149f824af0
 ms.date: 05/08/2018
 keywords: ["IDrmAudioStream::SetContentId"]
 ms.keywords: IDrmAudioStream interface [Audio Devices],SetContentId method, IDrmAudioStream.SetContentId, IDrmAudioStream::SetContentId, SetContentId, SetContentId method [Audio Devices], SetContentId method [Audio Devices],IDrmAudioStream interface, audio.idrmaudiostream_setcontentid, audmp-routines_66106418-566d-4203-a6d6-faae74a6db13.xml, drmk/IDrmAudioStream::SetContentId
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - drmk.h
 api_name:
- - IDrmAudioStream.SetContentId
+ - IDrmAudioStream::SetContentId
 ---
 
 # IDrmAudioStream::SetContentId
@@ -50,14 +49,14 @@ The <code>SetContentId</code> method sets the DRM content ID and its assigned DR
 
 ## -parameters
 
-### -param ContentId 
+### -param ContentId [in]
 
-[in]
+
 Specifies the DRM content ID. This parameter is an identifier that the DRM system generates at run time to identify DRM-protected content in this stream.
 
-### -param DrmRights 
+### -param DrmRights [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/drmk/ns-drmk-tagdrmrights">DRMRIGHTS</a> structure specifying the rights granted by the content provider to the user for playing and copying DRM-protected content in this stream.
 
 ## -returns
@@ -101,3 +100,4 @@ For more information about using this method, see <a href="/windows-hardware/dri
 
 
 <a href="/windows-hardware/drivers/ddi/drmk/nn-drmk-idrmaudiostream">IDrmAudioStream</a>
+

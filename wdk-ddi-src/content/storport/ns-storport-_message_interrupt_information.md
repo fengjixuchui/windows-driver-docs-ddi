@@ -4,7 +4,6 @@ title: _MESSAGE_INTERRUPT_INFORMATION (storport.h)
 description: The MESSAGE_INTERRUPT_INFORMATION structure describes a message signaled interrupt (MSI).
 old-location: storage\message_interrupt_information.htm
 tech.root: storage
-ms.assetid: 469896b3-3ae0-4edd-9fb0-ee5869633872
 ms.date: 03/29/2018
 keywords: ["MESSAGE_INTERRUPT_INFORMATION structure"]
 ms.keywords: "*PMESSAGE_INTERRUPT_INFORMATION, MESSAGE_INTERRUPT_INFORMATION, MESSAGE_INTERRUPT_INFORMATION structure [Storage Devices], PMESSAGE_INTERRUPT_INFORMATION, PMESSAGE_INTERRUPT_INFORMATION structure pointer [Storage Devices], _MESSAGE_INTERRUPT_INFORMATION, storage.message_interrupt_information, storport/MESSAGE_INTERRUPT_INFORMATION, storport/PMESSAGE_INTERRUPT_INFORMATION, structs-storport_a918acbf-24eb-4112-8bab-bb2ee441064e.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - storport.h
 api_name:
+ - _MESSAGE_INTERRUPT_INFORMATION
+ - PMESSAGE_INTERRUPT_INFORMATION
  - MESSAGE_INTERRUPT_INFORMATION
 ---
 
@@ -85,3 +86,4 @@ Miniport drivers retrieve the MSI information in a <b>MESSAGE_INTERRUPT_INFORMAT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportgetmsiinfo">StorPortGetMSIInfo</a>
+

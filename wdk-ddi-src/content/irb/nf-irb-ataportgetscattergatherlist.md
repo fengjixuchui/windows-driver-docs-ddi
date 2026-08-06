@@ -4,7 +4,6 @@ title: AtaPortGetScatterGatherList function (irb.h)
 description: The AtaPortGetScatterGatherList routine retrieves the scatter/gather list that is associated with this request.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\ataportgetscattergatherlist.htm
 tech.root: storage
-ms.assetid: 11181574-b329-4182-8d17-93d44cb3b839
 ms.date: 03/29/2018
 keywords: ["AtaPortGetScatterGatherList function"]
 ms.keywords: AtaPortGetScatterGatherList, AtaPortGetScatterGatherList routine [Storage Devices], atartns_ef8ff0f5-2d1c-47e1-bf1a-2b554de3969d.xml, irb/AtaPortGetScatterGatherList, storage.ataportgetscattergatherlist
@@ -54,14 +53,14 @@ The <b>AtaPortGetScatterGatherList</b> routine retrieves the scatter/gather list
 
 ## -parameters
 
-### -param ChannelExtension 
+### -param ChannelExtension [in]
 
-[in]
+
 A pointer to the channel extension.
 
-### -param Irb 
+### -param Irb [in]
 
-[in]
+
 A pointer to a structure of type <a href="/windows-hardware/drivers/ddi/irb/ns-irb-_ide_request_block">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) for which a scatter/gather list is constructed.
 
 ## -returns

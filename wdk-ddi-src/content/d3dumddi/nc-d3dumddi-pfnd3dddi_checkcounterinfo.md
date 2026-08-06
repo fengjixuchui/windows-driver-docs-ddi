@@ -4,7 +4,6 @@ title: PFND3DDDI_CHECKCOUNTERINFO (d3dumddi.h)
 description: Called by the Microsoft Direct3D runtime to determine global information that's related to manipulating counters. Must be implemented by Windows Display Driver Model (WDDM) 1.3 and later user-mode display drivers.
 old-location: display\pfncheckcounterinfo.htm
 tech.root: display
-ms.assetid: 98B8EE79-18D2-4C57-964B-74DB550C1330
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CHECKCOUNTERINFO callback function"]
 ms.keywords: PFND3DDDI_CHECKCOUNTERINFO, PFND3DDDI_CHECKCOUNTERINFO callback, d3dumddi/pfnCheckCounterInfo, display.pfncheckcounterinfo, pfnCheckCounterInfo, pfnCheckCounterInfo callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3dumddi.h
 api_name:
- - pfnCheckCounterInfo
-product:
- - Windows
+ - PFND3DDDI_CHECKCOUNTERINFO
 ---
 
 # PFND3DDDI_CHECKCOUNTERINFO callback function
@@ -56,7 +53,7 @@ Called by the Microsoft Direct3D runtime to determine global information that's 
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCounterInfo* [out]
 
@@ -84,3 +81,4 @@ The driver's <i>pfnCheckCounterInfo</i> function cannot call the <a href="/windo
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

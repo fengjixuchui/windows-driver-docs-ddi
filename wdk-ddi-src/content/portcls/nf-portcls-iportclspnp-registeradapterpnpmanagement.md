@@ -4,7 +4,6 @@ title: IPortClsPnp::RegisterAdapterPnpManagement (portcls.h)
 description: The RegisterAdapterPowerManagement method registers the PnP management interface of the adapter with PortCls.
 old-location: audio\iportclspnp_registeradapterpnpmanagement.htm
 tech.root: audio
-ms.assetid: D9A54562-0ABC-4BEA-A9E3-F1A0A4EBC095
 ms.date: 05/08/2018
 keywords: ["IPortClsPnp::RegisterAdapterPnpManagement"]
 ms.keywords: IPortClsPnp interface [Audio Devices],RegisterAdapterPnpManagement method, IPortClsPnp.RegisterAdapterPnpManagement, IPortClsPnp::RegisterAdapterPnpManagement, RegisterAdapterPnpManagement, RegisterAdapterPnpManagement method [Audio Devices], RegisterAdapterPnpManagement method [Audio Devices],IPortClsPnp interface, audio.iportclspnp_registeradapterpnpmanagement, portcls/IPortClsPnp::RegisterAdapterPnpManagement
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IPortClsPnp.RegisterAdapterPnpManagement
+ - IPortClsPnp::RegisterAdapterPnpManagement
 ---
 
 # IPortClsPnp::RegisterAdapterPnpManagement
@@ -50,14 +49,14 @@ The <code>RegisterAdapterPowerManagement</code> method registers the PnP managem
 
 ## -parameters
 
-### -param pUnknown 
+### -param pUnknown [in]
 
-[in]
+
 Specifies a pointer to <b>IUnknown</b> of <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iadapterpnpmanagement">IAdapterPnpManagement</a>.
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Specifies a pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
 
 ## -returns
@@ -77,3 +76,4 @@ For more information,  see <a href="/windows-hardware/drivers/audio/implement-pn
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclspower-unregisteradapterpowermanagement">IPortClsPower::UnregisterAdapterPowerManagement</a>
+

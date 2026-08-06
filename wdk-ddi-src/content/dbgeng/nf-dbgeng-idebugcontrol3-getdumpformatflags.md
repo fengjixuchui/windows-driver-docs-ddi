@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl3.GetDumpFormatFlags
 title: IDebugControl3::GetDumpFormatFlags (dbgeng.h)
-description: The GetDumpFormatFlags method returns the flags that describe what information is available in a dump file target.
+description: The IDebugControl3::GetDumpFormatFlags method returns the flags that describe what information is available in a dump file target.
 old-location: debugger\getdumpformatflags.htm
 tech.root: debugger
-ms.assetid: 86070c36-6702-42c8-b4fe-b3ef15ba418f
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::GetDumpFormatFlags"]
 ms.keywords: GetDumpFormatFlags, GetDumpFormatFlags method [Windows Debugging], GetDumpFormatFlags method [Windows Debugging],IDebugControl2 interface, GetDumpFormatFlags method [Windows Debugging],IDebugControl3 interface, IDebugControl2 interface [Windows Debugging],GetDumpFormatFlags method, IDebugControl2::GetDumpFormatFlags, IDebugControl3 interface [Windows Debugging],GetDumpFormatFlags method, IDebugControl3.GetDumpFormatFlags, IDebugControl3::GetDumpFormatFlags, IDebugControl_fc8bec39-ffc3-46bd-9d18-954f0420906f.xml, dbgeng/IDebugControl2::GetDumpFormatFlags, dbgeng/IDebugControl3::GetDumpFormatFlags, debugger.getdumpformatflags
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl2.GetDumpFormatFlags
- - IDebugControl3.GetDumpFormatFlags
+ - IDebugControl3::GetDumpFormatFlags
 ---
 
 # IDebugControl3::GetDumpFormatFlags
@@ -51,9 +49,9 @@ The <b>GetDumpFormatFlags</b> method returns the flags that describe what inform
 
 ## -parameters
 
-### -param FormatFlags 
+### -param FormatFlags [out]
 
-[out]
+
 Receives the flags that describe the information included in a dump file.  Different dump files support different sets of format information.  For example, see <a href="/previous-versions/ff541497(v=vs.85)">DEBUG_FORMAT_XXX</a> for a description of the flags used for user-mode Minidump files.
 
 ## -returns
@@ -97,3 +95,4 @@ This method is only available when debugging crash dump files.  If the crash dum
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-writedumpfilewide">WriteDumpFileWide</a>
+

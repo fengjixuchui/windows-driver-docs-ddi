@@ -3,7 +3,6 @@ UID: NS:ndiswwan._NDIS_WWAN_SET_PIN_EX2
 title: _NDIS_WWAN_SET_PIN_EX2 (ndiswwan.h)
 description: The NDIS_WWAN_SET_PIN_EX2 structure specifies the PIN action to take for a UICC application.
 tech.root: netvista
-ms.assetid: E4AAF4D1-687A-48DA-AE6F-0C7ABEAFD02E
 ms.date: 04/10/2019
 keywords: ["NDIS_WWAN_SET_PIN_EX2 structure"]
 ms.keywords: _NDIS_WWAN_SET_PIN_EX2, NDIS_WWAN_SET_PIN_EX2, *PNDIS_WWAN_SET_PIN_EX2,
@@ -37,6 +36,8 @@ api_location:
  - ndiswwan.h
 api_name:
  - _NDIS_WWAN_SET_PIN_EX2
+ - PNDIS_WWAN_SET_PIN_EX2
+ - NDIS_WWAN_SET_PIN_EX2
 ---
 
 # _NDIS_WWAN_SET_PIN_EX2 structure
@@ -58,9 +59,9 @@ The header with type, revision, and size information about the **NDIS_WWAN_SET_P
 | Revision | NDIS_WWAN_SET_PIN_EX2_REVISION_1 |
 | Size | sizeof(NDIS_WWAN_SET_PIN_EX2) |
 
-For more information about these members, see [**NDIS_OBJECT_HEADER**](../ntddndis/ns-ntddndis-_ndis_object_header.md).
+For more information about these members, see [**NDIS_OBJECT_HEADER**](../objectheader/ns-objectheader-ndis_object_header.md).
 
-### -field PinApp
+### -field PinAction
 
 A formatted [**WWAN_PIN_ACTION_EX2**](../wwan/ns-wwan-_wwan_pin_action_ex2.md) structure that describes the PIN action.
 
@@ -75,3 +76,4 @@ This structure is used in the payload of an [OID_WWAN_PIN_EX2](/windows-hardware
 [OID_WWAN_PIN_EX2](/windows-hardware/drivers/network/oid-wwan-pin-ex2)
 
 [**WWAN_PIN_ACTION_EX2**](../wwan/ns-wwan-_wwan_pin_action_ex2.md)
+

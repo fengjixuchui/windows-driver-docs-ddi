@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugEventCallbacksWide.SystemError
 title: IDebugEventCallbacksWide::SystemError (dbgeng.h)
-description: The SystemError callback method is called by the engine when a system error occurs in the target.
+description: The SystemError callback method is called by the engine when a system error occurs in the target. This method belongs to the IDebugEventCallbacksWide interface.
 old-location: debugger\idebugeventcallbackswide_systemerror.htm
 tech.root: debugger
-ms.assetid: 938eacb5-7939-43ed-a854-046708fc9c79
 ms.date: 05/03/2018
 keywords: ["IDebugEventCallbacksWide::SystemError"]
 ms.keywords: IDebugEventCallbacksWide interface [Windows Debugging],SystemError method, IDebugEventCallbacksWide.SystemError, IDebugEventCallbacksWide::SystemError, SystemError, SystemError method [Windows Debugging], SystemError method [Windows Debugging],IDebugEventCallbacksWide interface, dbgeng/IDebugEventCallbacksWide::SystemError, debugger.idebugeventcallbackswide_systemerror
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugEventCallbacksWide.SystemError
+ - IDebugEventCallbacksWide::SystemError
 ---
 
 # IDebugEventCallbacksWide::SystemError
@@ -50,14 +49,14 @@ The <b>SystemError</b> callback method is called by the engine when a system err
 
 ## -parameters
 
-### -param Error 
+### -param Error [in]
 
-[in]
+
 Specifies the error that caused the event.
 
-### -param Level 
+### -param Level [in]
 
-[in]
+
 Specifies the severity of the error.
 
 ## -returns
@@ -69,3 +68,4 @@ This method returns a <a href="/windows-hardware/drivers/debugger/debug-status-x
 This method is only called by the engine if the DEBUG_EVENT_SYSTEM_ERROR flag is set in the mask returned by <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugeventcallbackswide-getinterestmask">IDebugEventCallbacksWide::GetInterestMask</a>.
 
 For more information about handling events, see <a href="/windows-hardware/drivers/debugger/monitoring-events">Monitoring Events</a>.
+

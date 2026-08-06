@@ -4,7 +4,6 @@ title: IWDFInterrupt::TryToAcquireInterruptLock (wudfddi.h)
 description: The TryToAcquireInterruptLock method acquires the interrupt lock if no other thread has already acquired it.
 old-location: wdf\iwdfinterrupt_trytoacquireinterruptlock.htm
 tech.root: wdf
-ms.assetid: 4A109CDF-C5DE-4BAE-AA4E-294EA5CE86C5
 ms.date: 02/26/2018
 keywords: ["IWDFInterrupt::TryToAcquireInterruptLock"]
 ms.keywords: IWDFInterrupt interface,TryToAcquireInterruptLock method, IWDFInterrupt.TryToAcquireInterruptLock, IWDFInterrupt::TryToAcquireInterruptLock, TryToAcquireInterruptLock, TryToAcquireInterruptLock method, TryToAcquireInterruptLock method,IWDFInterrupt interface, umdf.iwdfinterrupt_trytoacquireinterruptlock, wdf.iwdfinterrupt_trytoacquireinterruptlock, wudfddi/IWDFInterrupt::TryToAcquireInterruptLock
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFInterrupt.TryToAcquireInterruptLock
+ - IWDFInterrupt::TryToAcquireInterruptLock
 ---
 
 # IWDFInterrupt::TryToAcquireInterruptLock
@@ -77,3 +76,4 @@ For more information about handling interrupts in UMDF drivers, see <a href="/wi
 
 
 <a href="/previous-versions/hh439284(v=vs.85)">WdfInterruptTryToAcquireLock</a>
+

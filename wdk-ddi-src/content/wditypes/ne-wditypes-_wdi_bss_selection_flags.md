@@ -4,7 +4,6 @@ title: _WDI_BSS_SELECTION_FLAGS (wditypes.h)
 description: The WDI_BSS_SELECTION_FLAGS enumeration defines flags for BSS selection.
 old-location: netvista\wdi_bss_selection_flags.htm
 tech.root: netvista
-ms.assetid: 9C2F862B-8BA8-4947-9C3D-538715C99F26
 ms.date: 05/02/2018
 keywords: ["WDI_BSS_SELECTION_FLAGS enumeration"]
 ms.keywords: WDI_BSS_SELECTION_FLAGS, WDI_BSS_SELECTION_FLAGS enumeration [Network Drivers Starting with Windows Vista], WDI_BSS_SELECTION_FLAGS_AP_REQUESTED_TRANSITION, WDI_BSS_SELECTION_HOST_PREFERRED, WDI_BSS_SELECTION_RECENT_ASSOCIATION_ERROR, _WDI_BSS_SELECTION_FLAGS, netvista.wdi_bss_selection_flags, wditypes/WDI_BSS_SELECTION_FLAGS, wditypes/WDI_BSS_SELECTION_FLAGS_AP_REQUESTED_TRANSITION, wditypes/WDI_BSS_SELECTION_HOST_PREFERRED, wditypes/WDI_BSS_SELECTION_RECENT_ASSOCIATION_ERROR
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_BSS_SELECTION_FLAGS
  - WDI_BSS_SELECTION_FLAGS
 ---
 
@@ -47,6 +47,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_BSS_SELECTION_FLAGS enumeration defines flags for BSS selection.
 

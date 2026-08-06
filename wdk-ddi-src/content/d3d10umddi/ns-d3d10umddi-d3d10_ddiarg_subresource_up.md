@@ -3,7 +3,6 @@ UID: NS:d3d10umddi.D3D10_DDIARG_SUBRESOURCE_UP
 title: D3D10_DDIARG_SUBRESOURCE_UP (d3d10umddi.h)
 description: The D3D10_DDIARG_SUBRESOURCE_UP structure describes initialization information about a subresource.
 old-location: display\d3d10_ddiarg_subresource_up.htm
-ms.assetid: 035ce56c-b2a0-4ee0-83ce-4a45f05e5ff4
 ms.date: 05/10/2018
 keywords: ["D3D10_DDIARG_SUBRESOURCE_UP structure"]
 ms.keywords: D3D10_DDIARG_SUBRESOURCE_UP, D3D10_DDIARG_SUBRESOURCE_UP structure [Display Devices], UMDisplayDriver_Dx10param_Structs_4bc98700-ad44-4b40-9fc2-b40eeae79626.xml, d3d10umddi/D3D10_DDIARG_SUBRESOURCE_UP, display.d3d10_ddiarg_subresource_up
@@ -50,17 +49,17 @@ The D3D10_DDIARG_SUBRESOURCE_UP structure describes initialization information a
 
 ## -struct-fields
 
-### -field pSysMem
+### -field pSysMem [in]
 
-[in] A pointer to a buffer that contains the contents of the subresource to copy from.
+A pointer to a buffer that contains the contents of the subresource to copy from.
 
-### -field SysMemPitch
+### -field SysMemPitch [in]
 
-[in] The pitch, in bytes, of the surface--that is, the distance, in bytes, to the start of the next row.
+The pitch, in bytes, of the surface--that is, the distance, in bytes, to the start of the next row.
 
-### -field SysMemSlicePitch
+### -field SysMemSlicePitch [in]
 
-[in] The pitch, in bytes, of the depth slice--that is, the distance, in bytes, to the start of the next depth, where a 3-D subresource is composed of width x rows x depth.
+The pitch, in bytes, of the depth slice--that is, the distance, in bytes, to the start of the next depth, where a 3-D subresource is composed of width x rows x depth.
 
 ## -see-also
 

@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d10umddi.PFND3D10DDI_DESTROYRESOURCE
 title: PFND3D10DDI_DESTROYRESOURCE (d3d10umddi.h)
-description: The DestroyResource(D3D10) function destroys the specified resource object. The resource object can be destoyed only if it is not currently bound to a display device, and if all views that refer to the resource are also destroyed.
+description: The DestroyResource(D3D10) function destroys the specified resource object. The resource object can be destroyed only if it is not currently bound to a display device, and if all views that refer to the resource are also destroyed.
 old-location: display\destroyresource_d3d10_.htm
-ms.assetid: 3ff77844-eeee-4fda-8798-2e240bc51379
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_DESTROYRESOURCE callback function"]
 ms.keywords: DestroyResource, DestroyResource callback function [Display Devices], PFND3D10DDI_DESTROYRESOURCE, PFND3D10DDI_DESTROYRESOURCE callback, UserModeDisplayDriverDx10_Functions_59a8abb1-fb74-49b0-a6b8-c0e867f9d7d6.xml, d3d10umddi/DestroyResource, display.destroyresource_d3d10_
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - DestroyResource
+ - PFND3D10DDI_DESTROYRESOURCE
 ---
 
 # PFND3D10DDI_DESTROYRESOURCE callback function
@@ -46,17 +45,17 @@ api_name:
 
 ## -description
 
-The <b>DestroyResource(D3D10)</b> function destroys the specified resource object. The resource object can be destoyed only if it is not currently bound to a display device, and if all views that refer to the resource are also destroyed.
+The <b>DestroyResource(D3D10)</b> function destroys the specified resource object. The resource object can be destroyed only if it is not currently bound to a display device, and if all views that refer to the resource are also destroyed.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hResource* [in]
 
@@ -77,3 +76,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

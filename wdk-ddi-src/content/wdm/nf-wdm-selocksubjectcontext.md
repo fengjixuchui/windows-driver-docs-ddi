@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.SeLockSubjectContext
 title: SeLockSubjectContext function (wdm.h)
-description: The SeLockSubjectContext routine locks the primary and impersonation tokens of a captured subject context.
+description: The SeLockSubjectContext routine in wdm.h locks the primary and impersonation tokens of a captured subject context.
 old-location: ifsk\selocksubjectcontext.htm
 tech.root: ifsk
-ms.assetid: 032e203a-9cb0-4232-91fc-883528e15a81
 ms.date: 04/16/2018
 keywords: ["SeLockSubjectContext function"]
 ms.keywords: SeLockSubjectContext, SeLockSubjectContext routine [Installable File System Drivers], ifsk.selocksubjectcontext, ntifs/SeLockSubjectContext, seref_ea4696ab-8343-4d15-866c-15720d009db8.xml
@@ -50,9 +49,9 @@ The <b>SeLockSubjectContext</b> routine locks the primary and impersonation toke
 
 ## -parameters
 
-### -param SubjectContext 
+### -param SubjectContext [in]
 
-[in]
+
 Pointer to a SECURITY_SUBJECT_CONTEXT structure returned by a call to <b>SeCaptureSubjectContext</b>.
 
 ## -remarks

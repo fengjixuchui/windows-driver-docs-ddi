@@ -4,7 +4,6 @@ title: WdfCommonBufferCreate function (wdfcommonbuffer.h)
 description: The WdfCommonBufferCreate method creates a memory buffer that both the driver and a direct memory access (DMA) device can access simultaneously.
 old-location: wdf\wdfcommonbuffercreate.htm
 tech.root: wdf
-ms.assetid: 05e092fe-fa70-47b7-af8d-c6e27847a6ac
 ms.date: 02/26/2018
 keywords: ["WdfCommonBufferCreate function"]
 ms.keywords: DFCommonBufferObjectRef_2ef72eb3-fa4c-40f8-aa73-54bb5dcb9e0c.xml, WdfCommonBufferCreate, WdfCommonBufferCreate method, kmdf.wdfcommonbuffercreate, wdf.wdfcommonbuffercreate, wdfcommonbuffer/WdfCommonBufferCreate
@@ -53,24 +52,24 @@ The <b>WdfCommonBufferCreate</b> method creates a memory buffer that both the dr
 
 ## -parameters
 
-### -param DmaEnabler 
+### -param DmaEnabler [in]
 
-[in]
+
 A handle to a DMA enabler object that the driver obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdfdmaenabler/nf-wdfdmaenabler-wdfdmaenablercreate">WdfDmaEnablerCreate</a>.
 
-### -param Length 
+### -param Length [in]
 
-[in]
-The desired size, in bytes, of the new buffer.
 
-### -param Attributes 
+The desired size, in bytes, of the new buffer.  The maximum allowed buffer size is (MAXULONG - PAGE_SIZE) bytes.
 
-[in, optional]
+### -param Attributes [in, optional]
+
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the common buffer object. (The structure's <b>ParentObject</b> member must be <b>NULL</b>.) This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param CommonBuffer 
+### -param CommonBuffer [out]
 
-[out]
+
 A pointer to a WDFCOMMONBUFFER-typed variable that receives a handle to a common buffer object.
 
 ## -returns
@@ -135,7 +134,7 @@ The operating system determines whether to enable cached memory in the common bu
 On computers with x86-based, x64-based, and Itanium-based processors, cached memory is enabled.
 On computers with ARM or ARM 64-based processors, the operating system does not automatically enable cached memory for all devices. The system relies on the ACPI_CCA method for each device to determine whether the device is cache-coherent.
 
-The DMA enabler object that the <i>DmaEnabler</i> parameter of <b>WdfCommonBufferCreate</b> specifies becomes the parent object for the new common buffer object. The driver cannot change this parent, and the <b>ParentObject</b> member of the <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure must be <b>NULL</b>. The framework deletes each common buffer object when it deletes the parent DMA enabler object.
+The DMA enabler object that the <i>DmaEnabler</i> parameter of <b>WdfCommonBufferCreate</b> specifies becomes the parent object for the new common buffer object. The driver cannot change this parent, and the <b>ParentObject</b> member of the <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure must be <b>NULL</b>. The framework deletes each common buffer object when it deletes the parent DMA enabler object.  Alternatively, you can delete the common buffer object explicitly by calling [**WdfObjectDelete**](../wdfobject/nf-wdfobject-wdfobjectdelete.md).
 
 For more information about common buffers, see <a href="/windows-hardware/drivers/wdf/using-common-buffers">Using Common Buffers</a>.
 

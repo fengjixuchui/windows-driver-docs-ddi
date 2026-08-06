@@ -4,7 +4,6 @@ title: FltPropagateActivityIdToThread function (fltkernel.h)
 description: The FltPropagateActivityIdToThread routine associates the activity ID from the IRP in the minifilter's callback data with the current thread.
 old-location: ifsk\fltpropagateactivityidtothread.htm
 tech.root: ifsk
-ms.assetid: 7453EEB1-F974-4AEB-93C4-A75A79E1FE19
 ms.date: 04/16/2018
 keywords: ["FltPropagateActivityIdToThread function"]
 ms.keywords: FltPropagateActivityIdToThread, FltPropagateActivityIdToThread routine [Installable File System Drivers], fltkernel/FltPropagateActivityIdToThread, ifsk.fltpropagateactivityidtothread
@@ -49,17 +48,17 @@ The **FltPropagateActivityIdToThread** routine associates the activity ID from t
 
 ## -parameters
 
-### -param CallbackData
+### -param CallbackData [in]
 
-[in] Pointer to the callback data containing the request with an associated activity ID.
+Pointer to the callback data containing the request with an associated activity ID.
 
-### -param PropagateId
+### -param PropagateId [in/out]
 
-[in/out] Pointer to a caller allocated **GUID** that stores the activity ID for the current thread.
+Pointer to a caller allocated **GUID** that stores the activity ID for the current thread.
 
-### -param OriginalId
+### -param OriginalId [out]
 
-[out] On return, the **GUID** pointer referenced by **OriginalId** points to the activity ID that was previously set for the thread.
+On return, the **GUID** pointer referenced by **OriginalId** points to the activity ID that was previously set for the thread.
 
 ## -returns
 

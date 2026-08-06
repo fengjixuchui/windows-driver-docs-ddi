@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelScriptDebugVariableSetEnumerator.Release
 title: IDataModelScriptDebugVariableSetEnumerator::Release (dbgmodel.h)
-description: Decrements the reference count for an interface on an object.
-ms.assetid: 2a506a1d-be24-42d9-9a9e-e22452abbfa5
+description: "The IDataModelScriptDebugVariableSetEnumerator::Release method decrements the reference count for an interface on an object."
 ms.date: 09/10/2018
 keywords: ["IDataModelScriptDebugVariableSetEnumerator::Release"]
 ms.keywords: IDataModelScriptDebugVariableSetEnumerator::Release, Release, IDataModelScriptDebugVariableSetEnumerator.Release, IDataModelScriptDebugVariableSetEnumerator::Release, IDataModelScriptDebugVariableSetEnumerator.Release
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelScriptDebugVariableSetEnumerator.Release
+ - IDataModelScriptDebugVariableSetEnumerator::Release
 ---
 
 # IDataModelScriptDebugVariableSetEnumerator::Release
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IDataModelScriptDebugVariableSetEnumerator interface](nn-dbgmodel-idatamodelscriptdebugvariablesetenumerator.md)
+

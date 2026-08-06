@@ -4,7 +4,6 @@ title: _REENUMERATE_SELF_INTERFACE_STANDARD (wdm.h)
 description: The REENUMERATE_SELF_INTERFACE_STANDARD interface structure enables a driver to request that its parent bus driver reenumerate the driver's device. This structure defines the GUID_REENUMERATE_SELF_INTERFACE_STANDARD interface.
 old-location: kernel\reenumerate_self_interface_standard.htm
 tech.root: kernel
-ms.assetid: f44a57e9-4536-46a7-a80e-d4bbbb2a9ad5
 ms.date: 04/30/2018
 keywords: ["REENUMERATE_SELF_INTERFACE_STANDARD structure"]
 ms.keywords: "*PREENUMERATE_SELF_INTERFACE_STANDARD, PREENUMERATE_SELF_INTERFACE_STANDARD, PREENUMERATE_SELF_INTERFACE_STANDARD structure pointer [Kernel-Mode Driver Architecture], REENUMERATE_SELF_INTERFACE_STANDARD, REENUMERATE_SELF_INTERFACE_STANDARD structure [Kernel-Mode Driver Architecture], _REENUMERATE_SELF_INTERFACE_STANDARD, drvr_interface_6e913216-4d26-4c59-b040-854f5aac2a9a.xml, kernel.reenumerate_self_interface_standard, wdm/PREENUMERATE_SELF_INTERFACE_STANDARD, wdm/REENUMERATE_SELF_INTERFACE_STANDARD"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _REENUMERATE_SELF_INTERFACE_STANDARD
+ - PREENUMERATE_SELF_INTERFACE_STANDARD
  - REENUMERATE_SELF_INTERFACE_STANDARD
 ---
 
@@ -107,3 +108,4 @@ The <b>REENUMERATE_SELF_INTERFACE_STANDARD</b> structure is an extension of the 
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-preenumerate_self">ReenumerateSelf</a>
+

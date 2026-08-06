@@ -4,7 +4,6 @@ title: _NDIS_WWAN_PCO_STATUS (ndiswwan.h)
 description: The NDIS_WWAN_PCO_STATUS structure represents the Protocol Configuration Option (PCO) status of the modem.
 old-location: netvista\ndis_wwan_pco_status.htm
 tech.root: netvista
-ms.assetid: C71187C5-74B6-450A-8461-BB9FDF60DB8D
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_PCO_STATUS structure"]
 ms.keywords: "*PNDIS_WWAN_PCO_STATUS, NDIS_WWAN_PCO_STATUS, NDIS_WWAN_PCO_STATUS structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_PCO_STATUS, PNDIS_WWAN_PCO_STATUS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_PCO_STATUS, ndiswwan/NDIS_WWAN_PCO_STATUS, ndiswwan/PNDIS_WWAN_PCO_STATUS, netvista.ndis_wwan_pco_status"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_PCO_STATUS
+ - PNDIS_WWAN_PCO_STATUS
  - NDIS_WWAN_PCO_STATUS
 ---
 
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_PCO_STATUS)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field uStatus
 
@@ -131,7 +132,7 @@ WWAN_STATUS_CONTEXT_NOT_ACTIVATED
 
 </td>
 <td>
-TThe PCO value is not available because the PDP context is not activated.
+The PCO value is not available because the PDP context is not activated.
 
 </td>
 </tr>
@@ -191,7 +192,7 @@ WWAN_STATUS_NOT_INITIALIZED
 
 </td>
 <td>
-TThe PCO value is not available because the device is initializing. Retry after the ready-state has changed to <b>WwanReadyStateInitialized.</b>
+The PCO value is not available because the device is initializing. Retry after the ready-state has changed to <b>WwanReadyStateInitialized.</b>
 
 </td>
 </tr>
@@ -225,7 +226,7 @@ A formatted <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_pco_value"
 
 <a href="/windows-hardware/drivers/network/mb-protocol-configuration-options-pco-operations">MB Protocol Configuration Options (PCO) operations</a>
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -238,3 +239,4 @@ A formatted <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_pco_value"
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_pco_value">WWAN_PCO_VALUE</a>
+

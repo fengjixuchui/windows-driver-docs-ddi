@@ -3,11 +3,8 @@ UID: NS:dispmprt._DXGKARG_DESTROYVIRTUALGPU
 title: _DXGKARG_DESTROYVIRTUALGPU
 description: Arguments used to destroy a virtual GPU.
 tech.root: display
-ms.assetid: a188ce90-46eb-4098-8da2-bf890f720ce1
 ms.date: 04/04/2019
 keywords: ["DXGKARG_DESTROYVIRTUALGPU structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _DXGKARG_DESTROYVIRTUALGPU, DXGKARG_DESTROYVIRTUALGPU, *PDXGKARG_DESTROYVIRTUALGPU,
 req.header: dispmprt.h
 req.include-header: 
@@ -39,8 +36,8 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGKARG_DESTROYVIRTUALGPU
-product:
- - Windows
+ - PDXGKARG_DESTROYVIRTUALGPU
+ - DXGKARG_DESTROYVIRTUALGPU
 dev_langs:
  - c++
 ---

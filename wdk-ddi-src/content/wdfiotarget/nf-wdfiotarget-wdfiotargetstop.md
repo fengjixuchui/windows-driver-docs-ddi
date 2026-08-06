@@ -4,7 +4,6 @@ title: WdfIoTargetStop function (wdfiotarget.h)
 description: The WdfIoTargetStop method stops sending queued requests to a local or remote I/O target.
 old-location: wdf\wdfiotargetstop.htm
 tech.root: wdf
-ms.assetid: 3dd5aa58-e5a6-4ee3-9b88-d9cbb7eb558c
 ms.date: 02/26/2018
 keywords: ["WdfIoTargetStop function"]
 ms.keywords: DFIOTargetRef_80727681-b08c-4025-aea9-d469735ea00c.xml, WdfIoTargetStop, WdfIoTargetStop method, kmdf.wdfiotargetstop, wdf.wdfiotargetstop, wdfiotarget/WdfIoTargetStop
@@ -55,14 +54,14 @@ The <b>WdfIoTargetStop</b> method stops sending queued requests to a local or re
 
 ## -parameters
 
-### -param IoTarget 
+### -param IoTarget [in]
 
-[in]
+
 A handle to a local or remote I/O target object that was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicegetiotarget">WdfDeviceGetIoTarget</a> or <a href="/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetcreate">WdfIoTargetCreate</a>, or from a method that a specialized I/O target supplies.
 
-### -param Action 
+### -param Action [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfiotarget/ne-wdfiotarget-_wdf_io_target_sent_io_action">WDF_IO_TARGET_SENT_IO_ACTION</a>-typed value that specifies how the framework should handle I/O requests that the driver has sent to the I/O target, if the target has not completed the requests.
 
 ## -remarks
@@ -101,7 +100,7 @@ If the target should resume, call <a href="/windows-hardware/drivers/ddi/wdfiota
 
 </li>
 </ol>
-<div class="alert"><b>Note</b>  It is not safe to call <b>WdfIoTargetStop</b> multiple times from different threads.</div>
+<div class="alert"><b>Note</b>  <b>WdfIoTargetStop</b> is not thread safe. It is not safe to call <b>WdfIoTargetStop</b> simultaneously from different threads.</div>
 <div> </div>
 For more information about I/O targets, see <a href="/windows-hardware/drivers/wdf/using-i-o-targets">Using I/O Targets</a>.
 

@@ -4,7 +4,6 @@ title: IDebugDataSpaces4::GetNextTagged (dbgeng.h)
 description: The GetNextTagged method returns the GUID for the next block of tagged data in the enumeration.
 old-location: debugger\getnexttagged.htm
 tech.root: debugger
-ms.assetid: 529ef33a-adad-4242-96a8-01cdd273cc35
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces4::GetNextTagged"]
 ms.keywords: GetNextTagged, GetNextTagged method [Windows Debugging], GetNextTagged method [Windows Debugging],IDebugDataSpaces3 interface, GetNextTagged method [Windows Debugging],IDebugDataSpaces4 interface, IDebugDataSpaces3 interface [Windows Debugging],GetNextTagged method, IDebugDataSpaces3::GetNextTagged, IDebugDataSpaces4 interface [Windows Debugging],GetNextTagged method, IDebugDataSpaces4.GetNextTagged, IDebugDataSpaces4::GetNextTagged, IDebugDataSpaces_24254a63-1fcd-4ad9-a370-6b0760ed37cd.xml, dbgeng/IDebugDataSpaces3::GetNextTagged, dbgeng/IDebugDataSpaces4::GetNextTagged, debugger.getnexttagged
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugDataSpaces3.GetNextTagged
- - IDebugDataSpaces4.GetNextTagged
+ - IDebugDataSpaces4::GetNextTagged
 ---
 
 # IDebugDataSpaces4::GetNextTagged
@@ -51,19 +49,19 @@ The <b>GetNextTagged</b> method returns the GUID for the next block of tagged da
 
 ## -parameters
 
-### -param Handle 
+### -param Handle [in]
 
-[in]
+
 Specifies the handle identifying the enumeration.  This is the handle returned by <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugdataspaces4-startenumtagged">StartEnumTagged</a>.
 
-### -param Tag 
+### -param Tag [out]
 
-[out]
+
 Receives the GUID identifying the tagged data.  The data may be retrieved by passing this GUID to <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugdataspaces4-readtagged">ReadTagged</a>.
 
-### -param Size 
+### -param Size [out]
 
-[out]
+
 Receives the size of the data identified by the GUID <i>Tag</i>.
 
 ## -returns
@@ -114,3 +112,4 @@ There are no more blocks of tagged data available in this enumeration.
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugdataspaces4-startenumtagged">StartEnumTagged</a>
+

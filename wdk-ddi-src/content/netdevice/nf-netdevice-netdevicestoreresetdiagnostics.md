@@ -1,11 +1,11 @@
 ---
 UID: NF:netdevice.NetDeviceStoreResetDiagnostics
 title: NetDeviceStoreResetDiagnostics
-ms.topic: language-reference
 ms.date: 07/02/2020
 ms.custom: Fe
 targetos: Windows
 description: The NetDeviceStoreResetDiagnostics function stores client driver collected reset diagnostics into the NetAdapterCx framework.
+tech.root: netvista
 keywords: ["NetDeviceStoreResetDiagnostics function"]
 req.assembly:
 req.construct-type: function
@@ -20,11 +20,11 @@ req.lib:
 req.max-support:
 req.namespace:
 req.redist:
-req.target-min-winverclnt:
-req.target-min-winversvr:
+req.target-min-winverclnt: Windows 11
+req.target-min-winversvr: Windows Server 2022
 req.target-type:
 req.type-library:
-req.umdf-ver:
+req.umdf-ver: 2.33
 req.unicode-ansi:
 topic_type:
  - apiref
@@ -46,17 +46,17 @@ The **NetDeviceStoreResetDiagnostics** function stores client driver collected r
 
 ## -parameters
 
-### -param Device
+### -param Device [_In_]
 
-[in] The WDFDEVICE object the client driver previously created with a call to [**WdfDeviceCreate**](../wdfdevice/nf-wdfdevice-wdfdevicecreate.md).
+The WDFDEVICE object the client driver previously created with a call to [**WdfDeviceCreate**](../wdfdevice/nf-wdfdevice-wdfdevicecreate.md).
 
-### -param ResetDiagnosticsSize
+### -param ResetDiagnosticsSize [_In_]
 
-[in] The size in bytes of the **ResetDiagnosticsBuffer**. The maximum size of reset diagnostics the framework accepts is 1 MB.
+The size in bytes of the **ResetDiagnosticsBuffer**. The maximum size of reset diagnostics the framework accepts is 1 MB.
 
-### -param ResetDiagnosticsBuffer
+### -param ResetDiagnosticsBuffer [_In_reads_bytes_(ResetDiagnosticsSize)]
 
-[in] A pointer to the data buffer that holds the reset diagnostics data. The data buffer can come from either paged or non-paged pool.
+A pointer to the data buffer that holds the reset diagnostics data. The data buffer can come from either paged or non-paged pool.
 
 ## -remarks
 

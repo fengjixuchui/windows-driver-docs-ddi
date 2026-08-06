@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_SETVIDPNSOURCEVISIBILITY
 title: DXGKDDI_SETVIDPNSOURCEVISIBILITY (d3dkmddi.h)
 description: The DxgkDdiSetVidPnSourceVisibility function programs the video output codec that is associated with a specified video present source to either start scanning or stop scanning the source's primary surface.
 old-location: display\dxgkddisetvidpnsourcevisibility.htm
-ms.assetid: c94473b4-b898-456d-944d-8879adea16d1
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_SETVIDPNSOURCEVISIBILITY callback function"]
 ms.keywords: DXGKDDI_SETVIDPNSOURCEVISIBILITY, DXGKDDI_SETVIDPNSOURCEVISIBILITY callback, DmFunctions_6a3bb1aa-8bc1-4672-8028-ea3299809a37.xml, DxgkDdiSetVidPnSourceVisibility, DxgkDdiSetVidPnSourceVisibility callback function [Display Devices], d3dkmddi/DxgkDdiSetVidPnSourceVisibility, display.dxgkddisetvidpnsourcevisibility
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiSetVidPnSourceVisibility
-product:
- - Windows
+ - DXGKDDI_SETVIDPNSOURCEVISIBILITY
 ---
 
 # DXGKDDI_SETVIDPNSOURCEVISIBILITY callback function
@@ -73,3 +70,4 @@ See requirements on calling this function with multiplane overlays in <a href="/
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/drivers/ff560767(v=vs.85)">DxgkDdiSetVidPnSourceAddress</a>
+

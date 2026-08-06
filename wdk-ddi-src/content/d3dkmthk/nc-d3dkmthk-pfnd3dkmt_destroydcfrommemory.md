@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_DESTROYDCFROMMEMORY
 title: PFND3DKMT_DESTROYDCFROMMEMORY (d3dkmthk.h)
 description: The PFND3DKMT_DESTROYDCFROMMEMORY callback function destroys a device context from memory.
-ms.assetid: bd569dac-e7ff-4782-833a-227eb7ccdd82
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_DESTROYDCFROMMEMORY callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The PFND3DKMT_DESTROYDCFROMMEMORY callback function destroys a device context fr
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_DESTROYDCFROMMEMORY](ns-d3dkmthk-_d3dkmt_destroydcfrommemory.md) structure.
 

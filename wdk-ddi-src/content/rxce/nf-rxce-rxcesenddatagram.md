@@ -4,7 +4,6 @@ title: RxCeSendDatagram function (rxce.h)
 description: RxCeSendDatagram sends a transport service data unit (TSDU) along the specified connection on a virtual circuit.
 old-location: ifsk\rxcesenddatagram.htm
 tech.root: ifsk
-ms.assetid: 9cb714d5-92f6-481d-bc5e-5fa05b6a0938
 ms.date: 04/16/2018
 keywords: ["RxCeSendDatagram function"]
 ms.keywords: RxCeSendDatagram, RxCeSendDatagram function [Installable File System Drivers], ifsk.rxcesenddatagram, rxce/RxCeSendDatagram, rxref_dc97dbe7-c676-4b1f-8aee-7dbc7cfbc5e3.xml
@@ -54,28 +53,28 @@ api_name:
 
 <p>A pointer to the transport along which the TSDU is to be sent.</p>
 
-### -param pConnectionInformation 
+### -param pConnectionInformation [in]
 
-[in]
+
 A pointer to connection information that contains the remote address.
 
 ### -param SendOptions
 
 <p>A pointer to connection information that contains the remote address.</p>
 
-### -param pMdl 
+### -param pMdl [in]
 
-[in]
+
 A pointer to the buffer to be sent.
 
-### -param SendLength 
+### -param SendLength [in]
 
-[in]
+
 The length of data to be sent.
 
-### -param pCompletionContext 
+### -param pCompletionContext [in]
 
-[in]
+
 The context passed back to the caller during <b>SendCompletion</b> for asynchronous operations. Not that this parameter is ignored if the <i>Options</i> parameter requests a synchronous send operation.
 
 ## -returns

@@ -4,7 +4,6 @@ title: IDebugControl4::RemoveBreakpoint2 (dbgeng.h)
 description: The RemoveBreakpoint2 method removes a breakpoint.
 old-location: debugger\removebreakpoint2.htm
 tech.root: debugger
-ms.assetid: e1c77758-0249-4ec6-9244-329c0b823e44
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::RemoveBreakpoint2"]
 ms.keywords: IDebugControl4 interface [Windows Debugging],RemoveBreakpoint2 method, IDebugControl4.RemoveBreakpoint2, IDebugControl4::RemoveBreakpoint2, RemoveBreakpoint2, RemoveBreakpoint2 method [Windows Debugging], RemoveBreakpoint2 method [Windows Debugging],IDebugControl4 interface, dbgeng/IDebugControl4::RemoveBreakpoint2, debugger.removebreakpoint2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.RemoveBreakpoint2
+ - IDebugControl4::RemoveBreakpoint2
 ---
 
 # IDebugControl4::RemoveBreakpoint2
@@ -50,9 +49,9 @@ The <b>RemoveBreakpoint2</b>  method removes a breakpoint.
 
 ## -parameters
 
-### -param Bp 
+### -param Bp [in]
 
-[in]
+
 Specifies an interface pointer to breakpoint to remove.
 
 ## -returns
@@ -97,3 +96,4 @@ For more details, see <a href="/windows-hardware/drivers/debugger/using-breakpoi
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol4">IDebugControl4</a>
+

@@ -4,7 +4,6 @@ title: _WDI_ETHERTYPE_ENCAPSULATION_ENTRY (wditypes.h)
 description: The WDI_ETHERTYPE_ENCAPSULATION_ENTRY structure defines an EtherType encapsulation entry.
 old-location: netvista\wdi_ethertype_encapsulation_entry.htm
 tech.root: netvista
-ms.assetid: 49FE4EC0-B735-48C0-B26E-E165CA840D12
 ms.date: 05/02/2018
 keywords: ["WDI_ETHERTYPE_ENCAPSULATION_ENTRY structure"]
 ms.keywords: "*PWDI_ETHERTYPE_ENCAPSULATION_ENTRY, PWDI_ETHERTYPE_ENCAPSULATION_ENTRY, PWDI_ETHERTYPE_ENCAPSULATION_ENTRY structure pointer [Device and Driver Installation], WDI_ETHERTYPE_ENCAPSULATION_ENTRY, WDI_ETHERTYPE_ENCAPSULATION_ENTRY structure [Device and Driver Installation], _WDI_ETHERTYPE_ENCAPSULATION_ENTRY, netvista.wdi_ethertype_encapsulation_entry, netvista.wifi_ethertype_encapsulation_entry, wditypes/PWDI_ETHERTYPE_ENCAPSULATION_ENTRY, wditypes/WDI_ETHERTYPE_ENCAPSULATION_ENTRY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_ETHERTYPE_ENCAPSULATION_ENTRY
+ - PWDI_ETHERTYPE_ENCAPSULATION_ENTRY
  - WDI_ETHERTYPE_ENCAPSULATION_ENTRY
 ---
 
@@ -49,6 +50,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The 
   WDI_ETHERTYPE_ENCAPSULATION_ENTRY structure defines an EtherType encapsulation entry.

@@ -4,7 +4,6 @@ title: EVT_UDECX_USB_DEVICE_ENDPOINT_ADD (udecxusbdevice.h)
 description: The USB device emulation class extension (UdeCx) invokes this callback function to request the client driver to create a dynamic endpoint on the virtual USB device.
 old-location: buses\evt_udecx_usb_device_endpoint_add.htm
 tech.root: usbref
-ms.assetid: 82E17C75-BE81-4263-AC04-D3C93505917D
 ms.date: 05/07/2018
 keywords: ["EVT_UDECX_USB_DEVICE_ENDPOINT_ADD callback function"]
 ms.keywords: EVT_UDECX_USB_DEVICE_ENDPOINT_ADD, EVT_UDECX_USB_DEVICE_ENDPOINT_ADD callback, EvtUsbDeviceEndpointAdd, EvtUsbDeviceEndpointAdd callback function [Buses], buses.evt_udecx_usb_device_endpoint_add, udecxusbdevice/EvtUsbDeviceEndpointAdd
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - UdecxUsbDevice.h
 api_name:
- - EvtUsbDeviceEndpointAdd
+ - EVT_UDECX_USB_DEVICE_ENDPOINT_ADD
 ---
 
 # EVT_UDECX_USB_DEVICE_ENDPOINT_ADD callback function
@@ -50,14 +49,14 @@ The USB device emulation class extension (UdeCx) invokes this callback function 
 
 ## -parameters
 
-### -param UdecxUsbDevice 
+### -param UdecxUsbDevice [in]
 
-[in]
+
 A handle to the UDE device object for which the client driver creates an endpoint. The driver created this object in a previous call to <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.
 
-### -param EndpointToCreate 
+### -param EndpointToCreate [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/udecxusbdevice/ns-udecxusbdevice-_udecx_usb_endpoint_init_and_metadata">UDECX_USB_ENDPOINT_INIT_AND_METADATA</a>             structure that contains the endpoint descriptor.
 
 ## -returns
@@ -81,3 +80,4 @@ In the implementation, the client driver is expected to create the endpoint by c
 
 
 <a href="/windows-hardware/drivers/usbcon/">Write a UDE client driver</a>
+

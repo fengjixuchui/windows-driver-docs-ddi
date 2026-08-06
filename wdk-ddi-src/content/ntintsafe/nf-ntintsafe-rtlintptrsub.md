@@ -4,7 +4,6 @@ title: RtlIntPtrSub function (ntintsafe.h)
 description: Subtracts one value of type INT_PTR from another.
 old-location: kernel\rtlintptrsub.htm
 tech.root: kernel
-ms.assetid: 72352FD3-4855-4630-AF42-368FF3A6B2BB
 ms.date: 04/30/2018
 keywords: ["RtlIntPtrSub function"]
 ms.keywords: RtlIntPtrSub, RtlIntPtrSub function [Kernel-Mode Driver Architecture], kernel.rtlintptrsub, ntintsafe/RtlIntPtrSub
@@ -50,19 +49,19 @@ Subtracts one value of type <b>INT_PTR</b> from another.
 
 ## -parameters
 
-### -param iMinuend 
+### -param iMinuend [in]
 
-[in]
+
 The value from which <i>iSubtrahend</i> is subtracted.
 
-### -param iSubtrahend 
+### -param iSubtrahend [in]
 
-[in]
+
 The value to subtract from <i>iMinuend</i>.
 
-### -param piResult 
+### -param piResult [out]
 
-[out]
+
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

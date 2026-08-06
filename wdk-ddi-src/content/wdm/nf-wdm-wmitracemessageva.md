@@ -4,7 +4,6 @@ title: WmiTraceMessageVa function (wdm.h)
 description: The WmiTraceMessageVa routine adds a message to the output log of a WPP software tracing session.
 old-location: kernel\wmitracemessageva.htm
 tech.root: kernel
-ms.assetid: 57f8006c-defe-4975-9d21-0eaecae5a873
 ms.date: 04/30/2018
 keywords: ["WmiTraceMessageVa function"]
 ms.keywords: WmiTraceMessageVa, WmiTraceMessageVa routine [Kernel-Mode Driver Architecture], k902_c9c7dd80-d7a8-4b53-bcf1-f64c822e9e6d.xml, kernel.wmitracemessageva, wdm/WmiTraceMessageVa
@@ -50,29 +49,29 @@ The <b>WmiTraceMessageVa</b> routine adds a message to the output log of a <a hr
 
 ## -parameters
 
-### -param LoggerHandle 
+### -param LoggerHandle [in]
 
-[in]
+
 Specifies a trace handle for a software tracing session.
 
-### -param MessageFlags 
+### -param MessageFlags [in]
 
-[in]
+
 Specifies a bitwise OR of one or more message flags. See the Remarks section for details.
 
-### -param MessageGuid 
+### -param MessageGuid [in]
 
-[in]
+
 Specifies a GUID that identifies a software trace class.
 
-### -param MessageNumber 
+### -param MessageNumber [in]
 
-[in]
+
 Identifies the message subtype. The meaning of subtypes is specific to the software trace class and the provider.
 
-### -param MessageArgList 
+### -param MessageArgList [in]
 
-[in]
+
 Provides a required list of message parameters that specify a set of message parts. The parameters are organized as a sequence of parameter pairs, where each pair specifies one part of the complete message. Each parameter pair consists of a PVOID pointer to data, followed immediately by a ULONG value that specifies the length of the data. The parameter list must be terminated by a <b>NULL</b> PVOID pointer followed by a ULONG(0).
 
 ## -returns
@@ -210,7 +209,7 @@ All message buffers allocated to software tracing session are full.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiwriteevent">IoWmiWriteEvent</a>
+<a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiwriteevent">IoWMIWriteEvent</a>
 
 
 

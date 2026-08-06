@@ -4,7 +4,6 @@ title: WDF_DEVICE_POWER_CAPABILITIES_INIT function (wdfdevice.h)
 description: The WDF_DEVICE_POWER_CAPABILITIES_INIT function initializes a WDF_DEVICE_POWER_CAPABILITIES structure.
 old-location: wdf\wdf_device_power_capabilities_init.htm
 tech.root: wdf
-ms.assetid: 1a4b2708-efe2-47c0-b5b7-4e56f33e0266
 ms.date: 02/26/2018
 keywords: ["WDF_DEVICE_POWER_CAPABILITIES_INIT function"]
 ms.keywords: DFDeviceObjectGeneralRef_888be612-b20f-427f-a098-e6b0f73f8704.xml, WDF_DEVICE_POWER_CAPABILITIES_INIT, WDF_DEVICE_POWER_CAPABILITIES_INIT function, kmdf.wdf_device_power_capabilities_init, wdf.wdf_device_power_capabilities_init, wdfdevice/WDF_DEVICE_POWER_CAPABILITIES_INIT
@@ -52,9 +51,9 @@ The <b>WDF_DEVICE_POWER_CAPABILITIES_INIT</b> function initializes a <a href="/w
 
 ## -parameters
 
-### -param Caps 
+### -param Caps [out]
 
-[out]
+
 A pointer to a driver-supplied <a href="/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_capabilities">WDF_DEVICE_POWER_CAPABILITIES</a> structure.
 
 ## -remarks

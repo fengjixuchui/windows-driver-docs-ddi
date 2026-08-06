@@ -4,7 +4,6 @@ title: AtaPortWritePortBufferUlong function (irb.h)
 description: The AtaPortWritePortBufferUlong routine transfers the indicated number of ULONG values from a buffer to the HBA.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\ataportwriteportbufferulong.htm
 tech.root: storage
-ms.assetid: 0ee4ef0a-1b6e-4e94-8a3d-ed5215dc5f31
 ms.date: 03/29/2018
 keywords: ["AtaPortWritePortBufferUlong function"]
 ms.keywords: AtaPortWritePortBufferUlong, AtaPortWritePortBufferUlong routine [Storage Devices], atartns_877f49af-a38e-4468-896a-0e79a4e9effa.xml, irb/AtaPortWritePortBufferUlong, storage.ataportwriteportbufferulong
@@ -54,19 +53,19 @@ The <b>AtaPortWritePortBufferUlong</b> routine transfers the indicated number of
 
 ## -parameters
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 A pointer to the I/O port. The address value that is assigned to this parameter must be within the range of mapped I/O space addresses that are obtained by a call to <a href="/windows-hardware/drivers/ddi/irb/nf-irb-ataportgetdevicebase">AtaPortGetDeviceBase</a>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to the source buffer.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of ULONG values to write to the HBA.
 
 ## -see-also

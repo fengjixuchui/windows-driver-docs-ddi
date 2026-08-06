@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILREMOVECALLFORWARDINGPARAMS
 title: RILREMOVECALLFORWARDINGPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILREMOVECALLFORWARDINGPARAMS structure in your code."
 old-location: netvista\rilremovecallforwardingparams.htm
 tech.root: netvista
-ms.assetid: f6eaaa56-8444-496b-8b14-63bb2368d6ba
 ms.date: 05/02/2018
 keywords: ["RILREMOVECALLFORWARDINGPARAMS structure"]
 ms.keywords: "*LPRILREMOVECALLFORWARDINGPARAMS, RILREMOVECALLFORWARDINGPARAMS, RILREMOVECALLFORWARDINGPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilremovecallforwardingparams, ntddrilapitypes/RILREMOVECALLFORWARDINGPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILREMOVECALLFORWARDINGPARAMS
+ - LPRILREMOVECALLFORWARDINGPARAMS
 ---
 
 # RILREMOVECALLFORWARDINGPARAMS structure (ntddrilapitypes.h)

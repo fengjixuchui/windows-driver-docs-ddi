@@ -4,7 +4,6 @@ title: PFN_WSK_RECEIVE (wsk.h)
 description: The WskReceive function receives data over a connection-oriented or stream socket from a remote transport address.
 old-location: netvista\wskreceive.htm
 tech.root: netvista
-ms.assetid: 7fe65842-8ddb-4aca-931f-03b35dd2b039
 ms.date: 05/02/2018
 keywords: ["PFN_WSK_RECEIVE callback function"]
 ms.keywords: PFN_WSK_RECEIVE, PFN_WSK_RECEIVE callback, WskReceive, WskReceive callback function [Network Drivers Starting with Windows Vista], netvista.wskreceive, wsk/WskReceive, wskref_7a0473b3-5687-44e8-b505-a346e9546807.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wsk.h
 api_name:
- - WskReceive
+ - PFN_WSK_RECEIVE
 ---
 
 # PFN_WSK_RECEIVE callback function
@@ -52,23 +51,23 @@ The
 
 ## -parameters
 
-### -param Socket 
+### -param Socket [in]
 
-[in]
+
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_socket">WSK_SOCKET</a> structure that specifies the socket
      object for the socket from which to receive the data.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to an initialized 
      <a href="/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_buf">WSK_BUF</a> structure that describes the data buffer
      that receives the data from the socket.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A ULONG value that contains a bitwise OR of a combination of the following flags:
      
 
@@ -141,9 +140,9 @@ This flag is supported by the Microsoft TCP/IP transport protocol. This flag mig
 The WSK_FLAG_WAITALL and WSK_FLAG_DRAIN flags are mutually exclusive. A WSK application should not
      specify both of these flags at the same time.
 
-### -param Irp 
+### -param Irp [in, out]
 
-[in, out]
+
 A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the receive operation
      asynchronously. For more information about using IRPs with WSK functions, see 
      <a href="/windows-hardware/drivers/network/using-irps-with-winsock-kernel-functions">Using IRPs with Winsock
@@ -322,3 +321,4 @@ If the
 
 
 <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_send">WskSend</a>
+

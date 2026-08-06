@@ -3,14 +3,13 @@ UID: NF:d3dkmthk.D3DKMTOpenResource
 title: D3DKMTOpenResource function (d3dkmthk.h)
 description: The D3DKMTOpenResource function opens a shared resource.
 old-location: display\d3dkmtopenresource.htm
-ms.assetid: 787ace79-c9ba-4e3e-9cee-0d07ef50ba35
 ms.date: 05/10/2018
 keywords: ["D3DKMTOpenResource function"]
 ms.keywords: D3DKMTOpenResource, D3DKMTOpenResource function [Display Devices], OpenGL_Functions_ba035fe1-7970-45fc-a1c3-adddf285abd1.xml, d3dkmthk/D3DKMTOpenResource, display.d3dkmtopenresource
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -53,7 +52,7 @@ The <b>D3DKMTOpenResource</b> function opens a shared resource.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in, out]
 
@@ -69,7 +68,7 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dk
 |STATUS_DEVICE_REMOVED|The graphics adapter was stopped or the display device was reset.|
 |STATUS_INVALID_PARAMETER|Parameters were validated and determined to be incorrect.|
 
-This function might also return other <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS values</a> values.
+This function might also return other <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS</a> values.
 
 ## -see-also
 

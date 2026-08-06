@@ -3,7 +3,6 @@ UID: NS:netadapter._NET_ADAPTER_LINK_LAYER_CAPABILITIES
 title: _NET_ADAPTER_LINK_LAYER_CAPABILITIES (netadapter.h)
 description: Describes the link layer capabilities of the adapter.
 tech.root: netvista
-ms.assetid: 24888f71-0e12-41c8-a218-9289b1f5b288
 ms.date: 09/27/2019
 keywords: ["NET_ADAPTER_LINK_LAYER_CAPABILITIES structure"]
 ms.keywords: _NET_ADAPTER_LINK_LAYER_CAPABILITIES, *PNET_ADAPTER_LINK_LAYER_CAPABILITIES, NET_ADAPTER_LINK_LAYER_CAPABILITIES,
@@ -13,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.23
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -35,6 +34,7 @@ api_type:
 api_location:
  - netadapter.h
 api_name:
+ - _NET_ADAPTER_LINK_LAYER_CAPABILITIES
  - NET_ADAPTER_LINK_LAYER_CAPABILITIES
 ---
 
@@ -66,3 +66,4 @@ The client driver passes an initialized **NET_ADAPTER_LINK_LAYER_CAPABILITIES** 
 Call [NET_ADAPTER_LINK_LAYER_CAPABILITIES_INIT](nf-netadapter-net_adapter_link_layer_capabilities_init.md) to initialize this structure.
 
 ## -see-also
+

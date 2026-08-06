@@ -4,8 +4,7 @@ title: NdisOffloadTcpReceiveReturn function (ndischimney.h)
 description: A protocol driver or intermediate driver calls the NdisOffloadTcpReceiveReturn function to return ownership of NET_BUFFER_LIST and associated structures to an underlying offload target.
 old-location: netvista\ndisoffloadtcpreceivereturn.htm
 tech.root: netvista
-ms.assetid: 39f541be-c514-4cd4-bf7d-03b7a318b663
-ms.date: 05/02/2018
+ms.date: 09/07/2022
 keywords: ["NdisOffloadTcpReceiveReturn function"]
 ms.keywords: NdisOffloadTcpReceiveReturn, NdisOffloadTcpReceiveReturn function [Network Drivers Starting with Windows Vista], ndischimney/NdisOffloadTcpReceiveReturn, netvista.ndisoffloadtcpreceivereturn, tcp_chim_ndis_func_2fe6d15f-5e88-4aec-9c5b-281b0e002d8f.xml
 req.header: ndischimney.h
@@ -55,30 +54,25 @@ A protocol driver or intermediate driver calls the
 
 ## -parameters
 
-### -param NdisBindingHandle 
+### -param NdisBindingHandle [in]
 
-[in]
+
 The handle that NDIS provided at the 
      <i>NdisBindingHandle</i> parameter of the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a> function. This handle
      identifies the binding between the caller and the underlying intermediate driver or offload
      target.
 
-### -param NetBufferList 
+### -param NetBufferList [in]
 
-[in]
+
 A pointer to a 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure. This structure
+     <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure. This structure
      can be a stand-alone structure or the first structure in a linked list of NET_BUFFER_LIST structures.
      The linked list can contain NET_BUFFER_LIST structures from one or more calls to the 
      <a href="/windows-hardware/drivers/ddi/ndischimney/nc-ndischimney-ndis_tcp_offload_receive_indicate">
      NdisTcpOffloadReceiveHandler</a> function.
 
-## -returns
-
-The 
-     <b>NdisOffloadTcpReceiveReturn</b> function always returns NDIS_STATUS_SUCCESS. The receive return
-     operation is always completed synchronously.
 
 ## -remarks
 
@@ -119,7 +113,7 @@ The same PNET_BUFFER_LIST pointer that NDIS passed to the intermediate driver's
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 

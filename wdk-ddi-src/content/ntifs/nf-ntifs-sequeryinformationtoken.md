@@ -4,14 +4,13 @@ title: SeQueryInformationToken function (ntifs.h)
 description: The SeQueryInformationToken routine retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information.
 old-location: ifsk\sequeryinformationtoken.htm
 tech.root: ifsk
-ms.assetid: 97e28b53-8b4c-4f76-b6bb-21dad2233463
 ms.date: 04/16/2018
 keywords: ["SeQueryInformationToken function"]
 ms.keywords: SeQueryInformationToken, SeQueryInformationToken routine [Installable File System Drivers], ifsk.sequeryinformationtoken, ntifs/SeQueryInformationToken, seref_80e09bda-ef06-4a25-ab50-d405f5539759.xml
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later versions of the operating system.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,19 +49,19 @@ The <b>SeQueryInformationToken</b> routine retrieves a specified type of informa
 
 ## -parameters
 
-### -param Token 
+### -param Token [in]
 
-[in]
+
 A pointer to an access token from which information is to be retrieved. If <i>TokenInformationClass</i> is set to <i>TokenSource</i>, the handle must have TOKEN_QUERY_SOURCE access. For all other <i>TokenInformationClass</i> values, the handle must have TOKEN_QUERY access.
 
-### -param TokenInformationClass 
+### -param TokenInformationClass [in]
 
-[in]
+
 A value from the <a href="/windows-hardware/drivers/ddi/ntifs/ne-ntifs-_token_information_class">TOKEN_INFORMATION_CLASS</a> enumerated type that identifies the type of information to be retrieved.
 
-### -param TokenInformation 
+### -param TokenInformation [out]
 
-[out]
+
 If STATUS_SUCCESS is returned, 
 	  <i>TokenInformation</i> receives a pointer to a 
 	  location that contains the address of a buffer that holds the requested 
@@ -235,7 +234,7 @@ An invalid value was supplied for <i>TokenInformationClass</i>.
 
 ## -remarks
 
-For more information about security and access control, see the documentation about these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

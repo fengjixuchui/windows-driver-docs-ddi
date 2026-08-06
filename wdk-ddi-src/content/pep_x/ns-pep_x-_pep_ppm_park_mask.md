@@ -1,10 +1,9 @@
 ---
 UID: NS:pep_x._PEP_PPM_PARK_MASK
 title: _PEP_PPM_PARK_MASK (pep_x.h)
-description: The PEP_PROCESSOR_PARK_MASK structure contains the current core parking mask.
+description: Learn how the PEP_PROCESSOR_PARK_MASK structure contains the current core parking mask.
 old-location: kernel\pep_ppm_park_mask.htm
 tech.root: kernel
-ms.assetid: 528576FD-BDB2-4772-9151-A1C855BA953E
 ms.date: 04/30/2018
 keywords: ["PEP_PPM_PARK_MASK structure"]
 ms.keywords: "*PPEP_PPM_PARK_MASK, PEP_PPM_PARK_MASK, PEP_PPM_PARK_MASK structure [Kernel-Mode Driver Architecture], PPEP_PPM_PARK_MASK, PPEP_PPM_PARK_MASK structure pointer [Kernel-Mode Driver Architecture], _PEP_PPM_PARK_MASK, kernel.pep_ppm_park_mask, pepfx/PEP_PPM_PARK_MASK, pepfx/PPEP_PPM_PARK_MASK"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_PPM_PARK_MASK
+ - PPEP_PPM_PARK_MASK
  - PEP_PPM_PARK_MASK
 ---
 
@@ -54,17 +55,17 @@ The <b>PEP_PROCESSOR_PARK_MASK</b> structure contains the current core parking m
 
 ## -struct-fields
 
-### -field Count
+### -field Count [in]
 
-[in] Indicates the number of processors in the <b>Processors</b> array.
+Indicates the number of processors in the <b>Processors</b> array.
 
-### -field EvaluationTime
+### -field EvaluationTime [in]
 
-[in] The interrupt time of the performance check evaluation that initiated this notification.
+The interrupt time of the performance check evaluation that initiated this notification.
 
-### -field Processors
+### -field Processors [in/out]
 
-[in/out] An array of processors in the core parking domain. 
+An array of processors in the core parking domain. 
 
 
 
@@ -98,3 +99,4 @@ Returns the PEP parking preference for each processor.
 
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_processor_park_state">PEP_PROCESSOR_PARK_STATE</a>
+

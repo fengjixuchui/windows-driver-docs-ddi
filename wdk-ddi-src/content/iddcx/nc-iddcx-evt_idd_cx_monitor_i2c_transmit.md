@@ -4,7 +4,6 @@ title: EVT_IDD_CX_MONITOR_I2C_TRANSMIT (iddcx.h)
 description: EVT_IDD_CX_MONITOR_I2C_TRANSMIT is called by the OS to return data received to an I2C device in a monitor.
 old-location: display\evt_idd_cx_monitor_i2c_transmit.htm
 tech.root: display
-ms.assetid: d36d45f5-fae1-430a-a01e-adb70e09573c
 ms.date: 05/10/2018
 keywords: ["EVT_IDD_CX_MONITOR_I2C_TRANSMIT callback function"]
 ms.keywords: EVT_IDD_CX_MONITOR_I2C_TRANSMIT, EVT_IDD_CX_MONITOR_I2C_TRANSMIT callback, EvtIddCxMonitorI2cTransmit, EvtIddCxMonitorI2cTransmit callback function [Display Devices], PFN_IDD_CX_MONITOR_I2C_TRANSMIT, PFN_IDD_CX_MONITOR_I2C_TRANSMIT callback function pointer [Display Devices], display.evt_idd_cx_monitor_i2c_transmit, iddcx/EvtIddCxMonitorI2cTransmit
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - iddcx.h
 api_name:
- - PFN_IDD_CX_MONITOR_I2C_TRANSMIT
+ - EVT_IDD_CX_MONITOR_I2C_TRANSMIT
 ---
 
 # EVT_IDD_CX_MONITOR_I2C_TRANSMIT callback function
@@ -50,14 +49,14 @@ api_name:
 
 ## -parameters
 
-### -param MonitorObject 
+### -param MonitorObject [in]
 
-[in]
+
 A handle used by the OS to identify the monitor to return I2C data to.
 
-### -param pInArgs 
+### -param pInArgs [in]
 
-[in]
+
 Input arguments used by <b>EVT_IDD_CX_MONITOR_I2C_TRANSMIT</b>.
 
 ## -returns
@@ -78,3 +77,4 @@ communication.
 
 If the display adapter supports HDCP, <b>EVT_IDD_CX_MONITOR_I2C_TRANSMIT</b> must refuse to send data to an I2C device if the device has an I2C address that is used by HDCP.
 <b>EVT_IDD_CX_MONITOR_I2C_TRANSMIT</b> must never transmit data to an I2C device on the display adapter. That is, this function can transmit data to an I2C device in a monitor that is connected to the display adapter, but not to an I2C device that is on the display adapter itself.
+

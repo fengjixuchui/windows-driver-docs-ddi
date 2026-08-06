@@ -3,14 +3,13 @@ UID: NF:fltkernel.FltRetrieveFileInfoOnCreateCompletion
 title: FltRetrieveFileInfoOnCreateCompletion function
 description: FltRetrieveFileInfoOnCreateCompletion retrieves the requested file information during file post create.
 tech.root: ifsk
-ms.assetid: 8ec28ac7-c87c-4e18-bfd0-0266b805cd9d
 ms.date: 03/12/2019
 keywords: ["FltRetrieveFileInfoOnCreateCompletion function"]
 ms.keywords: FltRetrieveFileInfoOnCreateCompletion
 req.header: fltkernel.h
 req.include-header: 
 req.target-type: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 10, version 1809
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -36,38 +35,37 @@ api_location:
  - fltkernel.h
 api_name:
  - FltRetrieveFileInfoOnCreateCompletion
-product:
- - Windows
 ---
 
 # FltRetrieveFileInfoOnCreateCompletion function
 
-
 ## -description
 
-**FltRetrieveFileInfoOnCreateCompletion** retrieves the requested file information during file post create. Use [FltRetrieveFileInfoOnCreateCompletionEx](nf-fltkernel-fltretrievefileinfooncreatecompletionex.md) to get an NTSTATUS code along with the file information.
+**FltRetrieveFileInfoOnCreateCompletion** retrieves the requested file information during file post create. Use [FltRetrieveFileInfoOnCreateCompletionEx](nf-fltkernel-fltretrievefileinfooncreatecompletionex.md) to get an NTSTATUS code along with the requested information.
 
 ## -parameters
 
-### -param Filter
+### -param Filter [in]
 
 Opaque filter pointer that uniquely identifies the minifilter driver.
 
-### -param Data
+### -param Data [in]
 
 Pointer to the [FLT_CALLBACK_DATA](ns-fltkernel-_flt_callback_data.md) callback data representing the I/O operation.
 
-### -param InfoClass
+### -param InfoClass [in]
 
 Flag that indicates the type of information to return. Note that flags cannot be combined. Can be one of the following values:
 
 | Flag | Meaning |
 | ---- | ------- |
-| **QoCFileStatInformation** (0x00000001) | The file system will return file stat information in a QUERY_ON_CREATE_FILE_STAT_INFORMATION structure. |
-| **QoCFileLxInformation** (0x00000002) | The file system will return extended Linux-like information in a QUERY_ON_CREATE_FILE_LX_INFORMATION structure. |
-| **QoCFileEaInformation** (0x00000004) | The file system will return extended attributes (EA) in a QUERY_ON_CREATE_EA_INFORMATION structure. |
+| **QoCFileStatInformation** (0x00000001) | The file system will return file stat information in a [**QUERY_ON_CREATE_FILE_STAT_INFORMATION**](../ntifs/ns-ntifs-query_on_create_file_stat_information.md) structure. |
+| **QoCFileLxInformation** (0x00000002) | The file system will return extended Linux-like information in a [**QUERY_ON_CREATE_FILE_LX_INFORMATION**](../ntifs/ns-ntifs-query_on_create_file_lx_information.md) structure. |
+| **QoCFileEaInformation** (0x00000004) | The file system will return extended attributes (EA) in a [**QUERY_ON_CREATE_EA_INFORMATION**](../ntifs/ns-ntifs-query_on_create_ea_information.md) structure. |
+| **QoCFileUsnInformation** (0x00000008) | The file system will return USN information in a [**QUERY_ON_CREATE_USN_INFORMATION**](../ntifs/ns-ntifs-query_on_create_usn_information.md) structure. |
+| **QoCFileSecurityInformation** (0x00000010) | The file system will return file security information in a [**QUERY_ON_CREATE_SECURITY_INFORMATION**](../ntifs/ns-ntifs-query_on_create_security_information.md) structure. |
 
-### Size
+### -param Size [out]
 
 Pointer to a ULONG that specifies the size, in bytes, of the buffer that this function returns.
 

@@ -4,7 +4,6 @@ title: EVT_VHF_CLEANUP (vhf.h)
 description: The HID source driver implements this event callback to free resources that might the driver allocated to the virtual HID device.
 old-location: hid\evtvhfcleanup.htm
 tech.root: hid
-ms.assetid: 1D477E7B-E4EA-46E7-872C-3BEBFBD31702
 ms.date: 04/30/2018
 keywords: ["EVT_VHF_CLEANUP callback function"]
 ms.keywords: EVT_VHF_CLEANUP, EVT_VHF_CLEANUP callback, EvtVhfCleanup, EvtVhfCleanup callback function [Human Input Devices], hid.evtvhfcleanup, vhf/EvtVhfCleanup
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - vhf.h
 api_name:
- - EvtVhfCleanup
+ - EVT_VHF_CLEANUP
 ---
 
 # EVT_VHF_CLEANUP callback function
@@ -50,9 +49,9 @@ The HID source driver implements this event callback to free resources that migh
 
 ## -parameters
 
-### -param VhfClientContext 
+### -param VhfClientContext [in]
 
-[in]
+
 Pointer to the HID source driver-defined context structure that the driver passed in the previous call to <a href="/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfcreate">VhfCreate</a> to create the virtual HID device.
 
 ## -remarks
@@ -66,3 +65,4 @@ The HID source driver must not use the VHFHANDLE for the virtual HID device (cre
 ## -see-also
 
 <a href="/windows-hardware/drivers/hid/virtual-hid-framework--vhf-">Write a HID source driver by using Virtual HID Framework (VHF)</a>
+

@@ -4,7 +4,6 @@ title: PPUT_SCATTER_GATHER_LIST (wdm.h)
 description: The PutScatterGatherList routine frees the previously allocated map registers and scatter/gather list used in scatter/gather DMA.
 old-location: kernel\putscattergatherlist.htm
 tech.root: kernel
-ms.assetid: e10091c0-0da6-4acd-8104-9d353262836a
 ms.date: 04/30/2018
 keywords: ["PPUT_SCATTER_GATHER_LIST callback function"]
 ms.keywords: PPUT_SCATTER_GATHER_LIST, PPUT_SCATTER_GATHER_LIST callback, PutScatterGatherList, PutScatterGatherList callback function [Kernel-Mode Driver Architecture], kdma_0f73e6d3-bf6c-4f2b-aff9-ae783b2130c5.xml, kernel.putscattergatherlist, ntddk/PutScatterGatherList
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
- - PutScatterGatherList
+ - PPUT_SCATTER_GATHER_LIST
 ---
 
 # PPUT_SCATTER_GATHER_LIST callback function
@@ -50,19 +49,19 @@ The <b>PutScatterGatherList</b> routine frees the previously allocated map regis
 
 ## -parameters
 
-### -param DmaAdapter 
+### -param DmaAdapter [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_adapter">DMA_ADAPTER</a> structure returned by <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter">IoGetDmaAdapter</a> that represents the bus-master adapter or DMA controller.
 
-### -param ScatterGather 
+### -param ScatterGather [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_scatter_gather_list">SCATTER_GATHER_LIST</a> structure previously returned by <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pget_scatter_gather_list">GetScatterGatherList</a>.
 
-### -param WriteToDevice 
+### -param WriteToDevice [in]
 
-[in]
+
 Indicates the direction of the DMA transfer: specify <b>TRUE</b> for a transfer from the buffer to the device, and <b>FALSE</b> otherwise.
 
 ## -remarks
@@ -93,3 +92,4 @@ Drivers should call <b>PutScatterGatherList</b> after completing scatter/gather 
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_scatter_gather_list">SCATTER_GATHER_LIST</a>
+

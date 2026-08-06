@@ -4,7 +4,6 @@ title: PcNewServiceGroup function (portcls.h)
 description: The PcNewServiceGroup function creates and initializes a service group.
 old-location: audio\pcnewservicegroup.htm
 tech.root: audio
-ms.assetid: 9fcc8cee-61a1-417c-9e69-5c658dab80b2
 ms.date: 05/08/2018
 keywords: ["PcNewServiceGroup function"]
 ms.keywords: PcNewServiceGroup, PcNewServiceGroup function [Audio Devices], audio.pcnewservicegroup, audpc-routines_2164b9cd-1bb5-4e51-aa07-6ed9cb40e3fb.xml, portcls/PcNewServiceGroup
@@ -51,14 +50,14 @@ The <b>PcNewServiceGroup</b> function creates and initializes a service group.
 
 ## -parameters
 
-### -param OutServiceGroup 
+### -param OutServiceGroup [out]
 
-[out]
+
 Pointer to the service-group object created by this function. This parameter points to the caller-allocated pointer variable into which the function outputs the pointer to the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iservicegroup">IServiceGroup</a> object. Specify a valid, non-<b>NULL</b> pointer value for this parameter.
 
-### -param OuterUnknown 
+### -param OuterUnknown [in, optional]
 
-[in, optional]
+
 Pointer to the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface of an object that needs to aggregate the object. Unless aggregation is required, set this parameter to <b>NULL</b>.
 
 ## -returns

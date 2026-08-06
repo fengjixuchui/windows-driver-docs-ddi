@@ -4,7 +4,6 @@ title: FltRetrieveIoPriorityInfo function (fltkernel.h)
 description: The FltRetrieveIoPriorityInfo routine is used by a minifilter driver to retrieve priority information from a thread.
 old-location: ifsk\fltretrieveiopriorityinfo.htm
 tech.root: ifsk
-ms.assetid: b764e55e-e58b-4a4f-a32f-84e3cfd5f8c4
 ms.date: 04/16/2018
 keywords: ["FltRetrieveIoPriorityInfo function"]
 ms.keywords: FltApiRef_p_to_z_ac6da005-5f47-441d-8277-9beedb72c0ee.xml, FltRetrieveIoPriorityInfo, FltRetrieveIoPriorityInfo routine [Installable File System Drivers], fltkernel/FltRetrieveIoPriorityInfo, ifsk.fltretrieveiopriorityinfo
@@ -49,21 +48,21 @@ The **FltRetrieveIoPriorityInfo** routine is used by a minifilter driver to retr
 
 ## -parameters
 
-### -param Data
+### -param Data [in, optional]
 
-[in, optional] An optional pointer to a [**FLT_CALLBACK_DATA**](ns-fltkernel-_flt_callback_data.md) structure, which represents an I/O operation.  This parameter can be **NULL**.
+An optional pointer to a [**FLT_CALLBACK_DATA**](ns-fltkernel-_flt_callback_data.md) structure, which represents an I/O operation.  This parameter can be **NULL**.
 
-### -param FileObject
+### -param FileObject [in, optional]
 
-[in, optional] An optional pointer to the file object associated with the I/O operation.  This parameter can be **NULL**.
+An optional pointer to the file object associated with the I/O operation.  This parameter can be **NULL**.
 
-### -param Thread
+### -param Thread [in, optional]
 
-[in, optional] An optional pointer to the thread in which to retrieve priority information from.  This parameter can be **NULL**.
+An optional pointer to the thread in which to retrieve priority information from.  This parameter can be **NULL**.
 
-### -param PriorityInfo
+### -param PriorityInfo [in, out]
 
-[in, out] A pointer to an [**IO_PRIORITY_INFO**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_io_priority_info) structure used to receive the priority information from the given thread.  The IO_PRIORITY_INFO structure must be initialized by an appropriate routine before it can be used by this routine. See the following Remarks section for more information.
+A pointer to an [**IO_PRIORITY_INFO**](../ntifs/ns-ntifs-_io_priority_info.md) structure used to receive the priority information from the given thread.  The IO_PRIORITY_INFO structure must be initialized by an appropriate routine before it can be used by this routine. See the following Remarks section for more information.
 
 ## -returns
 
@@ -90,7 +89,7 @@ ELSE IF the Thread parameter is not NULL THEN
 ```
 
 > [!NOTE]
-> If the IO_PRIORITY_INFO structure pointed to by the **PriorityInfo** parameter has not been initialized, you must do so prior to calling this routine, by calling the [**IoInitializePriorityInfo**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ioinitializepriorityinfo) routine.
+> If the IO_PRIORITY_INFO structure pointed to by the **PriorityInfo** parameter has not been initialized, you must do so prior to calling this routine, by calling the [**IoInitializePriorityInfo**](../ntifs/nf-ntifs-ioinitializepriorityinfo.md) routine.
 
 ## -see-also
 
@@ -114,8 +113,8 @@ ELSE IF the Thread parameter is not NULL THEN
 
 [**FltSetIoPriorityHintIntoThread**](nf-fltkernel-fltsetiopriorityhintintothread.md)
 
-[**IO_PRIORITY_INFO**](/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_io_priority_info)
+[**IO_PRIORITY_INFO**](../ntifs/ns-ntifs-_io_priority_info.md)
 
-[**IoInitializePriorityInfo**](/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ioinitializepriorityinfo)
+[**IoInitializePriorityInfo**](../ntifs/nf-ntifs-ioinitializepriorityinfo.md)
 
-[**PsGetCurrentThread**](/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psgetcurrentthread)
+[**PsGetCurrentThread**](../ntddk/nf-ntddk-psgetcurrentthread.md)

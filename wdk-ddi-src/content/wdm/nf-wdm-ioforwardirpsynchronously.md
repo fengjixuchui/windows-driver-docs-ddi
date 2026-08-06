@@ -4,7 +4,6 @@ title: IoForwardIrpSynchronously function (wdm.h)
 description: The IoForwardIrpSynchronously routine sends an IRP to a specified driver and waits for that driver to complete the IRP.
 old-location: kernel\ioforwardirpsynchronously.htm
 tech.root: kernel
-ms.assetid: c3e7c79f-2a0d-4011-887d-0f01537cd6e6
 ms.date: 04/30/2018
 keywords: ["IoForwardIrpSynchronously function"]
 ms.keywords: IoForwardIrpSynchronously, IoForwardIrpSynchronously routine [Kernel-Mode Driver Architecture], k104_130c736e-6408-4484-b306-91ba275eaac0.xml, kernel.ioforwardirpsynchronously, wdm/IoForwardIrpSynchronously
@@ -50,14 +49,14 @@ The <b>IoForwardIrpSynchronously</b> routine sends an IRP to a specified driver 
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Specifies the device object of the driver to which the IRP is sent.
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Specifies the IRP to send.
 
 ## -returns

@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_VIDPNTOPOLOGY_GETPATHSOURCEFROMTARGET
 title: DXGKDDI_VIDPNTOPOLOGY_GETPATHSOURCEFROMTARGET (d3dkmddi.h)
 description: The pfnGetPathSourceFromTarget function returns the identifier of the video present source that is associated with a specified video present target.
 old-location: display\dxgk_vidpntopology_interface_pfngetpathsourcefromtarget.htm
-ms.assetid: c3e7b025-2382-4a81-8d78-9333b62b556a
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_VIDPNTOPOLOGY_GETPATHSOURCEFROMTARGET callback function"]
 ms.keywords: DXGKDDI_VIDPNTOPOLOGY_GETPATHSOURCEFROMTARGET, DXGKDDI_VIDPNTOPOLOGY_GETPATHSOURCEFROMTARGET callback, VidPnFunctions_a6324165-7203-455f-8b96-40cf1a0dfb14.xml, d3dkmddi/pfnGetPathSourceFromTarget, display.dxgk_vidpntopology_interface_pfngetpathsourcefromtarget, pfnGetPathSourceFromTarget, pfnGetPathSourceFromTarget callback function [Display Devices]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - pfnGetPathSourceFromTarget
-product:
- - Windows
+ - DXGKDDI_VIDPNTOPOLOGY_GETPATHSOURCEFROMTARGET
 ---
 
 # DXGKDDI_VIDPNTOPOLOGY_GETPATHSOURCEFROMTARGET callback function
@@ -52,17 +49,17 @@ The <b>pfnGetPathSourceFromTarget</b> function returns the identifier of the vid
 
 ## -parameters
 
-### -param hVidTopology
+### -param hVidTopology [in]
 
-[in] A handle to a VidPN topology object. The display miniport driver previously obtained this handle by calling the <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_gettopology">pfnGetTopology</a> function of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpn_interface">DXGK_VIDPN_INTERFACE</a> interface.
+A handle to a VidPN topology object. The display miniport driver previously obtained this handle by calling the <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_gettopology">pfnGetTopology</a> function of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpn_interface">DXGK_VIDPN_INTERFACE</a> interface.
 
-### -param VidPnTargetId
+### -param VidPnTargetId [in]
 
-[in] An integer that identifies a particular video present source.
+An integer that identifies a particular video present source.
 
-### -param pVidPnSourceId
+### -param pVidPnSourceId [out]
 
-[out] A pointer to a variable that receives the identifier of the video present source.
+A pointer to a variable that receives the identifier of the video present source.
 
 ## -returns
 
@@ -89,3 +86,4 @@ The D3DDDI_VIDEO_PRESENT_SOURCE_ID D3DDDI_VIDEO_PRESENT_TARGET_ID data types are
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpntopology_enumpathtargetsfromsource">pfnEnumPathTargetsFromSource</a>
+

@@ -4,7 +4,6 @@ title: NdisRawWritePortUlong macro (ndis.h)
 description: NdisRawWritePortUlong writes a ULONG value to an I/O port on the NIC.
 old-location: netvista\ndisrawwriteportulong.htm
 tech.root: netvista
-ms.assetid: 24abe892-7d49-4bc4-8862-e375f9862a5f
 ms.date: 05/02/2018
 keywords: ["NdisRawWritePortUlong macro"]
 ms.keywords: NdisRawWritePortUlong, NdisRawWritePortUlong macro [Network Drivers Starting with Windows Vista], miniport_port_raw_ref_54b23b9a-fb43-4591-a123-6c564850f5cf.xml, ndis/NdisRawWritePortUlong, netvista.ndisrawwriteportulong
@@ -50,16 +49,16 @@ api_name:
 
 ## -parameters
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Specifies the I/O port. This address falls in a range that was mapped during initialization with 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterioportrange">
      NdisMRegisterIoPortRange</a>.
 
-### -param Data 
+### -param Data [in]
 
-[in]
+
 Specifies the ULONG to be written.
 
 ## -remarks

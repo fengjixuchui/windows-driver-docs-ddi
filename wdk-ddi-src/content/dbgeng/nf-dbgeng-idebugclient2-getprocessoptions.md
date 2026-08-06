@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient2.GetProcessOptions
 title: IDebugClient2::GetProcessOptions (dbgeng.h)
-description: The GetProcessOptions method retrieves the process options affecting the current process.
+description: The GetProcessOptions method retrieves the process options affecting the current process. This method belongs to the IDebugClient2 interface.
 old-location: debugger\getprocessoptions.htm
 tech.root: debugger
-ms.assetid: ff2d4da4-5a10-4196-92bd-ac4b244a2257
 ms.date: 05/03/2018
 keywords: ["IDebugClient2::GetProcessOptions"]
 ms.keywords: GetProcessOptions, GetProcessOptions method [Windows Debugging], GetProcessOptions method [Windows Debugging],IDebugClient interface, GetProcessOptions method [Windows Debugging],IDebugClient2 interface, GetProcessOptions method [Windows Debugging],IDebugClient3 interface, GetProcessOptions method [Windows Debugging],IDebugClient4 interface, GetProcessOptions method [Windows Debugging],IDebugClient5 interface, IDebugClient interface [Windows Debugging],GetProcessOptions method, IDebugClient2 interface [Windows Debugging],GetProcessOptions method, IDebugClient2.GetProcessOptions, IDebugClient2::GetProcessOptions, IDebugClient3 interface [Windows Debugging],GetProcessOptions method, IDebugClient3::GetProcessOptions, IDebugClient4 interface [Windows Debugging],GetProcessOptions method, IDebugClient4::GetProcessOptions, IDebugClient5 interface [Windows Debugging],GetProcessOptions method, IDebugClient5::GetProcessOptions, IDebugClient::GetProcessOptions, IDebugClient_5d54bc2a-5691-4a3a-b3c9-92fc577cdabb.xml, dbgeng/IDebugClient2::GetProcessOptions, dbgeng/IDebugClient3::GetProcessOptions, dbgeng/IDebugClient4::GetProcessOptions, dbgeng/IDebugClient5::GetProcessOptions, dbgeng/IDebugClient::GetProcessOptions, debugger.getprocessoptions
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.GetProcessOptions
- - IDebugClient2.GetProcessOptions
- - IDebugClient3.GetProcessOptions
- - IDebugClient4.GetProcessOptions
- - IDebugClient5.GetProcessOptions
+ - IDebugClient2::GetProcessOptions
 ---
 
 # IDebugClient2::GetProcessOptions
@@ -54,9 +49,9 @@ The <b>GetProcessOptions</b> method retrieves the process options affecting the 
 
 ## -parameters
 
-### -param Options 
+### -param Options [out]
 
-[out]
+
 Receives a set of flags representing the process options for the current process.  For details on these options, see <a href="/windows-hardware/drivers/debugger/debug-process-xxx">DEBUG_PROCESS_XXX</a>.
 
 ## -returns
@@ -124,3 +119,4 @@ For more information about creating and attaching to live user-mode targets, see
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-setprocessoptions">SetProcessOptions</a>
+

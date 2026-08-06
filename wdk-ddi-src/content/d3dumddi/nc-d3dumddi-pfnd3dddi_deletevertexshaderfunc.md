@@ -4,7 +4,6 @@ title: PFND3DDDI_DELETEVERTEXSHADERFUNC (d3dumddi.h)
 description: The DeleteVertexShaderFunc function cleans up driver-side resources that are associated with vertex shader code.
 old-location: display\deletevertexshaderfunc.htm
 tech.root: display
-ms.assetid: 780fc47c-bbb9-400a-a2f3-cdce4a18072f
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DELETEVERTEXSHADERFUNC callback function"]
 ms.keywords: DeleteVertexShaderFunc, DeleteVertexShaderFunc callback function [Display Devices], PFND3DDDI_DELETEVERTEXSHADERFUNC, PFND3DDDI_DELETEVERTEXSHADERFUNC callback, UserModeDisplayDriver_Functions_fda8f115-6f28-4295-b74e-14f32168a616.xml, d3dumddi/DeleteVertexShaderFunc, display.deletevertexshaderfunc
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - DeleteVertexShaderFunc
-product:
- - Windows
+ - PFND3DDDI_DELETEVERTEXSHADERFUNC
 ---
 
 # PFND3DDDI_DELETEVERTEXSHADERFUNC callback function
@@ -56,7 +53,7 @@ The <b>DeleteVertexShaderFunc</b> function cleans up driver-side resources that 
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hShaderHandle* [in]
 
@@ -77,3 +74,4 @@ The <b>DeleteVertexShaderFunc</b> function notifies the driver about the deletio
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

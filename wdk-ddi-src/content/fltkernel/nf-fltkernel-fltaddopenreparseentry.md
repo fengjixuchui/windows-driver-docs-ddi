@@ -4,7 +4,6 @@ title: FltAddOpenReparseEntry function (fltkernel.h)
 description: This routine adds a caller allocated open reparse structure, OPEN_REPARSE_LIST_ENTRY, into a create operation.
 old-location: ifsk\fltaddopenreparseentry.htm
 tech.root: ifsk
-ms.assetid: D58AB46A-0D87-45B5-8C58-E99ED0F906D2
 ms.date: 04/16/2018
 keywords: ["FltAddOpenReparseEntry function"]
 ms.keywords: FltAddOpenReparseEntry, FltAddOpenReparseEntry routine [Installable File System Drivers], fltkernel/FltAddOpenReparseEntry, ifsk.fltaddopenreparseentry
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: _IRQL_requires_max_(APC_LEVEL)
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,19 +49,19 @@ This routine adds a caller allocated open reparse structure, <a href="/previous-
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in]
 
-[in]
+
 The filter to reference.
 
-### -param Data 
+### -param Data [in]
 
-[in]
+
 The create operation to attach open reparse information to.
 
-### -param OpenReparseEntry 
+### -param OpenReparseEntry [in]
 
-[in]
+
 The open reparse information to add, of type <a href="/previous-versions/mt734265(v=vs.85)">OPEN_REPARSE_LIST_ENTRY</a>.
 
 ## -returns

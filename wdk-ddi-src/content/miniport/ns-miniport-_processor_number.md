@@ -1,10 +1,9 @@
 ---
 UID: NS:miniport._PROCESSOR_NUMBER
 title: _PROCESSOR_NUMBER (miniport.h)
-description: The PROCESSOR_NUMBER structure identifies a processor by its group number and group-relative processor number.
+description: The _PROCESSOR_NUMBER structure (miniport.h) identifies a processor by its group number and group-relative processor number.
 old-location: kernel\processor_number.htm
 tech.root: kernel
-ms.assetid: 6ceb8d0f-8c26-4487-a976-ac92e2aca5e0
 ms.date: 04/30/2018
 keywords: ["PROCESSOR_NUMBER structure"]
 ms.keywords: "*PPROCESSOR_NUMBER, PPROCESSOR_NUMBER, PPROCESSOR_NUMBER structure pointer [Kernel-Mode Driver Architecture], PROCESSOR_NUMBER, PROCESSOR_NUMBER structure [Kernel-Mode Driver Architecture], _PROCESSOR_NUMBER, kernel.processor_number, kstruct_c_d3a9199a-f6d3-4d2d-877a-6e856e80ebb9.xml, miniport/PPROCESSOR_NUMBER, miniport/PROCESSOR_NUMBER"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - miniport.h
 api_name:
+ - _PROCESSOR_NUMBER
+ - PPROCESSOR_NUMBER
  - PROCESSOR_NUMBER
 ---
 
@@ -93,3 +94,4 @@ Kernel-mode routines that use the <b>PROCESSOR_NUMBER</b> structure include <a h
 
 
 <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-kequerymaximumgroupcount">KeQueryMaximumGroupCount</a>
+

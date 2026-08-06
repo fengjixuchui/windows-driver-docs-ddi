@@ -4,7 +4,6 @@ title: IQueueCallbackStateChange::OnStateChange (wudfddi.h)
 description: The OnStateChange method is called when the state of the I/O queue object changes.
 old-location: wdf\iqueuecallbackstatechange_onstatechange.htm
 tech.root: wdf
-ms.assetid: 69a422a1-b878-496e-b1b9-e04b7c3db121
 ms.date: 02/26/2018
 keywords: ["IQueueCallbackStateChange::OnStateChange"]
 ms.keywords: IQueueCallbackStateChange interface,OnStateChange method, IQueueCallbackStateChange.OnStateChange, IQueueCallbackStateChange::OnStateChange, OnStateChange, OnStateChange method, OnStateChange method,IQueueCallbackStateChange interface, UMDFQueueObjectRef_194f5013-22a2-40c4-8913-9371aa281009.xml, umdf.iqueuecallbackstatechange_onstatechange, wdf.iqueuecallbackstatechange_onstatechange, wudfddi/IQueueCallbackStateChange::OnStateChange
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IQueueCallbackStateChange.OnStateChange
+ - IQueueCallbackStateChange::OnStateChange
 ---
 
 # IQueueCallbackStateChange::OnStateChange
@@ -52,14 +51,14 @@ The <b>OnStateChange</b> method is called when the state of the I/O queue object
 
 ## -parameters
 
-### -param pWdfQueue 
+### -param pWdfQueue [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfioqueue">IWDFIoQueue</a> interface for the I/O queue object whose state changes.
 
-### -param QueueState 
+### -param QueueState [in]
 
-[in]
+
 A valid bitwise OR of <a href="/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_io_queue_state">WDF_IO_QUEUE_STATE</a>-typed values that indicates status for the queue.
 
 ## -remarks
@@ -81,3 +80,4 @@ A driver registers the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_io_queue_state">WDF_IO_QUEUE_STATE</a>
+

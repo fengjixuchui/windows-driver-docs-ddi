@@ -1,11 +1,10 @@
 ---
 UID: NF:hidpi.HidP_UsageAndPageListDifference
 title: HidP_UsageAndPageListDifference function (hidpi.h)
-description: The HidP_UsageAndPageListDifference routine is not implemented.
+description: The HidP_UsageAndPageListDifference function returns the difference between two lists of usages.
 old-location: hid\hidp_usageandpagelistdifference.htm
 tech.root: hid
-ms.assetid: 80be9231-365d-4a38-8aa6-7da383bdcc40
-ms.date: 04/30/2018
+ms.date: 12/02/2021
 keywords: ["HidP_UsageAndPageListDifference function"]
 ms.keywords: HidP_UsageAndPageListDifference, HidP_UsageAndPageListDifference function [Human Input Devices], hid.hidp_usageandpagelistdifference, hidfunc_0c86a540-d046-449f-a6ee-a122141fe6a3.xml, hidpi/HidP_UsageAndPageListDifference
 req.header: hidpi.h
@@ -43,30 +42,32 @@ api_name:
 
 # HidP_UsageAndPageListDifference function
 
-
 ## -description
 
-The <b>HidP_UsageAndPageListDifference</b> routine is not implemented.
+The **HidP_UsageAndPageListDifference** function returns the difference between two lists of usages, as might be returned from [**HidP_GetUsages**](nf-hidpi-hidp_getusages.md). In other words, it returns a list of usages that are in the current list but not the previous list as well as a list of usages that are in the previous list but not the current list.
 
 ## -parameters
 
-### -param PreviousUsageList
+### -param PreviousUsageList [in, reads]
 
-TBD
+The list of usages before.
 
-### -param CurrentUsageList
+### -param CurrentUsageList [in, reads]
 
-TBD
+The list of usages now.
 
-### -param BreakUsageList
+### -param BreakUsageList [out, writes]
 
-TBD
+*PreviousUsageList* minus *CurrentUsageList*
 
-### -param MakeUsageList
+### -param MakeUsageList [out, writes]
 
-TBD
+*CurrentUsageList* minus *PreviousUsageList*
 
-### -param UsageListLength
+### -param UsageListLength [in]
 
-TBD
+Represents the length of the usage lists in array elements. If comparing two lists with a differing number of array elements, this value is the size of the larger of the two lists. Any zero found with a list indicates an early termination of the list and any usages found after the first zero are ignored.
 
+## -returns
+
+**HidP_UsageAndPageListDifference** returns HIDP_STATUS_SUCCESS if the call was successful. Otherwise, it returns an [**NTSTATUS**](/windows-hardware/drivers/kernel/using-ntstatus-values) error code.

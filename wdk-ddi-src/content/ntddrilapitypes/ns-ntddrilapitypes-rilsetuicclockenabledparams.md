@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILSETUICCLOCKENABLEDPARAMS
 title: RILSETUICCLOCKENABLEDPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILSETUICCLOCKENABLEDPARAMS structure in your code."
 old-location: netvista\rilsetuicclockenabledparams.htm
 tech.root: netvista
-ms.assetid: 03df5865-a383-447b-8e80-671ba7a3a60e
 ms.date: 05/02/2018
 keywords: ["RILSETUICCLOCKENABLEDPARAMS structure"]
 ms.keywords: "*LPRILSETUICCLOCKENABLEDPARAMS, RILSETUICCLOCKENABLEDPARAMS, RILSETUICCLOCKENABLEDPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsetuicclockenabledparams, ntddrilapitypes/RILSETUICCLOCKENABLEDPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSETUICCLOCKENABLEDPARAMS
+ - LPRILSETUICCLOCKENABLEDPARAMS
 ---
 
 # RILSETUICCLOCKENABLEDPARAMS structure (ntddrilapitypes.h)

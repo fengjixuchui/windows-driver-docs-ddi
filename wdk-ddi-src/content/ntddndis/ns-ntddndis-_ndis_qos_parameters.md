@@ -4,7 +4,6 @@ title: _NDIS_QOS_PARAMETERS (ntddndis.h)
 description: The NDIS_QOS_PARAMETERS structure specifies the NDIS Quality of Service (QoS) parameters that are enabled on a network adapter that supports the IEEE 802.1 Data Center Bridging (DCB) interface.
 old-location: netvista\ndis_qos_parameters.htm
 tech.root: netvista
-ms.assetid: 83eb72a8-d35b-445d-a207-c14a3bedd308
 ms.date: 05/02/2018
 keywords: ["NDIS_QOS_PARAMETERS structure"]
 ms.keywords: NDIS_QOS_PARAMETERS, NDIS_QOS_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_QOS_PARAMETERS, PNDIS_QOS_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_QOS_PARAMETERS, netvista.ndis_qos_parameters, ntddndis/NDIS_QOS_PARAMETERS, ntddndis/PNDIS_QOS_PARAMETERS
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_QOS_PARAMETERS
+ - PNDIS_QOS_PARAMETERS
  - NDIS_QOS_PARAMETERS
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_QOS_PARAMETERS</b> structure specifies the NDIS Quality of Service (
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_QOS_PARAMETERS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_QOS_PARAMETERS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_QOS_PARAMETERS. To specify the version of the <b>NDIS_QOS_PARAMETERS</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
 
@@ -72,7 +73,7 @@ Set the <b>Size</b> member to NDIS_SIZEOF_QOS_PARAMETERS_REVISION_1.
 
 ### -field Flags
 
-A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags that specify the status of the NDIS QoS parameters for the network adapter. For more information about this member, see <a href="https://docs.microsoft.com/">Overview of the Flags Member</a>.
+A <b>ULONG</b> value that contains a bitwise <b>OR</b> of flags that specify the status of the NDIS QoS parameters for the network adapter. For more information about this member, see <a href="#overview">Overview of the Flags Member</a>.
 
 ### -field NumTrafficClasses
 
@@ -83,7 +84,7 @@ A <b>ULONG</b> value that specifies the number of NDIS QoS traffic classes that 
 
 ### -field PriorityAssignmentTable
 
-An array of <b>UCHAR</b> elements that specifies an IEEE 802.1p priority level for each traffic class. The <b>PriorityAssignmentTable</b> array is indexed  by the  802.1p priority level (0–7). 
+An array of <b>UCHAR</b> elements where each element represents the traffic class associated with an IEEE 802.1p priority level. The <b>PriorityAssignmentTable</b> array is indexed  by the  802.1p priority level (0–7). 
 
 Each element contains the traffic class identifier. This identifier is the index of the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_qos_classification_element">NDIS_QOS_CLASSIFICATION_ELEMENT</a> structure for the traffic class within the classification array.
 
@@ -282,7 +283,7 @@ The <b>NDIS_QOS_PARAMETERS_<i>Xxx</i>_CHANGED</b> flags provide hints as to whet
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -312,3 +313,4 @@ The <b>NDIS_QOS_PARAMETERS_<i>Xxx</i>_CHANGED</b> flags provide hints as to whet
 
 
 <a href="/windows-hardware/drivers/network/oid-qos-hardware-capabilities">OID_QOS_HARDWARE_CAPABILITIES</a>
+

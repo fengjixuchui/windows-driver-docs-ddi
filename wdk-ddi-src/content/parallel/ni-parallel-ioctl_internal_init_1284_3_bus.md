@@ -4,7 +4,6 @@ title: IOCTL_INTERNAL_INIT_1284_3_BUS (parallel.h)
 description: The IOCTL_INTERNAL_INIT_1284_3_BUS request initializes and assigns an IEEE 1284.3 device ID to all the 1284.3 daisy chain devices that are attached to a parallel port.
 old-location: parports\ioctl_internal_init_1284_3_bus.htm
 tech.root: parports
-ms.assetid: 9c936e4e-8a49-4c6a-a8d0-b314548b5e6a
 ms.date: 02/15/2018
 keywords: ["IOCTL_INTERNAL_INIT_1284_3_BUS IOCTL"]
 ms.keywords: IOCTL_INTERNAL_INIT_1284_3_BUS, IOCTL_INTERNAL_INIT_1284_3_BUS control code [Parallel Ports], cisspd_bbc4a115-34b5-4f7b-9fd4-bbf4d4293e81.xml, parallel/IOCTL_INTERNAL_INIT_1284_3_BUS, parports.ioctl_internal_init_1284_3_bus
@@ -58,6 +57,10 @@ Windows 2000 supports from zero to four daisy chain devices and an end-of-chain 
 <div class="alert"><b>Note</b>    This request is included primarily for test purposes, and Microsoft does not recommend using it during the normal operation of a parallel port.</div><div> </div>For more information, see <a href="/previous-versions/ff543949(v=vs.85)">Device Stacks for ParallelPorts and Devices</a>.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
+
+[IRP_MJ_INTERNAL_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
 ### -input-buffer
 

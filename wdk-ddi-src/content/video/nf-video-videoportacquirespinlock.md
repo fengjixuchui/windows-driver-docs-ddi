@@ -4,7 +4,6 @@ title: VideoPortAcquireSpinLock function (video.h)
 description: The VideoPortAcquireSpinLock function obtains the specified spin lock.
 old-location: display\videoportacquirespinlock.htm
 tech.root: display
-ms.assetid: 2e61ffb7-1720-47b2-b943-54ffa596cb08
 ms.date: 05/10/2018
 keywords: ["VideoPortAcquireSpinLock function"]
 ms.keywords: VideoPortAcquireSpinLock, VideoPortAcquireSpinLock function [Display Devices], VideoPort_Functions_c25b68ac-032b-4b1c-bb15-93957f2e345c.xml, display.videoportacquirespinlock, video/VideoPortAcquireSpinLock
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Videoprt.lib
 req.dll: Videoprt.sys
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,19 +49,19 @@ The <b>VideoPortAcquireSpinLock</b> function obtains the specified spin lock.
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in, out]
 
-[in, out]
+
 Pointer to the miniport driver's device extension.
 
-### -param SpinLock 
+### -param SpinLock [in]
 
-[in]
+
 Pointer to a memory location that contains the spin lock.
 
-### -param OldIrql 
+### -param OldIrql [out]
 
-[out]
+
 Pointer to a memory location that will receive the current IRQL.
 
 ## -returns

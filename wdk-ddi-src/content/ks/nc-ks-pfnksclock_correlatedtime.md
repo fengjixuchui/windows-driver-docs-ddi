@@ -4,7 +4,6 @@ title: PFNKSCLOCK_CORRELATEDTIME (ks.h)
 description: The routine is a system-supplied routine that retrieves and the following:KStrClockGetCorrelatedTime is a system-supplied routine that retrieves both the current system time and the corresponding clock tick count since boot.KStrClockGetCorrelatedPhysicalTime is a system-supplied routine that retrieves both the current system time minus suspended delta and the corresponding clock tick since boot.
 old-location: stream\kstrclockgetcorrelatedtime.htm
 tech.root: stream
-ms.assetid: 1fc71718-a1fb-4e82-9805-7830e761cd6d
 ms.date: 04/23/2018
 keywords: ["PFNKSCLOCK_CORRELATEDTIME callback function"]
 ms.keywords: KStrClockGetCorrelatedPhysicalTime, KStrClockGetCorrelatedTime, PFNKSCLOCK_CORRELATEDTIME, SystemCorrelatedTime, SystemCorrelatedTime routine [Streaming Media Devices], ks/SystemCorrelatedTime, ksfunc_dd229adf-e2be-44ac-bda2-f947b0f559a3.xml, stream.kstrclockgetcorrelatedtime
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - SystemCorrelatedTime
+ - PFNKSCLOCK_CORRELATEDTIME
 ---
 
 # PFNKSCLOCK_CORRELATEDTIME callback function
@@ -55,14 +54,14 @@ The routine
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">FILE_OBJECT</a> structure to which a handle was returned when the clock instance was created.
 
-### -param SystemTime 
+### -param SystemTime [out]
 
-[out]
+
 A pointer to a 64-bit integer containing the number of clock ticks since system boot.
 
 ## -returns
@@ -92,3 +91,4 @@ Both time values are specified in 100 nanosecond units.
 
 
 <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-kequeryperformancecounter">KeQueryPerformanceCounter</a>
+

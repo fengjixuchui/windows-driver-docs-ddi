@@ -4,7 +4,6 @@ title: KsFilterFactoryAddCreateItem function (ks.h)
 description: The KsFilterFactoryAddCreateItem function adds a new create item for the specified filter factory.
 old-location: stream\ksfilterfactoryaddcreateitem.htm
 tech.root: stream
-ms.assetid: c09840fb-8195-4ac5-a164-ba4d82615344
 ms.date: 04/23/2018
 keywords: ["KsFilterFactoryAddCreateItem function"]
 ms.keywords: KsFilterFactoryAddCreateItem, KsFilterFactoryAddCreateItem function [Streaming Media Devices], avfunc_f4a42084-1d8f-49f8-a6d3-d09304e11049.xml, ks/KsFilterFactoryAddCreateItem, stream.ksfilterfactoryaddcreateitem
@@ -51,24 +50,24 @@ The<b> KsFilterFactoryAddCreateItem</b> function adds a new create item for the 
 
 ## -parameters
 
-### -param FilterFactory 
+### -param FilterFactory [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilterfactory">KSFILTERFACTORY</a> structure representing the filter factory to which to add a new create item.
 
-### -param RefString 
+### -param RefString [in]
 
-[in]
+
 A pointer to a Unicode text string that identifies the create item.
 
-### -param SecurityDescriptor 
+### -param SecurityDescriptor [in, optional]
 
-[in, optional]
+
 This parameter optionally contains a pointer to a SECURITY_DESCRIPTOR structure for this type of object. See the Microsoft Windows SDK For information about this structure. For related information, see <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksobject_create_item">KSOBJECT_CREATE_ITEM</a>. If <b>NULL</b>, no descriptor is assigned.
 
-### -param CreateItemFlags 
+### -param CreateItemFlags [in]
 
-[in]
+
 See the table for the <b>Flags</b> member of <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksobject_create_item">KSOBJECT_CREATE_ITEM</a>.
 
 ## -returns

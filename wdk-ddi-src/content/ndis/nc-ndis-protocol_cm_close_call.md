@@ -4,7 +4,6 @@ title: PROTOCOL_CM_CLOSE_CALL (ndis.h)
 description: The ProtocolCmCloseCall function is a required function that terminates an existing call and releases any resources that the call manager allocated for the call.Note  You must declare the function by using the PROTOCOL_CM_CLOSE_CALL type.
 old-location: netvista\protocolcmclosecall.htm
 tech.root: netvista
-ms.assetid: b5307e1b-3905-4e43-a0b0-0068ba18ef0d
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CM_CLOSE_CALL callback function"]
 ms.keywords: PROTOCOL_CM_CLOSE_CALL, PROTOCOL_CM_CLOSE_CALL callback, ProtocolCmCloseCall, ProtocolCmCloseCall callback function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_238e7e85-94af-4e1e-8eb2-04fc89515b4d.xml, ndis/ProtocolCmCloseCall, netvista.protocolcmclosecall
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolCmCloseCall
+ - PROTOCOL_CM_CLOSE_CALL
 ---
 
 # PROTOCOL_CM_CLOSE_CALL callback function
@@ -54,30 +53,30 @@ The
 
 ## -parameters
 
-### -param CallMgrVcContext 
+### -param CallMgrVcContext [in]
 
-[in]
+
 Specifies the handle to a call manager-allocated context area in which the call manager maintains
      its per-VC state. This handle was provided to NDIS from the call managers 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_make_call">ProtocolCmMakeCall</a> function.
 
-### -param CallMgrPartyContext 
+### -param CallMgrPartyContext [in, optional]
 
-[in, optional]
+
 Specifies the handle, if any, to a call manager-allocated context area in which the call manager
      maintain information about a party on a multipoint VC. This handle is <b>NULL</b> if the call being closed is
      not a multipoint call.
 
-### -param CloseData 
+### -param CloseData [in, optional]
 
-[in, optional]
+
 Pointer to a buffer containing connection-oriented client-specified data that should be sent
      across the connection before the call is terminated. This parameter is <b>NULL</b> if the underlying network
      medium does not support transfers of data when closing a connection.
 
-### -param Size 
+### -param Size [in, optional]
 
-[in, optional]
+
 Specifies the length, in bytes, of the buffer at 
      <i>CloseData</i>, zero if 
      <i>CloseData</i> is <b>NULL</b>.
@@ -224,3 +223,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_make_call">ProtocolCmMakeCall</a>
+

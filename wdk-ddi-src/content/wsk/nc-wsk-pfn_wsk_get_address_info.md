@@ -4,7 +4,6 @@ title: PFN_WSK_GET_ADDRESS_INFO (wsk.h)
 description: The WskGetAddressInfo function performs protocol-independent translation from a host name to a transport address.
 old-location: netvista\wskgetaddressinfo.htm
 tech.root: netvista
-ms.assetid: 688619b9-ab0b-4459-8f1b-74815043a190
 ms.date: 05/02/2018
 keywords: ["PFN_WSK_GET_ADDRESS_INFO callback function"]
 ms.keywords: PFN_WSK_GET_ADDRESS_INFO, PFN_WSK_GET_ADDRESS_INFO callback, WskGetAddressInfo, WskGetAddressInfo callback function [Network Drivers Starting with Windows Vista], netvista.wskgetaddressinfo, wsk/WskGetAddressInfo, wskref_4b8f8dcc-eebb-4613-b130-3f7ae2921a8b.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wsk.h
 api_name:
- - WskGetAddressInfo
+ - PFN_WSK_GET_ADDRESS_INFO
 ---
 
 # PFN_WSK_GET_ADDRESS_INFO callback function
@@ -52,9 +51,9 @@ The
 
 ## -parameters
 
-### -param Client 
+### -param Client [in]
 
-[in]
+
 [in] A pointer to a 
      <a href="/windows-hardware/drivers/network/wsk-client">WSK_CLIENT</a> structure that was returned through
      the 
@@ -62,36 +61,36 @@ The
      <a href="/windows-hardware/drivers/ddi/wsk/nf-wsk-wskcaptureprovidernpi">
      WskCaptureProviderNPI</a> function.
 
-### -param NodeName 
+### -param NodeName [in, optional]
 
-[in, optional]
+
 [in] An optional pointer to a 
      <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a
      Unicode string that represents a host (node) name or a numeric host address string. For the Internet
      protocol, the numeric host address string is a dotted-decimal IPv4 address or an IPv6 hexadecimal
      address.
 
-### -param ServiceName 
+### -param ServiceName [in, optional]
 
-[in, optional]
+
 [in] An optional pointer to a 
      <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a
      Unicode string that represents a service name or a port number.
 
-### -param NameSpace 
+### -param NameSpace [in, optional]
 
-[in, optional]
+
 [in] An optional namespace identifier that specifies the namespace providers that are queried.
      Only namespace providers that support the specified namespace can be queried successfully.
 
-### -param Provider 
+### -param Provider [in, optional]
 
-[in, optional]
+
 [in] An optional pointer to a GUID of a specific namespace provider to be queried.
 
-### -param Hints 
+### -param Hints [in, optional]
 
-[in, optional]
+
 [in] An optional pointer to an <a href="/windows/win32/api/ws2def/ns-ws2def-addrinfoexw">ADDRINFOEXW</a> structure that provides hints about the type of socket
      that the caller supports.
      
@@ -106,9 +105,9 @@ The <a href="/windows/win32/api/ws2def/ns-ws2def-addrinfoexw">ADDRINFOEXW</a> st
      Ws2def.h directly.</div>
 <div> </div>
 
-### -param Result 
+### -param Result [out]
 
-[out]
+
 [out] A pointer to a caller-allocated buffer that receives a linked list of one or more
      <a href="/windows/win32/api/ws2def/ns-ws2def-addrinfoexw">ADDRINFOEXW</a> structures that represent response information about the host.
      
@@ -127,9 +126,9 @@ The <a href="/windows/win32/api/ws2def/ns-ws2def-addrinfoexw">ADDRINFOEXW</a> st
      Ws2def.h directly.</div>
 <div> </div>
 
-### -param OwningProcess 
+### -param OwningProcess [in, optional]
 
-[in, optional]
+
 [in] An optional pointer to the process from which the function retrieves the security context.
      This security context indicates the user account context in which the function processes the name
      resolution request.
@@ -141,9 +140,9 @@ If this parameter is <b>NULL</b>, the function processes the name resolution req
 If this parameter is not <b>NULL</b> and an impersonation token is in effect for the calling thread, this
      function fails and returns STATUS_INVALID_PARAMETER.
 
-### -param OwningThread 
+### -param OwningThread [in, optional]
 
-[in, optional]
+
 [in] An optional pointer to the thread from which the function retrieves the security context.
      This parameter can be non-<b>NULL</b> only if 
      <i>OwningProcess</i> is non-<b>NULL</b>. Otherwise, this function fails and returns STATUS_INVALID_PARAMETER.
@@ -152,9 +151,9 @@ If this parameter is not <b>NULL</b> and an impersonation token is in effect for
 If this parameter is not <b>NULL</b> and an impersonation token is in effect for the calling thread, this
      function fails and returns STATUS_INVALID_PARAMETER.
 
-### -param Irp 
+### -param Irp [in, out]
 
-[in, out]
+
 [in/out] A pointer to an I/O request packet (IRP) to use to complete the request asynchronously.
      Upon completion of the request, 
      <i>Irp</i> ->
@@ -254,3 +253,4 @@ The process to which the
 
 
 <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_free_address_info">WskFreeAddressInfo</a>
+

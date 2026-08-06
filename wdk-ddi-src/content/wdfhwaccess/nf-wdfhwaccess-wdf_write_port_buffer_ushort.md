@@ -4,7 +4,6 @@ title: WDF_WRITE_PORT_BUFFER_USHORT function (wdfhwaccess.h)
 description: The WDF_WRITE_PORT_BUFFER_USHORT function writes a number of USHORT values from a buffer to the specified port address.
 old-location: wdf\wdf_write_port_buffer_ushort.htm
 tech.root: wdf
-ms.assetid: 7E4638B0-6FFE-483A-8B71-33B939854CFA
 ms.date: 02/26/2018
 keywords: ["WDF_WRITE_PORT_BUFFER_USHORT function"]
 ms.keywords: WDF_WRITE_PORT_BUFFER_USHORT, WDF_WRITE_PORT_BUFFER_USHORT function, wdf.wdf_write_port_buffer_ushort, wdfhwaccess/WDF_WRITE_PORT_BUFFER_USHORT
@@ -52,23 +51,23 @@ The <b>WDF_WRITE_PORT_BUFFER_USHORT</b> function writes a number of USHORT value
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 A pointer to the port, which must be a mapped memory range in I/O space.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to a buffer from which an array of USHORT values is to be written.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of USHORT values to be written to the buffer.
 

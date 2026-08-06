@@ -4,7 +4,6 @@ title: WdfUsbTargetPipeReadSynchronously function (wdfusb.h)
 description: The WdfUsbTargetPipeReadSynchronously method builds a read request and sends it synchronously to a specified USB input pipe.
 old-location: wdf\wdfusbtargetpipereadsynchronously.htm
 tech.root: wdf
-ms.assetid: e09f68bd-cd43-42ce-988e-505415d62891
 ms.date: 02/26/2018
 keywords: ["WdfUsbTargetPipeReadSynchronously function"]
 ms.keywords: DFUsbRef_97551c52-37b0-4ed7-a961-921ed0e990b6.xml, WdfUsbTargetPipeReadSynchronously, WdfUsbTargetPipeReadSynchronously method, kmdf.wdfusbtargetpipereadsynchronously, wdf.wdfusbtargetpipereadsynchronously, wdfusb/WdfUsbTargetPipeReadSynchronously
@@ -55,29 +54,29 @@ The <b>WdfUsbTargetPipeReadSynchronously</b> method builds a read request and se
 
 ## -parameters
 
-### -param Pipe 
+### -param Pipe [in]
 
-[in]
+
 A handle to a framework pipe object that was obtained by calling <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbinterfacegetconfiguredpipe">WdfUsbInterfaceGetConfiguredPipe</a>.
 
-### -param Request 
+### -param Request [in, optional]
 
-[in, optional]
+
 A handle to a framework request object. This parameter is optional and can be <b>NULL</b>. For more information, see the following Remarks section.
 
-### -param RequestOptions 
+### -param RequestOptions [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfrequest/ns-wdfrequest-_wdf_request_send_options">WDF_REQUEST_SEND_OPTIONS</a> structure that specifies options for the request. This pointer is optional and can be <b>NULL</b>. For more information, see the following Remarks section.
 
-### -param MemoryDescriptor 
+### -param MemoryDescriptor [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfmemory/ns-wdfmemory-_wdf_memory_descriptor">WDF_MEMORY_DESCRIPTOR</a> structure that describes the buffer that will receive data from the device. The buffer size must be a multiple of the pipe's maximum packet size unless the driver has called <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipesetnomaximumpacketsizecheck">WdfUsbTargetPipeSetNoMaximumPacketSizeCheck</a>. For more information about this buffer, see the following Remarks section.
 
-### -param BytesRead 
+### -param BytesRead [out, optional]
 
-[out, optional]
+
 A pointer to a location that receives the number of bytes that were read, if the operation succeeds. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

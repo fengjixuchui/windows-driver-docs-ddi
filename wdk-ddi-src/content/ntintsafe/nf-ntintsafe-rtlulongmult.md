@@ -4,7 +4,6 @@ title: RtlULongMult function (ntintsafe.h)
 description: Multiplies one value of type ULONG by another.
 old-location: kernel\rtlulongmult.htm
 tech.root: kernel
-ms.assetid: 2D5DA884-1746-4DBC-8ABC-2D307181CCAE
 ms.date: 04/30/2018
 keywords: ["RtlULongMult function"]
 ms.keywords: RtlULongMult, RtlULongMult function [Kernel-Mode Driver Architecture], kernel.rtlulongmult, ntintsafe/RtlULongMult
@@ -50,19 +49,19 @@ Multiplies one value of type <b>ULONG</b> by another.
 
 ## -parameters
 
-### -param ulMultiplicand 
+### -param ulMultiplicand [in]
 
-[in]
+
 The value to be multiplied by <i>ulMultiplier</i>.
 
-### -param ulMultiplier 
+### -param ulMultiplier [in]
 
-[in]
+
 The value by which to multiply <i>ulMultiplicand</i>.
 
-### -param pulResult 
+### -param pulResult [out]
 
-[out]
+
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

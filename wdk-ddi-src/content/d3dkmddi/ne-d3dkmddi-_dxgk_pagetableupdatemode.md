@@ -3,7 +3,6 @@ UID: NE:d3dkmddi._DXGK_PAGETABLEUPDATEMODE
 title: _DXGK_PAGETABLEUPDATEMODE (d3dkmddi.h)
 description: DXGK_PAGETABLEUPDATEMODE is used as part of a DxgkDdiBuildPagingBuffer operation to indicate which member of the related DXGK_PAGETABLEUPDATEADDRESS structure contains the address of the page table to update.
 old-location: display\dxgk_pagetableupdatemode.htm
-ms.assetid: E7C823B1-457E-4B86-B44B-DC5BD48CF98E
 ms.date: 05/10/2018
 keywords: ["DXGK_PAGETABLEUPDATEMODE enumeration"]
 ms.keywords: DXGK_PAGETABLEUPDATEMODE, DXGK_PAGETABLEUPDATEMODE enumeration [Display Devices], DXGK_PAGETABLEUPDATE_CPU_VIRTUAL, DXGK_PAGETABLEUPDATE_GPU_PHYSICAL, DXGK_PAGETABLEUPDATE_GPU_VIRTUAL, _DXGK_PAGETABLEUPDATEMODE, d3dkmddi/DXGK_PAGETABLEUPDATEMODE, d3dkmddi/DXGK_PAGETABLEUPDATE_CPU_VIRTUAL, d3dkmddi/DXGK_PAGETABLEUPDATE_GPU_PHYSICAL, d3dkmddi/DXGK_PAGETABLEUPDATE_GPU_VIRTUAL, display.dxgk_pagetableupdatemode
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_PAGETABLEUPDATEMODE
  - DXGK_PAGETABLEUPDATEMODE
 ---
 
@@ -71,3 +71,4 @@ Indicates that the address of the page table to update is in the <b>GpuPhysical<
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_buildpagingbuffer">DxgkDdiBuildPagingBuffer</a>
+

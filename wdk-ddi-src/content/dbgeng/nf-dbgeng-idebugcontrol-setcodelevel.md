@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl.SetCodeLevel
 title: IDebugControl::SetCodeLevel (dbgeng.h)
-description: The SetCodeLevel method sets the current code level and is mainly used when stepping through code.
+description: Learn how the SetCodeLevel method sets the current code level and is mainly used when stepping through code.
 old-location: debugger\setcodelevel.htm
 tech.root: debugger
-ms.assetid: b2f318d2-9ee2-4b4b-86ff-4561f1bbe084
 ms.date: 05/03/2018
 keywords: ["IDebugControl::SetCodeLevel"]
 ms.keywords: IDebugControl interface [Windows Debugging],SetCodeLevel method, IDebugControl.SetCodeLevel, IDebugControl2 interface [Windows Debugging],SetCodeLevel method, IDebugControl2::SetCodeLevel, IDebugControl3 interface [Windows Debugging],SetCodeLevel method, IDebugControl3::SetCodeLevel, IDebugControl::SetCodeLevel, IDebugControl_40aa5eed-ef3f-4ec4-84eb-0cfec638bc4a.xml, SetCodeLevel, SetCodeLevel method [Windows Debugging], SetCodeLevel method [Windows Debugging],IDebugControl interface, SetCodeLevel method [Windows Debugging],IDebugControl2 interface, SetCodeLevel method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::SetCodeLevel, dbgeng/IDebugControl3::SetCodeLevel, dbgeng/IDebugControl::SetCodeLevel, debugger.setcodelevel
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.SetCodeLevel
- - IDebugControl2.SetCodeLevel
- - IDebugControl3.SetCodeLevel
+ - IDebugControl::SetCodeLevel
 ---
 
 # IDebugControl::SetCodeLevel
@@ -52,9 +49,9 @@ The <b>SetCodeLevel</b> method sets the current code level and is mainly used wh
 
 ## -parameters
 
-### -param Level 
+### -param Level [in]
 
-[in]
+
 Specifies the current code level.  <i>Level</i> can take one of the values in the following table.
 
 <table>
@@ -125,3 +122,4 @@ For more information about the code level, see <a href="/windows-hardware/driver
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
+

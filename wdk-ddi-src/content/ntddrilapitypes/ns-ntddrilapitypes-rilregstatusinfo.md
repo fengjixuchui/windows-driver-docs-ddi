@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILREGSTATUSINFO
 title: RILREGSTATUSINFO (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILREGSTATUSINFO structure for internal use only. Don't use the RILREGSTATUSINFO structure in your code."
 old-location: netvista\rilregstatusinfo.htm
 tech.root: netvista
-ms.assetid: 12471d22-4d5d-411e-bfde-4d13d7a3bcca
 ms.date: 05/02/2018
 keywords: ["RILREGSTATUSINFO structure"]
 ms.keywords: "*LPRILREGSTATUSINFO, RILREGSTATUSINFO, RILREGSTATUSINFO structure [Network Drivers Starting with Windows Vista], netvista.rilregstatusinfo, ntddrilapitypes/RILREGSTATUSINFO"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILREGSTATUSINFO
+ - LPRILREGSTATUSINFO
 ---
 
 # RILREGSTATUSINFO structure (ntddrilapitypes.h)

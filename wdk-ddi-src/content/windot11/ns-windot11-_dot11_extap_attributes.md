@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11._DOT11_EXTAP_ATTRIBUTES
 title: _DOT11_EXTAP_ATTRIBUTES (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_EXTAP_ATTRIBUTES structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_extap_attributes.htm
 tech.root: netvista
-ms.assetid: 0460357c-7180-45f0-a7ab-83c46c24ba68
 ms.date: 02/16/2018
 keywords: ["DOT11_EXTAP_ATTRIBUTES structure"]
 ms.keywords: "*PDOT11_EXTAP_ATTRIBUTES, DOT11_EXTAP_ATTRIBUTES, DOT11_EXTAP_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_a1779e69-266e-4fa0-bbd2-01701b9b8772.xml, PDOT11_EXTAP_ATTRIBUTES, PDOT11_EXTAP_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], _DOT11_EXTAP_ATTRIBUTES, netvista.dot11_extap_attributes, windot11/DOT11_EXTAP_ATTRIBUTES, windot11/PDOT11_EXTAP_ATTRIBUTES"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - windot11.h
 api_name:
+ - _DOT11_EXTAP_ATTRIBUTES
+ - PDOT11_EXTAP_ATTRIBUTES
  - DOT11_EXTAP_ATTRIBUTES
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_EXTAP_ATTRIBUTES structure
@@ -53,7 +52,7 @@ product:
 ## -description
 
 > [!IMPORTANT]
-> The [Native 802.11 Wireless LAN](/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)) interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see [WLAN Universal Windows driver model](/windows-hardware/drivers/network/wifi-universal-driver-model).
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
 
 The DOT11_EXTAP_ATTRIBUTES structure defines the physical and operating attributes of the miniport driver and 802.11 station when it operates in Extensible Access Point (ExtAP) mode.
 
@@ -61,7 +60,7 @@ The DOT11_EXTAP_ATTRIBUTES structure defines the physical and operating attribut
 
 ### -field Header
 
-The type, revision, and size of the DOT11_EXTAP_ATTRIBUTES structure. This member is formatted as an [NDIS_OBJECT_HEADER](..\ntddndis\ns-ntddndis-_ndis_object_header.md) structure.
+The type, revision, and size of the DOT11_EXTAP_ATTRIBUTES structure. This member is formatted as an [NDIS_OBJECT_HEADER](..\objectheader\ns-objectheader-ndis_object_header.md) structure.
 
 
 The miniport driver must set the members of **Header** to the following values:
@@ -81,7 +80,7 @@ This member must be set to DOT11_EXTAP_ATTRIBUTES_REVISION_1.
 
 This member must be set to **sizeof**(DOT11_EXTAP_ATTRIBUTES).
 
-For more information about these members, see [NDIS_OBJECT_HEADER](..\ntddndis\ns-ntddndis-_ndis_object_header.md).
+For more information about these members, see [NDIS_OBJECT_HEADER](..\objectheader\ns-objectheader-ndis_object_header.md).
 
 ### -field uScanSSIDListSize
 
@@ -188,9 +187,6 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
 [OID_DOT11_DESIRED_BSSID_LIST](/windows-hardware/drivers/network/oid-dot11-desired-bssid-list)
 
 
-[DOT11_EXTAP_ATTRIBUTES](..\windot11\ns-windot11-_dot11_extap_attributes.md)
-
-
 
 [DOT11_COUNTRY_OR_REGION_STRING](/windows-hardware/drivers/network/oid-dot11-desired-country-or-region-string)
 
@@ -212,4 +208,5 @@ typedef struct _DOT11_EXTAP_ATTRIBUTES {
 
 
 
-[NDIS_OBJECT_HEADER](..\ntddndis\ns-ntddndis-_ndis_object_header.md)
+[NDIS_OBJECT_HEADER](..\objectheader\ns-objectheader-ndis_object_header.md)
+

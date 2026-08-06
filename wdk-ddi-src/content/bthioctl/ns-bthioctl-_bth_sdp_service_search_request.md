@@ -4,8 +4,7 @@ title: _BTH_SDP_SERVICE_SEARCH_REQUEST (bthioctl.h)
 description: The BTH_SDP_SERVICE_SEARCH_REQUEST structure contains information pertinent to an SDP service search.
 old-location: bltooth\bth_sdp_service_search_request.htm
 tech.root: bltooth
-ms.assetid: d1ef833e-8350-499c-9a3d-408d900c9245
-ms.date: 04/27/2018
+ms.date: 12/01/2021
 keywords: ["BTH_SDP_SERVICE_SEARCH_REQUEST structure"]
 ms.keywords: "*PBTH_SDP_SERVICE_SEARCH_REQUEST, BTH_SDP_SERVICE_SEARCH_REQUEST, BTH_SDP_SERVICE_SEARCH_REQUEST structure [Bluetooth Devices], PBTH_SDP_SERVICE_SEARCH_REQUEST, PBTH_SDP_SERVICE_SEARCH_REQUEST structure pointer [Bluetooth Devices], _BTH_SDP_SERVICE_SEARCH_REQUEST, bltooth.bth_sdp_service_search_request, bth_structs_c625eff6-6ec7-49a4-a141-778ebda2d563.xml, bthioctl/BTH_SDP_SERVICE_SEARCH_REQUEST, bthioctl/PBTH_SDP_SERVICE_SEARCH_REQUEST"
 req.header: bthioctl.h
@@ -42,43 +41,32 @@ api_type:
 api_location:
  - bthioctl.h
 api_name:
+ - _BTH_SDP_SERVICE_SEARCH_REQUEST
+ - PBTH_SDP_SERVICE_SEARCH_REQUEST
  - BTH_SDP_SERVICE_SEARCH_REQUEST
 ---
 
 # _BTH_SDP_SERVICE_SEARCH_REQUEST structure
 
-
 ## -description
 
-The BTH_SDP_SERVICE_SEARCH_REQUEST structure contains information pertinent to an SDP service
-  search.
+The BTH_SDP_SERVICE_SEARCH_REQUEST structure contains information pertinent to an SDP service search.
 
 ## -struct-fields
 
 ### -field HANDLE_SDP_FIELD_NAME
 
+Handle returned by the connect request or HANDLE_SDP_LOCAL.
+
 ### -field uuids
 
-An array of UUIDs that represent the services for which to query. Each entry can be a 2-byte,
-     4-byte, or 16-byte type, and there can be a maximum of 12 entries. The array can be terminated before
-     all 12 entries are used if a UUID entry contains all zeros.
-
-
-#### - hConnection
-
-A handle to the remote SDP server that is returned by the 
-     <a href="/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_sdp_connect">IOCTL_BTH_SDP_CONNECT</a> IOCTL.
+An array of UUIDs that represent the services for which to query. Each entry can be a 2-byte, 4-byte, or 16-byte type, and there can be a maximum of 12 entries. The array can be terminated before all 12 entries are used if a UUID entry contains all zeros.
 
 ## -remarks
 
-This structure is passed as the input buffer to the 
-    <a href="/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_sdp_service_search">
-    IOCTL_BTH_SDP_SERVICE_SEARCH</a> IOCTL.
+This structure is passed as the input buffer to the [IOCTL_BTH_SDP_SERVICE_SEARCH](./ni-bthioctl-ioctl_bth_sdp_service_search.md) IOCTL.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_sdp_connect">IOCTL_BTH_SDP_CONNECT</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_sdp_service_search">IOCTL_BTH_SDP_SERVICE_SEARCH</a>
+- [IOCTL_BTH_SDP_CONNECT](./ni-bthioctl-ioctl_bth_sdp_connect.md)
+- [IOCTL_BTH_SDP_SERVICE_SEARCH](./ni-bthioctl-ioctl_bth_sdp_service_search.md)

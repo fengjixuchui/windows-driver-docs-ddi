@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_GETVIDEODECODERBUFFERINFO
 title: PFND3D11_1DDI_GETVIDEODECODERBUFFERINFO (d3d10umddi.h)
 description: Queries the description of a video decoder buffer for a specified video operation.
 old-location: display\getvideodecoderbufferinfo.htm
-ms.assetid: f129ae04-da7f-4681-a266-ac13317a895d
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_GETVIDEODECODERBUFFERINFO callback function"]
 ms.keywords: PFND3D11_1DDI_GETVIDEODECODERBUFFERINFO, PFND3D11_1DDI_GETVIDEODECODERBUFFERINFO callback, d3d10umddi/pfnGetVideoDecoderBufferInfo, display.getvideodecoderbufferinfo, pfnGetVideoDecoderBufferInfo, pfnGetVideoDecoderBufferInfo callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnGetVideoDecoderBufferInfo
+ - PFND3D11_1DDI_GETVIDEODECODERBUFFERINFO
 ---
 
 # PFND3D11_1DDI_GETVIDEODECODERBUFFERINFO callback function
@@ -50,25 +49,25 @@ Queries the description of a video decoder buffer for a specified video operatio
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pDecodeDesc* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_video_decoder_desc">D3D11_1DDI_VIDEO_DECODER_DESC</a> structure that specifies the video decoder operation.
 
-### -param Arg3
+### -param unnamedParam3
 
 *Index* [in]
 
 The zero-based index of the video decoder buffer type that is used for the specified operation. The display miniport driver returns the maximum number of video decoder buffer types that are required for the operation through a call to its <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_getvideodecoderbuffertypecount">GetVideoDecoderBufferTypeCount</a> function.
 
-### -param Arg4
+### -param unnamedParam4
 
 *pInfo* [out]
 
@@ -89,3 +88,4 @@ The Microsoft Direct3D runtime verifies that the <i>pDecodeDesc</i>  and <i>Inde
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_getvideodecoderbuffertypecount">GetVideoDecoderBufferTypeCount</a>
+

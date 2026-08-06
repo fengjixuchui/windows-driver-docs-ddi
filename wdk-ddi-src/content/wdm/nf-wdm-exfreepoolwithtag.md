@@ -4,7 +4,6 @@ title: ExFreePoolWithTag function (wdm.h)
 description: The ExFreePoolWithTag routine deallocates a block of pool memory allocated with the specified tag.
 old-location: kernel\exfreepoolwithtag.htm
 tech.root: kernel
-ms.assetid: ebf404dd-479a-4573-9372-4b777c3cd5e7
 ms.date: 04/30/2018
 keywords: ["ExFreePoolWithTag function"]
 ms.keywords: ExFreePoolWithTag, ExFreePoolWithTag routine [Kernel-Mode Driver Architecture], k102_03ac2997-acff-40b6-a110-718261627130.xml, kernel.exfreepoolwithtag, wdm/ExFreePoolWithTag
@@ -50,17 +49,17 @@ The <b>ExFreePoolWithTag</b> routine deallocates a block of pool memory allocate
 
 ## -parameters
 
-### -param P 
+### -param P [in]
 
-[in]
+
 Specifies the beginning address of a block of pool memory allocated by either <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag">ExAllocatePoolWithTag</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquotatag">ExAllocatePoolWithQuotaTag</a>.
 
-### -param Tag 
+### -param Tag [in]
 
-[in]
+
 Specifies the tag value passed to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithtag">ExAllocatePoolWithTag</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exallocatepoolwithquotatag">ExAllocatePoolWithQuotaTag</a> when the block of memory was originally allocated.
 
-The tag is a non-zero character literal of one to to four characters delimited by single quotation marks (for example, 'Tag1'). The string is usually specified in reverse order (for example, '1gaT'). Each ASCII character in the tag must be a value in the range 0x20 (space) to 0x7E (tilde). Each allocation code path should use a unique pool tag to help debuggers and verifiers identify the code path.
+The tag is a non-zero character literal of one to four characters delimited by single quotation marks (for example, 'Tag1'). The string is usually specified in reverse order (for example, '1gaT'). Each ASCII character in the tag must be a value in the range 0x20 (space) to 0x7E (tilde). Each allocation code path should use a unique pool tag to help debuggers and verifiers identify the code path.
 
 ## -remarks
 

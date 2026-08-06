@@ -4,7 +4,6 @@ title: IResourceList::AddEntry (portcls.h)
 description: The AddEntry method adds an entry to a resource list.
 old-location: audio\iresourcelist_addentry.htm
 tech.root: audio
-ms.assetid: 7f4ac419-a24e-4421-9891-9fea9479e781
 ms.date: 05/08/2018
 keywords: ["IResourceList::AddEntry"]
 ms.keywords: AddEntry, AddEntry method [Audio Devices], AddEntry method [Audio Devices],IResourceList interface, IResourceList interface [Audio Devices],AddEntry method, IResourceList.AddEntry, IResourceList::AddEntry, audio.iresourcelist_addentry, audmp-routines_6a6091c9-4cb3-40ca-8bb9-39b239c322b7.xml, portcls/IResourceList::AddEntry
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IResourceList.AddEntry
+ - IResourceList::AddEntry
 ---
 
 # IResourceList::AddEntry
@@ -50,14 +49,14 @@ The <code>AddEntry</code> method adds an entry to a resource list.
 
 ## -parameters
 
-### -param Translated 
+### -param Translated [in]
 
-[in]
+
 Pointer to a translated version of the entry. This parameter points to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure containing the translated version of the entry to be added.
 
-### -param Untranslated 
+### -param Untranslated [in]
 
-[in]
+
 Pointer to an untranslated version of the entry. This parameter points to a CM_PARTIAL_RESOURCE_DESCRIPTOR structure containing the untranslated (or "raw") version of the entry to be added.
 
 ## -returns
@@ -89,3 +88,4 @@ Indicates there are no free entries in the list.
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iresourcelist">IResourceList</a>
+

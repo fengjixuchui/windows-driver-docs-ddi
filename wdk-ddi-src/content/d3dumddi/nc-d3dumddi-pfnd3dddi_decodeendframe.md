@@ -4,7 +4,6 @@ title: PFND3DDDI_DECODEENDFRAME (d3dumddi.h)
 description: The DecodeEndFrame function notifies the user-mode display driver that all of the data that was required to decode the current frame was submitted.
 old-location: display\decodeendframe.htm
 tech.root: display
-ms.assetid: 6e8d3280-6ddc-4593-9208-c4f0c9ff254c
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DECODEENDFRAME callback function"]
 ms.keywords: DecodeEndFrame, DecodeEndFrame callback function [Display Devices], PFND3DDDI_DECODEENDFRAME, PFND3DDDI_DECODEENDFRAME callback, UserModeDisplayDriver_Functions_c80e307b-2b64-4b43-84c3-cae711e8282f.xml, d3dumddi/DecodeEndFrame, display.decodeendframe
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - DecodeEndFrame
-product:
- - Windows
+ - PFND3DDDI_DECODEENDFRAME
 ---
 
 # PFND3DDDI_DECODEENDFRAME callback function
@@ -56,7 +53,7 @@ The <b>DecodeEndFrame</b> function notifies the user-mode display driver that al
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -86,3 +83,4 @@ The <b>DecodeEndFrame</b> function notifies the user-mode display driver that it
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_decodeexecute">DecodeExecute</a>
+

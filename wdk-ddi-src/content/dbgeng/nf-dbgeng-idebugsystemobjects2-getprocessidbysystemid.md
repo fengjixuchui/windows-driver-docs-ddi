@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSystemObjects2.GetProcessIdBySystemId
 title: IDebugSystemObjects2::GetProcessIdBySystemId (dbgeng.h)
-description: The GetProcessIdBySystemId method returns the engine process ID for a process specified by its system process ID.
+description: The GetProcessIdBySystemId method returns the engine process ID for a process specified by its system process ID. This method belongs to IDebugSystemObjects2.
 old-location: debugger\getprocessidbysystemid.htm
 tech.root: debugger
-ms.assetid: 7260f0ea-5e8b-4b08-8c8f-70216ffe54a9
 ms.date: 05/03/2018
 keywords: ["IDebugSystemObjects2::GetProcessIdBySystemId"]
 ms.keywords: GetProcessIdBySystemId, GetProcessIdBySystemId method [Windows Debugging], GetProcessIdBySystemId method [Windows Debugging],IDebugSystemObjects interface, GetProcessIdBySystemId method [Windows Debugging],IDebugSystemObjects2 interface, GetProcessIdBySystemId method [Windows Debugging],IDebugSystemObjects3 interface, GetProcessIdBySystemId method [Windows Debugging],IDebugSystemObjects4 interface, IDebugSystemObjects interface [Windows Debugging],GetProcessIdBySystemId method, IDebugSystemObjects2 interface [Windows Debugging],GetProcessIdBySystemId method, IDebugSystemObjects2.GetProcessIdBySystemId, IDebugSystemObjects2::GetProcessIdBySystemId, IDebugSystemObjects3 interface [Windows Debugging],GetProcessIdBySystemId method, IDebugSystemObjects3::GetProcessIdBySystemId, IDebugSystemObjects4 interface [Windows Debugging],GetProcessIdBySystemId method, IDebugSystemObjects4::GetProcessIdBySystemId, IDebugSystemObjects::GetProcessIdBySystemId, IDebugSystemObjects_45c888bc-6771-4cd4-843e-aeafd8c6c6cb.xml, dbgeng/IDebugSystemObjects2::GetProcessIdBySystemId, dbgeng/IDebugSystemObjects3::GetProcessIdBySystemId, dbgeng/IDebugSystemObjects4::GetProcessIdBySystemId, dbgeng/IDebugSystemObjects::GetProcessIdBySystemId, debugger.getprocessidbysystemid
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSystemObjects.GetProcessIdBySystemId
- - IDebugSystemObjects2.GetProcessIdBySystemId
- - IDebugSystemObjects3.GetProcessIdBySystemId
- - IDebugSystemObjects4.GetProcessIdBySystemId
+ - IDebugSystemObjects2::GetProcessIdBySystemId
 ---
 
 # IDebugSystemObjects2::GetProcessIdBySystemId
@@ -53,14 +49,14 @@ The <b>GetProcessIdBySystemId</b> method returns the engine process ID for a pro
 
 ## -parameters
 
-### -param SysId 
+### -param SysId [in]
 
-[in]
+
 Specifies the system process ID.
 
-### -param Id 
+### -param Id [out]
 
-[out]
+
 Receives the engine process ID.
 
 ## -returns
@@ -101,3 +97,4 @@ The target is a kernel-mode target.
 This method is only available in user-mode debugging.
 
 For more information about processes, see <a href="/windows-hardware/drivers/debugger/threads-and-processes">Threads and Processes</a>.
+

@@ -4,7 +4,6 @@ title: IMiniportAudioEngineNode::GetDeviceAttributeSteppings (portcls.h)
 description: Gets the allowed stepping value for the audio device attribute.
 old-location: audio\iminiportaudioenginenode_getdeviceattributesteppings.htm
 tech.root: audio
-ms.assetid: 7AF6C9AF-8955-4F09-A42C-097B4AD1CD3A
 ms.date: 05/08/2018
 keywords: ["IMiniportAudioEngineNode::GetDeviceAttributeSteppings"]
 ms.keywords: GetDeviceAttributeSteppings, GetDeviceAttributeSteppings method [Audio Devices], GetDeviceAttributeSteppings method [Audio Devices],IMiniportAudioEngineNode interface, IMiniportAudioEngineNode interface [Audio Devices],GetDeviceAttributeSteppings method, IMiniportAudioEngineNode.GetDeviceAttributeSteppings, IMiniportAudioEngineNode::GetDeviceAttributeSteppings, audio.iminiportaudioenginenode_getdeviceattributesteppings, portcls/IMiniportAudioEngineNode::GetDeviceAttributeSteppings
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IMiniportAudioEngineNode.GetDeviceAttributeSteppings
+ - IMiniportAudioEngineNode::GetDeviceAttributeSteppings
 ---
 
 # IMiniportAudioEngineNode::GetDeviceAttributeSteppings
@@ -50,24 +49,24 @@ Gets the allowed stepping value for the audio device attribute.
 
 ## -parameters
 
-### -param ulNodeId 
+### -param ulNodeId [in]
 
-[in]
+
 The ID for the node that represents the audio device.
 
-### -param targetType 
+### -param targetType [in]
 
-[in]
+
 An  <a href="/windows-hardware/drivers/ddi/portcls/ne-portcls-echanneltargettype">eChannelTargetType</a> enumerated value that specifies the type of target node. For example, a Volume or a Mute node.
 
-### -param pKsPropStepLong 
+### -param pKsPropStepLong [out]
 
-[out]
+
 A structure of type <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_stepping_long">KSPROPERTY_STEPPING_LONG</a> that contains information about the allowed stepping value for the device attribute.
 
-### -param ui32DataSize 
+### -param ui32DataSize [in]
 
-[in]
+
 The allowed stepping value.
 
 ## -returns
@@ -87,3 +86,4 @@ returns an appropriate error code.
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/ne-portcls-echanneltargettype">eChannelTargetType</a>
+

@@ -2,8 +2,7 @@
 UID: NS:uart._CPPORT
 title: _CPPORT (uart.h)
 description: Contains the mutable runtime state of a specific instance of a UART device.
-tech.root: serports
-ms.assetid: f82a2ac1-ed30-4e75-ad87-54275a36130b
+tech.root: uart
 ms.date: 10/19/2018
 keywords: ["CPPORT structure"]
 ms.keywords: _CPPORT, CPPORT, *PCPPORT,
@@ -36,6 +35,8 @@ api_location:
  - uart.h
 api_name:
  - _CPPORT
+ - PCPPORT
+ - CPPORT
 ---
 
 # _CPPORT structure
@@ -75,3 +76,4 @@ A pointer to a [**UART_HARDWARE_WRITE_INDEXED_UCHAR**](nc-uart-uart_hardware_wri
 
 ## -see-also
 
+[**uart.h**](index.md)

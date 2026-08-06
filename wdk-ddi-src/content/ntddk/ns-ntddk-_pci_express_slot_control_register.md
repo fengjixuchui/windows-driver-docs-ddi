@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddk._PCI_EXPRESS_SLOT_CONTROL_REGISTER
 title: _PCI_EXPRESS_SLOT_CONTROL_REGISTER (ntddk.h)
-description: The PCI_EXPRESS_SLOT_CONTROL_REGISTER structure describes a PCI Express (PCIe) slot control register of a PCIe capability structure.
+description: The _PCI_EXPRESS_SLOT_CONTROL_REGISTER structure (ntddk.h) describes a PCI Express (PCIe) slot control register.
 old-location: pci\pci_express_slot_control_register.htm
 tech.root: PCI
-ms.assetid: 4755f4c3-305e-41a5-afdf-eda8e8e81b74
 ms.date: 02/24/2018
 keywords: ["PCI_EXPRESS_SLOT_CONTROL_REGISTER structure"]
 ms.keywords: "*PPCI_EXPRESS_SLOT_CONTROL_REGISTER, PCI.pci_express_slot_control_register, PCI_EXPRESS_SLOT_CONTROL_REGISTER, PCI_EXPRESS_SLOT_CONTROL_REGISTER union [Buses], PPCI_EXPRESS_SLOT_CONTROL_REGISTER, PPCI_EXPRESS_SLOT_CONTROL_REGISTER union pointer [Buses], _PCI_EXPRESS_SLOT_CONTROL_REGISTER, ntddk/PCI_EXPRESS_SLOT_CONTROL_REGISTER, ntddk/PPCI_EXPRESS_SLOT_CONTROL_REGISTER, pci_struct_d554e74d-130d-4d6d-8801-c65ea66653cb.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _PCI_EXPRESS_SLOT_CONTROL_REGISTER
+ - PPCI_EXPRESS_SLOT_CONTROL_REGISTER
  - PCI_EXPRESS_SLOT_CONTROL_REGISTER
 ---
 
@@ -61,12 +62,12 @@ The PCI_EXPRESS_SLOT_CONTROL_REGISTER structure describes a PCI Express (PCIe) s
 A USHORT representation of the contents of the PCI_EXPRESS_SLOT_CONTROL_REGISTER structure.
 
 
-#### - AttentionButtonEnable
+### -field DUMMYSTRUCTNAME.AttentionButtonEnable
 
 A single bit that indicates that the attention button for the slot is enabled to generate events.
 
 
-#### - AttentionIndicatorControl
+### -field DUMMYSTRUCTNAME.AttentionIndicatorControl
 
 The state of the slot's attention indicator. Possible values are:
 
@@ -91,32 +92,32 @@ The indicator is blinking.
 The indicator is off.
 
 
-#### - CommandCompletedEnable
+### -field DUMMYSTRUCTNAME.CommandCompletedEnable
 
 A single bit that indicates that notification is enabled for the slot when an issued command is completed by the hot-plug controller.
 
 
-#### - DataLinkStateChangeEnable
+### -field DUMMYSTRUCTNAME.DataLinkStateChangeEnable
 
 A single bit that indicates that notification is enabled for the slot for changes to the data link layer active bit of the link status register of the PCIe capability structure.
 
 
-#### - ElectromechanicalLockControl
+### -field DUMMYSTRUCTNAME.ElectromechanicalLockControl
 
 This member always contains zero.
 
 
-#### - HotPlugInterruptEnable
+### -field DUMMYSTRUCTNAME.HotPlugInterruptEnable
 
 A single bit that indicates that interrupts for the slot are enabled for hot-plug events.
 
 
-#### - MRLSensorEnable
+### -field DUMMYSTRUCTNAME.MRLSensorEnable
 
 A single bit that indicates that the manually operated retention latch (MRL) sensor for the slot is enabled to generate events.
 
 
-#### - PowerControllerControl
+### -field DUMMYSTRUCTNAME.PowerControllerControl
 
 The state of the slot's power controller. Possible values are:
 
@@ -135,12 +136,12 @@ The power is on.
 The power is off.
 
 
-#### - PowerFaultDetectEnable
+### -field DUMMYSTRUCTNAME.PowerFaultDetectEnable
 
 A single bit that indicates that power fault detection for the slot is enabled to generate events.
 
 
-#### - PowerIndicatorControl
+### -field DUMMYSTRUCTNAME.PowerIndicatorControl
 
 The state of the slot's power indicator. Possible values are:
 
@@ -165,12 +166,12 @@ The indicator is blinking.
 The indicator is off.
 
 
-#### - PresenceDetectEnable
+### -field DUMMYSTRUCTNAME.PresenceDetectEnable
 
 A single bit that indicates that card presence detection for the slot is enabled to generate events.
 
 
-#### - Rsvd
+### -field DUMMYSTRUCTNAME.Rsvd
 
 Reserved.
 
@@ -205,3 +206,4 @@ A PCI_EXPRESS_SLOT_CONTROL_REGISTER structure is contained in the <a href="/wind
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_pci_express_capability">PCI_EXPRESS_CAPABILITY</a>
+

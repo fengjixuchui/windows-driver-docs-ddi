@@ -4,7 +4,6 @@ title: PFN_WSK_RELEASE_DATAGRAM_INDICATION_LIST (wsk.h)
 description: The WskRelease function releases a linked list of WSK_DATAGRAM_INDICATION structures that was previously retained by a WSK application.
 old-location: netvista\pfn_wsk_release_datagram_indication_list.htm
 tech.root: netvista
-ms.assetid: 4E186CBD-61BC-4337-81AC-65F6CD7433F3
 ms.date: 05/02/2018
 keywords: ["PFN_WSK_RELEASE_DATAGRAM_INDICATION_LIST callback function"]
 ms.keywords: PFN_WSK_RELEASE_DATAGRAM_INDICATION_LIST, PFN_WSK_RELEASE_DATAGRAM_INDICATION_LIST callback, WskReleaseDatagramIndicationList, WskReleaseDatagramIndicationList callback function [Network Drivers Starting with Windows Vista], netvista.pfn_wsk_release_datagram_indication_list, wsk/WskReleaseDatagramIndicationList
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - Wsk.h
 api_name:
- - WskReleaseDatagramIndicationList
+ - PFN_WSK_RELEASE_DATAGRAM_INDICATION_LIST
 ---
 
 # PFN_WSK_RELEASE_DATAGRAM_INDICATION_LIST callback function
@@ -56,16 +55,16 @@ The
 
 ## -parameters
 
-### -param Socket 
+### -param Socket [in]
 
-[in]
+
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_socket">WSK_SOCKET</a> structure that specifies the socket
      object for the socket from which the data was received.
 
-### -param DatagramIndication 
+### -param DatagramIndication [in]
 
-[in]
+
 A pointer to the linked list of structures to be released. For this parameter, the WSK application
      should specify the 
      <i>DatagramIndication</i> parameter that was passed to its 
@@ -149,3 +148,4 @@ Closing a socket by calling the
 
 
 <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_receive_from_event">WskReceiveFromEvent</a>
+

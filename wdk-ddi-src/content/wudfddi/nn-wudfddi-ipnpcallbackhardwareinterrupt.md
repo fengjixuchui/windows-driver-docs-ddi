@@ -4,7 +4,6 @@ title: IPnpCallbackHardwareInterrupt (wudfddi.h)
 description: The IPnpCallbackHardwareInterrupt interface supports interrupt-related Plug and Play and power management callback methods.
 old-location: wdf\ipnpcallbackhardwareinterrupt.htm
 tech.root: wdf
-ms.assetid: C66A570A-EEAF-4D18-A834-B50576F51E29
 ms.date: 02/26/2018
 keywords: ["IPnpCallbackHardwareInterrupt interface"]
 ms.keywords: IPnpCallbackHardwareInterrupt, IPnpCallbackHardwareInterrupt interface, IPnpCallbackHardwareInterrupt interface,described, umdf.ipnpcallbackhardwareinterrupt, wdf.ipnpcallbackhardwareinterrupt, wudfddi/IPnpCallbackHardwareInterrupt
@@ -52,9 +51,9 @@ api_name:
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPnpCallbackHardwareInterrupt</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPnpCallbackHardwareInterrupt</b> also has these types of members:
+The <b>IPnpCallbackHardwareInterrupt</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPnpCallbackHardwareInterrupt</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>
 
 ## -see-also

@@ -4,7 +4,6 @@ title: _NDIS_WWAN_MODEM_CONFIG_INFO (ndiswwan.h)
 description: The NDIS_WWAN_MODEM_CONFIG_INFO structure represents the modem's configuration information.
 old-location: netvista\ndis_wwan_modem_config_info.htm
 tech.root: netvista
-ms.assetid: 07C2BAED-157A-459C-B558-115C0091ECE5
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_MODEM_CONFIG_INFO structure"]
 ms.keywords: "*PNDIS_WWAN_MODEM_CONFIG_INFO, NDIS_WWAN_MODEM_CONFIG_INFO, NDIS_WWAN_MODEM_CONFIG_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_MODEM_CONFIG_INFO, PNDIS_WWAN_MODEM_CONFIG_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_MODEM_CONFIG_INFO, ndiswwan/NDIS_WWAN_MODEM_CONFIG_INFO, ndiswwan/PNDIS_WWAN_MODEM_CONFIG_INFO, netvista.ndis_wwan_modem_config_info"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_MODEM_CONFIG_INFO
+ - PNDIS_WWAN_MODEM_CONFIG_INFO
  - NDIS_WWAN_MODEM_CONFIG_INFO
 ---
 
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_MODEM_CONFIG_INFO)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field uStatus
 
@@ -175,7 +176,7 @@ A formatted <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_modem_conf
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -183,8 +184,9 @@ A formatted <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_modem_conf
 
 
 
-<a href="https://msdn.microsoft.com/527B970C-09FC-4E49-A309-44D5C6A39778">OID_WWAN_MODEM_CONFIG_INFO</a>
+<a href="/windows-hardware/drivers/network/oid-wwan-modem-config-info">OID_WWAN_MODEM_CONFIG_INFO</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_modem_config_info">WWAN_MODEM_CONFIG_INFO</a>
+

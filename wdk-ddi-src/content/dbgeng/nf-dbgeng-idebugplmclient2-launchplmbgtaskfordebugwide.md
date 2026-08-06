@@ -4,7 +4,6 @@ title: IDebugPlmClient2::LaunchPlmBgTaskForDebugWide (dbgeng.h)
 description: Launches a suspended Process Lifecycle Management (PLM) background task.
 old-location: debugger\idebugplmclient2_launchplmbgtaskfordebugwide.htm
 tech.root: debugger
-ms.assetid: 47793815-F7AC-4E0D-809C-DBB7497BDA30
 ms.date: 05/03/2018
 keywords: ["IDebugPlmClient2::LaunchPlmBgTaskForDebugWide"]
 ms.keywords: IDebugPlmClient2 interface [Windows Debugging],LaunchPlmBgTaskForDebugWide method, IDebugPlmClient2.LaunchPlmBgTaskForDebugWide, IDebugPlmClient2::LaunchPlmBgTaskForDebugWide, LaunchPlmBgTaskForDebugWide, LaunchPlmBgTaskForDebugWide method [Windows Debugging], LaunchPlmBgTaskForDebugWide method [Windows Debugging],IDebugPlmClient2 interface, dbgeng/IDebugPlmClient2::LaunchPlmBgTaskForDebugWide, debugger.idebugplmclient2_launchplmbgtaskfordebugwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugPlmClient2.LaunchPlmBgTaskForDebugWide
+ - IDebugPlmClient2::LaunchPlmBgTaskForDebugWide
 ---
 
 # IDebugPlmClient2::LaunchPlmBgTaskForDebugWide
@@ -50,34 +49,34 @@ Launches a suspended Process Lifecycle Management (PLM) background task.
 
 ## -parameters
 
-### -param Server 
+### -param Server [in]
 
-[in]
+
 The server of the task.
 
-### -param Timeout 
+### -param Timeout [in]
 
-[in]
+
 A time-out value.
 
-### -param PackageFullName 
+### -param PackageFullName [in]
 
-[in]
+
 A pointer to the package name.
 
-### -param BackgroundTaskId 
+### -param BackgroundTaskId [in]
 
-[in]
+
 A pointer to the task ID.
 
-### -param ProcessId 
+### -param ProcessId [out]
 
-[out]
+
 A pointer to a process ID output.
 
-### -param ThreadId 
+### -param ThreadId [out]
 
-[out]
+
 A pointer to a thread ID output.
 
 ## -returns
@@ -87,3 +86,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugplmclient2">IDebugPlmClient2</a>
+

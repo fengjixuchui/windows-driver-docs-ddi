@@ -1,17 +1,16 @@
 ---
 UID: NS:iddcx.IDDCX_METADATA
 title: IDDCX_METADATA (iddcx.h)
-description: Gives information about the current provided surface and what is displayed on it.
+description: Learn more about the IDDCX_METADATA structure.
 old-location: display\iddcx_metadata.htm
 tech.root: display
-ms.assetid: 7128e49d-71e9-4014-9f08-591cfaeba363
-ms.date: 05/10/2018
+ms.date: 08/08/2022
 keywords: ["IDDCX_METADATA structure"]
 ms.keywords: IDDCX_METADATA, IDDCX_METADATA structure, IDDCX_METADATA structure [Display Devices], IDDCX_METADATA structure pointer [Display Devices], IDDCX_METADATA structure structure [Display Devices], display.iddcx_metadata, iddcx/IDDCX_METADATA
 req.header: iddcx.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 10
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -43,50 +42,51 @@ api_name:
 
 # IDDCX_METADATA structure
 
-
 ## -description
 
-                 Gives information about the current provided surface and what is displayed on it.
+**IDDCX_METADATA** provides information about the current provided surface and what is displayed on it.
 
 ## -struct-fields
 
 ### -field Size
 
-                     Total size of the structure
+Total size of the structure, in bytes.
 
 ### -field PresentationFrameNumber
 
-                     Presentation frame number of this surface. If the frame number is the same as the previous frame, then it indicates that there has not been any image updates from the previous frame. This is an opportunity for the driver to re-encode the desktop image again to increase the visual quality. Once there are no more updates, the OS presents the same frame as many times indicated by the <a href="/windows-hardware/drivers/ddi/iddcx/ns-iddcx-iddcx_adapter_caps">IDDCX_ADAPTER_CAPS</a> value <b>StaticDesktopReencodeFrameCount</b> , then stops presenting until the next update
+Presentation frame number of this surface.
 
 ### -field DirtyRectCount
 
-                      Number of dirty rects for this frame. Call <a href="/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchaingetdirtyrects">IddCxSwapChainGetDirtyRects</a> to get the dirty rects
-                 
+Number of dirty rects for this frame. Call [**IddCxSwapChainGetDirtyRects**](nf-iddcx-iddcxswapchaingetdirtyrects.md) to get the dirty rects.
 
-<div class="alert"><b>Note</b>   A zero <b>DirtyRectCount</b> and <b>MoveRegionCount</b> value indicates there were no desktop updates and the
-    PresentationFrameNumber is the same as last frame</div>
-<div> </div>
+A MoveRegionCount of zero and DirtyRectCount of 1, where the single dirty rect has all values set to zero, indicates that there has not been any image updates from the previous frame. This is an opportunity for the driver to re-encode the desktop image again to increase the visual quality. Once there are no more updates, the OS presents the same frame as many times as indicated by the [**IDDCX_ADAPTER_CAPS**](ns-iddcx-iddcx_adapter_caps.md) value **StaticDesktopReencodeFrameCount**, then stops presenting until the next update.
 
 ### -field MoveRegionCount
 
-                     Number of move regions in this frame, call <a href="/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchaingetmoveregions">IddCxSwapChainGetMoveRegions</a> to get the move regions
-                 
+Starting in IddCx v1.7, the [**IDDCX_ADAPTER_FLAGS_CAN_USE_MOVE_REGIONS** flag was deprecated](/windows-hardware/drivers/display/iddcx1.7-updates) and move regions are no longer provided at acquire frame time, so this field will always be zero.
 
-<div class="alert"><b>Note</b>   A zero <b>DirtyRectCount</b> and <b>MoveRegionCount</b> value indicates there were no desktop updates and the
-    PresentationFrameNumber is the same as last frame</div>
-<div> </div>
+Number of move regions in this frame. Call [**IddCxSwapChainGetMoveRegions**](nf-iddcx-iddcxswapchaingetmoveregions.md) to get the move regions.
 
 ### -field HwProtectedSurface
 
-                      Indicates if the provided surface is hardware protected or not
+Indicates whether the provided surface is hardware protected.
 
 ### -field PresentDisplayQPCTime
 
-                     System QPC time of when this surface should be displayed on the indirect display monitor
+System QPC time of when this surface should be displayed on the indirect display monitor.
 
 ### -field pSurface
 
-                     DX surface that contains the image to encode and transmit. The driver can use this DX surface anytime until <a href="/windows-hardware/drivers/ddi/iddcx/nf-iddcx-iddcxswapchainreleaseandacquirebuffer">IddCxSwapChainReleaseAndAcquire</a> is called again
+Pointer to a [**IDXGIResource**](/windows/win32/api/dxgi/nn-dxgi-idxgiresource) DX surface that contains the image to encode and transmit. The driver can use this DX surface anytime until [**IddCxSwapChainReleaseAndAcquire**](nf-iddcx-iddcxswapchainreleaseandacquirebuffer.md) is called again.
 
-<div class="alert"><b>Note</b>  This surface is always a A8R8G8B8 formated surface</div>
-<div> </div>
+> [!NOTE]
+> This surface is always a A8R8G8B8 formatted surface.
+
+## -remarks
+
+A single empty dirty rect indicates there were no desktop updates.
+
+### -see-also
+
+[**IDDCX_FRAME_STATISTICS**](ns-iddcx-iddcx_frame_statistics.md)

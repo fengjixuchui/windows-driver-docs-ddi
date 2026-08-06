@@ -4,7 +4,6 @@ title: _NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS (ntddndis.h)
 description: The NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS structure specifies the parameters for the custom status information of a Hyper-V extensible switch port.
 old-location: netvista\ndis_switch_port_feature_status_parameters.htm
 tech.root: netvista
-ms.assetid: 117ba27f-812a-406d-8120-99ba89551164
 ms.date: 05/02/2018
 keywords: ["NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS structure"]
 ms.keywords: "*PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, netvista.ndis_switch_port_feature_status_parameters, ntddndis/NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS, ntddndis/PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS
+ - PNDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS
  - NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS
 ---
 
@@ -58,7 +59,7 @@ The status information is specified through an <a href="/windows-hardware/driver
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_PORT_FEATURE_STATUS_PARAMETERS</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value:  
 
@@ -141,7 +142,7 @@ An <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -154,3 +155,4 @@ An <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port
 
 
 <a href="/windows-hardware/drivers/network/oid-switch-port-feature-status-query">OID_SWITCH_PORT_FEATURE_STATUS_QUERY</a>
+

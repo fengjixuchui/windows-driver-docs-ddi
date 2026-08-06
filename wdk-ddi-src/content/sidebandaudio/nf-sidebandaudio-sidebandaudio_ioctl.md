@@ -2,8 +2,7 @@
 UID: NF:sidebandaudio.SIDEBANDAUDIO_IOCTL
 title: SIDEBANDAUDIO_IOCTL macro (sidebandaudio.h)
 description: A macro that is used for the SIDEBANDAUDIO_IOCTL.
-ms.assetid: 3ac72e47-78ef-4e4c-9614-8bec1f24d539
-ms.date: 10/05/2018
+ms.date: 07/11/2023
 keywords: ["SIDEBANDAUDIO_IOCTL macro"]
 ms.keywords: SIDEBANDAUDIO_IOCTL
 req.header: sidebandaudio.h
@@ -41,7 +40,6 @@ api_name:
 
 # SIDEBANDAUDIO_IOCTL macro
 
-
 ## -description
 
 A macro that is used for the SIDEBANDAUDIO_IOCTL.
@@ -50,9 +48,16 @@ A macro that is used for the SIDEBANDAUDIO_IOCTL.
 
 ### -param _index_
 
-TBD
+A value used to insure uniqueness of the IOCTLs
 
 ## -remarks
 
+## -requirements
+
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Header** | sidebandaudio.h |
+
 ## -see-also
 
+[sidebandaudio.h](index.md)

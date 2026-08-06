@@ -2,11 +2,11 @@
 UID: NC:wdm.FPGA_CONTROL_CONFIG_SPACE
 title: FPGA_CONTROL_CONFIG_SPACE (wdm.h)
 description: Reserved for future use. Enables or disables the access to the configuration space of the FPGA device.
-ms.assetid: 963b8836-30f6-4321-9835-3860afe6076d
-ms.date: 10/19/2018
+ms.date: 01/19/2023
+tech.root: kernel
 keywords: ["FPGA_CONTROL_CONFIG_SPACE callback function"]
 req.header: wdm.h
-req.include-header: 
+req.include-header: Wdm.h
 req.target-type: 
 req.target-min-winverclnt: Windows 10, version 1803
 req.target-min-winversvr: 
@@ -36,48 +36,25 @@ api_name:
  - FPGA_CONTROL_CONFIG_SPACE
 ---
 
-# FPGA_CONTROL_CONFIG_SPACE callback function
-
-
 ## -description
 
 Reserved for future use.
+
 Enables or disables the access to the configuration space of the FPGA device.
 
 ## -parameters
 
-### -param Context
+### -param Context [_In_reads_opt_(_Inexpressible_("varies"))]
 
-[_In_reads_opt_(_Inexpressible_("varies"))] The handle to the bus extension.
+The handle to the bus extension.
 
-### -param Enable
+### -param Enable [_In_]
 
-[_In_] A boolean value that indicates whether the configuration space access should be enabled or disabled. TRUE indicates enabled; FALSE otherwise.
+A boolean value that indicates whether the configuration space access should be enabled or disabled. TRUE indicates enabled; FALSE otherwise.
 
 ## -returns
 
 Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate NTSTATUS Values error code. For more information, see [NTSTATUS Values](/windows-hardware/drivers/kernel/ntstatus-values).
-
-## -prototype
-
-```cpp
-//Declaration
-
-FPGA_CONTROL_CONFIG_SPACE FpgaControlConfigSpace; 
-
-// Definition
-
-NTSTATUS FpgaControlConfigSpace 
-(
-	PVOID Context
-	BOOLEAN Enable
-)
-{...}
-
-FPGA_CONTROL_CONFIG_SPACE *PFPGA_CONTROL_CONFIG_SPACE
-
-
-```
 
 ## -remarks
 

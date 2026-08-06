@@ -1,11 +1,10 @@
 ---
 UID: NS:ntddstor._STORAGE_PROTOCOL_COMMAND
-title: _STORAGE_PROTOCOL_COMMAND (ntddstor.h)
+title: STORAGE_PROTOCOL_COMMAND (ntddstor.h)
 description: This structure is used as an input buffer when using the pass-through mechanism to issue a vendor-specific command to a storage device (via IOCTL_STORAGE_PROTOCOL_COMMAND).
 old-location: storage\storage_protocol_command.htm
 tech.root: storage
-ms.assetid: 0B7FC33E-A417-48E4-99CC-D1FFC340A405
-ms.date: 06/11/2019
+ms.date: 02/28/2024
 keywords: ["STORAGE_PROTOCOL_COMMAND structure"]
 ms.keywords: "*PSTORAGE_PROTOCOL_COMMAND, PSTORAGE_PROTOCOL_COMMAND, PSTORAGE_PROTOCOL_COMMAND structure pointer [Storage Devices], STORAGE_PROTOCOL_COMMAND, STORAGE_PROTOCOL_COMMAND structure [Storage Devices], _STORAGE_PROTOCOL_COMMAND, ntddstor/PSTORAGE_PROTOCOL_COMMAND, ntddstor/STORAGE_PROTOCOL_COMMAND, storage.storage_protocol_command"
 req.header: ntddstor.h
@@ -42,11 +41,12 @@ api_type:
 api_location:
  - ntddstor.h
 api_name:
+ - _STORAGE_PROTOCOL_COMMAND
+ - PSTORAGE_PROTOCOL_COMMAND
  - STORAGE_PROTOCOL_COMMAND
 ---
 
-# _STORAGE_PROTOCOL_COMMAND structure
-
+# STORAGE_PROTOCOL_COMMAND structure
 
 ## -description
 
@@ -136,16 +136,20 @@ Reserved for future use.
 
 ### -field FixedProtocolReturnData
 
-The return data. This is optionally set. Some protocols such as NVMe, may return a small amount of data (DWORD0 from completion queue entry) without the need of a separate device data transfer.
+The return data. This is optionally set. Some protocols like NVMe, may return a small amount of data (DWORD0 from completion queue entry) without the need for a separate device data transfer.
 
-### -field Reserved1
+### -field FixedProtocolReturnData2
+
+The return data2. This is optionally set. Some protocols like NVMe, may return a small amount data (DWORD1 from completion queue entry) without the need for separate device data transfer.
+
+### -field Reserved1[2]
 
 Reserved for future use.
 
-### -field Command
+### -field Command[ANYSIZE_ARRAY]
 
 The vendor-specific command that is to be passed-through to the device.
 
 ## -see-also
 
-[IOCTL_STORAGE_PROTOCOL_COMMAND](./ni-ntddstor-ioctl_storage_protocol_command.md)
+- [IOCTL_STORAGE_PROTOCOL_COMMAND](./ni-ntddstor-ioctl_storage_protocol_command.md)

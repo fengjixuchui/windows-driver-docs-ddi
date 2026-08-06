@@ -4,7 +4,6 @@ title: UdecxUsbDeviceSetFunctionSuspendAndWakeComplete function (udecxusbdevice.
 description: Completes an asynchronous request for changing the power state of a particular function of a virtual USB 3.0 device.
 old-location: buses\udecxusbdevicesetfunctionsuspendandwakecomplete.htm
 tech.root: usbref
-ms.assetid: 21339CB5-8529-4649-9F1A-9D8C80709407
 ms.date: 05/07/2018
 keywords: ["UdecxUsbDeviceSetFunctionSuspendAndWakeComplete function"]
 ms.keywords: UdecxUsbDeviceSetFunctionSuspendAndWakeComplete, UdecxUsbDeviceSetFunctionSuspendAndWakeComplete function [Buses], buses.udecxusbdevicesetfunctionsuspendandwakecomplete, udecxusbdevice/UdecxUsbDeviceSetFunctionSuspendAndWakeComplete
@@ -51,14 +50,14 @@ Completes an asynchronous request for changing the power state of a particular f
 
 ## -parameters
 
-### -param UdecxUsbDevice 
+### -param UdecxUsbDevice [in]
 
-[in]
+
 A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.
 
-### -param CompletionStatus 
+### -param CompletionStatus [in]
 
-[in]
+
 An appropriate <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS</a> error code that indicates the success or failure of the asynchronous operation.
 
 ## -see-also

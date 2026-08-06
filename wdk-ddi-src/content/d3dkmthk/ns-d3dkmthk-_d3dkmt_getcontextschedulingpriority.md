@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_GETCONTEXTSCHEDULINGPRIORITY
 title: _D3DKMT_GETCONTEXTSCHEDULINGPRIORITY (d3dkmthk.h)
 description: The D3DKMT_GETDEVICESCHEDULINGPRIORITY structure describes parameters for retrieving scheduling priority for a device context.
 old-location: display\d3dkmt_getcontextschedulingpriority.htm
-ms.assetid: ef60ba1c-6fff-4553-ba1c-97abbe48fed9
 ms.date: 05/10/2018
 keywords: ["D3DKMT_GETCONTEXTSCHEDULINGPRIORITY structure"]
 ms.keywords: D3DKMT_GETCONTEXTSCHEDULINGPRIORITY, D3DKMT_GETCONTEXTSCHEDULINGPRIORITY structure [Display Devices], OpenGL_Structs_076cf4c2-d805-473f-a035-1e0ec357ca1e.xml, _D3DKMT_GETCONTEXTSCHEDULINGPRIORITY, d3dkmthk/D3DKMT_GETCONTEXTSCHEDULINGPRIORITY, display.d3dkmt_getcontextschedulingpriority
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_GETCONTEXTSCHEDULINGPRIORITY
  - D3DKMT_GETCONTEXTSCHEDULINGPRIORITY
 ---
 
@@ -52,14 +52,15 @@ The D3DKMT_GETDEVICESCHEDULINGPRIORITY structure describes parameters for retrie
 
 ## -struct-fields
 
-### -field hContext
+### -field hContext [in]
 
-[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device context to retrieve scheduling priority for.
+A D3DKMT_HANDLE data type that represents the kernel-mode handle to the device context to retrieve scheduling priority for.
 
-### -field Priority
+### -field Priority [out]
 
-[out] The priority level that is retrieved for the device context.
+The priority level that is retrieved for the device context.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtgetcontextschedulingpriority">D3DKMTGetContextSchedulingPriority</a>
+

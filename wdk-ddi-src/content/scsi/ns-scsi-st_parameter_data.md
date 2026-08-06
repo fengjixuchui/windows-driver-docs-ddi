@@ -1,11 +1,9 @@
 ---
-UID: NS:scsi.__unnamed_struct_14
+UID: NS:scsi.ST_PARAMETER_DATA
 title: ST_PARAMETER_DATA (scsi.h)
-description: The ST_PARAMETER_DATA structure contains the parameter list for the set timestamp command.
-old-location: storage\st_parameter_data.htm
+description: The ST_PARAMETER_DATA structure (scsi.h) contains the parameter list for the set timestamp command that is used to initialize a device clock.
 tech.root: storage
-ms.assetid: C50F45EC-433C-421D-BD02-4C86CB44D5A4
-ms.date: 03/29/2018
+ms.date: 09/20/2022
 keywords: ["ST_PARAMETER_DATA structure"]
 ms.keywords: "*PST_PARAMETER_DATA, PST_PARAMETER_DATA, PST_PARAMETER_DATA structure pointer [Storage Devices], ST_PARAMETER_DATA, ST_PARAMETER_DATA structure [Storage Devices], scsi/PST_PARAMETER_DATA, scsi/ST_PARAMETER_DATA, storage.st_parameter_data"
 req.header: scsi.h
@@ -40,17 +38,13 @@ api_type:
 api_location:
  - scsi.h
 api_name:
+ - PST_PARAMETER_DATA
  - ST_PARAMETER_DATA
 ---
 
-# ST_PARAMETER_DATA structure (scsi.h)
-
-
 ## -description
 
-<p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
-
-The <b>ST_PARAMETER_DATA</b> structure contains the parameter list for the set timestamp command.
+The **ST_PARAMETER_DATA** structure contains the parameter list for the set timestamp command.
 
 ## -struct-fields
 
@@ -69,4 +63,5 @@ Reserved for future use.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/minitape/ns-minitape-rt_parameter_data">RT_PARAMETER_DATA</a>
+[**RT_PARAMETER_DATA**](../minitape/ns-minitape-rt_parameter_data.md)
+

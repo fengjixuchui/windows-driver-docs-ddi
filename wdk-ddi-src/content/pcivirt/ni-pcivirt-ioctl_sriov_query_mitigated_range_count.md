@@ -4,7 +4,6 @@ title: IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT (pcivirt.h)
 description: The request determines the ranges of memory-mapped I/O space that must mitigated.
 old-location: pci\ioctl-sriov-query-mitigated-range-count.htm
 tech.root: PCI
-ms.assetid: 68fd97a5-b7ea-43c0-96ed-b64445fd21dd
 ms.date: 02/24/2018
 keywords: ["IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT IOCTL"]
 ms.keywords: IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT, IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT control code [Buses], PCI.ioctl-sriov-query-mitigated-range-count, pcivirt/IOCTL_SRIOV_QUERY_MITIGATED_RANGE_COUNT
@@ -56,6 +55,8 @@ api_name:
 
 ## -ioctlparameters
 
+### -ioctl-major-code
+
 ### -input-buffer
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/pcivirt/ns-pcivirt-_sriov_mitigated_range_count_input">SRIOV_MITIGATED_RANGE_COUNT_INPUT</a> structure. Set the <b>VfIndex</b> member to 0.
@@ -77,8 +78,6 @@ The size of the <a href="/windows-hardware/drivers/ddi/pcivirt/ns-pcivirt-_sriov
 ### -inout-buffer-length
 
 ### -status-block
-
-TBD
 
 <b>Irp->IoStatus.Status</b> is set to STATUS_SUCCESS if the request is successful. Otherwise, <b>Status</b> to the appropriate error condition as a <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS</a> code.
 

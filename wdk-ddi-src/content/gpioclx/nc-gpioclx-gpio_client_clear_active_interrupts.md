@@ -4,7 +4,6 @@ title: GPIO_CLIENT_CLEAR_ACTIVE_INTERRUPTS (gpioclx.h)
 description: The CLIENT_ClearActiveInterrupts event callback function clears active interrupts on a set of general-purpose I/O (GPIO) pins that are configured as interrupt inputs.
 old-location: gpio\client_clearactiveinterrupts.htm
 tech.root: GPIO
-ms.assetid: 8D66F806-92BA-4A70-99F6-1C221E8752A3
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_CLEAR_ACTIVE_INTERRUPTS callback function"]
 ms.keywords: CLIENT_ClearActiveInterrupts, CLIENT_ClearActiveInterrupts callback, CLIENT_ClearActiveInterrupts callback function [Parallel Ports], GPIO.client_clearactiveinterrupts, GPIO_CLIENT_CLEAR_ACTIVE_INTERRUPTS, gpioclx/CLIENT_ClearActiveInterrupts
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_ClearActiveInterrupts
+ - GPIO_CLIENT_CLEAR_ACTIVE_INTERRUPTS
 ---
 
 # GPIO_CLIENT_CLEAR_ACTIVE_INTERRUPTS callback function
@@ -50,14 +49,14 @@ The <i>CLIENT_ClearActiveInterrupts</i> event callback function clears active in
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param ClearParameters 
+### -param ClearParameters [in, out]
 
-[in, out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_clear_active_interrupts_parameters">GPIO_CLEAR_ACTIVE_INTERRUPTS_PARAMETERS</a> structure that, on entry, describes the GPIO interrupt pins to clear, and, on exit, contains the status of the clear operation.
 
 ## -returns
@@ -122,3 +121,4 @@ The GPIO_CLIENT_CLEAR_ACTIVE_INTERRUPTS function type is defined in the Gpioclx.
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/nf-gpioclx-gpio_clx_registerclient">GPIO_CLX_RegisterClient</a>
+

@@ -3,11 +3,8 @@ UID: NS:d3d12umddi.D3D12DDI_DEVICE_FUNCS_VIDEO_0060
 title: D3D12DDI_DEVICE_FUNCS_VIDEO_0060
 description: The device functions of video, used in D3D12DDI_FEATURE_VERSION_VIDEO_0060.
 tech.root: display
-ms.assetid: d8e45d0b-1699-44c3-b12e-8eecd6b3499c
 ms.date: 04/04/2019
 keywords: ["D3D12DDI_DEVICE_FUNCS_VIDEO_0060 structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: D3D12DDI_DEVICE_FUNCS_VIDEO_0060, D3D12DDI_DEVICE_FUNCS_VIDEO_0060,
 req.header: d3d12umddi.h
 req.include-header: 
@@ -35,8 +32,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - D3D12DDI_DEVICE_FUNCS_VIDEO_0060
-product:
- - Windows
 dev_langs:
  - c++
 ---

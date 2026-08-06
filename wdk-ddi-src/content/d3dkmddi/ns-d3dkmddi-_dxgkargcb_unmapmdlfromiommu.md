@@ -1,15 +1,14 @@
 ---
 UID: NS:d3dkmddi._DXGKARGCB_UNMAPMDLFROMIOMMU
-title: _DXGKARGCB_UNMAPMDLFROMIOMMU (d3dkmddi.h)
-description: Arguments used by the DxgkcbUnmapmdlFromIommu callback function to release the mapping that was set by DXGKCB_MAPMDLTOIOMMU.
-ms.assetid: 39dc2658-d3dc-43fa-a29d-806db351d4d7
-ms.date: 10/19/2018
+title: DXGKARGCB_UNMAPMDLFROMIOMMU (d3dkmddi.h)
+description: The DXGKARGCB_UNMAPMDLFROMIOMMU structure contains the arguments used by the DXGKCB_UNMAPMDLFROMIOMMU callback function to release the mapping that was set by DXGKCB_MAPMDLTOIOMMU.
+ms.date: 10/13/2021
 keywords: ["DXGKARGCB_UNMAPMDLFROMIOMMU structure"]
 ms.keywords: _DXGKARGCB_UNMAPMDLFROMIOMMU, DXGKARGCB_UNMAPMDLFROMIOMMU,
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 10, version 1803 (WDDM 2.4)
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -34,26 +33,25 @@ api_location:
  - d3dkmddi.h
 api_name:
  - _DXGKARGCB_UNMAPMDLFROMIOMMU
-product:
- - Windows
+ - DXGKARGCB_UNMAPMDLFROMIOMMU
 ---
 
-# _DXGKARGCB_UNMAPMDLFROMIOMMU structure
-
+# DXGKARGCB_UNMAPMDLFROMIOMMU structure
 
 ## -description
 
-Arguments used by the [DxgkcbUnmapmdlFromIommu](nc-d3dkmddi-dxgkcb_unmapmdlfromiommu.md) callback function to release the mapping that was set by [DXGKCB_MAPMDLTOIOMMU](nc-d3dkmddi-dxgkcb_mapmdltoiommu.md).
+The **DXGKARGCB_UNMAPMDLFROMIOMMU** structure contains the arguments used by the [**DXGKCB_UNMAPMDLFROMIOMMU**](nc-d3dkmddi-dxgkcb_unmapmdlfromiommu.md) callback function to release the mapping that was set by [**DXGKCB_MAPMDLTOIOMMU**](nc-d3dkmddi-dxgkcb_mapmdltoiommu.md).
 
 ## -struct-fields
 
-### -field hMemoryHandle
+### -field hMemoryHandle [in]
 
-A dxgkrnl tracking handle for the allocation.
+A *Dxgkrnl* tracking handle for the allocation to be released.
 
 ## -remarks
 
+See [IOMMU-based GPU isolation](/windows-hardware/drivers/display/iommu-based-gpu-isolation) for more information.
+
 ## -see-also
 
-[DxgkcbUnmapmdlFromIommu](nc-d3dkmddi-dxgkcb_unmapmdlfromiommu.md)
-
+[DXGKCB_UNMAPMDLFROMIOMMU](nc-d3dkmddi-dxgkcb_unmapmdlfromiommu.md)

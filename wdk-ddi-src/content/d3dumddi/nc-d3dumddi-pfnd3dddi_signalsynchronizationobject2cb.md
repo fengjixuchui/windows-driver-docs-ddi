@@ -4,7 +4,6 @@ title: PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECT2CB (d3dumddi.h)
 description: Inserts a signal on the specified synchronization objects in the specified context direct memory access (DMA) stream. Used by WDDM 1.2 and later user-mode display drivers.
 old-location: display\pfnsignalsynchronizationobject2cb.htm
 tech.root: display
-ms.assetid: 01B5E793-D075-42B5-9ADF-D033249AEE9F
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECT2CB callback function"]
 ms.keywords: PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECT2CB, PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECT2CB callback, d3dumddi/pfnSignalSynchronizationObject2Cb, display.pfnsignalsynchronizationobject2cb, pfnSignalSynchronizationObject2Cb, pfnSignalSynchronizationObject2Cb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnSignalSynchronizationObject2Cb
-product:
- - Windows
+ - PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECT2CB
 ---
 
 # PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECT2CB callback function
@@ -56,7 +53,7 @@ Inserts a signal on the specified synchronization objects in the specified conte
 
 A handle to a display device (that is, the graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -118,3 +115,4 @@ If synchronization objects are of type <b>D3DDDI_FENCE</b> (where <a href="/wind
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_waitforsynchronizationobject2cb">pfnWaitForSynchronizationObject2Cb</a>
+

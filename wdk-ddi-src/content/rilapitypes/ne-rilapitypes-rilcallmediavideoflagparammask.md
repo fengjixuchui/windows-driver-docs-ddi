@@ -1,10 +1,9 @@
 ---
 UID: NE:rilapitypes.RILCALLMEDIAVIDEOFLAGPARAMMASK
 title: RILCALLMEDIAVIDEOFLAGPARAMMASK (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this enumeration in your code. Microsoft reserves the RILCALLMEDIAVIDEOFLAGPARAMMASK enumeration for internal use only."
 old-location: netvista\rilcallmediavideoflagparammask.htm
 tech.root: netvista
-ms.assetid: cff507e4-d673-4608-9fd9-530ff7e26ffb
 ms.date: 05/02/2018
 keywords: ["RILCALLMEDIAVIDEOFLAGPARAMMASK enumeration"]
 ms.keywords: RILCALLMEDIAVIDEOFLAGPARAMMASK, RILCALLMEDIAVIDEOFLAGPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_CALLMEDIAVIDEOFLAG_ALL, RIL_CALLMEDIAVIDEOFLAG_CAPABILITY_UNKNOWN, RIL_CALLMEDIAVIDEOFLAG_PAUSE, RIL_CALLMEDIAVIDEOFLAG_TEMPORARILY_UNAVAILABLE, netvista.rilcallmediavideoflagparammask, ntddrilapitypes/RILCALLMEDIAVIDEOFLAGPARAMMASK, ntddrilapitypes/RIL_CALLMEDIAVIDEOFLAG_ALL, ntddrilapitypes/RIL_CALLMEDIAVIDEOFLAG_CAPABILITY_UNKNOWN, ntddrilapitypes/RIL_CALLMEDIAVIDEOFLAG_PAUSE, ntddrilapitypes/RIL_CALLMEDIAVIDEOFLAG_TEMPORARILY_UNAVAILABLE

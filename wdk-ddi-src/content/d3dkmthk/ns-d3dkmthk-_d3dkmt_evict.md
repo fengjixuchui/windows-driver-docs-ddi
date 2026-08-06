@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_EVICT
 title: _D3DKMT_EVICT (d3dkmthk.h)
 description: D3DKMT_EVICT is used with D3DKMTEvict to subtract one from the residency reference count.
 old-location: display\d3dkmt_evict.htm
-ms.assetid: 07785939-C3D1-4085-BA1A-91E8FEE52B70
 ms.date: 05/10/2018
 keywords: ["D3DKMT_EVICT structure"]
 ms.keywords: D3DKMT_EVICT, D3DKMT_EVICT structure [Display Devices], _D3DKMT_EVICT, d3dkmthk/D3DKMT_EVICT, display.d3dkmt_evict
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_EVICT
  - D3DKMT_EVICT
 ---
 
@@ -54,25 +54,25 @@ Once this count reaches zero, it will remove the allocation from the device resi
 
 ## -struct-fields
 
-### -field hDevice
+### -field hDevice [in]
 
-[in] Device that created the allocations passed to this call.
+Device that created the allocations passed to this call.
 
-### -field NumAllocations
+### -field NumAllocations [in]
 
-[in] Number of allocation handles in the <b>AllocationList</b> array.
+Number of allocation handles in the <b>AllocationList</b> array.
 
-### -field AllocationList
+### -field AllocationList [in]
 
-[in] An array of <b>NumAllocations</b> allocation handles to mark for eviction. All allocations must be created on <b>hDevice</b>.
+An array of <b>NumAllocations</b> allocation handles to mark for eviction. All allocations must be created on <b>hDevice</b>.
 
-### -field Flags
+### -field Flags [in]
 
-[in] Specifies eviction behavior as documented in <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-d3dddi_evict_flags">D3DDDI_EVICT_FLAGS</a>.
+Specifies eviction behavior as documented in <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-d3dddi_evict_flags">D3DDDI_EVICT_FLAGS</a>.
 
-### -field NumBytesToTrim
+### -field NumBytesToTrim [out]
 
-[out] When non-zero, specifies how much the application should evict in order to meet its current memory budget.
+When non-zero, specifies how much the application should evict in order to meet its current memory budget.
 
 ## -see-also
 
@@ -81,3 +81,4 @@ Once this count reaches zero, it will remove the allocation from the device resi
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtevict">D3DKMTEvict</a>
+

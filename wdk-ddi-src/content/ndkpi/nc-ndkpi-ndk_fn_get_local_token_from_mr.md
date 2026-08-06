@@ -4,7 +4,6 @@ title: NDK_FN_GET_LOCAL_TOKEN_FROM_MR (ndkpi.h)
 description: The NdkGetLocalTokenFromMr (NDK_FN_GET_LOCAL_TOKEN_FROM_MR) function gets a memory token from a local NDK memory region (MR).
 old-location: netvista\ndk_fn_get_local_token_from_mr.htm
 tech.root: netvista
-ms.assetid: 5578112B-1BB2-4130-BBCE-20025A0A609C
 ms.date: 05/02/2018
 keywords: ["NDK_FN_GET_LOCAL_TOKEN_FROM_MR callback function"]
 ms.keywords: NDK_FN_GET_LOCAL_TOKEN_FROM_MR, NDK_FN_GET_LOCAL_TOKEN_FROM_MR callback, NdkGetLocalTokenFromMr, NdkGetLocalTokenFromMr callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkGetLocalTokenFromMr, netvista.ndk_fn_get_local_token_from_mr
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkGetLocalTokenFromMr
+ - NDK_FN_GET_LOCAL_TOKEN_FROM_MR
 ---
 
 # NDK_FN_GET_LOCAL_TOKEN_FROM_MR callback function
@@ -50,9 +49,9 @@ The <i>NdkGetLocalTokenFromMr</i> (<i>NDK_FN_GET_LOCAL_TOKEN_FROM_MR</i>) functi
 
 ## -parameters
 
-### -param pNdkMr 
+### -param pNdkMr [in]
 
-[in]
+
 A pointer to an NDK memory region (MR) object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_mr">NDK_MR</a>).
 
 ## -returns
@@ -75,3 +74,4 @@ The
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_mr">NDK_MR</a>
+

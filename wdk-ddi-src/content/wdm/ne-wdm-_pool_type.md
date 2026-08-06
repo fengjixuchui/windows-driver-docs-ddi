@@ -4,7 +4,6 @@ title: _POOL_TYPE (wdm.h)
 description: The POOL_TYPE enumeration type specifies the type of system memory to allocate.
 old-location: kernel\pool_type.htm
 tech.root: kernel
-ms.assetid: a3dd0c74-3835-4f03-8b62-08954baaffe7
 ms.date: 04/30/2018
 keywords: ["POOL_TYPE enumeration"]
 ms.keywords: DontUseThisType, DontUseThisTypeSession, MaxPoolType, NonPagedPool, NonPagedPoolBase, NonPagedPoolBaseCacheAligned, NonPagedPoolBaseCacheAlignedMustS, NonPagedPoolBaseMustSucceed, NonPagedPoolCacheAligned, NonPagedPoolCacheAlignedMustS, NonPagedPoolCacheAlignedMustSSession, NonPagedPoolCacheAlignedSession, NonPagedPoolExecute, NonPagedPoolMustSucceed, NonPagedPoolMustSucceedSession, NonPagedPoolNx, NonPagedPoolNxCacheAligned, NonPagedPoolSession, NonPagedPoolSessionNx, POOL_TYPE, POOL_TYPE enumeration [Kernel-Mode Driver Architecture], PagedPool, PagedPoolCacheAligned, PagedPoolCacheAlignedSession, PagedPoolSession, _POOL_TYPE, kernel.pool_type, sysenum_90446d42-0e73-4da3-a3df-27efe3daa67b.xml, wdm/DontUseThisType, wdm/DontUseThisTypeSession, wdm/MaxPoolType, wdm/NonPagedPool, wdm/NonPagedPoolBase, wdm/NonPagedPoolBaseCacheAligned, wdm/NonPagedPoolBaseCacheAlignedMustS, wdm/NonPagedPoolBaseMustSucceed, wdm/NonPagedPoolCacheAligned, wdm/NonPagedPoolCacheAlignedMustS, wdm/NonPagedPoolCacheAlignedMustSSession, wdm/NonPagedPoolCacheAlignedSession, wdm/NonPagedPoolExecute, wdm/NonPagedPoolMustSucceed, wdm/NonPagedPoolMustSucceedSession, wdm/NonPagedPoolNx, wdm/NonPagedPoolNxCacheAligned, wdm/NonPagedPoolSession, wdm/NonPagedPoolSessionNx, wdm/POOL_TYPE, wdm/PagedPool, wdm/PagedPoolCacheAligned, wdm/PagedPoolCacheAlignedSession, wdm/PagedPoolSession
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _POOL_TYPE
  - POOL_TYPE
 ---
 
@@ -49,6 +49,37 @@ api_name:
 ## -description
 
 The <b>POOL_TYPE</b> enumeration type specifies the type of system memory to allocate.
+
+## -syntax
+
+```cpp
+typedef enum _POOL_TYPE {
+    NonPagedPool,
+    NonPagedPoolExecute = NonPagedPool,
+    PagedPool,
+    NonPagedPoolMustSucceed = NonPagedPool + 2,
+    DontUseThisType,
+    NonPagedPoolCacheAligned = NonPagedPool + 4,
+    PagedPoolCacheAligned,
+    NonPagedPoolCacheAlignedMustS = NonPagedPool + 6,
+    MaxPoolType,
+    NonPagedPoolBase = 0,
+    NonPagedPoolBaseMustSucceed = NonPagedPoolBase + 2,
+    NonPagedPoolBaseCacheAligned = NonPagedPoolBase + 4,
+    NonPagedPoolBaseCacheAlignedMustS = NonPagedPoolBase + 6,
+    NonPagedPoolSession = 32,
+    PagedPoolSession = NonPagedPoolSession + 1,
+    NonPagedPoolMustSucceedSession = PagedPoolSession + 1,
+    DontUseThisTypeSession = NonPagedPoolMustSucceedSession + 1,
+    NonPagedPoolCacheAlignedSession = DontUseThisTypeSession + 1,
+    PagedPoolCacheAlignedSession = NonPagedPoolCacheAlignedSession + 1,
+    NonPagedPoolCacheAlignedMustSSession = PagedPoolCacheAlignedSession + 1,
+    NonPagedPoolNx = 512,
+    NonPagedPoolNxCacheAligned = NonPagedPoolNx + 4,
+    NonPagedPoolSessionNx = NonPagedPoolNx + 32,
+
+} POOL_TYPE;
+```
 
 ## -enum-fields
 
@@ -185,3 +216,4 @@ Reserved for exclusive use by the operating system.
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-seassignsecurityex">SeAssignSecurityEx</a>
+

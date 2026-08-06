@@ -1,11 +1,10 @@
 ---
 UID: NS:charging._BATTERYPROVISIONINGSTATUS
 title: _BATTERYPROVISIONINGSTATUS (charging.h)
-description: This structure is for internal use only.
+description: "Microsoft reserves the BATTERYPROVISIONINGSTATUS structure for internal use only. Don't use this structure in your code."
 old-location: battery\batteryprovisioningstatus.htm
 tech.root: battery
-ms.assetid: 4CDDBBC4-2462-41B3-B425-D635B4F1F0C4
-ms.date: 02/15/2018
+ms.date: 07/25/2023
 keywords: ["BATTERYPROVISIONINGSTATUS structure"]
 ms.keywords: "*PBATTERYPROVISIONINGSTATUS, BATTERYPROVISIONINGSTATUS, BATTERYPROVISIONINGSTATUS structure [Battery Devices], _BATTERYPROVISIONINGSTATUS, battery.batteryprovisioningstatus, charging/BATTERY_INFORMATION"
 req.header: charging.h
@@ -42,7 +41,9 @@ api_type:
 api_location:
  - Charging.h
 api_name:
- - BATTERY_INFORMATION
+ - _BATTERYPROVISIONINGSTATUS
+ - PBATTERYPROVISIONINGSTATUS
+ - BATTERYPROVISIONINGSTATUS
 ---
 
 # _BATTERYPROVISIONINGSTATUS structure
@@ -54,3 +55,8 @@ This structure is for internal use only.
 
 ## -struct-fields
 
+### -field IsDeviceProvisionedForBatteryBlank
+
+## -see-also
+
+[**charging.h**](index.md)

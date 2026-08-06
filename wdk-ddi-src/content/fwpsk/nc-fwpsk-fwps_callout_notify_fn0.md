@@ -4,7 +4,6 @@ title: FWPS_CALLOUT_NOTIFY_FN0 (fwpsk.h)
 description: The filter engine calls a callout's notifyFn0 callout function to notify the callout driver about events that are associated with the callout.Note  notifyFn0 is the specific version of notifyFn used in Windows Vista and later.
 old-location: netvista\notifyfn0.htm
 tech.root: netvista
-ms.assetid: c0f94079-7398-4998-b2b2-471aa8c538a1
 ms.date: 10/29/2019
 keywords: ["FWPS_CALLOUT_NOTIFY_FN0 callback function"]
 ms.keywords: FWPS_CALLOUT_NOTIFY_FN0, FWPS_CALLOUT_NOTIFY_FN0 callback, fwpsk/notifyFn0, netvista.notifyfn0, notifyFn0, notifyFn0 callback function [Network Drivers Starting with Windows Vista], wfp_ref_2_funct_4_callout_67d79632-69ad-41a2-8a0e-21f4020b0550.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Fwpsk.h
 api_name:
- - notifyFn0
+ - FWPS_CALLOUT_NOTIFY_FN0
 ---
 
 # FWPS_CALLOUT_NOTIFY_FN0 callback function
@@ -53,9 +52,9 @@ The filter engine calls a callout's
 
 ## -parameters
 
-### -param notifyType 
+### -param notifyType [in]
 
-[in]
+
 A value that indicates the type of notification that the filter engine is sending to the callout.
      Valid values for this parameter are:
      
@@ -82,16 +81,16 @@ A filter is being deleted from the filter engine that specifies the callout for 
 
 A maximum value for testing purposes.
 
-### -param filterKey 
+### -param filterKey [in]
 
-[in]
+
 A pointer to the management identifier for the filter, as specified by the application or driver
      that is adding or deleting the filter. Must be <b>NULL</b> if the 
      <i>notifyType</i> parameter is set to FWPS_CALLOUT_NOTIFY_DELETE_FILTER. For more information, see Remarks.
 
-### -param filter 
+### -param filter [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_filter0">FWPS_FILTER0</a> structure. This structure
      describes the filter that is being added to or deleted from the filter engine.
@@ -209,3 +208,4 @@ When a filter that specifies a callout for the filter's action is deleted from t
 
 
 <a href="/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_notify_fn2">notifyFn2</a>
+

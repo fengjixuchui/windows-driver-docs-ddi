@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_PROCESS_ONEX_PACKET
 title: DOT11EXT_PROCESS_ONEX_PACKET (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_PROCESS_ONEX_PACKET callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extprocessonexpacket.htm
 tech.root: netvista
-ms.assetid: 796c2976-b7b1-49ea-bf23-c018efd228ee
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_PROCESS_ONEX_PACKET callback"]
 ms.keywords: DOT11EXT_PROCESS_ONEX_PACKET, Dot11ExtProcessOneXPacket, Dot11ExtProcessOneXPacket callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_261bf893-01bf-45d2-96da-b11745a2ae56.xml, netvista.dot11extprocessonexpacket, wlanihv/Dot11ExtProcessOneXPacket
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_PROCESS_ONEX_PACKET
  - wlanihv/DOT11EXT_PROCESS_ONEX_PACKET
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtProcessOneXPacket
+ - DOT11EXT_PROCESS_ONEX_PACKET
 ---
 
 # DOT11EXT_PROCESS_ONEX_PACKET callback
@@ -54,23 +52,23 @@ api_name:
 
 ## -parameters
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the wireless LAN (WLAN) adapter. This handle
      value was specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param dwInPacketSize 
+### -param dwInPacketSize [in]
 
-[in]
+
 The length, in bytes, of the packet data within the buffer that is referenced by the
      <i>pvInPacket</i> parameter.
 
-### -param pvInPacket 
+### -param pvInPacket [in]
 
-[in]
+
 The EAPOL packet received from the AP. The
      <i>pvInPacket</i> parameter must reference the EAPOL packet starting from the packet type field in the
      EAPOL protocol data unit (PDU). For more information about the EAPOL packet type field, refer to Clause
@@ -136,3 +134,4 @@ For more information about using the 802.1X module for authentication, see
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_onex_stop.md">Dot11ExtStopOneX</a>
+

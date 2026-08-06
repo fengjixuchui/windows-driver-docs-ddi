@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._WHEA_EVENT_LOG_ENTRY_FLAGS
 title: WHEA_EVENT_LOG_ENTRY_FLAGS
-description: 
-tech.root: 
-ms.assetid: 417a74d6-611c-4da9-be6c-42ed204dfe0f
+description: "Learn more about: WHEA_EVENT_LOG_ENTRY_FLAGS structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEA_EVENT_LOG_ENTRY_FLAGS structure"]
 ms.keywords: WHEA_EVENT_LOG_ENTRY_FLAGS, WHEA_EVENT_LOG_ENTRY_FLAGS, *PWHEA_EVENT_LOG_ENTRY_FLAGS,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_EVENT_LOG_ENTRY_FLAGS
+ - PWHEA_EVENT_LOG_ENTRY_FLAGS
  - WHEA_EVENT_LOG_ENTRY_FLAGS
-product:
- - Windows
 ---
 
 # WHEA_EVENT_LOG_ENTRY_FLAGS structure
@@ -52,7 +51,21 @@ Reserved for system use.
 
 ### -field DUMMYSTRUCTNAME
 
-### -field DUMMYSTRUCTNAME.Reserved
+### -field DUMMYSTRUCTNAME.Reserved1
+
+### -field DUMMYSTRUCTNAME.LogInternalEtw
+
+### -field DUMMYSTRUCTNAME.LogBlackbox
+
+### -field DUMMYSTRUCTNAME.LogSel
+
+### -field DUMMYSTRUCTNAME.RawSel
+
+### -field DUMMYSTRUCTNAME.NoFormat
+
+### -field DUMMYSTRUCTNAME.Driver
+
+### -field DUMMYSTRUCTNAME.Reserved2
 
 ### -field AsULONG
 

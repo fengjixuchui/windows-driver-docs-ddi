@@ -4,7 +4,6 @@ title: IPortableDeviceClassExtension::Initialize (portabledeviceclassextension.h
 description: The Initialize interface initializes a portable device by registering the device, device service, and private interfaces.
 old-location: wpddk\iportabledeviceclassextension_initialize.htm
 tech.root: wpd_dk
-ms.assetid: 8c4c652a-99e8-4ebb-a739-89cb50f9c140
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceClassExtension::Initialize"]
 ms.keywords: IPortableDeviceClassExtension interface,Initialize method, IPortableDeviceClassExtension.Initialize, IPortableDeviceClassExtension::Initialize, IPortableDeviceClassExtensionInitialize, Initialize, Initialize method, Initialize method,IPortableDeviceClassExtension interface, portabledeviceclassextension/IPortableDeviceClassExtension::Initialize, wpddk.iportabledeviceclassextension_initialize
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceClassExtension.h
 api_name:
- - IPortableDeviceClassExtension.Initialize
+ - IPortableDeviceClassExtension::Initialize
 ---
 
 # IPortableDeviceClassExtension::Initialize
@@ -53,14 +52,14 @@ A WPD driver calls this method one time during driver initialization (for exampl
 
 ## -parameters
 
-### -param pWdfDeviceUnknown 
+### -param pWdfDeviceUnknown [in]
 
-[in]
+
 A pointer to the <b>IWDFDevice</b> object that represents the devnode for that device.
 
-### -param pOptions 
+### -param pOptions [in]
 
-[in]
+
 An <b>IPortableDeviceValues</b> object that contains one or more of the initialization options described in the <a href="/previous-versions/windows/hardware/drivers/ff597738(v=vs.85)">Class Extension Properties</a>  section.
 
 ## -returns
@@ -103,3 +102,4 @@ A required pointer argument was <b>NULL</b>.
 
 
 <a href="/previous-versions/windows/hardware/drivers/ff597738(v=vs.85)">WPD Class Extension Properties</a>
+

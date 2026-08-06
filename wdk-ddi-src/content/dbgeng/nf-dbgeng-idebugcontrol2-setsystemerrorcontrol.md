@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl2.SetSystemErrorControl
 title: IDebugControl2::SetSystemErrorControl (dbgeng.h)
-description: The SetSystemErrorControl method sets the control values for handling system errors.
+description: Learn about the SetSystemErrorControl method, which sets the control values for handling system errors.
 old-location: debugger\setsystemerrorcontrol.htm
 tech.root: debugger
-ms.assetid: 0ff15743-29df-44dc-a18b-ba8f7e49058e
 ms.date: 05/03/2018
 keywords: ["IDebugControl2::SetSystemErrorControl"]
 ms.keywords: IDebugControl interface [Windows Debugging],SetSystemErrorControl method, IDebugControl2 interface [Windows Debugging],SetSystemErrorControl method, IDebugControl2.SetSystemErrorControl, IDebugControl2::SetSystemErrorControl, IDebugControl3 interface [Windows Debugging],SetSystemErrorControl method, IDebugControl3::SetSystemErrorControl, IDebugControl::SetSystemErrorControl, IDebugControl_60e365d4-8645-469c-8973-9f2da168bba3.xml, SetSystemErrorControl, SetSystemErrorControl method [Windows Debugging], SetSystemErrorControl method [Windows Debugging],IDebugControl interface, SetSystemErrorControl method [Windows Debugging],IDebugControl2 interface, SetSystemErrorControl method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::SetSystemErrorControl, dbgeng/IDebugControl3::SetSystemErrorControl, dbgeng/IDebugControl::SetSystemErrorControl, debugger.setsystemerrorcontrol
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.SetSystemErrorControl
- - IDebugControl2.SetSystemErrorControl
- - IDebugControl3.SetSystemErrorControl
+ - IDebugControl2::SetSystemErrorControl
 ---
 
 # IDebugControl2::SetSystemErrorControl
@@ -52,14 +49,14 @@ The <b>SetSystemErrorControl</b> method sets the control values for handling sys
 
 ## -parameters
 
-### -param OutputLevel 
+### -param OutputLevel [in]
 
-[in]
+
 Specifies the level at which system errors are printed to the engine's output.  If the level of the system error is less than or equal to <i>OutputLevel</i>, the error is printed to the debugger console.
 
-### -param BreakLevel 
+### -param BreakLevel [in]
 
-[in]
+
 Specifies the level at which system errors break into the debugger.  If the level of the system error is less than or equal to <i>BreakLevel</i>, the error breaks into the debugger.
 
 ## -returns
@@ -109,3 +106,4 @@ When a system error occurs, the engine calls the <a href="/windows-hardware/driv
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugeventcallbacks-systemerror">IDebugEventCallbacks::SystemError</a>
+

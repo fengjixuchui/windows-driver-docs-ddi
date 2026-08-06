@@ -4,7 +4,6 @@ title: _NDIS_WWAN_SERVICE_ACTIVATION_STATUS (ndiswwan.h)
 description: The NDIS_WWAN_SERVICE_ACTIVATION_STATUS structure represents the status of service activation on the MB device.
 old-location: netvista\ndis_wwan_service_activation_status.htm
 tech.root: netvista
-ms.assetid: 669ef35f-0e59-4ec3-b6cc-5cb2156b51a2
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_SERVICE_ACTIVATION_STATUS structure"]
 ms.keywords: "*PNDIS_WWAN_SERVICE_ACTIVATION_STATUS, NDIS_WWAN_SERVICE_ACTIVATION_STATUS, NDIS_WWAN_SERVICE_ACTIVATION_STATUS structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SERVICE_ACTIVATION_STATUS, PNDIS_WWAN_SERVICE_ACTIVATION_STATUS structure pointer [Network Drivers Starting with Windows Vista], WwanRef_a1bda142-c89f-4323-a114-0c44948f61b5.xml, _NDIS_WWAN_SERVICE_ACTIVATION_STATUS, ndiswwan/NDIS_WWAN_SERVICE_ACTIVATION_STATUS, ndiswwan/PNDIS_WWAN_SERVICE_ACTIVATION_STATUS, netvista.ndis_wwan_service_activation_status"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_SERVICE_ACTIVATION_STATUS
+ - PNDIS_WWAN_SERVICE_ACTIVATION_STATUS
  - NDIS_WWAN_SERVICE_ACTIVATION_STATUS
 ---
 
@@ -103,7 +104,7 @@ sizeof(NDIS_WWAN_SERVICE_ACTIVATION_STATUS)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field uStatus
 
@@ -229,9 +230,10 @@ A formatted
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_service_activation_status">
    WWAN_SERVICE_ACTIVATION_STATUS</a>
+

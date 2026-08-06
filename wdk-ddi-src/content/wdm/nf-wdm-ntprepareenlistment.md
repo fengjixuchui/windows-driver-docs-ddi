@@ -4,7 +4,6 @@ title: NtPrepareEnlistment function (wdm.h)
 description: The ZwPrepareEnlistment routine initiates the prepare operation for a specified enlistment's transaction.
 old-location: kernel\zwprepareenlistment.htm
 tech.root: kernel
-ms.assetid: 1597f27d-8d1e-445e-bc68-b7c151fd19d5
 ms.date: 04/30/2018
 keywords: ["NtPrepareEnlistment function"]
 ms.keywords: NtPrepareEnlistment, ZwPrepareEnlistment, ZwPrepareEnlistment routine [Kernel-Mode Driver Architecture], kernel.zwprepareenlistment, ktm_ref_2da2ab5a-1353-4598-9413-35f6bfc8ee31.xml, wdm/NtPrepareEnlistment, wdm/ZwPrepareEnlistment
@@ -38,7 +37,6 @@ api_type:
 api_location:
  - NtosKrnl.exe
 api_name:
- - ZwPrepareEnlistment
  - NtPrepareEnlistment
 ---
 
@@ -51,14 +49,14 @@ The <b>ZwPrepareEnlistment</b> routine initiates the prepare operation for a spe
 
 ## -parameters
 
-### -param EnlistmentHandle 
+### -param EnlistmentHandle [in]
 
-[in]
+
 A handle to an <a href="/windows-hardware/drivers/kernel/enlistment-objects">enlistment object</a> that was obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment">ZwCreateEnlistment</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a>. The object must represent a <a href="/windows-hardware/drivers/kernel/creating-a-superior-transaction-manager">superior enlistment</a> and the handle must have ENLISTMENT_SUPERIOR_RIGHTS access to the object.
 
-### -param TmVirtualClock 
+### -param TmVirtualClock [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows-hardware/drivers/kernel/using-virtual-clock-values">virtual clock value</a>. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns
@@ -170,3 +168,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a>
+

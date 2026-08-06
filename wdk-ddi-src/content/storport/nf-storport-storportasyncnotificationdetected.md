@@ -4,14 +4,13 @@ title: StorPortAsyncNotificationDetected function (storport.h)
 description: A storage miniport driver calls StorPortAsyncNotificationDetected to notify the Storport driver of a storage device status change event.
 old-location: storage\storportasyncnotificationdetected.htm
 tech.root: storage
-ms.assetid: 558F652C-6D1A-4BAF-9C2C-3F4FE24651D2
 ms.date: 03/29/2018
 keywords: ["StorPortAsyncNotificationDetected function"]
 ms.keywords: RAID_ASYNC_NOTIFY_FLAG_DEVICE_OPERATION, RAID_ASYNC_NOTIFY_FLAG_DEVICE_STATUS, RAID_ASYNC_NOTIFY_FLAG_MEDIA_STATUS, StorPortAsyncNotificationDetected, StorPortAsyncNotificationDetected routine [Storage Devices], storage.storportasyncnotificationdetected, storport/StorPortAsyncNotificationDetected
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -52,9 +51,9 @@ The notification is queued as a work item for deferred processing at DISPATCH_LE
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportinitialize">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
 
 ### -param Address

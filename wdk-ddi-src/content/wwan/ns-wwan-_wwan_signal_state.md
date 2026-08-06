@@ -4,7 +4,6 @@ title: _WWAN_SIGNAL_STATE (wwan.h)
 description: The WWAN_SIGNAL_STATE structure represents the signal state of the MB device.
 old-location: netvista\wwan_signal_state.htm
 tech.root: netvista
-ms.assetid: ba5632bb-c1d7-47b1-b6b4-88c67710149f
 ms.date: 05/02/2018
 keywords: ["WWAN_SIGNAL_STATE structure"]
 ms.keywords: "*PWWAN_SIGNAL_STATE, PWWAN_SIGNAL_STATE, PWWAN_SIGNAL_STATE structure pointer [Network Drivers Starting with Windows Vista], WWAN_SIGNAL_STATE, WWAN_SIGNAL_STATE structure [Network Drivers Starting with Windows Vista], WwanRef_6a92457b-8b82-4956-9dce-98e5aeec9091.xml, _WWAN_SIGNAL_STATE, netvista.wwan_signal_state, wwan/PWWAN_SIGNAL_STATE, wwan/WWAN_SIGNAL_STATE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_SIGNAL_STATE
+ - PWWAN_SIGNAL_STATE
  - WWAN_SIGNAL_STATE
 ---
 
@@ -291,8 +292,9 @@ The current threshold, in threshold units, at which the miniport driver has been
 
 A formatted [**WWAN_LIST_HEADER**](../wwan/ns-wwan-_wwan_list_header.md) structure that represents a list of signal state extensions per data class and the number of data classes. The miniport driver must return a list of all supported data classes.
 
-This member points to a list of [**WWAN_SIGNAL_STATE_EXT**](../wwan/ns-wwan-_wwan_signal_state_ext.md) structures that use the **WWAN_LIST_HEADER** structure. The rest of the members of the **WWAN_SIGNAL_STATE_EX** structures are filled based on the highest available data class.
+This member points to a list of [**WWAN_SIGNAL_STATE_EXT**](../wwan/ns-wwan-_wwan_signal_state_ext.md) structures that use the **WWAN_LIST_HEADER** structure. The rest of the members of the **WWAN_SIGNAL_STATE_EXT** structures are filled based on the highest available data class.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ndiswwan/ns-ndiswwan-_ndis_wwan_signal_state">NDIS_WWAN_SIGNAL_STATE</a>
+

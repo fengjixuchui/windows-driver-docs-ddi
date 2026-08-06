@@ -4,7 +4,6 @@ title: RtlClearBit function (wdm.h)
 description: The RtlClearBit routine sets the specified bit in a bitmap to zero.
 old-location: kernel\rtlclearbit.htm
 tech.root: kernel
-ms.assetid: bfc75a17-a0de-436e-aebf-902fd841871a
 ms.date: 04/30/2018
 keywords: ["RtlClearBit function"]
 ms.keywords: RtlClearBit, RtlClearBit routine [Kernel-Mode Driver Architecture], k109_f785121e-f076-4f31-90ab-4bec446e3cc9.xml, kernel.rtlclearbit, wdm/RtlClearBit
@@ -50,14 +49,14 @@ The <b>RtlClearBit</b> routine sets the specified bit in a bitmap to zero.
 
 ## -parameters
 
-### -param BitMapHeader 
+### -param BitMapHeader [in]
 
-[in]
-A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-### -param BitNumber 
+A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-[in]
+### -param BitNumber [in]
+
+
 Specifies the zero-based index of the bit within the bitmap. The routine sets this bit to zero.
 
 ## -returns
@@ -70,7 +69,7 @@ Callers of <b>RtlClearBit</b> must be running at IRQL <= APC_LEVEL if the memory
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a>
+<a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a>
 
 
 

@@ -4,7 +4,6 @@ title: RtlIntegerToUnicodeString function (wdm.h)
 description: The RtlIntegerToUnicodeString routine converts an unsigned integer value to a null-terminated string of one or more Unicode characters in the specified base.
 old-location: kernel\rtlintegertounicodestring.htm
 tech.root: kernel
-ms.assetid: d9c82a97-a8fb-4c23-aa9c-23711d98fd8b
 ms.date: 04/30/2018
 keywords: ["RtlIntegerToUnicodeString function"]
 ms.keywords: RtlIntegerToUnicodeString, RtlIntegerToUnicodeString routine [Kernel-Mode Driver Architecture], k109_2ed50455-f426-4072-be25-cab15c4c79cc.xml, kernel.rtlintegertounicodestring, wdm/RtlIntegerToUnicodeString
@@ -51,14 +50,14 @@ The <b>RtlIntegerToUnicodeString</b> routine converts an unsigned integer value 
 
 ## -parameters
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies the ULONG value to convert.
 
-### -param Base 
+### -param Base [in, optional]
 
-[in, optional]
+
 Specifies the base to use when converting <i>Value</i> to a string. The possible values are:
 
 <table>
@@ -108,9 +107,9 @@ Decimal
 </tr>
 </table>
 
-### -param String 
+### -param String [in, out]
 
-[in, out]
+
 Pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that receives the string representation of <i>Value</i>. The buffer specified by the <i>Buffer</i>  of <i>String</i> must be large enough to hold the result.
 
 ## -returns

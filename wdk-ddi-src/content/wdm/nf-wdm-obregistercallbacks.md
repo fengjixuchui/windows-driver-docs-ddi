@@ -4,7 +4,6 @@ title: ObRegisterCallbacks function (wdm.h)
 description: The ObRegisterCallbacks routine registers a list of callback routines for thread, process, and desktop handle operations.
 old-location: kernel\obregistercallbacks.htm
 tech.root: kernel
-ms.assetid: 93593979-fe5f-48de-9c98-92acd43ec750
 ms.date: 04/30/2018
 keywords: ["ObRegisterCallbacks function"]
 ms.keywords: ObRegisterCallbacks, ObRegisterCallbacks routine [Kernel-Mode Driver Architecture], k107_e5976812-0590-42f5-836c-85f9d262f19f.xml, kernel.obregistercallbacks, wdm/ObRegisterCallbacks
@@ -50,14 +49,14 @@ The <b>ObRegisterCallbacks</b> routine registers a list of callback routines for
 
 ## -parameters
 
-### -param CallbackRegistration 
+### -param CallbackRegistration [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_ob_callback_registration">OB_CALLBACK_REGISTRATION</a> structure that specifies the list of callback routines and other registration information.
 
-### -param RegistrationHandle 
+### -param RegistrationHandle [out]
 
-[out]
+
 A pointer to a variable that receives a value that identifies the set of registered callback routines. The caller passes this value to the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obunregistercallbacks">ObUnRegisterCallbacks</a> routine to unregister the set of callbacks.
 
 ## -returns

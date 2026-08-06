@@ -1,10 +1,9 @@
 ---
-UID: NE:wiautil.__unnamed_enum_0
+UID: NE:wiautil.SKIP_AMOUNT
 title: SKIP_AMOUNT (wiautil.h)
 description: The SKIP_AMOUNT enumeration is used to indicate whether the file and informational headers of an image should be skipped over.
 old-location: image\skip_amount.htm
 tech.root: image
-ms.assetid: 4e21b3e9-0383-4464-b87e-beea88123124
 ms.date: 05/03/2018
 keywords: ["SKIP_AMOUNT enumeration"]
 ms.keywords: SKIP_AMOUNT, SKIP_AMOUNT enumeration [Imaging Devices], SKIP_BOTHHDR, SKIP_FILEHDR, SKIP_OFF, image.skip_amount, wiauFncs_8f521aa0-0663-4f84-a9c9-91747fcb13e8.xml, wiautil/SKIP_AMOUNT, wiautil/SKIP_BOTHHDR, wiautil/SKIP_FILEHDR, wiautil/SKIP_OFF
@@ -65,3 +64,4 @@ Skip over both the file and info headers.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wiautil/nf-wiautil-cwiauformatconverter-converttobmp">CWiauFormatConverter::ConvertToBmp</a>
+

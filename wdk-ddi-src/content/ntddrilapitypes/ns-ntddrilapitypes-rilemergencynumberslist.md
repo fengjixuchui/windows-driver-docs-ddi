@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILEMERGENCYNUMBERSLIST
 title: RILEMERGENCYNUMBERSLIST (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILEMERGENCYNUMBERSLIST structure for internal use only. Don't use the RILEMERGENCYNUMBERSLIST structure in your code."
 old-location: netvista\rilemergencynumberslist.htm
 tech.root: netvista
-ms.assetid: bfeaff04-6dd2-4889-9ab3-f20361dc2f5c
 ms.date: 05/02/2018
 keywords: ["RILEMERGENCYNUMBERSLIST structure"]
 ms.keywords: "*LPRILEMERGENCYNUMBERSLIST, RILEMERGENCYNUMBERSLIST, RILEMERGENCYNUMBERSLIST structure [Network Drivers Starting with Windows Vista], netvista.rilemergencynumberslist, ntddrilapitypes/RILEMERGENCYNUMBERSLIST"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILEMERGENCYNUMBERSLIST
+ - LPRILEMERGENCYNUMBERSLIST
 ---
 
 # RILEMERGENCYNUMBERSLIST structure (ntddrilapitypes.h)

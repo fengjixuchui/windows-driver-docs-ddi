@@ -1,8 +1,7 @@
 ---
 UID: NE:d3d10umddi.D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM_COMPONENT_FLAGS
 title: D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM_COMPONENT_FLAGS (d3d10umddi.h)
-description: Flags for indicating a subset of components used with video decode histogram.
-ms.assetid: ce69c641-c6ed-45ba-8e4e-2a0e9f0681f0
+description: D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM_COMPONENT_FLAGS enumeration flags that indicate a subset of components used with a video decode histogram.
 ms.date: 10/19/2018
 keywords: ["D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM_COMPONENT_FLAGS enumeration"]
 ms.keywords: D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM_COMPONENT_FLAGS, D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM_COMPONENT_FLAGS,
@@ -29,8 +28,6 @@ api_location:
  - d3d10umddi.h
 api_name:
  - D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM_COMPONENT_FLAGS
-product:
- - Windows
 ---
 
 # D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM_COMPONENT_FLAGS enumeration
@@ -60,15 +57,15 @@ If the format is a YUV format, indicates the V component.
 
 ### -field D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM_COMPONENT_FLAG_R
 
-If the format is a RGB/BGR format, indicates the Y component.
+If the format is an RGB/BGR format, indicates the Y component.
 
 ### -field D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM_COMPONENT_FLAG_G
 
-If the format is a RGB/BGR format, indicates the G component.
+If the format is an RGB/BGR format, indicates the G component.
 
 ### -field D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM_COMPONENT_FLAG_B
 
-If the format is a RGB/BGR format, indicates the B component.
+If the format is an RGB/BGR format, indicates the B component.
 
 ### -field D3DWDDM2_4DDI_VIDEO_DECODER_HISTOGRAM_COMPONENT_FLAG_A
 

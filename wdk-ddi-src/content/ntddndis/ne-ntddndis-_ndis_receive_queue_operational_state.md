@@ -4,7 +4,6 @@ title: _NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE (ntddndis.h)
 description: The NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE enumeration identifies the current queue state of a receive queue.
 old-location: netvista\ndis_receive_queue_operational_state.htm
 tech.root: netvista
-ms.assetid: a8ae7b19-9dc8-4ccc-b71e-62ec0be1fa99
 ms.date: 05/02/2018
 keywords: ["NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE enumeration"]
 ms.keywords: "*PNDIS_RECEIVE_QUEUE_OPERATIONAL_STATE, NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE, NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE enumeration [Network Drivers Starting with Windows Vista], NdisReceiveQueueOperationalStateDmaStopped, NdisReceiveQueueOperationalStateMaximum, NdisReceiveQueueOperationalStatePaused, NdisReceiveQueueOperationalStateRunning, NdisReceiveQueueOperationalStateUndefined, PNDIS_RECEIVE_QUEUE_OPERATIONAL_STATE, PNDIS_RECEIVE_QUEUE_OPERATIONAL_STATE enumeration pointer [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE, netvista.ndis_receive_queue_operational_state, ntddndis/NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE, ntddndis/NdisReceiveQueueOperationalStateDmaStopped, ntddndis/NdisReceiveQueueOperationalStateMaximum, ntddndis/NdisReceiveQueueOperationalStatePaused, ntddndis/NdisReceiveQueueOperationalStateRunning, ntddndis/NdisReceiveQueueOperationalStateUndefined, ntddndis/PNDIS_RECEIVE_QUEUE_OPERATIONAL_STATE, virtual_machine_queue_ref_db0b16e1-5367-4a29-8a24-474aa09c07f5.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE
+ - PNDIS_RECEIVE_QUEUE_OPERATIONAL_STATE
  - NDIS_RECEIVE_QUEUE_OPERATIONAL_STATE
 ---
 
@@ -85,7 +86,7 @@ The DMA operations on the queue are stopped because the queue is being freed, an
      <a href="/windows-hardware/drivers/network/oid-receive-filter-free-queue">
      OID_RECEIVE_FILTER_FREE_QUEUE</a> OID request, stops the DMA operations for the queue, and issues an 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_receive_queue_state">
-     NDIS_STATUS_RECEIVE_QUEUE_STATE</a> status indication.
+     NDIS_RECEIVE_QUEUE_STATE</a> status indication.
 
 ### -field NdisReceiveQueueOperationalStateMaximum
 
@@ -111,7 +112,7 @@ The <b>
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_receive_queue_state">
-   NDIS_STATUS_RECEIVE_QUEUE_STATE</a>
+   NDIS_RECEIVE_QUEUE_STATE</a>
 
 
 
@@ -126,3 +127,4 @@ The <b>
 
 <a href="/windows-hardware/drivers/network/oid-receive-filter-queue-allocation-complete">
    OID_RECEIVE_FILTER_QUEUE_ALLOCATION_COMPLETE</a>
+

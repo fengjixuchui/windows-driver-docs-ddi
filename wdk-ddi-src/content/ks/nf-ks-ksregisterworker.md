@@ -4,7 +4,6 @@ title: KsRegisterWorker function (ks.h)
 description: The KsRegisterWorker function handles clients registering for use of a thread.
 old-location: stream\ksregisterworker.htm
 tech.root: stream
-ms.assetid: b9c74a56-3f2c-4b94-8fb2-6b44075ec34b
 ms.date: 04/23/2018
 keywords: ["KsRegisterWorker function"]
 ms.keywords: KsRegisterWorker, KsRegisterWorker function [Streaming Media Devices], ks/KsRegisterWorker, ksfunc_c2cb48b6-6268-4d53-a81b-07c1984f80aa.xml, stream.ksregisterworker
@@ -57,14 +56,14 @@ The worker routines function on opaque PKSWORKER objects that are created for ea
 
 ## -parameters
 
-### -param WorkQueueType 
+### -param WorkQueueType [in]
 
-[in]
+
 Specifies the priority of the thread to create. This is usually either **CriticalWorkQueue**, **DelayedWorkQueue**, or **HyperCriticalWorkQueue**.
 
-### -param Worker 
+### -param Worker [out]
 
-[out]
+
 Location to put the opaque context that must be used when scheduling a work item. This contains the queue type and is used to synchronize completion of work items.
 
 ## -returns

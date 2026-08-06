@@ -4,7 +4,6 @@ title: IPortableDeviceValues (portabledevicetypes.h)
 description: The IPortableDeviceValues interface holds a collection of PROPERTYKEY/PROPVARIANT pairs.
 old-location: wpddk\iportabledevicevalues.htm
 tech.root: wpd_dk
-ms.assetid: 4a97301a-12cc-442f-a080-446ec9e1e245
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues interface"]
 ms.keywords: IPortableDeviceValues, IPortableDeviceValues interface, IPortableDeviceValues interface,described, IPortableDeviceValuesInterface, portabledevicetypes/IPortableDeviceValues, wpddk.iportabledevicevalues
@@ -57,10 +56,8 @@ This interface can be retrieved from a method or, if a new object is required, c
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortableDeviceValues</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPortableDeviceValues</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IPortableDeviceValues</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPortableDeviceValues</b> also has these types of members:
+
 
 ## -see-also
 

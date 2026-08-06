@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_DRAWAUTO
 title: PFND3D10DDI_DRAWAUTO (d3d10umddi.h)
 description: The DrawAuto function works similarly to the Draw function, except DrawAuto is used for the special case where vertex data is written through the stream-output unit and then recycled as a vertex buffer.
 old-location: display\drawauto.htm
-ms.assetid: 83d96dc0-dfd4-449e-9e14-18f354d44534
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_DRAWAUTO callback function"]
 ms.keywords: DrawAuto, DrawAuto callback function [Display Devices], PFND3D10DDI_DRAWAUTO, PFND3D10DDI_DRAWAUTO callback, UserModeDisplayDriverDx10_Functions_ff0a6fae-2ed9-4b49-8095-fe5f61cac148.xml, d3d10umddi/DrawAuto, display.drawauto
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - DrawAuto
+ - PFND3D10DDI_DRAWAUTO
 ---
 
 # PFND3D10DDI_DRAWAUTO callback function
@@ -50,7 +49,7 @@ The <b>DrawAuto</b> function works similarly to the <a href="/windows-hardware/d
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
@@ -71,3 +70,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

@@ -4,7 +4,6 @@ title: KsFilterAddTopologyConnections function (ks.h)
 description: The KsFilterAddTopologyConnections function adds new topology connections to a filter.
 old-location: stream\ksfilteraddtopologyconnections.htm
 tech.root: stream
-ms.assetid: 32a61103-5f2f-4b73-a299-bf6a14c3bec9
 ms.date: 04/23/2018
 keywords: ["KsFilterAddTopologyConnections function"]
 ms.keywords: KsFilterAddTopologyConnections, KsFilterAddTopologyConnections function [Streaming Media Devices], avfunc_99b8984f-5ca2-460b-ab20-230fd09b6d13.xml, ks/KsFilterAddTopologyConnections, stream.ksfilteraddtopologyconnections
@@ -51,19 +50,19 @@ The<b> KsFilterAddTopologyConnections</b> function adds new topology connections
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in]
 
-[in]
+
 <i>A pointer</i> to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter">KSFILTER</a> to which to add the new connections.
 
-### -param NewConnectionsCount 
+### -param NewConnectionsCount [in]
 
-[in]
+
 The number of connections in <i>NewTopologyConnections</i>.
 
-### -param NewTopologyConnections 
+### -param NewTopologyConnections [in]
 
-[in]
+
 A pointer to an array of <a href="/windows-hardware/drivers/ddi/ks/ns-ks-kstopology_connection">KSTOPOLOGY_CONNECTION</a> structures containing the new topology connections.
 
 ## -returns

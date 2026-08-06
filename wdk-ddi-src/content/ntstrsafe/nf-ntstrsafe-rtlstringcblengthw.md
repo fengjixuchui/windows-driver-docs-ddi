@@ -1,10 +1,9 @@
 ---
 UID: NF:ntstrsafe.RtlStringCbLengthW
 title: RtlStringCbLengthW function (ntstrsafe.h)
-description: The RtlStringCbLengthW and RtlStringCbLengthA functions determine the length, in bytes, of a supplied string.
+description: Learn how the RtlStringCbLengthW and RtlStringCbLengthA functions determine the length, in bytes, of a supplied string.
 old-location: kernel\rtlstringcblength.htm
 tech.root: kernel
-ms.assetid: 74644211-7cf5-48d4-9025-7831cb449979
 ms.date: 04/30/2018
 keywords: ["RtlStringCbLengthW function"]
 ms.keywords: RtlStringCbLength, RtlStringCbLengthA, RtlStringCbLengthW, RtlStringCbLengthW function [Kernel-Mode Driver Architecture], kernel.rtlstringcblength, ntstrsafe/RtlStringCbLengthA, ntstrsafe/RtlStringCbLengthW, safestrings_1453b6f9-2e9d-4864-96e8-e0245a1a7827.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -40,8 +39,6 @@ api_location:
  - Ntstrsafe.dll
 api_name:
  - RtlStringCbLengthW
- - RtlStringCbLengthA
- - RtlStringCbLengthW
 ---
 
 # RtlStringCbLengthW function
@@ -53,14 +50,14 @@ The <b>RtlStringCbLengthW</b> and <b>RtlStringCbLengthA</b> functions determine 
 
 ## -parameters
 
-### -param psz 
+### -param psz [in]
 
-[in]
+
 A pointer to a buffer that contains a null-terminated string, the length of which will be checked.
 
-### -param cbMax 
+### -param cbMax [in]
 
-[in]
+
 The maximum number of bytes allowed in the buffer that is pointed to by <i>psz</i>, including the terminating null character. 
 
 For Unicode strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * sizeof(WCHAR). 
@@ -152,3 +149,4 @@ For more information about the safe string functions, see <a href="/windows-hard
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcchlengtha">RtlStringCchLength</a>
+

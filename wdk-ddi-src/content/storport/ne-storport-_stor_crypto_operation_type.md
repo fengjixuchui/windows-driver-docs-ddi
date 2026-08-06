@@ -1,17 +1,16 @@
 ---
 UID: NE:storport._STOR_CRYPTO_OPERATION_TYPE
-title: _STOR_CRYPTO_OPERATION_TYPE (storport.h)
-description: Reserved for system use.
+title: STOR_CRYPTO_OPERATION_TYPE (storport.h)
+description: "Microsoft reserves the STOR_CRYPTO_OPERATION_TYPE enumeration for internal use only. Don't use this enumeration in your code."
 old-location: storage\stor_crypto_operation_type.htm
 tech.root: storage
-ms.assetid: DF8E428F-9F72-451E-AB3E-E6D3CBC99C8F
 ms.date: 03/29/2018
 keywords: ["STOR_CRYPTO_OPERATION_TYPE enumeration"]
 ms.keywords: "*PSTOR_CRYPTO_OPERATION_TYPE, PSTOR_CRYPTO_OPERATION_TYPE, PSTOR_CRYPTO_OPERATION_TYPE enumeration pointer [Storage Devices], STOR_CRYPTO_OPERATION_TYPE, STOR_CRYPTO_OPERATION_TYPE enumeration [Storage Devices], _STOR_CRYPTO_OPERATION_TYPE, storage.stor_crypto_operation_type, storport/, storport/PSTOR_CRYPTO_OPERATION_TYPE, storport/STOR_CRYPTO_OPERATION_TYPE"
 req.header: storport.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,11 +41,12 @@ api_type:
 api_location:
  - Storport.h
 api_name:
+ - _STOR_CRYPTO_OPERATION_TYPE
+ - PSTOR_CRYPTO_OPERATION_TYPE
  - STOR_CRYPTO_OPERATION_TYPE
 ---
 
-# _STOR_CRYPTO_OPERATION_TYPE enumeration
-
+# STOR_CRYPTO_OPERATION_TYPE enumeration
 
 ## -description
 
@@ -56,5 +56,8 @@ Reserved for system use.
 
 ### -field StorCryptoOperationInsertKey
 
+Reserved for system use.
+
 ### -field StorCryptoOperationMax
 
+Reserved for system use.

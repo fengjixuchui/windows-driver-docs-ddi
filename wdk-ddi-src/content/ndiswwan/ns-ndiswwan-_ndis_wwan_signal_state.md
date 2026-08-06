@@ -4,7 +4,6 @@ title: _NDIS_WWAN_SIGNAL_STATE (ndiswwan.h)
 description: The NDIS_WWAN_SIGNAL_STATE structure represents the signal state of the MB device.
 old-location: netvista\ndis_wwan_signal_state.htm
 tech.root: netvista
-ms.assetid: 905f8566-ad98-454f-a5cd-8f4ff46c8118
 ms.date: 04/05/2019
 keywords: ["NDIS_WWAN_SIGNAL_STATE structure"]
 ms.keywords: "*PNDIS_WWAN_SIGNAL_STATE, NDIS_WWAN_SIGNAL_STATE, NDIS_WWAN_SIGNAL_STATE structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SIGNAL_STATE, PNDIS_WWAN_SIGNAL_STATE structure pointer [Network Drivers Starting with Windows Vista], WwanRef_92027d1b-0311-4d61-b8cf-04518ee2863b.xml, _NDIS_WWAN_SIGNAL_STATE, ndiswwan/NDIS_WWAN_SIGNAL_STATE, ndiswwan/PNDIS_WWAN_SIGNAL_STATE, netvista.ndis_wwan_signal_state"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_SIGNAL_STATE
+ - PNDIS_WWAN_SIGNAL_STATE
  - NDIS_WWAN_SIGNAL_STATE
 ---
 
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_SIGNAL_STATE)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field uStatus
 
@@ -116,8 +117,9 @@ A formatted
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_signal_state">WWAN_SIGNAL_STATE</a>
+

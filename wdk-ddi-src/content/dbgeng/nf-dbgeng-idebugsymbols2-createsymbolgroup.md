@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols2.CreateSymbolGroup
 title: IDebugSymbols2::CreateSymbolGroup (dbgeng.h)
-description: The CreateSymbolGroup method creates a new symbol group.
+description: The CreateSymbolGroup method creates a new symbol group. This method belongs to the IDebugSymbols2 interface.
 old-location: debugger\createsymbolgroup.htm
 tech.root: debugger
-ms.assetid: f55aa290-5e57-48d8-9454-370c494bbd65
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols2::CreateSymbolGroup"]
 ms.keywords: CreateSymbolGroup, CreateSymbolGroup method [Windows Debugging], CreateSymbolGroup method [Windows Debugging],IDebugSymbols interface, CreateSymbolGroup method [Windows Debugging],IDebugSymbols2 interface, CreateSymbolGroup method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],CreateSymbolGroup method, IDebugSymbols2 interface [Windows Debugging],CreateSymbolGroup method, IDebugSymbols2.CreateSymbolGroup, IDebugSymbols2::CreateSymbolGroup, IDebugSymbols3 interface [Windows Debugging],CreateSymbolGroup method, IDebugSymbols3::CreateSymbolGroup, IDebugSymbols::CreateSymbolGroup, IDebugSymbols_fe8b31b2-0c5c-4dde-9d60-a353893e3f65.xml, dbgeng/IDebugSymbols2::CreateSymbolGroup, dbgeng/IDebugSymbols3::CreateSymbolGroup, dbgeng/IDebugSymbols::CreateSymbolGroup, debugger.createsymbolgroup
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSymbols.CreateSymbolGroup
- - IDebugSymbols2.CreateSymbolGroup
- - IDebugSymbols3.CreateSymbolGroup
+ - IDebugSymbols2::CreateSymbolGroup
 ---
 
 # IDebugSymbols2::CreateSymbolGroup
@@ -52,9 +49,9 @@ The <b>CreateSymbolGroup</b>  method creates a new symbol group.
 
 ## -parameters
 
-### -param Group 
+### -param Group [out]
 
-[out]
+
 Receives an interface pointer for the new <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbolgroup">IDebugSymbolGroup</a> object.
 
 ## -returns
@@ -107,3 +104,4 @@ For more information about symbol groups, see <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

@@ -4,7 +4,6 @@ title: WdfDriverIsVersionAvailable function (wdfdriver.h)
 description: The WdfDriverIsVersionAvailable method returns a Boolean value that indicates whether the driver is running with a specified version of the Kernel-Mode Driver Framework library.
 old-location: wdf\wdfdriverisversionavailable.htm
 tech.root: wdf
-ms.assetid: 5635b99d-c58d-4a17-bb51-2dc38e51421a
 ms.date: 02/26/2018
 keywords: ["WdfDriverIsVersionAvailable function"]
 ms.keywords: DFDriverObjectRef_56291c91-1c81-486d-89ce-948d037b8bc4.xml, WdfDriverIsVersionAvailable, WdfDriverIsVersionAvailable method, kmdf.wdfdriverisversionavailable, wdf.wdfdriverisversionavailable, wdfdriver/WdfDriverIsVersionAvailable
@@ -55,14 +54,14 @@ The <b>WdfDriverIsVersionAvailable</b> method returns a Boolean value that indic
 
 ## -parameters
 
-### -param Driver 
+### -param Driver [in]
 
-[in]
+
 A handle to the driver's framework driver object that the driver obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate">WdfDriverCreate</a> or <a href="/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfgetdriver">WdfGetDriver</a>.
 
-### -param VersionAvailableParams 
+### -param VersionAvailableParams [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfdriver/ns-wdfdriver-_wdf_driver_version_available_params">WDF_DRIVER_VERSION_AVAILABLE_PARAMS</a> structure that identifies a version of the framework library.
 
 ## -returns

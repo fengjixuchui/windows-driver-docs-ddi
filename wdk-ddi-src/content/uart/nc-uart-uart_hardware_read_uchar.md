@@ -2,8 +2,7 @@
 UID: NC:uart.UART_HARDWARE_READ_UCHAR
 title: UART_HARDWARE_READ_UCHAR (uart.h)
 description: Reads a byte from the specified port or register.
-tech.root: serports
-ms.assetid: 1760bbfd-3995-4d32-81cc-c30c190aa465
+tech.root: uart
 ms.date: 10/19/2018
 keywords: ["UART_HARDWARE_READ_UCHAR callback function"]
 req.header: uart.h
@@ -77,3 +76,4 @@ Register your implementation of this callback function by setting the **ReadPort
 
 ## -see-also
 
+[**uart.h**](index.md)

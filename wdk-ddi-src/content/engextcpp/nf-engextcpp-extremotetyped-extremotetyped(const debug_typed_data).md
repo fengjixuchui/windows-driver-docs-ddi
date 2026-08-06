@@ -1,10 +1,9 @@
 ---
 UID: NF:engextcpp.ExtRemoteTyped.ExtRemoteTyped(constDEBUG_TYPED_DATA)
 title: ExtRemoteTyped::ExtRemoteTyped(const DEBUG_TYPED_DATA) (engextcpp.h)
-description: The ExtRemoteTyped constructor creates a new instance of the ExtRemoteTyped class.
+description: The ExtRemoteTyped(constDEBUG_TYPED_DATA) constructor creates a new instance of the ExtRemoteTyped class.
 old-location: debugger\extremotetyped_extremotetyped_debug_typed_data.htm
 tech.root: debugger
-ms.assetid: 6cfe4258-be66-49fd-b154-124951ed0dd1
 ms.date: 05/03/2018
 keywords: ["ExtRemoteTyped::ExtRemoteTyped(const DEBUG_TYPED_DATA)"]
 ms.keywords: ExtRemoteTyped, ExtRemoteTyped class [Windows Debugging],ExtRemoteTyped constructor, ExtRemoteTyped constructor [Windows Debugging], ExtRemoteTyped constructor [Windows Debugging],ExtRemoteTyped class, ExtRemoteTyped.ExtRemoteTyped, ExtRemoteTyped.ExtRemoteTyped(DEBUG_TYPED_DATA*), ExtRemoteTyped.ExtRemoteTyped(const DEBUG_TYPED_DATA), ExtRemoteTyped::ExtRemoteTyped, ExtRemoteTyped::ExtRemoteTyped(const DEBUG_TYPED_DATA), debugger.extremotetyped_extremotetyped_debug_typed_data
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteTyped.ExtRemoteTyped
+ - ExtRemoteTyped::ExtRemoteTyped
 ---
 
 # ExtRemoteTyped::ExtRemoteTyped(const DEBUG_TYPED_DATA)
@@ -51,9 +50,9 @@ The <b>ExtRemoteTyped</b> constructor creates a new instance of the <b>ExtRemote
 
 ## -parameters
 
-### -param Typed 
+### -param Typed [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdbgexts/ns-wdbgexts-_debug_typed_data">DEBUG_TYPED_DATA</a> structure that describes the data and type to be represented by this object.
 
 ## -remarks
@@ -137,3 +136,4 @@ The typed data can also be set or changed using the following methods:
 
 
 <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotetypedlist-extremotetypedlist(extremotedata__pcstr_pcstr_ulong64_ulong_pulong64_bool)">ExtRemoteTypedList</a>
+

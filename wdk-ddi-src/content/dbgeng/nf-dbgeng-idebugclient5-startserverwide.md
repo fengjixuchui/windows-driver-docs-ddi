@@ -4,7 +4,6 @@ title: IDebugClient5::StartServerWide (dbgeng.h)
 description: The StartServerWide method starts a debugging server.
 old-location: debugger\startserverwide.htm
 tech.root: debugger
-ms.assetid: 7a36f278-45eb-4ee9-9bdf-370c546245c0
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::StartServerWide"]
 ms.keywords: IDebugClient5 interface [Windows Debugging],StartServerWide method, IDebugClient5.StartServerWide, IDebugClient5::StartServerWide, StartServerWide, StartServerWide method [Windows Debugging], StartServerWide method [Windows Debugging],IDebugClient5 interface, dbgeng/IDebugClient5::StartServerWide, debugger.startserverwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient5.StartServerWide
+ - IDebugClient5::StartServerWide
 ---
 
 # IDebugClient5::StartServerWide
@@ -50,9 +49,9 @@ The <b>StartServerWide</b> method starts a debugging server.
 
 ## -parameters
 
-### -param Options 
+### -param Options [in]
 
-[in]
+
 Specifies the connections options for this server.  These are the same options given to the <b>.server</b> debugger command or the WinDbg and CDB <b>-server</b> command-line option.  For details on the syntax of this string, see <a href="/windows-hardware/drivers/debugger/activating-a-debugging-server">Activating a Debugging Server</a>.
 
 ## -returns
@@ -98,3 +97,4 @@ For more information about debugging servers, see Debugging Server and Debugging
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-startprocessserver">StartProcessServer</a>
+

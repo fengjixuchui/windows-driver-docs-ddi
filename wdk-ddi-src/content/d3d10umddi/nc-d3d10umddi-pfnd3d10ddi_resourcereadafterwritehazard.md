@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_RESOURCEREADAFTERWRITEHAZARD
 title: PFND3D10DDI_RESOURCEREADAFTERWRITEHAZARD (d3d10umddi.h)
 description: The ResourceReadAfterWriteHazard function informs the user-mode display driver that the specified resource was used as an output from the graphics processing unit (GPU) and that the resource will be used as an input to the GPU.
 old-location: display\resourcereadafterwritehazard.htm
-ms.assetid: 4d7dd4f5-9792-48cb-bf69-3903ac9dda75
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_RESOURCEREADAFTERWRITEHAZARD callback function"]
 ms.keywords: PFND3D10DDI_RESOURCEREADAFTERWRITEHAZARD, PFND3D10DDI_RESOURCEREADAFTERWRITEHAZARD callback, ResourceReadAfterWriteHazard, ResourceReadAfterWriteHazard callback function [Display Devices], UserModeDisplayDriverDx10_Functions_6a240dd4-86e0-4876-b4c3-8dd2d3f086e8.xml, d3d10umddi/ResourceReadAfterWriteHazard, display.resourcereadafterwritehazard
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - ResourceReadAfterWriteHazard
+ - PFND3D10DDI_RESOURCEREADAFTERWRITEHAZARD
 ---
 
 # PFND3D10DDI_RESOURCEREADAFTERWRITEHAZARD callback function
@@ -50,13 +49,13 @@ The <i>ResourceReadAfterWriteHazard</i> function informs the user-mode display d
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hResource* [in]
 
@@ -81,3 +80,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

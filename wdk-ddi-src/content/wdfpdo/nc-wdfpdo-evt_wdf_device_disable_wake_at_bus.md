@@ -4,7 +4,6 @@ title: EVT_WDF_DEVICE_DISABLE_WAKE_AT_BUS (wdfpdo.h)
 description: A bus driver's EvtDeviceDisableWakeAtBus event callback function performs bus-level operations that disable the ability of one of the bus's devices to trigger a wake-up signal on the bus.
 old-location: wdf\evtdevicedisablewakeatbus.htm
 tech.root: wdf
-ms.assetid: 91ae9694-5020-42ee-b882-a753e9bbe919
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DEVICE_DISABLE_WAKE_AT_BUS callback function"]
 ms.keywords: DFDeviceObjectFdoPdoRef_3f6a4a69-a6aa-48a5-9a6a-fd64c569edca.xml, EVT_WDF_DEVICE_DISABLE_WAKE_AT_BUS, EVT_WDF_DEVICE_DISABLE_WAKE_AT_BUS callback, EvtDeviceDisableWakeAtBus, EvtDeviceDisableWakeAtBus callback function, kmdf.evtdevicedisablewakeatbus, wdf.evtdevicedisablewakeatbus, wdfpdo/EvtDeviceDisableWakeAtBus
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfpdo.h
 api_name:
- - EvtDeviceDisableWakeAtBus
+ - EVT_WDF_DEVICE_DISABLE_WAKE_AT_BUS
 ---
 
 # EVT_WDF_DEVICE_DISABLE_WAKE_AT_BUS callback function
@@ -52,15 +51,20 @@ A bus driver's <i>EvtDeviceDisableWakeAtBus</i> event callback function performs
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
 ## -remarks
+
+To register this callback function, the bus driver must call <a href="/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitseteventcallbacks">WdfPdoInitSetEventCallbacks</a>.
 
 For more information about this callback function, see <a href="/windows-hardware/drivers/wdf/supporting-system-wake-up">Supporting System Wake-Up</a>.
 
 ## -see-also
 
+<a href="/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitseteventcallbacks">WdfPdoInitSetEventCallbacks</a>
+
 <a href="/windows-hardware/drivers/ddi/wdfpdo/nc-wdfpdo-evt_wdf_device_enable_wake_at_bus">EvtDeviceEnableWakeAtBus</a>
+

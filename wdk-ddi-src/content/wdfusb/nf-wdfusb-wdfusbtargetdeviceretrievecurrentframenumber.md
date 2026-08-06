@@ -4,7 +4,6 @@ title: WdfUsbTargetDeviceRetrieveCurrentFrameNumber function (wdfusb.h)
 description: The WdfUsbTargetDeviceRetrieveCurrentFrameNumber method retrieves the current USB frame number.
 old-location: wdf\wdfusbtargetdeviceretrievecurrentframenumber.htm
 tech.root: wdf
-ms.assetid: 7f73339f-adac-4569-92e7-1b166f93db92
 ms.date: 02/26/2018
 keywords: ["WdfUsbTargetDeviceRetrieveCurrentFrameNumber function"]
 ms.keywords: DFUsbRef_9dd2f1ce-06f7-43a2-8e65-931c03f69c6e.xml, WdfUsbTargetDeviceRetrieveCurrentFrameNumber, WdfUsbTargetDeviceRetrieveCurrentFrameNumber method, kmdf.wdfusbtargetdeviceretrievecurrentframenumber, wdf.wdfusbtargetdeviceretrievecurrentframenumber, wdfusb/WdfUsbTargetDeviceRetrieveCurrentFrameNumber
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfUsbTargetDeviceRetrieveCurrentFrameNumber</b> method retrieves the cur
 
 ## -parameters
 
-### -param UsbDevice 
+### -param UsbDevice [in]
 
-[in]
+
 A handle to a USB device object that was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>.
 
-### -param CurrentFrameNumber 
+### -param CurrentFrameNumber [out]
 
-[out]
+
 A pointer to a location that receives the current 32-bit USB frame number.
 
 ## -returns

@@ -2,7 +2,6 @@
 UID: NS:dispmprt._DXGKARG_QUERYDIAGNOSTICTYPESSUPPORT
 title: _DXGKARG_QUERYDIAGNOSTICTYPESSUPPORT (dispmprt.h)
 description: Arguments for the DxgkddiQueryDiagnosticTypesSupport callback function.
-ms.assetid: 05382c90-2195-4352-b12a-b9fcaec51033
 ms.date: 10/19/2018
 keywords: ["DXGKARG_QUERYDIAGNOSTICTYPESSUPPORT structure"]
 ms.keywords: _DXGKARG_QUERYDIAGNOSTICTYPESSUPPORT, *PDXGKARG_QUERYDIAGNOSTICTYPESSUPPORT, DXGKARG_QUERYDIAGNOSTICTYPESSUPPORT,
@@ -36,8 +35,8 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGKARG_QUERYDIAGNOSTICTYPESSUPPORT
-product:
- - Windows
+ - PDXGKARG_QUERYDIAGNOSTICTYPESSUPPORT
+ - DXGKARG_QUERYDIAGNOSTICTYPESSUPPORT
 ---
 
 # _DXGKARG_QUERYDIAGNOSTICTYPESSUPPORT structure
@@ -49,15 +48,15 @@ Arguments for the [DxgkddiQueryDiagnosticTypesSupport](nc-dispmprt-dxgkddi_query
 
 ## -struct-fields
 
-### -field DiagnosticCategory
+### -field DiagnosticCategory [in]
 
-[in] A [DXGK_DIAGNOSTIC_CATEGORIES](ns-dispmprt-_dxgk_diagnostic_categories.md) structure that indicates which one of the diagnostic categories the supported types are being queried for.
+A [DXGK_DIAGNOSTIC_CATEGORIES](ns-dispmprt-_dxgk_diagnostic_categories.md) structure that indicates which one of the diagnostic categories the supported types are being queried for.
 
-### -field NoninvasiveTypes
+### -field NoninvasiveTypes [out]
 
-[out] A [DXGK_DIAGNOSTIC_TYPES](ns-dispmprt-_dxgk_diagnostic_types.md) structure that indicates driver support for diagnostics, which can be achieved without significant overhead or impact on the system. Noninvasive diagnostics should be sufficiently benign that they may be enabled by the OS to proactively gather telemetry.
+A [DXGK_DIAGNOSTIC_TYPES](ns-dispmprt-_dxgk_diagnostic_types.md) structure that indicates driver support for diagnostics, which can be achieved without significant overhead or impact on the system. Noninvasive diagnostics should be sufficiently benign that they may be enabled by the OS to proactively gather telemetry.
 
-### -field InvasiveTypes
+### -field InvasiveTypes [out]
 
-[out] A [DXGK_DIAGNOSTIC_TYPES](ns-dispmprt-_dxgk_diagnostic_types.md) structure that indicates driver support for diagnostics, which the driver supports but may require significant overhead or have significant impact on the system. Invasive diagnostics will only be enabled when required to gather information for specific investigations and are expected to have power and/or performance drawbacks making them unsuitable for automated usage.
+A [DXGK_DIAGNOSTIC_TYPES](ns-dispmprt-_dxgk_diagnostic_types.md) structure that indicates driver support for diagnostics, which the driver supports but may require significant overhead or have significant impact on the system. Invasive diagnostics will only be enabled when required to gather information for specific investigations and are expected to have power and/or performance drawbacks making them unsuitable for automated usage.
 

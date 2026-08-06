@@ -4,7 +4,6 @@ title: DOT11_CHANNEL_HINT (windot11.h)
 description: The DOT11_CHANNEL_HINT structure describes suggested channel numbers for an NLO operation.
 old-location: netvista\dot11_channel_hint.htm
 tech.root: netvista
-ms.assetid: B3E395C3-C642-4A5E-9005-88323A80F90E
 ms.date: 02/16/2018
 keywords: ["DOT11_CHANNEL_HINT structure"]
 ms.keywords: "*PDOT11_CHANNEL_HINT, DOT11_CHANNEL_HINT, DOT11_CHANNEL_HINT structure [Network Drivers Starting with Windows Vista], PDOT11_CHANNEL_HINT, PDOT11_CHANNEL_HINT structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_channel_hint, windot11/DOT11_CHANNEL_HINT, windot11/PDOT11_CHANNEL_HINT"
@@ -41,8 +40,7 @@ api_location:
  - Windot11.h
 api_name:
  - DOT11_CHANNEL_HINT
-product:
- - Windows 10 or later.
+ - PDOT11_CHANNEL_HINT
 ---
 
 # DOT11_CHANNEL_HINT structure
@@ -50,7 +48,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_CHANNEL_HINT structure describes suggested channel numbers for an NLO operation.
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_CHANNEL_HINT structure describes suggested channel numbers for an NLO operation.
 
 ## -struct-fields
 
@@ -70,3 +71,4 @@ typedef struct _DOT11_CHANNEL_HINT {
   ULONG          uChannelNumber;
 } DOT11_CHANNEL_HINT, *PDOT11_CHANNEL_HINT;
 ```
+

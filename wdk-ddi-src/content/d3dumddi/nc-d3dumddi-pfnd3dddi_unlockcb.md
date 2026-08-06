@@ -4,7 +4,6 @@ title: PFND3DDDI_UNLOCKCB (d3dumddi.h)
 description: The pfnUnlockCb function unlocks an allocation that was locked by a call to the pfnLockCb function.
 old-location: display\pfnunlockcb.htm
 tech.root: display
-ms.assetid: 6684f350-da27-478d-ab7b-36e395f7df8d
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_UNLOCKCB callback function"]
 ms.keywords: D3Druntime_Functions_8911e13b-cbfc-4620-bdb2-0dd6a558e88c.xml, PFND3DDDI_UNLOCKCB, PFND3DDDI_UNLOCKCB callback, d3dumddi/pfnUnlockCb, display.pfnunlockcb, pfnUnlockCb, pfnUnlockCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnUnlockCb
-product:
- - Windows
+ - PFND3DDDI_UNLOCKCB
 ---
 
 # PFND3DDDI_UNLOCKCB callback function
@@ -56,7 +53,7 @@ The <b>pfnUnlockCb</b> function unlocks an allocation that was locked by a call 
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -146,3 +143,4 @@ HRESULT CD3DContext::SyncEnginesUsingLock(VOID) {
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_rendercb">pfnRenderCb</a>
+

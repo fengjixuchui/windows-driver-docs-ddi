@@ -3,9 +3,7 @@ UID: NI:ntddvdeo.IOCTL_MIPI_DSI_RESET
 title: IOCTL_MIPI_DSI_RESET
 description: IOCTL_MIPI_DSI_RESET requests the reset of a device under graphics driver and OS control.
 tech.root: display
-ms.assetid: 9c495955-2fbf-400d-9c75-379f64025993
 ms.date: 03/24/2020
-ms.topic: ioctl
 req.header: ntddvdeo.h
 req.include-header: 
 req.target-type: 
@@ -27,8 +25,6 @@ api_location:
  - ntddvdeo.h
 api_name:
  - IOCTL_MIPI_DSI_RESET
-product:
- - Windows
 f1_keywords:
  - IOCTL_MIPI_DSI_RESET
  - ntddvdeo/IOCTL_MIPI_DSI_RESET
@@ -43,6 +39,8 @@ f1_keywords:
 **IOCTL_MIPI_DSI_RESET** requests the reset of a device under graphics driver and OS control.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

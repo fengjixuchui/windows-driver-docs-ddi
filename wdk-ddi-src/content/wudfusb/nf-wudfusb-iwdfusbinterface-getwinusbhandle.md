@@ -4,7 +4,6 @@ title: IWDFUsbInterface::GetWinUsbHandle (wudfusb.h)
 description: The GetWinUsbHandle method retrieves the WinUsb interface handle that is associated with a USB interface.
 old-location: wdf\iwdfusbinterface_getwinusbhandle.htm
 tech.root: wdf
-ms.assetid: 31c23596-21b2-4fb2-96bd-5372fe2432ab
 ms.date: 02/26/2018
 keywords: ["IWDFUsbInterface::GetWinUsbHandle"]
 ms.keywords: GetWinUsbHandle, GetWinUsbHandle method, GetWinUsbHandle method,IWDFUsbInterface interface, IWDFUsbInterface interface,GetWinUsbHandle method, IWDFUsbInterface.GetWinUsbHandle, IWDFUsbInterface::GetWinUsbHandle, UMDFUSBref_6c94f0cc-8995-45c9-8101-bc123b0e48bf.xml, umdf.iwdfusbinterface_getwinusbhandle, wdf.iwdfusbinterface_getwinusbhandle, wudfusb/IWDFUsbInterface::GetWinUsbHandle
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFUsbInterface.GetWinUsbHandle
+ - IWDFUsbInterface::GetWinUsbHandle
 ---
 
 # IWDFUsbInterface::GetWinUsbHandle
@@ -75,3 +74,4 @@ The UMDF driver should not call the <a href="/windows/win32/api/winusb/nf-winusb
 
 
 <a href="/windows/win32/api/winusb/nf-winusb-winusb_initialize">WinUsb_Initialize</a>
+

@@ -4,7 +4,6 @@ title: _WDI_SCAN_TYPE (wditypes.h)
 description: The WDI_SCAN_TYPE enumeration defines the scan types.
 old-location: netvista\wdi_scan_type.htm
 tech.root: netvista
-ms.assetid: DF4ECD03-2C2F-44B3-82BE-E57B333AF069
 ms.date: 05/02/2018
 keywords: ["WDI_SCAN_TYPE enumeration"]
 ms.keywords: WDI_SCAN_TYPE, WDI_SCAN_TYPE enumeration [Device and Driver Installation], WDI_SCAN_TYPE_ACTIVE_ONLY, WDI_SCAN_TYPE_AUTO, WDI_SCAN_TYPE_PASSIVE_ONLY, _WDI_SCAN_TYPE, netvista.wdi_scan_type, netvista.wifi_scan_type, wditypes/WDI_SCAN_TYPE, wditypes/WDI_SCAN_TYPE_ACTIVE_ONLY, wditypes/WDI_SCAN_TYPE_AUTO, wditypes/WDI_SCAN_TYPE_PASSIVE_ONLY
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_SCAN_TYPE
  - WDI_SCAN_TYPE
 ---
 
@@ -47,6 +47,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_SCAN_TYPE enumeration defines the scan types.
 
@@ -66,3 +69,4 @@ The port can perform an active or passive can or can use a combination of both s
 
 ### -field WDI_SCAN_TYPE_MAX_VALUE
 
+The maximum value for this type.

@@ -4,7 +4,6 @@ title: IKsPinEx::KsNotifyError (ksproxy.h)
 description: The KsNotifyError method notifies the filter graph of an error to give the filter graph an opportunity to halt.
 old-location: stream\ikspinex_ksnotifyerror.htm
 tech.root: stream
-ms.assetid: a2526734-c0bf-4f6b-b91e-2f6891c46c69
 ms.date: 04/23/2018
 keywords: ["IKsPinEx::KsNotifyError"]
 ms.keywords: IKsPinEx interface [Streaming Media Devices],KsNotifyError method, IKsPinEx.KsNotifyError, IKsPinEx::KsNotifyError, KsNotifyError, KsNotifyError method [Streaming Media Devices], KsNotifyError method [Streaming Media Devices],IKsPinEx interface, ksproxy/IKsPinEx::KsNotifyError, ksproxy_41c855aa-58a3-4bf6-bb8a-1eb8dfe2a3e1.xml, stream.ikspinex_ksnotifyerror
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ksproxy.h
 api_name:
- - IKsPinEx.KsNotifyError
+ - IKsPinEx::KsNotifyError
 ---
 
 # IKsPinEx::KsNotifyError
@@ -50,14 +49,14 @@ The <b>KsNotifyError</b> method notifies the filter graph of an error to give th
 
 ## -parameters
 
-### -param Sample 
+### -param Sample [in]
 
-[in]
+
 Pointer to the <b>IMediaSample</b> interface for the associated media sample.
 
-### -param hr 
+### -param hr [in]
 
-[in]
+
 Error value for notification. If ERROR_OPERATION_ABORTED (that is, the I/O was purposefully canceled), the filter graph is not notified.
 
 ## -remarks
@@ -69,3 +68,4 @@ For more information about <b>IMediaSample</b>, see the Microsoft Windows SDK do
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ksproxy/nn-ksproxy-ikspinex">IKsPinEx</a>
+

@@ -4,7 +4,6 @@ title: WdfDeviceInitFree function (wdfdevice.h)
 description: The WdfDeviceInitFree method deallocates a WDFDEVICE_INIT structure.
 old-location: wdf\wdfdeviceinitfree.htm
 tech.root: wdf
-ms.assetid: 61540bd2-8496-4972-854c-968b53c90788
 ms.date: 02/26/2018
 keywords: ["WdfDeviceInitFree function"]
 ms.keywords: DFDeviceObjectGeneralRef_c2bdf168-0e3f-40c9-9e88-77faf7241bcb.xml, WdfDeviceInitFree, WdfDeviceInitFree method, kmdf.wdfdeviceinitfree, wdf.wdfdeviceinitfree, wdfdevice/WdfDeviceInitFree
@@ -53,9 +52,9 @@ The <b>WdfDeviceInitFree</b> method deallocates a <a href="/windows-hardware/dri
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
 ## -remarks

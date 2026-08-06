@@ -4,7 +4,6 @@ title: IWDFRequestCompletionParams::GetCompletedRequestType (wudfddi.h)
 description: The GetCompletedRequestType method retrieves the type of operation that the request to be completed contains.
 old-location: wdf\iwdfrequestcompletionparams_getcompletedrequesttype.htm
 tech.root: wdf
-ms.assetid: 1977828d-61bb-4649-bfa6-e5e82775258e
 ms.date: 02/26/2018
 keywords: ["IWDFRequestCompletionParams::GetCompletedRequestType"]
 ms.keywords: GetCompletedRequestType, GetCompletedRequestType method, GetCompletedRequestType method,IWDFRequestCompletionParams interface, IWDFRequestCompletionParams interface,GetCompletedRequestType method, IWDFRequestCompletionParams.GetCompletedRequestType, IWDFRequestCompletionParams::GetCompletedRequestType, UMDFRequestObjectRef_97c61d1b-059f-44d7-9d3a-7c031099d669.xml, umdf.iwdfrequestcompletionparams_getcompletedrequesttype, wdf.iwdfrequestcompletionparams_getcompletedrequesttype, wudfddi/IWDFRequestCompletionParams::GetCompletedRequestType
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFRequestCompletionParams.GetCompletedRequestType
+ - IWDFRequestCompletionParams::GetCompletedRequestType
 ---
 
 # IWDFRequestCompletionParams::GetCompletedRequestType
@@ -61,3 +60,4 @@ The <b>GetCompletedRequestType</b> method retrieves the type of operation that t
 
 
 <a href="/windows-hardware/drivers/ddi/wdfrequest/ne-wdfrequest-_wdf_request_type">WDF_REQUEST_TYPE</a>
+

@@ -4,7 +4,6 @@ title: KsFilterRegisterPowerCallbacks function (ks.h)
 description: The KsFilterRegisterPowerCallbacks function registers power management callbacks for Filter.
 old-location: stream\ksfilterregisterpowercallbacks.htm
 tech.root: stream
-ms.assetid: 9b4a7932-7371-48d2-95fb-1c3e3ca170be
 ms.date: 04/23/2018
 keywords: ["KsFilterRegisterPowerCallbacks function"]
 ms.keywords: KsFilterRegisterPowerCallbacks, KsFilterRegisterPowerCallbacks function [Streaming Media Devices], avfunc_7c5322b7-f7e2-4641-b466-06f5d9ebfc34.xml, ks/KsFilterRegisterPowerCallbacks, stream.ksfilterregisterpowercallbacks
@@ -51,19 +50,19 @@ The **KsFilterRegisterPowerCallbacks** function registers power management callb
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in]
 
-[in]
+
 A pointer to the [KSFILTER](./ns-ks-_ksfilter.md) structure for which to register power callbacks. In order to receive power notification messages, *Filter* must be filter-centric.
 
-### -param Sleep 
+### -param Sleep [in, optional]
 
-[in, optional]
+
 A pointer to a function that handles sleep requests for the device. If **NULL**, no sleep callback is registered. For more information, see the Remarks section below.
 
-### -param Wake 
+### -param Wake [in, optional]
 
-[in, optional]
+
 A pointer to a function that handles wake requests for the device. If **NULL**, no wake callback is specified. For more information, see the Remarks section below.
 
 ## -remarks

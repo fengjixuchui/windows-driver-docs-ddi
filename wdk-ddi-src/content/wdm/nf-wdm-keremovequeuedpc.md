@@ -4,7 +4,6 @@ title: KeRemoveQueueDpc function (wdm.h)
 description: The KeRemoveQueueDpc routine removes the specified DPC object from the system DPC queue.
 old-location: kernel\keremovequeuedpc.htm
 tech.root: kernel
-ms.assetid: 9f4b076f-006b-47cd-b970-8beed8d7e804
 ms.date: 04/30/2018
 keywords: ["KeRemoveQueueDpc function"]
 ms.keywords: KeRemoveQueueDpc, KeRemoveQueueDpc routine [Kernel-Mode Driver Architecture], k105_b07492b0-b6b2-4d15-b62c-437a4b33c0b6.xml, kernel.keremovequeuedpc, wdm/KeRemoveQueueDpc
@@ -50,9 +49,9 @@ The <b>KeRemoveQueueDpc</b> routine removes the specified DPC object from the sy
 
 ## -parameters
 
-### -param Dpc 
+### -param Dpc [in, out]
 
-[in, out]
+
 A pointer to an initialized DPC object that was queued by a previous call to the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keinsertqueuedpc">KeInsertQueueDpc</a> routine.
 
 ## -returns

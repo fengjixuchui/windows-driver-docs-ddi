@@ -4,7 +4,6 @@ title: MmFreeNonCachedMemory function (ntddk.h)
 description: The MmFreeNonCachedMemory routine releases a range of noncached memory that was allocated by the MmAllocateNonCachedMemory routine.
 old-location: kernel\mmfreenoncachedmemory.htm
 tech.root: kernel
-ms.assetid: 284c7e69-50c6-4eef-bcf1-547bc7032a4a
 ms.date: 04/30/2018
 keywords: ["MmFreeNonCachedMemory function"]
 ms.keywords: MmFreeNonCachedMemory, MmFreeNonCachedMemory routine [Kernel-Mode Driver Architecture], k106_29c317c1-955e-4d0c-9e65-e1aa511c7a8d.xml, kernel.mmfreenoncachedmemory, ntddk/MmFreeNonCachedMemory
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ The <b>MmFreeNonCachedMemory</b> routine releases a range of noncached memory th
 
 ## -parameters
 
-### -param BaseAddress 
+### -param BaseAddress [in]
 
-[in]
+
 Pointer to the virtual address of the memory to be freed.
 
-### -param NumberOfBytes 
+### -param NumberOfBytes [in]
 
-[in]
+
 Specifies the size of the range to be freed. This value must match the size passed in a preceding call to <b>MmAllocateNonCachedMemory</b>.
 
 ## -remarks

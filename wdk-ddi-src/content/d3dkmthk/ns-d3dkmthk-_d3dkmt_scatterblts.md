@@ -1,16 +1,13 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_SCATTERBLTS
-title: _D3DKMT_SCATTERBLTS (d3dkmthk.h)
-description: Reserved for system use.
-ms.assetid: 7c2bd4d6-643a-4342-bda7-70b351743f93
-ms.date: 10/19/2018
-keywords: ["D3DKMT_SCATTERBLTS structure"]
-ms.keywords: _D3DKMT_SCATTERBLTS, D3DKMT_SCATTERBLTS,
+title: D3DKMT_SCATTERBLTS (d3dkmthk.h)
+description: Learn more about the D3DKMT_SCATTERBLTS structure.
+ms.date: 07/17/2024
 req.header: d3dkmthk.h
 req.include-header: 
 req.target-type: 
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
 req.kmdf-ver: 
 req.umdf-ver: 
 req.lib: 
@@ -35,16 +32,16 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_SCATTERBLTS
+ - D3DKMT_SCATTERBLTS
 dev_langs:
  - c++
 ---
 
-# _D3DKMT_SCATTERBLTS structure
-
+# D3DKMT_SCATTERBLTS structure
 
 ## -description
 
-Reserved for system use.
+The **D3DKMT_SCATTERBLTS** structure is reserved for system use. Don't use it in your driver.
 
 ## -struct-fields
 
@@ -59,4 +56,3 @@ The Blts.
 ## -remarks
 
 ## -see-also
-

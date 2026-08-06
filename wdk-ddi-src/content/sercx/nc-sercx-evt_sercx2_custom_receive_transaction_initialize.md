@@ -4,7 +4,6 @@ title: EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_INITIALIZE (sercx.h)
 description: The EvtSerCx2CustomReceiveTransactionInitialize event callback function is called by version 2 of the serial framework extension (SerCx2) to prepare the serial controller hardware to perform a new custom-receive transaction.
 old-location: serports\evtsercx2customreceivetransactioninitialize.htm
 tech.root: serports
-ms.assetid: B3C23236-2A35-456A-B461-AEC688ACA5B7
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_INITIALIZE callback function"]
 ms.keywords: 2/EvtSerCx2CustomReceiveTransactionInitialize, EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_INITIALIZE, EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_INITIALIZE callback, EvtSerCx2CustomReceiveTransactionInitialize, EvtSerCx2CustomReceiveTransactionInitialize callback function [Serial Ports], serports.evtsercx2customreceivetransactioninitialize
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
- - EvtSerCx2CustomReceiveTransactionInitialize
+ - EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_INITIALIZE
 ---
 
 # EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_INITIALIZE callback function
@@ -50,24 +49,24 @@ The <i>EvtSerCx2CustomReceiveTransactionInitialize</i> event callback function i
 
 ## -parameters
 
-### -param CustomReceiveTransaction 
+### -param CustomReceiveTransaction [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2CUSTOMRECEIVETRANSACTION</a> handle to a custom-receive-transaction object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customreceivetransactioncreate">SerCx2CustomReceiveTransactionCreate</a> method to create this object.
 
-### -param Mdl 
+### -param Mdl [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl">MDL</a> that describes the memory pages that are spanned by the read buffer for the custom-receive transaction. The scatter/gather list for the DMA transfer will use the region of this memory that is specified by the <i>Offset</i> and <i>Length</i> parameters.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 The starting offset for the data transfer. This parameter is a byte offset from the start of the buffer region described by the MDL. If the MDL specifies a total of N bytes of buffer space, possible values of <i>Offset</i> are in the range 0 to N–1.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The size, in bytes, of the data transfer. If the MDL specifies a total of N bytes of buffer space, possible values of <i>Length</i> are in the range 1 to N–<i>Offset</i>.
 
 ## -remarks
@@ -129,3 +128,4 @@ The <b>EVT_SERCX2_CUSTOM_RECEIVE_TRANSACTION_INITIALIZE</b> function type is def
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customreceivetransactioninitializecomplete">SerCx2CustomReceiveTransactionInitializeComplete</a>
+

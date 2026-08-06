@@ -1,9 +1,8 @@
 ---
 UID: NF:bdatypes.TAG
 title: TAG function (bdatypes.h)
-description: 
-ms.assetid: 6f10e283-f053-404d-9ab7-c9c14fe8cc21
-ms.date: 10/19/2018
+description: "Learn more about: TAG function"
+ms.date: 11/17/2020
 keywords: ["TAG function"]
 ms.keywords: TAG
 req.header: bdatypes.h
@@ -25,6 +24,7 @@ req.assembly:
 req.type-library: 
 targetos: Windows
 ms.custom: RS5
+tech.root: stream
 f1_keywords:
  - TAG
  - bdatypes/TAG
@@ -45,7 +45,7 @@ api_name:
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 ## -returns
 

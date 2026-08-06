@@ -4,7 +4,6 @@ title: _D3DDDIARG_DECODEEXECUTE (d3dumddi.h)
 description: The D3DDDIARG_DECODEEXECUTE structure describes a Microsoft DirectX Video Acceleration (VA) decode operation to perform.
 old-location: display\d3dddiarg_decodeexecute.htm
 tech.root: display
-ms.assetid: 7f5bdf39-68a7-4466-b4d9-3620b638db62
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_DECODEEXECUTE structure"]
 ms.keywords: D3DDDIARG_DECODEEXECUTE, D3DDDIARG_DECODEEXECUTE structure [Display Devices], UMDisplayDriver_param_Structs_bd4aee7e-91f5-41dc-bb63-0fed88e04c7d.xml, _D3DDDIARG_DECODEEXECUTE, d3dumddi/D3DDDIARG_DECODEEXECUTE, display.d3dddiarg_decodeexecute
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_DECODEEXECUTE
  - D3DDDIARG_DECODEEXECUTE
 ---
 
@@ -52,17 +52,17 @@ The D3DDDIARG_DECODEEXECUTE structure describes a Microsoft DirectX Video Accele
 
 ## -struct-fields
 
-### -field hDecode
+### -field hDecode [in]
 
-[in] A handle to the DirectX VA decode device. The user-mode display driver returns this handle in a call to its <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createdecodedevice">CreateDecodeDevice</a> function.
+A handle to the DirectX VA decode device. The user-mode display driver returns this handle in a call to its <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createdecodedevice">CreateDecodeDevice</a> function.
 
-### -field NumCompBuffers
+### -field NumCompBuffers [in]
 
-[in] The number of compressed buffer that are pointed to by the <b>pCompressedBuffers</b> member.
+The number of compressed buffer that are pointed to by the <b>pCompressedBuffers</b> member.
 
-### -field pCompressedBuffers
+### -field pCompressedBuffers [in]
 
-[in] A pointer to a list of <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_decodebufferdesc">DXVADDI_DECODEBUFFERDESC</a> structures that describe the compressed buffers that are passed from the host decoder to the accelerator.
+A pointer to a list of <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_decodebufferdesc">DXVADDI_DECODEBUFFERDESC</a> structures that describe the compressed buffers that are passed from the host decoder to the accelerator.
 
 ## -see-also
 
@@ -75,3 +75,4 @@ The D3DDDIARG_DECODEEXECUTE structure describes a Microsoft DirectX Video Accele
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_decodeexecute">DecodeExecute</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11._DOT11_INCOMING_ASSOC_STARTED_PARAMETERS
 title: _DOT11_INCOMING_ASSOC_STARTED_PARAMETERS (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_INCOMING_ASSOC_STARTED_PARAMETERS structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_incoming_assoc_started_parameters.htm
 tech.root: netvista
-ms.assetid: 8bf8d69a-0c47-48c1-83f5-d436a3ab8323
 ms.date: 02/16/2018
 keywords: ["DOT11_INCOMING_ASSOC_STARTED_PARAMETERS structure"]
 ms.keywords: "*PDOT11_INCOMING_ASSOC_STARTED_PARAMETERS, DOT11_INCOMING_ASSOC_STARTED_PARAMETERS, DOT11_INCOMING_ASSOC_STARTED_PARAMETERS structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_f09f57cb-9f15-444c-b09f-d97f016e86a2.xml, PDOT11_INCOMING_ASSOC_STARTED_PARAMETERS, PDOT11_INCOMING_ASSOC_STARTED_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _DOT11_INCOMING_ASSOC_STARTED_PARAMETERS, netvista.dot11_incoming_assoc_started_parameters, windot11/DOT11_INCOMING_ASSOC_STARTED_PARAMETERS, windot11/PDOT11_INCOMING_ASSOC_STARTED_PARAMETERS"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - windot11.h
 api_name:
+ - _DOT11_INCOMING_ASSOC_STARTED_PARAMETERS
+ - PDOT11_INCOMING_ASSOC_STARTED_PARAMETERS
  - DOT11_INCOMING_ASSOC_STARTED_PARAMETERS
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_INCOMING_ASSOC_STARTED_PARAMETERS structure
@@ -52,7 +51,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_INCOMING_ASSOC_STARTED_PARAMETERS structure specifies that the NIC has received the first
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_INCOMING_ASSOC_STARTED_PARAMETERS structure specifies that the NIC has received the first
   valid 802.11 authentication request from a peer station on an infrastructure BSS.
 
 ## -struct-fields
@@ -61,7 +63,7 @@ product:
 
 The type, revision, and size of the DOT11_INCOMING_ASSOC_STARTED_PARAMETERS structure. This member
      is formatted as an
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+     <a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 
 The miniport driver must set the members of
@@ -109,7 +111,7 @@ This member must be set to
  
 
 For more information about these members, see
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+     <a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 ### -field PeerMacAddr
 
@@ -139,4 +141,5 @@ The Native 802.11 miniport driver includes a DOT11_INCOMING_ASSOC_STARTED_PARAME
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+

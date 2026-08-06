@@ -4,7 +4,6 @@ title: IFixedPage::GetPrintTicket (filterpipeline.h)
 description: The GetPrintTicket method gets the print ticket object for the fixed page.
 old-location: print\ifixedpage_getprintticket.htm
 tech.root: print
-ms.assetid: 4a30efd9-8fef-4fef-8293-b7df5b954977
 ms.date: 04/20/2018
 keywords: ["IFixedPage::GetPrintTicket"]
 ms.keywords: GetPrintTicket, GetPrintTicket method [Print Devices], GetPrintTicket method [Print Devices],IFixedPage interface, IFixedPage interface [Print Devices],GetPrintTicket method, IFixedPage.GetPrintTicket, IFixedPage::GetPrintTicket, filterpipeline/IFixedPage::GetPrintTicket, filterpipeline_13ccb2a1-7898-41d1-b11f-55ca3cc881ab.xml, print.ifixedpage_getprintticket
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - filterpipeline.h
 api_name:
- - IFixedPage.GetPrintTicket
+ - IFixedPage::GetPrintTicket
 ---
 
 # IFixedPage::GetPrintTicket
@@ -50,9 +49,9 @@ The <b>GetPrintTicket</b> method gets the print ticket object for the fixed page
 
 ## -parameters
 
-### -param ppPrintTicket 
+### -param ppPrintTicket [out]
 
-[out]
+
 Pointer to a location into which the method writes a pointer to the <a href="/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-ipartprintticket">IPartPrintTicket</a> interface of a print ticket object. This object contains the print ticket for the fixed page.
 
 ## -returns
@@ -78,3 +77,4 @@ After calling this method to get the page-level print ticket, a print driver fil
 
 
 <a href="/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-ipartprintticket">IPartPrintTicket</a>
+

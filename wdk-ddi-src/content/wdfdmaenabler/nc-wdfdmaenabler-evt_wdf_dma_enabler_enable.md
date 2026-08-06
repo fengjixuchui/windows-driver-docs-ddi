@@ -4,7 +4,6 @@ title: EVT_WDF_DMA_ENABLER_ENABLE (wdfdmaenabler.h)
 description: A driver's EvtDmaEnablerEnable event callback function enables a device's DMA capability after the device enters its working (D0) state.
 old-location: wdf\evtdmaenablerenable.htm
 tech.root: wdf
-ms.assetid: b6344a06-98ee-48c0-8fd5-76edfc71af2b
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DMA_ENABLER_ENABLE callback function"]
 ms.keywords: DFDmaObjectRef_ca81d643-d2a6-4f88-9c6e-80c5681b76d1.xml, EVT_WDF_DMA_ENABLER_ENABLE, EVT_WDF_DMA_ENABLER_ENABLE callback, EvtDmaEnablerEnable, EvtDmaEnablerEnable callback function, kmdf.evtdmaenablerenable, wdf.evtdmaenablerenable, wdfdmaenabler/EvtDmaEnablerEnable
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfDmaEnabler.h
 api_name:
- - EvtDmaEnablerEnable
+ - EVT_WDF_DMA_ENABLER_ENABLE
 ---
 
 # EVT_WDF_DMA_ENABLER_ENABLE callback function
@@ -52,9 +51,9 @@ A driver's <i>EvtDmaEnablerEnable</i> event callback function enables a device's
 
 ## -parameters
 
-### -param DmaEnabler 
+### -param DmaEnabler [in]
 
-[in]
+
 A handle to a DMA enabler object.
 
 ## -returns
@@ -80,3 +79,4 @@ The <i>EvtDmaEnablerEnable</i> callback function is called at IRQL = PASSIVE_LEV
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdmaenabler/nf-wdfdmaenabler-wdfdmaenablercreate">WdfDmaEnablerCreate</a>
+

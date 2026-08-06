@@ -4,7 +4,6 @@ title: IoReleaseVpbSpinLock function (ntifs.h)
 description: The IoReleaseVpbSpinLock routine releases the Volume Parameter Block (VPB) spin lock.
 old-location: ifsk\ioreleasevpbspinlock.htm
 tech.root: ifsk
-ms.assetid: c0b93f32-4c5c-472c-8c13-3e441f86475f
 ms.date: 04/16/2018
 keywords: ["IoReleaseVpbSpinLock function"]
 ms.keywords: IoReleaseVpbSpinLock, IoReleaseVpbSpinLock routine [Installable File System Drivers], ifsk.ioreleasevpbspinlock, ioref_6ccdef5f-9874-4e93-8d91-a05b80d5cecf.xml, ntifs/IoReleaseVpbSpinLock
@@ -50,9 +49,9 @@ The <b>IoReleaseVpbSpinLock</b> routine releases the Volume Parameter Block (VPB
 
 ## -parameters
 
-### -param Irql 
+### -param Irql [in]
 
-[in]
+
 Saved IRQL value returned by <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ioacquirevpbspinlock">IoAcquireVpbSpinLock</a> when the VPB spin lock was acquired.
 
 ## -remarks

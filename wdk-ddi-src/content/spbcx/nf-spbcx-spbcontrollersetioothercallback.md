@@ -4,7 +4,6 @@ title: SpbControllerSetIoOtherCallback function (spbcx.h)
 description: The SpbControllerSetIoOtherCallback method registers an SPB controller driver's EvtSpbControllerIoOther callback function.
 old-location: spb\spbcontrollersetioothercallback.htm
 tech.root: SPB
-ms.assetid: 605E2353-8C82-4005-BB72-4CB44146A253
 ms.date: 04/30/2018
 keywords: ["SpbControllerSetIoOtherCallback function"]
 ms.keywords: SPB.spbcontrollersetioothercallback, SpbControllerSetIoOtherCallback, SpbControllerSetIoOtherCallback method [Buses], spbcx/SpbControllerSetIoOtherCallback
@@ -51,19 +50,19 @@ The <b>SpbControllerSetIoOtherCallback</b> method registers an SPB controller dr
 
 ## -parameters
 
-### -param FxDevice 
+### -param FxDevice [in]
 
-[in]
+
 A WDFDEVICE handle to the device object that represents the SPB controller.
 
-### -param EvtSpbControllerIoOther 
+### -param EvtSpbControllerIoOther [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/spbcx/nc-spbcx-evt_spb_controller_other">EvtSpbControllerIoOther</a> callback function. The SPB controller driver implements this function. The SPB framework extension (SpbCx) calls this function to pass an I/O control request to the controller driver. For more information about the type of I/O requests that are passed to this function, see the following Remarks section.
 
-### -param EvtIoInCallerContext 
+### -param EvtIoInCallerContext [in, optional]
 
-[in, optional]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_io_in_caller_context">EvtIoInCallerContext</a> callback function that is called when an I/O control request first arrives at the controller's I/O queue, and the request contains an IOCTL code that the SPB framework extension (SpbCx) does not recognize. This callback runs in the process context of the request originator, and can preprocess requests that will later be processed by the <i>EvtSpbControllerIoOther</i> callback. This parameter is optional and can be specified as NULL if no such preprocessing is required. For more information, see the following Remarks section.
 
 ## -remarks

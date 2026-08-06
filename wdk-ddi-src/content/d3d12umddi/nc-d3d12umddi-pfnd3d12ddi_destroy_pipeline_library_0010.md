@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_DESTROY_PIPELINE_LIBRARY_0010
 title: PFND3D12DDI_DESTROY_PIPELINE_LIBRARY_0010 (d3d12umddi.h)
 description: Destroys the pipeline library.
-ms.assetid: c57be6ff-bfd1-4709-96a1-e4b9552c29b9
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_DESTROY_PIPELINE_LIBRARY_0010 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_DESTROY_PIPELINE_LIBRARY_0010
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ Destroys the pipeline library.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 A pipeline library handle.
 

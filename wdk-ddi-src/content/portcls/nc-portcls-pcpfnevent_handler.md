@@ -4,7 +4,6 @@ title: PCPFNEVENT_HANDLER (portcls.h)
 description: An EventHandler routine processes event requests.
 old-location: audio\eventhandler.htm
 tech.root: audio
-ms.assetid: 06239870-8ed8-49c9-a9d4-fd3e28f3ab58
 ms.date: 05/08/2018
 keywords: ["PCPFNEVENT_HANDLER callback function"]
 ms.keywords: EventHandler, EventHandler callback function [Audio Devices], PCPFNEVENT_HANDLER, PCPFNEVENT_HANDLER callback, audio.eventhandler, audmp-routines_f75ad8d3-9abe-4f8a-97d4-605a18586ecb.xml, portcls/EventHandler
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - EventHandler
+ - PCPFNEVENT_HANDLER
 ---
 
 # PCPFNEVENT_HANDLER callback function
@@ -50,9 +49,9 @@ An <code>EventHandler</code> routine processes event requests.
 
 ## -parameters
 
-### -param EventRequest 
+### -param EventRequest [in]
 
-[in]
+
 Pointer to an initialized <a href="/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcevent_request">PCEVENT_REQUEST</a> structure
 
 ## -returns
@@ -110,3 +109,4 @@ The <code>EventHandler</code> routine must reside in nonpaged memory.
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/ns-portcls-pcfilter_descriptor">PCFILTER_DESCRIPTOR</a>
+

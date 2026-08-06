@@ -3,8 +3,7 @@ UID: NE:storport._STORPORT_QUERY_CONFIGURATION_TYPE
 title: STORPORT_QUERY_CONFIGURATION_TYPE
 description: The STORPORT_QUERY_CONFIGURATION_TYPE enumerator identifies the configuration being queried in StorPortQueryConfiguration.
 tech.root: storage
-ms.assetid: c91774dc-a244-46e7-a5bb-ef7b8493184f
-ms.date: 03/20/2019
+ms.date: 02/28/2024
 keywords: ["STORPORT_QUERY_CONFIGURATION_TYPE enumeration"]
 ms.keywords: STORPORT_QUERY_CONFIGURATION_TYPE, STORPORT_QUERY_CONFIGURATION_TYPE, *PSTORPORT_QUERY_CONFIGURATION_TYPE,
 req.header: storport.h
@@ -33,25 +32,28 @@ api_type:
 api_location:
  - storport.h
 api_name:
+ - _STORPORT_QUERY_CONFIGURATION_TYPE
+ - PSTORPORT_QUERY_CONFIGURATION_TYPE
  - STORPORT_QUERY_CONFIGURATION_TYPE
-product:
- - Windows
 dev_langs:
  - c++
 ---
 
 # STORPORT_QUERY_CONFIGURATION_TYPE enumeration
 
-
 ## -description
 
-The **STORPORT_QUERY_CONFIGURATION_TYPE** enumerator identifies the configuration type being queried in [StorPortQueryConfiguration](nf-storport-storportqueryconfiguration.md).
+The **STORPORT_QUERY_CONFIGURATION_TYPE** enumerator identifies the configuration type being queried in **[StorPortQueryConfiguration](nf-storport-storportqueryconfiguration.md)**.
 
 ## -enum-fields
 
 ### -field StorportQueryConfigurationD3
 
 Query whether the device has a D3 configuration.
+
+### -field StorportQueryConfigurationNvmeIce
+
+Query whether the device has an NVMe ICE configuration.
 
 ### -field StorportQueryConfigurationMax
 
@@ -61,5 +63,4 @@ First illegal configuration value; do not use.
 
 ## -see-also
 
-[StorPortQueryConfiguration](nf-storport-storportqueryconfiguration.md)
-
+- **[StorPortQueryConfiguration](nf-storport-storportqueryconfiguration.md)**

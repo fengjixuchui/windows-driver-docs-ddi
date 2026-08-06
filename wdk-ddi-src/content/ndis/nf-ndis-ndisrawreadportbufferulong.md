@@ -4,7 +4,6 @@ title: NdisRawReadPortBufferUlong macro (ndis.h)
 description: NdisRawReadPortBufferUlong reads a specified number of ULONGs into a caller-supplied buffer.
 old-location: netvista\ndisrawreadportbufferulong.htm
 tech.root: netvista
-ms.assetid: 86a0b7c4-ef3a-4dd9-961d-35f96182e30c
 ms.date: 05/02/2018
 keywords: ["NdisRawReadPortBufferUlong macro"]
 ms.keywords: NdisRawReadPortBufferUlong, NdisRawReadPortBufferUlong macro [Network Drivers Starting with Windows Vista], miniport_port_raw_ref_0696e0e4-976c-4d17-a482-054d5d441608.xml, ndis/NdisRawReadPortBufferUlong, netvista.ndisrawreadportbufferulong
@@ -50,25 +49,25 @@ api_name:
 
 ## -parameters
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Specifies the I/O port. This address falls in a range that was mapped during initialization with 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterioportrange">
      NdisMRegisterIoPortRange</a>.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 Pointer to a caller-allocated buffer, in resident memory, into which the ULONGs will be
      transferred from the NIC. The caller must allocate a buffer at least (
      <b>sizeof</b>(ULONG)
      *
      <i>Length</i> ).
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Specifies how many ULONGs to transfer from the NIC.
 
 ## -remarks

@@ -4,7 +4,6 @@ title: RtlFreeAnsiString function (wdm.h)
 description: The RtlFreeAnsiString routine releases storage that was allocated by RtlUnicodeStringToAnsiString.
 old-location: kernel\rtlfreeansistring.htm
 tech.root: kernel
-ms.assetid: ca46be9e-31f6-4118-8958-4eb2c8450e8c
 ms.date: 04/30/2018
 keywords: ["RtlFreeAnsiString function"]
 ms.keywords: RtlFreeAnsiString, RtlFreeAnsiString routine [Kernel-Mode Driver Architecture], k109_0213924f-caca-4411-b5cc-d93282f01948.xml, kernel.rtlfreeansistring, wdm/RtlFreeAnsiString
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>RtlFreeAnsiString</b> routine releases storage that was allocated by <b>R
 
 ## -parameters
 
-### -param AnsiString 
+### -param AnsiString [in, out]
 
-[in, out]
+
 Pointer to the ANSI string buffer previously allocated by <b>RtlUnicodeStringToAnsiString</b>.
 
 ## -returns

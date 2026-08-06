@@ -4,7 +4,6 @@ title: SILO_MONITOR_TERMINATE_CALLBACK (ntddk.h)
 description: This callback is invoked when a silo is terminated.
 old-location: kernel\silo_monitor_terminate_callback.htm
 tech.root: kernel
-ms.assetid: 1F87D6AC-3603-4A34-BAAB-8B43ADF9E595
 ms.date: 04/30/2018
 keywords: ["SILO_MONITOR_TERMINATE_CALLBACK callback function"]
 ms.keywords: SILO_MONITOR_TERMINATE_CALLBACK, SILO_MONITOR_TERMINATE_CALLBACK callback, TerminateCallback, TerminateCallback callback function [Kernel-Mode Driver Architecture], kernel.silo_monitor_terminate_callback, ntddk/TerminateCallback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
- - TerminateCallback
+ - SILO_MONITOR_TERMINATE_CALLBACK
 ---
 
 # SILO_MONITOR_TERMINATE_CALLBACK callback function
@@ -50,11 +49,12 @@ This callback is invoked when a silo is terminated.
 
 ## -parameters
 
-### -param Silo 
+### -param Silo [in]
 
-[in]
+
 The silo to be terminated.
 
 ## -remarks
 
 The expected behavior is that the component will drop any outstanding silo references.  A driver may no longer operate within the namespace of a silo (via <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psattachsilotocurrentthread">PsAttachSiloToCurrentThread</a>) once it has returned from this function.
+

@@ -3,8 +3,7 @@ UID: NF:netadapter.NetAdapterSetPermanentLinkLayerAddress
 title: NetAdapterSetPermanentLinkLayerAddress function (netadapter.h)
 description: The NetAdapterSetPermanentLinkLayerAddress function sets the permanent link layer address for the network adapter.
 tech.root: netvista
-ms.assetid: f39b7c23-7cb7-457f-a8a0-0706a91b8029
-ms.date: 02/06/2018
+ms.date: 03/30/2022
 keywords: ["NetAdapterSetPermanentLinkLayerAddress function"]
 ms.keywords: NetAdapterSetPermanentLinkLayerAddress
 req.header: netadapter.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.23
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -50,15 +49,16 @@ The **NetAdapterSetPermanentLinkLayerAddress** function sets the permanent link 
 
 ## -parameters
 
-### -param Adapter
+### -param Adapter [_In_]
 
 The network adapter object that the client created in a prior call to [NetAdapterCreate](nf-netadapter-netadaptercreate.md).
 
-### -param LinkLayerAddress
+### -param LinkLayerAddress [_In_]
 
-A pointer to a driver-allocated allocated NET_ADAPTER_LINK_LAYER_ADDRESS object that the driver initialized in a prior call to [NET_ADAPTER_LINK_LAYER_ADDRESS_INIT](nf-netadapter-net_adapter_link_layer_address_init.md).
+A pointer to a driver-allocated allocated [NET_ADAPTER_LINK_LAYER_ADDRESS](ns-netadapter-net_adapter_link_layer_address.md) structure that the driver initialized in a prior call to [NET_ADAPTER_LINK_LAYER_ADDRESS_INIT](nf-netadapter-net_adapter_link_layer_address_init.md).
 
 ## -remarks
 
 ## -see-also
 
+[NET_ADAPTER_LINK_LAYER_ADDRESS](ns-netadapter-net_adapter_link_layer_address.md)

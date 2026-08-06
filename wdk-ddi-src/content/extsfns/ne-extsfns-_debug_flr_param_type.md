@@ -4,8 +4,7 @@ title: _DEBUG_FLR_PARAM_TYPE (extsfns.h)
 description: The values of DEBUG_FLR_PARAM_TYPE enumeration are tags that indicate the kind of information that is stored in failure analysis entry.
 old-location: debugger\debug_flr_param_type.htm
 tech.root: debugger
-ms.assetid: D57D356F-DC11-4C27-97D3-DF40BF2AB490
-ms.date: 05/03/2018
+ms.date: 05/04/2018
 keywords: ["DEBUG_FLR_PARAM_TYPE enumeration"]
 ms.keywords: "..., DEBUG_FLR_DRIVER_OBJECT, DEBUG_FLR_INVALID, DEBUG_FLR_MASK_ALL, DEBUG_FLR_PARAM_TYPE, DEBUG_FLR_PARAM_TYPE enumeration [Windows Debugging], DEBUG_FLR_RESERVED, FA_TAG, _DEBUG_FLR_PARAM_TYPE, debugger.debug_flr_param_type, extsfns/..., extsfns/DEBUG_FLR_DRIVER_OBJECT, extsfns/DEBUG_FLR_INVALID, extsfns/DEBUG_FLR_MASK_ALL, extsfns/DEBUG_FLR_PARAM_TYPE, extsfns/DEBUG_FLR_RESERVED"
 req.header: extsfns.h
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - extsfns.h
 api_name:
+ - _DEBUG_FLR_PARAM_TYPE
  - DEBUG_FLR_PARAM_TYPE
 ---
 
@@ -1539,3 +1539,4 @@ For more information about tags, see <a href="/windows-hardware/drivers/debugger
 
 
 <a href="/windows-hardware/drivers/debugger/writing-an-analysis-extension-to-extend--analyze">Writing an Analysis Extension Plug-in to Extend !analyze</a>
+

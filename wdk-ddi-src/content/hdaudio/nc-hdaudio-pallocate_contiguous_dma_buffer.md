@@ -4,7 +4,6 @@ title: PALLOCATE_CONTIGUOUS_DMA_BUFFER (hdaudio.h)
 description: The AllocateContiguousDmaBuffer routine allocates a DMA buffer that consists of a single, contiguous block of physical memory.The function pointer type for an AllocateContiguousDmaBuffer routine is defined as follows.
 old-location: audio\allocatecontiguousdmabuffer.htm
 tech.root: audio
-ms.assetid: 4538ce8e-fccd-4862-b226-a99fe578a5fd
 ms.date: 05/08/2018
 keywords: ["PALLOCATE_CONTIGUOUS_DMA_BUFFER callback function"]
 ms.keywords: AllocateContiguousDmaBuffer, AllocateContiguousDmaBuffer callback function [Audio Devices], PALLOCATE_CONTIGUOUS_DMA_BUFFER, PALLOCATE_CONTIGUOUS_DMA_BUFFER callback, aud-prop2_c9f2fa85-0967-4793-9092-9f95986c2126.xml, audio.allocatecontiguousdmabuffer, hdaudio/AllocateContiguousDmaBuffer
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - hdaudio.h
 api_name:
- - AllocateContiguousDmaBuffer
+ - PALLOCATE_CONTIGUOUS_DMA_BUFFER
 ---
 
 # PALLOCATE_CONTIGUOUS_DMA_BUFFER callback function
@@ -52,28 +51,28 @@ The function pointer type for an <code>AllocateContiguousDmaBuffer</code> routin
 
 ## -parameters
 
-### -param _context 
+### -param _context [in]
 
-[in]
+
 Specifies the context value from the <b>Context</b> member of the <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl">HDAUDIO_BUS_INTERFACE_BDL</a> structure.
 
-### -param Handle 
+### -param Handle [in]
 
-[in]
+
 Handle identifying the DMA engine. This handle value was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_capture_dma_engine">AllocateCaptureDmaEngine</a> or <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_render_dma_engine">AllocateRenderDmaEngine</a>.
 
 ### -param RequestedBufferSize
 
 Specifies the requested buffer size in bytes.
 
-### -param DataBuffer 
+### -param DataBuffer [out]
 
-[out]
+
 Retrieves the data buffer. This parameter points to a caller-allocated PVOID variable into which the routine writes the system virtual address of the data buffer.
 
-### -param BdlBuffer 
+### -param BdlBuffer [out]
 
-[out]
+
 Retrieves the buffer descriptor list (BDL). This parameter points to a caller-allocated PVOID variable into which the routine writes the system virtual address of the BDL. The BDL allocation size is exactly one memory page and the BDL begins on a page boundary.
 
 ## -returns
@@ -213,3 +212,4 @@ The stream is in a state other than reset.
 
 
 <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-psetup_dma_engine_with_bdl">SetupDmaEngineWithBdl</a>
+

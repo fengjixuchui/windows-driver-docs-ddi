@@ -2,7 +2,7 @@
 UID: NS:dispmprt._DXGKARG_GETDISPLAYSTATE_NONINTRUSIVE
 title: DXGKARG_GETDISPLAYSTATENONINTRUSIVE
 ms.date: 03/24/2020
-ms.topic: language-reference
+tech.root: display
 targetos: Windows
 description: The DXGKARG_GETDISPLAYSTATENONINTRUSIVE structure is passed to DxgkDdiGetDisplayStateNonIntrusive during diagnostic data collection.
 req.construct-type: structure
@@ -28,6 +28,7 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGKARG_GETDISPLAYSTATE_NONINTRUSIVE
+ - PDXGKARG_GETDISPLAYSTATENONINTRUSIVE
  - DXGKARG_GETDISPLAYSTATENONINTRUSIVE
 f1_keywords:
  - _DXGKARG_GETDISPLAYSTATE_NONINTRUSIVE

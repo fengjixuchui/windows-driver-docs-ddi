@@ -2,7 +2,6 @@
 UID: NS:d3dkmthk._D3DKMT_SETHWPROTECTIONTEARDOWNRECOVERY
 title: _D3DKMT_SETHWPROTECTIONTEARDOWNRECOVERY (d3dkmthk.h)
 description: Used to set the hardware protection tear down recovery.
-ms.assetid: 8e287296-7d3b-4ff6-9550-21feafb039e4
 ms.date: 10/19/2018
 keywords: ["D3DKMT_SETHWPROTECTIONTEARDOWNRECOVERY structure"]
 ms.keywords: _D3DKMT_SETHWPROTECTIONTEARDOWNRECOVERY, D3DKMT_SETHWPROTECTIONTEARDOWNRECOVERY,
@@ -35,6 +34,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_SETHWPROTECTIONTEARDOWNRECOVERY
+ - D3DKMT_SETHWPROTECTIONTEARDOWNRECOVERY
 dev_langs:
  - c++
 ---
@@ -48,14 +48,14 @@ Used to set the hardware protection tear down recovery.
 
 ## -struct-fields
 
-### -field hAdapter
+### -field hAdapter [in]
 
-[in] A handle to the graphics adapter.
+A handle to the graphics adapter.
 
-### -field Recovered
+### -field Recovered [in]
 
  
-[in] Indicates whether the hardware protection teardown was recovered.
+Indicates whether the hardware protection teardown was recovered.
 
 ## -remarks
 

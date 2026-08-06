@@ -1,9 +1,8 @@
 ---
-UID: NE:ntpoapi.__unnamed_enum_10
+UID: NE:ntpoapi.PO_INTERNAL_WAKE_SOURCE_TYPE
 title: PO_INTERNAL_WAKE_SOURCE_TYPE
-description: 
-tech.root: 
-ms.assetid: 26f3412d-ea2c-428f-982a-0e9ab7630518
+description: "Learn more about: PO_INTERNAL_WAKE_SOURCE_TYPE enumeration"
+tech.root: kernel
 ms.date: 08/19/2019
 keywords: ["PO_INTERNAL_WAKE_SOURCE_TYPE enumeration"]
 ms.keywords: PO_INTERNAL_WAKE_SOURCE_TYPE, PO_INTERNAL_WAKE_SOURCE_TYPE, *PPO_INTERNAL_WAKE_SOURCE_TYPE,
@@ -31,9 +30,8 @@ api_type:
 api_location:
  - ntpoapi.h
 api_name:
+ - PPO_INTERNAL_WAKE_SOURCE_TYPE
  - PO_INTERNAL_WAKE_SOURCE_TYPE
-product:
- - Windows
 ---
 
 # PO_INTERNAL_WAKE_SOURCE_TYPE enumeration

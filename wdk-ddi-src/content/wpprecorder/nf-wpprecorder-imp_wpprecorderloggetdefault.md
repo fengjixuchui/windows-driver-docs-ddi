@@ -4,8 +4,7 @@ title: imp_WppRecorderLogGetDefault function (wpprecorder.h)
 description: The WppRecorderLogGetDefault method gets a handle to the default recorder log.
 old-location: devtest\wpprecorderloggetdefault.htm
 tech.root: devtest
-ms.assetid: 823E9AA6-F838-41B1-A502-A983B7F24661
-ms.date: 02/23/2018
+ms.date: 07/28/2025
 keywords: ["imp_WppRecorderLogGetDefault function"]
 ms.keywords: WppRecorderLogGetDefault, devtest.wpprecorderloggetdefault, imp_WppRecorderLogGetDefault, imp_WppRecorderLogGetDefault function [Driver Development Tools], wpprecorder/imp_WppRecorderLogGetDefault
 req.header: wpprecorder.h
@@ -41,18 +40,17 @@ api_name:
  - imp_WppRecorderLogGetDefault
 ---
 
-# imp_WppRecorderLogGetDefault function
-
+# WppRecorderLogGetDefault function
 
 ## -description
 
-The <b>WppRecorderLogGetDefault</b> method gets a handle to the default recorder log.
+The **WppRecorderLogGetDefault** method gets a handle to the default recorder log.
 
 ## -parameters
 
 ### -param WppCb
 
-TBD
+Pointer to a trace control block.
 
 ## -returns
 
@@ -60,4 +58,4 @@ An opaque handle to the default log.
 
 ## -see-also
 
-<a href="/previous-versions/windows/hardware/previsioning-framework/dn914614(v=vs.85)">WppRecorderIsDefaultLogAvailable</a>
+- [WppRecorderIsDefaultLogAvailable](/previous-versions/windows/hardware/previsioning-framework/dn914614(v=vs.85))

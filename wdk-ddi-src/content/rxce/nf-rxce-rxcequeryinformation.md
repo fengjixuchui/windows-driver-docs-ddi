@@ -4,7 +4,6 @@ title: RxCeQueryInformation function (rxce.h)
 description: RxCeQueryInformation queries information about a connection in a caller-allocated buffer.
 old-location: ifsk\rxcequeryinformation.htm
 tech.root: ifsk
-ms.assetid: 58dd579c-3fb8-45c7-a7bc-ca0919166153
 ms.date: 04/16/2018
 keywords: ["RxCeQueryInformation function"]
 ms.keywords: RxCeQueryInformation, RxCeQueryInformation function [Installable File System Drivers], ifsk.rxcequeryinformation, rxce/RxCeQueryInformation, rxref_b7508a13-8eb0-42d0-917c-300a5eb4c0e9.xml
@@ -50,14 +49,14 @@ api_name:
 
 ## -parameters
 
-### -param pVc 
+### -param pVc [in]
 
-[in]
+
 A pointer to the virtual circuit associated with this connection.
 
-### -param InformationClass 
+### -param InformationClass [in]
 
-[in]
+
 The desired information class for this query type. The value specified for <i>InformationClass</i> determines the type of information that is returned. This parameter is an enumeration defined in <i>rxcehdlr.h</i> and can be one of the following values:
 
 
@@ -86,14 +85,14 @@ Query the transport For information about the connection endpoint. An RXCE_CONNE
 
 Query the transport For information about the remote address. A  TDI_ADDRESS_INFO structure is copied to the <i>pInformation</i> buffer on success.
 
-### -param pInformation 
+### -param pInformation [out]
 
-[out]
+
 The caller-supplied buffer for returning information.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The length of  the buffer.
 
 ## -returns

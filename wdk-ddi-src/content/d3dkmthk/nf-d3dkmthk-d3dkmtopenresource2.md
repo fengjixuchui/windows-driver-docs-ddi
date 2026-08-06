@@ -1,10 +1,9 @@
 ---
 UID: NF:d3dkmthk.D3DKMTOpenResource2
 title: D3DKMTOpenResource2 function (d3dkmthk.h)
-description: Reserved for system use. Do not use in your driver.
+description: "Microsoft reserves the D3DKMTOpenResource2 function for internal use only. Don't use this function in your driver."
 old-location: display\d3dkmtopenresource2.htm
-ms.assetid: 7D496443-F68D-41E6-B377-BC9E6F6ABB83
-ms.date: 05/10/2018
+ms.date: 02/28/2022
 keywords: ["D3DKMTOpenResource2 function"]
 ms.keywords: D3DKMTOpenResource2, D3DKMTOpenResource2 function [Display Devices], d3dkmthk/D3DKMTOpenResource2, display.d3dkmtopenresource2
 req.header: d3dkmthk.h
@@ -46,14 +45,12 @@ api_name:
 
 # D3DKMTOpenResource2 function
 
-
 ## -description
 
 Reserved for system use. Do not use in your driver.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in, out]
 
-*pData* [in, out]
-
+## -returns

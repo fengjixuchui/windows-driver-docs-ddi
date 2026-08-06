@@ -4,7 +4,6 @@ title: RtlFreeNonVolatileToken function (ntddk.h)
 description: The routine RtlFreeNonVolatileToken is a cleanup function for the opaque NvToken which is given by a successful call to RtlGetNonVolatileToken.
 old-location: ifsk\rtlfreenonvolatiletoken.htm
 tech.root: ifsk
-ms.assetid: 8E083814-7408-47D2-A811-2DCBDCD13097
 ms.date: 04/16/2018
 keywords: ["RtlFreeNonVolatileToken function"]
 ms.keywords: RtlFreeNonVolatileToken, RtlFreeNonVolatileToken routine [Installable File System Drivers], ifsk.rtlfreenonvolatiletoken, ntddk/RtlFreeNonVolatileToken
@@ -51,9 +50,9 @@ The routine <b>RtlFreeNonVolatileToken</b> is a cleanup function for the opaque 
 
 ## -parameters
 
-### -param NvToken 
+### -param NvToken [in]
 
-[in]
+
  A pointer to an opaque structure that has
         information about various properties of the non-volatile memory region which <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlgetnonvolatiletoken">RtlGetNonVolatileToken</a> had returned.
 

@@ -3,7 +3,6 @@ UID: NF:portcls.IMiniport.GetDescription
 title: IMiniport::GetDescription (portcls.h)
 description: The GetDescription method outputs a pointer to the miniport object's filter descriptor.
 tech.root: audio
-ms.assetid: 1e5d13a0-4052-4655-8e48-8cbe87ffc685
 ms.date: 10/31/2018
 keywords: ["IMiniport::GetDescription"]
 ms.keywords: IMiniport::GetDescription, GetDescription, IMiniport.GetDescription, IMiniport::GetDescription, IMiniport.GetDescription
@@ -35,9 +34,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniport.GetDescription
-product:
- - Windows
+ - IMiniport::GetDescription
 ---
 
 # IMiniport::GetDescription

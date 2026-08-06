@@ -1,11 +1,10 @@
 ---
 UID: NF:engextcpp.ExtRemoteData.SetBoolean
 title: ExtRemoteData::SetBoolean method (engextcpp.h)
-description: The ExtRemoteData class provides a wrapper around a small section of a target's memory. ExtRemoteData automatically retrieves the memory and provides a number of convenience methods.
+description: The SetBoolean convenience method is provided by the ExtRemoteData class, which provides a wrapper for a small section of a target's memory.
 old-location: debugger\extremotedata.htm
 tech.root: debugger
-ms.assetid: d645867c-3264-45ae-b0bd-4d21e388fb97
-ms.date: 01/19/2018
+ms.date: 08/11/2023
 keywords: ["ExtRemoteData::SetBoolean method"]
 ms.keywords: ExtRemoteData class [Windows Debugging], described, EngExtCpp_Ref_e84c03ce-1156-481b-a429-f0a918797565.xml, Clear, debugger.extremotedata, ExtRemoteData class [Windows Debugging], ExtRemoteData, engextcpp/ExtRemoteData, ExtRemoteData::SetBoolean, ExtRemoteData::Clear, SetBoolean
 req.header: engextcpp.hpp
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteData
+ - ExtRemoteData::SetBoolean
 ---
 
 # ExtRemoteData::SetBoolean method
-
 
 ## -description
 
@@ -136,7 +134,7 @@ The <b>ExtRemoteData</b> class includes the following constructors and methods:
 </dd>
 <dd>
 
-<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis2-getulong">GetUlong</a>
+<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis-getulong">GetUlong</a>
 
 
 </dd>
@@ -148,7 +146,7 @@ The <b>ExtRemoteData</b> class includes the following constructors and methods:
 </dd>
 <dd>
 
-<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis2-getulong64">GetUlong64</a>
+<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis-getulong64">GetUlong64</a>
 
 
 </dd>
@@ -196,11 +194,11 @@ The <b>ExtRemoteData</b> class includes the following constructors and methods:
 </dd>
 <dd>
 
-<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis2-getstring">GetString</a>
+<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis-getstring">GetString</a>
 
 
 </dd>
-</dl><pre class="syntax" xml:space="preserve"><code>class ExtRemoteData
+</dl><pre class="syntax"><code>class ExtRemoteData
 {
 public:
     PCSTR  m_Name;
@@ -259,6 +257,10 @@ The DEBUG_PHYSICAL_<i>XXX</i> flags used for accessing physical memory on the ta
 
 ## -parameters
 
+### -param Data
+
+See description.
+
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotedata-set(constdebug_typed_data)">ExtRemoteData::Set(Typed)</a>
@@ -270,3 +272,4 @@ The DEBUG_PHYSICAL_<i>XXX</i> flags used for accessing physical memory on the ta
 <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotedata-set">ExtRemoteData::Set(Offset Bytes)</a>
 
 <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotedata-read">ExtRemoteData::Read</a>
+

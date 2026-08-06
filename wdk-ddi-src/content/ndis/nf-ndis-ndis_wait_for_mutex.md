@@ -3,7 +3,6 @@ UID: NF:ndis.NDIS_WAIT_FOR_MUTEX
 title: NDIS_WAIT_FOR_MUTEX macro (ndis.h)
 description: The NDIS_WAIT_FOR_MUTEX macro puts the current thread into the wait state until the specified mutex object is set to the signaled state.
 tech.root: netvista
-ms.assetid: 06e6a4d2-4a3d-432e-8e58-ad2634fbc3b6
 ms.date: 04/16/2018
 keywords: ["NDIS_WAIT_FOR_MUTEX macro"]
 ms.keywords: NDIS_WAIT_FOR_MUTEX
@@ -24,6 +23,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
+returns-override: true
 targetos: Windows
 f1_keywords:
  - NDIS_WAIT_FOR_MUTEX

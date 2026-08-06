@@ -4,7 +4,6 @@ title: RxPostToWorkerThread function (rxworkq.h)
 description: RxPostToWorkerThread invokes a routine passed as a parameter in the context of a worker thread. Memory for the WORK_QUEUE_ITEM must be allocated by the caller.
 old-location: ifsk\rxposttoworkerthread.htm
 tech.root: ifsk
-ms.assetid: 0fc9fb57-219e-4a3d-bc82-904ab8657d66
 ms.date: 04/16/2018
 keywords: ["RxPostToWorkerThread function"]
 ms.keywords: RxPostToWorkerThread, RxPostToWorkerThread routine [Installable File System Drivers], ifsk.rxposttoworkerthread, rxref_19387eca-2666-41c0-a93d-2133d3ca03ee.xml, rxworkq/RxPostToWorkerThread
@@ -50,14 +49,14 @@ api_name:
 
 ## -parameters
 
-### -param pMRxDeviceObject 
+### -param pMRxDeviceObject [in]
 
-[in]
+
 A pointer to the device object of the corresponding network mini-redirector driver.
 
-### -param WorkQueueType 
+### -param WorkQueueType [in]
 
-[in]
+
 The type of the work queue that represents the priority of the task. This parameter can be one of the following values:
 
 
@@ -80,19 +79,19 @@ Insert WORK_QUEUE_ITEM into the queue from which a system thread with a variable
 
 Insert WORK_QUEUE_ITEM into the queue from which a system thread will process the work item so that the routine to invoke is not blocked.
 
-### -param pWorkQueueItem 
+### -param pWorkQueueItem [in]
 
-[in]
+
 A pointer to WORK_QUEUE_ITEM.
 
-### -param Routine 
+### -param Routine [in]
 
-[in]
+
 A pointer to the routine to invoke.
 
-### -param pContext 
+### -param pContext [in]
 
-[in]
+
 A pointer to a context parameter associated with the work item to complete that is passed to the driver.
 
 ## -returns

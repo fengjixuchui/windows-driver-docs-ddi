@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelScriptProviderEnumerator.Release
 title: IDataModelScriptProviderEnumerator::Release (dbgmodel.h)
-description: Decrements the reference count for an interface on an object.
-ms.assetid: 18d5e8ee-c6ea-4ca0-8c5e-51c5f0be5ff9
+description: "The IDataModelScriptProviderEnumerator::Release method decrements the reference count for an interface on an object."
 ms.date: 09/21/2018
 keywords: ["IDataModelScriptProviderEnumerator::Release"]
 ms.keywords: IDataModelScriptProviderEnumerator::Release, Release, IDataModelScriptProviderEnumerator.Release, IDataModelScriptProviderEnumerator::Release, IDataModelScriptProviderEnumerator.Release
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelScriptProviderEnumerator.Release
+ - IDataModelScriptProviderEnumerator::Release
 ---
 
 # IDataModelScriptProviderEnumerator::Release
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IDataModelScriptProviderEnumerator interface](nn-dbgmodel-idatamodelscriptproviderenumerator.md)
+

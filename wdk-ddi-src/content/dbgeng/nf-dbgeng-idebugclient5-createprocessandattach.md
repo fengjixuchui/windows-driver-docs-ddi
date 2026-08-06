@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient5.CreateProcessAndAttach
 title: IDebugClient5::CreateProcessAndAttach (dbgeng.h)
-description: The CreateProcessAndAttach method creates a process from a specified command line, then attach to another user-mode process.
+description: The IDebugClient5::CreateProcessAndAttach method creates a process from a specified command line, then attach to another user-mode process.
 old-location: debugger\createprocessandattach.htm
 tech.root: debugger
-ms.assetid: 1a92a823-ec50-406f-942c-c64fc820f9af
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::CreateProcessAndAttach"]
 ms.keywords: CreateProcessAndAttach, CreateProcessAndAttach method [Windows Debugging], CreateProcessAndAttach method [Windows Debugging],IDebugClient interface, CreateProcessAndAttach method [Windows Debugging],IDebugClient2 interface, CreateProcessAndAttach method [Windows Debugging],IDebugClient3 interface, CreateProcessAndAttach method [Windows Debugging],IDebugClient4 interface, CreateProcessAndAttach method [Windows Debugging],IDebugClient5 interface, IDebugClient interface [Windows Debugging],CreateProcessAndAttach method, IDebugClient2 interface [Windows Debugging],CreateProcessAndAttach method, IDebugClient2::CreateProcessAndAttach, IDebugClient3 interface [Windows Debugging],CreateProcessAndAttach method, IDebugClient3::CreateProcessAndAttach, IDebugClient4 interface [Windows Debugging],CreateProcessAndAttach method, IDebugClient4::CreateProcessAndAttach, IDebugClient5 interface [Windows Debugging],CreateProcessAndAttach method, IDebugClient5.CreateProcessAndAttach, IDebugClient5::CreateProcessAndAttach, IDebugClient::CreateProcessAndAttach, IDebugClient_5ff3afdf-164e-4f2f-a625-389f3da41d24.xml, dbgeng/IDebugClient2::CreateProcessAndAttach, dbgeng/IDebugClient3::CreateProcessAndAttach, dbgeng/IDebugClient4::CreateProcessAndAttach, dbgeng/IDebugClient5::CreateProcessAndAttach, dbgeng/IDebugClient::CreateProcessAndAttach, debugger.createprocessandattach
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.CreateProcessAndAttach
- - IDebugClient2.CreateProcessAndAttach
- - IDebugClient3.CreateProcessAndAttach
- - IDebugClient4.CreateProcessAndAttach
- - IDebugClient5.CreateProcessAndAttach
+ - IDebugClient5::CreateProcessAndAttach
 ---
 
 # IDebugClient5::CreateProcessAndAttach
@@ -54,29 +49,29 @@ The <b>CreateProcessAndAttach</b>  method creates a process from a specified com
 
 ## -parameters
 
-### -param Server 
+### -param Server [in]
 
-[in]
+
 Specifies the process server to use to attach to the process.  If <i>Server</i> is zero, the engine will connect to the local process without using a process server.
 
-### -param CommandLine 
+### -param CommandLine [in, optional]
 
-[in, optional]
+
 Specifies the command line to execute to create the new process.  If <i>CommandLine</i> is <b>NULL</b>, then no process is created and these methods attach to an existing process, as <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-attachprocess">AttachProcess</a> does.
 
-### -param CreateFlags 
+### -param CreateFlags [in]
 
-[in]
+
 Specifies the flags to use when creating the process.  For details on these flags, see <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_create_process_options">DEBUG_CREATE_PROCESS_OPTIONS</a>.<b>CreateFlags</b>.
 
-### -param ProcessId 
+### -param ProcessId [in]
 
-[in]
+
 Specifies the process ID of the target process the debugger will attach to.  If <i>ProcessId</i> is zero, the debugger will attach to the process it created from <i>CommandLine</i>.
 
-### -param AttachFlags 
+### -param AttachFlags [in]
 
-[in]
+
 Specifies the flags that control how the debugger attaches to the target process.  For details on these flags, see <a href="/previous-versions/ff541454(v=vs.85)">DEBUG_ATTACH_XXX</a>.
 
 ## -returns
@@ -174,3 +169,4 @@ For more information about creating and attaching to live user-mode targets, see
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-terminatecurrentprocess">TerminateCurrentProcess</a>
+

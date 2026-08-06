@@ -4,7 +4,6 @@ title: _SDP_NODE (sdpnode.h)
 description: The SDP_NODE structure holds information about an element in a tree-based representation of an SDP record.
 old-location: bltooth\sdp_node.htm
 tech.root: bltooth
-ms.assetid: 11d603e9-6db1-44a2-b4e3-d85ffe0d5c25
 ms.date: 04/27/2018
 keywords: ["SDP_NODE structure"]
 ms.keywords: "*PSDP_NODE, PSDP_NODE, PSDP_NODE structure pointer [Bluetooth Devices], SDP_NODE, SDP_NODE structure [Bluetooth Devices], _SDP_NODE, bltooth.sdp_node, bth_structs_30367149-bffb-4ff9-a6d8-2f73c5198874.xml, sdpnode/PSDP_NODE, sdpnode/SDP_NODE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - sdpnode.h
 api_name:
+ - _SDP_NODE
+ - PSDP_NODE
  - SDP_NODE
 ---
 
@@ -88,7 +89,7 @@ The header specifies the type of data. Driver developers can access links to pee
     nodes in the tree. Keep in mind that 
     <b>LIST_ENTRY</b> pointers contain the addresses of other LIST_ENTRY structures, and that the profile
     drivers must use the 
-    <a href="/windows-hardware/drivers/kernel/mm-bad-pointer">CONTAINING_RECORD</a> memory manager macro to
+    [**CONTAINING_RECORD**](/windows/win32/api/ntdef/nf-ntdef-containing_record) memory manager macro to
     extract the address of the containing node record.
 
 ## -see-also
@@ -102,3 +103,4 @@ The header specifies the type of data. Driver developers can access links to pee
 
 
 <a href="/windows-hardware/drivers/ddi/sdpnode/ns-sdpnode-_sdp_node_header">SDP_NODE_HEADER</a>
+

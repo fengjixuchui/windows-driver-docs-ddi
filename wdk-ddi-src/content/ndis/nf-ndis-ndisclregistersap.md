@@ -4,7 +4,6 @@ title: NdisClRegisterSap function (ndis.h)
 description: NdisClRegisterSap registers a SAP on which the client can receive incoming calls from a remote node.
 old-location: netvista\ndisclregistersap.htm
 tech.root: netvista
-ms.assetid: 33ed0839-d1e3-4872-baa8-ead7e97f8c53
 ms.date: 05/02/2018
 keywords: ["NdisClRegisterSap function"]
 ms.keywords: NdisClRegisterSap, NdisClRegisterSap function [Network Drivers Starting with Windows Vista], condis_client_ref_ee22bc25-7935-458f-8016-6537d9803acb.xml, ndis/NdisClRegisterSap, netvista.ndisclregistersap
@@ -52,31 +51,31 @@ api_name:
 
 ## -parameters
 
-### -param NdisAfHandle 
+### -param NdisAfHandle [in]
 
-[in]
+
 Specifies the handle returned by 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclopenaddressfamilyex">NdisClOpenAddressFamilyEx</a>,
      which implicitly identifies the call manager with which to register the SAP.
 
-### -param ProtocolSapContext 
+### -param ProtocolSapContext [in]
 
-[in]
+
 Specifies the handle to a caller-supplied resident context area in which the client maintains
      state for this SAP after it has been opened. NDIS passes this handle back to the client in all
      subsequent calls concerning this SAP if the call to 
      <b>NdisClRegisterSap</b> succeeds.
 
-### -param Sap 
+### -param Sap [in]
 
-[in]
+
 Pointer to a client-supplied specification for the SAP to be opened, formatted as a structure of
      type 
      <a href="/previous-versions/windows/hardware/network/ff545392(v=vs.85)">CO_SAP</a>.
 
-### -param NdisSapHandle 
+### -param NdisSapHandle [out]
 
-[out]
+
 Pointer to a variable in which a handle to the newly registered SAP is returned if this call
      succeeds.
 

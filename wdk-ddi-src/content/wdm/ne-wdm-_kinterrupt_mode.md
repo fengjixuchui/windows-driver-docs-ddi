@@ -1,10 +1,9 @@
 ---
 UID: NE:wdm._KINTERRUPT_MODE
 title: _KINTERRUPT_MODE (wdm.h)
-description: The KINTERRUPT_MODE enumeration type indicates whether an interrupt is level-triggered or edge-triggered.
+description: The _KINTERRUPT_MODE enumeration (wdm.h) type indicates whether an interrupt is level-triggered or edge-triggered.
 old-location: kernel\kinterrupt_mode.htm
 tech.root: kernel
-ms.assetid: 2f00fe3f-d73d-4f0f-a1dd-ae72fa57e55d
 ms.date: 04/30/2018
 keywords: ["KINTERRUPT_MODE enumeration"]
 ms.keywords: KINTERRUPT_MODE, KINTERRUPT_MODE enumeration [Kernel-Mode Driver Architecture], Latched, LevelSensitive, _KINTERRUPT_MODE, kernel.kinterrupt_mode, sysenum_35275927-b863-496a-8193-579f9d1d3a22.xml, wdm/KINTERRUPT_MODE, wdm/Latched, wdm/LevelSensitive
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _KINTERRUPT_MODE
  - KINTERRUPT_MODE
 ---
 
@@ -75,3 +75,4 @@ The interrupt mode is an electrical characteristic of the interrupt. A device si
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_kinterrupt_polarity">KINTERRUPT_POLARITY</a>
+

@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_CREATEHWQUEUE
 title: PFND3DKMT_CREATEHWQUEUE (d3dkmthk.h)
 description: Implemented by the client driver to create a new hardware queue.
-ms.assetid: 0c8c359a-2c16-4844-a9ec-4a1716f3e980
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_CREATEHWQUEUE callback function"]
 req.header: d3dkmthk.h
@@ -35,8 +34,6 @@ api_location:
  - d3dkmthk.h
 api_name:
  - PFND3DKMT_CREATEHWQUEUE
-product:
- - Windows
 ---
 
 # PFND3DKMT_CREATEHWQUEUE callback function
@@ -48,7 +45,7 @@ Implemented by the client driver to create a new hardware queue.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_CREATEHWQUEUE](../d3dkmthk/ns-d3dkmthk-_d3dkmt_createhwqueue.md) structure that contains information needed to create a new hardware queue.
 

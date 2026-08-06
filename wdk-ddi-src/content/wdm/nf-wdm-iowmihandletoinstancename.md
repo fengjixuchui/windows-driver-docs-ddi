@@ -4,7 +4,6 @@ title: IoWMIHandleToInstanceName function (wdm.h)
 description: The IoWMIHandleToInstanceName routine determines the instance name for the WMI class instance implemented by the driver that is specified by a file handle.
 old-location: kernel\iowmihandletoinstancename.htm
 tech.root: kernel
-ms.assetid: e9d8fde5-81b7-480b-8d7c-0005fd1868fb
 ms.date: 04/30/2018
 keywords: ["IoWMIHandleToInstanceName function"]
 ms.keywords: IoWMIHandleToInstanceName, IoWMIHandleToInstanceName routine [Kernel-Mode Driver Architecture], k104_7d97f756-2f7f-4788-bcbc-368e08b6b86f.xml, kernel.iowmihandletoinstancename, wdm/IoWMIHandleToInstanceName
@@ -50,19 +49,19 @@ The <b>IoWMIHandleToInstanceName</b> routine determines the instance name for th
 
 ## -parameters
 
-### -param DataBlockObject 
+### -param DataBlockObject [in]
 
-[in]
+
 Pointer to a WMI data block object. The caller opens the data block object for the WMI class with the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiopenblock">IoWMIOpenBlock</a> routine.
 
-### -param FileHandle 
+### -param FileHandle [in]
 
-[in]
+
 Specifies a file handle. The routine returns the instance name corresponding to the driver that is represented by the file handle.
 
-### -param InstanceName 
+### -param InstanceName [out]
 
-[out]
+
 Pointer to the <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that the routine uses to return the instance name. The caller frees the returned buffer within <b>UNICODE_STRING</b>.
 
 ## -returns

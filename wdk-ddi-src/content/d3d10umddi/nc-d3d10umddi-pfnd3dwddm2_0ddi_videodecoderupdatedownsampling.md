@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3DWDDM2_0DDI_VIDEODECODERUPDATEDOWNSAMPLING
 title: PFND3DWDDM2_0DDI_VIDEODECODERUPDATEDOWNSAMPLING (d3d10umddi.h)
 description: Updates the decoder down sampling parameters. Optional for Windows Display Driver Model (WDDM) 2.0, or later, drivers.
 old-location: display\videodecoderupdatedownsampling.htm
-ms.assetid: DBF0F62D-E6E5-4711-9A7A-19C88F62575D
 ms.date: 05/10/2018
 keywords: ["PFND3DWDDM2_0DDI_VIDEODECODERUPDATEDOWNSAMPLING callback function"]
 ms.keywords: PFND3DWDDM2_0DDI_VIDEODECODERUPDATEDOWNSAMPLING, PFND3DWDDM2_0DDI_VIDEODECODERUPDATEDOWNSAMPLING callback, d3d10umddi/pfnVideoDecoderUpdateDownsampling, display.videodecoderupdatedownsampling, pfnVideoDecoderUpdateDownsampling, pfnVideoDecoderUpdateDownsampling callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoDecoderUpdateDownsampling
-product:
- - Windows
+ - PFND3DWDDM2_0DDI_VIDEODECODERUPDATEDOWNSAMPLING
 ---
 
 # PFND3DWDDM2_0DDI_VIDEODECODERUPDATEDOWNSAMPLING callback function
@@ -100,3 +97,4 @@ This function will only be called if the driver reports the <b>D3DWDDM2_0DDI_VID
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3dwddm2_0ddi_videodecoderenabledownsampling">VideoDecoderEnableDownsampling</a>
+

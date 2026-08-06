@@ -4,7 +4,6 @@ title: _DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA (d3dumddi.h)
 description: The DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA structure describes stream-state data that specifies the destination rectangle. The driver scales the source rectangle within the input surface to the destination rectangle within the output surface.
 old-location: display\dxvahdddi_stream_state_destination_rect_data.htm
 tech.root: display
-ms.assetid: 82f0cb12-fc0e-4627-af50-df4697f6764f
 ms.date: 05/10/2018
 keywords: ["DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA structure"]
 ms.keywords: DXVA2_Structs_3b88b3f0-9b31-46c6-8725-514f227b12a1.xml, DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA, DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA structure [Display Devices], _DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA, d3dumddi/DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA, display.dxvahdddi_stream_state_destination_rect_data
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA
  - DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA
 ---
 
@@ -52,13 +52,13 @@ The DXVAHDDDI_STREAM_STATE_DESTINATION_RECT_DATA structure describes stream-stat
 
 ## -struct-fields
 
-### -field Enable
+### -field Enable [in]
 
-[in] A Boolean value that specifies whether the driver should use the <b>DestinationRect</b> member or the entire target rectangle as the destination. The default value is <b>FALSE</b>, which indicates that the entire target rectangle is the destination.
+A Boolean value that specifies whether the driver should use the <b>DestinationRect</b> member or the entire target rectangle as the destination. The default value is <b>FALSE</b>, which indicates that the entire target rectangle is the destination.
 
-### -field DestinationRect
+### -field DestinationRect [in]
 
-[in] A <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a> structure that specifies the coordinates of the destination rectangle relevant to the target rectangle. This member is relevant only when the <b>Enable</b> member is set to <b>TRUE</b>. The default value is empty (0,0,0,0).
+A <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a> structure that specifies the coordinates of the destination rectangle relevant to the target rectangle. This member is relevant only when the <b>Enable</b> member is set to <b>TRUE</b>. The default value is empty (0,0,0,0).
 
 ## -remarks
 
@@ -69,3 +69,4 @@ The application can use the destination rectangle to specify the active rectangl
 ## -see-also
 
 <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a>
+

@@ -1,15 +1,14 @@
 ---
 UID: NS:d3dkmdt._D3DKMT_WDDM_1_3_CAPS
-title: _D3DKMT_WDDM_1_3_CAPS (d3dkmdt.h)
-description: Indicates the capabilities for Windows Display Driver Model v1.3.
-ms.assetid: d0b0e38a-4f43-4c20-8eb6-0dd3be95e6b0
-ms.date: 10/19/2018
+title: D3DKMT_WDDM_1_3_CAPS (d3dkmdt.h)
+description: D3DKMT_WDDM_1_3_CAPS is reserved for system use.
+ms.date: 07/28/2021
 keywords: ["D3DKMT_WDDM_1_3_CAPS structure"]
 ms.keywords: _D3DKMT_WDDM_1_3_CAPS, D3DKMT_WDDM_1_3_CAPS,
 req.header: d3dkmdt.h
 req.include-header: 
 req.target-type: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 8.1
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -34,16 +33,14 @@ api_location:
  - d3dkmdt.h
 api_name:
  - _D3DKMT_WDDM_1_3_CAPS
-product:
- - Windows
+ - D3DKMT_WDDM_1_3_CAPS
 ---
 
-# _D3DKMT_WDDM_1_3_CAPS structure
-
+# D3DKMT_WDDM_1_3_CAPS structure
 
 ## -description
 
-Indicates the capabilities for Windows Display Driver Model v1.3.
+Reserved for system use. Do not use.
 
 ## -struct-fields
 
@@ -53,11 +50,11 @@ Supports Miracast.
 
 ### -field IsHybridIntegratedGPU
 
-Indicates that the display is hybrid integrated GPU.
+The display is hybrid integrated GPU.
 
 ### -field IsHybridDiscreteGPU
 
-Indicates that the display is hybrid discrete GPU.
+The display is hybrid discrete GPU.
 
 ### -field SupportPowerManagementPStates
 
@@ -77,5 +74,8 @@ Reserved.
 
 ### -field Value
 
-Value.
+An alternative way to access the cap bits.
 
+## -remarks
+
+The graphics kernel uses **D3DKMT_WDDM_1_3_CAPS** to store various capabilities introduced in Windows Display Driver Model (WDDM) version 1.3. The driver provides its support capabilities during initialization, so it already knows all the values specified in this structure.

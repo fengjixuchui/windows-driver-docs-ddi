@@ -4,7 +4,6 @@ title: IDebugPlmClient3::ResumePlmPackageWide (dbgeng.h)
 description: Resumes a Process Lifecycle Management (PLM) package.
 old-location: debugger\idebugplmclient3_resumeplmpackagewide.htm
 tech.root: debugger
-ms.assetid: CC69357E-425B-440B-93D0-918E8586D5DF
 ms.date: 05/03/2018
 keywords: ["IDebugPlmClient3::ResumePlmPackageWide"]
 ms.keywords: IDebugPlmClient3 interface [Windows Debugging],ResumePlmPackageWide method, IDebugPlmClient3.ResumePlmPackageWide, IDebugPlmClient3::ResumePlmPackageWide, ResumePlmPackageWide, ResumePlmPackageWide method [Windows Debugging], ResumePlmPackageWide method [Windows Debugging],IDebugPlmClient3 interface, dbgeng/IDebugPlmClient3::ResumePlmPackageWide, debugger.idebugplmclient3_resumeplmpackagewide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugPlmClient3.ResumePlmPackageWide
+ - IDebugPlmClient3::ResumePlmPackageWide
 ---
 
 # IDebugPlmClient3::ResumePlmPackageWide
@@ -50,14 +49,14 @@ Resumes a Process Lifecycle Management (PLM) package.
 
 ## -parameters
 
-### -param Server 
+### -param Server [in]
 
-[in]
+
 The server of the package.
 
-### -param PackageFullName 
+### -param PackageFullName [in]
 
-[in]
+
 A pointer to the package name.
 
 ## -returns
@@ -67,3 +66,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugplmclient3">IDebugPlmClient3</a>
+

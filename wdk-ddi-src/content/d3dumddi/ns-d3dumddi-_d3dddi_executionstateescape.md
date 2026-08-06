@@ -4,7 +4,6 @@ title: _D3DDDI_EXECUTIONSTATEESCAPE (d3dumddi.h)
 description: Specifies the state of the device.
 old-location: display\d3dddi_executionstateescape.htm
 tech.root: display
-ms.assetid: 9BA78743-91AA-4AAC-9FB3-CF8B30FC15AE
 ms.date: 05/10/2018
 keywords: ["D3DDDI_EXECUTIONSTATEESCAPE structure"]
 ms.keywords: D3DDDI_EXECUTIONSTATEESCAPE, D3DDDI_EXECUTIONSTATEESCAPE structure [Display Devices], _D3DDDI_EXECUTIONSTATEESCAPE, d3dumddi/D3DDDI_EXECUTIONSTATEESCAPE, display.d3dddi_executionstateescape
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dumddi.h
 api_name:
+ - _D3DDDI_EXECUTIONSTATEESCAPE
  - D3DDDI_EXECUTIONSTATEESCAPE
 ---
 
@@ -52,10 +52,11 @@ Specifies the state of the device.
 
 ## -struct-fields
 
-### -field State
+### -field State [Out]
 
-[Out] A value of type <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_d3dddi_deviceexecution_state">D3DDDI_DEVICEEXECUTION_STATE</a> that indicates the state of the device.
+A value of type <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_d3dddi_deviceexecution_state">D3DDDI_DEVICEEXECUTION_STATE</a> that indicates the state of the device.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_d3dddi_deviceexecution_state">D3DDDI_DEVICEEXECUTION_STATE</a>
+

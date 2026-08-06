@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_41
+UID: NS:ksmedia.KSAUDIO_COPY_PROTECTION
 title: KSAUDIO_COPY_PROTECTION (ksmedia.h)
 description: The KSAUDIO_COPY_PROTECTION structure specifies the copy-protection status of an audio stream.
 old-location: audio\ksaudio_copy_protection.htm
 tech.root: audio
-ms.assetid: 7dab0240-67c3-4412-a7a5-bb98d84c6bdd
 ms.date: 05/08/2018
 keywords: ["KSAUDIO_COPY_PROTECTION structure"]
 ms.keywords: "*PKSAUDIO_COPY_PROTECTION, KSAUDIO_COPY_PROTECTION, KSAUDIO_COPY_PROTECTION structure [Audio Devices], PKSAUDIO_COPY_PROTECTION, PKSAUDIO_COPY_PROTECTION structure pointer [Audio Devices], aud-prop_94eac763-0c97-406d-b255-686ac82f908c.xml, audio.ksaudio_copy_protection, ksmedia/KSAUDIO_COPY_PROTECTION, ksmedia/PKSAUDIO_COPY_PROTECTION"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSAUDIO_COPY_PROTECTION
  - KSAUDIO_COPY_PROTECTION
 ---
 
@@ -71,3 +71,4 @@ The KSPROPERTY_AUDIO_COPY_PROTECTION property is separate from and unrelated to 
 ## -see-also
 
 [KSPROPERTY_AUDIO_COPY_PROTECTION](/windows-hardware/drivers/audio/ksproperty-audio-copy-protection)
+

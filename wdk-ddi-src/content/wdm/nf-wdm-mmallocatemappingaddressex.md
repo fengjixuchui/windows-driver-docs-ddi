@@ -1,11 +1,9 @@
 ---
 UID: NF:wdm.MmAllocateMappingAddressEx
 title: MmAllocateMappingAddressEx function
-description: TBD
+description: The MmAllocateMappingAddressEx function allocates a system PTE mapping of the requested length that can be used later to map arbitrary addresses.
 tech.root: kernel
-ms.assetid: 1eb6fff3-a98c-41b9-b0b2-6bdae1f4ba7a
-ms.date: 03/01/2020
-ms.topic: function
+ms.date: 08/29/2025
 ms.keywords: MmAllocateMappingAddressEx
 req.header: wdm.h
 req.include-header: 
@@ -16,7 +14,7 @@ req.kmdf-ver:
 req.umdf-ver: 
 req.lib: 
 req.dll: 
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 req.ddi-compliance: 
 req.unicode-ansi: 
 req.idl: 
@@ -33,8 +31,6 @@ api_location:
  - wdm.h
 api_name:
  - MmAllocateMappingAddressEx
-product:
- - Windows
 f1_keywords:
  - MmAllocateMappingAddressEx
  - wdm/MmAllocateMappingAddressEx
@@ -42,30 +38,50 @@ f1_keywords:
 
 # MmAllocateMappingAddressEx function
 
-
 ## -description
 
-This function allocates a system PTE mapping of the requested length that can be used later to map arbitrary addresses.
+The **MmAllocateMappingAddressEx** function allocates a system PTE mapping of the requested length that can be used later to map arbitrary addresses.
 
 ## -parameters
 
-### -param NumberOfBytes
+### -param NumberOfBytes [in]
 
 Supplies the maximum number of bytes the mapping can span.
 
-### -param PoolTag
+### -param PoolTag [in]
 
-Supplies a pool tag to associate this mapping to the caller.
+Specifies a four-character tag used to identify the buffer. Use a distinct **PoolTag** tag for each allocation code path. For a description of pool tags, see [**ExAllocatePoolWithTag**](nf-wdm-exallocatepoolwithtag.md).
 
-### -param Flags
+### -param Flags [in]
 
-TBD
+Specifies flags for this operation. Set this parameter to zero or to the bitwise-OR of one or more of the following flag bits:
+
+| Flag | Meaning |
+| ---- | ------- |
+| MM_MAPPING_ADDRESS_DIVISIBLE | Indicates that the mapping address must be divisible by the size of the mapping. This flag is useful for ensuring that the mapping address aligns with certain hardware requirements. |
 
 ## -returns
 
-Returns a virtual address where to use for later mappings.
+**MmAllocateMappingAddressEx** returns a pointer to the beginning of the reserved memory buffer if the operation is successful; otherwise, it returns NULL.
 
 ## -remarks
 
+**MmAllocateMappingAddressEx** provides an extended version of [**MmAllocateMappingAddress**](nf-wdm-mmallocatemappingaddress.md) with additional flag support. This function reserves a range of system virtual address space that can be used for later mapping operations with [**MmMapLockedPagesWithReservedMapping**](nf-wdm-mmmaplockedpageswithreservedmapping.md).
+
+No physical memory is allocated by this function; it only reserves virtual address space. The reserved memory can't be accessed until it is mapped using [**MmMapLockedPagesWithReservedMapping**](nf-wdm-mmmaplockedpageswithreservedmapping.md).
+
+Callers must provide a non-zero **PoolTag** to identify the allocation.
+
+The reserved address range should be freed using [**MmFreeMappingAddress**](nf-wdm-mmfreemappingaddress.md) when no longer needed.
+
+Very large allocations (>= 4GB pages) will fail. The function might fail if insufficient system PTEs are available
+
 ## -see-also
 
+[**MmAllocateMappingAddress**](nf-wdm-mmallocatemappingaddress.md)
+
+[**MmFreeMappingAddress**](nf-wdm-mmfreemappingaddress.md)
+
+[**MmMapLockedPagesWithReservedMapping**](nf-wdm-mmmaplockedpageswithreservedmapping.md)
+
+[**MmUnmapReservedMapping**](nf-wdm-mmunmapreservedmapping.md)

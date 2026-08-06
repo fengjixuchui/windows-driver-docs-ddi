@@ -4,7 +4,6 @@ title: NDK_FN_QUERY_EXTENSION_INTERFACE (ndkpi.h)
 description: The NdkQqueryExtensionInterface (NDK_FN_QUERY_EXTENSION_INTERFACE) function gets information about an NDK extension interface.
 old-location: netvista\ndk_fn_query_extension_interface.htm
 tech.root: netvista
-ms.assetid: 439C990E-6978-4D0F-8453-6EB2FED1DB77
 ms.date: 05/02/2018
 keywords: ["NDK_FN_QUERY_EXTENSION_INTERFACE callback function"]
 ms.keywords: NDK_FN_QUERY_EXTENSION_INTERFACE, NDK_FN_QUERY_EXTENSION_INTERFACE callback, NdkQqueryExtensionInterface, NdkQqueryExtensionInterface callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkQqueryExtensionInterface, netvista.ndk_fn_query_extension_interface
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkQqueryExtensionInterface
+ - NDK_FN_QUERY_EXTENSION_INTERFACE
 ---
 
 # NDK_FN_QUERY_EXTENSION_INTERFACE callback function
@@ -50,24 +49,24 @@ The <i>NdkQqueryExtensionInterface</i> (<i>NDK_FN_QUERY_EXTENSION_INTERFACE</i>)
 
 ## -parameters
 
-### -param pNdkObject 
+### -param pNdkObject [in]
 
-[in]
+
 	A pointer to the object header (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_object_header">NDK_OBJECT_HEADER</a>) for the object being queried.
 
-### -param ExtensionInterfaceID 
+### -param ExtensionInterfaceID [in]
 
-[in]
+
 A pointer to the GUID that identifies the extension interface.
 
-### -param ExtensionInterfaceVersion 
+### -param ExtensionInterfaceVersion [in]
 
-[in]
+
 	The requested version (<a href="/windows/win32/api/ndkinfo/ns-ndkinfo-ndk_version">NDK_VERSION</a>) of the extension interface.
 
-### -param pExtensionInterface 
+### -param pExtensionInterface [out]
 
-[out]
+
 A pointer to an   <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_extension_interface">NDK_EXTENSION_INTERFACE</a> structure that the provider  initialized if the function returns STATUS_SUCCESS.
 
 ## -returns
@@ -145,3 +144,4 @@ Each NDK object contains an <i>NdkQqueryExtensionInterface</i> (<i>NDK_FN_QUERY_
 
 
 <a href="/windows/win32/api/ndkinfo/ns-ndkinfo-ndk_version">NDK_VERSION</a>
+

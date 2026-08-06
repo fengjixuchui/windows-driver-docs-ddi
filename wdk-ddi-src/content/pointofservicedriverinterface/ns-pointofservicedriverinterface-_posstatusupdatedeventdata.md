@@ -4,7 +4,6 @@ title: _PosStatusUpdatedEventData (pointofservicedriverinterface.h)
 description: This structure contains data passed to the StatusUpdated event.
 old-location: pos\posstatusupdatedeventdata.htm
 tech.root: pos
-ms.assetid: 382e5441-dce1-428b-90af-d57b5f930abb
 ms.date: 02/23/2018
 keywords: ["PosStatusUpdatedEventData structure"]
 ms.keywords: PosStatusUpdatedEventData, PosStatusUpdatedEventData structure, _PosStatusUpdatedEventData, pointofservicedriverinterface/PosStatusUpdatedEventData, pos.posstatusupdatedeventdata
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - PointOfServiceDriverInterface.h
 api_name:
+ - _PosStatusUpdatedEventData
  - PosStatusUpdatedEventData
 ---
 
@@ -63,3 +63,4 @@ Indicates a device-specific enumeration value.
 ### -field ExtendedStatus
 
 Indicates a driver-specific value intended to be used by the vendor for diagnostic purposes.
+

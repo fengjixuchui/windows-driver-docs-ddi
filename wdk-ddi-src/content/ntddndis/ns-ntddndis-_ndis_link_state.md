@@ -4,7 +4,6 @@ title: _NDIS_LINK_STATE (ntddndis.h)
 description: The NDIS_LINK_STATE structure specifies the current link state of a miniport adapter.
 old-location: netvista\ndis_link_state.htm
 tech.root: netvista
-ms.assetid: 01d74e69-55fe-4e2e-94ab-7676f9e33403
 ms.date: 05/02/2018
 keywords: ["NDIS_LINK_STATE structure"]
 ms.keywords: "*PNDIS_LINK_STATE, NDIS_LINK_STATE, NDIS_LINK_STATE structure [Network Drivers Starting with Windows Vista], PNDIS_LINK_STATE, PNDIS_LINK_STATE structure pointer [Network Drivers Starting with Windows Vista], _NDIS_LINK_STATE, netvista.ndis_link_state, ntddndis/NDIS_LINK_STATE, ntddndis/PNDIS_LINK_STATE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_LINK_STATE
+ - PNDIS_LINK_STATE
  - NDIS_LINK_STATE
 ---
 
@@ -57,7 +58,7 @@ The <b>NDIS_LINK_STATE</b> structure specifies the current link state of a minip
 ### -field Header
 
 The 
-      <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+      <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
  <b>NDIS_LINK_STATE</b> structure. Set the 
       <b>Type</b> member of the structure that 
       <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -179,7 +180,7 @@ The miniport driver also returns an <b>NDIS_LINK_STATE</b> structure when it han
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -206,3 +207,4 @@ The miniport driver also returns an <b>NDIS_LINK_STATE</b> structure when it han
 
 <a href="/windows-hardware/drivers/network/oid-gen-media-duplex-state">
  OID_GEN_MEDIA_DUPLEX_STATE</a>
+

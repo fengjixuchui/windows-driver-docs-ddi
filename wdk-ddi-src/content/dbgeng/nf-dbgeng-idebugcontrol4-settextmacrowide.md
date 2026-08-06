@@ -4,7 +4,6 @@ title: IDebugControl4::SetTextMacroWide (dbgeng.h)
 description: The SetTextMacroWide method sets the value of a fixed-name alias.
 old-location: debugger\settextmacrowide.htm
 tech.root: debugger
-ms.assetid: 98e93636-33e3-4642-a4fb-8590a7a0e784
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::SetTextMacroWide"]
 ms.keywords: IDebugControl4 interface [Windows Debugging],SetTextMacroWide method, IDebugControl4.SetTextMacroWide, IDebugControl4::SetTextMacroWide, SetTextMacroWide, SetTextMacroWide method [Windows Debugging], SetTextMacroWide method [Windows Debugging],IDebugControl4 interface, dbgeng/IDebugControl4::SetTextMacroWide, debugger.settextmacrowide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.SetTextMacroWide
+ - IDebugControl4::SetTextMacroWide
 ---
 
 # IDebugControl4::SetTextMacroWide
@@ -50,14 +49,14 @@ The <b>SetTextMacroWide</b>  method sets the value of a fixed-name alias.
 
 ## -parameters
 
-### -param Slot 
+### -param Slot [in]
 
-[in]
+
 Specifies the number of the fixed-name alias.  <i>Slot</i> can take the values 0, 1, ..., 9, that represent the fixed-name aliases <b>$u0</b>, <b>$u1</b>, ..., <b>$u9</b>.
 
-### -param Macro 
+### -param Macro [in]
 
-[in]
+
 Specifies the new value of the alias specified by <i>Slot</i>.  The <a href="/windows-hardware/drivers/debugger/introduction">debugger engine</a> makes a copy of this string.
 
 ## -returns
@@ -107,3 +106,4 @@ For an overview of aliases used by the debugger engine, see <a href="/windows-ha
 
 
 <a href="/windows-hardware/drivers/debugger/r--registers-">r (Registers)</a>
+

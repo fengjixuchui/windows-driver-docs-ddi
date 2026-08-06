@@ -4,7 +4,6 @@ title: EVT_WDF_DEVICE_EJECT (wdfpdo.h)
 description: A driver's EvtDeviceEject event callback function handles operations that are necessary to eject a device from its docking station.
 old-location: wdf\evtdeviceeject.htm
 tech.root: wdf
-ms.assetid: fc3f3a15-9a79-4275-9ba4-b01ab8851390
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DEVICE_EJECT callback function"]
 ms.keywords: DFDeviceObjectFdoPdoRef_38feba70-59b4-4981-af2d-0fc0fa4ff68a.xml, EVT_WDF_DEVICE_EJECT, EVT_WDF_DEVICE_EJECT callback, EvtDeviceEject, EvtDeviceEject callback function, kmdf.evtdeviceeject, wdf.evtdeviceeject, wdfpdo/EvtDeviceEject
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfpdo.h
 api_name:
- - EvtDeviceEject
+ - EVT_WDF_DEVICE_EJECT
 ---
 
 # EVT_WDF_DEVICE_EJECT callback function
@@ -52,9 +51,9 @@ A driver's <i>EvtDeviceEject</i> event callback function handles operations that
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
 ## -returns
@@ -76,3 +75,4 @@ For more information about device ejection, see <a href="/windows-hardware/drive
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfpdo/nc-wdfpdo-evt_wdf_device_set_lock">EvtDeviceSetLock</a>
+

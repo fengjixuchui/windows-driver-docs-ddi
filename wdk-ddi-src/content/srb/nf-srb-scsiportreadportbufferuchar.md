@@ -4,7 +4,6 @@ title: ScsiPortReadPortBufferUchar function (srb.h)
 description: The ScsiPortReadPortBufferUchar routine transfers a given number of unsigned byte values from the HBA to a buffer.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
 old-location: storage\scsiportreadportbufferuchar.htm
 tech.root: storage
-ms.assetid: 9444670d-5b9f-4d77-b867-ac5608c24e02
 ms.date: 03/29/2018
 keywords: ["ScsiPortReadPortBufferUchar function"]
 ms.keywords: ScsiPortReadPortBufferUchar, ScsiPortReadPortBufferUchar routine [Storage Devices], scsiprt_db25989e-3b44-4f45-b768-b1b11c2ed25a.xml, srb/ScsiPortReadPortBufferUchar, storage.scsiportreadportbufferuchar
@@ -52,19 +51,19 @@ The <b>ScsiPortReadPortBufferUchar</b> routine transfers a given number of unsig
 
 ## -parameters
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Pointer to the I/O port. The given <i>Port</i> must be in a mapped I/O-space range returned by <b>ScsiPortGetDeviceBase</b>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to the buffer.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of bytes to be read from the HBA.
 
 ## -returns

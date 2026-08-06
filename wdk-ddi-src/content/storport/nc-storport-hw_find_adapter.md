@@ -4,7 +4,6 @@ title: HW_FIND_ADAPTER (storport.h)
 description: The HwStorFindAdapter routine uses the supplied configuration to determine whether a specific HBA is supported and, if it is, to return configuration information about that adapter.
 old-location: storage\hwstorfindadapter.htm
 tech.root: storage
-ms.assetid: 8642d0b8-ebc8-4053-b35e-3a81108a2f7f
 ms.date: 03/29/2018
 keywords: ["HW_FIND_ADAPTER callback function"]
 ms.keywords: HW_FIND_ADAPTER, HwStorFindAdapter, HwStorFindAdapter routine [Storage Devices], storage.hwstorfindadapter, stormini_844ef988-84c8-4f93-b732-eb0a2e8d611a.xml, storport/HwStorFindAdapter
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - Storport.h
 api_name:
- - HwStorFindAdapter
+ - HW_FIND_ADAPTER
 ---
 
 # HW_FIND_ADAPTER callback function
-
 
 ## -description
 
@@ -54,29 +52,25 @@ The **HwStorFindAdapter** routine uses the supplied configuration to determine w
 
 Supplies a per adapter storage area.
 
-### -param HwContext 
+### -param HwContext [in]
 
-[in]
 Set to NULL.
 
-### -param BusInformation 
+### -param BusInformation [in]
 
-[in]
+
 Set to NULL.
 
-### -param ArgumentString 
+### -param ArgumentString [in]
 
-[in]
 Supplies a **NULL**-terminated string with context information about the driver.
 
-### -param ConfigInfo 
+### -param ConfigInfo [in/out]
 
-[in, out]
 Supplies an initialized [**PORT_CONFIGURATION_INFORMATION**](ns-storport-_port_configuration_information.md) structure that the miniport driver uses during initialization.
 
-### -param Reserved3 
+### -param Reserved3 [in]
 
-[in]
 Reserved for system use.
 
 ## -returns
@@ -98,7 +92,7 @@ Because the Storport driver supports only Plug and Play (PnP) devices, the *HwCo
 
 The name **HwStorFindAdapter** is just a placeholder. The actual prototype of this routine is defined in *Storport.h* as follows:
 
-```cpp
+```C
 typedef
 ULONG
 HW_FIND_ADAPTER (
@@ -141,7 +135,7 @@ MyHwFindAdapter (
   }
 ```
 
-The **HW_FIND_ADAPTER** function type is defined in the Storport.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the **HW_FIND_ADAPTER** function type in the header file are used. For more information about the requirements for function declarations, see [Declaring Functions Using Function Role Types for Storport Drivers](/windows-hardware/drivers/devtest/declaring-functions-by-using-function-role-types-for-storport-drivers). For information about _Use_decl_annotations_, see [Annotating Function Behavior](/cpp/code-quality/annotating-function-behavior?view=vs-2019).
+The **HW_FIND_ADAPTER** function type is defined in the Storport.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the **HW_FIND_ADAPTER** function type in the header file are used. For more information about the requirements for function declarations, see [Declaring Functions Using Function Role Types for Storport Drivers](/windows-hardware/drivers/devtest/declaring-functions-by-using-function-role-types-for-storport-drivers). For information about _Use_decl_annotations_, see [Annotating Function Behavior](/visualstudio/code-quality/annotating-function-behavior).
 
 ## -see-also
 

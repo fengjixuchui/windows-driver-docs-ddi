@@ -4,7 +4,6 @@ title: KsCreateClock2 function (ks.h)
 description: Creates a handle to a clock instance. Call this function after the Component Object Model (COM) is initialized.
 old-location: stream\kscreateclock2.htm
 tech.root: stream
-ms.assetid: b70d4a57-c687-40b8-bbf2-4a0a2fbf4863
 ms.date: 04/23/2018
 keywords: ["KsCreateClock2 function"]
 ms.keywords: KsCreateClock2, KsCreateClock2 function [Streaming Media Devices], ks/KsCreateClock2, stream.kscreateclock2
@@ -52,19 +51,19 @@ Supported starting in Windows 8.
 
 ## -parameters
 
-### -param ConnectionHandle 
+### -param ConnectionHandle [in]
 
-[in]
+
 Specifies the handle to the connection on which to create the clock.
 
-### -param ClockCreate 
+### -param ClockCreate [in]
 
-[in]
+
 Specifies clock create parameters. This currently consists of a flag that must be set to zero.
 
-### -param ClockHandle 
+### -param ClockHandle [out]
 
-[out]
+
 Specifies the new clock handle.
 
 ## -returns

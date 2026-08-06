@@ -4,7 +4,6 @@ title: EVT_WDF_IO_ALLOCATE_RESOURCES_FOR_RESERVED_REQUEST (wdfio.h)
 description: A driver's EvtIoAllocateResourcesForReservedRequest callback function allocates request-specific resources that the driver can use to process an I/O request in the future.
 old-location: wdf\evtioallocateresourcesforreservedrequest.htm
 tech.root: wdf
-ms.assetid: 07ba6437-655b-417a-87a8-5374812ca4d7
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_IO_ALLOCATE_RESOURCES_FOR_RESERVED_REQUEST callback function"]
 ms.keywords: DFQueueObjectRef_7fafb899-1038-409b-af8e-f45776b18abe.xml, EVT_WDF_IO_ALLOCATE_RESOURCES_FOR_RESERVED_REQUEST, EVT_WDF_IO_ALLOCATE_RESOURCES_FOR_RESERVED_REQUEST callback, EvtIoAllocateResourcesForReservedRequest, EvtIoAllocateResourcesForReservedRequest callback function, kmdf.evtioallocateresourcesforreservedrequest, wdf.evtioallocateresourcesforreservedrequest, wdfio/EvtIoAllocateResourcesForReservedRequest
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfio.h
 api_name:
- - EvtIoAllocateResourcesForReservedRequest
+ - EVT_WDF_IO_ALLOCATE_RESOURCES_FOR_RESERVED_REQUEST
 ---
 
 # EVT_WDF_IO_ALLOCATE_RESOURCES_FOR_RESERVED_REQUEST callback function
@@ -52,14 +51,14 @@ A driver's <i>EvtIoAllocateResourcesForReservedRequest</i> callback function all
 
 ## -parameters
 
-### -param Queue 
+### -param Queue [in]
 
-[in]
+
 A handle to an I/O queue object.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a request object that the framework has created for use during future low-memory situations.
 
 ## -returns
@@ -103,3 +102,4 @@ For more information about the <i>EvtIoAllocateResourcesForReservedRequest</i> c
 
 
 <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestisreserved">WdfRequestIsReserved</a>
+

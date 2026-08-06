@@ -4,7 +4,6 @@ title: _VP_SCATTER_GATHER_ELEMENT (video.h)
 description: The VP_SCATTER_GATHER_ELEMENT structure is used to store information about a single scatter/gather element.
 old-location: display\vp_scatter_gather_element.htm
 tech.root: display
-ms.assetid: 7b0ca123-8847-4dc3-b0f5-9788104381ec
 ms.date: 05/10/2018
 keywords: ["VP_SCATTER_GATHER_ELEMENT structure"]
 ms.keywords: "*PVP_SCATTER_GATHER_ELEMENT, PVP_SCATTER_GATHER_ELEMENT, PVP_SCATTER_GATHER_ELEMENT structure pointer [Display Devices], VP_SCATTER_GATHER_ELEMENT, VP_SCATTER_GATHER_ELEMENT structure [Display Devices], Video_Structs_eacc94d7-8de2-4847-b843-3ae56bbca6d5.xml, _VP_SCATTER_GATHER_ELEMENT, display.vp_scatter_gather_element, video/PVP_SCATTER_GATHER_ELEMENT, video/VP_SCATTER_GATHER_ELEMENT"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - video.h
 api_name:
+ - _VP_SCATTER_GATHER_ELEMENT
+ - PVP_SCATTER_GATHER_ELEMENT
  - VP_SCATTER_GATHER_ELEMENT
 ---
 
@@ -75,3 +76,4 @@ A VP_SCATTER_GATHER_ELEMENT structure is one element of the <a href="/windows-ha
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/video/ns-video-_vp_scatter_gather_list">VP_SCATTER_GATHER_LIST</a>
+

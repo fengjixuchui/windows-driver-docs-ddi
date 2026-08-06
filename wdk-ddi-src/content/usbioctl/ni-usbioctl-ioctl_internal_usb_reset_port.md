@@ -4,7 +4,6 @@ title: IOCTL_INTERNAL_USB_RESET_PORT (usbioctl.h)
 description: The IOCTL_INTERNAL_USB_RESET_PORT I/O control request is used by a driver to reset the upstream port of the device it manages.
 old-location: buses\ioctl_internal_usb_reset_port.htm
 tech.root: usbref
-ms.assetid: 0ba0abfe-a32d-4650-ad08-f40d0b14f9a5
 ms.date: 05/07/2018
 keywords: ["IOCTL_INTERNAL_USB_RESET_PORT IOCTL"]
 ms.keywords: IOCTL_INTERNAL_USB_RESET_PORT, IOCTL_INTERNAL_USB_RESET_PORT control, IOCTL_INTERNAL_USB_RESET_PORT control code [Buses], buses.ioctl_internal_usb_reset_port, usbioctl/IOCTL_INTERNAL_USB_RESET_PORT, usbirp_d96d4c35-d399-444e-905b-c59360a01754.xml
@@ -57,6 +56,10 @@ This IOCTL must be sent at an IRQL of PASSIVE_LEVEL.
 <b>IOCTL_INTERNAL_USB_RESET_PORT</b> is a kernel-mode I/O control request. This request targets the USB hub PDO.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
+
+[IRP_MJ_INTERNAL_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
 ### -input-buffer
 

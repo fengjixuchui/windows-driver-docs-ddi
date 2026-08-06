@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMPIXELASPECTRATIO
 title: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMPIXELASPECTRATIO (d3d10umddi.h)
 description: Sets the pixel aspect ratio for an input stream on the video processor.
 old-location: display\videoprocessorsetstreampixelaspectratio.htm
-ms.assetid: fe472b54-09f5-4689-a3d1-0985dafa7d4b
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMPIXELASPECTRATIO callback function"]
 ms.keywords: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMPIXELASPECTRATIO, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMPIXELASPECTRATIO callback, d3d10umddi/pfnVideoProcessorSetStreamPixelAspectRatio, display.videoprocessorsetstreampixelaspectratio, pfnVideoProcessorSetStreamPixelAspectRatio, pfnVideoProcessorSetStreamPixelAspectRatio callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoProcessorSetStreamPixelAspectRatio
+ - PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMPIXELASPECTRATIO
 ---
 
 # PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMPIXELASPECTRATIO callback function
@@ -50,31 +49,31 @@ Sets the pixel aspect ratio for an input stream on the video processor.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hVideoProcessor* [in]
 
 A handle to the video processor object that was created through a call to the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a> function.
 
-### -param Arg3
+### -param unnamedParam3
 
 *StreamIndex* [in]
 
 The zero-based index of the input stream.
 
-### -param Arg4
+### -param unnamedParam4
 
 *Enable* [in]
 
 If <b>TRUE</b>, the <i>pSourceRatio</i> and <i>pDestinationRatio</i> parameters contain valid values. Otherwise, the pixel aspect ratios are unspecified.
 
-### -param Arg5
+### -param unnamedParam5
 
 *pSourceRatio* [in]
 
@@ -85,7 +84,7 @@ A pointer to a <b>DXGI_RATIONAL</b> structure that contains the pixel aspect rat
 </div>
 <div> </div>
 
-### -param Arg6
+### -param unnamedParam6
 
 *pDestRatio* [in]
 
@@ -122,3 +121,4 @@ The driver reports its ability to support the pixel aspect ratio capability in t
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorcaps">GetVideoProcessorCaps</a>
+

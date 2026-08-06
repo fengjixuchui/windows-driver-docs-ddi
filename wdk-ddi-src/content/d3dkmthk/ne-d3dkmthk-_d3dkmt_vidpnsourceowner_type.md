@@ -2,7 +2,6 @@
 UID: NE:d3dkmthk._D3DKMT_VIDPNSOURCEOWNER_TYPE
 title: _D3DKMT_VIDPNSOURCEOWNER_TYPE (d3dkmthk.h)
 description: The VidPn source owner types.
-ms.assetid: 76f3afb4-7041-44df-92ed-9332bf33f646
 ms.date: 10/19/2018
 keywords: ["D3DKMT_VIDPNSOURCEOWNER_TYPE enumeration"]
 ms.keywords: _D3DKMT_VIDPNSOURCEOWNER_TYPE, D3DKMT_VIDPNSOURCEOWNER_TYPE,
@@ -32,6 +31,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_VIDPNSOURCEOWNER_TYPE
+ - D3DKMT_VIDPNSOURCEOWNER_TYPE
 dev_langs:
  - c++
 ---

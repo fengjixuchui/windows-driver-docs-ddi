@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_94
+UID: NS:ksmedia.KSPROPERTY_SELECTOR_S
 title: KSPROPERTY_SELECTOR_S (ksmedia.h)
 description: The KSPROPERTY_SELECTOR_S structure describes filter-based property settings in the PROPSETID_VIDCAP_SELECTOR property set.
 old-location: stream\ksproperty_selector_s.htm
 tech.root: stream
-ms.assetid: cc9928b7-fab2-44c1-8613-3a94b5e8dcab
 ms.date: 04/30/2019
 keywords: ["KSPROPERTY_SELECTOR_S structure"]
 ms.keywords: "*PKSPROPERTY_SELECTOR_S, KSPROPERTY_SELECTOR_S, KSPROPERTY_SELECTOR_S structure [Streaming Media Devices], PKSPROPERTY_SELECTOR_S, PKSPROPERTY_SELECTOR_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_SELECTOR_S, ksmedia/PKSPROPERTY_SELECTOR_S, stream.ksproperty_selector_s, vidcapstruct_7e180fae-5237-4b71-8719-7d3c5ee66592.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_SELECTOR_S
  - KSPROPERTY_SELECTOR_S
 ---
 
@@ -71,3 +71,4 @@ Specifies the capabilities of a property. This member has meaning only for Get r
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksproperty_selector_node_s">KSPROPERTY_SELECTOR_NODE_S</a>
+

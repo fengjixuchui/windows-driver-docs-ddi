@@ -1,8 +1,8 @@
 ---
 UID: NF:wdfdevice.WdfDeviceRetrieveDeviceDirectoryString
 title: WdfDeviceRetrieveDeviceDirectoryString function (wdfdevice.h)
-description: 
-ms.assetid: 94f803e2-0972-4248-8b55-c02fd096a1e2
+description: "Learn more about: WdfDeviceRetrieveDeviceDirectoryString function"
+tech.root: wdf
 ms.date: 10/19/2018
 keywords: ["WdfDeviceRetrieveDeviceDirectoryString function"]
 ms.keywords: WdfDeviceRetrieveDeviceDirectoryString
@@ -48,13 +48,13 @@ api_name:
 
 ## -parameters
 
-### -param Device
+### -param Device [_In_]
 
-[_In_] A handle to a framework device object.
+A handle to a framework device object.
 
-### -param String
+### -param String [_In_]
 
-[_In_] A handle to a [framework string object](/windows-hardware/drivers/wdf/using-string-objects). The framework will assign the directory path to the string object on successful return.
+A handle to a [framework string object](/windows-hardware/drivers/wdf/using-string-objects). The framework will assign the directory path to the string object on successful return.
 
 ## -returns
 

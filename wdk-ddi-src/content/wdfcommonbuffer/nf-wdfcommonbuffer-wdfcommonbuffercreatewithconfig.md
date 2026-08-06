@@ -4,7 +4,6 @@ title: WdfCommonBufferCreateWithConfig function (wdfcommonbuffer.h)
 description: The WdfCommonBufferCreateWithConfig method creates a memory buffer that both the driver and a direct memory access (DMA) device can access simultaneously, and the method also specifies buffer configuration information.
 old-location: wdf\wdfcommonbuffercreatewithconfig.htm
 tech.root: wdf
-ms.assetid: 3ed8b7df-9c7d-44de-a49d-10221acf71e3
 ms.date: 02/26/2018
 keywords: ["WdfCommonBufferCreateWithConfig function"]
 ms.keywords: DFCommonBufferObjectRef_4e009b5f-a2a4-4be5-84d6-308c1558e702.xml, WdfCommonBufferCreateWithConfig, WdfCommonBufferCreateWithConfig method, kmdf.wdfcommonbuffercreatewithconfig, wdf.wdfcommonbuffercreatewithconfig, wdfcommonbuffer/WdfCommonBufferCreateWithConfig
@@ -53,29 +52,29 @@ The <b>WdfCommonBufferCreateWithConfig</b> method creates a memory buffer that b
 
 ## -parameters
 
-### -param DmaEnabler 
+### -param DmaEnabler [in]
 
-[in]
+
 A handle to a DMA enabler object that the driver obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdfdmaenabler/nf-wdfdmaenabler-wdfdmaenablercreate">WdfDmaEnablerCreate</a>.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The desired size, in bytes, of the new buffer.
 
-### -param Config 
+### -param Config [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfcommonbuffer/ns-wdfcommonbuffer-_wdf_common_buffer_config">WDF_COMMON_BUFFER_CONFIG</a> structure that contains configuration information about the buffer.
 
-### -param Attributes 
+### -param Attributes [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the common buffer object. (The structure's <b>ParentObject</b> member must be <b>NULL</b>.) This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param CommonBuffer 
+### -param CommonBuffer [out]
 
-[out]
+
 A pointer to a WDFCOMMONBUFFER-typed variable that receives a handle to a common buffer object.
 
 ## -returns

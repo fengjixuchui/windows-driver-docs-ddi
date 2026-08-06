@@ -3,17 +3,16 @@ UID: NE:netadapter._NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE
 title: _NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE (netadapter.h)
 description: The NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE enumeration identifies how the operating system should allocate NET_PACKET_FRAGMENT receive buffers for a net adapter client driver's receive queues.
 tech.root: netvista
-ms.assetid: b7ce305a-ea72-4461-9d91-c4e3fb84eb8a
-ms.date: 02/15/2018
+ms.date: 03/30/2022
 keywords: ["NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE enumeration"]
 ms.keywords: _NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE, NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE,
 req.header: netadapter.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: 
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.25
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.ddi-compliance: 
 req.max-support: 
 req.typenames: NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE
@@ -23,14 +22,15 @@ f1_keywords:
  - netadapter/_NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE
  - NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE
  - netadapter/NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE
-topictype:
+topic_type:
  - apiref
-apitype:
+api_type:
  - HeaderDef
-apilocation:
+api_location:
  - netadapter.h
-apiname:
+api_name:
  - _NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE
+ - NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE
 ---
 
 # _NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE enumeration
@@ -42,11 +42,11 @@ The **NET_RX_FRAGMENT_BUFFER_ALLOCATION_MODE** enumeration identifies how the op
 
 ## -enum-fields
 
-### -field NetRxFragmentBufferAllocationModeSystem : 
+### -field NetRxFragmentBufferAllocationModeSystem:0 
 
 The operating system allocates [NET_FRAGMENT](../fragment/ns-fragment-_net_fragment.md) receive buffers on behalf of the client driver.
 
-### -field NetRxFragmentBufferAllocationModeDriver : 
+### -field NetRxFragmentBufferAllocationModeDriver:1 
 
 The operating system never allocates [NET_FRAGMENT](../fragment/ns-fragment-_net_fragment.md) receive buffers. The client driver is responsible for buffer allocation.
 

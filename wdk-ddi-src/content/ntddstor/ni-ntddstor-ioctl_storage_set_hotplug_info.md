@@ -4,7 +4,6 @@ title: IOCTL_STORAGE_SET_HOTPLUG_INFO (ntddstor.h)
 description: Sets the hotplug configuration of the specified device.
 old-location: storage\ioctl_storage_set_hotplug_info.htm
 tech.root: storage
-ms.assetid: 5badc919-8663-4905-aaec-70f6b51ab2f1
 ms.date: 03/29/2018
 keywords: ["IOCTL_STORAGE_SET_HOTPLUG_INFO IOCTL"]
 ms.keywords: IOCTL_STORAGE_SET_HOTPLUG_INFO, IOCTL_STORAGE_SET_HOTPLUG_INFO control, IOCTL_STORAGE_SET_HOTPLUG_INFO control code [Storage Devices], k307_f6fb6bb6-0058-4fa6-9d4f-2f964b1ef646.xml, ntddstor/IOCTL_STORAGE_SET_HOTPLUG_INFO, storage.ioctl_storage_set_hotplug_info
@@ -49,6 +48,8 @@ api_name:
 Sets the hotplug configuration of the specified device. This request takes a <a href="/windows-hardware/drivers/ddi/ntddstor/ns-ntddstor-_storage_hotplug_info">STORAGE_HOTPLUG_INFO</a> structure as input. The <b>DeviceHotplug</b> member of the STORAGE_HOTPLUG_INFO structure determines what action is taken. If the value of that member is nonzero, the value for the device's removal policy in the registry is set to <b>ExpectSurpriseRemoval</b> and all levels of caching are disabled. If the value of <b>DeviceHotplug</b> is zero, the removal policy is set to <b>ExpectOrderlyRemoval</b>, and caching might be selectively enabled.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

@@ -4,7 +4,6 @@ title: KsFreeDeviceHeader function (ks.h)
 description: The KsFreeDeviceHeader function cleans up and frees a previously allocated device header.
 old-location: stream\ksfreedeviceheader.htm
 tech.root: stream
-ms.assetid: b7e30dde-ace5-47f0-a1e8-b8337ada1550
 ms.date: 04/23/2018
 keywords: ["KsFreeDeviceHeader function"]
 ms.keywords: KsFreeDeviceHeader, KsFreeDeviceHeader function [Streaming Media Devices], ks/KsFreeDeviceHeader, ksfunc_25c133a5-3c21-476f-84f5-b208284d9234.xml, stream.ksfreedeviceheader
@@ -51,9 +50,9 @@ The <b>KsFreeDeviceHeader</b> function cleans up and frees a previously allocate
 
 ## -parameters
 
-### -param Header 
+### -param Header [in]
 
-[in]
+
 Indicates the device header to free that had been previously allocated by <b>KsAllocateDeviceHeader</b>.
 
 ## -returns

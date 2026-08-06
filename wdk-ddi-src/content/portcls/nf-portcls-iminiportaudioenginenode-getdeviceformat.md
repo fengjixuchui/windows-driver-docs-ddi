@@ -4,7 +4,6 @@ title: IMiniportAudioEngineNode::GetDeviceFormat (portcls.h)
 description: Gets the audio data format for an audio device.
 old-location: audio\iminiportaudioenginenode_getdeviceformat.htm
 tech.root: audio
-ms.assetid: 6EA01AE7-E5D5-4182-862D-2901185C2BF8
 ms.date: 05/08/2018
 keywords: ["IMiniportAudioEngineNode::GetDeviceFormat"]
 ms.keywords: GetDeviceFormat, GetDeviceFormat method [Audio Devices], GetDeviceFormat method [Audio Devices],IMiniportAudioEngineNode interface, IMiniportAudioEngineNode interface [Audio Devices],GetDeviceFormat method, IMiniportAudioEngineNode.GetDeviceFormat, IMiniportAudioEngineNode::GetDeviceFormat, audio.iminiportaudioenginenode_getdeviceformat, portcls/IMiniportAudioEngineNode::GetDeviceFormat
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IMiniportAudioEngineNode.GetDeviceFormat
+ - IMiniportAudioEngineNode::GetDeviceFormat
 ---
 
 # IMiniportAudioEngineNode::GetDeviceFormat
@@ -50,19 +49,19 @@ Gets the audio data format for an audio device.
 
 ## -parameters
 
-### -param ulNodeId 
+### -param ulNodeId [in]
 
-[in]
+
 The ID of the device node.
 
-### -param pFormat 
+### -param pFormat [out]
 
-[out]
+
 A structure of type  <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex">KSDATAFORMAT_WAVEFORMATEX</a> that represents the audio data format for the device.
 
-### -param ulBufferSize 
+### -param ulBufferSize [in]
 
-[in]
+
 The audio data buffer size.
 
 ## -returns
@@ -78,3 +77,4 @@ returns an appropriate error code.
 
 
 <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksdataformat_waveformatex">KSDATAFORMAT_WAVEFORMATEX</a>
+

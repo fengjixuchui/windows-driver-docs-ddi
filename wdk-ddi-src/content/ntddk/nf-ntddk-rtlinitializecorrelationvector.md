@@ -4,7 +4,6 @@ title: RtlInitializeCorrelationVector function (ntddk.h)
 description: Initializes the specified correlation vector with the supplied GUID.
 old-location: kernel\rtlinitializecorrelationvector.htm
 tech.root: kernel
-ms.assetid: ebf5ccbe-3325-4d3d-86c9-230776f2c9ef
 ms.date: 04/30/2018
 keywords: ["RtlInitializeCorrelationVector function"]
 ms.keywords: RtlInitializeCorrelationVector, RtlInitializeCorrelationVector function [Kernel-Mode Driver Architecture], kernel.rtlinitializecorrelationvector, ntddk/RtlInitializeCorrelationVector
@@ -52,14 +51,14 @@ api_name:
 
 ## -parameters
 
-### -param CorrelationVector 
+### -param CorrelationVector [in, out]
 
-[in, out]
+
 A pointer to a  <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-correlation_vector">CORRELATION_VECTOR</a> structure that represents the correlation vector to be initialized.
 
-### -param Version 
+### -param Version [in]
 
-[in]
+
 The version of the correlation vector. Possible values are: 
 
 <ul>
@@ -68,9 +67,9 @@ The version of the correlation vector. Possible values are:
 <li>RTL_CORRELATION_VECTOR_VERSION_CURRENT</li>
 </ul>
 
-### -param Guid 
+### -param Guid [in]
 
-[in]
+
 The GUID to initialize the correlation vector. The first 22 bytes
             of the correlation vector are a base64 representation of the GUID. This value must not be NULL.
 

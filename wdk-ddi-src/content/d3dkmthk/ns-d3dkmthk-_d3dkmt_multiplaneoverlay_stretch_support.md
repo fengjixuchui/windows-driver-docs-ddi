@@ -1,15 +1,12 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_MULTIPLANEOVERLAY_STRETCH_SUPPORT
-title: _D3DKMT_MULTIPLANEOVERLAY_STRETCH_SUPPORT (d3dkmthk.h)
-description: Used to indicate whether multiplane overlay stretch is supported.
-ms.assetid: e9822c31-3307-4913-b2ab-3eac835d6f1c
-ms.date: 10/19/2018
-keywords: ["D3DKMT_MULTIPLANEOVERLAY_STRETCH_SUPPORT structure"]
-ms.keywords: _D3DKMT_MULTIPLANEOVERLAY_STRETCH_SUPPORT, D3DKMT_MULTIPLANEOVERLAY_STRETCH_SUPPORT,
+title: D3DKMT_MULTIPLANEOVERLAY_STRETCH_SUPPORT (d3dkmthk.h)
+description: Learn more about the D3DKMT_MULTIPLANEOVERLAY_STRETCH_SUPPORT structure.
+ms.date: 02/06/2025
 req.header: d3dkmthk.h
 req.include-header: 
 req.target-type: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 10, version 1703 (WDDM 2.2)
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -35,16 +32,16 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_MULTIPLANEOVERLAY_STRETCH_SUPPORT
+ - D3DKMT_MULTIPLANEOVERLAY_STRETCH_SUPPORT
 dev_langs:
  - c++
 ---
 
-# _D3DKMT_MULTIPLANEOVERLAY_STRETCH_SUPPORT structure
-
+# D3DKMT_MULTIPLANEOVERLAY_STRETCH_SUPPORT structure
 
 ## -description
 
-Used to indicate whether multiplane overlay stretch is supported.
+The **D3DKMT_MULTIPLANEOVERLAY_STRETCH_SUPPORT** structure describes the driver's multiplane overlay stretch support.
 
 ## -struct-fields
 
@@ -54,14 +51,12 @@ The zero-based identification number of the video present source in a path of a 
 
 ### -field Update
 
-Indicates whether to update.
+Boolean value that indicates whether to update.
 
 ### -field Supported
 
- 
-Indicates whether multiplane overlay stretch is supported.
-
-## -remarks
+Boolean value that indicates whether multiplane overlay stretch is supported.
 
 ## -see-also
 
+[D3DKMTQueryAdapterInfo](nf-d3dkmthk-d3dkmtqueryadapterinfo.md)

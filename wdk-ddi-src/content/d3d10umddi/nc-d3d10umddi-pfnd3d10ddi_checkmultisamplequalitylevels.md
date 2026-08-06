@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_CHECKMULTISAMPLEQUALITYLEVELS
 title: PFND3D10DDI_CHECKMULTISAMPLEQUALITYLEVELS (d3d10umddi.h)
 description: The CheckMultisampleQualityLevels function retrieves the number of quality levels that the device supports for the specified number of samples.
 old-location: display\checkmultisamplequalitylevels.htm
-ms.assetid: 2b6a0ab8-f197-48c3-baf2-305b77b7e8b5
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_CHECKMULTISAMPLEQUALITYLEVELS callback function"]
 ms.keywords: CheckMultisampleQualityLevels, CheckMultisampleQualityLevels callback function [Display Devices], PFND3D10DDI_CHECKMULTISAMPLEQUALITYLEVELS, PFND3D10DDI_CHECKMULTISAMPLEQUALITYLEVELS callback, UserModeDisplayDriverDx10_Functions_d19bc4c0-49ba-4e1c-b19e-667905ceb391.xml, d3d10umddi/CheckMultisampleQualityLevels, display.checkmultisamplequalitylevels
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CheckMultisampleQualityLevels
-product:
- - Windows
+ - PFND3D10DDI_CHECKMULTISAMPLEQUALITYLEVELS
 ---
 
 # PFND3D10DDI_CHECKMULTISAMPLEQUALITYLEVELS callback function
@@ -52,25 +49,25 @@ The <b>CheckMultisampleQualityLevels</b> function retrieves the number of qualit
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *Format* [in]
 
 A DXGI_FORMAT-typed value that indicates the render-target format that the check is performed for.
 
-### -param Arg3
+### -param unnamedParam3
 
 *SampleCount* [in]
 
 The number of samples to retrieve the quality levels for.
 
-### -param Arg4
+### -param unnamedParam4
 
 *pNumQualityLevels* [out]
 
@@ -96,3 +93,4 @@ If the driver receives 0 or greater than 32 in <i>SampleCount</i>, the driver al
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

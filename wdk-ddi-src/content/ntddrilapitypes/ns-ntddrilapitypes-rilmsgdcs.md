@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILMSGDCS
 title: RILMSGDCS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILMSGDCS structure for internal use only. Don't use the RILMSGDCS structure in your code."
 old-location: netvista\rilmsgdcs.htm
 tech.root: netvista
-ms.assetid: b9d37683-fd3d-42fd-9ec2-128b76325868
 ms.date: 05/02/2018
 keywords: ["RILMSGDCS structure"]
 ms.keywords: "*LPRILMSGDCS, RILMSGDCS, RILMSGDCS structure [Network Drivers Starting with Windows Vista], netvista.rilmsgdcs, ntddrilapitypes/RILMSGDCS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILMSGDCS
+ - LPRILMSGDCS
 ---
 
 # RILMSGDCS structure (ntddrilapitypes.h)

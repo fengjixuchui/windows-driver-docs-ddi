@@ -1,12 +1,9 @@
 ---
 UID: NS:d3dkmddi._DXGK_MEMORYRANGE
-title: _DXGK_MEMORYRANGE (d3dkmddi.h)
-description: DXGK_MEMORYRANGE is used with DxgkDdiQueryAdapterInfo and DXGK_QUERYSEGMENTMEMORYSTATE to query bad graphics processing unit (GPU) memory ranges.
-old-location: display\dxgk_memoryrange.htm
-ms.assetid: 68B9465D-BA5E-4DE3-8A55-B344399FBB5F
-ms.date: 05/10/2018
+title: DXGK_MEMORYRANGE (d3dkmddi.h)
+description: Learn more about the _DXGK_MEMORYRANGE structure.
+ms.date: 03/28/2024
 keywords: ["DXGK_MEMORYRANGE structure"]
-ms.keywords: DXGK_MEMORYRANGE, DXGK_MEMORYRANGE structure [Display Devices], _DXGK_MEMORYRANGE, d3dkmddi/DXGK_MEMORYRANGE, display.dxgk_memoryrange
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
@@ -40,17 +37,15 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_MEMORYRANGE
  - DXGK_MEMORYRANGE
 ---
 
-# _DXGK_MEMORYRANGE structure
-
+# DXGK_MEMORYRANGE structure
 
 ## -description
 
-<b>DXGK_MEMORYRANGE</b> is used with <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo">DxgkDdiQueryAdapterInfo</a> and <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_querysegmentmemorystate">DXGK_QUERYSEGMENTMEMORYSTATE</a> to query bad graphics processing unit (GPU) memory ranges.
-
-The query is done during adapter object initialization. The driver will be called only if <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentdescriptor4">DXGK_SEGMENTDESCRIPTOR4</a>::<b>NumInvalidMemoryRanges</b> is not zero for a segment.
+A **DXGK_MEMORYRANGE** structure describes a range of memory.
 
 ## -struct-fields
 
@@ -60,16 +55,20 @@ The offset from the start of the segment in bytes. The value must be aligned to 
 
 ### -field SizeInBytes
 
-The number of byte in the range. The value must be multiple of the segment page size.
+The number of bytes in the range. The value must be a multiple of the segment page size.
+
+## -remarks
+
+One way that **DXGK_MEMORYRANGE** is used is with [**DxgkDdiQueryAdapterInfo**](nc-d3dkmddi-dxgkddi_queryadapterinfo.md) and [**DXGK_QUERYSEGMENTMEMORYSTATE**](ns-d3dkmddi-_dxgk_querysegmentmemorystate.md) to query bad GPU memory ranges. The query is done during adapter object initialization. The driver is called only if [**DXGK_SEGMENTDESCRIPTOR4**](ns-d3dkmddi-_dxgk_segmentdescriptor4.md)::**NumInvalidMemoryRanges** isn't zero for a segment.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_querysegmentmemorystate">DXGK_QUERYSEGMENTMEMORYSTATE</a>
+[**DXGK_QUERYSEGMENTMEMORYSTATE**](ns-d3dkmddi-_dxgk_querysegmentmemorystate.md)
 
+[**DXGK_SEGMENTDESCRIPTOR4**](ns-d3dkmddi-_dxgk_segmentdescriptor4.md)
 
+[**DXGKARG_CREATEMEMORYBASIS**](ns-d3dkmddi-dxgkarg_creatememorybasis.md)
 
-<a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentdescriptor4">DXGK_SEGMENTDESCRIPTOR4</a>
+[**DxgkDdiCreateMemoryBasis**](nc-d3dkmddi-dxgkddi_creatememorybasis.md)
 
-
-
-<a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo">DxgkDdiQueryAdapterInfo</a>
+[**DxgkDdiQueryAdapterInfo**](nc-d3dkmddi-dxgkddi_queryadapterinfo.md)

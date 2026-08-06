@@ -1,9 +1,8 @@
 ---
 UID: NS:ring._NET_RING
 title: _NET_RING (ring.h)
-description: Specifies a buffer comprised of one or more NET_PACKET or NET_FRAGMENT structures.
+description: The _NET_RING structure specifies a buffer comprised of one or more NET_PACKET or NET_FRAGMENT structures.
 tech.root: netvista
-ms.assetid: 66232a58-73fc-4f3a-9682-0dd9f10dc901
 ms.date: 09/25/2019
 keywords: ["NET_RING structure"]
 ms.keywords: _NET_RING, NET_RING, *PNET_RING,
@@ -13,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.29
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -28,13 +27,14 @@ f1_keywords:
  - ring/_NET_RING
  - NET_RING
  - ring/NET_RING
-topictype:
+topic_type:
  - apiref
-apitype:
+api_type:
  - HeaderDef
-apilocation:
+api_location:
  - ring.h
-apiname:
+api_name:
+ - _NET_RING
  - NET_RING
 ---
 
@@ -104,3 +104,4 @@ For more info about packet and fragment ring buffers, see [Packet descriptors an
 For more info about using net rings, see [Introduction to net rings](/windows-hardware/drivers/netcx/introduction-to-net-rings).
 
 ## -see-also
+

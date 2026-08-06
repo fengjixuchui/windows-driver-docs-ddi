@@ -4,7 +4,6 @@ title: _WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS (ntddk.h)
 description: The WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union describes which members of a WHEA_PROCESSOR_GENERIC_ERROR_SECTION structure contain valid data.
 old-location: whea\whea_processor_generic_error_section_validbits.htm
 tech.root: whea
-ms.assetid: f7173767-a177-4a79-917b-41acc9eff758
 ms.date: 02/20/2018
 keywords: ["WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS structure"]
 ms.keywords: "*PWHEA_GENERIC_PROCESSOR_ERROR_VALIDBITS, *PWHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, PWHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, PWHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union pointer [WHEA Drivers and Applications], WHEA_GENERIC_PROCESSOR_ERROR_VALIDBITS, WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union [WHEA Drivers and Applications], _WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, ntddk/PWHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, ntddk/WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, whea.whea_processor_generic_error_section_validbits, whearef_83372975-ce45-44e7-be0a-85f3394528b3.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS
+ - PWHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS
  - WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS
 ---
 
@@ -116,6 +117,8 @@ Reserved for system use.
 
 A ULONGLONG representation of the contents of the WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union.
 
+### -field DUMMYSTRUCTNAME.NativeModelId
+
 ## -remarks
 
 A WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union is contained within the <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_processor_generic_error_section">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure.
@@ -123,3 +126,4 @@ A WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union is contained within the <
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_processor_generic_error_section">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a>
+

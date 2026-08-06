@@ -4,7 +4,6 @@ title: RtlStringCbCopyA function (ntstrsafe.h)
 description: The RtlStringCbCopyW and RtlStringCbCopyA functions copy a byte-counted string into a buffer.
 old-location: kernel\rtlstringcbcopy.htm
 tech.root: kernel
-ms.assetid: 77a42d5e-92ff-4e64-9bd3-b713286d3db0
 ms.date: 04/30/2018
 keywords: ["RtlStringCbCopyA function"]
 ms.keywords: RtlStringCbCopy, RtlStringCbCopyA, RtlStringCbCopyW, RtlStringCbCopyW function [Kernel-Mode Driver Architecture], kernel.rtlstringcbcopy, ntstrsafe/RtlStringCbCopyA, ntstrsafe/RtlStringCbCopyW, safestrings_a9c53388-15ef-4140-8931-ca93d519a7d4.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -39,9 +38,7 @@ api_location:
  - Ntstrsafe.lib
  - Ntstrsafe.dll
 api_name:
- - RtlStringCbCopyW
  - RtlStringCbCopyA
- - RtlStringCbCopyW
 ---
 
 # RtlStringCbCopyA function
@@ -53,23 +50,23 @@ The <b>RtlStringCbCopyW</b> and <b>RtlStringCbCopyA</b> functions copy a byte-co
 
 ## -parameters
 
-### -param pszDest 
+### -param pszDest [out]
 
-[out]
+
 A pointer to a caller-supplied buffer that receives the copied string. The string at <i>pszSrc</i> is copied to the buffer at <i>pszDest</i> and terminated with a null character.
 
-### -param cbDest 
+### -param cbDest [in]
 
-[in]
+
 The size, in bytes, of the destination buffer. The buffer must be large enough for the string and the terminating null character.
 
 For Unicode strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * sizeof(WCHAR). 
 
 For ANSI strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * sizeof(char).
 
-### -param pszSrc 
+### -param pszSrc [in]
 
-[in]
+
 A pointer to a caller-supplied, null-terminated string.
 
 ## -returns
@@ -194,3 +191,4 @@ For more information about the safe string functions, see <a href="/windows-hard
 
 
 <a href="/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcchcopya">RtlStringCchCopy</a>
+

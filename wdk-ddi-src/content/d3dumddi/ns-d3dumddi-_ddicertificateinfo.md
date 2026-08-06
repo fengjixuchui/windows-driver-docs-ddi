@@ -4,7 +4,6 @@ title: _DDICERTIFICATEINFO (d3dumddi.h)
 description: The DDICERTIFICATEINFO structure describes information about the certificate that the driver uses.
 old-location: display\ddicertificateinfo.htm
 tech.root: display
-ms.assetid: 205936c3-fb5a-48e7-8f13-328563c2f0d2
 ms.date: 05/10/2018
 keywords: ["DDICERTIFICATEINFO structure"]
 ms.keywords: D3D_other_Structs_99ca6ef3-fba8-4f57-b0bf-16be3c4f8a77.xml, DDICERTIFICATEINFO, DDICERTIFICATEINFO structure [Display Devices], _DDICERTIFICATEINFO, d3dumddi/DDICERTIFICATEINFO, display.ddicertificateinfo
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DDICERTIFICATEINFO
  - DDICERTIFICATEINFO
 ---
 
@@ -52,17 +52,17 @@ The DDICERTIFICATEINFO structure describes information about the certificate tha
 
 ## -struct-fields
 
-### -field CertificateType
+### -field CertificateType [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_d3dddi_certificatetype">D3DDDI_CERTIFICATETYPE</a>-typed value that indicates the certificate type.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_d3dddi_certificatetype">D3DDDI_CERTIFICATETYPE</a>-typed value that indicates the certificate type.
 
-### -field ChannelType
+### -field ChannelType [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_ddiauthenticatedchanneltype">DDIAUTHENTICATEDCHANNELTYPE</a>-typed value that indicates the authenticated-channel type.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_ddiauthenticatedchanneltype">DDIAUTHENTICATEDCHANNELTYPE</a>-typed value that indicates the authenticated-channel type.
 
-### -field CryptoSessionType
+### -field CryptoSessionType [in]
 
-[in] A GUID that indicates the encryption session.
+A GUID that indicates the encryption session.
 
 ## -remarks
 
@@ -83,3 +83,4 @@ The runtime specifies a pointer to a DDICERTIFICATEINFO structure in the <b>pInf
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps">GetCaps</a>
+

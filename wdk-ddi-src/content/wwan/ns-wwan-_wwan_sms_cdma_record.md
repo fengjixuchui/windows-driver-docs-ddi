@@ -4,7 +4,6 @@ title: _WWAN_SMS_CDMA_RECORD (wwan.h)
 description: The WWAN_SMS_CDMA_RECORD structure represents CDMA-based SMS text message records.
 old-location: netvista\wwan_sms_cdma_record.htm
 tech.root: netvista
-ms.assetid: 4138be92-1f54-4478-8fbb-951f1d06cb66
 ms.date: 05/02/2018
 keywords: ["WWAN_SMS_CDMA_RECORD structure"]
 ms.keywords: "*PWWAN_SMS_CDMA_RECORD, PWWAN_SMS_CDMA_RECORD, PWWAN_SMS_CDMA_RECORD structure pointer [Network Drivers Starting with Windows Vista], WWAN_SMS_CDMA_RECORD, WWAN_SMS_CDMA_RECORD structure [Network Drivers Starting with Windows Vista], WwanRef_3356fcf9-99f2-4c07-89d5-fa73019f9a27.xml, _WWAN_SMS_CDMA_RECORD, netvista.wwan_sms_cdma_record, wwan/PWWAN_SMS_CDMA_RECORD, wwan/WWAN_SMS_CDMA_RECORD"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_SMS_CDMA_RECORD
+ - PWWAN_SMS_CDMA_RECORD
  - WWAN_SMS_CDMA_RECORD
 ---
 
@@ -73,16 +74,10 @@ A NULL-terminated string with a maximum length of 15 digits that represents a mo
      number can be in any of the following formats:
      
 
-<ul>
-<li>
-"+ <International Country Code> <Mobile Number>\0"
 
-</li>
-<li>
-"<Mobile Number>\0"
+* "+ \0"
+* "\0"
 
-</li>
-</ul>
 If 
      <b>MsgStatus</b> is 
      <b>WwanMsgStatusDraft</b> or 
@@ -178,3 +173,4 @@ The encoded content of the record that represents the SMS text message.
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ne-wwan-_wwan_sms_cdma_lang">WWAN_SMS_CDMA_LANG</a>
+

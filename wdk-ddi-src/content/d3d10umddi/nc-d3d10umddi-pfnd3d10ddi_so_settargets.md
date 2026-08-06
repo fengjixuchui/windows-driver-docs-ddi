@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_SO_SETTARGETS
 title: PFND3D10DDI_SO_SETTARGETS (d3d10umddi.h)
 description: The SoSetTargets function sets stream output target resources.
 old-location: display\sosettargets.htm
-ms.assetid: 96f1c439-7323-456e-8c9c-793d8e0973d9
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_SO_SETTARGETS callback function"]
 ms.keywords: PFND3D10DDI_SO_SETTARGETS, PFND3D10DDI_SO_SETTARGETS callback, SoSetTargets, SoSetTargets callback function [Display Devices], UserModeDisplayDriverDx10_Functions_02cc8776-273f-4442-93da-34c2df9746ee.xml, d3d10umddi/SoSetTargets, display.sosettargets
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - SoSetTargets
+ - PFND3D10DDI_SO_SETTARGETS
 ---
 
 # PFND3D10DDI_SO_SETTARGETS callback function
@@ -50,30 +49,30 @@ The <i>SoSetTargets</i> function sets stream output target resources.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param NumBuffers
+### -param NumBuffers [in]
 
-[in] The number of elements in the array that <i>phResource</i> specifies.
+The number of elements in the array that <i>phResource</i> specifies.
 
-### -param ClearTargets 
+### -param ClearTargets [in]
 
-[in]
+
 The number of handles to stream output target resources that represents the difference between the previous number of stream output target resources (before the Microsoft Direct3D runtime calls <i>SoSetTargets</i>) and the new number of stream output target resources.
 
 Note that the number that i<i>ClearTargets</i> specifies is only an optimization aid because the user-mode display driver could calculate this number.
 
-### -param Arg4
+### -param unnamedParam4
 
 *phResource* [in]
 
 An array of handles to the stream output target resources to set. Note that some handle values can be <b>NULL</b>.
 
-### -param Arg5
+### -param unnamedParam5
 
 *pOffsets* [in]
 
@@ -96,3 +95,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

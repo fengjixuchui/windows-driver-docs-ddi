@@ -4,7 +4,6 @@ title: _NDIS_RECEIVE_SCALE_PARAMETERS_V2 (ntddndis.h)
 description: The NDIS_RECEIVE_SCALE_PARAMETERS_V2 structure specifies the Receive Side Scaling (RSS) parameters for a miniport adapter that advertises support for RSS Version 2 (RSSv2). It is used in the OID_GEN_RECEIVE_SCALE_PARAMETERS_V2 RSSv2 OID.
 old-location: netvista\ndis_receive_scale_parameters_v2.htm
 tech.root: netvista
-ms.assetid: 96EAB6EE-BF9A-46AD-8DED-5D9BD2B6F219
 ms.date: 05/02/2018
 keywords: ["NDIS_RECEIVE_SCALE_PARAMETERS_V2 structure"]
 ms.keywords: "*PNDIS_RECEIVE_SCALE_PARAMETERS_V2, NDIS_RECEIVE_SCALE_PARAMETERS_V2, NDIS_RECEIVE_SCALE_PARAMETERS_V2 structure [Network Drivers Starting with Windows Vista], NDIS_RECEIVE_SCALE_PARAM_ENABLE_RSS, NDIS_RECEIVE_SCALE_PARAM_HASH_INFO_CHANGED, NDIS_RECEIVE_SCALE_PARAM_HASH_KEY_CHANGED, NDIS_RECEIVE_SCALE_PARAM_NUMBER_OF_ENTRIES_CHANGED, NDIS_RECEIVE_SCALE_PARAM_NUMBER_OF_QUEUES_CHANGED, PNDIS_RECEIVE_SCALE_PARAMETERS_V2, PNDIS_RECEIVE_SCALE_PARAMETERS_V2 structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_SCALE_PARAMETERS_V2, netvista.ndis_receive_scale_parameters_v2, ntddndis/NDIS_RECEIVE_SCALE_PARAMETERS_V2, ntddndis/PNDIS_RECEIVE_SCALE_PARAMETERS_V2"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_RECEIVE_SCALE_PARAMETERS_V2
+ - PNDIS_RECEIVE_SCALE_PARAMETERS_V2
  - NDIS_RECEIVE_SCALE_PARAMETERS_V2
 ---
 
@@ -62,7 +63,7 @@ The **NDIS_RECEIVE_SCALE_PARAMETERS_V2** structure specifies the Receive Side Sc
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_RECEIVE_SCALE_PARAMETERS_V2</b> structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_RSS_PARAMETERS_V2</b>. 
@@ -187,7 +188,7 @@ New values for this parameter are also a power of two and do exceed adapter capa
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -212,3 +213,4 @@ New values for this parameter are also a power of two and do exceed adapter capa
 
 
 <a href="/windows-hardware/drivers/network/receive-side-scaling-version-2-rssv2-">RSS Version 2 (RSSv2)</a>
+

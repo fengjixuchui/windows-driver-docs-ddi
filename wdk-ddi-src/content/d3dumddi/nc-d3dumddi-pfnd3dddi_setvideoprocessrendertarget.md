@@ -4,7 +4,6 @@ title: PFND3DDDI_SETVIDEOPROCESSRENDERTARGET (d3dumddi.h)
 description: The SetVideoProcessRenderTarget function sets the render target surface that is used for video processing.
 old-location: display\setvideoprocessrendertarget.htm
 tech.root: display
-ms.assetid: 8aa7e23e-f52e-4252-9f22-56ce523f6cba
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETVIDEOPROCESSRENDERTARGET callback function"]
 ms.keywords: PFND3DDDI_SETVIDEOPROCESSRENDERTARGET, PFND3DDDI_SETVIDEOPROCESSRENDERTARGET callback, SetVideoProcessRenderTarget, SetVideoProcessRenderTarget callback function [Display Devices], UserModeDisplayDriver_Functions_8ce2d981-2c69-45e9-a2e2-eba9026be1a0.xml, d3dumddi/SetVideoProcessRenderTarget, display.setvideoprocessrendertarget
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - SetVideoProcessRenderTarget
-product:
- - Windows
+ - PFND3DDDI_SETVIDEOPROCESSRENDERTARGET
 ---
 
 # PFND3DDDI_SETVIDEOPROCESSRENDERTARGET callback function
@@ -56,7 +53,7 @@ The <i>SetVideoProcessRenderTarget</i> function sets the render target surface t
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -88,3 +85,4 @@ All video processing render targets are created by setting the <a href="/windows
 
 
 <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_resourceflags">D3DDDI_RESOURCEFLAGS</a>
+

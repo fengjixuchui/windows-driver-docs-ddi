@@ -2,7 +2,6 @@
 UID: NS:d3dumddi._D3DDDICB_SUBMITPRESENTBLTTOHWQUEUE
 title: _D3DDDICB_SUBMITPRESENTBLTTOHWQUEUE (d3dumddi.h)
 description: A structure that contains information to present Blt to the hardware queue.
-ms.assetid: 6c2eda0a-e6df-4467-bbd8-dd55acdb457e
 ms.date: 10/19/2018
 keywords: ["D3DDDICB_SUBMITPRESENTBLTTOHWQUEUE structure"]
 ms.keywords: _D3DDDICB_SUBMITPRESENTBLTTOHWQUEUE, D3DDDICB_SUBMITPRESENTBLTTOHWQUEUE,
@@ -34,8 +33,7 @@ api_location:
  - d3dumddi.h
 api_name:
  - _D3DDDICB_SUBMITPRESENTBLTTOHWQUEUE
-product:
- - Windows
+ - D3DDDICB_SUBMITPRESENTBLTTOHWQUEUE
 ---
 
 # _D3DDDICB_SUBMITPRESENTBLTTOHWQUEUE structure
@@ -47,17 +45,17 @@ A structure that contains information to present Blt to the hardware queue.
 
 ## -struct-fields
 
-### -field hSrcAllocation
+### -field hSrcAllocation [in]
 
-[in] The allocation of which content will be presented.
+The allocation of which content will be presented.
 
-### -field hDstAllocation
+### -field hDstAllocation [in]
 
-[in] The destination allocation of the present, if non-zero.
+The destination allocation of the present, if non-zero.
 
-### -field hHwQueue
+### -field hHwQueue [in]
 
-[in] Hardware queue being submitted to.
+Hardware queue being submitted to.
 
 ### -field HwQueueProgressFenceId
 

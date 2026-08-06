@@ -4,7 +4,6 @@ title: KeRemoveEntryDeviceQueue function (wdm.h)
 description: The KeRemoveEntryDeviceQueue routine returns whether the specified entry is in the device queue and removes it, if it was queued, from the device queue.
 old-location: kernel\keremoveentrydevicequeue.htm
 tech.root: kernel
-ms.assetid: 2dc32517-3730-4a1c-a59a-f5036d6f54ef
 ms.date: 04/30/2018
 keywords: ["KeRemoveEntryDeviceQueue function"]
 ms.keywords: KeRemoveEntryDeviceQueue, KeRemoveEntryDeviceQueue routine [Kernel-Mode Driver Architecture], k105_351b5540-c341-46d1-b2da-1ea88f78b7b2.xml, kernel.keremoveentrydevicequeue, wdm/KeRemoveEntryDeviceQueue
@@ -50,14 +49,14 @@ The <b>KeRemoveEntryDeviceQueue</b> routine returns whether the specified entry 
 
 ## -parameters
 
-### -param DeviceQueue 
+### -param DeviceQueue [in, out]
 
-[in, out]
+
 Pointer to an initialized device queue object for which the caller provides the storage.
 
-### -param DeviceQueueEntry 
+### -param DeviceQueueEntry [in, out]
 
-[in, out]
+
 Pointer to the entry to be removed from the specified <i>DeviceQueue</i>.
 
 ## -returns

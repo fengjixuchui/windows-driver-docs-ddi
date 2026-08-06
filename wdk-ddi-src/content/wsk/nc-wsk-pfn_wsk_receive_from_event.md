@@ -4,7 +4,6 @@ title: PFN_WSK_RECEIVE_FROM_EVENT (wsk.h)
 description: The WskReceiveFromEvent event callback function notifies a WSK application that one or more datagrams have been received on a datagram socket.
 old-location: netvista\wskreceivefromevent.htm
 tech.root: netvista
-ms.assetid: 1cdb8a70-54fe-44a6-a16c-71cbf6a49ef2
 ms.date: 05/02/2018
 keywords: ["PFN_WSK_RECEIVE_FROM_EVENT callback function"]
 ms.keywords: PFN_WSK_RECEIVE_FROM_EVENT, PFN_WSK_RECEIVE_FROM_EVENT callback, WskReceiveFromEvent, WskReceiveFromEvent callback function [Network Drivers Starting with Windows Vista], netvista.wskreceivefromevent, wsk/WskReceiveFromEvent, wskref_c8523644-4a5e-4b0f-b8ef-b6a4fd081868.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wsk.h
 api_name:
- - WskReceiveFromEvent
+ - PFN_WSK_RECEIVE_FROM_EVENT
 ---
 
 # PFN_WSK_RECEIVE_FROM_EVENT callback function
@@ -52,17 +51,17 @@ The
 
 ## -parameters
 
-### -param SocketContext 
+### -param SocketContext [in, optional]
 
-[in, optional]
+
 A pointer to the socket context for the datagram socket that has received the datagrams. The WSK
      application provided this pointer to the WSK subsystem when it called the 
      <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket">WskSocket</a> function to create the datagram
      socket.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A ULONG value that contains a bitwise OR of a combination of the following flags:
      
 
@@ -91,9 +90,9 @@ The WSK subsystem called the
        the WSK subsystem might have called the 
        <i>WskReceiveFromEvent</i> event callback function at any IRQL <= DISPATCH_LEVEL.
 
-### -param DataIndication 
+### -param DataIndication [in, optional]
 
-[in, optional]
+
 A pointer to a linked list of 
      <a href="/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_datagram_indication">WSK_DATAGRAM_INDICATION</a> structures
      that describe the received datagrams. If this parameter is <b>NULL</b>, the socket is no longer functional and
@@ -255,3 +254,4 @@ A WSK application's <i>WskReceiveFromEvent</i> event callback function must not 
 
 
 <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket">WskSocket</a>
+

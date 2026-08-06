@@ -4,7 +4,6 @@ title: PFND3DDDI_SETCONVOLUTIONKERNELMONO (d3dumddi.h)
 description: The SetConvolutionKernelMono function defines the resolution and weights of the kernel filter, which is used when the D3DTEXF_CONVOLUTIONMONO texture filtering mode is set.
 old-location: display\setconvolutionkernelmono.htm
 tech.root: display
-ms.assetid: b560352f-ca4e-4f03-88ac-13ec080834aa
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETCONVOLUTIONKERNELMONO callback function"]
 ms.keywords: PFND3DDDI_SETCONVOLUTIONKERNELMONO, PFND3DDDI_SETCONVOLUTIONKERNELMONO callback, SetConvolutionKernelMono, SetConvolutionKernelMono callback function [Display Devices], UserModeDisplayDriver_Functions_488a5fdd-562a-475b-a86d-23d05f35c6dc.xml, d3dumddi/SetConvolutionKernelMono, display.setconvolutionkernelmono
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - SetConvolutionKernelMono
-product:
- - Windows
+ - PFND3DDDI_SETCONVOLUTIONKERNELMONO
 ---
 
 # PFND3DDDI_SETCONVOLUTIONKERNELMONO callback function
@@ -56,7 +53,7 @@ The <i>SetConvolutionKernelMono</i> function defines the resolution and weights 
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -110,3 +107,4 @@ alpha = V<sub>f</sub> - truncate(V<sub>f</sub>)
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

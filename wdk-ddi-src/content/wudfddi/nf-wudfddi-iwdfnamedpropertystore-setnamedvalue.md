@@ -4,7 +4,6 @@ title: IWDFNamedPropertyStore::SetNamedValue (wudfddi.h)
 description: The SetNamedValue method sets the value of a property.
 old-location: wdf\iwdfnamedpropertystore_setnamedvalue.htm
 tech.root: wdf
-ms.assetid: 1fd075c9-7d0e-4670-bac0-b7b8ba0a714f
 ms.date: 02/26/2018
 keywords: ["IWDFNamedPropertyStore::SetNamedValue"]
 ms.keywords: IWDFNamedPropertyStore interface,SetNamedValue method, IWDFNamedPropertyStore.SetNamedValue, IWDFNamedPropertyStore::SetNamedValue, SetNamedValue, SetNamedValue method, SetNamedValue method,IWDFNamedPropertyStore interface, UMDFPropertyStoreObjectRef_00f9168d-5017-4b48-929c-fc9acfee5d24.xml, umdf.iwdfnamedpropertystore_setnamedvalue, wdf.iwdfnamedpropertystore_setnamedvalue, wudfddi/IWDFNamedPropertyStore::SetNamedValue
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFNamedPropertyStore.SetNamedValue
+ - IWDFNamedPropertyStore::SetNamedValue
 ---
 
 # IWDFNamedPropertyStore::SetNamedValue
@@ -52,14 +51,14 @@ The <b>SetNamedValue</b> method sets the value of a property.
 
 ## -parameters
 
-### -param pszName 
+### -param pszName [in]
 
-[in]
+
 A pointer to a null-terminated string that contains the name of the property.
 
-### -param pv 
+### -param pv [in]
 
-[in]
+
 A pointer to the value that the property is set to.
 
 ## -returns
@@ -171,3 +170,4 @@ For more information, see <a href="/windows-hardware/drivers/wdf/using-the-regis
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfnamedpropertystore">IWDFNamedPropertyStore</a>
+

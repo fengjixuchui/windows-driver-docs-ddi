@@ -4,7 +4,6 @@ title: NdisFOidRequestComplete function (ndis.h)
 description: Filter drivers call the NdisFOidRequestComplete function to return the final status of an OID request for which the driver's FilterOidRequest function returned NDIS_STATUS_PENDING.
 old-location: netvista\ndisfoidrequestcomplete.htm
 tech.root: netvista
-ms.assetid: 1d72e8e3-1053-4731-a16c-fc3e4f7460e9
 ms.date: 05/02/2018
 keywords: ["NdisFOidRequestComplete function"]
 ms.keywords: NdisFOidRequestComplete, NdisFOidRequestComplete function [Network Drivers Starting with Windows Vista], ndis/NdisFOidRequestComplete, ndis_request_ref_df2bb357-d053-4f02-a828-46a72dc1fee7.xml, netvista.ndisfoidrequestcomplete
@@ -54,24 +53,24 @@ Filter drivers call the
 
 ## -parameters
 
-### -param NdisFilterHandle 
+### -param NdisFilterHandle [in]
 
-[in]
+
 The NDIS handle that identifies this filter module. NDIS passed the handle to the filter driver in
      a call to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach">FilterAttach</a> function.
 
-### -param OidRequest 
+### -param OidRequest [in]
 
-[in]
+
 A pointer to a buffer formatted as an 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure. The filter
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure. The filter
      driver obtained this pointer as an input parameter to its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_oid_request">FilterOidRequest</a> function.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 The final status of the request operation, either NDIS_STATUS_SUCCESS or any driver-determined
      NDIS_STATUS_<i>XXX</i> value except NDIS_STATUS_PENDING.
 
@@ -96,4 +95,4 @@ If an overlying driver originated the OID request, NDIS calls the request comple
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>

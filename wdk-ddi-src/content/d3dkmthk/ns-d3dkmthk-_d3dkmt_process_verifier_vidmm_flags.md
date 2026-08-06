@@ -1,9 +1,8 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_PROCESS_VERIFIER_VIDMM_FLAGS
-title: _D3DKMT_PROCESS_VERIFIER_VIDMM_FLAGS (d3dkmthk.h)
-description: The process verifier video memory management flags.
-ms.assetid: 335545ed-2804-49fa-8373-f7ab3afa7e62
-ms.date: 10/19/2018
+title: D3DKMT_PROCESS_VERIFIER_VIDMM_FLAGS (d3dkmthk.h)
+description: Learn more about the D3DKMT_PROCESS_VERIFIER_VIDMM_FLAGS structure.
+ms.date: 04/10/2024
 keywords: ["D3DKMT_PROCESS_VERIFIER_VIDMM_FLAGS structure"]
 ms.keywords: _D3DKMT_PROCESS_VERIFIER_VIDMM_FLAGS, D3DKMT_PROCESS_VERIFIER_VIDMM_FLAGS,
 req.header: d3dkmthk.h
@@ -35,12 +34,12 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_PROCESS_VERIFIER_VIDMM_FLAGS
+ - D3DKMT_PROCESS_VERIFIER_VIDMM_FLAGS
 dev_langs:
  - c++
 ---
 
-# _D3DKMT_PROCESS_VERIFIER_VIDMM_FLAGS structure
-
+# D3DKMT_PROCESS_VERIFIER_VIDMM_FLAGS structure
 
 ## -description
 
@@ -59,6 +58,10 @@ Flag to never defer evictions.
 ### -field AlwaysFailCommitOnReclaim
 
 Flag to always fail commit on reclaim.
+
+### -field AlwaysPlaceInDemotedLocation
+
+Flag to always place in a demoted location.
 
 ### -field Reserved
 

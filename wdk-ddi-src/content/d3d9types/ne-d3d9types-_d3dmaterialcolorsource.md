@@ -1,9 +1,9 @@
 ---
 UID: NE:d3d9types._D3DMATERIALCOLORSOURCE
 title: _D3DMATERIALCOLORSOURCE (d3d9types.h)
-description: 
-ms.assetid: 46d90afd-3ec6-41b8-aae6-f8b9daddd121
+description: "Learn more about: _D3DMATERIALCOLORSOURCE enumeration"
 ms.date: 10/19/2018
+tech.root: display
 keywords: ["D3DMATERIALCOLORSOURCE enumeration"]
 ms.keywords: _D3DMATERIALCOLORSOURCE, D3DMATERIALCOLORSOURCE,
 req.header: d3d9types.h
@@ -31,6 +31,7 @@ api_location:
  - d3d9types.h
 api_name:
  - _D3DMATERIALCOLORSOURCE
+ - D3DMATERIALCOLORSOURCE
 dev_langs:
  - c++
 ---

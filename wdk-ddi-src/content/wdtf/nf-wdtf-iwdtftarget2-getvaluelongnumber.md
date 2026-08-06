@@ -4,7 +4,6 @@ title: IWDTFTarget2::GetValueLongNumber (wdtf.h)
 description: Returns a long number value from the target that is associated with a specified attribute.
 old-location: dtf\iwdtftarget2_getvaluelongnumber.htm
 tech.root: dtf
-ms.assetid: 9336d850-1d42-47e5-9a69-f15e1147a71f
 ms.date: 04/04/2018
 keywords: ["IWDTFTarget2::GetValueLongNumber"]
 ms.keywords: GetValueLongNumber, GetValueLongNumber method [Windows Device Testing Framework], GetValueLongNumber method [Windows Device Testing Framework],IWDTFTarget2 interface, IWDTFTarget2 interface [Windows Device Testing Framework],GetValueLongNumber method, IWDTFTarget2.GetValueLongNumber, IWDTFTarget2::GetValueLongNumber, Microsoft.WDTF.IWDTFTarget2.GetValueLongNumber, Microsoft::WDTF::IWDTFTarget2::GetValueLongNumber, dtf.iwdtftarget2_getvaluelongnumber, wdtf/IWDTFTarget2::GetValueLongNumber
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFTarget2.GetValueLongNumber
+ - IWDTFTarget2::GetValueLongNumber
 ---
 
 # IWDTFTarget2::GetValueLongNumber
@@ -50,14 +49,14 @@ Returns a long number value from the target that is associated with a specified 
 
 ## -parameters
 
-### -param SDEL 
+### -param SDEL [in]
 
-[in]
+
 An SDEL statement that specifies the attribute value to retrieve.
 
-### -param pValue 
+### -param pValue [out, retval]
 
-[out, retval]
+
 The address of a variable that receives the result of this method.
 
 ## -returns
@@ -75,3 +74,4 @@ to work properly.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftarget2">IWDTFTarget2</a>
+

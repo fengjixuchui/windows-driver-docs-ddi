@@ -1,11 +1,9 @@
 ---
-UID: NS:wdm.__unnamed_struct_2
+UID: NS:wdm.BATTERY_REPORTING_SCALE
 title: BATTERY_REPORTING_SCALE (wdm.h)
-description: Battery miniclass drivers fill in this structure in response to certain BatteryMiniQueryInformation requests.
-old-location: battery\battery_reporting_scale.htm
+description: Battery miniclass drivers fill in the BATTERY_REPORTING_SCALE (wdm.h) structure in response to certain BatteryMiniQueryInformation requests.
 tech.root: battery
-ms.assetid: aea1d82d-39b8-4535-a5c3-fb987be1e43c
-ms.date: 02/15/2018
+ms.date: 02/21/2023
 keywords: ["BATTERY_REPORTING_SCALE structure"]
 ms.keywords: "*PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE structure [Battery Devices], PBATTERY_REPORTING_SCALE, PBATTERY_REPORTING_SCALE structure pointer [Battery Devices], bat-struct_6ecc4955-56b0-4c92-9ce2-46bcd7d6b273.xml, battery.battery_reporting_scale, ntpoapi/BATTERY_REPORTING_SCALE, ntpoapi/PBATTERY_REPORTING_SCALE"
 req.header: wdm.h
@@ -27,7 +25,6 @@ req.dll:
 req.irql: PASSIVE_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
-req.product: Windows 10 or later.
 f1_keywords:
  - PBATTERY_REPORTING_SCALE
  - wdm/PBATTERY_REPORTING_SCALE
@@ -41,35 +38,24 @@ api_type:
 api_location:
  - ntpoapi.h
 api_name:
+ - PBATTERY_REPORTING_SCALE
  - BATTERY_REPORTING_SCALE
 ---
 
-# BATTERY_REPORTING_SCALE structure
-
-
 ## -description
 
-Battery miniclass drivers fill in this structure in response to certain <a href="/windows/win32/api/batclass/nc-batclass-bclass_query_information_callback">BatteryMiniQueryInformation</a> requests.
+Battery miniclass drivers fill in this structure in response to certain [BatteryMiniQueryInformation](/windows/win32/api/batclass/nc-batclass-bclass_query_information_callback) requests.
 
 ## -struct-fields
 
 ### -field Granularity
 
-Specify the granularity of the <b>Capacity</b> value, in milliwatt-hours. For most batteries, this value describes a monotonically increasing scale of capacity. For lithium-ion batteries, this value describes one of two possible scales: a gross measure of battery capacity, with a large granularity, or a finer measure as the capacity approaches zero.
+Specify the granularity of the **Capacity** value, in milliwatt-hours. For most batteries, this value describes a monotonically increasing scale of capacity. For lithium-ion batteries, this value describes one of two possible scales: a gross measure of battery capacity, with a large granularity, or a finer measure as the capacity approaches zero.
 
 ### -field Capacity
 
 Specify the battery capacity described by the corresponding granularity, in milliwatt-hours.
 
-## -syntax
-
-```cpp
-typedef struct {
-  ULONG Granularity;
-  ULONG Capacity;
-} BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE;
-```
-
 ## -see-also
 
-<a href="/windows/win32/api/batclass/nc-batclass-bclass_query_information_callback">BatteryMiniQueryInformation</a>
+[BatteryMiniQueryInformation](/windows/win32/api/batclass/nc-batclass-bclass_query_information_callback)

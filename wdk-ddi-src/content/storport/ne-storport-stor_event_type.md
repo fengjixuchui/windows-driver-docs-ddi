@@ -3,9 +3,7 @@ UID: NE:storport._STOR_EVENT_TYPE
 title: STOR_EVENT_TYPE
 description: The STOR_EVENT_TYPE enum identifies the type of event object initialized by a miniport.
 tech.root: storage
-ms.assetid: f9733b74-5773-4d29-b488-656064403e6a
 ms.date: 03/24/2020
-ms.topic: enum
 ms.keywords: STOR_EVENT_TYPE, STOR_EVENT_TYPE, *PSTOR_EVENT_TYPE,
 req.header: storport.h
 req.include-header: 
@@ -32,12 +30,13 @@ api_type:
 api_location:
  - storport.h
 api_name:
+ - _STOR_EVENT_TYPE
+ - PSTOR_EVENT_TYPE
  - STOR_EVENT_TYPE
-product:
- - Windows
 ---
 
 # STOR_EVENT_TYPE enumeration
+
 
 ## -description
 
@@ -60,3 +59,4 @@ A miniport initializes an event object by calling [**StorPortInitializeEvent**](
 ## -see-also
 
 [**StorPortInitializeEvent**](nf-storport-storportinitializeevent.md)
+

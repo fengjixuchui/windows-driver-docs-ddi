@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILRADIOSTATEGROUP
 title: RILRADIOSTATEGROUP (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILRADIOSTATEGROUP structure for internal use only."
 old-location: netvista\rilradiostategroup.htm
 tech.root: netvista
-ms.assetid: e3ad8454-0e23-48fd-a6ef-c9257dc4816d
 ms.date: 05/02/2018
 keywords: ["RILRADIOSTATEGROUP structure"]
 ms.keywords: "*LPRILRADIOSTATEGROUP, RILRADIOSTATEGROUP, RILRADIOSTATEGROUP structure [Network Drivers Starting with Windows Vista], netvista.rilradiostategroup, ntddrilapitypes/RILRADIOSTATEGROUP"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILRADIOSTATEGROUP
+ - LPRILRADIOSTATEGROUP
 ---
 
 # RILRADIOSTATEGROUP structure (rilapitypes.h)

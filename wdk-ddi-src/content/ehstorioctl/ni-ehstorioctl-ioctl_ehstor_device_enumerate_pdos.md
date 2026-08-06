@@ -4,7 +4,6 @@ title: IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS (ehstorioctl.h)
 description: This IOCTL returns a result set containing the enumeration of all active storage Physical Device Objects (PDOs) associated with the given Addressable Command Target (ACT).
 old-location: storage\ioctl_ehstor_device_enumerate_pdos.htm
 tech.root: storage
-ms.assetid: 900A8CAB-287D-4D92-B4CB-2959E87C8E67
 ms.date: 03/29/2018
 keywords: ["IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS IOCTL"]
 ms.keywords: IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS, IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS control, IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS control code [Storage Devices], ehstorioctl/IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS, storage.ioctl_ehstor_device_enumerate_pdos
@@ -68,6 +67,8 @@ This only works because STATUS_BUFFER_OVERFLOW (0x80000005) is an NT_WARNING() v
 Caution is required here because IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS is defined with METHOD_BUFFERED, therefore I/O manager will attempt to copy this number of bytes into the output buffer.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

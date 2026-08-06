@@ -4,7 +4,6 @@ title: _ACPI_METHOD_ARGUMENT_V1 (acpiioct.h)
 description: The ACPI_METHOD_ARGUMENT structure contains the value of an input or output argument of an ACPI control method.
 old-location: acpi\acpi_method_argument.htm
 tech.root: acpi
-ms.assetid: 4038d5a5-9ce7-44cb-a6f0-3033617cfe6a
 ms.date: 02/15/2018
 keywords: ["ACPI_METHOD_ARGUMENT_V1 structure"]
 ms.keywords: "*PACPI_METHOD_ARGUMENT, *PACPI_METHOD_ARGUMENT_V1, ACPI_METHOD_ARGUMENT, ACPI_METHOD_ARGUMENT_V1, ACPI_METHOD_ARGUMENT_V1 structure [ACPI Devices], _ACPI_METHOD_ARGUMENT_V1, acpi-meth-eval-ref_a8988425-e05b-4e85-a345-31a367dec427.xml, acpi.acpi_method_argument, acpiioct/ACPI_METHOD_ARGUMENT_V1"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Acpiioct.h
 api_name:
+ - _ACPI_METHOD_ARGUMENT_V1
  - ACPI_METHOD_ARGUMENT_V1
 ---
 
@@ -131,3 +131,4 @@ For more information about how to use ACPI_METHOD_ARGUMENT structures to supply 
 
 
 <a href="/windows-hardware/drivers/ddi/acpiioct/ns-acpiioct-_acpi_eval_output_buffer_v1">ACPI_EVAL_OUTPUT_BUFFER</a>
+

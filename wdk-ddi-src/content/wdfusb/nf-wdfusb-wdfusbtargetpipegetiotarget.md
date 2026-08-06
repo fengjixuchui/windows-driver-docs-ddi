@@ -4,7 +4,6 @@ title: WdfUsbTargetPipeGetIoTarget function (wdfusb.h)
 description: The WdfUsbTargetPipeGetIoTarget method returns a handle to the I/O target object that is associated with a specified USB pipe.
 old-location: wdf\wdfusbtargetpipegetiotarget.htm
 tech.root: wdf
-ms.assetid: 73835623-fa35-46f0-90a2-62d6d596dc64
 ms.date: 02/26/2018
 keywords: ["WdfUsbTargetPipeGetIoTarget function"]
 ms.keywords: DFUsbRef_87bfc4fc-266b-44ca-911f-fc5d73735a6a.xml, WdfUsbTargetPipeGetIoTarget, WdfUsbTargetPipeGetIoTarget method, kmdf.wdfusbtargetpipegetiotarget, wdf.wdfusbtargetpipegetiotarget, wdfusb/WdfUsbTargetPipeGetIoTarget
@@ -55,9 +54,9 @@ The <b>WdfUsbTargetPipeGetIoTarget</b> method returns a handle to the I/O target
 
 ## -parameters
 
-### -param Pipe 
+### -param Pipe [in]
 
-[in]
+
 A handle to a framework pipe object that was obtained by calling <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbinterfacegetconfiguredpipe">WdfUsbInterfaceGetConfiguredPipe</a>.
 
 ## -returns

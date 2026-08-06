@@ -4,7 +4,6 @@ title: RtlSetBits function (wdm.h)
 description: The RtlSetBits routine sets all bits in a given range of a given bitmap variable.
 old-location: kernel\rtlsetbits.htm
 tech.root: kernel
-ms.assetid: 63f796c1-033f-450a-a4da-527b8688448b
 ms.date: 04/30/2018
 keywords: ["RtlSetBits function"]
 ms.keywords: RtlSetBits, RtlSetBits routine [Kernel-Mode Driver Architecture], k109_aca53733-c7f0-4c1a-9334-b7e27b199299.xml, kernel.rtlsetbits, wdm/RtlSetBits
@@ -51,19 +50,19 @@ The <b>RtlSetBits</b> routine sets all bits in a given range of a given bitmap v
 
 ## -parameters
 
-### -param BitMapHeader 
+### -param BitMapHeader [in]
 
-[in]
-A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-### -param StartingIndex 
+A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-[in]
+### -param StartingIndex [in]
+
+
 Specifies the start of the bit range to be set. This is a zero-based value indicating the position of the first bit in the range.
 
-### -param NumberToSet 
+### -param NumberToSet [in]
 
-[in]
+
 Specifies how many bits to set.
 
 ## -returns
@@ -78,7 +77,7 @@ Callers of <b>RtlSetBits</b> must be running at IRQL <= APC_LEVEL if the memory 
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a>
+<a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a>
 
 
 

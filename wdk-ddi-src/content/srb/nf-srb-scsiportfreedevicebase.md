@@ -4,7 +4,6 @@ title: ScsiPortFreeDeviceBase function (srb.h)
 description: The ScsiPortFreeDeviceBase routine frees a range of device I/O or memory space addresses previously mapped into the system address space with ScsiPortGetDeviceBase.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
 old-location: storage\scsiportfreedevicebase.htm
 tech.root: storage
-ms.assetid: 391f3b20-175f-4b27-b30f-34ccc43ca650
 ms.date: 03/29/2018
 keywords: ["ScsiPortFreeDeviceBase function"]
 ms.keywords: ScsiPortFreeDeviceBase, ScsiPortFreeDeviceBase routine [Storage Devices], scsiprt_e74eafd2-bedf-46d2-b71a-fb36b6bba128.xml, srb/ScsiPortFreeDeviceBase, storage.scsiportfreedevicebase
@@ -52,14 +51,14 @@ The <b>ScsiPortFreeDeviceBase</b> routine frees a range of device I/O or memory 
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension->HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="/windows-hardware/drivers/ddi/srb/nf-srb-scsiportinitialize">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device.
 
-### -param MappedAddress 
+### -param MappedAddress [in]
 
-[in]
+
 Pointer to the base address of the range to be freed. This address must be the same as that returned by <a href="/windows-hardware/drivers/ddi/srb/nf-srb-scsiportgetdevicebase">ScsiPortGetDeviceBase</a>.
 
 ## -returns

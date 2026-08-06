@@ -4,7 +4,6 @@ title: ExSetFirmwareEnvironmentVariable function (wdm.h)
 description: The ExSetFirmwareEnvironmentVariable routine sets the value of the specified system firmware environment variable.
 old-location: kernel\exsetfirmwareenvironmentvariable.htm
 tech.root: kernel
-ms.assetid: 04447D92-EB9E-400B-A018-E70B186EA3DB
 ms.date: 04/30/2018
 keywords: ["ExSetFirmwareEnvironmentVariable function"]
 ms.keywords: ExSetFirmwareEnvironmentVariable, ExSetFirmwareEnvironmentVariable routine [Kernel-Mode Driver Architecture], kernel.exsetfirmwareenvironmentvariable, wdm/ExSetFirmwareEnvironmentVariable
@@ -50,29 +49,29 @@ The <b>ExSetFirmwareEnvironmentVariable</b> routine sets the value of the specif
 
 ## -parameters
 
-### -param VariableName 
+### -param VariableName [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains the name of the specified environment variable.
 
-### -param VendorGuid 
+### -param VendorGuid [in]
 
-[in]
+
 A pointer to a GUID that identifies the vendor associated with the specified environment variable. Environment variables are grouped into namespaces based on their vendor GUIDs. Some hardware platforms might not support vendor GUIDs. On these platforms, all variables are grouped into one, common namespace, and the <i>VendorGuid</i> parameter is ignored.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 A pointer to a caller-allocated buffer that contains the data value to write to the specified environment variable.
 
-### -param ValueLength 
+### -param ValueLength [in]
 
-[in]
+
 The size, in bytes, of the data value contained in the <i>Value</i> buffer.
 
-### -param Attributes 
+### -param Attributes [in]
 
-[in]
+
 The attributes to assign to the specified environment variable. The VARIABLE_ATTRIBUTE_NON_VOLATILE attribute bit must be set or this call will fail. For more information about the attribute bits that are defined for this parameter, see Remarks in <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exgetfirmwareenvironmentvariable">ExGetFirmwareEnvironmentVariable</a>.
 
 ## -returns

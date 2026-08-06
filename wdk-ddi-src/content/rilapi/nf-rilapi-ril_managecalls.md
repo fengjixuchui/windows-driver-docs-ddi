@@ -1,11 +1,10 @@
 ---
 UID: NF:rilapi.RIL_ManageCalls
 title: RIL_ManageCalls function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_ManageCalls function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_managecalls.htm
 tech.root: netvista
-ms.assetid: d94e3b80-b151-4b3a-a37d-bfba2850b28f
-ms.date: 05/02/2018
+ms.date: 09/07/2022
 keywords: ["RIL_ManageCalls function"]
 ms.keywords: RIL_ManageCalls, RIL_ManageCalls method [Network Drivers Starting with Windows Vista], netvista.ril_managecalls, rilapi/RIL_ManageCalls
 req.header: rilapi.h
@@ -64,7 +63,7 @@ This topic supports the Windows driver infrastructure and is not intended to be 
 
 ### -param lpraAddress
 
-### -param dwRTTAction
+### -param lpstRTTInfo
 
 ## -returns
 

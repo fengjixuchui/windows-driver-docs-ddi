@@ -3,8 +3,7 @@ UID: NC:netadapter.EVT_NET_ADAPTER_CREATE_TXQUEUE
 title: EVT_NET_ADAPTER_CREATE_TXQUEUE (netadapter.h)
 description: The client driver's implementation of the *EvtNetAdapterCreateTxQueue* event callback function that sets up a transmit (Tx) queue.
 tech.root: netvista
-ms.assetid: 50d681dc-8d45-45d4-aef6-149ee53c1284
-ms.date: 01/18/2019
+ms.date: 03/30/2022
 keywords: ["EVT_NET_ADAPTER_CREATE_TXQUEUE callback function"]
 req.header: netadapter.h
 req.include-header: netadaptercx.h 
@@ -12,7 +11,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.29
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -47,11 +46,11 @@ The client driver's implementation of the *EvtNetAdapterCreateTxQueue* event cal
 
 ## -parameters
 
-### -param Adapter 
+### -param Adapter [_In_]
 
 The network adapter object that the client created in a prior call to [**NetAdapterCreate**](nf-netadapter-netadaptercreate.md).
 
-### -param TxQueueInit 
+### -param TxQueueInit [_Inout_]
 
 A pointer to a NetAdapterCx-allocated **NETTXQUEUE_INIT** structure. For more information, see the Remarks section.
 

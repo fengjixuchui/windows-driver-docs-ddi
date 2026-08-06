@@ -2,7 +2,7 @@
 UID: NC:sensorscx.EVT_SENSOR_DRIVER_START_HISTORY_RETRIEVAL
 title: EVT_SENSOR_DRIVER_START_HISTORY_RETRIEVAL (sensorscx.h)
 description: Starts retrieving the history recorded so far in the sensor.
-ms.assetid: 97eccb93-e184-4350-a47e-2072bf368893
+tech.root: sensors
 ms.date: 10/19/2018
 keywords: ["EVT_SENSOR_DRIVER_START_HISTORY_RETRIEVAL callback function"]
 req.header: sensorscx.h
@@ -46,17 +46,17 @@ Starts retrieving the history recorded so far in the sensor.
 
 ## -parameters
 
-### -param Sensor
+### -param Sensor [in]
 
-[in] A reference to a sensor object.
+A reference to a sensor object.
 
-### -param pHistory
+### -param pHistory [in, out]
 
-[in, out] Pointer to the sensor collection list.
+Pointer to the sensor collection list.
 
-### -param HistorySizeInBytes
+### -param HistorySizeInBytes [in]
 
-[in] The size of the *pHistory*, in bytes.
+The size of the *pHistory*, in bytes.
 
 ## -returns
 

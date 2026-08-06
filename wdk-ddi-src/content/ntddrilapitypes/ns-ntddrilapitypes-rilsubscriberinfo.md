@@ -4,7 +4,6 @@ title: RILSUBSCRIBERINFO (ntddrilapitypes.h)
 description: This structure represents RILSUBSCRIBERINFO.
 old-location: netvista\rilsubscriberinfo.htm
 tech.root: netvista
-ms.assetid: b05a38c6-afc5-4dc1-8e51-ecf9d47e144e
 ms.date: 02/16/2018
 keywords: ["RILSUBSCRIBERINFO structure"]
 ms.keywords: "*LPRILSUBSCRIBERINFO, RILSUBSCRIBERINFO, RILSUBSCRIBERINFO structure [Network Drivers Starting with Windows Vista], netvista.rilsubscriberinfo, rilapitypes/RILSUBSCRIBERINFO"
@@ -41,6 +40,7 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILSUBSCRIBERINFO
+ - LPRILSUBSCRIBERINFO
 ---
 
 # RILSUBSCRIBERINFO structure (ntddrilapitypes.h)
@@ -87,3 +87,4 @@ struct RILSUBSCRIBERINFO {
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/cellular/dn946511(v=vs.85)">Cellular COM structures</a>
+

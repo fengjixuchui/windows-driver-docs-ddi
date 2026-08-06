@@ -4,7 +4,6 @@ title: EVT_WDF_WMI_PROVIDER_FUNCTION_CONTROL (wdfwmi.h)
 description: A driver's EvtWmiProviderFunctionControl callback function enables and disables the driver's support for collecting data and sending events for a specified WMI data provider.
 old-location: wdf\evtwmiproviderfunctioncontrol.htm
 tech.root: wdf
-ms.assetid: 89b48747-d3aa-48c7-825c-94545f378f07
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_WMI_PROVIDER_FUNCTION_CONTROL callback function"]
 ms.keywords: DFWMIRef_2beaafe2-cb59-49cb-85dc-6ea2beff1b1e.xml, EVT_WDF_WMI_PROVIDER_FUNCTION_CONTROL, EVT_WDF_WMI_PROVIDER_FUNCTION_CONTROL callback, EvtWmiProviderFunctionControl, EvtWmiProviderFunctionControl callback function, kmdf.evtwmiproviderfunctioncontrol, wdf.evtwmiproviderfunctioncontrol, wdfwmi/EvtWmiProviderFunctionControl
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfWMI.h
 api_name:
- - EvtWmiProviderFunctionControl
+ - EVT_WDF_WMI_PROVIDER_FUNCTION_CONTROL
 ---
 
 # EVT_WDF_WMI_PROVIDER_FUNCTION_CONTROL callback function
@@ -52,19 +51,19 @@ A driver's <i>EvtWmiProviderFunctionControl</i> callback function enables and di
 
 ## -parameters
 
-### -param WmiProvider 
+### -param WmiProvider [in]
 
-[in]
+
 A handle to a WMI provider object.
 
-### -param Control 
+### -param Control [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfwmi/ne-wdfwmi-_wdf_wmi_provider_control">WDF_WMI_PROVIDER_CONTROL</a>-typed value that identifies a capability that the driver must enable or disable.
 
-### -param Enable 
+### -param Enable [in]
 
-[in]
+
 A Boolean value that, if <b>TRUE</b>, indicates that the driver must enable the capability that <i>Control</i> specifies. If <b>FALSE</b>, the driver must disable the capability.
 
 ## -returns
@@ -112,3 +111,4 @@ For more information about the <i>EvtWmiProviderFunctionControl</i> callback fun
 
 
 <a href="/windows-hardware/drivers/ddi/wdfwmi/nf-wdfwmi-wdfwmiproviderisenabled">WdfWmiProviderIsEnabled</a>
+

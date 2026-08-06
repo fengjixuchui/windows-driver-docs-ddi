@@ -4,7 +4,6 @@ title: KsGenerateEventList function (ks.h)
 description: The KsGenerateEventList function enumerates the event list and searches for the specified event to generate.
 old-location: stream\ksgenerateeventlist.htm
 tech.root: stream
-ms.assetid: 336dbbc1-0f3c-4a3f-b3b4-017f4d158bda
 ms.date: 04/23/2018
 keywords: ["KsGenerateEventList function"]
 ms.keywords: KsGenerateEventList, KsGenerateEventList function [Streaming Media Devices], ks/KsGenerateEventList, ksfunc_d4a351ab-f750-4486-99ae-72c42794bee0.xml, stream.ksgenerateeventlist
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ks.lib
 req.dll: 
-req.irql: Any level (See Remarks section)
+req.irql: Any level (see Remarks section)
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,29 +50,29 @@ The <b>KsGenerateEventList</b> function enumerates the event list and searches f
 
 ## -parameters
 
-### -param Set 
+### -param Set [in, optional]
 
-[in, optional]
+
 Specifies an optional set that the event to be generated belongs to. If present, this value is compared against the set identifier for each event in the list. If not present, the set identifiers are ignored and just the specific event identifier is used in the comparison for matching events on the list. This comparison saves time when all events are known to be contained in a single set.
 
-### -param EventId 
+### -param EventId [in]
 
-[in]
+
 Specifies the specific event identifier to look for on the list.
 
-### -param EventsList 
+### -param EventsList [in]
 
-[in]
+
 Points to the head of the list of KSEVENT_ENTRY items on which the event can be found.
 
-### -param EventsFlags 
+### -param EventsFlags [in]
 
-[in]
+
 Specifies the <a href="/windows-hardware/drivers/ddi/ks/ne-ks-ksevents_locktype">KSEVENTS_LOCKTYPE</a> flag specifying the exclusion lock type to be used in accessing the event list. If no flag is set, then no lock is taken.
 
-### -param EventsLock 
+### -param EventsLock [in]
 
-[in]
+
 Used to synchronize access to an element on the list. The lock is taken before enumerating the list and released after enumeration.
 
 ## -returns

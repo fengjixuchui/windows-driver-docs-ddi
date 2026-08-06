@@ -4,7 +4,6 @@ title: IDebugSymbols3::GetFieldTypeAndOffsetWide (dbgeng.h)
 description: The GetFieldTypeAndOffsetWide method returns the type of a field and its offset within a container.
 old-location: debugger\getfieldtypeandoffsetwide.htm
 tech.root: debugger
-ms.assetid: b4e38b33-2f23-4439-b0bc-ab3524e5180e
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::GetFieldTypeAndOffsetWide"]
 ms.keywords: GetFieldTypeAndOffsetWide, GetFieldTypeAndOffsetWide method [Windows Debugging], GetFieldTypeAndOffsetWide method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],GetFieldTypeAndOffsetWide method, IDebugSymbols3.GetFieldTypeAndOffsetWide, IDebugSymbols3::GetFieldTypeAndOffsetWide, dbgeng/IDebugSymbols3::GetFieldTypeAndOffsetWide, debugger.getfieldtypeandoffsetwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols3.GetFieldTypeAndOffsetWide
+ - IDebugSymbols3::GetFieldTypeAndOffsetWide
 ---
 
 # IDebugSymbols3::GetFieldTypeAndOffsetWide
@@ -50,29 +49,29 @@ The <b>GetFieldTypeAndOffsetWide</b>  method returns the type of a field and its
 
 ## -parameters
 
-### -param Module 
+### -param Module [in]
 
-[in]
+
 Specifies the module containing the types of both the container and the field.
 
-### -param ContainerTypeId 
+### -param ContainerTypeId [in]
 
-[in]
+
 Specifies the type ID for the container's type.  Examples of containers include structures, unions, and classes.
 
-### -param Field 
+### -param Field [in]
 
-[in]
+
 Specifies the name of the field whose type and offset are requested.  Subfields may be specified by using a dot-separated path.
 
-### -param FieldTypeId 
+### -param FieldTypeId [out, optional]
 
-[out, optional]
+
 Receives the type ID of the field.
 
-### -param Offset 
+### -param Offset [out, optional]
 
-[out, optional]
+
 Receives the offset of the field <i>Field</i> from the base memory location of an instance of the container.
 
 ## -returns
@@ -125,3 +124,4 @@ For more information about types, see <a href="/windows-hardware/drivers/debugge
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

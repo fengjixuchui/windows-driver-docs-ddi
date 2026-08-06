@@ -4,7 +4,6 @@ title: IWDFDevice::GetDriver (wudfddi.h)
 description: The GetDriver method retrieves the interface to the parent driver object of a device instance.
 old-location: wdf\iwdfdevice_getdriver.htm
 tech.root: wdf
-ms.assetid: 5d17d970-56b7-494a-aa7b-d60065ff06d8
 ms.date: 02/26/2018
 keywords: ["IWDFDevice::GetDriver"]
 ms.keywords: GetDriver, GetDriver method, GetDriver method,IWDFDevice interface, IWDFDevice interface,GetDriver method, IWDFDevice.GetDriver, IWDFDevice::GetDriver, UMDFDeviceObjectRef_6c0cfbb6-1ee7-4c7b-b4ec-0b957630e094.xml, umdf.iwdfdevice_getdriver, wdf.iwdfdevice_getdriver, wudfddi/IWDFDevice::GetDriver
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice.GetDriver
+ - IWDFDevice::GetDriver
 ---
 
 # IWDFDevice::GetDriver
@@ -52,9 +51,9 @@ The <b>GetDriver</b> method retrieves the interface to the parent driver object 
 
 ## -parameters
 
-### -param ppWdfDriver 
+### -param ppWdfDriver [out]
 
-[out]
+
 A pointer to a variable that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdriver">IWDFDriver</a> interface for the parent driver object.
 
 ## -remarks
@@ -68,3 +67,4 @@ For a code example of how to use the GetDriver method, see <a href="/windows-har
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdriver">IWDFDriver</a>
+

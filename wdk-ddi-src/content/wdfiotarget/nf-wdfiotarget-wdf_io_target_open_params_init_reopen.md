@@ -4,7 +4,6 @@ title: WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN function (wdfiotarget.h)
 description: The WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN function initializes a driver's WDF_IO_TARGET_OPEN_PARAMS structure so the driver can reopen a remote I/O target.
 old-location: wdf\wdf_io_target_open_params_init_reopen.htm
 tech.root: wdf
-ms.assetid: 00f1e870-4c74-44d3-9ee9-c8b9e63e5f3b
 ms.date: 02/26/2018
 keywords: ["WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN function"]
 ms.keywords: DFIOTargetRef_f0c123bb-3ecc-401f-ad91-4ed1b359454d.xml, WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN, WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN function, kmdf.wdf_io_target_open_params_init_reopen, wdf.wdf_io_target_open_params_init_reopen, wdfiotarget/WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN
@@ -52,9 +51,9 @@ The <b>WDF_IO_TARGET_OPEN_PARAMS_INIT_REOPEN</b> function initializes a driver's
 
 ## -parameters
 
-### -param Params 
+### -param Params [out]
 
-[out]
+
 A pointer to a driver-allocated <a href="/windows-hardware/drivers/ddi/wdfiotarget/ns-wdfiotarget-_wdf_io_target_open_params">WDF_IO_TARGET_OPEN_PARAMS</a> structure, which the function initializes.
 
 ## -remarks

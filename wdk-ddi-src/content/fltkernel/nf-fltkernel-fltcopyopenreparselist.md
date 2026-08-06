@@ -4,7 +4,6 @@ title: FltCopyOpenReparseList function (fltkernel.h)
 description: This routine copies any open reparse information from a previous create into a new ECP list that can be used to issue a second create.
 old-location: ifsk\fltcopyopenreparselist.htm
 tech.root: ifsk
-ms.assetid: 07C39363-559A-4B55-850E-052BA78E869D
 ms.date: 04/16/2018
 keywords: ["FltCopyOpenReparseList function"]
 ms.keywords: FltAddOpenReparseEntry, FltAddOpenReparseEntry routine [Installable File System Drivers], FltCopyOpenReparseList, fltkernel/FltAddOpenReparseEntry, ifsk.fltcopyopenreparselist
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: _IRQL_requires_max_(APC_LEVEL)
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - fltKernel.h
 api_name:
- - FltAddOpenReparseEntry
+ - FltCopyOpenReparseList
 ---
 
 # FltCopyOpenReparseList function
@@ -51,20 +50,20 @@ This routine copies any open reparse information from a previous create into
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in]
 
-[in]
+
 The filter to reference.
 
-### -param Data 
+### -param Data [in]
 
-[in]
+
 The create operation from which open reparse
                        information should be copied.
 
-### -param EcpList 
+### -param EcpList [in, out]
 
-[in, out]
+
 A new ECP list to copy open reparse information
                        to.
 
@@ -104,3 +103,4 @@ The operation completed successfully.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfreeopenreparselist">FltFreeOpenReparseList</a>
+

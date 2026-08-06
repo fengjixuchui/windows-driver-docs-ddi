@@ -1,10 +1,9 @@
 ---
 UID: NE:rilapitypes.RILSUBSCRIBERINFOSERVICE
 title: RILSUBSCRIBERINFOSERVICE (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILSUBSCRIBERINFOSERVICE enumeration for internal use only. Don't use this enumeration in your code."
 old-location: netvista\rilsubscriberinfoservice_2.htm
 tech.root: netvista
-ms.assetid: 32ae6058-586d-44b4-b2b1-be61875e2f9f
 ms.date: 02/26/2018
 keywords: ["RILSUBSCRIBERINFOSERVICE enumeration"]
 ms.keywords: RILSUBSCRIBERINFOSERVICE, RILSUBSCRIBERINFOSERVICE enumeration [Network Drivers Starting with Windows Vista], RIL_SERVICE_FAX, RIL_SERVICE_MAX, RIL_SERVICE_OTHER, RIL_SERVICE_VOICE, netvista.rilsubscriberinfoservice_2, rilapitypes/RILSUBSCRIBERINFOSERVICE, rilapitypes/RIL_SERVICE_FAX, rilapitypes/RIL_SERVICE_MAX, rilapitypes/RIL_SERVICE_OTHER, rilapitypes/RIL_SERVICE_VOICE
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: RILSUBSCRIBERINFOSERVICE
-req.product: Windows 10 or later.
 f1_keywords:
  - RILSUBSCRIBERINFOSERVICE
  - rilapitypes/RILSUBSCRIBERINFOSERVICE

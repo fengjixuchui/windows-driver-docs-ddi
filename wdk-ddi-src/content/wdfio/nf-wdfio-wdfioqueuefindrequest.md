@@ -4,7 +4,6 @@ title: WdfIoQueueFindRequest function (wdfio.h)
 description: The WdfIoQueueFindRequest method locates the next request in an I/O queue, or the next request that matches specified criteria, but does not grant ownership of the request to the driver.
 old-location: wdf\wdfioqueuefindrequest.htm
 tech.root: wdf
-ms.assetid: 379fc7ec-577a-48a4-83b0-4be4e8cfe1bf
 ms.date: 02/26/2018
 keywords: ["WdfIoQueueFindRequest function"]
 ms.keywords: DFQueueObjectRef_c0d57542-6256-4502-ad31-8b388857296f.xml, WdfIoQueueFindRequest, WdfIoQueueFindRequest method, kmdf.wdfioqueuefindrequest, wdf.wdfioqueuefindrequest, wdfio/WdfIoQueueFindRequest
@@ -55,29 +54,29 @@ The <b>WdfIoQueueFindRequest</b> method locates the next request in an I/O queue
 
 ## -parameters
 
-### -param Queue 
+### -param Queue [in]
 
-[in]
+
 A handle to a framework queue object.
 
-### -param FoundRequest 
+### -param FoundRequest [in, optional]
 
-[in, optional]
+
 A request object handle that the driver received from a previous call to <b>WdfIoQueueFindRequest</b>. This parameter is optional and can be <b>NULL</b>.
 
-### -param FileObject 
+### -param FileObject [in, optional]
 
-[in, optional]
+
 A handle to a framework file object. This parameter is optional and can be <b>NULL</b>.
 
-### -param Parameters 
+### -param Parameters [in, out]
 
-[in, out]
+
 A pointer to a driver-allocated <a href="/windows-hardware/drivers/ddi/wdfrequest/ns-wdfrequest-_wdf_request_parameters">WDF_REQUEST_PARAMETERS</a> structure that receives parameters that are associated with the found request. This parameter is optional and can be <b>NULL</b>.
 
-### -param OutRequest 
+### -param OutRequest [out]
 
-[out]
+
 A pointer to a location that receives a handle to the found request. If no match is found, the location receives <b>NULL</b>.
 
 ## -returns

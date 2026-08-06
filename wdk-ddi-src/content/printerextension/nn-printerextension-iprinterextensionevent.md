@@ -2,14 +2,12 @@
 UID: NN:printerextension.IPrinterExtensionEvent
 title: IPrinterExtensionEvent (printerextension.h)
 description: The IPrinterExtensionEvent interface represents the event delegate implemented by desktop printer extensions for activation.
-old-location: print\iprinterextensionevent_interface.htm
 tech.root: print
-ms.assetid: A0F4DB51-D68E-4516-833A-7E984247796B
-ms.date: 04/20/2018
+ms.date: 08/04/2022
 keywords: ["IPrinterExtensionEvent interface"]
 ms.keywords: IPrinterExtensionEvent, IPrinterExtensionEvent interface [Print Devices], IPrinterExtensionEvent interface [Print Devices],described, print.iprinterextensionevent_interface, printerextension/IPrinterExtensionEvent
 req.header: printerextension.h
-req.include-header: 
+req.include-header: Printerextension.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -41,16 +39,10 @@ api_name:
  - IPrinterExtensionEvent
 ---
 
-# IPrinterExtensionEvent interface
-
-
 ## -description
 
 The IPrinterExtensionEvent interface represents the event delegate implemented by desktop printer extensions for activation.
 
 ## -inheritance
 
-The <b xmlns:loc="https://microsoft.com/wdcml/l10n">IPrinterExtensionEvent</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPrinterExtensionEvent</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The **IPrinterExtensionEvent** interface inherits from the [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface.

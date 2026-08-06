@@ -1,10 +1,9 @@
 ---
 UID: NE:rilapitypes.RILCALLSUPPORTCAPS
 title: RILCALLSUPPORTCAPS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this enumeration in your code. Microsoft reserves the RILCALLSUPPORTCAPS enumeration for internal use only."
 old-location: netvista\rilcallsupportcaps.htm
 tech.root: netvista
-ms.assetid: 1573a1bd-8c47-4fdc-89d1-242e91ff0e47
 ms.date: 05/02/2018
 keywords: ["RILCALLSUPPORTCAPS enumeration"]
 ms.keywords: RILCALLSUPPORTCAPS, RILCALLSUPPORTCAPS enumeration [Network Drivers Starting with Windows Vista], RIL_CAPS_CALLSUPPORT_ALL, RIL_CAPS_CALLSUPPORT_CD, RIL_CAPS_CALLSUPPORT_CNAP, RIL_CAPS_CALLSUPPORT_CUG, RIL_CAPS_CALLSUPPORT_EMLPP, RIL_CAPS_CALLSUPPORT_FM, RIL_CAPS_CALLSUPPORT_MSP, RIL_CAPS_CALLSUPPORT_USS, RIL_CAPS_CALLSUPPORT_USSD_PHASE2, netvista.rilcallsupportcaps, ntddrilapitypes/RILCALLSUPPORTCAPS, ntddrilapitypes/RIL_CAPS_CALLSUPPORT_ALL, ntddrilapitypes/RIL_CAPS_CALLSUPPORT_CD, ntddrilapitypes/RIL_CAPS_CALLSUPPORT_CNAP, ntddrilapitypes/RIL_CAPS_CALLSUPPORT_CUG, ntddrilapitypes/RIL_CAPS_CALLSUPPORT_EMLPP, ntddrilapitypes/RIL_CAPS_CALLSUPPORT_FM, ntddrilapitypes/RIL_CAPS_CALLSUPPORT_MSP, ntddrilapitypes/RIL_CAPS_CALLSUPPORT_USS, ntddrilapitypes/RIL_CAPS_CALLSUPPORT_USSD_PHASE2

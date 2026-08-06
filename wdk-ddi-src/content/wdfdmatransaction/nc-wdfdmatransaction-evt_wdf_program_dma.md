@@ -4,7 +4,6 @@ title: EVT_WDF_PROGRAM_DMA (wdfdmatransaction.h)
 description: A framework-based driver's EvtProgramDma event callback function programs a specified device to perform a DMA transfer operation.
 old-location: wdf\evtprogramdma.htm
 tech.root: wdf
-ms.assetid: c01b94b2-aabf-47dd-952a-06e481579614
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_PROGRAM_DMA callback function"]
 ms.keywords: DFDmaObjectRef_972816f8-bfd1-487d-8ac4-7ef75dcdfa97.xml, EVT_WDF_PROGRAM_DMA, EVT_WDF_PROGRAM_DMA callback, EvtProgramDma, EvtProgramDma callback function, kmdf.evtprogramdma, wdf.evtprogramdma, wdfdmatransaction/EvtProgramDma
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdfdmatransaction.h
 api_name:
- - EvtProgramDma
+ - EVT_WDF_PROGRAM_DMA
 ---
 
 # EVT_WDF_PROGRAM_DMA callback function
@@ -52,29 +51,29 @@ A framework-based driver's <i>EvtProgramDma</i> event callback function programs
 
 ## -parameters
 
-### -param Transaction 
+### -param Transaction [in]
 
-[in]
+
 A handle to the DMA transaction object that represents the current DMA transaction.
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 The context pointer that the driver specified in a previous call to <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactionexecute">WdfDmaTransactionExecute</a>.
 
-### -param Direction 
+### -param Direction [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfdmaenabler/ne-wdfdmaenabler-_wdf_dma_direction">WDF_DMA_DIRECTION</a>-typed value that specifies the direction of the DMA transfer operation.
 
-### -param SgList 
+### -param SgList [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_scatter_gather_list">SCATTER_GATHER_LIST</a> structure.
 
 ## -returns
@@ -104,3 +103,4 @@ For more information about this callback function, see <a href="/windows-hardwar
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioninitializeusingrequest">WdfDmaTransactionInitializeUsingRequest</a>
+

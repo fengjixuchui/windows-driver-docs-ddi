@@ -1,10 +1,9 @@
 ---
 UID: NE:ntddrilapitypes.RILUICCRESPONSEPARAMMASK
 title: RILUICCRESPONSEPARAMMASK (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this enumeration for internal use only. Don't use the RILUICCRESPONSEPARAMMASK enumeration in your code."
 old-location: netvista\riluiccresponseparammask.htm
 tech.root: netvista
-ms.assetid: 2a87655f-8c8c-48c7-982e-dcb70ca600fb
 ms.date: 05/02/2018
 keywords: ["RILUICCRESPONSEPARAMMASK enumeration"]
 ms.keywords: RILUICCRESPONSEPARAMMASK, RILUICCRESPONSEPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_SR_ALL, RIL_PARAM_SR_RESPONSE, RIL_PARAM_SR_RESPONSESIZE, RIL_PARAM_SR_STATUSWORD2, netvista.riluiccresponseparammask, ntddrilapitypes/RILUICCRESPONSEPARAMMASK, ntddrilapitypes/RIL_PARAM_SR_ALL, ntddrilapitypes/RIL_PARAM_SR_RESPONSE, ntddrilapitypes/RIL_PARAM_SR_RESPONSESIZE, ntddrilapitypes/RIL_PARAM_SR_STATUSWORD2

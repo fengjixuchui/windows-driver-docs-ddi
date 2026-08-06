@@ -4,7 +4,6 @@ title: ExQueryTimerResolution function (wdm.h)
 description: The ExQueryTimerResolution routine reports the range of timer resolutions that are supported by the system clock.
 old-location: kernel\exquerytimerresolution.htm
 tech.root: kernel
-ms.assetid: 2648AD10-B2D7-4F24-A508-239DA6AF551D
 ms.date: 04/30/2018
 keywords: ["ExQueryTimerResolution function"]
 ms.keywords: ExQueryTimerResolution, ExQueryTimerResolution routine [Kernel-Mode Driver Architecture], kernel.exquerytimerresolution, wdm/ExQueryTimerResolution
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntoskrnl.lib
 req.dll: 
-req.irql: Any level.
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,19 +50,19 @@ The <b>ExQueryTimerResolution</b> routine reports the range of timer resolutions
 
 ## -parameters
 
-### -param MaximumTime 
+### -param MaximumTime [out]
 
-[out]
+
 A pointer to a location to which the routine writes the maximum time interval, in 100-nanosecond units, between successive ticks of the system clock. A <i>tick</i> is an interrupt caused by the system clock timer.
 
-### -param MinimumTime 
+### -param MinimumTime [out]
 
-[out]
+
 A pointer to a location to which the routine writes the minimum time interval, in 100-nanosecond units, between successive ticks of the system clock.
 
-### -param CurrentTime 
+### -param CurrentTime [out]
 
-[out]
+
 A pointer to a location to which the routine writes the current time interval, in 100-nanosecond units, between successive ticks of the system clock.
 
 ## -remarks

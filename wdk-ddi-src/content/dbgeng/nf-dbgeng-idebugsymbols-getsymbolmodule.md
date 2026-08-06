@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols.GetSymbolModule
 title: IDebugSymbols::GetSymbolModule (dbgeng.h)
-description: The GetSymbolModule method returns the base address of module which contains the specified symbol.
+description: The GetSymbolModule method returns the base address of module which contains the specified symbol. This method belongs to the IDebugSymbols interface.
 old-location: debugger\getsymbolmodule.htm
 tech.root: debugger
-ms.assetid: f3774204-86c3-467b-96ba-739f19d300e3
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols::GetSymbolModule"]
 ms.keywords: GetSymbolModule, GetSymbolModule method [Windows Debugging], GetSymbolModule method [Windows Debugging],IDebugSymbols interface, GetSymbolModule method [Windows Debugging],IDebugSymbols2 interface, GetSymbolModule method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],GetSymbolModule method, IDebugSymbols.GetSymbolModule, IDebugSymbols2 interface [Windows Debugging],GetSymbolModule method, IDebugSymbols2::GetSymbolModule, IDebugSymbols3 interface [Windows Debugging],GetSymbolModule method, IDebugSymbols3::GetSymbolModule, IDebugSymbols::GetSymbolModule, IDebugSymbols_a680615c-bc2a-4fa3-a83a-6960ed64c1e9.xml, dbgeng/IDebugSymbols2::GetSymbolModule, dbgeng/IDebugSymbols3::GetSymbolModule, dbgeng/IDebugSymbols::GetSymbolModule, debugger.getsymbolmodule
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.GetSymbolModule
- - IDebugSymbols2.GetSymbolModule
- - IDebugSymbols3.GetSymbolModule
+ - IDebugSymbols::GetSymbolModule
 ---
 
 # IDebugSymbols::GetSymbolModule
@@ -52,14 +49,14 @@ The <b>GetSymbolModule</b> method returns the base address of module which conta
 
 ## -parameters
 
-### -param Symbol 
+### -param Symbol [in]
 
-[in]
+
 Specifies the name of the symbol to look up.  See the Remarks section for details of the syntax of this name.
 
-### -param Base 
+### -param Base [out]
 
-[out]
+
 Receives the location in the target's memory address space of the base of the module.  For more information, see <a href="/windows-hardware/drivers/debugger/modules">Modules</a>.
 
 ## -returns
@@ -100,3 +97,4 @@ The symbol or module could not be found.
 The string <i>Symbol</i> must contain an exclamation point ( <b>!</b> ).  If <i>Symbol</i> is a module-qualified symbol name (for example, <b>mymodules!main</b>) or if the module name is omitted (for example, <b>!main</b>), the engine will search for this symbol and return the module in which it is found.  If <i>Symbol</i> contains just a module name (for example, <b>mymodule!</b>) the engine returns the first module with this module name.
 
 For more information about symbols, see <a href="/windows-hardware/drivers/debugger/symbols4">Symbols</a>.
+

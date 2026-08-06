@@ -4,7 +4,6 @@ title: IWDTFTarget2::HasContext (wdtf.h)
 description: Determines whether a given context exists for the target.
 old-location: dtf\iwdtftarget2_hascontext.htm
 tech.root: dtf
-ms.assetid: 16ea6100-6e3e-4e50-9055-4396deb39a37
 ms.date: 04/04/2018
 keywords: ["IWDTFTarget2::HasContext"]
 ms.keywords: HasContext, HasContext method [Windows Device Testing Framework], HasContext method [Windows Device Testing Framework],IWDTFTarget2 interface, IWDTFTarget2 interface [Windows Device Testing Framework],HasContext method, IWDTFTarget2.HasContext, IWDTFTarget2::HasContext, Microsoft.WDTF.IWDTFTarget2.HasContext, Microsoft::WDTF::IWDTFTarget2::HasContext, dtf.iwdtftarget2_hascontext, wdtf/IWDTFTarget2::HasContext
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFTarget2.HasContext
+ - IWDTFTarget2::HasContext
 ---
 
 # IWDTFTarget2::HasContext
@@ -50,14 +49,14 @@ Determines whether a given context exists for the target.
 
 ## -parameters
 
-### -param Tag 
+### -param Tag [in]
 
-[in]
+
 The context name.
 
-### -param pResult 
+### -param pResult [out, retval]
 
-[out, retval]
+
 True if the named context exists; otherwise, false.
 
 ## -returns
@@ -67,3 +66,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftarget2">IWDTFTarget2</a>
+

@@ -4,7 +4,6 @@ title: _VIDEO_MEMORY_INFORMATION (ntddvdeo.h)
 description: The VIDEO_MEMORY_INFORMATION structure contains information about a mapping of video memory into system space or the private virtual address space of a user-mode process.
 old-location: display\video_memory_information.htm
 tech.root: display
-ms.assetid: 7d580d5c-b97f-4d26-9eec-165c5db66a0b
 ms.date: 05/10/2018
 keywords: ["VIDEO_MEMORY_INFORMATION structure"]
 ms.keywords: "*PVIDEO_MEMORY_INFORMATION, PVIDEO_MEMORY_INFORMATION, PVIDEO_MEMORY_INFORMATION structure pointer [Display Devices], VIDEO_MEMORY_INFORMATION, VIDEO_MEMORY_INFORMATION structure [Display Devices], Video_Structs_efc1abe7-c8bb-403f-ae5d-136b25881929.xml, _VIDEO_MEMORY_INFORMATION, display.video_memory_information, ntddvdeo/PVIDEO_MEMORY_INFORMATION, ntddvdeo/VIDEO_MEMORY_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddvdeo.h
 api_name:
+ - _VIDEO_MEMORY_INFORMATION
+ - PVIDEO_MEMORY_INFORMATION
  - VIDEO_MEMORY_INFORMATION
 ---
 
@@ -93,3 +94,4 @@ In the <a href="/windows-hardware/drivers/ddi/ntddvdeo/ni-ntddvdeo-ioctl_video_m
 
 
 <a href="/windows-hardware/drivers/ddi/ntddvdeo/ns-ntddvdeo-_video_mode_information">VIDEO_MODE_INFORMATION</a>
+

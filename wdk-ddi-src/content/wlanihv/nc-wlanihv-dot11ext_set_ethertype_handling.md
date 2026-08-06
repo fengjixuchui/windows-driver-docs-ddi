@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_SET_ETHERTYPE_HANDLING
 title: DOT11EXT_SET_ETHERTYPE_HANDLING (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_SET_ETHERTYPE_HANDLING callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extsetethertypehandling.htm
 tech.root: netvista
-ms.assetid: 0681519e-022a-487c-ae5e-39a293b060ec
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_SET_ETHERTYPE_HANDLING callback"]
 ms.keywords: DOT11EXT_SET_ETHERTYPE_HANDLING, Dot11ExtSetEtherTypeHandling, Dot11ExtSetEtherTypeHandling callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_6265fb16-690c-4ada-a79d-fa39760a63d2.xml, netvista.dot11extsetethertypehandling, wlanihv/Dot11ExtSetEtherTypeHandling
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_SET_ETHERTYPE_HANDLING
  - wlanihv/DOT11EXT_SET_ETHERTYPE_HANDLING
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtSetEtherTypeHandling
+ - DOT11EXT_SET_ETHERTYPE_HANDLING
 ---
 
 # DOT11EXT_SET_ETHERTYPE_HANDLING callback
@@ -67,48 +65,48 @@ Register with the operating system for the EtherTypes of received packets that w
 
 ## -parameters
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the WLAN adapter. This handle value was
      specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param uMaxBackLog 
+### -param uMaxBackLog [in]
 
-[in]
+
 The maximum number of received packets that the operating system queues if the IHV Extensions DLL
      has not returned from a call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_receive_packet.md">Dot11ExtIhvReceivePacket</a> IHV
      Handler function. When
      <i>uMaxBackLog</i> is reached, the operating system discards the oldest packet in the queue.
 
-### -param uNumOfExemption 
+### -param uNumOfExemption [in]
 
-[in]
+
 The number of entries within the privacy exemptions array referenced by the
      <i>pExemption</i> parameter. A value of zero disables privacy exemptions on the WLAN adapter.
 
-### -param pExemption 
+### -param pExemption [in, optional]
 
-[in, optional]
+
 A pointer to an array of privacy exemptions. Each entry in the array is formatted as a
      <a href="..\windot11\ns-windot11-dot11_privacy_exemption.md">
      DOT11_PRIVACY_EXEMPTION</a> structure.
 
-### -param uNumOfRegistration 
+### -param uNumOfRegistration [in]
 
-[in]
+
 Number of entries within the IEEE EtherType registrations array referenced by the
      <i>pusRegistration</i> parameter. A value of zero disables the ability of the IHV Extensions DLL to
      receive any packets through calls to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_receive_packet.md">Dot11ExtIhvReceivePacket</a> IHV
      Handler function.
 
-### -param pusRegistration 
+### -param pusRegistration [in, optional]
 
-[in, optional]
+
 A pointer to an array of IEEE EtherType registrations. Each entry has the EtherType value in
      big-endian format.
 
@@ -186,3 +184,4 @@ The operating system defaults to an empty list of privacy exemptions and EtherTy
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
    Dot11ExtIhvPerformPreAssociate</a>
+

@@ -4,7 +4,6 @@ title: _DEVICE_DATA_SET_LB_PROVISIONING_STATE (ntddstor.h)
 description: The DEVICE_DATA_SET_LB_PROVISIONING_STATE structure is returned by an IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES request when requesting logical block provisioning information for a data set range.
 old-location: storage\device_data_set_lb_provisioning_state.htm
 tech.root: storage
-ms.assetid: 99FBD363-0999-4AEE-A222-69C0FB71D248
 ms.date: 08/23/2019
 keywords: ["DEVICE_DATA_SET_LB_PROVISIONING_STATE structure"]
 ms.keywords: "*PDEVICE_DATA_SET_LB_PROVISIONING_STATE, DEVICE_DATA_SET_LB_PROVISIONING_STATE, DEVICE_DATA_SET_LB_PROVISIONING_STATE structure [Storage Devices], PDEVICE_DATA_SET_LB_PROVISIONING_STATE, PDEVICE_DATA_SET_LB_PROVISIONING_STATE structure pointer [Storage Devices], _DEVICE_DATA_SET_LB_PROVISIONING_STATE, ntddstor/DEVICE_DATA_SET_LB_PROVISIONING_STATE, ntddstor/PDEVICE_DATA_SET_LB_PROVISIONING_STATE, storage.device_data_set_lb_provisioning_state"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddstor.h
 api_name:
+ - _DEVICE_DATA_SET_LB_PROVISIONING_STATE
+ - PDEVICE_DATA_SET_LB_PROVISIONING_STATE
  - DEVICE_DATA_SET_LB_PROVISIONING_STATE
 ---
 
@@ -107,3 +108,4 @@ If the slab allocation total returned in **SlabAllocationBitMapBitCount** is not
 [IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES](./ni-ntddstor-ioctl_storage_manage_data_set_attributes.md)
 
 [IOCTL_STORAGE_QUERY_PROPERTY](./ni-ntddstor-ioctl_storage_query_property.md)
+

@@ -4,7 +4,6 @@ title: WdfChildListAddOrUpdateChildDescriptionAsPresent function (wdfchildlist.h
 description: The WdfChildListAddOrUpdateChildDescriptionAsPresent method adds a new child description to a list of children or updates an existing child description.
 old-location: wdf\wdfchildlistaddorupdatechilddescriptionaspresent.htm
 tech.root: wdf
-ms.assetid: 10d169bc-4476-4d7f-8eeb-49941c12a7a0
 ms.date: 02/26/2018
 keywords: ["WdfChildListAddOrUpdateChildDescriptionAsPresent function"]
 ms.keywords: DFDeviceObjectChildListRef_9e96421e-d818-4c2e-a46b-03db44980414.xml, WdfChildListAddOrUpdateChildDescriptionAsPresent, WdfChildListAddOrUpdateChildDescriptionAsPresent method, kmdf.wdfchildlistaddorupdatechilddescriptionaspresent, wdf.wdfchildlistaddorupdatechilddescriptionaspresent, wdfchildlist/WdfChildListAddOrUpdateChildDescriptionAsPresent
@@ -53,19 +52,19 @@ The <b>WdfChildListAddOrUpdateChildDescriptionAsPresent</b> method adds a new ch
 
 ## -parameters
 
-### -param ChildList 
+### -param ChildList [in]
 
-[in]
+
 A handle to a framework child list object.
 
-### -param IdentificationDescription 
+### -param IdentificationDescription [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a> structure that identifies a child <a href="/windows-hardware/drivers/wdf/dynamic-enumeration">identification description</a>.
 
-### -param AddressDescription 
+### -param AddressDescription [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_address_description_header">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a> structure that identifies a child <a href="/windows-hardware/drivers/wdf/dynamic-enumeration">address description</a>. If an address description is not needed, this parameter can be <b>NULL</b>.
 
 ## -returns

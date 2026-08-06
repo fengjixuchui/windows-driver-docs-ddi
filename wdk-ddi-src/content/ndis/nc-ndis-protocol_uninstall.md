@@ -4,7 +4,6 @@ title: PROTOCOL_UNINSTALL (ndis.h)
 description: NDIS calls a protocol driver's ProtocolUninstall function to perform cleanup operations before a protocol driver is uninstalled.Note  You must declare the function by using the PROTOCOL_UNINSTALL type.
 old-location: netvista\protocoluninstall.htm
 tech.root: netvista
-ms.assetid: 959baf54-849c-4bb1-b4c5-4d5537e1d688
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_UNINSTALL callback function"]
 ms.keywords: PROTOCOL_UNINSTALL, PROTOCOL_UNINSTALL callback, ProtocolUninstall, ProtocolUninstall callback function [Network Drivers Starting with Windows Vista], ndis/ProtocolUninstall, netvista.protocoluninstall, protocol_functions_ref_5c889ae3-39d9-43ff-84b5-8ecbb0b48be5.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolUninstall
+ - PROTOCOL_UNINSTALL
 ---
 
 # PROTOCOL_UNINSTALL callback function
@@ -139,3 +138,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_unload">Unload</a>
+

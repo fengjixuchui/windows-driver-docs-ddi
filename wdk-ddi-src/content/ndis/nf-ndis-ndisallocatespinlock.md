@@ -4,7 +4,6 @@ title: NdisAllocateSpinLock function (ndis.h)
 description: The NdisAllocateSpinLock function initializes a variable of type NDIS_SPIN_LOCK, used to synchronize access to resources shared among non-ISR driver functions.
 old-location: netvista\ndisallocatespinlock.htm
 tech.root: netvista
-ms.assetid: e6199eab-a1e8-428f-8a3c-4828d3899cec
 ms.date: 05/02/2018
 keywords: ["NdisAllocateSpinLock function"]
 ms.keywords: NdisAllocateSpinLock, NdisAllocateSpinLock function [Network Drivers Starting with Windows Vista], ndis/NdisAllocateSpinLock, ndis_spin_lock_ref_f42dc321-9805-443e-a7b3-315ab403aeba.xml, netvista.ndisallocatespinlock
@@ -53,9 +52,9 @@ The
 
 ## -parameters
 
-### -param SpinLock 
+### -param SpinLock [out]
 
-[out]
+
 Pointer to an opaque variable that represents a spin lock.
 
 ## -remarks
@@ -80,7 +79,7 @@ As a general rule, to improve performance a driver should use different locks to
     critical sections. Thus, a driver might initialize more than one spin lock with 
     <b>NdisAllocateSpinLock</b>.
 
-Each spin lock that a driver allocates protects a discrete set of shared resources from simultanous
+Each spin lock that a driver allocates protects a discrete set of shared resources from simultaneous
     access by driver functions that run at IRQL <= DISPATCH_LEVEL. For example, a driver that maintains an
     internal queue of packets might initialize one spin lock to protect its queue and another to protect a
     set of state variables that several driver functions, not including the 

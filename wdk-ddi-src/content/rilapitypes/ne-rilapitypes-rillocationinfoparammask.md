@@ -1,10 +1,9 @@
 ---
 UID: NE:rilapitypes.RILLOCATIONINFOPARAMMASK
 title: RILLOCATIONINFOPARAMMASK (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this enumeration in your code. Microsoft reserves the RILLOCATIONINFOPARAMMASK enumeration for internal use only."
 old-location: netvista\rillocationinfoparammask.htm
 tech.root: netvista
-ms.assetid: 3d681026-7ccb-4dcb-bed1-505c13089177
 ms.date: 05/02/2018
 keywords: ["RILLOCATIONINFOPARAMMASK enumeration"]
 ms.keywords: RILLOCATIONINFOPARAMMASK, RILLOCATIONINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_LU_ALL, RIL_PARAM_LU_CELLID, RIL_PARAM_LU_HUICCAPP, RIL_PARAM_LU_LAC, RIL_PARAM_LU_TAC, netvista.rillocationinfoparammask, ntddrilapitypes/RILLOCATIONINFOPARAMMASK, ntddrilapitypes/RIL_PARAM_LU_ALL, ntddrilapitypes/RIL_PARAM_LU_CELLID, ntddrilapitypes/RIL_PARAM_LU_HUICCAPP, ntddrilapitypes/RIL_PARAM_LU_LAC, ntddrilapitypes/RIL_PARAM_LU_TAC

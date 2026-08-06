@@ -4,7 +4,6 @@ title: _KSAUDIO_PACKETSIZE_CONSTRAINTS2 (ksmedia.h)
 description: The KSAUDIO_PACKETSIZE_CONSTRAINTS2 structure describes the physical hardware constraints.
 old-location: audio\ksaudio_packetsize_constraints2.htm
 tech.root: audio
-ms.assetid: E87C7AA7-A48A-4569-ADD5-9DC143F919B6
 ms.date: 05/08/2018
 keywords: ["KSAUDIO_PACKETSIZE_CONSTRAINTS2 structure"]
 ms.keywords: FILE_128_BYTE_ALIGNMENT, FILE_256_BYTE_ALIGNMENT, FILE_32_BYTE_ALIGNMENT, FILE_512_BYTE_ALIGNMENT, FILE_64_BYTE_ALIGNMENT, FILE_BYTE_ALIGNMENT, FILE_LONG_ALIGNMENT, FILE_OCTA_ALIGNMENT, FILE_QUAD_ALIGNMENT, FILE_WORD_ALIGNMENT, KSAUDIO_PACKETSIZE_CONSTRAINTS2, KSAUDIO_PACKETSIZE_CONSTRAINTS2 structure [Audio Devices], PKSAUDIO_PACKETSIZE_CONSTRAINTS2, PKSAUDIO_PACKETSIZE_CONSTRAINTS2 structure pointer [Audio Devices], _KSAUDIO_PACKETSIZE_CONSTRAINTS2, audio.ksaudio_packetsize_constraints2, ksmedia/KSAUDIO_PACKETSIZE_CONSTRAINTS2, ksmedia/PKSAUDIO_PACKETSIZE_CONSTRAINTS2
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - _KSAUDIO_PACKETSIZE_CONSTRAINTS2
  - KSAUDIO_PACKETSIZE_CONSTRAINTS2
 ---
 
@@ -141,3 +141,4 @@ The driver sets this variable length data structure as the value of the DEVPKEY_
 For WaveRT drivers, this data structure describes the constraints for a WaveRT packet. Several WaveRT packets (typically 2) are concatenated to form the WaveRT buffer.
 
 The <b>KSAUDIO_PACKETSIZE_CONSTRAINTS2</b> struct is available  beginning with Windows 10, version 1607.
+

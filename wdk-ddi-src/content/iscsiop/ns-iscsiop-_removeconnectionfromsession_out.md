@@ -4,7 +4,6 @@ title: _RemoveConnectionFromSession_OUT (iscsiop.h)
 description: The RemoveConnectionFromSession_OUT structure holds the output data for the RemoveConnectionFromSession method, which is used to remove a connection from a session.
 old-location: storage\removeconnectionfromsession_out.htm
 tech.root: storage
-ms.assetid: 00c6c94e-06a8-40ec-8ddd-4a4191fa1ec6
 ms.date: 03/29/2018
 keywords: ["RemoveConnectionFromSession_OUT structure"]
 ms.keywords: "*PRemoveConnectionFromSession_OUT, PRemoveConnectionFromSession_OUT, PRemoveConnectionFromSession_OUT structure pointer [Storage Devices], RemoveConnectionFromSession_OUT, RemoveConnectionFromSession_OUT structure [Storage Devices], _RemoveConnectionFromSession_OUT, iscsiop/PRemoveConnectionFromSession_OUT, iscsiop/RemoveConnectionFromSession_OUT, storage.removeconnectionfromsession_out, structs-iSCSI_a986a037-b861-4c2b-8402-86dbf7c09942.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsiop.h
 api_name:
+ - _RemoveConnectionFromSession_OUT
+ - PRemoveConnectionFromSession_OUT
  - RemoveConnectionFromSession_OUT
 ---
 
@@ -65,3 +66,4 @@ You must implement this class.
 ## -see-also
 
 <a href="/windows-hardware/drivers/storage/removeconnectionfromsession">RemoveConnectionFromSession</a>
+

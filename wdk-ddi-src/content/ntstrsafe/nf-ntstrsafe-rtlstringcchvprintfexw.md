@@ -1,10 +1,9 @@
 ---
 UID: NF:ntstrsafe.RtlStringCchVPrintfExW
 title: RtlStringCchVPrintfExW function (ntstrsafe.h)
-description: The RtlStringCchVPrintfExW and RtlStringCchVPrintfExA functions create a character-counted text string, with formatting that is based on supplied formatting information.
+description: Learn how the RtlStringCchVPrintfExW and RtlStringCchVPrintfExA functions create a character-counted text string, with formatting that is based on supplied formatting information.
 old-location: kernel\rtlstringcchvprintfex.htm
 tech.root: kernel
-ms.assetid: e28dd810-d86f-479f-b049-63a626ed432f
 ms.date: 04/30/2018
 keywords: ["RtlStringCchVPrintfExW function"]
 ms.keywords: RtlStringCchVPrintfEx, RtlStringCchVPrintfExA, RtlStringCchVPrintfExW, RtlStringCchVPrintfExW function [Kernel-Mode Driver Architecture], STRSAFE_FILL_BEHIND_NULL, STRSAFE_FILL_ON_FAILURE, STRSAFE_IGNORE_NULLS, STRSAFE_NO_TRUNCATION, STRSAFE_NULL_ON_FAILURE, kernel.rtlstringcchvprintfex, ntstrsafe/RtlStringCchVPrintfExA, ntstrsafe/RtlStringCchVPrintfExW, safestrings_e2c4ac8d-ac84-4a99-84b3-51b54a508a0a.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -40,8 +39,6 @@ api_location:
  - Ntstrsafe.dll
 api_name:
  - RtlStringCchVPrintfExW
- - RtlStringCchVPrintfExA
- - RtlStringCchVPrintfExW
 ---
 
 # RtlStringCchVPrintfExW function
@@ -53,29 +50,29 @@ The <b>RtlStringCchVPrintfExW</b> and <b>RtlStringCchVPrintfExA</b> functions cr
 
 ## -parameters
 
-### -param pszDest 
+### -param pszDest [out]
 
-[out]
+
 A pointer to a caller-supplied buffer that receives a formatted, null-terminated string. The function creates this string from both the formatting string that is supplied by <i>pszFormat</i> and the arguments supplied by <i>argList</i>. The <i>pszDest</i> pointer can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.
 
-### -param cchDest 
+### -param cchDest [in]
 
-[in]
+
 The size of the destination buffer, in characters. The buffer must be large enough to contain the formatted string plus the terminating null character. The maximum number of characters allowed is NTSTRSAFE_MAX_CCH. If <i>pszDest</i> is <b>NULL</b>, <i>cchDest</i> must be zero.
 
-### -param ppszDestEnd 
+### -param ppszDestEnd [out, optional]
 
-[out, optional]
+
 If the caller supplies a non-<b>NULL</b> address pointer then, after the operation completes, the function loads that address with a pointer to the destination buffer's resulting null string terminator.
 
-### -param pcchRemaining 
+### -param pcchRemaining [out, optional]
 
-[out, optional]
+
 If the caller supplies a non-<b>NULL</b> address pointer, the function loads the address with the number of unused bytes that are in the buffer pointed to by <i>pszDest</i>, including those bytes used for the terminating null character.
 
-### -param dwFlags 
+### -param dwFlags [in]
 
-[in]
+
 One or more flags and, optionally, a fill byte. The flags are defined as follows.
 
 <table>
@@ -135,14 +132,14 @@ If set and the function returns STATUS_BUFFER_OVERFLOW, the contents of the dest
 </tr>
 </table>
 
-### -param pszFormat 
+### -param pszFormat [in, optional]
 
-[in, optional]
+
 Pointer to a null-terminated text string that contains <b>printf</b>-styled formatting directives. The <i>pszFormat</i> pointer can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.
 
-### -param argList 
+### -param argList [in]
 
-[in]
+
 A <b>va_list</b>-typed argument list. Arguments contained in the argument list will be interpreted by using the formatting string that is supplied by <i>pszFormat</i>.
 
 ## -returns
@@ -283,3 +280,4 @@ For more information about the safe string functions, see <a href="/windows-hard
 
 
 <a href="/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcchvprintfa">RtlStringCchVPrintf</a>
+

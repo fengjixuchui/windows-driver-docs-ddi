@@ -4,7 +4,6 @@ title: RtlIoEncodeMemIoResource function (wdm.h)
 description: The RtlIoEncodeMemIoResource routine updates an IO_RESOURCE_DESCRIPTOR structure to describe a range of memory or I/O port addresses.
 old-location: kernel\rtlioencodememioresource.htm
 tech.root: kernel
-ms.assetid: b2f51d54-3fda-4cbf-a148-0572122ed9fa
 ms.date: 04/30/2018
 keywords: ["RtlIoEncodeMemIoResource function"]
 ms.keywords: RtlIoEncodeMemIoResource, RtlIoEncodeMemIoResource routine [Kernel-Mode Driver Architecture], k109_2e51e72a-98c4-4600-8e9c-41251c3e9849.xml, kernel.rtlioencodememioresource, wdm/RtlIoEncodeMemIoResource
@@ -50,34 +49,34 @@ The <b>RtlIoEncodeMemIoResource</b> routine updates an <a href="/windows-hardwar
 
 ## -parameters
 
-### -param Descriptor 
+### -param Descriptor [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a> structure to update.
 
-### -param Type 
+### -param Type [in]
 
-[in]
+
 The resource type of the address range. This parameter can be <b>CmResourceTypeMemory</b>, <b>CmResourceTypeMemoryLarge</b>, or <b>CmResourceTypePort</b>.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The length, in bytes, of the range of assignable addresses.
 
-### -param Alignment 
+### -param Alignment [in]
 
-[in]
+
 The alignment, in bytes, of the starting address of address range.
 
-### -param MinimumAddress 
+### -param MinimumAddress [in]
 
-[in]
+
 The minimum address that can be assigned to the device.
 
-### -param MaximumAddress 
+### -param MaximumAddress [in]
 
-[in]
+
 The maximum address that can be assigned to the device.
 
 ## -returns

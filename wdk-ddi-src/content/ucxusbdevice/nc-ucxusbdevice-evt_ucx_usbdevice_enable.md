@@ -4,7 +4,6 @@ title: EVT_UCX_USBDEVICE_ENABLE (ucxusbdevice.h)
 description: The client driver's implementation that UCX calls to program information about the device and its default control endpoint into the controller.
 old-location: buses\evt_ucx_usbdevice_enable.htm
 tech.root: usbref
-ms.assetid: ac46a6eb-c30d-4b1f-8e14-0ae44ae0d4f1
 ms.date: 05/07/2018
 keywords: ["EVT_UCX_USBDEVICE_ENABLE callback function"]
 ms.keywords: EVT_UCX_USBDEVICE_ENABLE, EVT_UCX_USBDEVICE_ENABLE callback, EvtUcxUsbDeviceEnable, EvtUcxUsbDeviceEnable callback function [Buses], PEVT_UCX_USBDEVICE_ENABLE, PEVT_UCX_USBDEVICE_ENABLE callback function pointer [Buses], buses.evt_ucx_usbdevice_enable, ucxusbdevice/EvtUcxUsbDeviceEnable
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ucxusbdevice.h
 api_name:
- - PEVT_UCX_USBDEVICE_ENABLE
+ - EVT_UCX_USBDEVICE_ENABLE
 ---
 
 # EVT_UCX_USBDEVICE_ENABLE callback function
@@ -51,14 +50,14 @@ The client driver's implementation that UCX calls to program information about t
 
 ## -parameters
 
-### -param UcxController 
+### -param UcxController [in]
 
-[in]
+
  A handle to the UCX controller that the client driver received in a previous call to  the <a href="/previous-versions/windows/hardware/drivers/mt188033(v=vs.85)">UcxControllerCreate</a> method.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A structure of type <a href="/windows-hardware/drivers/ddi/ucxusbdevice/ns-ucxusbdevice-_usbdevice_enable">USBDEVICE_ENABLE</a>.
 
 ## -remarks
@@ -100,7 +99,7 @@ UsbDevice_EvtUcxUsbDeviceEnable(
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ucxusbdevice/nf-ucxusbdevice-ucxusbdevicecreate">UcxUsbDeviceCreate</a>
+

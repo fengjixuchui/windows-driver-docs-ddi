@@ -4,7 +4,6 @@ title: EtwRegister function (wdm.h)
 description: The EtwRegister function registers the event provider and must be called before a provider can start tracing.
 old-location: devtest\etwregister.htm
 tech.root: devtest
-ms.assetid: 89a37edb-0f58-45c2-9045-b31eec5a4281
 ms.date: 02/23/2018
 keywords: ["EtwRegister function"]
 ms.keywords: EtwRegister, EtwRegister function [Driver Development Tools], devtest.etwregister, etw_km_45f383e4-ef13-4662-b80e-2fc48b6755ed.xml, wdm/EtwRegister
@@ -50,24 +49,24 @@ The <b>EtwRegister</b> function registers the event provider and must be called 
 
 ## -parameters
 
-### -param ProviderId 
+### -param ProviderId [in]
 
-[in]
+
 A pointer to the event provider GUID.
 
-### -param EnableCallback 
+### -param EnableCallback [in, optional]
 
-[in, optional]
+
 A pointer to an optional callback function. The callback function provides additional event filtering capabilities. The callback function is user-defined.
 
-### -param CallbackContext 
+### -param CallbackContext [in, optional]
 
-[in, optional]
+
 The function passes back the optional callback context when a callback is made. You can specify the optional context when you register a provider.  The <i>CallbackContext</i> parameter supports the scenarios in which one callback is shared by multiple providers, as in a C++ class. The <i>CallbackContext</i> provides a way to distinguish the target provider instances for the enable callback.
 
-### -param RegHandle 
+### -param RegHandle [out]
 
-[out]
+
 A pointer to a variable that receives the provider registration handle if the function call is successful.
 
 ## -returns

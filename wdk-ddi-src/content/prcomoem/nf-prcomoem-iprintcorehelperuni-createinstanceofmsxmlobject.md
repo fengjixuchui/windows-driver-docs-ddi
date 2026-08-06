@@ -4,7 +4,6 @@ title: IPrintCoreHelperUni::CreateInstanceOfMSXMLObject (prcomoem.h)
 description: The IPrintCoreHelperUni::CreateInstanceOfMSXMLObject method creates an instance of an MSXML object.
 old-location: print\iprintcorehelperuni_createinstanceofmsxmlobject.htm
 tech.root: print
-ms.assetid: 801ad433-4d52-4947-93f5-a11521a4df18
 ms.date: 04/20/2018
 keywords: ["IPrintCoreHelperUni::CreateInstanceOfMSXMLObject"]
 ms.keywords: CreateInstanceOfMSXMLObject, CreateInstanceOfMSXMLObject method [Print Devices], CreateInstanceOfMSXMLObject method [Print Devices],IPrintCoreHelperUni interface, IPrintCoreHelperUni interface [Print Devices],CreateInstanceOfMSXMLObject method, IPrintCoreHelperUni.CreateInstanceOfMSXMLObject, IPrintCoreHelperUni::CreateInstanceOfMSXMLObject, prcomoem/IPrintCoreHelperUni::CreateInstanceOfMSXMLObject, print.iprintcorehelperuni_createinstanceofmsxmlobject, print_unidrv-pscript_allplugins_b6f2207a-4289-4a1f-ae2d-accc80c68a79.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Prcomoem.h
 api_name:
- - IPrintCoreHelperUni.CreateInstanceOfMSXMLObject
+ - IPrintCoreHelperUni::CreateInstanceOfMSXMLObject
 ---
 
 # IPrintCoreHelperUni::CreateInstanceOfMSXMLObject
@@ -50,30 +49,30 @@ The <code>IPrintCoreHelperUni::CreateInstanceOfMSXMLObject</code> method creates
 
 ## -parameters
 
-### -param rclsid 
+### -param rclsid [in]
 
-[in]
+
 The CLSID that is associated with the data and code that will be used to create the object.
 
-### -param pUnkOuter 
+### -param pUnkOuter [in]
 
-[in]
+
 A pointer to the aggregate object's <b>IUnknown</b> interface (the controlling <b>IUnknown</b>). This parameter must be <b>NULL</b>, which means that the object is not being created as part of an aggregate.
 
-### -param dwClsContext 
+### -param dwClsContext [in]
 
-[in]
+
 The context in which the code that manages the newly created object will run. The only valid values are <b>NULL</b> and CLSCTX_INPROC_SERVER, which is a value of the CLSCTX enumeration (described in the Microsoft Windows SDK documentation).
 
-### -param riid 
+### -param riid [in]
 
-[in]
+
 A reference to the identifier of the interface that will be used to communicate with the object.
 
-### -param ppv 
+### -param ppv [out]
 
-[out]
-A pointer to a memory address that receives the address of the interface that is requested in the <i>riid</i> parameter. If <code>IPrintCoreHelperUni::CreateInstanceOfMSXMLObject</code> successfully returns, *<i>ppv</i> contains the address of the requested interface. If this method fails, *<i>ppv</i> contains <b>NULL</b>.
+
+A pointer to a memory address that receives the address of the interface that is requested in the <i>riid</i> parameter. If <code>IPrintCoreHelperUni::CreateInstanceOfMSXMLObject</code> successfully returns, **ppv* contains the address of the requested interface. If this method fails, **ppv* contains <b>NULL</b>.
 
 ## -returns
 

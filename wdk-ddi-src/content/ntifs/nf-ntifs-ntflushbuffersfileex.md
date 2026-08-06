@@ -1,17 +1,15 @@
 ---
 UID: NF:ntifs.NtFlushBuffersFileEx
 title: NtFlushBuffersFileEx function (ntifs.h)
-description: The NtFlushBuffersFileEx routine is called by a file system legacy filter driver to send a flush request for a given file to the file system. An optional flush operation flag can be set to control how file data is written to storage.
-old-location: kernel\zwflushbuffersfileex.htm
+description: Learn more about the NtFlushBuffersFileEx routine.
 tech.root: kernel
-ms.assetid: C081CCF5-D13C-405C-A430-31805A16724A
-ms.date: 01/02/2020
+ms.date: 01/13/2021
 keywords: ["NtFlushBuffersFileEx function"]
 ms.keywords: FLUSH_FLAGS_FILE_DATA_ONLY, FLUSH_FLAGS_NO_SYNC, NtFlushBuffersFileEx, ZwFlushBuffersFileEx, ZwFlushBuffersFileEx routine [Kernel-Mode Driver Architecture], kernel.zwflushbuffersfileex, ntifs/NtFlushBuffersFileEx, ntifs/ZwFlushBuffersFileEx
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -24,7 +22,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: PASSIVE_LEVEL (See Remarks section.)
+req.irql: PASSIVE_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,46 +36,42 @@ api_type:
 api_location:
  - NtosKrnl.exe
 api_name:
- - ZwFlushBuffersFileEx
  - NtFlushBuffersFileEx
 ---
 
 # NtFlushBuffersFileEx function
 
-
 ## -description
 
-The **NtFlushBuffersFileEx** routine is called by a file system legacy filter driver to send a flush request for a given file to the file system. An optional flush operation flag can be set to control how file data is written to storage.
+The **NtFlushBuffersFileEx** routine sends a flush request for a given file to the file system. An optional flush operation flag can be set to control how file data is written to storage.
 
 ## -parameters
 
-### -param FileHandle 
+### -param FileHandle [in]
 
-[in]
 Handle returned by [**NtCreateFile**](./nf-ntifs-ntcreatefile.md) or [**NtOpenFile**](./nf-ntifs-ntopenfile.md) for the file whose buffers will be flushed. This parameter is required and cannot be NULL.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
-Flush operation flags. *Flags* can be 0 or one of the following values *if the file is on an NTFS file system*.
+Flush operation flags. *Flags* can be one of the following values:
 
 | Value | Meaning |
 | ----- | ------- |
-| FLUSH_FLAGS_FILE_DATA_ONLY | File data in the file cache will be written. No metadata is written and the underlying storage is not synchronized to flush its cache. This flag is not valid with volume handles. |
-| FLUSH_FLAGS_NO_SYNC | File data and metadata in the file cache will be written. The underlying storage is not synchronized to flush its cache. This flag is not valid with volume handles. |
-| FLUSH_FLAGS_FILE_DATA_SYNC_ONLY | Data from the given file will be written from the Windows in-memory cache. Timestamp updating will be skipped as much as possible. The underlying storage is synchronized to flush its cache. This flag is not valid with volume or directory handles. |
+| 0 (normal) | File data and metadata in the file cache will be written, and the underlying storage is synchronized to flush its cache. Windows file systems supported: NTFS, ReFS, FAT, exFAT. |
+| FLUSH_FLAGS_FILE_DATA_ONLY | File data in the file cache will be written. No metadata is written and the underlying storage is not synchronized to flush its cache. This flag is not valid with volume handles. Windows file systems supported: NTFS, FAT, exFAT. |
+| FLUSH_FLAGS_NO_SYNC | File data and metadata in the file cache will be written. The underlying storage is not synchronized to flush its cache. This flag is not valid with volume handles. Windows file systems supported: NTFS, FAT, exFAT. |
+| FLUSH_FLAGS_FILE_DATA_SYNC_ONLY | Data from the given file will be written from the Windows in-memory cache. Only metadata that is necessary for data retrieval will be flushed (timestamp updating will be skipped as much as possible). The underlying storage is synchronized to flush its cache. This flag is not valid with volume or directory handles. Windows file systems supported: NTFS. |
 
-### -param Parameters
+### -param Parameters [in]
 
 Pointer to a block with additional parameters. This parameter must currently be set to NULL.
 
-### -param ParametersSize
+### -param ParametersSize [in]
 
 The size, in bytes, of the block that *Parameters* point to. This parameter must currently be set to 0.
 
-### -param IoStatusBlock 
+### -param IoStatusBlock [out]
 
-[out]
 Address of the caller's I/O status block. This parameter is required and cannot be NULL.
 
 ## -returns

@@ -4,7 +4,6 @@ title: USBD_CalculateUsbBandwidth function (usbdlib.h)
 description: The USBD_CalculateUsbBandwidth routine has been deprecated in Windows XP and later operating systems. Do not use.
 old-location: buses\usbd_calculateusbbandwidth.htm
 tech.root: usbref
-ms.assetid: a54f3fb4-032a-4538-8b6d-20d6834d08c4
 ms.date: 05/07/2018
 keywords: ["USBD_CalculateUsbBandwidth function"]
 ms.keywords: USBD_CalculateUsbBandwidth, USBD_CalculateUsbBandwidth routine [Buses], buses.usbd_calculateusbbandwidth, usbdlib/USBD_CalculateUsbBandwidth, usbfunc_a422b001-17f1-42b4-b10e-3d64d4279530.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Usbd.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,19 +50,19 @@ The <b>USBD_CalculateUsbBandwidth</b> routine has been deprecated in Windows XP 
 
 ## -parameters
 
-### -param MaxPacketSize 
+### -param MaxPacketSize [in]
 
-[in]
+
 Specifies the maximum packet size.
 
-### -param EndpointType 
+### -param EndpointType [in]
 
-[in]
+
 Contains a value of type <a href="/windows-hardware/drivers/ddi/usb/ne-usb-_usbd_pipe_type">USBD_PIPE_TYPE</a> that specifies the pipe type.
 
-### -param LowSpeed 
+### -param LowSpeed [in]
 
-[in]
+
 Indicates, when <b>TRUE</b>, that the device is a low speed device. When <b>FALSE</b>, this member indicates that the device is a hi-speed device.
 
 ## -returns

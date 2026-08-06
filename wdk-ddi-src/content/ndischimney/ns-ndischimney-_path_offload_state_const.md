@@ -4,7 +4,6 @@ title: _PATH_OFFLOAD_STATE_CONST (ndischimney.h)
 description: The PATH_OFFLOAD_STATE_CONST structure contains the constant variables of a path state object.
 old-location: netvista\path_offload_state_const.htm
 tech.root: netvista
-ms.assetid: a71f70f6-7731-457b-bd6d-b4a649f76f8b
 ms.date: 05/02/2018
 keywords: ["PATH_OFFLOAD_STATE_CONST structure"]
 ms.keywords: "*PPATH_OFFLOAD_STATE_CONST, PATH_OFFLOAD_STATE_CONST, PATH_OFFLOAD_STATE_CONST structure [Network Drivers Starting with Windows Vista], PPATH_OFFLOAD_STATE_CONST, PPATH_OFFLOAD_STATE_CONST structure pointer [Network Drivers Starting with Windows Vista], _PATH_OFFLOAD_STATE_CONST, ndischimney/PATH_OFFLOAD_STATE_CONST, ndischimney/PPATH_OFFLOAD_STATE_CONST, netvista.path_offload_state_const, tcp_chim_struct_4412519c-3610-4f0a-a4c6-400ff661d205.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndischimney.h
 api_name:
+ - _PATH_OFFLOAD_STATE_CONST
+ - PPATH_OFFLOAD_STATE_CONST
  - PATH_OFFLOAD_STATE_CONST
 ---
 
@@ -90,7 +91,7 @@ The value of each path constant variable does not change during the life of a TC
 When passed to an offload target, a PATH_OFFLOAD_STATE_CONST structure is associated with an 
     <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_miniport_offload_block_list">
     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure, which contains a header that is formatted as an 
-    <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure. The 
+    <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure. The 
     <b>Revision</b> member of the NDIS_OBJECT_HEADER structure, in this case, specifies the revision number of
     the PATH_OFFLOAD_STATE_CONST structure.
 
@@ -100,7 +101,7 @@ When passed to an offload target, a PATH_OFFLOAD_STATE_CONST structure is associ
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -113,3 +114,4 @@ When passed to an offload target, a PATH_OFFLOAD_STATE_CONST structure is associ
 
 
 <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_path_offload_state_delegated">PATH_OFFLOAD_STATE_DELEGATED</a>
+

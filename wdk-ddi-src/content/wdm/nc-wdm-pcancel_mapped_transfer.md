@@ -4,7 +4,6 @@ title: PCANCEL_MAPPED_TRANSFER (wdm.h)
 description: The CancelMappedTransfer routine cancels a system DMA transfer that is currently mapped to an adapter.
 old-location: kernel\cancelmappedtransfer.htm
 tech.root: kernel
-ms.assetid: 12ED94F4-70A9-4716-91CD-F561F0D4D4EA
 ms.date: 04/30/2018
 keywords: ["PCANCEL_MAPPED_TRANSFER callback function"]
 ms.keywords: CancelMappedTransfer, CancelMappedTransfer callback function [Kernel-Mode Driver Architecture], PCANCEL_MAPPED_TRANSFER, PCANCEL_MAPPED_TRANSFER callback, kernel.cancelmappedtransfer, wdm/CancelMappedTransfer
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - CancelMappedTransfer
+ - PCANCEL_MAPPED_TRANSFER
 ---
 
 # PCANCEL_MAPPED_TRANSFER callback function
@@ -50,14 +49,14 @@ The <b>CancelMappedTransfer</b> routine cancels a system DMA transfer that is cu
 
 ## -parameters
 
-### -param DmaAdapter 
+### -param DmaAdapter [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_adapter">DMA_ADAPTER</a> structure. This structure is the adapter object that is waiting for the pending DMA transfer to complete. The caller obtained this pointer from a previous call to the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter">IoGetDmaAdapter</a> routine, and the caller passed this pointer to the <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer_ex">MapTransferEx</a> call that set up the map registers for the DMA transfer.
 
-### -param DmaTransferContext 
+### -param DmaTransferContext [in]
 
-[in]
+
 A pointer to a DMA transfer context. This parameter value must be the same DMA transfer context that was passed to the <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pallocate_adapter_channel_ex">AllocateAdapterChannelEx</a> call that requested the adapter channel allocation.
 
 ## -returns
@@ -103,3 +102,4 @@ Regardless of whether a system DMA transfer is canceled or completed, the <a hre
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer_ex">MapTransferEx</a>
+

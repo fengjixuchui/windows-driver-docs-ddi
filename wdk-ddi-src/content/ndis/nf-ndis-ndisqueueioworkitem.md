@@ -4,7 +4,6 @@ title: NdisQueueIoWorkItem function (ndis.h)
 description: NDIS drivers call the NdisQueueIoWorkItem function to queue a work item.
 old-location: netvista\ndisqueueioworkitem.htm
 tech.root: netvista
-ms.assetid: f5065217-a74e-41b6-bc23-59b39948a450
 ms.date: 05/02/2018
 keywords: ["NdisQueueIoWorkItem function"]
 ms.keywords: NdisQueueIoWorkItem, NdisQueueIoWorkItem function [Network Drivers Starting with Windows Vista], ndis/NdisQueueIoWorkItem, ndis_work_items_ref_ac034ba5-7f33-4769-9664-2b9bbb5ad9e6.xml, netvista.ndisqueueioworkitem
@@ -52,16 +51,16 @@ NDIS drivers call the
 
 ## -parameters
 
-### -param NdisIoWorkItemHandle 
+### -param NdisIoWorkItemHandle [in]
 
-[in]
+
 A handle to a private <a href="/windows-hardware/drivers/kernel/eprocess">IO_WORKITEM</a> structure that was returned by a previous call to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocateioworkitem">
      NdisAllocateIoWorkItem</a> function.
 
-### -param Routine 
+### -param Routine [in]
 
-[in]
+
 The entry point to the function that NDIS calls to process the work item. NDIS calls this routine
      in the context of a system thread. 
 
@@ -88,9 +87,9 @@ A handle to a private <b>NDIS_IO_WORKITEM</b> structure that was returned by a p
        <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocateioworkitem">
      NdisAllocateIoWorkItem</a> function.
 
-### -param WorkItemContext 
+### -param WorkItemContext [in]
 
-[in]
+
 A pointer to a caller-supplied context area that NDIS passes through to the callback routine. 
      <i>WorkItemContext</i> can be any caller-specified data that the driver requires to manage the work
      item.

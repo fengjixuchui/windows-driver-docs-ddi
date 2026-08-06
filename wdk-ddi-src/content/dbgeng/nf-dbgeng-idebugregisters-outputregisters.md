@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugRegisters.OutputRegisters
 title: IDebugRegisters::OutputRegisters (dbgeng.h)
-description: The OutputRegisters method formats and sends the target's registers to the clients as output.
+description: The OutputRegisters method formats and sends the target's registers to the clients as output. This method belongs to the IDebugRegisters interface.
 old-location: debugger\outputregisters.htm
 tech.root: debugger
-ms.assetid: d1354ab7-4d7d-4cc2-8e30-763d8b881a11
 ms.date: 05/03/2018
 keywords: ["IDebugRegisters::OutputRegisters"]
 ms.keywords: IDebugRegisters interface [Windows Debugging],OutputRegisters method, IDebugRegisters.OutputRegisters, IDebugRegisters2 interface [Windows Debugging],OutputRegisters method, IDebugRegisters2::OutputRegisters, IDebugRegisters::OutputRegisters, IDebugRegisters_65d62961-afc5-4609-86d2-c55757fe6ce1.xml, OutputRegisters, OutputRegisters method [Windows Debugging], OutputRegisters method [Windows Debugging],IDebugRegisters interface, OutputRegisters method [Windows Debugging],IDebugRegisters2 interface, dbgeng/IDebugRegisters2::OutputRegisters, dbgeng/IDebugRegisters::OutputRegisters, debugger.outputregisters
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugRegisters.OutputRegisters
- - IDebugRegisters2.OutputRegisters
+ - IDebugRegisters::OutputRegisters
 ---
 
 # IDebugRegisters::OutputRegisters
@@ -51,14 +49,14 @@ The <b>OutputRegisters</b> method formats and sends the target's <a href="/windo
 
 ## -parameters
 
-### -param OutputControl 
+### -param OutputControl [in]
 
-[in]
+
 Specifies which clients should be sent the output of the formatted registers.  See <a href="/windows-hardware/drivers/debugger/debug-outctl-xxx">DEBUG_OUTCTL_XXX</a> for possible values.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies which set of registers to print.  This can either be DEBUG_REGISTERS_DEFAULT to print commonly used registers, DEBUG_REGISTERS_ALL to print all the sets of registers, or a combination of the values listed in the following table.
 
 <table>
@@ -139,3 +137,4 @@ For an overview of the <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-i
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugregisters2-outputregisters2">OutputRegisters2</a>
+

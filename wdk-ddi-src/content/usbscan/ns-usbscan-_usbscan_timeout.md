@@ -4,7 +4,6 @@ title: _USBSCAN_TIMEOUT (usbscan.h)
 description: The USBSCAN_TIMEOUT structure stores time-out values for USB bulk IN and bulk OUT operations, and interrupts.
 old-location: image\usbscan_timeout.htm
 tech.root: image
-ms.assetid: afa900fc-7297-425b-8308-18806d7d97d3
 ms.date: 05/03/2018
 keywords: ["USBSCAN_TIMEOUT structure"]
 ms.keywords: "*PUSBSCAN_TIMEOUT, PUSBSCAN_TIMEOUT, PUSBSCAN_TIMEOUT structure pointer [Imaging Devices], USBSCAN_TIMEOUT, USBSCAN_TIMEOUT structure [Imaging Devices], _USBSCAN_TIMEOUT, image.usbscan_timeout, stifnc_ebdd7bda-2eb0-446c-a52c-e9a80f6478da.xml, usbscan/PUSBSCAN_TIMEOUT, usbscan/USBSCAN_TIMEOUT"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - usbscan.h
 api_name:
+ - _USBSCAN_TIMEOUT
+ - PUSBSCAN_TIMEOUT
  - USBSCAN_TIMEOUT
 ---
 
@@ -75,3 +76,4 @@ The USBSCAN_TIMEOUT structure is used as a parameter to <a href="/windows/win32/
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/usbscan/ni-usbscan-ioctl_set_timeout">IOCTL_SET_TIMEOUT</a>
+

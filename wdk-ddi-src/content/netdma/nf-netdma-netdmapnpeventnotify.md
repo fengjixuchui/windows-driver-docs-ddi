@@ -4,7 +4,6 @@ title: NetDmaPnPEventNotify function (netdma.h)
 description: The NetDmaPnPEventNotify function indicates a power state change for a NetDMA provider device.
 old-location: netvista\netdmapnpeventnotify.htm
 tech.root: netvista
-ms.assetid: a0f0fdbc-089c-4bfb-ba5f-eaff6042621c
 ms.date: 05/02/2018
 keywords: ["NetDmaPnPEventNotify function"]
 ms.keywords: NetDmaPnPEventNotify, NetDmaPnPEventNotify function [Network Drivers Starting with Windows Vista], netdma/NetDmaPnPEventNotify, netdma_ref_406452bc-e56a-47da-9e7a-09fb4aebe1eb.xml, netvista.netdmapnpeventnotify
@@ -53,17 +52,17 @@ in Windows 8 and later.</div><div> </div>The
 
 ## -parameters
 
-### -param NetDmaProviderHandle 
+### -param NetDmaProviderHandle [in]
 
-[in]
+
 A handle that identifies a DMA provider. A DMA provider driver receives this handle from the
      NetDMA interface in a call to the 
      <a href="/windows-hardware/drivers/ddi/netdma/nf-netdma-netdmaregisterprovider">
      NetDmaRegisterProvider</a> function.
 
-### -param PnPEvent 
+### -param PnPEvent [in]
 
-[in]
+
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/netdma/ns-netdma-_net_dma_pnp_notification">NET_DMA_PNP_NOTIFICATION</a> structure
      that specifies a NetDMA PnP and power management event.

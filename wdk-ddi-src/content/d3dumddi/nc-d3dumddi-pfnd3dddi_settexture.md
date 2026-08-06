@@ -4,7 +4,6 @@ title: PFND3DDDI_SETTEXTURE (d3dumddi.h)
 description: The SetTexture function inserts a texture at a particular stage in a multiple-texture group.
 old-location: display\settexture.htm
 tech.root: display
-ms.assetid: b2ed86c5-cd4f-4aaa-a062-4c7ae4e088df
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETTEXTURE callback function"]
 ms.keywords: PFND3DDDI_SETTEXTURE, PFND3DDDI_SETTEXTURE callback, SetTexture, SetTexture callback function [Display Devices], UserModeDisplayDriver_Functions_f85a8797-cbcc-40df-a339-af69ce128e95.xml, d3dumddi/SetTexture, display.settexture
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - SetTexture
-product:
- - Windows
+ - PFND3DDDI_SETTEXTURE
 ---
 
 # PFND3DDDI_SETTEXTURE callback function
@@ -56,13 +53,13 @@ The <i>SetTexture</i> function inserts a texture at a particular stage in a mult
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hTexture* [in]
 
 A handle to the texture to insert.
 
-### -param Arg3
+### -param unnamedParam3
 
 ## -returns
 
@@ -71,3 +68,4 @@ A handle to the texture to insert.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

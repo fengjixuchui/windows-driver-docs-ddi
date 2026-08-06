@@ -2,17 +2,15 @@
 UID: NF:printerextension.IPrintSchemaParameterInitializer.put_Value
 title: IPrintSchemaParameterInitializer::put_Value (printerextension.h)
 description: The Value (put_Value) property modifies the value of the IPrintSchemaParameterInitializer object.
-old-location: print\iprintschemaparameterinitializer_putvalue.htm
 tech.root: print
-ms.assetid: B0F003B4-D82D-4110-B53A-CDE45B75DC8C
-ms.date: 10/01/2020
+ms.date: 08/02/2022
 keywords: ["IPrintSchemaParameterInitializer::put_Value"]
 ms.keywords: IPrintSchemaParameterInitializer interface [Print Devices],Value property, IPrintSchemaParameterInitializer,put_Value, IPrintSchemaParameterInitializer.Value, IPrintSchemaParameterInitializer.put_Value, IPrintSchemaParameterInitializer::Value, IPrintSchemaParameterInitializer::put_Value, Value property [Print Devices], Value property [Print Devices],IPrintSchemaParameterInitializer interface, print.iprintschemaparameterinitializer_putvalue, printerextension/IPrintSchemaParameterInitializer::Value, printerextension/IPrintSchemaParameterInitializer::put_Value, put_Value
 req.header: printerextension.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Windows 8.1
-req.target-min-winversvr: Windows Server 2012 R2
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 
@@ -38,11 +36,8 @@ api_type:
 api_location:
  - Printerextension.h
 api_name:
- - IPrintSchemaParameterInitializer.Value
- - IPrintSchemaParameterInitializer.put_Value
+ - IPrintSchemaParameterInitializer::put_Value
 ---
-
-# IPrintSchemaParameterInitializer::put_Value
 
 ## -description
 
@@ -53,6 +48,14 @@ In PrintTicket XML, that's the value of the **psf:Value** child element for the 
 This property is write-only.
 
 ## -parameters
+
+### -param pVar
+
+Defines the **VARIANT** parameter *pVar*.
+
+## -returns
+
+Returns an **HRESULT** value. If the property call was not successful, it returns the appropriate **HRESULT** error code.
 
 ## -remarks
 

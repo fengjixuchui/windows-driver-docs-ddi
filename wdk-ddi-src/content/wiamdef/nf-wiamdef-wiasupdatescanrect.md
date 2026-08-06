@@ -4,7 +4,6 @@ title: wiasUpdateScanRect function (wiamdef.h)
 description: The wiasUpdateScanRect function updates the scanning area sizes of the scanning device.
 old-location: image\wiasupdatescanrect.htm
 tech.root: image
-ms.assetid: f8184ae1-878f-46fc-bddc-66c065bc9e75
 ms.date: 05/03/2018
 keywords: ["wiasUpdateScanRect function"]
 ms.keywords: image.wiasupdatescanrect, wiamdef/wiasUpdateScanRect, wiasFncs_ef2b5686-5026-469b-8133-d2c37fddb732.xml, wiasUpdateScanRect, wiasUpdateScanRect function [Imaging Devices]
@@ -50,14 +49,14 @@ The <b>wiasUpdateScanRect</b> function updates the scanning area sizes of the sc
 
 ## -parameters
 
-### -param pWiasContext 
+### -param pWiasContext [in]
 
-[in]
+
 Pointer to a WIA item context.
 
-### -param pContext 
+### -param pContext [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_wia_property_context">WIA_PROPERTY_CONTEXT</a> structure containing the property context, created by a prior call to <a href="/windows-hardware/drivers/ddi/wiamdef/nf-wiamdef-wiascreatepropcontext">wiasCreatePropContext</a>.
 
 ### -param lWidth

@@ -4,8 +4,7 @@ title: IoReuseIrp function (wdm.h)
 description: The IoReuseIrp routine reinitializes an IRP so that it can be reused.
 old-location: kernel\ioreuseirp.htm
 tech.root: kernel
-ms.assetid: 18ad2c76-110f-45a9-986b-67e7c81f256f
-ms.date: 04/30/2018
+ms.date: 12/15/2021
 keywords: ["IoReuseIrp function"]
 ms.keywords: IoReuseIrp, IoReuseIrp routine [Kernel-Mode Driver Architecture], k104_548c8bd2-bc09-4ee6-b373-d244f1f11daa.xml, kernel.ioreuseirp, wdm/IoReuseIrp
 req.header: wdm.h
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,13 +49,13 @@ The <b>IoReuseIrp</b> routine reinitializes an IRP so that it can be reused.
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in, out]
 
-[in, out]
+
 Pointer to the IRP to be reinitialized for reuse. 
 
 
-### - Iostatus [in]
+### -param Iostatus [in]
 
 Specifies the NTSTATUS value to be set in the IRP after it is reinitialized.
 

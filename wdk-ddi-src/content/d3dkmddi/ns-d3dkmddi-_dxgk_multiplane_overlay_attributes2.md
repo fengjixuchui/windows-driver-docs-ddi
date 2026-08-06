@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2
 title: _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2 (d3dkmddi.h)
 description: DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2 is used by the display miniport driver to specify overlay plane attributes.
 old-location: display\dxgk_multiplane_overlay_attributes2.htm
-ms.assetid: 48C481EF-F3A1-48BF-B251-86D06AC125CC
 ms.date: 05/10/2018
 keywords: ["DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2 structure"]
 ms.keywords: DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2, DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2 structure [Display Devices], _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2, display.dxgk_multiplane_overlay_attributes2
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2
  - DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2
 ---
 
@@ -147,3 +147,4 @@ Specifies the color key value used when color key blending is enabled for legacy
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_multiplane_overlay_video_frame_format">DXGK_MULTIPLANE_OVERLAY_VIDEO_FRAME_FORMAT</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugBreakpoint2.GetDataParameters
 title: IDebugBreakpoint2::GetDataParameters (dbgeng.h)
-description: The GetDataParameters method returns the parameters for a processor breakpoint.
+description: The GetDataParameters method returns the parameters for a processor breakpoint. This method belongs to the IDebugBreakpoint2 interface.
 old-location: debugger\getdataparameters.htm
 tech.root: debugger
-ms.assetid: e281c67a-df97-464e-9996-b15c18172dc4
 ms.date: 05/03/2018
 keywords: ["IDebugBreakpoint2::GetDataParameters"]
 ms.keywords: ComOther_297fe316-4a1a-476b-a804-056bb56b6e77.xml, GetDataParameters, GetDataParameters method [Windows Debugging], GetDataParameters method [Windows Debugging],IDebugBreakpoint interface, GetDataParameters method [Windows Debugging],IDebugBreakpoint2 interface, IDebugBreakpoint interface [Windows Debugging],GetDataParameters method, IDebugBreakpoint2 interface [Windows Debugging],GetDataParameters method, IDebugBreakpoint2.GetDataParameters, IDebugBreakpoint2::GetDataParameters, IDebugBreakpoint::GetDataParameters, dbgeng/IDebugBreakpoint2::GetDataParameters, dbgeng/IDebugBreakpoint::GetDataParameters, debugger.getdataparameters
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugBreakpoint.GetDataParameters
- - IDebugBreakpoint2.GetDataParameters
+ - IDebugBreakpoint2::GetDataParameters
 ---
 
 # IDebugBreakpoint2::GetDataParameters
@@ -51,14 +49,14 @@ The <b>GetDataParameters</b> method returns the parameters for a processor break
 
 ## -parameters
 
-### -param Size 
+### -param Size [out]
 
-[out]
+
 The size, in bytes, of the memory block whose access triggers the breakpoint.  For more information about restrictions on the value of <i>Size</i> based on the processor type, see <a href="/windows-hardware/drivers/debugger/controlling-breakpoint-flags-and-parameters">Valid Parameters for Processor Breakpoints</a>.
 
-### -param AccessType 
+### -param AccessType [out]
 
-[out]
+
 The type of access that triggers the breakpoint.  For a list of possible values, see <a href="/windows-hardware/drivers/debugger/controlling-breakpoint-flags-and-parameters">Valid Parameters for Processor Breakpoints</a>.
 
 ## -returns
@@ -100,3 +98,4 @@ This method can also return other error values.  For more information, see <a hr
 The <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugbreakpoint2-getparameters">GetParameters</a> method also returns the information that is returned in <i>Size</i> and <i>AccessType</i>.
 
 For more information about breakpoint properties, see <a href="/windows-hardware/drivers/debugger/controlling-breakpoint-flags-and-parameters">Controlling Breakpoint Flags and Parameters</a>.
+

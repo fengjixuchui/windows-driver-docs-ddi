@@ -4,7 +4,6 @@ title: IWDFDevice2::GetDeviceStackIoTypePreference (wudfddi.h)
 description: The GetDeviceStackIoTypePreference method retrieves the buffer access methods that the framework is using for a device.
 old-location: wdf\iwdfdevice2_getdevicestackiotypepreference.htm
 tech.root: wdf
-ms.assetid: 3a1f6432-3f61-4502-ac98-fa984539f88e
 ms.date: 02/26/2018
 keywords: ["IWDFDevice2::GetDeviceStackIoTypePreference"]
 ms.keywords: GetDeviceStackIoTypePreference, GetDeviceStackIoTypePreference method, GetDeviceStackIoTypePreference method,IWDFDevice2 interface, IWDFDevice2 interface,GetDeviceStackIoTypePreference method, IWDFDevice2.GetDeviceStackIoTypePreference, IWDFDevice2::GetDeviceStackIoTypePreference, UMDFDeviceObjectRef_f6402826-fe3b-46c7-a4a8-d1d4f74e4b5c.xml, umdf.iwdfdevice2_getdevicestackiotypepreference, wdf.iwdfdevice2_getdevicestackiotypepreference, wudfddi/IWDFDevice2::GetDeviceStackIoTypePreference
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice2.GetDeviceStackIoTypePreference
+ - IWDFDevice2::GetDeviceStackIoTypePreference
 ---
 
 # IWDFDevice2::GetDeviceStackIoTypePreference
@@ -52,14 +51,14 @@ The <b>GetDeviceStackIoTypePreference</b> method retrieves the buffer access met
 
 ## -parameters
 
-### -param ReadWritePreference 
+### -param ReadWritePreference [out]
 
-[out]
+
 A pointer to a driver-allocated location that receives a <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_device_io_type">WDF_DEVICE_IO_TYPE</a>-typed value. This value identifies the buffer access method that the framework is using for a device's read and write requests.
 
-### -param IoControlPreference 
+### -param IoControlPreference [out]
 
-[out]
+
 A pointer to a driver-allocated location that receives a <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_device_io_type">WDF_DEVICE_IO_TYPE</a>-typed value. This value that identifies the buffer access method that the framework is using for a device's I/O control requests.
 
 ## -remarks
@@ -82,7 +81,6 @@ Device2->GetDeviceStackIoTypePreference(&ReadWriteAccessMethod,
                                         &IoControlAccessMethod); 
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice2">IWDFDevice2</a>
@@ -90,3 +88,4 @@ Device2->GetDeviceStackIoTypePreference(&ReadWriteAccessMethod,
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdeviceinitialize2-setiotypepreference">IWDFDeviceInitialize2::SetIoTypePreference</a>
+

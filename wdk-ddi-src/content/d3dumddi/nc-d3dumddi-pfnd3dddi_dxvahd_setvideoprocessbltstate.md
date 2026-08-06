@@ -4,7 +4,6 @@ title: PFND3DDDI_DXVAHD_SETVIDEOPROCESSBLTSTATE (d3dumddi.h)
 description: The SetVideoProcessBltState function sets the state of a bit-block transfer (bitblt) for a video processor.
 old-location: display\setvideoprocessbltstate.htm
 tech.root: display
-ms.assetid: 6796372c-279d-427c-a2a4-9b7c99494f53
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DXVAHD_SETVIDEOPROCESSBLTSTATE callback function"]
 ms.keywords: PFND3DDDI_DXVAHD_SETVIDEOPROCESSBLTSTATE, PFND3DDDI_DXVAHD_SETVIDEOPROCESSBLTSTATE callback, SetVideoProcessBltState, SetVideoProcessBltState callback function [Display Devices], UserModeDisplayDriver_Functions_58620a09-f079-4bd2-8eb9-ac619d83f20d.xml, d3dumddi/SetVideoProcessBltState, display.setvideoprocessbltstate
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - SetVideoProcessBltState
-product:
- - Windows
+ - PFND3DDDI_DXVAHD_SETVIDEOPROCESSBLTSTATE
 ---
 
 # PFND3DDDI_DXVAHD_SETVIDEOPROCESSBLTSTATE callback function
@@ -52,9 +49,9 @@ The <i>SetVideoProcessBltState</i> function sets the state of a bit-block transf
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
-### -param Arg2
+### -param unnamedParam2
 
 *hDevice* [in]
 
@@ -77,3 +74,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dd
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_dxvahd_setvideoprocessbltstate">D3DDDIARG_DXVAHD_SETVIDEOPROCESSBLTSTATE</a>
+

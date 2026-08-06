@@ -4,7 +4,6 @@ title: IMiniportWaveCyclicStream::SetState (portcls.h)
 description: The SetState method sets the new state of playback or recording for the stream.
 old-location: audio\iminiportwavecyclicstream_setstate.htm
 tech.root: audio
-ms.assetid: 61d7252e-04af-46f1-a885-4720698ae930
 ms.date: 05/08/2018
 keywords: ["IMiniportWaveCyclicStream::SetState"]
 ms.keywords: IMiniportWaveCyclicStream interface [Audio Devices],SetState method, IMiniportWaveCyclicStream.SetState, IMiniportWaveCyclicStream::SetState, SetState, SetState method [Audio Devices], SetState method [Audio Devices],IMiniportWaveCyclicStream interface, audio.iminiportwavecyclicstream_setstate, audmp-routines_46474aab-87da-4121-9cb8-ee8b280c7852.xml, portcls/IMiniportWaveCyclicStream::SetState
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWaveCyclicStream.SetState
+ - IMiniportWaveCyclicStream::SetState
 ---
 
 # IMiniportWaveCyclicStream::SetState
@@ -50,9 +49,9 @@ The <code>SetState</code> method sets the new state of playback or recording for
 
 ## -parameters
 
-### -param State 
+### -param State [in]
 
-[in]
+
 Specifies the new state for the stream. This parameter is a <a href="/windows-hardware/drivers/ddi/ks/ne-ks-ksstate">KSSTATE</a> enumeration value. For more information, see the following Remarks section.
 
 ## -returns
@@ -120,3 +119,4 @@ The <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavecycli
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ne-ks-ksstate">KSSTATE</a>
+

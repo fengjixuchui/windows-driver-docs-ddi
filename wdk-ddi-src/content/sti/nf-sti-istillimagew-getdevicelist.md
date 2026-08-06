@@ -4,7 +4,6 @@ title: IStillImageW::GetDeviceList (sti.h)
 description: The IStillImage::GetDeviceList method returns hardware characteristics for all installed still image devices.
 old-location: image\istillimage_getdevicelist.htm
 tech.root: image
-ms.assetid: 43c8a5d2-7f34-4b68-b316-020049e98444
 ms.date: 05/03/2018
 keywords: ["IStillImageW::GetDeviceList"]
 ms.keywords: GetDeviceList, GetDeviceList method [Imaging Devices], GetDeviceList method [Imaging Devices],IStillImageW interface, IStillImageW interface [Imaging Devices],GetDeviceList method, IStillImageW.GetDeviceList, IStillImageW::GetDeviceList, image.istillimage_getdevicelist, sti/IStillImageW::GetDeviceList, stifnc_eb4712d7-33b5-40d3-87f9-6f5eef639039.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - sti.h
 api_name:
- - IStillImageW.GetDeviceList
+ - IStillImageW::GetDeviceList
 ---
 
 # IStillImageW::GetDeviceList
@@ -58,14 +57,14 @@ Reserved parameter, use <b>NULL</b>.
 
 Reserved parameter, use <b>NULL</b>.
 
-### -param pdwItemsReturned 
+### -param pdwItemsReturned [out]
 
-[out]
+
 Receives the number of STI_DEVICE_INFORMATION structures supplied in the buffer referenced by <i>ppBuffer</i>.
 
-### -param ppBuffer 
+### -param ppBuffer [out]
 
-[out]
+
 Receives a handle to an STI-allocated buffer. This buffer will contain an array of <a href="/windows-hardware/drivers/ddi/sti/ns-sti-_sti_device_informationw">STI_DEVICE_INFORMATION</a> structures.
 
 ## -returns
@@ -87,3 +86,4 @@ When the caller has finished using the array of STI_DEVICE_INFORMATION structure
 
 
 <a href="/windows-hardware/drivers/ddi/_image/index">IStillImageW</a>
+

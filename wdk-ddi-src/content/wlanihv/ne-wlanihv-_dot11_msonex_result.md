@@ -1,10 +1,9 @@
 ---
 UID: NE:wlanihv._DOT11_MSONEX_RESULT
 title: _DOT11_MSONEX_RESULT (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_MSONEX_RESULT enumeration is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_msonex_result.htm
 tech.root: netvista
-ms.assetid: d5870125-2c0f-4cb9-ad2a-dc4939745504
 ms.date: 02/16/2018
 keywords: ["DOT11_MSONEX_RESULT enumeration"]
 ms.keywords: "*PDOT11_MSONEX_RESULT, DOT11_MSONEX_FAILURE, DOT11_MSONEX_IN_PROGRESS, DOT11_MSONEX_RESULT, DOT11_MSONEX_RESULT enumeration [Network Drivers Starting with Windows Vista], DOT11_MSONEX_SUCCESS, Native_802.11_data_types_504c48c9-585e-408b-bb8f-6668cddd7eff.xml, PDOT11_MSONEX_RESULT, PDOT11_MSONEX_RESULT enumeration pointer [Network Drivers Starting with Windows Vista], _DOT11_MSONEX_RESULT, netvista.dot11_msonex_result, wlanihv/DOT11_MSONEX_FAILURE, wlanihv/DOT11_MSONEX_IN_PROGRESS, wlanihv/DOT11_MSONEX_RESULT, wlanihv/DOT11_MSONEX_SUCCESS, wlanihv/PDOT11_MSONEX_RESULT"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DOT11_MSONEX_RESULT, *PDOT11_MSONEX_RESULT
-req.product: Windows 10 or later.
 f1_keywords:
  - _DOT11_MSONEX_RESULT
  - wlanihv/_DOT11_MSONEX_RESULT
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
+ - _DOT11_MSONEX_RESULT
+ - PDOT11_MSONEX_RESULT
  - DOT11_MSONEX_RESULT
 ---
 
@@ -96,3 +96,4 @@ After the IHV Extensions DLL initiates an 802.1X authentication operation, the o
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_onex_start.md">Dot11ExtStartOneX</a>
+

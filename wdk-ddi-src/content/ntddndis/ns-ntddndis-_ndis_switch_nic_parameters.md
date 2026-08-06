@@ -4,7 +4,6 @@ title: _NDIS_SWITCH_NIC_PARAMETERS (ntddndis.h)
 description: The NDIS_SWITCH_NIC_PARAMETERS structure specifies the configuration parameters for a network adapter (NIC) that is connected to a Hyper-V extensible switch port.
 old-location: netvista\ndis_switch_nic_parameters.htm
 tech.root: netvista
-ms.assetid: 52B9DD8B-E96F-464C-9D98-5EF8B6C050C5
 ms.date: 05/02/2018
 keywords: ["NDIS_SWITCH_NIC_PARAMETERS structure"]
 ms.keywords: "*PNDIS_SWITCH_NIC_PARAMETERS, NDIS_SWITCH_NIC_FLAGS_NIC_INITIALIZING, NDIS_SWITCH_NIC_PARAMETERS, NDIS_SWITCH_NIC_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_NIC_PARAMETERS, PNDIS_SWITCH_NIC_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_NIC_PARAMETERS, netvista.ndis_switch_nic_parameters, ntddndis/NDIS_SWITCH_NIC_PARAMETERS, ntddndis/PNDIS_SWITCH_NIC_PARAMETERS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_SWITCH_NIC_PARAMETERS
+ - PNDIS_SWITCH_NIC_PARAMETERS
  - NDIS_SWITCH_NIC_PARAMETERS
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure specifies the configuration para
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_NIC_PARAMETERS</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
 
@@ -138,8 +139,6 @@ The Hyper-V child partition is also known as a virtual machine (VM).
 <div class="alert"><b>Note</b>  This member is valid only if the <b>NicType</b> member contains a value of <b>NdisSwitchNicSyntheticNic</b> or <b>NdisSwitchNicEmulatedNic.</b></div>
 <div> </div>
 
-### -field VmFriendlyName
-
 ### -field NetCfgInstanceId
 
 A GUID value that specifies the <b>NetCfgInstanceId</b> registry value of the
@@ -172,15 +171,15 @@ A <b>USHORT</b> value that specifies the identifier for the preferred Non-Unifor
 <div class="alert"><b>Note</b>  This member is valid only if the <b>NicType</b> member is set to <b>NdisSwitchNicTypeSynthetic</b> or <b>NdisSwitchNicTypeEmulated</b>.</div>
 <div> </div>
 
-### -field PermanentMacAddress
+### -field PermanentMacAddress[NDIS_MAX_PHYS_ADDRESS_LENGTH]
 
 A <b>UCHAR</b> array that specifies the media access control (MAC) address as configured on the host partition for  the network adapter. This can be different from the MAC address currently in use by the network adapter.
 
-### -field VMMacAddress
+### -field VMMacAddress[NDIS_MAX_PHYS_ADDRESS_LENGTH]
 
 A <b>UCHAR</b> array that specifies the MAC address that is configured on the network adapter inside the VM itself. The field is all zeros for non VM NICs. If <i>AllowMacSpoofing</i> (from <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_security">NDIS_SWITCH_PORT_PROPERTY_SECURITY</a>) is TRUE, this address will also be applied to the <i>CurrentMacAddress.</i>
 
-### -field CurrentMacAddress
+### -field CurrentMacAddress[NDIS_MAX_PHYS_ADDRESS_LENGTH]
 
 A <b>UCHAR</b> array that specifies the MAC address that is currently being used in the switch for the network adapter. If <i>AllowMacSpoofing</i> and <i>AllowTeaming</i> are both FALSE, then this value will be equal to <i>PermanentMacAddress</i>. If <i>AllowMacSpoofing</i> is TRUE, this value will be equal to the <i>VMMacAddress</i>. If <i>AllowTeaming</i> is TRUE and teaming failover has occurred inside the VM, the <i>CurrentMacAddress</i> will be equal to the MAC address that was failed over to the network adapter or <i>PermanentMacAddress</i> if no failover has occurred.
 
@@ -193,14 +192,14 @@ For more information, see the Remarks section.
 <div class="alert"><b>Note</b>  The <b>VFAssigned</b> member is valid only if the <b>NicType</b> member contains a value of <b>NdisSwitchNicTypeEmulated</b> or <b>NdisSwitchNicTypeSynthetic</b>. This member must be set to <b>FALSE</b> if the <b>NicType</b> member contains a value of <b>NdisSwitchNicTypeExternal</b> or <b>NdisSwitchNicTypeInternal</b>.</div>
 <div> </div>
 
-### -field NdisReserved
+### -field NdisReserved[2]
 
  
 
 
 
 
-#### - VMFriendlyName
+### -field VMFriendlyName
 
 An NDIS_VM_FRIENDLYNAME value that specifies the external name of the Hyper-V child partition that is attached to the VF. This member contains the user-friendly description of the partition.
 
@@ -289,7 +288,7 @@ For more information, see <a href="/windows-hardware/drivers/network/ndis-status
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -342,3 +341,4 @@ For more information, see <a href="/windows-hardware/drivers/network/ndis-status
 
 
 <a href="/windows-hardware/drivers/network/oid-switch-nic-updated">OID_SWITCH_NIC_UPDATED</a>
+

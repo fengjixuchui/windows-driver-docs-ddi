@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_GetDeviceInfo
 title: RIL_GetDeviceInfo function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_GetDeviceInfo function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_getdeviceinfo.htm
 tech.root: netvista
-ms.assetid: b125bf24-54fa-4a2e-912a-d0d0ed2a3568
 ms.date: 05/02/2018
 keywords: ["RIL_GetDeviceInfo function"]
 ms.keywords: RIL_GetDeviceInfo, RIL_GetDeviceInfo method [Network Drivers Starting with Windows Vista], netvista.ril_getdeviceinfo, rilapi/RIL_GetDeviceInfo

@@ -4,7 +4,6 @@ title: FsRtlInitializeExtraCreateParameterList function (ntifs.h)
 description: The FsRtlInitializeExtraCreateParameterList routine initializes an extra create parameter (ECP) context structure list.
 old-location: ifsk\fsrtlinitializeextracreateparameterlist.htm
 tech.root: ifsk
-ms.assetid: 79e56363-1098-42bb-8e6a-c4b4c76e7e7c
 ms.date: 04/16/2018
 keywords: ["FsRtlInitializeExtraCreateParameterList function"]
 ms.keywords: FsRtlInitializeExtraCreateParameterList, FsRtlInitializeExtraCreateParameterList routine [Installable File System Drivers], fsrtlref_785d3f11-f568-491e-9cdb-abba70ae3eeb.xml, ifsk.fsrtlinitializeextracreateparameterlist, ntifs/FsRtlInitializeExtraCreateParameterList
@@ -50,9 +49,9 @@ The <b>FsRtlInitializeExtraCreateParameterList</b> routine initializes an extra 
 
 ## -parameters
 
-### -param EcpList 
+### -param EcpList [in, out]
 
-[in, out]
+
 Pointer to the <a href="/previous-versions/windows/hardware/drivers/ff540148(v=vs.85)">ECP_LIST</a> structure to initialize.
 
 ## -returns

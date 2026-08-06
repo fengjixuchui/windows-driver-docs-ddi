@@ -1,10 +1,9 @@
 ---
 UID: NE:rilapitypes.RILMSGACKSTATUS
 title: RILMSGACKSTATUS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this enumeration in your code. Microsoft reserves the RILMSGACKSTATUS enumeration for internal use only."
 old-location: netvista\rilmsgackstatus.htm
 tech.root: netvista
-ms.assetid: 551193d0-596c-40bf-9a31-f8b6eb330e25
 ms.date: 05/02/2018
 keywords: ["RILMSGACKSTATUS enumeration"]
 ms.keywords: RILMSGACKSTATUS, RILMSGACKSTATUS enumeration [Network Drivers Starting with Windows Vista], RIL_MSGACKSTATUS_ERROR, RIL_MSGACKSTATUS_FAIL_MEM_FULL, RIL_MSGACKSTATUS_MAX, netvista.rilmsgackstatus, ntddrilapitypes/RILMSGACKSTATUS, ntddrilapitypes/RIL_MSGACKSTATUS_ERROR, ntddrilapitypes/RIL_MSGACKSTATUS_FAIL_MEM_FULL, ntddrilapitypes/RIL_MSGACKSTATUS_MAX

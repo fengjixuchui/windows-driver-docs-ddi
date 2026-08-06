@@ -4,7 +4,6 @@ title: PFND3DDDI_FINISHSESSIONKEYREFRESH (d3dumddi.h)
 description: The FinishSessionKeyRefresh function indicates that all buffers from that point in time use the updated session key value.
 old-location: display\finishsessionkeyrefresh.htm
 tech.root: display
-ms.assetid: e245f6f9-f4ea-429d-8421-be4fef1bf17e
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_FINISHSESSIONKEYREFRESH callback function"]
 ms.keywords: FinishSessionKeyRefresh, FinishSessionKeyRefresh callback function [Display Devices], PFND3DDDI_FINISHSESSIONKEYREFRESH, PFND3DDDI_FINISHSESSIONKEYREFRESH callback, UserModeDisplayDriver_Functions_6b7be711-8539-4b49-99d0-efbd424b33cc.xml, d3dumddi/FinishSessionKeyRefresh, display.finishsessionkeyrefresh
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - FinishSessionKeyRefresh
-product:
- - Windows
+ - PFND3DDDI_FINISHSESSIONKEYREFRESH
 ---
 
 # PFND3DDDI_FINISHSESSIONKEYREFRESH callback function
@@ -56,7 +53,7 @@ The <i>FinishSessionKeyRefresh</i> function indicates that all buffers from that
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -90,3 +87,4 @@ When the runtime subsequently calls the driver's <i>FinishSessionKeyRefresh</i> 
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_startsessionkeyrefresh">StartSessionKeyRefresh</a>
+

@@ -2,8 +2,10 @@
   "tech": "kernel",
   "headers": [
     "aux_klib.h",
+    "ffainterface.h",
     "ioaccess.h",
     "iointex.h",
+    "lkmdtel.h",
     "miniport.h",
     "ntddk.h",
     "ntddsfio.h",
@@ -15,13 +17,15 @@
     "pcivirt.h",
     "pep_x.h",
     "pepfx.h",
+    "prminterface.h",
     "procgrp.h",
+    "usermode_accessors.h",
     "vpci.h",
     "wdm.h",
     "wdmsec.h",
     "wmidata.h",
     "wmilib.h",
-    "wmistr.h",
+    "wmistr.h"
   ],
-  "displayName": "Windows kernel"
+  "displayName": "Kernel"
 }

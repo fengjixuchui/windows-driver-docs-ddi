@@ -4,7 +4,6 @@ title: _SM_GetBindingSupport_OUT (hbapiwmi.h)
 description: The SM_GetBindingSupport_OUT structure is used to receive output parameters from the SM_GetBindingSupport method.
 old-location: storage\sm_getbindingsupport_out.htm
 tech.root: storage
-ms.assetid: 4f45e2ad-19f9-4308-8d63-edf066545e07
 ms.date: 03/29/2018
 keywords: ["SM_GetBindingSupport_OUT structure"]
 ms.keywords: "*PSM_GetBindingSupport_OUT, PSM_GetBindingSupport_OUT, PSM_GetBindingSupport_OUT structure pointer [Storage Devices], SM_GetBindingSupport_OUT, SM_GetBindingSupport_OUT structure [Storage Devices], _SM_GetBindingSupport_OUT, hbapiwmi/PSM_GetBindingSupport_OUT, hbapiwmi/SM_GetBindingSupport_OUT, storage.sm_getbindingsupport_out, structs-Fibre_687416b3-60d9-494f-895b-a23fcb666994.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hbapiwmi.h
 api_name:
+ - _SM_GetBindingSupport_OUT
+ - PSM_GetBindingSupport_OUT
  - SM_GetBindingSupport_OUT
 ---
 
@@ -65,3 +66,4 @@ The HBA_BIND_CAPABILITY binding capabilities.
 ## -remarks
 
 The WMI tool suite generates a declaration of the SM_GetBindingSupport_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_TargetInformationMethods WMI class.
+

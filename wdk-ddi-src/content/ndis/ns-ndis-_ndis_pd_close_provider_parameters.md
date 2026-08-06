@@ -4,7 +4,6 @@ title: _NDIS_PD_CLOSE_PROVIDER_PARAMETERS (ndis.h)
 description: This structure represents the parameters that are used when calling the OID_PD_CLOSE_PROVIDER OID.
 old-location: netvista\ndis_pd_close_provider_parameters.htm
 tech.root: netvista
-ms.assetid: 9C33CA12-E725-4634-A1EC-0A919987BA6E
 ms.date: 05/02/2018
 keywords: ["NDIS_PD_CLOSE_PROVIDER_PARAMETERS structure"]
 ms.keywords: NDIS_PD_CLOSE_PROVIDER_PARAMETERS, NDIS_PD_CLOSE_PROVIDER_PARAMETERS structure [Network Drivers Starting with Windows Vista], _NDIS_PD_CLOSE_PROVIDER_PARAMETERS, ndis/NDIS_PD_CLOSE_PROVIDER_PARAMETERS, netvista.ndis_pd_close_provider_parameters
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
+ - _NDIS_PD_CLOSE_PROVIDER_PARAMETERS
  - NDIS_PD_CLOSE_PROVIDER_PARAMETERS
 ---
 
@@ -54,7 +54,7 @@ This structure represents the parameters that are used when calling the <a href=
 
 ### -field Header
 
-The <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the <b>NDIS_PD_CLOSE_PROVIDER_PARAMETERS</b> structure. Set the members of this structure as follows:
+The <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the <b>NDIS_PD_CLOSE_PROVIDER_PARAMETERS</b> structure. Set the members of this structure as follows:
 
 <ul>
 <li><b>Type</b> = <b>NDIS_OBJECT_TYPE_DEFAULT</b></li>
@@ -76,8 +76,9 @@ This structure must be aligned on an 8-byte boundary.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/network/oid-pd-close-provider">OID_PD_CLOSE_PROVIDER</a>
+

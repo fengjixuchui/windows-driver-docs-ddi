@@ -4,7 +4,6 @@ title: MINIPORT_DISABLE_MESSAGE_INTERRUPT (ndis.h)
 description: NDIS can call a miniport driver's MiniportDisableMessageInterrupt handler to disable a message interrupt for diagnostic and troubleshooting purposes.
 old-location: netvista\miniportdisablemessageinterrupt.htm
 tech.root: netvista
-ms.assetid: 68d2076d-c991-4219-b6c3-2399ff5c11a3
 ms.date: 05/02/2018
 keywords: ["MINIPORT_DISABLE_MESSAGE_INTERRUPT callback function"]
 ms.keywords: MINIPORT_DISABLE_MESSAGE_INTERRUPT, MINIPORT_DISABLE_MESSAGE_INTERRUPT callback, MiniportDisableMessageInterrupt, MiniportDisableMessageInterrupt callback function [Network Drivers Starting with Windows Vista], ndis/MiniportDisableMessageInterrupt, ndis_interrupts_miniport_functions_ref_50d58bcc-7d77-4ca8-9419-74dd1602177d.xml, netvista.miniportdisablemessageinterrupt
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportDisableMessageInterrupt
+ - MINIPORT_DISABLE_MESSAGE_INTERRUPT
 ---
 
 # MINIPORT_DISABLE_MESSAGE_INTERRUPT callback function
@@ -54,17 +53,17 @@ NDIS can call a miniport driver's
 
 ## -parameters
 
-### -param MiniportInterruptContext 
+### -param MiniportInterruptContext [in]
 
-[in]
+
 A handle to a block of context information. The miniport driver supplied this handle in the 
      <i>MiniportInterruptContext</i> parameter that the miniport driver passed to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterinterruptex">
      NdisMRegisterInterruptEx</a> function.
 
-### -param MessageId 
+### -param MessageId [in]
 
-[in]
+
 A message-signaled interrupt. 
      <i>MessageId</i> is an index to the 
      <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_interrupt_message_info_entry">
@@ -154,3 +153,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterinterruptex">NdisMRegisterInterruptEx</a>
+

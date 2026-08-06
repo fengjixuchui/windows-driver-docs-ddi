@@ -2,11 +2,9 @@
 UID: NS:d3dumddi._D3DDDICB_SUBMITHISTORYSEQUENCE
 title: D3DDDICB_SUBMITHISTORYSEQUENCE
 ms.date: 10/05/2020
-ms.assetid: bfe7ec75-adb0-4f96-8f8c-5963f89a113b
 tech.root: display
-ms.topic: language-reference
 targetos: Windows
-description: 
+description: "Learn more about: D3DDDICB_SUBMITHISTORYSEQUENCE"
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -32,7 +30,9 @@ api_name:
  - _D3DDDICB_SUBMITHISTORYSEQUENCE
  - D3DDDICB_SUBMITHISTORYSEQUENCE
 f1_keywords:
+ - _D3DDDICB_SUBMITHISTORYSEQUENCE
  - d3dumddi/_D3DDDICB_SUBMITHISTORYSEQUENCE
+ - D3DDDICB_SUBMITHISTORYSEQUENCE
  - d3dumddi/D3DDDICB_SUBMITHISTORYSEQUENCE
 dev_langs:
  - c++

@@ -2,7 +2,6 @@
 UID: NC:dispmprt.DXGKDDI_DSITRANSMISSION
 title: DXGKDDI_DSITRANSMISSION
 ms.date: 03/24/2020
-ms.topic: language-reference
 targetos: Windows
 description: The DxgkddiDsiTransmission callback function performs a Display Serial Interface (DSI) transmission.
 tech.root: display
@@ -49,17 +48,17 @@ The *DxgkddiDsiTransmission* callback function performs a Display Serial Interfa
 
 ## -parameters
 
-### -param Context
+### -param Context [in]
 
-[in] <!-- ????? -->
+<!-- ????? -->
 
-### -param TargetId
+### -param TargetId [in]
 
-[in] Target identifier of the monitor.
+Target identifier of the monitor.
 
-### -param pArgs
+### -param pArgs [out]
 
-[out] Pointer to a [DXGI_DSI_TRANSMISSION](ns-dispmprt-dxgk_dsi_transmission.md) structure.
+Pointer to a [DXGI_DSI_TRANSMISSION](ns-dispmprt-dxgk_dsi_transmission.md) structure.
 
 ## -returns
 

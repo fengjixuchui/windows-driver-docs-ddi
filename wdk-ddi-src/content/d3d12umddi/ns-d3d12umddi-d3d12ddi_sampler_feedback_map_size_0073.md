@@ -2,11 +2,9 @@
 UID: NS:d3d12umddi.D3D12DDI_SAMPLER_FEEDBACK_MAP_SIZE_0073
 title: D3D12DDI_SAMPLER_FEEDBACK_MAP_SIZE_0073
 ms.date: 03/24/2020
-ms.topic: language-reference
 targetos: Windows
-ms.assetid: 5c751c0a-2fec-475b-8424-ca6e1cb6fd66
 tech.root: display
-description: Deprecated - do not use.
+description: "Microsoft has deprecated the D3D12DDI_SAMPLER_FEEDBACK_MAP_SIZE_0073 structure. Don't use this structure in your code."
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 

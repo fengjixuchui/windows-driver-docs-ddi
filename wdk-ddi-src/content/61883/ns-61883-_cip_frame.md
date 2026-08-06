@@ -4,7 +4,6 @@ title: _CIP_FRAME (61883.h)
 description: The CIP_FRAME structure describes a frame to be attached to an input or output plug.
 old-location: ieee\cip_frame.htm
 tech.root: IEEE
-ms.assetid: ac9efa58-fd38-43f2-85e6-577d58735847
 ms.date: 02/15/2018
 keywords: ["CIP_FRAME structure"]
 ms.keywords: "*PCIP_FRAME, 61883/CIP_FRAME, 61883/PCIP_FRAME, 61883_structures_1fd796fa-88d2-4dc4-a440-89bf50b81ae8.xml, CIP_FRAME, CIP_FRAME structure [Buses], IEEE.cip_frame, PCIP_FRAME, PCIP_FRAME structure pointer [Buses], _CIP_FRAME"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _CIP_FRAME
+ - PCIP_FRAME
  - CIP_FRAME
 ---
 
@@ -134,7 +135,6 @@ ULONG
    );
 ```
 
-
 ### -field ValidateContext
 
 Points to an optional caller-defined context for the function at <b>pfnValidate</b>. If the function does not require a context, <b>ValidateContext</b> can be <b>NULL</b>.
@@ -157,7 +157,6 @@ ULONG
 
 
 
-#####
 
 ### -field NotifyContext
 
@@ -189,8 +188,4 @@ Points to the beginning of a caller-allocated data buffer to be transmitted or r
 
 ## -see-also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536950">Av61883_AttachFrame</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536956">Av61883_CancelFrame</a>
+<a href="/windows-hardware/drivers/ddi/61883/ns-61883-_av_61883_request">AV_61883_REQUEST structure</a>

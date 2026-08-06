@@ -2,7 +2,7 @@
 UID: NF:ucmucsippm.UcmUcsiPpmCreate
 title: UcmUcsiPpmCreate function (ucmucsippm.h)
 description: Creates a Platform Policy Manager (PPM) object.
-ms.assetid: 2b0d12ae-dc1d-45ff-bde5-a589f0272e3e
+tech.root: usbref
 ms.date: 09/30/2018
 keywords: ["UcmUcsiPpmCreate function"]
 ms.keywords: UcmUcsiPpmCreate
@@ -47,21 +47,21 @@ Creates a Platform Policy Manager (PPM) object.
 
 ## -parameters
 
-### -param WdfDevice 
+### -param WdfDevice [in]
 
-[in]A handle to a framework device object that the client driver received in the previous call to [**WdfDeviceCreate**](../wdfdevice/nf-wdfdevice-wdfdevicecreate.md).
+A handle to a framework device object that the client driver received in the previous call to [**WdfDeviceCreate**](../wdfdevice/nf-wdfdevice-wdfdevicecreate.md).
 
-### -param Config 
+### -param Config [in]
 
-[in]A pointer to a caller-supplied [**UCMUCSI_PPM_CONFIG**](ns-ucmucsippm-_ucmucsi_ppm_config.md) structure that is initialized by calling [**UCMUCSI_PPM_CONFIG_INIT**](nf-ucmucsippm-ucmucsi_ppm_config_init.md). The **ConnectorCollectionHandle** member must be set to the handle retrieved in a previous call to [**UcmUcsiConnectorCollectionCreate**](nf-ucmucsippm-ucmucsiconnectorcollectioncreate.md).
+A pointer to a caller-supplied [**UCMUCSI_PPM_CONFIG**](ns-ucmucsippm-_ucmucsi_ppm_config.md) structure that is initialized by calling [**UCMUCSI_PPM_CONFIG_INIT**](nf-ucmucsippm-ucmucsi_ppm_config_init.md). The **ConnectorCollectionHandle** member must be set to the handle retrieved in a previous call to [**UcmUcsiConnectorCollectionCreate**](nf-ucmucsippm-ucmucsiconnectorcollectioncreate.md).
 
-### -param Attributes 
+### -param Attributes [in]
 
-[in]A pointer to a caller-supplied [WDF_OBJECT_ATTRIBUTES](../wdfobject/ns-wdfobject-_wdf_object_attributes.md) structure that contains attributes for the new connector collection object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
+A pointer to a caller-supplied [WDF_OBJECT_ATTRIBUTES](../wdfobject/ns-wdfobject-_wdf_object_attributes.md) structure that contains attributes for the new connector collection object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param PPMObject 
+### -param PPMObject [out]
 
-[out]A pointer to a location that receives a handle to the new PPM object.
+A pointer to a location that receives a handle to the new PPM object.
 
 ## -returns
 

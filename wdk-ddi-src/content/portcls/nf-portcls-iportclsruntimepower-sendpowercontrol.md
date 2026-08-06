@@ -4,7 +4,6 @@ title: IPortClsRuntimePower::SendPowerControl (portcls.h)
 description: The port class driver (PortCls) uses the SendPowerControl method to send power control codes to the audio adapter.
 old-location: audio\iportclsruntimepower_sendpowercontrol.htm
 tech.root: audio
-ms.assetid: 04B8EE71-59F9-4DE4-AD36-846632D3EBB4
 ms.date: 05/08/2018
 keywords: ["IPortClsRuntimePower::SendPowerControl"]
 ms.keywords: IPortClsRuntimePower interface [Audio Devices],SendPowerControl method, IPortClsRuntimePower.SendPowerControl, IPortClsRuntimePower::SendPowerControl, SendPowerControl, SendPowerControl method [Audio Devices], SendPowerControl method [Audio Devices],IPortClsRuntimePower interface, audio.iportclsruntimepower_sendpowercontrol, portcls/IPortClsRuntimePower::SendPowerControl
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IPortClsRuntimePower.SendPowerControl
+ - IPortClsRuntimePower::SendPowerControl
 ---
 
 # IPortClsRuntimePower::SendPowerControl
@@ -50,39 +49,39 @@ The port class driver (PortCls) uses the <code>SendPowerControl</code>  method t
 
 ## -parameters
 
-### -param _DeviceObject 
+### -param _DeviceObject [in]
 
-[in]
+
 The device object.
 
-### -param _PowerControlCode 
+### -param _PowerControlCode [in]
 
-[in]
+
 The power control code to be sent to the audio adapter.
 
-### -param _InBuffer 
+### -param _InBuffer [in, optional]
 
-[in, optional]
+
 The input buffer.
 
-### -param _InBufferSize 
+### -param _InBufferSize [in]
 
-[in]
+
 The size of the input buffer.
 
-### -param _OutBuffer 
+### -param _OutBuffer [out, optional]
 
-[out, optional]
+
 The output buffer.
 
-### -param _OutBufferSize 
+### -param _OutBufferSize [in]
 
-[in]
+
 The size of the output buffer.
 
-### -param _BytesReturned 
+### -param _BytesReturned [out, optional]
 
-[out, optional]
+
 The number of bytes returned.
 
 ## -returns
@@ -92,3 +91,4 @@ The <code>SendPowerControl</code> method returns STATUS_SUCCESS, if the call is 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iportclsruntimepower">IPortClsRuntimePower</a>
+

@@ -1,13 +1,10 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_CREATEVIDEOMOTIONESTIMATOR_0060
 title: PFND3D12DDI_CREATEVIDEOMOTIONESTIMATOR_0060
-description: Creates the video motion estimator.
+description: The PFND3D12DDI_CREATEVIDEOMOTIONESTIMATOR_0060 callback function creates a video motion estimator.
 tech.root: display
-ms.assetid: e1606f4a-88ed-48e0-8562-9cd27f2498ff
 ms.date: 04/04/2019
 keywords: ["PFND3D12DDI_CREATEVIDEOMOTIONESTIMATOR_0060 callback function"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: d3d12umddi.h
 req.include-header: 
 req.target-type: 
@@ -38,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CREATEVIDEOMOTIONESTIMATOR_0060
-product:
- - Windows
 dev_langs:
  - c++
 ---

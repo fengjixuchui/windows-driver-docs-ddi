@@ -3,7 +3,6 @@ UID: NE:ucmucsispec._UCSI_CONNECTOR_PARTNER_TYPE
 title: _UCSI_CONNECTOR_PARTNER_TYPE (ucmucsispec.h)
 tech.root: usbref
 description: Used in the GET_CONNECTOR_STATUS command. See Table 4-42, Offset 29.
-ms.assetid: ed586ce4-b228-479f-a60e-2a37e7755d9a
 ms.date: 09/30/2018
 keywords: ["UCSI_CONNECTOR_PARTNER_TYPE enumeration"]
 ms.keywords: _UCSI_CONNECTOR_PARTNER_TYPE, UCSI_CONNECTOR_PARTNER_TYPE,
@@ -32,6 +31,7 @@ api_location:
  - ucmucsispec.h
 api_name:
  - _UCSI_CONNECTOR_PARTNER_TYPE
+ - UCSI_CONNECTOR_PARTNER_TYPE
 ---
 
 # _UCSI_CONNECTOR_PARTNER_TYPE enumeration
@@ -39,7 +39,7 @@ api_name:
 
 ## -description
 
-Used in the GET_CONNECTOR_STATUS command. See Table 4-42, Offset 29 in [UCSI spec version 1.1](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
+Used in the GET_CONNECTOR_STATUS command. See Table 4-42, Offset 29 in [UCSI spec version 1.2](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
 
 ## -enum-fields
 

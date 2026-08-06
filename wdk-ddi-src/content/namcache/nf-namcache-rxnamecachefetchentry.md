@@ -4,7 +4,6 @@ title: RxNameCacheFetchEntry function (namcache.h)
 description: RxNameCacheFetchEntry looks for a match with a specified name string for a NAME_CACHE entry.
 old-location: ifsk\rxnamecachefetchentry.htm
 tech.root: ifsk
-ms.assetid: 1f4c50a8-2eee-46c6-8ca0-f5858d227922
 ms.date: 04/16/2018
 keywords: ["RxNameCacheFetchEntry function"]
 ms.keywords: RxNameCacheFetchEntry, RxNameCacheFetchEntry function [Installable File System Drivers], ifsk.rxnamecachefetchentry, namcache/RxNameCacheFetchEntry, rxref_8e34b551-b8ee-44e9-a0ff-bbc680e44ad6.xml
@@ -50,14 +49,14 @@ api_name:
 
 ## -parameters
 
-### -param NameCacheCtl 
+### -param NameCacheCtl [in]
 
-[in]
+
 A pointer to the NAME_CACHE_CONTROL structure to scan.
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 A pointer to the Unicode string that contains the name to match.
 
 ## -returns
@@ -72,7 +71,7 @@ The NAME_CACHE entry is removed from the active list to avoid possible problems 
 
 If a matching NAME_CACHE entry is found, no check is made for expiration. The caller must check for expiration because it might want to take some special action.
 
-As a aside effect as the name cache active list is scanned, any non-matching entries that have expired are put on the free list. The name cache lock is acquired to protect this operation.
+As a side effect as the name cache active list is scanned, any non-matching entries that have expired are put on the free list. The name cache lock is acquired to protect this operation.
 
 ## -see-also
 

@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_32
+UID: NS:ks.KSATTRIBUTE_LIST
 title: KSATTRIBUTE_LIST (ks.h)
 description: The KSATTRIBUTE_LIST structure contains an attribute defined in a KSATTRIBUTE structure.
 old-location: stream\ksattribute_list.htm
 tech.root: stream
-ms.assetid: 4E533E77-9288-45DF-8C93-2A6EACADF9FF
 ms.date: 04/23/2018
 keywords: ["KSATTRIBUTE_LIST structure"]
 ms.keywords: "*PKSATTRIBUTE_LIST, KSATTRIBUTE_LIST, KSATTRIBUTE_LIST structure [Streaming Media Devices], PKSATTRIBUTE_LIST, PKSATTRIBUTE_LIST structure pointer [Streaming Media Devices], ks/KSATTRIBUTE_LIST, ks/PKSATTRIBUTE_LIST, stream.ksattribute_list"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Ks.h
 api_name:
+ - PKSATTRIBUTE_LIST
  - KSATTRIBUTE_LIST
 ---
 
@@ -61,3 +61,4 @@ Specifies the number of attributes in the list.
 ### -field Attributes
 
   A <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksattribute">KSATTRIBUTE</a> structure who's Attribute member is set to <i>KSATTRIBUTEID_AUDIOSIGNALPROCESSING_MODE</i>. For more information,  see <a href="/windows-hardware/drivers/audio/audio-signal-processing-modes">Audio Signal Processing Modes</a>.
+

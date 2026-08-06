@@ -1,10 +1,9 @@
 ---
 UID: NS:scsi._ZONE_DESCRIPTIOR
 title: _ZONE_DESCRIPTIOR (scsi.h)
-description: Note  This structure is for internal use only and should not be called from your code. .
+description: "Don't use this structure in your code. Microsoft reserves the ZONE_DESCRIPTIOR structure for internal use only."
 old-location: storage\zone_descriptior.htm
 tech.root: storage
-ms.assetid: 8326f683-3952-486e-b322-80ce96759366
 ms.date: 03/29/2018
 keywords: ["ZONE_DESCRIPTIOR structure"]
 ms.keywords: "*PZONE_DESCRIPTIOR, PZONE_DESCRIPTIOR, PZONE_DESCRIPTIOR structure pointer [Storage Devices], ZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR structure [Storage Devices], _ZONE_DESCRIPTIOR, scsi/PZONE_DESCRIPTIOR, scsi/ZONE_DESCRIPTIOR, storage.zone_descriptior"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - scsi.h
 api_name:
+ - _ZONE_DESCRIPTIOR
+ - PZONE_DESCRIPTIOR
  - ZONE_DESCRIPTIOR
 ---
 

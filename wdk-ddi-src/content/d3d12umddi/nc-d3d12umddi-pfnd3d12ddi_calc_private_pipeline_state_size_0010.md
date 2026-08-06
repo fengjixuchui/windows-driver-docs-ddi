@@ -1,8 +1,7 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_CALC_PRIVATE_PIPELINE_STATE_SIZE_0010
 title: PFND3D12DDI_CALC_PRIVATE_PIPELINE_STATE_SIZE_0010 (d3d12umddi.h)
-description: Used to calculate the pipeline state size.
-ms.assetid: 863bec8d-f609-46e0-baef-16978d9a0d44
+description: The PFND3D12DDI_CALC_PRIVATE_PIPELINE_STATE_SIZE_0010 callback function calculates the pipeline state size.
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CALC_PRIVATE_PIPELINE_STATE_SIZE_0010 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CALC_PRIVATE_PIPELINE_STATE_SIZE_0010
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ Used to calculate the pipeline state size.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 Used to create a pipeline state.
 

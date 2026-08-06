@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_47
+UID: NS:ks.KSSTREAM_HEADER
 title: KSSTREAM_HEADER (ks.h)
 description: The KSSTREAM_HEADER structure is a variable-length structure that describes a packet of data to be read from or written to a streaming driver pin.
 old-location: stream\ksstream_header.htm
 tech.root: stream
-ms.assetid: c1057dcf-2988-460d-b006-f6cf16ec969e
 ms.date: 04/23/2018
 keywords: ["KSSTREAM_HEADER structure"]
 ms.keywords: "*PKSSTREAM_HEADER, KSSTREAM_HEADER, KSSTREAM_HEADER structure [Streaming Media Devices], PKSSTREAM_HEADER, PKSSTREAM_HEADER structure pointer [Streaming Media Devices], ks-struct_6f951af2-bee6-49ee-9df5-5291b5d00045.xml, ks/KSSTREAM_HEADER, ks/PKSSTREAM_HEADER, stream.ksstream_header"
@@ -41,6 +40,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSSTREAM_HEADER
  - KSSTREAM_HEADER
 ---
 
@@ -134,3 +134,4 @@ If you are using the [IKsReferenceClock](./nn-ks-iksreferenceclock.md) interface
 ## -see-also
 
 [KSDATAFORMAT](./ns-ks-ksdataformat.md)
+

@@ -4,7 +4,6 @@ title: KeBugCheckEx function (wdm.h)
 description: The KeBugCheckEx routine brings down the system in a controlled manner when the caller discovers an unrecoverable inconsistency that would corrupt the system if the caller continued to run.
 old-location: kernel\kebugcheckex.htm
 tech.root: kernel
-ms.assetid: 2330fda2-71f5-4a8b-8124-775a40926bc1
 ms.date: 04/30/2018
 keywords: ["KeBugCheckEx function"]
 ms.keywords: KeBugCheckEx, KeBugCheckEx routine [Kernel-Mode Driver Architecture], k105_17af10bb-b21d-408e-bf73-421ce705d117.xml, kernel.kebugcheckex, wdm/KeBugCheckEx
@@ -50,26 +49,26 @@ The <b>KeBugCheckEx</b> routine brings down the system in a controlled manner wh
 
 ## -parameters
 
-### -param BugCheckCode 
+### -param BugCheckCode [in]
 
-[in]
+
 Specifies a value that indicates the reason for the bug check.
 
-### -param BugCheckParameter1 
+### -param BugCheckParameter1 [in]
 
-[in]
 
-### -param BugCheckParameter2 
 
-[in]
+### -param BugCheckParameter2 [in]
 
-### -param BugCheckParameter3 
 
-[in]
 
-### -param BugCheckParameter4 
+### -param BugCheckParameter3 [in]
 
-[in]
+
+
+### -param BugCheckParameter4 [in]
+
+
 The four <i>BugCheckParameterX</i> values supply additional information, such as the address and data where a memory-corruption error occurred, depending on the value of <i>BugCheckCode</i>.
 
 ## -remarks
@@ -82,7 +81,7 @@ A driver or other kernel-mode component should call this routine only in cases o
 
 <b>KeBugCheckEx</b> can be useful in the early stages of developing a driver, or while it is undergoing testing. In these circumstances, the <i>BugCheckCode</i> passed to this routine should be distinct from those codes already in use by Windows or its drivers. For a list of these codes, see <a href="/windows-hardware/drivers/debugger/bug-check-code-reference2">Bug Check Codes</a>.
 
-However, even during driver development, this routine is of only limited utility, since it results in a complete system shutdown. A more effective debugging method is to attach a kernel debugger to the system and then use routines that send messages to the debugger or break into the debugger. For further information, see <a href="/windows-hardware/drivers/devtest/using-debugging-code-in-a-driver">Using Debugging Code in a Driver</a>.
+However, even during driver development, this routine is of only limited utility, since it results in a complete system shutdown. A more effective debugging method is to attach a kernel debugger to the system and then use routines that send messages to the debugger or break into the debugger. For further information, see <a href="/windows-hardware/drivers/debugger/getting-started-with-windbg--kernel-mode-">Get started with WinDbg (kernel mode)</a>.
 
 ## -see-also
 

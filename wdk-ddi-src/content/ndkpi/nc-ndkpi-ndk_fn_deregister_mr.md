@@ -4,7 +4,6 @@ title: NDK_FN_DEREGISTER_MR (ndkpi.h)
 description: The NdkDeregisterMr (NDK_FN_DEREGISTER_MR) function deregisters a memory region that was previously registered with the NdkRegisterMr (NDK_FN_REGISTER_MR) function.
 old-location: netvista\ndk_fn_deregister_mr.htm
 tech.root: netvista
-ms.assetid: 6446F3A6-550D-4498-87CF-B6FE50C67BBE
 ms.date: 05/02/2018
 keywords: ["NDK_FN_DEREGISTER_MR callback function"]
 ms.keywords: NDK_FN_DEREGISTER_MR, NDK_FN_DEREGISTER_MR callback, NdkDeregisterMr, NdkDeregisterMr callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkDeregisterMr, netvista.ndk_fn_deregister_mr
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkDeregisterMr
+ - NDK_FN_DEREGISTER_MR
 ---
 
 # NDK_FN_DEREGISTER_MR callback function
@@ -50,19 +49,19 @@ The <i>NdkDeregisterMr</i> (<i>NDK_FN_DEREGISTER_MR</i>) function deregisters a 
 
 ## -parameters
 
-### -param pNdkMr 
+### -param pNdkMr [in]
 
-[in]
+
 A pointer to an NDK memory region (MR) object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_mr">NDK_MR</a>) that is in the registered state.
 
-### -param RequestCompletion 
+### -param RequestCompletion [in]
 
-[in]
+
 A pointer to a request completion callback routine <i>NdkRequestCompletion</i> (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_request_completion">NDK_FN_REQUEST_COMPLETION</a>).
 
-### -param RequestContext 
+### -param RequestContext [in, optional]
 
-[in, optional]
+
 A context value to pass to the <i>Context</i> parameter of the  callback function that is specified in the <i>RequestCompletion</i> parameter.
 
 ## -returns
@@ -125,3 +124,4 @@ An error occurred.
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_mr">NDK_MR</a>
+

@@ -4,7 +4,6 @@ title: DXGK_BRIGHTNESS_SET_BACKLIGHT_OPTIMIZATION (dispmprt.h)
 description: Called by the Microsoft DirectX graphics kernel subsystem to set the level of optimization that the display miniport driver uses to control the brightness of an integrated display panel.
 old-location: display\dxgkddisetbacklightoptimization.htm
 tech.root: display
-ms.assetid: b8c37df8-ba86-4cfd-add0-49ba9c90f04a
 ms.date: 05/10/2018
 keywords: ["DXGK_BRIGHTNESS_SET_BACKLIGHT_OPTIMIZATION callback function"]
 ms.keywords: DXGK_BRIGHTNESS_SET_BACKLIGHT_OPTIMIZATION, DXGK_BRIGHTNESS_SET_BACKLIGHT_OPTIMIZATION callback, DxgkDdiSetBacklightOptimization, DxgkDdiSetBacklightOptimization callback function [Display Devices], display.dxgkddisetbacklightoptimization, dispmprt/DxgkDdiSetBacklightOptimization
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dispmprt.h
 api_name:
- - DxgkDdiSetBacklightOptimization
+ - DXGK_BRIGHTNESS_SET_BACKLIGHT_OPTIMIZATION
 ---
 
 # DXGK_BRIGHTNESS_SET_BACKLIGHT_OPTIMIZATION callback function
@@ -50,14 +49,14 @@ Called by the Microsoft DirectX graphics kernel subsystem to set the level of op
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.
 
-### -param OptimizationLevel 
+### -param OptimizationLevel [in]
 
-[in]
+
 A value of type <a href="/windows-hardware/drivers/ddi/d3dkmdt/ne-d3dkmdt-dxgk_backlight_optimization_level">DXGK_BACKLIGHT_OPTIMIZATION_LEVEL</a> that indicates the optimization level of brightness control.
 
 ## -returns
@@ -89,3 +88,4 @@ This function should be made pageable.
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgk_brightness_set_state">DxgkDdiSetBrightnessState</a>
+

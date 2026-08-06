@@ -4,7 +4,6 @@ title: wiasWritePageBufToStream function (wiamdef.h)
 description: The wiasWritePageBufToStream function writes the contents of a temporary page buffer to the IStream interface provided by the application.
 old-location: image\wiaswritepagebuftostream.htm
 tech.root: image
-ms.assetid: f8f8ac2a-705e-426c-8c4a-00581b8d1dfe
 ms.date: 05/03/2018
 keywords: ["wiasWritePageBufToStream function"]
 ms.keywords: image.wiaswritepagebuftostream, wiamdef/wiasWritePageBufToStream, wiasFncs_1173cf4b-d42c-4c6b-959e-68f456b78ec4.xml, wiasWritePageBufToStream, wiasWritePageBufToStream function [Imaging Devices]
@@ -50,14 +49,14 @@ The <b>wiasWritePageBufToStream</b> function writes the contents of a temporary 
 
 ## -parameters
 
-### -param pmdtc 
+### -param pmdtc [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_minidrv_transfer_context">MINIDRV_TRANSFER_CONTEXT</a> structure.
 
-### -param pstream 
+### -param pstream [in]
 
-[in]
+
 Pointer to the <b>IStream</b> data stream provided by the application. The <b>IStream</b> interface is described in the Microsoft Windows SDK documentation.
 
 ## -returns

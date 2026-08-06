@@ -4,7 +4,6 @@ title: IddCxSwapChainGetDirtyRects function (iddcx.h)
 description: An OS callback function the driver calls when it wants retrieve the dirty rects for the current frame.
 old-location: display\iddcxswapchaingetdirtyrects.htm
 tech.root: display
-ms.assetid: 4ffe3c46-f729-4088-b69e-f39bc00f40a6
 ms.date: 05/10/2018
 keywords: ["IddCxSwapChainGetDirtyRects function"]
 ms.keywords: IddCxSwapChainGetDirtyRects, IddCxSwapChainGetDirtyRects method [Display Devices], display.iddcxswapchaingetdirtyrects, iddcx/IddCxSwapChainGetDirtyRects
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: IddCxStub.lib
 req.dll: IddCx.dll
-req.irql: _Must_inspect_result_
+req.irql: 
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,19 +49,19 @@ api_name:
 
 ## -parameters
 
-### -param SwapChainObject 
+### -param SwapChainObject [in]
 
-[in]
+
 The swap-chain object whose current frame is being queried.
 
-### -param pInArgs 
+### -param pInArgs [in]
 
-[in]
+
 Input arguments of the function
 
-### -param pOutArgs 
+### -param pOutArgs [out]
 
-[out]
+
 Output  arguments of the function
 
 ## -returns

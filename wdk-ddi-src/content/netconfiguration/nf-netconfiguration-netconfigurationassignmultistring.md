@@ -3,8 +3,7 @@ UID: NF:netconfiguration.NetConfigurationAssignMultiString
 title: NetConfigurationAssignMultiString function (netconfiguration.h)
 description: The NetConfigurationAssignMultiString function assigns a set of strings to a specified value name in the registry. The strings are contained in a specified collection of framework string objects.
 tech.root: netvista
-ms.assetid: efff27e3-7d42-4c48-ad87-8ec2a5e1eb20
-ms.date: 02/07/2018
+ms.date: 03/30/2022
 keywords: ["NetConfigurationAssignMultiString function"]
 ms.keywords: NetConfigurationAssignMultiString
 req.header: netconfiguration.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.21
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -49,15 +48,15 @@ The **NetConfigurationAssignMultiString** function assigns a set of strings to a
 
 ## -parameters
 
-### -param Configuration
+### -param Configuration [_In_]
 
 A handle to a NETCONFIGURATION object that represents an opened registry key.
 
-### -param ValueName
+### -param ValueName [_In_]
 
 A pointer to a [**UNICODE_STRING**](/windows/win32/api/ntdef/ns-ntdef-_unicode_string) structure that contains a value name.
 
-### -param Collection
+### -param Collection [_In_]
 
 A handle to a framework collection object that represents a collection of framework string objects.
 

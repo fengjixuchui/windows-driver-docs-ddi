@@ -3,7 +3,6 @@ UID: NF:ring.NetRingGetRangeCount
 title: NetRingGetRangeCount function (ring.h)
 description: Calculates the number of elements contained in a range of the specified net ring buffer.
 tech.root: netvista
-ms.assetid: 665010d3-f177-470c-a721-188c81a4cae7
 ms.date: 01/31/2019
 keywords: ["NetRingGetRangeCount function"]
 ms.keywords: NetRingGetRangeCount
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.29
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -30,13 +29,13 @@ targetos: Windows
 f1_keywords:
  - NetRingGetRangeCount
  - ring/NetRingGetRangeCount
-topictype:
+topic_type:
  - apiref
-apitype:
+api_type:
  - HeaderDef
-apilocation:
+api_location:
  - ring.h
-apiname:
+api_name:
  - NetRingGetRangeCount
 ---
 
@@ -49,15 +48,15 @@ Calculates the number of elements contained in a range of the specified net ring
 
 ## -parameters
 
-### -param RingBuffer
+### -param Ring [in]
 
 A pointer to a [**NET_RING**](../ring/ns-ring-_net_ring.md).
 
-### -param StartIndex
+### -param StartIndex [in]
 
 The inclusive start of the range to measure.
 
-### -param EndIndex
+### -param EndIndex [in]
 
 The exclusive end of the range to measure.
 

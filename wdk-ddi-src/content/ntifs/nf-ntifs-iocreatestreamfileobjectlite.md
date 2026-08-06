@@ -4,14 +4,13 @@ title: IoCreateStreamFileObjectLite function (ntifs.h)
 description: The IoCreateStreamFileObjectLite routine creates a new stream file object, but does not cause an IRP_MJ_CLEANUP request to be sent to the file system driver stack.
 old-location: ifsk\iocreatestreamfileobjectlite.htm
 tech.root: ifsk
-ms.assetid: 79c6438c-ba8c-4fc5-8c3f-5865a51869b7
 ms.date: 04/16/2018
 keywords: ["IoCreateStreamFileObjectLite function"]
 ms.keywords: IoCreateStreamFileObjectLite, IoCreateStreamFileObjectLite routine [Installable File System Drivers], ifsk.iocreatestreamfileobjectlite, ioref_0e35141f-7028-47b0-8dc1-0bd9d1c4e0be.xml, ntifs/IoCreateStreamFileObjectLite
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,14 +49,14 @@ The <b>IoCreateStreamFileObjectLite</b> routine creates a new stream file object
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in, optional]
 
-[in, optional]
+
 A pointer to the file object to which the new stream file is related. This parameter is optional and can be <b>NULL</b>.
 
-### -param DeviceObject 
+### -param DeviceObject [in, optional]
 
-[in, optional]
+
 A pointer to a device object for the device on which the stream file is to be opened. If the caller specifies a non-<b>NULL</b> value for <i>FileObject</i>, the value of <i>DeviceObject</i> is ignored. Otherwise, the caller must specify a non-<b>NULL</b> value for <i>DeviceObject</i>.
 
 ## -returns

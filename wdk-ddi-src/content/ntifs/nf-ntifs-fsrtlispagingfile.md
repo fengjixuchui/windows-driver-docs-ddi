@@ -4,14 +4,13 @@ title: FsRtlIsPagingFile function (ntifs.h)
 description: The FsRtlIsPagingFile routine determines whether a given file is a paging file.
 old-location: ifsk\fsrtlispagingfile.htm
 tech.root: ifsk
-ms.assetid: 85363a0b-0e62-499e-bcdb-4b86c4a0c3a0
 ms.date: 04/16/2018
 keywords: ["FsRtlIsPagingFile function"]
 ms.keywords: FsRtlIsPagingFile, FsRtlIsPagingFile routine [Installable File System Drivers], fsrtlref_80254cb1-bb65-4b1b-8fe4-c975b0f00c63.xml, ifsk.fsrtlispagingfile, ntifs/FsRtlIsPagingFile
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
+req.target-min-winverclnt: Windows 2000 SP4 Update Rollup; Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,9 +49,9 @@ The <b>FsRtlIsPagingFile</b> routine determines whether a given file is a paging
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to a file object for the file.
 
 ## -returns

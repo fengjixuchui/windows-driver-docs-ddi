@@ -4,7 +4,6 @@ title: DUMP_WRITE (ntdddump.h)
 description: The Dump_Write callback routine is called before the write to the dump port driver. The filter driver can access the dump data at this time.
 old-location: storage\dump_write.htm
 tech.root: storage
-ms.assetid: c7eda6a7-a1ce-43a3-b0e4-41f5afc61be6
 ms.date: 03/29/2018
 keywords: ["DUMP_WRITE callback function"]
 ms.keywords: Dump_Write, Dump_Write routine [Storage Devices], PDUMP_WRITE, filter_rtns_acfeabaa-fc01-494a-b344-c47d1fccd1ee.xml, ntdddump/Dump_Write, storage.dump_write
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ntdddump.h
 api_name:
- - Dump_Write
+ - DUMP_WRITE
 ---
 
 # DUMP_WRITE callback function
@@ -50,19 +49,19 @@ The <i>Dump_Write</i> callback routine is called before the write to the dump po
 
 ## -parameters
 
-### -param FilterExtension 
+### -param FilterExtension [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ntdddump/ns-ntdddump-_filter_extension">FILTER_EXTENSION</a> structure.
 
-### -param DiskByteOffset 
+### -param DiskByteOffset [in, out]
 
-[in, out]
+
 The value, in bytes, relative to the destination partition for the crash dump or hibernation. Filter drivers should not modify this field.
 
-### -param Mdl 
+### -param Mdl [in, out]
 
-[in, out]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl">MDL</a> structure that describes the data buffer. If the <b>MDL</b> is modified, the size of the write operation cannot change.
 
 ## -returns
@@ -86,3 +85,4 @@ To safely modify the data for the dump write, a filter driver should allocate a 
 
 
 <a href="/windows-hardware/drivers/ddi/ntdddump/ns-ntdddump-_filter_initialization_data">FILTER_INITIALIZATION_DATA</a>
+

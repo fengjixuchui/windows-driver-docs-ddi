@@ -4,7 +4,6 @@ title: _D3DDDIARG_CONFIGUREAUTHENICATEDCHANNEL (d3dumddi.h)
 description: The D3DDDIARG_CONFIGUREAUTHENTICATEDCHANNEL structure describes the state that is set within an authenticated channel by using the ConfigureAuthenticatedChannel function.
 old-location: display\d3dddiarg_configureauthenticatedchannel.htm
 tech.root: display
-ms.assetid: 8f27fe6d-fe34-4006-a8b1-d2f2190ec044
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_CONFIGUREAUTHENICATEDCHANNEL structure"]
 ms.keywords: D3DDDIARG_CONFIGUREAUTHENTICATEDCHANNEL, D3DDDIARG_CONFIGUREAUTHENTICATEDCHANNEL structure [Display Devices], UMDisplayDriver_param_Structs_ce65fb22-4c07-4b0f-b0cc-356f0010c88d.xml, _D3DDDIARG_CONFIGUREAUTHENICATEDCHANNEL, d3dumddi/D3DDDIARG_CONFIGUREAUTHENTICATEDCHANNEL, display.d3dddiarg_configureauthenticatedchannel
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_CONFIGUREAUTHENICATEDCHANNEL
  - D3DDDIARG_CONFIGUREAUTHENTICATEDCHANNEL
 ---
 
@@ -52,17 +52,17 @@ The D3DDDIARG_CONFIGUREAUTHENTICATEDCHANNEL structure describes the state that i
 
 ## -struct-fields
 
-### -field InputSize
+### -field InputSize [in]
 
-[in] The size, in bytes, of the input data that the <b>pInputData</b> member points to.
+The size, in bytes, of the input data that the <b>pInputData</b> member points to.
 
-### -field pInputData
+### -field pInputData [in]
 
-[in] A pointer to a buffer that describes the configuration data to set. The definition of the input buffer depends on the configuration data that is set. The buffer that <b>pInputData</b> points to is defined identically to the input buffer that is passed to the <b>IDirect3DAuthenticatedChannel::Configure</b> method. For more information about <b>IDirect3DAuthenticatedChannel::Configure</b>, see the Windows SDK documentation.
+A pointer to a buffer that describes the configuration data to set. The definition of the input buffer depends on the configuration data that is set. The buffer that <b>pInputData</b> points to is defined identically to the input buffer that is passed to the <b>IDirect3DAuthenticatedChannel::Configure</b> method. For more information about <b>IDirect3DAuthenticatedChannel::Configure</b>, see the Windows SDK documentation.
 
-### -field pOutputData
+### -field pOutputData [in/out]
 
-[in/out] A pointer to a buffer that describes the information that the <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_configureauthenicatedchannel">ConfigureAuthenticatedChannel</a> function returns.
+A pointer to a buffer that describes the information that the <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_configureauthenicatedchannel">ConfigureAuthenticatedChannel</a> function returns.
 
 ## -remarks
 
@@ -89,3 +89,4 @@ Configuration state that an authenticated channel sets cannot be disabled by ano
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_configureauthenicatedchannel">ConfigureAuthenticatedChannel</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl2.GetExtensionFunction
 title: IDebugControl2::GetExtensionFunction (dbgeng.h)
-description: The GetExtensionFunction method returns a pointer to an extension function from an extension library.
+description: Learn about the GetExtensionFunction method, which returns a pointer to an extension function from an extension library.
 old-location: debugger\getextensionfunction.htm
 tech.root: debugger
-ms.assetid: bad50869-472c-4eb7-9bc0-0fa2d27ee753
 ms.date: 05/03/2018
 keywords: ["IDebugControl2::GetExtensionFunction"]
 ms.keywords: GetExtensionFunction, GetExtensionFunction method [Windows Debugging], GetExtensionFunction method [Windows Debugging],IDebugControl interface, GetExtensionFunction method [Windows Debugging],IDebugControl2 interface, GetExtensionFunction method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],GetExtensionFunction method, IDebugControl2 interface [Windows Debugging],GetExtensionFunction method, IDebugControl2.GetExtensionFunction, IDebugControl2::GetExtensionFunction, IDebugControl3 interface [Windows Debugging],GetExtensionFunction method, IDebugControl3::GetExtensionFunction, IDebugControl::GetExtensionFunction, IDebugControl_9f227e3a-ee1e-44d0-9675-ec773e3391e5.xml, dbgeng/IDebugControl2::GetExtensionFunction, dbgeng/IDebugControl3::GetExtensionFunction, dbgeng/IDebugControl::GetExtensionFunction, debugger.getextensionfunction
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.GetExtensionFunction
- - IDebugControl2.GetExtensionFunction
- - IDebugControl3.GetExtensionFunction
+ - IDebugControl2::GetExtensionFunction
 ---
 
 # IDebugControl2::GetExtensionFunction
@@ -52,19 +49,19 @@ The <b>GetExtensionFunction</b>  method returns a pointer to an extension functi
 
 ## -parameters
 
-### -param Handle 
+### -param Handle [in]
 
-[in]
+
 Specifies the handle of the extension library that contains the extension function.  If <i>Handle</i> is zero, the engine will walk the extension library chain searching for the extension function.
 
-### -param FuncName 
+### -param FuncName [in]
 
-[in]
+
 Specifies the name of the extension function to return.  When searching the extension libraries for the function, the debugger engine will prepend "_EFN_" to the name.  For example, if <i>FuncName</i> is "SampleFunction", the engine will search the extension libraries for "_EFN_SampleFunction".
 
-### -param Function 
+### -param Function [out]
 
-[out]
+
 Receives the extension function.
 
 ## -returns
@@ -120,3 +117,4 @@ For more information on using extension functions, see <a href="/windows-hardwar
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
+

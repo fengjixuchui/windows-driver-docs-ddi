@@ -4,7 +4,6 @@ title: _OB_POST_DUPLICATE_HANDLE_INFORMATION (wdm.h)
 description: The OB_POST_DUPLICATE_HANDLE_INFORMATION structure provides information to an ObjectPostCallback routine about a thread or process handle that has been duplicated.
 old-location: kernel\ob_post_duplicate_handle_information.htm
 tech.root: kernel
-ms.assetid: 780ace20-bb88-47fe-b504-dd6a5e903840
 ms.date: 04/30/2018
 keywords: ["OB_POST_DUPLICATE_HANDLE_INFORMATION structure"]
 ms.keywords: "*POB_POST_DUPLICATE_HANDLE_INFORMATION, OB_POST_DUPLICATE_HANDLE_INFORMATION, OB_POST_DUPLICATE_HANDLE_INFORMATION structure [Kernel-Mode Driver Architecture], POB_POST_DUPLICATE_HANDLE_INFORMATION, POB_POST_DUPLICATE_HANDLE_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _OB_POST_DUPLICATE_HANDLE_INFORMATION, kernel.ob_post_duplicate_handle_information, kstruct_c_7b277d55-5e47-4b6d-a77b-9f10decc3dbd.xml, wdm/OB_POST_DUPLICATE_HANDLE_INFORMATION, wdm/POB_POST_DUPLICATE_HANDLE_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _OB_POST_DUPLICATE_HANDLE_INFORMATION
+ - POB_POST_DUPLICATE_HANDLE_INFORMATION
  - OB_POST_DUPLICATE_HANDLE_INFORMATION
 ---
 
@@ -65,3 +66,4 @@ An <a href="/windows-hardware/drivers/kernel/access-mask">ACCESS_MASK</a> value 
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pob_post_operation_callback">ObjectPostCallback</a>
+

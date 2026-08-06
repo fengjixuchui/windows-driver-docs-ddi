@@ -1,10 +1,9 @@
 ---
 UID: NF:miniport.READ_REGISTER_UCHAR
 title: READ_REGISTER_UCHAR function (miniport.h)
-description: The READ_REGISTER_UCHAR routine reads a byte from the specified register address.
+description: The READ_REGISTER_UCHAR function (miniport.h) returns a byte read from the specified register address in resident, mapped device memory.
 old-location: kernel\read_register_uchar.htm
 tech.root: kernel
-ms.assetid: 49f9d7d7-c774-4ba5-a9f3-6d605a3de674
 ms.date: 04/30/2018
 keywords: ["READ_REGISTER_UCHAR function"]
 ms.keywords: READ_REGISTER_UCHAR, READ_REGISTER_UCHAR routine [Kernel-Mode Driver Architecture], k103_b7970afc-0b18-49c4-b873-a9fd689c0c97.xml, kernel.read_register_uchar, wdm/READ_REGISTER_UCHAR
@@ -50,7 +49,7 @@ The <b>READ_REGISTER_UCHAR</b> routine reads a byte from the specified register 
 
 ## -parameters
 
-#### - Register [in]
+### -param Register [in]
 
 Pointer to the register address, which must be a mapped range in memory space.
 

@@ -4,7 +4,6 @@ title: NdisFreeMemoryWithTagPriority function (ndis.h)
 description: The NdisFreeMemoryWithTagPriority function releases memory that was allocated with the NdisAllocateMemoryWithTagPriority function.
 old-location: netvista\ndisfreememorywithtagpriority.htm
 tech.root: netvista
-ms.assetid: 3870e2c8-22cf-4f96-8c2b-4c3cac26d50f
 ms.date: 05/02/2018
 keywords: ["NdisFreeMemoryWithTagPriority function"]
 ms.keywords: NdisFreeMemoryWithTagPriority, NdisFreeMemoryWithTagPriority function [Network Drivers Starting with Windows Vista], ndis/NdisFreeMemoryWithTagPriority, ndis_shared_memory_ref_60846563-cc80-4e5e-b9da-37bcfd5239b2.xml, netvista.ndisfreememorywithtagpriority
@@ -54,9 +53,9 @@ The
 
 ## -parameters
 
-### -param NdisHandle 
+### -param NdisHandle [in]
 
-[in]
+
 An NDIS driver or instance handle that was obtained during caller initialization. This should be
      the same handle that the driver passed to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatememorywithtagpriority">
@@ -83,16 +82,16 @@ An NDIS driver or instance handle that was obtained during caller initialization
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach">FilterAttach</a>
 
-### -param VirtualAddress 
+### -param VirtualAddress [in]
 
-[in]
+
 A pointer to the base virtual address of the allocated memory. This address was returned by the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatememorywithtagpriority">
      NdisAllocateMemoryWithTagPriority</a> function.
 
-### -param Tag 
+### -param Tag [in]
 
-[in]
+
 A string, delimited by single quotation marks, with up to four characters, usually specified in
      reversed order. The NDIS-supplied default tag for this call is 'maDN', but the caller can override this
      default by supplying an explicit value.

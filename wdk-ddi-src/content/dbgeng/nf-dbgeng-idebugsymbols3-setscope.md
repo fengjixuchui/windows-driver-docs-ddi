@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols3.SetScope
 title: IDebugSymbols3::SetScope (dbgeng.h)
-description: The SetScope method sets the current scope.
+description: The SetScope method sets the current scope. This method belongs to the IDebugSymbols3 interface.
 old-location: debugger\setscope.htm
 tech.root: debugger
-ms.assetid: 78a32ba6-5546-486a-aede-9a597b27f9fb
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::SetScope"]
 ms.keywords: IDebugSymbols interface [Windows Debugging],SetScope method, IDebugSymbols2 interface [Windows Debugging],SetScope method, IDebugSymbols2::SetScope, IDebugSymbols3 interface [Windows Debugging],SetScope method, IDebugSymbols3.SetScope, IDebugSymbols3::SetScope, IDebugSymbols::SetScope, IDebugSymbols_20e96a86-b9c3-481f-9a26-319bac975e15.xml, SetScope, SetScope method [Windows Debugging], SetScope method [Windows Debugging],IDebugSymbols interface, SetScope method [Windows Debugging],IDebugSymbols2 interface, SetScope method [Windows Debugging],IDebugSymbols3 interface, dbgeng/IDebugSymbols2::SetScope, dbgeng/IDebugSymbols3::SetScope, dbgeng/IDebugSymbols::SetScope, debugger.setscope
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.SetScope
- - IDebugSymbols2.SetScope
- - IDebugSymbols3.SetScope
+ - IDebugSymbols3::SetScope
 ---
 
 # IDebugSymbols3::SetScope
@@ -52,24 +49,24 @@ The <b>SetScope</b> method sets the current scope.
 
 ## -parameters
 
-### -param InstructionOffset 
+### -param InstructionOffset [in]
 
-[in]
+
 Specifies the location in the process's virtual address space for the scope's current instruction.  This is only used if both <i>ScopeFrame</i> and <i>ScopeContext</i> are <b>NULL</b>; otherwise, it is ignored.
 
-### -param ScopeFrame 
+### -param ScopeFrame [in, optional]
 
-[in, optional]
+
 Specifies the scope's stack frame.  For information about this structure, see <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_stack_frame">DEBUG_STACK_FRAME</a>.
 
-### -param ScopeContext 
+### -param ScopeContext [in, optional]
 
-[in, optional]
+
 Specifies the scope's <a href="/windows-hardware/drivers/debugger/scopes-and-symbol-groups">thread context</a>.  The type of the thread context is the CONTEXT structure for the target's effective processor.  The buffer <i>ScopeContext</i> must be large enough to hold this structure.  If <i>ScopeContext</i> is <b>NULL</b>, the current <a href="/windows-hardware/drivers/debugger/changing-contexts">register context</a> is used instead.
 
-### -param ScopeContextSize 
+### -param ScopeContextSize [in]
 
-[in]
+
 Specifies the size of the buffer <i>ScopeContext</i>.
 
 ## -returns
@@ -136,3 +133,4 @@ For more information about scopes, see <a href="/windows-hardware/drivers/debugg
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-setscopeframebyindex">SetScopeFrameByIndex</a>
+

@@ -4,7 +4,6 @@ title: WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP function (wdfrequest.h)
 description: The WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP function sets a new IRP in a driver's WDF_REQUEST_REUSE_PARAMS structure.
 old-location: wdf\wdf_request_reuse_params_set_new_irp.htm
 tech.root: wdf
-ms.assetid: 3a18ec1b-be02-418a-8a38-deca7178ce30
 ms.date: 02/26/2018
 keywords: ["WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP function"]
 ms.keywords: DFRequestObjectRef_1c9cbd6c-35a3-4de2-84f9-9d9788002d31.xml, WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP, WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP function, kmdf.wdf_request_reuse_params_set_new_irp, wdf.wdf_request_reuse_params_set_new_irp, wdfrequest/WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP
@@ -52,14 +51,14 @@ The <b>WDF_REQUEST_REUSE_PARAMS_SET_NEW_IRP</b> function sets a new IRP in a dri
 
 ## -parameters
 
-### -param Params 
+### -param Params [in, out]
 
-[in, out]
+
 A pointer to a caller-supplied <a href="/windows-hardware/drivers/ddi/wdfrequest/ns-wdfrequest-_wdf_request_reuse_params">WDF_REQUEST_REUSE_PARAMS</a> structure.
 
-### -param NewIrp 
+### -param NewIrp [in]
 
-[in]
+
 A pointer to a caller-supplied <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp">IRP</a> structure.
 
 ## -remarks

@@ -2,8 +2,7 @@
 UID: NC:d3d12umddi.PFND3D12DDI_DESTROY_META_COMMAND_0052
 title: PFND3D12DDI_DESTROY_META_COMMAND_0052 (d3d12umddi.h)
 description: Destroys a meta-command.
-ms.assetid: 20edf110-f620-4d1d-a495-589b50fbaf6f
-ms.date: 10/19/2018
+ms.date: 12/15/2023
 keywords: ["PFND3D12DDI_DESTROY_META_COMMAND_0052 callback function"]
 req.header: d3d12umddi.h
 req.include-header: 
@@ -42,40 +41,20 @@ dev_langs:
 
 # PFND3D12DDI_DESTROY_META_COMMAND_0052 callback function
 
-
 ## -description
 
-Destroys a meta-command.
+**PFND3D12DDI_DESTROY_META_COMMAND_0052** destroys a meta-command.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
-Handle to a meta-command.
-
-## -prototype
-
-```cpp
-//Declaration
-
-PFND3D12DDI_DESTROY_META_COMMAND_0052 Pfnd3d12ddiDestroyMetaCommand0052; 
-
-// Definition
-
-VOID Pfnd3d12ddiDestroyMetaCommand0052 
-(
-	D3D12DDI_HDEVICE Arg1
-	D3D12DDI_HMETACOMMAND_0052 Arg2
-)
-{...}
-
-```
-
-## -remarks
+Handle to a meta-command to destroy.
 
 ## -see-also
 
+[**PFND3D12DDI_CREATE_META_COMMAND_0052**](nc-d3d12umddi-pfnd3d12ddi_create_meta_command_0052.md)

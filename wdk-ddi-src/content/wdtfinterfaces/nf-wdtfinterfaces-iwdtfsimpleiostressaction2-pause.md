@@ -4,7 +4,6 @@ title: IWDTFSimpleIOStressAction2::Pause (wdtfinterfaces.h)
 description: Pauses the I/O.
 old-location: dtf\iwdtfsimpleiostressaction2_pause.htm
 tech.root: dtf
-ms.assetid: 9a0c66cd-3065-4532-8543-22d6f202fb74
 ms.date: 04/04/2018
 keywords: ["IWDTFSimpleIOStressAction2::Pause"]
 ms.keywords: IWDTFSimpleIOStressAction2 interface [Windows Device Testing Framework],Pause method, IWDTFSimpleIOStressAction2.Pause, IWDTFSimpleIOStressAction2::Pause, Microsoft.WDTF.IWDTFSimpleIOStressAction2.Pause, Microsoft::WDTF::IWDTFSimpleIOStressAction2::Pause, Pause, Pause method [Windows Device Testing Framework], Pause method [Windows Device Testing Framework],IWDTFSimpleIOStressAction2 interface, dtf.iwdtfsimpleiostressaction2_pause, wdtfinterfaces/IWDTFSimpleIOStressAction2::Pause
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTFInterfaces.Interop.dll
 api_name:
- - IWDTFSimpleIOStressAction2.Pause
+ - IWDTFSimpleIOStressAction2::Pause
 ---
 
 # IWDTFSimpleIOStressAction2::Pause
@@ -50,9 +49,9 @@ Pauses the I/O.
 
 ## -parameters
 
-### -param pResult 
+### -param pResult [out, retval]
 
-[out, retval]
+
 True if the I/O operation after the last 
 <a href="/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprintschemaasyncoperation-start">Start</a> or 
 <a href="/windows-hardware/drivers/ddi/index">Continue</a> succeeded; 
@@ -65,3 +64,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtfinterfaces/nn-wdtfinterfaces-iwdtfsimpleiostressaction2">IWDTFSimpleIOStressAction2</a>
+

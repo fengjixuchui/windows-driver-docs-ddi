@@ -4,7 +4,6 @@ title: AtaPortCompleteRequest function (irb.h)
 description: The AtaPortCompleteRequest routine completes the indicated IRB.
 old-location: storage\ataportcompleterequest.htm
 tech.root: storage
-ms.assetid: 2dddd012-9a13-49e4-9392-300938e78609
 ms.date: 03/29/2018
 keywords: ["AtaPortCompleteRequest function"]
 ms.keywords: AtaPortCompleteRequest, AtaPortCompleteRequest routine [Storage Devices], atartns_6ed3a9ca-b9b8-4d2f-a2f2-5a57db2071f8.xml, irb/AtaPortCompleteRequest, storage.ataportcompleterequest
@@ -54,14 +53,14 @@ The <b>AtaPortCompleteRequest</b> routine completes the indicated IRB.
 
 ## -parameters
 
-### -param ChannelExtension 
+### -param ChannelExtension [in]
 
-[in]
+
 A pointer to the channel extension.
 
-### -param Irb 
+### -param Irb [in]
 
-[in]
+
 A pointer to a structure of type <a href="/windows-hardware/drivers/ddi/irb/ns-irb-_ide_request_block">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) to be completed.
 
 ## -remarks

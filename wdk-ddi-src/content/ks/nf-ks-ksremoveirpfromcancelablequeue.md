@@ -4,7 +4,6 @@ title: KsRemoveIrpFromCancelableQueue function (ks.h)
 description: The KsRemoveIrpFromCancelableQueue function pops the next noncanceled IRP from the specified queue that can be canceled and removes its cancel status.
 old-location: stream\ksremoveirpfromcancelablequeue.htm
 tech.root: stream
-ms.assetid: 6bc23364-07c9-4a01-b475-e4620f62a674
 ms.date: 04/23/2018
 keywords: ["KsRemoveIrpFromCancelableQueue function"]
 ms.keywords: KsRemoveIrpFromCancelableQueue, KsRemoveIrpFromCancelableQueue function [Streaming Media Devices], ks/KsRemoveIrpFromCancelableQueue, ksfunc_35dd895b-1a0b-40a2-bc84-cdc2844bd30f.xml, stream.ksremoveirpfromcancelablequeue
@@ -51,24 +50,24 @@ The **KsRemoveIrpFromCancelableQueue** function pops the next noncanceled IRP fr
 
 ## -parameters
 
-### -param QueueHead 
+### -param QueueHead [in, out]
 
-[in, out]
+
 Points to the head of the queue from which to remove the IRP.
 
-### -param SpinLock 
+### -param SpinLock [in]
 
-[in]
+
 Points to driver's spin lock for queue access.
 
-### -param ListLocation 
+### -param ListLocation [in]
 
-[in]
+
 Indicates whether this IRP should come from the beginning or end of the queue.
 
-### -param RemovalOperation 
+### -param RemovalOperation [in]
 
-[in]
+
 Specifies whether the IRP is removed from the list or just acquired by setting the cancel function to **NULL**. If it is only acquired, the IRP must be later released with **KsReleaseIrpOnCancelableQueue** or completely removed with **KsRemoveSpecificIrpFromCancelableQueue**.
 
 ## -returns

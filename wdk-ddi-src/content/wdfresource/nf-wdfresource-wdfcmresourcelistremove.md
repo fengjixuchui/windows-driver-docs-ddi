@@ -4,7 +4,6 @@ title: WdfCmResourceListRemove function (wdfresource.h)
 description: The WdfCmResourceListRemove method removes a resource descriptor from a specified resource list.
 old-location: wdf\wdfcmresourcelistremove.htm
 tech.root: wdf
-ms.assetid: f636d85d-f7bb-4ebe-b03f-3b9c3c17bacd
 ms.date: 02/26/2018
 keywords: ["WdfCmResourceListRemove function"]
 ms.keywords: DFResourceObjectRef_5b1c7fce-45d2-454e-9d21-3f8d460ba99f.xml, WdfCmResourceListRemove, WdfCmResourceListRemove method, kmdf.wdfcmresourcelistremove, wdf.wdfcmresourcelistremove, wdfresource/WdfCmResourceListRemove
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfCmResourceListRemove</b> method removes a resource descriptor from a s
 
 ## -parameters
 
-### -param List 
+### -param List [in]
 
-[in]
+
 A handle to a framework resource-list object that represents a list of hardware resources for a device.
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 A zero-based value that is used as an index into the resource list that <i>List</i> specifies.
 
 ## -remarks

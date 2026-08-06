@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_CREATESYNCHRONIZATIONOBJECT
 title: _D3DKMT_CREATESYNCHRONIZATIONOBJECT (d3dkmthk.h)
 description: The D3DKMT_CREATESYNCHRONIZATIONOBJECT structure describes a synchronization object that the D3DKMTCreateSynchronizationObject function creates.
 old-location: display\d3dkmt_createsynchronizationobject.htm
-ms.assetid: 2e4e1fd7-9a36-4c35-8d9d-932a0d2e60a2
 ms.date: 05/10/2018
 keywords: ["D3DKMT_CREATESYNCHRONIZATIONOBJECT structure"]
 ms.keywords: D3DKMT_CREATESYNCHRONIZATIONOBJECT, D3DKMT_CREATESYNCHRONIZATIONOBJECT structure [Display Devices], OpenGL_Structs_918a7c9b-3dba-4af3-aa2c-334861301304.xml, _D3DKMT_CREATESYNCHRONIZATIONOBJECT, d3dkmthk/D3DKMT_CREATESYNCHRONIZATIONOBJECT, display.d3dkmt_createsynchronizationobject
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_CREATESYNCHRONIZATIONOBJECT
  - D3DKMT_CREATESYNCHRONIZATIONOBJECT
 ---
 
@@ -52,17 +52,17 @@ The D3DKMT_CREATESYNCHRONIZATIONOBJECT structure describes a synchronization obj
 
 ## -struct-fields
 
-### -field hDevice
+### -field hDevice [in]
 
-[in] A handle to the device that the synchronization object is associated with.
+A handle to the device that the synchronization object is associated with.
 
-### -field Info
+### -field Info [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_synchronizationobjectinfo">D3DDDI_SYNCHRONIZATIONOBJECTINFO</a> structure that describes information about the kernel-mode synchronization object.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_synchronizationobjectinfo">D3DDDI_SYNCHRONIZATIONOBJECTINFO</a> structure that describes information about the kernel-mode synchronization object.
 
-### -field hSyncObject
+### -field hSyncObject [out]
 
-[out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the kernel-mode synchronization object.
+A D3DKMT_HANDLE data type that represents a kernel-mode handle to the kernel-mode synchronization object.
 
 ## -see-also
 
@@ -71,3 +71,4 @@ The D3DKMT_CREATESYNCHRONIZATIONOBJECT structure describes a synchronization obj
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtcreatesynchronizationobject">D3DKMTCreateSynchronizationObject</a>
+

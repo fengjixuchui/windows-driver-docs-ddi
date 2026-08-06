@@ -4,7 +4,6 @@ title: WMI_SET_DATABLOCK_CALLBACK (wmilib.h)
 description: The DpWmiSetDataBlock routine changes all data items in a single instance of a data block. This routine is optional.
 old-location: kernel\dpwmisetdatablock.htm
 tech.root: kernel
-ms.assetid: 429c84e4-16da-452a-b26d-a71546299f0b
 ms.date: 04/30/2018
 keywords: ["WMI_SET_DATABLOCK_CALLBACK callback function"]
 ms.keywords: DpWmiSetDataBlock, DpWmiSetDataBlock callback function [Kernel-Mode Driver Architecture], WMI_SET_DATABLOCK_CALLBACK, WMI_SET_DATABLOCK_CALLBACK callback, k903_bb4a483a-1ffc-4664-930b-13cc3579086e.xml, kernel.dpwmisetdatablock, wmilib/DpWmiSetDataBlock
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wmilib.h
 api_name:
- - DpWmiSetDataBlock
+ - WMI_SET_DATABLOCK_CALLBACK
 ---
 
 # WMI_SET_DATABLOCK_CALLBACK callback function
@@ -50,34 +49,34 @@ The <i>DpWmiSetDataBlock</i> routine changes all data items in a single instance
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the driver's WDM <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure.
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Pointer to the IRP.
 
-### -param GuidIndex 
+### -param GuidIndex [in]
 
-[in]
+
 Specifies the data block by its zero-based index into the list of GUIDs provided by the driver in the <a href="/windows-hardware/drivers/ddi/wmilib/ns-wmilib-_wmilib_context">WMILIB_CONTEXT</a> structure it passed to <a href="/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol">WmiSystemControl</a>.
 
-### -param InstanceIndex 
+### -param InstanceIndex [in]
 
-[in]
+
 If the block specified by <i>GuidIndex </i>has multiple instances, <i>InstanceIndex</i> specifies the instance.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size in bytes of the buffer at <i>Buffer</i>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to a buffer that contains new values for the instance.
 
 ## -returns
@@ -133,3 +132,4 @@ For more information about implementing this routine, see <a href="/windows-hard
 
 
 <a href="/windows-hardware/drivers/ddi/wmilib/nf-wmilib-wmisystemcontrol">WmiSystemControl</a>
+

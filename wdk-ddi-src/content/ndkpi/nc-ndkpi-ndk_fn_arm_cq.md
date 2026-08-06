@@ -4,7 +4,6 @@ title: NDK_FN_ARM_CQ (ndkpi.h)
 description: The NdkArmCq (NDK_FN_ARM_CQ) function arms an NDK completion queue (CQ) notification.
 old-location: netvista\ndk_fn_arm_cq.htm
 tech.root: netvista
-ms.assetid: 8204EC7B-8F90-4F34-BFFB-9F1574AF69BC
 ms.date: 05/02/2018
 keywords: ["NDK_FN_ARM_CQ callback function"]
 ms.keywords: NDK_FN_ARM_CQ, NDK_FN_ARM_CQ callback, NdkArmCq, NdkArmCq callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkArmCq, netvista.ndk_fn_arm_cq
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkArmCq
+ - NDK_FN_ARM_CQ
 ---
 
 # NDK_FN_ARM_CQ callback function
@@ -50,14 +49,14 @@ The <i>NdkArmCq</i> (<i>NDK_FN_ARM_CQ</i>) function arms an NDK completion queue
 
 ## -parameters
 
-### -param pNdkCq 
+### -param pNdkCq [in]
 
-[in]
+
 A pointer to an NDK completion queue object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_cq">NDK_CQ</a>).
 
-### -param Type 
+### -param Type [in]
 
-[in]
+
 The type of notification to arm. The following notification types are defined:
 
 
@@ -124,3 +123,4 @@ If the CQ is closed while a call to <i>NdkCqNotificationCallback</i> is in-progr
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_create_cq">NDK_FN_CREATE_CQ</a>
+

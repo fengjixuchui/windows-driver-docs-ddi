@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGKARG_ENUMVIDPNCOFUNCMODALITY
 title: _DXGKARG_ENUMVIDPNCOFUNCMODALITY (d3dkmddi.h)
 description: The DXGKARG_ENUMVIDPNCOFUNCMODALITY structure contains arguments for the DxgkDdiEnumVidPnCofuncModality function.
 old-location: display\dxgkarg_enumvidpncofuncmodality.htm
-ms.assetid: a67c9e20-68bf-45d5-bbf0-d324643b2a5d
 ms.date: 05/10/2018
 keywords: ["DXGKARG_ENUMVIDPNCOFUNCMODALITY structure"]
 ms.keywords: DXGKARG_ENUMVIDPNCOFUNCMODALITY, DXGKARG_ENUMVIDPNCOFUNCMODALITY structure [Display Devices], DmStructs_7b6ad975-cf77-450d-9190-f74711cafe71.xml, _DXGKARG_ENUMVIDPNCOFUNCMODALITY, d3dkmddi/DXGKARG_ENUMVIDPNCOFUNCMODALITY, display.dxgkarg_enumvidpncofuncmodality
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_ENUMVIDPNCOFUNCMODALITY
  - DXGKARG_ENUMVIDPNCOFUNCMODALITY
 ---
 
@@ -81,3 +81,4 @@ The D3DKMDT_HVIDPN data type is defined in <i>D3dkmdt.h</i>. The D3DDDI_VIDEO_PR
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a>
+

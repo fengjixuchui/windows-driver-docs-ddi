@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.IDebugHostType2.GetFunctionVarArgsKind
 title: IDebugHostType2::GetFunctionVarArgsKind (dbgmodel.h)
 description: The GetFunctionVarArgsKind method returns whether a given function utilizes a variable argument list, and if so, what style of variable arguments it utilizes.
-ms.assetid: 321e50d4-8359-43e3-a593-18c2bb2cac87
 ms.date: 08/22/2018
 keywords: ["IDebugHostType2::GetFunctionVarArgsKind"]
 ms.keywords: IDebugHostType2::GetFunctionVarArgsKind, GetFunctionVarArgsKind, IDebugHostType2.GetFunctionVarArgsKind, IDebugHostType2::GetFunctionVarArgsKind, IDebugHostType2.GetFunctionVarArgsKind
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostType2.GetFunctionVarArgsKind
+ - IDebugHostType2::GetFunctionVarArgsKind
 ---
 
 # IDebugHostType2::GetFunctionVarArgsKind
@@ -44,12 +43,12 @@ api_name:
 
 ## -description
 
-The GetFunctionVarArgsKind method returns whether a given function utilizes a variable argument list, and if so, what style of variable arguments it utilizes. Such is defined by a member of the VarArgsKind enumeration defined as follows:
+The GetFunctionVarArgsKind method returns whether a given function utilizes a variable argument list, and if so, what style of variable arguments it utilizes. Such is defined by a member of the [VarArgsKind enumeration](ne-dbgmodel-varargskind.md) defined as follows:
 
-Enumerant |	Meaning
+|Enumerant |	Meaning|
 |---------|---------|
-VarArgsNone |	The function does not take any variable arguments.
-VarArgsCStyle |	The function is a C-style varargs function (returnType(arg1, arg2, ...)). The number of arguments reported by the function does not include the ellipsis argument. Any variable argument passing occurs after the number of arguments returned by the GetFunctionParameterTypeCount method.
+|VarArgsNone |	The function does not take any variable arguments.|
+|VarArgsCStyle |	The function is a C-style varargs function (returnType(arg1, arg2, ...)). The number of arguments reported by the function does not include the ellipsis argument. Any variable argument passing occurs after the number of arguments returned by the [GetFunctionParameterTypeCount method](nf-dbgmodel-idebughosttype2-getfunctionparametertypecount.md).|
 
 ## -parameters
 

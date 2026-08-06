@@ -1,17 +1,16 @@
 ---
 UID: NF:ntifs.ZwQueryObject
 title: ZwQueryObject function (ntifs.h)
-description: The ZwQueryObject routine provides information about a supplied object.
+description: The ZwQueryObject routine provides information about a supplied object. If the call to NtQueryObject is in user mode, use the name NtQueryObject.
 old-location: kernel\zwqueryobject.htm
 tech.root: kernel
-ms.assetid: 439658a5-d2db-4a31-a1eb-b8943c40cc96
 ms.date: 04/30/2018
 keywords: ["ZwQueryObject function"]
 ms.keywords: NtQueryObject, ZwQueryObject, ZwQueryObject routine [Kernel-Mode Driver Architecture], k111_54a1efe7-3cf8-46b3-bbb5-9e7520ba459d.xml, kernel.zwqueryobject, ntifs/NtQueryObject, ntifs/ZwQueryObject
 req.header: ntifs.h
 req.include-header: Ntifs.h, FltKernel.h
 req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winverclnt: Windows 2000.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - ZwQueryObject
- - NtQueryObject
 ---
 
 # ZwQueryObject function
@@ -51,29 +49,29 @@ The <b>ZwQueryObject</b> routine provides information about a supplied object.
 
 ## -parameters
 
-### -param Handle 
+### -param Handle [in, optional]
 
-[in, optional]
+
 A handle to the object to obtain information about.
 
-### -param ObjectInformationClass 
+### -param ObjectInformationClass [in]
 
-[in]
+
 Specifies an <a href="/windows-hardware/drivers/ddi/ntifs/ne-ntifs-_object_information_class">OBJECT_INFORMATION_CLASS</a> value that determines the type of information returned in the <i>ObjectInformation</i> buffer.
 
-### -param ObjectInformation 
+### -param ObjectInformation [out, optional]
 
-[out, optional]
+
 A pointer to a caller-allocated buffer that receives the requested information.
 
-### -param ObjectInformationLength 
+### -param ObjectInformationLength [in]
 
-[in]
+
 Specifies the size, in bytes, of the <i>ObjectInformation</i> buffer.
 
-### -param ReturnLength 
+### -param ReturnLength [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives the size, in bytes, of the requested key information. If <b>ZwQueryObject</b> returns STATUS_SUCCESS, the variable contains the amount of data returned. If <b>ZwQueryObject</b> returns STATUS_BUFFER_OVERFLOW or STATUS_BUFFER_TOO_SMALL, you can use the value of the variable to determine the required buffer size.
 
 ## -returns
@@ -124,7 +122,7 @@ The info length is not sufficient to hold the data.
 
 If the call to the <b>ZwQueryObject</b> function occurs in user mode, you should use the name "<b>NtQueryObject</b>" instead of "<b>ZwQueryObject</b>". 
 
-For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i></b> versions of a routine, see <a href="/windows-hardware/drivers/kernel/using-nt-and-zw-versions-of-the-native-system-services-routines">Using Nt and Zw Versions of the Native System Services Routines</a>.
+For calls from kernel-mode drivers, the **Nt*Xxx*** and **Zw*Xxx*** versions of a Windows Native System Services routine can behave differently in the way that they handle and interpret input parameters. For more information about the relationship between the **Nt*Xxx*** and **Zw*Xxx*** versions of a routine, see [Using Nt and Zw Versions of the Native System Services Routines](/windows-hardware/drivers/kernel/using-nt-and-zw-versions-of-the-native-system-services-routines).
 
 ## -see-also
 
@@ -141,3 +139,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/kernel/using-nt-and-zw-versions-of-the-native-system-services-routines">Using Nt and Zw Versions of the Native System Services Routines</a>
+

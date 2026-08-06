@@ -1,10 +1,9 @@
 ---
-UID: NS:winsplp.__unnamed_struct_6
+UID: NS:winsplp.BranchOfficeJobDataContainer
 title: BranchOfficeJobDataContainer (winsplp.h)
 description: This structure defines a container for one or more BranchOfficeJobData structures to sent to a server.
 old-location: print\branchofficejobdatacontainer.htm
 tech.root: print
-ms.assetid: 5C6D2FFC-DBFF-4C44-8757-ED87593A584F
 ms.date: 04/20/2018
 keywords: ["BranchOfficeJobDataContainer structure"]
 ms.keywords: "*LPBranchOfficeJobDataContainer, *PBranchOfficeJobDataContainer, BranchOfficeJobDataContainer, BranchOfficeJobDataContainer structure [Print Devices], LPBranchOfficeJobDataContainer, LPBranchOfficeJobDataContainer structure pointer [Print Devices], PBranchOfficeJobDataContainer, PBranchOfficeJobDataContainer structure pointer [Print Devices], print.branchofficejobdatacontainer, winsplp/BranchOfficeJobDataContainer, winsplp/LPBranchOfficeJobDataContainer, winsplp/PBranchOfficeJobDataContainer"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Winsplp.h
 api_name:
+ - PBranchOfficeJobDataContainer
  - BranchOfficeJobDataContainer
 ---
 
@@ -59,3 +59,4 @@ Describes the <b>DWORD</b> type member <b>cJobDataEntries</b>.
 ### -field JobData
 
 Describes the <b>BranchOfficeJobData</b> type member <b>JobData</b>.
+

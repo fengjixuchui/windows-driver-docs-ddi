@@ -3,7 +3,6 @@ UID: NS:packet._NET_PACKET
 title: _NET_PACKET (packet.h)
 description: Represents a single network packet.
 tech.root: netvista
-ms.assetid: c2fc32da-1979-45fe-96ed-0b79a48e58a3
 ms.date: 01/30/2019
 keywords: ["NET_PACKET structure"]
 ms.keywords: _NET_PACKET, NET_PACKET, *PNET_PACKET,
@@ -13,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.29
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -28,13 +27,14 @@ f1_keywords:
  - packet/_NET_PACKET
  - NET_PACKET
  - packet/NET_PACKET
-topictype:
+topic_type:
  - apiref
-apitype:
+api_type:
  - HeaderDef
-apilocation:
+api_location:
  - packet.h
-apiname:
+api_name:
+ - _NET_PACKET
  - NET_PACKET
 ---
 
@@ -61,7 +61,7 @@ A [**NET_PACKET_LAYOUT**](ns-packet-_net_packet_layout.md) structure.
 
 For transmit queues, if the host stack has enabled a task offload that uses a protocol header, specifies a read-only offset to each protocol field. For example, if TCP checksum offload is enabled, this member specifies the offset to the TCP header. Otherwise, this member is empty.
 
-For receive queues, this member is reserved.
+For receive queues, if the host stack has enabled a task offload that uses a protocol header, set the **Layer2Type**, **Layer3Type**, and **Layer4Type** flags. When there are no task offloads this member is empty.
 
 ### -field Ignore
 

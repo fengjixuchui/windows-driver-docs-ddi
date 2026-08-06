@@ -4,7 +4,6 @@ title: IF_SET_OBJECT (ndis.h)
 description: The ProviderSetObject function sets information that is associated with a network interface.
 old-location: netvista\providersetobject.htm
 tech.root: netvista
-ms.assetid: e5dcb46e-5a8a-45b7-b6aa-150a9cec0155
 ms.date: 05/02/2018
 ms.keywords: IFP_SET_OBJECT, IFP_SET_OBJECT callback function
 req.header: ndis.h
@@ -37,9 +36,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - IFP_SET_OBJECT
-product:
- - Windows
+ - IF_SET_OBJECT
 ---
 
 # IF_SET_OBJECT callback function
@@ -52,31 +49,31 @@ The
 
 ## -parameters
 
-### -param ProviderIfContext 
+### -param ProviderIfContext [in]
 
-[in]
+
 A handle that identifies the interface provider's context area for the interface. The interface
      provider passed this handle to NDIS in a call to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisifregisterinterface">
      NdisIfRegisterInterface</a> function.
 
-### -param ObjectId 
+### -param ObjectId [in]
 
-[in]
+
 An identifier for the object that is the target of the set request. For a list of object
      identifiers (OIDs) that apply to interface providers, see 
      <a href="/windows-hardware/drivers/network/mapping-of-ndis-network-interfaces-to-ndis-oids">NDIS Network Interface
      OIDs</a>.
 
-### -param InputBufferLength 
+### -param InputBufferLength [in]
 
-[in]
+
 The length, in bytes, of the buffer that 
      <i>pInputBuffer</i> points to.
 
-### -param pInputBuffer 
+### -param pInputBuffer [in]
 
-[in]
+
 A pointer to an input buffer that specifies the information that the interface provider should use
      to set the object data.
 
@@ -151,3 +148,4 @@ NDIS calls
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisifregisterinterface">NdisIfRegisterInterface</a>
+

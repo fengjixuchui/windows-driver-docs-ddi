@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_CALCPRIVATEQUERYSIZE
 title: PFND3D10DDI_CALCPRIVATEQUERYSIZE (d3d10umddi.h)
 description: The CalcPrivateQuerySize function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for a query.
 old-location: display\calcprivatequerysize.htm
-ms.assetid: 59a59aa8-085e-4bf8-8a6f-e08f2aecd894
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_CALCPRIVATEQUERYSIZE callback function"]
 ms.keywords: CalcPrivateQuerySize, CalcPrivateQuerySize callback function [Display Devices], PFND3D10DDI_CALCPRIVATEQUERYSIZE, PFND3D10DDI_CALCPRIVATEQUERYSIZE callback, UserModeDisplayDriverDx10_Functions_79c9e2a9-e27e-4bd8-bc45-20dd14f0627a.xml, d3d10umddi/CalcPrivateQuerySize, display.calcprivatequerysize
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CalcPrivateQuerySize
-product:
- - Windows
+ - PFND3D10DDI_CALCPRIVATEQUERYSIZE
 ---
 
 # PFND3D10DDI_CALCPRIVATEQUERYSIZE callback function
@@ -52,13 +49,13 @@ The <b>CalcPrivateQuerySize</b> function determines the size of the user-mode di
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCreateQuery* [in]
 
@@ -75,3 +72,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddi_devicefuncs">D3D10DDI_DEVICEFUNCS</a>
+

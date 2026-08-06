@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILOPERATORNAMES
 title: RILOPERATORNAMES (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILOPERATORNAMES structure for internal use only. Don't use this structure in your code."
 old-location: netvista\riloperatornames_2.htm
 tech.root: netvista
-ms.assetid: 5a066e35-1e8c-431e-897f-9d864991b15f
 ms.date: 02/26/2018
 keywords: ["RILOPERATORNAMES structure"]
 ms.keywords: "*LPRILOPERATORNAMES, RILOPERATORNAMES, RILOPERATORNAMES structure [Network Drivers Starting with Windows Vista], netvista.riloperatornames_2, rilapitypes/RILOPERATORNAMES"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: RILOPERATORNAMES, *LPRILOPERATORNAMES
-req.product: Windows 10 or later.
 f1_keywords:
  - RILOPERATORNAMES
  - rilapitypes/RILOPERATORNAMES
@@ -42,6 +40,7 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILOPERATORNAMES
+ - LPRILOPERATORNAMES
 ---
 
 # RILOPERATORNAMES structure (rilapitypes.h)

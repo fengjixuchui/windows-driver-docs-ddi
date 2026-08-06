@@ -4,7 +4,6 @@ title: IKsControl (ks.h)
 description: The IKsControl interface is a COM-style interface implemented on AVStream filters and pins.
 old-location: stream\ikscontrol8.htm
 tech.root: stream
-ms.assetid: 33eb0244-e0f3-4db7-b6df-2668e826fbd8
 ms.date: 04/23/2018
 keywords: ["IKsControl interface"]
 ms.keywords: IKsControl, IKsControl interface [Streaming Media Devices], IKsControl interface [Streaming Media Devices],described, avintfc_fc0ad706-c416-40f7-b213-5467fcebeb72.xml, ks/IKsControl, stream.ikscontrol8
@@ -56,6 +55,7 @@ See the [IKsControl (ksproxy.h)](../ksproxy/nn-ksproxy-ikscontrol.md) kernel-str
 The **IKsControl** interface inherits from the [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface.
 
 ## -remarks
+**NOTE:** The **IKsControl** interface should not be used with KSPROPERTY_CAMERACONTROL_EXTENDED_PROPERTY properties under [KSPROPERTYSETID_ExtendedCameraControl](/windows-hardware/drivers/stream/kspropertysetid-extendedcameracontrol) property set, please use [IMFExtendedCameraController](/windows/win32/api/mfidl/nn-mfidl-imfextendedcameracontroller).
 
 Minidrivers typically acquire the **IKsControl** interface through a call to [KsPinGetConnectedFilterInterface](./nf-ks-kspingetconnectedfilterinterface.md) or [KsPinGetConnectedPinInterface](./nf-ks-kspingetconnectedpininterface.md). Because this is a COM-style interface, the function call to obtain this interface calls the **QueryInterface** method, which in turn calls the **AddRef** method. Therefore, the minidriver does not have to perform these steps.
 

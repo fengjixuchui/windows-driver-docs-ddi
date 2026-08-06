@@ -4,7 +4,6 @@ title: FltPerformSynchronousIo function (fltkernel.h)
 description: A minifilter driver calls FltPerformSynchronousIo to initiate a synchronous I/O operation after calling FltAllocateCallbackData to allocate a callback data structure for the operation.
 old-location: ifsk\fltperformsynchronousio.htm
 tech.root: ifsk
-ms.assetid: 14f5260a-b18d-4329-a81e-d24026d9a71d
 ms.date: 04/16/2018
 keywords: ["FltPerformSynchronousIo function"]
 ms.keywords: FltApiRef_p_to_z_02aeeeab-6a33-4336-aaa4-810bd70850bc.xml, FltPerformSynchronousIo, FltPerformSynchronousIo routine [Installable File System Drivers], fltkernel/FltPerformSynchronousIo, ifsk.fltperformsynchronousio
@@ -50,9 +49,9 @@ A minifilter driver calls <b>FltPerformSynchronousIo</b> to initiate a synchrono
 
 ## -parameters
 
-### -param CallbackData 
+### -param CallbackData [in, out]
 
-[in, out]
+
 Pointer to a callback data (<a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data">FLT_CALLBACK_DATA</a>) structure allocated by a previous call to <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecallbackdata">FltAllocateCallbackData</a>. This parameter is required and cannot be <b>NULL</b>. The caller is responsible for freeing this structure when it is no longer needed by calling <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfreecallbackdata">FltFreeCallbackData</a>.
 
 ## -returns

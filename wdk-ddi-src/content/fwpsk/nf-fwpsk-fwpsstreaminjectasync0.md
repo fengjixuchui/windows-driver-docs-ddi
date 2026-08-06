@@ -4,7 +4,6 @@ title: FwpsStreamInjectAsync0 function (fwpsk.h)
 description: The FwpsStreamInjectAsync0 function injects TCP data segments into a TCP data stream.Note  FwpsStreamInjectAsync0 is a specific version of FwpsStreamInjectAsync.
 old-location: netvista\fwpsstreaminjectasync0.htm
 tech.root: netvista
-ms.assetid: d72c3067-21df-40ee-a898-100fcdc5eaca
 ms.date: 05/02/2018
 keywords: ["FwpsStreamInjectAsync0 function"]
 ms.keywords: FwpsStreamInjectAsync0, FwpsStreamInjectAsync0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsStreamInjectAsync0, netvista.fwpsstreaminjectasync0, wfp_ref_2_funct_3_fwps_R-Z_422b8f08-5d55-4825-8c17-62c4c4e2c1c1.xml
@@ -53,43 +52,43 @@ The
 
 ## -parameters
 
-### -param injectionHandle 
+### -param injectionHandle [in]
 
-[in]
+
 An injection handle that was previously created by a call to the 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsinjectionhandlecreate0">
      FwpsInjectionHandleCreate0</a> function.
 
-### -param injectionContext 
+### -param injectionContext [in, optional]
 
-[in, optional]
+
 An optional handle to the injection context.
 
-### -param flags 
+### -param flags [in]
 
-[in]
+
 Reserved. Callout drivers should set this parameter to zero.
 
-### -param flowId 
+### -param flowId [in]
 
-[in]
+
 A run-time identifier that specifies the data flow into which to inject the data. The run-time
      identifier for a data flow is provided to a callout driver through the FWPS_METADATA_FIELD_FLOW_HANDLE
      metadata value that the filter engine provided to the callout driver's 
      <a href="/windows-hardware/drivers/ddi/_netvista/">classifyFn</a> callout function.
 
-### -param calloutId 
+### -param calloutId [in]
 
-[in]
+
 The run-time identifier for the callout in the filter engine. This identifier was returned when
      the callout driver called either the 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister0">FwpsCalloutRegister0</a> or 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpscalloutregister1">FwpsCalloutRegister1</a> functions to
      register the callout with the filter engine.
 
-### -param layerId 
+### -param layerId [in]
 
-[in]
+
 The run-time identifier for the filtering layer at which the data stream is being processed. This
      value must be either FWPS_LAYER_STREAM_V4 or FWPS_LAYER_STREAM_V6. The run-time identifier for the layer
      at which the data stream is being processed is provided to a callout in the 
@@ -98,9 +97,9 @@ The run-time identifier for the filtering layer at which the data stream is bein
      the filter engine passed to the callout driver's 
      <a href="/windows-hardware/drivers/ddi/_netvista/">classifyFn</a> callout function.
 
-### -param streamFlags 
+### -param streamFlags [in]
 
-[in]
+
 Flags that specify characteristics of the data stream into which the data is to be injected.
      
 
@@ -177,11 +176,11 @@ Specifies that the stream is to be disconnected after the data being injected in
 <div class="alert"><b>Note</b>  If this flag is set, the <b>FWPS_STREAM_FLAG_SEND</b> flag must also be set, or else <b>STATUS_FWP_INVALID_PARAMETER</b> will be returned.</div>
 <div> </div>
 
-### -param netBufferList 
+### -param netBufferList [in, out]
 
-[in, out]
+
 A pointer to a 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure that describes
+     <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure that describes
      the data that is being injected into the data stream. A callout driver allocates a <b>NET_BUFFER_LIST</b>
      structure to use for injecting data into a data stream by calling the 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsallocateclonenetbufferlist0">
@@ -192,21 +191,21 @@ A pointer to a
      <i>streamFlags</i> parameter is <b>FWPS_STREAM_FLAG_RECEIVE_DISCONNECT</b> or <b>FWPS_STREAM_FLAG_SEND_DISCONNECT</b>, 
      <i>netBufferList</i> can be <b>NULL</b>.
 
-### -param dataLength 
+### -param dataLength [in]
 
-[in]
+
 The number of bytes of data being injected into the data stream.
 
-### -param completionFn 
+### -param completionFn [in]
 
-[in]
+
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_inject_complete0">completionFn</a> callout function provided by
      the callout driver. The filter engine calls this function after the packet data, described by the 
      <i>netBufferList</i> parameter, has been injected into the network stack. 
 
 If the 
-     <i>netBufferList</i> parameter describes a <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> chain, 
+     <i>netBufferList</i> parameter describes a <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> chain, 
      <i>completionFn</i> will be called once for each <b>NET_BUFFER_LIST</b> in the chain.
 
 If the 
@@ -215,9 +214,9 @@ If the
 
 This parameter is required and cannot be <b>NULL</b>. If it is <b>NULL</b>, <b>STATUS_FWP_NULL_POINTER</b> will be returned.
 
-### -param completionContext 
+### -param completionContext [in, optional]
 
-[in, optional]
+
 A pointer to a callout driver–provided context that is passed to the callout function pointed to
      by the 
      <i>completionFn</i> parameter. This parameter is optional and can be <b>NULL</b>.
@@ -241,7 +240,7 @@ The
 <td width="60%">
 The injection into the data stream was initiated successfully. The filter engine will call the
        completion function that was specified when the 
-       <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure was allocated
+       <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure was allocated
        after the filter engine has completed injecting the data into the data stream.
 
 </td>
@@ -366,7 +365,7 @@ If the return value is not STATUS_SUCCESS, the completion function will not be c
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 

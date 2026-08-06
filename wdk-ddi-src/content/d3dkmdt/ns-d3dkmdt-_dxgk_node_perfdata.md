@@ -2,7 +2,6 @@
 UID: NS:d3dkmdt._DXGK_NODE_PERFDATA
 title: _DXGK_NODE_PERFDATA (d3dkmdt.h)
 description: Input arguments for the call to node performance data.
-ms.assetid: 3dd040ac-12ce-4fa6-81c5-b867dbe942ce
 ms.date: 10/19/2018
 keywords: ["DXGK_NODE_PERFDATA structure"]
 ms.keywords: _DXGK_NODE_PERFDATA, DXGK_NODE_PERFDATA,
@@ -34,8 +33,7 @@ api_location:
  - d3dkmdt.h
 api_name:
  - _DXGK_NODE_PERFDATA
-product:
- - Windows
+ - DXGK_NODE_PERFDATA
 ---
 
 # _DXGK_NODE_PERFDATA structure

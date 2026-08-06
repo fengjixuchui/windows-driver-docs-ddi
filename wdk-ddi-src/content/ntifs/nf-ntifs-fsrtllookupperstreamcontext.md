@@ -4,14 +4,13 @@ title: FsRtlLookupPerStreamContext macro (ntifs.h)
 description: The FsRtlLookupPerStreamContext macro retrieves a per-stream context structure for a file stream.
 old-location: ifsk\fsrtllookupperstreamcontext.htm
 tech.root: ifsk
-ms.assetid: 8f8c47c3-1917-4252-b812-711ef52d22d7
 ms.date: 04/16/2018
 keywords: ["FsRtlLookupPerStreamContext macro"]
 ms.keywords: FsRtlLookupPerStreamContext, FsRtlLookupPerStreamContext function [Installable File System Drivers], fsrtlref_8284a485-5669-4a4f-a2cf-d566b82299fb.xml, ifsk.fsrtllookupperstreamcontext, ntifs/FsRtlLookupPerStreamContext
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Desktop
-req.target-min-winverclnt: This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
+req.target-min-winverclnt: Windows 2000 SP4 Update Rollup; Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 

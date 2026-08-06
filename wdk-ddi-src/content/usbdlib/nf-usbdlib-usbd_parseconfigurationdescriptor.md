@@ -4,7 +4,6 @@ title: USBD_ParseConfigurationDescriptor function (usbdlib.h)
 description: The USBD_ParseConfigurationDescriptor routine has been deprecated. Use USBD_ParseConfigurationDescriptorEx instead.
 old-location: buses\usbd_parseconfigurationdescriptor.htm
 tech.root: usbref
-ms.assetid: a82816d8-2516-4bba-a5aa-0154cd079d5b
 ms.date: 05/07/2018
 keywords: ["USBD_ParseConfigurationDescriptor function"]
 ms.keywords: USBD_ParseConfigurationDescriptor, USBD_ParseConfigurationDescriptor routine [Buses], buses.usbd_parseconfigurationdescriptor, usbdlib/USBD_ParseConfigurationDescriptor, usbfunc_e0bfa26f-42a8-47a2-bf0e-5f8c97c5e9eb.xml
@@ -51,19 +50,19 @@ The  <b>USBD_ParseConfigurationDescriptor</b> routine has been deprecated. Use <
 
 ## -parameters
 
-### -param ConfigurationDescriptor 
+### -param ConfigurationDescriptor [in]
 
-[in]
+
 Pointer to a USB configuration descriptor that contains the interface for which to search.
 
-### -param InterfaceNumber 
+### -param InterfaceNumber [in]
 
-[in]
+
 Specifies the device-defined index of the interface to be retrieved. This should be set to -1 if it should not be a search criterion.
 
-### -param AlternateSetting 
+### -param AlternateSetting [in]
 
-[in]
+
 Specifies the device-defined alternate-setting index of the interface to be retrieved. If the caller does not wish the alternate setting value to be a search criterion, this parameter should be set to -1.
 
 ## -returns

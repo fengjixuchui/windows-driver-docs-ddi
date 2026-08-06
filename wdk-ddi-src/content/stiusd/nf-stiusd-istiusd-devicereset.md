@@ -4,7 +4,6 @@ title: IStiUSD::DeviceReset (stiusd.h)
 description: A still image minidriver's IStiUSD::DeviceReset method resets a still image device to a known, initialized state.
 old-location: image\istiusd_devicereset.htm
 tech.root: image
-ms.assetid: f6944297-9aca-4912-a398-c5f3a3e8d4b4
 ms.date: 05/03/2018
 keywords: ["IStiUSD::DeviceReset"]
 ms.keywords: DeviceReset, DeviceReset method [Imaging Devices], DeviceReset method [Imaging Devices],IStiUSD interface, IStiUSD interface [Imaging Devices],DeviceReset method, IStiUSD.DeviceReset, IStiUSD::DeviceReset, image.istiusd_devicereset, stifnc_94561ed6-1f7a-411e-b699-37d56165b2f7.xml, stiusd/IStiUSD::DeviceReset
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Stiusd.h
 api_name:
- - IStiUSD.DeviceReset
+ - IStiUSD::DeviceReset
 ---
 
 # IStiUSD::DeviceReset
@@ -59,3 +58,4 @@ If the operation succeeds, the method should return S_OK. Otherwise, it should r
 
 
 <a href="/windows-hardware/drivers/ddi/_image/index">IStiUSD</a>
+

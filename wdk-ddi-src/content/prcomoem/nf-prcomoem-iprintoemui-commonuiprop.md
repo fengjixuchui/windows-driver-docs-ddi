@@ -4,7 +4,6 @@ title: IPrintOemUI::CommonUIProp (prcomoem.h)
 description: The IPrintOemUI::CommonUIProp method allows a user interface plug-in to modify an existing printer property sheet page.
 old-location: print\iprintoemui_commonuiprop.htm
 tech.root: print
-ms.assetid: 6218913c-d11c-4646-a292-5f8740097d58
 ms.date: 04/20/2018
 keywords: ["IPrintOemUI::CommonUIProp"]
 ms.keywords: CommonUIProp, CommonUIProp method [Print Devices], CommonUIProp method [Print Devices],IPrintOemUI interface, IPrintOemUI interface [Print Devices],CommonUIProp method, IPrintOemUI.CommonUIProp, IPrintOemUI::CommonUIProp, prcomoem/IPrintOemUI::CommonUIProp, print.iprintoemui_commonuiprop, print_unidrv-pscript_ui_dd201198-0df4-479d-9c48-0fa934fb0b56.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemUI.CommonUIProp
+ - IPrintOemUI::CommonUIProp
 ---
 
 # IPrintOemUI::CommonUIProp
@@ -164,3 +163,4 @@ Space for the private data structure should be allocated by calling the Microsof
 If <code>IPrintOemUI::CommonUIProp</code> methods are exported by multiple user interface plug-ins, the methods are called in the order that the plug-ins are specified for installation.
 
 For more information, see <a href="/windows-hardware/drivers/print/modifying-a-driver-supplied-property-sheet-page">Modifying a Driver-Supplied Property Sheet Page</a>.
+

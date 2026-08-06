@@ -4,7 +4,6 @@ title: DMA_SUSPEND_HANDLER (netdma.h)
 description: The ProviderSuspendDma function suspends the DMA transfers that are currently in progress on a DMA channel.
 old-location: netvista\providersuspenddma.htm
 tech.root: netvista
-ms.assetid: b020b0c6-eb69-44d0-a374-b39eb2f536f1
 ms.date: 05/02/2018
 keywords: ["DMA_SUSPEND_HANDLER callback function"]
 ms.keywords: DMA_SUSPEND_HANDLER, DMA_SUSPEND_HANDLER callback, ProviderSuspendDma, ProviderSuspendDma callback function [Network Drivers Starting with Windows Vista], netdma/ProviderSuspendDma, netdma_ref_f194d9b0-083c-46a1-9e39-aa33c62af512.xml, netvista.providersuspenddma
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - netdma.h
 api_name:
- - ProviderSuspendDma
+ - DMA_SUSPEND_HANDLER
 ---
 
 # DMA_SUSPEND_HANDLER callback function
@@ -54,18 +53,18 @@ in Windows 8 and later.</div><div> </div>The
 
 ## -parameters
 
-### -param ProviderChannelContext 
+### -param ProviderChannelContext [in]
 
-[in]
+
 A pointer that identifies a DMA channel's context area. The DMA provider returned this handle to
      NetDMA at the location that is specified in the 
      <i>pProviderChannelContext</i> parameter of the 
      <a href="/windows-hardware/drivers/ddi/netdma/nc-netdma-dma_channel_allocate_handler">
      ProviderAllocateDmaChannel</a> function.
 
-### -param pLastDescriptor 
+### -param pLastDescriptor [out]
 
-[out]
+
 A pointer to a variable that contains the physical address of the last successfully processed DMA
      descriptor. The DMA provider provides this address before returning from 
      <i>ProviderSuspendDma</i>.
@@ -141,3 +140,4 @@ NetDMA calls
 
 
 <a href="/windows-hardware/drivers/ddi/netdma/nc-netdma-dma_resume_handler">ProviderResumeDma</a>
+

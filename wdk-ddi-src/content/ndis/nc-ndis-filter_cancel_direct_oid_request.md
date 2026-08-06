@@ -4,7 +4,6 @@ title: FILTER_CANCEL_DIRECT_OID_REQUEST (ndis.h)
 description: NDIS calls a filter driver's FilterCancelDirectOidRequest function to cancel a direct OID request.Note  You must declare the function by using the FILTER_CANCEL_DIRECT_OID_REQUEST type.
 old-location: netvista\filtercanceldirectoidrequest.htm
 tech.root: netvista
-ms.assetid: 3587c5dc-3b4c-4aab-8c2d-cc9988373a56
 ms.date: 05/02/2018
 keywords: ["FILTER_CANCEL_DIRECT_OID_REQUEST callback function"]
 ms.keywords: FILTER_CANCEL_DIRECT_OID_REQUEST, FILTER_CANCEL_DIRECT_OID_REQUEST callback, FilterCancelDirectOidRequest, FilterCancelDirectOidRequest callback function [Network Drivers Starting with Windows Vista], ndis/FilterCancelDirectOidRequest, ndis_request_direct_ref_e9bd9db7-8a50-485e-9592-e43461963137.xml, netvista.filtercanceldirectoidrequest
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - FilterCancelDirectOidRequest
+ - FILTER_CANCEL_DIRECT_OID_REQUEST
 ---
 
 # FILTER_CANCEL_DIRECT_OID_REQUEST callback function
@@ -53,20 +52,20 @@ NDIS calls a filter driver's
 
 ## -parameters
 
-### -param FilterModuleContext 
+### -param FilterModuleContext [in]
 
-[in]
+
 A handle to the context area for the filter module that is the target of this request. The filter
      driver created and initialized this context area in the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach">FilterAttach</a> function.
 
-### -param RequestId 
+### -param RequestId [in]
 
-[in]
+
 A cancellation identifier for the request. This identifier specifies the direct OID requests that
      match this value in the 
      <b>RequestId</b> member of the 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure.
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure.
 
 ## -remarks
 
@@ -87,7 +86,7 @@ If a filter driver does not queue direct OID requests, the driver is not require
 
 NDIS calls the 
     <i>FilterCancelDirectOidRequest</i> function when the originator of the request
-    cancels therequest.
+    cancels the request.
 
 If the request processing is still not complete in a filter driver, the driver calls the 
     <b>NdisFDirectOidRequestComplete</b> function with the status set to NDIS_STATUS_REQUEST_ABORTED.
@@ -135,7 +134,7 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 
@@ -149,3 +148,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfregisterfilterdriver">NdisFRegisterFilterDriver</a>
+

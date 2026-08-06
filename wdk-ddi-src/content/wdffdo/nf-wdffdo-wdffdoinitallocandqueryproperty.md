@@ -4,7 +4,6 @@ title: WdfFdoInitAllocAndQueryProperty function (wdffdo.h)
 description: The WdfFdoInitAllocAndQueryProperty method allocates a buffer and retrieves a specified device property.
 old-location: wdf\wdffdoinitallocandqueryproperty.htm
 tech.root: wdf
-ms.assetid: 9c275d89-e01d-445b-8c60-ae5268cd28c3
 ms.date: 02/26/2018
 keywords: ["WdfFdoInitAllocAndQueryProperty function"]
 ms.keywords: DFDeviceObjectFdoPdoRef_2de90bea-c2df-4aa7-b64f-b17df042268c.xml, WdfFdoInitAllocAndQueryProperty, WdfFdoInitAllocAndQueryProperty method, kmdf.wdffdoinitallocandqueryproperty, wdf.wdffdoinitallocandqueryproperty, wdffdo/WdfFdoInitAllocAndQueryProperty
@@ -55,29 +54,29 @@ The <b>WdfFdoInitAllocAndQueryProperty</b> method allocates a buffer and retriev
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure that the driver obtained from its <a href="/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add">EvtDriverDeviceAdd</a> callback function.
 
-### -param DeviceProperty 
+### -param DeviceProperty [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-device_registry_property">DEVICE_REGISTRY_PROPERTY</a>-typed enumerator value that identifies the device property to be retrieved.
 
-### -param PoolType 
+### -param PoolType [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type">POOL_TYPE</a>-typed enumerator value that specifies the type of memory to be allocated.
 
-### -param PropertyMemoryAttributes 
+### -param PropertyMemoryAttributes [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that describes object attributes for the memory object that <b>WdfFdoInitAllocAndQueryProperty</b> will allocate. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param PropertyMemory 
+### -param PropertyMemory [out]
 
-[out]
+
 A pointer to a WDFMEMORY-typed location that receives a handle to a framework memory object.
 
 ## -returns

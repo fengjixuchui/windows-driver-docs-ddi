@@ -4,7 +4,6 @@ title: RtlUnalignedStringCchLengthW function (ntstrsafe.h)
 description: The RtlUnalignedStringCchLengthW function is a version of the RtlStringCchLength function that accepts an unaligned pointer to a string of Unicode characters.
 old-location: kernel\rtlunalignedstringcchlength.htm
 tech.root: kernel
-ms.assetid: 7b9f38f5-7fc9-4670-975d-b7bfeefb2cb8
 ms.date: 04/30/2018
 keywords: ["RtlUnalignedStringCchLengthW function"]
 ms.keywords: RtlUnalignedStringCchLength, RtlUnalignedStringCchLengthW, RtlUnalignedStringCchLengthW function [Kernel-Mode Driver Architecture], kernel.rtlunalignedstringcchlength, ntstrsafe/RtlUnalignedStringCchLengthW, safestrings_7bfc07f7-2096-4818-a0d5-31767b7342ea.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,19 +50,19 @@ The <b>RtlUnalignedStringCchLengthW</b> function is a version of the <a href="/w
 
 ## -parameters
 
-### -param psz 
+### -param psz [in]
 
-[in]
+
 Supplies a pointer to a buffer that contains a null-terminated string whose length <b>RtlUnalignedStringCchLengthW</b> will check.
 
-### -param cchMax 
+### -param cchMax [in]
 
-[in]
+
 Supplies the maximum number of characters that are allowed in the buffer that <i>psz</i> points to, including the terminating NULL character. This value cannot exceed NTSTRSAFE_MAX_CCH.
 
-### -param pcchLength 
+### -param pcchLength [out, optional]
 
-[out, optional]
+
 Optional. If the caller supplies a non-<b>NULL</b> address pointer, the function loads the address with the length, in characters, of the string that is contained in the buffer that <i>psz</i> points to. The length does not include the string's terminating NULL character.
 
 ## -returns

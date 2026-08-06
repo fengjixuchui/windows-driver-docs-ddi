@@ -4,7 +4,6 @@ title: NDIS_PD_POST_AND_DRAIN_BUFFER_LIST (ndis.h)
 description: The PacketDirect (PD) platform calls a PD-capable miniport driver's PDPostAndDrainBufferList function to post PD_BUFFER structures to PD transmit/receive queues and draining any previously posted PD_BUFFER structures that have been completed.
 old-location: netvista\pdpostanddrainbufferlist.htm
 tech.root: netvista
-ms.assetid: 5EAAEEEC-740E-4F65-B13E-E174A0DF4546
 ms.date: 05/02/2018
 ms.keywords: NDIS_PD_POST_AND_DRAIN_BUFFER_LIST_HANDLER, NDIS_PD_POST_AND_DRAIN_BUFFER_LIST_HANDLER callback function
 req.header: ndis.h
@@ -37,9 +36,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - NDIS_PD_POST_AND_DRAIN_BUFFER_LIST_HANDLER
-product:
- - Windows
+ - NDIS_PD_POST_AND_DRAIN_BUFFER_LIST
 ---
 
 # NDIS_PD_POST_AND_DRAIN_BUFFER_LIST callback function
@@ -54,24 +51,24 @@ The PacketDirect (PD) platform calls a PD-capable miniport driver's
 
 ## -parameters
 
-### -param Queue 
+### -param Queue [in, out]
 
-[in, out]
+
 A pointer to the transmit or receive queue that will receive posted buffers and will have completed buffers removed.
 
-### -param PostBufferListHead 
+### -param PostBufferListHead [in, out]
 
-[in, out]
+
 The head of the post list. The provider removes the buffers in this list and adds them into the <b>Queue</b>.
 
-### -param DrainBufferListTail 
+### -param DrainBufferListTail [in, out]
 
-[in, out]
+
 The tail of the drain list. The provider removes any completed buffers from the <b>Queue</b> and adds them to this list.
 
-### -param MaxDrainCount 
+### -param MaxDrainCount [in]
 
-[in]
+
 The maximum amount of <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_pd_buffer">PD_BUFFER</a> structures to drain. The provider must ensure not exceed this amount. A set of partial <b>PD_BUFFER</b> structures that make up a single L2 packet count is 1.
 
 ## -returns
@@ -149,3 +146,4 @@ NDIS_PD_POST_AND_DRAIN_BUFFER_LIST(
 //DrainTail == &buf5->NextPDBuffer
 
 ```
+

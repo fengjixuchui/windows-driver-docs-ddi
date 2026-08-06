@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols2.GetLineByOffset
 title: IDebugSymbols2::GetLineByOffset (dbgeng.h)
-description: The GetLineByOffset method returns the source filename and the line number within the source file of an instruction in the target.
+description: The IDebugSymbols2::GetLineByOffset method returns the source filename and the line number within the source file of an instruction in the target.
 old-location: debugger\getlinebyoffset.htm
 tech.root: debugger
-ms.assetid: 1b470ae8-49d3-467d-aa08-08bd9c9e9466
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols2::GetLineByOffset"]
 ms.keywords: GetLineByOffset, GetLineByOffset method [Windows Debugging], GetLineByOffset method [Windows Debugging],IDebugSymbols interface, GetLineByOffset method [Windows Debugging],IDebugSymbols2 interface, GetLineByOffset method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],GetLineByOffset method, IDebugSymbols2 interface [Windows Debugging],GetLineByOffset method, IDebugSymbols2.GetLineByOffset, IDebugSymbols2::GetLineByOffset, IDebugSymbols3 interface [Windows Debugging],GetLineByOffset method, IDebugSymbols3::GetLineByOffset, IDebugSymbols::GetLineByOffset, IDebugSymbols_2ed557af-4f84-46d7-be40-fd37a87cd960.xml, dbgeng/IDebugSymbols2::GetLineByOffset, dbgeng/IDebugSymbols3::GetLineByOffset, dbgeng/IDebugSymbols::GetLineByOffset, debugger.getlinebyoffset
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.GetLineByOffset
- - IDebugSymbols2.GetLineByOffset
- - IDebugSymbols3.GetLineByOffset
+ - IDebugSymbols2::GetLineByOffset
 ---
 
 # IDebugSymbols2::GetLineByOffset
@@ -52,34 +49,34 @@ The <b>GetLineByOffset</b>  method returns the source filename and the line numb
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the location in the target's virtual address space of the instruction for which to return the source file and line number.
 
-### -param Line 
+### -param Line [out, optional]
 
-[out, optional]
+
 Receives the line number within the source file of the instruction specified by <i>Offset</i>.  If <i>Line</i> is <b>NULL</b>, this information is not returned.
 
-### -param FileBuffer 
+### -param FileBuffer [out, optional]
 
-[out, optional]
+
 Receives the file name of the file that contains the instruction specified by <i>Offset</i>.  If <i>FileBuffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param FileBufferSize 
+### -param FileBufferSize [in]
 
-[in]
+
 Specifies the size, in characters, of the <i>FileBuffer</i> buffer.
 
-### -param FileSize 
+### -param FileSize [out, optional]
 
-[out, optional]
+
 Specifies the size, in characters, of the source filename.  If <i>FileSize</i> is <b>NULL</b>, this information is not returned.
 
-### -param Displacement 
+### -param Displacement [out, optional]
 
-[out, optional]
+
 Receives the difference between the location specified in <i>Offset</i> and the location of the first instruction of the returned line.  If <i>Displacement</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -134,3 +131,4 @@ For more information about source files, see <a href="/windows-hardware/drivers/
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

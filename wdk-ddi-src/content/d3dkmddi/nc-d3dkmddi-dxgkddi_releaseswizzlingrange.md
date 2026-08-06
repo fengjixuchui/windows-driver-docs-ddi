@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_RELEASESWIZZLINGRANGE
 title: DXGKDDI_RELEASESWIZZLINGRANGE (d3dkmddi.h)
 description: The DxgkDdiReleaseSwizzlingRange function releases a swizzling range that the DxgkDdiAcquireSwizzlingRange function previously set up.
 old-location: display\dxgkddireleaseswizzlingrange.htm
-ms.assetid: 6c583a48-baa4-429f-b2fc-5f86859617cc
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_RELEASESWIZZLINGRANGE callback function"]
 ms.keywords: DXGKDDI_RELEASESWIZZLINGRANGE, DXGKDDI_RELEASESWIZZLINGRANGE callback, DmFunctions_7dab2ff4-4f37-4b56-a15c-29dcf54f8b8d.xml, DxgkDdiReleaseSwizzlingRange, DxgkDdiReleaseSwizzlingRange callback function [Display Devices], d3dkmddi/DxgkDdiReleaseSwizzlingRange, display.dxgkddireleaseswizzlingrange
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiReleaseSwizzlingRange
-product:
- - Windows
+ - DXGKDDI_RELEASESWIZZLINGRANGE
 ---
 
 # DXGKDDI_RELEASESWIZZLINGRANGE callback function
@@ -52,13 +49,13 @@ The <i>DxgkDdiReleaseSwizzlingRange</i> function releases a swizzling range that
 
 ## -parameters
 
-### -param hAdapter
+### -param hAdapter [in]
 
-[in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
+A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
 
-### -param pReleaseSwizzlingRange
+### -param pReleaseSwizzlingRange [in]
 
-[in] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_releaseswizzlingrange">DXGKARG_RELEASESWIZZLINGRANGE</a> structure that contains information for releasing the swizzling range.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_releaseswizzlingrange">DXGKARG_RELEASESWIZZLINGRANGE</a> structure that contains information for releasing the swizzling range.
 
 ## -returns
 
@@ -87,3 +84,4 @@ All calls to <i>DxgkDdiReleaseSwizzlingRange</i> are serialized among themselves
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a>
+

@@ -4,7 +4,6 @@ title: IDebugSymbolGroup2::GetSymbolRegister (dbgeng.h)
 description: The GetSymbolRegister method returns the register that contains the value or a pointer to the value of a symbol in a symbol group.
 old-location: debugger\getsymbolregister.htm
 tech.root: debugger
-ms.assetid: 6b95ca8c-604b-4497-9798-02f362095709
 ms.date: 05/03/2018
 keywords: ["IDebugSymbolGroup2::GetSymbolRegister"]
 ms.keywords: ComOther_9383fee9-ec27-4ccb-8768-02bd550746d7.xml, GetSymbolRegister, GetSymbolRegister method [Windows Debugging], GetSymbolRegister method [Windows Debugging],IDebugSymbolGroup2 interface, IDebugSymbolGroup2 interface [Windows Debugging],GetSymbolRegister method, IDebugSymbolGroup2.GetSymbolRegister, IDebugSymbolGroup2::GetSymbolRegister, dbgeng/IDebugSymbolGroup2::GetSymbolRegister, debugger.getsymbolregister
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbolGroup2.GetSymbolRegister
+ - IDebugSymbolGroup2::GetSymbolRegister
 ---
 
 # IDebugSymbolGroup2::GetSymbolRegister
@@ -50,14 +49,14 @@ The <b>GetSymbolRegister</b> method returns the register that contains the value
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 The index of the symbol to return the register for. The index of a symbol is an identification number. The index ranges from zero through the number of symbols in the symbol group minus one.
 
-### -param Register 
+### -param Register [out]
 
-[out]
+
 The index of the register that contains the value or a pointer to the value of the symbol.
 
 ## -returns
@@ -105,3 +104,4 @@ For more information about symbol groups, see <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbolgroup2">IDebugSymbolGroup2</a>
+

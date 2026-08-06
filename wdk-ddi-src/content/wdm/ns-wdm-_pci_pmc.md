@@ -1,10 +1,9 @@
 ---
 UID: NS:wdm._PCI_PMC
 title: _PCI_PMC (wdm.h)
-description: The PCI_PMC structure is used to report the contents of the power management capabilities register.
+description: The _PCI_PMC structure (wdm.h) describes the contents of the power management capabilities register.
 old-location: pci\pci_pmc.htm
 tech.root: PCI
-ms.assetid: e6ec18a3-2da6-4b3a-afe3-17435463fd39
 ms.date: 02/24/2018
 keywords: ["PCI_PMC structure"]
 ms.keywords: "*PPCI_PMC, PCI.pci_pmc, PCI_PMC, PCI_PMC structure [Buses], PPCI_PMC, PPCI_PMC structure pointer [Buses], _PCI_PMC, pci_struct_5ac33692-66a0-4c2e-89dc-e5ace757e06b.xml, wdm/PCI_PMC, wdm/PPCI_PMC"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: PASSIVE_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: PCI_PMC, *PPCI_PMC
-req.product: Windows 10 or later.
 f1_keywords:
  - _PCI_PMC
  - wdm/_PCI_PMC
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _PCI_PMC
+ - PPCI_PMC
  - PCI_PMC
 ---
 
@@ -77,49 +77,49 @@ Reserved.
 
 ### -field Support
 
-#### Rsvd2
+### -field Support.Rsvd2
 
 Reserved.
 
 
 
-#### D1
+### -field Support.D1
 
 Reserved.
 
 
 
-#### D2
+### -field Support.D2
 
 Reserved.
 
 
 
-#### PMED0
+### -field Support.PMED0
 
 Indicates that the device can assert the PME signal from D0.
 
 
 
-#### PMED1
+### -field Support.PMED1
 
 Indicates that the device can assert the PME signal from D1.
 
 
 
-#### PMED2
+### -field Support.PMED2
 
 Indicates that the device can assert the PME signal from D2.
 
 
 
-#### PMED3Hot
+### -field Support.PMED3Hot
 
 Indicates that the device can assert the PME signal from D3.
 
 
 
-#### PMED3Cold
+### -field Support.PMED3Cold
 
 Indicates that the device can assert the PME signal from D3.
 
@@ -154,3 +154,4 @@ The power management capabilities register, whose contents are reported in the P
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_pci_pm_capability">PCI_PM_CAPABILITY</a>
+

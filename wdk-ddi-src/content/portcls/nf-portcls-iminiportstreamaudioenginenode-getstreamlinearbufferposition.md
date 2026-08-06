@@ -4,7 +4,6 @@ title: IMiniportStreamAudioEngineNode::GetStreamLinearBufferPosition (portcls.h)
 description: Gets the number of bytes that the DMA has fetched from the audio buffer since the beginning of the stream.
 old-location: audio\iminiportstreamaudioenginenode_getstreamlinearbufferposition.htm
 tech.root: audio
-ms.assetid: C1C91ECE-7AFF-468B-84AE-9D289EECE1E1
 ms.date: 05/08/2018
 keywords: ["IMiniportStreamAudioEngineNode::GetStreamLinearBufferPosition"]
 ms.keywords: GetStreamLinearBufferPosition, GetStreamLinearBufferPosition method [Audio Devices], GetStreamLinearBufferPosition method [Audio Devices],IMiniportStreamAudioEngineNode interface, IMiniportStreamAudioEngineNode interface [Audio Devices],GetStreamLinearBufferPosition method, IMiniportStreamAudioEngineNode.GetStreamLinearBufferPosition, IMiniportStreamAudioEngineNode::GetStreamLinearBufferPosition, audio.iminiportstreamaudioenginenode_getstreamlinearbufferposition, portcls/IMiniportStreamAudioEngineNode::GetStreamLinearBufferPosition
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IMiniportStreamAudioEngineNode.GetStreamLinearBufferPosition
+ - IMiniportStreamAudioEngineNode::GetStreamLinearBufferPosition
 ---
 
 # IMiniportStreamAudioEngineNode::GetStreamLinearBufferPosition
@@ -50,9 +49,9 @@ api_name:
 
 ## -parameters
 
-### -param pullLinearBufferPosition 
+### -param pullLinearBufferPosition [out]
 
-[out]
+
 The number of bytes that the DMA has fetched.
 
 ## -returns
@@ -62,3 +61,4 @@ The number of bytes that the DMA has fetched.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportstreamaudioenginenode">IMiniportStreamAudioEngineNode</a>
+

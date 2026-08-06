@@ -4,7 +4,6 @@ title: IDebugFailureAnalysis2::AddUlong (extsfns.h)
 description: The AddUlong method adds a new FA entry to a DebugFailureAnalysis object and sets the data block of the FA entry to a specified ULONG value.
 old-location: debugger\idebugfailureanalysis2_addulong.htm
 tech.root: debugger
-ms.assetid: 22F56E3F-9ED4-464D-B97C-1B322E1F8D66
 ms.date: 05/03/2018
 keywords: ["IDebugFailureAnalysis2::AddUlong"]
 ms.keywords: AddUlong, AddUlong method [Windows Debugging], AddUlong method [Windows Debugging],IDebugFailureAnalysis2 interface, IDebugFailureAnalysis2 interface [Windows Debugging],AddUlong method, IDebugFailureAnalysis2.AddUlong, IDebugFailureAnalysis2::AddUlong, debugger.idebugfailureanalysis2_addulong, extsfns/IDebugFailureAnalysis2::AddUlong
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - extsfns.h
 api_name:
- - IDebugFailureAnalysis2.AddUlong
+ - IDebugFailureAnalysis2::AddUlong
 ---
 
 # IDebugFailureAnalysis2::AddUlong
@@ -54,9 +53,9 @@ The <b>AddUlong</b> method adds a new <a href="/windows-hardware/drivers/debugge
 
 A value in the <a href="/windows-hardware/drivers/debugger/writing-an-analysis-extension-to-extend--analyze">FA_TAG</a> enumeration. The data type associated with this tag must be <b>DEBUG_FA_ENTRY_ULONG</b>.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 The <b>ULONG</b> value to be written to the data block of the new <a href="/windows-hardware/drivers/debugger/failure-analysis-entries">FA entry</a>.
 
 ## -returns
@@ -71,10 +70,6 @@ To get a pointer to an <a href="/windows-hardware/drivers/ddi/extsfns/nn-extsfns
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis2-getulong">GetUlong</a>
-
-
-
 <a href="/windows-hardware/drivers/ddi/extsfns/nn-extsfns-idebugfailureanalysis2">IDebugFailureAnalysis2</a>
 
 
@@ -88,3 +83,4 @@ To get a pointer to an <a href="/windows-hardware/drivers/ddi/extsfns/nn-extsfns
 
 
 <a href="/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin">_EFN_Analyze</a>
+

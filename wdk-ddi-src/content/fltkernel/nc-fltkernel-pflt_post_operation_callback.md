@@ -4,7 +4,6 @@ title: PFLT_POST_OPERATION_CALLBACK (fltkernel.h)
 description: A minifilter driver can register one or more routines of type PFLT_POST_OPERATION_CALLBACK to perform completion processing for I/O operations.
 old-location: ifsk\pflt_post_operation_callback.htm
 tech.root: ifsk
-ms.assetid: 5bf2a533-e06b-4834-9075-62cb62fa5b06
 ms.date: 07/03/2019
 keywords: ["PFLT_POST_OPERATION_CALLBACK callback"]
 ms.keywords: FltCallbacks_a3bdb676-d994-4bef-9b35-c233b12c5c9c.xml, PFLT_POST_OPERATION_CALLBACK, PFLT_POST_OPERATION_CALLBACK function pointer [Installable File System Drivers], fltkernel/PFLT_POST_OPERATION_CALLBACK, ifsk.pflt_post_operation_callback
@@ -50,24 +49,24 @@ A minifilter driver can register one or more routines of type PFLT_POST_OPERATIO
 
 ## -parameters
 
-### -param Data 
+### -param Data [in, out]
 
-[in, out]
+
 A pointer to the callback data [FLT_CALLBACK_DATA](./ns-fltkernel-_flt_callback_data.md) structure for the I/O operation.
 
-### -param FltObjects 
+### -param FltObjects [in]
 
-[in]
+
 A pointer to a filter manager maintained [FLT_RELATED_OBJECTS](./ns-fltkernel-_flt_related_objects.md) structure that contains opaque pointers for the objects related to the current I/O request.
 
-### -param CompletionContext 
+### -param CompletionContext [in, optional]
 
-[in, optional]
+
 A context pointer that was returned by the minifilter driver's pre-operation callback [PFLT_PRE_OPERATION_CALLBACK](./nc-fltkernel-pflt_pre_operation_callback.md) routine.  The *CompletionContext* pointer provides a way to communicate information from the pre-operation callback routine to the post-operation callback routine.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A bitmask of flags that specifies how the post-operation callback is to be performed.
 
 | Flag | Meaning |

@@ -1,10 +1,9 @@
 ---
 UID: NF:wudfddi_hwaccess.WRITE_REGISTER_BUFFER_ULONG64
 title: WRITE_REGISTER_BUFFER_ULONG64 function (wudfddi_hwaccess.h)
-description: The WRITE_REGISTER_BUFFER_ULONG64 function writes a number of ULONG64 values from a buffer to the specified register.
+description: The WRITE_REGISTER_BUFFER_ULONG64 function (wudfddi_hwaccess.h) writes a number of ULONG64 values from a buffer to the specified register.
 old-location: wdf\write_register_buffer_ulong64.htm
 tech.root: wdf
-ms.assetid: 18858A87-D7D8-4387-AD84-6717EC3DAC25
 ms.date: 02/26/2018
 keywords: ["WRITE_REGISTER_BUFFER_ULONG64 function"]
 ms.keywords: WRITE_REGISTER_BUFFER_ULONG64, WRITE_REGISTER_BUFFER_ULONG64 function, umdf.write_register_buffer_ulong64, wdf.write_register_buffer_ulong64, wudfddi_hwaccess/WRITE_REGISTER_BUFFER_ULONG64
@@ -52,24 +51,24 @@ The <b>WRITE_REGISTER_BUFFER_ULONG64</b> function writes a number of ULONG64 val
 
 ## -parameters
 
-### -param pDevice 
+### -param pDevice [in]
 
-[in]
+
 Specifies a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a> interface for the device object of the device to access.
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the register, which must be a mapped range in memory space.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to a buffer into which an array of ULONG64 values is to be written.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of ULONG64 values to write to the register.
 
 ## -remarks

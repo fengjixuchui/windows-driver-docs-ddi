@@ -4,7 +4,6 @@ title: _KBUGCHECK_DUMP_IO (wdm.h)
 description: The KBUGCHECK_DUMP_IO structure describes an I/O operation on the crash dump file.
 old-location: kernel\kbugcheck_dump_io.htm
 tech.root: kernel
-ms.assetid: d1c246bd-314d-475f-9df8-f1bf90355a5a
 ms.date: 05/02/2019
 keywords: ["KBUGCHECK_DUMP_IO structure"]
 ms.keywords: "*PKBUGCHECK_DUMP_IO, KBUGCHECK_DUMP_IO, KBUGCHECK_DUMP_IO structure [Kernel-Mode Driver Architecture], PKBUGCHECK_DUMP_IO, PKBUGCHECK_DUMP_IO structure pointer [Kernel-Mode Driver Architecture], _KBUGCHECK_DUMP_IO, kernel.kbugcheck_dump_io, kstruct_c_a6201416-346e-4100-882c-329dd3ae1843.xml, wdm/KBUGCHECK_DUMP_IO, wdm/PKBUGCHECK_DUMP_IO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _KBUGCHECK_DUMP_IO
+ - PKBUGCHECK_DUMP_IO
  - KBUGCHECK_DUMP_IO
 ---
 
@@ -79,3 +80,4 @@ For information about how this structure is used, see <a href="/windows-hardware
 <a href="/windows-hardware/drivers/kernel/writing-a-bug-check-callback-routine">Writing a Bug Check Callback Routine</a>
 
 <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_kbugcheck_dump_io_type">KBUGCHECK_DUMP_IO_TYPE</a>
+

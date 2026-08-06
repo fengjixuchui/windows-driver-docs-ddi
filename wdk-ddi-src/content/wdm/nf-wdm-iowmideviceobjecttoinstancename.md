@@ -4,7 +4,6 @@ title: IoWMIDeviceObjectToInstanceName function (wdm.h)
 description: The IoWMIDeviceObjectToInstanceName routine determines the instance name for the WMI class instance implemented by the driver that is specified by a device object.
 old-location: kernel\iowmideviceobjecttoinstancename.htm
 tech.root: kernel
-ms.assetid: 18692c0d-8b74-495d-b66a-2873837ff797
 ms.date: 04/30/2018
 keywords: ["IoWMIDeviceObjectToInstanceName function"]
 ms.keywords: IoWMIDeviceObjectToInstanceName, IoWMIDeviceObjectToInstanceName routine [Kernel-Mode Driver Architecture], k104_9341dc2b-c948-44bd-891d-a530a8676259.xml, kernel.iowmideviceobjecttoinstancename, wdm/IoWMIDeviceObjectToInstanceName
@@ -50,19 +49,19 @@ The <b>IoWMIDeviceObjectToInstanceName</b> routine determines the instance name 
 
 ## -parameters
 
-### -param DataBlockObject 
+### -param DataBlockObject [in]
 
-[in]
+
 Pointer to a WMI data block object. The caller opens the data block object for the WMI class with <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiopenblock">IoWMIOpenBlock</a>.
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Specifies a device object. The routine returns the instance name for the driver corresponding to the device object.
 
-### -param InstanceName 
+### -param InstanceName [out]
 
-[out]
+
 Pointer to the <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that the routine uses to return the instance name. The caller frees the returned buffer within <b>UNICODE_STRING</b>.
 
 ## -returns

@@ -4,7 +4,6 @@ title: _OS_DEP_DATA (smcnt.h)
 description: The OS_DEP_DATA structure defines the data that is stored in the OsData member of the SMARTCARD_EXTENSION structure, which holds smart card information that is specific to the operating system.
 old-location: smartcrd\os_dep_data__wdm_.htm
 tech.root: smartcrd
-ms.assetid: 76f6f0d1-cb2f-4cda-aeb0-7421e18e3c27
 ms.date: 02/22/2018
 keywords: ["OS_DEP_DATA structure"]
 ms.keywords: "*POS_DEP_DATA, OS_DEP_DATA, OS_DEP_DATA (WDM), OS_DEP_DATA (WDM) structure [Smart Card Reader Devices], OS_DEP_DATA structure [Smart Card Reader Devices], POS_DEP_DATA, POS_DEP_DATA structure pointer [Smart Card Reader Devices], _OS_DEP_DATA, scstruct_f7288ef8-a011-44c0-ab86-db7cc6d1a985.xml, smartcrd.os_dep_data__wdm_, smcnt/OS_DEP_DATA, smcnt/POS_DEP_DATA"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - smcnt.h
 api_name:
+ - _OS_DEP_DATA
+ - POS_DEP_DATA
  - OS_DEP_DATA
 ---
 
@@ -64,7 +65,7 @@ A pointer to the current IRP to process. Access to this field must be sequential
 
 ### -field NotificationIrp
 
-A pointer to an IRP that the smart card reader driver uses to notify applications when a smart card has been inserted or removedl. Access to this field must be sequentialized by using the spin lock that is pointed to by the <b>OsData->SpinLock</b> member of SMARTCARD_EXTENSION.
+A pointer to an IRP that the smart card reader driver uses to notify applications when a smart card has been inserted or removed. Access to this field must be sequentialized by using the spin lock that is pointed to by the <b>OsData->SpinLock</b> member of SMARTCARD_EXTENSION.
 
 ### -field Mutex
 
@@ -101,3 +102,4 @@ Unused.
 ## -remarks
 
 To allocate this structure, drivers must call <a href="/previous-versions/ff548944(v=vs.85)">SmartcardInitialize (WDM)</a>. After this call, drivers should copy the pointer of the smart card device object to <b>DeviceObject</b>. Otherwise, the smart card driver library will not work. Do not use this structure to store driver-dependent information. However, when the smart card driver library calls one of your driver's callback functions, it sets <b>CurrentIrp</b> to the requesting IRP, unless the request is a smart card tracking request. For smart card tracking requests, the driver library sets <b>NotificationIrp</b> to the requesting IRP. For more information about smart card tracking, see <a href="/previous-versions/windows/hardware/drivers/ff548920(v=vs.85)">RDF_CARD_TRACKING</a>.
+

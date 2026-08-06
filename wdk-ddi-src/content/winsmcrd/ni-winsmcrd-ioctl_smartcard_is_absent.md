@@ -4,7 +4,6 @@ title: IOCTL_SMARTCARD_IS_ABSENT (winsmcrd.h)
 description: The IOCTL_SMARTCARD_IS_ABSENT control code returns immediately with STATUS_SUCCESS if no smart card is currently detected.
 old-location: nfpdrivers\ioctl_smartcard_is_absent.htm
 tech.root: nfpdrivers
-ms.assetid: A9E4404C-D307-4137-B640-AF28A962B2AD
 ms.date: 02/15/2018
 keywords: ["IOCTL_SMARTCARD_IS_ABSENT IOCTL"]
 ms.keywords: IOCTL_SMARTCARD_IS_ABSENT, IOCTL_SMARTCARD_IS_ABSENT control, IOCTL_SMARTCARD_IS_ABSENT control code [Near-Field Proximity Drivers], nfpdrivers.ioctl_smartcard_is_absent, winsmcrd/IOCTL_SMARTCARD_IS_ABSENT
@@ -50,6 +49,8 @@ The <b>IOCTL_SMARTCARD_IS_ABSENT</b>
    control code returns immediately with STATUS_SUCCESS if no smart card is currently detected. If smart cards are detected, the IOCTL needs to be pended by the driver and it needs to complete the request on card departure. Closing the file handle automatically unsubscribes the event.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

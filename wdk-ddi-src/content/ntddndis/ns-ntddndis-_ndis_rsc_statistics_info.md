@@ -4,7 +4,6 @@ title: _NDIS_RSC_STATISTICS_INFO (ntddndis.h)
 description: The NDIS_RSC_STATISTICS_INFO structure contains statistics that a miniport driver supplies in response to a query of the OID_TCP_RSC_STATISTICS OID.
 old-location: netvista\ndis_rsc_statistics_info.htm
 tech.root: netvista
-ms.assetid: 14911610-f2d6-4ad4-884f-3137eab143be
 ms.date: 05/02/2018
 keywords: ["NDIS_RSC_STATISTICS_INFO structure"]
 ms.keywords: "*PNDIS_RSC_STATISTICS_INFO, NDIS_RSC_STATISTICS_INFO, NDIS_RSC_STATISTICS_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_RSC_STATISTICS_INFO, PNDIS_RSC_STATISTICS_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RSC_STATISTICS_INFO, netvista.ndis_rsc_statistics_info, ntddndis/NDIS_RSC_STATISTICS_INFO, ntddndis/PNDIS_RSC_STATISTICS_INFO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_RSC_STATISTICS_INFO
+ - PNDIS_RSC_STATISTICS_INFO
  - NDIS_RSC_STATISTICS_INFO
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_RSC_STATISTICS_INFO</b> structure contains statistics that  a minipo
 
 ### -field Header
 
-The <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the NDIS_RSC_STATISTICS_INFO structure. Set the <b>Type</b> member of the structure that <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT.
+The <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the NDIS_RSC_STATISTICS_INFO structure. Set the <b>Type</b> member of the structure that <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT.
 
 To specify the version of the <b>NDIS_RSC_STATISTICS_INFO</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
 
@@ -88,8 +89,9 @@ The total number of RSC abort events. That is, the number of exceptions other th
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/network/oid-tcp-rsc-statistics">OID_TCP_RSC_STATISTICS</a>
+

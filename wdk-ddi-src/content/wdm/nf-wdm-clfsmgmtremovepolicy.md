@@ -4,7 +4,6 @@ title: ClfsMgmtRemovePolicy function (wdm.h)
 description: The ClfsMgmtRemovePolicy routine resets a log's CLFS_MGMT_POLICY structure to its default value.
 old-location: kernel\clfsmgmtremovepolicy.htm
 tech.root: kernel
-ms.assetid: 6f0ae6fc-4f2f-4a1a-ac2f-93689f6b7d50
 ms.date: 04/30/2018
 keywords: ["ClfsMgmtRemovePolicy function"]
 ms.keywords: ClfsMgmtRemovePolicy, ClfsMgmtRemovePolicy routine [Kernel-Mode Driver Architecture], Clfs_management_70e3d576-6891-4379-a25b-d880222db235.xml, kernel.clfsmgmtremovepolicy, wdm/ClfsMgmtRemovePolicy
@@ -51,14 +50,14 @@ The <b>ClfsMgmtRemovePolicy</b> routine resets a log's <a href="/windows-hardwar
 
 ## -parameters
 
-### -param LogFile 
+### -param LogFile [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">LOG_FILE_OBJECT</a> structure that represents the CLFS log whose policy is being removed.
 
-### -param PolicyType 
+### -param PolicyType [in]
 
-[in]
+
 A value of the <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_clfs_mgmt_policy_type">CLFS_MGMT_POLICY_TYPE</a> enumeration that supplies the type of the policy to be removed.
 
 ## -returns

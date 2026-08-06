@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_STOPCAPTURE
 title: DXGKDDI_STOPCAPTURE (d3dkmddi.h)
 description: The DxgkDdiStopCapture function stops the capture hardware from using the given allocation as a capture buffer.
 old-location: display\dxgkddistopcapture.htm
-ms.assetid: e5d622cc-c550-44cf-8923-5092226066d9
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_STOPCAPTURE callback function"]
 ms.keywords: DXGKDDI_STOPCAPTURE, DXGKDDI_STOPCAPTURE callback, DmFunctions_108ab359-fe5b-46f2-bc1b-f1f91bd5b327.xml, DxgkDdiStopCapture, DxgkDdiStopCapture callback function [Display Devices], d3dkmddi/DxgkDdiStopCapture, display.dxgkddistopcapture
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiStopCapture
-product:
- - Windows
+ - DXGKDDI_STOPCAPTURE
 ---
 
 # DXGKDDI_STOPCAPTURE callback function
@@ -52,13 +49,13 @@ The <i>DxgkDdiStopCapture</i> function stops the capture hardware from using the
 
 ## -parameters
 
-### -param hAdapter
+### -param hAdapter [in]
 
-[in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
+A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
 
-### -param pStopCapture
+### -param pStopCapture [in]
 
-[in] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_stopcapture">DXGKARG_STOPCAPTURE</a> structure that contains the handle to the allocation that is used as a capture buffer.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_stopcapture">DXGKARG_STOPCAPTURE</a> structure that contains the handle to the allocation that is used as a capture buffer.
 
 ## -returns
 
@@ -77,3 +74,4 @@ When a capture buffer is destroyed, the DirectX graphics kernel subsystem calls 
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a>
+

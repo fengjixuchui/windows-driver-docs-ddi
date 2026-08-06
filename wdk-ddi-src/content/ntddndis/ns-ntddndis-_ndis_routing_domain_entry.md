@@ -4,7 +4,6 @@ title: _NDIS_ROUTING_DOMAIN_ENTRY (ntddndis.h)
 description: The NDIS_ROUTING_DOMAIN_ENTRY structure is used by the OID_GEN_ISOLATION_PARAMETERS OID to return the routing domain entries for a VM network adapter's port.
 old-location: netvista\ndis_routing_domain_entry.htm
 tech.root: netvista
-ms.assetid: 65E39285-AFD2-4098-A983-C7FA06505407
 ms.date: 05/02/2018
 keywords: ["NDIS_ROUTING_DOMAIN_ENTRY structure"]
 ms.keywords: "*PNDIS_ROUTING_DOMAIN_ENTRY, NDIS_ROUTING_DOMAIN_ENTRY, NDIS_ROUTING_DOMAIN_ENTRY structure [Network Drivers Starting with Windows Vista], PNDIS_ROUTING_DOMAIN_ENTRY, PNDIS_ROUTING_DOMAIN_ENTRY structure pointer [Network Drivers Starting with Windows Vista], _NDIS_ROUTING_DOMAIN_ENTRY, netvista.ndis_routing_domain_entry, ntddndis/NDIS_ROUTING_DOMAIN_ENTRY, ntddndis/PNDIS_ROUTING_DOMAIN_ENTRY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_ROUTING_DOMAIN_ENTRY
+ - PNDIS_ROUTING_DOMAIN_ENTRY
  - NDIS_ROUTING_DOMAIN_ENTRY
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_ROUTING_DOMAIN_ENTRY</b> structure is used by the <a href="/windows-
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_ROUTING_DOMAIN_ENTRY</b>  structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_ROUTING_DOMAIN_ENTRY</b>  structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The <b>Type</b> member of <b>Header</b> must be set to <b>NDIS_OBJECT_TYPE_DEFAULT</b>. To specify the version of the <b>NDIS_ROUTING_DOMAIN_ENTRY</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
 
@@ -88,7 +89,7 @@ A <b>ULONG</b> value that specifies the number of <a href="/windows-hardware/dri
 
 ### -field FirstIsolationEntryOffset
 
-A <b>ULONG</b> value that specifies the offset, in bytes, to the first <b>NDIS_ROUTING_DOMAIN_ENTRY</b> element in the array that follows the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_isolation_parameters">NDIS_ISOLATION_PARAMETERS</a> structure in the buffer that the <b>InformationBuffer</b> member of the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure points to. The offset is measured from the start of the <b>NDIS_ROUTING_DOMAIN_ENTRY</b> structure to the beginning of the first element of the array.
+A <b>ULONG</b> value that specifies the offset, in bytes, to the first <b>NDIS_ROUTING_DOMAIN_ENTRY</b> element in the array that follows the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_isolation_parameters">NDIS_ISOLATION_PARAMETERS</a> structure in the buffer that the <b>InformationBuffer</b> member of the <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure points to. The offset is measured from the start of the <b>NDIS_ROUTING_DOMAIN_ENTRY</b> structure to the beginning of the first element of the array.
 
 <div class="alert"><b>Note</b>  If the value of <b>NumRoutingDomainEntries</b> is zero, this member is ignored.</div>
 <div> </div>
@@ -99,7 +100,7 @@ A <b>ULONG</b> value that specifies the offset, in bytes, to the first <b>NDIS_R
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -112,3 +113,4 @@ A <b>ULONG</b> value that specifies the offset, in bytes, to the first <b>NDIS_R
 
 
 <a href="/windows-hardware/drivers/network/oid-gen-isolation-parameters">OID_GEN_ISOLATION_PARAMETERS</a>
+

@@ -4,7 +4,6 @@ title: PFND3DDDI_VOLBLT1 (d3dumddi.h)
 description: Performs a bit-block transfer (bitblt) operation from a source volume texture to a destination volume texture. Implemented by Windows Display Driver Model (WDDM) 1.2 or later user-mode display drivers.
 old-location: display\volblt1.htm
 tech.root: display
-ms.assetid: 81B9AB74-9CD1-4181-BE13-32D519069FD4
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_VOLBLT1 callback function"]
 ms.keywords: PFND3DDDI_VOLBLT1, PFND3DDDI_VOLBLT1 callback, VolBlt1, VolBlt1 callback function [Display Devices], d3dumddi/VolBlt1, display.volblt1
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - VolBlt1
-product:
- - Windows
+ - PFND3DDDI_VOLBLT1
 ---
 
 # PFND3DDDI_VOLBLT1 callback function
@@ -56,7 +53,7 @@ Performs a bit-block transfer (bitblt) operation from a source volume texture to
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -73,3 +70,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dd
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_MONITOR_RELEASEMONITORSOURCEMODESET
 title: DXGKDDI_MONITOR_RELEASEMONITORSOURCEMODESET (d3dkmddi.h)
 description: The pfnReleaseMonitorSourceModeSet function releases a handle to a monitor source mode set object.
 old-location: display\dxgk_monitor_interface_pfnreleasemonitorsourcemodeset.htm
-ms.assetid: af5f4a1b-232c-4192-96b4-8fa31dfe3019
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_MONITOR_RELEASEMONITORSOURCEMODESET callback function"]
 ms.keywords: DXGKDDI_MONITOR_RELEASEMONITORSOURCEMODESET, DXGKDDI_MONITOR_RELEASEMONITORSOURCEMODESET callback, VidPnFunctions_5f8e1fd8-b807-4da2-901e-0284e21d858e.xml, d3dkmddi/pfnReleaseMonitorSourceModeSet, display.dxgk_monitor_interface_pfnreleasemonitorsourcemodeset, pfnReleaseMonitorSourceModeSet, pfnReleaseMonitorSourceModeSet callback function [Display Devices]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - pfnReleaseMonitorSourceModeSet
-product:
- - Windows
+ - DXGKDDI_MONITOR_RELEASEMONITORSOURCEMODESET
 ---
 
 # DXGKDDI_MONITOR_RELEASEMONITORSOURCEMODESET callback function
@@ -52,13 +49,13 @@ The <b>pfnReleaseMonitorSourceModeSet</b> function releases a handle to a monito
 
 ## -parameters
 
-### -param hAdapter
+### -param hAdapter [in]
 
-[in] A handle that identifies a display adapter. The Microsoft DirectX graphics kernel subsystem previously provided this handle to the display miniport driver in the <i>DxgkInterface</i> parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device">DxgkDdiStartDevice</a> function.
+A handle that identifies a display adapter. The Microsoft DirectX graphics kernel subsystem previously provided this handle to the display miniport driver in the <i>DxgkInterface</i> parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device">DxgkDdiStartDevice</a> function.
 
-### -param hMonitorSourceModeSet
+### -param hMonitorSourceModeSet [in]
 
-[in] The handle to be released.
+The handle to be released.
 
 ## -returns
 
@@ -82,3 +79,4 @@ This function is also available in the <a href="/windows-hardware/drivers/ddi/d3
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_monitor_interface_v2">DXGK_MONITOR_INTERFACE_V2</a>
+

@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_RECLAIMALLOCATIONS2
 title: PFND3DKMT_RECLAIMALLOCATIONS2 (d3dkmthk.h)
 description: The PFND3DKMT_RECLAIMALLOCATIONS2 callback function reclaims video memory allocations.
-ms.assetid: 0acb809e-a536-4422-b216-971cd4b3b57f
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_RECLAIMALLOCATIONS2 callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The PFND3DKMT_RECLAIMALLOCATIONS2 callback function reclaims video memory alloca
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_RECLAIMALLOCATIONS2](ns-d3dkmthk-_d3dkmt_reclaimallocations2.md) structure.
 

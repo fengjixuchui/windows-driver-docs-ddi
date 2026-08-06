@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMLUMAKEY
 title: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMLUMAKEY (d3d10umddi.h)
 description: Sets the luma key for an input stream on the video processor.
 old-location: display\videoprocessorsetstreamlumakey.htm
-ms.assetid: 1b5ca40d-1836-4c80-af55-8d20c6792445
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMLUMAKEY callback function"]
 ms.keywords: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMLUMAKEY, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMLUMAKEY callback, d3d10umddi/pfnVideoProcessorSetStreamLumaKey, display.videoprocessorsetstreamlumakey, pfnVideoProcessorSetStreamLumaKey, pfnVideoProcessorSetStreamLumaKey callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoProcessorSetStreamLumaKey
+ - PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMLUMAKEY
 ---
 
 # PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMLUMAKEY callback function
@@ -50,25 +49,25 @@ Sets the luma key for an input stream on the video processor.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hVideoProcessor* [in]
 
 A handle to the video processor object that was created through a call to the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a> function.
 
-### -param Arg3
+### -param unnamedParam3
 
 *StreamIndex* [in]
 
 The zero-based index of the input stream.
 
-### -param Arg4
+### -param unnamedParam4
 
 *Lower* [in]
 
@@ -79,13 +78,13 @@ The lower bound for the luma key. The valid range is from zero to one.
 </div>
 <div> </div>
 
-### -param Arg5
+### -param unnamedParam5
 
 *Enable* [in]
 
 If <b>TRUE</b>, the luma key is enabled on the specified input stream of the video processor.
 
-### -param Arg6
+### -param unnamedParam6
 
 *Upper* [in]
 
@@ -126,3 +125,4 @@ The driver reports its ability to support stereo alpha blending for an input str
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorcaps">GetVideoProcessorCaps</a>
+

@@ -4,7 +4,6 @@ title: WdfRequestSetInformation function (wdfrequest.h)
 description: The WdfRequestSetInformation method sets completion status information for a specified I/O request.
 old-location: wdf\wdfrequestsetinformation.htm
 tech.root: wdf
-ms.assetid: 2a5cccb3-24aa-404a-b887-2ccbe98a0673
 ms.date: 02/26/2018
 keywords: ["WdfRequestSetInformation function"]
 ms.keywords: DFRequestObjectRef_76b63618-935e-44b2-ac3d-591c5e11ea74.xml, WdfRequestSetInformation, WdfRequestSetInformation method, kmdf.wdfrequestsetinformation, wdf.wdfrequestsetinformation, wdfrequest/WdfRequestSetInformation
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfRequestSetInformation</b> method sets completion status information fo
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
-### -param Information 
+### -param Information [in]
 
-[in]
+
 Driver-defined completion status information for the request.
 
 ## -remarks
@@ -99,15 +98,17 @@ MyEvtIoDeviceControl(
                                      Request,
                                      VALUE_1
                                      );
+            status = STATUS_SUCCESS;                                     
             break;
-            status = STATUS_SUCCESS;
+
       case MY_IOCTL_CODE_2:
             WdfRequestSetInformation(
                                      Request,
                                      VALUE_2
                                      );
+            status = STATUS_SUCCESS;                                     
             break;
-            status = STATUS_SUCCESS;
+
       case MY_IOCTL_CODE_3:
             WdfRequestSetInformation(
                                      Request,
@@ -115,10 +116,12 @@ MyEvtIoDeviceControl(
                                      );
             status = STATUS_SUCCESS;
             break;
+
       default:
-        status = STATUS_INVALID_DEVICE_REQUEST;
-        break;
+            status = STATUS_INVALID_DEVICE_REQUEST;
+            break;
     }
+
     WdfRequestComplete(
                        Request,
                        status

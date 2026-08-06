@@ -3,8 +3,7 @@ UID: NF:netpoweroffload.NetPowerOffloadGetType
 title: NetPowerOffloadGetType function (netpoweroffload.h)
 description: The NetPowerOffloadGetType function gets the power offload type for a low power protocol offload to a net adapter.
 tech.root: netvista
-ms.assetid: 04e24520-1ccd-4c27-8bad-ff4cac890e2e
-ms.date: 10/03/2019
+ms.date: 04/01/2022
 keywords: ["NetPowerOffloadGetType function"]
 ms.keywords: NetPowerOffloadGetType
 req.header: netpoweroffload.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: netadaptercxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -37,8 +36,6 @@ api_location:
  - netadaptercxstub.lib
 api_name:
  - NetPowerOffloadGetType
-product:
- - Windows
 ---
 
 # NetPowerOffloadGetType function
@@ -50,7 +47,7 @@ The **NetPowerOffloadGetType** function gets the power offload type for a low po
 
 ## -parameters
 
-### -param PowerOffload
+### -param PowerOffload [_In_]
 
 The NETPOWEROFFLOAD object that represents this low power protocol offload.
 

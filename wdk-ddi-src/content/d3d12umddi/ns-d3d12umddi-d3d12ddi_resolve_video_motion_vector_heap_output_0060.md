@@ -1,13 +1,10 @@
 ---
 UID: NS:d3d12umddi.D3D12DDI_RESOLVE_VIDEO_MOTION_VECTOR_HEAP_OUTPUT_0060
 title: D3D12DDI_RESOLVE_VIDEO_MOTION_VECTOR_HEAP_OUTPUT_0060
-description: Describes the output of the resolve operation.
+description: The D3D12DDI_RESOLVE_VIDEO_MOTION_VECTOR_HEAP_OUTPUT_0060 structure describes the output of a resolve operation.
 tech.root: display
-ms.assetid: 6e40d600-52b8-41be-929c-bf02163dac98
 ms.date: 04/04/2019
 keywords: ["D3D12DDI_RESOLVE_VIDEO_MOTION_VECTOR_HEAP_OUTPUT_0060 structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: D3D12DDI_RESOLVE_VIDEO_MOTION_VECTOR_HEAP_OUTPUT_0060, D3D12DDI_RESOLVE_VIDEO_MOTION_VECTOR_HEAP_OUTPUT_0060,
 req.header: d3d12umddi.h
 req.include-header: 
@@ -35,8 +32,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - D3D12DDI_RESOLVE_VIDEO_MOTION_VECTOR_HEAP_OUTPUT_0060
-product:
- - Windows
 dev_langs:
  - c++
 ---

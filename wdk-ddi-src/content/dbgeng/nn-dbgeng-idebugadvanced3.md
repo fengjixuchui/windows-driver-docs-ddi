@@ -4,7 +4,6 @@ title: IDebugAdvanced3 (dbgeng.h)
 description: IDebugAdvanced3 interface
 old-location: debugger\idebugadvanced3.htm
 tech.root: debugger
-ms.assetid: f0226d35-f7a9-4220-be91-afb6d0debd36
 ms.date: 05/03/2018
 keywords: ["IDebugAdvanced3 interface"]
 ms.keywords: IDebugAdvanced3, IDebugAdvanced3 interface [Windows Debugging], IDebugAdvanced3 interface [Windows Debugging],described, dbgeng/IDebugAdvanced3, debugger.idebugadvanced3
@@ -48,10 +47,8 @@ api_name:
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugAdvanced3</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugadvanced2">IDebugAdvanced2</a>. <b>IDebugAdvanced3</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IDebugAdvanced3</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugadvanced2">IDebugAdvanced2</a>. <b>IDebugAdvanced3</b> also has these types of members:
+
 
 ## -see-also
 

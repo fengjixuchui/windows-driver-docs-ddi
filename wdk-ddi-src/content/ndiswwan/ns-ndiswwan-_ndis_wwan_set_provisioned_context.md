@@ -4,7 +4,6 @@ title: _NDIS_WWAN_SET_PROVISIONED_CONTEXT (ndiswwan.h)
 description: The NDIS_WWAN_SET_PROVISIONED_CONTEXT structure represents the command to set the provisioned context state of the MB device.
 old-location: netvista\ndis_wwan_set_provisioned_context.htm
 tech.root: netvista
-ms.assetid: c0f77100-ffd0-4fef-80b0-fc399ef96aee
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_SET_PROVISIONED_CONTEXT structure"]
 ms.keywords: "*PNDIS_WWAN_SET_PROVISIONED_CONTEXT, NDIS_WWAN_SET_PROVISIONED_CONTEXT, NDIS_WWAN_SET_PROVISIONED_CONTEXT structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SET_PROVISIONED_CONTEXT, PNDIS_WWAN_SET_PROVISIONED_CONTEXT structure pointer [Network Drivers Starting with Windows Vista], WwanRef_0f679f5b-26a4-4069-b4d7-65835090f56f.xml, _NDIS_WWAN_SET_PROVISIONED_CONTEXT, ndiswwan/NDIS_WWAN_SET_PROVISIONED_CONTEXT, ndiswwan/PNDIS_WWAN_SET_PROVISIONED_CONTEXT, netvista.ndis_wwan_set_provisioned_context"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_SET_PROVISIONED_CONTEXT
+ - PNDIS_WWAN_SET_PROVISIONED_CONTEXT
  - NDIS_WWAN_SET_PROVISIONED_CONTEXT
 ---
 
@@ -103,7 +104,7 @@ sizeof(NDIS_WWAN_SET_PROVISIONED_CONTEXT)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field ProvisionedContext
 
@@ -113,8 +114,9 @@ A formatted
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_context">WWAN_CONTEXT</a>
+

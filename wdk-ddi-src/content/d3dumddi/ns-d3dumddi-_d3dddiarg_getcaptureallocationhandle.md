@@ -4,7 +4,6 @@ title: _D3DDDIARG_GETCAPTUREALLOCATIONHANDLE (d3dumddi.h)
 description: The D3DDDIARG_GETCAPTUREALLOCATIONHANDLE structure describes the parameters for retrieving an allocation handle from a capture resource handle.
 old-location: display\d3dddiarg_getcaptureallocationhandle.htm
 tech.root: display
-ms.assetid: 588ebf7a-db83-4eb8-8403-04b215bed12b
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_GETCAPTUREALLOCATIONHANDLE structure"]
 ms.keywords: D3DDDIARG_GETCAPTUREALLOCATIONHANDLE, D3DDDIARG_GETCAPTUREALLOCATIONHANDLE structure [Display Devices], UMDisplayDriver_param_Structs_8fece49c-e3e6-4683-b4af-517da6f73cc7.xml, _D3DDDIARG_GETCAPTUREALLOCATIONHANDLE, d3dumddi/D3DDDIARG_GETCAPTUREALLOCATIONHANDLE, display.d3dddiarg_getcaptureallocationhandle
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_GETCAPTUREALLOCATIONHANDLE
  - D3DDDIARG_GETCAPTUREALLOCATIONHANDLE
 ---
 
@@ -52,14 +52,15 @@ The D3DDDIARG_GETCAPTUREALLOCATIONHANDLE structure describes the parameters for 
 
 ## -struct-fields
 
-### -field hResource
+### -field hResource [in]
 
-[in] A handle to the capture resource that <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaptureallocationhandle">GetCaptureAllocationHandle</a> retrieves the allocation handle for.
+A handle to the capture resource that <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaptureallocationhandle">GetCaptureAllocationHandle</a> retrieves the allocation handle for.
 
-### -field hAllocation
+### -field hAllocation [out]
 
-[out] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the allocation that is associated with the resource that <b>hResource</b> specifies.
+A D3DKMT_HANDLE data type that represents a kernel-mode handle to the allocation that is associated with the resource that <b>hResource</b> specifies.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaptureallocationhandle">GetCaptureAllocationHandle</a>
+

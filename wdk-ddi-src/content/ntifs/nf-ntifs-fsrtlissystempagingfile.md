@@ -1,17 +1,15 @@
 ---
 UID: NF:ntifs.FsRtlIsSystemPagingFile
 title: FsRtlIsSystemPagingFile function (ntifs.h)
-description: The FsRtlIsSystemPagingFile routine determines whether a given file is currently a system paging file.
-old-location: ifsk\fsrtlissystempagingfile.htm
+description: Learn more about the FsRtlIsSystemPagingFile routine.
 tech.root: ifsk
-ms.assetid: BF92ADEA-4A9F-41E0-BE52-0794D1D827A1
-ms.date: 04/16/2018
+ms.date: 07/06/2023
 keywords: ["FsRtlIsSystemPagingFile function"]
-ms.keywords: FsRtlIsPagingFile, FsRtlIsPagingFile routine [Installable File System Drivers], FsRtlIsSystemPagingFile, ifsk.fsrtlissystempagingfile, ntifs/FsRtlIsPagingFile
+ms.keywords: FsRtlIsPagingFile, FsRtlIsSystemPagingFile, ifsk.fsrtlissystempagingfile, ntifs/FsRtlIsPagingFile
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,35 +36,29 @@ api_type:
 api_location:
  - NtosKrnl.exe
 api_name:
- - FsRtlIsPagingFile
+ - FsRtlIsSystemPagingFile
 ---
 
 # FsRtlIsSystemPagingFile function
 
-
 ## -description
 
-The <b>FsRtlIsSystemPagingFile</b> routine determines whether a given file is currently a system paging file.
+The **FsRtlIsSystemPagingFile** routine determines whether a given file is currently a system paging file.
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
 Pointer to a file object for the file.
 
 ## -returns
 
-<b>FsRtlIsSystemPagingFile</b> returns <b>TRUE</b> if the file represented by <i>FileObject</i> is a system paging file, otherwise <b>FALSE</b>.
+**FsRtlIsSystemPagingFile** returns TRUE if the file represented by **FileObject** is a system paging file, otherwise FALSE.
 
 ## -see-also
 
-<a href="/previous-versions/ff546873(v=vs.85)">FsRtlIsPagingFile</a>
+[**FsRtlIsPagingFile**](nf-ntifs-fsrtlispagingfile.md)
 
+[**FsRtlPostPagingFileStackOverflow**](nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlpostpagingfilestackoverflow.md)
 
-
-<a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlpostpagingfilestackoverflow">FsRtlPostPagingFileStackOverflow</a>
-
-
-
-<a href="/previous-versions/ff547285(v=vs.85)">FsRtlSupportsPerStreamContexts</a>
+[**FsRtlSupportsPerStreamContexts**](/previous-versions/ff547285(v=vs.85))

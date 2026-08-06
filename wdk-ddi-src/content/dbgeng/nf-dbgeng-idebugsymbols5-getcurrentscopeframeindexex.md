@@ -4,7 +4,6 @@ title: IDebugSymbols5::GetCurrentScopeFrameIndexEx (dbgeng.h)
 description: Gets the index of the current frame.
 old-location: debugger\idebugsymbols5_getcurrentscopeframeindexex.htm
 tech.root: debugger
-ms.assetid: 0D8198BB-583F-4828-8131-61EB17621F32
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols5::GetCurrentScopeFrameIndexEx"]
 ms.keywords: GetCurrentScopeFrameIndexEx, GetCurrentScopeFrameIndexEx method [Windows Debugging], GetCurrentScopeFrameIndexEx method [Windows Debugging],IDebugSymbols5 interface, IDebugSymbols5 interface [Windows Debugging],GetCurrentScopeFrameIndexEx method, IDebugSymbols5.GetCurrentScopeFrameIndexEx, IDebugSymbols5::GetCurrentScopeFrameIndexEx, dbgeng/IDebugSymbols5::GetCurrentScopeFrameIndexEx, debugger.idebugsymbols5_getcurrentscopeframeindexex
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSymbols5.GetCurrentScopeFrameIndexEx
+ - IDebugSymbols5::GetCurrentScopeFrameIndexEx
 ---
 
 # IDebugSymbols5::GetCurrentScopeFrameIndexEx
@@ -50,14 +49,14 @@ Gets the index of the current frame.
 
 ## -parameters
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A bit-set that contains options that affect the behavior of this method.
 
-### -param Index 
+### -param Index [out]
 
-[out]
+
 A pointer to an index that this function gets.
 
 ## -returns
@@ -67,3 +66,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols5">IDebugSymbols5</a>
+

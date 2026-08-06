@@ -4,7 +4,6 @@ title: StorPortGetActiveNodeCount function (storport.h)
 description: The StorPortGetActiveNodeCount routine returns the number of nodes that are present in the system.
 old-location: storage\storportgetactivenodecount.htm
 tech.root: storage
-ms.assetid: b981bfe7-832b-47ae-a742-c4829a6ad06b
 ms.date: 03/29/2018
 keywords: ["StorPortGetActiveNodeCount function"]
 ms.keywords: StorPortGetActiveNodeCount, StorPortGetActiveNodeCount routine [Storage Devices], storage.storportgetactivenodecount, storport/StorPortGetActiveNodeCount, storprt_311f0ad3-ee9a-47a1-9175-71fd0f01e03d.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ The <b>StorPortGetActiveNodeCount</b> routine returns the number of nodes that a
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param NumberNodes 
+### -param NumberNodes [out]
 
-[out]
+
 A pointer to a variable that holds the number of nodes.
 
 ## -returns

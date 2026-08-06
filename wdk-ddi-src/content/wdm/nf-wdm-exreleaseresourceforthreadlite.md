@@ -4,8 +4,7 @@ title: ExReleaseResourceForThreadLite function (wdm.h)
 description: The ExReleaseResourceForThreadLite routine releases the input resource of the indicated thread.
 old-location: kernel\exreleaseresourceforthreadlite.htm
 tech.root: kernel
-ms.assetid: 840e7f50-644c-49b9-a40b-d504e19b0db2
-ms.date: 03/28/2018
+ms.date: 12/09/2021
 keywords: ["ExReleaseResourceForThreadLite function"]
 ms.keywords: ExReleaseResourceForThreadLite, ExReleaseResourceForThreadLite routine [Kernel-Mode Driver Architecture], k102_799a8ff7-3996-470d-97b2-e1c18bbcb486.xml, kernel.exreleaseresourceforthreadlite, wdm/ExReleaseResourceForThreadLite
 req.header: wdm.h
@@ -27,7 +26,6 @@ req.dll: NtosKrnl.exe
 req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
 f1_keywords:
  - ExReleaseResourceForThreadLite
  - wdm/ExReleaseResourceForThreadLite
@@ -44,55 +42,42 @@ api_name:
 
 # ExReleaseResourceForThreadLite function
 
-
 ## -description
 
-The <b>ExReleaseResourceForThreadLite</b> routine releases the input resource of the indicated thread.
+The **ExReleaseResourceForThreadLite** routine releases the input resource of the indicated thread.
 
 ## -parameters
 
-### -param param 
+### -param Resource [in, out]
 
-[in, out]
+
 A pointer to the resource to release.
 
-### -param ResourceThreadId 
+### -param ResourceThreadId [in]
 
-[in]
-Identifies the thread that originally acquired the resource. If this is not the currently executing thread, the caller must have transferred ownership of the resource by calling the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exsetresourceownerpointerex">ExSetResourceOwnerPointerEx</a> routine first on the thread that originally acquired the resource.
+
+Identifies the thread that originally acquired the resource. If this is not the currently executing thread, the caller must have transferred ownership of the resource by calling the [ExSetResourceOwnerPointerEx](nf-wdm-exsetresourceownerpointerex.md) routine first on the thread that originally acquired the resource.
 
 ## -remarks
 
-If this is not the currently executing thread, the caller must have transferred ownership of the resource by calling the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exsetresourceownerpointerex">ExSetResourceOwnerPointerEx</a> routine first on the thread that originally acquired the resource. This is to ensure that thread A does not get terminated or deleted before thread B has a chance to release the resource.
+If this is not the currently executing thread, the caller must have transferred ownership of the resource by calling the [ExSetResourceOwnerPointerEx](nf-wdm-exsetresourceownerpointerex.md) routine first on the thread that originally acquired the resource. This is to ensure that thread A does not get terminated or deleted before thread B has a chance to release the resource.
 
-Unless the caller is running in a system thread, the caller must explicitly disable the delivery of normal kernel APCs before calling this routine. This requirement prevents threads from being suspended while they manipulate or hold a resource. The caller can disable normal kernel APC delivery by calling the <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keentercriticalregion">KeEnterCriticalRegion</a> routine. Delivery must remain disabled until the resource is released, at which point it can be reenabled by calling the <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-keleavecriticalregion">KeLeaveCriticalRegion</a> routine. For more information, see <a href="/windows-hardware/drivers/kernel/disabling-apcs">Disabling APCs</a>.
+Unless the caller is running in a system thread, the caller must explicitly disable the delivery of normal kernel APCs before calling this routine. This requirement prevents threads from being suspended while they manipulate or hold a resource. The caller can disable normal kernel APC delivery by calling the [KeEnterCriticalRegion](../ntddk/nf-ntddk-keentercriticalregion.md) routine. Delivery must remain disabled until the resource is released, at which point it can be reenabled by calling the [KeLeaveCriticalRegion](../ntddk/nf-ntddk-keleavecriticalregion.md) routine. For more information, see [Disabling APCs](/windows-hardware/drivers/kernel/disabling-apcs).
 
-This requirement does not apply to calls made to <b>ExReleaseResourceForThreadLite</b> from a system thread. A caller running in a system thread does not need to explicitly disable APCs before calling this routine.
+This requirement does not apply to calls made to **ExReleaseResourceForThreadLite** from a system thread. A caller running in a system thread does not need to explicitly disable APCs before calling this routine.
 
 ## -see-also
 
-<a href="/previous-versions/ff544351(v=vs.85)">ExAcquireResourceExclusiveLite</a>
+[ExAcquireResourceExclusiveLite](nf-wdm-exacquireresourceexclusivelite.md)
 
+[ExAcquireResourceSharedLite](nf-wdm-exacquireresourcesharedlite.md)
 
+[ExAcquireSharedStarveExclusive](nf-wdm-exacquiresharedstarveexclusive.md)
 
-<a href="/previous-versions/ff544363(v=vs.85)">ExAcquireResourceSharedLite</a>
+[ExAcquireSharedWaitForExclusive](nf-wdm-exacquiresharedwaitforexclusive.md)
 
+[ExGetCurrentResourceThread](../ntddk/nf-ntddk-psgetcurrentthread.md)
 
+[ExInitializeResourceLite](nf-wdm-exinitializeresourcelite.md)
 
-<a href="/previous-versions/ff544367(v=vs.85)">ExAcquireSharedStarveExclusive</a>
-
-
-
-<a href="/previous-versions/ff544370(v=vs.85)">ExAcquireSharedWaitForExclusive</a>
-
-
-
-<a href="/previous-versions/windows/hardware/drivers/ff544614(v=vs.85)">ExGetCurrentResourceThread</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializeresourcelite">ExInitializeResourceLite</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exreinitializeresourcelite">ExReinitializeResourceLite</a>
+[ExReinitializeResourceLite](nf-wdm-exreinitializeresourcelite.md)

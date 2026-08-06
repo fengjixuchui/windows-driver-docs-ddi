@@ -4,7 +4,6 @@ title: EVT_UCX_USBDEVICE_RESUME (ucxusbdevice.h)
 description: UCX invokes this callback function to resume a device from suspend state.
 old-location: buses\evt_ucx_usbdevice_resume.htm
 tech.root: usbref
-ms.assetid: 876D9754-B3AA-42C5-8BDD-60CFD4F78951
 ms.date: 05/07/2018
 keywords: ["EVT_UCX_USBDEVICE_RESUME callback function"]
 ms.keywords: "*PFN_UCX_USBDEVICE_RESUME, *PFN_UCX_USBDEVICE_RESUME callback function [Buses], EVT_UCX_USBDEVICE_RESUME, EVT_UCX_USBDEVICE_RESUME callback, EvtUcxDeviceResume, EvtUcxDeviceResume callback function [Buses], buses.evt_ucx_usbdevice_resume, ucxusbdevice/EvtUcxDeviceResume"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ucxusbdevice.h
 api_name:
- - PFN_UCX_USBDEVICE_RESUME
+ - EVT_UCX_USBDEVICE_RESUME
 ---
 
 # EVT_UCX_USBDEVICE_RESUME callback function
@@ -50,16 +49,17 @@ UCX invokes this callback function to resume a device from suspend state.
 
 ## -parameters
 
-### -param UcxController 
+### -param UcxController [in]
 
-[in]
+
  A handle to the UCX controller that the client driver received in a previous call to  the <a href="/previous-versions/windows/hardware/drivers/mt188033(v=vs.85)">UcxControllerCreate</a> method.
 
-### -param UcxUsbDevice 
+### -param UcxUsbDevice [in]
 
-[in]
+
 A handle to a UCX object that represents the USB device that the client driver received in a previous call to the <a href="/windows-hardware/drivers/ddi/ucxusbdevice/nf-ucxusbdevice-ucxusbdevicecreate">UcxUsbDeviceCreate</a> method.
 
 ## -remarks
 
 The UCX client driver registers its implementation with the USB host controller extension (UCX) by calling the <a href="/windows-hardware/drivers/ddi/ucxusbdevice/nf-ucxusbdevice-ucxusbdevicecreate">UcxUsbDeviceCreate</a> method.
+

@@ -4,7 +4,6 @@ title: GPIO_CLX_ReleaseInterruptLock function (gpioclx.h)
 description: The GPIO_CLX_ReleaseInterruptLock method releases an interrupt lock on the specified bank.
 old-location: gpio\gpio_clx_releaseinterruptlock.htm
 tech.root: GPIO
-ms.assetid: 195B9FA2-F7B2-4EA0-9D53-63E438666760
 ms.date: 02/15/2018
 keywords: ["GPIO_CLX_ReleaseInterruptLock function"]
 ms.keywords: GPIO.gpio_clx_releaseinterruptlock, GPIO_CLX_ReleaseInterruptLock, GPIO_CLX_ReleaseInterruptLock method [Parallel Ports], gpioclx/GPIO_CLX_ReleaseInterruptLock
@@ -51,14 +50,14 @@ The <b>GPIO_CLX_ReleaseInterruptLock</b> method releases an interrupt lock on th
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>. The GPIO framework extension (GpioClx) passes this pointer value as a parameter to the callback functions that are implemented by the GPIO controller driver.
 
-### -param BankId 
+### -param BankId [in]
 
-[in]
+
 The identifier for this bank of GPIO pins. If N is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to N–1.
 
 ## -remarks

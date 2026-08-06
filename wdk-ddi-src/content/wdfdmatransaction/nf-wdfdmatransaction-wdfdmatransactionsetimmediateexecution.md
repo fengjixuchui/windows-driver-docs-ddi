@@ -4,7 +4,6 @@ title: WdfDmaTransactionSetImmediateExecution function (wdfdmatransaction.h)
 description: The WdfDmaTransactionSetImmediateExecution method marks the specified DMA transaction so that calls to WdfDmaTransactionExecute and WdfDmaTransactionAllocateResources initiate the transaction immediately or fail.
 old-location: wdf\wdfdmatransactionsetimmediateexecution.htm
 tech.root: wdf
-ms.assetid: BC260058-1E33-43BA-B75E-79540E36A08D
 ms.date: 02/26/2018
 keywords: ["WdfDmaTransactionSetImmediateExecution function"]
 ms.keywords: WdfDmaTransactionSetImmediateExecution, WdfDmaTransactionSetImmediateExecution method, kmdf.wdfdmatransactionsetimmediateexecution, wdf.wdfdmatransactionsetimmediateexecution, wdfdmatransaction/WdfDmaTransactionSetImmediateExecution
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -54,14 +53,14 @@ The <b>WdfDmaTransactionSetImmediateExecution</b> method
 
 ## -parameters
 
-### -param DmaTransaction 
+### -param DmaTransaction [in]
 
-[in]
+
 A handle to a DMA transaction object to mark for immediate execution.
 
-### -param UseImmediateExecution 
+### -param UseImmediateExecution [in]
 
-[in]
+
 A Boolean value which, if TRUE, indicates that the transaction should execute immediately (or fail if resources are not available), and, if FALSE, indicates that the transaction should be queued for execution once DMA resources are available.
 
 ## -remarks

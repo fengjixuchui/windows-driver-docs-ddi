@@ -4,7 +4,6 @@ title: PFN_WSK_ACCEPT_EVENT (wsk.h)
 description: The WskAcceptEvent event callback function notifies a WSK application that an incoming connection on a listening socket has been accepted.
 old-location: netvista\wskacceptevent.htm
 tech.root: netvista
-ms.assetid: 672440f0-810a-4e68-82a5-d038770898c5
 ms.date: 05/02/2018
 keywords: ["PFN_WSK_ACCEPT_EVENT callback function"]
 ms.keywords: PFN_WSK_ACCEPT_EVENT, PFN_WSK_ACCEPT_EVENT callback, WskAcceptEvent, WskAcceptEvent callback function [Network Drivers Starting with Windows Vista], netvista.wskacceptevent, wsk/WskAcceptEvent, wskref_5a830348-5fa7-4704-86f2-9d1a953f057b.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wsk.h
 api_name:
- - WskAcceptEvent
+ - PFN_WSK_ACCEPT_EVENT
 ---
 
 # PFN_WSK_ACCEPT_EVENT callback function
@@ -52,17 +51,17 @@ The
 
 ## -parameters
 
-### -param SocketContext 
+### -param SocketContext [in, optional]
 
-[in, optional]
+
 A pointer to the socket context for the listening socket on which the incoming connection was
      accepted. The WSK application provided this pointer to the WSK subsystem when it called the 
      <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket">WskSocket</a> function to create the listening
      socket.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A ULONG value that contains the following flag, or zero:
      
 
@@ -77,23 +76,23 @@ The WSK subsystem called the
        WSK subsystem might have called the 
        <i>WskAcceptEvent</i> event callback function at any IRQL <= DISPATCH_LEVEL.
 
-### -param LocalAddress 
+### -param LocalAddress [in]
 
-[in]
+
 A pointer to a buffer that contains the local transport address on which the incoming connection
      arrived. The buffer contains the specific SOCKADDR structure type that corresponds to the address family
      that the WSK application specified when it created the listening socket.
 
-### -param RemoteAddress 
+### -param RemoteAddress [in]
 
-[in]
+
 A pointer to a buffer that contains the remote transport address from which the incoming
      connection originated. The buffer contains the specific SOCKADDR structure type that corresponds to the
      address family that the WSK application specified when it created the listening socket.
 
-### -param AcceptSocket 
+### -param AcceptSocket [in, optional]
 
-[in, optional]
+
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_socket">WSK_SOCKET</a> structure that is the socket object
      for the accepted socket. If this pointer is <b>NULL</b>, the listening socket is no longer functional and the
@@ -101,9 +100,9 @@ A pointer to a
      <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_close_socket">WskCloseSocket</a> function to close the
      listening socket as soon as possible.
 
-### -param AcceptSocketContext 
+### -param AcceptSocketContext [out]
 
-[out]
+
 A pointer to a variable that receives a pointer to a WSK application-supplied context for the
      socket that is being accepted. The WSK subsystem passes this pointer to the accepted socket's event
      callback functions. The context information is opaque to the WSK subsystem and must be stored in
@@ -112,20 +111,8 @@ A pointer to a variable that receives a pointer to a WSK application-supplied co
      <i>AcceptSocketContext</i> parameter to <b>NULL</b>.
 
 
-#### - **AcceptSocketDispatch [out]
 
-A pointer to a variable that receives a pointer to a constant 
-     <a href="/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_client_connection_dispatch">
-     WSK_CLIENT_CONNECTION_DISPATCH</a> structure. This structure is a dispatch table that contains
-     pointers to the event callback functions for the accepted socket. If the WSK application will not be
-     enabling all of the event callback functions for the accepted socket, the application should set the
-     pointers in the dispatch table to <b>NULL</b> for those event callback functions that it does not enable. If
-     the WSK application will not be enabling any event callback functions on the accepted socket, it should
-     set the variable that is pointed to by the 
-     <i>AcceptSocketDispatch</i> parameter to <b>NULL</b>.
-
-
-#### - AcceptSocketDispatch [out]
+### -param AcceptSocketDispatch [out]
 
 A pointer to a variable that receives a pointer to a constant 
      <a href="/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_client_connection_dispatch">
@@ -270,3 +257,4 @@ A WSK application's <i>WskAcceptEvent</i> event callback function must not wait 
 
 
 <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket">WskSocket</a>
+

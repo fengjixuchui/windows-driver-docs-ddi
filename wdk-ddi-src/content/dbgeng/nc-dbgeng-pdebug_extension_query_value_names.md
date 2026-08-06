@@ -4,7 +4,6 @@ title: PDEBUG_EXTENSION_QUERY_VALUE_NAMES (dbgeng.h)
 description: The DebugExtensionQueryValueNames callback function recovers pseudo-register values.C++ CALLBACK* PDEBUG_EXTENSION_QUERY_VALUE_NAMES DebugExtensionQueryValueNames;
 old-location: debugger\debugextensionqueryvaluenames.htm
 tech.root: debugger
-ms.assetid: cda46d60-913c-40f7-958a-5f9dea93bd0f
 ms.date: 05/03/2018
 keywords: ["PDEBUG_EXTENSION_QUERY_VALUE_NAMES callback function"]
 ms.keywords: DebugExtensionQueryValueNames, DebugExtensionQueryValueNames callback function [Windows Debugging], Extensions_Ref_d06137e2-2d0a-4760-b5f6-2f03355f8c07.xml, PDEBUG_EXTENSION_QUERY_VALUE_NAMES, PDEBUG_EXTENSION_QUERY_VALUE_NAMES callback, dbgeng/DebugExtensionQueryValueNames, debugger.debugextensionqueryvaluenames
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - DebugExtensionQueryValueNames
+ - PDEBUG_EXTENSION_QUERY_VALUE_NAMES
 ---
 
 # PDEBUG_EXTENSION_QUERY_VALUE_NAMES callback function
@@ -52,32 +51,31 @@ The <b>DebugExtensionQueryValueNames</b> callback function recovers <a href="/wi
  CALLBACK* PDEBUG_EXTENSION_QUERY_VALUE_NAMES DebugExtensionQueryValueNames;
 ```
 
-
 ## -parameters
 
-### -param Client 
+### -param Client [in]
 
-[in]
+
 A client to use if the extension needs DbgEng functions.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Provides behavioral flags. This parameter is currently reserved.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 A string buffer that the caller provides, to be filled with the set of value names that the client wants to expose.
 
-### -param BufferChars 
+### -param BufferChars [in]
 
-[in]
+
 The count of wide characters in <i>Buffer</i>.
 
-### -param BufferNeeded 
+### -param BufferNeeded [out]
 
-[out]
+
 The number of wide characters that this function needs to complete successfully.
 
 ## -returns
@@ -141,3 +139,4 @@ Value names must start with <b>$$</b> and have a terminating NULL character. The
 
 
 <i>KnownStructOutput</i>
+

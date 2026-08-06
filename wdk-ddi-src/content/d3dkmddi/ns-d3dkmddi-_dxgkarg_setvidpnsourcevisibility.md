@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGKARG_SETVIDPNSOURCEVISIBILITY
 title: _DXGKARG_SETVIDPNSOURCEVISIBILITY (d3dkmddi.h)
 description: The DXGKARG_SETVIDPNSOURCEVISIBILITY structure contains arguments for the DxgkDdiSetVidPnSourceVisibility function.
 old-location: display\dxgkarg_setvidpnsourcevisibility.htm
-ms.assetid: 073fbcc4-57d8-4709-9605-a3440b5e8e17
 ms.date: 05/10/2018
 keywords: ["DXGKARG_SETVIDPNSOURCEVISIBILITY structure"]
 ms.keywords: DXGKARG_SETVIDPNSOURCEVISIBILITY, DXGKARG_SETVIDPNSOURCEVISIBILITY structure [Display Devices], DmStructs_877a0a99-de1a-4f16-81af-e9dae624281a.xml, _DXGKARG_SETVIDPNSOURCEVISIBILITY, d3dkmddi/DXGKARG_SETVIDPNSOURCEVISIBILITY, display.dxgkarg_setvidpnsourcevisibility
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_SETVIDPNSOURCEVISIBILITY
  - DXGKARG_SETVIDPNSOURCEVISIBILITY
 ---
 
@@ -65,3 +65,4 @@ If <b>Visible</b> is <b>FALSE</b>, the codec must stop scanning. However, a VSyn
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_setvidpnsourcevisibility">DxgkDdiSetVidPnSourceVisibility</a>
+

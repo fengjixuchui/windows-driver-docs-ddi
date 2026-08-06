@@ -4,7 +4,6 @@ title: WDF_MEMORY_DESCRIPTOR_INIT_MDL function (wdfmemory.h)
 description: The WDF_MEMORY_DESCRIPTOR_INIT_MDL function initializes a WDF_MEMORY_DESCRIPTOR structure so that it describes a specified memory descriptor list (MDL).
 old-location: wdf\wdf_memory_descriptor_init_mdl.htm
 tech.root: wdf
-ms.assetid: 2f46b268-2d8c-455a-81e3-a79f48e704c7
 ms.date: 02/26/2018
 keywords: ["WDF_MEMORY_DESCRIPTOR_INIT_MDL function"]
 ms.keywords: DFMemoryObjectRef_f5eb00be-fd17-49bf-87dd-4fde1b06d65e.xml, WDF_MEMORY_DESCRIPTOR_INIT_MDL, WDF_MEMORY_DESCRIPTOR_INIT_MDL function, kmdf.wdf_memory_descriptor_init_mdl, wdf.wdf_memory_descriptor_init_mdl, wdfmemory/WDF_MEMORY_DESCRIPTOR_INIT_MDL
@@ -52,19 +51,19 @@ The <b>WDF_MEMORY_DESCRIPTOR_INIT_MDL</b> function initializes a <a href="/windo
 
 ## -parameters
 
-### -param Descriptor 
+### -param Descriptor [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfmemory/ns-wdfmemory-_wdf_memory_descriptor">WDF_MEMORY_DESCRIPTOR</a> structure.
 
-### -param Mdl 
+### -param Mdl [in]
 
-[in]
+
 A pointer to an MDL that describes a buffer.
 
-### -param BufferLength 
+### -param BufferLength [in]
 
-[in]
+
 The size, in bytes, of the buffer that <i>Mdl</i> specifies.
 
 ## -remarks

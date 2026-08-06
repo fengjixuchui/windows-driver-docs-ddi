@@ -3,8 +3,7 @@ UID: NF:netwakesource.NetWakeSourceGetType
 title: NetWakeSourceGetType function (netwakesource.h)
 description: The NetWakeSourceGetType function gets the type for wake-on-LAN (WoL) source.
 tech.root: netvista
-ms.assetid: 05e0ca0e-5cf2-43b6-b5e1-325a11fde2da
-ms.date: 10/10/2019
+ms.date: 04/01/2022
 keywords: ["NetWakeSourceGetType function"]
 ms.keywords: NetWakeSourceGetType
 req.header: netwakesource.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: netadaptercxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -37,8 +36,6 @@ api_location:
  - netadaptercxstub.lib
 api_name:
  - NetWakeSourceGetType
-product:
- - Windows
 ---
 
 # NetWakeSourceGetType function
@@ -50,7 +47,7 @@ The **NetWakeSourceGetType** function gets the type for wake-on-LAN (WoL) source
 
 ## -parameters
 
-### -param WakeSource
+### -param WakeSource [_In_]
 
 The NETWAKESOURCE object that represents this wake source.
 

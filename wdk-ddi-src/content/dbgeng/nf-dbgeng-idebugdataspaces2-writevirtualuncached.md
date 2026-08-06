@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugDataSpaces2.WriteVirtualUncached
 title: IDebugDataSpaces2::WriteVirtualUncached (dbgeng.h)
-description: The WriteVirtualUncached method writes data to the target's virtual address space.
+description: The WriteVirtualUncached method writes data to the target's virtual address space. This method belongs to the IDebugDataSpaces2 interface.
 old-location: debugger\writevirtualuncached.htm
 tech.root: debugger
-ms.assetid: 01b729cb-d7d0-4c8d-a438-51319ef8e1c8
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces2::WriteVirtualUncached"]
 ms.keywords: IDebugDataSpaces interface [Windows Debugging],WriteVirtualUncached method, IDebugDataSpaces2 interface [Windows Debugging],WriteVirtualUncached method, IDebugDataSpaces2.WriteVirtualUncached, IDebugDataSpaces2::WriteVirtualUncached, IDebugDataSpaces3 interface [Windows Debugging],WriteVirtualUncached method, IDebugDataSpaces3::WriteVirtualUncached, IDebugDataSpaces4 interface [Windows Debugging],WriteVirtualUncached method, IDebugDataSpaces4::WriteVirtualUncached, IDebugDataSpaces::WriteVirtualUncached, IDebugDataSpaces_6b986179-8f9c-4b4f-b42c-0c91088868ec.xml, WriteVirtualUncached, WriteVirtualUncached method [Windows Debugging], WriteVirtualUncached method [Windows Debugging],IDebugDataSpaces interface, WriteVirtualUncached method [Windows Debugging],IDebugDataSpaces2 interface, WriteVirtualUncached method [Windows Debugging],IDebugDataSpaces3 interface, WriteVirtualUncached method [Windows Debugging],IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces2::WriteVirtualUncached, dbgeng/IDebugDataSpaces3::WriteVirtualUncached, dbgeng/IDebugDataSpaces4::WriteVirtualUncached, dbgeng/IDebugDataSpaces::WriteVirtualUncached, debugger.writevirtualuncached
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugDataSpaces.WriteVirtualUncached
- - IDebugDataSpaces2.WriteVirtualUncached
- - IDebugDataSpaces3.WriteVirtualUncached
- - IDebugDataSpaces4.WriteVirtualUncached
+ - IDebugDataSpaces2::WriteVirtualUncached
 ---
 
 # IDebugDataSpaces2::WriteVirtualUncached
@@ -53,24 +49,24 @@ The <b>WriteVirtualUncached</b> method writes data to the target's virtual addre
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the location in the target's virtual address space to be written.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Specifies the buffer to write the memory from.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size in bytes of the buffer.  This is also the number of bytes requested to be written.
 
-### -param BytesWritten 
+### -param BytesWritten [out, optional]
 
-[out, optional]
+
 Receives the number of bytes that were actually written.  If it is set to <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -124,3 +120,4 @@ This method behaves identically to <a href="/windows-hardware/drivers/ddi/dbgeng
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugdataspaces4-writevirtual">WriteVirtual</a>
+

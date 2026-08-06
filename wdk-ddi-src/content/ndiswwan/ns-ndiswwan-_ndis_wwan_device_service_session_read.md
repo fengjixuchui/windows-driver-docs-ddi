@@ -4,7 +4,6 @@ title: _NDIS_WWAN_DEVICE_SERVICE_SESSION_READ (ndiswwan.h)
 description: The NDIS_WWAN_DEVICE_SERVICE_SESSION_READ structure represents device service session data that has been read by the miniport driver from the MB device.
 old-location: netvista\ndis_wwan_device_service_session_read.htm
 tech.root: netvista
-ms.assetid: 6417E9B6-FDF9-4353-A966-1AFCB14A2735
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_DEVICE_SERVICE_SESSION_READ structure"]
 ms.keywords: "*PNDIS_WWAN_DEVICE_SERVICE_SESSION_READ, NDIS_WWAN_DEVICE_SERVICE_SESSION_READ, NDIS_WWAN_DEVICE_SERVICE_SESSION_READ structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_DEVICE_SERVICE_SESSION_READ, PNDIS_WWAN_DEVICE_SERVICE_SESSION_READ structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_DEVICE_SERVICE_SESSION_READ, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_SESSION_READ, ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_SESSION_READ, netvista.ndis_wwan_device_service_session_read"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_DEVICE_SERVICE_SESSION_READ
+ - PNDIS_WWAN_DEVICE_SERVICE_SESSION_READ
  - NDIS_WWAN_DEVICE_SERVICE_SESSION_READ
 ---
 
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_DEVICE_SERVICE_SESSION_READ)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field ReadData
 
@@ -111,3 +112,4 @@ The data that has been read from a device service session.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_device_service_session_read">WWAN_DEVICE_SERVICE_SESSION_READ</a>
+

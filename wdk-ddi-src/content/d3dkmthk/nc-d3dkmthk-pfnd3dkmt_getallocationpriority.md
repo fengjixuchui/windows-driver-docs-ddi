@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_GETALLOCATIONPRIORITY
 title: PFND3DKMT_GETALLOCATIONPRIORITY (d3dkmthk.h)
 description: The Pfnd3dkmtGetallocationpriority callback function gets allocation priority.
-ms.assetid: 896340a0-408c-41ec-81e2-f720f10e20d7
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_GETALLOCATIONPRIORITY callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The Pfnd3dkmtGetallocationpriority callback function gets allocation priority.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_GETALLOCATIONPRIORITY](ns-d3dkmthk-_d3dkmt_getallocationpriority.md) structure.
 

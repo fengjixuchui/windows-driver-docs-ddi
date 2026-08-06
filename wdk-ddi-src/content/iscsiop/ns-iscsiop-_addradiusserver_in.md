@@ -4,7 +4,6 @@ title: _AddRADIUSServer_IN (iscsiop.h)
 description: The AddRADIUSServer_IN structure holds the input data for the AddRADIUSServer method, which is used to add a new RADIUS server entry to existing list.
 old-location: storage\addradiusserver_in.htm
 tech.root: storage
-ms.assetid: 7b7b9f3b-df33-4886-bd22-23429cb05ea7
 ms.date: 03/29/2018
 keywords: ["AddRADIUSServer_IN structure"]
 ms.keywords: "*PAddRADIUSServer_IN, AddRADIUSServer_IN, AddRADIUSServer_IN structure [Storage Devices], PAddRADIUSServer_IN, PAddRADIUSServer_IN structure pointer [Storage Devices], _AddRADIUSServer_IN, iscsiop/AddRADIUSServer_IN, iscsiop/PAddRADIUSServer_IN, storage.addradiusserver_in, structs-iSCSI_9899ffb9-7e0d-4d1e-af4c-9dd771527610.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsiop.h
 api_name:
+ - _AddRADIUSServer_IN
+ - PAddRADIUSServer_IN
  - AddRADIUSServer_IN
 ---
 
@@ -77,3 +78,4 @@ It is optional that you implement this method.
 
 
 <a href="/windows-hardware/drivers/storage/msiscsi-operations-wmi-class">MSiSCSI_Operations WMI Class</a>
+

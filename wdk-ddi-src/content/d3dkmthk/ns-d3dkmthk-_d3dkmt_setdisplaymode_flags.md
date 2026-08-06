@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_SETDISPLAYMODE_FLAGS
 title: _D3DKMT_SETDISPLAYMODE_FLAGS (d3dkmthk.h)
 description: The D3DKMT_SETDISPLAYMODE_FLAGS structure identifies attributes for setting the display mode.
 old-location: display\d3dkmt_setdisplaymode_flags.htm
-ms.assetid: 245586cb-d277-4cef-aeb9-b576a4ae6d43
 ms.date: 05/10/2018
 keywords: ["D3DKMT_SETDISPLAYMODE_FLAGS structure"]
 ms.keywords: D3DKMT_SETDISPLAYMODE_FLAGS, D3DKMT_SETDISPLAYMODE_FLAGS structure [Display Devices], OpenGL_Structs_28412793-06ae-4e0d-9461-8e7cbcea8779.xml, _D3DKMT_SETDISPLAYMODE_FLAGS, d3dkmthk/D3DKMT_SETDISPLAYMODE_FLAGS, display.d3dkmt_setdisplaymode_flags
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_SETDISPLAYMODE_FLAGS
  - D3DKMT_SETDISPLAYMODE_FLAGS
 ---
 
@@ -52,13 +52,13 @@ The D3DKMT_SETDISPLAYMODE_FLAGS structure identifies attributes for setting the 
 
 ## -struct-fields
 
-### -field PreserveVidPn
+### -field PreserveVidPn [in]
 
-[in] A Boolean value that specifies whether the video present network (VidPN) for a monitor is preserved.
+A Boolean value that specifies whether the video present network (VidPN) for a monitor is preserved.
 
-### -field Reserved
+### -field Reserved [in]
 
-[in] This member is reserved and should be set to zero.
+This member is reserved and should be set to zero.
 
 ## -remarks
 
@@ -67,3 +67,4 @@ To set attributes of the display mode, you specify bitfields of the D3DKMT_SETDI
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_setdisplaymode">D3DKMT_SETDISPLAYMODE</a>
+

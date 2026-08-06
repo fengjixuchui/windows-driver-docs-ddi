@@ -4,7 +4,6 @@ title: CcDeferWrite function (ntifs.h)
 description: The CcDeferWrite routine defers writing to a cached file.
 old-location: ifsk\ccdeferwrite.htm
 tech.root: ifsk
-ms.assetid: a655bcde-c627-4c90-8579-348ab0174c27
 ms.date: 04/16/2018
 keywords: ["CcDeferWrite function"]
 ms.keywords: CcDeferWrite, CcDeferWrite routine [Installable File System Drivers], ccref_06158fb8-cf33-42fa-bf7c-94b3a5e1fcfd.xml, ifsk.ccdeferwrite, ntifs/CcDeferWrite
@@ -50,14 +49,14 @@ The <b>CcDeferWrite</b> routine defers writing to a cached file. The post routin
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to a file object for the cached file to which the data is to be written.
 
-### -param PostRoutine 
+### -param PostRoutine [in]
 
-[in]
+
 Address of a routine for the cache manager to call to write to the cached file. Note that it is possible that this routine will be called immediately, even if <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-cccaniwrite">CcCanIWrite</a> has just returned <b>FALSE</b> .
 
 The post routine is defined in ntifs.h as:
@@ -70,26 +69,26 @@ VOID (*PCC_POST_DEFERRED_WRITE) (
     _In_ PVOID Context2
     );
 ```
+This function can be called with the TopLevelIrp field in the current IRP set to FSRTL_MOD_WRITE_TOP_LEVEL_IRP.
+
+### -param Context1 [in]
 
 
-### -param Context1 
-
-[in]
 First parameter for the post routine at <i>PostRoutine</i>.
 
-### -param Context2 
+### -param Context2 [in]
 
-[in]
+
 Second parameter for the post routine at <i>PostRoutine</i>.
 
-### -param BytesToWrite 
+### -param BytesToWrite [in]
 
-[in]
+
 Number of bytes of data to be written.
 
-### -param Retrying 
+### -param Retrying [in]
 
-[in]
+
 Set to <b>FALSE</b> if the request is being posted for the first time, <b>TRUE</b> otherwise.
 
 ## -remarks

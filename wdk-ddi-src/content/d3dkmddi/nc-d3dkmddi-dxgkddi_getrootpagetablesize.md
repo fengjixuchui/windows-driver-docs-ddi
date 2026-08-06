@@ -3,7 +3,6 @@ UID: NC:d3dkmddi.DXGKDDI_GETROOTPAGETABLESIZE
 title: DXGKDDI_GETROOTPAGETABLESIZE (d3dkmddi.h)
 description: DxgkDdiGetRootPageTableSize returns the minimum root page table size, in bytes, that is needed to hold the given number of page table entries.
 old-location: display\dxgkddigetrootpagetablesize.htm
-ms.assetid: 474F1772-0DF9-487B-AEB9-302392AE0B98
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_GETROOTPAGETABLESIZE callback function"]
 ms.keywords: DXGKDDI_GETROOTPAGETABLESIZE, DXGKDDI_GETROOTPAGETABLESIZE callback, DxgkDdiGetRootPageTableSize, DxgkDdiGetRootPageTableSize callback function [Display Devices], d3dkmddi/DxgkDdiGetRootPageTableSize, display.dxgkddigetrootpagetablesize
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiGetRootPageTableSize
-product:
- - Windows
+ - DXGKDDI_GETROOTPAGETABLESIZE
 ---
 
 # DXGKDDI_GETROOTPAGETABLESIZE callback function
@@ -65,3 +62,4 @@ The <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_getroot
 ## -returns
 
 The page table size in bytes. The size must be a multiple of the page size of the GPU memory segment where page table is located.
+

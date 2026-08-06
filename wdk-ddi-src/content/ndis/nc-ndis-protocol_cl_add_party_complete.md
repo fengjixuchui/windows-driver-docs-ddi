@@ -4,7 +4,6 @@ title: PROTOCOL_CL_ADD_PARTY_COMPLETE (ndis.h)
 description: The ProtocolClAddPartyComplete function is required for connection-oriented NDIS clients that set up multipoint connections.
 old-location: netvista\protocolcladdpartycomplete.htm
 tech.root: netvista
-ms.assetid: ea3ebbe9-fd94-44b8-8801-639d099c5158
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CL_ADD_PARTY_COMPLETE callback function"]
 ms.keywords: PROTOCOL_CL_ADD_PARTY_COMPLETE, PROTOCOL_CL_ADD_PARTY_COMPLETE callback, ProtocolClAddPartyComplete, ProtocolClAddPartyComplete callback function [Network Drivers Starting with Windows Vista], condis_client_ref_9c69b521-649f-4c2b-b665-e79cd8c07e48.xml, ndis/ProtocolClAddPartyComplete, netvista.protocolcladdpartycomplete
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolClAddPartyComplete
+ - PROTOCOL_CL_ADD_PARTY_COMPLETE
 ---
 
 # PROTOCOL_CL_ADD_PARTY_COMPLETE callback function
@@ -58,9 +57,9 @@ The
 
 ## -parameters
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 Specifies final status of the client-initiated add-party operation, which can be one of the
      following:
      
@@ -95,23 +94,23 @@ The call manager's
        <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_add_party">ProtocolCmAddParty</a> function
        returned a CM-determined value to indicate why it could not add the party to the VC.
 
-### -param ProtocolPartyContext 
+### -param ProtocolPartyContext [in]
 
-[in]
+
 Specifies the client-supplied handle originally passed to 
      <b>NdisClAddParty</b>.
 
-### -param NdisPartyHandle 
+### -param NdisPartyHandle [in]
 
-[in]
+
 If 
      <i>Status</i> is NDIS_STATUS_SUCCESS, this NDIS-supplied handle represents the association between the
      call manager and client regarding this party. Otherwise, the attempt to add a party failed and the
      client should consider this parameter an invalid handle.
 
-### -param CallParameters 
+### -param CallParameters [in]
 
-[in]
+
 Pointer to a structure of type 
      <a href="/previous-versions/windows/hardware/network/ff545384(v=vs.85)">CO_CALL_PARAMETERS</a>, originally set up by
      the client for its call to 
@@ -218,3 +217,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_add_party">ProtocolCmAddParty</a>
+

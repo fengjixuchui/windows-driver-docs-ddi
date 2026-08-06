@@ -4,7 +4,6 @@ title: EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE (wdfchildlist.h)
 description: A driver's EvtChildListIdentificationDescriptionCompare event callback function compares one child identification description with another.
 old-location: wdf\evtchildlistidentificationdescriptioncompare.htm
 tech.root: wdf
-ms.assetid: b807f9f8-588f-4303-be97-a9fd4cff2bbd
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE callback function"]
 ms.keywords: DFDeviceObjectChildListRef_58ed75b3-f129-4cfb-8d36-577b1cb8ffa0.xml, EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE, EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE callback, EvtChildListIdentificationDescriptionCompare, EvtChildListIdentificationDescriptionCompare callback function, kmdf.evtchildlistidentificationdescriptioncompare, wdf.evtchildlistidentificationdescriptioncompare, wdfchildlist/EvtChildListIdentificationDescriptionCompare
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfChildlist.h
 api_name:
- - EvtChildListIdentificationDescriptionCompare
+ - EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE
 ---
 
 # EVT_WDF_CHILD_LIST_IDENTIFICATION_DESCRIPTION_COMPARE callback function
@@ -52,19 +51,19 @@ A driver's <i>EvtChildListIdentificationDescriptionCompare</i> event callback fu
 
 ## -parameters
 
-### -param ChildList 
+### -param ChildList [in]
 
-[in]
+
 A handle to a framework child-list object.
 
-### -param FirstIdentificationDescription 
+### -param FirstIdentificationDescription [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a> structure that identifies the one child identification description.
 
-### -param SecondIdentificationDescription 
+### -param SecondIdentificationDescription [in]
 
-[in]
+
 A pointer to a WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER structure that identifies another child identification description.
 
 ## -returns
@@ -156,3 +155,4 @@ For more information about dynamic enumeration, see <a href="/windows-hardware/d
 
 
 <a href="/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitsetdefaultchildlistconfig">WdfFdoInitSetDefaultChildListConfig</a>
+

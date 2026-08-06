@@ -4,7 +4,6 @@ title: IKsClockPropertySet::KsGetResolution (ksproxy.h)
 description: The KsGetResolution method retrieves the clock resolution from the underlying clock.
 old-location: stream\iksclockpropertyset_ksgetresolution.htm
 tech.root: stream
-ms.assetid: 507d41ae-31b9-4807-99af-9ec48eb2b5aa
 ms.date: 04/23/2018
 keywords: ["IKsClockPropertySet::KsGetResolution"]
 ms.keywords: IKsClockPropertySet interface [Streaming Media Devices],KsGetResolution method, IKsClockPropertySet.KsGetResolution, IKsClockPropertySet::KsGetResolution, KsGetResolution, KsGetResolution method [Streaming Media Devices], KsGetResolution method [Streaming Media Devices],IKsClockPropertySet interface, ksproxy/IKsClockPropertySet::KsGetResolution, ksproxy_0c0583b1-5ab3-4e30-bf99-6822d8966171.xml, stream.iksclockpropertyset_ksgetresolution
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ksproxy.h
 api_name:
- - IKsClockPropertySet.KsGetResolution
+ - IKsClockPropertySet::KsGetResolution
 ---
 
 # IKsClockPropertySet::KsGetResolution
@@ -50,9 +49,9 @@ The <b>KsGetResolution</b> method retrieves the clock resolution from the underl
 
 ## -parameters
 
-### -param Resolution 
+### -param Resolution [out]
 
-[out]
+
 Pointer to a variable that receives a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksresolution">KSRESOLUTION</a> structure that contains the granularity and error of the underlying clock.
 
 ## -returns
@@ -72,3 +71,4 @@ The proxy uses the <a href="/windows-hardware/drivers/stream/ksproperty-clock-re
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksresolution">KSRESOLUTION</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NS:srb._SRBEX_DATA_WMI
 title: _SRBEX_DATA_WMI (srb.h)
-description: The SRBEX_DATA_WMI structure contains the request data for an extended WMI SRB.
+description: The _SRBEX_DATA_WMI structure (srb.h) contains the request data for an extended WMI SCSI Request Block (SRB).
 old-location: storage\srbex_data_wmi.htm
 tech.root: storage
-ms.assetid: 3FFBF258-50C3-4D2D-AFC8-184D2FF85EE4
 ms.date: 03/29/2018
 keywords: ["SRBEX_DATA_WMI structure"]
 ms.keywords: "*PSRBEX_DATA_WMI, PSRBEX_DATA_WMI, PSRBEX_DATA_WMI structure pointer [Storage Devices], SRBEX_DATA_WMI, SRBEX_DATA_WMI structure [Storage Devices], _SRBEX_DATA_WMI, storage.srbex_data_wmi, storport/PSRBEX_DATA_WMI, storport/SRBEX_DATA_WMI"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Storport.h
 api_name:
+ - _SRBEX_DATA_WMI
+ - PSRBEX_DATA_WMI
  - SRBEX_DATA_WMI
 ---
 
@@ -86,3 +87,4 @@ Specifies the WMI data path for this request.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/srb/ns-srb-_storage_request_block">STORAGE_REQUEST_BLOCK</a>
+

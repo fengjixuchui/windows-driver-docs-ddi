@@ -1,10 +1,9 @@
 ---
 UID: NS:pep_x._PEP_PROCESSOR_PARK_STATE
 title: _PEP_PROCESSOR_PARK_STATE (pep_x.h)
-description: The PEP_PROCESSOR_PARK_STATE structure describes the parking state for a single processor.
+description: Learn how the PEP_PROCESSOR_PARK_STATE structure describes the parking state for a single processor.
 old-location: kernel\pep_processor_park_state.htm
 tech.root: kernel
-ms.assetid: 7F0BD23A-A375-43D5-B106-31E206DB6EC4
 ms.date: 04/30/2018
 keywords: ["PEP_PROCESSOR_PARK_STATE structure"]
 ms.keywords: "*PPEP_PROCESSOR_PARK_STATE, PEP_PROCESSOR_PARK_STATE, PEP_PROCESSOR_PARK_STATE structure [Kernel-Mode Driver Architecture], PPEP_PROCESSOR_PARK_STATE, PPEP_PROCESSOR_PARK_STATE structure pointer [Kernel-Mode Driver Architecture], _PEP_PROCESSOR_PARK_STATE, kernel.pep_processor_park_state, pepfx/PEP_PROCESSOR_PARK_STATE, pepfx/PPEP_PROCESSOR_PARK_STATE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_PROCESSOR_PARK_STATE
+ - PPEP_PROCESSOR_PARK_STATE
  - PEP_PROCESSOR_PARK_STATE
 ---
 
@@ -73,3 +74,4 @@ This member is reserved and should be set to zero.
 
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_ppm_park_mask">PEP_PPM_PARK_MASK</a>
+

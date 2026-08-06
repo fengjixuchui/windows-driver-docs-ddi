@@ -4,7 +4,6 @@ title: NdisMCmDispatchIncomingCloseCall macro (ndis.h)
 description: NdisMCmDispatchIncomingCloseCall tells a client to tear down an active or offered call, usually because the MCM driver has received a request from the network to close the connection.
 old-location: netvista\ndismcmdispatchincomingclosecall.htm
 tech.root: netvista
-ms.assetid: 843050e1-a1ec-4313-b527-529c4ff6ca07
 ms.date: 05/02/2018
 keywords: ["NdisMCmDispatchIncomingCloseCall macro"]
 ms.keywords: NdisMCmDispatchIncomingCloseCall, NdisMCmDispatchIncomingCloseCall macro [Network Drivers Starting with Windows Vista], condis_mcm_ref_b5a94c5f-7483-44dd-8167-6e64f52cada6.xml, ndis/NdisMCmDispatchIncomingCloseCall, netvista.ndismcmdispatchincomingclosecall
@@ -98,7 +97,7 @@ The MCM driver has notified a client of an incoming call offer. When the minipor
 
 </li>
 <li>
-Abormal network conditions force the MCM driver to tear down active calls. For example, if the MCM
+Abnormal network conditions force the MCM driver to tear down active calls. For example, if the MCM
       driver is notified when any link on the connection between this client and the remote party to the
       connection goes down, the miniport driver would call 
       <b>NdisCmDispatchIncomingCloseCall</b> to prevent the client from attempting (or expecting) further data

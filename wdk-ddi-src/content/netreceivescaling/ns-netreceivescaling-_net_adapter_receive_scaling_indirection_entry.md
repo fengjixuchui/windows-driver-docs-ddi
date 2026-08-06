@@ -3,17 +3,16 @@ UID: NS:netreceivescaling._NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRY
 title: _NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRY (netreceivescaling.h)
 description: The NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRY structure represents a single entry in the receive side scaling (RSS) indirection table.
 tech.root: netvista
-ms.assetid: 053929b4-7420-40ac-a844-df62e055607b
 ms.date: 03/07/2018
 keywords: ["NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRY structure"]
 ms.keywords: _NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRY, NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRY,
 req.header: netreceivescaling.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: 
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.25
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -26,14 +25,15 @@ f1_keywords:
  - netreceivescaling/_NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRY
  - NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRY
  - netreceivescaling/NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRY
-topictype:
+topic_type:
  - apiref
-apitype:
+api_type:
  - HeaderDef
-apilocation:
+api_location:
  - netreceivescaling.h
-apiname:
+api_name:
  - _NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRY
+ - NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRY
 ---
 
 # _NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRY structure
@@ -68,3 +68,4 @@ Each **NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRY** structure is contained wi
 [NET_ADAPTER_RECEIVE_SCALING_INDIRECTION_ENTRIES](ns-netreceivescaling-_net_adapter_receive_scaling_indirection_entries.md)
 
 [NetAdapterCx Receive Side Scaling](/windows-hardware/drivers/netcx/netadaptercx-receive-side-scaling-rss-)
+

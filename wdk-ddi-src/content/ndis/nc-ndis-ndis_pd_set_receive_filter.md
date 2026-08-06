@@ -4,7 +4,6 @@ title: NDIS_PD_SET_RECEIVE_FILTER (ndis.h)
 description: The PacketDirect (PD) platform calls a PD-capable miniport driver's NdisPDSetReceiveFilter function to direct specific flows of packets to a specific PD receive queue.
 old-location: netvista\ndispdsetreceivefilter.htm
 tech.root: netvista
-ms.assetid: 49587142-9C84-4F73-BE0C-D256A8E6BF4B
 ms.date: 05/02/2018
 keywords: ["NDIS_PD_SET_RECEIVE_FILTER callback function"]
 ms.keywords: NDIS_PD_SET_RECEIVE_FILTER, NDIS_PD_SET_RECEIVE_FILTER callback, NdisPDSetReceiveFilter, NdisPDSetReceiveFilter callback function [Network Drivers Starting with Windows Vista], ndis/NdisPDSetReceiveFilter, netvista.ndispdsetreceivefilter
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - NdisPDSetReceiveFilter
+ - NDIS_PD_SET_RECEIVE_FILTER
 ---
 
 # NDIS_PD_SET_RECEIVE_FILTER callback function
@@ -53,19 +52,19 @@ The PacketDirect (PD) platform calls a PD-capable miniport driver's
 
 ## -parameters
 
-### -param ProviderHandle 
+### -param ProviderHandle [in]
 
-[in]
+
 A provider handle that identifies the PD-capable miniport driver's provider object.
 
-### -param FilterParameters 
+### -param FilterParameters [in]
 
-[in]
+
 Parameters that identify any necessary information for the filter. For more information, see the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_filter_parameters">NDIS_PD_FILTER_PARAMETERS</a> structure.
 
-### -param FilterHandle 
+### -param FilterHandle [out]
 
-[out]
+
 A handle to the filter.
 
 ## -returns
@@ -103,3 +102,4 @@ VOID
 The <b>NDIS_PD_SET_RECEIVE_FILTER</b> function type is defined in the Ntddndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>NDIS_PD_SET_RECEIVE_FILTER</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="/windows-hardware/drivers/devtest/declaring-functions-by-using-function-role-types-for-ndis-drivers">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
 For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-quality/annotating-function-behavior">Annotating Function Behavior</a>.
+

@@ -2,7 +2,6 @@
 UID: NS:d3dkmthk._D3DKMT_GETALLOCATIONPRIORITY
 title: _D3DKMT_GETALLOCATIONPRIORITY (d3dkmthk.h)
 description: Used to get allocation priorities.
-ms.assetid: a1feb30f-9d43-46ba-b412-e4babebe1609
 ms.date: 10/19/2018
 keywords: ["D3DKMT_GETALLOCATIONPRIORITY structure"]
 ms.keywords: _D3DKMT_GETALLOCATIONPRIORITY, D3DKMT_GETALLOCATIONPRIORITY,
@@ -35,6 +34,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_GETALLOCATIONPRIORITY
+ - D3DKMT_GETALLOCATIONPRIORITY
 dev_langs:
  - c++
 ---
@@ -48,26 +48,26 @@ Used to get allocation priorities.
 
 ## -struct-fields
 
-### -field hDevice
+### -field hDevice [in]
 
-[in] A handle to the device.
+A handle to the device.
 
-### -field hResource
+### -field hResource [in]
 
-[in] A handle for this resource in this process.
+A handle for this resource in this process.
 
-### -field phAllocationList
+### -field phAllocationList [in]
 
-[in] Pointer to an array allocation to get priorities of.
+Pointer to an array allocation to get priorities of.
 
-### -field AllocationCount
+### -field AllocationCount [in]
 
-[in] Number of allocations in *phAllocationList*.
+Number of allocations in *phAllocationList*.
 
-### -field pPriorities
+### -field pPriorities [out]
 
  
-[out] Priority for each of the allocation in the array.
+Priority for each of the allocation in the array.
 
 ## -remarks
 

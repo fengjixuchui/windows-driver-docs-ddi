@@ -4,7 +4,6 @@ title: NdisFDevicePnPEventNotify function (ndis.h)
 description: A filter driver can call the NdisFDevicePnPEventNotify function to forward a device Plug and Play (PnP) or Power Management event to underlying drivers.
 old-location: netvista\ndisfdevicepnpeventnotify.htm
 tech.root: netvista
-ms.assetid: ae5dd48b-7777-4232-89ad-ac4464e03e57
 ms.date: 05/02/2018
 keywords: ["NdisFDevicePnPEventNotify function"]
 ms.keywords: NdisFDevicePnPEventNotify, NdisFDevicePnPEventNotify function [Network Drivers Starting with Windows Vista], filter_ndis_functions_ref_56e249ae-0200-4c98-b20c-03cc8d3fdd7d.xml, ndis/NdisFDevicePnPEventNotify, netvista.ndisfdevicepnpeventnotify
@@ -53,16 +52,16 @@ A filter driver can call the
 
 ## -parameters
 
-### -param NdisFilterHandle 
+### -param NdisFilterHandle [in]
 
-[in]
+
 The NDIS handle that identifies this filter module. NDIS passed the handle to the filter driver in
      a call to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach">FilterAttach</a> function.
 
-### -param NetDevicePnPEvent 
+### -param NetDevicePnPEvent [in]
 
-[in]
+
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_device_pnp_event">NET_DEVICE_PNP_EVENT</a> structure that
      describes a device Plug and Play event.

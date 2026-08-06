@@ -4,7 +4,6 @@ title: PROTOCOL_CM_ACTIVATE_VC_COMPLETE (ndis.h)
 description: The ProtocolCmActivateVcComplete function is required.
 old-location: netvista\protocolcmactivatevccomplete.htm
 tech.root: netvista
-ms.assetid: 6ec9e73e-8abd-4d27-b598-6176f2125348
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CM_ACTIVATE_VC_COMPLETE callback function"]
 ms.keywords: PROTOCOL_CM_ACTIVATE_VC_COMPLETE, PROTOCOL_CM_ACTIVATE_VC_COMPLETE callback, ProtocolCmActivateVcComplete, ProtocolCmActivateVcComplete callback function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_2a632e5a-975c-44a2-8b30-088c128561c2.xml, ndis/ProtocolCmActivateVcComplete, netvista.protocolcmactivatevccomplete
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolCmActivateVcComplete
+ - PROTOCOL_CM_ACTIVATE_VC_COMPLETE
 ---
 
 # PROTOCOL_CM_ACTIVATE_VC_COMPLETE callback function
@@ -55,22 +54,22 @@ The
 
 ## -parameters
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 Specifies the final status, as indicated by the miniport driver, of the request by the call
      manager to activate a VC.
 
-### -param CallMgrVcContext 
+### -param CallMgrVcContext [in]
 
-[in]
+
 Specifies the handle to a call manager-allocated context area in which the call manager maintains
      its per-VC state. The call manager supplied this handle from its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_create_vc">ProtocolCoCreateVc</a> function.
 
-### -param CallParameters 
+### -param CallParameters [in]
 
-[in]
+
 Pointer to the call parameters as specified by the call manager in a call to 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscmactivatevc">NdisCmActivateVc</a>.
 
@@ -142,3 +141,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_make_call">ProtocolCmMakeCall</a>
+

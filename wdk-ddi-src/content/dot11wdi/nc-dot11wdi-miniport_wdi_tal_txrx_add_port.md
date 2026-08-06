@@ -4,7 +4,6 @@ title: MINIPORT_WDI_TAL_TXRX_ADD_PORT (dot11wdi.h)
 description: The MiniportWdiTalTxRxAddPort handler function notifies the datapath components of the creation of a new virtual port.
 old-location: netvista\miniportwditaltxrxaddport.htm
 tech.root: netvista
-ms.assetid: D3006A0B-B0E0-4FEA-864A-FA4B75594FB0
 ms.date: 05/02/2018
 keywords: ["MINIPORT_WDI_TAL_TXRX_ADD_PORT callback function"]
 ms.keywords: MINIPORT_WDI_TAL_TXRX_ADD_PORT, MINIPORT_WDI_TAL_TXRX_ADD_PORT callback, MiniportWdiTalTxRxAddPort, MiniportWdiTalTxRxAddPort callback function [Network Drivers Starting with Windows Vista], dot11wdi/MiniportWdiTalTxRxAddPort, netvista.miniportwditaltxrxaddport
@@ -38,13 +37,16 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
- - MiniportWdiTalTxRxAddPort
+ - MINIPORT_WDI_TAL_TXRX_ADD_PORT
 ---
 
 # MINIPORT_WDI_TAL_TXRX_ADD_PORT callback function
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The 
   MiniportWdiTalTxRxAddPort handler function notifies the datapath components of the creation of a new virtual port. It is invoked after the completion of the <a href="/windows-hardware/drivers/network/oid-wdi-task-create-port">OID_WDI_TASK_CREATE_PORT</a> command and specifies the PortID designated by the target for the port.
@@ -57,19 +59,19 @@ This is a WDI miniport handler inside <a href="/windows-hardware/drivers/ddi/dot
 
 ## -parameters
 
-### -param MiniportTalTxRxContext 
+### -param MiniportTalTxRxContext [in]
 
-[in]
+
 TAL device handle returned by the IHV miniport in <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tal_txrx_initialize">MiniportWdiTalTxRxInitialize</a>.
 
-### -param PortId 
+### -param PortId [in]
 
-[in]
+
 Port ID designated by the target for the port.
 
-### -param OpMode 
+### -param OpMode [in]
 
-[in]
+
 Default operation mode for the port.
 
 ## -see-also
@@ -95,3 +97,4 @@ Default operation mode for the port.
 
 
 <a href="/windows-hardware/drivers/network/wdi-port-id">WDI_PORT_ID</a>
+

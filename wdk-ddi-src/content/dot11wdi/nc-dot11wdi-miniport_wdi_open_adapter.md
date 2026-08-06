@@ -4,7 +4,6 @@ title: MINIPORT_WDI_OPEN_ADAPTER (dot11wdi.h)
 description: The MiniportWdiOpenAdapter handler function is used by the Microsoft component to initiate the Open Task operation on the IHV driver.
 old-location: netvista\miniportwdiopenadapter.htm
 tech.root: netvista
-ms.assetid: C4D09CAD-833A-43A0-AC03-EEDE8270EA12
 ms.date: 05/02/2018
 keywords: ["MINIPORT_WDI_OPEN_ADAPTER callback function"]
 ms.keywords: MINIPORT_WDI_OPEN_ADAPTER, MINIPORT_WDI_OPEN_ADAPTER callback, MiniportWdiOpenAdapter, MiniportWdiOpenAdapter callback function [Network Drivers Starting with Windows Vista], dot11wdi/MiniportWdiOpenAdapter, netvista.miniportwdiopenadapter
@@ -38,13 +37,16 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
- - MiniportWdiOpenAdapter
+ - MINIPORT_WDI_OPEN_ADAPTER
 ---
 
 # MINIPORT_WDI_OPEN_ADAPTER callback function
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The MiniportWdiOpenAdapter handler function is used by the Microsoft component to initiate the Open Task operation on the IHV driver.
 
@@ -56,14 +58,14 @@ This call must complete quickly. If the open operation is successfully started, 
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 The handle to the context area that the miniport driver allocated.
 
-### -param MiniportInitParameters 
+### -param MiniportInitParameters [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_init_parameters">NDIS_MINIPORT_INIT_PARAMETERS</a> structure that defines the initialization parameters for the miniport adapter.
 
 ## -returns
@@ -118,3 +120,4 @@ An appropriate NDIS_STATUS code in the case of a failure.
 
 
 <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-ndis_wdi_open_adapter_complete">OpenAdapterComplete</a>
+

@@ -4,7 +4,6 @@ title: _DOT11_OFFLOAD_NETWORK_LIST_INFO (windot11.h)
 description: The DOT11_OFFLOAD_NETWORK_LIST_INFO structure describes a network offload-list (NLO).
 old-location: netvista\dot11_offload_network_list_info.htm
 tech.root: netvista
-ms.assetid: 0FB1D72F-B183-408A-BB84-A9D54B6C276F
 ms.date: 02/16/2018
 keywords: ["DOT11_OFFLOAD_NETWORK_LIST_INFO structure"]
 ms.keywords: "*PDOT11_OFFLOAD_NETWORK_LIST_INFO, DOT11_OFFLOAD_NETWORK_LIST_INFO, DOT11_OFFLOAD_NETWORK_LIST_INFO structure [Network Drivers Starting with Windows Vista], PDOT11_OFFLOAD_NETWORK_LIST_INFO, PDOT11_OFFLOAD_NETWORK_LIST_INFO structure pointer [Network Drivers Starting with Windows Vista], _DOT11_OFFLOAD_NETWORK_LIST_INFO, netvista.dot11_offload_network_list_info, windot11/DOT11_OFFLOAD_NETWORK_LIST_INFO, windot11/PDOT11_OFFLOAD_NETWORK_LIST_INFO"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - Windot11.h
 api_name:
+ - _DOT11_OFFLOAD_NETWORK_LIST_INFO
+ - PDOT11_OFFLOAD_NETWORK_LIST_INFO
  - DOT11_OFFLOAD_NETWORK_LIST_INFO
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_OFFLOAD_NETWORK_LIST_INFO structure
@@ -52,7 +51,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_OFFLOAD_NETWORK_LIST_INFO structure describes a network offload-list (NLO).
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_OFFLOAD_NETWORK_LIST_INFO structure describes a network offload-list (NLO).
 
 ## -struct-fields
 
@@ -98,7 +100,7 @@ Bit flags to specify extra attributes of this NLO from the following table:
 </tr>
 <tr>
 <td>DOT11_NLO_FLAG_SCAN_AT_SYSTEM_RESUME </td>
-<td>Specifies that NLO is meant to be used at system resume on non-AOAC platfroms, which is never the case for AOAC platforms.  The NLO OID may be sent beforehand, when the systems is being suspended. Miniport/hardware should not start NLO scan right away. The list should be kept in miniport driver or hardware. When the system resumes, the miniport/hardware should try to connect to the previous connected network. The list should be scan right after the effort failed or when there is no previous connected AP to reconnect to.</td>
+<td>Specifies that NLO is meant to be used at system resume on non-AOAC platforms, which is never the case for AOAC platforms.  The NLO OID may be sent beforehand, when the systems is being suspended. Miniport/hardware should not start NLO scan right away. The list should be kept in miniport driver or hardware. When the system resumes, the miniport/hardware should try to connect to the previous connected network. The list should be scan right after the effort failed or when there is no previous connected AP to reconnect to.</td>
 </tr>
 </table>
 
@@ -120,8 +122,6 @@ Number of networks in the list of those requested to offload.
 
 ### -field offloadNetworkList
 
-#### - offloadNetworkList[1]
-
 Array of networks that hardware should automatically search for.
 
 ## -syntax
@@ -137,3 +137,4 @@ typedef struct _DOT11_OFFLOAD_NETWORK_LIST_INFO {
   DOT11_OFFLOAD_NETWORK offloadNetworkList[1];
 } DOT11_OFFLOAD_NETWORK_LIST_INFO, *PDOT11_OFFLOAD_NETWORK_LIST_INFO;
 ```
+

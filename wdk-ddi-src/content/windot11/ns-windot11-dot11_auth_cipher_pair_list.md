@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11.DOT11_AUTH_CIPHER_PAIR_LIST
 title: DOT11_AUTH_CIPHER_PAIR_LIST (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_AUTH_CIPHER_PAIR_LIST structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_auth_cipher_pair_list.htm
 tech.root: netvista
-ms.assetid: e1440041-a7cd-45c6-8aa5-445d6de2bc20
 ms.date: 02/16/2018
 keywords: ["DOT11_AUTH_CIPHER_PAIR_LIST structure"]
 ms.keywords: "*PDOT11_AUTH_CIPHER_PAIR_LIST, DOT11_AUTH_CIPHER_PAIR_LIST, DOT11_AUTH_CIPHER_PAIR_LIST structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_22a0193d-4747-47ac-84dc-067bb30e22ca.xml, PDOT11_AUTH_CIPHER_PAIR_LIST, PDOT11_AUTH_CIPHER_PAIR_LIST structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_auth_cipher_pair_list, windot11/DOT11_AUTH_CIPHER_PAIR_LIST, windot11/PDOT11_AUTH_CIPHER_PAIR_LIST"
@@ -41,8 +40,7 @@ api_location:
  - windot11.h
 api_name:
  - DOT11_AUTH_CIPHER_PAIR_LIST
-product:
- - Windows 10 or later.
+ - PDOT11_AUTH_CIPHER_PAIR_LIST
 ---
 
 # DOT11_AUTH_CIPHER_PAIR_LIST structure
@@ -50,7 +48,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_AUTH_CIPHER_PAIR_LIST structure defines a list of DOT11_AUTH_CIPHER_PAIR structures.
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_AUTH_CIPHER_PAIR_LIST structure defines a list of DOT11_AUTH_CIPHER_PAIR structures.
 
 ## -struct-fields
 
@@ -58,7 +59,7 @@ product:
 
 The type, revision, and size of the DOT11_AUTH_CIPHER_PAIR_LIST structure. This member is
      formatted as an
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+     <a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 
 The miniport driver must set the members of
@@ -86,7 +87,7 @@ This member must be set to
        <code>sizeof(DOT11_AUTH_CIPHER_PAIR_LIST)</code>.
 
 For more information about these members, see
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+     <a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 ### -field uNumOfEntries
 
@@ -192,4 +193,5 @@ If WPS is enabled on a NIC that is operating in Extensible AP mode, the miniport
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+

@@ -4,7 +4,6 @@ title: StorPortInitializeWorker function (storport.h)
 description: Creates a new Storport work item that runs in a system worker thread.
 old-location: storage\storportinitializeworker.htm
 tech.root: storage
-ms.assetid: 4472A092-B2F4-4220-9685-6BE4FF0A83DB
 ms.date: 03/29/2018
 keywords: ["StorPortInitializeWorker function"]
 ms.keywords: StorPortInitializeWorker, StorPortInitializeWorker routine [Storage Devices], storage.storportinitializeworker, storport/StorPortInitializeWorker
@@ -50,14 +49,14 @@ Creates a new Storport work item that runs in a system worker thread.
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param Worker 
+### -param Worker [out]
 
-[out]
+
 A pointer to an opaque buffer that holds context information for the work item.
 
 ## -returns

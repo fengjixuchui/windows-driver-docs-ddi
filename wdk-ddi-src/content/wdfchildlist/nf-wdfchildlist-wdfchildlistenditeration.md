@@ -4,7 +4,6 @@ title: WdfChildListEndIteration function (wdfchildlist.h)
 description: The WdfChildListEndIteration method processes modifications to a specified child list.
 old-location: wdf\wdfchildlistenditeration.htm
 tech.root: wdf
-ms.assetid: f8dc1d77-d0c5-4112-939d-221955012de1
 ms.date: 02/26/2018
 keywords: ["WdfChildListEndIteration function"]
 ms.keywords: DFDeviceObjectChildListRef_24a52e50-851e-456f-b111-0b794e76acfb.xml, WdfChildListEndIteration, WdfChildListEndIteration method, kmdf.wdfchildlistenditeration, wdf.wdfchildlistenditeration, wdfchildlist/WdfChildListEndIteration
@@ -53,14 +52,14 @@ The <b>WdfChildListEndIteration</b> method processes modifications to a specifie
 
 ## -parameters
 
-### -param ChildList 
+### -param ChildList [in]
 
-[in]
+
 The same handle to a framework child-list object that the driver previously specified to <a href="/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistbeginiteration">WdfChildListBeginIteration</a>.
 
-### -param Iterator 
+### -param Iterator [in]
 
-[in]
+
 A pointer to the same caller-allocated <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_list_iterator">WDF_CHILD_LIST_ITERATOR</a> structure that the driver previously supplied to <b>WdfChildListEndIteration</b>.
 
 ## -remarks

@@ -4,7 +4,6 @@ title: _DXVA_AYUVsample2 (dxva.h)
 description: The DXVA_AYUVsample2 structure is sent by the host decoder to the accelerator to specify Y, Cb, Cr color values, and an associated opacity.
 old-location: display\dxva_ayuvsample2.htm
 tech.root: display
-ms.assetid: 33e92f7d-2a01-4be2-a6b3-d0bd63db1eeb
 ms.date: 05/10/2018
 keywords: ["DXVA_AYUVsample2 structure"]
 ms.keywords: "*LPDXVA_AYUVsample2, DXVA_AYUVsample2, DXVA_AYUVsample2 structure [Display Devices], LPDXVA_AYUVsample2, LPDXVA_AYUVsample2 structure pointer [Display Devices], _DXVA_AYUVsample2, display.dxva_ayuvsample2, dxva/DXVA_AYUVsample2, dxva/LPDXVA_AYUVsample2, dxvaref_15019e0c-708c-4d68-972b-d47b7e2b6514.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dxva.h
 api_name:
+ - _DXVA_AYUVsample2
+ - LPDXVA_AYUVsample2
  - DXVA_AYUVsample2
 ---
 
@@ -93,3 +94,4 @@ The <b>DXVA_AYUVsample2</b> structure is used for each sample in a DirectX VA AY
 
 
 <a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_bufferdescription">DXVA_BufferDescription</a>
+

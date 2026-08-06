@@ -4,7 +4,6 @@ title: _IO_PAGING_PRIORITY (wdm.h)
 description: The IO_PAGING_PRIORITY enumeration describes the priority value for a paging I/O IRP.
 old-location: kernel\io_paging_priority.htm
 tech.root: kernel
-ms.assetid: c96d1c81-429f-46de-b56c-6424734ccd7a
 ms.date: 04/30/2018
 keywords: ["IO_PAGING_PRIORITY enumeration"]
 ms.keywords: IO_PAGING_PRIORITY, IO_PAGING_PRIORITY enumeration [Kernel-Mode Driver Architecture], IoPagingPriorityHigh, IoPagingPriorityInvalid, IoPagingPriorityNormal, IoPagingPriorityReserved1, IoPagingPriorityReserved2, _IO_PAGING_PRIORITY, kernel.io_paging_priority, sysenum_8e021ebd-f26a-4749-8e76-c540af5dfae1.xml, wdm/IO_PAGING_PRIORITY, wdm/IoPagingPriorityHigh, wdm/IoPagingPriorityInvalid, wdm/IoPagingPriorityNormal, wdm/IoPagingPriorityReserved1, wdm/IoPagingPriorityReserved2
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _IO_PAGING_PRIORITY
  - IO_PAGING_PRIORITY
 ---
 
@@ -79,3 +79,4 @@ The <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iogetpagingiopriority"
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iogetpagingiopriority">IoGetPagingIoPriority</a>
+

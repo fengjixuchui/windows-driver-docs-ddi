@@ -4,7 +4,6 @@ title: PsDereferenceSiloContext function (ntddk.h)
 description: This routine decrements the reference count on the object.
 old-location: kernel\psdereferencesilocontext.htm
 tech.root: kernel
-ms.assetid: B71C7E8F-E136-4C13-B771-03B3C3C1BE64
 ms.date: 04/30/2018
 keywords: ["PsDereferenceSiloContext function"]
 ms.keywords: PsDereferenceSiloContext, PsDereferenceSiloContext routine [Kernel-Mode Driver Architecture], kernel.psdereferencesilocontext, ntddk/PsDereferenceSiloContext
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: _IRQL_requires_max_(DISPATCH_LEVEL)
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ This routine decrements the reference count on the object.
 
 ## -parameters
 
-### -param SiloContext 
+### -param SiloContext [in]
 
-[in]
+
 A pointer to the object created by the <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-pscreatesilocontext">PsCreateSiloContext</a> routine. This parameter is required and it cannot be <b>NULL</b>.
 
 ## -remarks

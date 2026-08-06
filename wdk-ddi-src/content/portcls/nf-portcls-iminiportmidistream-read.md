@@ -4,7 +4,6 @@ title: IMiniportMidiStream::Read (portcls.h)
 description: The Read method reads data from an incoming MIDI stream.
 old-location: audio\iminiportmidistream_read.htm
 tech.root: audio
-ms.assetid: 448dc408-c47f-4c8b-8baf-a831c69c3020
 ms.date: 05/08/2018
 keywords: ["IMiniportMidiStream::Read"]
 ms.keywords: IMiniportMidiStream interface [Audio Devices],Read method, IMiniportMidiStream.Read, IMiniportMidiStream::Read, Read, Read method [Audio Devices], Read method [Audio Devices],IMiniportMidiStream interface, audio.iminiportmidistream_read, audmp-routines_35ce63a1-ab31-4758-887a-9043e1f65915.xml, portcls/IMiniportMidiStream::Read
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportMidiStream.Read
+ - IMiniportMidiStream::Read
 ---
 
 # IMiniportMidiStream::Read
@@ -50,19 +49,19 @@ The <code>Read</code> method reads data from an incoming MIDI stream.
 
 ## -parameters
 
-### -param BufferAddress 
+### -param BufferAddress [in]
 
-[in]
+
 Specifies the address of a caller-allocated buffer. The method copies the incoming MIDI data from the device to the buffer. The allocated size of this buffer must be greater than or equal to <i>BufferLength</i>.
 
-### -param BufferLength 
+### -param BufferLength [in]
 
-[in]
+
 Specifies the length in bytes of the buffer pointed to by <i>BufferAddress</i>.
 
-### -param BytesRead 
+### -param BytesRead [out]
 
-[out]
+
 Output pointer to a caller-allocated variable into which the method writes a count specifying the actual number of bytes successfully read from the device into the buffer.
 
 ## -returns
@@ -104,3 +103,4 @@ The <code>Read</code> method returns STATUS_SUCCESS and a <i>BytesRead</i> count
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-iportmidi-notify">IPortMidi::Notify</a>
+

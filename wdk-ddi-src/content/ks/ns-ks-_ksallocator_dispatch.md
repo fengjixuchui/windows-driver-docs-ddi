@@ -4,7 +4,6 @@ title: _KSALLOCATOR_DISPATCH (ks.h)
 description: The KSALLOCATOR_DISPATCH structure contains the callbacks required for a pin to implement its own kernel-level allocator.
 old-location: stream\ksallocator_dispatch.htm
 tech.root: stream
-ms.assetid: 6e6e6dde-3b41-44a7-b51d-1b1f06db0853
 ms.date: 04/23/2018
 keywords: ["KSALLOCATOR_DISPATCH structure"]
 ms.keywords: "*PKSALLOCATOR_DISPATCH, KSALLOCATOR_DISPATCH, KSALLOCATOR_DISPATCH structure [Streaming Media Devices], PKSALLOCATOR_DISPATCH, PKSALLOCATOR_DISPATCH structure pointer [Streaming Media Devices], _KSALLOCATOR_DISPATCH, avstruct_73d2c793-a55a-45f3-af31-fc18240ca1df.xml, ks/KSALLOCATOR_DISPATCH, ks/PKSALLOCATOR_DISPATCH, stream.ksallocator_dispatch"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - _KSALLOCATOR_DISPATCH
+ - PKSALLOCATOR_DISPATCH
  - KSALLOCATOR_DISPATCH
 ---
 
@@ -77,3 +78,4 @@ By providing a pointer to a KSALLOCATOR_DISPATCH structure in the relevant <a hr
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin_dispatch">KSPIN_DISPATCH</a>
+

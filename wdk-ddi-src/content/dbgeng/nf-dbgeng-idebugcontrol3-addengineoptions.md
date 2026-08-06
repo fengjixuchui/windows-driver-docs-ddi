@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl3.AddEngineOptions
 title: IDebugControl3::AddEngineOptions (dbgeng.h)
-description: The AddEngineOptions method turns on some of the debugger engine's options.
+description: The AddEngineOptions method turns on some of the debugger engine's options. This method belongs to the IDebugControl3 interface.
 old-location: debugger\addengineoptions.htm
 tech.root: debugger
-ms.assetid: 088036f5-13cb-47ba-953c-a71c923f028e
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::AddEngineOptions"]
 ms.keywords: AddEngineOptions, AddEngineOptions method [Windows Debugging], AddEngineOptions method [Windows Debugging],IDebugControl interface, AddEngineOptions method [Windows Debugging],IDebugControl2 interface, AddEngineOptions method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],AddEngineOptions method, IDebugControl2 interface [Windows Debugging],AddEngineOptions method, IDebugControl2::AddEngineOptions, IDebugControl3 interface [Windows Debugging],AddEngineOptions method, IDebugControl3.AddEngineOptions, IDebugControl3::AddEngineOptions, IDebugControl::AddEngineOptions, IDebugControl_6042b0b9-8175-4790-be19-43f8659716dc.xml, dbgeng/IDebugControl2::AddEngineOptions, dbgeng/IDebugControl3::AddEngineOptions, dbgeng/IDebugControl::AddEngineOptions, debugger.addengineoptions
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugControl.AddEngineOptions
- - IDebugControl2.AddEngineOptions
- - IDebugControl3.AddEngineOptions
+ - IDebugControl3::AddEngineOptions
 ---
 
 # IDebugControl3::AddEngineOptions
@@ -52,9 +49,9 @@ The <b>AddEngineOptions</b> method turns on some of the <a href="/windows-hardwa
 
 ## -parameters
 
-### -param Options 
+### -param Options [in]
 
-[in]
+
 Specifies engine options to turn on.  <i>Options</i> is a bit-set that will be combined with the existing engine options using the bitwise-OR operator.  For a description of the engine options, see <a href="/previous-versions/ff541475(v=vs.85)">DEBUG_ENGOPT_XXX</a>.
 
 ## -returns
@@ -107,3 +104,4 @@ After the engine options have been changed, the engine sends out notification to
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setengineoptions">SetEngineOptions</a>
+

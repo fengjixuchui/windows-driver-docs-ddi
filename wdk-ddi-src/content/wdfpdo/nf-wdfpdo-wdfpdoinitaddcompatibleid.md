@@ -4,7 +4,6 @@ title: WdfPdoInitAddCompatibleID function (wdfpdo.h)
 description: The WdfPdoInitAddCompatibleID method adds a compatible ID to the list of compatible IDs for a child device.
 old-location: wdf\wdfpdoinitaddcompatibleid.htm
 tech.root: wdf
-ms.assetid: cf79661f-afe8-4154-8302-e5018172c6ec
 ms.date: 02/26/2018
 keywords: ["WdfPdoInitAddCompatibleID function"]
 ms.keywords: DFDeviceObjectFdoPdoRef_2578889b-85d3-4706-8907-817328ce8ad5.xml, WdfPdoInitAddCompatibleID, WdfPdoInitAddCompatibleID method, kmdf.wdfpdoinitaddcompatibleid, wdf.wdfpdoinitaddcompatibleid, wdfpdo/WdfPdoInitAddCompatibleID
@@ -53,14 +52,14 @@ The <b>WdfPdoInitAddCompatibleID</b> method adds a compatible ID to the list of 
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
-### -param CompatibleID 
+### -param CompatibleID [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a compatible ID string. The driver can allocate the string's buffer from paged pool.
 
 ## -returns

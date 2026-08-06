@@ -4,7 +4,6 @@ title: DMA_ABORT_HANDLER (netdma.h)
 description: The ProviderAbortDma function cancels any DMA transfers that are associated with a DMA channel.
 old-location: netvista\providerabortdma.htm
 tech.root: netvista
-ms.assetid: b9c23f36-0885-49fd-b92e-dac38d5f363f
 ms.date: 05/02/2018
 keywords: ["DMA_ABORT_HANDLER callback function"]
 ms.keywords: DMA_ABORT_HANDLER, DMA_ABORT_HANDLER callback, ProviderAbortDma, ProviderAbortDma callback function [Network Drivers Starting with Windows Vista], netdma/ProviderAbortDma, netdma_ref_b030a880-2a65-4fef-9f91-4a4bc4fa17b5.xml, netvista.providerabortdma
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - netdma.h
 api_name:
- - ProviderAbortDma
+ - DMA_ABORT_HANDLER
 ---
 
 # DMA_ABORT_HANDLER callback function
@@ -53,9 +52,9 @@ in Windows 8 and later.</div><div> </div>The
 
 ## -parameters
 
-### -param ProviderChannelContext 
+### -param ProviderChannelContext [in]
 
-[in]
+
 A pointer that identifies a DMA channel's context area. The DMA provider returned this handle to
      NetDMA at the location that is specified in the 
      <i>pProviderChannelContext</i> parameter of the 
@@ -137,3 +136,4 @@ NetDMA calls
 
 
 <a href="/windows-hardware/drivers/ddi/netdma/nc-netdma-dma_start_handler">ProviderStartDma</a>
+

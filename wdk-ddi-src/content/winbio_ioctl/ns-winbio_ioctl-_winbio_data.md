@@ -4,7 +4,6 @@ title: _WINBIO_DATA (winbio_ioctl.h)
 description: The WINBIO_DATA structure specifies data in IOCTL payloads.
 old-location: biometric\winbio_data.htm
 tech.root: biometric
-ms.assetid: 00dc716c-621f-4312-bf53-6bc3ab492faa
 ms.date: 02/20/2018
 keywords: ["WINBIO_DATA structure"]
 ms.keywords: "*PWINBIO_DATA, PWINBIO_DATA, PWINBIO_DATA structure pointer [Biometric Devices], WINBIO_DATA, WINBIO_DATA structure [Biometric Devices], _WINBIO_DATA, biometric.winbio_data, biometric_ref_1d08ec8c-d73e-462f-a2f3-dce508bc159f.xml, winbio_ioctl/PWINBIO_DATA, winbio_ioctl/WINBIO_DATA"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - winbio_ioctl.h
 api_name:
+ - _WINBIO_DATA
+ - PWINBIO_DATA
  - WINBIO_DATA
 ---
 
@@ -65,3 +66,4 @@ Specifies an array that contains the payload. Frequently this member contains a 
 ## -remarks
 
 The WINBIO_DATA structure associates a length, in bytes, with an arbitrary block of contiguous memory.
+

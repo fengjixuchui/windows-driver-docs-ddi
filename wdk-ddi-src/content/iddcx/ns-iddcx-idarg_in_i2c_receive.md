@@ -4,7 +4,6 @@ title: IDARG_IN_I2C_RECEIVE (iddcx.h)
 description: Gives information about I2C data being received by the OS.
 old-location: display\idarg_in_i2c_receive.htm
 tech.root: display
-ms.assetid: a44a45bf-4c21-4507-a89b-4130622bdd06
 ms.date: 05/10/2018
 keywords: ["IDARG_IN_I2C_RECEIVE structure"]
 ms.keywords: IDARG_IN_I2C_RECEIVE, IDARG_IN_I2C_RECEIVE structure [Display Devices], display.idarg_in_i2c_receive, iddcx/IDARG_IN_I2C_RECEIVE
@@ -43,26 +42,24 @@ api_name:
 
 # IDARG_IN_I2C_RECEIVE structure
 
-
 ## -description
 
-                 Gives information about I2C data being received by the OS.
+Gives information about I2C data being received by the OS.
 
 ## -struct-fields
 
-### -field SevenBitI2CAddress
+### -field SevenBitI2CAddress [in]
 
-                     [in] The address of the I2C device from which data will be received.
+The address of the I2C device from which data will be received.
 
-### -field Flags
+### -field Flags [in]
 
-                     [in] Flags for the receive operation.
+Flags for the receive operation.
 
-### -field DataSizeInBytes
+### -field DataSizeInBytes [in]
 
-                     [in] The size, in bytes, of the buffer pointed to by <b>pData</b>.
+The size, in bytes, of the buffer pointed to by <b>pData</b>.
 
-### -field pData
+### -field pData [out]
 
-                     [out] A pointer to a buffer that receives the data.
-
+A pointer to a buffer that receives the data.

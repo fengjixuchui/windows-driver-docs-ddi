@@ -4,7 +4,6 @@ title: IFixedPage::GetPagePart (filterpipeline.h)
 description: The GetPagePart method gets the images, thumbnails, fonts, and so on in a page by using the URI.
 old-location: print\ifixedpage_getpagepart.htm
 tech.root: print
-ms.assetid: 6ec8d282-eedb-419e-84cb-8f4776ea7650
 ms.date: 04/20/2018
 keywords: ["IFixedPage::GetPagePart"]
 ms.keywords: GetPagePart, GetPagePart method [Print Devices], GetPagePart method [Print Devices],IFixedPage interface, IFixedPage interface [Print Devices],GetPagePart method, IFixedPage.GetPagePart, IFixedPage::GetPagePart, filterpipeline/IFixedPage::GetPagePart, filterpipeline_925ca634-7cac-41f6-b80f-cc5c90154ae0.xml, print.ifixedpage_getpagepart
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - filterpipeline.h
 api_name:
- - IFixedPage.GetPagePart
+ - IFixedPage::GetPagePart
 ---
 
 # IFixedPage::GetPagePart
@@ -50,14 +49,14 @@ The <b>GetPagePart</b> method gets the images, thumbnails, fonts, and so on in a
 
 ## -parameters
 
-### -param uri 
+### -param uri [in]
 
-[in]
+
 The URI for a part. For example, the filter might parse the page markup and find a referenced font. The filter can use the font URI in a call to <b>GetPagePart</b>. The filter could then retrieve the font object that is associated with the page.
 
-### -param ppUnk 
+### -param ppUnk [out]
 
-[out]
+
 The object that is to be queried.
 
 ## -returns

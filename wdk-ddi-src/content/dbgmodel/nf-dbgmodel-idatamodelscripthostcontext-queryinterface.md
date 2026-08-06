@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelScriptHostContext.QueryInterface
 title: IDataModelScriptHostContext::QueryInterface (dbgmodel.h)
-description: Retrieves pointers to the supported interfaces on an object. This method calls IUnknown::AddRef on the pointer it returns.
-ms.assetid: 6fa06789-9671-44ec-95cc-f83b2e86fcd2
+description: "The IDataModelScriptHostContext::QueryInterface method retrieves pointers to the supported interfaces on an object."
 ms.date: 09/10/2018
 keywords: ["IDataModelScriptHostContext::QueryInterface"]
 ms.keywords: IDataModelScriptHostContext::QueryInterface, QueryInterface, IDataModelScriptHostContext.QueryInterface, IDataModelScriptHostContext::QueryInterface, IDataModelScriptHostContext.QueryInterface
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelScriptHostContext.QueryInterface
+ - IDataModelScriptHostContext::QueryInterface
 ---
 
 # IDataModelScriptHostContext::QueryInterface
@@ -69,3 +68,4 @@ Standard COM method.
 ## -see-also
 
 [IDataModelScriptHostContext interface](nn-dbgmodel-idatamodelscripthostcontext.md)
+

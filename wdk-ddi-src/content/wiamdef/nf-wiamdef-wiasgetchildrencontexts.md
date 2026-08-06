@@ -4,7 +4,6 @@ title: wiasGetChildrenContexts function (wiamdef.h)
 description: The wiasGetChildrenContexts function retrieves an array of item contexts belonging to the current item's children.
 old-location: image\wiasgetchildrencontexts.htm
 tech.root: image
-ms.assetid: a69216f4-1272-488f-8d06-8dc3b6a88452
 ms.date: 05/03/2018
 keywords: ["wiasGetChildrenContexts function"]
 ms.keywords: image.wiasgetchildrencontexts, wiamdef/wiasGetChildrenContexts, wiasFncs_fff487b8-2797-4df4-ae22-f25c08f21dfc.xml, wiasGetChildrenContexts, wiasGetChildrenContexts function [Imaging Devices]
@@ -50,19 +49,19 @@ The **wiasGetChildrenContexts** function retrieves an array of item contexts bel
 
 ## -parameters
 
-### -param pParentContext 
+### -param pParentContext [in]
 
-[in]
+
 Pointer to the parent item.
 
-### -param pulNumChildren 
+### -param pulNumChildren [out]
 
-[out]
+
 Pointer to a memory location that receives the number of children contexts.
 
-### -param pppChildren 
+### -param pppChildren [out]
 
-[out]
+
 Pointer to a memory location that points to an array whose elements are addresses of [IWiaItem](/windows/win32/api/wia_xp/nn-wia_xp-iwiaitem) objects. Each **IWiaItem** object represents one child context.
 
 ## -returns

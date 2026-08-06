@@ -4,7 +4,6 @@ title: RtlIntPtrToUShort function (ntintsafe.h)
 description: Converts a value of type INT_PTR to a value of type USHORT.
 old-location: kernel\rtlintptrtoushort.htm
 tech.root: kernel
-ms.assetid: 7B563FDF-2535-40DD-9370-6607F3ED59F2
 ms.date: 04/30/2018
 keywords: ["RtlIntPtrToUShort function"]
 ms.keywords: RtlIntPtrToUShort, RtlIntPtrToUShort function [Kernel-Mode Driver Architecture], kernel.rtlintptrtoushort, ntintsafe/RtlIntPtrToUShort
@@ -50,14 +49,14 @@ Converts a value of type <b>INT_PTR</b> to a value of type <b>USHORT</b>.
 
 ## -parameters
 
-### -param iOperand 
+### -param iOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pusResult 
+### -param pusResult [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

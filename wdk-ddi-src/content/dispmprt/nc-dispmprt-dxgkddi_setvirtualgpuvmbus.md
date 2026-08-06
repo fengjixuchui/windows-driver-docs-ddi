@@ -3,7 +3,6 @@ UID: NC:dispmprt.DXGKDDI_SETVIRTUALGPUVMBUS
 title: DXGKDDI_SETVIRTUALGPUVMBUS
 description: This function passes a kernel mode virtual machine bus handle to the kernel mode driver.
 tech.root: display
-ms.assetid: ae281f37-bb05-4efe-a8d3-d59e76fe83d6
 ms.date: 04/04/2019
 keywords: ["DXGKDDI_SETVIRTUALGPUVMBUS callback function"]
 req.header: dispmprt.h
@@ -36,8 +35,6 @@ api_location:
  - dispmprt.h
 api_name:
  - DXGKDDI_SETVIRTUALGPUVMBUS
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,13 +48,13 @@ This function passes a kernel mode virtual machine bus handle to the kernel mode
 
 ## -parameters
 
-### -param Context
+### -param Context [in]
 
-[in] The miniport context that is returned by the driver in the [DXGKDDI_GPU_PARTITION_INTERFACE](ns-dispmprt-_dxgkddi_gpu_partition_interface.md) structure.
+The miniport context that is returned by the driver in the [DXGKDDI_GPU_PARTITION_INTERFACE](ns-dispmprt-_dxgkddi_gpu_partition_interface.md) structure.
 
-### -param pArgs
+### -param pArgs [in, out]
 
-[in, out] A pointer to a DXGKARG_SETVIRTUALGPUVMBUS structure.
+A pointer to a DXGKARG_SETVIRTUALGPUVMBUS structure.
 
 ## -returns
 

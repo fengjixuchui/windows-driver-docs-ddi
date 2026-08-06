@@ -4,7 +4,6 @@ title: WdfIoResourceRequirementsListSetInterfaceType function (wdfresource.h)
 description: The WdfIoResourceRequirementsListSetInterfaceType method assigns a bus type to a resource requirements list.
 old-location: wdf\wdfioresourcerequirementslistsetinterfacetype.htm
 tech.root: wdf
-ms.assetid: c229eb9e-cf1f-43ea-b701-fb8fb6196b40
 ms.date: 02/26/2018
 keywords: ["WdfIoResourceRequirementsListSetInterfaceType function"]
 ms.keywords: DFResourceObjectRef_3ce545f1-cdad-4ddb-8b65-236461296d21.xml, WdfIoResourceRequirementsListSetInterfaceType, WdfIoResourceRequirementsListSetInterfaceType method, kmdf.wdfioresourcerequirementslistsetinterfacetype, wdf.wdfioresourcerequirementslistsetinterfacetype, wdfresource/WdfIoResourceRequirementsListSetInterfaceType
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfIoResourceRequirementsListSetInterfaceType</b> method assigns a bus ty
 
 ## -parameters
 
-### -param RequirementsList 
+### -param RequirementsList [in]
 
-[in]
+
 A handle to a framework resource-requirements-list object that represents a device's resource requirements list.
 
-### -param InterfaceType 
+### -param InterfaceType [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_interface_type">INTERFACE_TYPE</a>-typed value that identifies the type of bus that the device is connected to.
 
 ## -remarks

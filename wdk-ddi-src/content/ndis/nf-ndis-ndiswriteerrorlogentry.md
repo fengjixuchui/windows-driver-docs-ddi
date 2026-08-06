@@ -4,7 +4,6 @@ title: NdisWriteErrorLogEntry function (ndis.h)
 description: NdisWriteErrorLogEntry writes an entry to the system I/O error log file.
 old-location: netvista\ndiswriteerrorlogentry.htm
 tech.root: netvista
-ms.assetid: d36174ef-4df2-49ec-9167-cfb150f090f8
 ms.date: 05/02/2018
 keywords: ["NdisWriteErrorLogEntry function"]
 ms.keywords: NdisWriteErrorLogEntry, NdisWriteErrorLogEntry function [Network Drivers Starting with Windows Vista], miniport_logging_ref_754f8e03-f922-4e6d-b2ef-20fb8027b645.xml, ndis/NdisWriteErrorLogEntry, netvista.ndiswriteerrorlogentry
@@ -51,16 +50,16 @@ api_name:
 
 ## -parameters
 
-### -param NdisAdapterHandle 
+### -param NdisAdapterHandle [in]
 
-[in]
+
 Specifies the handle representing the NIC that is the cause of the I/O error to be logged. This
      handle is an input parameter to 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a>.
 
-### -param ErrorCode 
+### -param ErrorCode [in]
 
-[in]
+
 Specifies the NDIS_ERROR_CODE_<i>XXX</i> code that best describes the I/O error as one of the following values:
      
 
@@ -156,21 +155,15 @@ The amount of receive buffer memory that is available is too small to receive da
 
 The network adapter hardware is disabled.
 
-### -param NumberOfErrorValues 
+### -param NumberOfErrorValues [in]
 
-[in]
+
 Specifies the number of ULONG values to follow this parameter.
 
-### -param param
-
-<p>Specifies a variable-sized array of ULONGs associated with the error to be logged.</p>
-
-
-
-
-####### - ...
+### -param ...
 
 Specifies a variable-sized array of ULONGs associated with the error to be logged.
+
 
 ## -remarks
 
@@ -211,3 +204,4 @@ In general, a miniport driver calls
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+

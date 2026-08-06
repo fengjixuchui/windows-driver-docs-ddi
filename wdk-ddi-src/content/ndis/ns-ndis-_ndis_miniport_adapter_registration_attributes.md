@@ -4,7 +4,6 @@ title: _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES (ndis.h)
 description: An NDIS miniport driver sets up an NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES structure to define registration attributes that are associated with a miniport adapter.
 old-location: netvista\ndis_miniport_adapter_registration_attributes.htm
 tech.root: netvista
-ms.assetid: 8f0d539a-50c5-4ecd-b62d-6b32fe7cfaba
 ms.date: 05/02/2018
 keywords: ["NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES structure"]
 ms.keywords: "*PNDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES, NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], PNDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES, PNDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES, miniport_structures_ref_e7ef8530-9b42-45a5-8d51-db76d399b437.xml, ndis/NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES, ndis/PNDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES, netvista.ndis_miniport_adapter_registration_attributes"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES
+ - PNDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES
  - NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES
 ---
 
@@ -57,7 +58,7 @@ An NDIS miniport driver sets up an <b>NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBU
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES. To specify the version of the <b>NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to one of the following values: 
 
@@ -170,7 +171,10 @@ Starting with NDIS 6.30, this flag is set if the miniport driver  is able to tra
 
 For more information about this flag, see the Remarks section.
 
+#### NDIS_MINIPORT_ATTRIBUTES_NO_OID_INTERCEPT_ON_NONDEFAULT_PORTS
 
+Starting with NDIS 6.30, this flag is set if the miniport driver handles OIDs on non-default ports that are usually intercepted
+       and handled by NDIS on its behalf. This does not change the behavior of OIDs destined to the default port.
 
 #### NDIS_MINIPORT_ATTRIBUTES_REGISTER_BUGCHECK_CALLBACK
 
@@ -357,7 +361,7 @@ If the <b>NDIS_MINIPORT_ATTRIBUTES_NO_PAUSE_ON_SUSPEND</b> flag is  set, NDIS do
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -370,3 +374,4 @@ If the <b>NDIS_MINIPORT_ATTRIBUTES_NO_PAUSE_ON_SUSPEND</b> flag is  set, NDIS do
 
 
 <a href="/windows-hardware/drivers/network/oid-pnp-set-power">OID_PNP_SET_POWER</a>
+

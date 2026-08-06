@@ -4,7 +4,6 @@ title: ITracer::GetBits (wdtf.h)
 description: The GetBits method returns the set of tracing flags for a coclass as a bit mask, given a specified TTraceLevel value and the CLSID of the coclass.
 old-location: dtf\itracer_getbits_method.htm
 tech.root: dtf
-ms.assetid: d5c4f28a-63c0-4b9e-9994-de4589ea96c9
 ms.date: 04/04/2018
 keywords: ["ITracer::GetBits"]
 ms.keywords: GetBits, GetBits method [Windows Device Testing Framework], GetBits method [Windows Device Testing Framework],ITracer interface, ITracer interface [Windows Device Testing Framework],GetBits method, ITracer.GetBits, ITracer::GetBits, ITracer_80af4d1b-1fed-4775-83c6-4b7bee53b4a0.xml, dtf.itracer_getbits_method, wdtf/ITracer::GetBits
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdtf.h
 api_name:
- - ITracer.GetBits
+ - ITracer::GetBits
 ---
 
 # ITracer::GetBits
@@ -50,19 +49,19 @@ The <b>GetBits</b> method returns the set of tracing flags for a coclass as a bi
 
 ## -parameters
 
-### -param ClassID 
+### -param ClassID [in]
 
-[in]
+
 The CLSID of the co-class of the object that is requesting the tracing bit mask. This parameter causes the interface's <a href="/windows-hardware/drivers/ddi/index">TraceLevel Path</a> to be defined as HKCR\CLSID\<<i>ClassID</i>>.
 
-### -param Level 
+### -param Level [in]
 
-[in]
+
 The tracing level that is requested. A value of <b>Trace_Default</b> indicates that <b>GetBits</b> will search the interface's TraceLevel Path for the default level. TraceLevel Path is specified by using either <i>ClassID</i> or <i>pszTraceLevelPath</i>. .
 
-### -param pBits 
+### -param pBits [out, retval]
 
-[out, retval]
+
 The returned set of flags as a bit mask.
 
 ## -returns
@@ -88,3 +87,4 @@ If <b>GetBits</b> fails for any reason, the caller is expected to silently conti
 
 
 <a href="/windows-hardware/drivers/ddi/index">TTraceLevel</a>
+

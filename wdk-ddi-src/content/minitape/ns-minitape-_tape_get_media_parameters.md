@@ -1,10 +1,9 @@
 ---
 UID: NS:minitape._TAPE_GET_MEDIA_PARAMETERS
 title: _TAPE_GET_MEDIA_PARAMETERS (minitape.h)
-description: The TAPE_GET_MEDIA_PARAMETERS structure is used in conjunction with the TapeMiniGetMediaParameters routine to retrieve tape media parameters.
+description: The _TAPE_GET_MEDIA_PARAMETERS structure (minitape.h) contains information about the parameters of a tape media.
 old-location: storage\tape_get_media_parameters.htm
 tech.root: storage
-ms.assetid: 3e12c431-4f6d-4d07-be52-e4809e8bc798
 ms.date: 03/29/2018
 keywords: ["TAPE_GET_MEDIA_PARAMETERS structure"]
 ms.keywords: "*PTAPE_GET_MEDIA_PARAMETERS, PTAPE_GET_MEDIA_PARAMETERS, PTAPE_GET_MEDIA_PARAMETERS structure pointer [Storage Devices], TAPE_GET_MEDIA_PARAMETERS, TAPE_GET_MEDIA_PARAMETERS structure [Storage Devices], _TAPE_GET_MEDIA_PARAMETERS, ntddtape/PTAPE_GET_MEDIA_PARAMETERS, ntddtape/TAPE_GET_MEDIA_PARAMETERS, storage.tape_get_media_parameters, structs-tape_19ce668d-65dd-40d6-a668-d34e540cc686.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddtape.h
 api_name:
+ - _TAPE_GET_MEDIA_PARAMETERS
+ - PTAPE_GET_MEDIA_PARAMETERS
  - TAPE_GET_MEDIA_PARAMETERS
 ---
 
@@ -77,3 +78,4 @@ Is set to <b>TRUE</b> if the tape is write-protected.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/minitape/nc-minitape-tape_process_command_routine">TapeMiniGetMediaParameters</a>
+

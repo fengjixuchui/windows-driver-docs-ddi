@@ -4,7 +4,6 @@ title: WdfIoTargetPurge function (wdfiotarget.h)
 description: The WdfIoTargetPurge method cancels all I/O requests queued to a local, remote, or specialized I/O target and prevents any new I/O requests from being queued.
 old-location: wdf\wdfiotargetpurge.htm
 tech.root: wdf
-ms.assetid: C79492C5-3872-4ED9-9AD7-ABE5C5732D41
 ms.date: 02/26/2018
 keywords: ["WdfIoTargetPurge function"]
 ms.keywords: WdfIoTargetPurge, WdfIoTargetPurge method, kmdf.wdfiotargetpurge, wdf.wdfiotargetpurge, wdfiotarget/WdfIoTargetPurge
@@ -55,14 +54,14 @@ The <b>WdfIoTargetPurge</b> method cancels all I/O requests queued to a local, r
 
 ## -parameters
 
-### -param IoTarget 
+### -param IoTarget [in]
 
-[in]
+
 A handle to a local or remote I/O target object that was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicegetiotarget">WdfDeviceGetIoTarget</a> or <a href="/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetcreate">WdfIoTargetCreate</a>, or from a method supplied by a specialized I/O target, such as <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetpipegetiotarget">WdfUsbTargetPipeGetIoTarget</a>.
 
-### -param Action 
+### -param Action [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfiotarget/ne-wdfiotarget-_wdf_io_target_purge_io_action">WDF_IO_TARGET_PURGE_IO_ACTION</a>-typed value that indicates whether the framework should wait to return from  <b>WdfIoTargetPurge</b> until all delivered requests are completed or canceled.
 
 ## -remarks

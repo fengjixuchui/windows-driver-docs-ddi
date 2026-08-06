@@ -1,10 +1,9 @@
 ---
 UID: NF:pep_x.PoFxRegisterPluginEx
 title: PoFxRegisterPluginEx function (pep_x.h)
-description: The PoFxRegisterPluginEx routine registers a platform extension plug-in (PEP) with the Windows power management framework (PoFx).
+description: Learn how the PoFxRegisterPluginEx routine registers a platform extension plug-in (PEP) with the Windows power management framework (PoFx).
 old-location: kernel\pofxregisterpluginex.htm
 tech.root: kernel
-ms.assetid: 68753690-A6DC-46BE-9981-F395B98C3245
 ms.date: 04/30/2018
 keywords: ["PoFxRegisterPluginEx function"]
 ms.keywords: PoFxRegisterPluginEx, PoFxRegisterPluginEx routine [Kernel-Mode Driver Architecture], kernel.pofxregisterpluginex, pepfx/PoFxRegisterPluginEx
@@ -47,18 +46,18 @@ api_name:
 
 ## -description
 
-The <b>PoFxRegisterPluginEx</b> routine registers a platform extension plug-in (PEP) with the Windows <a href="/windows-hardware/drivers/ddi/index">power management framework</a> (PoFx).
+The <b>PoFxRegisterPluginEx</b> routine registers a platform extension plug-in (PEP) with the Windows <a href="/windows-hardware/drivers/ddi/_kernel/#device-power-management">power management framework</a> (PoFx).
 
 ## -parameters
 
-### -param PepInformation 
+### -param PepInformation [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_information">PEP_INFORMATION</a> structure that contains pointers to one or more callback routines that are implemented by the PEP. These routines handle notifications that are sent to the PEP by PoFx.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A set of flag bits for configuring the PEP interface. Set this member to zero or to the following value.
 
 <table>
@@ -72,9 +71,9 @@ A set of flag bits for configuring the PEP interface. Set this member to zero or
 </tr>
 </table>
 
-### -param KernelInformation 
+### -param KernelInformation [in, out]
 
-[in, out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/pep_x/ns-pep_x-_pep_kernel_information_struct_v1">PEP_KERNEL_INFORMATION</a> structure.
 
 ## -returns

@@ -3,8 +3,7 @@ UID: NF:ring.NetRingGetElementAtIndex
 title: NetRingGetElementAtIndex function (ring.h)
 description: The NetRingGetElementAtIndex function retrieves an element from a net ring.
 tech.root: netvista
-ms.assetid: 5feeac1c-9c69-4179-8604-5aaaff7e60a0
-ms.date: 09/25/2019
+ms.date: 04/01/2022
 keywords: ["NetRingGetElementAtIndex function"]
 ms.keywords: NetRingGetElementAtIndex
 req.header: ring.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.29
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -30,13 +29,13 @@ targetos: Windows
 f1_keywords:
  - NetRingGetElementAtIndex
  - ring/NetRingGetElementAtIndex
-topictype:
+topic_type:
  - apiref
-apitype:
+api_type:
  - HeaderDef
-apilocation:
+api_location:
  - ring.h
-apiname:
+api_name:
  - NetRingGetElementAtIndex
 ---
 
@@ -49,11 +48,11 @@ The **NetRingGetElementAtIndex** function retrieves an element from a net ring.
 
 ## -parameters
 
-### -param Ring
+### -param Ring [_In_]
 
 A pointer to a [**NET_RING**](../ring/ns-ring-_net_ring.md).
 
-### -param Index
+### -param Index [_In_]
 
 The element index, within the range **[0, Ring->NumberOfElements)**.
 

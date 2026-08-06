@@ -1,10 +1,9 @@
 ---
 UID: NF:ndis.NdisFreeSpinLock
 title: NdisFreeSpinLock function (ndis.h)
-description: The NdisFreeSpinLock function releases a spin lock initialized in a preceding call to the NdisAllocateSpinLock functioin.
+description: The NdisFreeSpinLock function releases a spin lock initialized in a preceding call to the NdisAllocateSpinLock function.
 old-location: netvista\ndisfreespinlock.htm
 tech.root: netvista
-ms.assetid: 4807d413-c40f-4ee8-b670-9afcac809bd2
 ms.date: 05/02/2018
 keywords: ["NdisFreeSpinLock function"]
 ms.keywords: NdisFreeSpinLock, NdisFreeSpinLock function [Network Drivers Starting with Windows Vista], ndis/NdisFreeSpinLock, ndis_spin_lock_ref_c5b1dcb1-afdc-4622-a07b-f81bb7c1f550.xml, netvista.ndisfreespinlock
@@ -49,13 +48,13 @@ api_name:
 
 The 
   <b>NdisFreeSpinLock</b> function releases a spin lock initialized in a preceding call to the 
-  <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatespinlock">NdisAllocateSpinLock</a> functioin.
+  <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatespinlock">NdisAllocateSpinLock</a> function.
 
 ## -parameters
 
-### -param SpinLock 
+### -param SpinLock [in]
 
-[in]
+
 Pointer to the spin lock to be deinitialized.
 
 ## -remarks

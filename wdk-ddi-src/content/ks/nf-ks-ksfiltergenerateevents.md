@@ -4,7 +4,6 @@ title: KsFilterGenerateEvents function (ks.h)
 description: The KsFilterGenerateEvents function generates events of an indicated type that are present in Filter's event list.
 old-location: stream\ksfiltergenerateevents.htm
 tech.root: stream
-ms.assetid: 62340660-3419-4da6-8d58-c2f82b4231ba
 ms.date: 04/23/2018
 keywords: ["KsFilterGenerateEvents function"]
 ms.keywords: KsFilterGenerateEvents, KsFilterGenerateEvents function [Streaming Media Devices], avfunc_bf12d7bb-6ebf-460b-a2c2-24632c89b083.xml, ks/KsFilterGenerateEvents, stream.ksfiltergenerateevents
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ks.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL (See Remarks section.)
+req.irql: <= DISPATCH_LEVEL (See Remarks section.)
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,39 +50,39 @@ The **KsFilterGenerateEvents** function generates events of an indicated type th
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in]
 
-[in]
+
 A pointer to a [KSFILTER](./ns-ks-_ksfilter.md) structure on which to generate events.
 
-### -param EventSet 
+### -param EventSet [in, optional]
 
-[in, optional]
+
 A pointer to the event set GUID to match for determination of which events to generate. If this parameter is **NULL**, the event set GUID is not taken into account for determining matching events.
 
-### -param EventId 
+### -param EventId [in]
 
-[in]
+
 The event ID to match for determining which events to generate.
 
-### -param DataSize 
+### -param DataSize [in]
 
-[in]
+
 The size of *Data* in bytes.
 
-### -param Data 
+### -param Data [in]
 
-[in]
+
 A pointer to a data buffer. Specify if generating a data event.
 
-### -param CallBack 
+### -param CallBack [in, optional]
 
-[in, optional]
-A pointer to a caller-specified function that is called to determine whether a given event should be generated. If this is **NULL**, no callback verification is performed to determine whether an event should be generated (only *EventSet *and *EventId* are used). For more information, see the Remarks section below.
 
-### -param CallBackContext 
+A pointer to a caller-specified function that is called to determine whether a given event should be generated. If this is **NULL**, no callback verification is performed to determine whether an event should be generated (only *EventSet* and *EventId* are used). For more information, see the Remarks section below.
 
-[in, optional]
+### -param CallBackContext [in, optional]
+
+
 An optional pointer to a caller-specified context that is passed to the callback function *CallBack*. For more information, see the Remarks section below.
 
 ## -remarks

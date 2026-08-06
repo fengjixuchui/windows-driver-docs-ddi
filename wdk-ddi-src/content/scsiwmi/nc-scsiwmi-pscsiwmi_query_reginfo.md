@@ -4,7 +4,6 @@ title: PSCSIWMI_QUERY_REGINFO (scsiwmi.h)
 description: A miniport driver's HwScsiWmiQueryReginfo routine is called to obtain information about the data and event blocks to be registered on behalf of the miniport driver by the SCSI port driver.
 old-location: storage\hwscsiwmiqueryreginfo.htm
 tech.root: storage
-ms.assetid: 416f8629-324f-4698-bbe9-699f5d53011e
 ms.date: 03/29/2018
 keywords: ["PSCSIWMI_QUERY_REGINFO callback function"]
 ms.keywords: HwScsiWmiQueryReginfo, HwScsiWmiQueryReginfo callback function [Storage Devices], PSCSIWMI_QUERY_REGINFO, PSCSIWMI_QUERY_REGINFO callback, Scsimini_16dc5cef-69cd-488a-b941-9819951a3652.xml, scsiwmi/HwScsiWmiQueryReginfo, storage.hwscsiwmiqueryreginfo
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - scsiwmi.h
 api_name:
- - HwScsiWmiQueryReginfo
+ - PSCSIWMI_QUERY_REGINFO
 ---
 
 # PSCSIWMI_QUERY_REGINFO callback function
@@ -51,19 +50,19 @@ A miniport driver's <b>HwScsiWmiQueryReginfo</b> routine is called to obtain inf
 
 ## -parameters
 
-### -param DeviceContext 
+### -param DeviceContext [in]
 
-[in]
+
 Points to the miniport driver-defined context value passed to <a href="/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmidispatchfunction">ScsiPortWmiDispatchFunction</a>.
 
-### -param RequestContext 
+### -param RequestContext [in]
 
-[in]
+
 Points to the SCSIWMI_REQUEST_CONTEXT structure that the miniport driver passed to <a href="/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmidispatchfunction">ScsiPortWmiDispatchFunction</a>.
 
-### -param MofResourceName 
+### -param MofResourceName [out]
 
-[out]
+
 Points to a <b>null</b>-terminated Unicode string that indicates the name of the MOF resource attached to the miniport driver's binary image file. This string can be declared as a constant in the miniport driver. If the miniport driver does not have a MOF resource attached, it should set <i>MofResourceName</i> to <b>NULL</b>.
 
 ## -returns
@@ -89,3 +88,4 @@ The miniport driver must not pend or block the SRB. The miniport driver must not
 
 
 <a href="/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmidispatchfunction">ScsiPortWmiDispatchFunction</a>
+

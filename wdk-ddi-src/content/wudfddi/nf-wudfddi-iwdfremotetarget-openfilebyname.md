@@ -4,7 +4,6 @@ title: IWDFRemoteTarget::OpenFileByName (wudfddi.h)
 description: The OpenFileByName method opens a remote I/O target that is a file.
 old-location: wdf\iwdfremotetarget_openfilebyname.htm
 tech.root: wdf
-ms.assetid: 7f0cef78-3edc-434b-af70-39694776e8a7
 ms.date: 02/26/2018
 keywords: ["IWDFRemoteTarget::OpenFileByName"]
 ms.keywords: IWDFRemoteTarget interface,OpenFileByName method, IWDFRemoteTarget.OpenFileByName, IWDFRemoteTarget::OpenFileByName, OpenFileByName, OpenFileByName method, OpenFileByName method,IWDFRemoteTarget interface, UMDFIoTargetObjectRef_909b78ee-2d3a-46b2-bfca-f72063ca62f8.xml, umdf.iwdfremotetarget_openfilebyname, wdf.iwdfremotetarget_openfilebyname, wudfddi/IWDFRemoteTarget::OpenFileByName
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFRemoteTarget.OpenFileByName
+ - IWDFRemoteTarget::OpenFileByName
 ---
 
 # IWDFRemoteTarget::OpenFileByName
@@ -52,19 +51,19 @@ The <b>OpenFileByName</b> method opens a <a href="/windows-hardware/drivers/wdf/
 
 ## -parameters
 
-### -param pszFileName 
+### -param pszFileName [in]
 
-[in]
+
 A pointer to a caller-supplied, <b>null</b>-terminated string that represents the name of the file to open. For more information about this member, see the <i>FileName</i> parameter of <a href="/windows/win32/api/fileapi/nf-fileapi-createfilea">CreateFile</a> in the Windows SDK.
 
-### -param DesiredAccess 
+### -param DesiredAccess [in]
 
-[in]
+
 A bitmask that specifies the caller's desired access to the file. For more information about this member, see the <i>dwDesiredAccess</i> parameter of <a href="/windows/win32/api/fileapi/nf-fileapi-createfilea">CreateFile</a> in the Windows SDK.
 
-### -param pOpenParams 
+### -param pOpenParams [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wudfddi/ns-wudfddi-_umdf_io_target_open_params">UMDF_IO_TARGET_OPEN_PARAMS</a> structure that contains additional parameters. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns
@@ -139,7 +138,6 @@ hr = fxTarget->OpenFileByName(FILE_PATH,
  
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice2-createremotetarget">IWDFDevice2::CreateRemoteTarget</a>
@@ -151,3 +149,4 @@ hr = fxTarget->OpenFileByName(FILE_PATH,
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfremotetarget-openremoteinterface">IWDFRemoteTarget::OpenRemoteInterface</a>
+

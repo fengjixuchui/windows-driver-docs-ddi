@@ -4,7 +4,6 @@ title: ClfsLsnContainer function (wdm.h)
 description: The ClfsLsnContainer routine returns the logical container identifier contained in a specified LSN.
 old-location: kernel\clfslsncontainer.htm
 tech.root: kernel
-ms.assetid: 006edbf7-b3f8-45f2-902e-03d86e83b0a0
 ms.date: 04/30/2018
 keywords: ["ClfsLsnContainer function"]
 ms.keywords: ClfsLsnContainer, ClfsLsnContainer routine [Kernel-Mode Driver Architecture], Clfs_87c1e289-57b7-414d-a78e-8074a75d1262.xml, kernel.clfslsncontainer, wdm/ClfsLsnContainer
@@ -51,9 +50,9 @@ The <b>ClfsLsnContainer</b> routine returns the logical container identifier con
 
 ## -parameters
 
-### -param plsn 
+### -param plsn [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_lsn">CLFS_LSN</a> structure from which the container identifier is retrieved.
 
 ## -returns

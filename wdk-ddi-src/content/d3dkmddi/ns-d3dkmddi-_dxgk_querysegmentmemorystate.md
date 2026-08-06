@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGK_QUERYSEGMENTMEMORYSTATE
 title: _DXGK_QUERYSEGMENTMEMORYSTATE (d3dkmddi.h)
 description: DXGK_QUERYSEGMENTMEMORYSTATE is used with DxgkDdiQueryAdapterInfo to query invalid graphics processing unit (GPU) memory ranges.
 old-location: display\dxgk_querysegmentmemorystate.htm
-ms.assetid: 565D8D8D-6EBB-4303-8F7E-E2A4B1DAE4EA
 ms.date: 05/10/2018
 keywords: ["DXGK_QUERYSEGMENTMEMORYSTATE structure"]
 ms.keywords: DXGK_QUERYSEGMENTMEMORYSTATE, DXGK_QUERYSEGMENTMEMORYSTATE structure [Display Devices], DXGK_SEGMENTMEMORYSTATE, _DXGK_QUERYSEGMENTMEMORYSTATE, d3dkmddi/DXGK_QUERYSEGMENTMEMORYSTATE, display.dxgk_querysegmentmemorystate
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_QUERYSEGMENTMEMORYSTATE
  - DXGK_QUERYSEGMENTMEMORYSTATE
 ---
 
@@ -81,3 +81,4 @@ Array of <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_memor
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo">DxgkDdiQueryAdapterInfo</a>
+

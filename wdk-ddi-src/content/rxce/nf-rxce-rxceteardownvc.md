@@ -4,7 +4,6 @@ title: RxCeTearDownVC function (rxce.h)
 description: RxCeTearDownVC deregisters a virtual circuit from a specified RDBSS connection.
 old-location: ifsk\rxceteardownvc.htm
 tech.root: ifsk
-ms.assetid: d4b3af4d-8bb2-42a4-a8d9-baa643a90418
 ms.date: 04/16/2018
 keywords: ["RxCeTearDownVC function"]
 ms.keywords: RxCeTearDownVC, RxCeTearDownVC function [Installable File System Drivers], ifsk.rxceteardownvc, rxce/RxCeTearDownVC, rxref_12c4b02d-b629-4543-bf74-aeaa14f6f05d.xml
@@ -50,10 +49,10 @@ api_name:
 
 ## -parameters
 
-### -param pVc 
+### -param pVc [in]
 
-[in]
-A pointer to a handle for an virtual circuit structure to be torn down.
+
+A pointer to a handle for a virtual circuit structure to be torn down.
 
 ## -returns
 

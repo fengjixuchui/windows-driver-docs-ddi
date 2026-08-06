@@ -4,7 +4,6 @@ title: _WDI_DATA_RATE_ENTRY (wditypes.h)
 description: The WDI_DATA_RATE_ENTRY structure defines a data rate entry.
 old-location: netvista\wdi_data_rate_entry.htm
 tech.root: netvista
-ms.assetid: 16A4B49B-9912-40BE-80E8-68416B966B71
 ms.date: 05/02/2018
 keywords: ["WDI_DATA_RATE_ENTRY structure"]
 ms.keywords: "*PWDI_DATA_RATE_ENTRY, PWDI_DATA_RATE_ENTRY, PWDI_DATA_RATE_ENTRY structure pointer [Device and Driver Installation], WDI_DATA_RATE_ENTRY, WDI_DATA_RATE_ENTRY structure [Device and Driver Installation], _WDI_DATA_RATE_ENTRY, netvista.wdi_data_rate_entry, netvista.wifi_data_rate_entry, wditypes/PWDI_DATA_RATE_ENTRY, wditypes/WDI_DATA_RATE_ENTRY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_DATA_RATE_ENTRY
+ - PWDI_DATA_RATE_ENTRY
  - WDI_DATA_RATE_ENTRY
 ---
 
@@ -49,6 +50,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The 
   WDI_DATA_RATE_ENTRY structure defines a data rate entry.

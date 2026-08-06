@@ -4,7 +4,6 @@ title: PFND3DDDI_VIDEOPROCESSENDFRAME (d3dumddi.h)
 description: The VideoProcessEndFrame function notifies the user-mode display driver that all of the data that is required to process the current frame was submitted.
 old-location: display\videoprocessendframe.htm
 tech.root: display
-ms.assetid: a5be6834-bb27-4da0-8802-25a9ca58c101
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_VIDEOPROCESSENDFRAME callback function"]
 ms.keywords: PFND3DDDI_VIDEOPROCESSENDFRAME, PFND3DDDI_VIDEOPROCESSENDFRAME callback, UserModeDisplayDriver_Functions_b7ef391b-90b5-49a6-880e-d0c4f287d0ad.xml, VideoProcessEndFrame, VideoProcessEndFrame callback function [Display Devices], d3dumddi/VideoProcessEndFrame, display.videoprocessendframe
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - VideoProcessEndFrame
-product:
- - Windows
+ - PFND3DDDI_VIDEOPROCESSENDFRAME
 ---
 
 # PFND3DDDI_VIDEOPROCESSENDFRAME callback function
@@ -56,7 +53,7 @@ The <i>VideoProcessEndFrame</i> function notifies the user-mode display driver t
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -90,3 +87,4 @@ The <i>VideoProcessEndFrame</i> function notifies the user-mode display driver t
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_videoprocessblt">VideoProcessBlt</a>
+

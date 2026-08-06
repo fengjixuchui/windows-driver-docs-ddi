@@ -4,14 +4,13 @@ title: PsIsSystemThread function (ntifs.h)
 description: The PsIsSystemThread routine checks whether a given thread is a system thread.
 old-location: kernel\psissystemthread.htm
 tech.root: kernel
-ms.assetid: ecbea013-b876-4690-a455-ebe420a4f050
 ms.date: 04/30/2018
 keywords: ["PsIsSystemThread function"]
 ms.keywords: PsIsSystemThread, PsIsSystemThread routine [Kernel-Mode Driver Architecture], k108_eacaf1ad-4ab8-49a6-9d43-3aba7821e110.xml, kernel.psissystemthread, ntifs/PsIsSystemThread
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winverclnt: Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>PsIsSystemThread</b> routine checks whether a given thread is a system th
 
 ## -parameters
 
-### -param Thread 
+### -param Thread [in]
 
-[in]
+
 Pointer to the thread to be checked.
 
 ## -returns
@@ -61,7 +60,7 @@ Pointer to the thread to be checked.
 
 ## -remarks
 
-For more information about using system threads and managing synchronization within a nonarbitrary thread context, see <a href="/windows-hardware/drivers/ddi/index">Driver Threads, Dispatcher Objects, and Resources</a>.
+For more information about using system threads and managing synchronization within a nonarbitrary thread context, see <a href="/windows-hardware/drivers/ddi/_kernel/#driver-threads-dispatcher-objects-and-resources">Driver Threads, Dispatcher Objects, and Resources</a>.
 
 ## -see-also
 

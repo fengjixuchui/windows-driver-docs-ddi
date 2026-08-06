@@ -1,10 +1,9 @@
 ---
 UID: NS:wlanihv._DOT11EXT_VIRTUAL_STATION_APIS
 title: _DOT11EXT_VIRTUAL_STATION_APIS (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_VIRTUAL_STATION_APIS structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11ext_virtual_station_apis.htm
 tech.root: netvista
-ms.assetid: 5487375a-7d50-4ddd-a666-8727f45b85dc
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_VIRTUAL_STATION_APIS structure"]
 ms.keywords: "*PDOT11EXT_VIRTUAL_STATION_APIS, DOT11EXT_VIRTUAL_STATION_APIS, DOT11EXT_VIRTUAL_STATION_APIS structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_0b2dadd3-7d60-4836-9171-c2c11b56010d.xml, PDOT11EXT_VIRTUAL_STATION_APIS, PDOT11EXT_VIRTUAL_STATION_APIS structure pointer [Network Drivers Starting with Windows Vista], _DOT11EXT_VIRTUAL_STATION_APIS, netvista.dot11ext_virtual_station_apis, wlanihv/DOT11EXT_VIRTUAL_STATION_APIS, wlanihv/PDOT11EXT_VIRTUAL_STATION_APIS"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DOT11EXT_VIRTUAL_STATION_APIS, *PDOT11EXT_VIRTUAL_STATION_APIS
-req.product: Windows 10 or later.
 f1_keywords:
  - _DOT11EXT_VIRTUAL_STATION_APIS
  - wlanihv/_DOT11EXT_VIRTUAL_STATION_APIS
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
+ - _DOT11EXT_VIRTUAL_STATION_APIS
+ - PDOT11EXT_VIRTUAL_STATION_APIS
  - DOT11EXT_VIRTUAL_STATION_APIS
 ---
 
@@ -132,3 +132,4 @@ All of the function pointers are required and must not be set to <b>NULL</b>.
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_query_virtual_station_properties.md">
    Dot11ExtQueryVirtualStationProperties</a>
+

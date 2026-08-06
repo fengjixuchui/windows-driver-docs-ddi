@@ -4,7 +4,6 @@ title: _DEBUG_VALUE (dbgeng.h)
 description: The DEBUG_VALUE structure holds register and expression values.
 old-location: debugger\debug_value.htm
 tech.root: debugger
-ms.assetid: 568469ad-79c4-4437-aefe-a29e77e5143a
 ms.date: 05/03/2018
 keywords: ["DEBUG_VALUE structure"]
 ms.keywords: "*PDEBUG_VALUE, DEBUG_VALUE, DEBUG_VALUE structure [Windows Debugging], PDEBUG_VALUE, PDEBUG_VALUE structure pointer [Windows Debugging], Structures_2486f31c-2a25-41eb-ac3f-9cc1d62dd2e0.xml, _DEBUG_VALUE, dbgeng/DEBUG_VALUE, dbgeng/PDEBUG_VALUE, debugger.debug_value"
@@ -42,11 +41,12 @@ api_type:
 api_location:
  - dbgEng.h
 api_name:
+ - _DEBUG_VALUE
+ - PDEBUG_VALUE
  - DEBUG_VALUE
 ---
 
 # _DEBUG_VALUE structure
-
 
 ## -description
 
@@ -56,204 +56,101 @@ The DEBUG_VALUE structure holds register and expression values.
 
 ### -field I8
 
+See Remarks.
+
 ### -field I16
+
+See Remarks.
 
 ### -field I32
 
+See Remarks.
+
 ### -field I64
+
+See Remarks.
 
 ### -field Nat
 
+See Remarks.
+
 ### -field F32
+
+See Remarks.
 
 ### -field F64
 
-### -field F80Bytes
+See Remarks.
 
-### -field F82Bytes
+### -field F80Bytes[10]
 
-### -field F128Bytes
+See Remarks.
 
-### -field VI8
+### -field F82Bytes[11]
 
-### -field VI16
+See Remarks.
 
-### -field VI32
+### -field F128Bytes[16]
 
-### -field VI64
+See Remarks.
 
-### -field VF32
+### -field VI8[16]
 
-### -field VF64
+See Remarks.
+
+### -field VI16[8]
+
+See Remarks.
+
+### -field VI32[4]
+
+See Remarks.
+
+### -field VI64[2]
+
+See Remarks.
+
+### -field VF32[4]
+
+See Remarks.
+
+### -field VF64[2]
+
+See Remarks.
 
 ### -field I64Parts32
 
+See Remarks.
+
 ### -field I64Parts32.LowPart
+
+See Remarks.
 
 ### -field I64Parts32.HighPart
 
+See Remarks.
+
 ### -field F128Parts64
+
+See Remarks.
 
 ### -field F128Parts64.LowPart
 
+See Remarks.
+
 ### -field F128Parts64.HighPart
 
-### -field RawBytes
+See Remarks.
+
+### -field RawBytes[32]
+
+See Remarks.
 
 ### -field TailOfRawBytes
 
 See Remarks.
 
 ### -field Type
-
-See Remarks.
-
-
-#### - ( unnamed union )
-
- 
-
-
-
-#### I8
-
-See Remarks.
-
-
-
-#### I16
-
-See Remarks.
-
-
-
-#### I32
-
-See Remarks.
-
-
-
-#### ( unnamed struct )
-
- 
-
-
-
-##### I64
-
-See Remarks.
-
-
-
-##### Nat
-
-See Remarks.
-
-
-
-#### F32
-
-See Remarks.
-
-
-
-#### F64
-
-See Remarks.
-
-
-
-#### F80Bytes
-
-See Remarks.
-
-
-
-#### F82Bytes
-
-See Remarks.
-
-
-
-#### F128Bytes
-
-See Remarks.
-
-
-
-#### VI8
-
-See Remarks.
-
-
-
-#### VI16
-
-See Remarks.
-
-
-
-#### VI32
-
-See Remarks.
-
-
-
-#### VI64
-
-See Remarks.
-
-
-
-#### VF32
-
-See Remarks.
-
-
-
-#### VF64
-
-See Remarks.
-
-
-
-#### I64Parts32
-
-See Remarks.
-
-
-
-##### LowPart
-
-See Remarks.
-
-
-
-##### HighPart
-
-See Remarks.
-
-
-
-#### F128Parts64
-
-See Remarks.
-
-
-
-##### LowPart
-
-See Remarks.
-
-
-
-##### HighPart
-
-See Remarks.
-
-
-
-#### RawBytes
 
 See Remarks.
 

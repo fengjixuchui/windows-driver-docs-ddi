@@ -4,7 +4,6 @@ title: FltInitializeOplock function (fltkernel.h)
 description: The FltInitializeOplock routine initializes an opportunistic lock (oplock) pointer.
 old-location: ifsk\fltinitializeoplock.htm
 tech.root: ifsk
-ms.assetid: 9878f614-89dc-4b23-8095-2a8c2b80c79d
 ms.date: 04/16/2018
 keywords: ["FltInitializeOplock function"]
 ms.keywords: FltApiRef_e_to_o_5d9b6a6a-6721-41b4-961c-49904596c916.xml, FltInitializeOplock, FltInitializeOplock routine [Installable File System Drivers], fltkernel/FltInitializeOplock, ifsk.fltinitializeoplock
@@ -50,9 +49,9 @@ The <b>FltInitializeOplock</b> routine initializes an opportunistic lock (oplock
 
 ## -parameters
 
-### -param Oplock 
+### -param Oplock [out]
 
-[out]
+
 Caller-supplied pointer variable that receives the initialized opaque oplock pointer. This variable must be initialized to <b>NULL</b> before the initial call to <b>FltInitializeOplock</b>.
 
 ## -returns

@@ -4,7 +4,6 @@ title: PFND3DDDI_DECRYPTIONBLT (d3dumddi.h)
 description: The DecryptionBlt function writes data to a protected surface.
 old-location: display\decryptionblt.htm
 tech.root: display
-ms.assetid: 1bfe2b9c-90f6-48bf-b0b3-30788ef94110
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DECRYPTIONBLT callback function"]
 ms.keywords: DecryptionBlt, DecryptionBlt callback function [Display Devices], PFND3DDDI_DECRYPTIONBLT, PFND3DDDI_DECRYPTIONBLT callback, UserModeDisplayDriver_Functions_6c7efbab-8c07-4953-80cc-4d18080c12cc.xml, d3dumddi/DecryptionBlt, display.decryptionblt
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - DecryptionBlt
-product:
- - Windows
+ - PFND3DDDI_DECRYPTIONBLT
 ---
 
 # PFND3DDDI_DECRYPTIONBLT callback function
@@ -56,7 +53,7 @@ The <b>DecryptionBlt</b> function writes data to a protected surface.
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -101,3 +98,4 @@ The Direct3D runtime verifies that the source surface specified by the <b>SrcSub
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

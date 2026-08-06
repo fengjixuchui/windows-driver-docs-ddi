@@ -4,7 +4,6 @@ title: PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTCB (d3dumddi.h)
 description: The pfnSignalSynchronizationObjectCb function inserts a signal on the specified synchronization objects in the specified context DMA stream.
 old-location: display\pfnsignalsynchronizationobjectcb.htm
 tech.root: display
-ms.assetid: 12ffa230-2c26-4cd3-ae83-f753a0b6ba38
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTCB callback function"]
 ms.keywords: D3Druntime_Functions_7bda6d91-797a-4f72-9182-e30b9fb1963a.xml, PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTCB, PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTCB callback, d3dumddi/pfnSignalSynchronizationObjectCb, display.pfnsignalsynchronizationobjectcb, pfnSignalSynchronizationObjectCb, pfnSignalSynchronizationObjectCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnSignalSynchronizationObjectCb
-product:
- - Windows
+ - PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTCB
 ---
 
 # PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTCB callback function
@@ -56,7 +53,7 @@ The <b>pfnSignalSynchronizationObjectCb</b> function inserts a signal on the spe
 
 A handle to a display device (that is, the graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -113,3 +110,4 @@ HRESULT CD3DContext::SyncEngines(DWORD dwEngineReleasingControl, DWORD dwEngineA
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddicb_signalsynchronizationobject">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT</a>
+

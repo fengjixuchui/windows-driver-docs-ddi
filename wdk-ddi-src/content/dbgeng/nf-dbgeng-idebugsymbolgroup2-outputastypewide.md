@@ -4,7 +4,6 @@ title: IDebugSymbolGroup2::OutputAsTypeWide (dbgeng.h)
 description: The OutputAsTypeWide method changes the type of a symbol in a symbol group. The symbol's entry is updated to represent the new type.
 old-location: debugger\outputastypewide.htm
 tech.root: debugger
-ms.assetid: f43b702d-37a7-484d-8a18-fa190e9189b2
 ms.date: 05/03/2018
 keywords: ["IDebugSymbolGroup2::OutputAsTypeWide"]
 ms.keywords: IDebugSymbolGroup2 interface [Windows Debugging],OutputAsTypeWide method, IDebugSymbolGroup2.OutputAsTypeWide, IDebugSymbolGroup2::OutputAsTypeWide, OutputAsTypeWide, OutputAsTypeWide method [Windows Debugging], OutputAsTypeWide method [Windows Debugging],IDebugSymbolGroup2 interface, dbgeng/IDebugSymbolGroup2::OutputAsTypeWide, debugger.outputastypewide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbolGroup2.OutputAsTypeWide
+ - IDebugSymbolGroup2::OutputAsTypeWide
 ---
 
 # IDebugSymbolGroup2::OutputAsTypeWide
@@ -50,14 +49,14 @@ The <b>OutputAsTypeWide</b> method changes the type of a symbol in a symbol grou
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 The index of the entry in this symbol group.  The <i>index</i> of a symbol is an identification number. The index ranges from zero through the number of symbols in the symbol group minus one.
 
-### -param Type 
+### -param Type [in]
 
-[in]
+
 The name of the type of the symbol that you want.  If the name begins with an exclamation mark (<b>!</b>), the name is treated as an extension.  For more information about how to use an extension as a type, see the Remarks section.
 
 ## -returns
@@ -102,3 +101,4 @@ For more information about symbol groups, see <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbolgroup2">IDebugSymbolGroup2</a>
+

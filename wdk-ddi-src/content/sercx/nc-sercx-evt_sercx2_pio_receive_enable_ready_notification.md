@@ -4,7 +4,6 @@ title: EVT_SERCX2_PIO_RECEIVE_ENABLE_READY_NOTIFICATION (sercx.h)
 description: The EvtSerCx2PioReceiveEnableReadyNotification event callback function is called by version 2 of the serial framework extension (SerCx2) to enable the serial controller driver to notify SerCx2 when the serial controller receives new data.
 old-location: serports\evtsercx2pioreceiveenablereadynotification.htm
 tech.root: serports
-ms.assetid: DDD17DF3-9457-40D1-BE18-0A1CAED1389B
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX2_PIO_RECEIVE_ENABLE_READY_NOTIFICATION callback function"]
 ms.keywords: 2/EvtSerCx2PioReceiveEnableReadyNotification, EVT_SERCX2_PIO_RECEIVE_ENABLE_READY_NOTIFICATION, EVT_SERCX2_PIO_RECEIVE_ENABLE_READY_NOTIFICATION callback, EvtSerCx2PioReceiveEnableReadyNotification, EvtSerCx2PioReceiveEnableReadyNotification callback function [Serial Ports], serports.evtsercx2pioreceiveenablereadynotification
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
- - EvtSerCx2PioReceiveEnableReadyNotification
+ - EVT_SERCX2_PIO_RECEIVE_ENABLE_READY_NOTIFICATION
 ---
 
 # EVT_SERCX2_PIO_RECEIVE_ENABLE_READY_NOTIFICATION callback function
@@ -50,9 +49,9 @@ The <i>EvtSerCx2PioReceiveEnableReadyNotification</i> event callback function is
 
 ## -parameters
 
-### -param PioReceive 
+### -param PioReceive [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIORECEIVE</a> handle to a PIO-receive object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2pioreceivecreate">SerCx2PioReceiveCreate</a> method to create this object.
 
 ## -remarks
@@ -128,3 +127,4 @@ The <b>EVT_SERCX2_PIO_RECEIVE_ENABLE_READY_NOTIFICATION</b> function type is def
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2pioreceiveready">SerCx2PioReceiveReady</a>
+

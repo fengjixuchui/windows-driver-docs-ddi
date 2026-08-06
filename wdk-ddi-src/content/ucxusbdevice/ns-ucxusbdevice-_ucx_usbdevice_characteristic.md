@@ -1,10 +1,9 @@
 ---
 UID: NS:ucxusbdevice._UCX_USBDEVICE_CHARACTERISTIC
 title: _UCX_USBDEVICE_CHARACTERISTIC (ucxusbdevice.h)
-description: Stores the characteristics of an device.
+description: Stores the characteristics of a device.
 old-location: buses\ucx_usbdevice_characteristic.htm
 tech.root: usbref
-ms.assetid: 31BF5607-51EA-4FBF-A754-872FBD45915D
 ms.date: 05/07/2018
 keywords: ["UCX_USBDEVICE_CHARACTERISTIC structure"]
 ms.keywords: "*PUCX_USBDEVICE_CHARACTERISTIC, PUCX_USBDEVICE_CHARACTERISTIC, PUCX_USBDEVICE_CHARACTERISTIC structure pointer [Buses], UCX_USBDEVICE_CHARACTERISTIC, UCX_USBDEVICE_CHARACTERISTIC structure [Buses], _UCX_USBDEVICE_CHARACTERISTIC, buses.ucx_usbdevice_characteristic, ucxusbdevice/PUCX_USBDEVICE_CHARACTERISTIC, ucxusbdevice/UCX_USBDEVICE_CHARACTERISTIC"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ucxusbdevice.h
 api_name:
+ - _UCX_USBDEVICE_CHARACTERISTIC
+ - PUCX_USBDEVICE_CHARACTERISTIC
  - UCX_USBDEVICE_CHARACTERISTIC
 ---
 
@@ -50,7 +51,7 @@ api_name:
 
 ## -description
 
-Stores the characteristics of an device.
+Stores the characteristics of a device.
 
 ## -struct-fields
 
@@ -69,3 +70,4 @@ A <a href="/windows-hardware/drivers/ddi/ucxusbdevice/ns-ucxusbdevice-_ucx_usbde
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ucxusbdevice/nc-ucxusbdevice-evt_ucx_usbdevice_get_characteristic">EVT_UCX_USBDEVICE_GET_CHARACTERISTIC</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugRegisters2.GetValue
 title: IDebugRegisters2::GetValue (dbgeng.h)
-description: The GetValue method gets the value of one of the target's registers.
+description: The GetValue method gets the value of one of the target's registers. This method belongs to the IDebugRegisters2 interface.
 old-location: debugger\getvalue.htm
 tech.root: debugger
-ms.assetid: 227d7b4f-bf94-4763-bb1f-32efbc087bb1
 ms.date: 05/03/2018
 keywords: ["IDebugRegisters2::GetValue"]
 ms.keywords: GetValue, GetValue method [Windows Debugging], GetValue method [Windows Debugging],IDebugRegisters interface, GetValue method [Windows Debugging],IDebugRegisters2 interface, IDebugRegisters interface [Windows Debugging],GetValue method, IDebugRegisters2 interface [Windows Debugging],GetValue method, IDebugRegisters2.GetValue, IDebugRegisters2::GetValue, IDebugRegisters::GetValue, IDebugRegisters_f3e89ca1-7516-476e-8c85-560d8f28f0a8.xml, dbgeng/IDebugRegisters2::GetValue, dbgeng/IDebugRegisters::GetValue, debugger.getvalue
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugRegisters.GetValue
- - IDebugRegisters2.GetValue
+ - IDebugRegisters2::GetValue
 ---
 
 # IDebugRegisters2::GetValue
@@ -51,14 +49,14 @@ The <b>GetValue</b> method gets the value of one of the target's <a href="/windo
 
 ## -parameters
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 Specifies the index of the register whose value is requested.
 
-### -param Value 
+### -param Value [out]
 
-[out]
+
 Receives the value of the register.  See <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_value">DEBUG_VALUE</a> for a description of this parameter type.
 
 ## -returns
@@ -126,3 +124,4 @@ For an overview of the <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-i
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugregisters2">IDebugRegisters2</a>
+

@@ -4,7 +4,6 @@ title: ExtRemoteData::GetData (engextcpp.h)
 description: The GetData method returns the contents of the target's memory, represented by the ExtRemoteData object.
 old-location: debugger\extremotedata_getdata.htm
 tech.root: debugger
-ms.assetid: a68e528a-c456-4bf2-8e6b-fb5c060c58fb
 ms.date: 05/03/2018
 keywords: ["ExtRemoteData::GetData"]
 ms.keywords: EngExtCpp_Ref_a440fb76-5d7c-4e77-9d1e-61c0b7002493.xml, ExtRemoteData class [Windows Debugging],GetData method, ExtRemoteData.GetData, ExtRemoteData::GetData, GetData, GetData method [Windows Debugging], GetData method [Windows Debugging],ExtRemoteData class, debugger.extremotedata_getdata
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteData.GetData
+ - ExtRemoteData::GetData
 ---
 
 # ExtRemoteData::GetData
@@ -50,9 +49,9 @@ The <b>GetData</b> method returns the contents of the target's memory, represent
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 Number of bytes requested.  This must be the same as the size of the memory specified by the <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotedata-extremotedata">ExtRemoteData::ExtRemoteData</a> constructor or the <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotedata-set(constdebug_typed_data)">ExtRemoteData::Set(Typed)</a> or <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotedata-set">ExtRemoteData::Set(Offset Bytes)</a> methods.  If it is not the same, <b>ExtRemoteException</b> is thrown.
 
 ## -returns
@@ -127,11 +126,11 @@ A number of convenience methods are available for various primitive types. These
 
 
 
-<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis2-getulong">GetUlong</a>
+<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis-getulong">GetUlong</a>
 
 
 
-<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis2-getulong64">GetUlong64</a>
+<a href="/windows-hardware/drivers/ddi/extsfns/nf-extsfns-idebugfailureanalysis-getulong64">GetUlong64</a>
 
 
 
@@ -144,3 +143,4 @@ A number of convenience methods are available for various primitive types. These
 
 
 <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotedata-getw32bool">GetW32Bool</a>
+

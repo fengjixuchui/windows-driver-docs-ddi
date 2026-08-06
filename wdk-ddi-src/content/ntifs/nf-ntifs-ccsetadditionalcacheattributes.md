@@ -4,8 +4,7 @@ title: CcSetAdditionalCacheAttributes function (ntifs.h)
 description: Call the CcSetAdditionalCacheAttributes routine to enable or disable read-ahead (also called &#0034;lazy read&#0034;) or write-behind (also called &#0034;lazy write&#0034;) on a cached file.
 old-location: ifsk\ccsetadditionalcacheattributes.htm
 tech.root: ifsk
-ms.assetid: 2f891543-0222-45c8-97cd-719ec5dd2fa8
-ms.date: 04/16/2018
+ms.date: 01/15/2021
 keywords: ["CcSetAdditionalCacheAttributes function"]
 ms.keywords: CcSetAdditionalCacheAttributes, CcSetAdditionalCacheAttributes routine [Installable File System Drivers], ccref_a9722d17-3140-4bcd-abd9-46d31fa13174.xml, ifsk.ccsetadditionalcacheattributes, ntifs/CcSetAdditionalCacheAttributes
 req.header: ntifs.h
@@ -43,40 +42,32 @@ api_name:
 
 # CcSetAdditionalCacheAttributes function
 
-
 ## -description
 
-Call the <b>CcSetAdditionalCacheAttributes</b> routine to enable or disable read-ahead (also called "lazy read") or write-behind (also called "lazy write") on a cached file.
+Call the **CcSetAdditionalCacheAttributes** routine to enable or disable read-ahead (also called "lazy read") or write-behind (also called "lazy write") on a cached file.
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
 Pointer to a file object for the cached file.
 
-### -param DisableReadAhead 
+### -param DisableReadAhead [in]
 
-[in]
-Set to <b>TRUE</b> to disable read-ahead, <b>FALSE</b> to enable it. The caller must specify a value for <i>DisableReadAhead</i> in each call to <b>CcSetAdditionalCacheAttributes</b>, even if a value was already specified in a previous call.
+Boolean value set to **TRUE** to disable read-ahead, or **FALSE** to enable it.
 
-### -param DisableWriteBehind 
+### -param DisableWriteBehind [in]
 
-[in]
-Set to <b>TRUE</b> to disable write-behind, <b>FALSE</b> to enable it. The caller must specify a value for <i>DisableWriteBehind</i> in each call to <b>CcSetAdditionalCacheAttributes</b>, even if a value was already specified in a previous call.
+Boolean value set to **TRUE** to disable write-behind, or **FALSE** to enable it.
 
 ## -remarks
 
-<b>CcSetAdditionalCacheAttributes</b> can be called any time after calling <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccinitializecachemap">CcInitializeCacheMap</a>. Initially, both read-ahead and write-behind are enabled.
+**CcSetAdditionalCacheAttributes** can be called any time after calling [**CcInitializeCacheMap**](nf-ntifs-ccinitializecachemap.md). Initially, both read-ahead and write-behind are enabled.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccinitializecachemap">CcInitializeCacheMap</a>
+[**CcInitializeCacheMap**](nf-ntifs-ccinitializecachemap.md)
 
+[**CcReadAhead**](/previous-versions/ff539191(v=vs.85))
 
-
-<a href="/previous-versions/ff539191(v=vs.85)">CcReadAhead</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539224">CcSetReadAheadGranularity</a>
+[**CcSetReadAheadGranularity**](nf-ntifs-ccsetreadaheadgranularity.md)

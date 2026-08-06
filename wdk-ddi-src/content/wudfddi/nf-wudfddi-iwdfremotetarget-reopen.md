@@ -4,7 +4,6 @@ title: IWDFRemoteTarget::Reopen (wudfddi.h)
 description: The Reopen method reopens a remote I/O target after it has been temporarily closed.
 old-location: wdf\iwdfremotetarget_reopen.htm
 tech.root: wdf
-ms.assetid: 904904e7-ca59-4dcb-92db-8c7f6a9cbff7
 ms.date: 02/26/2018
 keywords: ["IWDFRemoteTarget::Reopen"]
 ms.keywords: IWDFRemoteTarget interface,Reopen method, IWDFRemoteTarget.Reopen, IWDFRemoteTarget::Reopen, Reopen, Reopen method, Reopen method,IWDFRemoteTarget interface, UMDFIoTargetObjectRef_13b81124-2d7f-4fed-b4f9-1a5cb647a811.xml, umdf.iwdfremotetarget_reopen, wdf.iwdfremotetarget_reopen, wudfddi/IWDFRemoteTarget::Reopen
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFRemoteTarget.Reopen
+ - IWDFRemoteTarget::Reopen
 ---
 
 # IWDFRemoteTarget::Reopen
@@ -114,7 +113,6 @@ CMyRemoteTarget::OnRemoteTargetRemoveCanceled(
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfremotetarget">IWDFRemoteTarget</a>
@@ -122,3 +120,4 @@ CMyRemoteTarget::OnRemoteTargetRemoveCanceled(
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfremotetarget-close">IWDFRemoteTarget::Close</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_SET_EXCLUDE_UNENCRYPTED
 title: DOT11EXT_SET_EXCLUDE_UNENCRYPTED (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_SET_EXCLUDE_UNENCRYPTED callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extsetexcludeunencrypted.htm
 tech.root: netvista
-ms.assetid: b6482124-0d65-4953-8a8f-a09c0a88d830
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_SET_EXCLUDE_UNENCRYPTED callback"]
 ms.keywords: DOT11EXT_SET_EXCLUDE_UNENCRYPTED, Dot11ExtSetExcludeUnencrypted, Dot11ExtSetExcludeUnencrypted callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_aa6f594d-e5b7-4ba0-9ad8-deb42f6c23ad.xml, netvista.dot11extsetexcludeunencrypted, wlanihv/Dot11ExtSetExcludeUnencrypted
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_SET_EXCLUDE_UNENCRYPTED
  - wlanihv/DOT11EXT_SET_EXCLUDE_UNENCRYPTED
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtSetExcludeUnencrypted
+ - DOT11EXT_SET_EXCLUDE_UNENCRYPTED
 ---
 
 # DOT11EXT_SET_EXCLUDE_UNENCRYPTED callback
@@ -54,17 +52,17 @@ api_name:
 
 ## -parameters
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the WLAN adapter. This handle value was
      specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param bExcludeUnencrypted 
+### -param bExcludeUnencrypted [in]
 
-[in]
+
 A Boolean value that, if set to <b>TRUE</b>, configures the WLAN adapter to exclude unencrypted
      packets.
 
@@ -108,3 +106,4 @@ A call to the
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+

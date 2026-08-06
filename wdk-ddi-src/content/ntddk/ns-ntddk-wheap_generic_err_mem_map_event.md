@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._WHEAP_GENERIC_ERR_MEM_MAP_EVENT
 title: WHEAP_GENERIC_ERR_MEM_MAP_EVENT
-description: 
-tech.root: 
-ms.assetid: c5309ddf-acfa-4b8b-bd93-3b90c4ec5e6f
+description: "Learn more about: WHEAP_GENERIC_ERR_MEM_MAP_EVENT structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEAP_GENERIC_ERR_MEM_MAP_EVENT structure"]
 ms.keywords: WHEAP_GENERIC_ERR_MEM_MAP_EVENT, WHEAP_GENERIC_ERR_MEM_MAP_EVENT, *PWHEAP_GENERIC_ERR_MEM_MAP_EVENT,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEAP_GENERIC_ERR_MEM_MAP_EVENT
+ - PWHEAP_GENERIC_ERR_MEM_MAP_EVENT
  - WHEAP_GENERIC_ERR_MEM_MAP_EVENT
-product:
- - Windows
 ---
 
 # WHEAP_GENERIC_ERR_MEM_MAP_EVENT structure

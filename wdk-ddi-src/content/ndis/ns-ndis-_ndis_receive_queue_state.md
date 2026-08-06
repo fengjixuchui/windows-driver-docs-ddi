@@ -4,7 +4,6 @@ title: _NDIS_RECEIVE_QUEUE_STATE (ndis.h)
 description: The NDIS_RECEIVE_QUEUE_STATE structure contains information about the operational state of a receive queue.
 old-location: netvista\ndis_receive_queue_state.htm
 tech.root: netvista
-ms.assetid: e997fce6-ee3a-433f-b9b7-3e2932093a1a
 ms.date: 05/02/2018
 keywords: ["NDIS_RECEIVE_QUEUE_STATE structure"]
 ms.keywords: "*PNDIS_RECEIVE_QUEUE_STATE, NDIS_RECEIVE_QUEUE_STATE, NDIS_RECEIVE_QUEUE_STATE structure [Network Drivers Starting with Windows Vista], PNDIS_RECEIVE_QUEUE_STATE, PNDIS_RECEIVE_QUEUE_STATE structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_QUEUE_STATE, ndis/NDIS_RECEIVE_QUEUE_STATE, ndis/PNDIS_RECEIVE_QUEUE_STATE, netvista.ndis_receive_queue_state, virtual_machine_queue_ref_4cbbc25f-cd33-45d7-b279-1661570110f0.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
+ - _NDIS_RECEIVE_QUEUE_STATE
+ - PNDIS_RECEIVE_QUEUE_STATE
  - NDIS_RECEIVE_QUEUE_STATE
 ---
 
@@ -58,7 +59,7 @@ The <b>NDIS_RECEIVE_QUEUE_STATE</b> structure contains information about the ope
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_RECEIVE_QUEUE_STATE</b>  structure. The driver sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_DEFAULT</b>, the 
@@ -85,11 +86,11 @@ An
 
 The <b>NDIS_RECEIVE_QUEUE_STATE</b> structure is used in the 
     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_receive_queue_state">
-    NDIS_STATUS_RECEIVE_QUEUE_STATE</a> status indication.
+    NDIS_RECEIVE_QUEUE_STATE</a> status indication.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -99,4 +100,5 @@ The <b>NDIS_RECEIVE_QUEUE_STATE</b> structure is used in the
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_receive_queue_state">
-   NDIS_STATUS_RECEIVE_QUEUE_STATE</a>
+   NDIS_RECEIVE_QUEUE_STATE</a>
+

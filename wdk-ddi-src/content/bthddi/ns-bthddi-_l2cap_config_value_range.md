@@ -4,7 +4,6 @@ title: _L2CAP_CONFIG_VALUE_RANGE (bthddi.h)
 description: The L2CAP_CONFIG_VALUE_RANGE structure is used to specify values for the Mtu and FlushTO members of the _BRB_L2CA_OPEN_CHANNEL structure.
 old-location: bltooth\l2cap_config_value_range.htm
 tech.root: bltooth
-ms.assetid: 12d9b0c1-6dce-4dc6-a8df-706408e1fbe1
 ms.date: 04/27/2018
 keywords: ["L2CAP_CONFIG_VALUE_RANGE structure"]
 ms.keywords: "*PL2CAP_CONFIG_VALUE_RANGE, L2CAP_CONFIG_VALUE_RANGE, L2CAP_CONFIG_VALUE_RANGE structure [Bluetooth Devices], PL2CAP_CONFIG_VALUE_RANGE, PL2CAP_CONFIG_VALUE_RANGE structure pointer [Bluetooth Devices], _L2CAP_CONFIG_VALUE_RANGE, bltooth.l2cap_config_value_range, bth_structs_3af526a5-d36e-432f-9d2e-fa31bee0effe.xml, bthddi/L2CAP_CONFIG_VALUE_RANGE, bthddi/PL2CAP_CONFIG_VALUE_RANGE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - bthddi.h
 api_name:
+ - _L2CAP_CONFIG_VALUE_RANGE
+ - PL2CAP_CONFIG_VALUE_RANGE
  - L2CAP_CONFIG_VALUE_RANGE
 ---
 
@@ -112,3 +113,4 @@ For
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_l2ca_open_channel">_BRB_L2CA_OPEN_CHANNEL</a>
+

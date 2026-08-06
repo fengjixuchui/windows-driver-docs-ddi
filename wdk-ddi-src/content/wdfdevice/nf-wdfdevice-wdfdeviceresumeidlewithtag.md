@@ -3,7 +3,6 @@ UID: NF:wdfdevice.WdfDeviceResumeIdleWithTag
 title: WdfDeviceResumeIdleWithTag macro (wdfdevice.h)
 description: The WdfDeviceResumeIdleWithTag macro decrements the power reference count for a specified framework device object and assigns the driver's current file name and line number to the reference. The macro also assigns a tag value to the reference.
 tech.root: wdf
-ms.assetid: 065393BE-CEDF-4B82-AE43-844DDB932DF0
 ms.date: 02/26/2018
 keywords: ["WdfDeviceResumeIdleWithTag macro"]
 ms.keywords: DFDeviceObjectGeneralRef_6078e8e8-7d4e-4714-a1b4-74fc973a678c.xml, WdfDeviceResumeIdleWithTag, WdfDeviceResumeIdleWithTag method, kmdf.WdfDeviceResumeIdleWithTag, wdf.WdfDeviceResumeIdleWithTag, wdfdevice/WdfDeviceResumeIdleWithTag
@@ -54,14 +53,14 @@ The **WdfDeviceResumeIdleWithTag** macro decrements the power reference count fo
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Tag 
+### -param Tag [in]
 
-[in]
+
 A driver-defined value that the framework stores as an identification tag for the power reference.
 
 ## -remarks

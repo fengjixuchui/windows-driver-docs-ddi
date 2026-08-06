@@ -4,7 +4,6 @@ title: IWDFUsbInterface::RetrieveUsbPipeObject (wudfusb.h)
 description: The RetrieveUsbPipeObject method retrieves a USB pipe object for the specified pipe index.
 old-location: wdf\iwdfusbinterface_retrieveusbpipeobject.htm
 tech.root: wdf
-ms.assetid: abfaad6b-be42-4547-aa26-5b44e53118bc
 ms.date: 02/26/2018
 keywords: ["IWDFUsbInterface::RetrieveUsbPipeObject"]
 ms.keywords: IWDFUsbInterface interface,RetrieveUsbPipeObject method, IWDFUsbInterface.RetrieveUsbPipeObject, IWDFUsbInterface::RetrieveUsbPipeObject, RetrieveUsbPipeObject, RetrieveUsbPipeObject method, RetrieveUsbPipeObject method,IWDFUsbInterface interface, UMDFUSBref_84f2ac72-965e-4fd4-a127-f153a5fc54f7.xml, umdf.iwdfusbinterface_retrieveusbpipeobject, wdf.iwdfusbinterface_retrieveusbpipeobject, wudfusb/IWDFUsbInterface::RetrieveUsbPipeObject
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFUsbInterface.RetrieveUsbPipeObject
+ - IWDFUsbInterface::RetrieveUsbPipeObject
 ---
 
 # IWDFUsbInterface::RetrieveUsbPipeObject
@@ -52,14 +51,14 @@ The <b>RetrieveUsbPipeObject</b> method retrieves a USB pipe object for the spec
 
 ## -parameters
 
-### -param PipeIndex 
+### -param PipeIndex [in]
 
-[in]
+
 The index of the USB pipe object to retrieve.
 
-### -param ppPipe 
+### -param ppPipe [out]
 
-[out]
+
 A pointer to a variable that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetpipe">IWDFUsbTargetPipe</a> interface for the USB pipe object whose index is specified by <i>PipeIndex</i>.
 
 ## -returns
@@ -126,3 +125,4 @@ For a code example of how to use the<b>RetrieveUsbPipeObject</b> method, see <a 
 
 
 <a href="/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetpipe">IWDFUsbTargetPipe</a>
+

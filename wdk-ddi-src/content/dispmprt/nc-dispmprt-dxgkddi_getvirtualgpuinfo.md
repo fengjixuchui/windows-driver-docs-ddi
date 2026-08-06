@@ -3,7 +3,6 @@ UID: NC:dispmprt.DXGKDDI_GETVIRTUALGPUINFO
 title: DXGKDDI_GETVIRTUALGPUINFO
 description: Queries the current capability of a previously created vGPU.
 tech.root: display
-ms.assetid: d52799c8-a962-4b41-a03c-d1454efb7b88
 ms.date: 04/04/2019
 keywords: ["DXGKDDI_GETVIRTUALGPUINFO callback function"]
 req.header: dispmprt.h
@@ -36,8 +35,6 @@ api_location:
  - dispmprt.h
 api_name:
  - DXGKDDI_GETVIRTUALGPUINFO
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,13 +48,13 @@ Queries the current capability of a previously created vGPU.
 
 ## -parameters
 
-### -param Context
+### -param Context [in]
 
-[in] The miniport context that is returned by the driver in the [DXGKDDI_GPU_PARTITION_INTERFACE](ns-dispmprt-_dxgkddi_gpu_partition_interface.md) structure.
+The miniport context that is returned by the driver in the [DXGKDDI_GPU_PARTITION_INTERFACE](ns-dispmprt-_dxgkddi_gpu_partition_interface.md) structure.
 
-### -param pArgs
+### -param pArgs [in, out]
 
-[in, out] A pointer to a DXGKARG_GETVIRTUALGPUINFO structure.
+A pointer to a DXGKARG_GETVIRTUALGPUINFO structure.
 
 ## -returns
 

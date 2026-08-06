@@ -4,7 +4,6 @@ title: IDebugControl7 (dbgeng.h)
 description: IDebugControl7 interface
 old-location: debugger\idebugcontrol7.htm
 tech.root: debugger
-ms.assetid: 44B8C5DF-D25F-4688-8EDB-135B63802BB6
 ms.date: 05/03/2018
 keywords: ["IDebugControl7 interface"]
 ms.keywords: IDebugControl7, IDebugControl7 interface [Windows Debugging], IDebugControl7 interface [Windows Debugging],described, dbgeng/IDebugControl7, debugger.idebugcontrol7
@@ -48,10 +47,8 @@ api_name:
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugControl7</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol6">IDebugControl6</a>. <b>IDebugControl7</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IDebugControl7</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol6">IDebugControl6</a>. <b>IDebugControl7</b> also has these types of members:
+
 
 ## -see-also
 

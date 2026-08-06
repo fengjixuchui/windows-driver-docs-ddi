@@ -4,7 +4,6 @@ title: _NDIS_STATUS_INDICATION (ndis.h)
 description: NDIS and underlying drivers use the NDIS_STATUS_INDICATION structure to provide status indications to overlying protocol drivers.
 old-location: netvista\ndis_status_indication.htm
 tech.root: netvista
-ms.assetid: bfab907d-a90d-46a0-bd51-6f2b418e3f39
 ms.date: 05/02/2018
 keywords: ["NDIS_STATUS_INDICATION structure"]
 ms.keywords: "*PNDIS_STATUS_INDICATION, NDIS_STATUS_INDICATION, NDIS_STATUS_INDICATION structure [Network Drivers Starting with Windows Vista], PNDIS_STATUS_INDICATION, PNDIS_STATUS_INDICATION structure pointer [Network Drivers Starting with Windows Vista], _NDIS_STATUS_INDICATION, ndis/NDIS_STATUS_INDICATION, ndis/PNDIS_STATUS_INDICATION, ndis_status_ref_6c475f32-573d-4e1b-ae74-bd9e9b8943db.xml, netvista.ndis_status_indication"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_STATUS_INDICATION
+ - PNDIS_STATUS_INDICATION
  - NDIS_STATUS_INDICATION
 ---
 
@@ -58,7 +59,7 @@ NDIS and underlying drivers use the NDIS_STATUS_INDICATION structure to provide 
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_STATUS_INDICATION structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_STATUS_INDICATION, the 
@@ -166,7 +167,7 @@ In this case, the driver sets the
     <b>RequestId</b> members to the values from the 
     <b>RequestHandle</b> and 
     <b>RequestId</b> members in the 
-    <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure,
+    <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure,
     respectively.
 
 For example, in wireless networking, the processing of an OID request can take a very long time to
@@ -196,11 +197,11 @@ Protocol drivers receive status indications at the
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 
@@ -212,7 +213,7 @@ Protocol drivers receive status indications at the
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfindicatestatus">NdisFindicateStatus</a>
+<a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfindicatestatus">NdisFIndicateStatus</a>
 
 
 
@@ -229,3 +230,4 @@ Protocol drivers receive status indications at the
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_status_ex">ProtocolStatusEx</a>
+

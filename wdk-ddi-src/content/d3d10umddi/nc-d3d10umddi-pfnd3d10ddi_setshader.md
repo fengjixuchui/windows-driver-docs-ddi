@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_SETSHADER
 title: PFND3D10DDI_SETSHADER (d3d10umddi.h)
 description: The CsSetShader function sets the compute shader code so that all of the subsequent dispatching operations use that code.
 old-location: display\cssetshader.htm
-ms.assetid: ab689c60-3099-4d69-a7e2-5edfb623cbc3
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_SETSHADER callback function"]
 ms.keywords: CsSetShader, CsSetShader callback function [Display Devices], PFND3D10DDI_SETSHADER, PFND3D10DDI_SETSHADER callback, UserModeDisplayDriverDx11_Functions_4e96f922-1a22-45c3-9c50-a4b71a79f695.xml, d3d10umddi/CsSetShader, display.cssetshader
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CsSetShader
-product:
- - Windows
+ - PFND3D10DDI_SETSHADER
 ---
 
 # PFND3D10DDI_SETSHADER callback function
@@ -52,13 +49,13 @@ The <b>CsSetShader</b> function sets the compute shader code so that all of the 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hShader* [in]
 
@@ -87,3 +84,4 @@ The <b>PsSetShader</b> function sets a pixel shader to be used in all drawing op
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

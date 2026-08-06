@@ -2,10 +2,8 @@
 UID: NF:ksproxy.IKsAllocatorEx.KsGetProperties
 title: IKsAllocatorEx::KsGetProperties (ksproxy.h)
 description: Returns the properties for an allocator.
-old-location: stream\iksallocatorex_ksgetproperties.htm
 tech.root: stream
-ms.assetid: 82F2FE7D-D02B-47A1-8FC7-2D5CFC4CADA1
-ms.date: 04/23/2018
+ms.date: 06/11/2021
 keywords: ["IKsAllocatorEx::KsGetProperties"]
 ms.keywords: IKsAllocatorEx interface [Streaming Media Devices],KsGetProperties method, IKsAllocatorEx.KsGetProperties, IKsAllocatorEx::KsGetProperties, KsGetProperties, KsGetProperties method [Streaming Media Devices], KsGetProperties method [Streaming Media Devices],IKsAllocatorEx interface, ksproxy/IKsAllocatorEx::KsGetProperties, stream.iksallocatorex_ksgetproperties
 req.header: ksproxy.h
@@ -38,22 +36,19 @@ api_type:
 api_location:
  - ksproxy.h
 api_name:
- - IKsAllocatorEx.KsGetProperties
+ - IKsAllocatorEx::KsGetProperties
 ---
 
 # IKsAllocatorEx::KsGetProperties
 
-
 ## -description
-
-<p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 Returns the properties for an allocator.
 
 ## -returns
 
-If this method succeeds, it returns <b xmlns:loc="https://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="https://microsoft.com/wdcml/l10n">HRESULT</b> error code.
+If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ksproxy/nn-ksproxy-iksallocatorex">IKsAllocatorEx</a>
+[IKsAllocatorEx](./nn-ksproxy-iksallocatorex.md)

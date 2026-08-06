@@ -1,10 +1,9 @@
 ---
 UID: NF:engextcpp.ExtRemoteTyped.ExtRemoteTyped(PCSTR,ULONG64)
 title: ExtRemoteTyped::ExtRemoteTyped(PCSTR,ULONG64) (engextcpp.h)
-description: The ExtRemoteTyped constructor creates a new instance of the ExtRemoteTyped class.
+description: "The ExtRemoteTyped::ExtRemoteTyped(PCSTR,ULONG64) constructor creates a new instance of the ExtRemoteTyped class."
 old-location: debugger\extremotetyped_extremotetyped_pcstr_ulong64.htm
 tech.root: debugger
-ms.assetid: 85b6e625-ad5a-4e11-a39a-418e0aa152c3
 ms.date: 05/03/2018
 keywords: ["ExtRemoteTyped::ExtRemoteTyped(PCSTR,ULONG64)"]
 ms.keywords: ExtRemoteTyped, ExtRemoteTyped class [Windows Debugging],ExtRemoteTyped constructor, ExtRemoteTyped constructor [Windows Debugging], ExtRemoteTyped constructor [Windows Debugging],ExtRemoteTyped class, ExtRemoteTyped.ExtRemoteTyped, ExtRemoteTyped.ExtRemoteTyped(PCSTR,ULONG64), ExtRemoteTyped::ExtRemoteTyped, ExtRemoteTyped::ExtRemoteTyped(PCSTR,ULONG64), debugger.extremotetyped_extremotetyped_pcstr_ulong64
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteTyped.ExtRemoteTyped
+ - ExtRemoteTyped::ExtRemoteTyped
 ---
 
 # ExtRemoteTyped::ExtRemoteTyped(PCSTR,ULONG64)
@@ -51,14 +50,14 @@ The <b>ExtRemoteTyped</b> constructor creates a new instance of the <b>ExtRemote
 
 ## -parameters
 
-### -param Expr 
+### -param Expr [in]
 
-[in]
+
 An expression that evaluates to the desired symbol.  This expression is evaluated by the default expression evaluator.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 An additional parameter that can be used when evaluating the <i>Expr</i> expression.  This additional parameter is available in the expression as the <b>$extin</b> pseudo-register.  For example, to specify a process environment block (PEB) at a particular location, you could set <i>Expr</i> to the C++ expression <code>(ntdll!_PEB *)@$extin</code>. This casts the pseudo-register <b>$extin</b> to a pointer to a PEB. Then, set <i>Offset</i> to the location of the PEB structure.
 
 ## -see-also
@@ -112,3 +111,4 @@ An additional parameter that can be used when evaluating the <i>Expr</i> express
 
 
 <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotetypedlist-extremotetypedlist(extremotedata__pcstr_pcstr_ulong64_ulong_pulong64_bool)">ExtRemoteTypedList</a>
+

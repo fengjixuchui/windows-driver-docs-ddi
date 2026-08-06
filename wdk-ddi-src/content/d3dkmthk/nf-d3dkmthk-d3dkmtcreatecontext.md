@@ -1,16 +1,15 @@
 ---
 UID: NF:d3dkmthk.D3DKMTCreateContext
 title: D3DKMTCreateContext function (d3dkmthk.h)
-description: The D3DKMTCreateContext function creates a kernel-mode device context.
+description: The D3DKMTCreateContext function creates a kernel-mode device context. The function returns STATUS_SUCCESS on successful creation of the device context.
 old-location: display\d3dkmtcreatecontext.htm
-ms.assetid: e30fd034-1268-45bf-bc9c-df33e642fd4e
 ms.date: 05/10/2018
 keywords: ["D3DKMTCreateContext function"]
 ms.keywords: D3DKMTCreateContext, D3DKMTCreateContext callback function [Display Devices], OpenGL_Functions_ee92f6d8-b9af-4171-a628-e686f190a370.xml, PFND3DKMT_CREATECONTEXT, PFND3DKMT_CREATECONTEXT callback, d3dkmthk/D3DKMTCreateContext, display.d3dkmtcreatecontext
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,7 +49,7 @@ The <b>D3DKMTCreateContext</b> function creates a kernel-mode device context.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in, out]
 

@@ -3,7 +3,6 @@ UID: NS:d3d12umddi.D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_ENCODE_0063
 title: D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_ENCODE_0063
 description: Command list functions for video encode, version D3D12DDI_FEATURE_VERSION_VIDEO_0063.
 tech.root: display
-ms.assetid: 8541d0db-814e-4a11-8577-f575d4ddb060
 ms.date: 04/04/2019
 keywords: ["D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_ENCODE_0063 structure"]
 ms.keywords: D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_ENCODE_0063, D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_ENCODE_0063,
@@ -33,18 +32,15 @@ api_location:
  - d3d12umddi.h
 api_name:
  - D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_ENCODE_0063
-product:
- - Windows
 dev_langs:
  - c++
 ---
 
 # D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_ENCODE_0063 structure
 
-
 ## -description
 
-Command list functions for video encode, version D3D12DDI_FEATURE_VERSION_VIDEO_0063.
+The **D3D12DDI_COMMAND_LIST_FUNCS_VIDEO_ENCODE_0063** structure contains pointers to command list functions for video encode, version D3D12DDI_FEATURE_VERSION_VIDEO_0063.
 
 ## -struct-fields
 

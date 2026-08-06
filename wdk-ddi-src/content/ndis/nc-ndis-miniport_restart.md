@@ -4,7 +4,6 @@ title: MINIPORT_RESTART (ndis.h)
 description: The MiniportRestart function initiates a restart request for a miniport adapter that is paused.
 old-location: netvista\miniportrestart.htm
 tech.root: netvista
-ms.assetid: 31a18040-2c66-4074-9ace-dd604b4bfe22
 ms.date: 05/02/2018
 keywords: ["MINIPORT_RESTART callback function"]
 ms.keywords: MINIPORT_RESTART, MINIPORT_RESTART callback, MiniportRestart, MiniportRestart callback function [Network Drivers Starting with Windows Vista], miniport_functions_ref_3ab5d6bf-6192-4c9b-af88-a5dd0efe4d37.xml, ndis/MiniportRestart, netvista.miniportrestart
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportRestart
+ - MINIPORT_RESTART
 ---
 
 # MINIPORT_RESTART callback function
@@ -54,9 +53,9 @@ The
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 A handle to a context area that the miniport driver allocated in its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a> function.
      The miniport driver uses this context area to maintain state information for a miniport adapter.
@@ -219,7 +218,7 @@ Should make sure that the
       NDIS_RESTART_GENERAL_ATTRIBUTES structure contains the required information, you should first determine
       the version of the structure by checking the 
       <b>Revision</b> member in the 
-      <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure that is
+      <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure that is
       specified in the 
       <b>Header</b> member of the NDIS_RESTART_GENERAL_ATTRIBUTES structure.
 
@@ -298,7 +297,7 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -338,3 +337,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 <a href="/windows-hardware/drivers/network/oid-gen-miniport-restart-attributes">
    OID_GEN_MINIPORT_RESTART_ATTRIBUTES</a>
+

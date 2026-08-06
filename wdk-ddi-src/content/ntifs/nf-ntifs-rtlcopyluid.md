@@ -4,7 +4,6 @@ title: RtlCopyLuid function (ntifs.h)
 description: The RtlCopyLuid routine copies a locally unique identifier (LUID) to a buffer.
 old-location: ifsk\rtlcopyluid.htm
 tech.root: ifsk
-ms.assetid: ebda25f4-77d6-4178-9ff8-b1f0e95df9f0
 ms.date: 04/16/2018
 keywords: ["RtlCopyLuid function"]
 ms.keywords: RtlCopyLuid, RtlCopyLuid routine [Installable File System Drivers], ifsk.rtlcopyluid, ntifs/RtlCopyLuid, rtlref_467829b7-3661-490d-b5ed-1a0d543db2d7.xml
@@ -50,14 +49,14 @@ The <b>RtlCopyLuid</b> routine copies a locally unique identifier (LUID) to a bu
 
 ## -parameters
 
-### -param DestinationLuid 
+### -param DestinationLuid [out]
 
-[out]
+
 Pointer to a caller-allocated buffer to receive a copy of the source LUID structure. The buffer must be at least <b>sizeof(</b>LUID<b>)</b>.
 
-### -param SourceLuid 
+### -param SourceLuid [in]
 
-[in]
+
 Pointer to the source LUID structure to be copied.
 
 ## -returns
@@ -68,7 +67,7 @@ None
 
 <b>RtlCopyLuid</b> does not check whether the LUID at <i>SourceLuid</i> is structurally valid. 
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 
@@ -76,7 +75,7 @@ For more information about security and access control, see the documentation on
 
 
 
-<a href="/windows-hardware/drivers/kernel/mm-bad-pointer">RtlEqualLuid</a>
+[RtlEqualLuid](../wdm/nf-wdm-rtlequalluid.md)
 
 
 

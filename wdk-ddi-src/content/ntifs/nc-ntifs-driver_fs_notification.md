@@ -4,14 +4,13 @@ title: DRIVER_FS_NOTIFICATION (ntifs.h)
 description: A PDRIVER_FS_NOTIFICATION-typed routine is called by the operating system when a file system registers or unregisters itself by using IoRegisterFileSystem or IoUnregisterFileSystem.
 old-location: ifsk\pdriver_fs_notification.htm
 tech.root: ifsk
-ms.assetid: 571aaa9b-8620-46ff-af29-19b00804e0ad
 ms.date: 04/16/2018
 keywords: ["DRIVER_FS_NOTIFICATION callback function"]
 ms.keywords: DRIVER_FS_NOTIFICATION, DriverNotificationRoutine, DriverNotificationRoutine routine [Installable File System Drivers], FilterCallbacks_5b421108-0db7-47ba-afba-3a8b79a61d66.xml, PDRIVER_FS_NOTIFICATION, ifsk.pdriver_fs_notification, ntifs/DriverNotificationRoutine
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Microsoft Windows 2000 and later versions of the Windows operating system.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ntifs.h
 api_name:
- - PDRIVER_FS_NOTIFICATION
+ - DRIVER_FS_NOTIFICATION
 ---
 
 # DRIVER_FS_NOTIFICATION callback function
@@ -50,14 +49,14 @@ A PDRIVER_FS_NOTIFICATION-typed routine is called by the operating system when a
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 A pointer to a file system device object for which the notification was called.
 
-### -param FsActive 
+### -param FsActive [in]
 
-[in]
+
 A Boolean value that indicates whether the file system has registered (TRUE) or unregistered (FALSE) itself as an active file system.
 
 ## -remarks
@@ -99,7 +98,6 @@ DRIVER_FS_NOTIFICATION (
 typedef DRIVER_FS_NOTIFICATION *PDRIVER_FS_NOTIFICATION;
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ioregisterfsregistrationchange">IoRegisterFsRegistrationChange</a>
@@ -115,3 +113,4 @@ typedef DRIVER_FS_NOTIFICATION *PDRIVER_FS_NOTIFICATION;
 
 
 <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iounregisterfsregistrationchange">IoUnregisterFsRegistrationChange</a>
+

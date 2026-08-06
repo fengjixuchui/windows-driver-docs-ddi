@@ -4,7 +4,6 @@ title: RtlSizeTMult function (ntintsafe.h)
 description: Multiplies one value of type SIZE_T by another.
 old-location: kernel\rtlsizetmult.htm
 tech.root: kernel
-ms.assetid: 3EC72857-2880-4F03-8CC3-9B9A80F19273
 ms.date: 04/30/2018
 keywords: ["RtlSizeTMult function"]
 ms.keywords: RtlSizeTMult, RtlSizeTMult function [Kernel-Mode Driver Architecture], kernel.rtlsizetmult, ntintsafe/RtlSizeTMult
@@ -50,19 +49,19 @@ Multiplies one value of type <b>SIZE_T</b> by another.
 
 ## -parameters
 
-### -param Multiplicand 
+### -param Multiplicand [in]
 
-[in]
+
 The value to be multiplied by <i>Multiplier</i>.
 
-### -param Multiplier 
+### -param Multiplier [in]
 
-[in]
+
 The value by which to multiply <i>Multiplicand</i>.
 
-### -param pResult 
+### -param pResult [out]
 
-[out]
+
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

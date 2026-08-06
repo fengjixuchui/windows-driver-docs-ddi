@@ -1,17 +1,16 @@
 ---
 UID: NS:storport._SRBEX_DATA_SCSI_CDB16
 title: _SRBEX_DATA_SCSI_CDB16 (storport.h)
-description: The SRBEX_DATA_SCSI_CDB16 structure contains the extended SRB data for a 16-byte SCSI command data block (CDB).
+description: The _SRBEX_DATA_SCSI_CDB16 structure (storport.h) contains the extended SRB data for a 16-byte SCSI command data block (CDB).
 old-location: storage\srbex_data_scsi_cdb16.htm
 tech.root: storage
-ms.assetid: 168AC5F4-652B-405C-BE41-CD416A66FB74
 ms.date: 03/29/2018
 keywords: ["SRBEX_DATA_SCSI_CDB16 structure"]
 ms.keywords: "*PSRBEX_DATA_SCSI_CDB16, PSRBEX_DATA_SCSI_CDB16, PSRBEX_DATA_SCSI_CDB16 structure pointer [Storage Devices], SRBEX_DATA_SCSI_CDB16, SRBEX_DATA_SCSI_CDB16 structure [Storage Devices], _SRBEX_DATA_SCSI_CDB16, storage.srbex_data_scsi_cdb16, storport/PSRBEX_DATA_SCSI_CDB16, storport/SRBEX_DATA_SCSI_CDB16"
 req.header: storport.h
 req.include-header: Storport.h, Srb.h, Minitape.h
 req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Storport.h
 api_name:
+ - _SRBEX_DATA_SCSI_CDB16
+ - PSRBEX_DATA_SCSI_CDB16
  - SRBEX_DATA_SCSI_CDB16
 ---
 
@@ -102,3 +103,4 @@ This structure is used to submit an extended SRB data for a CDB of 16 bytes or l
 
 
 <a href="/windows-hardware/drivers/ddi/srb/ns-srb-_storage_request_block">STORAGE_REQUEST_BLOCK</a>
+

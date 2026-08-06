@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugDataSpaces2.ReadVirtual
 title: IDebugDataSpaces2::ReadVirtual (dbgeng.h)
-description: The ReadVirtual method reads memory from the target's virtual address space.
+description: The ReadVirtual method reads memory from the target's virtual address space. This method belongs to the IDebugDataSpaces2 interface.
 old-location: debugger\readvirtual.htm
 tech.root: debugger
-ms.assetid: 083b0ab5-e2b9-4dcb-b17d-ab2ebde48665
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces2::ReadVirtual"]
 ms.keywords: IDebugDataSpaces interface [Windows Debugging],ReadVirtual method, IDebugDataSpaces2 interface [Windows Debugging],ReadVirtual method, IDebugDataSpaces2.ReadVirtual, IDebugDataSpaces2::ReadVirtual, IDebugDataSpaces3 interface [Windows Debugging],ReadVirtual method, IDebugDataSpaces3::ReadVirtual, IDebugDataSpaces4 interface [Windows Debugging],ReadVirtual method, IDebugDataSpaces4::ReadVirtual, IDebugDataSpaces::ReadVirtual, IDebugDataSpaces_8f9b4f7a-04c6-4775-9d15-a4e1c56ca48c.xml, ReadVirtual, ReadVirtual method [Windows Debugging], ReadVirtual method [Windows Debugging],IDebugDataSpaces interface, ReadVirtual method [Windows Debugging],IDebugDataSpaces2 interface, ReadVirtual method [Windows Debugging],IDebugDataSpaces3 interface, ReadVirtual method [Windows Debugging],IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces2::ReadVirtual, dbgeng/IDebugDataSpaces3::ReadVirtual, dbgeng/IDebugDataSpaces4::ReadVirtual, dbgeng/IDebugDataSpaces::ReadVirtual, debugger.readvirtual
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugDataSpaces.ReadVirtual
- - IDebugDataSpaces2.ReadVirtual
- - IDebugDataSpaces3.ReadVirtual
- - IDebugDataSpaces4.ReadVirtual
+ - IDebugDataSpaces2::ReadVirtual
 ---
 
 # IDebugDataSpaces2::ReadVirtual
@@ -53,24 +49,24 @@ The <b>ReadVirtual</b> method reads memory from the target's virtual address spa
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the location in the target's virtual address space to be read.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 Specifies the buffer to read the memory into.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size in bytes of the buffer.  This is also the number of bytes being requested.
 
-### -param BytesRead 
+### -param BytesRead [out, optional]
 
-[out, optional]
+
 Receives the number of bytes that were read.  If it is set to <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -127,3 +123,4 @@ When reading memory that contains pointers, these pointers are for the target's 
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugdataspaces4-writevirtual">WriteVirtual</a>
+

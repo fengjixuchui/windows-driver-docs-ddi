@@ -1,8 +1,7 @@
 ---
 UID: NF:d3dkmthk.D3DKMTEnumAdapters3
 title: D3DKMTEnumAdapters3 function (d3dkmthk.h)
-description: Supplies information for enumerating all graphics adapters on the system.
-ms.assetid: 1e17d460-500d-4e4b-92f7-0505acc8436d
+description: The D3DKMTEnumAdapters3 function Supplies information for enumerating all graphics adapters on the system.
 ms.date: 03/24/2020
 keywords: ["D3DKMTEnumAdapters3 function"]
 ms.keywords: D3DKMTEnumAdapters3
@@ -13,7 +12,7 @@ req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
-req.lib: Gdi32.lib
+req.lib: onecoreuap.lib
 req.dll: Gdi32.dll
 req.irql: 
 req.ddi-compliance: 
@@ -50,9 +49,9 @@ Supplies information for enumerating graphics and display adapters on the system
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in/out]
 
-[in/out] A [D3DKMT_ENUMADAPTERS3](ns-d3dkmthk-_d3dkmt_enumadapters3.md) structure. The caller passes in the array size and an empty array space. The callee verifies that there is enough room in the array, fills out the array, and passes back how much of the array was used.
+A [D3DKMT_ENUMADAPTERS3](ns-d3dkmthk-_d3dkmt_enumadapters3.md) structure. The caller passes in the array size and an empty array space. The callee verifies that there is enough room in the array, fills out the array, and passes back how much of the array was used.
 
 ## -returns
 

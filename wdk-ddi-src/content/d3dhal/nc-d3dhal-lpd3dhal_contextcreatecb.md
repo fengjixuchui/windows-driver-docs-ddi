@@ -4,7 +4,6 @@ title: LPD3DHAL_CONTEXTCREATECB (d3dhal.h)
 description: The D3dContextCreate function creates a context.
 old-location: display\d3dcontextcreate.htm
 tech.root: display
-ms.assetid: c960c3f4-7565-4163-b8c2-a13643110c8c
 ms.date: 05/10/2018
 keywords: ["LPD3DHAL_CONTEXTCREATECB callback function"]
 ms.keywords: D3dContextCreate, D3dContextCreate callback function [Display Devices], LPD3DHAL_CONTEXTCREATECB, LPD3DHAL_CONTEXTCREATECB callback, d3dfncs_d126e9ed-3783-4cc1-8fd6-34592b95bec7.xml, d3dhal/D3dContextCreate, display.d3dcontextcreate
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dhal.h
 api_name:
- - D3dContextCreate
+ - LPD3DHAL_CONTEXTCREATECB
 ---
 
 # LPD3DHAL_CONTEXTCREATECB callback function
@@ -50,7 +49,7 @@ The <b>D3dContextCreate</b> function creates a context.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pccd* [in]
 
@@ -105,3 +104,4 @@ The driver must be able to reference all texture handles that are created within
 
 
 <a href="/windows/win32/api/ddrawint/ns-ddrawint-dd_directdraw_local">DD_DIRECTDRAW_LOCAL</a>
+

@@ -4,7 +4,6 @@ title: _DXVA_ExtendedFormat (dxva.h)
 description: The DXVA_ExtendedFormat structure describes the extended format of the video frame.
 old-location: display\dxva_extendedformat.htm
 tech.root: display
-ms.assetid: b4d01c1f-8267-490e-a808-87d9be666a94
 ms.date: 05/10/2018
 keywords: ["DXVA_ExtendedFormat structure"]
 ms.keywords: DXVA_ExtendedFormat, DXVA_ExtendedFormat structure [Display Devices], _DXVA_ExtendedFormat, display.dxva_extendedformat, dxva/DXVA_ExtendedFormat, dxvaref_3e46e283-492a-4ec5-8213-ff05215b0676.xml
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - dxva.h
 api_name:
+ - _DXVA_ExtendedFormat
  - DXVA_ExtendedFormat
 ---
 
@@ -107,3 +107,4 @@ Specifies the conversion function from R'G'B' to RGB. The 5 bits are defined by 
 
 
 <a href="/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_videotransfermatrix">DXVA_VideoTransferMatrix</a>
+

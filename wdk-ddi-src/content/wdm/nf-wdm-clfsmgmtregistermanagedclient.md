@@ -4,7 +4,6 @@ title: ClfsMgmtRegisterManagedClient function (wdm.h)
 description: The ClfsMgmtRegisterManagedClient routine creates a client that will manage a CLFS log.
 old-location: kernel\clfsmgmtregistermanagedclient.htm
 tech.root: kernel
-ms.assetid: 6f450117-9bd2-4021-b8f1-393db5784136
 ms.date: 04/30/2018
 keywords: ["ClfsMgmtRegisterManagedClient function"]
 ms.keywords: ClfsMgmtRegisterManagedClient, ClfsMgmtRegisterManagedClient routine [Kernel-Mode Driver Architecture], Clfs_management_9cd62567-e8c0-4a27-a3fd-153f0cdc9516.xml, kernel.clfsmgmtregistermanagedclient, wdm/ClfsMgmtRegisterManagedClient
@@ -51,26 +50,19 @@ The <b>ClfsMgmtRegisterManagedClient</b> routine creates a client that will mana
 
 ## -parameters
 
-### -param LogFile 
+### -param LogFile [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">LOG_FILE_OBJECT</a> structure that represents the CLFS log stream that the client created by <b>ClfsMgmtRegisterManagedClient</b> will manage.
 
-### -param RegistrationData 
+### -param RegistrationData [in]
 
-[in]
+
 An instance of the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_clfs_mgmt_client_registration">CLFS_MGMT_CLIENT_REGISTRATION</a> structure that contains the functions that will be used to manage the log.
 
 ### -param ClientCookie
 
 The cookie we give back to the caller for future use of the API.
-
-
-
-
-#### - Client [out]
-
-A pointer to the client.
 
 ## -returns
 

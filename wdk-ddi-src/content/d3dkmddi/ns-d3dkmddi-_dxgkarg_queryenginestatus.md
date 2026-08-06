@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGKARG_QUERYENGINESTATUS
 title: _DXGKARG_QUERYENGINESTATUS (d3dkmddi.h)
 description: Used in a call to the DxgkDdiQueryEngineStatus function to specify a node within an active physical adapter (engine) that is to be queried for its progress.
 old-location: display\dxgkarg_queryenginestatus.htm
-ms.assetid: f7255c97-5c25-4ee2-988b-ff301878fe7c
 ms.date: 05/10/2018
 keywords: ["DXGKARG_QUERYENGINESTATUS structure"]
 ms.keywords: "*INOUT_PDXGKARG_QUERYENGINESTATUS, DXGKARG_QUERYENGINESTATUS, DXGKARG_QUERYENGINESTATUS structure [Display Devices], _DXGKARG_QUERYENGINESTATUS, d3dkmddi/DXGKARG_QUERYENGINESTATUS, display.dxgkarg_queryenginestatus"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmddi.h
 api_name:
+ - _DXGKARG_QUERYENGINESTATUS
  - DXGKARG_QUERYENGINESTATUS
 ---
 
@@ -52,17 +52,17 @@ Used in a call to the <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmdd
 
 ## -struct-fields
 
-### -field NodeOrdinal
+### -field NodeOrdinal [in]
 
-[in] An index of a node within the physical adapter defined by   the <b>EngineOrdinal</b> member that is being queried in a call to <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryenginestatus">DxgkDdiQueryEngineStatus</a>.
+An index of a node within the physical adapter defined by   the <b>EngineOrdinal</b> member that is being queried in a call to <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryenginestatus">DxgkDdiQueryEngineStatus</a>.
 
-### -field EngineOrdinal
+### -field EngineOrdinal [in]
 
-[in] An index that defines the physical adapter in a linked display adapter (LDA) configuration that the node defined by <b>NodeOrdinal</b> belongs to.
+An index that defines the physical adapter in a linked display adapter (LDA) configuration that the node defined by <b>NodeOrdinal</b> belongs to.
 
-### -field EngineStatus
+### -field EngineStatus [out]
 
-[out] The progress, of type <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_enginestatus">DXGK_ENGINESTATUS</a>, of the node and physical adapter that are specified by the <b>NodeOrdinal</b> and <b>EngineOrdinal</b> members.
+The progress, of type <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_enginestatus">DXGK_ENGINESTATUS</a>, of the node and physical adapter that are specified by the <b>NodeOrdinal</b> and <b>EngineOrdinal</b> members.
 
 ## -remarks
 
@@ -75,3 +75,4 @@ For more information, see <a href="/windows-hardware/drivers/display/tdr-changes
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryenginestatus">DxgkDdiQueryEngineStatus</a>
+

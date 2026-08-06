@@ -4,7 +4,6 @@ title: RtlDWordPtrSub function (ntintsafe.h)
 description: Subtracts one value of type DWORD_PTR from another.
 old-location: kernel\rtldwordptrsub.htm
 tech.root: kernel
-ms.assetid: B3268640-F256-4B64-AE95-8D30A6A7BF6C
 ms.date: 04/30/2018
 keywords: ["RtlDWordPtrSub function"]
 ms.keywords: RtlDWordPtrSub, RtlDWordPtrSub function [Kernel-Mode Driver Architecture], kernel.rtldwordptrsub, ntintsafe/RtlDWordPtrSub
@@ -50,19 +49,19 @@ Subtracts one value of type <b>DWORD_PTR</b> from another.
 
 ## -parameters
 
-### -param dwMinuend 
+### -param dwMinuend [in]
 
-[in]
+
 The value from which <i>dwSubtrahend</i> is subtracted.
 
-### -param dwSubtrahend 
+### -param dwSubtrahend [in]
 
-[in]
+
 The value to subtract from <i>dwMinuend</i>.
 
-### -param pdwResult 
+### -param pdwResult [out]
 
-[out]
+
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

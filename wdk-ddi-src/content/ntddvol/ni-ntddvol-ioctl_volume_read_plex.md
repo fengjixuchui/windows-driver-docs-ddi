@@ -4,7 +4,6 @@ title: IOCTL_VOLUME_READ_PLEX (ntddvol.h)
 description: Performs a read on a specific plex of a volume.
 old-location: storage\ioctl_volume_read_plex.htm
 tech.root: storage
-ms.assetid: 187e15d2-b527-4dab-81ea-498663363f8b
 ms.date: 03/29/2018
 keywords: ["IOCTL_VOLUME_READ_PLEX IOCTL"]
 ms.keywords: IOCTL_VOLUME_READ_PLEX, IOCTL_VOLUME_READ_PLEX control, IOCTL_VOLUME_READ_PLEX control code [Storage Devices], k307_9f88e325-8c32-4be3-acaa-5df77ee023c2.xml, ntddvol/IOCTL_VOLUME_READ_PLEX, storage.ioctl_volume_read_plex
@@ -51,6 +50,8 @@ Performs a read on a specific <a href="/windows-hardware/drivers/">plex</a> of a
 If, however, an application or kernel-mode component must read data from a particular plex instead of letting the volume manager pick one, it can use this IOCTL to do so.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

@@ -4,7 +4,6 @@ title: IPortableDeviceValues::SetGuidValue (portabledevicetypes.h)
 description: Adds a new GUID value (type VT_CLSID) or overwrites an existing one.
 old-location: wpddk\iportabledevicevalues_setguidvalue.htm
 tech.root: wpd_dk
-ms.assetid: 08b5184b-6baa-45dc-be26-cbf7d9c96616
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::SetGuidValue"]
 ms.keywords: IPortableDeviceValues interface,SetGuidValue method, IPortableDeviceValues.SetGuidValue, IPortableDeviceValues::SetGuidValue, IPortableDeviceValuesSetGuidValue, SetGuidValue, SetGuidValue method, SetGuidValue method,IPortableDeviceValues interface, portabledevicetypes/IPortableDeviceValues::SetGuidValue, wpddk.iportabledevicevalues_setguidvalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.SetGuidValue
+ - IPortableDeviceValues::SetGuidValue
 ---
 
 # IPortableDeviceValues::SetGuidValue
@@ -51,14 +50,14 @@ Adds a new <b>GUID</b> value (type VT_CLSID) or overwrites an existing one.
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> that specifies the item to create or overwrite.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 A <b>REFGUID</b> that contains the new value.
 
 ## -returns
@@ -94,3 +93,4 @@ If an existing value has the same key that is specified by the <i>key</i> parame
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-getguidvalue">IPortableDeviceValues::GetGuidValue</a>
+

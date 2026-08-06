@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_SetExecutorRFState
 title: RIL_SetExecutorRFState function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_SetExecutorRFState function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_setexecutorrfstate.htm
 tech.root: netvista
-ms.assetid: 4543671c-222f-4913-9f88-682af3e54273
 ms.date: 05/02/2018
 keywords: ["RIL_SetExecutorRFState function"]
 ms.keywords: RIL_SetExecutorRFState, RIL_SetExecutorRFState method [Network Drivers Starting with Windows Vista], netvista.ril_setexecutorrfstate, rilapi/RIL_SetExecutorRFState

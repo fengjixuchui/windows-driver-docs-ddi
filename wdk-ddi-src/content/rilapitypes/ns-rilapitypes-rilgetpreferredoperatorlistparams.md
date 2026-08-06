@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILGETPREFERREDOPERATORLISTPARAMS
 title: RILGETPREFERREDOPERATORLISTPARAMS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILGETPREFERREDOPERATORLISTPARAMS structure for internal use only."
 old-location: netvista\rilgetpreferredoperatorlistparams.htm
 tech.root: netvista
-ms.assetid: b1cc3a45-cfd9-4a7f-94e7-bc5c0d2a4e80
 ms.date: 05/02/2018
 keywords: ["RILGETPREFERREDOPERATORLISTPARAMS structure"]
 ms.keywords: "*LPRILGETPREFERREDOPERATORLISTPARAMS, RILGETPREFERREDOPERATORLISTPARAMS, RILGETPREFERREDOPERATORLISTPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilgetpreferredoperatorlistparams, ntddrilapitypes/RILGETPREFERREDOPERATORLISTPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILGETPREFERREDOPERATORLISTPARAMS
+ - LPRILGETPREFERREDOPERATORLISTPARAMS
 ---
 
 # RILGETPREFERREDOPERATORLISTPARAMS structure (rilapitypes.h)

@@ -4,7 +4,6 @@ title: PosCxClose function (poscx.h)
 description: PosCxClose is called to delete an opened PosCx library instance. This function releases the device if the caller is the owner, and cancels pending requests. It should be called from the driver's EVT_WDF_FILE_CLOSE callback.
 old-location: pos\poscxclose.htm
 tech.root: pos
-ms.assetid: 90D097B9-EE7B-49FA-B0F7-6A255D140C06
 ms.date: 02/23/2018
 keywords: ["PosCxClose function"]
 ms.keywords: PosCxClose, PosCxClose function, pos.poscxclose, poscx/PosCxClose
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: 
-req.product: Windows 10 or later.
 f1_keywords:
  - PosCxClose
  - poscx/PosCxClose
@@ -51,14 +49,14 @@ PosCxClose is called to delete an opened PosCx library instance. This function r
 
 ## -parameters
 
-### -param device 
+### -param device [in]
 
-[in]
+
 A handle to a framework device object that represents the device.
 
-### -param fileObject 
+### -param fileObject [in]
 
-[in]
+
 A handle to a framework file object that identifies the caller associated with the open instance.
 
 ## -returns

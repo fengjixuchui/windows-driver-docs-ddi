@@ -4,7 +4,6 @@ title: _CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR (ntddcdrm.h)
 description: The CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR structure gives the host an approximation of logical unit performance.
 old-location: storage\cdrom_nominal_performance_descriptor.htm
 tech.root: storage
-ms.assetid: F931CE79-7070-43B9-BFED-9F3D5B18623E
 ms.date: 03/29/2018
 keywords: ["CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR structure"]
 ms.keywords: "*PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR structure [Storage Devices], PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR structure pointer [Storage Devices], _CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, ntddcdrm/CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, ntddcdrm/PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR, storage.cdrom_nominal_performance_descriptor"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddcdrm.h
 api_name:
+ - _CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR
+ - PCDROM_NOMINAL_PERFORMANCE_DESCRIPTOR
  - CDROM_NOMINAL_PERFORMANCE_DESCRIPTOR
 ---
 
@@ -79,3 +80,4 @@ The EndPerformance field (End Performance) contains the nominal logical unit per
 
 
 <a href="/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_get_performance">IOCTL_CDROM_GET_PERFORMANCE</a>
+

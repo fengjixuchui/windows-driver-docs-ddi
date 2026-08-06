@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT
 title: _D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT (d3dkmthk.h)
 description: The D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT structure describes the private-format attribute to set for a video present source.
 old-location: display\d3dkmt_setdisplayprivatedriverformat.htm
-ms.assetid: a99a3b15-8c91-4aef-a82c-665c8494fa57
 ms.date: 05/10/2018
 keywords: ["D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT structure"]
 ms.keywords: D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT, D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT structure [Display Devices], OpenGL_Structs_c5440fbe-47f2-43eb-ae09-e9295bfa4bad.xml, _D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT, d3dkmthk/D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT, display.d3dkmt_setdisplayprivatedriverformat
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT
  - D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT
 ---
 
@@ -52,18 +52,19 @@ The D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT structure describes the private-format 
 
 ## -struct-fields
 
-### -field hDevice
+### -field hDevice [in]
 
-[in] A handle to the device that requests to change the private-format attribute of a video present source.
+A handle to the device that requests to change the private-format attribute of a video present source.
 
-### -field VidPnSourceId
+### -field VidPnSourceId [in]
 
-[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology to set a private-format attribute on (that is, the identifier of the primary surface to set a private-format attribute on).
+The zero-based identification number of the video present source in a path of a video present network (VidPN) topology to set a private-format attribute on (that is, the identifier of the primary surface to set a private-format attribute on).
 
-### -field PrivateDriverFormatAttribute
+### -field PrivateDriverFormatAttribute [in]
 
-[in] A UINT value that specifies the private-format attribute to set for the video present source that the <b>VidPnSourceId</b> member specifies.
+A UINT value that specifies the private-format attribute to set for the video present source that the <b>VidPnSourceId</b> member specifies.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtsetdisplayprivatedriverformat">D3DKMTSetDisplayPrivateDriverFormat</a>
+

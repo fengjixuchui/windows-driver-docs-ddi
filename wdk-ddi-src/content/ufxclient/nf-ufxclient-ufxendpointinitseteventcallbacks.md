@@ -4,7 +4,6 @@ title: UfxEndpointInitSetEventCallbacks function (ufxclient.h)
 description: Initialize a UFXENDPOINT_INIT structure.
 old-location: buses\ufxendpointinitseteventcallbacks.htm
 tech.root: usbref
-ms.assetid: D3D8D948-400A-47A0-98E9-ECF5643DB5D2
 ms.date: 05/07/2018
 keywords: ["UfxEndpointInitSetEventCallbacks function"]
 ms.keywords: UfxEndpointInitSetEventCallbacks, UfxEndpointInitSetEventCallbacks method [Buses], buses.ufxendpointinitseteventcallbacks, ufxclient/UfxEndpointInitSetEventCallbacks
@@ -50,14 +49,14 @@ Initialize a <b>UFXENDPOINT_INIT</b> structure.
 
 ## -parameters
 
-### -param EndpointInit 
+### -param EndpointInit [in, out]
 
-[in, out]
+
 Opaque structure passed by UFX in the call to <a href="/windows-hardware/drivers/ddi/ufxclient/nc-ufxclient-evt_ufx_device_endpoint_add">EVT_UFX_DEVICE_ENDPOINT_ADD</a> or <a href="/windows-hardware/drivers/ddi/ufxclient/nc-ufxclient-evt_ufx_device_default_endpoint_add">EVT_UFX_DEVICE_DEFAULT_ENDPOINT_ADD</a>.
 
-### -param Callbacks 
+### -param Callbacks [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/ufxclient/ns-ufxclient-_ufx_endpoint_callbacks">UFX_ENDPOINT_CALLBACKS</a> structure.
 
 ## -remarks

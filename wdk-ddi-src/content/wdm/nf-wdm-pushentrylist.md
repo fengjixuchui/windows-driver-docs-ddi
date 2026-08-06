@@ -4,7 +4,6 @@ title: PushEntryList function (wdm.h)
 description: The PushEntryList routine inserts an entry at the beginning of a singly linked list of SINGLE_LIST_ENTRY structures.
 old-location: kernel\pushentrylist.htm
 tech.root: kernel
-ms.assetid: 19f387d3-6c00-4c71-8114-61c53654613c
 ms.date: 04/30/2018
 keywords: ["PushEntryList function"]
 ms.keywords: PushEntryList, PushEntryList routine [Kernel-Mode Driver Architecture], k109_17626baa-0fb7-4492-9e9c-a25b78b808fb.xml, kernel.pushentrylist, wdm/PushEntryList
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level (See Remarks section)
+req.irql: Any level (see Remarks section)
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ The <b>PushEntryList</b> routine inserts an entry at the beginning of a singly l
 
 ## -parameters
 
-### -param ListHead 
+### -param ListHead [in, out]
 
-[in, out]
+
 Pointer to the <a href="/windows/win32/api/ntdef/ns-ntdef-single_list_entry">SINGLE_LIST_ENTRY</a> structure that serves as the list header.
 
-### -param Entry 
+### -param Entry [in, out]
 
-[in, out]
+
 Pointer to SINGLE_LIST_ENTRY structure that represents the entry to be inserted on the list.
 
 ## -remarks
@@ -70,7 +69,7 @@ Callers of <b>PushEntryList</b> can be running at any IRQL. If <b>PushEntryList<
 
 ## -see-also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545418">ExInterlockedPushEntryList</a>
+<a href="/previous-versions/ff545418(v=vs.85)">ExInterlockedPushEntryList</a>
 
 
 

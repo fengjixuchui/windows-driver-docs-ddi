@@ -4,7 +4,6 @@ title: _TCP_OFFLOAD_STATE_CACHED (ndischimney.h)
 description: The TCP_OFFLOAD_STATE_CACHED structure contains the cached variables of a TCP connection state object.
 old-location: netvista\tcp_offload_state_cached.htm
 tech.root: netvista
-ms.assetid: 953154eb-e6f3-4013-a68f-1a358953c7ad
 ms.date: 05/02/2018
 keywords: ["TCP_OFFLOAD_STATE_CACHED structure"]
 ms.keywords: "*PTCP_OFFLOAD_STATE_CACHED, PTCP_OFFLOAD_STATE_CACHED, PTCP_OFFLOAD_STATE_CACHED structure pointer [Network Drivers Starting with Windows Vista], TCP_OFFLOAD_STATE_CACHED, TCP_OFFLOAD_STATE_CACHED structure [Network Drivers Starting with Windows Vista], _TCP_OFFLOAD_STATE_CACHED, ndischimney/PTCP_OFFLOAD_STATE_CACHED, ndischimney/TCP_OFFLOAD_STATE_CACHED, netvista.tcp_offload_state_cached, tcp_chim_struct_43b44d70-521b-483d-800f-ed9528499ca3.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndischimney.h
 api_name:
+ - _TCP_OFFLOAD_STATE_CACHED
+ - PTCP_OFFLOAD_STATE_CACHED
  - TCP_OFFLOAD_STATE_CACHED
 ---
 
@@ -110,7 +111,7 @@ The host stack sets this flag to cause the offload target to reset the TotalRT v
 
 The host stack sets this flag to indicate that the default receive window size (InitialRcvWnd in
        the TCP_OFFLOAD_STATE_CACHED structure) has changed. If the value of InitialRcvWnd differs from the
-       offload target's currrent receive window size (RcvWnd in the TCP_OFFLOAD_STATE_DELEGATED structure),
+       offload target's current receive window size (RcvWnd in the TCP_OFFLOAD_STATE_DELEGATED structure),
        the offload target must advertise a new receive window size to the peer.
 
 ### -field InitialRcvWnd
@@ -158,7 +159,7 @@ This member specifies, in clock ticks, the maximum time that the offload target 
      <b>MaxRT</b> overrides 
      <b>TcpMaximumRetransmissions</b> in the 
      <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_tcp_connection_offload_parameters">
-     NDIS_TASK_TCP_CONNECTION_OFFLOAD</a> structure. The default value for is 
+     NDIS_TCP_CONNECTION_OFFLOAD_PARAMETERS</a> structure. The default value for is 
      <b>MaxRT</b> is zero, which means that 
      <b>TcpMaximumRetransmissions</b> sets the maximum number of times that the offload target should
      retransmit a segment on a TCP connection. If the value of 
@@ -239,7 +240,7 @@ Reset that connection's delegated KeepaliveTimeoutDelta variable when the host s
 When passed to an offload target, a TCP_OFFLOAD_STATE_CACHED structure is associated with an 
     <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_miniport_offload_block_list">
     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure, which contains a header that is formatted as an 
-    <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure. The 
+    <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure. The 
     <b>Revision</b> member of the NDIS_OBJECT_HEADER structure, in this case, specifies the revision number of
     the TCP_OFFLOAD_STATE_CACHED structure.
 
@@ -253,7 +254,7 @@ When passed to an offload target, a TCP_OFFLOAD_STATE_CACHED structure is associ
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -266,3 +267,4 @@ When passed to an offload target, a TCP_OFFLOAD_STATE_CACHED structure is associ
 
 
 <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_tcp_offload_state_delegated">TCP_OFFLOAD_STATE_DELEGATED</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient3.StartServer
 title: IDebugClient3::StartServer (dbgeng.h)
-description: The StartServer method starts a debugging server.
+description: The StartServer method starts a debugging server. This method belongs to the IDebugClient3 interface.
 old-location: debugger\startserver.htm
 tech.root: debugger
-ms.assetid: 52b1c590-a62b-4e27-a267-1862cb76e6d4
 ms.date: 05/03/2018
 keywords: ["IDebugClient3::StartServer"]
 ms.keywords: IDebugClient interface [Windows Debugging],StartServer method, IDebugClient2 interface [Windows Debugging],StartServer method, IDebugClient2::StartServer, IDebugClient3 interface [Windows Debugging],StartServer method, IDebugClient3.StartServer, IDebugClient3::StartServer, IDebugClient4 interface [Windows Debugging],StartServer method, IDebugClient4::StartServer, IDebugClient5 interface [Windows Debugging],StartServer method, IDebugClient5::StartServer, IDebugClient::StartServer, IDebugClient_5ca142fb-bb02-4484-adf0-9337f53d0bdc.xml, StartServer, StartServer method [Windows Debugging], StartServer method [Windows Debugging],IDebugClient interface, StartServer method [Windows Debugging],IDebugClient2 interface, StartServer method [Windows Debugging],IDebugClient3 interface, StartServer method [Windows Debugging],IDebugClient4 interface, StartServer method [Windows Debugging],IDebugClient5 interface, dbgeng/IDebugClient2::StartServer, dbgeng/IDebugClient3::StartServer, dbgeng/IDebugClient4::StartServer, dbgeng/IDebugClient5::StartServer, dbgeng/IDebugClient::StartServer, debugger.startserver
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.StartServer
- - IDebugClient2.StartServer
- - IDebugClient3.StartServer
- - IDebugClient4.StartServer
- - IDebugClient5.StartServer
+ - IDebugClient3::StartServer
 ---
 
 # IDebugClient3::StartServer
@@ -54,9 +49,9 @@ The <b>StartServer</b>  method starts a debugging server.
 
 ## -parameters
 
-### -param Options 
+### -param Options [in]
 
-[in]
+
 Specifies the connections options for this server.  These are the same options given to the <b>.server</b> debugger command or the WinDbg and CDB <b>-server</b> command-line option.  For details on the syntax of this string, see <a href="/windows-hardware/drivers/debugger/activating-a-debugging-server">Activating a Debugging Server</a>.
 
 ## -returns
@@ -118,3 +113,4 @@ For more information about debugging servers, see Debugging Server and Debugging
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-startprocessserver">StartProcessServer</a>
+

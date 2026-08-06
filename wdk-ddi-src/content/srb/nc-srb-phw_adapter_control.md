@@ -1,10 +1,9 @@
 ---
 UID: NC:srb.PHW_ADAPTER_CONTROL
 title: PHW_ADAPTER_CONTROL (srb.h)
-description: The PHW_INITIALIZE routine prototype declares a routine that initializes the miniport driver after a reboot or power failure occurs.
+description: This routine prototype declares a routine that initializes the miniport driver after a reboot or power failure occurs.
 old-location: storage\phw_adapter_control.htm
 tech.root: storage
-ms.assetid: ef58c005-e5e5-409d-9010-59635fd4da02
 ms.date: 03/29/2018
 keywords: ["PHW_ADAPTER_CONTROL callback"]
 ms.keywords: "(*PHW_ADAPTER_CONTROL), (*PHW_ADAPTER_CONTROL) callback function [Storage Devices], ide_minikr_fb5a2e9f-b755-417e-b152-ef680c85c16a.xml, srb/(*PHW_ADAPTER_CONTROL), storage.phw_adapter_control"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product: Windows 10 or later.
 f1_keywords:
  - PHW_ADAPTER_CONTROL
  - srb/PHW_ADAPTER_CONTROL
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - srb.h
 api_name:
- - (*PHW_ADAPTER_CONTROL)
+ - PHW_ADAPTER_CONTROL
 ---
 
 # PHW_ADAPTER_CONTROL callback
@@ -51,19 +49,19 @@ The PHW_INITIALIZE routine prototype declares a routine that initializes the min
 
 ## -parameters
 
-### -param DeviceExtension 
+### -param DeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's per-HBA storage area.
 
-### -param ControlType 
+### -param ControlType [in]
 
-[in]
+
 Specifies an adapter-control operation. For a list of the allowed operations, see <a href="/previous-versions/windows/hardware/drivers/ff557274(v=vs.85)">HwScsiAdapterControl</a>.
 
-### -param Parameters 
+### -param Parameters [in]
 
-[in]
+
 Contains information related to the <i>ControlType</i>. For an explanation of the meaning of these values, see the discussion accompanying the <i>Parameters</i> parameter of the <a href="/previous-versions/windows/hardware/drivers/ff557274(v=vs.85)">HwScsiAdapterControl</a>.
 
 ## -returns
@@ -85,3 +83,4 @@ For more information about the adapter control routine that is used with the Sto
 
 
 <a href="/windows-hardware/drivers/ddi/storport/nc-storport-hw_adapter_control">HwStorAdapterControl</a>
+

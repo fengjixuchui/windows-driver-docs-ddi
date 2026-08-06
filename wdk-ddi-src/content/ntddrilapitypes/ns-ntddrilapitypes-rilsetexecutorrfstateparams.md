@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILSETEXECUTORRFSTATEPARAMS
 title: RILSETEXECUTORRFSTATEPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILSETEXECUTORRFSTATEPARAMS structure for internal use only. Don't use this structure in your code."
 old-location: netvista\rilsetexecutorrfstateparams.htm
 tech.root: netvista
-ms.assetid: d7f36cbd-56bb-470e-b965-369b9e49f5e2
 ms.date: 05/02/2018
 keywords: ["RILSETEXECUTORRFSTATEPARAMS structure"]
 ms.keywords: "*LPRILSETEXECUTORRFSTATEPARAMS, RILSETEXECUTORRFSTATEPARAMS, RILSETEXECUTORRFSTATEPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsetexecutorrfstateparams, ntddrilapitypes/RILSETEXECUTORRFSTATEPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSETEXECUTORRFSTATEPARAMS
+ - LPRILSETEXECUTORRFSTATEPARAMS
 ---
 
 # RILSETEXECUTORRFSTATEPARAMS structure (ntddrilapitypes.h)

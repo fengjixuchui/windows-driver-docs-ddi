@@ -4,7 +4,6 @@ title: IDebugClient::GetOutputWidth (dbgeng.h)
 description: Gets the width of an output line for commands that produce formatted output.
 old-location: debugger\idebugclient_getoutputwidth.htm
 tech.root: debugger
-ms.assetid: FE76DA51-400E-4F64-B8D9-8738D2F5031A
 ms.date: 05/03/2018
 keywords: ["IDebugClient::GetOutputWidth"]
 ms.keywords: GetOutputWidth, GetOutputWidth method [Windows Debugging], GetOutputWidth method [Windows Debugging],IDebugClient interface, IDebugClient interface [Windows Debugging],GetOutputWidth method, IDebugClient.GetOutputWidth, IDebugClient::GetOutputWidth, dbgeng/IDebugClient::GetOutputWidth, debugger.idebugclient_getoutputwidth
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.GetOutputWidth
+ - IDebugClient::GetOutputWidth
 ---
 
 # IDebugClient::GetOutputWidth
@@ -51,9 +50,9 @@ Gets the width of an output line for
 
 ## -parameters
 
-### -param Columns 
+### -param Columns [out]
 
-[out]
+
 The number of columns in the output.
 
 ## -returns
@@ -85,3 +84,4 @@ This setting is a suggestion that can be overridden by other settings.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient">IDebugClient</a>
+

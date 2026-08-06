@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_CALCPRIVATEDEPTHSTENCILVIEWSIZE
 title: PFND3D10DDI_CALCPRIVATEDEPTHSTENCILVIEWSIZE (d3d10umddi.h)
 description: The CalcPrivateDepthStencilViewSize function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for a depth stencil view.
 old-location: display\calcprivatedepthstencilviewsize.htm
-ms.assetid: e5dfa018-f9a5-467f-8e84-9697d5f94689
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_CALCPRIVATEDEPTHSTENCILVIEWSIZE callback function"]
 ms.keywords: CalcPrivateDepthStencilViewSize, CalcPrivateDepthStencilViewSize callback function [Display Devices], PFND3D10DDI_CALCPRIVATEDEPTHSTENCILVIEWSIZE, PFND3D10DDI_CALCPRIVATEDEPTHSTENCILVIEWSIZE callback, UserModeDisplayDriverDx10_Functions_514ed3bc-fc1d-4bda-bcc9-f90e6900c002.xml, d3d10umddi/CalcPrivateDepthStencilViewSize, display.calcprivatedepthstencilviewsize
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CalcPrivateDepthStencilViewSize
-product:
- - Windows
+ - PFND3D10DDI_CALCPRIVATEDEPTHSTENCILVIEWSIZE
 ---
 
 # PFND3D10DDI_CALCPRIVATEDEPTHSTENCILVIEWSIZE callback function
@@ -52,13 +49,13 @@ The <b>CalcPrivateDepthStencilViewSize</b> function determines the size of the u
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCreateDepthStencilView* [in]
 
@@ -77,3 +74,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddi_devicefuncs">D3D10DDI_DEVICEFUNCS</a>
+

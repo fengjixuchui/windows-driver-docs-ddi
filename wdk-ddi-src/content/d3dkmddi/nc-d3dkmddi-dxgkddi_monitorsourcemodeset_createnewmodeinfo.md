@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_MONITORSOURCEMODESET_CREATENEWMODEINFO
 title: DXGKDDI_MONITORSOURCEMODESET_CREATENEWMODEINFO (d3dkmddi.h)
 description: The pfnCreateNewModeInfo function returns a pointer to a D3DKMDT_MONITOR_SOURCE_MODE structure that the display miniport driver populates before calling pfnAddMode.
 old-location: display\dxgk_monitorsourcemodeset_interface_pfncreatenewmodeinfo.htm
-ms.assetid: 314b345c-a40b-418d-a2d8-c7b42e5fd27d
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_MONITORSOURCEMODESET_CREATENEWMODEINFO callback function"]
 ms.keywords: DXGKDDI_MONITORSOURCEMODESET_CREATENEWMODEINFO, DXGKDDI_MONITORSOURCEMODESET_CREATENEWMODEINFO callback, VidPnFunctions_4b8b1581-4518-471d-a79e-ed05899ad500.xml, d3dkmddi/pfnCreateNewModeInfo, display.dxgk_monitorsourcemodeset_interface_pfncreatenewmodeinfo, pfnCreateNewModeInfo, pfnCreateNewModeInfo callback function [Display Devices]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - pfnCreateNewModeInfo
-product:
- - Windows
+ - DXGKDDI_MONITORSOURCEMODESET_CREATENEWMODEINFO
 ---
 
 # DXGKDDI_MONITORSOURCEMODESET_CREATENEWMODEINFO callback function
@@ -52,13 +49,13 @@ The <b>pfnCreateNewModeInfo</b> function returns a pointer to a <a href="/window
 
 ## -parameters
 
-### -param hMonitorSourceModeSet
+### -param hMonitorSourceModeSet [in]
 
-[in] A handle to a monitor source mode set object. The display miniport driver previously obtained this handle by calling the <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_monitor_acquiremonitorsourcemodeset">pfnAcquireMonitorSourceModeSet</a> function of the <a href="/windows-hardware/drivers/ddi/index">Monitor interface</a>.
+A handle to a monitor source mode set object. The display miniport driver previously obtained this handle by calling the <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_monitor_acquiremonitorsourcemodeset">pfnAcquireMonitorSourceModeSet</a> function of the <a href="/windows-hardware/drivers/ddi/index">Monitor interface</a>.
 
-### -param ppNewMonitorSourceModeInfo
+### -param ppNewMonitorSourceModeInfo [out]
 
-[out] A pointer to a variable that receives a pointer to a newly created D3DKMDT_MONITOR_SOURCE_MODE structure allocated by the VidPN manager.
+A pointer to a variable that receives a pointer to a newly created D3DKMDT_MONITOR_SOURCE_MODE structure allocated by the VidPN manager.
 
 ## -returns
 
@@ -83,3 +80,4 @@ Release the structure by calling <a href="/windows-hardware/drivers/ddi/d3dkmddi
 
 </li>
 </ul>
+

@@ -4,7 +4,6 @@ title: CcPinRead function (ntifs.h)
 description: The CcPinRead routine pins the specified byte range of a cached file and reads the pinned data into a buffer in memory.
 old-location: ifsk\ccpinread.htm
 tech.root: ifsk
-ms.assetid: 46b0e05e-f7e2-4a9b-bec0-26bcaf31b013
 ms.date: 04/16/2018
 keywords: ["CcPinRead function"]
 ms.keywords: CcPinRead, CcPinRead routine [Installable File System Drivers], ccref_f6bbe780-631d-48f8-979f-6ed4260cbe5d.xml, ifsk.ccpinread, ntifs/CcPinRead
@@ -50,24 +49,24 @@ The <b>CcPinRead</b> routine pins the specified byte range of a cached file and 
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to a file object for the cached file in which a range of data is to be pinned.
 
-### -param FileOffset 
+### -param FileOffset [in]
 
-[in]
+
 Pointer to a variable that specifies the starting byte offset within the cached file where the desired data resides.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Length of desired data in bytes.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Bitmask of flags specifying how the pinning operation is to be performed. ORed combination of one or more of the following values: 
 
 <table>
@@ -117,14 +116,14 @@ The data is to be pinned only if a BCB already exists. Otherwise, the pin fails 
 </tr>
 </table>
 
-### -param Bcb 
+### -param Bcb [out]
 
-[out]
+
 On the first call this returns a pointer to a buffer control block (BCB). This pointer must be supplied as input on all subsequent calls for this buffer.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 Pointer to a buffer containing the pinned data.
 
 ## -returns

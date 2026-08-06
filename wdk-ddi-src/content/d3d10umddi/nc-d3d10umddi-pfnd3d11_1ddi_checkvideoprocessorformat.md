@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_CHECKVIDEOPROCESSORFORMAT
 title: PFND3D11_1DDI_CHECKVIDEOPROCESSORFORMAT (d3d10umddi.h)
 description: Queries whether the video processor supports a specified video format.
 old-location: display\checkvideoprocessorformat.htm
-ms.assetid: f5f18a53-d121-445a-86b7-649624a2f175
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_CHECKVIDEOPROCESSORFORMAT callback function"]
 ms.keywords: CheckVideoProcessorFormat, CheckVideoProcessorFormat callback function [Display Devices], PFND3D11_1DDI_CHECKVIDEOPROCESSORFORMAT, PFND3D11_1DDI_CHECKVIDEOPROCESSORFORMAT callback, d3d10umddi/CheckVideoProcessorFormat, display.checkvideoprocessorformat
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - CheckVideoProcessorFormat
-product:
- - Windows
+ - PFND3D11_1DDI_CHECKVIDEOPROCESSORFORMAT
 ---
 
 # PFND3D11_1DDI_CHECKVIDEOPROCESSORFORMAT callback function
@@ -52,25 +49,25 @@ Queries whether the video processor supports a specified video format.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hVideoProcessorEnum* [in]
 
 A handle to a video processor enumeration object that was created through a call to the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessorenum">CreateVideoProcessorEnum</a> function.
 
-### -param Arg3
+### -param unnamedParam3
 
 *Format* [in]
 
 The video format to query.
 
-### -param Arg4
+### -param unnamedParam4
 
 *pSupported* [out]
 
@@ -97,3 +94,4 @@ If the driver can support neither, it must set the <i>pSupported</i> parameter t
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d11_1ddi_video_processor_format_support">D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT</a>
+

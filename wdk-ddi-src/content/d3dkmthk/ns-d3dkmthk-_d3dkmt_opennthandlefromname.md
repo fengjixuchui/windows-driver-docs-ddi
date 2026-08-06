@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_OPENNTHANDLEFROMNAME
 title: _D3DKMT_OPENNTHANDLEFROMNAME (d3dkmthk.h)
 description: Describes information that is required to open an NT handle to the process from a graphics adapter name.
 old-location: display\d3dkmt_opennthandlefromname.htm
-ms.assetid: 34f70519-7905-4a16-bd07-db3592b05890
 ms.date: 05/10/2018
 keywords: ["D3DKMT_OPENNTHANDLEFROMNAME structure"]
 ms.keywords: D3DKMT_OPENNTHANDLEFROMNAME, D3DKMT_OPENNTHANDLEFROMNAME structure [Display Devices], _D3DKMT_OPENNTHANDLEFROMNAME, d3dkmthk/D3DKMT_OPENNTHANDLEFROMNAME, display.d3dkmt_opennthandlefromname
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
+ - _D3DKMT_OPENNTHANDLEFROMNAME
  - D3DKMT_OPENNTHANDLEFROMNAME
 ---
 
@@ -52,14 +52,15 @@ Describes information that is required to open an NT handle to the process from 
 
 ## -struct-fields
 
-### -field dwDesiredAccess
+### -field dwDesiredAccess [in]
 
-[in] Specifies read and write access for the resource.
+Specifies read and write access for the resource.
 
-### -field pObjAttrib
+### -field pObjAttrib [in]
 
-[in] A pointer to an <a href="/windows/win32/api/ntdef/ns-ntdef-_object_attributes">OBJECT_ATTRIBUTES</a> structure that specifies attributes of the adapter, including its name.
+A pointer to an <a href="/windows/win32/api/ntdef/ns-ntdef-_object_attributes">OBJECT_ATTRIBUTES</a> structure that specifies attributes of the adapter, including its name.
 
-### -field hNtHandle
+### -field hNtHandle [out]
 
-[out] An NT handle to the process.
+An NT handle to the process.
+

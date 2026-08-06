@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugEventCallbacksWide.LoadModule
 title: IDebugEventCallbacksWide::LoadModule (dbgeng.h)
-description: The LoadModule callback method is called by the engine when a module-load debugging event occurs in the target.
+description: The LoadModule callback method is called by the engine when a module-load debugging event occurs in the target. This method belongs to IDebugEventCallbacksWide.
 old-location: debugger\idebugeventcallbackswide_loadmodule.htm
 tech.root: debugger
-ms.assetid: 03a76d41-3af1-48a9-832a-1c255a8b0cc4
 ms.date: 05/03/2018
 keywords: ["IDebugEventCallbacksWide::LoadModule"]
 ms.keywords: IDebugEventCallbacksWide interface [Windows Debugging],LoadModule method, IDebugEventCallbacksWide.LoadModule, IDebugEventCallbacksWide::LoadModule, LoadModule, LoadModule method [Windows Debugging], LoadModule method [Windows Debugging],IDebugEventCallbacksWide interface, dbgeng/IDebugEventCallbacksWide::LoadModule, debugger.idebugeventcallbackswide_loadmodule
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugEventCallbacksWide.LoadModule
+ - IDebugEventCallbacksWide::LoadModule
 ---
 
 # IDebugEventCallbacksWide::LoadModule
@@ -50,39 +49,39 @@ The <b>LoadModule</b> callback method is called by the engine when a module-load
 
 ## -parameters
 
-### -param ImageFileHandle 
+### -param ImageFileHandle [in]
 
-[in]
+
 Specifies the handle to the module's image file.  If this information is not available, <i>ImageFileHandle</i> will be <b>NULL</b>.
 
-### -param BaseOffset 
+### -param BaseOffset [in]
 
-[in]
+
 Specifies the base address of the module in the target's memory address space.  If this information is not available, <i>BaseOffset</i> will be <b>NULL</b>.
 
-### -param ModuleSize 
+### -param ModuleSize [in]
 
-[in]
+
 Specifies the module's image size in bytes.  If this information is not available, <i>ModuleSize</i> will be <b>NULL</b>.
 
-### -param ModuleName 
+### -param ModuleName [in, optional]
 
-[in, optional]
+
 Specifies the simplified module name that is used by the debugger engine.  In most cases, this matches the image file name excluding the extension. If this information is not available, <i>ModuleName</i> will be <b>NULL</b>.
 
-### -param ImageName 
+### -param ImageName [in, optional]
 
-[in, optional]
+
 Specifies the module's image file name, which can include the path.  If this information is not available, <i>ImageName</i> will be <b>NULL</b>.
 
-### -param CheckSum 
+### -param CheckSum [in]
 
-[in]
+
 Specifies the checksum of the module's image file.  If this information is not available, <i>CheckSum</i> will be <b>NULL</b>.
 
-### -param TimeDateStamp 
+### -param TimeDateStamp [in]
 
-[in]
+
 Specifies the time and date stamp of the module's image file.  If this information is not available, <i>TimeDateStamp</i> will be zero.
 
 ## -returns
@@ -96,3 +95,4 @@ This method is only called by the engine if the DEBUG_EVENT_LOAD_MODULE flag is 
 After calling this method, the engine will call <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugeventcallbackswide-changesymbolstate">IDebugEventCallbacksWide::ChangeSymbolState</a>, with the <i>Flags</i> parameter containing the bit flag DEBUG_CSS_LOADS.
 
 For more information about handling events, see <a href="/windows-hardware/drivers/debugger/monitoring-events">Monitoring Events</a>.
+

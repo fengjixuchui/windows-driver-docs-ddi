@@ -4,7 +4,6 @@ title: _DXVA_COPPStatusSignalingCmdData (dxva.h)
 description: The DXVA_COPPStatusSignalingCmdData structure describes how the signal that goes through the physical connector associated with the DirectX VA COPP device is protected.
 old-location: display\dxva_coppstatussignalingcmddata.htm
 tech.root: display
-ms.assetid: 3065dddc-e084-4273-93eb-62a51763e213
 ms.date: 05/10/2018
 keywords: ["DXVA_COPPStatusSignalingCmdData structure"]
 ms.keywords: DXVA_COPPStatusSignalingCmdData, DXVA_COPPStatusSignalingCmdData structure [Display Devices], _DXVA_COPPStatusSignalingCmdData, display.dxva_coppstatussignalingcmddata, dxva/DXVA_COPPStatusSignalingCmdData, dxvaref_6a90a0a1-2173-4698-9e3d-83db1d5062f2.xml
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - dxva.h
 api_name:
+ - _DXVA_COPPStatusSignalingCmdData
  - DXVA_COPPStatusSignalingCmdData
 ---
 
@@ -130,3 +130,4 @@ Specifies an array of additional 32-bit data. Not currently used.
 
 
 <a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_coppstatusoutput">DXVA_COPPStatusOutput</a>
+

@@ -4,7 +4,6 @@ title: _MSFC_TargetEvent (hbapiwmi.h)
 description: A WMI provider uses the MSFC_TargetEvent structure to report port events for the indicated adapter.
 old-location: storage\msfc_targetevent.htm
 tech.root: storage
-ms.assetid: e34e505c-74b1-45e4-9d9f-ba7cae111156
 ms.date: 03/29/2018
 keywords: ["MSFC_TargetEvent structure"]
 ms.keywords: "*PMSFC_TargetEvent, MSFC_TargetEvent, MSFC_TargetEvent structure [Storage Devices], PMSFC_TargetEvent, PMSFC_TargetEvent structure pointer [Storage Devices], _MSFC_TargetEvent, hbapiwmi/MSFC_TargetEvent, hbapiwmi/PMSFC_TargetEvent, storage.msfc_targetevent, structs-Fibre_3f8b9bd0-29b2-43f3-85ae-47324d168956.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hbapiwmi.h
 api_name:
+ - _MSFC_TargetEvent
+ - PMSFC_TargetEvent
  - MSFC_TargetEvent
 ---
 
@@ -69,3 +70,4 @@ Contains a worldwide name that indicates the remote port for which the event occ
 ## -see-also
 
 <a href="/windows-hardware/drivers/storage/event-types-qualifiers">EVENT_TYPE_QUALIFIERS</a>
+

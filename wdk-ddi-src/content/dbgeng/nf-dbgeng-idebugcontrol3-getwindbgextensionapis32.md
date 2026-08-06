@@ -4,7 +4,6 @@ title: IDebugControl3::GetWindbgExtensionApis32 (dbgeng.h)
 description: The GetWindbgExtensionApis32 method returns a structure that facilitates using the WdbgExts API.
 old-location: debugger\idebugcontrol_getwindbgextensionapis32.htm
 tech.root: debugger
-ms.assetid: 84661E3C-9AC7-4852-BABF-BFC0A793E83D
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::GetWindbgExtensionApis32"]
 ms.keywords: GetWindbgExtensionApis32, GetWindbgExtensionApis32 method [Windows Debugging], GetWindbgExtensionApis32 method [Windows Debugging],IDebugControl interface, GetWindbgExtensionApis32 method [Windows Debugging],IDebugControl2 interface, GetWindbgExtensionApis32 method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],GetWindbgExtensionApis32 method, IDebugControl2 interface [Windows Debugging],GetWindbgExtensionApis32 method, IDebugControl2::GetWindbgExtensionApis32, IDebugControl3 interface [Windows Debugging],GetWindbgExtensionApis32 method, IDebugControl3.GetWindbgExtensionApis32, IDebugControl3::GetWindbgExtensionApis32, IDebugControl::GetWindbgExtensionApis32, dbgeng/IDebugControl2::GetWindbgExtensionApis32, dbgeng/IDebugControl3::GetWindbgExtensionApis32, dbgeng/IDebugControl::GetWindbgExtensionApis32, debugger.idebugcontrol_getwindbgextensionapis32
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.GetWindbgExtensionApis32
- - IDebugControl2.GetWindbgExtensionApis32
- - IDebugControl3.GetWindbgExtensionApis32
+ - IDebugControl3::GetWindbgExtensionApis32
 ---
 
 # IDebugControl3::GetWindbgExtensionApis32
@@ -52,9 +49,9 @@ The <b>GetWindbgExtensionApis32</b> method returns a structure that facilitates 
 
 ## -parameters
 
-### -param Api 
+### -param Api [in, out]
 
-[in, out]
+
 Receives a WINDBG_EXTENSION_APIS32 structure.  This structure contains the functions used by the WdbgExts API.  The <b>nSize</b> member of this structure must be set to the size of the structure before it is passed to this method.
 
 ## -returns
@@ -117,3 +114,4 @@ For a list of the functions provided by the WdbgExts API, see <a href="/windows-
 
 
 <a href="/windows-hardware/drivers/debugger/wdbgexts-functions">WdbgExts Functions</a>
+

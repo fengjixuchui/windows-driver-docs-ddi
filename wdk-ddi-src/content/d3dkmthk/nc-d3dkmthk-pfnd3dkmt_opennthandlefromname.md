@@ -1,9 +1,8 @@
 ---
 UID: NC:d3dkmthk.PFND3DKMT_OPENNTHANDLEFROMNAME
 title: PFND3DKMT_OPENNTHANDLEFROMNAME (d3dkmthk.h)
-description: From a given graphics adapter name, opens an NT handle to the process.
+description: The PFND3DKMT_OPENNTHANDLEFROMNAME callback opens an NT handle for a graphics adapter that is specified by name.
 old-location: display\d3dkmtopennthandlefromname.htm
-ms.assetid: bcd33f64-7ad0-4e26-af73-e4f2b1b6e5fb
 ms.date: 05/10/2018
 keywords: ["PFND3DKMT_OPENNTHANDLEFROMNAME callback function"]
 ms.keywords: D3DKMTOpenNtHandleFromName, D3DKMTOpenNtHandleFromName callback function [Display Devices], PFND3DKMT_OPENNTHANDLEFROMNAME, PFND3DKMT_OPENNTHANDLEFROMNAME callback, d3dkmthk/D3DKMTOpenNtHandleFromName, display.d3dkmtopennthandlefromname
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
- - D3DKMTOpenNtHandleFromName
+ - PFND3DKMT_OPENNTHANDLEFROMNAME
 ---
 
 # PFND3DKMT_OPENNTHANDLEFROMNAME callback function
@@ -50,7 +49,7 @@ From a given graphics adapter name, opens an NT handle to the process.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in, out]
 
@@ -66,3 +65,4 @@ Returns one of the following values:
 |STATUS_INVALID_PARAMETER|Parameters were validated and determined to be incorrect.|
 
 This function might also return other NTSTATUS values.
+

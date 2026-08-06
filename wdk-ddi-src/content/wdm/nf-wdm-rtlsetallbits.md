@@ -4,7 +4,6 @@ title: RtlSetAllBits function (wdm.h)
 description: The RtlSetAllBits routine sets all bits in a given bitmap variable.
 old-location: kernel\rtlsetallbits.htm
 tech.root: kernel
-ms.assetid: a379a910-4712-4d77-af52-614a1b9cc511
 ms.date: 04/30/2018
 keywords: ["RtlSetAllBits function"]
 ms.keywords: RtlSetAllBits, RtlSetAllBits routine [Kernel-Mode Driver Architecture], k109_e7f7eecf-e845-455b-a94d-eccad1ce448a.xml, kernel.rtlsetallbits, wdm/RtlSetAllBits
@@ -50,10 +49,10 @@ The <b>RtlSetAllBits</b> routine sets all bits in a given bitmap variable.
 
 ## -parameters
 
-### -param BitMapHeader 
+### -param BitMapHeader [in]
 
-[in]
-A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
+
+A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
 ## -returns
 
@@ -65,7 +64,7 @@ Callers of <b>RtlSetAllBits</b> must be running at IRQL <= APC_LEVEL if the memo
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a>
+<a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a>
 
 
 

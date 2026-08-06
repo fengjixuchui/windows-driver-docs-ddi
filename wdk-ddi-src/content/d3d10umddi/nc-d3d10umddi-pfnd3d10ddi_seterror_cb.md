@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_SETERROR_CB
 title: PFND3D10DDI_SETERROR_CB (d3d10umddi.h)
 description: The pfnSetErrorCb function sets the return error code of a user-mode display driver's function.
 old-location: display\pfnseterrorcb.htm
-ms.assetid: 968b04a7-8869-410c-a6fc-83d57726858f
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_SETERROR_CB callback function"]
 ms.keywords: PFND3D10DDI_SETERROR_CB, PFND3D10DDI_SETERROR_CB callback, d3d10state_functions_1d57cbc9-ec37-47ce-ab4f-71535419375a.xml, d3d10umddi/pfnSetErrorCb, display.pfnseterrorcb, pfnSetErrorCb, pfnSetErrorCb callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - pfnSetErrorCb
+ - PFND3D10DDI_SETERROR_CB
 ---
 
 # PFND3D10DDI_SETERROR_CB callback function
@@ -50,13 +49,13 @@ The <b>pfnSetErrorCb</b> function sets the return error code of a user-mode disp
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hRuntimeDevice* [in]
 
 A handle to a context for the core Microsoft Direct3D 10 runtime. This handle is supplied to the driver in a call to the driver's <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdevice">CreateDevice(D3D10)</a> function.
 
-### -param Arg2
+### -param unnamedParam2
 
 *hResult* [in]
 
@@ -73,3 +72,4 @@ A user-mode display driver can call <b>pfnSetErrorCb</b> many times for each dri
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddi_corelayer_devicecallbacks">D3D10DDI_CORELAYER_DEVICECALLBACKS</a>
+

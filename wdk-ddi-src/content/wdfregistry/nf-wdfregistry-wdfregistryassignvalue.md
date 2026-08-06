@@ -4,7 +4,6 @@ title: WdfRegistryAssignValue function (wdfregistry.h)
 description: The WdfRegistryAssignValue method assigns specified data to a specified value name in the registry.
 old-location: wdf\wdfregistryassignvalue.htm
 tech.root: wdf
-ms.assetid: 3c7592ad-f4ed-496f-90bb-638f68efe4f7
 ms.date: 02/26/2018
 keywords: ["WdfRegistryAssignValue function"]
 ms.keywords: DFRegKeyObjectRef_b585a896-046f-4730-8f1d-bba4a2479772.xml, WdfRegistryAssignValue, WdfRegistryAssignValue method, kmdf.wdfregistryassignvalue, wdf.wdfregistryassignvalue, wdfregistry/WdfRegistryAssignValue
@@ -55,29 +54,29 @@ The <b>WdfRegistryAssignValue</b> method assigns specified data to a specified v
 
 ## -parameters
 
-### -param Key 
+### -param Key [in]
 
-[in]
+
 A handle to a registry-key object that represents an opened registry key.
 
-### -param ValueName 
+### -param ValueName [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a value name.
 
-### -param ValueType 
+### -param ValueType [in]
 
-[in]
+
 A value that identifies the data type. For a list of data type values, see the <b>Type</b> member of <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_value_basic_information">KEY_VALUE_BASIC_INFORMATION</a>.
 
-### -param ValueLength 
+### -param ValueLength [in]
 
-[in]
+
 The length, in bytes, of the buffer that <i>Value</i> points to.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 A pointer to a buffer that contains driver-supplied data.
 
 ## -returns

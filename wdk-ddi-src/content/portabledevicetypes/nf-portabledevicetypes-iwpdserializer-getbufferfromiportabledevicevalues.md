@@ -4,7 +4,6 @@ title: IWpdSerializer::GetBufferFromIPortableDeviceValues (portabledevicetypes.h
 description: Serializes a submitted IPortableDeviceValues interface to an allocated byte array. The byte array returned is allocated for the caller and should be freed by the caller using CoTaskMemFree.
 old-location: wpddk\iwpdserializer_getbufferfromiportabledevicevalues.htm
 tech.root: wpd_dk
-ms.assetid: 139a3c88-271e-4353-883e-9c582f7cdcd3
 ms.date: 02/15/2018
 keywords: ["IWpdSerializer::GetBufferFromIPortableDeviceValues"]
 ms.keywords: GetBufferFromIPortableDeviceValues, GetBufferFromIPortableDeviceValues method, GetBufferFromIPortableDeviceValues method,IWpdSerializer interface, IWpdSerializer interface,GetBufferFromIPortableDeviceValues method, IWpdSerializer.GetBufferFromIPortableDeviceValues, IWpdSerializer::GetBufferFromIPortableDeviceValues, IWpdSerializerGetBufferFromIPortableDeviceValues, portabledevicetypes/IWpdSerializer::GetBufferFromIPortableDeviceValues, wpddk.iwpdserializer_getbufferfromiportabledevicevalues
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IWpdSerializer.GetBufferFromIPortableDeviceValues
+ - IWpdSerializer::GetBufferFromIPortableDeviceValues
 ---
 
 # IWpdSerializer::GetBufferFromIPortableDeviceValues
@@ -51,19 +50,19 @@ Serializes a submitted <b>IPortableDeviceValues</b> interface to an allocated by
 
 ## -parameters
 
-### -param pSource 
+### -param pSource [in]
 
-[in]
+
 Pointer to an <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues">IPortableDeviceValues</a> interface to serialize.
 
-### -param ppBuffer 
+### -param ppBuffer [out]
 
-[out]
+
 Pointer to a <b>BYTE</b>* that contains the serialized data. Windows Portable Devices allocates this memory; the caller must free it by calling <b>CoTaskMemFree</b>.
 
-### -param pdwBufferSize 
+### -param pdwBufferSize [out]
 
-[out]
+
 Pointer to a <b>DWORD</b> that specifies the size of allocated buffer, in bytes.
 
 ## -returns
@@ -117,3 +116,4 @@ None.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iwpdserializer">IWpdSerializer Interface</a>
+

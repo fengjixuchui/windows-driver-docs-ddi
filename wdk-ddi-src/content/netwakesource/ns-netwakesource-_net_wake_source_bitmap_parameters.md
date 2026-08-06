@@ -3,17 +3,16 @@ UID: NS:netwakesource._NET_WAKE_SOURCE_BITMAP_PARAMETERS
 title: NET_WAKE_SOURCE_BITMAP_PARAMETERS (netwakesource.h)
 description: The NET_WAKE_SOURCE_BITMAP_PARAMETERS structure contains parameters for a wake-on-LAN (WoL) bitmap pattern wake source.
 tech.root: netvista
-ms.assetid: 2ebc685c-02ef-4640-955f-17b032f4b46a
 ms.date: 10/07/2019
 keywords: ["NET_WAKE_SOURCE_BITMAP_PARAMETERS structure"]
 ms.keywords: NET_WAKE_SOURCE_BITMAP_PARAMETERS, NET_WAKE_SOURCE_BITMAP_PARAMETERS,
 req.header: netwakesource.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: 
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - netwakesource.h
 api_name:
+ - _NET_WAKE_SOURCE_BITMAP_PARAMETERS
  - NET_WAKE_SOURCE_BITMAP_PARAMETERS
-product:
- - Windows
 ---
 
 # NET_WAKE_SOURCE_BITMAP_PARAMETERS structure
@@ -85,3 +83,4 @@ An upper-layer driver can specify a generic WOL pattern with the **Pattern** mem
 [**NET_WAKE_SOURCE_BITMAP_PARAMETERS_INIT**](../netwakesource/nf-netwakesource-net_wake_source_bitmap_parameters_init.md)
 
 [**NetWakeSourceGetBitmapParameters**](../netwakesource/nf-netwakesource-netwakesourcegetbitmapparameters.md)
+

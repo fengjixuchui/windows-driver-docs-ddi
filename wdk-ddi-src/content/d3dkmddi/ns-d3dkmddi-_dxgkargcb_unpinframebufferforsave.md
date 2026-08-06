@@ -1,15 +1,14 @@
 ---
 UID: NS:d3dkmddi._DXGKARGCB_UNPINFRAMEBUFFERFORSAVE
-title: _DXGKARGCB_UNPINFRAMEBUFFERFORSAVE (d3dkmddi.h)
-description: Argument used by the DxgkcbUnpinFrameBufferForSave callback function to release the mapping that was set by DxgkcbPinFrameBufferForSave.
-ms.assetid: 56070ab5-2945-498b-8565-c3bf51488bb4
-ms.date: 10/19/2018
+title: DXGKARGCB_UNPINFRAMEBUFFERFORSAVE (d3dkmddi.h)
+description: The DXGKARGCB_UNPINFRAMEBUFFERFORSAVE structure contains the arguments used by the DXGKCB_UNPINFRAMEBUFFERFORSAVE callback function to release the mapping that was set by DXGKCB_PINFRAMEBUFFERFORSAVE.
+ms.date: 07/22/2021
 keywords: ["DXGKARGCB_UNPINFRAMEBUFFERFORSAVE structure"]
 ms.keywords: _DXGKARGCB_UNPINFRAMEBUFFERFORSAVE, DXGKARGCB_UNPINFRAMEBUFFERFORSAVE,
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 10, version 1803 (WDDM 2.4)
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -34,26 +33,29 @@ api_location:
  - d3dkmddi.h
 api_name:
  - _DXGKARGCB_UNPINFRAMEBUFFERFORSAVE
-product:
- - Windows
+ - DXGKARGCB_UNPINFRAMEBUFFERFORSAVE
 ---
 
-# _DXGKARGCB_UNPINFRAMEBUFFERFORSAVE structure
-
+# DXGKARGCB_UNPINFRAMEBUFFERFORSAVE structure
 
 ## -description
 
-Argument used by the [DxgkcbUnpinFrameBufferForSave](nc-d3dkmddi-dxgkcb_unpinframebufferforsave.md) callback function to release the mapping that was set by [DxgkcbPinFrameBufferForSave](nc-d3dkmddi-dxgkcb_pinframebufferforsave.md).
+The **DXGKARGCB_UNPINFRAMEBUFFERFORSAVE** structure contains the arguments used by the [**DXGKCB_UNPINFRAMEBUFFERFORSAVE**](nc-d3dkmddi-dxgkcb_unpinframebufferforsave.md) callback function to release the mapping that was set by [**DXGKCB_PINFRAMEBUFFERFORSAVE**](nc-d3dkmddi-dxgkcb_pinframebufferforsave.md).
 
 ## -struct-fields
 
-### -field PhysicalAdapterIndex
+### -field PhysicalAdapterIndex [in]
 
 The index of the physical adapter.
 
+## -remarks
+
+See [IOMMU-based GPU isolation](/windows-hardware/drivers/display/iommu-based-gpu-isolation) for more information.
+
 ## -see-also
 
-[DxgkcbUnpinFrameBufferForSave callback function](nc-d3dkmddi-dxgkcb_unpinframebufferforsave.md)
-[DxgkcbPinFrameBufferForSave callback function](nc-d3dkmddi-dxgkcb_pinframebufferforsave.md)
-[DXGKARGCB_PINFRAMEBUFFERFORSAVE structure](ns-d3dkmddi-_dxgkargcb_pinframebufferforsave.md)
+[**DXGKCB_UNPINFRAMEBUFFERFORSAVE**](nc-d3dkmddi-dxgkcb_unpinframebufferforsave.md)
 
+[**DXGKCB_PINFRAMEBUFFERFORSAVE**](nc-d3dkmddi-dxgkcb_pinframebufferforsave.md)
+
+[**DXGKARGCB_PINFRAMEBUFFERFORSAVE**](ns-d3dkmddi-_dxgkargcb_pinframebufferforsave.md)

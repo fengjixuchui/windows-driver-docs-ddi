@@ -4,7 +4,6 @@ title: _WDF_DRIVER_CONFIG (wdfdriver.h)
 description: The WDF_DRIVER_CONFIG structure is an input parameter to WdfDriverCreate.
 old-location: wdf\wdf_driver_config.htm
 tech.root: wdf
-ms.assetid: 24197846-9664-4fc6-8578-5bcaf0e4a71c
 ms.date: 02/26/2018
 keywords: ["WDF_DRIVER_CONFIG structure"]
 ms.keywords: "*PWDF_DRIVER_CONFIG, DFDriverObjectRef_89306ddc-557c-4142-a26b-a120acdffed6.xml, PWDF_DRIVER_CONFIG, PWDF_DRIVER_CONFIG structure pointer, WDF_DRIVER_CONFIG, WDF_DRIVER_CONFIG structure, _WDF_DRIVER_CONFIG, kmdf.wdf_driver_config, wdf.wdf_driver_config, wdfdriver/PWDF_DRIVER_CONFIG, wdfdriver/WDF_DRIVER_CONFIG"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdfdriver.h
 api_name:
+ - _WDF_DRIVER_CONFIG
+ - PWDF_DRIVER_CONFIG
  - WDF_DRIVER_CONFIG
 ---
 
@@ -103,3 +104,4 @@ To initialize a WDF_DRIVER_CONFIG structure, drivers must call <a href="/windows
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate">WdfDriverCreate</a>
+

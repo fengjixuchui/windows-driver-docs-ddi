@@ -4,7 +4,6 @@ title: _WDF_DEVICE_POWER_NOTIFICATION_DATA (wdfdevice.h)
 description: The WDF_DEVICE_POWER_NOTIFICATION_DATA structure describes a state change within a device's power state machine.
 old-location: wdf\wdf_device_power_notification_data.htm
 tech.root: wdf
-ms.assetid: 23fb912b-58c2-4f76-8173-f4125174a149
 ms.date: 02/26/2018
 keywords: ["WDF_DEVICE_POWER_NOTIFICATION_DATA structure"]
 ms.keywords: DFDeviceObjectGeneralRef_afff2c28-e176-47c7-b1f2-8e8986b9f29d.xml, WDF_DEVICE_POWER_NOTIFICATION_DATA, WDF_DEVICE_POWER_NOTIFICATION_DATA structure, _WDF_DEVICE_POWER_NOTIFICATION_DATA, kmdf.wdf_device_power_notification_data, wdf.wdf_device_power_notification_data, wdfdevice/WDF_DEVICE_POWER_NOTIFICATION_DATA
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfdevice.h
 api_name:
+ - _WDF_DEVICE_POWER_NOTIFICATION_DATA
  - WDF_DEVICE_POWER_NOTIFICATION_DATA
 ---
 
@@ -49,6 +49,9 @@ api_name:
 ## -description
 
 <p class="CCE_Message">[Applies to KMDF only]</p>
+
+>[!NOTE]
+>This structure is for Microsoft internal use only.
 
 The WDF_DEVICE_POWER_NOTIFICATION_DATA structure describes a state change within a device's power state machine.
 
@@ -93,3 +96,4 @@ The <b>WDF_DEVICE_POWER_NOTIFICATION_DATA</b> structure is an input argument to 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitregisterpowerstatechangecallback">WdfDeviceInitRegisterPowerStateChangeCallback</a>
+

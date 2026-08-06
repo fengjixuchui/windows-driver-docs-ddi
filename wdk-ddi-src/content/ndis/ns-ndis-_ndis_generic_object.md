@@ -4,7 +4,6 @@ title: _NDIS_GENERIC_OBJECT (ndis.h)
 description: The NDIS_GENERIC_OBJECT structure defines a generic object which a software component can use to obtain an NDIS handle.
 old-location: netvista\ndis_generic_object.htm
 tech.root: netvista
-ms.assetid: 1e7af434-a6ad-44c8-a33d-adebb53b8e1d
 ms.date: 05/02/2018
 keywords: ["NDIS_GENERIC_OBJECT structure"]
 ms.keywords: "*PNDIS_GENERIC_OBJECT, NDIS_GENERIC_OBJECT, NDIS_GENERIC_OBJECT structure [Network Drivers Starting with Windows Vista], PNDIS_GENERIC_OBJECT, PNDIS_GENERIC_OBJECT structure pointer [Network Drivers Starting with Windows Vista], _NDIS_GENERIC_OBJECT, ndis/NDIS_GENERIC_OBJECT, ndis/PNDIS_GENERIC_OBJECT, ndis_object_ref_19f8706c-633c-4c32-9d86-17edc4e2ad12.xml, netvista.ndis_generic_object"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_GENERIC_OBJECT
+ - PNDIS_GENERIC_OBJECT
  - NDIS_GENERIC_OBJECT
 ---
 
@@ -58,7 +59,7 @@ The NDIS_GENERIC_OBJECT structure defines a generic object which a software comp
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      generic object structure (NDIS_GENERIC_OBJECT). NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_GENERIC_OBJECT, the 
@@ -104,7 +105,7 @@ Use the
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -113,3 +114,4 @@ Use the
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreegenericobject">NdisFreeGenericObject</a>
+

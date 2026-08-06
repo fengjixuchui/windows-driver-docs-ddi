@@ -1,11 +1,10 @@
 ---
 UID: NS:fltkernel._FLT_PARAMETERS
-title: _FLT_PARAMETERS (fltkernel.h)
+title: FLT_PARAMETERS (fltkernel.h)
 description: The FLT_PARAMETERS union defines, for a minifilter, the request-type-specific parameters associated with an I/O operation.
 old-location: ifsk\flt_parameters.htm
 tech.root: ifsk
-ms.assetid: 62aa20b7-ce5c-4d42-bce2-1d76a98887ed
-ms.date: 11/06/2019
+ms.date: 08/11/2022
 keywords: ["FLT_PARAMETERS union"]
 ms.keywords: "*PFLT_PARAMETERS, FLT_PARAMETERS, FLT_PARAMETERS union [Installable File System Drivers], FltSystemStructures_2ebb0ec7-76cc-49a3-b2ec-186f67369bbb.xml, PFLT_PARAMETERS, PFLT_PARAMETERS union pointer [Installable File System Drivers], _FLT_PARAMETERS, fltkernel/FLT_PARAMETERS, fltkernel/PFLT_PARAMETERS, ifsk.flt_parameters"
 req.header: fltkernel.h
@@ -42,10 +41,12 @@ api_type:
 api_location:
  - fltkernel.h
 api_name:
+ - _FLT_PARAMETERS
+ - PFLT_PARAMETERS
  - FLT_PARAMETERS
 ---
 
-# _FLT_PARAMETERS union
+# FLT_PARAMETERS union
 
 ## -description
 
@@ -103,6 +104,8 @@ The following I/O operations do not have parameters, and therefore do not have a
 - IRP_MJ_RELEASE_FOR_SECTION_SYNCHRONIZATION
 - IRP_MJ_SHUTDOWN
 - IRP_MJ_VOLUME_DISMOUNT
+
+Note that the terms "acquire" or "release" in some operation names, such as `IRP_MJ_ACQUIRE_FOR_CC_FLUSH` and `IRP_MJ_RELEASE_FOR_CC_FLUSH`, do not imply any guarantees that a minifilter will always see both operations. Just as with operations such as `IRP_MJ_CREATE` and `IRP_MJ_CLEANUP`, a minifilter may be prevented from observing the second operation by other factors, such as receiving an _[InstanceTeardownStartCallback](/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_instance_teardown_callback)_ before the second operation occurs.
 
 ## -see-also
 

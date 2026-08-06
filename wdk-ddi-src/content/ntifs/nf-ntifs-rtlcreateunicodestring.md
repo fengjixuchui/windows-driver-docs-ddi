@@ -4,14 +4,13 @@ title: RtlCreateUnicodeString function (ntifs.h)
 description: The RtlCreateUnicodeString routine creates a new counted Unicode string.
 old-location: ifsk\rtlcreateunicodestring.htm
 tech.root: ifsk
-ms.assetid: f101fc66-40a9-4077-b651-cef0a0e247d4
 ms.date: 04/16/2018
 keywords: ["RtlCreateUnicodeString function"]
 ms.keywords: RtlCreateUnicodeString, RtlCreateUnicodeString routine [Installable File System Drivers], ifsk.rtlcreateunicodestring, ntifs/RtlCreateUnicodeString, rtlref_8d7cd5ce-a1c9-48a0-86a9-86120954d328.xml
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -51,14 +50,14 @@ The <b>RtlCreateUnicodeString</b> routine creates a new counted Unicode string.
 
 ## -parameters
 
-### -param DestinationString 
+### -param DestinationString [out]
 
-[out]
+
 Pointer to the newly allocated and initialized Unicode string.
 
-### -param SourceString 
+### -param SourceString [in]
 
-[in]
+
 Pointer to a null-terminated Unicode string with which to initialize the new string.
 
 ## -returns

@@ -4,7 +4,6 @@ title: PFND3DDDI_DELETEPIXELSHADER (d3dumddi.h)
 description: The DeletePixelShader function cleans up driver-side resources that are associated with pixel shader code.
 old-location: display\deletepixelshader.htm
 tech.root: display
-ms.assetid: bc987531-d402-4f3b-a4e2-d71fe97f5400
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DELETEPIXELSHADER callback function"]
 ms.keywords: DeletePixelShader, DeletePixelShader callback function [Display Devices], PFND3DDDI_DELETEPIXELSHADER, PFND3DDDI_DELETEPIXELSHADER callback, UserModeDisplayDriver_Functions_2994cbd5-2661-40e3-bdcd-3b2bfc209c24.xml, d3dumddi/DeletePixelShader, display.deletepixelshader
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - DeletePixelShader
-product:
- - Windows
+ - PFND3DDDI_DELETEPIXELSHADER
 ---
 
 # PFND3DDDI_DELETEPIXELSHADER callback function
@@ -56,7 +53,7 @@ The <b>DeletePixelShader</b> function cleans up driver-side resources that are a
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hShaderHandle* [in]
 
@@ -77,3 +74,4 @@ The <b>DeletePixelShader</b> function notifies the driver about the deletion of 
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

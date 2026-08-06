@@ -4,7 +4,6 @@ title: ExInitializeRundownProtection function (wdm.h)
 description: The ExInitializeRundownProtection routine initializes run-down protection on a shared object.
 old-location: kernel\exinitializerundownprotection.htm
 tech.root: kernel
-ms.assetid: 59B9C222-1A03-4C04-9F29-D9EA47E5E298
 ms.date: 04/30/2018
 keywords: ["ExInitializeRundownProtection function"]
 ms.keywords: ExInitializeRundownProtection, ExInitializeRundownProtection routine [Kernel-Mode Driver Architecture], kernel.exinitializerundownprotection, wdm/ExInitializeRundownProtection
@@ -50,9 +49,9 @@ The <b>ExInitializeRundownProtection</b> routine initializes run-down protection
 
 ## -parameters
 
-### -param RunRef 
+### -param RunRef [out]
 
-[out]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/kernel/eprocess">EX_RUNDOWN_REF</a> structure that is to be initialized. The allocation must be 4-byte aligned on 32-bit platforms, and 8-byte aligned on 64-bit platforms. For more information, see Remarks.
 
 ## -remarks

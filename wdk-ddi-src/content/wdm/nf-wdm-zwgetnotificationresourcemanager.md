@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.ZwGetNotificationResourceManager
 title: ZwGetNotificationResourceManager function (wdm.h)
-description: The ZwGetNotificationResourceManager routine retrieves the next transaction notification from a specified resource manager's notification queue.
+description: Learn how the ZwGetNotificationResourceManager routine retrieves the next transaction notification from a specified resource manager's notification queue.
 old-location: kernel\zwgetnotificationresourcemanager.htm
 tech.root: kernel
-ms.assetid: 53892fd1-d83c-4b6e-9c39-2f64ba0ab310
 ms.date: 04/30/2018
 keywords: ["ZwGetNotificationResourceManager function"]
 ms.keywords: NtGetNotificationResourceManager, ZwGetNotificationResourceManager, ZwGetNotificationResourceManager routine [Kernel-Mode Driver Architecture], kernel.zwgetnotificationresourcemanager, ktm_ref_c0a3b128-d49c-4080-ae12-0081ab5a27e9.xml, wdm/NtGetNotificationResourceManager, wdm/ZwGetNotificationResourceManager
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - ZwGetNotificationResourceManager
- - NtGetNotificationResourceManager
 ---
 
 # ZwGetNotificationResourceManager function
@@ -51,24 +49,24 @@ The <b>ZwGetNotificationResourceManager</b> routine retrieves the next <a href="
 
 ## -parameters
 
-### -param ResourceManagerHandle 
+### -param ResourceManagerHandle [in]
 
-[in]
+
 A handle to a <a href="/windows-hardware/drivers/kernel/resource-manager-objects">resource manager object</a> that was obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateresourcemanager">ZwCreateResourceManager</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenresourcemanager">ZwOpenResourceManager</a>. The handle must have RESOURCEMANAGER_GET_NOTIFICATION access to the object.
 
-### -param TransactionNotification 
+### -param TransactionNotification [out]
 
-[out]
+
 A pointer to a caller-allocated buffer that receives information about the retrieved notification. The buffer must be large enough to contain a <a href="/previous-versions/windows/hardware/drivers/ff564813(v=vs.85)">TRANSACTION_NOTIFICATION</a> structure plus additional notification-specific arguments.
 
-### -param NotificationLength 
+### -param NotificationLength [in]
 
-[in]
+
 The length, in bytes, of the buffer that the <i>TransactionNotification </i>parameter points to.
 
-### -param Timeout 
+### -param Timeout [in]
 
-[in]
+
 A pointer to a value that specifies a relative or absolute time, in units of 100 nanoseconds. This pointer is optional and can be <b>NULL</b>.
 
 If the pointer is <b>NULL</b>, <b>ZwGetNotificationResourceManager</b> does not return until a transaction notification is available. If a time value is specified, <b>ZwGetNotificationResourceManager</b> returns when a notification is available or after the specified time elapses, whichever comes first.
@@ -79,19 +77,19 @@ A positive value specifies an absolute time, which is actually relative to 00:00
 
 If the caller specifies a zero value (instead of a <b>NULL</b> pointer), <b>ZwGetNotificationResourceManager</b> returns immediately, whether a notification is available or not.
 
-### -param ReturnLength 
+### -param ReturnLength [out, optional]
 
-[out, optional]
+
 An optional pointer to a variable. If this pointer is not <b>NULL</b>, and if the <i>NotificationLength</i> parameter's value is too small, <b>ZwGetNotificationResourceManager</b> supplies the required length in the variable and returns STATUS_BUFFER_TOO_SMALL.
 
-### -param Asynchronous 
+### -param Asynchronous [in]
 
-[in]
+
 A ULONG value that must be zero. <b>ZwGetNotificationResourceManager</b> does not support asynchronous notifications. Use <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-tmenablecallbacks">TmEnableCallbacks</a> to enable asynchronous notifications.
 
-### -param AsynchronousContext 
+### -param AsynchronousContext [in, optional]
 
-[in, optional]
+
 A pointer to a ULONG value. This pointer must be <b>NULL</b>.
 
 ## -returns
@@ -198,3 +196,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenresourcemanager">ZwOpenResourceManager</a>
+

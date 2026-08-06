@@ -4,7 +4,6 @@ title: IDebugControl3::GetNumberEvents (dbgeng.h)
 description: The GetNumberEvents method returns the number of events for the current target, if the number of events is fixed.
 old-location: debugger\getnumberevents.htm
 tech.root: debugger
-ms.assetid: fb570110-a0a5-4a95-9a26-c4e4ada309b2
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::GetNumberEvents"]
 ms.keywords: GetNumberEvents, GetNumberEvents method [Windows Debugging], GetNumberEvents method [Windows Debugging],IDebugControl3 interface, IDebugControl3 interface [Windows Debugging],GetNumberEvents method, IDebugControl3.GetNumberEvents, IDebugControl3::GetNumberEvents, IDebugControl_520cbec0-e8b3-49d1-9938-a8f496585758.xml, dbgeng/IDebugControl3::GetNumberEvents, debugger.getnumberevents
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl3.GetNumberEvents
+ - IDebugControl3::GetNumberEvents
 ---
 
 # IDebugControl3::GetNumberEvents
@@ -50,9 +49,9 @@ The <b>GetNumberEvents</b> method returns the number of <a href="/windows-hardwa
 
 ## -parameters
 
-### -param Events 
+### -param Events [out]
 
-[out]
+
 Receives the number of events stored in the target.  If the target offers multiple events, <i>Events</i> will be set to the number of events available.  Otherwise, <i>Events</i> will be set to one.
 
 ## -returns
@@ -107,3 +106,4 @@ For more information, see the topic <a href="/windows-hardware/drivers/debugger/
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setnexteventindex">SetNextEventIndex</a>
+

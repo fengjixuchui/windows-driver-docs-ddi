@@ -4,7 +4,6 @@ title: FILTER_DIRECT_OID_REQUEST_COMPLETE (ndis.h)
 description: NDIS calls the FilterDirectOidRequestComplete function to complete a filter driver direct OID request that queried or set information in an underlying driver.Note  You must declare the function by using the FILTER_DIRECT_OID_REQUEST_COMPLETE type.
 old-location: netvista\filterdirectoidrequestcomplete.htm
 tech.root: netvista
-ms.assetid: a97c86e9-4fd9-4e2f-9787-4fa19c38a69b
 ms.date: 05/02/2018
 keywords: ["FILTER_DIRECT_OID_REQUEST_COMPLETE callback function"]
 ms.keywords: FILTER_DIRECT_OID_REQUEST_COMPLETE, FILTER_DIRECT_OID_REQUEST_COMPLETE callback, FilterDirectOidRequestComplete, FilterDirectOidRequestComplete callback function [Network Drivers Starting with Windows Vista], ndis/FilterDirectOidRequestComplete, ndis_request_direct_ref_7c57d5c9-2a37-4602-b94e-df700652b1a9.xml, netvista.filterdirectoidrequestcomplete
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - FilterDirectOidRequestComplete
+ - FILTER_DIRECT_OID_REQUEST_COMPLETE
 ---
 
 # FILTER_DIRECT_OID_REQUEST_COMPLETE callback function
@@ -54,25 +53,25 @@ NDIS calls the
 
 ## -parameters
 
-### -param FilterModuleContext 
+### -param FilterModuleContext [in]
 
-[in]
+
 A handle to the context area for the filter module. The filter driver created and initialized this
      context area in the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-filter_attach">FilterAttach</a> function.
 
-### -param OidRequest 
+### -param OidRequest [in]
 
-[in]
+
 A pointer to the 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure that the filter
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure that the filter
      driver previously passed to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfdirectoidrequest">
      NdisFDirectOidRequest</a> function.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 The final status of the request that an underlying driver or NDIS set. This parameter determines
      what 
      <i>FilterDirectOidRequestComplete</i> does with the information at 
@@ -101,7 +100,7 @@ If a filter driver forwarded a request that it received in the
     NdisFDirectOidRequestComplete</a> function. In this case, the filter driver must call 
     <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreecloneoidrequest">NdisFreeCloneOidRequest</a>, to free
     the 
-    <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure, before it calls    
+    <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure, before it calls    
     <b>NdisFDirectOidRequestComplete</b>.
 
 A filter driver should keep track of requests that it originates and ensure that it does not call 
@@ -149,7 +148,7 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 
@@ -167,3 +166,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfreecloneoidrequest">NdisFreeCloneOidRequest</a>
+

@@ -3,7 +3,6 @@ UID: NF:packet.NetPacketIsIpv4
 title: NetPacketIsIpv4 function (packet.h)
 description: The NetPacketIsIpv4 function determines if a NET_PACKET is an IPv4 packet. This function is reserved for system use. Do not call this function from your code.
 tech.root: netvista
-ms.assetid: 2a7f93ae-f0a5-430f-adbb-e452ea9aa3ee
 ms.date: 01/30/2019
 keywords: ["NetPacketIsIpv4 function"]
 ms.keywords: NetPacketIsIpv4
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.29
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -28,13 +27,13 @@ targetos: Windows
 f1_keywords:
  - NetPacketIsIpv4
  - packet/NetPacketIsIpv4
-topictype:
+topic_type:
  - apiref
-apitype:
+api_type:
  - DllExport
-apilocation:
+api_location:
  - NtosKrnl.exe
-apiname:
+api_name:
  - NetPacketIsIpv4
 ---
 

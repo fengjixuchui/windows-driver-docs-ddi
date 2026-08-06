@@ -4,7 +4,6 @@ title: PFND3DDDI_CREATEQUERY (d3dumddi.h)
 description: The CreateQuery function creates driver-side resources for a query that the Microsoft Direct3D runtime subsequently issues for processing.
 old-location: display\createquery.htm
 tech.root: display
-ms.assetid: ac63b77b-2704-4d5b-bf1d-9d85e8a1e336
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CREATEQUERY callback function"]
 ms.keywords: CreateQuery, CreateQuery callback function [Display Devices], PFND3DDDI_CREATEQUERY, PFND3DDDI_CREATEQUERY callback, UserModeDisplayDriver_Functions_b398e152-6530-4dcb-9665-ef45ad3d985b.xml, d3dumddi/CreateQuery, display.createquery
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - CreateQuery
-product:
- - Windows
+ - PFND3DDDI_CREATEQUERY
 ---
 
 # PFND3DDDI_CREATEQUERY callback function
@@ -56,7 +53,7 @@ The <b>CreateQuery</b> function creates driver-side resources for a query that t
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -106,3 +103,4 @@ For more information about issue query states, see <a href="/windows-hardware/dr
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_issuequeryflags">D3DDDI_ISSUEQUERYFLAGS</a>
+

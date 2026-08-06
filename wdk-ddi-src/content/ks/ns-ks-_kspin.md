@@ -4,7 +4,6 @@ title: _KSPIN (ks.h)
 description: The KSPIN structure describes an instantiated pin.
 old-location: stream\kspin.htm
 tech.root: stream
-ms.assetid: 0d290872-0944-4599-9deb-9a4f7b2df0e5
 ms.date: 04/23/2018
 keywords: ["KSPIN structure"]
 ms.keywords: "*PKSPIN, KSPIN, KSPIN structure [Streaming Media Devices], PKSPIN, PKSPIN structure pointer [Streaming Media Devices], _KSPIN, avstruct_9453feff-ba40-4f54-bdb6-07f4f31548aa.xml, ks/KSPIN, ks/PKSPIN, stream.kspin"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - _KSPIN
+ - PKSPIN
  - KSPIN
 ---
 
@@ -80,11 +81,11 @@ This member specifies a Boolean value that, if <b>TRUE</b>, indicates that the c
 
 ### -field ConnectionInterface
 
-This member contains a <a href="/previous-versions/ff563537(v=vs.85)">KSPIN_INTERFACE</a> structure that identifies the interface being used for the connection. This information is supplied by the graph builder when the pin is created.
+This member contains a <a href="/windows-hardware/drivers/stream/kspin-interface-structure">KSPIN_INTERFACE</a> structure that identifies the interface being used for the connection. This information is supplied by the graph builder when the pin is created.
 
 ### -field ConnectionMedium
 
-This member contains a <a href="/previous-versions/ff563538(v=vs.85)">KSPIN_MEDIUM</a> structure that identifies the connection medium this pin should use. This information is supplied by the graph builder when the pin is created.
+This member contains a <a href="/windows-hardware/drivers/stream/kspin-medium-structure">KSPIN_MEDIUM</a> structure that identifies the connection medium this pin should use. This information is supplied by the graph builder when the pin is created.
 
 ### -field ConnectionPriority
 
@@ -147,3 +148,4 @@ Also see <a href="/windows-hardware/drivers/stream/object-bags">Object Bags</a>.
 
 
 <a href="/windows-hardware/drivers/ddi/ks/nf-ks-kscompletependingrequest">KsCompletePendingRequest</a>
+

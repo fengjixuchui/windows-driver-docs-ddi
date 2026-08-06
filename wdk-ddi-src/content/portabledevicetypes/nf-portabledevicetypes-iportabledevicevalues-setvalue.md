@@ -4,7 +4,6 @@ title: IPortableDeviceValues::SetValue (portabledevicetypes.h)
 description: Adds a new value or overwrites an existing one.
 old-location: wpddk\iportabledevicevalues_setvalue.htm
 tech.root: wpd_dk
-ms.assetid: 43670b44-7554-4cef-9b8d-aa66c16edf13
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::SetValue"]
 ms.keywords: IPortableDeviceValues interface,SetValue method, IPortableDeviceValues.SetValue, IPortableDeviceValues::SetValue, IPortableDeviceValuesSetValue, SetValue, SetValue method, SetValue method,IPortableDeviceValues interface, portabledevicetypes/IPortableDeviceValues::SetValue, wpddk.iportabledevicevalues_setvalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.SetValue
+ - IPortableDeviceValues::SetValue
 ---
 
 # IPortableDeviceValues::SetValue
@@ -51,14 +50,14 @@ Adds a new value or overwrites an existing one.
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> that specifies the item to create or overwrite.
 
-### -param pValue 
+### -param pValue [in]
 
-[in]
+
 A <b>PROPVARIANT</b> that specifies the new value. The SDK copies the value, so the caller can release the local variable by calling <b>PropVariantClear</b> after calling this method.
 
 ## -returns
@@ -102,3 +101,4 @@ If an existing value has the same key that is specified by the <i>key</i> parame
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-removevalue">IPortableDeviceValues::RemoveValue</a>
+

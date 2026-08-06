@@ -2,7 +2,6 @@
 UID: NF:d3dkmthk.D3DKMTSetHwProtectionTeardownRecovery
 title: D3DKMTSetHwProtectionTeardownRecovery function (d3dkmthk.h)
 description: Sets the hardware protection tear down recovery.
-ms.assetid: 9a3f4fb2-ba8a-4aa9-80f5-76eecafdf515
 ms.date: 10/19/2018
 keywords: ["D3DKMTSetHwProtectionTeardownRecovery function"]
 ms.keywords: D3DKMTSetHwProtectionTeardownRecovery
@@ -50,7 +49,7 @@ Sets the hardware protection tear down recovery.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_SETHWPROTECTIONTEARDOWNRECOVERY](ns-d3dkmthk-_d3dkmt_sethwprotectionteardownrecovery.md) structure.
 

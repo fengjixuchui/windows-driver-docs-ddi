@@ -4,7 +4,6 @@ title: RxFinalizeNetRoot function (fcb.h)
 description: RxFinalizeNetRoot finalizes the given NET_ROOT structure. The caller must have an exclusive lock on the netname table associated with the device object.
 old-location: ifsk\rxfinalizenetroot.htm
 tech.root: ifsk
-ms.assetid: f0566902-b85b-4676-9f8f-67749ce2060a
 ms.date: 04/16/2018
 keywords: ["RxFinalizeNetRoot function"]
 ms.keywords: RxFinalizeNetRoot, RxFinalizeNetRoot function [Installable File System Drivers], fcb/RxFinalizeNetRoot, ifsk.rxfinalizenetroot, rxref_66fb454b-96a0-401b-b184-0c24510bfaf6.xml
@@ -50,22 +49,22 @@ api_name:
 
 ## -parameters
 
-### -param ThisNetRoot 
+### -param ThisNetRoot [out]
 
-[out]
+
 A pointer to the NET_ROOT structure to finalize.
 
-### -param RecursiveFinalize 
+### -param RecursiveFinalize [in]
 
-[in]
+
 The value indicating whether the finalization should be done recursively.
 
-### -param ForceFinalize 
+### -param ForceFinalize [in]
 
-[in]
+
 The value indicating whether the finalization should be forced, regardless of the reference count. 
 
-If <i>ForceFinalize</i> is <b>FALSE</b>, then the <b>NodeReferenceCount</b> member of the NET_ROOT strcuture pointed to by <i>ThisNetRoot </i>must be 1 for the NET_ROOT to be finalized.
+If <i>ForceFinalize</i> is <b>FALSE</b>, then the <b>NodeReferenceCount</b> member of the NET_ROOT structure pointed to by <i>ThisNetRoot </i>must be 1 for the NET_ROOT to be finalized.
 
 ## -returns
 
@@ -77,7 +76,7 @@ The <b>RxFinalizeNetRoot</b> routine is not normally called by network mini-redi
 
 Before calling <b>RxFinalizeNetRoot</b>, a lock on the netname table associated with the device object must be acquired in exclusive mode. 
 
-If the <i>RecursiveFinalize</i> parameter is <b>TRUE</b>, then <b>RxFinalizeNetRoot</b> will purge any orphaned FCB structures associated with this NET_ROOT. These ophaned FCBs are structures where the <b>FcbState</b> member has the FCB_STATE_ORPHANED flag set on.
+If the <i>RecursiveFinalize</i> parameter is <b>TRUE</b>, then <b>RxFinalizeNetRoot</b> will purge any orphaned FCB structures associated with this NET_ROOT. These orphaned FCBs are structures where the <b>FcbState</b> member has the FCB_STATE_ORPHANED flag set on.
 
 ## -see-also
 

@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_102
+UID: NS:ksmedia.KSPROPERTY_TUNER_STANDARD_MODE_S
 title: KSPROPERTY_TUNER_STANDARD_MODE_S (ksmedia.h)
 description: The KSPROPERTY_TUNER_STANDARD_MODE_S structure describes whether the tuning device can identify the tuner standard from the signal itself.
 old-location: stream\ksproperty_tuner_standard_mode_s.htm
 tech.root: stream
-ms.assetid: 5f725332-155d-484f-8eaf-b45e0d7413e7
 ms.date: 04/30/2019
 keywords: ["KSPROPERTY_TUNER_STANDARD_MODE_S structure"]
 ms.keywords: "*PKSPROPERTY_TUNER_STANDARD_MODE_S, KSPROPERTY_TUNER_STANDARD_MODE_S, KSPROPERTY_TUNER_STANDARD_MODE_S structure [Streaming Media Devices], PKSPROPERTY_TUNER_STANDARD_MODE_S, PKSPROPERTY_TUNER_STANDARD_MODE_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_TUNER_STANDARD_MODE_S, ksmedia/PKSPROPERTY_TUNER_STANDARD_MODE_S, stream.ksproperty_tuner_standard_mode_s, vidcapstruct_5b923a0a-26a2-4ef4-82d7-de7b3c3b67d0.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_TUNER_STANDARD_MODE_S
  - KSPROPERTY_TUNER_STANDARD_MODE_S
 ---
 
@@ -54,7 +54,7 @@ The KSPROPERTY_TUNER_STANDARD_MODE_S structure describes whether the tuning devi
 
 ### -field Property
 
-Specifies an initialized <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+Specifies an initialized <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 ### -field AutoDetect
 
@@ -62,7 +62,7 @@ A Boolean value that indicates whether the tuning device can automatically detec
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -71,3 +71,4 @@ A Boolean value that indicates whether the tuning device can automatically detec
 
 
 <a href="/windows-hardware/drivers/stream/propsetid-tuner">PROPSETID_TUNER</a>
+

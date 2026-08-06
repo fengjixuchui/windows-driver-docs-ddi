@@ -4,7 +4,6 @@ title: VideoPortSetBusData function (video.h)
 description: The VideoPortSetBusData function sets bus-configuration data for an adapter on a dynamically configurable I/O bus with a published, standard interface.
 old-location: display\videoportsetbusdata.htm
 tech.root: display
-ms.assetid: 2a9ce391-718e-4be0-9699-7612b63d31f0
 ms.date: 05/10/2018
 keywords: ["VideoPortSetBusData function"]
 ms.keywords: VideoPortSetBusData, VideoPortSetBusData function [Display Devices], VideoPort_Functions_e7db4c76-eae1-4e06-9969-1e2b8fc71faf.xml, display.videoportsetbusdata, video/VideoPortSetBusData
@@ -62,9 +61,9 @@ Specifies the type of bus data to be set. Currently, its value can be one of <b>
 
 For a <i>BusDataType</i> value of <b>Cmos</b>, specifies the location of the device on the bus. This parameter should be zero for all other bus types.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to a caller-supplied storage area with configuration information specific to <i>BusDataType</i>.
 
 When <b>PCIConfiguration</b> is specified, the buffer contains some or all of the <a href="/previous-versions/windows/hardware/drivers/ff537455(v=vs.85)">PCI_COMMON_CONFIG</a> information for the given <i>SlotNumber</i>. The specified <i>Offset</i> and <i>Length</i> determine how much information is supplied.

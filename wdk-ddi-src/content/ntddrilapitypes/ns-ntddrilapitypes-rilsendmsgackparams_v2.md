@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILSENDMSGACKPARAMS_V2
 title: RILSENDMSGACKPARAMS_V2 (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILSENDMSGACKPARAMS_V2 structure in your code."
 old-location: netvista\rilsendmsgackparams_v2.htm
 tech.root: netvista
-ms.assetid: 3c05c1a0-339e-447f-b0df-18303ee63f98
 ms.date: 05/02/2018
 keywords: ["RILSENDMSGACKPARAMS_V2 structure"]
 ms.keywords: "*LPRILSENDMSGACKPARAMS, RILSENDMSGACKPARAMS, RILSENDMSGACKPARAMS_V2, RILSENDMSGACKPARAMS_V2 structure [Network Drivers Starting with Windows Vista], netvista.rilsendmsgackparams_v2, ntddrilapitypes/RILSENDMSGACKPARAMS_V2"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSENDMSGACKPARAMS_V2
+ - LPRILSENDMSGACKPARAMS
 ---
 
 # RILSENDMSGACKPARAMS_V2 structure (ntddrilapitypes.h)

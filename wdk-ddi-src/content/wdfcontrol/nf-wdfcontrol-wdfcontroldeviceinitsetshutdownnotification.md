@@ -4,7 +4,6 @@ title: WdfControlDeviceInitSetShutdownNotification function (wdfcontrol.h)
 description: The WdfControlDeviceInitSetShutdownNotification method sets shutdown notification information for a control device object.
 old-location: wdf\wdfcontroldeviceinitsetshutdownnotification.htm
 tech.root: wdf
-ms.assetid: 43a5a017-f5de-4906-acbb-96419b4a3f1c
 ms.date: 02/26/2018
 keywords: ["WdfControlDeviceInitSetShutdownNotification function"]
 ms.keywords: DFDeviceObjectControllerDevObjRef_ee736de4-6e27-46d9-8f83-40d7368c960a.xml, WdfControlDeviceInitSetShutdownNotification, WdfControlDeviceInitSetShutdownNotification method, kmdf.wdfcontroldeviceinitsetshutdownnotification, wdf.wdfcontroldeviceinitsetshutdownnotification, wdfcontrol/WdfControlDeviceInitSetShutdownNotification
@@ -53,19 +52,19 @@ The <b>WdfControlDeviceInitSetShutdownNotification</b> method sets shutdown noti
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure that the driver obtained by calling <a href="/windows-hardware/drivers/ddi/wdfcontrol/nf-wdfcontrol-wdfcontroldeviceinitallocate">WdfControlDeviceInitAllocate</a>.
 
-### -param Notification 
+### -param Notification [in]
 
-[in]
+
 A pointer to the driver's <a href="/windows-hardware/drivers/ddi/wdfcontrol/nc-wdfcontrol-evt_wdf_device_shutdown_notification">EvtDeviceShutdownNotification</a> event callback function.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 One or more <a href="/windows-hardware/drivers/ddi/wdfcontrol/ne-wdfcontrol-_wdf_device_shutdown_flags">WDF_DEVICE_SHUTDOWN_FLAGS</a>-typed flags that indicate when the <a href="/windows-hardware/drivers/ddi/wdfcontrol/nc-wdfcontrol-evt_wdf_device_shutdown_notification">EvtDeviceShutdownNotification</a> callback function will be called.
 
 ## -remarks

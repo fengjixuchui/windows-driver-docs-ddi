@@ -4,7 +4,6 @@ title: _USBFN_CLASS_INTERFACE (usbfnbase.h)
 description: Describes an interface and its endpoints.
 old-location: buses\usbfn_class_interface.htm
 tech.root: usbref
-ms.assetid: D7173157-D532-4E71-A4E5-55A3B9626DB8
 ms.date: 05/07/2018
 keywords: ["USBFN_CLASS_INTERFACE structure"]
 ms.keywords: "*PUSBFN_CLASS_INTERFACE, PUSBFN_CLASS_INTERFACE, PUSBFN_CLASS_INTERFACE structure pointer [Buses], USBFN_CLASS_INTERFACE, USBFN_CLASS_INTERFACE structure [Buses], _USBFN_CLASS_INTERFACE, buses.usbfn_class_interface, usbfnbase/PUSBFN_CLASS_INTERFACE, usbfnbase/USBFN_CLASS_INTERFACE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - usbfnbase.h
 api_name:
+ - _USBFN_CLASS_INTERFACE
+ - PUSBFN_CLASS_INTERFACE
  - USBFN_CLASS_INTERFACE
 ---
 
@@ -69,3 +70,4 @@ An array of <a href="/windows-hardware/drivers/ddi/usbfnbase/ns-usbfnbase-_usbfn
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/usbfnbase/ns-usbfnbase-_usbfn_pipe_information">USBFN_PIPE_INFORMATION</a>
+

@@ -4,7 +4,6 @@ title: IDebugEventCallbacksWide::GetInterestMask (dbgeng.h)
 description: The GetInterestMask callback method is called to determine which events the IDebugEventCallbacksWide object is interested in. The engine calls GetInterestMask when the object is registered with a client by using SetEventCallbacks.
 old-location: debugger\idebugeventcallbackswide_getinterestmask.htm
 tech.root: debugger
-ms.assetid: b1e62ae3-4a3d-42db-b7fe-87d1a7e0b438
 ms.date: 05/03/2018
 keywords: ["IDebugEventCallbacksWide::GetInterestMask"]
 ms.keywords: GetInterestMask, GetInterestMask method [Windows Debugging], GetInterestMask method [Windows Debugging],IDebugEventCallbacksWide interface, IDebugEventCallbacksWide interface [Windows Debugging],GetInterestMask method, IDebugEventCallbacksWide.GetInterestMask, IDebugEventCallbacksWide::GetInterestMask, dbgeng/IDebugEventCallbacksWide::GetInterestMask, debugger.idebugeventcallbackswide_getinterestmask
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugEventCallbacksWide.GetInterestMask
+ - IDebugEventCallbacksWide::GetInterestMask
 ---
 
 # IDebugEventCallbacksWide::GetInterestMask
@@ -50,9 +49,9 @@ The <b>GetInterestMask</b> callback method is called to determine which <a href=
 
 ## -parameters
 
-### -param Mask 
+### -param Mask [out]
 
-[out]
+
 Receives a bitmask that indicates which events the object is interested in.  The engine will call only those methods that correspond to the bit flags set by <b>GetInterestMask</b>.  For a description of the bit flags and their corresponding methods, see <a href="/previous-versions/ff541478(v=vs.85)">DEBUG_EVENT_XXX</a>.
 
 ## -returns
@@ -62,3 +61,4 @@ The return value S_OK indicates the method was successful.  All other return val
 ## -remarks
 
 For more information about handling events, see <a href="/windows-hardware/drivers/debugger/monitoring-events">Monitoring Events</a>.
+

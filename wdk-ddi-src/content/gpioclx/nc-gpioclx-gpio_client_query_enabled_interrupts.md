@@ -4,7 +4,6 @@ title: GPIO_CLIENT_QUERY_ENABLED_INTERRUPTS (gpioclx.h)
 description: The CLIENT_QueryEnabledInterrupts event callback function queries the state of a set of general-purpose I/O (GPIO) pins to determine which pins are both configured as interrupt inputs and enabled for interrupts.
 old-location: gpio\client_queryenabledinterrupts.htm
 tech.root: GPIO
-ms.assetid: 2F09006A-EFC6-4A38-AC5D-661DA48155FA
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_QUERY_ENABLED_INTERRUPTS callback function"]
 ms.keywords: CLIENT_QueryEnabledInterrupts, CLIENT_QueryEnabledInterrupts callback, CLIENT_QueryEnabledInterrupts callback function [Parallel Ports], GPIO.client_queryenabledinterrupts, GPIO_CLIENT_QUERY_ENABLED_INTERRUPTS, gpioclx/CLIENT_QueryEnabledInterrupts
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_QueryEnabledInterrupts
+ - GPIO_CLIENT_QUERY_ENABLED_INTERRUPTS
 ---
 
 # GPIO_CLIENT_QUERY_ENABLED_INTERRUPTS callback function
@@ -50,14 +49,14 @@ The <i>CLIENT_QueryEnabledInterrupts</i> event callback function queries the sta
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param QueryEnabledParameters 
+### -param QueryEnabledParameters [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_query_enabled_interrupts_parameters">GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS</a> structure. Before calling this function, the caller writes a bank ID to the <b>BankId</b> member of this structure to specify which bank of GPIO pins to query. If successful, the function writes a mask value to the <b>EnabledMask</b> member of this structure to indicate which interrupts are enabled in the specified bank.
 
 ## -returns
@@ -126,3 +125,4 @@ The GPIO_CLIENT_QUERY_ENABLED_INTERRUPTS function type is defined in the Gpioclx
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_query_enabled_interrupts_parameters">GPIO_QUERY_ENABLED_INTERRUPTS_PARAMETERS</a>
+

@@ -4,7 +4,6 @@ title: HW_BUILDIO (storport.h)
 description: The HwStorBuildIo routine processes the SRB with unsynchronized access to shared system data structures before passing it to HwStorStartIo.
 old-location: storage\hwstorbuildio.htm
 tech.root: storage
-ms.assetid: ebbb8289-5996-4d99-98b6-e95fd9dc7ec9
 ms.date: 03/29/2018
 keywords: ["HW_BUILDIO callback function"]
 ms.keywords: HW_BUILDIO, HwStorBuildIo, HwStorBuildIo routine [Storage Devices], storage.hwstorbuildio, stormini_3411fed2-32e6-4a3a-a9c3-0bbe0bb514ca.xml, storport/HwStorBuildIo
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Storport.h
 api_name:
- - HwStorBuildIo
+ - HW_BUILDIO
 ---
 
 # HW_BUILDIO callback function
@@ -65,7 +64,7 @@ A pointer to the SCSI request block (SRB) to be processed.
 
 The name **HwStorBuildIo** is just a placeholder for the miniport function that is pointed to by the **HwBuildIo** member in the [**HW_INITIALIZATION_DATA**](ns-storport-_hw_initialization_data-r1.md) structure. The actual prototype of this routine is defined in *Storport.h* as follows:
 
-```cpp
+```c
 typedef
 BOOLEAN
 HW_BUILDIO (
@@ -74,7 +73,7 @@ HW_BUILDIO (
   );
 ```
 
-The port driver calls the **HwStorBuildIo** routine at DISPATCH IRQL without holding any spin locks. Because of this, memory allocation using [**StorPortAllocatePool**](nf-storport-storportallocatepool.md) and mutual exclusion via [**StorPortAcquireSpinLock**](nf-storport-storportacquirespinlock.md) are allowed in **HwStorBuildIo**. In a multiprocessor environment, more than one **HwStorBuildIo** can be active at a time, so the miniport driver is required to synchronize access to system resources, which may be in contention if more than one instance of  **HwStorBuildIo** is active at any given time.
+The port driver calls the **HwStorBuildIo** routine at DISPATCH IRQL without holding any spin locks. Because of this, memory allocation using [**StorPortAllocatePool**](nf-storport-storportallocatepool.md) and mutual exclusion via [**StorPortAcquireSpinLock**](nf-storport-storportacquirespinlock.md) are allowed in **HwStorBuildIo**. In a multiprocessor environment, more than one **HwStorBuildIo** can be active at a time, so the miniport driver is required to synchronize access to system resources, which may be in contention if more than one instance of **HwStorBuildIo** is active at any given time.
 
 By completed time-consuming I/O setup activities in **HwStorBuildIo** instead of in [**HwStorStartIo**](nc-storport-hw_startio.md), the miniport driver enables greater I/O concurrency and therefore improves I/O throughput. For highest performance, miniport drivers are expected to do as much preprocessing as possible in **HwStorBuildIo** so that it can send requests to the HBA via **HwStorStartIo** in as short amount of time as possible. Preprocessed data and state can be stored in either the *DeviceExtension* or *SrbExtension* structures. Only modifications to unique portions of the *DeviceExtension* must occur since no locks are held. **HwStorBuildIo** and **HwStorStartIo** receive the following Srb function types:
 
@@ -120,17 +119,17 @@ For more information about what you can and cannot do safely in this miniport dr
 
 ### Examples
 
-To define an **HwStorBuildIo** callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps [Code Analysis for Drivers](/windows-hardware/drivers/devtest/code-analysis-for-drivers), [Static Driver Verifier](/windows-hardware/drivers/devtest/static-driver-verifier) (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.
+To define a **HwStorBuildIo** callback function, you must first provide a function declaration that identifies the type of callback function you’re defining. Windows provides a set of callback function types for drivers. Declaring a function using the callback function types helps [Code Analysis for Drivers](/windows-hardware/drivers/devtest/code-analysis-for-drivers), [Static Driver Verifier](/windows-hardware/drivers/devtest/static-driver-verifier) (SDV), and other verification tools find errors, and it’s a requirement for writing drivers for the Windows operating system.
 
  For example, to define a **HwStorBuildIo** callback routine that is named *MyHwBuildIo*, use the **HW_BUILDIO** type as shown in this code example:
 
-```cpp
+```c
 HW_BUILDIO MyHwBuildIo;
 ```
 
 Then, implement your callback routine as follows:
 
-```cpp
+```c
 _Use_decl_annotations_
 BOOLEAN
 MyHwBuildIo (
@@ -142,7 +141,7 @@ MyHwBuildIo (
   }
 ```
 
-The **HW_BUILDIO** function type is defined in the Storport.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the **HW_BUILDIO** function type in the header file are used. For more information about the requirements for function declarations, see [Declaring Functions Using Function Role Types for Storport Drivers](/windows-hardware/drivers/devtest/declaring-functions-by-using-function-role-types-for-storport-drivers). For information about _Use_decl_annotations_, see [Annotating Function Behavior](/cpp/code-quality/annotating-function-behavior?view=vs-2019).
+The **HW_BUILDIO** function type is defined in the Storport.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the **HW_BUILDIO** function type in the header file are used. For more information about the requirements for function declarations, see [Declaring Functions Using Function Role Types for Storport Drivers](/windows-hardware/drivers/devtest/declaring-functions-by-using-function-role-types-for-storport-drivers). For information about _Use_decl_annotations_, see [Annotating Function Behavior](/cpp/code-quality/annotating-function-behavior).
 
 ## -see-also
 

@@ -4,7 +4,6 @@ title: SpbTargetGetFileObject function (spbcx.h)
 description: The SpbTargetGetFileObject method accepts, as an input parameter, an SPBTARGET handle to an open target device, and returns a WDFFILEOBJECT handle to this target.
 old-location: spb\spbtargetgetfileobject.htm
 tech.root: SPB
-ms.assetid: A89635EC-F5B8-4427-9AFD-9F71339595DF
 ms.date: 04/30/2018
 keywords: ["SpbTargetGetFileObject function"]
 ms.keywords: SPB.spbtargetgetfileobject, SpbTargetGetFileObject, SpbTargetGetFileObject method [Buses], spbcx/SpbTargetGetFileObject
@@ -51,9 +50,9 @@ The <b>SpbTargetGetFileObject</b> method accepts, as an input parameter, an SPBT
 
 ## -parameters
 
-### -param Target 
+### -param Target [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a> handle to a target device on the bus.
 
 ## -returns

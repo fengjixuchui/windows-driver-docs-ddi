@@ -4,7 +4,6 @@ title: _SET_LOCAL_HOST_PROPS3 (1394.h)
 description: SET_LOCAL_HOST_PROPS3 contains the data necessary for defining or identifying one or more unit directories in the Configuration ROM of a 1394 Host Controller.
 old-location: ieee\set_local_host_props3.htm
 tech.root: IEEE
-ms.assetid: f49a8b86-5611-4737-9b25-e7446e155bbc
 ms.date: 02/15/2018
 keywords: ["SET_LOCAL_HOST_PROPS3 structure"]
 ms.keywords: "*PSET_LOCAL_HOST_PROPS3, 1394/PSET_LOCAL_HOST_PROPS3, 1394/SET_LOCAL_HOST_PROPS3, 1394stct_3e1725d2-1109-4762-b64e-05283146250a.xml, IEEE.set_local_host_props3, PSET_LOCAL_HOST_PROPS3, PSET_LOCAL_HOST_PROPS3 structure pointer [Buses], SET_LOCAL_HOST_PROPS3, SET_LOCAL_HOST_PROPS3 structure [Buses], _SET_LOCAL_HOST_PROPS3"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _SET_LOCAL_HOST_PROPS3
+ - PSET_LOCAL_HOST_PROPS3
  - SET_LOCAL_HOST_PROPS3
 ---
 
@@ -99,7 +100,7 @@ Pointer to the data buffer containing the unit directory information.
 
 ## -remarks
 
-The SET_LOCAL_HOST_PROPS3 structure is sent to the bus driver in the <b>u.SetLocalHostProperties.Information</b> member of an IRB during a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537663">REQUEST_SET_LOCAL_HOST_PROPERTIES</a> request, with <b>u.SetLocalHostProperties.nLevel=</b> SET_LOCAL_HOST_PROPERTIES_MODIFY_CROM. 
+The SET_LOCAL_HOST_PROPS3 structure is sent to the bus driver in the <b>u.SetLocalHostProperties.Information</b> member of an IRB during a <a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_SET_LOCAL_HOST_PROPERTIES</a> request, with <b>u.SetLocalHostProperties.nLevel=</b> SET_LOCAL_HOST_PROPERTIES_MODIFY_CROM. 
 
 The first element of the buffer pointed to by <b>Mdl</b> must be a unit directory. This is followed by offsets to any other leafs or directories defined in the request. The offsets must be relative to the beginning of the buffer. If the request results in the creation of a new unit directory, the bus driver adds a pointer to the newly created directory in the root directory. The buffer pointed to by <b>Mdl</b> must be in big-endian data format. If a driver fails to remove its dynamically added Configuration ROM data when the driver is removed, the bus driver does so automatically, restoring the default contents of the Configuration ROM.
 
@@ -109,4 +110,5 @@ The first element of the buffer pointed to by <b>Mdl</b> must be a unit director
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537663">REQUEST_SET_LOCAL_HOST_PROPERTIES</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_SET_LOCAL_HOST_PROPERTIES</a>
+

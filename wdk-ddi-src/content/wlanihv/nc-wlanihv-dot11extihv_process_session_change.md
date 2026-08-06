@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_PROCESS_SESSION_CHANGE
 title: DOT11EXTIHV_PROCESS_SESSION_CHANGE (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_PROCESS_SESSION_CHANGE callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvprocesssessionchange.htm
 tech.root: netvista
-ms.assetid: 17d5ab30-141a-4b7b-93f1-113fb1a39ba6
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_PROCESS_SESSION_CHANGE callback"]
 ms.keywords: DOT11EXTIHV_PROCESS_SESSION_CHANGE, Dot11ExtIhvProcessSessionChange, Dot11ExtIhvProcessSessionChange callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_158881c6-a8ae-4155-a2e6-549a47c3fce1.xml, netvista.dot11extihvprocesssessionchange, wlanihv/Dot11ExtIhvProcessSessionChange
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_PROCESS_SESSION_CHANGE
  - wlanihv/DOT11EXTIHV_PROCESS_SESSION_CHANGE
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtIhvProcessSessionChange
+ - DOT11EXTIHV_PROCESS_SESSION_CHANGE
 ---
 
 # DOT11EXTIHV_PROCESS_SESSION_CHANGE callback
@@ -53,9 +51,9 @@ api_name:
 
 ## -parameters
 
-### -param uEventType 
+### -param uEventType [in]
 
-[in]
+
 The type of event. This parameter can have one of the following values.
 
 
@@ -158,9 +156,9 @@ A session has changed its remote controlled status. To determine the status, cal
 </tr>
 </table>
 
-### -param pSessionNotification 
+### -param pSessionNotification [in]
 
-[in]
+
 A pointer to a WTSSESSION_NOTIFICATION structure, which provides information about the session
      change notification. For more information about this structure, refer to the Windows SDK
      documentation.
@@ -192,3 +190,4 @@ If the
     <i>uEventType</i> parameter is set to WTS_SESSION_LOGOFF, the IHV Extensions DLL must cancel all pending
     user interface requests internally and must release any allocated resources for the user interface
     requests.
+

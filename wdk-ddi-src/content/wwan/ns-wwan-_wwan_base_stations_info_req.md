@@ -4,7 +4,6 @@ title: _WWAN_BASE_STATIONS_INFO_REQ (wwan.h)
 description: The WWAN_BASE_STATIONS_INFO_REQ structure represents the aspects of cellular base stations information that are requested in a base stations information query.
 old-location: netvista\wwan_base_stations_info_req.htm
 tech.root: netvista
-ms.assetid: 1948F98B-1F0B-4EB3-A2FF-01DA159B5EEB
 ms.date: 05/02/2018
 keywords: ["WWAN_BASE_STATIONS_INFO_REQ structure"]
 ms.keywords: "*PWWAN_BASE_STATIONS_INFO_REQ, PWWAN_BASE_STATIONS_INFO_REQ, PWWAN_BASE_STATIONS_INFO_REQ structure pointer [Network Drivers Starting with Windows Vista], WWAN_BASE_STATIONS_INFO_REQ, WWAN_BASE_STATIONS_INFO_REQ structure [Network Drivers Starting with Windows Vista], _WWAN_BASE_STATIONS_INFO_REQ, netvista.wwan_base_stations_info_req, wwan/PWWAN_BASE_STATIONS_INFO_REQ, wwan/WWAN_BASE_STATIONS_INFO_REQ"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_BASE_STATIONS_INFO_REQ
+ - PWWAN_BASE_STATIONS_INFO_REQ
  - WWAN_BASE_STATIONS_INFO_REQ
 ---
 
@@ -74,6 +75,11 @@ The maximum number of entries of LTE neighboring cells returned in the LTE measu
 
 The maximum number of entries of CDMA cells returned in the CDMA measured results list in <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_cdma_mrl">WWAN_CDMA_MRL</a>. This list includes both serving and neighboring cells.
 
+### -field MaxNRCount
+
+The maximum number of entries of both 5G NR serving cells and neighbor cells returned in the measurement results in <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_nr_neighbor_cells">WWAN_NR_NEIGHBOR_CELLS</a> and <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-wwan_nr_serving_cells">WWAN_NR_SERVING_CELLS</a>. 
+
+
 ## -see-also
 
 <a href="/windows-hardware/drivers/network/mb-base-stations-information-query-support">MB base stations information query support</a>
@@ -101,3 +107,4 @@ The maximum number of entries of CDMA cells returned in the CDMA measured result
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_umts_mrl">WWAN_UMTS_MRL</a>
+

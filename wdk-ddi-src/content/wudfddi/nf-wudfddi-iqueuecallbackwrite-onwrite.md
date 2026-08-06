@@ -4,7 +4,6 @@ title: IQueueCallbackWrite::OnWrite (wudfddi.h)
 description: The OnWrite method is called to handle a write request when an application writes information to a device through the Microsoft Win32 WriteFile or WriteFileEx function.
 old-location: wdf\iqueuecallbackwrite_onwrite.htm
 tech.root: wdf
-ms.assetid: a87a9976-f844-4e69-82d3-2d426e359763
 ms.date: 02/26/2018
 keywords: ["IQueueCallbackWrite::OnWrite"]
 ms.keywords: IQueueCallbackWrite interface,OnWrite method, IQueueCallbackWrite.OnWrite, IQueueCallbackWrite::OnWrite, OnWrite, OnWrite method, OnWrite method,IQueueCallbackWrite interface, UMDFQueueObjectRef_77d33d9d-856e-4b3b-818d-37b0ad6889a7.xml, umdf.iqueuecallbackwrite_onwrite, wdf.iqueuecallbackwrite_onwrite, wudfddi/IQueueCallbackWrite::OnWrite
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IQueueCallbackWrite.OnWrite
+ - IQueueCallbackWrite::OnWrite
 ---
 
 # IQueueCallbackWrite::OnWrite
@@ -52,19 +51,19 @@ The <b>OnWrite</b> method is called to handle a write request when an applicatio
 
 ## -parameters
 
-### -param pWdfQueue 
+### -param pWdfQueue [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfioqueue">IWDFIoQueue</a> interface for the I/O queue object that the request arrives from.
 
-### -param pWdfRequest 
+### -param pWdfRequest [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest">IWDFIoRequest</a> interface that represents the framework request object.
 
-### -param NumOfBytesToWrite 
+### -param NumOfBytesToWrite [in]
 
-[in]
+
 The size, in bytes, of the write buffer for the request.
 
 ## -remarks
@@ -96,3 +95,4 @@ The driver can call the <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfdd
 
 
 <a href="/windows-hardware/drivers/ddi/wdfrequest/ne-wdfrequest-_wdf_request_type">WDF_REQUEST_TYPE</a>
+

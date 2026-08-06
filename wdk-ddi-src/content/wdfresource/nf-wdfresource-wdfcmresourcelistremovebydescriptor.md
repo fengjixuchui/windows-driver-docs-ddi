@@ -4,7 +4,6 @@ title: WdfCmResourceListRemoveByDescriptor function (wdfresource.h)
 description: The WdfCmResourceListRemoveByDescriptor method removes a specified resource descriptor from a specified resource list.
 old-location: wdf\wdfcmresourcelistremovebydescriptor.htm
 tech.root: wdf
-ms.assetid: 532b56c9-6c24-4737-b1d6-e44802a898e3
 ms.date: 02/26/2018
 keywords: ["WdfCmResourceListRemoveByDescriptor function"]
 ms.keywords: DFResourceObjectRef_14bc7eb5-5cf4-49ae-83da-144ba0c9adea.xml, WdfCmResourceListRemoveByDescriptor, WdfCmResourceListRemoveByDescriptor method, kmdf.wdfcmresourcelistremovebydescriptor, wdf.wdfcmresourcelistremovebydescriptor, wdfresource/WdfCmResourceListRemoveByDescriptor
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfCmResourceListRemoveByDescriptor</b> method removes a specified resour
 
 ## -parameters
 
-### -param List 
+### -param List [in]
 
-[in]
+
 A handle to a framework resource-list object that represents a list of hardware resources for a device.
 
-### -param Descriptor 
+### -param Descriptor [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes a hardware resource.
 
 ## -remarks

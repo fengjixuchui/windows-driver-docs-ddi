@@ -1,9 +1,8 @@
 ---
 UID: NC:d3dkmthk.PFND3DKMT_ACQUIREKEYEDMUTEX2
 title: PFND3DKMT_ACQUIREKEYEDMUTEX2 (d3dkmthk.h)
-description: Acquires a keyed mutex object that includes private data.
+description: The PFND3DKMT_ACQUIREKEYEDMUTEX2 callback function acquires a keyed mutex object that includes private data.
 old-location: display\d3dkmtacquirekeyedmutex2.htm
-ms.assetid: 94ebfeb6-2035-4dd6-bbc9-ba82939b51ec
 ms.date: 05/10/2018
 keywords: ["PFND3DKMT_ACQUIREKEYEDMUTEX2 callback function"]
 ms.keywords: D3DKMTAcquireKeyedMutex2, D3DKMTAcquireKeyedMutex2 callback function [Display Devices], PFND3DKMT_ACQUIREKEYEDMUTEX2, PFND3DKMT_ACQUIREKEYEDMUTEX2 callback, d3dkmthk/D3DKMTAcquireKeyedMutex2, display.d3dkmtacquirekeyedmutex2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
- - D3DKMTAcquireKeyedMutex2
+ - PFND3DKMT_ACQUIREKEYEDMUTEX2
 ---
 
 # PFND3DKMT_ACQUIREKEYEDMUTEX2 callback function
@@ -50,11 +49,11 @@ Acquires a keyed mutex object that includes private data.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in, out]
 
 *pData* 
 
-[in, out] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_acquirekeyedmutex2">D3DKMT_ACQUIREKEYEDMUTEX2</a> structure that specifies the keyed mutex object to acquire.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_acquirekeyedmutex2">D3DKMT_ACQUIREKEYEDMUTEX2</a> structure that specifies the keyed mutex object to acquire.
 
 ## -returns
 
@@ -80,3 +79,4 @@ This function might also return other <b>NTSTATUS</b> values.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_acquirekeyedmutex2">D3DKMT_ACQUIREKEYEDMUTEX2</a>
+

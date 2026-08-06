@@ -4,7 +4,6 @@ title: _WSK_CLIENT_CONNECTION_DISPATCH (wsk.h)
 description: The WSK_CLIENT_CONNECTION_DISPATCH structure specifies a WSK application's dispatch table of event callback functions for a connection-oriented socket.
 old-location: netvista\wsk_client_connection_dispatch.htm
 tech.root: netvista
-ms.assetid: 960eee8a-2950-4baf-b32d-be13b3d65951
 ms.date: 05/02/2018
 keywords: ["WSK_CLIENT_CONNECTION_DISPATCH structure"]
 ms.keywords: "*PWSK_CLIENT_CONNECTION_DISPATCH, PWSK_CLIENT_CONNECTION_DISPATCH, PWSK_CLIENT_CONNECTION_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], WSK_CLIENT_CONNECTION_DISPATCH, WSK_CLIENT_CONNECTION_DISPATCH structure [Network Drivers Starting with Windows Vista], _WSK_CLIENT_CONNECTION_DISPATCH, netvista.wsk_client_connection_dispatch, wsk/PWSK_CLIENT_CONNECTION_DISPATCH, wsk/WSK_CLIENT_CONNECTION_DISPATCH, wskref_2fd26ffb-dab8-4529-9fd0-6043509312c9.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wsk.h
 api_name:
+ - _WSK_CLIENT_CONNECTION_DISPATCH
+ - PWSK_CLIENT_CONNECTION_DISPATCH
  - WSK_CLIENT_CONNECTION_DISPATCH
 ---
 
@@ -142,3 +143,4 @@ As a returned parameter when the WSK subsystem calls the WSK application's
 
 
 <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect">WskSocketConnect</a>
+

@@ -4,7 +4,6 @@ title: _DDICONTENTPROTECTIONCAPS (d3dumddi.h)
 description: The DDICONTENTPROTECTIONCAPS structure describes a specific encryption and decode combination that the driver uses.
 old-location: display\ddicontentprotectioncaps.htm
 tech.root: display
-ms.assetid: d223712d-2c77-4bec-b8c0-d677d4caeac2
 ms.date: 05/10/2018
 keywords: ["DDICONTENTPROTECTIONCAPS structure"]
 ms.keywords: D3D_other_Structs_15111323-4ebe-49be-8ce6-d43a896533ee.xml, DDICONTENTPROTECTIONCAPS, DDICONTENTPROTECTIONCAPS structure [Display Devices], _DDICONTENTPROTECTIONCAPS, d3dumddi/DDICONTENTPROTECTIONCAPS, display.ddicontentprotectioncaps
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DDICONTENTPROTECTIONCAPS
  - DDICONTENTPROTECTIONCAPS
 ---
 
@@ -52,9 +52,9 @@ The DDICONTENTPROTECTIONCAPS structure describes a specific encryption and decod
 
 ## -struct-fields
 
-### -field CryptoType
+### -field CryptoType [in]
 
-[in] A GUID that indicates the encryption type that the driver uses. The currently defined GUIDs are:
+A GUID that indicates the encryption type that the driver uses. The currently defined GUIDs are:
 
 
 
@@ -72,9 +72,9 @@ A GUID that indicates a proprietary encryption algorithm.
 
 A <b>NULL</b> value indicates that no encryption is used.
 
-### -field DecodeProfile
+### -field DecodeProfile [in]
 
-[in] A GUID that indicates the DirectX Video Acceleration (DirectX VA) decode profile that the driver uses along with the encryption type, which the <b>CryptoType</b> member specifies. Not all drivers allow all types of encryption. For example, MPEG2 IDCT frequently requires that the private libraries, which the hardware vendor supplies, perform the proprietary encryption. A <b>NULL</b> value indicates that DirectX VA decode profile is not used.
+A GUID that indicates the DirectX Video Acceleration (DirectX VA) decode profile that the driver uses along with the encryption type, which the <b>CryptoType</b> member specifies. Not all drivers allow all types of encryption. For example, MPEG2 IDCT frequently requires that the private libraries, which the hardware vendor supplies, perform the proprietary encryption. A <b>NULL</b> value indicates that DirectX VA decode profile is not used.
 
 ## -remarks
 
@@ -93,3 +93,4 @@ If the runtime specifies NULL_GUID in the <b>CryptoType</b> member, the driver s
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps">GetCaps</a>
+

@@ -4,7 +4,6 @@ title: _DXVA_MBctrl_P_OffHostIDCT_1 (dxva.h)
 description: The DXVA_MBctrl_P_OffHostIDCT_1 structure is sent once per macroblock by the host decoder to the accelerator to specify macroblock control commands for most nonintra pictures using off-host IDCT.
 old-location: display\dxva_mbctrl_p_offhostidct_1.htm
 tech.root: display
-ms.assetid: 53a474a8-6cbd-4fe0-84d2-bf557b86ed71
 ms.date: 05/10/2018
 keywords: ["DXVA_MBctrl_P_OffHostIDCT_1 structure"]
 ms.keywords: "*LPDXVA_MBctrl_P_OffHostIDCT_1, DXVA_MBctrl_P_OffHostIDCT_1, DXVA_MBctrl_P_OffHostIDCT_1 structure [Display Devices], _DXVA_MBctrl_P_OffHostIDCT_1, display.dxva_mbctrl_p_offhostidct_1, dxva/DXVA_MBctrl_P_OffHostIDCT_1, dxvaref_5dae57d5-3e27-4928-8fd2-4c9cdad0285b.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - dxva.h
 api_name:
+ - _DXVA_MBctrl_P_OffHostIDCT_1
  - DXVA_MBctrl_P_OffHostIDCT_1
 ---
 
@@ -129,3 +129,4 @@ Valid combinations of <i>IntraMacroblock</i>, <i>MotionForward</i>, <i>MotionBac
 
 
 <a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_tcoefsingle">DXVA_TCoefSingle</a>
+

@@ -1,10 +1,9 @@
 ---
-UID: NE:ksproxy.__unnamed_enum_0
+UID: NE:ksproxy.KSALLOCATORMODE
 title: KSALLOCATORMODE (ksproxy.h)
-description: 
+description: "Learn more about: KSALLOCATORMODE enumeration"
 old-location: stream\ksallocatormode.htm
 tech.root: stream
-ms.assetid: 2D02D43F-495E-45EE-B932-C8924ADF05DC
 ms.date: 04/23/2018
 keywords: ["KSALLOCATORMODE enumeration"]
 ms.keywords: KSALLOCATORMODE, KSALLOCATORMODE enumeration [Streaming Media Devices], KsAllocatorMode_Kernel, KsAllocatorMode_User, ksproxy/KSALLOCATORMODE, ksproxy/KsAllocatorMode_Kernel, ksproxy/KsAllocatorMode_User, stream.ksallocatormode

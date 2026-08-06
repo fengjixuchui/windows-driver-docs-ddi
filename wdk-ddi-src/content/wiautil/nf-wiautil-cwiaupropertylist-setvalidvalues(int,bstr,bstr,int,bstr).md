@@ -4,7 +4,6 @@ title: CWiauPropertyList::SetValidValues(INT,BSTR,BSTR,INT,BSTR) (wiautil.h)
 description: The CWiauPropertyList::SetValidValues(INT,BSTR,BSTR,INT,BSTR) method sets the type, as well as default, current, and valid values for a BSTR property associated with a list of values.
 old-location: image\cwiaupropertylist_setvalidvalues_bstr__list_.htm
 tech.root: image
-ms.assetid: b806e310-4e6d-4258-8dd5-0c9aa35a35f4
 ms.date: 09/21/2020
 keywords: ["CWiauPropertyList::SetValidValues(INT,BSTR,BSTR,INT,BSTR)"]
 ms.keywords: CWiauPropertyList interface [Imaging Devices],SetValidValues method, CWiauPropertyList.SetValidValues, CWiauPropertyList.SetValidValues(INT,BSTR,BSTR,INT,BSTR), CWiauPropertyList::SetValidValues, CWiauPropertyList::SetValidValues(INT  ,BSTR  ,BSTR  ,INT,BSTR  *), CWiauPropertyList::SetValidValues(INT,BSTR,BSTR,INT,BSTR), CWiauPropertyList::SetValidValues(INT,BSTR,BSTR,INT,BSTR*), SetValidValues, SetValidValues method [Imaging Devices], SetValidValues method [Imaging Devices],CWiauPropertyList interface, SetValidValues(BSTR,(CWiauPropertyList), image.cwiaupropertylist_setvalidvalues_bstr__list_, wiauFncs_7653406d-852f-452e-94c3-187be530f684.xml, wiautil/CWiauPropertyList::SetValidValues
@@ -39,10 +38,11 @@ api_type:
 api_location:
  - Wiautil.h
 api_name:
- - CWiauPropertyList.SetValidValues
+ - CWiauPropertyList::SetValidValues
 ---
 
 # CWiauPropertyList::SetValidValues(INT,BSTR,BSTR,INT,BSTR) (wiautil.h)
+
 
 ## -description
 
@@ -77,3 +77,4 @@ Points to the first property in the property list. This pointer must remain vali
 [CWiauPropertyList::DefineProperty](nf-wiautil-cwiaupropertylist-defineproperty.md)
 
 [CWiauPropertyList::SendToWia](nf-wiautil-cwiaupropertylist-sendtowia.md)
+

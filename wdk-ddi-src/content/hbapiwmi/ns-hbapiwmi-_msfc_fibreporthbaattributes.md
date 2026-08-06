@@ -4,7 +4,6 @@ title: _MSFC_FibrePortHBAAttributes (hbapiwmi.h)
 description: A WMI provider uses the MSFC_FibrePortHBAAttributes WMI class to expose attribute information associated with a fibre channel port.
 old-location: storage\msfc_fibreporthbaattributes.htm
 tech.root: storage
-ms.assetid: e8a31f48-bad2-49d1-81be-d345d87a0fd5
 ms.date: 03/29/2018
 keywords: ["MSFC_FibrePortHBAAttributes structure"]
 ms.keywords: "*PMSFC_FibrePortHBAAttributes, MSFC_FibrePortHBAAttributes, MSFC_FibrePortHBAAttributes structure [Storage Devices], PMSFC_FibrePortHBAAttributes, PMSFC_FibrePortHBAAttributes structure pointer [Storage Devices], _MSFC_FibrePortHBAAttributes, hbapiwmi/MSFC_FibrePortHBAAttributes, hbapiwmi/PMSFC_FibrePortHBAAttributes, storage.msfc_fibreporthbaattributes, structs-Fibre_8721cac7-a44b-4401-991d-1b8822aec5be.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hbapiwmi.h
 api_name:
+ - _MSFC_FibrePortHBAAttributes
+ - PMSFC_FibrePortHBAAttributes
  - MSFC_FibrePortHBAAttributes
 ---
 
@@ -73,3 +74,4 @@ Contains a structure of type <a href="/windows-hardware/drivers/ddi/hbapiwmi/ns-
 
 
 <a href="/windows-hardware/drivers/ddi/hbapiwmi/ns-hbapiwmi-_msfc_hbaportattributesresults">MSFC_HBAPortAttributesResults</a>
+

@@ -4,7 +4,6 @@ title: _URB (usb.h)
 description: The URB structure is used by USB client drivers to describe USB request blocks (URBs) that send requests to the USB driver stack. The URB structure defines a format for all possible commands that can be sent to a USB device.
 old-location: buses\urb.htm
 tech.root: usbref
-ms.assetid: f28b2c97-61ee-4843-b3c5-b3a55f172c50
 ms.date: 05/07/2018
 keywords: ["URB structure"]
 ms.keywords: PURB, PURB structure pointer [Buses], URB, URB structure [Buses], _URB, buses.urb, usb/PURB, usb/URB, usbstrct_20441a98-258d-44d2-b414-67b336a44fac.xml
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - usb.h
 api_name:
+ - _URB
+ - PURB
  - URB
 ---
 
@@ -114,7 +115,7 @@ Defines the format for a command to get status from a device, interface, or endp
 
 ### -field UrbControlFeatureRequest
 
-Defines the format for a command to set or clear USB-defined features on an device, interface, or endpoint. For more information, see <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a>.
+Defines the format for a command to set or clear USB-defined features on a device, interface, or endpoint. For more information, see <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_urb_control_feature_request">_URB_CONTROL_FEATURE_REQUEST</a>.
 
 ### -field UrbControlVendorClassRequest
 
@@ -151,4 +152,5 @@ For information about the function codes to set in each structure, see <a href="
 
 
 
-<a href="/windows-hardware/drivers/ddi/index">USB Structures</a>
+<a href="/windows-hardware/drivers/ddi/_usbref/#structures">USB Structures</a>
+

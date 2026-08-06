@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_SETDEPTHSTENCILSTATE
 title: PFND3D10DDI_SETDEPTHSTENCILSTATE (d3d10umddi.h)
 description: The SetDepthStencilState function sets a depth-stencil state.
 old-location: display\setdepthstencilstate.htm
-ms.assetid: 379f8113-b07c-4984-ba37-a06d6c21b9e9
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_SETDEPTHSTENCILSTATE callback function"]
 ms.keywords: PFND3D10DDI_SETDEPTHSTENCILSTATE, PFND3D10DDI_SETDEPTHSTENCILSTATE callback, SetDepthStencilState, SetDepthStencilState callback function [Display Devices], UserModeDisplayDriverDx10_Functions_850fde8e-3bb5-4943-94ba-d98298599c19.xml, d3d10umddi/SetDepthStencilState, display.setdepthstencilstate
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - SetDepthStencilState
+ - PFND3D10DDI_SETDEPTHSTENCILSTATE
 ---
 
 # PFND3D10DDI_SETDEPTHSTENCILSTATE callback function
@@ -50,19 +49,19 @@ The <i>SetDepthStencilState</i> function sets a depth-stencil state.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hState* [in]
 
 A handle to the depth-stencil state to set.
 
-### -param Arg3
+### -param unnamedParam3
 
 *StencilRef* [in]
 
@@ -83,3 +82,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

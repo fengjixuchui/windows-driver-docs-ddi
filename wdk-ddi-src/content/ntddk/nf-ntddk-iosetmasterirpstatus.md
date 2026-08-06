@@ -4,7 +4,6 @@ title: IoSetMasterIrpStatus function (ntddk.h)
 description: The IoSetMasterIrpStatus routine conditionally replaces the Status value in an IRP with the specified NTSTATUS value.
 old-location: kernel\iosetmasterirpstatus.htm
 tech.root: kernel
-ms.assetid: 68C7C46B-AFDB-449D-99B5-1F9A5A9AFFA4
 ms.date: 04/30/2018
 keywords: ["IoSetMasterIrpStatus function"]
 ms.keywords: IoSetMasterIrpStatus, IoSetMasterIrpStatus routine [Kernel-Mode Driver Architecture], kernel.iosetmasterirpstatus, ntddk/IoSetMasterIrpStatus
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: Any level.
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ The <b>IoSetMasterIrpStatus</b> routine conditionally replaces the <b>Status</b>
 
 ## -parameters
 
-### -param MasterIrp 
+### -param MasterIrp [in, out]
 
-[in, out]
+
 A pointer to the master <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp">IRP</a>. For more information, see Remarks.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 An NTSTATUS value to compare to the <b>Status</b> member of the <a href="/windows-hardware/drivers/kernel/i-o-status-blocks">I/O status block</a> in the master IRP.
 
 ## -remarks
@@ -71,10 +70,10 @@ Before the first call to <b>IoSetMasterIrpStatus</b>, the driver sets the <b>IoS
 As a general rule, <b>IoSetMasterIrpStatus</b> replaces the status code in <i>PIRP</i>-><b>IoStatus.Status</b> with the <i>Status</i> value in the following cases:
 
 <ul>
-<li>The status value in *<i>PIRP</i> is STATUS_SUCCESS, and <i>Status</i> is an error code.</li>
-<li>The status value in *<i>PIRP</i> is an error code, but <i>Status</i> is a more severe error code.</li>
+<li>The status value in **PIRP* is STATUS_SUCCESS, and <i>Status</i> is an error code.</li>
+<li>The status value in **PIRP* is an error code, but <i>Status</i> is a more severe error code.</li>
 </ul>
-There are two exceptions to the general rule. A <i>Status</i> value of STATUS_VERIFY_REQUIRED <u>always</u> replaces the status value in *<i>PIRP</i>. A <i>Status</i> value of STATUS_FT_READ_FROM_COPY <u>never</u> replaces the status value in *<i>PIRP</i>.
+There are two exceptions to the general rule. A <i>Status</i> value of STATUS_VERIFY_REQUIRED <u>always</u> replaces the status value in **PIRP*. A <i>Status</i> value of STATUS_FT_READ_FROM_COPY <u>never</u> replaces the status value in **PIRP*.
 
 ## -see-also
 

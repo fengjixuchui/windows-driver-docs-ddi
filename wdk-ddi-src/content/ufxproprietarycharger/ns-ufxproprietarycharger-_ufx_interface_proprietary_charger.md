@@ -4,7 +4,6 @@ title: _UFX_INTERFACE_PROPRIETARY_CHARGER (ufxproprietarycharger.h)
 description: Stores pointers to driver-implemented callback functions for handling proprietary charger operations.
 old-location: buses\ufx_interface_proprietary_charger.htm
 tech.root: usbref
-ms.assetid: 3E75EA87-FBF8-4FFB-9CD7-F8E1D5353D68
 ms.date: 05/07/2018
 keywords: ["UFX_INTERFACE_PROPRIETARY_CHARGER structure"]
 ms.keywords: "*PUFX_INTERFACE_PROPRIETARY_CHARGER, PUFX_INTERFACE_PROPRIETARY_CHARGER, PUFX_INTERFACE_PROPRIETARY_CHARGER structure pointer [Buses], UFX_INTERFACE_PROPRIETARY_CHARGER, UFX_INTERFACE_PROPRIETARY_CHARGER structure [Buses], _UFX_INTERFACE_PROPRIETARY_CHARGER, buses.ufx_interface_proprietary_charger, ufxproprietarycharger/PUFX_INTERFACE_PROPRIETARY_CHARGER, ufxproprietarycharger/UFX_INTERFACE_PROPRIETARY_CHARGER"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ufxproprietarycharger.h
 api_name:
+ - _UFX_INTERFACE_PROPRIETARY_CHARGER
+ - PUFX_INTERFACE_PROPRIETARY_CHARGER
  - UFX_INTERFACE_PROPRIETARY_CHARGER
 ---
 
@@ -77,3 +78,4 @@ A pointer to the driver's implementation of the <a href="/windows-hardware/drive
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/drivers/mt188012(v=vs.85)">USB filter driver for supporting proprietary chargers</a>
+

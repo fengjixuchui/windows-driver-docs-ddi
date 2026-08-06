@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGK_SEGMENTBANKPREFERENCE
 title: _DXGK_SEGMENTBANKPREFERENCE (d3dkmddi.h)
 description: The DXGK_SEGMENTBANKPREFERENCE structure describes bank preferences for paging in an allocation.
 old-location: display\dxgk_segmentbankpreference.htm
-ms.assetid: ff292137-4d95-4388-aae9-f6436b403c6a
 ms.date: 05/10/2018
 keywords: ["DXGK_SEGMENTBANKPREFERENCE structure"]
 ms.keywords: DXGK_SEGMENTBANKPREFERENCE, DXGK_SEGMENTBANKPREFERENCE structure [Display Devices], DmStructs_58615e96-0b7c-49a9-8966-0f627d7078f7.xml, _DXGK_SEGMENTBANKPREFERENCE, d3dkmddi/DXGK_SEGMENTBANKPREFERENCE, display.dxgk_segmentbankpreference
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_SEGMENTBANKPREFERENCE
  - DXGK_SEGMENTBANKPREFERENCE
 ---
 
@@ -52,57 +52,57 @@ The <b>DXGK_SEGMENTBANKPREFERENCE</b> structure describes bank preferences for p
 
 ## -struct-fields
 
-### -field Bank0
+### -field Bank0 [out]
 
-[out] The identifier of the highest priority preferred bank, or 0 if no preference is required. Valid values are from 1 to 127.
+The identifier of the highest priority preferred bank, or 0 if no preference is required. Valid values are from 1 to 127.
 
 This member is equivalent to the first 7 bits of the 32-bit <b>Value</b> member (0x0000007F).
 
-### -field Direction0
+### -field Direction0 [out]
 
-[out] The direction in which <b>Bank0</b> should be scanned to locate a free area of memory. A value of 0 indicates a bottom-up search (that is, low address to high address), and a value of 1 indicates a top-bottom search (that is, high address to low address).
+The direction in which <b>Bank0</b> should be scanned to locate a free area of memory. A value of 0 indicates a bottom-up search (that is, low address to high address), and a value of 1 indicates a top-bottom search (that is, high address to low address).
 
 This member is equivalent to the eighth bit of the 32-bit <b>Value</b> member (0x00000080).
 
-### -field Bank1
+### -field Bank1 [out]
 
-[out] The identifier of the next highest priority preferred bank, or 0 if no preference is required. Valid values are from 1 to 127.
+The identifier of the next highest priority preferred bank, or 0 if no preference is required. Valid values are from 1 to 127.
 
 This member is equivalent to bits 9 through 15 of the 32-bit <b>Value</b> member (0x00007F00).
 
-### -field Direction1
+### -field Direction1 [out]
 
-[out] The direction in which <b>Bank1</b> should be scanned to locate a free hole of memory. A value of 0 indicates a bottom-up search (that is, low address to high address), and a value of 1 indicates a top-bottom search (that is, high address to low address).
+The direction in which <b>Bank1</b> should be scanned to locate a free hole of memory. A value of 0 indicates a bottom-up search (that is, low address to high address), and a value of 1 indicates a top-bottom search (that is, high address to low address).
 
 This member is equivalent to the sixteenth bit of the 32-bit <b>Value</b> member (0x00008000).
 
-### -field Bank2
+### -field Bank2 [out]
 
-[out] The identifier of the next highest priority preferred bank, or 0 if no preference is required. Valid values are from 1 to 127.
+The identifier of the next highest priority preferred bank, or 0 if no preference is required. Valid values are from 1 to 127.
 
 This member is equivalent to bits 17 through 23 of the 32-bit <b>Value</b> member (0x007F0000).
 
-### -field Direction2
+### -field Direction2 [out]
 
-[out] The direction in which <b>Bank2</b> should be scanned to locate a free hole of memory. A value of 0 indicates a bottom-up search (that is, low address to high address), and a value of 1 indicates a top-bottom search (that is, high address to low address).
+The direction in which <b>Bank2</b> should be scanned to locate a free hole of memory. A value of 0 indicates a bottom-up search (that is, low address to high address), and a value of 1 indicates a top-bottom search (that is, high address to low address).
 
 This member is equivalent to the twenty-fourth bit of the 32-bit <b>Value</b> member (0x00800000).
 
-### -field Bank3
+### -field Bank3 [out]
 
-[out] The identifier of the next highest priority preferred bank, or 0 if no preference is required. Valid values are from 1 to 127.
+The identifier of the next highest priority preferred bank, or 0 if no preference is required. Valid values are from 1 to 127.
 
 This member is equivalent to bits 25 through 31 of the 32-bit <b>Value</b> member (0x7F000000).
 
-### -field Direction3
+### -field Direction3 [out]
 
-[out] The direction in which <b>Bank3</b> should be scanned to locate a free hole of memory. A value of 0 indicates a bottom-up search (that is, low address to high address), and a value of 1 indicates a top-bottom search (that is, high address to low address).
+The direction in which <b>Bank3</b> should be scanned to locate a free hole of memory. A value of 0 indicates a bottom-up search (that is, low address to high address), and a value of 1 indicates a top-bottom search (that is, high address to low address).
 
 This member is equivalent to the thirty-secondbit of the 32-bit <b>Value</b> member (0x80000000).
 
-### -field Value
+### -field Value [out]
 
-[out] A member in the union that DXGK_SEGMENTBANKPREFERENCE contains that can hold a 32-bit value that identifies bank preferences.
+A member in the union that DXGK_SEGMENTBANKPREFERENCE contains that can hold a 32-bit value that identifies bank preferences.
 
 ## -remarks
 
@@ -129,3 +129,4 @@ The display miniport driver can indicate up to four bank preferences in the <b>H
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_render">DxgkDdiRender</a>
+

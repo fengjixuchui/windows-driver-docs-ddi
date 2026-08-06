@@ -4,7 +4,6 @@ title: PoFxCompleteIdleCondition function (wdm.h)
 description: The PoFxCompleteIdleCondition routine informs the power management framework (PoFx) that the specified component has completed a pending change to the idle condition.
 old-location: kernel\pofxcompleteidlecondition.htm
 tech.root: kernel
-ms.assetid: D43DA9A4-02F4-4C4E-83AE-DFADA0FCC73D
 ms.date: 04/30/2018
 keywords: ["PoFxCompleteIdleCondition function"]
 ms.keywords: PoFxCompleteIdleCondition, PoFxCompleteIdleCondition routine [Kernel-Mode Driver Architecture], kernel.pofxcompleteidlecondition, wdm/PoFxCompleteIdleCondition
@@ -50,14 +49,14 @@ The <b>PoFxCompleteIdleCondition</b> routine informs the power management framew
 
 ## -parameters
 
-### -param Handle 
+### -param Handle [in]
 
-[in]
+
 A handle that represents the registration of the device with PoFx. The device driver previously received this handle from the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxregisterdevice">PoFxRegisterDevice</a> routine.
 
-### -param Component 
+### -param Component [in]
 
-[in]
+
 The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_po_fx_device_v1">PO_FX_DEVICE</a> structure that the device driver used to register the device with PoFx. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
 
 ## -remarks

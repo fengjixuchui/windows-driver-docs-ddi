@@ -4,7 +4,6 @@ title: EVT_WDF_DEVICE_D0_ENTRY (wdfdevice.h)
 description: A driver's EvtDeviceD0Entry event callback function performs operations that are needed when the driver's device enters the D0 power state.
 old-location: wdf\evtdeviced0entry.htm
 tech.root: wdf
-ms.assetid: 0cfabb0f-2d5e-4445-8683-d2916de5b549
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DEVICE_D0_ENTRY callback function"]
 ms.keywords: DFDeviceObjectGeneralRef_2be6c269-2579-4358-ba3a-855672e6d2bc.xml, EVT_WDF_DEVICE_D0_ENTRY, EVT_WDF_DEVICE_D0_ENTRY callback, EvtDeviceD0Entry, EvtDeviceD0Entry callback function, kmdf.evtdeviced0entry, wdf.evtdeviced0entry, wdfdevice/EvtDeviceD0Entry
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfdevice.h
 api_name:
- - EvtDeviceD0Entry
+ - EVT_WDF_DEVICE_D0_ENTRY
 ---
 
 # EVT_WDF_DEVICE_D0_ENTRY callback function
@@ -52,14 +51,12 @@ A driver's <i>EvtDeviceD0Entry</i> event callback function performs operations t
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
 A handle to a framework device object.
 
-### -param PreviousState 
+### -param PreviousState [in]
 
-[in]
 A <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_power_device_state">WDF_POWER_DEVICE_STATE</a>-typed enumerator that identifies the previous device power state.
 
 ## -returns
@@ -123,3 +120,4 @@ The <i>EvtDeviceD0Entry</i> callback function is called at IRQL = PASSIVE_LEVEL.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_exit">EvtDeviceD0Exit</a>
+

@@ -4,7 +4,6 @@ title: IResourceList::FindUntranslatedEntry (portcls.h)
 description: The FindUntranslatedEntry method returns a pointer to an untranslated entry of the specified type, or NULL if no such pointer is found.
 old-location: audio\iresourcelist_finduntranslatedentry.htm
 tech.root: audio
-ms.assetid: 3578eb3a-e9c8-4de3-b959-daff9ac7f1a2
 ms.date: 05/08/2018
 keywords: ["IResourceList::FindUntranslatedEntry"]
 ms.keywords: FindUntranslatedEntry, FindUntranslatedEntry method [Audio Devices], FindUntranslatedEntry method [Audio Devices],IResourceList interface, IResourceList interface [Audio Devices],FindUntranslatedEntry method, IResourceList.FindUntranslatedEntry, IResourceList::FindUntranslatedEntry, audio.iresourcelist_finduntranslatedentry, audmp-routines_d9b98845-63dd-454d-b1de-dd7db8825e27.xml, portcls/IResourceList::FindUntranslatedEntry
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IResourceList.FindUntranslatedEntry
+ - IResourceList::FindUntranslatedEntry
 ---
 
 # IResourceList::FindUntranslatedEntry
@@ -50,14 +49,14 @@ The <code>FindUntranslatedEntry</code> method returns a pointer to an untranslat
 
 ## -parameters
 
-### -param Type 
+### -param Type [in]
 
-[in]
+
 Identifies the resource type of the entries that are to be counted. For a list of valid values, see the <b>Type</b> member of the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure.
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 Specifies the index of the entry to find. If the <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-iresourcelist-numberofentriesoftype">IResourceList::NumberOfEntriesOfType</a> method returns a value <i>n</i> for the number of entries of type <i>Type</i>, valid indices range from 0 to <i>n</i>-1. If <i>Index</i> is zero, for example, the method returns a pointer to the untranslated version of the first occurrence of an entry of the specified type from the resource list.
 
 ## -returns
@@ -89,3 +88,4 @@ For more information about translated and untranslated (or "raw") resources, see
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-iresourcelist-numberofentriesoftype">IResourceList::NumberOfEntriesOfType</a>
+

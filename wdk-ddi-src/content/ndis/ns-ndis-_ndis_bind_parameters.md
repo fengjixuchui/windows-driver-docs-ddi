@@ -4,7 +4,6 @@ title: _NDIS_BIND_PARAMETERS (ndis.h)
 description: NDIS initializes an NDIS_BIND_PARAMETERS structure with information that defines the characteristics of a binding and passes it to a protocol driver.
 old-location: netvista\ndis_bind_parameters.htm
 tech.root: netvista
-ms.assetid: 0a4866a8-a2f2-447b-8aa9-73203b7fc4bb
 ms.date: 05/02/2018
 keywords: ["NDIS_BIND_PARAMETERS structure"]
 ms.keywords: "*PNDIS_BIND_PARAMETERS, NDIS_BIND_PARAMETERS, NDIS_BIND_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_BIND_PARAMETERS, PNDIS_BIND_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_BIND_PARAMETERS, ndis/NDIS_BIND_PARAMETERS, ndis/PNDIS_BIND_PARAMETERS, netvista.ndis_bind_parameters, protocol_structures_ref_25c90ff2-4a09-41f2-8b66-666a91dbfe17.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_BIND_PARAMETERS
+ - PNDIS_BIND_PARAMETERS
  - NDIS_BIND_PARAMETERS
 ---
 
@@ -58,7 +59,7 @@ NDIS initializes an <b>NDIS_BIND_PARAMETERS</b> structure with information that 
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_BIND_PARAMETERS</b> structure. NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_BIND_PARAMETERS.
@@ -194,10 +195,7 @@ The Plug and Play capabilities of the underlying miniport adapter. For more info
 
 ### -field SupportedPacketFilters
 
-A set of flags that identify the types of network packets that the underlying miniport adapter can
-     filter. For more information, see 
-     <a href="/windows-hardware/drivers/network/oid-gen-supported-packet-filters">
-     OID_GEN_SUPPORTED_PACKET_FILTERS</a>.
+A set of flags that identify the types of network packets that the underlying miniport adapter can filter.
 
 ### -field MaxMulticastListSize
 
@@ -270,7 +268,7 @@ A
 ### -field ConnectionType
 
 The NDIS network interface connection type. Use <b>NET_IF_CONNECTION_DEDICATED</b> for a typical Ethernet
-     adapter. The following valuse are valid:
+     adapter. The following values are valid:
      
 
 
@@ -444,7 +442,7 @@ NDIS passes a pointer to an NDIS_BIND_PARAMETERS structure in the
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -530,11 +528,6 @@ NDIS passes a pointer to an NDIS_BIND_PARAMETERS structure in the
 
 
 
-<a href="/windows-hardware/drivers/network/oid-gen-supported-packet-filters">
-   OID_GEN_SUPPORTED_PACKET_FILTERS</a>
-
-
-
 <a href="/windows-hardware/drivers/network/oid-pnp-capabilities">OID_PNP_CAPABILITIES</a>
 
 
@@ -544,3 +537,4 @@ NDIS passes a pointer to an NDIS_BIND_PARAMETERS structure in the
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex">ProtocolBindAdapterEx</a>
+

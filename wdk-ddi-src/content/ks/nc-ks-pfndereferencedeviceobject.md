@@ -1,10 +1,9 @@
 ---
 UID: NC:ks.PFNDEREFERENCEDEVICEOBJECT
 title: PFNDEREFERENCEDEVICEOBJECT (ks.h)
-description: The driver can use this routine to decrement the reference count of the PDO.
+description: The PFNDEREFERENCEDEVICEOBJECT callback function (ks.h) can be invoked by the driver to decrement the reference count of the Physical Device Object (PDO).
 old-location: stream\kstrdereferencedeviceobject.htm
 tech.root: stream
-ms.assetid: 8d220b69-122c-4019-9c70-4c744503481d
 ms.date: 04/23/2018
 keywords: ["PFNDEREFERENCEDEVICEOBJECT callback function"]
 ms.keywords: KStrDereferenceDeviceObject, KStrDereferenceDeviceObject routine [Streaming Media Devices], PFNDEREFERENCEDEVICEOBJECT, ks/KStrDereferenceDeviceObject, ksfunc_521a642c-7a09-416b-a883-09ec5af4f026.xml, stream.kstrdereferencedeviceobject
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - KStrDereferenceDeviceObject
+ - PFNDEREFERENCEDEVICEOBJECT
 ---
 
 # PFNDEREFERENCEDEVICEOBJECT callback function (ks.h)
@@ -50,9 +49,9 @@ The driver can use this routine to decrement the reference count of the PDO.
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to a device extension of the device's PDO.
 
 ## -remarks
@@ -60,3 +59,4 @@ Pointer to a device extension of the device's PDO.
 Minidrivers access this method through the **DereferenceDeviceObject** member of the [BUS_INTERFACE_REFERENCE](./ns-ks-bus_interface_reference.md) structure.
 
 When the PDO's reference count is 0, it becomes eligible for removal. Note that this condition does not guarantee removal.
+

@@ -4,7 +4,6 @@ title: PFND3DDDI_SETVERTEXSHADERCONSTB (d3dumddi.h)
 description: The SetVertexShaderConstB function sets one or more vertex shader constant registers with Boolean values.
 old-location: display\setvertexshaderconstb.htm
 tech.root: display
-ms.assetid: 41ca823e-4370-4cba-9129-067e25a43a69
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETVERTEXSHADERCONSTB callback function"]
 ms.keywords: PFND3DDDI_SETVERTEXSHADERCONSTB, PFND3DDDI_SETVERTEXSHADERCONSTB callback, SetVertexShaderConstB, SetVertexShaderConstB callback function [Display Devices], UserModeDisplayDriver_Functions_5151bd4a-84a4-43d3-a76e-de6f5808281d.xml, d3dumddi/SetVertexShaderConstB, display.setvertexshaderconstb
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - SetVertexShaderConstB
+ - PFND3DDDI_SETVERTEXSHADERCONSTB
 ---
 
 # PFND3DDDI_SETVERTEXSHADERCONSTB callback function
@@ -50,18 +49,18 @@ The <i>SetVertexShaderConstB</i> function sets one or more vertex shader constan
 
 ## -parameters
 
-### -param hDevice 
+### -param hDevice [in]
 
-[in]
+
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_setvertexshaderconst">D3DDDIARG_SETVERTEXSHADERCONST</a> structure that specifies how to set the vertex shader constant registers.
 
-### -param Arg3
+### -param unnamedParam3
 
 *pRegisters* [in]
 
@@ -78,3 +77,4 @@ A pointer to a buffer that contains BOOL values to copy.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

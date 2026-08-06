@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILIMSHANDOVERATTEMPT
 title: RILIMSHANDOVERATTEMPT (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILIMSHANDOVERATTEMPT structure for internal use only."
 old-location: netvista\rilimshandoverattempt.htm
 tech.root: netvista
-ms.assetid: 22491e3c-fa23-473d-b3e6-92c776b81204
 ms.date: 05/02/2018
 keywords: ["RILIMSHANDOVERATTEMPT structure"]
 ms.keywords: "*LPRILIMSHANDOVERATTEMPT, RILIMSHANDOVERATTEMPT, RILIMSHANDOVERATTEMPT structure [Network Drivers Starting with Windows Vista], netvista.rilimshandoverattempt, ntddrilapitypes/RILIMSHANDOVERATTEMPT"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILIMSHANDOVERATTEMPT
+ - LPRILIMSHANDOVERATTEMPT
 ---
 
 # RILIMSHANDOVERATTEMPT structure (rilapitypes.h)

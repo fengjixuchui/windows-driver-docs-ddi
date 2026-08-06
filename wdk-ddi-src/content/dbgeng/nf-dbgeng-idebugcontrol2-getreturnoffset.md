@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl2.GetReturnOffset
 title: IDebugControl2::GetReturnOffset (dbgeng.h)
-description: The GetReturnOffset method returns the return address for the current function.
+description: Learn about the GetReturnOffset method, which returns the return address for the current function.
 old-location: debugger\getreturnoffset.htm
 tech.root: debugger
-ms.assetid: 65d72369-7ace-4d3d-a15c-6322c0066470
 ms.date: 05/03/2018
 keywords: ["IDebugControl2::GetReturnOffset"]
 ms.keywords: GetReturnOffset, GetReturnOffset method [Windows Debugging], GetReturnOffset method [Windows Debugging],IDebugControl interface, GetReturnOffset method [Windows Debugging],IDebugControl2 interface, GetReturnOffset method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],GetReturnOffset method, IDebugControl2 interface [Windows Debugging],GetReturnOffset method, IDebugControl2.GetReturnOffset, IDebugControl2::GetReturnOffset, IDebugControl3 interface [Windows Debugging],GetReturnOffset method, IDebugControl3::GetReturnOffset, IDebugControl::GetReturnOffset, IDebugControl_7c101d44-aa43-48d4-8176-2ed110eca231.xml, dbgeng/IDebugControl2::GetReturnOffset, dbgeng/IDebugControl3::GetReturnOffset, dbgeng/IDebugControl::GetReturnOffset, debugger.getreturnoffset
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.GetReturnOffset
- - IDebugControl2.GetReturnOffset
- - IDebugControl3.GetReturnOffset
+ - IDebugControl2::GetReturnOffset
 ---
 
 # IDebugControl2::GetReturnOffset
@@ -52,9 +49,9 @@ The <b>GetReturnOffset</b> method returns the return address for the current fun
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [out]
 
-[out]
+
 Receives the return address.
 
 ## -returns
@@ -82,3 +79,4 @@ The method was successful.
 ## -remarks
 
 The return address is the location in the process's virtual address space of the instruction that will be executed when the current function returns.
+

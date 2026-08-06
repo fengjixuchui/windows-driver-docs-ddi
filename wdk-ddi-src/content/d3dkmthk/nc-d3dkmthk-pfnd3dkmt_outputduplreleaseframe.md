@@ -1,9 +1,8 @@
 ---
 UID: NC:d3dkmthk.PFND3DKMT_OUTPUTDUPLRELEASEFRAME
 title: PFND3DKMT_OUTPUTDUPLRELEASEFRAME (d3dkmthk.h)
-description: Indicates that the driver has finished processing the duplicated desktop image.
+description: The PFND3DKMT_OUTPUTDUPLRELEASEFRAME callback function indicates that the driver has finished processing the specified duplicated desktop image.
 old-location: display\d3dkmtoutputduplreleaseframe.htm
-ms.assetid: 07bbc201-0320-4f26-be0a-27c06763813f
 ms.date: 05/10/2018
 keywords: ["PFND3DKMT_OUTPUTDUPLRELEASEFRAME callback function"]
 ms.keywords: D3DKMTOutputDuplReleaseFrame, D3DKMTOutputDuplReleaseFrame callback function [Display Devices], PFND3DKMT_OUTPUTDUPLRELEASEFRAME, PFND3DKMT_OUTPUTDUPLRELEASEFRAME callback, d3dkmthk/D3DKMTOutputDuplReleaseFrame, display.d3dkmtoutputduplreleaseframe
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
- - D3DKMTOutputDuplReleaseFrame
+ - PFND3DKMT_OUTPUTDUPLRELEASEFRAME
 ---
 
 # PFND3DKMT_OUTPUTDUPLRELEASEFRAME callback function
@@ -50,11 +49,11 @@ Indicates that the driver has finished processing the duplicated desktop image.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in, out]
 
 *pData* 
 
-[in, out] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_outputdupl_release_frame">D3DKMT_OUTPUTDUPL_RELEASE_FRAME</a> structure that defines the duplicated desktop image that is to be released.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_outputdupl_release_frame">D3DKMT_OUTPUTDUPL_RELEASE_FRAME</a> structure that defines the duplicated desktop image that is to be released.
 
 ## -returns
 
@@ -72,3 +71,4 @@ This function might also return other NTSTATUS values.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_outputdupl_release_frame">D3DKMT_OUTPUTDUPL_RELEASE_FRAME</a>
+

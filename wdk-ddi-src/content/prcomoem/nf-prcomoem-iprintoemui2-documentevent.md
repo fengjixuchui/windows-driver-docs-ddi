@@ -4,7 +4,6 @@ title: IPrintOemUI2::DocumentEvent (prcomoem.h)
 description: The IPrintOemUI2::DocumentEvent method allows a UI plug-in to replace the core driver UI module's default implementation of the DrvDocumentEvent DDI.
 old-location: print\iprintoemui2_documentevent.htm
 tech.root: print
-ms.assetid: c98d1510-7db8-4fd6-a95f-1906f553d1c5
 ms.date: 04/20/2018
 keywords: ["IPrintOemUI2::DocumentEvent"]
 ms.keywords: DocumentEvent, DocumentEvent method [Print Devices], DocumentEvent method [Print Devices],IPrintOemUI2 interface, IPrintOemUI2 interface [Print Devices],DocumentEvent method, IPrintOemUI2.DocumentEvent, IPrintOemUI2::DocumentEvent, prcomoem/IPrintOemUI2::DocumentEvent, print.iprintoemui2_documentevent, print_unidrv-pscript_ui_03e403e4-7b60-413c-a8d2-025b3124f427.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemUI2.DocumentEvent
+ - IPrintOemUI2::DocumentEvent
 ---
 
 # IPrintOemUI2::DocumentEvent
@@ -543,7 +542,7 @@ A user interface plug-in's <code>IPrintOemUI2::DocumentEvent</code> method perfo
 
 If you provide a user interface plug-in, the printer driver's DrvDocumentEvent DDI calls the <code>IPrintOemUI2::DocumentEvent</code> method. The DrvDocumentEvent DDI performs its own processing for the specified event, and then calls the <code>IPrintOemUI2::DocumentEvent</code> method to handle additional processing of the event.
 
-When this method is called with a value of the <i>iEsc</i> parameter of DOCUMENTEVENT_QUERYFILTER, and returns with *<i>piResult</i> == DOCUMENTEVENT_SUCCESS, the spooler can interpret this value in either of two ways, depending on whether certain members of the <a href="/windows-hardware/drivers/ddi/winddiui/ns-winddiui-_docevent_filter">DOCEVENT_FILTER</a> structure changed values. For more information, see the Remarks section for <a href="/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentevent">DrvDocumentEvent</a>.
+When this method is called with a value of the <i>iEsc</i> parameter of DOCUMENTEVENT_QUERYFILTER, and returns with **piResult* == DOCUMENTEVENT_SUCCESS, the spooler can interpret this value in either of two ways, depending on whether certain members of the <a href="/windows-hardware/drivers/ddi/winddiui/ns-winddiui-_docevent_filter">DOCEVENT_FILTER</a> structure changed values. For more information, see the Remarks section for <a href="/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentevent">DrvDocumentEvent</a>.
 
 When the DOCUMENTEVENT_QUERYFILTER event is fired, the core driver calls plug-ins in the order they were installed, until one of them returns S_OK, or until all of the plug-ins have been called and none of them returned S_OK. In this way, at most one plug-in is allowed to handle the DOCUMENTEVENT_QUERYFILTER event, and the filter it specifies is applied to all plug-ins in the plug-in chain.
 
@@ -568,3 +567,4 @@ For a plug-in writer who is implementing the <b>IPrintOemUI2</b> interface, but 
 
 
 <a href="/windows-hardware/drivers/ddi/prcomoem/nn-prcomoem-iprintoemui2">IPrintOemUI2</a>
+

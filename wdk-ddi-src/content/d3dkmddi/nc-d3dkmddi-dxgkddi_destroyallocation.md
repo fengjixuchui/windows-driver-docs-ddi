@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_DESTROYALLOCATION
 title: DXGKDDI_DESTROYALLOCATION (d3dkmddi.h)
 description: The DxgkDdiDestroyAllocation function releases allocations.
 old-location: display\dxgkddidestroyallocation.htm
-ms.assetid: cade544a-f9c6-4635-ab57-d09d694ca315
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_DESTROYALLOCATION callback function"]
 ms.keywords: DXGKDDI_DESTROYALLOCATION, DXGKDDI_DESTROYALLOCATION callback, DmFunctions_4139c309-b149-436b-9ed1-89c0c26f5425.xml, DxgkDdiDestroyAllocation, DxgkDdiDestroyAllocation callback function [Display Devices], d3dkmddi/DxgkDdiDestroyAllocation, display.dxgkddidestroyallocation
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiDestroyAllocation
-product:
- - Windows
+ - DXGKDDI_DESTROYALLOCATION
 ---
 
 # DXGKDDI_DESTROYALLOCATION callback function
@@ -52,13 +49,13 @@ The <i>DxgkDdiDestroyAllocation</i> function releases allocations.
 
 ## -parameters
 
-### -param hAdapter
+### -param hAdapter [in]
 
-[in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
+A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
 
-### -param pDestroyAllocation
+### -param pDestroyAllocation [in]
 
-[in] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_destroyallocation">DXGKARG_DESTROYALLOCATION</a> structure that contains information for releasing allocations.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_destroyallocation">DXGKARG_DESTROYALLOCATION</a> structure that contains information for releasing allocations.
 
 ## -returns
 
@@ -83,3 +80,4 @@ The display miniport driver can release the entire resource as well as allocatio
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_deallocatecb">pfnDeallocateCb</a>
+

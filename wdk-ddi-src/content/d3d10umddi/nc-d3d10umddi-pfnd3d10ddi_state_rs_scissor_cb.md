@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_STATE_RS_SCISSOR_CB
 title: PFND3D10DDI_STATE_RS_SCISSOR_CB (d3d10umddi.h)
 description: The pfnStateRsScissorCb function causes the Microsoft Direct3D 10 runtime to refresh the scissor state.
 old-location: display\pfnstatersscissorcb.htm
-ms.assetid: 4bb88e3c-2309-42f5-bc22-4c7182358e6e
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_STATE_RS_SCISSOR_CB callback function"]
 ms.keywords: PFND3D10DDI_STATE_RS_SCISSOR_CB, PFND3D10DDI_STATE_RS_SCISSOR_CB callback, d3d10state_functions_8690a3ee-bc2c-4164-808b-c308a1784893.xml, d3d10umddi/pfnStateRsScissorCb, display.pfnstatersscissorcb, pfnStateRsScissorCb, pfnStateRsScissorCb callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - pfnStateRsScissorCb
+ - PFND3D10DDI_STATE_RS_SCISSOR_CB
 ---
 
 # PFND3D10DDI_STATE_RS_SCISSOR_CB callback function
@@ -50,7 +49,7 @@ The <b>pfnStateRsScissorCb</b> function causes the Microsoft Direct3D 10 runtime
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hRuntimeDevice* [in]
 
@@ -71,3 +70,4 @@ The <b>pfnStateRsScissorCb</b> function calls the user-mode display driver's <a 
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setscissorrects">SetScissorRects</a>
+

@@ -1,14 +1,11 @@
 ---
 UID: NE:d3d10umddi.D3DDDI_HDR_METADATA_TYPE
 title: D3DDDI_HDR_METADATA_TYPE
-description: Defines the format of HDR metadata.
+description: Learn how this enumeration defines the format of high dynamic range (HDR) metadata.
 tech.root: display
-ms.assetid: 5cd041de-f15e-40a8-854b-7a32a6952734
 ms.date: 04/04/2019
 keywords: ["D3DDDI_HDR_METADATA_TYPE enumeration"]
 ms.keywords: D3DDDI_HDR_METADATA_TYPE, ,
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: d3d10umddi.h
 req.include-header: 
 req.target-type: 
@@ -32,8 +29,6 @@ api_location:
  - d3d10umddi.h
 api_name:
  - D3DDDI_HDR_METADATA_TYPE
-product:
- - Windows
 ---
 
 # D3DDDI_HDR_METADATA_TYPE enumeration (d3d10umddi.h)

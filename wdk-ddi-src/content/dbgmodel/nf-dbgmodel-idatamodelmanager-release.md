@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelManager.Release
 title: IDataModelManager::Release (dbgmodel.h)
-description: Decrements the reference count for an interface on an object.
-ms.assetid: 9d5d4b53-b65b-4e77-85d3-abd66b7e8180
+description: "The IDataModelManager::Release method decrements the reference count for an interface on an object."
 ms.date: 09/21/2018
 keywords: ["IDataModelManager::Release"]
 ms.keywords: IDataModelManager::Release, Release, IDataModelManager.Release, IDataModelManager::Release, IDataModelManager.Release
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager.Release
+ - IDataModelManager::Release
 ---
 
 # IDataModelManager::Release
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IDataModelManager interface](nn-dbgmodel-idatamodelmanager.md)
+

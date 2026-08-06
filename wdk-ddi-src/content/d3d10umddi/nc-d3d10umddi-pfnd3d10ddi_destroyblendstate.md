@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d10umddi.PFND3D10DDI_DESTROYBLENDSTATE
 title: PFND3D10DDI_DESTROYBLENDSTATE (d3d10umddi.h)
-description: The DestroyBlendState function destroys the specified blend state object. The blend state object can be destoyed only if it is not currently bound to a display device.
+description: The DestroyBlendState function destroys the specified blend state object. The blend state object can be destroyed only if it is not currently bound to a display device.
 old-location: display\destroyblendstate.htm
-ms.assetid: 56fc1ecf-fd4c-4d36-941b-8fa6cca3b6b4
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_DESTROYBLENDSTATE callback function"]
 ms.keywords: DestroyBlendState, DestroyBlendState callback function [Display Devices], PFND3D10DDI_DESTROYBLENDSTATE, PFND3D10DDI_DESTROYBLENDSTATE callback, UserModeDisplayDriverDx10_Functions_8af7f412-da7f-4326-a681-41bdfb4a97bb.xml, d3d10umddi/DestroyBlendState, display.destroyblendstate
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - DestroyBlendState
+ - PFND3D10DDI_DESTROYBLENDSTATE
 ---
 
 # PFND3D10DDI_DESTROYBLENDSTATE callback function
@@ -46,17 +45,17 @@ api_name:
 
 ## -description
 
-The <b>DestroyBlendState</b> function destroys the specified blend state object. The blend state object can be destoyed only if it is not currently bound to a display device.
+The <b>DestroyBlendState</b> function destroys the specified blend state object. The blend state object can be destroyed only if it is not currently bound to a display device.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hBlendState* [in]
 
@@ -77,3 +76,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

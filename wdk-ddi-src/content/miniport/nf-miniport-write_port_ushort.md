@@ -1,10 +1,9 @@
 ---
 UID: NF:miniport.WRITE_PORT_USHORT
 title: WRITE_PORT_USHORT function (miniport.h)
-description: The WRITE_PORT_USHORT routine writes a USHORT value to the specified port address.
+description: The WRITE_PORT_USHORT function (miniport.h) writes a USHORT value to the specified port address in resident, mapped device memory.
 old-location: kernel\write_port_ushort.htm
 tech.root: kernel
-ms.assetid: 60145cf3-62cb-4165-8536-f1546b9623dd
 ms.date: 04/30/2018
 keywords: ["WRITE_PORT_USHORT function"]
 ms.keywords: WRITE_PORT_USHORT, WRITE_PORT_USHORT routine [Kernel-Mode Driver Architecture], k103_28fd826b-359f-4111-91d0-426fb2d2a62b.xml, kernel.write_port_ushort, wdm/WRITE_PORT_USHORT
@@ -51,12 +50,12 @@ The <b>WRITE_PORT_USHORT</b> routine writes a USHORT value to the specified port
 
 ## -parameters
 
-#### - Port [in]
+### -param Port [in]
 
 Pointer to the port, which must be a mapped memory range in I/O space.
 
 
-#### - Value [in]
+### -param Value [in]
 
 Specifies a USHORT value to be written to the port.
 

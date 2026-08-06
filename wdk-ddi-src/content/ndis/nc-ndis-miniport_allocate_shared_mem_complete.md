@@ -4,7 +4,6 @@ title: MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE (ndis.h)
 description: NDIS calls a miniport driver's MiniportSharedMemoryAllocateComplete function to complete a shared memory allocation request that the miniport driver started by calling the NdisMAllocateSharedMemoryAsyncEx function.
 old-location: netvista\miniportsharedmemoryallocatecomplete.htm
 tech.root: netvista
-ms.assetid: d102a001-960c-4fe6-af2d-d740bba744b1
 ms.date: 05/02/2018
 keywords: ["MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE callback function"]
 ms.keywords: MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE, MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE callback, MiniportSharedMemoryAllocateComplete, MiniportSharedMemoryAllocateComplete callback function [Network Drivers Starting with Windows Vista], ndis/MiniportSharedMemoryAllocateComplete, ndis_sgdma_ref_0099c752-42ac-4b2d-9787-98deca358cfc.xml, netvista.miniportsharedmemoryallocatecomplete
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportSharedMemoryAllocateComplete
+ - MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE
 ---
 
 # MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE callback function
@@ -56,36 +55,36 @@ NDIS calls a miniport driver's
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 The handle to a context area allocated by the miniport driver in which the driver maintains state
      information for a NIC. The driver allocates this context area in the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">
      MiniportInitializeEx</a> function.
 
-### -param VirtualAddress 
+### -param VirtualAddress [in]
 
-[in]
+
 The base virtual address of the shared memory that the miniport driver allocated by calling 
      <b>NdisMAllocateSharedMemoryAsyncEx</b>. 
      <i>VirtualAddress</i> is <b>NULL</b> if the allocation attempt failed.
 
-### -param PhysicalAddress 
+### -param PhysicalAddress [in]
 
-[in]
+
 The base physical address for the NIC to use that is mapped to the address that the 
      <i>VirtualAddress</i> parameter specifies.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The number of bytes that 
      <b>NdisMAllocateSharedMemoryAsyncEx</b> allocated.
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to a context area that the miniport driver specified in the preceding call to 
      <b>NdisMAllocateSharedMemoryAsyncEx</b>.
 
@@ -150,3 +149,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterscattergatherdma">
    NdisMRegisterScatterGatherDma</a>
+

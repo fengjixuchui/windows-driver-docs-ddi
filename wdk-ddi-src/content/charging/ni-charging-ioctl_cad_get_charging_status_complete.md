@@ -1,11 +1,10 @@
 ---
 UID: NI:charging.IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE
 title: IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE (charging.h)
-description: This IOCTL is for internal use only.
+description: "Microsoft reserves the IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE system call for internal use only. Don't use this system call in your code."
 old-location: battery\ioctl_cad_get_charging_status_complete.htm
 tech.root: battery
-ms.assetid: 715F1DF3-C3CF-4662-8095-22ECA0E45796
-ms.date: 02/15/2018
+ms.date: 07/25/2023
 keywords: ["IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE IOCTL"]
 ms.keywords: IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE, IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE control, IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE control code [Battery Devices], battery.ioctl_cad_get_charging_status_complete, charging/IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE
 req.header: charging.h
@@ -43,12 +42,13 @@ api_name:
 
 # IOCTL_CAD_GET_CHARGING_STATUS_COMPLETE IOCTL
 
-
 ## -description
 
 This IOCTL is for internal use only.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 
@@ -66,6 +66,10 @@ This IOCTL is for internal use only.
 
 Irp->IoStatus.Status is set to STATUS_SUCCESS if the request is successful.
 
-Otherwise, Status to the appropriate error condition as a NTSTATUS code. 
+Otherwise, Status to the appropriate error condition as a NTSTATUS code.
 
 For more information, see [NTSTATUS Values](/windows-hardware/drivers/kernel/ntstatus-values).
+
+## -see-also
+
+[**charging.h**](index.md)

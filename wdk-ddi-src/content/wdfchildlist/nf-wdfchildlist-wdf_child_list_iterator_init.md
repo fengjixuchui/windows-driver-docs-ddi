@@ -4,7 +4,6 @@ title: WDF_CHILD_LIST_ITERATOR_INIT function (wdfchildlist.h)
 description: The WDF_CHILD_LIST_ITERATOR_INIT function initializes a WDF_CHILD_LIST_ITERATOR structure.
 old-location: wdf\wdf_child_list_iterator_init.htm
 tech.root: wdf
-ms.assetid: e06a377a-e68a-4773-9f7f-b1c47010029c
 ms.date: 02/26/2018
 keywords: ["WDF_CHILD_LIST_ITERATOR_INIT function"]
 ms.keywords: DFDeviceObjectChildListRef_5040aac1-503f-4559-ad77-0304bfb67e3d.xml, WDF_CHILD_LIST_ITERATOR_INIT, WDF_CHILD_LIST_ITERATOR_INIT function, kmdf.wdf_child_list_iterator_init, wdf.wdf_child_list_iterator_init, wdfchildlist/WDF_CHILD_LIST_ITERATOR_INIT
@@ -52,14 +51,14 @@ The <b>WDF_CHILD_LIST_ITERATOR_INIT</b> function initializes a <a href="/windows
 
 ## -parameters
 
-### -param Iterator 
+### -param Iterator [out]
 
-[out]
+
 A pointer to a driver-supplied <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_list_iterator">WDF_CHILD_LIST_ITERATOR</a> structure.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfchildlist/ne-wdfchildlist-_wdf_retrieve_child_flags">WDF_RETRIEVE_CHILD_FLAGS</a>-typed flag value.
 
 ## -see-also

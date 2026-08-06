@@ -4,7 +4,6 @@ title: _ISCSI_DiscoveredTargetPortalGroup2 (iscsifnd.h)
 description: The ISCSI_DiscoveredTargetPortalGroup2 structure contains information about a discovered target portal group.
 old-location: storage\iscsi_discoveredtargetportalgroup2.htm
 tech.root: storage
-ms.assetid: d852f062-3090-4a7a-bdb8-9dde93257a90
 ms.date: 03/29/2018
 keywords: ["ISCSI_DiscoveredTargetPortalGroup2 structure"]
 ms.keywords: "*PISCSI_DiscoveredTargetPortalGroup2, ISCSI_DiscoveredTargetPortalGroup2, ISCSI_DiscoveredTargetPortalGroup2 structure [Storage Devices], PISCSI_DiscoveredTargetPortalGroup2, PISCSI_DiscoveredTargetPortalGroup2 structure pointer [Storage Devices], _ISCSI_DiscoveredTargetPortalGroup2, iscsifnd/ISCSI_DiscoveredTargetPortalGroup2, iscsifnd/PISCSI_DiscoveredTargetPortalGroup2, storage.iscsi_discoveredtargetportalgroup2, structs-iSCSI_2135fea1-a4b9-401e-a7b3-9a1b1896fe28.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsifnd.h
 api_name:
+ - _ISCSI_DiscoveredTargetPortalGroup2
+ - PISCSI_DiscoveredTargetPortalGroup2
  - ISCSI_DiscoveredTargetPortalGroup2
 ---
 
@@ -85,3 +86,4 @@ The WMI tool suite automatically generates a declaration of the ISCSI_Discovered
 
 
 <a href="/windows-hardware/drivers/storage/iscsi-discoveredtargetportalgroup2-wmi-class">ISCSI_DiscoveredTargetPortalGroup2 WMI Class</a>
+

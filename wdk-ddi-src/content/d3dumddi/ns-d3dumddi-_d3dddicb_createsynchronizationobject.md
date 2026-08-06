@@ -4,7 +4,6 @@ title: _D3DDDICB_CREATESYNCHRONIZATIONOBJECT (d3dumddi.h)
 description: The D3DDDICB_CREATESYNCHRONIZATIONOBJECT structure describes a synchronization object that the pfnCreateSynchronizationObjectCb function creates.
 old-location: display\d3dddicb_createsynchronizationobject.htm
 tech.root: display
-ms.assetid: e799a11c-eab7-4d85-9ed8-063e87aa351f
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_CREATESYNCHRONIZATIONOBJECT structure"]
 ms.keywords: D3DDDICB_CREATESYNCHRONIZATIONOBJECT, D3DDDICB_CREATESYNCHRONIZATIONOBJECT structure [Display Devices], D3D_param_Structs_b52426c9-988d-4676-b906-cfa13cc9ffc5.xml, _D3DDDICB_CREATESYNCHRONIZATIONOBJECT, d3dumddi/D3DDDICB_CREATESYNCHRONIZATIONOBJECT, display.d3dddicb_createsynchronizationobject
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDICB_CREATESYNCHRONIZATIONOBJECT
  - D3DDDICB_CREATESYNCHRONIZATIONOBJECT
 ---
 
@@ -52,13 +52,13 @@ The D3DDDICB_CREATESYNCHRONIZATIONOBJECT structure describes a synchronization o
 
 ## -struct-fields
 
-### -field Info
+### -field Info [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_synchronizationobjectinfo">D3DDDI_SYNCHRONIZATIONOBJECTINFO</a> structure that contains information about the kernel-mode synchronization object.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_synchronizationobjectinfo">D3DDDI_SYNCHRONIZATIONOBJECTINFO</a> structure that contains information about the kernel-mode synchronization object.
 
-### -field hSyncObject
+### -field hSyncObject [out]
 
-[out] A <b>D3DKMT_HANDLE</b> value that represents a kernel-mode handle to the kernel-mode synchronization object.
+A <b>D3DKMT_HANDLE</b> value that represents a kernel-mode handle to the kernel-mode synchronization object.
 
 ## -see-also
 
@@ -67,3 +67,4 @@ The D3DDDICB_CREATESYNCHRONIZATIONOBJECT structure describes a synchronization o
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createsynchronizationobjectcb">pfnCreateSynchronizationObjectCb</a>
+

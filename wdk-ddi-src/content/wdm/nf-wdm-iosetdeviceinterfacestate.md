@@ -4,7 +4,6 @@ title: IoSetDeviceInterfaceState function (wdm.h)
 description: The IoSetDeviceInterfaceState routine enables or disables an instance of a previously registered device interface class.
 old-location: kernel\iosetdeviceinterfacestate.htm
 tech.root: kernel
-ms.assetid: 071b5f2a-7129-4de5-9577-f2aa22f23765
 ms.date: 04/30/2018
 keywords: ["IoSetDeviceInterfaceState function"]
 ms.keywords: IoSetDeviceInterfaceState, IoSetDeviceInterfaceState routine [Kernel-Mode Driver Architecture], k104_da5493d0-6dd5-4404-a647-6c23825df29c.xml, kernel.iosetdeviceinterfacestate, wdm/IoSetDeviceInterfaceState
@@ -50,14 +49,14 @@ The <b>IoSetDeviceInterfaceState</b> routine enables or disables an instance of 
 
 ## -parameters
 
-### -param SymbolicLinkName 
+### -param SymbolicLinkName [in]
 
-[in]
+
 Pointer to a string that identifies the device interface instance that is being enabled or disabled. This string was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ioregisterdeviceinterface">IoRegisterDeviceInterface</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdeviceinterfaces">IoGetDeviceInterfaces</a>.
 
-### -param Enable 
+### -param Enable [in]
 
-[in]
+
 <b>TRUE</b> indicates that the device interface is being enabled. <b>FALSE</b> indicates that the device interface is being disabled.
 
 ## -returns

@@ -4,7 +4,6 @@ title: IWDFIoRequest::GetDeviceIoControlParameters (wudfddi.h)
 description: The GetDeviceIoControlParameters method retrieves the request parameters for a device I/O control-type request.
 old-location: wdf\iwdfiorequest_getdeviceiocontrolparameters.htm
 tech.root: wdf
-ms.assetid: 96de6f7a-da1d-44a6-b1f7-44859312a662
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequest::GetDeviceIoControlParameters"]
 ms.keywords: GetDeviceIoControlParameters, GetDeviceIoControlParameters method, GetDeviceIoControlParameters method,IWDFIoRequest interface, IWDFIoRequest interface,GetDeviceIoControlParameters method, IWDFIoRequest.GetDeviceIoControlParameters, IWDFIoRequest::GetDeviceIoControlParameters, UMDFRequestObjectRef_8a0fa5cd-af16-4599-8282-4ca0a81591ac.xml, umdf.iwdfiorequest_getdeviceiocontrolparameters, wdf.iwdfiorequest_getdeviceiocontrolparameters, wudfddi/IWDFIoRequest::GetDeviceIoControlParameters
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequest.GetDeviceIoControlParameters
+ - IWDFIoRequest::GetDeviceIoControlParameters
 ---
 
 # IWDFIoRequest::GetDeviceIoControlParameters
@@ -52,23 +51,23 @@ The <b>GetDeviceIoControlParameters</b> method retrieves the request parameters 
 
 ## -parameters
 
-### -param pControlCode 
+### -param pControlCode [out]
 
-[out]
+
 A pointer to a variable that receives the control code that identifies the specific operation to be performed.
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information.
 
-### -param pInBufferSize 
+### -param pInBufferSize [out]
 
-[out]
+
 A pointer to a variable that receives the size, in bytes, of the input data buffer for the request. To retrieve the input data buffer, the driver calls the <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-getinputmemory">IWDFIoRequest::GetInputMemory</a> method.
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information.
 
-### -param pOutBufferSize 
+### -param pOutBufferSize [out]
 
-[out]
+
 A pointer to a variable that receives the size, in bytes, of the output data buffer for the request. To retrieve the output data buffer, the driver calls the <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-getoutputmemory">IWDFIoRequest::GetOutputMemory</a> method.
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information.
@@ -90,3 +89,4 @@ Although the driver can optionally specify <b>NULL</b> for each of the <i>pContr
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-getoutputmemory">IWDFIoRequest::GetOutputMemory</a>
+

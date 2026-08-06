@@ -4,7 +4,6 @@ title: IDebugClient5::SetQuitLockString (dbgeng.h)
 description: Sets a quit lock string.
 old-location: debugger\idebugclient5_setquitlockstring.htm
 tech.root: debugger
-ms.assetid: 0C4888C7-B7F9-4B23-8AC9-41CB7863AF22
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::SetQuitLockString"]
 ms.keywords: IDebugClient5 interface [Windows Debugging],SetQuitLockString method, IDebugClient5.SetQuitLockString, IDebugClient5::SetQuitLockString, SetQuitLockString, SetQuitLockString method [Windows Debugging], SetQuitLockString method [Windows Debugging],IDebugClient5 interface, dbgeng/IDebugClient5::SetQuitLockString, debugger.idebugclient5_setquitlockstring
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient5.SetQuitLockString
+ - IDebugClient5::SetQuitLockString
 ---
 
 # IDebugClient5::SetQuitLockString
@@ -50,9 +49,9 @@ Sets a quit lock string.
 
 ## -parameters
 
-### -param String 
+### -param String [in]
 
-[in]
+
 A pointer to the quit lock string.
 
 ## -returns
@@ -67,3 +66,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient5">IDebugClient5</a>
+

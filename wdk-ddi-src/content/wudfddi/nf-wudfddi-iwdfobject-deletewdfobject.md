@@ -4,7 +4,6 @@ title: IWDFObject::DeleteWdfObject (wudfddi.h)
 description: The DeleteWdfObject method deletes a previously created Microsoft Windows Driver Frameworks (WDF) object.
 old-location: wdf\iwdfobject_deletewdfobject.htm
 tech.root: wdf
-ms.assetid: a777b8df-e255-402a-aa55-14e5861b215f
 ms.date: 02/26/2018
 keywords: ["IWDFObject::DeleteWdfObject"]
 ms.keywords: DeleteWdfObject, DeleteWdfObject method, DeleteWdfObject method,IWDFObject interface, IWDFObject interface,DeleteWdfObject method, IWDFObject.DeleteWdfObject, IWDFObject::DeleteWdfObject, UMDFBaseObjectRef_e8c4d75a-eed6-4da3-9cce-79d863a01cd6.xml, umdf.iwdfobject_deletewdfobject, wdf.iwdfobject_deletewdfobject, wudfddi/IWDFObject::DeleteWdfObject
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFObject.DeleteWdfObject
+ - IWDFObject::DeleteWdfObject
 ---
 
 # IWDFObject::DeleteWdfObject
@@ -76,3 +75,4 @@ For a code example of how to use the <b>DeleteWdfObject</b> method, see <a href=
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a>
+

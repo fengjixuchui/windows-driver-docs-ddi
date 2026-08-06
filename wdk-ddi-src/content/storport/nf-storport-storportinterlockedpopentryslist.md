@@ -4,7 +4,6 @@ title: StorPortInterlockedPopEntrySList function (storport.h)
 description: Removes an item from the front of a Storport managed singly linked list. Access to the list is synchronized on a multiprocessor system. Syntax.
 old-location: storage\storportinterlockedpopentryslist.htm
 tech.root: storage
-ms.assetid: 9DA0A057-1472-4B42-9149-A961F7D84B2E
 ms.date: 03/29/2018
 keywords: ["StorPortInterlockedPopEntrySList function"]
 ms.keywords: StorPortInterlockedPopEntrySList, StorPortInterlockedPopEntrySList routine [Storage Devices], storage.storportinterlockedpopentryslist, storport/StorPortInterlockedPopEntrySList
@@ -52,19 +51,19 @@ Syntax
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param SListHead 
+### -param SListHead [in, out]
 
-[in, out]
+
 A pointer to an <b>STOR_SLIST_HEADER</b> structure that represents the head of a singly linked list. This structure is considered opaque and is for use by the Storport driver only.
 
-### -param Result 
+### -param Result [out]
 
-[out]
+
 A pointer to a list entry pointer. The value returned is a pointer to  the item removed  from the front of the list. If the list is empty, then <b>NULL</b> is returned in the value pointed to by <i>Result</i>.
 
 ## -returns

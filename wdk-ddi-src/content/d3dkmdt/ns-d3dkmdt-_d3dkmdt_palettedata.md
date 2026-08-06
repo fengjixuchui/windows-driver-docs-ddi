@@ -4,14 +4,13 @@ title: _D3DKMDT_PALETTEDATA (d3dkmdt.h)
 description: The D3DKMDT_PALETTEDATA structure describes a palette entry for the display.
 old-location: display\d3dkmdt_palettedata.htm
 tech.root: display
-ms.assetid: 81ff56bb-84e5-4556-a0bf-32164b938622
 ms.date: 05/10/2018
 keywords: ["D3DKMDT_PALETTEDATA structure"]
 ms.keywords: D3DKMDT_PALETTEDATA, D3DKMDT_PALETTEDATA structure [Display Devices], DmStructs_83e6b2ae-dd44-4a21-bca5-6009af1f4ced.xml, _D3DKMDT_PALETTEDATA, d3dkmdt/D3DKMDT_PALETTEDATA, display.d3dkmdt_palettedata
 req.header: d3dkmdt.h
-req.include-header: D3dkmdt.h
+req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmdt.h
 api_name:
+ - _D3DKMDT_PALETTEDATA
  - D3DKMDT_PALETTEDATA
 ---
 
@@ -75,3 +75,4 @@ An unused portion of the display.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_setpalette">DxgkDdiSetPalette</a>
+

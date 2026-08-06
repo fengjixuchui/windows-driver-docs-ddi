@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_CREATE_DISCOVERY_PROFILES
 title: DOT11EXTIHV_CREATE_DISCOVERY_PROFILES (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_CREATE_DISCOVERY_PROFILES callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvcreatediscoveryprofiles.htm
 tech.root: netvista
-ms.assetid: e741bfa7-eb97-4f94-beb4-545d7bedcea8
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_CREATE_DISCOVERY_PROFILES callback"]
 ms.keywords: DOT11EXTIHV_CREATE_DISCOVERY_PROFILES, Dot11ExtIhvCreateDiscoveryProfiles, Dot11ExtIhvCreateDiscoveryProfiles callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_fadde2b4-2a9d-4c6b-8a92-e044bab5c544.xml, netvista.dot11extihvcreatediscoveryprofiles, wlanihv/Dot11ExtIhvCreateDiscoveryProfiles
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_CREATE_DISCOVERY_PROFILES
  - wlanihv/DOT11EXTIHV_CREATE_DISCOVERY_PROFILES
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtIhvCreateDiscoveryProfiles
+ - DOT11EXTIHV_CREATE_DISCOVERY_PROFILES
 ---
 
 # DOT11EXTIHV_CREATE_DISCOVERY_PROFILES callback
@@ -56,32 +54,32 @@ The operating system calls the
 
 ## -parameters
 
-### -param hIhvExtAdapter 
+### -param hIhvExtAdapter [in, optional]
 
-[in, optional]
+
 The handle used by the IHV Extensions DLL to reference the wireless LAN (WLAN) adapter. This
      handle value was specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param bInsecure 
+### -param bInsecure [in]
 
-[in]
+
 A Boolean value that specifies the security status of the discovery profiles. If set to <b>TRUE</b>, the
      IHV Extensions DLL can only return secure profiles, such as profiles which involve user
      authentication.
 
-### -param pIhvProfileParams 
+### -param pIhvProfileParams [in, optional]
 
-[in, optional]
+
 A pointer to a
      <a href="..\wlanihvtypes\ns-wlanihvtypes-_dot11ext_ihv_profile_params.md">
      DOT11EXT_IHV_PROFILE_PARAMS</a> structure. This structure defines the attributes of the basic service
      set (BSS) network to which the profile extensions will be applied.
 
-### -param pConnectableBssid 
+### -param pConnectableBssid [in, optional]
 
-[in, optional]
+
 A pointer to a
      <a href="..\wlclient\ns-wlclient-_dot11_bss_list.md">DOT11_BSS_LIST</a> structure, which contains one
      or more 802.11 Beacon or Probe Response frames received from a BSS network. This list is derived from
@@ -93,17 +91,17 @@ A pointer to a
 <div class="alert"><b>Note</b>  For Windows Vista, the IHV Extensions DLL supports only infrastructure basic
      service set (BSS) networks.</div>
 
-### -param pIhvDiscoveryProfileList 
+### -param pIhvDiscoveryProfileList [out]
 
-[out]
+
 A pointer to a
      <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_discovery_profile_list.md">
      DOT11EXT_IHV_DISCOVERY_PROFILE_LIST</a> structure that specifies a list of IHV discovery
      profiles.
 
-### -param pdwReasonCode 
+### -param pdwReasonCode [out]
 
-[out]
+
 A pointer to a DWORD value, which provides additional information for the return value of the
      <i>Dot11ExtIhvCreateDiscoveryProfiles</i> function. The IHV Extensions DLL must set *
      <i>pdwReasonCode</i> to an L2_REASON_CODE_xxxx value, which are defined in
@@ -201,3 +199,4 @@ For more information about creating discovery profiles, see
 
 
 <a href="..\wlanihvtypes\ns-wlanihvtypes-_dot11ext_ihv_profile_params.md">DOT11EXT_IHV_PROFILE_PARAMS</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILDEACTIVATEPERSOPARAMS
 title: RILDEACTIVATEPERSOPARAMS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILDEACTIVATEPERSOPARAMS structure for internal use only."
 old-location: netvista\rildeactivatepersoparams.htm
 tech.root: netvista
-ms.assetid: 408ae5d4-f83f-4e4a-9850-a7bae70a2da2
 ms.date: 05/02/2018
 keywords: ["RILDEACTIVATEPERSOPARAMS structure"]
 ms.keywords: "*LPRILDEACTIVATEPERSOPARAMS, RILDEACTIVATEPERSOPARAMS, RILDEACTIVATEPERSOPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rildeactivatepersoparams, ntddrilapitypes/RILDEACTIVATEPERSOPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILDEACTIVATEPERSOPARAMS
+ - LPRILDEACTIVATEPERSOPARAMS
 ---
 
 # RILDEACTIVATEPERSOPARAMS structure (rilapitypes.h)

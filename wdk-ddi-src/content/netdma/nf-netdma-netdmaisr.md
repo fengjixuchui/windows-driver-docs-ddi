@@ -4,7 +4,6 @@ title: NetDmaIsr function (netdma.h)
 description: The NetDmaIsr function notifies the NetDMA interface that a DMA transfer interrupt has occurred on a DMA channel.
 old-location: netvista\netdmaisr.htm
 tech.root: netvista
-ms.assetid: 81aa5707-b614-429b-bd8e-0204eec74e0f
 ms.date: 05/02/2018
 keywords: ["NetDmaIsr function"]
 ms.keywords: NetDmaIsr, NetDmaIsr function [Network Drivers Starting with Windows Vista], netdma/NetDmaIsr, netdma_ref_5a9b1659-b106-4eed-931d-f2ad8b2476e9.xml, netvista.netdmaisr
@@ -54,22 +53,22 @@ in Windows 8 and later.</div><div> </div>The
 
 ## -parameters
 
-### -param NetDmaChannelHandle 
+### -param NetDmaChannelHandle [in]
 
-[in]
+
 A handle that identifies the DMA channel. The DMA provider driver received this handle from the
      NetDMA interface in a call to the 
      <a href="/windows-hardware/drivers/ddi/netdma/nc-netdma-dma_channel_allocate_handler">
      ProviderAllocateDmaChannel</a> function.
 
-### -param DmaDescriptor 
+### -param DmaDescriptor [in]
 
-[in]
+
 The physical address of the DMA descriptor that is associated with the interrupt.
 
-### -param pCpuNumber 
+### -param pCpuNumber [out]
 
-[out]
+
 The number of the CPU that is associated with the interrupt DPC. The NetDMA interface writes this
      CPU number at the provided address before 
      <b>NetDmaIsr</b> returns.

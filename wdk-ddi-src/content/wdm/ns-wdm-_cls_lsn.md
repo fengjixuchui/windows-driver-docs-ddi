@@ -4,7 +4,6 @@ title: _CLS_LSN (wdm.h)
 description: The CLFS_LSN structure identifies an individual record in a Common Log File System (CLFS) stream.
 old-location: kernel\clfs_lsn.htm
 tech.root: kernel
-ms.assetid: ac50c4e1-4b87-4c6e-a5c7-24f961224134
 ms.date: 04/30/2018
 keywords: ["CLS_LSN structure"]
 ms.keywords: "*PCLFS_LSN, *PCLS_LSN, CLFS_LSN, CLS_LSN, CLS_LSN structure [Kernel-Mode Driver Architecture], PCLFS_LSN, PCLFS_LSN structure [Kernel-Mode Driver Architecture], PCLFS_LSN structure pointer [Kernel-Mode Driver Architecture], PCLS_LSN, PCLS_LSN structure pointer [Kernel-Mode Driver Architecture], PPCLFS_LSN, PPCLFS_LSN structure pointer [Kernel-Mode Driver Architecture], PPCLS_LSN, PPCLS_LSN structure pointer [Kernel-Mode Driver Architecture], _CLS_LSN, kernel.clfs_lsn, kstruct_a_25e68bfe-85ad-4716-a47f-7f248ca068e4.xml, wdm/CLS_LSN, wdm/PCLFS_LSN, wdm/PCLS_LSN, wdm/PPCLFS_LSN, wdm/PPCLS_LSN"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _CLS_LSN
+ - PCLS_LSN
  - CLS_LSN
 ---
 
@@ -63,3 +64,4 @@ A 64-bit value that holds three pieces of information about a log record: contai
 A container is a contiguous physical disk extent that serves as part of a CLFS log. A given CLFS log has several containers. Each container has several sector-aligned blocks, each of which holds a numbered sequence of records. A record can be identified by the triple (logical container identifier, block offset, record sequence number).
 
 To obtain the container identifier, block offset, and record sequence number from a <b>CLFS_LSN</b> structure, call <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfslsncontainer">ClfsLsnContainer</a>, <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfslsnblockoffset">ClfsLsnBlockOffset</a>, and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfslsnrecordsequence">ClfsLsnRecordSequence</a>.
+

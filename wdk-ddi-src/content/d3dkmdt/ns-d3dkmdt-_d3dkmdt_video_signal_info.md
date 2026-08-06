@@ -4,14 +4,13 @@ title: _D3DKMDT_VIDEO_SIGNAL_INFO (d3dkmdt.h)
 description: The D3DKMDT_VIDEO_SIGNAL_INFO structure contains information about a video signal driven by a video output on a display adapter.
 old-location: display\d3dkmdt_video_signal_info.htm
 tech.root: display
-ms.assetid: 38d0a655-265b-46e0-8af3-de6757025588
 ms.date: 05/10/2018
 keywords: ["D3DKMDT_VIDEO_SIGNAL_INFO structure"]
 ms.keywords: D3DKMDT_VIDEO_SIGNAL_INFO, D3DKMDT_VIDEO_SIGNAL_INFO structure [Display Devices], DmStructs_10882170-8ccd-481d-bb36-b0a1f706e395.xml, _D3DKMDT_VIDEO_SIGNAL_INFO, d3dkmdt/D3DKMDT_VIDEO_SIGNAL_INFO, display.d3dkmdt_video_signal_info
 req.header: d3dkmdt.h
-req.include-header: D3dkmdt.h
+req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmdt.h
 api_name:
+ - _D3DKMDT_VIDEO_SIGNAL_INFO
  - D3DKMDT_VIDEO_SIGNAL_INFO
 ---
 
@@ -115,3 +115,4 @@ A constant from the <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmdt_vidpn_target_mode">D3DKMDT_VIDPN_TARGET_MODE</a>
+

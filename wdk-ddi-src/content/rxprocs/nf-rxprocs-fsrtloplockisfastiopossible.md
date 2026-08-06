@@ -1,10 +1,9 @@
 ---
 UID: NF:rxprocs.FsRtlOplockIsFastIoPossible
 title: FsRtlOplockIsFastIoPossible macro (rxprocs.h)
-description: FsRtlOplockIsFastIoPossible checks a file's opportunistic lock (oplock) state to determine whether fast I/O can be performed on the file.
+description: Learn how the FsRtlOplockIsFastIoPossible checks a file's opportunistic lock (oplock) state to determine whether fast I/O can be performed on the file.
 old-location: ifsk\fsrtloplockisfastiopossible.htm
 tech.root: ifsk
-ms.assetid: ba482fbf-862c-48b4-b8f9-aaab6c5527ee
 ms.date: 04/16/2018
 keywords: ["FsRtlOplockIsFastIoPossible macro"]
 ms.keywords: FsRtlOplockIsFastIoPossible, FsRtlOplockIsFastIoPossible function [Installable File System Drivers], fsrtlref_94131dc4-e2ee-4ec0-92b9-39cd8a7d6e41.xml, ifsk.fsrtloplockisfastiopossible, rxprocs/FsRtlOplockIsFastIoPossible
@@ -60,7 +59,7 @@ api_name:
 
 <ul>
 <li>
-If the <i>Oplock</i> parameter is <b>NULL</b>, or if the value of *<i>Oplock</i> is <b>NULL</b>, there are no outstanding opportunistic locks on the file, and fast I/O can be performed on the file. 
+If the <i>Oplock</i> parameter is <b>NULL</b>, or if the value of **Oplock* is <b>NULL</b>, there are no outstanding opportunistic locks on the file, and fast I/O can be performed on the file. 
 
 </li>
 <li>

@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGK_QUERYSEGMENTOUT3
 title: _DXGK_QUERYSEGMENTOUT3 (d3dkmddi.h)
 description: Describes memory-segment information that a Windows Display Driver Model (WDDM) 1.2 or later display miniport driver should return from a call to its DxgkDdiQueryAdapterInfo function.
 old-location: display\dxgk_querysegmentout3.htm
-ms.assetid: 4a78a998-7eab-4499-a280-96ca6d6ff5a2
 ms.date: 05/10/2018
 keywords: ["DXGK_QUERYSEGMENTOUT3 structure"]
 ms.keywords: DXGK_QUERYSEGMENTOUT3, DXGK_QUERYSEGMENTOUT3 structure [Display Devices], _DXGK_QUERYSEGMENTOUT3, d3dkmddi/DXGK_QUERYSEGMENTOUT3, display.dxgk_querysegmentout3
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmddi.h
 api_name:
+ - _DXGK_QUERYSEGMENTOUT3
  - DXGK_QUERYSEGMENTOUT3
 ---
 
@@ -52,25 +52,25 @@ Describes memory-segment information that a Windows Display Driver Model (WDDM) 
 
 ## -struct-fields
 
-### -field NbSegment
+### -field NbSegment [out]
 
-[out] The number of memory segments that the driver supports.
+The number of memory segments that the driver supports.
 
-### -field pSegmentDescriptor
+### -field pSegmentDescriptor [out]
 
-[out] An array of <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentdescriptor3">DXGK_SEGMENTDESCRIPTOR3</a> structures that the driver populates with information about the segments it supports. The size of the array is the value that <b>NbSegment</b> specifies.
+An array of <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentdescriptor3">DXGK_SEGMENTDESCRIPTOR3</a> structures that the driver populates with information about the segments it supports. The size of the array is the value that <b>NbSegment</b> specifies.
 
-### -field PagingBufferSegmentId
+### -field PagingBufferSegmentId [out]
 
-[out] The identifier of the segment that the video memory manager should allocate the paging buffer from. This segment must be an aperture segment.
+The identifier of the segment that the video memory manager should allocate the paging buffer from. This segment must be an aperture segment.
 
-### -field PagingBufferSize
+### -field PagingBufferSize [out]
 
-[out] The size, in bytes, that the video memory manager should allocate for the paging buffer.
+The size, in bytes, that the video memory manager should allocate for the paging buffer.
 
-### -field PagingBufferPrivateDataSize
+### -field PagingBufferPrivateDataSize [out]
 
-[out] The size, in bytes, of the driver-resident private data structure that is associated with each paging buffer. Memory for this private data structure is allocated from nonpaged pool. If the driver specifies zero for <b>PagingBufferPrivateDataSize</b>, no memory is allocated for the private data structure.
+The size, in bytes, of the driver-resident private data structure that is associated with each paging buffer. Memory for this private data structure is allocated from nonpaged pool. If the driver specifies zero for <b>PagingBufferPrivateDataSize</b>, no memory is allocated for the private data structure.
 
 The private data structure that is associated with a paging buffer is initialized to zero when the paging buffer is created. During the lifetime of the paging buffer, the video memory manager never accesses the private data structure that is associated with the paging buffer.
 
@@ -95,3 +95,4 @@ The video memory manager allocates a paging buffer either from an aperture segme
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo">DxgkDdiQueryAdapterInfo</a>
+

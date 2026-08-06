@@ -4,7 +4,6 @@ title: IDebugDataSpaces4::ReadUnicodeStringVirtualWide (dbgeng.h)
 description: The ReadUnicodeStringVirtualWide method reads a null-terminated, Unicode string from the target.
 old-location: debugger\readunicodestringvirtualwide.htm
 tech.root: debugger
-ms.assetid: 7c360f9a-83f6-4bc8-abb4-08d1b0c4fdc9
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces4::ReadUnicodeStringVirtualWide"]
 ms.keywords: IDebugDataSpaces4 interface [Windows Debugging],ReadUnicodeStringVirtualWide method, IDebugDataSpaces4.ReadUnicodeStringVirtualWide, IDebugDataSpaces4::ReadUnicodeStringVirtualWide, IDebugDataSpaces_c722fa7f-bbd2-4e0c-bd83-c59d2442ae26.xml, ReadUnicodeStringVirtualWide, ReadUnicodeStringVirtualWide method [Windows Debugging], ReadUnicodeStringVirtualWide method [Windows Debugging],IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces4::ReadUnicodeStringVirtualWide, debugger.readunicodestringvirtualwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugDataSpaces4.ReadUnicodeStringVirtualWide
+ - IDebugDataSpaces4::ReadUnicodeStringVirtualWide
 ---
 
 # IDebugDataSpaces4::ReadUnicodeStringVirtualWide
@@ -50,32 +49,32 @@ The <b>ReadUnicodeStringVirtualWide</b> method reads a null-terminated, Unicode 
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the location of the string in the process's virtual address space.
 
-### -param MaxBytes 
+### -param MaxBytes [in]
 
-[in]
+
 Specifies the maximum number of bytes to read from the target.
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Receives the string from the target.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
 <div class="alert"><b>Note</b>    The remainder of the buffer, following the returned string, might be overwritten by this method.</div>
 <div> </div>
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size, in characters, of the <i>Buffer</i> buffer.
 
-### -param StringBytes 
+### -param StringBytes [out, optional]
 
-[out, optional]
+
 Receives the size, in bytes, of the string.  If <i>StringBytes</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -137,3 +136,4 @@ The engine will read up to <i>MaxBytes</i> from the target, looking for a null-t
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugdataspaces4-readunicodestringvirtual">ReadUnicodeStringVirtual</a>
+

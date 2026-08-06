@@ -4,7 +4,6 @@ title: _SET_UNIT_INFO (61883.h)
 description: This structure is used to set unit information.
 old-location: ieee\set_unit_info.htm
 tech.root: IEEE
-ms.assetid: D4A9B507-E199-42EA-BC29-6F477BEC8D20
 ms.date: 02/15/2018
 keywords: ["SET_UNIT_INFO structure"]
 ms.keywords: "*PSET_UNIT_INFO, 61883/PSET_UNIT_INFO, 61883/SET_UNIT_INFO, IEEE.set_unit_info, PSET_UNIT_INFO, PSET_UNIT_INFO structure pointer [Buses], SET_UNIT_INFO, SET_UNIT_INFO structure [Buses], _SET_UNIT_INFO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _SET_UNIT_INFO
+ - PSET_UNIT_INFO
  - SET_UNIT_INFO
 ---
 
@@ -83,3 +84,4 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp->IoStatu
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_av_61883_request">AV_61883_REQUEST</a>
+

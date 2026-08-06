@@ -1,9 +1,8 @@
 ---
 UID: NC:d3dkmthk.PFND3DKMT_SETVIDPNSOURCEOWNER1
 title: PFND3DKMT_SETVIDPNSOURCEOWNER1 (d3dkmthk.h)
-description: Sets and releases the video present source in the path of a video present network (VidPN) topology that owns the VidPN, and lets output duplication options be specified. Supported starting with Windows 8.
+description: The PFND3DKMT_SETVIDPNSOURCEOWNER1 callback function is invoked to set or release the video present source in the path of a video present network (VidPN) owner.
 old-location: display\d3dkmtsetvidpnsourceowner1.htm
-ms.assetid: ccee5459-f156-41c3-b9a1-8bd7d16c8d19
 ms.date: 05/10/2018
 keywords: ["PFND3DKMT_SETVIDPNSOURCEOWNER1 callback function"]
 ms.keywords: D3DKMTSetVidPnSourceOwner1, D3DKMTSetVidPnSourceOwner1 callback function [Display Devices], PFND3DKMT_SETVIDPNSOURCEOWNER1, PFND3DKMT_SETVIDPNSOURCEOWNER1 callback, d3dkmthk/D3DKMTSetVidPnSourceOwner1, display.d3dkmtsetvidpnsourceowner1
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
- - D3DKMTSetVidPnSourceOwner1
+ - PFND3DKMT_SETVIDPNSOURCEOWNER1
 ---
 
 # PFND3DKMT_SETVIDPNSOURCEOWNER1 callback function
@@ -50,11 +49,11 @@ Sets and releases the video present source in the path of a video present networ
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in]
 
 *pSetVidPnSourceOwner1* 
 
-[in] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_setvidpnsourceowner1">D3DKMT_SETVIDPNSOURCEOWNER1</a> structure that describes the parameters for setting or releasing the video present source.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_setvidpnsourceowner1">D3DKMT_SETVIDPNSOURCEOWNER1</a> structure that describes the parameters for setting or releasing the video present source.
 
 ## -returns
 
@@ -73,3 +72,4 @@ This function might also return other NTSTATUS values.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_setvidpnsourceowner1">D3DKMT_SETVIDPNSOURCEOWNER1</a>
+

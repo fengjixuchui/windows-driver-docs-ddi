@@ -4,7 +4,6 @@ title: tagDRMFORWARD (drmk.h)
 description: The DRMFORWARD structure contains the information that the DRMK system driver needs in order to forward a DRM content ID to a device that handles protected content.
 old-location: audio\drmforward.htm
 tech.root: audio
-ms.assetid: 30e2e62a-3ae4-4efe-a6e9-6aece6bfbb46
 ms.date: 05/08/2018
 keywords: ["tagDRMFORWARD structure"]
 ms.keywords: "*PDRMFORWARD, DRMFORWARD, DRMFORWARD structure [Audio Devices], PDRMFORWARD, PDRMFORWARD structure pointer [Audio Devices], aud-prop_491c772b-2e17-42c1-b0cd-68d2b0384163.xml, audio.drmforward, drmk/DRMFORWARD, drmk/PDRMFORWARD, tagDRMFORWARD"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - drmk.h
 api_name:
+ - tagDRMFORWARD
+ - PDRMFORWARD
  - DRMFORWARD
 ---
 
@@ -120,3 +121,4 @@ For general information about DRM, see <a href="/windows-hardware/drivers/audio/
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-pcforwardcontenttodeviceobject">PcForwardContentToDeviceObject</a>
+

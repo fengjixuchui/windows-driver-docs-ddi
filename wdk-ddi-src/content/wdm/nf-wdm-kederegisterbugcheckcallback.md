@@ -4,7 +4,6 @@ title: KeDeregisterBugCheckCallback function (wdm.h)
 description: The KeDeregisterBugCheckCallback routine removes a callback routine that was registered by KeRegisterBugCheckCallback.
 old-location: kernel\kederegisterbugcheckcallback.htm
 tech.root: kernel
-ms.assetid: 0be95cee-c648-4905-9f4a-ea4e5fc794ed
 ms.date: 04/30/2018
 keywords: ["KeDeregisterBugCheckCallback function"]
 ms.keywords: KeDeregisterBugCheckCallback, KeDeregisterBugCheckCallback routine [Kernel-Mode Driver Architecture], k105_6bb11ae2-ceb1-4640-b59c-47b42496b819.xml, kernel.kederegisterbugcheckcallback, wdm/KeDeregisterBugCheckCallback
@@ -50,9 +49,9 @@ The <b>KeDeregisterBugCheckCallback</b> routine removes a callback routine that 
 
 ## -parameters
 
-### -param CallbackRecord 
+### -param CallbackRecord [in, out]
 
-[in, out]
+
 Pointer to a <a href="/windows-hardware/drivers/kernel/eprocess">KBUGCHECK_CALLBACK_RECORD</a> structure. <i>CallbackRecord</i> must be the same value that was passed to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckcallback">KeRegisterBugCheckCallback</a> when the callback was registered.
 
 ## -returns

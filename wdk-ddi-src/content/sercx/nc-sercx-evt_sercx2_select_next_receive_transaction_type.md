@@ -4,7 +4,6 @@ title: EVT_SERCX2_SELECT_NEXT_RECEIVE_TRANSACTION_TYPE (sercx.h)
 description: The EvtSerCx2SelectNextReceiveTransactionType event callback function is called by version 2 of the serial framework extension (SerCx2) to determine which data-transfer mechanism to use for the next read operation.
 old-location: serports\evtsercx2selectnextreceivetransactiontype.htm
 tech.root: serports
-ms.assetid: CB4551F4-8B22-4595-8091-CB84671DC60C
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX2_SELECT_NEXT_RECEIVE_TRANSACTION_TYPE callback function"]
 ms.keywords: 2/EvtSerCx2SelectNextReceiveTransactionType, EVT_SERCX2_SELECT_NEXT_RECEIVE_TRANSACTION_TYPE, EVT_SERCX2_SELECT_NEXT_RECEIVE_TRANSACTION_TYPE callback, EvtSerCx2SelectNextReceiveTransactionType, EvtSerCx2SelectNextReceiveTransactionType callback function [Serial Ports], serports.evtsercx2selectnextreceivetransactiontype
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
- - EvtSerCx2SelectNextReceiveTransactionType
+ - EVT_SERCX2_SELECT_NEXT_RECEIVE_TRANSACTION_TYPE
 ---
 
 # EVT_SERCX2_SELECT_NEXT_RECEIVE_TRANSACTION_TYPE callback function
@@ -50,34 +49,34 @@ The <i>EvtSerCx2SelectNextReceiveTransactionType</i> event callback function is 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the serial controller. The serial controller driver created this object in its <a href="/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add">EvtDriverDeviceAdd</a> callback function. For more information, see <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2initializedevice">SerCx2InitializeDevice</a>.
 
-### -param Mdl 
+### -param Mdl [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl">MDL</a> that describes the memory pages that are spanned by the read buffer for the next receive transaction. The scatter/gather list for the DMA transfer will use the region of this memory that is specified by the <i>Offset</i> and <i>Length</i> parameters.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 The starting offset for the next data transfer. This parameter is a byte offset from the start of the buffer region described by the MDL. If the MDL specifies a total of N bytes of buffer space, possible values of <i>Offset</i> are in the range 0 to N–1.
 
-### -param RemainingLength 
+### -param RemainingLength [in]
 
-[in]
+
 The total number of bytes of data that remain to be transferred in the current read (<a href="/windows-hardware/drivers/ifs/irp-mj-read">IRP_MJ_READ</a>) request. If the MDL specifies a total of N bytes of buffer space, possible values of <i>Length</i> are in the range 1 to N–<i>Offset</i>.
 
-### -param CustomReceive 
+### -param CustomReceive [out]
 
-[out]
+
 A pointer to a location to which the function writes the <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2CUSTOMRECEIVE</a> handle to the custom-receive object. If the function returns <b>SerCx2TransactionTypeCustom</b>, the function must supply the object handle that the serial controller driver created in a previous call to the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customreceivecreate">SerCx2CustomReceiveCreate</a> method. If the return value is not <b>SerCx2TransactionTypeCustom</b>, this output value is ignored by SerCx2.
 
-### -param NextTransactionLength 
+### -param NextTransactionLength [out]
 
-[out]
+
 A pointer to a location to which the function writes the number of bytes to transfer in the next receive transaction. If the return value is <b>SerCx2TransactionTypeDefault</b>, this output value is ignored by SerCx2.
 
 ## -returns
@@ -164,3 +163,4 @@ The <b>EVT_SERCX2_CUSTOM_RECEIVE_SELECT_NEXT_TRANSACTION_TYPE</b> function type 
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2initializedevice">SerCx2InitializeDevice</a>
+

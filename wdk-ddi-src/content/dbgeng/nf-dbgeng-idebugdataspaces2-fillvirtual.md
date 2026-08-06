@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugDataSpaces2.FillVirtual
 title: IDebugDataSpaces2::FillVirtual (dbgeng.h)
-description: The FillVirtual method writes a pattern of bytes to the target's virtual memory. The pattern is written repeatedly until the specified memory range is filled.
+description: Learn how the FillVirtual method writes a pattern of bytes to the target's virtual memory. Pattern is written repeatedly until the specified memory range is filled.
 old-location: debugger\fillvirtual.htm
 tech.root: debugger
-ms.assetid: d55ccd38-00c7-491b-aadf-8b42b5e89600
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces2::FillVirtual"]
 ms.keywords: FillVirtual, FillVirtual method [Windows Debugging], FillVirtual method [Windows Debugging],IDebugDataSpaces2 interface, FillVirtual method [Windows Debugging],IDebugDataSpaces3 interface, FillVirtual method [Windows Debugging],IDebugDataSpaces4 interface, IDebugDataSpaces2 interface [Windows Debugging],FillVirtual method, IDebugDataSpaces2.FillVirtual, IDebugDataSpaces2::FillVirtual, IDebugDataSpaces3 interface [Windows Debugging],FillVirtual method, IDebugDataSpaces3::FillVirtual, IDebugDataSpaces4 interface [Windows Debugging],FillVirtual method, IDebugDataSpaces4::FillVirtual, IDebugDataSpaces_26ed83e1-6084-4826-bf6c-30be250d3e3f.xml, dbgeng/IDebugDataSpaces2::FillVirtual, dbgeng/IDebugDataSpaces3::FillVirtual, dbgeng/IDebugDataSpaces4::FillVirtual, debugger.fillvirtual
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugDataSpaces2.FillVirtual
- - IDebugDataSpaces3.FillVirtual
- - IDebugDataSpaces4.FillVirtual
+ - IDebugDataSpaces2::FillVirtual
 ---
 
 # IDebugDataSpaces2::FillVirtual
@@ -52,29 +49,29 @@ The <b>FillVirtual</b> method writes a pattern of bytes to the target's virtual 
 
 ## -parameters
 
-### -param Start 
+### -param Start [in]
 
-[in]
+
 Specifies the location in the target's virtual address space at which to start writing the pattern.
 
-### -param Size 
+### -param Size [in]
 
-[in]
+
 Specifies how many bytes to write to the target's memory.
 
-### -param Pattern 
+### -param Pattern [in]
 
-[in]
+
 Specifies the memory location of the pattern.
 
-### -param PatternSize 
+### -param PatternSize [in]
 
-[in]
+
 Specifies the size in bytes of the pattern.
 
-### -param Filled 
+### -param Filled [out, optional]
 
-[out, optional]
+
 Receives the number of bytes written.  If it is set to <b>NULL</b>, this information isn't returned.
 
 ## -returns
@@ -120,3 +117,4 @@ If the final copy of the pattern will not completely fit into the memory range, 
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugdataspaces4-writevirtual">WriteVirtual</a>
+

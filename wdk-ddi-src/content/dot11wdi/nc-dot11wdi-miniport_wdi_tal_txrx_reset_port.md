@@ -4,7 +4,6 @@ title: MINIPORT_WDI_TAL_TXRX_RESET_PORT (dot11wdi.h)
 description: The MiniportWdiTalTxRxResetPort handler function is invoked before a dot11 reset task is issued to the target.
 old-location: netvista\miniportwditaltxrxresetport.htm
 tech.root: netvista
-ms.assetid: BB584FC9-8048-42F4-AFA9-7BF6790EDD69
 ms.date: 05/02/2018
 keywords: ["MINIPORT_WDI_TAL_TXRX_RESET_PORT callback function"]
 ms.keywords: MINIPORT_WDI_TAL_TXRX_RESET_PORT, MINIPORT_WDI_TAL_TXRX_RESET_PORT callback, MiniportWdiTalTxRxResetPort, MiniportWdiTalTxRxResetPort callback function [Network Drivers Starting with Windows Vista], dot11wdi/MiniportWdiTalTxRxResetPort, netvista.miniportwditaltxrxresetport
@@ -38,13 +37,16 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
- - MiniportWdiTalTxRxResetPort
+ - MINIPORT_WDI_TAL_TXRX_RESET_PORT
 ---
 
 # MINIPORT_WDI_TAL_TXRX_RESET_PORT callback function
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The 
   MiniportWdiTalTxRxResetPort handler function is invoked before a dot11 reset task is issued to the target.  The functional components RXEngine/TxEngine have already stopped operations associated with this port and any pending data frames have been completed/returned. It allows the TX/RX components to clear  the port state. This does not involve changing the operation mode.
@@ -55,14 +57,14 @@ This is a WDI miniport handler inside <a href="/windows-hardware/drivers/ddi/dot
 
 ## -parameters
 
-### -param MiniportTalTxRxContext 
+### -param MiniportTalTxRxContext [in]
 
-[in]
+
 TAL device handle returned by the IHV miniport in <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tal_txrx_initialize">MiniportWdiTalTxRxInitialize</a>.
 
-### -param PortId 
+### -param PortId [in]
 
-[in]
+
 Port ID for the port being reset.
 
 ## -see-also
@@ -80,3 +82,4 @@ Port ID for the port being reset.
 
 
 <a href="/windows-hardware/drivers/network/wdi-port-id">WDI_PORT_ID</a>
+

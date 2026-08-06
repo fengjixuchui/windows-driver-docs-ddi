@@ -4,7 +4,6 @@ title: IWpdSerializer::GetIPortableDeviceValuesFromBuffer (portabledevicetypes.h
 description: Deserializes a byte array to an IPortableDeviceValues interface.
 old-location: wpddk\iwpdserializer_getiportabledevicevaluesfrombuffer.htm
 tech.root: wpd_dk
-ms.assetid: c92506e7-c05c-430e-9600-4679dd00cc5f
 ms.date: 02/15/2018
 keywords: ["IWpdSerializer::GetIPortableDeviceValuesFromBuffer"]
 ms.keywords: GetIPortableDeviceValuesFromBuffer, GetIPortableDeviceValuesFromBuffer method, GetIPortableDeviceValuesFromBuffer method,IWpdSerializer interface, IWpdSerializer interface,GetIPortableDeviceValuesFromBuffer method, IWpdSerializer.GetIPortableDeviceValuesFromBuffer, IWpdSerializer::GetIPortableDeviceValuesFromBuffer, IWpdSerializerGetIPortableDeviceValuesFromBuffer, portabledevicetypes/IWpdSerializer::GetIPortableDeviceValuesFromBuffer, wpddk.iwpdserializer_getiportabledevicevaluesfrombuffer
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IWpdSerializer.GetIPortableDeviceValuesFromBuffer
+ - IWpdSerializer::GetIPortableDeviceValuesFromBuffer
 ---
 
 # IWpdSerializer::GetIPortableDeviceValuesFromBuffer
@@ -51,19 +50,19 @@ Deserializes a byte array to an <b>IPortableDeviceValues</b> interface.
 
 ## -parameters
 
-### -param pBuffer 
+### -param pBuffer [in]
 
-[in]
+
 Pointer to the buffer to deserialize.
 
-### -param dwInputBufferLength 
+### -param dwInputBufferLength [in]
 
-[in]
+
 <b>DWORD</b> that specifies the size of the buffer, in bytes.
 
-### -param ppParams 
+### -param ppParams [out]
 
-[out]
+
 Address of a variable that receives a pointer to an <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues">IPortableDeviceValues</a> interface created from the buffer. The application is responsible for calling <b>Release</b> on the interface.
 
 ## -returns
@@ -117,3 +116,4 @@ None.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iwpdserializer">IWpdSerializer Interface</a>
+

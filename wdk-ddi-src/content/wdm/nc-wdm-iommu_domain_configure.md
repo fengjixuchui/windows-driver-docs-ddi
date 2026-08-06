@@ -2,11 +2,11 @@
 UID: NC:wdm.IOMMU_DOMAIN_CONFIGURE
 title: IOMMU_DOMAIN_CONFIGURE (wdm.h)
 description: Configures a domain for use.
-ms.assetid: 1b5394c2-0dc9-49a2-a749-37c40c60bf3b
-ms.date: 10/19/2018
+tech.root: kernel
+ms.date: 01/19/2023
 keywords: ["IOMMU_DOMAIN_CONFIGURE callback function"]
 req.header: wdm.h
-req.include-header: 
+req.include-header: Wdm.h
 req.target-type: 
 req.target-min-winverclnt: Windows 10, version 1803
 req.target-min-winversvr: 
@@ -36,48 +36,32 @@ api_name:
  - IOMMU_DOMAIN_CONFIGURE
 ---
 
-# IOMMU_DOMAIN_CONFIGURE callback function
-
-
 ## -description
 
 Configures a domain for use. All DMA blocked until the domain is configured.
 
 ## -parameters
 
-### -param Domain
+### -param Domain [_In_]
 
-[_In_] A pointer to the handle to the domain.
+A pointer to the handle to the domain.
 
-### -param Configuration
+### -param Configuration [_In_]
 
-[_In_] A pointer to a [**DOMAIN_CONFIGURATION**](ns-wdm-_domain_configuration.md) structure that contains the new configuration for the domain.
+A pointer to a [**DOMAIN_CONFIGURATION**](ns-wdm-_domain_configuration.md) structure that contains the new configuration for the domain.
 
 ## -returns
 
-Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate NTSTATUS Values error code. For more information, see [NTSTATUS Values](/windows-hardware/drivers/kernel/ntstatus-values).
-
-## -prototype
-
-```cpp
-//Declaration
-
-IOMMU_DOMAIN_CONFIGURE IommuDomainConfigure; 
-
-// Definition
-
-NTSTATUS IommuDomainConfigure 
-(
-	PIOMMU_DMA_DOMAIN Domain
-	PDOMAIN_CONFIGURATION Configuration
-)
-{...}
-
-IOMMU_DOMAIN_CONFIGURE *PIOMMU_DOMAIN_CONFIGURE
-
-
-```
+Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate NTSTATUS values error code. For more information, see [NTSTATUS Values](/windows-hardware/drivers/kernel/ntstatus-values).
 
 ## -remarks
 
+If the domain being configured is OS managed (via [**IOMMU_DOMAIN_CREATE**](./nc-wdm-iommu_domain_create.md)) or is not of type DomainTypeUnmanaged (via [IOMMU_DOMAIN_CREATE_EX](./nc-wdm-iommu_domain_create_ex.md)) then it cannot be configured and the function will return STATUS_INVALID_PARAMETER_1
+
 ## -see-also
+
+[**IOMMU_DOMAIN_CREATE**](./nc-wdm-iommu_domain_create.md)
+
+[**IOMMU_DOMAIN_CREATE_EX**](./nc-wdm-iommu_domain_create_ex.md)
+
+[**DOMAIN_CONFIGURATION**](ns-wdm-_domain_configuration.md)

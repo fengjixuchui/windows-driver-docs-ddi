@@ -4,7 +4,6 @@ title: PROTOCOL_CM_ADD_PARTY (ndis.h)
 description: The ProtocolCmAddParty function is a required function.
 old-location: netvista\protocolcmaddparty.htm
 tech.root: netvista
-ms.assetid: 06aa5ff6-974c-43dd-8395-bc1a1a8421d5
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CM_ADD_PARTY callback function"]
 ms.keywords: PROTOCOL_CM_ADD_PARTY, PROTOCOL_CM_ADD_PARTY callback, ProtocolCmAddParty, ProtocolCmAddParty callback function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_06efc681-bd3d-4bcc-938e-5ba45ce97279.xml, ndis/ProtocolCmAddParty, netvista.protocolcmaddparty
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolCmAddParty
+ - PROTOCOL_CM_ADD_PARTY
 ---
 
 # PROTOCOL_CM_ADD_PARTY callback function
@@ -55,31 +54,31 @@ The
 
 ## -parameters
 
-### -param CallMgrVcContext 
+### -param CallMgrVcContext [in]
 
-[in]
+
 Specifies the handle to a call manager-allocated context area in which the call manager maintains
      its per-VC state. The call manager supplied this handle to NDIS from its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_create_vc">ProtocolCoCreateVc</a> function.
 
-### -param CallParameters 
+### -param CallParameters [in, out]
 
-[in, out]
+
 Pointer to a 
      <a href="/previous-versions/windows/hardware/network/ff545384(v=vs.85)">CO_CALL_PARAMETERS</a> structure that contains
      the parameters, specified by a connection-oriented client, for the party that is being added to an
      existing call.
 
-### -param NdisPartyHandle 
+### -param NdisPartyHandle [in]
 
-[in]
+
 Specifies a handle, supplied by NDIS, that uniquely identifies a multipoint party that is to be
      added to an existing virtual connection. This handle is opaque to the call manager and reserved for NDIS
      library use.
 
-### -param CallMgrPartyContext 
+### -param CallMgrPartyContext [out]
 
-[out]
+
 Specifies, on return, a handle to a call manager-supplied context area in which the call manager
      maintains state about this party for the multipoint call.
 
@@ -206,3 +205,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cl_add_party_complete">ProtocolClAddPartyComplete</a>
+

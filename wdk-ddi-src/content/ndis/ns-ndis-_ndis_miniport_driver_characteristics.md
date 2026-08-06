@@ -4,8 +4,7 @@ title: _NDIS_MINIPORT_DRIVER_CHARACTERISTICS (ndis.h)
 description: An NDIS driver initializes an NDIS_MINIPORT_DRIVER_CHARACTERISTICS structure to define its miniport driver characteristics, including the entry points for its MiniportXxx functions.
 old-location: netvista\ndis_miniport_driver_characteristics.htm
 tech.root: netvista
-ms.assetid: 2e2c8522-127d-49d5-a5d6-97f9403bec89
-ms.date: 05/03/2019
+ms.date: 03/08/2024
 keywords: ["NDIS_MINIPORT_DRIVER_CHARACTERISTICS structure"]
 ms.keywords: "*PNDIS_MINIPORT_DRIVER_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_CHARACTERISTICS, NDIS_MINIPORT_DRIVER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], PNDIS_MINIPORT_DRIVER_CHARACTERISTICS, PNDIS_MINIPORT_DRIVER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_MINIPORT_DRIVER_CHARACTERISTICS, miniport_structures_ref_9a538743-5c3f-40c7-a83d-07d5efde350c.xml, ndis/NDIS_MINIPORT_DRIVER_CHARACTERISTICS, ndis/PNDIS_MINIPORT_DRIVER_CHARACTERISTICS, netvista.ndis_miniport_driver_characteristics"
 req.header: ndis.h
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_MINIPORT_DRIVER_CHARACTERISTICS
+ - PNDIS_MINIPORT_DRIVER_CHARACTERISTICS
  - NDIS_MINIPORT_DRIVER_CHARACTERISTICS
 ---
 
@@ -59,7 +60,7 @@ An NDIS driver initializes an <b>NDIS_MINIPORT_DRIVER_CHARACTERISTICS</b> struct
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_MINIPORT_DRIVER_CHARACTERISTICS</b> structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_MINIPORT_DRIVER_CHARACTERISTICS.
@@ -105,148 +106,26 @@ The major version of the NDIS library the driver is using. The current value is 
 
 The minor NDIS version. The following are the available minor version value settings.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>0</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>20</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.20
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>30</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.30
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>40</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.40
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>50</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.50
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>51</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.51
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>60</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.60
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>70</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.70
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>80</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.80
-
-</td>
-</tr>
-
-<tr>
-<td width="40%">
-<dl>
-<dt>81</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.81
-
-</td>
-</tr>
-
-<tr>
-<td width="40%">
-<dl>
-<dt>82</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.82
-
-</td>
-</tr>
-
-<tr>
-<td width="40%">
-<dl>
-<dt>83</dt>
-</dl>
-</td>
-<td width="60%">
-NDIS 6.83
-
-</td>
-</tr>
-
-</table>
+|Value|Meaning|
+|--- |--- |
+|0|NDIS 6|
+|20|NDIS 6.20|
+|30|NDIS 6.30|
+|40|NDIS 6.40|
+|50|NDIS 6.50|
+|51|NDIS 6.51|
+|60|NDIS 6.60|
+|70|NDIS 6.70|
+|80|NDIS 6.80|
+|81|NDIS 6.81|
+|82|NDIS 6.82|
+|83|NDIS 6.83|
+|84|NDIS 6.84|
+|85|NDIS 6.85|
+|86|NDIS 6.86|
+|87|NDIS 6.87|
+|88|NDIS 6.88|
+|89|NDIS 6.89|
 
 ### -field MajorDriverVersion
 
@@ -493,3 +372,4 @@ An NDIS driver passes a pointer to its <b>NDIS_MINIPORT_DRIVER_CHARACTERISTICS</
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver">NdisMRegisterMiniportDriver</a>
+

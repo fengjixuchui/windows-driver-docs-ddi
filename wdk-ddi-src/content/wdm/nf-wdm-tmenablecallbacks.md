@@ -4,7 +4,6 @@ title: TmEnableCallbacks function (wdm.h)
 description: The TmEnableCallbacks routine enables a callback routine that receives transaction notifications.
 old-location: kernel\tmenablecallbacks.htm
 tech.root: kernel
-ms.assetid: d3f79cda-349a-4a42-a2a9-d9be3a695c1c
 ms.date: 04/30/2018
 keywords: ["TmEnableCallbacks function"]
 ms.keywords: TmEnableCallbacks, TmEnableCallbacks routine [Kernel-Mode Driver Architecture], kernel.tmenablecallbacks, ktm_ref_0d901be3-7a5f-4296-b0fc-b8bdf84c43ec.xml, wdm/TmEnableCallbacks
@@ -52,19 +51,19 @@ The <b>TmEnableCallbacks</b> routine enables a callback routine that receives <a
 
 ## -parameters
 
-### -param ResourceManager 
+### -param ResourceManager [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/kernel/resource-manager-objects">resource manager object</a>. To obtain this pointer, your component must call <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle">ObReferenceObjectByHandle</a> and supply the object handle that a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateresourcemanager">ZwCreateResourceManager</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenresourcemanager">ZwOpenResourceManager</a> provided.
 
-### -param CallbackRoutine 
+### -param CallbackRoutine [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-ptm_rm_notification">ResourceManagerNotification</a> routine.
 
-### -param RMKey 
+### -param RMKey [in, optional]
 
-[in, optional]
+
 A caller-defined context value that uniquely identifies the resource manager. The caller's <i>ResourceManagerNotification</i> routine receives this value as input.
 
 ## -returns

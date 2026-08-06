@@ -4,7 +4,6 @@ title: IPortableDeviceValues::GetAt (portabledevicetypes.h)
 description: Retrieves a value from the collection, by a zero-based index.
 old-location: wpddk\iportabledevicevalues_getat.htm
 tech.root: wpd_dk
-ms.assetid: 887aab56-2f3f-4aaa-96fa-c597bc540a92
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::GetAt"]
 ms.keywords: GetAt, GetAt method, GetAt method,IPortableDeviceValues interface, IPortableDeviceValues interface,GetAt method, IPortableDeviceValues.GetAt, IPortableDeviceValues::GetAt, IPortableDeviceValuesGetAt, portabledevicetypes/IPortableDeviceValues::GetAt, wpddk.iportabledevicevalues_getat
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.GetAt
+ - IPortableDeviceValues::GetAt
 ---
 
 # IPortableDeviceValues::GetAt
@@ -51,19 +50,19 @@ Retrieves a value from the collection, by a zero-based index.
 
 ## -parameters
 
-### -param index 
+### -param index [in]
 
-[in]
+
 A <b>DWORD</b> that specifies a zero-based index in the collection.
 
-### -param pKey 
+### -param pKey [in, out]
 
-[in, out]
+
 An optional <b>PROPERTYKEY</b> pointer that retrieves the key of the specified item.
 
-### -param pValue 
+### -param pValue [in, out]
 
-[in, out]
+
 An optional <b>PROPVARIANT</b> that retrieves the value of the specified item. The caller must free the memory by calling <b>PropVariantClear</b> when done with it.
 
 ## -returns
@@ -110,3 +109,4 @@ If a property indicates a value of type VT_UNKNOWN, the property will be one of 
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-getstringvalue">IPortableDeviceValues::GetStringValue</a>
+

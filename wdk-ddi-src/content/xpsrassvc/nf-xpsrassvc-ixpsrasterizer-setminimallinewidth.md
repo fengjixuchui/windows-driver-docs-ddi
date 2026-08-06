@@ -4,7 +4,6 @@ title: IXpsRasterizer::SetMinimalLineWidth (xpsrassvc.h)
 description: The SetMinimalLineWidth method allows the caller to set the minimum thickness (in pixels) of the lines that the device can render.
 old-location: print\ixpsrasterizer_setminimallinewidth.htm
 tech.root: print
-ms.assetid: daf84d1a-d499-4a6e-be87-39fd16f3d87d
 ms.date: 04/20/2018
 keywords: ["IXpsRasterizer::SetMinimalLineWidth"]
 ms.keywords: IXpsRasterizer interface [Print Devices],SetMinimalLineWidth method, IXpsRasterizer.SetMinimalLineWidth, IXpsRasterizer::SetMinimalLineWidth, SetMinimalLineWidth, SetMinimalLineWidth method [Print Devices], SetMinimalLineWidth method [Print Devices],IXpsRasterizer interface, print.ixpsrasterizer_setminimallinewidth, print_xpsrast_2208b605-31bd-4ab9-8bd5-6941a921ff7a.xml, xpsrassvc/IXpsRasterizer::SetMinimalLineWidth
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - xpsrassvc.h
 api_name:
- - IXpsRasterizer.SetMinimalLineWidth
+ - IXpsRasterizer::SetMinimalLineWidth
 ---
 
 # IXpsRasterizer::SetMinimalLineWidth
@@ -50,9 +49,9 @@ The <code>SetMinimalLineWidth</code> method allows the caller to set the minimum
 
 ## -parameters
 
-### -param width 
+### -param width [in]
 
-[in]
+
 The minimum thickness (in pixels) of the lines the device is capable of rendering. The value should be greater than 1.
 
 ## -returns
@@ -82,3 +81,4 @@ This method is supported in Windows 7 and later. It is not supported in versions
 
 
 <a href="/windows-hardware/drivers/ddi/xpsrassvc/nn-xpsrassvc-ixpsrasterizernotificationcallback">IXpsRasterizerNotificationCallback</a>
+

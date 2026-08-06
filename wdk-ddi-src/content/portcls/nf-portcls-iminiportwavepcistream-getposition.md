@@ -1,10 +1,9 @@
 ---
 UID: NF:portcls.IMiniportWavePciStream.GetPosition
 title: IMiniportWavePciStream::GetPosition (portcls.h)
-description: The GetPosition method gets the current position of the stream.
+description: Learn how the GetPosition method gets the current position of the stream.
 old-location: audio\iminiportwavepcistream_getposition.htm
 tech.root: audio
-ms.assetid: 61575632-62f8-47d3-9249-5f5416191dfa
 ms.date: 05/08/2018
 keywords: ["IMiniportWavePciStream::GetPosition"]
 ms.keywords: GetPosition, GetPosition method [Audio Devices], GetPosition method [Audio Devices],IMiniportWavePciStream interface, IMiniportWavePciStream interface [Audio Devices],GetPosition method, IMiniportWavePciStream.GetPosition, IMiniportWavePciStream::GetPosition, audio.iminiportwavepcistream_getposition, audmp-routines_32855554-86ce-4549-af40-700b7b8fcaad.xml, portcls/IMiniportWavePciStream::GetPosition
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWavePciStream.GetPosition
+ - IMiniportWavePciStream::GetPosition
 ---
 
 # IMiniportWavePciStream::GetPosition
@@ -50,9 +49,9 @@ The <code>GetPosition</code> method gets the current position of the stream.
 
 ## -parameters
 
-### -param Position 
+### -param Position [out]
 
-[out]
+
 Output pointer for the position value. This parameter points to a caller-allocated ULONGLONG variable into which the method writes the current byte position of the stream.
 
 ## -returns
@@ -98,3 +97,4 @@ The WavePci port driver implements a property handler for <a href="/windows-hard
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ne-ks-ksstate">KSSTATE</a>
+

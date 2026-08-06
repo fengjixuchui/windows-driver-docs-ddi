@@ -4,7 +4,6 @@ title: SERCX2_CUSTOM_RECEIVE_CONFIG_INIT function (sercx.h)
 description: The SERCX2_CUSTOM_RECEIVE_CONFIG_INIT function initializes a SERCX2_CUSTOM_RECEIVE_CONFIG structure.
 old-location: serports\sercx2_custom_receive_config_init.htm
 tech.root: serports
-ms.assetid: 35C7AE64-C778-443E-9CF7-7868048DA01F
 ms.date: 04/23/2018
 keywords: ["SERCX2_CUSTOM_RECEIVE_CONFIG_INIT function"]
 ms.keywords: 2/SERCX2_CUSTOM_RECEIVE_CONFIG_INIT, SERCX2_CUSTOM_RECEIVE_CONFIG_INIT, SERCX2_CUSTOM_RECEIVE_CONFIG_INIT function [Serial Ports], serports.sercx2_custom_receive_config_init
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level.
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>SERCX2_CUSTOM_RECEIVE_CONFIG_INIT</b> function initializes a <a href="/wi
 
 ## -parameters
 
-### -param Config 
+### -param Config [out]
 
-[out]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/sercx/ns-sercx-_sercx2_custom_receive_config">SERCX2_CUSTOM_RECEIVE_CONFIG</a> structure that is to be initialized.
 
 ## -remarks

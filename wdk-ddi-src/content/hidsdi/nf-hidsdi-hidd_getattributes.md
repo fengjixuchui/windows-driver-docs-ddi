@@ -4,7 +4,6 @@ title: HidD_GetAttributes function (hidsdi.h)
 description: The HidD_GetAttributes routine returns the attributes of a specified top-level collection.
 old-location: hid\hidd_getattributes.htm
 tech.root: hid
-ms.assetid: 3b7814a7-828a-40eb-8494-0753d89a95f4
 ms.date: 04/30/2018
 keywords: ["HidD_GetAttributes function"]
 ms.keywords: HidD_GetAttributes, HidD_GetAttributes routine [Human Input Devices], hid.hidd_getattributes, hidfunc_e4c243d5-b210-409f-b454-68a69c28057c.xml, hidsdi/HidD_GetAttributes
@@ -50,14 +49,14 @@ The <b>HidD_GetAttributes</b> routine returns the attributes of a specified <a h
 
 ## -parameters
 
-### -param HidDeviceObject 
+### -param HidDeviceObject [in]
 
-[in]
+
 Specifies an open handle to a top-level collection.
 
-### -param Attributes 
+### -param Attributes [out]
 
-[out]
+
 Pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/hidsdi/ns-hidsdi-_hidd_attributes">HIDD_ATTRIBUTES</a> structure that returns the attributes of the collection specified by <i>HidDeviceObject</i>.
 
 ## -returns

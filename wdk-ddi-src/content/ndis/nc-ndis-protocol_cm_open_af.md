@@ -4,7 +4,6 @@ title: PROTOCOL_CM_OPEN_AF (ndis.h)
 description: The ProtocolCmOpenAf function is required.
 old-location: netvista\protocolcmopenaf.htm
 tech.root: netvista
-ms.assetid: 7422c205-bc41-4121-b430-ff9e6b49dc2e
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CM_OPEN_AF callback function"]
 ms.keywords: PROTOCOL_CM_OPEN_AF, PROTOCOL_CM_OPEN_AF callback, ProtocolCmOpenAf, ProtocolCmOpenAf callback function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_2dbd2a83-f6e5-4324-9419-6a39a8e81f41.xml, ndis/ProtocolCmOpenAf, netvista.protocolcmopenaf
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolCmOpenAf
+ - PROTOCOL_CM_OPEN_AF
 ---
 
 # PROTOCOL_CM_OPEN_AF callback function
@@ -54,32 +53,32 @@ The
 
 ## -parameters
 
-### -param CallMgrBindingContext 
+### -param CallMgrBindingContext [in]
 
-[in]
+
 For a non-integrated call manager, <i>CallMgrBindingContext</i> specifies the handle to a call manager-allocated context area in which the call managers maintains
      its per-binding state information. The call manager supplied this handle when it called 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a>.
 
-For an integrated call manager (MCM), <i>CallMgrBindingContext</i> specifies the handle to a miniport-allocated context area in which the miniport maintains its per-adapter state information.  The miniport supplied this handle in its <a href="/previous-versions/windows/hardware/network/ff553623(v=vs.85)">NdisMSetAttributesEx</a> call (for 5.x drivers) or its <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes">NdisMSetMiniportAttributes</a> call (for 6.x drivers).
+For an integrated call manager (MCM), <i>CallMgrBindingContext</i> specifies the handle to a miniport-allocated context area in which the miniport maintains its per-adapter state information.  The miniport supplied this handle in its <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetattributesex">NdisMSetAttributesEx</a> call (for 5.x drivers) or its <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes">NdisMSetMiniportAttributes</a> call (for 6.x drivers).
 
-### -param AddressFamily 
+### -param AddressFamily [in]
 
-[in]
+
 Specifies the address family that a client is opening. This address family was registered by the
      call manager when it called 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscmregisteraddressfamilyex">
      NdisCmRegisterAddressFamilyEx</a>.
 
-### -param NdisAfHandle 
+### -param NdisAfHandle [in]
 
-[in]
+
 Specifies a handle, supplied by NDIS, that uniquely identifies this address family instance. This
      handle is opaque to the call manager and reserved for system use.
 
-### -param CallMgrAfContext 
+### -param CallMgrAfContext [out]
 
-[out]
+
 Specifies the handle to a call manager-supplied context area in which the call manager maintains
      state about this open of an address family it provides.
 
@@ -221,3 +220,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a>
+

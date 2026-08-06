@@ -4,7 +4,6 @@ title: EVT_WDF_DEVICE_PREPARE_HARDWARE (wdfdevice.h)
 description: A driver's EvtDevicePrepareHardware event callback function performs any operations that are needed to make a device accessible to the driver.
 old-location: wdf\evtdevicepreparehardware.htm
 tech.root: wdf
-ms.assetid: a3d4a983-8a75-44be-bd72-8673d89f9f87
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DEVICE_PREPARE_HARDWARE callback function"]
 ms.keywords: DFDeviceObjectGeneralRef_a447de77-9692-4a48-83c2-3ced294863e4.xml, EVT_WDF_DEVICE_PREPARE_HARDWARE, EVT_WDF_DEVICE_PREPARE_HARDWARE callback, EvtDevicePrepareHardware, EvtDevicePrepareHardware callback function, kmdf.evtdevicepreparehardware, wdf.evtdevicepreparehardware, wdfdevice/EvtDevicePrepareHardware
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfdevice.h
 api_name:
- - EvtDevicePrepareHardware
+ - EVT_WDF_DEVICE_PREPARE_HARDWARE
 ---
 
 # EVT_WDF_DEVICE_PREPARE_HARDWARE callback function
@@ -52,19 +51,19 @@ A driver's <i>EvtDevicePrepareHardware</i> event callback function performs any 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param ResourcesRaw 
+### -param ResourcesRaw [in]
 
-[in]
+
 A handle to a framework resource-list object that identifies the raw hardware resources that the Plug and Play manager has assigned to the device.
 
-### -param ResourcesTranslated 
+### -param ResourcesTranslated [in]
 
-[in]
+
 A handle to a framework resource-list object that identifies the translated hardware resources that the Plug and Play manager has assigned to the device.
 
 ## -returns
@@ -122,3 +121,4 @@ For more information about drivers that provide this callback function, see <a h
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware">EvtDeviceReleaseHardware</a>
+

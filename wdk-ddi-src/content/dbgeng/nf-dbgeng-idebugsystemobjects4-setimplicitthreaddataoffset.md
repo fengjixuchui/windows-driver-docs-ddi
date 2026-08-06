@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSystemObjects4.SetImplicitThreadDataOffset
 title: IDebugSystemObjects4::SetImplicitThreadDataOffset (dbgeng.h)
-description: The SetImplicitThreadDataOffset method sets the implicit thread for the current process.
+description: The SetImplicitThreadDataOffset method sets the implicit thread for the current process. This method belongs to the IDebugSystemObjects4 interface.
 old-location: debugger\setimplicitthreaddataoffset.htm
 tech.root: debugger
-ms.assetid: 1562a2f4-0eea-44fd-b350-ccc17d8cd65e
 ms.date: 05/03/2018
 keywords: ["IDebugSystemObjects4::SetImplicitThreadDataOffset"]
 ms.keywords: IDebugSystemObjects2 interface [Windows Debugging],SetImplicitThreadDataOffset method, IDebugSystemObjects2::SetImplicitThreadDataOffset, IDebugSystemObjects3 interface [Windows Debugging],SetImplicitThreadDataOffset method, IDebugSystemObjects3::SetImplicitThreadDataOffset, IDebugSystemObjects4 interface [Windows Debugging],SetImplicitThreadDataOffset method, IDebugSystemObjects4.SetImplicitThreadDataOffset, IDebugSystemObjects4::SetImplicitThreadDataOffset, IDebugSystemObjects_d78e5ee9-b18c-47a0-9987-41923aaa1aaf.xml, SetImplicitThreadDataOffset, SetImplicitThreadDataOffset method [Windows Debugging], SetImplicitThreadDataOffset method [Windows Debugging],IDebugSystemObjects2 interface, SetImplicitThreadDataOffset method [Windows Debugging],IDebugSystemObjects3 interface, SetImplicitThreadDataOffset method [Windows Debugging],IDebugSystemObjects4 interface, dbgeng/IDebugSystemObjects2::SetImplicitThreadDataOffset, dbgeng/IDebugSystemObjects3::SetImplicitThreadDataOffset, dbgeng/IDebugSystemObjects4::SetImplicitThreadDataOffset, debugger.setimplicitthreaddataoffset
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSystemObjects2.SetImplicitThreadDataOffset
- - IDebugSystemObjects3.SetImplicitThreadDataOffset
- - IDebugSystemObjects4.SetImplicitThreadDataOffset
+ - IDebugSystemObjects4::SetImplicitThreadDataOffset
 ---
 
 # IDebugSystemObjects4::SetImplicitThreadDataOffset
@@ -52,9 +49,9 @@ The <b>SetImplicitThreadDataOffset</b> method sets the implicit thread for the c
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the location in the target's memory address space of the data structure of the system thread that is to become the implicit thread for the current process.  If this is zero, the implicit thread for the current process is set to the default implicit thread.
 
 ## -returns
@@ -88,3 +85,4 @@ In user-mode debugging, the data structure is the thread environment block (TEB)
 <div class="alert"><b>Warning</b>    Because it is possible to use <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsystemobjects4-setimplicitprocessdataoffset">SetImplicitProcessDataOffset</a> to set the implicit process independently of the implicit thread, the implicit thread might not belong to the implicit process.  This can cause errors if you attempt to access any of the user state for the implicit thread, because it will be incompatible with the virtual address space (specified by the implicit process).</div>
 <div> </div>
 For more information about the current implicit thread, see <a href="/windows-hardware/drivers/debugger/threads-and-processes">Threads and Processes</a>.  For details on the KTHREAD structure and TEB, see <i>Microsoft Windows Internals</i> by David Solomon and Mark Russinovich.
+

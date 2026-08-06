@@ -4,7 +4,6 @@ title: IDE_HW_INITIALIZE (irb.h)
 description: The IdeHwInitialize miniport driver routine configures the indicated device.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\idehwinitialize.htm
 tech.root: storage
-ms.assetid: 5665ff0a-3cbf-4ac5-adf7-5b383bac5117
 ms.date: 03/29/2018
 keywords: ["IDE_HW_INITIALIZE callback function"]
 ms.keywords: IDE_HW_INITIALIZE, IdeHwInitialize, IdeHwInitialize routine [Storage Devices], atartns_dcb52bc9-05c9-436f-a2b2-f9c1b68d1d33.xml, irb/IdeHwInitialize, storage.idehwinitialize
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - irb.h
 api_name:
- - IdeHwInitialize
+ - IDE_HW_INITIALIZE
 ---
 
 # IDE_HW_INITIALIZE callback function
@@ -51,19 +50,19 @@ The <b><i>IdeHwInitialize</i></b> miniport driver routine configures the indicat
 
 ## -parameters
 
-### -param ChannelExtension 
+### -param ChannelExtension [in]
 
-[in]
+
 A pointer to the miniport driver per channel device extension.
 
-### -param DeviceParameters 
+### -param DeviceParameters [in, out]
 
-[in, out]
+
 A pointer to a structure of type <a href="/windows-hardware/drivers/ddi/irb/ns-irb-_ide_device_parameters">IDE_DEVICE_PARAMETERS</a> that identifies the device to configure and the device parameters with which to configure the device.
 
-### -param IdentifyData 
+### -param IdentifyData [in]
 
-[in]
+
 A pointer to a structure of type <a href="/windows-hardware/drivers/ddi/ata/ns-ata-_identify_device_data">IDENTIFY_DEVICE_DATA</a> that contains the identify data that is returned by the device.
 
 ## -returns
@@ -81,3 +80,4 @@ After the miniport driver enumerates the devices on a channel, it calls the <b><
 
 
 <a href="/windows-hardware/drivers/ddi/irb/ns-irb-_ide_device_parameters">IDE_DEVICE_PARAMETERS</a>
+

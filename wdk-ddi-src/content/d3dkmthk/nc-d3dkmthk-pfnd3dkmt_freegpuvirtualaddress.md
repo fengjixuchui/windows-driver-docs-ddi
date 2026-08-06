@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_FREEGPUVIRTUALADDRESS
 title: PFND3DKMT_FREEGPUVIRTUALADDRESS (d3dkmthk.h)
 description: The Pfnd3dkmtFreegpuvirtualaddress callback function releases a range of graphics processing unit (GPU) virtual addresses, which was previously reserved or mapped.
-ms.assetid: c9072c10-4a54-4fa1-8bd5-c67cd876ccc6
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_FREEGPUVIRTUALADDRESS callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The Pfnd3dkmtFreegpuvirtualaddress callback function releases a range of graphic
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_FREEGPUVIRTUALADDRESS](ns-d3dkmthk-_d3dkmt_freegpuvirtualaddress.md) structure.
 

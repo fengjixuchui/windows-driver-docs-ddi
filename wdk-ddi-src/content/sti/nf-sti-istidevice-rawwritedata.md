@@ -4,7 +4,6 @@ title: IStiDevice::RawWriteData (sti.h)
 description: The IStiDevice::RawWriteData method writes data to a still image device.
 old-location: image\istidevice_rawwritedata.htm
 tech.root: image
-ms.assetid: bc64b3d6-8c86-4f99-b3b9-de31f576988c
 ms.date: 05/03/2018
 keywords: ["IStiDevice::RawWriteData"]
 ms.keywords: IStiDevice interface [Imaging Devices],RawWriteData method, IStiDevice.RawWriteData, IStiDevice::RawWriteData, RawWriteData, RawWriteData method [Imaging Devices], RawWriteData method [Imaging Devices],IStiDevice interface, image.istidevice_rawwritedata, sti/IStiDevice::RawWriteData, stifnc_2b8739f4-3ab7-4b25-bae2-7e025cffe72d.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - sti.h
 api_name:
- - IStiDevice.RawWriteData
+ - IStiDevice::RawWriteData
 ---
 
 # IStiDevice::RawWriteData
@@ -50,18 +49,18 @@ The <b>IStiDevice::RawWriteData</b> method writes data to a still image device.
 
 ## -parameters
 
-### -param lpBuffer 
+### -param lpBuffer [in]
 
-[in]
+
 Caller-supplied pointer to a buffer containing data to be sent to the device.
 
 ### -param nNumberOfBytes
 
 Caller-supplied number of bytes to be written. This is the number of bytes in the buffer pointed to by <i>lpBuffer</i>.
 
-### -param lpOverlapped 
+### -param lpOverlapped [in, optional]
 
-[in, optional]
+
 Optional, caller-supplied pointer to an OVERLAPPED structure (described in the Microsoft Windows SDK documentation).
 
 ## -returns
@@ -83,3 +82,4 @@ A call to <b>IStiDevice::RawWriteData</b> must be preceded by a call to <a href=
 
 
 <a href="/windows-hardware/drivers/ddi/sti/nf-sti-istidevice-rawwritecommand">IStiDevice::RawWriteCommand</a>
+

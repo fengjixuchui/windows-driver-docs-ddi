@@ -4,7 +4,6 @@ title: SensorsCxDeviceInitConfig function (sensorscx.h)
 description: This function configures the sensor device.
 old-location: sensors\sensorscxdeviceinitconfig.htm
 tech.root: sensors
-ms.assetid: E347F2E1-5AF5-411A-8F05-DA4826240E02
 ms.date: 05/03/2018
 keywords: ["SensorsCxDeviceInitConfig function"]
 ms.keywords: SensorsCxDeviceInitConfig, SensorsCxDeviceInitConfig function [Sensor Devices], sensors.sensorscxdeviceinitconfig, sensorscx/SensorsCxDeviceInitConfig
@@ -50,19 +49,19 @@ This function configures the sensor device.
 
 ## -parameters
 
-### -param pFxDeviceInit 
+### -param pFxDeviceInit [in, out]
 
-[in, out]
+
 A reference to WDFDEVICE_INIT.
 
-### -param pFdoAttributes 
+### -param pFdoAttributes [in, out]
 
-[in, out]
+
 A reference to WDF_OBJECT_ATTRIBUTES.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 The flags for the sensor driver. Reserved set to 0.
 
 ## -returns

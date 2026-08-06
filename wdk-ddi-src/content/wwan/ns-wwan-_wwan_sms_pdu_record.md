@@ -4,7 +4,6 @@ title: _WWAN_SMS_PDU_RECORD (wwan.h)
 description: The WWAN_SMS_PDU_RECORD structure represents a PDU-style SMS message record.
 old-location: netvista\wwan_sms_pdu_record.htm
 tech.root: netvista
-ms.assetid: 20200222-8539-497e-891e-2d29c3207c56
 ms.date: 05/02/2018
 keywords: ["WWAN_SMS_PDU_RECORD structure"]
 ms.keywords: "*PWWAN_SMS_PDU_RECORD, PWWAN_SMS_PDU_RECORD, PWWAN_SMS_PDU_RECORD structure pointer [Network Drivers Starting with Windows Vista], WWAN_SMS_PDU_RECORD, WWAN_SMS_PDU_RECORD structure [Network Drivers Starting with Windows Vista], WwanRef_b21c5d84-e8d4-4cf4-9942-f6f1a14c23c0.xml, _WWAN_SMS_PDU_RECORD, netvista.wwan_sms_pdu_record, wwan/PWWAN_SMS_PDU_RECORD, wwan/WWAN_SMS_PDU_RECORD"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_SMS_PDU_RECORD
+ - PWWAN_SMS_PDU_RECORD
  - WWAN_SMS_PDU_RECORD
 ---
 
@@ -95,3 +96,4 @@ For CDMA-based devices that support reading SMS messages in binary format (as re
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wwan/ne-wwan-_wwan_msg_status">WWAN_MSG_STATUS</a>
+

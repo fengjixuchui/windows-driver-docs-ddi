@@ -4,7 +4,6 @@ title: _URS_HARDWARE_EVENT (urstypes.h)
 description: Defines values for the hardware events that a client driver for a USB dual-role controller can report.
 old-location: buses\urs_hardware_event.htm
 tech.root: usbref
-ms.assetid: 985A7725-1EE1-4419-B8BE-FEE2306E93A7
 ms.date: 05/07/2018
 keywords: ["URS_HARDWARE_EVENT enumeration"]
 ms.keywords: "*PURS_HARDWARE_EVENT, URS_HARDWARE_EVENT, URS_HARDWARE_EVENT enumeration [Buses], URS_HARDWARE_EVENT,*PURS_HARDWARE_EVENT, URS_HARDWARE_EVENT,*PURS_HARDWARE_EVENT enumeration [Buses], UrsHardwareEventDetach, UrsHardwareEventIdFloat, UrsHardwareEventIdGround, UrsHardwareEventNone, UrsHardwareEventPortTypeDfp, UrsHardwareEventPortTypeUfp, _URS_HARDWARE_EVENT, buses.urs_hardware_event, urstypes/URS_HARDWARE_EVENT, urstypes/UrsHardwareEventDetach, urstypes/UrsHardwareEventIdFloat, urstypes/UrsHardwareEventIdGround, urstypes/UrsHardwareEventNone, urstypes/UrsHardwareEventPortTypeDfp, urstypes/UrsHardwareEventPortTypeUfp"
@@ -42,7 +41,9 @@ api_type:
 api_location:
  - Urstypes.h
 api_name:
- - URS_HARDWARE_EVENT, *PURS_HARDWARE_EVENT
+ - _URS_HARDWARE_EVENT
+ - PURS_HARDWARE_EVENT
+ - URS_HARDWARE_EVENT
 ---
 
 # _URS_HARDWARE_EVENT enumeration
@@ -81,3 +82,4 @@ The Type-C connector has resolved to UFP. Not to be used directly by the URS cli
 ## -remarks
 
 Values defined for USB Type-C systems should not be directly used by the client driver. Instead the driver should report that it does not support hardware event reporting by calling <a href="/windows-hardware/drivers/ddi/ursdevice/nf-ursdevice-urssethardwareeventsupport">UrsSetHardwareEventSupport</a>. These hardware events are detected by a USB Type-C connector driver, see <a href="/windows-hardware/drivers/ddi/ucmmanager/">USB Type-C connector driver programming reference</a>.
+

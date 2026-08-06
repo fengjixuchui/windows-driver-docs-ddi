@@ -4,7 +4,6 @@ title: _WDI_QOS_PROTOCOL (wditypes.h)
 description: The WDI_QOS_PROTOCOL enumeration defines Wi-Fi QOS protocols.
 old-location: netvista\wdi_qos_protocol.htm
 tech.root: netvista
-ms.assetid: 39466BF7-0517-4113-9C94-26D8691CCCC1
 ms.date: 05/02/2018
 keywords: ["WDI_QOS_PROTOCOL enumeration"]
 ms.keywords: WDI_QOS_PROTOCOL, WDI_QOS_PROTOCOL enumeration [Device and Driver Installation], WDI_QOS_PROTOCOL_11E, WDI_QOS_PROTOCOL_NONE, WDI_QOS_PROTOCOL_WMM, _WDI_QOS_PROTOCOL, netvista.wdi_qos_protocol, netvista.wifi_qos_protocol, wditypes/WDI_QOS_PROTOCOL, wditypes/WDI_QOS_PROTOCOL_11E, wditypes/WDI_QOS_PROTOCOL_NONE, wditypes/WDI_QOS_PROTOCOL_WMM
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_QOS_PROTOCOL
  - WDI_QOS_PROTOCOL
 ---
 
@@ -47,6 +47,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_QOS_PROTOCOL enumeration defines Wi-Fi QOS protocols.
 

@@ -2,7 +2,6 @@
 UID: NF:sensorsutils.EvaluateActivityThresholds
 title: EvaluateActivityThresholds function (sensorsutils.h)
 description: This routine determines whether the new incoming activity data meets the threshold.
-ms.assetid: f2a211f5-90ab-4665-856a-cd9b007c8efa
 ms.date: 08/08/2018
 keywords: ["EvaluateActivityThresholds function"]
 tech.root: sensors
@@ -50,17 +49,17 @@ Note that the samples must be sorted and filtered data. Use CollectionsListSortS
 
 ## -parameters
 
-### -param newSample
+### -param newSample [in]
 
-[in] Incoming activity data, as a sensor collection list.
+Incoming activity data, as a sensor collection list.
 
-### -param oldSample
+### -param oldSample [in]
 
-[in] Last reported activity data, as a sensor collection list.
+Last reported activity data, as a sensor collection list.
 
-### -param thresholds
+### -param thresholds [in]
 
-[in] Activity detection thresholds, as a sensor collection list.
+Activity detection thresholds, as a sensor collection list.
 
 ## -returns
 

@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_DISCARD
 title: PFND3D11_1DDI_DISCARD (d3d10umddi.h)
 description: Discards (evicts) an allocation from video display memory. Implemented by Windows Display Driver Model (WDDM) 1.2 and later user-mode display drivers.
 old-location: display\discard_d3d11_1_.htm
-ms.assetid: d94234ab-712b-4449-96de-16b9e310d250
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_DISCARD callback function"]
 ms.keywords: Discard(D3D11_1), Discard(D3D11_1) callback function [Display Devices], PFND3D11_1DDI_DISCARD, PFND3D11_1DDI_DISCARD callback, d3d10umddi/Discard(D3D11_1), display.discard_d3d11_1_, display.pfndiscard
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - Discard(D3D11_1)
-product:
- - Windows
+ - PFND3D11_1DDI_DISCARD
 ---
 
 # PFND3D11_1DDI_DISCARD callback function
@@ -52,7 +49,7 @@ Discards (evicts) an allocation from video display memory. Implemented by Window
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
@@ -66,7 +63,7 @@ A value, of type <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi
 
 A pointer to a handle to the resource or to the view that is to be discarded.
 
-### -param Arg4
+### -param unnamedParam4
 
 *pRects* [in, optional]
 
@@ -91,3 +88,4 @@ typedef RECT D3D10_DDI_RECT;
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_devicefuncs">D3D11_1DDI_DEVICEFUNCS</a>
+

@@ -4,7 +4,6 @@ title: RtlDWordPtrMult function (ntintsafe.h)
 description: Multiplies one value of type DWORD_PTR by another.
 old-location: kernel\rtldwordptrmult.htm
 tech.root: kernel
-ms.assetid: E7EEE6D7-19C8-481F-BAEF-15998819D2D0
 ms.date: 04/30/2018
 keywords: ["RtlDWordPtrMult function"]
 ms.keywords: RtlDWordPtrMult, RtlDWordPtrMult function [Kernel-Mode Driver Architecture], kernel.rtldwordptrmult, ntintsafe/RtlDWordPtrMult
@@ -50,19 +49,19 @@ Multiplies one value of type <b>DWORD_PTR</b> by another.
 
 ## -parameters
 
-### -param dwMultiplicand 
+### -param dwMultiplicand [in]
 
-[in]
+
 The value to be multiplied by <i>dwMultiplier</i>.
 
-### -param dwMultiplier 
+### -param dwMultiplier [in]
 
-[in]
+
 The value by which to multiply <i>dwMultiplicand</i>.
 
-### -param pdwResult 
+### -param pdwResult [out]
 
-[out]
+
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

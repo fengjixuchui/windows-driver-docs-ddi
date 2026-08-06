@@ -4,7 +4,6 @@ title: IMiniportStreamAudioEngineNode::GetLfxState (portcls.h)
 description: Gets the state of the local effects (LFX) node that is in the path of the audio stream.
 old-location: audio\iminiportstreamaudioenginenode_getlfxstate.htm
 tech.root: audio
-ms.assetid: 2810D8B3-DDB7-4B55-839B-B2D079BDC0FC
 ms.date: 05/08/2018
 keywords: ["IMiniportStreamAudioEngineNode::GetLfxState"]
 ms.keywords: GetLfxState, GetLfxState method [Audio Devices], GetLfxState method [Audio Devices],IMiniportStreamAudioEngineNode interface, IMiniportStreamAudioEngineNode interface [Audio Devices],GetLfxState method, IMiniportStreamAudioEngineNode.GetLfxState, IMiniportStreamAudioEngineNode::GetLfxState, audio.iminiportstreamaudioenginenode_getlfxstate, portcls/IMiniportStreamAudioEngineNode::GetLfxState
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IMiniportStreamAudioEngineNode.GetLfxState
+ - IMiniportStreamAudioEngineNode::GetLfxState
 ---
 
 # IMiniportStreamAudioEngineNode::GetLfxState
@@ -50,9 +49,9 @@ Gets the state of the local effects (LFX) node that is in the path of the audio 
 
 ## -parameters
 
-### -param pbEnable 
+### -param pbEnable [out]
 
-[out]
+
 The current state of the LFX node.
 
 ## -returns
@@ -64,3 +63,4 @@ code.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportstreamaudioenginenode">IMiniportStreamAudioEngineNode</a>
+

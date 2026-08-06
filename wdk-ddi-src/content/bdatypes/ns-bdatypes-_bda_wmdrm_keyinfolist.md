@@ -1,10 +1,9 @@
 ---
 UID: NS:bdatypes._BDA_WMDRM_KEYINFOLIST
 title: _BDA_WMDRM_KEYINFOLIST (bdatypes.h)
-description: 
+description: "Learn more about: _BDA_WMDRM_KEYINFOLIST structure"
 old-location: stream\bda_wmdrm_keyinfolist.htm
 tech.root: stream
-ms.assetid: 0A151425-C22F-4201-855F-FF6FECE611D7
 ms.date: 04/23/2018
 keywords: ["BDA_WMDRM_KEYINFOLIST structure"]
 ms.keywords: "*PBDA_WMDRM_KEYINFOLIST, BDA_WMDRM_KEYINFOLIST, BDA_WMDRM_KEYINFOLIST structure [Streaming Media Devices], PBDA_WMDRM_KEYINFOLIST, PBDA_WMDRM_KEYINFOLIST structure pointer [Streaming Media Devices], _BDA_WMDRM_KEYINFOLIST, bdatypes/BDA_WMDRM_KEYINFOLIST, bdatypes/PBDA_WMDRM_KEYINFOLIST, stream.bda_wmdrm_keyinfolist"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Bdatypes.h
 api_name:
+ - _BDA_WMDRM_KEYINFOLIST
+ - PBDA_WMDRM_KEYINFOLIST
  - BDA_WMDRM_KEYINFOLIST
 ---
 

@@ -4,7 +4,6 @@ title: WdfPdoInitAssignContainerID function (wdfpdo.h)
 description: The WdfPdoInitAssignContainerID method updates the container ID for a child device.
 old-location: wdf\wdfpdoinitassigncontainerid.htm
 tech.root: wdf
-ms.assetid: 603bff9f-fd18-40bd-9b2b-8f013f99ec61
 ms.date: 02/26/2018
 keywords: ["WdfPdoInitAssignContainerID function"]
 ms.keywords: DFDeviceObjectFdoPdoRef_b744c1d7-e24f-4936-8921-cf5b7dd4ad68.xml, WdfPdoInitAssignContainerID, WdfPdoInitAssignContainerID method, kmdf.wdfpdoinitassigncontainerid, wdf.wdfpdoinitassigncontainerid, wdfpdo/WdfPdoInitAssignContainerID
@@ -53,14 +52,14 @@ The <b>WdfPdoInitAssignContainerID</b> method updates the container ID for a chi
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
-### -param ContainerID 
+### -param ContainerID [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a container ID string. The driver can allocate the string's buffer from paged pool.
 
 ## -returns

@@ -4,7 +4,6 @@ title: IXpsDocumentProvider::GetXpsPart (filterpipeline.h)
 description: The GetXpsPart method retrieves several objects that make up an XPS document.
 old-location: print\ixpsdocumentprovider_getxpspart.htm
 tech.root: print
-ms.assetid: 7e36cf90-a84a-447c-bec3-2b5175fffd7c
 ms.date: 04/20/2018
 keywords: ["IXpsDocumentProvider::GetXpsPart"]
 ms.keywords: GetXpsPart, GetXpsPart method [Print Devices], GetXpsPart method [Print Devices],IXpsDocumentProvider interface, IXpsDocumentProvider interface [Print Devices],GetXpsPart method, IXpsDocumentProvider.GetXpsPart, IXpsDocumentProvider::GetXpsPart, filterpipeline/IXpsDocumentProvider::GetXpsPart, filterpipeline_e99337a9-3674-4d34-886c-684a85a8dd0d.xml, print.ixpsdocumentprovider_getxpspart
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - filterpipeline.h
 api_name:
- - IXpsDocumentProvider.GetXpsPart
+ - IXpsDocumentProvider::GetXpsPart
 ---
 
 # IXpsDocumentProvider::GetXpsPart
@@ -50,9 +49,9 @@ The <code>GetXpsPart</code> method retrieves several objects that make up an XPS
 
 ## -parameters
 
-### -param ppIXpsPart 
+### -param ppIXpsPart [out]
 
-[out]
+
 The XPS part. This part is the <b>IUnknown</b> interface of an object that is an XPS part. If <i>ppIXpsPart</i> is NULL, there are no more XPS parts to consume and the filter is ready to finish processing.
 
 ## -returns

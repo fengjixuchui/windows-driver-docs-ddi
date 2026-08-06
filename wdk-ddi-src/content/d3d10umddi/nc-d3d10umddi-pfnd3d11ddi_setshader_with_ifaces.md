@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_SETSHADER_WITH_IFACES
 title: PFND3D11DDI_SETSHADER_WITH_IFACES (d3d10umddi.h)
 description: The CsSetShaderWithIfaces function sets the compute shader code along with a group of interfaces so that all of the subsequent dispatching operations use that code and those interfaces.
 old-location: display\cssetshaderwithifaces.htm
-ms.assetid: 2e7170e8-2b77-45a7-9ff5-834452c13ddf
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_SETSHADER_WITH_IFACES callback function"]
 ms.keywords: CsSetShaderWithIfaces, CsSetShaderWithIfaces callback function [Display Devices], PFND3D11DDI_SETSHADER_WITH_IFACES, PFND3D11DDI_SETSHADER_WITH_IFACES callback, UserModeDisplayDriverDx11_Functions_bffc7a50-c0dd-420e-b599-5fb1e223ef3c.xml, d3d10umddi/CsSetShaderWithIfaces, display.cssetshaderwithifaces
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CsSetShaderWithIfaces
+ - PFND3D11DDI_SETSHADER_WITH_IFACES
 ---
 
 # PFND3D11DDI_SETSHADER_WITH_IFACES callback function
@@ -50,30 +49,30 @@ The <b>CsSetShaderWithIfaces</b> function sets the compute shader code along wit
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hShader* [in]
 
 A handle to the compute shader code object.
 
-### -param NumClassInstances 
+### -param NumClassInstances [in]
 
-[in]
+
 The number of class instances for implementations of the interfaces.
 
-### -param Arg4
+### -param unnamedParam4
 
 *pPointerData* [in]
 
 An array of <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11ddiarg_pointerdata">D3D11DDIARG_POINTERDATA</a> structures. Each structure describes the location of the data that is referenced by a class instance that is assigned to an interface implementation. The number of elements in the array is specified by the <i>NumClassInstances</i> parameter.
 
-### -param Arg5
+### -param unnamedParam5
 
 *pIfaces* [in]
 
@@ -126,3 +125,4 @@ The <b>VsSetShaderWithIfaces</b> function sets the vertex shader code along with
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

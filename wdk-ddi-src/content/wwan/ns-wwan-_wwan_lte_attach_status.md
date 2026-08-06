@@ -3,8 +3,7 @@ UID: NS:wwan._WWAN_LTE_ATTACH_STATUS
 title: _WWAN_LTE_ATTACH_STATUS (wwan.h)
 description: The WWAN_LTE_ATTACH_STATUS structure describes the last used default LTE attach context for a mobile broadband (MBB) modem.
 tech.root: netvista
-ms.assetid: f8e43c3a-d22c-4bb6-bf50-bb98a776deae
-ms.date: 08/23/2018
+ms.date: 12/30/2021
 keywords: ["WWAN_LTE_ATTACH_STATUS structure"]
 ms.keywords: _WWAN_LTE_ATTACH_STATUS, WWAN_LTE_ATTACH_STATUS, *PWWAN_LTE_ATTACH_STATUS,
 req.header: wwan.h
@@ -37,8 +36,8 @@ api_location:
  - wwan.h
 api_name:
  - _WWAN_LTE_ATTACH_STATUS
-product:
- - Windows
+ - PWWAN_LTE_ATTACH_STATUS
+ - WWAN_LTE_ATTACH_STATUS
 ---
 
 # _WWAN_LTE_ATTACH_STATUS structure
@@ -62,6 +61,8 @@ A [**WWAN_IP_TYPE**](ne-wwan-_wwan_ip_type.md) value that specifies the supporte
 
 A [**WWAN_CONTEXT**](ns-wwan-_wwan_context.md) structure that represents the basic information for the default LTE attach context.
 
+### -field NetworkError
+
 ## -remarks
 
 This structure is used in the [**NDIS_WWAN_LTE_ATTACH_STATUS**](../ndiswwan/ns-ndiswwan-_ndis_wwan_lte_attach_status.md) structure.
@@ -71,3 +72,4 @@ This structure is used in the [**NDIS_WWAN_LTE_ATTACH_STATUS**](../ndiswwan/ns-n
 [MB LTE Attach Operations](/windows-hardware/drivers/network/mb-lte-attach-operations)
 
 [**NDIS_WWAN_LTE_ATTACH_STATUS**](../ndiswwan/ns-ndiswwan-_ndis_wwan_lte_attach_status.md)
+

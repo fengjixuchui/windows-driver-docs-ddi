@@ -2,7 +2,6 @@
 UID: NS:ucmucsispec._UCSI_SET_UOR_COMMAND
 title: _UCSI_SET_UOR_COMMAND (ucmucsispec.h)
 description: Used in the SET_UOR command. See Table 4-20.
-ms.assetid: 7c2d1d18-6d86-43b3-aed9-e2660ee0d210
 tech.root: usbref
 ms.date: 09/30/2018
 keywords: ["UCSI_SET_UOR_COMMAND structure"]
@@ -37,6 +36,8 @@ api_location:
  - ucmucsispec.h
 api_name:
  - _UCSI_SET_UOR_COMMAND
+ - PUCSI_SET_UOR_COMMAND
+ - UCSI_SET_UOR_COMMAND
 ---
 
 # _UCSI_SET_UOR_COMMAND structure
@@ -44,7 +45,7 @@ api_name:
 
 ## -description
 
-Used in the SET_UOR command. See Table 4-20 in [UCSI spec version 1.1](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
+Used in the SET_UOR command. See Table 4-20 in [UCSI spec version 1.2](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
 
 ## -struct-fields
 

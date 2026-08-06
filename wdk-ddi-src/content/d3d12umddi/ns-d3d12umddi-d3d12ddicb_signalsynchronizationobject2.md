@@ -3,11 +3,8 @@ UID: NS:d3d12umddi.D3D12DDICB_SIGNALSYNCHRONIZATIONOBJECT2
 title: D3D12DDICB_SIGNALSYNCHRONIZATIONOBJECT2
 description: Signals a synchronization object.
 tech.root: display
-ms.assetid: 45bbd40e-92a8-4ceb-a220-b196a383ba70
 ms.date: 04/04/2019
 keywords: ["D3D12DDICB_SIGNALSYNCHRONIZATIONOBJECT2 structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: D3D12DDICB_SIGNALSYNCHRONIZATIONOBJECT2, D3D12DDICB_SIGNALSYNCHRONIZATIONOBJECT2,
 req.header: d3d12umddi.h
 req.include-header: 
@@ -35,8 +32,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - D3D12DDICB_SIGNALSYNCHRONIZATIONOBJECT2
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -50,38 +45,38 @@ Signals a synchronization object.
 
 ## -struct-fields
 
-### -field hContext
+### -field hContext [in]
 
-[in] Specify the context that should signal the objects.
+Specify the context that should signal the objects.
 
-### -field ObjectCount
+### -field ObjectCount [in]
 
-[in] Number of object to signal.
+Number of object to signal.
 
-### -field ObjectHandleArray
+### -field ObjectHandleArray [in]
 
-[in] A handle to an array of synchronization objects to signal.
+A handle to an array of synchronization objects to signal.
 
-### -field Flags
+### -field Flags [in]
 
-[in] Specify signal behavior.
+Specify signal behavior.
 
-### -field BroadcastContextCount
+### -field BroadcastContextCount [in]
 
-[in] Specifies the number of context to broadcast this signal buffer to.
+Specifies the number of context to broadcast this signal buffer to.
 
-### -field BroadcastContext
+### -field BroadcastContext [in]
 
-[in] A handle an array of context to broadcast to.
+A handle an array of context to broadcast to.
 
-### -field FenceValue
+### -field FenceValue [in]
 
-[in] Fence value to be signaled.
+Fence value to be signaled.
 
-### -field CpuEventHandle
+### -field CpuEventHandle [in]
 
  
-[in] Handle of a CPU event to be signaled.
+Handle of a CPU event to be signaled.
 
 ## -remarks
 

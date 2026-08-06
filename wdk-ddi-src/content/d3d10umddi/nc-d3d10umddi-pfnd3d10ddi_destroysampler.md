@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d10umddi.PFND3D10DDI_DESTROYSAMPLER
 title: PFND3D10DDI_DESTROYSAMPLER (d3d10umddi.h)
-description: The DestroySampler function destroys the specified sampler object. The sampler object can be destoyed only if it is not currently bound to a display device.
+description: The DestroySampler function destroys the specified sampler object. The sampler object can be destroyed only if it is not currently bound to a display device.
 old-location: display\destroysampler.htm
-ms.assetid: 8e66de90-c336-43b4-b0ad-cb24cea3638c
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_DESTROYSAMPLER callback function"]
 ms.keywords: DestroySampler, DestroySampler callback function [Display Devices], PFND3D10DDI_DESTROYSAMPLER, PFND3D10DDI_DESTROYSAMPLER callback, UserModeDisplayDriverDx10_Functions_814d0591-6b69-4b30-9463-3c23c62e0b6a.xml, d3d10umddi/DestroySampler, display.destroysampler
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - DestroySampler
+ - PFND3D10DDI_DESTROYSAMPLER
 ---
 
 # PFND3D10DDI_DESTROYSAMPLER callback function
@@ -46,17 +45,17 @@ api_name:
 
 ## -description
 
-The <b>DestroySampler</b> function destroys the specified sampler object. The sampler object can be destoyed only if it is not currently bound to a display device.
+The <b>DestroySampler</b> function destroys the specified sampler object. The sampler object can be destroyed only if it is not currently bound to a display device.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hSampler* [in]
 
@@ -77,3 +76,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

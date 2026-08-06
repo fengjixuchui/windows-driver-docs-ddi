@@ -4,7 +4,6 @@ title: IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveCanceled (wudfddi.h)
 description: A UMDF-based driver's OnRemoteTargetRemoveCanceled event callback function performs operations that are necessary when the operating system cancels the removal of a remote I/O target's device.
 old-location: wdf\iremotetargetcallbackremoval_onremotetargetremovecanceled.htm
 tech.root: wdf
-ms.assetid: 26a6e9e7-f1bb-4174-a640-f665cecfd191
 ms.date: 02/26/2018
 keywords: ["IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveCanceled"]
 ms.keywords: IRemoteTargetCallbackRemoval interface,OnRemoteTargetRemoveCanceled method, IRemoteTargetCallbackRemoval.OnRemoteTargetRemoveCanceled, IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveCanceled, OnRemoteTargetRemoveCanceled, OnRemoteTargetRemoveCanceled method, OnRemoteTargetRemoveCanceled method,IRemoteTargetCallbackRemoval interface, UMDFIoTargetObjectRef_aa4d89fd-ad91-46ea-a55d-4c89d65da13e.xml, umdf.iremotetargetcallbackremoval_onremotetargetremovecanceled, wdf.iremotetargetcallbackremoval_onremotetargetremovecanceled, wudfddi/IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveCanceled
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IRemoteTargetCallbackRemoval.OnRemoteTargetRemoveCanceled
+ - IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveCanceled
 ---
 
 # IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveCanceled
@@ -52,9 +51,9 @@ A UMDF-based driver's <b>OnRemoteTargetRemoveCanceled</b> event callback functio
 
 ## -parameters
 
-### -param pWdfRemoteTarget 
+### -param pWdfRemoteTarget [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfremotetarget">IWDFRemoteTarget</a> interface of a remote target object that represents a <a href="/windows-hardware/drivers/wdf/general-i-o-targets-in-umdf">remote I/O target</a>. The driver obtains this pointer when it calls <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice2-createremotetarget">IWDFDevice2::CreateRemoteTarget</a>.
 
 ## -remarks
@@ -86,3 +85,4 @@ For more information about the <b>OnRemoteTargetRemoveCanceled</b> event callbac
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iremotetargetcallbackremoval-onremotetargetremovecomplete">IRemoteTargetCallbackRemoval::OnRemoteTargetRemoveComplete</a>
+

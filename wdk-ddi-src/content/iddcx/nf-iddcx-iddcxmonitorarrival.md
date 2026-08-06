@@ -4,8 +4,7 @@ title: IddCxMonitorArrival function (iddcx.h)
 description: An OS callback function the driver calls to report a monitor arrival on the WDDM graphics adapter.
 old-location: display\iddcxmonitorarrival.htm
 tech.root: display
-ms.assetid: e73a8111-9e54-4040-a38a-441948e10212
-ms.date: 05/10/2018
+ms.date: 08/08/2022
 keywords: ["IddCxMonitorArrival function"]
 ms.keywords: IddCxMonitorArrival, IddCxMonitorArrival method [Display Devices], display.iddcxmonitorarrival, iddcx/IddCxMonitorArrival
 req.header: iddcx.h
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: IddCxStub.lib
 req.dll: IddCx.dll
-req.irql: _Must_inspect_result_
+req.irql: 
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -43,23 +42,32 @@ api_name:
 
 # IddCxMonitorArrival function
 
-
 ## -description
 
-                An OS callback function the driver calls to report a monitor arrival on the WDDM graphics adapter
+An indirect display driver (IDD) calls **IddCxMonitorArrival** to report a monitor arrival on the WDDM graphics adapter.
 
 ## -parameters
 
-### -param AdapterObject 
+### -param MonitorObject [in]
 
-[in]
-The adapter object that is hosting the newly arrived monitor
+The [IDDCX_MONITOR](/windows-hardware/drivers/display/iddcx-objects) object for the monitor that arrived.
 
-### -param pOutArgs 
+### -param pOutArgs [out]
 
-[out]
-Output arguments to the function
+Pointer to an [**IDARG_OUT_MONITORARRIVAL**](ns-iddcx-idarg_out_monitorarrival.md) structure in which to return details about the monitor that arrived.
 
 ## -returns
 
-(NTSTATUS) The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS</a> error code.
+(NTSTATUS) The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate [NTSTATUS](/windows-hardware/drivers/kernel/ntstatus-values) error code.
+
+## -remarks
+
+An IDD must first call [**IddCxMonitorCreate**](nf-iddcx-iddcxmonitorcreate.md) to obtain the [IDDCX_MONITOR](/windows-hardware/drivers/display/iddcx-objects) object.
+
+## -see-also
+
+[**IDARG_OUT_MONITORARRIVAL**](ns-iddcx-idarg_out_monitorarrival.md)
+
+[**IddCxMonitorCreate**](nf-iddcx-iddcxmonitorcreate.md)
+
+[**IddCxMonitorDeparture**](nf-iddcx-iddcxmonitordeparture.md)

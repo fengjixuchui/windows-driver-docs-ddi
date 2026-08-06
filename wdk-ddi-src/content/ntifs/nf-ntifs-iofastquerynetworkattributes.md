@@ -1,11 +1,10 @@
 ---
 UID: NF:ntifs.IoFastQueryNetworkAttributes
 title: IoFastQueryNetworkAttributes function (ntifs.h)
-description: Reserved for system use.
+description: "Microsoft reserves the IoFastQueryNetworkAttributes function for internal use only. Don't use this function in your code."
 old-location: ifsk\iofastquerynetworkattributes.htm
 tech.root: ifsk
-ms.assetid: 69a3e9c2-8bd5-4f42-9de9-58f1eea8b9a2
-ms.date: 04/16/2018
+ms.date: 05/24/2022
 keywords: ["IoFastQueryNetworkAttributes function"]
 ms.keywords: IoFastQueryNetworkAttributes, IoFastQueryNetworkAttributes function [Installable File System Drivers], ifsk.iofastquerynetworkattributes, ioref_c2d35e20-00b0-48e3-9c0e-d13f5dd9b7f7.xml, ntifs/IoFastQueryNetworkAttributes
 req.header: ntifs.h
@@ -43,7 +42,6 @@ api_name:
 
 # IoFastQueryNetworkAttributes function
 
-
 ## -description
 
 This routine is reserved for system use.
@@ -52,7 +50,7 @@ This routine is reserved for system use.
 
 ### -param ObjectAttributes
 
-<p>Reserved.</p>
+Reserved.
 
 ### -param DesiredAccess
 
@@ -70,3 +68,6 @@ Reserved.
 
 Reserved.
 
+## -returns
+
+Reserved.

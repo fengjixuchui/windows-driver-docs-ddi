@@ -2,10 +2,8 @@
 UID: NF:printerextension.IPrinterExtensionEvent.OnDriverEvent
 title: IPrinterExtensionEvent::OnDriverEvent (printerextension.h)
 description: Called when a driver event occurs.
-old-location: print\iprinterextensionevent_ondriverevent.htm
 tech.root: print
-ms.assetid: F00FD4FB-08D5-42D4-8CC2-85EE02D95E4B
-ms.date: 04/20/2018
+ms.date: 08/02/2022
 keywords: ["IPrinterExtensionEvent::OnDriverEvent"]
 ms.keywords: IPrinterExtensionEvent interface [Print Devices],OnDriverEvent method, IPrinterExtensionEvent.OnDriverEvent, IPrinterExtensionEvent::OnDriverEvent, OnDriverEvent, OnDriverEvent method [Print Devices], OnDriverEvent method [Print Devices],IPrinterExtensionEvent interface, print.iprinterextensionevent_ondriverevent, printerextension/IPrinterExtensionEvent::OnDriverEvent
 req.header: printerextension.h
@@ -38,11 +36,8 @@ api_type:
 api_location:
  - printerextension.h
 api_name:
- - IPrinterExtensionEvent.OnDriverEvent
+ - IPrinterExtensionEvent::OnDriverEvent
 ---
-
-# IPrinterExtensionEvent::OnDriverEvent
-
 
 ## -description
 
@@ -50,19 +45,16 @@ Called when a driver event occurs.
 
 ## -parameters
 
-### -param pEventArgs 
+### -param pEventArgs [in]
 
-[in]
 The event arguments.
 
 ## -returns
 
-This method returns an <b>HRESULT</b> value.
+This method returns an **HRESULT** value.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensionevent">IPrinterExtensionEvent</a>
+[IPrinterExtensionEvent](./nn-printerextension-iprinterextensionevent.md)
 
-
-
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioneventargs">IPrinterExtensionEventArgs</a>
+[IPrinterExtensionEventArgs](./nn-printerextension-iprinterextensioneventargs.md)

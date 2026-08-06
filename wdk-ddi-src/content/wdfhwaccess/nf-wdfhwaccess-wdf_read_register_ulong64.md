@@ -4,7 +4,6 @@ title: WDF_READ_REGISTER_ULONG64 function (wdfhwaccess.h)
 description: The WDF_READ_REGISTER_ULONG64 function reads a ULONG64 value from the specified register address.
 old-location: wdf\wdf_read_register_ulong64.htm
 tech.root: wdf
-ms.assetid: A47BEA59-CBDD-41B5-9CEB-DC354D2BCC72
 ms.date: 02/26/2018
 keywords: ["WDF_READ_REGISTER_ULONG64 function"]
 ms.keywords: WDF_READ_REGISTER_ULONG64, WDF_READ_REGISTER_ULONG64 function, wdf.wdf_read_register_ulong64, wdfhwaccess/WDF_READ_REGISTER_ULONG64
@@ -52,14 +51,14 @@ The <b>WDF_READ_REGISTER_ULONG64</b> function reads a ULONG64 value from the spe
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the register address, which must be a mapped range in memory space.
 
 ## -returns

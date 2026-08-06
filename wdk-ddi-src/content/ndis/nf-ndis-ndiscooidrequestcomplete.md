@@ -4,7 +4,6 @@ title: NdisCoOidRequestComplete function (ndis.h)
 description: The NdisCoOidRequestComplete function returns the final status of an OID request that a CoNDIS client's or stand-alone call manager's ProtocolCoOidRequest function previously returned NDIS_STATUS_PENDING for.
 old-location: netvista\ndiscooidrequestcomplete.htm
 tech.root: netvista
-ms.assetid: ba4a22a1-ad48-43f1-96f5-dee5d76e49cb
 ms.date: 05/02/2018
 keywords: ["NdisCoOidRequestComplete function"]
 ms.keywords: NdisCoOidRequestComplete, NdisCoOidRequestComplete function [Network Drivers Starting with Windows Vista], condis_request_ref_29e0ae37-d6e6-4c75-b0fa-a6f84494f4a6.xml, ndis/NdisCoOidRequestComplete, netvista.ndiscooidrequestcomplete
@@ -55,16 +54,16 @@ The
 
 ## -parameters
 
-### -param NdisAfHandle 
+### -param NdisAfHandle [in]
 
-[in]
+
 An address family (AF) handle that NDIS passed to the client or stand-alone call manager's 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_oid_request">
      ProtocolCoOidRequest</a> function.
 
-### -param NdisVcHandle 
+### -param NdisVcHandle [in, optional]
 
-[in, optional]
+
 A virtual connection (VC) handle that NDIS passed to the client or stand-alone call manager's 
      <i>ProtocolCoOidRequest</i> function. A <b>NULL</b> value for this parameter indicates that the request is not
      VC-specific. This parameter is <b>NULL</b> if the caller of the 
@@ -72,27 +71,27 @@ A virtual connection (VC) handle that NDIS passed to the client or stand-alone c
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmoidrequest">NdisMCmOidRequest</a> function specified a
      <b>NULL</b> VC handle.
 
-### -param NdisPartyHandle 
+### -param NdisPartyHandle [in, optional]
 
-[in, optional]
+
 A party handle that NDIS passed to the client or stand-alone call manager's 
      <i>ProtocolCoOidRequest</i> function. A <b>NULL</b> value for this parameter indicates that the request is not
      party-specific. This parameter is <b>NULL</b> if the caller of the 
      <b>NdisCoOidRequest</b> or 
      <b>NdisMCmOidRequest</b> function specified a <b>NULL</b> party handle.
 
-### -param OidRequest 
+### -param OidRequest [in]
 
-[in]
+
 A pointer to a buffer that is formatted as an 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure. The caller of
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure. The caller of
      the 
      <b>NdisCoOidRequest</b> or 
      <b>NdisMCmOidRequest</b> function supplied this buffer.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 The final status of the request operation, either NDIS_STATUS_SUCCESS, or any driver-determined
      NDIS_STATUS_<i>XXX</i> status value 
      except NDIS_STATUS_PENDING.
@@ -128,7 +127,7 @@ Only clients and stand-alone call managers, which register themselves with NDIS 
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 

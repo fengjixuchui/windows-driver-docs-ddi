@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_CREATEVIDEODECODERHEAP_0072
 title: PFND3D12DDI_CREATEVIDEODECODERHEAP_0072 (d3d12umddi.h)
-description: PFND3D12DDI_CREATEVIDEODECODERHEAP_0072 is used to create a video decoder heap.
-ms.assetid: 2795dd57-d76b-43db-a450-cd8cb5173aec
-ms.date: 03/24/2020
+description: Learn more about the PFND3D12DDI_CREATEVIDEODECODERHEAP_0072 callback function.
+ms.date: 02/02/2022
 keywords: ["PFND3D12DDI_CREATEVIDEODECODERHEAP_0072 callback function"]
 ms.keywords: PFND3D12DDI_CREATEVIDEODECODERHEAP_0072, PFND3D12DDI_CREATEVIDEODECODERHEAP_0072  callback, PFND3D12DDI_CREATEVIDEODECODERHEAP_0072 callback function [Display Devices], d3d12umddi/PFND3D12DDI_CREATEVIDEODECODERHEAP_0072, display.pfnd3d12ddi_createvideodecoderheap_0072_
 req.header: d3d12umddi.h
@@ -38,34 +37,31 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CREATEVIDEODECODERHEAP_0072
-product:
- - Windows
 ---
 
 # PFND3D12DDI_CREATEVIDEODECODERHEAP_0072 callback function
 
-
 ## -description
 
-**PFND3D12DDI_CREATEVIDEODECODERHEAP_0072** is used to create a video decoder heap.
+A client driver's **PFND3D12DDI_CREATEVIDEODECODERHEAP_0072** creates a video decoder heap.
 
 ## -parameters
 
-### -param hDrvDevice
+### -param hDrvDevice [in]
 
-Handle to the hardware device being processed.
+Handle to the D3D12 device.
 
-### -param Arg2
+### -param unnamedParam2 [in]
 
-[in] Pointer to a [**D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0072**](ns-d3d12umddi-d3d12ddiarg_create_video_decoder_heap_0072.md) structure with the arguments used to create a video decoder heap.
+Pointer to a [**D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0072**](ns-d3d12umddi-d3d12ddiarg_create_video_decoder_heap_0072.md) structure with the arguments used to create a video decoder heap.
 
-### -param hDrvVideoDecoderHeap
+### -param hDrvVideoDecoderHeap [out]
 
-Handle to the video decoder heap.
+Handle to the created video decoder heap.
 
 ## -returns
 
-Returns STATUS_SUCCESS if completed successfully.
+Returns an [**HRESULT**](/windows-hardware/drivers/debugger/hresult-values) value.
 
 ## -remarks
 
@@ -74,4 +70,3 @@ See the [Video Protected Resource Support specification](https://microsoft.githu
 ## -see-also
 
 [**D3D12DDIARG_CREATE_VIDEO_DECODER_HEAP_0072**](ns-d3d12umddi-d3d12ddiarg_create_video_decoder_heap_0072.md)
-

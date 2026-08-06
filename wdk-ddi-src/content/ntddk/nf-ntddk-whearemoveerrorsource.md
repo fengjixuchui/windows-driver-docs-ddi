@@ -1,9 +1,8 @@
 ---
 UID: NF:ntddk.WheaRemoveErrorSource
 title: WheaRemoveErrorSource function
-description: Reserved for system use.
-tech.root: 
-ms.assetid: 6efc418b-cb45-409d-9ad7-9dbdfeba59bb
+description: "Microsoft reserves the WheaRemoveErrorSource function for internal use only. Don't use this function in your code."
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WheaRemoveErrorSource function"]
 ms.keywords: WheaRemoveErrorSource
@@ -37,8 +36,6 @@ api_location:
  - ntddk.h
 api_name:
  - WheaRemoveErrorSource
-product:
- - Windows
 ---
 
 # WheaRemoveErrorSource function

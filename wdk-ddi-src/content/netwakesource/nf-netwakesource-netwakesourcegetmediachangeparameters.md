@@ -3,8 +3,7 @@ UID: NF:netwakesource.NetWakeSourceGetMediaChangeParameters
 title: NetWakeSourceGetMediaChangeParameters function (netwakesource.h)
 description: The NetWakeSourceGetMediaChangeParameters function gets parameters for a media change wake source.
 tech.root: netvista
-ms.assetid: 197b0268-eace-4c01-bacd-62102bae7225
-ms.date: 10/07/2019
+ms.date: 04/01/2022
 keywords: ["NetWakeSourceGetMediaChangeParameters function"]
 ms.keywords: NetWakeSourceGetMediaChangeParameters
 req.header: netwakesource.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: netadaptercxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -37,8 +36,6 @@ api_location:
  - netadaptercxstub.lib
 api_name:
  - NetWakeSourceGetMediaChangeParameters
-product:
- - Windows
 ---
 
 # NetWakeSourceGetMediaChangeParameters function
@@ -50,17 +47,14 @@ The **NetWakeSourceGetMediaChangeParameters** function gets parameters for a med
 
 ## -parameters
 
-### -param WakeSource
+### -param WakeSource [_In_]
 
 A NETWAKESOURCE object that represents this media change wake source.
 
-### -param Parameters
+### -param Parameters [_Inout_]
 
 A pointer to a driver-allocated and initialized [**NET_WAKE_SOURCE_MEDIA_CHANGE_PARAMETERS**](../netwakesource/ns-netwakesource-_net_wake_source_media_change_parameters.md) structure that receives the media change parameters.
 
-## -returns
-
-This function does not return a value.
 
 ## -remarks
 

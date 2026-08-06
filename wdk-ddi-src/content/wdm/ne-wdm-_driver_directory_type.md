@@ -1,8 +1,8 @@
 ---
 UID: NE:wdm._DRIVER_DIRECTORY_TYPE
 title: _DRIVER_DIRECTORY_TYPE (wdm.h)
-description: 
-ms.assetid: 587aa860-ad2d-4de2-9f84-1ad5cb7b01bf
+description: "Learn more about: _DRIVER_DIRECTORY_TYPE enumeration"
+tech.root: ifsk
 ms.date: 10/19/2018
 keywords: ["DRIVER_DIRECTORY_TYPE enumeration"]
 ms.keywords: _DRIVER_DIRECTORY_TYPE, DRIVER_DIRECTORY_TYPE, *PDRIVER_DIRECTORY_TYPE,
@@ -32,6 +32,8 @@ api_location:
  - wdm.h
 api_name:
  - _DRIVER_DIRECTORY_TYPE
+ - PDRIVER_DIRECTORY_TYPE
+ - DRIVER_DIRECTORY_TYPE
 ---
 
 # _DRIVER_DIRECTORY_TYPE enumeration
@@ -48,8 +50,10 @@ Defines values for the type of directory used by the driver to load and store fi
 The directory from which the driver was loaded.
 
 ### -field DriverDirectoryData
+The requested directory is a general-purpose directory in which the driver stores files that contain state information specific to the internals of the driver and only used by the driver itself.
 
-The requested directory is a general-purpose directory in which the driver stores file that contains state-specific information to the internals of the driver.
+### -field DriverDirectorySharedData
+The requested directory is a general-purpose directory in which the driver stores or reads files that contain state information that is meant to be shared between the driver and other components. Other components can access this directory using GetSharedServiceDirectory. This value is available on Windows Server 2022 and later versions of Windows.
 
 ## -remarks
 

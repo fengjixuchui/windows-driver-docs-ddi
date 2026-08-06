@@ -4,7 +4,6 @@ title: WdfChildListRequestChildEject function (wdfchildlist.h)
 description: The WdfChildListRequestChildEject method informs the framework that a specified device is about to be ejected from its docking station.
 old-location: wdf\wdfchildlistrequestchildeject.htm
 tech.root: wdf
-ms.assetid: d7729edf-e92d-4707-83e2-fece90daeacf
 ms.date: 02/26/2018
 keywords: ["WdfChildListRequestChildEject function"]
 ms.keywords: DFDeviceObjectChildListRef_52991ad9-29ef-4ab8-b746-168fcc0b8e99.xml, WdfChildListRequestChildEject, WdfChildListRequestChildEject method, kmdf.wdfchildlistrequestchildeject, wdf.wdfchildlistrequestchildeject, wdfchildlist/WdfChildListRequestChildEject
@@ -53,14 +52,14 @@ The <b>WdfChildListRequestChildEject</b> method informs the framework that a spe
 
 ## -parameters
 
-### -param ChildList 
+### -param ChildList [in]
 
-[in]
+
 A handle to a child list object.
 
-### -param IdentificationDescription 
+### -param IdentificationDescription [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a> structure.
 
 ## -returns

@@ -1,8 +1,7 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_GPUVERSION
 title: _D3DKMT_GPUVERSION (d3dkmthk.h)
-description: Used to collect the bios version and GPU architecture name once during GPU initialization.
-ms.assetid: 52bc5bb2-d9ea-4084-9ece-b7b65121ff73
+description: The D3DKMT_GPUVERSION structure is used to collect the BIOS version and GPU architecture name during GPU initialization.
 ms.date: 10/19/2018
 keywords: ["D3DKMT_GPUVERSION structure"]
 ms.keywords: _D3DKMT_GPUVERSION, D3DKMT_GPUVERSION,
@@ -34,8 +33,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_GPUVERSION
-product:
- - Windows
+ - D3DKMT_GPUVERSION
 ---
 
 # _D3DKMT_GPUVERSION structure

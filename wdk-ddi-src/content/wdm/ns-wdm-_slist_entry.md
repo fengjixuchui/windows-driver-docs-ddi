@@ -4,7 +4,6 @@ title: _SLIST_ENTRY (wdm.h)
 description: An SLIST_ENTRY structure describes an entry in a sequenced singly linked list.
 old-location: kernel\slist_entry.htm
 tech.root: kernel
-ms.assetid: 690bcd8a-3c4f-4254-99c7-4ad600b4ae4f
 ms.date: 04/30/2018
 keywords: ["SLIST_ENTRY structure"]
 ms.keywords: "*PSLIST_ENTRY, PSLIST_ENTRY, PSLIST_ENTRY structure pointer [Kernel-Mode Driver Architecture], SLIST_ENTRY, SLIST_ENTRY structure [Kernel-Mode Driver Architecture], _SLIST_ENTRY, kernel.slist_entry, kstruct_d_2bfe90ad-ee2e-4dbf-a028-5b3481aa8695.xml, wdm/PSLIST_ENTRY, wdm/SLIST_ENTRY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _SLIST_ENTRY
+ - PSLIST_ENTRY
  - SLIST_ENTRY
 ---
 
@@ -77,3 +78,4 @@ For more information about how to use <b>SLIST_ENTRY</b> structures to implement
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exinterlockedpushentryslist">ExInterlockedPushEntrySList</a>
+

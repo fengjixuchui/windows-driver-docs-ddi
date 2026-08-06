@@ -4,7 +4,6 @@ title: IWDTFTargets2::GetInterfaces (wdtf.h)
 description: Returns a collection of actions that support the interface - one IWDTFAction2 for each item that has one.
 old-location: dtf\iwdtftargets2_getinterfaces.htm
 tech.root: dtf
-ms.assetid: 8e9735b2-23d3-4fe6-8184-31e7707b6400
 ms.date: 04/04/2018
 keywords: ["IWDTFTargets2::GetInterfaces"]
 ms.keywords: GetInterfaces, GetInterfaces method [Windows Device Testing Framework], GetInterfaces method [Windows Device Testing Framework],IWDTFTargets2 interface, IWDTFTargets2 interface [Windows Device Testing Framework],GetInterfaces method, IWDTFTargets2.GetInterfaces, IWDTFTargets2::GetInterfaces, Microsoft.WDTF.IWDTFTargets2.GetInterfaces, Microsoft::WDTF::IWDTFTargets2::GetInterfaces, dtf.iwdtftargets2_getinterfaces, wdtf/IWDTFTargets2::GetInterfaces
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFTargets2.GetInterfaces
+ - IWDTFTargets2::GetInterfaces
 ---
 
 # IWDTFTargets2::GetInterfaces
-
 
 ## -description
 
@@ -53,36 +51,23 @@ that has one.
 
 ### -param WDTFInterfaceName
 
-### -param MoreTargets 
+### -param MoreTargets [in, optional]
 
-[in, optional]
-Optional extra arguments that you can use to 
-define additional targets to attach to the returned interface. 
+Optional extra arguments that you can use to define additional targets to attach to the returned interface. 
 
-This parameter is not 
-currently implemented. Set <i>MoreTargets </i>to a <b>VARIANT</b> 
+This parameter is not currently implemented. Set <i>MoreTargets </i>to a <b>VARIANT</b> 
 that contains <b>VT_EMPTY</b>.
 
-### -param MonikerSuffix 
+### -param MonikerSuffix [in, optional]
 
-[in, optional]
-An optional moniker that defines more options about how 
-the interface should be instantiated. 
+An optional moniker that defines more options about how the interface should be instantiated. 
 
-This parameter is not yet implemented. 
-Set <i>MonikerSuffix </i>to a <b>VARIANT</b> that 
+This parameter is not yet implemented. Set <i>MonikerSuffix </i>to a <b>VARIANT</b> that 
 contains <b>VT_EMPTY</b>.
 
-### -param ppInterface 
+### -param ppInterface [out, retval]
 
-[out, retval]
-The address of a variable that will receive the 
-collection of actions.
-
-
-#### - ProgID [in]
-
-The WDTF ProgID of the requested interface.
+The address of a variable that will receive the collection of actions.
 
 ## -returns
 

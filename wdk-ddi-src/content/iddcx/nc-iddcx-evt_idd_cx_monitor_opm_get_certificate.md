@@ -4,7 +4,6 @@ title: EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE (iddcx.h)
 description: EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE is called by the OS to get an OPM certificate.
 old-location: display\evt_idd_cx_monitor_opm_get_certificate.htm
 tech.root: display
-ms.assetid: f1a3882e-7d45-4634-ae1d-fb8102716f36
 ms.date: 05/10/2018
 keywords: ["EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE callback function"]
 ms.keywords: EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE, EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE callback, EvtIddCxMonitorOpmGetCertificate, EvtIddCxMonitorOpmGetCertificate callback function [Display Devices], PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE, PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE callback function pointer [Display Devices], display.evt_idd_cx_monitor_opm_get_certificate, iddcx/EvtIddCxMonitorOpmGetCertificate
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - iddcx.h
 api_name:
- - PFN_IDD_CX_MONITOR_OPM_GET_CERTIFICATE
+ - EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE
 ---
 
 # EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE callback function
@@ -50,16 +49,17 @@ api_name:
 
 ## -parameters
 
-### -param AdapterObject 
+### -param AdapterObject [in]
 
-[in]
+
 The object for the adapter that the OPM certificate will be gotten for.
 
-### -param pInArgs 
+### -param pInArgs [in]
 
-[in]
+
 Input arguments used by <b>EVT_IDD_CX_MONITOR_OPM_GET_CERTIFICATE</b>.
 
 ## -returns
 
 (NTSTATUS) If the operation is successful, the callback function must return STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise, an appropriate <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS</a> error code.
+

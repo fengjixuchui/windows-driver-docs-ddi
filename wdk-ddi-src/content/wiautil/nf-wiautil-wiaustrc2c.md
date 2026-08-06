@@ -4,7 +4,6 @@ title: wiauStrC2C function (wiautil.h)
 description: The wiauStrC2C function copies an ANSI character string to another ANSI character string.
 old-location: image\wiaustrc2c.htm
 tech.root: image
-ms.assetid: 7e8cd99a-d1b1-4261-9643-4a84bddfdc01
 ms.date: 05/03/2018
 keywords: ["wiauStrC2C function"]
 ms.keywords: image.wiaustrc2c, wiauFncs_2266a6c9-ed4b-4af8-947a-d634bd9e9912.xml, wiauStrC2C, wiauStrC2C function [Imaging Devices], wiautil/wiauStrC2C
@@ -50,14 +49,14 @@ The <b>wiauStrC2C</b> function copies an ANSI character string to another ANSI c
 
 ## -parameters
 
-### -param pszSrc 
+### -param pszSrc [in]
 
-[in]
+
 Points to the ANSI string to be copied.
 
-### -param pszDst 
+### -param pszDst [out]
 
-[out]
+
 Pointer to a memory location that receives the copied string
 
 ### -param iSize

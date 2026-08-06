@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_POST_ASSOCIATE_COMPLETION
 title: DOT11EXT_POST_ASSOCIATE_COMPLETION (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_POST_ASSOCIATE_COMPLETION callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extpostassociatecompletion.htm
 tech.root: netvista
-ms.assetid: 25db270c-3de8-4ced-82f1-2cd778006538
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_POST_ASSOCIATE_COMPLETION callback"]
 ms.keywords: DOT11EXT_POST_ASSOCIATE_COMPLETION, Dot11ExtPostAssociateCompletion, Dot11ExtPostAssociateCompletion callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_d7368927-721a-4cd4-9ccc-ccb02964b811.xml, netvista.dot11extpostassociatecompletion, wlanihv/Dot11ExtPostAssociateCompletion
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_POST_ASSOCIATE_COMPLETION
  - wlanihv/DOT11EXT_POST_ASSOCIATE_COMPLETION
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtPostAssociateCompletion
+ - DOT11EXT_POST_ASSOCIATE_COMPLETION
 ---
 
 # DOT11EXT_POST_ASSOCIATE_COMPLETION callback
@@ -57,24 +55,24 @@ The IHV Extensions DLL calls the
 
 ## -parameters
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the wireless LAN (WLAN) adapter. This handle
      value was specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param hSecuritySessionID 
+### -param hSecuritySessionID [in, optional]
 
-[in, optional]
+
 The handle of the security session identifier (ID) returned through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_post_associate.md">
      Dot11ExtIhvPerformPostAssociate</a> IHV Handler function.
 
-### -param pPeer 
+### -param pPeer [in, optional]
 
-[in, optional]
+
 The media access control (MAC) address of the access point (AP) with which the IHV Extensions DLL
      performed a security operation. This parameter is formatted as a
      <a href="..\windot11\ns-windot11-_dot11_mac_address.md">DOT11_MAC_ADDRESS</a> structure.
@@ -83,9 +81,9 @@ The media access control (MAC) address of the access point (AP) with which the I
 <div class="alert"><b>Note</b>  For Windows Vista, the IHV Extensions DLL supports only infrastructure basic
      service set (BSS) networks.</div>
 
-### -param dwReasonCode 
+### -param dwReasonCode [in]
 
-[in]
+
 A value that provides additional information for the completion status of the post-association
      operation. The IHV Extensions DLL must set
      <i>dwReasonCode</i> to an L2_REASON_CODE_xxxx value, which are defined in
@@ -98,9 +96,9 @@ The IHV Extensions DLL returns the general completion status of the post-associa
      <i>dwReasonCode</i> to a value within the range from L2_REASON_CODE_IHV_BASE to (L2_REASON_CODE_IHV_BASE+
      L2_REASON_CODE_GROUP_SIZE-1).
 
-### -param dwWin32Error 
+### -param dwWin32Error [in]
 
-[in]
+
 The completion status of the post-association operation as defined by an error code within
      Winerror.h. If the operation completes successfully, the IHV Extensions DLL must set
      <i>dwWin32Error</i> to ERROR_SUCCESS.
@@ -243,3 +241,4 @@ The IHV Extensions DLL must call
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_send_packet.md">Dot11ExtSendPacket</a>
+

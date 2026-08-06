@@ -4,7 +4,6 @@ title: RxGetFileSizeWithLock function (fcb.h)
 description: RxGetFileSizeWithLock gets the file size in the FCB structure using a lock to ensure that the 64-bit value is read consistently.
 old-location: ifsk\rxgetfilesizewithlock.htm
 tech.root: ifsk
-ms.assetid: f58c2a7a-0782-47a7-84e6-98df541c875d
 ms.date: 04/16/2018
 keywords: ["RxGetFileSizeWithLock function"]
 ms.keywords: RxGetFileSizeWithLock, RxGetFileSizeWithLock function [Installable File System Drivers], fcb/RxGetFileSizeWithLock, ifsk.rxgetfilesizewithlock, rxref_15aee1e0-d82a-45ea-ad0b-e610347c62fe.xml
@@ -50,14 +49,14 @@ api_name:
 
 ## -parameters
 
-### -param Fcb 
+### -param Fcb [in]
 
-[in]
+
 A pointer to the FCB structure.
 
-### -param FileSize 
+### -param FileSize [out]
 
-[out]
+
 A pointer where the file size file will be stored on output.
 
 ## -remarks

@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_81
+UID: NS:ks.KSPROPERTY_SERIALHDR
 title: KSPROPERTY_SERIALHDR (ks.h)
 description: The format of the serialization buffer is a KSPROPERTY_SERIALHDR structure, followed by serialized properties.
 old-location: stream\ksproperty_serialhdr.htm
 tech.root: stream
-ms.assetid: 164c34ce-603f-447b-8bd7-14b1c19e9baa
 ms.date: 04/23/2018
 keywords: ["KSPROPERTY_SERIALHDR structure"]
 ms.keywords: "*PKSPROPERTY_SERIALHDR, KSPROPERTY_SERIALHDR, KSPROPERTY_SERIALHDR structure [Streaming Media Devices], PKSPROPERTY_SERIALHDR, PKSPROPERTY_SERIALHDR structure pointer [Streaming Media Devices], ks-struct_cdf54d37-a5b8-4a73-98dd-c7a9439ac51a.xml, ks/KSPROPERTY_SERIALHDR, ks/PKSPROPERTY_SERIALHDR, stream.ksproperty_serialhdr"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSPROPERTY_SERIALHDR
  - KSPROPERTY_SERIALHDR
 ---
 
@@ -63,3 +63,4 @@ Specifies the count of serialized properties to follow.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_serial">KSPROPERTY_SERIAL</a>
+

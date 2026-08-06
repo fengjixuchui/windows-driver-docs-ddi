@@ -4,7 +4,6 @@ title: KsStreamPointerGetNextClone function (ks.h)
 description: The KsStreamPointerGetNextClone function returns the clone stream pointer that was cloned immediately after the specified clone.
 old-location: stream\ksstreampointergetnextclone.htm
 tech.root: stream
-ms.assetid: b7f34d42-6044-43c6-85c8-ca3a6177c057
 ms.date: 04/23/2018
 keywords: ["KsStreamPointerGetNextClone function"]
 ms.keywords: KsStreamPointerGetNextClone, KsStreamPointerGetNextClone function [Streaming Media Devices], avfunc_946c362b-9246-4d06-afce-e4597a16a91b.xml, ks/KsStreamPointerGetNextClone, stream.ksstreampointergetnextclone
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ks.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,9 +50,9 @@ The<b> KsStreamPointerGetNextClone </b>function returns the clone stream pointer
 
 ## -parameters
 
-### -param StreamPointer 
+### -param StreamPointer [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksstream_pointer">KSSTREAM_POINTER</a> structure representing the clone stream pointer for which the clone stream pointer cloned immediately after it on the same pin is returned.
 
 ## -returns

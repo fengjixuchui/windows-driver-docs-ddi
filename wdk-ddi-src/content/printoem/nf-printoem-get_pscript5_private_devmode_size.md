@@ -1,13 +1,12 @@
 ---
 UID: NF:printoem.GET_PSCRIPT5_PRIVATE_DEVMODE_SIZE
 title: GET_PSCRIPT5_PRIVATE_DEVMODE_SIZE macro (printoem.h)
-description: 
-ms.assetid: cda9100c-5b0f-4bf8-8d85-d920d23d8ceb
-ms.date: 10/19/2018
+description: Returns PScript5's private **DEVMODE** structure to allow its plugins to determine its size.
+ms.date: 08/12/2022
 keywords: ["GET_PSCRIPT5_PRIVATE_DEVMODE_SIZE macro"]
 ms.keywords: GET_PSCRIPT5_PRIVATE_DEVMODE_SIZE
 req.header: printoem.h
-req.include-header: 
+req.include-header: Printoem.h
 req.target-type: 
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -24,7 +23,7 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 targetos: Windows
-ms.custom: RS5
+tech.root: print
 f1_keywords:
  - GET_PSCRIPT5_PRIVATE_DEVMODE_SIZE
  - printoem/GET_PSCRIPT5_PRIVATE_DEVMODE_SIZE
@@ -36,22 +35,19 @@ api_location:
  - printoem.h
 api_name:
  - GET_PSCRIPT5_PRIVATE_DEVMODE_SIZE
-product:
- - Windows
 ---
-
-# GET_PSCRIPT5_PRIVATE_DEVMODE_SIZE macro
-
 
 ## -description
 
-Returns PScript5's private DEVMODE structure to allow its plugins to determine its size.
+Returns PScript5's private **DEVMODE** structure to allow its plugins to determine its size.
 
 ## -parameters
 
 ### -param pdm
 
-Contains the size of the private DEVMODE structure.
+Contains the size of the private **DEVMODE** structure.
+
+## -remarks
 
 The macro is defined as follows:
 
@@ -60,8 +56,3 @@ The macro is defined as follows:
     ( ( (pdm)->dmDriverExtra > (FIELD_OFFSET(PSCRIPT5_PRIVATE_DEVMODE, wSize) + sizeof(WORD)) ) ? \
         ((PPSCRIPT5_PRIVATE_DEVMODE)((PBYTE)(pdm) + (pdm)->dmSize))->wSize : 0 )
 ```
-
-## -remarks
-
-## -see-also
-

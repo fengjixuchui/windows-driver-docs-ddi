@@ -4,7 +4,6 @@ title: _BIDI_REQUEST_CONTAINER (winspool.h)
 description: The BIDI_REQUEST_CONTAINER structure is a container for a list of bidi requests.
 old-location: print\bidi_request_container.htm
 tech.root: print
-ms.assetid: 9892cf0e-23ee-496f-9078-4a2a1fdb19d9
 ms.date: 04/20/2018
 keywords: ["BIDI_REQUEST_CONTAINER structure"]
 ms.keywords: "*LPBIDI_REQUEST_CONTAINER, *PBIDI_REQUEST_CONTAINER, BIDI_REQUEST_CONTAINER, BIDI_REQUEST_CONTAINER structure [Print Devices], LPBIDI_REQUEST_CONTAINER, LPBIDI_REQUEST_CONTAINER structure pointer [Print Devices], PBIDI_REQUEST_CONTAINER, PBIDI_REQUEST_CONTAINER structure pointer [Print Devices], _BIDI_REQUEST_CONTAINER, print.bidi_request_container, spoolfnc_26c43d0f-69f8-415c-8653-79ef503fe139.xml, winspool/BIDI_REQUEST_CONTAINER, winspool/LPBIDI_REQUEST_CONTAINER, winspool/PBIDI_REQUEST_CONTAINER"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - winspool.h
 api_name:
+ - _BIDI_REQUEST_CONTAINER
+ - PBIDI_REQUEST_CONTAINER
  - BIDI_REQUEST_CONTAINER
 ---
 
@@ -77,3 +78,4 @@ Even though the <b>aData</b> member of this structure is an array with only a si
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/winspool/ns-winspool-_bidi_request_data">BIDI_REQUEST_DATA</a>
+

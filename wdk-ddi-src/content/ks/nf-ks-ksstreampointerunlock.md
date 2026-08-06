@@ -4,7 +4,6 @@ title: KsStreamPointerUnlock function (ks.h)
 description: The KsStreamPointerUnlock function unlocks a stream pointer that has previously been locked by an acquisition function (KsGetXxxEdgeStreamPointer) or by KsStreamPointerLock.
 old-location: stream\ksstreampointerunlock.htm
 tech.root: stream
-ms.assetid: 1d03b97f-5c01-48b2-a0e4-2dc6bf732813
 ms.date: 04/23/2018
 keywords: ["KsStreamPointerUnlock function"]
 ms.keywords: KsStreamPointerUnlock, KsStreamPointerUnlock function [Streaming Media Devices], avfunc_71260371-8ee2-45e1-ad72-7eba8212d081.xml, ks/KsStreamPointerUnlock, stream.ksstreampointerunlock
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ks.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,14 +50,14 @@ The<b> KsStreamPointerUnlock </b>function unlocks a stream pointer that has prev
 
 ## -parameters
 
-### -param StreamPointer 
+### -param StreamPointer [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksstream_pointer">KSSTREAM_POINTER</a> structure representing the stream pointer to unlock.
 
-### -param Eject 
+### -param Eject [in]
 
-[in]
+
 This parameter specifies whether to advance <i>StreamPointer</i> to the next data frame. A value of <b>TRUE</b> advances the stream pointer.
 
 ## -remarks

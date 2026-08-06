@@ -4,7 +4,6 @@ title: RtlULongToInt function (ntintsafe.h)
 description: Converts a value of type ULONG to a value of type INT.
 old-location: kernel\rtlulongtoint.htm
 tech.root: kernel
-ms.assetid: E6233C9B-92DF-4524-8C9D-4FED7C4BB3FC
 ms.date: 04/30/2018
 keywords: ["RtlULongToInt function"]
 ms.keywords: RtlULongToInt, RtlULongToInt function [Kernel-Mode Driver Architecture], kernel.rtlulongtoint, ntintsafe/RtlULongToInt
@@ -50,14 +49,14 @@ Converts a value of type <b>ULONG</b> to a value of type <b>INT</b>.
 
 ## -parameters
 
-### -param ulOperand 
+### -param ulOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param piResult 
+### -param piResult [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

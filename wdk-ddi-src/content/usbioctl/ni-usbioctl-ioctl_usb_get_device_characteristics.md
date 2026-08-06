@@ -4,7 +4,6 @@ title: IOCTL_USB_GET_DEVICE_CHARACTERISTICS (usbioctl.h)
 description: The client driver sends this request to determine general characteristics about a USB device, such as maximum send and receive delays for any request.
 old-location: buses\_ioctl_usb_get_device_characteristics.htm
 tech.root: usbref
-ms.assetid: FEEF13FE-E7CF-4513-8E16-B1E46283883C
 ms.date: 05/07/2018
 keywords: ["IOCTL_USB_GET_DEVICE_CHARACTERISTICS IOCTL"]
 ms.keywords: IOCTL_USB_GET_DEVICE_CHARACTERISTICS, IOCTL_USB_GET_DEVICE_CHARACTERISTICS control, IOCTL_USB_GET_DEVICE_CHARACTERISTICS control code [Buses], buses._ioctl_usb_get_device_characteristics, usbioctl/ IOCTL_USB_GET_DEVICE_CHARACTERISTICS
@@ -50,6 +49,8 @@ The client driver sends this request to determine general characteristics about 
 
 ## -ioctlparameters
 
+### -ioctl-major-code
+
 ### -input-buffer
 
 ### -input-buffer-length
@@ -60,7 +61,7 @@ The client driver sends this request to determine general characteristics about 
 
 ### -in-out-buffer
 
-The <b>AssociatedIrp.SystemBuffer</b> member is a pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/usbioctl/ns-usbioctl-_usb_device_characteristics">USB_DEVICE_CHARACTERISTIC</a>S structure.  On input, set <b>Version</b> to USB_DEVICE_CHARACTERISTICS_VERSION_1. On output <b>Version</b> is reset to a version less than or equal to USB_DEVICE_CHARACTERISTICS_VERSION_1;  <b>UsbDeviceCharacteristicsFlags</b> is set to USB_DEVICE_CHARACTERISTICS_MAXIMUM_PATH_DELAYS_AVAILABLE and the remaining members of the structure is filled with delay information.
+The <b>AssociatedIrp.SystemBuffer</b> member is a pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/usbioctl/ns-usbioctl-_usb_device_characteristics">USB_DEVICE_CHARACTERISTICS</a> structure.  On input, set <b>Version</b> to USB_DEVICE_CHARACTERISTICS_VERSION_1. On output <b>Version</b> is reset to a version less than or equal to USB_DEVICE_CHARACTERISTICS_VERSION_1;  <b>UsbDeviceCharacteristicsFlags</b> is set to USB_DEVICE_CHARACTERISTICS_MAXIMUM_PATH_DELAYS_AVAILABLE and the remaining members of the structure is filled with delay information.
 
 ### -inout-buffer-length
 

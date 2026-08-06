@@ -2,10 +2,8 @@
 UID: NF:printerextension.IPrinterPropertyBag.GetReadStream
 title: IPrinterPropertyBag::GetReadStream (printerextension.h)
 description: Gets a stream in order to read from a stream property.
-old-location: print\iprinterpropertybag_getreadstream.htm
 tech.root: print
-ms.assetid: BDA58F6A-A245-4616-866C-6D1734EFB469
-ms.date: 04/20/2018
+ms.date: 08/03/2022
 keywords: ["IPrinterPropertyBag::GetReadStream"]
 ms.keywords: GetReadStream, GetReadStream method [Print Devices], GetReadStream method [Print Devices],IPrinterPropertyBag interface, IPrinterPropertyBag interface [Print Devices],GetReadStream method, IPrinterPropertyBag.GetReadStream, IPrinterPropertyBag::GetReadStream, print.iprinterpropertybag_getreadstream, printerextension/IPrinterPropertyBag::GetReadStream
 req.header: printerextension.h
@@ -38,11 +36,8 @@ api_type:
 api_location:
  - Printerextension.h
 api_name:
- - IPrinterPropertyBag.GetReadStream
+ - IPrinterPropertyBag::GetReadStream
 ---
-
-# IPrinterPropertyBag::GetReadStream
-
 
 ## -description
 
@@ -50,20 +45,17 @@ Gets a stream in order to read from a stream property.
 
 ## -parameters
 
-### -param bstrName 
+### -param bstrName [in]
 
-[in]
 The property to read.
 
 ### -param ppValue
-
-#### - ppValueStream [out]
 
 The returned stream.
 
 ## -returns
 
-This method returns an <b>HRESULT</b> value.
+This method returns an **HRESULT** value.
 
 ## -remarks
 
@@ -71,4 +63,4 @@ This method does not work with non-stream properties.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterpropertybag">IPrinterPropertyBag</a>
+[IPrinterPropertyBag](./nn-printerextension-iprinterpropertybag.md)

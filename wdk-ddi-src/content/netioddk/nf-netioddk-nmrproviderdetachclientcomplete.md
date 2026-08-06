@@ -4,7 +4,6 @@ title: NmrProviderDetachClientComplete function (netioddk.h)
 description: The NmrProviderDetachClientComplete function notifies the NMR that a provider module has completed detaching from a client module.
 old-location: netvista\nmrproviderdetachclientcomplete.htm
 tech.root: netvista
-ms.assetid: a52b3cfc-d6bd-4569-8b09-36dce65d017f
 ms.date: 05/02/2018
 keywords: ["NmrProviderDetachClientComplete function"]
 ms.keywords: NmrProviderDetachClientComplete, NmrProviderDetachClientComplete function [Network Drivers Starting with Windows Vista], netioddk/NmrProviderDetachClientComplete, netvista.nmrproviderdetachclientcomplete, nmrref_c86f4d4f-b54f-4e31-b683-f692ff7ed1ba.xml
@@ -53,9 +52,9 @@ The
 
 ## -parameters
 
-### -param NmrBindingHandle 
+### -param NmrBindingHandle [in]
 
-[in]
+
 A handle used by the NMR to represent the binding between the client module and the provider
      module. The NMR passes this handle to the provider module when it calls the provider module's 
      <a href="/windows-hardware/drivers/ddi/netioddk/nc-netioddk-npi_provider_attach_client_fn">ProviderAttachClient</a> callback

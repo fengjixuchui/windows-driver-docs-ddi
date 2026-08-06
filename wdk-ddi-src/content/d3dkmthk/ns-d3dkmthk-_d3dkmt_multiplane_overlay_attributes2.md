@@ -1,8 +1,7 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_MULTIPLANE_OVERLAY_ATTRIBUTES2
 title: _D3DKMT_MULTIPLANE_OVERLAY_ATTRIBUTES2 (d3dkmthk.h)
-description: Contains multiplane overlay attributes.
-ms.assetid: 714822e6-9f3c-432c-8584-3f3d61d87dcc
+description: The _D3DKMT_MULTIPLANE_OVERLAY_ATTRIBUTES2 structure contains attributes that define a multiplane overlay.
 ms.date: 10/19/2018
 keywords: ["D3DKMT_MULTIPLANE_OVERLAY_ATTRIBUTES2 structure"]
 ms.keywords: _D3DKMT_MULTIPLANE_OVERLAY_ATTRIBUTES2, D3DKMT_MULTIPLANE_OVERLAY_ATTRIBUTES2,
@@ -35,6 +34,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_MULTIPLANE_OVERLAY_ATTRIBUTES2
+ - D3DKMT_MULTIPLANE_OVERLAY_ATTRIBUTES2
 dev_langs:
  - c++
 ---

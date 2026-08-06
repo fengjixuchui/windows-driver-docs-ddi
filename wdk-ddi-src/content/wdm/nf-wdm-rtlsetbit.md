@@ -4,7 +4,6 @@ title: RtlSetBit function (wdm.h)
 description: The RtlSetBit routine sets the specified bit in a bitmap to one.
 old-location: kernel\rtlsetbit.htm
 tech.root: kernel
-ms.assetid: 6e78da3d-7a37-41f9-bfa6-db2e83581769
 ms.date: 04/30/2018
 keywords: ["RtlSetBit function"]
 ms.keywords: RtlSetBit, RtlSetBit routine [Kernel-Mode Driver Architecture], k109_44d68cd0-b91e-4a4e-8f4f-c40e25b768b9.xml, kernel.rtlsetbit, wdm/RtlSetBit
@@ -50,14 +49,14 @@ The <b>RtlSetBit</b> routine sets the specified bit in a bitmap to one.
 
 ## -parameters
 
-### -param BitMapHeader 
+### -param BitMapHeader [in]
 
-[in]
-Pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-### -param BitNumber 
+Pointer to the <a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-[in]
+### -param BitNumber [in]
+
+
 Specifies the zero-based index of the bit within the bitmap. The routine sets this bit to one.
 
 ## -returns
@@ -70,7 +69,7 @@ Callers of <b>RtlSetBit</b> must be running at IRQL <= APC_LEVEL if the memory t
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a>
+<a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a>
 
 
 

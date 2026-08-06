@@ -4,7 +4,6 @@ title: DMA_RESET_HANDLER (netdma.h)
 description: The ProviderResetChannel function resets a DMA channel to the initial state that existed after the DMA channel was allocated.
 old-location: netvista\providerresetchannel.htm
 tech.root: netvista
-ms.assetid: ee882897-fbc6-4017-8c30-2a54f6c49491
 ms.date: 05/02/2018
 keywords: ["DMA_RESET_HANDLER callback function"]
 ms.keywords: DMA_RESET_HANDLER, DMA_RESET_HANDLER callback, ProviderResetChannel, ProviderResetChannel callback function [Network Drivers Starting with Windows Vista], netdma/ProviderResetChannel, netdma_ref_b8d39a6d-73fa-4d8b-b7c7-3f5eb47a4fc4.xml, netvista.providerresetchannel
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - netdma.h
 api_name:
- - ProviderResetChannel
+ - DMA_RESET_HANDLER
 ---
 
 # DMA_RESET_HANDLER callback function
@@ -54,9 +53,9 @@ in Windows 8 and later.</div><div> </div>The
 
 ## -parameters
 
-### -param ProviderChannelContext 
+### -param ProviderChannelContext [in]
 
-[in]
+
 A pointer that identifies a DMA channel's context area. The DMA provider returned this handle to
      NetDMA at the location that is specified in the 
      <i>pProviderChannelContext</i> parameter of the 
@@ -132,3 +131,4 @@ NetDMA calls
 
 
 <a href="/windows-hardware/drivers/ddi/netdma/nc-netdma-dma_start_handler">ProviderStartDma</a>
+

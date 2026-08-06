@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_CREATEPAGINGQUEUE
 title: PFND3DKMT_CREATEPAGINGQUEUE (d3dkmthk.h)
 description: The PFND3DKMT_CREATEPAGINGQUEUE callback function creates a paging queue.
-ms.assetid: c0aa3399-4862-4836-a183-141caa8264d4
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_CREATEPAGINGQUEUE callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The PFND3DKMT_CREATEPAGINGQUEUE callback function creates a paging queue.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_CREATEPAGINGQUEUE](ns-d3dkmthk-_d3dkmt_createpagingqueue.md) structure.
 

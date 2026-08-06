@@ -4,7 +4,6 @@ title: PFND3DDDI_DESTROYQUERY (d3dumddi.h)
 description: The DestroyQuery function releases resources for a query.
 old-location: display\destroyquery.htm
 tech.root: display
-ms.assetid: c4cef278-1771-4903-a5cf-85674463aff8
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DESTROYQUERY callback function"]
 ms.keywords: DestroyQuery, DestroyQuery callback function [Display Devices], PFND3DDDI_DESTROYQUERY, PFND3DDDI_DESTROYQUERY callback, UserModeDisplayDriver_Functions_ce2ecc4e-9e2e-485f-bde3-8800e62c5b8d.xml, d3dumddi/DestroyQuery, display.destroyquery
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - DestroyQuery
-product:
- - Windows
+ - PFND3DDDI_DESTROYQUERY
 ---
 
 # PFND3DDDI_DESTROYQUERY callback function
@@ -77,3 +74,4 @@ The <b>DestroyQuery</b> function notifies the driver to destroy the query handle
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

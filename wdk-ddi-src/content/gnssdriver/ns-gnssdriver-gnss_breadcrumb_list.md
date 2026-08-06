@@ -1,15 +1,13 @@
 ---
-UID: NS:gnssdriver.__unnamed_struct_19
+UID: NS:gnssdriver.GNSS_BREADCRUMB_LIST
 title: GNSS_BREADCRUMB_LIST (gnssdriver.h)
-description: This structure contains the response to an IOCTL_GNSS_POP_BREADCRUMBS.
-old-location: gnss\gnss_breadcrumb_list.htm
+description: The GNSS_BREADCRUMB_LIST structure contains an IOCTL_GNSS_POP_BREADCRUMBS response.
 tech.root: gnss
-ms.assetid: 40C11C4B-2FFE-452F-AA08-2BCD4B6A4F7F
-ms.date: 02/15/2018
+ms.date: 06/17/2022
 keywords: ["GNSS_BREADCRUMB_LIST structure"]
 ms.keywords: "*PGNSS_BREADCRUMB_LIST, GNSS_BREADCRUMB_LIST, GNSS_BREADCRUMB_LIST structure [Sensor Devices], PGNSS_BREADCRUMB_LIST, PGNSS_BREADCRUMB_LIST structure pointer [Sensor Devices], gnss.gnss_breadcrumb_list, gnssdriver/GNSS_BREADCRUMB_LIST, gnssdriver/PGNSS_BREADCRUMB_LIST"
 req.header: gnssdriver.h
-req.include-header: 
+req.include-header: Gnssdriver.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -40,15 +38,13 @@ api_type:
 api_location:
  - gnssdriver.h
 api_name:
+ - PGNSS_BREADCRUMB_LIST
  - GNSS_BREADCRUMB_LIST
 ---
 
-# GNSS_BREADCRUMB_LIST structure
-
-
 ## -description
 
-This structure contains the response to an <a href="/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_pop_breadcrumbs">IOCTL_GNSS_POP_BREADCRUMBS</a>.
+The GNSS_BREADCRUMB_LIST structure contains an [IOCTL_GNSS_POP_BREADCRUMBS](./ni-gnssdriver-ioctl_gnss_pop_breadcrumbs.md) response.
 
 ## -struct-fields
 
@@ -62,15 +58,9 @@ Version number.
 
 ### -field NumCrumbs
 
-The number of breadcrumbs in the <b>IOCTL_GNSS_POP_BREADCRUMBS</b> response.
+The number of breadcrumbs in the **IOCTL_GNSS_POP_BREADCRUMBS** response.
 
 ### -field v1
 
- 
+An array of individual breadcrumbs returned in the in the **IOCTL_GNSS_POP_BREADCRUMBS** response.
 
-
-
-
-#### - v1[50]
-
-An array of individual breadcrumbs returned in the in the <b>IOCTL_GNSS_POP_BREADCRUMBS</b> response.

@@ -4,7 +4,6 @@ title: GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION (gpioclx.h)
 description: The CLIENT_ControllerSpecificFunction event callback function performs an operation that is specific to a particular general-purpose I/O (GPIO) controller.
 old-location: gpio\client_controllerspecificfunction.htm
 tech.root: GPIO
-ms.assetid: 27551BE5-1260-4F05-9847-97C90ADF7968
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION callback function"]
 ms.keywords: CLIENT_ControllerSpecificFunction, CLIENT_ControllerSpecificFunction callback, CLIENT_ControllerSpecificFunction callback function [Parallel Ports], GPIO.client_controllerspecificfunction, GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION, gpioclx/CLIENT_ControllerSpecificFunction
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_ControllerSpecificFunction
+ - GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION
 ---
 
 # GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION callback function
@@ -50,14 +49,14 @@ The <i>CLIENT_ControllerSpecificFunction</i> event callback function performs an
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param Parameters 
+### -param Parameters [in, out]
 
-[in, out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_client_controller_specific_function_parameters">GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION_PARAMETERS</a> structure that contains the input and output buffers for the controller-specific operation.
 
 ## -returns
@@ -141,3 +140,4 @@ The GPIO_CLIENT_CONTROLLER_SPECIFIC_FUNCTION function type is defined in the Gpi
 
 
 <a href="/windows-hardware/drivers/ddi/gpio/ni-gpio-ioctl_gpio_controller_specific_function">IOCTL_GPIO_CONTROLLER_SPECIFIC_FUNCTION</a>
+

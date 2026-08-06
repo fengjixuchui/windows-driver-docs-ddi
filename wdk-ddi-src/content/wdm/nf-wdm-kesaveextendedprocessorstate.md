@@ -4,7 +4,6 @@ title: KeSaveExtendedProcessorState function (wdm.h)
 description: The KeSaveExtendedProcessorState routine saves extended processor state information.
 old-location: kernel\kesaveextendedprocessorstate.htm
 tech.root: kernel
-ms.assetid: 06be6c3b-cc1a-4e57-8700-03357215d624
 ms.date: 04/30/2018
 keywords: ["KeSaveExtendedProcessorState function"]
 ms.keywords: KeSaveExtendedProcessorState, KeSaveExtendedProcessorState routine [Kernel-Mode Driver Architecture], XSTATE_MASK_GSSE, XSTATE_MASK_LEGACY, XSTATE_MASK_LEGACY_FLOATING_POINT, XSTATE_MASK_LEGACY_SSE, k105_e03ec6f9-5b9b-48dc-ae77-3c27e6edc910.xml, kernel.kesaveextendedprocessorstate, wdm/KeSaveExtendedProcessorState
@@ -50,63 +49,27 @@ The <b>KeSaveExtendedProcessorState</b> routine saves extended processor state i
 
 ## -parameters
 
-### -param Mask 
+### -param Mask [in]
 
-[in]
+
 A 64-bit feature mask. The bits in this mask identify the extended processor feature states to save. If a mask bit is one, the routine saves the state of the feature that is identified by this bit. If a mask bit is zero, the state for the corresponding feature is not saved. This mask must not identify extended processor features that the operating system has not enabled. To obtain a mask of the enabled features, call the <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlgetenabledextendedfeatures">RtlGetEnabledExtendedFeatures</a> routine.
 
 A caller can set this parameter to the bitwise OR of one or more of the following <b>XSTATE_MASK_<i>XXX</i></b> flag bits:
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%"><a id="XSTATE_MASK_LEGACY_FLOATING_POINT"></a><a id="xstate_mask_legacy_floating_point"></a><dl>
-<dt><b>XSTATE_MASK_LEGACY_FLOATING_POINT</b></dt>
-</dl>
-</td>
-<td width="60%">
-The floating-point extension (x87/MMX).
+|Value|Meaning|
+|--- |--- |
+|**XSTATE_MASK_LEGACY_FLOATING_POINT**|The floating-point extension (x87/MMX).|
+|**XSTATE_MASK_LEGACY_SSE**|The streaming SIMD extension (SSE).|
+|**XSTATE_MASK_LEGACY**|Both the x87/MMX and SSE extensions.|
+|**XSTATE_MASK_GSSE**|The Intel Sandy Bridge (formerly Gesher) SSE extension.|
+|**XSTATE_MASK_AVX512**|AVX-512 extension|
+|**XSTATE_MASK_MPX**|MPX extension|
+|**XSTATE_MASK_AMX_TILE_CONFIG**|AMX extension (configuration)|
+|**XSTATE_MASK_AMX_TILE_DATA**|AMX extension (data)|
 
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="XSTATE_MASK_LEGACY_SSE"></a><a id="xstate_mask_legacy_sse"></a><dl>
-<dt><b>XSTATE_MASK_LEGACY_SSE</b></dt>
-</dl>
-</td>
-<td width="60%">
-The streaming SIMD extension (SSE).
+### -param XStateSave [out]
 
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="XSTATE_MASK_LEGACY"></a><a id="xstate_mask_legacy"></a><dl>
-<dt><b>XSTATE_MASK_LEGACY</b></dt>
-</dl>
-</td>
-<td width="60%">
-Both the x87/MMX and SSE extensions.
 
-</td>
-</tr>
-<tr>
-<td width="40%"><a id="XSTATE_MASK_GSSE"></a><a id="xstate_mask_gsse"></a><dl>
-<dt><b>XSTATE_MASK_GSSE</b></dt>
-</dl>
-</td>
-<td width="60%">
-The Intel Sandy Bridge (formerly Gesher) SSE extension.
-
-</td>
-</tr>
-</table>
-
-### -param XStateSave 
-
-[out]
 A pointer to a caller-allocated buffer into which the routine writes an <a href="/windows-hardware/drivers/kernel/eprocess">XSTATE_SAVE</a> structure. This structure contains the saved state information for the extended processor features indicated by the <i>Mask</i> parameter. The buffer must be large enough to contain this structure.
 
 ## -returns

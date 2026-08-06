@@ -1,10 +1,9 @@
 ---
 UID: NS:pep_x._PEP_ACPI_IO_MEMORY_RESOURCE
 title: _PEP_ACPI_IO_MEMORY_RESOURCE (pep_x.h)
-description: The PEP_ACPI_IO_MEMORY_RESOURCE structure describes an ACPI IO port descriptor resource.
+description: Learn how the PEP_ACPI_IO_MEMORY_RESOURCE structure describes an ACPI IO port descriptor resource.
 old-location: kernel\pep_acpi_io_memory_resource.htm
 tech.root: kernel
-ms.assetid: 7438C120-9CFB-4D5D-9323-8A5D84D02449
 ms.date: 04/30/2018
 keywords: ["PEP_ACPI_IO_MEMORY_RESOURCE structure"]
 ms.keywords: "*PPEP_ACPI_IO_MEMORY_RESOURCE, PEP_ACPI_IO_MEMORY_RESOURCE, PEP_ACPI_IO_MEMORY_RESOURCE structure [Kernel-Mode Driver Architecture], PPEP_ACPI_IO_MEMORY_RESOURCE, PPEP_ACPI_IO_MEMORY_RESOURCE structure pointer [Kernel-Mode Driver Architecture], _PEP_ACPI_IO_MEMORY_RESOURCE, kernel.pep_acpi_io_memory_resource, pepfx/PEP_ACPI_IO_MEMORY_RESOURCE, pepfx/PPEP_ACPI_IO_MEMORY_RESOURCE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_ACPI_IO_MEMORY_RESOURCE
+ - PPEP_ACPI_IO_MEMORY_RESOURCE
  - PEP_ACPI_IO_MEMORY_RESOURCE
 ---
 
@@ -83,3 +84,4 @@ Specifies the number of bytes in the IO range.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ne-pepfx-_pep_acpi_resource_type">PEP_ACPI_RESOURCE_TYPE</a>
+

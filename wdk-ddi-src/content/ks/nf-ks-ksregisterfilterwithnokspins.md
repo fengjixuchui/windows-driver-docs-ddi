@@ -4,7 +4,6 @@ title: KsRegisterFilterWithNoKSPins function (ks.h)
 description: The KsRegisterFilterWithNoKSPins function registers with DirectShow filters that have no kernel streaming pins and, therefore, do not stream in kernel mode.
 old-location: stream\ksregisterfilterwithnokspins.htm
 tech.root: stream
-ms.assetid: 4ad768c9-211d-4370-b6d3-6d88b223fe48
 ms.date: 04/23/2018
 keywords: ["KsRegisterFilterWithNoKSPins function"]
 ms.keywords: KsRegisterFilterWithNoKSPins, KsRegisterFilterWithNoKSPins function [Streaming Media Devices], avfunc_c9fc5273-7fd9-41d5-9ac4-5033ed757b7c.xml, ks/KsRegisterFilterWithNoKSPins, stream.ksregisterfilterwithnokspins
@@ -51,34 +50,34 @@ The<b> KsRegisterFilterWithNoKSPins </b>function registers with DirectShow filte
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure corresponding to the device to which to register the filter.
 
-### -param InterfaceClassGUID 
+### -param InterfaceClassGUID [in]
 
-[in]
+
 A pointer to the GUID representing the class to register. For instance, this would point to KSCATEGORY_TVTUNER for a TvTuner filter.
 
-### -param PinCount 
+### -param PinCount [in]
 
-[in]
+
 The count of the number of pins on the filter.
 
-### -param PinDirection 
+### -param PinDirection [in]
 
-[in]
+
 A pointer to the first element of an array of Boolean values indicating pin direction for each pin on the filter. Output pins are <b>TRUE</b>; input pins are <b>FALSE</b>. This array must be <i>PinCount</i> in length.
 
-### -param MediumList 
+### -param MediumList [in]
 
-[in]
-A pointer to the first element of an array of <a href="/previous-versions/ff563538(v=vs.85)">KSPIN_MEDIUM</a> structures defining the mediums for each pin on the filter. This array must be <i>PinCount</i> in length.
 
-### -param CategoryList 
+A pointer to the first element of an array of <a href="/windows-hardware/drivers/stream/kspin-medium-structure">KSPIN_MEDIUM</a> structures defining the mediums for each pin on the filter. This array must be <i>PinCount</i> in length.
 
-[in, optional]
+### -param CategoryList [in, optional]
+
+
 A pointer to the first element of an array of GUIDs defining the categories for each pin on the filter. If this parameter is present, it must be <i>PinCount</i> in length.
 
 ## -returns

@@ -4,7 +4,6 @@ title: WdfDeviceWdmGetPhysicalDevice function (wdfdevice.h)
 description: The WdfDeviceWdmGetPhysicalDevice method retrieves the physical device's WDM PDO from the device stack.
 old-location: wdf\wdfdevicewdmgetphysicaldevice.htm
 tech.root: wdf
-ms.assetid: 88bd9cc7-6769-4fdf-b149-2193d765fc6c
 ms.date: 02/26/2018
 keywords: ["WdfDeviceWdmGetPhysicalDevice function"]
 ms.keywords: DFDeviceObjectGeneralRef_07f321bf-b857-4b36-81c0-452dc8acfc9a.xml, WdfDeviceWdmGetPhysicalDevice, WdfDeviceWdmGetPhysicalDevice method, kmdf.wdfdevicewdmgetphysicaldevice, wdf.wdfdevicewdmgetphysicaldevice, wdfdevice/WdfDeviceWdmGetPhysicalDevice
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,9 +52,9 @@ The <b>WdfDeviceWdmGetPhysicalDevice</b> method retrieves the physical device's 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
 ## -returns

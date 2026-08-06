@@ -4,7 +4,6 @@ title: IPortDMus::RegisterServiceGroup (dmusicks.h)
 description: The RegisterServiceGroup method registers a service group with the DMus port driver.
 old-location: audio\iportdmus_registerservicegroup.htm
 tech.root: audio
-ms.assetid: 271d77ae-dc2c-4dc0-8dd9-b09b2d341c60
 ms.date: 05/08/2018
 keywords: ["IPortDMus::RegisterServiceGroup"]
 ms.keywords: IPortDMus interface [Audio Devices],RegisterServiceGroup method, IPortDMus.RegisterServiceGroup, IPortDMus::RegisterServiceGroup, RegisterServiceGroup, RegisterServiceGroup method [Audio Devices], RegisterServiceGroup method [Audio Devices],IPortDMus interface, audio.iportdmus_registerservicegroup, audmp-routines_9167129c-286d-4c54-9633-1f31aa08b904.xml, dmusicks/IPortDMus::RegisterServiceGroup
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dmusicks.h
 api_name:
- - IPortDMus.RegisterServiceGroup
+ - IPortDMus::RegisterServiceGroup
 ---
 
 # IPortDMus::RegisterServiceGroup
@@ -50,9 +49,9 @@ The <code>RegisterServiceGroup</code> method registers a service group with the 
 
 ## -parameters
 
-### -param ServiceGroup 
+### -param ServiceGroup [in]
 
-[in]
+
 Pointer to an <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iservicegroup">IServiceGroup</a> object. This is the service group that is to be registered.
 
 ## -remarks
@@ -88,3 +87,4 @@ The <i>pServiceGroup</i> parameter follows the <a href="/windows-hardware/driver
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iservicesink">IServiceSink</a>
+

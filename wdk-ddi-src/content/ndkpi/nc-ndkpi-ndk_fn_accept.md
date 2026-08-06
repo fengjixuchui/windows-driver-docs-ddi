@@ -4,7 +4,6 @@ title: NDK_FN_ACCEPT (ndkpi.h)
 description: The NdkAccept (NDK_FN_ACCEPT) function accepts an incoming connection request over a listener object.
 old-location: netvista\ndk_fn_accept.htm
 tech.root: netvista
-ms.assetid: 1010F6AD-2D2F-46E5-816E-C5CE68ED11CF
 ms.date: 05/02/2018
 keywords: ["NDK_FN_ACCEPT callback function"]
 ms.keywords: NDK_FN_ACCEPT, NDK_FN_ACCEPT callback, NdkAccept, NdkAccept callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkAccept, netvista.ndk_fn_accept
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkAccept
+ - NDK_FN_ACCEPT
 ---
 
 # NDK_FN_ACCEPT callback function
@@ -50,57 +49,55 @@ The <i>NdkAccept</i> (<i>NDK_FN_ACCEPT</i>) function accepts  an incoming connec
 
 ## -parameters
 
-### -param pNdkConnector 
+### -param pNdkConnector [in]
 
-[in]
+
 A pointer to an NDK connector object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_connector">NDK_CONNECTOR</a>).
 
-### -param pNdkQp 
+### -param pNdkQp [in]
 
-[in]
+
 A pointer to an NDK queue pair (QP) object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_qp">NDK_QP</a>) to associate with the connection.
 
-### -param InboundReadLimit 
+### -param InboundReadLimit [in]
 
-[in]
+
 The consumer-supplied maximum number of incoming in-progress read operations to allow on the QP. If the underlying provider has a lower <b>MaxInboundReadLimit</b> value in the <a href="/windows/win32/api/ndkinfo/ns-ndkinfo-ndk_adapter_info">NDK_ADAPTER_INFO</a> structure, then the provider will cap the consumer-supplied value to the provider maximum. If the peer has a lower <i>OutboundReadLimit</i> value, then the provider will use that value as the effective <i>InboundReadLimit</i>. The consumer can retrieve the effective <i>InboundReadLimit</i> by calling the <i>NdkGetConnectionData</i> function (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_get_connection_data">NDK_FN_GET_CONNECTION_DATA</a>).
 
-### -param OutboundReadLimit 
+### -param OutboundReadLimit [in]
 
-[in]
+
 The consumer-supplied maximum number of outgoing in-progress read operations to allow on the QP. If the underlying provider has a lower <b>MaxOutboundReadLimit</b> value  in the <a href="/windows/win32/api/ndkinfo/ns-ndkinfo-ndk_adapter_info">NDK_ADAPTER_INFO</a> structure, then the provider will cap the consumer supplied value to the provider maximum. If the peer has a lower <i>InboundReadLimit</i>, then the provider will use that value as the effective <i>OutboundReadLimit</i>. The     consumer can retrieve the effective <i>OutboundReadLimit</i> by calling the <i>NdkGetConnectionData</i> function (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_get_connection_data">NDK_FN_GET_CONNECTION_DATA</a>).
 
-### -param PVOID
-
-### -param PrivateDataLength 
-
-[in]
-The length, in bytes, of the private data that is provided in the <i>pPrivateData</i> parameter.
-
-### -param DisconnectEvent 
-
-[in, optional]
-An entry point for an optional disconnect notification callback function <i>NdkDisconnectEventCallback</i> (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_disconnect_event_callback">NDK_FN_DISCONNECT_EVENT_CALLBACK</a>). The provider calls this callback function when the peer disconnects.
-
-### -param DisconnectEventContext 
-
-[in, optional]
-A context value to pass to the <i>DisconnectEventContext</i> parameter of the  callback function that is specified in the <i>DisconnectEvent</i> parameter.
-
-### -param RequestCompletion 
-
-[in]
-A pointer to a request completion callback routine <i>NdkRequestCompletion</i> (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_request_completion">NDK_FN_REQUEST_COMPLETION</a>).
-
-### -param RequestContext 
-
-[in, optional]
-A context value to pass to the <i>Context</i> parameter of the  callback function that is specified in the <i>RequestCompletion</i> parameter.
-
-
-#### - pPrivateData
+### -param pPrivateData [_In_reads_bytes_opt_(PrivateDataLength)]
 
 A pointer to private data that is sent back with the accept request.
+
+### -param PrivateDataLength [in]
+
+
+The length, in bytes, of the private data that is provided in the <i>pPrivateData</i> parameter.
+
+### -param DisconnectEvent [in, optional]
+
+
+An entry point for an optional disconnect notification callback function <i>NdkDisconnectEventCallback</i> (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_disconnect_event_callback">NDK_FN_DISCONNECT_EVENT_CALLBACK</a>). The provider calls this callback function when the peer disconnects.
+
+### -param DisconnectEventContext [in, optional]
+
+
+A context value to pass to the <i>DisconnectEventContext</i> parameter of the  callback function that is specified in the <i>DisconnectEvent</i> parameter.
+
+### -param RequestCompletion [in]
+
+
+A pointer to a request completion callback routine <i>NdkRequestCompletion</i> (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_request_completion">NDK_FN_REQUEST_COMPLETION</a>).
+
+### -param RequestContext [in, optional]
+
+
+A context value to pass to the <i>Context</i> parameter of the  callback function that is specified in the <i>RequestCompletion</i> parameter.
+
 
 ## -returns
 
@@ -227,3 +224,4 @@ The <i>NdkConnectEventCallback</i> function is used by the NDK provider to notif
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_qp">NDK_QP</a>
+

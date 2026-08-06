@@ -1,11 +1,10 @@
 ---
 UID: NE:rilapitypes.RILERRORDETAILSPARAMMASK
 title: RILERRORDETAILSPARAMMASK (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this enumeration in your code. Microsoft reserves the RILERRORDETAILSPARAMMASK enumeration for internal use only."
 old-location: netvista\rilerrordetailsparammask.htm
 tech.root: netvista
-ms.assetid: 5890ea36-73af-4d64-bea3-12b75d479e6e
-ms.date: 05/02/2018
+ms.date: 12/10/2021
 keywords: ["RILERRORDETAILSPARAMMASK enumeration"]
 ms.keywords: RILERRORDETAILSPARAMMASK, RILERRORDETAILSPARAMMASK enumeration [Network Drivers Starting with Windows Vista], netvista.rilerrordetailsparammask, ntddrilapitypes/RILERRORDETAILSPARAMMASK
 req.header: rilapitypes.h
@@ -50,3 +49,4 @@ This topic supports the Windows driver infrastructure and is not intended to be 
 
 ## -enum-fields
 
+### -field RIL_PARAM_ERR_CAUSE

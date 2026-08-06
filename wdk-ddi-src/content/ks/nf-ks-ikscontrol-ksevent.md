@@ -4,7 +4,6 @@ title: IKsControl::KsEvent (ks.h)
 description: The IKsControl::KsEvent method enables or disables an event, together with any other defined support operations available on an event set.
 old-location: stream\ikscontrol_ksevent2.htm
 tech.root: stream
-ms.assetid: 9e4b86cf-308f-4d9b-be28-966312dc4e43
 ms.date: 04/23/2018
 keywords: ["IKsControl::KsEvent"]
 ms.keywords: IKsControl interface [Streaming Media Devices],KsEvent method, IKsControl.KsEvent, IKsControl::KsEvent, KsEvent, KsEvent method [Streaming Media Devices], KsEvent method [Streaming Media Devices],IKsControl interface, avintfc_359de56d-5fcc-47ea-838c-cd110493856c.xml, ks/IKsControl::KsEvent, stream.ikscontrol_ksevent2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - IKsControl.KsEvent
+ - IKsControl::KsEvent
 ---
 
 # IKsControl::KsEvent (ks.h)
@@ -52,7 +51,7 @@ The <b>IKsControl::KsEvent</b> method enables or disables an event, together wit
 
 ### -param Event
 
-Pointer to a <a href="/previous-versions/ff561744(v=vs.85)">KSEVENT</a> structure that describes an event to enable the event and <b>NULL</b> to disable the event.
+Pointer to a <a href="/windows-hardware/drivers/stream/ksevent-structure">KSEVENT</a> structure that describes an event to enable the event and <b>NULL</b> to disable the event.
 
 ### -param EventLength
 
@@ -80,8 +79,9 @@ To disable an event, set <i>Event</i> to <b>NULL</b>, <i>EventLength</i> to zero
 
 ## -see-also
 
-<a href="/previous-versions/ff561744(v=vs.85)">KSEVENT</a>
+<a href="/windows-hardware/drivers/stream/ksevent-structure">KSEVENT</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata">KSEVENTDATA</a>
+

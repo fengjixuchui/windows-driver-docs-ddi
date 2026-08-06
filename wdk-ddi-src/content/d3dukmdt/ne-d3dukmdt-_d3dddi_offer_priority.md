@@ -1,10 +1,9 @@
 ---
 UID: NE:d3dukmdt._D3DDDI_OFFER_PRIORITY
 title: _D3DDDI_OFFER_PRIORITY (d3dukmdt.h)
-description: Indicates the importance of video memory resources that the user-mode display driver offers for reuse.
+description: The _D3DDDI_OFFER_PRIORITY enumeration contains values that indicate the importance of video memory resources that the user-mode display driver offers for reuse.
 old-location: display\d3dddi_offer_priority.htm
 tech.root: display
-ms.assetid: 2e43f782-c89c-4926-83db-efe737544065
 ms.date: 05/10/2018
 keywords: ["D3DDDI_OFFER_PRIORITY enumeration"]
 ms.keywords: D3DDDI_OFFER_PRIORITY, D3DDDI_OFFER_PRIORITY enumeration [Display Devices], D3DDDI_OFFER_PRIORITY_AUTO, D3DDDI_OFFER_PRIORITY_HIGH, D3DDDI_OFFER_PRIORITY_LOW, D3DDDI_OFFER_PRIORITY_NONE, D3DDDI_OFFER_PRIORITY_NORMAL, _D3DDDI_OFFER_PRIORITY, d3dukmdt/D3DDDI_OFFER_PRIORITY, d3dukmdt/D3DDDI_OFFER_PRIORITY_AUTO, d3dukmdt/D3DDDI_OFFER_PRIORITY_HIGH, d3dukmdt/D3DDDI_OFFER_PRIORITY_LOW, d3dukmdt/D3DDDI_OFFER_PRIORITY_NONE, d3dukmdt/D3DDDI_OFFER_PRIORITY_NORMAL, display.d3dddi_offer_priority
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dukmdt.h
 api_name:
+ - _D3DDDI_OFFER_PRIORITY
  - D3DDDI_OFFER_PRIORITY
 ---
 
@@ -82,3 +82,4 @@ The video memory manager should make a policy decision on the allocation's value
 
 
 <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_allocationlist">D3DDDI_ALLOCATIONLIST</a>
+

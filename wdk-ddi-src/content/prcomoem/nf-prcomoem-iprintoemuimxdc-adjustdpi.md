@@ -4,7 +4,6 @@ title: IPrintOemUIMXDC::AdjustDPI (prcomoem.h)
 description: The IPrintOemUIMXDC::AdjustDPI method enables an XPS filter pipeline driver to use UnidrvUI.dll or PS5UI.dll to support configuration of image resolution.
 old-location: print\iprintoemuimxdc_adjustdpi.htm
 tech.root: print
-ms.assetid: d725d917-08fb-4e11-824c-795e35782a06
 ms.date: 04/20/2018
 keywords: ["IPrintOemUIMXDC::AdjustDPI"]
 ms.keywords: AdjustDPI, AdjustDPI method [Print Devices], AdjustDPI method [Print Devices],IPrintOemUIMXDC interface, IPrintOemUIMXDC interface [Print Devices],AdjustDPI method, IPrintOemUIMXDC.AdjustDPI, IPrintOemUIMXDC::AdjustDPI, prcomoem/IPrintOemUIMXDC::AdjustDPI, print.iprintoemuimxdc_adjustdpi, print_unidrv-pscript_ui_cd41d40c-f5a8-467f-be0d-00453886ebd1.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemUIMXDC.AdjustDPI
+ - IPrintOemUIMXDC::AdjustDPI
 ---
 
 # IPrintOemUIMXDC::AdjustDPI
@@ -83,3 +82,4 @@ A pointer to the current resolution, in dots per inch (DPI), assuming square pix
 The <i>pDPI</i> parameter is IN OUT. All other parameters for this function are input only.
 
 If the plug-in cannot complete the operation, it should return an appropriate failure HRESULT, which causes the current print job to fail.
+

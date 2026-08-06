@@ -1,10 +1,9 @@
 ---
 UID: NF:ntifs.KeInitializeMutant
 title: KeInitializeMutant function (ntifs.h)
-description: Reserved for system use.
+description: "Microsoft reserves the KeInitializeMutant function for internal use only. Don't use this function in your code."
 old-location: ifsk\keinitializemutant.htm
 tech.root: ifsk
-ms.assetid: 75c31158-5d9c-465a-bb62-392b85fd8791
 ms.date: 04/16/2018
 keywords: ["KeInitializeMutant function"]
 ms.keywords: KeInitializeMutant, KeInitializeMutant function [Installable File System Drivers], ifsk.keinitializemutant, keref_b0f59cc4-6d50-45bc-928c-3c2288ba0f14.xml, ntifs/KeInitializeMutant

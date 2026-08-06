@@ -4,7 +4,6 @@ title: _USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION (usbioctl.h)
 description: The input and output buffer for the IOCTL_USB_START_TRACKING_FOR_TIME_SYNC request.
 old-location: buses\usb_start_tracking_for_time_sync_information.htm
 tech.root: usbref
-ms.assetid: 2C82743C-2675-4196-839D-885EE17B2A7A
 ms.date: 05/07/2018
 keywords: ["USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION structure"]
 ms.keywords: "*PUSB_START_TRACKING_FOR_TIME_SYNC_INFORMATION, PUSB_START_TRACKING_FOR_TIME_SYNC_INFORMATION, PUSB_START_TRACKING_FOR_TIME_SYNC_INFORMATION structure pointer [Buses], USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION, USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION structure [Buses], _USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION, buses.usb_start_tracking_for_time_sync_information, usbioctl/PUSB_START_TRACKING_FOR_TIME_SYNC_INFORMATION, usbioctl/USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Usbioctl.h
 api_name:
+ - _USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION
+ - PUSB_START_TRACKING_FOR_TIME_SYNC_INFORMATION
  - USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION
 ---
 
@@ -65,3 +66,4 @@ On input, the caller must specify whether the initial startup latency of up to 2
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_start_tracking_for_time_sync">IOCTL_USB_START_TRACKING_FOR_TIME_SYNC</a>
+

@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_DECRYPTIONBLT
 title: PFND3D11_1DDI_DECRYPTIONBLT (d3d10umddi.h)
 description: Writes encrypted data to a protected surface.
 old-location: display\decryptionblt1.htm
-ms.assetid: 36aeb826-251e-404e-8ce3-6b2246ff07bc
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_DECRYPTIONBLT callback function"]
 ms.keywords: DecryptionBlt, DecryptionBlt callback function [Display Devices], PFND3D11_1DDI_DECRYPTIONBLT, PFND3D11_1DDI_DECRYPTIONBLT callback, d3d10umddi/DecryptionBlt, display.decryptionblt1
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - DecryptionBlt
-product:
- - Windows
+ - PFND3D11_1DDI_DECRYPTIONBLT
 ---
 
 # PFND3D11_1DDI_DECRYPTIONBLT callback function
@@ -125,3 +122,4 @@ For other encryption types, a different structure might be used, or the encrypti
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_video_content_protection_caps">D3D11_1DDI_VIDEO_CONTENT_PROTECTION_CAPS</a>
+

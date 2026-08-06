@@ -4,7 +4,6 @@ title: NDIS_WDI_FREE_WDI_FRAME_METADATA (dot11wdi.h)
 description: The NdisWdiFreeWiFiFrameMetaData callback function frees a frame metadata buffer.
 old-location: netvista\ndiswdifreewdiframemetadata.htm
 tech.root: netvista
-ms.assetid: 828C181F-918A-4674-B6CE-FCB9750948E0
 ms.date: 05/02/2018
 keywords: ["NDIS_WDI_FREE_WDI_FRAME_METADATA callback function"]
 ms.keywords: NDIS_WDI_FREE_WDI_FRAME_METADATA, NDIS_WDI_FREE_WDI_FRAME_METADATA callback, NdisWdiFreeWiFiFrameMetaData, NdisWdiFreeWiFiFrameMetaData callback function [Network Drivers Starting with Windows Vista], dot11wdi/NdisWdiFreeWiFiFrameMetaData, netvista.ndiswdifreewdiframemetadata
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
- - NdisWdiFreeWiFiFrameMetaData
+ - NDIS_WDI_FREE_WDI_FRAME_METADATA
 ---
 
 # NDIS_WDI_FREE_WDI_FRAME_METADATA callback function
@@ -46,20 +45,23 @@ api_name:
 
 ## -description
 
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
+
 The NdisWdiFreeWiFiFrameMetaData callback function frees a frame metadata buffer.
 
 This is a callback inside <a href="/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_ndis_wdi_data_api">NDIS_WDI_DATA_API</a>.
 
 ## -parameters
 
-### -param NdisMiniportDataPathHandle 
+### -param NdisMiniportDataPathHandle [in]
 
-[in]
+
 The NdisMiniportDataPathHandle passed to the IHV miniport in <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_tal_txrx_initialize">MiniportWdiTalTxRxInitialize</a>.
 
-### -param pWiFiFrameMetaData 
+### -param pWiFiFrameMetaData [in]
 
-[in]
+
 The frame metadata buffer to free.
 
 ## -see-also
@@ -69,3 +71,4 @@ The frame metadata buffer to free.
 
 
 <a href="/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_frame_metadata">WDI_FRAME_METADATA</a>
+

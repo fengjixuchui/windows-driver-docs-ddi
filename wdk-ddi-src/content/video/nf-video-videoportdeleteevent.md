@@ -4,7 +4,6 @@ title: VideoPortDeleteEvent function (video.h)
 description: The VideoPortDeleteEvent function deletes the specified event object.
 old-location: display\videoportdeleteevent.htm
 tech.root: display
-ms.assetid: 0952f6ab-6d57-4ded-b167-74a7ace47961
 ms.date: 05/10/2018
 keywords: ["VideoPortDeleteEvent function"]
 ms.keywords: VideoPortDeleteEvent, VideoPortDeleteEvent function [Display Devices], VideoPort_Functions_66e14d53-8a5e-4322-8576-4ac06230db31.xml, display.videoportdeleteevent, video/VideoPortDeleteEvent
@@ -50,14 +49,14 @@ The <b>VideoPortDeleteEvent</b> function deletes the specified event object.
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's device extension.
 
-### -param pEvent 
+### -param pEvent [in]
 
-[in]
+
 Pointer to the event object to be deleted.
 
 ## -returns

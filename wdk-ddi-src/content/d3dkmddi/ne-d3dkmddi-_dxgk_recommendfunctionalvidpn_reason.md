@@ -3,14 +3,13 @@ UID: NE:d3dkmddi._DXGK_RECOMMENDFUNCTIONALVIDPN_REASON
 title: _DXGK_RECOMMENDFUNCTIONALVIDPN_REASON (d3dkmddi.h)
 description: The DXGK_RECOMMENDFUNCTIONALVIDPN_REASON enumeration indicates the reason for calling the display miniport driver's DxgkDdiRecommendFunctionalVidPn function.
 old-location: display\dxgk_recommendfunctionalvidpn_reason.htm
-ms.assetid: 75dda423-8d5a-4b11-a187-d6703601a366
 ms.date: 05/10/2018
 keywords: ["DXGK_RECOMMENDFUNCTIONALVIDPN_REASON enumeration"]
 ms.keywords: DXGK_RECOMMENDFUNCTIONALVIDPN_REASON, DXGK_RECOMMENDFUNCTIONALVIDPN_REASON enumeration [Display Devices], DXGK_RFVR_FIRMWARE, DXGK_RFVR_HOTKEY, DXGK_RFVR_UNINITIALIZED, DXGK_RFVR_USERMODE, DmEnums_bb915c39-0ecd-4b15-8030-6a144173dc90.xml, _DXGK_RECOMMENDFUNCTIONALVIDPN_REASON, d3dkmddi/DXGK_RECOMMENDFUNCTIONALVIDPN_REASON, d3dkmddi/DXGK_RFVR_FIRMWARE, d3dkmddi/DXGK_RFVR_HOTKEY, d3dkmddi/DXGK_RFVR_UNINITIALIZED, d3dkmddi/DXGK_RFVR_USERMODE, display.dxgk_recommendfunctionalvidpn_reason
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_RECOMMENDFUNCTIONALVIDPN_REASON
  - DXGK_RECOMMENDFUNCTIONALVIDPN_REASON
 ---
 
@@ -75,3 +75,4 @@ The <b>RequestReason</b> member of the <a href="/windows-hardware/drivers/ddi/d3
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_recommendfunctionalvidpn">DxgkDdiRecommendFunctionalVidPn</a>
+

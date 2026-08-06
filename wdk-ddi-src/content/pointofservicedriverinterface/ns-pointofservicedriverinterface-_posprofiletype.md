@@ -1,11 +1,9 @@
 ---
 UID: NS:pointofservicedriverinterface._PosProfileType
-title: _PosProfileType (pointofservicedriverinterface.h)
+title: PosProfileType (pointofservicedriverinterface.h)
 description: This structure describes the number of profile strings in a buffer.
-old-location: pos\posprofiletype.htm
 tech.root: pos
-ms.assetid: b0ef1592-f3f3-4ca1-83f8-dc7cb76cda36
-ms.date: 02/23/2018
+ms.date: 04/19/2022
 keywords: ["PosProfileType structure"]
 ms.keywords: PosProfileType, PosProfileType structure, _PosProfileType, pointofservicedriverinterface/PosProfileType, pos.posprofiletype
 req.header: pointofservicedriverinterface.h
@@ -40,11 +38,9 @@ api_type:
 api_location:
  - PointOfServiceDriverInterface.h
 api_name:
+ - _PosProfileType
  - PosProfileType
 ---
-
-# _PosProfileType structure
-
 
 ## -description
 
@@ -54,23 +50,12 @@ This structure describes the number of profile strings in a buffer.
 
 ### -field BufferSize
 
-### -field ProfileCount
-
- 
-
-
-
-
-#### - DataLength
-
 The size in bytes of the buffer that follows this **PosProfileType**, including the size of the **PosProfileType** structure.
 
-
-#### - EntryCount
+### -field ProfileCount
 
 Indicates the number of statistics that follow this header.
 
 ## -remarks
 
 The buffer of profile *PosStringType* strings follows this structure in memory.
-

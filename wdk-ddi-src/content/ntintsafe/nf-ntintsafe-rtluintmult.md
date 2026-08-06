@@ -4,7 +4,6 @@ title: RtlUIntMult function (ntintsafe.h)
 description: Multiplies one value of type UINT by another.
 old-location: kernel\rtluintmult.htm
 tech.root: kernel
-ms.assetid: 9972BC53-3CFB-4649-9C54-B194039D804F
 ms.date: 04/30/2018
 keywords: ["RtlUIntMult function"]
 ms.keywords: RtlUIntMult, RtlUIntMult function [Kernel-Mode Driver Architecture], kernel.rtluintmult, ntintsafe/RtlUIntMult
@@ -50,19 +49,19 @@ Multiplies one value of type <b>UINT</b> by another.
 
 ## -parameters
 
-### -param uMultiplicand 
+### -param uMultiplicand [in]
 
-[in]
+
 The value to be multiplied by <i>uMultiplier</i>.
 
-### -param uMultiplier 
+### -param uMultiplier [in]
 
-[in]
+
 The value by which to multiply <i>uMultiplicand</i>.
 
-### -param puResult 
+### -param puResult [out]
 
-[out]
+
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

@@ -4,7 +4,6 @@ title: _WINBIO_BLANK_PAYLOAD (winbio_ioctl.h)
 description: The IOCTL_BIOMETRIC_RESET and IOCTL_BIOMETRIC_UPDATE_FIRMWARE IOCTLs return the WINBIO_BLANK_PAYLOAD structure as output.
 old-location: biometric\winbio_blank_payload.htm
 tech.root: biometric
-ms.assetid: 0bc28853-1c00-42d3-a269-198093d64dd7
 ms.date: 02/20/2018
 keywords: ["WINBIO_BLANK_PAYLOAD structure"]
 ms.keywords: "*PWINBIO_BLANK_PAYLOAD, PWINBIO_BLANK_PAYLOAD, PWINBIO_BLANK_PAYLOAD structure pointer [Biometric Devices], WINBIO_BLANK_PAYLOAD, WINBIO_BLANK_PAYLOAD structure [Biometric Devices], _WINBIO_BLANK_PAYLOAD, biometric.winbio_blank_payload, biometric_ref_4a39daf0-52f5-40bf-abc6-40cd3d866f39.xml, winbio_ioctl/PWINBIO_BLANK_PAYLOAD, winbio_ioctl/WINBIO_BLANK_PAYLOAD"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - winbio_ioctl.h
 api_name:
+ - _WINBIO_BLANK_PAYLOAD
+ - PWINBIO_BLANK_PAYLOAD
  - WINBIO_BLANK_PAYLOAD
 ---
 
@@ -67,3 +68,4 @@ The status detail of the I/O operation.  This is where WINBIO error and informat
 |S_OK|The operation completed successfully.|
 |HRESULT_FROM_NT(STATUS_IO_DEVICE_ERROR)|The driver could not gather the necessary information from the device.|
 |WINBIO_E_DEVICE_BUSY|The device is in the middle of a vendor-specific operation.  This should only be returned when the device cannot be reset, and the vendor-specific operation cannot be canceled.|
+

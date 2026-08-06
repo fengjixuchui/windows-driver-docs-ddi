@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11.DOT11_CIPHER_DEFAULT_KEY_VALUE
 title: DOT11_CIPHER_DEFAULT_KEY_VALUE (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_CIPHER_DEFAULT_KEY_VALUE structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_cipher_default_key_value.htm
 tech.root: netvista
-ms.assetid: 7362b20a-6ec4-4b22-8981-3a4b647a3cfa
 ms.date: 02/16/2018
 keywords: ["DOT11_CIPHER_DEFAULT_KEY_VALUE structure"]
 ms.keywords: "*PDOT11_CIPHER_DEFAULT_KEY_VALUE, DOT11_CIPHER_DEFAULT_KEY_VALUE, DOT11_CIPHER_DEFAULT_KEY_VALUE structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_dba46983-b572-4b76-8628-776848e4b22e.xml, PDOT11_CIPHER_DEFAULT_KEY_VALUE, PDOT11_CIPHER_DEFAULT_KEY_VALUE structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_cipher_default_key_value, windot11/DOT11_CIPHER_DEFAULT_KEY_VALUE, windot11/PDOT11_CIPHER_DEFAULT_KEY_VALUE"
@@ -41,8 +40,7 @@ api_location:
  - windot11.h
 api_name:
  - DOT11_CIPHER_DEFAULT_KEY_VALUE
-product:
- - Windows 10 or later.
+ - PDOT11_CIPHER_DEFAULT_KEY_VALUE
 ---
 
 # DOT11_CIPHER_DEFAULT_KEY_VALUE structure
@@ -51,7 +49,7 @@ product:
 ## -description
 
 > [!Important]
-> The [Native 802.11 Wireless LAN](/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)) interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see [WLAN Universal Windows driver model](/windows-hardware/drivers/network/wifi-universal-driver-model).
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
 
 The DOT11_CIPHER_DEFAULT_KEY_VALUE structure defines a default cipher key or per-station default cipher key that will be added to or deleted from the key tables on the 802.11 station. For more information about these cipher key types, see [802.11 Cipher Key Types](/windows-hardware/drivers/network/802-11-cipher-key-types).
 
@@ -60,7 +58,7 @@ The DOT11_CIPHER_DEFAULT_KEY_VALUE structure defines a default cipher key or per
 ### -field Header
 
 The type, revision, and size of the DOT11_CIPHER_DEFAULT_KEY_VALUE structure. This member is
-formatted as an [NDIS_OBJECT_HEADER](..\ntddndis\ns-ntddndis-_ndis_object_header.md) structure.
+formatted as an [NDIS_OBJECT_HEADER](..\objectheader\ns-objectheader-ndis_object_header.md) structure.
 
 The miniport driver must set the members of *Header* to the following values:
 
@@ -81,7 +79,7 @@ This member must be set to DOT11_CIPHER_DEFAULT_KEY_VALUE_REVISION_1.
 
 This member must be set to `sizeof(DOT11_CIPHER_DEFAULT_KEY_VALUE)`.
 
-For more information about these members, see [NDIS_OBJECT_HEADER](..\ntddndis\ns-ntddndis-_ndis_object_header.md).
+For more information about these members, see [NDIS_OBJECT_HEADER](..\objectheader\ns-objectheader-ndis_object_header.md).
 
 ### -field uKeyIndex
 
@@ -140,7 +138,6 @@ If set to **TRUE**, the default key referenced by **uKeyIndex** must not be dele
 
 * Explicitly deleted through a set request of [OID_DOT11_CIPHER_DEFAULT_KEY](/windows-hardware/drivers/network/oid-dot11-cipher-default-key-id).
 * Implicitly deleted through a method request of [OID_DOT11_RESET_REQUEST](/windows-hardware/drivers/network/oid-dot11-reset-request).
-
 
 ### -field usKeyLength
 
@@ -205,4 +202,5 @@ If the **bDelete** member is **TRUE**, the following members are not valid and m
 
 
 
-[NDIS_OBJECT_HEADER](..\ntddndis\ns-ntddndis-_ndis_object_header.md)
+[NDIS_OBJECT_HEADER](..\objectheader\ns-objectheader-ndis_object_header.md)
+

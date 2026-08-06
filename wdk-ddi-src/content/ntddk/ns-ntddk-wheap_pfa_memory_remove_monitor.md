@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._WHEAP_PFA_MEMORY_REMOVE_MONITOR
 title: WHEAP_PFA_MEMORY_REMOVE_MONITOR
-description: 
-tech.root: 
-ms.assetid: 3fed5867-ad54-4114-b227-d7cab3661d28
+description: "Learn more about: WHEAP_PFA_MEMORY_REMOVE_MONITOR structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEAP_PFA_MEMORY_REMOVE_MONITOR structure"]
 ms.keywords: WHEAP_PFA_MEMORY_REMOVE_MONITOR, WHEAP_PFA_MEMORY_REMOVE_MONITOR, *PWHEAP_PFA_MEMORY_REMOVE_MONITOR,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEAP_PFA_MEMORY_REMOVE_MONITOR
+ - PWHEAP_PFA_MEMORY_REMOVE_MONITOR
  - WHEAP_PFA_MEMORY_REMOVE_MONITOR
-product:
- - Windows
 ---
 
 # WHEAP_PFA_MEMORY_REMOVE_MONITOR structure

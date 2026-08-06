@@ -4,7 +4,6 @@ title: IPortableDevicePropVariantCollection::GetAt (portabledevicetypes.h)
 description: Retrieves an item from the collection by a zero-based index.
 old-location: wpddk\iportabledevicepropvariantcollection_getat.htm
 tech.root: wpd_dk
-ms.assetid: f42239b1-4f41-4b54-a29c-f5e5e2681a59
 ms.date: 02/15/2018
 keywords: ["IPortableDevicePropVariantCollection::GetAt"]
 ms.keywords: GetAt, GetAt method, GetAt method,IPortableDevicePropVariantCollection interface, IPortableDevicePropVariantCollection interface,GetAt method, IPortableDevicePropVariantCollection.GetAt, IPortableDevicePropVariantCollection::GetAt, IPortableDevicePropVariantCollectionGetAt, portabledevicetypes/IPortableDevicePropVariantCollection::GetAt, wpddk.iportabledevicepropvariantcollection_getat
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDevicePropVariantCollection.GetAt
+ - IPortableDevicePropVariantCollection::GetAt
 ---
 
 # IPortableDevicePropVariantCollection::GetAt
@@ -51,14 +50,14 @@ Retrieves an item from the collection by a zero-based index.
 
 ## -parameters
 
-### -param dwIndex 
+### -param dwIndex [in]
 
-[in]
+
 <b>DWORD</b> that contains the zero-based index of the item to retrieve.
 
-### -param pValue 
+### -param pValue [out]
 
-[out]
+
 Pointer to a <b>PROPVARIANT</b> structure. The caller is responsible for freeing this memory by calling <b>PropVariantClear</b>.
 
 ## -returns
@@ -112,3 +111,4 @@ None.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicepropvariantcollection">IPortableDevicePropVariantCollection Interface</a>
+

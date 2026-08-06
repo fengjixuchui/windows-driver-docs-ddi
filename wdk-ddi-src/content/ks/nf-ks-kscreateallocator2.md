@@ -4,7 +4,6 @@ title: KsCreateAllocator2 function (ks.h)
 description: Creates a handle to an allocator for the given sink connection handle. This function does not complete the IRP or set the status in the IRP.
 old-location: stream\kscreateallocator2.htm
 tech.root: stream
-ms.assetid: f0efa17c-9318-46a4-bc08-d4d372cc07ba
 ms.date: 04/23/2018
 keywords: ["KsCreateAllocator2 function"]
 ms.keywords: KsCreateAllocator2, KsCreateAllocator2 function [Streaming Media Devices], ks/KsCreateAllocator2, stream.kscreateallocator2
@@ -52,19 +51,19 @@ Supported starting in Windows 8.
 
 ## -parameters
 
-### -param ConnectionHandle 
+### -param ConnectionHandle [in]
 
-[in]
+
 Specifies the handle to the sink connection on which to create the allocator.
 
-### -param AllocatorFraming 
+### -param AllocatorFraming [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksallocator_framing">KSALLOCATOR_FRAMING</a> structure that specifies framing for the allocator.
 
-### -param AllocatorHandle 
+### -param AllocatorHandle [out]
 
-[out]
+
 Specifies the pointer to a handle to store the allocator handle.
 
 ## -returns

@@ -4,7 +4,6 @@ title: WUDF_INTERRUPT_WORKITEM (wudfinterrupt.h)
 description: A driver's OnInterruptWorkItem event callback function processes interrupt information that the driver's OnInterruptIsr callback function has stored.
 old-location: wdf\oninterruptworkitem.htm
 tech.root: wdf
-ms.assetid: 10677BC2-2A98-41C8-BAE9-1FA3689ACD93
 ms.date: 02/26/2018
 keywords: ["WUDF_INTERRUPT_WORKITEM callback function"]
 ms.keywords: OnInterruptWorkItem, OnInterruptWorkItem callback function, WUDF_INTERRUPT_WORKITEM, WUDF_INTERRUPT_WORKITEM callback, umdf.oninterruptworkitem, wdf.oninterruptworkitem, wudfinterrupt/OnInterruptWorkItem
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfinterrupt.h
 api_name:
- - OnInterruptWorkItem
+ - WUDF_INTERRUPT_WORKITEM
 ---
 
 # WUDF_INTERRUPT_WORKITEM callback function
@@ -53,14 +52,14 @@ api_name:
 
 ## -parameters
 
-### -param Interrupt 
+### -param Interrupt [in]
 
-[in]
+
 A pointer to the interrupt object interface associated with the work item.
 
-### -param AssociatedObject 
+### -param AssociatedObject [in]
 
-[in]
+
 A pointer to the associated object.
 
 ## -remarks
@@ -114,7 +113,6 @@ VOID
 
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice3-createinterrupt">IWDFDevice3::CreateInterrupt</a>
@@ -122,3 +120,4 @@ VOID
 
 
 <a href="/windows-hardware/drivers/ddi/wudfinterrupt/ns-wudfinterrupt-_wudf_interrupt_config">WUDF_INTERRUPT_CONFIG</a>
+

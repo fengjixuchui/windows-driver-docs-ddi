@@ -4,7 +4,6 @@ title: IWDFUsbTargetDevice::RetrieveUsbInterface (wudfusb.h)
 description: The RetrieveUsbInterface method retrieves the specified USB interface for a USB device.
 old-location: wdf\iwdfusbtargetdevice_retrieveusbinterface.htm
 tech.root: wdf
-ms.assetid: 9dfa8686-a815-417c-9488-dd86de0e15a2
 ms.date: 02/26/2018
 keywords: ["IWDFUsbTargetDevice::RetrieveUsbInterface"]
 ms.keywords: IWDFUsbTargetDevice interface,RetrieveUsbInterface method, IWDFUsbTargetDevice.RetrieveUsbInterface, IWDFUsbTargetDevice::RetrieveUsbInterface, RetrieveUsbInterface, RetrieveUsbInterface method, RetrieveUsbInterface method,IWDFUsbTargetDevice interface, UMDFUSBref_cc346a35-4508-40ac-b959-20174a1b39af.xml, umdf.iwdfusbtargetdevice_retrieveusbinterface, wdf.iwdfusbtargetdevice_retrieveusbinterface, wudfusb/IWDFUsbTargetDevice::RetrieveUsbInterface
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFUsbTargetDevice.RetrieveUsbInterface
+ - IWDFUsbTargetDevice::RetrieveUsbInterface
 ---
 
 # IWDFUsbTargetDevice::RetrieveUsbInterface
@@ -52,14 +51,14 @@ The <b>RetrieveUsbInterface</b> method retrieves the specified USB interface for
 
 ## -parameters
 
-### -param InterfaceIndex 
+### -param InterfaceIndex [in]
 
-[in]
+
 The index of the interface to retrieve.
 
-### -param ppUsbInterface 
+### -param ppUsbInterface [out]
 
-[out]
+
 A pointer to a variable that receives a pointer to the specified <a href="/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbinterface">IWDFUsbInterface</a> interface for the USB device.
 
 ## -returns
@@ -136,3 +135,4 @@ For a code example of how to use the <b>RetrieveUsbInterface</b> method, see <a 
 
 
 <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_usbd_interface_information">USBD_INTERFACE_INFORMATION</a>
+

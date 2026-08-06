@@ -3,11 +3,8 @@ UID: NC:d3d12umddi.PFND3D12DDI_SIGNALSYNCHRONIZATIONOBJECT2CB
 title: PFND3D12DDI_SIGNALSYNCHRONIZATIONOBJECT2CB
 description: Inserts a signal for the specified synchronization objects in the specified context stream.
 tech.root: display
-ms.assetid: e6ad9b24-a543-4aef-a407-385d335443fe
 ms.date: 04/04/2019
 keywords: ["PFND3D12DDI_SIGNALSYNCHRONIZATIONOBJECT2CB callback function"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: d3d12umddi.h
 req.include-header: 
 req.target-type: 
@@ -38,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_SIGNALSYNCHRONIZATIONOBJECT2CB
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -57,7 +52,7 @@ Inserts a signal for the specified synchronization objects in the specified cont
 
 Handle to a device.
 
-### -param Arg2
+### -param unnamedParam2
 
 Pointer to a [D3D12DDICB_SIGNALSYNCHRONIZATIONOBJECT2](ns-d3d12umddi-d3d12ddicb_signalsynchronizationobject2.md) structure.
 

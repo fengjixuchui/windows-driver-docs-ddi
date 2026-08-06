@@ -4,7 +4,6 @@ title: IMiniportAudioEngineNode::GetDeviceChannelMute (portcls.h)
 description: Gets the state of the Mute node for the audio device channel.
 old-location: audio\iminiportaudioenginenode_getdevicechannelmute.htm
 tech.root: audio
-ms.assetid: 60CEBF40-25D3-49F0-A4BF-40440E1A3EE6
 ms.date: 05/08/2018
 keywords: ["IMiniportAudioEngineNode::GetDeviceChannelMute"]
 ms.keywords: GetDeviceChannelMute, GetDeviceChannelMute method [Audio Devices], GetDeviceChannelMute method [Audio Devices],IMiniportAudioEngineNode interface, IMiniportAudioEngineNode interface [Audio Devices],GetDeviceChannelMute method, IMiniportAudioEngineNode.GetDeviceChannelMute, IMiniportAudioEngineNode::GetDeviceChannelMute, audio.iminiportaudioenginenode_getdevicechannelmute, portcls/IMiniportAudioEngineNode::GetDeviceChannelMute
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IMiniportAudioEngineNode.GetDeviceChannelMute
+ - IMiniportAudioEngineNode::GetDeviceChannelMute
 ---
 
 # IMiniportAudioEngineNode::GetDeviceChannelMute
@@ -50,19 +49,19 @@ Gets the state of the Mute node for the audio device channel.
 
 ## -parameters
 
-### -param ulNodeId 
+### -param ulNodeId [in]
 
-[in]
+
 The ID for the node that represents the audio device.
 
-### -param ulChannel 
+### -param ulChannel [in]
 
-[in]
+
 The audio device channel.
 
-### -param pbMute 
+### -param pbMute [out]
 
-[out]
+
 The current state of the Mute node for the audio device channel.
 
 ## -returns
@@ -74,3 +73,4 @@ code.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportaudioenginenode">IMiniportAudioEngineNode</a>
+

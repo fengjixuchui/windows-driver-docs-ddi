@@ -4,7 +4,6 @@ title: _FCP_SEND_RESPONSE (61883.h)
 description: This structure is used for a send response.
 old-location: ieee\fcp_send_response.htm
 tech.root: IEEE
-ms.assetid: 65C76CA1-F7F2-4DFD-B928-0595A137BF28
 ms.date: 02/15/2018
 keywords: ["FCP_SEND_RESPONSE structure"]
 ms.keywords: "*PFCP_SEND_RESPONSE, 61883/FCP_SEND_RESPONSE, 61883/PFCP_SEND_RESPONSE, FCP_SEND_RESPONSE, FCP_SEND_RESPONSE structure [Buses], IEEE.fcp_send_response, PFCP_SEND_RESPONSE, PFCP_SEND_RESPONSE structure pointer [Buses], _FCP_SEND_RESPONSE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _FCP_SEND_RESPONSE
+ - PFCP_SEND_RESPONSE
  - FCP_SEND_RESPONSE
 ---
 
@@ -83,3 +84,4 @@ If the protocol driver is unable to allocate resources, it sets <b>Irp->IoStatus
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_av_61883_request">AV_61883_REQUEST</a>
+

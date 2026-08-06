@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_35
+UID: NS:ks.KSPIN_DESCRIPTOR
 title: KSPIN_DESCRIPTOR (ks.h)
 description: The KSPIN_DESCRIPTOR structure describes the basic KSPROPSETID_Pin properties of a pin type.
 old-location: stream\kspin_descriptor.htm
 tech.root: stream
-ms.assetid: 0e7fccd1-1ced-41e7-8e75-8f4fa496ea06
 ms.date: 04/23/2018
 keywords: ["KSPIN_DESCRIPTOR structure"]
 ms.keywords: "*PKSPIN_DESCRIPTOR, KSPIN_DESCRIPTOR, KSPIN_DESCRIPTOR structure [Streaming Media Devices], PKSPIN_DESCRIPTOR, PKSPIN_DESCRIPTOR structure pointer [Streaming Media Devices], ks-struct_adeadb36-6cf2-4c36-a1b4-a7852e98303f.xml, ks/KSPIN_DESCRIPTOR, ks/PKSPIN_DESCRIPTOR, stream.kspin_descriptor"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSPIN_DESCRIPTOR
  - KSPIN_DESCRIPTOR
 ---
 
@@ -58,7 +58,7 @@ Specifies the size of the array pointed to by <b>Interfaces</b>.
 
 ### -field Interfaces
 
-An array of <a href="/previous-versions/ff563537(v=vs.85)">KSPIN_INTERFACE</a> structures specifying the interfaces supported by this pin type.
+An array of <a href="/windows-hardware/drivers/stream/kspin-interface-structure">KSPIN_INTERFACE</a> structures specifying the interfaces supported by this pin type.
 
 ### -field MediumsCount
 
@@ -66,7 +66,7 @@ Specifies the number of elements in the array pointed to by <b>Mediums</b>.
 
 ### -field Mediums
 
-An array of <a href="/previous-versions/ff563538(v=vs.85)">KSPIN_MEDIUM</a> structures specifying the mediums supported by this pin type.
+An array of <a href="/windows-hardware/drivers/stream/kspin-medium-structure">KSPIN_MEDIUM</a> structures specifying the mediums supported by this pin type.
 
 ### -field DataRangesCount
 
@@ -114,7 +114,7 @@ Drivers typically define one KSPIN_DESCRIPTOR structure for each pin type they s
 
 
 
-<a href="/previous-versions/ff563538(v=vs.85)">KSPIN_MEDIUM</a>
+<a href="/windows-hardware/drivers/stream/kspin-medium-structure">KSPIN_MEDIUM</a>
 
 
 
@@ -127,3 +127,4 @@ Drivers typically define one KSPIN_DESCRIPTOR structure for each pin type they s
 
 
 <a href="/windows-hardware/drivers/stream/kspropsetid-pin">KSPROPSETID_Pin</a>
+

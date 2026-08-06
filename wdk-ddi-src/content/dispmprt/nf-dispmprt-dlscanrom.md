@@ -3,7 +3,6 @@ UID: NF:dispmprt.DlScanRom
 title: DlScanRom function
 description: Performs a case-sensitive search for a specified string in ROM.
 tech.root: display
-ms.assetid: 62e855f9-d066-44b6-a104-eec2c079b315
 ms.date: 04/04/2019
 keywords: ["DlScanRom function"]
 ms.keywords: DlScanRom
@@ -38,8 +37,6 @@ api_location:
  - Displib.dll
 api_name:
  - DlScanRom
-product:
- - Windows
 dev_langs:
  - c++
 ---

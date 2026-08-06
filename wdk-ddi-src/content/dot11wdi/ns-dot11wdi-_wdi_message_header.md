@@ -4,7 +4,6 @@ title: _WDI_MESSAGE_HEADER (dot11wdi.h)
 description: The WDI_MESSAGE_HEADER structure defines the WDI message header. All WDI command messages must start with this header.
 old-location: netvista\wdi_message_header.htm
 tech.root: netvista
-ms.assetid: 69c3ebf5-8805-47d0-a507-d2e3e1d1b0df
 ms.date: 05/02/2018
 keywords: ["WDI_MESSAGE_HEADER structure"]
 ms.keywords: "*PWDI_MESSAGE_HEADER, PWDI_MESSAGE_HEADER, PWDI_MESSAGE_HEADER structure pointer [Network Drivers Starting with Windows Vista], WDI_MESSAGE_HEADER, WDI_MESSAGE_HEADER structure [Network Drivers Starting with Windows Vista], _WDI_MESSAGE_HEADER, dot11wdi/PWDI_MESSAGE_HEADER, dot11wdi/WDI_MESSAGE_HEADER, netvista.wdi_message_header"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
+ - _WDI_MESSAGE_HEADER
+ - PWDI_MESSAGE_HEADER
  - WDI_MESSAGE_HEADER
 ---
 
@@ -50,8 +51,10 @@ api_name:
 
 ## -description
 
-The 
-  WDI_MESSAGE_HEADER structure defines the WDI message header. All WDI  command messages must start with this header.
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is now in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features. 
+
+The WDI_MESSAGE_HEADER structure defines the WDI message header. All WDI  command messages must start with this header.
 
 ## -struct-fields
 

@@ -4,7 +4,6 @@ title: MM_MDL_ROUTINE (wdm.h)
 description: A driver-supplied callback routine that is invoked after a memory descriptor list (MDL) is mapped by calling the MmMapMdl function.
 old-location: kernel\mm_mdl_routine.htm
 tech.root: kernel
-ms.assetid: D8D946C9-8642-4D31-B983-DAF88B46B97B
 ms.date: 04/30/2018
 keywords: ["MM_MDL_ROUTINE callback function"]
 ms.keywords: "*PMM_MDL_ROUTINE, *PMM_MDL_ROUTINE callback function [Kernel-Mode Driver Architecture], MM_MDL_ROUTINE, MM_MDL_ROUTINE callback, MmMdlRoutine, MmMdlRoutine callback function [Kernel-Mode Driver Architecture], kernel.mm_mdl_routine, wdm/MmMdlRoutine"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - PMM_MDL_ROUTINE
+ - MM_MDL_ROUTINE
 ---
 
 # MM_MDL_ROUTINE callback function
@@ -51,17 +50,18 @@ A driver-supplied callback routine that is invoked after a memory descriptor
 
 ## -parameters
 
-### -param DriverContext 
+### -param DriverContext [in, optional]
 
-[in, optional]
+
 A pointer to a driver-defined context. The driver's callback function can store any status information  in the driver context and then examine the value, when the callback is invoked.
 
-### -param MappedVa 
+### -param MappedVa [in]
 
-[in]
+
 A pointer to a buffer that contains the system virtual address of the
         mapping.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmapmdl">MmMapMdl</a>
+

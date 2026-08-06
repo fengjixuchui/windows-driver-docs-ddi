@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_CURRENTDISPLAYMODE
 title: _D3DKMT_CURRENTDISPLAYMODE (d3dkmthk.h)
 description: The D3DKMT_CURRENTDISPLAYMODE structure describes the current display mode of the specified video source.
 old-location: display\d3dkmt_currentdisplaymode.htm
-ms.assetid: 8ba027f9-3671-461c-bae6-2da0059cf0ab
 ms.date: 05/10/2018
 keywords: ["D3DKMT_CURRENTDISPLAYMODE structure"]
 ms.keywords: D3DKMT_CURRENTDISPLAYMODE, D3DKMT_CURRENTDISPLAYMODE structure [Display Devices], OpenGL_Structs_9af2b5dc-c342-4644-a3db-db9649b1fc9c.xml, _D3DKMT_CURRENTDISPLAYMODE, d3dkmthk/D3DKMT_CURRENTDISPLAYMODE, display.d3dkmt_currentdisplaymode
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_CURRENTDISPLAYMODE
  - D3DKMT_CURRENTDISPLAYMODE
 ---
 
@@ -52,13 +52,13 @@ The D3DKMT_CURRENTDISPLAYMODE structure describes the current display mode of th
 
 ## -struct-fields
 
-### -field VidPnSourceId
+### -field VidPnSourceId [in]
 
-[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the display mode applies to.
+The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the display mode applies to.
 
-### -field DisplayMode
+### -field DisplayMode [out]
 
-[out] A <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_displaymode">D3DKMT_DISPLAYMODE</a> structure that represents the current display mode.
+A <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_displaymode">D3DKMT_DISPLAYMODE</a> structure that represents the current display mode.
 
 ## -see-also
 
@@ -67,3 +67,4 @@ The D3DKMT_CURRENTDISPLAYMODE structure describes the current display mode of th
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_displaymode">D3DKMT_DISPLAYMODE</a>
+

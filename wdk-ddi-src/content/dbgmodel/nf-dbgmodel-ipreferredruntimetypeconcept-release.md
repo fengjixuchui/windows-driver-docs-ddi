@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IPreferredRuntimeTypeConcept.Release
 title: IPreferredRuntimeTypeConcept::Release (dbgmodel.h)
-description: Decrements the reference count for an interface on an object.
-ms.assetid: 0b78ff0e-e679-47e2-8e24-455437f54334
+description: "The IPreferredRuntimeTypeConcept::Release method decrements the reference count for an interface on an object."
 ms.date: 09/20/2018
 keywords: ["IPreferredRuntimeTypeConcept::Release"]
 ms.keywords: IPreferredRuntimeTypeConcept::Release, Release, IPreferredRuntimeTypeConcept.Release, IPreferredRuntimeTypeConcept::Release, IPreferredRuntimeTypeConcept.Release
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IPreferredRuntimeTypeConcept.Release
+ - IPreferredRuntimeTypeConcept::Release
 ---
 
 # IPreferredRuntimeTypeConcept::Release
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IPreferredRuntimeTypeConcept interface](nn-dbgmodel-ipreferredruntimetypeconcept.md)
+

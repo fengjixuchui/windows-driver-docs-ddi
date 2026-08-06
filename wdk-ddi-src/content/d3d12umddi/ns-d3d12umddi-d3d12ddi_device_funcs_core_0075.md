@@ -2,9 +2,7 @@
 UID: NS:d3d12umddi.D3D12DDI_DEVICE_FUNCS_CORE_0075
 title: D3D12DDI_DEVICE_FUNCS_CORE_0075
 ms.date: 03/24/2020
-ms.topic: language-reference
 targetos: Windows
-ms.assetid: 11c2b4ef-c0db-4202-9277-fe06a290b376
 tech.root: display
 description: Core device functions available in D3D12 Release 7, Build rev 5.
 req.construct-type: structure
@@ -517,7 +515,7 @@ Create sampler feedback unordered access view. See the [D3D Sampler Feedback Spe
 
 ### -field pfnCreateAmplificationShader
 
-Create amplication shader. See the [Mesh Shader Specification](https://microsoft.github.io/DirectX-Specs/d3d/MeshShader.html) for more information.
+Create amplification shader. See the [Mesh Shader Specification](https://microsoft.github.io/DirectX-Specs/d3d/MeshShader.html) for more information.
 
 ### -field pfnCreateMeshShader
 

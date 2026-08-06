@@ -4,8 +4,7 @@ title: FWPS_FIELDS_OUTBOUND_MAC_FRAME_ETHERNET_ (fwpsk.h)
 description: The FWPS_FIELDS_OUTBOUND_MAC_FRAME_ETHERNET enumeration type specifies the data field identifiers for the FWPS_LAYER_OUTBOUND_MAC_FRAME_ETHERNET run-time filtering layer.
 old-location: netvista\fwps_fields_outbound_mac_frame_802_3.htm
 tech.root: netvista
-ms.assetid: 954dc1a8-006f-4a78-bc7a-1fef4d7b4186
-ms.date: 05/02/2018
+ms.date: 02/28/2024
 keywords: ["FWPS_FIELDS_OUTBOUND_MAC_FRAME_ETHERNET_ enumeration"]
 ms.keywords: FWPS_FIELDS_OUTBOUND_MAC_FRAME_ETHERNET, FWPS_FIELDS_OUTBOUND_MAC_FRAME_ETHERNET enumeration [Network Drivers Starting with Windows Vista], FWPS_FIELDS_OUTBOUND_MAC_FRAME_ETHERNET_, FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_ETHER_TYPE, FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_FLAGS, FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_INTERFACE, FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_INTERFACE_INDEX, FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_INTERFACE_MAC_ADDRESS, FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAC_LOCAL_ADDRESS, FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAC_LOCAL_ADDRESS_TYPE, FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAC_REMOTE_ADDRESS, FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAC_REMOTE_ADDRESS_TYPE, FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAX, FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_NDIS_PORT, FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_VLAN_ID, fwpsk/FWPS_FIELDS_OUTBOUND_MAC_FRAME_ETHERNET, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_ETHER_TYPE, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_FLAGS, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_INTERFACE, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_INTERFACE_INDEX, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_INTERFACE_MAC_ADDRESS, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAC_LOCAL_ADDRESS, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAC_LOCAL_ADDRESS_TYPE, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAC_REMOTE_ADDRESS, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAC_REMOTE_ADDRESS_TYPE, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAX, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_NDIS_PORT, fwpsk/FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_VLAN_ID, netvista.fwps_fields_outbound_mac_frame_802_3, wfp_ref_5_const_3_data_fields_d53ec059-3f9a-4eef-9994-94e6923145aa.xml
 req.header: fwpsk.h
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - fwpsk.h
 api_name:
+ - FWPS_FIELDS_OUTBOUND_MAC_FRAME_ETHERNET_
  - FWPS_FIELDS_OUTBOUND_MAC_FRAME_ETHERNET
 ---
 
@@ -102,21 +102,17 @@ A bitwise OR of Layer 2 (L2) flags. For a list of filtering condition flags, see
 
 ### -field FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_COMPARTMENT_ID
 
-The compartment that the network interface belongs to.
+The compartment that the network interface belongs to. Windows supports use of compartments for network stack isolation. You can use this to enable a multi-tenant network stack with network namespaces in different compartments.
 
-<div class="alert"><b>Note</b>  Supported starting with Windows 10, version 1703.</div>
-<div> </div>
+> [!NOTE]
+> Supported starting with Windows 10, version 1703.
 
 ### -field FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_MAX
 
 The maximum value for this enumeration. This value might change in future versions of the NDIS
      header files and binaries.
 
-
-#### - FWPS_FIELD_OUTBOUND_MAC_FRAME_ETHERNET_FLAGS
-
-The outbound MAC frame IEEE 802.3 flags field.
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/fwpsk/ne-fwpsk-fwps_fields_inbound_mac_frame_ethernet_">FWPS_FIELDS_INBOUND_MAC_FRAME_ETHERNET</a>
+

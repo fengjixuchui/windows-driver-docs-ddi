@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_5
+UID: NS:ksmedia.KSDSOUND_BUFFERDESC
 title: KSDSOUND_BUFFERDESC (ksmedia.h)
 description: The KSDSOUND_BUFFERDESC structure describes a DirectSound buffer.
 old-location: audio\ksdsound_bufferdesc.htm
 tech.root: audio
-ms.assetid: 95b2f2ff-b98f-4210-9a4f-898573679aa7
 ms.date: 05/08/2018
 keywords: ["KSDSOUND_BUFFERDESC structure"]
 ms.keywords: "*PKSDSOUND_BUFFERDESC, KSDSOUND_BUFFERDESC, KSDSOUND_BUFFERDESC structure [Audio Devices], PKSDSOUND_BUFFERDESC, PKSDSOUND_BUFFERDESC structure pointer [Audio Devices], aud-prop_309ec354-b919-40c7-8751-9e0a0000f7c8.xml, audio.ksdsound_bufferdesc, ksmedia/KSDSOUND_BUFFERDESC, ksmedia/PKSDSOUND_BUFFERDESC"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSDSOUND_BUFFERDESC
  - KSDSOUND_BUFFERDESC
 ---
 
@@ -165,3 +165,4 @@ Note that the <b>WaveFormatEx</b> member of the KSDSOUND_BUFFERDESC structure ca
 
 
 <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-waveformatextensible">WAVEFORMATEXTENSIBLE</a>
+

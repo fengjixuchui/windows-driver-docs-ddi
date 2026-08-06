@@ -4,7 +4,6 @@ title: wiasDebugError function (wiamdef.h)
 description: The wiasDebugError function is obsolete.
 old-location: image\wiasdebugerror.htm
 tech.root: image
-ms.assetid: fcddc83d-5fb1-43ad-9abd-8d5e2549b580
 ms.date: 11/18/2019
 keywords: ["wiasDebugError function"]
 ms.keywords: image.wiasdebugerror, wiamdef/wiasDebugError, wiasDebugError, wiasDebugError function [Imaging Devices], wiasFncs_0ccba388-a6ca-42b9-acd5-720b6763a202.xml
@@ -60,7 +59,7 @@ The handle of calling module.
 
 ### -param pszFormat
 
-### -param param
+### -param ...
 
 ####### - pszFormat, ...
 
@@ -71,3 +70,4 @@ Specifies a variable argument list, which starts with an ANSI format string cont
 [WIAS_ERROR](./nf-wiamdef-wias_error.md)
 
 [WIAS_LERROR](./nf-wiamdef-wias_lerror.md)
+

@@ -4,7 +4,6 @@ title: IDebugAdvanced2 (dbgeng.h)
 description: IDebugAdvanced2 interface
 old-location: debugger\idebugadvanced2.htm
 tech.root: debugger
-ms.assetid: 9b5f73db-1fb8-4e07-8053-67cb5020505e
 ms.date: 05/03/2018
 keywords: ["IDebugAdvanced2 interface"]
 ms.keywords: IDebugAdvanced2, IDebugAdvanced2 interface [Windows Debugging], IDebugAdvanced2 interface [Windows Debugging],described, dbgeng/IDebugAdvanced2, debugger.idebugadvanced2
@@ -48,10 +47,8 @@ api_name:
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugAdvanced2</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugadvanced">IDebugAdvanced</a>. <b>IDebugAdvanced2</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IDebugAdvanced2</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugadvanced">IDebugAdvanced</a>. <b>IDebugAdvanced2</b> also has these types of members:
+
 
 ## -see-also
 

@@ -4,7 +4,6 @@ title: W_TCP_OFFLOAD_DISCONNECT_HANDLER (ndischimney.h)
 description: The MiniportTcpOffloadDisconnect function closes the send half of an offloaded TCP connection.
 old-location: netvista\miniporttcpoffloaddisconnect.htm
 tech.root: netvista
-ms.assetid: f8be12a9-c2c0-4a22-8a57-58c8b27ef69e
 ms.date: 05/02/2018
 keywords: ["W_TCP_OFFLOAD_DISCONNECT_HANDLER callback function"]
 ms.keywords: MiniportTcpOffloadDisconnect, MiniportTcpOffloadDisconnect callback function [Network Drivers Starting with Windows Vista], W_TCP_OFFLOAD_DISCONNECT_HANDLER, W_TCP_OFFLOAD_DISCONNECT_HANDLER callback, ndischimney/MiniportTcpOffloadDisconnect, netvista.miniporttcpoffloaddisconnect, tcp_chim_miniport_func_70f2c816-ff74-4297-9d87-50c983a03f2d.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndischimney.h
 api_name:
- - MiniportTcpOffloadDisconnect
+ - W_TCP_OFFLOAD_DISCONNECT_HANDLER
 ---
 
 # W_TCP_OFFLOAD_DISCONNECT_HANDLER callback function
@@ -56,9 +55,9 @@ The
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 The handle to an offload-target allocated context area in which the offload target maintains state
      information about this instance of the adapter. The offload target provided this handle to NDIS when it
      called 
@@ -67,24 +66,24 @@ The handle to an offload-target allocated context area in which the offload targ
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">
      MiniportInitializeEx</a> function.
 
-### -param MiniportOffloadContext 
+### -param MiniportOffloadContext [in]
 
-[in]
+
 A pointer to a memory location that contains a PVOID value. This PVOID value references the
      miniport offload context that contains the state object for the TCP connection to be disconnected. The
      offload target supplied this PVOID value when it offloaded the TCP connection state object.
 
-### -param NetBufferList 
+### -param NetBufferList [in]
 
-[in]
+
 A pointer to a single 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure. Only one 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a> structure is associated with this
+     <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure. Only one 
+     <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a> structure is associated with this
      NET_BUFFER_LIST structure.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 As one of the following values, the type of disconnect that the offload target must perform:
      
 
@@ -149,7 +148,7 @@ When
     <b>TCP_DISCONNECT_ABORTIVE_CLOSE</b>, the NET_BUFFER structure associated with the NET_BUFFER_LIST structure referenced by the 
     <i>NetBufferList</i> pointer contains no data. That is, the 
     <b>DataLength</b> member of the 
-    <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_data">NET_BUFFER_DATA</a> structure in the 
+    <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_data">NET_BUFFER_DATA</a> structure in the 
     <b>NetBufferHeader</b> of the NET_BUFFER structure is zero.
 
 <b>Graceful Disconnect</b>
@@ -216,15 +215,15 @@ The offload target must not free resources for the connection on which it has is
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a>
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_data">NET_BUFFER_DATA</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_data">NET_BUFFER_DATA</a>
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 
@@ -247,3 +246,4 @@ The offload target must not free resources for the connection on which it has is
 
 
 <a href="/windows-hardware/drivers/ddi/ndischimney/nc-ndischimney-ndis_tcp_offload_send_complete">NdisTcpOffloadSendComplete</a>
+

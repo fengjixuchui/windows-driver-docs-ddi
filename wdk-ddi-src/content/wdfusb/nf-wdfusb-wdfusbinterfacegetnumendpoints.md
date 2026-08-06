@@ -4,7 +4,6 @@ title: WdfUsbInterfaceGetNumEndpoints function (wdfusb.h)
 description: The WdfUsbInterfaceGetNumEndpoints method returns the number of endpoints that are associated with a specified alternate setting of a specified USB interface.
 old-location: wdf\wdfusbinterfacegetnumendpoints.htm
 tech.root: wdf
-ms.assetid: 6041b96e-2364-4592-9bc5-de4fb1b36957
 ms.date: 02/26/2018
 keywords: ["WdfUsbInterfaceGetNumEndpoints function"]
 ms.keywords: DFUsbRef_e0c08e93-b09f-40d0-9958-e4e51d7b887d.xml, WdfUsbInterfaceGetNumEndpoints, WdfUsbInterfaceGetNumEndpoints method, kmdf.wdfusbinterfacegetnumendpoints, wdf.wdfusbinterfacegetnumendpoints, wdfusb/WdfUsbInterfaceGetNumEndpoints
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfUsbInterfaceGetNumEndpoints</b> method returns the number of endpoints
 
 ## -parameters
 
-### -param UsbInterface 
+### -param UsbInterface [in]
 
-[in]
+
 A handle to a USB interface object that was obtained by calling <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicegetinterface">WdfUsbTargetDeviceGetInterface</a>.
 
-### -param SettingIndex 
+### -param SettingIndex [in]
 
-[in]
+
 An index value that identifies an alternate setting for the interface. For more information about alternate settings, see the USB specification.
 
 ## -returns

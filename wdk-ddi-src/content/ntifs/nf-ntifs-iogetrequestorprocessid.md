@@ -4,14 +4,13 @@ title: IoGetRequestorProcessId function (ntifs.h)
 description: The IoGetRequestorProcessId routine returns the unique 32-bit process ID for the thread that originally requested a given I/O operation.
 old-location: ifsk\iogetrequestorprocessid.htm
 tech.root: ifsk
-ms.assetid: 73fe40ee-f1fe-419b-a866-6c40604f7716
 ms.date: 04/16/2018
 keywords: ["IoGetRequestorProcessId function"]
 ms.keywords: IoGetRequestorProcessId, IoGetRequestorProcessId routine [Installable File System Drivers], ifsk.iogetrequestorprocessid, ioref_a08b37d7-b999-4e40-a0aa-c62744fee6dd.xml, ntifs/IoGetRequestorProcessId
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,9 +49,9 @@ The <b>IoGetRequestorProcessId</b> routine returns the unique 32-bit process ID 
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 A pointer to the I/O request packet (IRP) for the specified I/O operation.
 
 ## -returns
@@ -65,7 +64,7 @@ On Microsoft Windows XP and later, <b>IoGetRequestorProcessId</b> returns the pr
 
 On Microsoft Windows 2000 and earlier, <b>IoGetRequestorProcessId</b> returns the process ID for the process that created the thread. 
 
-For more information about using system threads and managing synchronization within a nonarbitrary thread context, see <a href="/windows-hardware/drivers/ddi/index">Driver Threads, Dispatcher Objects, and Resources</a>.
+For more information about using system threads and managing synchronization within a nonarbitrary thread context, see <a href="/windows-hardware/drivers/ddi/_kernel/#driver-threads-dispatcher-objects-and-resources">Driver Threads, Dispatcher Objects, and Resources</a>.
 
 ## -see-also
 

@@ -4,7 +4,6 @@ title: __MIDL___MIDL_itf_xpsrassvc_0000_0004_0001 (xpsrassvc.h)
 description: XPSRAS_BACKGROUND_COLOR specifies the background clear color to be used by an XPS rasterizer.
 old-location: print\xpsras_background_color.htm
 tech.root: print
-ms.assetid: 0B4C1BAC-173E-42E9-8805-028FE165D49D
 ms.date: 04/20/2018
 keywords: ["_MIDL___MIDL_itf_xpsrassvc_0000_0004_0001 enumeration"]
 ms.keywords: XPSRAS_BACKGROUND_COLOR, XPSRAS_BACKGROUND_COLOR enumeration [Print Devices], XPSRAS_BACKGROUND_COLOR_OPAQUE, XPSRAS_BACKGROUND_COLOR_TRANSPARENT, __MIDL___MIDL_itf_xpsrassvc_0000_0004_0001, print.xpsras_background_color, xpsrassvc/XPSRAS_BACKGROUND_COLOR, xpsrassvc/XPSRAS_BACKGROUND_COLOR_OPAQUE, xpsrassvc/XPSRAS_BACKGROUND_COLOR_TRANSPARENT
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - xpsrassvc.h
 api_name:
+ - __MIDL___MIDL_itf_xpsrassvc_0000_0004_0001
  - XPSRAS_BACKGROUND_COLOR
 ---
 
@@ -63,3 +63,4 @@ Use opaque white as clear color.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/xpsrassvc/nf-xpsrassvc-ixpsrasterizationfactory2-createrasterizer">IXpsRasterizationFactory2::CreateRasterizer</a>
+

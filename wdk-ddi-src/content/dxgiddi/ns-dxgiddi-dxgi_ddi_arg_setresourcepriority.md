@@ -4,7 +4,6 @@ title: DXGI_DDI_ARG_SETRESOURCEPRIORITY (dxgiddi.h)
 description: The DXGI_DDI_ARG_SETRESOURCEPRIORITY structure describes parameters for setting the priority level of a resource.
 old-location: display\dxgi_ddi_arg_setresourcepriority.htm
 tech.root: display
-ms.assetid: 9d3f5687-bc49-4831-bf56-5d4201ed45de
 ms.date: 05/10/2018
 keywords: ["DXGI_DDI_ARG_SETRESOURCEPRIORITY structure"]
 ms.keywords: DXGI_DDI_ARG_SETRESOURCEPRIORITY, DXGI_DDI_ARG_SETRESOURCEPRIORITY structure [Display Devices], UMDisplayDriver_Dx10param_Structs_fda8895f-9cc7-496b-ae2e-bf6b076fc0b3.xml, display.dxgi_ddi_arg_setresourcepriority, dxgiddi/DXGI_DDI_ARG_SETRESOURCEPRIORITY
@@ -50,17 +49,17 @@ The DXGI_DDI_ARG_SETRESOURCEPRIORITY structure describes parameters for setting 
 
 ## -struct-fields
 
-### -field hDevice
+### -field hDevice [in]
 
-[in] A handle to the display device (graphics context) on which the driver sets the eviction-from-memory priority for a resource. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddiarg_createdevice">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdevice">CreateDevice(D3D10)</a> function to create the display device.
+A handle to the display device (graphics context) on which the driver sets the eviction-from-memory priority for a resource. The Direct3D runtime passes this handle to the driver in the <b>hDrvDevice</b> member of the <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddiarg_createdevice">D3D10DDIARG_CREATEDEVICE</a> structure when the runtime calls the driver's <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdevice">CreateDevice(D3D10)</a> function to create the display device.
 
-### -field hResource
+### -field hResource [in]
 
-[in] A handle to the resource to set the priority level for.
+A handle to the resource to set the priority level for.
 
-### -field Priority
+### -field Priority [in]
 
-[in] The priority level to set for the resource that the <b>hResource</b> member specifies. A resource's priority level can be set anywhere in the range from 0 through 0xFFFFFFFF.
+The priority level to set for the resource that the <b>hResource</b> member specifies. A resource's priority level can be set anywhere in the range from 0 through 0xFFFFFFFF.
 
 ## -remarks
 

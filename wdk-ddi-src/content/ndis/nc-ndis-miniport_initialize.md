@@ -4,8 +4,7 @@ title: MINIPORT_INITIALIZE (ndis.h)
 description: NDIS calls a miniport driver's MiniportInitializeEx function to initialize a miniport adapter for network I/O operations.
 old-location: netvista\miniportinitializeex.htm
 tech.root: netvista
-ms.assetid: b146fa81-005b-4a6c-962d-4cb023ea790e
-ms.date: 05/02/2018
+ms.date: 07/23/2025
 keywords: ["MINIPORT_INITIALIZE callback function"]
 ms.keywords: MINIPORT_INITIALIZE, MINIPORT_INITIALIZE callback, MiniportInitializeEx, MiniportInitializeEx callback function [Network Drivers Starting with Windows Vista], miniport_functions_ref_d98605bf-4032-4cfe-8529-2d0bebc9e29e.xml, ndis/MiniportInitializeEx, netvista.miniportinitializeex
 req.header: ndis.h
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportInitializeEx
+ - MINIPORT_INITIALIZE
 ---
 
 # MINIPORT_INITIALIZE callback function
@@ -53,23 +52,23 @@ NDIS calls a miniport driver's
 
 ## -parameters
 
-### -param NdisMiniportHandle 
+### -param NdisMiniportHandle [in]
 
-[in]
+
 An NDIS-supplied handle that identifies the miniport adapter that the miniport driver should
      initialize.
 
-### -param MiniportDriverContext 
+### -param MiniportDriverContext [in]
 
-[in]
+
 A handle to a driver-allocated context area where the driver maintains state and configuration
      information. The miniport driver passed this context area to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver">
      NdisMRegisterMiniportDriver</a> function.
 
-### -param MiniportInitParameters 
+### -param MiniportInitParameters [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_init_parameters">
      NDIS_MINIPORT_INIT_PARAMETERS</a> structure that defines the initialization parameters for the
@@ -218,7 +217,7 @@ The miniport driver passes
     <i>MiniportXxx</i> functions.
 
 Miniport drivers must set the attributes in the 
-    <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes">
+    <a href="/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes">
     NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a> structure after they set the registration attributes in
     the NDIS_MINIPORT_ADAPTER_REGISTRATION_ATTRIBUTES structure and before they set any additional
     attributes.
@@ -232,8 +231,8 @@ Non-paged pool memory
 </li>
 <li>
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a> and 
-      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure pools
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a> and 
+      <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure pools
 
 </li>
 <li>
@@ -265,7 +264,7 @@ If the driver indicates receives with the
     <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismindicatereceivenetbufferlists">
     NdisMIndicateReceiveNetBufferLists</a> function, the 
     <i>MiniportInitializeEx</i> function should call the 
-    <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatenetbufferlistpool">
+    <a href="/windows-hardware/drivers/ddi/nblapi/nf-nblapi-ndisallocatenetbufferlistpool">
     NdisAllocateNetBufferListPool</a> and 
     <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatenetbufferpool">
     NdisAllocateNetBufferPool</a> functions and save the handles returned by these NDIS functions.
@@ -309,7 +308,7 @@ If driver functions, other than the
     NdisMSetMiniportAttributes</a> function before it calls any 
     <b>NdisM<i>Xxx</i></b> function, such as the 
     <a href="/windows-hardware/drivers/devtest/ndis-ndismregisterioportrange">NdisMRegisterIoPortRange</a> or 
-    <a href="/windows-hardware/drivers/devtest/ndis-ndismmapiospace">NdisMMapIoSpace</a> functions, that claims
+    [**NdisMMapIoSpace**](nf-ndis-ndismmapiospace.md) functions, that claims
     hardware resources for the miniport adapter. 
     <i>MiniportInitializeEx</i> must call 
     <b>NdisMSetMiniportAttributes</b> before it tries to allocate resources for DMA operations.
@@ -356,6 +355,8 @@ If
     <i>MiniportInitializeEx</i> returns NDIS_STATUS_SUCCESS, the driver should release all the resources for
     the miniport adapter in the 
     <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_halt">MiniportHaltEx</a> function.
+
+The driver must call **NdisMSetMiniportAttributes** and set the **GeneralAttributes** in the **NDIS_MINIPORT_ADAPTER_ATTRIBUTES** structure if it returns NDIS_STATUS_SUCCESS.
 
 If 
     <i>MiniportInitializeEx</i> failed, 
@@ -416,7 +417,7 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes">
+<a href="/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes">
    NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a>
 
 
@@ -430,11 +431,11 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer">NET_BUFFER</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer">NET_BUFFER</a>
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 
@@ -451,7 +452,7 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatenetbufferlistpool">
+<a href="/windows-hardware/drivers/ddi/nblapi/nf-nblapi-ndisallocatenetbufferlistpool">
    NdisAllocateNetBufferListPool</a>
 
 
@@ -485,7 +486,7 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 
-<a href="/windows-hardware/drivers/devtest/ndis-ndismmapiospace">NdisMMapIoSpace</a>
+[**NdisMMapIoSpace**](nf-ndis-ndismmapiospace.md)
 
 
 
@@ -548,3 +549,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex">ProtocolBindAdapterEx</a>
+

@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.IDataModelScriptTemplateEnumerator.GetNext
 title: IDataModelScriptTemplateEnumerator::GetNext (dbgmodel.h)
 description: The GetNext method moves the enumerator to the next template and returns it.
-ms.assetid: 0e713d20-12a1-457e-9638-03064773c19f
 ms.date: 08/21/2018
 keywords: ["IDataModelScriptTemplateEnumerator::GetNext"]
 ms.keywords: IDataModelScriptTemplateEnumerator::GetNext, GetNext, IDataModelScriptTemplateEnumerator.GetNext, IDataModelScriptTemplateEnumerator::GetNext, IDataModelScriptTemplateEnumerator.GetNext
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelScriptTemplateEnumerator.GetNext
+ - IDataModelScriptTemplateEnumerator::GetNext
 ---
 
 # IDataModelScriptTemplateEnumerator::GetNext

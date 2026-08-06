@@ -4,7 +4,6 @@ title: RtlLongToInt8 function (ntintsafe.h)
 description: Converts a value of type LONG to a value of type INT8.
 old-location: kernel\rtllongtoint8.htm
 tech.root: kernel
-ms.assetid: 38BE4F80-DEF2-486B-8A37-BCFD7626325D
 ms.date: 04/30/2018
 keywords: ["RtlLongToInt8 function"]
 ms.keywords: RtlLongToInt8, RtlLongToInt8 function [Kernel-Mode Driver Architecture], kernel.rtllongtoint8, ntintsafe/RtlLongToInt8
@@ -50,14 +49,14 @@ Converts a value of type <b>LONG</b> to a value of type <b>INT8</b>.
 
 ## -parameters
 
-### -param lOperand 
+### -param lOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pi8Result 
+### -param pi8Result [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

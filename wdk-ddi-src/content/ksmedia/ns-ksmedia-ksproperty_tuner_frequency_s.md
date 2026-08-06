@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_100
+UID: NS:ksmedia.KSPROPERTY_TUNER_FREQUENCY_S
 title: KSPROPERTY_TUNER_FREQUENCY_S (ksmedia.h)
 description: The KSPROPERTY_TUNER_FREQUENCY_S structure describes the frequency of a TV or radio tuner device.
 old-location: stream\ksproperty_tuner_frequency_s.htm
 tech.root: stream
-ms.assetid: 19d2c3cc-69e3-4216-9eb7-32b522fe058b
 ms.date: 04/30/2019
 keywords: ["KSPROPERTY_TUNER_FREQUENCY_S structure"]
 ms.keywords: "*PKSPROPERTY_TUNER_FREQUENCY_S, KSPROPERTY_TUNER_FREQUENCY_S, KSPROPERTY_TUNER_FREQUENCY_S structure [Streaming Media Devices], PKSPROPERTY_TUNER_FREQUENCY_S, PKSPROPERTY_TUNER_FREQUENCY_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_TUNER_FREQUENCY_S, ksmedia/PKSPROPERTY_TUNER_FREQUENCY_S, stream.ksproperty_tuner_frequency_s, vidcapstruct_7757eed6-a41b-4bcd-ad7b-05aca3b54cd0.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_TUNER_FREQUENCY_S
  - KSPROPERTY_TUNER_FREQUENCY_S
 ---
 
@@ -54,7 +54,7 @@ The KSPROPERTY_TUNER_FREQUENCY_S structure describes the frequency of a TV or ra
 
 ### -field Property
 
-Specifies an initialized <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+Specifies an initialized <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 ### -field Frequency
 
@@ -86,7 +86,7 @@ Specifies the current country code for the tuning operation. Country codes follo
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -99,3 +99,4 @@ Specifies the current country code for the tuning operation. Country codes follo
 
 
 <a href="/windows-hardware/drivers/stream/propsetid-tuner">PROPSETID_TUNER</a>
+

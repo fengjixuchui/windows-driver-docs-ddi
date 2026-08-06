@@ -4,7 +4,6 @@ title: _HDAUDIO_CODEC_COMMAND (hdaudio.h)
 description: The HDAUDIO_CODEC_COMMAND structure specifies a codec command.
 old-location: audio\hdaudio_codec_command.htm
 tech.root: audio
-ms.assetid: 803e3506-fb63-4d64-b562-1956e99f9d9b
 ms.date: 05/08/2018
 keywords: ["HDAUDIO_CODEC_COMMAND structure"]
 ms.keywords: "*PHDAUDIO_CODEC_COMMAND, HDAUDIO_CODEC_COMMAND, HDAUDIO_CODEC_COMMAND structure [Audio Devices], PHDAUDIO_CODEC_COMMAND, PHDAUDIO_CODEC_COMMAND structure pointer [Audio Devices], _HDAUDIO_CODEC_COMMAND, aud-prop2_9e7db610-d310-4285-8556-7a88567c22b6.xml, audio.hdaudio_codec_command, hdaudio/HDAUDIO_CODEC_COMMAND, hdaudio/PHDAUDIO_CODEC_COMMAND"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hdaudio.h
 api_name:
+ - _HDAUDIO_CODEC_COMMAND
+ - PHDAUDIO_CODEC_COMMAND
  - HDAUDIO_CODEC_COMMAND
 ---
 
@@ -111,3 +112,4 @@ The validity of individual members depends on the type of command sent.
 
 
 <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-ptransfer_codec_verbs">TransferCodecVerbs</a>
+

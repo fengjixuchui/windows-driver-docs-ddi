@@ -4,7 +4,6 @@ title: _BASEBAND_CHANNEL_INFO (bthddi.h)
 description: The BASEBAND_CHANNEL_INFO structure describes output information about the baseband channel that is used by a SCO link after a BRB_GET_CHANNEL_INFO BRB completes.
 old-location: bltooth\baseband_channel_info.htm
 tech.root: bltooth
-ms.assetid: c9328791-898e-48f2-acfd-30c8a36fcd29
 ms.date: 04/27/2018
 keywords: ["BASEBAND_CHANNEL_INFO structure"]
 ms.keywords: "*PBASEBAND_CHANNEL_INFO, BASEBAND_CHANNEL_INFO, BASEBAND_CHANNEL_INFO structure [Bluetooth Devices], PBASEBAND_CHANNEL_INFO, PBASEBAND_CHANNEL_INFO structure pointer [Bluetooth Devices], _BASEBAND_CHANNEL_INFO, bltooth.baseband_channel_info, bth_structs_849b4363-4e7e-4fee-b5c1-86b32431a6dd.xml, bthddi/BASEBAND_CHANNEL_INFO, bthddi/PBASEBAND_CHANNEL_INFO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - bthddi.h
 api_name:
+ - _BASEBAND_CHANNEL_INFO
+ - PBASEBAND_CHANNEL_INFO
  - BASEBAND_CHANNEL_INFO
 ---
 
@@ -101,3 +102,4 @@ Profile drivers access the BASEBAND_CHANNEL_INFO structure through the
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_get_channel_info">_BRB_SCO_GET_CHANNEL_INFO</a>
+

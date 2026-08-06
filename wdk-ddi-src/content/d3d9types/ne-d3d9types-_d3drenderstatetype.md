@@ -4,7 +4,6 @@ title: _D3DRENDERSTATETYPE (d3d9types.h)
 description: The D3DRENDERSTATETYPE enumerated type lists a variety of attributes, or render states.
 old-location: display\d3drenderstatetype.htm
 tech.root: display
-ms.assetid: 82978b22-1538-4da0-bcf2-c4c52d2e3429
 ms.date: 05/10/2018
 keywords: ["D3DRENDERSTATETYPE enumeration"]
 ms.keywords: D3DRENDERSTATETYPE, D3DRENDERSTATE_EVICTMANAGEDTEXTURES, D3DRENDERSTATE_SCENECAPTURE, D3DRS_DELETERTPATCH, D3DRS_MAXPIXELSHADERINST, D3DRS_MAXVERTEXSHADERINST, _D3DRENDERSTATETYPE, d3d9types/, d3d9types/D3DRENDERSTATE_EVICTMANAGEDTEXTURES, d3d9types/D3DRENDERSTATE_SCENECAPTURE, d3d9types/D3DRS_DELETERTPATCH, d3d9types/D3DRS_MAXPIXELSHADERINST, d3d9types/D3DRS_MAXVERTEXSHADERINST, d3denum_6b8d96f8-ff88-43c3-9850-a213d84d548f.xml, display.d3drenderstatetype, enumeration [Display Devices]
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3d9types.h
 api_name:
+ - _D3DRENDERSTATETYPE
  - D3DRENDERSTATETYPE
 ---
 
@@ -595,3 +595,4 @@ See the D3DTEXTURESTAGESTATETYPE, D3DTEXTUREOP, and D3DTEXTUREFILTER enumerated 
 Some changes have been made to the D3DRENDERSTATETYPE enumerated type for DirectX 5.0 and beyond. D3DRENDERSTATE_BLENDENABLE has been removed completely although it is defined as D3DRENDERSTATE_ALPHABLENDENABLE in the <i>d3dtypes.h</i> header file. See D3DRENDERSTATE_COLORKEYENABLE for an explanation. The 128 integer values in the interval [128, 255] are reserved for texture coordinate wrap flags. These are constructed with the D3DWRAP_U and D3DWRAP_V macros. Using a flags word preserves forward compatibility with texture coordinates of higher dimension than 2D.
 
 Multitexture macro ops and D3DRENDERSTATE_TEXTUREFACTOR override all of the per-texture stage blending controls (COLOR{OP,ARG1,ARG2} & ALPHA{OP,ARG1,ARG2}).
+

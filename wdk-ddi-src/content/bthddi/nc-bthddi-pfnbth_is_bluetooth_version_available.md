@@ -4,7 +4,6 @@ title: PFNBTH_IS_BLUETOOTH_VERSION_AVAILABLE (bthddi.h)
 description: The IsBluetoothVersionAvailable function checks whether a given Bluetooth version is supported by the operating system.
 old-location: bltooth\isbluetoothversionavailable.htm
 tech.root: bltooth
-ms.assetid: 10662237-18b4-4f37-a704-985b2db0d689
 ms.date: 04/27/2018
 keywords: ["PFNBTH_IS_BLUETOOTH_VERSION_AVAILABLE callback function"]
 ms.keywords: IsBluetoothVersionAvailable, IsBluetoothVersionAvailable callback function [Bluetooth Devices], PFNBTH_IS_BLUETOOTH_VERSION_AVAILABLE, PFNBTH_IS_BLUETOOTH_VERSION_AVAILABLE callback, bltooth.isbluetoothversionavailable, bth_funcs_34a25a87-fa07-46dc-aeaa-411009990c8b.xml, bthddi/IsBluetoothVersionAvailable
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - bthddi.h
 api_name:
- - IsBluetoothVersionAvailable
+ - PFNBTH_IS_BLUETOOTH_VERSION_AVAILABLE
 ---
 
 # PFNBTH_IS_BLUETOOTH_VERSION_AVAILABLE callback function
@@ -52,14 +51,14 @@ The
 
 ## -parameters
 
-### -param MajorVersion 
+### -param MajorVersion [in]
 
-[in]
+
 This parameter specifies the major version number of Bluetooth that is requested.
 
-### -param MinorVersion 
+### -param MinorVersion [in]
 
-[in]
+
 This parameter specifies the minor version number of Bluetooth that is requested.
 
 ## -returns

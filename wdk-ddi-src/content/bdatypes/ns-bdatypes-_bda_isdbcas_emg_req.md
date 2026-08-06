@@ -1,9 +1,8 @@
 ---
 UID: NS:bdatypes._BDA_ISDBCAS_EMG_REQ
 title: _BDA_ISDBCAS_EMG_REQ (bdatypes.h)
-description: 
-ms.assetid: 2efa8fa9-88fd-4378-b860-264be6121262
-ms.date: 10/19/2018
+description: "Learn more about: _BDA_ISDBCAS_EMG_REQ structure"
+ms.date: 11/17/2020
 keywords: ["BDA_ISDBCAS_EMG_REQ structure"]
 ms.keywords: _BDA_ISDBCAS_EMG_REQ, BDA_ISDBCAS_EMG_REQ, *PBDA_ISDBCAS_EMG_REQ,
 req.header: bdatypes.h
@@ -21,6 +20,7 @@ req.max-support:
 req.typenames: BDA_ISDBCAS_EMG_REQ, *PBDA_ISDBCAS_EMG_REQ
 targetos: Windows
 ms.custom: RS5
+tech.root: stream
 f1_keywords:
  - _BDA_ISDBCAS_EMG_REQ
  - bdatypes/_BDA_ISDBCAS_EMG_REQ
@@ -36,6 +36,8 @@ api_location:
  - bdatypes.h
 api_name:
  - _BDA_ISDBCAS_EMG_REQ
+ - PBDA_ISDBCAS_EMG_REQ
+ - BDA_ISDBCAS_EMG_REQ
 ---
 
 # _BDA_ISDBCAS_EMG_REQ structure

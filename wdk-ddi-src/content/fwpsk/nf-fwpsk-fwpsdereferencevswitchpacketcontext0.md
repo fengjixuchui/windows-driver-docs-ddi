@@ -1,10 +1,9 @@
 ---
 UID: NF:fwpsk.FwpsDereferencevSwitchPacketContext0
 title: FwpsDereferencevSwitchPacketContext0 function (fwpsk.h)
-description: This function is not supported.
+description: The FwpsDereferencevSwitchPacketContext0 function is not supported. It releases a reference acquired by the FwpsReferencevSwitchPacketContext0 function.
 old-location: netvista\fwpsdereferencevswitchpacketcontext0.htm
 tech.root: netvista
-ms.assetid: 9A315227-7305-4068-81DE-BD25F733E650
 ms.date: 05/02/2018
 keywords: ["FwpsDereferencevSwitchPacketContext0 function"]
 ms.keywords: FwpsDereferencevSwitchPacketContext0, FwpsDereferencevSwitchPacketContext0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsDereferencevSwitchPacketContext0, netvista.fwpsdereferencevswitchpacketcontext0

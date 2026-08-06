@@ -4,14 +4,13 @@ title: _FILE_PIPE_REMOTE_INFORMATION (ntifs.h)
 description: The FILE_PIPE_REMOTE_INFORMATION structure contains information about the remote end of a named pipe.
 old-location: ifsk\file_pipe_remote_information.htm
 tech.root: ifsk
-ms.assetid: e0e62227-5e84-45bd-9127-f5bbb30ba6f3
 ms.date: 04/16/2018
 keywords: ["FILE_PIPE_REMOTE_INFORMATION structure"]
 ms.keywords: "*PFILE_PIPE_REMOTE_INFORMATION, FILE_PIPE_REMOTE_INFORMATION, FILE_PIPE_REMOTE_INFORMATION structure [Installable File System Drivers], PFILE_PIPE_REMOTE_INFORMATION, PFILE_PIPE_REMOTE_INFORMATION structure pointer [Installable File System Drivers], _FILE_PIPE_REMOTE_INFORMATION, ifsk.file_pipe_remote_information, ntifs/FILE_PIPE_REMOTE_INFORMATION, ntifs/PFILE_PIPE_REMOTE_INFORMATION"
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating system.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntifs.h
 api_name:
+ - _FILE_PIPE_REMOTE_INFORMATION
+ - PFILE_PIPE_REMOTE_INFORMATION
  - FILE_PIPE_REMOTE_INFORMATION
 ---
 
@@ -67,3 +68,4 @@ The maximum size, in bytes, of data that will be collected on the client machine
 Remote information is not available for local pipes or for the server end of a remote pipe.
 
 For information about pipes, see <a href="/windows/desktop/ipc/pipes">Pipes</a>.
+

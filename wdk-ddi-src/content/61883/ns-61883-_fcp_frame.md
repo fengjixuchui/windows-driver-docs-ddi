@@ -4,7 +4,6 @@ title: _FCP_FRAME (61883.h)
 description: The FCP_FRAME structure describes a function control protocol (FCP) request.
 old-location: ieee\fcp_frame.htm
 tech.root: IEEE
-ms.assetid: 56a0e888-8048-4774-a46f-8a0beebfb9f2
 ms.date: 02/15/2018
 keywords: ["FCP_FRAME structure"]
 ms.keywords: "*PFCP_FRAME, 61883/FCP_FRAME, 61883/PFCP_FRAME, 61883_structures_760d5112-e681-4c00-b178-66aadbe95b62.xml, FCP_FRAME, FCP_FRAME structure [Buses], IEEE.fcp_frame, PFCP_FRAME, PFCP_FRAME structure pointer [Buses], _FCP_FRAME"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _FCP_FRAME
+ - PFCP_FRAME
  - FCP_FRAME
 ---
 
@@ -68,17 +69,4 @@ The FCP request for this frame.
 
 ## -see-also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536974">Av61883_GetFcpRequest</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536977">Av61883_GetFcpResponse</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536989">Av61883_SendFcpRequest</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536992">Av61883_SendFcpResponse</a>
-
+<a href="/windows-hardware/drivers/ddi/61883/ns-61883-_av_61883_request">AV_61883_REQUEST structure</a>

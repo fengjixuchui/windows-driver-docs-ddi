@@ -4,7 +4,6 @@ title: RtlEqualSid function (ntifs.h)
 description: The RtlEqualSid routine determines whether two security identifier (SID) values are equal. Two SIDs must match exactly to be considered equal.
 old-location: ifsk\rtlequalsid.htm
 tech.root: ifsk
-ms.assetid: 4976fc27-c28a-46ec-ac07-19505cda8f14
 ms.date: 04/16/2018
 keywords: ["RtlEqualSid function"]
 ms.keywords: RtlEqualSid, RtlEqualSid routine [Installable File System Drivers], ifsk.rtlequalsid, ntifs/RtlEqualSid, rtlref_bc81c0ad-e0e6-4133-a423-4f6c4c264286.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe (kernel mode); Ntdll.dll (user mode)
-req.irql: Any
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,14 +50,14 @@ The <b>RtlEqualSid</b> routine determines whether two security identifier (SID) 
 
 ## -parameters
 
-### -param Sid1 
+### -param Sid1 [in]
 
-[in]
+
 Pointer to the first SID structure to compare. Must point to a valid SID.
 
-### -param Sid2 
+### -param Sid2 [in]
 
-[in]
+
 Pointer to the second SID structure to compare. Must point to a valid SID.
 
 ## -returns
@@ -67,7 +66,7 @@ Pointer to the second SID structure to compare. Must point to a valid SID.
 
 ## -remarks
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

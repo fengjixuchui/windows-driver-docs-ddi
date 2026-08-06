@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_GETMULTISAMPLEMETHODLIST
 title: PFND3DKMT_GETMULTISAMPLEMETHODLIST (d3dkmthk.h)
 description: Pfnd3dkmtGetmultisamplemethodlist retrieves a list of multiple-sample methods that are used for an allocation.
-ms.assetid: a3421422-c620-44b7-8799-2115e8bbb6ac
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_GETMULTISAMPLEMETHODLIST callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ Pfnd3dkmtGetmultisamplemethodlist retrieves a list of multiple-sample methods th
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_GETMULTISAMPLEMETHODLIST](ns-d3dkmthk-_d3dkmt_getmultisamplemethodlist.md) structure.
 

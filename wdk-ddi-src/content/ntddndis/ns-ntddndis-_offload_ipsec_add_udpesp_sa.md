@@ -4,7 +4,6 @@ title: _OFFLOAD_IPSEC_ADD_UDPESP_SA (ntddndis.h)
 description: The OFFLOAD_IPSEC_ADD_UDPESP_SA structure contains information for each security association (SA) that a miniport driver adds for UDP-encapsulated ESP packets to a NIC.
 old-location: netvista\offload_ipsec_add_udpesp_sa.htm
 tech.root: netvista
-ms.assetid: 4d3f554f-2733-4896-827c-14e92e8034ce
 ms.date: 05/02/2018
 keywords: ["OFFLOAD_IPSEC_ADD_UDPESP_SA structure"]
 ms.keywords: "*POFFLOAD_IPSEC_ADD_UDPESP_SA, 216offload_081b17de-1f16-44c7-9888-5d0388c081d9.xml, OFFLOAD_IPSEC_ADD_UDPESP_SA, OFFLOAD_IPSEC_ADD_UDPESP_SA structure [Network Drivers Starting with Windows Vista], POFFLOAD_IPSEC_ADD_UDPESP_SA, POFFLOAD_IPSEC_ADD_UDPESP_SA structure pointer [Network Drivers Starting with Windows Vista], _OFFLOAD_IPSEC_ADD_UDPESP_SA, netvista.offload_ipsec_add_udpesp_sa, ntddndis/OFFLOAD_IPSEC_ADD_UDPESP_SA, ntddndis/POFFLOAD_IPSEC_ADD_UDPESP_SA"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _OFFLOAD_IPSEC_ADD_UDPESP_SA
+ - POFFLOAD_IPSEC_ADD_UDPESP_SA
  - OFFLOAD_IPSEC_ADD_UDPESP_SA
 ---
 
@@ -270,3 +271,4 @@ Note that the OFFLOAD_IPSEC_ADD_UDPESP_SA structure is almost identical to the
 
 
 <a href="/previous-versions/windows/embedded/gg155485(v=winembedded.80)">OID_TCP_TASK_IPSEC_DELETE_SA</a>
+

@@ -2,7 +2,6 @@
 UID: NS:ucmucsispec._UCSI_SET_UOM_COMMAND
 title: _UCSI_SET_UOM_COMMAND (ucmucsispec.h)
 description: Used in the SET_UOM command. See Table 4-18.
-ms.assetid: 45926fa9-c2ce-4949-a644-4b43b9763d73
 tech.root: usbref
 ms.date: 09/30/2018
 keywords: ["UCSI_SET_UOM_COMMAND structure"]
@@ -37,6 +36,8 @@ api_location:
  - ucmucsispec.h
 api_name:
  - _UCSI_SET_UOM_COMMAND
+ - PUCSI_SET_UOM_COMMAND
+ - UCSI_SET_UOM_COMMAND
 ---
 
 # _UCSI_SET_UOM_COMMAND structure
@@ -44,7 +45,7 @@ api_name:
 
 ## -description
 
-Used in the SET_CCOM command. See Table 4-18 in [UCSI spec version 1.1](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
+Used in the SET_CCOM command. See Table 4-18 in [UCSI spec version 1.2](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
 
 ## -struct-fields
 

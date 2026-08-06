@@ -4,7 +4,6 @@ title: IPrintCoreHelperUni::CreateGDLSnapshot (prcomoem.h)
 description: The IPrintCoreHelperUni::CreateGDLSnapshot method creates a GDL snapshot of the driver configuration file based on the current configuration.
 old-location: print\iprintcorehelperuni_creategdlsnapshot.htm
 tech.root: print
-ms.assetid: 3dd9c7f9-27d4-45d2-8692-4270818c1823
 ms.date: 04/20/2018
 keywords: ["IPrintCoreHelperUni::CreateGDLSnapshot"]
 ms.keywords: CreateGDLSnapshot, CreateGDLSnapshot method [Print Devices], CreateGDLSnapshot method [Print Devices],IPrintCoreHelperUni interface, IPrintCoreHelperUni interface [Print Devices],CreateGDLSnapshot method, IPrintCoreHelperUni.CreateGDLSnapshot, IPrintCoreHelperUni::CreateGDLSnapshot, prcomoem/IPrintCoreHelperUni::CreateGDLSnapshot, print.iprintcorehelperuni_creategdlsnapshot, print_unidrv-pscript_allplugins_c45d077d-295f-4636-829f-8595d43cd5ed.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintCoreHelperUni.CreateGDLSnapshot
+ - IPrintCoreHelperUni::CreateGDLSnapshot
 ---
 
 # IPrintCoreHelperUni::CreateGDLSnapshot
@@ -50,24 +49,24 @@ The <code>IPrintCoreHelperUni::CreateGDLSnapshot</code> method creates a GDL sna
 
 ## -parameters
 
-### -param pDevmode 
+### -param pDevmode [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/wingdi/ns-wingdi-devmodew">DEVMODEW</a> structure. If this pointer is provided, <code>IPrintCoreHelperUni::CreateGDLSnapshot</code>  should use the DEVMODEW structure that is pointed to by <i>pDevmode</i> instead of the default or current DEVMODEW structure. If this method is called from the plug-in provider, there is no default DEVMODEW structure and the <i>pDevmode</i> parameter is required.
 
-### -param cbSize 
+### -param cbSize [in]
 
-[in]
+
 The size, in bytes, of the DEVMODEW structure that is pointed to by the <i>pDevmode</i> parameter.
 
-### -param dwFlags 
+### -param dwFlags [in]
 
-[in]
+
 Reserved for system use. This parameter must be set to zero.
 
-### -param ppSnapshotStream 
+### -param ppSnapshotStream [out]
 
-[out]
+
 A pointer to a stream that supplies the XML version of the GDL snapshot.
 
 ## -returns
@@ -81,3 +80,4 @@ A pointer to a stream that supplies the XML version of the GDL snapshot.
 
 
 <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintcorehelperuni-createdefaultgdlsnapshot">IPrintCoreHelperUni::CreateDefaultGDLSnapshot</a>
+

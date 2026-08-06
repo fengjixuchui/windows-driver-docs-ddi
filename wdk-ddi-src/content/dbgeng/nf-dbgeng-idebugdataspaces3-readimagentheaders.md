@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugDataSpaces3.ReadImageNtHeaders
 title: IDebugDataSpaces3::ReadImageNtHeaders (dbgeng.h)
-description: The ReadImageNtHeaders method returns the NT headers for the specified image loaded in the target.
+description: Learn about the ReadImageNtHeaders method, which returns the NT headers for the specified image loaded in the target.
 old-location: debugger\readimagentheaders.htm
 tech.root: debugger
-ms.assetid: 2735aabf-b8b0-4eb1-89a2-4733d0b346ed
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces3::ReadImageNtHeaders"]
 ms.keywords: IDebugDataSpaces3 interface [Windows Debugging],ReadImageNtHeaders method, IDebugDataSpaces3.ReadImageNtHeaders, IDebugDataSpaces3::ReadImageNtHeaders, IDebugDataSpaces4 interface [Windows Debugging],ReadImageNtHeaders method, IDebugDataSpaces4::ReadImageNtHeaders, IDebugDataSpaces_333f4fab-a56c-43e2-92d7-59775b794e1f.xml, ReadImageNtHeaders, ReadImageNtHeaders method [Windows Debugging], ReadImageNtHeaders method [Windows Debugging],IDebugDataSpaces3 interface, ReadImageNtHeaders method [Windows Debugging],IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces3::ReadImageNtHeaders, dbgeng/IDebugDataSpaces4::ReadImageNtHeaders, debugger.readimagentheaders
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugDataSpaces3.ReadImageNtHeaders
- - IDebugDataSpaces4.ReadImageNtHeaders
+ - IDebugDataSpaces3::ReadImageNtHeaders
 ---
 
 # IDebugDataSpaces3::ReadImageNtHeaders
@@ -51,14 +49,14 @@ The <b>ReadImageNtHeaders</b> method returns the NT headers for the specified im
 
 ## -parameters
 
-### -param ImageBase 
+### -param ImageBase [in]
 
-[in]
+
 Specifies the location in the target's virtual address space of the image whose NT headers are being requested.
 
-### -param Headers 
+### -param Headers [out]
 
-[out]
+
 Receives the NT headers for the specified image.
 
 ## -returns
@@ -102,3 +100,4 @@ If the image's NT headers are 32-bit, they are automatically converted to 64-bit
 This method will not read ROM headers.
 
 IMAGE_NT_HEADERS64, IMAGE_NT_OPTIONAL_HDR32_MAGIC, and IMAGE_NT_OPTIONAL_HDR64_MAGIC appear in the Microsoft Windows SDK header file winnt.h.  IMAGE_NT_HEADERS64 is the 64-bit equivalent of IMAGE_NT_HEADERS, which is described in the Windows SDK documentation.
+

@@ -4,7 +4,6 @@ title: PoFxRegisterPlugin function (pepfx.h)
 description: The PoFxRegisterPlugin routine registers a platform extension plug-in (PEP) with the Windows power management framework (PoFx).
 old-location: kernel\pofxregisterplugin.htm
 tech.root: kernel
-ms.assetid: BB50112E-6706-419C-9686-79F0F76926C3
 ms.date: 04/30/2018
 keywords: ["PoFxRegisterPlugin function"]
 ms.keywords: PoFxRegisterPlugin, PoFxRegisterPlugin routine [Kernel-Mode Driver Architecture], kernel.pofxregisterplugin, pepfx/PoFxRegisterPlugin
@@ -51,14 +50,14 @@ The **PoFxRegisterPlugin** routine registers a platform extension plug-in (PEP) 
 
 ## -parameters
 
-### -param PepInformation 
+### -param PepInformation [in]
 
-[in]
+
 A pointer to a [PEP_INFORMATION](./ns-pepfx-_pep_information.md) structure.
 
-### -param KernelInformation 
+### -param KernelInformation [in, out]
 
-[in, out]
+
 A pointer to a [PEP_KERNEL_INFORMATION_STRUCT_V3](./ns-pepfx-_pep_kernel_information_struct_v3.md) structure.
 
 ## -returns

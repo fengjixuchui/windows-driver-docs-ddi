@@ -4,7 +4,6 @@ title: WdfInterruptSynchronize function (wdfinterrupt.h)
 description: The WdfInterruptSynchronize method executes a specified callback function at the device's DIRQL while holding an interrupt object's spin lock.
 old-location: wdf\wdfinterruptsynchronize.htm
 tech.root: wdf
-ms.assetid: b41fc37a-d41f-49ca-848f-844e049dd987
 ms.date: 02/26/2018
 keywords: ["WdfInterruptSynchronize function"]
 ms.keywords: DFInterruptObjectRef_d56eadd2-4636-43bb-b842-318243bcf192.xml, WdfInterruptSynchronize, WdfInterruptSynchronize method, kmdf.wdfinterruptsynchronize, wdf.wdfinterruptsynchronize, wdfinterrupt/WdfInterruptSynchronize
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -57,19 +56,19 @@ For passive level interrupt objects, this method executes a specified callback f
 
 ## -parameters
 
-### -param Interrupt 
+### -param Interrupt [in]
 
-[in]
+
 A handle to a framework interrupt object.
 
-### -param Callback 
+### -param Callback [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_synchronize">EvtInterruptSynchronize</a> callback function.
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 An untyped pointer to driver-supplied information that the framework passes to the <a href="/windows-hardware/drivers/ddi/wdfinterrupt/nc-wdfinterrupt-evt_wdf_interrupt_synchronize">EvtInterruptSynchronize</a> callback function.
 
 ## -returns

@@ -4,7 +4,6 @@ title: IDebugSymbols3::StartSymbolMatchWide (dbgeng.h)
 description: The StartSymbolMatchWide method initializes a search for symbols whose names match a given pattern.
 old-location: debugger\startsymbolmatchwide.htm
 tech.root: debugger
-ms.assetid: dbf8c1a3-cc59-40d7-8355-62891b5b45d2
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::StartSymbolMatchWide"]
 ms.keywords: IDebugSymbols3 interface [Windows Debugging],StartSymbolMatchWide method, IDebugSymbols3.StartSymbolMatchWide, IDebugSymbols3::StartSymbolMatchWide, StartSymbolMatchWide, StartSymbolMatchWide method [Windows Debugging], StartSymbolMatchWide method [Windows Debugging],IDebugSymbols3 interface, dbgeng/IDebugSymbols3::StartSymbolMatchWide, debugger.startsymbolmatchwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols3.StartSymbolMatchWide
+ - IDebugSymbols3::StartSymbolMatchWide
 ---
 
 # IDebugSymbols3::StartSymbolMatchWide
@@ -50,14 +49,14 @@ The <b>StartSymbolMatchWide</b> method initializes a search for symbols whose na
 
 ## -parameters
 
-### -param Pattern 
+### -param Pattern [in]
 
-[in]
+
 Specifies the pattern for which to search.  The search will return all symbols whose names match this pattern.  For details of the syntax of the pattern, see <a href="/windows-hardware/drivers/debugger/symbol-syntax-and-symbol-matching">Symbol Syntax and Symbol Matching</a> and <a href="/windows-hardware/drivers/debugger/string-wildcard-syntax">String Wildcard Syntax</a>.
 
-### -param Handle 
+### -param Handle [out]
 
-[out]
+
 Receives the handle identifying the search.  This handle can be passed to <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-getnextsymbolmatch">GetNextSymbolMatch</a> and <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-endsymbolmatch">EndSymbolMatch</a>.
 
 ## -returns
@@ -110,3 +109,4 @@ For more information about symbols, see <a href="/windows-hardware/drivers/debug
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

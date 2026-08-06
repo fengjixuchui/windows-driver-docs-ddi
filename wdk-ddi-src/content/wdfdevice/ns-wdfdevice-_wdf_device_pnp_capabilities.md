@@ -4,7 +4,6 @@ title: _WDF_DEVICE_PNP_CAPABILITIES (wdfdevice.h)
 description: The WDF_DEVICE_PNP_CAPABILITIES structure describes a device's Plug and Play capabilities.
 old-location: wdf\wdf_device_pnp_capabilities.htm
 tech.root: wdf
-ms.assetid: 0857e32e-9962-44ca-9d61-b98b09073c16
 ms.date: 02/26/2018
 keywords: ["WDF_DEVICE_PNP_CAPABILITIES structure"]
 ms.keywords: "*PWDF_DEVICE_PNP_CAPABILITIES, DFDeviceObjectGeneralRef_58325ea6-665b-4cf2-bf99-d47636013ee1.xml, PWDF_DEVICE_PNP_CAPABILITIES, PWDF_DEVICE_PNP_CAPABILITIES structure pointer, WDF_DEVICE_PNP_CAPABILITIES, WDF_DEVICE_PNP_CAPABILITIES structure, _WDF_DEVICE_PNP_CAPABILITIES, kmdf.wdf_device_pnp_capabilities, wdf.wdf_device_pnp_capabilities, wdfdevice/PWDF_DEVICE_PNP_CAPABILITIES, wdfdevice/WDF_DEVICE_PNP_CAPABILITIES"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdfdevice.h
 api_name:
+ - _WDF_DEVICE_PNP_CAPABILITIES
+ - PWDF_DEVICE_PNP_CAPABILITIES
  - WDF_DEVICE_PNP_CAPABILITIES
 ---
 
@@ -104,55 +105,16 @@ The interpretation of this number is bus-specific. If the address is unknown or 
 
 The following list describes the information that certain bus drivers store in the <b>Address</b> member for their child devices:
 
-
-
-
-
-#### 1394
-
-Does not supply an address because the addresses are volatile. Defaults to 0xFFFFFFFF. 
-
-
-
-#### EISA
-
-Slot Number (0-F).
-
-
-
-#### IDE
-
-For an IDE device, the address contains the target ID and LUN. For an IDE channel, the address is 0 if the channel is the primary channel or 1 if the channel is the secondary channel).
-
-
-
-#### ISApnp
-
-Does not supply an address. Defaults to 0xFFFFFFFF.
-
-
-
-#### PC Card (PCMCIA)
-
-The socket number (typically 0x00 or 0x40).
-
-
-
-#### PCI
-
-The device number in the high word and the function number in the low word.
-
-
-
-#### SCSI
-
-The target ID.
-
-
-
-#### USB
-
-The port number.
+| Bus | Description |
+|-----|-------------|
+| 1394 | Does not supply an address because the addresses are volatile. Defaults to 0xFFFFFFFF. |
+| EISA | Slot Number (0-F). |
+| IDE | For an IDE device, the address contains the target ID and LUN. For an IDE channel, the address is zero or one (0 = primary channel and 1 = secondary channel). |
+| ISApnp | Does not supply an address. Defaults to 0xFFFFFFFF. |
+| PC Card (PCMCIA) | The socket number (typically 0x00 or 0x40). |
+| PCI | The device number in the high word and the function number in the low word. |
+| SCSI | The target ID. |
+| USB | The port number. |
 
 ### -field UINumber
 
@@ -173,3 +135,4 @@ To initialize a WDF_DEVICE_PNP_CAPABILITIES structure, a driver should call <a h
 
 
 <a href="/windows-hardware/drivers/ddi/wdfpdo/nf-wdfpdo-wdfpdoinitassignrawdevice">WdfPdoInitAssignRawDevice</a>
+

@@ -4,14 +4,13 @@ title: CcCopyRead function (ntifs.h)
 description: The CcCopyRead routine copies data from a cached file to a user buffer.
 old-location: ifsk\cccopyread.htm
 tech.root: ifsk
-ms.assetid: ab095bc4-b896-4c8b-a778-714952fd41d4
 ms.date: 04/16/2018
 keywords: ["CcCopyRead function"]
 ms.keywords: CcCopyRead, CcCopyRead routine [Installable File System Drivers], ccref_76dde6ff-ccd7-4d90-a744-9d2c05624b00.xml, ifsk.cccopyread, ntifs/CcCopyRead
 req.header: ntifs.h
 req.include-header: Ntifs.h, FltKernel.h
 req.target-type: Universal
-req.target-min-winverclnt: Available on Microsoft Windows 2000 and later Windows operating systems.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,34 +49,34 @@ The <b>CcCopyRead</b> routine copies data from a cached file to a user buffer.
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 A pointer to a file object for the cached file from which the data is to be read.
 
-### -param FileOffset 
+### -param FileOffset [in]
 
-[in]
+
 A pointer to a variable that specifies the starting byte offset within the cached file.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The length in bytes of the data to be read.
 
-### -param Wait 
+### -param Wait [in]
 
-[in]
+
 Set to <b>TRUE</b> if the caller can be put into a wait state until all the data has been copied, <b>FALSE</b> otherwise.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 A pointer to a buffer into which the data is to be copied.
 
-### -param IoStatus 
+### -param IoStatus [out]
 
-[out]
+
 A pointer to a caller-allocated structure that receives the final completion status and information about the operation. If not all of the data is copied successfully, <i>IoStatus.Information</i> contains the actual number of bytes that were copied.
 
 ## -returns

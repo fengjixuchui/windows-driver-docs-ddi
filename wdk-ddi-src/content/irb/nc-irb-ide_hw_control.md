@@ -4,7 +4,6 @@ title: IDE_HW_CONTROL (irb.h)
 description: The IdeHwControl miniport driver routine notifies the miniport driver about Plug and Play (PnP) and power events.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\idehwcontrol.htm
 tech.root: storage
-ms.assetid: 53f85f8d-3b50-4cfe-8bdd-d41d8c057f3e
 ms.date: 03/29/2018
 keywords: ["IDE_HW_CONTROL callback function"]
 ms.keywords: IDE_HW_CONTROL, IdeHwControl, IdeHwControl routine [Storage Devices], atartns_9c868c08-5470-4940-9067-0aa8a796b191.xml, irb/IdeHwControl, storage.idehwcontrol
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - irb.h
 api_name:
- - IdeHwControl
+ - IDE_HW_CONTROL
 ---
 
 # IDE_HW_CONTROL callback function
@@ -51,19 +50,19 @@ The <i>IdeHwControl</i> miniport driver routine notifies the miniport driver abo
 
 ## -parameters
 
-### -param ChannelExtension 
+### -param ChannelExtension [in]
 
-[in]
+
 A pointer to the channel extension.
 
-### -param ControlAction 
+### -param ControlAction [in]
 
-[in]
+
 Contains an enumerator value of type <a href="/windows-hardware/drivers/ddi/irb/ne-irb-ide_control_action">IDE_CONTROL_ACTION</a> that indicates the control action to perform.
 
-### -param Parameters 
+### -param Parameters [in, out]
 
-[in, out]
+
 A pointer to a buffer that contains the parameters that are associated with the control action. This parameter can have one of the values in the following table.
 
 <table>
@@ -136,3 +135,4 @@ After vendor-defined power management is registered, the miniport driver will be
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/irb/nf-irb-ataportgetuncachedextension">AtaPortGetUncachedExtension</a>
+

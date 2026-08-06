@@ -4,7 +4,6 @@ title: _DEBUG_CREATE_PROCESS_OPTIONS (dbgeng.h)
 description: The DEBUG_CREATE_PROCESS_OPTIONS structure specifies the process creation options to use when creating a new process.
 old-location: debugger\debug_create_process_options.htm
 tech.root: debugger
-ms.assetid: b4b279c2-d44a-442d-9f1d-0ac0d2304eb8
 ms.date: 05/03/2018
 keywords: ["DEBUG_CREATE_PROCESS_OPTIONS structure"]
 ms.keywords: "*PDEBUG_CREATE_PROCESS_OPTIONS, DEBUG_CREATE_PROCESS_OPTIONS, DEBUG_CREATE_PROCESS_OPTIONS structure [Windows Debugging], PDEBUG_CREATE_PROCESS_OPTIONS, PDEBUG_CREATE_PROCESS_OPTIONS structure pointer [Windows Debugging], Structures_2dc7014a-a1c3-4d31-b754-834f5d06c482.xml, _DEBUG_CREATE_PROCESS_OPTIONS, dbgeng/DEBUG_CREATE_PROCESS_OPTIONS, dbgeng/PDEBUG_CREATE_PROCESS_OPTIONS, debugger.debug_create_process_options"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - DbgEng.h
 api_name:
+ - _DEBUG_CREATE_PROCESS_OPTIONS
+ - PDEBUG_CREATE_PROCESS_OPTIONS
  - DEBUG_CREATE_PROCESS_OPTIONS
 ---
 
@@ -131,8 +132,9 @@ Use the debugger's or process server's implicit command line to start the proces
 
 ### -field VerifierFlags
 
-The Application Verifier flags.  Only used if DEBUG_ECREATE_PROCESS_USE_VERIFIER_FLAGS is set in the <b>EngCreateFlags</b> field.  For possible values, see the <a href="/windows-hardware/drivers/debugger/application-verifier">Application Verifier</a> documentation.
+The Application Verifier flags.  Only used if DEBUG_ECREATE_PROCESS_USE_VERIFIER_FLAGS is set in the <b>EngCreateFlags</b> field.  For possible values, see the <a href="/windows-hardware/drivers/devtest/application-verifier">Application Verifier</a> documentation.
 
 ### -field Reserved
 
 Set to zero.
+

@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_RETRIEVE_SHADER_COMMENT_0003
 title: PFND3D12DDI_RETRIEVE_SHADER_COMMENT_0003 (d3d12umddi.h)
 description: Implemented by the client driver to retrieve shader comment.
-ms.assetid: 3c06c20c-915f-41c7-949d-a41038317e07
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_RETRIEVE_SHADER_COMMENT_0003 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_RETRIEVE_SHADER_COMMENT_0003
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ Implemented by the client driver to retrieve shader comment.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 A handle to a pipeline state.
 

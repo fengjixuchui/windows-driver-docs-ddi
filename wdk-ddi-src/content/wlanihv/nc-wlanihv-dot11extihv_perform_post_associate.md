@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_PERFORM_POST_ASSOCIATE
 title: DOT11EXTIHV_PERFORM_POST_ASSOCIATE (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_PERFORM_POST_ASSOCIATE callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvperformpostassociate.htm
 tech.root: netvista
-ms.assetid: a6e9af7d-4c33-4dea-92fe-e2cd8eed6697
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_PERFORM_POST_ASSOCIATE callback"]
 ms.keywords: DOT11EXTIHV_PERFORM_POST_ASSOCIATE, Dot11ExtIhvPerformPostAssociate, Dot11ExtIhvPerformPostAssociate callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_ecc5c19e-9fde-48a4-b3a7-6a1f94a20765.xml, netvista.dot11extihvperformpostassociate, wlanihv/Dot11ExtIhvPerformPostAssociate
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_PERFORM_POST_ASSOCIATE
  - wlanihv/DOT11EXTIHV_PERFORM_POST_ASSOCIATE
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtIhvPerformPostAssociate
+ - DOT11EXTIHV_PERFORM_POST_ASSOCIATE
 ---
 
 # DOT11EXTIHV_PERFORM_POST_ASSOCIATE callback
@@ -53,38 +51,38 @@ api_name:
 
 ## -parameters
 
-### -param hIhvExtAdapter 
+### -param hIhvExtAdapter [in, optional]
 
-[in, optional]
+
 The handle used by the IHV Extensions DLL to reference the wireless LAN (WLAN) adapter. This
      handle value was specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param hSecuritySessionID 
+### -param hSecuritySessionID [in, optional]
 
-[in, optional]
+
 The handle of the security session. The IHV Extensions DLL must use this handle value when it
      calls
      <a href="..\wlanihv\nc-wlanihv-dot11ext_post_associate_completion.md">
      Dot11ExtPostAssociateCompletion</a> to asynchronously complete the post-association operation.
 
-### -param pPortState 
+### -param pPortState [in]
 
-[in]
+
 A pointer to a
      <a href="..\wlclient\ns-wlclient-_dot11_port_state.md">DOT11_PORT_STATE</a> structure, which
      specifies the current port state of the security session.
 
-### -param uDot11AssocParamsBytes 
+### -param uDot11AssocParamsBytes [in]
 
-[in]
+
 The length, in bytes, of the data referenced through the
      <i>pDot11AssocParams</i> parameter.
 
-### -param pDot11AssocParams 
+### -param pDot11AssocParams [in]
 
-[in]
+
 A pointer to a
      <a href="..\windot11\ns-windot11-dot11_association_completion_parameters.md">
      DOT11_ASSOCIATION_COMPLETION_PARAMETERS</a> structure, which specifies the result of the association
@@ -167,3 +165,4 @@ For more information about the post-association operation, see
 
 <a href="/windows-hardware/drivers/network/ndis-status-dot11-association-completion">
    NDIS_STATUS_DOT11_ASSOCIATION_COMPLETION</a>
+

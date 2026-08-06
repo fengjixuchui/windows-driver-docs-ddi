@@ -4,7 +4,6 @@ title: SerCx2CustomReceiveTransactionInitializeComplete function (sercx.h)
 description: The SerCx2CustomReceiveTransactionInitializeComplete method notifies version 2 of the serial framework extension (SerCx2) that the serial controller driver has finished initializing the serial controller and associated hardware in preparation for a new custom-receive transaction.
 old-location: serports\sercx2customreceivetransactioninitializecomplete.htm
 tech.root: serports
-ms.assetid: C2D7C955-B63E-4D99-BC20-F7684C8D61F8
 ms.date: 04/23/2018
 keywords: ["SerCx2CustomReceiveTransactionInitializeComplete function"]
 ms.keywords: 2/SerCx2CustomReceiveTransactionInitializeComplete, SerCx2CustomReceiveTransactionInitializeComplete, SerCx2CustomReceiveTransactionInitializeComplete method [Serial Ports], serports.sercx2customreceivetransactioninitializecomplete
@@ -50,14 +49,14 @@ The <b>SerCx2CustomReceiveTransactionInitializeComplete</b> method notifies vers
 
 ## -parameters
 
-### -param CustomReceiveTransaction 
+### -param CustomReceiveTransaction [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2CUSTOMRECEIVETRANSACTION</a> handle to a custom-receive object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customreceivetransactioncreate">SerCx2CustomReceiveTransactionCreate</a> method to create this object.
 
-### -param InitSuccess 
+### -param InitSuccess [in]
 
-[in]
+
 Whether the initialization was successful. If <b>TRUE</b>, the initialization succeeded. If <b>FALSE</b>, the initialization failed.
 
 ## -remarks

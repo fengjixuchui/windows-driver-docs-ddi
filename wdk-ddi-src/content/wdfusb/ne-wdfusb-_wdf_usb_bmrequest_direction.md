@@ -4,7 +4,6 @@ title: _WDF_USB_BMREQUEST_DIRECTION (wdfusb.h)
 description: The WDF_USB_BMREQUEST_DIRECTION enumeration identifies the data transfer direction for a USB control transfer.
 old-location: wdf\wdf_usb_bmrequest_direction.htm
 tech.root: wdf
-ms.assetid: e39748b8-d84c-4f9e-a790-bff192a6769c
 ms.date: 02/26/2018
 keywords: ["WDF_USB_BMREQUEST_DIRECTION enumeration"]
 ms.keywords: BmRequestDeviceToHost, BmRequestHostToDevice, DFUsbRef_c758891d-14e3-4034-8e95-b896470437fd.xml, WDF_USB_BMREQUEST_DIRECTION, WDF_USB_BMREQUEST_DIRECTION enumeration, _WDF_USB_BMREQUEST_DIRECTION, kmdf.wdf_usb_bmrequest_direction, wdf.wdf_usb_bmrequest_direction, wdfusb/BmRequestDeviceToHost, wdfusb/BmRequestHostToDevice, wdfusb/WDF_USB_BMREQUEST_DIRECTION
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfusb.h
 api_name:
+ - _WDF_USB_BMREQUEST_DIRECTION
  - WDF_USB_BMREQUEST_DIRECTION
 ---
 
@@ -54,7 +54,7 @@ The <b>WDF_USB_BMREQUEST_DIRECTION</b> enumeration identifies the data transfer 
 
 ## -enum-fields
 
-### -field BmRequestHostToDevice
+### -field BmRequestHostToDevice:0
 
 The data transfer direction is from the host system to the device.
 
@@ -71,3 +71,4 @@ For more information about the data transfer direction for a USB control transfe
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_control_setup_packet">WDF_USB_CONTROL_SETUP_PACKET</a>
+

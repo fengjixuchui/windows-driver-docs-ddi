@@ -1,10 +1,9 @@
 ---
 UID: NF:engextcpp.ExtRemoteTyped.operator-assign(constDEBUG_TYPED_DATA)
 title: ExtRemoteTyped::operator= method (engextcpp.h)
-description: The ExtRemoteTyped class provides the ability to manipulate typed data on the target.
+description: The operator= method of the ExtRemoteTyped class. The ExtRemoteTyped class provides the ability to manipulate typed data on the target.
 old-location: debugger\extremotetyped.htm
 tech.root: debugger
-ms.assetid: 1f5d71a5-fa60-4819-9838-2b035ef21374
 ms.date: 08/09/2018
 keywords: ["ExtRemoteTyped::operator= method"]
 ms.keywords: ExtRemoteTyped class [Windows Debugging], described, ExtRemoteTyped::Copy, Copy, ErtIoctl, EngExtCpp_Ref_04970dac-e759-4a04-a1e0-8dab752c1418.xml, operator=, ExtRemoteTyped, ExtRemoteTyped::GetSimpleValue, ExtRemoteTyped::operator=, engextcpp/ExtRemoteTyped, debugger.extremotetyped, ExtRemoteTyped class [Windows Debugging], Clear, GetSimpleValue, ExtRemoteTyped::ErtIoctl, ExtRemoteTyped::Clear
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteTyped
+ - ExtRemoteTyped::operator=
 ---
 
 # ExtRemoteTyped::operator= method
-
 
 ## -description
 
@@ -51,6 +49,14 @@ The *operator=* method is part of the <b>ExtRemoteTyped</b> class. The <b>ExtRem
 <b>ExtRemoteTyped</b> is a subclass of <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a>.
 
 ## -parameters
+
+### -param Typed
+
+An existing <a href="/windows-hardware/drivers/ddi/engextcpp/nl-engextcpp-extremotetyped">ExtRemoteTyped</a> object that represents the data and type to be assigned to this object.
+
+## -returns
+
+<b>operator=</b>  returns the <a href="/windows-hardware/drivers/ddi/engextcpp/nl-engextcpp-extremotetyped">ExtRemoteTyped</a> object.
 
 ## -see-also
 

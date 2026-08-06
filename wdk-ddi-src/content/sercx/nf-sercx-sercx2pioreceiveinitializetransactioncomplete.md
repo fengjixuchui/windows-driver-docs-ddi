@@ -4,7 +4,6 @@ title: SerCx2PioReceiveInitializeTransactionComplete function (sercx.h)
 description: The SerCx2PioReceiveInitializeTransactionComplete method notifies version 2 of the serial framework extension (SerCx2) that the serial driver has finished initializing the serial controller hardware in preparation for a new PIO-receive transaction.
 old-location: serports\sercx2pioreceiveinitializetransactioncomplete.htm
 tech.root: serports
-ms.assetid: 66F8DA69-F4AD-45BE-A211-184E87882908
 ms.date: 04/23/2018
 keywords: ["SerCx2PioReceiveInitializeTransactionComplete function"]
 ms.keywords: 2/SerCx2PioReceiveInitializeTransactionComplete, SerCx2PioReceiveInitializeTransactionComplete, SerCx2PioReceiveInitializeTransactionComplete method [Serial Ports], serports.sercx2pioreceiveinitializetransactioncomplete
@@ -50,14 +49,14 @@ The <b>SerCx2PioReceiveInitializeTransactionComplete</b> method notifies version
 
 ## -parameters
 
-### -param PioReceive 
+### -param PioReceive [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIORECEIVE</a> handle to a PIO-receive object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2pioreceivecreate">SerCx2PioReceiveCreate</a> method to create this object.
 
-### -param InitSuccess 
+### -param InitSuccess [in]
 
-[in]
+
 Whether the initialization was successful. If <b>TRUE</b>, the initialization succeeded. If <b>FALSE</b>, the initialization failed.
 
 ## -remarks

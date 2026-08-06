@@ -1,11 +1,10 @@
 ---
 UID: NF:engextcpp.ExtRemoteTyped.GetSimpleValue
 title: ExtRemoteTyped::GetSimpleValue method (engextcpp.h)
-description: The ExtRemoteTyped class provides the ability to manipulate typed data on the target.
+description: The GetSimpleValue method of the ExtRemoteTyped class. The ExtRemoteTyped class provides the ability to manipulate typed data on the target.
 old-location: debugger\extremotetyped.htm
 tech.root: debugger
-ms.assetid: 1f5d71a5-fa60-4819-9838-2b035ef21374
-ms.date: 08/09/2018
+ms.date: 08/15/2023
 keywords: ["ExtRemoteTyped::GetSimpleValue method"]
 ms.keywords: ExtRemoteTyped class [Windows Debugging], described, ExtRemoteTyped::Copy, Copy, ErtIoctl, ExtRemoteTyped, ExtRemoteTyped::GetSimpleValue, engextcpp/ExtRemoteTyped, GetSimpleValue, debugger.extremotetyped, ExtRemoteTyped class [Windows Debugging], Clear, EngExtCpp_Ref_04970dac-e759-4a04-a1e0-8dab752c1418.xml, ExtRemoteTyped::ErtIoctl, ExtRemoteTyped::Clear
 req.header: engextcpp.hpp
@@ -38,19 +37,21 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteTyped
+ - ExtRemoteTyped::GetSimpleValue
 ---
 
 # ExtRemoteTyped::GetSimpleValue method
 
-
 ## -description
 
 The GetSimpleValue method is part of the <b>ExtRemoteTyped</b> class. The <b>ExtRemoteTyped</b> class provides the ability to manipulate typed data on the target.  An instance of this class represents a small region of memory on the target. This region is interpreted as a specific type.  This class provides methods for manipulating the memory according to the type and for accessing the object hierarchy on the target.
+
+## -parameters
+
+### -returns
 
 ## -see-also
 
 <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a>
 
 <a href="..\wdbgexts\ns-wdbgexts-_debug_typed_data.md">DEBUG_TYPED_DATA</a>
-

@@ -4,7 +4,6 @@ title: EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE (poscx.h)
 description: The EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback is called during the API claim ownership transition. The driver is expected to set the device back to a default state in this routine.
 old-location: pos\evt_pos_cx_device_ownership_change.htm
 tech.root: pos
-ms.assetid: 9587928C-6C40-4550-820A-B77968E3E16A
 ms.date: 02/23/2018
 keywords: ["EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback function"]
 ms.keywords: EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE, EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback, EvtPosCxDeviceOwnershipChange, EvtPosCxDeviceOwnershipChange callback function, pos.evt_pos_cx_device_ownership_change, poscx/EvtPosCxDeviceOwnershipChange
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: 
-req.product: Windows 10 or later.
 f1_keywords:
  - EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE
  - poscx/EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - poscx.h
 api_name:
- - EvtPosCxDeviceOwnershipChange
+ - EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE
 ---
 
 # EVT_POS_CX_DEVICE_OWNERSHIP_CHANGE callback function
@@ -52,18 +50,18 @@ The
 
 ## -parameters
 
-### -param device 
+### -param device [in]
 
-[in]
+
 A handle to a framework device object that represents the device.
 
-### -param oldOwnerFileObj 
+### -param oldOwnerFileObj [in, optional]
 
-[in, optional]
+
 The file object of the previous claim owner. This may be NULL if no previous owner.
 
-### -param newOwnerFileObj 
+### -param newOwnerFileObj [in, optional]
 
-[in, optional]
+
 The file object of the new claim owner. This may be NULL if the device was released without a pending claim request.
 

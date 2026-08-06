@@ -4,7 +4,6 @@ title: _USBFN_ATTACH_ACTION (usbfnattach.h)
 description: Defines the actions that the Universal Serial Bus (USB) function stack takes when a device is attached to a USB port.
 old-location: buses\usbfn_attach_action.htm
 tech.root: usbref
-ms.assetid: 4470EBAB-6B1F-43D3-B036-F0DD07BC8321
 ms.date: 05/07/2018
 keywords: ["USBFN_ATTACH_ACTION enumeration"]
 ms.keywords: "*PUSBFN_ATTACH_ACTION, USBFN_ATTACH_ACTION, USBFN_ATTACH_ACTION enumeration [Buses], UsbfnDetectProprietaryCharger, UsbfnIgnoreAttach, UsbfnPortDetected, UsbfnPortDetectedNoCad, UsbfnProceedWithAttach, _USBFN_ATTACH_ACTION, buses.usbfn_attach_action, usbfnattach/USBFN_ATTACH_ACTION, usbfnattach/UsbfnDetectProprietaryCharger, usbfnattach/UsbfnIgnoreAttach, usbfnattach/UsbfnPortDetected, usbfnattach/UsbfnPortDetectedNoCad, usbfnattach/UsbfnProceedWithAttach"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - usbfnattach.h
 api_name:
+ - _USBFN_ATTACH_ACTION
+ - PUSBFN_ATTACH_ACTION
  - USBFN_ATTACH_ACTION
 ---
 
@@ -79,3 +80,4 @@ The USB function stack calls the <a href="/windows-hardware/drivers/ddi/ufxpropr
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/usbfnattach/nc-usbfnattach-usbfn_get_attach_action">USBFN_GET_ATTACH_ACTION</a>
+

@@ -4,7 +4,6 @@ title: EVT_WDF_DEVICE_POWER_POLICY_STATE_CHANGE_NOTIFICATION (wdfdevice.h)
 description: A driver's EvtDevicePowerPolicyStateChange event callback function informs the driver that a device's power policy state machine is moving from one state to another.
 old-location: wdf\evtdevicepowerpolicystatechange.htm
 tech.root: wdf
-ms.assetid: 91432773-3255-4feb-a6f4-c24da4486703
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DEVICE_POWER_POLICY_STATE_CHANGE_NOTIFICATION callback function"]
 ms.keywords: DFDeviceObjectGeneralRef_e672bc5b-0c7a-4df4-8c21-d3f6aafa6fb8.xml, EVT_WDF_DEVICE_POWER_POLICY_STATE_CHANGE_NOTIFICATION, EVT_WDF_DEVICE_POWER_POLICY_STATE_CHANGE_NOTIFICATION callback, EvtDevicePowerPolicyStateChange, EvtDevicePowerPolicyStateChange callback function, kmdf.evtdevicepowerpolicystatechange, wdf.evtdevicepowerpolicystatechange, wdfdevice/EvtDevicePowerPolicyStateChange
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfdevice.h
 api_name:
- - EvtDevicePowerPolicyStateChange
+ - EVT_WDF_DEVICE_POWER_POLICY_STATE_CHANGE_NOTIFICATION
 ---
 
 # EVT_WDF_DEVICE_POWER_POLICY_STATE_CHANGE_NOTIFICATION callback function
@@ -55,14 +54,14 @@ A driver's <i>EvtDevicePowerPolicyStateChange</i> event callback function inform
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param NotificationData 
+### -param NotificationData [in]
 
-[in]
+
 A pointer to a framework-supplied <a href="/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_notification_data">WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</a> structure that identifies the state machine's old and new states.
 
 ## -remarks
@@ -80,3 +79,4 @@ If the <i>EvtDevicePowerPolicyStateChange</i> callback function calls <a href="/
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_power_state_change_notification">EvtDevicePowerStateChange</a>
+

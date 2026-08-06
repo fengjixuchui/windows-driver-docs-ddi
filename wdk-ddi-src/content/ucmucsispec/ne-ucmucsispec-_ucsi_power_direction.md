@@ -3,7 +3,6 @@ UID: NE:ucmucsispec._UCSI_POWER_DIRECTION
 title: _UCSI_POWER_DIRECTION (ucmucsispec.h)
 tech.root: usbref
 description: Used in the  GET_CONNECTOR_STATUS command. See Table 4-42, Offset 20.
-ms.assetid: 1915856c-21ec-4801-b549-acd825b23a0b
 ms.date: 09/30/2018
 keywords: ["UCSI_POWER_DIRECTION enumeration"]
 ms.keywords: _UCSI_POWER_DIRECTION, UCSI_POWER_DIRECTION,
@@ -32,6 +31,7 @@ api_location:
  - ucmucsispec.h
 api_name:
  - _UCSI_POWER_DIRECTION
+ - UCSI_POWER_DIRECTION
 ---
 
 # _UCSI_POWER_DIRECTION enumeration
@@ -39,7 +39,7 @@ api_name:
 
 ## -description
 
-Used in the  GET_CONNECTOR_STATUS command. See Table 4-42, Offset 20 in [UCSI spec version 1.1](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
+Used in the  GET_CONNECTOR_STATUS command. See Table 4-42, Offset 20 in [UCSI spec version 1.2](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
 
 ## -enum-fields
 

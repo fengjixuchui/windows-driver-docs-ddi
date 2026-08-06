@@ -4,7 +4,6 @@ title: _WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS (wdfchildlist.h)
 description: The WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS enumeration defines device status values that the framework stores in a driver's WDF_CHILD_RETRIEVE_INFO structure.
 old-location: wdf\wdf_child_list_retrieve_device_status.htm
 tech.root: wdf
-ms.assetid: 103f0c51-a7c9-4308-8ae2-d878daf0ff1c
 ms.date: 02/26/2018
 keywords: ["WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS enumeration"]
 ms.keywords: "*PWDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS, DFDeviceObjectChildListRef_e8569400-bcce-4c6a-9fe6-23244b35d361.xml, PWDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS, PWDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS enumeration pointer, WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS, WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS enumeration, WdfChildListRetrieveDeviceNoSuchDevice, WdfChildListRetrieveDeviceNotYetCreated, WdfChildListRetrieveDeviceSuccess, WdfChildListRetrieveDeviceUndefined, _WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS, kmdf.wdf_child_list_retrieve_device_status, wdf.wdf_child_list_retrieve_device_status, wdfchildlist/PWDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS, wdfchildlist/WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS, wdfchildlist/WdfChildListRetrieveDeviceNoSuchDevice, wdfchildlist/WdfChildListRetrieveDeviceNotYetCreated, wdfchildlist/WdfChildListRetrieveDeviceSuccess, wdfchildlist/WdfChildListRetrieveDeviceUndefined"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdfchildlist.h
 api_name:
+ - _WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS
+ - PWDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS
  - WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS
 ---
 
@@ -56,7 +57,7 @@ The <b>WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS</b> enumeration defines device stat
 
 ## -enum-fields
 
-### -field WdfChildListRetrieveDeviceUndefined
+### -field WdfChildListRetrieveDeviceUndefined:0
 
 ### -field WdfChildListRetrieveDeviceSuccess
 
@@ -89,3 +90,4 @@ The <b>WDF_CHILD_LIST_RETRIEVE_DEVICE_STATUS</b> enumeration is used to specify 
 
 
 <a href="/windows-hardware/drivers/ddi/wdfchildlist/nf-wdfchildlist-wdfchildlistretrievepdo">WdfChildListRetrievePdo</a>
+

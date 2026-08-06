@@ -4,7 +4,6 @@ title: IPortableDeviceValues::GetIUnknownValue (portabledevicetypes.h)
 description: Retrieves an IUnknown interface value (type VT_UNKNOWN) that is specified by a key.
 old-location: wpddk\iportabledevicevalues_getiunknownvalue.htm
 tech.root: wpd_dk
-ms.assetid: ae66a86c-bf63-4bc7-87db-9d464004519a
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::GetIUnknownValue"]
 ms.keywords: GetIUnknownValue, GetIUnknownValue method, GetIUnknownValue method,IPortableDeviceValues interface, IPortableDeviceValues interface,GetIUnknownValue method, IPortableDeviceValues.GetIUnknownValue, IPortableDeviceValues::GetIUnknownValue, IPortableDeviceValuesGetIUnknownValue, portabledevicetypes/IPortableDeviceValues::GetIUnknownValue, wpddk.iportabledevicevalues_getiunknownvalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.GetIUnknownValue
+ - IPortableDeviceValues::GetIUnknownValue
 ---
 
 # IPortableDeviceValues::GetIUnknownValue
@@ -51,14 +50,14 @@ Retrieves an <b>IUnknown</b> interface value (type VT_UNKNOWN) that is specified
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> key that specifies the item to retrieve.
 
-### -param ppValue 
+### -param ppValue [out]
 
-[out]
+
 Address of a variable that receives a pointer to the retrieved <b>IUnknown</b> interface. The caller is responsible for calling <b>Release</b> on the retrieved interface.
 
 ## -returns
@@ -116,3 +115,4 @@ None.
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-setiunknownvalue">IPortableDeviceValues::SetIUnknownValue</a>
+

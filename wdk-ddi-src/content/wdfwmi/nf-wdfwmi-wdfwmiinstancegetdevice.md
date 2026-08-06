@@ -4,7 +4,6 @@ title: WdfWmiInstanceGetDevice function (wdfwmi.h)
 description: The WdfWmiInstanceGetDevice method returns a handle to the framework device object that is associated with a specified WMI instance object.
 old-location: wdf\wdfwmiinstancegetdevice.htm
 tech.root: wdf
-ms.assetid: 4ebc90e0-328b-4830-9942-027d3f19d186
 ms.date: 02/26/2018
 keywords: ["WdfWmiInstanceGetDevice function"]
 ms.keywords: DFWMIRef_adc116bf-d2bc-41b0-8d1d-5cc90440d778.xml, WdfWmiInstanceGetDevice, WdfWmiInstanceGetDevice method, kmdf.wdfwmiinstancegetdevice, wdf.wdfwmiinstancegetdevice, wdfwmi/WdfWmiInstanceGetDevice
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,9 +52,9 @@ The <b>WdfWmiInstanceGetDevice</b> method returns a handle to the framework devi
 
 ## -parameters
 
-### -param WmiInstance 
+### -param WmiInstance [in]
 
-[in]
+
 A handle to a WMI instance object that the driver obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfwmi/nf-wdfwmi-wdfwmiinstancecreate">WdfWmiInstanceCreate</a>.
 
 ## -returns

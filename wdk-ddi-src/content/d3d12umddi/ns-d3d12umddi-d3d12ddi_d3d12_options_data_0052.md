@@ -1,8 +1,7 @@
 ---
 UID: NS:d3d12umddi.D3D12DDI_D3D12_OPTIONS_DATA_0052
 title: D3D12DDI_D3D12_OPTIONS_DATA_0052 (d3d12umddi.h)
-description: Display options data.
-ms.assetid: 79133d2b-56c0-4a44-995e-ea427efaeabe
+description: The D3D12DDI_D3D12_OPTIONS_DATA_0052 structure contains display options data used by user-mode display driver functions.
 ms.date: 10/19/2018
 keywords: ["D3D12DDI_D3D12_OPTIONS_DATA_0052 structure"]
 ms.keywords: D3D12DDI_D3D12_OPTIONS_DATA_0052, D3D12DDI_D3D12_OPTIONS_DATA_0052,

@@ -4,14 +4,13 @@ title: RtlAllocateHeap function (ntifs.h)
 description: The RtlAllocateHeap routine allocates a block of memory from a heap.
 old-location: ifsk\rtlallocateheap.htm
 tech.root: ifsk
-ms.assetid: 38f4c2b7-f9cd-42f2-b75e-725976b6b9dd
 ms.date: 11/26/2019
 keywords: ["RtlAllocateHeap function"]
 ms.keywords: RtlAllocateHeap, RtlAllocateHeap routine [Installable File System Drivers], ifsk.rtlallocateheap, ntifs/RtlAllocateHeap, rtlref_fa360ead-62c7-46c3-8d66-a73ee9e1a0bb.xml
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows XP and later.
+req.target-min-winverclnt: Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -51,14 +50,14 @@ The **RtlAllocateHeap** routine allocates a block of memory from a heap.
 
 ## -parameters
 
-### -param HeapHandle 
+### -param HeapHandle [in]
 
-[in]
+
 Handle for a private heap from which the memory will be allocated. This parameter is a handle returned from a successful call to [**RtlCreateHeap**](./nf-ntifs-rtlcreateheap.md)    .
 
-### -param Flags 
+### -param Flags [in, optional]
 
-[in, optional]
+
 Controllable aspects of heap allocation. Specifying any of these values will override the corresponding value specified when the heap was created with **RtlCreateHeap**. This parameter can be one or more of the following values.
 
 | Flag | Meaning |
@@ -67,9 +66,9 @@ Controllable aspects of heap allocation. Specifying any of these values will ove
 | HEAP_NO_SERIALIZE | Mutual exclusion will not be used while **RtlAllocateHeap** is accessing the heap. |
 | HEAP_ZERO_MEMORY | The allocated memory will be initialized to zero. Otherwise, the memory is not initialized to zero. |
 
-### -param Size 
+### -param Size [in]
 
-[in]
+
 Number of bytes to be allocated. If the heap, specified by the *HeapHandle* parameter, is a nongrowable heap, *Size* must be less than or equal to the heap's virtual memory threshold. (For more information, see the **VirtualMemoryThreshold** member of the *Parameters* parameter to [**RtlCreateHeap**](./nf-ntifs-rtlcreateheap.md).)
 
 ## -returns

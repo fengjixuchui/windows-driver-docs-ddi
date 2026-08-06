@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.IDebugHostType2.GetFunctionCallingConvention
 title: IDebugHostType2::GetFunctionCallingConvention (dbgmodel.h)
 description: The GetFunctionCallingConvention method returns the calling convention of the function.
-ms.assetid: 0719f5b4-abea-4cf9-942f-6d9da5edf4fd
 ms.date: 09/20/2018
 keywords: ["IDebugHostType2::GetFunctionCallingConvention"]
 ms.keywords: IDebugHostType2::GetFunctionCallingConvention, GetFunctionCallingConvention, IDebugHostType2.GetFunctionCallingConvention, IDebugHostType2::GetFunctionCallingConvention, IDebugHostType2.GetFunctionCallingConvention
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostType2.GetFunctionCallingConvention
+ - IDebugHostType2::GetFunctionCallingConvention
 ---
 
 # IDebugHostType2::GetFunctionCallingConvention
@@ -44,7 +43,7 @@ api_name:
 
 ## -description
 
-The GetFunctionCallingConvention method returns the calling convention of the function. Such is returned as a member of the CallingConventionKind enumeration.
+The GetFunctionCallingConvention method returns the calling convention of the function. Such is returned as a member of the [CallingConventionKind enumeration](ne-dbgmodel-callingconventionkind.md).
 
 ## -parameters
 

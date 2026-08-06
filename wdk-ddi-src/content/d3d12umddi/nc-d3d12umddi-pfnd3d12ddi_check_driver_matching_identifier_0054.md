@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_CHECK_DRIVER_MATCHING_IDENTIFIER_0054
 title: PFND3D12DDI_CHECK_DRIVER_MATCHING_IDENTIFIER_0054 (d3d12umddi.h)
 description: Checks the serialized driver identifier to see if it matches the specified device.
-ms.assetid: 241eb409-0ff3-4638-bdc3-fe655e7b1e7d
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CHECK_DRIVER_MATCHING_IDENTIFIER_0054 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CHECK_DRIVER_MATCHING_IDENTIFIER_0054
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,15 +48,15 @@ Checks the serialized driver identifier to see if it matches the specified devic
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the device.
 
-### -param Arg2
+### -param unnamedParam2
 
 Specifies the type of serialized data.
 
-### -param Arg3
+### -param unnamedParam3
 
 Pointer to a [D3D12DDI_SERIALIZED_DATA_DRIVER_MATCHING_IDENTIFIER_0054](ns-d3d12umddi-d3d12ddi_serialized_data_driver_matching_identifier_0054.md) structure.
 

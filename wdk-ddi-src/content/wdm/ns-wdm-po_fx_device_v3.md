@@ -1,9 +1,8 @@
-    ---
+---
 UID: NS:wdm._PO_FX_DEVICE_V3
 title: PO_FX_DEVICE_V3
-description: 
-tech.root: 
-ms.assetid: d3c6749b-2661-40a6-b4a7-937710bc36fe
+description: "Learn more about: PO_FX_DEVICE_V3 structure"
+tech.root: kernel
 ms.date: 08/19/2019
 keywords: ["PO_FX_DEVICE_V3 structure"]
 ms.keywords: PO_FX_DEVICE_V3, PO_FX_DEVICE_V3, *PPO_FX_DEVICE_V3, *PPO_FX_DEVICE, PO_FX_DEVICE
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _PO_FX_DEVICE_V3
+ - PPO_FX_DEVICE_V3
  - PO_FX_DEVICE_V3
-product:
- - Windows
 ---
 
 # PO_FX_DEVICE_V3 structure
@@ -65,6 +64,8 @@ Possible flag values include:
 |**PO_FX_DEVICE_FLAG_DIRECT_CHILDREN_OPTIONAL**|Allows direct child devices of this device to optionally support Directed PoFx. If not set, all direct children must support Directed PoFx for this device to fully support Directed PoFx.|
 |**PO_FX_DEVICE_FLAG_POWER_CHILDREN_OPTIONAL**|Allows power child devices of this device to optionally support Directed PoFx. If not provided, all power children must support Directed PoFx for this device to fully support Directed PoFx.|
 |**PO_FX_DEVICE_FLAG_DFX_CHILDREN_OPTIONAL**|Sets both **PO_FX_DEVICE_FLAG_DIRECT_CHILDREN_OPTIONAL** and **PO_FX_DEVICE_FLAG_POWER_CHILDREN_OPTIONAL**|
+|**PO_FX_DEVICE_FLAG_DISABLE_FAST_RESUME**|Forces PoFx to prevent the S0-IRP from being completed before the D0-IRP on resume from a system state such as Hibernate or Sleep. Mutually exclusive with **PO_FX_DEVICE_FLAG_ENABLE_FAST_RESUME**.|
+|**PO_FX_DEVICE_FLAG_ENABLE_FAST_RESUME**|Forces PoFx to allow the S0-IRP to be completed before the D0-IRP on resume from a system state such as Hibernate or Sleep. Mutually exclusive with **PO_FX_DEVICE_FLAG_ENABLE_FAST_RESUME**.|
 
 ### -field ComponentActiveConditionCallback
 
@@ -116,15 +117,17 @@ This member is the first element in an array of one or more PO_FX_COMPONENT_V2 e
 
 ## -remarks
 
-To register a device with PoFx, a driver calls the [**PoFxRegisterDevice**](./nf-wdm-pofxregisterdevice.md) routine and supplies, as a parameter, a pointer to a <b>PO_FX_DEVICE</b> structure that describes the device.  To use PoFx but not DFx, register with PoFx using either [PO_FX_DEVICE_V2 structure](./ns-wdm-_po_fx_device_v2.md) or [PO_FX_DEVICE_V3 structure]().
+To register a device with PoFx, a driver calls the [**PoFxRegisterDevice**](./nf-wdm-pofxregisterdevice.md) routine and supplies, as a parameter, a pointer to a <b>PO_FX_DEVICE</b> structure that describes the device.  To use PoFx but not DFx, register with PoFx using either [PO_FX_DEVICE_V2 structure](./ns-wdm-_po_fx_device_v2.md) or PO_FX_DEVICE_V3 structure.
 
 Each element in the <b>Components</b> array describes the power state attributes of one component in the device. Each component in the device is identified by its <b>Components</b> array index. Routines such as  <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxactivatecomponent">PoFxActivateComponent</a> and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxcompleteidlecondition">PoFxCompleteIdleCondition</a> use the array index of a component to identify the component.
 
 A device driver is not required to implement all eight callback routines. The driver can set a function pointer in the <b>PO_FX_DEVICE</b> structure to NULL if the driver does not implement the corresponding callback routine. However, certain callback routines must be implemented. Specifically, if one or more components in a device has more than one Fx state, the driver must implement <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_component_idle_state_callback">ComponentIdleStateCallback</a>, <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_component_active_condition_callback">ComponentActiveConditionCallback</a>, and <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_component_idle_condition_callback">ComponentIdleConditionCallback</a> routines. Otherwise, device registration fails and <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-pofxregisterdevice">PoFxRegisterDevice</a> returns <b>STATUS_INVALID_PARAMETER</b>.
 
+If a driver does not provide one of **PO_FX_DEVICE_FLAG_DISABLE_FAST_RESUME** or **PO_FX_DEVICE_FLAG_ENABLE_FAST_RESUME** the system will fallback to the platform's default configuration. The default configuration is **PO_FX_DEVICE_FLAG_ENABLE_FAST_RESUME** for x86/x64 platforms, and **PO_FX_DEVICE_FLAG_DISABLE_FAST_RESUME** for ARM32/ARM64 platforms. These flags are only honored for Win11 22000+ and are silently ignored for prior releases. For WDF drivers these flags can be provided using the **PoFxDeviceFlags** field of [WDF_POWER_FRAMEWORK_SETTINGS](../wdfdevice/ns-wdfdevice-_wdf_power_framework_settings.md).
+
 ## -see-also
 
-https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-the-directed-power-management-framework
+/windows-hardware/drivers/kernel/introduction-to-the-directed-power-management-framework
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_component_active_condition_callback">ComponentActiveConditionCallback</a>
 
@@ -163,3 +166,4 @@ https://docs.microsoft.com/windows-hardware/drivers/kernel/introduction-to-the-d
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_power_control_callback">PowerControlCallback</a>
+

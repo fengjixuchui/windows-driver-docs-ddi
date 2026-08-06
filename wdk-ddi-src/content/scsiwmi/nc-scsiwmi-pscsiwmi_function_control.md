@@ -4,7 +4,6 @@ title: PSCSIWMI_FUNCTION_CONTROL (scsiwmi.h)
 description: A miniport driver's HwScsiWmiFunctionControl routine is called to enable or disable notification of events.
 old-location: storage\hwscsiwmifunctioncontrol.htm
 tech.root: storage
-ms.assetid: a975e201-9015-4315-830e-4cd7cc5a3bc5
 ms.date: 03/29/2018
 keywords: ["PSCSIWMI_FUNCTION_CONTROL callback function"]
 ms.keywords: HwScsiWmiFunctionControl, HwScsiWmiFunctionControl callback function [Storage Devices], PSCSIWMI_FUNCTION_CONTROL, PSCSIWMI_FUNCTION_CONTROL callback, Scsimini_42361f5c-fc45-4883-997e-afa65bc376c4.xml, scsiwmi/HwScsiWmiFunctionControl, storage.hwscsiwmifunctioncontrol
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - scsiwmi.h
 api_name:
- - HwScsiWmiFunctionControl
+ - PSCSIWMI_FUNCTION_CONTROL
 ---
 
 # PSCSIWMI_FUNCTION_CONTROL callback function
@@ -51,29 +50,29 @@ A miniport driver's <b>HwScsiWmiFunctionControl</b> routine is called to enable 
 
 ## -parameters
 
-### -param DeviceContext 
+### -param DeviceContext [in]
 
-[in]
+
 Points to the miniport driver-defined context value passed to <a href="/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmidispatchfunction">ScsiPortWmiDispatchFunction</a>.
 
-### -param RequestContext 
+### -param RequestContext [in]
 
-[in]
+
 Points to a value containing an enumerator value of type <a href="/windows-hardware/drivers/ddi/scsiwmi/ns-scsiwmi-scsiwmi_request_context">SCSIWMI_REQUEST_CONTEXT</a> that the miniport driver passed to <a href="/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmidispatchfunction">ScsiPortWmiDispatchFunction</a>.
 
-### -param GuidIndex 
+### -param GuidIndex [in]
 
-[in]
+
 Specifies the block by its index into the list of GUIDs in the SCSI_WMILIB_CONTEXT structure that the miniport driver passed to <a href="/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmidispatchfunction">ScsiPortWmiDispatchFunction</a>.
 
-### -param Function 
+### -param Function [in]
 
-[in]
+
 Specifies <b>ScsiWmiEventControl</b> to enable or disable an event, or <b>ScsiWmiDataBlockControl</b> to enable or disable data collection for a block that was registered as expensive to collect (that is, a block for which the miniport driver set WMIREG_FLAG_EXPENSIVE in <b>Flags</b> of the SCSIWMIGUIDREGINFO structure used to register the block).
 
-### -param Enable 
+### -param Enable [in]
 
-[in]
+
 Specifies <b>TRUE</b> to enable the event or data collection, or <b>FALSE</b> to disable it.
 
 ## -returns
@@ -105,3 +104,4 @@ If the SRB is completed in the <b>HwScsiWmiFunctionControl</b> callback, then th
 
 
 <a href="/windows-hardware/drivers/ddi/scsiwmi/nf-scsiwmi-scsiportwmipostprocess">ScsiPortWmiPostProcess</a>
+

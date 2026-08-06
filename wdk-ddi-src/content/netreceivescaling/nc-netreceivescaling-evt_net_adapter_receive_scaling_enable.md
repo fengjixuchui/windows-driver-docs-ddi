@@ -1,10 +1,9 @@
 ---
 UID: NC:netreceivescaling.EVT_NET_ADAPTER_RECEIVE_SCALING_ENABLE
 title: EVT_NET_ADAPTER_RECEIVE_SCALING_ENABLE (netreceivescaling.h)
-description: The EvtNetAdapterReceiveScalingEnable callback function is implemented by the client driver to enable receive side scaling (RSS) for a network interface controller (NIC).
+description: The EVT_NET_ADAPTER_RECEIVE_SCALING_ENABLE callback function enables receive side scaling (RSS) for a network interface controller (NIC).
 tech.root: netvista
-ms.assetid: a37af139-8c98-4733-b2d2-cb0c9d67de35
-ms.date: 07/13/2018
+ms.date: 04/01/2022
 keywords: ["EVT_NET_ADAPTER_RECEIVE_SCALING_ENABLE callback function"]
 req.header: netreceivescaling.h
 req.include-header: netadaptercx.h 
@@ -12,7 +11,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.27
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -46,15 +45,15 @@ The *EvtNetAdapterReceiveScalingEnable* callback function is implemented by the 
 
 ## -parameters
 
-### -param Adapter 
+### -param Adapter [_In_]
 
 The **NETADAPTER** object the client driver obtained in a previous call to [NetAdapterCreate](../netadapter/nf-netadapter-netadaptercreate.md).
 
-### -param HashType
+### -param HashType [_In_]
 
 A [**NET_ADAPTER_RECEIVE_SCALING_HASH_TYPE**](ne-netreceivescaling-_net_adapter_receive_scaling_hash_type.md) value that specifies the type of receive side scaling (RSS) hash function that a NIC should use to compute the hash values for incoming packets.
 
-### -param ProtocolType
+### -param ProtocolType [_In_]
 
 A [**NET_ADAPTER_RECEIVE_SCALING_PROTOCOL_TYPE**](ne-netreceivescaling-_net_adapter_receive_scaling_protocol_type.md) value that specifies the portion of received network data that an RSS-capable NIC must use to calculate an RSS hash value.
 

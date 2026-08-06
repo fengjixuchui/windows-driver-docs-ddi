@@ -4,7 +4,6 @@ title: RtlLongLongToChar function (ntintsafe.h)
 description: Converts a value of type LONGLONG to a value of type CHAR.
 old-location: kernel\rtllonglongtochar.htm
 tech.root: kernel
-ms.assetid: E69889FC-11EF-4C49-A550-7C9C9FE1FDA7
 ms.date: 04/30/2018
 keywords: ["RtlLongLongToChar function"]
 ms.keywords: RtlLongLongToChar, RtlLongLongToChar function [Kernel-Mode Driver Architecture], kernel.rtllonglongtochar, ntintsafe/RtlLongLongToChar
@@ -50,14 +49,14 @@ Converts a value of type <b>LONGLONG</b> to a value of type <b>CHAR</b>.
 
 ## -parameters
 
-### -param llOperand 
+### -param llOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pch 
+### -param pch [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

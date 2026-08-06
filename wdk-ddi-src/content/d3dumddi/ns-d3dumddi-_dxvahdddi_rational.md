@@ -4,7 +4,6 @@ title: _DXVAHDDDI_RATIONAL (d3dumddi.h)
 description: The DXVAHDDDI_RATIONAL structure describes a fractional value that represents the vertical and horizontal frequencies of a video mode (that is, vertical sync and horizontal sync).
 old-location: display\dxvahdddi_rational.htm
 tech.root: display
-ms.assetid: 4560fb48-24c3-4beb-acc3-b8d2ed3a81d3
 ms.date: 05/10/2018
 keywords: ["DXVAHDDDI_RATIONAL structure"]
 ms.keywords: DXVA2_Structs_9e1313ee-e48b-4e3d-9f13-40af1babef82.xml, DXVAHDDDI_RATIONAL, DXVAHDDDI_RATIONAL structure [Display Devices], _DXVAHDDDI_RATIONAL, d3dumddi/DXVAHDDDI_RATIONAL, display.dxvahdddi_rational
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVAHDDDI_RATIONAL
  - DXVAHDDDI_RATIONAL
 ---
 
@@ -52,13 +52,13 @@ The DXVAHDDDI_RATIONAL structure describes a fractional value that represents th
 
 ## -struct-fields
 
-### -field Numerator
+### -field Numerator [in]
 
-[in] The numerator of the frequency fraction.
+The numerator of the frequency fraction.
 
-### -field Denominator
+### -field Denominator [in]
 
-[in] The denominator of the frequency fraction.
+The denominator of the frequency fraction.
 
 ## -remarks
 

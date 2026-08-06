@@ -4,7 +4,6 @@ title: _UCX_ENDPOINT_CHARACTERISTIC_PRIORITY (ucxendpoint.h)
 description: Indicates the priority of endpoints.
 old-location: buses\ucx_endpoint_characteristic_priority.htm
 tech.root: usbref
-ms.assetid: 43031BE8-B94A-4B22-B9E2-CBF59A31F3A2
 ms.date: 05/07/2018
 keywords: ["UCX_ENDPOINT_CHARACTERISTIC_PRIORITY enumeration"]
 ms.keywords: UCX_CONTROLLER_ENDPOINT_CHARACTERISTIC_PRIORITY, UCX_CONTROLLER_ENDPOINT_CHARACTERISTIC_PRIORITY enumeration [Buses], UCX_ENDPOINT_CHARACTERISTIC_PRIORITY_BULK_INTERACTIVE, UCX_ENDPOINT_CHARACTERISTIC_PRIORITY_BULK_VIDEO, UCX_ENDPOINT_CHARACTERISTIC_PRIORITY_BULK_VOICE, UCX_ENDPOINT_CHARACTERISTIC_PRIORITY_NONE, _UCX_ENDPOINT_CHARACTERISTIC_PRIORITY, buses.ucx_endpoint_characteristic_priority, ucxendpoint/UCX_CONTROLLER_ENDPOINT_CHARACTERISTIC_PRIORITY, ucxendpoint/UCX_ENDPOINT_CHARACTERISTIC_PRIORITY_BULK_INTERACTIVE, ucxendpoint/UCX_ENDPOINT_CHARACTERISTIC_PRIORITY_BULK_VIDEO, ucxendpoint/UCX_ENDPOINT_CHARACTERISTIC_PRIORITY_BULK_VOICE, ucxendpoint/UCX_ENDPOINT_CHARACTERISTIC_PRIORITY_NONE
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Ucxendpoint.h
 api_name:
+ - _UCX_ENDPOINT_CHARACTERISTIC_PRIORITY
  - UCX_CONTROLLER_ENDPOINT_CHARACTERISTIC_PRIORITY
 ---
 
@@ -71,3 +71,4 @@ Bulk endpoint with interactive has the priority.
 ## -see-also
 
 <a href="/windows-hardware/drivers/usbcon/usb-client-drivers-for-ma-usb">USB client drivers for Media-Agnostic (MA-USB)</a>
+

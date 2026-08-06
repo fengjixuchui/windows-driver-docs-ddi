@@ -4,7 +4,6 @@ title: _NDIS_NDK_PROVIDER_CHARACTERISTICS (ndisndk.h)
 description: The NDIS_NDK_PROVIDER_CHARACTERISTICS structure specifies NDK provider characteristics.
 old-location: netvista\ndis_ndk_provider_characteristics.htm
 tech.root: netvista
-ms.assetid: 40F07AC8-80F7-4DBC-BDC9-236530B011D4
 ms.date: 05/02/2018
 keywords: ["NDIS_NDK_PROVIDER_CHARACTERISTICS structure"]
 ms.keywords: "*PNDIS_NDK_PROVIDER_CHARACTERISTICS, NDIS_NDK_PROVIDER_CHARACTERISTICS, NDIS_NDK_PROVIDER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], PNDIS_NDK_PROVIDER_CHARACTERISTICS, PNDIS_NDK_PROVIDER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_NDK_PROVIDER_CHARACTERISTICS, ndisndk/NDIS_NDK_PROVIDER_CHARACTERISTICS, ndisndk/PNDIS_NDK_PROVIDER_CHARACTERISTICS, netvista.ndis_ndk_provider_characteristics"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndisndk.h
 api_name:
+ - _NDIS_NDK_PROVIDER_CHARACTERISTICS
+ - PNDIS_NDK_PROVIDER_CHARACTERISTICS
  - NDIS_NDK_PROVIDER_CHARACTERISTICS
 ---
 
@@ -57,7 +58,7 @@ The <b>NDIS_NDK_PROVIDER_CHARACTERISTICS</b> structure specifies NDK provider ch
 ### -field Header
 
 An 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure that describes this
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure that describes this
      <b>NDIS_NDK_PROVIDER_CHARACTERISTICS</b> structure. NDIS sets the members of the <b>NDIS_OBJECT_HEADER</b> structure as follows:
 
 <ul>
@@ -88,7 +89,7 @@ To specify entry points for NDK services and other NDK provider characteristics,
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -97,3 +98,4 @@ To specify entry points for NDK services and other NDK provider characteristics,
 
 
 <a href="/windows-hardware/drivers/ddi/ndisndk/nc-ndisndk-open_ndk_adapter_handler">OPEN_NDK_ADAPTER_HANDLER</a>
+

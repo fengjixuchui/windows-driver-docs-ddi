@@ -3,7 +3,6 @@ UID: NF:portcls.IDmaChannelSlave.Start
 title: IDmaChannelSlave::Start (portcls.h)
 description: The Start method starts a subordinate DMA object.
 tech.root: audio
-ms.assetid: 35bad0d6-f3ce-48c8-8bf2-f25707378dec
 ms.date: 10/30/2018
 keywords: ["IDmaChannelSlave::Start"]
 ms.keywords: IDmaChannelSlave::Start, Start, IDmaChannelSlave.Start, IDmaChannelSlave::Start, IDmaChannelSlave.Start
@@ -35,9 +34,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IDmaChannelSlave.Start
-product:
- - Windows
+ - IDmaChannelSlave::Start
 ---
 
 # IDmaChannelSlave::Start

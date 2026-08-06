@@ -4,7 +4,6 @@ title: CcPinMappedData function (ntifs.h)
 description: The CcPinMappedData routine pins the specified byte range of a cached file.
 old-location: ifsk\ccpinmappeddata.htm
 tech.root: ifsk
-ms.assetid: aa0903db-fced-4af9-bfc9-2769ed4962a1
 ms.date: 04/18/2018
 keywords: ["CcPinMappedData function"]
 ms.keywords: CcPinMappedData, CcPinMappedData routine [Installable File System Drivers], ccref_3935eee3-9906-4110-812f-ca186953cfbf.xml, ifsk.ccpinmappeddata, ntifs/CcPinMappedData
@@ -50,24 +49,24 @@ The <b>CcPinMappedData</b> routine pins the specified byte range of a cached fil
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to a file object for the cached file in which a range of data is to be pinned.
 
-### -param FileOffset 
+### -param FileOffset [in]
 
-[in]
+
 Pointer to a variable that specifies the starting byte offset within the cached file where the desired data resides.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Length in bytes of the data to be pinned.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Bitmask of flags specifying how the pinning operation is to be performed. ORed combination of one or more of the following values: 
 
 <table>
@@ -117,9 +116,9 @@ The data is to be pinned only if a BCB already exists. Otherwise, the pin fails 
 </tr>
 </table>
 
-### -param Bcb 
+### -param Bcb [in, out]
 
-[in, out]
+
 On the first call this returns a pointer to a buffer control block (BCB). This pointer must be supplied as input on all subsequent calls for this buffer.
 
 ## -returns

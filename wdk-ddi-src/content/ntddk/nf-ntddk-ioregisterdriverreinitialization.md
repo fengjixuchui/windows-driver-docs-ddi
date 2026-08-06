@@ -4,7 +4,6 @@ title: IoRegisterDriverReinitialization function (ntddk.h)
 description: The IoRegisterDriverReinitialization routine is called by a driver during its initialization or reinitialization to register its Reinitialize routine to be called again before the driver's and, possibly the system's, initialization is complete.
 old-location: kernel\ioregisterdriverreinitialization.htm
 tech.root: kernel
-ms.assetid: bdee26f9-e108-4753-b2e5-a1427212bce9
 ms.date: 04/30/2018
 keywords: ["IoRegisterDriverReinitialization function"]
 ms.keywords: IoRegisterDriverReinitialization, IoRegisterDriverReinitialization routine [Kernel-Mode Driver Architecture], k104_998f1835-132c-49f3-886d-6d78dee35b9d.xml, kernel.ioregisterdriverreinitialization, ntddk/IoRegisterDriverReinitialization
@@ -50,19 +49,19 @@ The <b>IoRegisterDriverReinitialization</b> routine is called by a driver during
 
 ## -parameters
 
-### -param DriverObject 
+### -param DriverObject [in]
 
-[in]
+
 Pointer to the driver object that was input to the <a href="/windows-hardware/drivers/storage/driverentry-of-ide-controller-minidriver">DriverEntry</a> routine.
 
-### -param DriverReinitializationRoutine 
+### -param DriverReinitializationRoutine [in]
 
-[in]
+
 Pointer to the driver's <a href="/windows-hardware/drivers/ddi/ntddk/nc-ntddk-driver_reinitialize">Reinitialize</a> routine.
 
-### -param Context 
+### -param Context [in, optional]
 
-[in, optional]
+
 Pointer to the context to be passed to the driver's <i>Reinitialize</i> routine.
 
 ## -remarks

@@ -4,14 +4,13 @@ title: CcMdlWriteAbort function (ntifs.h)
 description: The CcMdlWriteAbort routine frees memory descriptor lists (MDL) created by an earlier call to CcPrepareMdlWrite.
 old-location: ifsk\ccmdlwriteabort.htm
 tech.root: ifsk
-ms.assetid: 32b6fc14-dbaa-41d7-a1a7-a805b9a8795a
 ms.date: 04/16/2018
 keywords: ["CcMdlWriteAbort function"]
 ms.keywords: CcMdlWriteAbort, CcMdlWriteAbort routine [Installable File System Drivers], ccref_517f25ce-d707-4611-af24-c66010b0d89e.xml, ifsk.ccmdlwriteabort, ntifs/CcMdlWriteAbort
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available on Microsoft Windows XP and later.
+req.target-min-winverclnt: Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,14 +49,14 @@ The <b>CcMdlWriteAbort</b> routine frees memory descriptor lists (MDL) created b
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 File object pointer that was passed to <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccpreparemdlwrite">CcPrepareMdlWrite</a>.
 
-### -param MdlChain 
+### -param MdlChain [in]
 
-[in]
+
 Address of the MDL chain returned by <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccpreparemdlwrite">CcPrepareMdlWrite</a>.
 
 ## -remarks

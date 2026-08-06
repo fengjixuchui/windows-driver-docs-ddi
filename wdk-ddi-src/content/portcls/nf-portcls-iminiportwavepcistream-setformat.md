@@ -1,10 +1,9 @@
 ---
 UID: NF:portcls.IMiniportWavePciStream.SetFormat
 title: IMiniportWavePciStream::SetFormat (portcls.h)
-description: The SetFormat method sets the KS data format of the wave stream.
+description: Learn how the SetFormat method sets the KS data format of the wave stream.
 old-location: audio\iminiportwavepcistream_setformat.htm
 tech.root: audio
-ms.assetid: c8dfa58d-f38b-4ef1-9607-575191d8ddea
 ms.date: 05/08/2018
 keywords: ["IMiniportWavePciStream::SetFormat"]
 ms.keywords: IMiniportWavePciStream interface [Audio Devices],SetFormat method, IMiniportWavePciStream.SetFormat, IMiniportWavePciStream::SetFormat, SetFormat, SetFormat method [Audio Devices], SetFormat method [Audio Devices],IMiniportWavePciStream interface, audio.iminiportwavepcistream_setformat, audmp-routines_7b5ce806-912e-4c30-9f3e-4a2b31a12864.xml, portcls/IMiniportWavePciStream::SetFormat
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWavePciStream.SetFormat
+ - IMiniportWavePciStream::SetFormat
 ---
 
 # IMiniportWavePciStream::SetFormat
@@ -50,9 +49,9 @@ The <code>SetFormat</code> method sets the KS data format of the wave stream.
 
 ## -parameters
 
-### -param DataFormat 
+### -param DataFormat [in]
 
-[in]
+
 Pointer to <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat">KSDATAFORMAT</a> structure that describes the new format of the stream.
 
 ## -returns
@@ -76,3 +75,4 @@ For information about specifying wave stream formats, see <a href="/windows-hard
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat">KSDATAFORMAT</a>
+

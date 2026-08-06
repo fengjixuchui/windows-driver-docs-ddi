@@ -3,7 +3,6 @@ UID: NS:d3d10umddi.D3D11DDIARG_BUFFER_RENDERTARGETVIEW
 title: D3D11DDIARG_BUFFER_RENDERTARGETVIEW (d3d10umddi.h)
 description: The D3D11DDIARG_BUFFER_RENDERTARGETVIEW structure describes a buffer that is used to create a render target view in a call to the CreateRenderTargetView function.
 old-location: display\d3d11ddiarg_buffer_rendertargetview.htm
-ms.assetid: 1c89b4bd-7473-4da6-afbe-4103f3f3d7be
 ms.date: 05/10/2018
 keywords: ["D3D11DDIARG_BUFFER_RENDERTARGETVIEW structure"]
 ms.keywords: D3D11DDIARG_BUFFER_RENDERTARGETVIEW, D3D11DDIARG_BUFFER_RENDERTARGETVIEW structure [Display Devices], UMDisplayDriver_Dx11param_Structs_1e10bcbc-ad5c-47b4-a36d-d1d471e38a7e.xml, d3d10umddi/D3D11DDIARG_BUFFER_RENDERTARGETVIEW, display.d3d11ddiarg_buffer_rendertargetview
@@ -50,21 +49,21 @@ The D3D11DDIARG_BUFFER_RENDERTARGETVIEW structure describes a buffer that is use
 
 ## -struct-fields
 
-### -field FirstElement
+### -field FirstElement [in]
 
-[in] The offset, in bytes, to the first element in the buffer.
+The offset, in bytes, to the first element in the buffer.
 
-### -field ElementOffset
+### -field ElementOffset [in]
 
-[in] The offset, in bytes, to the first element in the buffer.
+The offset, in bytes, to the first element in the buffer.
 
-### -field NumElements
+### -field NumElements [in]
 
-[in] The number of elements in the buffer.
+The number of elements in the buffer.
 
-### -field ElementWidth
+### -field ElementWidth [in]
 
-[in] The width, in elements, in the buffer.
+The width, in elements, in the buffer.
 
 ## -see-also
 

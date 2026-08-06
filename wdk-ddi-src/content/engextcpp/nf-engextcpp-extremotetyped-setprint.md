@@ -4,7 +4,6 @@ title: ExtRemoteTyped::SetPrint (engextcpp.h)
 description: The SetPrint method sets the typed data represented by the ExtRemoteTyped object by formatting an expression and then evaluating that expression.
 old-location: debugger\extremotetyped_setprint.htm
 tech.root: debugger
-ms.assetid: ae478779-8ec1-4a50-a37c-3017aca2c912
 ms.date: 05/03/2018
 keywords: ["ExtRemoteTyped::SetPrint"]
 ms.keywords: EngExtCpp_Ref_5987e1b0-7415-4004-b949-76b3edc02d9a.xml, ExtRemoteTyped interface [Windows Debugging],SetPrint method, ExtRemoteTyped.SetPrint, ExtRemoteTyped::SetPrint, SetPrint, SetPrint method [Windows Debugging], SetPrint method [Windows Debugging],ExtRemoteTyped interface, debugger.extremotetyped_setprint
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteTyped.SetPrint
+ - ExtRemoteTyped::SetPrint
 ---
 
 # ExtRemoteTyped::SetPrint
@@ -50,17 +49,15 @@ The <b>SetPrint</b> method sets the typed data represented by the <a href="/wind
 
 ## -parameters
 
-### -param Format 
+### -param Format [in]
 
-[in]
+
 The format string used to create the expression.  This is the same as the format string used by the C <b>printf</b> function.
 
 <div class="alert"><b>Note</b>   While other methods and functions in the debugger engine API provide additional, debugger-specific conversion characters, <b>SetPrint</b> only supports the conversion characters used by <b>printf</b>.</div>
 <div> </div>
 
-### -param param
-
-####### - ...
+### -param ...
 
 The arguments for the format string, as in <b>printf</b>.  The arguments should match the conversion characters in <i>Format</i>.
 
@@ -87,3 +84,4 @@ This method does not return a value.
 
 
 <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotetyped-set(pcstr)">ExtRemoteTyped::Set(pcstr)</a>
+

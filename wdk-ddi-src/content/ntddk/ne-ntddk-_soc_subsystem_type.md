@@ -1,10 +1,9 @@
 ---
 UID: NE:ntddk._SOC_SUBSYSTEM_TYPE
 title: _SOC_SUBSYSTEM_TYPE (ntddk.h)
-description: The SOC_SYBSYSTEM_TYPE enumeration defines different types of System on a Chip (SoC) subsystems.
+description: The SOC_SUBSYSTEM_TYPE enumeration defines different types of System on a Chip (SoC) subsystems.
 old-location: whea\soc_sybsystem_type.htm
 tech.root: whea
-ms.assetid: 179D61E3-C2EE-4821-93F8-DB763892DD3D
 ms.date: 02/20/2018
 keywords: ["SOC_SUBSYSTEM_TYPE enumeration"]
 ms.keywords: "*PSOC_SUBSYSTEM_TYPE, SOC_SUBSYSTEM_TYPE, SOC_SUBSYSTEM_TYPE enumeration [WHEA Drivers and Applications], SOC_SUBSYSTEM_WIRELESS_MODEM, SOC_SUBSYS_AUDIO_DSP, SOC_SUBSYS_SENSORS, SOC_SUBSYS_VENDOR_DEFINED, SOC_SUBSYS_WIRELSS_CONNECTIVITY, _SOC_SUBSYSTEM_TYPE, ntddk/SOC_SUBSYSTEM_TYPE, ntddk/SOC_SUBSYSTEM_WIRELESS_MODEM, ntddk/SOC_SUBSYS_AUDIO_DSP, ntddk/SOC_SUBSYS_SENSORS, ntddk/SOC_SUBSYS_VENDOR_DEFINED, ntddk/SOC_SUBSYS_WIRELSS_CONNECTIVITY, whea.soc_sybsystem_type"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _SOC_SUBSYSTEM_TYPE
+ - PSOC_SUBSYSTEM_TYPE
  - SOC_SUBSYSTEM_TYPE
 ---
 
@@ -50,7 +51,7 @@ api_name:
 
 ## -description
 
-The <b>SOC_SYBSYSTEM_TYPE</b> enumeration defines different types of System on a Chip (SoC) subsystems.
+The <b>SOC_SUBSYSTEM_TYPE</b> enumeration defines different types of System on a Chip (SoC) subsystems.
 
 The <b>SybsysType</b> member of the <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_soc_subsystem_failure_details">SOC_SUBSYSTEM_FAILURE_DETAILS</a> structure is a value from this enumeration. The <b>SOC_SUBSYSTEM_FAILURE_DETAILS</b> structure is used by these bug codes:
 <ul>
@@ -89,6 +90,4 @@ Compute digital signal processor (DSP).
 Subsystem types in the range 0x10000 through 0x80000000 are reserved for independent hardware vendors.
 
 
-#### - SOC_SUBSYSTEM_WIRELESS_MODEM
-
-Wireless modem.
+### -field SOC_SUBSYS_SECURE_PROC

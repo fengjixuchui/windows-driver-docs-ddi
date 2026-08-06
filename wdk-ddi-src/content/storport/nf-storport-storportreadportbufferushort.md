@@ -4,7 +4,6 @@ title: StorPortReadPortBufferUshort macro (storport.h)
 description: The StorPortReadPortBufferUshort routine reads a value from a specified port address.
 old-location: storage\storportreadportbufferushort.htm
 tech.root: storage
-ms.assetid: 7b45811c-4e5f-4344-b0b3-15d36b912b5b
 ms.date: 03/29/2018
 keywords: ["StorPortReadPortBufferUshort macro"]
 ms.keywords: StorPortReadPortBufferUshort, StorPortReadPortBufferUshort routine [Storage Devices], storage.storportreadportbufferushort, storport/StorPortReadPortBufferUshort, storprt_8bb9a625-864a-4566-a570-87425b6bc9af.xml
@@ -51,24 +50,24 @@ The <b>StorPortReadPortBufferUshort</b> routine reads a value from a specified p
 
 ## -parameters
 
-### -param h 
+### -param h [in]
 
-[in]
+
 A pointer to the hardware device extension.
 
-### -param p 
+### -param p [in]
 
-[in]
+
 A pointer to the address from which to read.
 
-### -param b 
+### -param b [in]
 
-[in]
+
 Pointer to the buffer that receives the data that is read.
 
-### -param c 
+### -param c [in]
 
-[in]
+
 Number of data items to be read. Each data item has a size of <b>sizeof</b>(USHORT).
 
 ## -remarks

@@ -4,7 +4,6 @@ title: FltOpenVolume function (fltkernel.h)
 description: The FltOpenVolume routine returns a handle and a file object pointer for the file system volume that a given minifilter driver instance is attached to.
 old-location: ifsk\fltopenvolume.htm
 tech.root: ifsk
-ms.assetid: 99cfa1eb-3d0f-4e27-9884-f5789ee328c3
 ms.date: 04/16/2018
 keywords: ["FltOpenVolume function"]
 ms.keywords: FltApiRef_e_to_o_fa9d628c-94e6-46f5-9f8f-9923c554a15f.xml, FltOpenVolume, FltOpenVolume routine [Installable File System Drivers], fltkernel/FltOpenVolume, ifsk.fltopenvolume
@@ -50,19 +49,19 @@ The <b>FltOpenVolume</b> routine returns a handle and a file object pointer for 
 
 ## -parameters
 
-### -param Instance 
+### -param Instance [in]
 
-[in]
+
 Opaque instance pointer for the instance. This instance must be attached to a local volume.
 
-### -param VolumeHandle 
+### -param VolumeHandle [out]
 
-[out]
+
 Handle for the file system volume.
 
-### -param VolumeFileObject 
+### -param VolumeFileObject [out]
 
-[out]
+
 Pointer to a caller-allocated variable that receives a file object pointer for the root directory of the volume. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns
@@ -109,6 +108,8 @@ The instance specified by the <i>Instance</i> parameter must be attached to a lo
 To get a pointer to the device object for a given volume, call <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetdeviceobject">FltGetDeviceObject</a>. 
 
 To get detailed information about the volume that a given instance is attached to, call <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltqueryvolumeinformation">FltQueryVolumeInformation</a>.
+
+NOTE: Do not call this routine with a non-NULL top level IRP value, as this can cause a system deadlock. To determine if the thread TopLevelIrp is set call <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-iogettoplevelirp">IoGetTopLevelIrp</a>.
 
 ## -see-also
 

@@ -4,14 +4,13 @@ title: StorPortGetDataInBufferScatterGatherList function (storport.h)
 description: Returns the scatter-gather list associated with the input data buffer of a SCSI request block (SRB).
 old-location: storage\storportgetdatainbufferscattergatherlist.htm
 tech.root: storage
-ms.assetid: 015592AE-4AF6-48C8-BF79-6B22A6FCAB98
 ms.date: 03/29/2018
 keywords: ["StorPortGetDataInBufferScatterGatherList function"]
 ms.keywords: StorPortGetDataInBufferScatterGatherList, StorPortGetDataInBufferScatterGatherList routine [Storage Devices], storage.storportgetdatainbufferscattergatherlist, storport/StorPortGetDataInBufferScatterGatherList
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Storport.lib
 req.dll: 
-req.irql: Any
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,20 +50,20 @@ Returns the scatter-gather list associated with the input data buffer  of a SCSI
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param Srb 
+### -param Srb [in]
 
-[in]
+
 The request block to containing the input data buffer for the scatter-gather list.
 
-### -param SgList 
+### -param SgList [out]
 
-[out]
-A pointer to  an scatter-gather list structure address to receive the scatter-gather list for the input data buffer in <i>Srb</i>.
+
+A pointer to  a scatter-gather list structure address to receive the scatter-gather list for the input data buffer in <i>Srb</i>.
 
 ## -returns
 

@@ -4,7 +4,6 @@ title: _WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA (wdfdevice.h)
 description: The WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA structure describes a state change within a device's power policy state machine.
 old-location: wdf\wdf_device_power_policy_notification_data.htm
 tech.root: wdf
-ms.assetid: aa91ea9b-3d92-4f33-8bbd-dd64a76a0a86
 ms.date: 02/26/2018
 keywords: ["WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA structure"]
 ms.keywords: DFDeviceObjectGeneralRef_b2b78d41-642d-4e2d-89cc-8ea27a033c77.xml, WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA, WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA structure, _WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA, kmdf.wdf_device_power_policy_notification_data, wdf.wdf_device_power_policy_notification_data, wdfdevice/WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfdevice.h
 api_name:
+ - _WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA
  - WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA
 ---
 
@@ -49,6 +49,9 @@ api_name:
 ## -description
 
 <p class="CCE_Message">[Applies to KMDF only]</p>
+
+>[!NOTE]
+>This structure is for Microsoft internal use only.
 
 The <b>WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</b> structure describes a state change within a device's power policy state machine.
 
@@ -93,3 +96,4 @@ The <b>WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</b> structure is an input argum
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitregisterpowerpolicystatechangecallback">WdfDeviceInitRegisterPowerPolicyStateChangeCallback</a>
+

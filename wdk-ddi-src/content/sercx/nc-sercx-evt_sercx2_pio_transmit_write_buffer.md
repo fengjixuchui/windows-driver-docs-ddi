@@ -4,7 +4,6 @@ title: EVT_SERCX2_PIO_TRANSMIT_WRITE_BUFFER (sercx.h)
 description: The EvtSerCx2PioTransmitWriteBuffer event callback function is called by version 2 of the serial framework extension (SerCx2) to use programmed I/O (PIO) to transfer the contents of a write buffer to the transmit FIFO in the serial controller.
 old-location: serports\evtsercx2piotransmitwritebuffer.htm
 tech.root: serports
-ms.assetid: 28DD175B-9869-4CFC-9BDD-172DA7E015DE
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX2_PIO_TRANSMIT_WRITE_BUFFER callback function"]
 ms.keywords: 2/EvtSerCx2PioTransmitWriteBuffer, EVT_SERCX2_PIO_TRANSMIT_WRITE_BUFFER, EVT_SERCX2_PIO_TRANSMIT_WRITE_BUFFER callback, EvtSerCx2PioTransmitWriteBuffer, EvtSerCx2PioTransmitWriteBuffer callback function [Serial Ports], serports.evtsercx2piotransmitwritebuffer
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
- - EvtSerCx2PioTransmitWriteBuffer
+ - EVT_SERCX2_PIO_TRANSMIT_WRITE_BUFFER
 ---
 
 # EVT_SERCX2_PIO_TRANSMIT_WRITE_BUFFER callback function
@@ -50,19 +49,19 @@ The <i>EvtSerCx2PioTransmitWriteBuffer</i> event callback function is called by 
 
 ## -parameters
 
-### -param PioTransmit 
+### -param PioTransmit [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitcreate">SerCx2PioTransmitCreate</a> method to create this object.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to the write buffer. This parameter is the virtual address of a locked-down buffer in system memory.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The number of bytes in the write buffer that are available to be transmitted.
 
 ## -returns
@@ -144,3 +143,4 @@ The <b>EVT_SERCX2_PIO_TRANSMIT_WRITE_BUFFER</b> function type is defined in the 
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitcreate">SerCx2PioTransmitCreate</a>
+

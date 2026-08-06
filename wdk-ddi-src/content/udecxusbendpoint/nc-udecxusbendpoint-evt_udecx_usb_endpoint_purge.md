@@ -4,7 +4,6 @@ title: EVT_UDECX_USB_ENDPOINT_PURGE (udecxusbendpoint.h)
 description: The USB device emulation class extension (UdeCx) invokes this callback function to stop queuing I/O requests to the endpoint's queue and cancel unprocessed requests.
 old-location: buses\evt_udecx_usb_endpoint_purge.htm
 tech.root: usbref
-ms.assetid: FAC021F0-CF37-4A28-BE89-D6BD77B8B708
 ms.date: 05/07/2018
 keywords: ["EVT_UDECX_USB_ENDPOINT_PURGE callback function"]
 ms.keywords: EVT_UDECX_USB_ENDPOINT_PURGE, EVT_UDECX_USB_ENDPOINT_PURGE callback, EvtUsbEndpointPurge, EvtUsbEndpointPurge callback function [Buses], buses.evt_udecx_usb_endpoint_purge, udecxusbendpoint/EvtUsbEndpointPurge
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - UdecxUsbEndpoint.h
 api_name:
- - EvtUsbEndpointPurge
+ - EVT_UDECX_USB_ENDPOINT_PURGE
 ---
 
 # EVT_UDECX_USB_ENDPOINT_PURGE callback function
@@ -50,9 +49,9 @@ The USB device emulation class extension (UdeCx) invokes this callback function 
 
 ## -parameters
 
-### -param UdecxUsbEndpoint 
+### -param UdecxUsbEndpoint [in]
 
-[in]
+
 A handle to a UDE endpoint object that represents the endpoint for which I/O requests must be canceled. The client driver retrieved this pointer in the previous call to <a href="/windows-hardware/drivers/ddi/udecxusbendpoint/nf-udecxusbendpoint-udecxusbendpointcreate">UdecxUsbEndpointCreate</a>.
 
 ## -remarks
@@ -72,3 +71,4 @@ In the implementation, the client driver is required to ensure all I/O forwarded
 
 
 <a href="/windows-hardware/drivers/usbcon/">Write a UDE client driver</a>
+

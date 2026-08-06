@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_79
+UID: NS:ks.BUS_INTERFACE_REFERENCE
 title: BUS_INTERFACE_REFERENCE (ks.h)
 description: A software device enumerator exports this interface to allow drivers to reference count physical device objects (PDOs) such that the device remains active while in use and is unloaded when not in use.
 old-location: stream\bus_interface_reference.htm
 tech.root: stream
-ms.assetid: 17c2c46c-ff79-4c80-82c9-c49b18426789
 ms.date: 04/23/2018
 keywords: ["BUS_INTERFACE_REFERENCE structure"]
 ms.keywords: "*PBUS_INTERFACE_REFERENCE, BUS_INTERFACE_REFERENCE, BUS_INTERFACE_REFERENCE structure [Streaming Media Devices], PBUS_INTERFACE_REFERENCE, PBUS_INTERFACE_REFERENCE structure pointer [Streaming Media Devices], ks-struct_815b7147-1ae1-48d2-bae3-3efce2613b53.xml, ks/BUS_INTERFACE_REFERENCE, ks/PBUS_INTERFACE_REFERENCE, stream.bus_interface_reference"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PBUS_INTERFACE_REFERENCE
  - BUS_INTERFACE_REFERENCE
 ---
 
@@ -94,3 +94,4 @@ If your request is successful, the system fills in the BUS_INTERFACE_REFERENCE s
 
 </li>
 </ul>
+

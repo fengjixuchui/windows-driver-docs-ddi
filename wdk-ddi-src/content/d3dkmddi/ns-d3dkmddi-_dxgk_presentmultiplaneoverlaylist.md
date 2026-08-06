@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGK_PRESENTMULTIPLANEOVERLAYLIST
 title: _DXGK_PRESENTMULTIPLANEOVERLAYLIST (d3dkmddi.h)
 description: Specifies an overlay plane to display in a call to the DxgkDdiPresent function.
 old-location: display\dxgk_presentmultiplaneoverlaylist.htm
-ms.assetid: 970b3155-9e81-4725-90ee-079339c1d5c5
 ms.date: 05/10/2018
 keywords: ["DXGK_PRESENTMULTIPLANEOVERLAYLIST structure"]
 ms.keywords: DXGK_PRESENTMULTIPLANEOVERLAYLIST, DXGK_PRESENTMULTIPLANEOVERLAYLIST structure [Display Devices], _DXGK_PRESENTMULTIPLANEOVERLAYLIST, d3dkmddi/DXGK_PRESENTMULTIPLANEOVERLAYLIST, display.dxgk_presentmultiplaneoverlaylist
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmddi.h
 api_name:
+ - _DXGK_PRESENTMULTIPLANEOVERLAYLIST
  - DXGK_PRESENTMULTIPLANEOVERLAYLIST
 ---
 
@@ -64,18 +64,19 @@ Indicates whether the overlay plane specified by <b>LayerIndex</b> is enabled fo
 
 A handle to the device-specific allocation that corresponds to the non device-specific allocation. The display miniport driver must set <b>hDeviceSpecificAllocation</b> to a handle value that it can use to refer to its private tracking structure for the allocation.
 
-### -field SegmentId
+### -field SegmentId [in]
 
-[in] The identifier of a segment that data is read from.
+The identifier of a segment that data is read from.
 
 ### -field Reserved
 
 This member is reserved and should be set to zero.
 
-### -field PhysicalAddress
+### -field PhysicalAddress [in]
 
-[in] A <b>PHYSICAL_ADDRESS</b> data type (which is defined as <b>LARGE_INTEGER</b>) that indicates the physical address, within the segment that <b>SegmentId</b> specifies, where the data is read.
+A <b>PHYSICAL_ADDRESS</b> data type (which is defined as <b>LARGE_INTEGER</b>) that indicates the physical address, within the segment that <b>SegmentId</b> specifies, where the data is read.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_present">DxgkDdiPresent</a>
+

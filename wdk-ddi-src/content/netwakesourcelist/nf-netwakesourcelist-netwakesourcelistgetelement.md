@@ -3,8 +3,7 @@ UID: NF:netwakesourcelist.NetWakeSourceListGetElement
 title: NetWakeSourceListGetElement function (netwakesourcelist.h)
 description: The NetWakeSourceListGetElement function gets a wake source from the list of wake sources for a net adapter.
 tech.root: netvista
-ms.assetid: 6505fee3-68c7-4b65-a725-1d9072eeaa98
-ms.date: 10/10/2019
+ms.date: 04/01/2022
 keywords: ["NetWakeSourceListGetElement function"]
 ms.keywords: NetWakeSourceListGetElement
 req.header: netwakesourcelist.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: netadaptercxstub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -37,8 +36,6 @@ api_location:
  - netadaptercxstub.lib
 api_name:
  - NetWakeSourceListGetElement
-product:
- - Windows
 ---
 
 # NetWakeSourceListGetElement function
@@ -50,11 +47,11 @@ The **NetWakeSourceListGetElement** function gets a wake source from the list of
 
 ## -parameters
 
-### -param List
+### -param List [_In_]
 
 A handle to a driver-allocated and initialized [**NET_WAKE_SOURCE_LIST**](../netwakesourcelist/ns-netwakesourcelist-_net_wake_source_list.md) structure.
 
-### -param Index
+### -param Index [_In_]
 
 The zero-based index in the list for the target NETWAKESOURCE object. This function must be less than the value returned by [**NetWakeSourceListGetCount**](../netwakesourcelist/nf-netwakesourcelist-netwakesourcelistgetcount.md).
 

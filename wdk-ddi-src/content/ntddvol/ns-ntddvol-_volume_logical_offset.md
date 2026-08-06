@@ -4,7 +4,6 @@ title: _VOLUME_LOGICAL_OFFSET (ntddvol.h)
 description: The VOLUME_LOGICAL_OFFSET structure contains a logical offset into a volume.
 old-location: storage\volume_logical_offset.htm
 tech.root: storage
-ms.assetid: 4b0a982b-63ae-4109-a4be-2dd82824e75a
 ms.date: 03/29/2018
 keywords: ["VOLUME_LOGICAL_OFFSET structure"]
 ms.keywords: "*PVOLUME_LOGICAL_OFFSET, PVOLUME_LOGICAL_OFFSET, PVOLUME_LOGICAL_OFFSET structure pointer [Storage Devices], VOLUME_LOGICAL_OFFSET, VOLUME_LOGICAL_OFFSET structure [Storage Devices], _VOLUME_LOGICAL_OFFSET, ntddvol/PVOLUME_LOGICAL_OFFSET, ntddvol/VOLUME_LOGICAL_OFFSET, storage.volume_logical_offset, structs-volumemgr_97756e49-7151-4d3a-abbe-aa90a472c284.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddvol.h
 api_name:
+ - _VOLUME_LOGICAL_OFFSET
+ - PVOLUME_LOGICAL_OFFSET
  - VOLUME_LOGICAL_OFFSET
 ---
 
@@ -69,3 +70,4 @@ The VOLUME_LOGICAL_OFFSET structure is used with <a href="/windows-hardware/driv
 
 
 <a href="/windows-hardware/drivers/ddi/ntddvol/ni-ntddvol-ioctl_volume_physical_to_logical">IOCTL_VOLUME_PHYSICAL_TO_LOGICAL</a>
+

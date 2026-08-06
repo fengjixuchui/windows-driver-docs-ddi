@@ -4,7 +4,6 @@ title: HWN_CLIENT_UNINITIALIZE_DEVICE (hwnclx.h)
 description: Implemented by the client driver and invoked as invoked as a result of a call to EVT_WDF_DEVICE_RELEASE_HARDWARE. This callback function uninitializes the hardware notification component.
 old-location: gpiobtn\hwn_client_uninitialize_device.htm
 tech.root: gpiobtn
-ms.assetid: 19ed1c21-d041-4876-8f90-4319e43a7004
 ms.date: 02/15/2018
 keywords: ["HWN_CLIENT_UNINITIALIZE_DEVICE callback"]
 ms.keywords: "*PHWN_CLIENT_UNINITIALIZE_DEVICE, *PHWN_CLIENT_UNINITIALIZE_DEVICE callback function pointer, HWN_CLIENT_UNINITIALIZE_DEVICE, HwnClientUninitializeDevice, HwnClientUninitializeDevice callback function, gpiobtn.hwn_client_uninitialize_device, hwnclx/HwnClientUninitializeDevice"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Hwnclx.h
 api_name:
- - PHWN_CLIENT_UNINITIALIZE_DEVICE
+ - HWN_CLIENT_UNINITIALIZE_DEVICE
 ---
 
 # HWN_CLIENT_UNINITIALIZE_DEVICE callback
@@ -50,14 +49,14 @@ Implemented by the client driver and invoked as  invoked as a result of a call t
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 Handle to the client drivers framework device object.
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to the client driver's context information. This memory space is available for use by the client driver. It is allocated as part of the framework object context space by <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>. For more information, see <a href="/windows-hardware/drivers/gpiobtn/create-a-hardware-notification-client-driver">HWN_CLIENT_REGISTRATION_PACKET</a> and  <a href="/windows-hardware/drivers/wdf/framework-object-context-space">Framework Object Context Space</a>.
 
 ## -returns
@@ -88,4 +87,5 @@ Register your implementation of this callback function by setting the appropriat
 
 
 
-<a href="/windows-hardware/drivers/ddi/index">Hardware notifications reference</a>
+<a href="/windows-hardware/drivers/ddi/_gpio">Hardware notifications reference</a>
+

@@ -4,7 +4,6 @@ title: RtlULongPtrToShort function (ntintsafe.h)
 description: Converts a value of type ULONG_PTR to a value of type SHORT.
 old-location: kernel\rtlulongptrtoshort.htm
 tech.root: kernel
-ms.assetid: 37C4A2B0-6FB4-431D-8FB2-0B13EE1F00F1
 ms.date: 04/30/2018
 keywords: ["RtlULongPtrToShort function"]
 ms.keywords: RtlULongPtrToShort, RtlULongPtrToShort function [Kernel-Mode Driver Architecture], kernel.rtlulongptrtoshort, ntintsafe/RtlULongPtrToShort
@@ -50,14 +49,14 @@ Converts a value of type <b>ULONG_PTR</b> to a value of type <b>SHORT</b>.
 
 ## -parameters
 
-### -param ulOperand 
+### -param ulOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param psResult 
+### -param psResult [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

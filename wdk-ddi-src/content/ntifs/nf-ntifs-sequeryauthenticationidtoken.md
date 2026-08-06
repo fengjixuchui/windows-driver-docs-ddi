@@ -4,7 +4,6 @@ title: SeQueryAuthenticationIdToken function (ntifs.h)
 description: The SeQueryAuthenticationIdToken routine retrieves the authentication ID of an access token.
 old-location: ifsk\sequeryauthenticationidtoken.htm
 tech.root: ifsk
-ms.assetid: 4679415f-63d2-48b5-a6d4-edc54e8b3b0c
 ms.date: 04/16/2018
 keywords: ["SeQueryAuthenticationIdToken function"]
 ms.keywords: SeQueryAuthenticationIdToken, SeQueryAuthenticationIdToken routine [Installable File System Drivers], ifsk.sequeryauthenticationidtoken, ntifs/SeQueryAuthenticationIdToken, seref_cc55425d-99c0-4fbe-a7ce-06d75ae74586.xml
@@ -50,14 +49,14 @@ The <b>SeQueryAuthenticationIdToken</b> routine retrieves the authentication ID 
 
 ## -parameters
 
-### -param Token 
+### -param Token [in]
 
-[in]
+
 Pointer to an access token.
 
-### -param AuthenticationId 
+### -param AuthenticationId [out]
 
-[out]
+
 Authentication ID of the access token. (An Authentication ID is the locally unique identifier, or <a href="/windows-hardware/drivers/ddi/igpupvdev/ns-igpupvdev-_luid">LUID</a>, that is assigned to the logon session that the access token represents. There can be many tokens representing a single logon session.)
 
 ## -returns
@@ -82,7 +81,7 @@ The call to <b>SeQueryAuthenticationIdToken</b> succeeded.
 
 ## -remarks
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

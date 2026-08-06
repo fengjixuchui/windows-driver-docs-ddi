@@ -4,7 +4,6 @@ title: DMA_APPEND_HANDLER (netdma.h)
 description: The ProviderAppendDma function appends a linked list of DMA descriptors to the last descriptor on a DMA channel.
 old-location: netvista\providerappenddma.htm
 tech.root: netvista
-ms.assetid: 51de8ddf-cbfc-4e49-b44a-207307a937e7
 ms.date: 05/02/2018
 keywords: ["DMA_APPEND_HANDLER callback function"]
 ms.keywords: DMA_APPEND_HANDLER, DMA_APPEND_HANDLER callback, ProviderAppendDma, ProviderAppendDma callback function [Network Drivers Starting with Windows Vista], netdma/ProviderAppendDma, netdma_ref_ce5895a2-ac0c-4b98-98be-9f95edf091d3.xml, netvista.providerappenddma
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - netdma.h
 api_name:
- - ProviderAppendDma
+ - DMA_APPEND_HANDLER
 ---
 
 # DMA_APPEND_HANDLER callback function
@@ -53,33 +52,33 @@ The <i>ProviderAppendDma</i> function appends a linked list of DMA descriptors t
 
 ## -parameters
 
-### -param ProviderChannelContext 
+### -param ProviderChannelContext [in]
 
-[in]
+
 A pointer that identifies a DMA channel's context area. The DMA provider returned this handle to
      NetDMA at the location that is specified in the 
      <i>pProviderChannelContext</i> parameter of the 
      <a href="/windows-hardware/drivers/ddi/netdma/nc-netdma-dma_channel_allocate_handler">
      ProviderAllocateDmaChannel</a> function.
 
-### -param DescriptorVirtualAddress 
+### -param DescriptorVirtualAddress [in]
 
-[in]
+
 A pointer to the virtual address of the first 
      <a href="/windows-hardware/drivers/ddi/netdma/ns-netdma-_net_dma_descriptor">NET_DMA_DESCRIPTOR</a> structure in a linked
      list of DMA descriptors. The corresponding physical address is specified at the 
      <i>DescriptorPhysicalAddress</i> parameter.
 
-### -param DescriptorPhysicalAddress 
+### -param DescriptorPhysicalAddress [in]
 
-[in]
+
 A pointer to the physical address of the first DMA descriptor in a linked list of DMA descriptors.
      The corresponding virtual address is specified at the 
      <i>DescriptorVirtualAddress</i> parameter.
 
-### -param DescriptorCount 
+### -param DescriptorCount [in]
 
-[in]
+
 The number of DMA descriptors at 
      <i>DescriptorVirtualAddress</i> .
      
@@ -170,3 +169,4 @@ NetDMA calls
 
 
 <a href="/windows-hardware/drivers/ddi/netdma/nc-netdma-dma_start_handler">ProviderStartDma</a>
+

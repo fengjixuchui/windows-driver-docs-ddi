@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.IDynamicConceptProviderConcept.NotifyParentChange
 title: IDynamicConceptProviderConcept::NotifyParentChange (dbgmodel.h)
 description: The NotifyParent method on a dynamic concept provider is a callback made by the core data model when a static manipulation of the object's single parent model is made.
-ms.assetid: 1259f0bc-bd52-41ab-91f7-852c269b223a
 ms.date: 09/19/2018
 keywords: ["IDynamicConceptProviderConcept::NotifyParentChange"]
 ms.keywords: IDynamicConceptProviderConcept::NotifyParentChange, NotifyParentChange, IDynamicConceptProviderConcept.NotifyParentChange, IDynamicConceptProviderConcept::NotifyParentChange, IDynamicConceptProviderConcept.NotifyParentChange
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDynamicConceptProviderConcept.NotifyParentChange
+ - IDynamicConceptProviderConcept::NotifyParentChange
 ---
 
 # IDynamicConceptProviderConcept::NotifyParentChange

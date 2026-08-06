@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILERRORDETAILS
 title: RILERRORDETAILS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILERRORDETAILS structure for internal use only."
 old-location: netvista\rilerrordetails.htm
 tech.root: netvista
-ms.assetid: 9c9aaece-5c16-40c4-a039-5e32541500f7
 ms.date: 05/02/2018
 keywords: ["RILERRORDETAILS structure"]
 ms.keywords: "*LPRILERRORDETAILS, RILERRORDETAILS, RILERRORDETAILS structure [Network Drivers Starting with Windows Vista], netvista.rilerrordetails, ntddrilapitypes/RILERRORDETAILS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILERRORDETAILS
+ - LPRILERRORDETAILS
 ---
 
 # RILERRORDETAILS structure (rilapitypes.h)

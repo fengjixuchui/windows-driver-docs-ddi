@@ -4,7 +4,6 @@ title: _NDIS_WWAN_DEVICE_SERVICE_RESPONSE (ndiswwan.h)
 description: The NDIS_WWAN_DEVICE_SERVICE_RESPONSE structure represents device service data from the transaction completion of a device service command.
 old-location: netvista\ndis_wwan_device_service_response.htm
 tech.root: netvista
-ms.assetid: 65999499-C14C-45CC-B7A5-021750B1A728
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_DEVICE_SERVICE_RESPONSE structure"]
 ms.keywords: "*PNDIS_WWAN_DEVICE_SERVICE_RESPONSE, NDIS_WWAN_DEVICE_SERVICE_RESPONSE, NDIS_WWAN_DEVICE_SERVICE_RESPONSE structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_DEVICE_SERVICE_RESPONSE, PNDIS_WWAN_DEVICE_SERVICE_RESPONSE structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_DEVICE_SERVICE_RESPONSE, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_RESPONSE, ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_RESPONSE, netvista.ndis_wwan_device_service_response"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_DEVICE_SERVICE_RESPONSE
+ - PNDIS_WWAN_DEVICE_SERVICE_RESPONSE
  - NDIS_WWAN_DEVICE_SERVICE_RESPONSE
 ---
 
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_DEVICE_SERVICE_RESPONSE)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field uStatus
 
@@ -110,15 +111,9 @@ The status of the completion of the command.
 
 ### -field Response
 
- 
-
-
-
-
-#### - ResponseData
-
 The response from the completion of the device service command.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_device_service_response">WWAN_DEVICE_SERVICE_RESPONSE</a>
+

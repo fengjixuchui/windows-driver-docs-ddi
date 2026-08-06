@@ -1,15 +1,13 @@
 ---
 UID: NS:compstui._OPTCOMBO
-title: _OPTCOMBO (compstui.h)
-description: 
-old-location: print\optcombo.htm
+title: OPTCOMBO (compstui.h)
+description: Describes the OPTCOMBO structure.
 tech.root: print
-ms.assetid: B1F5A79A-8F64-4B7B-ADB4-BDD8EC17F22E
-ms.date: 04/20/2018
+ms.date: 11/16/2022
 keywords: ["OPTCOMBO structure"]
 ms.keywords: "*POPTCOMBO, OPTCOMBO, OPTCOMBO structure [Print Devices], POPTCOMBO, POPTCOMBO structure pointer [Print Devices], _OPTCOMBO, compstui/OPTCOMBO, compstui/POPTCOMBO, print.optcombo"
 req.header: compstui.h
-req.include-header: 
+req.include-header: Compstui.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -42,25 +40,37 @@ api_type:
 api_location:
  - Compstui.h
 api_name:
+ - _OPTCOMBO
+ - POPTCOMBO
  - OPTCOMBO
 ---
 
-# _OPTCOMBO structure
-
-
 ## -description
+
+Describes the **OPTCOMBO** structure.
 
 ## -struct-fields
 
 ### -field cbSize
 
+Defines the **WORD** member **cbSize**.
+
 ### -field Flags
+
+Defines the **BYTE** member **Flags**.
 
 ### -field cListItem
 
+Defines the **WORD** member **cListItem**.
+
 ### -field pListItem
+
+Defines the **POPTPARAM** member **pListItem**.
 
 ### -field Sel
 
+Defines the **LONG** member **Sel**.
+
 ### -field dwReserved
 
+Reserved for future use.

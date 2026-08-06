@@ -4,7 +4,6 @@ title: PcRegisterAdapterPowerManagement function (portcls.h)
 description: The PcRegisterAdapterPowerManagement function registers the adapter's power-management interface with the PortCls system driver.
 old-location: audio\pcregisteradapterpowermanagement.htm
 tech.root: audio
-ms.assetid: a9e2537d-4d67-4495-b391-55f885b7041a
 ms.date: 05/08/2018
 keywords: ["PcRegisterAdapterPowerManagement function"]
 ms.keywords: PcRegisterAdapterPowerManagement, PcRegisterAdapterPowerManagement function [Audio Devices], audio.pcregisteradapterpowermanagement, audpc-routines_524bed01-a6ba-492c-9e18-7495de15be46.xml, portcls/PcRegisterAdapterPowerManagement
@@ -55,9 +54,9 @@ The <b>PcRegisterAdapterPowerManagement</b> function registers the adapter's pow
 
 <p>Pointer to an adapter driver object's <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown"><b>IUnknown</b></a> interface. The PortCls system driver queries this object for its <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iadapterpowermanagement">IAdapterPowerManagement</a> interface.</p>
 
-### -param pvContext1 
+### -param pvContext1 [in]
 
-[in]
+
 Pointer to the adapter's <a href="/windows-hardware/drivers/">functional device object (FDO)</a>. This parameter is a pointer to a system structure of type <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> but is cast to type PVOID.
 
 ## -returns

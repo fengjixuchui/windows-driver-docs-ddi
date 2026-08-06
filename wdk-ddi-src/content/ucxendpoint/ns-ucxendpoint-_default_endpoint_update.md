@@ -4,7 +4,6 @@ title: _DEFAULT_ENDPOINT_UPDATE (ucxendpoint.h)
 description: Contains the handle to the default endpoint to update in a framework request that is passed by UCX when it invokes EVT_UCX_DEFAULT_ENDPOINT_UPDATE callback function.
 old-location: buses\_default_endpoint_update.htm
 tech.root: usbref
-ms.assetid: 3E85D9AE-F8D3-4763-B1A2-51F95D00422D
 ms.date: 05/07/2018
 keywords: ["DEFAULT_ENDPOINT_UPDATE structure"]
 ms.keywords: "*PDEFAULT_ENDPOINT_UPDATE, DEFAULT_ENDPOINT_UPDATE, DEFAULT_ENDPOINT_UPDATE structure [Buses], P_DEFAULT_ENDPOINT_UPDATE, P_DEFAULT_ENDPOINT_UPDATE structure pointer [Buses], _DEFAULT_ENDPOINT_UPDATE, buses._default_endpoint_update, ucxendpoint/P_DEFAULT_ENDPOINT_UPDATE, ucxendpoint/_DEFAULT_ENDPOINT_UPDATE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ucxendpoint.h
 api_name:
+ - _DEFAULT_ENDPOINT_UPDATE
+ - PDEFAULT_ENDPOINT_UPDATE
  - DEFAULT_ENDPOINT_UPDATE
 ---
 
@@ -69,3 +70,4 @@ The maximum packet size of the default endpoint.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ucxendpoint/nc-ucxendpoint-evt_ucx_default_endpoint_update">EVT_UCX_DEFAULT_ENDPOINT_UPDATE</a>
+

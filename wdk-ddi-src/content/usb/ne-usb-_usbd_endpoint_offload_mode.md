@@ -4,7 +4,6 @@ title: _USBD_ENDPOINT_OFFLOAD_MODE (usb.h)
 description: Defines values for endpoint offloading options in the USB device or host controller.
 old-location: buses\usbd_endpoint_offload_mode.htm
 tech.root: usbref
-ms.assetid: 577B2B5E-934E-4354-B6FF-FDFE9D1144D7
 ms.date: 05/07/2018
 keywords: ["USBD_ENDPOINT_OFFLOAD_MODE enumeration"]
 ms.keywords: USBD_ENDPOINT_OFFLOAD_MODE, USBD_ENDPOINT_OFFLOAD_MODE enumeration [Buses], UsbdEndpointOffloadHardwareAssisted, UsbdEndpointOffloadModeNotSupported, UsbdEndpointOffloadSoftwareAssisted, _USBD_ENDPOINT_OFFLOAD_MODE, buses.usbd_endpoint_offload_mode, usb/USBD_ENDPOINT_OFFLOAD_MODE, usb/UsbdEndpointOffloadHardwareAssisted, usb/UsbdEndpointOffloadModeNotSupported, usb/UsbdEndpointOffloadSoftwareAssisted
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Usb.h
 api_name:
+ - _USBD_ENDPOINT_OFFLOAD_MODE
  - USBD_ENDPOINT_OFFLOAD_MODE
 ---
 
@@ -67,3 +67,4 @@ Endpoint offloading is handled in the USB device or host controller hardware.
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)">USBD_QueryUsbCapability</a>
+

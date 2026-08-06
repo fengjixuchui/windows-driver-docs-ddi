@@ -4,7 +4,6 @@ title: RxLogEventWithBufferDirect function (rxprocs.h)
 description: RxLogEventWithBufferDirect allocates an I/O error log structure, fills it in with information, and writes the entry to the I/O error log.
 old-location: ifsk\rxlogeventwithbufferdirect.htm
 tech.root: ifsk
-ms.assetid: 09a7d452-efa1-4846-8077-1f6ce60515e7
 ms.date: 04/16/2018
 keywords: ["RxLogEventWithBufferDirect function"]
 ms.keywords: RxLogEventWithBufferDirect, RxLogEventWithBufferDirect function [Installable File System Drivers], ifsk.rxlogeventwithbufferdirect, rxprocs/RxLogEventWithBufferDirect, rxref_95cd6139-10e2-4cf1-bfd9-51b3d6dd1119.xml
@@ -54,34 +53,34 @@ api_name:
 
 <p>A pointer to the RDBSS device object.</p>
 
-### -param OriginatorId 
+### -param OriginatorId [in]
 
-[in]
+
 The string indicating the caller generating the error.
 
-### -param EventId 
+### -param EventId [in]
 
-[in]
+
 The value indicating the I/O error log code which is different than an NTSTATUS value returned by a routine. The legal I/O error log code values are defined in the <i>ntiolog.h</i> header file included with the Microsoft Windows SDK and Visual Studio.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 The value indicating the status code of a routine indicating a failure.
 
-### -param DataBuffer 
+### -param DataBuffer [in]
 
-[in]
+
 A pointer to a data buffer to be added to the I/O error log structure.
 
-### -param DataBufferLength 
+### -param DataBufferLength [in]
 
-[in]
+
 The length of the data buffer to be added to the I/O error log structure.
 
-### -param LineNumber 
+### -param LineNumber [in]
 
-[in]
+
 The line number in the source code file where this failure occurred.
 
 ## -remarks

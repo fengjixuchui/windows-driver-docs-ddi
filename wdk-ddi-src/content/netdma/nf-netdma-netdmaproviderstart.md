@@ -4,7 +4,6 @@ title: NetDmaProviderStart function (netdma.h)
 description: The NetDmaProviderStart function notifies the NetDMA interface that all of the DMA channels that are associated with a DMA provider are initialized and ready for DMA transfers.
 old-location: netvista\netdmaproviderstart.htm
 tech.root: netvista
-ms.assetid: e99ebbe8-8605-4bf2-9ec0-d7cde25058f7
 ms.date: 05/02/2018
 keywords: ["NetDmaProviderStart function"]
 ms.keywords: NetDmaProviderStart, NetDmaProviderStart function [Network Drivers Starting with Windows Vista], netdma/NetDmaProviderStart, netdma_ref_bdb7c400-1c73-4dcb-8eb2-4121172302ad.xml, netvista.netdmaproviderstart
@@ -54,17 +53,17 @@ in Windows 8 and later.</div><div> </div>The
 
 ## -parameters
 
-### -param NetDmaProviderHandle 
+### -param NetDmaProviderHandle [in]
 
-[in]
+
 A handle that identifies a DMA provider. The DMA provider driver received this handle from the
      NetDMA interface in a call to the 
      <a href="/windows-hardware/drivers/ddi/netdma/nf-netdma-netdmaregisterprovider">
      NetDmaRegisterProvider</a> function.
 
-### -param ProviderAttributes 
+### -param ProviderAttributes [in]
 
-[in]
+
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/netdma/ns-netdma-_net_dma_provider_attributes">
      NET_DMA_PROVIDER_ATTRIBUTES</a> structure that defines the DMA device attributes of the DMA

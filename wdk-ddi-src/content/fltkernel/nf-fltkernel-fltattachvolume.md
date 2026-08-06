@@ -4,7 +4,6 @@ title: FltAttachVolume function (fltkernel.h)
 description: FltAttachVolume creates a new minifilter driver instance and attaches it to the given volume.
 old-location: ifsk\fltattachvolume.htm
 tech.root: ifsk
-ms.assetid: da85c8d6-a74c-4a87-88b3-fb6dc01dd0f9
 ms.date: 04/16/2018
 keywords: ["FltAttachVolume function"]
 ms.keywords: FltApiRef_a_to_d_f4ac8b0d-55c2-45b1-8f3b-3a09bee7bb23.xml, FltAttachVolume, FltAttachVolume function [Installable File System Drivers], fltkernel/FltAttachVolume, ifsk.fltattachvolume
@@ -51,24 +50,24 @@ api_name:
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in, out]
 
-[in, out]
+
 Opaque filter pointer for the caller. This parameter is required and cannot be <b>NULL</b>.
 
-### -param Volume 
+### -param Volume [in, out]
 
-[in, out]
+
 Opaque volume pointer for the volume that the minifilter driver instance is to be attached to. This parameter is required and cannot be <b>NULL</b>.
 
-### -param InstanceName 
+### -param InstanceName [in, optional]
 
-[in, optional]
+
 Pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure containing the instance name for the new instance. This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, <b>FltAttachVolume</b> attempts to read the minifilter driver's default instance name from the registry. (For more information about this parameter, see the following Remarks section.)
 
-### -param RetInstance 
+### -param RetInstance [out]
 
-[out]
+
 Pointer to a caller-allocated variable that receives an opaque instance pointer for the newly created instance. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

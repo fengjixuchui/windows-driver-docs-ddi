@@ -4,7 +4,6 @@ title: _NEIGHBOR_OFFLOAD_STATE_DELEGATED (ndischimney.h)
 description: The NEIGHBOR_OFFLOAD_STATE_DELGATED structure contains the delegated variable of a neighbor state object.
 old-location: netvista\neighbor_offload_state_delegated.htm
 tech.root: netvista
-ms.assetid: 94a35d0f-3585-45d0-bba8-0b4a8ebbe883
 ms.date: 05/02/2018
 keywords: ["NEIGHBOR_OFFLOAD_STATE_DELEGATED structure"]
 ms.keywords: "*PNEIGHBOR_OFFLOAD_STATE_DELEGATED, NEIGHBOR_OFFLOAD_STATE_DELEGATED, NEIGHBOR_OFFLOAD_STATE_DELEGATED structure [Network Drivers Starting with Windows Vista], PNEIGHBOR_OFFLOAD_STATE_DELEGATED, PNEIGHBOR_OFFLOAD_STATE_DELEGATED structure pointer [Network Drivers Starting with Windows Vista], _NEIGHBOR_OFFLOAD_STATE_DELEGATED, ndischimney/NEIGHBOR_OFFLOAD_STATE_DELEGATED, ndischimney/PNEIGHBOR_OFFLOAD_STATE_DELEGATED, netvista.neighbor_offload_state_delegated, tcp_chim_struct_860c3a42-4276-4a6e-92c2-c32bc1afa9b2.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndischimney.h
 api_name:
+ - _NEIGHBOR_OFFLOAD_STATE_DELEGATED
+ - PNEIGHBOR_OFFLOAD_STATE_DELEGATED
  - NEIGHBOR_OFFLOAD_STATE_DELEGATED
 ---
 
@@ -96,7 +97,7 @@ The host stack provides initial values for the
 When passed to an offload target, a NEIGHBOR_OFFLOAD_STATE_DELEGATED structure is associated with an 
     <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_miniport_offload_block_list">
     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure, which contains a header that is formatted as an 
-    <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure. The 
+    <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure. The 
     <b>Revision</b> member of the NDIS_OBJECT_HEADER structure, in this case, specifies the revision number of
     the NEIGHBOR_OFFLOAD_STATE_DELEGATED structure.
 
@@ -110,7 +111,7 @@ When passed to an offload target, a NEIGHBOR_OFFLOAD_STATE_DELEGATED structure i
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -123,3 +124,4 @@ When passed to an offload target, a NEIGHBOR_OFFLOAD_STATE_DELEGATED structure i
 
 
 <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_offload_state_header">OFFLOAD_STATE_HEADER</a>
+

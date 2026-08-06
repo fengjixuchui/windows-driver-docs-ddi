@@ -1,8 +1,7 @@
 ---
 UID: NF:d3dkmthk.D3DKMTPresentMultiPlaneOverlay3
 title: D3DKMTPresentMultiPlaneOverlay3 function (d3dkmthk.h)
-description: Copies content from a source multiplane overlay allocation to a destination allocation.
-ms.assetid: 132f4b30-4379-452e-81a1-81622642a47e
+description: The D3DKMTPresentMultiPlaneOverlay3 function copies content from a source multiplane overlay allocation to a destination allocation.
 ms.date: 10/19/2018
 keywords: ["D3DKMTPresentMultiPlaneOverlay3 function"]
 ms.keywords: D3DKMTPresentMultiPlaneOverlay3
@@ -50,7 +49,7 @@ Copies content from a source multiplane overlay allocation to a destination allo
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_PRESENT_MULTIPLANE_OVERLAY3](ns-d3dkmthk-_d3dkmt_present_multiplane_overlay3.md) structure.
 

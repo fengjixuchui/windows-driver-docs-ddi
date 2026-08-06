@@ -4,7 +4,6 @@ title: D3DDDICB_CREATEPAGINGQUEUE (d3dumddi.h)
 description: D3DDDICB_CREATEPAGINGQUEUE is used with pfnCreatePagingQueueCb to create a device paging queue that can be used to synchronize with video memory management operations for the device, such as making the device resource resident.
 old-location: display\d3dddicb_createpagingqueue.htm
 tech.root: display
-ms.assetid: 9E36B02F-2292-416C-AA09-1968EECE5A3D
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_CREATEPAGINGQUEUE structure"]
 ms.keywords: D3DDDICB_CREATEPAGINGQUEUE, D3DDDICB_CREATEPAGINGQUEUE structure [Display Devices], d3dumddi/D3DDDICB_CREATEPAGINGQUEUE, display.d3dddicb_createpagingqueue
@@ -50,25 +49,25 @@ api_name:
 
 ## -struct-fields
 
-### -field Priority
+### -field Priority [in]
 
-[in] Scheduling priority relative to other paging queues on this device. Paging queues with higher priority values will be processed ahead of paging queues with lower priority values.
+Scheduling priority relative to other paging queues on this device. Paging queues with higher priority values will be processed ahead of paging queues with lower priority values.
 
-### -field hPagingQueue
+### -field hPagingQueue [out]
 
-[out] A paging queue handle that will be used to synchronize paging operations.
+A paging queue handle that will be used to synchronize paging operations.
 
-### -field hSyncObject
+### -field hSyncObject [out]
 
-[out] Handle to the monitored fence object used to synchronize paging operations for this paging queue. Destroying the paging queue (either implicitly or explicitly) will automatically destroy this sync object.
+Handle to the monitored fence object used to synchronize paging operations for this paging queue. Destroying the paging queue (either implicitly or explicitly) will automatically destroy this sync object.
 
-### -field FenceValueCPUVirtualAddress
+### -field FenceValueCPUVirtualAddress [out]
 
-[out] A read-only mapping of the paging fence object value for the CPU. This is a user mode address readable from the process that created the monitored fence object.
+A read-only mapping of the paging fence object value for the CPU. This is a user mode address readable from the process that created the monitored fence object.
 
-### -field PhysicalAdapterIndex
+### -field PhysicalAdapterIndex [in]
 
-[in] Physical adapter index (engine ordinal) for the queue.
+Physical adapter index (engine ordinal) for the queue.
 
 ## -remarks
 

@@ -4,7 +4,6 @@ title: VideoPortDoDma function (video.h)
 description: The VideoPortDoDma function is obsolete in Windows 2000 and later. VideoPortDoDma causes the miniport driver's HwVidStartDma function to be called.
 old-location: display\videoportdodma.htm
 tech.root: display
-ms.assetid: a827df55-ff88-439a-8d56-fba8212105a6
 ms.date: 05/10/2018
 keywords: ["VideoPortDoDma function"]
 ms.keywords: VideoPortDoDma, VideoPortDoDma function [Display Devices], VideoPort_Functions_febc78ee-355f-4689-9da9-f67f829d8a32.xml, display.videoportdodma, video/VideoPortDoDma
@@ -52,19 +51,19 @@ The <b>VideoPortDoDma</b> function is <b>obsolete</b> in Windows 2000 and later.
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's device extension.
 
-### -param pDma 
+### -param pDma [in]
 
-[in]
+
 Specifies a non-<b>NULL</b> DMA handle. This handle was obtained from a prior call to <b>VideoPortDoDma</b> or from the <b>OutputBuffer</b> member of the <a href="/windows-hardware/drivers/ddi/video/ns-video-_video_request_packet">VIDEO_REQUEST_PACKET</a> returned by <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportlockpages">VideoPortLockPages</a>.
 
-### -param DmaFlags 
+### -param DmaFlags [in]
 
-[in]
+
 Specifies the action to be performed. This member can be one of the following values:
 
 |Value|Meaning|

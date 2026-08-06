@@ -4,7 +4,6 @@ title: IDebugClient6 (dbgeng.h)
 description: This interface supports event context callbacks.
 old-location: debugger\idebugclient6.htm
 tech.root: debugger
-ms.assetid: 9F8DFF33-DE07-4061-9A9E-3C8172F75EB5
 ms.date: 05/03/2018
 keywords: ["IDebugClient6 interface"]
 ms.keywords: IDebugClient6, IDebugClient6 interface [Windows Debugging], IDebugClient6 interface [Windows Debugging],described, dbgeng/IDebugClient6, debugger.idebugclient6
@@ -50,7 +49,5 @@ This interface supports event context callbacks.
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugClient6</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IDebugClient6</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IDebugClient6</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IDebugClient6</b> also has these types of members:
+

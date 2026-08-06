@@ -4,7 +4,6 @@ title: _DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST (windot11.h)
 description: the DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST structure is included with a OID_DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST request. The structure contains the list of secondary device types advertised by a Wi-Fi Direct device.
 old-location: netvista\_dot11_wfd_secondary_device_type_list.htm
 tech.root: netvista
-ms.assetid: ABD61A6C-EE0A-49AF-AE8C-75014C2A09D4
 ms.date: 02/16/2018
 keywords: ["DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST structure"]
 ms.keywords: "*PDOT11_WFD_SECONDARY_DEVICE_TYPE_LIST, DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST, DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST structure [Network Drivers Starting with Windows Vista], PDOT11_WFD_SECONDARY_DEVICE_TYPE_LIST, PDOT11_WFD_SECONDARY_DEVICE_TYPE_LIST structure pointer [Network Drivers Starting with Windows Vista], _DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST, netvista._dot11_wfd_secondary_device_type_list, windot11/ DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST, windot11/PDOT11_WFD_SECONDARY_DEVICE_TYPE_LIST"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - Windot11.h
 api_name:
+ - _DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST
+ - PDOT11_WFD_SECONDARY_DEVICE_TYPE_LIST
  - DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST structure
@@ -52,7 +51,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>the <b>DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST</b> structure is included with a <a href="/windows-hardware/drivers/network/oid-dot11-wfd-secondary-device-type-list">OID_DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST</a> request. The structure contains the list of secondary device types advertised by a Wi-Fi Direct device.
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+the <b>DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST</b> structure is included with a <a href="/windows-hardware/drivers/network/oid-dot11-wfd-secondary-device-type-list">OID_DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST</a> request. The structure contains the list of secondary device types advertised by a Wi-Fi Direct device.
 
 ## -struct-fields
 
@@ -101,3 +103,4 @@ typedef struct _DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST {
   DOT11_WFD_DEVICE_TYPE SecondaryDeviceTypes[1];
 }  DOT11_WFD_SECONDARY_DEVICE_TYPE_LIST, *PDOT11_WFD_SECONDARY_DEVICE_TYPE_LIST;
 ```
+

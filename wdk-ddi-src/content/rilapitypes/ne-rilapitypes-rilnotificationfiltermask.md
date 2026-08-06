@@ -1,11 +1,10 @@
 ---
 UID: NE:rilapitypes.RILNOTIFICATIONFILTERMASK
 title: RILNOTIFICATIONFILTERMASK (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this enumeration in your code. Microsoft reserves the RILNOTIFICATIONFILTERMASK enumeration for internal use only."
 old-location: netvista\rilnotificationfiltermask.htm
 tech.root: netvista
-ms.assetid: 5dc72657-00ae-4fde-b9a7-a63616d934c0
-ms.date: 05/02/2018
+ms.date: 12/10/2021
 keywords: ["RILNOTIFICATIONFILTERMASK enumeration"]
 ms.keywords: RILNOTIFICATIONFILTERMASK, RILNOTIFICATIONFILTERMASK enumeration [Network Drivers Starting with Windows Vista], RIL_NFS_ALL, RIL_NFS_LOCATIONUPDATE, RIL_NFS_REGSTATUS_RATKIND, RIL_NFS_SIGNALQUALITY, netvista.rilnotificationfiltermask, ntddrilapitypes/RILNOTIFICATIONFILTERMASK, ntddrilapitypes/RIL_NFS_ALL, ntddrilapitypes/RIL_NFS_LOCATIONUPDATE, ntddrilapitypes/RIL_NFS_REGSTATUS_RATKIND, ntddrilapitypes/RIL_NFS_SIGNALQUALITY
 req.header: rilapitypes.h
@@ -60,3 +59,4 @@ This topic supports the Windows driver infrastructure and is not intended to be 
 
 ### -field RIL_NFS_ALL
 
+### -field RIL_NFS_LOCATIONUPDATE_LAC_TAC

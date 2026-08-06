@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._DEBUG_DEVICE_DESCRIPTOR
 title: DEBUG_DEVICE_DESCRIPTOR
-description: 
-tech.root: 
-ms.assetid: e2e442cb-2d4b-447f-9a83-1ae1a328a6c2
+description: "Learn more about: DEBUG_DEVICE_DESCRIPTOR structure"
+tech.root: devtest
 ms.date: 08/19/2019
 keywords: ["DEBUG_DEVICE_DESCRIPTOR structure"]
 ms.keywords: DEBUG_DEVICE_DESCRIPTOR, DEBUG_DEVICE_DESCRIPTOR, *PDEBUG_DEVICE_DESCRIPTOR,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _DEBUG_DEVICE_DESCRIPTOR
+ - PDEBUG_DEVICE_DESCRIPTOR
  - DEBUG_DEVICE_DESCRIPTOR
-product:
- - Windows
 ---
 
 # DEBUG_DEVICE_DESCRIPTOR structure
@@ -97,6 +96,14 @@ product:
 ### -field TransportType
 
 ### -field TransportData
+
+### -field DbgUncachedMemory
+
+### -field DbgSynthetic
+
+### -field Dbg2TableIndex
+
+### -field EfiIoMmuData
 
 ## -remarks
 

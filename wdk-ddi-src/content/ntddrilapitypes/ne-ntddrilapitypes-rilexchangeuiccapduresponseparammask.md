@@ -1,10 +1,9 @@
 ---
 UID: NE:ntddrilapitypes.RILEXCHANGEUICCAPDURESPONSEPARAMMASK
 title: RILEXCHANGEUICCAPDURESPONSEPARAMMASK (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this enumeration for internal use only. Don't use the RILEXCHANGEUICCAPDURESPONSEPARAMMASK enumeration in your code."
 old-location: netvista\rilexchangeuiccapduresponseparammask.htm
 tech.root: netvista
-ms.assetid: 24daa47b-993c-49ee-b4e2-462cd7570f3c
 ms.date: 05/02/2018
 keywords: ["RILEXCHANGEUICCAPDURESPONSEPARAMMASK enumeration"]
 ms.keywords: RILEXCHANGEUICCAPDURESPONSEPARAMMASK, RILEXCHANGEUICCAPDURESPONSEPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_EUAR_ALL, RIL_PARAM_EUAR_RESPONSEAPDU, netvista.rilexchangeuiccapduresponseparammask, ntddrilapitypes/RILEXCHANGEUICCAPDURESPONSEPARAMMASK, ntddrilapitypes/RIL_PARAM_EUAR_ALL, ntddrilapitypes/RIL_PARAM_EUAR_RESPONSEAPDU

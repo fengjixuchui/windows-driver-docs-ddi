@@ -4,7 +4,6 @@ title: IDebugControl3::SetExpressionSyntaxByName (dbgeng.h)
 description: The SetExpressionSyntaxByName method sets the syntax that the engine will use to evaluate expressions.
 old-location: debugger\setexpressionsyntaxbyname.htm
 tech.root: debugger
-ms.assetid: b9f1618a-e4f7-4eb1-952f-0f565a068dab
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::SetExpressionSyntaxByName"]
 ms.keywords: IDebugControl3 interface [Windows Debugging],SetExpressionSyntaxByName method, IDebugControl3.SetExpressionSyntaxByName, IDebugControl3::SetExpressionSyntaxByName, IDebugControl_88ebbf3c-a6f7-41d1-84e8-291a8db101c2.xml, SetExpressionSyntaxByName, SetExpressionSyntaxByName method [Windows Debugging], SetExpressionSyntaxByName method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl3::SetExpressionSyntaxByName, debugger.setexpressionsyntaxbyname
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl3.SetExpressionSyntaxByName
+ - IDebugControl3::SetExpressionSyntaxByName
 ---
 
 # IDebugControl3::SetExpressionSyntaxByName
@@ -50,9 +49,9 @@ The <b>SetExpressionSyntaxByName</b>  method sets the syntax that the engine wil
 
 ## -parameters
 
-### -param AbbrevName 
+### -param AbbrevName [in]
 
-[in]
+
 Specifies the abbreviated name of the syntax.  It can be one of the following strings:
 
 
@@ -114,3 +113,4 @@ After the expression syntax has been changed, the engine sends out notification 
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setexpressionsyntax">SetExpressionSyntax</a>
+

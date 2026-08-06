@@ -4,7 +4,6 @@ title: PFNSCO_INDICATION_CALLBACK (bthddi.h)
 description: Profile drivers implement a SCO callback function to provide the Bluetooth driver stack with a mechanism to notify the profile driver about incoming SCO connection requests from remote devices, and any changes to the status of a currently open SCO connection.
 old-location: bltooth\sco_callback_function.htm
 tech.root: bltooth
-ms.assetid: abc9fc88-6852-4bfb-8271-7a73a508c397
 ms.date: 04/27/2018
 keywords: ["PFNSCO_INDICATION_CALLBACK callback function"]
 ms.keywords: PFNSCO_INDICATION_CALLBACK, PFNSCO_INDICATION_CALLBACK callback, SCOIndicationCallback, SCOIndicationCallback callback function [Bluetooth Devices], bltooth.sco_callback_function, bth_funcs_05d035df-348d-42c0-8041-5d3822b0346e.xml, bthddi/SCOIndicationCallback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - bthddi.h
 api_name:
- - SCOIndicationCallback
+ - PFNSCO_INDICATION_CALLBACK
 ---
 
 # PFNSCO_INDICATION_CALLBACK callback function
@@ -52,9 +51,9 @@ Profile drivers implement a SCO callback function to provide the Bluetooth drive
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 For incoming remote connection request indications, this is the context specified by the profile
      driver in the 
      <b>IndicationCallbackContext</b> member of the 
@@ -64,16 +63,16 @@ For incoming remote connection request indications, this is the context specifie
      <b>CallbackContext</b> member specified by the profile driver when it built and sent a 
      <a href="/previous-versions/ff536626(v=vs.85)">BRB_SCO_OPEN_CHANNEL</a> BRB.
 
-### -param Indication 
+### -param Indication [in]
 
-[in]
+
 A 
      <a href="/windows-hardware/drivers/ddi/bthddi/ne-bthddi-_sco_indication_code">SCO_INDICATION_CODE</a> value that indicates
      the type of SCO event.
 
-### -param Parameters 
+### -param Parameters [in]
 
-[in]
+
 A 
      <a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_sco_indication_parameters">
      SCO_INDICATION_PARAMETERS</a> structure that contains parameter information based on the value passed
@@ -135,3 +134,4 @@ The SCO_INDICATION_PARAMETERS structure held in the
 
 
 <a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_brb_sco_register_server">_BRB_SCO_REGISTER_SERVER</a>
+

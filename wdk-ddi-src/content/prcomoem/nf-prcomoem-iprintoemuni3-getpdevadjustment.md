@@ -4,7 +4,6 @@ title: IPrintOemUni3::GetPDEVAdjustment (prcomoem.h)
 description: The IPrintOemUni3::GetPDEVAdjustment method enables a plug-in to override specific PDEV settings.
 old-location: print\iprintoemuni3_getpdevadjustment.htm
 tech.root: print
-ms.assetid: bb7d7248-9520-4bc8-8483-b05b78608fc7
 ms.date: 04/20/2018
 keywords: ["IPrintOemUni3::GetPDEVAdjustment"]
 ms.keywords: GetPDEVAdjustment, GetPDEVAdjustment method [Print Devices], GetPDEVAdjustment method [Print Devices],IPrintOemUni3 interface, IPrintOemUni3 interface [Print Devices],GetPDEVAdjustment method, IPrintOemUni3.GetPDEVAdjustment, IPrintOemUni3::GetPDEVAdjustment, prcomoem/IPrintOemUni3::GetPDEVAdjustment, print.iprintoemuni3_getpdevadjustment, print_unidrv-pscript_rendering_d30dca0e-9e1d-4d42-9f9d-e6abd364da96.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemUni3.GetPDEVAdjustment
+ - IPrintOemUni3::GetPDEVAdjustment
 ---
 
 # IPrintOemUni3::GetPDEVAdjustment
@@ -103,9 +102,9 @@ Pointer to a structure that contains the planned settings that are used if there
 
 Specifies the size, in bytes, of the structure pointed to by <i>pBuf</i>.
 
-### -param pbAdjustmentDone 
+### -param pbAdjustmentDone [out]
 
-[out]
+
 Pointer to a memory location that the plug-in sets to <b>TRUE</b> when it actually changes a value in the buffer. This may be used by the driver for optimizations.
 
 ## -returns
@@ -145,3 +144,4 @@ Currently, the Unidrv driver calls <code>IPrintOemUni3::GetPDEVAdjustment</code>
 
 
 <a href="/windows-hardware/drivers/ddi/printoem/ns-printoem-_pdev_use_true_color">PDEV_USE_TRUE_COLOR</a>
+

@@ -4,7 +4,6 @@ title: _CIP_VALIDATE_INFO (61883.h)
 description: The CIP_VALIDATE_INFO structure contains information about the frame.
 old-location: ieee\cip_validate_info.htm
 tech.root: IEEE
-ms.assetid: 98993973-91a4-456a-9343-c744408055ed
 ms.date: 02/15/2018
 keywords: ["CIP_VALIDATE_INFO structure"]
 ms.keywords: "*PCIP_VALIDATE_INFO, 61883/CIP_VALIDATE_INFO, 61883/PCIP_VALIDATE_INFO, 61883_structures_9f8bc3f2-ad43-4e0b-a4f9-8d441397f11d.xml, CIP_VALIDATE_INFO, CIP_VALIDATE_INFO structure [Buses], IEEE.cip_validate_info, PCIP_VALIDATE_INFO, PCIP_VALIDATE_INFO structure pointer [Buses], _CIP_VALIDATE_INFO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _CIP_VALIDATE_INFO
+ - PCIP_VALIDATE_INFO
  - CIP_VALIDATE_INFO
 ---
 
@@ -77,3 +78,4 @@ The IEC-61883 protocol driver allocates and initializes this structure from the 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_cip_frame">CIP_FRAME</a>
+

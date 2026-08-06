@@ -4,7 +4,6 @@ title: IPnpCallbackSelfManagedIo::OnSelfManagedIoFlush (wudfddi.h)
 description: The OnSelfManagedIoFlush method flushes the device for a device's self-managed I/O operations.
 old-location: wdf\ipnpcallbackselfmanagedio_onselfmanagedioflush.htm
 tech.root: wdf
-ms.assetid: dee0e30b-ad03-43e4-8a0c-07d3782d7857
 ms.date: 02/26/2018
 keywords: ["IPnpCallbackSelfManagedIo::OnSelfManagedIoFlush"]
 ms.keywords: IPnpCallbackSelfManagedIo interface,OnSelfManagedIoFlush method, IPnpCallbackSelfManagedIo.OnSelfManagedIoFlush, IPnpCallbackSelfManagedIo::OnSelfManagedIoFlush, OnSelfManagedIoFlush, OnSelfManagedIoFlush method, OnSelfManagedIoFlush method,IPnpCallbackSelfManagedIo interface, UMDFDeviceObjectRef_ddf0d0a2-a913-4e15-b482-16cae945c4a2.xml, umdf.ipnpcallbackselfmanagedio_onselfmanagedioflush, wdf.ipnpcallbackselfmanagedio_onselfmanagedioflush, wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoFlush
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IPnpCallbackSelfManagedIo.OnSelfManagedIoFlush
+ - IPnpCallbackSelfManagedIo::OnSelfManagedIoFlush
 ---
 
 # IPnpCallbackSelfManagedIo::OnSelfManagedIoFlush
@@ -52,9 +51,9 @@ The <b>OnSelfManagedIoFlush</b> method flushes the device for a device's self-ma
 
 ## -parameters
 
-### -param pWdfDevice 
+### -param pWdfDevice [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice">IWDFDevice</a> interface for the device object of the device that is flushed.
 
 ## -remarks
@@ -72,3 +71,4 @@ A driver registers the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createdevice">IWDFDriver::CreateDevice</a>
+

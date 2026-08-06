@@ -4,7 +4,6 @@ title: READ_REGISTER_UCHAR function (wudfddi_hwaccess.h)
 description: The READ_REGISTER_UCHAR function reads a byte from the specified register address.
 old-location: wdf\read_register_uchar.htm
 tech.root: wdf
-ms.assetid: 149DE843-937C-4A6F-AB2D-ACC8895D5E91
 ms.date: 02/26/2018
 keywords: ["READ_REGISTER_UCHAR function"]
 ms.keywords: READ_REGISTER_UCHAR, READ_REGISTER_UCHAR function, umdf.read_register_uchar, wdf.read_register_uchar, wudfddi_hwaccess/READ_REGISTER_UCHAR
@@ -52,14 +51,14 @@ The <b>READ_REGISTER_UCHAR</b> function reads a byte from the specified register
 
 ## -parameters
 
-### -param pDevice 
+### -param pDevice [in]
 
-[in]
+
 Specifies a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a> interface for the device object of the device to access.
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the register address, which must be a mapped range in memory space.
 
 ## -returns

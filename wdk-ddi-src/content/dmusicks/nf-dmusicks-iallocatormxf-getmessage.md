@@ -4,7 +4,6 @@ title: IAllocatorMXF::GetMessage (dmusicks.h)
 description: The GetMessage method serves as the retrieval point for any DirectMusic kernel-mode component that utilizes the port driver's allocator to reuse DMUS_KERNEL_EVENT structures.
 old-location: audio\iallocatormxf_getmessage.htm
 tech.root: audio
-ms.assetid: d5b56926-bcfb-4411-b24d-cc0758852510
 ms.date: 05/08/2018
 keywords: ["IAllocatorMXF::GetMessage"]
 ms.keywords: GetMessage, GetMessage method [Audio Devices], GetMessage method [Audio Devices],IAllocatorMXF interface, IAllocatorMXF interface [Audio Devices],GetMessage method, IAllocatorMXF.GetMessage, IAllocatorMXF::GetMessage, audio.iallocatormxf_getmessage, audmp-routines_24207ff5-69a9-47bd-a756-78c2a218080e.xml, dmusicks/IAllocatorMXF::GetMessage
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dmusicks.h
 api_name:
- - IAllocatorMXF.GetMessage
+ - IAllocatorMXF::GetMessage
 ---
 
 # IAllocatorMXF::GetMessage
@@ -50,9 +49,9 @@ The <code>GetMessage</code> method serves as the retrieval point for any DirectM
 
 ## -parameters
 
-### -param ppDMKEvt 
+### -param ppDMKEvt [out]
 
-[out]
+
 Output pointer for the MIDI event. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the event structure being retrieved from the allocator. The structure itself is empty (zeroed by the allocator).
 
 ## -returns
@@ -78,3 +77,4 @@ For more information about the allocator, see <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/ddi/dmusicks/nf-dmusicks-imxf-putmessage">IMXF::PutMessage</a>
+

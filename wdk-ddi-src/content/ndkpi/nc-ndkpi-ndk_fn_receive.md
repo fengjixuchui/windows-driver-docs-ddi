@@ -4,7 +4,6 @@ title: NDK_FN_RECEIVE (ndkpi.h)
 description: The NdkReceive (NDK_FN_RECEIVE) function posts a receive request on an NDK queue pair (QP).
 old-location: netvista\ndk_fn_receive.htm
 tech.root: netvista
-ms.assetid: DC40C6B5-3F52-4A7E-B8FC-917ACDF8309A
 ms.date: 05/02/2018
 keywords: ["NDK_FN_RECEIVE callback function"]
 ms.keywords: NDK_FN_RECEIVE, NDK_FN_RECEIVE callback, NdkReceive, NdkReceive callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkReceive, netvista.ndk_fn_receive
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkReceive
+ - NDK_FN_RECEIVE
 ---
 
 # NDK_FN_RECEIVE callback function
@@ -50,24 +49,24 @@ api_name:
 
 ## -parameters
 
-### -param pNdkQp 
+### -param pNdkQp [in]
 
-[in]
+
 A pointer to an NDK queue pair (QP) object
 (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_qp">NDK_QP</a>).
 
-### -param RequestContext 
+### -param RequestContext [in, optional]
 
-[in, optional]
+
 A context value to be returned in the <b>RequestContext</b> member of the <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_result">NDK_RESULT</a> structure for this request.
 
-### -param NDK_SGE
+### -param pSgl
 
 An array of SGE structures (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_sge">NDK_SGE</a>) that represent the buffers to receive incoming data.
 
-### -param nSge 
+### -param nSge [in]
 
-[in]
+
 The number of SGE structures in the array  that is specified in the <i>pSgl</i>
 parameter.
 
@@ -124,3 +123,4 @@ An error occurred.
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_sge">NDK_SGE</a>
+

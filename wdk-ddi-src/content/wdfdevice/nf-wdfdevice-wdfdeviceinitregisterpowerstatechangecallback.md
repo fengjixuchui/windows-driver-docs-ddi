@@ -4,7 +4,6 @@ title: WdfDeviceInitRegisterPowerStateChangeCallback function (wdfdevice.h)
 description: The WdfDeviceInitRegisterPowerStateChangeCallback method registers a driver-supplied event callback function that the framework calls when a device's power state machine changes state.
 old-location: wdf\wdfdeviceinitregisterpowerstatechangecallback.htm
 tech.root: wdf
-ms.assetid: f3c09dfb-d327-488b-8e5d-77a579d1e1f0
 ms.date: 02/26/2018
 keywords: ["WdfDeviceInitRegisterPowerStateChangeCallback function"]
 ms.keywords: DFDeviceObjectGeneralRef_c2199058-308e-4207-b035-30de28c64fa5.xml, WdfDeviceInitRegisterPowerStateChangeCallback, WdfDeviceInitRegisterPowerStateChangeCallback method, kmdf.wdfdeviceinitregisterpowerstatechangecallback, wdf.wdfdeviceinitregisterpowerstatechangecallback, wdfdevice/WdfDeviceInitRegisterPowerStateChangeCallback
@@ -49,28 +48,31 @@ api_name:
 
 <p class="CCE_Message">[Applies to KMDF only]</p>
 
+>[!NOTE]
+>This method is for Microsoft internal use only.
+
 The <b>WdfDeviceInitRegisterPowerStateChangeCallback</b> method registers a driver-supplied event callback function that the framework calls when a device's power state machine changes state.
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A caller-supplied pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
-### -param PowerState 
+### -param PowerState [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_device_power_state">WDF_DEVICE_POWER_STATE</a> enumerator that identifies the power machine state for which the driver is requesting notification.
 
-### -param EvtDevicePowerStateChange 
+### -param EvtDevicePowerStateChange [in]
 
-[in]
+
 A caller-supplied pointer to the driver's <a href="/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_power_state_change_notification">EvtDevicePowerStateChange</a> event callback function.
 
-### -param CallbackTypes 
+### -param CallbackTypes [in]
 
-[in]
+
 An ORed combination of <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_state_notification_type">WDF_STATE_NOTIFICATION_TYPE</a>-typed enumerators.
 
 ## -returns

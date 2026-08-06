@@ -1,8 +1,7 @@
 ---
 UID: NS:d3d10umddi.D3DWDDM2_4DDI_VIDEO_OUTPUT
 title: D3DWDDM2_4DDI_VIDEO_OUTPUT (d3d10umddi.h)
-description: This structure is not implemented.
-ms.assetid: 70525c7d-5921-486c-b57c-82ac5258c4fb
+description: "The D3DWDDM2_4DDI_VIDEO_OUTPUT structure is not implemented. Don't use this structure in your code."
 ms.date: 10/19/2018
 keywords: ["D3DWDDM2_4DDI_VIDEO_OUTPUT structure"]
 ms.keywords: D3DWDDM2_4DDI_VIDEO_OUTPUT, D3DWDDM2_4DDI_VIDEO_OUTPUT,
@@ -32,8 +31,6 @@ api_location:
  - d3d10umddi.h
 api_name:
  - D3DWDDM2_4DDI_VIDEO_OUTPUT
-product:
- - Windows
 ---
 
 # D3DWDDM2_4DDI_VIDEO_OUTPUT structure

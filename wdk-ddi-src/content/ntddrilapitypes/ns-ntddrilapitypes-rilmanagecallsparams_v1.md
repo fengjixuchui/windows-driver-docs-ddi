@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILMANAGECALLSPARAMS_V1
 title: RILMANAGECALLSPARAMS_V1 (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILMANAGECALLSPARAMS_V1 structure for internal use only. Don't use the RILMANAGECALLSPARAMS_V1 structure in your code."
 old-location: netvista\rilmanagecallsparams_v1.htm
 tech.root: netvista
-ms.assetid: 7e89e417-59aa-4bcd-a6a9-0eaaa6a7a776
 ms.date: 05/02/2018
 keywords: ["RILMANAGECALLSPARAMS_V1 structure"]
 ms.keywords: "*LPRILMANAGECALLSPARAMS_V1, RILMANAGECALLSPARAMS_V1, RILMANAGECALLSPARAMS_V1 structure [Network Drivers Starting with Windows Vista], netvista.rilmanagecallsparams_v1, ntddrilapitypes/RILMANAGECALLSPARAMS_V1"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILMANAGECALLSPARAMS_V1
+ - LPRILMANAGECALLSPARAMS_V1
 ---
 
 # RILMANAGECALLSPARAMS_V1 structure (ntddrilapitypes.h)

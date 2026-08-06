@@ -4,7 +4,6 @@ title: IPortableDevicePropVariantCollection::GetType (portabledevicetypes.h)
 description: Retrieves the data type of the items in the collection.
 old-location: wpddk\iportabledevicepropvariantcollection_gettype.htm
 tech.root: wpd_dk
-ms.assetid: d1d84b17-96e6-49a5-bf54-ffce1cb8f405
 ms.date: 02/15/2018
 keywords: ["IPortableDevicePropVariantCollection::GetType"]
 ms.keywords: GetType, GetType method, GetType method,IPortableDevicePropVariantCollection interface, IPortableDevicePropVariantCollection interface,GetType method, IPortableDevicePropVariantCollection.GetType, IPortableDevicePropVariantCollection::GetType, IPortableDevicePropVariantCollectionGetType, portabledevicetypes/IPortableDevicePropVariantCollection::GetType, wpddk.iportabledevicepropvariantcollection_gettype
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDevicePropVariantCollection.GetType
+ - IPortableDevicePropVariantCollection::GetType
 ---
 
 # IPortableDevicePropVariantCollection::GetType
@@ -51,9 +50,9 @@ Retrieves the data type of the items in the collection.
 
 ## -parameters
 
-### -param pvt 
+### -param pvt [out]
 
-[out]
+
 A Platform SDK <b>VARTYPE</b> enumeration value that indicates the data type of all the items in the collection.
 
 ## -returns
@@ -96,3 +95,4 @@ All items that are stored in an <b>IPortableDevicePropVariantCollection</b> are 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicepropvariantcollection">IPortableDevicePropVariantCollection Interface</a>
+

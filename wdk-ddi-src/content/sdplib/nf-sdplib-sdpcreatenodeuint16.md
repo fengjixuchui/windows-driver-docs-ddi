@@ -4,7 +4,6 @@ title: SdpCreateNodeUInt16 function (sdplib.h)
 description: The Bluetooth SdpCreateNodeUInt16 function is used to allocate and initialize an SDP_NODE structure to an unsigned 16-bit integer type.
 old-location: bltooth\sdpcreatenodeuint16.htm
 tech.root: bltooth
-ms.assetid: 8a864cfa-fa0b-4a8f-a229-2a28e1b33f4a
 ms.date: 04/27/2018
 keywords: ["SdpCreateNodeUInt16 function"]
 ms.keywords: SdpCreateNodeUInt16, SdpCreateNodeUInt16 function [Bluetooth Devices], bltooth.sdpcreatenodeuint16, bth_funcs_9cc3e81b-f444-4a54-810e-5b779c597e82.xml, sdplib/SdpCreateNodeUInt16
@@ -53,14 +52,14 @@ The Bluetooth
 
 ## -parameters
 
-### -param usVal 
+### -param usVal [in]
 
-[in]
+
 The unsigned 16-bit integer value that is used to initialize the SDP_NODE structure.
 
-### -param tag 
+### -param tag [in]
 
-[in]
+
 A profile driver defined tag to associate with the node.
 
 ## -returns

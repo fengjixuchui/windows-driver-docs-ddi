@@ -4,7 +4,6 @@ title: _STORAGE_DEVICE_NUMBER_EX (ntddstor.h)
 description: The STORAGE_DEVICE_NUMBER_EX structure is used in conjunction with the IOCTL_STORAGE_GET_DEVICE_NUMBER_EX request to retrieve the FILE_DEVICE_XXX device type, the device number, device GUID, and, for a device that can be partitioned, the partition number assigned to a device by the driver when the device is started.
 old-location: storage\storage_device_number.htm
 tech.root: storage
-ms.assetid: 6134d9e6-7241-4533-904b-fbedb1bcc4b5
 ms.date: 11/08/2019
 keywords: ["STORAGE_DEVICE_NUMBER_EX structure"]
 ms.keywords: "*PSTORAGE_DEVICE_NUMBER_EX, PSTORAGE_DEVICE_NUMBER_EX, PSTORAGE_DEVICE_NUMBER_EX structure pointer [Storage Devices], STORAGE_DEVICE_NUMBER_EX, STORAGE_DEVICE_NUMBER_EX structure [Storage Devices], _STORAGE_DEVICE_NUMBER_EX, ntddstor/PSTORAGE_DEVICE_NUMBER_EX, ntddstor/STORAGE_DEVICE_NUMBER_EX"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddstor.h
 api_name:
+ - _STORAGE_DEVICE_NUMBER_EX
+ - PSTORAGE_DEVICE_NUMBER_EX
  - STORAGE_DEVICE_NUMBER_EX
 ---
 
@@ -99,3 +100,4 @@ The values in the STORAGE_DEVICE_NUMBER_EX structure are guaranteed to remain un
 ## -see-also
 
 [IOCTL_STORAGE_GET_DEVICE_NUMBER_EX](./ni-ntddstor-ioctl_storage_get_device_number_ex.md)
+

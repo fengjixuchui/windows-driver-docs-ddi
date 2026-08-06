@@ -4,7 +4,6 @@ title: IoUpdateShareAccess function (wdm.h)
 description: The IoUpdateShareAccess routine updates the share access for the given file object, usually when the file is being opened.
 old-location: kernel\ioupdateshareaccess.htm
 tech.root: kernel
-ms.assetid: b8e14607-a8d4-4e15-8b1d-92096879ea65
 ms.date: 04/30/2018
 keywords: ["IoUpdateShareAccess function"]
 ms.keywords: IoUpdateShareAccess, IoUpdateShareAccess routine [Kernel-Mode Driver Architecture], k104_24b78a73-20f1-4d8b-be0e-67964e8dbc31.xml, kernel.ioupdateshareaccess, wdm/IoUpdateShareAccess
@@ -50,14 +49,14 @@ The <b>IoUpdateShareAccess</b> routine updates the share access for the given fi
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to a referenced file object representing the file or associated device object for which to update the share access.
 
-### -param ShareAccess 
+### -param ShareAccess [in, out]
 
-[in, out]
+
 Pointer to the common <b>SHARE_ACCESS</b> structure associated with the <i>FileObject</i>. Drivers should treat this structure as opaque.
 
 ## -remarks

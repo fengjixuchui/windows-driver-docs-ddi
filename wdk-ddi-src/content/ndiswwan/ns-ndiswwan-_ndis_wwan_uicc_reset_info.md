@@ -4,7 +4,6 @@ title: _NDIS_WWAN_UICC_RESET_INFO (ndiswwan.h)
 description: The NDIS_WWAN_UICC_RESET_INFO structure represents the passthrough status of a modem miniport adapter for a UICC smart card.
 old-location: netvista\ndis_wwan_uicc_reset_info.htm
 tech.root: netvista
-ms.assetid: 9CBAFC44-187A-41ED-9405-1208167AC75D
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_UICC_RESET_INFO structure"]
 ms.keywords: "*PNDIS_WWAN_UICC_RESET_INFO, NDIS_WWAN_UICC_RESET_INFO, NDIS_WWAN_UICC_RESET_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_UICC_RESET_INFO, PNDIS_WWAN_UICC_RESET_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_UICC_RESET_INFO, ndiswwan/NDIS_WWAN_UICC_RESET_INFO, ndiswwan/PNDIS_WWAN_UICC_RESET_INFO, netvista.ndis_wwan_uicc_reset_info"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_UICC_RESET_INFO
+ - PNDIS_WWAN_UICC_RESET_INFO
  - NDIS_WWAN_UICC_RESET_INFO
 ---
 
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_UICC_RESET_INFO)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field uStatus
 
@@ -167,7 +168,7 @@ A formatted <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_uicc_reset
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -176,3 +177,4 @@ A formatted <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_uicc_reset
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_uicc_reset_info">WWAN_UICC_RESET_INFO</a>
+

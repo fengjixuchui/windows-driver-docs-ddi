@@ -2,14 +2,14 @@
 UID: NF:wdm.IoGetDriverDirectory
 title: IoGetDriverDirectory function (wdm.h)
 description: Returns a handle to a directory on disk from which the driver can read and write files. The files in that directory apply to a specific driver object.
-ms.assetid: ff2a6c2a-e402-4e8a-920a-c9baa9aa237e
+tech.root: kernel
 ms.date: 10/19/2018
 keywords: ["IoGetDriverDirectory function"]
 ms.keywords: IoGetDriverDirectory
 req.header: wdm.h
 req.include-header: 
 req.target-type: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 10, version 1803
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -46,25 +46,26 @@ Returns a handle to a directory on disk from which the driver can read and write
 
 ## -parameters
 
-### -param DriverObject
+### -param DriverObject [_In_]
 
-[_In_] A pointer to the driver object ([**DRIVER_OBJECT**](ns-wdm-_driver_object.md) structure) of the calling driver.
+A pointer to the driver object ([**DRIVER_OBJECT**](ns-wdm-_driver_object.md) structure) of the calling driver.
 
-### -param DirectoryType
+### -param DirectoryType [_In_]
 
-[_In_] A [**_DRIVER_DIRECTORY_TYPE**](ne-wdm-_driver_directory_type.md)-type value that indicates the type of requested directory.
+A [**_DRIVER_DIRECTORY_TYPE**](ne-wdm-_driver_directory_type.md)-type value that indicates the type of requested directory.
 
-### -param Flags
+### -param Flags [_In_]
 
-[_In_] Must be 0.
+Must be 0.
 
-### -param DriverDirectoryHandle
+### -param DriverDirectoryHandle [_Out_]
 
-[_Out_] A pointer to a variable that receives a HANDLE to the requested driver directory. The caller must not pass NULL.
+A pointer to a variable that receives a HANDLE to the requested driver directory. The caller must not pass NULL.
 
 ## -returns
 
 Returns an appropriate [NTSTATUS value](/windows-hardware/drivers/kernel/ntstatus-values). Possible values include:
+
 | Error code               | Description                                                                                        |
 | ------------------------ | -------------------------------------------------------------------------------------------------- |
 | STATUS_SUCCESS           | The call successfully opened a handle to the requested driver directory.                           |

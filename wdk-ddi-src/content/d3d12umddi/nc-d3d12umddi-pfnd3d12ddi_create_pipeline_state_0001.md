@@ -1,8 +1,7 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_CREATE_PIPELINE_STATE_0001
 title: PFND3D12DDI_CREATE_PIPELINE_STATE_0001 (d3d12umddi.h)
-description: The pfnCreatePipelineState callback function creates a pipeline state.
-ms.assetid: 64291d84-d4c1-4629-927f-a57364d2d8c4
+description: The PFND3D12DDI_CREATE_PIPELINE_STATE_0001 callback function creates a pipeline state.
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CREATE_PIPELINE_STATE_0001 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CREATE_PIPELINE_STATE_0001
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ The pfnCreatePipelineState callback function creates a pipeline state.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 A value used to create a pipeline state.
 

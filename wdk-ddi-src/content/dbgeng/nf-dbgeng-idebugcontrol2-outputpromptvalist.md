@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl2.OutputPromptVaList
 title: IDebugControl2::OutputPromptVaList (dbgeng.h)
-description: The OutputPromptVaList method formats and sends a user prompt to the output callback objects.
+description: Learn about the OutputPromptVaList method, which formats and sends a user prompt to the output callback objects.
 old-location: debugger\outputpromptvalist.htm
 tech.root: debugger
-ms.assetid: 08140a38-19dd-4fce-8659-ab5eb3257f2f
 ms.date: 05/03/2018
 keywords: ["IDebugControl2::OutputPromptVaList"]
 ms.keywords: IDebugControl interface [Windows Debugging],OutputPromptVaList method, IDebugControl2 interface [Windows Debugging],OutputPromptVaList method, IDebugControl2.OutputPromptVaList, IDebugControl2::OutputPromptVaList, IDebugControl3 interface [Windows Debugging],OutputPromptVaList method, IDebugControl3::OutputPromptVaList, IDebugControl::OutputPromptVaList, IDebugControl_fc743964-a97c-45d2-8167-0e7401c7a546.xml, OutputPromptVaList, OutputPromptVaList method [Windows Debugging], OutputPromptVaList method [Windows Debugging],IDebugControl interface, OutputPromptVaList method [Windows Debugging],IDebugControl2 interface, OutputPromptVaList method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::OutputPromptVaList, dbgeng/IDebugControl3::OutputPromptVaList, dbgeng/IDebugControl::OutputPromptVaList, debugger.outputpromptvalist
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.OutputPromptVaList
- - IDebugControl2.OutputPromptVaList
- - IDebugControl3.OutputPromptVaList
+ - IDebugControl2::OutputPromptVaList
 ---
 
 # IDebugControl2::OutputPromptVaList
@@ -52,14 +49,14 @@ The <b>OutputPromptVaList</b>  method formats and sends a user prompt to the <a 
 
 ## -parameters
 
-### -param OutputControl 
+### -param OutputControl [in]
 
-[in]
+
 Specifies an output control that determines which of the client's output callbacks will receive the output.  For possible values, see <a href="/windows-hardware/drivers/debugger/debug-outctl-xxx">DEBUG_OUTCTL_XXX</a>.
 
-### -param Format 
+### -param Format [in, optional]
 
-[in, optional]
+
 Specifies the format string, as in <b>printf</b>.  Typically, conversion characters work exactly as they do in C. For the floating-point conversion characters, the 64-bit argument is interpreted as a 32-bit floating-point number unless the <b>l</b>  modifier is used.
 
 The <b>%p</b> conversion character is supported, but it represents a pointer in a target's address space.  It might not have any modifiers and it uses the debugger's internal address formatting.  The following additional conversion characters are supported.
@@ -238,9 +235,9 @@ String that contains the name of the specified symbol (and displacement, if any)
 
 If <i>Format</i> is <b>NULL</b>, only the standard prompt text is sent to the output callbacks.
 
-### -param Args 
+### -param Args [in]
 
-[in]
+
 Specifies additional parameters that represent values to be inserted into the output during formatting.  <i>Args</i> must be initialized using <b>va_start</b>. This method does not call <b>va_end</b>.
 
 ## -returns
@@ -302,3 +299,4 @@ For more information about prompting the user, see <a href="/windows-hardware/dr
 
 
 <a href="/previous-versions/ff553227(v=vs.85)">OutputPrompt</a>
+

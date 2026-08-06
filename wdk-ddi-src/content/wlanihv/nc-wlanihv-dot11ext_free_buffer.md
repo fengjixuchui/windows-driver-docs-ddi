@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_FREE_BUFFER
 title: DOT11EXT_FREE_BUFFER (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_FREE_BUFFER callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extfreebuffer.htm
 tech.root: netvista
-ms.assetid: a6e49914-29c0-47d2-936b-17c48958cb36
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_FREE_BUFFER callback"]
 ms.keywords: DOT11EXT_FREE_BUFFER, Dot11ExtFreeBuffer, Dot11ExtFreeBuffer callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_af721540-28a8-43c2-a649-ce0f6fb9adce.xml, netvista.dot11extfreebuffer, wlanihv/Dot11ExtFreeBuffer
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_FREE_BUFFER
  - wlanihv/DOT11EXT_FREE_BUFFER
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtFreeBuffer
+ - DOT11EXT_FREE_BUFFER
 ---
 
 # DOT11EXT_FREE_BUFFER callback
@@ -53,9 +51,9 @@ api_name:
 
 ## -parameters
 
-### -param pvMemory 
+### -param pvMemory [in, optional]
 
-[in, optional]
+
 A pointer to the buffer to be freed. If the value of
      <i>pvMemory</i> is <b>NULL</b>, the
      <b>Dot11ExtFreeBuffer</b> function returns immediately.
@@ -88,3 +86,4 @@ For more information about the IHV Handler functions, see
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_allocate_buffer.md">Dot11ExtAllocateBuffer</a>
+

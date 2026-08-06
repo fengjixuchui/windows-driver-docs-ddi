@@ -4,14 +4,13 @@ title: _DXGK_CHILD_DESCRIPTOR (dispmprt.h)
 description: The DXGK_CHILD_DESCRIPTOR structure holds identification and capability information for an individual child device of the display adapter.
 old-location: display\dxgk_child_descriptor.htm
 tech.root: display
-ms.assetid: a814da0c-3712-4e7b-9349-a446d7b32c90
 ms.date: 05/10/2018
 keywords: ["DXGK_CHILD_DESCRIPTOR structure"]
 ms.keywords: "*PDXGK_CHILD_DESCRIPTOR, DXGK_CHILD_DESCRIPTOR, DXGK_CHILD_DESCRIPTOR structure [Display Devices], DmStructs_711f63dc-7ad9-49d8-b83b-5e375764a762.xml, PDXGK_CHILD_DESCRIPTOR, PDXGK_CHILD_DESCRIPTOR structure pointer [Display Devices], _DXGK_CHILD_DESCRIPTOR, display.dxgk_child_descriptor, dispmprt/DXGK_CHILD_DESCRIPTOR, dispmprt/PDXGK_CHILD_DESCRIPTOR"
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Dispmprt.h
 api_name:
+ - _DXGK_CHILD_DESCRIPTOR
+ - PDXGK_CHILD_DESCRIPTOR
  - DXGK_CHILD_DESCRIPTOR
 ---
 
@@ -91,3 +92,4 @@ Each child device of type <b>TypeVideoOutput</b> is associated with a video pres
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_child_status">DxgkDdiQueryChildStatus</a>
+

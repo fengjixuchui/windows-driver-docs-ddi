@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSystemObjects4.GetNumberProcesses
 title: IDebugSystemObjects4::GetNumberProcesses (dbgeng.h)
-description: The GetNumberProcesses method returns the number of processes for the current target.
+description: The GetNumberProcesses method returns the number of processes for the current target. This method belongs to the IDebugSystemObjects4 interface.
 old-location: debugger\getnumberprocesses.htm
 tech.root: debugger
-ms.assetid: bf0c750f-0e29-42d9-a127-953e3d49b969
 ms.date: 05/03/2018
 keywords: ["IDebugSystemObjects4::GetNumberProcesses"]
 ms.keywords: GetNumberProcesses, GetNumberProcesses method [Windows Debugging], GetNumberProcesses method [Windows Debugging],IDebugSystemObjects interface, GetNumberProcesses method [Windows Debugging],IDebugSystemObjects2 interface, GetNumberProcesses method [Windows Debugging],IDebugSystemObjects3 interface, GetNumberProcesses method [Windows Debugging],IDebugSystemObjects4 interface, IDebugSystemObjects interface [Windows Debugging],GetNumberProcesses method, IDebugSystemObjects2 interface [Windows Debugging],GetNumberProcesses method, IDebugSystemObjects2::GetNumberProcesses, IDebugSystemObjects3 interface [Windows Debugging],GetNumberProcesses method, IDebugSystemObjects3::GetNumberProcesses, IDebugSystemObjects4 interface [Windows Debugging],GetNumberProcesses method, IDebugSystemObjects4.GetNumberProcesses, IDebugSystemObjects4::GetNumberProcesses, IDebugSystemObjects::GetNumberProcesses, IDebugSystemObjects_28914631-9658-462c-8234-f48bb85efdf6.xml, dbgeng/IDebugSystemObjects2::GetNumberProcesses, dbgeng/IDebugSystemObjects3::GetNumberProcesses, dbgeng/IDebugSystemObjects4::GetNumberProcesses, dbgeng/IDebugSystemObjects::GetNumberProcesses, debugger.getnumberprocesses
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSystemObjects.GetNumberProcesses
- - IDebugSystemObjects2.GetNumberProcesses
- - IDebugSystemObjects3.GetNumberProcesses
- - IDebugSystemObjects4.GetNumberProcesses
+ - IDebugSystemObjects4::GetNumberProcesses
 ---
 
 # IDebugSystemObjects4::GetNumberProcesses
@@ -53,9 +49,9 @@ The <b>GetNumberProcesses</b> method returns the number of <a href="/windows-har
 
 ## -parameters
 
-### -param Number 
+### -param Number [out]
 
-[out]
+
 Receives the number of processes.
 
 ## -returns
@@ -87,3 +83,4 @@ In kernel-mode debugging, there is only a single virtual process representing th
 In user-mode debugging, the number of processes changes with the create-process and exit-process debugging <a href="/windows-hardware/drivers/debugger/events">events</a>.
 
 For more information about processes, see <a href="/windows-hardware/drivers/debugger/threads-and-processes">Threads and Processes</a>.
+

@@ -4,7 +4,6 @@ title: IPortableDeviceKeyCollection::GetAt (portabledevicetypes.h)
 description: Retrieves a PROPERTYKEY from the collection by index.
 old-location: wpddk\iportabledevicekeycollection_getat.htm
 tech.root: wpd_dk
-ms.assetid: fc74720e-0a39-4ef7-bb9a-e09a6445f0c3
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceKeyCollection::GetAt"]
 ms.keywords: GetAt, GetAt method, GetAt method,IPortableDeviceKeyCollection interface, IPortableDeviceKeyCollection interface,GetAt method, IPortableDeviceKeyCollection.GetAt, IPortableDeviceKeyCollection::GetAt, IPortableDeviceKeyCollectionGetAt, portabledevicetypes/IPortableDeviceKeyCollection::GetAt, wpddk.iportabledevicekeycollection_getat
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceKeyCollection.GetAt
+ - IPortableDeviceKeyCollection::GetAt
 ---
 
 # IPortableDeviceKeyCollection::GetAt
@@ -51,14 +50,14 @@ Retrieves a <b>PROPERTYKEY</b> from the collection by index.
 
 ## -parameters
 
-### -param dwIndex 
+### -param dwIndex [in]
 
-[in]
+
 <b>DWORD</b> that contains the zero-based index of the key to be retrieved.
 
-### -param pKey 
+### -param pKey [out]
 
-[out]
+
 Pointer to a <b>PROPERTYKEY</b>.
 
 ## -returns
@@ -112,3 +111,4 @@ None.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicekeycollection">IPortableDeviceKeyCollection Interface</a>
+

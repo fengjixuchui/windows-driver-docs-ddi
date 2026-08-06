@@ -4,7 +4,6 @@ title: NDK_FN_QUERY_ADAPTER_INFO (ndkpi.h)
 description: The NdkQueryAdapterInfo (NDK_FN_QUERY_ADAPTER_INFO) function retrieves information about limits and capabilities of an NDK adapter.
 old-location: netvista\ndk_fn_query_adapter_info.htm
 tech.root: netvista
-ms.assetid: A307584E-CBF6-4CEB-8A0F-D519DA7599D3
 ms.date: 05/02/2018
 keywords: ["NDK_FN_QUERY_ADAPTER_INFO callback function"]
 ms.keywords: NDK_FN_QUERY_ADAPTER_INFO, NDK_FN_QUERY_ADAPTER_INFO callback, NdkQueryAdapterInfo, NdkQueryAdapterInfo callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkQueryAdapterInfo, netvista.ndk_fn_query_adapter_info
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkQueryAdapterInfo
+ - NDK_FN_QUERY_ADAPTER_INFO
 ---
 
 # NDK_FN_QUERY_ADAPTER_INFO callback function
@@ -50,9 +49,9 @@ The <i>NdkQueryAdapterInfo</i> (<i>NDK_FN_QUERY_ADAPTER_INFO</i>) function retri
 
 ## -parameters
 
-### -param pNdkAdapter 
+### -param pNdkAdapter [in]
 
-[in]
+
 A pointer to an NDK adapter (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_adapter">NDK_ADAPTER)</a> instance.
 
 ### -param pInfo
@@ -128,3 +127,4 @@ An error occurred.
 
 
 <a href="/windows/win32/api/ndkinfo/ns-ndkinfo-ndk_adapter_info">NDK_ADAPTER_INFO</a>
+

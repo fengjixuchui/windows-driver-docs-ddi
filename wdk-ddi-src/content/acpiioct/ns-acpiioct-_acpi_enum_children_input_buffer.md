@@ -4,7 +4,6 @@ title: _ACPI_ENUM_CHILDREN_INPUT_BUFFER (acpiioct.h)
 description: The ACPI_ENUM_CHILDREN_INPUT_BUFFER structure is used as input to an IOCTL_ACPI_ENUM_CHILDREN request. The structure specifies which child objects to enumerate in the namespace of the device to which the request is sent.
 old-location: acpi\acpi_enum_children_input_buffer.htm
 tech.root: acpi
-ms.assetid: fba604bc-2fab-448c-bbc7-8ea30ff6de6b
 ms.date: 02/15/2018
 keywords: ["ACPI_ENUM_CHILDREN_INPUT_BUFFER structure"]
 ms.keywords: "*PACPI_ENUM_CHILDREN_INPUT_BUFFER, ACPI_ENUM_CHILDREN_INPUT_BUFFER, ACPI_ENUM_CHILDREN_INPUT_BUFFER structure [ACPI Devices], PACPI_ENUM_CHILDREN_INPUT_BUFFER, PACPI_ENUM_CHILDREN_INPUT_BUFFER structure pointer [ACPI Devices], _ACPI_ENUM_CHILDREN_INPUT_BUFFER, acpi-meth-eval-ref_3d8ce8a3-94f9-4ea0-9a16-f76c08928fc4.xml, acpi.acpi_enum_children_input_buffer, acpiioct/ACPI_ENUM_CHILDREN_INPUT_BUFFER, acpiioct/PACPI_ENUM_CHILDREN_INPUT_BUFFER"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Acpiioct.h
 api_name:
+ - _ACPI_ENUM_CHILDREN_INPUT_BUFFER
+ - PACPI_ENUM_CHILDREN_INPUT_BUFFER
  - ACPI_ENUM_CHILDREN_INPUT_BUFFER
 ---
 
@@ -81,3 +82,4 @@ For information about how to enumerate child objects of a device, see <a href="/
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/acpiioct/ni-acpiioct-ioctl_acpi_enum_children">IOCTL_ACPI_ENUM_CHILDREN</a>
+

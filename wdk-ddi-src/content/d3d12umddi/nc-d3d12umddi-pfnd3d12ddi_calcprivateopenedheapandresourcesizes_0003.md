@@ -1,8 +1,7 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_CALCPRIVATEOPENEDHEAPANDRESOURCESIZES_0003
 title: PFND3D12DDI_CALCPRIVATEOPENEDHEAPANDRESOURCESIZES_0003 (d3d12umddi.h)
-description: Calculates sizes for private opened heap and resources.
-ms.assetid: fadc2a19-60d0-4c03-8f03-62bd629186ac
+description: The PFND3D12DDI_CALCPRIVATEOPENEDHEAPANDRESOURCESIZES_0003 callback function calculates the sizes for a private open heap and resource.
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CALCPRIVATEOPENEDHEAPANDRESOURCESIZES_0003 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CALCPRIVATEOPENEDHEAPANDRESOURCESIZES_0003
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ Calculates sizes for private opened heap and resources.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 Pointer to a D3D12DDIARG_OPENHEAP_0003.
 

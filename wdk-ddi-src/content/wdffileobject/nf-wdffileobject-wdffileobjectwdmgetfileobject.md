@@ -4,7 +4,6 @@ title: WdfFileObjectWdmGetFileObject function (wdffileobject.h)
 description: The WdfFileObjectWdmGetFileObject method returns the Windows Driver Model (WDM) file object that is associated with a specified framework file object.
 old-location: wdf\wdffileobjectwdmgetfileobject.htm
 tech.root: wdf
-ms.assetid: f3cc9b23-6140-4cb2-959d-c76f23c697ea
 ms.date: 02/26/2018
 keywords: ["WdfFileObjectWdmGetFileObject function"]
 ms.keywords: DFFileObjectRef_1631ea08-9156-4de4-85e6-9368b89ae0f4.xml, WdfFileObjectWdmGetFileObject, WdfFileObjectWdmGetFileObject method, kmdf.wdffileobjectwdmgetfileobject, wdf.wdffileobjectwdmgetfileobject, wdffileobject/WdfFileObjectWdmGetFileObject
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,9 +52,9 @@ The <b>WdfFileObjectWdmGetFileObject</b> method returns the Windows Driver Model
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 A handle to a framework file object.
 
 ## -returns

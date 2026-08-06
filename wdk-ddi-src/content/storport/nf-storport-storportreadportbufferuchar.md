@@ -4,7 +4,6 @@ title: StorPortReadPortBufferUchar macro (storport.h)
 description: The StorPortReadPortBufferUchar routine reads a value from a specified port address
 old-location: storage\storportreadportbufferuchar.htm
 tech.root: storage
-ms.assetid: 8602efbf-8e90-43d3-992f-4d2ecbcc7043
 ms.date: 03/29/2018
 keywords: ["StorPortReadPortBufferUchar macro"]
 ms.keywords: StorPortReadPortBufferUchar, StorPortReadPortBufferUchar routine [Storage Devices], storage.storportreadportbufferuchar, storport/StorPortReadPortBufferUchar, storprt_e7304977-c32a-44c2-88ea-a08767ea5399.xml
@@ -51,24 +50,24 @@ The <b>StorPortReadPortBufferUchar</b> routine reads a value from a specified po
 
 ## -parameters
 
-### -param h 
+### -param h [in]
 
-[in]
+
 A pointer to the hardware device extension.
 
-### -param p 
+### -param p [in]
 
-[in]
+
 A pointer to the address from which to read.
 
-### -param b 
+### -param b [in]
 
-[in]
+
 A pointer to the buffer that receives the data that is read.
 
-### -param c 
+### -param c [in]
 
-[in]
+
 Number of unsigned characters to be read. 
 
 A ULONG containing the count.

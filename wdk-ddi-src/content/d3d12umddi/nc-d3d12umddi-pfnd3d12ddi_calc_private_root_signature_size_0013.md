@@ -1,13 +1,10 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_CALC_PRIVATE_ROOT_SIGNATURE_SIZE_0013
 title: PFND3D12DDI_CALC_PRIVATE_ROOT_SIGNATURE_SIZE_0013 (d3d12umddi.h)
-description: Calculates the driver's root signature size.
+description: "The PFND3D12DDI_CALC_PRIVATE_ROOT_SIGNATURE_SIZE_0013 callback function calculates the driver's root signature size."
 tech.root: display
-ms.assetid: 75572755-4ff2-4cba-bb1a-ba7cbec6bcd7
 ms.date: 11/28/2018
 keywords: ["PFND3D12DDI_CALC_PRIVATE_ROOT_SIGNATURE_SIZE_0013 callback function"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: d3d12umddi.h
 req.include-header: 
 req.target-type: 
@@ -37,8 +34,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CALC_PRIVATE_ROOT_SIGNATURE_SIZE_0013
-product:
- - Windows
 ---
 
 # PFND3D12DDI_CALC_PRIVATE_ROOT_SIGNATURE_SIZE_0013 callback function
@@ -50,11 +45,11 @@ Calculates the driver's root signature size.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 Pointer to a D3D12DDIARG_CREATE_ROOT_SIGNATURE_0013 structure.
 

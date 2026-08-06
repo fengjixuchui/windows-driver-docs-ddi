@@ -2,8 +2,7 @@
 UID: NS:ucmucsiglobals._UCMUCSI_DRIVER_GLOBALS
 title: _UCMUCSI_DRIVER_GLOBALS (ucmucsiglobals.h)
 tech.root: usbref
-description: Reserved.
-ms.assetid: 648e8856-ea6e-473c-9e1b-8c055b5b1ef9
+description: Reserved for UCMUCSI_DRIVER_GLOBALS.
 ms.date: 10/19/2018
 keywords: ["UCMUCSI_DRIVER_GLOBALS structure"]
 ms.keywords: _UCMUCSI_DRIVER_GLOBALS, UCMUCSI_DRIVER_GLOBALS, *PUCMUCSI_DRIVER_GLOBALS,
@@ -37,6 +36,8 @@ api_location:
  - ucmucsiglobals.h
 api_name:
  - _UCMUCSI_DRIVER_GLOBALS
+ - PUCMUCSI_DRIVER_GLOBALS
+ - UCMUCSI_DRIVER_GLOBALS
 ---
 
 # _UCMUCSI_DRIVER_GLOBALS structure

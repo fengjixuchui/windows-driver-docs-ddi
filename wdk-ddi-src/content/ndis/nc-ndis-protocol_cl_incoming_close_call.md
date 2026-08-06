@@ -4,7 +4,6 @@ title: PROTOCOL_CL_INCOMING_CLOSE_CALL (ndis.h)
 description: The ProtocolClIncomingCloseCall function is used by all connection-oriented NDIS clients.
 old-location: netvista\protocolclincomingclosecall.htm
 tech.root: netvista
-ms.assetid: 01c7d887-eb54-47c3-98f0-bc567b60fb4b
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CL_INCOMING_CLOSE_CALL callback function"]
 ms.keywords: PROTOCOL_CL_INCOMING_CLOSE_CALL, PROTOCOL_CL_INCOMING_CLOSE_CALL callback, ProtocolClIncomingCloseCall, ProtocolClIncomingCloseCall callback function [Network Drivers Starting with Windows Vista], condis_client_ref_3c97fa3b-d9ae-4748-8812-9abc896a509a.xml, ndis/ProtocolClIncomingCloseCall, netvista.protocolclincomingclosecall
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolClIncomingCloseCall
+ - PROTOCOL_CL_INCOMING_CLOSE_CALL
 ---
 
 # PROTOCOL_CL_INCOMING_CLOSE_CALL callback function
@@ -55,25 +54,25 @@ The
 
 ## -parameters
 
-### -param CloseStatus 
+### -param CloseStatus [in]
 
-[in]
+
 Specifies the status that indicates the cause of the connection teardown, which is usually
      NDIS_STATUS_SUCCESS to indicate that the remote party to the call requested that the connection be
      closed. Any other value indicates that problems on the network caused the call manager to terminate the
      connection.
 
-### -param ProtocolVcContext 
+### -param ProtocolVcContext [in]
 
-[in]
+
 Specifies the handle to the client's per-VC context area for the VC on which the connection is
      being closed. Whatever the value of 
      <i>CloseStatus</i>, the client can neither send nor receive data on the VC designated by the 
      <i>NdisVcHandle</i> that it stored in this context area.
 
-### -param CloseData 
+### -param CloseData [in]
 
-[in]
+
 Pointer to a buffer containing a protocol-specific close message, possibly one supplied by the
      remote client that the call manager received over the network, or this parameter can be <b>NULL</b>. 
      
@@ -84,9 +83,9 @@ When
      define a structure to pass additional diagnostic information to its clients on call teardowns caused by
      problems on the network.
 
-### -param Size 
+### -param Size [in]
 
-[in]
+
 Specifies the size in bytes of the buffer at 
      <i>CloseData</i>, zero if 
      <i>CloseData</i> is <b>NULL</b>.
@@ -230,3 +229,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_delete_vc">ProtocolCoDeleteVc</a>
+

@@ -3,14 +3,13 @@ UID: NF:d3dkmthk.D3DKMTGetContextSchedulingPriority
 title: D3DKMTGetContextSchedulingPriority function (d3dkmthk.h)
 description: The D3DKMTGetContextSchedulingPriority function retrieves the scheduling priority for a device context.
 old-location: display\d3dkmtgetcontextschedulingpriority.htm
-ms.assetid: db4968d3-c23b-417f-9c91-552923dce1ea
 ms.date: 05/10/2018
 keywords: ["D3DKMTGetContextSchedulingPriority function"]
 ms.keywords: D3DKMTGetContextSchedulingPriority, D3DKMTGetContextSchedulingPriority function [Display Devices], OpenGL_Functions_2f186385-7f1b-445e-93f9-594dea4feeb4.xml, d3dkmthk/D3DKMTGetContextSchedulingPriority, display.d3dkmtgetcontextschedulingpriority
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -53,7 +52,7 @@ The <b>D3DKMTGetContextSchedulingPriority</b> function retrieves the scheduling 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in, out]
 

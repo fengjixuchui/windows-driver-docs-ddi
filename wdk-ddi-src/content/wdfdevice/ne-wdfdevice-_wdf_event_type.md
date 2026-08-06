@@ -4,7 +4,6 @@ title: _WDF_EVENT_TYPE (wdfdevice.h)
 description: The WDF_EVENT_TYPE enumeration specifies.
 old-location: wdf\wdf_event_type.htm
 tech.root: wdf
-ms.assetid: DC6353BB-98C0-4647-9180-F099CD95348E
 ms.date: 02/26/2018
 keywords: ["WDF_EVENT_TYPE enumeration"]
 ms.keywords: WDF_EVENT_TYPE, WDF_EVENT_TYPE enumeration, WdfEventBroadcast, WdfEventMaximum, WdfEventReserved, _WDF_EVENT_TYPE, wdf.wdf_event_type, wdfdevice/WDF_EVENT_TYPE, wdfdevice/WdfEventBroadcast, wdfdevice/WdfEventMaximum, wdfdevice/WdfEventReserved, wudfddi_types/WDF_EVENT_TYPE, wudfddi_types/WdfEventBroadcast, wudfddi_types/WdfEventMaximum, wudfddi_types/WdfEventReserved
@@ -41,6 +40,7 @@ api_location:
  - wdfdevice.h
  - wudfddi_types.h
 api_name:
+ - _WDF_EVENT_TYPE
  - WDF_EVENT_TYPE
 ---
 
@@ -55,11 +55,11 @@ The <b>WDF_EVENT_TYPE</b> enumeration specifies  types of events about which a d
 
 ## -enum-fields
 
-### -field WdfEventReserved
+### -field WdfEventReserved:0
 
 Reserved for system use.
 
-### -field WdfEventBroadcast
+### -field WdfEventBroadcast:1
 
 In the current version of UMDF, the driver must specify <b>WdfEventBroadcast</b>. For more information, see <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicepostevent">WdfDevicePostEvent</a>.
 
@@ -74,3 +74,4 @@ Reserved for system use.
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicepostevent">WdfDevicePostEvent</a>
+

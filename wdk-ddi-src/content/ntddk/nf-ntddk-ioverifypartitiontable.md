@@ -4,7 +4,6 @@ title: IoVerifyPartitionTable function (ntddk.h)
 description: The IoVerifyPartitionTable routine checks the validity of the partition table for a disk.
 old-location: kernel\ioverifypartitiontable.htm
 tech.root: kernel
-ms.assetid: dc7b543b-1fb5-477c-a612-c8e7381e637e
 ms.date: 04/30/2018
 keywords: ["IoVerifyPartitionTable function"]
 ms.keywords: IoVerifyPartitionTable, IoVerifyPartitionTable routine [Kernel-Mode Driver Architecture], k104_d550806b-f911-45f6-b6ab-efbf05683c4d.xml, kernel.ioverifypartitiontable, ntddk/IoVerifyPartitionTable
@@ -51,14 +50,14 @@ The <b>IoVerifyPartitionTable</b> routine checks the validity of the partition t
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Specifies the device object of the disk to verify.
 
-### -param FixErrors 
+### -param FixErrors [in]
 
-[in]
+
 Specifies if the routine should correct any correctable errors in the partition table.
 
 ## -returns

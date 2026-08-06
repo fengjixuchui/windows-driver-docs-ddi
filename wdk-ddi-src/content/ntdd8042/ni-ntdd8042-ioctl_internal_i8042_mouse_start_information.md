@@ -4,7 +4,6 @@ title: IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION (ntdd8042.h)
 description: The IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION request passes a pointer to a mouse interrupt object.
 old-location: hid\ioctl_internal_i8042_mouse_start_information.htm
 tech.root: hid
-ms.assetid: aa7d5802-d1d0-4c7c-bf55-0f0b5b664113
 ms.date: 04/30/2018
 keywords: ["IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION IOCTL"]
 ms.keywords: IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION, IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION control, IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION control code [Human Input Devices], hid.ioctl_internal_i8042_mouse_start_information, i8042ref_c4c81870-f104-4979-86e3-03bd376e34ce.xml, ntdd8042/IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION
@@ -49,6 +48,10 @@ api_name:
 The IOCTL_INTERNAL_I8042_MOUSE_START_INFORMATION request passes a pointer to a mouse interrupt object. I8042prt sends this request synchronously to the top of the device stack after the mouse interrupt object is created. Upper-level filter drivers that need to synchronize their callback operation with the mouse ISR can use the pointer to the mouse interrupt object.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
+
+[IRP_MJ_INTERNAL_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
 ### -input-buffer
 

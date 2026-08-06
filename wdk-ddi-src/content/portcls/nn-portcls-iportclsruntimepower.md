@@ -4,7 +4,6 @@ title: IPortClsRuntimePower (portcls.h)
 description: IPortClsRuntimePower is the interface that the port class driver (PortCls) uses for accessing the runtime power management capabilities of the audio adapter.
 old-location: audio\iportclsruntimepower.htm
 tech.root: audio
-ms.assetid: 8D03B2A0-6C8C-4EBE-86F4-70C8DE179947
 ms.date: 05/08/2018
 keywords: ["IPortClsRuntimePower interface"]
 ms.keywords: IPortClsRuntimePower, IPortClsRuntimePower interface [Audio Devices], IPortClsRuntimePower interface [Audio Devices],described, audio.iportclsruntimepower, portcls/IPortClsRuntimePower
@@ -50,7 +49,5 @@ IPortClsRuntimePower is the interface that the port class driver (PortCls)  uses
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortClsRuntimePower</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPortClsRuntimePower</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IPortClsRuntimePower</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPortClsRuntimePower</b> also has these types of members:
+

@@ -4,7 +4,6 @@ title: _HARDWARE_COUNTER_TYPE (ntddk.h)
 description: The HARDWARE_COUNTER_TYPE enumeration specifies the type of a hardware counter.
 old-location: kernel\hardware_counter_type.htm
 tech.root: kernel
-ms.assetid: 837f5a55-ca07-4462-85d7-203d02df168c
 ms.date: 04/30/2018
 keywords: ["HARDWARE_COUNTER_TYPE enumeration"]
 ms.keywords: "*PHARDWARE_COUNTER_TYPE, HARDWARE_COUNTER_TYPE, HARDWARE_COUNTER_TYPE enumeration [Kernel-Mode Driver Architecture], MaxHardwareCounterType, PHARDWARE_COUNTER_TYPE, PHARDWARE_COUNTER_TYPE enumeration pointer [Kernel-Mode Driver Architecture], PMCCounter, _HARDWARE_COUNTER_TYPE, kernel.hardware_counter_type, ntddk/HARDWARE_COUNTER_TYPE, ntddk/MaxHardwareCounterType, ntddk/PHARDWARE_COUNTER_TYPE, ntddk/PMCCounter, sysenum_861db9b8-cd2d-4cfe-ae99-5c292f28c420.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _HARDWARE_COUNTER_TYPE
+ - PHARDWARE_COUNTER_TYPE
  - HARDWARE_COUNTER_TYPE
 ---
 
@@ -69,3 +70,4 @@ The <b>Type</b> member of the <a href="/windows-hardware/drivers/ddi/ntddk/ns-nt
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_hardware_counter">HARDWARE_COUNTER</a>
+

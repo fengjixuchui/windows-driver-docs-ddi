@@ -1,10 +1,9 @@
 ---
 UID: NI:usbfnioctl.IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_STATE
 title: IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_STATE (usbfnioctl.h)
-description: Do not use.
+description: Do not use this (IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_STATE) article.
 old-location: buses\ioctl_internal_usbfn_set_power_filter_state.htm
 tech.root: usbref
-ms.assetid: 2C010516-500A-4CA2-B6FE-20333E7CCC39
 ms.date: 05/07/2018
 keywords: ["IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_STATE IOCTL"]
 ms.keywords: IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_STATE, IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_STATE control, IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_STATE control code [Buses], buses.ioctl_internal_usbfn_set_power_filter_state, usbfnioctl/IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_STATE
@@ -50,6 +49,10 @@ Do not use.
 		ucxc
 
 ## -ioctlparameters
+
+### -ioctl-major-code
+
+[IRP_MJ_INTERNAL_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
 ### -input-buffer
 

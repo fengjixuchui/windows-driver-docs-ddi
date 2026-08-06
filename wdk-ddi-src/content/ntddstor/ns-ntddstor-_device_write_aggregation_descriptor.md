@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddstor._DEVICE_WRITE_AGGREGATION_DESCRIPTOR
 title: _DEVICE_WRITE_AGGREGATION_DESCRIPTOR (ntddstor.h)
-description: Reserved for system use.
+description: "Microsoft reserves the DEVICE_WRITE_AGGREGATION_DESCRIPTOR structure for internal use only. Don't use this structure in your code."
 old-location: storage\device_write_aggregation_descriptor.htm
 tech.root: storage
-ms.assetid: 7AACFA1A-4B56-4B51-91B6-5FA30918E516
 ms.date: 03/29/2018
 keywords: ["DEVICE_WRITE_AGGREGATION_DESCRIPTOR structure"]
 ms.keywords: "*PDEVICE_WRITE_AGGREGATION_DESCRIPTOR, DEVICE_WRITE_AGGREGATION_DESCRIPTOR, DEVICE_WRITE_AGGREGATION_DESCRIPTOR structure [Storage Devices], PDEVICE_WRITE_AGGREGATION_DESCRIPTOR, PDEVICE_WRITE_AGGREGATION_DESCRIPTOR structure pointer [Storage Devices], _DEVICE_WRITE_AGGREGATION_DESCRIPTOR, ntddstor/DEVICE_WRITE_AGGREGATION_DESCRIPTOR, ntddstor/PDEVICE_WRITE_AGGREGATION_DESCRIPTOR, storage.device_write_aggregation_descriptor"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddstor.h
 api_name:
+ - _DEVICE_WRITE_AGGREGATION_DESCRIPTOR
+ - PDEVICE_WRITE_AGGREGATION_DESCRIPTOR
  - DEVICE_WRITE_AGGREGATION_DESCRIPTOR
 ---
 
@@ -70,3 +71,4 @@ Specifies the total size of the descriptor, in bytes.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_query_property">IOCTL_STORAGE_QUERY_PROPERTY</a>
+

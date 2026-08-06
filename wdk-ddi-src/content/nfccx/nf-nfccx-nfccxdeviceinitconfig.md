@@ -4,7 +4,6 @@ title: NfcCxDeviceInitConfig function (nfccx.h)
 description: Called by the client driver during its AddDevice routine to perform DeviceInit functions. During this process the following I/O callback functions are also exchanged.
 old-location: nfpdrivers\_nfccxdeviceinitconfig_.htm
 tech.root: nfpdrivers
-ms.assetid: 98047C0F-B419-4DFE-8143-BD3917650878
 ms.date: 02/15/2018
 keywords: ["NfcCxDeviceInitConfig function"]
 ms.keywords: NfcCxDeviceInitConfig, NfcCxDeviceInitConfig function [Near-Field Proximity Drivers], nfccx/NfcCxDeviceInitConfig, nfpdrivers._nfccxdeviceinitconfig_
@@ -58,14 +57,14 @@ Called by the client driver during its AddDevice routine to perform DeviceInit f
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in, out]
 
-[in, out]
+
 A pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
-### -param Config 
+### -param Config [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/nfccx/ns-nfccx-_nfc_cx_client_config">NFC_CX_CLIENT_CONFIG</a> structure.
 
 ## -returns

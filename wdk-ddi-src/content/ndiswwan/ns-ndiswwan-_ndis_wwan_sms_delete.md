@@ -4,7 +4,6 @@ title: _NDIS_WWAN_SMS_DELETE (ndiswwan.h)
 description: The NDIS_WWAN_SMS_DELETE structure represents an SMS message to delete.
 old-location: netvista\ndis_wwan_sms_delete.htm
 tech.root: netvista
-ms.assetid: ea13c900-40b2-492b-b14b-85e346208ad8
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_SMS_DELETE structure"]
 ms.keywords: "*PNDIS_WWAN_SMS_DELETE, NDIS_WWAN_SMS_DELETE, NDIS_WWAN_SMS_DELETE structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_DELETE, PNDIS_WWAN_SMS_DELETE structure pointer [Network Drivers Starting with Windows Vista], WwanRef_aae03f3f-21d1-42d4-b2dd-008fc07c9964.xml, _NDIS_WWAN_SMS_DELETE, ndiswwan/NDIS_WWAN_SMS_DELETE, ndiswwan/PNDIS_WWAN_SMS_DELETE, netvista.ndis_wwan_sms_delete"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_SMS_DELETE
+ - PNDIS_WWAN_SMS_DELETE
  - NDIS_WWAN_SMS_DELETE
 ---
 
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_SMS_DELETE)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field SmsFilter
 
@@ -112,8 +113,9 @@ A formatted
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_sms_filter">WWAN_SMS_FILTER</a>
+

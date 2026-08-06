@@ -3,17 +3,16 @@ UID: NS:netadapter._NET_ADAPTER_WAKE_MAGIC_PACKET_CAPABILITIES
 title: NET_ADAPTER_WAKE_MAGIC_PACKET_CAPABILITIES (netadapter.h)
 description: The NET_ADAPTER_WAKE_MAGIC_PACKET_CAPABILITIES structure describes a net adapter's wake on LAN (WoL) capabilities for waking from a magic packet.
 tech.root: netvista
-ms.assetid: 275f7fe2-1bfc-4a88-b3c7-b78840b34930
 ms.date: 10/25/2019
 keywords: ["NET_ADAPTER_WAKE_MAGIC_PACKET_CAPABILITIES structure"]
 ms.keywords: NET_ADAPTER_WAKE_MAGIC_PACKET_CAPABILITIES, NET_ADAPTER_WAKE_MAGIC_PACKET_CAPABILITIES,
 req.header: netadapter.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: 
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - netadapter.h
 api_name:
+ - _NET_ADAPTER_WAKE_MAGIC_PACKET_CAPABILITIES
  - NET_ADAPTER_WAKE_MAGIC_PACKET_CAPABILITIES
-product:
- - Windows
 ---
 
 # NET_ADAPTER_WAKE_MAGIC_PACKET_CAPABILITIES structure
@@ -69,3 +67,4 @@ Call [**NET_ADAPTER_WAKE_MAGIC_PACKET_CAPABILITIES_INIT**](../netadapter/nf-neta
 [**NetAdapterWakeSetMagicPacketCapabilities**](../netadapter/nf-netadapter-netadapterwakesetmagicpacketcapabilities.md)
 
 [**NetAdapterStart**](../netadapter/nf-netadapter-netadapterstart.md)
+

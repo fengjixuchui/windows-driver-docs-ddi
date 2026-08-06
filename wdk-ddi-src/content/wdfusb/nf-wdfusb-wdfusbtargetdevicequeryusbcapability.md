@@ -4,7 +4,6 @@ title: WdfUsbTargetDeviceQueryUsbCapability function (wdfusb.h)
 description: The WdfUsbTargetDeviceQueryUsbCapability method determines whether the host controller and USB driver stack support a specific capability.
 old-location: wdf\wdfusbtargetdevicequeryusbcapability.htm
 tech.root: wdf
-ms.assetid: B6C3E94F-AFC9-45EC-91F1-F0E3586DBDA1
 ms.date: 02/26/2018
 keywords: ["WdfUsbTargetDeviceQueryUsbCapability function"]
 ms.keywords: WdfUsbTargetDeviceQueryUsbCapability, WdfUsbTargetDeviceQueryUsbCapability method, kmdf.wdfusbtargetdevicequeryusbcapability, wdf.wdfusbtargetdevicequeryusbcapability, wdfusb/WdfUsbTargetDeviceQueryUsbCapability
@@ -56,14 +55,14 @@ api_name:
 
 ## -parameters
 
-### -param UsbDevice 
+### -param UsbDevice [in]
 
-[in]
+
 A handle to a USB device object.
 
-### -param CapabilityType 
+### -param CapabilityType [in]
 
-[in]
+
 A pointer to a GUID that represents the capability about which the client driver wants to retrieve information. The possible  <i>PGUID</i>  values are  as follows:
 
 <ul>
@@ -78,20 +77,20 @@ A pointer to a GUID that represents the capability about which the client driver
 </ul>
 See more information in Remarks.
 
-### -param CapabilityBufferLength 
+### -param CapabilityBufferLength [in]
 
-[in]
+
 Length, in bytes, of the buffer pointed to by <i>CapabilityBuffer</i>.
 
-### -param CapabilityBuffer 
+### -param CapabilityBuffer [out, optional]
 
-[out, optional]
+
 A pointer to a caller-allocated buffer to receive the requested USB capability. This parameter is optional. If 
                        <i>CapabilityBufferLength</i> is zero, this parameter must be NULL. Similarly, if <i>CapabilityBufferLength</i> is nonzero, this parameter must be supplied. This parameter corresponds to the <i>OutputBuffer</i> parameter of the <a href="/previous-versions/windows/hardware/drivers/hh406230(v=vs.85)">USBD_QueryUsbCapability</a> routine.
 
-### -param ResultLength 
+### -param ResultLength [out, optional]
 
-[out, optional]
+
 A pointer to a location containing the size, in bytes, of the returned capability. This parameter is optional.
 
 ## -returns
@@ -183,7 +182,7 @@ The following table describes the USB-specific capabilities that a KMDF-based US
 <tr>
 <td>GUID_USB_CAPABILITY_CHAINED_MDLS</td>
 <td>
-The new USB driver stack in Windows 8 is capable of accepting a chained MDL (see <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl">MDL</a>) from the a KMDF-based USB client driver.
+The new USB driver stack in Windows 8 is capable of accepting a chained MDL (see <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl">MDL</a>) from a KMDF-based USB client driver.
 
  For more information about the chained MDLs capability in the USB driver stack, see <a href="/windows-hardware/drivers/ddi/index">How to Send Chained MDLs</a>.  
 

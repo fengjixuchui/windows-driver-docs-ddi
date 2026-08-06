@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGK_QUERYSEGMENTIN
 title: _DXGK_QUERYSEGMENTIN (d3dkmddi.h)
 description: The DXGK_QUERYSEGMENTIN structure describes relevant information for a memory-segment query through a call to the display miniport driver's DxgkDdiQueryAdapterInfo function.
 old-location: display\dxgk_querysegmentin.htm
-ms.assetid: 5a3e6edf-40c7-49f3-8394-0e54c080c92c
 ms.date: 05/10/2018
 keywords: ["DXGK_QUERYSEGMENTIN structure"]
 ms.keywords: DXGK_QUERYSEGMENTIN, DXGK_QUERYSEGMENTIN structure [Display Devices], DmStructs_d47cf13d-48ec-49fd-b80c-4df1501db329.xml, _DXGK_QUERYSEGMENTIN, d3dkmddi/DXGK_QUERYSEGMENTIN, display.dxgk_querysegmentin
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_QUERYSEGMENTIN
  - DXGK_QUERYSEGMENTIN
 ---
 
@@ -52,17 +52,17 @@ The DXGK_QUERYSEGMENTIN structure describes relevant information for a memory-se
 
 ## -struct-fields
 
-### -field AgpApertureBase
+### -field AgpApertureBase [in]
 
-[in] A PHYSICAL_ADDRESS data type (which is defined as LARGE_INTEGER) that indicates the base address of the AGP aperture.
+A PHYSICAL_ADDRESS data type (which is defined as LARGE_INTEGER) that indicates the base address of the AGP aperture.
 
-### -field AgpApertureSize
+### -field AgpApertureSize [in]
 
-[in] A LARGE_INTEGER that indicates the size, in bytes, of the available AGP aperture.
+A LARGE_INTEGER that indicates the size, in bytes, of the available AGP aperture.
 
-### -field AgpFlags
+### -field AgpFlags [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentflags">DXGK_SEGMENTFLAGS</a> structure that identifies properties for the available AGP aperture in bit-field flags.
+A <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_segmentflags">DXGK_SEGMENTFLAGS</a> structure that identifies properties for the available AGP aperture in bit-field flags.
 
 ## -see-also
 
@@ -83,3 +83,4 @@ The DXGK_QUERYSEGMENTIN structure describes relevant information for a memory-se
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_queryadapterinfo">DxgkDdiQueryAdapterInfo</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSystemObjects4.GetNumberSystems
 title: IDebugSystemObjects4::GetNumberSystems (dbgeng.h)
-description: The GetNumberSystems method returns the number of targets to which the engine is currently connected.
+description: The GetNumberSystems method returns the number of targets to which the engine is currently connected. This method belongs to the IDebugSystemObjects4 interface.
 old-location: debugger\getnumbersystems.htm
 tech.root: debugger
-ms.assetid: 27465cd9-77bc-4c9e-bac6-bd471ca93261
 ms.date: 05/03/2018
 keywords: ["IDebugSystemObjects4::GetNumberSystems"]
 ms.keywords: GetNumberSystems, GetNumberSystems method [Windows Debugging], GetNumberSystems method [Windows Debugging],IDebugSystemObjects3 interface, GetNumberSystems method [Windows Debugging],IDebugSystemObjects4 interface, IDebugSystemObjects3 interface [Windows Debugging],GetNumberSystems method, IDebugSystemObjects3::GetNumberSystems, IDebugSystemObjects4 interface [Windows Debugging],GetNumberSystems method, IDebugSystemObjects4.GetNumberSystems, IDebugSystemObjects4::GetNumberSystems, IDebugSystemObjects_821c2f0e-0863-4300-b26e-93e86ad9f0dd.xml, dbgeng/IDebugSystemObjects3::GetNumberSystems, dbgeng/IDebugSystemObjects4::GetNumberSystems, debugger.getnumbersystems
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSystemObjects3.GetNumberSystems
- - IDebugSystemObjects4.GetNumberSystems
+ - IDebugSystemObjects4::GetNumberSystems
 ---
 
 # IDebugSystemObjects4::GetNumberSystems
@@ -51,9 +49,9 @@ The <b>GetNumberSystems</b> method returns the number of targets to which the en
 
 ## -parameters
 
-### -param Number 
+### -param Number [out]
 
-[out]
+
 Receives the number of targets.
 
 ## -returns
@@ -89,3 +87,4 @@ The method was successful.
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects4">IDebugSystemObjects4</a>
+

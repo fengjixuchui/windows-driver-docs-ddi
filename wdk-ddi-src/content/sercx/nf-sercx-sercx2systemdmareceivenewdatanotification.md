@@ -4,7 +4,6 @@ title: SerCx2SystemDmaReceiveNewDataNotification function (sercx.h)
 description: The SerCx2SystemDmaReceiveNewDataNotification method notifies version 2 of the serial framework extension (SerCx2) that data is available to be read from the receive FIFO in the serial controller hardware.
 old-location: serports\sercx2systemdmareceivenewdatanotification.htm
 tech.root: serports
-ms.assetid: 9ECC15F2-9D08-4EEF-ADBD-612D8D1B5B72
 ms.date: 04/23/2018
 keywords: ["SerCx2SystemDmaReceiveNewDataNotification function"]
 ms.keywords: 2/SerCx2SystemDmaReceiveNewDataNotification, SerCx2SystemDmaReceiveNewDataNotification, SerCx2SystemDmaReceiveNewDataNotification method [Serial Ports], serports.sercx2systemdmareceivenewdatanotification
@@ -50,9 +49,9 @@ The <b>SerCx2SystemDmaReceiveNewDataNotification</b> method notifies version 2 o
 
 ## -parameters
 
-### -param SystemDmaReceive 
+### -param SystemDmaReceive [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMARECEIVE</a> handle to a system-DMA-receive object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2systemdmareceivecreate">SerCx2SystemDmaReceiveCreate</a> method to create this object.
 
 ## -remarks

@@ -4,7 +4,6 @@ title: SERCX_ACTIVITY_INIT function (sercx.h)
 description: The SERCX_ACTIVITY_INIT function initializes a SERCX_ACTIVITY structure.
 old-location: serports\sercx_activity_init.htm
 tech.root: serports
-ms.assetid: 211A3DBB-96B8-4DB5-BB50-FAB7500D999F
 ms.date: 04/23/2018
 keywords: ["SERCX_ACTIVITY_INIT function"]
 ms.keywords: 1/SERCX_ACTIVITY_INIT, SERCX_ACTIVITY_INIT, SERCX_ACTIVITY_INIT function [Serial Ports], serports.sercx_activity_init
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any IRQL
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>SERCX_ACTIVITY_INIT</b> function initializes a <a href="/windows-hardware
 
 ## -parameters
 
-### -param Activity 
+### -param Activity [out]
 
-[out]
+
 A pointer to the <b>SERCX_ACTIVITY</b> structure that is to be initialized.
 
 ## -see-also

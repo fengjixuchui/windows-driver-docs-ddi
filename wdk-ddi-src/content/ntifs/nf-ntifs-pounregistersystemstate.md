@@ -1,17 +1,16 @@
 ---
 UID: NF:ntifs.PoUnregisterSystemState
 title: PoUnregisterSystemState function (ntifs.h)
-description: The PoUnregisterSystemState routine cancels a system state registration created by PoRegisterSystemState.
+description: The PoUnregisterSystemState routine in ntifs.h cancels a system state registration created by PoRegisterSystemState.
 old-location: kernel\pounregistersystemstate.htm
 tech.root: kernel
-ms.assetid: 5d82342e-c800-44ac-8618-468355d14dd0
 ms.date: 04/30/2018
 keywords: ["PoUnregisterSystemState function"]
 ms.keywords: PoUnregisterSystemState, PoUnregisterSystemState routine [Kernel-Mode Driver Architecture], kernel.pounregistersystemstate, portn_b6118bd0-5fe1-4e75-8c17-e81d1f26814c.xml, wdm/PoUnregisterSystemState
 req.header: ntifs.h
 req.include-header: Wdm.h, Ntddk.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 2000.
+req.target-min-winverclnt: Windows 2000.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>PoUnregisterSystemState</b> routine cancels a system state registration c
 
 ## -parameters
 
-### -param StateHandle 
+### -param StateHandle [in, out]
 
-[in, out]
+
 A pointer to a handle previously returned by <b>PoRegisterSystemState</b>.
 
 ## -remarks

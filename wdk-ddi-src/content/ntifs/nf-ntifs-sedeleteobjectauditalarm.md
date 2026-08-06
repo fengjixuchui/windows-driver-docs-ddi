@@ -4,7 +4,6 @@ title: SeDeleteObjectAuditAlarm function (ntifs.h)
 description: The SeDeleteObjectAuditAlarm routine generates audit and alarm messages for an object that is marked for deletion.
 old-location: ifsk\sedeleteobjectauditalarm.htm
 tech.root: ifsk
-ms.assetid: 3d0a26e2-60d4-437e-b5cc-3ca7afee8f5a
 ms.date: 04/16/2018
 keywords: ["SeDeleteObjectAuditAlarm function"]
 ms.keywords: SeDeleteObjectAuditAlarm, SeDeleteObjectAuditAlarm routine [Installable File System Drivers], ifsk.sedeleteobjectauditalarm, ntifs/SeDeleteObjectAuditAlarm, seref_eb1715b3-9c8b-4848-8cc8-3809d0d35d9e.xml
@@ -50,21 +49,21 @@ The <b>SeDeleteObjectAuditAlarm</b> routine generates audit and alarm messages f
 
 ## -parameters
 
-### -param Object 
+### -param Object [in]
 
-[in]
+
 Address of the object.
 
-### -param Handle 
+### -param Handle [in]
 
-[in]
+
 A unique 32-bit value representing the client's handle to the object.
 
 ## -remarks
 
 Callers of <b>SeDeleteObjectAuditAlarm</b> must have <b>SeAuditPrivilege</b> enabled. The test for this privilege is always performed against the primary token of the calling process, allowing the calling process to impersonate a client. 
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

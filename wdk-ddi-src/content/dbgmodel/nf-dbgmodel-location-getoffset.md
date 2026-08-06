@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.Location.GetOffset
 title: GetOffset function (dbgmodel.h)
 description: Returns the offset of the location.
-ms.assetid: 27a75e72-a15f-4c7c-a995-4f68b6980c2b
 ms.date: 09/28/2018
 keywords: ["GetOffset function"]
 ms.keywords: GetOffset
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - GetOffset
+ - Location::GetOffset
 ---
 
 # GetOffset function
@@ -55,3 +54,4 @@ This function returns ULONG64.
 ## -see-also
 
 [dbgmodel.h header](./index.md)
+

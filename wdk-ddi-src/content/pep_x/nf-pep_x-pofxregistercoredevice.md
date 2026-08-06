@@ -1,10 +1,9 @@
 ---
 UID: NF:pep_x.PoFxRegisterCoreDevice
 title: PoFxRegisterCoreDevice function (pep_x.h)
-description: The PoFxRegisterCoreDevice routine registers a new core system resource with the Windows power management framework (PoFx).
+description: Learn how the PoFxRegisterCoreDevice routine registers a new core system resource with the Windows power management framework (PoFx).
 old-location: kernel\pofxregistercoredevice.htm
 tech.root: kernel
-ms.assetid: D1564DB7-57D9-44B2-8ED2-1170CA4C22EE
 ms.date: 04/30/2018
 keywords: ["PoFxRegisterCoreDevice function"]
 ms.keywords: PoFxRegisterCoreDevice, PoFxRegisterCoreDevice routine [Kernel-Mode Driver Architecture], kernel.pofxregistercoredevice, pepfx/PoFxRegisterCoreDevice
@@ -51,19 +50,19 @@ The <b>PoFxRegisterCoreDevice</b> routine registers a new core system resource w
 
 ## -parameters
 
-### -param Id 
+### -param Id [in]
 
-[in]
+
 A string that uniquely identifies the core system resource. This member is a pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a <a href="/windows-hardware/drivers/install/device-identification-strings">device identification string</a>.
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_po_fx_core_device">PO_FX_CORE_DEVICE</a> structure that describes the power characteristics of the core system resource.
 
-### -param Handle 
+### -param Handle [out]
 
-[out]
+
 A pointer to a location to which the routine writes a POHANDLE value. This handle represents the registration of the core system resource with PoFx.
 
 ## -returns

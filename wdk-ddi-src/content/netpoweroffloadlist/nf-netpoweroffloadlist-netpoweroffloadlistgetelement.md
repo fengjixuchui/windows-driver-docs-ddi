@@ -3,8 +3,7 @@ UID: NF:netpoweroffloadlist.NetPowerOffloadListGetElement
 title: NetPowerOffloadListGetElement function (netpoweroffloadlist.h)
 description: The NetPowerOffloadListGetElement function gets a low power protocol offload from a list of offloads to a net adapter.
 tech.root: netvista
-ms.assetid: a93ff9b6-6415-4d3f-8443-9a2479d88453
-ms.date: 10/03/2019
+ms.date: 04/01/2022
 keywords: ["NetPowerOffloadListGetElement function"]
 ms.keywords: NetPowerOffloadListGetElement
 req.header: netpoweroffloadlist.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -37,8 +36,6 @@ api_location:
  - netadaptercxstub.lib
 api_name:
  - NetPowerOffloadListGetElement
-product:
- - Windows
 ---
 
 # NetPowerOffloadListGetElement function
@@ -50,11 +47,11 @@ The **NetPowerOffloadListGetElement** function gets a low power protocol offload
 
 ## -parameters
 
-### -param List
+### -param List [_In_]
 
 A pointer to a driver-allocated and initialized [**NET_POWER_OFFLOAD_LIST**](../netpoweroffloadlist/ns-netpoweroffloadlist-_net_power_offload_list.md) structure.
 
-### -param Index
+### -param Index [_In_]
 
 The zero-based index in the list for the target NETPOWEROFFLOAD object. This function must be less than the value returned by [**NetPowerOffloadListGetCount**](../netpoweroffloadlist/nf-netpoweroffloadlist-netpoweroffloadlistgetcount.md).
 

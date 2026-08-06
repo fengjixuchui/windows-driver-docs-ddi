@@ -4,7 +4,6 @@ title: GPIO_CLIENT_RESTORE_BANK_HARDWARE_CONTEXT (gpioclx.h)
 description: The CLIENT_RestoreBankHardwareContext event callback function restores the hardware context of a bank of general-purpose I/O (GPIO) pins.
 old-location: gpio\client_restorebankhardwarecontext.htm
 tech.root: GPIO
-ms.assetid: 7F73BC89-1BAF-413D-A901-56B4A0F3235A
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_RESTORE_BANK_HARDWARE_CONTEXT callback function"]
 ms.keywords: CLIENT_RestoreBankHardwareContext, CLIENT_RestoreBankHardwareContext callback, CLIENT_RestoreBankHardwareContext callback function [Parallel Ports], GPIO.client_restorebankhardwarecontext, GPIO_CLIENT_RESTORE_BANK_HARDWARE_CONTEXT, gpioclx/CLIENT_RestoreBankHardwareContext
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_RestoreBankHardwareContext
+ - GPIO_CLIENT_RESTORE_BANK_HARDWARE_CONTEXT
 ---
 
 # GPIO_CLIENT_RESTORE_BANK_HARDWARE_CONTEXT callback function
@@ -50,14 +49,14 @@ The *CLIENT_RestoreBankHardwareContext* event callback function restores the har
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param Parameters 
+### -param Parameters [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_save_restore_bank_hardware_context_parameters">GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS</a> structure that describes the bank of GPIO pins to restore.
 
 ## -remarks
@@ -111,3 +110,4 @@ The GPIO_CLIENT_RESTORE_BANK_HARDWARE_CONTEXT function type is defined in the Gp
 <a href="/windows-hardware/drivers/ddi/gpioclx/nf-gpioclx-gpio_clx_registerclient">GPIO_CLX_RegisterClient</a>
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_save_restore_bank_hardware_context_parameters">GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS</a>
+

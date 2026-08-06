@@ -2,9 +2,9 @@
 UID: NC:wdm.NPEM_CONTROL_ENABLE_DISABLE
 title: NPEM_CONTROL_ENABLE_DISABLE
 ms.date: 04/28/2020
-ms.topic: language-reference
+tech.root: PCI
 targetos: Windows
-description: 
+description: "Learn more about: NPEM_CONTROL_ENABLE_DISABLE"
 req.assembly: 
 req.construct-type: function
 req.ddi-compliance: 

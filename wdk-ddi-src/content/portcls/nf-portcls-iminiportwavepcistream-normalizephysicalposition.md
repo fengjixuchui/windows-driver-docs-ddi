@@ -1,10 +1,9 @@
 ---
 UID: NF:portcls.IMiniportWavePciStream.NormalizePhysicalPosition
 title: IMiniportWavePciStream::NormalizePhysicalPosition (portcls.h)
-description: The NormalizePhysicalPosition method converts a physical buffer position to a time-based value.
+description: Learn how the NormalizePhysicalPosition method converts a physical buffer position to a time-based value.
 old-location: audio\iminiportwavepcistream_normalizephysicalposition.htm
 tech.root: audio
-ms.assetid: 4ae4dc8d-3502-40c1-8109-6935990a7091
 ms.date: 05/08/2018
 keywords: ["IMiniportWavePciStream::NormalizePhysicalPosition"]
 ms.keywords: IMiniportWavePciStream interface [Audio Devices],NormalizePhysicalPosition method, IMiniportWavePciStream.NormalizePhysicalPosition, IMiniportWavePciStream::NormalizePhysicalPosition, NormalizePhysicalPosition, NormalizePhysicalPosition method [Audio Devices], NormalizePhysicalPosition method [Audio Devices],IMiniportWavePciStream interface, audio.iminiportwavepcistream_normalizephysicalposition, audmp-routines_337339ea-4683-4b67-813c-a86e7e43597a.xml, portcls/IMiniportWavePciStream::NormalizePhysicalPosition
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWavePciStream.NormalizePhysicalPosition
+ - IMiniportWavePciStream::NormalizePhysicalPosition
 ---
 
 # IMiniportWavePciStream::NormalizePhysicalPosition
@@ -50,9 +49,9 @@ The <code>NormalizePhysicalPosition</code> method converts a physical buffer pos
 
 ## -parameters
 
-### -param PhysicalPosition 
+### -param PhysicalPosition [in, out]
 
-[in, out]
+
 Pointer to a caller-allocated buffer that contains either the physical position or time-based value. On entry, this buffer contains the physical-position value that is to be converted. On return, the buffer contains the converted value, which is time-based.
 
 ## -returns

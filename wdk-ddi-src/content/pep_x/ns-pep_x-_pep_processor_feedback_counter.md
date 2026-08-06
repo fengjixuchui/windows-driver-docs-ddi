@@ -1,10 +1,9 @@
 ---
 UID: NS:pep_x._PEP_PROCESSOR_FEEDBACK_COUNTER
 title: _PEP_PROCESSOR_FEEDBACK_COUNTER (pep_x.h)
-description: The PEP_PROCESSOR_FEEDBACK_COUNTER structure describes a feedback counter to the operating system.
+description: Learn how the PEP_PROCESSOR_FEEDBACK_COUNTER structure describes a feedback counter to the operating system.
 old-location: kernel\pep_processor_feedback_counter.htm
 tech.root: kernel
-ms.assetid: 275AE285-6309-4A03-A02C-DBE8D44727CE
 ms.date: 04/30/2018
 keywords: ["PEP_PROCESSOR_FEEDBACK_COUNTER structure"]
 ms.keywords: "*PPEP_PROCESSOR_FEEDBACK_COUNTER, PEP_PROCESSOR_FEEDBACK_COUNTER, PEP_PROCESSOR_FEEDBACK_COUNTER structure [Kernel-Mode Driver Architecture], PPEP_PROCESSOR_FEEDBACK_COUNTER, PPEP_PROCESSOR_FEEDBACK_COUNTER structure pointer [Kernel-Mode Driver Architecture], PROCESSOR_FEEDBACK_COUNTER_FREQUENCY, PROCESSOR_FEEDBACK_COUNTER_PERFORMANCE, PROCESSOR_FEEDBACK_TYPE_INSTANTANEOUS, PROCESSOR_FEEDBACK_TYPE_RELATIVE, _PEP_PROCESSOR_FEEDBACK_COUNTER, kernel.pep_processor_feedback_counter, pepfx/PEP_PROCESSOR_FEEDBACK_COUNTER, pepfx/PPEP_PROCESSOR_FEEDBACK_COUNTER"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_PROCESSOR_FEEDBACK_COUNTER
+ - PPEP_PROCESSOR_FEEDBACK_COUNTER
  - PEP_PROCESSOR_FEEDBACK_COUNTER
 ---
 
@@ -130,3 +131,4 @@ This structure
 
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_ppm_query_perf_capabilities">PEP_NOTIFY_PPM_QUERY_PERF_CAPABILITIES notification</a>
+

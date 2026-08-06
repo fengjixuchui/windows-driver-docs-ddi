@@ -4,7 +4,6 @@ title: RtlFindSetBits function (wdm.h)
 description: The RtlFindSetBits routine searches for a range of set bits of a requested size within a bitmap.
 old-location: kernel\rtlfindsetbits.htm
 tech.root: kernel
-ms.assetid: 35add921-e5a2-4c18-83db-86150c43b034
 ms.date: 04/30/2018
 keywords: ["RtlFindSetBits function"]
 ms.keywords: RtlFindSetBits, RtlFindSetBits routine [Kernel-Mode Driver Architecture], k109_67665139-638f-4dc5-b0b4-db3782c1f294.xml, kernel.rtlfindsetbits, wdm/RtlFindSetBits
@@ -50,19 +49,19 @@ The <b>RtlFindSetBits</b> routine searches for a range of set bits of a requeste
 
 ## -parameters
 
-### -param BitMapHeader 
+### -param BitMapHeader [in]
 
-[in]
-A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-### -param NumberToFind 
+A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-[in]
+### -param NumberToFind [in]
+
+
 Specifies how many contiguous set bits will satisfy this request.
 
-### -param HintIndex 
+### -param HintIndex [in]
 
-[in]
+
 Specifies a zero-based bit position around which to start looking for a set bit range of the given size.
 
 ## -returns
@@ -77,7 +76,7 @@ Callers of <b>RtlFindSetBits</b> must be running at IRQL <= APC_LEVEL if the mem
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a>
+<a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a>
 
 
 

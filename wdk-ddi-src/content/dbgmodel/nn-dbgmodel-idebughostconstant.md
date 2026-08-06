@@ -2,7 +2,6 @@
 UID: NN:dbgmodel.IDebugHostConstant
 title: IDebugHostConstant (dbgmodel.h)
 description: Represents a constant within symbolic information (a non-type template argument in C++).
-ms.assetid: 87e25e99-ea64-4cda-8cae-fd38ec9c3343
 ms.date: 07/13/2018
 keywords: ["IDebugHostConstant interface"]
 req.header: dbgmodel.h
@@ -43,7 +42,7 @@ Represents a constant within symbolic information (e.g.: a non-type template arg
 
 ## -inheritance
 
-IDebugHostConstant interits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
+IDebugHostConstant inherits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
 
 ## -remarks
 

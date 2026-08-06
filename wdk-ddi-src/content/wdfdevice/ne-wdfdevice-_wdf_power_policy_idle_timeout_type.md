@@ -4,7 +4,6 @@ title: _WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE (wdfdevice.h)
 description: The WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE enumeration identifies how the idle timeout for a device is determined.
 old-location: wdf\wdf_power_policy_idle_timeout_type.htm
 tech.root: wdf
-ms.assetid: CFB7E2EA-22D9-4181-B773-BC5691B28CFD
 ms.date: 02/26/2018
 keywords: ["WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE enumeration"]
 ms.keywords: "*PWDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, DriverManagedIdleTimeout, PWDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, PWDF_POWER_POLICY_IDLE_TIMEOUT_TYPE enumeration pointer, SystemManagedIdleTimeout, SystemManagedIdleTimeoutWithHint, WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE enumeration, _WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, kmdf.wdf_power_policy_idle_timeout_type, wdf.wdf_power_policy_idle_timeout_type, wdfdevice/DriverManagedIdleTimeout, wdfdevice/PWDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, wdfdevice/SystemManagedIdleTimeout, wdfdevice/SystemManagedIdleTimeoutWithHint, wdfdevice/WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdfdevice.h
 api_name:
+ - _WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE
+ - PWDF_POWER_POLICY_IDLE_TIMEOUT_TYPE
  - WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE
 ---
 
@@ -57,17 +58,17 @@ api_name:
 
 ## -enum-fields
 
-### -field DriverManagedIdleTimeout
+### -field DriverManagedIdleTimeout:0
 
 The idle timeout value is determined by the <b>IdleTimeout</b> member of the <a href="/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure.
 
-### -field SystemManagedIdleTimeout
+### -field SystemManagedIdleTimeout:1
 
 Starting in Windows 8, the timeout value is determined by the power framework (PoFx). The value of the <b>IdleTimeout</b> member is not used.
 
 On operating systems earlier than Windows 8, the behavior is same as <b>DriverManagedIdleTimeout</b>.
 
-### -field SystemManagedIdleTimeoutWithHint
+### -field SystemManagedIdleTimeoutWithHint:2
 
 Starting in Windows 8, the PoFx uses the value specified in the <b>IdleTimeout</b> member as an input when determining at what point after all the components are idle to transition the device to a low-power (Dx) state. This option enables the driver to delay the transition to a low-power state.
 
@@ -82,3 +83,4 @@ The <b>WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE</b> enumeration is used in the <a href
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_idle_settings">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a>
+

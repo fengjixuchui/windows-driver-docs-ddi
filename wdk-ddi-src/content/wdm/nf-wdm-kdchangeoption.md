@@ -4,7 +4,6 @@ title: KdChangeOption function (wdm.h)
 description: The KdChangeOption routine accesses and changes state in the kernel that is related to kernel debugging.
 old-location: devtest\kdchangeoption.htm
 tech.root: devtest
-ms.assetid: 6f93b62b-6dc2-417b-9e1c-44be628c489c
 ms.date: 02/23/2018
 keywords: ["KdChangeOption function"]
 ms.keywords: DebugFns_7d909b99-2ffb-4c60-9738-cb35c9a0c4fa.xml, KdChangeOption, KdChangeOption routine [Driver Development Tools], devtest.kdchangeoption, wdm/KdChangeOption
@@ -50,25 +49,27 @@ The <b>KdChangeOption</b> routine accesses and changes state in the kernel that 
 
 ## -parameters
 
-### -param Option 
+### -param Option [in]
 
-[in]
 A value from the KD_OPTION enumeration that indicates the kernel state to access and change. The value of this parameter determines the format and required length of the <i>InBuffer</i> and <i>OutBuffer</i>. Currently, the only valid value is KD_OPTION_SET_BLOCK_ENABLE.
 
-### -param OPTIONAL 
+### -param InBufferBytes [in, optional]
 
-[in, optional]
 The size, in bytes, of the buffer at <i>InBuffer</i>. This value is optional.
 
-### -param InBuffer 
+### -param InBuffer [in]
 
-[in]
 A pointer to a caller-allocated input buffer that contains information about the kernel state to change. If <i>Option</i> specifies a kernel state that does not require input data, this pointer can be <b>NULL</b>.
 
-### -param OutBuffer 
+### -param OutBufferBytes [in, optional]
 
-[out]
+The size, in bytes, of the buffer at <i>OutBuffer</i>. This value is optional.
+
+### -param OutBuffer [out]
+
 A pointer to a caller-allocated output buffer in which information that pertains to the kernel state is returned. If <i>Option</i> specifies a kernel state that does not produce output data, this pointer can be <b>NULL</b>.
+
+### -param OutBufferNeeded [out, optional]
 
 ## -returns
 

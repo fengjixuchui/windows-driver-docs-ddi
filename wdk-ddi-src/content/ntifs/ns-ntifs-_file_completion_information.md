@@ -4,7 +4,6 @@ title: _FILE_COMPLETION_INFORMATION (ntifs.h)
 description: The FILE_COMPLETION_INFORMATION structure contains the port handle and key for an I/O completion port created for a file handle.
 old-location: ifsk\file_completion_information.htm
 tech.root: ifsk
-ms.assetid: 8C3C1A62-A838-436E-B8CC-ACE70FEAE8EA
 ms.date: 04/16/2018
 keywords: ["FILE_COMPLETION_INFORMATION structure"]
 ms.keywords: "*PFILE_COMPLETION_INFORMATION, FILE_COMPLETION_INFORMATION, FILE_COMPLETION_INFORMATION structure [Installable File System Drivers], PFILE_COMPLETION_INFORMATION, PFILE_COMPLETION_INFORMATION structure pointer [Installable File System Drivers], _FILE_COMPLETION_INFORMATION, ifsk.file_completion_information, ntifs/FILE_COMPLETION_INFORMATION, ntifs/PFILE_COMPLETION_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntifs.h
 api_name:
+ - _FILE_COMPLETION_INFORMATION
+ - PFILE_COMPLETION_INFORMATION
  - FILE_COMPLETION_INFORMATION
 ---
 
@@ -60,7 +61,7 @@ The handle to the completion port created for an associated file handle.
 
 ### -field Key
 
-An custom defined value which is included in every I/O completion packet for <b>Port</b>.
+A custom defined value which is included in every I/O completion packet for <b>Port</b>.
 
 ## -remarks
 
@@ -69,3 +70,4 @@ The <b>FILE_COMPLETION_INFORMATION</b> structure is used to replace the completi
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntsetinformationfile">ZwSetInformationFile</a>
+

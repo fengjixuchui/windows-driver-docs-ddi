@@ -4,7 +4,6 @@ title: TmPrePrepareEnlistment function (wdm.h)
 description: The TmPrePrepareEnlistment routine initiates the pre-prepare operation for a specified enlistment's transaction.
 old-location: kernel\tmpreprepareenlistment.htm
 tech.root: kernel
-ms.assetid: 54c0fed2-a553-4321-bf61-0f71d18ab7c5
 ms.date: 04/30/2018
 keywords: ["TmPrePrepareEnlistment function"]
 ms.keywords: TmPrePrepareEnlistment, TmPrePrepareEnlistment routine [Kernel-Mode Driver Architecture], kernel.tmpreprepareenlistment, ktm_ref_b27bc92e-86df-4457-9a8a-bf56eb7d1ac8.xml, wdm/TmPrePrepareEnlistment
@@ -52,14 +51,14 @@ The <b>TmPrePrepareEnlistment</b> routine initiates the pre-prepare operation fo
 
 ## -parameters
 
-### -param Enlistment 
+### -param Enlistment [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/kernel/enlistment-objects">enlistment object</a>. Your component can receive this pointer as input to a <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-ptm_rm_notification">ResourceManagerNotification</a> callback routine. Alternatively, your component can call <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle">ObReferenceObjectByHandle</a> and supply the object handle that a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment">ZwCreateEnlistment</a>, <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-tmcreateenlistment">TmCreateEnlistment</a>, or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a> provided.
 
-### -param TmVirtualClock 
+### -param TmVirtualClock [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/kernel/using-virtual-clock-values">virtual clock value</a>. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

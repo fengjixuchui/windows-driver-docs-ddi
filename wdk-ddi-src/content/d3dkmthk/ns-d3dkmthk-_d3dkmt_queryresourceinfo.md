@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_QUERYRESOURCEINFO
 title: _D3DKMT_QUERYRESOURCEINFO (d3dkmthk.h)
 description: The D3DKMT_QUERYRESOURCEINFO structure describes parameters for retrieving information about a resource.
 old-location: display\d3dkmt_queryresourceinfo.htm
-ms.assetid: 14078b2b-8951-48df-912a-e053bc997dde
 ms.date: 05/10/2018
 keywords: ["D3DKMT_QUERYRESOURCEINFO structure"]
 ms.keywords: D3DKMT_QUERYRESOURCEINFO, D3DKMT_QUERYRESOURCEINFO structure [Display Devices], OpenGL_Structs_1bab95d7-d3a4-4380-939f-bca4e2d98478.xml, _D3DKMT_QUERYRESOURCEINFO, d3dkmthk/D3DKMT_QUERYRESOURCEINFO, display.d3dkmt_queryresourceinfo
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_QUERYRESOURCEINFO
  - D3DKMT_QUERYRESOURCEINFO
 ---
 
@@ -52,33 +52,33 @@ The D3DKMT_QUERYRESOURCEINFO structure describes parameters for retrieving infor
 
 ## -struct-fields
 
-### -field hDevice
+### -field hDevice [in]
 
-[in] A handle to the device that the resource and allocations are associated with.
+A handle to the device that the resource and allocations are associated with.
 
-### -field hGlobalShare
+### -field hGlobalShare [in]
 
-[in] A handle to the shared resource to open.
+A handle to the shared resource to open.
 
-### -field pPrivateRuntimeData
+### -field pPrivateRuntimeData [in]
 
-[in] If non-<b>NULL</b>, a pointer to a buffer that receives the runtime-private data that is supplied at create time. The OpenGL ICD should first call the <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtqueryresourceinfo">D3DKMTQueryResourceInfo</a> function with <b>pPrivateRuntimeData</b> set to <b>NULL</b> to obtain the buffer size and then call again with the correct size buffer.
+If non-<b>NULL</b>, a pointer to a buffer that receives the runtime-private data that is supplied at create time. The OpenGL ICD should first call the <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtqueryresourceinfo">D3DKMTQueryResourceInfo</a> function with <b>pPrivateRuntimeData</b> set to <b>NULL</b> to obtain the buffer size and then call again with the correct size buffer.
 
-### -field PrivateRuntimeDataSize
+### -field PrivateRuntimeDataSize [in/out]
 
-[in/out] The size, in bytes, of the buffer that <b>pPrivateRuntimeData</b> points to. If <b>pPrivateRuntimeData</b> is <b>NULL</b>, <b>PrivateRuntimeDataSize</b> is set to the size, in bytes, that is required for the buffer to store the runtime-private data.
+The size, in bytes, of the buffer that <b>pPrivateRuntimeData</b> points to. If <b>pPrivateRuntimeData</b> is <b>NULL</b>, <b>PrivateRuntimeDataSize</b> is set to the size, in bytes, that is required for the buffer to store the runtime-private data.
 
-### -field TotalPrivateDriverDataSize
+### -field TotalPrivateDriverDataSize [out]
 
-[out] The size, in bytes, of the buffer that is required to hold the private driver data for all of the allocations that are associated with the resource.
+The size, in bytes, of the buffer that is required to hold the private driver data for all of the allocations that are associated with the resource.
 
-### -field ResourcePrivateDriverDataSize
+### -field ResourcePrivateDriverDataSize [out]
 
-[out] The size, in bytes, of the buffer that is required to hold the private driver data for the resource.
+The size, in bytes, of the buffer that is required to hold the private driver data for the resource.
 
-### -field NumAllocations
+### -field NumAllocations [out]
 
-[out] The number of allocations that are associated with the resource.
+The number of allocations that are associated with the resource.
 
 ## -see-also
 
@@ -87,3 +87,4 @@ The D3DKMT_QUERYRESOURCEINFO structure describes parameters for retrieving infor
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtqueryresourceinfo">D3DKMTQueryResourceInfo</a>
+

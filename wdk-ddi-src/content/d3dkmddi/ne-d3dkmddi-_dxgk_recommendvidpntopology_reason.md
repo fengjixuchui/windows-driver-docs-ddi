@@ -3,14 +3,13 @@ UID: NE:d3dkmddi._DXGK_RECOMMENDVIDPNTOPOLOGY_REASON
 title: _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON (d3dkmddi.h)
 description: Indicates the reason for calling the display miniport driver's DxgkDdiRecommendVidPnTopology function.
 old-location: display\dxgk_recommendvidpntopology_reason.htm
-ms.assetid: 2a67a119-863b-4cde-9308-e4862823bad1
 ms.date: 05/10/2018
 keywords: ["DXGK_RECOMMENDVIDPNTOPOLOGY_REASON enumeration"]
 ms.keywords: DXGK_RECOMMENDVIDPNTOPOLOGY_REASON, DXGK_RECOMMENDVIDPNTOPOLOGY_REASON enumeration [Display Devices], DXGK_RVT_AUGMENTATION_LKGOVERRIDE, DXGK_RVT_AUGMENTATION_NOLKG, DXGK_RVT_INITIALIZATION_LKGOVERRIDE, DXGK_RVT_INITIALIZATION_NOLKG, DXGK_RVT_UNINITIALIZED, DmEnums_b03f6fe2-5501-45ef-b841-48c6c3cc729a.xml, _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON, d3dkmddi/DXGK_RECOMMENDVIDPNTOPOLOGY_REASON, d3dkmddi/DXGK_RVT_AUGMENTATION_LKGOVERRIDE, d3dkmddi/DXGK_RVT_AUGMENTATION_NOLKG, d3dkmddi/DXGK_RVT_INITIALIZATION_LKGOVERRIDE, d3dkmddi/DXGK_RVT_INITIALIZATION_NOLKG, d3dkmddi/DXGK_RVT_UNINITIALIZED, display.dxgk_recommendvidpntopology_reason
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON
  - DXGK_RECOMMENDVIDPNTOPOLOGY_REASON
 ---
 
@@ -71,3 +71,4 @@ Indicates that the call is being made during the VidPN topology augmentation by 
 ### -field DXGK_RVT_INITIALIZATION_LKGOVERRIDE
 
 Indicates that the call is being made during the initialization of the display adapter, giving the display miniport driver a chance to override the last known good VidPN topology.
+

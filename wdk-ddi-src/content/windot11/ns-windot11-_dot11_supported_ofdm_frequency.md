@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11._DOT11_SUPPORTED_OFDM_FREQUENCY
 title: _DOT11_SUPPORTED_OFDM_FREQUENCY (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_SUPPORTED_OFDM_FREQUENCY structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_supported_ofdm_frequency.htm
 tech.root: netvista
-ms.assetid: 79017890-c045-4996-b5d3-fa000ffff5a0
 ms.date: 02/16/2018
 keywords: ["DOT11_SUPPORTED_OFDM_FREQUENCY structure"]
 ms.keywords: "*PDOT11_SUPPORTED_OFDM_FREQUENCY, DOT11_SUPPORTED_OFDM_FREQUENCY, DOT11_SUPPORTED_OFDM_FREQUENCY structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_5a7cc235-128d-4209-a250-49ec0b2b8ad7.xml, PDOT11_SUPPORTED_OFDM_FREQUENCY, PDOT11_SUPPORTED_OFDM_FREQUENCY structure pointer [Network Drivers Starting with Windows Vista], _DOT11_SUPPORTED_OFDM_FREQUENCY, netvista.dot11_supported_ofdm_frequency, windot11/DOT11_SUPPORTED_OFDM_FREQUENCY, windot11/PDOT11_SUPPORTED_OFDM_FREQUENCY"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - windot11.h
 api_name:
+ - _DOT11_SUPPORTED_OFDM_FREQUENCY
+ - PDOT11_SUPPORTED_OFDM_FREQUENCY
  - DOT11_SUPPORTED_OFDM_FREQUENCY
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_SUPPORTED_OFDM_FREQUENCY structure
@@ -52,7 +51,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_SUPPORTED_OFDM_FREQUENCY structure specifies a supported channel center frequency entry in
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_SUPPORTED_OFDM_FREQUENCY structure specifies a supported channel center frequency entry in
   a
   <a href="..\windot11\ns-windot11-_dot11_supported_ofdm_frequency_list.md">
   DOT11_SUPPORTED_OFDM_FREQUENCY_LIST</a> structure.
@@ -76,3 +78,4 @@ typedef struct _DOT11_SUPPORTED_OFDM_FREQUENCY {
 
 <a href="..\windot11\ns-windot11-_dot11_supported_ofdm_frequency_list.md">
    DOT11_SUPPORTED_OFDM_FREQUENCY_LIST</a>
+

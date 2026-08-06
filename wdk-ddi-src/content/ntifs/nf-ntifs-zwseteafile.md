@@ -1,17 +1,15 @@
 ---
 UID: NF:ntifs.ZwSetEaFile
 title: ZwSetEaFile function (ntifs.h)
-description: The ZwSetEaFile routine sets extended-attribute (EA) values for a file.
-old-location: kernel\zwseteafile.htm
+description: Learn more about the ZwSetEaFile function.
 tech.root: kernel
-ms.assetid: e791900a-06a8-4c8b-8ca8-c4e73d94f609
-ms.date: 04/30/2018
+ms.date: 04/25/2024
 keywords: ["ZwSetEaFile function"]
 ms.keywords: ZwSetEaFile, ZwSetEaFile routine [Kernel-Mode Driver Architecture], kernel.zwseteafile, ntifs/ZwSetEaFile
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Microsoft Windows 2000   and later versions of the Windows operating system.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -43,59 +41,45 @@ api_name:
 
 # ZwSetEaFile function
 
-
 ## -description
 
-The <b>ZwSetEaFile</b> routine sets extended-attribute (EA) values for a file.
+**ZwSetEaFile** replaces the extended attributes (EAs) associated with a file with the specified EAs.
 
 ## -parameters
 
-### -param FileHandle 
+### -param FileHandle [in]
 
-[in]
 The handle for the file on which the operation is to be performed.
 
-### -param IoStatusBlock 
+### -param IoStatusBlock [out]
 
-[out]
-A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_status_block">IO_STATUS_BLOCK</a> structure that receives the final completion status and other information about the requested operation.
+A pointer to an [**IO_STATUS_BLOCK**](../wdm/ns-wdm-_io_status_block.md) structure that receives the final completion status and other information about the requested operation.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
-A pointer to a caller-supplied, <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_full_ea_information">FILE_FULL_EA_INFORMATION</a>-structured input buffer that contains the extended attribute values to be set.
+A pointer to a caller-supplied [**FILE_FULL_EA_INFORMATION**](../wdm/ns-wdm-_file_full_ea_information.md)-structured input buffer that contains the new EAs that will replace the EAs currently associated with the file.
 
-### -param Length 
+### -param Length [in]
 
-[in]
-Length, in bytes, of the buffer that the <i>Buffer</i> parameter points to.
+Length, in bytes, of the buffer that the **Buffer** parameter points to.
 
 ## -returns
 
-<b>ZwSetEaFile</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as the following:
+**ZwSetEaFile** returns STATUS_SUCCESS or an appropriate NTSTATUS value such as the following:
 
-<table>
-<tr>
-<th>Return value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>STATUS_EA_LIST_INCONSISTENT</dt>
-</dl>
-</td>
-<td width="60%">
-The EaList parameter is not formatted correctly. This is an error code.
+| Return value | Description |
+| ------------ | ----------- |
+| STATUS_EA_LIST_INCONSISTENT | The EA list that **Buffer** points to isn't formatted correctly. This is an error code. |
+| STATUS_INSUFFICIENT_RESOURCES | There isn't enough memory available to complete the operation. This is an error code. |
 
-</td>
-</tr>
-</table>
+## -remarks
+
+**ZwSetEaFile** replaces the EAs associated with **FileHandle** with the EAs in the buffer that **Buffer** points to. The EAs in the buffer must be formatted as a sequence of [**FILE_FULL_EA_INFORMATION**](../wdm/ns-wdm-_file_full_ea_information.md) structures. **ZwSetEaFile** first [checks that the buffer of EA values is valid](nf-ntifs-iocheckeabuffervalidity.md) before replacing the existing EAs.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_full_ea_information">FILE_FULL_EA_INFORMATION</a>
+[**FILE_FULL_EA_INFORMATION**](../wdm/ns-wdm-_file_full_ea_information.md)
 
+[**IoCheckEaBufferValidity**](nf-ntifs-iocheckeabuffervalidity.md)
 
-
-<a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwqueryeafile">ZwQueryEaFile</a>
+[**ZwQueryEaFile**](nf-ntifs-zwqueryeafile.md)

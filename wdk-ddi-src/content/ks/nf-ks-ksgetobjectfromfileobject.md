@@ -4,8 +4,7 @@ title: KsGetObjectFromFileObject function (ks.h)
 description: The KsGetObjectFromFileObject function returns the AVStream object cast to PVOID from FileObject.
 old-location: stream\ksgetobjectfromfileobject.htm
 tech.root: stream
-ms.assetid: 6bd4f75b-a332-4e1f-8df7-0d6f51b0737b
-ms.date: 04/23/2018
+ms.date: 04/12/2021
 keywords: ["KsGetObjectFromFileObject function"]
 ms.keywords: KsGetObjectFromFileObject, KsGetObjectFromFileObject function [Streaming Media Devices], avfunc_800add7f-a220-4ad8-92bd-57e102739c8d.xml, ks/KsGetObjectFromFileObject, stream.ksgetobjectfromfileobject
 req.header: ks.h
@@ -44,34 +43,31 @@ api_name:
 
 # KsGetObjectFromFileObject function
 
-
 ## -description
 
-The<b> KsGetObjectFromFileObject</b> function returns the AVStream object cast to PVOID from <i>FileObject</i>.
+The **KsGetObjectFromFileObject** function returns the AVStream object cast to PVOID from *FileObject*.
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
-A pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">FILE_OBJECT</a> structure for which to determine the associated AVStream object.
+
+A pointer to the [FILE_OBJECT](../wdm/ns-wdm-_file_object.md) structure for which to determine the associated AVStream object.
 
 ## -returns
 
-<b>KsGetObjectFromFileObject</b> returns a pointer to the AVStream object associated with <i>FileObject</i> (cast to PVOID). This pointer may point to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter">KSFILTER</a> or a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a>, for example.
+**KsGetObjectFromFileObject** returns a pointer to the AVStream object associated with *FileObject* (cast to PVOID). For example, this pointer may point to a [KSFILTER](./ns-ks-_ksfilter.md) or a [KSPIN](./ns-ks-_kspin.md).
+
+## -remarks
+
+The **KsGetObjectFromFileObject** function does not check that the file object is associated with a KS object. If it is not, this may result in a memory access error. Driver developers should consider using structured exception handling to catch a possible exception.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ks/nf-ks-ksgetfilterfromfileobject">KsGetFilterFromFileObject</a>
+[KsGetFilterFromFileObject](./nf-ks-ksgetfilterfromfileobject.md)
 
+[KsGetObjectTypeFromFileObject](./nf-ks-ksgetobjecttypefromfileobject.md)
 
+[KsGetPinFromFileObject](./nf-ks-ksgetpinfromfileobject.md)
 
-<a href="/windows-hardware/drivers/ddi/ks/nf-ks-ksgetobjecttypefromfileobject">KsGetObjectTypeFromFileObject</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/ks/nf-ks-ksgetpinfromfileobject">KsGetPinFromFileObject</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/ks/nf-ks-kspingetconnectedpinfileobject">KsPinGetConnectedPinFileObject</a>
+[KsPinGetConnectedPinFileObject](./nf-ks-kspingetconnectedpinfileobject.md)

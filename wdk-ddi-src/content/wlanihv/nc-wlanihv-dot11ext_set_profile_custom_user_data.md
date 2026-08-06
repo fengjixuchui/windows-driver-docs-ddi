@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_SET_PROFILE_CUSTOM_USER_DATA
 title: DOT11EXT_SET_PROFILE_CUSTOM_USER_DATA (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_SET_PROFILE_CUSTOM_USER_DATA callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extsetprofilecustomuserdata.htm
 tech.root: netvista
-ms.assetid: 25e1462c-6eaa-480a-9f9e-6f8689da05c5
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_SET_PROFILE_CUSTOM_USER_DATA callback"]
 ms.keywords: DOT11EXT_SET_PROFILE_CUSTOM_USER_DATA, Dot11ExtSetProfileCustomUserData, Dot11ExtSetProfileCustomUserData callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_87f713b8-bd3e-4165-adce-c37fbb829cdb.xml, netvista.dot11extsetprofilecustomuserdata, wlanihv/Dot11ExtSetProfileCustomUserData
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_SET_PROFILE_CUSTOM_USER_DATA
  - wlanihv/DOT11EXT_SET_PROFILE_CUSTOM_USER_DATA
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtSetProfileCustomUserData
+ - DOT11EXT_SET_PROFILE_CUSTOM_USER_DATA
 ---
 
 # DOT11EXT_SET_PROFILE_CUSTOM_USER_DATA callback
@@ -54,36 +52,36 @@ api_name:
 
 ## -parameters
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the wireless LAN (WLAN) adapter. This handle
      value was specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param hConnectSession 
+### -param hConnectSession [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the connection session with the BSS network.
      This handle value was specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_pre_associate.md">
      Dot11ExtIhvPerformPreAssociate</a> IHV Handler function.
 
-### -param dwSessionID 
+### -param dwSessionID [in]
 
-[in]
+
 The session identifier (session ID) of the current user.
 
-### -param dwDataSize 
+### -param dwDataSize [in]
 
-[in]
+
 The size, in bytes, of the buffer referenced by
      <i>pvData</i> .
 
-### -param pvData 
+### -param pvData [in]
 
-[in]
+
 A pointer to a caller-allocated buffer, which contains the data in a format defined by the
      IHV.
 
@@ -143,3 +141,4 @@ After custom user data has been set, this data can be accessed using the
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_get_profile_custom_user_data.md">
    Dot11ExtGetProfileCustomUserData</a>
+

@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_GETVIDEODECODERPROFILE
 title: PFND3D11_1DDI_GETVIDEODECODERPROFILE (d3d10umddi.h)
 description: Queries the attributes of a specified video decoder profile.
 old-location: display\getvideodecoderprofile.htm
-ms.assetid: 75576152-0afd-4602-b481-bf1d6d9348b3
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_GETVIDEODECODERPROFILE callback function"]
 ms.keywords: PFND3D11_1DDI_GETVIDEODECODERPROFILE, PFND3D11_1DDI_GETVIDEODECODERPROFILE callback, d3d10umddi/pfnGetVideoDecoderProfile, display.getvideodecoderprofile, pfnGetVideoDecoderProfile, pfnGetVideoDecoderProfile callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnGetVideoDecoderProfile
-product:
- - Windows
+ - PFND3D11_1DDI_GETVIDEODECODERPROFILE
 ---
 
 # PFND3D11_1DDI_GETVIDEODECODERPROFILE callback function
@@ -52,19 +49,19 @@ Queries the attributes of a specified video decoder profile.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *Index* [in]
 
 The zero-based index of the video decoder profile. The display miniport driver returns the maximum number of video decoder profiles that it supports through a call to its <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_getvideodecoderprofilecount">GetVideoDecoderProfileCount</a> function.
 
-### -param Arg3
+### -param unnamedParam3
 
 *pDecodeDesc* [out]
 
@@ -81,3 +78,4 @@ The Microsoft Direct3D runtime verifies that the <i>Index</i> parameter data is 
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_getvideodecoderprofilecount">GetVideoDecoderProfileCount</a>
+

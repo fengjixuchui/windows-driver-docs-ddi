@@ -4,7 +4,6 @@ title: ObfReferenceObject function (wdm.h)
 description: The ObfReferenceObject routine increments the reference count to the given object.
 old-location: kernel\obreferenceobject.htm
 tech.root: kernel
-ms.assetid: d911089a-f23a-4d0e-a333-c01ec3ac89dc
 ms.date: 04/30/2018
 keywords: ["ObfReferenceObject function"]
 ms.keywords: ObfReferenceObject, ObfReferenceObject routine [Kernel-Mode Driver Architecture], ObfReferenceObject, k107_97bb0a8c-e445-484c-959a-03f1c41ab3fe.xml, kernel.obreferenceobject, wdm/ObReferenceObject, wdm/ObfReferenceObject
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,6 @@ api_type:
 api_location:
  - NtosKrnl.exe
 api_name:
- - ObReferenceObject
  - ObfReferenceObject
 ---
 
@@ -51,9 +49,9 @@ The <b>ObfReferenceObject</b> routine increments the reference count to the give
 
 ## -parameters
 
-### -param Object 
+### -param Object [in]
 
-[in]
+
 Pointer to the object. The caller obtained this parameter either when it created the object or from a preceding call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obreferenceobjectbyhandle">ObReferenceObjectByHandle</a> after it opened the object.
 
 ## -returns
@@ -83,3 +81,4 @@ When the reference count for an object reaches zero, a kernel-mode component can
 
 
 <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntclose">ZwClose</a>
+

@@ -4,7 +4,6 @@ title: RILADDRESS (ntddrilapitypes.h)
 description: This structure represents a phone number.
 old-location: netvista\riladdress.htm
 tech.root: netvista
-ms.assetid: d329069d-5455-4c37-b190-02a7bd1e789a
 ms.date: 02/16/2018
 keywords: ["RILADDRESS structure"]
 ms.keywords: "*LPRILADDRESS, RILADDRESS, RILADDRESS structure [Network Drivers Starting with Windows Vista], netvista.riladdress, rilapitypes/RILADDRESS"
@@ -41,6 +40,7 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILADDRESS
+ - LPRILADDRESS
 ---
 
 # RILADDRESS structure (ntddrilapitypes.h)
@@ -500,3 +500,4 @@ In the case of the control digits separator, either uppercase or lowercase 'P' m
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/cellular/dn946511(v=vs.85)">Cellular COM structures</a>
+

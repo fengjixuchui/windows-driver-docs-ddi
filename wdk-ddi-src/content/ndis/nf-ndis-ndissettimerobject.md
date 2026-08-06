@@ -4,7 +4,6 @@ title: NdisSetTimerObject function (ndis.h)
 description: The NdisSetTimerObject function sets a timer object to fire after a specified interval or periodically.
 old-location: netvista\ndissettimerobject.htm
 tech.root: netvista
-ms.assetid: 75f8fa1b-5b79-4bc2-8b7b-aa1101c9c331
 ms.date: 05/02/2018
 keywords: ["NdisSetTimerObject function"]
 ms.keywords: NdisSetTimerObject, NdisSetTimerObject function [Network Drivers Starting with Windows Vista], ndis/NdisSetTimerObject, ndis_timer_ref_7be2aa63-67ef-4416-87d5-d11260a57d3f.xml, netvista.ndissettimerobject
@@ -53,33 +52,33 @@ The
 
 ## -parameters
 
-### -param TimerObject 
+### -param TimerObject [in]
 
-[in]
+
 A handle to a timer object that NDIS provides when a driver calls the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisallocatetimerobject">
      NdisAllocateTimerObject</a> function.
 
-### -param DueTime 
+### -param DueTime [in]
 
-[in]
+
 The absolute or relative time at which the timer is to expire. If the value of the 
      <i>DueTime</i> parameter is negative, the expiration time is relative to the current system time.
      Otherwise, the expiration time is absolute. The expiration time is expressed in system time units
      (100-nanosecond intervals). Absolute expiration times track any changes in the system time; relative
      expiration times are not affected by system time changes.
 
-### -param MillisecondsPeriod 
+### -param MillisecondsPeriod [in, optional]
 
-[in, optional]
+
 The periodic time interval, in milliseconds, that elapses between each time the timer fires and
      the next call to the 
      <i>NetTimerCallback</i> function, unless the timer is canceled. The value of this parameter must be less
      than or equal to MAXLONG.
 
-### -param FunctionContext 
+### -param FunctionContext [in, optional]
 
-[in, optional]
+
 A pointer to a caller-supplied context area that NDIS passes to the associated 
      <i>NetTimerCallback</i> function when a timer fires. If this parameter is <b>NULL</b>, NDIS uses the default
      value that is specified in the 

@@ -1,10 +1,9 @@
 ---
 UID: NS:pep_x._PEP_DEVICE_REGISTER_V2
 title: _PEP_DEVICE_REGISTER_V2 (pep_x.h)
-description: The PEP_DEVICE_REGISTER structure describes all the components in a particular device.
+description: Learn how the PEP_DEVICE_REGISTER structure describes all the components in a particular device.
 old-location: kernel\pep_device_register_v2.htm
 tech.root: kernel
-ms.assetid: 67747FF9-4808-45BB-8809-24B2CE56546B
 ms.date: 04/30/2018
 keywords: ["PEP_DEVICE_REGISTER_V2 structure"]
 ms.keywords: "*PPEP_DEVICE_REGISTER, *PPEP_DEVICE_REGISTER_V2, PEP_DEVICE_REGISTER, PEP_DEVICE_REGISTER_V2, PEP_DEVICE_REGISTER_V2 structure [Kernel-Mode Driver Architecture], PPEP_DEVICE_REGISTER_V2, PPEP_DEVICE_REGISTER_V2 structure pointer [Kernel-Mode Driver Architecture], _PEP_DEVICE_REGISTER_V2, kernel.pep_device_register_v2, pepfx/PEP_DEVICE_REGISTER_V2, pepfx/PPEP_DEVICE_REGISTER_V2"
@@ -41,6 +40,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_DEVICE_REGISTER_V2
+ - PPEP_DEVICE_REGISTER_V2
  - PEP_DEVICE_REGISTER_V2
 ---
 
@@ -54,8 +55,6 @@ The <b>PEP_DEVICE_REGISTER</b> structure describes all the components in a parti
 ## -struct-fields
 
 ### -field Flags
-
-TBD
 
 ### -field ComponentCount
 
@@ -76,3 +75,4 @@ The <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_device_v
 
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_device_v2">PEP_REGISTER_DEVICE</a>
+

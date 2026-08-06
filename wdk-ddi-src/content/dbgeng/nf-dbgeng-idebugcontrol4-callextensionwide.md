@@ -4,7 +4,6 @@ title: IDebugControl4::CallExtensionWide (dbgeng.h)
 description: The CallExtensionWide method calls a debugger extension.
 old-location: debugger\callextensionwide.htm
 tech.root: debugger
-ms.assetid: a46d7ba9-24fc-4e06-9655-3fc6531d6891
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::CallExtensionWide"]
 ms.keywords: CallExtensionWide, CallExtensionWide method [Windows Debugging], CallExtensionWide method [Windows Debugging],IDebugControl4 interface, IDebugControl4 interface [Windows Debugging],CallExtensionWide method, IDebugControl4.CallExtensionWide, IDebugControl4::CallExtensionWide, dbgeng/IDebugControl4::CallExtensionWide, debugger.callextensionwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.CallExtensionWide
+ - IDebugControl4::CallExtensionWide
 ---
 
 # IDebugControl4::CallExtensionWide
@@ -50,19 +49,19 @@ The <b>CallExtensionWide</b> method calls a debugger extension.
 
 ## -parameters
 
-### -param Handle 
+### -param Handle [in]
 
-[in]
+
 Specifies the handle of the extension library that contains the extension to call.  If <i>Handle</i> is zero, the engine will walk the extension library chain searching for the extension.
 
-### -param Function 
+### -param Function [in]
 
-[in]
+
 Specifies the name of the extension to call.
 
-### -param Arguments 
+### -param Arguments [in, optional]
 
-[in, optional]
+
 Specifies the arguments to pass to the extension.  <i>Arguments</i> is a string that will be parsed by the extension, just like the extension will parse arguments passed to it when called as an extension command.
 
 ## -returns
@@ -109,3 +108,4 @@ For more information on using extension libraries, see <a href="/windows-hardwar
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol4">IDebugControl4</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl.GetLogMask
 title: IDebugControl::GetLogMask (dbgeng.h)
-description: The GetLogMask method returns the output mask for the currently open log file.
+description: Learn how the GetLogMask method returns the output mask for the currently open log file. Includes parameters, returns, and remarks.
 old-location: debugger\getlogmask.htm
 tech.root: debugger
-ms.assetid: 32d36b6d-9887-43ac-9314-fc682705131e
 ms.date: 05/03/2018
 keywords: ["IDebugControl::GetLogMask"]
 ms.keywords: GetLogMask, GetLogMask method [Windows Debugging], GetLogMask method [Windows Debugging],IDebugControl interface, GetLogMask method [Windows Debugging],IDebugControl2 interface, GetLogMask method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],GetLogMask method, IDebugControl.GetLogMask, IDebugControl2 interface [Windows Debugging],GetLogMask method, IDebugControl2::GetLogMask, IDebugControl3 interface [Windows Debugging],GetLogMask method, IDebugControl3::GetLogMask, IDebugControl::GetLogMask, IDebugControl_a3ef306a-5134-49c7-b589-65a4afaa90ac.xml, dbgeng/IDebugControl2::GetLogMask, dbgeng/IDebugControl3::GetLogMask, dbgeng/IDebugControl::GetLogMask, debugger.getlogmask
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.GetLogMask
- - IDebugControl2.GetLogMask
- - IDebugControl3.GetLogMask
+ - IDebugControl::GetLogMask
 ---
 
 # IDebugControl::GetLogMask
@@ -52,9 +49,9 @@ The <b>GetLogMask</b> method returns the output mask for the currently open log 
 
 ## -parameters
 
-### -param Mask 
+### -param Mask [out]
 
-[out]
+
 Receives the output mask for the log file.  See <a href="/windows-hardware/drivers/debugger/debug-output-xxx">DEBUG_OUTPUT_XXX</a> for details about how to interpret this value.
 
 ## -returns
@@ -102,3 +99,4 @@ For more information about log files, see <a href="/windows-hardware/drivers/deb
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setlogmask">SetLogMask</a>
+

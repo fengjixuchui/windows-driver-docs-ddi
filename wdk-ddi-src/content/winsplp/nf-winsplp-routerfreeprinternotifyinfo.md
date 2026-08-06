@@ -4,7 +4,6 @@ title: RouterFreePrinterNotifyInfo function (winsplp.h)
 description: The print spooler's RouterFreePrinterNotifyInfo function deallocates a specified PRINTER_NOTIFY_INFO structure and its associated PRINTER_NOTIFY_INFO_DATA structure array.
 old-location: print\routerfreeprinternotifyinfo.htm
 tech.root: print
-ms.assetid: 11beef0b-061a-4d73-b723-d0214f479503
 ms.date: 04/20/2018
 keywords: ["RouterFreePrinterNotifyInfo function"]
 ms.keywords: RouterFreePrinterNotifyInfo, RouterFreePrinterNotifyInfo function [Print Devices], print.routerfreeprinternotifyinfo, spoolfnc_7ae0296f-8bfe-4ee3-b621-1d1582deafdf.xml, winsplp/RouterFreePrinterNotifyInfo
@@ -50,9 +49,9 @@ The print spooler's <code>RouterFreePrinterNotifyInfo</code> function deallocate
 
 ## -parameters
 
-### -param pInfo 
+### -param pInfo [in, optional]
 
-[in, optional]
+
 Caller-supplied pointer to a PRINTER_NOTIFY_INFO structure (described in the Windows SDK documentation).
 
 ## -returns
@@ -61,7 +60,7 @@ If the operation succeeds, the function returns <b>TRUE</b>. Otherwise the funct
 
 ## -remarks
 
-A print provider's <a href="/previous-versions/ff561930(v=vs.85)">RefreshPrinterChangeNotification</a> function should call <code>RouterFreePrinterNotifyInfo</code> to deallocate structures previously allocated by <a href="/windows-hardware/drivers/ddi/winsplp/nf-winsplp-routerallocprinternotifyinfo">RouterAllocPrinterNotifyInfo</a>, but only if <b>RefreshPrinterChangeNotification</b> encounters a error. If <b>RefreshPrinterChangeNotification</b> succeeds, you should assume that the client application will deallocate the structures.
+A print provider's <a href="/previous-versions/ff561930(v=vs.85)">RefreshPrinterChangeNotification</a> function should call <code>RouterFreePrinterNotifyInfo</code> to deallocate structures previously allocated by <a href="/windows-hardware/drivers/ddi/winsplp/nf-winsplp-routerallocprinternotifyinfo">RouterAllocPrinterNotifyInfo</a>, but only if <b>RefreshPrinterChangeNotification</b> encounters an error. If <b>RefreshPrinterChangeNotification</b> succeeds, you should assume that the client application will deallocate the structures.
 
 Besides deallocating the specified PRINTER_NOTIFY_INFO structure and its associated PRINTER_NOTIFY_INFO_DATA structure array, the function also deallocates buffer space pointed to by <i>pBuf</i> in any element of the PRINTER_NOTIFY_INFO_DATA structure array.
 

@@ -4,8 +4,7 @@ title: IWDTFSimpleIOStressAction2::Continue (wdtfinterfaces.h)
 description: Continues the I/O.
 old-location: dtf\iwdtfsimpleiostressaction2_continue.htm
 tech.root: dtf
-ms.assetid: 5625c4af-329d-4b16-9d5d-0ca962a7abff
-ms.date: 04/04/2018
+ms.date: 08/10/2023
 keywords: ["IWDTFSimpleIOStressAction2::Continue"]
 ms.keywords: Continue, Continue method [Windows Device Testing Framework], Continue method [Windows Device Testing Framework],IWDTFSimpleIOStressAction2 interface, IWDTFSimpleIOStressAction2 interface [Windows Device Testing Framework],Continue method, IWDTFSimpleIOStressAction2.Continue, IWDTFSimpleIOStressAction2::Continue, Microsoft.WDTF.IWDTFSimpleIOStressAction2.Continue, Microsoft::WDTF::IWDTFSimpleIOStressAction2::Continue, dtf.iwdtfsimpleiostressaction2_continue, wdtfinterfaces/IWDTFSimpleIOStressAction2::Continue
 req.header: wdtfinterfaces.h
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - WDTFInterfaces.Interop.dll
 api_name:
- - IWDTFSimpleIOStressAction2.Continue
+ - IWDTFSimpleIOStressAction2::Continue
 ---
 
 # IWDTFSimpleIOStressAction2::Continue
-
 
 ## -description
 
@@ -50,9 +48,7 @@ Continues the I/O.
 
 ## -parameters
 
-### -param pResult
-
-#### - pbResult [out, retval]
+### -param pResult [out, retval]
 
 True if the I/O operation succeeded; otherwise, false.
 
@@ -63,3 +59,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtfinterfaces/nn-wdtfinterfaces-iwdtfsimpleiostressaction2">IWDTFSimpleIOStressAction2</a>
+

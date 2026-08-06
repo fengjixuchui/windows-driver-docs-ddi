@@ -4,7 +4,6 @@ title: IResourceList::TranslatedList (portcls.h)
 description: The TranslatedList method returns the list of translated resources.
 old-location: audio\iresourcelist_translatedlist.htm
 tech.root: audio
-ms.assetid: 6bc4f939-dbc8-4d9a-95f9-b5ec97a47a8a
 ms.date: 05/08/2018
 keywords: ["IResourceList::TranslatedList"]
 ms.keywords: IResourceList interface [Audio Devices],TranslatedList method, IResourceList.TranslatedList, IResourceList::TranslatedList, TranslatedList, TranslatedList method [Audio Devices], TranslatedList method [Audio Devices],IResourceList interface, audio.iresourcelist_translatedlist, audmp-routines_d74c0767-97d9-4488-82f1-51cde4dc8259.xml, portcls/IResourceList::TranslatedList
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IResourceList.TranslatedList
+ - IResourceList::TranslatedList
 ---
 
 # IResourceList::TranslatedList
@@ -59,3 +58,4 @@ The <code>TranslatedList</code> method returns the list of translated resources.
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iresourcelist">IResourceList</a>
+

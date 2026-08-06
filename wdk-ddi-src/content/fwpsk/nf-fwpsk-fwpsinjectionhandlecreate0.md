@@ -4,7 +4,6 @@ title: FwpsInjectionHandleCreate0 function (fwpsk.h)
 description: The FwpsInjectionHandleCreate0 function creates a handle that can be used by packet injection functions to inject packet or stream data into the TCP/IP network stack and by the FwpsQueryPacketInjectionState0 function to query the packet injection state.Note  FwpsInjectionHandleCreate0 is a specific version of FwpsInjectionHandleCreate. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
 old-location: netvista\fwpsinjectionhandlecreate0.htm
 tech.root: netvista
-ms.assetid: 61cee8ef-1070-46d4-a541-94a9f09b593b
 ms.date: 05/02/2018
 keywords: ["FwpsInjectionHandleCreate0 function"]
 ms.keywords: FwpsInjectionHandleCreate0, FwpsInjectionHandleCreate0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsInjectionHandleCreate0, netvista.fwpsinjectionhandlecreate0, wfp_ref_2_funct_3_fwps_I_24f21d21-bf9c-4f77-9630-2c589b18aca4.xml
@@ -56,9 +55,9 @@ The
 
 ## -parameters
 
-### -param addressFamily 
+### -param addressFamily [in, optional]
 
-[in, optional]
+
 The address family for which the injection handle is being created. This can be one of the
      following address families:
      
@@ -87,9 +86,9 @@ For transport, stream, and forward injections, this parameter is optional and ca
      AF_UNSPEC, which indicates an unspecified address family. This value is defined in 
      Ws2def.h.
 
-### -param flags 
+### -param flags [in]
 
-[in]
+
 A flag value set by a callout driver to indicate the type of data to be injected. This flag can have
      one or more of the following values: 
      
@@ -136,9 +135,9 @@ Transport data will be injected by calling either the
      injection type bits with bitwise OR operations. If the flag value is set to zero, the resulting
      injection handle can be used for transport, stream, and forward injections.
 
-### -param injectionHandle 
+### -param injectionHandle [out]
 
-[out]
+
 A pointer to a variable that receives the handle.
 
 ## -returns
@@ -207,6 +206,10 @@ When injections are being made to the network layer and both IPv4 and IPv6 addre
     <b>FwpsInjectionHandleCreate0</b> function twice: one call with 
     <i>addressFamily</i> set to AF_INET, and a second call with 
     <i>addressFamily</i> set to AF_INET6.
+
+For the MAC layers ( *MAC_FRAME_NATIVE, *MAC_FRAME_ETHERNET, *VSWITCH_ETHERNET), you can use the same injection handle acquired with the FWPS_INJECTION_TYPE_L2 flag. The Injection type is tied closer to the injection functions than the layers.
+
+For a code example, see [WFPSampler HelperFunctions_InjectionData.cpp](https://github.com/microsoft/Windows-driver-samples/blob/master/network/trans/WFPSampler/syslib/HelperFunctions_InjectionData.cpp).
 
 ## -see-also
 

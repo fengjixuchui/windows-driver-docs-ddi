@@ -2,7 +2,6 @@
 UID: NF:sensorsutils.CollectionsListGetSerializedSize
 title: CollectionsListGetSerializedSize function (sensorsutils.h)
 description: This routine returns the larger of the two sizes to provide for sufficient buffer sizes to accommodate passing the collection list across processes that can have different bit-ness values.
-ms.assetid: e5b38220-cc8d-425c-b1a8-d61983d36e2a
 ms.date: 08/08/2018
 keywords: ["CollectionsListGetSerializedSize function"]
 tech.root: sensors
@@ -51,9 +50,9 @@ This routine returns the larger of the two sizes to provide for sufficient buffe
 
 ## -parameters
 
-### -param Collection
+### -param Collection [in]
 
-[in] Pointer to a collection list.
+Pointer to a collection list.
 
 ## -returns
 

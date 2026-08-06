@@ -4,7 +4,6 @@ title: IStiDevice::GetLastNotificationData (sti.h)
 description: The IStiDevice::GetLastNotificationData method returns a description of the most recent event that occurred on a still image device.
 old-location: image\istidevice_getlastnotificationdata.htm
 tech.root: image
-ms.assetid: dd073fde-d2ba-45c0-a52c-22e86718901a
 ms.date: 05/03/2018
 keywords: ["IStiDevice::GetLastNotificationData"]
 ms.keywords: GetLastNotificationData, GetLastNotificationData method [Imaging Devices], GetLastNotificationData method [Imaging Devices],IStiDevice interface, IStiDevice interface [Imaging Devices],GetLastNotificationData method, IStiDevice.GetLastNotificationData, IStiDevice::GetLastNotificationData, image.istidevice_getlastnotificationdata, sti/IStiDevice::GetLastNotificationData, stifnc_def72c8c-f8cf-4eb7-84a1-e99ecddee4de.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - sti.h
 api_name:
- - IStiDevice.GetLastNotificationData
+ - IStiDevice::GetLastNotificationData
 ---
 
 # IStiDevice::GetLastNotificationData
@@ -50,9 +49,9 @@ The <b>IStiDevice::GetLastNotificationData</b> method returns a description of t
 
 ## -parameters
 
-### -param lpNotify 
+### -param lpNotify [out]
 
-[out]
+
 Caller-supplied pointer to an <a href="/windows-hardware/drivers/ddi/sti/ns-sti-_stinotify">STINOTIFY</a> structure to receive event information.
 
 ## -returns
@@ -64,3 +63,4 @@ If the operation succeeds, the method returns S_OK. Otherwise, it returns one of
 Each time a <a href="/windows-hardware/drivers/image/still-image-device-events">Still Image Device Events</a> occurs, the still image event monitor calls <a href="/windows-hardware/drivers/ddi/stiusd/nf-stiusd-istiusd-getnotificationdata">IStiUSD::GetNotificationData</a> (exported by a vendor-supplied minidriver) to obtain an event description. These descriptions are added to a linked list. If a client of the <b>IStiDevice</b> COM interface has called <a href="/windows-hardware/drivers/ddi/sti/nf-sti-istidevice-subscribe">IStiDevice::Subscribe</a>, it is notified each time a device event occurs. It can then call <b>IStiDevice::GetLastNotificationData</b> to obtain the most recent addition to the linked list of events.
 
 Before calling <b>IStiDevice::GetLastNotificationData</b>, clients of the <b>IStiDevice</b> COM interface must call <a href="/previous-versions/windows/hardware/drivers/ff543778(v=vs.85)">IStillImage::CreateDevice</a> to obtain an <b>IStiDevice</b> interface pointer, which provides access to a specified device.
+

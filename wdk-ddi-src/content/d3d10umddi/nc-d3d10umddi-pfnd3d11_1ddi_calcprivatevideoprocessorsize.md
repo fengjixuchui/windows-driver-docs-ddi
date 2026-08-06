@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_CALCPRIVATEVIDEOPROCESSORSIZE
 title: PFND3D11_1DDI_CALCPRIVATEVIDEOPROCESSORSIZE (d3d10umddi.h)
 description: Returns the number of bytes that the driver requires to store private data for the video processor state.
 old-location: display\calcprivatevideoprocessorsize.htm
-ms.assetid: a30d98b2-3d39-456a-8363-44ccc71e58ff
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_CALCPRIVATEVIDEOPROCESSORSIZE callback function"]
 ms.keywords: CalcPrivateVideoProcessorSize, CalcPrivateVideoProcessorSize callback function [Display Devices], PFND3D11_1DDI_CALCPRIVATEVIDEOPROCESSORSIZE, PFND3D11_1DDI_CALCPRIVATEVIDEOPROCESSORSIZE callback, d3d10umddi/CalcPrivateVideoProcessorSize, display.calcprivatevideoprocessorsize
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - CalcPrivateVideoProcessorSize
+ - PFND3D11_1DDI_CALCPRIVATEVIDEOPROCESSORSIZE
 ---
 
 # PFND3D11_1DDI_CALCPRIVATEVIDEOPROCESSORSIZE callback function
@@ -50,13 +49,13 @@ Returns the number of bytes that the driver requires to store private data for t
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pVideoProcessor* [in]
 
@@ -73,3 +72,4 @@ This function is not expected to fail.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddiarg_createvideoprocessoroutputview">D3D11_1DDIARG_CREATEVIDEOPROCESSOROUTPUTVIEW</a>
+

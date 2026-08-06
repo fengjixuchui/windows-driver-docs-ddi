@@ -1,10 +1,8 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_SHADERCACHEGETVALUE_CB_0021
 title: PFND3D12DDI_SHADERCACHEGETVALUE_CB_0021 (d3d12umddi.h)
-description: The pfnShaderCacheGetValueCb callback function gets a shader cache value.
-old-location: display\pfnd3d12ddi_shadercachegetvalue_cb_0021.htm
-ms.assetid: EFC9E2D0-1995-4FE9-840C-7B33081AEF2F
-ms.date: 05/10/2018
+description: Learn about the pfnShaderCacheGetValueCb callback.
+ms.date: 06/27/2024
 keywords: ["PFND3D12DDI_SHADERCACHEGETVALUE_CB_0021 callback function"]
 ms.keywords: PFND3D12DDI_SHADERCACHEGETVALUE_CB_0021, PFND3D12DDI_SHADERCACHEGETVALUE_CB_0021 callback, d3d12umddi/pfnShaderCacheGetValueCb, display.pfnd3d12ddi_shadercachegetvalue_cb_0021, pfnShaderCacheGetValueCb, pfnShaderCacheGetValueCb callback function [Display Devices]
 req.header: d3d12umddi.h
@@ -38,56 +36,57 @@ api_type:
 api_location:
  - D3d12umddi.h
 api_name:
- - pfnShaderCacheGetValueCb
-product:
- - Windows
+ - PFND3D12DDI_SHADERCACHEGETVALUE_CB_0021
 ---
 
 # PFND3D12DDI_SHADERCACHEGETVALUE_CB_0021 callback function
 
-
 ## -description
 
-The <i>pfnShaderCacheGetValueCb</i> callback function gets a shader cache value.
+The **pfnShaderCacheGetValueCb** callback function gets a value stored in the shader cache.
 
 ## -parameters
 
 ### -param hRTDevice
 
-The handle of the device for the driver to use when it calls back into the runtime.
+[in] Handle to the runtime's representation of the device.
 
 ### -param hRTPSO
 
-The handle of a PSO.
+[in] Handle to the runtime's representation of a pipeline state object.
 
 ### -param pPrecomputedHash
 
-A hash value.
+[in] A [**D3D12DDI_SHADERCACHE_HASH**](ns-d3d12umddi-d3d12ddi_shadercache_hash.md) structure that contains the hash value to use for cache lookup.
 
 ### -param pKey
 
-A pointer to a key.
+[in] A pointer to the key associated with the value to be retrieved from the driver's shader cache. The key uniquely identifies the shader data in the cache.
 
 ### -param KeyLen
 
-The length of the key.
+[in] The length of the key that **pKey** points to, in bytes.
 
 ### -param pValue
 
-A pointer to an output value.
+[out] A pointer to the compiled shader code or other data associated with the shader identified by **pPrecomputedHash** and **pKey**. This parameter can be NULL if **pValueLen** is zero.
 
 ### -param pValueLen
 
-The length of the output value.
+[in/out] Pointer to a variable that specifies the length of the buffer that **pValue** points to, in bytes. On input, this variable specifies the size of the buffer. On output, it specifies the size of the data that was written to the buffer. If **pValueLen** is set to zero and **pValue** is NULL, **pfnShaderCacheGetValueCb** should write the number of bytes needed for the data in a second call to it. Otherwise, if the buffer that **pValue** points to is too small, the function should fail.
 
 ## -returns
 
-If this callback function succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
+If **pfnShaderCacheGetValueCb** succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
 
 ## -remarks
 
-Access this callback by using the <a href="/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_shadercache_callbacks_0021">D3D12DDI_SHADERCACHE_CALLBACKS_0021</a> structure.
+The [**pfnShaderCacheStoreValueCb**](nc-d3d12umddi-pfnd3d12ddi_shadercachestorevalue_cb_0021.md) and **pfnShaderCacheGetValueCb** callbacks are used to store and retrieve compiled shader code or other shader-related data in the driver's shader cache. Caching helps improve performance by reducing the need to recompile shaders that have already been compiled and cached.
+
+Access this callback by using the [**D3D12DDI_SHADERCACHE_CALLBACKS_0021**](ns-d3d12umddi-d3d12ddi_shadercache_callbacks_0021.md) structure.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddi_shadercache_callbacks_0021">D3D12DDI_SHADERCACHE_CALLBACKS_0021</a>
+[**D3D12DDI_SHADERCACHE_CALLBACKS_0021**](ns-d3d12umddi-d3d12ddi_shadercache_callbacks_0021.md)
+
+[**pfnShaderCacheStoreValueCb**](nc-d3d12umddi-pfnd3d12ddi_shadercachestorevalue_cb_0021.md)

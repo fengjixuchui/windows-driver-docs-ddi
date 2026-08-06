@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_DisableModemFilters
 title: RIL_DisableModemFilters function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_DisableModemFilters function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_disablemodemfilters.htm
 tech.root: netvista
-ms.assetid: eb1ac5cc-f757-4aee-9a21-ed4b03d4b6a8
 ms.date: 05/02/2018
 keywords: ["RIL_DisableModemFilters function"]
 ms.keywords: RIL_DisableModemFilters, RIL_DisableModemFilters method [Network Drivers Starting with Windows Vista], netvista.ril_disablemodemfilters, rilapi/RIL_DisableModemFilters

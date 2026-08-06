@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_44
+UID: NS:ksmedia.KSAUDIO_MIXLEVEL
 title: KSAUDIO_MIXLEVEL (ksmedia.h)
 description: The KSAUDIO_MIXLEVEL structure specifies the mixing level of an input-output path in a supermixer node (KSNODETYPE_SUPERMIX).
 old-location: audio\ksaudio_mixlevel.htm
 tech.root: audio
-ms.assetid: b685f2f5-3491-471d-b1da-07a7e56bda62
 ms.date: 07/08/2019
 keywords: ["KSAUDIO_MIXLEVEL structure"]
 ms.keywords: "*PKSAUDIO_MIXLEVEL, KSAUDIO_MIXLEVEL, KSAUDIO_MIXLEVEL structure [Audio Devices], PKSAUDIO_MIXLEVEL, PKSAUDIO_MIXLEVEL structure pointer [Audio Devices], aud-prop_d80f29a4-4872-49cc-b1af-94b69be9c229.xml, audio.ksaudio_mixlevel, ksmedia/KSAUDIO_MIXLEVEL, ksmedia/PKSAUDIO_MIXLEVEL"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSAUDIO_MIXLEVEL
  - KSAUDIO_MIXLEVEL
 ---
 
@@ -89,3 +89,4 @@ This scale has a resolution of 1/65536 decibel.
 
 
 <a href="/windows-hardware/drivers/audio/ksproperty-audio-mix-level-table">KSPROPERTY_AUDIO_MIX_LEVEL_TABLE</a>
+

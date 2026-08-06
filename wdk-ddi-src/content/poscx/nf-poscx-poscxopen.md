@@ -4,7 +4,6 @@ title: PosCxOpen function (poscx.h)
 description: PosCxOpen is called to create an open PosCx library instance. This function initializes all resources it needs to manage a single open instance. It should be called from the driver's EVT_WDF_DEVICE_FILE_CREATE callback.
 old-location: pos\poscxopen.htm
 tech.root: pos
-ms.assetid: 6AB1BB0A-B350-44D7-B0D0-9A19FD6DEE19
 ms.date: 02/23/2018
 keywords: ["PosCxOpen function"]
 ms.keywords: PosCxOpen, PosCxOpen function, pos.poscxopen, poscx/PosCxOpen
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: 
-req.product: Windows 10 or later.
 f1_keywords:
  - PosCxOpen
  - poscx/PosCxOpen
@@ -51,19 +49,19 @@ PosCxOpen is called to create an open PosCx library instance. This function init
 
 ## -parameters
 
-### -param device 
+### -param device [in]
 
-[in]
+
 A handle to a framework device object that represents the device.
 
-### -param fileObject 
+### -param fileObject [in]
 
-[in]
+
 A handle to a framework file object that identifies the caller associated with the open instance.
 
-### -param deviceInterfaceTag 
+### -param deviceInterfaceTag [in]
 
-[in]
+
 An identifier used to specify the caller's device interface in a multi-function device.  For a single-interface device, this value should be 0.
 
 ## -returns

@@ -4,7 +4,6 @@ title: WdfDmaTransactionWdmGetTransferContext function (wdfdmatransaction.h)
 description: The WdfDmaTransactionWdmGetTransferContext method retrieves the WDM transfer context that is associated with a DMA transaction.
 old-location: wdf\wdfdmatransactionwdmgettransfercontext.htm
 tech.root: wdf
-ms.assetid: EB156381-FC0E-40A3-A4AF-341AE70B97FF
 ms.date: 02/26/2018
 keywords: ["WdfDmaTransactionWdmGetTransferContext function"]
 ms.keywords: WdfDmaTransactionWdmGetTransferContext, WdfDmaTransactionWdmGetTransferContext method, kmdf.wdfdmatransactionwdmgettransfercontext, wdf.wdfdmatransactionwdmgettransfercontext, wdfdmatransaction/WdfDmaTransactionWdmGetTransferContext
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -54,9 +53,9 @@ api_name:
 
 ## -parameters
 
-### -param DmaTransaction 
+### -param DmaTransaction [in]
 
-[in]
+
 A handle to an initialized DMA transaction object from which to retrieve the transfer context.
 
 ## -returns

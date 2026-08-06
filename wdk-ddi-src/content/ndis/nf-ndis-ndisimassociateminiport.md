@@ -4,7 +4,6 @@ title: NdisIMAssociateMiniport function (ndis.h)
 description: The NdisIMAssociateMiniport function informs NDIS that the specified lower and upper interfaces for miniport and protocol drivers respectively belong to the same intermediate driver.
 old-location: netvista\ndisimassociateminiport.htm
 tech.root: netvista
-ms.assetid: b2c46419-644b-4ad4-aa50-7c6e541638aa
 ms.date: 05/02/2018
 keywords: ["NdisIMAssociateMiniport function"]
 ms.keywords: NdisIMAssociateMiniport, NdisIMAssociateMiniport function [Network Drivers Starting with Windows Vista], intermediate_ref_2f9545a6-262c-4347-b192-16ea23314410.xml, ndis/NdisIMAssociateMiniport, netvista.ndisimassociateminiport
@@ -53,16 +52,16 @@ The
 
 ## -parameters
 
-### -param DriverHandle 
+### -param DriverHandle [in]
 
-[in]
+
 The handle to the miniport driver interface that the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver">
      NdisMRegisterMiniportDriver</a> function returns.
 
-### -param ProtocolHandle 
+### -param ProtocolHandle [in]
 
-[in]
+
 The handle to the protocol interface that the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisregisterprotocoldriver">
      NdisRegisterProtocolDriver</a> function returns.

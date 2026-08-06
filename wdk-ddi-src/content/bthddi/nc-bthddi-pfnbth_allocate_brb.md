@@ -4,7 +4,6 @@ title: PFNBTH_ALLOCATE_BRB (bthddi.h)
 description: The BthAllocateBrb function allocates a Bluetooth request block (BRB) of the specified type.
 old-location: bltooth\bthallocatebrb.htm
 tech.root: bltooth
-ms.assetid: e1ac9d4c-75e2-4d37-86d7-3c3f1486222e
 ms.date: 04/27/2018
 keywords: ["PFNBTH_ALLOCATE_BRB callback function"]
 ms.keywords: BthAllocateBrb, BthAllocateBrb callback function [Bluetooth Devices], PFNBTH_ALLOCATE_BRB, PFNBTH_ALLOCATE_BRB callback, bltooth.bthallocatebrb, bth_funcs_db0aa96f-62de-40f5-bcce-2aa7e930af3d.xml, bthddi/BthAllocateBrb
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - bthddi.h
 api_name:
- - BthAllocateBrb
+ - PFNBTH_ALLOCATE_BRB
 ---
 
 # PFNBTH_ALLOCATE_BRB callback function
@@ -51,16 +50,16 @@ The
 
 ## -parameters
 
-### -param brbType 
+### -param brbType [in]
 
-[in]
+
 Specifies a value from the 
      <a href="/windows-hardware/drivers/ddi/bthddi/ne-bthddi-_brb_type">BRB_TYPE</a> enumeration to initialize the BRB
      with.
 
-### -param tag 
+### -param tag [in]
 
-[in]
+
 Specifies a 4-byte 
      pool tag that uniquely identifies the driver that does the memory
      allocation. For more information about pool tags, see 
@@ -90,3 +89,4 @@ Profile drivers obtain a pointer to the
 
 
 pool tag
+

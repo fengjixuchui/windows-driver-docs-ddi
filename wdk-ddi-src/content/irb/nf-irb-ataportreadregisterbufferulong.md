@@ -4,7 +4,6 @@ title: AtaPortReadRegisterBufferUlong function (irb.h)
 description: The AtaPortReadRegisterBufferUlong routine transfers a specified number of ULONG values from the HBA to a buffer.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\ataportreadregisterbufferulong.htm
 tech.root: storage
-ms.assetid: 50baeaa1-5671-4f6d-83cd-f03cca18b18b
 ms.date: 03/29/2018
 keywords: ["AtaPortReadRegisterBufferUlong function"]
 ms.keywords: AtaPortReadRegisterBufferUlong, AtaPortReadRegisterBufferUlong routine [Storage Devices], atartns_2e57cb04-ad9c-47fd-b4a5-9f9aa433c8ad.xml, irb/AtaPortReadRegisterBufferUlong, storage.ataportreadregisterbufferulong
@@ -54,19 +53,19 @@ The <b>AtaPortReadRegisterBufferUlong</b> routine transfers a specified number o
 
 ## -parameters
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 Contains the register address where the transfer should begin. This address value must be within the range of mapped I/O space addresses that are obtained by a call to <a href="/windows-hardware/drivers/ddi/irb/nf-irb-ataportgetdevicebase">AtaPortGetDeviceBase</a>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to the destination buffer.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of ULONG values to read from the HBA.
 
 ## -see-also

@@ -4,7 +4,6 @@ title: NdisInitiateOffload function (ndischimney.h)
 description: A protocol or intermediate driver calls the NdisInitiateOffload function to offload TCP chimney state objects.
 old-location: netvista\ndisinitiateoffload.htm
 tech.root: netvista
-ms.assetid: a1979227-a447-4dd3-8a5d-7986362020cd
 ms.date: 05/02/2018
 keywords: ["NdisInitiateOffload function"]
 ms.keywords: NdisInitiateOffload, NdisInitiateOffload function [Network Drivers Starting with Windows Vista], ndischimney/NdisInitiateOffload, netvista.ndisinitiateoffload, tcp_chim_ndis_func_c93e8055-91b1-42d4-a227-6b21086c6e7b.xml
@@ -54,18 +53,18 @@ A protocol or intermediate driver calls the
 
 ## -parameters
 
-### -param NdisBindingHandle 
+### -param NdisBindingHandle [in]
 
-[in]
+
 The handle that NDIS provided at the 
      <i>NdisBindingHandle</i> parameter of 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a>. This handle
      identifies the binding between the caller and the underlying intermediate driver or offload
      target.
 
-### -param OffloadBlockList 
+### -param OffloadBlockList [in, out]
 
-[in, out]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_protocol_offload_block_list">
      NDIS_PROTOCOL_OFFLOAD_BLOCK_LIST</a> structure that can be a stand-alone structure or the root of a

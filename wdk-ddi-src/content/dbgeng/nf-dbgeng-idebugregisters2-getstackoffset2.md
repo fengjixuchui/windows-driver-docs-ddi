@@ -4,7 +4,6 @@ title: IDebugRegisters2::GetStackOffset2 (dbgeng.h)
 description: The GetStackOffset2 method returns the current thread's current stack location.
 old-location: debugger\getstackoffset2.htm
 tech.root: debugger
-ms.assetid: c90119a8-c93b-4432-b164-b1f4c562ef2d
 ms.date: 05/03/2018
 keywords: ["IDebugRegisters2::GetStackOffset2"]
 ms.keywords: GetStackOffset2, GetStackOffset2 method [Windows Debugging], GetStackOffset2 method [Windows Debugging],IDebugRegisters2 interface, IDebugRegisters2 interface [Windows Debugging],GetStackOffset2 method, IDebugRegisters2.GetStackOffset2, IDebugRegisters2::GetStackOffset2, IDebugRegisters_ec4e5846-b785-4b82-9670-04e7087b7d99.xml, dbgeng/IDebugRegisters2::GetStackOffset2, debugger.getstackoffset2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugRegisters2.GetStackOffset2
+ - IDebugRegisters2::GetStackOffset2
 ---
 
 # IDebugRegisters2::GetStackOffset2
@@ -50,9 +49,9 @@ The <b>GetStackOffset2</b> method returns the current thread's current stack loc
 
 ## -parameters
 
-### -param Source 
+### -param Source [in]
 
-[in]
+
 Specifies the register source to query.
 
 The possible values are listed in the following table.
@@ -96,9 +95,9 @@ Fetch register information from the current scope's register context.
 </tr>
 </table>
 
-### -param Offset 
+### -param Offset [out]
 
-[out]
+
 Receives the location in the process's virtual address space of the current thread's current stack.
 
 ## -returns
@@ -130,3 +129,4 @@ The method was successful.
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugregisters2">IDebugRegisters2</a>
+

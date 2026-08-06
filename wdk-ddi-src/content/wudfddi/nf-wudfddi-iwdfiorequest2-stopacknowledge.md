@@ -4,7 +4,6 @@ title: IWDFIoRequest2::StopAcknowledge (wudfddi.h)
 description: The StopAcknowledge method informs the framework that the driver has stopped processing a specified I/O request.
 old-location: wdf\iwdfiorequest2_stopacknowledge.htm
 tech.root: wdf
-ms.assetid: af4ae2c0-b1e1-45af-bd0e-3b9a91566caa
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequest2::StopAcknowledge"]
 ms.keywords: IWDFIoRequest2 interface,StopAcknowledge method, IWDFIoRequest2.StopAcknowledge, IWDFIoRequest2::StopAcknowledge, StopAcknowledge, StopAcknowledge method, StopAcknowledge method,IWDFIoRequest2 interface, UMDFRequestObjectRef_9a125e95-f59a-4338-a7af-cb7f99289eb7.xml, umdf.iwdfiorequest2_stopacknowledge, wdf.iwdfiorequest2_stopacknowledge, wudfddi/IWDFIoRequest2::StopAcknowledge
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequest2.StopAcknowledge
+ - IWDFIoRequest2::StopAcknowledge
 ---
 
 # IWDFIoRequest2::StopAcknowledge
@@ -52,9 +51,9 @@ The <b>StopAcknowledge</b> method informs the framework that the driver has stop
 
 ## -parameters
 
-### -param Requeue 
+### -param Requeue [in]
 
-[in]
+
 A Boolean value that, if <b>TRUE</b>, causes the framework to requeue the request into the queue so that the framework will deliver it to the driver again. If <b>FALSE</b>, the framework does not requeue the request. For more information, see the following Remarks section.
 
 ## -remarks
@@ -130,7 +129,6 @@ CMyReadWriteQueue::OnIoStop(
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iqueuecallbackioresume-onioresume">IQueueCallbackIoResume::OnIoResume</a>
@@ -142,3 +140,4 @@ CMyReadWriteQueue::OnIoStop(
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest2">IWDFIoRequest2</a>
+

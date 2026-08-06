@@ -4,7 +4,6 @@ title: _WDI_P2P_SCAN_TYPE (wditypes.h)
 description: The WDI_P2P_SCAN_TYPE enumeration defines the Wi-Fi Direct scan types.
 old-location: netvista\wdi_p2p_scan_type.htm
 tech.root: netvista
-ms.assetid: 717847D7-D7D9-4FEE-B3DC-14B0404FA937
 ms.date: 05/02/2018
 keywords: ["WDI_P2P_SCAN_TYPE enumeration"]
 ms.keywords: WDI_P2P_SCAN_TYPE, WDI_P2P_SCAN_TYPE enumeration [Device and Driver Installation], WDI_P2P_SCAN_TYPE_ACTIVE, WDI_P2P_SCAN_TYPE_AUTO, WDI_P2P_SCAN_TYPE_PASSIVE, _WDI_P2P_SCAN_TYPE, netvista.wdi_p2p_scan_type, netvista.wifi_p2p_scan_type, wditypes/WDI_P2P_SCAN_TYPE, wditypes/WDI_P2P_SCAN_TYPE_ACTIVE, wditypes/WDI_P2P_SCAN_TYPE_AUTO, wditypes/WDI_P2P_SCAN_TYPE_PASSIVE
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_P2P_SCAN_TYPE
  - WDI_P2P_SCAN_TYPE
 ---
 
@@ -47,6 +47,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_P2P_SCAN_TYPE enumeration defines the Wi-Fi Direct scan types.
 
@@ -66,3 +69,4 @@ Adapter determines scan type during device discovery. It should prefer using Act
 
 ### -field WDI_P2P_SCAN_TYPE_MAX_VALUE
 
+The maximum value for this type.

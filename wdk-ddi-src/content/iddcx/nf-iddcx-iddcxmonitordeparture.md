@@ -1,11 +1,10 @@
 ---
 UID: NF:iddcx.IddCxMonitorDeparture
 title: IddCxMonitorDeparture function (iddcx.h)
-description: An OS callback function the driver calls to report a monitor departure from the WDDM graphics adapter.
+description: An indirect display driver (IDD) calls **IddCxMonitorDeparture** to report a monitor departure from the WDDM graphics adapter.
 old-location: display\iddcxmonitordeparture.htm
 tech.root: display
-ms.assetid: d23f70ee-a58d-4db1-8f21-b27887d661b9
-ms.date: 05/10/2018
+ms.date: 01/11/2021
 keywords: ["IddCxMonitorDeparture function"]
 ms.keywords: IddCxMonitorDeparture, IddCxMonitorDeparture method [Display Devices], display.iddcxmonitordeparture, iddcx/IddCxMonitorDeparture
 req.header: iddcx.h
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: IddCxStub.lib
 req.dll: IddCx.dll
-req.irql: _Must_inspect_result_
+req.irql: 
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -43,18 +42,24 @@ api_name:
 
 # IddCxMonitorDeparture function
 
-
 ## -description
 
-                An OS callback function the driver calls to report a monitor departure from the WDDM graphics adapter
+An indirect display driver (IDD) calls **IddCxMonitorDeparture** to report a monitor departure from the WDDM graphics adapter.
 
 ## -parameters
 
-### -param MonitorObject 
+### -param MonitorObject [in]
 
-[in]
-The monitor object that is departing
+The [IDDCX_MONITOR](/windows-hardware/drivers/display/iddcx-objects) object for the monitor that is departing.
 
 ## -returns
 
-(NTSTATUS) The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS</a> error code.
+(NTSTATUS) The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate [NTSTATUS](/windows-hardware/drivers/kernel/ntstatus-values) error code.
+
+## -remarks
+
+[**IddCxMonitorCreate**](nf-iddcx-iddcxmonitorcreate.md) creates the [IDDCX_MONITOR](/windows-hardware/drivers/display/iddcx-objects) object for an arriving monitor.
+
+## -see-also
+
+[**IddCxMonitorCreate**](nf-iddcx-iddcxmonitorcreate.md)

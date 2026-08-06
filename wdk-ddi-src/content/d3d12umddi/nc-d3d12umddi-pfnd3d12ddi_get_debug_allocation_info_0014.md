@@ -1,8 +1,7 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_GET_DEBUG_ALLOCATION_INFO_0014
 title: PFND3D12DDI_GET_DEBUG_ALLOCATION_INFO_0014 (d3d12umddi.h)
-description: Returns the associated kernel mode allocation handles and GPU Virtual Address ranges.
-ms.assetid: d659c1b0-dc55-4ebd-aaa1-8f86c9619657
+description: The PFND3D12DDI_GET_DEBUG_ALLOCATION_INFO_0014 callback function returns the associated kernel mode allocation handles and the GPU virtual address ranges.
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_GET_DEBUG_ALLOCATION_INFO_0014 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_GET_DEBUG_ALLOCATION_INFO_0014
-product:
- - Windows
 dev_langs:
  - c++
 ---

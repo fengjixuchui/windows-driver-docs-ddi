@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER
 title: WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER
-description: 
+description: "Learn more about: WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER structure"
 tech.root: whea
-ms.assetid: c7a125f7-fc0b-4c16-b6a1-ea7f946d778b
 ms.date: 04/01/2020
 keywords: ["WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER structure"]
 ms.keywords: WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER, WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER, *PWHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER,
@@ -35,9 +34,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER
+ - PWHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER
  - WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER
-product:
- - Windows
 ---
 
 # WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER structure
@@ -94,3 +93,4 @@ The WHEA_ERROR_SOURCE_CONFIGURATION_DEVICE_DRIVER structure is used as input to 
 For more info, see [Using WHEA on Windows 10](/windows-hardware/drivers/whea/using-whea-on-windows-10).
 
 ## -see-also
+

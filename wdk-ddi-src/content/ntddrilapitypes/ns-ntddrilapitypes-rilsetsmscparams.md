@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILSETSMSCPARAMS
 title: RILSETSMSCPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILSETSMSCPARAMS structure for internal use only. Don't use the RILSETSMSCPARAMS structure in your code."
 old-location: netvista\rilsetsmscparams.htm
 tech.root: netvista
-ms.assetid: ebfb768a-fa6b-4781-96e1-787278237d5f
 ms.date: 05/02/2018
 keywords: ["RILSETSMSCPARAMS structure"]
 ms.keywords: "*LPRILSETSMSCPARAMS, RILSETSMSCPARAMS, RILSETSMSCPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsetsmscparams, ntddrilapitypes/RILSETSMSCPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSETSMSCPARAMS
+ - LPRILSETSMSCPARAMS
 ---
 
 # RILSETSMSCPARAMS structure (ntddrilapitypes.h)

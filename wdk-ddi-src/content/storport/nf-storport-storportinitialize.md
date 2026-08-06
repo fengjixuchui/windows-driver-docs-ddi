@@ -4,7 +4,6 @@ title: StorPortInitialize function (storport.h)
 description: The StorPortInitialize routine initializes the port driver parameters and extension data. StorPortInitialize also saves the adapter information provided from the miniport driver.
 old-location: storage\storportinitialize.htm
 tech.root: storage
-ms.assetid: b560ce42-3c5c-4766-bb9c-6590b7113ecd
 ms.date: 03/29/2018
 keywords: ["StorPortInitialize function"]
 ms.keywords: StorPortInitialize, StorPortInitialize routine [Storage Devices], storage.storportinitialize, storport/StorPortInitialize, storprt_c60ad9af-507c-42e1-9f8a-04e3378bc37b.xml
@@ -51,24 +50,24 @@ The **StorPortInitialize** routine initializes the port driver parameters and ex
 
 ## -parameters
 
-### -param Argument1 
+### -param Argument1 [in]
 
-[in]
+
 The first pointer with which the operating system called the miniport's DriverEntry routine.
 
-### -param Argument2 
+### -param Argument2 [in]
 
-[in]
+
 The second pointer with which the operating system called the miniports's DriverEntry routine.
 
-### -param HwInitializationData 
+### -param HwInitializationData [in]
 
-[in]
+
 Pointer to the initialization and configuration information set by the miniport driver in its DriverEntry routine.
 
-### -param HwContext 
+### -param HwContext [in, optional]
 
-[in, optional]
+
 Is the address of a context value to be passed to the miniport driver's [**HwStorFindAdapter**](nc-storport-hw_find_adapter.md) routine. Only legacy miniport drivers that scan the bus for HBAs rather than receiving configuration information from the port driver can use this parameter to store state between calls to **HwStorFindAdapter**.
 
 ## -returns

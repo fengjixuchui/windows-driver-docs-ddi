@@ -4,7 +4,6 @@ title: PROTOCOL_CM_MAKE_CALL (ndis.h)
 description: The ProtocolCmMakeCall function is a required function that sets up media specific parameters for a virtual connection (VC) and activates the virtual connection.Note  You must declare the function by using the PROTOCOL_CM_MAKE_CALL type.
 old-location: netvista\protocolcmmakecall.htm
 tech.root: netvista
-ms.assetid: ede0a18a-cd3b-4fbb-a16b-e7493940d633
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CM_MAKE_CALL callback function"]
 ms.keywords: PROTOCOL_CM_MAKE_CALL, PROTOCOL_CM_MAKE_CALL callback, ProtocolCmMakeCall, ProtocolCmMakeCall callback function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_4f72c0f7-470b-496c-adbb-ea465246fb48.xml, ndis/ProtocolCmMakeCall, netvista.protocolcmmakecall
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolCmMakeCall
+ - PROTOCOL_CM_MAKE_CALL
 ---
 
 # PROTOCOL_CM_MAKE_CALL callback function
@@ -54,30 +53,30 @@ The
 
 ## -parameters
 
-### -param CallMgrVcContext 
+### -param CallMgrVcContext [in]
 
-[in]
+
 Specifies the handle to a call manager-allocated context area in which the call managers maintains
      its per-VC state. The call manager supplied this handle to NDIS from its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_create_vc">ProtocolCoCreateVc</a> function.
 
-### -param CallParameters 
+### -param CallParameters [in, out]
 
-[in, out]
+
 Pointer to a 
      <a href="/previous-versions/windows/hardware/network/ff545384(v=vs.85)">CO_CALL_PARAMETERS</a> structure that contains
      the parameters, specified by a connection-oriented client, for this outgoing call.
 
-### -param NdisPartyHandle 
+### -param NdisPartyHandle [in, optional]
 
-[in, optional]
+
 Specifies a handle, supplied by NDIS, that uniquely identifies the initial party on the multipoint
      virtual connection. This handle is opaque to the call manager and reserved for NDIS library use. This
      handle is <b>NULL</b> if the client is not setting up an outgoing multipoint call.
 
-### -param CallMgrPartyContext 
+### -param CallMgrPartyContext [out, optional]
 
-[out, optional]
+
 On return, specifies a handle to a call manager-supplied context area in which the call manager
      maintains state about the initial party on the multipoint call. If 
      <i>NdisPartyHandle</i> is <b>NULL</b>, this handle must be set to <b>NULL</b>.
@@ -243,3 +242,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_create_vc">ProtocolCoCreateVc</a>
+

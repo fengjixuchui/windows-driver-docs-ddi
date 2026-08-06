@@ -4,7 +4,6 @@ title: _DXGK_MIRACAST_CAPS (dispmprt.h)
 description: Used by a display miniport driver to identify capabilities of a Miracast device.
 old-location: display\dxgk_miracast_caps.htm
 tech.root: display
-ms.assetid: 63ED28D9-654F-45CC-BFDC-89C9E73DCF95
 ms.date: 05/10/2018
 keywords: ["DXGK_MIRACAST_CAPS structure"]
 ms.keywords: "*PDXGK_MIRACAST_CAPS, DXGK_MIRACAST_CAPS, DXGK_MIRACAST_CAPS structure [Display Devices], PDXGK_MIRACAST_CAPS, PDXGK_MIRACAST_CAPS structure pointer [Display Devices], _DXGK_MIRACAST_CAPS, display.dxgk_miracast_caps, dispmprt/DXGK_MIRACAST_CAPS, dispmprt/PDXGK_MIRACAST_CAPS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Dispmprt.h
 api_name:
+ - _DXGK_MIRACAST_CAPS
+ - PDXGK_MIRACAST_CAPS
  - DXGK_MIRACAST_CAPS
 ---
 
@@ -75,3 +76,4 @@ Holds a 32-bit value that identifies the capabilities of the Miracast device.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/ne-d3dkmddi-_dxgk_interrupt_type">DXGK_INTERRUPT_TYPE</a>
+

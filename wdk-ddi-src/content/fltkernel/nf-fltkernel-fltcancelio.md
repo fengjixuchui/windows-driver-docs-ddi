@@ -4,7 +4,6 @@ title: FltCancelIo function (fltkernel.h)
 description: The FltCancelIo routine cancels an I/O operation.
 old-location: ifsk\fltcancelio.htm
 tech.root: ifsk
-ms.assetid: 30f2345d-6ed8-475f-879a-d3218039fded
 ms.date: 04/16/2018
 keywords: ["FltCancelIo function"]
 ms.keywords: FltApiRef_a_to_d_e539a1bb-9dd4-4e1b-ac10-b5f742923839.xml, FltCancelIo, FltCancelIo routine [Installable File System Drivers], fltkernel/FltCancelIo, ifsk.fltcancelio
@@ -51,9 +50,9 @@ The <b>FltCancelIo</b> routine cancels an I/O operation.
 
 ## -parameters
 
-### -param CallbackData 
+### -param CallbackData [in]
 
-[in]
+
 Pointer to the callback data (<a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data">FLT_CALLBACK_DATA</a>) structure for the I/O operation.
 
 ## -returns

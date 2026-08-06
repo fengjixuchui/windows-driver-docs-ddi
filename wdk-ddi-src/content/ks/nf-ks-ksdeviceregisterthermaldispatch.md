@@ -4,7 +4,6 @@ title: KsDeviceRegisterThermalDispatch function (ks.h)
 description: This function is used by the Avstream miniport driver to register callbacks for thermal notifications with the KS port driver.
 old-location: stream\ksdeviceregisterthermaldispatch.htm
 tech.root: stream
-ms.assetid: 7998B753-8E43-471F-9BDE-729D0E38E022
 ms.date: 04/23/2018
 keywords: ["KsDeviceRegisterThermalDispatch function"]
 ms.keywords: KsDeviceRegisterThermalDispatch, KsDeviceRegisterThermalDispatch function [Streaming Media Devices], ks/KsDeviceRegisterThermalDispatch, stream.ksdeviceregisterthermaldispatch
@@ -51,14 +50,14 @@ This function is used by the Avstream miniport driver to register callbacks for 
 
 ## -parameters
 
-### -param KsDevice 
+### -param KsDevice [in]
 
-[in]
+
 A KS device object representing the device managed by KS. For more information, see <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice">KSDEVICE</a>.
 
-### -param KsDeviceThermalDispatch 
+### -param KsDeviceThermalDispatch [in]
 
-[in]
+
 A structure containing the Avstream driver active and passive thermal callback notifications.
 
 ## -returns

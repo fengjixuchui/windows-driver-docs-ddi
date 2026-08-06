@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_ACQUIRESWIZZLINGRANGE
 title: DXGKDDI_ACQUIRESWIZZLINGRANGE (d3dkmddi.h)
 description: The DxgkDdiAcquireSwizzlingRange function makes an allocation accessible through the central processing unit (CPU) aperture for the given segment.
 old-location: display\dxgkddiacquireswizzlingrange.htm
-ms.assetid: f861e055-70db-4e0a-9c62-87e2d41f92ae
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_ACQUIRESWIZZLINGRANGE callback function"]
 ms.keywords: DXGKDDI_ACQUIRESWIZZLINGRANGE, DXGKDDI_ACQUIRESWIZZLINGRANGE callback, DmFunctions_6dd5b0ee-666c-45bf-ae39-05e37d74c137.xml, DxgkDdiAcquireSwizzlingRange, DxgkDdiAcquireSwizzlingRange callback function [Display Devices], d3dkmddi/DxgkDdiAcquireSwizzlingRange, display.dxgkddiacquireswizzlingrange
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiAcquireSwizzlingRange
-product:
- - Windows
+ - DXGKDDI_ACQUIRESWIZZLINGRANGE
 ---
 
 # DXGKDDI_ACQUIRESWIZZLINGRANGE callback function
@@ -52,13 +49,13 @@ The <i>DxgkDdiAcquireSwizzlingRange</i> function makes an allocation accessible 
 
 ## -parameters
 
-### -param hAdapter
+### -param hAdapter [in]
 
-[in] A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
+A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function.
 
-### -param pAcquireSwizzlingRange
+### -param pAcquireSwizzlingRange [in/out]
 
-[in/out] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_acquireswizzlingrange">DXGKARG_ACQUIRESWIZZLINGRANGE</a> structure that contains information for making an allocation accessible through the CPU aperture.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_acquireswizzlingrange">DXGKARG_ACQUIRESWIZZLINGRANGE</a> structure that contains information for making an allocation accessible through the CPU aperture.
 
 ## -returns
 
@@ -123,3 +120,4 @@ A call to <i>DxgkDdiAcquireSwizzlingRange</i> to acquire a swizzling range might
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_lockcb">pfnLockCb</a>
+

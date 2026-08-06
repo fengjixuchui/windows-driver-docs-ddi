@@ -4,7 +4,6 @@ title: PcRegisterPhysicalConnection function (portcls.h)
 description: The PcRegisterPhysicalConnection function registers a physical connection between two audio adapter filters that are instantiated by the same adapter driver.
 old-location: audio\pcregisterphysicalconnection.htm
 tech.root: audio
-ms.assetid: f8ab3914-c83e-4bfd-94b5-f4c409236b95
 ms.date: 05/08/2018
 keywords: ["PcRegisterPhysicalConnection function"]
 ms.keywords: PcRegisterPhysicalConnection, PcRegisterPhysicalConnection function [Audio Devices], audio.pcregisterphysicalconnection, audpc-routines_d806f159-7b56-428c-8780-f95d3c5f3b14.xml, portcls/PcRegisterPhysicalConnection
@@ -51,29 +50,29 @@ The <b>PcRegisterPhysicalConnection</b> function registers a physical connection
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the device object for the adapter device. This parameter must point to a system structure of type <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a>.
 
-### -param FromUnknown 
+### -param FromUnknown [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iport">IPort</a> interface of a port driver object. The port driver object that is associated with <i>FromUnknown</i> is bound to the subdevice that supplies the connection's data source (output) pin.
 
-### -param FromPin 
+### -param FromPin [in]
 
-[in]
+
 Specifies a pin ID. This parameter identifies the source (output) pin on the filter that is associated with the <i>FromUnknown</i> interface.
 
-### -param ToUnknown 
+### -param ToUnknown [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iport">IPort</a> interface of a port driver object. The port driver object that is associated with <i>ToUnknown</i> is bound to the subdevice that supplies the connection's data sink (input) pin.
 
-### -param ToPin 
+### -param ToPin [in]
 
-[in]
+
 Specifies a pin ID. This parameter identifies the sink (input) pin on the filter that is associated with the <i>ToUnknown</i> interface.
 
 ## -returns

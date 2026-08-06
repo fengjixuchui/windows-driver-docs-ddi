@@ -3,7 +3,6 @@ UID: NS:ndiswwan._NDIS_WWAN_UICC_APP_LIST
 title: _NDIS_WWAN_UICC_APP_LIST (ndiswwan.h)
 description: The NDIS_WWAN_UICC_APP_LIST structure describes a list of applications in a UICC and information about them.
 tech.root: netvista
-ms.assetid: 7ACDB2C7-0971-4FFA-8E8D-7CE291B68CA7
 ms.date: 04/08/2019
 keywords: ["NDIS_WWAN_UICC_APP_LIST structure"]
 ms.keywords: _NDIS_WWAN_UICC_APP_LIST, NDIS_WWAN_UICC_APP_LIST, *PNDIS_WWAN_UICC_APP_LIST,
@@ -37,6 +36,8 @@ api_location:
  - ndiswwan.h
 api_name:
  - _NDIS_WWAN_UICC_APP_LIST
+ - PNDIS_WWAN_UICC_APP_LIST
+ - NDIS_WWAN_UICC_APP_LIST
 ---
 
 # _NDIS_WWAN_UICC_APP_LIST structure
@@ -58,7 +59,7 @@ The header with type, revision, and size information about the **NDIS_WWAN_UICC_
 | Revision | NDIS_WWAN_UICC_APP_LIST_REVISION_1 |
 | Size | sizeof(NDIS_WWAN_UICC_APP_LIST) |
 
-For more information about these members, see [**NDIS_OBJECT_HEADER**](../ntddndis/ns-ntddndis-_ndis_object_header.md).
+For more information about these members, see [**NDIS_OBJECT_HEADER**](../objectheader/ns-objectheader-ndis_object_header.md).
 
 ### -field uStatus
 
@@ -88,3 +89,4 @@ This structure is used in the [NDIS_STATUS_WWAN_UICC_APP_LIST](/windows-hardware
 [NDIS_STATUS_WWAN_UICC_APP_LIST](/windows-hardware/drivers/network/ndis-status-wwan-uicc-app-list)
 
 [**WWAN_UICC_APP_LIST**](../wwan/ns-wwan-_wwan_uicc_app_list.md)
+

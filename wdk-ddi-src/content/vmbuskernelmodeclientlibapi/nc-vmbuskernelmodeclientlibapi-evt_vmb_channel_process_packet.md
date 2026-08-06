@@ -4,7 +4,6 @@ title: EVT_VMB_CHANNEL_PROCESS_PACKET (vmbuskernelmodeclientlibapi.h)
 description: The EvtVmbChannelProcessPacket callback function is invoked when a packet arrives in the incoming ring buffer.
 old-location: netvista\evt_vmb_channel_process_packet.htm
 tech.root: netvista
-ms.assetid: 46020122-0B0E-4C05-8B13-68100B227E93
 ms.date: 05/02/2018
 keywords: ["EVT_VMB_CHANNEL_PROCESS_PACKET callback function"]
 ms.keywords: EVT_VMB_CHANNEL_PROCESS_PACKET, EVT_VMB_CHANNEL_PROCESS_PACKET callback, EvtVmbChannelProcessPacket, EvtVmbChannelProcessPacket callback function [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_PROCESS_PACKET, PFN_VMB_CHANNEL_PROCESS_PACKET callback function pointer [Network Drivers Starting with Windows Vista], VMBUS_CHANNEL_PROCESS_PACKET_FLAGS, netvista.evt_vmb_channel_process_packet, vmbuskernelmodeclientlibapi/EvtVmbChannelProcessPacket
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - VmbusKernelModeClientLibApi.h
 api_name:
- - PFN_VMB_CHANNEL_PROCESS_PACKET
+ - EVT_VMB_CHANNEL_PROCESS_PACKET
 ---
 
 # EVT_VMB_CHANNEL_PROCESS_PACKET callback function
@@ -52,29 +51,29 @@ The <i>EvtVmbChannelProcessPacket</i> callback function is invoked when a packet
 
 ## -parameters
 
-### -param Channel 
+### -param Channel [in]
 
-[in]
+
 The channel on which the packet arrives.
 
-### -param Packet 
+### -param Packet [in]
 
-[in]
+
 The completion context, which identifies this packet to Kernel Mode Client Library (KMCL) when the transaction can be retired.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 The packet which was sent by the opposite endpoint.  This value does not contain the VMBus and KMCL headers.
 
-### -param BufferLength 
+### -param BufferLength [in]
 
-[in]
+
 The length of the <i>Buffer</i> parameter, in bytes.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Flags. Possible values include the following: 
 
 <table>
@@ -118,3 +117,4 @@ has been configured to defer packet processing to a worker thread.
 
 
 <a href="/windows-hardware/drivers/ddi/vmbuskernelmodeclientlibapi/nf-vmbuskernelmodeclientlibapi-vmbchannelpacketgetexternaldata">VmbChannelPacketGetExternalData</a>
+

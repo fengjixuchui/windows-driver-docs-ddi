@@ -4,7 +4,6 @@ title: WdfDeviceMiniportCreate function (wdfminiport.h)
 description: The WdfDeviceMiniportCreate method creates a framework device object that a miniport driver can use.
 old-location: wdf\wdfdeviceminiportcreate.htm
 tech.root: wdf
-ms.assetid: d74dedbd-f418-4ea3-ae76-c0da9c5f2fb9
 ms.date: 02/26/2018
 keywords: ["WdfDeviceMiniportCreate function"]
 ms.keywords: DFDeviceObjectGeneralRef_18104589-c58d-4e8b-af91-c6620b3772e9.xml, WdfDeviceMiniportCreate, WdfDeviceMiniportCreate method, kmdf.wdfdeviceminiportcreate, wdf.wdfdeviceminiportcreate, wdfminiport/WdfDeviceMiniportCreate
@@ -53,34 +52,34 @@ The <b>WdfDeviceMiniportCreate</b> method creates a framework device object that
 
 ## -parameters
 
-### -param Driver 
+### -param Driver [in]
 
-[in]
+
 A handle to the driver's framework driver object, obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdfdriver/nf-wdfdriver-wdfdrivercreate">WdfDriverCreate</a>.
 
-### -param Attributes 
+### -param Attributes [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the new object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 A pointer to a WDM <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure that represents the functional device object (FDO) for the miniport driver.
 
-### -param AttachedDeviceObject 
+### -param AttachedDeviceObject [in, optional]
 
-[in, optional]
+
 A pointer to a WDM DEVICE_OBJECT structure that represents the next-lower device object in the device stack.
 
-### -param Pdo 
+### -param Pdo [in, optional]
 
-[in, optional]
+
 A pointer to a WDM DEVICE_OBJECT structure that represents the physical device object (PDO) for the device.
 
-### -param Device 
+### -param Device [out]
 
-[out]
+
 A pointer to a location that receives a handle to the new framework device object.
 
 ## -returns

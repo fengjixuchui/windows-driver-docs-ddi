@@ -4,7 +4,6 @@ title: MmUnlockPagableImageSection function (wdm.h)
 description: The MmUnlockPagableImageSection routine releases a section of driver code or driver data, previously locked into system space with MmLockPagableCodeSection, MmLockPagableDataSection or MmLockPagableSectionByHandle, so the section can be paged out again.
 old-location: kernel\mmunlockpagableimagesection.htm
 tech.root: kernel
-ms.assetid: 3a6e3029-d378-4e42-8556-e3640cfdb392
 ms.date: 04/30/2018
 keywords: ["MmUnlockPagableImageSection function"]
 ms.keywords: MmUnlockPagableImageSection, MmUnlockPagableImageSection routine [Kernel-Mode Driver Architecture], k106_1420e152-a858-4256-87ed-8fa78ee76379.xml, kernel.mmunlockpagableimagesection, wdm/MmUnlockPagableImageSection
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>MmUnlockPagableImageSection</b> routine releases a section of driver code
 
 ## -parameters
 
-### -param ImageSectionHandle 
+### -param ImageSectionHandle [in]
 
-[in]
+
 Specifies the handle returned by a call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-mmlockpagablecodesection">MmLockPagableCodeSection</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-mmlockpagabledatasection">MmLockPagableDataSection</a>.
 
 ## -remarks

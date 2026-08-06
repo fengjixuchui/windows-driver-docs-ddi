@@ -4,7 +4,6 @@ title: USBFN_GET_ATTACH_ACTION_ABORT (usbfnattach.h)
 description: The filter driver's implementation to abort an attach-detect operation.
 old-location: buses\usbfn_get_attach_action_abort.htm
 tech.root: usbref
-ms.assetid: 0A44551A-F379-442D-99E9-87231F5FB178
 ms.date: 05/07/2018
 keywords: ["USBFN_GET_ATTACH_ACTION_ABORT callback function"]
 ms.keywords: USBFN_GET_ATTACH_ACTION_ABORT, USBFN_GET_ATTACH_ACTION_ABORT callback, UsbFnGetAttachActionAbort, UsbFnGetAttachActionAbort callback function [Buses], buses.usbfn_get_attach_action_abort, usbfnattach/UsbFnGetAttachActionAbort
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - usbfnattach.h
 api_name:
- - USBFN_SET_DEVICE_STATE
+ - USBFN_GET_ATTACH_ACTION_ABORT
 ---
 
 # USBFN_GET_ATTACH_ACTION_ABORT callback function
@@ -50,9 +49,9 @@ The filter driver's implementation to abort an attach-detect operation.
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
     A pointer to a driver-defined context.
 
 ## -returns
@@ -61,7 +60,7 @@ If the operation is successful, the callback function must return STATUS_SUCCESS
 
 ## -remarks
 
-To support attach and detatch detection, the USB lower filter driver must publish its support. During the publishing process, the driver also registers its implementation of this  callback function. For more information, see <a href="/previous-versions/windows/hardware/drivers/mt188012(v=vs.85)">USB filter driver for supporting proprietary chargers</a>.
+To support attach and detach detection, the USB lower filter driver must publish its support. During the publishing process, the driver also registers its implementation of this  callback function. For more information, see <a href="/previous-versions/windows/hardware/drivers/mt188012(v=vs.85)">USB filter driver for supporting proprietary chargers</a>.
 
 
 #### Examples
@@ -88,7 +87,7 @@ UsbLowerFilter_GetAttachActionAbortOperation(
 
 ```
 
-
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/drivers/mt188012(v=vs.85)">USB filter driver for supporting proprietary chargers</a>
+

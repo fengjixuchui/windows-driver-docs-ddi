@@ -4,14 +4,13 @@ title: IoCreateStreamFileObjectEx function (ntifs.h)
 description: The IoCreateStreamFileObjectEx routine creates a new stream file object.
 old-location: ifsk\iocreatestreamfileobjectex.htm
 tech.root: ifsk
-ms.assetid: 1ecf4536-9669-4437-8919-3c7b0e4a9183
 ms.date: 04/16/2018
 keywords: ["IoCreateStreamFileObjectEx function"]
 ms.keywords: IoCreateStreamFileObjectEx, IoCreateStreamFileObjectEx routine [Installable File System Drivers], ifsk.iocreatestreamfileobjectex, ioref_0c92890a-e4ae-4a25-b1cb-8097361674ee.xml, ntifs/IoCreateStreamFileObjectEx
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows XP and later.
+req.target-min-winverclnt: Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: PASSIVE
+req.irql: PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,19 +49,19 @@ The <b>IoCreateStreamFileObjectEx</b> routine creates a new stream file object.
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in, optional]
 
-[in, optional]
+
 Pointer to the file object to which the new stream file is related. This parameter is optional and can be <b>NULL</b>.
 
-### -param DeviceObject 
+### -param DeviceObject [in, optional]
 
-[in, optional]
+
 Pointer to a device object for the device on which the stream file is to be opened. If the caller specifies a non-<b>NULL</b> value for <i>FileObject</i>, the value of <i>DeviceObject</i> is ignored. Otherwise, the caller must specify a non-<b>NULL</b> value for <i>DeviceObject</i>.
 
-### -param FileHandle 
+### -param FileHandle [out, optional]
 
-[out, optional]
+
 A pointer to a file handle for the stream on output. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

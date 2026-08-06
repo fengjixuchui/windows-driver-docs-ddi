@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.PoDeletePowerRequest
 title: PoDeletePowerRequest function (wdm.h)
-description: The PoDeletePowerRequest routine deletes a power request object.
+description: The PoDeletePowerRequest routine in wdm.h deletes a power request object. The driver must delete the power request object before it deletes the device object.
 old-location: kernel\podeletepowerrequest.htm
 tech.root: kernel
-ms.assetid: 21298d5b-e99f-470f-a352-65da2d91b81e
 ms.date: 04/30/2018
 keywords: ["PoDeletePowerRequest function"]
 ms.keywords: PoDeletePowerRequest, PoDeletePowerRequest routine [Kernel-Mode Driver Architecture], kernel.podeletepowerrequest, portn_a0e21464-039d-4619-b9d5-f67bf2d7273b.xml, wdm/PoDeletePowerRequest
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>PoDeletePowerRequest</b> routine deletes a power request object.
 
 ## -parameters
 
-### -param PowerRequest 
+### -param PowerRequest [in, out]
 
-[in, out]
+
 A pointer to a power request object that was created by the <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pocreatepowerrequest">PoCreatePowerRequest</a> routine.
 
 ## -remarks

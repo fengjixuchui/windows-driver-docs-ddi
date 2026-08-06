@@ -3,11 +3,8 @@ UID: NS:iddcx.IDARG_IN_ADAPTERSETRENDERADAPTER
 title: IDARG_IN_ADAPTERSETRENDERADAPTER
 description: The LUID of the render adapter that the driver would like to be used to rendered the desktop image for the swapchains on this adapter.
 tech.root: display
-ms.assetid: 8d2d633e-ca83-4114-9a28-b194701bd9d9
 ms.date: 09/24/2020
 keywords: ["IDARG_IN_ADAPTERSETRENDERADAPTER structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: IDARG_IN_ADAPTERSETRENDERADAPTER, ,
 req.header: iddcx.h
 req.include-header: 
@@ -35,8 +32,6 @@ api_location:
  - iddcx.h
 api_name:
  - IDARG_IN_ADAPTERSETRENDERADAPTER
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -45,7 +40,7 @@ dev_langs:
 
 ## -description
 
-The IDARG_IN_ADAPTERSETRENDERADAPTER structure identifies the render adapter that the driver wants to be used to render the desktop image for the swapchains on this adapter.
+The **IDARG_IN_ADAPTERSETRENDERADAPTER** structure identifies the render adapter that the driver wants to be used to render the desktop image for the swapchains on this adapter.
 
 ## -struct-fields
 

@@ -4,7 +4,6 @@ title: FWPS_VSWITCH_PORT_EVENT_CALLBACK0 (fwpsk.h)
 description: The filter engine calls the vSwitchPortEventNotifyFn (FWPS_VSWITCH_PORT_EVENT_CALLBACK0) callout function to notify the callout driver about events that are associated a virtual switch (vSwitch) port.Note  FWPS_VSWITCH_PORT_EVENT_CALLBACK0 is a specific version of FWPS_VSWITCH_PORT_EVENT_CALLBACK. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
 old-location: netvista\fwps_vswitch_port_event_callback0.htm
 tech.root: netvista
-ms.assetid: CE4B14BE-5ECA-4C2F-809C-B0DC27EC2FF2
 ms.date: 05/02/2018
 keywords: ["FWPS_VSWITCH_PORT_EVENT_CALLBACK0 callback function"]
 ms.keywords: FWPS_VSWITCH_PORT_EVENT_CALLBACK0, FWPS_VSWITCH_PORT_EVENT_CALLBACK0 callback, fwpsk/vSwitchPortEventNotifyFn, netvista.fwps_vswitch_port_event_callback0, vSwitchPortEventNotifyFn, vSwitchPortEventNotifyFn callback function [Network Drivers Starting with Windows Vista]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - fwpsk.h
 api_name:
- - vSwitchPortEventNotifyFn
+ - FWPS_VSWITCH_PORT_EVENT_CALLBACK0
 ---
 
 # FWPS_VSWITCH_PORT_EVENT_CALLBACK0 callback function
@@ -52,25 +51,25 @@ The filter engine calls the <i>vSwitchPortEventNotifyFn</i>   (<i>FWPS_VSWITCH_P
 
 ## -parameters
 
-### -param notifyContext 
+### -param notifyContext [in, optional]
 
-[in, optional]
+
 A pointer to a context provided by the callout driver. The driver passed this pointer to the <i>notifyContext</i> parameter of the <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsvswitcheventssubscribe0">FwpsvSwitchEventsSubscribe0</a>
  function. This parameter is optional and can be NULL.
 
-### -param completionContext 
+### -param completionContext [in]
 
-[in]
+
 A pointer to a completion context provided by the callout driver. This parameter is optional and can be NULL.
 
-### -param eventType 
+### -param eventType [in]
 
-[in]
+
 The type of virtual switch vSwitch event  specified as one of the <a href="/windows-hardware/drivers/ddi/fwpsk/ne-fwpsk-fwps_vswitch_event_type_">FWPS_VSWITCH_EVENT_TYPE</a> enumeration values. For more information, see Remarks.
 
-### -param vSwitch 
+### -param vSwitch [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_parameters">NDIS_SWITCH_PARAMETERS</a> structure that contains information about a virtual switch.
   
 
@@ -78,9 +77,9 @@ A pointer to an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndi
 <div class="alert"><b>Note</b>  The information in the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_parameters">NDIS_SWITCH_PARAMETERS</a> structure reflects the initial state of the virtual switch, not necessarily its current state. In particular, the <b>NumSwitchPorts</b> and <b>IsActive</b> members might still have their initial value of zero, unless a virtual switch PnP event has been triggered. Current state information can be found in the other parameters to this callback function.</div>
 <div> </div>
 
-### -param vSwitchPort 
+### -param vSwitchPort [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_parameters">NDIS_SWITCH_PORT_PARAMETERS</a> structure that contains  parameters for a port on a vSwitch.
 
 ## -returns
@@ -167,3 +166,4 @@ After the port is deleted, the WFP filter driver calls <i>vSwitchPortEventNotify
 
 
 <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_parameters">NDIS_SWITCH_PORT_PARAMETERS</a>
+

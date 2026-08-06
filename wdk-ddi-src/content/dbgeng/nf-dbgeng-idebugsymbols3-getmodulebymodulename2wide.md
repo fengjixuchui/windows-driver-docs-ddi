@@ -4,7 +4,6 @@ title: IDebugSymbols3::GetModuleByModuleName2Wide (dbgeng.h)
 description: The GetModuleByModuleName2Wide method searches through the process's modules for one with the specified name.
 old-location: debugger\getmodulebymodulename2wide.htm
 tech.root: debugger
-ms.assetid: 49e27e24-d38a-4a22-a92f-33a384437250
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::GetModuleByModuleName2Wide"]
 ms.keywords: GetModuleByModuleName2Wide, GetModuleByModuleName2Wide method [Windows Debugging], GetModuleByModuleName2Wide method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],GetModuleByModuleName2Wide method, IDebugSymbols3.GetModuleByModuleName2Wide, IDebugSymbols3::GetModuleByModuleName2Wide, dbgeng/IDebugSymbols3::GetModuleByModuleName2Wide, debugger.getmodulebymodulename2wide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols3.GetModuleByModuleName2Wide
+ - IDebugSymbols3::GetModuleByModuleName2Wide
 ---
 
 # IDebugSymbols3::GetModuleByModuleName2Wide
@@ -50,19 +49,19 @@ The <b>GetModuleByModuleName2Wide</b>  method searches through the process's <a 
 
 ## -parameters
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 Specifies the name of the desired module.
 
-### -param StartIndex 
+### -param StartIndex [in]
 
-[in]
+
 Specifies the index to start searching from.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies a bit-set containing options used when searching for the module with the specified name.  <i>Flags</i> may contain the following bit-flags:
 
 <table>
@@ -92,14 +91,14 @@ Do not search the unloaded modules.
 </tr>
 </table>
 
-### -param Index 
+### -param Index [out, optional]
 
-[out, optional]
+
 Receives the index of the first module with the name <i>Name</i>.  If <i>Index</i> is <b>NULL</b>, this information is not returned.
 
-### -param Base 
+### -param Base [out, optional]
 
-[out, optional]
+
 Receives the location in the target's memory address space of the base of the module.  If <i>Base</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -148,3 +147,4 @@ For more information about modules, see <a href="/windows-hardware/drivers/debug
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

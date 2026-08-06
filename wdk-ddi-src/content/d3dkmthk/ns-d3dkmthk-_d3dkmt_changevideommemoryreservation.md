@@ -1,9 +1,8 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_CHANGEVIDEOMMEMORYRESERVATION
-title: _D3DKMT_CHANGEVIDEOMMEMORYRESERVATION (d3dkmthk.h)
-description: Used to change the video memory management reservation.
-ms.assetid: e0af83c8-8fce-45ba-9449-ac45a638d287
-ms.date: 10/19/2018
+title: D3DKMT_CHANGEVIDEOMMEMORYRESERVATION (d3dkmthk.h)
+description: Learn more about the D3DKMT_CHANGEVIDEOMMEMORYRESERVATION structure.
+ms.date: 10/04/2023
 keywords: ["D3DKMT_CHANGEVIDEOMMEMORYRESERVATION structure"]
 ms.keywords: _D3DKMT_CHANGEVIDEOMMEMORYRESERVATION, D3DKMT_CHANGEVIDEOMEMORYRESERVATION,
 req.header: d3dkmthk.h
@@ -35,16 +34,16 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_CHANGEVIDEOMMEMORYRESERVATION
+ - D3DKMT_CHANGEVIDEOMEMORYRESERVATION
 dev_langs:
  - c++
 ---
 
-# _D3DKMT_CHANGEVIDEOMMEMORYRESERVATION structure
-
+# D3DKMT_CHANGEVIDEOMMEMORYRESERVATION structure
 
 ## -description
 
-Used to change the video memory management reservation.
+The **D3DKMT_CHANGEVIDEOMMEMORYRESERVATION** structure is used to change the video memory management reservation.
 
 ## -struct-fields
 
@@ -66,10 +65,8 @@ Used to change the video memory management reservation.
 
 ### -field PhysicalAdapterIndex
 
- 
 [in] Zero based physical adapter index in the LDA (linked display adapter) configuration.
-
-## -remarks
 
 ## -see-also
 
+[**D3DKMTChangeVideoMemoryReservation**](nf-d3dkmthk-d3dkmtchangevideomemoryreservation.md)

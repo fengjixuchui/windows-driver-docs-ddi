@@ -4,7 +4,6 @@ title: IDebugDataSpaces4::SearchVirtual2 (dbgeng.h)
 description: The SearchVirtual2 method searches the process's virtual memory for a specified pattern of bytes.
 old-location: debugger\searchvirtual2.htm
 tech.root: debugger
-ms.assetid: f54c35da-d455-4700-b8b9-c4479bc95088
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces4::SearchVirtual2"]
 ms.keywords: IDebugDataSpaces4 interface [Windows Debugging],SearchVirtual2 method, IDebugDataSpaces4.SearchVirtual2, IDebugDataSpaces4::SearchVirtual2, IDebugDataSpaces_62e68b69-35f7-4d69-bcf2-93b74fe0aa72.xml, SearchVirtual2, SearchVirtual2 method [Windows Debugging], SearchVirtual2 method [Windows Debugging],IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces4::SearchVirtual2, debugger.searchvirtual2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugDataSpaces4.SearchVirtual2
+ - IDebugDataSpaces4::SearchVirtual2
 ---
 
 # IDebugDataSpaces4::SearchVirtual2
@@ -50,39 +49,39 @@ The <b>SearchVirtual2</b> method searches the process's virtual memory for a spe
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the location in the process's virtual address space to start searching for the pattern.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Specifies how far to search for the pattern.  A successful match requires the entire pattern to be found before <i>Length</i> bytes have been examined.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies a bit field of flags for the search.  Currently, the only bit-flag that can be set is DEBUG_VSEARCH_WRITABLE_ONLY, which restricts the search to writable memory.
 
-### -param Pattern 
+### -param Pattern [in]
 
-[in]
+
 Specifies the pattern to search for.
 
-### -param PatternSize 
+### -param PatternSize [in]
 
-[in]
+
 Specifies the size, in bytes, of the pattern.  This must be a multiple of the granularity of the pattern.
 
-### -param PatternGranularity 
+### -param PatternGranularity [in]
 
-[in]
+
 Specifies the granularity of the pattern.  For a successful match, the difference between the location of the found pattern and <i>Offset</i> must be a multiple of <i>PatternGranularity</i>.
 
-### -param MatchOffset 
+### -param MatchOffset [out]
 
-[out]
+
 Receives the location in the process's virtual address space of the pattern, if it was found.
 
 ## -returns
@@ -131,3 +130,4 @@ This method searches the target's virtual memory for the first occurrence, subje
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugdataspaces4-searchvirtual">SearchVirtual</a>
+

@@ -4,7 +4,6 @@ title: EVT_UDECX_USB_DEVICE_D0_ENTRY (udecxusbdevice.h)
 description: The USB device emulation class extension (UdeCx) invokes this callback function when it gets a request to bring the virtual USB device out of a low power state to working state.
 old-location: buses\evt_udecx_usb_device_d0_entry.htm
 tech.root: usbref
-ms.assetid: 92CEEAF3-BD70-4B1C-8385-00720A195E50
 ms.date: 05/07/2018
 keywords: ["EVT_UDECX_USB_DEVICE_D0_ENTRY callback function"]
 ms.keywords: EVT_UDECX_USB_DEVICE_D0_ENTRY, EVT_UDECX_USB_DEVICE_D0_ENTRY callback, EvtUsbDeviceLinkPowerEntry, EvtUsbDeviceLinkPowerEntry callback function [Buses], buses.evt_udecx_usb_device_d0_entry, udecxusbdevice/EvtUsbDeviceLinkPowerEntry
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - udecxusbdevice.h
 api_name:
- - EvtUsbDeviceLinkPowerEntry
+ - EVT_UDECX_USB_DEVICE_D0_ENTRY
 ---
 
 # EVT_UDECX_USB_DEVICE_D0_ENTRY callback function
@@ -50,14 +49,14 @@ The USB device emulation class extension (UdeCx) invokes this callback function 
 
 ## -parameters
 
-### -param UdecxWdfDevice 
+### -param UdecxWdfDevice [in]
 
-[in]
+
 A handle to a framework device object that represents the controller to which the USB device is attached. The client driver initialized this object in a previous call to <a href="/windows-hardware/drivers/ddi/udecxwdfdevice/nf-udecxwdfdevice-udecxwdfdeviceaddusbdeviceemulation">UdecxWdfDeviceAddUsbDeviceEmulation</a>.
 
-### -param UdecxUsbDevice 
+### -param UdecxUsbDevice [in]
 
-[in]
+
 A handle to UDE device object. The client driver created this object in a previous call to <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.
 
 ## -returns
@@ -91,3 +90,4 @@ The power request may be completed asynchronously by returning STATUS_PENDING, a
 
 
 <a href="/windows-hardware/drivers/usbcon/">Write a UDE client driver</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.PoEndDeviceBusy
 title: PoEndDeviceBusy function (wdm.h)
-description: The PoEndDeviceBusy routine marks the end of a period of time in which the device is busy.
+description: The PoEndDeviceBusy routine in the wdm.h file marks the end of a period of time in which the device is busy.
 old-location: kernel\poenddevicebusy.htm
 tech.root: kernel
-ms.assetid: 5ba5cfe7-a745-497e-b5ce-8c7b3d4929f5
 ms.date: 04/30/2018
 keywords: ["PoEndDeviceBusy function"]
 ms.keywords: PoEndDeviceBusy, PoEndDeviceBusy routine [Kernel-Mode Driver Architecture], kernel.poenddevicebusy, portn_edd72e85-e155-4a0c-9d6a-836ad448bb61.xml, wdm/PoEndDeviceBusy
@@ -50,9 +49,9 @@ The <b>PoEndDeviceBusy</b> routine marks the end of a period of time in which th
 
 ## -parameters
 
-### -param IdlePointer 
+### -param IdlePointer [in, out]
 
-[in, out]
+
 A pointer to an idle counter. This is a pointer value that was previously returned by the <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-poregisterdeviceforidledetection">PoRegisterDeviceForIdleDetection</a> routine. Because <b>PoRegisterDeviceForIdleDetection</b> might return a <b>NULL</b> pointer, the caller must verify that the pointer is non-<b>NULL</b> before it calls <b>PoEndDeviceBusy</b>.
 
 ## -remarks

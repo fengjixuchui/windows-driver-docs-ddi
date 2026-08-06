@@ -4,7 +4,6 @@ title: KeRevertToUserAffinityThreadEx function (wdm.h)
 description: The KeRevertToUserAffinityThreadEx routine restores the previous affinity of the current thread.
 old-location: kernel\kereverttouseraffinitythreadex.htm
 tech.root: kernel
-ms.assetid: effda249-3ba0-40e9-914b-4dd33126518c
 ms.date: 04/30/2018
 keywords: ["KeRevertToUserAffinityThreadEx function"]
 ms.keywords: KeRevertToUserAffinityThreadEx, KeRevertToUserAffinityThreadEx routine [Kernel-Mode Driver Architecture], k105_88dc65fe-5379-4b7c-bfa0-6f2bb943b7cc.xml, kernel.kereverttouseraffinitythreadex, wdm/KeRevertToUserAffinityThreadEx
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <= DISPATCH_LEVEL (see Remarks section).
+req.irql: <= DISPATCH_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>KeRevertToUserAffinityThreadEx</b> routine restores the previous affinity
 
 ## -parameters
 
-### -param Affinity 
+### -param Affinity [in]
 
-[in]
+
 A [**KAFFINITY**](/windows-hardware/drivers/kernel/interrupt-affinity-and-priority#about-kaffinity)-typed variable that specifies the new system affinity of the current thread. Set this parameter to the value that was returned by a previous call to the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-kesetsystemaffinitythreadex">KeSetSystemAffinityThreadEx</a> routine.
 
 ## -remarks

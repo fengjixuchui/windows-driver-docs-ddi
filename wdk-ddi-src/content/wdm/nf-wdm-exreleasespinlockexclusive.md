@@ -4,7 +4,6 @@ title: ExReleaseSpinLockExclusive function (wdm.h)
 description: The ExReleaseSpinLockExclusive routine releases a spin lock that the caller previously acquired for exclusive access, and restores the IRQL to its original value.
 old-location: kernel\exreleasespinlockexclusive_.htm
 tech.root: kernel
-ms.assetid: D10C65A6-96E7-4BE0-BDD5-EFD129DC424C
 ms.date: 03/28/2018
 keywords: ["ExReleaseSpinLockExclusive function"]
 ms.keywords: ExReleaseSpinLockExclusive, ExReleaseSpinLockExclusive routine [Kernel-Mode Driver Architecture], kernel.exreleasespinlockexclusive_, wdm/ExReleaseSpinLockExclusive
@@ -24,10 +23,9 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: DISPATCH_LEVEL (See Remarks.)
+req.irql: DISPATCH_LEVEL (see Remarks)
 targetos: Windows
 req.typenames: WORK_QUEUE_TYPE
-req.product: Windows 10 or later.
 f1_keywords:
  - ExReleaseSpinLockExclusive
  - wdm/ExReleaseSpinLockExclusive
@@ -51,14 +49,14 @@ The <b>ExReleaseSpinLockExclusive</b> routine releases a <a href="/windows-hardw
 
 ## -parameters
 
-### -param param 
+### -param SpinLock [in, out]
 
-[in, out]
+
  A pointer to the spin lock to release. The caller must own this spin lock for exclusive access.
 
-### -param OldIrql 
+### -param OldIrql [in]
 
-[in]
+
 The interrupt request level (IRQL) to restore. Set this parameter to the KIRQL value that was returned by the <a href="/previous-versions/windows/hardware/drivers/hh451007(v=vs.85)">ExAcquireSpinLockExclusive</a> call that acquired the spin lock.
 
 ## -remarks

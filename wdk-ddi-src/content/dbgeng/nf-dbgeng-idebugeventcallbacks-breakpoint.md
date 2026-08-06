@@ -4,7 +4,6 @@ title: IDebugEventCallbacks::Breakpoint (dbgeng.h)
 description: The Breakpoint callback method is called by the engine when the target issues a breakpoint exception.
 old-location: debugger\idebugeventcallbacks_breakpoint.htm
 tech.root: debugger
-ms.assetid: 76b9aca2-4630-45e2-bed4-f701018c86a5
 ms.date: 05/03/2018
 keywords: ["IDebugEventCallbacks::Breakpoint"]
 ms.keywords: Breakpoint, Breakpoint method [Windows Debugging], Breakpoint method [Windows Debugging],IDebugEventCallbacks interface, ComCallbacks_16ba89ba-0eb2-4565-ba29-5865abffe1bc.xml, IDebugEventCallbacks interface [Windows Debugging],Breakpoint method, IDebugEventCallbacks.Breakpoint, IDebugEventCallbacks::Breakpoint, dbgeng/IDebugEventCallbacks::Breakpoint, debugger.idebugeventcallbacks_breakpoint
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugEventCallbacks.Breakpoint
+ - IDebugEventCallbacks::Breakpoint
 ---
 
 # IDebugEventCallbacks::Breakpoint
@@ -50,9 +49,9 @@ The <b>Breakpoint</b> callback method is called by the engine when the target is
 
 ## -parameters
 
-### -param Bp 
+### -param Bp [in]
 
-[in]
+
 Specifies a pointer to the <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugbreakpoint">IDebugBreakpoint</a> object corresponding to the breakpoint that was triggered.
 
 ## -returns
@@ -70,3 +69,4 @@ The engine calls this method only if the DEBUG_EVENT_BREAKPOINT flag is set in t
 Because the engine deletes the corresponding <b>IDebugBreakpoint</b> object when a breakpoint is removed (for example, by using <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-removebreakpoint">RemoveBreakpoint</a>), the value of <i>Bp</i> might be invalid after <b>Breakpoint</b> returns.  Therefore, implementations of <b>IDebugEventCallbacks</b> should not access <i>Bp</i> after <b>Breakpoint</b> returns.
 
 For more information about handling events, see <a href="/windows-hardware/drivers/debugger/monitoring-events">Monitoring Events</a>.  For information about managing breakpoints, see <a href="/windows-hardware/drivers/debugger/breakpoints3">Breakpoints</a>.
+

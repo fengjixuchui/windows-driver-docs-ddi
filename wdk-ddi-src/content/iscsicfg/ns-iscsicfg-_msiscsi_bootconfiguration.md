@@ -4,7 +4,6 @@ title: _MSiSCSI_BootConfiguration (iscsicfg.h)
 description: The MSiSCSI_BootConfiguration structure describes how the boot device is configured.
 old-location: storage\msiscsi_bootconfiguration.htm
 tech.root: storage
-ms.assetid: 3a4b55b1-977d-43fb-9968-7a734e04b21b
 ms.date: 03/29/2018
 keywords: ["MSiSCSI_BootConfiguration structure"]
 ms.keywords: "*PMSiSCSI_BootConfiguration, MSiSCSI_BootConfiguration, MSiSCSI_BootConfiguration structure [Storage Devices], PMSiSCSI_BootConfiguration, PMSiSCSI_BootConfiguration structure pointer [Storage Devices], _MSiSCSI_BootConfiguration, iscsicfg/MSiSCSI_BootConfiguration, iscsicfg/PMSiSCSI_BootConfiguration, storage.msiscsi_bootconfiguration, structs-iSCSI_eb9ca716-5f5e-4bec-a4e0-e00d5a93b329.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsicfg.h
 api_name:
+ - _MSiSCSI_BootConfiguration
+ - PMSiSCSI_BootConfiguration
  - MSiSCSI_BootConfiguration
 ---
 
@@ -113,3 +114,4 @@ The WMI tool suite automatically generates a declaration of the MSiSCSI_BootConf
 
 
 <a href="/windows-hardware/drivers/storage/security-flag-qualifiers">SECURITY_FLAG_QUALIFIERS</a>
+

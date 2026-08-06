@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_ONEX_STOP
 title: DOT11EXT_ONEX_STOP (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_ONEX_STOP callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extstoponex.htm
 tech.root: netvista
-ms.assetid: b4893698-47ae-4888-9dcd-0dbdf051266b
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_ONEX_STOP callback"]
 ms.keywords: DOT11EXT_ONEX_STOP, Dot11ExtStopOneX, Dot11ExtStopOneX callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_fcc1f11d-938e-431e-8327-42d34fedff04.xml, netvista.dot11extstoponex, wlanihv/Dot11ExtStopOneX
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_ONEX_STOP
  - wlanihv/DOT11EXT_ONEX_STOP
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtStopOneX
+ - DOT11EXT_ONEX_STOP
 ---
 
 # DOT11EXT_ONEX_STOP callback
@@ -54,9 +52,9 @@ api_name:
 
 ## -parameters
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the wireless LAN (WLAN) adapter. This handle
      value was specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
@@ -144,3 +142,4 @@ For more information about using the 802.1X module for authentication, see
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_post_associate.md">
    Dot11ExtIhvPerformPostAssociate</a>
+

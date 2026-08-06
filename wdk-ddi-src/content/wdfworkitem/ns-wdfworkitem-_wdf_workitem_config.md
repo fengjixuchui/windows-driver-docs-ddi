@@ -4,7 +4,6 @@ title: _WDF_WORKITEM_CONFIG (wdfworkitem.h)
 description: The WDF_WORKITEM_CONFIG structure contains information that is associated with a work item.
 old-location: wdf\wdf_workitem_config.htm
 tech.root: wdf
-ms.assetid: b6186c05-ccb9-432c-bd83-9a3fb3af7f0b
 ms.date: 02/26/2018
 keywords: ["WDF_WORKITEM_CONFIG structure"]
 ms.keywords: "*PWDF_WORKITEM_CONFIG, DFWorkItemObjectRef_48012621-6363-421b-8b95-2bdae4e63b32.xml, PWDF_WORKITEM_CONFIG, PWDF_WORKITEM_CONFIG structure pointer, WDF_WORKITEM_CONFIG, WDF_WORKITEM_CONFIG structure, _WDF_WORKITEM_CONFIG, kmdf.wdf_workitem_config, wdf.wdf_workitem_config, wdfworkitem/PWDF_WORKITEM_CONFIG, wdfworkitem/WDF_WORKITEM_CONFIG"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdfworkitem.h
 api_name:
+ - _WDF_WORKITEM_CONFIG
+ - PWDF_WORKITEM_CONFIG
  - WDF_WORKITEM_CONFIG
 ---
 
@@ -89,3 +90,4 @@ For more information about <b>AutomaticSerialization</b> and synchronizing drive
 
 
 <a href="/windows-hardware/drivers/ddi/wdfworkitem/nf-wdfworkitem-wdfworkitemcreate">WdfWorkItemCreate</a>
+

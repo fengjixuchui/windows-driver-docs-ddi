@@ -4,7 +4,6 @@ title: WdfChildListRetrieveAddressDescription function (wdfchildlist.h)
 description: The WdfChildListRetrieveAddressDescription method locates a child device that has a specified identification description and retrieves the device's address description.
 old-location: wdf\wdfchildlistretrieveaddressdescription.htm
 tech.root: wdf
-ms.assetid: 0c551de0-970a-4733-b904-27c40cf7b42f
 ms.date: 02/26/2018
 keywords: ["WdfChildListRetrieveAddressDescription function"]
 ms.keywords: DFDeviceObjectChildListRef_bd30cd1e-b7ac-40cd-b96f-4071d08bafc1.xml, WdfChildListRetrieveAddressDescription, WdfChildListRetrieveAddressDescription method, kmdf.wdfchildlistretrieveaddressdescription, wdf.wdfchildlistretrieveaddressdescription, wdfchildlist/WdfChildListRetrieveAddressDescription
@@ -53,19 +52,19 @@ The <b>WdfChildListRetrieveAddressDescription</b> method locates a child device 
 
 ## -parameters
 
-### -param ChildList 
+### -param ChildList [in]
 
-[in]
+
 A handle to a child list object.
 
-### -param IdentificationDescription 
+### -param IdentificationDescription [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_identification_description_header">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a> structure that identifies a driver-supplied child identification description.
 
-### -param AddressDescription 
+### -param AddressDescription [in, out]
 
-[in, out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_address_description_header">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a> structure that identifies a child address description. The framework fills in this description.
 
 ## -returns

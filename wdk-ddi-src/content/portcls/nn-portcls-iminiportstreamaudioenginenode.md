@@ -4,7 +4,6 @@ title: IMiniportStreamAudioEngineNode (portcls.h)
 description: This interface allows a miniport driver to use KS properties that access the audio engine via a pin instance handle.
 old-location: audio\iminiportstreamaudioenginenode.htm
 tech.root: audio
-ms.assetid: B3F7D3AC-C756-47D2-9E7C-7930621753C3
 ms.date: 05/08/2018
 keywords: ["IMiniportStreamAudioEngineNode interface"]
 ms.keywords: IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode interface [Audio Devices], IMiniportStreamAudioEngineNode interface [Audio Devices],described, audio.iminiportstreamaudioenginenode, portcls/IMiniportStreamAudioEngineNode
@@ -50,7 +49,5 @@ This interface allows a miniport driver to use KS properties that access the aud
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMiniportStreamAudioEngineNode</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IMiniportStreamAudioEngineNode</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IMiniportStreamAudioEngineNode</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IMiniportStreamAudioEngineNode</b> also has these types of members:
+

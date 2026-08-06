@@ -1,10 +1,9 @@
 ---
 UID: NS:pep_x._PEP_ACPI_QUERY_OBJECT_INFORMATION
 title: _PEP_ACPI_QUERY_OBJECT_INFORMATION (pep_x.h)
-description: The PEP_ACPI_QUERY_OBJECT_INFORMATION structure contains information about an ACPI object.
+description: Learn how the PEP_ACPI_QUERY_OBJECT_INFORMATION structure contains information about an ACPI object.
 old-location: kernel\pep_acpi_query_object_information.htm
 tech.root: kernel
-ms.assetid: 71E43364-CBD6-4628-B51C-B41315E0E800
 ms.date: 04/30/2018
 keywords: ["PEP_ACPI_QUERY_OBJECT_INFORMATION structure"]
 ms.keywords: "*PPEP_ACPI_QUERY_OBJECT_INFORMATION, PEP_ACPI_QUERY_OBJECT_INFORMATION, PEP_ACPI_QUERY_OBJECT_INFORMATION structure [Kernel-Mode Driver Architecture], PPEP_ACPI_QUERY_OBJECT_INFORMATION, PPEP_ACPI_QUERY_OBJECT_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _PEP_ACPI_QUERY_OBJECT_INFORMATION, kernel.pep_acpi_query_object_information, pepfx/PEP_ACPI_QUERY_OBJECT_INFORMATION, pepfx/PPEP_ACPI_QUERY_OBJECT_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_ACPI_QUERY_OBJECT_INFORMATION
+ - PPEP_ACPI_QUERY_OBJECT_INFORMATION
  - PEP_ACPI_QUERY_OBJECT_INFORMATION
 ---
 
@@ -54,29 +55,29 @@ The <b>PEP_ACPI_QUERY_OBJECT_INFORMATION</b> structure contains information abou
 
 ## -struct-fields
 
-### -field DeviceHandle
+### -field DeviceHandle [in]
 
-[in] A PEPHANDLE value that identifies the device's registration for ACPI services. The platform extension plug-in (PEP) supplied this handle in response to a previous <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_acpi_register_device">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a> notification.
+A PEPHANDLE value that identifies the device's registration for ACPI services. The platform extension plug-in (PEP) supplied this handle in response to a previous <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_acpi_register_device">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a> notification.
 
-### -field Name
+### -field Name [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_acpi_object_name">PEP_ACPI_OBJECT_NAME</a> union that specifies the path-relative, four-character name of the object.
+A <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_acpi_object_name">PEP_ACPI_OBJECT_NAME</a> union that specifies the path-relative, four-character name of the object.
 
-### -field Type
+### -field Type [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/pepfx/ne-pepfx-_pep_acpi_object_type">PEP_ACPI_OBJECT_TYPE</a> enumeration value that specifies the object type. Currently, a control method is the only object type that is defined for this member (<b>Type</b> = <b>PepAcpiObjectTypeMethod</b>).
+A <a href="/windows-hardware/drivers/ddi/pepfx/ne-pepfx-_pep_acpi_object_type">PEP_ACPI_OBJECT_TYPE</a> enumeration value that specifies the object type. Currently, a control method is the only object type that is defined for this member (<b>Type</b> = <b>PepAcpiObjectTypeMethod</b>).
 
-### -field ObjectFlags
+### -field ObjectFlags [in]
 
-[in] A set of input flags. No flags are currently defined for this member, which is always set to PEP_ACPI_OBJECT_FLAG_NONE (0x0).
+A set of input flags. No flags are currently defined for this member, which is always set to PEP_ACPI_OBJECT_FLAG_NONE (0x0).
 
 ### -field DUMMYUNIONNAME
 
 The query result. If the specified object is a control method, the platform extension plug-in (PEP) writes the query result to the <b>MethodObject</b> member of this union.
 
-### -field DUMMYUNIONNAME.MethodObject
+### -field DUMMYUNIONNAME.MethodObject [out]
 
-[out] Information about a control method object.
+Information about a control method object.
 
 ### -field DUMMYUNIONNAME.MethodObject.InputArgumentCount
 
@@ -88,7 +89,7 @@ The number of output arguments produced by the control method.
 
 ## -remarks
 
-This structure is used by the <a href="/windows-hardware/drivers/ddi/pep_x/ns-pep_x-_pep_kernel_information_struct_v1">PEP_NOTIFY_ACPI_QUERY_OBJECT_INFORMATION</a> notification. The <b>Name</b>, <b>Type</b>, and <b>Flags</b> members of the structure contain input values that the Windows <a href="/windows-hardware/drivers/ddi/index">power management framework</a> (PoFx) supplies when this notification is sent. The <b>MethodObject</b> member contains an output value that the PEP writes to the structure in response to the notification.
+This structure is used by the <a href="/windows-hardware/drivers/ddi/pep_x/ns-pep_x-_pep_kernel_information_struct_v1">PEP_NOTIFY_ACPI_QUERY_OBJECT_INFORMATION</a> notification. The <b>Name</b>, <b>Type</b>, and <b>Flags</b> members of the structure contain input values that the Windows <a href="/windows-hardware/drivers/ddi/_kernel/#device-power-management">power management framework</a> (PoFx) supplies when this notification is sent. The <b>MethodObject</b> member contains an output value that the PEP writes to the structure in response to the notification.
 
 ## -see-also
 
@@ -105,3 +106,4 @@ This structure is used by the <a href="/windows-hardware/drivers/ddi/pep_x/ns-pe
 
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_acpi_register_device">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a>
+

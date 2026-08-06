@@ -4,7 +4,6 @@ title: WdfVerifierKeBugCheck function (wdfverifier.h)
 description: The WdfVerifierKeBugCheck function creates a bug check.
 old-location: wdf\wdfverifierkebugcheck.htm
 tech.root: wdf
-ms.assetid: 3fa8ea3d-cca0-402d-a3a8-1281ad4231d4
 ms.date: 02/26/2018
 keywords: ["WdfVerifierKeBugCheck function"]
 ms.keywords: DFDebugRef_05774709-97ed-4fcc-b0b2-9fdac9a34094.xml, WdfVerifierKeBugCheck, WdfVerifierKeBugCheck function, kmdf.wdfverifierkebugcheck, wdf.wdfverifierkebugcheck, wdfverifier/WdfVerifierKeBugCheck
@@ -55,34 +54,34 @@ The <b>WdfVerifierKeBugCheck</b> function creates a bug check.
 
 ## -parameters
 
-### -param BugCheckCode 
+### -param BugCheckCode [in]
 
-[in]
+
 One of the <a href="/windows-hardware/drivers/debugger/bug-check-code-reference2">bug check codes</a> that are defined in <i>Bugcodes.h</i>.
 
-### -param BugCheckParameter1 
+### -param BugCheckParameter1 [in]
 
-[in]
+
 For information about this parameter, see the specified bug check code's description.
 
-### -param BugCheckParameter2 
+### -param BugCheckParameter2 [in]
 
-[in]
+
 For information about this parameter, see the specified bug check code's description.
 
-### -param BugCheckParameter3 
+### -param BugCheckParameter3 [in]
 
-[in]
+
 For information about this parameter, see the specified bug check code's description.
 
-### -param BugCheckParameter4 
+### -param BugCheckParameter4 [in]
 
-[in]
+
 For information about this parameter, see the specified bug check code's description.
 
 ## -remarks
 
-If your Kernel-Mode Driver Framework (KMDF) driver calls <b>WdfVerifierKeBugCheck</b>, the operating system halts and displays a <a href="/windows-hardware/drivers/debugger/blue-screen-data">blue screen</a> unless a <a href="/windows-hardware/drivers/devtest/using-a-debugger">debugger</a> is running.
+If your Kernel-Mode Driver Framework (KMDF) driver calls <b>WdfVerifierKeBugCheck</b>, the operating system halts and displays a <a href="/windows-hardware/drivers/debugger/blue-screen-data">blue screen</a> unless a debugger is running. For more information, see  [Getting Started with WinDbg - Kernel Mode](/windows-hardware/drivers/debugger/getting-started-with-windbg--kernel-mode-).
 
 If your  User-Mode Driver Framework (UMDF) driver (version 2.0 or later) calls <b>WdfVerifierKeBugCheck</b>, the framework does not use  the parameters that the driver supplies.   In this case, the framework breaks into the debugger if one is connected. If a debugger is not connected, the framework generates an exception, and the default UMDF exception handler creates a minidump file. For more information about unhandled exceptions in the driver host process, see <a href="/windows-hardware/drivers/wdf/how-umdf-reports-errors">How UMDF Reports Errors</a>.
 

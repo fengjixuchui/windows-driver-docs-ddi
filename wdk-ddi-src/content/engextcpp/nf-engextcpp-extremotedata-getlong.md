@@ -4,7 +4,6 @@ title: ExtRemoteData::GetLong (engextcpp.h)
 description: The GetLong method returns a LONG version of the ExtRemoteData object, which represents the contents of the target's memory.
 old-location: debugger\extremotedata_getlong.htm
 tech.root: debugger
-ms.assetid: 064f50e7-bae8-4c29-9802-47efdb749652
 ms.date: 05/03/2018
 keywords: ["ExtRemoteData::GetLong"]
 ms.keywords: EngExtCpp_Ref_10a1810d-2e15-490a-baeb-8881106f41a6.xml, ExtRemoteData class [Windows Debugging],GetLong method, ExtRemoteData.GetLong, ExtRemoteData::GetLong, GetLong, GetLong method [Windows Debugging], GetLong method [Windows Debugging],ExtRemoteData class, debugger.extremotedata_getlong
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteData.GetLong
+ - ExtRemoteData::GetLong
 ---
 
 # ExtRemoteData::GetLong
@@ -71,3 +70,4 @@ The size of the memory represented by this <a href="/windows-hardware/drivers/dd
 
 
 <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotedata-getulong">ExtRemoteData::GetUlong</a>
+

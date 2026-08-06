@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_106
+UID: NS:ksmedia.KSPROPERTY_TUNER_SCAN_CAPS_S
 title: KSPROPERTY_TUNER_SCAN_CAPS_S (ksmedia.h)
 description: The KSPROPERTY_TUNER_SCAN_CAPS_S structure describes the hardware scanning capabilities of a tuning device.
 old-location: stream\ksproperty_tuner_scan_caps_s.htm
 tech.root: stream
-ms.assetid: 5f05b24b-cf46-4302-a445-a9df029661cd
 ms.date: 04/30/2019
 keywords: ["KSPROPERTY_TUNER_SCAN_CAPS_S structure"]
 ms.keywords: "*PKSPROPERTY_TUNER_SCAN_CAPS_S, KSPROPERTY_TUNER_SCAN_CAPS_S, KSPROPERTY_TUNER_SCAN_CAPS_S structure [Streaming Media Devices], PKSPROPERTY_TUNER_SCAN_CAPS_S, PKSPROPERTY_TUNER_SCAN_CAPS_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_TUNER_SCAN_CAPS_S, ksmedia/PKSPROPERTY_TUNER_SCAN_CAPS_S, stream.ksproperty_tuner_scan_caps_s, vidcapstruct_fbbea2b1-4a4d-40f0-b988-4ffab19155f5.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_TUNER_SCAN_CAPS_S
  - KSPROPERTY_TUNER_SCAN_CAPS_S
 ---
 
@@ -54,7 +54,7 @@ The KSPROPERTY_TUNER_SCAN_CAPS_S structure describes the hardware scanning capab
 
 ### -field Property
 
-Specifies an initialized <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+Specifies an initialized <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 ### -field fSupportsHardwareAssistedScanning
 
@@ -76,7 +76,7 @@ The number of GUIDs in the <b>GUIDBucket</b> array.
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -89,3 +89,4 @@ The number of GUIDs in the <b>GUIDBucket</b> array.
 
 
 <a href="/windows-hardware/drivers/stream/propsetid-tuner">PROPSETID_TUNER</a>
+

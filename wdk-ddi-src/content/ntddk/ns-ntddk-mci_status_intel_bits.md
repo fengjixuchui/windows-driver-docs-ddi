@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._MCI_STATUS_INTEL_BITS
 title: MCI_STATUS_INTEL_BITS
-description: 
-tech.root: 
-ms.assetid: 677c44c7-b158-4164-9b0b-bccdbbff8da5
+description: "Learn more about: MCI_STATUS_INTEL_BITS structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["MCI_STATUS_INTEL_BITS structure"]
 ms.keywords: MCI_STATUS_INTEL_BITS, MCI_STATUS_INTEL_BITS, *PMCI_STATUS_INTEL_BITS,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _MCI_STATUS_INTEL_BITS
+ - PMCI_STATUS_INTEL_BITS
  - MCI_STATUS_INTEL_BITS
-product:
- - Windows
 ---
 
 # MCI_STATUS_INTEL_BITS structure

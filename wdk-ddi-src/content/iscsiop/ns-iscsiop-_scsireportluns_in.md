@@ -4,7 +4,6 @@ title: _ScsiReportLuns_IN (iscsiop.h)
 description: The ScsiReportLuns_IN structure holds the input data for the ScsiReportLuns method.
 old-location: storage\scsireportluns_in.htm
 tech.root: storage
-ms.assetid: ba1d67f7-cb90-473a-849d-7990889e4a40
 ms.date: 03/29/2018
 keywords: ["ScsiReportLuns_IN structure"]
 ms.keywords: "*PScsiReportLuns_IN, PScsiReportLuns_IN, PScsiReportLuns_IN structure pointer [Storage Devices], ScsiReportLuns_IN, ScsiReportLuns_IN structure [Storage Devices], _ScsiReportLuns_IN, iscsiop/PScsiReportLuns_IN, iscsiop/ScsiReportLuns_IN, storage.scsireportluns_in, structs-iSCSI_1bc2b9de-bb9a-417a-bbe3-07167f866b7b.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsiop.h
 api_name:
+ - _ScsiReportLuns_IN
+ - PScsiReportLuns_IN
  - ScsiReportLuns_IN
 ---
 
@@ -77,3 +78,4 @@ You must implement this method.
 
 
 <a href="/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_scsireportluns_out">ScsiReportLuns_OUT</a>
+

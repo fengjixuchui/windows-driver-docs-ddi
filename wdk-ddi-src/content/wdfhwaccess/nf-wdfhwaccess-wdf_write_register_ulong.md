@@ -4,7 +4,6 @@ title: WDF_WRITE_REGISTER_ULONG function (wdfhwaccess.h)
 description: The WDF_WRITE_REGISTER_ULONG routine writes a ULONG value to the specified address.
 old-location: wdf\wdf_write_register_ulong.htm
 tech.root: wdf
-ms.assetid: C2EBA90C-3F36-45AC-9344-DFB1824A66B9
 ms.date: 02/26/2018
 keywords: ["WDF_WRITE_REGISTER_ULONG function"]
 ms.keywords: WDF_WRITE_REGISTER_ULONG, WDF_WRITE_REGISTER_ULONG function, wdf.wdf_write_register_ulong, wdfhwaccess/WDF_WRITE_REGISTER_ULONG
@@ -52,18 +51,18 @@ The <b>WDF_WRITE_REGISTER_ULONG</b> routine writes a ULONG value to the specifie
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the register, which must be a mapped range in memory space.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies a ULONG value to write to the register.
 

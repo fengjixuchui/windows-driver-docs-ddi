@@ -4,14 +4,13 @@ title: DXGK_BRIGHTNESS_SET (dispmprt.h)
 description: The DxgkDdiSetBrightness function sets a new brightness level.
 old-location: display\dxgkddisetbrightness.htm
 tech.root: display
-ms.assetid: 83609679-20df-463d-ac3a-bb8a87897608
 ms.date: 05/10/2018
 keywords: ["DXGK_BRIGHTNESS_SET callback function"]
 ms.keywords: DXGK_BRIGHTNESS_SET, DXGK_BRIGHTNESS_SET callback, DmFunctions_7b5ff27a-7a8f-4dee-8b3d-c9b0df76db6d.xml, DxgkDdiSetBrightness, DxgkDdiSetBrightness callback function [Display Devices], display.dxgkddisetbrightness, dispmprt/DxgkDdiSetBrightness
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
- - DxgkDdiSetBrightness
+ - DXGK_BRIGHTNESS_SET
 ---
 
 # DXGK_BRIGHTNESS_SET callback function
@@ -50,14 +49,14 @@ The <i>DxgkDdiSetBrightness</i> function sets a new brightness level.
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem.
 
-### -param Brightness 
+### -param Brightness [in]
 
-[in]
+
 The brightness level value to set.
 
 ## -returns
@@ -95,3 +94,4 @@ The monitor driver interprets brightness hot-key notifications from the Advanced
 
 
 <a href="/windows-hardware/drivers/ddi/ntddvdeo/ni-ntddvdeo-ioctl_video_set_display_brightness">IOCTL_VIDEO_SET_DISPLAY_BRIGHTNESS</a>
+

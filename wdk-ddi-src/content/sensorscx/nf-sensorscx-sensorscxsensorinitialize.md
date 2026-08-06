@@ -4,7 +4,6 @@ title: SensorsCxSensorInitialize function (sensorscx.h)
 description: This function sets the enumeration properties of a sensor.
 old-location: sensors\sensorscxsensorinitialize.htm
 tech.root: sensors
-ms.assetid: D6C0B66A-58ED-4E1D-89E2-4A1AF77281C1
 ms.date: 05/03/2018
 keywords: ["SensorsCxSensorInitialize function"]
 ms.keywords: SensorsCxSensorInitialize, SensorsCxSensorInitialize function [Sensor Devices], sensors.sensorscxsensorinitialize, sensorscx/SensorsCxSensorInitialize
@@ -52,14 +51,14 @@ This function sets the enumeration properties of a sensor.
 
 ## -parameters
 
-### -param Sensor 
+### -param Sensor [in]
 
-[in]
+
 A reference to a sensor object.
 
-### -param pSensorConfig 
+### -param pSensorConfig [in]
 
-[in]
+
 A list of enumeration properties. For more information, see <a href="/windows-hardware/drivers/ddi/sensorscx/ns-sensorscx-_sensor_config">SENSOR_CONFIG</a>.
 
 ## -returns

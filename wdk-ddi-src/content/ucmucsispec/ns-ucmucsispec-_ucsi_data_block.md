@@ -3,7 +3,6 @@ UID: NS:ucmucsispec._UCSI_DATA_BLOCK
 title: _UCSI_DATA_BLOCK (ucmucsispec.h)
 tech.root: usbref
 description: The data structures for memory locations. See Section 3.
-ms.assetid: fed35e88-4a81-4626-8d8d-a056bcfcc5ea
 ms.date: 09/30/2018
 keywords: ["UCSI_DATA_BLOCK structure"]
 ms.keywords: _UCSI_DATA_BLOCK, UCSI_DATA_BLOCK, *PUCSI_DATA_BLOCK,
@@ -37,6 +36,8 @@ api_location:
  - ucmucsispec.h
 api_name:
  - _UCSI_DATA_BLOCK
+ - PUCSI_DATA_BLOCK
+ - UCSI_DATA_BLOCK
 ---
 
 # _UCSI_DATA_BLOCK structure
@@ -44,7 +45,7 @@ api_name:
 
 ## -description
 
-The data structures for memory locations. See Section 3 in [UCSI spec version 1.1](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
+The data structures for memory locations. See Section 3 in [UCSI spec version 1.2](https://www.intel.com/content/dam/www/public/us/en/documents/technical-specifications/usb-type-c-ucsi-spec.pdf).
 
 ## -struct-fields
 

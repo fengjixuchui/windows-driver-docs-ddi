@@ -4,7 +4,6 @@ title: _DOT11_WFD_DISCOVER_DEVICE_FILTER (windot11.h)
 description: The DOT11_WFD_DISCOVER _DEVICE_FILTER structure describes a P2P device and Group Owner filter when responding to OID_DOT11_WFD_DISCOVERY_REQUEST requests.
 old-location: netvista\dot11_wfd_discover_device_filter.htm
 tech.root: netvista
-ms.assetid: B8AA23C6-EFFC-47C3-9AD2-72421463CDBA
 ms.date: 02/16/2018
 keywords: ["DOT11_WFD_DISCOVER_DEVICE_FILTER structure"]
 ms.keywords: "*PDOT11_WFD_DISCOVER_DEVICE_FILTER, DOT11_WFD_DISCOVER_DEVICE_FILTER, DOT11_WFD_DISCOVER_DEVICE_FILTER structure [Network Drivers Starting with Windows Vista], PDOT11_WFD_DISCOVER_DEVICE_FILTER, PDOT11_WFD_DISCOVER_DEVICE_FILTER structure pointer [Network Drivers Starting with Windows Vista], _DOT11_WFD_DISCOVER_DEVICE_FILTER, netvista.dot11_wfd_discover_device_filter, windot11/DOT11_WFD_DISCOVER_DEVICE_FILTER, windot11/PDOT11_WFD_DISCOVER_DEVICE_FILTER"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - Windot11.h
 api_name:
+ - _DOT11_WFD_DISCOVER_DEVICE_FILTER
+ - PDOT11_WFD_DISCOVER_DEVICE_FILTER
  - DOT11_WFD_DISCOVER_DEVICE_FILTER
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_WFD_DISCOVER_DEVICE_FILTER structure
@@ -52,7 +51,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The <b>DOT11_WFD_DISCOVER _DEVICE_FILTER</b> structure describes a P2P device and Group Owner filter when responding to OID_DOT11_WFD_DISCOVERY_REQUEST requests.
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The <b>DOT11_WFD_DISCOVER _DEVICE_FILTER</b> structure describes a P2P device and Group Owner filter when responding to OID_DOT11_WFD_DISCOVERY_REQUEST requests.
 
 ## -struct-fields
 
@@ -122,3 +124,4 @@ typedef struct _DOT11_WFD_DISCOVER_DEVICE_FILTER {
 The local P2P device should not extend the discovery operation to find additional instances.
 
 Note that if the value of <b>ucBitmask</b> is FILTER_BITMASK_DEVICE | FILTER_BITMASK_GO, the local P2P device should discover only one instance of the P2P device - either the P2P device or a GO with the desired P2P <b>DeviceID</b> and <b>GroupSSID</b>.
+

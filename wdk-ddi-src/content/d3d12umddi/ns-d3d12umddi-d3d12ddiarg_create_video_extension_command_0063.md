@@ -3,7 +3,6 @@ UID: NS:d3d12umddi.D3D12DDIARG_CREATE_VIDEO_EXTENSION_COMMAND_0063
 title: D3D12DDIARG_CREATE_VIDEO_EXTENSION_COMMAND_0063
 description: Used to create a video extension command.
 tech.root: display
-ms.assetid: 5b621cc0-5062-44ab-8d1e-ddd88e10b1eb
 ms.date: 04/04/2019
 keywords: ["D3D12DDIARG_CREATE_VIDEO_EXTENSION_COMMAND_0063 structure"]
 ms.keywords: D3D12DDIARG_CREATE_VIDEO_EXTENSION_COMMAND_0063, D3D12DDIARG_CREATE_VIDEO_EXTENSION_COMMAND_0063,
@@ -46,17 +45,17 @@ Contains arguments used to create a video extension command.
 
 ## -struct-fields
 
-### -field NodeMask
+### -field NodeMask [in]
 
-[in] For single GPU operation, set this to zero. If there are multiple GPU nodes, set a bit to identify the node (the device's physical adapter) to which the command queue applies. Each bit in the mask corresponds to a single node. Only 1 bit may be set.
+For single GPU operation, set this to zero. If there are multiple GPU nodes, set a bit to identify the node (the device's physical adapter) to which the command queue applies. Each bit in the mask corresponds to a single node. Only 1 bit may be set.
 
-### -field CommandId
+### -field CommandId [in]
 
-[in] The unique identifier for the video extension command.
+The unique identifier for the video extension command.
 
-### -field pCreationParameters
+### -field pCreationParameters [in]
 
-[in] Pointer to the creation parameters structure. Parameters for this structure must match the parameter enumeration for [D3D12DDI_VIDEO_EXTENSION_COMMAND_PARAMETER_STAGE_0063_CREATION](ne-d3d12umddi-d3d12ddi_video_extension_command_parameter_stage_0063.md).
+Pointer to the creation parameters structure. Parameters for this structure must match the parameter enumeration for [D3D12DDI_VIDEO_EXTENSION_COMMAND_PARAMETER_STAGE_0063_CREATION](ne-d3d12umddi-d3d12ddi_video_extension_command_parameter_stage_0063.md).
 
 ### -field CreationParametersDataSizeInBytes
 

@@ -4,7 +4,6 @@ title: PcRegisterPhysicalConnectionFromExternal function (portcls.h)
 description: The PcRegisterPhysicalConnectionFromExternal function registers a physical connection to an audio adapter filter from an external audio adapter filter.
 old-location: audio\pcregisterphysicalconnectionfromexternal.htm
 tech.root: audio
-ms.assetid: 636cf517-5ab0-4709-8026-b51425c81118
 ms.date: 05/08/2018
 keywords: ["PcRegisterPhysicalConnectionFromExternal function"]
 ms.keywords: PcRegisterPhysicalConnectionFromExternal, PcRegisterPhysicalConnectionFromExternal function [Audio Devices], audio.pcregisterphysicalconnectionfromexternal, audpc-routines_ad19ffe2-ec64-4b2b-b036-cc84a986adfe.xml, portcls/PcRegisterPhysicalConnectionFromExternal
@@ -51,29 +50,29 @@ The <b>PcRegisterPhysicalConnectionFromExternal</b> function registers a physica
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the device object for the device. This is a system structure of type <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a>.
 
-### -param FromString 
+### -param FromString [in]
 
-[in]
+
 Pointer to a null-terminated Unicode string containing the symbolic link name of the external filter that supplies the connection's source pin.
 
-### -param FromPin 
+### -param FromPin [in]
 
-[in]
+
 Specifies a pin ID. This parameter identifies the source (output) pin on the external filter named by <i>FromString</i>.
 
-### -param ToUnknown 
+### -param ToUnknown [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iport">IPort</a> interface of a port driver object. The port driver object that is associated with <i>ToUnknown</i> is bound to the subdevice that supplies the connection's data sink (input) pin.
 
-### -param ToPin 
+### -param ToPin [in]
 
-[in]
+
 Specifies a pin ID. This parameter identifies the sink (input) pin on the filter that is associated with the <i>ToUnknown</i> interface.
 
 ## -returns

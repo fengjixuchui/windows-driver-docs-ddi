@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.ZwRecoverResourceManager
 title: ZwRecoverResourceManager function (wdm.h)
-description: The ZwRecoverResourceManager routine tries to recover the transaction that is associated with each enlistment of a specified resource manager object.
+description: Learn how the ZwRecoverResourceManager routine tries to recover the transaction that is associated with each enlistment of a specified resource manager object.
 old-location: kernel\zwrecoverresourcemanager.htm
 tech.root: kernel
-ms.assetid: 976ea17c-db43-487d-a378-3d65d12ddc98
 ms.date: 04/30/2018
 keywords: ["ZwRecoverResourceManager function"]
 ms.keywords: NtRecoverResourceManager, ZwRecoverResourceManager, ZwRecoverResourceManager routine [Kernel-Mode Driver Architecture], kernel.zwrecoverresourcemanager, ktm_ref_88d3ee88-7520-4942-95cc-38e53ab14044.xml, wdm/NtRecoverResourceManager, wdm/ZwRecoverResourceManager
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - ZwRecoverResourceManager
- - NtRecoverResourceManager
 ---
 
 # ZwRecoverResourceManager function
@@ -51,9 +49,9 @@ The <b>ZwRecoverResourceManager</b> routine tries to recover the transaction tha
 
 ## -parameters
 
-### -param ResourceManagerHandle 
+### -param ResourceManagerHandle [in]
 
-[in]
+
 A handle to a resource manager object that was obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateresourcemanager">ZwCreateResourceManager</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenresourcemanager">ZwOpenResourceManager</a>. The handle must have RESOURCEMANAGER_RECOVER access to the object.
 
 ## -returns
@@ -149,3 +147,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntsetinformationresourcemanager">ZwSetInformationResourceManager</a>
+

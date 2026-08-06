@@ -4,14 +4,13 @@ title: PsImpersonateClient function (ntifs.h)
 description: The PsImpersonateClient routine causes a server thread to impersonate a client.
 old-location: ifsk\psimpersonateclient.htm
 tech.root: ifsk
-ms.assetid: 69cc1253-07eb-43cf-abc7-5ad02ecb014d
 ms.date: 04/16/2018
 keywords: ["PsImpersonateClient function"]
 ms.keywords: PsImpersonateClient, PsImpersonateClient routine [Installable File System Drivers], ifsk.psimpersonateclient, ntifs/PsImpersonateClient, psref_57279501-1e5a-4113-93ea-a04825989e73.xml
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows XP and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,29 +49,29 @@ The <b>PsImpersonateClient</b> routine causes a server thread to impersonate a c
 
 ## -parameters
 
-### -param Thread 
+### -param Thread [in, out]
 
-[in, out]
+
 Pointer to the server thread that is to impersonate the client.
 
-### -param Token 
+### -param Token [in]
 
-[in]
+
 Pointer to the token to be assigned as the impersonation token. This token can be a primary token or an impersonation token. Set to <b>NULL</b> to end the impersonation.
 
-### -param CopyOnOpen 
+### -param CopyOnOpen [in]
 
-[in]
+
 Specifies whether the token can be opened directly. Set to <b>TRUE</b> to specify that the token cannot be opened directly. In this case, the token must be duplicated, and the duplicate token used instead. Set to <b>FALSE</b> to allow the token to be opened directly.
 
-### -param EffectiveOnly 
+### -param EffectiveOnly [in]
 
-[in]
+
 Set to <b>FALSE</b> to allow the server to enable groups and privileges that are currently disabled in the client security context, <b>TRUE</b> otherwise.
 
-### -param ImpersonationLevel 
+### -param ImpersonationLevel [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_security_impersonation_level">SECURITY_IMPERSONATION_LEVEL</a> value that specifies the impersonation level at which the server is to access the token.
 
 ## -returns
@@ -120,13 +119,21 @@ Otherwise, to end the impersonation and return the server thread to its original
 
 The <b>PsImpersonateClient</b> routine can fail to successfully return the server thread to the previous impersonation if the thread is already impersonating or there are job restrictions.
 
+The routine ensures whether client impersonation can actually occur by checking various conditions, including the following:
+
+* The token passed by the caller doesn't have an anonymous authentication ID
+* The process's token referenced from the server thread and the given token have equal security identifiers (SIDs)
+* Neither of the tokens are restricted
+
+If none of the conditions are met, the routine makes a copy of the existing token passed to the call and assigns the newly copied token as impersonation token albeit with limited security impersonation level; that is, the server thread can only obtain information about the client. If token copying is not possible, the routine fails with a NTSTATUS code.
+
 It is extremely unsafe to raise the privilege state of an untrusted user thread (take a user's thread and impersonate LocalSystem, for example). If an untrusted user thread had its privilege raised, the user could grab the thread token after it has been elevated and subvert the security of the entire system. 
 
 In cases where a higher privilege state is required, the task should be dispatched to a work queue where the task can be safely handled by system worker thread . This way no impersonation is necessary.
 
 The <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-seimpersonateclientex">SeImpersonateClientEx</a> routine can be used to cause a thread to impersonate a user.
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

@@ -4,7 +4,6 @@ title: _DXVAHDDDI_FRAME_FORMAT (d3dumddi.h)
 description: The DXVAHDDDI_FRAME_FORMAT enumeration contains values that identify the frame format.
 old-location: display\dxvahdddi_frame_format.htm
 tech.root: display
-ms.assetid: 82fded96-9321-47a8-8bdd-65c5a75951ac
 ms.date: 05/10/2018
 keywords: ["DXVAHDDDI_FRAME_FORMAT enumeration"]
 ms.keywords: DXVA2_Structs_7335a1ee-9d91-4764-aba3-5769351f7aa5.xml, DXVAHDDDI_FRAME_FORMAT, DXVAHDDDI_FRAME_FORMAT enumeration [Display Devices], DXVAHDDDI_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST, DXVAHDDDI_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST, DXVAHDDDI_FRAME_FORMAT_PROGRESSIVE, _DXVAHDDDI_FRAME_FORMAT, d3dumddi/DXVAHDDDI_FRAME_FORMAT, d3dumddi/DXVAHDDDI_FRAME_FORMAT_INTERLACED_BOTTOM_FIELD_FIRST, d3dumddi/DXVAHDDDI_FRAME_FORMAT_INTERLACED_TOP_FIELD_FIRST, d3dumddi/DXVAHDDDI_FRAME_FORMAT_PROGRESSIVE, display.dxvahdddi_frame_format
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVAHDDDI_FRAME_FORMAT
  - DXVAHDDDI_FRAME_FORMAT
 ---
 
@@ -71,3 +71,4 @@ The <a href="/windows-hardware/drivers/">FOURCC</a> format of the surface define
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvahdddi_stream_state_frame_format_data">DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA</a>
+

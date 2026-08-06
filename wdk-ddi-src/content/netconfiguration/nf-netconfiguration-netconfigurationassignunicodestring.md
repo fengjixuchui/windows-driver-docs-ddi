@@ -3,8 +3,7 @@ UID: NF:netconfiguration.NetConfigurationAssignUnicodeString
 title: NetConfigurationAssignUnicodeString function (netconfiguration.h)
 description: The NetConfigurationAssignUnicodeString function assigns a specified Unicode string to a specified value name in the registry.
 tech.root: netvista
-ms.assetid: 4b225e21-abf7-4b9b-91f3-349b4fbd60d2
-ms.date: 02/07/2018
+ms.date: 03/30/2022
 keywords: ["NetConfigurationAssignUnicodeString function"]
 ms.keywords: NetConfigurationAssignUnicodeString
 req.header: netconfiguration.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.21
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -49,15 +48,15 @@ The **NetConfigurationAssignUnicodeString** function assigns a specified Unicode
 
 ## -parameters
 
-### -param Configuration
+### -param Configuration [_In_]
 
 A handle to a NETCONFIGURATION object that represents an opened registry key.
 
-### -param ValueName
+### -param ValueName [_In_]
 
 A pointer to a [**UNICODE_STRING**](/windows/win32/api/ntdef/ns-ntdef-_unicode_string) structure that contains a value name.
 
-### -param Value
+### -param Value [_In_]
 
 A pointer to a [**UNICODE_STRING**](/windows/win32/api/ntdef/ns-ntdef-_unicode_string) structure that contains the string to be assigned to the value name that *ValueName* specifies.
 

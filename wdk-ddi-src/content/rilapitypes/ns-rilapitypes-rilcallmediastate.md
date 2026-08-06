@@ -1,11 +1,10 @@
 ---
 UID: NS:rilapitypes.RILCALLMEDIASTATE
 title: RILCALLMEDIASTATE (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILCALLMEDIASTATE structure for internal use only."
 old-location: netvista\rilcallmediastate.htm
 tech.root: netvista
-ms.assetid: 1fe4b90e-f89a-4ccc-bc92-b6f2edfb0b98
-ms.date: 05/02/2018
+ms.date: 12/10/2021
 keywords: ["RILCALLMEDIASTATE structure"]
 ms.keywords: "*LPRILCALLMEDIASTATE, RILCALLMEDIASTATE, RILCALLMEDIASTATE structure [Network Drivers Starting with Windows Vista], netvista.rilcallmediastate, ntddrilapitypes/RILCALLMEDIASTATE"
 req.header: rilapitypes.h
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILCALLMEDIASTATE
+ - LPRILCALLMEDIASTATE
 ---
 
 # RILCALLMEDIASTATE structure (rilapitypes.h)
@@ -58,24 +58,13 @@ This topic supports the Windows driver infrastructure and is not intended to be 
 
 ### -field mediaStateUnion
 
-### -field mediaStateUnion.stAudioState
-
-### -field mediaStateUnion.stVideoState
-
-### -field mediaStateUnion.dwCustomStateSpecific
-
-### -field mediaStateUnion.pad
 
 ### -field RILCALLMEDIASTATEUNION
 
-#### - dwCustomStateSpecific
+### -field RILCALLMEDIASTATEUNION.stAudioState
 
+### -field RILCALLMEDIASTATEUNION.stVideoState
 
-#### - pad
+### -field RILCALLMEDIASTATEUNION.dwCustomStateSpecific
 
-
-#### - stAudioState
-
-
-#### - stVideoState
-
+### -field RILCALLMEDIASTATEUNION.pad

@@ -4,7 +4,6 @@ title: _NDIS_RSS_SET_INDIRECTION_ENTRY (ntddndis.h)
 description: The NDIS_RSS_SET_INDIRECTION_ENTRY structure represents a command to set a single indirection table entry.
 old-location: netvista\ndis_rss_set_indirection_entry.htm
 tech.root: netvista
-ms.assetid: 4430E19F-C603-4C52-8FC8-C36197FD2996
 ms.date: 05/02/2018
 keywords: ["NDIS_RSS_SET_INDIRECTION_ENTRY structure"]
 ms.keywords: "*PNDIS_RSS_SET_INDIRECTION_ENTRY, NDIS_RSS_SET_INDIRECTION_ENTRY, NDIS_RSS_SET_INDIRECTION_ENTRY structure [Network Drivers Starting with Windows Vista], NDIS_RSS_SET_INDIRECTION_ENTRY_FLAG_DEFAULT_PROCESSOR, NDIS_RSS_SET_INDIRECTION_ENTRY_FLAG_PRIMARY_PROCESSOR, PNDIS_RSS_SET_INDIRECTION_ENTRY, PNDIS_RSS_SET_INDIRECTION_ENTRY structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RSS_SET_INDIRECTION_ENTRY, netvista.ndis_rss_set_indirection_entry, ntddndis/NDIS_RSS_SET_INDIRECTION_ENTRY, ntddndis/PNDIS_RSS_SET_INDIRECTION_ENTRY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_RSS_SET_INDIRECTION_ENTRY
+ - PNDIS_RSS_SET_INDIRECTION_ENTRY
  - NDIS_RSS_SET_INDIRECTION_ENTRY
 ---
 
@@ -149,3 +150,4 @@ If an error occurs with this move command, set **EntryStatus** to one of the fol
 
 
 <a href="/windows-hardware/drivers/network/synchronous-oid-request-interface-in-ndis-6-80">Synchronous OID request interface in NDIS 6.80</a>
+

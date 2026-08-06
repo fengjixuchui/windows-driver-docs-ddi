@@ -4,7 +4,6 @@ title: _DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA (d3dumddi.h)
 description: The DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA structure describes data that specifies the down-sampling of the output.
 old-location: display\dxvahdddi_blt_state_constriction_data.htm
 tech.root: display
-ms.assetid: 5bdb39cc-18b3-4a01-b733-f308273399a1
 ms.date: 05/10/2018
 keywords: ["DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA structure"]
 ms.keywords: DXVA2_Structs_4759e9c4-cde3-40d9-8f13-a7437ba73eac.xml, DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA, DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA structure [Display Devices], _DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA, d3dumddi/DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA, display.dxvahdddi_blt_state_constriction_data
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA
  - DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA
 ---
 
@@ -52,13 +52,13 @@ The DXVAHDDDI_BLT_STATE_CONSTRICTION_DATA structure describes data that specifie
 
 ## -struct-fields
 
-### -field Enable
+### -field Enable [in]
 
-[in] A Boolean value that specifies whether constriction is enabled. The default value is <b>FALSE</b>, which indicates that constriction is disabled.
+A Boolean value that specifies whether constriction is enabled. The default value is <b>FALSE</b>, which indicates that constriction is disabled.
 
-### -field Size
+### -field Size [in]
 
-[in] A <a href="/windows-hardware/customize/desktop/unattend/microsoft-windows-smbserver-size">SIZE</a> structure that specifies the sampling size to which the output image is reduced. <b>Size</b> should be from (1, 1) to (width, height) of the target rectangle. <b>Size</b> should be (0, 0) to represent no constriction. The default value is (1, 1).
+A <a href="/windows-hardware/customize/desktop/unattend/microsoft-windows-smbserver-size">SIZE</a> structure that specifies the sampling size to which the output image is reduced. <b>Size</b> should be from (1, 1) to (width, height) of the target rectangle. <b>Size</b> should be (0, 0) to represent no constriction. The default value is (1, 1).
 
 ## -remarks
 
@@ -87,3 +87,4 @@ If the supplied sampling size is larger than the size of the target rectangle, t
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_dxvahd_setvideoprocessbltstate">SetVideoProcessBltState</a>
+

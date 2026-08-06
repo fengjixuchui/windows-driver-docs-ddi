@@ -4,7 +4,6 @@ title: NDIS_SWITCH_REFERENCE_SWITCH_NIC (ndis.h)
 description: The ReferenceSwitchNic function increments the Hyper-V extensible switch reference counter for a network adapter that is connected to an extensible switch port.
 old-location: netvista\ReferenceSwitchNic.htm
 tech.root: netvista
-ms.assetid: 8F4C76FA-A386-4A3D-8C9F-3CFF69382702
 ms.date: 05/02/2018
 keywords: ["NDIS_SWITCH_REFERENCE_SWITCH_NIC callback function"]
 ms.keywords: NDIS_SWITCH_REFERENCE_SWITCH_NIC, NDIS_SWITCH_REFERENCE_SWITCH_NIC callback, ReferenceSwitchNic, ReferenceSwitchNic callback function [Network Drivers Starting with Windows Vista], ndis/ReferenceSwitchNic, netvista.ReferenceSwitchNic
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ReferenceSwitchNic
+ - NDIS_SWITCH_REFERENCE_SWITCH_NIC
 ---
 
 # NDIS_SWITCH_REFERENCE_SWITCH_NIC callback function
@@ -50,19 +49,19 @@ The <i>ReferenceSwitchNic</i> function increments the Hyper-V extensible switch 
 
 ## -parameters
 
-### -param NdisSwitchContext 
+### -param NdisSwitchContext [in]
 
-[in]
+
 An NDIS_SWITCH_CONTEXT value that contains the handle of the extensible switch module to which the Hyper-V extensible switch extension is attached. When the  extension calls <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfgetoptionalswitchhandlers">NdisFGetOptionalSwitchHandlers</a>,  this handle is returned through the <i>NdisSwitchContext</i> parameter.
 
-### -param SwitchPortId 
+### -param SwitchPortId [in]
 
-[in]
+
 An NDIS_SWITCH_PORT_ID value that contains the unique identifier of the extensible switch port  to which the virtual network adapter is connected.
 
-### -param SwitchNicIndex 
+### -param SwitchNicIndex [in]
 
-[in]
+
 An NDIS_SWITCH_NIC_INDEX value that specifies the index of the virtual network adapter for which the extensible switch reference counter is to be incremented.
 
 For more information on NDIS_SWITCH_NIC_INDEX values, see <a href="/windows-hardware/drivers/network/network-adapter-index-values">Network Adapter Index Values</a>.
@@ -131,3 +130,4 @@ The extension calls <i>ReferenceSwitchNic</i> after the network adapter connecti
 
 
 <a href="/windows-hardware/drivers/network/oid-switch-nic-request">OID_SWITCH_NIC_REQUEST</a>
+

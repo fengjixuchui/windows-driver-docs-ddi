@@ -4,7 +4,6 @@ title: PFND3DDDI_ALLOCATECB (d3dumddi.h)
 description: The pfnAllocateCb function allocates system or video memory.
 old-location: display\pfnallocatecb.htm
 tech.root: display
-ms.assetid: a61e6c6a-3992-429c-ad8c-5f1a61dc7b8b
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_ALLOCATECB callback function"]
 ms.keywords: D3Druntime_Functions_1339f95d-018f-4153-b5b8-6753c38babd7.xml, PFND3DDDI_ALLOCATECB, PFND3DDDI_ALLOCATECB callback, d3dumddi/pfnAllocateCb, display.pfnallocatecb, pfnAllocateCb, pfnAllocateCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnAllocateCb
-product:
- - Windows
+ - PFND3DDDI_ALLOCATECB
 ---
 
 # PFND3DDDI_ALLOCATECB callback function
@@ -52,11 +49,11 @@ The <b>pfnAllocateCb</b> function allocates system or video memory.
 
 ## -parameters
 
-### -param hDevice
+### -param hDevice [in]
 
-[in] A handle to the display device (graphics context).
+A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -191,3 +188,4 @@ The following code example shows how to allocate memory for a resource.
  
 
 [Direct3D Runtime Functions Called by the User-Mode Display Drivers](/windows-hardware/drivers/display/direct3d-runtime-functions-called-by-user-mode)
+

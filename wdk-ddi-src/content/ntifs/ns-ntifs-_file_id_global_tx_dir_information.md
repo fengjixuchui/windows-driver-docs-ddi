@@ -4,14 +4,13 @@ title: _FILE_ID_GLOBAL_TX_DIR_INFORMATION (ntifs.h)
 description: The FILE_ID_GLOBAL_TX_DIR_INFORMATION structure contains information about transactional visibility for the files in a directory.
 old-location: ifsk\file_id_global_tx_dir_information.htm
 tech.root: ifsk
-ms.assetid: 4c4a0458-8ab3-4ef0-b455-c7a70737f322
 ms.date: 04/16/2018
 keywords: ["FILE_ID_GLOBAL_TX_DIR_INFORMATION structure"]
 ms.keywords: "*PFILE_ID_GLOBAL_TX_DIR_INFORMATION, FILE_ID_GLOBAL_TX_DIR_INFORMATION, FILE_ID_GLOBAL_TX_DIR_INFORMATION structure [Installable File System Drivers], PFILE_ID_GLOBAL_TX_DIR_INFORMATION, PFILE_ID_GLOBAL_TX_DIR_INFORMATION structure pointer [Installable File System Drivers], _FILE_ID_GLOBAL_TX_DIR_INFORMATION, ifsk.file_id_global_tx_dir_information, ntifs/FILE_ID_GLOBAL_TX_DIR_INFORMATION, ntifs/PFILE_ID_GLOBAL_TX_DIR_INFORMATION"
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 7 and later versions of the Windows operating system.
+req.target-min-winverclnt: Windows 7
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntifs.h
 api_name:
+ - _FILE_ID_GLOBAL_TX_DIR_INFORMATION
+ - PFILE_ID_GLOBAL_TX_DIR_INFORMATION
  - FILE_ID_GLOBAL_TX_DIR_INFORMATION
 ---
 
@@ -190,3 +191,4 @@ The <b>FILE_ID_GLOBAL_TX_DIR_INFORMATION</b> structure can be implemented for fi
   
 
 If the FILE_ID_GLOBAL_TX_DIR_INFO_FLAG_WRITELOCKED flag is not set in <b>TxInfoFlags</b>, <b>LockingTransactionId</b> is ignored.
+

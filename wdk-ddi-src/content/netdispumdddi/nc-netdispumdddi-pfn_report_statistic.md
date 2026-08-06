@@ -4,7 +4,6 @@ title: PFN_REPORT_STATISTIC (netdispumdddi.h)
 description: Called by the user-mode display driver to report the statistics of the Miracast link to the operating system.The data type of this function is PFN_REPORT_STATISTIC.
 old-location: display\reportstatistic.htm
 tech.root: display
-ms.assetid: 13e1afa2-5552-468f-ac6b-3458dedd9b76
 ms.date: 05/10/2018
 keywords: ["PFN_REPORT_STATISTIC callback function"]
 ms.keywords: PFN_REPORT_STATISTIC, PFN_REPORT_STATISTIC callback, ReportStatistic, ReportStatistic callback function [Display Devices], display.reportstatistic, netdispumdddi/ReportStatistic
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Netdispumdddi.h
 api_name:
- - ReportStatistic
+ - PFN_REPORT_STATISTIC
 ---
 
 # PFN_REPORT_STATISTIC callback function
@@ -50,14 +49,14 @@ Called by the user-mode display driver to report the statistics of the Miracast 
 
 ## -parameters
 
-### -param hMiracastDeviceHandle 
+### -param hMiracastDeviceHandle [in]
 
-[in]
+
 A handle that represents a Miracast device. The Miracast user-mode driver previously obtained this handle as the <i>hMiracastDeviceHandle</i> parameter in a call to the <a href="/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_create_miracast_context">CreateMiracastContext</a> function.
 
-### -param pStatistics 
+### -param pStatistics [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/netdispumdddi/ns-netdispumdddi-miracast_statistic_data">MIRACAST_STATISTIC_DATA</a> structure that contains the statistics data.
 
 ## -remarks
@@ -82,3 +81,4 @@ For more info on how to use this function, see these topics:
 
 
 <a href="/windows-hardware/drivers/ddi/netdispumdddi/ns-netdispumdddi-miracast_statistic_data">MIRACAST_STATISTIC_DATA</a>
+

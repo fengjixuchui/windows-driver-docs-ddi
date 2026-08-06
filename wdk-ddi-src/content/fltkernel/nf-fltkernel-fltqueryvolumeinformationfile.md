@@ -4,7 +4,6 @@ title: FltQueryVolumeInformationFile function (fltkernel.h)
 description: FltQueryVolumeInformationFile retrieves volume information for a given file, directory, storage device, or volume.
 old-location: ifsk\fltqueryvolumeinformationfile.htm
 tech.root: ifsk
-ms.assetid: 3f93ce0a-f1f0-4b5b-aaf3-ce6698eb5055
 ms.date: 04/16/2018
 keywords: ["FltQueryVolumeInformationFile function"]
 ms.keywords: FileFsAttributeInformation, FileFsControlInformation, FileFsDeviceInformation, FileFsDriverPathInformation, FileFsFullSizeInformation, FileFsObjectIdInformation, FileFsSectorSizeInformation, FileFsSizeInformation, FileFsVolumeInformation, FltApiRef_p_to_z_b2a51db8-6931-46c6-84ba-eb29097ac89e.xml, FltQueryVolumeInformationFile, FltQueryVolumeInformationFile function [Installable File System Drivers], fltkernel/FltQueryVolumeInformationFile, ifsk.fltqueryvolumeinformationfile
@@ -50,29 +49,29 @@ api_name:
 
 ## -parameters
 
-### -param Instance 
+### -param Instance [in]
 
-[in]
+
 Opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>.
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 File object pointer for an open file, directory, storage device, or volume. This parameter is required and cannot be <b>NULL</b>.
 
-### -param FsInformation 
+### -param FsInformation [out]
 
-[out]
+
 Pointer to a caller-allocated buffer that receives information about the file. The <i>FsInformationClass</i> parameter specifies the type of information. This parameter is required and cannot be <b>NULL</b>.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Size, in bytes, of the <i>FsInformation</i> buffer.
 
-### -param FsInformationClass 
+### -param FsInformationClass [in]
 
-[in]
+
 Type of volume information to be returned. One of the following:
 
 <table>
@@ -172,9 +171,9 @@ Return a <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_sector_s
 </tr>
 </table>
 
-### -param LengthReturned 
+### -param LengthReturned [out, optional]
 
-[out, optional]
+
 Pointer to a caller-allocated variable that receives the size, in bytes, of the information returned in the <i>FsInformation</i> buffer. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

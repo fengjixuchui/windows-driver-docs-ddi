@@ -1,10 +1,9 @@
 ---
 UID: NI:ntddscsi.IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT
 title: IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT (ntddscsi.h)
-description: This I/O control code allows an application or kernel driver to send a SCSI command to a designated real LUN.
+description: Learn how this I/O control code allows an application or kernel driver to send a SCSI command to a designated real LUN.
 old-location: storage\ioctl_mpio_pass_through_path_direct.htm
 tech.root: storage
-ms.assetid: a14eb3a9-f2b6-4abc-8eaa-23bd4a87580e
 ms.date: 03/29/2018
 keywords: ["IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT IOCTL"]
 ms.keywords: IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT, IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT control, IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT control code [Storage Devices], k307_70c0c9a6-7d04-484e-9ff2-94a85f919834.xml, ntddscsi/IOCTL_MPIO_PASS_THROUGH_PATH_DIRECT, storage.ioctl_mpio_pass_through_path_direct
@@ -80,6 +79,8 @@ The request must specify the real LUN that is comprised by the pseudo LUN in ter
 </ul>
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

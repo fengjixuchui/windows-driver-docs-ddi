@@ -4,7 +4,6 @@ title: KsFilterCreateNode function (ks.h)
 description: The KsFilterCreateNode function creates a new topology node on the specified filter.
 old-location: stream\ksfiltercreatenode.htm
 tech.root: stream
-ms.assetid: 2a796bb9-7d55-47da-9a57-2829cd193e23
 ms.date: 04/23/2018
 keywords: ["KsFilterCreateNode function"]
 ms.keywords: KsFilterCreateNode, KsFilterCreateNode function [Streaming Media Devices], avfunc_9adc2406-964c-4f26-a155-67f37cceb0b4.xml, ks/KsFilterCreateNode, stream.ksfiltercreatenode
@@ -51,19 +50,19 @@ The<b> KsFilterCreateNode</b> function creates a new topology node on the specif
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter">KSFILTER</a> structure on which to create a new topology node.
 
-### -param NodeDescriptor 
+### -param NodeDescriptor [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksnode_descriptor">KSNODE_DESCRIPTOR</a> structure that describes the new node.
 
-### -param NodeID 
+### -param NodeID [out]
 
-[out]
+
 A pointer to a ULONG where AVStream places the ID of the new node.
 
 ## -returns

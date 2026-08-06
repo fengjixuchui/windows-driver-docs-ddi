@@ -4,7 +4,6 @@ title: WdfDeviceSetDeviceState function (wdfdevice.h)
 description: The WdfDeviceSetDeviceState method sets the device state for a specified device.
 old-location: wdf\wdfdevicesetdevicestate.htm
 tech.root: wdf
-ms.assetid: bee3c0e9-9196-4e9b-9b75-08883f452304
 ms.date: 02/26/2018
 keywords: ["WdfDeviceSetDeviceState function"]
 ms.keywords: DFDeviceObjectGeneralRef_41bd0604-a8fb-4df9-a1d2-f602d7ddcac4.xml, WdfDeviceSetDeviceState, WdfDeviceSetDeviceState method, kmdf.wdfdevicesetdevicestate, wdf.wdfdevicesetdevicestate, wdfdevice/WdfDeviceSetDeviceState
@@ -55,14 +54,14 @@ The <b>WdfDeviceSetDeviceState</b> method sets the device state for a specified 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param DeviceState 
+### -param DeviceState [in]
 
-[in]
+
 A pointer to a driver-allocated <a href="/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_state">WDF_DEVICE_STATE</a> structure that contains the device's state information.
 
 ## -remarks

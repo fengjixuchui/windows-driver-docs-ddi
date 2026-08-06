@@ -4,7 +4,6 @@ title: ExtDeviceMode function (winspool.h)
 description: The ExtDeviceMode function is provided only for compatibility with 16-bit applications.
 old-location: print\extdevicemode.htm
 tech.root: print
-ms.assetid: dade9d25-7143-4566-adc1-0c97cb508c07
 ms.date: 09/21/2020
 keywords: ["ExtDeviceMode function"]
 ms.keywords: ExtDeviceMode, ExtDeviceMode function [Print Devices], print.extdevicemode, spoolfnc_56c49c94-99f4-43b9-90eb-189041a1dd3a.xml, winspool/ExtDeviceMode
@@ -51,46 +50,46 @@ The **ExtDeviceMode** function retrieves or modifies printer initialization info
 
 ## -parameters
 
-### -param hWnd
+### -param hWnd [in, optional]
 
-[in, optional]
+
 
 Handle to the parent window for the printer-configuration property sheet.
 
-### -param hInst
+### -param hInst [in, optional]
 
-[in, optional]
+
 
 Not used. Handle to the module instance of the device driver.
 
-### -param pDevModeOutput
+### -param pDevModeOutput [in, out]
 
-[in, out]
+
 
 Pointer to the DEVMODE structure that receives the printer configuration data supplied in the buffer pointed to by the *pDevModeInput* parameter.
 
-### -param pDeviceName
+### -param pDeviceName [in, optional]
 
-[in, optional]
+
 Pointer to a NULL-terminated string that contains the name of the device for which the printer configuration property sheet is displayed.
 
-### -param pPort
+### -param pPort [in, optional]
 
-[in, optional]
+
 
 Pointer to a NULL-terminated string that contains the name of the port to which the device is connected, such as LPT1.
 
-### -param pDevModeInput
+### -param pDevModeInput [in, optional]
 
-[in, optional]
+
 
 Pointer to the DEVMODE structure that the operating system uses to initialize the property sheet fields.
 
 This parameter is used only if the DM_IN_BUFFER flag is set in the *fMode* parameter. If DM_IN_BUFFER is not set, the operating system uses the printer's default DEVMODE structure.
 
-### -param pProfile
+### -param pProfile [in, optional]
 
-[in, optional]
+
 
 Not used. Pointer to a NULL-terminated string that contains the name of the initialization file in which initialization information is recorded and read from.
 

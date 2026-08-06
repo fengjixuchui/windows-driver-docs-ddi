@@ -1,9 +1,8 @@
 ---
 UID: NC:d3dkmthk.PFND3DKMT_ENUMADAPTERS
 title: PFND3DKMT_ENUMADAPTERS (d3dkmthk.h)
-description: Enumerates all graphics adapters on the system.
+description: The PFND3DKMT_ENUMADAPTERS callback enumerates all graphics adapters on the system. The function returns STATUS_SUCCESS if the enumeration was successful.
 old-location: display\d3dkmtenumadapters.htm
-ms.assetid: 07c0aeac-0f82-492a-aa98-0ba5a962b9cf
 ms.date: 05/10/2018
 keywords: ["PFND3DKMT_ENUMADAPTERS callback function"]
 ms.keywords: D3DKMTEnumAdapters, D3DKMTEnumAdapters callback function [Display Devices], PFND3DKMT_ENUMADAPTERS, PFND3DKMT_ENUMADAPTERS callback, d3dkmthk/D3DKMTEnumAdapters, display.d3dkmtenumadapters
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
- - D3DKMTEnumAdapters
+ - PFND3DKMT_ENUMADAPTERS
 ---
 
 # PFND3DKMT_ENUMADAPTERS callback function
@@ -50,7 +49,7 @@ Enumerates all graphics adapters on the system.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pEnumAdapters* [in, out]
 
@@ -74,3 +73,4 @@ The operating system enumerates graphics adapters in the same sequence as their 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_enumadapters">D3DKMT_ENUMADAPTERS</a>
+

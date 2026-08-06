@@ -4,7 +4,6 @@ title: PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTFROMCPUCB (d3dumddi.h)
 description: pfnSignalSynchronizationObjectFromCpuCb enables a driver to signal a monitored fence.
 old-location: display\pfnsignalsynchronizationobjectfromcpucb.htm
 tech.root: display
-ms.assetid: E6FD5215-09CE-4DC8-B5AB-F65E68E2A884
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTFROMCPUCB callback function"]
 ms.keywords: PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTFROMCPUCB, PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTFROMCPUCB callback, d3dumddi/pfnSignalSynchronizationObjectFromCpuCb, display.pfnsignalsynchronizationobjectfromcpucb, pfnSignalSynchronizationObjectFromCpuCb, pfnSignalSynchronizationObjectFromCpuCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnSignalSynchronizationObjectFromCpuCb
-product:
- - Windows
+ - PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTFROMCPUCB
 ---
 
 # PFND3DDDI_SIGNALSYNCHRONIZATIONOBJECTFROMCPUCB callback function
@@ -56,7 +53,7 @@ product:
 
 A handle to the display device.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -75,3 +72,4 @@ However, the caller cannot assume that the signal operation will be completed up
 <div class="alert"><b>Note</b>  A signal from a graphics processing unit (GPU) call is not provided. Instead, a driver can signal a new fence value by inserting a GPU write command for <b>FenceValueGPUVirtualAddress</b> into a command buffer.
 </div>
 <div> </div>
+

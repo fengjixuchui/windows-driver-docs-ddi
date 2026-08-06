@@ -4,7 +4,6 @@ title: _PRINTPROVIDOR (winsplp.h)
 description: The PRINTPROVIDOR structure is used as a parameter to a print provider's InitializePrintProvidor function.
 old-location: print\printprovidor.htm
 tech.root: print
-ms.assetid: c030cb9d-23c0-4d0e-970f-f447e9af7528
 ms.date: 04/03/2019
 keywords: ["PRINTPROVIDOR structure"]
 ms.keywords: "*LPPRINTPROVIDOR, LPPRINTPROVIDOR, LPPRINTPROVIDOR structure pointer [Print Devices], PRINTPROVIDOR, PRINTPROVIDOR structure [Print Devices], _PRINTPROVIDOR, print.printprovidor, spoolfnc_4fb8242e-e0a0-47e5-b01f-2a20932d4d84.xml, winsplp/LPPRINTPROVIDOR, winsplp/PRINTPROVIDOR"
@@ -43,11 +42,10 @@ api_type:
 api_location:
  - winsplp.h
 api_name:
+ - _PRINTPROVIDOR
+ - LPPRINTPROVIDOR
  - PRINTPROVIDOR
 ---
-
-# _PRINTPROVIDOR structure
-
 
 ## -description
 
@@ -473,6 +471,38 @@ For internal use only. Must be NULL.
 For internal use only. Must be NULL.
 
 ### -field fpRegeneratePrintDeviceCapabilities
+
+For internal use only. Must be NULL.
+
+### -field fpInstallPrinterDriverPackageFromConnection
+
+For internal use only. Must be NULL.
+
+### -field fpPrintSupportOperation
+
+For internal use only. Must be NULL.
+
+### -field fpIppCreateJobOnPrinter
+
+For internal use only. Must be NULL.
+
+### -field fpIppGetJobAttributes
+
+For internal use only. Must be NULL.
+
+### -field fpIppSetJobAttributes
+
+For internal use only. Must be NULL.
+
+### -field fpIppGetPrinterAttributes
+
+For internal use only. Must be NULL.
+
+### -field fpIppSetPrinterAttributes
+
+For internal use only. Must be NULL.
+
+### -field fpIppCreateJobOnPrinterWithAttributes
 
 For internal use only. Must be NULL.
 

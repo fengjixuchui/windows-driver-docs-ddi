@@ -4,7 +4,6 @@ title: IMiniportWaveRTStreamNotification::RegisterNotificationEvent (portcls.h)
 description: The RegisterNotificationEvent method registers an event to be notified for DMA-driven event notification.
 old-location: audio\iminiportwavertstreamnotification_registernotificationevent.htm
 tech.root: audio
-ms.assetid: 269eccd8-e477-4082-930b-1f4b3e3706b9
 ms.date: 05/08/2018
 keywords: ["IMiniportWaveRTStreamNotification::RegisterNotificationEvent"]
 ms.keywords: IMiniportWaveRTStreamNotification interface [Audio Devices],RegisterNotificationEvent method, IMiniportWaveRTStreamNotification.RegisterNotificationEvent, IMiniportWaveRTStreamNotification::RegisterNotificationEvent, RegisterNotificationEvent, RegisterNotificationEvent method [Audio Devices], RegisterNotificationEvent method [Audio Devices],IMiniportWaveRTStreamNotification interface, audio.iminiportwavertstreamnotification_registernotificationevent, audmp-routines_82613ca5-1ae2-449d-8883-2d6ee50aecf7.xml, portcls/IMiniportWaveRTStreamNotification::RegisterNotificationEvent
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Passive level.
+req.irql: PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWaveRTStreamNotification.RegisterNotificationEvent
+ - IMiniportWaveRTStreamNotification::RegisterNotificationEvent
 ---
 
 # IMiniportWaveRTStreamNotification::RegisterNotificationEvent
@@ -50,9 +49,9 @@ The <code>RegisterNotificationEvent</code> method registers an event to be notif
 
 ## -parameters
 
-### -param NotificationEvent 
+### -param NotificationEvent [in]
 
-[in]
+
 A pointer to a kernel event (PKEVENT) to be registered for notification as DMA progresses.
 
 ## -returns
@@ -78,3 +77,4 @@ For more information about the behavior of the KSPROPERTY_RTAUDIO_REGISTER_NOTIF
 
 
 <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksrtaudio_notification_event_property">KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY</a>
+

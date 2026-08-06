@@ -4,7 +4,6 @@ title: _SERIAL_CHARS (ntddser.h)
 description: The SERIAL_CHARS structure specifies the special characters that the serial controller driver uses for handshake flow control.
 old-location: serports\serial_chars.htm
 tech.root: serports
-ms.assetid: D9146B9F-5AE4-436B-B223-0A61400FE9AC
 ms.date: 04/23/2018
 keywords: ["SERIAL_CHARS structure"]
 ms.keywords: "*PSERIAL_CHARS, PSERIAL_CHARS, PSERIAL_CHARS structure pointer [Serial Ports], SERIAL_CHARS, SERIAL_CHARS structure [Serial Ports], _SERIAL_CHARS, ntddser/PSERIAL_CHARS, ntddser/SERIAL_CHARS, serports.serial_chars"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddser.h
 api_name:
+ - _SERIAL_CHARS
+ - PSERIAL_CHARS
  - SERIAL_CHARS
 ---
 
@@ -99,3 +100,4 @@ An <b>IOCTL_SERIAL_SET_CHARS</b> request to set the XON and XOFF characters to t
 
 
 <a href="/windows-hardware/drivers/ddi/ntddser/ni-ntddser-ioctl_serial_wait_on_mask">IOCTL_SERIAL_WAIT_ON_MASK</a>
+

@@ -4,7 +4,6 @@ title: VideoPortWritePortBufferUshort function (video.h)
 description: The VideoPortWritePortBufferUshort function writes a number of USHORT values to a mapped I/O port.
 old-location: display\videoportwriteportbufferushort.htm
 tech.root: display
-ms.assetid: d9be3108-27fe-4899-bf23-0f51d9309888
 ms.date: 05/10/2018
 keywords: ["VideoPortWritePortBufferUshort function"]
 ms.keywords: VideoPortWritePortBufferUshort, VideoPortWritePortBufferUshort function [Display Devices], VideoPort_Functions_cf88884e-2891-4e82-b7e0-afaa605a2d65.xml, display.videoportwriteportbufferushort, video/VideoPortWritePortBufferUshort
@@ -54,9 +53,9 @@ The <b>VideoPortWritePortBufferUshort</b> function writes a number of USHORT val
 
 Pointer to the port. The given <i>Port</i> must be in a mapped I/O-space range returned by <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportgetdevicebase">VideoPortGetDeviceBase</a>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to a buffer containing the USHORT values to be written.
 
 ### -param Count

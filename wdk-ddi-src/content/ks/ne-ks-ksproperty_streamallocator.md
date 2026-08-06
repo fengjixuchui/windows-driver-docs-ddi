@@ -1,10 +1,9 @@
 ---
-UID: NE:ks.__unnamed_enum_21
+UID: NE:ks.KSPROPERTY_STREAMALLOCATOR
 title: KSPROPERTY_STREAMALLOCATOR (ks.h)
-description: 
+description: "Learn more about: KSPROPERTY_STREAMALLOCATOR enumeration"
 old-location: stream\ksproperty_streamallocator.htm
 tech.root: stream
-ms.assetid: 4731864F-01B3-42CB-A1D4-C82FDD1DCBBE
 ms.date: 04/23/2018
 keywords: ["KSPROPERTY_STREAMALLOCATOR enumeration"]
 ms.keywords: KSPROPERTY_STREAMALLOCATOR, KSPROPERTY_STREAMALLOCATOR enumeration [Streaming Media Devices], KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE, KSPROPERTY_STREAMALLOCATOR_STATUS, ks/KSPROPERTY_STREAMALLOCATOR, ks/KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE, ks/KSPROPERTY_STREAMALLOCATOR_STATUS, stream.ksproperty_streamallocator

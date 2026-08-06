@@ -4,7 +4,6 @@ title: _NDIS_MINIPORT_RESTART_PARAMETERS (ndis.h)
 description: The NDIS_MINIPORT_RESTART_PARAMETERS structure defines the restart parameters for a miniport adapter.
 old-location: netvista\ndis_miniport_restart_parameters.htm
 tech.root: netvista
-ms.assetid: 4e005245-ed98-47fd-aaae-421940edf2dc
 ms.date: 05/02/2018
 keywords: ["NDIS_MINIPORT_RESTART_PARAMETERS structure"]
 ms.keywords: "*PNDIS_MINIPORT_RESTART_PARAMETERS, NDIS_MINIPORT_RESTART_PARAMETERS, NDIS_MINIPORT_RESTART_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_MINIPORT_RESTART_PARAMETERS, PNDIS_MINIPORT_RESTART_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_MINIPORT_RESTART_PARAMETERS, miniport_structures_ref_618076bd-9d88-4104-89fd-c2ccddf32b02.xml, ndis/NDIS_MINIPORT_RESTART_PARAMETERS, ndis/PNDIS_MINIPORT_RESTART_PARAMETERS, netvista.ndis_miniport_restart_parameters"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_MINIPORT_RESTART_PARAMETERS
+ - PNDIS_MINIPORT_RESTART_PARAMETERS
  - NDIS_MINIPORT_RESTART_PARAMETERS
 ---
 
@@ -58,7 +59,7 @@ The NDIS_MINIPORT_RESTART_PARAMETERS structure defines the restart parameters fo
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_MINIPORT_RESTART_PARAMETERS structure. NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specified to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -87,8 +88,9 @@ To define miniport adapter restart parameters, NDIS passes a pointer to an
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_restart_attributes">NDIS_RESTART_ATTRIBUTES</a>
+

@@ -4,7 +4,6 @@ title: KsAcquireResetValue function (ks.h)
 description: The KsAcquireResetValue function retrieves the current reset state from an IOCTL_KS_RESET_STATE IRP.
 old-location: stream\ksacquireresetvalue.htm
 tech.root: stream
-ms.assetid: 80a990e3-3637-4837-8800-42d5848e01cf
 ms.date: 04/23/2018
 keywords: ["KsAcquireResetValue function"]
 ms.keywords: KsAcquireResetValue, KsAcquireResetValue function [Streaming Media Devices], ks/KsAcquireResetValue, ksfunc_fbfd5f64-6842-4559-9829-05797fda4fa2.xml, stream.ksacquireresetvalue
@@ -51,14 +50,14 @@ The <b>KsAcquireResetValue </b>function retrieves the current reset state from a
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Points to the IRP from which to retrieve the reset state.
 
-### -param ResetValue 
+### -param ResetValue [out]
 
-[out]
+
 Points to a caller-allocated buffer, that on successful completion contains the reset value (KSRESET_BEGIN, KSRESET_END) associated with the IRP.
 
 ## -returns

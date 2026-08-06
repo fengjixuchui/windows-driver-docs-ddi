@@ -4,8 +4,7 @@ title: NdisReadConfiguration function (ndis.h)
 description: The NdisReadConfiguration function returns the value of a named entry of the specified type from the registry, given the handle to an open registry key.
 old-location: netvista\ndisreadconfiguration.htm
 tech.root: netvista
-ms.assetid: 74560229-9e97-40b9-961c-6bf726586e27
-ms.date: 05/02/2018
+ms.date: 07/23/2025
 keywords: ["NdisReadConfiguration function"]
 ms.keywords: NDIS_STATUS_FAILURE, NDIS_STATUS_RESOURCES, NDIS_STATUS_SUCCESS, NdisReadConfiguration, NdisReadConfiguration function [Network Drivers Starting with Windows Vista], ndis/NdisReadConfiguration, ndis_configuration_ref_fb5d2879-b30e-470b-aa07-f5f5286973bf.xml, netvista.ndisreadconfiguration
 req.header: ndis.h
@@ -54,9 +53,9 @@ The
 
 ## -parameters
 
-### -param Status 
+### -param Status [out]
 
-[out]
+
 A pointer to a caller-supplied variable in which this function returns the status of the call as
      one of the following values.
 
@@ -100,20 +99,20 @@ The requested information could not be found under the opened registry key desig
 </tr>
 </table>
 
-### -param ParameterValue 
+### -param ParameterValue [out]
 
-[out]
+
 A pointer to a memory location where NDIS supplies a pointer to an 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_configuration_parameter">
+     <a href="/windows-hardware/drivers/ddi/configurationparameter/ns-configurationparameter-ndis_configuration_parameter">
      NDIS_CONFIGURATION_PARAMETER</a> structure if the call to 
      <b>NdisReadConfiguration</b> is
      successful. NDIS allocates memory for the 
      <b>
      NDIS_CONFIGURATION_PARAMETER</b> structure.
 
-### -param ConfigurationHandle 
+### -param ConfigurationHandle [in]
 
-[in]
+
 The handle to a registry key that was returned by the 
      <a href="/windows-hardware/drivers/devtest/ndis-ndisopenconfigurationex">NdisOpenConfigurationEx</a>, 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenconfigurationkeybyindex">
@@ -121,9 +120,9 @@ The handle to a registry key that was returned by the
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenconfigurationkeybyname">
      NdisOpenConfigurationKeyByName</a> function.
 
-### -param Keyword 
+### -param Keyword [in]
 
-[in]
+
 A pointer to a caller-supplied NDIS_STRING type describing a counted string, in the system-default
      character set, specifying the name of the entry under the open registry key for which to return the
      value. 
@@ -173,11 +172,11 @@ NdisVersion
 </tr>
 </table>
 
-### -param ParameterType 
+### -param ParameterType [in]
 
-[in]
+
 The type of the value entry that is specified as one of the 
-     <a href="/windows-hardware/drivers/ddi/ndis/ne-ndis-_ndis_parameter_type">NDIS_PARAMETER_TYPE</a> enumeration values.
+     <a href="/windows-hardware/drivers/ddi/configurationparameter/ne-configurationparameter-ndis_parameter_type">NDIS_PARAMETER_TYPE</a> enumeration values.
      This parameter is ignored in Windows NT and later versions.
 
 ## -remarks
@@ -205,7 +204,7 @@ Each miniport driver also has associated value entries in the registry. The valu
 NdisReadConfiguration buffers and copies the caller-supplied string at 
     <i>Keyword</i> and releases the storage it allocates for this copy before it returns control to the
     caller. The memory it allocates for the 
-    <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_configuration_parameter">
+    <a href="/windows-hardware/drivers/ddi/configurationparameter/ns-configurationparameter-ndis_configuration_parameter">
     NDIS_CONFIGURATION_PARAMETER</a> structure is freed when the driver releases the ConfigurationHandle
     with the 
     <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscloseconfiguration">NdisCloseConfiguration</a> function.
@@ -229,11 +228,11 @@ For more information about setup and installation files, see
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_configuration_parameter">NDIS_CONFIGURATION_PARAMETER</a>
+<a href="/windows-hardware/drivers/ddi/configurationparameter/ns-configurationparameter-ndis_configuration_parameter">NDIS_CONFIGURATION_PARAMETER</a>
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ne-ndis-_ndis_parameter_type">NDIS_PARAMETER_TYPE</a>
+<a href="/windows-hardware/drivers/ddi/configurationparameter/ne-configurationparameter-ndis_parameter_type">NDIS_PARAMETER_TYPE</a>
 
 
 

@@ -4,7 +4,6 @@ title: ClfsLsnLess function (wdm.h)
 description: The ClfsLsnLess routine determines whether one LSN is less than another LSN. The two LSNs must be from the same stream.
 old-location: kernel\clfslsnless.htm
 tech.root: kernel
-ms.assetid: fbdf6e86-35a1-48a8-966a-0e5472466da2
 ms.date: 04/30/2018
 keywords: ["ClfsLsnLess function"]
 ms.keywords: ClfsLsnLess, ClfsLsnLess routine [Kernel-Mode Driver Architecture], Clfs_5e0196f1-8244-4cf9-aa36-7359e52ff43b.xml, kernel.clfslsnless, wdm/ClfsLsnLess
@@ -51,14 +50,14 @@ The <b>ClfsLsnLess</b> routine determines whether one LSN is less than another L
 
 ## -parameters
 
-### -param plsn1 
+### -param plsn1 [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_lsn">CLFS_LSN</a> structure that supplies one of the LSNs to be compared.
 
-### -param plsn2 
+### -param plsn2 [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_lsn">CLFS_LSN</a> structure that supplies the other LSN to be compared.
 
 ## -returns

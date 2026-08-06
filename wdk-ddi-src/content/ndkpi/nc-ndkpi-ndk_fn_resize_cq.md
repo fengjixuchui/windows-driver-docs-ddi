@@ -4,7 +4,6 @@ title: NDK_FN_RESIZE_CQ (ndkpi.h)
 description: The NdkResizeCq (NDK_FN_RESIZE_CQ) function changes the size of an NDK completion queue (CQ).
 old-location: netvista\ndk_fn_resize_cq.htm
 tech.root: netvista
-ms.assetid: DFAEAA42-B1B5-43AA-A573-8434FAF3B446
 ms.date: 05/02/2018
 keywords: ["NDK_FN_RESIZE_CQ callback function"]
 ms.keywords: NDK_FN_RESIZE_CQ, NDK_FN_RESIZE_CQ callback, NdkResizeCq, NdkResizeCq callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkResizeCq, netvista.ndk_fn_resize_cq
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkResizeCq
+ - NDK_FN_RESIZE_CQ
 ---
 
 # NDK_FN_RESIZE_CQ callback function
@@ -50,26 +49,26 @@ The <i>NdkResizeCq</i> (<i>NDK_FN_RESIZE_CQ</i>) function changes the size of an
 
 ## -parameters
 
-### -param pNdkCq 
+### -param pNdkCq [in]
 
-[in]
+
 
 A pointer to an NDK completion queue (CQ) object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_cq">NDK_CQ</a>).
 
-### -param CqDepth 
+### -param CqDepth [in]
 
-[in]
+
 
 The new number of completion entries that the CQ can hold. The CQ size must be less than or equal to the value that is specified in the <b>MaxCqDepth</b> member in the <a href="/windows/win32/api/ndkinfo/ns-ndkinfo-ndk_adapter_info">NDK_ADAPTER_INFO</a> structure.
 
-### -param RequestCompletion 
+### -param RequestCompletion [in]
 
-[in]
+
 A pointer to an <i>NdkRequestCompletion</i> (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_request_completion">NDK_FN_REQUEST_COMPLETION</a>) function.
 
-### -param RequestContext 
+### -param RequestContext [in, optional]
 
-[in, optional]
+
 A context value to pass to the <i>Context</i> parameter of the  callback function that is specified in the <i>RequestCompletion</i> parameter.
 
 ## -returns
@@ -165,3 +164,4 @@ An error occurred.
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_request_completion">NDK_FN_REQUEST_COMPLETION</a>
+

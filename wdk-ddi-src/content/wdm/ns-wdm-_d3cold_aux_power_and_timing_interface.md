@@ -2,7 +2,7 @@
 UID: NS:wdm._D3COLD_AUX_POWER_AND_TIMING_INTERFACE
 title: _D3COLD_AUX_POWER_AND_TIMING_INTERFACE (wdm.h)
 description: Allows device drivers to negotiate a higher auxiliary power for their PCI devices while in D3Cold state.
-ms.assetid: a69dbe9e-ea7d-4b71-8fa8-eb92abb3447b
+tech.root: kernel
 ms.date: 10/19/2018
 keywords: ["D3COLD_AUX_POWER_AND_TIMING_INTERFACE structure"]
 ms.keywords: _D3COLD_AUX_POWER_AND_TIMING_INTERFACE, *PD3COLD_AUX_POWER_AND_TIMING_INTERFACE, D3COLD_AUX_POWER_AND_TIMING_INTERFACE,
@@ -35,6 +35,8 @@ api_location:
  - wdm.h
 api_name:
  - _D3COLD_AUX_POWER_AND_TIMING_INTERFACE
+ - PD3COLD_AUX_POWER_AND_TIMING_INTERFACE
+ - D3COLD_AUX_POWER_AND_TIMING_INTERFACE
 ---
 
 # _D3COLD_AUX_POWER_AND_TIMING_INTERFACE structure
@@ -97,3 +99,4 @@ All PCIe ports that support the [_DSM functions for Runtime Device Power Managem
 [_D3COLD_REQUEST_PERST_DELAY](nc-wdm-d3cold_request_perst_delay.md)
 
 [Identifying PCIe ports supporting D3_COLD_AUX_POWER ECN Interface](/windows-hardware/drivers/pci/dsd-for-pcie-root-ports#identifying-pcie-ports-supporting-d3_cold_aux_power-ecn-interface)
+

@@ -4,7 +4,6 @@ title: _WHEA_GENERIC_ERROR (ntddk.h)
 description: The WHEA_GENERIC_ERROR structure describes error status data for a generic error source.
 old-location: whea\whea_generic_error.htm
 tech.root: whea
-ms.assetid: 7d624645-0199-4376-b84a-83d7da3ba981
 ms.date: 02/20/2018
 keywords: ["WHEA_GENERIC_ERROR structure"]
 ms.keywords: "*PWHEA_GENERIC_ERROR, PWHEA_GENERIC_ERROR, PWHEA_GENERIC_ERROR structure pointer [WHEA Drivers and Applications], WHEA_GENERIC_ERROR, WHEA_GENERIC_ERROR structure [WHEA Drivers and Applications], _WHEA_GENERIC_ERROR, ntddk/PWHEA_GENERIC_ERROR, ntddk/WHEA_GENERIC_ERROR, whea.whea_generic_error, whearef_60117ecc-4c3f-438f-aba2-cd2d4268df27.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_GENERIC_ERROR
+ - PWHEA_GENERIC_ERROR
  - WHEA_GENERIC_ERROR
 ---
 
@@ -99,3 +100,4 @@ A WHEA_GENERIC_ERROR structure is included in the <b>RawData</b> member of a <a 
 
 
 <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_generic_error_descriptor">WHEA_GENERIC_ERROR_DESCRIPTOR</a>
+

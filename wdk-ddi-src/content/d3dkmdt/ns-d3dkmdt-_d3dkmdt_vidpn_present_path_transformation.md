@@ -4,14 +4,13 @@ title: _D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION (d3dkmdt.h)
 description: The D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION structure contains information about the transformations (for example, rotation, scaling, centering) that are pinned and the transformations that are supported for a path in a video present network (VIDPN).
 old-location: display\d3dkmdt_vidpn_present_path_transformation.htm
 tech.root: display
-ms.assetid: 7b2370c8-ea8a-4719-b88a-2401dbafb64c
 ms.date: 05/10/2018
 keywords: ["D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION structure"]
 ms.keywords: D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION, D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION structure [Display Devices], DmStructs_3c1dd0fd-471f-48e0-9df5-003f98237ac2.xml, _D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION, d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION, display.d3dkmdt_vidpn_present_path_transformation
 req.header: d3dkmdt.h
-req.include-header: D3dkmdt.h
+req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmdt.h
 api_name:
+ - _D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION
  - D3DKMDT_VIDPN_PRESENT_PATH_TRANSFORMATION
 ---
 
@@ -106,3 +106,4 @@ If <b>D3DKMDT_VPPS_ASPECTRATIOCENTEREDMAX</b> or <b>D3DKMDT_VPPS_CUSTOM</b> valu
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a>
+

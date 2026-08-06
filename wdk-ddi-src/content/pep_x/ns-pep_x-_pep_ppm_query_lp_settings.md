@@ -4,7 +4,6 @@ title: _PEP_PPM_QUERY_LP_SETTINGS (pep_x.h)
 description: The PEP_PPM_QUERY_LP_SETTINGS structure contains a kernel handle to the registry key that contains the power optimization settings that the platform extension plug-in (PEP) has defined for each power scenario.
 old-location: kernel\pep_ppm_query_lp_settings.htm
 tech.root: kernel
-ms.assetid: 69A8792B-954E-49AF-A306-25B94183E58A
 ms.date: 04/30/2018
 keywords: ["PEP_PPM_QUERY_LP_SETTINGS structure"]
 ms.keywords: "*PPEP_PPM_QUERY_LP_SETTINGS, PEP_PPM_QUERY_LP_SETTINGS, PEP_PPM_QUERY_LP_SETTINGS structure [Kernel-Mode Driver Architecture], PPEP_PPM_QUERY_LP_SETTINGS, PPEP_PPM_QUERY_LP_SETTINGS structure pointer [Kernel-Mode Driver Architecture], _PEP_PPM_QUERY_LP_SETTINGS, kernel.pep_ppm_query_lp_settings, pep_x/PEP_PPM_QUERY_LP_SETTINGS, pep_x/PPEP_PPM_QUERY_LP_SETTINGS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pep_x.h
 api_name:
+ - _PEP_PPM_QUERY_LP_SETTINGS
+ - PPEP_PPM_QUERY_LP_SETTINGS
  - PEP_PPM_QUERY_LP_SETTINGS
 ---
 
@@ -54,9 +55,9 @@ The <b>PEP_PPM_QUERY_LP_SETTINGS</b> structure contains a kernel handle to the r
 
 ## -struct-fields
 
-### -field RegistryRoot
+### -field RegistryRoot [out]
 
-[out] The kernel handle to the registry root that contains the settings for a platform power scenario. For more information, see Remarks.
+The kernel handle to the registry root that contains the settings for a platform power scenario. For more information, see Remarks.
 
 ## -remarks
 
@@ -67,3 +68,4 @@ The PEP can provide settings for certain key power scenarios such as full-screen
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/pep_x/ns-pep_x-_pep_ppm_query_lp_settings">PEP_NOTIFY_PPM_QUERY_LP_SETTINGS</a>
+

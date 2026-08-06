@@ -4,7 +4,6 @@ title: KeTestSpinLock function (wdm.h)
 description: The KeTestSpinLock routine tests for the availability of a spin lock.
 old-location: kernel\ketestspinlock.htm
 tech.root: kernel
-ms.assetid: 5386349c-b4b8-43db-8f66-70dc7e71345e
 ms.date: 04/30/2018
 keywords: ["KeTestSpinLock function"]
 ms.keywords: KeTestSpinLock, KeTestSpinLock routine [Kernel-Mode Driver Architecture], k105_99f18fd9-0242-4939-86ab-016236f9adcb.xml, kernel.ketestspinlock, wdm/KeTestSpinLock
@@ -50,9 +49,9 @@ The <b>KeTestSpinLock</b> routine tests for the availability of a spin lock.
 
 ## -parameters
 
-### -param SpinLock 
+### -param SpinLock [in]
 
-[in]
+
 A pointer to a spin lock. The spin lock must have been initialized by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializespinlock">KeInitializeSpinLock</a>.
 
 ## -returns

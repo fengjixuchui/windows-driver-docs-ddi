@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_VIDPNSOURCEMODESET_GETNUMMODES
 title: DXGKDDI_VIDPNSOURCEMODESET_GETNUMMODES (d3dkmddi.h)
 description: The pfnGetNumModes function returns the number of source modes in a specified VidPN source mode set.
 old-location: display\dxgk_vidpnsourcemodeset_interface_pfngetnummodes.htm
-ms.assetid: abdc053c-45da-4af3-84c1-7eeb4a2856cb
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_VIDPNSOURCEMODESET_GETNUMMODES callback function"]
 ms.keywords: DXGKDDI_VIDPNSOURCEMODESET_GETNUMMODES, DXGKDDI_VIDPNSOURCEMODESET_GETNUMMODES callback, VidPnFunctions_e2cf0efc-e1a3-4515-b539-9c475877dd78.xml, d3dkmddi/pfnGetNumModes, display.dxgk_vidpnsourcemodeset_interface_pfngetnummodes, pfnGetNumModes, pfnGetNumModes callback function [Display Devices]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - pfnGetNumModes
-product:
- - Windows
+ - DXGKDDI_VIDPNSOURCEMODESET_GETNUMMODES
 ---
 
 # DXGKDDI_VIDPNSOURCEMODESET_GETNUMMODES callback function
@@ -52,13 +49,13 @@ The <b>pfnGetNumModes</b> function returns the number of source modes in a speci
 
 ## -parameters
 
-### -param hVidPnSourceModeSet
+### -param hVidPnSourceModeSet [in]
 
-[in] A handle to a VidPN source mode set object. The display miniport driver previously obtained this handle by calling the <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_acquiresourcemodeset">pfnAcquireSourceModeSet</a> function of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpn_interface">DXGK_VIDPN_INTERFACE</a> interface.
+A handle to a VidPN source mode set object. The display miniport driver previously obtained this handle by calling the <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_acquiresourcemodeset">pfnAcquireSourceModeSet</a> function of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpn_interface">DXGK_VIDPN_INTERFACE</a> interface.
 
-### -param pNumSourceModes
+### -param pNumSourceModes [out]
 
-[out] A pointer to a SIZE_T-typed variable that receives the number of source modes in the set.
+A pointer to a SIZE_T-typed variable that receives the number of source modes in the set.
 
 ## -returns
 
@@ -80,3 +77,4 @@ The D3DKMDT_HVIDPNSOURCEMODESET data type is defined in <i>D3dkmdt.h</i>.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_acquirenextmodeinfo">pfnAcquireNextModeInfo</a>
+

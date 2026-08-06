@@ -4,14 +4,13 @@ title: FsRtlIncrementCcFastMdlReadWait function (ntifs.h)
 description: The FsRtlIncrementCcFastMdlReadWait routine increments the cache manager's CcFastMdlReadWait performance counter member in a processor control block (PRCB) object.
 old-location: ifsk\fsrtlincrementccfastmdlreadwait.htm
 tech.root: ifsk
-ms.assetid: a3a811dc-1dbf-4656-b7ec-bad818f6d1f1
 ms.date: 04/16/2018
 keywords: ["FsRtlIncrementCcFastMdlReadWait function"]
 ms.keywords: FsRtlIncrementCcFastMdlReadWait, FsRtlIncrementCcFastMdlReadWait routine [Installable File System Drivers], fsrtlref_6ab13976-a131-41bf-970c-f2a554d87d92.xml, ifsk.fsrtlincrementccfastmdlreadwait, ntifs/FsRtlIncrementCcFastMdlReadWait
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating system.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 

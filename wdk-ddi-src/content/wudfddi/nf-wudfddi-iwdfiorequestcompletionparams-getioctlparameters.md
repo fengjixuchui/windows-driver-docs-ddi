@@ -4,7 +4,6 @@ title: IWDFIoRequestCompletionParams::GetIoctlParameters (wudfddi.h)
 description: The GetIoctlParameters method retrieves parameters that are associated with the completion of a device I/O control request.
 old-location: wdf\iwdfiorequestcompletionparams_getioctlparameters.htm
 tech.root: wdf
-ms.assetid: 59e2cd27-ec10-46e9-aa0d-4a00e2684e76
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequestCompletionParams::GetIoctlParameters"]
 ms.keywords: GetIoctlParameters, GetIoctlParameters method, GetIoctlParameters method,IWDFIoRequestCompletionParams interface, IWDFIoRequestCompletionParams interface,GetIoctlParameters method, IWDFIoRequestCompletionParams.GetIoctlParameters, IWDFIoRequestCompletionParams::GetIoctlParameters, UMDFRequestObjectRef_7d375866-617c-418f-b449-7931a88e7ae4.xml, umdf.iwdfiorequestcompletionparams_getioctlparameters, wdf.iwdfiorequestcompletionparams_getioctlparameters, wudfddi/IWDFIoRequestCompletionParams::GetIoctlParameters
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequestCompletionParams.GetIoctlParameters
+ - IWDFIoRequestCompletionParams::GetIoctlParameters
 ---
 
 # IWDFIoRequestCompletionParams::GetIoctlParameters
@@ -52,44 +51,44 @@ The <b>GetIoctlParameters</b> method retrieves parameters that are associated wi
 
 ## -parameters
 
-### -param pIoControlCode 
+### -param pIoControlCode [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives the control code that identifies the specific operation to be performed. 
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information.
 
-### -param ppInputMemory 
+### -param ppInputMemory [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfmemory">IWDFMemory</a> interface for access to the input buffer for the completion of the device I/O control request. 
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information.
 
-### -param pInputMemoryOffset 
+### -param pInputMemoryOffset [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives the offset, in bytes, into the input buffer for the completion of the I/O control request. 
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information.
 
-### -param ppOutputMemory 
+### -param ppOutputMemory [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfmemory">IWDFMemory</a> interface for access to the output buffer for the completion of the device I/O control request. 
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information.
 
-### -param pOutputMemoryOffset 
+### -param pOutputMemoryOffset [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives the offset, in bytes, into the output buffer for the completion of the I/O control request. 
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information.
 
-### -param pOutBytes 
+### -param pOutBytes [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives the number of bytes that are output for the completion of the device I/O control request.
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information.
@@ -101,3 +100,4 @@ This parameter is optional. The driver can pass <b>NULL</b> if the driver does n
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfmemory">IWDFMemory</a>
+

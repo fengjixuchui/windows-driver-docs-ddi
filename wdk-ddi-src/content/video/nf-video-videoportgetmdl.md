@@ -4,7 +4,6 @@ title: VideoPortGetMdl function (video.h)
 description: The VideoPortGetMdl function is obsolete in Windows 2000 and later.VideoPortGetMdl retrieves the memory descriptor list (MDL) that represents the page table of the locked buffer.
 old-location: display\videoportgetmdl.htm
 tech.root: display
-ms.assetid: 03ec6323-a3f9-485d-80c8-92ac99d8e73a
 ms.date: 05/10/2018
 keywords: ["VideoPortGetMdl function"]
 ms.keywords: VideoPortGetMdl, VideoPortGetMdl function [Display Devices], VideoPort_Functions_570b04cd-9b69-4d1a-b953-7220d4fc7790.xml, display.videoportgetmdl, video/VideoPortGetMdl
@@ -52,14 +51,14 @@ The <b>VideoPortGetMdl</b> function is <b>obsolete</b> in Windows 2000 and later
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's device extension.
 
-### -param pDma 
+### -param pDma [in]
 
-[in]
+
 Is a handle to the DMA context being queried. This handle was obtained from <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportlockpages">VideoPortLockPages</a> or <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportdodma">VideoPortDoDma</a>.
 
 ## -returns

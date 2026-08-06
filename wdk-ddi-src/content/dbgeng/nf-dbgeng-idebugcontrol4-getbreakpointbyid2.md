@@ -4,7 +4,6 @@ title: IDebugControl4::GetBreakpointById2 (dbgeng.h)
 description: The GetBreakpointById2 method returns the breakpoint with the specified breakpoint ID.
 old-location: debugger\getbreakpointbyid2.htm
 tech.root: debugger
-ms.assetid: 110eaa8a-d564-4900-8a08-d081572a5f43
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::GetBreakpointById2"]
 ms.keywords: GetBreakpointById2, GetBreakpointById2 method [Windows Debugging], GetBreakpointById2 method [Windows Debugging],IDebugControl4 interface, IDebugControl4 interface [Windows Debugging],GetBreakpointById2 method, IDebugControl4.GetBreakpointById2, IDebugControl4::GetBreakpointById2, dbgeng/IDebugControl4::GetBreakpointById2, debugger.getbreakpointbyid2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.GetBreakpointById2
+ - IDebugControl4::GetBreakpointById2
 ---
 
 # IDebugControl4::GetBreakpointById2
@@ -50,14 +49,14 @@ The <b>GetBreakpointById2</b>  method returns the breakpoint with the specified 
 
 ## -parameters
 
-### -param Id 
+### -param Id [in]
 
-[in]
+
 Specifies the breakpoint ID of the breakpoint to return.
 
-### -param Bp 
+### -param Bp [out]
 
-[out]
+
 Receives the breakpoint.
 
 ## -returns
@@ -104,3 +103,4 @@ If the specified breakpoint does not belong to the current process, the method w
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol4">IDebugControl4</a>
+

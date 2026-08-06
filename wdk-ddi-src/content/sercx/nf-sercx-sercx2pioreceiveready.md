@@ -4,7 +4,6 @@ title: SerCx2PioReceiveReady function (sercx.h)
 description: The SerCx2PioReceiveReady method notifies version 2 of the serial framework extension (SerCx2) that data is available to be read from the receive FIFO in the serial controller.
 old-location: serports\sercx2pioreceiveready.htm
 tech.root: serports
-ms.assetid: 81DE84F8-7D2D-464F-BA5D-4D92D0EE9149
 ms.date: 04/23/2018
 keywords: ["SerCx2PioReceiveReady function"]
 ms.keywords: 2/SerCx2PioReceiveReady, SerCx2PioReceiveReady, SerCx2PioReceiveReady method [Serial Ports], serports.sercx2pioreceiveready
@@ -50,9 +49,9 @@ The <b>SerCx2PioReceiveReady</b> method notifies version 2 of the serial framewo
 
 ## -parameters
 
-### -param PioReceive 
+### -param PioReceive [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIORECEIVE</a> handle to a PIO-receive object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2pioreceivecreate">SerCx2PioReceiveCreate</a> method to create this object.
 
 ## -remarks

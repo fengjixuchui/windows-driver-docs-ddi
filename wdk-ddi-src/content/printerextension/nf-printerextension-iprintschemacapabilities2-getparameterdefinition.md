@@ -2,17 +2,15 @@
 UID: NF:printerextension.IPrintSchemaCapabilities2.GetParameterDefinition
 title: IPrintSchemaCapabilities2::GetParameterDefinition (printerextension.h)
 description: The GetParameterDefinition method retrieves the IPrintSchemaParameterDefinition object, and it represents the psf:ParameterDef element in the PrintCapabilites XML.
-old-location: print\iprintschemacapabilities2_getparameterdefinition.htm
 tech.root: print
-ms.assetid: 19C3A3C5-446B-48FD-8E77-2E0F787B16B1
-ms.date: 10/01/2020
+ms.date: 08/02/2022
 keywords: ["IPrintSchemaCapabilities2::GetParameterDefinition"]
 ms.keywords: GetParameterDefinition, GetParameterDefinition method [Print Devices], GetParameterDefinition method [Print Devices],IPrintSchemaCapabilities2 interface, IPrintSchemaCapabilities2 interface [Print Devices],GetParameterDefinition method, IPrintSchemaCapabilities2.GetParameterDefinition, IPrintSchemaCapabilities2::GetParameterDefinition, print.iprintschemacapabilities2_getparameterdefinition, printerextension/IPrintSchemaCapabilities2::GetParameterDefinition
 req.header: printerextension.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Windows 8.1
-req.target-min-winversvr: Windows Server 2012 R2
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 
@@ -38,10 +36,8 @@ api_type:
 api_location:
  - Printerextension.h
 api_name:
- - IPrintSchemaCapabilities2.GetParameterDefinition
+ - IPrintSchemaCapabilities2::GetParameterDefinition
 ---
-
-# IPrintSchemaCapabilities2::GetParameterDefinition
 
 ## -description
 
@@ -51,19 +47,16 @@ The **GetParameterDefinition** method retrieves the [IPrintSchemaParameterDefini
 
 ## -parameters
 
-### -param bstrName
+### -param bstrName [in]
 
-[in]
 The keyword name
 
-### -param bstrNamespaceUri
+### -param bstrNamespaceUri [in]
 
-[in]
 The keyword namespace URI
 
-### -param ppParameterDefinition
+### -param ppParameterDefinition [out, retval]
 
-[out, retval]
 The **IPrintSchemaParameterDefinition** object
 
 ## -returns

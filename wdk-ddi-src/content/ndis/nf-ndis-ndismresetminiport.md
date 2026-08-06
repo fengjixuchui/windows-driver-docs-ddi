@@ -4,7 +4,6 @@ title: NdisMResetMiniport function (ndis.h)
 description: A miniport driver calls the NdisMResetMiniport function to trigger a later reset operation from NDIS.
 old-location: netvista\ndismresetminiport.htm
 tech.root: netvista
-ms.assetid: 614C6E21-00D0-4F57-9E09-D1BAB166BA42
 ms.date: 05/02/2018
 keywords: ["NdisMResetMiniport function"]
 ms.keywords: NdisMResetMiniport, NdisMResetMiniport function [Network Drivers Starting with Windows Vista], ndis/NdisMResetMiniport, netvista.ndismresetminiport
@@ -51,9 +50,9 @@ A miniport driver calls the <b>NdisMResetMiniport</b> function to trigger a late
 
 ## -parameters
 
-### -param MiniportAdapterHandle 
+### -param MiniportAdapterHandle [in]
 
-[in]
+
 The miniport adapter handle that NDIS passed to the <i>MiniportAdapterHandle</i> parameter of <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a>.
 
 ## -remarks

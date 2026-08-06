@@ -4,7 +4,6 @@ title: IQueueCallbackIoResume::OnIoResume (wudfddi.h)
 description: The OnIoResume method resumes the processing of the specified I/O request from the specified queue.
 old-location: wdf\iqueuecallbackioresume_onioresume.htm
 tech.root: wdf
-ms.assetid: d34f6e2c-4227-41bb-a1c0-f6206daa700b
 ms.date: 02/26/2018
 keywords: ["IQueueCallbackIoResume::OnIoResume"]
 ms.keywords: IQueueCallbackIoResume interface,OnIoResume method, IQueueCallbackIoResume.OnIoResume, IQueueCallbackIoResume::OnIoResume, OnIoResume, OnIoResume method, OnIoResume method,IQueueCallbackIoResume interface, UMDFQueueObjectRef_fd16ca4e-eccf-49a2-a7f5-bce7e7931a77.xml, umdf.iqueuecallbackioresume_onioresume, wdf.iqueuecallbackioresume_onioresume, wudfddi/IQueueCallbackIoResume::OnIoResume
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IQueueCallbackIoResume.OnIoResume
+ - IQueueCallbackIoResume::OnIoResume
 ---
 
 # IQueueCallbackIoResume::OnIoResume
@@ -52,14 +51,14 @@ The <b>OnIoResume</b> method resumes the processing of the specified I/O request
 
 ## -parameters
 
-### -param pWdfQueue 
+### -param pWdfQueue [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfioqueue">IWDFIoQueue</a> interface for the I/O queue object that processing of the I/O request is resumed from.
 
-### -param pWdfRequest 
+### -param pWdfRequest [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest">IWDFIoRequest</a> interface that represents the framework request object that is resumed.
 
 ## -remarks
@@ -81,3 +80,4 @@ A driver registers the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest">IWDFIoRequest</a>
+

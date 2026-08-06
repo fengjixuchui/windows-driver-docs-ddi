@@ -1,10 +1,9 @@
 ---
 UID: NS:minitape._TAPE_SET_MEDIA_PARAMETERS
 title: _TAPE_SET_MEDIA_PARAMETERS (minitape.h)
-description: The TAPE_SET_MEDIA_PARAMETERS structure is used in conjunction with the IOCTL_TAPE_SET_MEDIA_PARAMS request to reset the block size of the media in a tape drive.
+description: The _TAPE_SET_MEDIA_PARAMETERS structure (minitape.h) contains the information needed to reset the block size of the media in a tape drive.
 old-location: storage\tape_set_media_parameters.htm
 tech.root: storage
-ms.assetid: f038eb24-71d2-414c-ad7c-06cb1fa24070
 ms.date: 03/29/2018
 keywords: ["TAPE_SET_MEDIA_PARAMETERS structure"]
 ms.keywords: "*PTAPE_SET_MEDIA_PARAMETERS, PTAPE_SET_MEDIA_PARAMETERS, PTAPE_SET_MEDIA_PARAMETERS structure pointer [Storage Devices], TAPE_SET_MEDIA_PARAMETERS, TAPE_SET_MEDIA_PARAMETERS structure [Storage Devices], _TAPE_SET_MEDIA_PARAMETERS, ntddtape/PTAPE_SET_MEDIA_PARAMETERS, ntddtape/TAPE_SET_MEDIA_PARAMETERS, storage.tape_set_media_parameters, structs-tape_83d386fe-a430-4c8f-af97-2f6c7ecc4b67.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddtape.h
 api_name:
+ - _TAPE_SET_MEDIA_PARAMETERS
+ - PTAPE_SET_MEDIA_PARAMETERS
  - TAPE_SET_MEDIA_PARAMETERS
 ---
 
@@ -65,3 +66,4 @@ Indicates the requested block size, in bytes, or zero for variable block size in
 
 
 <a href="/windows-hardware/drivers/ddi/minitape/nc-minitape-tape_process_command_routine">TapeMiniSetMediaParameters</a>
+

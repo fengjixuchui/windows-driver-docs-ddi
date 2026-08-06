@@ -1,9 +1,8 @@
 ---
 UID: NC:d3dkmddi.DXGKDDI_DESTROYPROTECTEDSESSION
 title: DXGKDDI_DESTROYPROTECTEDSESSION (d3dkmddi.h)
-description: Used to destroy a protected session.
+description: The DXGKDDI_DESTROYPROTECTEDSESSION callback function destroys a protected session and returns STATUS_SUCCESS on successful completion.
 old-location: display\dxgkddi_destroyprotectedsession.htm
-ms.assetid: 42D4064A-1697-4772-8450-6D217C526347
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_DESTROYPROTECTEDSESSION callback function"]
 ms.keywords: DXGKDDI_DESTROYPROTECTEDSESSION, DXGKDDI_DESTROYPROTECTEDSESSION callback, DXGKDDI_DESTROYPROTECTEDSESSION callback function [Display Devices], d3dkmddi/DXGKDDI_DESTROYPROTECTEDSESSION, display.dxgkddi_destroyprotectedsession
@@ -39,8 +38,6 @@ api_location:
  - d3dkmddi.h
 api_name:
  - DXGKDDI_DESTROYPROTECTEDSESSION
-product:
- - Windows
 ---
 
 # DXGKDDI_DESTROYPROTECTEDSESSION callback function

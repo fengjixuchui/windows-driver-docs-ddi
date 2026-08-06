@@ -4,7 +4,6 @@ title: wiasSendEndOfPage function (wiamdef.h)
 description: The wiasSendEndOfPage function calls the client callback routine during a data transfer, sending the current total page count.
 old-location: image\wiassendendofpage.htm
 tech.root: image
-ms.assetid: 107cd468-bc39-4672-9356-e5329b36277b
 ms.date: 05/03/2018
 keywords: ["wiasSendEndOfPage function"]
 ms.keywords: image.wiassendendofpage, wiamdef/wiasSendEndOfPage, wiasFncs_c8a81130-c832-40d8-8a62-619d04d8d3dc.xml, wiasSendEndOfPage, wiasSendEndOfPage function [Imaging Devices]
@@ -50,18 +49,18 @@ The <b>wiasSendEndOfPage </b>function calls the client callback routine during a
 
 ## -parameters
 
-### -param pWiasContext 
+### -param pWiasContext [in]
 
-[in]
+
 Pointer to a WIA item context.
 
 ### -param lPageCount
 
 Specifies the total page count.
 
-### -param pmdtc 
+### -param pmdtc [in, out]
 
-[in, out]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/wiamindr_lh/ns-wiamindr_lh-_minidrv_transfer_context">MINIDRV_TRANSFER_CONTEXT</a> structure.
 
 ## -returns

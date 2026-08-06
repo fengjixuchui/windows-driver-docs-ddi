@@ -4,7 +4,6 @@ title: WdfDeviceInitSetExclusive function (wdfdevice.h)
 description: The WdfDeviceInitSetExclusive method indicates whether a specified device is an exclusive device.
 old-location: wdf\wdfdeviceinitsetexclusive.htm
 tech.root: wdf
-ms.assetid: 4bbcf4d3-e1f9-4e13-ac56-92ffddea1f67
 ms.date: 02/26/2018
 keywords: ["WdfDeviceInitSetExclusive function"]
 ms.keywords: DFDeviceObjectGeneralRef_fb2fbd3a-e78a-4632-b84f-b3e62a6efc94.xml, WdfDeviceInitSetExclusive, WdfDeviceInitSetExclusive method, kmdf.wdfdeviceinitsetexclusive, wdf.wdfdeviceinitsetexclusive, wdfdevice/WdfDeviceInitSetExclusive
@@ -53,14 +52,14 @@ The <b>WdfDeviceInitSetExclusive</b> method indicates whether a specified device
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
-### -param IsExclusive 
+### -param IsExclusive [in]
 
-[in]
+
 A Boolean value which, if <b>TRUE</b>, indicates that the device is an exclusive device. If <b>FALSE</b>, the device is not an exclusive device.
 
 ## -remarks

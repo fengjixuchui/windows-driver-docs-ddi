@@ -4,7 +4,6 @@ title: wiasReadPropLong function (wiamdef.h)
 description: The wiasReadPropLong function retrieves a long integer property value from a WIA item.
 old-location: image\wiasreadproplong.htm
 tech.root: image
-ms.assetid: 77fc58fd-1bcf-4a68-b083-fa2bfa3ac312
 ms.date: 05/03/2018
 keywords: ["wiasReadPropLong function"]
 ms.keywords: image.wiasreadproplong, wiamdef/wiasReadPropLong, wiasFncs_a60071a3-6ae9-431d-8d8b-a964547e9770.xml, wiasReadPropLong, wiasReadPropLong function [Imaging Devices]
@@ -50,23 +49,23 @@ The <b>wiasReadPropLong </b>function retrieves a long integer property value fro
 
 ## -parameters
 
-### -param pWiasContext 
+### -param pWiasContext [in]
 
-[in]
+
 Pointer to a WIA item context.
 
 ### -param propid
 
 Specifies the property identifier.
 
-### -param plVal 
+### -param plVal [out]
 
-[out]
+
 Pointer to a memory location that receives the value of the property.
 
-### -param plValOld 
+### -param plValOld [out, optional]
 
-[out, optional]
+
 Pointer to a memory location that receives the property's previous value. If this information is not needed, set this parameter to <b>NULL</b>.
 
 ### -param bMustExist

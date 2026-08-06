@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11.DOT11_PRIVACY_EXEMPTION
 title: DOT11_PRIVACY_EXEMPTION (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_PRIVACY_EXEMPTION structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_privacy_exemption.htm
 tech.root: netvista
-ms.assetid: ee4499d0-3275-419d-9ab2-89edd77e0374
 ms.date: 02/16/2018
 keywords: ["DOT11_PRIVACY_EXEMPTION structure"]
 ms.keywords: "*PDOT11_PRIVACY_EXEMPTION, DOT11_PRIVACY_EXEMPTION, DOT11_PRIVACY_EXEMPTION structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_8dd63374-57b1-4dc8-9dca-76dcc5ade9fd.xml, PDOT11_PRIVACY_EXEMPTION, PDOT11_PRIVACY_EXEMPTION structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_privacy_exemption, windot11/DOT11_PRIVACY_EXEMPTION, windot11/PDOT11_PRIVACY_EXEMPTION"
@@ -41,8 +40,7 @@ api_location:
  - windot11.h
 api_name:
  - DOT11_PRIVACY_EXEMPTION
-product:
- - Windows 10 or later.
+ - PDOT11_PRIVACY_EXEMPTION
 ---
 
 # DOT11_PRIVACY_EXEMPTION structure
@@ -50,7 +48,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_PRIVACY_EXEMPTION structure defines a decryption exemption for a specified network
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_PRIVACY_EXEMPTION structure defines a decryption exemption for a specified network
   EtherType.
 
 ## -struct-fields
@@ -129,3 +130,4 @@ The 802.11 station's packet exemption list if configured through a set request o
 
 <a href="/windows-hardware/drivers/network/oid-dot11-privacy-exemption-list">
    OID_DOT11_PRIVACY_EXEMPTION_LIST</a>
+

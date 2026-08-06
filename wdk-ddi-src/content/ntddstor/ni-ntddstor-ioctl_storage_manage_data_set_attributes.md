@@ -4,7 +4,6 @@ title: IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES (ntddstor.h)
 description: This IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES request is used to send a data set management request to a storage device.
 old-location: storage\ioctl_storage_manage_data_set_attributes.htm
 tech.root: storage
-ms.assetid: 678bbca6-f21f-480a-897d-a30e922d01e3
 ms.date: 08/23/2019
 keywords: ["IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES IOCTL"]
 ms.keywords: IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES, IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES control, IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES control code [Storage Devices], k307_99edaea9-af25-4aba-ba16-0758c63252b6.xml, ntddstor/IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES, storage.ioctl_storage_manage_data_set_attributes
@@ -43,12 +42,13 @@ api_name:
 
 # IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES IOCTL
 
-
 ## -description
 
 This **IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES** request is used to send a data set management request to a storage device.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 
@@ -84,7 +84,7 @@ See [Data Set Management Overview](/windows-hardware/drivers/storage/data-set-ma
 
 [Data Set Management Overview](/windows-hardware/drivers/storage/data-set-management-overview)
 
-[DEVICE_DSM_ACTION Descriptions](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntdd)
+[DEVICE_DSM_ACTION Descriptions](/windows-hardware/drivers/storage/device-dsm-action-descriptions)
 
 [DEVICE_DSM_INPUT](./ns-ntddstor-_device_manage_data_set_attributes.md)
 

@@ -4,7 +4,6 @@ title: IPortClsPnp (portcls.h)
 description: IPortClsPnp is the PnP management interface that the port class driver (PortCls) exposes to the adapter.
 old-location: audio\iportclspnp.htm
 tech.root: audio
-ms.assetid: AC04051E-8412-4B61-B452-C05A9D8D5CD9
 ms.date: 05/08/2018
 keywords: ["IPortClsPnp interface"]
 ms.keywords: IPortClsPnp, IPortClsPnp interface [Audio Devices], IPortClsPnp interface [Audio Devices],described, audio.iportclspnp, portcls/IPortClsPnp
@@ -54,7 +53,5 @@ The <code>IPortClsPnp</code> interface is available in Windows 10, version 1511
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPortClsPnp</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPortClsPnp</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IPortClsPnp</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPortClsPnp</b> also has these types of members:
+

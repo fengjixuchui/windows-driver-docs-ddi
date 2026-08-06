@@ -4,7 +4,6 @@ title: _D3DHAL_GLOBALDRIVERDATA (d3dhal.h)
 description: The D3DHAL_GLOBALDRIVERDATA structure specifies the 3D capabilities of the driver and its device.
 old-location: display\d3dhal_globaldriverdata.htm
 tech.root: display
-ms.assetid: 4aba7417-8391-4ae7-a449-dbc307cab530
 ms.date: 05/10/2018
 keywords: ["D3DHAL_GLOBALDRIVERDATA structure"]
 ms.keywords: "*LPD3DHAL_GLOBALDRIVERDATA, D3DHAL_GLOBALDRIVERDATA, D3DHAL_GLOBALDRIVERDATA structure [Display Devices], LPD3DHAL_GLOBALDRIVERDATA, LPD3DHAL_GLOBALDRIVERDATA structure pointer [Display Devices], _D3DHAL_GLOBALDRIVERDATA, d3dhal/D3DHAL_GLOBALDRIVERDATA, d3dhal/LPD3DHAL_GLOBALDRIVERDATA, d3dstrct_95940eeb-e317-455f-bd8c-0e7d1937197e.xml, display.d3dhal_globaldriverdata"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dhal.h
 api_name:
+ - _D3DHAL_GLOBALDRIVERDATA
  - D3DHAL_GLOBALDRIVERDATA
 ---
 
@@ -95,3 +95,4 @@ The driver is responsible for allocating space for and setting all members of th
 
 
 <a href="/windows/win32/api/winddi/nf-winddi-drvgetdirectdrawinfo">DrvGetDirectDrawInfo</a>
+

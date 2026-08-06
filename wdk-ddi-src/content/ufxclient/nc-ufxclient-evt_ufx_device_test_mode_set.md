@@ -4,7 +4,6 @@ title: EVT_UFX_DEVICE_TEST_MODE_SET (ufxclient.h)
 description: The client driver's implementation to set the test mode of the function controller.
 old-location: buses\evt_ufx_device_test_mode_set.htm
 tech.root: usbref
-ms.assetid: 24B17B8E-C2F0-4CA8-AA9D-5EE86EB20CCC
 ms.date: 05/07/2018
 keywords: ["EVT_UFX_DEVICE_TEST_MODE_SET callback function"]
 ms.keywords: EVT_UFX_DEVICE_TEST_MODE_SET, EVT_UFX_DEVICE_TEST_MODE_SET callback, EvtUfxDeviceTestModeSet, EvtUfxDeviceTestModeSet callback function [Buses], PFN_UFX_DEVICE_TEST_MODE_SET, PFN_UFX_DEVICE_TEST_MODE_SET callback function pointer [Buses], buses.evt_ufx_device_test_mode_set, ufxclient/EvtUfxDeviceTestModeSet
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ufxclient.h
 api_name:
- - PFN_UFX_DEVICE_TEST_MODE_SET
+ - EVT_UFX_DEVICE_TEST_MODE_SET
 ---
 
 # EVT_UFX_DEVICE_TEST_MODE_SET callback function
@@ -50,7 +49,11 @@ The client driver's implementation to set the test mode of the function controll
 
 ## -parameters
 
-#### - TestMode [in]
+### -param unnamedParam1 [in]
+
+The handle to a  USB device object that the client driver received in a previous call to  the <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
+
+### -param unnamedParam2 [in]
 
 Test mode selector value as defined by the USB 2.0 Specification.  These values are defined in usbfnbase.h
 
@@ -65,10 +68,6 @@ Test mode selector value as defined by the USB 2.0 Specification.  These values 
 <li>USB_TEST_MODE_TEST_FORCE_ENABLE   0x05
 </li>
 </ul>
-
-#### - UfxDevice [in]
-
-The handle to a  USB device object that the client driver received in a previous call to  the <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
 
 ## -remarks
 
@@ -124,7 +123,6 @@ Arguments:
 
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>
@@ -132,3 +130,4 @@ Arguments:
 
 
 <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdeviceeventcomplete">UfxDeviceEventComplete</a>
+

@@ -4,7 +4,6 @@ title: IWDTFSimpleIOEx2::Open (wdtfinterfaces.h)
 description: Opens the device.
 old-location: dtf\iwdtfsimpleioex2_open.htm
 tech.root: dtf
-ms.assetid: 991a60a0-8d82-4f41-8cfe-bf633338bdda
 ms.date: 04/04/2018
 keywords: ["IWDTFSimpleIOEx2::Open"]
 ms.keywords: IWDTFSimpleIOEx2 interface [Windows Device Testing Framework],Open method, IWDTFSimpleIOEx2.Open, IWDTFSimpleIOEx2::Open, Microsoft.WDTF.IWDTFSimpleIOEx2.Open, Microsoft::WDTF::IWDTFSimpleIOEx2::Open, Open, Open method [Windows Device Testing Framework], Open method [Windows Device Testing Framework],IWDTFSimpleIOEx2 interface, dtf.iwdtfsimpleioex2_open, wdtfinterfaces/IWDTFSimpleIOEx2::Open
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTFInterfaces.Interop.dll
 api_name:
- - IWDTFSimpleIOEx2.Open
+ - IWDTFSimpleIOEx2::Open
 ---
 
 # IWDTFSimpleIOEx2::Open
@@ -50,9 +49,9 @@ Opens the device.
 
 ## -parameters
 
-### -param pResult 
+### -param pResult [out, retval]
 
-[out, retval]
+
 True if the operation succeeds; otherwise, false.
 
 ## -returns
@@ -67,3 +66,4 @@ the <a href="/windows-hardware/drivers/ddi/wdtfinterfaces/nf-wdtfinterfaces-iwdt
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtfinterfaces/nn-wdtfinterfaces-iwdtfsimpleioex2">IWDTFSimpleIOEx2</a>
+

@@ -4,14 +4,13 @@ title: _DXGKMDT_OPM_HDCP_PROTECTION_LEVEL (d3dkmdt.h)
 description: The DXGKMDT_OPM_HDCP_PROTECTION_LEVEL enumeration indicates the protection levels for a protected output that supports High-bandwidth Digital Content Protection (HDCP).
 old-location: display\dxgkmdt_opm_hdcp_protection_level.htm
 tech.root: display
-ms.assetid: e0d38f3b-19da-4118-a1d9-7d5a00bcad26
 ms.date: 05/10/2018
 keywords: ["DXGKMDT_OPM_HDCP_PROTECTION_LEVEL enumeration"]
 ms.keywords: DXGKMDT_OPM_HDCP_FORCE_ULONG, DXGKMDT_OPM_HDCP_OFF, DXGKMDT_OPM_HDCP_ON, DXGKMDT_OPM_HDCP_PROTECTION_LEVEL, DXGKMDT_OPM_HDCP_PROTECTION_LEVEL enumeration [Display Devices], DmEnums_5df35ab3-a367-45c3-b03c-12b3d733f244.xml, _DXGKMDT_OPM_HDCP_PROTECTION_LEVEL, d3dkmdt/DXGKMDT_OPM_HDCP_FORCE_ULONG, d3dkmdt/DXGKMDT_OPM_HDCP_OFF, d3dkmdt/DXGKMDT_OPM_HDCP_ON, d3dkmdt/DXGKMDT_OPM_HDCP_PROTECTION_LEVEL, display.dxgkmdt_opm_hdcp_protection_level
 req.header: d3dkmdt.h
-req.include-header: D3dkmdt.h
+req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmdt.h
 api_name:
+ - _DXGKMDT_OPM_HDCP_PROTECTION_LEVEL
  - DXGKMDT_OPM_HDCP_PROTECTION_LEVEL
 ---
 
@@ -87,3 +87,4 @@ HDCP protects digital video signals from digital video output connectors. Curren
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_get_information">DxgkDdiOPMGetInformation</a>
+

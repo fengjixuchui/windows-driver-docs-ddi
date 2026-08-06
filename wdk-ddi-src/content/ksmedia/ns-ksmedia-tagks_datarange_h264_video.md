@@ -4,7 +4,6 @@ title: tagKS_DATARANGE_H264_VIDEO (ksmedia.h)
 description: The KS_DATARANGE_H264_VIDEO structure describes the range of MPEG-2 video formats available for a stream.
 old-location: stream\ks_datarange_h264_video.htm
 tech.root: stream
-ms.assetid: E52B252F-0530-4543-A44C-95D4198504CA
 ms.date: 04/23/2018
 keywords: ["tagKS_DATARANGE_H264_VIDEO structure"]
 ms.keywords: "*PKS_DATARANGE_H264_VIDEO, KS_DATARANGE_H264_VIDEO, KS_DATARANGE_H264_VIDEO structure [Streaming Media Devices], PKS_DATARANGE_H264_VIDEO, PKS_DATARANGE_H264_VIDEO structure pointer [Streaming Media Devices], ksmedia/KS_DATARANGE_H264_VIDEO, ksmedia/PKS_DATARANGE_H264_VIDEO, stream.ks_datarange_h264_video, tagKS_DATARANGE_H264_VIDEO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ksmedia.h
 api_name:
+ - tagKS_DATARANGE_H264_VIDEO
+ - PKS_DATARANGE_H264_VIDEO
  - KS_DATARANGE_H264_VIDEO
 ---
 
@@ -93,3 +94,4 @@ Specifies the details of the video stream.
 
 
 <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_video_stream_config_caps">KS_VIDEO_STREAM_CONFIG_CAPS</a>
+

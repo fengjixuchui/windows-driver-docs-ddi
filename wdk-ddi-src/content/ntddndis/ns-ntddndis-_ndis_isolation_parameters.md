@@ -4,7 +4,6 @@ title: _NDIS_ISOLATION_PARAMETERS (ntddndis.h)
 description: The NDIS_ISOLATION_PARAMETERS structure is used by the OID_GEN_ISOLATION_PARAMETERS OID to return the isolation parameters that are set on a VM network adapter's port.
 old-location: netvista\ndis_isolation_parameters.htm
 tech.root: netvista
-ms.assetid: 71A01647-3415-4F76-A67C-D1022C8A11D9
 ms.date: 05/02/2018
 keywords: ["NDIS_ISOLATION_PARAMETERS structure"]
 ms.keywords: "*PNDIS_ISOLATION_PARAMETERS, NDIS_ISOLATION_PARAMETERS, NDIS_ISOLATION_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_ISOLATION_PARAMETERS, PNDIS_ISOLATION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_ISOLATION_PARAMETERS, netvista.ndis_isolation_parameters, ntddndis/NDIS_ISOLATION_PARAMETERS, ntddndis/PNDIS_ISOLATION_PARAMETERS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_ISOLATION_PARAMETERS
+ - PNDIS_ISOLATION_PARAMETERS
  - NDIS_ISOLATION_PARAMETERS
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_ISOLATION_PARAMETERS</b> structure is used by the <a href="/windows-
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_ISOLATION_PARAMETERS</b>  structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_ISOLATION_PARAMETERS</b>  structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The <b>Type</b> member of <b>Header</b> must be set to <b>NDIS_OBJECT_TYPE_DEFAULT</b>. To specify the version of the <b>NDIS_ISOLATION_PARAMETERS</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
 
@@ -103,7 +104,7 @@ A <b>ULONG</b> value that specifies the offset, in bytes, to the first <a href="
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -116,3 +117,4 @@ A <b>ULONG</b> value that specifies the offset, in bytes, to the first <a href="
 
 
 <a href="/windows-hardware/drivers/network/oid-gen-isolation-parameters">OID_GEN_ISOLATION_PARAMETERS</a>
+

@@ -4,7 +4,6 @@ title: KsRemoveBusEnumInterface function (swenum.h)
 description: The KsRemoveBusEnumInterface function removes an interface to the demand-load bus enumerator object.
 old-location: stream\ksremovebusenuminterface.htm
 tech.root: stream
-ms.assetid: 4b1da622-9a48-4c18-9eee-a99830bd26af
 ms.date: 04/23/2018
 keywords: ["KsRemoveBusEnumInterface function"]
 ms.keywords: KsRemoveBusEnumInterface, KsRemoveBusEnumInterface function [Streaming Media Devices], ksfunc_cf6401bc-80bf-4678-80f9-89c23b333bdc.xml, stream.ksremovebusenuminterface, swenum/KsRemoveBusEnumInterface
@@ -53,9 +52,9 @@ The <b>KsRemoveBusEnumInterface</b> function removes an interface to the demand-
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Pointer to an IRP that contains a SWENUM_INSTALL_INTERFACE structure that specifies the device ID, interface ID, and reference string of the specific device and interface to be removed. For information about this structure, see theRemarks section below.
 
 ## -returns

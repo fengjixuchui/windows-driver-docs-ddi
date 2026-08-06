@@ -4,15 +4,14 @@ title: IOCTL_STORAGE_GET_DEVICE_NUMBER_EX (ntddstor.h)
 description: Returns a STORAGE_DEVICE_NUMBER structure that contains the FILE_DEVICE_XXX type, device number, device GUID, and, for a partitionable device, the partition number assigned to a device by the driver when the device is started.
 old-location: storage\ioctl_storage_get_device_number.htm
 tech.root: storage
-ms.assetid: 21eb3380-bd3c-488d-8eaf-22d337775f42
-ms.date: 11/08/2019
+ms.date: 01/25/2023
 keywords: ["IOCTL_STORAGE_GET_DEVICE_NUMBER_EX IOCTL"]
 ms.keywords: IOCTL_STORAGE_GET_DEVICE_NUMBER_EX, IOCTL_STORAGE_GET_DEVICE_NUMBER_EX control, IOCTL_STORAGE_GET_DEVICE_NUMBER_EX control code [Storage Devices], ntddstor/IOCTL_STORAGE_GET_DEVICE_NUMBER_EX
 req.header: ntddstor.h
 req.include-header: Ntddstor.h
 req.target-type: Windows
-req.target-min-winverclnt: 
-req.target-min-winversvr: 
+req.target-min-winverclnt: Windows 10
+req.target-min-winversvr:
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 
@@ -43,12 +42,13 @@ api_name:
 
 # IOCTL_STORAGE_GET_DEVICE_NUMBER_EX IOCTL
 
-
 ## -description
 
-Returns a [STORAGE_DEVICE_NUMBER_EX](./ns-ntddstor-_storage_device_number_ex.md) structure that contains the FILE_DEVICE_*XXX* type, device number, device GUID, and, for a partitionable device, the partition number assigned to a device by the driver when the device is started. This request is usually issued by a fault-tolerant disk driver.
+Returns a [**STORAGE_DEVICE_NUMBER_EX**](ns-ntddstor-_storage_device_number_ex.md) structure that contains the FILE_DEVICE_*XXX* type, device number, device GUID, and, for a partitionable device, the partition number assigned to a device by the driver when the device is started. This request is usually issued by a fault-tolerant disk driver.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 
@@ -60,11 +60,19 @@ None.
 
 ### -output-buffer
 
-The driver returns the [STORAGE_DEVICE_NUMBER_EX](./ns-ntddstor-_storage_device_number_ex.md) data in the buffer at **Irp->AssociatedIrp.SystemBuffer**.
+The driver returns the [**STORAGE_DEVICE_NUMBER_EX**](ns-ntddstor-_storage_device_number_ex.md) data in the buffer at **Irp->AssociatedIrp.SystemBuffer**.
 
 ### -output-buffer-length
 
-**Parameters.DeviceIoControl.OutputBufferLength** in the I/O stack location indicates the size, in bytes, of the parameter buffer, which must be >= **sizeof**(STORAGE_DEVICE_NUMBER_EX).
+**Parameters.DeviceIoControl.OutputBufferLength** in the I/O stack location indicates the size, in bytes, of the parameter buffer, which must be >= ```sizeof(STORAGE_DEVICE_NUMBER_EX)```.
+
+### -in-out-buffer
+
+n/a
+
+### -inout-buffer-length
+
+n/a
 
 ### -status-block
 
@@ -72,6 +80,6 @@ The **Information** field is set to the number of bytes returned. The **Status**
 
 ## -see-also
 
-[IOCTL_STORAGE_GET_DEVICE_NUMBER](https://docs.microsoft.com/windows-hardware/drivers/ddi/ntddstor/ns-ntddstor-ioctl_storage_get_device_number)
+[**IOCTL_STORAGE_GET_DEVICE_NUMBER**](./ni-ntddstor-ioctl_storage_get_device_number.md)
 
-[STORAGE_DEVICE_NUMBER_EX](./ns-ntddstor-_storage_device_number_ex.md)
+[**STORAGE_DEVICE_NUMBER_EX**](./ns-ntddstor-_storage_device_number_ex.md)

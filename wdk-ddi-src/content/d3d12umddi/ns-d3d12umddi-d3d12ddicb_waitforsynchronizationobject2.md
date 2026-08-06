@@ -3,11 +3,8 @@ UID: NS:d3d12umddi.D3D12DDICB_WAITFORSYNCHRONIZATIONOBJECT2
 title: D3D12DDICB_WAITFORSYNCHRONIZATIONOBJECT2
 description: Waits for synchronization object.
 tech.root: display
-ms.assetid: 61c6c871-5b24-4034-9540-9e20b2f668ce
 ms.date: 08/19/2019
 keywords: ["D3D12DDICB_WAITFORSYNCHRONIZATIONOBJECT2 structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: D3D12DDICB_WAITFORSYNCHRONIZATIONOBJECT2, D3D12DDICB_WAITFORSYNCHRONIZATIONOBJECT2,
 req.header: d3d12umddi.h
 req.include-header: 
@@ -35,8 +32,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - D3D12DDICB_WAITFORSYNCHRONIZATIONOBJECT2
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -50,22 +45,22 @@ Waits for synchronization object.
 
 ## -struct-fields
 
-### -field hContext
+### -field hContext [in]
 
-[in] A handle to the context that should be waiting.
+A handle to the context that should be waiting.
 
-### -field ObjectCount
+### -field ObjectCount [in]
 
-[in] The number of objects to wait on.
+The number of objects to wait on.
 
-### -field ObjectHandleArray
+### -field ObjectHandleArray [in]
 
-[in] A handle to and array of synchronization objects to wait on.
+A handle to and array of synchronization objects to wait on.
 
-### -field FenceValue
+### -field FenceValue [in]
 
  
-[in] Fence value to be waited.
+Fence value to be waited.
 
 ## -remarks
 

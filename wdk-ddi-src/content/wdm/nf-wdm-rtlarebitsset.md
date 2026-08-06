@@ -4,7 +4,6 @@ title: RtlAreBitsSet function (wdm.h)
 description: The RtlAreBitsSet routine determines whether a given range of bits within a bitmap variable is set.
 old-location: kernel\rtlarebitsset.htm
 tech.root: kernel
-ms.assetid: 7343f619-cf89-4768-b488-fe95f1da749d
 ms.date: 04/30/2018
 keywords: ["RtlAreBitsSet function"]
 ms.keywords: RtlAreBitsSet, RtlAreBitsSet routine [Kernel-Mode Driver Architecture], k109_8d2248d2-13e9-4f90-8d09-a3ea51579da8.xml, kernel.rtlarebitsset, wdm/RtlAreBitsSet
@@ -50,19 +49,19 @@ The <b>RtlAreBitsSet</b> routine determines whether a given range of bits within
 
 ## -parameters
 
-### -param BitMapHeader 
+### -param BitMapHeader [in]
 
-[in]
-A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-### -param StartingIndex 
+A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-[in]
+### -param StartingIndex [in]
+
+
 Specifies the start of the bit range to be tested. This is a zero-based value indicating the position of the first bit in the range.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Specifies how many bits to test.
 
 ## -returns
@@ -75,7 +74,7 @@ Callers of <b>RtlAreBitsSet</b> must be running at IRQL <= APC_LEVEL if the memo
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a>
+<a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a>
 
 
 

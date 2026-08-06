@@ -4,7 +4,6 @@ title: tagKS_DATARANGE_VIDEO_VBI (ksmedia.h)
 description: The KS_DATARANGE_VIDEO_VBI structure describes a range of data formats containing vertical blanking interval (VBI) data.
 old-location: stream\ks_datarange_video_vbi.htm
 tech.root: stream
-ms.assetid: 83801ea2-1beb-4b73-8906-ffefee67a2ac
 ms.date: 04/23/2018
 keywords: ["tagKS_DATARANGE_VIDEO_VBI structure"]
 ms.keywords: "*PKS_DATARANGE_VIDEO_VBI, KS_DATARANGE_VIDEO_VBI, KS_DATARANGE_VIDEO_VBI structure [Streaming Media Devices], PKS_DATARANGE_VIDEO_VBI, PKS_DATARANGE_VIDEO_VBI structure pointer [Streaming Media Devices], ksmedia/KS_DATARANGE_VIDEO_VBI, ksmedia/PKS_DATARANGE_VIDEO_VBI, stream.ks_datarange_video_vbi, tagKS_DATARANGE_VIDEO_VBI, vidcapstruct_79d2aa9b-f3b9-4faf-b06e-6048686602a5.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - tagKS_DATARANGE_VIDEO_VBI
+ - PKS_DATARANGE_VIDEO_VBI
  - KS_DATARANGE_VIDEO_VBI
 ---
 
@@ -93,3 +94,4 @@ Indicates VBI-specific information for the range of formats being described.
 
 
 <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ks_video_stream_config_caps">KS_VIDEO_STREAM_CONFIG_CAPS</a>
+

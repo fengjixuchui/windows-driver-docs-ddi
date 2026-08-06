@@ -2,14 +2,13 @@
 UID: NS:wdm._FILE_MEMORY_PARTITION_INFORMATION
 title: _FILE_MEMORY_PARTITION_INFORMATION (wdm.h)
 description: Stores information about memory partition. This structure is used by the ZwSetInformationFile function.
-old-location: ifsk\_file_memory_partition_information.htm
 tech.root: ifsk
-ms.assetid: 1d74aec3-dbc5-4494-ba52-135e3f545c1b
-ms.date: 04/16/2018
+ms.date: 06/11/2021
+author: lorihollasch
 keywords: ["FILE_MEMORY_PARTITION_INFORMATION structure"]
 ms.keywords: "*PFILE_MEMORY_PARTITION_INFORMATION, FILE_MEMORY_PARTITION_INFORMATION, FILE_MEMORY_PARTITION_INFORMATION structure [Kernel-Mode Driver Architecture], _FILE_MEMORY_PARTITION_INFORMATION, ifsk._file_memory_partition_information, wdm/FILE_MEMORY_PARTITION_INFORMATION"
 req.header: wdm.h
-req.include-header: 
+req.include-header: Wdm.h
 req.target-type: Windows
 req.target-min-winverclnt: Windows 10, version 1709
 req.target-min-winversvr: Windows Server 2016
@@ -42,17 +41,16 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _FILE_MEMORY_PARTITION_INFORMATION
+ - PFILE_MEMORY_PARTITION_INFORMATION
  - FILE_MEMORY_PARTITION_INFORMATION
 ---
 
 # _FILE_MEMORY_PARTITION_INFORMATION structure
 
-
 ## -description
 
-<p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
-
-Stores information about memory partition. This structure is used by the <b>ZwSetInformationFile</b> function.
+Stores information about memory partition. This structure is used by the **ZwSetInformationFile** function.
 
 ## -struct-fields
 
@@ -73,4 +71,3 @@ Determines whether cross-partition access is allowed.
 ### -field Flags.AllFlags
 
 Bitwise of all flags.
-

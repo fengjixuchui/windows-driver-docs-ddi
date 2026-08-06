@@ -4,7 +4,6 @@ title: KsGetDefaultClockState function (ks.h)
 description: The KsGetDefaultClockState function gets the current state of the clock.The function can be called at DISPATCH_LEVEL.
 old-location: stream\ksgetdefaultclockstate.htm
 tech.root: stream
-ms.assetid: b579fd85-5073-4894-a4ef-e56638f45ef6
 ms.date: 04/23/2018
 keywords: ["KsGetDefaultClockState function"]
 ms.keywords: KsGetDefaultClockState, KsGetDefaultClockState function [Streaming Media Devices], ks/KsGetDefaultClockState, ksfunc_9b1067e9-8d12-42a5-969e-0ec6205f12e2.xml, stream.ksgetdefaultclockstate
@@ -53,9 +52,9 @@ The function can be called at DISPATCH_LEVEL.
 
 ## -parameters
 
-### -param DefaultClock 
+### -param DefaultClock [in]
 
-[in]
+
 Specifies an initialized, default clock structure that is shared among any instance of the default clock for the parent.
 
 ## -returns

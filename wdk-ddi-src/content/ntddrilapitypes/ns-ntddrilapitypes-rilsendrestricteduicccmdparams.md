@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILSENDRESTRICTEDUICCCMDPARAMS
 title: RILSENDRESTRICTEDUICCCMDPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILSENDRESTRICTEDUICCCMDPARAMS structure in your code."
 old-location: netvista\rilsendrestricteduicccmdparams.htm
 tech.root: netvista
-ms.assetid: 22c7ae24-c2dc-46d6-b3c2-b908ad6d181c
 ms.date: 05/02/2018
 keywords: ["RILSENDRESTRICTEDUICCCMDPARAMS structure"]
 ms.keywords: "*LPRILSENDRESTRICTEDUICCCMDPARAMS, RILSENDRESTRICTEDUICCCMDPARAMS, RILSENDRESTRICTEDUICCCMDPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsendrestricteduicccmdparams, ntddrilapitypes/RILSENDRESTRICTEDUICCCMDPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSENDRESTRICTEDUICCCMDPARAMS
+ - LPRILSENDRESTRICTEDUICCCMDPARAMS
 ---
 
 # RILSENDRESTRICTEDUICCCMDPARAMS structure (ntddrilapitypes.h)

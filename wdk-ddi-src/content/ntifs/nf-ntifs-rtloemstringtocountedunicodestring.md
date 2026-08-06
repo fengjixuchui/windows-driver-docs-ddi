@@ -4,7 +4,6 @@ title: RtlOemStringToCountedUnicodeString function (ntifs.h)
 description: The RtlOemStringToCountedUnicodeString routine translates the specified source string into a Unicode string using the current system OEM code page.
 old-location: ifsk\rtloemstringtocountedunicodestring.htm
 tech.root: ifsk
-ms.assetid: bf36d51f-3e22-489b-a597-652f39242a30
 ms.date: 04/16/2018
 keywords: ["RtlOemStringToCountedUnicodeString function"]
 ms.keywords: RtlOemStringToCountedUnicodeString, RtlOemStringToCountedUnicodeString routine [Installable File System Drivers], ifsk.rtloemstringtocountedunicodestring, ntifs/RtlOemStringToCountedUnicodeString, rtlref_f67c05d0-0a01-44a7-9718-b3f0ef83b8f0.xml
@@ -54,14 +53,14 @@ The <b>RtlOemStringToCountedUnicodeString</b> routine translates the specified s
 
 Pointer to a caller-allocated buffer to receive the translated Unicode string. If <i>AllocateDestinationString</i> is <b>FALSE</b>, the caller must also allocate a buffer for the <b>Buffer</b> member of <i>DestinationString</i> to hold the Unicode data. If <i>AllocateDestinationString</i> is <b>TRUE</b>, <b>RtlOemStringToCountedUnicodeString</b> allocates a buffer large enough to hold the string, passes a pointer to it in <b>Buffer</b>, and updates the length and maximum length members of <i>DestinationString</i> accordingly.
 
-### -param SourceString 
+### -param SourceString [in]
 
-[in]
+
 Pointer to the OEM string to be translated into Unicode.
 
-### -param AllocateDestinationString 
+### -param AllocateDestinationString [in]
 
-[in]
+
 Set to <b>TRUE</b> if <b>RtlOemStringToCountedUnicodeString</b> should allocate the buffer space for the <i>DestinationString</i>, <b>FALSE</b> otherwise. If this parameter is <b>TRUE</b>, the caller is responsible for freeing the buffer when it is no longer needed by calling <b>RtlFreeUnicodeString</b>.
 
 ## -returns
@@ -74,7 +73,7 @@ If the operation succeeds, <b>RtlOemStringToCountedUnicodeString</b> returns STA
 
 <b>RtlOemStringToCountedUnicodeString</b> does not modify the source string. 
 
-For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/index">Strings</a>.
+For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/_kernel/#run-time-library-rtl-routines">Run-Time Library (RTL) Routines</a>.
 
 ## -see-also
 

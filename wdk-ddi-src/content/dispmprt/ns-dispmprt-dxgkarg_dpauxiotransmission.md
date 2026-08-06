@@ -2,7 +2,6 @@
 UID: NS:dispmprt._DXGKARG_DPAUXIOTRANSMISSION
 title: DXGKARG_DPAUXIOTRANSMISSION
 ms.date: 03/24/2020
-ms.topic: language-reference
 targetos: Windows
 description: The DXGKARG_DPAUXIOTRANSMISSION structure is a parameter for the DXGKDDI_DPAUXIOTRANSMISSION callback.
 tech.root: display
@@ -29,6 +28,7 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGKARG_DPAUXIOTRANSMISSION
+ - PDXGKARG_DPAUXIOTRANSMISSION
  - DXGKARG_DPAUXIOTRANSMISSION
 f1_keywords:
  - _DXGKARG_DPAUXIOTRANSMISSION

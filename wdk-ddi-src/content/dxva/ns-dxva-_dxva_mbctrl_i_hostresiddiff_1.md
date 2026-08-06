@@ -4,7 +4,6 @@ title: _DXVA_MBctrl_I_HostResidDiff_1 (dxva.h)
 description: The DXVA_MBctrl_I_HostResidDiff_1 structure is sent once per macroblock by the host decoder to the accelerator to specify macroblock control commands for an intra picture.
 old-location: display\dxva_mbctrl_i_hostresiddiff_1.htm
 tech.root: display
-ms.assetid: e2318d02-f52e-4b5b-86da-04df7b31b7d3
 ms.date: 05/10/2018
 keywords: ["DXVA_MBctrl_I_HostResidDiff_1 structure"]
 ms.keywords: "*LPDXVA_MBctrl_I_HostResidDiff_1, DXVA_MBctrl_I_HostResidDiff_1, DXVA_MBctrl_I_HostResidDiff_1 structure [Display Devices], _DXVA_MBctrl_I_HostResidDiff_1, display.dxva_mbctrl_i_hostresiddiff_1, dxva/DXVA_MBctrl_I_HostResidDiff_1, dxvaref_9d7c8453-31ce-4788-908e-ac81c97d97f5.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - dxva.h
 api_name:
+ - _DXVA_MBctrl_I_HostResidDiff_1
  - DXVA_MBctrl_I_HostResidDiff_1
 ---
 
@@ -113,3 +113,4 @@ Skipped macroblocks are not used by intra pictures, so the <i>MBskipsFollowing</
 
 
 <a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_tcoefsingle">DXVA_TCoefSingle</a>
+

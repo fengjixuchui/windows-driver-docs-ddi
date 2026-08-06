@@ -4,8 +4,7 @@ title: IWDTFNumbers2::get_Count (wdtf.h)
 description: Gets the number of numbers in the collection.
 old-location: dtf\iwdtfnumbers2_count.htm
 tech.root: dtf
-ms.assetid: 2802d99c-1139-4a24-a752-91a28e6033e9
-ms.date: 04/04/2018
+ms.date: 08/14/2023
 keywords: ["IWDTFNumbers2::get_Count"]
 ms.keywords: Count property [Windows Device Testing Framework], Count property [Windows Device Testing Framework],IWDTFNumbers2 interface, IWDTFNumbers2 interface [Windows Device Testing Framework],Count property, IWDTFNumbers2.Count, IWDTFNumbers2.get_Count, IWDTFNumbers2::Count, IWDTFNumbers2::get_Count, Microsoft.WDTF.IWDTFNumbers2.Count, Microsoft::WDTF::IWDTFNumbers2::Count, dtf.iwdtfnumbers2_count, get_Count, wdtf/IWDTFNumbers2::Count, wdtf/IWDTFNumbers2::get_Count
 req.header: wdtf.h
@@ -38,12 +37,10 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFNumbers2.Count
- - IWDTFNumbers2.get_Count
+ - IWDTFNumbers2::get_Count
 ---
 
 # IWDTFNumbers2::get_Count
-
 
 ## -description
 
@@ -52,6 +49,10 @@ Gets the number of numbers in the collection.
 This property is read-only.
 
 ## -parameters
+
+### -param pVal
+
+## -returns
 
 ## -see-also
 

@@ -4,7 +4,6 @@ title: FWPS_VSWITCH_POLICY_EVENT_CALLBACK0 (fwpsk.h)
 description: The filter engine calls the vSwitchPolicyEventNotifyFn (FWPS_VSWITCH_POLICY_EVENT_CALLBACK0) callout function to notify the callout driver about virtual switch policy events.Note  FWPS_VSWITCH_POLICY_EVENT_CALLBACK0 is a specific version of FWPS_VSWITCH_POLICY_EVENT_CALLBACK. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
 old-location: netvista\fwps_vswitch_policy_event_callback0.htm
 tech.root: netvista
-ms.assetid: 8D0F61E2-A891-4D51-9E33-BFA491B95505
 ms.date: 05/02/2018
 keywords: ["FWPS_VSWITCH_POLICY_EVENT_CALLBACK0 callback function"]
 ms.keywords: FWPS_VSWITCH_POLICY_EVENT_CALLBACK0, FWPS_VSWITCH_POLICY_EVENT_CALLBACK0 callback, fwpsk/vSwitchPolicyEventNotifyFn, netvista.fwps_vswitch_policy_event_callback0, vSwitchPolicyEventNotifyFn, vSwitchPolicyEventNotifyFn callback function [Network Drivers Starting with Windows Vista]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - fwpsk.h
 api_name:
- - vSwitchPolicyEventNotifyFn
+ - FWPS_VSWITCH_POLICY_EVENT_CALLBACK0
 ---
 
 # FWPS_VSWITCH_POLICY_EVENT_CALLBACK0 callback function
@@ -53,38 +52,38 @@ The filter engine calls the <i>vSwitchPolicyEventNotifyFn</i> (<i>FWPS_VSWITCH_P
 
 ## -parameters
 
-### -param notifyContext 
+### -param notifyContext [in, optional]
 
-[in, optional]
+
 A pointer to a context provided by the callout driver. The driver passed this pointer to the <i>notifyContext</i> parameter of the <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsvswitcheventssubscribe0">FwpsvSwitchEventsSubscribe0</a>
  function. This parameter is optional and can be NULL.
 
-### -param completionContext 
+### -param completionContext [in]
 
-[in]
+
 A pointer to a completion context provided by the callout driver. This parameter is optional and can be NULL.
 
-### -param eventType 
+### -param eventType [in]
 
-[in]
+
 The type of virtual switch event  specified as one of the <a href="/windows-hardware/drivers/ddi/fwpsk/ne-fwpsk-fwps_vswitch_event_type_">FWPS_VSWITCH_EVENT_TYPE</a> enumeration values. For more information, see Remarks.
 
-### -param vSwitch 
+### -param vSwitch [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_parameters">NDIS_SWITCH_PARAMETERS</a> structure that contains information about a virtual switch.
 
 <div class="alert"><b>Note</b>  The information in the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_parameters">NDIS_SWITCH_PARAMETERS</a> structure reflects the initial state of the virtual switch, not necessarily its current state. In particular, the <b>NumSwitchPorts</b> and <b>IsActive</b> members might still have their initial value of zero, unless a virtual switch PnP event has been triggered. Current state information can be found in the other parameters to this callback function.</div>
 <div> </div>
 
-### -param vSwitchPortProperty 
+### -param vSwitchPortProperty [in, optional]
 
-[in, optional]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_parameters">NDIS_SWITCH_PORT_PROPERTY_PARAMETERS</a> structure. The virtual switch port property.
 
-### -param vSwitchPortPropertyDelete 
+### -param vSwitchPortPropertyDelete [in, optional]
 
-[in, optional]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_delete_parameters">NDIS_SWITCH_PORT_PROPERTY_DELETE_PARAMETERS</a> structure. The virtual switch port property.
 
 ## -returns
@@ -202,3 +201,4 @@ If the callout returns STATUS_PENDING from <i>vSwitchPolicyEventNotifyFn</i>, WF
 
 
 <a href="/windows-hardware/drivers/network/oid-switch-port-property-update">OID_SWITCH_PORT_PROPERTY_UPDATE</a>
+

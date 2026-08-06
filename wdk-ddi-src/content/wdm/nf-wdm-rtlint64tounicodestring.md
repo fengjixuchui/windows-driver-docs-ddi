@@ -4,7 +4,6 @@ title: RtlInt64ToUnicodeString function (wdm.h)
 description: The RtlInt64ToUnicodeString routine converts a specified unsigned 64-bit integer value to a Unicode string that represents the value in a specified base.
 old-location: kernel\rtlint64tounicodestring.htm
 tech.root: kernel
-ms.assetid: 36f146a7-cdc2-4b88-bd9a-5008bf94c180
 ms.date: 04/30/2018
 keywords: ["RtlInt64ToUnicodeString function"]
 ms.keywords: RtlInt64ToUnicodeString, RtlInt64ToUnicodeString routine [Kernel-Mode Driver Architecture], k109_b6248e50-c6e8-4c61-a9f0-83fb434bd69c.xml, kernel.rtlint64tounicodestring, wdm/RtlInt64ToUnicodeString
@@ -50,14 +49,14 @@ The <b>RtlInt64ToUnicodeString</b> routine converts a specified unsigned 64-bit 
 
 ## -parameters
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies the ULONGLONG value to convert.
 
-### -param Base 
+### -param Base [in, optional]
 
-[in, optional]
+
 Specifies the base to use when converting <i>Value</i> to a string. The possible values are:
 
 <table>
@@ -107,9 +106,9 @@ Decimal
 </tr>
 </table>
 
-### -param String 
+### -param String [in, out]
 
-[in, out]
+
 Pointer to the <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that receives the string representation of <i>Value</i>. The buffer specified by the <i>Buffer</i>  of <i>String</i> must be large enough to hold the result.
 
 ## -returns

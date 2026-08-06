@@ -2,17 +2,15 @@
 UID: NF:printerextension.IPrinterScriptableStream.Seek
 title: IPrinterScriptableStream::Seek (printerextension.h)
 description: Sets the seek pointer.
-old-location: print\iprinterscriptablestream__seek.htm
 tech.root: print
-ms.assetid: 82080353-2252-4BF2-B7F4-F297DCA99FA0
-ms.date: 04/20/2018
+ms.date: 08/02/2022
 keywords: ["IPrinterScriptableStream::Seek"]
 ms.keywords: IPrinterScriptableStream interface [Print Devices],Seek method, IPrinterScriptableStream.Seek, IPrinterScriptableStream::Seek, Seek, Seek method [Print Devices], Seek method [Print Devices],IPrinterScriptableStream interface, print.iprinterscriptablestream__seek, printerextension/IPrinterScriptableStream::Seek
 req.header: printerextension.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 
@@ -38,11 +36,8 @@ api_type:
 api_location:
  - Printerextension.h
 api_name:
- - IPrinterScriptableStream.Seek
+ - IPrinterScriptableStream::Seek
 ---
-
-# IPrinterScriptableStream::Seek
-
 
 ## -description
 
@@ -50,25 +45,22 @@ Sets the seek pointer.
 
 ## -parameters
 
-### -param lOffset 
+### -param lOffset [in]
 
-[in]
-The displacement to be added to the location indicated by the <i>streamSeek</i> parameter.
+The displacement to be added to the location indicated by the *streamSeek* parameter.
 
-### -param streamSeek 
+### -param streamSeek [in]
 
-[in]
-The origin for the displacement specified <i>lOffset</i>.
+The origin for the displacement specified *lOffset*.
 
-### -param plPosition 
+### -param plPosition [out, retval]
 
-[out, retval]
 The new pointer position.
 
 ## -returns
 
-This method returns an <b>HRESULT</b> value.
+This method returns an **HRESULT** value.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterscriptablestream">IPrinterScriptableStream</a>
+[IPrinterScriptableStream](./nn-printerextension-iprinterscriptablestream.md)

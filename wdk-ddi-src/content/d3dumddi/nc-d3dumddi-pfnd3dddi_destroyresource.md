@@ -4,7 +4,6 @@ title: PFND3DDDI_DESTROYRESOURCE (d3dumddi.h)
 description: The DestroyResource function releases a specified resource.
 old-location: display\destroyresource.htm
 tech.root: display
-ms.assetid: 1af85315-4367-49de-9453-eef62c838c97
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DESTROYRESOURCE callback function"]
 ms.keywords: DestroyResource, DestroyResource callback function [Display Devices], PFND3DDDI_DESTROYRESOURCE, PFND3DDDI_DESTROYRESOURCE callback, UserModeDisplayDriver_Functions_7d6c0444-aa22-4348-9da4-9708414284e9.xml, d3dumddi/DestroyResource, display.destroyresource
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - DestroyResource
-product:
- - Windows
+ - PFND3DDDI_DESTROYRESOURCE
 ---
 
 # PFND3DDDI_DESTROYRESOURCE callback function
@@ -56,7 +53,7 @@ The <b>DestroyResource</b> function releases a specified resource.
 
 A handle to the display device (graphics context) that is used to destroy the resource.
 
-### -param Arg2
+### -param unnamedParam2
 
 *hResource* [in]
 
@@ -95,3 +92,4 @@ For more information about creating and destroying resources, see <a href="/wind
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_rendercb">pfnRenderCb</a>
+

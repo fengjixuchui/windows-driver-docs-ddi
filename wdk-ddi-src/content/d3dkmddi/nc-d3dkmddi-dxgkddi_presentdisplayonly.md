@@ -3,7 +3,6 @@ UID: NC:d3dkmddi.DXGKDDI_PRESENTDISPLAYONLY
 title: DXGKDDI_PRESENTDISPLAYONLY (d3dkmddi.h)
 description: Presents the screen image to the display device of a kernel mode display-only driver (KMDOD).
 old-location: display\dxgkddipresentdisplayonly.htm
-ms.assetid: b68839e3-ad82-4fcc-8e5a-02dea5db08d9
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_PRESENTDISPLAYONLY callback function"]
 ms.keywords: DXGKDDI_PRESENTDISPLAYONLY, DXGKDDI_PRESENTDISPLAYONLY callback, DxgkDdiPresentDisplayOnly, DxgkDdiPresentDisplayOnly callback function [Display Devices], d3dkmddi/DxgkDdiPresentDisplayOnly, display.dxgkddipresentdisplayonly
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3dkmddi.h
 api_name:
- - DxgkDdiPresentDisplayOnly
-product:
- - Windows
+ - DXGKDDI_PRESENTDISPLAYONLY
 ---
 
 # DXGKDDI_PRESENTDISPLAYONLY callback function
@@ -110,3 +107,4 @@ The operating system guarantees that this function follows the  zero level  sync
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a>
+

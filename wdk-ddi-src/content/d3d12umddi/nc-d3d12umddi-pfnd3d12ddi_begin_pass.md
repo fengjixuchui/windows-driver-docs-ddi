@@ -3,11 +3,8 @@ UID: NC:d3d12umddi.PFND3D12DDI_BEGIN_PASS
 title: PFND3D12DDI_BEGIN_PASS (d3d12umddi.h)
 description: The driver is notified that the app has started of a pass of consistent workloads.
 tech.root: display
-ms.assetid: 05d0f76c-4a82-433c-9d97-a4fb2c4b4e1a
 ms.date: 11/28/2018
 keywords: ["PFND3D12DDI_BEGIN_PASS callback function"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: d3d12umddi.h
 req.include-header: 
 req.target-type: 
@@ -37,8 +34,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_BEGIN_PASS
-product:
- - Windows
 ---
 
 # PFND3D12DDI_BEGIN_PASS callback function
@@ -50,11 +45,11 @@ The driver is notified that the app has started of a pass of consistent workload
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the driver's data for the command list. The driver uses this region of memory to store internal data structures that are related to its command list.
 
-### -param Arg2
+### -param unnamedParam2
 
 A handle to the pass that was created by the app.
 

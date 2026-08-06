@@ -4,7 +4,6 @@ title: _DXGK_FAULT_ERROR_CODE (d3dkmdt.h)
 description: The DXGK_FAULT_ERROR_CODE structure provides a status code for the graphics processing unit (GPU) error reported via a page fault interrupt.
 old-location: display\dxgk_fault_error_code.htm
 tech.root: display
-ms.assetid: 753FC177-D430-40E5-98CD-B3BDFD47ACEF
 ms.date: 05/10/2018
 keywords: ["DXGK_FAULT_ERROR_CODE structure"]
 ms.keywords: DXGK_FAULT_ERROR_CODE, DXGK_FAULT_ERROR_CODE structure [Display Devices], _DXGK_FAULT_ERROR_CODE, d3dkmdt/DXGK_FAULT_ERROR_CODE, display.dxgk_fault_error_code
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmdt.h
 api_name:
+ - _DXGK_FAULT_ERROR_CODE
  - DXGK_FAULT_ERROR_CODE
 ---
 
@@ -77,3 +77,4 @@ A device specific error code.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmdt/ne-d3dkmdt-_dxgk_general_error_code">DXGK_GENERAL_ERROR_CODE</a>
+

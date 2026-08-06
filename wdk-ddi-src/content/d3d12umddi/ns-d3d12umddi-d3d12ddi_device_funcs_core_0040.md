@@ -1,8 +1,7 @@
 ---
 UID: NS:d3d12umddi.D3D12DDI_DEVICE_FUNCS_CORE_0040
 title: D3D12DDI_DEVICE_FUNCS_CORE_0040 (d3d12umddi.h)
-description: Core device functions.
-ms.assetid: f4a40b3b-ce5e-4591-aab6-236297623a46
+description: The D3D12DDI_DEVICE_FUNCS_CORE_0040 structure contains core device functions for user-mode display drivers.
 ms.date: 10/19/2018
 keywords: ["D3D12DDI_DEVICE_FUNCS_CORE_0040 structure"]
 ms.keywords: D3D12DDI_DEVICE_FUNCS_CORE_0040, D3D12DDI_DEVICE_FUNCS_CORE_0040,
@@ -32,8 +31,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - D3D12DDI_DEVICE_FUNCS_CORE_0040
-product:
- - Windows
 ---
 
 # D3D12DDI_DEVICE_FUNCS_CORE_0040 structure

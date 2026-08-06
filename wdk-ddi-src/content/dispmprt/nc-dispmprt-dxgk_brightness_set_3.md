@@ -2,7 +2,6 @@
 UID: NC:dispmprt.DXGK_BRIGHTNESS_SET_3
 title: DXGK_BRIGHTNESS_SET_3 (dispmprt.h)
 description: DxgkBrightnessSet3 Directs the driver to linearly ramp the brightness from its current brightness level to a target brightness level over a specified length of time.
-ms.assetid: 8466303f-b811-43e0-91e2-4322a5f3fa83
 ms.date: 10/19/2018
 keywords: ["DXGK_BRIGHTNESS_SET_3 callback function"]
 req.header: dispmprt.h
@@ -35,8 +34,6 @@ api_location:
  - dispmprt.h
 api_name:
  - DXGK_BRIGHTNESS_SET_3
-product:
- - Windows
 ---
 
 # DXGK_BRIGHTNESS_SET_3 callback function
@@ -48,17 +45,17 @@ product:
 
 ## -parameters
 
-### -param Context
+### -param Context [in]
 
-[in] Context pointer provided when querying the interface.
+Context pointer provided when querying the interface.
 
-### -param ChildUid
+### -param ChildUid [in]
 
-[in] An integer that uniquely identifies the child device. The display miniport driver's [DxgkDdiQueryChildRelations](../dispmprt/nc-dispmprt-dxgkddi_query_child_relations.md) function previously provided this identifier to the display port driver.
+An integer that uniquely identifies the child device. The display miniport driver's [DxgkDdiQueryChildRelations](../dispmprt/nc-dispmprt-dxgkddi_query_child_relations.md) function previously provided this identifier to the display port driver.
 
-### -param pIn:
+### -param pIn: [in]
 
-[in] A [DXGK_BRIGHTNESS_SET_IN](../d3dkmdt/ns-d3dkmdt-_dxgk_brightness_set_in.md) structure that contains the input parameters for the set brightness call.
+A [DXGK_BRIGHTNESS_SET_IN](../d3dkmdt/ns-d3dkmdt-_dxgk_brightness_set_in.md) structure that contains the input parameters for the set brightness call.
 
 ## -returns
 

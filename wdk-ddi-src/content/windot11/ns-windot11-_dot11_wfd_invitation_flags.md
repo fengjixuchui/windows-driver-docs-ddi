@@ -4,7 +4,6 @@ title: _DOT11_WFD_INVITATION_FLAGS (windot11.h)
 description: The DOT11_WFD_INVITATION_FLAGS structure represents the Invitation Attributes used during the Invitation procedure.
 old-location: netvista\dot11_wfd_invitation_flags.htm
 tech.root: netvista
-ms.assetid: 9743FF37-0E8A-499F-AADB-9CD7BDC381E0
 ms.date: 02/16/2018
 keywords: ["DOT11_WFD_INVITATION_FLAGS structure"]
 ms.keywords: "*PDOT11_WFD_INVITATION_FLAGS, DOT11_WFD_INVITATION_FLAGS, DOT11_WFD_INVITATION_FLAGS structure [Network Drivers Starting with Windows Vista], Join, PDOT11_WFD_INVITATION_FLAGS, PDOT11_WFD_INVITATION_FLAGS structure pointer [Network Drivers Starting with Windows Vista], Reinvoke, _DOT11_WFD_INVITATION_FLAGS, netvista.dot11_wfd_invitation_flags, windot11/DOT11_WFD_INVITATION_FLAGS, windot11/PDOT11_WFD_INVITATION_FLAGS"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - Windot11.h
 api_name:
+ - _DOT11_WFD_INVITATION_FLAGS
+ - PDOT11_WFD_INVITATION_FLAGS
  - DOT11_WFD_INVITATION_FLAGS
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_WFD_INVITATION_FLAGS structure
@@ -52,15 +51,14 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The <b>DOT11_WFD_INVITATION_FLAGS</b> structure represents the Invitation Attributes used during the Invitation procedure.
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The <b>DOT11_WFD_INVITATION_FLAGS</b> structure represents the Invitation Attributes used during the Invitation procedure.
 
 ## -struct-fields
 
 ### -field InvitationType
-
-### -field Reserved
-
-#### - InvitationType:1
 
 The type of group invitation. The invitation types have the following meanings.
 
@@ -76,7 +74,7 @@ The type of group invitation. The invitation types have the following meanings.
 </dl>
 </td>
 <td width="60%">
-An invitiation to join an active group.
+An invitation to join an active group.
 
 </td>
 </tr>
@@ -95,7 +93,7 @@ The invitation is reinvoked.
  
 
 
-#### - Reserved:7
+### -field Reserved
 
 Reserved.
 
@@ -107,3 +105,4 @@ typedef struct _DOT11_WFD_INVITATION_FLAGS {
   UCHAR Reserved:7;
 } DOT11_WFD_INVITATION_FLAGS, *PDOT11_WFD_INVITATION_FLAGS;
 ```
+

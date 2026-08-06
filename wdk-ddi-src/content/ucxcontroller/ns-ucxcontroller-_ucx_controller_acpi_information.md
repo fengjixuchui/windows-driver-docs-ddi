@@ -4,7 +4,6 @@ title: _UCX_CONTROLLER_ACPI_INFORMATION (ucxcontroller.h)
 description: This structure provides information about an advanced Configuration and power interface (ACPI) USB controller.
 old-location: buses\_ucx_controller_acpi_information.htm
 tech.root: usbref
-ms.assetid: BB5C69FF-166A-4A38-BF5E-FD644FCD1285
 ms.date: 05/07/2018
 keywords: ["UCX_CONTROLLER_ACPI_INFORMATION structure"]
 ms.keywords: "*PUCX_CONTROLLER_ACPI_INFORMATION, P_UCX_CONTROLLER_ACPI_INFORMATION, P_UCX_CONTROLLER_ACPI_INFORMATION structure pointer [Buses], UCX_CONTROLLER_ACPI_INFORMATION, UCX_CONTROLLER_ACPI_INFORMATION structure [Buses], _UCX_CONTROLLER_ACPI_INFORMATION, buses._ucx_controller_acpi_information, ucxcontroller/P_UCX_CONTROLLER_ACPI_INFORMATION, ucxcontroller/_UCX_CONTROLLER_ACPI_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ucxcontroller.h
 api_name:
+ - _UCX_CONTROLLER_ACPI_INFORMATION
+ - PUCX_CONTROLLER_ACPI_INFORMATION
  - UCX_CONTROLLER_ACPI_INFORMATION
 ---
 
@@ -73,3 +74,4 @@ The revision ID of the ACPI USB controller.
 
 
 <a href="/windows-hardware/drivers/ddi/ucxcontroller/nf-ucxcontroller-ucx_controller_config_set_acpi_info">UCX_CONTROLLER_CONFIG_SET_ACPI_INFO</a>
+

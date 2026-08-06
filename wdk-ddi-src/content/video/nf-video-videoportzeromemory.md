@@ -4,7 +4,6 @@ title: VideoPortZeroMemory function (video.h)
 description: The VideoPortZeroMemory function fills a block of system memory with zeros.
 old-location: display\videoportzeromemory.htm
 tech.root: display
-ms.assetid: 96827d2e-0fee-4276-a758-82f5b7383eec
 ms.date: 05/10/2018
 keywords: ["VideoPortZeroMemory function"]
 ms.keywords: VideoPortZeroMemory, VideoPortZeroMemory function [Display Devices], VideoPort_Functions_518c5fa4-2011-47bd-a24c-0dff144dfa3a.xml, display.videoportzeromemory, video/VideoPortZeroMemory
@@ -50,9 +49,9 @@ The <b>VideoPortZeroMemory</b> function fills a block of system memory with zero
 
 ## -parameters
 
-### -param Destination 
+### -param Destination [out]
 
-[out]
+
 Specifies the starting address of the block of memory. This value must be in a mapped logical range returned by <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportgetdevicebase">VideoPortGetDeviceBase</a>.
 
 ### -param Length

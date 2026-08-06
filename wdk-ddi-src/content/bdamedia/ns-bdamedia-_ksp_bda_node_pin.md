@@ -4,7 +4,6 @@ title: _KSP_BDA_NODE_PIN (bdamedia.h)
 description: The KSP_BDA_NODE_PIN structure describes a property request to retrieve the controlling pin for a node.
 old-location: stream\ksp_bda_node_pin.htm
 tech.root: stream
-ms.assetid: 684a0b26-0e25-44fb-bca9-c86ac029b3b8
 ms.date: 04/23/2018
 keywords: ["KSP_BDA_NODE_PIN structure"]
 ms.keywords: "*PKSP_BDA_NODE_PIN, KSP_BDA_NODE_PIN, KSP_BDA_NODE_PIN structure [Streaming Media Devices], PKSP_BDA_NODE_PIN, PKSP_BDA_NODE_PIN structure pointer [Streaming Media Devices], _KSP_BDA_NODE_PIN, bdamedia/KSP_BDA_NODE_PIN, bdamedia/PKSP_BDA_NODE_PIN, bdaref_5e3a84db-906c-4d12-863d-9a77b2f7d78c.xml, stream.ksp_bda_node_pin"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - bdamedia.h
 api_name:
+ - _KSP_BDA_NODE_PIN
+ - PKSP_BDA_NODE_PIN
  - KSP_BDA_NODE_PIN
 ---
 
@@ -80,8 +81,9 @@ Identifier of an output pin of the filter.
 
 
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
 <a href="/windows-hardware/drivers/stream/kspropsetid-bdatopology">KSPROPSETID_BdaTopology</a>
+

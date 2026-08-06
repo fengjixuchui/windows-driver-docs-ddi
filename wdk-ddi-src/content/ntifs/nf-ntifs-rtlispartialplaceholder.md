@@ -4,14 +4,13 @@ title: RtlIsPartialPlaceholder function (ntifs.h)
 description: The RtlIsPartialPlaceholder routine determines if a file or a directory is a CloudFiles placeholder, based on the FileAttributes and ReparseTag values of the file.
 old-location: ifsk\rtlispartialplaceholder.htm
 tech.root: ifsk
-ms.assetid: FB47F5BE-76B4-4A99-A15F-DE3E11D1DA2B
 ms.date: 04/16/2018
 keywords: ["RtlIsPartialPlaceholder function"]
 ms.keywords: RtlIsPartialPlaceholder, RtlIsPartialPlaceholder routine [Installable File System Drivers], ifsk.rtlispartialplaceholder, ntifs/RtlIsPartialPlaceholder
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows 10, version 1709.
+req.target-min-winverclnt: Windows 10, version 1709.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -51,14 +50,14 @@ The <b>RtlIsPartialPlaceholder</b> routine determines if a file or a directory i
 
 ## -parameters
 
-### -param FileAttributes 
+### -param FileAttributes [in]
 
-[in]
+
 Specifies the file attributes of a file or directory.
 
-### -param ReparseTag 
+### -param ReparseTag [in]
 
-[in]
+
 The ReparseTag or EaSize of a file or directory.
 
 ## -returns

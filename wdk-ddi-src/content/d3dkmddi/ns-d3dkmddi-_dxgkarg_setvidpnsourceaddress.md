@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGKARG_SETVIDPNSOURCEADDRESS
 title: _DXGKARG_SETVIDPNSOURCEADDRESS (d3dkmddi.h)
 description: The DXGKARG_SETVIDPNSOURCEADDRESS structure contains arguments for the DxgkDdiSetVidPnSourceAddress function.
 old-location: display\dxgkarg_setvidpnsourceaddress.htm
-ms.assetid: b83736b6-17c5-43b8-9204-d165fe07853b
 ms.date: 05/10/2018
 keywords: ["DXGKARG_SETVIDPNSOURCEADDRESS structure"]
 ms.keywords: DXGKARG_SETVIDPNSOURCEADDRESS, DXGKARG_SETVIDPNSOURCEADDRESS structure [Display Devices], DmStructs_f179199a-3747-4086-8e77-5434a3e287a1.xml, _DXGKARG_SETVIDPNSOURCEADDRESS, d3dkmddi/DXGKARG_SETVIDPNSOURCEADDRESS, display.dxgkarg_setvidpnsourceaddress
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_SETVIDPNSOURCEADDRESS
  - DXGKARG_SETVIDPNSOURCEADDRESS
 ---
 
@@ -64,21 +64,21 @@ The identifier of the segment that contains the source's primary surface.
 
 The address, within the segment identified by <i>PrimarySegment</i>, of the source's primary surface.
 
-### -field hAllocation
+### -field hAllocation [in]
 
-[in] If non-NULL, a handle that the display miniport driver assigned to the allocation and returned from its call to the <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation">DxgkDdiCreateAllocation</a> function. The driver must reprogram graphics hardware according to the specific private properties of the allocation, which include but are not limited to pitch size, swizzle format, and so on.
+If non-NULL, a handle that the display miniport driver assigned to the allocation and returned from its call to the <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation">DxgkDdiCreateAllocation</a> function. The driver must reprogram graphics hardware according to the specific private properties of the allocation, which include but are not limited to pitch size, swizzle format, and so on.
 
-### -field ContextCount
+### -field ContextCount [in]
 
-[in] The number of contexts in the array that the <b>Context</b> member specifies.
+The number of contexts in the array that the <b>Context</b> member specifies.
 
-### -field Context
+### -field Context [in]
 
-[in] An array of handles to the contexts that contributed to a display operation.
+An array of handles to the contexts that contributed to a display operation.
 
-### -field Flags
+### -field Flags [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_setvidpnsourceaddress_flags">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a> structure that identifies the type of display operation to perform.
+A <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_setvidpnsourceaddress_flags">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a> structure that identifies the type of display operation to perform.
 
 ### -field Duration
 
@@ -109,3 +109,4 @@ For display mode-switch operations, the <b>ContextCount</b> member is always set
 
 
 <a href="/previous-versions/windows/hardware/drivers/ff560767(v=vs.85)">DxgkDdiSetVidPnSourceAddress</a>
+

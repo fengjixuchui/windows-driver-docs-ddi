@@ -3,7 +3,6 @@ UID: NF:rsc.NetExtensionGetPacketRscTimestamp
 title: NetExtensionGetPacketRscTimestamp function (rsc.h)
 description: The NetExtensionGetPacketRscTimestamp function retrieves receive segment coalescence (RSC) timestamp information for a packet.
 tech.root: netvista
-ms.assetid: 7562250c-17c0-4d59-9b0f-74f856752469
 ms.date: 09/24/2019
 keywords: ["NetExtensionGetPacketRscTimestamp function"]
 ms.keywords: NetExtensionGetPacketRscTimestamp
@@ -13,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -37,8 +36,6 @@ api_location:
  - rsc.h
 api_name:
  - NetExtensionGetPacketRscTimestamp
-product:
- - Windows
 ---
 
 # NetExtensionGetPacketRscTimestamp function

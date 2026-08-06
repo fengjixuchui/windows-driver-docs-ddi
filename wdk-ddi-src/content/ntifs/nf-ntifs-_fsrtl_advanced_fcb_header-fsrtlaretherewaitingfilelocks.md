@@ -4,7 +4,6 @@ title: FsRtlAreThereWaitingFileLocks function (ntifs.h)
 description: The FsRtlAreThereWaitingFileLocks routine checks a file lock queue for any waiting file locks.
 old-location: ifsk\fsrtlaretherewaitingfilelocks.htm
 tech.root: ifsk
-ms.assetid: 92093588-DD44-4503-8803-7E47F178A728
 ms.date: 04/16/2018
 keywords: ["FsRtlAreThereWaitingFileLocks function"]
 ms.keywords: FsRtlAreThereWaitingFileLocks, FsRtlAreThereWaitingFileLocks routine [Installable File System Drivers], ifsk.fsrtlaretherewaitingfilelocks, ntifs/FsRtlAreThereWaitingFileLocks
@@ -50,9 +49,9 @@ The <b>FsRtlAreThereWaitingFileLocks</b> routine checks a file lock queue for an
 
 ## -parameters
 
-### -param FileLock 
+### -param FileLock [in]
 
-[in]
+
 The file lock that specifies locked ranges.
 
 ## -returns

@@ -3,7 +3,9 @@
   "headers": [
     "spb.h",
     "spbcx.h",
-    "pwmutil.h"
+    "reshub.h", 
+    "pwmutil.h",
+    "spbfuncenum.h"
   ],
   "displayName": "Simple Peripheral Bus (SPB)"
 }

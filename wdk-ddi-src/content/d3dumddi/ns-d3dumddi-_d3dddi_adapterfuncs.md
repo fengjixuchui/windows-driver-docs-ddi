@@ -4,7 +4,6 @@ title: _D3DDDI_ADAPTERFUNCS (d3dumddi.h)
 description: The D3DDDI_ADAPTERFUNCS structure contains functions that the user-mode display driver can implement to communicate with a graphics adapter object.
 old-location: display\d3dddi_adapterfuncs.htm
 tech.root: display
-ms.assetid: bbf4852c-0fa5-47c0-a77e-7114b2a77549
 ms.date: 05/10/2018
 keywords: ["D3DDDI_ADAPTERFUNCS structure"]
 ms.keywords: D3DDDI_ADAPTERFUNCS, D3DDDI_ADAPTERFUNCS structure [Display Devices], D3D_other_Structs_2397321f-704c-4c93-bbd1-b7591134294c.xml, _D3DDDI_ADAPTERFUNCS, d3dumddi/D3DDDI_ADAPTERFUNCS, display.d3dddi_adapterfuncs
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDI_ADAPTERFUNCS
  - D3DDDI_ADAPTERFUNCS
 ---
 
@@ -95,3 +95,4 @@ typedef HRESULT (APIENTRY *PFND3DDDI_CLOSEADAPTER)(IN HANDLE hAdapter);
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_openadapter">OpenAdapter</a>
+

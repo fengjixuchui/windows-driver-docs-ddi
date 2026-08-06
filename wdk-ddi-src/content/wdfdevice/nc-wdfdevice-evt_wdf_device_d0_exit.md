@@ -4,8 +4,7 @@ title: EVT_WDF_DEVICE_D0_EXIT (wdfdevice.h)
 description: A driver's EvtDeviceD0Exit event callback function performs operations that are needed when the driver's device leaves the D0 power state.
 old-location: wdf\evtdeviced0exit.htm
 tech.root: wdf
-ms.assetid: bc3af732-f9ab-43a4-bc6f-7fa0b4c05a66
-ms.date: 02/26/2018
+ms.date: 07/21/2023
 keywords: ["EVT_WDF_DEVICE_D0_EXIT callback function"]
 ms.keywords: DFDeviceObjectGeneralRef_f2327720-a8e1-4e92-acb2-72378c3c5fb1.xml, EVT_WDF_DEVICE_D0_EXIT, EVT_WDF_DEVICE_D0_EXIT callback, EvtDeviceD0Exit, EvtDeviceD0Exit callback function, kmdf.evtdeviced0exit, wdf.evtdeviced0exit, wdfdevice/EvtDeviceD0Exit
 req.header: wdfdevice.h
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfdevice.h
 api_name:
- - EvtDeviceD0Exit
+ - EVT_WDF_DEVICE_D0_EXIT
 ---
 
 # EVT_WDF_DEVICE_D0_EXIT callback function
@@ -52,14 +51,14 @@ A driver's <i>EvtDeviceD0Exit</i> event callback function performs operations th
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param TargetState 
+### -param TargetState [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_power_device_state">WDF_POWER_DEVICE_STATE</a>-typed enumerator that identifies the device power state that the device is about to enter.
 
 ## -returns
@@ -100,10 +99,11 @@ The <i>EvtDeviceD0Exit</i> callback function must perform any operations that ar
 
 If the <i>TargetState</i> parameter is <b>WdfPowerDevicePrepareForHibernation</b>, the driver must not shut off the device, because the system will use the device when saving its hibernation file. 
 
-If <i>TargetState</i> is <b>WdfPowerDeviceD3Final</b>, you should assume that the system is being turned off, the device is about to be removed, or a <a href="/windows-hardware/drivers/wdf/the-pnp-manager-redistributes-system-resources">resource rebalance</a> is in progress. If your driver must save information, it should write it to disk or some other permanent storage medium. 
+If <i>TargetState</i> is <b>WdfPowerDeviceD3Final</b>, you should assume that the system is being turned off, the device is about to be removed, or a <a href="/windows-hardware/drivers/wdf/the-pnp-manager-redistributes-system-resources">resource rebalance</a> is in progress. If your driver must save information, it should write it to disk or some other permanent storage medium. However, it is incorrect to check **WdfPowerDeviceD3Final** and then do cleanup work for device removal. For example, if a device that has entered Dx power state because of idling out is then later surprise removed, its *EvtDeviceD0Exit* won't be called again. The correct place to do this work would be in [*EvtDeviceReleaseHardware*](/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_release_hardware) instead.
 
 For more information about drivers that provide this callback function, see <a href="/windows-hardware/drivers/wdf/supporting-pnp-and-power-management-in-function-drivers">Supporting PnP and Power Management in Function Drivers</a>.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_d0_entry">EvtDeviceD0Entry</a>
+

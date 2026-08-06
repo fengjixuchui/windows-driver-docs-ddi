@@ -4,7 +4,6 @@ title: _DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA (d3dumddi.h)
 description: The DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA structure describes data that specifies the background color to fill in the target rectangle of the output.
 old-location: display\dxvahdddi_blt_state_background_color_data.htm
 tech.root: display
-ms.assetid: 23eaa88a-a3c3-4630-92b0-d76b266a9c45
 ms.date: 05/10/2018
 keywords: ["DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA structure"]
 ms.keywords: DXVA2_Structs_d4f86ea1-cbdd-48ab-84ca-1bc64ba4c8db.xml, DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA, DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA structure [Display Devices], _DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA, d3dumddi/DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA, display.dxvahdddi_blt_state_background_color_data
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA
  - DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA
 ---
 
@@ -52,13 +52,13 @@ The DXVAHDDDI_BLT_STATE_BACKGROUND_COLOR_DATA structure describes data that spec
 
 ## -struct-fields
 
-### -field YCbCr
+### -field YCbCr [in]
 
-[in] A Boolean value that specifies whether the driver should determine whether the <b>BackgroundColor</b> member specifies a YCbCr or RGB color space. The default value is <b>FALSE</b>, which indicates a RGB color space. <b>TRUE</b> specifies a YCbCr color space.
+A Boolean value that specifies whether the driver should determine whether the <b>BackgroundColor</b> member specifies a YCbCr or RGB color space. The default value is <b>FALSE</b>, which indicates a RGB color space. <b>TRUE</b> specifies a YCbCr color space.
 
-### -field BackgroundColor
+### -field BackgroundColor [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvahdddi_color">DXVAHDDDI_COLOR</a> union that specifies the background color as either a YCbCr or RGB color space. The default value is full range RGB black with opaque alpha, that is (R,G,B,A) = (0.0,0.0,0.0,1.0).
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvahdddi_color">DXVAHDDDI_COLOR</a> union that specifies the background color as either a YCbCr or RGB color space. The default value is full range RGB black with opaque alpha, that is (R,G,B,A) = (0.0,0.0,0.0,1.0).
 
 ## -remarks
 
@@ -85,3 +85,4 @@ The alpha value of the background color is used when the DXVAHDDDI_ALPHA_FILL_MO
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_dxvahd_setvideoprocessbltstate">SetVideoProcessBltState</a>
+

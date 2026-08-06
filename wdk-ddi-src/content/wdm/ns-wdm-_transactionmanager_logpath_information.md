@@ -4,7 +4,6 @@ title: _TRANSACTIONMANAGER_LOGPATH_INFORMATION (wdm.h)
 description: The TRANSACTIONMANAGER_LOGPATH_INFORMATION structure contains information about a transaction manager object.
 old-location: kernel\transactionmanager_logpath_information.htm
 tech.root: kernel
-ms.assetid: 53d7e8a9-fc89-4b11-8bbb-e9b5b0504f5e
 ms.date: 04/30/2018
 keywords: ["TRANSACTIONMANAGER_LOGPATH_INFORMATION structure"]
 ms.keywords: "*PTRANSACTIONMANAGER_LOGPATH_INFORMATION, PTRANSACTIONMANAGER_LOGPATH_INFORMATION, PTRANSACTIONMANAGER_LOGPATH_INFORMATION structure pointer [Kernel-Mode Driver Architecture], TRANSACTIONMANAGER_LOGPATH_INFORMATION, TRANSACTIONMANAGER_LOGPATH_INFORMATION structure [Kernel-Mode Driver Architecture], _TRANSACTIONMANAGER_LOGPATH_INFORMATION, kernel.transactionmanager_logpath_information, ktm_ref_2e3d26b5-525c-4953-a871-7eb6535d926e.xml, wdm/PTRANSACTIONMANAGER_LOGPATH_INFORMATION, wdm/TRANSACTIONMANAGER_LOGPATH_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _TRANSACTIONMANAGER_LOGPATH_INFORMATION
+ - PTRANSACTIONMANAGER_LOGPATH_INFORMATION
  - TRANSACTIONMANAGER_LOGPATH_INFORMATION
 ---
 
@@ -73,3 +74,4 @@ The <b>TRANSACTIONMANAGER_LOGPATH_INFORMATION</b> structure is used with the <a 
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntqueryinformationtransactionmanager">ZwQueryInformationTransactionManager</a>
+

@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_DESTROYOVERLAY
 title: _D3DKMT_DESTROYOVERLAY (d3dkmthk.h)
 description: The D3DKMT_DESTROYOVERLAY structure contains the handle to the overlay to destroy.
 old-location: display\d3dkmt_destroyoverlay.htm
-ms.assetid: b1b8554f-8d6b-4c2e-b6b8-fcbfc97f5dd9
 ms.date: 05/10/2018
 keywords: ["D3DKMT_DESTROYOVERLAY structure"]
 ms.keywords: D3DKMT_DESTROYOVERLAY, D3DKMT_DESTROYOVERLAY structure [Display Devices], OpenGL_Structs_57b46d39-5b2c-4d58-9daa-e1460168fe55.xml, _D3DKMT_DESTROYOVERLAY, d3dkmthk/D3DKMT_DESTROYOVERLAY, display.d3dkmt_destroyoverlay
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_DESTROYOVERLAY
  - D3DKMT_DESTROYOVERLAY
 ---
 
@@ -52,14 +52,15 @@ The D3DKMT_DESTROYOVERLAY structure contains the handle to the overlay to destro
 
 ## -struct-fields
 
-### -field hDevice
+### -field hDevice [in]
 
-[in] A handle to the device that the overlay is associated with.
+A handle to the device that the overlay is associated with.
 
-### -field hOverlay
+### -field hOverlay [in]
 
-[in] A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the create-overlay function and that identifies the kernel-mode overlay object to destroy.
+A D3DKMT_HANDLE data type that represents the kernel-mode handle that is returned by the create-overlay function and that identifies the kernel-mode overlay object to destroy.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtdestroyoverlay">D3DKMTDestroyOverlay</a>
+

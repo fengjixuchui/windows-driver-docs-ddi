@@ -2,9 +2,7 @@
 UID: NS:d3d12umddi.D3D12DDI_PROTECTED_RESOURCE_SESSION_TYPE_COUNT_DATA_0074
 title: D3D12DDI_PROTECTED_RESOURCE_SESSION_TYPE_COUNT_DATA_0074
 ms.date: 03/24/2020
-ms.topic: language-reference
 targetos: Windows
-ms.assetid: 0729f26c-ae31-4617-911d-5b71c7d4bf14
 tech.root: display
 description: Count of protected resource session types.
 req.construct-type: structure
@@ -43,13 +41,13 @@ Count of protected resource session types.
 
 ## -struct-fields
 
-### -field NodeIndex
+### -field NodeIndex [in]
 
-[in] In multi-adapter operation, **NodeIndex** indicates which physical adapter of the device this operation applies to.
+In multi-adapter operation, **NodeIndex** indicates which physical adapter of the device this operation applies to.
 
-### -field Count
+### -field Count [out]
 
-[out] Number of protected resource session types supported by the driver.
+Number of protected resource session types supported by the driver.
 
 ## -remarks
 

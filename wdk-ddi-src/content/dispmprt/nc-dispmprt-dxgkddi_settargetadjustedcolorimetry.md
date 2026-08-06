@@ -1,10 +1,9 @@
 ---
 UID: NC:dispmprt.DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY
 title: DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY (dispmprt.h)
-description: Reports the colorimetry values selected by the OS for a target.
+description: The DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY callback function reports the colorimetry values selected by the OS for a target.
 old-location: display\dxgkddi_settargetadjustedcolorimetry.htm
 tech.root: display
-ms.assetid: C37E0DE1-E849-440F-A11A-BB0E3F50BDFA
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY callback function"]
 ms.keywords: DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY, DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY callback, DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY callback function [Display Devices], display.dxgkddi_settargetadjustedcolorimetry, dispmprt/DXGKDDI_SETTARGETADJUSTEDCOLORIMETRY
@@ -50,19 +49,19 @@ Reports the colorimetry values selected by the OS for a target.
 
 ## -parameters
 
-### -param hAdapter 
+### -param hAdapter [in]
 
-[in]
+
 [in] Identifies the adapter.
 
-### -param TargetId 
+### -param TargetId [in]
 
-[in]
+
 [in] The identifier of a display adapter's video present target.
 
-### -param AdjustedColorimetry 
+### -param AdjustedColorimetry [in]
 
-[in]
+
 [in] A DXGK_COLORIMETRY structure containing the colorimetry related fields for the monitor attached to this target after the OS has processed the display device descriptor, all overrides and any adjustments.
 
 ## -returns

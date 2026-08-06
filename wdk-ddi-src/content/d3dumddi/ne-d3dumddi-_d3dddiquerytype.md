@@ -2,7 +2,6 @@
 UID: NE:d3dumddi._D3DDDIQUERYTYPE
 title: _D3DDDIQUERYTYPE (d3dumddi.h)
 description: The query type.
-ms.assetid: dbaf8ce2-277d-4754-a4fc-c0969fdea2a1
 ms.date: 10/19/2018
 keywords: ["D3DDDIQUERYTYPE enumeration"]
 ms.keywords: _D3DDDIQUERYTYPE, D3DDDIQUERYTYPE,
@@ -32,8 +31,7 @@ api_location:
  - d3dumddi.h
 api_name:
  - _D3DDDIQUERYTYPE
-product:
- - Windows
+ - D3DDDIQUERYTYPE
 dev_langs:
  - c++
 ---
@@ -120,3 +118,4 @@ Query for device-dependent counters.
 ## -remarks
 
 ## -see-also
+

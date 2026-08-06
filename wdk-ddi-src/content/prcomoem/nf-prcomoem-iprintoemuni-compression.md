@@ -4,7 +4,6 @@ title: IPrintOemUni::Compression (prcomoem.h)
 description: The IPrintOemUni::Compression method can be used with Unidrv-supported printers to provide a customized bitmap compression method.
 old-location: print\iprintoemuni_compression.htm
 tech.root: print
-ms.assetid: 02524493-3842-462e-86f6-2ab35998c65e
 ms.date: 04/20/2018
 keywords: ["IPrintOemUni::Compression"]
 ms.keywords: Compression, Compression method [Print Devices], Compression method [Print Devices],IPrintOemUni interface, IPrintOemUni interface [Print Devices],Compression method, IPrintOemUni.Compression, IPrintOemUni::Compression, prcomoem/IPrintOemUni::Compression, print.iprintoemuni_compression, print_unidrv-pscript_rendering_47704483-1ab7-46a6-8a1e-07559fc6bde2.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemUni.Compression
+ - IPrintOemUni::Compression
 ---
 
 # IPrintOemUni::Compression
@@ -70,9 +69,9 @@ Caller-supplied length of the input data.
 
 Caller-supplied length of the output buffer.
 
-### -param piResult 
+### -param piResult [out]
 
-[out]
+
 Receives a method-supplied result value. If the operation succeeds, this value should be the number of compressed bytes, which must not be larger than the value received for <i>dwOutLen</i>. If an error occurs, or if the method cannot compress, the result value should be -1.
 
 ## -returns
@@ -136,3 +135,4 @@ If, after Unidrv tries all enabled compression methods, the compressed data retu
 If possible, the method's compression algorithm should use the received <i>dwOutLen</i> value to determine whether it can stop the algorithm before completion, to save time if another compression method has already created a better result.
 
 The <code>IPrintOemUni::Compression</code> method is optional. If a rendering plug-in implements this method, the plug-in's <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-getimplementedmethod">IPrintOemUni::GetImplementedMethod</a> method must return S_OK when it receives "Compression" as input.
+

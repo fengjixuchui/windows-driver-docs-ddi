@@ -4,7 +4,6 @@ title: FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0 (fwpsk.h)
 description: The filter engine calls the vSwitchFilterEngineReorderNotifyRn (FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0) callout function to notify the callout driver about events that are associated the virtual switch filter engine reordering.Note  FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0 is a specific version of FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
 old-location: netvista\fwps_vswitch_filter_engine_reorder_callback0.htm
 tech.root: netvista
-ms.assetid: 2526E8BD-316F-4B8D-9CC4-66F4E3B7D708
 ms.date: 05/02/2018
 keywords: ["FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0 callback function"]
 ms.keywords: FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0, FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0 callback, fwpsk/vSwitchFilterEngineReorderNotifyRn, netvista.fwps_vswitch_filter_engine_reorder_callback0, vSwitchFilterEngineReorderNotifyRn, vSwitchFilterEngineReorderNotifyRn callback function [Network Drivers Starting with Windows Vista]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - fwpsk.h
 api_name:
- - vSwitchFilterEngineReorderNotifyRn
+ - FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0
 ---
 
 # FWPS_VSWITCH_FILTER_ENGINE_REORDER_CALLBACK0 callback function
@@ -52,25 +51,25 @@ The filter engine calls the  <i>vSwitchFilterEngineReorderNotifyRn</i> (<i>FWPS_
 
 ## -parameters
 
-### -param notifyContext 
+### -param notifyContext [in, optional]
 
-[in, optional]
+
 A pointer to a context provided by the callout driver. The driver passed this pointer to the <i>notifyContext</i> parameter of the <a href="/windows-hardware/drivers/ddi/fwpsk/nf-fwpsk-fwpsvswitcheventssubscribe0">FwpsvSwitchEventsSubscribe0</a>
  function. This parameter is optional and can be NULL.
 
-### -param completionContext 
+### -param completionContext [in]
 
-[in]
+
 A pointer to a completion context provided by the callout driver. This parameter is optional and can be NULL.
 
-### -param isInRequiredPosition 
+### -param isInRequiredPosition [in]
 
-[in]
+
 A BOOLEAN value that is set to TRUE if the filter is in the required position in the filter stack or FALSE if it is not.
 
-### -param vSwitchExtensionLwfList 
+### -param vSwitchExtensionLwfList [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_enum_filters">NDIS_ENUM_FILTERS</a> structure that specifies a list of the virtual switch extension NDIS filter drivers.
 
 ## -returns
@@ -159,3 +158,4 @@ A callout driver cannot return STATUS_PENDING from <i>vSwitchFilterEngineReorder
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisfrestartcomplete">NdisFRestartComplete</a>
+

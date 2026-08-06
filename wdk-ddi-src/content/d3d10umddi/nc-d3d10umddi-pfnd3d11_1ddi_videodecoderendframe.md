@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEODECODERENDFRAME
 title: PFND3D11_1DDI_VIDEODECODERENDFRAME (d3d10umddi.h)
 description: Completes a DirectX Video Acceleration (DXVA) decoding operation for a video frame.
 old-location: display\videodecoderendframe.htm
-ms.assetid: f0110435-d060-4f4b-ad29-baaeb8fc2e0e
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_VIDEODECODERENDFRAME callback function"]
 ms.keywords: PFND3D11_1DDI_VIDEODECODERENDFRAME, PFND3D11_1DDI_VIDEODECODERENDFRAME callback, d3d10umddi/pfnVideoDecoderEndFrame, display.videodecoderendframe, pfnVideoDecoderEndFrame, pfnVideoDecoderEndFrame callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoDecoderEndFrame
+ - PFND3D11_1DDI_VIDEODECODERENDFRAME
 ---
 
 # PFND3D11_1DDI_VIDEODECODERENDFRAME callback function
@@ -50,13 +49,13 @@ Completes a DirectX Video Acceleration (DXVA) decoding operation for a video fra
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hDecoder* [in]
 
@@ -73,3 +72,4 @@ The <b>VideoDecoderEndFrame</b> completes the decoding operation that was starte
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_videodecoderbeginframe">VideoDecoderBeginFrame</a>
+

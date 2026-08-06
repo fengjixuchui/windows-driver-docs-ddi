@@ -4,7 +4,6 @@ title: AtaPortGetUnCachedExtension function (irb.h)
 description: The AtaPortGetUncachedExtension routine allocates an uncached common buffer that is shared by the CPU and the device.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\ataportgetuncachedextension.htm
 tech.root: storage
-ms.assetid: 7b81fc29-4906-4095-b197-6b63f5f01ac0
 ms.date: 03/29/2018
 keywords: ["AtaPortGetUnCachedExtension function"]
 ms.keywords: AtaPortGetUnCachedExtension, AtaPortGetUnCachedExtension routine [Storage Devices], atartns_30b7c0f0-5636-4d81-b1de-13d8c413f4d6.xml, irb/AtaPortGetUnCachedExtension, storage.ataportgetuncachedextension
@@ -54,19 +53,19 @@ The <b>AtaPortGetUncachedExtension</b> routine allocates an uncached common buff
 
 ## -parameters
 
-### -param ChannelExtension 
+### -param ChannelExtension [in]
 
-[in]
+
 A pointer to the channel extension.
 
-### -param UncachedExtensionSize 
+### -param UncachedExtensionSize [in]
 
-[in]
+
 Specifies the length, in bytes, of the uncached common buffer. Set this parameter to 0 if the miniport driver does not require an uncached extension.
 
-### -param IrbExtensionSize 
+### -param IrbExtensionSize [in]
 
-[in]
+
 Specifies the size, in bytes, that is required by the miniport driver for its per request storage, if any. 
 
 Set this parameter set to 0 if the miniport driver does not maintain per IRB information for which it requires storage.

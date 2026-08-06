@@ -1,11 +1,8 @@
 ---
 UID: NS:d3dkmddi._DXGK_VIRTUALMACHINEDATAFLAGS
-title: _DXGK_VIRTUALMACHINEDATAFLAGS (d3dkmddi.h)
+title: DXGK_VIRTUALMACHINEDATAFLAGS (d3dkmddi.h)
 description: The virtual machine data flags.
-ms.assetid: decc4a46-fe67-49bf-bf9e-067c184ec272
-ms.date: 10/19/2018
-keywords: ["DXGK_VIRTUALMACHINEDATAFLAGS structure"]
-ms.keywords: _DXGK_VIRTUALMACHINEDATAFLAGS, DXGK_VIRTUALMACHINEDATAFLAGS,
+ms.date: 02/06/2025
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: 
@@ -34,28 +31,35 @@ api_location:
  - d3dkmddi.h
 api_name:
  - _DXGK_VIRTUALMACHINEDATAFLAGS
-product:
- - Windows
+ - DXGK_VIRTUALMACHINEDATAFLAGS
 ---
 
-# _DXGK_VIRTUALMACHINEDATAFLAGS structure
-
+# DXGK_VIRTUALMACHINEDATAFLAGS structure
 
 ## -description
 
-The virtual machine data flags.
+The **DXGK_VIRTUALMACHINEDATAFLAGS** structure specifies attributes of the virtual machine (VM).
 
 ## -struct-fields
 
 ### -field SecureVirtualMachine
 
-Identifies the secure virtual machine.
+When set, specifies that the VM runs in secure mode.
+
+### -field LinuxVirtualMachine
+
+When set, specifies that the VM is Linux-based.
 
 ### -field Value
 
-The value of the virtual machine.
+Use to reference bits in the union.
 
 ## -remarks
 
+For more information, see [GPU paravitualization](/windows-hardware/drivers/display/gpu-paravirtualization).
+
 ## -see-also
 
+[**DXGKARG_SETVIRTUALMACHINEDATA**](ns-d3dkmddi-_dxgkarg_setvirtualmachinedata.md)
+
+[**DxgkddiSetVirtualMachineData**](nc-d3dkmddi-dxgkddi_setvirtualmachinedata.md)

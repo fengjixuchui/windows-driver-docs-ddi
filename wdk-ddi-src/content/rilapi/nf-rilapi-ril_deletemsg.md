@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_DeleteMsg
 title: RIL_DeleteMsg function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_DeleteMsg function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_deletemsg.htm
 tech.root: netvista
-ms.assetid: bda4663b-0aae-481a-8bd6-f242c6e6b1de
 ms.date: 05/02/2018
 keywords: ["RIL_DeleteMsg function"]
 ms.keywords: RIL_DeleteMsg, RIL_DeleteMsg method [Network Drivers Starting with Windows Vista], netvista.ril_deletemsg, rilapi/RIL_DeleteMsg

@@ -4,7 +4,6 @@ title: RtlCharToInteger function (ntddk.h)
 description: The RtlCharToInteger routine converts a single-byte character string to an integer value in the specified base.
 old-location: kernel\rtlchartointeger.htm
 tech.root: kernel
-ms.assetid: a08cb12a-c574-4871-9bba-f8f3a766f377
 ms.date: 04/30/2018
 keywords: ["RtlCharToInteger function"]
 ms.keywords: RtlCharToInteger, RtlCharToInteger routine [Kernel-Mode Driver Architecture], k109_0c8d9b78-6363-4884-a475-4f402ea3643a.xml, kernel.rtlchartointeger, ntddk/RtlCharToInteger
@@ -50,19 +49,19 @@ The <b>RtlCharToInteger</b> routine converts a single-byte character string to a
 
 ## -parameters
 
-### -param String 
+### -param String [in]
 
-[in]
+
 Pointer to a null-terminated, single-byte character string.
 
-### -param Base 
+### -param Base [in, optional]
 
-[in, optional]
+
 Specifies decimal, binary, octal, or hexadecimal base. If this parameter is not given, the routine will look for 0x, 0o, and 0b prefixes in the input string to determine if the base should be decimal (default), binary, octal, or hexadecimal.
 
-### -param Value 
+### -param Value [out]
 
-[out]
+
 Pointer to a location to which the converted value is returned.
 
 ## -returns

@@ -4,7 +4,6 @@ title: EVT_UCX_CONTROLLER_START_TRACKING_FOR_TIME_SYNC (ucxcontroller.h)
 description: UCX invokes this callback function to the start time tracking functionality in the controller.
 old-location: buses\evt_ucx_controller_start_tracking_for_time_sync.htm
 tech.root: usbref
-ms.assetid: 8465B255-E36E-481D-B063-597B9C861DCD
 ms.date: 05/07/2018
 keywords: ["EVT_UCX_CONTROLLER_START_TRACKING_FOR_TIME_SYNC callback function"]
 ms.keywords: EVT_UCX_CONTROLLER_START_TRACKING_FOR_TIME_SYNC, EVT_UCX_CONTROLLER_START_TRACKING_FOR_TIME_SYNC callback, EvUcxControllerStartTrackingForTimeSync, EvUcxControllerStartTrackingForTimeSync callback function [Buses], buses.evt_ucx_controller_start_tracking_for_time_sync, ucxcontroller/EvUcxControllerStartTrackingForTimeSync
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ucxcontroller.h
 api_name:
- - EvUcxControllerStartTrackingForTimeSync
+ - EVT_UCX_CONTROLLER_START_TRACKING_FOR_TIME_SYNC
 ---
 
 # EVT_UCX_CONTROLLER_START_TRACKING_FOR_TIME_SYNC callback function
@@ -50,28 +49,29 @@ UCX invokes this callback function to the start time tracking functionality in t
 
 ## -parameters
 
-### -param UcxController 
+### -param UcxController [in]
 
-[in]
+
  A handle to the UCX controller that the client driver received in a previous call to  the <a href="/previous-versions/windows/hardware/drivers/mt188033(v=vs.85)">UcxControllerCreate</a> method.
 
-### -param WdfRequest 
+### -param WdfRequest [in]
 
-[in]
+
 A framework request object that contains the request to start time tracking.
 
-### -param OutputBufferLength 
+### -param OutputBufferLength [in]
 
-[in]
+
 The length, in bytes, of the request's output buffer, if an output buffer
         is available. This value is the size of the <a href="/windows-hardware/drivers/ddi/usbioctl/ns-usbioctl-_usb_start_tracking_for_time_sync_information">USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION</a> structure.
 
-### -param InputBufferLength 
+### -param InputBufferLength [in]
 
-[in]
+
 The length, in bytes, of the request's input buffer, if an input buffer
         is available. This value is the size of the <a href="/windows-hardware/drivers/ddi/usbioctl/ns-usbioctl-_usb_start_tracking_for_time_sync_information">USB_START_TRACKING_FOR_TIME_SYNC_INFORMATION</a> structure.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_start_tracking_for_time_sync">IOCTL_USB_START_TRACKING_FOR_TIME_SYNC</a>
+

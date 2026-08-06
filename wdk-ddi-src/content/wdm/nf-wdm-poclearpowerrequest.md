@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.PoClearPowerRequest
 title: PoClearPowerRequest function (wdm.h)
-description: The PoClearPowerRequest routine decrements the count for the specified power request type.
+description: The PoClearPowerRequest routine in the wdm.h file decrements the count for the specified power request type.
 old-location: kernel\poclearpowerrequest.htm
 tech.root: kernel
-ms.assetid: d3754cca-81a4-42d2-a728-9f7e3270a4ee
 ms.date: 04/30/2018
 keywords: ["PoClearPowerRequest function"]
 ms.keywords: PoClearPowerRequest, PoClearPowerRequest routine [Kernel-Mode Driver Architecture], kernel.poclearpowerrequest, portn_683a4a08-b6e3-4d6c-adfa-00d075db06f9.xml, wdm/PoClearPowerRequest
@@ -50,14 +49,14 @@ The <b>PoClearPowerRequest</b> routine decrements the count for the specified po
 
 ## -parameters
 
-### -param PowerRequest 
+### -param PowerRequest [in, out]
 
-[in, out]
+
 A pointer to a power request object that was created by the <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-pocreatepowerrequest">PoCreatePowerRequest</a> routine.
 
-### -param Type 
+### -param Type [in]
 
-[in]
+
 The type of the power request. Set this parameter to the following <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_power_request_type">POWER_REQUEST_TYPE</a> enumeration value:
 
 <ul>

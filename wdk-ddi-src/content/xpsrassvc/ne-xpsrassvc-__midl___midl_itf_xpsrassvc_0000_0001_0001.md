@@ -4,7 +4,6 @@ title: __MIDL___MIDL_itf_xpsrassvc_0000_0001_0001 (xpsrassvc.h)
 description: The XPSRAS_RENDERING_MODE enumeration specifies the rendering mode to be used by an XPS rasterizer.
 old-location: print\xpsras_rendering_mode_enumeration.htm
 tech.root: print
-ms.assetid: 8b0b2bde-6ada-4a73-9737-7150605b79c8
 ms.date: 04/20/2018
 keywords: ["_MIDL___MIDL_itf_xpsrassvc_0000_0001_0001 enumeration"]
 ms.keywords: XPSRAS_RENDERING_MODE, XPSRAS_RENDERING_MODE enumeration [Print Devices], XPSRAS_RENDERING_MODE_ALIASED, XPSRAS_RENDERING_MODE_ANTIALIASED, __MIDL___MIDL_itf_xpsrassvc_0000_0001_0001, print.xpsras_rendering_mode_enumeration, print_xpsrast_7ef89e32-be23-4164-8f23-33ce5db681dd.xml, xpsrassvc/XPSRAS_RENDERING_MODE, xpsrassvc/XPSRAS_RENDERING_MODE_ALIASED, xpsrassvc/XPSRAS_RENDERING_MODE_ANTIALIASED
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - xpsrassvc.h
 api_name:
+ - __MIDL___MIDL_itf_xpsrassvc_0000_0001_0001
  - XPSRAS_RENDERING_MODE
 ---
 
@@ -69,3 +69,4 @@ For more information about rasterizing XPS documents, see <a href="/windows-hard
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/xpsrassvc/nf-xpsrassvc-ixpsrasterizationfactory-createrasterizer">IXpsRasterizationFactory::CreateRasterizer</a>
+

@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGK_CREATEDEVICEFLAGS
 title: _DXGK_CREATEDEVICEFLAGS (d3dkmddi.h)
 description: The DXGK_CREATEDEVICEFLAGS structure identifies how to create devices.
 old-location: display\dxgk_createdeviceflags.htm
-ms.assetid: 31dc1493-a7c9-4ca0-b718-98224d9c5675
 ms.date: 05/10/2018
 keywords: ["DXGK_CREATEDEVICEFLAGS structure"]
 ms.keywords: DXGK_CREATEDEVICEFLAGS, DXGK_CREATEDEVICEFLAGS structure [Display Devices], DmStructs_f8513fe3-ce39-4555-a667-20ff383583fc.xml, _DXGK_CREATEDEVICEFLAGS, d3dkmddi/DXGK_CREATEDEVICEFLAGS, display.dxgk_createdeviceflags
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_CREATEDEVICEFLAGS
  - DXGK_CREATEDEVICEFLAGS
 ---
 
@@ -87,3 +87,4 @@ A member in the union that DXGK_CREATEDEVICEFLAGS contains that can hold a 32-bi
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createdevice">DxgkDdiCreateDevice</a>
+

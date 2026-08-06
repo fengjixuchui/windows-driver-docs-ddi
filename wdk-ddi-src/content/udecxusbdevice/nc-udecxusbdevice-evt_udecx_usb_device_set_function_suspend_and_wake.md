@@ -4,7 +4,6 @@ title: EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE (udecxusbdevice.h)
 description: The USB device emulation class extension (UdeCx) invokes this callback function when it gets a request to change the function state of the specified interface of the virtual USB 3.0 device.
 old-location: buses\evt_udecx_usb_device_set_function_suspend_and_wake.htm
 tech.root: usbref
-ms.assetid: 54484E17-AA96-4152-B672-94C29E53F352
 ms.date: 05/07/2018
 keywords: ["EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE callback function"]
 ms.keywords: EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE, EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE callback, EvtUsbDeviceSetFunctionSuspendAndWake, EvtUsbDeviceSetFunctionSuspendAndWake callback function [Buses], buses.evt_udecx_usb_device_set_function_suspend_and_wake, udecxusbdevice/EvtUsbDeviceSetFunctionSuspendAndWake
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - udecxusbdevice.h
 api_name:
- - EvtUsbDeviceSetFunctionSuspendAndWake
+ - EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE
 ---
 
 # EVT_UDECX_USB_DEVICE_SET_FUNCTION_SUSPEND_AND_WAKE callback function
@@ -50,24 +49,24 @@ The USB device emulation class extension (UdeCx) invokes this callback function 
 
 ## -parameters
 
-### -param UdecxWdfDevice 
+### -param UdecxWdfDevice [in]
 
-[in]
+
 A handle to a framework device object that represents the controller to which the USB device is attached. The client driver initialized this object in a previous call to <a href="/windows-hardware/drivers/ddi/udecxwdfdevice/nf-udecxwdfdevice-udecxwdfdeviceaddusbdeviceemulation">UdecxWdfDeviceAddUsbDeviceEmulation</a>.
 
-### -param UdecxUsbDevice 
+### -param UdecxUsbDevice [in]
 
-[in]
+
 A handle to UDE device object. The client driver created this object in a previous call to <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.
 
-### -param Interface 
+### -param Interface [in]
 
-[in]
+
 This value is the <b>bInterfaceNumber</b> of the interface that is waking up.
 
-### -param FunctionPower 
+### -param FunctionPower [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/udecxusbdevice/ne-udecxusbdevice-_udecx_usb_device_function_power">UDECX_USB_DEVICE_FUNCTION_POWER</a>-type value that indicates whether the interface can suspend and send wake signal to the host controller.
 
 ## -returns
@@ -91,3 +90,4 @@ The power request may be completed asynchronously by returning STATUS_PENDING, a
 
 
 <a href="/windows-hardware/drivers/usbcon/">Write a UDE client driver</a>
+

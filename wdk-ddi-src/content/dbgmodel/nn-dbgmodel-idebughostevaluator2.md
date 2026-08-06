@@ -1,8 +1,7 @@
 ---
 UID: NN:dbgmodel.IDebugHostEvaluator2
 title: IDebugHostEvaluator2 (dbgmodel.h)
-description: The expression evaluator interface to the underlying debugger.
-ms.assetid: 12192b1b-57b6-4a5b-b2a9-2de8e13ea5c3
+description: The IDebugHostEvaluator2 (dbgmodel.h) interface provides access to the language based expression evaluator in the underlying debugger.
 ms.date: 06/11/2019
 keywords: ["IDebugHostEvaluator2 interface"]
 req.header: dbgmodel.h
@@ -45,7 +44,7 @@ This version 2 of the interface supports all of the previous methods with identi
 
 ## -inheritance
 
-IDebugHostEvaluator2 interits from [IDebugHostEvaluator](nn-dbgmodel-idebughostevaluator.md).
+IDebugHostEvaluator2 inherits from [IDebugHostEvaluator](nn-dbgmodel-idebughostevaluator.md).
 
 ## -remarks
 

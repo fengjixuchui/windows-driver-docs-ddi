@@ -4,7 +4,6 @@ title: UfxDeviceNotifyHardwareReady function (ufxclient.h)
 description: Notifies UFX that the hardware is ready.
 old-location: buses\ufxdevicenotifyhardwareready.htm
 tech.root: usbref
-ms.assetid: B4BE0BDC-C1A3-4230-8F4B-78DE34F5554D
 ms.date: 05/07/2018
 keywords: ["UfxDeviceNotifyHardwareReady function"]
 ms.keywords: UfxDeviceNotifyHardwareReady, UfxDeviceNotifyHardwareReady method [Buses], buses.ufxdevicenotifyhardwareready, ufxclient/UfxDeviceNotifyHardwareReady
@@ -50,9 +49,9 @@ Notifies UFX that the hardware is ready.
 
 ## -parameters
 
-### -param UfxDevice 
+### -param UfxDevice [in]
 
-[in]
+
 A handle to a UFX device object that the driver created by calling <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
 
 ## -remarks

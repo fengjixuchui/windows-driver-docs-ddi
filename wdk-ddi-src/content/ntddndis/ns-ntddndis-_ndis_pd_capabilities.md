@@ -4,7 +4,6 @@ title: _NDIS_PD_CAPABILITIES (ntddndis.h)
 description: This structure indicates the PD capabilities for a provider.
 old-location: netvista\ndis_pd_capabilities.htm
 tech.root: netvista
-ms.assetid: A31D3F92-FB03-489B-894D-5E2F76AC3A99
 ms.date: 05/02/2018
 keywords: ["NDIS_PD_CAPABILITIES structure"]
 ms.keywords: NDIS_PD_CAPABILITIES, NDIS_PD_CAPABILITIES structure [Network Drivers Starting with Windows Vista], _NDIS_PD_CAPABILITIES, netvista.ndis_pd_capabilities, ntddndis/NDIS_PD_CAPABILITIES
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_PD_CAPABILITIES
  - NDIS_PD_CAPABILITIES
 ---
 
@@ -54,7 +54,7 @@ This structure indicates the PD capabilities for a provider.
 
 ### -field Header
 
-The <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the <b>NDIS_PD_CAPABILITIES</b> structure. Set the members of this structure as follows:
+The <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the <b>NDIS_PD_CAPABILITIES</b> structure. Set the members of this structure as follows:
 
 <ul>
 <li><b>Type</b> = <b>NDIS_OBJECT_TYPE_DEFAULT</b></li>
@@ -158,7 +158,7 @@ The number of elements for an array of NDIS_GFP_WILDCARD_MATCH_PROFILE structure
 
 
 
-#### - DmaAddressWidth
+### -field DmaAddressWidth
 
 The DMA address width that the provider supports. Ideally, providers would support a 64-bit wide DMA address width, and setting this value to 0 indicates that a 64-bit wide DMA address. Providers must support a minimum of 32-bits in width, this means that valid values are either 0 or between 32-64 inclusive.
 
@@ -172,4 +172,5 @@ If a provider can partition Rx or Tx queues flexibly between virtual ports then 
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
+

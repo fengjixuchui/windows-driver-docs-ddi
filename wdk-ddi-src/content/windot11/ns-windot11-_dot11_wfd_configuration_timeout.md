@@ -4,7 +4,6 @@ title: _DOT11_WFD_CONFIGURATION_TIMEOUT (windot11.h)
 description: The DOT11_WFD_CONFIGURATION_TIMEOUT structure contains configuration time-out parameters.
 old-location: netvista\dot11_wfd_configuration_timeout.htm
 tech.root: netvista
-ms.assetid: 5432EB69-933A-4080-919F-4131DC4044D0
 ms.date: 02/16/2018
 keywords: ["DOT11_WFD_CONFIGURATION_TIMEOUT structure"]
 ms.keywords: "*PDOT11_WFD_CONFIGURATION_TIMEOUT, DOT11_WFD_CONFIGURATION_TIMEOUT, DOT11_WFD_CONFIGURATION_TIMEOUT structure [Network Drivers Starting with Windows Vista], PDOT11_WFD_CONFIGURATION_TIMEOUT, PDOT11_WFD_CONFIGURATION_TIMEOUT structure pointer [Network Drivers Starting with Windows Vista], _DOT11_WFD_CONFIGURATION_TIMEOUT, netvista.dot11_wfd_configuration_timeout, windot11/DOT11_WFD_CONFIGURATION_TIMEOUT, windot11/PDOT11_WFD_CONFIGURATION_TIMEOUT"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - Windot11.h
 api_name:
+ - _DOT11_WFD_CONFIGURATION_TIMEOUT
+ - PDOT11_WFD_CONFIGURATION_TIMEOUT
  - DOT11_WFD_CONFIGURATION_TIMEOUT
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_WFD_CONFIGURATION_TIMEOUT structure
@@ -52,7 +51,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The <b>DOT11_WFD_CONFIGURATION_TIMEOUT</b> structure contains configuration time-out parameters.
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The <b>DOT11_WFD_CONFIGURATION_TIMEOUT</b> structure contains configuration time-out parameters.
 
 ## -struct-fields
 
@@ -72,3 +74,4 @@ typedef struct _DOT11_WFD_CONFIGURATION_TIMEOUT {
   UCHAR ClientTimeout;
 } DOT11_WFD_CONFIGURATION_TIMEOUT, *PDOT11_WFD_CONFIGURATION_TIMEOUT;
 ```
+

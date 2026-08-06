@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILMESSAGEINUICC
 title: RILMESSAGEINUICC (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILMESSAGEINUICC structure for internal use only."
 old-location: netvista\rilmessageinuicc.htm
 tech.root: netvista
-ms.assetid: 71f48863-06dd-4ea1-a8b7-fdf673090fe0
 ms.date: 05/02/2018
 keywords: ["RILMESSAGEINUICC structure"]
 ms.keywords: "*LPRILMESSAGEINUICC, RILMESSAGEINUICC, RILMESSAGEINUICC structure [Network Drivers Starting with Windows Vista], netvista.rilmessageinuicc, ntddrilapitypes/RILMESSAGEINUICC"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILMESSAGEINUICC
+ - LPRILMESSAGEINUICC
 ---
 
 # RILMESSAGEINUICC structure (rilapitypes.h)

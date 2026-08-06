@@ -1,10 +1,9 @@
 ---
 UID: NS:wdm._PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS
 title: _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS (wdm.h)
-description: The PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS structure describes a PCI Express (PCIe) secondary uncorrectable error status register of a PCIe advanced error reporting capability structure.
+description: The _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS structure (wdm.h) describes a PCI Express (PCIe) secondary uncorrectable error status register.
 old-location: pci\pci_express_sec_uncorrectable_error_status.htm
 tech.root: PCI
-ms.assetid: 8f6b1764-e2c0-4c9e-a2ec-56cc19520d2e
 ms.date: 02/24/2018
 keywords: ["PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS structure"]
 ms.keywords: "*PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS, PCI.pci_express_sec_uncorrectable_error_status, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS union [Buses], PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS, PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS union pointer [Buses], _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS, pci_struct_cb52bea2-b001-47a7-bad9-9816787133d3.xml, wdm/PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS, wdm/PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: PASSIVE_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS, *PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS
-req.product: Windows 10 or later.
 f1_keywords:
  - _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS
  - wdm/_PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS
+ - PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS
  - PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS
 ---
 
@@ -62,77 +62,77 @@ The PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS structure describes a PCI Express
 A ULONG representation of the contents of the PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS structure.
 
 
-#### - DelayedTransactionDiscardTimerExpired
+### -field DUMMYSTRUCTNAME.DelayedTransactionDiscardTimerExpired
 
 A single bit that indicates that the delayed transaction discard timer has expired.
 
 
-#### - InternalBridgeError
+### -field DUMMYSTRUCTNAME.InternalBridgeError
 
 A single bit that indicates that an internal bridge error has occurred.
 
 
-#### - MasterAbortOnSplitCompletion
+### -field DUMMYSTRUCTNAME.MasterAbortOnSplitCompletion
 
 A single bit that indicates that a master abort on split completion has occurred.
 
 
-#### - PERRAsserted
+### -field DUMMYSTRUCTNAME.PERRAsserted
 
 A single bit that indicates that a PERR# assertion was detected.
 
 
-#### - ReceivedMasterAbort
+### -field DUMMYSTRUCTNAME.ReceivedMasterAbort
 
 A single bit that indicates that a master abort has been received.
 
 
-#### - ReceivedTargetAbort
+### -field DUMMYSTRUCTNAME.ReceivedTargetAbort
 
 A single bit that indicates that a target abort has been received.
 
 
-#### - Reserved
+### -field DUMMYSTRUCTNAME.Reserved
 
 Reserved for system use.
 
 
-#### - RsvdZ
+### -field DUMMYSTRUCTNAME.RsvdZ
 
 Reserved for system use.
 
 
-#### - SERRAsserted
+### -field DUMMYSTRUCTNAME.SERRAsserted
 
 A single bit that indicates that a SERR# assertion was detected.
 
 
-#### - TargetAbortOnSplitCompletion
+### -field DUMMYSTRUCTNAME.TargetAbortOnSplitCompletion
 
 A single bit that indicates that a target abort on split completion has occurred.
 
 
-#### - UncorrectableAddressError
+### -field DUMMYSTRUCTNAME.UncorrectableAddressError
 
 A single bit that indicates that an uncorrectable address error has occurred.
 
 
-#### - UncorrectableAttributeError
+### -field DUMMYSTRUCTNAME.UncorrectableAttributeError
 
 A single bit that indicates that an uncorrectable attribute error has occurred.
 
 
-#### - UncorrectableDataError
+### -field DUMMYSTRUCTNAME.UncorrectableDataError
 
 A single bit that indicates that an uncorrectable data error has occurred.
 
 
-#### - UncorrectableSplitCompletion
+### -field DUMMYSTRUCTNAME.UncorrectableSplitCompletion
 
 A single bit that indicates that an uncorrectable split completion message data error has occurred.
 
 
-#### - UnexpectedSplitCompletionError
+### -field DUMMYSTRUCTNAME.UnexpectedSplitCompletionError
 
 A single bit that indicates that an unexpected split completion error has occurred.
 
@@ -170,3 +170,4 @@ A PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_STATUS structure is contained in the <a hr
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_pci_express_bridge_aer_capability">PCI_EXPRESS_BRIDGE_AER_CAPABILITY</a>
+

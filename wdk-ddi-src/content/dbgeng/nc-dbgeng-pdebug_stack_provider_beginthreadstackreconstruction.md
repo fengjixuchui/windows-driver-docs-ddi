@@ -4,7 +4,6 @@ title: PDEBUG_STACK_PROVIDER_BEGINTHREADSTACKRECONSTRUCTION (dbgeng.h)
 description: The BeginThreadStackReconstruction callback function causes debugger to pass the stream to the dump stack provider prior to thread enumeration.
 old-location: debugger\beginthreadstackreconstruction.htm
 tech.root: debugger
-ms.assetid: 50CBBBED-EF1B-485F-90D3-0056AF8984E7
 ms.date: 05/03/2018
 keywords: ["PDEBUG_STACK_PROVIDER_BEGINTHREADSTACKRECONSTRUCTION callback function"]
 ms.keywords: BeginThreadStackReconstruction, BeginThreadStackReconstruction callback function [Windows Debugging], PDEBUG_STACK_PROVIDER_BEGINTHREADSTACKRECONSTRUCTION, PDEBUG_STACK_PROVIDER_BEGINTHREADSTACKRECONSTRUCTION callback, dbgeng/BeginThreadStackReconstruction, debugger.beginthreadstackreconstruction
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - BeginThreadStackReconstruction
+ - PDEBUG_STACK_PROVIDER_BEGINTHREADSTACKRECONSTRUCTION
 ---
 
 # PDEBUG_STACK_PROVIDER_BEGINTHREADSTACKRECONSTRUCTION callback function
@@ -52,22 +51,21 @@ The <i>BeginThreadStackReconstruction</i> callback function causes debugger to p
 CALLBACK* PDEBUG_STACK_PROVIDER_BEGINTHREADSTACKRECONSTRUCTION BeginThreadStackReconstruction; 
 ```
 
-
 ## -parameters
 
-### -param StreamType 
+### -param StreamType [in]
 
-[in]
+
 A stream type.
 
-### -param MiniDumpStreamBuffer 
+### -param MiniDumpStreamBuffer [in]
 
-[in]
+
 A mini-dump stream buffer.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 The size of the buffer.
 
 ## -returns

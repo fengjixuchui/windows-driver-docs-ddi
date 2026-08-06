@@ -4,7 +4,6 @@ title: IddCxSwapChainReportFrameStatistics function (iddcx.h)
 description: An OS callback function the driver calls to report the frame statistics after it has processed a frame completely.
 old-location: display\iddcxswapchainreportframestatistics.htm
 tech.root: display
-ms.assetid: 0dd32160-93d4-4fb8-aed1-9267f38e9909
 ms.date: 05/10/2018
 keywords: ["IddCxSwapChainReportFrameStatistics function"]
 ms.keywords: IddCxSwapChainReportFrameStatistics, IddCxSwapChainReportFrameStatistics method [Display Devices], display.iddcxswapchainreportframestatistics, iddcx/IddCxSwapChainReportFrameStatistics
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: IddCxStub.lib
 req.dll: IddCx.dll
-req.irql: _Must_inspect_result_
+req.irql: 
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -46,20 +45,25 @@ api_name:
 
 ## -description
 
-                An OS callback function the driver calls to report the frame statistics after it has processed a frame completely
+An OS callback function the driver calls to report the frame statistics after it has processed a frame completely.
 
 ## -parameters
 
-### -param SwapChainObject 
+### -param SwapChainObject [in]
 
-[in]
-The swap-chain object whose current frame is being queried.
+The swap-chain object whose frame statistics are being reported.
 
-### -param pInArgs 
+### -param pInArgs [in]
 
-[in]
-Input arguments to the function
+Pointer to a [**IDARG_IN_REPORTFRAMESTATISTICS**](ns-iddcx-idarg_in_reportframestatistics.md) structure.
 
 ## -returns
 
 (NTSTATUS) The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this method may return an appropriate <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS</a> error code.
+
+## -see-also
+
+[**EVT_IDD_CX_MONITOR_ASSIGN_SWAPCHAIN**](nc-iddcx-evt_idd_cx_monitor_assign_swapchain.md)
+[**EVT_IDD_CX_MONITOR_UNASSIGN_SWAPCHAIN**](nc-iddcx-evt_idd_cx_monitor_unassign_swapchain.md)
+
+

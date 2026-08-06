@@ -4,7 +4,6 @@ title: HWN_CLIENT_GET_STATE (hwnclx.h)
 description: Implemented by the client driver to get hardware notification component state. It is invoked when a user requests status information.
 old-location: gpiobtn\hwn_client_get_state.htm
 tech.root: gpiobtn
-ms.assetid: c472b4bf-4c7f-4c30-ad03-2017d26d52b4
 ms.date: 02/15/2018
 keywords: ["HWN_CLIENT_GET_STATE callback"]
 ms.keywords: "*PHWN_CLIENT_GET_STATE, *PHWN_CLIENT_GET_STATE callback function pointer, HWN_CLIENT_GET_STATE, HwnClientGetState, HwnClientGetState callback function, gpiobtn.hwn_client_get_state, hwnclx/HwnClientGetState"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Hwnclx.h
 api_name:
- - PHWN_CLIENT_GET_STATE
+ - HWN_CLIENT_GET_STATE
 ---
 
 # HWN_CLIENT_GET_STATE callback
@@ -50,14 +49,14 @@ Implemented by the client driver to get hardware notification component state. I
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to the client driver's context information. This memory space is available for use by the client driver. It is allocated as part of the framework object context space by <b>WdfDeviceCreate</b>. For more information, see <a href="/windows-hardware/drivers/gpiobtn/create-a-hardware-notification-client-driver">HWN_CLIENT_REGISTRATION_PACKET</a> and  <a href="/windows-hardware/drivers/wdf/framework-object-context-space">Framework Object Context Space</a>.
 
-### -param OutputBuffer 
+### -param OutputBuffer [out]
 
-[out]
+
 Buffer of <i>OutputBufferLength</i> bytes for writing hardware notification status. If the function succeeds, the buffer will contain a <a href="/windows-hardware/drivers/gpiobtn/create-a-hardware-notification-client-driver">HWN_HEADER</a> structure including one or more <a href="/windows-hardware/drivers/gpiobtn/create-a-hardware-notification-client-driver">HWN_SETTINGS</a> structures.
 
 <div class="alert"><b>Note</b>  <p class="note"><b>OutputBufferLength</b> must be large enough to contain all of the requested settings. For more information, see Remarks.
@@ -65,24 +64,24 @@ Buffer of <i>OutputBufferLength</i> bytes for writing hardware notification stat
 </div>
 <div> </div>
 
-### -param OutputBufferLength 
+### -param OutputBufferLength [in]
 
-[in]
+
 The size of <i>OutputBuffer</i> in bytes.
 
-### -param InputBuffer 
+### -param InputBuffer [in]
 
-[in]
+
 Buffer of <i>InputBufferLength</i> bytes containing a <a href="/windows-hardware/drivers/gpiobtn/create-a-hardware-notification-client-driver">HWN_HEADER</a> holding one or more <a href="/windows-hardware/drivers/gpiobtn/create-a-hardware-notification-client-driver">HWN_SETTINGS</a> structures where the IDs for the requested hardware notification components are stored in the <b>HwNId</b> field. This buffer can be NULL.
 
-### -param InputBufferLength 
+### -param InputBufferLength [in]
 
-[in]
+
 The size of <i>InputBuffer</i> in bytes.
 
-### -param BytesRead 
+### -param BytesRead [out]
 
-[out]
+
 Pointer to a variable that indicates the number of bytes read by the function.
 
 ## -returns
@@ -134,4 +133,5 @@ If <i>OutputBuffer</i> is not large enough to contain all of the settings reques
 
 
 
-<a href="/windows-hardware/drivers/ddi/index">Hardware notifications reference</a>
+<a href="/windows-hardware/drivers/ddi/_gpio">Hardware notifications reference</a>
+

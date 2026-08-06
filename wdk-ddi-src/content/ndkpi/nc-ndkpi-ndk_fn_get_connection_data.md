@@ -4,7 +4,6 @@ title: NDK_FN_GET_CONNECTION_DATA (ndkpi.h)
 description: The NdkGetConnectionData (NDK_FN_GET_CONNECTION_DATA) function gets read limit values and the private data sent by the peer.
 old-location: netvista\ndk_fn_get_connection_data.htm
 tech.root: netvista
-ms.assetid: A6099DCB-7F10-4BDB-B463-422C2B7A2B3F
 ms.date: 05/02/2018
 keywords: ["NDK_FN_GET_CONNECTION_DATA callback function"]
 ms.keywords: NDK_FN_GET_CONNECTION_DATA, NDK_FN_GET_CONNECTION_DATA callback, NdkGetConnectionData, NdkGetConnectionData callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkGetConnectionData, netvista.ndk_fn_get_connection_data
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkGetConnectionData
+ - NDK_FN_GET_CONNECTION_DATA
 ---
 
 # NDK_FN_GET_CONNECTION_DATA callback function
@@ -50,19 +49,19 @@ The <i>NdkGetConnectionData</i>  (<i>NDK_FN_GET_CONNECTION_DATA</i>) function ge
 
 ## -parameters
 
-### -param pNdkConnector 
+### -param pNdkConnector [in]
 
-[in]
+
 A pointer to an NDK connector object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_connector">NDK_CONNECTOR</a>).
 
-### -param pInboundReadLimit 
+### -param pInboundReadLimit [out, optional]
 
-[out, optional]
+
 The maximum number of incoming in-progress read operations to allow on the QP is returned in this location.
 
-### -param pOutboundReadLimit 
+### -param pOutboundReadLimit [out, optional]
 
-[out, optional]
+
 The maximum number of outgoing in-progress read operations to allow on the QP is returned in this location.
 
 ### -param pPrivateData
@@ -148,3 +147,4 @@ If <i>*pPrivateDataLength</i> is greater than or equal to <i>RDS</i>, the provid
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_connector_dispatch">NDK_CONNECTOR_DISPATCH</a>
+

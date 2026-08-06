@@ -4,7 +4,6 @@ title: StreamClassRegisterFilterWithNoKSPins function (strmini.h)
 description: The StreamClassRegisterFilterWithNoKSPins routine is used to register filter drivers with Microsoft DirectShow that have no kernel streaming pins and, therefore, do not stream in kernel mode.
 old-location: stream\streamclassregisterfilterwithnokspins.htm
 tech.root: stream
-ms.assetid: f5ae426a-9d9d-4391-b87f-c4281dc9cadc
 ms.date: 04/23/2018
 keywords: ["StreamClassRegisterFilterWithNoKSPins function"]
 ms.keywords: StreamClassRegisterFilterWithNoKSPins, StreamClassRegisterFilterWithNoKSPins routine [Streaming Media Devices], strclass-routines_d338a3be-7760-46b6-aeba-e9cbac45afe3.xml, stream.streamclassregisterfilterwithnokspins, strmini/StreamClassRegisterFilterWithNoKSPins
@@ -51,34 +50,34 @@ The <b>StreamClassRegisterFilterWithNoKSPins</b> routine is used to register fil
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Points to the driver's device object.
 
-### -param InterfaceClassGUID 
+### -param InterfaceClassGUID [in]
 
-[in]
+
 Specifies the interface class GUID to register.
 
-### -param PinCount 
+### -param PinCount [in]
 
-[in]
+
 Specifies the number of pins on the filter.
 
-### -param PinDirection 
+### -param PinDirection [in]
 
-[in]
+
 Specifies a <i>PinCount</i>-sized array of Boolean values, one for each pin on the filter. The values indicate the pin direction for each pin. If <b>TRUE</b>, this pin is an output pin. If <b>FALSE</b>, the pin is an input pin.
 
-### -param MediumList 
+### -param MediumList [in]
 
-[in]
-Specifies a <i>PinCount</i>-sized array of <a href="/previous-versions/ff563538(v=vs.85)">KSPIN_MEDIUM</a> structures, one for each pin on the filter.
 
-### -param CategoryList 
+Specifies a <i>PinCount</i>-sized array of <a href="/windows-hardware/drivers/stream/kspin-medium-structure">KSPIN_MEDIUM</a> structures, one for each pin on the filter.
 
-[in, optional]
+### -param CategoryList [in, optional]
+
+
 If non-NULL, specifies an array of pin category GUIDs, one for each pin on the filter.
 
 ## -returns
@@ -87,4 +86,4 @@ Returns STATUS_SUCCESS on success, or the appropriate error code on failure.
 
 ## -see-also
 
-<a href="/previous-versions/ff563538(v=vs.85)">KSPIN_MEDIUM</a>
+<a href="/windows-hardware/drivers/stream/kspin-medium-structure">KSPIN_MEDIUM</a>

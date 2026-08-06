@@ -4,7 +4,6 @@ title: RtlIntToULongLong function (ntintsafe.h)
 description: Converts a value of type INT to a value of type ULONGLONG.
 old-location: kernel\rtlinttoulonglong.htm
 tech.root: kernel
-ms.assetid: AED881EC-D417-49F5-B0B7-497FDF450968
 ms.date: 04/30/2018
 keywords: ["RtlIntToULongLong function"]
 ms.keywords: RtlIntToULongLong, RtlIntToULongLong function [Kernel-Mode Driver Architecture], kernel.rtlinttoulonglong, ntintsafe/RtlIntToULongLong
@@ -50,14 +49,14 @@ Converts a value of type <b>INT</b> to a value of type <b>ULONGLONG</b>.
 
 ## -parameters
 
-### -param iOperand 
+### -param iOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pullResult 
+### -param pullResult [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

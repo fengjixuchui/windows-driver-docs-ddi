@@ -4,7 +4,6 @@ title: IDebugSymbols3::CreateSymbolGroup2 (dbgeng.h)
 description: The CreateSymbolGroup2 method creates a new symbol group.
 old-location: debugger\createsymbolgroup2.htm
 tech.root: debugger
-ms.assetid: 42ddf77a-14c8-4d6a-98a2-b0c67836990d
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::CreateSymbolGroup2"]
 ms.keywords: CreateSymbolGroup2, CreateSymbolGroup2 method [Windows Debugging], CreateSymbolGroup2 method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],CreateSymbolGroup2 method, IDebugSymbols3.CreateSymbolGroup2, IDebugSymbols3::CreateSymbolGroup2, dbgeng/IDebugSymbols3::CreateSymbolGroup2, debugger.createsymbolgroup2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSymbols3.CreateSymbolGroup2
+ - IDebugSymbols3::CreateSymbolGroup2
 ---
 
 # IDebugSymbols3::CreateSymbolGroup2
@@ -50,9 +49,9 @@ The <b>CreateSymbolGroup2</b>  method creates a new symbol group.
 
 ## -parameters
 
-### -param Group 
+### -param Group [out]
 
-[out]
+
 Receives an interface pointer for the new <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbolgroup">IDebugSymbolGroup</a> object.
 
 ## -returns
@@ -97,3 +96,4 @@ For more information about symbol groups, see <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_GDIMODEL_PRESENTHISTORYTOKEN
 title: _D3DKMT_GDIMODEL_PRESENTHISTORYTOKEN (d3dkmthk.h)
 description: The D3DKMT_GDIMODEL_PRESENTHISTORYTOKEN structure identifies a GDI present-history operation.
 old-location: display\d3dkmt_gdimodel_presenthistorytoken.htm
-ms.assetid: 4f602b68-7170-4e76-8875-0a0c0634caa2
 ms.date: 05/10/2018
 keywords: ["D3DKMT_GDIMODEL_PRESENTHISTORYTOKEN structure"]
 ms.keywords: D3DKMT_GDIMODEL_PRESENTHISTORYTOKEN, D3DKMT_GDIMODEL_PRESENTHISTORYTOKEN structure [Display Devices], OpenGL_Structs_02351828-bca4-4a37-bb61-57224a125ee5.xml, _D3DKMT_GDIMODEL_PRESENTHISTORYTOKEN, d3dkmthk/D3DKMT_GDIMODEL_PRESENTHISTORYTOKEN, display.d3dkmt_gdimodel_presenthistorytoken
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_GDIMODEL_PRESENTHISTORYTOKEN
  - D3DKMT_GDIMODEL_PRESENTHISTORYTOKEN
 ---
 
@@ -52,13 +52,13 @@ The D3DKMT_GDIMODEL_PRESENTHISTORYTOKEN structure identifies a GDI present-histo
 
 ## -struct-fields
 
-### -field hLogicalSurface
+### -field hLogicalSurface [in]
 
-[in] A 64-bit value that specifies the handle to a logical surface to copy from.
+A 64-bit value that specifies the handle to a logical surface to copy from.
 
-### -field hPhysicalSurface
+### -field hPhysicalSurface [in]
 
-[in] A 64-bit value that specifies the handle to a physical surface to copy to.
+A 64-bit value that specifies the handle to a physical surface to copy to.
 
 ### -field ScrollRect
 
@@ -72,9 +72,9 @@ This member is reserved and should be set to zero.
 
 Supported starting with Windows 8.
 
-### -field DirtyRegions
+### -field DirtyRegions [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_dirtyregions">D3DKMT_DIRTYREGIONS</a> structure that identifies the active rectangles (dirty regions) of the GDI surface.
+A <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_dirtyregions">D3DKMT_DIRTYREGIONS</a> structure that identifies the active rectangles (dirty regions) of the GDI surface.
 
 ## -see-also
 
@@ -83,3 +83,4 @@ Supported starting with Windows 8.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_presenthistorytoken">D3DKMT_PRESENTHISTORYTOKEN</a>
+

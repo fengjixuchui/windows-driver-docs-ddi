@@ -4,7 +4,6 @@ title: NdisCoOidRequest function (ndis.h)
 description: The NdisCoOidRequest function forwards a request to targeted CoNDIS drivers to query or set OID-specified information of the target driver.
 old-location: netvista\ndiscooidrequest.htm
 tech.root: netvista
-ms.assetid: 7d46f2c1-7b54-4510-968a-2e35e33cf849
 ms.date: 05/02/2018
 keywords: ["NdisCoOidRequest function"]
 ms.keywords: NdisCoOidRequest, NdisCoOidRequest function [Network Drivers Starting with Windows Vista], condis_request_ref_4f9b0ee3-9096-4f13-9851-edd1f7b4af8b.xml, ndis/NdisCoOidRequest, netvista.ndiscooidrequest
@@ -53,16 +52,16 @@ The
 
 ## -parameters
 
-### -param NdisBindingHandle 
+### -param NdisBindingHandle [in]
 
-[in]
+
 A handle that the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a> function returned
      that identifies the target adapter for the binding.
 
-### -param NdisAfHandle 
+### -param NdisAfHandle [in, optional]
 
-[in, optional]
+
 A handle that identifies the address family (AF) that is shared among the client, call manager,
      and NDIS. This handle was obtained as follows:
      
@@ -85,9 +84,9 @@ If the caller is a stand-alone call manager or miniport call manager (MCM) that 
 To make a request from either a client or stand-alone call manager to the underlying miniport driver,
      this parameter must be <b>NULL</b>.
 
-### -param NdisVcHandle 
+### -param NdisVcHandle [in, optional]
 
-[in, optional]
+
 A handle that identifies the virtual connection (VC) the caller is requesting or setting
      information for, if the request is VC-specific. Otherwise, if this parameter is <b>NULL</b>, the request is not
      VC-specific. For any VC-specific request, the caller originally obtained this handle either when it
@@ -100,9 +99,9 @@ A handle that identifies the virtual connection (VC) the caller is requesting or
      <i>NdisAfHandle</i> and 
      <i>NdisPartyHandle</i> are <b>NULL</b>.
 
-### -param NdisPartyHandle 
+### -param NdisPartyHandle [in, optional]
 
-[in, optional]
+
 A handle that identifies the party on a multipoint VC the caller is requesting or setting
      information for, if the request is party-specific. Otherwise, if this parameter is <b>NULL</b>, the request is
      not party-specific. For any party-specific request, a client originally obtained this handle from a
@@ -114,11 +113,11 @@ A handle that identifies the party on a multipoint VC the caller is requesting o
      <i>NdisAfHandle</i> is <b>NULL</b>, 
      <i>NdisPartyHandle</i> also is <b>NULL</b>.
 
-### -param OidRequest 
+### -param OidRequest [in, out]
 
-[in, out]
+
 A pointer to an 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure that specifies
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure that specifies
      the operation that is requested with a given OID_<i>XXX</i> code to query or to set information.
 
 ## -returns
@@ -164,7 +163,7 @@ The request is being handled asynchronously, and NDIS will call the caller's
 <td width="60%">
 The OID_<i>XXX</i> code that was specified in the 
        <b>Oid</b> member of the 
-       <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure at the 
+       <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure at the 
        <i>OidRequest</i> parameter is invalid or unsupported by the underlying driver.
 
 </td>
@@ -194,7 +193,7 @@ The value that was specified in the
 <td width="60%">
 The data supplied at 
        <b>InformationBuffer</b> in the given 
-       <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure is invalid
+       <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure is invalid
        for the given OID_<i>XXX</i> code.
 
 </td>
@@ -393,7 +392,7 @@ Only clients and stand-alone call managers, which are protocol drivers, can call
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 

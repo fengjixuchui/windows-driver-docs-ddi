@@ -1,10 +1,9 @@
 ---
 UID: NS:storport._SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE
 title: _SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE (storport.h)
-description: The SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure contains a vendor specific microcode (i.e., firmware) image for use by the enclosure services process.
+description: The _SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure (storport.h) contains a vendor specific microcode image used by the enclosure services process.
 old-location: storage\ses_download_microcode_control_diagnostic_page.htm
 tech.root: storage
-ms.assetid: 09c2746f-cfe4-41dc-82ce-0b7e0c348897
 ms.date: 03/29/2018
 keywords: ["SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure"]
 ms.keywords: "*PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, Activate deferred microcode, Download microcode with offsets,save,and activate, Download microcode with offsets,save,and defer activate, PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure pointer [Storage Devices], Reserved, SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE structure [Storage Devices], _SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, scsi/PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, scsi/SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE, storage.ses_download_microcode_control_diagnostic_page"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - scsi.h
 api_name:
+ - _SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE
+ - PSES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE
  - SES_DOWNLOAD_MICROCODE_CONTROL_DIAGNOSTIC_PAGE
 ---
 
@@ -204,3 +205,4 @@ Specifies the length of <i>Data</i>, in bytes.
 ### -field Data
 
 Contains part of the vendor specific microcode image.
+

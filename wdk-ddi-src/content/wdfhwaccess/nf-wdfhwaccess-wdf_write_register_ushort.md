@@ -4,7 +4,6 @@ title: WDF_WRITE_REGISTER_USHORT function (wdfhwaccess.h)
 description: The WDF_WRITE_REGISTER_USHORT routine writes a USHORT value to the specified address.
 old-location: wdf\wdf_write_register_ushort.htm
 tech.root: wdf
-ms.assetid: E098794F-9A32-409E-9B44-04FDCEF75341
 ms.date: 02/26/2018
 keywords: ["WDF_WRITE_REGISTER_USHORT function"]
 ms.keywords: WDF_WRITE_REGISTER_USHORT, WDF_WRITE_REGISTER_USHORT function, wdf.wdf_write_register_ushort, wdfhwaccess/WDF_WRITE_REGISTER_USHORT
@@ -52,18 +51,18 @@ The <b>WDF_WRITE_REGISTER_USHORT</b> routine writes a USHORT value to the specif
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the register address, which must be a mapped range in memory space.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies a USHORT value to write to the register.
 

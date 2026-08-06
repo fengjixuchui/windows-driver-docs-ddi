@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_ASSIGNDEBUGBINARY
 title: PFND3D11_1DDI_ASSIGNDEBUGBINARY (d3d10umddi.h)
 description: Provides the full shader binary that is available after shader creation. The full shader binary lets a driver retrieve debugging information or other shader binary information that would not normally be available to the driver.
 old-location: display\assigndebugbinary.htm
-ms.assetid: eb1e3c27-71c1-4920-9aa4-3253306fa3f4
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_ASSIGNDEBUGBINARY callback function"]
 ms.keywords: AssignDebugBinary, AssignDebugBinary callback function [Display Devices], PFND3D11_1DDI_ASSIGNDEBUGBINARY, PFND3D11_1DDI_ASSIGNDEBUGBINARY callback, d3d10umddi/AssignDebugBinary, display.assigndebugbinary, display.assigndebugbinary_d3d11_1_, display.pfnassigndebugbinary
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - AssignDebugBinary
+ - PFND3D11_1DDI_ASSIGNDEBUGBINARY
 ---
 
 # PFND3D11_1DDI_ASSIGNDEBUGBINARY callback function
@@ -50,13 +49,13 @@ Provides the full shader binary that is available after shader creation. The ful
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hShader* [in]
 
@@ -66,9 +65,9 @@ A handle to the driver's private data for the shader object.
 
 The size, in bytes, of the full shader binary.
 
-### -param pBinary 
+### -param pBinary [in]
 
-[in]
+
 A pointer to the full shader binary.
 
 ## -remarks
@@ -93,3 +92,4 @@ The driver should not encounter any error, except for <b>D3DDDIERR_DEVICEREMOVED
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

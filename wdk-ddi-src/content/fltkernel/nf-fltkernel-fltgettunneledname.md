@@ -4,7 +4,6 @@ title: FltGetTunneledName function (fltkernel.h)
 description: The FltGetTunneledName routine retrieves the tunneled name for a file, given the normalized name returned for the file by a previous call to FltGetFileNameInformation, FltGetFileNameInformationUnsafe, or FltGetDestinationFileNameInformation.
 old-location: ifsk\fltgettunneledname.htm
 tech.root: ifsk
-ms.assetid: 760ee574-5ca5-4db1-8b47-009a12398076
 ms.date: 06/27/2019
 keywords: ["FltGetTunneledName function"]
 ms.keywords: FltApiRef_e_to_o_5a952e3d-25d1-48e7-b91b-9891a446d53b.xml, FltGetTunneledName, FltGetTunneledName routine [Installable File System Drivers], fltkernel/FltGetTunneledName, ifsk.fltgettunneledname
@@ -50,19 +49,19 @@ The **FltGetTunneledName** routine retrieves the tunneled name for a file, given
 
 ## -parameters
 
-### -param CallbackData 
+### -param CallbackData [in]
 
-[in]
+
 Pointer to the callback data structure for the I/O operation ([FLT_CALLBACK_DATA](./ns-fltkernel-_flt_callback_data.md)). This parameter is required and cannot be **NULL**.
 
-### -param FileNameInformation 
+### -param FileNameInformation [in]
 
-[in]
+
 Pointer to an [FLT_FILE_NAME_INFORMATION](./ns-fltkernel-_flt_file_name_information.md) structure containing normalized name information returned by a previous call to [**FltGetFileNameInformation**](./nf-fltkernel-fltgetfilenameinformation.md), [**FltGetFileNameInformationUnsafe**](./nf-fltkernel-fltgetfilenameinformationunsafe.md), or [**FltGetDestinationFileNameInformation**](./nf-fltkernel-fltgetdestinationfilenameinformation.md) for the file.
 
-### -param RetTunneledFileNameInformation 
+### -param RetTunneledFileNameInformation [out]
 
-[out]
+
 Pointer to a caller-allocated variable that receives the address of a newly allocated structure containing the tunneled file name. If no tunneled name is found, this variable receives **NULL**. This parameter is required and cannot be **NULL** on input.
 
 ## -returns
@@ -77,7 +76,7 @@ Pointer to a caller-allocated variable that receives the address of a newly allo
 
 File systems, such as NTFS and FAT, use a per-volume tunnel cache to briefly preserve file names and other metadata for files that are being renamed, linked to, or deleted. File name tunneling can cause the final component in normalized file name information returned by a preoperation call to [**FltGetFileNameInformation**](./nf-fltkernel-fltgetfilenameinformation.md), [**FltGetFileNameInformationUnsafe**](./nf-fltkernel-fltgetfilenameinformationunsafe.md), or [**FltGetDestinationFileNameInformation**](./nf-fltkernel-fltgetdestinationfilenameinformation.md) to be invalidated.
 
-If a minifilter driver retrieves normalized file name information in the preoperation callback routine ([PFLT_PRE_OPERATION_CALLBACK](./nc-fltkernel-pflt_pre_operation_callback.md)) for a create (IRP_MJ_CREATE), hard-link (IRP_MJ_SET_INFORMATION with [FILE_INFORMATION_CLASS](../wdm/ne-wdm-_file_information_class.md) set to *FileRenameInformation*), or rename operation (IRP_MJ_SET_INFORMATION with FILE_INFORMATION_CLASS set to *FileLinkInformation*), it must call **FltGetTunneledName** from its postoperation callback routine ([PFLT_POST_OPERATION_CALLBACK](./nc-fltkernel-pflt_post_operation_callback.md)) to retrieve the correct file name information for the file.
+If a minifilter driver retrieves normalized file name information in the preoperation callback routine ([PFLT_PRE_OPERATION_CALLBACK](./nc-fltkernel-pflt_pre_operation_callback.md)) for a create (IRP_MJ_CREATE), hard-link (IRP_MJ_SET_INFORMATION with [FILE_INFORMATION_CLASS](../wdm/ne-wdm-_file_information_class.md) set to *FileLinkInformation*), or rename operation (IRP_MJ_SET_INFORMATION with FILE_INFORMATION_CLASS set to *FileRenameInformation*), it must call **FltGetTunneledName** from its postoperation callback routine ([PFLT_POST_OPERATION_CALLBACK](./nc-fltkernel-pflt_post_operation_callback.md)) to retrieve the correct file name information for the file.
 
 Only normalized file name information is affected by tunneling. The Filter Manager cannot ensure that the final component is normalized until after the create, hard-link, or rename operation has actually occurred, because tunneling can cause a short name to be changed to a long name. Thus a minifilter driver must call **FltGetTunneledName** from its postoperation callback routine to determine whether the normalized file name information retrieved in the preoperation callback routine is valid.
 

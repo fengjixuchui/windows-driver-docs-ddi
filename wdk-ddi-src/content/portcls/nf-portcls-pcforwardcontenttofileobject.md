@@ -4,7 +4,6 @@ title: PcForwardContentToFileObject function (portcls.h)
 description: The PcForwardContentToFileObject function is obsolete and is maintained only to support existing drivers.
 old-location: audio\pcforwardcontenttofileobject.htm
 tech.root: audio
-ms.assetid: 3cad8e61-e016-415a-9aa9-1169267dc729
 ms.date: 05/08/2018
 keywords: ["PcForwardContentToFileObject function"]
 ms.keywords: PcForwardContentToFileObject, PcForwardContentToFileObject function [Audio Devices], audio.pcforwardcontenttofileobject, audpc-routines_2560382f-57c9-4d3c-9ba0-330374e18663.xml, portcls/PcForwardContentToFileObject
@@ -51,14 +50,14 @@ The <b>PcForwardContentToFileObject</b> function is obsolete and is maintained o
 
 ## -parameters
 
-### -param ContentId 
+### -param ContentId [in]
 
-[in]
+
 Specifies the DRM content ID. This parameter identifies a protected KS audio stream.
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to a file object that represents the KS audio pin to which the KS audio stream is sent.
 
 ## -returns

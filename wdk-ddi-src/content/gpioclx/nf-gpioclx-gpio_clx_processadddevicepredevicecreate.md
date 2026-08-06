@@ -4,7 +4,6 @@ title: GPIO_CLX_ProcessAddDevicePreDeviceCreate function (gpioclx.h)
 description: The GPIO_CLX_ProcessAddDevicePreDeviceCreate method loads initialization information into two structures that are passed as input parameters to the WdfDeviceCreate method.
 old-location: gpio\gpio_clx_processadddevicepredevicecreate.htm
 tech.root: GPIO
-ms.assetid: 8492CCCB-2BA9-419D-A22F-DE06D08D4CC7
 ms.date: 02/15/2018
 keywords: ["GPIO_CLX_ProcessAddDevicePreDeviceCreate function"]
 ms.keywords: GPIO.gpio_clx_processadddevicepredevicecreate, GPIO_CLX_ProcessAddDevicePreDeviceCreate, GPIO_CLX_ProcessAddDevicePreDeviceCreate method [Parallel Ports], gpioclx/GPIO_CLX_ProcessAddDevicePreDeviceCreate
@@ -51,19 +50,19 @@ The <b>GPIO_CLX_ProcessAddDevicePreDeviceCreate</b> method loads initialization 
 
 ## -parameters
 
-### -param Driver 
+### -param Driver [in]
 
-[in]
+
 A WDFDRIVER handle to the framework driver object for the GPIO controller driver.
 
-### -param DeviceInit 
+### -param DeviceInit [in, out]
 
-[in, out]
+
 A pointer to a framework-allocated <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure. This method loads initialization information into this structure. On return, this structure is ready to be used as an input parameter to the <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate">WdfDeviceCreate</a> method.
 
-### -param FdoAttributes 
+### -param FdoAttributes [out]
 
-[out]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure. This method loads initialization information into this structure. On return, this structure is ready to be used as an input parameter to the <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate">WdfDeviceCreate</a> method.
 
 ## -returns

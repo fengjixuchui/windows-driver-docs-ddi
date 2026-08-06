@@ -4,7 +4,6 @@ title: MINIPORT_RESET (ndis.h)
 description: NDIS calls an NDIS miniport driver's MiniportResetEx function to initiate a reset of a network interface card (NIC). For more information, see Miniport Adapter Check-for-Hang and Reset Operations and Miniport Driver Hardware Reset.
 old-location: netvista\miniportresetex.htm
 tech.root: netvista
-ms.assetid: 15f82163-a1b5-4cef-a53e-8a97adb2cd92
 ms.date: 05/02/2018
 keywords: ["MINIPORT_RESET callback function"]
 ms.keywords: MINIPORT_RESET, MINIPORT_RESET callback, MiniportResetEx, MiniportResetEx callback function [Network Drivers Starting with Windows Vista], miniport_functions_ref_13afeb89-4956-4a8d-ade8-8d17a4a84128.xml, ndis/MiniportResetEx, netvista.miniportresetex
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportResetEx
+ - MINIPORT_RESET
 ---
 
 # MINIPORT_RESET callback function
@@ -56,16 +55,16 @@ NDIS calls an NDIS miniport driver's
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 A handle to a context area that the miniport driver allocated in its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a> function.
      The miniport driver uses this context area to maintain state information for a miniport adapter.
 
-### -param AddressingReset 
+### -param AddressingReset [out]
 
-[out]
+
 A pointer to a Boolean variable. The miniport driver sets this variable to <b>TRUE</b> if NDIS should call the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_oid_request">MiniportOidRequest</a> function to
      restore addressing and other configuration settings to the current values. For more information, see 
@@ -320,3 +319,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiswriteerrorlogentry">NdisWriteErrorLogEntry</a>
+

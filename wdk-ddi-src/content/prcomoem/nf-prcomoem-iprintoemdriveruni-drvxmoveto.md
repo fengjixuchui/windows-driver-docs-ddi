@@ -4,7 +4,6 @@ title: IPrintOemDriverUni::DrvXMoveTo (prcomoem.h)
 description: The IPrintOemDriverUni::DrvXMoveTo method is provided by the Unidrv driver so that a rendering plug-in can notify the driver of cursor x-position changes.
 old-location: print\iprintoemdriveruni_drvxmoveto.htm
 tech.root: print
-ms.assetid: 1f2c65ec-6218-438e-a853-4780f091a330
 ms.date: 04/20/2018
 keywords: ["IPrintOemDriverUni::DrvXMoveTo"]
 ms.keywords: DrvXMoveTo, DrvXMoveTo method [Print Devices], DrvXMoveTo method [Print Devices],IPrintOemDriverUni interface, IPrintOemDriverUni interface [Print Devices],DrvXMoveTo method, IPrintOemDriverUni.DrvXMoveTo, IPrintOemDriverUni::DrvXMoveTo, prcomoem/IPrintOemDriverUni::DrvXMoveTo, print.iprintoemdriveruni_drvxmoveto, print_unidrv-pscript_rendering_85f4b5f5-6953-4b3d-902c-4573c4a1bb90.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemDriverUni.DrvXMoveTo
+ - IPrintOemDriverUni::DrvXMoveTo
 ---
 
 # IPrintOemDriverUni::DrvXMoveTo
@@ -119,9 +118,9 @@ If not set, specifies that Unidrv should update its current calculation of the c
 </tr>
 </table>
 
-### -param piResult 
+### -param piResult [out]
 
-[out]
+
 Receives the method-supplied result of subtracting the actual new cursor position from the requested new cursor position. This value might be zero, but it is always nonnegative.
 
 ## -returns
@@ -184,3 +183,4 @@ The <b>IPrintOemUni::ImageProcessing</b> method can update the cursor by sending
 
 </li>
 </ul>
+

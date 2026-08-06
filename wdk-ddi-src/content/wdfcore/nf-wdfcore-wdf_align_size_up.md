@@ -4,7 +4,6 @@ title: WDF_ALIGN_SIZE_UP function (wdfcore.h)
 description: The WDF_ALIGN_SIZE_UP function returns the next-higher buffer size that is aligned to a specified alignment offset.
 old-location: wdf\wdf_align_size_up.htm
 tech.root: wdf
-ms.assetid: 68523004-c9f5-4038-985e-702d929cdf04
 ms.date: 02/26/2018
 keywords: ["WDF_ALIGN_SIZE_UP function"]
 ms.keywords: DFMemoryObjectRef_48452ee1-3939-48ba-a485-4d503ee052f3.xml, WDF_ALIGN_SIZE_UP, WDF_ALIGN_SIZE_UP function, kmdf.wdf_align_size_up, wdf.wdf_align_size_up, wdfcore/WDF_ALIGN_SIZE_UP
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: Any IRQL.
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WDF_ALIGN_SIZE_UP</b> function returns the next-higher buffer size that i
 
 ## -parameters
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The length, in bytes, of a <a href="/windows-hardware/drivers/wdf/using-memory-buffers">memory buffer</a>.
 
-### -param AlignTo 
+### -param AlignTo [in]
 
-[in]
+
 The alignment offset, in bytes. This value must be a power of 2, such as 2, 4, 8, 16, and so on.
 
 ## -returns

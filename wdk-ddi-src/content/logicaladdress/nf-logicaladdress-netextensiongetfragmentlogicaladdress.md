@@ -3,7 +3,6 @@ UID: NF:logicaladdress.NetExtensionGetFragmentLogicalAddress
 title: NetExtensionGetFragmentLogicalAddress function (logicaladdress.h)
 description: The NetExtensionGetFragmentLogicalAddress function retrieves the DMA logical address extension information for a net fragment.
 tech.root: netvista
-ms.assetid: 8ED86035-A4B3-47C5-A138-1164B5A58291
 ms.date: 09/26/2019
 keywords: ["NetExtensionGetFragmentLogicalAddress function"]
 ms.keywords: NetExtensionGetFragmentLogicalAddress
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -37,8 +36,6 @@ api_location:
  - logicaladdress.h
 api_name:
  - NetExtensionGetFragmentLogicalAddress
-product:
- - Windows
 ---
 
 # NetExtensionGetFragmentLogicalAddress function

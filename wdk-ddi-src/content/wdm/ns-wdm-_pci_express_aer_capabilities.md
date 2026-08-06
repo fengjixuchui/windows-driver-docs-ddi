@@ -1,10 +1,9 @@
 ---
 UID: NS:wdm._PCI_EXPRESS_AER_CAPABILITIES
 title: _PCI_EXPRESS_AER_CAPABILITIES (wdm.h)
-description: The PCI_EXPRESS_AER_CAPABILITIES structure describes a PCI Express (PCIe) advanced error capabilities and control register of a PCIe advanced error reporting capability structure.
+description: The _PCI_EXPRESS_AER_CAPABILITIES structure (wdm.h)  describes a PCI Express (PCIe) advanced error capabilities and control register.
 old-location: pci\pci_express_aer_capabilities.htm
 tech.root: PCI
-ms.assetid: 7cb25991-4e82-4da2-9d1f-fadc035b25a3
 ms.date: 02/24/2018
 keywords: ["PCI_EXPRESS_AER_CAPABILITIES structure"]
 ms.keywords: "*PPCI_EXPRESS_AER_CAPABILITIES, PCI.pci_express_aer_capabilities, PCI_EXPRESS_AER_CAPABILITIES, PCI_EXPRESS_AER_CAPABILITIES union [Buses], PPCI_EXPRESS_AER_CAPABILITIES, PPCI_EXPRESS_AER_CAPABILITIES union pointer [Buses], _PCI_EXPRESS_AER_CAPABILITIES, pci_struct_e316ea91-d32a-4726-ba80-8fc6bd8e3163.xml, wdm/PCI_EXPRESS_AER_CAPABILITIES, wdm/PPCI_EXPRESS_AER_CAPABILITIES"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: PASSIVE_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: PCI_EXPRESS_AER_CAPABILITIES, *PPCI_EXPRESS_AER_CAPABILITIES
-req.product: Windows 10 or later.
 f1_keywords:
  - _PCI_EXPRESS_AER_CAPABILITIES
  - wdm/_PCI_EXPRESS_AER_CAPABILITIES
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _PCI_EXPRESS_AER_CAPABILITIES
+ - PPCI_EXPRESS_AER_CAPABILITIES
  - PCI_EXPRESS_AER_CAPABILITIES
 ---
 
@@ -62,32 +62,37 @@ The PCI_EXPRESS_AER_CAPABILITIES structure describes a PCI Express (PCIe) advanc
 A ULONG representation of the contents of the PCI_EXPRESS_AER_CAPABILITIES structure.
 
 
-#### - ECRCCheckCapable
+### -field DUMMYSTRUCTNAME.ECRCCheckCapable
 
 A single bit that indicates that the device is capable of checking ECRC.
 
 
-#### - ECRCCheckEnable
+### -field DUMMYSTRUCTNAME.ECRCCheckEnable
 
 A single bit that indicates that ECRC checking is enabled.
 
 
-#### - ECRCGenerationCapable
+### -field DUMMYSTRUCTNAME.ECRCGenerationCapable
 
 A single bit that indicates that the device is capable of generating end-to-end cyclic redundancy checks (ECRC).
 
 
-#### - ECRCGenerationEnable
+### -field DUMMYSTRUCTNAME.ECRCGenerationEnable
 
 A single bit that indicates that ECRC generation is enabled.
 
 
-#### - FirstErrorPointer
+### -field DUMMYSTRUCTNAME.FirstErrorPointer
 
 The bit position of the first error that was reported in the PCIe uncorrectable error status register.
 
+### -field DUMMYSTRUCTNAME.MultipleHeaderRecordingCapable
 
-#### - Reserved
+### -field DUMMYSTRUCTNAME.MultipleHeaderRecordingEnable
+
+### -field DUMMYSTRUCTNAME.TlpPrefixLogPresent
+
+### -field DUMMYSTRUCTNAME.Reserved
 
 Reserved.
 
@@ -124,3 +129,4 @@ A PCI_EXPRESS_AER_CAPABILITIES structure is contained in the <a href="/windows-h
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_pci_express_rootport_aer_capability">PCI_EXPRESS_ROOTPORT_AER_CAPABILITY</a>
+

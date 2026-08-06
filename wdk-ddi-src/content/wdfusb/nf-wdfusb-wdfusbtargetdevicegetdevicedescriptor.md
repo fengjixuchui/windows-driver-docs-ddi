@@ -4,7 +4,6 @@ title: WdfUsbTargetDeviceGetDeviceDescriptor function (wdfusb.h)
 description: The WdfUsbTargetDeviceGetDeviceDescriptor method retrieves the USB device descriptor for the USB device that is associated with a specified framework USB device object.
 old-location: wdf\wdfusbtargetdevicegetdevicedescriptor.htm
 tech.root: wdf
-ms.assetid: b2c70976-00ce-4563-af60-0bbdd1a65540
 ms.date: 02/26/2018
 keywords: ["WdfUsbTargetDeviceGetDeviceDescriptor function"]
 ms.keywords: DFUsbRef_a59d2f05-4ecf-400f-823e-b2d2533020a2.xml, WdfUsbTargetDeviceGetDeviceDescriptor, WdfUsbTargetDeviceGetDeviceDescriptor method, kmdf.wdfusbtargetdevicegetdevicedescriptor, wdf.wdfusbtargetdevicegetdevicedescriptor, wdfusb/WdfUsbTargetDeviceGetDeviceDescriptor
@@ -55,14 +54,14 @@ The <b>WdfUsbTargetDeviceGetDeviceDescriptor</b> method retrieves the USB device
 
 ## -parameters
 
-### -param UsbDevice 
+### -param UsbDevice [in]
 
-[in]
+
 A handle to a USB device object that was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>.
 
-### -param UsbDeviceDescriptor 
+### -param UsbDeviceDescriptor [out]
 
-[out]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_device_descriptor">USB_DEVICE_DESCRIPTOR</a> structure that receives the USB device descriptor.
 
 ## -remarks

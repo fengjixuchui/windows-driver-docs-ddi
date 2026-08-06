@@ -4,7 +4,6 @@ title: PROTOCOL_CM_REG_SAP (ndis.h)
 description: The ProtocolCmRegisterSap function is a required function that is called by NDIS to request that a call manager register a SAP (service access point) on behalf of a connection-oriented client.Note  You must declare the function by using the PROTOCOL_CM_REG_SAP type. For more information, see the following Examples section.
 old-location: netvista\protocolcmregistersap.htm
 tech.root: netvista
-ms.assetid: 3e3e7a0e-a8d2-40b2-895b-187d24867080
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CM_REG_SAP callback function"]
 ms.keywords: PROTOCOL_CM_REG_SAP, PROTOCOL_CM_REG_SAP callback, ProtocolCmRegisterSap, ProtocolCmRegisterSap callback function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_aaaefdc1-4954-4911-84a4-1f82141ccca6.xml, ndis/ProtocolCmRegisterSap, netvista.protocolcmregistersap
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolCmRegisterSap
+ - PROTOCOL_CM_REG_SAP
 ---
 
 # PROTOCOL_CM_REG_SAP callback function
@@ -54,28 +53,28 @@ The
 
 ## -parameters
 
-### -param CallMgrAfContext 
+### -param CallMgrAfContext [in]
 
-[in]
+
 Specifies the handle to a call manager-allocated context area in which the call manager maintains
      its per-open AF state. The call manager supplied this handle to NDIS from its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_open_af">ProtocolCmOpenAf</a> function.
 
-### -param Sap 
+### -param Sap [in]
 
-[in]
+
 Pointer to a media-specific CO_SAP structure that contains the specific SAP that a
      connection-oriented client is registering.
 
-### -param NdisSapHandle 
+### -param NdisSapHandle [in]
 
-[in]
+
 Specifies a handle, supplied by NDIS, that uniquely identifies this SAP. This handle is opaque to
      the call manager and reserved for NDIS library use.
 
-### -param CallMgrSapContext 
+### -param CallMgrSapContext [out]
 
-[out]
+
 On return, specifies the handle to a call manager-supplied context area in which the call manager
      maintains state about this SAP.
 
@@ -247,3 +246,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_open_af">ProtocolCmOpenAf</a>
+

@@ -4,7 +4,6 @@ title: NdisFreeScatterGatherList function (ndis.h)
 description: The NdisFreeScatterGatherList function frees a scatter/gather list.
 old-location: netvista\ndisfreescattergatherlist.htm
 tech.root: netvista
-ms.assetid: 140be989-e578-4bfe-8b9e-56abb274933a
 ms.date: 05/02/2018
 keywords: ["NdisFreeScatterGatherList function"]
 ms.keywords: NdisFreeScatterGatherList, NdisFreeScatterGatherList function [Network Drivers Starting with Windows Vista], ndis/NdisFreeScatterGatherList, ndis_shared_memory_ref_2376e740-d44c-4572-8731-7518d4765208.xml, netvista.ndisfreescattergatherlist
@@ -52,25 +51,25 @@ The
 
 ## -parameters
 
-### -param NdisHandle 
+### -param NdisHandle [in]
 
-[in]
+
 An NDIS driver or instance handle that was obtained during caller initialization. This should be
      the same handle that was passed to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisbuildscattergatherlist">
      NdisBuildScatterGatherList</a> function when the scatter/gather list was created.
 
-### -param ScatterGatherListBuffer 
+### -param ScatterGatherListBuffer [in]
 
-[in]
+
 A pointer to a caller-provided 
      <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_scatter_gather_list">SCATTER_GATHER_LIST</a> structure to free.
      This must be the same buffer that was passed to the 
      <b>NdisBuildScatterGatherList</b> function when the scatter/gather list was allocated.
 
-### -param WriteToDevice 
+### -param WriteToDevice [in]
 
-[in]
+
 A BOOLEAN value that is set to <b>TRUE</b> if the scatter/gather list was used for writing to the device.
      Otherwise, it is <b>FALSE</b>.
 

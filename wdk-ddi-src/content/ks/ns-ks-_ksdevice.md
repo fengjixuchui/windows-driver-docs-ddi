@@ -4,7 +4,6 @@ title: _KSDEVICE (ks.h)
 description: The KSDEVICE structure describes a WDM functional device that is managed by AVStream.
 old-location: stream\ksdevice.htm
 tech.root: stream
-ms.assetid: 95b80298-a3b4-416b-8744-88873ac30037
 ms.date: 04/23/2018
 keywords: ["KSDEVICE structure"]
 ms.keywords: "*PKSDEVICE, KSDEVICE, KSDEVICE structure [Streaming Media Devices], PKSDEVICE, PKSDEVICE structure pointer [Streaming Media Devices], _KSDEVICE, avstruct_0f140861-d58a-48cf-9bac-679acbd30d02.xml, ks/KSDEVICE, ks/PKSDEVICE, stream.ksdevice"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - _KSDEVICE
+ - PKSDEVICE
  - KSDEVICE
 ---
 
@@ -123,3 +124,4 @@ As mentioned above, <b>Context</b> is initialized to <b>NULL</b> at create time.
 
 
 <a href="/windows-hardware/drivers/ddi/ks/nf-ks-ksgetdevicefordeviceobject">KsGetDeviceForDeviceObject</a>
+

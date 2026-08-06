@@ -4,7 +4,6 @@ title: SRIOV_READ_CONFIG (pcivirt.h)
 description: Reads data from the configuration space of the specified PCI Express SR-IOV Virtual Function (VF).
 old-location: pci\sriov_read_config.htm
 tech.root: PCI
-ms.assetid: 0fef9d53-b8af-4c9b-9914-982bcfc26517
 ms.date: 02/24/2018
 keywords: ["SRIOV_READ_CONFIG callback"]
 ms.keywords: "*PSRIOV_READ_CONFIG, *PSRIOV_READ_CONFIG callback function [Buses], PCI.sriov_read_config, SRIOV_READ_CONFIG, SRIOV_READ_CONFIG callback function [Buses], pcivirt/SRIOV_READ_CONFIG"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Pcivirt.h
 api_name:
- - PSRIOV_READ_CONFIG
+ - SRIOV_READ_CONFIG
 ---
 
 # SRIOV_READ_CONFIG callback
@@ -50,29 +49,29 @@ Reads data from  the configuration space of the specified PCI Express SR-IOV Vir
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to a driver-defined context.
 
-### -param Data 
+### -param Data [out]
 
-[out]
+
 A pointer to buffer that contains the configuration information to be read from the VF's configuration space.
 
-### -param VfIndex 
+### -param VfIndex [in]
 
-[in]
+
 A zero-based index of the VF to which this read operation applies.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 An offset in bytes to the start of the VF’s configuration space where the read begins.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The length, in bytes, of the data to read from the configuration space.
 
 ## -returns
@@ -98,3 +97,4 @@ typedef SRIOV_READ_CONFIG *PSRIOV_READ_CONFIG;
 This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to read from the configuration space of a specific virtual function.
 
 The PF driver registers its implementation by setting the <b>ReadVfConfig</b> member of the <a href="/windows-hardware/drivers/ddi/pcivirt/ns-pcivirt-_sriov_device_interface_standard">SRIOV_DEVICE_INTERFACE_STANDARD</a>, configuring a <a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>.
+

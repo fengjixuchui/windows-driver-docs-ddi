@@ -4,7 +4,6 @@ title: wiauPropsInPropSpec function (wiautil.h)
 description: The wiauPropsInPropSpec function determines whether any of a list of property specification IDs is contained within an array of such values.
 old-location: image\wiaupropsinpropspec.htm
 tech.root: image
-ms.assetid: c376297a-11a6-4e9f-b551-36a573cdb7e0
 ms.date: 05/03/2018
 keywords: ["wiauPropsInPropSpec function"]
 ms.keywords: image.wiaupropsinpropspec, wiauFncs_2490b5b3-8051-4711-b681-1aef18580182.xml, wiauPropsInPropSpec, wiauPropsInPropSpec function [Imaging Devices], wiautil/wiauPropsInPropSpec
@@ -54,18 +53,18 @@ The <b>wiauPropsInPropSpec</b> function determines whether any of a list of prop
 
 Specifies the number of property specification IDs in the array pointed to by the <i>pPropSpecs</i> parameter.
 
-### -param pPropSpecs 
+### -param pPropSpecs [in]
 
-[in]
+
 Points to the first element of the array of property specification IDs.
 
 ### -param NumProps
 
 Specifies the number of property specification IDs to search for.
 
-### -param pProps 
+### -param pProps [in]
 
-[in]
+
 Points to the first element of the array containing the property specification IDs to search for.
 
 ## -returns

@@ -4,7 +4,6 @@ title: UfxEndpointNotifySetup function (ufxclient.h)
 description: Notifies UFX when the client driver receives a setup packet from the host.
 old-location: buses\ufxendpointnotifysetup.htm
 tech.root: usbref
-ms.assetid: 147CE46A-315D-4B75-B345-A7C0B01B2078
 ms.date: 05/07/2018
 keywords: ["UfxEndpointNotifySetup function"]
 ms.keywords: UfxEndpointNotifySetup, UfxEndpointNotifySetup method [Buses], buses.ufxendpointnotifysetup, ufxclient/UfxEndpointNotifySetup
@@ -54,9 +53,9 @@ Notifies UFX when the client driver receives a setup packet from the host.
 
 <p>A handle to a UFX device object that the driver created by calling <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate"><b>UfxDeviceCreate</b></a>.</p>
 
-### -param SetupInfo 
+### -param SetupInfo [in]
 
-[in]
+
 A pointer to a USB setup packet described in a <b>USB_DEFAULT_PIPE_SETUP_PACKET</b> structure (defined in Usbspec.h).
 
 ## -remarks

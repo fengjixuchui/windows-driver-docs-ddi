@@ -1,8 +1,7 @@
 ---
-UID: NS:sensorsstructures.__unnamed_struct_0
+UID: NS:sensorsstructures.VEC3D
 title: VEC3D (sensorsstructures.h)
 description: Defines a 3D vector.
-ms.assetid: 44c53c34-c7fd-467a-a969-40ead8f990f3
 ms.date: 10/19/2018
 keywords: ["VEC3D structure"]
 tech.root: sensors
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - sensorsstructures.h
 api_name:
+ - PVEC3D
  - VEC3D
-product:
- - Windows
 ---
 
 # VEC3D structure

@@ -1,10 +1,9 @@
 ---
-UID: NE:ks.__unnamed_enum_19
+UID: NE:ks.KSEVENT_STREAMALLOCATOR
 title: KSEVENT_STREAMALLOCATOR (ks.h)
-description: 
+description: "Learn more about: KSEVENT_STREAMALLOCATOR enumeration"
 old-location: stream\ksevent_streamallocator.htm
 tech.root: stream
-ms.assetid: DD614794-5E54-4538-91C5-8777B244143C
 ms.date: 04/23/2018
 keywords: ["KSEVENT_STREAMALLOCATOR enumeration"]
 ms.keywords: KSEVENT_STREAMALLOCATOR, KSEVENT_STREAMALLOCATOR enumeration [Streaming Media Devices], KSEVENT_STREAMALLOCATOR_FREEFRAME, KSEVENT_STREAMALLOCATOR_INTERNAL_FREEFRAME, ks/KSEVENT_STREAMALLOCATOR, ks/KSEVENT_STREAMALLOCATOR_FREEFRAME, ks/KSEVENT_STREAMALLOCATOR_INTERNAL_FREEFRAME, stream.ksevent_streamallocator

@@ -4,7 +4,6 @@ title: IDebugPlmClient3::SuspendPlmPackageWide (dbgeng.h)
 description: Suspends a Process Lifecycle Management (PLM) package.
 old-location: debugger\idebugplmclient3_suspendplmpackagewide.htm
 tech.root: debugger
-ms.assetid: B887CCD2-0747-483E-A4CF-632471AB19A2
 ms.date: 05/03/2018
 keywords: ["IDebugPlmClient3::SuspendPlmPackageWide"]
 ms.keywords: IDebugPlmClient3 interface [Windows Debugging],SuspendPlmPackageWide method, IDebugPlmClient3.SuspendPlmPackageWide, IDebugPlmClient3::SuspendPlmPackageWide, SuspendPlmPackageWide, SuspendPlmPackageWide method [Windows Debugging], SuspendPlmPackageWide method [Windows Debugging],IDebugPlmClient3 interface, dbgeng/IDebugPlmClient3::SuspendPlmPackageWide, debugger.idebugplmclient3_suspendplmpackagewide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugPlmClient3.SuspendPlmPackageWide
+ - IDebugPlmClient3::SuspendPlmPackageWide
 ---
 
 # IDebugPlmClient3::SuspendPlmPackageWide
@@ -50,14 +49,14 @@ Suspends a Process Lifecycle Management (PLM) package.
 
 ## -parameters
 
-### -param Server 
+### -param Server [in]
 
-[in]
+
 The server of the package.
 
-### -param PackageFullName 
+### -param PackageFullName [in]
 
-[in]
+
 A pointer to the package name.
 
 ## -returns
@@ -67,3 +66,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugplmclient3">IDebugPlmClient3</a>
+

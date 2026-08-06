@@ -4,7 +4,6 @@ title: NtSetInformationTransactionManager function (wdm.h)
 description: Do not call this routine from kernel-mode code.
 old-location: kernel\ntsetinformationtransactionmanager.htm
 tech.root: kernel
-ms.assetid: a1e2f40f-5aea-4c8b-8692-95721ad4bc9d
 ms.date: 04/30/2018
 keywords: ["NtSetInformationTransactionManager function"]
 ms.keywords: NtSetInformationTransactionManager, NtSetInformationTransactionManager routine [Kernel-Mode Driver Architecture], kernel.ntsetinformationtransactionmanager, ntx_b4f057ac-bca8-44e6-874e-4f33bd487a20.xml, wdm/NtSetInformationTransactionManager
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,21 +49,21 @@ Do not call this routine from kernel-mode code.
 
 ## -parameters
 
-### -param TmHandle 
+### -param TmHandle [in, optional]
 
-[in, optional]
 
-### -param TransactionManagerInformationClass 
 
-[in]
+### -param TransactionManagerInformationClass [in]
 
-### -param TransactionManagerInformation 
 
-[in]
 
-### -param TransactionManagerInformationLength 
+### -param TransactionManagerInformation [in]
 
-[in]
+
+
+### -param TransactionManagerInformationLength [in]
+
+
 
 ## -returns
 

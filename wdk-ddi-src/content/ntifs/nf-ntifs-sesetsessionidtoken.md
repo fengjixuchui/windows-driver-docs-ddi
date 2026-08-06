@@ -1,10 +1,9 @@
 ---
 UID: NF:ntifs.SeSetSessionIdToken
 title: SeSetSessionIdToken function (ntifs.h)
-description: Reserved for system use.
+description: "Microsoft reserves the SeSetSessionIdToken function for internal use only. Don't use this function in your code."
 old-location: ifsk\sesetsessionidtoken.htm
 tech.root: ifsk
-ms.assetid: 18c5ef8c-de72-4d2e-9bee-5b58bc5482c7
 ms.date: 04/16/2018
 keywords: ["SeSetSessionIdToken function"]
 ms.keywords: SeSetSessionIdToken, SeSetSessionIdToken function [Installable File System Drivers], ifsk.sesetsessionidtoken, ntifs/SeSetSessionIdToken, seref_3af3660a-a2ba-4262-91bb-dff8533bcdcb.xml
@@ -22,8 +21,8 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: 
-req.dll: 
+req.lib: NtosKrnl.lib
+req.dll: NtosKrnl.exe
 req.irql: 
 targetos: Windows
 req.typenames: 
@@ -43,18 +42,20 @@ api_name:
 
 # SeSetSessionIdToken function
 
-
 ## -description
 
-The <b>SeSetSessionIdToken</b> routine is reserved for system use.
+The **SeSetSessionIdToken** routine is reserved for system use.
 
 ## -parameters
 
 ### -param Token
 
-<p>Reserved.</p>
+Reserved.
 
 ### -param SessionId
 
 Reserved.
 
+## -returns
+
+Reserved.

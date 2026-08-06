@@ -4,7 +4,6 @@ title: PROTOCOL_OPEN_ADAPTER_COMPLETE_EX (ndis.h)
 description: NDIS calls a protocol driver's ProtocolOpenAdapterCompleteEx function to complete an open adapter operation for which the NdisOpenAdapterEx function returned NDIS_STATUS_PENDING.Note  You must declare the function by using the PROTOCOL_OPEN_ADAPTER_COMPLETE_EX type. For more information, see the following Examples section.
 old-location: netvista\protocolopenadaptercompleteex.htm
 tech.root: netvista
-ms.assetid: 59d18822-8ce2-4506-90d7-9f1cdc7a9e10
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_OPEN_ADAPTER_COMPLETE_EX callback function"]
 ms.keywords: PROTOCOL_OPEN_ADAPTER_COMPLETE_EX, PROTOCOL_OPEN_ADAPTER_COMPLETE_EX callback, ProtocolOpenAdapterCompleteEx, ProtocolOpenAdapterCompleteEx callback function [Network Drivers Starting with Windows Vista], ndis/ProtocolOpenAdapterCompleteEx, netvista.protocolopenadaptercompleteex, protocol_functions_ref_d47f5a23-aa11-4fc8-9dec-a1ecb3184d9a.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolOpenAdapterCompleteEx
+ - PROTOCOL_OPEN_ADAPTER_COMPLETE_EX
 ---
 
 # PROTOCOL_OPEN_ADAPTER_COMPLETE_EX callback function
@@ -55,17 +54,17 @@ NDIS calls a protocol driver's
 
 ## -parameters
 
-### -param ProtocolBindingContext 
+### -param ProtocolBindingContext [in]
 
-[in]
+
 A handle to a context area allocated by the protocol driver. The protocol driver maintains the
      per-binding context information in this context area. The driver supplied this handle to NDIS when the
      driver called 
      <b>NdisOpenAdapterEx</b>.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 The final status of the open operation for the underlying miniport driver. This status value is
      NDIS_STATUS_SUCCESS if the binding was established or any error status that the underlying driver
      determines.
@@ -145,3 +144,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex">ProtocolBindAdapterEx</a>
+

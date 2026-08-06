@@ -4,7 +4,6 @@ title: POFXCALLBACKREQUESTCOMMON (pepfx.h)
 description: The RequestCommon routine is a generic request handler.
 old-location: kernel\requestcommon.htm
 tech.root: kernel
-ms.assetid: 16699B3D-D02B-4D01-9EBE-003C92B06D31
 ms.date: 04/30/2018
 keywords: ["POFXCALLBACKREQUESTCOMMON callback function"]
 ms.keywords: POFXCALLBACKREQUESTCOMMON, RequestCommon, RequestCommon routine [Kernel-Mode Driver Architecture], kernel.requestcommon, pepfx/RequestCommon
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
- - RequestCommon
+ - POFXCALLBACKREQUESTCOMMON
 ---
 
 # POFXCALLBACKREQUESTCOMMON callback function (pepfx.h)
@@ -50,14 +49,14 @@ The <b>RequestCommon</b> routine is a generic request handler.
 
 ## -parameters
 
-### -param RequestId 
+### -param RequestId [in]
 
-[in]
+
 A request ID that specifies the operation being requested.
 
-### -param Data 
+### -param Data [in, out, optional]
 
-[in, out, optional]
+
 A pointer to a data structure that contains the input data and/or result data for the request specified by the <i>RequestId</i> parameter.
 
 ## -returns
@@ -66,10 +65,11 @@ A pointer to a data structure that contains the input data and/or result data fo
 
 ## -remarks
 
-This routine is implemented by the <a href="/windows-hardware/drivers/ddi/index">power management framework</a> (PoFx) and is called by the platform extension plug-in (PEP). The <b>RequestCommon</b> member of the <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_kernel_information_struct_v3">PEP_KERNEL_INFORMATION_STRUCT_V3</a> structure is a pointer to an <b>RequestCommon</b> routine.
+This routine is implemented by the <a href="/windows-hardware/drivers/ddi/_kernel/#device-power-management">power management framework</a> (PoFx) and is called by the platform extension plug-in (PEP). The <b>RequestCommon</b> member of the <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_kernel_information_struct_v3">PEP_KERNEL_INFORMATION_STRUCT_V3</a> structure is a pointer to a <b>RequestCommon</b> routine.
 
 A PEP can call this routine at IRQL <= HIGH_LEVEL.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_kernel_information_struct_v3">PEP_KERNEL_INFORMATION_STRUCT_V3</a>
+

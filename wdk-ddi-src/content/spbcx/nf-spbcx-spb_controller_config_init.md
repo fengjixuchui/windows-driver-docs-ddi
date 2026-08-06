@@ -4,7 +4,6 @@ title: SPB_CONTROLLER_CONFIG_INIT function (spbcx.h)
 description: The SPB_CONTROLLER_CONFIG_INIT function initializes an SPB_CONTROLLER_CONFIG structure.
 old-location: spb\spb_controller_config_init.htm
 tech.root: SPB
-ms.assetid: 78D46903-A13D-4BC2-803F-E1656A43E865
 ms.date: 04/30/2018
 keywords: ["SPB_CONTROLLER_CONFIG_INIT function"]
 ms.keywords: SPB.spb_controller_config_init, SPB_CONTROLLER_CONFIG_INIT, SPB_CONTROLLER_CONFIG_INIT function [Buses], spbcx/SPB_CONTROLLER_CONFIG_INIT
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any IRQL
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>SPB_CONTROLLER_CONFIG_INIT</b> function initializes an <a href="/windows-
 
 ## -parameters
 
-### -param Config 
+### -param Config [out]
 
-[out]
+
 A pointer to the <b>SPB_CONTROLLER_CONFIG</b> structure that is to be initialized.
 
 ## -remarks

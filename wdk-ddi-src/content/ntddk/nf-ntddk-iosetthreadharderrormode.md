@@ -4,7 +4,6 @@ title: IoSetThreadHardErrorMode function (ntddk.h)
 description: The IoSetThreadHardErrorMode routine enables or disables hard error reporting for the current thread.
 old-location: kernel\iosetthreadharderrormode.htm
 tech.root: kernel
-ms.assetid: bedb6399-8f79-477a-9a90-4a7dec5c5dae
 ms.date: 04/30/2018
 keywords: ["IoSetThreadHardErrorMode function"]
 ms.keywords: IoSetThreadHardErrorMode, IoSetThreadHardErrorMode routine [Kernel-Mode Driver Architecture], k104_6e0a2c29-8edf-4d7e-b672-11309231c45e.xml, kernel.iosetthreadharderrormode, ntddk/IoSetThreadHardErrorMode
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>IoSetThreadHardErrorMode</b> routine enables or disables hard error repor
 
 ## -parameters
 
-### -param EnableHardErrors 
+### -param EnableHardErrors [in]
 
-[in]
+
 Specifies whether hard error reporting to the user should be enabled or disabled for this thread. A value of <b>TRUE</b> enables hard error reporting. <b>FALSE</b> disables it.
 
 ## -returns

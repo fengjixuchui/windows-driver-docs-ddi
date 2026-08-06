@@ -4,7 +4,6 @@ title: IDebugFailureAnalysis2::SetExtensionCommand (extsfns.h)
 description: The SetExtensionCommand method searches a DebugFailureAnalysis object for the first FA entry that has a specified tag.
 old-location: debugger\idebugfailureanalysis2_setextensioncommand.htm
 tech.root: debugger
-ms.assetid: 741B3D1F-FA7B-4260-AD0C-461D76605CBA
 ms.date: 05/03/2018
 keywords: ["IDebugFailureAnalysis2::SetExtensionCommand"]
 ms.keywords: IDebugFailureAnalysis2 interface [Windows Debugging],SetExtensionCommand method, IDebugFailureAnalysis2.SetExtensionCommand, IDebugFailureAnalysis2::SetExtensionCommand, SetExtensionCommand, SetExtensionCommand method [Windows Debugging], SetExtensionCommand method [Windows Debugging],IDebugFailureAnalysis2 interface, debugger.idebugfailureanalysis2_setextensioncommand, extsfns/IDebugFailureAnalysis2::SetExtensionCommand
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - extsfns.h
 api_name:
- - IDebugFailureAnalysis2.SetExtensionCommand
+ - IDebugFailureAnalysis2::SetExtensionCommand
 ---
 
 # IDebugFailureAnalysis2::SetExtensionCommand
@@ -83,3 +82,4 @@ If this method does not find an <a href="/windows-hardware/drivers/debugger/fail
 
 
 <a href="/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin">_EFN_Analyze</a>
+

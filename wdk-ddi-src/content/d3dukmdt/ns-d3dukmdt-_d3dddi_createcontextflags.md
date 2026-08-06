@@ -1,11 +1,9 @@
 ---
 UID: NS:d3dukmdt._D3DDDI_CREATECONTEXTFLAGS
-title: _D3DDDI_CREATECONTEXTFLAGS (d3dukmdt.h)
-description: The D3DDDI_CREATECONTEXTFLAGS structure describes how to create a context in a call to the pfnCreateContextCb function.
-old-location: display\d3dddi_createcontextflags.htm
+title: D3DDDI_CREATECONTEXTFLAGS (d3dukmdt.h)
+description: Learn more about the D3DDDI_CREATECONTEXTFLAGS structure.
 tech.root: display
-ms.assetid: e450f85c-4c73-44a8-9d0a-da2c212c87c9
-ms.date: 05/10/2018
+ms.date: 05/21/2024
 keywords: ["D3DDDI_CREATECONTEXTFLAGS structure"]
 ms.keywords: D3DDDI_CREATECONTEXTFLAGS, D3DDDI_CREATECONTEXTFLAGS structure [Display Devices], D3D_other_Structs_e20f9457-1008-4c63-a924-d5fa75929be5.xml, _D3DDDI_CREATECONTEXTFLAGS, d3dukmdt/D3DDDI_CREATECONTEXTFLAGS, display.d3dddi_createcontextflags
 req.header: d3dukmdt.h
@@ -40,37 +38,49 @@ api_type:
 api_location:
  - d3dukmdt.h
 api_name:
+ - _D3DDDI_CREATECONTEXTFLAGS
  - D3DDDI_CREATECONTEXTFLAGS
 ---
 
-# _D3DDDI_CREATECONTEXTFLAGS structure
-
+# D3DDDI_CREATECONTEXTFLAGS structure
 
 ## -description
 
-The D3DDDI_CREATECONTEXTFLAGS structure describes how to create a context in a call to the <a href="/previous-versions/ff568895(v=vs.85)">pfnCreateContextCb</a> function.
+The **D3DDDI_CREATECONTEXTFLAGS** structure describes how to create a context in a call to the [**pfnCreateContextCb**](/previous-versions/ff568895(v=vs.85)) function.
 
 ## -struct-fields
 
 ### -field NullRendering
 
-A UINT value that specifies whether the graphics processing unit (GPU) should process any commands that are sent by the context that is created. The <b>NullRendering</b> bit-field flag is set to inform the GPU not to process any commands that are sent by the context. The <b>NullRendering</b> bit-field flag is set only during performance investigating and debugging to simulate an infinitely fast rendering engine that still must perform the overhead of DMA buffer submission and signaling. <b>NullRendering</b> is never set during typical operations.
-
-Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).
+Specifies whether the GPU should process any commands that are sent by the context that is created. The **NullRendering** bit-field flag is set to inform the GPU not to process any commands that are sent by the context. The **NullRendering** bit-field flag is set only during performance investigating and debugging to simulate an infinitely fast rendering engine that still must perform the overhead of DMA buffer submission and signaling. **NullRendering** is never set during typical operations.
 
 ### -field InitialData
 
-Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).
+When set, indicates that the context is created with initial data.
 
 ### -field DisableGpuTimeout
 
+When set, indicates that the GPU timeout is disabled for the context.
+
 ### -field SynchronizationOnly
+
+When set, indicates that the context is created for synchronization purposes only, and not for rendering.
 
 ### -field HwQueueSupported
 
+When set, indicates that the context supports hardware queues, which can improve efficiency in command processing.
+
+### -field NoKmdAccess
+
+When set, indicates that the context is created without kernel-mode driver (KMD) access. Added in WDDM 2.3.
+
+### -field TestContext
+
+When set, indicates that the context is created for testing purposes. Added in WDDM 2.3.
+
 ### -field Reserved
 
-This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 30 bits (0xFFFFFFFD) of the 32-bit <b>Value</b> member to zeros.
+This member is reserved and should be set to zero.
 
 ### -field Value
 
@@ -78,8 +88,6 @@ A member in the union that is contained in D3DDDI_CREATECONTEXTFLAGS that can ho
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddicb_createcontext">D3DDDICB_CREATECONTEXT</a>
+[**D3DDDICB_CREATECONTEXT**](../d3dumddi/ns-d3dumddi-_d3dddicb_createcontext.md)
 
-
-
-<a href="/previous-versions/ff568895(v=vs.85)">pfnCreateContextCb</a>
+[**pfnCreateContextCb**](/previous-versions/ff568895(v=vs.85))

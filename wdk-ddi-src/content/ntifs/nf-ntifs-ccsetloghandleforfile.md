@@ -4,14 +4,13 @@ title: CcSetLogHandleForFile function (ntifs.h)
 description: The CcSetLogHandleForFile routine sets a log handle for a file.
 old-location: ifsk\ccsetloghandleforfile.htm
 tech.root: ifsk
-ms.assetid: 7bb56650-a75e-4b49-bfb3-83848ede29c0
 ms.date: 04/16/2018
 keywords: ["CcSetLogHandleForFile function"]
 ms.keywords: CcSetLogHandleForFile, CcSetLogHandleForFile routine [Installable File System Drivers], LogHandle, Lsn, ccref_e4928c2e-41c5-4744-83c6-9c22766e9cfa.xml, ifsk.ccsetloghandleforfile, ntifs/CcSetLogHandleForFile
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available on Microsoft Windows XP and later.
+req.target-min-winverclnt: Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,19 +49,19 @@ The <b>CcSetLogHandleForFile</b> routine sets a log handle for a file.
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to the file object for the file for which the log handle is to be stored.
 
-### -param LogHandle 
+### -param LogHandle [in]
 
-[in]
+
 Pointer to the log handle that is to be stored.
 
-### -param FlushToLsnRoutine 
+### -param FlushToLsnRoutine [in]
 
-[in]
+
 Pointer to a log file flush callback routine to call before flushing buffers for this file. This routine is called to ensure that a log file is flushed to the most recent logical sequence number (LSN) for any buffer control block (BCB) being flushed. This routine is declared as follows:
 
 

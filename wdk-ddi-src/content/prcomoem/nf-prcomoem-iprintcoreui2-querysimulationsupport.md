@@ -4,7 +4,6 @@ title: IPrintCoreUI2::QuerySimulationSupport (prcomoem.h)
 description: The IPrintCoreUI2::QuerySimulationSupport method retrieves a spooler simulation capability structure, which indicates the kinds of simulation the spooler supports.
 old-location: print\iprintcoreui2_querysimulationsupport.htm
 tech.root: print
-ms.assetid: 0136df19-9491-47ea-9a8f-c9a932646686
 ms.date: 04/20/2018
 keywords: ["IPrintCoreUI2::QuerySimulationSupport"]
 ms.keywords: IPrintCoreUI2 interface [Print Devices],QuerySimulationSupport method, IPrintCoreUI2.QuerySimulationSupport, IPrintCoreUI2::QuerySimulationSupport, QuerySimulationSupport, QuerySimulationSupport method [Print Devices], QuerySimulationSupport method [Print Devices],IPrintCoreUI2 interface, prcomoem/IPrintCoreUI2::QuerySimulationSupport, print.iprintcoreui2_querysimulationsupport, print_unidrv-pscript_ui_96f40d94-5dfc-4707-ac4d-0f043a829dd2.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintCoreUI2.QuerySimulationSupport
+ - IPrintCoreUI2::QuerySimulationSupport
 ---
 
 # IPrintCoreUI2::QuerySimulationSupport
@@ -50,14 +49,14 @@ The <code>IPrintCoreUI2::QuerySimulationSupport</code> method retrieves a spoole
 
 ## -parameters
 
-### -param hPrinter 
+### -param hPrinter [in]
 
-[in]
+
 Specifies a handle to the printer.
 
-### -param dwLevel 
+### -param dwLevel [in]
 
-[in]
+
 Specifies the spooler simulation capability structure returned in the buffer pointed to by <i>pCaps</i>. Currently, only level 1 of spooler simulation support is provided.
 
 <table>
@@ -78,19 +77,19 @@ Specifies the spooler simulation capability structure returned in the buffer poi
 </tr>
 </table>
 
-### -param pCaps 
+### -param pCaps [out]
 
-[out]
+
 Pointer to the output buffer, which contains a structure of the type indicated by the value in the <i>dwLevel</i> parameter.
 
-### -param cbSize 
+### -param cbSize [in]
 
-[in]
+
 Specifies the size, in bytes, of the output buffer, which is pointed to by <i>pCaps</i>.
 
-### -param pcbNeeded 
+### -param pcbNeeded [out]
 
-[out]
+
 Specifies the size, in bytes, of the memory needed to store a structure of the type indicated by <i>dwLevel</i>.
 
 ## -returns
@@ -165,3 +164,4 @@ The <code>IPrintCoreUI2::QuerySimulationSupport</code> method stores a spooler s
 
 
 <a href="/windows-hardware/drivers/ddi/printoem/ns-printoem-_simulate_caps_1">SIMULATE_CAPS_1</a>
+

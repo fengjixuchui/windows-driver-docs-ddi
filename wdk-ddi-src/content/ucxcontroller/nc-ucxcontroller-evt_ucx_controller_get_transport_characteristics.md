@@ -4,7 +4,6 @@ title: EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS (ucxcontroller.h)
 description: UCX invokes this callback to retrieve the host controller characteristics.
 old-location: buses\evt_ucx_controller_get_transport_characteristics.htm
 tech.root: usbref
-ms.assetid: 4394199C-6644-4E11-BDAF-625C2F94DEE8
 ms.date: 05/07/2018
 keywords: ["EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS callback function"]
 ms.keywords: "*PFN_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS, *PFN_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS callback function pointer [Buses], EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS, EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS callback, EvUcxControllerGetTransportCharacteristics, EvUcxControllerGetTransportCharacteristics callback function [Buses], buses.evt_ucx_controller_get_transport_characteristics, ucxcontroller/EvUcxControllerGetTransportCharacteristics"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - UcxController.h
 api_name:
- - PFN_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS
+ - EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS
 ---
 
 # EVT_UCX_CONTROLLER_GET_TRANSPORT_CHARACTERISTICS callback function
@@ -50,14 +49,14 @@ api_name:
 
 ## -parameters
 
-### -param UcxController 
+### -param UcxController [in]
 
-[in]
+
  A handle to the UCX controller that the client driver received in a previous call to  the <a href="/previous-versions/windows/hardware/drivers/mt188033(v=vs.85)">UcxControllerCreate</a> method.
 
-### -param UcxControllerTransportCharacteristics 
+### -param UcxControllerTransportCharacteristics [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ucxcontroller/ns-ucxcontroller-_ucx_controller_transport_characteristics">UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS</a> structure that the client driver for the host controller fills with transport characteristics.
 
 ## -returns
@@ -73,3 +72,4 @@ This callback function is optional. Whenever transport characteristics change, t
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/drivers/mt188033(v=vs.85)">UcxControllerCreate</a>
+

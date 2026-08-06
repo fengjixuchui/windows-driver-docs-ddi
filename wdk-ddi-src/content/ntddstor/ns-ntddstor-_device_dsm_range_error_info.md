@@ -3,7 +3,6 @@ UID: NS:ntddstor._DEVICE_DSM_RANGE_ERROR_INFO
 title: DEVICE_DSM_RANGE_ERROR_INFO
 description: The DEVICE_DSM_RANGE_ERROR_OUTPUT (or DEVICE_DSM_RANGE_ERROR_INFO) structure stores information about whether one or more logical block ranges contain any media errors.
 tech.root: storage
-ms.assetid: 23b635e6-0e49-4207-a46f-5b632de643bf
 ms.date: 08/23/2019
 keywords: ["DEVICE_DSM_RANGE_ERROR_INFO structure"]
 ms.keywords: DEVICE_DSM_RANGE_ERROR_INFO, DEVICE_DSM_RANGE_ERROR_INFO, *PDEVICE_DSM_RANGE_ERROR_INFO, DEVICE_DSM_RANGE_ERROR_OUTPUT, *PDEVICE_DSM_RANGE_ERROR_OUTPUT,
@@ -28,9 +27,9 @@ api_type:
 api_location:
  - ntddstor.h
 api_name:
+ - _DEVICE_DSM_RANGE_ERROR_INFO
+ - PDEVICE_DSM_RANGE_ERROR_INFO
  - DEVICE_DSM_RANGE_ERROR_INFO
-product:
- - Windows
 f1_keywords:
  - _DEVICE_DSM_RANGE_ERROR_INFO
  - ntddstor/_DEVICE_DSM_RANGE_ERROR_INFO
@@ -84,3 +83,4 @@ The output block in the payload of an [IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES]
 [DEVICE_STORAGE_RANGE_ATTRIBUTES](./ns-ntddstor_device_storage_range_attributes.md)
 
 [IOCTL_STORAGE_MANAGE_DATA_SET_ATTRIBUTES](./ni-ntddstor-ioctl_storage_manage_data_set_attributes.md)
+

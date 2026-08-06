@@ -2,7 +2,6 @@
 UID: NF:sensorsutils.PropKeyFindKeyGetDouble
 title: PropKeyFindKeyGetDouble function (sensorsutils.h)
 description: This routine gets a double precision floating point value from a PROPVARIANT within a collection list based on the PROPERTYKEY.
-ms.assetid: 8dc6e964-d55a-4b06-b571-985e1c302e84
 ms.date: 08/08/2018
 keywords: ["PropKeyFindKeyGetDouble function"]
 tech.root: sensors
@@ -37,8 +36,6 @@ api_location:
  - sensorsutils.h
 api_name:
  - PropKeyFindKeyGetDouble
-product:
- - Windows
 ---
 
 # PropKeyFindKeyGetDouble function
@@ -50,17 +47,17 @@ This routine gets a double precision floating point value from a PROPVARIANT wit
 
 ## -parameters
 
-### -param pList
+### -param pList [in]
 
-[in] Pointer to the list of PROPVARIANT collection.
+Pointer to the list of PROPVARIANT collection.
 
-### -param pKey
+### -param pKey [in]
 
-[in] Pointer to a PROPERTYKEY for the target PROPVARIANT.
+Pointer to a PROPERTYKEY for the target PROPVARIANT.
 
-### -param pRetValue
+### -param pRetValue [out]
 
-[out] Pointer to a PROPERTYKEY for the target PROPVARIANT.
+Pointer to a PROPERTYKEY for the target PROPVARIANT.
 
 ## -returns
 

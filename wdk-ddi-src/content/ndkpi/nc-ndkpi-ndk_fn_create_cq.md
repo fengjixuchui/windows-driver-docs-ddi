@@ -4,7 +4,6 @@ title: NDK_FN_CREATE_CQ (ndkpi.h)
 description: The NdkCreateCq (NDK_FN_CREATE_CQ) function creates an NDK completion queue (CQ) object.
 old-location: netvista\ndk_fn_create_cq.htm
 tech.root: netvista
-ms.assetid: 25F820D4-04AF-488E-BBDA-1E9D82B7483E
 ms.date: 05/02/2018
 keywords: ["NDK_FN_CREATE_CQ callback function"]
 ms.keywords: NDK_FN_CREATE_CQ, NDK_FN_CREATE_CQ callback, NdkCreateCq, NdkCreateCq callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkCreateCq, netvista.ndk_fn_create_cq
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkCreateCq
+ - NDK_FN_CREATE_CQ
 ---
 
 # NDK_FN_CREATE_CQ callback function
@@ -50,42 +49,42 @@ The <i>NdkCreateCq</i> (<i>NDK_FN_CREATE_CQ</i>) function creates an NDK complet
 
 ## -parameters
 
-### -param pNdkAdapter 
+### -param pNdkAdapter [in]
 
-[in]
+
 A pointer to an NDK adapter object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_adapter">NDK_ADAPTER</a>).
 
-### -param CqDepth 
+### -param CqDepth [in]
 
-[in]
+
 The maximum number of completion entries that the CQ can hold. This value must be less than or equal  to the <b>MaxCqDepth</b> value that is specified  in the <a href="/windows/win32/api/ndkinfo/ns-ndkinfo-ndk_adapter_info">NDK_ADAPTER_INFO</a> structure.
 
-### -param CqNotification 
+### -param CqNotification [in]
 
-[in]
+
 A pointer to the <i>NdkCqNotificationCallback</i> function   (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_cq_notification_callback">NDK_FN_CQ_NOTIFICATION_CALLBACK</a>) that the provider uses to notify the consumer when request completions are queued in the CQ. The provider will not call <i>NdkCqNotificationCallback</i> unless the consumer arms the notification with the <i>NdkArmCq</i> (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_arm_cq">NDK_FN_ARM_CQ</a>) function.
 
-### -param CqNotificationContext 
+### -param CqNotificationContext [in, optional]
 
-[in, optional]
+
 A context value that the NDK provider passes back to the <i>NdkCqNotificationCallback</i> function that is specified in the <i>CqNotification</i> parameter.
 
-### -param Affinity 
+### -param Affinity [in, optional]
 
-[in, optional]
+
 An affinity mask (<a href="/windows-hardware/drivers/ddi/miniport/ns-miniport-_group_affinity">GROUP_AFFINITY</a>) that provides preferred processors that the consumer would choose to run the <i>NdkCqNotificationCallback</i> callbacks. Providers should honor the processor preferences if their underlying hardware allows it, but consumers cannot assume that <i>NdkCqNotificationCallback</i> callbacks will occur only on the preferred processors. Set <i>Affinity</i> to NULL if there are no preferred processors.
 
-### -param CreateCompletion 
+### -param CreateCompletion [in]
 
-[in]
+
 A pointer to an <i>NdkCreateCompletion</i> (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_create_completion">NDK_FN_CREATE_COMPLETION</a>) function that completes the creation of an NDK object.
 
-### -param RequestContext 
+### -param RequestContext [in, optional]
 
-[in, optional]
+
 A context value that the NDK provider passes back to the <i>NdkCreateCompletion</i> function that is specified in the <i>CreateCompletion</i> parameter.
 
-### -param *ppNdkCq
+### -param ppNdkCq
 
 A pointer to a completion queue (CQ) object (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_cq">NDK_CQ</a>) is returned in this location if the request succeeds without returning STATUS_PENDING. If <i>NdkCreateCq</i> returns STATUS_PENDING this parameter is ignored and the created object is returned  with the callback that is specified in the  <i>CreateCompletion</i> parameter.
 
@@ -198,3 +197,4 @@ The <i>NdkCreateCq</i> function creates an NDK completion queue (CQ) object. If 
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_create_completion">NDK_FN_CREATE_COMPLETION</a>
+

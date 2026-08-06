@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGKARG_RECOMMENDMONITORMODES
 title: _DXGKARG_RECOMMENDMONITORMODES (d3dkmddi.h)
 description: The DXGKARG_RECOMMENDMONITORMODES structure contains arguments for the DxgkDdiRecommendMonitorModes function.
 old-location: display\dxgkarg_recommendmonitormodes.htm
-ms.assetid: 283f398e-4162-4c46-847b-834f8f303052
 ms.date: 05/10/2018
 keywords: ["DXGKARG_RECOMMENDMONITORMODES structure"]
 ms.keywords: DXGKARG_RECOMMENDMONITORMODES, DXGKARG_RECOMMENDMONITORMODES structure [Display Devices], DmStructs_151c48fa-735a-4962-9fe7-446830441f1c.xml, _DXGKARG_RECOMMENDMONITORMODES, d3dkmddi/DXGKARG_RECOMMENDMONITORMODES, display.dxgkarg_recommendmonitormodes
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_RECOMMENDMONITORMODES
  - DXGKARG_RECOMMENDMONITORMODES
 ---
 
@@ -71,3 +71,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_recommendmonitormodes">DxgkDdiRecommendMonitorModes</a>
+

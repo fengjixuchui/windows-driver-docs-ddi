@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.PoCreatePowerRequest
 title: PoCreatePowerRequest function (wdm.h)
-description: The PoCreatePowerRequest routine creates a power request object.
+description: The PoCreatePowerRequest routine in wdm.h creates a power request object. To enable power requests, create one power request object and use it for all calls.
 old-location: kernel\pocreatepowerrequest.htm
 tech.root: kernel
-ms.assetid: 67986bf8-b070-44e9-95a2-eea35100b0e7
 ms.date: 04/30/2018
 keywords: ["PoCreatePowerRequest function"]
 ms.keywords: PoCreatePowerRequest, PoCreatePowerRequest routine [Kernel-Mode Driver Architecture], kernel.pocreatepowerrequest, portn_059f00e2-74ea-4c61-8fcd-6b257c084161.xml, wdm/PoCreatePowerRequest
@@ -50,19 +49,19 @@ The <b>PoCreatePowerRequest</b> routine creates a power request object.
 
 ## -parameters
 
-### -param PowerRequest 
+### -param PowerRequest [out]
 
-[out]
+
 A pointer to a location into which the routine writes a pointer to the newly created power request object. If the call fails, the routine writes <b>NULL</b> to this location.
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 A pointer to the device object of the caller (a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure).
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_counted_reason_context">COUNTED_REASON_CONTEXT</a> structure that describes why the caller is creating the power request object. This parameter is optional and can be set to <b>NULL</b>.
 
 ## -returns

@@ -4,7 +4,6 @@ title: _NDIS_ISOLATION_MODE (ntddndis.h)
 description: The NDIS_ISOLATION_MODE enumeration defines the network isolation modes that can be specified for a VM network adapter.
 old-location: netvista\ndis_isolation_mode.htm
 tech.root: netvista
-ms.assetid: DA4765CD-808C-438A-9CA6-5ADC27A70EC8
 ms.date: 05/02/2018
 keywords: ["NDIS_ISOLATION_MODE enumeration"]
 ms.keywords: "*PNDIS_ISOLATION_MODE, NDIS_ISOLATION_MODE, NDIS_ISOLATION_MODE enumeration [Network Drivers Starting with Windows Vista], NdisIsolationModeExternalVirtualSubnet, NdisIsolationModeNativeVirtualSubnet, NdisIsolationModeNone, NdisIsolationModeVlan, _NDIS_ISOLATION_MODE, netvista.ndis_isolation_mode, ntddndis/NDIS_ISOLATION_MODE, ntddndis/NdisIsolationModeExternalVirtualSubnet, ntddndis/NdisIsolationModeNativeVirtualSubnet, ntddndis/NdisIsolationModeNone, ntddndis/NdisIsolationModeVlan"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_ISOLATION_MODE
+ - PNDIS_ISOLATION_MODE
  - NDIS_ISOLATION_MODE
 ---
 
@@ -81,3 +82,4 @@ Virtual local area network (VLAN)-based isolation.
 
 
 <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_isolation">NDIS_SWITCH_PORT_PROPERTY_ISOLATION</a>
+

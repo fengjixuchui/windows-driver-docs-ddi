@@ -4,7 +4,6 @@ title: IXpsDocumentConsumer::GetNewEmptyPart (filterpipeline.h)
 description: The GetNewEmptyPart method creates a new XPS part.
 old-location: print\ixpsdocumentconsumer_getnewemptypart.htm
 tech.root: print
-ms.assetid: cc0911da-46ca-4cf7-a59e-da0d53e1d10c
 ms.date: 04/20/2018
 keywords: ["IXpsDocumentConsumer::GetNewEmptyPart"]
 ms.keywords: GetNewEmptyPart, GetNewEmptyPart method [Print Devices], GetNewEmptyPart method [Print Devices],IXpsDocumentConsumer interface, IXpsDocumentConsumer interface [Print Devices],GetNewEmptyPart method, IXpsDocumentConsumer.GetNewEmptyPart, IXpsDocumentConsumer::GetNewEmptyPart, filterpipeline/IXpsDocumentConsumer::GetNewEmptyPart, filterpipeline_c4770528-f57a-4197-b60b-5b780d5e7752.xml, print.ixpsdocumentconsumer_getnewemptypart
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - filterpipeline.h
 api_name:
- - IXpsDocumentConsumer.GetNewEmptyPart
+ - IXpsDocumentConsumer::GetNewEmptyPart
 ---
 
 # IXpsDocumentConsumer::GetNewEmptyPart
@@ -50,14 +49,14 @@ The <code>GetNewEmptyPart</code> method creates a new XPS part.
 
 ## -parameters
 
-### -param uri 
+### -param uri [in]
 
-[in]
+
 The URI for the new part to be created.
 
-### -param riid 
+### -param riid [in]
 
-[in]
+
 A reference identifier (REFIID) for one of the following interfaces: 
 
 <ul>
@@ -105,14 +104,14 @@ A reference identifier (REFIID) for one of the following interfaces:
 </li>
 </ul>
 
-### -param ppNewObject 
+### -param ppNewObject [out]
 
-[out]
+
 A pointer to the new object to be created.
 
-### -param ppWriteStream 
+### -param ppWriteStream [out]
 
-[out]
+
 A data stream object that the part will be written to. Each part is associated with a data stream object.
 
 ## -returns
@@ -154,3 +153,4 @@ A filter can create new XPS parts by using the <code>GetNewEmptyPart</code> meth
 
 
 <a href="/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-ixpsdocumentconsumer">IXpsDocumentConsumer</a>
+

@@ -1,9 +1,8 @@
 ---
 UID: NF:d3dkmthk.D3DKMTOpenNtHandleFromName
 title: D3DKMTOpenNtHandleFromName function (d3dkmthk.h)
-description: From a given graphics adapter name, opens an NT handle to the process.
+description: The D3DKMTOpenNtHandleFromName function opens an NT handle for a graphics adapter that is specified by name.
 old-location: display\d3dkmtopennthandlefromname.htm
-ms.assetid: bcd33f64-7ad0-4e26-af73-e4f2b1b6e5fb
 ms.date: 05/10/2018
 keywords: ["D3DKMTOpenNtHandleFromName function"]
 ms.keywords: D3DKMTOpenNtHandleFromName, D3DKMTOpenNtHandleFromName callback function [Display Devices], PFND3DKMT_OPENNTHANDLEFROMNAME, PFND3DKMT_OPENNTHANDLEFROMNAME callback, d3dkmthk/D3DKMTOpenNtHandleFromName, display.d3dkmtopennthandlefromname
@@ -50,7 +49,7 @@ From a given graphics adapter name, opens an NT handle to the process.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in, out]
 

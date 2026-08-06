@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_SEND_UI_REQUEST
 title: DOT11EXT_SEND_UI_REQUEST (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_SEND_UI_REQUEST callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extsenduirequest.htm
 tech.root: netvista
-ms.assetid: c8d2ff26-d233-4683-9811-c23896203bd5
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_SEND_UI_REQUEST callback"]
 ms.keywords: DOT11EXT_SEND_UI_REQUEST, Dot11ExtSendUIRequest, Dot11ExtSendUIRequest callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_1adad832-45d5-4691-85d9-0acc0534cdc0.xml, netvista.dot11extsenduirequest, wlanihv/Dot11ExtSendUIRequest
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_SEND_UI_REQUEST
  - wlanihv/DOT11EXT_SEND_UI_REQUEST
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtSendUIRequest
+ - DOT11EXT_SEND_UI_REQUEST
 ---
 
 # DOT11EXT_SEND_UI_REQUEST callback
@@ -55,17 +53,17 @@ api_name:
 
 ## -parameters
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the wireless LAN (WLAN) adapter. This handle
      value was specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param pIhvUIRequest 
+### -param pIhvUIRequest [in]
 
-[in]
+
 A pointer to a caller-allocated buffer, formatted as a
      <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_ui_request.md">
      DOT11EXT_IHV_UI_REQUEST</a> structure.
@@ -139,3 +137,4 @@ The operating system can query the completion status of the request through a ca
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_is_ui_request_pending.md">
    Dot11ExtIhvIsUIRequestPending</a>
+

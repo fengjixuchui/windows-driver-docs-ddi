@@ -4,7 +4,6 @@ title: PFND3DDDI_EVICTCB (d3dumddi.h)
 description: pfnEvictCb is used to instruct the OS to decrement the residency reference count. Once this count reaches zero, it will remove the allocation from the device residency list.
 old-location: display\pfnevictcb.htm
 tech.root: display
-ms.assetid: 5E66A522-BC1C-4E7C-8732-87D40F99BBDA
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_EVICTCB callback function"]
 ms.keywords: PFND3DDDI_EVICTCB, PFND3DDDI_EVICTCB callback, d3dumddi/pfnEvictCb, display.pfnevictcb, pfnEvictCb, pfnEvictCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnEvictCb
-product:
- - Windows
+ - PFND3DDDI_EVICTCB
 ---
 
 # PFND3DDDI_EVICTCB callback function
@@ -56,7 +53,7 @@ product:
 
 A handle to the display device.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -73,3 +70,4 @@ Once the eviction request is queued, it is illegal to access the underlying allo
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-d3dddicb_evict">D3DDDICB_EVICT</a>
+

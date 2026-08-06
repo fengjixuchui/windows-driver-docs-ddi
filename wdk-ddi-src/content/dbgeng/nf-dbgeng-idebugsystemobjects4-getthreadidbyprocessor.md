@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSystemObjects4.GetThreadIdByProcessor
 title: IDebugSystemObjects4::GetThreadIdByProcessor (dbgeng.h)
-description: The GetThreadIdByProcessor method returns the engine thread ID for the kernel-modevirtual thread corresponding to the specified processor.
+description: The (IDebugSystemObjects4) GetThreadIdByProcessor method gets the engine thread ID for the kernel-mode virtual thread corresponding to the specified processor.
 old-location: debugger\getthreadidbyprocessor.htm
 tech.root: debugger
-ms.assetid: c771a581-53ac-44a7-b307-b8a22ac97496
 ms.date: 05/03/2018
 keywords: ["IDebugSystemObjects4::GetThreadIdByProcessor"]
 ms.keywords: GetThreadIdByProcessor, GetThreadIdByProcessor method [Windows Debugging], GetThreadIdByProcessor method [Windows Debugging],IDebugSystemObjects interface, GetThreadIdByProcessor method [Windows Debugging],IDebugSystemObjects2 interface, GetThreadIdByProcessor method [Windows Debugging],IDebugSystemObjects3 interface, GetThreadIdByProcessor method [Windows Debugging],IDebugSystemObjects4 interface, IDebugSystemObjects interface [Windows Debugging],GetThreadIdByProcessor method, IDebugSystemObjects2 interface [Windows Debugging],GetThreadIdByProcessor method, IDebugSystemObjects2::GetThreadIdByProcessor, IDebugSystemObjects3 interface [Windows Debugging],GetThreadIdByProcessor method, IDebugSystemObjects3::GetThreadIdByProcessor, IDebugSystemObjects4 interface [Windows Debugging],GetThreadIdByProcessor method, IDebugSystemObjects4.GetThreadIdByProcessor, IDebugSystemObjects4::GetThreadIdByProcessor, IDebugSystemObjects::GetThreadIdByProcessor, IDebugSystemObjects_59fff866-93b2-48fb-8f49-bf778e2f0f7f.xml, dbgeng/IDebugSystemObjects2::GetThreadIdByProcessor, dbgeng/IDebugSystemObjects3::GetThreadIdByProcessor, dbgeng/IDebugSystemObjects4::GetThreadIdByProcessor, dbgeng/IDebugSystemObjects::GetThreadIdByProcessor, debugger.getthreadidbyprocessor
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSystemObjects.GetThreadIdByProcessor
- - IDebugSystemObjects2.GetThreadIdByProcessor
- - IDebugSystemObjects3.GetThreadIdByProcessor
- - IDebugSystemObjects4.GetThreadIdByProcessor
+ - IDebugSystemObjects4::GetThreadIdByProcessor
 ---
 
 # IDebugSystemObjects4::GetThreadIdByProcessor
@@ -49,18 +45,18 @@ api_name:
 
 ## -description
 
-The <b>GetThreadIdByProcessor</b> method returns the engine thread ID for the kernel-modevirtual thread corresponding to the specified processor.
+The <b>GetThreadIdByProcessor</b> method returns the engine thread ID for the kernel-mode virtual thread corresponding to the specified processor.
 
 ## -parameters
 
-### -param Processor 
+### -param Processor [in]
 
-[in]
+
 Specifies the processor corresponding to the desired thread.
 
-### -param Id 
+### -param Id [out]
 
-[out]
+
 Receives the engine thread ID.
 
 ## -returns
@@ -90,3 +86,4 @@ The method was successful.
 This method is only available in kernel-mode debugging.
 
 For more information about threads, see <a href="/windows-hardware/drivers/debugger/threads-and-processes">Threads and Processes</a>.
+

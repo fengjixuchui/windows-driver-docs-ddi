@@ -1,10 +1,9 @@
 ---
-UID: NE:gnssdriver.__unnamed_enum_1
+UID: NE:gnssdriver.GNSS_FIXSESSIONTYPE
 title: GNSS_FIXSESSIONTYPE (gnssdriver.h)
 description: This enumeration indicates the type of location fix needed by the GNSS adapter when it issues an IOCTL_GNSS_START_FIXSESSION control code. This enumeration is set within the GNSS_FIXSESSION_PARAM structure.
 old-location: gnss\gnss_fixsessiontype.htm
 tech.root: gnss
-ms.assetid: CE611168-76B3-496F-91C7-932E1F259529
 ms.date: 02/15/2018
 keywords: ["GNSS_FIXSESSIONTYPE enumeration"]
 ms.keywords: GNSS_FIXSESSIONTYPE, GNSS_FIXSESSIONTYPE enumeration [Sensor Devices], GNSS_FixSession_ContinuousTracking, GNSS_FixSession_DistanceTracking, GNSS_FixSession_LKG, GNSS_FixSession_SingleShot, gnss.gnss_fixsessiontype, gnssdriver/GNSS_FIXSESSIONTYPE, gnssdriver/GNSS_FixSession_ContinuousTracking, gnssdriver/GNSS_FixSession_DistanceTracking, gnssdriver/GNSS_FixSession_LKG, gnssdriver/GNSS_FixSession_SingleShot
@@ -65,3 +64,4 @@ The start fix request is for starting a tracking session such that the device po
 ### -field GNSS_FixSession_LKG
 
 This session request is for a single-shot request, without starting any satellite acquisition/tracking activity by the underlying GNSS engine. The GNSS driver returns the cached copy (either from the engine or from the drivers own memory) of the last known position of the device, along with the timestamp. If no cached fix is available either in the engine or in the driver, an error is returned. No intermediate fix is returned for this session. Once the LKG fix or an error fix is returned the GNSS adapter issues a stop fix.
+

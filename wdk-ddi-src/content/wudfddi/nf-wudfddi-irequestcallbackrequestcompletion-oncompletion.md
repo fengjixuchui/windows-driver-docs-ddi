@@ -4,7 +4,6 @@ title: IRequestCallbackRequestCompletion::OnCompletion (wudfddi.h)
 description: The OnCompletion method completes the specified request.
 old-location: wdf\irequestcallbackrequestcompletion_oncompletion.htm
 tech.root: wdf
-ms.assetid: 1a4787da-2813-4a7a-820a-5c078175aba5
 ms.date: 02/26/2018
 keywords: ["IRequestCallbackRequestCompletion::OnCompletion"]
 ms.keywords: IRequestCallbackRequestCompletion interface,OnCompletion method, IRequestCallbackRequestCompletion.OnCompletion, IRequestCallbackRequestCompletion::OnCompletion, OnCompletion, OnCompletion method, OnCompletion method,IRequestCallbackRequestCompletion interface, UMDFRequestObjectRef_b3ec1892-f32f-4c52-80f6-8699a358ea8d.xml, umdf.irequestcallbackrequestcompletion_oncompletion, wdf.irequestcallbackrequestcompletion_oncompletion, wudfddi/IRequestCallbackRequestCompletion::OnCompletion
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IRequestCallbackRequestCompletion.OnCompletion
+ - IRequestCallbackRequestCompletion::OnCompletion
 ---
 
 # IRequestCallbackRequestCompletion::OnCompletion
@@ -52,24 +51,24 @@ The <b>OnCompletion</b> method completes the specified request.
 
 ## -parameters
 
-### -param pWdfRequest 
+### -param pWdfRequest [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest">IWDFIoRequest</a> interface that represents the framework request object.
 
-### -param pIoTarget 
+### -param pIoTarget [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotarget">IWDFIoTarget</a> interface for the I/O target object that represents the lower driver in the stack where the request was previously sent.
 
-### -param pParams 
+### -param pParams [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfrequestcompletionparams">IWDFRequestCompletionParams</a> interface for the parameters object for the completion request.
 
-### -param pContext 
+### -param pContext [in]
 
-[in]
+
 A pointer to a buffer that contains context information that is related to the completion request.
 
 ## -remarks
@@ -95,3 +94,4 @@ A driver registers the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfrequestcompletionparams">IWDFRequestCompletionParams</a>
+

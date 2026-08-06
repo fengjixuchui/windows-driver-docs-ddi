@@ -4,7 +4,6 @@ title: IWDFRemoteInterfaceInitialize::GetInterfaceGuid (wudfddi.h)
 description: The GetInterfaceGuid method retrieves the GUID that identifies a device interface.
 old-location: wdf\iwdfremoteinterfaceinitialize_getinterfaceguid.htm
 tech.root: wdf
-ms.assetid: 3c68d458-9b34-4e45-993a-67f915347637
 ms.date: 02/26/2018
 keywords: ["IWDFRemoteInterfaceInitialize::GetInterfaceGuid"]
 ms.keywords: GetInterfaceGuid, GetInterfaceGuid method, GetInterfaceGuid method,IWDFRemoteInterfaceInitialize interface, IWDFRemoteInterfaceInitialize interface,GetInterfaceGuid method, IWDFRemoteInterfaceInitialize.GetInterfaceGuid, IWDFRemoteInterfaceInitialize::GetInterfaceGuid, UMDFIoTargetObjectRef_bbc014c0-b69e-4109-be81-a86d93104ad4.xml, umdf.iwdfremoteinterfaceinitialize_getinterfaceguid, wdf.iwdfremoteinterfaceinitialize_getinterfaceguid, wudfddi/IWDFRemoteInterfaceInitialize::GetInterfaceGuid
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFRemoteInterfaceInitialize.GetInterfaceGuid
+ - IWDFRemoteInterfaceInitialize::GetInterfaceGuid
 ---
 
 # IWDFRemoteInterfaceInitialize::GetInterfaceGuid
@@ -52,9 +51,9 @@ The <b>GetInterfaceGuid</b> method retrieves the GUID that identifies a <a href=
 
 ## -parameters
 
-### -param pDeviceInterfaceGuid 
+### -param pDeviceInterfaceGuid [out]
 
-[out]
+
 A pointer to a driver-allocated GUID structure that receives the device interface GUID.
 
 ## -remarks
@@ -80,7 +79,6 @@ CMyDevice::OnRemoteInterfaceArrival(
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfremoteinterfaceinitialize">IWDFRemoteInterfaceInitialize</a>
@@ -88,3 +86,4 @@ CMyDevice::OnRemoteInterfaceArrival(
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfremoteinterfaceinitialize-retrievesymboliclink">IWDFRemoteInterfaceInitialize::RetrieveSymbolicLink</a>
+

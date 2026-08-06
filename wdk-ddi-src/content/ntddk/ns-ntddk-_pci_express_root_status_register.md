@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddk._PCI_EXPRESS_ROOT_STATUS_REGISTER
 title: _PCI_EXPRESS_ROOT_STATUS_REGISTER (ntddk.h)
-description: The PCI_EXPRESS_ROOT_STATUS_REGISTER structure describes a PCI Express (PCIe) root status register of a PCIe capability structure.
+description: The _PCI_EXPRESS_ROOT_STATUS_REGISTER structure (ntddk.h) describes a PCI Express (PCIe) root status register of a PCIe capability structure.
 old-location: pci\pci_express_root_status_register.htm
 tech.root: PCI
-ms.assetid: e7f6a8b9-22f1-4c5b-a0b7-b87ceb2c0b1b
 ms.date: 02/24/2018
 keywords: ["PCI_EXPRESS_ROOT_STATUS_REGISTER structure"]
 ms.keywords: "*PPCI_EXPRESS_ROOT_STATUS_REGISTER, PCI.pci_express_root_status_register, PCI_EXPRESS_ROOT_STATUS_REGISTER, PCI_EXPRESS_ROOT_STATUS_REGISTER union [Buses], PPCI_EXPRESS_ROOT_STATUS_REGISTER, PPCI_EXPRESS_ROOT_STATUS_REGISTER union pointer [Buses], _PCI_EXPRESS_ROOT_STATUS_REGISTER, ntddk/PCI_EXPRESS_ROOT_STATUS_REGISTER, ntddk/PPCI_EXPRESS_ROOT_STATUS_REGISTER, pci_struct_ff3a211f-421b-41f3-9250-d658636bfe49.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _PCI_EXPRESS_ROOT_STATUS_REGISTER
+ - PPCI_EXPRESS_ROOT_STATUS_REGISTER
  - PCI_EXPRESS_ROOT_STATUS_REGISTER
 ---
 
@@ -61,22 +62,22 @@ The PCI_EXPRESS_ROOT_STATUS_REGISTER structure describes a PCI Express (PCIe) ro
 A ULONG representation of the contents of the PCI_EXPRESS_ROOT_STATUS_REGISTER structure.
 
 
-#### - PMEPending
+### -field DUMMYSTRUCTNAME.PMEPending
 
 A single bit that indicates that another power management event (PME) is pending while the <b>PMEStatus</b> bit is set.
 
 
-#### - PMERequestorId
+### -field DUMMYSTRUCTNAME.PMERequestorId
 
 A <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_pci_express_pme_requestor_id">PCI_EXPRESS_PME_REQUESTOR_ID</a> structure that describes the power management event (PME) requester identifier of the last PME requester.
 
 
-#### - PMEStatus
+### -field DUMMYSTRUCTNAME.PMEStatus
 
 A single bit that indicates that a power management event (PME) was asserted by the requester identified by the <b>PMERequestorId</b> member.
 
 
-#### - Rsvd
+### -field DUMMYSTRUCTNAME.Rsvd
 
 Reserved.
 
@@ -107,3 +108,4 @@ A PCI_EXPRESS_ROOT_STATUS_REGISTER structure is contained in the <a href="/windo
 
 
 <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_pci_express_pme_requestor_id">PCI_EXPRESS_PME_REQUESTOR_ID</a>
+

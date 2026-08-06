@@ -4,7 +4,6 @@ title: NDK_FN_RELEASE_LAM (ndkpi.h)
 description: The NdkReleaseLam (NDK_FN_RELEASE_LAM) function releases an NDK adapter logical address mapping (LAM).
 old-location: netvista\ndk_fn_release_lam.htm
 tech.root: netvista
-ms.assetid: 8CEBDCCE-5B71-443D-9DE5-F789E16843D7
 ms.date: 05/02/2018
 keywords: ["NDK_FN_RELEASE_LAM callback function"]
 ms.keywords: NDK_FN_RELEASE_LAM, NDK_FN_RELEASE_LAM callback, NdkReleaseLam, NdkReleaseLam callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkReleaseLam, netvista.ndk_fn_release_lam
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkReleaseLam
+ - NDK_FN_RELEASE_LAM
 ---
 
 # NDK_FN_RELEASE_LAM callback function
@@ -50,15 +49,15 @@ The <i>NdkReleaseLam</i> (<i>NDK_FN_RELEASE_LAM</i>) function releases an NDK ad
 
 ## -parameters
 
-### -param pNdkAdapter 
+### -param pNdkAdapter [in]
 
-[in]
+
 A pointer to an NDK adapter object
 (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_adapter">NDK_ADAPTER</a>).
 
-### -param pNdkLAM 
+### -param pNdkLAM [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_logical_address_mapping">NDK_LOGICAL_ADDRESS_MAPPING</a> structure that was previously initialized by calling the <i>NdkBuildLAM</i>  (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_build_lam">NDK_FN_BUILD_LAM</a>) function.
 
 ## -remarks
@@ -80,3 +79,4 @@ A pointer to an <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_logic
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_logical_address_mapping">NDK_LOGICAL_ADDRESS_MAPPING</a>
+

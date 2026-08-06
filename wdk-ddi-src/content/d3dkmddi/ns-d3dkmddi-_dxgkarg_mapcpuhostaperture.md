@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGKARG_MAPCPUHOSTAPERTURE
 title: _DXGKARG_MAPCPUHOSTAPERTURE (d3dkmddi.h)
 description: The DXGKARG_MAPCPUHOSTAPERTURE structure is used to map an allocation, resident in a local memory segment, into the CPU host aperture in order to make it visible to the CPU.
 old-location: display\dxgkarg_mapcpuhostaperture.htm
-ms.assetid: ACC0C800-B6E3-4EF2-846C-63BF4564D0FD
 ms.date: 05/10/2018
 keywords: ["DXGKARG_MAPCPUHOSTAPERTURE structure"]
 ms.keywords: DXGKARG_MAPCPUHOSTAPERTURE, DXGKARG_MAPCPUHOSTAPERTURE structure [Display Devices], _DXGKARG_MAPCPUHOSTAPERTURE, d3dkmddi/DXGKARG_MAPCPUHOSTAPERTURE, display.dxgkarg_mapcpuhostaperture
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_MAPCPUHOSTAPERTURE
  - DXGKARG_MAPCPUHOSTAPERTURE
 ---
 
@@ -81,3 +81,4 @@ Array of CPU Host Aperture pages to map. This is an array of page indices from t
 ### -field pMemorySegmentPages
 
 MDL-style array of page indices to the allocation pages that need to be mapped into the CPU host aperture. The page indexes starting from 0.
+

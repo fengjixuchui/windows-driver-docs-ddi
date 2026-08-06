@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGK_FLIPCAPS
 title: _DXGK_FLIPCAPS (d3dkmddi.h)
 description: The DXGK_FLIPCAPS structure identifies flipping capabilities of the display miniport driver that the driver provides through a call to its DxgkDdiQueryAdapterInfo function.
 old-location: display\dxgk_flipcaps.htm
-ms.assetid: 33399b7c-ce67-4c49-be26-2b2d759ff5a0
 ms.date: 05/10/2018
 keywords: ["DXGK_FLIPCAPS structure"]
 ms.keywords: DXGK_FLIPCAPS, DXGK_FLIPCAPS structure [Display Devices], DmStructs_11bba63e-8001-41d2-9c60-978024921994.xml, _DXGK_FLIPCAPS, d3dkmddi/DXGK_FLIPCAPS, display.dxgk_flipcaps
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_FLIPCAPS
  - DXGK_FLIPCAPS
 ---
 
@@ -154,3 +154,4 @@ A member in the union that DXGK_FLIPCAPS contains that can hold a 32-bit value t
 
 
 <a href="/previous-versions/windows/hardware/drivers/ff560767(v=vs.85)">DxgkDdiSetVidPnSourceAddress</a>
+

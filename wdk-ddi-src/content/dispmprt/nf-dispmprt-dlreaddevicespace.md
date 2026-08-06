@@ -3,7 +3,6 @@ UID: NF:dispmprt.DlReadDeviceSpace
 title: DlReadDeviceSpace function
 description: Reads from a device configuration space or the expansion ROM of a display adapter.
 tech.root: display
-ms.assetid: 57b1447a-e923-47b8-a17d-c9668be70e26
 ms.date: 04/04/2019
 keywords: ["DlReadDeviceSpace function"]
 ms.keywords: DlReadDeviceSpace
@@ -38,8 +37,6 @@ api_location:
  - Displib.dll
 api_name:
  - DlReadDeviceSpace
-product:
- - Windows
 dev_langs:
  - c++
 ---

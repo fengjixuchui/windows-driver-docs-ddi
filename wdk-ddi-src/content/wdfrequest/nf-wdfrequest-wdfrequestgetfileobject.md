@@ -4,7 +4,6 @@ title: WdfRequestGetFileObject function (wdfrequest.h)
 description: The WdfRequestGetFileObject method retrieves the framework file object that is associated with a specified I/O request.
 old-location: wdf\wdfrequestgetfileobject.htm
 tech.root: wdf
-ms.assetid: 0c5a1e12-b66f-4bcb-bb9d-739b883fe9c2
 ms.date: 02/26/2018
 keywords: ["WdfRequestGetFileObject function"]
 ms.keywords: DFRequestObjectRef_cfa39375-4338-428c-aec5-52479b2a91ea.xml, WdfRequestGetFileObject, WdfRequestGetFileObject method, kmdf.wdfrequestgetfileobject, wdf.wdfrequestgetfileobject, wdfrequest/WdfRequestGetFileObject
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,9 +54,9 @@ The <b>WdfRequestGetFileObject</b> method retrieves the framework file object th
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
 ## -returns

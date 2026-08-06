@@ -4,7 +4,6 @@ title: EVT_WDF_DEVICE_SELF_MANAGED_IO_FLUSH (wdfdevice.h)
 description: A driver's EvtDeviceSelfManagedIoFlush event callback function handles flush activity for the device's self-managed I/O operations.
 old-location: wdf\evtdeviceselfmanagedioflush.htm
 tech.root: wdf
-ms.assetid: ad4ace83-c6c1-4b5f-b998-f46f3e721165
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DEVICE_SELF_MANAGED_IO_FLUSH callback function"]
 ms.keywords: DFDeviceObjectGeneralRef_d464c7ae-10fa-4838-b152-9bbaeaac76de.xml, EVT_WDF_DEVICE_SELF_MANAGED_IO_FLUSH, EVT_WDF_DEVICE_SELF_MANAGED_IO_FLUSH callback, EvtDeviceSelfManagedIoFlush, EvtDeviceSelfManagedIoFlush callback function, kmdf.evtdeviceselfmanagedioflush, wdf.evtdeviceselfmanagedioflush, wdfdevice/EvtDeviceSelfManagedIoFlush
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfdevice.h
 api_name:
- - EvtDeviceSelfManagedIoFlush
+ - EVT_WDF_DEVICE_SELF_MANAGED_IO_FLUSH
 ---
 
 # EVT_WDF_DEVICE_SELF_MANAGED_IO_FLUSH callback function
@@ -52,9 +51,9 @@ A driver's <i>EvtDeviceSelfManagedIoFlush</i> event callback function handles fl
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
 ## -remarks
@@ -66,8 +65,6 @@ If the driver has registered an <i>EvtDeviceSelfManagedIoFlush</i> callback func
 For more information about when the framework calls this callback function, see <a href="/windows-hardware/drivers/wdf/pnp-and-power-management-scenarios">PnP and Power Management Scenarios</a>.
 
 For more information about drivers that provide this callback function, see <a href="/windows-hardware/drivers/wdf/using-self-managed-i-o">Using Self-Managed I/O</a>.
-
-You must declare the function by using the EVT_WDF_DEVICE_SELF_MANAGED_IO_FLUSH type. For more information, see the following Example section.
 
 ## -see-also
 
@@ -84,3 +81,4 @@ You must declare the function by using the EVT_WDF_DEVICE_SELF_MANAGED_IO_FLUSH 
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_self_managed_io_suspend">EvtDeviceSelfManagedIoSuspend</a>
+

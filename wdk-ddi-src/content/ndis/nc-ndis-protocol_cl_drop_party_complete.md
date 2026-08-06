@@ -4,7 +4,6 @@ title: PROTOCOL_CL_DROP_PARTY_COMPLETE (ndis.h)
 description: The ProtocolClDropPartyComplete function is used by connection-oriented NDIS clients that set up multipoint connections.
 old-location: netvista\protocolcldroppartycomplete.htm
 tech.root: netvista
-ms.assetid: c916f379-393c-41d7-ab30-2f3181c3ada6
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CL_DROP_PARTY_COMPLETE callback function"]
 ms.keywords: PROTOCOL_CL_DROP_PARTY_COMPLETE, PROTOCOL_CL_DROP_PARTY_COMPLETE callback, ProtocolClDropPartyComplete, ProtocolClDropPartyComplete callback function [Network Drivers Starting with Windows Vista], condis_client_ref_6586ee1a-9f7f-4125-966e-1f6df74b75df.xml, ndis/ProtocolClDropPartyComplete, netvista.protocolcldroppartycomplete
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolClDropPartyComplete
+ - PROTOCOL_CL_DROP_PARTY_COMPLETE
 ---
 
 # PROTOCOL_CL_DROP_PARTY_COMPLETE callback function
@@ -59,9 +58,9 @@ The
 
 ## -parameters
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 Specifies the final status of the client-initiated drop-party operation, which can be one of the
      following:
      
@@ -85,9 +84,9 @@ The given party was the last remaining on the client's multipoint VC. Therefore,
        <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclclosecall">NdisClCloseCall</a> to drop this
        party.
 
-### -param ProtocolPartyContext 
+### -param ProtocolPartyContext [in]
 
-[in]
+
 Specifies the handle to the client's per-party context area, which the client originally supplied
      to NDIS either when it called 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscladdparty">NdisClAddParty</a> or 
@@ -174,3 +173,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_drop_party">ProtocolCmDropParty</a>
+

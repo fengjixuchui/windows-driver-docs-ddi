@@ -4,7 +4,6 @@ title: IoDisconnectInterrupt function (wdm.h)
 description: The IoDisconnectInterrupt routine releases a device driver's set of interrupt object(s) when the device is paused or removed, or when the driver is being unloaded.
 old-location: kernel\iodisconnectinterrupt.htm
 tech.root: kernel
-ms.assetid: 06130ec3-7031-4c40-932a-7342c26b7e15
 ms.date: 04/30/2018
 keywords: ["IoDisconnectInterrupt function"]
 ms.keywords: IoDisconnectInterrupt, IoDisconnectInterrupt routine [Kernel-Mode Driver Architecture], k104_6ed94efc-9513-4ad3-87d0-cec41e912876.xml, kernel.iodisconnectinterrupt, wdm/IoDisconnectInterrupt
@@ -50,9 +49,9 @@ The <b>IoDisconnectInterrupt</b> routine releases a device driver's set of inter
 
 ## -parameters
 
-### -param InterruptObject 
+### -param InterruptObject [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/kernel/eprocess">KINTERRUPT</a> structure. The caller obtained this pointer from the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterrupt">IoConnectInterrupt</a> call that previously connected the interrupt or interrupts.
 
 ## -remarks

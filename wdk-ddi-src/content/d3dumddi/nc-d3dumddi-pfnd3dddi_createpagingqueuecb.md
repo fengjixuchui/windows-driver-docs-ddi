@@ -4,7 +4,6 @@ title: PFND3DDDI_CREATEPAGINGQUEUECB (d3dumddi.h)
 description: pfnCreatePagingQueueCb is used to create a device paging queue that can be used to synchronize with video memory management operations for the device, such as making the device resource resident.
 old-location: display\pfncreatepagingqueuecb.htm
 tech.root: display
-ms.assetid: 99E4CFCF-7A0A-43A9-9E23-B7A9F9375690
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CREATEPAGINGQUEUECB callback function"]
 ms.keywords: PFND3DDDI_CREATEPAGINGQUEUECB, PFND3DDDI_CREATEPAGINGQUEUECB callback, d3dumddi/pfnCreatePagingQueueCb, display.pfncreatepagingqueuecb, pfnCreatePagingQueueCb, pfnCreatePagingQueueCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnCreatePagingQueueCb
-product:
- - Windows
+ - PFND3DDDI_CREATEPAGINGQUEUECB
 ---
 
 # PFND3DDDI_CREATEPAGINGQUEUECB callback function
@@ -56,7 +53,7 @@ product:
 
 A handle to the display device.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [out]
 
@@ -69,3 +66,4 @@ If this callback function succeeds, it returns **S_OK**. Otherwise, it returns a
 ## -remarks
 
 A device can have multiple paging queues created for it. Paging queues can be destroyed either explicitly by calling <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_destroypagingqueuecb">pfnDestroyPagingQueueCb</a>, or by implicitly destroying the device they belong to. After the latter, paging queue handles will become invalid.
+

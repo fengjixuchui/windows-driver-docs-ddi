@@ -1,11 +1,9 @@
 ---
 UID: NF:wdm.IoReserveKsrPersistentMemory
 title: IoReserveKsrPersistentMemory function
-description: TBD
+description: "Microsoft reserves the IoReserveKsrPersistentMemory function for internal use only. Don't use this function in your code."
 tech.root: kernel
-ms.assetid: 73e58128-05bd-43de-8345-ce16c6b36cbf
 ms.date: 03/24/2020
-ms.topic: function
 ms.keywords: IoReserveKsrPersistentMemory
 req.header: wdm.h
 req.include-header: 
@@ -33,8 +31,6 @@ api_location:
  - wdm.h
 api_name:
  - IoReserveKsrPersistentMemory
-product:
- - Windows
 f1_keywords:
  - IoReserveKsrPersistentMemory
  - wdm/IoReserveKsrPersistentMemory
@@ -42,8 +38,9 @@ f1_keywords:
 
 # IoReserveKsrPersistentMemory function
 
-
 ## -description
+
+Reserved for system use.
 
 ## -parameters
 
@@ -59,9 +56,6 @@ f1_keywords:
 
 ## -returns
 
-This function returns NTSTATUS.
-
 ## -remarks
 
 ## -see-also
-

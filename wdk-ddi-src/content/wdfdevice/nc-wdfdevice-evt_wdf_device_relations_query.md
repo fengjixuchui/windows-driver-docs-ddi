@@ -4,7 +4,6 @@ title: EVT_WDF_DEVICE_RELATIONS_QUERY (wdfdevice.h)
 description: A driver's EvtDeviceRelationsQuery event callback reports changes in the relationships among devices that are supported by the driver.
 old-location: wdf\evtdevicerelationsquery.htm
 tech.root: wdf
-ms.assetid: 3a156696-1dd5-4383-a0cc-8d07ec92bdbf
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DEVICE_RELATIONS_QUERY callback function"]
 ms.keywords: DFDeviceObjectGeneralRef_b34ffaf4-1e73-4463-87fd-31350656a7a5.xml, EVT_WDF_DEVICE_RELATIONS_QUERY, EVT_WDF_DEVICE_RELATIONS_QUERY callback, EvtDeviceRelationsQuery, EvtDeviceRelationsQuery callback function, kmdf.evtdevicerelationsquery, wdf.evtdevicerelationsquery, wdfdevice/EvtDeviceRelationsQuery
@@ -14,7 +13,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.0
-req.umdf-ver:
+req.umdf-ver: 
 req.ddi-compliance: 
 req.unicode-ansi: 
 req.idl: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfdevice.h
 api_name:
- - EvtDeviceRelationsQuery
+ - EVT_WDF_DEVICE_RELATIONS_QUERY
 ---
 
 # EVT_WDF_DEVICE_RELATIONS_QUERY callback function
@@ -52,14 +51,14 @@ A driver's <i>EvtDeviceRelationsQuery</i> event callback reports changes in the 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param RelationType 
+### -param RelationType [in]
 
-[in]
+
 A DEVICE_RELATION_TYPE-typed enumerator value. The DEVICE_RELATION_TYPE enumeration is defined in <i>wdm.h</i>.
 
 ## -remarks
@@ -74,6 +73,24 @@ Additionally, after the framework calls the <a href="/windows-hardware/drivers/d
 
 The type of work that a driver must do depends on the value received for the <i>RelationType</i> parameter. The value can be one of the following:
 
+**BusRelations**
+<ul> 
+Most framework-based drivers do not report bus relations in an EvtDeviceRelationsQuery callback function. Instead, the drivers follow the guidelines that are described in Enumerating the Devices on a Bus.
+</ul>
 
+**EjectionRelations** 
+<ul>
+Most framework-based drivers do not report ejection relations in an EvtDeviceRelationsQuery callback function. Instead, the driver for the device's bus calls WdfPdoAddEjectionRelationsPhysicalDevice and WdfPdoRemoveEjectionRelationsPhysicalDevice.
+</ul>
+
+**RemovalRelations**
+<ul> 
+Most framework-based drivers do not report removal relations in an EvtDeviceRelationsQuery callback function. Instead, the drivers call WdfDeviceAddRemovalRelationsPhysicalDevice and WdfDeviceRemoveRemovalRelationsPhysicalDevice.
+</ul>
+
+**TargetDeviceRelation**
+<ul> 
+Framework-based drivers do not have to report a device's target relation. Instead, the framework handles this request.
+</ul>
 
 The framework can call the <i>EvtDeviceRelationsQuery</i> callback function with a <i>RelationType</i> value of <b>EjectionRelations</b> or <b>RemovalRelations</b> even if the device is being removed.

@@ -4,7 +4,6 @@ title: SerCxGetRingBufferUtilization function (sercx.h)
 description: The SerCxGetRingBufferUtilization method enables the serial controller driver to determine how much of the type-ahead ring buffer is currently filled by data received from the serial port.
 old-location: serports\sercxgetringbufferutilization.htm
 tech.root: serports
-ms.assetid: 8D4B8682-5713-47D6-A18E-F2EE44614DFB
 ms.date: 04/23/2018
 keywords: ["SerCxGetRingBufferUtilization function"]
 ms.keywords: 1/SerCxGetRingBufferUtilization, SerCxGetRingBufferUtilization, SerCxGetRingBufferUtilization method [Serial Ports], serports.sercxgetringbufferutilization
@@ -50,19 +49,19 @@ The <b>SerCxGetRingBufferUtilization</b> method enables the serial controller dr
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the serial controller.
 
-### -param BytesUsed 
+### -param BytesUsed [out, optional]
 
-[out, optional]
+
 The number of bytes of unread data that are currently contained in the type-ahead ring buffer that is used to store received data.
 
-### -param BufferSize 
+### -param BufferSize [out, optional]
 
-[out, optional]
+
 The size, in bytes, of the type-ahead ring buffer that is used to store received data.
 
 ## -remarks

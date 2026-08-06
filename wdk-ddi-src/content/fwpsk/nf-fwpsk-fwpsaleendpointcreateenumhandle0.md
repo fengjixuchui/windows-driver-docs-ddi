@@ -4,7 +4,6 @@ title: FwpsAleEndpointCreateEnumHandle0 function (fwpsk.h)
 description: The FwpsAleEndpointCreateEnumHandle0 function creates a handle that can be used with other application layer enforcement (ALE) endpoint functions to enumerate endpoint data.Note  FwpsAleEndpointCreateEnumHandle0 is a specific version of FwpsAleEndpointCreateEnumHandle. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
 old-location: netvista\fwpsaleendpointcreateenumhandle0.htm
 tech.root: netvista
-ms.assetid: 5daa3dd4-e499-4a72-b784-8a0e1ef3e92b
 ms.date: 05/02/2018
 keywords: ["FwpsAleEndpointCreateEnumHandle0 function"]
 ms.keywords: FwpsAleEndpointCreateEnumHandle0, FwpsAleEndpointCreateEnumHandle0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsAleEndpointCreateEnumHandle0, netvista.fwpsaleendpointcreateenumhandle0, wfp_ref_2_funct_3_fwps_A-B_dfe65638-187e-4966-b8dc-20fac02ea7cb.xml
@@ -54,24 +53,24 @@ The
 
 ## -parameters
 
-### -param engineHandle 
+### -param engineHandle [in]
 
-[in]
+
 Handle for an open session with the filter engine. This handle is obtained when a session is
      opened by calling 
      <a href="/windows-hardware/drivers/ddi/fwpmk/nf-fwpmk-fwpmengineopen0">FwpmEngineOpen0</a>.
 
-### -param enumTemplate 
+### -param enumTemplate [in, optional]
 
-[in, optional]
+
 A pointer to an 
      <a href="/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_ale_endpoint_enum_template0">
      FWPS_ALE_ENDPOINT_ENUM_TEMPLATE0</a> structure that contains parameters to narrow the endpoint
      enumeration results.
 
-### -param enumHandle 
+### -param enumHandle [out]
 
-[out]
+
 The newly created enumeration handle.
 
 ## -returns

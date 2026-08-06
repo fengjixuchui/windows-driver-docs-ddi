@@ -4,7 +4,6 @@ title: VideoPortSetRegistryParameters function (video.h)
 description: The VideoPortSetRegistryParameters function writes information under the adapter key in the registry.
 old-location: display\videoportsetregistryparameters.htm
 tech.root: display
-ms.assetid: 39cf1829-2caf-44e0-8528-acb0def0dd54
 ms.date: 05/10/2018
 keywords: ["VideoPortSetRegistryParameters function"]
 ms.keywords: VideoPortSetRegistryParameters, VideoPortSetRegistryParameters function [Display Devices], VideoPort_Functions_a1d6dbfd-595b-4396-a1d3-9ec4fa3a6bfb.xml, display.videoportsetregistryparameters, video/VideoPortSetRegistryParameters
@@ -54,14 +53,14 @@ The <b>VideoPortSetRegistryParameters</b> function writes information under the 
 
 Pointer to the miniport driver's device extension.
 
-### -param ValueName 
+### -param ValueName [in]
 
-[in]
+
 Pointer to a buffer containing a null-terminated Unicode string that names the value entry for which data is being written in the registry.
 
-### -param ValueData 
+### -param ValueData [in]
 
-[in]
+
 Pointer to a buffer containing the values to be written for the <i>ValueName</i> entry.
 
 ### -param ValueLength

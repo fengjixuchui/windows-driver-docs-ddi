@@ -4,7 +4,6 @@ title: ExtExtension::HasArg (engextcpp.h)
 description: The HasArg method indicates whether a specified named argument is present in the command line used to invoke the current extension command.
 old-location: debugger\hasarg.htm
 tech.root: debugger
-ms.assetid: c71aa196-a25a-4d5c-a464-426d14a6aa72
 ms.date: 05/03/2018
 keywords: ["ExtExtension::HasArg"]
 ms.keywords: EngExtCpp_Ref_a4d457bf-6e64-46d7-892a-5ddda81c7f9d.xml, ExtExtension class [Windows Debugging],HasArg method, ExtExtension.HasArg, ExtExtension::HasArg, HasArg, HasArg method [Windows Debugging], HasArg method [Windows Debugging],ExtExtension class, debugger.hasarg
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Engextcpp.hpp
 api_name:
- - ExtExtension.HasArg
+ - ExtExtension::HasArg
 ---
 
 # ExtExtension::HasArg
@@ -50,9 +49,9 @@ The <b>HasArg</b> method indicates whether a specified named argument is present
 
 ## -parameters
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 Specifies the name of the argument.
 
 ## -returns
@@ -76,3 +75,4 @@ This method should only be called during the execution of an extension command p
 
 
 <a href="/previous-versions/windows/hardware/previsioning-framework/ff549727(v=vs.85)">HasCharArg</a>
+

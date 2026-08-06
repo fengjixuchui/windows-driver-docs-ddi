@@ -4,7 +4,6 @@ title: PFND3DDDI_DXVAHD_DESTROYVIDEOPROCESSOR (d3dumddi.h)
 description: The DestroyVideoProcessor function releases resources for a Microsoft DirectX Video Acceleration (VA) video processor.
 old-location: display\destroyvideoprocessor.htm
 tech.root: display
-ms.assetid: ea90fe17-4b79-4011-9e05-d5dbd06c0c6b
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DXVAHD_DESTROYVIDEOPROCESSOR callback function"]
 ms.keywords: DestroyVideoProcessor, DestroyVideoProcessor callback function [Display Devices], PFND3DDDI_DXVAHD_DESTROYVIDEOPROCESSOR, PFND3DDDI_DXVAHD_DESTROYVIDEOPROCESSOR callback, UserModeDisplayDriver_Functions_e55b46ab-1325-4bb7-bf22-9f3cb19bff71.xml, d3dumddi/DestroyVideoProcessor, display.destroyvideoprocessor
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - DestroyVideoProcessor
+ - PFND3DDDI_DXVAHD_DESTROYVIDEOPROCESSOR
 ---
 
 # PFND3DDDI_DXVAHD_DESTROYVIDEOPROCESSOR callback function
@@ -50,13 +49,13 @@ The <b>DestroyVideoProcessor</b> function releases resources for a Microsoft Dir
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hVideoProcessor* [in]
 
@@ -73,3 +72,4 @@ The <b>DestroyVideoProcessor</b> function notifies the driver to destroy the han
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_dxvahd_createvideoprocessor">CreateVideoProcessor</a>
+

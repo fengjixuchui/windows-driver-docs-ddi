@@ -4,7 +4,6 @@ title: SRIOV_WRITE_BLOCK (pcivirt.h)
 description: Writes data to the specified configuration block of a PCI Express SR-IOV Virtual Function (VF).
 old-location: pci\sriov_write_block.htm
 tech.root: PCI
-ms.assetid: da47d601-2fab-49bb-b669-909a2e5c95c0
 ms.date: 02/24/2018
 keywords: ["SRIOV_WRITE_BLOCK callback"]
 ms.keywords: "*PSRIOV_WRITE_BLOCK, *PSRIOV_WRITE_BLOCK callback function pointer [Buses], PCI.sriov_write_block, SRIOV_WRITE_BLOCK, SriovWriteBlock, SriovWriteBlock callback function [Buses], pcivirt/SriovWriteBlock"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Pcivirt.h
 api_name:
- - PSRIOV_WRITE_BLOCK
+ - SRIOV_WRITE_BLOCK
 ---
 
 # SRIOV_WRITE_BLOCK callback
@@ -50,24 +49,24 @@ Writes data to the specified configuration block of a PCI Express SR-IOV Virtual
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to a driver-defined context.
 
-### -param VfIndex 
+### -param VfIndex [in]
 
-[in]
+
 A zero-based index of the VF to which this write operation applies.
 
-### -param BlockId 
+### -param BlockId [in]
 
-[in]
+
 A number identifying the block to be written.  This is defined by the provider of the PF driver.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to a buffer that contains the data to write to the VF's  configuration space.
 
 ### -param Length
@@ -100,3 +99,4 @@ typedef SRIOV_WRITE_BLOCK *PSRIOV_WRITE_BLOCK;
 This callback function is implemented by the physical function (PF) driver. It is invoked  when the system wants to read a configuration block for one of its VFs.
 
 The PF driver registers its implementation by setting the <b>WriteVfConfigBlock</b> member of the <a href="/windows-hardware/drivers/ddi/pcivirt/ns-pcivirt-_sriov_device_interface_standard">SRIOV_DEVICE_INTERFACE_STANDARD</a>, configuring a <a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure, and calling <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>.
+

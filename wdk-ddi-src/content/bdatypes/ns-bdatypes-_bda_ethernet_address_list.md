@@ -1,10 +1,9 @@
 ---
 UID: NS:bdatypes._BDA_ETHERNET_ADDRESS_LIST
 title: _BDA_ETHERNET_ADDRESS_LIST (bdatypes.h)
-description: 
+description: "Learn more about: _BDA_ETHERNET_ADDRESS_LIST structure"
 old-location: stream\bda_ethernet_address_list.htm
 tech.root: stream
-ms.assetid: 2985A0EC-4B5F-43FA-A2E9-487877A3C9A0
 ms.date: 04/23/2018
 keywords: ["BDA_ETHERNET_ADDRESS_LIST structure"]
 ms.keywords: "*PBDA_ETHERNET_ADDRESS_LIST, BDA_ETHERNET_ADDRESS_LIST, BDA_ETHERNET_ADDRESS_LIST structure [Streaming Media Devices], PBDA_ETHERNET_ADDRESS_LIST, PBDA_ETHERNET_ADDRESS_LIST structure pointer [Streaming Media Devices], _BDA_ETHERNET_ADDRESS_LIST, bdatypes/BDA_ETHERNET_ADDRESS_LIST, bdatypes/PBDA_ETHERNET_ADDRESS_LIST, stream.bda_ethernet_address_list"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Bdatypes.h
 api_name:
+ - _BDA_ETHERNET_ADDRESS_LIST
+ - PBDA_ETHERNET_ADDRESS_LIST
  - BDA_ETHERNET_ADDRESS_LIST
 ---
 

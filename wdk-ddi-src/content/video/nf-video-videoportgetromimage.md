@@ -1,10 +1,9 @@
 ---
 UID: NF:video.VideoPortGetRomImage
 title: VideoPortGetRomImage function (video.h)
-description: Reads the device's read-only memory (ROM).
+description: The VideoPortGetRomImage function (video.h) reads the device's read-only memory (ROM) and returns a pointer to a buffer containing the device's ROM (BIOS) data.
 old-location: display\videoportgetromimage.htm
 tech.root: display
-ms.assetid: e4930661-fb88-458b-9460-129ab057e0f4
 ms.date: 05/10/2018
 keywords: ["VideoPortGetRomImage function"]
 ms.keywords: VideoPortGetRomImage, VideoPortGetRomImage function [Display Devices], VideoPort_Functions_070e50af-a33d-4dc5-9bd1-9f60367f49b2.xml, display.videoportgetromimage, video/VideoPortGetRomImage
@@ -50,24 +49,24 @@ Reads the device's read-only memory (ROM).
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the miniport driver's device extension.
 
-### -param Unused1 
+### -param Unused1 [in]
 
-[in]
+
 Currently ignored by the video port driver; should be set to <b>NULL</b>.
 
-### -param Unused2 
+### -param Unused2 [in]
 
-[in]
+
 Currently ignored by the video port driver; should be set to zero.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Either the number of bytes of ROM data that the video port driver should read and return, or zero.
 
 ## -returns

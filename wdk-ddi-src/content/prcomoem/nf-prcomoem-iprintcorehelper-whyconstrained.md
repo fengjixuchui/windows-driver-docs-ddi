@@ -4,7 +4,6 @@ title: IPrintCoreHelper::WhyConstrained (prcomoem.h)
 description: The IPrintCoreHelper::WhyConstrained method provides a list of options that are constraining the specified feature-option pair in the current configuration.
 old-location: print\iprintcorehelper_whyconstrained.htm
 tech.root: print
-ms.assetid: de3fdbd4-9647-4369-9c23-4779aa768b1b
 ms.date: 04/20/2018
 keywords: ["IPrintCoreHelper::WhyConstrained"]
 ms.keywords: IPrintCoreHelper interface [Print Devices],WhyConstrained method, IPrintCoreHelper.WhyConstrained, IPrintCoreHelper::WhyConstrained, WhyConstrained, WhyConstrained method [Print Devices], WhyConstrained method [Print Devices],IPrintCoreHelper interface, prcomoem/IPrintCoreHelper::WhyConstrained, print.iprintcorehelper_whyconstrained, print_unidrv-pscript_allplugins_256e3fde-bcef-4883-99bc-803a3de99841.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintCoreHelper.WhyConstrained
+ - IPrintCoreHelper::WhyConstrained
 ---
 
 # IPrintCoreHelper::WhyConstrained
@@ -50,34 +49,34 @@ The <b>IPrintCoreHelper::WhyConstrained</b> method provides a list of options th
 
 ## -parameters
 
-### -param pDevmode 
+### -param pDevmode [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/wingdi/ns-wingdi-devmodew">DEVMODEW</a> structure. If this pointer is provided, <b>IPrintCoreHelper::WhyConstrained</b> should use the DEVMODEW structure that is pointed to by <i>pDevmode</i> instead of the default or current DEVMODEW structure. If this method is called from the plug-in provider or from either <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemps-devmode">IPrintOemPS::DevMode</a> or <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-devmode">IPrintOemUni::DevMode</a>, this parameter is required. In most other situations, the parameter should be <b>NULL</b>. When the core driver sets <i>pDevmode</i> to <b>NULL</b>, it modifies its internal state rather than that of the passed-in DEVMODEW structure. This is required during operations such as full UI replacement, where the DEVMODEW structure returned by a DDI, such as <a href="/windows-hardware/drivers/ddi/winddiui/nf-winddiui-drvdocumentpropertysheets">DrvDocumentPropertySheets</a>, is being serviced by the core driver's UI module.
 
-### -param cbSize 
+### -param cbSize [in]
 
-[in]
+
 The size, in bytes, of the DEVMODEW structure that is pointed to by the <i>pDevmode</i> parameter.
 
-### -param pszFeatureKeyword 
+### -param pszFeatureKeyword [in]
 
-[in]
+
 A pointer to an ANSI string that contains the name of the feature. The feature name should correspond to the keyword that is used in the GPD or PPD file.
 
-### -param pszOptionKeyword 
+### -param pszOptionKeyword [in]
 
-[in]
+
 A pointer to an ANSI string that contains the name of the option. The option name should correspond to the keyword that is used in the GPD or PPD file.
 
-### -param ppFOConstraints 
+### -param ppFOConstraints [out]
 
-[out]
+
 A pointer to an array of <a href="/windows-hardware/drivers/ddi/prcomoem/ns-prcomoem-_print_feature_option">PRINT_FEATURE_OPTION</a> elements. When <b>IPrintCoreHelper::WhyConstrained</b> returns, the array contains a list of feature-element pairs of the options that constrain the options that are specified in the <i>pszOptionKeyword </i>parameter.
 
-### -param pdwNumOptions 
+### -param pdwNumOptions [out]
 
-[out]
+
 A pointer to a variable that receives the number of feature-option pairs in the array that is pointed to by the <i>ppFOConstraints</i> parameter.
 
 ## -returns
@@ -126,7 +125,7 @@ Memory for the result array could not be allocated.
 
 ## -remarks
 
-If the specified feature-option pair is not constrained, <b>IPrintCoreHelper::WhyConstrained</b> will return S_OK but will return with *<i>pdwFOPairs</i> set to 0 and with *<i>ppFOConstraints</i>[0] set to <b>NULL</b>.
+If the specified feature-option pair is not constrained, <b>IPrintCoreHelper::WhyConstrained</b> will return S_OK but will return with **pdwFOPairs* set to 0 and with **ppFOConstraints*[0] set to <b>NULL</b>.
 
 Note that the results from this method might not contain all of the options that affect the currently selected option. For Unidrv drivers, this list will include at least one option from each set of constraints that is active. If there are invalid combinations that list more than two feature-option pairs, however, only one option from the combination will be included in the list.
 
@@ -137,3 +136,4 @@ Note that the results from this method might not contain all of the options that
 
 
 <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintcorehelper-enumconstrainedoptions">IPrintCoreHelper::EnumConstrainedOptions</a>
+

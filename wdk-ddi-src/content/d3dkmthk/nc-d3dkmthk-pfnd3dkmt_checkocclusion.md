@@ -1,16 +1,15 @@
 ---
 UID: NC:d3dkmthk.PFND3DKMT_CHECKOCCLUSION
 title: PFND3DKMT_CHECKOCCLUSION (d3dkmthk.h)
-description: The D3DKMTCheckOcclusion function verifies whether the client area of a window is occluded.
+description: The PFND3DKMT_CHECKOCCLUSION callback function verifies whether the client area of a graphics window is occluded.
 old-location: display\d3dkmtcheckocclusion.htm
-ms.assetid: ce889a72-5f42-4bcf-aa15-6ec9b0423781
 ms.date: 05/10/2018
 keywords: ["PFND3DKMT_CHECKOCCLUSION callback function"]
 ms.keywords: D3DKMTCheckOcclusion, D3DKMTCheckOcclusion callback function [Display Devices], OpenGL_Functions_a73b8485-971d-47a7-bc42-77bd709c5a74.xml, PFND3DKMT_CHECKOCCLUSION, PFND3DKMT_CHECKOCCLUSION callback, d3dkmthk/D3DKMTCheckOcclusion, display.d3dkmtcheckocclusion
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
- - D3DKMTCheckOcclusion
+ - PFND3DKMT_CHECKOCCLUSION
 ---
 
 # PFND3DKMT_CHECKOCCLUSION callback function
@@ -50,7 +49,7 @@ The <b>D3DKMTCheckOcclusion</b> function verifies whether the client area of a w
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in]
 
@@ -71,8 +70,9 @@ This function might also return other <b>NTSTATUS</b> values.
 
 ## -remarks
 
-The handle to the window that is checked for occlusion must be valid. A window is not occluded if a part of its client area lies on a unowned video present network (VidPn) source, if its client area is an empty rectangular area (RECT), or if desktop composition is running.
+The handle to the window that is checked for occlusion must be valid. A window is not occluded if a part of its client area lies on an unowned video present network (VidPn) source, if its client area is an empty rectangular area (RECT), or if desktop composition is running.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_checkocclusion">D3DKMT_CHECKOCCLUSION</a>
+

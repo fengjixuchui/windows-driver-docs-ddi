@@ -4,7 +4,6 @@ title: EVT_WDF_USB_READERS_FAILED (wdfusb.h)
 description: A driver's EvtUsbTargetPipeReadersFailed event callback function informs the driver that a continuous reader has reported an error while processing a read request.
 old-location: wdf\evtusbtargetpipereadersfailed.htm
 tech.root: wdf
-ms.assetid: a9e21f47-1a60-419a-839e-8869f9fd4dd7
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_USB_READERS_FAILED callback function"]
 ms.keywords: DFUsbRef_ba1b1293-cdd5-481e-8dd1-3633eb9084b9.xml, EVT_WDF_USB_READERS_FAILED, EVT_WDF_USB_READERS_FAILED callback, EvtUsbTargetPipeReadersFailed, EvtUsbTargetPipeReadersFailed callback function, kmdf.evtusbtargetpipereadersfailed, wdf.evtusbtargetpipereadersfailed, wdfusb/EvtUsbTargetPipeReadersFailed
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfUsb.h
 api_name:
- - EvtUsbTargetPipeReadersFailed
+ - EVT_WDF_USB_READERS_FAILED
 ---
 
 # EVT_WDF_USB_READERS_FAILED callback function
@@ -52,19 +51,19 @@ A driver's <i>EvtUsbTargetPipeReadersFailed</i> event callback function informs 
 
 ## -parameters
 
-### -param Pipe 
+### -param Pipe [in]
 
-[in]
+
 A handle to a framework pipe object.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 The <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS value</a> that the pipe's I/O target returned.
 
-### -param UsbdStatus 
+### -param UsbdStatus [in]
 
-[in]
+
 The <a href="/previous-versions/windows/hardware/drivers/ff539136(v=vs.85)">USBD_STATUS</a>-typed status value that the pipe's I/O target returned.
 
 ## -returns
@@ -94,3 +93,4 @@ For more information about the <i>EvtUsbTargetPipeReadersFailed</i> callback fun
 
 
 <a href="/windows-hardware/drivers/ddi/wdfusb/ns-wdfusb-_wdf_usb_continuous_reader_config">WDF_USB_CONTINUOUS_READER_CONFIG</a>
+

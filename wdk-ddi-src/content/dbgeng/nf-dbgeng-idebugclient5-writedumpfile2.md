@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient5.WriteDumpFile2
 title: IDebugClient5::WriteDumpFile2 (dbgeng.h)
-description: The WriteDumpFile2 method creates a user-mode or kernel-modecrash dump file.
+description: The WriteDumpFile2 method creates a user-mode or kernel-modecrash dump file. This method belongs to the IDebugClient5 interface.
 old-location: debugger\writedumpfile2.htm
 tech.root: debugger
-ms.assetid: a6cdefc2-8670-485d-979a-8a270dad1c0b
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::WriteDumpFile2"]
 ms.keywords: IDebugClient2 interface [Windows Debugging],WriteDumpFile2 method, IDebugClient2::WriteDumpFile2, IDebugClient3 interface [Windows Debugging],WriteDumpFile2 method, IDebugClient3::WriteDumpFile2, IDebugClient4 interface [Windows Debugging],WriteDumpFile2 method, IDebugClient4::WriteDumpFile2, IDebugClient5 interface [Windows Debugging],WriteDumpFile2 method, IDebugClient5.WriteDumpFile2, IDebugClient5::WriteDumpFile2, IDebugClient_6ce4aeba-f7a6-4872-9ff2-baf3b3165471.xml, WriteDumpFile2, WriteDumpFile2 method [Windows Debugging], WriteDumpFile2 method [Windows Debugging],IDebugClient2 interface, WriteDumpFile2 method [Windows Debugging],IDebugClient3 interface, WriteDumpFile2 method [Windows Debugging],IDebugClient4 interface, WriteDumpFile2 method [Windows Debugging],IDebugClient5 interface, dbgeng/IDebugClient2::WriteDumpFile2, dbgeng/IDebugClient3::WriteDumpFile2, dbgeng/IDebugClient4::WriteDumpFile2, dbgeng/IDebugClient5::WriteDumpFile2, debugger.writedumpfile2
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient2.WriteDumpFile2
- - IDebugClient3.WriteDumpFile2
- - IDebugClient4.WriteDumpFile2
- - IDebugClient5.WriteDumpFile2
+ - IDebugClient5::WriteDumpFile2
 ---
 
 # IDebugClient5::WriteDumpFile2
@@ -53,24 +49,24 @@ The <b>WriteDumpFile2</b> method creates a user-mode or kernel-modecrash dump fi
 
 ## -parameters
 
-### -param DumpFile 
+### -param DumpFile [in]
 
-[in]
+
 Specifies the name of the dump file to create.  <i>DumpFile</i> must include the file name extension.  <i>DumpFile</i> can include a relative or absolute path; relative paths are relative to the directory in which the debugger was started.
 
-### -param Qualifier 
+### -param Qualifier [in]
 
-[in]
+
 Specifies the type of dump file to create.  For possible values, see <a href="/previous-versions/ff541472(v=vs.85)">DEBUG_DUMP_XXX</a>.
 
-### -param FormatFlags 
+### -param FormatFlags [in]
 
-[in]
+
 Specifies flags that determine the format of the dump file and--for user-mode minidumps--what information to include in the file.  For details, see Remarks.
 
-### -param Comment 
+### -param Comment [in, optional]
 
-[in, optional]
+
 Specifies a comment string to be included in the crash dump file.  This string is displayed in the debugger console when the dump file is loaded.  Some dump file formats do not support the storing of comment strings.
 
 ## -returns
@@ -317,3 +313,4 @@ For more information about crash dump files, see <a href="/windows-hardware/driv
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-writedumpfilewide">WriteDumpFileWide</a>
+

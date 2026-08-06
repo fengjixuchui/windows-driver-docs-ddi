@@ -4,7 +4,6 @@ title: MINIPORT_IDLE_NOTIFICATION (ndis.h)
 description: NDIS calls the MiniportIdleNotification handler function to start the NDIS selective suspend operation on an idle network adapter. Through this operation, the network adapter is suspended and transitioned to a low-power state.
 old-location: netvista\miniportidlenotification.htm
 tech.root: netvista
-ms.assetid: D679DEF0-1229-4731-8024-4DEDAE5B0185
 ms.date: 05/02/2018
 keywords: ["MINIPORT_IDLE_NOTIFICATION callback function"]
 ms.keywords: MINIPORT_IDLE_NOTIFICATION, MINIPORT_IDLE_NOTIFICATION callback, MiniportIdleNotification, MiniportIdleNotification callback function [Network Drivers Starting with Windows Vista], ndis/MiniportIdleNotification, netvista.miniportidlenotification
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportIdleNotification
+ - MINIPORT_IDLE_NOTIFICATION
 ---
 
 # MINIPORT_IDLE_NOTIFICATION callback function
@@ -50,14 +49,14 @@ NDIS calls the *MiniportIdleNotification* handler function to start the NDIS sel
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 A handle to a context area that the miniport driver allocated in its [MiniportInitializeEx](nc-ndis-miniport_initialize.md) function. The miniport driver uses this context area to maintain state information for a network adapter.
 
-### -param ForceIdle 
+### -param ForceIdle [in]
 
-[in]
+
 A **BOOLEAN** value that, when set to **TRUE**, specifies that the miniport driver must not veto the idle notification and must continue with the low-power state transition.
 
 For more information about the *ForceIdle* parameter, see the Remarks section.
@@ -68,8 +67,8 @@ For more information about the *ForceIdle* parameter, see the Remarks section.
 
 |Return code|Description|
 |--- |--- |
-|**NDIS_STATUS_PENDING**|The miniport driver successfully handled the idle notification. The notification is left in a pending state until the miniport driver calls [NdisMIdleNotificationComplete](nf-ndis-ndismidlenotificationcomplete.md). **Note:** The miniport driver must not return NDIS_STATUS_SUCCESS from [MiniportIdleNotification](nc-ndis-miniport_idle_notification.md).|
-|**NDIS_STATUS_BUSY**|The miniport driver vetoed the idle notification because the network adapter is still being used. **Note:** [MiniportIdleNotification](nc-ndis-miniport_idle_notification.md) must not return this status code if the _ForceIdle_ parameter is set to **TRUE**.|
+|**NDIS_STATUS_PENDING**|The miniport driver successfully handled the idle notification. The notification is left in a pending state until the miniport driver calls [NdisMIdleNotificationComplete](nf-ndis-ndismidlenotificationcomplete.md). **Note:** The miniport driver must not return NDIS_STATUS_SUCCESS from MiniportIdleNotification.|
+|**NDIS_STATUS_BUSY**|The miniport driver vetoed the idle notification because the network adapter is still being used. **Note:** MiniportIdleNotification must not return this status code if the _ForceIdle_ parameter is set to **TRUE**.|
 |**NDIS_STATUS_FAILURE**|The miniport driver could not issue a bus-specific IRP successfully.|
 
 ## -remarks
@@ -96,11 +95,11 @@ After the idle notification is issued, it can be canceled and completed in the f
   * An overlying protocol or filter driver issues either a send packet request or an OID request to the miniport driver.
   * The underlying adapter signals a wake-up event, such as receiving a packet that matches a wake-on-LAN (WOL) pattern or detecting a change in its media connection status.
 
-  NDIS cancels the idle notification by calling [MiniportCancelIdleNotification](/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_cancel_idle_notification). When this handler function is called, the miniport driver cancels any bus-specific IRPs that it may have previously issued for the idle notification. Finally, the miniport driver calls [NdisMIdleNotificationComplete](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismidlenotificationcomplete) to complete the idle notification.
+  NDIS cancels the idle notification by calling [MiniportCancelIdleNotification](./nc-ndis-miniport_cancel_idle_notification.md). When this handler function is called, the miniport driver cancels any bus-specific IRPs that it may have previously issued for the idle notification. Finally, the miniport driver calls [NdisMIdleNotificationComplete](./nf-ndis-ndismidlenotificationcomplete.md) to complete the idle notification.
 
 * After the network adapter is in a low-power state, the miniport driver can complete the idle notification itself in order to resume the adapter to a full-power state. The reasons for doing this are specific to the design and requirements of the driver and adapter. 
 
-  The miniport driver completes the idle notification by calling [NdisMIdleNotificationComplete](/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismidlenotificationcomplete). For more information about how the miniport driver completes the idle notification, see [Completing the NDIS Selective Suspend Idle Notification](/windows-hardware/drivers/network/completing-the-ndis-selective-suspend-idle-notification).
+  The miniport driver completes the idle notification by calling [NdisMIdleNotificationComplete](./nf-ndis-ndismidlenotificationcomplete.md). For more information about how the miniport driver completes the idle notification, see [Completing the NDIS Selective Suspend Idle Notification](/windows-hardware/drivers/network/completing-the-ndis-selective-suspend-idle-notification).
 
 For more information on how to handle idle notifications for NDIS selective suspend, see [Handling the NDIS Selective Suspend Idle Notification](/windows-hardware/drivers/network/handling-the-ndis-selective-suspend-idle-notification).
 
@@ -111,3 +110,4 @@ For guidelines on how to implement the *MiniportIdleNotification* handler functi
 [MiniportCancelIdleNotification](nc-ndis-miniport_cancel_idle_notification.md)
 
 [NdisMIdleNotificationComplete](nf-ndis-ndismidlenotificationcomplete.md)
+

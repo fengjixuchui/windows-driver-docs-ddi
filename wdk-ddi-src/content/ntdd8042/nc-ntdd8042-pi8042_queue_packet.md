@@ -4,7 +4,6 @@ title: PI8042_QUEUE_PACKET (ntdd8042.h)
 description: The PI8042_QUEUE_PACKET-typed callback routine queues an input data packet for processing by the ISR DPC of a keyboard or mouse device. I8042prt provides this callback.
 old-location: hid\pi8042_queue_packet.htm
 tech.root: hid
-ms.assetid: f5d42701-b418-4bda-b936-3e0a1f57ac9d
 ms.date: 04/30/2018
 keywords: ["PI8042_QUEUE_PACKET callback function"]
 ms.keywords: PI8042_QUEUE_PACKET, PI8042_QUEUE_PACKET callback, QueuePacket, QueuePacket callback function [Human Input Devices], hid.pi8042_queue_packet, i8042ref_44eb4361-586b-4390-8aea-4e1470a70691.xml, ntdd8042/QueuePacket
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ntdd8042.h
 api_name:
- - QueuePacket
+ - PI8042_QUEUE_PACKET
 ---
 
 # PI8042_QUEUE_PACKET callback function
@@ -50,9 +49,9 @@ The PI8042_QUEUE_PACKET-typed callback routine queues an input data packet for p
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to the function device object that represents a keyboard or mouse device.
 
 ## -remarks
@@ -80,3 +79,4 @@ The PI8042_QUEUE_PACKET callback runs in kernel mode at the same IRQL as the I80
 
 
 <a href="/windows-hardware/drivers/ddi/ntdd8042/ni-ntdd8042-ioctl_internal_i8042_hook_mouse">IOCTL_INTERNAL_I8042_HOOK_MOUSE</a>
+

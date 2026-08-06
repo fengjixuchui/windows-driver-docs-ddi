@@ -4,7 +4,6 @@ title: USBFN_GET_ATTACH_ACTION (usbfnattach.h)
 description: The filter driver's implementation that gets invoked when charger is attached to the port.
 old-location: buses\usbfn_get_attach_action.htm
 tech.root: usbref
-ms.assetid: D951D5A0-3A93-4B67-B25A-31EE61C0A065
 ms.date: 05/07/2018
 keywords: ["USBFN_GET_ATTACH_ACTION callback function"]
 ms.keywords: PFN_USBFN_GET_ATTACH_ACTION, PFN_USBFN_GET_ATTACH_ACTION callback function pointer [Buses], USBFN_GET_ATTACH_ACTION, USBFN_GET_ATTACH_ACTION callback, UsbFnGetAttachAction, UsbFnGetAttachAction callback function [Buses], buses.usbfn_get_attach_action, usbfnattach/UsbFnGetAttachAction
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - usbfnattach.h
 api_name:
- - PFN_USBFN_GET_ATTACH_ACTION
+ - USBFN_GET_ATTACH_ACTION
 ---
 
 # USBFN_GET_ATTACH_ACTION callback function
@@ -50,14 +49,14 @@ The filter driver's implementation that gets invoked when charger is attached to
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
     A pointer to a driver-defined context.
 
-### -param OnAttach 
+### -param OnAttach [out]
 
-[out]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/usbfnattach/ns-usbfnattach-_usbfn_on_attach">USBFN_ON_ATTACH</a> structure that the driver populates with the type of attach and port.
 
 ## -returns
@@ -66,7 +65,7 @@ If the operation is successful, the callback function must return STATUS_SUCCESS
 
 ## -remarks
 
-To support attach and detatch detection, the USB lower filter driver must publish its support. During the publishing process, the driver also registers its implementation of this  callback function. For more information, see <a href="/previous-versions/windows/hardware/drivers/mt188012(v=vs.85)">USB filter driver for supporting proprietary chargers</a>.
+To support attach and detach detection, the USB lower filter driver must publish its support. During the publishing process, the driver also registers its implementation of this  callback function. For more information, see <a href="/previous-versions/windows/hardware/drivers/mt188012(v=vs.85)">USB filter driver for supporting proprietary chargers</a>.
 
 
 #### Examples
@@ -126,7 +125,7 @@ UsbLowerFilter_GetAttachAction(
 
 ```
 
-
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/drivers/mt188012(v=vs.85)">USB filter driver for supporting proprietary chargers</a>
+

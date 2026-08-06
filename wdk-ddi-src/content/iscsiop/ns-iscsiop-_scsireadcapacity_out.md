@@ -4,7 +4,6 @@ title: _ScsiReadCapacity_OUT (iscsiop.h)
 description: The ScsiReadCapacity_OUT structure holds the output data for the ScsiReadCapacity method.
 old-location: storage\scsireadcapacity_out.htm
 tech.root: storage
-ms.assetid: 3330379f-e484-4fd7-b914-fc969398b56b
 ms.date: 03/29/2018
 keywords: ["ScsiReadCapacity_OUT structure"]
 ms.keywords: "*PScsiReadCapacity_OUT, PScsiReadCapacity_OUT, PScsiReadCapacity_OUT structure pointer [Storage Devices], ScsiReadCapacity_OUT, ScsiReadCapacity_OUT structure [Storage Devices], _ScsiReadCapacity_OUT, iscsiop/PScsiReadCapacity_OUT, iscsiop/ScsiReadCapacity_OUT, storage.scsireadcapacity_out, structs-iSCSI_48750b99-26df-4890-b906-fa487efc3797.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsiop.h
 api_name:
+ - _ScsiReadCapacity_OUT
+ - PScsiReadCapacity_OUT
  - ScsiReadCapacity_OUT
 ---
 
@@ -89,3 +90,4 @@ You must implement this method.
 
 
 <a href="/windows-hardware/drivers/ddi/iscsiop/ns-iscsiop-_scsireadcapacity_in">ScsiReadCapacity_IN</a>
+

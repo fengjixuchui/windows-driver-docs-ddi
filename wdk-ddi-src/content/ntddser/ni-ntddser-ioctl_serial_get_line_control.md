@@ -4,7 +4,6 @@ title: IOCTL_SERIAL_GET_LINE_CONTROL (ntddser.h)
 description: The IOCTL_SERIAL_GET_LINE_CONTROL request returns information about the line control set for a serial device. The line control parameters include the number of stop bits, the number of data bits, and the parity.
 old-location: serports\ioctl_serial_get_line_control.htm
 tech.root: serports
-ms.assetid: 72585a00-ee43-44fa-a6f4-baa9fe5a2e3f
 ms.date: 04/23/2018
 keywords: ["IOCTL_SERIAL_GET_LINE_CONTROL IOCTL"]
 ms.keywords: IOCTL_SERIAL_GET_LINE_CONTROL, IOCTL_SERIAL_GET_LINE_CONTROL control, IOCTL_SERIAL_GET_LINE_CONTROL control code [Serial Ports], ntddser/IOCTL_SERIAL_GET_LINE_CONTROL, serports.ioctl_serial_get_line_control, serref_46b42112-a960-44dc-8ce7-3c8d68746fe9.xml
@@ -53,6 +52,8 @@ To configure the line control, a client can use an <a href="/windows-hardware/dr
 For information about valid line control register settings, see <a href="/windows-hardware/drivers/ddi/ntddser/ns-ntddser-_serial_line_control">SERIAL_LINE_CONTROL</a>.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

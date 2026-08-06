@@ -4,7 +4,6 @@ title: KeResetEvent function (wdm.h)
 description: The KeResetEvent routine resets a specified event object to a not-signaled state and returns the previous state of that event object.
 old-location: kernel\keresetevent.htm
 tech.root: kernel
-ms.assetid: 90be986b-e63e-4ae3-a0f3-87f6f58583dc
 ms.date: 04/30/2018
 keywords: ["KeResetEvent function"]
 ms.keywords: KeResetEvent, KeResetEvent routine [Kernel-Mode Driver Architecture], k105_d2a27b37-56af-46a4-8a48-da507261f77a.xml, kernel.keresetevent, wdm/KeResetEvent
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>KeResetEvent</b> routine resets a specified event object to a not-signale
 
 ## -parameters
 
-### -param Event 
+### -param Event [in, out]
 
-[in, out]
+
 A pointer to an initialized dispatcher object of type event for which the caller provides the storage.
 
 ## -returns

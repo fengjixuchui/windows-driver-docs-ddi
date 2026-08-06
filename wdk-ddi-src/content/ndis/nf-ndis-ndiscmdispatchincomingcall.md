@@ -4,7 +4,6 @@ title: NdisCmDispatchIncomingCall function (ndis.h)
 description: NdisCmDispatchIncomingCall informs the client of an incoming call on a SAP previously registered by that client.
 old-location: netvista\ndiscmdispatchincomingcall.htm
 tech.root: netvista
-ms.assetid: 2172aeec-8502-414e-9d01-9292c0eb7ce8
 ms.date: 05/02/2018
 keywords: ["NdisCmDispatchIncomingCall function"]
 ms.keywords: NdisCmDispatchIncomingCall, NdisCmDispatchIncomingCall function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_892a99ac-d4f0-4f4b-9656-a43c99d67aca.xml, ndis/NdisCmDispatchIncomingCall, netvista.ndiscmdispatchincomingcall
@@ -52,9 +51,9 @@ api_name:
 
 ## -parameters
 
-### -param NdisSapHandle 
+### -param NdisSapHandle [in]
 
-[in]
+
 Specifies the handle identifying the SAP. NDIS set up this handle when the client originally
      called 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclregistersap">NdisClRegisterSap</a>, and the call
@@ -62,16 +61,16 @@ Specifies the handle identifying the SAP. NDIS set up this handle when the clien
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_reg_sap">
      ProtocolCmRegisterSap</a> function.
 
-### -param NdisVcHandle 
+### -param NdisVcHandle [in]
 
-[in]
+
 Specifies the handle identifying the VC, created with 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscocreatevc">NdisCoCreateVc</a> when the call manager
      processes the incoming call offer directed to this registered SAP.
 
-### -param CallParameters 
+### -param CallParameters [in]
 
-[in]
+
 Pointer to a structure of type 
      <a href="/previous-versions/windows/hardware/network/ff545384(v=vs.85)">CO_CALL_PARAMETERS</a> that specifies the
      traffic and media parameters for the VC.

@@ -1,9 +1,9 @@
 ---
 UID: NS:wdm._PTM_CONTROL_INTERFACE
 title: _PTM_CONTROL_INTERFACE (wdm.h)
-description: Resereved. Do not use.
-ms.assetid: ac2d0ac1-6ce2-47c5-b31e-935d16358a86
+description: Reserved for PTM_CONTROL_INTERFACE. Do not use.
 ms.date: 10/19/2018
+tech.root: kernel
 keywords: ["PTM_CONTROL_INTERFACE structure"]
 ms.keywords: _PTM_CONTROL_INTERFACE, PTM_CONTROL_INTERFACE, *PPTM_CONTROL_INTERFACE,
 req.header: wdm.h
@@ -36,6 +36,8 @@ api_location:
  - wdm.h
 api_name:
  - _PTM_CONTROL_INTERFACE
+ - PPTM_CONTROL_INTERFACE
+ - PTM_CONTROL_INTERFACE
 ---
 
 # _PTM_CONTROL_INTERFACE structure

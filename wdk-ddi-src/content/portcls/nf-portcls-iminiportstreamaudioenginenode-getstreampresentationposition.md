@@ -4,7 +4,6 @@ title: IMiniportStreamAudioEngineNode::GetStreamPresentationPosition (portcls.h)
 description: Gets the current cursor position in the audio data stream that is being rendered to the endpoint.
 old-location: audio\iminiportstreamaudioenginenode_getstreampresentationposition.htm
 tech.root: audio
-ms.assetid: 872A4445-8E0B-4804-ADDC-8CD9608E3EBF
 ms.date: 05/08/2018
 keywords: ["IMiniportStreamAudioEngineNode::GetStreamPresentationPosition"]
 ms.keywords: GetStreamPresentationPosition, GetStreamPresentationPosition method [Audio Devices], GetStreamPresentationPosition method [Audio Devices],IMiniportStreamAudioEngineNode interface, IMiniportStreamAudioEngineNode interface [Audio Devices],GetStreamPresentationPosition method, IMiniportStreamAudioEngineNode.GetStreamPresentationPosition, IMiniportStreamAudioEngineNode::GetStreamPresentationPosition, audio.iminiportstreamaudioenginenode_getstreampresentationposition, portcls/IMiniportStreamAudioEngineNode::GetStreamPresentationPosition
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IMiniportStreamAudioEngineNode.GetStreamPresentationPosition
+ - IMiniportStreamAudioEngineNode::GetStreamPresentationPosition
 ---
 
 # IMiniportStreamAudioEngineNode::GetStreamPresentationPosition
@@ -50,9 +49,9 @@ Gets the current cursor position in the audio data stream that is being rendered
 
 ## -parameters
 
-### -param pPresentationPosition 
+### -param pPresentationPosition [out]
 
-[out]
+
 A <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_presentation_position">KSAUDIO_PRESENTATION_POSITION</a> structure that represents the current cursor position in the audio data stream.
 
 ## -returns
@@ -68,3 +67,4 @@ code.
 
 
 <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_presentation_position">KSAUDIO_PRESENTATION_POSITION</a>
+

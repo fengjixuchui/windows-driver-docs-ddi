@@ -4,7 +4,6 @@ title: ExtRemoteTyped::GetFieldOffset (engextcpp.h)
 description: The GetFieldOffset method returns the offset of a member from the base address of an instance of the type that is represented by this object.
 old-location: debugger\extremotetyped_getfieldoffset.htm
 tech.root: debugger
-ms.assetid: d74d5b61-f8e8-4ee0-83d2-cfb003189ef4
 ms.date: 05/03/2018
 keywords: ["ExtRemoteTyped::GetFieldOffset"]
 ms.keywords: EngExtCpp_Ref_167b764a-f061-46c2-97ce-71c22ddd9b6f.xml, ExtRemoteTyped interface [Windows Debugging],GetFieldOffset method, ExtRemoteTyped.GetFieldOffset, ExtRemoteTyped::GetFieldOffset, GetFieldOffset, GetFieldOffset method [Windows Debugging], GetFieldOffset method [Windows Debugging],ExtRemoteTyped interface, debugger.extremotetyped_getfieldoffset
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteTyped.GetFieldOffset
+ - ExtRemoteTyped::GetFieldOffset
 ---
 
 # ExtRemoteTyped::GetFieldOffset
@@ -50,9 +49,9 @@ The <b>GetFieldOffset</b> method returns the offset of a member from the base ad
 
 ## -parameters
 
-### -param Field 
+### -param Field [in]
 
-[in]
+
 The name of the member whose offset is requested.  Sub-members can be specified using a dot-separated path (for example, <b>mymember.mysubmember</b>).
 
 ## -returns
@@ -70,3 +69,4 @@ The name of the member whose offset is requested.  Sub-members can be specified 
 
 
 <b>IDebugSymbols::GetFieldOffset</b>
+

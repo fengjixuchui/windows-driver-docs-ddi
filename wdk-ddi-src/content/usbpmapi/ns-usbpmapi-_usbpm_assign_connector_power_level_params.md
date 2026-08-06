@@ -2,7 +2,6 @@
 UID: NS:usbpmapi._USBPM_ASSIGN_CONNECTOR_POWER_LEVEL_PARAMS
 title: _USBPM_ASSIGN_CONNECTOR_POWER_LEVEL_PARAMS (usbpmapi.h)
 description: Describes the parameters for the **UsbPm_AssignConnectorPowerLevel**.
-ms.assetid: 3c56ef5e-2bfa-41e8-8eca-1f692b38935d
 ms.date: 09/30/2018
 keywords: ["USBPM_ASSIGN_CONNECTOR_POWER_LEVEL_PARAMS structure"]
 tech.root: usbref
@@ -37,6 +36,8 @@ api_location:
  - usbpmapi.h
 api_name:
  - _USBPM_ASSIGN_CONNECTOR_POWER_LEVEL_PARAMS
+ - PUSBPM_ASSIGN_CONNECTOR_POWER_LEVEL_PARAMS
+ - USBPM_ASSIGN_CONNECTOR_POWER_LEVEL_PARAMS
 ---
 
 # _USBPM_ASSIGN_CONNECTOR_POWER_LEVEL_PARAMS structure

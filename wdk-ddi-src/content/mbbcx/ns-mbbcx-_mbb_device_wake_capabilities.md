@@ -3,7 +3,6 @@ UID: NS:mbbcx._MBB_DEVICE_WAKE_CAPABILITIES
 title: MBB_DEVICE_WAKE_CAPABILITIES (mbbcx.h)
 description: The MBB_DEVICE_WAKE_CAPABILITIES structure describes a MBBCx net adapter's wake-on-LAN (WoL) capabilities.
 tech.root: netvista
-ms.assetid: a366fb3b-30b7-4abf-9619-5580707673ce
 ms.date: 11/07/2019
 keywords: ["MBB_DEVICE_WAKE_CAPABILITIES structure"]
 ms.keywords: MBB_DEVICE_WAKE_CAPABILITIES, MBB_DEVICE_WAKE_CAPABILITIES,
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - mbbcx.h
 api_name:
+ - _MBB_DEVICE_WAKE_CAPABILITIES
  - MBB_DEVICE_WAKE_CAPABILITIES
-product:
- - Windows
 ---
 
 # MBB_DEVICE_WAKE_CAPABILITIES structure
@@ -58,7 +56,7 @@ A boolean value indicating if the net adapter can generate wake-up events if its
 
 ### -field SmsReceive
 
-A boolean value indicating if the net adapter can generate wake-up events if it recieves a Short Message Service (SMS) message that it must report to the mobile broadband service.
+A boolean value indicating if the net adapter can generate wake-up events if it receives a Short Message Service (SMS) message that it must report to the mobile broadband service.
 
 ### -field UssdReceive
 

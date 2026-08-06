@@ -4,7 +4,6 @@ title: _DXGKVGPU_ESCAPE_READ_PCI_CONFIG (d3dukmdt.h)
 description: A structure used to read the PCI config for an escape.
 old-location: display\dxgkvgpu_escape_read_pci_config.htm
 tech.root: display
-ms.assetid: B6F4207F-B55A-4B36-883D-291E351742CA
 ms.date: 05/10/2018
 keywords: ["DXGKVGPU_ESCAPE_READ_PCI_CONFIG structure"]
 ms.keywords: DXGKVGPU_ESCAPE_READ_PCI_CONFIG, DXGKVGPU_ESCAPE_READ_PCI_CONFIG structure [Display Devices], _DXGKVGPU_ESCAPE_READ_PCI_CONFIG, d3dukmdt/DXGKVGPU_ESCAPE_READ_PCI_CONFIG, display.dxgkvgpu_escape_read_pci_config
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dukmdt.h
 api_name:
+ - _DXGKVGPU_ESCAPE_READ_PCI_CONFIG
  - DXGKVGPU_ESCAPE_READ_PCI_CONFIG
 ---
 

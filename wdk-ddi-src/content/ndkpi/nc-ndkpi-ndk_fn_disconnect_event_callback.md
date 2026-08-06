@@ -4,7 +4,6 @@ title: NDK_FN_DISCONNECT_EVENT_CALLBACK (ndkpi.h)
 description: The NdkDisconnectEventCallback (NDK_FN_DISCONNECT_EVENT_CALLBACK) function is called by the NDK provider once when the peer disconnects.
 old-location: netvista\ndk_fn_disconnect_event_callback.htm
 tech.root: netvista
-ms.assetid: AC6A7CD4-D553-4E6D-B6BF-C30CDA541EB5
 ms.date: 05/02/2018
 keywords: ["NDK_FN_DISCONNECT_EVENT_CALLBACK callback function"]
 ms.keywords: NDK_FN_DISCONNECT_EVENT_CALLBACK, NDK_FN_DISCONNECT_EVENT_CALLBACK callback, NdkDisconnectEventCallback, NdkDisconnectEventCallback callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkDisconnectEventCallback, netvista.ndk_fn_disconnect_event_callback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkDisconnectEventCallback
+ - NDK_FN_DISCONNECT_EVENT_CALLBACK
 ---
 
 # NDK_FN_DISCONNECT_EVENT_CALLBACK callback function
@@ -50,9 +49,9 @@ The <i>NdkDisconnectEventCallback</i> (<i>NDK_FN_DISCONNECT_EVENT_CALLBACK</i>) 
 
 ## -parameters
 
-### -param DisconnectEventContext 
+### -param DisconnectEventContext [in, optional]
 
-[in, optional]
+
 A context area that was specified in the <i>DisconnectEvent</i> parameter of the <i>NdkCompleteConnect</i> (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_complete_connect">NDK_FN_COMPLETE_CONNECT</a>)  or <i>NdkAccept</i> (<a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_accept">NDK_FN_ACCEPT</a>)  function when the completion queue (CQ)  object was created.
 
 ## -remarks
@@ -68,3 +67,4 @@ A context area that was specified in the <i>DisconnectEvent</i> parameter of the
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_complete_connect">NDK_FN_COMPLETE_CONNECT</a>
+

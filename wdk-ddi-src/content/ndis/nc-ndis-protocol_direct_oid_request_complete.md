@@ -4,7 +4,6 @@ title: PROTOCOL_DIRECT_OID_REQUEST_COMPLETE (ndis.h)
 description: The ProtocolDirectOidRequestComplete function completes the processing of a protocol driver-initiated direct OID request for which the NdisDirectOidRequest function returned NDIS_STATUS_PENDING.Note  You must declare the function by using the PROTOCOL_DIRECT_OID_REQUEST_COMPLETE type. For more information, see the following Examples section.
 old-location: netvista\protocoldirectoidrequestcomplete.htm
 tech.root: netvista
-ms.assetid: 6b23bbba-1b18-4da7-a45c-68df7c960aad
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_DIRECT_OID_REQUEST_COMPLETE callback function"]
 ms.keywords: PROTOCOL_DIRECT_OID_REQUEST_COMPLETE, PROTOCOL_DIRECT_OID_REQUEST_COMPLETE callback, ProtocolDirectOidRequestComplete, ProtocolDirectOidRequestComplete callback function [Network Drivers Starting with Windows Vista], ndis/ProtocolDirectOidRequestComplete, ndis_request_direct_ref_d190a2bd-5db1-481e-aaee-deffd87c8968.xml, netvista.protocoldirectoidrequestcomplete
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolDirectOidRequestComplete
+ - PROTOCOL_DIRECT_OID_REQUEST_COMPLETE
 ---
 
 # PROTOCOL_DIRECT_OID_REQUEST_COMPLETE callback function
@@ -56,24 +55,24 @@ The
 
 ## -parameters
 
-### -param ProtocolBindingContext 
+### -param ProtocolBindingContext [in]
 
-[in]
+
 A handle to a protocol driver-allocated context area in which the protocol driver maintains
      per-binding run-time state. The driver supplied this handle when it called the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a> function.
 
-### -param OidRequest 
+### -param OidRequest [in]
 
-[in]
+
 A pointer to the protocol driver-supplied 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure that was
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure that was
      previously passed to the 
      <b>NdisDirectOidRequest</b> function.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 The final status of the request. The underlying driver or NDIS determines this final status. This
      parameter determines what 
      <i>ProtocolDirectOidRequestComplete</i> does with the information at 
@@ -95,7 +94,7 @@ If
       <i>Status</i> is NDIS_STATUS_SUCCESS, the 
       <b>BytesRead</b> or 
       <b>BytesWritten</b> member of the 
-      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure has been set
+      <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure has been set
       by NDIS or the underlying driver. These values specify how much protocol driver-supplied information
       was transferred from the buffer at 
       <b>InformationBuffer</b> to the NIC in a set operation or how much information
@@ -186,7 +185,7 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 
@@ -208,3 +207,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/network/oid-gen-maximum-send-packets">OID_GEN_MAXIMUM_SEND_PACKETS</a>
+

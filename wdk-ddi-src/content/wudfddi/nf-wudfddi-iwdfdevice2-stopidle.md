@@ -4,7 +4,6 @@ title: IWDFDevice2::StopIdle (wudfddi.h)
 description: The StopIdle method informs the framework that the device must be placed in its working (D0) power state.
 old-location: wdf\iwdfdevice2_stopidle.htm
 tech.root: wdf
-ms.assetid: 1a4907c9-8e3b-4fb6-a7d4-89985e470e48
 ms.date: 02/26/2018
 keywords: ["IWDFDevice2::StopIdle"]
 ms.keywords: IWDFDevice2 interface,StopIdle method, IWDFDevice2.StopIdle, IWDFDevice2::StopIdle, StopIdle, StopIdle method, StopIdle method,IWDFDevice2 interface, UMDFDeviceObjectRef_8b32ad46-c35a-4b3a-8779-fa183d9cbb72.xml, umdf.iwdfdevice2_stopidle, wdf.iwdfdevice2_stopidle, wudfddi/IWDFDevice2::StopIdle
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice2.StopIdle
+ - IWDFDevice2::StopIdle
 ---
 
 # IWDFDevice2::StopIdle
@@ -52,9 +51,9 @@ The <b>StopIdle</b> method informs the framework that the device must be placed 
 
 ## -parameters
 
-### -param WaitForD0 
+### -param WaitForD0 [in]
 
-[in]
+
 A Boolean value that indicates when <b>StopIdle</b> will return. If <b>TRUE</b>, it returns only after the specified device enters the D0 device power state. If <b>FALSE</b>, the method returns immediately.
 
 ## -returns
@@ -147,7 +146,6 @@ The following code example obtains the <a href="/windows-hardware/drivers/ddi/wu
    SAFE_RELEASE(pIWDFDevice2);
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice2">IWDFDevice2</a>
@@ -155,3 +153,4 @@ The following code example obtains the <a href="/windows-hardware/drivers/ddi/wu
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice2-resumeidle">IWDFDevice2::ResumeIdle</a>
+

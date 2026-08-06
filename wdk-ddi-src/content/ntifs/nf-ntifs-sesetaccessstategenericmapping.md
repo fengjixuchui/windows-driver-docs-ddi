@@ -4,7 +4,6 @@ title: SeSetAccessStateGenericMapping function (ntifs.h)
 description: The SeSetAccessStateGenericMapping routine sets the generic mapping field of an ACCESS_STATE structure.
 old-location: ifsk\sesetaccessstategenericmapping.htm
 tech.root: ifsk
-ms.assetid: b9a5ca5c-2d1c-4974-bef8-6003a4d6e864
 ms.date: 04/16/2018
 keywords: ["SeSetAccessStateGenericMapping function"]
 ms.keywords: SeSetAccessStateGenericMapping, SeSetAccessStateGenericMapping routine [Installable File System Drivers], ifsk.sesetaccessstategenericmapping, ntifs/SeSetAccessStateGenericMapping, seref_41bfccdf-c133-4587-9d9e-a328eedbd28b.xml
@@ -50,14 +49,14 @@ The <b>SeSetAccessStateGenericMapping</b> routine sets the generic mapping field
 
 ## -parameters
 
-### -param AccessState 
+### -param AccessState [in, out]
 
-[in, out]
+
 Pointer to the ACCESS_STATE structure to be modified.
 
-### -param GenericMapping 
+### -param GenericMapping [in]
 
-[in]
+
 Pointer to a GENERIC<b>_</b>MAPPING structure to be copied into the ACCESS_STATE structure specified by <i>AccessState</i>.
 
 ## -remarks
@@ -66,7 +65,7 @@ Pointer to a GENERIC<b>_</b>MAPPING structure to be copied into the ACCESS_STATE
 
 The generic mapping structure defines the mapping of generic access rights to specific and standard access rights for an object. When a client requests generic access rights to an object, the desired access mask is mapped to one of the access masks defined in this structure.
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

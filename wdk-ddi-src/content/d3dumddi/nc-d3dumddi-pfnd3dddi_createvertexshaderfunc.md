@@ -4,7 +4,6 @@ title: PFND3DDDI_CREATEVERTEXSHADERFUNC (d3dumddi.h)
 description: The CreateVertexShaderFunc function converts vertex shader code into a hardware-specific format and associates the code with a shader handle.
 old-location: display\createvertexshaderfunc.htm
 tech.root: display
-ms.assetid: e986d37a-6039-4bc4-b5e8-6c4d4d7adedd
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CREATEVERTEXSHADERFUNC callback function"]
 ms.keywords: CreateVertexShaderFunc, CreateVertexShaderFunc callback function [Display Devices], PFND3DDDI_CREATEVERTEXSHADERFUNC, PFND3DDDI_CREATEVERTEXSHADERFUNC callback, UserModeDisplayDriver_Functions_bb697f1f-765f-46d9-961a-f4e8060727bc.xml, d3dumddi/CreateVertexShaderFunc, display.createvertexshaderfunc
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - CreateVertexShaderFunc
+ - PFND3DDDI_CREATEVERTEXSHADERFUNC
 ---
 
 # PFND3DDDI_CREATEVERTEXSHADERFUNC callback function
@@ -50,18 +49,18 @@ The <b>CreateVertexShaderFunc</b> function converts vertex shader code into a ha
 
 ## -parameters
 
-### -param hDevice 
+### -param hDevice [in]
 
-[in]
+
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCode* [in]
 
 An array of CONST UINT tokens that make up the vertex shader code.
 
-### -param Arg3
+### -param unnamedParam3
 
 *pData* [in, out]
 
@@ -82,3 +81,4 @@ For more information about programming shader assemblers, see <a href="/windows-
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

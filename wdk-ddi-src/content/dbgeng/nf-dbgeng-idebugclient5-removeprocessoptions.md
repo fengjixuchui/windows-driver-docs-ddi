@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient5.RemoveProcessOptions
 title: IDebugClient5::RemoveProcessOptions (dbgeng.h)
-description: The RemoveProcessOptions method removes process options from those options that affect the current process.
+description: The RemoveProcessOptions method removes process options from those options that affect the current process. This method belongs to the IDebugClient5 interface.
 old-location: debugger\removeprocessoptions.htm
 tech.root: debugger
-ms.assetid: 8b2cf167-d1bd-440e-beb4-5159b8b13073
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::RemoveProcessOptions"]
 ms.keywords: IDebugClient interface [Windows Debugging],RemoveProcessOptions method, IDebugClient2 interface [Windows Debugging],RemoveProcessOptions method, IDebugClient2::RemoveProcessOptions, IDebugClient3 interface [Windows Debugging],RemoveProcessOptions method, IDebugClient3::RemoveProcessOptions, IDebugClient4 interface [Windows Debugging],RemoveProcessOptions method, IDebugClient4::RemoveProcessOptions, IDebugClient5 interface [Windows Debugging],RemoveProcessOptions method, IDebugClient5.RemoveProcessOptions, IDebugClient5::RemoveProcessOptions, IDebugClient::RemoveProcessOptions, IDebugClient_eafb8a9c-18a4-4737-8ece-955596338fe5.xml, RemoveProcessOptions, RemoveProcessOptions method [Windows Debugging], RemoveProcessOptions method [Windows Debugging],IDebugClient interface, RemoveProcessOptions method [Windows Debugging],IDebugClient2 interface, RemoveProcessOptions method [Windows Debugging],IDebugClient3 interface, RemoveProcessOptions method [Windows Debugging],IDebugClient4 interface, RemoveProcessOptions method [Windows Debugging],IDebugClient5 interface, dbgeng/IDebugClient2::RemoveProcessOptions, dbgeng/IDebugClient3::RemoveProcessOptions, dbgeng/IDebugClient4::RemoveProcessOptions, dbgeng/IDebugClient5::RemoveProcessOptions, dbgeng/IDebugClient::RemoveProcessOptions, debugger.removeprocessoptions
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.RemoveProcessOptions
- - IDebugClient2.RemoveProcessOptions
- - IDebugClient3.RemoveProcessOptions
- - IDebugClient4.RemoveProcessOptions
- - IDebugClient5.RemoveProcessOptions
+ - IDebugClient5::RemoveProcessOptions
 ---
 
 # IDebugClient5::RemoveProcessOptions
@@ -54,9 +49,9 @@ The <b>RemoveProcessOptions</b> method removes process options from those option
 
 ## -parameters
 
-### -param Options 
+### -param Options [in]
 
-[in]
+
 Specifies the process options to remove from those affecting the current process.  For details on these options, see <a href="/windows-hardware/drivers/debugger/debug-process-xxx">DEBUG_PROCESS_XXX</a>.
 
 ## -returns
@@ -127,3 +122,4 @@ For more information about creating and attaching to live user-mode targets, see
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-setprocessoptions">SetProcessOptions</a>
+

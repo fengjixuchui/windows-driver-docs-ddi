@@ -4,7 +4,6 @@ title: _NDIS_ISOLATION_NAME (ntddndis.h)
 description: The NDIS_ISOLATION_NAME structure contains an NDIS isolation name for a VM network adapter.
 old-location: netvista\ndis_isolation_name.htm
 tech.root: netvista
-ms.assetid: 4712F853-8819-476C-8AD9-426EA5A0802E
 ms.date: 05/02/2018
 keywords: ["NDIS_ISOLATION_NAME structure"]
 ms.keywords: "*PNDIS_ISOLATION_ID_NAME, *PNDIS_ROUTING_DOMAIN_NAME, NDIS_ISOLATION_ID_NAME, NDIS_ISOLATION_NAME, NDIS_ISOLATION_NAME structure [Network Drivers Starting with Windows Vista], NDIS_ROUTING_DOMAIN_NAME, _NDIS_ISOLATION_NAME, netvista.ndis_isolation_name, ntddndis/NDIS_ISOLATION_NAME"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_ISOLATION_NAME
  - NDIS_ISOLATION_NAME
 ---
 
@@ -54,7 +54,6 @@ typedef NDIS_ISOLATION_NAME NDIS_ISOLATION_ID_NAME, *PNDIS_ISOLATION_ID_NAME;
 typedef NDIS_ISOLATION_NAME NDIS_ROUTING_DOMAIN_NAME, *PNDIS_ROUTING_DOMAIN_NAME;
 
 ```
-
 
 ## -struct-fields
 
@@ -98,3 +97,4 @@ The <b>RoutingDomainName</b> member of the <a href="/windows-hardware/drivers/dd
 
 
 <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_switch_port_property_routing_domain">NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN</a>
+

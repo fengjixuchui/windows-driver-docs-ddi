@@ -4,7 +4,6 @@ title: RtlInsertElementGenericTableAvl function (ntddk.h)
 description: The RtlInsertElementGenericTableAvl routine adds a new entry to a generic table.
 old-location: ifsk\rtlinsertelementgenerictableavl.htm
 tech.root: ifsk
-ms.assetid: BF7563F8-F1C5-4300-94A2-7D884DA7DFA2
 ms.date: 04/16/2018
 keywords: ["RtlInsertElementGenericTableAvl function"]
 ms.keywords: RtlInsertElementGenericTableAvl, RtlInsertElementGenericTableAvl routine [Installable File System Drivers], ifsk.rtlinsertelementgenerictableavl, ntddk/RtlInsertElementGenericTableAvl
@@ -50,24 +49,24 @@ The <b>RtlInsertElementGenericTableAvl</b> routine adds a new entry to a generic
 
 ## -parameters
 
-### -param Table 
+### -param Table [in]
 
-[in]
+
 Pointer to a generic Adelson-Velsky/Landis (AVL) table (<a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_rtl_avl_table">RTL_AVL_TABLE</a>) that was initialized by a call to <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlinitializegenerictableavl">RtlInitializeGenericTableAvl</a>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A caller-allocated buffer that contains the user data to copy into the new element. For more information, see <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlinitializegenerictableavl">RtlInitializeGenericTableAvl</a>.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Size in bytes of data in <i>Buffer.</i>
 
-### -param NewElement 
+### -param NewElement [out, optional]
 
-[out, optional]
+
 On output, a value of <b>TRUE</b> means the insertion of the new element in the generic table was successful. A value of <b>FALSE</b> means the insertion failed.
 
 ## -returns
@@ -84,7 +83,7 @@ If the caller's <i>CompareRoutine</i> returns <b>GenericEqual</b>, the data at <
 
 If a matching entry already exists in the generic table, <b>RtlInsertElementGenericTableAvl</b> returns a pointer to the existing entry's data and sets <i>NewElement</i> to <b>FALSE</b>. 
 
-If there is no matching entry in the table already,<b>RtlInsertElementGenericTableAvl</b> routine allocates sufficient space for the user data of new entry (<i>BufferSize</i>) plus the links associated with the new entry. Thus the total number of bytes will be at least <i>BufferSize</i> + <b>sizeof</b>(BALANCED_LINKS). Caller should not use the first <b>sizeof</b>(BALANCED_LINKS) bytes of the memory that the <i>AllocateRoutine</i>allocates.
+If there is no matching entry in the table already,<b>RtlInsertElementGenericTableAvl</b> routine allocates sufficient space for the user data of new entry (<i>BufferSize</i>) plus the links associated with the new entry. Thus the total number of bytes will be at least <i>BufferSize</i> + <b>sizeof</b>(RTL_BALANCED_LINKS). Caller should not use the first <b>sizeof</b>(RTL_BALANCED_LINKS) bytes of the memory that the <i>AllocateRoutine</i>allocates.
 
 Callers of the <i>Rtl..GenericTableAvl</i> routines are responsible for exclusively synchronizing access to the generic table. An exclusive fast mutex is the most efficient synchronization mechanism to use for this purpose. 
 

@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_CALCPRIVATESHADERRESOURCEVIEWSIZE
 title: PFND3D11DDI_CALCPRIVATESHADERRESOURCEVIEWSIZE (d3d10umddi.h)
 description: The CalcPrivateShaderResourceViewSize(D3D11) function determines the size of the user-mode display driver's private region of memory (that is, the size of internal driver structures, not the size of the resource video memory) for a shader resource view.
 old-location: display\calcprivateshaderresourceviewsize_d3d11_.htm
-ms.assetid: 894f6ef1-a5a4-40aa-9a07-f66da4ce7d81
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_CALCPRIVATESHADERRESOURCEVIEWSIZE callback function"]
 ms.keywords: CalcPrivateShaderResourceViewSize, CalcPrivateShaderResourceViewSize callback function [Display Devices], PFND3D11DDI_CALCPRIVATESHADERRESOURCEVIEWSIZE, PFND3D11DDI_CALCPRIVATESHADERRESOURCEVIEWSIZE callback, UserModeDisplayDriverDx11_Functions_27936968-ec44-4c95-afb1-a3ba522ad8f6.xml, d3d10umddi/CalcPrivateShaderResourceViewSize, display.calcprivateshaderresourceviewsize_d3d11_
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CalcPrivateShaderResourceViewSize
-product:
- - Windows
+ - PFND3D11DDI_CALCPRIVATESHADERRESOURCEVIEWSIZE
 ---
 
 # PFND3D11DDI_CALCPRIVATESHADERRESOURCEVIEWSIZE callback function
@@ -52,13 +49,13 @@ The <b>CalcPrivateShaderResourceViewSize(D3D11)</b> function determines the size
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCreateShaderResourceView* [in]
 
@@ -75,3 +72,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11ddi_devicefuncs">D3D11DDI_DEVICEFUNCS</a>
+

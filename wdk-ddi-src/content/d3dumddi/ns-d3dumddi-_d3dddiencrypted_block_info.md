@@ -4,7 +4,6 @@ title: _D3DDDIENCRYPTED_BLOCK_INFO (d3dumddi.h)
 description: The D3DDDIENCRYPTED_BLOCK_INFO structure describes the portions of a buffer that are encrypted.
 old-location: display\d3dddiencrypted_block_info.htm
 tech.root: display
-ms.assetid: a02f782f-6918-479a-b3de-9443df2e9ffe
 ms.date: 05/10/2018
 keywords: ["D3DDDIENCRYPTED_BLOCK_INFO structure"]
 ms.keywords: D3DDDIENCRYPTED_BLOCK_INFO, D3DDDIENCRYPTED_BLOCK_INFO structure [Display Devices], D3D_other_Structs_ca22516f-415c-47ff-9ba5-b837171cf77e.xml, _D3DDDIENCRYPTED_BLOCK_INFO, d3dumddi/D3DDDIENCRYPTED_BLOCK_INFO, display.d3dddiencrypted_block_info
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIENCRYPTED_BLOCK_INFO
  - D3DDDIENCRYPTED_BLOCK_INFO
 ---
 
@@ -52,17 +52,17 @@ The D3DDDIENCRYPTED_BLOCK_INFO structure describes the portions of a buffer that
 
 ## -struct-fields
 
-### -field NumEncryptedBytesAtBeginning
+### -field NumEncryptedBytesAtBeginning [in]
 
-[in] The number of bytes at the beginning of the buffer that are encrypted.
+The number of bytes at the beginning of the buffer that are encrypted.
 
-### -field NumBytesInSkipPattern
+### -field NumBytesInSkipPattern [in]
 
-[in] The number of bytes in the buffer that are skipped from encryption before encryption starts again.
+The number of bytes in the buffer that are skipped from encryption before encryption starts again.
 
-### -field NumBytesInEncryptPattern
+### -field NumBytesInEncryptPattern [in]
 
-[in] The number of bytes in the buffer that are encrypted after the skip pattern, which the <b>NumBytesInSkipPattern</b> member specifies. The skip and encrypt pattern is then repeated until the buffer ends. For more information about the skip-encrypt pattern, see the Remarks section.
+The number of bytes in the buffer that are encrypted after the skip pattern, which the <b>NumBytesInSkipPattern</b> member specifies. The skip and encrypt pattern is then repeated until the buffer ends. For more information about the skip-encrypt pattern, see the Remarks section.
 
 ## -remarks
 
@@ -94,3 +94,4 @@ The following examples show how the runtime can partition a buffer's encryption.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_decryptionblt">DecryptionBlt</a>
+

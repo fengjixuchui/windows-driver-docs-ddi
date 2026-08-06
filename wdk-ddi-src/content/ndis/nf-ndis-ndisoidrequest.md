@@ -4,7 +4,6 @@ title: NdisOidRequest function (ndis.h)
 description: The NdisOidRequest function forwards a request to the underlying drivers to query the capabilities or status of an adapter or set the state of an adapter.
 old-location: netvista\ndisoidrequest.htm
 tech.root: netvista
-ms.assetid: a3ddeec4-0414-48ed-ab3b-5df252682655
 ms.date: 05/02/2018
 keywords: ["NdisOidRequest function"]
 ms.keywords: NdisOidRequest, NdisOidRequest function [Network Drivers Starting with Windows Vista], ndis/NdisOidRequest, ndis_request_ref_d60ed5b8-bcb7-4195-8767-618ab55f090b.xml, netvista.ndisoidrequest
@@ -53,18 +52,18 @@ The
 
 ## -parameters
 
-### -param NdisBindingHandle 
+### -param NdisBindingHandle [in]
 
-[in]
+
 The handle returned by the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a> function that
      identifies the target adapter on the binding.
 
-### -param OidRequest 
+### -param OidRequest [in]
 
-[in]
+
 A pointer to an 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure that specifies
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure that specifies
      the operation requested with a given OID_<i>XXX</i> code to either query the status of an adapter or to set the state of an adapter.
 
 ## -returns
@@ -110,7 +109,7 @@ The request is being handled asynchronously, and NDIS will call the caller's
 <td width="60%">
 The OID_<i>XXX</i> code specified in the 
        <b>Oid</b> member of the 
-       <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>-structured buffer at 
+       <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>-structured buffer at 
        <i>OidRequest</i> is invalid or unsupported by the underlying driver.
 
 </td>
@@ -254,7 +253,7 @@ For more information about the general and media-specific OIDs and their respect
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 

@@ -4,7 +4,6 @@ title: MINIPORT_HALT (ndis.h)
 description: NDIS calls a miniport driver's MiniportHaltEx function to free resources when a miniport adapter is removed, and to stop the hardware.
 old-location: netvista\miniporthaltex.htm
 tech.root: netvista
-ms.assetid: b8d452b4-bef3-4991-87cf-fac15bedfde4
 ms.date: 05/02/2018
 keywords: ["MINIPORT_HALT callback function"]
 ms.keywords: MINIPORT_HALT, MINIPORT_HALT callback, MiniportHaltEx, MiniportHaltEx callback function [Network Drivers Starting with Windows Vista], miniport_functions_ref_aa826b59-f204-43ea-81b6-f1bab84a7a23.xml, ndis/MiniportHaltEx, netvista.miniporthaltex
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportHaltEx
+ - MINIPORT_HALT
 ---
 
 # MINIPORT_HALT callback function
@@ -54,16 +53,16 @@ NDIS calls a miniport driver's
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 A handle to a context area that the miniport driver allocated in its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a> function.
      The miniport driver uses this context area to maintain state information for a miniport adapter.
 
-### -param HaltAction 
+### -param HaltAction [in]
 
-[in]
+
 The reason for halting the miniport adapter. It can be one of the following values:
      
 
@@ -275,3 +274,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_timer_function">NetTimerCallback</a>
+

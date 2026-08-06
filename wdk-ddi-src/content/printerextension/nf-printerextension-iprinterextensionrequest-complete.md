@@ -2,16 +2,14 @@
 UID: NF:printerextension.IPrinterExtensionRequest.Complete
 title: IPrinterExtensionRequest::Complete (printerextension.h)
 description: Completes the extension event.
-old-location: print\iprinterextensionrequest_complete.htm
 tech.root: print
-ms.assetid: 2182A3E0-6CFD-4B29-BE78-EE38CA630FA1
-ms.date: 04/20/2018
+ms.date: 08/02/2022
 keywords: ["IPrinterExtensionRequest::Complete"]
 ms.keywords: Complete, Complete method [Print Devices], Complete method [Print Devices],IPrinterExtensionRequest interface, IPrinterExtensionRequest interface [Print Devices],Complete method, IPrinterExtensionRequest.Complete, IPrinterExtensionRequest::Complete, print.iprinterextensionrequest_complete, printerextension/IPrinterExtensionRequest::Complete
 req.header: printerextension.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Windows 8
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,11 +36,8 @@ api_type:
 api_location:
  - Printerextension.h
 api_name:
- - IPrinterExtensionRequest.Complete
+ - IPrinterExtensionRequest::Complete
 ---
-
-# IPrinterExtensionRequest::Complete
-
 
 ## -description
 
@@ -50,8 +45,8 @@ Completes the extension event.
 
 ## -returns
 
-This method returns an <b>HRESULT</b> value.
+This method returns an **HRESULT** value.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensionrequest">IPrinterExtensionRequest</a>
+[IPrinterExtensionRequest](./nn-printerextension-iprinterextensionrequest.md)

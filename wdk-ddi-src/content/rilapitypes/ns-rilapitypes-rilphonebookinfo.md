@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILPHONEBOOKINFO
 title: RILPHONEBOOKINFO (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILPHONEBOOKINFO structure for internal use only."
 old-location: netvista\rilphonebookinfo.htm
 tech.root: netvista
-ms.assetid: 626bfc9b-6d84-4b8c-89eb-c635d0cb61f0
 ms.date: 05/02/2018
 keywords: ["RILPHONEBOOKINFO structure"]
 ms.keywords: "*LPRILPHONEBOOKINFO, RILPHONEBOOKINFO, RILPHONEBOOKINFO structure [Network Drivers Starting with Windows Vista], netvista.rilphonebookinfo, ntddrilapitypes/RILPHONEBOOKINFO"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILPHONEBOOKINFO
+ - LPRILPHONEBOOKINFO
 ---
 
 # RILPHONEBOOKINFO structure (rilapitypes.h)

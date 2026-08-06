@@ -4,7 +4,6 @@ title: _DXVA_TCoef4Group (dxva.h)
 description: The DXVA_TCoef4Group structure is sent by the host decoder to the accelerator to specify the IDCT coefficient values.
 old-location: display\dxva_tcoef4group.htm
 tech.root: display
-ms.assetid: f7ffe847-58ae-42a9-86fd-50a757134b45
 ms.date: 05/10/2018
 keywords: ["DXVA_TCoef4Group structure"]
 ms.keywords: "*LPDXVA_TCoef4Group, DXVA_TCoef4Group, DXVA_TCoef4Group structure [Display Devices], LPDXVA_TCoef4Group, LPDXVA_TCoef4Group structure pointer [Display Devices], _DXVA_TCoef4Group, display.dxva_tcoef4group, dxva/DXVA_TCoef4Group, dxva/LPDXVA_TCoef4Group, dxvaref_40a4dc23-1488-41ad-ba76-296384236d78.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dxva.h
 api_name:
+ - _DXVA_TCoef4Group
+ - LPDXVA_TCoef4Group
  - DXVA_TCoef4Group
 ---
 
@@ -73,3 +74,4 @@ In the DXVA_TCoef4Group structure, groups of four transform coefficients are sen
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_configpicturedecode">DXVA_ConfigPictureDecode</a>
+

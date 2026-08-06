@@ -4,8 +4,7 @@ title: FltGetDiskDeviceObject function (fltkernel.h)
 description: The FltGetDiskDeviceObject routine returns a pointer to the disk device object associated with a given volume.
 old-location: ifsk\fltgetdiskdeviceobject.htm
 tech.root: ifsk
-ms.assetid: fb85aa34-5983-405b-85d3-7ebc4be49c51
-ms.date: 04/16/2018
+ms.date: 12/02/2020
 keywords: ["FltGetDiskDeviceObject function"]
 ms.keywords: FltApiRef_e_to_o_830212f4-ac53-41e1-8f66-48673bdaf9e2.xml, FltGetDiskDeviceObject, FltGetDiskDeviceObject routine [Installable File System Drivers], fltkernel/FltGetDiskDeviceObject, ifsk.fltgetdiskdeviceobject
 req.header: fltkernel.h
@@ -43,67 +42,48 @@ api_name:
 
 # FltGetDiskDeviceObject function
 
-
 ## -description
 
-The <b>FltGetDiskDeviceObject</b> routine returns a pointer to the disk device object associated with a given volume.
+The **FltGetDiskDeviceObject** routine returns a pointer to the disk device object associated with a given volume.
 
 ## -parameters
 
-### -param Volume 
+### -param Volume [in]
 
-[in]
-Opaque pointer for the volume. This parameter is required and cannot be <b>NULL</b>.
+Opaque pointer for the volume. This parameter is required and cannot be **NULL**.
 
-### -param DiskDeviceObject 
+### -param DiskDeviceObject [out]
 
-[out]
-Pointer to a caller-allocated variable that receives the device object pointer. This parameter is required and cannot be <b>NULL</b>.
+Pointer to a caller-allocated variable that receives the device object pointer. On any error, this parameter is not modified.
 
 ## -returns
 
-<b>FltGetDiskDeviceObject</b> returns STATUS_SUCCESS or an appropriate NTSTATUS value such as the following: 
+**FltGetDiskDeviceObject** returns STATUS_SUCCESS or an appropriate NTSTATUS value such as the following:
 
-<table>
-<tr>
-<th>Return code</th>
-<th>Description</th>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>STATUS_FLT_NO_DEVICE_OBJECT</b></dt>
-</dl>
-</td>
-<td width="60%">
-The requested device object does not exist for the given volume. This is an error code. 
-
-</td>
-</tr>
-</table>
+| Return code | Description |
+| ----------- | ----------- |
+| STATUS_FLT_NO_DEVICE_OBJECT | The requested device object does not exist for the given volume. This is an error code. |
 
 ## -remarks
 
-<b>FltGetDiskDeviceObject</b> retrieves a pointer to the storage device object for the physical disk where the volume resides. The storage device need not be an actual disk. 
+**FltGetDiskDeviceObject** retrieves a pointer to the storage device object for the physical disk where the volume resides. The storage device need not be an actual disk.
 
-<b>FltGetDiskDeviceObject</b> increments the reference count on the device object pointer returned in *<i>DiskDeviceObject</i>. When this pointer is no longer needed, the caller must decrement this reference count by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obdereferenceobject">ObDereferenceObject</a>. Failure to do so prevents the system from freeing or deleting the device object because of the outstanding reference. Thus every successful call to <b>FltGetDiskDeviceObject</b> must be matched by a subsequent call to <b>ObDereferenceObject</b>. 
+**FltGetDiskDeviceObject** increments the reference count on the device object pointer returned in **DiskDeviceObject**. When this pointer is no longer needed, the caller must decrement this reference count by calling [**ObDereferenceObject**](../wdm/nf-wdm-obdereferenceobject.md). Failure to do so prevents the system from freeing or deleting the device object because of the outstanding reference. Thus every successful call to **FltGetDiskDeviceObject** must be matched by a subsequent call to **ObDereferenceObject**.
 
-A minifilter must call <b>FltGetDiskDeviceObject</b> only in an I/O related   callback. Otherwise, the fields of the device object returned may not be valid. This the case in callback routines such as <a href="/windows-hardware/drivers/ddi/fltkernel/nc-fltkernel-pflt_instance_teardown_callback">InstanceTeardownStartCallback</a> and <b>InstanceTeardownCompleteCallback</b>.
+A minifilter must call **FltGetDiskDeviceObject** only in an I/O related callback. Otherwise, the fields of the device object returned may not be valid. This the case in callback routines such as [**InstanceTeardownStartCallback**](nc-fltkernel-pflt_instance_teardown_callback.md) and **InstanceTeardownCompleteCallback**.
 
-To get a pointer to the Filter Manager's volume device object (VDO) for a given volume, call <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetdeviceobject">FltGetDeviceObject</a>. 
+To get a pointer to the Filter Manager's volume device object (VDO) for a given volume, call [**FltGetDeviceObject**](nf-fltkernel-fltgetdeviceobject.md).
 
-To get an opaque volume pointer for the volume represented by a volume device object, call <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetvolumefromdeviceobject">FltGetVolumeFromDeviceObject</a>. 
+To get an opaque volume pointer for the volume represented by a volume device object, call [**FltGetVolumeFromDeviceObject**](nf-fltkernel-fltgetvolumefromdeviceobject.md).
 
-For more information about volume device objects, see <a href="/windows-hardware/drivers/ifs/file-system-stacks">File System Stacks</a>.
+For more information about volume device objects, see [File System Stacks](/windows-hardware/drivers/ifs/storage-device-stacks--storage-volumes--and-file-system-stacks#file-system-stacks).
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetdeviceobject">FltGetDeviceObject</a>
+[**FltGetDeviceObject**](nf-fltkernel-fltgetdeviceobject.md)
 
+[**FltGetVolumeFromDeviceObject**](nf-fltkernel-fltgetvolumefromdeviceobject.md)
 
+[**ObDereferenceObject**](../wdm/nf-wdm-obdereferenceobject.md)
 
-<a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetvolumefromdeviceobject">FltGetVolumeFromDeviceObject</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-obdereferenceobject">ObDereferenceObject</a>
+[**ObReferenceObject**](../wdm/nf-wdm-obreferenceobject.md)

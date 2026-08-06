@@ -2,7 +2,6 @@
 UID: NF:sensorsutils.PropVariantGetInformation
 title: PropVariantGetInformation function (sensorsutils.h)
 description: This routine gets offset, size, location pointer and DEVPROPTYPE, of a PROPVARIANT.
-ms.assetid: 37444fc1-54cf-4898-af68-6aa6019b85d5
 ms.date: 08/08/2018
 keywords: ["PropVariantGetInformation function"]
 tech.root: sensors
@@ -37,8 +36,6 @@ api_location:
  - sensorsutils.h
 api_name:
  - PropVariantGetInformation
-product:
- - Windows
 ---
 
 # PropVariantGetInformation function
@@ -50,26 +47,26 @@ This routine gets offset, size, location pointer and DEVPROPTYPE, of a PROPVARIA
 
 ## -parameters
 
-### -param PropVariantValue
+### -param PropVariantValue [in]
 
-[in] Pointer to a PROPVARIANT.
+Pointer to a PROPVARIANT.
 
-### -param PropVariantOffset
+### -param PropVariantOffset [out]
 
-[out] The offset of the location pointer in PROPVARIANT.
+The offset of the location pointer in PROPVARIANT.
 
-### -param PropVariantSize
+### -param PropVariantSize [out]
 
-[out] Size of data.
+Size of data.
 
-### -param PropVariantPointer
+### -param PropVariantPointer [out]
 
 C
-[out] The location of data.
+The location of data.
 
-### -param RemappedType
+### -param RemappedType [out]
 
-[out] The DEVPROPTYPE.
+The DEVPROPTYPE.
 
 ## -returns
 

@@ -1,10 +1,8 @@
 ---
-UID: NF:wiautil.CWiauPropertyList.SetAccessSubType
+UID: NF:wiautil.CWiauPropertyList.SetAccessSubType(INT,ULONG,ULONG)~r1
 title: CWiauPropertyList::SetAccessSubType method (wiautil.h)
 description: The CWiauPropertyList::SetAccessSubType method resets a property's access and subtype.
-old-location: image\cwiaupropertylist_setaccesssubtype.htm
 tech.root: image
-ms.assetid: 207125d3-0833-4c5d-b66f-aa49c96a6a2d
 ms.date: 09/07/2018
 keywords: ["CWiauPropertyList::SetAccessSubType method"]
 ms.keywords: CWiauPropertyList, CWiauPropertyList interface [Imaging Devices], SetAccessSubType method, CWiauPropertyList::SetAccessSubType, SetAccessSubType method [Imaging Devices], SetAccessSubType method [Imaging Devices], CWiauPropertyList interface, SetAccessSubType,CWiauPropertyList.SetAccessSubType, image.cwiaupropertylist_setaccesssubtype, wiauFncs_ab4b792f-54f0-4efa-bb13-5b71d94e03e0.xml, wiautil/CWiauPropertyList::SetAccessSubType
@@ -39,7 +37,6 @@ api_name:
 - CWiauPropertyList.SetAccessSubType
 targetos: Windows
 req.typenames: SKIP_AMOUNT
-req.product:
 ---
 
 # CWiauPropertyList::SetAccessSubType method
@@ -61,10 +58,6 @@ Specifies the type of access for the property, usually either WIA_PROP_READ (rea
 ### -param SubType
 
 Specifies the property subtype, one of WIA_PROP_FLAG, WIA_PROP_LIST, WIA_PROP_RANGE, or WIA_PROP_NONE. The first three constants indicate, respectively, that a property is a set of flag values, a list of values, or a range of values. The fourth constant indicates that a property is none of these.
-
-## -returns
-
-This method does not return a value.
 
 ## -remarks
 

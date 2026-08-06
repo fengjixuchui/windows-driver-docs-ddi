@@ -4,7 +4,6 @@ title: IDebugSymbols3::AddSyntheticModule (dbgeng.h)
 description: The AddSyntheticModule method adds a synthetic module to the module list the debugger maintains for the current process.
 old-location: debugger\addsyntheticmodule.htm
 tech.root: debugger
-ms.assetid: 87d9f307-996b-47df-b3dd-368fef6c1042
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::AddSyntheticModule"]
 ms.keywords: AddSyntheticModule, AddSyntheticModule method [Windows Debugging], AddSyntheticModule method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols3 interface [Windows Debugging],AddSyntheticModule method, IDebugSymbols3.AddSyntheticModule, IDebugSymbols3::AddSyntheticModule, IDebugSymbols_ecccfdc4-2942-480c-9f78-c21c4ed46c90.xml, dbgeng/IDebugSymbols3::AddSyntheticModule, debugger.addsyntheticmodule
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSymbols3.AddSyntheticModule
+ - IDebugSymbols3::AddSyntheticModule
 ---
 
 # IDebugSymbols3::AddSyntheticModule
@@ -50,29 +49,29 @@ The <b>AddSyntheticModule</b>  method adds a synthetic module to the module list
 
 ## -parameters
 
-### -param Base 
+### -param Base [in]
 
-[in]
+
 Specifies the location in the process's virtual address space of the base of the synthetic module.
 
-### -param Size 
+### -param Size [in]
 
-[in]
+
 Specifies the size in bytes of the synthetic module.
 
-### -param ImagePath 
+### -param ImagePath [in]
 
-[in]
+
 Specifies the image name of the synthetic module.  This is the name that will be returned as the name of the executable file for the synthetic module.  The full path should be included if known.
 
-### -param ModuleName 
+### -param ModuleName [in]
 
-[in]
+
 Specifies the module name for the synthetic module.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Set to DEBUG_ADDSYNTHMOD_DEFAULT.
 
 ## -returns
@@ -117,3 +116,4 @@ For more information about synthetic modules, see <a href="/windows-hardware/dri
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-removesyntheticmodule">RemoveSyntheticModule</a>
+

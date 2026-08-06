@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_SHAREDPRIMARYLOCKNOTIFICATION
 title: PFND3DKMT_SHAREDPRIMARYLOCKNOTIFICATION (d3dkmthk.h)
 description: The PFND3DKMT_SHAREDPRIMARYLOCKNOTIFICATION callback function notifies the operating system about an upcoming lock to a shared primary surface.
-ms.assetid: ceb858a0-a82b-4649-9a97-884cdf09b822
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_SHAREDPRIMARYLOCKNOTIFICATION callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The PFND3DKMT_SHAREDPRIMARYLOCKNOTIFICATION callback function notifies the opera
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION](ns-d3dkmthk-_d3dkmt_sharedprimarylocknotification.md) structure.
 

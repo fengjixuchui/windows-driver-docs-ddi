@@ -4,7 +4,6 @@ title: PosCxGetPendingEvent function (poscx.h)
 description: PosCxGetPendingEvent is called either from the device read callback, or when a new event arrives.
 old-location: pos\poscxgetpendingevent.htm
 tech.root: pos
-ms.assetid: D68C24E4-DCFB-44F6-92EE-9FF4A1A52841
 ms.date: 02/23/2018
 keywords: ["PosCxGetPendingEvent function"]
 ms.keywords: PosCxGetPendingEvent, PosCxGetPendingEvent function, pos.poscxgetpendingevent, poscx/PosCxGetPendingEvent
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: 
-req.product: Windows 10 or later.
 f1_keywords:
  - PosCxGetPendingEvent
  - poscx/PosCxGetPendingEvent
@@ -53,14 +51,14 @@ It first searches the control pending events database, and then the data pending
 
 ## -parameters
 
-### -param device 
+### -param device [in]
 
-[in]
+
 A handle to a framework device object that represents the device.
 
-### -param request 
+### -param request [in]
 
-[in]
+
 A handle to a framework request object that represents the read request if **PosCxGetPendingEvent** is called from the device read callback.
 
 ## -returns

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl2.Disassemble
 title: IDebugControl2::Disassemble (dbgeng.h)
-description: The Disassemble method disassembles a processor instruction in the target's memory.
+description: The Disassemble method disassembles a processor instruction in the target's memory. This method belongs to the IDebugControl2 interface.
 old-location: debugger\disassemble.htm
 tech.root: debugger
-ms.assetid: a512c846-6896-48ca-a234-b9a30a3bff06
 ms.date: 05/03/2018
 keywords: ["IDebugControl2::Disassemble"]
 ms.keywords: Disassemble, Disassemble method [Windows Debugging], Disassemble method [Windows Debugging],IDebugControl interface, Disassemble method [Windows Debugging],IDebugControl2 interface, Disassemble method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],Disassemble method, IDebugControl2 interface [Windows Debugging],Disassemble method, IDebugControl2.Disassemble, IDebugControl2::Disassemble, IDebugControl3 interface [Windows Debugging],Disassemble method, IDebugControl3::Disassemble, IDebugControl::Disassemble, IDebugControl_7eb9fdc3-f2a0-4239-a035-9abb8e85cd28.xml, dbgeng/IDebugControl2::Disassemble, dbgeng/IDebugControl3::Disassemble, dbgeng/IDebugControl::Disassemble, debugger.disassemble
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.Disassemble
- - IDebugControl2.Disassemble
- - IDebugControl3.Disassemble
+ - IDebugControl2::Disassemble
 ---
 
 # IDebugControl2::Disassemble
@@ -52,34 +49,34 @@ The <b>Disassemble</b>  method disassembles a processor instruction in the targe
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the location in the target's memory of the instruction to disassemble.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies the bit-flags that affect the behavior of this method.  Currently the only flag that can be set is DEBUG_DISASM_EFFECTIVE_ADDRESS; when set, the engine will compute the effective address from the current register information and display it.
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Receives the disassembled instruction.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size, in characters, of the <i>Buffer</i> buffer.
 
-### -param DisassemblySize 
+### -param DisassemblySize [out, optional]
 
-[out, optional]
+
 Receives the size, in characters, of the disassembled instruction.  If <i>DisassemblySize</i> is <b>NULL</b>, this information is not returned.
 
-### -param EndOffset 
+### -param EndOffset [out]
 
-[out]
+
 Receives the location in the target's memory of the instruction following the disassembled instruction.
 
 ## -returns
@@ -146,3 +143,4 @@ For an overview of using assembly in debugger applications, see <a href="/window
 
 
 <a href="/windows-hardware/drivers/debugger/u--unassemble-">u (Unassemble)</a>
+

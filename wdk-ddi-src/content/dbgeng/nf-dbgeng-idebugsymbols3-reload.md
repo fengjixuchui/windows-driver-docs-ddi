@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols3.Reload
 title: IDebugSymbols3::Reload (dbgeng.h)
-description: The Reload method deletes the engine's symbol information for the specified module and reload these symbols as needed.
+description: The Reload method deletes the engine's symbol information for the specified module and reload these symbols as needed. This method belongs to IDebugSymbols3.
 old-location: debugger\reload.htm
 tech.root: debugger
-ms.assetid: f739d5b8-80be-40e3-9139-93342c4fe458
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::Reload"]
 ms.keywords: IDebugSymbols interface [Windows Debugging],Reload method, IDebugSymbols2 interface [Windows Debugging],Reload method, IDebugSymbols2::Reload, IDebugSymbols3 interface [Windows Debugging],Reload method, IDebugSymbols3.Reload, IDebugSymbols3::Reload, IDebugSymbols::Reload, IDebugSymbols_ec5df701-b081-45c4-b2e4-10c101ce69a4.xml, Reload, Reload method [Windows Debugging], Reload method [Windows Debugging],IDebugSymbols interface, Reload method [Windows Debugging],IDebugSymbols2 interface, Reload method [Windows Debugging],IDebugSymbols3 interface, dbgeng/IDebugSymbols2::Reload, dbgeng/IDebugSymbols3::Reload, dbgeng/IDebugSymbols::Reload, debugger.reload
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.Reload
- - IDebugSymbols2.Reload
- - IDebugSymbols3.Reload
+ - IDebugSymbols3::Reload
 ---
 
 # IDebugSymbols3::Reload
@@ -52,9 +49,9 @@ The <b>Reload</b>  method deletes the engine's symbol information for the specif
 
 ## -parameters
 
-### -param Module 
+### -param Module [in]
 
-[in]
+
 Specifies the module to reload.
 
 ## -returns
@@ -101,3 +98,4 @@ For more information about symbols, see <a href="/windows-hardware/drivers/debug
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

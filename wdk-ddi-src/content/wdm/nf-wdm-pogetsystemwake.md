@@ -4,7 +4,6 @@ title: PoGetSystemWake function (wdm.h)
 description: The PoGetSystemWake routine determines whether a specified IRP has been marked as waking the system from a sleeping state.
 old-location: kernel\pogetsystemwake.htm
 tech.root: kernel
-ms.assetid: f2e6bcd6-ed6b-4c88-af96-768284bddb24
 ms.date: 04/30/2018
 keywords: ["PoGetSystemWake function"]
 ms.keywords: PoGetSystemWake, PoGetSystemWake routine [Kernel-Mode Driver Architecture], kernel.pogetsystemwake, portn_0762df5c-0956-4561-9984-83c680bdd764.xml, wdm/PoGetSystemWake
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>PoGetSystemWake</b> routine determines whether a specified IRP has been m
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 A pointer to an IRP.
 
 ## -returns
@@ -67,7 +66,7 @@ A pointer to an IRP.
 <tr>
 <td width="40%">
 <dl>
-<dt><b><b>TRUE</b></b></dt>
+<dt><b>TRUE</b></dt>
 </dl>
 </td>
 <td width="60%">
@@ -78,7 +77,7 @@ The specified IRP did cause the system to wake.
 <tr>
 <td width="40%">
 <dl>
-<dt><b><b>FALSE</b></b></dt>
+<dt><b>FALSE</b></dt>
 </dl>
 </td>
 <td width="60%">

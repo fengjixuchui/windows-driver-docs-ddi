@@ -1,9 +1,8 @@
 ---
-UID: NS:sidebandaudio.__unnamed_union_0
+UID: NS:sidebandaudio.SIDEBANDAUDIO_IO_PARAM_HEADER
 title: SIDEBANDAUDIO_IO_PARAM_HEADER (sidebandaudio.h)
-description: Describes the size and type of parameter.
-ms.assetid: e2f0fc99-4a73-44de-97f3-24f3a3d13b18
-ms.date: 09/07/2018
+description: The SIDEBANDAUDIO_IO_PARAM_HEADER structure describes the size and type of the IO parameter.
+ms.date: 07/21/2023
 keywords: ["SIDEBANDAUDIO_IO_PARAM_HEADER structure"]
 ms.keywords: SIDEBANDAUDIO_IO_PARAM_HEADER, SIDEBANDAUDIO_IO_PARAM_HEADER, *PSIDEBANDAUDIO_IO_PARAM_HEADER,
 req.header: sidebandaudio.h
@@ -34,15 +33,15 @@ api_type:
 api_location:
  - sidebandaudio.h
 api_name:
+ - PSIDEBANDAUDIO_IO_PARAM_HEADER
  - SIDEBANDAUDIO_IO_PARAM_HEADER
 ---
 
 # SIDEBANDAUDIO_IO_PARAM_HEADER structure
 
-
 ## -description
 
-Describes the size and type of parameter.
+The **SIDEBANDAUDIO_IO_PARAM_HEADER** structure describes the size and type of the IO parameter.
 
 ## -struct-fields
 
@@ -60,11 +59,16 @@ Size in bytes of Parameter. In case of IOCTL_SBAUD_GET_SIOPxxx Size will indicat
 
 ### -field Alignment
 
-TBD
+Allows for byte alignment.
 
 ## -remarks
+
+## -requirements
+
+| &nbsp; | &nbsp; |
+| ---- |:---- |
+| **Header** | sidebandaudio.h |
 
 ## -see-also
 
 [sidebandaudio.h](index.md)
-

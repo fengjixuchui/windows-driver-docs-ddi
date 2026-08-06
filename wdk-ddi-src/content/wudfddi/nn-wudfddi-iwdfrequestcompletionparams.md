@@ -4,7 +4,6 @@ title: IWDFRequestCompletionParams (wudfddi.h)
 description: The IWDFRequestCompletionParams interface exposes methods that drivers can use to obtain completion information about an I/O request. Drivers can call these methods after a synchronous or an asynchronous I/O operation completes.
 old-location: wdf\iwdfrequestcompletionparams.htm
 tech.root: wdf
-ms.assetid: f297c6e0-927a-4fb3-bab4-00fdd610a684
 ms.date: 02/26/2018
 keywords: ["IWDFRequestCompletionParams interface"]
 ms.keywords: IWDFRequestCompletionParams, IWDFRequestCompletionParams interface, IWDFRequestCompletionParams interface,described, UMDFRequestObjectRef_746528f7-b23f-4907-8661-e228fa99df1c.xml, umdf.iwdfrequestcompletionparams, wdf.iwdfrequestcompletionparams, wudfddi/IWDFRequestCompletionParams
@@ -52,7 +51,7 @@ The <b>IWDFRequestCompletionParams</b> interface exposes methods that drivers ca
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFRequestCompletionParams</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IWDFRequestCompletionParams</b> also has these types of members:
+The <b>IWDFRequestCompletionParams</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IWDFRequestCompletionParams</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>

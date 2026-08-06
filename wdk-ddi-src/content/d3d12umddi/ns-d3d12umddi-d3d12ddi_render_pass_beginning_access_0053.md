@@ -1,11 +1,8 @@
 ---
 UID: NS:d3d12umddi.D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_0053
 title: D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_0053 (d3d12umddi.h)
-description: Specifies the resources needed to start a Render Pass.
-ms.assetid: 7b1f8655-46af-44a7-9597-15b2f6531bc0
-ms.date: 10/19/2018
-keywords: ["D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_0053 structure"]
-ms.keywords: D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_0053, D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_0053,
+description: Learn more about the D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_0053 structure.
+ms.date: 03/28/2025
 req.header: d3d12umddi.h
 req.include-header: 
 req.target-type: 
@@ -39,22 +36,28 @@ dev_langs:
 
 # D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_0053 structure
 
-
 ## -description
 
-Specifies the resources needed to start a Render Pass.
+The **D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_0053** structure specifies the access to the render target view(s) (RTVs) requested at the transition into a render pass.
 
 ## -struct-fields
 
 ### -field Type
 
-The [D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_TYPE_0053](ne-d3d12umddi-d3d12ddi_render_pass_beginning_access_type_0053.md).
+A [**D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_TYPE_0053**](ne-d3d12umddi-d3d12ddi_render_pass_beginning_access_type_0053.md) value that specifies the type of access being requested. This value determines which union field is used.
 
 ### -field Clear
 
-The [D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_CLEAR_PARAMETERS_0053](ns-d3d12umddi-d3d12ddi_render_pass_beginning_access_clear_parameters_0053.md).
+A [**D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_CLEAR_PARAMETERS_0053**](ns-d3d12umddi-d3d12ddi_render_pass_beginning_access_clear_parameters_0053.md) structure with parameters for a clear operation.
+
+### -field PreserveLocal
+
+A [**D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_PRESERVE_LOCAL_PARAMETERS_0101**](ns-d3d12umddi-d3d12ddi_render_pass_beginning_access_preserve_local_parameters_0101.md) structure with parameters for preserving a local portion of a resource at the beginning of a render pass.
 
 ## -remarks
 
+For more information, see [D3D12 Render Passes](/windows-hardware/drivers/display/d3d12-render-passes).
+
 ## -see-also
 
+[**pfnBeginRenderPass**](nc-d3d12umddi-pfnd3d12ddi_begin_render_pass_0053.md)

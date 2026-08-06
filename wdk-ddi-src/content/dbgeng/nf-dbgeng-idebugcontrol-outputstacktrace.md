@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl.OutputStackTrace
 title: IDebugControl::OutputStackTrace (dbgeng.h)
-description: The OutputStackTrace method outputs either the supplied stack frame or the current stack frames.
+description: Learn how the OutputStackTrace method outputs either the supplied stack frame or the current stack frames.
 old-location: debugger\outputstacktrace.htm
 tech.root: debugger
-ms.assetid: 207f289c-347c-4ae7-9bbd-7c4a04d19e24
 ms.date: 05/03/2018
 keywords: ["IDebugControl::OutputStackTrace"]
 ms.keywords: IDebugControl interface [Windows Debugging],OutputStackTrace method, IDebugControl.OutputStackTrace, IDebugControl2 interface [Windows Debugging],OutputStackTrace method, IDebugControl2::OutputStackTrace, IDebugControl3 interface [Windows Debugging],OutputStackTrace method, IDebugControl3::OutputStackTrace, IDebugControl::OutputStackTrace, IDebugControl_07d53535-7d91-4771-84b1-f4ac4895a158.xml, OutputStackTrace, OutputStackTrace method [Windows Debugging], OutputStackTrace method [Windows Debugging],IDebugControl interface, OutputStackTrace method [Windows Debugging],IDebugControl2 interface, OutputStackTrace method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::OutputStackTrace, dbgeng/IDebugControl3::OutputStackTrace, dbgeng/IDebugControl::OutputStackTrace, debugger.outputstacktrace
@@ -38,13 +37,10 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.OutputStackTrace
- - IDebugControl2.OutputStackTrace
- - IDebugControl3.OutputStackTrace
+ - IDebugControl::OutputStackTrace
 ---
 
 # IDebugControl::OutputStackTrace
-
 
 ## -description
 
@@ -52,24 +48,20 @@ The <b>OutputStackTrace</b> method outputs either the supplied stack frame or th
 
 ## -parameters
 
-### -param OutputControl 
+### -param OutputControl [in]
 
-[in]
 Specifies where to send the output.  For possible values, see <a href="/windows-hardware/drivers/debugger/debug-outctl-xxx">DEBUG_OUTCTL_XXX</a>.
 
-### -param Frames 
+### -param Frames [in, optional]
 
-[in, optional]
 Specifies the array of stack frames to output.  The number of elements in this array is <i>FramesSize</i>.  If <i>Frames</i> is <b>NULL</b>, the current stack frames are used.
 
-### -param FramesSize 
+### -param FramesSize [in]
 
-[in]
 Specifies the number of frames to output.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
 Specifies bit flags that determine what information to output for each frame.  <i>Flags</i> can be any combination of values from the following table.
 
 <table>
@@ -219,22 +211,12 @@ The array of stack frames can be obtained using <a href="/windows-hardware/drive
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol4-getcontextstacktrace">GetContextStackTrace</a>
 
-
-
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getstacktrace">GetStackTrace</a>
-
-
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol">IDebugControl</a>
 
-
-
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol2">IDebugControl2</a>
 
-
-
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
-
-
 
 <a href="/windows-hardware/drivers/debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-">k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)</a>

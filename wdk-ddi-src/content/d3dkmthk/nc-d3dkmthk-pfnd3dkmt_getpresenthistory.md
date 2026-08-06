@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_GETPRESENTHISTORY
 title: PFND3DKMT_GETPRESENTHISTORY (d3dkmthk.h)
 description: Pfnd3dkmtGetpresenthistory retrieves copying history.
-ms.assetid: 1c46273a-6ea5-446e-b4ee-df3213fe9a26
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_GETPRESENTHISTORY callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ Pfnd3dkmtGetpresenthistory retrieves copying history.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_GETPRESENTHISTORY](ns-d3dkmthk-_d3dkmt_getpresenthistory.md) structure.
 

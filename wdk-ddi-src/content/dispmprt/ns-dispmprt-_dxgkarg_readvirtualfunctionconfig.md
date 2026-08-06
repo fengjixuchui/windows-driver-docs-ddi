@@ -3,11 +3,8 @@ UID: NS:dispmprt._DXGKARG_READVIRTUALFUNCTIONCONFIG
 title: _DXGKARG_READVIRTUALFUNCTIONCONFIG
 description: Arguments used to read virtual function config.
 tech.root: display
-ms.assetid: 428800d4-49b5-4b33-a6d0-2167ff511fbb
 ms.date: 04/04/2019
 keywords: ["DXGKARG_READVIRTUALFUNCTIONCONFIG structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _DXGKARG_READVIRTUALFUNCTIONCONFIG, DXGKARG_READVIRTUALFUNCTIONCONFIG, *PDXGKARG_READVIRTUALFUNCTIONCONFIG,
 req.header: dispmprt.h
 req.include-header: 
@@ -39,8 +36,8 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGKARG_READVIRTUALFUNCTIONCONFIG
-product:
- - Windows
+ - PDXGKARG_READVIRTUALFUNCTIONCONFIG
+ - DXGKARG_READVIRTUALFUNCTIONCONFIG
 dev_langs:
  - c++
 ---

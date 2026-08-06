@@ -4,7 +4,6 @@ title: PwmParsePinPath function (pwmutil.h)
 description: Parses a pin path under the Pulse Width Modulation (PWM) controller namespace to validate its format and extract the pin number.
 old-location: kernel\pwmparsepinpath.htm
 tech.root: spb
-ms.assetid: 854A2B6F-A841-4AE4-9E54-68EF048C9504
 ms.date: 04/30/2018
 keywords: ["PwmParsePinPath function"]
 ms.keywords: PwmParsePinPath, PwmParsePinPath function [Kernel-Mode Driver Architecture], kernel.pwmparsepinpath, pwmutil/PwmParsePinPath
@@ -50,14 +49,14 @@ Parses a pin path under the Pulse Width Modulation (PWM) controller namespace to
 
 ## -parameters
 
-### -param PinPath 
+### -param PinPath [in]
 
-[in]
+
 A pointer to pin path as a Unicode character string.
 
-### -param PinNumber 
+### -param PinNumber [out, optional]
 
-[out, optional]
+
 A pointer to variable that receives a pin number.
 
 ## -returns

@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3DWDDM1_3DDI_UPDATETILES
 title: PFND3DWDDM1_3DDI_UPDATETILES (d3d10umddi.h)
 description: Updates tiles by copying from app memory to the tiled resource.
 old-location: display\updatetiles.htm
-ms.assetid: 4891AB01-DE51-4B32-AA52-5619E86CC474
 ms.date: 05/10/2018
 keywords: ["PFND3DWDDM1_3DDI_UPDATETILES callback function"]
 ms.keywords: PFND3DWDDM1_3DDI_UPDATETILES, PFND3DWDDM1_3DDI_UPDATETILES callback, UpdateTiles, UpdateTiles callback function [Display Devices], d3d10umddi/UpdateTiles, display.updatetiles
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - UpdateTiles
-product:
- - Windows
+ - PFND3DWDDM1_3DDI_UPDATETILES
 ---
 
 # PFND3DWDDM1_3DDI_UPDATETILES callback function
@@ -101,3 +98,4 @@ The Direct3D runtime does not expect this function to fail.
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

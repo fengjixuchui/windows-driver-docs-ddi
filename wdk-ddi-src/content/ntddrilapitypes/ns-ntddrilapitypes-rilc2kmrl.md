@@ -4,7 +4,6 @@ title: RILC2KMRL (ntddrilapitypes.h)
 description: This structure represents a RILC2KMRL.
 old-location: netvista\rilc2kmrl.htm
 tech.root: netvista
-ms.assetid: e2c289de-fff7-4e21-8ef5-2ff3006a4ea5
 ms.date: 02/16/2018
 keywords: ["RILC2KMRL structure"]
 ms.keywords: "*LPRILC2KMRL, RILC2KMRL, RILC2KMRL structure [Network Drivers Starting with Windows Vista], netvista.rilc2kmrl, rilapitypes/RILC2KMRL"
@@ -41,6 +40,7 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILC2KMRL
+ - LPRILC2KMRL
 ---
 
 # RILC2KMRL structure (ntddrilapitypes.h)
@@ -112,3 +112,4 @@ struct RILC2KMRL {
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/cellular/dn946511(v=vs.85)">Cellular COM structures</a>
+

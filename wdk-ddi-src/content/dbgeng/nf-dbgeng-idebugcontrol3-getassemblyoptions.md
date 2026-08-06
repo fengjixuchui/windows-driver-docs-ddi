@@ -4,7 +4,6 @@ title: IDebugControl3::GetAssemblyOptions (dbgeng.h)
 description: The GetAssemblyOptions method returns the assembly and disassembly options that affect how the debugger engine assembles and disassembles processor instructions for the target.
 old-location: debugger\getassemblyoptions.htm
 tech.root: debugger
-ms.assetid: 8a3e82e0-4ff3-43ab-954e-a7473de51e5a
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::GetAssemblyOptions"]
 ms.keywords: GetAssemblyOptions, GetAssemblyOptions method [Windows Debugging], GetAssemblyOptions method [Windows Debugging],IDebugControl3 interface, IDebugControl3 interface [Windows Debugging],GetAssemblyOptions method, IDebugControl3.GetAssemblyOptions, IDebugControl3::GetAssemblyOptions, IDebugControl_600ee4dc-0a79-42a9-a394-2ff053874f00.xml, dbgeng/IDebugControl3::GetAssemblyOptions, debugger.getassemblyoptions
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl3.GetAssemblyOptions
+ - IDebugControl3::GetAssemblyOptions
 ---
 
 # IDebugControl3::GetAssemblyOptions
@@ -50,9 +49,9 @@ The <b>GetAssemblyOptions</b> method returns the assembly and disassembly option
 
 ## -parameters
 
-### -param Options 
+### -param Options [out]
 
-[out]
+
 Receives a bit-set that contains the assembly and disassembly options.  For a description of these options, see <a href="/previous-versions/ff541443(v=vs.85)">DEBUG_ASMOPT_XXX</a>.
 
 ## -returns
@@ -112,3 +111,4 @@ For more information about using assembly with the debugger engine API, see <a h
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-setassemblyoptions">SetAssemblyOptions</a>
+

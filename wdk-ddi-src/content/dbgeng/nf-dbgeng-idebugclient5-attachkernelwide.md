@@ -4,7 +4,6 @@ title: IDebugClient5::AttachKernelWide (dbgeng.h)
 description: The AttachKernelWide method connects the debugger engine to a kernel target.
 old-location: debugger\attachkernelwide.htm
 tech.root: debugger
-ms.assetid: 02ddcd45-4848-402b-a0fa-5223b8fde52e
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::AttachKernelWide"]
 ms.keywords: AttachKernelWide, AttachKernelWide method [Windows Debugging], AttachKernelWide method [Windows Debugging],IDebugClient5 interface, IDebugClient5 interface [Windows Debugging],AttachKernelWide method, IDebugClient5.AttachKernelWide, IDebugClient5::AttachKernelWide, dbgeng/IDebugClient5::AttachKernelWide, debugger.attachkernelwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient5.AttachKernelWide
+ - IDebugClient5::AttachKernelWide
 ---
 
 # IDebugClient5::AttachKernelWide
@@ -50,9 +49,9 @@ The <b>AttachKernelWide</b> method connects the <a href="/windows-hardware/drive
 
 ## -parameters
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies the flags that control how the debugger attaches to the kernel target.  The possible values are:
 
 <table>
@@ -82,9 +81,9 @@ Attach to a kernel by using an eXDI driver.
 </tr>
 </table>
 
-### -param ConnectOptions 
+### -param ConnectOptions [in, optional]
 
-[in, optional]
+
 Specifies the connection settings for communicating with the computer running the kernel target.  The interpretation of <i>ConnectOptions</i> depends on the value of <i>Flags</i>.
 
 
@@ -144,3 +143,4 @@ For more information about connecting to live kernel-mode targets, see <a href="
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-iskerneldebuggerenabled">IsKernelDebuggerEnabled</a>
+

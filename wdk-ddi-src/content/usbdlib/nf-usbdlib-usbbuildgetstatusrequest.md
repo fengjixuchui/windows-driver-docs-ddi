@@ -4,7 +4,6 @@ title: UsbBuildGetStatusRequest macro (usbdlib.h)
 description: The UsbBuildGetStatusRequest macro formats an URB to obtain status from a device, interface, endpoint, or other device-defined target on a USB device.
 old-location: buses\usbbuildgetstatusrequest.htm
 tech.root: usbref
-ms.assetid: 7a5fcb4f-fc9a-4ebb-93ef-b83461557b22
 ms.date: 05/07/2018
 keywords: ["UsbBuildGetStatusRequest macro"]
 ms.keywords: UsbBuildGetStatusRequest, UsbBuildGetStatusRequest routine [Buses], buses.usbbuildgetstatusrequest, usbdlib/UsbBuildGetStatusRequest, usbfunc_a99bf737-8bb6-4000-af2b-ac076a4ffc8e.xml
@@ -50,14 +49,14 @@ api_name:
 
 ## -parameters
 
-### -param urb 
+### -param urb [in, out]
 
-[in, out]
-Pointer to an <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_urb">URB</a> to be formatted as an status request.
 
-### -param op 
+Pointer to an <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_urb">URB</a> to be formatted as a status request.
 
-[in]
+### -param op [in]
+
+
 Specifies one of the following values:
 
 
@@ -86,24 +85,24 @@ Retrieves status from an endpoint for an interface on a USB device.
 
 Retrieves status from a device-defined target on a USB device.
 
-### -param index 
+### -param index [in]
 
-[in]
+
 Specifies the device-defined index, returned by a successful configuration request, if the request is for an endpoint or interface. Otherwise, <i>Index</i> must be zero.
 
-### -param transferBuffer 
+### -param transferBuffer [in, optional]
 
-[in, optional]
+
 Pointer to a resident buffer to receive the status data or is <b>NULL</b> if an MDL is supplied in <i>TransferBufferMDL</i>.
 
-### -param transferBufferMDL 
+### -param transferBufferMDL [in, optional]
 
-[in, optional]
+
 Pointer to an MDL that describes a resident buffer to receive the status data or is <b>NULL</b> if a buffer is supplied in <i>TransferBuffer</i>.
 
-### -param link 
+### -param link [in]
 
-[in]
+
 Reserved. Must be set to <b>NULL</b>.
 
 ## -see-also

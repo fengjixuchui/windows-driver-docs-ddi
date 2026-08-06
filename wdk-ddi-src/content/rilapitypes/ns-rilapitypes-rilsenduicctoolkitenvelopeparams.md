@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILSENDUICCTOOLKITENVELOPEPARAMS
 title: RILSENDUICCTOOLKITENVELOPEPARAMS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILSENDUICCTOOLKITENVELOPEPARAMS structure for internal use only."
 old-location: netvista\rilsenduicctoolkitenvelopeparams.htm
 tech.root: netvista
-ms.assetid: df1ce4d6-e335-4ffa-8e37-85221eb57521
 ms.date: 05/02/2018
 keywords: ["RILSENDUICCTOOLKITENVELOPEPARAMS structure"]
 ms.keywords: "*LPRILSENDUICCTOOLKITENVELOPEPARAMS, RILSENDUICCTOOLKITENVELOPEPARAMS, RILSENDUICCTOOLKITENVELOPEPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsenduicctoolkitenvelopeparams, ntddrilapitypes/RILSENDUICCTOOLKITENVELOPEPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSENDUICCTOOLKITENVELOPEPARAMS
+ - LPRILSENDUICCTOOLKITENVELOPEPARAMS
 ---
 
 # RILSENDUICCTOOLKITENVELOPEPARAMS structure (rilapitypes.h)

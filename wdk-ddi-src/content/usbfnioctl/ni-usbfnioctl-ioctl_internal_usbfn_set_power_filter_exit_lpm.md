@@ -1,10 +1,9 @@
 ---
 UID: NI:usbfnioctl.IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM
 title: IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM (usbfnioctl.h)
-description: Do not use.
+description: Do not use this (IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM) article.
 old-location: buses\ioctl_internal_usbfn_set_power_filter_exit_lpm.htm
 tech.root: usbref
-ms.assetid: 2A3A1723-989E-44FD-9727-7A01218652D1
 ms.date: 05/07/2018
 keywords: ["IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM IOCTL"]
 ms.keywords: IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM, IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM control, IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM control code [Buses], buses.ioctl_internal_usbfn_set_power_filter_exit_lpm, usbfnioctl/IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM
@@ -49,6 +48,10 @@ api_name:
 Do not use.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
+
+[IRP_MJ_INTERNAL_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
 ### -input-buffer
 

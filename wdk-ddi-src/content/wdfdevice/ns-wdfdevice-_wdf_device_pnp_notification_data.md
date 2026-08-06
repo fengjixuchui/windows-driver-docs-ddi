@@ -4,7 +4,6 @@ title: _WDF_DEVICE_PNP_NOTIFICATION_DATA (wdfdevice.h)
 description: The WDF_DEVICE_PNP_NOTIFICATION_DATA structure describes a state change within a device's Plug and Play state machine.
 old-location: wdf\wdf_device_pnp_notification_data.htm
 tech.root: wdf
-ms.assetid: b49431bf-4b44-4d7b-b3a6-c3d7416bcb53
 ms.date: 02/26/2018
 keywords: ["WDF_DEVICE_PNP_NOTIFICATION_DATA structure"]
 ms.keywords: DFDeviceObjectGeneralRef_92c66935-afca-4567-bc55-cb3e3822201e.xml, WDF_DEVICE_PNP_NOTIFICATION_DATA, WDF_DEVICE_PNP_NOTIFICATION_DATA structure, _WDF_DEVICE_PNP_NOTIFICATION_DATA, kmdf.wdf_device_pnp_notification_data, wdf.wdf_device_pnp_notification_data, wdfdevice/WDF_DEVICE_PNP_NOTIFICATION_DATA
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfdevice.h
 api_name:
+ - _WDF_DEVICE_PNP_NOTIFICATION_DATA
  - WDF_DEVICE_PNP_NOTIFICATION_DATA
 ---
 
@@ -49,6 +49,9 @@ api_name:
 ## -description
 
 <p class="CCE_Message">[Applies to KMDF only]</p>
+
+>[!NOTE]
+>This structure is for Microsoft internal use only.
 
 The WDF_DEVICE_PNP_NOTIFICATION_DATA structure describes a state change within a device's Plug and Play state machine.
 
@@ -99,3 +102,4 @@ The WDF_DEVICE_PNP_NOTIFICATION_DATA structure is an input argument to a driver'
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitregisterpnpstatechangecallback">WdfDeviceInitRegisterPnpStateChangeCallback</a>
+

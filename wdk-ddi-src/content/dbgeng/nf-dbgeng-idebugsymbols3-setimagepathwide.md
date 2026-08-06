@@ -4,7 +4,6 @@ title: IDebugSymbols3::SetImagePathWide (dbgeng.h)
 description: The SetImagePathWide method sets the executable image path.
 old-location: debugger\setimagepathwide.htm
 tech.root: debugger
-ms.assetid: 0675dce8-4724-4880-b311-204fbb6fe194
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::SetImagePathWide"]
 ms.keywords: IDebugSymbols3 interface [Windows Debugging],SetImagePathWide method, IDebugSymbols3.SetImagePathWide, IDebugSymbols3::SetImagePathWide, SetImagePathWide, SetImagePathWide method [Windows Debugging], SetImagePathWide method [Windows Debugging],IDebugSymbols3 interface, dbgeng/IDebugSymbols3::SetImagePathWide, debugger.setimagepathwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols3.SetImagePathWide
+ - IDebugSymbols3::SetImagePathWide
 ---
 
 # IDebugSymbols3::SetImagePathWide
@@ -50,9 +49,9 @@ The <b>SetImagePathWide</b>  method sets the executable image path.
 
 ## -parameters
 
-### -param Path 
+### -param Path [in]
 
-[in]
+
 Specifies the new executable image path.  This is a string that contains directories separated by semicolons (;).
 
 ## -returns
@@ -94,3 +93,4 @@ The executable image path can consist of several directories separated by semico
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

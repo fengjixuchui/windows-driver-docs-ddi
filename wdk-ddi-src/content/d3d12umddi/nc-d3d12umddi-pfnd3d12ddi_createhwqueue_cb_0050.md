@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_CREATEHWQUEUE_CB_0050
 title: PFND3D12DDI_CREATEHWQUEUE_CB_0050 (d3d12umddi.h)
 description: Creates a hardware queue associated with a command queue.
-ms.assetid: d10f77b2-d116-41ab-918e-539c9a0ec528
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CREATEHWQUEUE_CB_0050 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CREATEHWQUEUE_CB_0050
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -55,7 +52,7 @@ Creates a hardware queue associated with a command queue.
 
 The handle of the command queue for the driver to use when it calls back into the runtime.
 
-### -param Arg2
+### -param unnamedParam2
 
 Pointer to a [D3DDDICB_CREATEHWQUEUE](../d3dumddi/ns-d3dumddi-_d3dddicb_createhwqueue.md) structure that contains information needed to create a hardware queue.
 

@@ -4,7 +4,6 @@ title: PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK (dbgeng.h)
 description: The ReconstructStack callback function queries dump stream provider on a per-thread basis.
 old-location: debugger\reconstructstack.htm
 tech.root: debugger
-ms.assetid: 639A90E8-4B2D-413B-B6F9-078C9DF1B02F
 ms.date: 05/03/2018
 keywords: ["PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK callback function"]
 ms.keywords: PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK, PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK callback, ReconstructStack, ReconstructStack callback function [Windows Debugging], dbgeng/ReconstructStack, debugger.reconstructstack
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - ReconstructStack
+ - PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK
 ---
 
 # PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK callback function
@@ -52,32 +51,31 @@ The <i>ReconstructStack</i> callback function queries dump stream provider on a 
  CALLBACK* PDEBUG_STACK_PROVIDER_RECONSTRUCTSTACK ReconstructStack;
 ```
 
-
 ## -parameters
 
-### -param SystemThreadId 
+### -param SystemThreadId [in]
 
-[in]
+
 A system thread ID.
 
-### -param NativeFrames 
+### -param NativeFrames [in]
 
-[in]
+
 Native frames.
 
-### -param CountNativeFrames 
+### -param CountNativeFrames [in]
 
-[in]
+
 Specifies the number of native frames.
 
-### -param StackSymFrames 
+### -param StackSymFrames [out]
 
-[out]
+
 A pointer to a symbol frames stack.
 
-### -param StackSymFramesFilled 
+### -param StackSymFramesFilled [out]
 
-[out]
+
 Symbol frames stack filled value.
 
 ## -returns

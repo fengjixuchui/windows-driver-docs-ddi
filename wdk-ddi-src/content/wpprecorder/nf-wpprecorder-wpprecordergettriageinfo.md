@@ -1,11 +1,10 @@
 ---
 UID: NF:wpprecorder.WppRecorderGetTriageInfo
 title: WppRecorderGetTriageInfo macro (wpprecorder.h)
-description: The WppRecorderGetTriageInfo.
+description: Learn about the WppRecorderGetTriageInfo method.
 old-location: devtest\wpprecordergettriageinfo.htm
 tech.root: devtest
-ms.assetid: D2790496-1F86-4EF0-8AFE-77AC0C89EE05
-ms.date: 01/10/2018
+ms.date: 04/19/2022
 keywords: ["WppRecorderGetTriageInfo macro"]
 ms.keywords: WppRecorderGetTriageInfo
 req.header: wpprecorder.h
@@ -28,7 +27,6 @@ req.lib:
 req.dll: 
 req.irql: 
 req.typenames: WNODE_HEADER, *PWNODE_HEADER
-req.product: Windows 10 or later.
 targetos: Windows
 f1_keywords:
  - WppRecorderGetTriageInfo
@@ -41,7 +39,7 @@ api_type:
 api_location:
  - Wpprecorder.h
 api_name:
- - imp_WppRecorderGetTriageInfo
+ - WppRecorderGetTriageInfo
 ---
 
 # WppRecorderGetTriageInfo macro
@@ -49,22 +47,24 @@ api_name:
 
 ## -description
 
-The <b>WppRecorderGetTriageInfo</b> method
-
-## -parameters
-
-### -param WppTriageInfo 
-
-[out]
-Pointer to a <a href="..\wpprecorder\ns-wpprecorder-_wpp_triage_info.md">WPP_TRIAGE_INFO</a> structure.
+The <b>WppRecorderGetTriageInfo</b> method returns the WPP log for WER reporting.
 
 ## -syntax
 
 ```cpp
+__drv_maxIRQL(DISPATCH_LEVEL)
 NTSTATUS WppRecorderGetTriageInfo(
   _Out_ PWPP_TRIAGE_INFO WppTriageInfo
 );
 ```
 
+## -parameters
+
+### -param WppTriageInfo [out]
+
+
+Pointer to a <a href="..\wpprecorder\ns-wpprecorder-_wpp_triage_info.md">WPP_TRIAGE_INFO</a> structure.
+
 ## -remarks
 
+Returns STATUS_SUCCESS if the operation succeeds. Otherwise, one of appropriate <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS</a> values

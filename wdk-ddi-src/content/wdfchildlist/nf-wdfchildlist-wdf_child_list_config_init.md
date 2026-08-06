@@ -4,7 +4,6 @@ title: WDF_CHILD_LIST_CONFIG_INIT function (wdfchildlist.h)
 description: The WDF_CHILD_LIST_CONFIG_INIT function initializes a WDF_CHILD_LIST_CONFIG structure.
 old-location: wdf\wdf_child_list_config_init.htm
 tech.root: wdf
-ms.assetid: d222f2f3-554f-43d5-97c5-9a56fdb42ec3
 ms.date: 02/26/2018
 keywords: ["WDF_CHILD_LIST_CONFIG_INIT function"]
 ms.keywords: DFDeviceObjectChildListRef_b5fea12e-3e5b-4ec7-8e9d-0e385047cbdc.xml, WDF_CHILD_LIST_CONFIG_INIT, WDF_CHILD_LIST_CONFIG_INIT function, kmdf.wdf_child_list_config_init, wdf.wdf_child_list_config_init, wdfchildlist/WDF_CHILD_LIST_CONFIG_INIT
@@ -52,19 +51,19 @@ The <b>WDF_CHILD_LIST_CONFIG_INIT</b> function initializes a <a href="/windows-h
 
 ## -parameters
 
-### -param Config 
+### -param Config [out]
 
-[out]
+
 A pointer to a driver-allocated <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_list_config">WDF_CHILD_LIST_CONFIG</a> structure.
 
-### -param IdentificationDescriptionSize 
+### -param IdentificationDescriptionSize [in]
 
-[in]
+
 The size, in bytes, of each child device's <a href="/windows-hardware/drivers/wdf/dynamic-enumeration">identification description</a>.
 
-### -param EvtChildListCreateDevice 
+### -param EvtChildListCreateDevice [in]
 
-[in]
+
 The address of a driver-supplied <a href="/windows-hardware/drivers/ddi/wdfchildlist/nc-wdfchildlist-evt_wdf_child_list_create_device">EvtChildListCreateDevice</a> event callback function.
 
 ## -remarks

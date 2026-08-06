@@ -1,17 +1,16 @@
 ---
 UID: NF:ntifs.KeGetProcessorIndexFromNumber
 title: KeGetProcessorIndexFromNumber function (ntifs.h)
-description: The KeGetProcessorIndexFromNumber routine converts a group number and a group-relative processor number to a systemwide processor index.
+description: The KeGetProcessorIndexFromNumber routine in ntifs.h converts a group number and a group-relative processor number to a systemwide processor index.
 old-location: kernel\kegetprocessorindexfromnumber.htm
 tech.root: kernel
-ms.assetid: c7d8ca52-a1e1-4f5f-9ffe-d64cec47eac7
 ms.date: 04/30/2018
 keywords: ["KeGetProcessorIndexFromNumber function"]
 ms.keywords: KeGetProcessorIndexFromNumber, KeGetProcessorIndexFromNumber routine [Kernel-Mode Driver Architecture], k105_57b362f6-81dc-4630-a940-0d91577bf886.xml, kernel.kegetprocessorindexfromnumber, wdm/KeGetProcessorIndexFromNumber
 req.header: ntifs.h
 req.include-header: Wdm.h, Ntddk.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows 7 and later versions of Windows.
+req.target-min-winverclnt: Windows 7
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,9 +49,9 @@ The <b>KeGetProcessorIndexFromNumber</b> routine converts a group number and a g
 
 ## -parameters
 
-### -param ProcNumber 
+### -param ProcNumber [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/miniport/ns-miniport-_processor_number">PROCESSOR_NUMBER</a> structure that contains a group number and a group-relative processor number.
 
 ## -returns

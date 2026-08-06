@@ -4,7 +4,6 @@ title: IWDFIoQueue::GetState (wudfddi.h)
 description: The GetState method retrieves the state of an I/O queue.
 old-location: wdf\iwdfioqueue_getstate.htm
 tech.root: wdf
-ms.assetid: 42dc9bbe-b00d-4187-ab07-0c268a061298
 ms.date: 02/26/2018
 keywords: ["IWDFIoQueue::GetState"]
 ms.keywords: GetState, GetState method, GetState method,IWDFIoQueue interface, IWDFIoQueue interface,GetState method, IWDFIoQueue.GetState, IWDFIoQueue::GetState, UMDFQueueObjectRef_81051128-228b-476a-b27f-5c542558d8a8.xml, umdf.iwdfioqueue_getstate, wdf.iwdfioqueue_getstate, wudfddi/IWDFIoQueue::GetState
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoQueue.GetState
+ - IWDFIoQueue::GetState
 ---
 
 # IWDFIoQueue::GetState
@@ -52,14 +51,14 @@ The <b>GetState</b> method retrieves the state of an I/O queue.
 
 ## -parameters
 
-### -param pulNumOfRequestsInQueue 
+### -param pulNumOfRequestsInQueue [out]
 
-[out]
+
 A pointer to a variable that receives the number of I/O requests that are currently in the I/O queue (that is, that have not been delivered to the driver).
 
-### -param pulNumOfRequestsInDriver 
+### -param pulNumOfRequestsInDriver [out]
 
-[out]
+
 A pointer to a variable that receives the number of I/O requests that the driver accepted from the I/O queue but that the driver has not completed, canceled, or forwarded to another I/O queue.
 
 ## -returns
@@ -77,3 +76,4 @@ The total number of requests that are associated with the I/O queue is the sum o
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_io_queue_state">WDF_IO_QUEUE_STATE</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.InterlockedOr
 title: InterlockedOr function (wdm.h)
-description: The InterlockedOr routine atomically computes a bitwise OR operation.
+description: The InterlockedOr function (wdm.h) atomically computes a bitwise OR operation with the specified variable and specified value.
 old-location: kernel\interlockedor.htm
 tech.root: kernel
-ms.assetid: 1f66d3ed-7215-4fb5-87df-4489c3cd03c6
 ms.date: 04/30/2018
 keywords: ["InterlockedOr function"]
 ms.keywords: InterlockedOr, InterlockedOr routine [Kernel-Mode Driver Architecture], k102_05d8ca48-ab6f-46ae-b026-cb2aaf6f37aa.xml, kernel.interlockedor, wdm/InterlockedOr
@@ -50,14 +49,14 @@ The <b>InterlockedOr</b> routine atomically computes a bitwise OR operation.
 
 ## -parameters
 
-### -param Destination 
+### -param Destination [in, out]
 
-[in, out]
+
 A pointer to the variable to be ORed with <i>Value</i>. The result of the operation is stored in the variable.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies the value to be ORed with the variable that is pointed to by <i>Destination</i>.
 
 ## -returns

@@ -4,7 +4,6 @@ title: PROTOCOL_CL_INCOMING_CALL (ndis.h)
 description: The ProtocolClIncomingCall function is used by connection-oriented clients that accept incoming calls.
 old-location: netvista\protocolclincomingcall.htm
 tech.root: netvista
-ms.assetid: 8a5922ac-b22b-444e-9ea0-3bb56e71ef33
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CL_INCOMING_CALL callback function"]
 ms.keywords: PROTOCOL_CL_INCOMING_CALL, PROTOCOL_CL_INCOMING_CALL callback, ProtocolClIncomingCall, ProtocolClIncomingCall callback function [Network Drivers Starting with Windows Vista], condis_client_ref_8c9188c3-7134-4fab-a9c7-67862e881054.xml, ndis/ProtocolClIncomingCall, netvista.protocolclincomingcall
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolClIncomingCall
+ - PROTOCOL_CL_INCOMING_CALL
 ---
 
 # PROTOCOL_CL_INCOMING_CALL callback function
@@ -56,21 +55,21 @@ The
 
 ## -parameters
 
-### -param ProtocolSapContext 
+### -param ProtocolSapContext [in]
 
-[in]
+
 Specifies the handle that the client originally supplied when it registered the SAP, which the
      call manager matched to this incoming call offer.
 
-### -param ProtocolVcContext 
+### -param ProtocolVcContext [in]
 
-[in]
+
 Specifies the handle to the client's per-VC context area, previously returned to NDIS by its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_create_vc">ProtocolCoCreateVc</a> function.
 
-### -param CallParameters 
+### -param CallParameters [in, out]
 
-[in, out]
+
 Pointer to a buffer, formatted as a 
      <a href="/previous-versions/windows/hardware/network/ff545384(v=vs.85)">CO_CALL_PARAMETERS</a> structure, that contains
      the call parameters for this offered call.
@@ -209,3 +208,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_delete_vc">ProtocolCoDeleteVc</a>
+

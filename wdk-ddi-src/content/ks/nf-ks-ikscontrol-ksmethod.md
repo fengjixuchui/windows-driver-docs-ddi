@@ -4,7 +4,6 @@ title: IKsControl::KsMethod (ks.h)
 description: The IKsControl::KsMethod method sends a method to a KS object, together with any other defined support operations available on a method set.
 old-location: stream\ikscontrol_ksmethod2.htm
 tech.root: stream
-ms.assetid: 75100366-ba79-4ff2-b8e0-64c5c3f5f3b9
 ms.date: 04/23/2018
 keywords: ["IKsControl::KsMethod"]
 ms.keywords: IKsControl interface [Streaming Media Devices],KsMethod method, IKsControl.KsMethod, IKsControl::KsMethod, KsMethod, KsMethod method [Streaming Media Devices], KsMethod method [Streaming Media Devices],IKsControl interface, avintfc_6cf0dd96-36e2-4d0a-8bb8-f2f49ab9eb1f.xml, ks/IKsControl::KsMethod, stream.ikscontrol_ksmethod2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - IKsControl.KsMethod
+ - IKsControl::KsMethod
 ---
 
 # IKsControl::KsMethod (ks.h)
@@ -50,29 +49,29 @@ The <b>IKsControl::KsMethod</b> method sends a method to a KS object, together w
 
 ## -parameters
 
-### -param Method 
+### -param Method [in]
 
-[in]
-Pointer to a <a href="/previous-versions/ff563398(v=vs.85)">KSMETHOD</a> structure that describes a method and the request type of the method request.
 
-### -param MethodLength 
+Pointer to a <a href="/windows-hardware/drivers/stream/ksmethod-structure">KSMETHOD</a> structure that describes a method and the request type of the method request.
 
-[in]
+### -param MethodLength [in]
+
+
 Specifies size, in bytes, of the buffer at <i>Method</i>.
 
-### -param MethodData 
+### -param MethodData [in, out]
 
-[in, out]
+
 Pointer to a buffer that contains data and buffer space for a KSMETHOD_TYPE_SEND operation, or buffer space that receives data for all other operations.
 
-### -param DataLength 
+### -param DataLength [in]
 
-[in]
+
 Specifies size, in bytes, of the buffer at <i>MethodData</i>.
 
-### -param BytesReturned 
+### -param BytesReturned [out]
 
-[out]
+
 Pointer to a variable that receives the size, in bytes, of the data that <b>KsMethod</b> stores in the buffer at <i>MethodData</i>.
 
 ## -returns
@@ -85,7 +84,7 @@ To determine the buffer size that is required for a specific method request, you
 
 ## -see-also
 
-<a href="/previous-versions/ff563398(v=vs.85)">KSMETHOD</a>
+<a href="/windows-hardware/drivers/stream/ksmethod-structure">KSMETHOD</a>
 
 
 
@@ -94,3 +93,4 @@ To determine the buffer size that is required for a specific method request, you
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksmethod_set">KSMETHOD_SET</a>
+

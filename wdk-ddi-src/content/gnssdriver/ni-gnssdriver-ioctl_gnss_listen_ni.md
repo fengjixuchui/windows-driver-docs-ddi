@@ -4,7 +4,6 @@ title: IOCTL_GNSS_LISTEN_NI (gnssdriver.h)
 description: The IOCTL_GNSS_LISTEN_NI control code is used to start listening for a SUPL NI request.
 old-location: gnss\ioctl_gnss_listen_ni.htm
 tech.root: gnss
-ms.assetid: DDC85717-7CF7-421D-9521-09E272FFFCF0
 ms.date: 02/15/2018
 keywords: ["IOCTL_GNSS_LISTEN_NI IOCTL"]
 ms.keywords: IOCTL_GNSS_LISTEN_NI, IOCTL_GNSS_LISTEN_NI control, IOCTL_GNSS_LISTEN_NI control code [Sensor Devices], gnss.ioctl_gnss_listen_ni, gnssdriver/IOCTL_GNSS_LISTEN_NI
@@ -51,6 +50,8 @@ The <b>IOCTL_GNSS_LISTEN_NI</b> control code is used to start listening for a SU
 This IOCTL effectively provides the GNSS driver with a pending I/O request that it can use to, through the overlapped structures GnssEvent member, convey the NI request to the adapter. The GnssEvent member is a <a href="/windows-hardware/drivers/ddi/gnssdriver/ns-gnssdriver-gnss_event">GNSS_EVENT</a> structure. The adapter ensures that this request is always pending and will issue a new request as soon as the pending one is resolved. When the I/O request is resolved the adapter will issue a corresponding <a href="/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_respond_ni">IOCTL_GNSS_RESPOND_NI</a>.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

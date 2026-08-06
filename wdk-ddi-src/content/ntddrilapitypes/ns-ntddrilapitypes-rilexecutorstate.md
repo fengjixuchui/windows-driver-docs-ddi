@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILEXECUTORSTATE
 title: RILEXECUTORSTATE (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILEXECUTORSTATE structure for internal use only. Don't use the RILEXECUTORSTATE structure in your code."
 old-location: netvista\rilexecutorstate.htm
 tech.root: netvista
-ms.assetid: 3d820c24-6f07-4ba2-b2e3-f3c799c6a1ef
 ms.date: 05/02/2018
 keywords: ["RILEXECUTORSTATE structure"]
 ms.keywords: "*LPRILEXECUTORSTATE, RILEXECUTORSTATE, RILEXECUTORSTATE structure [Network Drivers Starting with Windows Vista], netvista.rilexecutorstate, ntddrilapitypes/RILEXECUTORSTATE"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILEXECUTORSTATE
+ - LPRILEXECUTORSTATE
 ---
 
 # RILEXECUTORSTATE structure (ntddrilapitypes.h)

@@ -4,7 +4,6 @@ title: _MM_COPY_ADDRESS (ntddk.h)
 description: The MM_COPY_ADDRESS structure contains either a virtual memory address or a physical memory address.
 old-location: kernel\mm_copy_address.htm
 tech.root: kernel
-ms.assetid: 9C9A0D46-587C-43F3-808E-38E81CE3EE50
 ms.date: 04/30/2018
 keywords: ["MM_COPY_ADDRESS structure"]
 ms.keywords: "*PMMCOPY_ADDRESS, MM_COPY_ADDRESS, MM_COPY_ADDRESS structure [Kernel-Mode Driver Architecture], PMM_COPY_ADDRESS, PMM_COPY_ADDRESS structure pointer [Kernel-Mode Driver Architecture], _MM_COPY_ADDRESS, kernel.mm_copy_address, ntddk/MM_COPY_ADDRESS, ntddk/PMM_COPY_ADDRESS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddk.h
 api_name:
+ - _MM_COPY_ADDRESS
+ - PMMCOPY_ADDRESS
  - MM_COPY_ADDRESS
 ---
 
@@ -56,26 +57,9 @@ The <b>MM_COPY_ADDRESS</b> structure contains either a virtual memory address or
 
 ### -field VirtualAddress
 
-### -field PhysicalAddress
-
- 
-
-
-
-
-#### - ( unnamed union )
-
-Either a virtual address or a physical address.
-
-
-
-#### VirtualAddress
-
 A virtual memory address.
 
-
-
-#### PhysicalAddress
+### -field PhysicalAddress
 
 A physical memory address.
 
@@ -86,3 +70,4 @@ This structure is used by the <a href="/windows-hardware/drivers/ddi/ntddk/nf-nt
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmcopymemory">MmCopyMemory</a>
+

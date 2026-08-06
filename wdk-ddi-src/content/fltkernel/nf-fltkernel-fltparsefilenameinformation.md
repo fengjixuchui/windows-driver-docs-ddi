@@ -4,7 +4,6 @@ title: FltParseFileNameInformation function (fltkernel.h)
 description: FltParseFileNameInformation parses the contents of a FLT_FILE_NAME_INFORMATION structure.
 old-location: ifsk\fltparsefilenameinformation.htm
 tech.root: ifsk
-ms.assetid: f588f59b-5efa-4783-bb45-935b91c69cb5
 ms.date: 04/16/2018
 keywords: ["FltParseFileNameInformation function"]
 ms.keywords: FltApiRef_p_to_z_37671009-fb66-4dba-ae61-23801aef9f21.xml, FltParseFileNameInformation, FltParseFileNameInformation function [Installable File System Drivers], fltkernel/FltParseFileNameInformation, ifsk.fltparsefilenameinformation
@@ -50,9 +49,9 @@ api_name:
 
 ## -parameters
 
-### -param FileNameInformation 
+### -param FileNameInformation [in, out]
 
-[in, out]
+
 Pointer to an <a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_file_name_information">FLT_FILE_NAME_INFORMATION</a> structure returned by a previous call to <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetdestinationfilenameinformation">FltGetDestinationFileNameInformation</a>, <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetfilenameinformation">FltGetFileNameInformation</a>, <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgetfilenameinformationunsafe">FltGetFileNameInformationUnsafe</a>, or <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltgettunneledname">FltGetTunneledName</a>. This parameter is required and cannot be <b>NULL</b>.
 
 ## -returns

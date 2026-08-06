@@ -4,7 +4,6 @@ title: WdfUsbTargetPipeWriteSynchronously function (wdfusb.h)
 description: The WdfUsbTargetPipeWriteSynchronously method builds a write request and sends it synchronously to a specified USB output pipe.
 old-location: wdf\wdfusbtargetpipewritesynchronously.htm
 tech.root: wdf
-ms.assetid: 5513a245-0417-42f7-9c01-99b8bd5745eb
 ms.date: 02/26/2018
 keywords: ["WdfUsbTargetPipeWriteSynchronously function"]
 ms.keywords: DFUsbRef_9d78fb7e-eaf6-4d86-8376-4c68a1ab6ab9.xml, WdfUsbTargetPipeWriteSynchronously, WdfUsbTargetPipeWriteSynchronously method, kmdf.wdfusbtargetpipewritesynchronously, wdf.wdfusbtargetpipewritesynchronously, wdfusb/WdfUsbTargetPipeWriteSynchronously
@@ -55,29 +54,29 @@ The <b>WdfUsbTargetPipeWriteSynchronously</b> method builds a write request and 
 
 ## -parameters
 
-### -param Pipe 
+### -param Pipe [in]
 
-[in]
+
 A handle to a framework pipe object that was obtained by calling <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbinterfacegetconfiguredpipe">WdfUsbInterfaceGetConfiguredPipe</a>.
 
-### -param Request 
+### -param Request [in, optional]
 
-[in, optional]
+
 A handle to a framework request object. This parameter is optional and can be <b>NULL</b>. For more information, see the following Remarks section.
 
-### -param RequestOptions 
+### -param RequestOptions [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfrequest/ns-wdfrequest-_wdf_request_send_options">WDF_REQUEST_SEND_OPTIONS</a> structure that specifies options for the request. This pointer is optional and can be <b>NULL</b>. For more information, see the following Remarks section.
 
-### -param MemoryDescriptor 
+### -param MemoryDescriptor [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfmemory/ns-wdfmemory-_wdf_memory_descriptor">WDF_MEMORY_DESCRIPTOR</a> structure that describes the buffer that contains data that will be written to the device. For more information about this buffer, see the following Remarks section.
 
-### -param BytesWritten 
+### -param BytesWritten [out, optional]
 
-[out, optional]
+
 A pointer to a location that receives the number of bytes written, if the operation succeeds. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

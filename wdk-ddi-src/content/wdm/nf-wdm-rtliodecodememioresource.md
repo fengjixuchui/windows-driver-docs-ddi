@@ -4,7 +4,6 @@ title: RtlIoDecodeMemIoResource function (wdm.h)
 description: The RtlIoDecodeMemIoResource routine provides the address information that is contained in an IO_RESOURCE_DESCRIPTOR structure that describes a range of memory or I/O port addresses.
 old-location: kernel\rtliodecodememioresource.htm
 tech.root: kernel
-ms.assetid: a6bdbd68-b4ec-467f-9892-e968243e8994
 ms.date: 04/30/2018
 keywords: ["RtlIoDecodeMemIoResource function"]
 ms.keywords: RtlIoDecodeMemIoResource, RtlIoDecodeMemIoResource routine [Kernel-Mode Driver Architecture], k109_27e29ad7-3e41-44ad-b3da-027180f51d2a.xml, kernel.rtliodecodememioresource, wdm/RtlIoDecodeMemIoResource
@@ -50,24 +49,24 @@ The <b>RtlIoDecodeMemIoResource</b> routine provides the address information tha
 
 ## -parameters
 
-### -param Descriptor 
+### -param Descriptor [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a> structure to provide the address information for.
 
-### -param Alignment 
+### -param Alignment [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives the alignment, in bytes, of the address range. This parameter can be <b>NULL</b>.
 
-### -param MinimumAddress 
+### -param MinimumAddress [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives the minimum address of the address range. This parameter can be <b>NULL</b>.
 
-### -param MaximumAddress 
+### -param MaximumAddress [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives the maximum address of the address range. This parameter can be <b>NULL</b>.
 
 ## -returns

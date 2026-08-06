@@ -3,11 +3,8 @@ UID: NC:hdaudio.PREGISTER_NOTIFICATION_CALLBACK
 title: PREGISTER_NOTIFICATION_CALLBACK
 description: The RegisterNotificationCallback routine registers a callback routine so that it can receive DMA progress notifications with more accurate timing information.
 tech.root: audio
-ms.assetid: 453c5313-24a0-4009-98bd-9bba2a546a75
 ms.date: 04/29/2019
 keywords: ["PREGISTER_NOTIFICATION_CALLBACK callback function"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: hdaudio.h
 req.include-header: hdaudio.h
 req.target-type: 
@@ -38,8 +35,6 @@ api_location:
  - hdaudio.h
 api_name:
  - PREGISTER_NOTIFICATION_CALLBACK
-product:
- - Windows
 ---
 
 # PREGISTER_NOTIFICATION_CALLBACK callback function
@@ -81,7 +76,7 @@ For more information, see [NTSTATUS Values](/windows-hardware/drivers/kernel/nts
 
 The function pointer type for a RegisterNotificationCallback routine is defined as follows.
 
-```
+```cpp
 //Declaration
 
 PREGISTER_NOTIFICATION_CALLBACK PRegisterNotificationCallback; 
@@ -111,7 +106,5 @@ The HD Audio bus driver will maintain a reference on the FDO after registration 
 ## -see-also
 
 [HDAUDIO_BUS_INTERFACE_V3](ns-hdaudio-_hdaudio_bus_interface_v3.md)
-
-[PREGISTER_NOTIFICATION_CALLBACK callback function](nc-hdaudio-pregister_notification_callback.md)
 
 [hdaudio.h](../hdaudio/index.md)

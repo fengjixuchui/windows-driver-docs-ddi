@@ -1,11 +1,10 @@
 ---
 UID: NC:ucxendpoint.EVT_UCX_ENDPOINT_RESET
 title: EVT_UCX_ENDPOINT_RESET (ucxendpoint.h)
-description: The client driver's implementation that UCX calls to reset the controller’s programming for an endpoint.
+description: The client driver's implementation that UCX calls to reset the controller's programming for an endpoint.
 old-location: buses\evt_ucx_endpoint_reset.htm
 tech.root: usbref
-ms.assetid: 927fdd48-416e-4e8f-a29c-c2799952197e
-ms.date: 05/07/2018
+ms.date: 01/14/2022
 keywords: ["EVT_UCX_ENDPOINT_RESET callback function"]
 ms.keywords: EVT_UCX_ENDPOINT_RESET, EVT_UCX_ENDPOINT_RESET callback, EvtUcxEndpointReset, EvtUcxEndpointReset callback function [Buses], PEVT_UCX_ENDPOINT_RESET, PEVT_UCX_ENDPOINT_RESET callback function pointer [Buses], buses.evt_ucx_endpoint_reset, ucxendpoint/EvtUcxEndpointReset
 req.header: ucxendpoint.h
@@ -38,48 +37,38 @@ api_type:
 api_location:
  - ucxendpoint.h
 api_name:
- - PEVT_UCX_ENDPOINT_RESET
+ - EVT_UCX_ENDPOINT_RESET
 ---
 
 # EVT_UCX_ENDPOINT_RESET callback function
 
-
 ## -description
 
-The client driver's implementation that UCX calls to reset the controller’s programming for an endpoint.
+The client driver's implementation that UCX calls to reset the controller's programming for an endpoint.
 
 ## -parameters
 
-### -param UcxController 
+### -param UcxController [in]
 
-[in]
- A handle to the UCX controller that the client driver received in a previous call to  the <a href="/previous-versions/windows/hardware/drivers/mt188033(v=vs.85)">UcxControllerCreate</a> method.
+A handle to the UCX controller that the client driver received in a previous call to  the [UcxControllerCreate](../ucxcontroller/nf-ucxcontroller-ucxcontrollercreate.md) method.
 
-### -param UcxEndpoint
-
-### -param Request 
-
-[in]
-A handle to a framework request object that the client driver completes when the reset operation is finished.
-
-
-#### - Endpoint [in]
+### -param UcxEndpoint [in]
 
 A handle to a UCXENDPOINT object that represents the endpoint.
 
+### -param Request [in]
+
+A handle to a framework request object that the client driver completes when the reset operation is finished.
+
 ## -remarks
 
-The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="/windows-hardware/drivers/ddi/ucxendpoint/nf-ucxendpoint-ucxendpointcreate">UcxEndpointCreate</a>
- method.
+The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the [UcxEndpointCreate](nf-ucxendpoint-ucxendpointcreate.md) method.
 
-The client driver returns completion status in the WDFREQUEST, which it might complete
-    asynchronously.
+The client driver returns completion status in the WDFREQUEST, which it might complete asynchronously.
 
+### Examples
 
-#### Examples
-
-
-```
+```cpp
 VOID
 Endpoint_EvtUcxEndpointReset(
     UCXCONTROLLER   UcxController,

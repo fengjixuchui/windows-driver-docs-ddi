@@ -4,7 +4,6 @@ title: FILTER_SYNCHRONOUS_OID_REQUEST_COMPLETE function (ndis.h)
 description: NDIS calls a filter driver’s FilterSynchronousOidRequestComplete function after a Synchronous OID request has been completed from an underlying driver.
 old-location: netvista\filter_synchronous_oid_request_complete.htm
 tech.root: netvista
-ms.assetid: E0749F52-CC7C-484D-8350-1986154957C1
 ms.date: 05/02/2018
 keywords: ["FILTER_SYNCHRONOUS_OID_REQUEST_COMPLETE function"]
 ms.keywords: FILTER_SYNCHRONOUS_OID_REQUEST_COMPLETE, FilterSynchronousOidRequestComplete, FilterSynchronousOidRequestComplete function [Network Drivers Starting with Windows Vista], ndis/FilterSynchronousOidRequestComplete, netvista.filter_synchronous_oid_request_complete
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - FilterSynchronousOidRequestComplete
+ - FILTER_SYNCHRONOUS_OID_REQUEST_COMPLETE
 ---
 
 # FILTER_SYNCHRONOUS_OID_REQUEST_COMPLETE function
@@ -52,31 +51,31 @@ This function is supported in NDIS 6.81 and later.
 
 ## -parameters
 
-### -param FilterModuleContext 
+### -param FilterModuleContext [in]
 
-[in]
+
 A handle to the context area for the filter module that is the target of this request. The filter driver created and initialized this context area in the [*FilterAttach*](nc-ndis-filter_attach.md) function.
 
-### -param OidRequest 
+### -param OidRequest [in, out]
 
-[in, out]
-A pointer to an [**NDIS_OID_REQUEST**](ns-ndis-_ndis_oid_request.md) structure that specifies the operation being completed.
 
-### -param Status 
+A pointer to an [**NDIS_OID_REQUEST**](../oidrequest/ns-oidrequest-ndis_oid_request.md) structure that specifies the operation being completed.
 
-[in, out]
+### -param Status [in, out]
+
+
 A pointer to the resulting status code of the request being completed.
 
-### -param CallContext 
+### -param CallContext [in]
 
-[in]
+
 A PVOID-sized storage slot for the filter driver to share state between its [*FilterSynchronousOidRequest*](nf-ndis-filter_synchronous_oid_request.md) and *FilterSynchronousOidRequestComplete* handlers. If the filter driver implements a *FilterSynchronousOidRequest* handler, this parameter contains the context value that the *FilterSynchronousOidRequest* handler returned. Otherwise, if the filter driver does not implement a *FilterSynchronousOidRequest* handler, this value is zero.
 
 ## -remarks
 
 *FilterSynchronousOidRequestComplete* is an optional function. If a filter driver does not need to observe or modify Synchronous OID requests completed from the miniport driver, the filter driver should set the entry point for this function to **NULL** when it calls [**NdisFRegisterFilterDriver**](nf-ndis-ndisfregisterfilterdriver.md).
 
-NDIS calls the filter driver’s *FilterSynchronousOidRequestComplete* function to process Synchronous OID requests that are completed by underlying drivers. Filter drivers can read or modify some fields in the [**NDIS_OID_REQUEST**](ns-ndis-_ndis_oid_request.md) structure as follows:
+NDIS calls the filter driver’s *FilterSynchronousOidRequestComplete* function to process Synchronous OID requests that are completed by underlying drivers. Filter drivers can read or modify some fields in the [**NDIS_OID_REQUEST**](../oidrequest/ns-oidrequest-ndis_oid_request.md) structure as follows:
 
 | Field | Filter access |
 | --- | --- |
@@ -115,3 +114,4 @@ Filter drivers must not call [**NdisAllocateCloneOidRequest**](nf-ndis-ndisalloc
 [**NdisFSynchronousOidRequest**](nf-ndis-ndisfsynchronousoidrequest.md)
 
 [Synchronous OID Request Interface in NDIS 6.80](/windows-hardware/drivers/network/synchronous-oid-request-interface-in-ndis-6-80)
+

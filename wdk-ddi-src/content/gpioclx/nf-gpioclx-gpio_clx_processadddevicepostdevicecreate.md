@@ -4,7 +4,6 @@ title: GPIO_CLX_ProcessAddDevicePostDeviceCreate function (gpioclx.h)
 description: The GPIO_CLX_ProcessAddDevicePostDeviceCreate method passes a framework device object to the GPIO framework extension (GpioClx).
 old-location: gpio\gpio_clx_processadddevicepostdevicecreate.htm
 tech.root: GPIO
-ms.assetid: 4B88820F-32B9-4AA2-867A-316A3796BE86
 ms.date: 02/15/2018
 keywords: ["GPIO_CLX_ProcessAddDevicePostDeviceCreate function"]
 ms.keywords: GPIO.gpio_clx_processadddevicepostdevicecreate, GPIO_CLX_ProcessAddDevicePostDeviceCreate, GPIO_CLX_ProcessAddDevicePostDeviceCreate method [Parallel Ports], gpioclx/GPIO_CLX_ProcessAddDevicePostDeviceCreate
@@ -51,14 +50,14 @@ The <b>GPIO_CLX_ProcessAddDevicePostDeviceCreate</b> method passes a framework d
 
 ## -parameters
 
-### -param Driver 
+### -param Driver [in]
 
-[in]
+
 A WDFDRIVER handle to the framework driver object for the GPIO controller driver.
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the GPIO controller. The caller obtained this handle from the <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate">WdfDeviceCreate</a> call that created the device object.
 
 ## -returns

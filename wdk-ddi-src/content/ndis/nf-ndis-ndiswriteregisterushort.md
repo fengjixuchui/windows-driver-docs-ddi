@@ -4,7 +4,6 @@ title: NdisWriteRegisterUshort macro (ndis.h)
 description: NdisWriteRegisterUshort is called by the miniport driver to write a USHORT to a memory-mapped device register.
 old-location: netvista\ndiswriteregisterushort.htm
 tech.root: netvista
-ms.assetid: 676beebf-4c22-4eb5-bfad-a6f66f3a95be
 ms.date: 05/02/2018
 keywords: ["NdisWriteRegisterUshort macro"]
 ms.keywords: NdisWriteRegisterUshort, NdisWriteRegisterUshort macro [Network Drivers Starting with Windows Vista], miniport_register_ref_a2e4ab78-aab2-4076-8f66-4e48a60b5beb.xml, ndis/NdisWriteRegisterUshort, netvista.ndiswriteregisterushort
@@ -51,16 +50,15 @@ api_name:
 
 ## -parameters
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 Pointer to the memory-mapped register. This virtual address must fall within a range returned by
-     an initialization-time call to 
-     <a href="/windows-hardware/drivers/devtest/ndis-ndismmapiospace">NdisMMapIoSpace</a>.
+     an initialization-time call to [**NdisMMapIoSpace**](nf-ndis-ndismmapiospace.md).
 
-### -param Data 
+### -param Data [in]
 
-[in]
+
 Specifies the caller-supplied USHORT that this function transfers to the 
      <i>Register</i> .
 
@@ -74,8 +72,7 @@ If a driver calls this function, a NIC's device registers must be mapped to nonc
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a>
 
 
-
-<a href="/windows-hardware/drivers/devtest/ndis-ndismmapiospace">NdisMMapIoSpace</a>
+[**NdisMMapIoSpace**](nf-ndis-ndismmapiospace.md)
 
 
 

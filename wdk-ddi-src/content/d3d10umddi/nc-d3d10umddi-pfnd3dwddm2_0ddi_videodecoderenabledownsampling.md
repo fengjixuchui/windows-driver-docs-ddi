@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3DWDDM2_0DDI_VIDEODECODERENABLEDOWNSAMPLING
 title: PFND3DWDDM2_0DDI_VIDEODECODERENABLEDOWNSAMPLING (d3d10umddi.h)
 description: Indicates that decoder down-sampling will be used and that the driver should allocate the appropriate reference frames. Optional for Windows Display Driver Model (WDDM) 2.0 or later drivers.
 old-location: display\videodecoderenabledownsampling.htm
-ms.assetid: 0817C977-1113-4953-B60C-A69185443335
 ms.date: 05/10/2018
 keywords: ["PFND3DWDDM2_0DDI_VIDEODECODERENABLEDOWNSAMPLING callback function"]
 ms.keywords: PFND3DWDDM2_0DDI_VIDEODECODERENABLEDOWNSAMPLING, PFND3DWDDM2_0DDI_VIDEODECODERENABLEDOWNSAMPLING callback, d3d10umddi/pfnVideoDecoderEnableDownsampling, display.videodecoderenabledownsampling, pfnVideoDecoderEnableDownsampling, pfnVideoDecoderEnableDownsampling callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoDecoderEnableDownsampling
-product:
- - Windows
+ - PFND3DWDDM2_0DDI_VIDEODECODERENABLEDOWNSAMPLING
 ---
 
 # PFND3DWDDM2_0DDI_VIDEODECODERENABLEDOWNSAMPLING callback function
@@ -100,3 +97,4 @@ This function can only be called once, prior to the first <a href="/windows-hard
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_videodecoderbeginframe">VideoDecoderBeginFrame</a>
+

@@ -4,7 +4,6 @@ title: WdfDeviceInitRegisterPowerPolicyStateChangeCallback function (wdfdevice.h
 description: The WdfDeviceInitRegisterPowerPolicyStateChangeCallback method registers a driver-supplied event callback function that the framework calls when a device's power policy state machine changes state.
 old-location: wdf\wdfdeviceinitregisterpowerpolicystatechangecallback.htm
 tech.root: wdf
-ms.assetid: 61ddfdf9-65cf-482b-80fe-bc5a71f905cd
 ms.date: 02/26/2018
 keywords: ["WdfDeviceInitRegisterPowerPolicyStateChangeCallback function"]
 ms.keywords: DFDeviceObjectGeneralRef_207ca167-9049-4661-baea-1a17158c3e82.xml, WdfDeviceInitRegisterPowerPolicyStateChangeCallback, WdfDeviceInitRegisterPowerPolicyStateChangeCallback method, kmdf.wdfdeviceinitregisterpowerpolicystatechangecallback, wdf.wdfdeviceinitregisterpowerpolicystatechangecallback, wdfdevice/WdfDeviceInitRegisterPowerPolicyStateChangeCallback
@@ -49,28 +48,31 @@ api_name:
 
 <p class="CCE_Message">[Applies to KMDF only]</p>
 
+>[!NOTE]
+>This method is for Microsoft internal use only.
+
 The <b>WdfDeviceInitRegisterPowerPolicyStateChangeCallback</b> method registers a driver-supplied event callback function that the framework calls when a device's power policy state machine changes state.
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A caller-supplied pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
-### -param PowerPolicyState 
+### -param PowerPolicyState [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_device_power_policy_state">WDF_DEVICE_POWER_POLICY_STATE</a> enumerator that identifies the power policy machine state for which the driver is requesting notification.
 
-### -param EvtDevicePowerPolicyStateChange 
+### -param EvtDevicePowerPolicyStateChange [in]
 
-[in]
+
 A caller-supplied pointer to the driver's <a href="/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_power_policy_state_change_notification">EvtDevicePowerPolicyStateChange</a> event callback function.
 
-### -param CallbackTypes 
+### -param CallbackTypes [in]
 
-[in]
+
 An ORed combination of <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_state_notification_type">WDF_STATE_NOTIFICATION_TYPE</a>-typed enumerators.
 
 ## -returns

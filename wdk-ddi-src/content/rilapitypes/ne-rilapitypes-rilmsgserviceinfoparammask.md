@@ -1,10 +1,9 @@
 ---
 UID: NE:rilapitypes.RILMSGSERVICEINFOPARAMMASK
 title: RILMSGSERVICEINFOPARAMMASK (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this enumeration in your code. Microsoft reserves the RILMSGSERVICEINFOPARAMMASK enumeration for internal use only."
 old-location: netvista\rilmsgserviceinfoparammask.htm
 tech.root: netvista
-ms.assetid: 9314909a-4580-49f9-b587-4d5e70ff0d4f
 ms.date: 05/02/2018
 keywords: ["RILMSGSERVICEINFOPARAMMASK enumeration"]
 ms.keywords: RILMSGSERVICEINFOPARAMMASK, RILMSGSERVICEINFOPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_MSI_ALL, RIL_PARAM_MSI_STORETOTAL, RIL_PARAM_MSI_STOREUSED, netvista.rilmsgserviceinfoparammask, ntddrilapitypes/RILMSGSERVICEINFOPARAMMASK, ntddrilapitypes/RIL_PARAM_MSI_ALL, ntddrilapitypes/RIL_PARAM_MSI_STORETOTAL, ntddrilapitypes/RIL_PARAM_MSI_STOREUSED

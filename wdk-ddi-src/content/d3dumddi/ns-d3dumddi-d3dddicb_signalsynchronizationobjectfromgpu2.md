@@ -4,7 +4,6 @@ title: D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2 (d3dumddi.h)
 description: D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2 is used with pfnSignalSynchronizationObjectFromGpu2Cb to signal a monitored fence.
 old-location: display\d3dddicb_signalsynchronizationobjectfromgpu2.htm
 tech.root: display
-ms.assetid: 077BFCCB-4963-40CF-B56E-EAA08681ED5F
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2 structure"]
 ms.keywords: D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2, D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2 structure [Display Devices], d3dumddi/D3DDDICB_SIGNALSYNCHRONIZATIONOBJECTFROMGPU2, display.d3dddicb_signalsynchronizationobjectfromgpu2
@@ -50,37 +49,37 @@ api_name:
 
 ## -struct-fields
 
-### -field ObjectCount
+### -field ObjectCount [in]
 
-[in] The number of synchronization events in the <b>ObjectHandleArray</b> array and fence values in <b>MonitoredFenceValueArray</b> arrays.
+The number of synchronization events in the <b>ObjectHandleArray</b> array and fence values in <b>MonitoredFenceValueArray</b> arrays.
 
-### -field ObjectHandleArray
+### -field ObjectHandleArray [in]
 
-[in] An array of kernel-mode handles to the synchronization events that the context that is specified by the <b>hContext</b> member waits for.
+An array of kernel-mode handles to the synchronization events that the context that is specified by the <b>hContext</b> member waits for.
 
-### -field Flags
+### -field Flags [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddicb_signalflags">D3DDDICB_SIGNALFLAGS</a> structure that indicates, in bit-field flags, signaling behavior.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddicb_signalflags">D3DDDICB_SIGNALFLAGS</a> structure that indicates, in bit-field flags, signaling behavior.
 
-### -field BroadcastContextCount
+### -field BroadcastContextCount [in]
 
-[in] The number of contexts this signal operation will be broadcast to.
+The number of contexts this signal operation will be broadcast to.
 
-### -field BroadcastContextArray
+### -field BroadcastContextArray [in]
 
-[in] An array of kernel-mode handles to the context streams in which a signal for the synchronization events in the array that the <b>ObjectHandleArray</b> member specifies is inserted. The synchronization events are considered signaled only when all broadcast contexts reach the signal insertion point.
+An array of kernel-mode handles to the context streams in which a signal for the synchronization events in the array that the <b>ObjectHandleArray</b> member specifies is inserted. The synchronization events are considered signaled only when all broadcast contexts reach the signal insertion point.
 
-### -field FenceValue
+### -field FenceValue [in]
 
-[in] A 64-bit value that specifies the current fence value of the GPU synchronization object. This value applies only if the GPU synchronization object is of type <b>D3DDDI_FENCE</b>.
+A 64-bit value that specifies the current fence value of the GPU synchronization object. This value applies only if the GPU synchronization object is of type <b>D3DDDI_FENCE</b>.
 
-### -field CpuEventHandle
+### -field CpuEventHandle [in]
 
-[in] The handle of an event object that will be signaled when the signal command is processed. This member must be set only when <b>Flags.EnqueueCpuEvent</b> is specified.
+The handle of an event object that will be signaled when the signal command is processed. This member must be set only when <b>Flags.EnqueueCpuEvent</b> is specified.
 
-### -field MonitoredFenceValueArray
+### -field MonitoredFenceValueArray [in]
 
-[in] An array of 64-bit monitored fence values to signal, each of which correspond to a synchronization object in <b>ObjectHandleArray</b>.
+An array of 64-bit monitored fence values to signal, each of which correspond to a synchronization object in <b>ObjectHandleArray</b>.
 
 ### -field Reserved
 

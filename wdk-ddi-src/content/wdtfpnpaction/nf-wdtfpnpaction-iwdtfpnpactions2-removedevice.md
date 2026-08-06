@@ -1,10 +1,9 @@
 ---
 UID: NF:wdtfpnpaction.IWDTFPNPActions2.RemoveDevice
 title: IWDTFPNPActions2::RemoveDevice (wdtfpnpaction.h)
-description: Removes the device.
+description: Learn how the method removes the device.
 old-location: dtf\iwdtfpnpactions2_removedevice.htm
 tech.root: dtf
-ms.assetid: 8926e96e-b738-47ff-a5c4-8bc15943c6a4
 ms.date: 04/04/2018
 keywords: ["IWDTFPNPActions2::RemoveDevice"]
 ms.keywords: IWDTFPNPActions2 interface [Windows Device Testing Framework],RemoveDevice method, IWDTFPNPActions2.RemoveDevice, IWDTFPNPActions2::RemoveDevice, RemoveDevice, RemoveDevice method [Windows Device Testing Framework], RemoveDevice method [Windows Device Testing Framework],IWDTFPNPActions2 interface, dtf.iwdtfpnpactions2_removedevice, wdtfpnpaction/IWDTFPNPActions2::RemoveDevice
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdtfpnpaction.h
 api_name:
- - IWDTFPNPActions2.RemoveDevice
+ - IWDTFPNPActions2::RemoveDevice
 ---
 
 # IWDTFPNPActions2::RemoveDevice
@@ -50,9 +49,9 @@ Removes the device.
 
 ## -parameters
 
-### -param pbSuccess 
+### -param pbSuccess [out, retval]
 
-[out, retval]
+
 True if the operation succeeds; otherwise, false.
 
 ## -returns
@@ -63,6 +62,3 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 
 Under the covers, this will call DIF_REMOVE.
 
-## -see-also
-
-<a href="/windows-hardware/drivers/ddi/index">IWDTFPNPActions2</a>

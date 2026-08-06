@@ -4,7 +4,6 @@ title: _RTL_GENERIC_TABLE (ntddk.h)
 description: The RTL_GENERIC_TABLE structure contains file system-specific data for a splay tree.
 old-location: ifsk\rtl_generic_table.htm
 tech.root: ifsk
-ms.assetid: 0e5dba1b-8b0d-470a-8ead-4c022e9da7fe
 ms.date: 04/16/2018
 keywords: ["RTL_GENERIC_TABLE structure"]
 ms.keywords: "*PRTL_GENERIC_TABLE, PRTL_GENERIC_TABLE, PRTL_GENERIC_TABLE structure pointer [Installable File System Drivers], RTL_GENERIC_TABLE, RTL_GENERIC_TABLE structure [Installable File System Drivers], _RTL_GENERIC_TABLE, ifsk.rtl_generic_table, ntddk/PRTL_GENERIC_TABLE, ntddk/RTL_GENERIC_TABLE, othersystemstructures_ce9bd546-d224-429d-8835-be3d5ecb1a52.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _RTL_GENERIC_TABLE
  - RTL_GENERIC_TABLE
 ---
 
@@ -127,7 +127,7 @@ To initialize a generic table package, you allocate a buffer that is at least <b
 </li>
 <li>
 
-<a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlinsertelementgenerictablefullavl">RtlInsertElementGenericTableFull</a>
+<a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlinsertelementgenerictablefullavl">RtlInsertElementGenericTableFullAvl</a>
 
 
 </li>
@@ -145,7 +145,7 @@ To initialize a generic table package, you allocate a buffer that is at least <b
 </li>
 <li>
 
-<a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtllookupelementgenerictablefullavl">RtlLookupElementGenericTableFull</a>
+<a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtllookupelementgenerictablefullavl">RtlLookupElementGenericTableFullAvl</a>
 
 
 </li>
@@ -183,7 +183,7 @@ To initialize a generic table package, you allocate a buffer that is at least <b
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlinsertelementgenerictablefullavl">RtlInsertElementGenericTableFull</a>
+<a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlinsertelementgenerictablefullavl">RtlInsertElementGenericTableFullAvl</a>
 
 
 
@@ -195,8 +195,9 @@ To initialize a generic table package, you allocate a buffer that is at least <b
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtllookupelementgenerictablefullavl">RtlLookupElementGenericTableFull</a>
+<a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtllookupelementgenerictablefullavl">RtlLookupElementGenericTableFullAvl</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlnumbergenerictableelements">RtlNumberGenericTableElements</a>
+

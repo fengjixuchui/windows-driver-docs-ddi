@@ -1,10 +1,9 @@
 ---
 UID: NE:dxgiddi.DXGI_DDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY
 title: DXGI_DDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY (dxgiddi.h)
-description: Identifies filtering processes that the hardware should perform when it stretches or shrinks multiplane overlay data.
+description: DXGI_DDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY specifies the filtering process that the hardware will perform when it stretches or shrinks multiplane overlay data.
 old-location: display\dxgi_ddi_multiplane_overlay_stretch_quality.htm
 tech.root: display
-ms.assetid: 550C09F4-8684-4B6F-BB62-8514721A9B32
 ms.date: 05/10/2018
 keywords: ["DXGI_DDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY enumeration"]
 ms.keywords: DXGI_DDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY, DXGI_DDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY enumeration [Display Devices], DXGI_DDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY_BILINEAR, DXGI_DDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY_HIGH, display.dxgi_ddi_multiplane_overlay_stretch_quality, dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY, dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY_BILINEAR, dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_STRETCH_QUALITY_HIGH

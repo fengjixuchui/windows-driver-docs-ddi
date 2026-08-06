@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_SEND_PACKET
 title: DOT11EXT_SEND_PACKET (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_SEND_PACKET callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extsendpacket.htm
 tech.root: netvista
-ms.assetid: 0672eed0-4824-464b-9f4e-93862f27d586
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_SEND_PACKET callback"]
 ms.keywords: DOT11EXT_SEND_PACKET, Dot11ExtSendPacket, Dot11ExtSendPacket callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_0acd1763-b9d3-4e75-ada6-63f5a77b42c3.xml, netvista.dot11extsendpacket, wlanihv/Dot11ExtSendPacket
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_SEND_PACKET
  - wlanihv/DOT11EXT_SEND_PACKET
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtSendPacket
+ - DOT11EXT_SEND_PACKET
 ---
 
 # DOT11EXT_SEND_PACKET callback
@@ -53,29 +51,29 @@ api_name:
 
 ## -parameters
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the WLAN adapter. This handle value was
      specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param uPacketLen 
+### -param uPacketLen [in]
 
-[in]
+
 The length, in bytes, of the caller-allocated buffer referenced by the
      <i>pvPacket</i> parameter.
 
-### -param pvPacket 
+### -param pvPacket [in]
 
-[in]
+
 A pointer to a caller-allocated buffer that contains the data to be transmitted, as described in
      the Remarks section.
 
-### -param hSendCompletion 
+### -param hSendCompletion [in, optional]
 
-[in, optional]
+
 A handle value that uniquely identifies the send packet.
 
 
@@ -170,3 +168,4 @@ This packet data is passed to the miniport driver.
 
 
 <a href="/previous-versions/windows/it-pro/windows-server-2003/cc757419(v=ws.10)">802.11 MAC Header Management</a>
+

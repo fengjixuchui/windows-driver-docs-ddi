@@ -1,11 +1,10 @@
 ---
 UID: NF:wpprecorder.WppRecorderLogDelete
 title: WppRecorderLogDelete macro (wpprecorder.h)
-description: The WppRecorderLogDelete method deletes the specified recorder log.
+description: Learn how the WppRecorderLogDelete method deletes the specified recorder log.
 old-location: devtest\wpprecorderlogdelete.htm
 tech.root: devtest
-ms.assetid: AEE10756-7301-4B55-82A5-27CA595854EA
-ms.date: 02/23/2018
+ms.date: 04/19/2022
 keywords: ["WppRecorderLogDelete macro"]
 ms.keywords: WppRecorderLogDelete, devtest.wpprecorderlogdelete, imp_WppRecorderLogDelete, imp_WppRecorderLogDelete function [Driver Development Tools], wpprecorder/imp_WppRecorderLogDelete
 req.header: wpprecorder.h
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wpprecorder.h
 api_name:
- - imp_WppRecorderLogDelete
+ - WppRecorderLogDelete
 ---
 
 # WppRecorderLogDelete macro
@@ -50,10 +49,11 @@ The <a href="/windows-hardware/drivers/ddi/wpprecorder/nf-wpprecorder-wpprecorde
 
 ## -parameters
 
-### -param RecorderLog
+### -param RecorderLog [in]
 
 Handle to the recorder log to delete.
 
 ## -remarks
 
-When a thread enters this function, no threads can subsequently  log to this buffer.
+When a thread enters this function, no threads can subsequently log to this buffer.
+

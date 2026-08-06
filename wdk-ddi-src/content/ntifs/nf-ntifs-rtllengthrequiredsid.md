@@ -4,7 +4,6 @@ title: RtlLengthRequiredSid function (ntifs.h)
 description: The RtlLengthRequiredSid routine returns the length, in bytes, of the buffer required to store a security identifier (SID) with a specified number of subauthorities.
 old-location: ifsk\rtllengthrequiredsid.htm
 tech.root: ifsk
-ms.assetid: 1d6aa888-8e61-4a0e-88ea-13842fc2fff2
 ms.date: 04/16/2018
 keywords: ["RtlLengthRequiredSid function"]
 ms.keywords: RtlLengthRequiredSid, RtlLengthRequiredSid routine [Installable File System Drivers], ifsk.rtllengthrequiredsid, ntifs/RtlLengthRequiredSid, rtlref_78e8a660-8510-40bc-b221-747538423488.xml
@@ -51,9 +50,9 @@ The <b>RtlLengthRequiredSid</b> routine returns the length, in bytes, of the buf
 
 ## -parameters
 
-### -param SubAuthorityCount 
+### -param SubAuthorityCount [in]
 
-[in]
+
 The number of subauthorities to be stored in the SID.
 
 ## -returns
@@ -62,7 +61,7 @@ The number of subauthorities to be stored in the SID.
 
 ## -remarks
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

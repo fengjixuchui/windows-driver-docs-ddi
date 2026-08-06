@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11.DOT11_ROAMING_START_PARAMETERS
 title: DOT11_ROAMING_START_PARAMETERS (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_ROAMING_START_PARAMETERS structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_roaming_start_parameters.htm
 tech.root: netvista
-ms.assetid: 23a0eabc-9eac-4375-b2ca-66b70deaba82
 ms.date: 02/16/2018
 keywords: ["DOT11_ROAMING_START_PARAMETERS structure"]
 ms.keywords: "*PDOT11_ROAMING_START_PARAMETERS, DOT11_ROAMING_START_PARAMETERS, DOT11_ROAMING_START_PARAMETERS structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_7635397d-74dc-44d0-af58-47048361367d.xml, PDOT11_ROAMING_START_PARAMETERS, PDOT11_ROAMING_START_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_roaming_start_parameters, windot11/DOT11_ROAMING_START_PARAMETERS, windot11/PDOT11_ROAMING_START_PARAMETERS"
@@ -41,8 +40,7 @@ api_location:
  - windot11.h
 api_name:
  - DOT11_ROAMING_START_PARAMETERS
-product:
- - Windows 10 or later.
+ - PDOT11_ROAMING_START_PARAMETERS
 ---
 
 # DOT11_ROAMING_START_PARAMETERS structure
@@ -50,7 +48,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_ROAMING_START_PARAMETERS structure specifies the reason why the Native 802.11 miniport
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_ROAMING_START_PARAMETERS structure specifies the reason why the Native 802.11 miniport
   driver is performing a roaming operation. The driver includes a DOT11_ROAMING_START_PARAMETERS structure
   when the driver makes an
   <a href="/windows-hardware/drivers/network/ndis-status-dot11-roaming-start">
@@ -62,7 +63,7 @@ product:
 
 The type, revision, and size of the DOT11_ROAMING_START_PARAMETERS structure. This member is
      formatted as an
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+     <a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 
 The miniport driver must set the members of
@@ -90,7 +91,7 @@ This member must be set to
        sizeof(DOT11_ROAMING_START_PARAMETERS).
 
 For more information about these members, see
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+     <a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 ### -field AdhocBSSID
 
@@ -176,4 +177,5 @@ For more information about the roaming operation, see
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+

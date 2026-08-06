@@ -4,7 +4,6 @@ title: SerCx2PioTransmitInitializeTransactionComplete function (sercx.h)
 description: The SerCx2PioTransmitInitializeTransactionComplete method notifies version 2 of the serial framework extension (SerCx2) that the serial controller driver has finished initializing the serial controller hardware in preparation for a new PIO-transmit transaction.
 old-location: serports\sercx2piotransmitinitializetransactioncomplete.htm
 tech.root: serports
-ms.assetid: 3A2CA5FB-0844-4992-9A05-DDF9D7F1BADC
 ms.date: 04/23/2018
 keywords: ["SerCx2PioTransmitInitializeTransactionComplete function"]
 ms.keywords: 2/SerCx2PioTransmitInitializeTransactionComplete, SerCx2PioTransmitInitializeTransactionComplete, SerCx2PioTransmitInitializeTransactionComplete method [Serial Ports], serports.sercx2piotransmitinitializetransactioncomplete
@@ -50,14 +49,14 @@ The <b>SerCx2PioTransmitInitializeTransactionComplete</b> method notifies versio
 
 ## -parameters
 
-### -param PioTransmit 
+### -param PioTransmit [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitcreate">SerCx2PioTransmitCreate</a> method to create this object.
 
-### -param InitSuccess 
+### -param InitSuccess [in]
 
-[in]
+
 Whether the initialization was successful. If <b>TRUE</b>, the initialization succeeded. If <b>FALSE</b>, the initialization failed.
 
 ## -remarks

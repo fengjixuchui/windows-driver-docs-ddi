@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_142
+UID: NS:ksmedia.KSPROPERTY_CROSSBAR_PININFO_S
 title: KSPROPERTY_CROSSBAR_PININFO_S (ksmedia.h)
 description: The KSPROPERTY_CROSSBAR_PININFO_S structure describes the crossbar pin information for a device.
 old-location: stream\ksproperty_crossbar_pininfo_s.htm
 tech.root: stream
-ms.assetid: 7ddef9cf-aa2f-4383-b37f-8c2f3e9c99d6
 ms.date: 04/30/2019
 keywords: ["KSPROPERTY_CROSSBAR_PININFO_S structure"]
 ms.keywords: "*PKSPROPERTY_CROSSBAR_PININFO_S, KSPROPERTY_CROSSBAR_PININFO_S, KSPROPERTY_CROSSBAR_PININFO_S structure [Streaming Media Devices], PKSPROPERTY_CROSSBAR_PININFO_S, PKSPROPERTY_CROSSBAR_PININFO_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_CROSSBAR_PININFO_S, ksmedia/PKSPROPERTY_CROSSBAR_PININFO_S, stream.ksproperty_crossbar_pininfo_s, vidcapstruct_a8532e73-5b8e-4ed1-a27e-e151642fff2a.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_CROSSBAR_PININFO_S
  - KSPROPERTY_CROSSBAR_PININFO_S
 ---
 
@@ -54,7 +54,7 @@ The KSPROPERTY_CROSSBAR_PININFO_S structure describes the crossbar pin informati
 
 ### -field Property
 
-Specifies an initialized <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+Specifies an initialized <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 ### -field Direction
 
@@ -122,7 +122,7 @@ Specifies the optional pin index of a pin that is related to the pin specified i
 
 ### -field Medium
 
-Specifies a <a href="/previous-versions/ff563538(v=vs.85)">KSPIN_MEDIUM</a> structure that represents the hardware connection for the pin. This information is returned by the minidriver.
+Specifies a <a href="/windows-hardware/drivers/stream/kspin-medium-structure">KSPIN_MEDIUM</a> structure that represents the hardware connection for the pin. This information is returned by the minidriver.
 
 ## -remarks
 
@@ -130,7 +130,7 @@ All index values are zero-based, and input pins are counted separately from outp
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -139,3 +139,4 @@ All index values are zero-based, and input pins are counted separately from outp
 
 
 <a href="/windows-hardware/drivers/stream/propsetid-vidcap-crossbar">PROPSETID_VIDCAP_CROSSBAR</a>
+

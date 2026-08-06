@@ -4,7 +4,6 @@ title: PFND3DDDI_CREATEPIXELSHADER (d3dumddi.h)
 description: The CreatePixelShader function converts pixel shader code into a hardware-specific format and associates this code with a shader handle.
 old-location: display\createpixelshader.htm
 tech.root: display
-ms.assetid: b80a1823-6d91-440f-89e4-f7248579cc8f
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CREATEPIXELSHADER callback function"]
 ms.keywords: CreatePixelShader, CreatePixelShader callback function [Display Devices], PFND3DDDI_CREATEPIXELSHADER, PFND3DDDI_CREATEPIXELSHADER callback, UserModeDisplayDriver_Functions_4e9d378f-d5aa-4b5d-9a66-ff2dd2f8fae8.xml, d3dumddi/CreatePixelShader, display.createpixelshader
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - CreatePixelShader
+ - PFND3DDDI_CREATEPIXELSHADER
 ---
 
 # PFND3DDDI_CREATEPIXELSHADER callback function
@@ -50,18 +49,18 @@ The <b>CreatePixelShader</b> function converts pixel shader code into a hardware
 
 ## -parameters
 
-### -param hDevice 
+### -param hDevice [in]
 
-[in]
+
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCode* [in]
 
 An array of CONST UINT tokens that make up the pixel shader code.
 
-### -param Arg3
+### -param unnamedParam3
 
 *pData* [in, out]
 
@@ -82,3 +81,4 @@ For more information about programming shader assemblers, see <a href="/windows-
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

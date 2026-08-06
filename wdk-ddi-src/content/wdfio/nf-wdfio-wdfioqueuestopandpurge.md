@@ -4,7 +4,6 @@ title: WdfIoQueueStopAndPurge function (wdfio.h)
 description: The WdfIoQueueStopAndPurge method prevents an I/O queue from delivering new requests and cancels existing unprocessed requests and driver-owned cancellable requests, but the queue receives and stores new requests.
 old-location: wdf\wdfioqueuestopandpurge.htm
 tech.root: wdf
-ms.assetid: 3A9CF1BD-77F1-4F4C-AEB5-0E77B67C45D3
 ms.date: 02/26/2018
 keywords: ["WdfIoQueueStopAndPurge function"]
 ms.keywords: WdfIoQueueStopAndPurge, WdfIoQueueStopAndPurge method, kmdf.wdfioqueuestopandpurge, wdf.wdfioqueuestopandpurge, wdfio/WdfIoQueueStopAndPurge
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -56,19 +55,19 @@ The <b>WdfIoQueueStopAndPurge</b> method prevents an I/O queue from delivering n
 
 ## -parameters
 
-### -param Queue 
+### -param Queue [in]
 
-[in]
+
 A handle to a framework queue object.
 
-### -param StopAndPurgeComplete 
+### -param StopAndPurgeComplete [in, optional]
 
-[in, optional]
+
 A pointer to a driver-supplied <a href="/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_state">EvtIoQueueState</a> callback function. This parameter is optional and can be NULL.
 
-### -param Context 
+### -param Context [in, optional]
 
-[in, optional]
+
 An untyped pointer to driver-supplied context information that the framework passes to the <a href="/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_state">EvtIoQueueState</a> callback function. This parameter is optional and can be NULL.
 
 ## -remarks

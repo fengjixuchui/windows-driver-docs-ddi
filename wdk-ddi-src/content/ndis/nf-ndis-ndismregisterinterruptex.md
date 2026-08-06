@@ -4,7 +4,6 @@ title: NdisMRegisterInterruptEx function (ndis.h)
 description: NDIS miniport drivers call the NdisMRegisterInterruptEx function to register an interrupt.
 old-location: netvista\ndismregisterinterruptex.htm
 tech.root: netvista
-ms.assetid: db0b3d51-5bbb-45fb-8c45-dda8c2212b5f
 ms.date: 05/02/2018
 keywords: ["NdisMRegisterInterruptEx function"]
 ms.keywords: NdisMRegisterInterruptEx, NdisMRegisterInterruptEx function [Network Drivers Starting with Windows Vista], ndis/NdisMRegisterInterruptEx, ndis_interrupts_functions_ref_9a28602d-5a32-459c-92da-9d97b93f5fde.xml, netvista.ndismregisterinterruptex
@@ -52,32 +51,32 @@ NDIS miniport drivers call the
 
 ## -parameters
 
-### -param MiniportAdapterHandle 
+### -param MiniportAdapterHandle [in]
 
-[in]
+
 The miniport adapter handle that NDIS passed to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">
      MiniportInitializeEx</a> function.
 
-### -param MiniportInterruptContext 
+### -param MiniportInterruptContext [in]
 
-[in]
+
 A pointer to a block of context information. The miniport driver allocates this memory to store
      information about the interrupt. NDIS passes the context information block in subsequent calls to other
      functions that are associated with the interrupt.
 
-### -param MiniportInterruptCharacteristics 
+### -param MiniportInterruptCharacteristics [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_interrupt_characteristics">
      NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS</a> structure that the miniport driver created. The driver
      initializes this structure with handler entry points and configuration parameters that define the
      interrupt characteristics.
 
-### -param NdisInterruptHandle 
+### -param NdisInterruptHandle [out]
 
-[out]
+
 A pointer to an NDIS handle. NDIS writes the handle for the newly created interrupt object to the
      address that the 
      <i>NdisInterruptHandle</i> pointer specifies.

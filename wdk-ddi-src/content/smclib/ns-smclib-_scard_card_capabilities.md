@@ -4,7 +4,6 @@ title: _SCARD_CARD_CAPABILITIES (smclib.h)
 description: The SCARD_CARD_CAPABILITIES structure declaration defines the data that is stored in the CardCapabilites member of the SMARTCARD_EXTENSION structure and holds all information that is specific to the particular smart card that is currently used.
 old-location: smartcrd\scard_card_capabilities.htm
 tech.root: smartcrd
-ms.assetid: 8cc223be-a692-4141-81f6-4cca9e2fccf1
 ms.date: 02/22/2018
 keywords: ["SCARD_CARD_CAPABILITIES structure"]
 ms.keywords: "*PSCARD_CARD_CAPABILITIES, PSCARD_CARD_CAPABILITIES, PSCARD_CARD_CAPABILITIES structure pointer [Smart Card Reader Devices], SCARD_CARD_CAPABILITIES, SCARD_CARD_CAPABILITIES structure [Smart Card Reader Devices], _SCARD_CARD_CAPABILITIES, scstruct_b60c574d-a6db-4d15-a974-dc15ba375b5b.xml, smartcrd.scard_card_capabilities, smclib/PSCARD_CARD_CAPABILITIES, smclib/SCARD_CARD_CAPABILITIES"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - smclib.h
 api_name:
+ - _SCARD_CARD_CAPABILITIES
+ - PSCARD_CARD_CAPABILITIES
  - SCARD_CARD_CAPABILITIES
 ---
 
@@ -191,3 +192,4 @@ Reserved.
 ## -remarks
 
 The SCARD_CARD_CAPABILITIES structure describes the capabilities of the inserted smart card. If the reader driver uses the smart card driver library, <b>ATR</b> is the only member that the reader driver should populate. The driver library will automatically update all other fields when it receives an <a href="/previous-versions/windows/hardware/drivers/ff548909(v=vs.85)">IOCTL_SMARTCARD_SET_PROTOCOL</a> request.
+

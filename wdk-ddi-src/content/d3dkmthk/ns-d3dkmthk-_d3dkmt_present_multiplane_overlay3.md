@@ -1,9 +1,8 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_PRESENT_MULTIPLANE_OVERLAY3
-title: _D3DKMT_PRESENT_MULTIPLANE_OVERLAY3 (d3dkmthk.h)
-description: Contains present multiplane overlay information.
-ms.assetid: 06f77522-57bd-41f7-b039-cd3dc10376d8
-ms.date: 10/19/2018
+title: D3DKMT_PRESENT_MULTIPLANE_OVERLAY3 (d3dkmthk.h)
+description: Learn more about the D3DKMT_PRESENT_MULTIPLANE_OVERLAY3 structure.
+ms.date: 04/10/2024
 keywords: ["D3DKMT_PRESENT_MULTIPLANE_OVERLAY3 structure"]
 ms.keywords: _D3DKMT_PRESENT_MULTIPLANE_OVERLAY3, D3DKMT_PRESENT_MULTIPLANE_OVERLAY3,
 req.header: d3dkmthk.h
@@ -35,12 +34,12 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_PRESENT_MULTIPLANE_OVERLAY3
+ - D3DKMT_PRESENT_MULTIPLANE_OVERLAY3
 dev_langs:
  - c++
 ---
 
-# _D3DKMT_PRESENT_MULTIPLANE_OVERLAY3 structure
-
+# D3DKMT_PRESENT_MULTIPLANE_OVERLAY3 structure
 
 ## -description
 
@@ -96,8 +95,11 @@ The HDR metadata size.
 
 ### -field pHDRMetaData
 
- 
 The HDR metadata.
+
+### -field BoostRefreshRateMultiplier
+
+Dynamic refresh rate's boost multiplier.
 
 ## -remarks
 

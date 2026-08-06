@@ -4,14 +4,13 @@ title: _DXGK_CHILD_STATUS_TYPE (dispmprt.h)
 description: The DXGK_CHILD_STATUS_TYPE enumeration indicates the type of status being requested or reported for a child device of the display adapter.
 old-location: display\dxgk_child_status_type.htm
 tech.root: display
-ms.assetid: 5fa4b7e2-8215-49d8-9d70-b45c972b39b4
 ms.date: 05/10/2018
 keywords: ["DXGK_CHILD_STATUS_TYPE enumeration"]
 ms.keywords: "*PDXGK_CHILD_STATUS_TYPE, DXGK_CHILD_STATUS_TYPE, DXGK_CHILD_STATUS_TYPE enumeration [Display Devices], DmEnums_684c935e-6fd5-4743-a196-d6674b8f2e56.xml, PDXGK_CHILD_STATUS_TYPE, PDXGK_CHILD_STATUS_TYPE enumeration pointer [Display Devices], StatusConnection, StatusMiracast, StatusRotation, StatusUninitialized, _DXGK_CHILD_STATUS_TYPE, display.dxgk_child_status_type, dispmprt/DXGK_CHILD_STATUS_TYPE, dispmprt/PDXGK_CHILD_STATUS_TYPE, dispmprt/StatusConnection, dispmprt/StatusMiracast, dispmprt/StatusRotation, dispmprt/StatusUninitialized"
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
+ - _DXGK_CHILD_STATUS_TYPE
+ - PDXGK_CHILD_STATUS_TYPE
  - DXGK_CHILD_STATUS_TYPE
 ---
 
@@ -83,3 +84,4 @@ The <b>Type</b> member of a <a href="/windows-hardware/drivers/ddi/dispmprt/ns-d
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_child_status">DxgkDdiQueryChildStatus</a>
+

@@ -4,7 +4,6 @@ title: VideoPortDebugPrint function (video.h)
 description: Video miniport drivers should not call the VideoPortDebugPrint function. Instead, they should call the VideoDebugPrint macro.
 old-location: display\videoportdebugprint.htm
 tech.root: display
-ms.assetid: c476c8a2-5d79-45cd-ae72-f8792137f9c2
 ms.date: 05/10/2018
 keywords: ["VideoPortDebugPrint function"]
 ms.keywords: VideoPortDebugPrint, VideoPortDebugPrint function [Display Devices], VideoPort_Functions_a98adb70-bb89-4d0d-8922-836056896a61.xml, display.videoportdebugprint, video/VideoPortDebugPrint
@@ -52,11 +51,16 @@ Video miniport drivers should not call the <b>VideoPortDebugPrint</b> function. 
 
 ### -param DebugPrintLevel
 
-### -param DebugMessage 
+### -param DebugMessage [in]
 
-[in]
+
 Pointer to a string that contains the debug message.
+
+### -param ...
+
+Additional Parameters.
 
 ## -returns
 
 None
+

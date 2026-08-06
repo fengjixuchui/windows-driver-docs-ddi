@@ -4,7 +4,6 @@ title: IddCxSwapChainGetMoveRegions function (iddcx.h)
 description: An OS callback function the driver calls when it wants retrieve the move regions for the current frame.
 old-location: display\iddcxswapchaingetmoveregions.htm
 tech.root: display
-ms.assetid: ae8257a6-4d4c-446e-b144-1adfe0a28e50
 ms.date: 05/10/2018
 keywords: ["IddCxSwapChainGetMoveRegions function"]
 ms.keywords: IddCxSwapChainGetMoveRegions, IddCxSwapChainGetMoveRegions method [Display Devices], display.iddcxswapchaingetmoveregions, iddcx/IddCxSwapChainGetMoveRegions
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: IddCxStub.lib
 req.dll: IddCx.dll
-req.irql: _Must_inspect_result_
+req.irql: 
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,19 +49,19 @@ An OS callback function the driver calls when it wants retrieve the move regions
 
 ## -parameters
 
-### -param SwapChainObject 
+### -param SwapChainObject [in]
 
-[in]
+
 The swap-chain object whose current frame is being queried.
 
-### -param pInArgs 
+### -param pInArgs [in]
 
-[in]
+
 Input arguments of the function.
 
-### -param pOutArgs 
+### -param pOutArgs [out]
 
-[out]
+
 Output arguments of the function.
 
 ## -returns

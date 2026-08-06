@@ -4,7 +4,6 @@ title: PFND3DDDI_UPDATEGPUVIRTUALADDRESSCB (d3dumddi.h)
 description: pfnUpdateGpuVirtualAddressCb is a special operation used in the context of tile resources.
 old-location: display\pfnupdategpuvirtualaddresscb.htm
 tech.root: display
-ms.assetid: 99D075A0-4483-47D1-BA24-80C45BFF407A
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_UPDATEGPUVIRTUALADDRESSCB callback function"]
 ms.keywords: PFND3DDDI_UPDATEGPUVIRTUALADDRESSCB, PFND3DDDI_UPDATEGPUVIRTUALADDRESSCB callback, d3dumddi/pfnUpdateGpuVirtualAddressCb, display.pfnupdategpuvirtualaddresscb, pfnUpdateGpuVirtualAddressCb, pfnUpdateGpuVirtualAddressCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnUpdateGpuVirtualAddressCb
-product:
- - Windows
+ - PFND3DDDI_UPDATEGPUVIRTUALADDRESSCB
 ---
 
 # PFND3DDDI_UPDATEGPUVIRTUALADDRESSCB callback function
@@ -61,7 +58,7 @@ The page table updates are executed on a paging context, dedicated to the render
 
 A handle to the display device.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -82,7 +79,7 @@ In a single <b>pfnUpdateVirtualAddressCb</b> call:
 <li>The source virtual address range in copy operations is allowed to be from a different reserved (zero) range.</li>
 <li>The source virtual address range in all copy operations must belong to the same reserved (zero) range.</li>
 </ul>
-The user mode driver can submit many <b>pfnUpdateGpuVirtualAddressCb</b> calls and operations will be queued behind the rendering fence. When the number of queued update operations exceeds 128, the calling thread will be blocked until the pervious operations are processed by the video memory manager.
+The user mode driver can submit many <b>pfnUpdateGpuVirtualAddressCb</b> calls and operations will be queued behind the rendering fence. When the number of queued update operations exceeds 128, the calling thread will be blocked until the previous operations are processed by the video memory manager.
 
 ## -see-also
 
@@ -91,3 +88,4 @@ The user mode driver can submit many <b>pfnUpdateGpuVirtualAddressCb</b> calls a
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_reservegpuvirtualaddresscb">pfnReserveGpuVirtualAddressCb</a>
+

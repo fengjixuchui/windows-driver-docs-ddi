@@ -4,7 +4,6 @@ title: _NET_DMA_CHANNEL_PARAMETERS (netdma.h)
 description: The NET_DMA_CHANNEL_PARAMETERS structure specifies the configuration parameters that a DMA provider driver should use to configure a DMA channel.
 old-location: netvista\net_dma_channel_parameters.htm
 tech.root: netvista
-ms.assetid: 0d09a9e9-06c5-4026-9053-ac74a59509cc
 ms.date: 05/02/2018
 keywords: ["NET_DMA_CHANNEL_PARAMETERS structure"]
 ms.keywords: "*PNET_DMA_CHANNEL_PARAMETERS, NET_DMA_CHANNEL_PARAMETERS, NET_DMA_CHANNEL_PARAMETERS structure [Network Drivers Starting with Windows Vista], NetDmaTransferStatusActive, NetDmaTransferStatusArmed, NetDmaTransferStatusHalted, NetDmaTransferStatusIdle, NetDmaTransferStatusSuspend, PNET_DMA_CHANNEL_PARAMETERS, PNET_DMA_CHANNEL_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NET_DMA_CHANNEL_PARAMETERS, netdma/NET_DMA_CHANNEL_PARAMETERS, netdma/PNET_DMA_CHANNEL_PARAMETERS, netdma_ref_021ebc64-529e-4588-b5ff-83ed04aa9478.xml, netvista.net_dma_channel_parameters"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - netdma.h
 api_name:
+ - _NET_DMA_CHANNEL_PARAMETERS
+ - PNET_DMA_CHANNEL_PARAMETERS
  - NET_DMA_CHANNEL_PARAMETERS
 ---
 
@@ -103,7 +104,7 @@ The physical address of the DMA descriptor must be aligned to 64-bit boundaries.
 </tr>
 <tr>
 <td width="40%"><a id="NetDmaTransferStatusActive"></a><a id="netdmatransferstatusactive"></a><a id="NETDMATRANSFERSTATUSACTIVE"></a><dl>
-<dt><b><b>NetDmaTransferStatusActive</b></b></dt>
+<dt><b>NetDmaTransferStatusActive</b></dt>
 </dl>
 </td>
 <td width="60%">
@@ -114,7 +115,7 @@ The DMA transfer for the most recent DMA descriptor completed without errors, an
 </tr>
 <tr>
 <td width="40%"><a id="NetDmaTransferStatusIdle"></a><a id="netdmatransferstatusidle"></a><a id="NETDMATRANSFERSTATUSIDLE"></a><dl>
-<dt><b><b>NetDmaTransferStatusIdle</b></b></dt>
+<dt><b>NetDmaTransferStatusIdle</b></dt>
 </dl>
 </td>
 <td width="60%">
@@ -125,7 +126,7 @@ The DMA transfer for the last DMA descriptor in the linked list of descriptors c
 </tr>
 <tr>
 <td width="40%"><a id="NetDmaTransferStatusSuspend"></a><a id="netdmatransferstatussuspend"></a><a id="NETDMATRANSFERSTATUSSUSPEND"></a><dl>
-<dt><b><b>NetDmaTransferStatusSuspend</b></b></dt>
+<dt><b>NetDmaTransferStatusSuspend</b></dt>
 </dl>
 </td>
 <td width="60%">
@@ -139,7 +140,7 @@ The DMA transfer for the most recent DMA descriptor completed without errors, an
 </tr>
 <tr>
 <td width="40%"><a id="NetDmaTransferStatusHalted"></a><a id="netdmatransferstatushalted"></a><a id="NETDMATRANSFERSTATUSHALTED"></a><dl>
-<dt><b><b>NetDmaTransferStatusHalted</b></b></dt>
+<dt><b>NetDmaTransferStatusHalted</b></dt>
 </dl>
 </td>
 <td width="60%">
@@ -151,7 +152,7 @@ The DMA transfer for the most recent DMA transfer was aborted because of errors 
 </tr>
 <tr>
 <td width="40%"><a id="NetDmaTransferStatusArmed"></a><a id="netdmatransferstatusarmed"></a><a id="NETDMATRANSFERSTATUSARMED"></a><dl>
-<dt><b><b>NetDmaTransferStatusArmed</b></b></dt>
+<dt><b>NetDmaTransferStatusArmed</b></dt>
 </dl>
 </td>
 <td width="60%">
@@ -217,3 +218,4 @@ The NetDMA interface supplies a <b>NET_DMA_CHANNEL_PARAMETERS</b> structure at t
 
 
 <a href="/windows-hardware/drivers/ddi/netdma/nc-netdma-dma_suspend_handler">ProviderSuspendDma</a>
+

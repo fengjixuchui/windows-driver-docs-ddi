@@ -4,7 +4,6 @@ title: IDebugOutputCallbacks::Output (dbgeng.h)
 description: The Output callback method is called by the engine to send output from the client to the IDebugOutputCallbacks object that is registered with the client.
 old-location: debugger\idebugoutputcallbacks_output.htm
 tech.root: debugger
-ms.assetid: 6d0352ae-0376-4992-89ef-90702591042e
 ms.date: 05/03/2018
 keywords: ["IDebugOutputCallbacks::Output"]
 ms.keywords: ComCallbacks_9b5e22d8-aa8d-498e-b3b5-ad6d73462db4.xml, IDebugOutputCallbacks interface [Windows Debugging],Output method, IDebugOutputCallbacks.Output, IDebugOutputCallbacks::Output, Output, Output method [Windows Debugging], Output method [Windows Debugging],IDebugOutputCallbacks interface, dbgeng/IDebugOutputCallbacks::Output, debugger.idebugoutputcallbacks_output
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugOutputCallbacks.Output
+ - IDebugOutputCallbacks::Output
 ---
 
 # IDebugOutputCallbacks::Output
@@ -50,14 +49,14 @@ The <b>Output</b> callback method is called by the engine to send output from th
 
 ## -parameters
 
-### -param Mask 
+### -param Mask [in]
 
-[in]
+
 Specifies the <a href="/windows-hardware/drivers/debugger/debug-output-xxx">DEBUG_OUTPUT_XXX</a> bit flags that indicate the nature of the output.
 
-### -param Text 
+### -param Text [in]
 
-[in]
+
 Specifies the output that is being sent.
 
 ## -returns
@@ -69,3 +68,4 @@ The return value is ignored by the engine unless it indicates a remote procedure
 The engine calls this method only if the supplied value of <i>Mask</i> is allowed by the client's output control.
 
 For more information about debugger engine output, see <a href="/windows-hardware/drivers/debugger/input-and-output">Input and Output</a>.
+

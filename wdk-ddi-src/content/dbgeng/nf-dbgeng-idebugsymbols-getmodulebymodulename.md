@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols.GetModuleByModuleName
 title: IDebugSymbols::GetModuleByModuleName (dbgeng.h)
-description: The GetModuleByModuleName method searches through the target's modules for one with the specified name.
+description: The GetModuleByModuleName method searches through the target's modules for one with the specified name. This method belongs to the IDebugSymbols interface.
 old-location: debugger\getmodulebymodulename.htm
 tech.root: debugger
-ms.assetid: 243b79fe-b1b2-48b4-bb0b-c56b787e7b83
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols::GetModuleByModuleName"]
 ms.keywords: GetModuleByModuleName, GetModuleByModuleName method [Windows Debugging], GetModuleByModuleName method [Windows Debugging],IDebugSymbols interface, GetModuleByModuleName method [Windows Debugging],IDebugSymbols2 interface, GetModuleByModuleName method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],GetModuleByModuleName method, IDebugSymbols.GetModuleByModuleName, IDebugSymbols2 interface [Windows Debugging],GetModuleByModuleName method, IDebugSymbols2::GetModuleByModuleName, IDebugSymbols3 interface [Windows Debugging],GetModuleByModuleName method, IDebugSymbols3::GetModuleByModuleName, IDebugSymbols::GetModuleByModuleName, IDebugSymbols_1a407f12-64e8-43a3-b831-ef8c9b701537.xml, dbgeng/IDebugSymbols2::GetModuleByModuleName, dbgeng/IDebugSymbols3::GetModuleByModuleName, dbgeng/IDebugSymbols::GetModuleByModuleName, debugger.getmodulebymodulename
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.GetModuleByModuleName
- - IDebugSymbols2.GetModuleByModuleName
- - IDebugSymbols3.GetModuleByModuleName
+ - IDebugSymbols::GetModuleByModuleName
 ---
 
 # IDebugSymbols::GetModuleByModuleName
@@ -52,24 +49,24 @@ The <b>GetModuleByModuleName</b>  method searches through the target's <a href="
 
 ## -parameters
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 Specifies the name of the desired module.
 
-### -param StartIndex 
+### -param StartIndex [in]
 
-[in]
+
 Specifies the index to start searching from.
 
-### -param Index 
+### -param Index [out, optional]
 
-[out, optional]
+
 Receives the index of the first module with the name <i>Name</i>.  If <i>Index</i> is <b>NULL</b>, this information is not returned.
 
-### -param Base 
+### -param Base [out, optional]
 
-[out, optional]
+
 Receives the location in the target's memory address space of the base of the module.  If <i>Base</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -126,3 +123,4 @@ For more information about modules, see <a href="/windows-hardware/drivers/debug
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

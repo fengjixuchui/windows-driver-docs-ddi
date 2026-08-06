@@ -1,10 +1,9 @@
 ---
 UID: NS:d3dhal._D3DHAL_DP2DRAWINDEXEDPRIMITIVE
 title: _D3DHAL_DP2DRAWINDEXEDPRIMITIVE (d3dhal.h)
-description: DirectX 8.0 and later versions only.
+description: The D3DHAL_DP2DRAWINDEXEDPRIMITIVE structure is used by the D3dDrawPrimitives2 callback function to render a primitive using vertex indices.
 old-location: display\d3dhal_dp2drawindexedprimitive.htm
 tech.root: display
-ms.assetid: b28290c7-2c02-4422-af7b-4188d6f54b54
 ms.date: 05/10/2018
 keywords: ["D3DHAL_DP2DRAWINDEXEDPRIMITIVE structure"]
 ms.keywords: "*LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE, D3DHAL_DP2DRAWINDEXEDPRIMITIVE, D3DHAL_DP2DRAWINDEXEDPRIMITIVE structure [Display Devices], LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE, LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE structure pointer [Display Devices], _D3DHAL_DP2DRAWINDEXEDPRIMITIVE, d3dhal/D3DHAL_DP2DRAWINDEXEDPRIMITIVE, d3dhal/LPD3DHAL_DP2DRAWINDEXEDPRIMITIVE, d3dstrct_61b06507-bfbe-4733-ac52-03d27bac0a07.xml, display.d3dhal_dp2drawindexedprimitive"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dhal.h
 api_name:
+ - _D3DHAL_DP2DRAWINDEXEDPRIMITIVE
  - D3DHAL_DP2DRAWINDEXEDPRIMITIVE
 ---
 
@@ -108,3 +108,4 @@ D3DDP2OP_DRAWINDEXEDPRIMITIVE
 
 
 <a href="/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb">D3dDrawPrimitives2</a>
+

@@ -4,7 +4,6 @@ title: IWDFDevice (wudfddi.h)
 description: The IWDFDevice interface exposes a device object, which is a representation of a device on the system.
 old-location: wdf\iwdfdevice.htm
 tech.root: wdf
-ms.assetid: b0f8a156-e0e0-48d1-9e23-4ac07795df07
 ms.date: 02/26/2018
 keywords: ["IWDFDevice interface"]
 ms.keywords: IWDFDevice, IWDFDevice interface, IWDFDevice interface,described, UMDFDeviceObjectRef_d0dc8041-1d51-457b-8632-e500bf4df724.xml, umdf.iwdfdevice, wdf.iwdfdevice, wudfddi/IWDFDevice
@@ -52,9 +51,9 @@ The <b>IWDFDevice</b> interface exposes a device object, which is a representati
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFDevice</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a>. <b>IWDFDevice</b> also has these types of members:
+The <b>IWDFDevice</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a>. <b>IWDFDevice</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>
 
 ## -remarks

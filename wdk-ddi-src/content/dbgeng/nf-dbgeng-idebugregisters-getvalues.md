@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugRegisters.GetValues
 title: IDebugRegisters::GetValues (dbgeng.h)
-description: The GetValues method gets the value of several of the target's registers.
+description: The GetValues method gets the value of several of the target's registers. This method belongs to the IDebugRegisters interface.
 old-location: debugger\getvalues.htm
 tech.root: debugger
-ms.assetid: d78c54a7-04a5-4c51-bf33-a5b7fb937897
 ms.date: 05/03/2018
 keywords: ["IDebugRegisters::GetValues"]
 ms.keywords: GetValues, GetValues method [Windows Debugging], GetValues method [Windows Debugging],IDebugRegisters interface, GetValues method [Windows Debugging],IDebugRegisters2 interface, IDebugRegisters interface [Windows Debugging],GetValues method, IDebugRegisters.GetValues, IDebugRegisters2 interface [Windows Debugging],GetValues method, IDebugRegisters2::GetValues, IDebugRegisters::GetValues, IDebugRegisters_46e390ee-fd0c-4f5f-babc-d76c10ca2780.xml, dbgeng/IDebugRegisters2::GetValues, dbgeng/IDebugRegisters::GetValues, debugger.getvalues
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugRegisters.GetValues
- - IDebugRegisters2.GetValues
+ - IDebugRegisters::GetValues
 ---
 
 # IDebugRegisters::GetValues
@@ -51,24 +49,24 @@ The <b>GetValues</b> method gets the value of several of the target's <a href="/
 
 ## -parameters
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of registers whose values are requested.
 
-### -param Indices 
+### -param Indices [in, optional]
 
-[in, optional]
+
 Specifies an array that contains the indices of the registers from which to get the values.  The number of elements in this array is <i>Count</i>.  If <i>Indices</i> is <b>NULL</b>, <i>Start</i> is used instead.
 
-### -param Start 
+### -param Start [in]
 
-[in]
+
 If <i>Indices</i> is <b>NULL</b>, the registers will be read consecutively starting at this index.  Otherwise it is ignored.
 
-### -param Values 
+### -param Values [out]
 
-[out]
+
 Receives the values of the registers.  The number of elements this array holds is <i>Count</i>.  See <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_value">DEBUG_VALUE</a> for a description of this parameter type.
 
 ## -returns
@@ -142,3 +140,4 @@ For an overview of the <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-i
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugregisters2">IDebugRegisters2</a>
+

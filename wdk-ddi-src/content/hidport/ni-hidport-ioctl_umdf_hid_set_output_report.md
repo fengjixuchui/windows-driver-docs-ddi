@@ -4,7 +4,6 @@ title: IOCTL_UMDF_HID_SET_OUTPUT_REPORT (hidport.h)
 description: The IOCTL_UMDF_HID_SET_OUTPUT_REPORT control code sends an output report to a top-level collection.
 old-location: hid\ioctl_umdf_hid_set_output_report.htm
 tech.root: hid
-ms.assetid: 9D2BF078-305F-4656-8BA0-F03959209874
 ms.date: 04/30/2018
 keywords: ["IOCTL_UMDF_HID_SET_OUTPUT_REPORT IOCTL"]
 ms.keywords: IOCTL_UMDF_HID_SET_OUTPUT_REPORT, IOCTL_UMDF_HID_SET_OUTPUT_REPORT control, IOCTL_UMDF_HID_SET_OUTPUT_REPORT control code, hid.ioctl_umdf_hid_set_output_report, hidport/IOCTL_UMDF_HID_SET_OUTPUT_REPORT, umdf.ioctl_umdf_hid_set_output_report
@@ -50,6 +49,8 @@ The <b>IOCTL_UMDF_HID_SET_OUTPUT_REPORT</b>
    control code sends an <a href="/windows-hardware/drivers/hid/introduction-to-hid-concepts">output report</a> to a <a href="/windows-hardware/drivers/hid/top-level-collections">top-level collection</a>.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

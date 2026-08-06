@@ -4,7 +4,6 @@ title: _WDF_DMA_ENABLER_CONFIG_FLAGS (wdfdmaenabler.h)
 description: The WDF_DMA_ENABLER_CONFIG_FLAGS enumeration type defines flags that are used in a driver's WDF_DMA_ENABLER_CONFIG structure.
 old-location: wdf\wdf_dma_enabler_config_flags.htm
 tech.root: wdf
-ms.assetid: 8F8C97B2-5C77-4AD0-9434-22108111F5A8
 ms.date: 02/26/2018
 keywords: ["WDF_DMA_ENABLER_CONFIG_FLAGS enumeration"]
 ms.keywords: WDF_DMA_ENABLER_CONFIG_FLAGS, WDF_DMA_ENABLER_CONFIG_FLAGS enumeration, WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION, WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER, _WDF_DMA_ENABLER_CONFIG_FLAGS, kmdf.wdf_dma_enabler_config_flags, wdf.wdf_dma_enabler_config_flags, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_FLAGS, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION, wdfdmaenabler/WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfdmaenabler.h
 api_name:
+ - _WDF_DMA_ENABLER_CONFIG_FLAGS
  - WDF_DMA_ENABLER_CONFIG_FLAGS
 ---
 
@@ -54,7 +54,7 @@ The <b>WDF_DMA_ENABLER_CONFIG_FLAGS</b> enumeration type defines flags that are 
 
 ## -enum-fields
 
-### -field WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION
+### -field WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION:0x00000001
 
            The WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION flag applies only  to the following DMA profiles:
 
@@ -75,7 +75,7 @@ The <b>WDF_DMA_ENABLER_CONFIG_FLAGS</b> enumeration type defines flags that are 
 
 Setting <b>WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION</b> can result in reduced memory usage, particularly when the maximum transfer length is large. However, setting this flag may cause failure to perform DMA operations in low memory conditions. To guarantee forward progress when <b>WDF_DMA_ENABLER_CONFIG_NO_SGLIST_PREALLOCATION</b> is set, a driver might use a separate DMA enabler, or bounce transfers through a common buffer.
 
-### -field WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER
+### -field WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER:0x00000002
 
 The <b>WDF_DMA_ENABLER_CONFIG_REQUIRE_SINGLE_TRANSFER</b> flag is available starting in version 1.19 of KMDF.  This flag also requires DMA version 3.
  To select DMA version 3, set the <b>WdmDmaVersionOverride</b> member of <a href="/windows-hardware/drivers/ddi/wdfdmaenabler/ns-wdfdmaenabler-_wdf_dma_enabler_config">WDF_DMA_ENABLER_CONFIG</a> to 3.
@@ -101,3 +101,4 @@ You can specify a valid bitwise OR of the values on this page for the <b>Flags</
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactionsetsingletransferrequirement">WdfDmaTransactionSetSingleTransferRequirement</a>
+

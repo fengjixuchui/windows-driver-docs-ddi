@@ -4,7 +4,6 @@ title: PFND3DDDI_CREATESYNCHRONIZATIONOBJECT2CB (d3dumddi.h)
 description: Creates a GPU synchronization object that a device context can signal and wait for. Used by WDDM 1.2 and later user-mode display drivers.
 old-location: display\pfncreatesynchronizationobject2cb.htm
 tech.root: display
-ms.assetid: 9B0F058C-B71F-4A4F-A053-F9381A5FD3A8
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CREATESYNCHRONIZATIONOBJECT2CB callback function"]
 ms.keywords: PFND3DDDI_CREATESYNCHRONIZATIONOBJECT2CB, PFND3DDDI_CREATESYNCHRONIZATIONOBJECT2CB callback, d3dumddi/pfnCreateSynchronizationObject2Cb, display.pfncreatesynchronizationobject2cb, pfnCreateSynchronizationObject2Cb, pfnCreateSynchronizationObject2Cb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnCreateSynchronizationObject2Cb
-product:
- - Windows
+ - PFND3DDDI_CREATESYNCHRONIZATIONOBJECT2CB
 ---
 
 # PFND3DDDI_CREATESYNCHRONIZATIONOBJECT2CB callback function
@@ -56,7 +53,7 @@ Creates a GPU synchronization object that a device context can signal and wait f
 
 A handle to the display device (that is, the graphics context) that will own the synchronization object that <i>pfnCreateSynchronizationObject2Cb</i> creates.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -131,3 +128,4 @@ The <i>pfnCreateSynchronizationObject2Cb</i> function returns a kernel-mode hand
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_waitforsynchronizationobject2cb">pfnWaitForSynchronizationObject2Cb</a>
+

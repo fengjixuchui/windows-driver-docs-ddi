@@ -1,10 +1,9 @@
 ---
 UID: NS:usbfnbase._USBFN_INTERFACE_INFO
 title: _USBFN_INTERFACE_INFO (usbfnbase.h)
-description: Describes an interface and its endpoints.
+description: Learn how USBFN_INTERFACE_INFO describes an interface and its endpoints.
 old-location: buses\usbfn_interface_info.htm
 tech.root: usbref
-ms.assetid: 54647A9E-E0AB-4DE7-93FB-D0232D6AC646
 ms.date: 05/07/2018
 keywords: ["USBFN_INTERFACE_INFO structure"]
 ms.keywords: "*PUSBFN_INTERFACE_INFO, PUSBFN_INTERFACE_INFO, PUSBFN_INTERFACE_INFO structure pointer [Buses], USBFN_INTERFACE_INFO, USBFN_INTERFACE_INFO structure [Buses], _USBFN_INTERFACE_INFO, buses.usbfn_interface_info, usbfnbase/PUSBFN_INTERFACE_INFO, usbfnbase/USBFN_INTERFACE_INFO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - usbfnbase.h
 api_name:
+ - _USBFN_INTERFACE_INFO
+ - PUSBFN_INTERFACE_INFO
  - USBFN_INTERFACE_INFO
 ---
 
@@ -73,3 +74,4 @@ Pointer to the first element in the array of that contains the interface descrip
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/usbfnbase/ne-usbfnbase-_usbfn_bus_speed">USBFN_BUS_SPEED</a>
+

@@ -4,8 +4,7 @@ title: WdfDeviceCreate function (wdfdevice.h)
 description: The WdfDeviceCreate method creates a framework device object.
 old-location: wdf\wdfdevicecreate.htm
 tech.root: wdf
-ms.assetid: 2a72d08a-a95b-4d50-a47b-e0e31ad43676
-ms.date: 02/26/2018
+ms.date: 03/02/2018
 keywords: ["WdfDeviceCreate function"]
 ms.keywords: DFDeviceObjectGeneralRef_bd1ae89e-0e52-4c30-8ca4-9eaf6994a2f2.xml, WdfDeviceCreate, WdfDeviceCreate method, kmdf.wdfdevicecreate, wdf.wdfdevicecreate, wdfdevice/WdfDeviceCreate
 req.header: wdfdevice.h
@@ -49,95 +48,37 @@ api_name:
 
 ## -description
 
-<p class="CCE_Message">[Applies to KMDF and UMDF]</p>
+[Applies to KMDF and UMDF]
 
 The <b>WdfDeviceCreate</b> method creates a framework device object.
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in, out]
 
-[in, out]
 The address of a pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure. If <b>WdfDeviceCreate</b> encounters no errors, it sets the pointer to <b>NULL</b>.
 
-### -param DeviceAttributes 
+### -param DeviceAttributes [in, optional]
 
-[in, optional]
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the new object. (The structure's <b>ParentObject</b> member must be <b>NULL</b>.) This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param Device 
+### -param Device [out]
 
-[out]
 A pointer to a location that receives a handle to the new framework device object.
 
 ## -returns
 
-If the <b>WdfDeviceCreate</b> method encounters no errors, it returns STATUS_SUCCESS. Additional return values include:
+If the **WdfDeviceCreate** method encounters no errors, it returns STATUS_SUCCESS. Additional return values include:
 
-<table>
-<tr>
-<th>Return code</th>
-<th>Description</th>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>STATUS_INVALID_PARAMETER</b></dt>
-</dl>
-</td>
-<td width="60%">
-An invalid <i>Device</i> or <i>DeviceInit</i> handle is supplied.
+|Return code|Description|
+|--- |--- |
+|**STATUS_INVALID_PARAMETER**|An invalid *Device* or *DeviceInit* handle is supplied.|
+|**STATUS_INVALID_DEVICE_STATE**|The driver has already created a device object for the device.|
+|**STATUS_INVALID_SECURITY_DESCR**|The driver called **WdfDeviceInitAssignSDDLString** or **WdfDeviceInitSetDeviceClass** but did not provide a name for the device object.|
+|**STATUS_INSUFFICIENT_RESOURCES**|A device object could not be allocated.|
+|**STATUS_OBJECT_NAME_COLLISION**|The device name that was specified by a call to **WdfDeviceInitAssignName** already exists. The driver can call **WdfDeviceInitAssignName** again to assign a new name.|
 
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>STATUS_INVALID_DEVICE_STATE</b></dt>
-</dl>
-</td>
-<td width="60%">
-The driver has already created a device object for the device.
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>STATUS_INVALID_SECURITY_DESCR</b></dt>
-</dl>
-</td>
-<td width="60%">
-the driver called <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitassignsddlstring">WdfDeviceInitAssignSDDLString</a> or <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitsetdeviceclass">WdfDeviceInitSetDeviceClass</a> but did not provide a name for the device object.
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>STATUS_INSUFFICIENT_RESOURCES</b></dt>
-</dl>
-</td>
-<td width="60%">
-A  device object could not be allocated.
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>STATUS_OBJECT_NAME_COLLISION</b></dt>
-</dl>
-</td>
-<td width="60%">
-The device name that was specified by a call to <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdeviceinitassignname">WdfDeviceInitAssignName</a> already exists. The driver can call <b>WdfDeviceInitAssignName</b> again to assign a new name.
-
-</td>
-</tr>
-</table>
- 
-
-For a list of other return values that WdfDeviceCreate can return, see <a href="/windows-hardware/drivers/wdf/framework-object-creation-errors">Framework Object Creation Errors</a>.
+For a list of other return values that **WdfDeviceCreate** can return, see <a href="/windows-hardware/drivers/wdf/framework-object-creation-errors">Framework Object Creation Errors</a>.
 
 The method might return other <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS values</a>.
 

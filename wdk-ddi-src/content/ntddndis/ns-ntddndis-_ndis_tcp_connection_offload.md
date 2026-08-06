@@ -4,7 +4,6 @@ title: _NDIS_TCP_CONNECTION_OFFLOAD (ntddndis.h)
 description: The NDIS_TCP_CONNECTION_OFFLOAD structure provides connection offload information for current settings and for supported capabilities.
 old-location: netvista\ndis_tcp_connection_offload.htm
 tech.root: netvista
-ms.assetid: d37a773d-0a83-4592-9c21-3ceaa6454549
 ms.date: 07/26/2019
 keywords: ["NDIS_TCP_CONNECTION_OFFLOAD structure"]
 ms.keywords: "*PNDIS_TCP_CONNECTION_OFFLOAD, NDIS_TCP_CONNECTION_OFFLOAD, NDIS_TCP_CONNECTION_OFFLOAD structure [Network Drivers Starting with Windows Vista], PNDIS_TCP_CONNECTION_OFFLOAD, PNDIS_TCP_CONNECTION_OFFLOAD structure pointer [Network Drivers Starting with Windows Vista], _NDIS_TCP_CONNECTION_OFFLOAD, netvista.ndis_tcp_connection_offload, ntddndis/NDIS_TCP_CONNECTION_OFFLOAD, ntddndis/PNDIS_TCP_CONNECTION_OFFLOAD, tcpip_offload_ref_d53e40a7-cf71-4281-ba14-80d913f810d7.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_TCP_CONNECTION_OFFLOAD
+ - PNDIS_TCP_CONNECTION_OFFLOAD
  - NDIS_TCP_CONNECTION_OFFLOAD
 ---
 
@@ -58,7 +59,7 @@ The NDIS_TCP_CONNECTION_OFFLOAD structure provides connection offload informatio
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_TCP_CONNECTION_OFFLOAD structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to 
@@ -228,7 +229,7 @@ Note that an offload target cannot directly indicate new offload capabilities. I
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -253,3 +254,4 @@ Note that an offload target cannot directly indicate new offload capabilities. I
 
 <a href="/windows-hardware/drivers/network/oid-tcp-connection-offload-hardware-capabilities">
    OID_TCP_CONNECTION_OFFLOAD_HARDWARE_CAPABILITIES</a>
+

@@ -4,7 +4,6 @@ title: IWDFRemoteTarget (wudfddi.h)
 description: To obtain the IWDFRemoteTarget interface, drivers call IWDFDevice2::CreateRemoteTarget.
 old-location: wdf\iwdfremotetarget.htm
 tech.root: wdf
-ms.assetid: 60164136-4d4b-4e42-8504-ddd907edf0e9
 ms.date: 02/26/2018
 keywords: ["IWDFRemoteTarget interface"]
 ms.keywords: IWDFRemoteTarget, IWDFRemoteTarget interface, IWDFRemoteTarget interface,described, UMDFIoTargetObjectRef_5b14493b-370a-40a0-b571-dbd03b2a19a0.xml, umdf.iwdfremotetarget, wdf.iwdfremotetarget, wudfddi/IWDFRemoteTarget
@@ -52,7 +51,7 @@ To obtain the <b>IWDFRemoteTarget</b> interface, drivers call <a href="/windows-
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFRemoteTarget</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotarget2">IWDFIoTarget2</a>. <b>IWDFRemoteTarget</b> also has these types of members:
+The <b>IWDFRemoteTarget</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotarget2">IWDFIoTarget2</a>. <b>IWDFRemoteTarget</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>

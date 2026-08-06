@@ -4,7 +4,6 @@ title: IStiDevice::GetCapabilities (sti.h)
 description: The IStiDevice::GetCapabilities method returns a still image device's capabilities.
 old-location: image\istidevice_getcapabilities.htm
 tech.root: image
-ms.assetid: 4c5d8834-a78d-443e-bfec-1d9fcddb9331
 ms.date: 05/03/2018
 keywords: ["IStiDevice::GetCapabilities"]
 ms.keywords: GetCapabilities, GetCapabilities method [Imaging Devices], GetCapabilities method [Imaging Devices],IStiDevice interface, IStiDevice interface [Imaging Devices],GetCapabilities method, IStiDevice.GetCapabilities, IStiDevice::GetCapabilities, image.istidevice_getcapabilities, sti/IStiDevice::GetCapabilities, stifnc_00882aa7-e8cd-4218-9d05-b9d1f56a6652.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - sti.h
 api_name:
- - IStiDevice.GetCapabilities
+ - IStiDevice::GetCapabilities
 ---
 
 # IStiDevice::GetCapabilities
@@ -50,9 +49,9 @@ The <b>IStiDevice::GetCapabilities</b> method returns a still image device's cap
 
 ## -parameters
 
-### -param pDevCaps 
+### -param pDevCaps [in, out]
 
-[in, out]
+
 Caller-supplied pointer to an empty <a href="/windows-hardware/drivers/ddi/sti/ns-sti-_sti_dev_caps">STI_DEV_CAPS</a> structure.
 
 ## -returns
@@ -64,3 +63,4 @@ If the operation succeeds, the method returns S_OK. Otherwise, it returns one of
 The <b>IStiDevice::GetCapabilities</b> method returns device capability flags in the caller-supplied <a href="/windows-hardware/drivers/ddi/sti/ns-sti-_sti_dev_caps">STI_DEV_CAPS</a> structure.
 
 Before calling <b>IStiDevice::GetCapabilities</b>, clients of the <b>IStiDevice</b> COM interface must call <a href="/previous-versions/windows/hardware/drivers/ff543778(v=vs.85)">IStillImage::CreateDevice</a> to obtain an <b>IStiDevice</b> interface pointer, which provides access to a specified device.
+

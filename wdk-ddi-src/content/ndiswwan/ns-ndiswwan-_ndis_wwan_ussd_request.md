@@ -4,7 +4,6 @@ title: _NDIS_WWAN_USSD_REQUEST (ndiswwan.h)
 description: The NDIS_WWAN_USSD_EVENT structure represents an Unstructured Supplementary Service Data (USSD) NDIS request.
 old-location: netvista\ndis_wwan_ussd_request.htm
 tech.root: netvista
-ms.assetid: B98143A1-7F7D-4130-A388-72A21B89E6D8
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_USSD_REQUEST structure"]
 ms.keywords: "*PNDIS_WWAN_USSD_REQUEST, NDIS_WWAN_USSD_REQUEST, NDIS_WWAN_USSD_REQUEST structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_USSD_REQUEST, PNDIS_WWAN_USSD_REQUEST structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_USSD_REQUEST, ndiswwan/NDIS_WWAN_USSD_REQUEST, ndiswwan/PNDIS_WWAN_USSD_REQUEST, netvista.ndis_wwan_ussd_request"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_USSD_REQUEST
+ - PNDIS_WWAN_USSD_REQUEST
  - NDIS_WWAN_USSD_REQUEST
 ---
 
@@ -101,7 +102,7 @@ sizeof(NDIS_WWAN_USSD_REQUEST)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field UssdRequest
 
@@ -111,3 +112,4 @@ A formatted
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_ussd_request">WWAN_USSD_REQUEST</a>
+

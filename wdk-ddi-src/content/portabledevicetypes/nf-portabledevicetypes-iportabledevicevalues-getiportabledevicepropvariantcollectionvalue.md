@@ -4,7 +4,6 @@ title: IPortableDeviceValues::GetIPortableDevicePropVariantCollectionValue (port
 description: Retrieves an IPortableDevicePropVariantCollection value (type VT_UNKNOWN) that is specified by a key.
 old-location: wpddk\iportabledevicevalues_getiportabledevicepropvariantcollectionvalue.htm
 tech.root: wpd_dk
-ms.assetid: fd3f1a45-1787-4390-9d0e-2ed9295904bb
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::GetIPortableDevicePropVariantCollectionValue"]
 ms.keywords: GetIPortableDevicePropVariantCollectionValue, GetIPortableDevicePropVariantCollectionValue method, GetIPortableDevicePropVariantCollectionValue method,IPortableDeviceValues interface, IPortableDeviceValues interface,GetIPortableDevicePropVariantCollectionValue method, IPortableDeviceValues.GetIPortableDevicePropVariantCollectionValue, IPortableDeviceValues::GetIPortableDevicePropVariantCollectionValue, IPortableDeviceValuesGetIPortableDevicePropVariantCollectionValue, portabledevicetypes/IPortableDeviceValues::GetIPortableDevicePropVariantCollectionValue, wpddk.iportabledevicevalues_getiportabledevicepropvariantcollectionvalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.GetIPortableDevicePropVariantCollectionValue
+ - IPortableDeviceValues::GetIPortableDevicePropVariantCollectionValue
 ---
 
 # IPortableDeviceValues::GetIPortableDevicePropVariantCollectionValue
@@ -51,14 +50,14 @@ Retrieves an <b>IPortableDevicePropVariantCollection</b> value (type VT_UNKNOWN)
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> key that specifies the item to retrieve.
 
-### -param ppValue 
+### -param ppValue [out]
 
-[out]
+
 Address of a variable that receives a pointer to the retrieved <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicepropvariantcollection">IPortableDevicePropVariantCollection</a> interface. The caller is responsible for calling <b>Release</b> on the retrieved interface.
 
 ## -returns
@@ -116,3 +115,4 @@ None.
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-setiportabledevicepropvariantcollectionvalue">IPortableDeviceValues::SetIPortableDevicePropVariantCollectionValue</a>
+

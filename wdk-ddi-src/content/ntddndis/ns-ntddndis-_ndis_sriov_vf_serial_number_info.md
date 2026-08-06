@@ -4,7 +4,6 @@ title: _NDIS_SRIOV_VF_SERIAL_NUMBER_INFO (ntddndis.h)
 description: The NDIS_SRIOV_VF_SERIAL_NUMBER_INFO structure contains the serial number associated with a PCI Express (PCIe) Virtual Function (VF) network adapter. This adapter is exposed in the guest operating system of a Hyper-V child partition.
 old-location: netvista\ndis_sriov_vf_serial_number_info.htm
 tech.root: netvista
-ms.assetid: ff20b137-4b3c-4e7b-b464-81e15b536081
 ms.date: 05/02/2018
 keywords: ["NDIS_SRIOV_VF_SERIAL_NUMBER_INFO structure"]
 ms.keywords: "*PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO, NDIS_SRIOV_VF_SERIAL_NUMBER_INFO, NDIS_SRIOV_VF_SERIAL_NUMBER_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO, PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SRIOV_VF_SERIAL_NUMBER_INFO, netvista.ndis_sriov_vf_serial_number_info, ntddndis/NDIS_SRIOV_VF_SERIAL_NUMBER_INFO, ntddndis/PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_SRIOV_VF_SERIAL_NUMBER_INFO
+ - PNDIS_SRIOV_VF_SERIAL_NUMBER_INFO
  - NDIS_SRIOV_VF_SERIAL_NUMBER_INFO
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_SRIOV_VF_SERIAL_NUMBER_INFO</b> structure contains the serial number
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_SRIOV_VF_SERIAL_NUMBER_INFO</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_SRIOV_VF_SERIAL_NUMBER_INFO</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 NDIS sets the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SRIOV_VF_SERIAL_NUMBER_INFO</b> structure, NDIS sets the <b>Revision</b> member of <b>Header</b> to the following value: 
 
@@ -88,8 +89,9 @@ The virtualization stack uses the serial number to map the VF network adapter in
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/network/oid-sriov-vf-serial-number">OID_SRIOV_VF_SERIAL_NUMBER</a>
+

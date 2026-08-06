@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols.SetImagePath
 title: IDebugSymbols::SetImagePath (dbgeng.h)
-description: The SetImagePath method sets the executable image path.
+description: The SetImagePath method sets the executable image path. This method belongs to the IDebugSymbols interface.
 old-location: debugger\setimagepath.htm
 tech.root: debugger
-ms.assetid: 4f6de771-c54f-4f27-900a-98e94b94f957
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols::SetImagePath"]
 ms.keywords: IDebugSymbols interface [Windows Debugging],SetImagePath method, IDebugSymbols.SetImagePath, IDebugSymbols2 interface [Windows Debugging],SetImagePath method, IDebugSymbols2::SetImagePath, IDebugSymbols3 interface [Windows Debugging],SetImagePath method, IDebugSymbols3::SetImagePath, IDebugSymbols::SetImagePath, IDebugSymbols_062aa9c4-33c9-4a73-a11f-7d5e6b94e96c.xml, SetImagePath, SetImagePath method [Windows Debugging], SetImagePath method [Windows Debugging],IDebugSymbols interface, SetImagePath method [Windows Debugging],IDebugSymbols2 interface, SetImagePath method [Windows Debugging],IDebugSymbols3 interface, dbgeng/IDebugSymbols2::SetImagePath, dbgeng/IDebugSymbols3::SetImagePath, dbgeng/IDebugSymbols::SetImagePath, debugger.setimagepath
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.SetImagePath
- - IDebugSymbols2.SetImagePath
- - IDebugSymbols3.SetImagePath
+ - IDebugSymbols::SetImagePath
 ---
 
 # IDebugSymbols::SetImagePath
@@ -52,9 +49,9 @@ The <b>SetImagePath</b>  method sets the executable image path.
 
 ## -parameters
 
-### -param Path 
+### -param Path [in]
 
-[in]
+
 Specifies the new executable image path.  This is a string that contains directories separated by semicolons (<b>;</b>).
 
 ## -returns
@@ -104,3 +101,4 @@ The executable image path can consist of several directories separated by semico
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

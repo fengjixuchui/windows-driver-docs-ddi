@@ -4,7 +4,6 @@ title: KsGateRemoveOnInputFromAnd function (ks.h)
 description: The KsGateRemoveOnInputFromAnd function removes an existing input that is in the ON state from an AND gate.
 old-location: stream\ksgateremoveoninputfromand.htm
 tech.root: stream
-ms.assetid: ee8bf34e-f7f6-4b1a-8089-2f7a7333c403
 ms.date: 04/23/2018
 keywords: ["KsGateRemoveOnInputFromAnd function"]
 ms.keywords: KsGateRemoveOnInputFromAnd, KsGateRemoveOnInputFromAnd function [Streaming Media Devices], avfunc_216ba85c-20fe-4160-a76f-53cab6693641.xml, ks/KsGateRemoveOnInputFromAnd, stream.ksgateremoveoninputfromand
@@ -50,9 +49,9 @@ The<b> KsGateRemoveOnInputFromAnd </b>function removes an existing input that is
 
 ## -parameters
 
-### -param AndGate 
+### -param AndGate [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksgate">KSGATE</a> structure representing the AND gate from which to remove an ON input.
 
 ## -remarks

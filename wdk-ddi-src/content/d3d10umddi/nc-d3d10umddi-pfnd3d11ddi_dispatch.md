@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_DISPATCH
 title: PFND3D11DDI_DISPATCH (d3d10umddi.h)
 description: The Dispatch function executes the compute shader.
 old-location: display\dispatch.htm
-ms.assetid: 6fbbf05a-efb0-4f24-8811-b87141cf2daa
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_DISPATCH callback function"]
 ms.keywords: Dispatch, Dispatch callback function [Display Devices], PFND3D11DDI_DISPATCH, PFND3D11DDI_DISPATCH callback, UserModeDisplayDriverDx11_Functions_1b4b62fc-3cc5-4506-9a61-30ee65f8ffcd.xml, d3d10umddi/Dispatch, display.dispatch
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - Dispatch
+ - PFND3D11DDI_DISPATCH
 ---
 
 # PFND3D11DDI_DISPATCH callback function
@@ -50,25 +49,25 @@ The <b>Dispatch</b> function executes the compute shader.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *ThreadGroupCountX* [in]
 
  The size, in thread groups, of the x-dimension of the thread-group grid.  The maximum size is 65535.
 
-### -param Arg3
+### -param unnamedParam3
 
 *ThreadGroupCountY* [in]
 
  The size, in thread groups, of the y-dimension of the thread-group grid.  The maximum size is 65535.
 
-### -param Arg4
+### -param unnamedParam4
 
 *ThreadGroupCountZ* [in]
 
@@ -97,3 +96,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

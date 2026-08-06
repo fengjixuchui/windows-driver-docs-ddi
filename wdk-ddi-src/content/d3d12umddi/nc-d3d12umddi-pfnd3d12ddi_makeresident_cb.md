@@ -1,8 +1,7 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_MAKERESIDENT_CB
 title: PFND3D12DDI_MAKERESIDENT_CB (d3d12umddi.h)
-description: pfnMakeResidentCb is used to instruct the OS to add a resource to the device residency list and increment the residency reference count on this allocation.
-ms.assetid: 77df8a7f-140c-44f3-ba77-c80c102dbc7e
+description: PFND3D12DDI_MAKERESIDENT_CB instructs the OS to add a resource to the device residency list and to increment the residency reference count on this allocation.
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_MAKERESIDENT_CB callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_MAKERESIDENT_CB
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -59,7 +56,7 @@ A handle to the display device to be handled in the runtime.
 
 A handle to the paging queue to be handled in the runtime.
 
-### -param Arg3
+### -param unnamedParam3
 
 Pointer to a [D3DDDI_MAKERESIDENT](../d3dukmdt/ns-d3dukmdt-d3dddi_makeresident.md) structure.
 

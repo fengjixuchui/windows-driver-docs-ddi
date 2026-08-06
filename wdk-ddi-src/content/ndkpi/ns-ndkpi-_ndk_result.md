@@ -4,7 +4,6 @@ title: _NDK_RESULT (ndkpi.h)
 description: The NDK_RESULT structure returns the results for an NDK request operation.
 old-location: netvista\ndk_result.htm
 tech.root: netvista
-ms.assetid: B7898C81-E90D-4210-BEAE-1E629FCD7195
 ms.date: 05/02/2018
 keywords: ["NDK_RESULT structure"]
 ms.keywords: NDK_RESULT, NDK_RESULT structure [Network Drivers Starting with Windows Vista], _NDK_RESULT, ndkpi/NDK_RESULT, netvista.ndk_result
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
+ - _NDK_RESULT
  - NDK_RESULT
 ---
 
@@ -83,3 +83,4 @@ A request context value specified by the NDK consumer when  a request is posted.
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_receive">NDK_FN_RECEIVE</a>
+

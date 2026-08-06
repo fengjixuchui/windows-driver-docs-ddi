@@ -4,7 +4,6 @@ title: _NDIS_FILTER_RESTART_PARAMETERS (ndis.h)
 description: The NDIS_FILTER_RESTART_PARAMETERS structure defines the restart parameters for the filter module.
 old-location: netvista\ndis_filter_restart_parameters.htm
 tech.root: netvista
-ms.assetid: f61e8c1b-5cc5-4d61-a4e2-39ca402cd710
 ms.date: 05/02/2018
 keywords: ["NDIS_FILTER_RESTART_PARAMETERS structure"]
 ms.keywords: "*PNDIS_FILTER_RESTART_PARAMETERS, NDIS_FILTER_RESTART_PARAMETERS, NDIS_FILTER_RESTART_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_FILTER_RESTART_PARAMETERS, PNDIS_FILTER_RESTART_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_FILTER_RESTART_PARAMETERS, filter_structures_ref_35344063-f39b-4a73-8069-4a47a61d9f2a.xml, ndis/NDIS_FILTER_RESTART_PARAMETERS, ndis/PNDIS_FILTER_RESTART_PARAMETERS, netvista.ndis_filter_restart_parameters"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_FILTER_RESTART_PARAMETERS
+ - PNDIS_FILTER_RESTART_PARAMETERS
  - NDIS_FILTER_RESTART_PARAMETERS
 ---
 
@@ -58,7 +59,7 @@ The NDIS_FILTER_RESTART_PARAMETERS structure defines the restart parameters for 
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure
      for the NDIS_FILTER_RESTART_PARAMETERS structure. NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_FILTER_RESTART_PARAMETERS, the 
@@ -128,7 +129,7 @@ Filter drivers can modify the restart attributes that are specified by underlyin
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -137,3 +138,4 @@ Filter drivers can modify the restart attributes that are specified by underlyin
 
 
 <a href="/windows-hardware/drivers/network/oid-gen-physical-medium">OID_GEN_PHYSICAL_MEDIUM</a>
+

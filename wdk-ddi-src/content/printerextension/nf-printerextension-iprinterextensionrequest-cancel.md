@@ -2,16 +2,14 @@
 UID: NF:printerextension.IPrinterExtensionRequest.Cancel
 title: IPrinterExtensionRequest::Cancel (printerextension.h)
 description: Completes the extension event with a cancellation.
-old-location: print\iprinterextensionrequest_cancel.htm
 tech.root: print
-ms.assetid: CE5C2999-37D7-4702-B94D-E3131AE34E78
-ms.date: 04/20/2018
+ms.date: 08/03/2022
 keywords: ["IPrinterExtensionRequest::Cancel"]
 ms.keywords: Cancel, Cancel method [Print Devices], Cancel method [Print Devices],IPrinterExtensionRequest interface, IPrinterExtensionRequest interface [Print Devices],Cancel method, IPrinterExtensionRequest.Cancel, IPrinterExtensionRequest::Cancel, print.iprinterextensionrequest_cancel, printerextension/IPrinterExtensionRequest::Cancel
 req.header: printerextension.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Windows 8
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,11 +36,8 @@ api_type:
 api_location:
  - Printerextension.h
 api_name:
- - IPrinterExtensionRequest.Cancel
+ - IPrinterExtensionRequest::Cancel
 ---
-
-# IPrinterExtensionRequest::Cancel
-
 
 ## -description
 
@@ -52,20 +47,16 @@ Completes the extension event with a cancellation.
 
 ### -param hrStatus
 
-### -param bstrLogMessage 
-
-[in]
-The log message.
-
-
-#### - hr [in]
-
 The operation result.
+
+### -param bstrLogMessage [in]
+
+The log message.
 
 ## -returns
 
-This method returns an <b>HRESULT</b> value.
+This method returns an **HRESULT** value.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensionrequest">IPrinterExtensionRequest</a>
+[IPrinterExtensionRequest](./nn-printerextension-iprinterextensionrequest.md)

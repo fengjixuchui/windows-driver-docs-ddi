@@ -4,7 +4,6 @@ title: W_INITIATE_OFFLOAD_HANDLER (ndischimney.h)
 description: MiniportInitiateOffload offloads TCP chimney state from the host stack.
 old-location: netvista\miniportinitiateoffload.htm
 tech.root: netvista
-ms.assetid: f430642b-01bf-4ed7-bfea-e8dd8d5a8208
 ms.date: 05/02/2018
 keywords: ["W_INITIATE_OFFLOAD_HANDLER callback function"]
 ms.keywords: MiniportInitiateOffload, MiniportInitiateOffload callback function [Network Drivers Starting with Windows Vista], W_INITIATE_OFFLOAD_HANDLER, W_INITIATE_OFFLOAD_HANDLER callback, ndischimney/MiniportInitiateOffload, netvista.miniportinitiateoffload, tcp_chim_miniport_func_58c338e0-ea8e-41c2-a781-a32f4be7758c.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndischimney.h
 api_name:
- - MiniportInitiateOffload
+ - W_INITIATE_OFFLOAD_HANDLER
 ---
 
 # W_INITIATE_OFFLOAD_HANDLER callback function
@@ -52,9 +51,9 @@ api_name:
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 The handle to an offload-target allocated context area in which the offload target maintains state
      information about this instance of the adapter. The miniport driver provided this handle to NDIS when it
      called 
@@ -63,9 +62,9 @@ The handle to an offload-target allocated context area in which the offload targ
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">
      MiniportInitializeEx</a> function.
 
-### -param OffloadBlockList 
+### -param OffloadBlockList [in, out]
 
-[in, out]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_miniport_offload_block_list">
      NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure that can be a stand-alone structure or the root of a
@@ -142,3 +141,4 @@ For each state object that it offloads, the offload target must also supply a PV
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+

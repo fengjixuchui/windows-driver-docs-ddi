@@ -1,15 +1,13 @@
 ---
 UID: NF:prnasntp.IPrintAsyncCookie.CancelAsyncCall
 title: IPrintAsyncCookie::CancelAsyncCall (prnasntp.h)
-description: 
-old-location: print\iprintasyncnotify_cancelasynccall.htm
+description: Defines the IPrintAsyncCookie::CancelAsyncCall method.
 tech.root: print
-ms.assetid: F5228B4C-B5CC-4F7F-91E6-B5BCED76BF7A
-ms.date: 04/20/2018
+ms.date: 07/26/2022
 keywords: ["IPrintAsyncCookie::CancelAsyncCall"]
 ms.keywords: CancelAsyncCall, CancelAsyncCall method [Print Devices], CancelAsyncCall method [Print Devices],IPrintAsyncCookie interface, IPrintAsyncCookie interface [Print Devices],CancelAsyncCall method, IPrintAsyncCookie.CancelAsyncCall, IPrintAsyncCookie::CancelAsyncCall, print.iprintasyncnotify_cancelasynccall, prnasntp/IPrintAsyncCookie::CancelAsyncCall
 req.header: prnasntp.h
-req.include-header: 
+req.include-header: Prnasntp.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -38,18 +36,23 @@ api_type:
 api_location:
  - Prnasntp.h
 api_name:
- - IPrintAsyncCookie.CancelAsyncCall
+ - IPrintAsyncCookie::CancelAsyncCall
 ---
-
-# IPrintAsyncCookie::CancelAsyncCall
-
 
 ## -description
 
+Defines the **IPrintAsyncCookie::CancelAsyncCall** method.
+
+## -parameters
+
+### -param unnamedParam1
+
+Defines the **HRESULT** parameter *unnamedParam1*.
+
 ## -returns
 
-If this method succeeds, it returns <b xmlns:loc="https://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="https://microsoft.com/wdcml/l10n">HRESULT</b> error code.
+If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/prnasntp/nn-prnasntp-iprintasynccookie">IPrintAsyncCookie</a>
+[IPrintAsyncCookie](./nn-prnasntp-iprintasynccookie.md)

@@ -4,7 +4,6 @@ title: _NDIS_OPER_STATE (ntddndis.h)
 description: The NDIS_OPER_STATE structure provides the current operational state of an NDIS network interface.
 old-location: netvista\ndis_oper_state.htm
 tech.root: netvista
-ms.assetid: c08f8bcd-23fc-445c-9c42-e5c4edc75d78
 ms.date: 05/02/2018
 keywords: ["NDIS_OPER_STATE structure"]
 ms.keywords: "*PNDIS_OPER_STATE, NDIS_OPER_STATE, NDIS_OPER_STATE structure [Network Drivers Starting with Windows Vista], PNDIS_OPER_STATE, PNDIS_OPER_STATE structure pointer [Network Drivers Starting with Windows Vista], _NDIS_OPER_STATE, ndis_status_ref_d5bb44f8-a279-4806-b81b-87e109078a82.xml, netvista.ndis_oper_state, ntddndis/NDIS_OPER_STATE, ntddndis/PNDIS_OPER_STATE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_OPER_STATE
+ - PNDIS_OPER_STATE
  - NDIS_OPER_STATE
 ---
 
@@ -58,7 +59,7 @@ The NDIS_OPER_STATE structure provides the current operational state of an NDIS 
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_OPER_STATE structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -121,7 +122,7 @@ NDIS_STATUS_OPER_STATUS indicates the current operational state of an NDIS netwo
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -134,3 +135,4 @@ NDIS_STATUS_OPER_STATUS indicates the current operational state of an NDIS netwo
 
 
 <a href="/windows/win32/api/ifdef/ne-ifdef-net_if_oper_status">NET_IF_OPER_STATUS</a>
+

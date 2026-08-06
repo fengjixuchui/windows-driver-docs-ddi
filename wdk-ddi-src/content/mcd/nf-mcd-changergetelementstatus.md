@@ -4,7 +4,6 @@ title: ChangerGetElementStatus function (mcd.h)
 description: ChangerGetElementStatus handles the device-specific aspects of a device-control IRP with the IOCTL code IOCTL_CHANGER_GET_ELEMENT_STATUS.
 old-location: storage\changergetelementstatus.htm
 tech.root: storage
-ms.assetid: 8114d029-fe6e-4466-9e54-5ceadef96949
 ms.date: 03/29/2018
 keywords: ["ChangerGetElementStatus function"]
 ms.keywords: ChangerGetElementStatus, ChangerGetElementStatus function [Storage Devices], chgrmini_b0e442c7-18c4-4086-b036-3db43177f6e5.xml, mcd/ChangerGetElementStatus, storage.changergetelementstatus
@@ -50,14 +49,14 @@ api_name:
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the device object that represents the changer.
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Pointer to the IRP.
 
 ## -returns
@@ -109,7 +108,7 @@ The changer class driver checks the input and output buffer lengths in the I/O s
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddchgr/ns-ntddchgr-_changer_read_element_status">CHANGER_READ_ELEMENT STATUS</a>
+<a href="/windows-hardware/drivers/ddi/ntddchgr/ns-ntddchgr-_changer_read_element_status">CHANGER_READ_ELEMENT_STATUS</a>
 
 
 

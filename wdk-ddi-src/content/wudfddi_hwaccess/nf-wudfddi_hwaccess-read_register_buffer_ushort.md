@@ -4,7 +4,6 @@ title: READ_REGISTER_BUFFER_USHORT function (wudfddi_hwaccess.h)
 description: The READ_REGISTER_BUFFER_USHORT function reads a number of USHORT values from the specified register address into a buffer.
 old-location: wdf\read_register_buffer_ushort.htm
 tech.root: wdf
-ms.assetid: 0CA07C11-7E46-4225-AC61-5183C322604E
 ms.date: 02/26/2018
 keywords: ["READ_REGISTER_BUFFER_USHORT function"]
 ms.keywords: READ_REGISTER_BUFFER_USHORT, READ_REGISTER_BUFFER_USHORT function, umdf.read_register_buffer_ushort, wdf.read_register_buffer_ushort, wudfddi_hwaccess/READ_REGISTER_BUFFER_USHORT
@@ -52,24 +51,24 @@ The <b>READ_REGISTER_BUFFER_USHORT</b> function reads a number of USHORT values 
 
 ## -parameters
 
-### -param pDevice 
+### -param pDevice [in]
 
-[in]
+
 Specifies a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a> interface for the device object of the device to access.
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the register, which must be a mapped range in memory space.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 A pointer to a buffer into which an array of USHORT values is read.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of USHORT values to be read into the buffer.
 
 ## -remarks

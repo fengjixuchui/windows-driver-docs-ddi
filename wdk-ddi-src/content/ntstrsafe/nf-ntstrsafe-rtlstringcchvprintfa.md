@@ -4,7 +4,6 @@ title: RtlStringCchVPrintfA function (ntstrsafe.h)
 description: The RtlStringCchVPrintfW and RtlStringCchVPrintfA functions create a character-counted text string, with formatting that is based on supplied formatting information.
 old-location: kernel\rtlstringcchvprintf.htm
 tech.root: kernel
-ms.assetid: a3552042-15e6-4778-8026-a4b615228dc7
 ms.date: 04/30/2018
 keywords: ["RtlStringCchVPrintfA function"]
 ms.keywords: RtlStringCchVPrintf, RtlStringCchVPrintfA, RtlStringCchVPrintfW, RtlStringCchVPrintfW function [Kernel-Mode Driver Architecture], kernel.rtlstringcchvprintf, ntstrsafe/RtlStringCchVPrintfA, ntstrsafe/RtlStringCchVPrintfW, safestrings_7e5dc683-a092-4540-a6e5-81b72bae11ec.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -39,9 +38,7 @@ api_location:
  - Ntstrsafe.lib
  - Ntstrsafe.dll
 api_name:
- - RtlStringCchVPrintfW
  - RtlStringCchVPrintfA
- - RtlStringCchVPrintfW
 ---
 
 # RtlStringCchVPrintfA function
@@ -53,24 +50,24 @@ The <b>RtlStringCchVPrintfW</b> and <b>RtlStringCchVPrintfA</b> functions create
 
 ## -parameters
 
-### -param pszDest 
+### -param pszDest [out]
 
-[out]
+
 A pointer to a caller-supplied buffer that receives a formatted, null-terminated string. The function creates this string from both the formatting string that is supplied by <i>pszFormat</i> and the arguments supplied by <i>argList</i>.
 
-### -param cchDest 
+### -param cchDest [in]
 
-[in]
+
 The size of the destination buffer, in characters. The buffer must be large enough to contain the formatted string plus the terminating null character. The maximum number of characters allowed is NTSTRSAFE_MAX_CCH.
 
-### -param pszFormat 
+### -param pszFormat [in]
 
-[in]
+
 A pointer to a null-terminated text string that contains <b>printf</b>-styled formatting directives.
 
-### -param argList 
+### -param argList [in]
 
-[in]
+
 A <b>va_list</b>-typed argument list. Arguments contained in the argument list will be interpreted by using the formatting string that is supplied by <i>pszFormat</i>.
 
 ## -returns
@@ -207,3 +204,4 @@ For more information about the safe string functions, see <a href="/windows-hard
 
 
 <a href="/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcchvprintfexa">RtlStringCchVPrintfEx</a>
+

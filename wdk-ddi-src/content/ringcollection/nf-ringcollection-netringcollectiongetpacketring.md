@@ -3,7 +3,6 @@ UID: NF:ringcollection.NetRingCollectionGetPacketRing
 title: NetRingCollectionGetPacketRing function (ringcollection.h)
 description: The NetRingCollectionGetPacketRing gets the packet ring for a packet queue.
 tech.root: netvista
-ms.assetid: D4B33AEA-64FD-42F4-BADB-3CF9A1D0BBC6
 ms.date: 02/06/2019
 keywords: ["NetRingCollectionGetPacketRing function"]
 ms.keywords: NetRingCollectionGetPacketRing
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.29
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -30,13 +29,13 @@ targetos: Windows
 f1_keywords:
  - NetRingCollectionGetPacketRing
  - ringcollection/NetRingCollectionGetPacketRing
-topictype:
+topic_type:
  - apiref
-apitype:
+api_type:
  - HeaderDef
-apilocation:
+api_location:
  - ringcollection.h
-apiname:
+api_name:
  - NetRingCollectionGetPacketRing
 ---
 

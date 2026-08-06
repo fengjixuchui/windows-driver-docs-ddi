@@ -4,7 +4,6 @@ title: POFXCALLBACKREQUESTINTERRUPT (pepfx.h)
 description: The RequestInterrupt routine requests that the operating system replay an edge-triggered interrupt that might have been lost while the hardware platform was in a low-power state.
 old-location: kernel\requestinterrupt.htm
 tech.root: kernel
-ms.assetid: B999405D-D6A5-4DFF-A902-F9C938C29063
 ms.date: 04/30/2018
 keywords: ["POFXCALLBACKREQUESTINTERRUPT callback function"]
 ms.keywords: POFXCALLBACKREQUESTINTERRUPT, RequestInterrupt, RequestInterrupt routine [Kernel-Mode Driver Architecture], kernel.requestinterrupt, pepfx/RequestInterrupt
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
- - RequestInterrupt
+ - POFXCALLBACKREQUESTINTERRUPT
 ---
 
 # POFXCALLBACKREQUESTINTERRUPT callback function (pepfx.h)
@@ -50,9 +49,9 @@ The <b>RequestInterrupt</b> routine requests that the operating system replay an
 
 ## -parameters
 
-### -param Gsiv 
+### -param Gsiv [in]
 
-[in]
+
 The global system interrupt vector (GSIV) number that identifies this interrupt. The ACPI firmware assigns GSIV numbers to all primary interrupt lines. For secondary (GPIO) interrupt lines, the GSIV number is dynamically assigned by the operating system.
 
 ## -returns
@@ -88,3 +87,4 @@ A PEP can call this routine at IRQL <= HIGH_LEVEL.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_kernel_information_struct_v3">PEP_KERNEL_INFORMATION_STRUCT_V3</a>
+

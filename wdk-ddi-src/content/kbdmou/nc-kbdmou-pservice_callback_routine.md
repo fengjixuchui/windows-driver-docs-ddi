@@ -4,7 +4,6 @@ title: PSERVICE_CALLBACK_ROUTINE (kbdmou.h)
 description: A function driver calls the class service callback in its ISR dispatch completion routine. The class service callback transfers input data from the input data buffer of a device to the class data queue.
 old-location: hid\kbdclass_class_service_callback_routine.htm
 tech.root: hid
-ms.assetid: 78ae2a98-bebd-43ee-b016-2f619c3135ca
 ms.date: 04/30/2018
 keywords: ["PSERVICE_CALLBACK_ROUTINE callback function"]
 ms.keywords: ClassServiceCallback, ClassServiceCallback callback function [Human Input Devices], PSERVICE_CALLBACK_ROUTINE, PSERVICE_CALLBACK_ROUTINE callback, hid.kbdclass_class_service_callback_routine, kbdmou/ClassServiceCallback, kref_c3fa9125-0bc4-4936-b4e5-eb4e5eee23e2.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - kbdmou.h
 api_name:
- - ClassServiceCallback
+ - PSERVICE_CALLBACK_ROUTINE
 ---
 
 # PSERVICE_CALLBACK_ROUTINE callback function
@@ -50,24 +49,24 @@ A function driver calls the class service callback in its ISR dispatch completio
 
 ## -parameters
 
-### -param NormalContext 
+### -param NormalContext [in]
 
-[in]
+
 Pointer to the class device object.
 
-### -param SystemArgument1 
+### -param SystemArgument1 [in]
 
-[in]
+
 Pointer to the first keyboard input data packet in the input data buffer of the port device.
 
-### -param SystemArgument2 
+### -param SystemArgument2 [in]
 
-[in]
+
 Pointer to the keyboard input data packet that immediately follows the last data packet in the input data buffer of the port device.
 
-### -param SystemArgument3 
+### -param SystemArgument3 [in, out]
 
-[in, out]
+
 Pointer to the number of keyboard input data packets that are transferred by the routine.
 
 ## -remarks
@@ -78,7 +77,7 @@ Here is the definition of the  keyboard class service callback routine.
 
 Kbdclass uses an <a href="/windows-hardware/drivers/ddi/kbdmou/ni-kbdmou-ioctl_internal_keyboard_connect">IOCTL_INTERNAL_KEYBOARD_CONNECT</a> request to connect its class service callback to a keyboard device. In this call, the driver sets  its implementation in a <a href="/windows-hardware/drivers/ddi/kbdmou/ns-kbdmou-_connect_data">CONNECT_DATA</a> structure.
 
-<pre class="syntax" xml:space="preserve"><code>
+<pre class="syntax"><code>
 /*
 DeviceObject [in] 
 Pointer to the class device object.
@@ -109,7 +108,7 @@ VOID KeyboardClassServiceCallback(
 Here is the <b>MouseClassServiceCallback</b> routine is the class service callback routine that is provided by Mouclass. The driver uses an <a href="/windows-hardware/drivers/ddi/kbdmou/ni-kbdmou-ioctl_internal_mouse_connect">IOCTL_INTERNAL_MOUSE_CONNECT</a> request to connect its class service callback to a mouse device. In this call, the driver sets  its implementation in a <a href="/windows-hardware/drivers/ddi/kbdmou/ns-kbdmou-_connect_data">CONNECT_DATA</a> structure.
 
 
-<pre class="syntax" xml:space="preserve"><code>
+<pre class="syntax"><code>
 /*
 DeviceObject [in] 
 Pointer to the class device object.
@@ -149,3 +148,4 @@ VOID MouseClassServiceCallback(
 
 
 <a href="/windows/win32/api/ntddmou/ns-ntddmou-mouse_input_data">MOUSE_INPUT_DATA</a>
+

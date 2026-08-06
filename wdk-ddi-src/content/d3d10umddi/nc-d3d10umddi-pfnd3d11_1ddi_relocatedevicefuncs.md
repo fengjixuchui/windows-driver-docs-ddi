@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_RELOCATEDEVICEFUNCS
 title: PFND3D11_1DDI_RELOCATEDEVICEFUNCS (d3d10umddi.h)
 description: Notifies the user-mode display driver about the new location of the driver function table.
 old-location: display\relocatedevicefuncs_d3d11_1_.htm
-ms.assetid: 5d9f964e-5d7a-4b6c-977e-c718e3424f84
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_RELOCATEDEVICEFUNCS callback function"]
 ms.keywords: PFND3D11_1DDI_RELOCATEDEVICEFUNCS, PFND3D11_1DDI_RELOCATEDEVICEFUNCS callback, RelocateDeviceFuncs(D3D11_1), RelocateDeviceFuncs(D3D11_1) callback function [Display Devices], d3d10umddi/RelocateDeviceFuncs(D3D11_1), display.pfnrelocatedevicefuncs, display.relocatedevicefuncs_d3d11_1_
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - RelocateDeviceFuncs(D3D11_1)
-product:
- - Windows
+ - PFND3D11_1DDI_RELOCATEDEVICEFUNCS
 ---
 
 # PFND3D11_1DDI_RELOCATEDEVICEFUNCS callback function
@@ -52,13 +49,13 @@ Notifies the user-mode display driver about the new location of the driver funct
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pDeviceFunctions* [in]
 
@@ -78,3 +75,4 @@ A user-mode display driver can use the <i>RelocateDeviceFuncs(D3D11_1)</i> funct
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

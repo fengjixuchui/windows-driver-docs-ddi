@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_SETPREDICATION
 title: PFND3D10DDI_SETPREDICATION (d3d10umddi.h)
 description: The SetPredication function specifies whether rendering and resource-manipulation commands that follow are actually performed.
 old-location: display\setpredication.htm
-ms.assetid: df671478-859f-4ccd-9ab4-1986f9af10cf
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_SETPREDICATION callback function"]
 ms.keywords: PFND3D10DDI_SETPREDICATION, PFND3D10DDI_SETPREDICATION callback, SetPredication, SetPredication callback function [Display Devices], UserModeDisplayDriverDx10_Functions_358db7d9-6533-4c37-b761-985c921f4957.xml, d3d10umddi/SetPredication, display.setpredication
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - SetPredication
+ - PFND3D10DDI_SETPREDICATION
 ---
 
 # PFND3D10DDI_SETPREDICATION callback function
@@ -50,19 +49,19 @@ The <i>SetPredication</i> function specifies whether rendering and resource-mani
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hQuery* [in]
 
 A handle to the query object to set as a predicate. Setting <i>hQuery</i> to <b>NULL</b> indicates "no predication". If <i>hQuery</i> is set to <b>NULL</b>, the driver ignores the value in the <i>PredicateValue</i> parameter; however, the driver should store the predicate value for subsequent requests for the value.
 
-### -param Arg3
+### -param unnamedParam3
 
 *PredicateValue* [in]
 
@@ -85,3 +84,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

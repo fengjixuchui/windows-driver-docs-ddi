@@ -3,11 +3,8 @@ UID: NS:dispmprt._DXGKARG_QUERYMITIGATEDRANGES
 title: _DXGKARG_QUERYMITIGATEDRANGES
 description: Arguments used to query mitigated ranges.
 tech.root: display
-ms.assetid: c401fda9-9eaf-4d2b-a19e-d42b2c0cd9e8
 ms.date: 04/04/2019
 keywords: ["DXGKARG_QUERYMITIGATEDRANGES structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _DXGKARG_QUERYMITIGATEDRANGES, DXGKARG_QUERYMITIGATEDRANGES, *PDXGKARG_QUERYMITIGATEDRANGES,
 req.header: dispmprt.h
 req.include-header: 
@@ -39,8 +36,8 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGKARG_QUERYMITIGATEDRANGES
-product:
- - Windows
+ - PDXGKARG_QUERYMITIGATEDRANGES
+ - DXGKARG_QUERYMITIGATEDRANGES
 dev_langs:
  - c++
 ---

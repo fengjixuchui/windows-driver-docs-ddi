@@ -4,7 +4,6 @@ title: _SM_SendRPS_OUT (hbapiwmi.h)
 description: The SM_SendRPS_OUT structure is used to receive output parameters from the SM_SendRPS method.
 old-location: storage\sm_sendrps_out.htm
 tech.root: storage
-ms.assetid: e202a292-df26-4829-be51-b8427d2dee20
 ms.date: 03/29/2018
 keywords: ["SM_SendRPS_OUT structure"]
 ms.keywords: "*PSM_SendRPS_OUT, PSM_SendRPS_OUT, PSM_SendRPS_OUT structure pointer [Storage Devices], SM_SendRPS_OUT, SM_SendRPS_OUT structure [Storage Devices], _SM_SendRPS_OUT, hbapiwmi/PSM_SendRPS_OUT, hbapiwmi/SM_SendRPS_OUT, storage.sm_sendrps_out, structs-Fibre_6aad3070-5819-4742-87c6-f5c3b50b4f9b.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hbapiwmi.h
 api_name:
+ - _SM_SendRPS_OUT
+ - PSM_SendRPS_OUT
  - SM_SendRPS_OUT
 ---
 
@@ -73,3 +74,4 @@ The results of the common transport command.
 ## -remarks
 
 The WMI tool suite generates a declaration of the SM_SendRPS_OUT structure in <i>Hbapiwmi.h</i> when it compiles the MS_SM_FabricAndDomainManagementMethod WMI class.
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbolGroup2.OutputSymbols
 title: IDebugSymbolGroup2::OutputSymbols (dbgeng.h)
-description: The OutputSymbols method prints the specified symbols to the debugger console.
+description: The OutputSymbols method prints the specified symbols to the debugger console. This method belongs to the IDebugSymbolGroup2 interface.
 old-location: debugger\outputsymbols.htm
 tech.root: debugger
-ms.assetid: 1fe99cc4-35d9-432a-aed9-074d40438976
 ms.date: 05/03/2018
 keywords: ["IDebugSymbolGroup2::OutputSymbols"]
 ms.keywords: ComOther_47d8529f-4fdf-4a79-ae80-61e483c897f2.xml, IDebugSymbolGroup interface [Windows Debugging],OutputSymbols method, IDebugSymbolGroup2 interface [Windows Debugging],OutputSymbols method, IDebugSymbolGroup2.OutputSymbols, IDebugSymbolGroup2::OutputSymbols, IDebugSymbolGroup::OutputSymbols, OutputSymbols, OutputSymbols method [Windows Debugging], OutputSymbols method [Windows Debugging],IDebugSymbolGroup interface, OutputSymbols method [Windows Debugging],IDebugSymbolGroup2 interface, dbgeng/IDebugSymbolGroup2::OutputSymbols, dbgeng/IDebugSymbolGroup::OutputSymbols, debugger.outputsymbols
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbolGroup.OutputSymbols
- - IDebugSymbolGroup2.OutputSymbols
+ - IDebugSymbolGroup2::OutputSymbols
 ---
 
 # IDebugSymbolGroup2::OutputSymbols
@@ -51,14 +49,14 @@ The <b>OutputSymbols</b> method prints the specified <a href="/windows-hardware/
 
 ## -parameters
 
-### -param OutputControl 
+### -param OutputControl [in]
 
-[in]
+
 The output control to use when printing the symbols' information.  For more information about possible values, see <a href="/windows-hardware/drivers/debugger/debug-outctl-xxx">DEBUG_OUTCTL_XXX</a>.  For more information about output, see <a href="/windows-hardware/drivers/debugger/input-and-output">Input and Output</a>.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 The flags that determine what information is printed for each symbol.  By default, the output includes the symbol's name, offset, value, and type.  The format for the output is as follows:
 
 <code>Name**NAME**Offset**OFF**Value**VALUE**Type**TYPE**</code>
@@ -112,14 +110,14 @@ Suppress output of the symbol's type.
 </tr>
 </table>
 
-### -param Start 
+### -param Start [in]
 
-[in]
+
 The index of the first symbol in the symbol group to print.  The index of a symbol is an identification number. This number ranges from zero through the number of symbols in the symbol group minus one.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 The number of symbols to print.
 
 ## -returns
@@ -160,3 +158,4 @@ For more information about symbol groups, see <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbolgroup2">IDebugSymbolGroup2</a>
+

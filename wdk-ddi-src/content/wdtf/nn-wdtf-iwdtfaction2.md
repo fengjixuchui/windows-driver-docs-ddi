@@ -4,7 +4,6 @@ title: IWDTFAction2 (wdtf.h)
 description: Defines operations and properties that can control an instance of the IWDTFTarget2 interface.
 old-location: dtf\iwdtfaction2.htm
 tech.root: dtf
-ms.assetid: 0ca56301-9e46-4082-a5a4-41a9c655fbd8
 ms.date: 04/04/2018
 keywords: ["IWDTFAction2 interface"]
 ms.keywords: IWDTFAction2, IWDTFAction2 interface [Windows Device Testing Framework], IWDTFAction2 interface [Windows Device Testing Framework],described, Microsoft.WDTF.IWDTFAction2, dtf.iwdtfaction2, wdtf/IWDTFAction2
@@ -51,8 +50,5 @@ Defines operations and properties that can control an instance of the
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDTFAction2</b> interface inherits from <b>IAction</b>. <b>IWDTFAction2</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-<li><a href="https://docs.microsoft.com/">Properties</a></li>
-</ul>
+The <b>IWDTFAction2</b> interface inherits from <b>IAction</b>. <b>IWDTFAction2</b> also has these types of members:
+

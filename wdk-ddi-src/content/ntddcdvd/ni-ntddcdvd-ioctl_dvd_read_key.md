@@ -4,7 +4,6 @@ title: IOCTL_DVD_READ_KEY (ntddcdvd.h)
 description: Returns a copy-protection key of the specified type:\_challenge key, bus key, title key, read RPC key, set RPC key, or disk key.
 old-location: storage\ioctl_dvd_read_key.htm
 tech.root: storage
-ms.assetid: 42745dae-f472-4f64-8f16-9f4dec1e986a
 ms.date: 03/29/2018
 keywords: ["IOCTL_DVD_READ_KEY IOCTL"]
 ms.keywords: IOCTL_DVD_READ_KEY, IOCTL_DVD_READ_KEY control, IOCTL_DVD_READ_KEY control code [Storage Devices], k307_6baca45d-504c-46b9-9724-f82132c2bead.xml, ntddcdvd/IOCTL_DVD_READ_KEY, storage.ioctl_dvd_read_key
@@ -49,6 +48,8 @@ api_name:
 Returns a copy-protection key of the specified type: challenge key, bus key, title key, read RPC key, set RPC key, or disk key. A challenge key or bus key is sent back to the device to complete the related step in a DVD authentication sequence. After the authentication sequence is completed, a title key is used to encrypt and decrypt user data transferred from a DVD disc and a disk key is used to encrypt and decrypt title key data. If the drive region has not been set previously (if it is still at factory default) and if the inserted media has a region, the device region will be set to the current media region.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

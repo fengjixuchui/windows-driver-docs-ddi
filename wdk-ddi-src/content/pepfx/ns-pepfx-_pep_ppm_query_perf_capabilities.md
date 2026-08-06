@@ -4,7 +4,6 @@ title: _PEP_PPM_QUERY_PERF_CAPABILITIES (pepfx.h)
 description: The PEP_PPM_QUERY_PERF_CAPABILITIES structure describes the performance capabilities of the processors in the specified processor performance domain.
 old-location: kernel\pep_ppm_query_perf_capabilities.htm
 tech.root: kernel
-ms.assetid: 562EA523-A74D-4D46-8C01-12C745106F86
 ms.date: 04/30/2018
 keywords: ["PEP_PPM_QUERY_PERF_CAPABILITIES structure"]
 ms.keywords: "*PPEP_PPM_QUERY_PERF_CAPABILITIES, PEP_PPM_QUERY_PERF_CAPABILITIES, PEP_PPM_QUERY_PERF_CAPABILITIES structure [Kernel-Mode Driver Architecture], PPEP_PPM_QUERY_PERF_CAPABILITIES, PPEP_PPM_QUERY_PERF_CAPABILITIES structure pointer [Kernel-Mode Driver Architecture], _PEP_PPM_QUERY_PERF_CAPABILITIES, kernel.pep_ppm_query_perf_capabilities, pepfx/PEP_PPM_QUERY_PERF_CAPABILITIES, pepfx/PPEP_PPM_QUERY_PERF_CAPABILITIES"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_PPM_QUERY_PERF_CAPABILITIES
+ - PPEP_PPM_QUERY_PERF_CAPABILITIES
  - PEP_PPM_QUERY_PERF_CAPABILITIES
 ---
 
@@ -54,29 +55,29 @@ The <b>PEP_PPM_QUERY_PERF_CAPABILITIES</b> structure describes the performance c
 
 ## -struct-fields
 
-### -field HighestPerformance
+### -field HighestPerformance [out]
 
-[out] The highest performance level in platform-specific units. For more information, see Remarks.
+The highest performance level in platform-specific units. For more information, see Remarks.
 
-### -field NominalPerformance
+### -field NominalPerformance [out]
 
-[out] The nominal performance level in platform-specific units. For more information, see Remarks.
+The nominal performance level in platform-specific units. For more information, see Remarks.
 
-### -field LowestNonlinearPerformance
+### -field LowestNonlinearPerformance [out]
 
-[out] The lowest nonlinear performance level in platform-specific units. For more information, see Remarks.
+The lowest nonlinear performance level in platform-specific units. For more information, see Remarks.
 
-### -field LowestPerformance
+### -field LowestPerformance [out]
 
-[out] The lowest performance level in platform-specific units. For more information, see Remarks.
+The lowest performance level in platform-specific units. For more information, see Remarks.
 
-### -field DomainId
+### -field DomainId [out]
 
-[out] The domain ID of the processor performance domain.
+The domain ID of the processor performance domain.
 
-### -field DomainMembers
+### -field DomainMembers [out]
 
-[out] The number of processors in this performance domain.
+The number of processors in this performance domain.
 
 ## -remarks
 
@@ -91,3 +92,4 @@ Processor performance levels are specified in platform-specific units. For examp
 
 
 <a href="/windows-hardware/drivers/kernel/platform-performance-thresholds">Platform Performance Thresholds</a>
+

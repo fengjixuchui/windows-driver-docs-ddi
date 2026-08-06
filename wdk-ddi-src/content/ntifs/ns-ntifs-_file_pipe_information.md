@@ -4,14 +4,13 @@ title: _FILE_PIPE_INFORMATION (ntifs.h)
 description: The FILE_PIPE_INFORMATION structure contains information about a named pipe that is not specific to the local or the remote end of the pipe.
 old-location: ifsk\file_pipe_information.htm
 tech.root: ifsk
-ms.assetid: d38b9f36-27f1-47f1-a469-18ddb6f5b2c1
 ms.date: 04/16/2018
 keywords: ["FILE_PIPE_INFORMATION structure"]
 ms.keywords: "*PFILE_PIPE_INFORMATION, FILE_PIPE_INFORMATION, FILE_PIPE_INFORMATION structure [Installable File System Drivers], PFILE_PIPE_INFORMATION, PFILE_PIPE_INFORMATION structure pointer [Installable File System Drivers], _FILE_PIPE_INFORMATION, ifsk.file_pipe_information, ntifs/FILE_PIPE_INFORMATION, ntifs/PFILE_PIPE_INFORMATION"
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating system.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntifs.h
 api_name:
+ - _FILE_PIPE_INFORMATION
+ - PFILE_PIPE_INFORMATION
  - FILE_PIPE_INFORMATION
 ---
 
@@ -107,3 +108,4 @@ When <b>CompletionMode</b> is set to FILE_PIPE_QUEUE_OPERATION, if the pipe is c
 When <b>CompletionMode</b> is set to FILE_PIPE_COMPLETE_OPERATION, if the pipe is being connected to, read to, or written from, the operation is completed immediately. 
 
 For information about pipes, see <a href="/windows/desktop/ipc/pipes">Pipes</a>.
+

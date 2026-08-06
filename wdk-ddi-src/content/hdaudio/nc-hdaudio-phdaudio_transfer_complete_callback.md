@@ -4,8 +4,7 @@ title: PHDAUDIO_TRANSFER_COMPLETE_CALLBACK (hdaudio.h)
 description: HDAudio codec transfer complete callback function. PHDAUDIO_TRANSFER_COMPLETE_CALLBACK is used by the PTRANSFER_CODEC_VERBS callback function.
 old-location: audio\phdaudio_transfer_complete_callback.htm
 tech.root: audio
-ms.assetid: 6B3DA3B1-33E9-4BE4-A3EE-146080C483A6
-ms.date: 05/08/2018
+ms.date: 07/25/2023
 keywords: ["PHDAUDIO_TRANSFER_COMPLETE_CALLBACK callback function"]
 ms.keywords: HDAudioTransferCompleteCallback, HDAudioTransferCompleteCallback callback function [Audio Devices], PHDAUDIO_TRANSFER_COMPLETE_CALLBACK, PHDAUDIO_TRANSFER_COMPLETE_CALLBACK callback, audio.phdaudio_transfer_complete_callback, hdaudio/HDAudioTransferCompleteCallback
 req.header: hdaudio.h
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - Hdaudio.h
 api_name:
- - HDAudioTransferCompleteCallback
+ - PHDAUDIO_TRANSFER_COMPLETE_CALLBACK
 ---
 
 # PHDAUDIO_TRANSFER_COMPLETE_CALLBACK callback function
-
 
 ## -description
 
@@ -50,18 +48,13 @@ HDAudio codec transfer complete callback function. <b>PHDAUDIO_TRANSFER_COMPLETE
 
 ## -parameters
 
-### -param 
+### -param unnamedParam1
 
-### -param Arg1
+**Context** -  This is the same  context value that was specified previously in the <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-ptransfer_codec_verbs">PTRANSFER_CODEC_VERBS</a> routine's callbackContext parameter.
 
-#### - Context
+### -param unnamedParam2
 
- This is the same  context value that was specified previously in the <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-ptransfer_codec_verbs">PTRANSFER_CODEC_VERBS</a> routine's callbackContext parameter.
-
-
-#### - pHDAudioCodecTransfer
-
-A pointer to the codecTransfer array element that contains the codec command and the response that triggered the callback.
+**pHDAudioCodecTransfer** - A pointer to the codecTransfer array element that contains the codec command and the response that triggered the callback.
 
 ## -remarks
 

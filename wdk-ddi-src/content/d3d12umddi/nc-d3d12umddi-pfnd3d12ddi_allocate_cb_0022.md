@@ -3,7 +3,6 @@ UID: NC:d3d12umddi.PFND3D12DDI_ALLOCATE_CB_0022
 title: PFND3D12DDI_ALLOCATE_CB_0022 (d3d12umddi.h)
 description: The pfnAllocateCb callback function controls heap allocation by using a D3D12DDICB_ALLOCATE_0022 value.
 old-location: display\pfnd3d12ddi_allocate_cb_0022.htm
-ms.assetid: D0326C98-F187-4F62-AE60-60F0B38AB0D4
 ms.date: 05/10/2018
 keywords: ["PFND3D12DDI_ALLOCATE_CB_0022 callback function"]
 ms.keywords: PFND3D12DDI_ALLOCATE_CB_0022, PFND3D12DDI_ALLOCATE_CB_0022 callback, d3d12umddi/pfnAllocateCb, display.pfnd3d12ddi_allocate_cb_0022, pfnAllocateCb, pfnAllocateCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d12umddi.h
 api_name:
- - pfnAllocateCb
-product:
- - Windows
+ - PFND3D12DDI_ALLOCATE_CB_0022
 ---
 
 # PFND3D12DDI_ALLOCATE_CB_0022 callback function
@@ -52,11 +49,11 @@ The <i>pfnAllocateCb</i> callback function controls heap allocation by using a <
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 The handle for a device.
 
-### -param Arg2
+### -param unnamedParam2
 
 A <a href="/windows-hardware/drivers/ddi/d3d12umddi/ns-d3d12umddi-d3d12ddicb_allocate_0022">D3D12DDICB_ALLOCATE_0022</a> structure that contains information for an allocation.
 
@@ -81,3 +78,4 @@ The driver must check the return value of the function.
 
 
 <a href="/windows-hardware/drivers/ddi/d3d12umddi/nc-d3d12umddi-pfnd3d12ddi_deallocate_cb_0022">pfnDeallocateCb</a>
+

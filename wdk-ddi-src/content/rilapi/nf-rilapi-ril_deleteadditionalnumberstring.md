@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_DeleteAdditionalNumberString
 title: RIL_DeleteAdditionalNumberString function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_DeleteAdditionalNumberString function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_deleteadditionalnumberstring.htm
 tech.root: netvista
-ms.assetid: 6d115616-85d4-43f8-b0c8-ea5b5c2e4eff
 ms.date: 05/02/2018
 keywords: ["RIL_DeleteAdditionalNumberString function"]
 ms.keywords: RIL_DeleteAdditionalNumberString, RIL_DeleteAdditionalNumberString method [Network Drivers Starting with Windows Vista], netvista.ril_deleteadditionalnumberstring, rilapi/RIL_DeleteAdditionalNumberString

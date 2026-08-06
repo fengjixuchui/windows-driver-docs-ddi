@@ -4,14 +4,13 @@ title: _DXGK_DEVICE_INFO (dispmprt.h)
 description: The DXGK_DEVICE_INFO structure holds information that describes a display adapter.
 old-location: display\dxgk_device_info.htm
 tech.root: display
-ms.assetid: dcdae08f-69a6-496b-8391-d2b505fb86d9
 ms.date: 05/10/2018
 keywords: ["DXGK_DEVICE_INFO structure"]
 ms.keywords: "*PDXGK_DEVICE_INFO, DXGK_DEVICE_INFO, DXGK_DEVICE_INFO structure [Display Devices], DmStructs_89344ee9-8c4e-4f7e-8950-11948c07bb8e.xml, PDXGK_DEVICE_INFO, PDXGK_DEVICE_INFO structure pointer [Display Devices], _DXGK_DEVICE_INFO, display.dxgk_device_info, dispmprt/DXGK_DEVICE_INFO, dispmprt/PDXGK_DEVICE_INFO"
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
+ - _DXGK_DEVICE_INFO
+ - PDXGK_DEVICE_INFO
  - DXGK_DEVICE_INFO
 ---
 
@@ -105,3 +106,4 @@ The display miniport driver's <a href="/windows-hardware/drivers/ddi/dispmprt/nc
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device">DxgkDdiStartDevice</a>
+

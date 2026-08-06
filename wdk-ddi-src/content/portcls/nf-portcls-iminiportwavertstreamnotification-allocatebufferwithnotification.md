@@ -4,7 +4,6 @@ title: IMiniportWaveRTStreamNotification::AllocateBufferWithNotification (portcl
 description: The AllocateAudioBufferWithNotification method allocates a cyclic buffer for audio data when you want to implement DMA-driven event notification. If you do not want event notification, you must use IMiniportWaveRTStream::AllocateAudioBuffer.
 old-location: audio\iminiportwavertstreamnotification_allocatebufferwithnotification.htm
 tech.root: audio
-ms.assetid: df1da549-1677-42ef-9644-3d9c5df66894
 ms.date: 05/08/2018
 keywords: ["IMiniportWaveRTStreamNotification::AllocateBufferWithNotification"]
 ms.keywords: AllocateBufferWithNotification, AllocateBufferWithNotification method [Audio Devices], AllocateBufferWithNotification method [Audio Devices],IMiniportWaveRTStreamNotification interface, IMiniportWaveRTStreamNotification interface [Audio Devices],AllocateBufferWithNotification method, IMiniportWaveRTStreamNotification.AllocateBufferWithNotification, IMiniportWaveRTStreamNotification::AllocateBufferWithNotification, audio.iminiportwavertstreamnotification_allocatebufferwithnotification, audmp-routines_84faf4d3-ee36-4996-8de2-0f89b41c18fe.xml, portcls/IMiniportWaveRTStreamNotification::AllocateBufferWithNotification
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Passive level.
+req.irql: PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWaveRTStreamNotification.AllocateBufferWithNotification
+ - IMiniportWaveRTStreamNotification::AllocateBufferWithNotification
 ---
 
 # IMiniportWaveRTStreamNotification::AllocateBufferWithNotification
@@ -50,34 +49,34 @@ The <code>AllocateAudioBufferWithNotification</code> method allocates a cyclic b
 
 ## -parameters
 
-### -param NotificationCount 
+### -param NotificationCount [in]
 
-[in]
+
 Specifies the number of notifications wanted per buffer cycle.  Valid values are 1 or 2, where 1 indicates a single notification at the end of the cyclic buffer and 2 indicates two notifications per buffer cycle, one at the mid-point of the buffer and one at the end.
 
-### -param RequestedSize 
+### -param RequestedSize [in]
 
-[in]
+
 Specifies the requested size, in bytes, of the audio buffer.
 
-### -param AudioBufferMdl 
+### -param AudioBufferMdl [out]
 
-[out]
+
 Output pointer for a memory descriptor list (<a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl">MDL</a>) that describes the audio buffer. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the MDL.
 
-### -param ActualSize 
+### -param ActualSize [out]
 
-[out]
+
 Output pointer for the actual size, in bytes, of the allocated buffer. This parameter points to a ULONG variable into which the method writes the size value.
 
-### -param OffsetFromFirstPage 
+### -param OffsetFromFirstPage [out]
 
-[out]
+
 Output pointer for the offset (in bytes) of the buffer, from the start of the first page in the MDL. This parameter points to a caller-allocated ULONG variable into which the method writes the offset value.
 
-### -param CacheType 
+### -param CacheType [out]
 
-[out]
+
 Specifies the type of caching that the client requests for the audio buffer. This parameter is a <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_memory_caching_type">MEMORY_CACHING_TYPE</a> enumeration value
 
 ## -returns
@@ -141,3 +140,4 @@ After receiving a <a href="/windows-hardware/drivers/audio/ksproperty-rtaudio-bu
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl">MDL</a>
 
 <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_memory_caching_type">MEMORY_CACHING_TYPE</a>
+

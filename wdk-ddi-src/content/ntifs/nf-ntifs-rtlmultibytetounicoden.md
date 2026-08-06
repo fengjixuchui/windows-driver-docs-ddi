@@ -4,7 +4,6 @@ title: RtlMultiByteToUnicodeN function (ntifs.h)
 description: The RtlMultiByteToUnicodeN routine translates the specified source string into a Unicode string, using the current system ANSI code page (ACP). The source string is not necessarily from a multibyte character set.
 old-location: ifsk\rtlmultibytetounicoden.htm
 tech.root: ifsk
-ms.assetid: c0cc4fba-01ba-4745-8dee-fc4c43f570cf
 ms.date: 04/16/2018
 keywords: ["RtlMultiByteToUnicodeN function"]
 ms.keywords: RtlMultiByteToUnicodeN, RtlMultiByteToUnicodeN routine [Installable File System Drivers], ifsk.rtlmultibytetounicoden, ntifs/RtlMultiByteToUnicodeN, rtlref_c9245403-e17c-479b-ac16-07deb29a56d1.xml
@@ -51,29 +50,29 @@ The <b>RtlMultiByteToUnicodeN</b> routine translates the specified source string
 
 ## -parameters
 
-### -param UnicodeString 
+### -param UnicodeString [out]
 
-[out]
+
 Pointer to a caller-allocated buffer that receives the translated string. <i>UnicodeString</i> buffer must not overlap with <i>MultiByteString </i>buffer.
 
-### -param MaxBytesInUnicodeString 
+### -param MaxBytesInUnicodeString [in]
 
-[in]
+
 Maximum number of bytes to be written at <i>UnicodeString</i>. If this value causes the translated string to be truncated, <b>RtlMultiByteToUnicodeN</b> does not return an error status.
 
-### -param BytesInUnicodeString 
+### -param BytesInUnicodeString [out, optional]
 
-[out, optional]
+
 Pointer to a caller-allocated variable that receives the length, in bytes, of the translated string. This parameter can be <b>NULL</b>.
 
-### -param MultiByteString 
+### -param MultiByteString [in]
 
-[in]
+
 Pointer to the string to be translated.
 
-### -param BytesInMultiByteString 
+### -param BytesInMultiByteString [in]
 
-[in]
+
 Size, in bytes, of the string at <i>MultiByteString</i>.
 
 ## -returns
@@ -92,7 +91,7 @@ If the current system code page defines a single-byte character set, all ANSI ch
 
 Like <b>RtlMultiByteToUnicodeSize</b>, <b>RtlMultiByteToUnicodeN</b> supports only precomposed Unicode characters that are mapped to the current system ANSI code page installed at system boot. 
 
-For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/index">Strings</a>.
+For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/_kernel/#run-time-library-rtl-routines">Run-Time Library (RTL) Routines</a>.
 
 ## -see-also
 

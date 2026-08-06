@@ -4,7 +4,6 @@ title: RtlNumberGenericTableElements function (ntddk.h)
 description: The RtlNumberGenericTableElements routine returns the number of elements in a generic table.
 old-location: ifsk\rtlnumbergenerictableelements.htm
 tech.root: ifsk
-ms.assetid: 7dea199f-ef98-4f7b-a3e4-de52fc23c8ef
 ms.date: 04/16/2018
 keywords: ["RtlNumberGenericTableElements function"]
 ms.keywords: RtlNumberGenericTableElements, RtlNumberGenericTableElements routine [Installable File System Drivers], ifsk.rtlnumbergenerictableelements, ntddk/RtlNumberGenericTableElements, rtlref_f12988ba-01c3-4a34-8967-aafaf5b605f8.xml
@@ -50,9 +49,9 @@ The <b>RtlNumberGenericTableElements</b> routine returns the number of elements 
 
 ## -parameters
 
-### -param Table 
+### -param Table [in]
 
-[in]
+
 Pointer to the generic table (<a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_rtl_generic_table">RTL_GENERIC_TABLE</a>). The table must have been initialized by calling <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlinitializegenerictable">RtlInitializeGenericTable</a>.
 
 ## -returns

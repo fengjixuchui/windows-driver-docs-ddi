@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._WHEAP_STARTED_REPORT_HW_ERROR
 title: WHEAP_STARTED_REPORT_HW_ERROR
-description: 
-tech.root: 
-ms.assetid: 8c2d5cfe-6538-4588-9873-56f356d98511
+description: "Learn more about: WHEAP_STARTED_REPORT_HW_ERROR structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEAP_STARTED_REPORT_HW_ERROR structure"]
 ms.keywords: WHEAP_STARTED_REPORT_HW_ERROR, WHEAP_STARTED_REPORT_HW_ERROR, *PWHEAP_STARTED_REPORT_HW_ERROR,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEAP_STARTED_REPORT_HW_ERROR
+ - PWHEAP_STARTED_REPORT_HW_ERROR
  - WHEAP_STARTED_REPORT_HW_ERROR
-product:
- - Windows
 ---
 
 # WHEAP_STARTED_REPORT_HW_ERROR structure

@@ -1,10 +1,12 @@
 {
   "tech": "debugger",
   "headers": [
+    "arrayofelements.h",
     "dbgeng.h",
     "dbgmodel.h",
     "engextcpp.hpp",
     "extsfns.h",
+    "kdnetpf.h",
     "wdbgexts.h"
   ],
   "displayName": "Debugger"

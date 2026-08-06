@@ -4,7 +4,6 @@ title: RtlUShortToUInt8 function (ntintsafe.h)
 description: Converts a value of type USHORT to a value of type UINT8.
 old-location: kernel\rtlushorttouint8.htm
 tech.root: kernel
-ms.assetid: 79D98E31-96A2-477B-83AE-C5EB419D482B
 ms.date: 04/30/2018
 keywords: ["RtlUShortToUInt8 function"]
 ms.keywords: RtlUShortToUInt8, RtlUShortToUInt8 function [Kernel-Mode Driver Architecture], kernel.rtlushorttouint8, ntintsafe/RtlUShortToUInt8
@@ -50,14 +49,14 @@ Converts a value of type <b>USHORT</b> to a value of type <b>UINT8</b>.
 
 ## -parameters
 
-### -param usOperand 
+### -param usOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pui8Result 
+### -param pui8Result [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

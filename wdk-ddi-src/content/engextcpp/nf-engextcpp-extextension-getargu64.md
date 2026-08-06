@@ -4,7 +4,6 @@ title: ExtExtension::GetArgU64 (engextcpp.h)
 description: The GetArgU64 method returns the value of a named expression argument from the command line used to invoke the current extension command.
 old-location: debugger\getargu64.htm
 tech.root: debugger
-ms.assetid: 44a02c77-f4a2-499f-9555-99ce6f49fac8
 ms.date: 05/03/2018
 keywords: ["ExtExtension::GetArgU64"]
 ms.keywords: EngExtCpp_Ref_02971a20-02b8-4655-a1e5-8f287b4b0182.xml, ExtExtension class [Windows Debugging],GetArgU64 method, ExtExtension.GetArgU64, ExtExtension::GetArgU64, GetArgU64, GetArgU64 method [Windows Debugging], GetArgU64 method [Windows Debugging],ExtExtension class, debugger.getargu64
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Engextcpp.hpp
 api_name:
- - ExtExtension.GetArgU64
+ - ExtExtension::GetArgU64
 ---
 
 # ExtExtension::GetArgU64
@@ -50,14 +49,14 @@ The <b>GetArgU64</b> method returns the value of a named expression argument fro
 
 ## -parameters
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 Specifies the name of the argument.  The command-line description used in <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-ext_command">EXT_COMMAND</a> must specify that the type of this argument is expression.
 
-### -param Required 
+### -param Required [in]
 
-[in]
+
 Specifies if the argument is required.  If <i>Required</i> is <code>true</code> and the argument was not present on the command line, <b>ExtInvalidArgumentException</b> is called.   You do not need to set this parameter; if it is not set <i>Required</i> defaults to <code>true</code>.
 
 ## -returns
@@ -77,3 +76,4 @@ This method should only be called during the execution of an extension command p
 
 
 <a href="/previous-versions/ff543981(v=vs.85)">ExtExtension</a>
+

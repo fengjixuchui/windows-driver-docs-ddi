@@ -4,7 +4,6 @@ title: IKsPin::KsCreateSinkPinHandle (ksproxy.h)
 description: The KsCreateSinkPinHandle method creates a pin handle and stores it in the KS pin object.
 old-location: stream\ikspin_kscreatesinkpinhandle.htm
 tech.root: stream
-ms.assetid: 68faba0a-8057-4259-b93d-c19899637356
 ms.date: 04/23/2018
 keywords: ["IKsPin::KsCreateSinkPinHandle"]
 ms.keywords: IKsPin interface [Streaming Media Devices],KsCreateSinkPinHandle method, IKsPin.KsCreateSinkPinHandle, IKsPin::KsCreateSinkPinHandle, KsCreateSinkPinHandle, KsCreateSinkPinHandle method [Streaming Media Devices], KsCreateSinkPinHandle method [Streaming Media Devices],IKsPin interface, ksproxy/IKsPin::KsCreateSinkPinHandle, ksproxy_8d4ac125-ae14-4abf-97cb-74fd33e5029c.xml, stream.ikspin_kscreatesinkpinhandle
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ksproxy.h
 api_name:
- - IKsPin.KsCreateSinkPinHandle
+ - IKsPin::KsCreateSinkPinHandle
 ---
 
 # IKsPin::KsCreateSinkPinHandle
@@ -50,15 +49,15 @@ The <b>KsCreateSinkPinHandle</b> method creates a pin handle and stores it in th
 
 ## -parameters
 
-### -param Interface 
+### -param Interface [in]
 
-[in]
-A type reference to a <a href="/previous-versions/ff563537(v=vs.85)">KSPIN_INTERFACE</a> structure for the interface that <b>KsCreateSinkPinHandle</b> negotiated for the created pin.
 
-### -param Medium 
+A type reference to a <a href="/windows-hardware/drivers/stream/kspin-interface-structure">KSPIN_INTERFACE</a> structure for the interface that <b>KsCreateSinkPinHandle</b> negotiated for the created pin.
 
-[in]
-A type reference to a <a href="/previous-versions/ff563538(v=vs.85)">KSPIN_MEDIUM</a> structure for the medium that <b>KsCreateSinkPinHandle</b> negotiated for the created pin.
+### -param Medium [in]
+
+
+A type reference to a <a href="/windows-hardware/drivers/stream/kspin-medium-structure">KSPIN_MEDIUM</a> structure for the medium that <b>KsCreateSinkPinHandle</b> negotiated for the created pin.
 
 ## -returns
 
@@ -78,8 +77,9 @@ This method is for proxy use and is not recommended for application use.
 
 
 
-<a href="/previous-versions/ff563537(v=vs.85)">KSPIN_INTERFACE</a>
+<a href="/windows-hardware/drivers/stream/kspin-interface-structure">KSPIN_INTERFACE</a>
 
 
 
-<a href="/previous-versions/ff563538(v=vs.85)">KSPIN_MEDIUM</a>
+<a href="/windows-hardware/drivers/stream/kspin-medium-structure">KSPIN_MEDIUM</a>
+

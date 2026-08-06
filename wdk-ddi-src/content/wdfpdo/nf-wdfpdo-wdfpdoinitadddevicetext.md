@@ -4,7 +4,6 @@ title: WdfPdoInitAddDeviceText function (wdfpdo.h)
 description: The WdfPdoInitAddDeviceText method adds a device description and device location to a device, for a specified locale.
 old-location: wdf\wdfpdoinitadddevicetext.htm
 tech.root: wdf
-ms.assetid: e46a9aee-8d96-41f5-b0f9-01846fefe4cb
 ms.date: 02/26/2018
 keywords: ["WdfPdoInitAddDeviceText function"]
 ms.keywords: DFDeviceObjectFdoPdoRef_1167066a-5ec9-47b8-be03-32127121fa91.xml, WdfPdoInitAddDeviceText, WdfPdoInitAddDeviceText method, kmdf.wdfpdoinitadddevicetext, wdf.wdfpdoinitadddevicetext, wdfpdo/WdfPdoInitAddDeviceText
@@ -53,24 +52,24 @@ The <b>WdfPdoInitAddDeviceText</b> method adds a device description and device l
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
-### -param DeviceDescription 
+### -param DeviceDescription [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a device description, formatted for the given locale. The driver can allocate the string's buffer from paged pool.
 
-### -param DeviceLocation 
+### -param DeviceLocation [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a description of the location on the bus where the parent device found the child. The driver can allocate the string's buffer from paged pool.
 
-### -param LocaleId 
+### -param LocaleId [in]
 
-[in]
+
 A locale identifier (LCID) that represents the locale of the Unicode strings. For more information, see <a href="/windows/desktop/Intl/locale-identifiers">Locale Identifiers</a>.
 
 ## -returns

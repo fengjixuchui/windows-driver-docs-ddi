@@ -4,7 +4,6 @@ title: WdfDeviceSetCharacteristics function (wdfdevice.h)
 description: The WdfDeviceSetCharacteristics method sets device characteristics for a specified device.
 old-location: wdf\wdfdevicesetcharacteristics.htm
 tech.root: wdf
-ms.assetid: 07b5d7ed-fc4c-45e5-8748-2630c91d912a
 ms.date: 02/26/2018
 keywords: ["WdfDeviceSetCharacteristics function"]
 ms.keywords: DFDeviceObjectGeneralRef_a5d23cdb-a42e-48ef-9158-174354e13ca6.xml, WdfDeviceSetCharacteristics, WdfDeviceSetCharacteristics method, kmdf.wdfdevicesetcharacteristics, wdf.wdfdevicesetcharacteristics, wdfdevice/WdfDeviceSetCharacteristics
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfDeviceSetCharacteristics</b> method sets device characteristics for a 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param DeviceCharacteristics 
+### -param DeviceCharacteristics [in]
 
-[in]
+
 A value that consists of ORed system-defined constants that represent device characteristics. For more information, see the <b>Characteristics</b> member of the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure.
 
 ## -remarks

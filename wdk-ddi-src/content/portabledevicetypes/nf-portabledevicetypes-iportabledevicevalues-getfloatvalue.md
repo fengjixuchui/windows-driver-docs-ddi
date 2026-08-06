@@ -4,7 +4,6 @@ title: IPortableDeviceValues::GetFloatValue (portabledevicetypes.h)
 description: The GetFloatValue method retrieves a FLOAT value (type VT_R4) specified by a key.
 old-location: wpddk\iportabledevicevalues_getfloatvalue.htm
 tech.root: wpd_dk
-ms.assetid: f281c407-7d1c-48e8-ab5e-c18bf0c080e0
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::GetFloatValue"]
 ms.keywords: GetFloatValue, GetFloatValue method, GetFloatValue method,IPortableDeviceValues interface, IPortableDeviceValues interface,GetFloatValue method, IPortableDeviceValues.GetFloatValue, IPortableDeviceValues::GetFloatValue, IPortableDeviceValuesGetFloatValue, portabledevicetypes/IPortableDeviceValues::GetFloatValue, wpddk.iportabledevicevalues_getfloatvalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.GetFloatValue
+ - IPortableDeviceValues::GetFloatValue
 ---
 
 # IPortableDeviceValues::GetFloatValue
@@ -51,14 +50,14 @@ The <b>GetFloatValue</b> method retrieves a <b>FLOAT</b> value (type VT_R4) spec
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> key that specifies the item to retrieve.
 
-### -param pValue 
+### -param pValue [out]
 
-[out]
+
 Pointer to the retrieved <b>FLOAT</b> value.
 
 ## -returns
@@ -116,3 +115,4 @@ None.
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-setfloatvalue">IPortableDeviceValues::SetFloatValue</a>
+

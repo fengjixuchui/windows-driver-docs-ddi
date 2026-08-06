@@ -4,7 +4,6 @@ title: PFND3DDDI_SETMARKER (d3dumddi.h)
 description: Notifies the user-mode display driver that it must generate a new time stamp if any GPU work has completed since the last call to pfnSetMarker.
 old-location: display\pfnsetmarker.htm
 tech.root: display
-ms.assetid: 6D4DB988-D339-4B2F-A9B8-41B4FD21FE66
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETMARKER callback function"]
 ms.keywords: PFND3DDDI_SETMARKER, PFND3DDDI_SETMARKER callback, d3dumddi/pfnSetMarker, display.pfnsetmarker, pfnSetMarker, pfnSetMarker callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3dumddi.h
 api_name:
- - pfnSetMarker
-product:
- - Windows
+ - PFND3DDDI_SETMARKER
 ---
 
 # PFND3DDDI_SETMARKER callback function
@@ -86,3 +83,4 @@ If the marker event type from the  <i>Type</i> parameter of the <a href="/window
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_setmarkermode">pfnSetMarkerMode</a>
+

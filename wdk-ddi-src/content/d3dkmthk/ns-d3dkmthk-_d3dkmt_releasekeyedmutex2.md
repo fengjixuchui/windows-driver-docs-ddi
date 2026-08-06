@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_RELEASEKEYEDMUTEX2
 title: _D3DKMT_RELEASEKEYEDMUTEX2 (d3dkmthk.h)
 description: Describes a keyed mutex object that the D3DKMTReleaseKeyedMutex2 function releases that includes private data.
 old-location: display\d3dkmt_releasekeyedmutex2.htm
-ms.assetid: e343b11c-7cd1-4aea-a87c-e33577456851
 ms.date: 05/10/2018
 keywords: ["D3DKMT_RELEASEKEYEDMUTEX2 structure"]
 ms.keywords: D3DKMT_RELEASEKEYEDMUTEX2, D3DKMT_RELEASEKEYEDMUTEX2 structure [Display Devices], _D3DKMT_RELEASEKEYEDMUTEX2, d3dkmthk/D3DKMT_RELEASEKEYEDMUTEX2, display.d3dkmt_releasekeyedmutex2
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
+ - _D3DKMT_RELEASEKEYEDMUTEX2
  - D3DKMT_RELEASEKEYEDMUTEX2
 ---
 
@@ -52,26 +52,27 @@ Describes a keyed mutex object that the <a href="/windows-hardware/drivers/ddi/d
 
 ## -struct-fields
 
-### -field hKeyedMutex
+### -field hKeyedMutex [in]
 
-[in] A value of type <b>D3DKMT_HANDLE</b> that represents a kernel-mode handle to the keyed mutex object to release.
+A value of type <b>D3DKMT_HANDLE</b> that represents a kernel-mode handle to the keyed mutex object to release.
 
-### -field Key
+### -field Key [in]
 
-[in] A 64-bit value that specifies the key value to release the mutex to.
+A 64-bit value that specifies the key value to release the mutex to.
 
-### -field FenceValue
+### -field FenceValue [in]
 
-[in] A 64-bit value that specifies the current fence value of the GPU synchronization object.
+A 64-bit value that specifies the current fence value of the GPU synchronization object.
 
-### -field pPrivateRuntimeData
+### -field pPrivateRuntimeData [in]
 
-[in] A pointer to a caller-supplied buffer where the runtime private data associated with the resource is stored.
+A pointer to a caller-supplied buffer where the runtime private data associated with the resource is stored.
 
-### -field PrivateRuntimeDataSize
+### -field PrivateRuntimeDataSize [in]
 
-[in] The size, in bytes, of the buffer pointed to by the <b>pPrivateRuntimeData</b> member.
+The size, in bytes, of the buffer pointed to by the <b>pPrivateRuntimeData</b> member.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtreleasekeyedmutex2">D3DKMTReleaseKeyedMutex2</a>
+

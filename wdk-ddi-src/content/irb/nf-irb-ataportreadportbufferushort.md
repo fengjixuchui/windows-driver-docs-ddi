@@ -4,7 +4,6 @@ title: AtaPortReadPortBufferUshort function (irb.h)
 description: The AtaPortReadPortBufferUshort routine transfers a given number of USHORT values from the HBA to a buffer.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\ataportreadportbufferushort.htm
 tech.root: storage
-ms.assetid: f118af3b-5a9a-486b-9550-9b48bdfb48cd
 ms.date: 03/29/2018
 keywords: ["AtaPortReadPortBufferUshort function"]
 ms.keywords: AtaPortReadPortBufferUshort, AtaPortReadPortBufferUshort routine [Storage Devices], atartns_9cf8ae36-e364-4fb8-9fda-c8a78cd022b4.xml, irb/AtaPortReadPortBufferUshort, storage.ataportreadportbufferushort
@@ -54,19 +53,19 @@ The <b>AtaPortReadPortBufferUshort</b> routine transfers a given number of USHOR
 
 ## -parameters
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 A pointer to the I/O port. The address value that is assigned to this parameter must be within the range of mapped I/O space addresses that are obtained by a call to <a href="/windows-hardware/drivers/ddi/irb/nf-irb-ataportgetdevicebase">AtaPortGetDeviceBase</a>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to the destination buffer.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of USHORT values to read from the HBA.
 
 ## -see-also

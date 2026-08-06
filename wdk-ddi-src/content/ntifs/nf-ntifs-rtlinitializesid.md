@@ -4,14 +4,13 @@ title: RtlInitializeSid function (ntifs.h)
 description: The RtlInitializeSid routine initializes a security identifier (SID) structure.
 old-location: ifsk\rtlinitializesid.htm
 tech.root: ifsk
-ms.assetid: 6b87483f-8d5e-4e1d-839d-2271990dcbaa
 ms.date: 04/16/2018
 keywords: ["RtlInitializeSid function"]
 ms.keywords: RtlInitializeSid, RtlInitializeSid routine [Installable File System Drivers], ifsk.rtlinitializesid, ntifs/RtlInitializeSid, rtlref_fbcc1ed7-4929-415f-9644-b8d9521a5c1a.xml
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -51,19 +50,19 @@ The <b>RtlInitializeSid</b> routine initializes a security identifier (SID) stru
 
 ## -parameters
 
-### -param Sid 
+### -param Sid [out]
 
-[out]
+
 Pointer to a caller-allocated SID structure to be initialized.
 
-### -param IdentifierAuthority 
+### -param IdentifierAuthority [in]
 
-[in]
+
 Pointer to an SID_IDENTIFIER_AUTHORITY structure to set in the SID structure.
 
-### -param SubAuthorityCount 
+### -param SubAuthorityCount [in]
 
-[in]
+
 Number of subauthorities to set in the SID. Subauthority values must be set separately, as described in the following Remarks section.
 
 ## -returns
@@ -103,7 +102,7 @@ The specified <i>SubAuthorityCount</i> value is invalid.
 
 Although <b>RtlInitializeSid</b> sets the number of subauthorities for the SID, it does not set the subauthority values. This must be done separately by calling <b>RtlSubAuthoritySid</b>. 
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

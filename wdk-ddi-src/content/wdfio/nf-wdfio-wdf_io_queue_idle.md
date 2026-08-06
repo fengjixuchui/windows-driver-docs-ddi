@@ -4,7 +4,6 @@ title: WDF_IO_QUEUE_IDLE function (wdfio.h)
 description: The WDF_IO_QUEUE_IDLE function returns TRUE if an I/O queue's state indicates that the queue is drained.
 old-location: wdf\wdf_io_queue_idle.htm
 tech.root: wdf
-ms.assetid: 9ad3be79-13ca-4bcb-b686-09e7563610f9
 ms.date: 02/26/2018
 keywords: ["WDF_IO_QUEUE_IDLE function"]
 ms.keywords: DFQueueObjectRef_f836bf9d-8d2c-48db-92cd-fbcef2a0faf6.xml, WDF_IO_QUEUE_IDLE, WDF_IO_QUEUE_IDLE function, kmdf.wdf_io_queue_idle, wdf.wdf_io_queue_idle, wdfio/WDF_IO_QUEUE_IDLE
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: None
 req.dll: 
-req.irql: Any IRQL.
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,9 +52,9 @@ The <b>WDF_IO_QUEUE_IDLE</b> function returns <b>TRUE</b> if an I/O queue's stat
 
 ## -parameters
 
-### -param State 
+### -param State [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfio/ne-wdfio-_wdf_io_queue_state">WDF_IO_QUEUE_STATE</a>-typed value that <a href="/windows-hardware/drivers/ddi/wdfio/nf-wdfio-wdfioqueuegetstate">WdfIoQueueGetState</a> returns.
 
 ## -returns

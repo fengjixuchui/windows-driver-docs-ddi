@@ -4,7 +4,6 @@ title: IDebugControl4::SetTextReplacementWide (dbgeng.h)
 description: The SetTextReplacementWide method sets the value of a user-named alias.
 old-location: debugger\settextreplacementwide.htm
 tech.root: debugger
-ms.assetid: bbd3fbc0-6dbe-4200-8fe8-e7ca9e4c9478
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::SetTextReplacementWide"]
 ms.keywords: IDebugControl4 interface [Windows Debugging],SetTextReplacementWide method, IDebugControl4.SetTextReplacementWide, IDebugControl4::SetTextReplacementWide, SetTextReplacementWide, SetTextReplacementWide method [Windows Debugging], SetTextReplacementWide method [Windows Debugging],IDebugControl4 interface, dbgeng/IDebugControl4::SetTextReplacementWide, debugger.settextreplacementwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.SetTextReplacementWide
+ - IDebugControl4::SetTextReplacementWide
 ---
 
 # IDebugControl4::SetTextReplacementWide
@@ -50,14 +49,14 @@ The <b>SetTextReplacementWide</b>  method sets the value of a user-named alias.
 
 ## -parameters
 
-### -param SrcText 
+### -param SrcText [in]
 
-[in]
+
 Specifies the name of the user-named alias.  The <a href="/windows-hardware/drivers/debugger/introduction">debugger engine</a> makes a copy of this string.  If <i>SrcText</i> is the same as the name of an automatic alias, the automatic alias is hidden by the new user-named alias.
 
-### -param DstText 
+### -param DstText [in, optional]
 
-[in, optional]
+
 Specifies the value of the user-named alias.  The debugger engine makes a copy of this string.  If <i>DstText</i> is <b>NULL</b>, the user-named alias is removed.
 
 ## -returns
@@ -119,3 +118,4 @@ For an overview of aliases used by the <a href="/windows-hardware/drivers/debugg
 
 
 <a href="/windows-hardware/drivers/debugger/as--as--set-alias-">as, aS (Set Alias)</a>
+

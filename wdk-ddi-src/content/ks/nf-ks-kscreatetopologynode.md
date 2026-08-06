@@ -4,7 +4,6 @@ title: KsCreateTopologyNode function (ks.h)
 description: The KsCreateTopologyNode function creates a handle to a topology node instance. The function can only be called at PASSIVE_LEVEL.
 old-location: stream\kscreatetopologynode.htm
 tech.root: stream
-ms.assetid: aeed8086-b413-428c-b275-d555523b5503
 ms.date: 04/23/2018
 keywords: ["KsCreateTopologyNode function"]
 ms.keywords: KsCreateTopologyNode, KsCreateTopologyNode function [Streaming Media Devices], ks/KsCreateTopologyNode, ksfunc_15092cdb-3f97-4f13-a10e-9dbc92d20776.xml, stream.kscreatetopologynode
@@ -51,24 +50,24 @@ The <b>KsCreateTopologyNode</b> function creates a handle to a topology node ins
 
 ## -parameters
 
-### -param ParentHandle 
+### -param ParentHandle [in]
 
-[in]
+
 Specifies the handle to the parent on which the node is created.
 
-### -param NodeCreate 
+### -param NodeCreate [in]
 
-[in]
+
 Specifies topology node create parameters.
 
-### -param DesiredAccess 
+### -param DesiredAccess [in]
 
-[in]
+
 Specifies an <a href="/windows-hardware/drivers/kernel/access-mask">ACCESS_MASK</a> indicating the desired access to the object. This is typically <b>GENERIC_READ</b> and/or <b>GENERIC_WRITE</b>.
 
-### -param NodeHandle 
+### -param NodeHandle [out]
 
-[out]
+
 Location for the topology node handle.
 
 ## -returns

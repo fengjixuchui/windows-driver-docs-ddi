@@ -4,7 +4,6 @@ title: TapeClassCompareMemory function (minitape.h)
 description: The TapeClassCompareMemory routine compares two memory buffers and returns the number of bytes that are equivalent.
 old-location: storage\tapeclasscomparememory.htm
 tech.root: storage
-ms.assetid: dfff350c-ff76-49d3-b4ba-a5a51fabd419
 ms.date: 03/29/2018
 keywords: ["TapeClassCompareMemory function"]
 ms.keywords: TapeClassCompareMemory, TapeClassCompareMemory routine [Storage Devices], minitape/TapeClassCompareMemory, storage.tapeclasscomparememory, tapeclas_77631fdd-b72a-4569-8066-54f260cb4d9a.xml
@@ -51,19 +50,19 @@ The <b>TapeClassCompareMemory</b> routine compares two memory buffers and return
 
 ## -parameters
 
-### -param Source1 
+### -param Source1 [in, out]
 
-[in, out]
+
 Pointer to the first buffer to be compared.
 
-### -param Source2 
+### -param Source2 [in, out]
 
-[in, out]
+
 Pointer to the second buffer to be compared.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Specifies the number of bytes to be compared.
 
 ## -returns

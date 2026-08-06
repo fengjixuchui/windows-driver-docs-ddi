@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_ENUMADAPTERS2
 title: PFND3DKMT_ENUMADAPTERS2 (d3dkmthk.h)
 description: The PFND3DKMT_ENUMADAPTERS2 callback function enumerates all graphics adapters on the system.
-ms.assetid: 06879518-8a38-4b70-ae9c-25fb4ed35c70
 ms.date: 11/21/2018
 keywords: ["PFND3DKMT_ENUMADAPTERS2 callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The PFND3DKMT_ENUMADAPTERS2 callback function enumerates all graphics and displa
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *\_Inout\_* *[D3DKMT_ENUMADAPTERS2](ns-d3dkmthk-_d3dkmt_enumadapters2.md)* * *Arg1*
 

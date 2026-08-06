@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGKARG_OPENALLOCATION
 title: _DXGKARG_OPENALLOCATION (d3dkmddi.h)
 description: The DXGKARG_OPENALLOCATION structure describes allocations that the display miniport driver should open.
 old-location: display\dxgkarg_openallocation.htm
-ms.assetid: cddb85c7-137c-4ceb-b53c-170ce020cea1
 ms.date: 05/10/2018
 keywords: ["DXGKARG_OPENALLOCATION structure"]
 ms.keywords: DXGKARG_OPENALLOCATION, DXGKARG_OPENALLOCATION structure [Display Devices], DmStructs_442924a2-c130-487c-acdb-62a2b6e9f219.xml, _DXGKARG_OPENALLOCATION, d3dkmddi/DXGKARG_OPENALLOCATION, display.dxgkarg_openallocation
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_OPENALLOCATION
  - DXGKARG_OPENALLOCATION
 ---
 
@@ -52,29 +52,29 @@ The DXGKARG_OPENALLOCATION structure describes allocations that the display mini
 
 ## -struct-fields
 
-### -field NumAllocations
+### -field NumAllocations [in]
 
-[in] The number of elements in the array that the <b>pOpenAllocation</b> member specifies, which represents the number of device-specific allocations to open.
+The number of elements in the array that the <b>pOpenAllocation</b> member specifies, which represents the number of device-specific allocations to open.
 
-### -field pOpenAllocation
+### -field pOpenAllocation [in/out]
 
-[in/out] An array of <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_openallocationinfo">DXGK_OPENALLOCATIONINFO</a> structures for the allocations to open.
+An array of <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_openallocationinfo">DXGK_OPENALLOCATIONINFO</a> structures for the allocations to open.
 
-### -field pPrivateDriverData
+### -field pPrivateDriverData [in]
 
-[in] A pointer to a block of private data that is passed from the user-mode display driver to the display miniport driver. This block of private data is the same resource-specific data that is passed in the <b>pPrivateDriverData</b> member of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_createallocation">DXGKARG_CREATEALLOCATION</a> structure in the call to the <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation">DxgkDdiCreateAllocation</a> function. The display miniport driver cannot modify this block of private data.
+A pointer to a block of private data that is passed from the user-mode display driver to the display miniport driver. This block of private data is the same resource-specific data that is passed in the <b>pPrivateDriverData</b> member of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_createallocation">DXGKARG_CREATEALLOCATION</a> structure in the call to the <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation">DxgkDdiCreateAllocation</a> function. The display miniport driver cannot modify this block of private data.
 
-### -field PrivateDriverSize
+### -field PrivateDriverSize [in]
 
-[in] The size, in bytes, of the block of private data that <b>pPrivateDriverData</b> points to.
+The size, in bytes, of the block of private data that <b>pPrivateDriverData</b> points to.
 
-### -field Flags
+### -field Flags [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_openallocationflags">DXGK_OPENALLOCATIONFLAGS</a> structure that identifies the operation to perform for allocations.
+A <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_openallocationflags">DXGK_OPENALLOCATIONFLAGS</a> structure that identifies the operation to perform for allocations.
 
-### -field SubresourceIndex
+### -field SubresourceIndex [in]
 
-[in] Supported beginning with Windows 8.
+Supported beginning with Windows 8.
 
 An index into the resource for the render target surface.
 
@@ -82,15 +82,15 @@ The operating system specifies this member only if the display miniport driver s
 
 If the value of <b>SubresourceIndex</b> is greater than the number of subresources in the allocation, the display miniport driver should return an error.
 
-### -field SubresourceOffset
+### -field SubresourceOffset [out]
 
-[out] Supported beginning with Windows 8.
+Supported beginning with Windows 8.
 
 The offset, in bytes, from the start of the allocation to the start of the subresource.
 
-### -field Pitch
+### -field Pitch [out]
 
-[out] Supported beginning with Windows 8.
+Supported beginning with Windows 8.
 
 The pitch, in bytes, of the allocation—that is, the distance, in bytes, to the start of the next row.
 
@@ -113,3 +113,4 @@ The pitch, in bytes, of the allocation—that is, the distance, in bytes, to the
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_openallocationinfo">DxgkDdiOpenAllocation</a>
+

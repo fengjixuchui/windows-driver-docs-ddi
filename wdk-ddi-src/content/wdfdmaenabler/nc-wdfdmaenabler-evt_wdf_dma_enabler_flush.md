@@ -4,7 +4,6 @@ title: EVT_WDF_DMA_ENABLER_FLUSH (wdfdmaenabler.h)
 description: A driver's EvtDmaEnablerFlush event callback function deallocates a device's DMA buffers.
 old-location: wdf\evtdmaenablerflush.htm
 tech.root: wdf
-ms.assetid: bb606889-7d05-49a0-b0b7-e1f6d6c315d8
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DMA_ENABLER_FLUSH callback function"]
 ms.keywords: DFDmaObjectRef_0a019ec3-228e-47d0-ab8c-9c07e200e229.xml, EVT_WDF_DMA_ENABLER_FLUSH, EVT_WDF_DMA_ENABLER_FLUSH callback, EvtDmaEnablerFlush, EvtDmaEnablerFlush callback function, kmdf.evtdmaenablerflush, wdf.evtdmaenablerflush, wdfdmaenabler/EvtDmaEnablerFlush
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfDmaEnabler.h
 api_name:
- - EvtDmaEnablerFlush
+ - EVT_WDF_DMA_ENABLER_FLUSH
 ---
 
 # EVT_WDF_DMA_ENABLER_FLUSH callback function
@@ -52,9 +51,9 @@ A driver's <i>EvtDmaEnablerFlush</i> event callback function deallocates a devic
 
 ## -parameters
 
-### -param DmaEnabler 
+### -param DmaEnabler [in]
 
-[in]
+
 A handle to a DMA enabler object.
 
 ## -returns
@@ -78,3 +77,4 @@ For more information about the <i>EvtDmaEnablerFlush</i> callback function, see 
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdmaenabler/nf-wdfdmaenabler-wdfdmaenablercreate">WdfDmaEnablerCreate</a>
+

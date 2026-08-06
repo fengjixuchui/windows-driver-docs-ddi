@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_CALCPRIVATEHEAPANDRESOURCESIZES_0003
 title: PFND3D12DDI_CALCPRIVATEHEAPANDRESOURCESIZES_0003 (d3d12umddi.h)
-description: Calculate private heap and resources.
-ms.assetid: c814564d-01e0-4bae-bd2b-0ef95e654686
-ms.date: 10/19/2018
+description: Learn more about the PFND3D12DDI_CALCPRIVATEHEAPANDRESOURCESIZES_0003 callback function.
+ms.date: 02/28/2023
 keywords: ["PFND3D12DDI_CALCPRIVATEHEAPANDRESOURCESIZES_0003 callback function"]
 req.header: d3d12umddi.h
 req.include-header: 
@@ -36,56 +35,30 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CALCPRIVATEHEAPANDRESOURCESIZES_0003
-product:
- - Windows
 dev_langs:
  - c++
 ---
 
 # PFND3D12DDI_CALCPRIVATEHEAPANDRESOURCESIZES_0003 callback function
 
-
 ## -description
 
-Calculate private heap and resources.
+**PFND3D12DDI_CALCPRIVATEHEAPANDRESOURCESIZES_0003** calculates the number of bytes required for a private heap and resource.
 
 ## -parameters
 
-### -param D3D12DDI_HDEVICE
+### -param unnamedParam1
 
-A handle to the display device (graphics context).
+[in] A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
-Pointer to a D3D12DDIARG_CREATEHEAP_0001 structure.
+[in/optional] Pointer to a [**D3D12DDIARG_CREATEHEAP_0001**](ns-d3d12umddi-d3d12ddiarg_createheap_0001.md) structure that describes the heap.
 
-### -param Arg3
+### -param unnamedParam3
 
-Pointer to a D3D12DDIARG_CREATERESOURCE_0003 structure.
+Pointer to a **D3D12DDIARG_CREATERESOURCE_0003** structure that describes the resource.
 
 ## -returns
 
-Returns D3D12DDI_HEAP_AND_RESOURCE_SIZES.
-
-## -prototype
-
-```cpp
-//Declaration
-
-PFND3D12DDI_CALCPRIVATEHEAPANDRESOURCESIZES_0003 Pfnd3d12ddiCalcprivateheapandresourcesizes0003; 
-
-// Definition
-
-D3D12DDI_HEAP_AND_RESOURCE_SIZES Pfnd3d12ddiCalcprivateheapandresourcesizes0003 
-(
-	 D3D12DDI_HDEVICE
-	CONST D3D12DDIARG_CREATEHEAP_0001 *
-	CONST D3D12DDIARG_CREATERESOURCE_0003 *
-)
-{...}
-
-PFND3D12DDI_CALCPRIVATEHEAPANDRESOURCESIZES_0003 
-
-
-```
-
+Returns a [**D3D12DDI_HEAP_AND_RESOURCE_SIZES**](ns-d3d12umddi-d3d12ddi_heap_and_resource_sizes.md) structure that specifies the sizes of the heap and resource, in bytes.

@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelScriptDebugBreakpointEnumerator.Release
 title: IDataModelScriptDebugBreakpointEnumerator::Release (dbgmodel.h)
-description: Decrements the reference count for an interface on an object.
-ms.assetid: b11ce58d-9614-4f05-875b-16e412d6c827
+description: "The IDataModelScriptDebugBreakpointEnumerator::Release method decrements the reference count for an interface on an object."
 ms.date: 09/10/2018
 keywords: ["IDataModelScriptDebugBreakpointEnumerator::Release"]
 ms.keywords: IDataModelScriptDebugBreakpointEnumerator::Release, Release, IDataModelScriptDebugBreakpointEnumerator.Release, IDataModelScriptDebugBreakpointEnumerator::Release, IDataModelScriptDebugBreakpointEnumerator.Release
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelScriptDebugBreakpointEnumerator.Release
+ - IDataModelScriptDebugBreakpointEnumerator::Release
 ---
 
 # IDataModelScriptDebugBreakpointEnumerator::Release
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IDataModelScriptDebugBreakpointEnumerator interface](nn-dbgmodel-idatamodelscriptdebugbreakpointenumerator.md)
+

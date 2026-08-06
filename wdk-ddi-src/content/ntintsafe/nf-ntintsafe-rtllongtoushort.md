@@ -4,7 +4,6 @@ title: RtlLongToUShort function (ntintsafe.h)
 description: Converts a value of type LONG to a value of type USHORT.
 old-location: kernel\rtllongtoushort.htm
 tech.root: kernel
-ms.assetid: A6D3E5D2-EB53-4F1D-B4E4-9E2D8D845E80
 ms.date: 04/30/2018
 keywords: ["RtlLongToUShort function"]
 ms.keywords: RtlLongToUShort, RtlLongToUShort function [Kernel-Mode Driver Architecture], kernel.rtllongtoushort, ntintsafe/RtlLongToUShort
@@ -50,14 +49,14 @@ Converts a value of type <b>LONG</b> to a value of type <b>USHORT</b>.
 
 ## -parameters
 
-### -param lOperand 
+### -param lOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pusResult 
+### -param pusResult [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

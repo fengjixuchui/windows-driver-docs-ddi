@@ -4,7 +4,6 @@ title: RtlULongToChar function (ntintsafe.h)
 description: Converts a value of type ULONG to a value of type CHAR.
 old-location: kernel\rtlulongtochar.htm
 tech.root: kernel
-ms.assetid: 43BD3798-0FCA-4A44-8EE1-DE252636CC95
 ms.date: 04/30/2018
 keywords: ["RtlULongToChar function"]
 ms.keywords: RtlULongToChar, RtlULongToChar function [Kernel-Mode Driver Architecture], kernel.rtlulongtochar, ntintsafe/RtlULongToChar
@@ -50,14 +49,14 @@ Converts a value of type <b>ULONG</b> to a value of type <b>CHAR</b>.
 
 ## -parameters
 
-### -param ulOperand 
+### -param ulOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pch 
+### -param pch [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

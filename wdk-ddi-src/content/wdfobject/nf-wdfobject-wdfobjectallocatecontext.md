@@ -4,7 +4,6 @@ title: WdfObjectAllocateContext function (wdfobject.h)
 description: The WdfObjectAllocateContext method allocates context space for a specified framework object.
 old-location: wdf\wdfobjectallocatecontext.htm
 tech.root: wdf
-ms.assetid: dbabd045-4f18-4103-b3c0-5405173628d6
 ms.date: 02/26/2018
 keywords: ["WdfObjectAllocateContext function"]
 ms.keywords: DFGenObjectRef_9b172283-f4b6-4ade-9cd2-38f10c0ff9bd.xml, WdfObjectAllocateContext, WdfObjectAllocateContext method, kmdf.wdfobjectallocatecontext, wdf.wdfobjectallocatecontext, wdfobject/WdfObjectAllocateContext
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,19 +54,19 @@ The <b>WdfObjectAllocateContext</b> method allocates context space for a specifi
 
 ## -parameters
 
-### -param Handle 
+### -param Handle [in]
 
-[in]
+
 A handle to a framework object.
 
-### -param ContextAttributes 
+### -param ContextAttributes [in]
 
-[in]
+
 A pointer to a caller-supplied <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that describes the context space.
 
-### -param Context 
+### -param Context [out]
 
-[out]
+
 A pointer to a location that receives a pointer to the allocated context space.
 
 ## -returns

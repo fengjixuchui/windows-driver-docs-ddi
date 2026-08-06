@@ -1,11 +1,10 @@
 ---
 UID: NF:dbgeng.IDebugControl4.GetSpecificFilterArgumentWide
 title: IDebugControl4::GetSpecificFilterArgumentWide (dbgeng.h)
-description: The GetSpecificFilterArgumentWide method returns the value of filter argument for thespecific filters that have an argument.
+description: The GetSpecificFilterArgumentWide method returns the value of filter argument for the specific filters that have an argument.
 old-location: debugger\getspecificfilterargumentwide.htm
 tech.root: debugger
-ms.assetid: 61537680-0453-4484-b07a-e0d90b45c412
-ms.date: 05/03/2018
+ms.date: 02/06/2022
 keywords: ["IDebugControl4::GetSpecificFilterArgumentWide"]
 ms.keywords: GetSpecificFilterArgumentWide, GetSpecificFilterArgumentWide method [Windows Debugging], GetSpecificFilterArgumentWide method [Windows Debugging],IDebugControl4 interface, IDebugControl4 interface [Windows Debugging],GetSpecificFilterArgumentWide method, IDebugControl4.GetSpecificFilterArgumentWide, IDebugControl4::GetSpecificFilterArgumentWide, dbgeng/IDebugControl4::GetSpecificFilterArgumentWide, debugger.getspecificfilterargumentwide
 req.header: dbgeng.h
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.GetSpecificFilterArgumentWide
+ - IDebugControl4::GetSpecificFilterArgumentWide
 ---
 
 # IDebugControl4::GetSpecificFilterArgumentWide
@@ -46,29 +45,29 @@ api_name:
 
 ## -description
 
-The <b>GetSpecificFilterArgumentWide</b>  method returns the value of filter argument for thespecific filters that have an argument.
+The <b>GetSpecificFilterArgumentWide</b>  method returns the value of filter argument for the specific filters that have an argument.
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 Specifies the index of the specific filter whose argument will be returned.  <i>Index</i> must be the index of a specific filter that has an argument.
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Receives the argument for the specific filter.  The interpretation of the argument depends on the specific filter.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
-Specifies the size, in characters, of the buffer that <i>Buffer</i> specifies.
 
-### -param ArgumentSize 
+Specifies the size, in characters, of the buffer that <i>Buffer</i> specifies. This size includes the space for the '\0' terminating character.
 
-[out, optional]
-Receives the size, in characters, of the argument for the specific filter.
+### -param ArgumentSize [out, optional]
+
+
+Receives the size, in characters, of the argument for the specific filter. This size includes the space for the '\0' terminating character.
 
 ## -returns
 
@@ -122,3 +121,4 @@ For a list of specific filters that have argument and the interpretation of thos
 
 
 <a href="/windows-hardware/drivers/debugger/sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-">sx, sxd, sxe, sxi, sxn (Set Exceptions)</a>
+

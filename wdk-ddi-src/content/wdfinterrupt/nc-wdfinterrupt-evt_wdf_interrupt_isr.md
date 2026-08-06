@@ -4,7 +4,6 @@ title: EVT_WDF_INTERRUPT_ISR (wdfinterrupt.h)
 description: A driver's EvtInterruptIsr event callback function services a hardware interrupt.
 old-location: wdf\evtinterruptisr.htm
 tech.root: wdf
-ms.assetid: 6f28a66a-9c17-4020-bfe2-295c22af6ba7
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_INTERRUPT_ISR callback function"]
 ms.keywords: DFInterruptObjectRef_0a8902c4-d292-418f-bab3-d7fc36d69fd5.xml, EVT_WDF_INTERRUPT_ISR, EVT_WDF_INTERRUPT_ISR callback, EvtInterruptIsr, EvtInterruptIsr callback function, kmdf.evtinterruptisr, wdf.evtinterruptisr, wdfinterrupt/EvtInterruptIsr
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfinterrupt.h
 api_name:
- - EvtInterruptIsr
+ - EVT_WDF_INTERRUPT_ISR
 ---
 
 # EVT_WDF_INTERRUPT_ISR callback function
@@ -52,14 +51,14 @@ A driver's <i>EvtInterruptIsr</i> event callback function services a hardware in
 
 ## -parameters
 
-### -param Interrupt 
+### -param Interrupt [in]
 
-[in]
+
 A handle to a framework interrupt object.
 
-### -param MessageID 
+### -param MessageID [in]
 
-[in]
+
 If the device is using message-signaled interrupts (MSIs), this parameter is the message number that identifies the device's hardware interrupt message. Otherwise, this value is 0.
 
 ## -returns
@@ -117,3 +116,4 @@ For more information about handling interrupts in framework-based drivers, see <
 
 
 <a href="/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdfinterruptwdmgetinterrupt">WdfInterruptWdmGetInterrupt</a>
+

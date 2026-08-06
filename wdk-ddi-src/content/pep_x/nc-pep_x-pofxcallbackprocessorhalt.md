@@ -1,10 +1,9 @@
 ---
 UID: NC:pep_x.POFXCALLBACKPROCESSORHALT
 title: POFXCALLBACKPROCESSORHALT (pep_x.h)
-description: The ProcessorHalt routine prepares the processor to be halted.
+description: Learn how the ProcessorHalt routine prepares the processor to be halted.
 old-location: kernel\processorhalt.htm
 tech.root: kernel
-ms.assetid: DEBE74B2-DFBD-43D7-8B14-86B4DA7D4C98
 ms.date: 04/30/2018
 keywords: ["POFXCALLBACKPROCESSORHALT callback function"]
 ms.keywords: POFXCALLBACKPROCESSORHALT, ProcessorHalt, ProcessorHalt routine [Kernel-Mode Driver Architecture], kernel.processorhalt, pepfx/ProcessorHalt
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
- - ProcessorHalt
+ - POFXCALLBACKPROCESSORHALT
 ---
 
 # POFXCALLBACKPROCESSORHALT callback function (pep_x.h)
@@ -50,9 +49,9 @@ The <b>ProcessorHalt</b> routine prepares the processor to be halted.
 
 ## -parameters
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Flags that indicate the properties of the idle state that the processor will enter. The <i>Flags</i> parameter is set to zero or to the bitwise-OR of one or more of the following flag bits.
 
 <table>
@@ -88,14 +87,14 @@ Flags that indicate the properties of the idle state that the processor will ent
 </tr>
 </table>
 
-### -param Context 
+### -param Context [in, out, optional]
 
-[in, out, optional]
-A pointer to a PEP-defined processor-halt context. This pointer is passed as a parameter to the <i>Halt</i> callback routine. This context is opaque to the Windows <a href="/windows-hardware/drivers/ddi/index">power management framework</a> (PoFx).
 
-### -param Halt 
+A pointer to a PEP-defined processor-halt context. This pointer is passed as a parameter to the <i>Halt</i> callback routine. This context is opaque to the Windows <a href="/windows-hardware/drivers/ddi/_kernel/#device-power-management">power management framework</a> (PoFx).
 
-[in]
+### -param Halt [in]
+
+
 A pointer to a PEP-implemented <i>Halt</i> callback routine. PoFx calls this routine after preparations to halt the processor have been completed. During this callback, the PEP is expected to transition the processor to the <i>halted</i> state.
 
 ## -returns
@@ -182,3 +181,4 @@ The PEP can call this routine at IRQL <= HIGH_LEVEL.
 
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_ppm_idle_execute">PEP_NOTIFY_PPM_IDLE_EXECUTE</a>
+

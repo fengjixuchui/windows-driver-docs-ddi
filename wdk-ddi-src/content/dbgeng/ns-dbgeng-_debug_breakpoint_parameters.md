@@ -4,7 +4,6 @@ title: _DEBUG_BREAKPOINT_PARAMETERS (dbgeng.h)
 description: The DEBUG_BREAKPOINT_PARAMETERS structure contains most of the parameters for describing a breakpoint.
 old-location: debugger\debug_breakpoint_parameters.htm
 tech.root: debugger
-ms.assetid: e5c87c1c-8195-4476-84bc-5f18ad83d149
 ms.date: 05/03/2018
 keywords: ["DEBUG_BREAKPOINT_PARAMETERS structure"]
 ms.keywords: "*PDEBUG_BREAKPOINT_PARAMETERS, DEBUG_BREAKPOINT_PARAMETERS, DEBUG_BREAKPOINT_PARAMETERS structure [Windows Debugging], PDEBUG_BREAKPOINT_PARAMETERS, PDEBUG_BREAKPOINT_PARAMETERS structure pointer [Windows Debugging], Structures_ad5f0e1f-7d6f-498d-80a0-1275ca3cb016.xml, _DEBUG_BREAKPOINT_PARAMETERS, dbgeng/DEBUG_BREAKPOINT_PARAMETERS, dbgeng/PDEBUG_BREAKPOINT_PARAMETERS, debugger.debug_breakpoint_parameters"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - DbgEng.h
 api_name:
+ - _DEBUG_BREAKPOINT_PARAMETERS
+ - PDEBUG_BREAKPOINT_PARAMETERS
  - DEBUG_BREAKPOINT_PARAMETERS
 ---
 
@@ -105,3 +106,4 @@ The size, in characters, of the expression string that evaluates to the location
 ## -remarks
 
 For an overview of how to use breakpoints, and a description of all breakpoint-related methods, see <a href="/windows-hardware/drivers/debugger/breakpoints3">Breakpoints</a>.
+

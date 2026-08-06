@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl3.CoerceValue
 title: IDebugControl3::CoerceValue (dbgeng.h)
-description: The CoerceValue method converts a value of one type into a value of another type.
+description: The CoerceValue method converts a value of one type into a value of another type. This method belongs to the IDebugControl3 interface.
 old-location: debugger\coercevalue.htm
 tech.root: debugger
-ms.assetid: db037fc8-d503-4a72-b6bc-d5189f6786d4
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::CoerceValue"]
 ms.keywords: CoerceValue, CoerceValue method [Windows Debugging], CoerceValue method [Windows Debugging],IDebugControl interface, CoerceValue method [Windows Debugging],IDebugControl2 interface, CoerceValue method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],CoerceValue method, IDebugControl2 interface [Windows Debugging],CoerceValue method, IDebugControl2::CoerceValue, IDebugControl3 interface [Windows Debugging],CoerceValue method, IDebugControl3.CoerceValue, IDebugControl3::CoerceValue, IDebugControl::CoerceValue, IDebugControl_034a690e-25bb-40a1-b788-7b148ba0d9cd.xml, dbgeng/IDebugControl2::CoerceValue, dbgeng/IDebugControl3::CoerceValue, dbgeng/IDebugControl::CoerceValue, debugger.coercevalue
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugControl.CoerceValue
- - IDebugControl2.CoerceValue
- - IDebugControl3.CoerceValue
+ - IDebugControl3::CoerceValue
 ---
 
 # IDebugControl3::CoerceValue
@@ -52,19 +49,19 @@ The <b>CoerceValue</b> method converts a value of one type into a value of anoth
 
 ## -parameters
 
-### -param In 
+### -param In [in]
 
-[in]
+
 Specifies the value to be converted
 
-### -param OutType 
+### -param OutType [in]
 
-[in]
+
 Specifies the desired type for the converted value. See <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_value">DEBUG_VALUE</a> for possible values.
 
-### -param Out 
+### -param Out [out]
 
-[out]
+
 Receives the converted value.  The type of this value will be the type specified by <i>OutType</i>.
 
 ## -returns
@@ -109,3 +106,4 @@ This method converts a value of one type into a value of another type.  If the s
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
+

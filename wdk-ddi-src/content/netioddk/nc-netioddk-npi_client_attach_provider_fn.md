@@ -4,7 +4,6 @@ title: NPI_CLIENT_ATTACH_PROVIDER_FN (netioddk.h)
 description: A client module's ClientAttachProvider callback function attaches the client module to a provider module.
 old-location: netvista\clientattachprovider.htm
 tech.root: netvista
-ms.assetid: 8f8abdb1-d018-4404-a80a-74017c324a0f
 ms.date: 05/02/2018
 keywords: ["NPI_CLIENT_ATTACH_PROVIDER_FN callback function"]
 ms.keywords: ClientAttachProvider, ClientAttachProvider callback function [Network Drivers Starting with Windows Vista], NPI_CLIENT_ATTACH_PROVIDER_FN, NPI_CLIENT_ATTACH_PROVIDER_FN callback, PNPI_CLIENT_ATTACH_PROVIDER_FN, PNPI_CLIENT_ATTACH_PROVIDER_FN callback function [Network Drivers Starting with Windows Vista], netioddk/ClientAttachProvider, netvista.clientattachprovider, nmrref_36b8ce1f-6570-40a1-b6f9-5d6782aac61d.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - netioddk.h
 api_name:
- - PNPI_CLIENT_ATTACH_PROVIDER_FN
+ - NPI_CLIENT_ATTACH_PROVIDER_FN
 ---
 
 # NPI_CLIENT_ATTACH_PROVIDER_FN callback function
@@ -51,23 +50,23 @@ A client module's
 
 ## -parameters
 
-### -param NmrBindingHandle 
+### -param NmrBindingHandle [in]
 
-[in]
+
 A handle used by the NMR to represent the binding between the client module and the provider
      module.
 
-### -param ClientContext 
+### -param ClientContext [in]
 
-[in]
+
 A pointer to the client module's registration context. The client module passes this pointer to
      the NMR when it calls the 
      <a href="/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrregisterclient">NmrRegisterClient</a> function to register
      itself with the NMR.
 
-### -param ProviderRegistrationInstance 
+### -param ProviderRegistrationInstance [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/netioddk/ns-netioddk-_npi_registration_instance">
      NPI_REGISTRATION_INSTANCE</a> structure. This structure contains the provider module's registration
@@ -189,3 +188,4 @@ The NMR calls a client module's
 
 
 <a href="/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrregisterclient">NmrRegisterClient</a>
+

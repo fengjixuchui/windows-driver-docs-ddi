@@ -4,7 +4,6 @@ title: RtlInitUnicodeString function (wdm.h)
 description: For more information, see the WdmlibRtlInitUnicodeStringEx function.
 old-location: kernel\rtlinitunicodestring.htm
 tech.root: kernel
-ms.assetid: c6ef7438-36a6-4da6-b745-2985d9b30614
 ms.date: 04/30/2018
 keywords: ["RtlInitUnicodeString function"]
 ms.keywords: RtlInitUnicodeString, RtlInitUnicodeString routine [Kernel-Mode Driver Architecture], k109_10e59fa9-6f57-45db-bc11-520660f43b13.xml, kernel.rtlinitunicodestring, wdm/RtlInitUnicodeString
@@ -50,14 +49,14 @@ For more information, see  the <a href="/windows-hardware/drivers/ddi/wdmsec/nf-
 
 ## -parameters
 
-### -param DestinationString 
+### -param DestinationString [out]
 
-[out]
+
 For more information, see  the <a href="/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibrtlinitunicodestringex">WdmlibRtlInitUnicodeStringEx</a> function.
 
-### -param SourceString 
+### -param SourceString [in, optional]
 
-[in, optional]
+
 For more information, see  the <a href="/windows-hardware/drivers/ddi/wdmsec/nf-wdmsec-wdmlibrtlinitunicodestringex">WdmlibRtlInitUnicodeStringEx</a> function.
 
 ## -returns

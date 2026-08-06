@@ -4,7 +4,6 @@ title: EVT_WDF_REQUEST_CANCEL (wdfrequest.h)
 description: A driver's EvtRequestCancel event callback function handles operations that must be performed when an I/O request is canceled.
 old-location: wdf\evtrequestcancel.htm
 tech.root: wdf
-ms.assetid: db54fa76-d3e0-4f8c-aa3f-bab268dd9b4d
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_REQUEST_CANCEL callback function"]
 ms.keywords: DFRequestObjectRef_fe2e3eee-9f6a-4fd8-afa7-23eb740ccd01.xml, EVT_WDF_REQUEST_CANCEL, EVT_WDF_REQUEST_CANCEL callback, EvtRequestCancel, EvtRequestCancel callback function, kmdf.evtrequestcancel, wdf.evtrequestcancel, wdfrequest/EvtRequestCancel
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfrequest.h
 api_name:
- - EvtRequestCancel
+ - EVT_WDF_REQUEST_CANCEL
 ---
 
 # EVT_WDF_REQUEST_CANCEL callback function
@@ -52,9 +51,9 @@ A driver's <i>EvtRequestCancel</i> event callback function handles operations th
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object that represents the I/O request that is being canceled.
 
 ## -remarks
@@ -86,3 +85,4 @@ For more information about this callback function, see <a href="/windows-hardwar
 
 
 <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestmarkcancelableex">WdfRequestMarkCancelableEx</a>
+

@@ -4,7 +4,6 @@ title: _NDIS_PORT_STATE (ntddndis.h)
 description: The NDIS_PORT_STATE structure specifies the port state information for an NDIS port.
 old-location: netvista\ndis_port_state.htm
 tech.root: netvista
-ms.assetid: 57d76d1e-4276-4dbd-b651-2bba6de898b2
 ms.date: 05/02/2018
 keywords: ["NDIS_PORT_STATE structure"]
 ms.keywords: "*PNDIS_PORT_STATE, NDIS_PORT_STATE, NDIS_PORT_STATE structure [Network Drivers Starting with Windows Vista], PNDIS_PORT_STATE, PNDIS_PORT_STATE structure pointer [Network Drivers Starting with Windows Vista], _NDIS_PORT_STATE, ndis_ports_ref_dbfd8cd5-9c0c-4ea9-8329-d9fbf15b14df.xml, netvista.ndis_port_state, ntddndis/NDIS_PORT_STATE, ntddndis/PNDIS_PORT_STATE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_PORT_STATE
+ - PNDIS_PORT_STATE
  - NDIS_PORT_STATE
 ---
 
@@ -57,7 +58,7 @@ The NDIS_PORT_STATE structure specifies the port state information for an NDIS p
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_PORT_STATE structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_ DEFAULT, the 
@@ -225,7 +226,7 @@ The NDIS_PORT_STATE structure is used in the
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -242,3 +243,4 @@ The NDIS_PORT_STATE structure is used in the
 
 
 <a href="/windows-hardware/drivers/network/oid-gen-port-state">OID_GEN_PORT_STATE</a>
+

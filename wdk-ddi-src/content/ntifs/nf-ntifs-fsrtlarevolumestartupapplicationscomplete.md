@@ -4,14 +4,13 @@ title: FsRtlAreVolumeStartupApplicationsComplete function (ntifs.h)
 description: The FsRtlAreVolumeStartupApplicationsComplete function determines whether volume startup applications have completed processing.
 old-location: ifsk\fsrtlarevolumestartupapplicationscomplete.htm
 tech.root: ifsk
-ms.assetid: a6ee1b04-7f62-452c-92b7-7325278bcd17
 ms.date: 07/24/2020
 keywords: ["FsRtlAreVolumeStartupApplicationsComplete function"]
 ms.keywords: FsRtlAreVolumeStartupApplicationsComplete, FsRtlAreVolumeStartupApplicationsComplete function [Installable File System Drivers], fsrtlref_c0858a3d-5e61-4ba3-bbaf-9ec881042d6a.xml, ifsk.fsrtlarevolumestartupapplicationscomplete, ntifs/FsRtlAreVolumeStartupApplicationsComplete
 req.header: ntifs.h
 req.include-header: Fltkernel.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 

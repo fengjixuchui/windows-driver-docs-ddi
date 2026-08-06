@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_RadioStateGetPasswordRetryCount
 title: RIL_RadioStateGetPasswordRetryCount function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_RadioStateGetPasswordRetryCount function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_radiostategetpasswordretrycount.htm
 tech.root: netvista
-ms.assetid: 59394a14-e3f0-450a-a96c-df0f6ee51768
 ms.date: 05/02/2018
 keywords: ["RIL_RadioStateGetPasswordRetryCount function"]
 ms.keywords: RIL_RadioStateGetPasswordRetryCount, RIL_RadioStateGetPasswordRetryCount method [Network Drivers Starting with Windows Vista], netvista.ril_radiostategetpasswordretrycount, rilapi/RIL_RadioStateGetPasswordRetryCount

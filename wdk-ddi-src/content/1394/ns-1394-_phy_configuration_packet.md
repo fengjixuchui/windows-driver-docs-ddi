@@ -4,7 +4,6 @@ title: _PHY_CONFIGURATION_PACKET (1394.h)
 description: The PHY_CONFIGURATION_PACKET structure contains a raw PHY configuration packet.
 old-location: ieee\phy_configuration_packet.htm
 tech.root: IEEE
-ms.assetid: 5a5acd4a-ad99-4b8c-b8ea-490a7b467e14
 ms.date: 02/15/2018
 keywords: ["PHY_CONFIGURATION_PACKET structure"]
 ms.keywords: "*PPHY_CONFIGURATION_PACKET, 1394/PHY_CONFIGURATION_PACKET, 1394/PPHY_CONFIGURATION_PACKET, 1394stct_1d0c74cf-13c7-455d-b51e-5e2f4f2a5c5a.xml, IEEE.phy_configuration_packet, PHY_CONFIGURATION_PACKET, PHY_CONFIGURATION_PACKET structure [Buses], PPHY_CONFIGURATION_PACKET, PPHY_CONFIGURATION_PACKET structure pointer [Buses], _PHY_CONFIGURATION_PACKET"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _PHY_CONFIGURATION_PACKET
+ - PPHY_CONFIGURATION_PACKET
  - PHY_CONFIGURATION_PACKET
 ---
 
@@ -92,5 +93,5 @@ For an explanation of the function of the PHY configuration packet, see the IEEE
 
 ## -see-also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537661">REQUEST_SEND_PHY_CONFIG_PACKET</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_SEND_PHY_CONFIG_PACKET</a>
 

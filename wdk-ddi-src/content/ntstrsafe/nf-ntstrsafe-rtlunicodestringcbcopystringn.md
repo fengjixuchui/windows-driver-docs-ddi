@@ -4,7 +4,6 @@ title: RtlUnicodeStringCbCopyStringN function (ntstrsafe.h)
 description: The RtlUnicodeStringCbCopyStringN function copies a string into a UNICODE_STRING structure while limiting the size of the copied string.
 old-location: kernel\rtlunicodestringcbcopystringn.htm
 tech.root: kernel
-ms.assetid: b36d01e5-179b-4adc-ace3-0664c93aedef
 ms.date: 04/30/2018
 keywords: ["RtlUnicodeStringCbCopyStringN function"]
 ms.keywords: RtlUnicodeStringCbCopyStringN, RtlUnicodeStringCbCopyStringN function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringcbcopystringn, ntstrsafe/RtlUnicodeStringCbCopyStringN, safestrings_4f11af32-212f-47f5-8585-ad5c04c51ec0.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,19 +50,19 @@ The <b>RtlUnicodeStringCbCopyStringN</b> function copies a string into a <a href
 
 ## -parameters
 
-### -param DestinationString 
+### -param DestinationString [out]
 
-[out]
+
 A pointer to a <b>UNICODE_STRING</b> structure that receives the copied string. The string that the <i>pszSrc</i> parameter points to (excluding the terminating null) is copied into the buffer that the <i>DestinationString</i> parameter's <b>UNICODE_STRING</b> structure points to. The maximum number of bytes in the string is NTSTRSAFE_UNICODE_STRING_MAX_CCH * sizeof(WCHAR).
 
-### -param pszSrc 
+### -param pszSrc [in]
 
-[in]
+
 A pointer to the string to be copied.
 
-### -param cbToCopy 
+### -param cbToCopy [in]
 
-[in]
+
 The number of bytes to be copied from the source to the destination.
 
 ## -returns

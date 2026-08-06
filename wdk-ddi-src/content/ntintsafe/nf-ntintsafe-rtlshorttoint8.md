@@ -4,7 +4,6 @@ title: RtlShortToInt8 function (ntintsafe.h)
 description: Converts a value of type SHORT to a value of type INT8.
 old-location: kernel\rtlshorttoint8.htm
 tech.root: kernel
-ms.assetid: 644559BB-9842-4261-9A9C-720185E6E9F4
 ms.date: 04/30/2018
 keywords: ["RtlShortToInt8 function"]
 ms.keywords: RtlShortToInt8, RtlShortToInt8 function [Kernel-Mode Driver Architecture], kernel.rtlshorttoint8, ntintsafe/RtlShortToInt8
@@ -50,14 +49,14 @@ Converts a value of type <b>SHORT</b> to a value of type <b>INT8</b>.
 
 ## -parameters
 
-### -param sOperand 
+### -param sOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pi8Result 
+### -param pi8Result [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

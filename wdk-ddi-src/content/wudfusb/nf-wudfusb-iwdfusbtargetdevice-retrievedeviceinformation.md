@@ -4,7 +4,6 @@ title: IWDFUsbTargetDevice::RetrieveDeviceInformation (wudfusb.h)
 description: The RetrieveDeviceInformation method retrieves device information of the specified type.
 old-location: wdf\iwdfusbtargetdevice_retrievedeviceinformation.htm
 tech.root: wdf
-ms.assetid: 04e3dfba-3313-4575-9956-5b1861b8212a
 ms.date: 02/26/2018
 keywords: ["IWDFUsbTargetDevice::RetrieveDeviceInformation"]
 ms.keywords: IWDFUsbTargetDevice interface,RetrieveDeviceInformation method, IWDFUsbTargetDevice.RetrieveDeviceInformation, IWDFUsbTargetDevice::RetrieveDeviceInformation, RetrieveDeviceInformation, RetrieveDeviceInformation method, RetrieveDeviceInformation method,IWDFUsbTargetDevice interface, UMDFUSBref_3323b24f-da0c-4208-8f88-88d7198e805c.xml, umdf.iwdfusbtargetdevice_retrievedeviceinformation, wdf.iwdfusbtargetdevice_retrievedeviceinformation, wudfusb/IWDFUsbTargetDevice::RetrieveDeviceInformation
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFUsbTargetDevice.RetrieveDeviceInformation
+ - IWDFUsbTargetDevice::RetrieveDeviceInformation
 ---
 
 # IWDFUsbTargetDevice::RetrieveDeviceInformation
@@ -52,19 +51,19 @@ The <b>RetrieveDeviceInformation</b> method retrieves device information of the 
 
 ## -parameters
 
-### -param InformationType 
+### -param InformationType [in]
 
-[in]
+
 The type of information that the UMDF driver requests about the device.
 
-### -param BufferLength 
+### -param BufferLength [in, out]
 
-[in, out]
+
 A pointer to a variable that, on input, contains the size, in bytes, of the buffer that <b>RetrieveDeviceInformation</b> supplies in <i>Buffer</i>. On output, this parameter contains the size that <b>RetrieveDeviceInformation</b> requires for <i>Buffer</i>.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 A pointer that receives the buffer that contains the device information.
 
 ## -returns
@@ -135,3 +134,4 @@ For a code example of how to use the<b>RetrieveDeviceInformation</b> method, see
 
 
 <a href="/windows/win32/api/winusb/nf-winusb-winusb_querydeviceinformation">WinUsb_QueryDeviceInformation</a>
+

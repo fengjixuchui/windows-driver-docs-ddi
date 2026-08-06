@@ -4,7 +4,6 @@ title: IWDFIoRequest::GetType (wudfddi.h)
 description: The GetType method retrieves the type of operation that a request contains.
 old-location: wdf\iwdfiorequest_gettype.htm
 tech.root: wdf
-ms.assetid: 3be2ef6c-391e-4d1c-a1a6-e3228f5cc67d
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequest::GetType"]
 ms.keywords: GetType, GetType method, GetType method,IWDFIoRequest interface, IWDFIoRequest interface,GetType method, IWDFIoRequest.GetType, IWDFIoRequest::GetType, UMDFRequestObjectRef_8f8bc7b0-b527-4325-a2dc-a9ef5e73cc28.xml, umdf.iwdfiorequest_gettype, wdf.iwdfiorequest_gettype, wudfddi/IWDFIoRequest::GetType
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequest.GetType
+ - IWDFIoRequest::GetType
 ---
 
 # IWDFIoRequest::GetType
@@ -61,3 +60,4 @@ The <b>GetType</b> method retrieves the type of operation that a request contain
 
 
 <a href="/windows-hardware/drivers/ddi/wdfrequest/ne-wdfrequest-_wdf_request_type">WDF_REQUEST_TYPE</a>
+

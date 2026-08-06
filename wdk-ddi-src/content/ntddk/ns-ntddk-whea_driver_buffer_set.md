@@ -3,10 +3,8 @@ UID: NS:ntddk._WHEA_DRIVER_BUFFER_SET
 title: WHEA_DRIVER_BUFFER_SET
 ms.date: 04/02/2020
 tech.root: whea
-ms.assetid: 16366ac8-b23b-410d-80af-232280acd64e
-ms.topic: language-reference
 targetos: Windows
-description: 
+description: "Learn more about: WHEA_DRIVER_BUFFER_SET"
 req.construct-type: structure
 req.ddi-compliance: 
 req.dll: 
@@ -30,6 +28,7 @@ api_location:
  - ntddk.h
 api_name:
  - _WHEA_DRIVER_BUFFER_SET
+ - PWHEA_DRIVER_BUFFER_SET
  - WHEA_DRIVER_BUFFER_SET
 f1_keywords:
  - _WHEA_DRIVER_BUFFER_SET

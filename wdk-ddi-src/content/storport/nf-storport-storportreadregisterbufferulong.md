@@ -4,7 +4,6 @@ title: StorPortReadRegisterBufferUlong macro (storport.h)
 description: The StorPortReadRegisterBufferUlong routine reads a value from a specified register address.
 old-location: storage\storportreadregisterbufferulong.htm
 tech.root: storage
-ms.assetid: 069defee-6295-4492-b0bb-135c476c79aa
 ms.date: 03/29/2018
 keywords: ["StorPortReadRegisterBufferUlong macro"]
 ms.keywords: StorPortReadRegisterBufferUlong, StorPortReadRegisterBufferUlong routine [Storage Devices], storage.storportreadregisterbufferulong, storport/StorPortReadRegisterBufferUlong, storprt_18f8816c-5e0f-4139-829d-d9de65d63529.xml
@@ -51,25 +50,25 @@ The <b>StorPortReadRegisterBufferUlong</b> routine reads a value from a specifie
 
 ## -parameters
 
-### -param h 
+### -param h [in]
 
-[in]
+
 A pointer to the hardware device extension.
 
-### -param r 
+### -param r [in]
 
-[in]
+
 
 Pointer to the register where the data is to be read.
 
-### -param b 
+### -param b [in]
 
-[in]
+
 Pointer to the buffer that receives the data that is read.
 
-### -param c 
+### -param c [in]
 
-[in]
+
 Specifies the number of data items to be read. Each data item has a size of <b>sizeof</b>(ULONG).
 
 ## -remarks

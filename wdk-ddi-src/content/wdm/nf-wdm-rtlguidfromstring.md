@@ -4,7 +4,6 @@ title: RtlGUIDFromString function (wdm.h)
 description: The RtlGUIDFromString routine converts the given Unicode string to a GUID in binary format.
 old-location: kernel\rtlguidfromstring.htm
 tech.root: kernel
-ms.assetid: 7bdfc781-93d6-4f49-95f1-46f102908ec5
 ms.date: 04/30/2018
 keywords: ["RtlGUIDFromString function"]
 ms.keywords: RtlGUIDFromString, RtlGUIDFromString routine [Kernel-Mode Driver Architecture], k109_d6fe22b7-9d81-4024-819c-03bce65d3d14.xml, kernel.rtlguidfromstring, wdm/RtlGUIDFromString
@@ -51,15 +50,15 @@ The <b>RtlGUIDFromString</b> routine converts the given Unicode string to a GUID
 
 ## -parameters
 
-### -param GuidString 
+### -param GuidString [in]
 
-[in]
+
 Pointer to the buffered Unicode string to be converted to a GUID. The string should be in the following form (including the braces):
 {00000000-0000-0000-0000-000000000000}
 
-### -param Guid 
+### -param Guid [out]
 
-[out]
+
 Pointer to a caller-supplied variable in which the GUID is returned.
 
 ## -returns

@@ -4,7 +4,6 @@ title: PAGP_FREE_PHYSICAL (videoagp.h)
 description: The AgpFreePhysical function frees system memory that was committed by a previous call to AgpCommitPhysical.
 old-location: display\agpfreephysical.htm
 tech.root: display
-ms.assetid: bb0e3330-5601-47dd-afc6-94a70b42daaf
 ms.date: 05/10/2018
 keywords: ["PAGP_FREE_PHYSICAL callback function"]
 ms.keywords: AgpFreePhysical, AgpFreePhysical callback function [Display Devices], PAGP_FREE_PHYSICAL, PAGP_FREE_PHYSICAL callback, VideoPort_Functions_cc6360b5-12f9-4c49-bb06-d86ada229b9e.xml, display.agpfreephysical, videoagp/AgpFreePhysical
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - videoagp.h
 api_name:
- - AgpFreePhysical
+ - PAGP_FREE_PHYSICAL
 ---
 
 # PAGP_FREE_PHYSICAL callback function
@@ -50,24 +49,24 @@ The <b>AgpFreePhysical</b> function frees system memory that was committed by a 
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the device extension of the miniport driver.
 
-### -param PhysicalReserveContext 
+### -param PhysicalReserveContext [in]
 
-[in]
+
 Identifies a reserved physical address range. This context handle was obtained from <a href="/windows-hardware/drivers/ddi/videoagp/nc-videoagp-pagp_reserve_physical">AgpReservePhysical</a>.
 
-### -param Pages 
+### -param Pages [in]
 
-[in]
+
 Specifies the number of pages of system memory that the video port driver should unmap.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the page offset into the reserved physical address range identified by <b>PhysicalReserveContext</b> that indicates the actual base address at which to unmap system memory.
 
 ## -remarks
@@ -81,3 +80,4 @@ When a miniport driver calls <b>AgpFreePhysical</b>, <b>Pages</b> pages of physi
 
 
 <a href="/windows-hardware/drivers/ddi/videoagp/nc-videoagp-pagp_release_physical">AgpReleasePhysical</a>
+

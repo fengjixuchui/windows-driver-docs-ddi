@@ -4,7 +4,6 @@ title: IWDFIoRequest::CompleteWithInformation (wudfddi.h)
 description: The CompleteWithInformation method completes a request with the supplied information.
 old-location: wdf\iwdfiorequest_completewithinformation.htm
 tech.root: wdf
-ms.assetid: 43089473-3255-4016-8d51-f5ad4261bd8d
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequest::CompleteWithInformation"]
 ms.keywords: CompleteWithInformation, CompleteWithInformation method, CompleteWithInformation method,IWDFIoRequest interface, IWDFIoRequest interface,CompleteWithInformation method, IWDFIoRequest.CompleteWithInformation, IWDFIoRequest::CompleteWithInformation, UMDFRequestObjectRef_c01f0d7b-3b4d-442c-8425-a99c064609ee.xml, umdf.iwdfiorequest_completewithinformation, wdf.iwdfiorequest_completewithinformation, wudfddi/IWDFIoRequest::CompleteWithInformation
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequest.CompleteWithInformation
+ - IWDFIoRequest::CompleteWithInformation
 ---
 
 # IWDFIoRequest::CompleteWithInformation
@@ -52,14 +51,14 @@ The <b>CompleteWithInformation</b> method completes a request with the supplied 
 
 ## -parameters
 
-### -param CompletionStatus 
+### -param CompletionStatus [in]
 
-[in]
+
 A status value to complete the request with.
 
-### -param Information 
+### -param Information [in]
 
-[in]
+
 Additional driver-supplied information that is related to the I/O operation.
 
 For read, write, and device I/O control operations, the driver should supply the number of bytes that are transferred.
@@ -81,3 +80,4 @@ For a code example of how to use the <b>CompleteWithInformation</b> method, see 
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-send">IWDFIoRequest::Send</a>
+

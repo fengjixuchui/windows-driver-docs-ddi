@@ -4,7 +4,6 @@ title: MINIPORT_CO_DEACTIVATE_VC (ndis.h)
 description: The MiniportCoDeactivateVc function is required for connection-oriented miniports.
 old-location: netvista\miniportcodeactivatevc.htm
 tech.root: netvista
-ms.assetid: 8c17cec8-d161-47cf-b886-bb8b8d957656
 ms.date: 05/02/2018
 keywords: ["MINIPORT_CO_DEACTIVATE_VC callback function"]
 ms.keywords: MINIPORT_CO_DEACTIVATE_VC, MINIPORT_CO_DEACTIVATE_VC callback, MiniportCoDeactivateVc, MiniportCoDeactivateVc callback function [Network Drivers Starting with Windows Vista], condis_miniport_ref_01461ff7-cd2e-466d-ab9a-7903484ecbc5.xml, ndis/MiniportCoDeactivateVc, netvista.miniportcodeactivatevc
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportCoDeactivateVc
+ - MINIPORT_CO_DEACTIVATE_VC
 ---
 
 # MINIPORT_CO_DEACTIVATE_VC callback function
@@ -54,9 +53,9 @@ The
 
 ## -parameters
 
-### -param MiniportVcContext 
+### -param MiniportVcContext [in]
 
-[in]
+
 Specified the handle to a miniport driver-allocated context area in which the miniport driver
      maintains state information per-VC. The miniport driver supplied this handle to NDIS from its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_create_vc">MiniportCoCreateVc</a> function.
@@ -144,3 +143,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcodeactivatevccomplete">NdisMCoDeactivateVcComplete</a>
+

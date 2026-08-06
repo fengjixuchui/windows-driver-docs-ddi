@@ -4,7 +4,6 @@ title: PPARALLEL_WRITE (parallel.h)
 description: The PPARALLEL_WRITE-typed callback routine writes data to a parallel device. The system-supplied bus driver for parallel ports supplies this routine.
 old-location: parports\pparallel_write.htm
 tech.root: parports
-ms.assetid: 4973b1e2-5828-40d1-bb2e-da67a406eafa
 ms.date: 02/15/2018
 keywords: ["PPARALLEL_WRITE callback"]
 ms.keywords: PPARALLEL_WRITE, PPARALLEL_WRITE function pointer [Parallel Ports], cisspd_c9bcb3ed-ca6a-44d7-8952-f96f76490262.xml, parallel/PPARALLEL_WRITE, parports.pparallel_write
@@ -50,29 +49,29 @@ The PPARALLEL_WRITE-typed callback routine writes data to a parallel device. The
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to the device extension of a parallel device's physical device object (<a href="/windows-hardware/drivers/">PDO</a>).
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to a caller-allocated write buffer.
 
-### -param NumBytesToWrite 
+### -param NumBytesToWrite [in]
 
-[in]
+
 Specifies the number of bytes to copy from the write buffer to the parallel device. Must be less than or equal to the number of bytes in the caller-allocated write buffer.
 
-### -param NumBytesWritten 
+### -param NumBytesWritten [out]
 
-[out]
+
 Specifies the number of bytes that were actually copied from the caller-allocated write buffer to the parallel device.
 
-### -param Channel 
+### -param Channel [in]
 
-[in]
+
 Not used.
 
 ## -returns

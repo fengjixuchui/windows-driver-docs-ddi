@@ -4,7 +4,6 @@ title: IOCTL_SERIAL_WAIT_ON_MASK (ntddser.h)
 description: The IOCTL_SERIAL_WAIT_ON_MASK request is used to wait for the occurrence of any wait event specified by using an IOCTL_SERIAL_SET_WAIT_MASK request.
 old-location: serports\ioctl_serial_wait_on_mask.htm
 tech.root: serports
-ms.assetid: b813bd59-249d-4cd1-bf56-4525c7f1fa1d
 ms.date: 04/23/2018
 keywords: ["IOCTL_SERIAL_WAIT_ON_MASK IOCTL"]
 ms.keywords: IOCTL_SERIAL_WAIT_ON_MASK, IOCTL_SERIAL_WAIT_ON_MASK control, IOCTL_SERIAL_WAIT_ON_MASK control code [Serial Ports], ntddser/IOCTL_SERIAL_WAIT_ON_MASK, serports.ioctl_serial_wait_on_mask, serref_4879eda6-26ca-48a6-9176-4aa20d46aa47.xml
@@ -65,6 +64,8 @@ A client sends an <b>IOCTL_SERIAL_WAIT_ON_MASK</b> request to wait for the occur
 After a client's <b>IOCTL_SERIAL_WAIT_ON_MASK</b> request is completed with a status of STATUS_SUCCESS and a nonzero output mask value, the client can send a new <b>IOCTL_SERIAL_WAIT_ON_MASK</b> request to wait for another event in the current wait mask. Only a new event that occurs after the previous <b>IOCTL_SERIAL_WAIT_ON_MASK</b> request was completed will cause the new <b>IOCTL_SERIAL_WAIT_ON_MASK</b> request to be completed with a status of STATUS_SUCCESS and a nonzero output mask value.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

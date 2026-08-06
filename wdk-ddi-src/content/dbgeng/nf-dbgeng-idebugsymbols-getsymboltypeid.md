@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols.GetSymbolTypeId
 title: IDebugSymbols::GetSymbolTypeId (dbgeng.h)
-description: The GetSymbolTypeId method returns the type ID and module of the specified symbol.
+description: The GetSymbolTypeId method returns the type ID and module of the specified symbol. This method belongs to the IDebugSymbols interface.
 old-location: debugger\getsymboltypeid.htm
 tech.root: debugger
-ms.assetid: 0c77ad1a-218d-4857-a07c-f5d542d070d7
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols::GetSymbolTypeId"]
 ms.keywords: GetSymbolTypeId, GetSymbolTypeId method [Windows Debugging], GetSymbolTypeId method [Windows Debugging],IDebugSymbols interface, GetSymbolTypeId method [Windows Debugging],IDebugSymbols2 interface, GetSymbolTypeId method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],GetSymbolTypeId method, IDebugSymbols.GetSymbolTypeId, IDebugSymbols2 interface [Windows Debugging],GetSymbolTypeId method, IDebugSymbols2::GetSymbolTypeId, IDebugSymbols3 interface [Windows Debugging],GetSymbolTypeId method, IDebugSymbols3::GetSymbolTypeId, IDebugSymbols::GetSymbolTypeId, IDebugSymbols_c62a5150-7e20-4217-8fb8-667cbd93042a.xml, dbgeng/IDebugSymbols2::GetSymbolTypeId, dbgeng/IDebugSymbols3::GetSymbolTypeId, dbgeng/IDebugSymbols::GetSymbolTypeId, debugger.getsymboltypeid
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.GetSymbolTypeId
- - IDebugSymbols2.GetSymbolTypeId
- - IDebugSymbols3.GetSymbolTypeId
+ - IDebugSymbols::GetSymbolTypeId
 ---
 
 # IDebugSymbols::GetSymbolTypeId
@@ -52,19 +49,19 @@ The <b>GetSymbolTypeId</b>  method returns the type ID and module of the specifi
 
 ## -parameters
 
-### -param Symbol 
+### -param Symbol [in]
 
-[in]
+
 Specifies the expression whose type ID is requested.  See the Remarks section for details on the syntax of this expression.
 
-### -param TypeId 
+### -param TypeId [out]
 
-[out]
+
 Receives the type ID.
 
-### -param Module 
+### -param Module [out, optional]
 
-[out, optional]
+
 Receives the base address of the module containing the symbol.  For more information, see <a href="/windows-hardware/drivers/debugger/modules">Modules</a>.  If <i>Module</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -114,3 +111,4 @@ For more information about symbols, see <a href="/windows-hardware/drivers/debug
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

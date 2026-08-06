@@ -4,7 +4,6 @@ title: NdisAcquireRWLockWrite function (ndis.h)
 description: The NdisAcquireRWLockWrite function obtains a write lock that the caller uses for write access to resources that are shared between driver threads.
 old-location: netvista\ndisacquirerwlockwrite.htm
 tech.root: netvista
-ms.assetid: 124302d7-0776-4025-b71f-ce6300f97f49
 ms.date: 05/02/2018
 keywords: ["NdisAcquireRWLockWrite function"]
 ms.keywords: NdisAcquireRWLockWrite, NdisAcquireRWLockWrite function [Network Drivers Starting with Windows Vista], ndis/NdisAcquireRWLockWrite, ndis_processor_group_ref_f957b48a-4c09-4348-897c-51813ede9b19.xml, netvista.ndisacquirerwlockwrite
@@ -53,26 +52,26 @@ The
 
 ## -parameters
 
-### -param Lock 
+### -param Lock [in]
 
-[in]
+
 A pointer to an opaque 
      <a href="/previous-versions/windows/hardware/drivers/ff567279(v=vs.85)">NDIS_RW_LOCK_EX</a> variable that represents a
      lock. The caller can use this lock to gain write or read access to resources that are shared between
      non-ISR driver threads.
 
-### -param LockState 
+### -param LockState [out]
 
-[out]
+
 A pointer to an opaque 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_lock_state_ex">LOCK_STATE_EX</a> variable that tracks the state
      of the lock. This variable exists in the interval between the times that the caller obtains and releases
      the lock. The caller must use a different variable of type <b>LOCK_STATE_EX</b> for each attempt that it makes to
      obtain the lock from the same non-ISR driver thread.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A <b>ULONG</b> value that contains lock flags. Set this parameter to <b>NDIS_RWL_AT_DISPATCH_LEVEL</b> if the
      caller's current IRQL is <b>DISPATCH_LEVEL</b>. Otherwise, set this parameter to zero. For more information
      about dispatch IRQL tracking, see 

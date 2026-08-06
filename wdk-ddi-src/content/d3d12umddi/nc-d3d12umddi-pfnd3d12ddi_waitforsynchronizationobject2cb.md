@@ -3,11 +3,8 @@ UID: NC:d3d12umddi.PFND3D12DDI_WAITFORSYNCHRONIZATIONOBJECT2CB
 title: PFND3D12DDI_WAITFORSYNCHRONIZATIONOBJECT2CB
 description: Inserts a wait for the specified synchronization objects in the specified context stream.
 tech.root: display
-ms.assetid: 772903a7-9395-46d7-b6ca-6d6086e13672
 ms.date: 04/04/2019
 keywords: ["PFND3D12DDI_WAITFORSYNCHRONIZATIONOBJECT2CB callback function"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: d3d12umddi.h
 req.include-header: 
 req.target-type: 
@@ -38,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_WAITFORSYNCHRONIZATIONOBJECT2CB
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -57,7 +52,7 @@ Inserts a wait for the specified synchronization objects in the specified contex
 
 Handle to a device.
 
-### -param Arg2
+### -param unnamedParam2
 
 Pointer to a [D3D12DDICB_WAITFORSYNCHRONIZATIONOBJECT2](ns-d3d12umddi-d3d12ddicb_waitforsynchronizationobject2.md) structure.
 

@@ -4,7 +4,6 @@ title: _SET_UNIT_DIRECTORY (61883.h)
 description: This structure is used to assign settings for a unit directory.
 old-location: ieee\set_unit_directory.htm
 tech.root: IEEE
-ms.assetid: C4021856-835D-4B4B-9795-4FEEEFAC06B8
 ms.date: 02/15/2018
 keywords: ["SET_UNIT_DIRECTORY structure"]
 ms.keywords: "*PSET_UNIT_DIRECTORY, 61883/PSET_UNIT_DIRECTORY, 61883/SET_UNIT_DIRECTORY, IEEE.set_unit_directory, PSET_UNIT_DIRECTORY, PSET_UNIT_DIRECTORY structure pointer [Buses], SET_UNIT_DIRECTORY, SET_UNIT_DIRECTORY structure [Buses], _SET_UNIT_DIRECTORY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _SET_UNIT_DIRECTORY
+ - PSET_UNIT_DIRECTORY
  - SET_UNIT_DIRECTORY
 ---
 
@@ -85,3 +86,4 @@ If successful, the IEC-61883 protocol driver sets <b>Irp->IoStatus.Status </b>to
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_av_61883_request">AV_61883_REQUEST</a>
+

@@ -4,12 +4,11 @@ title: D3DKMDT_VPPR_GET_CONTENT_ROTATION function (d3dkmdt.h)
 description: A helper function that extracts the combined rotation that the user sees from the default display orientation from a given value of the D3DKMDT_VIDPN_PRESENT_PATH_ROTATION enumeration.
 old-location: display\d3dkmdt_vppr_get_content_rotation.htm
 tech.root: display
-ms.assetid: 61C1EB2F-E4CF-4B18-AD7B-6B24EF14E71F
 ms.date: 05/10/2018
 keywords: ["D3DKMDT_VPPR_GET_CONTENT_ROTATION function"]
 ms.keywords: D3DKMDT_VPPR_GET_CONTENT_ROTATION, D3DKMDT_VPPR_GET_CONTENT_ROTATION function [Display Devices], d3dkmdt/D3DKMDT_VPPR_GET_CONTENT_ROTATION, display.d3dkmdt_vppr_get_content_rotation
 req.header: d3dkmdt.h
-req.include-header: D3dkmdt.h
+req.include-header:
 req.target-type: Desktop
 req.target-min-winverclnt: Windows 8.1,DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION
 req.target-min-winversvr: Windows Server 2012 R2

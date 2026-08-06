@@ -4,7 +4,6 @@ title: _D3DDDIARG_DEPTHFILL (d3dumddi.h)
 description: The D3DDDIARG_DEPTHFILL structure describes the parameters of a depth-fill operation.
 old-location: display\d3dddiarg_depthfill.htm
 tech.root: display
-ms.assetid: e4070d53-bdd6-4708-857d-7ed1e9699e21
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_DEPTHFILL structure"]
 ms.keywords: D3DDDIARG_DEPTHFILL, D3DDDIARG_DEPTHFILL structure [Display Devices], UMDisplayDriver_param_Structs_94ba7961-5956-4939-830f-eaa15aeca614.xml, _D3DDDIARG_DEPTHFILL, d3dumddi/D3DDDIARG_DEPTHFILL, display.d3dddiarg_depthfill
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_DEPTHFILL
  - D3DDDIARG_DEPTHFILL
 ---
 
@@ -52,17 +52,17 @@ The D3DDDIARG_DEPTHFILL structure describes the parameters of a depth-fill opera
 
 ## -struct-fields
 
-### -field hResource
+### -field hResource [in]
 
-[in] A handle to the resource.
+A handle to the resource.
 
-### -field SubResourceIndex
+### -field SubResourceIndex [in]
 
-[in] The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the subresource, or buffer, on which a rectangular area is depth-filled.
+The zero-based index into the resource, which is specified by the handle in the <b>hResource</b> member. This index indicates the subresource, or buffer, on which a rectangular area is depth-filled.
 
-### -field DstRect
+### -field DstRect [in]
 
-[in] A <a href="/windows/win32/api/windef/ns-windef-rectl">RECTL</a> structure that indicates the upper-left and lower-right points of a rectangle on the buffer to depth fill.
+A <a href="/windows/win32/api/windef/ns-windef-rectl">RECTL</a> structure that indicates the upper-left and lower-right points of a rectangle on the buffer to depth fill.
 
 ### -field Depth
 
@@ -75,3 +75,4 @@ A pixel value that is specified in native format for the fill depth.
 
 
 <a href="/windows/win32/api/windef/ns-windef-rectl">RECTL</a>
+

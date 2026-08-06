@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_STATE_GS_SHADER_CB
 title: PFND3D10DDI_STATE_GS_SHADER_CB (d3d10umddi.h)
 description: The pfnStateGsShaderCb function causes the Microsoft Direct3D 10 runtime to refresh the geometry shader.
 old-location: display\pfnstategsshadercb.htm
-ms.assetid: 2bcdc7bd-4327-4258-ad89-5e028cffd06b
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_STATE_GS_SHADER_CB callback function"]
 ms.keywords: PFND3D10DDI_STATE_GS_SHADER_CB, PFND3D10DDI_STATE_GS_SHADER_CB callback, d3d10state_functions_b6a723d5-84d5-4e7c-aeea-2d2bb2ada5eb.xml, d3d10umddi/pfnStateGsShaderCb, display.pfnstategsshadercb, pfnStateGsShaderCb, pfnStateGsShaderCb callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - pfnStateGsShaderCb
+ - PFND3D10DDI_STATE_GS_SHADER_CB
 ---
 
 # PFND3D10DDI_STATE_GS_SHADER_CB callback function
@@ -50,7 +49,7 @@ The <b>pfnStateGsShaderCb</b> function causes the Microsoft Direct3D 10 runtime 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hRuntimeDevice* [in]
 
@@ -63,3 +62,4 @@ A handle to a context for the core Direct3D 10 runtime. This handle is supplied 
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddi_corelayer_devicecallbacks">D3D10DDI_CORELAYER_DEVICECALLBACKS</a>
+

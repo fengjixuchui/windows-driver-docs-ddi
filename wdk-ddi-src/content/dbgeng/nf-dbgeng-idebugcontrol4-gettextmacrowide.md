@@ -4,7 +4,6 @@ title: IDebugControl4::GetTextMacroWide (dbgeng.h)
 description: The GetTextMacroWide method returns the value of a fixed-name alias.
 old-location: debugger\gettextmacrowide.htm
 tech.root: debugger
-ms.assetid: 5b125041-969e-49bb-96d5-b40cc7285315
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::GetTextMacroWide"]
 ms.keywords: GetTextMacroWide, GetTextMacroWide method [Windows Debugging], GetTextMacroWide method [Windows Debugging],IDebugControl4 interface, IDebugControl4 interface [Windows Debugging],GetTextMacroWide method, IDebugControl4.GetTextMacroWide, IDebugControl4::GetTextMacroWide, dbgeng/IDebugControl4::GetTextMacroWide, debugger.gettextmacrowide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.GetTextMacroWide
+ - IDebugControl4::GetTextMacroWide
 ---
 
 # IDebugControl4::GetTextMacroWide
@@ -50,24 +49,24 @@ The <b>GetTextMacroWide</b> method returns the value of a fixed-name alias.
 
 ## -parameters
 
-### -param Slot 
+### -param Slot [in]
 
-[in]
+
 Specifies the number of the fixed-name alias.  <i>Slot</i> can take the values 0, 1, ..., 9, that represent the fixed-name aliases <b>$u0</b>, <b>$u1</b>, ..., <b>$u9</b>.
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Receives the value of the alias specified by <i>Slot</i>.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size, in characters, of the <i>Buffer</i> buffer.
 
-### -param MacroSize 
+### -param MacroSize [out, optional]
 
-[out, optional]
+
 Receives the size, in characters, of the value of the alias.
 
 ## -returns
@@ -117,3 +116,4 @@ For an overview of aliases used by the <a href="/windows-hardware/drivers/debugg
 
 
 <a href="/windows-hardware/drivers/debugger/r--registers-">r (Registers)</a>
+

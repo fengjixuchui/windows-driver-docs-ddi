@@ -4,7 +4,6 @@ title: PFNKSPIN (ks.h)
 description: An AVStream minidriver's callback routine is called when:\_There is data available for a KSPIN structure to process. Use this routine to perform Pin-Centric Processing.The relevant KSPIN is serving as a sink pin and is connected to an AVStream source pin.
 old-location: stream\avstrminipinprocess.htm
 tech.root: stream
-ms.assetid: d2315dd9-1643-4b8e-a010-8fccc582ca2b
 ms.date: 04/23/2018
 keywords: ["PFNKSPIN callback function"]
 ms.keywords: AVStrMiniPinConnect, AVStrMiniPinProcess, MyAVStrMiniPin, MyAVStrMiniPin routine [Streaming Media Devices], PFNKSPIN, avstclbk_9c9fb1b9-d592-41de-8190-b8b2808ea35b.xml, ks/MyAVStrMiniPin, stream.avstrminipinprocess
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - MyAVStrMiniPin
+ - PFNKSPIN
 ---
 
 # PFNKSPIN callback function
@@ -54,9 +53,9 @@ An AVStream minidriver's callback routine is called when:
 
 ## -parameters
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a> that has frame data available to process.
 
 ## -returns
@@ -108,3 +107,4 @@ Also see <a href="/windows-hardware/drivers/stream/ks-pins">KS Pins</a>.
 
 
 <a href="/windows-hardware/drivers/stream/pin-centric-processing">Pin-Centric Processing</a>
+

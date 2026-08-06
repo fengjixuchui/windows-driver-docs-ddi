@@ -1,10 +1,9 @@
 ---
-UID: NE:portcls.__unnamed_enum_0
+UID: NE:portcls.PC_REBALANCE_TYPE
 title: PC_REBALANCE_TYPE (portcls.h)
 description: The PC_REBALANCE_TYPE enum describes the type of support for rebalancing.
 old-location: audio\pc_rebalance_type.htm
 tech.root: audio
-ms.assetid: CE700126-8C29-4218-9248-F722523A4DA3
 ms.date: 05/08/2018
 keywords: ["PC_REBALANCE_TYPE enumeration"]
 ms.keywords: PC_REBALANCE_TYPE, PC_REBALANCE_TYPE enumeration [Audio Devices], PcRebalanceNotSupported, PcRebalanceRemoveSubdevices, audio.pc_rebalance_type, portcls/PC_REBALANCE_TYPE, portcls/PcRebalanceNotSupported, portcls/PcRebalanceRemoveSubdevices
@@ -65,3 +64,4 @@ Indicates that PcRebalance is supported via unregistering and re-registering the
 For more information,  see <a href="/windows-hardware/drivers/audio/implement-pnp-rebalance-for-portcls-audio-drivers">Implement PnP Rebalance for PortCls Audio Drivers</a>.
 
 Available in Windows 10, version 1511 and later versions of Windows.
+

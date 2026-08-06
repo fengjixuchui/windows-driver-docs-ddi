@@ -1,10 +1,9 @@
 ---
 UID: NF:miniport.READ_REGISTER_BUFFER_UCHAR
 title: READ_REGISTER_BUFFER_UCHAR function (miniport.h)
-description: The READ_REGISTER_BUFFER_UCHAR routine reads a number of bytes from the specified register address into a buffer.
+description: The READ_REGISTER_BUFFER_UCHAR function (miniport.h) reads a number of bytes from the specified register address into a buffer.
 old-location: kernel\read_register_buffer_uchar.htm
 tech.root: kernel
-ms.assetid: 4ce9f377-ca5e-4574-9d80-60b74ee0de85
 ms.date: 04/30/2018
 keywords: ["READ_REGISTER_BUFFER_UCHAR function"]
 ms.keywords: READ_REGISTER_BUFFER_UCHAR, READ_REGISTER_BUFFER_UCHAR routine [Kernel-Mode Driver Architecture], k103_053aab44-4a1f-4eb3-a052-ee00f16a349d.xml, kernel.read_register_buffer_uchar, wdm/READ_REGISTER_BUFFER_UCHAR
@@ -50,19 +49,19 @@ The <b>READ_REGISTER_BUFFER_UCHAR</b> routine reads a number of bytes from the s
 
 ## -parameters
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 Pointer to the register, which must be a mapped range in memory space.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 Pointer to a buffer into which an array of UCHAR values is read.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of bytes to be read into the buffer.
 
 ## -remarks

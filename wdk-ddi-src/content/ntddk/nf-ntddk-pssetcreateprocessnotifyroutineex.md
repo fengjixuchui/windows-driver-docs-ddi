@@ -4,7 +4,6 @@ title: PsSetCreateProcessNotifyRoutineEx function (ntddk.h)
 description: The PsSetCreateProcessNotifyRoutineEx routine registers or removes a callback routine that notifies the caller when a process is created or exits.
 old-location: kernel\pssetcreateprocessnotifyroutineex.htm
 tech.root: kernel
-ms.assetid: e982200c-f30c-423e-bd85-03365850c996
 ms.date: 04/30/2018
 keywords: ["PsSetCreateProcessNotifyRoutineEx function"]
 ms.keywords: PsSetCreateProcessNotifyRoutineEx, PsSetCreateProcessNotifyRoutineEx routine [Kernel-Mode Driver Architecture], k108_b68156fb-55d5-4192-a4d0-d74603647f42.xml, kernel.pssetcreateprocessnotifyroutineex, ntddk/PsSetCreateProcessNotifyRoutineEx
@@ -50,14 +49,14 @@ The <b>PsSetCreateProcessNotifyRoutineEx</b> routine registers or removes a call
 
 ## -parameters
 
-### -param NotifyRoutine 
+### -param NotifyRoutine [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pcreate_process_notify_routine_ex">PCREATE_PROCESS_NOTIFY_ROUTINE_EX</a> routine to register or remove. The operating system calls this routine whenever a new process is created.
 
-### -param Remove 
+### -param Remove [in]
 
-[in]
+
 A Boolean value that specifies whether <b>PsSetCreateProcessNotifyRoutineEx</b> will add or remove a specified routine from the list of callback routines. If this parameter is <b>TRUE</b>, the specified routine is removed from the list of callback routines. If this parameter is <b>FALSE</b>, the specified routine is added to the list of callback routines. If <i>Remove</i> is <b>TRUE</b>, the system also waits for all in-flight callback routines to complete before returning.
 
 ## -returns
@@ -108,7 +107,7 @@ The image that contains the callback routine pointer did not have IMAGE_DLLCHARA
 
 Highest-level drivers can call <b>PsSetCreateProcessNotifyRoutineEx</b> to register a <a href="/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pcreate_process_notify_routine_ex">PCREATE_PROCESS_NOTIFY_ROUTINE_EX</a> routine. An installable file system (IFS) or highest-level system-profiling driver might register a process-creation callback routine to track which processes are created and deleted against the driver's internal state across the system. 
 
-A driver must remove any callback routines that it registers before it unloads. You can remove the callback routine by calling <b>PsSetCreateProcessNotifyRoutineEx</b> with <i>Remove</i> set to <b>TRUE</b>.
+A driver must remove any callback routines that it registers before it unloads. You can remove the callback routine by calling <b>PsSetCreateProcessNotifyRoutineEx</b> with <i>Remove</i> set to <b>TRUE</b>. A driver must not make this call from its implementation of the [*PCREATE_PROCESS_NOTIFY_ROUTINE_EX*](./nc-ntddk-pcreate_process_notify_routine_ex.md) callback routine. 
 
 The operating system calls the driver's process-notify routine at PASSIVE_LEVEL inside a critical region with <a href="/windows-hardware/drivers/kernel/types-of-apcs">normal kernel APCs</a> disabled. When a process is created, the process-notify routine runs in the context of the thread that created the new process. When a process is deleted, the process-notify routine runs in the context of the last thread to exit from the process.
 

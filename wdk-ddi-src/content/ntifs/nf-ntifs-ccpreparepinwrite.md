@@ -4,7 +4,6 @@ title: CcPreparePinWrite function (ntifs.h)
 description: The CcPreparePinWrite routine pins the specified byte range of a cached file for write access.
 old-location: ifsk\ccpreparepinwrite.htm
 tech.root: ifsk
-ms.assetid: 1645c7e9-5ae7-41d1-92db-1f069f79ac81
 ms.date: 04/16/2018
 keywords: ["CcPreparePinWrite function"]
 ms.keywords: CcPreparePinWrite, CcPreparePinWrite routine [Installable File System Drivers], ccref_00b887b5-cd87-44be-b96e-6be96df13a2b.xml, ifsk.ccpreparepinwrite, ntifs/CcPreparePinWrite
@@ -50,29 +49,29 @@ The <b>CcPreparePinWrite</b> routine pins the specified byte range of a cached f
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to a file object for the cached file to which the data is to be written.
 
-### -param FileOffset 
+### -param FileOffset [in]
 
-[in]
+
 Pointer to a variable that specifies the starting byte offset within the file where the data is to be written.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Length of desired data in bytes.
 
-### -param Zero 
+### -param Zero [in]
 
-[in]
+
 Set to <b>TRUE</b> if the buffer is to be zeroed on return. This parameter is ignored if the PIN_CALLER_TRACKS_DIRTY_DATA flag is set in the <i>Flags</i> parameter.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Bitmask of flags specifying how the pinning operation is to be performed. ORed combination of one or more of the following values: 
 
 <table>
@@ -132,14 +131,14 @@ The caller is responsible for  keeping track of dirty pages. If this flag is set
 </tr>
 </table>
 
-### -param Bcb 
+### -param Bcb [out]
 
-[out]
+
 Opaque pointer to a pinned buffer control block (BCB). This pointer must be supplied as input on any subsequent calls to <b>CcPreparePinWrite</b> or <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ccunpindata">CcUnpinData</a> for this buffer.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 Returns pointer to desired data, valid until the buffer is unpinned or freed.
 
 ## -returns

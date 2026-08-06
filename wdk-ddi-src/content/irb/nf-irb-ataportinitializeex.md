@@ -4,7 +4,6 @@ title: AtaPortInitializeEx function (irb.h)
 description: The AtaPortInitializeEx ATA port driver library routine initializes the port and miniport drivers.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\ataportinitializeex.htm
 tech.root: storage
-ms.assetid: 578992cf-63eb-4b8e-b0cb-9caee5c534e1
 ms.date: 03/29/2018
 keywords: ["AtaPortInitializeEx function"]
 ms.keywords: AtaPortInitializeEx, AtaPortInitializeEx routine [Storage Devices], atartns_dab74a62-5788-4de9-91eb-e1eb7a7bcaf5.xml, irb/AtaPortInitializeEx, storage.ataportinitializeex
@@ -52,19 +51,19 @@ The <b>AtaPortInitializeEx</b> ATA port driver library routine initializes the p
 
 ## -parameters
 
-### -param DriverObject 
+### -param DriverObject [in]
 
-[in]
+
 A pointer to the miniport driver object.
 
-### -param RegistryPath 
+### -param RegistryPath [in]
 
-[in]
+
 Contains a Unicode string that indicates the location in the registry where the miniport driver configuration information is stored.
 
-### -param ControllerInterface 
+### -param ControllerInterface [in]
 
-[in]
+
 Contains the entry points for the <b><i>AtaAdapterControl</i></b>, <b><i>AtaChannelInitRoutine</i></b>, <b><i>AtaControllerChannelEnabled</i></b>, and <b><i>AtaControllerTransferModeSelect</i></b> routines.
 
 ## -returns

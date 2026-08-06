@@ -4,7 +4,6 @@ title: IWDFDevice::RetrieveDeviceInstanceId (wudfddi.h)
 description: The RetrieveDeviceInstanceId method retrieves the identifier of an instance of a device.
 old-location: wdf\iwdfdevice_retrievedeviceinstanceid.htm
 tech.root: wdf
-ms.assetid: 224277b4-447f-4981-aabf-90a10322c0df
 ms.date: 02/26/2018
 keywords: ["IWDFDevice::RetrieveDeviceInstanceId"]
 ms.keywords: IWDFDevice interface,RetrieveDeviceInstanceId method, IWDFDevice.RetrieveDeviceInstanceId, IWDFDevice::RetrieveDeviceInstanceId, RetrieveDeviceInstanceId, RetrieveDeviceInstanceId method, RetrieveDeviceInstanceId method,IWDFDevice interface, UMDFDeviceObjectRef_fef96c70-8877-4c1f-9e05-d4caf9a8ea28.xml, umdf.iwdfdevice_retrievedeviceinstanceid, wdf.iwdfdevice_retrievedeviceinstanceid, wudfddi/IWDFDevice::RetrieveDeviceInstanceId
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice.RetrieveDeviceInstanceId
+ - IWDFDevice::RetrieveDeviceInstanceId
 ---
 
 # IWDFDevice::RetrieveDeviceInstanceId
@@ -52,14 +51,14 @@ The <b>RetrieveDeviceInstanceId</b> method retrieves the identifier of an instan
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 A pointer to a buffer that receives a <b>NULL</b>-terminated string that represents the identifier of an instance of the device, if the supplied buffer is non-<b>NULL</b> and <b>RetrieveDeviceInstanceId</b> is successful.
 
-### -param pdwSizeInChars 
+### -param pdwSizeInChars [in, out]
 
-[in, out]
+
 A pointer to a variable that receives the number of characters, including the <b>NULL</b> character, in the string that <i>Buffer</i> points to.
 
 If <i>Buffer</i> is <b>NULL</b>, the value that the driver supplied is zero. The framework then returns the size, in characters, that are required for the identifier string.
@@ -84,3 +83,4 @@ If <i>Buffer</i> is non-<b>NULL</b>, the framework returns the size, in characte
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice">IWDFDevice</a>
+

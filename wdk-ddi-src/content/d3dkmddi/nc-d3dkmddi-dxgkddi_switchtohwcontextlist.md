@@ -2,7 +2,6 @@
 UID: NC:d3dkmddi.DXGKDDI_SWITCHTOHWCONTEXTLIST
 title: DXGKDDI_SWITCHTOHWCONTEXTLIST (d3dkmddi.h)
 description: Clarifies the order of execution of first and second contexts submitted.
-ms.assetid: 37f7d107-50ec-452e-b98f-a1bea73ab2d0
 ms.date: 10/19/2018
 keywords: ["DXGKDDI_SWITCHTOHWCONTEXTLIST callback function"]
 req.header: d3dkmddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3dkmddi.h
 api_name:
  - DXGKDDI_SWITCHTOHWCONTEXTLIST
-product:
- - Windows
 dev_langs:
  - c++
 ---

@@ -4,7 +4,6 @@ title: TAPE_ERROR_ROUTINE (minitape.h)
 description: TAPE_ERROR_ROUTINE provides device-specific error handling when an SRB is completed with an error status. This routine is optional.
 old-location: storage\tapeminitapeerror.htm
 tech.root: storage
-ms.assetid: a39fac12-f284-4b3a-a9ab-ae75934f810e
 ms.date: 03/29/2018
 keywords: ["TAPE_ERROR_ROUTINE callback function"]
 ms.keywords: "(*TAPE_ERROR_ROUTINE), (*TAPE_ERROR_ROUTINE) routine [Storage Devices], TAPE_ERROR_ROUTINE, minitape/(*TAPE_ERROR_ROUTINE), storage.tapeminitapeerror, tapemini_cf0f724e-63c4-4923-a59e-508c45dac6d9.xml"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - minitape.h
 api_name:
- - (*TAPE_ERROR_ROUTINE)
+ - TAPE_ERROR_ROUTINE
 ---
 
 # TAPE_ERROR_ROUTINE callback function
@@ -50,19 +49,19 @@ api_name:
 
 ## -parameters
 
-### -param MinitapeExtension 
+### -param MinitapeExtension [in]
 
-[in]
+
 Pointer to the driver-specific minitape extension. This is <b>NULL</b> if the miniclass driver did not request a minitape extension when it initialized.
 
-### -param Srb 
+### -param Srb [in]
 
-[in]
+
 Pointer to the SRB for the operation that failed.
 
-### -param TapeStatus 
+### -param TapeStatus [in, out]
 
-[in, out]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/minitape/ne-minitape-_tape_status">TAPE_STATUS</a> set by the tape class driver. The tape miniclass driver can change the TAPE_STATUS or leave it unchanged.
 
 ## -remarks
@@ -94,3 +93,4 @@ A tape miniclass driver optionally specifies an entry point for its <i>TAPE_ERRO
 
 
 <a href="/windows-hardware/drivers/ddi/minitape/nf-minitape-tapeclassinitialize">TapeClassInitialize</a>
+

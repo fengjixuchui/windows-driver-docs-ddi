@@ -3,7 +3,6 @@ UID: NE:ntddvdeo._COLORSPACE_TRANSFORM_TYPE
 title: COLORSPACE_TRANSFORM_TYPE
 description: The colorspace transform type.
 tech.root: display
-ms.assetid: 987104a9-3e75-4418-b6b1-949bc62ac580
 ms.date: 04/04/2019
 keywords: ["COLORSPACE_TRANSFORM_TYPE enumeration"]
 ms.keywords: COLORSPACE_TRANSFORM_TYPE, COLORSPACE_TRANSFORM_TYPE,
@@ -31,6 +30,7 @@ api_type:
 api_location:
  - ntddvdeo.h
 api_name:
+ - _COLORSPACE_TRANSFORM_TYPE
  - COLORSPACE_TRANSFORM_TYPE
 dev_langs:
  - c++

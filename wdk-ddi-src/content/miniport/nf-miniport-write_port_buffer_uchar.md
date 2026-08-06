@@ -1,10 +1,9 @@
 ---
 UID: NF:miniport.WRITE_PORT_BUFFER_UCHAR
 title: WRITE_PORT_BUFFER_UCHAR function (miniport.h)
-description: The WRITE_PORT_BUFFER_UCHAR routine writes a number of bytes from a buffer to the specified port.
+description: The WRITE_PORT_BUFFER_UCHAR function (miniport.h) writes a number of bytes from a buffer to the specified port.
 old-location: kernel\write_port_buffer_uchar.htm
 tech.root: kernel
-ms.assetid: 59a7b11a-c6b6-4452-9518-1e5c7c07ec18
 ms.date: 04/30/2018
 keywords: ["WRITE_PORT_BUFFER_UCHAR function"]
 ms.keywords: WRITE_PORT_BUFFER_UCHAR, WRITE_PORT_BUFFER_UCHAR routine [Kernel-Mode Driver Architecture], k103_189a5664-0e12-4e18-a52c-6d04c3e8a7fd.xml, kernel.write_port_buffer_uchar, wdm/WRITE_PORT_BUFFER_UCHAR
@@ -51,19 +50,19 @@ The <b>WRITE_PORT_BUFFER_UCHAR</b> routine writes a number of bytes from a buffe
 
 ## -parameters
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Pointer to the port, which must be a mapped memory range in I/O space.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to a buffer from which an array of UCHAR values is to be written.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of bytes to be written to the port.
 
 ## -remarks

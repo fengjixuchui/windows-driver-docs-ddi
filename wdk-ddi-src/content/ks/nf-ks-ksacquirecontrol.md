@@ -4,7 +4,6 @@ title: KsAcquireControl function (ks.h)
 description: The KsAcquireControl function acquires the filter control mutex for Object.
 old-location: stream\ksacquirecontrol.htm
 tech.root: stream
-ms.assetid: c316382c-8416-43c2-b5fd-2d52d01e1419
 ms.date: 04/23/2018
 keywords: ["KsAcquireControl function"]
 ms.keywords: KsAcquireControl, KsAcquireControl function [Streaming Media Devices], avfunc_a3c1eb2c-db95-463f-98f5-a158dd1e14f5.xml, ks/KsAcquireControl, stream.ksacquirecontrol
@@ -51,9 +50,9 @@ The <b>KsAcquireControl</b> function acquires the filter control mutex for <i>Ob
 
 ## -parameters
 
-### -param Object 
+### -param Object [in]
 
-[in]
+
 A pointer to the object for which to acquire the filter control mutex. This should be a pointer to either a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter">KSFILTER</a> or a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a>, cast to PVOID.
 
 ## -remarks

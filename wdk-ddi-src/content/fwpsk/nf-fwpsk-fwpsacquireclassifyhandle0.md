@@ -4,7 +4,6 @@ title: FwpsAcquireClassifyHandle0 function (fwpsk.h)
 description: The FwpsAcquireClassifyHandle0 function generates a classification handle that is used to identify asynchronous classification operations and requests for writable layer data.Note  FwpsAcquireClassifyHandle0 is a specific version of FwpsAcquireClassifyHandle. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information.
 old-location: netvista\fwpsacquireclassifyhandle0.htm
 tech.root: netvista
-ms.assetid: 7348d937-6541-47a7-ae70-7d851d41bc1a
 ms.date: 05/02/2018
 keywords: ["FwpsAcquireClassifyHandle0 function"]
 ms.keywords: FwpsAcquireClassifyHandle0, FwpsAcquireClassifyHandle0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsAcquireClassifyHandle0, netvista.fwpsacquireclassifyhandle0, wfp_ref_2_funct_3_fwps_A-B_c0b568dd-f546-4bab-a012-14f4d2a8d846.xml
@@ -54,23 +53,23 @@ The
 
 ## -parameters
 
-### -param classifyContext 
+### -param classifyContext [in]
 
-[in]
+
 The 
      <i>classifyContext</i> parameter from 
      <a href="/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn1">classifyFn1</a>. The WFP engine passes this
      value to the callout driver's 
      <a href="/windows-hardware/drivers/ddi/_netvista/">classifyFn</a>.
 
-### -param flags 
+### -param flags [in]
 
-[in]
+
 Reserved for future use. Set to 0.
 
-### -param classifyHandle 
+### -param classifyHandle [out]
 
-[out]
+
 A pointer to a variable that receives a classification handle. This handle is needed by subsequent
      function calls as noted in Remarks.
 

@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_107
+UID: NS:ksmedia.KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S
 title: KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S (ksmedia.h)
 description: The KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S structure describes the scanning capabilities of a broadcast network type that a tuning device supports.
 old-location: stream\ksproperty_tuner_networktype_scan_caps_s.htm
 tech.root: stream
-ms.assetid: e6fe9278-d34e-4fba-80f9-84d6ededbfc1
 ms.date: 04/30/2019
 keywords: ["KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S structure"]
 ms.keywords: "*PKSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S, KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S, KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S structure [Streaming Media Devices], PKSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S, PKSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S, ksmedia/PKSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S, stream.ksproperty_tuner_networktype_scan_caps_s, vidcapstruct_7ffc22b0-3a65-449e-a0cb-6816a99738d6.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S
  - KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S
 ---
 
@@ -54,7 +54,7 @@ The KSPROPERTY_TUNER_NETWORKTYPE_SCAN_CAPS_S structure describes the scanning ca
 
 ### -field Property
 
-Specifies an initialized <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+Specifies an initialized <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 ### -field NetworkType
 
@@ -70,7 +70,7 @@ A pointer to a buffer to hold the scanning capabilities of a broadcast network t
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -87,3 +87,4 @@ A pointer to a buffer to hold the scanning capabilities of a broadcast network t
 
 
 <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-tuner_analog_caps_s">TUNER_ANALOG_CAPS_S</a>
+

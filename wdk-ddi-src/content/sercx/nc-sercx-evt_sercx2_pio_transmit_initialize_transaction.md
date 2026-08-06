@@ -4,7 +4,6 @@ title: EVT_SERCX2_PIO_TRANSMIT_INITIALIZE_TRANSACTION (sercx.h)
 description: The EvtSerCx2PioTransmitInitializeTransaction event callback function is called by version 2 of the serial framework extension (SerCx2) to prepare the serial controller driver to perform a PIO-transmit transaction.
 old-location: serports\evtsercx2piotransmitinitializetransaction.htm
 tech.root: serports
-ms.assetid: 2E3652CB-24F1-4467-AF1D-CFD52392B2DB
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX2_PIO_TRANSMIT_INITIALIZE_TRANSACTION callback function"]
 ms.keywords: 2/EvtSerCx2PioTransmitInitializeTransaction, EVT_SERCX2_PIO_TRANSMIT_INITIALIZE_TRANSACTION, EVT_SERCX2_PIO_TRANSMIT_INITIALIZE_TRANSACTION callback, EvtSerCx2PioTransmitInitializeTransaction, EvtSerCx2PioTransmitInitializeTransaction callback function [Serial Ports], serports.evtsercx2piotransmitinitializetransaction
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
- - EvtSerCx2PioTransmitInitializeTransaction
+ - EVT_SERCX2_PIO_TRANSMIT_INITIALIZE_TRANSACTION
 ---
 
 # EVT_SERCX2_PIO_TRANSMIT_INITIALIZE_TRANSACTION callback function
@@ -50,14 +49,14 @@ The <i>EvtSerCx2PioTransmitInitializeTransaction</i> event callback function is 
 
 ## -parameters
 
-### -param PioTransmit 
+### -param PioTransmit [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitcreate">SerCx2PioTransmitCreate</a> method to create this object.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The number of bytes to be transferred in the PIO-transmit transaction.
 
 ## -remarks
@@ -108,3 +107,4 @@ The <b>EVT_SERCX2_PIO_TRANSMIT_INITIALIZE_TRANSACTION</b> function type is defin
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitinitializetransactioncomplete">SerCx2PioTransmitInitializeTransactionComplete</a>
+

@@ -4,7 +4,6 @@ title: ScsiPortReadPortBufferUlong function (srb.h)
 description: The ScsiPortReadPortBufferUlong routine transfers a given number of ULONG values from the HBA to a buffer.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
 old-location: storage\scsiportreadportbufferulong.htm
 tech.root: storage
-ms.assetid: 719210f5-22d6-425d-aff0-aefbebfbfca2
 ms.date: 03/29/2018
 keywords: ["ScsiPortReadPortBufferUlong function"]
 ms.keywords: ScsiPortReadPortBufferUlong, ScsiPortReadPortBufferUlong routine [Storage Devices], scsiprt_5da99f27-5758-4e1b-af45-0d9069b55af7.xml, srb/ScsiPortReadPortBufferUlong, storage.scsiportreadportbufferulong
@@ -52,19 +51,19 @@ The <b>ScsiPortReadPortBufferUlong</b> routine transfers a given number of ULONG
 
 ## -parameters
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Pointer to the I/O port. The given <i>Port</i> must be in a mapped I/O-space range returned by <b>ScsiPortGetDeviceBase</b>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to the buffer.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of ULONG values to read from the HBA.
 
 ## -returns

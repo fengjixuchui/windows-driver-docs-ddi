@@ -4,7 +4,6 @@ title: PFN_WSK_CONNECT (wsk.h)
 description: The WskConnect function connects a connection-oriented or stream socket to a remote transport address.
 old-location: netvista\wskconnect.htm
 tech.root: netvista
-ms.assetid: 66942ba4-40f9-4fdc-97f3-859309cd870d
 ms.date: 05/02/2018
 keywords: ["PFN_WSK_CONNECT callback function"]
 ms.keywords: PFN_WSK_CONNECT, PFN_WSK_CONNECT callback, WskConnect, WskConnect callback function [Network Drivers Starting with Windows Vista], netvista.wskconnect, wsk/WskConnect, wskref_16a15402-b34a-40b7-87a7-881d422e0d1c.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wsk.h
 api_name:
- - WskConnect
+ - PFN_WSK_CONNECT
 ---
 
 # PFN_WSK_CONNECT callback function
@@ -51,16 +50,16 @@ The
 
 ## -parameters
 
-### -param Socket 
+### -param Socket [in]
 
-[in]
+
 A pointer to a 
      <a href="/windows-hardware/drivers/ddi/wsk/ns-wsk-_wsk_socket">WSK_SOCKET</a> structure that specifies the socket
      object for the socket that is being connected to a remote transport address.
 
-### -param RemoteAddress 
+### -param RemoteAddress [in]
 
-[in]
+
 A pointer to a structure that specifies the remote transport address to which to connect the
      socket. This pointer must be a pointer to the specific SOCKADDR structure type that corresponds to the
      address family that the WSK application specified when it created the socket.
@@ -70,9 +69,9 @@ A pointer to a structure that specifies the remote transport address to which to
 This parameter is reserved for system use. A WSK application must set this parameter to
      zero.
 
-### -param Irp 
+### -param Irp [in, out]
 
-[in, out]
+
 A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the connect operation
      asynchronously. For more information about using IRPs with WSK functions, see 
      <a href="/windows-hardware/drivers/network/using-irps-with-winsock-kernel-functions">Using IRPs with Winsock
@@ -200,3 +199,4 @@ A WSK application can create, bind, and connect a connection-oriented socket in 
 
 
 <a href="/windows-hardware/drivers/ddi/wsk/nc-wsk-pfn_wsk_socket_connect">WskSocketConnect</a>
+

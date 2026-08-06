@@ -1,17 +1,16 @@
 ---
 UID: NS:storport._SRBEX_DATA_BIDIRECTIONAL
 title: _SRBEX_DATA_BIDIRECTIONAL (storport.h)
-description: The SRBEX_DATA_BIDIRECTIONAL structure contains the extended SRB data for bi-directional transfer commands.
+description: The _SRBEX_DATA_BIDIRECTIONAL structure (storport.h) contains the extended SCSI Request Block (SRB) data for bi-directional transfer commands.
 old-location: storage\srbex_data_bidirectional.htm
 tech.root: storage
-ms.assetid: B61247DC-8AC3-4A96-985B-A4CAC232555E
 ms.date: 03/29/2018
 keywords: ["SRBEX_DATA_BIDIRECTIONAL structure"]
 ms.keywords: "*PSRBEX_DATA_BIDIRECTIONAL, PSRBEX_DATA_BIDIRECTIONAL, PSRBEX_DATA_BIDIRECTIONAL structure pointer [Storage Devices], SRBEX_DATA_BIDIRECTIONAL, SRBEX_DATA_BIDIRECTIONAL structure [Storage Devices], _SRBEX_DATA_BIDIRECTIONAL, storage.srbex_data_bidirectional, storport/PSRBEX_DATA_BIDIRECTIONAL, storport/SRBEX_DATA_BIDIRECTIONAL"
 req.header: storport.h
 req.include-header: Storport.h, Srb.h, Minitape.h
 req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Storport.h
 api_name:
+ - _SRBEX_DATA_BIDIRECTIONAL
+ - PSRBEX_DATA_BIDIRECTIONAL
  - SRBEX_DATA_BIDIRECTIONAL
 ---
 
@@ -78,3 +79,4 @@ A pointer to the buffer that contains the data sent from the device.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/srb/ns-srb-_storage_request_block">STORAGE_REQUEST_BLOCK</a>
+

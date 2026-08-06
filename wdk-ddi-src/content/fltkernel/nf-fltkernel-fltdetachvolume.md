@@ -4,7 +4,6 @@ title: FltDetachVolume function (fltkernel.h)
 description: FltDetachVolume detaches a minifilter driver instance from a volume.
 old-location: ifsk\fltdetachvolume.htm
 tech.root: ifsk
-ms.assetid: 889750fc-69a9-4fe6-8905-6a7edc5c04fb
 ms.date: 04/16/2018
 keywords: ["FltDetachVolume function"]
 ms.keywords: FltApiRef_a_to_d_2f7a4638-6f6d-4ac6-97b6-d547d64b56b6.xml, FltDetachVolume, FltDetachVolume function [Installable File System Drivers], fltkernel/FltDetachVolume, ifsk.fltdetachvolume
@@ -51,19 +50,19 @@ api_name:
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in, out]
 
-[in, out]
+
 Opaque filter pointer for the caller. This parameter is required and cannot be <b>NULL</b>.
 
-### -param Volume 
+### -param Volume [in, out]
 
-[in, out]
+
 Opaque volume pointer for the volume where the instance is attached. This parameter is required and cannot be <b>NULL</b>.
 
-### -param InstanceName 
+### -param InstanceName [in, optional]
 
-[in, optional]
+
 Pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure containing the instance name for the instance to be removed. This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, the highest matching instance is removed.
 
 ## -returns

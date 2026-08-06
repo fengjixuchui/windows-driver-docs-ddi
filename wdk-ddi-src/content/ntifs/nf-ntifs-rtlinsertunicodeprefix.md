@@ -4,7 +4,6 @@ title: RtlInsertUnicodePrefix function (ntifs.h)
 description: The RtlInsertUnicodePrefix routine inserts a new element into a Unicode prefix table.
 old-location: ifsk\rtlinsertunicodeprefix.htm
 tech.root: ifsk
-ms.assetid: d8a2fa19-8f44-4088-b515-69c9f2119714
 ms.date: 04/16/2018
 keywords: ["RtlInsertUnicodePrefix function"]
 ms.keywords: RtlInsertUnicodePrefix, RtlInsertUnicodePrefix routine [Installable File System Drivers], ifsk.rtlinsertunicodeprefix, ntifs/RtlInsertUnicodePrefix, rtlref_5c8e1a42-5c73-4029-9c1f-5426e43e123c.xml
@@ -50,19 +49,19 @@ The <b>RtlInsertUnicodePrefix</b> routine inserts a new element into a Unicode p
 
 ## -parameters
 
-### -param PrefixTable 
+### -param PrefixTable [in]
 
-[in]
+
 Pointer to the prefix table. The table must have been initialized by calling <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlinitializeunicodeprefix">RtlInitializeUnicodePrefix</a>.
 
-### -param Prefix 
+### -param Prefix [in]
 
-[in]
+
 Pointer to the name string to be inserted with the element at <i>PrefixTableEntry</i>.
 
-### -param PrefixTableEntry 
+### -param PrefixTableEntry [out]
 
-[out]
+
 Pointer to caller-allocated storage, which must be at least <b>sizeof</b>(UNICODE_PREFIX_TABLE_ENTRY), for the element to be inserted for the new prefix. <b>RtlInsertUnicodePrefix</b> initializes this element, which should be considered opaque by the caller.
 
 ## -returns
@@ -79,7 +78,7 @@ File systems must call <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtl
 
 Callers of the <b>Rtl..UnicodePrefix</b> routines are responsible for synchronizing access to the prefix table. A fast mutex is the most efficient synchronization mechanism to use for this purpose. 
 
-For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/index">Strings</a>.
+For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/_kernel/#run-time-library-rtl-routines">Run-Time Library (RTL) Routines</a>.
 
 ## -see-also
 

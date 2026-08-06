@@ -4,7 +4,6 @@ title: _D3DDDIARG_DECODEEXTENSIONEXECUTE (d3dumddi.h)
 description: The D3DDDIARG_DECODEEXTENSIONEXECUTE structure describes a nonstandard Microsoft DirectX Video Acceleration (VA) decode operation to perform.
 old-location: display\d3dddiarg_decodeextensionexecute.htm
 tech.root: display
-ms.assetid: 10c69928-a12f-4583-a3cc-7c4a81da4b03
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_DECODEEXTENSIONEXECUTE structure"]
 ms.keywords: D3DDDIARG_DECODEEXTENSIONEXECUTE, D3DDDIARG_DECODEEXTENSIONEXECUTE structure [Display Devices], UMDisplayDriver_param_Structs_f1b48d7e-6774-465e-99fd-29aaaf0726e1.xml, _D3DDDIARG_DECODEEXTENSIONEXECUTE, d3dumddi/D3DDDIARG_DECODEEXTENSIONEXECUTE, display.d3dddiarg_decodeextensionexecute
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_DECODEEXTENSIONEXECUTE
  - D3DDDIARG_DECODEEXTENSIONEXECUTE
 ---
 
@@ -52,25 +52,25 @@ The D3DDDIARG_DECODEEXTENSIONEXECUTE structure describes a nonstandard Microsoft
 
 ## -struct-fields
 
-### -field hDecode
+### -field hDecode [in]
 
-[in] A handle to the DirectX VA decode device. The user-mode display driver returns this handle in a call to its <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createdecodedevice">CreateDecodeDevice</a> function.
+A handle to the DirectX VA decode device. The user-mode display driver returns this handle in a call to its <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createdecodedevice">CreateDecodeDevice</a> function.
 
-### -field Function
+### -field Function [in]
 
-[in] A specific decode operation to perform. The possible values for this member are defined by the nonstandard decode device.
+A specific decode operation to perform. The possible values for this member are defined by the nonstandard decode device.
 
-### -field pPrivateInput
+### -field pPrivateInput [in]
 
-[in] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_privatedata">DXVADDI_PRIVATEDATA</a> structure that contains data that the driver requires to perform the decode operation.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_privatedata">DXVADDI_PRIVATEDATA</a> structure that contains data that the driver requires to perform the decode operation.
 
-### -field pPrivateOutput
+### -field pPrivateOutput [out]
 
-[out] A pointer to a DXVADDI_PRIVATEDATA structure that contains data about the decode operation that the driver returns.
+A pointer to a DXVADDI_PRIVATEDATA structure that contains data about the decode operation that the driver returns.
 
-### -field NumBuffers
+### -field NumBuffers [in]
 
-[in] The number of buffers in the list that is pointed to by <b>pBuffers</b>.
+The number of buffers in the list that is pointed to by <b>pBuffers</b>.
 
 ### -field pBuffers
 
@@ -91,3 +91,4 @@ The D3DDDIARG_DECODEEXTENSIONEXECUTE structure describes a nonstandard Microsoft
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_decodeextensionexecute">DecodeExtensionExecute</a>
+

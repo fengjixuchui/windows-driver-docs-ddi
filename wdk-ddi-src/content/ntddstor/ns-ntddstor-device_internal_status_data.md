@@ -1,11 +1,9 @@
 ---
 UID: NS:ntddstor._DEVICE_INTERNAL_STATUS_DATA
 title: DEVICE_INTERNAL_STATUS_DATA
-description: 
+description: "Learn more about: DEVICE_INTERNAL_STATUS_DATA structure"
 tech.root: storage
-ms.assetid: 910ff4a4-e0e3-4402-8231-c3d62afe2ea4
 ms.date: 11/30/2019
-ms.topic: struct
 ms.keywords: DEVICE_INTERNAL_STATUS_DATA, DEVICE_INTERNAL_STATUS_DATA, *PDEVICE_INTERNAL_STATUS_DATA,
 req.header: ntddstor.h
 req.include-header: 
@@ -35,9 +33,9 @@ api_type:
 api_location:
  - ntddstor.h
 api_name:
+ - _DEVICE_INTERNAL_STATUS_DATA
+ - PDEVICE_INTERNAL_STATUS_DATA
  - DEVICE_INTERNAL_STATUS_DATA
-product:
- - Windows
 ---
 
 # DEVICE_INTERNAL_STATUS_DATA structure

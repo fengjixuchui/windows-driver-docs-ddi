@@ -4,7 +4,6 @@ title: WdfIoResourceRequirementsListGetCount function (wdfresource.h)
 description: The WdfIoResourceRequirementsListGetCount method returns the number of logical configurations that are contained in a resource requirements list.
 old-location: wdf\wdfioresourcerequirementslistgetcount.htm
 tech.root: wdf
-ms.assetid: 00a79e57-5915-49a3-b11f-223cc93c2e99
 ms.date: 02/26/2018
 keywords: ["WdfIoResourceRequirementsListGetCount function"]
 ms.keywords: DFResourceObjectRef_927d5729-0c1e-4363-9f2d-b5fefba8e2f6.xml, WdfIoResourceRequirementsListGetCount, WdfIoResourceRequirementsListGetCount method, kmdf.wdfioresourcerequirementslistgetcount, wdf.wdfioresourcerequirementslistgetcount, wdfresource/WdfIoResourceRequirementsListGetCount
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,9 +52,9 @@ The <b>WdfIoResourceRequirementsListGetCount</b> method returns the number of <a
 
 ## -parameters
 
-### -param RequirementsList 
+### -param RequirementsList [in]
 
-[in]
+
 A handle to a framework resource-requirements-list object that represents a device's resource requirements list.
 
 ## -returns

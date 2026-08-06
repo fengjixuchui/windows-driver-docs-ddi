@@ -4,7 +4,6 @@ title: EVT_WDF_RESERVE_DMA (wdfdmatransaction.h)
 description: The EvtReserveDma event callback function is called when the framework has reserved resources to execute and release a transaction. Reserved resources include map registers and the WDM DMA adapter's lock.
 old-location: wdf\evtreservedma.htm
 tech.root: wdf
-ms.assetid: 3663EF19-5F16-43D1-BFBC-28280E28D4DE
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_RESERVE_DMA callback function"]
 ms.keywords: EVT_WDF_RESERVE_DMA, EVT_WDF_RESERVE_DMA callback, EvtReserveDma, EvtReserveDma callback function, kmdf.evtreservedma, wdf.evtreservedma, wdfdmatransaction/EvtReserveDma
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfDmaTransaction.h
 api_name:
- - EvtReserveDma
+ - EVT_WDF_RESERVE_DMA
 ---
 
 # EVT_WDF_RESERVE_DMA callback function
@@ -54,14 +53,14 @@ api_name:
 
 ## -parameters
 
-### -param DmaTransaction 
+### -param DmaTransaction [in]
 
-[in]
+
 A handle to the DMA transaction object that represents the transaction to which DMA resources were assigned.
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 The context pointer that the driver specified in a previous call to <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactionallocateresources">WdfDmaTransactionAllocateResources</a>.
 
 ## -remarks
@@ -86,3 +85,4 @@ On operating systems earlier than Windows 8, <i>EvtReserveDma</i> must be used 
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactionfreeresources">WdfDmaTransactionFreeResources</a>
+

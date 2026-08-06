@@ -4,7 +4,6 @@ title: _WDF_FILEOBJECT_CLASS (wdfdevice.h)
 description: The WDF_FILEOBJECT_CLASS enumeration defines values that identify whether a driver requires a framework file object to represent a file that an application or another driver is attempting to create or open.
 old-location: wdf\wdf_fileobject_class.htm
 tech.root: wdf
-ms.assetid: e0887061-eafe-4dba-bb7a-58bf949e2d08
 ms.date: 02/26/2018
 keywords: ["WDF_FILEOBJECT_CLASS enumeration"]
 ms.keywords: "*PWDF_FILEOBJECT_CLASS, DFFileObjectRef_001acbc3-7e2c-4b8b-ab14-024653cefe19.xml, PWDF_FILEOBJECT_CLASS, PWDF_FILEOBJECT_CLASS enumeration pointer, WDF_FILEOBJECT_CLASS, WDF_FILEOBJECT_CLASS enumeration, WdfFileObjectCanBeOptional, WdfFileObjectInvalid, WdfFileObjectNotRequired, WdfFileObjectWdfCanUseFsContext, WdfFileObjectWdfCanUseFsContext2, WdfFileObjectWdfCannotUseFsContexts, _WDF_FILEOBJECT_CLASS, kmdf.wdf_fileobject_class, wdf.wdf_fileobject_class, wdfdevice/PWDF_FILEOBJECT_CLASS, wdfdevice/WDF_FILEOBJECT_CLASS, wdfdevice/WdfFileObjectCanBeOptional, wdfdevice/WdfFileObjectInvalid, wdfdevice/WdfFileObjectNotRequired, wdfdevice/WdfFileObjectWdfCanUseFsContext, wdfdevice/WdfFileObjectWdfCanUseFsContext2, wdfdevice/WdfFileObjectWdfCannotUseFsContexts"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdfdevice.h
 api_name:
+ - _WDF_FILEOBJECT_CLASS
+ - PWDF_FILEOBJECT_CLASS
  - WDF_FILEOBJECT_CLASS
 ---
 
@@ -56,27 +57,27 @@ The <b>WDF_FILEOBJECT_CLASS</b> enumeration defines values that identify whether
 
 ## -enum-fields
 
-### -field WdfFileObjectInvalid
+### -field WdfFileObjectInvalid:0
 
 Reserved for internal use.
 
-### -field WdfFileObjectNotRequired
+### -field WdfFileObjectNotRequired:1
 
 The driver does not require a framework file object.
 
-### -field WdfFileObjectWdfCanUseFsContext
+### -field WdfFileObjectWdfCanUseFsContext:2
 
 The driver requires a framework file object. The framework can store the object's handle in the <b>FsContext</b> member of the file's Windows Driver Model (WDM) <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">FILE_OBJECT</a> structure.
 
-### -field WdfFileObjectWdfCanUseFsContext2
+### -field WdfFileObjectWdfCanUseFsContext2:3
 
 The driver requires a framework file object. The framework can store the object's handle in the <b>FsContext2</b> member of the file's WDM FILE_OBJECT structure.
 
-### -field WdfFileObjectWdfCannotUseFsContexts
+### -field WdfFileObjectWdfCannotUseFsContexts:4
 
 The driver requires a framework file object. The framework cannot store the object's handle in the <b>FsContext</b> or <b>FsContext2</b> member of the file's WDM FILE_OBJECT structure, because one or more drivers are using these members. Therefore, the framework must store the handle internally.
 
-### -field WdfFileObjectCanBeOptional
+### -field WdfFileObjectCanBeOptional:0x80000000
 
 The driver typically requires a framework file object, but the driver can also handle special situations in which a framework file object is missing or different. For more information about these situations, see the following Remarks section. 
 
@@ -113,3 +114,4 @@ If the <b>WdfFileObjectCanBeOptional</b> bit flag is set, the framework's verifi
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_fileobject_config">WDF_FILEOBJECT_CONFIG</a>
+

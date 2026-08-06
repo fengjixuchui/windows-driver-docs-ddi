@@ -4,7 +4,6 @@ title: _DOT11_WFD_DEVICE_ENTRY (windot11.h)
 description: The DOT11_WFD_DEVICE_ENTRY structure contains information about a discovered Wi-Fi Direct (WFD) device, a discovered WFD Group Owner (GO), or a discovered infrastructure access point.
 old-location: netvista\_dot11_wfd_device_entry.htm
 tech.root: netvista
-ms.assetid: 548A40F7-1C02-4BF0-8F78-EB8C3C97CEB4
 ms.date: 02/16/2018
 keywords: ["DOT11_WFD_DEVICE_ENTRY structure"]
 ms.keywords: "*PDOT11_WFD_DEVICE_ENTRY, DOT11_WFD_DEVICE_ENTRY, DOT11_WFD_DEVICE_ENTRY structure [Network Drivers Starting with Windows Vista], PDOT11_WFD_DEVICE_ENTRY, PDOT11_WFD_DEVICE_ENTRY structure pointer [Network Drivers Starting with Windows Vista], _DOT11_WFD_DEVICE_ENTRY, netvista._dot11_wfd_device_entry, windot11/ DOT11_WFD_DEVICE_ENTRY, windot11/PDOT11_WFD_DEVICE_ENTRY"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - Windot11.h
 api_name:
+ - _DOT11_WFD_DEVICE_ENTRY
+ - PDOT11_WFD_DEVICE_ENTRY
  - DOT11_WFD_DEVICE_ENTRY
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_WFD_DEVICE_ENTRY structure
@@ -52,13 +51,16 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The <b>DOT11_WFD_DEVICE_ENTRY</b> structure contains information about a discovered Wi-Fi Direct (WFD) device, a discovered WFD Group Owner (GO), or a discovered infrastructure access point. This structure is returned from both an <a href="/windows-hardware/drivers/network/oid-dot11-wfd-enum-device-list">OID_DOT11_WFD_ENUM_DEVICE_LIST</a> and a <a href="/windows-hardware/drivers/network/ndis-status-dot11-wfd-discover-complete">NDIS_STATUS_DOT11_WFD_DISCOVER_COMPLETE</a> notification.
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The <b>DOT11_WFD_DEVICE_ENTRY</b> structure contains information about a discovered Wi-Fi Direct (WFD) device, a discovered WFD Group Owner (GO), or a discovered infrastructure access point. This structure is returned from both an <a href="/windows-hardware/drivers/network/oid-dot11-wfd-enum-device-list">OID_DOT11_WFD_ENUM_DEVICE_LIST</a> and a <a href="/windows-hardware/drivers/network/ndis-status-dot11-wfd-discover-complete">NDIS_STATUS_DOT11_WFD_DISCOVER_COMPLETE</a> notification.
 
 ## -struct-fields
 
 ### -field uPhyId
 
-The identifer of the PHY the miniport used to detect the device. This identifier is in the index range of the list of supported PHYs returned from an <a href="/windows-hardware/drivers/network/oid-dot11-supported-phy-types">OID_DOT11_SUPPORTED_PHY_TYPES</a> query request. This identifer cannot be <b>DOT_PHY_ID_ANY</b>.
+The identifier of the PHY the miniport used to detect the device. This identifier is in the index range of the list of supported PHYs returned from an <a href="/windows-hardware/drivers/network/oid-dot11-supported-phy-types">OID_DOT11_SUPPORTED_PHY_TYPES</a> query request. This identifier cannot be <b>DOT_PHY_ID_ANY</b>.
 
 ### -field PhySpecificInfo
 
@@ -78,7 +80,7 @@ The MAC address for the transmitter of the device that sent the beacon or probe 
 
 ### -field lRSSI
 
-The recieved signal strength indicator value of the discovered device. The units for this value are in decibels referenced to 1 milliwatt (dBm).
+The received signal strength indicator value of the discovered device. The units for this value are in decibels referenced to 1 milliwatt (dBm).
 
 ### -field uLinkQuality
 
@@ -170,3 +172,4 @@ typedef struct _DOT11_WFD_DEVICE_ENTRY {
 
 
 <a href="..\ndis\nf-ndis-ndisgetcurrentsystemtime.md">NdisGetCurrentSystemTime</a>
+

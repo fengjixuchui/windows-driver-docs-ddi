@@ -4,7 +4,6 @@ title: _SCSI_INQUIRY_DATA (ntddscsi.h)
 description: The SCSI_INQUIRY_DATA structure is used in conjunction with the IOCTL_SCSI_GET_INQUIRY_DATA request to retrieve the SCSI inquiry data for all devices on a given SCSI bus.
 old-location: storage\scsi_inquiry_data.htm
 tech.root: storage
-ms.assetid: f62c35dd-791d-4c21-9836-308cc5fb102b
 ms.date: 03/29/2018
 keywords: ["SCSI_INQUIRY_DATA structure"]
 ms.keywords: "*PSCSI_INQUIRY_DATA, PSCSI_INQUIRY_DATA, PSCSI_INQUIRY_DATA structure pointer [Storage Devices], SCSI_INQUIRY_DATA, SCSI_INQUIRY_DATA structure [Storage Devices], _SCSI_INQUIRY_DATA, ntddscsi/PSCSI_INQUIRY_DATA, ntddscsi/SCSI_INQUIRY_DATA, storage.scsi_inquiry_data, structs-scsibus_caffe649-9258-4363-ac26-da2c81bebdd1.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddscsi.h
 api_name:
+ - _SCSI_INQUIRY_DATA
+ - PSCSI_INQUIRY_DATA
  - SCSI_INQUIRY_DATA
 ---
 
@@ -98,3 +99,4 @@ The <a href="/windows-hardware/drivers/ddi/ntddscsi/ni-ntddscsi-ioctl_scsi_get_i
 
 
 <a href="/windows-hardware/drivers/ddi/ntddscsi/ns-ntddscsi-_scsi_bus_data">SCSI_BUS_DATA</a>
+

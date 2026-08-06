@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_MONITOR_ACQUIREMONITORSOURCEMODESET
 title: DXGKDDI_MONITOR_ACQUIREMONITORSOURCEMODESET (d3dkmddi.h)
 description: The pfnAcquireMonitorSourceModeSet function returns a handle to the monitor source mode set object that is associated with a specified monitor.
 old-location: display\dxgk_monitor_interface_pfnacquiremonitorsourcemodeset.htm
-ms.assetid: a64197c0-a61f-4989-9b68-4e06b1a69fd4
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_MONITOR_ACQUIREMONITORSOURCEMODESET callback function"]
 ms.keywords: DXGKDDI_MONITOR_ACQUIREMONITORSOURCEMODESET, DXGKDDI_MONITOR_ACQUIREMONITORSOURCEMODESET callback, VidPnFunctions_b540037c-9f98-4160-aeb3-ded9723e09fa.xml, d3dkmddi/pfnAcquireMonitorSourceModeSet, display.dxgk_monitor_interface_pfnacquiremonitorsourcemodeset, pfnAcquireMonitorSourceModeSet, pfnAcquireMonitorSourceModeSet callback function [Display Devices]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - pfnAcquireMonitorSourceModeSet
-product:
- - Windows
+ - DXGKDDI_MONITOR_ACQUIREMONITORSOURCEMODESET
 ---
 
 # DXGKDDI_MONITOR_ACQUIREMONITORSOURCEMODESET callback function
@@ -52,21 +49,21 @@ The <b>pfnAcquireMonitorSourceModeSet</b> function returns a handle to the monit
 
 ## -parameters
 
-### -param hAdapter
+### -param hAdapter [in]
 
-[in] A handle that identifies a display adapter. The Microsoft DirectX graphics kernel subsystem previously provided this handle to the display miniport driver in the <i>DxgkInterface</i> parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device">DxgkDdiStartDevice</a> function.
+A handle that identifies a display adapter. The Microsoft DirectX graphics kernel subsystem previously provided this handle to the display miniport driver in the <i>DxgkInterface</i> parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device">DxgkDdiStartDevice</a> function.
 
-### -param VideoPresentTargetId
+### -param VideoPresentTargetId [in]
 
-[in] An integer that identifies one of the video present targets on the display adapter. The returned source mode set object describes the modes available on the monitor that is connected to this video present target.
+An integer that identifies one of the video present targets on the display adapter. The returned source mode set object describes the modes available on the monitor that is connected to this video present target.
 
-### -param phMonitorSourceModeSet
+### -param phMonitorSourceModeSet [out]
 
-[out] A pointer to a variable that receives a handle to a monitor source mode set object.
+A pointer to a variable that receives a handle to a monitor source mode set object.
 
-### -param ppMonitorSourceModeSetInterface
+### -param ppMonitorSourceModeSetInterface [out]
 
-[out] A pointer to a variable that receives a pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_monitorsourcemodeset_interface">DXGK_MONITORSOURCEMODESET_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the monitor source mode set object.
+A pointer to a variable that receives a pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_monitorsourcemodeset_interface">DXGK_MONITORSOURCEMODESET_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the monitor source mode set object.
 
 ## -returns
 
@@ -96,3 +93,4 @@ This function is also available in the <a href="/windows-hardware/drivers/ddi/d3
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a>
+

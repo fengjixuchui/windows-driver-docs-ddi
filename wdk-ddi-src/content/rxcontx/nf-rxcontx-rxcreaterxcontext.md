@@ -4,7 +4,6 @@ title: RxCreateRxContext function (rxcontx.h)
 description: RxCreateRxContext allocates a new RX_CONTEXT structure and initializes the data structure.
 old-location: ifsk\rxcreaterxcontext.htm
 tech.root: ifsk
-ms.assetid: ff39aebb-03c0-4ba4-844a-417579ed2bbf
 ms.date: 04/16/2018
 keywords: ["RxCreateRxContext function"]
 ms.keywords: RxCreateRxContext, RxCreateRxContext function [Installable File System Drivers], ifsk.rxcreaterxcontext, rxcontx/RxCreateRxContext, rxref_ceb498ca-e985-4100-a104-8333abb41fdf.xml
@@ -50,19 +49,19 @@ api_name:
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in, optional]
 
-[in, optional]
+
 A pointer to the IRP to be encapsulated by this RX_CONTEXT structure.
 
-### -param RxDeviceObject 
+### -param RxDeviceObject [in]
 
-[in]
+
 A pointer to the device object to which this RX_CONTEXT and IRP apply.
 
-### -param InitialContextFlags 
+### -param InitialContextFlags [in]
 
-[in]
+
 The set of initial values for the <b>Flags</b> member of the RX_CONTEXT data structure to be stored in the RX_CONTEXT structure. These initial values can be any combination of the following enumerations:
 
 

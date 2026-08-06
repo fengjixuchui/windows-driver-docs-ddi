@@ -4,7 +4,6 @@ title: PVIDEO_HW_POWER_SET (video.h)
 description: HwVidSetPowerState sets the power state of the specified device.
 old-location: display\hwvidsetpowerstate.htm
 tech.root: display
-ms.assetid: d7800ab6-9d8f-47a7-b919-8b6b0197d163
 ms.date: 05/10/2018
 keywords: ["PVIDEO_HW_POWER_SET callback function"]
 ms.keywords: HwVidSetPowerState, HwVidSetPowerState callback function [Display Devices], PVIDEO_HW_POWER_SET, PVIDEO_HW_POWER_SET callback, VideoMiniport_Functions_22a6c5ae-0c31-48a6-8882-06edfea32c1a.xml, display.hwvidsetpowerstate, video/HwVidSetPowerState
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - video.h
 api_name:
- - HwVidSetPowerState
+ - PVIDEO_HW_POWER_SET
 ---
 
 # PVIDEO_HW_POWER_SET callback function
@@ -85,3 +84,4 @@ The driver should check the ID specified in <i>HwId</i> to determine the device 
 
 
 <a href="/windows-hardware/drivers/ddi/ntddvdeo/ns-ntddvdeo-_video_power_management">VIDEO_POWER_MANAGEMENT</a>
+

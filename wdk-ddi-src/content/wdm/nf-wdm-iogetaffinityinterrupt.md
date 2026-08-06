@@ -4,7 +4,6 @@ title: IoGetAffinityInterrupt function (wdm.h)
 description: For more information, see the WdmlibIoGetAffinityInterrupt function.#define IoGetAffinityInterrupt WdmlibIoGetAffinityInterrupt
 old-location: kernel\iogetaffinityinterrupt.htm
 tech.root: kernel
-ms.assetid: aec1ace6-9945-4e7a-b0f6-81591670ecfe
 ms.date: 04/30/2018
 keywords: ["IoGetAffinityInterrupt function"]
 ms.keywords: IoGetAffinityInterrupt, IoGetAffinityInterrupt routine [Kernel-Mode Driver Architecture], WdmlibIoGetAffinityInterrupt, k104_39247b69-50e1-4162-b26e-81b5358738de.xml, kernel.iogetaffinityinterrupt, wdm/IoGetAffinityInterrupt, wdm/WdmlibIoGetAffinityInterrupt
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - IoGetAffinityInterrupt
- - WdmlibIoGetAffinityInterrupt
 ---
 
 # IoGetAffinityInterrupt function
@@ -53,14 +51,14 @@ For more information, see the <a href="/windows-hardware/drivers/ddi/iointex/nf-
 
 ## -parameters
 
-### -param InterruptObject 
+### -param InterruptObject [in]
 
-[in]
+
 For more information, see the <a href="/windows-hardware/drivers/ddi/iointex/nf-iointex-wdmlibiogetaffinityinterrupt">WdmlibIoGetAffinityInterrupt</a> function.
 
-### -param GroupAffinity 
+### -param GroupAffinity [out]
 
-[out]
+
 For more information, see the <a href="/windows-hardware/drivers/ddi/iointex/nf-iointex-wdmlibiogetaffinityinterrupt">WdmlibIoGetAffinityInterrupt</a> function.
 
 ## -returns
@@ -70,3 +68,4 @@ For more information, see the <a href="/windows-hardware/drivers/ddi/iointex/nf-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/iointex/nf-iointex-wdmlibiogetaffinityinterrupt">WdmlibIoGetAffinityInterrupt</a>
+

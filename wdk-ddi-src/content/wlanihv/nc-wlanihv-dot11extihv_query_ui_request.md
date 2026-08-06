@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_QUERY_UI_REQUEST
 title: DOT11EXTIHV_QUERY_UI_REQUEST (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_QUERY_UI_REQUEST callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvqueryuirequest.htm
 tech.root: netvista
-ms.assetid: 37c01180-0742-4764-88c3-9ceb807a0086
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_QUERY_UI_REQUEST callback"]
 ms.keywords: DOT11EXTIHV_QUERY_UI_REQUEST, Dot11ExtIhvQueryUIRequest, Dot11ExtIhvQueryUIRequest callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_b820a678-9e05-4f96-87bd-ed1154317091.xml, netvista.dot11extihvqueryuirequest, wlanihv/Dot11ExtIhvQueryUIRequest
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_QUERY_UI_REQUEST
  - wlanihv/DOT11EXTIHV_QUERY_UI_REQUEST
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtIhvQueryUIRequest
+ - DOT11EXTIHV_QUERY_UI_REQUEST
 ---
 
 # DOT11EXTIHV_QUERY_UI_REQUEST callback
@@ -55,17 +53,17 @@ api_name:
 
 ## -parameters
 
-### -param hIhvExtAdapter 
+### -param hIhvExtAdapter [in, optional]
 
-[in, optional]
+
 The handle used by the IHV Extensions DLL to reference the wireless LAN (WLAN) adapter. This
      handle value was specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param connectionPhase 
+### -param connectionPhase [in]
 
-[in]
+
 The current connection phase. The data type for this member is the
      <b>DOT11EXT_IHV_CONNECTION_PHASE</b> enumeration:
 
@@ -96,9 +94,9 @@ Specifies the connection phase after the IHV Extensions DLL completes a post-ass
        <a href="/windows-hardware/drivers/network/post-association-operations">Post-Association
        Operations</a>.
 
-### -param ppIhvUIRequest 
+### -param ppIhvUIRequest [out]
 
-[out]
+
 The address of a pointer to a
      <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_ui_request.md">DOT11EXT_IHV_UI_REQUEST</a> structure.
      The IHV Extensions DLL must allocate a buffer for the DOT11EXT_IHV_UI_REQUEST structure by calling
@@ -170,3 +168,4 @@ For example, if
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_free_buffer.md">Dot11ExtFreeBuffer</a>
+

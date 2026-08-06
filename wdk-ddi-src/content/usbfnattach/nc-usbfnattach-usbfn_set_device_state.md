@@ -4,7 +4,6 @@ title: USBFN_SET_DEVICE_STATE (usbfnattach.h)
 description: The filter driver's implementation to set the device state and operating bus speed.
 old-location: buses\usbfn_set_device_state.htm
 tech.root: usbref
-ms.assetid: EAEFEE8A-D96B-40D8-A4F0-FEFA670E1E6E
 ms.date: 05/07/2018
 keywords: ["USBFN_SET_DEVICE_STATE callback function"]
 ms.keywords: PFN_USBFN_SET_DEVICE_STATE, PFN_USBFN_SET_DEVICE_STATE callback function pointer [Buses], USBFN_SET_DEVICE_STATE, USBFN_SET_DEVICE_STATE callback, UsbFnSetDeviceState, UsbFnSetDeviceState callback function [Buses], buses.usbfn_set_device_state, usbfnattach/UsbFnSetDeviceState
@@ -50,19 +49,19 @@ The filter driver's implementation to set the device state and operating bus spe
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
     A pointer to a driver-defined context.
 
-### -param DeviceState 
+### -param DeviceState [in]
 
-[in]
+
     A <a href="/windows-hardware/drivers/ddi/usbfnbase/ne-usbfnbase-_usbfn_device_state">USBFN_DEVICE_STATE</a>-typed flag that indicates the state of the device.
 
-### -param BusSpeed 
+### -param BusSpeed [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/usbfnbase/ne-usbfnbase-_usbfn_bus_speed">USBFN_BUS_SPEED</a>-typed flag that indicates the bus speed.
 
 ## -returns
@@ -71,7 +70,7 @@ If the operation is successful, the callback function must return STATUS_SUCCESS
 
 ## -remarks
 
-To support attach and detatch detection, the USB lower filter driver must publish its support. During the publishing process, the driver also registers its implementation of this  callback function. For more information, see <a href="/previous-versions/windows/hardware/drivers/mt188012(v=vs.85)">USB filter driver for supporting proprietary chargers</a>.
+To support attach and detach detection, the USB lower filter driver must publish its support. During the publishing process, the driver also registers its implementation of this  callback function. For more information, see <a href="/previous-versions/windows/hardware/drivers/mt188012(v=vs.85)">USB filter driver for supporting proprietary chargers</a>.
 
 The lower filter driver might implement  a <i>USBFN_SET_DEVICE_STATE</i> even callback function if it requires notification of device state changes to properly configure charging when attached to a host, or in lab scenarios where charging via USB must be disabled.
 

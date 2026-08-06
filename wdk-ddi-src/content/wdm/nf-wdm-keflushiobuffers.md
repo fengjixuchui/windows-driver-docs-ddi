@@ -4,7 +4,6 @@ title: KeFlushIoBuffers function (wdm.h)
 description: The KeFlushIoBuffers routine flushes the memory region described by an MDL from caches of all processors.
 old-location: kernel\keflushiobuffers.htm
 tech.root: kernel
-ms.assetid: 76954a20-7cd7-454b-a965-8c3f0cdb6e8f
 ms.date: 04/30/2018
 keywords: ["KeFlushIoBuffers function"]
 ms.keywords: KeFlushIoBuffers, KeFlushIoBuffers routine [Kernel-Mode Driver Architecture], k105_265e110c-5dad-444c-a97d-6693d7996c51.xml, kernel.keflushiobuffers, wdm/KeFlushIoBuffers
@@ -50,19 +49,19 @@ The <b>KeFlushIoBuffers</b> routine flushes the memory region described by an MD
 
 ## -parameters
 
-### -param Mdl 
+### -param Mdl [in]
 
-[in]
+
 A pointer to an MDL that describes the range for the I/O buffer.
 
-### -param ReadOperation 
+### -param ReadOperation [in]
 
-[in]
+
 Specifies <b>TRUE</b> if the flush is being performed for a read operation, and <b>FALSE</b> for a write operation. For more information, see the following Remarks section.
 
-### -param DmaOperation 
+### -param DmaOperation [in]
 
-[in]
+
 Specifies <b>TRUE</b> for a DMA transfer, <b>FALSE</b> for PIO.
 
 ## -remarks

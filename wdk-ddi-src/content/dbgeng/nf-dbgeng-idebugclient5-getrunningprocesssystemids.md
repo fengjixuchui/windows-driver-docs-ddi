@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient5.GetRunningProcessSystemIds
 title: IDebugClient5::GetRunningProcessSystemIds (dbgeng.h)
-description: The GetRunningProcessSystemIds method returns the process IDs for each running process.
+description: The GetRunningProcessSystemIds method returns the process IDs for each running process. This method belongs to the IDebugClient5 interface.
 old-location: debugger\getrunningprocesssystemids.htm
 tech.root: debugger
-ms.assetid: 6e7b6d54-e53b-4861-b888-ea63e3859139
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::GetRunningProcessSystemIds"]
 ms.keywords: GetRunningProcessSystemIds, GetRunningProcessSystemIds method [Windows Debugging], GetRunningProcessSystemIds method [Windows Debugging],IDebugClient interface, GetRunningProcessSystemIds method [Windows Debugging],IDebugClient2 interface, GetRunningProcessSystemIds method [Windows Debugging],IDebugClient3 interface, GetRunningProcessSystemIds method [Windows Debugging],IDebugClient4 interface, GetRunningProcessSystemIds method [Windows Debugging],IDebugClient5 interface, IDebugClient interface [Windows Debugging],GetRunningProcessSystemIds method, IDebugClient2 interface [Windows Debugging],GetRunningProcessSystemIds method, IDebugClient2::GetRunningProcessSystemIds, IDebugClient3 interface [Windows Debugging],GetRunningProcessSystemIds method, IDebugClient3::GetRunningProcessSystemIds, IDebugClient4 interface [Windows Debugging],GetRunningProcessSystemIds method, IDebugClient4::GetRunningProcessSystemIds, IDebugClient5 interface [Windows Debugging],GetRunningProcessSystemIds method, IDebugClient5.GetRunningProcessSystemIds, IDebugClient5::GetRunningProcessSystemIds, IDebugClient::GetRunningProcessSystemIds, IDebugClient_f1eed41f-b746-4eb6-b6db-8eef7ac89d6a.xml, dbgeng/IDebugClient2::GetRunningProcessSystemIds, dbgeng/IDebugClient3::GetRunningProcessSystemIds, dbgeng/IDebugClient4::GetRunningProcessSystemIds, dbgeng/IDebugClient5::GetRunningProcessSystemIds, dbgeng/IDebugClient::GetRunningProcessSystemIds, debugger.getrunningprocesssystemids
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.GetRunningProcessSystemIds
- - IDebugClient2.GetRunningProcessSystemIds
- - IDebugClient3.GetRunningProcessSystemIds
- - IDebugClient4.GetRunningProcessSystemIds
- - IDebugClient5.GetRunningProcessSystemIds
+ - IDebugClient5::GetRunningProcessSystemIds
 ---
 
 # IDebugClient5::GetRunningProcessSystemIds
@@ -54,24 +49,24 @@ The <b>GetRunningProcessSystemIds</b> method returns the process IDs for each ru
 
 ## -parameters
 
-### -param Server 
+### -param Server [in]
 
-[in]
+
 Specifies the process server to query for process IDs.  If <i>Server</i> is zero, the engine will return the process IDs of the processes running on the local computer.
 
-### -param Ids 
+### -param Ids [out, optional]
 
-[out, optional]
+
 Receives the process IDs.  The size of this array is <i>Count</i>.  If <i>Ids</i> is <b>NULL</b>, this information is not returned.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of process IDs the array <i>Ids</i> can hold.
 
-### -param ActualCount 
+### -param ActualCount [out, optional]
 
-[out, optional]
+
 Receives the actual number of process IDs returned in <i>Ids</i>.
 
 ## -returns
@@ -141,3 +136,4 @@ For more information about creating and attaching to live user-mode targets, see
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient5">IDebugClient5</a>
+

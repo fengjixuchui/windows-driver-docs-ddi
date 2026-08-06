@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILVERSIONPARAMS
 title: RILVERSIONPARAMS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILVERSIONPARAMS structure for internal use only."
 old-location: netvista\rilversionparams.htm
 tech.root: netvista
-ms.assetid: c6931cee-2b86-4bf8-9e9d-b04e2df9eb12
 ms.date: 05/02/2018
 keywords: ["RILVERSIONPARAMS structure"]
 ms.keywords: "*LPRILVERSIONPARAMS, RILVERSIONPARAMS, RILVERSIONPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilversionparams, ntddrilapitypes/RILVERSIONPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILVERSIONPARAMS
+ - LPRILVERSIONPARAMS
 ---
 
 # RILVERSIONPARAMS structure (rilapitypes.h)

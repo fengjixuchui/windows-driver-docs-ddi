@@ -4,7 +4,6 @@ title: _NDIS_WDI_DATA_API (dot11wdi.h)
 description: The NDIS_WDI_DATA_API structure specifies the entry points for WDI data indications.
 old-location: netvista\ndis_wdi_data_api.htm
 tech.root: netvista
-ms.assetid: 8C26D62E-711A-4CE7-BD2B-D78B794C67FB
 ms.date: 05/02/2018
 keywords: ["NDIS_WDI_DATA_API structure"]
 ms.keywords: "*PNDIS_WDI_DATA_API, NDIS_WDI_DATA_API, NDIS_WDI_DATA_API structure [Network Drivers Starting with Windows Vista], PNDIS_WDI_DATA_API, PNDIS_WDI_DATA_API structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WDI_DATA_API, dot11wdi/NDIS_WDI_DATA_API, dot11wdi/PNDIS_WDI_DATA_API, netvista.ndis_wdi_data_api"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
+ - _NDIS_WDI_DATA_API
+ - PNDIS_WDI_DATA_API
  - NDIS_WDI_DATA_API
 ---
 
@@ -49,6 +50,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The 
   NDIS_WDI_DATA_API structure specifies the entry points for WDI data indications.
@@ -58,7 +62,7 @@ The
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_WDI_DATA_API structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_WDI_DATA_API.
@@ -143,3 +147,4 @@ The entry point of the <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11w
 ### -field TxQuerySuspectFrameCompleteStatus
 
 The entry point of the [NdisWdiTxQuerySuspectFrameCompleteStatus](nc-dot11wdi-ndis_wdi_tx_query_suspect_frame_complete_status.md) callback function.
+

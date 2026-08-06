@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.IDebugHostScriptHost.CreateContext
 title: IDebugHostScriptHost::CreateContext (dbgmodel.h)
 description: The CreateContext method is called by a script provider to create a new context in which to place the contents of the script.
-ms.assetid: e7dbce17-bc44-4707-805e-2607263c8ce4
 ms.date: 06/10/2019
 keywords: ["IDebugHostScriptHost::CreateContext"]
 ms.keywords: IDebugHostScriptHost::CreateContext, CreateContext, IDebugHostScriptHost.CreateContext, IDebugHostScriptHost::CreateContext, IDebugHostScriptHost.CreateContext
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostScriptHost.CreateContext
+ - IDebugHostScriptHost::CreateContext
 ---
 
 # IDebugHostScriptHost::CreateContext

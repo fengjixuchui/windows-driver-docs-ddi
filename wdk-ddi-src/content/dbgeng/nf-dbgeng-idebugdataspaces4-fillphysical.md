@@ -4,7 +4,6 @@ title: IDebugDataSpaces4::FillPhysical (dbgeng.h)
 description: The FillPhysical method writes a pattern of bytes to the target's physical memory. The pattern is written repeatedly until the specified memory range is filled.
 old-location: debugger\fillphysical.htm
 tech.root: debugger
-ms.assetid: 9fd2cc6d-c891-4566-896b-80d56d143e8d
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces4::FillPhysical"]
 ms.keywords: FillPhysical, FillPhysical method [Windows Debugging], FillPhysical method [Windows Debugging],IDebugDataSpaces2 interface, FillPhysical method [Windows Debugging],IDebugDataSpaces3 interface, FillPhysical method [Windows Debugging],IDebugDataSpaces4 interface, IDebugDataSpaces2 interface [Windows Debugging],FillPhysical method, IDebugDataSpaces2::FillPhysical, IDebugDataSpaces3 interface [Windows Debugging],FillPhysical method, IDebugDataSpaces3::FillPhysical, IDebugDataSpaces4 interface [Windows Debugging],FillPhysical method, IDebugDataSpaces4.FillPhysical, IDebugDataSpaces4::FillPhysical, IDebugDataSpaces_a188638a-cb30-4e13-8fd0-07114f03df52.xml, dbgeng/IDebugDataSpaces2::FillPhysical, dbgeng/IDebugDataSpaces3::FillPhysical, dbgeng/IDebugDataSpaces4::FillPhysical, debugger.fillphysical
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugDataSpaces2.FillPhysical
- - IDebugDataSpaces3.FillPhysical
- - IDebugDataSpaces4.FillPhysical
+ - IDebugDataSpaces4::FillPhysical
 ---
 
 # IDebugDataSpaces4::FillPhysical
@@ -52,29 +49,29 @@ The <b>FillPhysical</b> method writes a pattern of bytes to the target's physica
 
 ## -parameters
 
-### -param Start 
+### -param Start [in]
 
-[in]
+
 Specifies the location in the target's physical memory at which to start writing the pattern.
 
-### -param Size 
+### -param Size [in]
 
-[in]
+
 Specifies how many bytes to write to the target's memory.
 
-### -param Pattern 
+### -param Pattern [in]
 
-[in]
+
 Specifies the pattern to write.
 
-### -param PatternSize 
+### -param PatternSize [in]
 
-[in]
+
 Specifies the size in bytes of the pattern.
 
-### -param Filled 
+### -param Filled [out, optional]
 
-[out, optional]
+
 Receives the number of bytes written.  If it is set to <b>NULL</b>, this information isn't returned.
 
 ## -returns
@@ -120,3 +117,4 @@ If the final copy of the pattern will not completely fit into the memory range, 
 
 
 <a href="/windows-hardware/drivers/ddi/wdbgexts/nf-wdbgexts-writephysical">WritePhysical</a>
+

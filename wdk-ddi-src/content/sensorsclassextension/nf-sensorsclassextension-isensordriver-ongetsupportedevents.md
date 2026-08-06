@@ -4,7 +4,6 @@ title: ISensorDriver::OnGetSupportedEvents (sensorsclassextension.h)
 description: The ISensorDriver::OnGetSupportedEvents method retrieves the list of events that the specified sensor can raise.
 old-location: sensors\isensordriver_ongetsupportedevents.htm
 tech.root: sensors
-ms.assetid: b323f803-56fb-44db-9b88-be25062c08ff
 ms.date: 05/03/2018
 keywords: ["ISensorDriver::OnGetSupportedEvents"]
 ms.keywords: ISensorDriver interface [Sensor Devices],OnGetSupportedEvents method, ISensorDriver.OnGetSupportedEvents, ISensorDriver::OnGetSupportedEvents, OnGetSupportedEvents, OnGetSupportedEvents method [Sensor Devices], OnGetSupportedEvents method [Sensor Devices],ISensorDriver interface, sensors.isensordriver_ongetsupportedevents, sensorsclassextension/ISensorDriver::OnGetSupportedEvents
@@ -39,7 +38,7 @@ api_location:
  - SensorsClassExtension.lib
  - SensorsClassExtension.dll
 api_name:
- - OnGetSupportedEvents
+ - ISensorDriver::OnGetSupportedEvents
 ---
 
 # ISensorDriver::OnGetSupportedEvents
@@ -76,3 +75,4 @@ You must use CoTaskMemAlloc to create the event ID buffer. The sensor class exte
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/sensorsclassextension/nn-sensorsclassextension-isensordriver">ISensorDriver</a>
+

@@ -4,7 +4,6 @@ title: PPARALLEL_SET_CHIP_MODE (parallel.h)
 description: The PPARALLEL_SET_CHIP_MODE-typed callback routine sets the operating mode of a parallel port. The system-supplied function driver for parallel ports supplies this routine.
 old-location: parports\pparallel_set_chip_mode.htm
 tech.root: parports
-ms.assetid: 7c80f3ee-cbb2-400d-9dfb-36ccef93d80f
 ms.date: 02/15/2018
 keywords: ["PPARALLEL_SET_CHIP_MODE callback"]
 ms.keywords: "(*PPARALLEL_SET_CHIP_MODE), (*PPARALLEL_SET_CHIP_MODE) callback function [Parallel Ports], cisspd_a108ba77-8f01-436e-bc7a-48a74f80ac75.xml, parallel/(*PPARALLEL_SET_CHIP_MODE), parports.pparallel_set_chip_mode"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - parallel.h
 api_name:
- - (*PPARALLEL_SET_CHIP_MODE)
+ - PPARALLEL_SET_CHIP_MODE
 ---
 
 # PPARALLEL_SET_CHIP_MODE callback
@@ -50,14 +49,14 @@ The <i>PPARALLEL_SET_CHIP_MODE</i>-typed callback routine sets the operating mod
 
 ## -parameters
 
-### -param SetChipContext 
+### -param SetChipContext [in]
 
-[in]
+
 Pointer to the device extension of a parallel port's functional device object (<a href="/windows-hardware/drivers/">FDO</a>).
 
-### -param ChipMode 
+### -param ChipMode [in]
 
-[in]
+
 Specifies the operating mode of a parallel port. (For more information about operating modes, see the modes that are defined for the enhanced capabilities register (ECR) in the <i>parallel.h</i> file that is included in the Microsoft Windows Driver Kit [WDK].)
 
 ## -returns
@@ -140,3 +139,4 @@ For more information, see <a href="/previous-versions/ff544801(v=vs.85)">Setting
 
 
 <a href="..\parallel\nc-parallel-pparallel_clear_chip_mode.md">PPARALLEL_CLEAR_CHIP_MODE</a>
+

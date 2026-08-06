@@ -4,7 +4,6 @@ title: FltSetVolumeInformation function (fltkernel.h)
 description: FltSetVolumeInformation changes various kinds of information about the volume that the given instance is attached to.
 old-location: ifsk\fltsetvolumeinformation.htm
 tech.root: ifsk
-ms.assetid: ee6b4a41-e4a7-41b8-9ca9-77b9052724a3
 ms.date: 04/16/2018
 keywords: ["FltSetVolumeInformation function"]
 ms.keywords: FltApiRef_p_to_z_54f9b03b-9c74-4403-9189-90eb8c93cb3e.xml, FltSetVolumeInformation, FltSetVolumeInformation function [Installable File System Drivers], fltkernel/FltSetVolumeInformation, ifsk.fltsetvolumeinformation
@@ -50,29 +49,29 @@ api_name:
 
 ## -parameters
 
-### -param Instance 
+### -param Instance [in]
 
-[in]
+
 Opaque instance pointer for a minifilter driver instance that is attached to the volume.
 
-### -param Iosb 
+### -param Iosb [out]
 
-[out]
+
 Pointer to an IO_STATUS_BLOCK structure that receives the final completion status and information about the operation.
 
-### -param FsInformation 
+### -param FsInformation [out]
 
-[out]
+
 Pointer to a caller-allocated buffer containing the values to be set for the volume. The structure of the information contained in the buffer is defined by the <i>FsInformationClass</i> parameter.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Size in bytes of the buffer that <i>FsInformation </i>points to. The caller should set this parameter according to the given <i>FsInformationClass</i>. For example, if the value of <i>FsInformationClass</i> is FileFsControlInformation, <i>Length</i> must be at least <b>sizeof(</b>FILE_FS_CONTROL_INFORMATION<b>)</b>.
 
-### -param FsInformationClass 
+### -param FsInformationClass [in]
 
-[in]
+
 Type of information to be set for the volume. One of the following. 
 
 <table>

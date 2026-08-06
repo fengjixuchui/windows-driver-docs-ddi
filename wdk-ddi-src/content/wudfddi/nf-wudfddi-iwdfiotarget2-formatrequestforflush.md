@@ -4,7 +4,6 @@ title: IWDFIoTarget2::FormatRequestForFlush (wudfddi.h)
 description: The FormatRequestForFlush method builds an I/O request for a flush operation but does not send the request to an I/O target.
 old-location: wdf\iwdfiotarget2_formatrequestforflush.htm
 tech.root: wdf
-ms.assetid: 28509e28-0e81-4531-947c-9ce452564682
 ms.date: 02/26/2018
 keywords: ["IWDFIoTarget2::FormatRequestForFlush"]
 ms.keywords: FormatRequestForFlush, FormatRequestForFlush method, FormatRequestForFlush method,IWDFIoTarget2 interface, IWDFIoTarget2 interface,FormatRequestForFlush method, IWDFIoTarget2.FormatRequestForFlush, IWDFIoTarget2::FormatRequestForFlush, UMDFIoTargetObjectRef_985162ca-fae2-408e-b4df-59add8e4a760.xml, umdf.iwdfiotarget2_formatrequestforflush, wdf.iwdfiotarget2_formatrequestforflush, wudfddi/IWDFIoTarget2::FormatRequestForFlush
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoTarget2.FormatRequestForFlush
+ - IWDFIoTarget2::FormatRequestForFlush
 ---
 
 # IWDFIoTarget2::FormatRequestForFlush
@@ -52,14 +51,14 @@ The <b>FormatRequestForFlush</b> method builds an I/O request for a flush operat
 
 ## -parameters
 
-### -param pRequest 
+### -param pRequest [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest">IWDFIoRequest</a> interface of the request object that represents the I/O request.
 
-### -param pFile 
+### -param pFile [in, optional]
 
-[in, optional]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile">IWDFFile</a> interface of the file object that is associated with the I/O request. This parameter is optional and can be <b>NULL</b>, but it is required for the default I/O target.
 
 ## -returns
@@ -149,7 +148,6 @@ CMyQueue::OnDefaultIoHandler(
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iqueuecallbackdefaultiohandler-ondefaultiohandler">IQueueCallbackDefaultIoHandler::OnDefaultIoHandler</a>
@@ -161,3 +159,4 @@ CMyQueue::OnDefaultIoHandler(
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotarget2">IWDFIoTarget2</a>
+

@@ -4,7 +4,6 @@ title: PROTOCOL_CL_INCOMING_DROP_PARTY (ndis.h)
 description: The ProtocolClIncomingDropParty function is used by connection-oriented NDIS clients that set up multipoint connections.
 old-location: netvista\protocolclincomingdropparty.htm
 tech.root: netvista
-ms.assetid: 3815ca4b-f4bc-4de9-a28a-5d3ee20bcdd8
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CL_INCOMING_DROP_PARTY callback function"]
 ms.keywords: PROTOCOL_CL_INCOMING_DROP_PARTY, PROTOCOL_CL_INCOMING_DROP_PARTY callback, ProtocolClIncomingDropParty, ProtocolClIncomingDropParty callback function [Network Drivers Starting with Windows Vista], condis_client_ref_ac4b9f43-23f6-4300-8110-1589cecffe21.xml, ndis/ProtocolClIncomingDropParty, netvista.protocolclincomingdropparty
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolClIncomingDropParty
+ - PROTOCOL_CL_INCOMING_DROP_PARTY
 ---
 
 # PROTOCOL_CL_INCOMING_DROP_PARTY callback function
@@ -56,25 +55,25 @@ The
 
 ## -parameters
 
-### -param DropStatus 
+### -param DropStatus [in]
 
-[in]
+
 Indicates the reason for the party to be dropped. Usually, this is NDIS_STATUS_SUCCESS if the
      party on the remote note initiated a close of its connection, but it could be any CM-determined status
      if the call manager initiated this drop-party operation due to network problems that it
      discovered.
 
-### -param ProtocolPartyContext 
+### -param ProtocolPartyContext [in]
 
-[in]
+
 Specifies the handle to the client's per-party context area for the party to be dropped. The
      client originally supplied this handle to NDIS when it called 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscladdparty">NdisClAddParty</a> or 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclmakecall">NdisClMakeCall</a>.
 
-### -param CloseData 
+### -param CloseData [in]
 
-[in]
+
 Pointer to a buffer containing a protocol-specific close message, possibly one supplied by the
      remote client that the call manager received over the network, or this parameter can be <b>NULL</b>. 
      
@@ -85,9 +84,9 @@ When
      define a structure to pass additional diagnostic information to its clients on drop-party operations
      caused by problems on the network.
 
-### -param Size 
+### -param Size [in]
 
-[in]
+
 Specifies the length, in bytes, of the buffer at 
      <i>CloseData</i>, zero if 
      <i>CloseData</i> is <b>NULL</b>.
@@ -190,3 +189,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmdispatchincomingdropparty">
    NdisMCmDispatchIncomingDropParty</a>
+

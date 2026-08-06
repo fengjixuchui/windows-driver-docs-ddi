@@ -4,7 +4,6 @@ title: PCI_MSIX_SET_ENTRY (wdm.h)
 description: The SetTableEntry routine sets the message ID for a table entry in the MSI-X hardware interrupt table.
 old-location: kernel\settableentry.htm
 tech.root: kernel
-ms.assetid: A8F2A43B-CAEF-4EE6-AB3F-1DF5A9D3F7A5
 ms.date: 04/30/2018
 keywords: ["PCI_MSIX_SET_ENTRY callback function"]
 ms.keywords: PCI_MSIX_SET_ENTRY, SetTableEntry, SetTableEntry routine [Kernel-Mode Driver Architecture], drvr_interface_93258cbb-54ac-4992-9fed-57248d997245.xml, kernel.msixsettableentry, kernel.settableentry, wdm/SetTableEntry
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - SetTableEntry
+ - PCI_MSIX_SET_ENTRY
 ---
 
 # PCI_MSIX_SET_ENTRY callback function
@@ -50,19 +49,19 @@ The <i>SetTableEntry</i> routine sets the message ID for a table entry in the MS
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to interface-specific context information.  The caller passes the value that is passed as the <b>Context</b> member of the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_pci_msix_table_config_interface">PCI_MSIX_TABLE_CONFIG_INTERFACE</a> structure for the interface.
 
-### -param TableEntry 
+### -param TableEntry [in]
 
-[in]
+
 The index of the table entry in the MSI-X hardware interrupt table.
 
-### -param MessageNumber 
+### -param MessageNumber [in]
 
-[in]
+
 The message ID for the interrupt.  This value is also the index for the interrupt's entry in the <b>MessageInfo</b> member of the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_interrupt_message_info">IO_INTERRUPT_MESSAGE_INFO</a> structure that describes the driver's message-signaled interrupts.  The <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex">IoConnectInterruptEx</a> function supplies a pointer to this structure.
 
 ## -returns
@@ -113,3 +112,4 @@ By default, the operating system assigns the index of the table entry as the mes
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_pci_msix_table_config_interface">PCI_MSIX_TABLE_CONFIG_INTERFACE</a>
+

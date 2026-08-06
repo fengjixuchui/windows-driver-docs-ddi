@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient.ConnectProcessServer
 title: IDebugClient::ConnectProcessServer (dbgeng.h)
-description: The ConnectProcessServer methods connect to a process server.
+description: The ConnectProcessServer methods connect to a process server. This method belongs to the IDebugClient interface.
 old-location: debugger\connectprocessserver.htm
 tech.root: debugger
-ms.assetid: c5fd12eb-0779-400f-a271-84b7b379529f
 ms.date: 05/03/2018
 keywords: ["IDebugClient::ConnectProcessServer"]
 ms.keywords: ConnectProcessServer, ConnectProcessServer method [Windows Debugging], ConnectProcessServer method [Windows Debugging],IDebugClient interface, ConnectProcessServer method [Windows Debugging],IDebugClient2 interface, ConnectProcessServer method [Windows Debugging],IDebugClient3 interface, ConnectProcessServer method [Windows Debugging],IDebugClient4 interface, ConnectProcessServer method [Windows Debugging],IDebugClient5 interface, IDebugClient interface [Windows Debugging],ConnectProcessServer method, IDebugClient.ConnectProcessServer, IDebugClient2 interface [Windows Debugging],ConnectProcessServer method, IDebugClient2::ConnectProcessServer, IDebugClient3 interface [Windows Debugging],ConnectProcessServer method, IDebugClient3::ConnectProcessServer, IDebugClient4 interface [Windows Debugging],ConnectProcessServer method, IDebugClient4::ConnectProcessServer, IDebugClient5 interface [Windows Debugging],ConnectProcessServer method, IDebugClient5::ConnectProcessServer, IDebugClient::ConnectProcessServer, IDebugClient_519f5e11-6f3b-4469-8352-e6cd7c1ed384.xml, dbgeng/IDebugClient2::ConnectProcessServer, dbgeng/IDebugClient3::ConnectProcessServer, dbgeng/IDebugClient4::ConnectProcessServer, dbgeng/IDebugClient5::ConnectProcessServer, dbgeng/IDebugClient::ConnectProcessServer, debugger.connectprocessserver
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.ConnectProcessServer
- - IDebugClient2.ConnectProcessServer
- - IDebugClient3.ConnectProcessServer
- - IDebugClient4.ConnectProcessServer
- - IDebugClient5.ConnectProcessServer
+ - IDebugClient::ConnectProcessServer
 ---
 
 # IDebugClient::ConnectProcessServer
@@ -54,14 +49,14 @@ The <b>ConnectProcessServer</b>  methods connect to a <a href="/windows-hardware
 
 ## -parameters
 
-### -param RemoteOptions 
+### -param RemoteOptions [in]
 
-[in]
+
 Specifies how the <a href="/windows-hardware/drivers/debugger/d">debugger engine</a> will connect with the process server.  These are the same options passed to the <b>-premote</b> option on the WinDbg and CDB command lines.  For details on the syntax of this string, see <a href="/windows-hardware/drivers/debugger/activating-a-smart-client">Activating a Smart Client</a>.
 
-### -param Server 
+### -param Server [out]
 
-[out]
+
 Receives a handle for the process server.  This handle is used when creating or attaching to processes by using the process server.
 
 ## -returns
@@ -145,3 +140,4 @@ For more information about process servers and remote debugging, see <a href="/w
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-startprocessserver">StartProcessServer</a>
+

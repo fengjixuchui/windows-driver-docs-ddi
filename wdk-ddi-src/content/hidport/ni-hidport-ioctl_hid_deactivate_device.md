@@ -4,7 +4,6 @@ title: IOCTL_HID_DEACTIVATE_DEVICE (hidport.h)
 description: The IOCTL_HID_DEACTIVATE_DEVICE request deactivates a HIDClass device, which causes it to stop operations and terminate all outstanding I/O requests.
 old-location: hid\ioctl_hid_deactivate_device.htm
 tech.root: hid
-ms.assetid: 87af450c-0f62-481d-8c7d-24c77f221fc5
 ms.date: 04/30/2018
 keywords: ["IOCTL_HID_DEACTIVATE_DEVICE IOCTL"]
 ms.keywords: IOCTL_HID_DEACTIVATE_DEVICE, IOCTL_HID_DEACTIVATE_DEVICE control, IOCTL_HID_DEACTIVATE_DEVICE control code [Human Input Devices], hid.ioctl_hid_deactivate_device, hidioreq_35c75bec-696b-4043-bdb4-2425ff0ad6db.xml, hidport/IOCTL_HID_DEACTIVATE_DEVICE
@@ -52,6 +51,8 @@ For general information about HIDClass devices, see <a href="/windows-hardware/d
 
 ## -ioctlparameters
 
+### -ioctl-major-code
+
 ### -input-buffer
 
 <b>Parameters.DeviceIoControl.Type3InputBuffer</b> contains the collection identifier, as a ULONG value, of the collection that is ceasing operations.
@@ -90,4 +91,4 @@ HID minidrivers that call other drivers with this IRP to carry out the I/O to th
 
 ## -see-also
 
-<a href="/previous-versions/hh439611(v=vs.85)">IOCTL_HID_ACTIVATE_DEVICE</a>
+<a href="/windows-hardware/drivers/ddi/hidport/ni-hidport-ioctl_hid_activate_device">IOCTL_HID_ACTIVATE_DEVICE</a>

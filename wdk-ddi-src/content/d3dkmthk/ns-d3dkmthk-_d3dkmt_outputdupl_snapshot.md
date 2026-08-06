@@ -1,10 +1,8 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_OUTPUTDUPL_SNAPSHOT
-title: _D3DKMT_OUTPUTDUPL_SNAPSHOT (d3dkmthk.h)
-description: Provides information on the current processes in which output duplication is occurring.
-old-location: display\d3dkmt_outputdupl_snapshot.htm
-ms.assetid: bec6a398-34e8-4c03-ac15-c3f00645eac7
-ms.date: 05/10/2018
+title: D3DKMT_OUTPUTDUPL_SNAPSHOT (d3dkmthk.h)
+description: Learn more about the D3DKMT_OUTPUTDUPL_SNAPSHOT structure.
+ms.date: 10/04/2023
 keywords: ["D3DKMT_OUTPUTDUPL_SNAPSHOT structure"]
 ms.keywords: D3DKMT_OUTPUTDUPL_SNAPSHOT, D3DKMT_OUTPUTDUPL_SNAPSHOT structure [Display Devices], _D3DKMT_OUTPUTDUPL_SNAPSHOT, d3dkmthk/D3DKMT_OUTPUTDUPL_SNAPSHOT, display.d3dkmt_outputdupl_snapshot
 req.header: d3dkmthk.h
@@ -40,15 +38,15 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
+ - _D3DKMT_OUTPUTDUPL_SNAPSHOT
  - D3DKMT_OUTPUTDUPL_SNAPSHOT
 ---
 
-# _D3DKMT_OUTPUTDUPL_SNAPSHOT structure
-
+# D3DKMT_OUTPUTDUPL_SNAPSHOT structure
 
 ## -description
 
-Provides information on the current processes in which output duplication is occurring.
+The **D3DKMT_OUTPUTDUPL_SNAPSHOT** structure provides information on the current processes in which output duplication is occurring.
 
 ## -struct-fields
 
@@ -58,7 +56,7 @@ Provides information on the current processes in which output duplication is occ
 
 ### -field SessionProcessCount
 
-[out] The number of processes in this session that are currently duplicating output. The value of <b>NumOutputDuplContexts</b> specifies the maximum possible number of processes.
+[out] The number of processes in this session that are currently duplicating output. The value of **NumOutputDuplContexts** specifies the maximum possible number of processes.
 
 ### -field SessionActiveConnectionsCount
 
@@ -72,7 +70,10 @@ Provides information on the current processes in which output duplication is occ
 
 [out] The number of contexts in which output duplication is occurring.
 
-### -field OutputDuplDebugInfos
+### -field Padding
+
+Padding.
+
+### -field OutputDuplDebugInfos[0]
 
 Reserved for system use. Set to zero.
-

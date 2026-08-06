@@ -4,7 +4,6 @@ title: UdecxUsbDevicePlugOutAndDelete function (udecxusbdevice.h)
 description: Disconnects the virtual USB device.
 old-location: buses\udecxusbdeviceplugoutanddelete.htm
 tech.root: usbref
-ms.assetid: 27816655-1FE9-44A0-81BB-59808FE6F064
 ms.date: 05/07/2018
 keywords: ["UdecxUsbDevicePlugOutAndDelete function"]
 ms.keywords: UdecxUsbDevicePlugOutAndDelete, UdecxUsbDevicePlugOutAndDelete function [Buses], buses.udecxusbdeviceplugoutanddelete, udecxusbdevice/UdecxUsbDevicePlugOutAndDelete
@@ -51,9 +50,9 @@ Disconnects  the virtual USB device.
 
 ## -parameters
 
-### -param UdecxUsbDevice 
+### -param UdecxUsbDevice [in]
 
-[in]
+
 A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.
 
 ## -returns

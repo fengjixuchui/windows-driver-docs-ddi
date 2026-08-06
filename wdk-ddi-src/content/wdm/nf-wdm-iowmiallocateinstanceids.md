@@ -4,7 +4,6 @@ title: IoWMIAllocateInstanceIds function (wdm.h)
 description: The IoWMIAllocateInstanceIds routine allocates one or more instance IDs that are unique to the GUID.
 old-location: kernel\iowmiallocateinstanceids.htm
 tech.root: kernel
-ms.assetid: c382689e-907c-473c-9ab1-da963d7f3ba3
 ms.date: 04/30/2018
 keywords: ["IoWMIAllocateInstanceIds function"]
 ms.keywords: IoWMIAllocateInstanceIds, IoWMIAllocateInstanceIds routine [Kernel-Mode Driver Architecture], k104_52b2c9a6-e9c2-4c9f-b6f1-43ec8c72056a.xml, kernel.iowmiallocateinstanceids, wdm/IoWMIAllocateInstanceIds
@@ -50,19 +49,19 @@ The <b>IoWMIAllocateInstanceIds</b> routine allocates one or more instance IDs t
 
 ## -parameters
 
-### -param Guid 
+### -param Guid [in]
 
-[in]
+
 Pointer to the GUID for which to generate instance identifiers.
 
-### -param InstanceCount 
+### -param InstanceCount [in]
 
-[in]
+
 Specifies how many instance identifiers should be provided.
 
-### -param FirstInstanceId 
+### -param FirstInstanceId [out]
 
-[out]
+
 Pointer to the first instance identifier that the driver should use.
 
 ## -returns
@@ -111,8 +110,8 @@ Indicates that insufficient resources were available to provide the caller with 
 
 ## -remarks
 
-If greater than one instance was requested in <i>InstanceCount</i> and the routine completed successfully, <i>FirstInstanceId</i> points to the first instance that the caller should use. For each instance requested beyond one, the caller should increment the value returned in *<i>FirstInstanceId</i>. For example, if the caller requested six instances and one was returned as the value of <i>FirstInstanceId</i>, the caller should use the values 1-6 as his unique instance identifiers.
+If greater than one instance was requested in <i>InstanceCount</i> and the routine completed successfully, <i>FirstInstanceId</i> points to the first instance that the caller should use. For each instance requested beyond one, the caller should increment the value returned in **FirstInstanceId*. For example, if the caller requested six instances and one was returned as the value of <i>FirstInstanceId</i>, the caller should use the values 1-6 as his unique instance identifiers.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmisuggestinstancename">IoWmiSuggestInstanceName</a>
+<a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmisuggestinstancename">IoWMISuggestInstanceName</a>

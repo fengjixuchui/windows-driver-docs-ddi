@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl2.GetNumberEventFilters
 title: IDebugControl2::GetNumberEventFilters (dbgeng.h)
-description: The GetNumberEventFilters method returns the number of event filters currently used by the engine.
+description: Learn about the GetNumberEventFilters method, which returns the number of event filters currently used by the engine.
 old-location: debugger\getnumbereventfilters.htm
 tech.root: debugger
-ms.assetid: 6bb80c64-bb2e-4388-b1a8-479bdaa8b635
 ms.date: 05/03/2018
 keywords: ["IDebugControl2::GetNumberEventFilters"]
 ms.keywords: GetNumberEventFilters, GetNumberEventFilters method [Windows Debugging], GetNumberEventFilters method [Windows Debugging],IDebugControl interface, GetNumberEventFilters method [Windows Debugging],IDebugControl2 interface, GetNumberEventFilters method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],GetNumberEventFilters method, IDebugControl2 interface [Windows Debugging],GetNumberEventFilters method, IDebugControl2.GetNumberEventFilters, IDebugControl2::GetNumberEventFilters, IDebugControl3 interface [Windows Debugging],GetNumberEventFilters method, IDebugControl3::GetNumberEventFilters, IDebugControl::GetNumberEventFilters, IDebugControl_de1a980a-b0cb-486b-a292-1a9463a231c6.xml, dbgeng/IDebugControl2::GetNumberEventFilters, dbgeng/IDebugControl3::GetNumberEventFilters, dbgeng/IDebugControl::GetNumberEventFilters, debugger.getnumbereventfilters
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.GetNumberEventFilters
- - IDebugControl2.GetNumberEventFilters
- - IDebugControl3.GetNumberEventFilters
+ - IDebugControl2::GetNumberEventFilters
 ---
 
 # IDebugControl2::GetNumberEventFilters
@@ -52,19 +49,19 @@ The <b>GetNumberEventFilters</b> method returns the number of <a href="/windows-
 
 ## -parameters
 
-### -param SpecificEvents 
+### -param SpecificEvents [out]
 
-[out]
+
 Receives the number of <a href="/windows-hardware/drivers/debugger/events">events</a> that can be controlled using the specific event filters.  These events are enumerated using some of the <a href="/windows-hardware/drivers/debugger/debug-filter-xxx">DEBUG_FILTER_XXX</a> constants.
 
-### -param SpecificExceptions 
+### -param SpecificExceptions [out]
 
-[out]
+
 Receives the number of <a href="/windows-hardware/drivers/">exceptions</a> that can be controlled using the specific exception filters.  The first specific exception filter is the default exception filter.  The exceptions controlled by the other specific exception filters will always have their own filter and will not inherit their behavior from the default specific exception filter.  These exception filters are identified by their exception code.  See <a href="/windows-hardware/drivers/debugger/specific-exceptions">Specific Exceptions</a> for a list of the specific exception filters.
 
-### -param ArbitraryExceptions 
+### -param ArbitraryExceptions [out]
 
-[out]
+
 Receives the number of arbitrary exception filters currently used by the engine.  These exception filters are identified by their exception code.
 
 ## -returns
@@ -92,3 +89,4 @@ The method was successful.
 ## -remarks
 
 For more information about event filters, see <a href="/windows-hardware/drivers/debugger/event-filters">Event Filters</a>.
+

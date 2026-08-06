@@ -4,7 +4,6 @@ title: _DXVAHDDDI_STREAM_STATE_ROTATION_DATA (d3dumddi.h)
 description: Describes stream-state data that specifies the clockwise rotation of the display output surface.
 old-location: display\dxvahdddi_stream_state_rotation_data.htm
 tech.root: display
-ms.assetid: 1c874df6-6b47-4501-9eaf-7c07f0172580
 ms.date: 05/10/2018
 keywords: ["DXVAHDDDI_STREAM_STATE_ROTATION_DATA structure"]
 ms.keywords: DXVAHDDDI_STREAM_STATE_ROTATION_DATA, DXVAHDDDI_STREAM_STATE_ROTATION_DATA structure [Display Devices], _DXVAHDDDI_STREAM_STATE_ROTATION_DATA, d3dumddi/DXVAHDDDI_STREAM_STATE_ROTATION_DATA, display.dxvahdddi_stream_state_rotation_data
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dumddi.h
 api_name:
+ - _DXVAHDDDI_STREAM_STATE_ROTATION_DATA
  - DXVAHDDDI_STREAM_STATE_ROTATION_DATA
 ---
 
@@ -63,3 +63,4 @@ The clockwise degrees of rotation as specified by a <a href="/windows-hardware/d
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvahdddi_rotation">DXVAHDDDI_ROTATION</a>
+

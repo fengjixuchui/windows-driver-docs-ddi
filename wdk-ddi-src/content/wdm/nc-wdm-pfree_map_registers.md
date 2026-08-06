@@ -4,7 +4,6 @@ title: PFREE_MAP_REGISTERS (wdm.h)
 description: The FreeMapRegisters routine releases a set of map registers that were saved from a call to AllocateAdapterChannel.
 old-location: kernel\freemapregisters.htm
 tech.root: kernel
-ms.assetid: 0326229f-cf02-4368-bc32-7fbed118714b
 ms.date: 04/30/2018
 keywords: ["PFREE_MAP_REGISTERS callback function"]
 ms.keywords: FreeMapRegisters, FreeMapRegisters callback function [Kernel-Mode Driver Architecture], PFREE_MAP_REGISTERS, PFREE_MAP_REGISTERS callback, kdma_039f59c4-101e-40c2-bf2e-a0faa7c11032.xml, kernel.freemapregisters, wdm/FreeMapRegisters
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdm.h
 api_name:
- - FreeMapRegisters
+ - PFREE_MAP_REGISTERS
 ---
 
 # PFREE_MAP_REGISTERS callback function
@@ -50,19 +49,19 @@ The <b>FreeMapRegisters</b> routine releases a set of map registers that were sa
 
 ## -parameters
 
-### -param DmaAdapter 
+### -param DmaAdapter [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_adapter">DMA_ADAPTER</a> structure returned by <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter">IoGetDmaAdapter</a> that represents the bus-master adapter or DMA controller.
 
-### -param MapRegisterBase 
+### -param MapRegisterBase [in]
 
-[in]
+
 Specifies the map registers allocated for the DMA operation.  The system passes this value  to the driver's <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-driver_control">AdapterControl</a> routine.
 
-### -param NumberOfMapRegisters 
+### -param NumberOfMapRegisters [in]
 
-[in]
+
 Specifies the number of map registers to be released. This value must match the number specified in an earlier call to <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pallocate_adapter_channel">AllocateAdapterChannel</a>.
 
 ## -remarks
@@ -93,3 +92,4 @@ When the driver of a bus-master device has completed the current packet-based DM
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pmap_transfer">MapTransfer</a>
+

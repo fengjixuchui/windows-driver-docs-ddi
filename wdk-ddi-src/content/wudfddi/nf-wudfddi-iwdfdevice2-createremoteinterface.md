@@ -4,7 +4,6 @@ title: IWDFDevice2::CreateRemoteInterface (wudfddi.h)
 description: The CreateRemoteInterface method creates a remote interface object that represents a device interface.
 old-location: wdf\iwdfdevice2_createremoteinterface.htm
 tech.root: wdf
-ms.assetid: fb2def4b-c027-465d-b734-20b4b83a6308
 ms.date: 02/26/2018
 keywords: ["IWDFDevice2::CreateRemoteInterface"]
 ms.keywords: CreateRemoteInterface, CreateRemoteInterface method, CreateRemoteInterface method,IWDFDevice2 interface, IWDFDevice2 interface,CreateRemoteInterface method, IWDFDevice2.CreateRemoteInterface, IWDFDevice2::CreateRemoteInterface, UMDFDeviceObjectRef_772989d9-ec18-4672-abea-ee4abd00b6ee.xml, umdf.iwdfdevice2_createremoteinterface, wdf.iwdfdevice2_createremoteinterface, wudfddi/IWDFDevice2::CreateRemoteInterface
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice2.CreateRemoteInterface
+ - IWDFDevice2::CreateRemoteInterface
 ---
 
 # IWDFDevice2::CreateRemoteInterface
@@ -52,19 +51,19 @@ The <b>CreateRemoteInterface</b> method creates a remote interface object that r
 
 ## -parameters
 
-### -param pRemoteInterfaceInit 
+### -param pRemoteInterfaceInit [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfremoteinterfaceinitialize">IWDFRemoteInterfaceInitialize</a> interface that the driver's <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipnpcallbackremoteinterfacenotification-onremoteinterfacearrival">IPnpCallbackRemoteInterfaceNotification::OnRemoteInterfaceArrival</a> callback function received.
 
-### -param pCallbackInterface 
+### -param pCallbackInterface [in, optional]
 
-[in, optional]
+
 A pointer to an optional, driver-supplied callback interface. The <b>IUnknown::QueryInterface</b> method of this interface must return a pointer to the driver's <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iremoteinterfacecallbackevent">IRemoteInterfaceCallbackEvent</a> and <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iremoteinterfacecallbackremoval">IRemoteInterfaceCallbackRemoval</a> interfaces, if the driver supports those interfaces. This parameter is optional and can be <b>NULL</b>.
 
-### -param ppRemoteInterface 
+### -param ppRemoteInterface [out]
 
-[out]
+
 A pointer to a driver-supplied location that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfremoteinterface">IWDFRemoteInterface</a> interface of the new remote interface object.
 
 ## -returns
@@ -145,7 +144,6 @@ CMyDevice::OnRemoteInterfaceArrival(
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice2">IWDFDevice2</a>
@@ -157,3 +155,4 @@ CMyDevice::OnRemoteInterfaceArrival(
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfremotetarget-openremoteinterface">IWDFRemoteTarget::OpenRemoteInterface</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols2.AppendSourcePath
 title: IDebugSymbols2::AppendSourcePath (dbgeng.h)
-description: The AppendSourcePath method appends directories to the source path.
+description: The AppendSourcePath method appends directories to the source path. This method belongs to the IDebugSymbols2 interface.
 old-location: debugger\appendsourcepath.htm
 tech.root: debugger
-ms.assetid: b82c2206-b81d-4ebf-a8fd-c08d7f57ffc9
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols2::AppendSourcePath"]
 ms.keywords: AppendSourcePath, AppendSourcePath method [Windows Debugging], AppendSourcePath method [Windows Debugging],IDebugSymbols interface, AppendSourcePath method [Windows Debugging],IDebugSymbols2 interface, AppendSourcePath method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],AppendSourcePath method, IDebugSymbols2 interface [Windows Debugging],AppendSourcePath method, IDebugSymbols2.AppendSourcePath, IDebugSymbols2::AppendSourcePath, IDebugSymbols3 interface [Windows Debugging],AppendSourcePath method, IDebugSymbols3::AppendSourcePath, IDebugSymbols::AppendSourcePath, IDebugSymbols_8e47c1ea-e190-4f34-a952-1dcf4ef9e971.xml, dbgeng/IDebugSymbols2::AppendSourcePath, dbgeng/IDebugSymbols3::AppendSourcePath, dbgeng/IDebugSymbols::AppendSourcePath, debugger.appendsourcepath
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSymbols.AppendSourcePath
- - IDebugSymbols2.AppendSourcePath
- - IDebugSymbols3.AppendSourcePath
+ - IDebugSymbols2::AppendSourcePath
 ---
 
 # IDebugSymbols2::AppendSourcePath
@@ -52,9 +49,9 @@ The <b>AppendSourcePath</b>  method appends directories to the source path.
 
 ## -parameters
 
-### -param Addition 
+### -param Addition [in]
 
-[in]
+
 Specifies the directories to append to the source path.  This is a string that contains source path elements separated by semicolons (;).  Each source path element can specify either a directory or a source server.
 
 ## -returns
@@ -109,3 +106,4 @@ For more information about manipulating the source path, see <a href="/windows-h
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-setsourcepath">SetSourcePath</a>
+

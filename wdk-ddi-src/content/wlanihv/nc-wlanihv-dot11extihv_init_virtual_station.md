@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_INIT_VIRTUAL_STATION
 title: DOT11EXTIHV_INIT_VIRTUAL_STATION (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_INIT_VIRTUAL_STATION callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvinitvirtualstation.htm
 tech.root: netvista
-ms.assetid: 1e18515c-2f24-4690-b5fd-0915ef30307b
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_INIT_VIRTUAL_STATION callback"]
 ms.keywords: DOT11EXTIHV_INIT_VIRTUAL_STATION, Dot11ExtIhvInitVirtualStation, Dot11ExtIhvInitVirtualStation callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_1daef8e4-6444-447a-b7a7-0189715a6ab9.xml, netvista.dot11extihvinitvirtualstation, wlanihv/Dot11ExtIhvInitVirtualStation
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_INIT_VIRTUAL_STATION
  - wlanihv/DOT11EXTIHV_INIT_VIRTUAL_STATION
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtIhvInitVirtualStation
+ - DOT11EXTIHV_INIT_VIRTUAL_STATION
 ---
 
 # DOT11EXTIHV_INIT_VIRTUAL_STATION callback
@@ -53,9 +51,9 @@ api_name:
 
 ## -parameters
 
-### -param pDot11ExtVSAPI 
+### -param pDot11ExtVSAPI [in]
 
-[in]
+
 A pointer to a
      <a href="..\wlanihv\ns-wlanihv-_dot11ext_virtual_station_apis.md">
      DOT11EXT_VIRTUAL_STATION_APIS</a> structure, which contains the addresses of the IHV Extensibility
@@ -139,3 +137,4 @@ For more information about
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_get_version_info.md">Dot11ExtIhvGetVersionInfo</a>
+

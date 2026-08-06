@@ -1,10 +1,9 @@
 ---
 UID: NS:nfccx._NFCCX_DRIVER_GLOBALS
 title: _NFCCX_DRIVER_GLOBALS (nfccx.h)
-description: "."
+description: The _NFCCX_DRIVER_GLOBALS structure contains global values for the Near Field Communications (NFC) CX driver.
 old-location: nfpdrivers\nfccx_driver_globals.htm
 tech.root: nfpdrivers
-ms.assetid: 3B84B227-7155-4FA2-A224-1317D103F5C3
 ms.date: 02/15/2018
 keywords: ["NFCCX_DRIVER_GLOBALS structure"]
 ms.keywords: "*PNFCCX_DRIVER_GLOBALS, NFCCX_DRIVER_GLOBALS, NFCCX_DRIVER_GLOBALS structure [Near-Field Proximity Drivers], PNFCCX_DRIVER_GLOBALS, PNFCCX_DRIVER_GLOBALS structure pointer [Near-Field Proximity Drivers], _NFCCX_DRIVER_GLOBALS, nfccx/NFCCX_DRIVER_GLOBALS, nfccx/PNFCCX_DRIVER_GLOBALS, nfpdrivers.nfccx_driver_globals"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - nfccx.h
 api_name:
+ - _NFCCX_DRIVER_GLOBALS
+ - PNFCCX_DRIVER_GLOBALS
  - NFCCX_DRIVER_GLOBALS
 ---
 
@@ -61,3 +62,4 @@ api_name:
 
 
 <a href="/windows-hardware/drivers/nfc/">Near field communication (NFC) design guide</a>
+

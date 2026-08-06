@@ -4,7 +4,6 @@ title: _USB_HUB_TYPE (usbioctl.h)
 description: The USB_HUB_TYPE enumeration defines constants that indicate the type of USB hub. The hub type is retrieved by the IOCTL_USB_GET_HUB_INFORMATION_EX I/O control request.
 old-location: buses\usb_hub_type.htm
 tech.root: usbref
-ms.assetid: F7516B20-B30F-47BE-BBF3-AB5758D5CF73
 ms.date: 05/07/2018
 keywords: ["USB_HUB_TYPE enumeration"]
 ms.keywords: USB_HUB_TYPE, USB_HUB_TYPE enumeration [Buses], Usb20Hub, Usb30Hub, UsbRootHub, _USB_HUB_TYPE, buses.usb_hub_type, usbioctl/USB_HUB_TYPE, usbioctl/Usb20Hub, usbioctl/Usb30Hub, usbioctl/UsbRootHub
@@ -40,19 +39,29 @@ api_type:
 api_location:
  - usbioctl.h
 api_name:
+ - _USB_HUB_TYPE
  - USB_HUB_TYPE
 ---
 
 # _USB_HUB_TYPE enumeration
 
-
 ## -description
 
-The <b>USB_HUB_TYPE</b> enumeration defines constants that indicate the type of USB hub.
+The **USB_HUB_TYPE** enumeration defines constants that indicate the type of USB hub.
 
-The hub type is retrieved by the <a href="/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_get_hub_information_ex">IOCTL_USB_GET_HUB_INFORMATION_EX</a> I/O control request.
+The hub type is retrieved by the [IOCTL_USB_GET_HUB_INFORMATION_EX](./ni-usbioctl-ioctl_usb_get_hub_information_ex.md) I/O control request.
 
-The request retrieves the hub descriptor associated with the specified hub in the <a href="/windows-hardware/drivers/ddi/usbioctl/ns-usbioctl-_usb_hub_information_ex">USB_HUB_INFORMATION_EX</a> structure. The   <b>HubType</b> member contains a <b>USB_HUB_TYPE</b> enumerator that the application can use to evaluate the type of hub descriptor retrieved by the request.
+The request retrieves the hub descriptor associated with the specified hub in the [USB_HUB_INFORMATION_EX](./ns-usbioctl-_usb_hub_information_ex.md) structure. The **HubType** member contains a **USB_HUB_TYPE** enumerator that the application can use to evaluate the type of hub descriptor retrieved by the request.
+
+## -syntax
+
+```cpp
+typedef enum _USB_HUB_TYPE {
+  UsbRootHub = 1,
+  Usb20Hub = 2,
+  Usb30Hub = 3
+} USB_HUB_TYPE;
+```
 
 ## -enum-fields
 
@@ -70,12 +79,8 @@ Indicates that the retrieved hub descriptor is defined in USB 3.0 specification.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_usb_get_hub_information_ex">IOCTL_USB_GET_HUB_INFORMATION_EX</a>
+[IOCTL_USB_GET_HUB_INFORMATION_EX](./ni-usbioctl-ioctl_usb_get_hub_information_ex.md)
 
+[USB Constants and Enumerations](../_usbref/index.md#enumerations)
 
-
-<a href="/windows-hardware/drivers/ddi/_usbref/#enumerations">USB Constants and Enumerations</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/usbioctl/ns-usbioctl-_usb_hub_information_ex">USB_HUB_INFORMATION_EX</a>
+[USB_HUB_INFORMATION_EX](./ns-usbioctl-_usb_hub_information_ex.md)

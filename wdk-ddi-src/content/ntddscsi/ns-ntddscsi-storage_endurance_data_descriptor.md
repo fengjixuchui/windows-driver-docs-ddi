@@ -3,7 +3,6 @@ UID: NS:ntddscsi._STORAGE_ENDURANCE_DATA_DESCRIPTOR
 title: STORAGE_ENDURANCE_DATA_DESCRIPTOR
 description: A miniport uses STORAGE_ENDURANCE_DATA_DESCRIPTOR to report a device's endurance information to the storage port driver.
 tech.root: storage
-ms.assetid: b28ee9f0-f089-4b13-a9b7-5c2521dc8105
 ms.date: 03/18/2019
 keywords: ["STORAGE_ENDURANCE_DATA_DESCRIPTOR structure"]
 ms.keywords: STORAGE_ENDURANCE_DATA_DESCRIPTOR, STORAGE_ENDURANCE_DATA_DESCRIPTOR, *PSTORAGE_ENDURANCE_DATA_DESCRIPTOR, IOCTL_MINIPORT_ENDURANCE_INFO, IOCTL_SCSI_MINIPORT, STORAGE_ENDURANCE_INFO, STORAGE_HW_ENDURANCE_DATA_DESCRIPTOR,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddscsi.h
 api_name:
+ - _STORAGE_ENDURANCE_DATA_DESCRIPTOR
+ - PSTORAGE_ENDURANCE_DATA_DESCRIPTOR
  - STORAGE_ENDURANCE_DATA_DESCRIPTOR
-product:
- - Windows
 ---
 
 # STORAGE_ENDURANCE_DATA_DESCRIPTOR structure
@@ -81,3 +80,4 @@ The storage port driver uses [STORAGE_HW_ENDURANCE_DATA_DESCRIPTOR](../ntddstor/
 [STORAGE_ENDURANCE_INFO](ns-ntddscsi-storage_endurance_info.md)
 
 [STORAGE_HW_ENDURANCE_DATA_DESCRIPTOR](../ntddstor/ns-ntddstor-storage_hw_endurance_data_descriptor.md)
+

@@ -4,14 +4,13 @@ title: StorPortQueryPerformanceCounter function (storport.h)
 description: The current system performance counter value is queried is returned by the StorPortQueryPerformanceCounter routine.
 old-location: storage\storportqueryperformancecounter.htm
 tech.root: storage
-ms.assetid: 6502E3AE-5841-41C9-BEB7-B00620DBF02D
 ms.date: 03/29/2018
 keywords: ["StorPortQueryPerformanceCounter function"]
 ms.keywords: StorPortQueryPerformanceCounter, StorPortQueryPerformanceCounter routine [Storage Devices], storage.storportqueryperformancecounter, storport/StorPortQueryPerformanceCounter
 req.header: storport.h
 req.include-header: Storport.h
 req.target-type: Universal
-req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,19 +49,19 @@ The current system performance counter value is queried is returned by the <b>St
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param PerformanceFrequency 
+### -param PerformanceFrequency [out, optional]
 
-[out, optional]
+
  A pointer to a large integer to receive the current system performance frequency value. This parameter is optional and can be NULL.
 
-### -param PerformanceCounter 
+### -param PerformanceCounter [out]
 
-[out]
+
 A pointer to a large integer to receive the current system performance counter value.
 
 ## -returns

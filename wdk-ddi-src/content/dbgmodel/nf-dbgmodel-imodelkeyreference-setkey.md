@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IModelKeyReference.SetKey
 title: IModelKeyReference::SetKey (dbgmodel.h)
-description: The SetKey method on a key reference behaves as the SetKey method on IModelObject would.
-ms.assetid: 6bc552a1-5808-46e2-ad15-080f89ec04cc
+description: "The IModelKeyReference::SetKey method, when called on a key reference, overwrites the object that is the value of the underlying key."
 ms.date: 08/14/2018
 keywords: ["IModelKeyReference::SetKey"]
 ms.keywords: IModelKeyReference::SetKey, SetKey, IModelKeyReference.SetKey, IModelKeyReference::SetKey, IModelKeyReference.SetKey
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IModelKeyReference.SetKey
+ - IModelKeyReference::SetKey
 ---
 
 # IModelKeyReference::SetKey

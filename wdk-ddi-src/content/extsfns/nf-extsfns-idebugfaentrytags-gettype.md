@@ -4,7 +4,6 @@ title: IDebugFAEntryTags::GetType (extsfns.h)
 description: The GetType method gets the data type that is associated with a tag in a DebugFailureAnalysisTags object.
 old-location: debugger\idebugfaentrytags_gettype.htm
 tech.root: debugger
-ms.assetid: CE43711F-E17B-4234-A885-4FE04EA53903
 ms.date: 05/03/2018
 keywords: ["IDebugFAEntryTags::GetType"]
 ms.keywords: GetType, GetType method [Windows Debugging], GetType method [Windows Debugging],IDebugFAEntryTags interface, IDebugFAEntryTags interface [Windows Debugging],GetType method, IDebugFAEntryTags.GetType, IDebugFAEntryTags::GetType, debugger.idebugfaentrytags_gettype, extsfns/IDebugFAEntryTags::GetType
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - extsfns.h
 api_name:
- - IDebugFAEntryTags.GetType
+ - IDebugFAEntryTags::GetType
 ---
 
 # IDebugFAEntryTags::GetType
@@ -77,3 +76,4 @@ A value in the <a href="/windows-hardware/drivers/ddi/extsfns/ne-extsfns-_fa_ent
 
 
 <a href="/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin">_EFN_Analyze</a>
+

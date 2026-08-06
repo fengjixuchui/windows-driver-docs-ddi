@@ -4,7 +4,6 @@ title: IInterFilterCommunicator::RequestWriter (filterpipeline.h)
 description: The RequestWriter method retrieves the writer interface for an IInterFilterCommunicator object.
 old-location: print\iinterfiltercommunicator_requestwriter.htm
 tech.root: print
-ms.assetid: 1f0684f0-e15e-491f-ba09-314f831d7ba9
 ms.date: 04/20/2018
 keywords: ["IInterFilterCommunicator::RequestWriter"]
 ms.keywords: IInterFilterCommunicator interface [Print Devices],RequestWriter method, IInterFilterCommunicator.RequestWriter, IInterFilterCommunicator::RequestWriter, RequestWriter, RequestWriter method [Print Devices], RequestWriter method [Print Devices],IInterFilterCommunicator interface, filterpipeline/IInterFilterCommunicator::RequestWriter, filterpipeline_b2f3eac2-d759-45b4-818b-4d828c5aeedc.xml, print.iinterfiltercommunicator_requestwriter
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - filterpipeline.h
 api_name:
- - IInterFilterCommunicator.RequestWriter
+ - IInterFilterCommunicator::RequestWriter
 ---
 
 # IInterFilterCommunicator::RequestWriter
@@ -50,9 +49,9 @@ The <b>RequestWriter</b> method retrieves the writer interface for an <b>IInterF
 
 ## -parameters
 
-### -param ppIWriter 
+### -param ppIWriter [out]
 
-[out]
+
 A variable that receives the writer interface object that <b>RequestWriter</b> retrieves.
 
 ## -returns
@@ -70,3 +69,4 @@ The <b>IInterFilterCommunicator</b> object is passed to each filter in the <a hr
 
 
 <a href="/windows-hardware/drivers/ddi/filterpipeline/nf-filterpipeline-iprintpipelinefilter-initializefilter">IPrintPipelineFilter::InitializeFilter</a>
+

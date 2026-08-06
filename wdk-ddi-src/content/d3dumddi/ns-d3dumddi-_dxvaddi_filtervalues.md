@@ -4,7 +4,6 @@ title: _DXVADDI_FILTERVALUES (d3dumddi.h)
 description: The DXVADDI_FILTERVALUES structure describes values that are related to a filter.
 old-location: display\dxvaddi_filtervalues.htm
 tech.root: display
-ms.assetid: 45273541-0638-4e8e-b6b7-5183b481ccc4
 ms.date: 05/10/2018
 keywords: ["DXVADDI_FILTERVALUES structure"]
 ms.keywords: DXVA2_Structs_1425eb3e-586d-4777-be61-8a73148286d4.xml, DXVADDI_FILTERVALUES, DXVADDI_FILTERVALUES structure [Display Devices], _DXVADDI_FILTERVALUES, d3dumddi/DXVADDI_FILTERVALUES, display.dxvaddi_filtervalues
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVADDI_FILTERVALUES
  - DXVADDI_FILTERVALUES
 ---
 
@@ -52,18 +52,19 @@ The DXVADDI_FILTERVALUES structure describes values that are related to a filter
 
 ## -struct-fields
 
-### -field Level
+### -field Level [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the level of the filter.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the level of the filter.
 
-### -field Threshold
+### -field Threshold [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the threshold of the filter.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the threshold of the filter.
 
-### -field Radius
+### -field Radius [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the radius of the filter.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the radius of the filter.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_videoprocessblt">D3DDDIARG_VIDEOPROCESSBLT</a>
+

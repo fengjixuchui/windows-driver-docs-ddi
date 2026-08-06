@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILUICCTOOLKITPROFILE
 title: RILUICCTOOLKITPROFILE (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILUICCTOOLKITPROFILE structure in your code."
 old-location: netvista\riluicctoolkitprofile.htm
 tech.root: netvista
-ms.assetid: ff1f5839-78be-48ab-9c26-f8fee6788d51
 ms.date: 05/02/2018
 keywords: ["RILUICCTOOLKITPROFILE structure"]
 ms.keywords: "*LPRILUICCTOOLKITPROFILE, RILUICCTOOLKITPROFILE, RILUICCTOOLKITPROFILE structure [Network Drivers Starting with Windows Vista], netvista.riluicctoolkitprofile, ntddrilapitypes/RILUICCTOOLKITPROFILE"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILUICCTOOLKITPROFILE
+ - LPRILUICCTOOLKITPROFILE
 ---
 
 # RILUICCTOOLKITPROFILE structure (ntddrilapitypes.h)

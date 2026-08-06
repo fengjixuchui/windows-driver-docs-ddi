@@ -4,7 +4,6 @@ title: WdmlibIoValidateDeviceIoControlAccess function (wdmsec.h)
 description: The WdmlibIoValidateDeviceIoControlAccess function verifies that the sender of an IRP_MJ_DEVICE_CONTROL or IRP_MJ_FILE_SYSTEM_CONTROL IRP has the specified access to the device object.
 old-location: kernel\wdmlibiovalidatedeviceiocontrolaccess.htm
 tech.root: kernel
-ms.assetid: F986A431-A70D-4488-A792-F37128902C7E
 ms.date: 04/30/2018
 keywords: ["WdmlibIoValidateDeviceIoControlAccess function"]
 ms.keywords: FILE_READ_ACCESS, FILE_WRITE_ACCESS, IoValidateDeviceIoControlAccess, WdmlibIoValidateDeviceIoControlAccess, WdmlibIoValidateDeviceIoControlAccess function [Kernel-Mode Driver Architecture], kernel.wdmlibiovalidatedeviceiocontrolaccess, wdmsec/IoValidateDeviceIoControlAccess, wdmsec/WdmlibIoValidateDeviceIoControlAccess, IoValidateDeviceIoControlAccess
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - WdmlibIoValidateDeviceIoControlAccess
- - IoValidateDeviceIoControlAccess
 ---
 
 # WdmlibIoValidateDeviceIoControlAccess function
@@ -51,14 +49,14 @@ The <b>WdmlibIoValidateDeviceIoControlAccess</b> function verifies that the send
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Specifies the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp">IRP</a> on which to perform the access check.
 
-### -param RequiredAccess 
+### -param RequiredAccess [in]
 
-[in]
+
 Specifies the type of access to the device object that the request sender must have. The caller can specify one or more of the following flags.
 
 <table>
@@ -144,3 +142,4 @@ The access checks are only performed if the <b>RequestorMode</b> member of the <
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp">IRP</a>
+

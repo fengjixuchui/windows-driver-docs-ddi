@@ -4,7 +4,6 @@ title: IPowerPolicyCallbackWakeFromS0 (wudfddi.h)
 description: A driver's IPowerPolicyCallbackWakeFromS0 interface provides callback functions that the framework calls to notify the driver about wake events.
 old-location: wdf\ipowerpolicycallbackwakefroms0.htm
 tech.root: wdf
-ms.assetid: d1b29916-9800-4276-860c-f7d143deb962
 ms.date: 02/26/2018
 keywords: ["IPowerPolicyCallbackWakeFromS0 interface"]
 ms.keywords: IPowerPolicyCallbackWakeFromS0, IPowerPolicyCallbackWakeFromS0 interface, IPowerPolicyCallbackWakeFromS0 interface,described, UMDFDeviceObjectRef_e79ecf1d-279d-4945-941a-ed53b00f6242.xml, umdf.ipowerpolicycallbackwakefroms0, wdf.ipowerpolicycallbackwakefroms0, wudfddi/IPowerPolicyCallbackWakeFromS0
@@ -52,9 +51,9 @@ A driver's <b>IPowerPolicyCallbackWakeFromS0</b> interface provides callback fun
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPowerPolicyCallbackWakeFromS0</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPowerPolicyCallbackWakeFromS0</b> also has these types of members:
+The <b>IPowerPolicyCallbackWakeFromS0</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPowerPolicyCallbackWakeFromS0</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>
 
 ## -remarks

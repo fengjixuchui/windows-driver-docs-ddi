@@ -4,7 +4,6 @@ title: EVT_WDF_INTERRUPT_DISABLE (wdfinterrupt.h)
 description: A driver's EvtInterruptDisable event callback function disables a specified hardware interrupt.
 old-location: wdf\evtinterruptdisable.htm
 tech.root: wdf
-ms.assetid: a9d5e3cd-2e95-4ad6-9380-64fe4df9e27f
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_INTERRUPT_DISABLE callback function"]
 ms.keywords: DFInterruptObjectRef_4dfbc961-e1c4-494e-9e6d-d657fd5d59d9.xml, EVT_WDF_INTERRUPT_DISABLE, EVT_WDF_INTERRUPT_DISABLE callback, EvtInterruptDisable, EvtInterruptDisable callback function, kmdf.evtinterruptdisable, wdf.evtinterruptdisable, wdfinterrupt/EvtInterruptDisable
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfinterrupt.h
 api_name:
- - EvtInterruptDisable
+ - EVT_WDF_INTERRUPT_DISABLE
 ---
 
 # EVT_WDF_INTERRUPT_DISABLE callback function
@@ -52,14 +51,14 @@ A driver's <i>EvtInterruptDisable</i> event callback function disables a specifi
 
 ## -parameters
 
-### -param Interrupt 
+### -param Interrupt [in]
 
-[in]
+
 A handle to a framework interrupt object.
 
-### -param AssociatedDevice 
+### -param AssociatedDevice [in]
 
-[in]
+
 A handle to the framework device object that the driver passed to <a href="/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdfinterruptcreate">WdfInterruptCreate</a>.
 
 ## -returns
@@ -99,3 +98,4 @@ For more information about handling interrupts in framework-based drivers, see <
 
 
 <a href="/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdfinterruptdisable">WdfInterruptDisable</a>
+

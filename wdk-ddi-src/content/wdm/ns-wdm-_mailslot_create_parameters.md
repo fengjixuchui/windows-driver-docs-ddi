@@ -3,7 +3,6 @@ UID: NS:wdm._MAILSLOT_CREATE_PARAMETERS
 title: _MAILSLOT_CREATE_PARAMETERS (wdm.h)
 description: The MAILSLOT_CREATE_PARAMETERS is used by the Windows subsystem to create a mailslot.
 tech.root: kernel
-ms.assetid: 6b0eda09-e890-463f-a5d9-0fd3ca8e52c3
 ms.date: 11/06/2019
 keywords: ["MAILSLOT_CREATE_PARAMETERS structure"]
 ms.keywords: "*PMAILSLOT_CREATE_PARAMETERS, MAILSLOT_CREATE_PARAMETERS, MAILSLOT_CREATE_PARAMETERS structure"
@@ -41,6 +40,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _MAILSLOT_CREATE_PARAMETERS
+ - PMAILSLOT_CREATE_PARAMETERS
  - MAILSLOT_CREATE_PARAMETERS
 ---
 
@@ -78,3 +79,4 @@ For an [IRP_MJ_CREATE_MAILSLOT](/windows-hardware/drivers/ifs/irp-mj-create-mail
 [FLT_PARAMETERS](../fltkernel/ns-fltkernel-_flt_parameters.md)
 
 [IRP_MJ_CREATE_MAILSLOT](/windows-hardware/drivers/ifs/irp-mj-create-mailslot)
+

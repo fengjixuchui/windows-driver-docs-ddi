@@ -4,7 +4,6 @@ title: WdfRegistryQueryMultiString function (wdfregistry.h)
 description: The WdfRegistryQueryMultiString method retrieves the strings that are currently assigned to a specified multi-string registry value, creates a framework string object for each string, and adds each string object to a specified object collection.
 old-location: wdf\wdfregistryquerymultistring.htm
 tech.root: wdf
-ms.assetid: 9ce754b4-a783-4b2e-978d-e38a30c5d3dd
 ms.date: 02/26/2018
 keywords: ["WdfRegistryQueryMultiString function"]
 ms.keywords: DFRegKeyObjectRef_9610d27f-df2e-41f9-9376-4f5819e8ce66.xml, WdfRegistryQueryMultiString, WdfRegistryQueryMultiString method, kmdf.wdfregistryquerymultistring, wdf.wdfregistryquerymultistring, wdfregistry/WdfRegistryQueryMultiString
@@ -55,24 +54,24 @@ The <b>WdfRegistryQueryMultiString</b> method retrieves the strings that are cur
 
 ## -parameters
 
-### -param Key 
+### -param Key [in]
 
-[in]
+
 A handle to a registry-key object that represents an opened registry key.
 
-### -param ValueName 
+### -param ValueName [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a value name.
 
-### -param StringsAttributes 
+### -param StringsAttributes [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains object attributes for each new string object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param Collection 
+### -param Collection [in]
 
-[in]
+
 A handle to a driver-supplied framework collection object.
 
 ## -returns

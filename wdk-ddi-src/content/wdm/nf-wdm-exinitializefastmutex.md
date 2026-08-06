@@ -4,7 +4,6 @@ title: ExInitializeFastMutex function (wdm.h)
 description: The ExInitializeFastMutex routine initializes a fast mutex variable, used to synchronize mutually exclusive access by a set of threads to a shared resource.
 old-location: kernel\exinitializefastmutex.htm
 tech.root: kernel
-ms.assetid: edd189f9-1089-470f-95a9-670bdba9c210
 ms.date: 04/30/2018
 keywords: ["ExInitializeFastMutex function"]
 ms.keywords: ExInitializeFastMutex, ExInitializeFastMutex routine [Kernel-Mode Driver Architecture], k102_b340d108-2e1c-4fa5-9bd0-d174452b125c.xml, kernel.exinitializefastmutex, wdm/ExInitializeFastMutex
@@ -50,9 +49,9 @@ The <b>ExInitializeFastMutex</b> routine initializes a fast mutex variable, used
 
 ## -parameters
 
-### -param FastMutex 
+### -param FastMutex [out]
 
-[out]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/kernel/eprocess">FAST_MUTEX</a> structure, which represents the fast mutex, in the nonpaged memory pool. The allocation must be 4-byte aligned on 32-bit platforms, and 8-byte aligned on 64-bit platforms.
 
 ## -remarks

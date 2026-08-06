@@ -4,7 +4,6 @@ title: USBC_START_DEVICE_CALLBACK (usbbusif.h)
 description: The USBC_START_DEVICE_CALLBACK routine allows a USB client driver to provide a custom definition of the interface collections on a device.
 old-location: buses\usbc_start_device_callback.htm
 tech.root: usbref
-ms.assetid: f9a9510a-b55c-4566-83ce-4ed7ccafb543
 ms.date: 05/07/2018
 keywords: ["USBC_START_DEVICE_CALLBACK callback function"]
 ms.keywords: USBC_START_DEVICE_CALLBACK, USBC_START_DEVICE_CALLBACK callback, UsbcStartDeviceCallback, UsbcStartDeviceCallback callback function [Buses], buses.usbc_start_device_callback, usbbusif/UsbcStartDeviceCallback, usbinterKR_d70617c5-be67-4660-9aa3-76b4c66c2616.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - usbbusif.h
 api_name:
- - UsbcStartDeviceCallback
+ - USBC_START_DEVICE_CALLBACK
 ---
 
 # USBC_START_DEVICE_CALLBACK callback function
@@ -50,34 +49,34 @@ The <b>USBC_START_DEVICE_CALLBACK</b> routine allows a USB client driver to prov
 
 ## -parameters
 
-### -param DeviceDescriptor 
+### -param DeviceDescriptor [in]
 
-[in]
+
 The device descriptor of the device.
 
-### -param ConfigurationDescriptor 
+### -param ConfigurationDescriptor [in]
 
-[in]
+
 The configuration of the device.
 
-### -param FunctionDescriptorBuffer 
+### -param FunctionDescriptorBuffer [out]
 
-[out]
+
 Pointer to a buffer that contains an array of function descriptors (<a href="/windows-hardware/drivers/ddi/usbbusif/ns-usbbusif-_usbc_function_descriptor">USBC_FUNCTION_DESCRIPTOR</a>).
 
-### -param FunctionDescriptorBufferLength 
+### -param FunctionDescriptorBufferLength [out]
 
-[out]
+
 The length in bytes of the buffer that <i>FunctionDescriptorBuffer</i> points to.
 
-### -param FdoDeviceObject 
+### -param FdoDeviceObject [in]
 
-[in]
+
 The function device object for the device.
 
-### -param PdoDeviceObject 
+### -param PdoDeviceObject [in]
 
-[in]
+
 The physical device object for the device.
 
 ## -returns
@@ -91,3 +90,4 @@ For a general description of the callback routine mechanism, see <a href="/windo
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/usbbusif/ns-usbbusif-_usbc_device_configuration_interface_v1">USBC_DEVICE_CONFIGURATION_INTERFACE_V1</a>
+

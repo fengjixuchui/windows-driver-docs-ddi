@@ -4,7 +4,6 @@ title: IDebugSymbolGroup2::WriteSymbolWide (dbgeng.h)
 description: The WriteSymbolWide method sets the value of the specified symbol.
 old-location: debugger\writesymbolwide.htm
 tech.root: debugger
-ms.assetid: ed77fddf-c23c-4522-a2c4-875f07d249fb
 ms.date: 05/03/2018
 keywords: ["IDebugSymbolGroup2::WriteSymbolWide"]
 ms.keywords: IDebugSymbolGroup2 interface [Windows Debugging],WriteSymbolWide method, IDebugSymbolGroup2.WriteSymbolWide, IDebugSymbolGroup2::WriteSymbolWide, WriteSymbolWide, WriteSymbolWide method [Windows Debugging], WriteSymbolWide method [Windows Debugging],IDebugSymbolGroup2 interface, dbgeng/IDebugSymbolGroup2::WriteSymbolWide, debugger.writesymbolwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbolGroup2.WriteSymbolWide
+ - IDebugSymbolGroup2::WriteSymbolWide
 ---
 
 # IDebugSymbolGroup2::WriteSymbolWide
@@ -50,14 +49,14 @@ The <b>WriteSymbolWide</b> method sets the value of the specified symbol.
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 The index of the symbol whose value will be changed. The index of a symbol is an identification number. The index ranges from zero through the number of symbols in the symbol group minus one.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 A C++ expression that is evaluated to give the symbol's new value.
 
 ## -returns
@@ -100,3 +99,4 @@ For more information about symbol groups, see <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbolgroup2">IDebugSymbolGroup2</a>
+

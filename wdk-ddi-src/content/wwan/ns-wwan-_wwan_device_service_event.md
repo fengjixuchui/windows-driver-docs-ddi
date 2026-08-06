@@ -4,7 +4,6 @@ title: _WWAN_DEVICE_SERVICE_EVENT (wwan.h)
 description: The WWAN_DEVICE_SERVICE_EVENT structure represents an unsolicited device service event.
 old-location: netvista\wwan_device_service_event.htm
 tech.root: netvista
-ms.assetid: 7E02DDE0-7D55-4FBD-879E-EFBA6A517D86
 ms.date: 05/02/2018
 keywords: ["WWAN_DEVICE_SERVICE_EVENT structure"]
 ms.keywords: "*PWWAN_DEVICE_SERVICE_EVENT, PWWAN_DEVICE_SERVICE_EVENT, PWWAN_DEVICE_SERVICE_EVENT structure pointer [Network Drivers Starting with Windows Vista], WWAN_DEVICE_SERVICE_EVENT, WWAN_DEVICE_SERVICE_EVENT structure [Network Drivers Starting with Windows Vista], _WWAN_DEVICE_SERVICE_EVENT, netvista.wwan_device_service_event, wwan/PWWAN_DEVICE_SERVICE_EVENT, wwan/WWAN_DEVICE_SERVICE_EVENT"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_DEVICE_SERVICE_EVENT
+ - PWWAN_DEVICE_SERVICE_EVENT
  - WWAN_DEVICE_SERVICE_EVENT
 ---
 
@@ -69,3 +70,4 @@ The size, in bytes, of the device service event data that follows the structure 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_supported_device_services">WWAN_SUPPORTED_DEVICE_SERVICES</a>
+

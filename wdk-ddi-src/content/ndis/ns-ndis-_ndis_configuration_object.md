@@ -4,7 +4,6 @@ title: _NDIS_CONFIGURATION_OBJECT (ndis.h)
 description: The NDIS_CONFIGURATION_OBJECT structure defines the attributes of a configuration object that an NDIS driver can pass to the NdisOpenConfigurationEx function.
 old-location: netvista\ndis_configuration_object.htm
 tech.root: netvista
-ms.assetid: 8fa80414-c87a-4f05-b99c-5153f08a0862
 ms.date: 05/02/2018
 keywords: ["NDIS_CONFIGURATION_OBJECT structure"]
 ms.keywords: "*PNDIS_CONFIGURATION_OBJECT, NDIS_CONFIGURATION_OBJECT, NDIS_CONFIGURATION_OBJECT structure [Network Drivers Starting with Windows Vista], PNDIS_CONFIGURATION_OBJECT, PNDIS_CONFIGURATION_OBJECT structure pointer [Network Drivers Starting with Windows Vista], _NDIS_CONFIGURATION_OBJECT, ndis/NDIS_CONFIGURATION_OBJECT, ndis/PNDIS_CONFIGURATION_OBJECT, ndis_configuration_ref_aa617bdd-fe13-11d9-8a38-0030ab150798.xml, netvista.ndis_configuration_object"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_CONFIGURATION_OBJECT
+ - PNDIS_CONFIGURATION_OBJECT
  - NDIS_CONFIGURATION_OBJECT
 ---
 
@@ -60,7 +61,7 @@ The NDIS_CONFIGURATION_OBJECT structure defines the attributes of a configuratio
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_CONFIGURATION_OBJECT structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_CONFIGURATION_OBJECT, the 
@@ -95,8 +96,9 @@ To configuration parameters in the registry, an NDIS driver can use the NDIS_CON
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/devtest/ndis-ndisopenconfigurationex">NdisOpenConfigurationEx</a>
+

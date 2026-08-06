@@ -1,11 +1,9 @@
 ---
-UID: NS:storport.__unnamed_struct_12
+UID: NS:storport.PRO_PARAMETER_LIST
 title: PRO_PARAMETER_LIST (storport.h)
-description: The PRO_PARAMETER_LIST structure is sent in a Persistent Reserve Out command to a device server.
-old-location: storage\pro_parameter_list.htm
+description: The PRO_PARAMETER_LIST structure (storport.h) contains reservation information that is sent in a Persistent Reserve Out (PRO) command to a device server.
 tech.root: storage
-ms.assetid: 96c128e1-c38a-412f-adeb-cde820e1af4e
-ms.date: 03/29/2018
+ms.date: 09/26/2022
 keywords: ["PRO_PARAMETER_LIST structure"]
 ms.keywords: "*PPRO_PARAMETER_LIST, PPRO_PARAMETER_LIST, PPRO_PARAMETER_LIST structure pointer [Storage Devices], PRO_PARAMETER_LIST, PRO_PARAMETER_LIST structure [Storage Devices], storage.pro_parameter_list, storport/PPRO_PARAMETER_LIST, storport/PRO_PARAMETER_LIST, structs-general_7481edb0-cc60-44b9-abcc-80bf0f79fbae.xml"
 req.header: storport.h
@@ -40,15 +38,16 @@ api_type:
 api_location:
  - storport.h
 api_name:
+ - PPRO_PARAMETER_LIST
  - PRO_PARAMETER_LIST
 ---
 
-# PRO_PARAMETER_LIST structure (storport.h)
+# **PRO_PARAMETER_LIST** structure (storport.h)
 
 
 ## -description
 
-The PRO_PARAMETER_LIST structure is sent in a Persistent Reserve Out command to a device server.
+The **PRO_PARAMETER_LIST** structure is sent in a Persistent Reserve Out command to a device server.
 
 ## -struct-fields
 
@@ -60,24 +59,13 @@ The ReservationKey field contains an 8-byte value that is provided by the applic
 
 The ServiceActionReservationKey field contains information that is needed for the following four service actions:
 
-<ul>
-<li>
-REGISTER
+- REGISTER
 
-</li>
-<li>
-REGISTER AND IGNORE EXISTING KEY
+- REGISTER AND IGNORE EXISTING KEY
 
-</li>
-<li>
-PREEMPT
+- PREEMPT
 
-</li>
-<li>
-PREEMPT AND ABORT
-
-</li>
-</ul>
+- PREEMPT AND ABORT
 
 ### -field ScopeSpecificAddress
 
@@ -87,22 +75,27 @@ The ScopeSpecificAddress field contains the element address that has zeros place
 
 The ActivatePersistThroughPowerLoss (APTPL) bit is valid only for the following service actions:
 
-<ul>
-<li>
-REGISTER
+- REGISTER
 
-</li>
-<li>
-REGISTER AND IGNORE EXISTING KEY
-
-</li>
-</ul>
+- REGISTER AND IGNORE EXISTING KEY
 
 ### -field Reserved1
 
 Reserved. Must be zero.
 
+### -field AllTargetPorts
+
+Defines the **UCHAR** member **AllTargetPorts**.
+
+### -field SpecifyInitiatorPorts
+
+Defines the **UCHAR** member **SpecifyInitiatorPorts**.
+
 ### -field Reserved2
+
+Reserved. Must be zero.
+
+### -field Reserved3
 
 Reserved. Must be zero.
 
@@ -112,8 +105,5 @@ Reserved. Must be zero.
 
 ## -remarks
 
-The <a href="/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_persistent_reserve_out">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a> request is used to control information about persistent reservations and reservation keys that are active within a device server.
+The [**IOCTL_STORAGE_PERSISTENT_RESERVE_OUT**](../ntddstor/ni-ntddstor-ioctl_storage_persistent_reserve_out.md) request is used to control information about persistent reservations and reservation keys that are active within a device server.
 
-## -see-also
-
-<a href="/windows-hardware/drivers/ddi/ntddstor/ni-ntddstor-ioctl_storage_persistent_reserve_out">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a>

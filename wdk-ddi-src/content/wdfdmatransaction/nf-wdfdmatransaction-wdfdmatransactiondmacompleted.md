@@ -4,7 +4,6 @@ title: WdfDmaTransactionDmaCompleted function (wdfdmatransaction.h)
 description: The WdfDmaTransactionDmaCompleted method notifies the framework that a device's DMA transfer operation is completed.
 old-location: wdf\wdfdmatransactiondmacompleted.htm
 tech.root: wdf
-ms.assetid: 83c1c4cb-b28b-4980-92fb-a1a49d95406e
 ms.date: 02/26/2018
 keywords: ["WdfDmaTransactionDmaCompleted function"]
 ms.keywords: DFDmaObjectRef_d7fd815f-7c21-4b84-b4f2-0dcc13cf068a.xml, WdfDmaTransactionDmaCompleted, WdfDmaTransactionDmaCompleted method, kmdf.wdfdmatransactiondmacompleted, wdf.wdfdmatransactiondmacompleted, wdfdmatransaction/WdfDmaTransactionDmaCompleted
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfDmaTransactionDmaCompleted</b> method notifies the framework that a de
 
 ## -parameters
 
-### -param DmaTransaction 
+### -param DmaTransaction [in]
 
-[in]
+
 A handle to a DMA transaction object that the driver obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioncreate">WdfDmaTransactionCreate</a>.
 
-### -param Status 
+### -param Status [out]
 
-[out]
+
 A pointer to a location that receives the status of the DMA transfer. For more information, see the following Remarks section.
 
 ## -returns

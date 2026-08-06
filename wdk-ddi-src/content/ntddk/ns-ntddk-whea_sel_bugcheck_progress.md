@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._WHEA_SEL_BUGCHECK_PROGRESS
 title: WHEA_SEL_BUGCHECK_PROGRESS
-description: 
-tech.root: 
-ms.assetid: 3a97010f-ec3e-498e-81a9-db51dd710841
+description: "Learn more about: WHEA_SEL_BUGCHECK_PROGRESS structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEA_SEL_BUGCHECK_PROGRESS structure"]
 ms.keywords: WHEA_SEL_BUGCHECK_PROGRESS, WHEA_SEL_BUGCHECK_PROGRESS, *PWHEA_SEL_BUGCHECK_PROGRESS,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_SEL_BUGCHECK_PROGRESS
+ - PWHEA_SEL_BUGCHECK_PROGRESS
  - WHEA_SEL_BUGCHECK_PROGRESS
-product:
- - Windows
 ---
 
 # WHEA_SEL_BUGCHECK_PROGRESS structure

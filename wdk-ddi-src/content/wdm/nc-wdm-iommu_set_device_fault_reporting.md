@@ -2,11 +2,11 @@
 UID: NC:wdm.IOMMU_SET_DEVICE_FAULT_REPORTING
 title: IOMMU_SET_DEVICE_FAULT_REPORTING (wdm.h)
 description: This routine sets the device fault reporting state to a device already attached to a domain.
-ms.assetid: 111049ce-9f18-4807-a6c2-5641b115a4b5
-ms.date: 09/30/2018
+tech.root: kernel
+ms.date: 01/19/2023
 keywords: ["IOMMU_SET_DEVICE_FAULT_REPORTING callback function"]
 req.header: wdm.h
-req.include-header: 
+req.include-header: Wdm.h
 req.target-type: 
 req.target-min-winverclnt: Windows 10, version 1809.
 req.target-min-winversvr: 
@@ -23,7 +23,6 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 targetos: Windows
-ms.custom: RS5
 f1_keywords:
  - IOMMU_SET_DEVICE_FAULT_REPORTING
  - wdm/IOMMU_SET_DEVICE_FAULT_REPORTING
@@ -37,55 +36,33 @@ api_name:
  - IOMMU_SET_DEVICE_FAULT_REPORTING
 ---
 
-# IOMMU_SET_DEVICE_FAULT_REPORTING callback function
-
-
 ## -description
 
 This routine sets the device fault reporting state to a device already attached to a domain.
-> It is driver's responsibility to ensure that this function is not called concurrently with any [**IommuDomainAttachDevice**](nc-wdm-iommu_domain_attach_device.md) or [**IommuDomainDetachDevice**](nc-wdm-iommu_domain_detach_device.md) calls on the same device.
+
+It is driver's responsibility to ensure that this function is not called concurrently with any [**IommuDomainAttachDevice**](nc-wdm-iommu_domain_attach_device.md) or [**IommuDomainDetachDevice**](nc-wdm-iommu_domain_detach_device.md) calls on the same device.
 
 ## -parameters
 
-### -param PhysicalDeviceObject
+### -param PhysicalDeviceObject [In]
 
-[In] A pointer the physical device object (PDO) in the device stack of the device.
+A pointer the physical device object (PDO) in the device stack of the device.
 
-### -param InputMappingIdBase
+### -param InputMappingIdBase [In]
 
-[In] The input mapping base for the device's desired stream.
+The input mapping base for the device's desired stream.
 
-### -param Enable
+### -param Enable [In]
 
-[In] a BOOLEAN value that indicates whether to enable fault reporting for the device.
+a BOOLEAN value that indicates whether to enable fault reporting for the device.
 
-### -param FaultConfig
+### -param FaultConfig [in]
 
-[in] Optional.  A pointer to [**DEVICE_FAULT_CONFIGURATION**](ns-wdm-_device_fault_configuration.md). This is only used for enabling fault reporting.
+Optional.  A pointer to [**DEVICE_FAULT_CONFIGURATION**](ns-wdm-_device_fault_configuration.md). This is only used for enabling fault reporting.
 
 ## -returns
 
-Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate NTSTATUS Values error code. For more information, see [NTSTATUS Values](/windows-hardware/drivers/kernel/ntstatus-values).
-
-## -prototype
-
-```cpp
-//Declaration
-
-IOMMU_SET_DEVICE_FAULT_REPORTING IommuSetDeviceFaultReporting; 
-
-// Definition
-
-NTSTATUS IommuSetDeviceFaultReporting 
-(
-	PDEVICE_OBJECT PhysicalDeviceObject
-	ULONG InputMappingIdBase
-	BOOLEAN Enable
-	PDEVICE_FAULT_CONFIGURATION FaultConfig
-)
-{...}
-
-```
+Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate NTSTATUS values error code. For more information, see [NTSTATUS Values](/windows-hardware/drivers/kernel/ntstatus-values).
 
 ## -remarks
 

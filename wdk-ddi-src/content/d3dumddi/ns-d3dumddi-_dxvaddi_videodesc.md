@@ -4,7 +4,6 @@ title: _DXVADDI_VIDEODESC (d3dumddi.h)
 description: The DXVADDI_VIDEODESC structure describes a video stream.
 old-location: display\dxvaddi_videodesc.htm
 tech.root: display
-ms.assetid: 19121888-ad5c-4596-a7ec-a95fbffda685
 ms.date: 05/10/2018
 keywords: ["DXVADDI_VIDEODESC structure"]
 ms.keywords: DXVA2_Structs_7e8c3d70-50a3-48f7-bc5e-4280a599e43d.xml, DXVADDI_VIDEODESC, DXVADDI_VIDEODESC structure [Display Devices], _DXVADDI_VIDEODESC, d3dumddi/DXVADDI_VIDEODESC, display.dxvaddi_videodesc
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVADDI_VIDEODESC
  - DXVADDI_VIDEODESC
 ---
 
@@ -52,37 +52,37 @@ The DXVADDI_VIDEODESC structure describes a video stream.
 
 ## -struct-fields
 
-### -field SampleWidth
+### -field SampleWidth [in]
 
-[in] The width of the video sample, in pixels.
+The width of the video sample, in pixels.
 
-### -field SampleHeight
+### -field SampleHeight [in]
 
-[in] The height of the video sample, in pixels.
+The height of the video sample, in pixels.
 
-### -field SampleFormat
+### -field SampleFormat [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_extendedformat">DXVADDI_EXTENDEDFORMAT</a> structure that describes the extended format of the video sample.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_extendedformat">DXVADDI_EXTENDEDFORMAT</a> structure that describes the extended format of the video sample.
 
-### -field Format
+### -field Format [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddiformat">D3DDDIFORMAT</a> structure that describes the extended format of the video sample.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddiformat">D3DDDIFORMAT</a> structure that describes the extended format of the video sample.
 
-### -field InputSampleFreq
+### -field InputSampleFreq [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_frequency">DXVADDI_FREQUENCY</a> structure that defines the frequency of incoming video.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_frequency">DXVADDI_FREQUENCY</a> structure that defines the frequency of incoming video.
 
-### -field OutputFrameFreq
+### -field OutputFrameFreq [in]
 
-[in] A DXVADDI_FREQUENCY structure that defines the frame rate of output video.
+A DXVADDI_FREQUENCY structure that defines the frame rate of output video.
 
-### -field UABProtectionLevel
+### -field UABProtectionLevel [in]
 
-[in] A UINT value that specifies the level of data protection that is required when the user accessible bus is present.
+A UINT value that specifies the level of data protection that is required when the user accessible bus is present.
 
-### -field Reserved
+### -field Reserved [in]
 
-[in] Reserved. Do not use this member.
+Reserved. Do not use this member.
 
 ## -see-also
 
@@ -95,3 +95,4 @@ The DXVADDI_VIDEODESC structure describes a video stream.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_frequency">DXVADDI_FREQUENCY</a>
+

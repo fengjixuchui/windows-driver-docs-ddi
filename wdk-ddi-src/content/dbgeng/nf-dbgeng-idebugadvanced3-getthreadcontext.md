@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugAdvanced3.GetThreadContext
 title: IDebugAdvanced3::GetThreadContext (dbgeng.h)
-description: The GetThreadContext method returns the current thread context.
+description: The (IDebugAdvanced3) GetThreadContext method returns the current thread context represented by the CONTEXT structure for the target's effective processor.
 old-location: debugger\getthreadcontext.htm
 tech.root: debugger
-ms.assetid: 6fe12f3b-b241-42e4-b35d-c8a485a5cfa8
 ms.date: 05/03/2018
 keywords: ["IDebugAdvanced3::GetThreadContext"]
 ms.keywords: GetThreadContext, GetThreadContext method [Windows Debugging], GetThreadContext method [Windows Debugging],IDebugAdvanced interface, GetThreadContext method [Windows Debugging],IDebugAdvanced2 interface, GetThreadContext method [Windows Debugging],IDebugAdvanced3 interface, IDebugAdvanced interface [Windows Debugging],GetThreadContext method, IDebugAdvanced2 interface [Windows Debugging],GetThreadContext method, IDebugAdvanced2::GetThreadContext, IDebugAdvanced3 interface [Windows Debugging],GetThreadContext method, IDebugAdvanced3.GetThreadContext, IDebugAdvanced3::GetThreadContext, IDebugAdvanced::GetThreadContext, IDebugAdvanced_1a044a89-612f-4a3c-b3cd-0a715ae6af92.xml, dbgeng/IDebugAdvanced2::GetThreadContext, dbgeng/IDebugAdvanced3::GetThreadContext, dbgeng/IDebugAdvanced::GetThreadContext, debugger.getthreadcontext
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugAdvanced.GetThreadContext
- - IDebugAdvanced2.GetThreadContext
- - IDebugAdvanced3.GetThreadContext
+ - IDebugAdvanced3::GetThreadContext
 ---
 
 # IDebugAdvanced3::GetThreadContext
@@ -52,14 +49,14 @@ The <b>GetThreadContext</b> method returns the current <a href="/windows-hardwar
 
 ## -parameters
 
-### -param Context 
+### -param Context [out]
 
-[out]
+
 Receives the current thread context. The type of the thread context is the CONTEXT structure for the target's effective processor.  The buffer <i>Context</i> must be large enough to hold this structure.
 
-### -param ContextSize 
+### -param ContextSize [in]
 
-[in]
+
 Specifies the size of the buffer <i>Context</i>.
 
 ## -returns
@@ -110,3 +107,4 @@ For more information about the thread context, see <a href="/windows-hardware/dr
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugadvanced3-setthreadcontext">SetThreadContext</a>
+

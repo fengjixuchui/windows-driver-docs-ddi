@@ -4,7 +4,6 @@ title: NdisMCmDeleteVc function (ndis.h)
 description: NdisMCmDeleteVc destroys a caller-created VC.
 old-location: netvista\ndismcmdeletevc.htm
 tech.root: netvista
-ms.assetid: b55d0995-efd8-4a61-85e9-970559e21a88
 ms.date: 05/02/2018
 keywords: ["NdisMCmDeleteVc function"]
 ms.keywords: NdisMCmDeleteVc, NdisMCmDeleteVc function [Network Drivers Starting with Windows Vista], condis_mcm_ref_a6a2bb4d-a82e-422f-b9f0-821519513cb4.xml, ndis/NdisMCmDeleteVc, netvista.ndismcmdeletevc
@@ -51,9 +50,9 @@ api_name:
 
 ## -parameters
 
-### -param NdisVcHandle 
+### -param NdisVcHandle [in]
 
-[in]
+
 Specifies the handle identifying the VC to be deleted. The caller originally obtained this handle
      from 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmcreatevc">NdisMCmCreateVc</a>.

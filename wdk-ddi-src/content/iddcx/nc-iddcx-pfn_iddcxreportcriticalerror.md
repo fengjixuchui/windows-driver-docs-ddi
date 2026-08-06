@@ -1,9 +1,8 @@
 ---
 UID: NC:iddcx.PFN_IDDCXREPORTCRITICALERROR
 title: PFN_IDDCXREPORTCRITICALERROR (iddcx.h)
-description: PFN_IDDCXREPORTCRITICALERROR is a pointer to an OS callback function through which an indirect display driver reports a critical error.
+description: PFN_IDDCXREPORTCRITICALERROR is a pointer to an OS callback function through which to report a critical error.
 tech.root: display
-ms.assetid: f4b2190f-f005-47bb-8b67-82701985e887
 ms.date: 09/24/2020
 keywords: ["PFN_IDDCXREPORTCRITICALERROR callback function"]
 req.header: iddcx.h
@@ -24,7 +23,6 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 targetos: Windows
-tech.root: display
 f1_keywords:
  - PFN_IDDCXREPORTCRITICALERROR
  - iddcx/PFN_IDDCXREPORTCRITICALERROR
@@ -36,29 +34,27 @@ api_location:
  - iddcx.h
 api_name:
  - PFN_IDDCXREPORTCRITICALERROR
-product:
- - Windows
 ---
 
 # PFN_IDDCXREPORTCRITICALERROR callback function
 
 ## -description
 
-**PFN_IDDCXREPORTCRITICALERROR** is a pointer to an OS callback function through which an indirect display driver (IDD) reports a critical error.
+**PFN_IDDCXREPORTCRITICALERROR** is a pointer to an OS callback function through which to report a critical error.
 
 ## -parameters
 
-### -param DriverGlobals
+### -param DriverGlobals [in]
 
-[in] Pointer to an [**IDD_DRIVER_GLOBALS**](/windows-hardware/drivers/ddi/iddcx/ns-iddcx-idd_driver_globals) structure containing system-defined per-driver data.
+Pointer to an [**IDD_DRIVER_GLOBALS**](./ns-iddcx-idd_driver_globals.md) structure containing system-defined per-driver data.
 
-### -param AdapterObject
+### -param AdapterObject [in, opt]
 
-[in, opt] The adapter object of the adapter on which the critical error occurred. If the error occurred before an IDDCX_ADAPTER object was created, pass in ```nullptr``` for this value.
+The adapter object of the adapter on which the critical error occurred. If the error occurred before an IDDCX_ADAPTER object was created, pass in ```nullptr``` for this value.
 
-### -param pInArgs
+### -param pInArgs [in]
 
-[in] Pointer to an [**IDARG_IN_REPORTCRITICALERROR**](ns-iddcx-idarg_in_reportcriticalerror.md) structure containing input arguments to the function.
+Pointer to an [**IDARG_IN_REPORTCRITICALERROR**](ns-iddcx-idarg_in_reportcriticalerror.md) structure containing input arguments to the function.
 
 ## -returns
 
@@ -66,7 +62,7 @@ If the routine succeeds, it never returns to the driver as the driver process wi
 
 ## -remarks
 
-IDDs should not directly call the function that **PFN_IDDCXREPORTCRITICALERROR** points to. Instead, the IDD should call [**IddCxReportCriticalError**](nf-iddcx-iddcxreportcriticalerror.md) to report a critical error.
+An indirect display driver (IDD) should not use this pointer to directly call the function that it points to. IDDs should instead call [**IddCxReportCriticalError**](nf-iddcx-iddcxreportcriticalerror.md) to report a critical error.
 
 ## -see-also
 

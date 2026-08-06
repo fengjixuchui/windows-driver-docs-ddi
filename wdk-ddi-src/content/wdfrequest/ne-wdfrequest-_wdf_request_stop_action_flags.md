@@ -4,7 +4,6 @@ title: _WDF_REQUEST_STOP_ACTION_FLAGS (wdfrequest.h)
 description: The WDF_REQUEST_STOP_ACTION_FLAGS enumeration type defines flags that the framework passes to a driver's EvtIoStop callback function.
 old-location: wdf\wdf_request_stop_action_flags.htm
 tech.root: wdf
-ms.assetid: 01f95aee-60aa-4d6f-88a9-c0fa6ea6a09a
 ms.date: 02/26/2018
 keywords: ["WDF_REQUEST_STOP_ACTION_FLAGS enumeration"]
 ms.keywords: DFRequestObjectRef_e291c6a5-1e65-4505-9090-19e6ea66e7b3.xml, WDF_REQUEST_STOP_ACTION_FLAGS, WDF_REQUEST_STOP_ACTION_FLAGS enumeration, WdfRequestStopActionInvalid, WdfRequestStopActionPurge, WdfRequestStopActionSuspend, WdfRequestStopRequestCancelable, _WDF_REQUEST_STOP_ACTION_FLAGS, kmdf.wdf_request_stop_action_flags, wdf.wdf_request_stop_action_flags, wdfrequest/WDF_REQUEST_STOP_ACTION_FLAGS, wdfrequest/WdfRequestStopActionInvalid, wdfrequest/WdfRequestStopActionPurge, wdfrequest/WdfRequestStopActionSuspend, wdfrequest/WdfRequestStopRequestCancelable
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfrequest.h
 api_name:
+ - _WDF_REQUEST_STOP_ACTION_FLAGS
  - WDF_REQUEST_STOP_ACTION_FLAGS
 ---
 
@@ -54,19 +54,19 @@ The <b>WDF_REQUEST_STOP_ACTION_FLAGS</b> enumeration type defines flags that the
 
 ## -enum-fields
 
-### -field WdfRequestStopActionInvalid
+### -field WdfRequestStopActionInvalid:0
 
 Reserved for internal use only.
 
-### -field WdfRequestStopActionSuspend
+### -field WdfRequestStopActionSuspend:0x01
 
 The framework is stopping the I/O queue because the device is leaving its working (D0) state.
 
-### -field WdfRequestStopActionPurge
+### -field WdfRequestStopActionPurge:0x2
 
 The framework is stopping the I/O queue because the device is being removed.
 
-### -field WdfRequestStopRequestCancelable
+### -field WdfRequestStopRequestCancelable:0x10000000
 
 The I/O request is cancelable.
 
@@ -77,3 +77,4 @@ When the framework calls a driver's <a href="/windows-hardware/drivers/ddi/wdfio
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfio/nc-wdfio-evt_wdf_io_queue_io_stop">EvtIoStop</a>
+

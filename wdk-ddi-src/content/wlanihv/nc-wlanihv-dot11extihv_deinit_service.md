@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_DEINIT_SERVICE
 title: DOT11EXTIHV_DEINIT_SERVICE (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_DEINIT_SERVICE callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvdeinitservice.htm
 tech.root: netvista
-ms.assetid: 5ee52306-4229-4d81-af1f-6eb37f41ad41
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_DEINIT_SERVICE callback"]
 ms.keywords: DOT11EXTIHV_DEINIT_SERVICE, Dot11ExtIhvDeinitService, Dot11ExtIhvDeinitService callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_02e9e301-f950-47e3-9a1f-4212ae55387e.xml, netvista.dot11extihvdeinitservice, wlanihv/Dot11ExtIhvDeinitService
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_DEINIT_SERVICE
  - wlanihv/DOT11EXTIHV_DEINIT_SERVICE
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - Wlanihv.h
 api_name:
- - Dot11ExtIhvDeinitService
+ - DOT11EXTIHV_DEINIT_SERVICE
 ---
 
 # DOT11EXTIHV_DEINIT_SERVICE callback
@@ -107,3 +105,4 @@ The DLL must free any allocated resources for the DLL itself. In particular, all
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_free_buffer.md">Dot11ExtFreeBuffer</a>
+

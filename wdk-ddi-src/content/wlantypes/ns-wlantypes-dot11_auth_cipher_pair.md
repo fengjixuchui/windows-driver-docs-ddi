@@ -1,10 +1,9 @@
 ---
 UID: NS:wlantypes.DOT11_AUTH_CIPHER_PAIR
 title: DOT11_AUTH_CIPHER_PAIR (wlantypes.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_AUTH_CIPHER_PAIR structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_auth_cipher_pair.htm
 tech.root: netvista
-ms.assetid: 301e9c21-69e7-48d3-b170-de01684f4a12
 ms.date: 02/16/2018
 keywords: ["DOT11_AUTH_CIPHER_PAIR structure"]
 ms.keywords: "*PDOT11_AUTH_CIPHER_PAIR, DOT11_AUTH_CIPHER_PAIR, DOT11_AUTH_CIPHER_PAIR structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_84940691-1e26-4039-927d-e1f1e0d14ea1.xml, PDOT11_AUTH_CIPHER_PAIR, PDOT11_AUTH_CIPHER_PAIR structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_auth_cipher_pair, wlantypes/DOT11_AUTH_CIPHER_PAIR, wlantypes/PDOT11_AUTH_CIPHER_PAIR"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DOT11_AUTH_CIPHER_PAIR, *PDOT11_AUTH_CIPHER_PAIR
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11_AUTH_CIPHER_PAIR
  - wlantypes/DOT11_AUTH_CIPHER_PAIR
@@ -42,6 +40,7 @@ api_location:
  - wlantypes.h
 api_name:
  - DOT11_AUTH_CIPHER_PAIR
+ - PDOT11_AUTH_CIPHER_PAIR
 ---
 
 # DOT11_AUTH_CIPHER_PAIR structure
@@ -123,3 +122,4 @@ If WPS is enabled on a NIC that is operating in Extensible AP mode, the miniport
 
 <a href="/previous-versions/windows/embedded/gg157261(v=winembedded.80)">
    OID_DOT11_SUPPORTED_UNICAST_ALGORITHM_PAIR</a>
+

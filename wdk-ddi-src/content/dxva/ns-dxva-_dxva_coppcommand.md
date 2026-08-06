@@ -4,7 +4,6 @@ title: _DXVA_COPPCommand (dxva.h)
 description: The DXVA_COPPCommand structure describes a command sent to a protected video session that is associated with a COPP DirectX VA device.
 old-location: display\dxva_coppcommand.htm
 tech.root: display
-ms.assetid: 08c87f1f-ea50-4521-80a2-67369fc6598a
 ms.date: 05/10/2018
 keywords: ["DXVA_COPPCommand structure"]
 ms.keywords: "*LPDXVA_COPPCommand, DXVA_COPPCommand, DXVA_COPPCommand structure [Display Devices], LPDXVA_COPPCommand, LPDXVA_COPPCommand structure pointer [Display Devices], _DXVA_COPPCommand, display.dxva_coppcommand, dxva/DXVA_COPPCommand, dxva/LPDXVA_COPPCommand, dxvaref_e27ea691-6ae9-41fc-9649-670231cb5ce8.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dxva.h
 api_name:
+ - _DXVA_COPPCommand
+ - LPDXVA_COPPCommand
  - DXVA_COPPCommand
 ---
 
@@ -125,3 +126,4 @@ For a DXVA_COPPSetSignaling command, the signaling information is supplied by ca
 
 
 <a href="/windows-hardware/drivers/ddi/dxva/ns-dxva-_dxva_coppsignature">DXVA_COPPSignature</a>
+

@@ -4,7 +4,6 @@ title: _D3DDDIARG_GENERATEMIPSUBLEVELS (d3dumddi.h)
 description: The D3DDDIARG_GENERATEMIPSUBLEVELS structure describes how to generate the sublevels of a MIP-map texture.
 old-location: display\d3dddiarg_generatemipsublevels.htm
 tech.root: display
-ms.assetid: 19c08206-cde8-4ec2-bbd1-92eadeecdb90
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_GENERATEMIPSUBLEVELS structure"]
 ms.keywords: D3DDDIARG_GENERATEMIPSUBLEVELS, D3DDDIARG_GENERATEMIPSUBLEVELS structure [Display Devices], UMDisplayDriver_param_Structs_4000d18b-18c0-4499-bfbe-a3f5e866553b.xml, _D3DDDIARG_GENERATEMIPSUBLEVELS, d3dumddi/D3DDDIARG_GENERATEMIPSUBLEVELS, display.d3dddiarg_generatemipsublevels
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_GENERATEMIPSUBLEVELS
  - D3DDDIARG_GENERATEMIPSUBLEVELS
 ---
 
@@ -52,13 +52,13 @@ The D3DDDIARG_GENERATEMIPSUBLEVELS structure describes how to generate the suble
 
 ## -struct-fields
 
-### -field hResource
+### -field hResource [in]
 
-[in] A handle to the MIP-map texture surface.
+A handle to the MIP-map texture surface.
 
-### -field Filter
+### -field Filter [in]
 
-[in] A D3DDDITEXTUREFILTERTYPE-typed value that indicates the texture magnification or minification filter type that is used in generating the sublevels of the MIP-map texture. This member can be one of the following values.
+A D3DDDITEXTUREFILTERTYPE-typed value that indicates the texture magnification or minification filter type that is used in generating the sublevels of the MIP-map texture. This member can be one of the following values.
 
 | **Value** | **Meaning** | 
 |:--|:--|
@@ -71,3 +71,4 @@ The D3DDDIARG_GENERATEMIPSUBLEVELS structure describes how to generate the suble
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_generatemipsublevels">GenerateMipSubLevels</a>
+

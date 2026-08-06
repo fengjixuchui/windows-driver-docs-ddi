@@ -4,7 +4,6 @@ title: IWDFDevice::CreateDeviceInterface (wudfddi.h)
 description: The CreateDeviceInterface method creates an instance of a device interface class.
 old-location: wdf\iwdfdevice_createdeviceinterface.htm
 tech.root: wdf
-ms.assetid: 0a88cbb6-66be-4ef7-93da-27d7ce169779
 ms.date: 02/26/2018
 keywords: ["IWDFDevice::CreateDeviceInterface"]
 ms.keywords: CreateDeviceInterface, CreateDeviceInterface method, CreateDeviceInterface method,IWDFDevice interface, IWDFDevice interface,CreateDeviceInterface method, IWDFDevice.CreateDeviceInterface, IWDFDevice::CreateDeviceInterface, UMDFDeviceObjectRef_11606922-8b72-434f-a739-fd0c653ea026.xml, umdf.iwdfdevice_createdeviceinterface, wdf.iwdfdevice_createdeviceinterface, wudfddi/IWDFDevice::CreateDeviceInterface
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice.CreateDeviceInterface
+ - IWDFDevice::CreateDeviceInterface
 ---
 
 # IWDFDevice::CreateDeviceInterface
@@ -52,14 +51,14 @@ The <b>CreateDeviceInterface</b> method creates an instance of a device interfac
 
 ## -parameters
 
-### -param pDeviceInterfaceGuid 
+### -param pDeviceInterfaceGuid [in]
 
-[in]
+
 A pointer to the GUID for a device interface class.
 
-### -param pReferenceString 
+### -param pReferenceString [in, optional]
 
-[in, optional]
+
 A pointer to a <b>NULL</b>-terminated string that contains the name of the instance of the device interface. This parameter is optional. The driver can pass <b>NULL</b> if the driver does not have to supply a name. If the driver must supply a name, the string that the driver passes must not contain any path separator characters ("/" or "\\").
 
 ## -returns
@@ -98,7 +97,6 @@ The following code example shows how to create a device interface instance. In t
     }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice">IWDFDevice</a>
@@ -106,3 +104,4 @@ The following code example shows how to create a device interface instance. In t
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice-assigndeviceinterfacestate">IWDFDevice::AssignDeviceInterfaceState</a>
+

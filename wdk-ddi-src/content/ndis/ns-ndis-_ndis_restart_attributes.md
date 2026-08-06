@@ -4,7 +4,6 @@ title: _NDIS_RESTART_ATTRIBUTES (ndis.h)
 description: The NDIS_RESTART_ATTRIBUTES structure identifies an attributes entry in a linked list of restart attributes.
 old-location: netvista\ndis_restart_attributes.htm
 tech.root: netvista
-ms.assetid: 1f9f4b91-bd1f-4daa-ac98-6372bf55c2ab
 ms.date: 05/02/2018
 keywords: ["NDIS_RESTART_ATTRIBUTES structure"]
 ms.keywords: "*PNDIS_RESTART_ATTRIBUTES, NDIS_RESTART_ATTRIBUTES, NDIS_RESTART_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], PNDIS_RESTART_ATTRIBUTES, PNDIS_RESTART_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RESTART_ATTRIBUTES, miniport_structures_ref_64cf43cc-1d89-4de3-9e8e-77d590d44d3c.xml, ndis/NDIS_RESTART_ATTRIBUTES, ndis/PNDIS_RESTART_ATTRIBUTES, netvista.ndis_restart_attributes"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_RESTART_ATTRIBUTES
+ - PNDIS_RESTART_ATTRIBUTES
  - NDIS_RESTART_ATTRIBUTES
 ---
 
@@ -112,7 +113,7 @@ When it restarts a protocol binding, NDIS provides a pointer to an NDIS_RESTART_
     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event_notification">
     NET_PNP_EVENT_NOTIFICATION</a> structure, that NDIS passes to 
     <i>ProtocolNetPnPEvent</i>, contains a 
-    <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event">NET_PNP_EVENT</a> structure. The NET_PNP_EVENT
+    <a href="/windows-hardware/drivers/ddi/netpnp/ns-netpnp-_net_pnp_event">NET_PNP_EVENT</a> structure. The NET_PNP_EVENT
     structure specifies 
     <b>NetEventRestart</b> in the 
     <b>NetEvent</b> member and a pointer to the NDIS_PROTOCOL_RESTART_PARAMETERS structure in the 
@@ -168,3 +169,4 @@ If the restart attributes pointer is not <b>NULL</b>, the linked list of NDIS_RE
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_net_pnp_event">ProtocolNetPnPEvent</a>
+

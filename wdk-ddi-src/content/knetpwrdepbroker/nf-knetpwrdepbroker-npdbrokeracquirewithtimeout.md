@@ -1,10 +1,9 @@
 ---
 UID: NF:knetpwrdepbroker.NpdBrokerAcquireWithTimeout
 title: NpdBrokerAcquireWithTimeout function (knetpwrdepbroker.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the NpdBrokerAcquireWithTimeout function for internal use only. Don't use this function in your code."
 old-location: netvista\npdbrokeracquirewithtimeout.htm
 tech.root: netvista
-ms.assetid: D2067A72-0FF5-4D77-A1F6-0A6984A1735A
 ms.date: 05/02/2018
 keywords: ["NpdBrokerAcquireWithTimeout function"]
 ms.keywords: NpdBrokerAcquireWithTimeout, NpdBrokerAcquireWithTimeout function [Network Drivers Starting with Windows Vista], knetpwrdepbroker/NpdBrokerAcquireWithTimeout, netvista.npdbrokeracquirewithtimeout
@@ -50,13 +49,17 @@ This topic supports the Windows driver infrastructure and is not intended to be 
 
 ## -parameters
 
-### -param hBroker 
+### -param hBroker [in]
 
-[in]
+
 Reserved.
 
-### -param lTimeoutMS 
+### -param lTimeoutMS [in]
 
-[in]
+
 Reserved.
+
+## -returns
+
+Returns STATUS_SUCCESS if the operation completes successfully.
 

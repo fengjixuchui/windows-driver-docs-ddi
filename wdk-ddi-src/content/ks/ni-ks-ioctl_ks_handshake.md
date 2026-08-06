@@ -4,7 +4,6 @@ title: IOCTL_KS_HANDSHAKE (ks.h)
 description: A kernel-mode client can use IOCTL_KS_HANDSHAKE to negotiate an interface between unconnected AVStream pins.
 old-location: stream\ioctl_ks_handshake.htm
 tech.root: stream
-ms.assetid: 63c50af0-365b-4074-a703-9e43b1514a55
 ms.date: 04/23/2018
 keywords: ["IOCTL_KS_HANDSHAKE IOCTL"]
 ms.keywords: IOCTL_KS_HANDSHAKE, IOCTL_KS_HANDSHAKE control, IOCTL_KS_HANDSHAKE control code [Streaming Media Devices], ks-ioctl_f848d65c-b795-439e-a8a1-d4c2e0764ef1.xml, ks/IOCTL_KS_HANDSHAKE, stream.ioctl_ks_handshake
@@ -51,6 +50,8 @@ A kernel-mode client can use IOCTL_KS_HANDSHAKE to negotiate an interface betwee
 To attempt a protocol handshake with a pin that is already connected, call <a href="/windows-hardware/drivers/ddi/ks/nf-ks-kspinhandshake">KsPinHandshake</a>.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

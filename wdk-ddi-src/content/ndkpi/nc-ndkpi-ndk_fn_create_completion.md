@@ -4,7 +4,6 @@ title: NDK_FN_CREATE_COMPLETION (ndkpi.h)
 description: The NdkCreateCompletion (NDK_FN_CREATE_COMPLETION) function completes the creation of an NDK object.
 old-location: netvista\ndk_fn_create_completion.htm
 tech.root: netvista
-ms.assetid: C7A2792C-FDAE-4525-A8B1-7F8F6BA8249A
 ms.date: 05/02/2018
 keywords: ["NDK_FN_CREATE_COMPLETION callback function"]
 ms.keywords: NDK_FN_CREATE_COMPLETION, NDK_FN_CREATE_COMPLETION callback, NdkCreateCompletion, NdkCreateCompletion callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkCreateCompletion, netvista.ndk_fn_create_completion
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkCreateCompletion
+ - NDK_FN_CREATE_COMPLETION
 ---
 
 # NDK_FN_CREATE_COMPLETION callback function
@@ -50,19 +49,19 @@ The <i>NdkCreateCompletion</i> (<i>NDK_FN_CREATE_COMPLETION</i>) function comple
 
 ## -parameters
 
-### -param Context 
+### -param Context [in, optional]
 
-[in, optional]
+
 The context value passed to the NDK provider when a consumer calls an object creation function. The creation function  provides the context with the asynchronous create completion request <i>NdkCreateCompletion</i> (<i>NDK_FN_CREATE_COMPLETION</i>) function pointer.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 The asynchronous completion status for the create request. See the object creation functions (for example, <a href="/windows-hardware/drivers/ddi/ndkpi/nc-ndkpi-ndk_fn_create_cq">NDK_FN_CREATE_CQ</a>) for completion status codes that can be returned for each type of object.
 
-### -param pNdkObject 
+### -param pNdkObject [in]
 
-[in]
+
 A pointer to an NDK object header (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_object_header">NDK_OBJECT_HEADER</a>).
 
 ## -remarks
@@ -124,3 +123,4 @@ For create requests that return STATUS_PENDING and later complete with STATUS_SU
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_object_header">NDK_OBJECT_HEADER</a>
+

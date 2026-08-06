@@ -4,7 +4,6 @@ title: NFC_CX_CLIENT_CONFIG_INIT function (nfccx.h)
 description: The NFC_CX_CLIENT_CONFIG_INIT function initializes the NFC_CX_CLIENT_CONFIG structure.
 old-location: nfpdrivers\nfc_cx_client_config_init.htm
 tech.root: nfpdrivers
-ms.assetid: 0679406E-091D-4E66-956A-54E3A517BF4C
 ms.date: 02/15/2018
 keywords: ["NFC_CX_CLIENT_CONFIG_INIT function"]
 ms.keywords: NFC_CX_CLIENT_CONFIG_INIT, NFC_CX_CLIENT_CONFIG_INIT function [Near-Field Proximity Drivers], nfccx/NFC_CX_CLIENT_CONFIG_INIT, nfpdrivers.nfc_cx_client_config_init
@@ -51,14 +50,14 @@ The <b>NFC_CX_CLIENT_CONFIG_INIT</b> function initializes the <a href="/windows-
 
 ## -parameters
 
-### -param Config 
+### -param Config [out]
 
-[out]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/nfccx/ns-nfccx-_nfc_cx_client_config">NFC_CX_CLIENT_CONFIG</a> structure.
 
-### -param BusType 
+### -param BusType [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/ddi/nfccx/ne-nfccx-_nfc_cx_transport_type">NFC_CX_TRANSPORT_TYPE</a> enumeration.
 
 ## -see-also

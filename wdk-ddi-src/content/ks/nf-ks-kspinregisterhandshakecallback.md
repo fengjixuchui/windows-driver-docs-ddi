@@ -4,7 +4,6 @@ title: KsPinRegisterHandshakeCallback function (ks.h)
 description: The KsPinRegisterHandshakeCallback function registers a minidriver-provided callback routine for a given pin.
 old-location: stream\kspinregisterhandshakecallback.htm
 tech.root: stream
-ms.assetid: a5b9f731-e029-40c2-9fbb-d7a3b63615df
 ms.date: 04/23/2018
 keywords: ["KsPinRegisterHandshakeCallback function"]
 ms.keywords: KsPinRegisterHandshakeCallback, KsPinRegisterHandshakeCallback function [Streaming Media Devices], avfunc_9588944b-a56b-473a-848d-0a01031b6911.xml, ks/KsPinRegisterHandshakeCallback, stream.kspinregisterhandshakecallback
@@ -51,14 +50,14 @@ The<b> KsPinRegisterHandshakeCallback</b> function registers a minidriver-provid
 
 ## -parameters
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a> structure for which to register a handshake callback.
 
-### -param Handshake 
+### -param Handshake [in]
 
-[in]
+
 A pointer to a minidriver-supplied <a href="/windows-hardware/drivers/ddi/ks/nc-ks-pfnkspinhandshake">AVStrMiniPinHandshake</a> routine to be called when AVStream receives a protocol handshake request on <i>Pin</i> that it does not handle.
 
 ## -remarks

@@ -4,7 +4,6 @@ title: WdfDeviceCreateSymbolicLink function (wdfdevice.h)
 description: The WdfDeviceCreateSymbolicLink method creates a symbolic link to a specified device.
 old-location: wdf\wdfdevicecreatesymboliclink.htm
 tech.root: wdf
-ms.assetid: c22035a2-8ceb-42e9-9d54-8997ce0dd8da
 ms.date: 02/26/2018
 keywords: ["WdfDeviceCreateSymbolicLink function"]
 ms.keywords: DFDeviceObjectGeneralRef_f970bbdf-21d6-497c-abc1-84456c95dc79.xml, WdfDeviceCreateSymbolicLink, WdfDeviceCreateSymbolicLink method, kmdf.wdfdevicecreatesymboliclink, wdf.wdfdevicecreatesymboliclink, wdfdevice/WdfDeviceCreateSymbolicLink
@@ -55,14 +54,14 @@ The <b>WdfDeviceCreateSymbolicLink</b> method creates a symbolic link to a speci
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param SymbolicLinkName 
+### -param SymbolicLinkName [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a user-visible name for the device.
 
 ## -returns

@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_GetAllEmergencyNumbers
 title: RIL_GetAllEmergencyNumbers function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_GetAllEmergencyNumbers function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_getallemergencynumbers.htm
 tech.root: netvista
-ms.assetid: 9bb94db6-1d0d-471f-b2a5-71ca659afcd0
 ms.date: 05/02/2018
 keywords: ["RIL_GetAllEmergencyNumbers function"]
 ms.keywords: RIL_GetAllEmergencyNumbers, RIL_GetAllEmergencyNumbers method [Network Drivers Starting with Windows Vista], netvista.ril_getallemergencynumbers, rilapi/RIL_GetAllEmergencyNumbers

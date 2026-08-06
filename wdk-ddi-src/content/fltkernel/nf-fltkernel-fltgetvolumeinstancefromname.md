@@ -4,7 +4,6 @@ title: FltGetVolumeInstanceFromName function (fltkernel.h)
 description: The FltGetVolumeInstanceFromName routine returns an opaque instance pointer for the given minifilter driver instance on the given volume.
 old-location: ifsk\fltgetvolumeinstancefromname.htm
 tech.root: ifsk
-ms.assetid: 25455faa-2197-4b2a-bce8-db9764153e51
 ms.date: 04/16/2018
 keywords: ["FltGetVolumeInstanceFromName function"]
 ms.keywords: FltApiRef_e_to_o_78e7987d-7f24-4c51-b263-502005595c6d.xml, FltGetVolumeInstanceFromName, FltGetVolumeInstanceFromName routine [Installable File System Drivers], fltkernel/FltGetVolumeInstanceFromName, ifsk.fltgetvolumeinstancefromname
@@ -50,24 +49,24 @@ The <b>FltGetVolumeInstanceFromName</b> routine returns an opaque instance point
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in, optional]
 
-[in, optional]
+
 Opaque filter pointer for the minifilter driver that owns the instance. This parameter is optional and can be <b>NULL</b>.
 
-### -param Volume 
+### -param Volume [in]
 
-[in]
+
 Opaque pointer for the volume that the instance is attached to. Must be a valid volume handle. This parameter is required and cannot be <b>NULL</b>. (Setting this parameter to an invalid value causes the system to ASSERT on a checked build.)
 
-### -param InstanceName 
+### -param InstanceName [in, optional]
 
-[in, optional]
+
 Pointer to a caller-allocated <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains the instance name for the instance on the volume. (This is the <i>InstanceName</i> value that was passed to <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltattachvolume">FltAttachVolume</a> or <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltattachvolumeataltitude">FltAttachVolumeAtAltitude</a> when the instance was created.) This parameter is optional and can be <b>NULL</b>. If it is <b>NULL</b>, <b>FltGetVolumeInstanceFromName</b> returns the highest matching instance that is found.
 
-### -param RetInstance 
+### -param RetInstance [out]
 
-[out]
+
 Pointer to a caller-allocated variable that receives an opaque instance pointer for the instance that matches the values for <i>Filter</i>, <i>Volume</i>, and <i>InstanceName</i>. This parameter is required and cannot be <b>NULL</b>.
 
 ## -returns

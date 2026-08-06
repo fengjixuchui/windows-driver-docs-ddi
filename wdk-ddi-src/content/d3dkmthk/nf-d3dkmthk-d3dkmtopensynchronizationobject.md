@@ -3,7 +3,6 @@ UID: NF:d3dkmthk.D3DKMTOpenSynchronizationObject
 title: D3DKMTOpenSynchronizationObject function (d3dkmthk.h)
 description: The D3DKMTOpenSynchronizationObject function opens a kernel-mode synchronization object.
 old-location: display\d3dkmtopensynchronizationobject.htm
-ms.assetid: e6316816-5260-4dd5-9c44-897ed5a88cc8
 ms.date: 05/10/2018
 keywords: ["D3DKMTOpenSynchronizationObject function"]
 ms.keywords: D3DKMTOpenSynchronizationObject, D3DKMTOpenSynchronizationObject function [Display Devices], OpenGL_Functions_c6ae5181-a478-47d7-8f0c-49f4f5a7f318.xml, d3dkmthk/D3DKMTOpenSynchronizationObject, display.d3dkmtopensynchronizationobject
@@ -53,7 +52,7 @@ The <b>D3DKMTOpenSynchronizationObject</b> function opens a kernel-mode synchron
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in, out]
 

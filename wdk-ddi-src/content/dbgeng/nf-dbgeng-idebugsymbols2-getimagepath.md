@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols2.GetImagePath
 title: IDebugSymbols2::GetImagePath (dbgeng.h)
-description: The GetImagePath method returns the executable image path.
+description: The GetImagePath method returns the executable image path. This method belongs to the IDebugSymbols2 interface.
 old-location: debugger\getimagepath.htm
 tech.root: debugger
-ms.assetid: 9310dc82-b80f-45bb-9d8a-1239330bc799
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols2::GetImagePath"]
 ms.keywords: GetImagePath, GetImagePath method [Windows Debugging], GetImagePath method [Windows Debugging],IDebugSymbols interface, GetImagePath method [Windows Debugging],IDebugSymbols2 interface, GetImagePath method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols interface [Windows Debugging],GetImagePath method, IDebugSymbols2 interface [Windows Debugging],GetImagePath method, IDebugSymbols2.GetImagePath, IDebugSymbols2::GetImagePath, IDebugSymbols3 interface [Windows Debugging],GetImagePath method, IDebugSymbols3::GetImagePath, IDebugSymbols::GetImagePath, IDebugSymbols_9d38f509-e800-4090-901b-6dc78710c15f.xml, dbgeng/IDebugSymbols2::GetImagePath, dbgeng/IDebugSymbols3::GetImagePath, dbgeng/IDebugSymbols::GetImagePath, debugger.getimagepath
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.GetImagePath
- - IDebugSymbols2.GetImagePath
- - IDebugSymbols3.GetImagePath
+ - IDebugSymbols2::GetImagePath
 ---
 
 # IDebugSymbols2::GetImagePath
@@ -52,19 +49,19 @@ The <b>GetImagePath</b>  method returns the executable image path.
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Receives the executable image path.  This is a string that contains directories separated by semicolons (<b>;</b>).  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size, in characters, of the <i>Buffer</i> buffer.
 
-### -param PathSize 
+### -param PathSize [out, optional]
 
-[out, optional]
+
 Receives the size, in characters, of the executable image path.
 
 ## -returns
@@ -125,3 +122,4 @@ The executable image path can consist of several directories separated by semico
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-setimagepath">SetImagePath</a>
+

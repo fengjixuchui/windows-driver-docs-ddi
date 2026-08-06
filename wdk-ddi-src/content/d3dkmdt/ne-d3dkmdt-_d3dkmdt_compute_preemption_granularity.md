@@ -4,12 +4,11 @@ title: _D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY (d3dkmdt.h)
 description: Specifies the capabilities for the preemption of graphic processing unit (GPU) compute shader operations that the display miniport driver supports.
 old-location: display\d3dkmdt_compute_preemption_granularity.htm
 tech.root: display
-ms.assetid: d8ed5406-3b76-49a7-961c-0be737b1dda9
 ms.date: 05/10/2018
 keywords: ["D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY enumeration"]
 ms.keywords: D3DKMDT_COMPUTE_PREEMPTION_DISPATCH_BOUNDARY, D3DKMDT_COMPUTE_PREEMPTION_DMA_BUFFER_BOUNDARY, D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY, D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY enumeration [Display Devices], D3DKMDT_COMPUTE_PREEMPTION_NONE, D3DKMDT_COMPUTE_PREEMPTION_SHADER_BOUNDARY, D3DKMDT_COMPUTE_PREEMPTION_THREAD_BOUNDARY, D3DKMDT_COMPUTE_PREEMPTION_THREAD_GROUP_BOUNDARY, _D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY, d3dkmdt/D3DKMDT_COMPUTE_PREEMPTION_DISPATCH_BOUNDARY, d3dkmdt/D3DKMDT_COMPUTE_PREEMPTION_DMA_BUFFER_BOUNDARY, d3dkmdt/D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY, d3dkmdt/D3DKMDT_COMPUTE_PREEMPTION_NONE, d3dkmdt/D3DKMDT_COMPUTE_PREEMPTION_SHADER_BOUNDARY, d3dkmdt/D3DKMDT_COMPUTE_PREEMPTION_THREAD_BOUNDARY, d3dkmdt/D3DKMDT_COMPUTE_PREEMPTION_THREAD_GROUP_BOUNDARY, display.d3dkmdt_compute_preemption_granularity
 req.header: d3dkmdt.h
-req.include-header: D3dkmdt.h
+req.include-header: 
 req.target-type: Windows
 req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: Windows Server 2012
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmdt.h
 api_name:
+ - _D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY
  - D3DKMDT_COMPUTE_PREEMPTION_GRANULARITY
 ---
 
@@ -92,3 +92,4 @@ For example, if one engine supports the preemption of primitive level graphics r
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmdt_preemption_caps">D3DKMDT_PREEMPTION_CAPS</a>
+

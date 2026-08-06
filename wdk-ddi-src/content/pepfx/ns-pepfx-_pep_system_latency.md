@@ -4,7 +4,6 @@ title: _PEP_SYSTEM_LATENCY (pepfx.h)
 description: The PEP_SYSTEM_LATENCY structure specifies the new value for the system latency tolerance.
 old-location: kernel\pep_system_latency.htm
 tech.root: kernel
-ms.assetid: 083ACFD8-A8AE-4205-9E25-497D6A3ADBCD
 ms.date: 04/30/2018
 keywords: ["PEP_SYSTEM_LATENCY structure"]
 ms.keywords: "*PPEP_SYSTEM_LATENCY, PEP_SYSTEM_LATENCY, PEP_SYSTEM_LATENCY structure [Kernel-Mode Driver Architecture], PPEP_SYSTEM_LATENCY, PPEP_SYSTEM_LATENCY structure pointer [Kernel-Mode Driver Architecture], _PEP_SYSTEM_LATENCY, kernel.pep_system_latency, pepfx/PEP_SYSTEM_LATENCY, pepfx/PPEP_SYSTEM_LATENCY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_SYSTEM_LATENCY
+ - PPEP_SYSTEM_LATENCY
  - PEP_SYSTEM_LATENCY
 ---
 
@@ -54,9 +55,9 @@ The <b>PEP_SYSTEM_LATENCY</b> structure specifies the new value for the system l
 
 ## -struct-fields
 
-### -field Latency
+### -field Latency [in]
 
-[in] The overall system latency tolerance, in 100-nanosecond units. This member specifies the maximum latency that the operating system can tolerate in the time required to move a component from a low-power F<i>x</i> state to F0.
+The overall system latency tolerance, in 100-nanosecond units. This member specifies the maximum latency that the operating system can tolerate in the time required to move a component from a low-power F<i>x</i> state to F0.
 
 ## -remarks
 
@@ -65,3 +66,4 @@ This structure is used by the <a href="/windows-hardware/drivers/ddi/pepfx/ns-pe
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_system_latency">PEP_DPM_SYSTEM_LATENCY_UPDATE</a>
+

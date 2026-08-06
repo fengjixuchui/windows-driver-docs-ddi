@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IComparableConcept.Release
 title: IComparableConcept::Release (dbgmodel.h)
-description: Decrements the reference count for an interface on an object.
-ms.assetid: b3628482-1c1e-4a01-94d9-4e357b20b87a
+description: "The IComparableConcept::Release method decrements the reference count for an interface on an object."
 ms.date: 09/21/2018
 keywords: ["IComparableConcept::Release"]
 ms.keywords: IComparableConcept::Release, Release, IComparableConcept.Release, IComparableConcept::Release, IComparableConcept.Release
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IComparableConcept.Release
+ - IComparableConcept::Release
 ---
 
 # IComparableConcept::Release
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IComparableConcept interface](nn-dbgmodel-icomparableconcept.md)
+

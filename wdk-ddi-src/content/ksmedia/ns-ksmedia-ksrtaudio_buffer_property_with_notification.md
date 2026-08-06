@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_23
+UID: NS:ksmedia.KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION
 title: KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION (ksmedia.h)
 description: The KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION structure appends a buffer base address, a requested buffer size, and a notification count to a KSPROPERTY structure.
 old-location: audio\ksrtaudio_buffer_property_with_notification.htm
 tech.root: audio
-ms.assetid: 767c18e3-4455-4d2b-a71a-23ca11f718c8
 ms.date: 05/08/2018
 keywords: ["KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION structure"]
 ms.keywords: "*PKSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION, KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION, KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION structure [Audio Devices], PKSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION, PKSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION structure pointer [Audio Devices], aud-prop_43dd73ce-1c4d-4138-a7c1-9f1f17da5643.xml, audio.ksrtaudio_buffer_property_with_notification, ksmedia/KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION, ksmedia/PKSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION
  - KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION
 ---
 
@@ -48,7 +48,7 @@ api_name:
 
 ## -description
 
-The KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION structure appends a buffer base address, a requested buffer size, and a notification count to a <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure.  This structure is used by the client to request allocation of the audio buffer via <a href="/windows-hardware/drivers/audio/ksproperty-rtaudio-buffer-with-notification">KSPROPERTY_RTAUDIO_BUFFER_WITH_NOTIFICATION</a>.
+The KSRTAUDIO_BUFFER_PROPERTY_WITH_NOTIFICATION structure appends a buffer base address, a requested buffer size, and a notification count to a <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure.  This structure is used by the client to request allocation of the audio buffer via <a href="/windows-hardware/drivers/audio/ksproperty-rtaudio-buffer-with-notification">KSPROPERTY_RTAUDIO_BUFFER_WITH_NOTIFICATION</a>.
 
 ## -struct-fields
 
@@ -78,7 +78,7 @@ Using KSPROPERTY_RTAUDIO_BUFFER_WITH_NOTIFICATION facilitates event signaling as
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -91,3 +91,4 @@ Using KSPROPERTY_RTAUDIO_BUFFER_WITH_NOTIFICATION facilitates event signaling as
 
 
 <a href="/windows-hardware/drivers/audio/ksproperty-rtaudio-unregister-notification-event">KSPROPERTY_RTAUDIO_UNREGISTER_NOTIFICATION_EVENT</a>
+

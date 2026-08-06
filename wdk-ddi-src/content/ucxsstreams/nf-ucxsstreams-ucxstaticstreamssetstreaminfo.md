@@ -4,7 +4,6 @@ title: UcxStaticStreamsSetStreamInfo function (ucxsstreams.h)
 description: Sets stream information for each stream enabled by the client driver.
 old-location: buses\_ucxstaticstreamssetstreaminfo.htm
 tech.root: usbref
-ms.assetid: 40AE9327-ABB7-4A63-AC90-494E2BC26C08
 ms.date: 05/07/2018
 keywords: ["UcxStaticStreamsSetStreamInfo function"]
 ms.keywords: UcxStaticStreamsSetStreamInfo, UcxStaticStreamsSetStreamInfo method [Buses], buses._ucxstaticstreamssetstreaminfo
@@ -50,14 +49,14 @@ Sets stream information for each stream enabled by the client driver.
 
 ## -parameters
 
-### -param StaticStreams 
+### -param StaticStreams [in]
 
-[in]
+
                 The handle to the Static Streams object just been created.
 
-### -param StreamInfo 
+### -param StreamInfo [in]
 
-[in]
+
                 A pointer to a <a href="/windows-hardware/drivers/ddi/ucxsstreams/ns-ucxsstreams-_stream_info">STREAM_INFO</a> structure that contains static stream-related information.
 
 ## -remarks

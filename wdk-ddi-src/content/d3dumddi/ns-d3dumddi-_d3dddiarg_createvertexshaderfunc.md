@@ -4,7 +4,6 @@ title: _D3DDDIARG_CREATEVERTEXSHADERFUNC (d3dumddi.h)
 description: The D3DDDIARG_CREATEVERTEXSHADERFUNC structure specifies a shader handle to associate with vertex shader code.
 old-location: display\d3dddiarg_createvertexshaderfunc.htm
 tech.root: display
-ms.assetid: 2517b7a9-76f5-46f6-9225-18081cd1d357
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_CREATEVERTEXSHADERFUNC structure"]
 ms.keywords: D3DDDIARG_CREATEVERTEXSHADERFUNC, D3DDDIARG_CREATEVERTEXSHADERFUNC structure [Display Devices], UMDisplayDriver_param_Structs_cbcea02a-d591-4226-8896-f8392c4b67de.xml, _D3DDDIARG_CREATEVERTEXSHADERFUNC, d3dumddi/D3DDDIARG_CREATEVERTEXSHADERFUNC, display.d3dddiarg_createvertexshaderfunc
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_CREATEVERTEXSHADERFUNC
  - D3DDDIARG_CREATEVERTEXSHADERFUNC
 ---
 
@@ -52,13 +52,13 @@ The D3DDDIARG_CREATEVERTEXSHADERFUNC structure specifies a shader handle to asso
 
 ## -struct-fields
 
-### -field Size
+### -field Size [in]
 
-[in] The size, in bytes, of the vertex shader code that is passed to the <i>pCode</i> parameter in a call to the user-mode display driver's <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createvertexshaderfunc">CreateVertexShaderFunc</a> function.
+The size, in bytes, of the vertex shader code that is passed to the <i>pCode</i> parameter in a call to the user-mode display driver's <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createvertexshaderfunc">CreateVertexShaderFunc</a> function.
 
-### -field ShaderHandle
+### -field ShaderHandle [out]
 
-[out] A handle to the vertex shader code.
+A handle to the vertex shader code.
 
 ## -remarks
 
@@ -67,3 +67,4 @@ For more information about programming shader assemblers, see <a href="/windows-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createvertexshaderfunc">CreateVertexShaderFunc</a>
+

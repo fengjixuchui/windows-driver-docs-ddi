@@ -4,7 +4,6 @@ title: IWDTFCONFIG2 (wdtf.h)
 description: Defines operations that control WDTF objects within a test script.
 old-location: dtf\iwdtfconfig2.htm
 tech.root: dtf
-ms.assetid: 7cc3775e-d116-4852-9b1a-606d909d878b
 ms.date: 04/04/2018
 keywords: ["IWDTFCONFIG2 interface"]
 ms.keywords: IWDTFCONFIG2, IWDTFCONFIG2 interface [Windows Device Testing Framework], IWDTFCONFIG2 interface [Windows Device Testing Framework],described, Microsoft.WDTF.IWDTFCONFIG2, dtf.iwdtfconfig2, wdtf/IWDTFCONFIG2
@@ -53,9 +52,7 @@ Defines operations that control <b>WDTF</b> objects within a test script.
 The <b>IWDTFCONFIG2</b> interface inherits from the <a href="/windows/win32/api/oaidl/nn-oaidl-idispatch">IDispatch</a> interface.
 
 <b>IWDTFCONFIG2</b> also has these types of members:
-<ul>
-<li>Methods</li>
-</ul>
+
 
 ## -remarks
 
@@ -68,8 +65,6 @@ The following example shows the logging output for a call to
 
 
 ```
-
-[ Ouput ]
 
 WDTF_TARGETS    : INFO  :  - Query("Volume::")
 WDTF_TARGETS    : INFO  :          Target: Generic volume

@@ -4,7 +4,6 @@ title: _PEP_KERNEL_INFORMATION_STRUCT_V3 (pepfx.h)
 description: The PEP_KERNEL_INFORMATION_STRUCT_V3 structure specifies the interface that the power extension plug-in (PEP) uses to request services from the Windows power management framework (PoFx).
 old-location: kernel\pep_kernel_information_struct_v3.htm
 tech.root: kernel
-ms.assetid: AA3E273F-FCC0-4633-8A4C-194DA1C0E0D7
 ms.date: 04/30/2018
 keywords: ["PEP_KERNEL_INFORMATION_STRUCT_V3 structure"]
 ms.keywords: "*PPEP_KERNEL_INFORMATION, *PPEP_KERNEL_INFORMATION_STRUCT_V3, PEP_KERNEL_INFORMATION, PEP_KERNEL_INFORMATION_STRUCT_V3, PEP_KERNEL_INFORMATION_STRUCT_V3 structure [Kernel-Mode Driver Architecture], PPEP_KERNEL_INFORMATION_STRUCT_V3, PPEP_KERNEL_INFORMATION_STRUCT_V3 structure pointer [Kernel-Mode Driver Architecture], _PEP_KERNEL_INFORMATION_STRUCT_V3, kernel.pep_kernel_information_struct_v3, pepfx/PEP_KERNEL_INFORMATION_STRUCT_V3, pepfx/PPEP_KERNEL_INFORMATION_STRUCT_V3"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_KERNEL_INFORMATION_STRUCT_V3
+ - PPEP_KERNEL_INFORMATION_STRUCT_V3
  - PEP_KERNEL_INFORMATION_STRUCT_V3
 ---
 
@@ -50,7 +51,7 @@ api_name:
 
 ## -description
 
-The <b>PEP_KERNEL_INFORMATION_STRUCT_V3</b> structure specifies the interface that the power extension plug-in (PEP) uses to request services from the Windows <a href="/windows-hardware/drivers/ddi/index">power management framework</a> (PoFx).
+The <b>PEP_KERNEL_INFORMATION_STRUCT_V3</b> structure specifies the interface that the power extension plug-in (PEP) uses to request services from the Windows <a href="/windows-hardware/drivers/ddi/_kernel/#device-power-management">power management framework</a> (PoFx).
 
 ## -struct-fields
 
@@ -104,7 +105,7 @@ A pointer to an <a href="/windows-hardware/drivers/ddi/pepfx/nc-pepfx-pofxcallba
 
 ### -field RequestCommon
 
-A pointer to an <a href="/windows-hardware/drivers/ddi/pepfx/nc-pepfx-pofxcallbackrequestcommon">RequestCommon</a> routine. PoFx sets the value of this member. The <b>RequestCommon</b> routine is implemented by PoFx. The PEP calls this routine to perform a processing operation that is specified by a request ID.
+A pointer to a <a href="/windows-hardware/drivers/ddi/pepfx/nc-pepfx-pofxcallbackrequestcommon">RequestCommon</a> routine. PoFx sets the value of this member. The <b>RequestCommon</b> routine is implemented by PoFx. The PEP calls this routine to perform a processing operation that is specified by a request ID.
 
 ## -remarks
 
@@ -157,3 +158,4 @@ The <b>KernelInformation</b> parameter to the <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/ddi/pepfx/nc-pepfx-pofxcallbackupdateprocessoridlestate">UpdateProcessorIdleState</a>
+

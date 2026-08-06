@@ -4,7 +4,6 @@ title: IPortClsNotifications::AllocNotificationBuffer (portcls.h)
 description: Allocates a buffer of the specified size, in the specified memory pool, for use in sending notifications, to allow for communications between audio modules and UWP apps.
 old-location: audio\iportclsnotifications_allocnotification.htm
 tech.root: audio
-ms.assetid: 23DBA3D8-FC27-4F5D-9F1C-A22B6C2856D2
 ms.date: 05/08/2018
 keywords: ["IPortClsNotifications::AllocNotificationBuffer"]
 ms.keywords: AllocNotificationBuffer, AllocNotificationBuffer method [Audio Devices], AllocNotificationBuffer method [Audio Devices],IPortClsNotifications interface, IPortClsNotifications interface [Audio Devices],AllocNotificationBuffer method, IPortClsNotifications.AllocNotificationBuffer, IPortClsNotifications::AllocNotificationBuffer, audio.iportclsnotifications_allocnotification, portcls/IPortClsNotifications::AllocNotificationBuffer
@@ -39,7 +38,7 @@ api_location:
  - Portcls.lib
  - Portcls.dll
 api_name:
- - IPortClsNotifications.AllocNotificationBuffer
+ - IPortClsNotifications::AllocNotificationBuffer
 ---
 
 # IPortClsNotifications::AllocNotificationBuffer
@@ -53,19 +52,19 @@ For more information about audio modules, see <a href="/windows-hardware/drivers
 
 ## -parameters
 
-### -param PoolType 
+### -param PoolType [in]
 
-[in]
+
 Specifies the type of memory pool from which the object is to be allocated (see <a href="/windows-hardware/drivers/ddi/wdm/ne-wdm-_pool_type">POOL_TYPE</a>). The recommended values are NonPagedPoolNx or PagedPool. The memory pool type selection also depends on the IRQL level. If running at DISPATCH_LEVEL the memory must be non-paged.
 
-### -param NumberOfBytes 
+### -param NumberOfBytes [in]
 
-[in]
+
 Number of bytes to allocate.
 
-### -param NotificationBuffer 
+### -param NotificationBuffer [out]
 
-[out]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcnotification_buffer">PCNOTIFICATION_BUFFER</a> which the method writes the address of the allocated notification.
 
 ## -returns
@@ -89,3 +88,4 @@ Callers of <b>AllocNotificationBuffer</b> must be running at IRQL <= DISPATCH_LE
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iportclsnotifications">IPortClsNotifications</a>
+

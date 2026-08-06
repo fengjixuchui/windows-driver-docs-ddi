@@ -1,10 +1,9 @@
 ---
 UID: NS:srb._SRBEX_DATA_IO_INFO
 title: _SRBEX_DATA_IO_INFO (srb.h)
-description: The SRBEX_DATA_IO_INFO structure contains additional information related to a read or write request in an extended SRB.
+description: The _SRBEX_DATA_IO_INFO structure (srb.h) contains additional information related to a read or write request in an extended SCSI Request Block (SRB).
 old-location: storage\srbex_data_io_info.htm
 tech.root: storage
-ms.assetid: D4B99D6F-0A0C-49CE-A8E2-19C1A835EDA6
 ms.date: 03/29/2018
 keywords: ["SRBEX_DATA_IO_INFO structure"]
 ms.keywords: "*PSRBEX_DATA_IO_INFO, PSRBEX_DATA_IO_INFO, PSRBEX_DATA_IO_INFO structure pointer [Storage Devices], REQUEST_INFO_HYBRID_WRITE_THROUGH_FLAG, REQUEST_INFO_NO_CACHE_FLAG, REQUEST_INFO_PAGING_IO_FLAG, REQUEST_INFO_SEQUENTIAL_IO_FLAG, REQUEST_INFO_TEMPORARY_FLAG, REQUEST_INFO_VALID_CACHEPRIORITY_FLAG, REQUEST_INFO_WRITE_THROUGH_FLAG, SRBEX_DATA_IO_INFO, SRBEX_DATA_IO_INFO structure [Storage Devices], _SRBEX_DATA_IO_INFO, storage.srbex_data_io_info, storport/PSRBEX_DATA_IO_INFO, storport/SRBEX_DATA_IO_INFO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Storport.h
 api_name:
+ - _SRBEX_DATA_IO_INFO
+ - PSRBEX_DATA_IO_INFO
  - SRBEX_DATA_IO_INFO
 ---
 
@@ -179,3 +180,4 @@ This member is present starting with Windows 8.1 Update.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/srb/ns-srb-_storage_request_block">STORAGE_REQUEST_BLOCK</a>
+

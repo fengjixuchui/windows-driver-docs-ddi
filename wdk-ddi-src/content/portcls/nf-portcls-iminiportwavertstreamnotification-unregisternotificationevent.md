@@ -4,7 +4,6 @@ title: IMiniportWaveRTStreamNotification::UnregisterNotificationEvent (portcls.h
 description: The UnregisterNotificationEvent method unregisters an event from DMA driven event notification.
 old-location: audio\iminiportwavertstreamnotification_unregisternotificationevent.htm
 tech.root: audio
-ms.assetid: 5b264784-7680-4c3b-9fc7-0609c53b53a2
 ms.date: 05/08/2018
 keywords: ["IMiniportWaveRTStreamNotification::UnregisterNotificationEvent"]
 ms.keywords: IMiniportWaveRTStreamNotification interface [Audio Devices],UnregisterNotificationEvent method, IMiniportWaveRTStreamNotification.UnregisterNotificationEvent, IMiniportWaveRTStreamNotification::UnregisterNotificationEvent, UnregisterNotificationEvent, UnregisterNotificationEvent method [Audio Devices], UnregisterNotificationEvent method [Audio Devices],IMiniportWaveRTStreamNotification interface, audio.iminiportwavertstreamnotification_unregisternotificationevent, audmp-routines_db635e04-50ae-4aed-b5a5-dfb33f14d153.xml, portcls/IMiniportWaveRTStreamNotification::UnregisterNotificationEvent
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Passive level.
+req.irql: PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWaveRTStreamNotification.UnregisterNotificationEvent
+ - IMiniportWaveRTStreamNotification::UnregisterNotificationEvent
 ---
 
 # IMiniportWaveRTStreamNotification::UnregisterNotificationEvent
@@ -50,9 +49,9 @@ The <code>UnregisterNotificationEvent</code> method unregisters an event from DM
 
 ## -parameters
 
-### -param NotificationEvent 
+### -param NotificationEvent [in]
 
-[in]
+
 A pointer to a previously registered kernel event (PKEVENT) to be unregistered from notification as DMA progresses.
 
 ## -returns
@@ -70,3 +69,4 @@ The port driver calls this method in response to a <a href="/windows-hardware/dr
 
 
 <a href="/windows-hardware/drivers/audio/ksproperty-rtaudio-unregister-notification-event">KSPROPERTY_RTAUDIO_UNREGISTER_NOTIFICATION_EVENT</a>
+

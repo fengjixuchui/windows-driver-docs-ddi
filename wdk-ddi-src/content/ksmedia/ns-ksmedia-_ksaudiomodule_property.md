@@ -4,7 +4,6 @@ title: _KSAUDIOMODULE_PROPERTY (ksmedia.h)
 description: The KSAUDIOMODULE_DESCRIPTOR structure describes the static, external properties of the audio modules.
 old-location: audio\ksaudiomodule_property.htm
 tech.root: audio
-ms.assetid: 1DE3F065-6F8E-402F-87EF-F9582E31BFFE
 ms.date: 05/08/2018
 keywords: ["KSAUDIOMODULE_PROPERTY structure"]
 ms.keywords: "*PKSAUDIOMODULE_PROPERTY, KSAUDIOMODULE_PROPERTY, KSAUDIOMODULE_PROPERTY structure [Audio Devices], PKSAUDIOMODULE_PROPERTY, PKSAUDIOMODULE_PROPERTY structure pointer [Audio Devices], _KSAUDIOMODULE_PROPERTY, audio.ksaudiomodule_property, ksmedia/KSAUDIOMODULE_PROPERTY, ksmedia/PKSAUDIOMODULE_PROPERTY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ksmedia.h
 api_name:
+ - _KSAUDIOMODULE_PROPERTY
+ - PKSAUDIOMODULE_PROPERTY
  - KSAUDIOMODULE_PROPERTY
 ---
 
@@ -50,7 +51,7 @@ api_name:
 
 ## -description
 
-The <b>KSAUDIOMODULE_DESCRIPTOR</b> structure describes the static, external  properties of the audio modules.
+The <b>KSAUDIOMODULE_PROPERTY</b> structure describes the static, external  properties of the audio modules.
 
 ## -struct-fields
 
@@ -64,7 +65,7 @@ The ClassId of the audio module. The ClassId is an identifier that establishes w
 
 ### -field InstanceId
 
-The InstanceId of the audio module.  The InstanceId is a unique identifier that distinguishes this instance of a module from another instance of an module.
+The InstanceId of the audio module.  The InstanceId is a unique identifier that distinguishes this instance of a module from another instance of a module.
 
 ## -remarks
 
@@ -73,3 +74,4 @@ For more information about audio modules, see  <a href="/windows-hardware/driver
 ## -see-also
 
 <a href="/windows-hardware/drivers/audio/ksproperty-audiomodule-descriptors">KSPROPERTY_AUDIOMODULE_DESCRIPTORS</a>
+

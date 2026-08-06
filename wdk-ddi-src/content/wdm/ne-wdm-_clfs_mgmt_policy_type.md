@@ -4,7 +4,6 @@ title: _CLFS_MGMT_POLICY_TYPE (wdm.h)
 description: The CLFS_MGMT_POLICY_TYPE enumeration type identifies the type of a CLFS management policy.
 old-location: kernel\clfs_mgmt_policy_type.htm
 tech.root: kernel
-ms.assetid: 50e31ff1-07f2-4781-81f2-8db6e3cf9cc6
 ms.date: 04/30/2018
 keywords: ["CLFS_MGMT_POLICY_TYPE enumeration"]
 ms.keywords: "*PCLFS_MGMT_POLICY_TYPE, CLFS_MGMT_POLICY_TYPE, CLFS_MGMT_POLICY_TYPE enumeration [Kernel-Mode Driver Architecture], ClfsMgmtPolicyAutoGrow, ClfsMgmtPolicyAutoShrink, ClfsMgmtPolicyGrowthRate, ClfsMgmtPolicyInvalid, ClfsMgmtPolicyLogTail, ClfsMgmtPolicyMaximumSize, ClfsMgmtPolicyMinimumSize, ClfsMgmtPolicyNewContainerExtension, ClfsMgmtPolicyNewContainerPrefix, ClfsMgmtPolicyNewContainerSize, ClfsMgmtPolicyNewContainerSuffix, PCLFS_MGMT_POLICY_TYPE, PCLFS_MGMT_POLICY_TYPE enumeration pointer [Kernel-Mode Driver Architecture], _CLFS_MGMT_POLICY_TYPE, kernel.clfs_mgmt_policy_type, sysenum_bae8275b-5f70-40fb-ae14-f803eaeb0a42.xml, wdm/CLFS_MGMT_POLICY_TYPE, wdm/ClfsMgmtPolicyAutoGrow, wdm/ClfsMgmtPolicyAutoShrink, wdm/ClfsMgmtPolicyGrowthRate, wdm/ClfsMgmtPolicyInvalid, wdm/ClfsMgmtPolicyLogTail, wdm/ClfsMgmtPolicyMaximumSize, wdm/ClfsMgmtPolicyMinimumSize, wdm/ClfsMgmtPolicyNewContainerExtension, wdm/ClfsMgmtPolicyNewContainerPrefix, wdm/ClfsMgmtPolicyNewContainerSize, wdm/ClfsMgmtPolicyNewContainerSuffix, wdm/PCLFS_MGMT_POLICY_TYPE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _CLFS_MGMT_POLICY_TYPE
+ - PCLFS_MGMT_POLICY_TYPE
  - CLFS_MGMT_POLICY_TYPE
 ---
 
@@ -105,3 +106,4 @@ Each type of CLFS management policy corresponds to a specific interpretation of 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_clfs_mgmt_policy">CLFS_MGMT_POLICY</a>
+

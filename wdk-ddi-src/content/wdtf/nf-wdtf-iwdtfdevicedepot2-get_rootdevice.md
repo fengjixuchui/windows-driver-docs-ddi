@@ -4,8 +4,7 @@ title: IWDTFDeviceDepot2::get_RootDevice (wdtf.h)
 description: Gets the root device.
 old-location: dtf\iwdtfdevicedepot2_rootdevice.htm
 tech.root: dtf
-ms.assetid: c0d055fb-16d0-41d4-a4d7-af7505f3f7d8
-ms.date: 04/04/2018
+ms.date: 08/14/2023
 keywords: ["IWDTFDeviceDepot2::get_RootDevice"]
 ms.keywords: IWDTFDeviceDepot2 interface [Windows Device Testing Framework],RootDevice property, IWDTFDeviceDepot2.RootDevice, IWDTFDeviceDepot2.get_RootDevice, IWDTFDeviceDepot2::RootDevice, IWDTFDeviceDepot2::get_RootDevice, Microsoft.WDTF.IWDTFDeviceDepot2.RootDevice, Microsoft::WDTF::IWDTFDeviceDepot2::RootDevice, RootDevice property [Windows Device Testing Framework], RootDevice property [Windows Device Testing Framework],IWDTFDeviceDepot2 interface, dtf.iwdtfdevicedepot2_rootdevice, get_RootDevice, wdtf/IWDTFDeviceDepot2::RootDevice, wdtf/IWDTFDeviceDepot2::get_RootDevice
 req.header: wdtf.h
@@ -38,12 +37,10 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFDeviceDepot2.RootDevice
- - IWDTFDeviceDepot2.get_RootDevice
+ - IWDTFDeviceDepot2::get_RootDevice
 ---
 
 # IWDTFDeviceDepot2::get_RootDevice
-
 
 ## -description
 
@@ -53,6 +50,10 @@ This property is read-only.
 
 ## -parameters
 
+### -param pVal
+
+### -returns
+
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtfdevicedepot2">IWDTFDeviceDepot2</a>
@@ -60,3 +61,4 @@ This property is read-only.
 
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftarget2">IWDTFTarget2</a>
+

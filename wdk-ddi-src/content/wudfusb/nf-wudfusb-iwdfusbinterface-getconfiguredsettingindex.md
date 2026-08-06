@@ -4,7 +4,6 @@ title: IWDFUsbInterface::GetConfiguredSettingIndex (wudfusb.h)
 description: The GetConfiguredSettingIndex method retrieves the current setting index for a USB interface.
 old-location: wdf\iwdfusbinterface_getconfiguredsettingindex.htm
 tech.root: wdf
-ms.assetid: 0deccfee-34e3-47ee-b141-9758cffcd0c2
 ms.date: 02/26/2018
 keywords: ["IWDFUsbInterface::GetConfiguredSettingIndex"]
 ms.keywords: GetConfiguredSettingIndex, GetConfiguredSettingIndex method, GetConfiguredSettingIndex method,IWDFUsbInterface interface, IWDFUsbInterface interface,GetConfiguredSettingIndex method, IWDFUsbInterface.GetConfiguredSettingIndex, IWDFUsbInterface::GetConfiguredSettingIndex, UMDFUSBref_5c2cdbd4-d660-4933-b1fb-a99852b5cba8.xml, umdf.iwdfusbinterface_getconfiguredsettingindex, wdf.iwdfusbinterface_getconfiguredsettingindex, wudfusb/IWDFUsbInterface::GetConfiguredSettingIndex
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFUsbInterface.GetConfiguredSettingIndex
+ - IWDFUsbInterface::GetConfiguredSettingIndex
 ---
 
 # IWDFUsbInterface::GetConfiguredSettingIndex
@@ -69,3 +68,4 @@ The <b>GetConfiguredSettingIndex</b> method is provided for convenience because 
 
 
 <a href="/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_interface_descriptor">USB_INTERFACE_DESCRIPTOR</a>
+

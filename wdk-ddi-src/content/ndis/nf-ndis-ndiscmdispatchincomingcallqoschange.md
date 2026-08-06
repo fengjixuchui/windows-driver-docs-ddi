@@ -4,7 +4,6 @@ title: NdisCmDispatchIncomingCallQoSChange function (ndis.h)
 description: NdisCmDispatchIncomingCallQoSChange notifies a client that a request to change the quality of service on that client's active connection has been received over the network.
 old-location: netvista\ndiscmdispatchincomingcallqoschange.htm
 tech.root: netvista
-ms.assetid: eee2625e-6dc8-4f54-81e9-2d31d25f62d7
 ms.date: 05/02/2018
 keywords: ["NdisCmDispatchIncomingCallQoSChange function"]
 ms.keywords: NdisCmDispatchIncomingCallQoSChange, NdisCmDispatchIncomingCallQoSChange function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_01f18e60-ebc6-4192-9544-a57b07a4575e.xml, ndis/NdisCmDispatchIncomingCallQoSChange, netvista.ndiscmdispatchincomingcallqoschange
@@ -52,18 +51,18 @@ api_name:
 
 ## -parameters
 
-### -param NdisVcHandle 
+### -param NdisVcHandle [in]
 
-[in]
+
 Specifies the handle to the VC for which the change in QoS is being requested. The call manager
      originally obtained this handle either when it called 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscocreatevc">NdisCoCreateVc</a> to set up this connection
      for an incoming call or as an input parameter to its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_create_vc">ProtocolCoCreateVc</a> function.
 
-### -param CallParameters 
+### -param CallParameters [in]
 
-[in]
+
 Pointer to a structure of type 
      <a href="/previous-versions/windows/hardware/network/ff545384(v=vs.85)">CO_CALL_PARAMETERS</a> that specifies the new
      QoS, requested by the client on the remote node, for this connection.

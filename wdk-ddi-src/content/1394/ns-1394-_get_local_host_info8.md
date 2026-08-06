@@ -4,7 +4,6 @@ title: _GET_LOCAL_HOST_INFO8 (1394.h)
 description: The GET_LOCAL_HOST_INFO8 structure contains the data returned by a REQUEST_GET_LOCAL_HOST_INFO request with u.GetLocalHostInformation.nLevel set to GET_HOST_DDI_VERSION.
 old-location: ieee\get_local_host_info8.htm
 tech.root: IEEE
-ms.assetid: DA30F8BA-B920-458E-B7C7-8D7B7081507A
 ms.date: 02/15/2018
 keywords: ["GET_LOCAL_HOST_INFO8 structure"]
 ms.keywords: "*PGET_LOCAL_HOST_INFO8, 1394/GET_LOCAL_HOST_INFO8, 1394/PGET_LOCAL_HOST_INFO8, GET_LOCAL_HOST_INFO8, GET_LOCAL_HOST_INFO8 structure [Buses], IEEE.get_local_host_info8, PGET_LOCAL_HOST_INFO8, PGET_LOCAL_HOST_INFO8 structure pointer [Buses], _GET_LOCAL_HOST_INFO8"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _GET_LOCAL_HOST_INFO8
+ - PGET_LOCAL_HOST_INFO8
  - GET_LOCAL_HOST_INFO8
 ---
 
@@ -50,7 +51,7 @@ api_name:
 
 ## -description
 
-The <b>GET_LOCAL_HOST_INFO8</b> structure contains the data returned by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a> request with <b>u.GetLocalHostInformation.nLevel</b> set to GET_HOST_DDI_VERSION.
+The <b>GET_LOCAL_HOST_INFO8</b> structure contains the data returned by a <a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_GET_LOCAL_HOST_INFO</a> request with <b>u.GetLocalHostInformation.nLevel</b> set to GET_HOST_DDI_VERSION.
 
 ## -struct-fields
 
@@ -67,7 +68,7 @@ The minor version of the 1394 bus driver interface.
 A client driver can determine whether the 1394 bus driver
 loaded in the IEEE 1394 driver stack is the new 1394 bus driver or the legacy
 1394 bus driver. A new <b>nLevel</b> value has been added
-to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a> I/O
+to the <a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_GET_LOCAL_HOST_INFO</a> I/O
 request to return the version of the DDIs that the 1394 bus driver supports.
 
 
@@ -76,7 +77,7 @@ driver or the legacy 1394 bus driver,
 
 <ol>
 <li>The client driver must send
-the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a> request with <b>nLevel</b>
+the <a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_GET_LOCAL_HOST_INFO</a> request with <b>nLevel</b>
 set to GET_HOST_DDI_VERSION. If the driver stack contains the new 1394 bus
 driver, the request returns a status value of STATUS_SUCCESS. Otherwise, the
 legacy 1394 bus driver returns a status value of

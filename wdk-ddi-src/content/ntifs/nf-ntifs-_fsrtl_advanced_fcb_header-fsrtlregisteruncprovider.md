@@ -4,7 +4,6 @@ title: FsRtlRegisterUncProvider function (ntifs.h)
 description: The FsRtlRegisterUncProvider routine registers a network redirector as a universal naming convention (UNC) provider with the system multiple UNC provider (MUP).
 old-location: ifsk\fsrtlregisteruncprovider.htm
 tech.root: ifsk
-ms.assetid: 25bd13de-cbac-408f-b985-e131499f05f0
 ms.date: 04/16/2018
 keywords: ["FsRtlRegisterUncProvider function"]
 ms.keywords: FsRtlRegisterUncProvider, FsRtlRegisterUncProvider routine [Installable File System Drivers], fsrtlref_275d75b9-0033-4cfc-bb22-5ebfcab8d6ba.xml, ifsk.fsrtlregisteruncprovider, ntifs/FsRtlRegisterUncProvider
@@ -53,18 +52,18 @@ The <b>FsRtlRegisterUncProvider</b> routine registers a network redirector as a 
 
 ## -parameters
 
-### -param MupHandle 
+### -param MupHandle [out]
 
-[out]
+
 A pointer to a location in which to return a MUP handle to be used when calling <b>FsRtlRegisterUncProvider</b> to deregister the network redirector. The returned handle is valid only if <b>FsRtlRegisterUncProvider</b> returns STATUS_SUCCESS.
 
 ### -param RedirectorDeviceName
 
 <p>A pointer to a Unicode string that contains the device name of the network redirector. </p>
 
-### -param MailslotsSupported 
+### -param MailslotsSupported [in]
 
-[in]
+
 Set to <b>TRUE</b> if the network redirector supports mailslots. This option is normally reserved for use by the Microsoft SMB redirector.
 
 ## -returns

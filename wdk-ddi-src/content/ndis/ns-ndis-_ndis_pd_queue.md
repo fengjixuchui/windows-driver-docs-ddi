@@ -4,7 +4,6 @@ title: _NDIS_PD_QUEUE (ndis.h)
 description: This structure represents a provider's receive or transmit queue.
 old-location: netvista\ndis_pd_queue.htm
 tech.root: netvista
-ms.assetid: 5405A9A6-243B-4E80-85D7-46C6FCC8339F
 ms.date: 05/02/2018
 keywords: ["NDIS_PD_QUEUE structure"]
 ms.keywords: NDIS_PD_QUEUE, NDIS_PD_QUEUE structure [Network Drivers Starting with Windows Vista], PNDIS_PD_QUEUE, PNDIS_PD_QUEUE structure pointer [Network Drivers Starting with Windows Vista], _NDIS_PD_QUEUE, ndis/NDIS_PD_QUEUE, ndis/PNDIS_PD_QUEUE, netvista.ndis_pd_queue
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
+ - _NDIS_PD_QUEUE
  - NDIS_PD_QUEUE
 ---
 
@@ -54,7 +54,7 @@ This structure represents a provider's receive or transmit queue
 
 ### -field Header
 
-The <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the <b>NDIS_PD_QUEUE</b> structure. Set the members of this structure as follows:
+The <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the <b>NDIS_PD_QUEUE</b> structure. Set the members of this structure as follows:
 
 <ul>
 <li><b>Type</b> = <b>NDIS_OBJECT_TYPE_PD_TRANSMIT_QUEUE</b> or <b>NDIS_OBJECT_TYPE_PD_RECEIVE_QUEUE</b></li>
@@ -80,4 +80,5 @@ Reserved for the client.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
+

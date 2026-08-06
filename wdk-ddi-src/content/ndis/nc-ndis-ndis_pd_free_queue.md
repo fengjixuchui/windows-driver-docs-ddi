@@ -4,7 +4,6 @@ title: NDIS_PD_FREE_QUEUE (ndis.h)
 description: The PacketDirect (PD) platform calls a PD-capable miniport driver's NdisPDFreeQueue function to free a queue.
 old-location: netvista\ndispdfreequeue.htm
 tech.root: netvista
-ms.assetid: 1DE8582C-AF11-4CBA-8F4C-159266A7F3BA
 ms.date: 05/02/2018
 keywords: ["NDIS_PD_FREE_QUEUE callback function"]
 ms.keywords: NDIS_PD_FREE_QUEUE, NDIS_PD_FREE_QUEUE callback, NdisPDFreeQueue, NdisPDFreeQueue callback function [Network Drivers Starting with Windows Vista], ndis/NdisPDFreeQueue, netvista.ndispdfreequeue
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - NdisPDFreeQueue
+ - NDIS_PD_FREE_QUEUE
 ---
 
 # NDIS_PD_FREE_QUEUE callback function
@@ -53,9 +52,9 @@ The PacketDirect (PD) platform calls a PD-capable miniport driver's
 
 ## -parameters
 
-### -param NdisPDQueue 
+### -param NdisPDQueue [in]
 
-[in]
+
 Any empty queue that needs to be freed from memory. For more information, see the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_queue">NDIS_PD_QUEUE</a> structure.
 
 ## -returns
@@ -91,3 +90,4 @@ VOID
 The <b>NDIS_PD_FREE_QUEUE</b> function type is defined in the Ntddndis.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition.  The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>NDIS_PD_FREE_QUEUE</b> function type in the header file are used.  For more information about the requirements for function declarations, see <a href="/windows-hardware/drivers/devtest/declaring-functions-by-using-function-role-types-for-ndis-drivers">Declaring Functions by Using Function Role Types for NDIS Drivers</a>.
 
 For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-quality/annotating-function-behavior">Annotating Function Behavior</a>.
+

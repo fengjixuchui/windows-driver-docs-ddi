@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d10umddi.PFND3D10DDI_DESTROYDEPTHSTENCILSTATE
 title: PFND3D10DDI_DESTROYDEPTHSTENCILSTATE (d3d10umddi.h)
-description: The DestroyDepthStencilState function destroys the specified depth stencil state object. The depth stencil state object can be destoyed only if it is not currently bound to a display device.
+description: The DestroyDepthStencilState function destroys the specified depth stencil state object. The depth stencil state object can be destroyed only if it is not currently bound to a display device.
 old-location: display\destroydepthstencilstate.htm
-ms.assetid: 5fc537f6-2507-4edd-bfa0-c011dd834a22
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_DESTROYDEPTHSTENCILSTATE callback function"]
 ms.keywords: DestroyDepthStencilState, DestroyDepthStencilState callback function [Display Devices], PFND3D10DDI_DESTROYDEPTHSTENCILSTATE, PFND3D10DDI_DESTROYDEPTHSTENCILSTATE callback, UserModeDisplayDriverDx10_Functions_0d9deca1-62e7-4caa-9bfd-9c42bdd85c2c.xml, d3d10umddi/DestroyDepthStencilState, display.destroydepthstencilstate
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - DestroyDepthStencilState
+ - PFND3D10DDI_DESTROYDEPTHSTENCILSTATE
 ---
 
 # PFND3D10DDI_DESTROYDEPTHSTENCILSTATE callback function
@@ -46,17 +45,17 @@ api_name:
 
 ## -description
 
-The <b>DestroyDepthStencilState</b> function destroys the specified depth stencil state object. The depth stencil state object can be destoyed only if it is not currently bound to a display device.
+The <b>DestroyDepthStencilState</b> function destroys the specified depth stencil state object. The depth stencil state object can be destroyed only if it is not currently bound to a display device.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hDepthStencilState* [in]
 
@@ -77,3 +76,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

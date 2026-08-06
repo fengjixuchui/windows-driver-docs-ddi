@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_IS_UI_REQUEST_PENDING
 title: DOT11EXTIHV_IS_UI_REQUEST_PENDING (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_IS_UI_REQUEST_PENDING callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvisuirequestpending.htm
 tech.root: netvista
-ms.assetid: e8747dc5-7ef7-4914-baf7-683ddfe68313
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_IS_UI_REQUEST_PENDING callback"]
 ms.keywords: DOT11EXTIHV_IS_UI_REQUEST_PENDING, Dot11ExtIhvIsUIRequestPending, Dot11ExtIhvIsUIRequestPending callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_88488999-ecad-4845-a4b3-051b96c506dd.xml, netvista.dot11extihvisuirequestpending, wlanihv/Dot11ExtIhvIsUIRequestPending
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_IS_UI_REQUEST_PENDING
  - wlanihv/DOT11EXTIHV_IS_UI_REQUEST_PENDING
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtIhvIsUIRequestPending
+ - DOT11EXTIHV_IS_UI_REQUEST_PENDING
 ---
 
 # DOT11EXTIHV_IS_UI_REQUEST_PENDING callback
@@ -53,17 +51,17 @@ api_name:
 
 ## -parameters
 
-### -param guidUIRequest 
+### -param guidUIRequest [in]
 
-[in]
+
 The GUID that identifies the request. This GUID value was created by the IHV Extensions DLL and
      passed through the
      <i>pIhvUIRequest</i> parameter of the call to
      <a href="..\wlanihv\nc-wlanihv-dot11ext_send_ui_request.md">Dot11ExtSendUIRequest</a>.
 
-### -param pbIsRequestPending 
+### -param pbIsRequestPending [out]
 
-[out]
+
 A pointer to a Boolean value. If the UI request, identified by the
      <i>guidUIRequest</i> parameter, is pending, the IHV Extensions DLL must set *
      <i>pbIsRequestPending</i> to <b>TRUE</b>.
@@ -89,7 +87,7 @@ DWORD APIENTRY Dot11ExtIhvIsUIRequestPending(
 ## -remarks
 
 The IHV Extensions DLL can issue requests to the IHV UI Extensions DLL to interact with the user.
-    Examples of such requests are thedisplay of notifications during the pre-association operation or the
+    Examples of such requests are the display of notifications during the pre-association operation or the
     input of credentials for the post-association operation. For more information about the IHV UI Extensions
     DLL, see
     <a href="/previous-versions/windows/hardware/wireless/ff560635(v=vs.85)">Native 802.11 IHV UI Extensions
@@ -119,3 +117,4 @@ The operating system can periodically call the
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_send_ui_request.md">Dot11ExtSendUIRequest</a>
+

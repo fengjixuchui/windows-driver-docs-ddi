@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_39
+UID: NS:ksmedia.KSSOUNDDETECTORPROPERTY
 title: KSSOUNDDETECTORPROPERTY (ksmedia.h)
 description: The KSSOUNDDETECTORPROPERTY structure specifies a node and an Event ID.
 old-location: audio\KSSOUNDDETECTORPROPERTY.htm
 tech.root: audio
-ms.assetid: bbcf7597-217a-499b-b0f2-deef1e85becb
 ms.date: 09/25/2019
 keywords: ["KSSOUNDDETECTORPROPERTY structure"]
 ms.keywords: "*PKSSOUNDDETECTORPROPERTY, KSSOUNDDETECTORPROPERTY, KSSOUNDDETECTORPROPERTYstructure [Audio Devices], PKSSOUNDDETECTORPROPERTY, PKSSOUNDDETECTORPROPERTYstructure pointer [Audio Devices], audio.KSSOUNDDETECTORPROPERTY, ksmedia/KSSOUNDDETECTORPROPERTY, ksmedia/PKSSOUNDDETECTORPROPERTY"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSSOUNDDETECTORPROPERTY
  - KSSOUNDDETECTORPROPERTY
 ---
 
@@ -54,7 +54,7 @@ The KSSOUNDDETECTORPROPERTY structure specifies a node and an Event ID. All soun
 
 ### -field Property
 
-Specifies the property to get or set. This member is a structure of type <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>.
+Specifies the property to get or set. This member is a structure of type <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>.
 
 ### -field EventId
 
@@ -66,6 +66,7 @@ The EventId is used to identify the different voice assistant/agents such as Cor
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
-<a href="/windows-hardware/drivers/audio/voice-activation-mva">Mulitple Voice Assistant</a>
+<a href="/windows-hardware/drivers/audio/voice-activation-mva">Multiple Voice Assistant</a>
+

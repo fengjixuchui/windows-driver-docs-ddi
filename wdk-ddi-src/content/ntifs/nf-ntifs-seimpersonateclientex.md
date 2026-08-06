@@ -4,14 +4,13 @@ title: SeImpersonateClientEx function (ntifs.h)
 description: The SeImpersonateClientEx routine causes a thread to impersonate a user.
 old-location: ifsk\seimpersonateclientex.htm
 tech.root: ifsk
-ms.assetid: 7a5043b9-2517-454a-a8d3-1ea09143c81a
 ms.date: 04/16/2018
 keywords: ["SeImpersonateClientEx function"]
 ms.keywords: SeImpersonateClientEx, SeImpersonateClientEx routine [Installable File System Drivers], ifsk.seimpersonateclientex, ntifs/SeImpersonateClientEx, seref_557d14bb-0d77-4bc8-8c75-57bb3c789963.xml
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows 2000 and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,14 +49,14 @@ The <b>SeImpersonateClientEx</b> routine causes a thread to impersonate a user.
 
 ## -parameters
 
-### -param ClientContext 
+### -param ClientContext [in]
 
-[in]
+
 Pointer to the user's security client context.
 
-### -param ServerThread 
+### -param ServerThread [in, optional]
 
-[in, optional]
+
 Pointer to the thread that is to impersonate the user. If not specified, the calling thread is used.
 
 ## -returns
@@ -116,7 +115,7 @@ To end the impersonation of the user, call the <a href="/windows-hardware/driver
 
 The <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-psimpersonateclient">PsImpersonateClient</a> routine can be used to cause a server thread to impersonate a client.
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

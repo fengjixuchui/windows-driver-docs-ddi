@@ -1,10 +1,9 @@
 ---
 UID: NS:wdm._PCI_EXPRESS_SEC_AER_CAPABILITIES
 title: _PCI_EXPRESS_SEC_AER_CAPABILITIES (wdm.h)
-description: The PCI_EXPRESS_SEC_AER_CAPABILITIES structure describes a PCI Express (PCIe) secondary error capabilities and control register of a PCIe advanced error reporting capability structure.
+description: The _PCI_EXPRESS_SEC_AER_CAPABILITIES structure (wdm.h) describes a PCI Express (PCIe) secondary error capabilities and control register.
 old-location: pci\pci_express_sec_aer_capabilities.htm
 tech.root: PCI
-ms.assetid: fdfc0157-699e-4927-8186-b76b2e2bbda1
 ms.date: 02/24/2018
 keywords: ["PCI_EXPRESS_SEC_AER_CAPABILITIES structure"]
 ms.keywords: "*PPCI_EXPRESS_SEC_AER_CAPABILITIES, PCI.pci_express_sec_aer_capabilities, PCI_EXPRESS_SEC_AER_CAPABILITIES, PCI_EXPRESS_SEC_AER_CAPABILITIES union [Buses], PPCI_EXPRESS_SEC_AER_CAPABILITIES, PPCI_EXPRESS_SEC_AER_CAPABILITIES union pointer [Buses], _PCI_EXPRESS_SEC_AER_CAPABILITIES, pci_struct_22bcb7f0-e690-414b-ba51-37c8783a6fad.xml, wdm/PCI_EXPRESS_SEC_AER_CAPABILITIES, wdm/PPCI_EXPRESS_SEC_AER_CAPABILITIES"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: PASSIVE_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: PCI_EXPRESS_SEC_AER_CAPABILITIES, *PPCI_EXPRESS_SEC_AER_CAPABILITIES
-req.product: Windows 10 or later.
 f1_keywords:
  - _PCI_EXPRESS_SEC_AER_CAPABILITIES
  - wdm/_PCI_EXPRESS_SEC_AER_CAPABILITIES
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _PCI_EXPRESS_SEC_AER_CAPABILITIES
+ - PPCI_EXPRESS_SEC_AER_CAPABILITIES
  - PCI_EXPRESS_SEC_AER_CAPABILITIES
 ---
 
@@ -62,12 +62,12 @@ The PCI_EXPRESS_SEC_AER_CAPABILITIES structure describes a PCI Express (PCIe) se
 A ULONG representation of the contents of the PCI_EXPRESS_SEC_AER_CAPABILITIES structure.
 
 
-#### - Reserved
+### -field DUMMYSTRUCTNAME.Reserved
 
 Reserved for system use.
 
 
-#### - SecondaryUncorrectableFirstErrorPtr
+### -field DUMMYSTRUCTNAME.SecondaryUncorrectableFirstErrorPtr
 
 The bit position of the first error that was reported in the PCIe secondary uncorrectable error status register.
 
@@ -92,3 +92,4 @@ A PCI_EXPRESS_SEC_AER_CAPABILITIES structure is contained in the <a href="/windo
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_pci_express_bridge_aer_capability">PCI_EXPRESS_BRIDGE_AER_CAPABILITY</a>
+

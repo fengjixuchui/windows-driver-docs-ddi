@@ -4,7 +4,6 @@ title: WdfIoTargetStart function (wdfiotarget.h)
 description: The WdfIoTargetStart method starts sending queued requests to a local or remote I/O target.
 old-location: wdf\wdfiotargetstart.htm
 tech.root: wdf
-ms.assetid: 0d270910-f0ff-4305-bd68-caa36d3a02c5
 ms.date: 02/26/2018
 keywords: ["WdfIoTargetStart function"]
 ms.keywords: DFIOTargetRef_40667bdf-5de8-4728-9c55-4a88f7a51704.xml, WdfIoTargetStart, WdfIoTargetStart method, kmdf.wdfiotargetstart, wdf.wdfiotargetstart, wdfiotarget/WdfIoTargetStart
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,9 +54,9 @@ The <b>WdfIoTargetStart</b> method starts sending queued requests to a local or 
 
 ## -parameters
 
-### -param IoTarget 
+### -param IoTarget [in]
 
-[in]
+
 A handle to a local or remote I/O target object that was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicegetiotarget">WdfDeviceGetIoTarget</a> or <a href="/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetcreate">WdfIoTargetCreate</a>, or from a method that a specialized I/O target provides.
 
 ## -returns

@@ -4,7 +4,6 @@ title: IDebugControl4::ResetManagedStatus (dbgeng.h)
 description: Clears and reinitializes the engine's managed code debugging support of the runtime debugging APIs provided by the common language runtime (CLR).
 old-location: debugger\idebugcontrol4_resetmanagedstatus.htm
 tech.root: debugger
-ms.assetid: 6A9F8963-54F2-4AD7-AB98-C3215E1F7839
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::ResetManagedStatus"]
 ms.keywords: IDebugControl4 interface [Windows Debugging],ResetManagedStatus method, IDebugControl4.ResetManagedStatus, IDebugControl4::ResetManagedStatus, ResetManagedStatus, ResetManagedStatus method [Windows Debugging], ResetManagedStatus method [Windows Debugging],IDebugControl4 interface, dbgeng/IDebugControl4::ResetManagedStatus, debugger.idebugcontrol4_resetmanagedstatus
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.ResetManagedStatus
+ - IDebugControl4::ResetManagedStatus
 ---
 
 # IDebugControl4::ResetManagedStatus
@@ -50,9 +49,9 @@ Clears and reinitializes the engine's managed code debugging support of the runt
 
 ## -parameters
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Flags for the debugging API.
 
 ## -returns
@@ -82,3 +81,4 @@ Managed debugging support relies on debugging functionality provided by the CLR.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol4">IDebugControl4</a>
+

@@ -4,7 +4,6 @@ title: _D3DDDIARG_DRAWINDEXEDPRIMITIVE (d3dumddi.h)
 description: The D3DDDIARG_DRAWINDEXEDPRIMITIVE structure describes an indexed primitive to draw.
 old-location: display\d3dddiarg_drawindexedprimitive.htm
 tech.root: display
-ms.assetid: 3f8cc918-9819-4c32-93f3-dbc2c1023016
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_DRAWINDEXEDPRIMITIVE structure"]
 ms.keywords: D3DDDIARG_DRAWINDEXEDPRIMITIVE, D3DDDIARG_DRAWINDEXEDPRIMITIVE structure [Display Devices], UMDisplayDriver_param_Structs_241177c0-f301-4b49-93cb-5c75ca8cb30a.xml, _D3DDDIARG_DRAWINDEXEDPRIMITIVE, d3dumddi/D3DDDIARG_DRAWINDEXEDPRIMITIVE, display.d3dddiarg_drawindexedprimitive
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_DRAWINDEXEDPRIMITIVE
  - D3DDDIARG_DRAWINDEXEDPRIMITIVE
 ---
 
@@ -52,29 +52,29 @@ The D3DDDIARG_DRAWINDEXEDPRIMITIVE structure describes an indexed primitive to d
 
 ## -struct-fields
 
-### -field PrimitiveType
+### -field PrimitiveType [in]
 
-[in] A D3DPRIMITIVETYPE-typed value that indicates the type of primitive to draw. This member can be one of the following values: D3DPT_POINTLIST, D3DPT_LINELIST, D3DPT_LINESTRIP, D3DPT_TRIANGLELIST, D3DPT_TRIANGLESTRIP, or D3DPT_TRIANGLEFAN. For more information about D3DPRIMITIVETYPE, see the Microsoft Windows SDK documentation.
+A D3DPRIMITIVETYPE-typed value that indicates the type of primitive to draw. This member can be one of the following values: D3DPT_POINTLIST, D3DPT_LINELIST, D3DPT_LINESTRIP, D3DPT_TRIANGLELIST, D3DPT_TRIANGLESTRIP, or D3DPT_TRIANGLEFAN. For more information about D3DPRIMITIVETYPE, see the Microsoft Windows SDK documentation.
 
-### -field BaseVertexIndex
+### -field BaseVertexIndex [in]
 
-[in] The number that should be added to each index that is referenced by the various primitives to determine the actual index of the vertex elements in each vertex stream.
+The number that should be added to each index that is referenced by the various primitives to determine the actual index of the vertex elements in each vertex stream.
 
-### -field MinIndex
+### -field MinIndex [in]
 
-[in] The minimum index of a range of vertices that are potentially accessed by the primitives to be drawn and, therefore, which vertices should be processed.
+The minimum index of a range of vertices that are potentially accessed by the primitives to be drawn and, therefore, which vertices should be processed.
 
-### -field NumVertices
+### -field NumVertices [in]
 
-[in] The number of vertices in a range that are potentially accessed by the primitives to be drawn and, therefore, which vertices should be processed.
+The number of vertices in a range that are potentially accessed by the primitives to be drawn and, therefore, which vertices should be processed.
 
-### -field StartIndex
+### -field StartIndex [in]
 
-[in] The first index in the index buffer from which indices are read to draw the primitives.
+The first index in the index buffer from which indices are read to draw the primitives.
 
-### -field PrimitiveCount
+### -field PrimitiveCount [in]
 
-[in] The number of triangles, lines, or points to draw for the given primitive.
+The number of triangles, lines, or points to draw for the given primitive.
 
 ## -remarks
 
@@ -83,3 +83,4 @@ The Microsoft Direct3D runtime does not transform the index data before passing 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_drawindexedprimitive">DrawIndexedPrimitive</a>
+

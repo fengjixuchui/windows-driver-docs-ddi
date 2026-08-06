@@ -4,7 +4,6 @@ title: EVT_WDF_DEVICE_SELF_MANAGED_IO_CLEANUP (wdfdevice.h)
 description: A driver's EvtDeviceSelfManagedIoCleanup event callback function handles deallocation activity for the device's self-managed I/O operations, after a device has been removed.
 old-location: wdf\evtdeviceselfmanagediocleanup.htm
 tech.root: wdf
-ms.assetid: 639ff3fd-ce38-417e-8fc4-a03ad259a5c8
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DEVICE_SELF_MANAGED_IO_CLEANUP callback function"]
 ms.keywords: DFDeviceObjectGeneralRef_73e3f47e-1f3d-4dee-9fb2-62acbb5aaea2.xml, EVT_WDF_DEVICE_SELF_MANAGED_IO_CLEANUP, EVT_WDF_DEVICE_SELF_MANAGED_IO_CLEANUP callback, EvtDeviceSelfManagedIoCleanup, EvtDeviceSelfManagedIoCleanup callback function, kmdf.evtdeviceselfmanagediocleanup, wdf.evtdeviceselfmanagediocleanup, wdfdevice/EvtDeviceSelfManagedIoCleanup
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfdevice.h
 api_name:
- - EvtDeviceSelfManagedIoCleanup
+ - EVT_WDF_DEVICE_SELF_MANAGED_IO_CLEANUP
 ---
 
 # EVT_WDF_DEVICE_SELF_MANAGED_IO_CLEANUP callback function
@@ -52,9 +51,9 @@ A driver's <i>EvtDeviceSelfManagedIoCleanup</i> event callback function handles 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
 ## -remarks
@@ -84,3 +83,4 @@ For more information about drivers that provide this callback function, see <a h
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_self_managed_io_suspend">EvtDeviceSelfManagedIoSuspend</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_SetCallWaitingStatus
 title: RIL_SetCallWaitingStatus function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_SetCallWaitingStatus function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_setcallwaitingstatus.htm
 tech.root: netvista
-ms.assetid: e511db5d-3544-45a4-9ed4-72bb3f2572ec
 ms.date: 05/02/2018
 keywords: ["RIL_SetCallWaitingStatus function"]
 ms.keywords: RIL_SetCallWaitingStatus, RIL_SetCallWaitingStatus method [Network Drivers Starting with Windows Vista], netvista.ril_setcallwaitingstatus, rilapi/RIL_SetCallWaitingStatus

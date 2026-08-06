@@ -1,10 +1,9 @@
 ---
 UID: NF:wdtfpnpaction.IWDTFPNPAction2.EDTTryStopDeviceFailRestart
 title: IWDTFPNPAction2::EDTTryStopDeviceFailRestart (wdtfpnpaction.h)
-description: Attempts to send an IRP_MN_STOP_DEVICE event to the target device and then fail the subsequent device restart.
+description: This method attempts to send an IRP_MN_STOP_DEVICE event to the target device and then fail the subsequent device restart.
 old-location: dtf\iwdtfpnpaction2_edttrystopdevicefailrestart.htm
 tech.root: dtf
-ms.assetid: f451f97d-ff56-47ae-b9c6-4f5e3a1dd4bf
 ms.date: 04/04/2018
 keywords: ["IWDTFPNPAction2::EDTTryStopDeviceFailRestart"]
 ms.keywords: EDTTryStopDeviceFailRestart, EDTTryStopDeviceFailRestart method [Windows Device Testing Framework], EDTTryStopDeviceFailRestart method [Windows Device Testing Framework],IWDTFPNPAction2 interface, IWDTFPNPAction2 interface [Windows Device Testing Framework],EDTTryStopDeviceFailRestart method, IWDTFPNPAction2.EDTTryStopDeviceFailRestart, IWDTFPNPAction2::EDTTryStopDeviceFailRestart, Microsoft.WDTF.IWDTFPNPAction2.EDTTryStopDeviceFailRestart, Microsoft::WDTF::IWDTFPNPAction2::EDTTryStopDeviceFailRestart, dtf.iwdtfpnpaction2_edttrystopdevicefailrestart, wdtfpnpaction/IWDTFPNPAction2::EDTTryStopDeviceFailRestart
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTFDriverPNPAction.Interop.dll
 api_name:
- - IWDTFPNPAction2.EDTTryStopDeviceFailRestart
+ - IWDTFPNPAction2::EDTTryStopDeviceFailRestart
 ---
 
 # IWDTFPNPAction2::EDTTryStopDeviceFailRestart
@@ -51,9 +50,9 @@ then fail the subsequent device restart.
 
 ## -parameters
 
-### -param pbSuccess 
+### -param pbSuccess [out, retval]
 
-[out, retval]
+
 True if the operation succeeds; otherwise, false.
 
 ## -returns
@@ -66,7 +65,7 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 method must be called for the target device before calling this method.</div>
 <div> </div>
 <b>EDTTryStopDeviceFailRestart</b> attempts to trigger a PnP resource 
-rebalance (an Query Stop, Stop, Start IRP sequence) in which it fails the IRP_MN_START_DEVICE event 
+rebalance (a Query Stop, Stop, Start IRP sequence) in which it fails the IRP_MN_START_DEVICE event 
 which follows a successful Query Stop and Stop. The failed Start IRP, in turn, causes the system 
 to surprise remove the device (IRP_MN_SURPRISE_REMOVAL).
 
@@ -84,3 +83,4 @@ is a USB mouse, you can run this method on the parent USB controller instead.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtfpnpaction/nn-wdtfpnpaction-iwdtfpnpaction2">IWDTFPNPAction2</a>
+

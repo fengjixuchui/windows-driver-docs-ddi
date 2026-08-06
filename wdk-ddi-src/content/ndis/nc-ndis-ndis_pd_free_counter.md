@@ -4,7 +4,6 @@ title: NDIS_PD_FREE_COUNTER (ndis.h)
 description: The PacketDirect (PD) platform calls a PD-capable miniport driver's NdisPDFreeCounter function to free a counter object.
 old-location: netvista\ndispdfreecounter.htm
 tech.root: netvista
-ms.assetid: 60C47437-A999-4F82-B144-6F77410E5C07
 ms.date: 05/02/2018
 keywords: ["NDIS_PD_FREE_COUNTER callback function"]
 ms.keywords: NDIS_PD_FREE_COUNTER, NDIS_PD_FREE_COUNTER callback, NdisPDFreeCounter, NdisPDFreeCounter callback function [Network Drivers Starting with Windows Vista], ndis/NdisPDFreeCounter, netvista.ndispdfreecounter
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - NdisPDFreeCounter
+ - NDIS_PD_FREE_COUNTER
 ---
 
 # NDIS_PD_FREE_COUNTER callback function
@@ -53,9 +52,9 @@ The PacketDirect (PD) platform calls a PD-capable miniport driver's
 
 ## -parameters
 
-### -param CounterHandle 
+### -param CounterHandle [in]
 
-[in]
+
 A counter handle that the miniport driver allocated in its <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_pd_allocate_counter">NdisPDAllocateCounter</a> function.
 
 ## -returns
@@ -65,3 +64,4 @@ This callback function does not return a value.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_pd_allocate_counter">NdisPDAllocateCounter</a>
+

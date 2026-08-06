@@ -4,7 +4,6 @@ title: RtlUIntSub function (ntintsafe.h)
 description: Subtracts one value of type UINT from another.
 old-location: kernel\rtluintsub.htm
 tech.root: kernel
-ms.assetid: 0886578A-C1CF-4A48-86A3-407A0C16ADEC
 ms.date: 04/30/2018
 keywords: ["RtlUIntSub function"]
 ms.keywords: RtlUIntSub, RtlUIntSub function [Kernel-Mode Driver Architecture], kernel.rtluintsub, ntintsafe/RtlUIntSub
@@ -50,19 +49,19 @@ Subtracts one value of type <b>UINT</b> from another.
 
 ## -parameters
 
-### -param uMinuend 
+### -param uMinuend [in]
 
-[in]
+
 The value from which <i>u8Subtrahend</i> is subtracted.
 
-### -param uSubtrahend 
+### -param uSubtrahend [in]
 
-[in]
+
 The value to subtract from <i>u8Minuend</i>.
 
-### -param puResult 
+### -param puResult [out]
 
-[out]
+
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

@@ -4,7 +4,6 @@ title: WdfUsbTargetDeviceCreateIsochUrb function (wdfusb.h)
 description: The WdfUsbTargetDeviceCreateIsochUrb method allocates an isochronous USB request block (URB).
 old-location: wdf\wdfusbtargetdevicecreateisochurb.htm
 tech.root: wdf
-ms.assetid: 2D25A276-A367-4E59-9CA0-4F480675DD77
 ms.date: 02/26/2018
 keywords: ["WdfUsbTargetDeviceCreateIsochUrb function"]
 ms.keywords: WdfUsbTargetDeviceCreateIsochUrb, WdfUsbTargetDeviceCreateIsochUrb method, kmdf.wdfusbtargetdevicecreateisochurb, wdf.wdfusbtargetdevicecreateisochurb, wdfusb/WdfUsbTargetDeviceCreateIsochUrb
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,29 +54,29 @@ api_name:
 
 ## -parameters
 
-### -param UsbDevice 
+### -param UsbDevice [in]
 
-[in]
+
 A handle to a USB device object that was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>.
 
-### -param Attributes 
+### -param Attributes [in, optional]
 
-[in, optional]
+
 A pointer to a caller-supplied <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the new memory object.   If the driver provides this parameter, the structure's <b>ParentObject</b> member must be a USB device object (WDFUSBDEVICE) or a request object (WDFREQUEST) created by the framework, or any object whose chain of parents leads to one of these types. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param NumberOfIsochPackets 
+### -param NumberOfIsochPackets [in]
 
-[in]
+
 Specifies the number of isochronous packets for which the system allocates memory in the URB.
 
-### -param UrbMemory 
+### -param UrbMemory [out]
 
-[out]
+
 A pointer to a WDFMEMORY-typed location that receives a handle to a framework memory object.
 
-### -param Urb 
+### -param Urb [out, optional]
 
-[out, optional]
+
 A pointer to an URB structure that receives the address of the new isochronous URB. The framework initializes contents of the URB structure to zero. This parameter is optional and can be NULL.
 
 ## -returns

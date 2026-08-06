@@ -4,7 +4,6 @@ title: PROTOCOL_CO_OID_REQUEST (ndis.h)
 description: The ProtocolCoOidRequest function handles OID requests that CoNDIS clients or stand-alone call managers initiate by calls to the NdisCoOidRequest function or that a miniport call manager (MCM) driver initiates by calls to the NdisMCmOidRequest function.Note  You must declare the function by using the PROTOCOL_CO_OID_REQUEST type. For more information, see the following Examples section.
 old-location: netvista\protocolcooidrequest.htm
 tech.root: netvista
-ms.assetid: 8247396f-8781-45da-aba1-a31a2a26a46f
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CO_OID_REQUEST callback function"]
 ms.keywords: PROTOCOL_CO_OID_REQUEST, PROTOCOL_CO_OID_REQUEST callback, ProtocolCoOidRequest, ProtocolCoOidRequest callback function [Network Drivers Starting with Windows Vista], condis_request_ref_b02b012f-58cc-4dd6-be48-6e1cc4f00b24.xml, ndis/ProtocolCoOidRequest, netvista.protocolcooidrequest
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolCoOidRequest
+ - PROTOCOL_CO_OID_REQUEST
 ---
 
 # PROTOCOL_CO_OID_REQUEST callback function
@@ -57,9 +56,9 @@ The
 
 ## -parameters
 
-### -param ProtocolAfContext 
+### -param ProtocolAfContext [in]
 
-[in]
+
 A handle that identifies an address family (AF) context area. If the driver is a client, it
      supplied this handle when it called the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclopenaddressfamilyex">
@@ -67,23 +66,23 @@ A handle that identifies an address family (AF) context area. If the driver is a
      manager, it supplied this handle from its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_open_af">ProtocolCmOpenAf</a> function.
 
-### -param ProtocolVcContext 
+### -param ProtocolVcContext [in]
 
-[in]
+
 A handle that identifies the virtual connection (VC) to query or set information on, if the
      request is VC-specific. Otherwise, this parameter is <b>NULL</b>.
 
-### -param ProtocolPartyContext 
+### -param ProtocolPartyContext [in]
 
-[in]
+
 A handle that identifies the party on a multipoint VC to query or set information on, if the
      request is party-specific. Otherwise, this parameter is <b>NULL</b>.
 
-### -param OidRequest 
+### -param OidRequest [in, out]
 
-[in, out]
+
 A pointer to an 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure that contains
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure that contains
      both the buffer and the request packet for the target driver to handle. Depending on the request, the
      driver returns requested information in the structure that 
      <i>OidRequest</i> points to.
@@ -135,7 +134,7 @@ The driver is failing the request because the caller of the
        <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmoidrequest">NdisMCmOidRequest</a> function did not
        supply an adequate value for the 
        <b>InformationBuffer</b> member of the 
-       <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure for the given
+       <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure for the given
        request. The driver set the 
        <b>BytesNeeded</b> member of NDIS_OID_REQUEST in the buffer at the 
        <i>OidRequest</i> parameter to the OID-specific value of the 
@@ -218,7 +217,7 @@ The buffer at the
     <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismcmoidrequest">NdisMCmOidRequest</a>) must release this
     buffer and the internal buffer at the 
     <b>InformationBuffer</b> member of the 
-    <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure that 
+    <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure that 
     <i>OidRequest</i> points to.
 
 If 
@@ -273,7 +272,7 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 
@@ -302,3 +301,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_open_af">ProtocolCmOpenAf</a>
+

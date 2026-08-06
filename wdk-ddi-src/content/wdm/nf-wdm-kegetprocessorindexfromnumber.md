@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.KeGetProcessorIndexFromNumber
 title: KeGetProcessorIndexFromNumber function (wdm.h)
-description: The KeGetProcessorIndexFromNumber routine converts a group number and a group-relative processor number to a systemwide processor index.
+description: The KeGetProcessorIndexFromNumber routine in wdm.h converts a group number and a group-relative processor number to a systemwide processor index.
 old-location: kernel\kegetprocessorindexfromnumber.htm
 tech.root: kernel
-ms.assetid: c7d8ca52-a1e1-4f5f-9ffe-d64cec47eac7
 ms.date: 04/30/2018
 keywords: ["KeGetProcessorIndexFromNumber function"]
 ms.keywords: KeGetProcessorIndexFromNumber, KeGetProcessorIndexFromNumber routine [Kernel-Mode Driver Architecture], k105_57b362f6-81dc-4630-a940-0d91577bf886.xml, kernel.kegetprocessorindexfromnumber, wdm/KeGetProcessorIndexFromNumber
@@ -50,9 +49,9 @@ The <b>KeGetProcessorIndexFromNumber</b> routine converts a group number and a g
 
 ## -parameters
 
-### -param ProcNumber 
+### -param ProcNumber [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/miniport/ns-miniport-_processor_number">PROCESSOR_NUMBER</a> structure that contains a group number and a group-relative processor number.
 
 ## -returns

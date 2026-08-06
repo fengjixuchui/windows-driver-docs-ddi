@@ -1,16 +1,14 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN
-title: _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN (d3dkmthk.h)
-description: The D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN structure identifies a flip present-history operation.
-old-location: display\d3dkmt_flipmodel_presenthistorytoken.htm
-ms.assetid: dcf844e3-3346-485e-8965-c8cb824e2c78
-ms.date: 05/10/2018
+title: D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN (d3dkmthk.h)
+description: Learn more about the D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN structure.
+ms.date: 04/10/2024
 keywords: ["D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN structure"]
 ms.keywords: D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN, D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN structure [Display Devices], OpenGL_Structs_819c22ef-0bae-476a-9cbc-0169cd7fc82f.xml, _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN, d3dkmthk/D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN, display.d3dkmt_flipmodel_presenthistorytoken
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN is Supported starting with the Windows 7 operating system.
+req.target-min-winverclnt: Windows 7
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,15 +38,15 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN
  - D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN
 ---
 
-# _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN structure
-
+# D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN structure
 
 ## -description
 
-The D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN structure identifies a flip present-history operation.
+The **D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN** structure identifies a flip present-history operation.
 
 ## -struct-fields
 
@@ -78,11 +76,11 @@ The zero-based identification number of the video present source in a path of a 
 
 ### -field FlipInterval
 
-[in] A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_flipinterval_type.md">D3DDDI_FLIPINTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs).
+[in] A [**D3DDDI_FLIPINTERVAL_TYPE**](../d3dukmdt/ne-d3dukmdt-d3dddi_flipinterval_type.md)-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs).
 
 ### -field Flags
 
-[in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_flipmodel_presenthistorytokenflags.md">D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS</a> structure that identifies, in bit-field flags, attributes of a flip present-history operation.
+[in] A [**D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS**](ns-d3dkmthk-_d3dkmt_flipmodel_presenthistorytokenflags.md) structure that identifies, in bit-field flags, attributes of a flip present-history operation.
 
 ### -field hCompSurf
 
@@ -91,6 +89,8 @@ This member is reserved and should be set to zero.
 Supported starting with Windows 8.
 
 ### -field compSurfLuid
+
+LUID for the composition surface.
 
 ### -field confirmationCookie
 
@@ -126,7 +126,7 @@ This member is reserved and should be set to zero.
 
 Supported starting with Windows 8.
 
-### -field RevealColor
+### -field RevealColor[4]
 
 This member is reserved and should be set to zero.
 
@@ -150,9 +150,9 @@ This member is reserved and should be set to zero.
 
 Supported starting with Windows 8.
 
-### -field Reserved
+### -field InkCookie
 
-Reserved for internal use.
+Cookie for token's ink.
 
 ### -field SourceRect
 
@@ -170,13 +170,21 @@ The destination height.
 
 The target rectangle.
 
-### -field Transform
+### -field Transform[6]
+
+Transformation matrix.
 
 ### -field CustomDuration
 
+Custom duration of the transition.
+
 ### -field CustomDurationFlipInterval
 
+Custom interval of the transition.
+
 ### -field PlaneIndex
+
+Index of the plane.
 
 ### -field ColorSpace
 
@@ -184,7 +192,7 @@ The color space of the data.
 
 ### -field DirtyRegions
 
-[in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_dirtyregions.md">D3DKMT_DIRTYREGIONS</a> structure that identifies the active rectangles (dirty regions) of the flip surface.
+[in] A [**D3DKMT_DIRTYREGIONS**](ns-d3dkmthk-_d3dkmt_dirtyregions.md) structure that identifies the active rectangles (dirty regions) of the flip surface.
 
 ### -field HDRMetaDataHDR10
 
@@ -192,45 +200,12 @@ The color space of the data.
 
 ### -field HDRMetaDataType
 
-## -syntax
-
-```cpp
-typedef struct _D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN {
-  UINT64                                    FenceValue;
-  ULONG64                                   hLogicalSurface;
-  UINT                                      SwapChainIndex;
-  UINT64                                    PresentLimitSemaphoreId;
-  D3DDDI_FLIPINTERVAL_TYPE                  FlipInterval;
-  D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS Flags;
-#if (DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WIN8)
-  LONG64                                    hCompSurf;
-  UINT64                                    CompositionSyncKey;
-  UINT                                      RemainingTokens;
-  RECT                                      ScrollRect;
-  POINT                                     ScrollOffset;
-  UINT                                      PresentCount;
-  FLOAT                                     RevealColor[4];
-  D3DDDI_ROTATION                           Rotation;
-  D3DKMT_SCATTERBLTS                        ScatterBlts;
-  D3DKMT_HANDLE                             hSyncObject;
-#endif
-  D3DKMT_DIRTYREGIONS                       DirtyRegions;
-} D3DKMT_FLIPMODEL_PRESENTHISTORYTOKEN;
-```
-
 ## -see-also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_flipmodel_presenthistorytokenflags.md">D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS</a>
+[**D3DKMT_FLIPMODEL_PRESENTHISTORYTOKENFLAGS**](ns-d3dkmthk-_d3dkmt_flipmodel_presenthistorytokenflags.md)
 
+[**D3DDDI_FLIPINTERVAL_TYPE**](..\d3dukmdt\ne-d3dukmdt-d3dddi_flipinterval_type.md)
 
+[**D3DKMT_PRESENTHISTORYTOKEN**](ns-d3dkmthk-_d3dkmt_presenthistorytoken.md)
 
-<a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_flipinterval_type.md">D3DDDI_FLIPINTERVAL_TYPE</a>
-
-
-
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_presenthistorytoken.md">D3DKMT_PRESENTHISTORYTOKEN</a>
-
-
-
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_dirtyregions.md">D3DKMT_DIRTYREGIONS</a>
-
+[**D3DKMT_DIRTYREGIONS**](ns-d3dkmthk-_d3dkmt_dirtyregions.md)

@@ -4,7 +4,6 @@ title: _USBFN_USB_STRING (usbfnbase.h)
 description: Describes a USB string descriptor and the associated string index.
 old-location: buses\usbfn_usb_string.htm
 tech.root: usbref
-ms.assetid: 1169A369-0E6D-4308-ABF6-0724FED73AF9
 ms.date: 05/07/2018
 keywords: ["USBFN_USB_STRING structure"]
 ms.keywords: "*PUSBFN_USB_STRING, PUSBFN_USB_STRING, PUSBFN_USB_STRING structure pointer [Buses], USBFN_USB_STRING, USBFN_USB_STRING structure [Buses], _USBFN_USB_STRING, buses.usbfn_usb_string, usbfnbase/PUSBFN_USB_STRING, usbfnbase/USBFN_USB_STRING"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - usbfnbase.h
 api_name:
+ - _USBFN_USB_STRING
+ - PUSBFN_USB_STRING
  - USBFN_USB_STRING
 ---
 
@@ -65,3 +66,4 @@ Pointer to the string.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/usbfnioctl/ni-usbfnioctl-ioctl_internal_usbfn_register_usb_string">IOCTL_INTERNAL_USBFN_REGISTER_USB_STRING</a>
+

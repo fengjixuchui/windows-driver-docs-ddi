@@ -4,7 +4,6 @@ title: WdfIoResourceRequirementsListInsertIoResList function (wdfresource.h)
 description: The WdfIoResourceRequirementsListInsertIoResList method inserts a logical configuration into a resource requirements list.
 old-location: wdf\wdfioresourcerequirementslistinsertioreslist.htm
 tech.root: wdf
-ms.assetid: d70d9fed-22fd-4bcf-a4bf-fbd941559529
 ms.date: 02/26/2018
 keywords: ["WdfIoResourceRequirementsListInsertIoResList function"]
 ms.keywords: DFResourceObjectRef_193f75e1-39a1-4a93-947b-550e7ad99494.xml, WdfIoResourceRequirementsListInsertIoResList, WdfIoResourceRequirementsListInsertIoResList method, kmdf.wdfioresourcerequirementslistinsertioreslist, wdf.wdfioresourcerequirementslistinsertioreslist, wdfresource/WdfIoResourceRequirementsListInsertIoResList
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,19 +52,19 @@ The <b>WdfIoResourceRequirementsListInsertIoResList</b> method inserts a <a href
 
 ## -parameters
 
-### -param RequirementsList 
+### -param RequirementsList [in]
 
-[in]
+
 A handle to a framework resource-requirements-list object that represents a device's resource requirements list.
 
-### -param IoResList 
+### -param IoResList [in]
 
-[in]
+
 A handle to a framework resource-range-list object that represents a logical configuration of hardware resources for a device.
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 A zero-based value that is used as an index into the set of logical configurations that are already in the resource requirements list that <i>RequirementsList</i> specifies. To add a configuration to the end of the list, specify WDF_INSERT_AT_END or the return value from <a href="/windows-hardware/drivers/ddi/wdfresource/nf-wdfresource-wdfioresourcerequirementslistgetcount">WdfIoResourceRequirementsListGetCount</a>.
 
 ## -returns

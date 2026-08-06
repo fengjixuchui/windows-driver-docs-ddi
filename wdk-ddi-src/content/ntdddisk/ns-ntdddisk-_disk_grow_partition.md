@@ -4,7 +4,6 @@ title: _DISK_GROW_PARTITION (ntdddisk.h)
 description: The DISK_GROW_PARTITION structure is used in conjunction with the IOCTL_DISK_GROW_PARTITION request to enlarge a partition.
 old-location: storage\disk_grow_partition.htm
 tech.root: storage
-ms.assetid: cab9877c-3b7b-4644-83eb-0aa1e9fc77b9
 ms.date: 03/29/2018
 keywords: ["DISK_GROW_PARTITION structure"]
 ms.keywords: "*PDISK_GROW_PARTITION, DISK_GROW_PARTITION, DISK_GROW_PARTITION structure [Storage Devices], PDISK_GROW_PARTITION, PDISK_GROW_PARTITION structure pointer [Storage Devices], _DISK_GROW_PARTITION, ntdddisk/DISK_GROW_PARTITION, ntdddisk/PDISK_GROW_PARTITION, storage.disk_grow_partition, structs-disk_cc7d52cd-b0b6-4e5c-a323-6d513f37e602.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntdddisk.h
 api_name:
+ - _DISK_GROW_PARTITION
+ - PDISK_GROW_PARTITION
  - DISK_GROW_PARTITION
 ---
 
@@ -65,3 +66,4 @@ Indicates the number of bytes that the partition should be extended by. Note tha
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntdddisk/ni-ntdddisk-ioctl_disk_grow_partition">IOCTL_DISK_GROW_PARTITION</a>
+

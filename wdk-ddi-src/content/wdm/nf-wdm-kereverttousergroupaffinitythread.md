@@ -4,7 +4,6 @@ title: KeRevertToUserGroupAffinityThread function (wdm.h)
 description: The KeRevertToUserGroupAffinityThread routine restores the group affinity of the calling thread to its original value at the time that the thread was created.
 old-location: kernel\kereverttousergroupaffinitythread.htm
 tech.root: kernel
-ms.assetid: 13a1a106-0c5c-4c0e-964d-27e549e1c699
 ms.date: 04/30/2018
 keywords: ["KeRevertToUserGroupAffinityThread function"]
 ms.keywords: KeRevertToUserGroupAffinityThread, KeRevertToUserGroupAffinityThread routine [Kernel-Mode Driver Architecture], k105_be46d681-835f-40ba-8120-b8699e16ea0b.xml, kernel.kereverttousergroupaffinitythread, wdm/KeRevertToUserGroupAffinityThread
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <= DISPATCH_LEVEL (see Remarks section).
+req.irql: <= DISPATCH_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>KeRevertToUserGroupAffinityThread</b> routine restores the group affinity
 
 ## -parameters
 
-### -param PreviousAffinity 
+### -param PreviousAffinity [in]
 
-[in]
+
 A pointer to the group affinity to restore. This parameter points to a <a href="/windows-hardware/drivers/ddi/miniport/ns-miniport-_group_affinity">GROUP_AFFINITY</a> structure that contains a group number and an affinity mask. The affinity mask specifies the set of logical processors that the user thread can run on.
 
 ## -remarks
@@ -67,7 +66,7 @@ A thread can change the group to which it is assigned by calling the <a href="/w
 
 After the thread is created, a call to <b>KeRevertToUserGroupAffinityThread</b> has no effect (that is, the group number and affinity mask of the thread remain unchanged) unless the thread first calls <b>KeSetSystemGroupAffinityThread</b>. Following a call to <b>KeRevertToUserGroupAffinityThread</b>, a second call to <b>KeRevertToUserGroupAffinityThread</b> has no effect unless the thread first calls <b>KeSetSystemGroupAffinityThread</b>.
 
-The routine changes the group number and affinity mask to the values that are specified in *<i>PreviousAffinity</i> only if the following are true:
+The routine changes the group number and affinity mask to the values that are specified in **PreviousAffinity* only if the following are true:
 
 <ul>
 <li>

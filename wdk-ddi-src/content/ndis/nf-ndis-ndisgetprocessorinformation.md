@@ -4,7 +4,6 @@ title: NdisGetProcessorInformation function (ndis.h)
 description: The NdisGetProcessorInformation function retrieves information about the CPU topology of the local computer and the set of processors that a miniport driver must use for receive side scaling (RSS).
 old-location: netvista\ndisgetprocessorinformation.htm
 tech.root: netvista
-ms.assetid: 2cee5cf4-7dee-49d2-905c-2b9634137ce4
 ms.date: 05/02/2018
 keywords: ["NdisGetProcessorInformation function"]
 ms.keywords: NdisGetProcessorInformation, NdisGetProcessorInformation function [Network Drivers Starting with Windows Vista], ndis/NdisGetProcessorInformation, ndis_sysinfo_ref_1479e4eb-4467-48da-bab6-1f60993f5ef2.xml, netvista.ndisgetprocessorinformation
@@ -53,9 +52,9 @@ The
 
 ## -parameters
 
-### -param SystemProcessorInfo 
+### -param SystemProcessorInfo [in, out]
 
-[in, out]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_system_processor_info">
      NDIS_SYSTEM_PROCESSOR_INFO</a> structure that NDIS fills with the information about the CPU topology

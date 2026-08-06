@@ -4,8 +4,7 @@ title: _NDIS_RESTART_GENERAL_ATTRIBUTES (ndis.h)
 description: The NDIS_RESTART_GENERAL_ATTRIBUTES structure defines the general restart attributes that are associated with a miniport adapter.
 old-location: netvista\ndis_restart_general_attributes.htm
 tech.root: netvista
-ms.assetid: f67bd2fe-4553-4b1a-8d39-26777bcc60e0
-ms.date: 05/02/2018
+ms.date: 07/23/2025
 keywords: ["NDIS_RESTART_GENERAL_ATTRIBUTES structure"]
 ms.keywords: "*PNDIS_RESTART_GENERAL_ATTRIBUTES, NDIS_RESTART_GENERAL_ATTRIBUTES, NDIS_RESTART_GENERAL_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], PNDIS_RESTART_GENERAL_ATTRIBUTES, PNDIS_RESTART_GENERAL_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RESTART_GENERAL_ATTRIBUTES, miniport_structures_ref_10a54e42-4d48-4fdc-8a68-43771c319215.xml, ndis/NDIS_RESTART_GENERAL_ATTRIBUTES, ndis/PNDIS_RESTART_GENERAL_ATTRIBUTES, netvista.ndis_restart_general_attributes"
 req.header: ndis.h
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_RESTART_GENERAL_ATTRIBUTES
+ - PNDIS_RESTART_GENERAL_ATTRIBUTES
  - NDIS_RESTART_GENERAL_ATTRIBUTES
 ---
 
@@ -58,7 +59,7 @@ The <b>NDIS_RESTART_GENERAL_ATTRIBUTES</b> structure defines the general restart
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_RESTART_GENERAL_ATTRIBUTES</b> structure. NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_RESTART_GENERIC_ATTRIBUTES</b>. 
@@ -119,9 +120,7 @@ The medium access control (MAC) options for the miniport adapter. For more infor
 
 ### -field SupportedPacketFilters
 
-The packet filter flags for the miniport adapter. For more information, see 
-     <a href="/windows-hardware/drivers/network/oid-gen-supported-packet-filters">
-     OID_GEN_SUPPORTED_PACKET_FILTERS</a>.
+The packet filter flags for the miniport adapter.
 
 ### -field MaxMulticastListSize
 
@@ -160,7 +159,7 @@ A
 
 The supported statistics. For more information, see the 
      <b>SupportedStatistics</b> member of the 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes">
+     <a href="/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes">
      NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a> structure.
 
 ### -field DataBackFillSize
@@ -212,7 +211,7 @@ If the
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_adapter_general_attributes">
+<a href="/windows-hardware/drivers/ddi/miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes">
    NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES</a>
 
 
@@ -222,7 +221,7 @@ If the
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -280,9 +279,6 @@ If the
 
 
 
-<a href="/windows-hardware/drivers/network/oid-gen-supported-packet-filters">
-   OID_GEN_SUPPORTED_PACKET_FILTERS</a>
-
-
 
 <a href="/windows-hardware/drivers/network/oid-pnp-capabilities">OID_PNP_CAPABILITIES</a>
+

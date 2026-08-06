@@ -4,7 +4,6 @@ title: UrsIoResourceListAppendDescriptor function (ursdevice.h)
 description: Appends the specified resource descriptor to the specified I/O resource list object that maintains resource descriptors for the host or function role.
 old-location: buses\ursioresourcelistappenddescriptor.htm
 tech.root: usbref
-ms.assetid: 80AE8211-EA8F-4967-A496-39053CD578D1
 ms.date: 05/07/2018
 keywords: ["UrsIoResourceListAppendDescriptor function"]
 ms.keywords: UrsIoResourceListAppendDescriptor, UrsIoResourceListAppendDescriptor function [Buses], buses.ursioresourcelistappenddescriptor, ursdevice/UrsIoResourceListAppendDescriptor
@@ -52,14 +51,14 @@ Appends the specified resource descriptor to the specified I/O resource list obj
 
 ## -parameters
 
-### -param IoResourceList 
+### -param IoResourceList [in]
 
-[in]
+
  A role's I/O resource list object to which the resource descriptor is appended. This object is allocated by the framework and passed to the client driver when the framework invokes the driver's <a href="/windows-hardware/drivers/ddi/ursdevice/nc-ursdevice-evt_urs_device_filter_resource_requirements">EVT_URS_DEVICE_FILTER_RESOURCE_REQUIREMENTS</a> implementation.
 
-### -param Descriptor 
+### -param Descriptor [in]
 
-[in]
+
 A pointer to  IO_RESOURCE_DESCRIPTOR that contains the resource descriptor for the role.
 
 ## -returns

@@ -4,7 +4,6 @@ title: _MSiSCSI_InitiatorNodeFailureEvent (iscsimgt.h)
 description: The MSiSCSI_InitiatorNodeFailureEvent structure is used to report an event when a node failure occurs.
 old-location: storage\msiscsi_initiatornodefailureevent.htm
 tech.root: storage
-ms.assetid: 0d761b64-d405-4c19-9fd8-e4bf371515a1
 ms.date: 03/29/2018
 keywords: ["MSiSCSI_InitiatorNodeFailureEvent structure"]
 ms.keywords: "*PMSiSCSI_InitiatorNodeFailureEvent, MSiSCSI_InitiatorNodeFailureEvent, MSiSCSI_InitiatorNodeFailureEvent structure [Storage Devices], PMSiSCSI_InitiatorNodeFailureEvent, PMSiSCSI_InitiatorNodeFailureEvent structure pointer [Storage Devices], _MSiSCSI_InitiatorNodeFailureEvent, iscsimgt/MSiSCSI_InitiatorNodeFailureEvent, iscsimgt/PMSiSCSI_InitiatorNodeFailureEvent, storage.msiscsi_initiatornodefailureevent, structs-iSCSI_0d1bb4bf-74a0-4d99-9bf8-1545faaff14d.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsimgt.h
 api_name:
+ - _MSiSCSI_InitiatorNodeFailureEvent
+ - PMSiSCSI_InitiatorNodeFailureEvent
  - MSiSCSI_InitiatorNodeFailureEvent
 ---
 
@@ -138,3 +139,4 @@ It is optional that you implement this class.
 
 
 <a href="/windows-hardware/drivers/storage/msiscsi-initiatornodefailureevent-wmi-class">MSiSCSI_InitiatorNodeFailureEvent WMI Class</a>
+

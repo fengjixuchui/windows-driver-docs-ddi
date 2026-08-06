@@ -1,10 +1,9 @@
 ---
 UID: NF:wudfddi_hwaccess.WRITE_REGISTER_ULONG64
 title: WRITE_REGISTER_ULONG64 function (wudfddi_hwaccess.h)
-description: The WRITE_REGISTER_ULONG64 function writes a ULONG64 value to the specified address.
+description: The WRITE_REGISTER_ULONG64 function (wudfddi_hwaccess.h) writes a ULONG64 value to the specified register address.
 old-location: wdf\write_register_ulong64.htm
 tech.root: wdf
-ms.assetid: 50C407F2-657F-451F-8A6B-BEEB533D89DE
 ms.date: 02/26/2018
 keywords: ["WRITE_REGISTER_ULONG64 function"]
 ms.keywords: WRITE_REGISTER_ULONG64, WRITE_REGISTER_ULONG64 function, umdf.write_register_ulong64, wdf.write_register_ulong64, wudfddi_hwaccess/WRITE_REGISTER_ULONG64
@@ -52,19 +51,19 @@ The <b>WRITE_REGISTER_ULONG64</b> function writes a ULONG64 value to the specifi
 
 ## -parameters
 
-### -param pDevice 
+### -param pDevice [in]
 
-[in]
+
 Specifies a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice3">IWDFDevice3</a> interface for the device object of the device to access.
 
-### -param Register 
+### -param Register [in]
 
-[in]
+
 A pointer to the register, which must be a mapped range in memory space.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies a ULONG64 value to write to the register.
 
 ## -remarks

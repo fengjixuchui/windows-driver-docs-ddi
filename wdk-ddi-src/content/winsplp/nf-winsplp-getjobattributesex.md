@@ -1,17 +1,15 @@
 ---
 UID: NF:winsplp.GetJobAttributesEx
 title: GetJobAttributesEx function (winsplp.h)
-description: Warning  Starting with Windows 10, the APIs which support third-party print providers are deprecated.
-old-location: print\getjobattributesex.htm
+description: A print provider's GetJobAttributesEx function obtains information about a print job, including N-up and reverse printing options.
 tech.root: print
-ms.assetid: 0715e4d4-665c-42cb-9c74-48c2c558c277
-ms.date: 04/20/2018
+ms.date: 11/30/2022
 keywords: ["GetJobAttributesEx function"]
 ms.keywords: GetJobAttributesEx, GetJobAttributesEx function [Print Devices], print.getjobattributesex, spoolfnc_45659d86-d97e-47c5-bbf7-49c990880b52.xml, winsplp/GetJobAttributesEx
 req.header: winsplp.h
 req.include-header: Winsplp.h
 req.target-type: Desktop
-req.target-min-winverclnt: This function is available in the Windows Vista operating system.
+req.target-min-winverclnt:
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -41,159 +39,94 @@ api_name:
  - GetJobAttributesEx
 ---
 
-# GetJobAttributesEx function
-
-
 ## -description
 
-<div class="alert"><b>Warning</b>  <p class="note">Starting with Windows 10, the APIs which support third-party print providers are deprecated. Microsoft does not recommend any investment into third-party print providers. Additionally, on Windows 8 and newer products where the v4 print driver model is available, third-party print providers may not create or manage queues which use v4 print drivers.
+> [!WARNING]
+> Starting with Windows 10, the APIs which support third-party print providers are deprecated. Microsoft does not recommend any investment into third-party print providers. Additionally, on Windows 8 and newer products where the v4 print driver model is available, third-party print providers may not create or manage queues which use v4 print drivers.
 
-</div><div> </div>A print provider's <b>GetJobAttributesEx</b> function obtains information about a print job, including N-up and reverse printing options.
+A print provider's **GetJobAttributesEx** function obtains information about a print job, including N-up and reverse printing options.
 
 ## -parameters
 
-### -param pPrinterName 
+### -param pPrinterName [in]
 
-[in]
 Caller-supplied pointer to a NULL-terminated Unicode string that contains the printer name.
 
-### -param pDevmode 
+### -param pDevmode [in]
 
-[in]
-Caller-supplied pointer to a <a href="/windows/win32/api/wingdi/ns-wingdi-devmodew">DEVMODEW</a> structure that is passed to the print processor or printer driver.
+Caller-supplied pointer to a [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-devmodew) structure that is passed to the print processor or printer driver.
 
-### -param dwLevel 
+### -param dwLevel [in]
 
-[in]
-Caller-supplied value that indicates the type of structure pointed to by <i>pAttributeInfo</i>, as indicated in the following table. For more information, see Remarks.
+Caller-supplied value that indicates the type of structure pointed to by *pAttributeInfo*, as indicated in the following table. For more information, see the **Remarks** section below.
 
-<table>
-<tr>
-<th><i>dwLevel</i> Value</th>
-<th>Structure pointed to by <i>pAttributeInfo</i></th>
-</tr>
-<tr>
-<td>
-1
+| *dwLevel* value | Structure pointed to by *pAttributeInfo* |
+|---|---|
+| 1 | [ATTRIBUTE_INFO_1](../winddiui/ns-winddiui-_attribute_info_1.md) |
+| 2 | [ATTRIBUTE_INFO_2](../winddiui/ns-winddiui-_attribute_info_2.md) |
+| 3 | [ATTRIBUTE_INFO_3](../winddiui/ns-winddiui-_attribute_info_3.md) |
+| 4 | [ATTRIBUTE_INFO_4](../winddiui/ns-winddiui-_attribute_info_4.md) |
 
-</td>
-<td>
+### -param pAttributeInfo [out]
 
-<a href="/windows-hardware/drivers/ddi/winddiui/ns-winddiui-_attribute_info_1">ATTRIBUTE_INFO_1</a>
+Caller-supplied pointer to an attribute information structure ([ATTRIBUTE_INFO_1](../winddiui/ns-winddiui-_attribute_info_1.md), [ATTRIBUTE_INFO_2](../winddiui/ns-winddiui-_attribute_info_2.md), [ATTRIBUTE_INFO_3](../winddiui/ns-winddiui-_attribute_info_3.md), or [ATTRIBUTE_INFO_4](../winddiui/ns-winddiui-_attribute_info_4.md)) that receives information about the print job.
 
+### -param nSize [in]
 
-</td>
-</tr>
-<tr>
-<td>
-2
+Size of the buffer, in bytes, pointed to by *pAttributeInfo*.
 
-</td>
-<td>
+### -param dwFlags [in]
 
-<a href="/windows-hardware/drivers/ddi/winddiui/ns-winddiui-_attribute_info_2">ATTRIBUTE_INFO_2</a>
+If set by the caller to FILL_WITH_DEFAULTS, then the spooler will fill *pAttributeInfo* with default values from level 1 up to the level specified by *dwLevel*.
 
+For example, if *dwLevel* is 4 and FILL_WITH_DEFAULTS is specified, *pAttributeInfo* will be filled with the following default member values of [ATTRIBUTE_INFO_4](../winddiui/ns-winddiui-_attribute_info_4.md):
 
-</td>
-</tr>
-<tr>
-<td>
-3
+**dwJobNumberOfPagesPerSide** = 1
 
-</td>
-<td>
+**dwDrvNumberOfPagesPerSide** = 1
 
-<a href="/windows-hardware/drivers/ddi/winddiui/ns-winddiui-_attribute_info_3">ATTRIBUTE_INFO_3</a>
+**dwNupBorderFlags** = 0
 
+**dwJobPageOrderFlags** = 0
 
-</td>
-</tr>
-<tr>
-<td>
-4
+**dwDrvPageOrderFlags** = 0
 
-</td>
-<td>
+**dwJobNumberOfCopies** = **dmCopies** member of [**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-devmodew)
 
-<a href="/windows-hardware/drivers/ddi/winddiui/ns-winddiui-_attribute_info_4">ATTRIBUTE_INFO_4</a>
+**dwDrvNumberOfCopies** = **dmCopies** member of **DEVMODEW**
 
+**dwColorOptimization** = 0
 
-</td>
-</tr>
-</table>
+**dmPrintQuality** = **dmPrintQuality** member of **DEVMODEW**
 
-### -param pAttributeInfo 
+**dmYResolution** = **dmYResolution** member of **DEVMODEW**
 
-[out]
-Caller-supplied pointer to an attribute information structure (<a href="/windows-hardware/drivers/ddi/winddiui/ns-winddiui-_attribute_info_1">ATTRIBUTE_INFO_1</a>, <a href="/windows-hardware/drivers/ddi/winddiui/ns-winddiui-_attribute_info_2">ATTRIBUTE_INFO_2</a>, <a href="/windows-hardware/drivers/ddi/winddiui/ns-winddiui-_attribute_info_3">ATTRIBUTE_INFO_3</a>, or <a href="/windows-hardware/drivers/ddi/winddiui/ns-winddiui-_attribute_info_4">ATTRIBUTE_INFO_4</a>) that receives information about the print job.
+**dwNupDirection** = RIGHT_THEN_DOWN
 
-### -param nSize 
+**dwBookletFlags** = BOOKLET_EDGE_LEFT
 
-[in]
-Size of the buffer, in bytes, pointed to by <i>pAttributeInfo</i>.
+**dwDuplexFlags** = 0
 
-### -param dwFlags 
+**dwScalingPercentX** = 100
 
-[in]
-If set by the caller to FILL_WITH_DEFAULTS, then the spooler will fill <i>pAttributeInfo</i> with default values from level 1 up to the level specified by <i>dwLevel</i>.
+**dwScalingPercentY** = 100
 
-For example, if <i>dwLevel</i> is 4 and FILL_WITH_DEFAULTS is specified, <i>pAttributeInfo</i> will be filled with the following default member values of <a href="/windows-hardware/drivers/ddi/winddiui/ns-winddiui-_attribute_info_4">ATTRIBUTE_INFO_4</a>:
-
-<b>dwJobNumberOfPagesPerSide</b> = 1
-
-<b>dwDrvNumberOfPagesPerSide</b> = 1
-
-<b>dwNupBorderFlags</b> = 0
-
-<b>dwJobPageOrderFlags</b> = 0
-
-<b>dwDrvPageOrderFlags</b> = 0
-
-<b>dwJobNumberOfCopies</b> = <b>dmCopies</b> member of <a href="/windows/win32/api/wingdi/ns-wingdi-devmodew">DEVMODEW</a>
-
-
-<b>dwDrvNumberOfCopies</b>  = <b>dmCopies</b> member of DEVMODEW
-
-<b>dwColorOptimization</b> = 0
-
-<b>dmPrintQuality</b> = <b>dmPrintQuality</b> member of DEVMODEW
-
-<b>dmYResolution</b> = <b>dmYResolution</b> member of DEVMODEW
-
-<b>dwNupDirection</b> = RIGHT_THEN_DOWN
-
-<b>dwBookletFlags </b>= BOOKLET_EDGE_LEFT
-
-<b>dwDuplexFlags </b>= 0
-
-<b>dwScalingPercentX </b>= 100
-
-<b>dwScalingPercentY </b>= 100
-
-<b>dwJobHandlingFlags </b>= 0
-
-See Remarks.
+**dwJobHandlingFlags** = 0
 
 ## -returns
 
-<b>GetJobAttributesEx</b> returns <b>TRUE</b> if it is successful in obtaining the print job attributes; otherwise, it returns <b>FALSE</b>.
+**GetJobAttributesEx** returns **TRUE** if it is successful in obtaining the print job attributes; otherwise, it returns **FALSE**.
 
 ## -remarks
 
-This function first checks whether the driver supports the attribute level that is indicated by <i>dwLevel</i>. If the driver does not support that attribute level, then the function queries the driver for support for the next lower level, (<i>dwLevel</i> - 1), and continues to query for progressively lower levels of support until it obtains the level of support provided by the driver. If <i>dwFlags</i> is set to FILL_WITH_DEFAULTS, then the function fills in the default values for the unsupported levels.
+This function first checks whether the driver supports the attribute level that is indicated by *dwLevel*. If the driver does not support that attribute level, then the function queries the driver for support for the next lower level, (*dwLevel* - 1), and continues to query for progressively lower levels of support until it obtains the level of support provided by the driver. If *dwFlags* is set to FILL_WITH_DEFAULTS, then the function fills in the default values for the unsupported levels.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/winddiui/ns-winddiui-_attribute_info_3">ATTRIBUTE_INFO_3</a>
+[**ATTRIBUTE_INFO_3**](../winddiui/ns-winddiui-_attribute_info_3.md)
 
+[**ATTRIBUTE_INFO_4**](../winddiui/ns-winddiui-_attribute_info_4.md)
 
+[**DEVMODEW**](/windows/win32/api/wingdi/ns-wingdi-devmodew)
 
-<a href="/windows-hardware/drivers/ddi/winddiui/ns-winddiui-_attribute_info_4">ATTRIBUTE_INFO_4</a>
-
-
-
-<a href="/windows/win32/api/wingdi/ns-wingdi-devmodew">DEVMODEW</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/winsplp/nf-winsplp-getjobattributes">GetJobAttributes</a>
+[GetJobAttributes](./nf-winsplp-getjobattributes.md)

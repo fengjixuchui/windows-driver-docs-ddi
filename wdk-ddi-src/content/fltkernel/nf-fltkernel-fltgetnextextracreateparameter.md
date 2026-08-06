@@ -4,7 +4,6 @@ title: FltGetNextExtraCreateParameter function (fltkernel.h)
 description: The FltGetNextExtraCreateParameter routine returns a pointer to the next (or first) extra create parameter context structure (ECP) in a given ECP list.
 old-location: ifsk\fltgetnextextracreateparameter.htm
 tech.root: ifsk
-ms.assetid: 8eae5ac8-9da5-475f-8fbb-5e118bad4e67
 ms.date: 04/16/2018
 keywords: ["FltGetNextExtraCreateParameter function"]
 ms.keywords: FltApiRef_e_to_o_c458316b-2dd7-4ff2-a59f-a6dfbd659f47.xml, FltGetNextExtraCreateParameter, FltGetNextExtraCreateParameter routine [Installable File System Drivers], fltkernel/FltGetNextExtraCreateParameter, ifsk.fltgetnextextracreateparameter
@@ -50,34 +49,34 @@ The <b>FltGetNextExtraCreateParameter</b> routine returns a pointer to the next 
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in]
 
-[in]
+
 Opaque filter pointer to the minifilter driver. This pointer uniquely identifies the minifilter driver and remains constant as long as the minifilter driver is loaded.
 
-### -param EcpList 
+### -param EcpList [in]
 
-[in]
+
 Pointer to the ECP list to examine.
 
-### -param CurrentEcpContext 
+### -param CurrentEcpContext [in, optional]
 
-[in, optional]
+
 Optional pointer to an ECP in the given ECP list.  If present, <b>FltGetNextExtraCreateParameter</b> returns the ECP after the <i>CurrentEcpContext</i> ECP.  If <i>CurrentEcpContext</i> is <b>NULL</b>, <b>FltGetNextExtraCreateParameter</b> returns the first ECP in the list.
 
-### -param NextEcpType 
+### -param NextEcpType [out, optional]
 
-[out, optional]
+
 Optional parameter that receives a pointer to the GUID of the returned ECP.
 
-### -param NextEcpContext 
+### -param NextEcpContext [out, optional]
 
-[out, optional]
+
 Optional parameter that receives a pointer to the returned ECP.
 
-### -param NextEcpContextSize 
+### -param NextEcpContextSize [out, optional]
 
-[out, optional]
+
 Optional parameter that receives the size, in bytes, of the returned ECP.
 
 ## -returns

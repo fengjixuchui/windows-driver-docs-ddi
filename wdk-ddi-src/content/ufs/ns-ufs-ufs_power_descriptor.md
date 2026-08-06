@@ -1,10 +1,9 @@
 ---
-UID: NS:ufs.__unnamed_struct_6
+UID: NS:ufs.UFS_POWER_DESCRIPTOR
 title: UFS_POWER_DESCRIPTOR (ufs.h)
 description: UFS_POWER_DESCRIPTOR contains information about the power capabilities and power states of the device.
 old-location: storage\ufs_power_descriptor.htm
 tech.root: storage
-ms.assetid: FCF9DCD1-2C04-47E3-97C5-7ACC28B28C6C
 ms.date: 03/29/2018
 keywords: ["UFS_POWER_DESCRIPTOR structure"]
 ms.keywords: "*PUFS_POWER_DESCRIPTOR, PUFS_POWER_DESCRIPTOR, PUFS_POWER_DESCRIPTOR structure pointer [Storage Devices], UFS_POWER_DESCRIPTOR, UFS_POWER_DESCRIPTOR structure [Storage Devices], storage.ufs_power_descriptor, ufs/PUFS_POWER_DESCRIPTOR, ufs/UFS_POWER_DESCRIPTOR"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Ufs.h
 api_name:
+ - PUFS_POWER_DESCRIPTOR
  - UFS_POWER_DESCRIPTOR
 ---
 

@@ -1,10 +1,9 @@
 ---
 UID: NF:wdtfpnpaction.IWDTFPNPActions2.EDTTryStopDeviceRequestNewResources
 title: IWDTFPNPActions2::EDTTryStopDeviceRequestNewResources (wdtfpnpaction.h)
-description: Attempts to send an IRP_MN_STOP_DEVICE event to the target device and assign new resources to the target device.
+description: Learn how the method attempts to send an IRP_MN_STOP_DEVICE event to the target device and assign new resources to the target device.
 old-location: dtf\iwdtfpnpactions2_edttrystopdevicerequestnewresources.htm
 tech.root: dtf
-ms.assetid: 20f1ff95-55d3-46d2-816b-edf2b42e6e86
 ms.date: 04/04/2018
 keywords: ["IWDTFPNPActions2::EDTTryStopDeviceRequestNewResources"]
 ms.keywords: EDTTryStopDeviceRequestNewResources, EDTTryStopDeviceRequestNewResources method [Windows Device Testing Framework], EDTTryStopDeviceRequestNewResources method [Windows Device Testing Framework],IWDTFPNPActions2 interface, IWDTFPNPActions2 interface [Windows Device Testing Framework],EDTTryStopDeviceRequestNewResources method, IWDTFPNPActions2.EDTTryStopDeviceRequestNewResources, IWDTFPNPActions2::EDTTryStopDeviceRequestNewResources, dtf.iwdtfpnpactions2_edttrystopdevicerequestnewresources, wdtfpnpaction/IWDTFPNPActions2::EDTTryStopDeviceRequestNewResources
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdtfpnpaction.h
 api_name:
- - IWDTFPNPActions2.EDTTryStopDeviceRequestNewResources
+ - IWDTFPNPActions2::EDTTryStopDeviceRequestNewResources
 ---
 
 # IWDTFPNPActions2::EDTTryStopDeviceRequestNewResources
@@ -51,9 +50,9 @@ assign new resources to the target device.
 
 ## -parameters
 
-### -param pbSuccess 
+### -param pbSuccess [out, retval]
 
-[out, retval]
+
 True if the operation succeeds; otherwise, false.
 
 ## -returns
@@ -81,6 +80,3 @@ how the drivers and applications handle the PnP resource rebalance, you can inst
 etc., which does consume hardware resources. For example, if your device is a USB mouse, you can 
 run this method on the parent USB controller instead.
 
-## -see-also
-
-<a href="/windows-hardware/drivers/ddi/index">IWDTFPNPActions2</a>

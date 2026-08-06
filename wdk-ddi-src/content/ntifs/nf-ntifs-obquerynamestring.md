@@ -4,14 +4,13 @@ title: ObQueryNameString function (ntifs.h)
 description: The ObQueryNameString routine supplies the name, if there is one, of a given object to which the caller has a pointer.
 old-location: ifsk\obquerynamestring.htm
 tech.root: ifsk
-ms.assetid: 3c540410-6478-4da1-8ef5-b6d21d322b32
 ms.date: 04/16/2018
 keywords: ["ObQueryNameString function"]
 ms.keywords: ObQueryNameString, ObQueryNameString routine [Installable File System Drivers], ifsk.obquerynamestring, ntifs/ObQueryNameString, obref_3d52f727-edc5-4bea-b7c1-24a3aced1079.xml
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows 2000 and later operating systems.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,14 +49,14 @@ The <b>ObQueryNameString</b> routine supplies the name, if there is one, of a gi
 
 ## -parameters
 
-### -param Object 
+### -param Object [in]
 
-[in]
+
 A pointer to the object for which the name is requested. This parameter is required and cannot be <b>NULL</b>.
 
-### -param ObjectNameInfo 
+### -param ObjectNameInfo [out, optional]
 
-[out, optional]
+
 A pointer to a caller-allocated buffer, of the following type, that receives the object name information: 
 
 
@@ -69,14 +68,14 @@ typedef struct _OBJECT_NAME_INFORMATION {
 
 This parameter is optional and can be <b>NULL</b>. If <i>ObjectNameInfo</i> is <b>NULL</b>, <i>Length</i> must be zero.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The size, in bytes, of the buffer that is pointed to by <i>ObjectNameInfo</i>. This parameter is optional and can be zero. If <i>Length</i> is zero, <i>ReturnLength</i> receives the size, in bytes, of the buffer that is needed to hold the object name information. A reasonable size for the buffer to accommodate most object names is 1024 bytes. If <i>Length</i> is zero, <i>ObjectNameInfo</i> can be <b>NULL</b>.
 
-### -param ReturnLength 
+### -param ReturnLength [out]
 
-[out]
+
 A pointer to a caller-allocated variable that receives the size, in bytes, of the returned object name information. The object name (when present) includes a NULL-terminator and all path separators "\\" in the name. If <b>ObQueryNameString</b> returns <b>STATUS_INFO_LENGTH_MISMATCH</b>, it sets this parameter to the required buffer length.
 
 ## -returns

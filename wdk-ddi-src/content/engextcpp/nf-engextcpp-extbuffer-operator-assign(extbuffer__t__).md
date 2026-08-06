@@ -4,7 +4,6 @@ title: ExtBuffer::operator= method (engextcpp.h)
 description: The operator= overloaded assignment operator sets the typed data represented by the ExtRemoteTyped object by copying the information from another object.
 old-location: debugger\extremotetyped_operatorequals_debug_typed_data.htm
 tech.root: debugger
-ms.assetid: 0dd00f33-1ede-43b7-97b7-55942c3f7a27
 ms.date: 01/19/2018
 keywords: ["ExtBuffer::operator= method"]
 ms.keywords: debugger.extremotetyped_operatorequals_debug_typed_data, operator=, ExtRemoteTyped class [Windows Debugging], operator= method, ExtBuffer::operator=, ExtBuffer, operator= method [Windows Debugging], ExtRemoteTyped class, operator= method [Windows Debugging]
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - arrayofelements.hpp
 api_name:
- - ExtRemoteTyped.operator=
+ - ExtBuffer::operator=
 ---
 
 # ExtBuffer::operator= method
-
 
 ## -description
 
@@ -52,9 +50,9 @@ The <b>operator=</b> overloaded assignment operator sets the typed data represen
 
 ### -param Ptr
 
-#### - Typed [in]
-
 A pointer to a <a href="..\wdbgexts\ns-wdbgexts-_debug_typed_data.md">DEBUG_TYPED_DATA</a> structure that describes the data and type to be assigned to this object.
+
+### -param Typed [in]
 
 ## -returns
 
@@ -70,13 +68,10 @@ ExtRemoteTyped & operator=(
 
 ## -remarks
 
-The typed data can also be copied using the <a href="..\engextcpp\nf-engextcpp-extbuffer-copy.md">ExtRemoteTyped::Copy(Debug Typed Data)</a> or <a href="..\engextcpp\nf-engextcpp-extbuffer-copy.md">ExtRemoteTyped::Copy(ExtRemoteTyped)</a> methods.
+The typed data can also be copied using the [ExtBuffer::Copy method](nf-engextcpp-extbuffer-copy(const_t_ulong).md).
 
 ## -see-also
 
 <a href="..\engextcpp\nl-engextcpp-extremotetyped.md">ExtRemoteTyped</a>
 
 <a href="..\wdbgexts\ns-wdbgexts-_debug_typed_data.md">DEBUG_TYPED_DATA</a>
-
-<a href="..\engextcpp\nf-engextcpp-extbuffer-operator=.md">ExtRemoteTyped::Operator= (ExtRemoteTyped)</a>
-

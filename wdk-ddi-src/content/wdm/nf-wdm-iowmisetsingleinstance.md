@@ -4,7 +4,6 @@ title: IoWMISetSingleInstance function (wdm.h)
 description: The IoWMISetSingleInstance routine sets the values for properties within the data block instance that matches the specified WMI class and instance name.
 old-location: kernel\iowmisetsingleinstance.htm
 tech.root: kernel
-ms.assetid: 043b51cd-816f-414d-85b2-2573c42393e4
 ms.date: 04/30/2018
 keywords: ["IoWMISetSingleInstance function"]
 ms.keywords: IoWMISetSingleInstance, IoWMISetSingleInstance routine [Kernel-Mode Driver Architecture], k104_35479ad6-0f12-4d8b-b375-faa271cf65fd.xml, kernel.iowmisetsingleinstance, wdm/IoWMISetSingleInstance
@@ -50,29 +49,29 @@ The <b>IoWMISetSingleInstance</b> routine sets the values for properties within 
 
 ## -parameters
 
-### -param DataBlockObject 
+### -param DataBlockObject [in]
 
-[in]
+
 Pointer to a WMI data block object. The caller opens the data block object for the WMI class with the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iowmiopenblock">IoWMIOpenBlock</a> routine. The object must be opened with the WMIGUID_SET access right.
 
-### -param InstanceName 
+### -param InstanceName [in]
 
-[in]
+
 Specifies the name of the instance of the data block. This value corresponds to the value of the <b>InstanceName</b> property for the block.
 
-### -param Version 
+### -param Version [in]
 
-[in]
+
 Reserved for future use. Callers must set this parameter to zero.
 
-### -param ValueBufferSize 
+### -param ValueBufferSize [in]
 
-[in]
+
 Specifies the size, in bytes, of the buffer passed in the <i>ValueBuffer</i> parameter.
 
-### -param ValueBuffer 
+### -param ValueBuffer [in]
 
-[in]
+
 Pointer to the buffer that contains the new values for the properties within the data block.
 
 ## -returns

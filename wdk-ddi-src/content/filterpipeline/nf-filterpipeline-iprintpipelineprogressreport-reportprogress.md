@@ -4,7 +4,6 @@ title: IPrintPipelineProgressReport::ReportProgress (filterpipeline.h)
 description: The ReportProgress method reports the progress of the XPS job consumption to the pipeline manager.
 old-location: print\iprintpipelineprogressreport_reportprogress.htm
 tech.root: print
-ms.assetid: 989e8888-3494-4355-a41f-2ed774a060d2
 ms.date: 04/20/2018
 keywords: ["IPrintPipelineProgressReport::ReportProgress"]
 ms.keywords: IPrintPipelineProgressReport interface [Print Devices],ReportProgress method, IPrintPipelineProgressReport.ReportProgress, IPrintPipelineProgressReport::ReportProgress, ReportProgress, ReportProgress method [Print Devices], ReportProgress method [Print Devices],IPrintPipelineProgressReport interface, filterpipeline/IPrintPipelineProgressReport::ReportProgress, filterpipeline_3f4798ee-db6e-42ab-9eb8-fb016920fd08.xml, print.iprintpipelineprogressreport_reportprogress
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - filterpipeline.h
 api_name:
- - IPrintPipelineProgressReport.ReportProgress
+ - IPrintPipelineProgressReport::ReportProgress
 ---
 
 # IPrintPipelineProgressReport::ReportProgress
@@ -50,9 +49,9 @@ The <code>ReportProgress</code> method reports the progress of the XPS job consu
 
 ## -parameters
 
-### -param update 
+### -param update [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/ddi/filterpipeline/ne-filterpipeline-__midl___midl_itf_filterpipeline_0000_0000_0003">EXpsJobConsumption</a>-typed value that describes the progress to the pipeline manager.
 
 ## -returns
@@ -66,3 +65,4 @@ An <a href="/windows-hardware/drivers/ddi/filterpipeline/ne-filterpipeline-__mid
 
 
 <a href="/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-iprintpipelineprogressreport">IPrintPipelineProgressReport</a>
+

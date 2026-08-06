@@ -4,7 +4,6 @@ title: GPIO_CLIENT_CONNECT_IO_PINS (gpioclx.h)
 description: The CLIENT_ConnectIoPins event callback function opens a logical connection to a set of general-purpose I/O (GPIO) pins and configures these pins for data read or write operations.
 old-location: gpio\client_connectiopins.htm
 tech.root: GPIO
-ms.assetid: 9DE89026-872C-4537-BD99-131320B3C258
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_CONNECT_IO_PINS callback function"]
 ms.keywords: CLIENT_ConnectIoPins, CLIENT_ConnectIoPins callback, CLIENT_ConnectIoPins callback function [Parallel Ports], GPIO.client_connectiopins, GPIO_CLIENT_CONNECT_IO_PINS, gpioclx/CLIENT_ConnectIoPins
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_ConnectIoPins
+ - GPIO_CLIENT_CONNECT_IO_PINS
 ---
 
 # GPIO_CLIENT_CONNECT_IO_PINS callback function
@@ -50,14 +49,14 @@ The <i>CLIENT_ConnectIoPins</i> event callback function opens a logical connecti
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param ConnectParameters 
+### -param ConnectParameters [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_connect_io_pins_parameters">GPIO_CONNECT_IO_PINS_PARAMETERS</a> structure that describes a connection to a set of GPIO pins and that specifies whether to configure these pins as data inputs or outputs.
 
 ## -returns
@@ -112,3 +111,4 @@ The GPIO_CLIENT_CONNECT_IO_PINS function type is defined in the Gpioclx.h header
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/nf-gpioclx-gpio_clx_registerclient">GPIO_CLX_RegisterClient</a>
+

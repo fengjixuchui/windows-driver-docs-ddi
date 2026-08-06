@@ -4,7 +4,6 @@ title: _NDIS_PD_QUEUE_PARAMETERS (ndis.h)
 description: This structure is used to hold parameters for a transmit or receive queue when calling any of the queue routines.
 old-location: netvista\ndis_pd_queue_parameters.htm
 tech.root: netvista
-ms.assetid: AE9110D8-FB13-43DA-8BAA-8DD88CA3492A
 ms.date: 05/02/2018
 keywords: ["NDIS_PD_QUEUE_PARAMETERS structure"]
 ms.keywords: NDIS_PD_QUEUE_PARAMETERS, NDIS_PD_QUEUE_PARAMETERS structure [Network Drivers Starting with Windows Vista], _NDIS_PD_QUEUE_PARAMETERS, ndis/NDIS_PD_QUEUE_PARAMETERS, netvista.ndis_pd_queue_parameters
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
+ - _NDIS_PD_QUEUE_PARAMETERS
  - NDIS_PD_QUEUE_PARAMETERS
 ---
 
@@ -54,7 +54,7 @@ This structure is used to hold parameters for a transmit or receive queue when c
 
 ### -field Header
 
-The <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pd_config">NDIS_PD_CONFIG</a> structure. Set the members of this structure as follows:
+The <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_pd_config">NDIS_PD_CONFIG</a> structure. Set the members of this structure as follows:
 
 <ul>
 <li><b>Type</b> = <b>NDIS_OBJECT_TYPE_DEFAULT</b></li>
@@ -100,10 +100,6 @@ This is a handle to the transmit queue counter for transmit queues and a receive
 For queues that are not directly created by the client, such as RSS receive queues obtained using the <a href="/windows-hardware/drivers/ddi/ntddndis/index">NdisPDOnRssReceiveQueues</a>routine, the provider must always have an associated counter handle with the queue. That is, for a given set of RSS receive queues, the provider must have one dedicated receive queue counter for each receive queue.
 
 
-#### - UserPriority
-
-Used by the provider to determine the traffic class for the queue.
-
 ## -remarks
 
 This structure must be aligned on an 8-byte boundary.
@@ -115,3 +111,4 @@ This structure must be aligned on an 8-byte boundary.
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_pd_allocate_queue">NdisPDAllocateQueue</a>
+

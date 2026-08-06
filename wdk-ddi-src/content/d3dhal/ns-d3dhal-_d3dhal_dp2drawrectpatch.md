@@ -1,10 +1,9 @@
 ---
 UID: NS:d3dhal._D3DHAL_DP2DRAWRECTPATCH
 title: _D3DHAL_DP2DRAWRECTPATCH (d3dhal.h)
-description: DirectX 8.0 and later versions only.
+description: The D3DHAL_DP2DRAWRECTPATCH structure is used by the D3dDrawPrimitives2 callback function to render a rectangular patch.
 old-location: display\d3dhal_dp2drawrectpatch.htm
 tech.root: display
-ms.assetid: 892fe11a-4dfd-43cb-8f9a-b148d81a087f
 ms.date: 05/10/2018
 keywords: ["D3DHAL_DP2DRAWRECTPATCH structure"]
 ms.keywords: "*LPD3DHAL_DP2DRAWRECTPATCH, D3DHAL_DP2DRAWRECTPATCH, D3DHAL_DP2DRAWRECTPATCH structure [Display Devices], LPD3DHAL_DP2DRAWRECTPATCH, LPD3DHAL_DP2DRAWRECTPATCH structure pointer [Display Devices], _D3DHAL_DP2DRAWRECTPATCH, d3dhal/D3DHAL_DP2DRAWRECTPATCH, d3dhal/LPD3DHAL_DP2DRAWRECTPATCH, d3dstrct_beda6033-07b1-4985-8eac-6bb49bcce07e.xml, display.d3dhal_dp2drawrectpatch"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dhal.h
 api_name:
+ - _D3DHAL_DP2DRAWRECTPATCH
  - D3DHAL_DP2DRAWRECTPATCH
 ---
 
@@ -102,3 +102,4 @@ D3DRS_DELETERTPATCH
 
 
 <a href="/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb">D3dDrawPrimitives2</a>
+

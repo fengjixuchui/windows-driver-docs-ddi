@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_STATE_VS_SRV_CB
 title: PFND3D10DDI_STATE_VS_SRV_CB (d3d10umddi.h)
 description: The pfnStateVsSrvCb function causes the Microsoft Direct3D 10 runtime to refresh the vertex shader stage's bound shader resource views.
 old-location: display\pfnstatevssrvcb.htm
-ms.assetid: 5102104e-b79c-40e5-87de-9ccf848288db
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_STATE_VS_SRV_CB callback function"]
 ms.keywords: PFND3D10DDI_STATE_VS_SRV_CB, PFND3D10DDI_STATE_VS_SRV_CB callback, d3d10state_functions_18fed75e-bd90-41af-9ddd-d68c80f6afd7.xml, d3d10umddi/pfnStateVsSrvCb, display.pfnstatevssrvcb, pfnStateVsSrvCb, pfnStateVsSrvCb callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - pfnStateVsSrvCb
+ - PFND3D10DDI_STATE_VS_SRV_CB
 ---
 
 # PFND3D10DDI_STATE_VS_SRV_CB callback function
@@ -50,19 +49,19 @@ The <b>pfnStateVsSrvCb</b> function causes the Microsoft Direct3D 10 runtime to 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hRuntimeDevice* [in]
 
 A handle to a context for the core Direct3D 10 runtime. This handle is supplied to the driver in a call to the driver's <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdevice">CreateDevice(D3D10)</a> function.
 
-### -param Arg2
+### -param unnamedParam2
 
 *Count* [in]
 
 The total number of DDI handles to samplers. The number can be -1, which specifies that <b>pfnStateVsSamplerCb</b> will use its high watermarks to substitute an optimal value (which is typically less than the maximum valid value for <i>Count</i>). However, no non-NULL binding exists in a slot larger than the optimal <i>Count</i> value.
 
-### -param Arg3
+### -param unnamedParam3
 
 *Base* [in]
 
@@ -75,3 +74,4 @@ The beginning of the DDI handles to samplers.
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddi_corelayer_devicecallbacks">D3D10DDI_CORELAYER_DEVICECALLBACKS</a>
+

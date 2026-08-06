@@ -4,7 +4,6 @@ title: PsSetCreateProcessNotifyRoutine function (ntddk.h)
 description: The PsSetCreateProcessNotifyRoutine routine adds a driver-supplied callback routine to, or removes it from, a list of routines to be called whenever a process is created or deleted.
 old-location: kernel\pssetcreateprocessnotifyroutine.htm
 tech.root: kernel
-ms.assetid: eeeea140-e469-476f-adce-4505817bc35e
 ms.date: 04/30/2018
 keywords: ["PsSetCreateProcessNotifyRoutine function"]
 ms.keywords: PsSetCreateProcessNotifyRoutine, PsSetCreateProcessNotifyRoutine routine [Kernel-Mode Driver Architecture], k108_6ae7797a-ecbe-4665-85d5-e199f13613cd.xml, kernel.pssetcreateprocessnotifyroutine, ntddk/PsSetCreateProcessNotifyRoutine
@@ -50,14 +49,14 @@ The <b>PsSetCreateProcessNotifyRoutine</b> routine adds a driver-supplied callba
 
 ## -parameters
 
-### -param NotifyRoutine 
+### -param NotifyRoutine [in]
 
-[in]
+
 Specifies the entry point of a caller-supplied process-creation callback routine. See <a href="/windows-hardware/drivers/ddi/ntddk/nc-ntddk-pcreate_process_notify_routine">PCREATE_PROCESS_NOTIFY_ROUTINE</a>.
 
-### -param Remove 
+### -param Remove [in]
 
-[in]
+
 Indicates whether the routine specified by <i>NotifyRoutine</i> should be added to or removed from the system's list of notification routines. If <b>FALSE</b>, the specified routine is added to the list. If <b>TRUE</b>, the specified routine is removed from the list.
 
 ## -returns
@@ -99,7 +98,7 @@ Highest-level drivers can call <b>PsSetCreateProcessNotifyRoutine</b> to set up 
 
 An IFS or highest-level system-profiling driver might register a process-creation callback to track the system-wide creation and deletion of processes against the driver's internal state. For Windows Vista and later versions of Windows, the system can register up to 64 process-creation callback routines.
 
-A driver must remove any callbacks that it registers before it unloads. You can remove the callback by calling <b>PsSetCreateProcessNotify</b> with <i>Remove</i> = <b>TRUE</b>.
+A driver must remove any callbacks that it registers before it unloads. You can remove the callback by calling <b>PsSetCreateProcessNotify</b> with <i>Remove</i> = <b>TRUE</b>. A driver must not make this call from its implementation of the [*PCREATE_PROCESS_NOTIFY_ROUTINE*](./nc-ntddk-pcreate_process_notify_routine.md) callback routine.
 
 After a driver-supplied routine is registered, it is called with <i>Create</i> set to <b>TRUE</b> just after the initial thread is created within the newly created process designated by the input <i>ProcessId</i> handle. The input <i>ParentId</i> handle identifies the parent process of the newly-created process (this is the parent used for priority, affinity, quota, token, and handle inheritance, among others).
 

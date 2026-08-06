@@ -4,7 +4,6 @@ title: UfxDeviceProprietaryChargerDetectComplete function (ufxclient.h)
 description: Notifies UFX about a detected proprietary port/charger type.
 old-location: buses\ufxdeviceproprietarychargerdetectcomplete.htm
 tech.root: usbref
-ms.assetid: 5E85D80B-4C0F-4C91-A1B5-565E09FD3743
 ms.date: 05/07/2018
 keywords: ["UfxDeviceProprietaryChargerDetectComplete function"]
 ms.keywords: UfxDeviceProprietaryChargerDetectComplete, UfxDeviceProprietaryChargerDetectComplete method [Buses], buses.ufxdeviceproprietarychargerdetectcomplete, ufxclient/UfxDeviceProprietaryChargerDetectComplete
@@ -50,14 +49,14 @@ Notifies UFX about a detected proprietary port/charger type.
 
 ## -parameters
 
-### -param UfxDevice 
+### -param UfxDevice [in]
 
-[in]
+
 A handle to a UFX device object that the driver created by calling <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
 
-### -param DetectedCharger 
+### -param DetectedCharger [in]
 
-[in]
+
 A  pointer to a <a href="/windows-hardware/drivers/ddi/ufxproprietarycharger/ns-ufxproprietarycharger-_ufx_proprietary_charger">UFX_PROPRIETARY_CHARGER</a> structure.
 
 ## -remarks

@@ -4,14 +4,13 @@ title: MmPrefetchPages function (ntifs.h)
 description: The MmPrefetchPages routine reads groups of pages from secondary storage in the optimal fashion.
 old-location: ifsk\mmprefetchpages.htm
 tech.root: ifsk
-ms.assetid: fd76dfed-2c47-4289-a672-1db8129f5a9e
 ms.date: 08/21/2020
 keywords: ["MmPrefetchPages function"]
 ms.keywords: MmPrefetchPages, MmPrefetchPages routine [Installable File System Drivers], ifsk.mmprefetchpages, mmref_6e555336-a134-409a-9c8a-a4a217e38599.xml, ntifs/MmPrefetchPages
 req.header: ntifs.h
 req.include-header: Ntifs.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows XP and later.
+req.target-min-winverclnt: Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,13 +49,13 @@ The **MmPrefetchPages** routine reads groups of pages from secondary storage in 
 
 ## -parameters
 
-### -param NumberOfLists
+### -param NumberOfLists [in]
 
-[in] The number of read-lists in the array passed in the *ReadLists* parameter.
+The number of read-lists in the array passed in the *ReadLists* parameter.
 
-### -param ReadLists
+### -param ReadLists [in]
 
-[in] A pointer to an array of read-lists to be prefetched.
+A pointer to an array of read-lists to be prefetched.
 
 ## -returns
 
@@ -75,4 +74,4 @@ The **MmPrefetchPages** routine reads groups of pages from secondary storage in 
 
 > [!NOTE]
 >
-> The [section object](/windows-hardware/drivers/kernel/section-objects-and-views) must already exist for the file to be prefetched. A section handle can be obtained by calling [**ZwCreateSection**](../wdm/nf-wdm-zwcreatefile.md).
+> The [section object](/windows-hardware/drivers/kernel/section-objects-and-views) must already exist for the file to be prefetched. A section handle can be obtained by calling [**ZwCreateSection**](../wdm/nf-wdm-zwcreatesection.md).

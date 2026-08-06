@@ -4,7 +4,6 @@ title: NdisMCmActivateVc function (ndis.h)
 description: NdisMCmActivateVc notifies NDIS that an MCM driver is ready to make transfers on a particular VC.
 old-location: netvista\ndismcmactivatevc.htm
 tech.root: netvista
-ms.assetid: 2c2e4f7d-578a-4429-baca-ebe45423afff
 ms.date: 05/02/2018
 keywords: ["NdisMCmActivateVc function"]
 ms.keywords: NdisMCmActivateVc, NdisMCmActivateVc function [Network Drivers Starting with Windows Vista], condis_mcm_ref_0dd062a7-dc2b-49c1-b319-e0189631e348.xml, ndis/NdisMCmActivateVc, netvista.ndismcmactivatevc
@@ -52,14 +51,14 @@ api_name:
 
 ## -parameters
 
-### -param NdisVcHandle 
+### -param NdisVcHandle [in]
 
-[in]
+
 Specifies the handle identifying the VC.
 
-### -param CallParameters 
+### -param CallParameters [in]
 
-[in]
+
 Pointer to a caller-allocated buffer, formatted as a structure of type 
      <a href="/previous-versions/windows/hardware/network/ff545384(v=vs.85)">CO_CALL_PARAMETERS</a>, containing all the
      media-specific parameters that the miniport driver uses for the activated VC.

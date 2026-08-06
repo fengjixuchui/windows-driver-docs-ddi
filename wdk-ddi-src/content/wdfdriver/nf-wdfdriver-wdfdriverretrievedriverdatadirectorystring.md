@@ -1,8 +1,8 @@
 ---
 UID: NF:wdfdriver.WdfDriverRetrieveDriverDataDirectoryString
 title: WdfDriverRetrieveDriverDataDirectoryString function (wdfdriver.h)
-description: 
-ms.assetid: 274dd0ee-3714-4c2c-ba44-ab4513520f73
+description: "Learn more about: WdfDriverRetrieveDriverDataDirectoryString function"
+tech.root: wdf
 ms.date: 10/19/2018
 keywords: ["WdfDriverRetrieveDriverDataDirectoryString function"]
 ms.keywords: WdfDriverRetrieveDriverDataDirectoryString
@@ -49,13 +49,13 @@ The **WdfDriverRetrieveDriverDataDirectoryString** method returns a path to a di
 
 ## -parameters
 
-### -param Driver
+### -param Driver [_In_]
 
-[_In_] A handle to the driver's framework driver object that the driver obtained from a previous call to [**WdfDriverCreate**](./nf-wdfdriver-wdfdrivercreate.md) or [**WdfDeviceGetDriver**](../wdfdevice/nf-wdfdevice-wdfdevicegetdriver.md).
+A handle to the driver's framework driver object that the driver obtained from a previous call to [**WdfDriverCreate**](./nf-wdfdriver-wdfdrivercreate.md) or [**WdfDeviceGetDriver**](../wdfdevice/nf-wdfdevice-wdfdevicegetdriver.md).
 
-### -param String
+### -param String [_In_]
 
-[_In_] A handle to a framework string object that the driver obtained from a previous call to [**WdfStringCreate**](../wdfstring/nf-wdfstring-wdfstringcreate.md). The framework assigns the fully qualified path of the requested driver directory to the string object.
+A handle to a framework string object that the driver obtained from a previous call to [**WdfStringCreate**](../wdfstring/nf-wdfstring-wdfstringcreate.md). The framework assigns the fully qualified path of the requested driver directory to the string object.
 
 ## -returns
 

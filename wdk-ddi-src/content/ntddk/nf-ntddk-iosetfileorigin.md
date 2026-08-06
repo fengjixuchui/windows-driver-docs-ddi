@@ -4,7 +4,6 @@ title: IoSetFileOrigin function (ntddk.h)
 description: The IoSetFileOrigin routine specifies whether a given file object is for a remote create request.
 old-location: ifsk\iosetfileorigin.htm
 tech.root: ifsk
-ms.assetid: 98d38c84-ed3a-4119-9a05-f8211f220467
 ms.date: 04/16/2018
 keywords: ["IoSetFileOrigin function"]
 ms.keywords: IoSetFileOrigin, IoSetFileOrigin routine [Installable File System Drivers], ifsk.iosetfileorigin, ioref_782eeed5-9c44-4572-b929-4e1fb82d8e03.xml, ntddk/IoSetFileOrigin
@@ -50,14 +49,14 @@ The <b>IoSetFileOrigin</b> routine specifies whether a given file object is for 
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Pointer to the file object.
 
-### -param Remote 
+### -param Remote [in]
 
-[in]
+
 Set to <b>TRUE</b> to set the FO_REMOTE_ORIGIN flag on the file object, <b>FALSE</b> to clear it.
 
 ## -returns

@@ -4,7 +4,6 @@ title: ImpersonatePrinterClient function (winsplp.h)
 description: ImpersonatePrinterClient resumes impersonation of the client, completing the operation begun by RevertToPrinterSelf.
 old-location: print\impersonateprinterclient.htm
 tech.root: print
-ms.assetid: 8e110b2a-9d13-4e2e-8f27-5a48d838fb3c
 ms.date: 04/20/2018
 keywords: ["ImpersonatePrinterClient function"]
 ms.keywords: ImpersonatePrinterClient, ImpersonatePrinterClient function [Print Devices], print.impersonateprinterclient, spoolfnc_2eb48193-850d-43dc-8e9b-025c8187c49e.xml, winsplp/ImpersonatePrinterClient
@@ -50,9 +49,9 @@ ImpersonatePrinterClient resumes impersonation of the client, completing the ope
 
 ## -parameters
 
-### -param hToken 
+### -param hToken [in]
 
-[in]
+
 Caller-supplied handle to a thread. This parameter must have been previously returned by a call to <a href="/windows-hardware/drivers/ddi/winsplp/nf-winsplp-reverttoprinterself">RevertToPrinterSelf</a>.
 
 ## -returns

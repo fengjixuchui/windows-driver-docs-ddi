@@ -4,7 +4,6 @@ title: UfxDeviceNotifyReset function (ufxclient.h)
 description: Notifies UFX about a USB bus reset event.
 old-location: buses\ufxdevicenotifyreset.htm
 tech.root: usbref
-ms.assetid: FD88E645-7CBB-4998-BEBA-5BBE2FF167FC
 ms.date: 05/07/2018
 keywords: ["UfxDeviceNotifyReset function"]
 ms.keywords: UfxDeviceNotifyReset, UfxDeviceNotifyReset method [Buses], buses.ufxdevicenotifyreset, ufxclient/UfxDeviceNotifyReset
@@ -50,14 +49,14 @@ Notifies UFX about a USB bus reset event.
 
 ## -parameters
 
-### -param UfxDevice 
+### -param UfxDevice [in]
 
-[in]
+
 A handle to a UFX device object that the driver created by calling <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
 
-### -param DeviceSpeed 
+### -param DeviceSpeed [in]
 
-[in]
+
 Contains a value of type <a href="/windows-hardware/drivers/ddi/usbspec/ne-usbspec-_usb_device_speed">USB_DEVICE_SPEED</a> that indicates the speed of the device.
 
 ## -remarks

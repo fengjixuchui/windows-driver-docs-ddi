@@ -4,14 +4,13 @@ title: DXGKCB_AGP_SET_COMMAND (dispmprt.h)
 description: The AgpSetCommand function sets the AGP rate and specifies whether side band addressing and fast write transactions are enabled.
 old-location: display\agpsetcommand.htm
 tech.root: display
-ms.assetid: 4440bc0f-01cb-4108-bfe8-9d5127777f00
 ms.date: 05/10/2018
 keywords: ["DXGKCB_AGP_SET_COMMAND callback function"]
 ms.keywords: AgpSetCommand, AgpSetCommand callback function [Display Devices], DXGKCB_AGP_SET_COMMAND, DXGKCB_AGP_SET_COMMAND callback, DpFunctions_7b0574a7-3c70-41e5-b7e7-908a86c2bccd.xml, display.agpsetcommand, dispmprt/AgpSetCommand
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
- - AgpSetCommand
+ - DXGKCB_AGP_SET_COMMAND
 ---
 
 # DXGKCB_AGP_SET_COMMAND callback function
@@ -50,14 +49,14 @@ The <b>AgpSetCommand</b> function sets the AGP rate and specifies whether side b
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A handle to a context block that is associated with an AGP interface. The display miniport driver previously received this handle in the <b>Context</b> member of the DXGK_AGP_INTERFACE structure that was filled in by <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkcb_query_services">DxgkCbQueryServices</a>.
 
-### -param Command 
+### -param Command [in]
 
-[in]
+
 A set of flags that specify the AGP rate and the types of AGP transactions that will be used.
 
 The caller must set one, and only one, of the following flags.
@@ -100,3 +99,4 @@ None.
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkcb_query_services">DxgkCbQueryServices</a>
+

@@ -3,8 +3,7 @@ UID: NE:extension._NET_EXTENSION_TYPE
 title: NET_EXTENSION_TYPE (extension.h)
 description: The NET_EXTENSION_TYPE enumeration specifies the type of extension that a client driver is querying.
 tech.root: netvista
-ms.assetid: 92541d1b-82e8-4717-9733-3e0e562a9d09
-ms.date: 09/23/2019
+ms.date: 03/30/2022
 keywords: ["NET_EXTENSION_TYPE enumeration"]
 ms.keywords: NET_EXTENSION_TYPE, NET_EXTENSION_TYPE,
 req.header: extension.h
@@ -13,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.ddi-compliance: 
 req.max-support: 
 req.typenames: NET_EXTENSION_TYPE
@@ -31,9 +30,8 @@ api_type:
 api_location:
  - extension.h
 api_name:
+ - _NET_EXTENSION_TYPE
  - NET_EXTENSION_TYPE
-product:
- - Windows
 ---
 
 # NET_EXTENSION_TYPE enumeration
@@ -45,13 +43,16 @@ The **NET_EXTENSION_TYPE** enumeration specifies the type of extension that a cl
 
 ## -enum-fields
 
-### -field NetExtensionTypePacket 
+### -field NetExtensionTypePacket:1 
 
 The extension is a [**NET_PACKET**](../packet/ns-packet-_net_packet.md) extension.
 
-### -field NetExtensionTypeFragment 
+### -field NetExtensionTypeFragment:2 
 
 The extension is a [**NET_FRAGMENT**](../fragment/ns-fragment-_net_fragment.md) extension.
+
+### -field NetExtensionTypeBuffer
+Reserved for system use.
 
 ## -remarks
 
@@ -66,3 +67,4 @@ Client drivers pass this enumeration as a value to [**NET_EXTENSION_QUERY_INIT**
 [**NET_FRAGMENT**](../fragment/ns-fragment-_net_fragment.md)
 
 [**NET_EXTENSION_QUERY_INIT**](../netadapterpacket/nf-netadapterpacket-net_extension_query_init.md)
+

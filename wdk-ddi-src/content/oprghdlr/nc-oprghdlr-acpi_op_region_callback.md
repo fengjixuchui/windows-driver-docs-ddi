@@ -1,9 +1,8 @@
 ---
 UID: NC:oprghdlr.ACPI_OP_REGION_CALLBACK
 title: ACPI_OP_REGION_CALLBACK (oprghdlr.h)
-description: 
-ms.assetid: 1549e0f0-69cd-4ee4-abf4-92e5da9d7903
-ms.date: 10/19/2018
+description: Describes the ACPI_OP_REGION_CALLBACK callback function.
+ms.date: 03/03/2023
 keywords: ["ACPI_OP_REGION_CALLBACK callback function"]
 req.header: oprghdlr.h
 req.include-header: 
@@ -24,6 +23,7 @@ req.assembly:
 req.type-library: 
 targetos: Windows
 ms.custom: RS5
+tech.root: acpi
 f1_keywords:
  - ACPI_OP_REGION_CALLBACK
  - oprghdlr/ACPI_OP_REGION_CALLBACK
@@ -35,18 +35,15 @@ api_location:
  - oprghdlr.h
 api_name:
  - ACPI_OP_REGION_CALLBACK
-product:
- - Windows
 ---
-
-# ACPI_OP_REGION_CALLBACK callback function
-
 
 ## -description
 
 ## -parameters
 
 ### -param Context
+
+Defines the **PVOID** parameter *Context*.
 
 ## -syntax
 
@@ -68,4 +65,3 @@ VOID AcpiOpRegionCallback
 ## -remarks
 
 ## -see-also
-

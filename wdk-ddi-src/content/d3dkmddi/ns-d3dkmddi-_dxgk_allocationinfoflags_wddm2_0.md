@@ -1,15 +1,14 @@
 ---
 UID: NS:d3dkmddi._DXGK_ALLOCATIONINFOFLAGS_WDDM2_0
-title: _DXGK_ALLOCATIONINFOFLAGS_WDDM2_0 (d3dkmddi.h)
+title: DXGK_ALLOCATIONINFOFLAGS_WDDM2_0 (d3dkmddi.h)
 description: The DXGK_ALLOCATIONINFOFLAGS_WDDM2_0 structure identifies properties for an allocation. The display miniport driver specifies these flags for the video memory manager.
-ms.assetid: 14943206-41ce-4ddb-b514-d4a0ffca8841
-ms.date: 08/05/2020
+ms.date: 08/25/2022
 keywords: ["_DXGK_ALLOCATIONINFOFLAGS_WDDM2_0 structure"]
 ms.keywords: DXGK_ALLOCATIONINFOFLAGS_WDDM2_0, DXGK_ALLOCATIONINFOFLAGS_WDDM2_0 structure [Display Devices], d3dkmddi/DXGK_ALLOCATIONINFOFLAGS, display.dxgk_allocationinfoflags
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available starting in Windows 10.
+req.target-min-winverclnt: Windows 10
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -39,14 +38,15 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_ALLOCATIONINFOFLAGS_WDDM2_0
  - DXGK_ALLOCATIONINFOFLAGS_WDDM2_0
 ---
 
-# _DXGK_ALLOCATIONINFOFLAGS_WDDM2_0 structure
+# DXGK_ALLOCATIONINFOFLAGS_WDDM2_0 structure
 
 ## -description
 
-The DXGK_ALLOCATIONINFOFLAGS_WDDM2_0 structure identifies properties for an allocation.
+The **DXGK_ALLOCATIONINFOFLAGS_WDDM2_0** structure identifies properties for an allocation.
 
 ## -struct-fields
 
@@ -154,11 +154,13 @@ Setting this member is equivalent to setting the twelfth bit of the 32-bit **Val
 
 Setting this member is equivalent to setting the thirteenth bit of the 32-bit **Value** member (0x00001000).
 
+### -field MapApertureCpuVisible
+
+[in] When set, indicates that the driver requires CPU access to memory during a [**DxgkDdiBuildPagingBuffer**](nc-d3dkmddi-dxgkddi_buildpagingbuffer.md) call for a [**DXGK_OPERATION_MAP_APERTURE_SEGMENT2**](ne-d3dkmddi-_dxgk_buildpagingbuffer_operation.md) operation. **MapApertureCpuVisible** is a part of **DxgkDdiBuildPagingBuffer**'s **MapAperatureSegment2** functionality, so the driver must set [**DXGK_VIDMMCAPS MapAperature2Supported**](ns-d3dkmddi-_dxgk_vidmmcaps.md) to use this field. If **MapAperature2Supported** is not set but the driver specifies **MapApertureCpuVisible**, the call to [**DxgkDdiCreateAllocation**](nc-d3dkmddi-dxgkddi_createallocation.md) will fail. See [IOMMU DMA remapping](/windows-hardware/drivers/display/iommu-dma-remapping) for more information. Supported starting in Windows Server 2022.
+
 ### -field Reserved03
 
 [in] This member is reserved and should be set to zero.
-
-Setting this member is equivalent to setting the fourteenth bit of the 32-bit **Value** member (0x00002000).
 
 ### -field HistoryBuffer
 
@@ -176,7 +178,7 @@ Setting this member is equivalent to setting the sixteenth bit of the 32-bit **V
 
 ### -field ExplicitResidencyNotification
 
-When this flags is specified, the driver receives a **NotifyResidency** paging buffer operation when the allocation residency is changed (evicted, commited). The flag can only be set when the **AccessedPhysically** flag is set.
+When this flags is specified, the driver receives a **NotifyResidency** paging buffer operation when the allocation residency is changed (evicted, committed). The flag can only be set when the **AccessedPhysically** flag is set.
 
 Setting this member is equivalent to setting the seventeenth bit of the 32-bit **Value** member (0x00010000).
 
@@ -187,10 +189,6 @@ When this member is set, the allocation will hold content used for hardware DRM.
 ### -field CpuVisibleOnDemand
 
 When this member is set, the video memory manager will try to allocate the virtual address for the allocation when it is mapped/locked. This will result in the allocation not having a permanent virtual address, which reduces the amount of virtual address space used. It behaves similarly to the **CpuVisible** flag in that it’s an allocation directly accessible by the CPU, but it just gets the virtual address for it “on demand” instead of being permanently assigned.
-
-### -field Reserved
-
-[in] This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting 4 bits, from the sixteenth bit to the nineteenth bit (0x00078000), of the 32-bit **Value** member to zeros.
 
 ### -field DXGK_ALLOC_RESERVED16
 

@@ -4,7 +4,6 @@ title: EVT_WDF_CHILD_LIST_SCAN_FOR_CHILDREN (wdfchildlist.h)
 description: A driver's EvtChildListScanForChildren event callback function must report all of the child devices that are present.
 old-location: wdf\evtchildlistscanforchildren.htm
 tech.root: wdf
-ms.assetid: 57b06ecd-fc8c-4653-bb78-2bc6ecde6d63
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_CHILD_LIST_SCAN_FOR_CHILDREN callback function"]
 ms.keywords: DFDeviceObjectChildListRef_fa95ef9d-6bb7-4eb0-8535-06853fa1759c.xml, EVT_WDF_CHILD_LIST_SCAN_FOR_CHILDREN, EVT_WDF_CHILD_LIST_SCAN_FOR_CHILDREN callback, EvtChildListScanForChildren, EvtChildListScanForChildren callback function, kmdf.evtchildlistscanforchildren, wdf.evtchildlistscanforchildren, wdfchildlist/EvtChildListScanForChildren
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfChildlist.h
 api_name:
- - EvtChildListScanForChildren
+ - EVT_WDF_CHILD_LIST_SCAN_FOR_CHILDREN
 ---
 
 # EVT_WDF_CHILD_LIST_SCAN_FOR_CHILDREN callback function
@@ -52,9 +51,9 @@ A driver's <i>EvtChildListScanForChildren</i> event callback function must repor
 
 ## -parameters
 
-### -param ChildList 
+### -param ChildList [in]
 
-[in]
+
 A handle to a framework child list object.
 
 ## -remarks
@@ -102,3 +101,4 @@ The <i>EvtChildListScanForChildren</i> callback function is called at IRQL = PAS
 
 
 <a href="/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoinitsetdefaultchildlistconfig">WdfFdoInitSetDefaultChildListConfig</a>
+

@@ -4,7 +4,6 @@ title: RtlOemStringToUnicodeString function (ntifs.h)
 description: The RtlOemStringToUnicodeString routine translates a given source string into a null-terminated Unicode string using the current system OEM code page.
 old-location: ifsk\rtloemstringtounicodestring.htm
 tech.root: ifsk
-ms.assetid: 0420718f-3d0f-4f15-85ec-c2cdfa930023
 ms.date: 04/16/2018
 keywords: ["RtlOemStringToUnicodeString function"]
 ms.keywords: RtlOemStringToUnicodeString, RtlOemStringToUnicodeString routine [Installable File System Drivers], ifsk.rtloemstringtounicodestring, ntifs/RtlOemStringToUnicodeString, rtlref_6b1f3210-6b02-4f20-9887-b7efd0090b7f.xml
@@ -54,14 +53,14 @@ The <b>RtlOemStringToUnicodeString</b> routine translates a given source string 
 
 Pointer to a caller-allocated buffer to receive the translated string. If <i>AllocateDestinationString</i> is <b>FALSE</b>, the caller must also allocate a buffer for the <b>Buffer</b> member of <i>DestinationString</i> to hold the null-terminated Unicode string. If <i>AllocateDestinationString</i> is <b>TRUE</b>, <b>RtlOemStringToUnicodeString</b> allocates a buffer large enough to hold the string, passes a pointer to it in <b>Buffer</b>, and updates the length and maximum length members of <i>DestinationString</i> accordingly.
 
-### -param SourceString 
+### -param SourceString [in]
 
-[in]
+
 Pointer to the OEM string to be translated to Unicode.
 
-### -param AllocateDestinationString 
+### -param AllocateDestinationString [in]
 
-[in]
+
 Set to <b>TRUE</b> if <b>RtlOemStringToUnicodeString</b> should allocate the buffer space for the <i>DestinationString</i>, <b>FALSE</b> otherwise. If this parameter is <b>TRUE</b>, the caller is responsible for freeing the buffer when it is no longer needed by calling <b>RtlFreeUnicodeString</b>.
 
 ## -returns
@@ -74,7 +73,7 @@ Set to <b>TRUE</b> if <b>RtlOemStringToUnicodeString</b> should allocate the buf
 
 This routine does not modify the source string. It returns a NULL-terminated Unicode string. 
 
-For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/index">Strings</a>.
+For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/_kernel/#run-time-library-rtl-routines">Run-Time Library (RTL) Routines</a>.
 
 ## -see-also
 

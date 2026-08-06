@@ -4,7 +4,6 @@ title: PsGetPermanentSiloContext function (ntddk.h)
 description: This routine retrieves an object that was inserted in the Silo without incrementing the reference count.
 old-location: kernel\psgetpermanentsilocontext.htm
 tech.root: kernel
-ms.assetid: C1AEFC8F-6488-4582-9835-DAD07D4ACB17
 ms.date: 04/30/2018
 keywords: ["PsGetPermanentSiloContext function"]
 ms.keywords: PsGetPermanentSiloContext, PsGetPermanentSiloContext routine [Kernel-Mode Driver Architecture], kernel.psgetpermanentsilocontext, ntddk/PsGetPermanentSiloContext
@@ -50,14 +49,14 @@ This routine retrieves an object that was inserted in the <i>Silo</i> without in
 
 ## -parameters
 
-### -param Silo 
+### -param Silo [in]
 
-[in]
+
 The silo in which the object was inserted. This parameter is required and it cannot be <b>NULL</b>.
 
-### -param ContextSlot 
+### -param ContextSlot [in]
 
-[in]
+
 The read-only slot that was previously allocated by<a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psallocsilocontextslot">PsAllocSiloContextSlot</a> and made read-only by <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-psmakesilocontextpermanent">PsMakeSiloContextPermanent</a>.
 
 ### -param ReturnedSiloContext

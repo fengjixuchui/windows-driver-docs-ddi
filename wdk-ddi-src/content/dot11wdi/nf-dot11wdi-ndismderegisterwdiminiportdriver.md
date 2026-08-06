@@ -4,7 +4,6 @@ title: NdisMDeregisterWdiMiniportDriver function (dot11wdi.h)
 description: A miniport driver calls the NdisMDeregisterWdiMiniportDriver function to release resources that it allocated with a previous call to the NdisMRegisterWdiMiniportDriver function.
 old-location: netvista\ndismderegisterwdiminiportdriver.htm
 tech.root: netvista
-ms.assetid: 6B2B0A88-9F63-4A68-894B-38424FBE161E
 ms.date: 05/02/2018
 keywords: ["NdisMDeregisterWdiMiniportDriver function"]
 ms.keywords: NdisMDeregisterWdiMiniportDriver, NdisMDeregisterWdiMiniportDriver function [Network Drivers Starting with Windows Vista], dot11wdi/NdisMDeregisterWdiMiniportDriver, netvista.ndismderegisterwdiminiportdriver
@@ -47,13 +46,16 @@ api_name:
 
 ## -description
 
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
+
 A miniport driver calls the NdisMDeregisterWdiMiniportDriver function to release resources that it allocated with a previous call to the <a href="/windows-hardware/drivers/ddi/dot11wdi/nf-dot11wdi-ndismregisterwdiminiportdriver">NdisMRegisterWdiMiniportDriver</a> function.
 
 ## -parameters
 
-### -param NdisMiniportDriverHandle 
+### -param NdisMiniportDriverHandle [in]
 
-[in]
+
 The NDIS handle for a miniport driver.
 
 ## -returns

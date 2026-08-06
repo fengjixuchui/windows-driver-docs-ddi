@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11.DOT11_EXTSTA_ATTRIBUTES
 title: DOT11_EXTSTA_ATTRIBUTES (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_EXTSTA_ATTRIBUTES structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_extsta_attributes.htm
 tech.root: netvista
-ms.assetid: 319017a7-f398-46f7-ab03-1dcb057c1332
 ms.date: 02/16/2018
 keywords: ["DOT11_EXTSTA_ATTRIBUTES structure"]
 ms.keywords: "*PDOT11_EXTSTA_ATTRIBUTES, DOT11_EXTSTA_ATTRIBUTES, DOT11_EXTSTA_ATTRIBUTES structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_857cc383-6c5b-4bd3-9e91-609b5a9b1f93.xml, PDOT11_EXTSTA_ATTRIBUTES, PDOT11_EXTSTA_ATTRIBUTES structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_extsta_attributes, windot11/DOT11_EXTSTA_ATTRIBUTES, windot11/PDOT11_EXTSTA_ATTRIBUTES"
@@ -41,8 +40,7 @@ api_location:
  - Windot11.h
 api_name:
  - DOT11_EXTSTA_ATTRIBUTES
-product:
- - Windows 10 or later.
+ - PDOT11_EXTSTA_ATTRIBUTES
 ---
 
 # DOT11_EXTSTA_ATTRIBUTES structure
@@ -50,7 +48,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The <b>DOT11_EXTSTA_ATTRIBUTES</b> structure defines the physical and operating attributes of the miniport
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The <b>DOT11_EXTSTA_ATTRIBUTES</b> structure defines the physical and operating attributes of the miniport
   driver and 802.11 station when operating in Extensible Station (ExtSTA) mode. For more information about
   this operation mode, see
   <a href="/windows-hardware/drivers/network/extensible-station-operation-mode">Extensible Station Operation
@@ -62,7 +63,7 @@ product:
 
 The type, revision, and size of the <b>DOT11_EXTSTA_ATTRIBUTES</b> structure. This member is formatted as
      an
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+     <a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 
 The miniport driver must set the members of
@@ -117,7 +118,7 @@ This member must be set to
        <b>sizeof</b>(<b>DOT11_EXTSTA_ATTRIBUTES</b>).
 
 For more information about these members, see
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+     <a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 ### -field uScanSSIDListSize
 
@@ -548,7 +549,7 @@ Management Frame Protection Required (MFPR) enforcement on Windows 8 is not sup
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -579,3 +580,4 @@ Management Frame Protection Required (MFPR) enforcement on Windows 8 is not sup
 
 
 <a href="/windows-hardware/drivers/network/oid-dot11-scan-request">OID_DOT11_SCAN_REQUEST</a>
+

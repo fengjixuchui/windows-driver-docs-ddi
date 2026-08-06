@@ -4,7 +4,6 @@ title: ExWaitForRundownProtectionRelease function (wdm.h)
 description: The ExWaitForRundownProtectionRelease routine waits until all drivers that have already been granted run-down protection complete their accesses of the shared object.
 old-location: kernel\exwaitforrundownprotectionrelease.htm
 tech.root: kernel
-ms.assetid: 96786C19-29C4-4030-9429-0B3CB7F3DF11
 ms.date: 04/30/2018
 keywords: ["ExWaitForRundownProtectionRelease function"]
 ms.keywords: ExWaitForRundownProtectionRelease, ExWaitForRundownProtectionRelease routine [Kernel-Mode Driver Architecture], kernel.exwaitforrundownprotectionrelease, wdm/ExWaitForRundownProtectionRelease
@@ -50,9 +49,9 @@ The <b>ExWaitForRundownProtectionRelease</b> routine waits until all drivers tha
 
 ## -parameters
 
-### -param RunRef 
+### -param RunRef [in, out]
 
-[in, out]
+
 A pointer to an <a href="/windows-hardware/drivers/kernel/eprocess">EX_RUNDOWN_REF</a> structure that was initialized by a previous call to the  <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializerundownprotection">ExInitializeRundownProtection</a> routine. The run-down protection routines use this structure to track the run-down status of the associated shared object. This structure is opaque to drivers.
 
 ## -remarks

@@ -4,7 +4,6 @@ title: StorPortIsCurrentOsInstallationUpgrade function (storport.h)
 description: The StorPortIsCurrentOsInstallationUpgrade routine checks if the current installation of Windows is an upgrade from a previous version or not.
 old-location: storage\storportiscurrentosinstallationupgrade.htm
 tech.root: storage
-ms.assetid: 68D944D9-1A52-4FB0-B2D7-9680AB1EDABB
 ms.date: 03/29/2018
 keywords: ["StorPortIsCurrentOsInstallationUpgrade function"]
 ms.keywords: StorPortIsCurrentOsInstallationUpgrade, StorPortIsCurrentOsInstallationUpgrade routine [Storage Devices], storage.storportiscurrentosinstallationupgrade, storport/StorPortIsCurrentOsInstallationUpgrade
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: IRQL == PASSIVE_LEVEL
+req.irql: == PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ The <b>StorPortIsCurrentOsInstallationUpgrade</b>  routine checks if the current
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param Upgraded 
+### -param Upgraded [out]
 
-[out]
+
 The value pointed to by <i>Upgraded</i> is set to <b>TRUE</b> if the current operating system installation was upgraded from a previous version. Otherwise, it is set to <b>FALSE</b>.
 
 ## -returns

@@ -2,10 +2,8 @@
 UID: NE:poscx._POS_CX_EVENT_ATTRIBUTES
 title: _POS_CX_EVENT_ATTRIBUTES (poscx.h)
 description: The POS_CX_EVENT_ATTRIBUTES describes the priority and access rights for the POS events coming from the device. The values are a combination of the values defined in POS_CX_EVENT_DEST and POS_CX_EVENT_PRIORITY.
-old-location: pos\pos_cx_event_attributes.htm
 tech.root: pos
-ms.assetid: 5B8B38B6-ACF3-44F9-BC83-71F0A2FC4DDD
-ms.date: 02/23/2018
+ms.date: 01/04/2023
 keywords: ["POS_CX_EVENT_ATTRIBUTES enumeration"]
 ms.keywords: POS_CX_EVENT_ATTRIBUTES, POS_CX_EVENT_ATTRIBUTES enumeration, POS_CX_EVENT_ATTR_BCAST_CONTROL, POS_CX_EVENT_ATTR_CONTROL, POS_CX_EVENT_ATTR_DATA, _POS_CX_EVENT_ATTRIBUTES, pos.pos_cx_event_attributes, poscx/POS_CX_EVENT_ATTRIBUTES, poscx/POS_CX_EVENT_ATTR_BCAST_CONTROL, poscx/POS_CX_EVENT_ATTR_CONTROL, poscx/POS_CX_EVENT_ATTR_DATA
 req.header: poscx.h
@@ -27,7 +25,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: POS_CX_EVENT_ATTRIBUTES
-req.product: Windows 10 or later.
 f1_keywords:
  - _POS_CX_EVENT_ATTRIBUTES
  - poscx/_POS_CX_EVENT_ATTRIBUTES
@@ -41,15 +38,13 @@ api_type:
 api_location:
  - poscx.h
 api_name:
+ - _POS_CX_EVENT_ATTRIBUTES
  - POS_CX_EVENT_ATTRIBUTES
 ---
 
-# _POS_CX_EVENT_ATTRIBUTES enumeration
-
-
 ## -description
 
-The POS_CX_EVENT_ATTRIBUTES describes the priority and access rights for the POS events coming from the device. The values are a combination of the values defined in <a href="/windows-hardware/drivers/ddi/poscx/ne-poscx-_pos_cx_event_dest">POS_CX_EVENT_DEST</a> and <a href="/windows-hardware/drivers/ddi/poscx/ne-poscx-_pos_cx_event_priority">POS_CX_EVENT_PRIORITY</a>.
+The POS_CX_EVENT_ATTRIBUTES enumeration describes the priority and access rights for the POS events coming from the device. The values are a combination of the values defined in [POS_CX_EVENT_DEST](./ne-poscx-_pos_cx_event_dest.md) and [POS_CX_EVENT_PRIORITY](./ne-poscx-_pos_cx_event_priority.md).
 
 ## -enum-fields
 
@@ -67,13 +62,10 @@ Control level priority delivered in FIFO to ALL open handles on the driver.
 
 ## -remarks
 
-<div class="alert"><b>Note</b>  PosCx will deliver all Control level events before Data level events.</div>
-<div> </div>
+PosCx will deliver all Control level events before Data level events.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/poscx/ne-poscx-_pos_cx_event_dest">POS_CX_EVENT_DEST</a>
+[POS_CX_EVENT_DEST](./ne-poscx-_pos_cx_event_dest.md)
 
-
-
-<a href="/windows-hardware/drivers/ddi/poscx/ne-poscx-_pos_cx_event_priority">POS_CX_EVENT_PRIORITY</a>
+[POS_CX_EVENT_PRIORITY](./ne-poscx-_pos_cx_event_priority.md)

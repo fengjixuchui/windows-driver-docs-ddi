@@ -4,7 +4,6 @@ title: wiasFreePropContext function (wiamdef.h)
 description: The wiasFreePropContext function releases the memory occupied by a WIA_PROPERTY_CONTEXT structure.
 old-location: image\wiasfreepropcontext.htm
 tech.root: image
-ms.assetid: 14a1a5bd-acc3-4ca6-87c6-5326c0f9ca82
 ms.date: 05/03/2018
 keywords: ["wiasFreePropContext function"]
 ms.keywords: image.wiasfreepropcontext, wiamdef/wiasFreePropContext, wiasFncs_60deac65-fa17-4f2e-abe1-fa6d424dc477.xml, wiasFreePropContext, wiasFreePropContext function [Imaging Devices]
@@ -50,9 +49,9 @@ The **wiasFreePropContext** function releases the memory occupied by a [WIA_PROP
 
 ## -parameters
 
-### -param pContext 
+### -param pContext [in, out]
 
-[in, out]
+
 Pointer to a [WIA_PROPERTY_CONTEXT](../wiamindr_lh/ns-wiamindr_lh-_wia_property_context.md) structure that contains a property context.
 
 ## -returns

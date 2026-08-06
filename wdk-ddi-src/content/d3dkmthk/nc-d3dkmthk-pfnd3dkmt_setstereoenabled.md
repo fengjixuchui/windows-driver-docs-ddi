@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_SETSTEREOENABLED
 title: PFND3DKMT_SETSTEREOENABLED (d3dkmthk.h)
 description: The PFND3DKMT_SETSTEREOENABLED callback function sets stereo enabled.
-ms.assetid: ee87c614-07b4-47a3-a6f5-afb2fdae9772
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_SETSTEREOENABLED callback function"]
 req.header: d3dkmthk.h
@@ -39,7 +38,6 @@ api_location:
  - API-MS-Win-DX-D3DKMT-L1-1-2.dll
 api_name:
  - PFND3DKMT_SETSTEREOENABLED
- - D3DKMTSetStereoEnabled
 dev_langs:
  - c++
 ---
@@ -53,7 +51,7 @@ The PFND3DKMT_SETSTEREOENABLED callback function retrieves a Boolean value that 
 
 ## -parameters
 
-### -param Arg1: 
+### -param unnamedParam1: 
 
 *\_In\_* *bStereoEnabled*
 

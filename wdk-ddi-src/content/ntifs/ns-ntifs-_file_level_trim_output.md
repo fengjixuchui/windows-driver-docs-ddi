@@ -4,14 +4,13 @@ title: _FILE_LEVEL_TRIM_OUTPUT (ntifs.h)
 description: The FILE_LEVEL_TRIM_OUTPUT structure contains the results of a trim operation performed by an FSCTL_FILE_LEVEL_TRIM request.
 old-location: ifsk\file_level_trim_output.htm
 tech.root: ifsk
-ms.assetid: 28CCE967-E752-4E0E-94D9-3A4243266684
 ms.date: 04/16/2018
 keywords: ["FILE_LEVEL_TRIM_OUTPUT structure"]
 ms.keywords: "*PFILE_LEVEL_TRIM_OUTPUT, FILE_LEVEL_TRIM_OUTPUT, FILE_LEVEL_TRIM_OUTPUT structure [Installable File System Drivers], FILE_LEVEL_TRIM_RANGE_OUTPUT, FILE_LEVEL_TRIM_RANGE_OUTPUT structure [Installable File System Drivers], PFILE_LEVEL_TRIM_RANGE_OUTPUT, PFILE_LEVEL_TRIM_RANGE_OUTPUT structure pointer [Installable File System Drivers], _FILE_LEVEL_TRIM_OUTPUT, ifsk.file_level_trim_output, ntifs/FILE_LEVEL_TRIM_RANGE, ntifs/PFILE_LEVEL_TRIM_RANGE_OUTPUT"
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows 8 and later versions of Windows.
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,7 +41,9 @@ api_type:
 api_location:
  - ntifs.h
 api_name:
- - FILE_LEVEL_TRIM_RANGE_OUTPUT
+ - _FILE_LEVEL_TRIM_OUTPUT
+ - PFILE_LEVEL_TRIM_OUTPUT
+ - FILE_LEVEL_TRIM_OUTPUT
 ---
 
 # _FILE_LEVEL_TRIM_OUTPUT structure
@@ -67,3 +68,4 @@ All trim ranges in the array in <a href="/windows-hardware/drivers/ddi/ntifs/ns-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ifs/fsctl-file-level-trim">FSCTL_FILE_LEVEL_TRIM</a>
+

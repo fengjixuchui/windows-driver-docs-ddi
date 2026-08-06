@@ -3,7 +3,6 @@ UID: NF:portcls.IMiniportWaveRTStream.GetHWLatency
 title: IMiniportWaveRTStream::GetHWLatency (portcls.h)
 description: The GetHWLatency method retrieves information about sources of stream latency in the audio hardware.
 tech.root: audio
-ms.assetid: faddde96-d13f-4f19-9370-ea756e39c6d3
 ms.date: 10/31/2018
 keywords: ["IMiniportWaveRTStream::GetHWLatency"]
 ms.keywords: IMiniportWaveRTStream::GetHWLatency, GetHWLatency, IMiniportWaveRTStream.GetHWLatency, IMiniportWaveRTStream::GetHWLatency, IMiniportWaveRTStream.GetHWLatency
@@ -35,9 +34,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWaveRTStream.GetHWLatency
-product:
- - Windows
+ - IMiniportWaveRTStream::GetHWLatency
 ---
 
 # IMiniportWaveRTStream::GetHWLatency
@@ -56,7 +53,7 @@ A pointer to a KSRTAUDIO_HWLATENCY structure into which the driver writes the ha
 ## -remarks
 
 The port driver calls this method in response to a KSPROPERTY_RTAUDIO_HWLATENCY property request from a client.
-For more information about the sources of hardware latency in an audio stream, see the Stream Latency during Playback and Stream Latency during Recording topics.
+For more information about the sources of hardware latency in an audio stream, see [Stream Latency during Playback](/windows-hardware/drivers/audio/stream-latency-during-playback) and [Stream Latency during Recording](/windows-hardware/drivers/audio/stream-latency-during-recording).
 
 ## -see-also
 

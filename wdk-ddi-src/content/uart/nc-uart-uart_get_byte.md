@@ -2,8 +2,7 @@
 UID: NC:uart.UART_GET_BYTE
 title: UART_GET_BYTE (uart.h)
 description: Reads a data byte from the UART device.
-tech.root: serports
-ms.assetid: d0b97aa3-4e93-498d-8afc-44588fd21388
+tech.root: uart
 ms.date: 10/19/2018
 keywords: ["UART_GET_BYTE callback function"]
 req.header: uart.h
@@ -46,13 +45,13 @@ Reads a data byte from the UART device.
 
 ## -parameters
 
-### -param Port
+### -param Port [_Inout_]
 
-[_Inout_] A pointer to a [**_CPPORT**](ns-uart-_cpport.md) structure that contains the  address of the port object that describes the UART hardware.
+A pointer to a [**_CPPORT**](ns-uart-_cpport.md) structure that contains the  address of the port object that describes the UART hardware.
 
-### -param Byte:
+### -param Byte: [_Out_]
 
-[_Out_] A pointer to a variable that contains received byte.
+A pointer to a variable that contains received byte.
 
 ## -returns
 
@@ -88,3 +87,4 @@ Register your implementation of this callback function by setting the appropriat
 
 [**UART_STATUS**](ne-uart-uart_status.md)
 
+[**uart.h**](index.md)

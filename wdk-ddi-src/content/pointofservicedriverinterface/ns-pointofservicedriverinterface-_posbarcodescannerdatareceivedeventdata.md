@@ -4,7 +4,6 @@ title: _PosBarcodeScannerDataReceivedEventData (pointofservicedriverinterface.h)
 description: This structure contains the scanned data that is passed to the BarcodeScannerDataReceived event.
 old-location: pos\posbarcodescannerdatareceivedeventdata.htm
 tech.root: pos
-ms.assetid: 220713c4-ecfe-43a2-aebf-f1b00b75e49b
 ms.date: 02/23/2018
 keywords: ["PosBarcodeScannerDataReceivedEventData structure"]
 ms.keywords: PosBarcodeScannerDataReceivedEventData, PosBarcodeScannerDataReceivedEventData structure, _PosBarcodeScannerDataReceivedEventData, pointofservicedriverinterface/PosBarcodeScannerDataReceivedEventData, pos.posbarcodescannerdatareceivedeventdata
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - PointOfServiceDriverInterface.h
 api_name:
+ - _PosBarcodeScannerDataReceivedEventData
  - PosBarcodeScannerDataReceivedEventData
 ---
 
@@ -71,3 +71,4 @@ Indicates the number of bytes of decoded scan data. A label is the decoded scan 
 ## -remarks
 
 *ScanDataLength* bytes of scan data immediately follows the *PosBarcodeScannerDataReceivedEventData* structure, followed by *ScanDataLabelLength* bytes of label data.
+

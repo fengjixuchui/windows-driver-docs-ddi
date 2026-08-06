@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostSymbolEnumerator.QueryInterface
 title: IDebugHostSymbolEnumerator::QueryInterface (dbgmodel.h)
-description: Retrieves pointers to the supported interfaces on an object. This method calls IUnknown::AddRef on the pointer it returns.
-ms.assetid: 27784335-4eb9-48f9-a442-7ce943178a15
+description: "The IDebugHostSymbolEnumerator::QueryInterface method retrieves pointers to the supported interfaces on an object."
 ms.date: 08/22/2018
 keywords: ["IDebugHostSymbolEnumerator::QueryInterface"]
 ms.keywords: IDebugHostSymbolEnumerator::QueryInterface, QueryInterface, IDebugHostSymbolEnumerator.QueryInterface, IDebugHostSymbolEnumerator::QueryInterface, IDebugHostSymbolEnumerator.QueryInterface
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostSymbolEnumerator.QueryInterface
+ - IDebugHostSymbolEnumerator::QueryInterface
 ---
 
 # IDebugHostSymbolEnumerator::QueryInterface
@@ -69,3 +68,4 @@ Standard COM method.
 ## -see-also
 
 [IDebugHostSymbolEnumerator interface](nn-dbgmodel-idebughostsymbolenumerator.md)
+

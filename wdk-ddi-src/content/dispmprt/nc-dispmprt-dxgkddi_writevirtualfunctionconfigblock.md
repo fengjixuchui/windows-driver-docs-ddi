@@ -3,7 +3,6 @@ UID: NC:dispmprt.DXGKDDI_WRITEVIRTUALFUNCTIONCONFIGBLOCK
 title: DXGKDDI_WRITEVIRTUALFUNCTIONCONFIGBLOCK
 description: This function allows the non-privileged virtual machine to write configuration data supplied by the Physical Function driver in the privileged VM.
 tech.root: display
-ms.assetid: faac7ab9-5120-4f67-a968-96582f0f980d
 ms.date: 04/04/2019
 keywords: ["DXGKDDI_WRITEVIRTUALFUNCTIONCONFIGBLOCK callback function"]
 req.header: dispmprt.h
@@ -36,8 +35,6 @@ api_location:
  - dispmprt.h
 api_name:
  - DXGKDDI_WRITEVIRTUALFUNCTIONCONFIGBLOCK
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,13 +48,13 @@ This function allows the non-privileged virtual machine to write configuration d
 
 ## -parameters
 
-### -param Context
+### -param Context [in]
 
-[in] The miniport context that is returned by the driver in the [DXGKDDI_SRIOV_INTERFACE](ns-dispmprt-_dxgkddi_sriov_interface.md) structure.
+The miniport context that is returned by the driver in the [DXGKDDI_SRIOV_INTERFACE](ns-dispmprt-_dxgkddi_sriov_interface.md) structure.
 
-### -param pArgs
+### -param pArgs [in]
 
-[in] A pointer to a DXGKARG_WRITEVIRTUALFUNCTIONCONFIGBLOCK structure.
+A pointer to a DXGKARG_WRITEVIRTUALFUNCTIONCONFIGBLOCK structure.
 
 ## -returns
 

@@ -4,7 +4,6 @@ title: KsAllocateObjectCreateItem function (ks.h)
 description: The KsAllocateObjectCreateItem function allocates a slot for the specified create item, optionally allocating space for and copying the create item data as well.
 old-location: stream\ksallocateobjectcreateitem.htm
 tech.root: stream
-ms.assetid: 43c3894c-5568-4cba-80ed-1d4e4388547b
 ms.date: 04/23/2018
 keywords: ["KsAllocateObjectCreateItem function"]
 ms.keywords: KsAllocateObjectCreateItem, KsAllocateObjectCreateItem function [Streaming Media Devices], ks/KsAllocateObjectCreateItem, ksfunc_57773cdc-d649-4381-9841-deba5beddf73.xml, stream.ksallocateobjectcreateitem
@@ -51,24 +50,24 @@ The <b>KsAllocateObjectCreateItem</b> function allocates a slot for the specifie
 
 ## -parameters
 
-### -param Header 
+### -param Header [in]
 
-[in]
+
 Points to the device header on which to attach the create item.
 
-### -param CreateItem 
+### -param CreateItem [in]
 
-[in]
+
 Contains the create item to attach.
 
-### -param AllocateEntry 
+### -param AllocateEntry [in]
 
-[in]
+
 Indicates whether the create item pointer passed should be attached directly to the header, or if a copy of it should be made instead.
 
-### -param ItemFreeCallback 
+### -param ItemFreeCallback [in, optional]
 
-[in, optional]
+
 Optionally contains a pointer to a minidriver-defined <a href="/windows-hardware/drivers/ddi/ks/nc-ks-pfnksitemfreecallback">KStrItemFreeCallback</a> function to be called when the create entry is being destroyed upon freeing the device header. This is only valid when <i>AllocateEntry</i> is <b>TRUE</b>.
 
 ## -returns

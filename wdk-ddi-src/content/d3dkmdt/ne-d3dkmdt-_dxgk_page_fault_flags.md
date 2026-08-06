@@ -4,7 +4,6 @@ title: _DXGK_PAGE_FAULT_FLAGS (d3dkmdt.h)
 description: DXGK_PAGE_FAULT_FLAGS enumeration describes the nature of the page fault that has occurred and the prescribed OS recovery action.
 old-location: display\dxgk_page_fault_flags.htm
 tech.root: display
-ms.assetid: 3AF0646D-5405-4A35-8352-7E32BCA5DD24
 ms.date: 05/10/2018
 keywords: ["DXGK_PAGE_FAULT_FLAGS enumeration"]
 ms.keywords: DXGK_PAGE_FAULT_ADAPTER_RESET_REQUIRED, DXGK_PAGE_FAULT_ENGINE_RESET_REQUIRED, DXGK_PAGE_FAULT_FATAL_HARDWARE_ERROR, DXGK_PAGE_FAULT_FENCE_INVALID, DXGK_PAGE_FAULT_FLAGS, DXGK_PAGE_FAULT_FLAGS enumeration [Display Devices], DXGK_PAGE_FAULT_IOMMU, DXGK_PAGE_FAULT_WRITE, _DXGK_PAGE_FAULT_FLAGS, d3dkmdt/DXGK_PAGE_FAULT_ADAPTER_RESET_REQUIRED, d3dkmdt/DXGK_PAGE_FAULT_ENGINE_RESET_REQUIRED, d3dkmdt/DXGK_PAGE_FAULT_FATAL_HARDWARE_ERROR, d3dkmdt/DXGK_PAGE_FAULT_FENCE_INVALID, d3dkmdt/DXGK_PAGE_FAULT_FLAGS, d3dkmdt/DXGK_PAGE_FAULT_IOMMU, d3dkmdt/DXGK_PAGE_FAULT_WRITE, display.dxgk_page_fault_flags
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmdt.h
 api_name:
+ - _DXGK_PAGE_FAULT_FLAGS
  - DXGK_PAGE_FAULT_FLAGS
 ---
 
@@ -85,3 +85,4 @@ When set, this indicates that the faulting GPU's virtual address was mapped usin
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkargcb_notify_interrupt_data">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a>
+

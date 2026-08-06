@@ -4,7 +4,6 @@ title: _AVC_SETCONNECT_INFO (avc.h)
 description: The AVC_SETCONNECT_INFO structure is used to initialize a subunit driver and establish pin connections.
 old-location: stream\avc_setconnect_info.htm
 tech.root: stream
-ms.assetid: 16672908-6f1f-471b-b82e-d548e3efeb20
 ms.date: 04/23/2018
 keywords: ["AVC_SETCONNECT_INFO structure"]
 ms.keywords: "*PAVC_SETCONNECT_INFO, AVC_SETCONNECT_INFO, AVC_SETCONNECT_INFO structure [Streaming Media Devices], PAVC_SETCONNECT_INFO, PAVC_SETCONNECT_INFO structure pointer [Streaming Media Devices], _AVC_SETCONNECT_INFO, avc/AVC_SETCONNECT_INFO, avc/PAVC_SETCONNECT_INFO, avcref_eec9cff7-6ae3-49d3-a649-349b8284630b.xml, stream.avc_setconnect_info"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - avc.h
 api_name:
+ - _AVC_SETCONNECT_INFO
+ - PAVC_SETCONNECT_INFO
  - AVC_SETCONNECT_INFO
 ---
 
@@ -81,3 +82,4 @@ See <a href="/windows-hardware/drivers/stream/using-avc-sys">How to Use Avc.sys<
 
 
 <a href="/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb">AVC_MULTIFUNC_IRB</a>
+

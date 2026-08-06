@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEODECODEREXTENSION
 title: PFND3D11_1DDI_VIDEODECODEREXTENSION (d3d10umddi.h)
 description: Performs an extended function for DirectX Video Acceleration (DXVA) decoding. This method enables extensions to the basic DXVA decoder functionality.
 old-location: display\videodecoderextension.htm
-ms.assetid: 0cfcc05a-77d7-4157-bd27-ba127afe3e92
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_VIDEODECODEREXTENSION callback function"]
 ms.keywords: PFND3D11_1DDI_VIDEODECODEREXTENSION, PFND3D11_1DDI_VIDEODECODEREXTENSION callback, d3d10umddi/pfnVideoDecoderExtension, display.videodecoderextension, pfnVideoDecoderExtension, pfnVideoDecoderExtension callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoDecoderExtension
-product:
- - Windows
+ - PFND3D11_1DDI_VIDEODECODEREXTENSION
 ---
 
 # PFND3D11_1DDI_VIDEODECODEREXTENSION callback function
@@ -52,19 +49,19 @@ Performs an extended function for DirectX Video Acceleration (DXVA) decoding. Th
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hDecoder* [in]
 
 A handle to the video decoder object that was created through a call to the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideodecoder">CreateVideoDecoder</a> function.
 
-### -param Arg3
+### -param unnamedParam3
 
 *pExtension* [in]
 
@@ -88,3 +85,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddiarg_videodecoderextension">D3D11_1DDIARG_VIDEODECODEREXTENSION</a>
+

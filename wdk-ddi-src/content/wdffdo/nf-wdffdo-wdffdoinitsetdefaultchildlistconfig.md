@@ -4,7 +4,6 @@ title: WdfFdoInitSetDefaultChildListConfig function (wdffdo.h)
 description: The WdfFdoInitSetDefaultChildListConfig method configures a bus driver's default child list.
 old-location: wdf\wdffdoinitsetdefaultchildlistconfig.htm
 tech.root: wdf
-ms.assetid: 656a0c58-dd12-4417-a781-464d1670592c
 ms.date: 02/26/2018
 keywords: ["WdfFdoInitSetDefaultChildListConfig function"]
 ms.keywords: DFDeviceObjectFdoPdoRef_676a2185-db9b-498e-84e3-52b8ac32584c.xml, WdfFdoInitSetDefaultChildListConfig, WdfFdoInitSetDefaultChildListConfig method, kmdf.wdffdoinitsetdefaultchildlistconfig, wdf.wdffdoinitsetdefaultchildlistconfig, wdffdo/WdfFdoInitSetDefaultChildListConfig
@@ -53,19 +52,19 @@ The <b>WdfFdoInitSetDefaultChildListConfig</b> method configures a bus driver's 
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in, out]
 
-[in, out]
+
 A pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure that the driver obtained from its <a href="/windows-hardware/drivers/ddi/wdfdriver/nc-wdfdriver-evt_wdf_driver_device_add">EvtDriverDeviceAdd</a> callback function.
 
-### -param Config 
+### -param Config [in]
 
-[in]
+
 A pointer to a driver-allocated <a href="/windows-hardware/drivers/ddi/wdfchildlist/ns-wdfchildlist-_wdf_child_list_config">WDF_CHILD_LIST_CONFIG</a> structure.
 
-### -param DefaultChildListAttributes 
+### -param DefaultChildListAttributes [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains object attributes for the child-list object that represents the driver's default child list. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
 ## -remarks

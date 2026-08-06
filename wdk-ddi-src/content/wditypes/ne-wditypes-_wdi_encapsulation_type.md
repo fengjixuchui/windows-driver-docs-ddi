@@ -4,7 +4,6 @@ title: _WDI_ENCAPSULATION_TYPE (wditypes.h)
 description: The WDI_ENCAPSULATION_TYPE enumeration defines the Wi-Fi encapsulation types.
 old-location: netvista\wdi_encapsulation_type.htm
 tech.root: netvista
-ms.assetid: 6EDCC69B-F156-416B-9824-5E26F9834D14
 ms.date: 05/02/2018
 keywords: ["WDI_ENCAPSULATION_TYPE enumeration"]
 ms.keywords: WDI_ENCAPSULATION_802_1H, WDI_ENCAPSULATION_RFC_1042, WDI_ENCAPSULATION_TYPE, WDI_ENCAPSULATION_TYPE enumeration [Device and Driver Installation], _WDI_ENCAPSULATION_TYPE, netvista.wdi_encapsulation_type, netvista.wifi_encapsulation_type, wditypes/WDI_ENCAPSULATION_802_1H, wditypes/WDI_ENCAPSULATION_RFC_1042, wditypes/WDI_ENCAPSULATION_TYPE
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_ENCAPSULATION_TYPE
  - WDI_ENCAPSULATION_TYPE
 ---
 
@@ -47,6 +47,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The WDI_ENCAPSULATION_TYPE enumeration defines the Wi-Fi encapsulation types.
 

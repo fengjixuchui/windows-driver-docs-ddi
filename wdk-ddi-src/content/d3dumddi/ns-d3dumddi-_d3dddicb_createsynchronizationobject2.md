@@ -4,7 +4,6 @@ title: _D3DDDICB_CREATESYNCHRONIZATIONOBJECT2 (d3dumddi.h)
 description: Describes a synchronization object that the pfnCreateSynchronizationObject2Cb function creates.
 old-location: display\d3dddicb_createsynchronizationobject2.htm
 tech.root: display
-ms.assetid: 090fe0df-d2b4-4bfd-a3f3-38bc228337ab
 ms.date: 05/10/2018
 keywords: ["D3DDDICB_CREATESYNCHRONIZATIONOBJECT2 structure"]
 ms.keywords: D3DDDICB_CREATESYNCHRONIZATIONOBJECT2, D3DDDICB_CREATESYNCHRONIZATIONOBJECT2 structure [Display Devices], _D3DDDICB_CREATESYNCHRONIZATIONOBJECT2, d3dumddi/D3DDDICB_CREATESYNCHRONIZATIONOBJECT2, display.d3dddicb_createsynchronizationobject2
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dumddi.h
 api_name:
+ - _D3DDDICB_CREATESYNCHRONIZATIONOBJECT2
  - D3DDDICB_CREATESYNCHRONIZATIONOBJECT2
 ---
 
@@ -52,13 +52,13 @@ Describes a synchronization object that the <a href="/windows-hardware/drivers/d
 
 ## -struct-fields
 
-### -field Info
+### -field Info [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_synchronizationobjectinfo2">D3DDDI_SYNCHRONIZATIONOBJECTINFO2</a> structure that contains information about the kernel-mode synchronization object to create.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddi_synchronizationobjectinfo2">D3DDDI_SYNCHRONIZATIONOBJECTINFO2</a> structure that contains information about the kernel-mode synchronization object to create.
 
-### -field hSyncObject
+### -field hSyncObject [out]
 
-[out] A <b>D3DKMT_HANDLE</b> value that represents a kernel-mode handle to the created kernel-mode GPU synchronization object.
+A <b>D3DKMT_HANDLE</b> value that represents a kernel-mode handle to the created kernel-mode GPU synchronization object.
 
 ## -see-also
 
@@ -67,3 +67,4 @@ Describes a synchronization object that the <a href="/windows-hardware/drivers/d
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createsynchronizationobject2cb">pfnCreateSynchronizationObject2Cb</a>
+

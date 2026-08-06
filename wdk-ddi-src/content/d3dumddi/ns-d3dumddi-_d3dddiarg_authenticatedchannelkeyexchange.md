@@ -4,7 +4,6 @@ title: _D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE (d3dumddi.h)
 description: The D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE structure describes a buffer that contains the session key, which the authenticated channel uses.
 old-location: display\d3dddiarg_authenticatedchannelkeyexchange.htm
 tech.root: display
-ms.assetid: 99a86339-62ce-48fd-a1f4-5c3061e624b5
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE structure"]
 ms.keywords: D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE, D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE structure [Display Devices], UMDisplayDriver_param_Structs_2b02df7d-1bae-446f-b52a-0a9353114504.xml, _D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE, d3dumddi/D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE, display.d3dddiarg_authenticatedchannelkeyexchange
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE
  - D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE
 ---
 
@@ -52,17 +52,17 @@ The D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE structure describes a buffer that 
 
 ## -struct-fields
 
-### -field hChannel
+### -field hChannel [in]
 
-[in] A handle to the authenticated channel that the runtime creates when the runtime calls the driver's <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createauthenticatedchannel">CreateAuthenticatedChannel</a> function.
+A handle to the authenticated channel that the runtime creates when the runtime calls the driver's <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createauthenticatedchannel">CreateAuthenticatedChannel</a> function.
 
-### -field DataSize
+### -field DataSize [in/out]
 
-[in/out] The size, in bytes, of the data that the <b>pData</b> member points to.
+The size, in bytes, of the data that the <b>pData</b> member points to.
 
-### -field pData
+### -field pData [in/out]
 
-[in/out] A pointer to a buffer that contains the session key.
+A pointer to a buffer that contains the session key.
 
 ## -see-also
 
@@ -71,3 +71,4 @@ The D3DDDIARG_AUTHENTICATEDCHANNELKEYEXCHANGE structure describes a buffer that 
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_createauthenticatedchannel">CreateAuthenticatedChannel</a>
+

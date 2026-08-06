@@ -4,7 +4,6 @@ title: RtlDrainNonVolatileFlush function (ntddk.h)
 description: The routine RtlDrainNonVolatileFlush waits for the flushes initiated by RtlFlushNonVolatileMemory to finish.
 old-location: ifsk\rtldrainnonvolatileflush.htm
 tech.root: ifsk
-ms.assetid: EA1C2DF3-591C-407A-ABBF-DE615466A498
 ms.date: 04/16/2018
 keywords: ["RtlDrainNonVolatileFlush function"]
 ms.keywords: RtlDrainNonVolatileFlush, RtlDrainNonVolatileFlush routine [Installable File System Drivers], ifsk.rtldrainnonvolatileflush, ntddk/RtlDrainNonVolatileFlush
@@ -51,9 +50,9 @@ The routine <b>RtlDrainNonVolatileFlush</b> waits for the flushes initiated by <
 
 ## -parameters
 
-### -param NvToken 
+### -param NvToken [in]
 
-[in]
+
  A pointer to an opaque structure that has
         information about various properties of the non-volatile memory region which <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-rtlgetnonvolatiletoken">RtlGetNonVolatileToken</a> had returned.
 

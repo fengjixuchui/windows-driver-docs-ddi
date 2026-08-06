@@ -4,7 +4,6 @@ title: VideoPortReleaseSpinLock function (video.h)
 description: The VideoPortReleaseSpinLock function releases ownership of a given spin lock and restores the original IRQL at which the caller was running.
 old-location: display\videoportreleasespinlock.htm
 tech.root: display
-ms.assetid: 8ce2006e-e66c-4b2d-8d26-2eba8d8e2864
 ms.date: 03/29/2018
 keywords: ["VideoPortReleaseSpinLock function"]
 ms.keywords: VideoPortReleaseSpinLock, VideoPortReleaseSpinLock function [Display Devices], VideoPort_Functions_43cceda5-f5eb-4567-97f5-d53d0bf93c0b.xml, display.videoportreleasespinlock, video/VideoPortReleaseSpinLock
@@ -27,7 +26,6 @@ req.dll: Videoprt.sys
 req.irql: DISPATCH_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: VIDEO_PORT_SERVICES
-req.product: Windows 10 or later.
 f1_keywords:
  - VideoPortReleaseSpinLock
  - video/VideoPortReleaseSpinLock
@@ -51,17 +49,17 @@ The <b>VideoPortReleaseSpinLock</b> function releases ownership of a given spin 
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in] Pointer to the miniport driver's device extension.
+Pointer to the miniport driver's device extension.
 
-### -param SpinLock
+### -param SpinLock [in, out]
 
-[in, out] Pointer to a memory location that contains the spin lock to be released.
+Pointer to a memory location that contains the spin lock to be released.
 
-### -param NewIrql 
+### -param NewIrql [in]
 
-[in] Specifies the IRQL to be restored.
+Specifies the IRQL to be restored.
 
 ## -returns
 

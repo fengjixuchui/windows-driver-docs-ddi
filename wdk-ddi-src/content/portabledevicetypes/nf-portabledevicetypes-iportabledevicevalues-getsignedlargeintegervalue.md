@@ -4,7 +4,6 @@ title: IPortableDeviceValues::GetSignedLargeIntegerValue (portabledevicetypes.h)
 description: Retrieves a LONGLONG value (type VT_I8) that is specified by a key.
 old-location: wpddk\iportabledevicevalues_getsignedlargeintegervalue.htm
 tech.root: wpd_dk
-ms.assetid: 3a086a7e-22e3-4d60-9f10-4db442fcc6f9
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::GetSignedLargeIntegerValue"]
 ms.keywords: GetSignedLargeIntegerValue, GetSignedLargeIntegerValue method, GetSignedLargeIntegerValue method,IPortableDeviceValues interface, IPortableDeviceValues interface,GetSignedLargeIntegerValue method, IPortableDeviceValues.GetSignedLargeIntegerValue, IPortableDeviceValues::GetSignedLargeIntegerValue, IPortableDeviceValuesGetSignedLargeIntegerValue, portabledevicetypes/IPortableDeviceValues::GetSignedLargeIntegerValue, wpddk.iportabledevicevalues_getsignedlargeintegervalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.GetSignedLargeIntegerValue
+ - IPortableDeviceValues::GetSignedLargeIntegerValue
 ---
 
 # IPortableDeviceValues::GetSignedLargeIntegerValue
@@ -51,14 +50,14 @@ Retrieves a <b>LONGLONG</b> value (type VT_I8) that is specified by a key.
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> key that specifies the item to retrieve.
 
-### -param pValue 
+### -param pValue [out]
 
-[out]
+
 Pointer to the retrieved <b>ULONG</b> value.
 
 ## -returns
@@ -116,3 +115,4 @@ None.
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-setsignedlargeintegervalue">IPortableDeviceValues::SetSignedLargeIntegerValue</a>
+

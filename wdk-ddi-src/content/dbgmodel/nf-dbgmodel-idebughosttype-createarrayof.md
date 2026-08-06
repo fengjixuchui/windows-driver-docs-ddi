@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostType.CreateArrayOf
 title: IDebugHostType::CreateArrayOf (dbgmodel.h)
-description: For any given type, this returns a new IDebugHostType which is an array of this type.
-ms.assetid: bb8de044-1e9d-4357-8419-44016942f386
+description: "The IDebugHostType::CreateArrayOf method, when called on a type, gets a new IDebugHostType that is an array of the type with specified array dimensions."
 ms.date: 09/11/2018
 keywords: ["IDebugHostType::CreateArrayOf"]
 ms.keywords: IDebugHostType::CreateArrayOf, CreateArrayOf, IDebugHostType.CreateArrayOf, IDebugHostType::CreateArrayOf, IDebugHostType.CreateArrayOf
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostType.CreateArrayOf
+ - IDebugHostType::CreateArrayOf
 ---
 
 # IDebugHostType::CreateArrayOf

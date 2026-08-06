@@ -4,7 +4,6 @@ title: RxDereference function (rxprocs.h)
 description: RxDereference decrements the NodeReferenceCount member of a structure by one for several reference counted data structures used by RDBSS.
 old-location: ifsk\rxdereference.htm
 tech.root: ifsk
-ms.assetid: 4f63fc92-56e3-4414-a912-09ed0de59c92
 ms.date: 04/16/2018
 keywords: ["RxDereference function"]
 ms.keywords: RxDereference, RxDereference function [Installable File System Drivers], ifsk.rxdereference, rxprocs/RxDereference, rxref_90cd9c96-1fcf-4214-b14f-5065c1e52260.xml
@@ -50,14 +49,14 @@ api_name:
 
 ## -parameters
 
-### -param Instance 
+### -param Instance [in, out]
 
-[in, out]
+
 A pointer to the reference-counted data structure to be dereferenced.
 
-### -param LockHoldingState 
+### -param LockHoldingState [in]
 
-[in]
+
 The mode in which the appropriate lock for this data structure is held. This parameter can be one of the following values for the LOCK_HOLDING_STATE enumeration:
 
 
@@ -96,7 +95,7 @@ FOBX
 
 If <b>RxDereference</b> is called with any other type of RDBSS data structure, the routine causes the system to ASSERT on checked builds.
 
-If the <b>NodeReferenceCount</b> member is less than 0 after being derefenced (decremented) by <b>RxDereference</b>, then <b>RxDereference</b> causes the system to ASSERT on checked builds. 
+If the <b>NodeReferenceCount</b> member is less than 0 after being dereferenced (decremented) by <b>RxDereference</b>, then <b>RxDereference</b> causes the system to ASSERT on checked builds. 
 
 If the <b>NodeReferenceCount</b> member decrements to 1 and the <i>LockHoldingState</i> parameter was LHS_ExclusiveLockHeld, the instance of the data structure can be finalized immediately. Otherwise, the instance of the data structure is tagged to be scavenged and finalized later.
 

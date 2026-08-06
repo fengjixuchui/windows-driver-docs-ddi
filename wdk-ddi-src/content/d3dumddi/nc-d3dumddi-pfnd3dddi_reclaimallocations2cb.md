@@ -4,7 +4,6 @@ title: PFND3DDDI_RECLAIMALLOCATIONS2CB (d3dumddi.h)
 description: pfnReclaimAllocations2Cb is called by the user mode driver to reclaim video memory allocations that were previously offered for reuse.
 old-location: display\pfnreclaimallocations2cb.htm
 tech.root: display
-ms.assetid: 1D3439BA-AB3D-4D94-B4C8-91BE9B3349A1
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_RECLAIMALLOCATIONS2CB callback function"]
 ms.keywords: PFND3DDDI_RECLAIMALLOCATIONS2CB, d3dumddi/pfnReclaimAllocations2Cb, display.pfnreclaimallocations2cb, pfnReclaimAllocations2Cb, pfnReclaimAllocations2Cb callback, pfnReclaimAllocations2Cb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnReclaimAllocations2Cb
-product:
- - Windows
+ - PFND3DDDI_RECLAIMALLOCATIONS2CB
 ---
 
 # PFND3DDDI_RECLAIMALLOCATIONS2CB callback function
@@ -56,7 +53,7 @@ product:
 
 A handle to the display device.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -84,3 +81,4 @@ Note  If this error code is returned, the driver's calling function (typically t
 
 
 <a href="/windows-hardware/drivers/ddi/dxgiddi/ns-dxgiddi-dxgi1_2_ddi_base_functions">pfnReclaimResources</a>
+

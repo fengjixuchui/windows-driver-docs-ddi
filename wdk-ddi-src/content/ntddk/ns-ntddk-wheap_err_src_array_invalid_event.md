@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._WHEAP_ERR_SRC_ARRAY_INVALID_EVENT
 title: WHEAP_ERR_SRC_ARRAY_INVALID_EVENT
-description: 
-tech.root: 
-ms.assetid: 9f768fe6-4e3f-4bc5-9b8b-add0b72a8173
+description: "Learn more about: WHEAP_ERR_SRC_ARRAY_INVALID_EVENT structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEAP_ERR_SRC_ARRAY_INVALID_EVENT structure"]
 ms.keywords: WHEAP_ERR_SRC_ARRAY_INVALID_EVENT, WHEAP_ERR_SRC_ARRAY_INVALID_EVENT, *PWHEAP_ERR_SRC_ARRAY_INVALID_EVENT,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEAP_ERR_SRC_ARRAY_INVALID_EVENT
+ - PWHEAP_ERR_SRC_ARRAY_INVALID_EVENT
  - WHEAP_ERR_SRC_ARRAY_INVALID_EVENT
-product:
- - Windows
 ---
 
 # WHEAP_ERR_SRC_ARRAY_INVALID_EVENT structure

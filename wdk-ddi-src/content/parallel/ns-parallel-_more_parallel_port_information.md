@@ -4,7 +4,6 @@ title: _MORE_PARALLEL_PORT_INFORMATION (parallel.h)
 description: The MORE_PARALLEL_PORT_INFORMATION structure specifies information about the system interface that supports the operation of a parallel port.
 old-location: parports\more_parallel_port_information.htm
 tech.root: parports
-ms.assetid: b21bfbce-5436-4865-b291-2e55abc4aad1
 ms.date: 02/15/2018
 keywords: ["MORE_PARALLEL_PORT_INFORMATION structure"]
 ms.keywords: "*PMORE_PARALLEL_PORT_INFORMATION, MORE_PARALLEL_PORT_INFORMATION, MORE_PARALLEL_PORT_INFORMATION structure [Parallel Ports], PMORE_PARALLEL_PORT_INFORMATION, PMORE_PARALLEL_PORT_INFORMATION structure pointer [Parallel Ports], _MORE_PARALLEL_PORT_INFORMATION, cisspd_0a671b2f-443c-4373-aeb0-8bf59c1d836b.xml, parallel/MORE_PARALLEL_PORT_INFORMATION, parallel/PMORE_PARALLEL_PORT_INFORMATION, parports.more_parallel_port_information"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - parallel.h
 api_name:
+ - _MORE_PARALLEL_PORT_INFORMATION
+ - PMORE_PARALLEL_PORT_INFORMATION
  - MORE_PARALLEL_PORT_INFORMATION
 ---
 
@@ -120,3 +121,4 @@ For more information, see <a href="/previous-versions/ff544223(v=vs.85)">Obtaini
 
 
 <a href="..\parallel\ni-parallel-ioctl_internal_get_parallel_pnp_info.md">IOCTL_INTERNAL_GET_PARALLEL_PNP_INFO</a>
+

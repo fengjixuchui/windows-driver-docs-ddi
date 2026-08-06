@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_53
+UID: NS:ksmedia.KSWAVE_VOLUME
 title: KSWAVE_VOLUME (ksmedia.h)
 description: The KSWAVE_VOLUME structure is used to describe sample volume.
 old-location: stream\kswave_volume.htm
 tech.root: stream
-ms.assetid: bf3a0b49-ecec-4e96-bf09-b269e8852422
 ms.date: 04/30/2019
 keywords: ["KSWAVE_VOLUME structure"]
 ms.keywords: "*PKSWAVE_VOLUME, KSWAVE_VOLUME, KSWAVE_VOLUME structure [Streaming Media Devices], PKSWAVE_VOLUME, PKSWAVE_VOLUME structure pointer [Streaming Media Devices], dvdref_602cb4a7-2e70-43a1-8e1a-7604d5b48bc1.xml, ksmedia/KSWAVE_VOLUME, ksmedia/PKSWAVE_VOLUME, stream.kswave_volume"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSWAVE_VOLUME
  - KSWAVE_VOLUME
 ---
 
@@ -67,3 +67,4 @@ This structure is used by the <a href="/windows-hardware/drivers/stream/ksproper
 ## -see-also
 
 <a href="/windows-hardware/drivers/stream/ksproperty-wave-volume">KSPROPERTY_WAVE_VOLUME</a>
+

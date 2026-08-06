@@ -1,10 +1,9 @@
 ---
 UID: NS:wdm._PO_FX_DEVICE_V2
 title: _PO_FX_DEVICE_V2 (wdm.h)
-description: The PO_FX_DEVICE structure describes the power attributes of a device to the power management framework (PoFx).
+description: Learn how the PO_FX_DEVICE structure describes the power attributes of a device to the power management framework (PoFx).
 old-location: kernel\po_fx_device.htm
 tech.root: kernel
-ms.assetid: E2413C3A-79D3-47E3-A664-80869A721F37
 ms.date: 04/30/2018
 keywords: ["PO_FX_DEVICE_V2 structure"]
 ms.keywords: "*PPO_FX_DEVICE, *PPO_FX_DEVICE_V2, PO_FX_DEVICE, PO_FX_DEVICE structure [Kernel-Mode Driver Architecture], PO_FX_DEVICE_V1, PO_FX_DEVICE_V1 structure [Kernel-Mode Driver Architecture], PO_FX_DEVICE_V2, PPO_FX_DEVICE_V1, PPO_FX_DEVICE_V1 structure pointer [Kernel-Mode Driver Architecture], _PO_FX_DEVICE_V2, kernel.po_fx_device, wdm/PO_FX_DEVICE, wdm/PO_FX_DEVICE_V1, wdm/PPO_FX_DEVICE_V1"
@@ -42,7 +41,9 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - PO_FX_DEVICE_V1
+ - _PO_FX_DEVICE_V2
+ - PPO_FX_DEVICE_V2
+ - PO_FX_DEVICE_V2
 ---
 
 # _PO_FX_DEVICE_V2 structure
@@ -59,7 +60,7 @@ The <b>PO_FX_DEVICE</b> structure describes the power attributes of a device to 
 The version number of this structure. If the driver will register for performance state support with PoFx, set this member to <b>PO_FX_VERSION_V2</b>. Otherwise, set this member to <b>PO_FX_VERSION_V1</b>.
 
 
-#### - Flags
+### -field Flags
 
 Set to 0. Currently, no flags are defined for this member.
 
@@ -146,3 +147,4 @@ A device driver is not required to implement all six callback routines. The driv
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-po_fx_power_control_callback">PowerControlCallback</a>
+

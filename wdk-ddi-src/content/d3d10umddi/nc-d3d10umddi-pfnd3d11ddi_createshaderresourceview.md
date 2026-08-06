@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_CREATESHADERRESOURCEVIEW
 title: PFND3D11DDI_CREATESHADERRESOURCEVIEW (d3d10umddi.h)
 description: The CreateShaderResourceView(D3D11) function creates a shader resource view.
 old-location: display\createshaderresourceview_d3d11_.htm
-ms.assetid: 7ca462c7-ec43-4af7-92c8-ed69e5d324e2
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_CREATESHADERRESOURCEVIEW callback function"]
 ms.keywords: CreateShaderResourceView, CreateShaderResourceView callback function [Display Devices], PFND3D11DDI_CREATESHADERRESOURCEVIEW, PFND3D11DDI_CREATESHADERRESOURCEVIEW callback, UserModeDisplayDriverDx11_Functions_abe7b0fb-121d-4486-af02-885ff37a4e81.xml, d3d10umddi/CreateShaderResourceView, display.createshaderresourceview_d3d11_
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CreateShaderResourceView
-product:
- - Windows
+ - PFND3D11DDI_CREATESHADERRESOURCEVIEW
 ---
 
 # PFND3D11DDI_CREATESHADERRESOURCEVIEW callback function
@@ -52,25 +49,25 @@ The <b>CreateShaderResourceView(D3D11)</b> function creates a shader resource vi
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCreateShaderResourceView* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11ddiarg_createshaderresourceview">D3D11DDIARG_CREATESHADERRESOURCEVIEW</a> structure that describes the parameters that the user-mode display driver uses to create a shader resource view.
 
-### -param Arg3
+### -param unnamedParam3
 
 *hShaderResourceView* [in]
 
 A handle to the driver's private data for the hull shader.
 
-### -param Arg4
+### -param unnamedParam4
 
 *hRTShaderResourceView* [in]
 
@@ -101,3 +98,4 @@ The driver might run out of memory. Therefore, the driver can pass E_OUTOFMEMORY
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

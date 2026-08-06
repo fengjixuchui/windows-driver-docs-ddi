@@ -4,7 +4,6 @@ title: PFND3DDDI_GETCAPTUREALLOCATIONHANDLE (d3dumddi.h)
 description: The GetCaptureAllocationHandle function maps the given capture resource handle to a kernel-mode allocation handle.
 old-location: display\getcaptureallocationhandle.htm
 tech.root: display
-ms.assetid: fb12a12b-6fb7-46d4-aa71-4c88d34d6ff9
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_GETCAPTUREALLOCATIONHANDLE callback function"]
 ms.keywords: GetCaptureAllocationHandle, GetCaptureAllocationHandle callback function [Display Devices], PFND3DDDI_GETCAPTUREALLOCATIONHANDLE, PFND3DDDI_GETCAPTUREALLOCATIONHANDLE callback, UserModeDisplayDriver_Functions_839ce10f-1df9-4d62-a877-d64215b82370.xml, d3dumddi/GetCaptureAllocationHandle, display.getcaptureallocationhandle
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - GetCaptureAllocationHandle
-product:
- - Windows
+ - PFND3DDDI_GETCAPTUREALLOCATIONHANDLE
 ---
 
 # PFND3DDDI_GETCAPTUREALLOCATIONHANDLE callback function
@@ -56,7 +53,7 @@ The <i>GetCaptureAllocationHandle</i> function maps the given capture resource h
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -78,3 +75,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dd
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

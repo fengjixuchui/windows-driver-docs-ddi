@@ -4,7 +4,6 @@ title: PEP_ACPI_INITIALIZE_SPB_I2C_RESOURCE function (pepfx.h)
 description: The PEP_ACPI_INITIALIZE_SPB_I2C_RESOURCE function initializes a platform extension plug-in's (PEP) PEP_ACPI_SPB_I2C_RESOURCE structure.
 old-location: kernel\pep_acpi_initialize_spb_i2c_resource.htm
 tech.root: kernel
-ms.assetid: 5F1606D8-1E6F-494F-AE70-07A1EC1FEA47
 ms.date: 04/30/2018
 keywords: ["PEP_ACPI_INITIALIZE_SPB_I2C_RESOURCE function"]
 ms.keywords: PEP_ACPI_INITIALIZE_SPB_I2C_RESOURCE, PEP_ACPI_INITIALIZE_SPB_I2C_RESOURCE function [Kernel-Mode Driver Architecture], kernel.pep_acpi_initialize_spb_i2c_resource, pepfx/PEP_ACPI_INITIALIZE_SPB_I2C_RESOURCE
@@ -50,62 +49,62 @@ The <b>PEP_ACPI_INITIALIZE_SPB_I2C_RESOURCE</b> function initializes a platform 
 
 ## -parameters
 
-### -param SlaveAddress 
+### -param SlaveAddress [in]
 
-[in]
+
 The I2C bus address for this connection.
 
-### -param DeviceInitiated 
+### -param DeviceInitiated [in]
 
-[in]
+
 If true, indicates that communication over this connection is initiated by the device.
 
-### -param ConnectionSpeed 
+### -param ConnectionSpeed [in]
 
-[in]
+
 The maximum speed, in hertz, supported by this connection.
 
-### -param AddressingMode 
+### -param AddressingMode [in]
 
-[in]
+
 Indicates that this device is in addressing mode.
 
-### -param ResourceSource 
+### -param ResourceSource [in]
 
-[in]
+
 The name of the serial bus controller device to which this
 connection descriptor applies. The name can be a fully
 qualified path, a relative path, or a simple name segment
 that utilizes the namespace search rules.
 
-### -param ResourceSourceIndex 
+### -param ResourceSourceIndex [in]
 
-[in]
+
 This parameter should always be set to zero.
 
-### -param ResourceUsage 
+### -param ResourceUsage [in]
 
-[in]
+
 Indicates if the resource is in use.
 
-### -param SharedMode 
+### -param SharedMode [in]
 
-[in]
+
 Indicates if the resource is shared.
 
-### -param VendorData 
+### -param VendorData [in]
 
-[in]
+
 A pointer to optional data that is specific to the serial bus connection type.
 
-### -param VendorDataLength 
+### -param VendorDataLength [in]
 
-[in]
+
 The length of the buffer pointed to by the <i>VendorData</i> parameter.
 
-### -param Resource 
+### -param Resource [out]
 
-[out]
+
 A pointer to the resource. The structure behind the pointer is of type <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_acpi_spb_i2c_resource">PEP_ACPI_SPB_I2C_RESOURCE</a>.
 
 ## -see-also

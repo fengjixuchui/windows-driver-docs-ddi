@@ -4,7 +4,6 @@ title: _NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS (ntddndis.h)
 description: The NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS structure specifies the parameters for changing the power state of a network adapter's PCI Express (PCIe) Virtual Function (VF).
 old-location: netvista\ndis_sriov_set_vf_power_state_parameters.htm
 tech.root: netvista
-ms.assetid: f2914619-1721-42ef-a20f-5774b906a35e
 ms.date: 05/02/2018
 keywords: ["NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS structure"]
 ms.keywords: "*PNDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, PNDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, netvista.ndis_sriov_set_vf_power_state_parameters, ntddndis/NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS, ntddndis/PNDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS
+ - PNDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS
  - NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS</b> structure specifies the para
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
 
@@ -100,8 +101,9 @@ The  <b>NDIS_SRIOV_SET_VF_POWER_STATE_PARAMETERS</b> structure is used in OID se
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/network/oid-sriov-set-vf-power-state">OID_SRIOV_SET_VF_POWER_STATE</a>
+

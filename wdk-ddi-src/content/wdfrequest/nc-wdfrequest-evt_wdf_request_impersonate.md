@@ -4,7 +4,6 @@ title: EVT_WDF_REQUEST_IMPERSONATE (wdfrequest.h)
 description: A driver's EvtRequestImpersonate event callback function performs tasks at the requested impersonation level, such as opening a protected file.
 old-location: wdf\evtrequestimpersonate.htm
 tech.root: wdf
-ms.assetid: FA3FE0C0-57EC-4761-991B-49CA65A79BDD
 ms.date: 06/03/2020
 keywords: ["EVT_WDF_REQUEST_IMPERSONATE callback function"]
 ms.keywords: EVT_WDF_REQUEST_IMPERSONATE, EVT_WDF_REQUEST_IMPERSONATE callback, EvtRequestImpersonate, EvtRequestImpersonate callback function, wdf.evtrequestimpersonate, wdfrequest/EvtRequestImpersonate
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfrequest.h
 api_name:
- - EvtRequestImpersonate
+ - EVT_WDF_REQUEST_IMPERSONATE
 ---
 
 # EVT_WDF_REQUEST_IMPERSONATE callback function
@@ -52,14 +51,14 @@ A driver's <i>EvtRequestImpersonate</i> event callback function performs tasks a
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object that represents the I/O request that requires impersonation.
 
-### -param Context 
+### -param Context [in, optional]
 
-[in, optional]
+
 A pointer to a context that was previously supplied in the <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestimpersonate">WdfRequestImpersonate</a> method. This parameter is optional and can be NULL if a context is not required.
 
 ## -remarks
@@ -105,8 +104,9 @@ VOID
 
 For more information about the requirements for function declarations, see <a href="/windows-hardware/drivers/devtest/declaring-functions-by-using-function-role-types-for-kmdf-drivers">Declaring Functions by Using Function Role Types for KMDF Drivers</a>.
 
-For information about _Use_decl_annotations_, see <a href="/visualstudio/code-quality/annotating-function-behavior?view=vs-2015">Annotating Function Behavior</a>.
+For information about _Use_decl_annotations_, see <a href="/cpp/code-quality/annotating-function-behavior">Annotating Function Behavior</a>.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfrequest/nf-wdfrequest-wdfrequestimpersonate">WdfRequestImpersonate</a>
+

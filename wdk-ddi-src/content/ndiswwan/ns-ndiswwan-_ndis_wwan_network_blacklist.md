@@ -3,7 +3,6 @@ UID: NS:ndiswwan._NDIS_WWAN_NETWORK_BLACKLIST
 title: _NDIS_WWAN_NETWORK_BLACKLIST (ndiswwan.h)
 description: The NDIS_WWAN_NETWORK_BLACKLIST structure describes a mobile broadband (MBB) device's network blacklists.
 tech.root: netvista
-ms.assetid: 0d203d04-dcd7-46d6-9dc0-62880068949d
 ms.date: 08/21/2018
 keywords: ["NDIS_WWAN_NETWORK_BLACKLIST structure"]
 ms.keywords: _NDIS_WWAN_NETWORK_BLACKLIST, NDIS_WWAN_NETWORK_BLACKLIST, *PNDIS_WWAN_NETWORK_BLACKLIST,
@@ -37,8 +36,8 @@ api_location:
  - ndiswwan.h
 api_name:
  - _NDIS_WWAN_NETWORK_BLACKLIST
-product:
- - Windows
+ - PNDIS_WWAN_NETWORK_BLACKLIST
+ - NDIS_WWAN_NETWORK_BLACKLIST
 ---
 
 # _NDIS_WWAN_NETWORK_BLACKLIST structure
@@ -65,7 +64,7 @@ The header with type, revision, and size information about the **NDIS_WWAN_NETWO
 | Revision | NDIS_WWAN_NETWORK_BLACKLIST_REVISION_1 |
 | Size | sizeof(NDIS_WWAN_NETWORK_BLACKLIST) |
 
-For more information about these members, see [**NDIS_OBJECT_HEADER**](../ntddndis/ns-ntddndis-_ndis_object_header.md).
+For more information about these members, see [**NDIS_OBJECT_HEADER**](../objectheader/ns-objectheader-ndis_object_header.md).
 
 ### -field uStatus
 
@@ -96,3 +95,4 @@ This structure is used in the [NDIS_STATUS_WWAN_NETWORK_BLACKLIST](/windows-hard
 [NDIS_STATUS_WWAN_NETWORK_BLACKLIST](/windows-hardware/drivers/network/ndis-status-wwan-network-blacklist)
 
 [**WWAN_NETWORK_BLACKLIST_INFO**](../wwan/ns-wwan-_wwan_network_blacklist_info.md)
+

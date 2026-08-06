@@ -4,7 +4,6 @@ title: EVT_WDF_DEVICE_REMOVE_ADDED_RESOURCES (wdffdo.h)
 description: A driver's EvtDeviceRemoveAddedResources event callback function removes hardware resources that the driver's EvtDeviceFilterAddResourceRequirements callback function added.
 old-location: wdf\evtdeviceremoveaddedresources.htm
 tech.root: wdf
-ms.assetid: b18c2b34-db6d-4553-9340-556da1fd7991
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DEVICE_REMOVE_ADDED_RESOURCES callback function"]
 ms.keywords: DFDeviceObjectFdoPdoRef_c1020fff-8895-4ece-ae27-ef33d3a65de6.xml, EVT_WDF_DEVICE_REMOVE_ADDED_RESOURCES, EVT_WDF_DEVICE_REMOVE_ADDED_RESOURCES callback, EvtDeviceRemoveAddedResources, EvtDeviceRemoveAddedResources callback function, kmdf.evtdeviceremoveaddedresources, wdf.evtdeviceremoveaddedresources, wdffdo/EvtDeviceRemoveAddedResources
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdffdo.h
 api_name:
- - EvtDeviceRemoveAddedResources
+ - EVT_WDF_DEVICE_REMOVE_ADDED_RESOURCES
 ---
 
 # EVT_WDF_DEVICE_REMOVE_ADDED_RESOURCES callback function
@@ -52,19 +51,19 @@ A driver's <i>EvtDeviceRemoveAddedResources</i> event callback function removes 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to the framework device object to which resources will be assigned.
 
-### -param ResourcesRaw 
+### -param ResourcesRaw [in]
 
-[in]
+
 A handle to a resource list object that identifies the raw hardware resources that the PnP manager has assigned to the device.
 
-### -param ResourcesTranslated 
+### -param ResourcesTranslated [in]
 
-[in]
+
 A handle to a resource list object that identifies the translated hardware resources that the PnP manager has assigned to the device.
 
 ## -returns
@@ -94,3 +93,4 @@ For more information about hardware resources, see <a href="/windows-hardware/dr
 
 
 <a href="/windows-hardware/drivers/ddi/wdffdo/nc-wdffdo-evt_wdf_device_filter_resource_requirements">EvtDeviceFilterRemoveResourceRequirements</a>
+

@@ -4,7 +4,6 @@ title: PFNKSFASTHANDLER (ks.h)
 description: KStrFastHandler is a driver-supplied routine that handles a property or method request without the creation of an IRP.
 old-location: stream\kstrfasthandler.htm
 tech.root: stream
-ms.assetid: 9a72cdb5-2b57-4331-9836-82653732decf
 ms.date: 04/23/2018
 keywords: ["PFNKSFASTHANDLER callback function"]
 ms.keywords: KStrFastHandler, KStrFastHandler routine [Streaming Media Devices], PFNKSFASTHANDLER, ks/KStrFastHandler, ksfunc_e78a76eb-b3e6-4864-bae2-49536d3a9d52.xml, stream.kstrfasthandler
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - KStrFastHandler
+ - PFNKSFASTHANDLER
 ---
 
 # PFNKSFASTHANDLER callback function
@@ -50,34 +49,34 @@ api_name:
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Specifies the file object on which the request was made.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 Specifies the original property parameter. This will always be on FILE_LONG_ALIGNMENT, but cannot be on FILE_QUAD_ALIGNMENT.
 
-### -param RequestLength 
+### -param RequestLength [in]
 
-[in]
+
 Specifies the length indicated by the caller of the property parameter.
 
-### -param Data 
+### -param Data [in, out]
 
-[in, out]
+
 Specifies the original unaligned data parameter.
 
-### -param DataLength 
+### -param DataLength [in]
 
-[in]
+
 Specifies the length indicated by the caller of the data parameter.
 
-### -param IoStatus 
+### -param IoStatus [out]
 
-[out]
+
 Specifies an aligned structure that is used to return error status and information. This information is then copied to the original I/O status structure on completion.
 
 ## -returns
@@ -87,3 +86,4 @@ Specifies an aligned structure that is used to return error status and informati
 ## -remarks
 
 The minidriver provides an entry point for this routine in <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksfastproperty_item">KSFASTPROPERTY_ITEM</a> or <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksfastmethod_item">KSFASTMETHOD_ITEM</a>.
+

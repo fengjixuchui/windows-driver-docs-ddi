@@ -2,7 +2,6 @@
 UID: NN:dbgmodel.IDebugHostPublic
 title: IDebugHostPublic (dbgmodel.h)
 description: An (IDebugHostSymbol derived) interface to a public symbol (address/name only).
-ms.assetid: 18775b1d-4efc-422c-8920-21de383fb5b9
 ms.date: 07/13/2018
 keywords: ["IDebugHostPublic interface"]
 req.header: dbgmodel.h
@@ -45,7 +44,7 @@ Represents a symbol within the publics table of a PDB. This does not have type i
 
 ## -inheritance
 
-IDebugHostPublic interits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
+IDebugHostPublic inherits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
 
 ## -remarks
 

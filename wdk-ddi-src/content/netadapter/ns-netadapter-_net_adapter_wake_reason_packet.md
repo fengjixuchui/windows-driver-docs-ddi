@@ -3,17 +3,16 @@ UID: NS:netadapter._NET_ADAPTER_WAKE_REASON_PACKET
 title: NET_ADAPTER_WAKE_REASON_PACKET (netadapter.h)
 description: The NET_ADAPTER_WAKE_REASON_PACKET structure describes a network packet (known as a wake packet) that caused the network adapter to generate a wake-up event.
 tech.root: netvista
-ms.assetid: b6693c4b-f299-4437-953c-868e6238c9b2
 ms.date: 10/25/2019
 keywords: ["NET_ADAPTER_WAKE_REASON_PACKET structure"]
 ms.keywords: NET_ADAPTER_WAKE_REASON_PACKET, NET_ADAPTER_WAKE_REASON_PACKET,
 req.header: netadaptercx.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: 
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - netadapter.h
 api_name:
+ - _NET_ADAPTER_WAKE_REASON_PACKET
  - NET_ADAPTER_WAKE_REASON_PACKET
-product:
- - Windows
 ---
 
 # NET_ADAPTER_WAKE_REASON_PACKET structure
@@ -72,6 +70,8 @@ Call [**NET_ADAPTER_WAKE_REASON_PACKET_INIT**](nf-netadapter-net_adapter_wake_re
 Call [**NET_ADAPTER_WAKE_REASON_MAGIC_PACKET_INIT**](nf-netadapter-net_adapter_wake_reason_magic_packet_init.md) to initialize this structure if the **NET_WAKE_SOURCE_TYPE** is NetWakeSourceTypeMagicPacket.
 
 Call [**NET_ADAPTER_WAKE_REASON_FILTER_PACKET_INIT**](nf-netadapter-net_adapter_wake_reason_filter_packet_init.md) to initialize this structure if the **NET_WAKE_SOURCE_TYPE** is NetWakeSourceTypePacketFilterMatch.
+
+Call [**NET_ADAPTER_WAKE_REASON_EAPOL_PACKET_INIT**](nf-netadapter-net_adapter_wake_reason_eapol_packet_init.md) to initialize this structure if the **NET_WAKE_SOURCE_TYPE** is NetWakeSourceTypeEapolPacket.
 
 A **NET_ADAPTER_WAKE_REASON_PACKET** structure is passed as an input parameter to [**NetAdapterReportWakeReasonPacket**](../netadapter/nf-netadapter-netadapterreportwakereasonpacket.md).
 

@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILCALLLIST_V2
 title: RILCALLLIST_V2 (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILCALLLIST_V2 structure for internal use only. Don't use the RILCALLLIST_V2 structure in your code."
 old-location: netvista\rilcalllist_v2.htm
 tech.root: netvista
-ms.assetid: 4cf94a04-dbb4-4e24-954b-3a5a720ef963
 ms.date: 05/02/2018
 keywords: ["RILCALLLIST_V2 structure"]
 ms.keywords: "*LPRILCALLLIST_V2, RILCALLLIST_V2, RILCALLLIST_V2 structure [Network Drivers Starting with Windows Vista], netvista.rilcalllist_v2, ntddrilapitypes/RILCALLLIST_V2"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILCALLLIST_V2
+ - LPRILCALLLIST_V2
 ---
 
 # RILCALLLIST_V2 structure (ntddrilapitypes.h)

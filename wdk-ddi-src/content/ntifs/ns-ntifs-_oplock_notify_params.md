@@ -4,10 +4,8 @@ title: _OPLOCK_NOTIFY_PARAMS (ntifs.h)
 description: The OPLOCK_NOTIFY_PARAMS structure is passed as a parameter to a NotifyRoutine callback when such a callback is provided to FsRtlCheckOplockEx2.
 old-location: ifsk\OPLOCK_NOTIFY_PARAMS_.htm
 tech.root: ifsk
-ms.assetid: d47100ad-cef6-4941-86dd-73f7eff97061
 ms.date: 03/24/2020
 ms.keywords: "*POPLOCK_NOTIFY_PARAMS, OPLOCK_NOTIFY_PARAMS, OPLOCK_NOTIFY_PARAMS structure [File System Drivers], FsRtlCheckOplockEx2"
-ms.topic: struct
 req.header: ntifs.h
 req.include-header: 
 req.target-type: Windows
@@ -42,6 +40,8 @@ api_type:
 api_location:
  - ntifs.h
 api_name:
+ - _OPLOCK_NOTIFY_PARAMS
+ - POPLOCK_NOTIFY_PARAMS
  - OPLOCK_NOTIFY_PARAMS
 ---
 

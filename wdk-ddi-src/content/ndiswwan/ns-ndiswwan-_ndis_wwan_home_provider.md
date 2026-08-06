@@ -4,7 +4,6 @@ title: _NDIS_WWAN_HOME_PROVIDER (ndiswwan.h)
 description: The NDIS_WWAN_HOME_PROVIDER structure represents details about the home network provider.
 old-location: netvista\ndis_wwan_home_provider.htm
 tech.root: netvista
-ms.assetid: 5f92a711-97fe-4420-be50-89302cc9486c
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_HOME_PROVIDER structure"]
 ms.keywords: "*PNDIS_WWAN_HOME_PROVIDER, NDIS_WWAN_HOME_PROVIDER, NDIS_WWAN_HOME_PROVIDER structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_HOME_PROVIDER, PNDIS_WWAN_HOME_PROVIDER structure pointer [Network Drivers Starting with Windows Vista], WwanRef_8a7e631d-16f6-461d-89f1-805dd56f4803.xml, _NDIS_WWAN_HOME_PROVIDER, ndiswwan/NDIS_WWAN_HOME_PROVIDER, ndiswwan/PNDIS_WWAN_HOME_PROVIDER, netvista.ndis_wwan_home_provider"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_HOME_PROVIDER
+ - PNDIS_WWAN_HOME_PROVIDER
  - NDIS_WWAN_HOME_PROVIDER
 ---
 
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_HOME_PROVIDER)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field uStatus
 
@@ -189,8 +190,9 @@ A formatted
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_provider2">WWAN_PROVIDER2</a>
+

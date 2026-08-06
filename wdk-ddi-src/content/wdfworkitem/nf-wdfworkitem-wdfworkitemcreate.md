@@ -4,7 +4,6 @@ title: WdfWorkItemCreate function (wdfworkitem.h)
 description: The WdfWorkItemCreate method creates a framework work-item object, which can subsequently be added to the system's work-item queue.
 old-location: wdf\wdfworkitemcreate.htm
 tech.root: wdf
-ms.assetid: f5bb3af4-c687-47ad-88ce-d56067c78d6d
 ms.date: 02/26/2018
 keywords: ["WdfWorkItemCreate function"]
 ms.keywords: DFWorkItemObjectRef_0041ea62-aa06-4e8b-8f84-807731ecc516.xml, WdfWorkItemCreate, WdfWorkItemCreate method, kmdf.wdfworkitemcreate, wdf.wdfworkitemcreate, wdfworkitem/WdfWorkItemCreate
@@ -55,19 +54,19 @@ The <b>WdfWorkItemCreate</b> method creates a framework work-item object, which 
 
 ## -parameters
 
-### -param Config 
+### -param Config [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfworkitem/ns-wdfworkitem-_wdf_workitem_config">WDF_WORKITEM_CONFIG</a> structure that the driver must have already initialized by calling <a href="/windows-hardware/drivers/ddi/wdfworkitem/nf-wdfworkitem-wdf_workitem_config_init">WDF_WORKITEM_CONFIG_INIT</a>.
 
-### -param Attributes 
+### -param Attributes [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that specifies attributes for the work-item object.
 
-### -param WorkItem 
+### -param WorkItem [out]
 
-[out]
+
 A pointer to a variable that receives a handle to the new work-item object.
 
 ## -returns

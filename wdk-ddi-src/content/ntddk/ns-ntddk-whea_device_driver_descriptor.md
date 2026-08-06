@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._WHEA_DEVICE_DRIVER_DESCRIPTOR
 title: WHEA_DEVICE_DRIVER_DESCRIPTOR
-description: 
-tech.root: 
-ms.assetid: 491e4279-f7d5-4461-bbd6-96ad62476c24
+description: "Learn more about: WHEA_DEVICE_DRIVER_DESCRIPTOR structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEA_DEVICE_DRIVER_DESCRIPTOR structure"]
 ms.keywords: WHEA_DEVICE_DRIVER_DESCRIPTOR, WHEA_DEVICE_DRIVER_DESCRIPTOR, *PWHEA_DEVICE_DRIVER_DESCRIPTOR,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_DEVICE_DRIVER_DESCRIPTOR
+ - PWHEA_DEVICE_DRIVER_DESCRIPTOR
  - WHEA_DEVICE_DRIVER_DESCRIPTOR
-product:
- - Windows
 ---
 
 # WHEA_DEVICE_DRIVER_DESCRIPTOR structure
@@ -56,7 +55,31 @@ Reserved for system use.
 
 ### -field Reserved
 
+### -field SourceGuid
+
+### -field LogTag
+
+### -field Reserved2
+
+### -field PacketLength
+
+### -field PacketCount
+
+### -field PacketBuffer
+
 ### -field Config
+
+### -field CreatorId
+
+### -field PartitionId
+
+### -field MaxSectionDataLength
+
+### -field MaxSectionsPerRecord
+
+### -field PacketStateBuffer
+
+### -field OpenHandles
 
 ## -remarks
 

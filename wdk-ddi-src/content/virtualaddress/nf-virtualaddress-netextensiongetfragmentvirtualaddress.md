@@ -3,7 +3,6 @@ UID: NF:virtualaddress.NetExtensionGetFragmentVirtualAddress
 title: NetExtensionGetFragmentVirtualAddress function (virtualaddress.h)
 description: The NetExtensionGetFragmentVirtualAddress function retrieves the virtual address extension information for a net fragment.
 tech.root: netvista
-ms.assetid: 054DB38D-7496-424F-A521-A2368878F690
 ms.date: 09/26/2019
 keywords: ["NetExtensionGetFragmentVirtualAddress function"]
 ms.keywords: NetExtensionGetFragmentVirtualAddress
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -37,8 +36,6 @@ api_location:
  - virtualaddress.h
 api_name:
  - NetExtensionGetFragmentVirtualAddress
-product:
- - Windows
 ---
 
 # NetExtensionGetFragmentVirtualAddress function

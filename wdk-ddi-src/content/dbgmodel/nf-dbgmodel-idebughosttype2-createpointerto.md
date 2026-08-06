@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostType2.CreatePointerTo
 title: IDebugHostType2::CreatePointerTo (dbgmodel.h)
-description: For any given type, this returns a new IDebugHostType which is a pointer to this type.
-ms.assetid: 52c9d51f-bda3-4599-904e-cd7fa27b0bfc
+description: "The IDebugHostType2::CreatePointerTo method, when called on a type, gets a new IDebugHostType that is a pointer to the type."
 ms.date: 09/20/2018
 keywords: ["IDebugHostType2::CreatePointerTo"]
 ms.keywords: IDebugHostType2::CreatePointerTo, CreatePointerTo, IDebugHostType2.CreatePointerTo, IDebugHostType2::CreatePointerTo, IDebugHostType2.CreatePointerTo
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostType2.CreatePointerTo
+ - IDebugHostType2::CreatePointerTo
 ---
 
 # IDebugHostType2::CreatePointerTo
@@ -44,7 +43,7 @@ api_name:
 
 ## -description
 
-For any given type, this returns a new [IDebugHostType](nn-dbgmodel-idebughosttype.md) which is a pointer to this type.
+For any given type, this returns a new [IDebugHostType2](nn-dbgmodel-idebughosttype2.md) which is a pointer to this type.
 The kind of pointer is supplied by the "kind" argument.
 
 ## -parameters

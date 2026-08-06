@@ -4,7 +4,6 @@ title: KsStreamPointerClone function (ks.h)
 description: The KsStreamPointerClone function creates a clone of a given stream pointer.
 old-location: stream\ksstreampointerclone.htm
 tech.root: stream
-ms.assetid: b51e1c17-e6b5-4108-bfbc-29f1ee06d9f4
 ms.date: 04/23/2018
 keywords: ["KsStreamPointerClone function"]
 ms.keywords: KsStreamPointerClone, KsStreamPointerClone function [Streaming Media Devices], avfunc_29a7da58-5321-4c19-83df-c9deab062e78.xml, ks/KsStreamPointerClone, stream.ksstreampointerclone
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ks.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,24 +50,24 @@ The<b> KsStreamPointerClone </b>function creates a clone of a given stream point
 
 ## -parameters
 
-### -param StreamPointer 
+### -param StreamPointer [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksstream_pointer">KSSTREAM_POINTER</a> structure representing the stream pointer that is to be cloned.
 
-### -param CancelCallback 
+### -param CancelCallback [in, optional]
 
-[in, optional]
+
 Optional. A pointer to a minidriver-supplied <a href="/windows-hardware/drivers/ddi/ks/nc-ks-pfnksstreampointer">AVStrMiniCancelCallback</a> routine. AVStream calls this routine if the IRP associated with <i>CloneStreamPointer</i> is canceled.
 
-### -param ContextSize 
+### -param ContextSize [in]
 
-[in]
+
 This parameter indicates how many bytes of minidriver context information the resulting clone stream pointer should have. If nonzero, the requested number of bytes are allocated immediately after the returned stream pointer, and the <i>Context</i> field of <i>CloneStreamPointer</i> points to the allocated memory.
 
-### -param CloneStreamPointer 
+### -param CloneStreamPointer [out]
 
-[out]
+
 A pointer to a pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksstream_pointer">KSSTREAM_POINTER</a> structure. Upon successful completion of the cloning operation, <i>CloneStreamPointer</i> contains a pointer to the address of the cloned stream pointer.
 
 ## -returns

@@ -4,7 +4,6 @@ title: KsGetMediaTypeCount function (ksproxy.h)
 description: The KsGetMediaTypeCount function returns the number of available media types on a pin factory identifier.
 old-location: stream\ksgetmediatypecount.htm
 tech.root: stream
-ms.assetid: 157cb12c-1b2d-45b5-8541-e16ee3449064
 ms.date: 04/23/2018
 keywords: ["KsGetMediaTypeCount function"]
 ms.keywords: KsGetMediaTypeCount, KsGetMediaTypeCount function [Streaming Media Devices], ksproxy/KsGetMediaTypeCount, ksproxy_77c6249c-2b35-4d9e-afff-b01cf5518a73.xml, stream.ksgetmediatypecount
@@ -51,19 +50,19 @@ The <b>KsGetMediaTypeCount</b> function returns the number of available media ty
 
 ## -parameters
 
-### -param FilterHandle 
+### -param FilterHandle [in]
 
-[in]
+
 Handle to the filter that contains the pin factory to query.
 
-### -param PinFactoryId 
+### -param PinFactoryId [in]
 
-[in]
+
 Identifier of the pin factory against which the number of media types is being returned.
 
-### -param MediaTypeCount 
+### -param MediaTypeCount [out]
 
-[out]
+
 Pointer to a variable to receive the number of media types.
 
 ## -returns

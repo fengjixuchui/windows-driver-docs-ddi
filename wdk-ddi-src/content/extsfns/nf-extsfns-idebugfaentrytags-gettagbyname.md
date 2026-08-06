@@ -4,7 +4,6 @@ title: IDebugFAEntryTags::GetTagByName (extsfns.h)
 description: The GetTagByName method searches for a tag that has a specified name.
 old-location: debugger\idebugfaentrytags_gettagbyname.htm
 tech.root: debugger
-ms.assetid: 3EA8FE2A-85CE-4C81-81EB-F08028F0F822
 ms.date: 05/03/2018
 keywords: ["IDebugFAEntryTags::GetTagByName"]
 ms.keywords: GetTagByName, GetTagByName method [Windows Debugging], GetTagByName method [Windows Debugging],IDebugFAEntryTags interface, IDebugFAEntryTags interface [Windows Debugging],GetTagByName method, IDebugFAEntryTags.GetTagByName, IDebugFAEntryTags::GetTagByName, debugger.idebugfaentrytags_gettagbyname, extsfns/IDebugFAEntryTags::GetTagByName
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - extsfns.h
 api_name:
- - IDebugFAEntryTags.GetTagByName
+ - IDebugFAEntryTags::GetTagByName
 ---
 
 # IDebugFAEntryTags::GetTagByName
@@ -50,19 +49,19 @@ The <b>GetTagByName</b> method searches for a tag that has a specified name.
 
 ## -parameters
 
-### -param PluginId 
+### -param PluginId [in]
 
-[in]
+
 A pointer to a null-terminated string that specifies the identifier of an analysis extension plug-in. This parameter can be <b>NULL</b>.
 
-### -param TagName 
+### -param TagName [in]
 
-[in]
+
 A pointer to a null-terminated string that specifies the name to search for.
 
-### -param Tag 
+### -param Tag [out]
 
-[out]
+
 A pointer to a variable that receives either a value in the <a href="/windows-hardware/drivers/debugger/writing-an-analysis-extension-to-extend--analyze">FA_TAG</a> enumeration or the value of a custom tag. If this method does not find a tag that has the specified name, nothing is written to this parameter.
 
 ## -returns
@@ -101,3 +100,4 @@ If you call this method from an analysis extension plug-in, and you set <i>Plugi
 
 
 <a href="/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin">_EFN_Analyze</a>
+

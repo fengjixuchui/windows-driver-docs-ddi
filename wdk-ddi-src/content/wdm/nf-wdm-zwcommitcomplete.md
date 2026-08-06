@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.ZwCommitComplete
 title: ZwCommitComplete function (wdm.h)
-description: The ZwCommitComplete routine notifies KTM that the calling resource manager has finished committing a transaction's data.
+description: Learn how the ZwCommitComplete routine notifies KTM that the calling resource manager has finished committing a transaction's data.
 old-location: kernel\zwcommitcomplete.htm
 tech.root: kernel
-ms.assetid: d0b968bc-bbab-4b6f-bb1f-9e36ac7c1e05
 ms.date: 04/30/2018
 keywords: ["ZwCommitComplete function"]
 ms.keywords: NtCommitComplete, ZwCommitComplete, ZwCommitComplete routine [Kernel-Mode Driver Architecture], kernel.zwcommitcomplete, ktm_ref_1bcef47a-0767-4bfe-944c-f88a5ecff0e6.xml, wdm/NtCommitComplete, wdm/ZwCommitComplete
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - ZwCommitComplete
- - NtCommitComplete
 ---
 
 # ZwCommitComplete function
@@ -51,14 +49,14 @@ The <b>ZwCommitComplete</b> routine notifies KTM that the calling resource manag
 
 ## -parameters
 
-### -param EnlistmentHandle 
+### -param EnlistmentHandle [in]
 
-[in]
+
 A handle to an <a href="/windows-hardware/drivers/kernel/enlistment-objects">enlistment object</a> that was obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment">ZwCreateEnlistment</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a>. The handle must have ENLISTMENT_SUBORDINATE_RIGHTS access to the object.
 
-### -param TmVirtualClock 
+### -param TmVirtualClock [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows-hardware/drivers/kernel/using-virtual-clock-values">virtual clock value</a>. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns
@@ -142,3 +140,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a>
+

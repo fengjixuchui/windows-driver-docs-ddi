@@ -4,7 +4,6 @@ title: _WWAN_UICC_PASSTHROUGH_ACTION (wwan.h)
 description: The WWAN_UICC_PASSTHROUGH_ACTION enumeration defines the passthrough action specified by the MB host for a modem miniport adapter after it resets a UICC smart card.
 old-location: netvista\wwan_uicc_passthrough_action.htm
 tech.root: netvista
-ms.assetid: 4C9293CB-D92D-4C31-929F-16C1B8918933
 ms.date: 05/02/2018
 keywords: ["WWAN_UICC_PASSTHROUGH_ACTION enumeration"]
 ms.keywords: "*PWWAN_UICC_PASSTHROUGH_ACTION, WWAN_UICC_PASSTHROUGH_ACTION, WWAN_UICC_PASSTHROUGH_ACTION enumeration [Network Drivers Starting with Windows Vista], WwanUiccPassThroughActionMaximum, WwanUiccPassThroughDisable, WwanUiccPassThroughEnable, _WWAN_UICC_PASSTHROUGH_ACTION, netvista.wwan_uicc_passthrough_action, wwan/WWAN_UICC_PASSTHROUGH_ACTION, wwan/WwanUiccPassThroughActionMaximum, wwan/WwanUiccPassThroughDisable, wwan/WwanUiccPassThroughEnable"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_UICC_PASSTHROUGH_ACTION
+ - PWWAN_UICC_PASSTHROUGH_ACTION
  - WWAN_UICC_PASSTHROUGH_ACTION
 ---
 
@@ -74,3 +75,4 @@ The maximum value for this enumeration. This value might change in future versio
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_set_uicc_reset">WWAN_SET_UICC_RESET</a>
+

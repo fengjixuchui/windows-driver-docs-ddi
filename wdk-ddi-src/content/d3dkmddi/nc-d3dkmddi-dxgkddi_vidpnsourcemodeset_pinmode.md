@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_VIDPNSOURCEMODESET_PINMODE
 title: DXGKDDI_VIDPNSOURCEMODESET_PINMODE (d3dkmddi.h)
 description: The pfnPinMode function pins a specified mode in a VidPN source mode set.
 old-location: display\dxgk_vidpnsourcemodeset_interface_pfnpinmode.htm
-ms.assetid: 14bbdc35-e633-49a5-bdf0-6b60d330ca8e
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_VIDPNSOURCEMODESET_PINMODE callback function"]
 ms.keywords: DXGKDDI_VIDPNSOURCEMODESET_PINMODE, DXGKDDI_VIDPNSOURCEMODESET_PINMODE callback, VidPnFunctions_7fb0636b-da59-4451-8cf2-57b944629499.xml, d3dkmddi/pfnPinMode, display.dxgk_vidpnsourcemodeset_interface_pfnpinmode, pfnPinMode, pfnPinMode callback function [Display Devices]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - pfnPinMode
-product:
- - Windows
+ - DXGKDDI_VIDPNSOURCEMODESET_PINMODE
 ---
 
 # DXGKDDI_VIDPNSOURCEMODESET_PINMODE callback function
@@ -52,13 +49,13 @@ The <b>pfnPinMode</b> function pins a specified mode in a VidPN source mode set.
 
 ## -parameters
 
-### -param hVidPnSourceModeSet
+### -param hVidPnSourceModeSet [in]
 
-[in] A handle to a VidPN source mode set object. The display miniport driver previously obtained this handle by calling the <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_acquiresourcemodeset">pfnAcquireSourceModeSet</a> function of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpn_interface">DXGK_VIDPN_INTERFACE</a> interface.
+A handle to a VidPN source mode set object. The display miniport driver previously obtained this handle by calling the <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_acquiresourcemodeset">pfnAcquireSourceModeSet</a> function of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpn_interface">DXGK_VIDPN_INTERFACE</a> interface.
 
-### -param VidPnSourceModeId
+### -param VidPnSourceModeId [in]
 
-[in] An integer that identifies the mode to be pinned.
+An integer that identifies the mode to be pinned.
 
 ## -returns
 
@@ -83,3 +80,4 @@ The D3DKMDT_HVIDPNSOURCEMODESET data type is defined in <i>D3dkmdt.h</i>.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpnsourcemodeset_acquirepinnedmodeinfo">pfnAcquirePinnedModeInfo</a>
+

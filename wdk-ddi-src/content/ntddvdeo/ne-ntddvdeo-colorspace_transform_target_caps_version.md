@@ -3,7 +3,6 @@ UID: NE:ntddvdeo._COLORSPACE_TRANSFORM_TARGET_CAPS_VERSION
 title: COLORSPACE_TRANSFORM_TARGET_CAPS_VERSION
 description: The colorspace transform caps version.
 tech.root: display
-ms.assetid: 2b727ef3-a020-421f-8669-7faf9222accd
 ms.date: 04/04/2019
 keywords: ["COLORSPACE_TRANSFORM_TARGET_CAPS_VERSION enumeration"]
 ms.keywords: COLORSPACE_TRANSFORM_TARGET_CAPS_VERSION, COLORSPACE_TRANSFORM_TARGET_CAPS_VERSION,
@@ -31,6 +30,7 @@ api_type:
 api_location:
  - ntddvdeo.h
 api_name:
+ - _COLORSPACE_TRANSFORM_TARGET_CAPS_VERSION
  - COLORSPACE_TRANSFORM_TARGET_CAPS_VERSION
 dev_langs:
  - c++

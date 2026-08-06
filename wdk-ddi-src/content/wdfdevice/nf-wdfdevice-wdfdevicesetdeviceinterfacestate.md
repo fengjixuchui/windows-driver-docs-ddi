@@ -4,7 +4,6 @@ title: WdfDeviceSetDeviceInterfaceState function (wdfdevice.h)
 description: The WdfDeviceSetDeviceInterfaceState method enables or disables a device interface for a specified device.
 old-location: wdf\wdfdevicesetdeviceinterfacestate.htm
 tech.root: wdf
-ms.assetid: 345003fc-fdc3-4529-bb15-c9e380e77bba
 ms.date: 03/24/2020
 keywords: ["WdfDeviceSetDeviceInterfaceState function"]
 ms.keywords: DFDeviceObjectGeneralRef_bfed99aa-ad4c-4339-aeb9-f7d73039f0b9.xml, WdfDeviceSetDeviceInterfaceState, WdfDeviceSetDeviceInterfaceState method, kmdf.wdfdevicesetdeviceinterfacestate, wdf.wdfdevicesetdeviceinterfacestate, wdfdevice/WdfDeviceSetDeviceInterfaceState
@@ -58,24 +57,24 @@ The <b>WdfDeviceSetDeviceInterfaceState</b> method enables or disables a device 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param InterfaceClassGUID 
+### -param InterfaceClassGUID [in]
 
-[in]
+
 A pointer to a GUID that identifies the device interface class.
 
-### -param ReferenceString 
+### -param ReferenceString [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that describes a reference string for the device interface. This parameter is optional and can be <b>NULL</b>.
 
-### -param IsInterfaceEnabled 
+### -param IsInterfaceEnabled [in]
 
-[in]
+
 A Boolean value that, if <b>TRUE</b>, enables the specified device interface instance or, if <b>FALSE</b>, disables it.
 
 ## -remarks

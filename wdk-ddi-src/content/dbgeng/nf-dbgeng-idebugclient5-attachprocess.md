@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient5.AttachProcess
 title: IDebugClient5::AttachProcess (dbgeng.h)
-description: The AttachProcess method connects the debugger engine to a user-modeprocess.
+description: The AttachProcess method connects the debugger engine to a user-modeprocess. This method belongs to the IDebugClient5 interface.
 old-location: debugger\attachprocess.htm
 tech.root: debugger
-ms.assetid: 0787da49-23e0-43e3-bb32-1221db32a449
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::AttachProcess"]
 ms.keywords: AttachProcess, AttachProcess method [Windows Debugging], AttachProcess method [Windows Debugging],IDebugClient interface, AttachProcess method [Windows Debugging],IDebugClient2 interface, AttachProcess method [Windows Debugging],IDebugClient3 interface, AttachProcess method [Windows Debugging],IDebugClient4 interface, AttachProcess method [Windows Debugging],IDebugClient5 interface, IDebugClient interface [Windows Debugging],AttachProcess method, IDebugClient2 interface [Windows Debugging],AttachProcess method, IDebugClient2::AttachProcess, IDebugClient3 interface [Windows Debugging],AttachProcess method, IDebugClient3::AttachProcess, IDebugClient4 interface [Windows Debugging],AttachProcess method, IDebugClient4::AttachProcess, IDebugClient5 interface [Windows Debugging],AttachProcess method, IDebugClient5.AttachProcess, IDebugClient5::AttachProcess, IDebugClient::AttachProcess, IDebugClient_032236c1-3072-4226-919b-3f6f95635a20.xml, dbgeng/IDebugClient2::AttachProcess, dbgeng/IDebugClient3::AttachProcess, dbgeng/IDebugClient4::AttachProcess, dbgeng/IDebugClient5::AttachProcess, dbgeng/IDebugClient::AttachProcess, debugger.attachprocess
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.AttachProcess
- - IDebugClient2.AttachProcess
- - IDebugClient3.AttachProcess
- - IDebugClient4.AttachProcess
- - IDebugClient5.AttachProcess
+ - IDebugClient5::AttachProcess
 ---
 
 # IDebugClient5::AttachProcess
@@ -54,19 +49,19 @@ The <b>AttachProcess</b> method connects the <a href="/windows-hardware/drivers/
 
 ## -parameters
 
-### -param Server 
+### -param Server [in]
 
-[in]
+
 Specifies the process server to use to attach to the process.  If <i>Server</i> is zero, the engine will connect to a local process without using a process server.
 
-### -param ProcessId 
+### -param ProcessId [in]
 
-[in]
+
 Specifies the process ID of the target process the debugger will attach to.
 
-### -param AttachFlags 
+### -param AttachFlags [in]
 
-[in]
+
 Specifies the flags that control how the debugger attaches to the target process.  For details on these flags, see Remarks.
 
 ## -returns
@@ -233,3 +228,4 @@ If this flag is set, then the flags DEBUG_ATTACH_NONINVASIVE and DEBUG_ATTACH_EX
 
 
 <a href="/windows-hardware/drivers/debugger/introduction">debugger engine</a>
+

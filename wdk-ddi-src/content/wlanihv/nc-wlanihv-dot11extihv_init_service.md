@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_INIT_SERVICE
 title: DOT11EXTIHV_INIT_SERVICE (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_INIT_SERVICE callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvinitservice.htm
 tech.root: netvista
-ms.assetid: ba803eab-74ae-4998-b013-9f4470da8382
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_INIT_SERVICE callback"]
 ms.keywords: DOT11EXTIHV_INIT_SERVICE, Dot11ExtIhvInitService, Dot11ExtIhvInitService callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_8e49584c-f0e7-4ff5-a3cb-5eafde2ff081.xml, netvista.dot11extihvinitservice, wlanihv/Dot11ExtIhvInitService
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_INIT_SERVICE
  - wlanihv/DOT11EXTIHV_INIT_SERVICE
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtIhvInitService
+ - DOT11EXTIHV_INIT_SERVICE
 ---
 
 # DOT11EXTIHV_INIT_SERVICE callback
@@ -53,18 +51,18 @@ api_name:
 
 ## -parameters
 
-### -param dwVerNumUsed 
+### -param dwVerNumUsed [in]
 
-[in]
+
 The interface version used by the operating system. The value of this parameter must be between
      the ranges of version numbers returned in the
      <i>pDot11IHVVersionInfo</i> parameter of the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_get_version_info.md">
      Dot11ExtIhvGetVersionInfo</a> IHV Handler function.
 
-### -param pDot11ExtAPI 
+### -param pDot11ExtAPI [in]
 
-[in]
+
 A pointer to a
      <a href="..\wlanihv\ns-wlanihv-_dot11ext_apis.md">DOT11EXT_APIS</a> structure, which contains the
      addresses of the IHV Extensibility functions that are supported by the operating system. The operating
@@ -75,9 +73,9 @@ A pointer to a
 
 This parameter is reserved for use by the operating system.
 
-### -param pDot11IHVHandlers 
+### -param pDot11IHVHandlers [out]
 
-[out]
+
 A pointer to a
      <a href="..\wlanihv\ns-wlanihv-_dot11ext_ihv_handlers.md">DOT11EXT_IHV_HANDLERS</a> structure,
      which contains the addresses of the IHV Handler functions supported by the IHV Extensions DLL. The DLL
@@ -148,3 +146,4 @@ For more information about
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_get_version_info.md">Dot11ExtIhvGetVersionInfo</a>
+

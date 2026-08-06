@@ -4,7 +4,6 @@ title: _WWAN_UMTS_SERVING_CELL_INFO (wwan.h)
 description: The WWAN_UMTS_SERVING_CELL_INFO structure represents information about the UMTS serving cell.
 old-location: netvista\wwan_umts_serving_cell_info.htm
 tech.root: netvista
-ms.assetid: 62257D65-DCB9-43C3-A862-DAB31C27EF0A
 ms.date: 05/02/2018
 keywords: ["WWAN_UMTS_SERVING_CELL_INFO structure"]
 ms.keywords: "*PWWAN_UMTS_SERVING_CELL_INFO, PWWAN_UMTS_SERVING_CELL_INFO, PWWAN_UMTS_SERVING_CELL_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_UMTS_SERVING_CELL_INFO, WWAN_UMTS_SERVING_CELL_INFO structure [Network Drivers Starting with Windows Vista], _WWAN_UMTS_SERVING_CELL_INFO, netvista.wwan_umts_serving_cell_info, wwan/PWWAN_UMTS_SERVING_CELL_INFO, wwan/WWAN_UMTS_SERVING_CELL_INFO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_UMTS_SERVING_CELL_INFO
+ - PWWAN_UMTS_SERVING_CELL_INFO
  - WWAN_UMTS_SERVING_CELL_INFO
 ---
 
@@ -121,3 +122,4 @@ The data buffer containing <i>ProviderId</i>.
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_umts_mrl_info">WWAN_UMTS_MRL_INFO</a>
+

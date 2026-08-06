@@ -4,7 +4,6 @@ title: IServiceSink (portcls.h)
 description: The IServiceSink interface encapsulates handling of a service request.
 old-location: audio\iservicesink.htm
 tech.root: audio
-ms.assetid: 329ae226-02fb-438b-b461-da51e3afd6eb
 ms.date: 05/08/2018
 keywords: ["IServiceSink interface"]
 ms.keywords: IServiceSink, IServiceSink interface [Audio Devices], IServiceSink interface [Audio Devices],described, audio.iservicesink, audmp-routines_68a03e77-6246-44e7-acad-6de0fbe10c41.xml, portcls/IServiceSink
@@ -56,7 +55,4 @@ For more information, see <a href="/windows-hardware/drivers/audio/service-sink-
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IServiceSink</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IServiceSink</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IServiceSink</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IServiceSink</b> also has these types of members:

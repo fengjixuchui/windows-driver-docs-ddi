@@ -1,10 +1,9 @@
 ---
 UID: NF:hidpi.HidP_GetCaps
 title: HidP_GetCaps function (hidpi.h)
-description: The HidP_GetCaps routine returns a top-level collection's HIDP_CAPS structure.
+description: The HidP_GetCaps routine returns a top-level collection's HIDP_CAPS structure. This routine is in hidpi.h.
 old-location: hid\hidp_getcaps.htm
 tech.root: hid
-ms.assetid: a43baab5-26d9-43f7-bc13-3b0864769e68
 ms.date: 04/30/2018
 keywords: ["HidP_GetCaps function"]
 ms.keywords: HidP_GetCaps, HidP_GetCaps callback function [Human Input Devices], PHIDP_GETCAPS, PHIDP_GETCAPS callback, hid.hidp_getcaps, hidfunc_420188e5-e357-43cc-b195-dea7637fd3c9.xml, hidpi/HidP_GetCaps
@@ -50,14 +49,14 @@ The <b>HidP_GetCaps</b> routine returns a <a href="/windows-hardware/drivers/hid
 
 ## -parameters
 
-### -param PreparsedData 
+### -param PreparsedData [in]
 
-[in]
+
 Pointer to a top-level collection's <a href="/windows-hardware/drivers/hid/preparsed-data">preparsed data</a>.
 
-### -param Capabilities 
+### -param Capabilities [out]
 
-[out]
+
 Pointer to a caller-allocated buffer that the routine uses to return a collection's HIDP_CAPS structure.
 
 ## -returns

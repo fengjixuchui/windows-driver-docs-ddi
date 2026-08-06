@@ -4,7 +4,6 @@ title: _D3DDDI_ISSUEQUERYFLAGS (d3dumddi.h)
 description: The D3DDDI_ISSUEQUERYFLAGS structure identifies the state of a query issue.
 old-location: display\d3dddi_issuequeryflags.htm
 tech.root: display
-ms.assetid: 68360c2e-4b03-40a3-a313-bdb9ef26a298
 ms.date: 05/10/2018
 keywords: ["D3DDDI_ISSUEQUERYFLAGS structure"]
 ms.keywords: D3DDDI_ISSUEQUERYFLAGS, D3DDDI_ISSUEQUERYFLAGS structure [Display Devices], D3D_other_Structs_794dd0b0-f24c-4e9e-befe-d79dd4efbaef.xml, _D3DDDI_ISSUEQUERYFLAGS, d3dumddi/D3DDDI_ISSUEQUERYFLAGS, display.d3dddi_issuequeryflags
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDI_ISSUEQUERYFLAGS
  - D3DDDI_ISSUEQUERYFLAGS
 ---
 
@@ -75,3 +75,4 @@ A member in the union that is contained in D3DDDI_ISSUEQUERYFLAGS that can hold 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_issuequery">D3DDDIARG_ISSUEQUERY</a>
+

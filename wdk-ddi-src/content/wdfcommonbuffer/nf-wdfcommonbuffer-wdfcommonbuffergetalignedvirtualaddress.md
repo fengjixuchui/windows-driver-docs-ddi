@@ -4,7 +4,6 @@ title: WdfCommonBufferGetAlignedVirtualAddress function (wdfcommonbuffer.h)
 description: The WdfCommonBufferGetAlignedVirtualAddress method returns the virtual address that is associated with a specified common buffer.
 old-location: wdf\wdfcommonbuffergetalignedvirtualaddress.htm
 tech.root: wdf
-ms.assetid: 6874a1bc-e16e-4052-85a4-dba617a69ccd
 ms.date: 02/26/2018
 keywords: ["WdfCommonBufferGetAlignedVirtualAddress function"]
 ms.keywords: DFCommonBufferObjectRef_469df6c0-51ef-480a-93fe-dee452eaf216.xml, WdfCommonBufferGetAlignedVirtualAddress, WdfCommonBufferGetAlignedVirtualAddress method, kmdf.wdfcommonbuffergetalignedvirtualaddress, wdf.wdfcommonbuffergetalignedvirtualaddress, wdfcommonbuffer/WdfCommonBufferGetAlignedVirtualAddress
@@ -53,9 +52,9 @@ The <b>WdfCommonBufferGetAlignedVirtualAddress</b> method returns the virtual ad
 
 ## -parameters
 
-### -param CommonBuffer 
+### -param CommonBuffer [in]
 
-[in]
+
 A handle to a common buffer object that the driver obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdfcommonbuffer/nf-wdfcommonbuffer-wdfcommonbuffercreate">WdfCommonBufferCreate</a>.
 
 ## -returns

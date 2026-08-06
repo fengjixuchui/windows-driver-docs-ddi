@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient3.SetOutputCallbacks
 title: IDebugClient3::SetOutputCallbacks (dbgeng.h)
-description: The SetOutputCallbacks method registers an output callbacks object with this client.
+description: The SetOutputCallbacks method registers an output callbacks object with this client. This method belongs to the IDebugClient3 interface.
 old-location: debugger\setoutputcallbacks.htm
 tech.root: debugger
-ms.assetid: 2226804c-dbdd-4855-9ba5-7c1959941e59
 ms.date: 05/03/2018
 keywords: ["IDebugClient3::SetOutputCallbacks"]
 ms.keywords: IDebugClient interface [Windows Debugging],SetOutputCallbacks method, IDebugClient2 interface [Windows Debugging],SetOutputCallbacks method, IDebugClient2::SetOutputCallbacks, IDebugClient3 interface [Windows Debugging],SetOutputCallbacks method, IDebugClient3.SetOutputCallbacks, IDebugClient3::SetOutputCallbacks, IDebugClient4 interface [Windows Debugging],SetOutputCallbacks method, IDebugClient4::SetOutputCallbacks, IDebugClient5 interface [Windows Debugging],SetOutputCallbacks method, IDebugClient5::SetOutputCallbacks, IDebugClient::SetOutputCallbacks, IDebugClient_b1da4bc1-b368-475e-bd13-021358f9d234.xml, SetOutputCallbacks, SetOutputCallbacks method [Windows Debugging], SetOutputCallbacks method [Windows Debugging],IDebugClient interface, SetOutputCallbacks method [Windows Debugging],IDebugClient2 interface, SetOutputCallbacks method [Windows Debugging],IDebugClient3 interface, SetOutputCallbacks method [Windows Debugging],IDebugClient4 interface, SetOutputCallbacks method [Windows Debugging],IDebugClient5 interface, dbgeng/IDebugClient2::SetOutputCallbacks, dbgeng/IDebugClient3::SetOutputCallbacks, dbgeng/IDebugClient4::SetOutputCallbacks, dbgeng/IDebugClient5::SetOutputCallbacks, dbgeng/IDebugClient::SetOutputCallbacks, debugger.setoutputcallbacks
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.SetOutputCallbacks
- - IDebugClient2.SetOutputCallbacks
- - IDebugClient3.SetOutputCallbacks
- - IDebugClient4.SetOutputCallbacks
- - IDebugClient5.SetOutputCallbacks
+ - IDebugClient3::SetOutputCallbacks
 ---
 
 # IDebugClient3::SetOutputCallbacks
@@ -54,9 +49,9 @@ The <b>SetOutputCallbacks</b> method registers an <a href="/windows-hardware/dri
 
 ## -parameters
 
-### -param Callbacks 
+### -param Callbacks [in, optional]
 
-[in, optional]
+
 Specifies the interface pointer to the output callbacks object to register with this client.
 
 ## -returns
@@ -116,3 +111,4 @@ For more information about callbacks, see <a href="/windows-hardware/drivers/deb
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugoutputcallbacks">IDebugOutputCallbacks</a>
+

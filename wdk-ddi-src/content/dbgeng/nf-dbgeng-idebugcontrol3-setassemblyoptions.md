@@ -4,7 +4,6 @@ title: IDebugControl3::SetAssemblyOptions (dbgeng.h)
 description: The SetAssemblyOptions method sets the assembly and disassembly options that affect how the debugger engine assembles and disassembles processor instructions for the target.
 old-location: debugger\setassemblyoptions.htm
 tech.root: debugger
-ms.assetid: ec86ac71-212c-4edd-94c6-bab1cb5fa660
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::SetAssemblyOptions"]
 ms.keywords: IDebugControl3 interface [Windows Debugging],SetAssemblyOptions method, IDebugControl3.SetAssemblyOptions, IDebugControl3::SetAssemblyOptions, IDebugControl_b39768e8-fb98-4056-b548-c568316279e1.xml, SetAssemblyOptions, SetAssemblyOptions method [Windows Debugging], SetAssemblyOptions method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl3::SetAssemblyOptions, debugger.setassemblyoptions
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl3.SetAssemblyOptions
+ - IDebugControl3::SetAssemblyOptions
 ---
 
 # IDebugControl3::SetAssemblyOptions
@@ -50,9 +49,9 @@ The <b>SetAssemblyOptions</b> method sets the assembly and disassembly options t
 
 ## -parameters
 
-### -param Options 
+### -param Options [in]
 
-[in]
+
 Specifies the new assembly and disassembly options to be used by the <a href="/windows-hardware/drivers/debugger/introduction">debugger engine</a>.  <i>Options</i> is a bit-set; it will replace the existing assembly and disassembly options.  For possible values, see Remarks.  DEBUG_ASMOPT_DEFAULT can be used to set the default options.
 
 ## -returns
@@ -170,3 +169,4 @@ Additionally, the value DEBUG_ASMOPT_DEFAULT represents the default set of assem
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-removeassemblyoptions">RemoveAssemblyOptions</a>
+

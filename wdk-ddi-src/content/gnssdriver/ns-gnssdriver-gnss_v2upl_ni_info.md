@@ -1,15 +1,13 @@
 ---
-UID: NS:gnssdriver.__unnamed_struct_32
+UID: NS:gnssdriver.GNSS_V2UPL_NI_INFO
 title: GNSS_V2UPL_NI_INFO (gnssdriver.h)
-description: This structure contains V2UPL NI information.
-old-location: gnss\gnss_v2upl_ni_info.htm
+description: The GNSS_V2UPL_NI_INFO structure contains V2UPL NI information.
 tech.root: gnss
-ms.assetid: 884C8141-2A15-4BAE-8A5C-73355BD84D53
-ms.date: 02/15/2018
+ms.date: 06/20/2022
 keywords: ["GNSS_V2UPL_NI_INFO structure"]
 ms.keywords: "*PGNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO, GNSS_V2UPL_NI_INFO structure [Sensor Devices], PGNSS_V2UPL_NI_INFO, PGNSS_V2UPL_NI_INFO structure pointer [Sensor Devices], gnss.gnss_v2upl_ni_info, gnssdriver/GNSS_V2UPL_NI_INFO, gnssdriver/PGNSS_V2UPL_NI_INFO"
 req.header: gnssdriver.h
-req.include-header: 
+req.include-header: Gnssdriver.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -40,15 +38,13 @@ api_type:
 api_location:
  - gnssdriver.h
 api_name:
+ - PGNSS_V2UPL_NI_INFO
  - GNSS_V2UPL_NI_INFO
 ---
 
-# GNSS_V2UPL_NI_INFO structure
-
-
 ## -description
 
-This structure contains V2UPL NI information.
+The **GNSS_V2UPL_NI_INFO** structure contains V2UPL NI information.
 
 ## -struct-fields
 
@@ -61,13 +57,6 @@ Structure size.
 Version number.
 
 ### -field RequestorId
-
- 
-
-
-
-
-#### - RequestorId[MAX_PATH]
 
 Requestor ID.
 

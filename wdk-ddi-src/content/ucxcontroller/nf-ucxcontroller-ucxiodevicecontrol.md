@@ -4,7 +4,6 @@ title: UcxIoDeviceControl function (ucxcontroller.h)
 description: Allows USB host controller extension (UCX) to handle an I/O control code (IOCTL) request from user mode.
 old-location: buses\_ucxiodevicecontrol.htm
 tech.root: usbref
-ms.assetid: 7C1DD018-2EDF-48BB-8DFC-ADAF72A1909D
 ms.date: 05/07/2018
 keywords: ["UcxIoDeviceControl function"]
 ms.keywords: UcxIoDeviceControl, UcxIoDeviceControl method [Buses], buses._ucxiodevicecontrol, ucxcontroller/UcxIoDeviceControl
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,31 +49,31 @@ api_name:
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to the framework device object that the client driver retrieved in the previous call to <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate">WdfDeviceCreate</a>.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object that represents the user-mode IOCTL request.
 
-### -param OutputBufferLength 
+### -param OutputBufferLength [in]
 
-[in]
+
 The length, in bytes, of the request's output buffer, if an output buffer 
         is available.
 
-### -param InputBufferLength 
+### -param InputBufferLength [in]
 
-[in]
+
 The length, in bytes, of the request's input buffer, if an input buffer 
         is available.
 
-### -param IoControlCode 
+### -param IoControlCode [in]
 
-[in]
+
 The driver-defined or system-defined IOCTL that is 
         associated with the request.
 

@@ -3,11 +3,8 @@ UID: NS:dispmprt._DXGK_VIRTUALGPUSEGMENTINFO
 title: _DXGK_VIRTUALGPUSEGMENTINFO
 description: Information about the virtual GPU segment info.
 tech.root: display
-ms.assetid: 25475970-446a-4dbf-b916-222bc6eb6ba3
 ms.date: 04/04/2019
 keywords: ["DXGK_VIRTUALGPUSEGMENTINFO structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _DXGK_VIRTUALGPUSEGMENTINFO, DXGK_VIRTUALGPUSEGMENTINFO, *PDXGK_VIRTUALGPUSEGMENTINFO,
 req.header: dispmprt.h
 req.include-header: 
@@ -39,8 +36,8 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGK_VIRTUALGPUSEGMENTINFO
-product:
- - Windows
+ - PDXGK_VIRTUALGPUSEGMENTINFO
+ - DXGK_VIRTUALGPUSEGMENTINFO
 dev_langs:
  - c++
 ---

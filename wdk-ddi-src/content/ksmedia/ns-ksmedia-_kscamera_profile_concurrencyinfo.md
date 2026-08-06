@@ -4,7 +4,6 @@ title: _KSCAMERA_PROFILE_CONCURRENCYINFO (ksmedia.h)
 description: An array of KSCAMERA_PROFILE_CONCURRENCYINFO structures form the Camera.Concurrency parameter of the KSDEVICE_PROFILE_INFO structure (whose array size is specified by Camera.CountOfConcurrency parameter) indicating which profiles the profile identified in the KSCAMERA_PROFILE_INFO structure may run simultaneously on different cameras.
 old-location: stream\kscamera_profile_concurrencyinfo.htm
 tech.root: stream
-ms.assetid: 4E0A9CE6-2FA0-46A5-B478-C088E5FF1BAD
 ms.date: 04/23/2018
 keywords: ["KSCAMERA_PROFILE_CONCURRENCYINFO structure"]
 ms.keywords: "*PKSCAMERA_PROFILE_CONCURRENCYINFO, KSCAMERA_PROFILE_CONCURRENCYINFO, KSCAMERA_PROFILE_CONCURRENCYINFO structure [Streaming Media Devices], PKSCAMERA_PROFILE_CONCURRENCYINFO, PKSCAMERA_PROFILE_CONCURRENCYINFO structure pointer [Streaming Media Devices], _KSCAMERA_PROFILE_CONCURRENCYINFO, ksmedia/KSCAMERA_PROFILE_CONCURRENCYINFO, ksmedia/PKSCAMERA_PROFILE_CONCURRENCYINFO, stream.kscamera_profile_concurrencyinfo"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - _KSCAMERA_PROFILE_CONCURRENCYINFO
+ - PKSCAMERA_PROFILE_CONCURRENCYINFO
  - KSCAMERA_PROFILE_CONCURRENCYINFO
 ---
 
@@ -77,3 +78,4 @@ Currently, an application has no knowledge as to whether it can attempt to strea
 For multiple applications, concurrency will not be sufficient to guarantee concurrent operation.  The concurrency information will not attempt to solve this scenario.  Instead, the existing camera yanking feature will be leveraged.
 
 If both <b>Camera.CountOfConcurrency</b> and the <b>Camera.Concurrency</b> fields are 0 and <b>NULL</b> respectively, it indicates to the OS that the profile defined by the KSCAMERA_PROFILE_INFO is not a concurrent profile.
+

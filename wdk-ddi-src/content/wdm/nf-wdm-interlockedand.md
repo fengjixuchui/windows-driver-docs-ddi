@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.InterlockedAnd
 title: InterlockedAnd function (wdm.h)
-description: The InterlockedAnd macro atomically computes a bitwise AND operation.
+description: The InterlockedAnd (wdm.h) macro atomically computes a bitwise AND operation with the specified variable and specified value.
 old-location: kernel\interlockedand.htm
 tech.root: kernel
-ms.assetid: 3b1ff981-7f87-4a47-81a3-3e323459c333
 ms.date: 04/30/2018
 keywords: ["InterlockedAnd function"]
 ms.keywords: InterlockedAnd, InterlockedAnd function [Kernel-Mode Driver Architecture], k102_839df216-b391-436b-9e33-d60dfbb5dbe9.xml, kernel.interlockedand, wdm/InterlockedAnd
@@ -50,14 +49,14 @@ The <b>InterlockedAnd</b> macro atomically computes a bitwise AND operation.
 
 ## -parameters
 
-### -param Destination 
+### -param Destination [in, out]
 
-[in, out]
+
 A pointer to the variable to be ANDed with <i>Value</i>. The result of the operation is stored in the variable.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies the value to be ANDed with the variable that is pointed to by <i>Destination</i>.
 
 ## -returns

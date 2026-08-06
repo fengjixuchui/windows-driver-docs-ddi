@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostType.GetType
 title: IDebugHostType::GetType (dbgmodel.h)
-description: Returns the type (e.g. "int *") of the symbol if the symbol has a type.
-ms.assetid: bdd9c441-580c-4b34-b935-05092211041b
+description: "The IDebugHostType::GetType method, when called on a symbol, gets the type of symbol, such as int *."
 ms.date: 09/10/2018
 keywords: ["IDebugHostType::GetType"]
 ms.keywords: IDebugHostType::GetType, GetType, IDebugHostType.GetType, IDebugHostType::GetType, IDebugHostType.GetType
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostType.GetType
+ - IDebugHostType::GetType
 ---
 
 # IDebugHostType::GetType

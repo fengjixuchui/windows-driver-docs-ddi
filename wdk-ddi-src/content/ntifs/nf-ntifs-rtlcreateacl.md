@@ -4,7 +4,6 @@ title: RtlCreateAcl function (ntifs.h)
 description: The RtlCreateAcl routine creates and initializes an access control list (ACL).
 old-location: ifsk\rtlcreateacl.htm
 tech.root: ifsk
-ms.assetid: d7bf1fa0-81e0-4b44-adcd-d8f629453ac8
 ms.date: 04/16/2018
 keywords: ["RtlCreateAcl function"]
 ms.keywords: RtlCreateAcl, RtlCreateAcl routine [Installable File System Drivers], ifsk.rtlcreateacl, ntifs/RtlCreateAcl, rtlref_0b8e6b6c-308f-4acd-b109-d6042964ea7f.xml
@@ -50,19 +49,19 @@ The <b>RtlCreateAcl</b> routine creates and initializes an access control list (
 
 ## -parameters
 
-### -param Acl 
+### -param Acl [out]
 
-[out]
+
 Pointer to a caller-allocated buffer to receive the initialized ACL structure. This buffer must be at least <b>sizeof</b>(ACL),
 
-### -param AclLength 
+### -param AclLength [in]
 
-[in]
+
 Length, in bytes, of the buffer pointed to by the <i>Acl</i> parameter. This value must be large enough to contain the ACL header and all of the access-control entries (ACE) to be stored in the ACL. See the following Remarks section for information about calculating the size of an ACL.
 
 ### -param AclRevision
 
-<p>ACL revision level of the ACE to be added. Windows version requirments are the following:</p>
+<p>ACL revision level of the ACE to be added. Windows version requirements are the following:</p>
   <table>
     <tr>
       <th>Value</th>
@@ -166,7 +165,7 @@ for (i = 0 ; i < nAceCount ; i++) {
 }
 ```
 
-For more information about security and access control, see the documentation on these topics in thePlatform Software Development Kit (SDK).
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

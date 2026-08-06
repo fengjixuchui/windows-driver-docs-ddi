@@ -4,7 +4,6 @@ title: NdisCmRegisterSapComplete function (ndis.h)
 description: NdisCmRegisterSapComplete returns the final status of a client's request, for which the CM previously returned NDIS_STATUS_PENDING, to register a SAP.
 old-location: netvista\ndiscmregistersapcomplete.htm
 tech.root: netvista
-ms.assetid: 0419bbf5-02aa-482f-9e2c-a435302751c4
 ms.date: 05/02/2018
 keywords: ["NdisCmRegisterSapComplete function"]
 ms.keywords: NdisCmRegisterSapComplete, NdisCmRegisterSapComplete function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_1f862b68-070b-40d3-8edd-3830195af73c.xml, ndis/NdisCmRegisterSapComplete, netvista.ndiscmregistersapcomplete
@@ -52,23 +51,23 @@ api_name:
 
 ## -parameters
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 Specifies the final status of the client's original request to register the SAP, either
      NDIS_STATUS_SUCCESS or any CM-determined NDIS_STATUS_<i>XXX</i> except NDIS_STATUS_PENDING.
 
-### -param NdisSapHandle 
+### -param NdisSapHandle [in]
 
-[in]
+
 Specifies the NDIS-supplied handle to the SAP if the registration is successful. The call manager
      obtained this handle as an input parameter to its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_reg_sap">
      ProtocolCmRegisterSap</a> function.
 
-### -param CallMgrSapContext 
+### -param CallMgrSapContext [in]
 
-[in]
+
 Specifies the handle to a caller-supplied resident context area in which the CM maintains state
      for this SAP if the registration is successful. If so, NDIS passes this handle back to the CM in all
      subsequent calls concerning this SAP. If 

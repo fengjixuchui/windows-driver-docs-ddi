@@ -4,7 +4,6 @@ title: KsCreateClock function (ks.h)
 description: The KsCreateClock function creates a handle to a clock instance.
 old-location: stream\kscreateclock.htm
 tech.root: stream
-ms.assetid: a125161d-c086-45a4-9b66-4c13d9ed5f11
 ms.date: 04/23/2018
 keywords: ["KsCreateClock function"]
 ms.keywords: KsCreateClock, KsCreateClock function [Streaming Media Devices], ks/KsCreateClock, ksfunc_ba840ce8-a1c9-4ede-8d2e-6e2829ad9b11.xml, stream.kscreateclock
@@ -51,19 +50,19 @@ The <b>KsCreateClock</b> function creates a handle to a clock instance.
 
 ## -parameters
 
-### -param ConnectionHandle 
+### -param ConnectionHandle [in]
 
-[in]
+
 Specifies the handle to the connection on which to create the clock.
 
-### -param ClockCreate 
+### -param ClockCreate [in]
 
-[in]
+
 Specifies clock create parameters. This currently consists of a flag that must be set to zero.
 
-### -param ClockHandle 
+### -param ClockHandle [out]
 
-[out]
+
 Specifies the new clock handle.
 
 ## -returns

@@ -1,10 +1,9 @@
 ---
 UID: NS:ucxusbdevice._UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY
 title: _UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY (ucxusbdevice.h)
-description: Stores the isochronous transfer path delay values.
+description: Learn how UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY stores the isochronous transfer path delay values.
 old-location: buses\ucx_usbdevice_characteristic_path_delay.htm
 tech.root: usbref
-ms.assetid: 135D6C04-3520-46C2-BC64-DF0119578E6F
 ms.date: 05/07/2018
 keywords: ["UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY structure"]
 ms.keywords: "*PUCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, PUCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, PUCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY structure pointer [Buses], UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY structure [Buses], _UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, buses.ucx_usbdevice_characteristic_path_delay, ucxusbdevice/PUCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY, ucxusbdevice/UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ucxusbdevice.h
 api_name:
+ - _UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY
+ - PUCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY
  - UCX_USBDEVICE_CHARACTERISTIC_PATH_DELAY
 ---
 
@@ -65,3 +66,4 @@ The maximum delay in milliseconds from the time an isochronous transfer is compl
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ucxusbdevice/nc-ucxusbdevice-evt_ucx_usbdevice_get_characteristic">EVT_UCX_USBDEVICE_GET_CHARACTERISTIC</a>
+

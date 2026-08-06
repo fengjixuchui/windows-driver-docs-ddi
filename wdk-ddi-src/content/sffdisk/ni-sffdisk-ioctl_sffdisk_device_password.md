@@ -4,7 +4,6 @@ title: IOCTL_SFFDISK_DEVICE_PASSWORD (sffdisk.h)
 description: User-mode applications use this IOCTL to perform basic operations on a Secure Digital (SD) card, such as setting the password on the card, resetting the card, or locking and unlocking the card.
 old-location: sd\ioctl_sffdisk_device_password.htm
 tech.root: SD
-ms.assetid: 76b65ada-06b8-411e-83e9-62088f697f02
 ms.date: 02/15/2018
 keywords: ["IOCTL_SFFDISK_DEVICE_PASSWORD IOCTL"]
 ms.keywords: IOCTL_SFFDISK_DEVICE_PASSWORD, IOCTL_SFFDISK_DEVICE_PASSWORD control, IOCTL_SFFDISK_DEVICE_PASSWORD control code [Buses], SD.ioctl_sffdisk_device_password, sd-ioctls_409f2592-46a6-4658-bc4f-d15c10452007.xml, sffdisk/IOCTL_SFFDISK_DEVICE_PASSWORD
@@ -120,6 +119,8 @@ If the caller opened the device without specifying the FILE_FLAG_OVERLAPPED flag
 </dl>
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

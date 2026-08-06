@@ -4,7 +4,6 @@ title: _IDE_CONTROLLER_CONFIGURATION (irb.h)
 description: The IDE_CONTROLLER_CONFIGURATION structure is used to pass controller configuration information between the port driver and the miniport driver.Note  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future.
 old-location: storage\ide_controller_configuration.htm
 tech.root: storage
-ms.assetid: 89b7f66e-3a3a-4723-a409-3b3030c1a45b
 ms.date: 03/29/2018
 keywords: ["IDE_CONTROLLER_CONFIGURATION structure"]
 ms.keywords: "*PIDE_CONTROLLER_CONFIGURATION, IDE_CONTROLLER_CONFIGURATION, IDE_CONTROLLER_CONFIGURATION structure [Storage Devices], PIDE_CONTROLLER_CONFIGURATION, PIDE_CONTROLLER_CONFIGURATION structure pointer [Storage Devices], _IDE_CONTROLLER_CONFIGURATION, irb/IDE_CONTROLLER_CONFIGURATION, irb/PIDE_CONTROLLER_CONFIGURATION, storage.ide_controller_configuration, structs-ATA_c72d9d21-e06b-43e0-8854-8b682e2e0778.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - irb.h
 api_name:
+ - _IDE_CONTROLLER_CONFIGURATION
+ - PIDE_CONTROLLER_CONFIGURATION
  - IDE_CONTROLLER_CONFIGURATION
 ---
 
@@ -97,7 +98,7 @@ This is the limited no memory mode that an ATA miniport operates in during hiber
 
 ### -field NumberOfPhysicalBreaks
 
-Specifies the maximum number of breaks between address ranges that a data buffer can have if the HBA supports scatter/gather. In other words, the number of scatter/gather lists minus one. By default, the value of this member is IDE_UNINITIALIZED_VALUE, which indicates the HBA can support an unlimited number of physical discontiguities. If the port driver sets a value for this member, the miniport driver can adjust the value lower but no higher. If this member is IDE_UNINITIALIZED_VALUE, the miniport driver must reset this member according to the HBA's scatter/gather capacity.
+Specifies the maximum number of breaks between address ranges that a data buffer can have if the HBA supports scatter/gather. In other words, the number of scatter/gather lists minus one. By default, the value of this member is IDE_UNINITIALIZED_VALUE, which indicates the HBA can support an unlimited number of physical discontinuities. If the port driver sets a value for this member, the miniport driver can adjust the value lower but no higher. If this member is IDE_UNINITIALIZED_VALUE, the miniport driver must reset this member according to the HBA's scatter/gather capacity.
 
 ### -field MaximumTransferLength
 
@@ -126,3 +127,4 @@ Indicates whether it is a SATA or a PATA controller.
 ### -field ControllerResources
 
 Provides the hardware resources for the ATA controller.
+

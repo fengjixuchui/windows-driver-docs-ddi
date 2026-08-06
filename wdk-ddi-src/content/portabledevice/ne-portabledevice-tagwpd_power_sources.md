@@ -4,7 +4,6 @@ title: WPD_POWER_SOURCES (portabledevice.h)
 description: The WPD_POWER_SOURCES enumeration type describes the power source that a device is using.
 old-location: wpddk\wpd_power_sources.htm
 tech.root: wpd_dk
-ms.assetid: 191c75af-1e67-4293-ab62-383d84874688
 ms.date: 02/15/2018
 keywords: ["tagWPD_POWER_SOURCES enumeration"]
 ms.keywords: WPD_POWER_SOURCES, WPD_POWER_SOURCES enumeration, WPD_POWER_SOURCE_BATTERY, WPD_POWER_SOURCE_EXTERNAL, enumeration, portabledevice/WPD_POWER_SOURCES, portabledevice/WPD_POWER_SOURCE_BATTERY, portabledevice/WPD_POWER_SOURCE_EXTERNAL, tagWPD_POWER_SOURCES, wpddk.wpd_power_sources
@@ -41,6 +40,7 @@ api_type:
 api_location:
  - PortableDevice.h
 api_name:
+ - tagWPD_POWER_SOURCES
  - WPD_POWER_SOURCES
 ---
 
@@ -68,3 +68,4 @@ This enumeration is used by the <a href="/windows/desktop/wpd_sdk/device-propert
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/drivers/ff597672(v=vs.85)">Structures and Enumeration Types</a>
+

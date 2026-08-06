@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_SEND_PACKET_COMPLETION
 title: DOT11EXTIHV_SEND_PACKET_COMPLETION (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_SEND_PACKET_COMPLETION callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvsendpacketcompletion.htm
 tech.root: netvista
-ms.assetid: 117a9806-95a0-4f2f-8280-fec035df2811
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_SEND_PACKET_COMPLETION callback"]
 ms.keywords: DOT11EXTIHV_SEND_PACKET_COMPLETION, Dot11ExtIhvSendPacketCompletion, Dot11ExtIhvSendPacketCompletion callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_c0d3f967-28a9-4242-9a4b-2faed66ae5b1.xml, netvista.dot11extihvsendpacketcompletion, wlanihv/Dot11ExtIhvSendPacketCompletion
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_SEND_PACKET_COMPLETION
  - wlanihv/DOT11EXTIHV_SEND_PACKET_COMPLETION
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtIhvSendPacketCompletion
+ - DOT11EXTIHV_SEND_PACKET_COMPLETION
 ---
 
 # DOT11EXTIHV_SEND_PACKET_COMPLETION callback
@@ -54,9 +52,9 @@ api_name:
 
 ## -parameters
 
-### -param hSendCompletion 
+### -param hSendCompletion [in, optional]
 
-[in, optional]
+
 The handle value that the IHV Extensions DLL used to identify the packet when it called the
      <a href="..\wlanihv\nc-wlanihv-dot11ext_send_packet.md">Dot11ExtSendPacket</a> function.
 
@@ -86,3 +84,4 @@ When the operating system calls the
 ## -see-also
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_send_packet.md">Dot11ExtSendPacket</a>
+

@@ -1,10 +1,9 @@
 ---
-UID: NS:ksi.__unnamed_struct_1
+UID: NS:ksi.KSCLOCKINSTANCE
 title: KSCLOCKINSTANCE (ksi.h)
-description: 
+description: "Learn more about: KSCLOCKINSTANCE structure"
 old-location: stream\ksclockinstance.htm
 tech.root: stream
-ms.assetid: DC8A7CE9-7FDE-4FC9-8C71-3F3368E7E5C1
 ms.date: 04/23/2018
 keywords: ["KSCLOCKINSTANCE structure"]
 ms.keywords: "*PKSCLOCKINSTANCE, KSCLOCKINSTANCE, KSCLOCKINSTANCE structure [Streaming Media Devices], PKSCLOCKINSTANCE, PKSCLOCKINSTANCE structure pointer [Streaming Media Devices], ksi/KSCLOCKINSTANCE, ksi/PKSCLOCKINSTANCE, stream.ksclockinstance"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Ksi.h
 api_name:
+ - PKSCLOCKINSTANCE
  - KSCLOCKINSTANCE
 ---
 

@@ -4,7 +4,6 @@ title: RtlAreBitsClear function (wdm.h)
 description: The RtlAreBitsClear routine determines whether a given range of bits within a bitmap variable is clear.
 old-location: kernel\rtlarebitsclear.htm
 tech.root: kernel
-ms.assetid: f4092f06-3ed7-4153-8498-0fdfac958a1e
 ms.date: 04/30/2018
 keywords: ["RtlAreBitsClear function"]
 ms.keywords: RtlAreBitsClear, RtlAreBitsClear routine [Kernel-Mode Driver Architecture], k109_bbef7cb1-d817-498e-b091-2d07acc0e552.xml, kernel.rtlarebitsclear, wdm/RtlAreBitsClear
@@ -50,19 +49,19 @@ The <b>RtlAreBitsClear</b> routine determines whether a given range of bits with
 
 ## -parameters
 
-### -param BitMapHeader 
+### -param BitMapHeader [in]
 
-[in]
-A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-### -param StartingIndex 
+A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-[in]
+### -param StartingIndex [in]
+
+
 Specifies the start of the bit range to be tested. This is a zero-based value indicating the position of the first bit in the range.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Specifies how many bits to test.
 
 ## -returns
@@ -75,7 +74,7 @@ Callers of <b>RtlAreBitsClear</b> must be running at IRQL <= APC_LEVEL if the me
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a>
+<a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a>
 
 
 

@@ -4,7 +4,6 @@ title: _NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS (ntddndis.h)
 description: The NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS structure specifies the parameters for a Hyper-V extensible switch profile property that will be deleted.
 old-location: netvista\ndis_switch_property_delete_parameters.htm
 tech.root: netvista
-ms.assetid: dcedbdd0-178b-4e44-aaaa-25a5b219324a
 ms.date: 05/02/2018
 keywords: ["NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS structure"]
 ms.keywords: "*PNDIS_SWITCH_PROPERTY_DELETE_PARAMETERS, NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS, NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_PROPERTY_DELETE_PARAMETERS, PNDIS_SWITCH_PROPERTY_DELETE_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS, netvista.ndis_switch_property_delete_parameters, ntddndis/NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS, ntddndis/PNDIS_SWITCH_PROPERTY_DELETE_PARAMETERS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS
+ - PNDIS_SWITCH_PROPERTY_DELETE_PARAMETERS
  - NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS</b> structure specifies the parame
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value:
 
@@ -98,7 +99,7 @@ For more information about extensible switch policies, see <a href="/windows-har
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -107,3 +108,4 @@ For more information about extensible switch policies, see <a href="/windows-har
 
 
 <a href="/windows-hardware/drivers/network/oid-switch-property-delete">OID_SWITCH_PROPERTY_DELETE</a>
+

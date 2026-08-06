@@ -2,7 +2,6 @@
 UID: NF:sensorsutils.CollectionsListSortSubscribedActivitiesByConfidence
 title: CollectionsListSortSubscribedActivitiesByConfidence function (sensorsutils.h)
 description: This routine rearranges activity data collection under certain conditions.
-ms.assetid: 10616185-a9af-4b35-a7b7-d3288c319121
 ms.date: 08/08/2018
 keywords: ["CollectionsListSortSubscribedActivitiesByConfidence function"]
 tech.root: sensors
@@ -59,13 +58,13 @@ This routine rearranges activity data collection for following:
 
 ## -parameters
 
-### -param thresholds
+### -param thresholds [in]
 
-[in] A pointer to a sensor collection list that contains the activity detection thresholds.
+A pointer to a sensor collection list that contains the activity detection thresholds.
 
-### -param pCollection
+### -param pCollection [in]
 
-[in] A pointer to a sensor collection list.
+A pointer to a sensor collection list.
 
 ## -returns
 

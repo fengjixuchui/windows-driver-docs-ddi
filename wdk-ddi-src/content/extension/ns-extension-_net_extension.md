@@ -3,7 +3,6 @@ UID: NS:extension._NET_EXTENSION
 title: _NET_EXTENSION (extension.h)
 description: The NET_EXTENSION structure describes the collection of net rings that belong to a packet queue.
 tech.root: netvista
-ms.assetid: 557978B2-EDEA-4C5B-87DB-9C62D2A177E4
 ms.date: 02/06/2019
 keywords: ["NET_EXTENSION structure"]
 ms.keywords: _NET_EXTENSION, NET_EXTENSION, *PNET_EXTENSION,
@@ -13,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.29
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -28,13 +27,14 @@ f1_keywords:
  - extension/_NET_EXTENSION
  - NET_EXTENSION
  - extension/NET_EXTENSION
-topictype:
+topic_type:
  - apiref
-apitype:
+api_type:
  - HeaderDef
-apilocation:
+api_location:
  - extension.h
-apiname:
+api_name:
+ - _NET_EXTENSION
  - NET_EXTENSION
 ---
 
@@ -76,3 +76,4 @@ For examples of creating packet queues, see [Transmit and receive queues](/windo
 [Transmit and receive queues](/windows-hardware/drivers/netcx/transmit-and-receive-queues)
 
 [**NetExtensionGetPacketChecksum**](../checksum/nf-checksum-netextensiongetpacketchecksum.md)
+

@@ -4,14 +4,13 @@ title: IoGetDiskDeviceObject function (ntifs.h)
 description: The IoGetDiskDeviceObject routine retrieves a pointer to the disk device object associated with a given file system volume device object.
 old-location: ifsk\iogetdiskdeviceobject.htm
 tech.root: ifsk
-ms.assetid: c4f27011-f198-474e-8d2c-8bf35c3c8c66
 ms.date: 04/16/2018
 keywords: ["IoGetDiskDeviceObject function"]
 ms.keywords: IoGetDiskDeviceObject, IoGetDiskDeviceObject routine [Installable File System Drivers], ifsk.iogetdiskdeviceobject, ioref_b3532bdd-87b6-4e6b-91a0-093b8ed5aa6c.xml, ntifs/IoGetDiskDeviceObject
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Update Rollup for Windows 2000 Service Pack 4 (SP4) and on Windows XP and later.
+req.target-min-winverclnt: Windows 2000 SP4 Update Rollup; Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,9 +49,9 @@ The <b>IoGetDiskDeviceObject</b> routine retrieves a pointer to the disk device 
 
 ## -parameters
 
-### -param FileSystemDeviceObject 
+### -param FileSystemDeviceObject [in]
 
-[in]
+
 A pointer to the file system device object.
 
 ### -param DiskDeviceObject

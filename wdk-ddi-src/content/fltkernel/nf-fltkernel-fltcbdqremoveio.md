@@ -4,7 +4,6 @@ title: FltCbdqRemoveIo function (fltkernel.h)
 description: FltCbdqRemoveIo removes a particular item from a minifilter driver's callback data queue.
 old-location: ifsk\fltcbdqremoveio.htm
 tech.root: ifsk
-ms.assetid: 88ff23b0-502c-4b15-9037-e4ea75441722
 ms.date: 04/16/2018
 keywords: ["FltCbdqRemoveIo function"]
 ms.keywords: FltApiRef_a_to_d_3d737d8a-141a-4a15-9b78-45a215f9fd25.xml, FltCbdqRemoveIo, FltCbdqRemoveIo function [Installable File System Drivers], fltkernel/FltCbdqRemoveIo, ifsk.fltcbdqremoveio
@@ -50,14 +49,14 @@ api_name:
 
 ## -parameters
 
-### -param Cbdq 
+### -param Cbdq [in, out]
 
-[in, out]
+
 Pointer to a cancel-safe callback data queue. This queue must have been initialized by calling <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcbdqinitialize">FltCbdqInitialize</a>.
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Context pointer for the item to be removed. This context is initialized by <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltcbdqinsertio">FltCbdqInsertIo</a> when the I/O request is first inserted in the queue. This parameter is required and must be non-<b>NULL</b>.
 
 ## -returns

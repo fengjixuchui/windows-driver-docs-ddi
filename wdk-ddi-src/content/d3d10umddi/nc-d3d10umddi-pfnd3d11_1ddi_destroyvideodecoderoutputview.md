@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_DESTROYVIDEODECODEROUTPUTVIEW
 title: PFND3D11_1DDI_DESTROYVIDEODECODEROUTPUTVIEW (d3d10umddi.h)
 description: Releases resources for the video decoder output view that were created through a call to the CreateVideoDecoderOutputView function.
 old-location: display\destroyvideodecoderoutputview.htm
-ms.assetid: acb174e5-09cc-41e9-8b30-8c64f6193f7b
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_DESTROYVIDEODECODEROUTPUTVIEW callback function"]
 ms.keywords: PFND3D11_1DDI_DESTROYVIDEODECODEROUTPUTVIEW, PFND3D11_1DDI_DESTROYVIDEODECODEROUTPUTVIEW callback, d3d10umddi/pfnDestroyVideoDecoderOutputView, display.destroyvideodecoderoutputview, pfnDestroyVideoDecoderOutputView, pfnDestroyVideoDecoderOutputView callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnDestroyVideoDecoderOutputView
+ - PFND3D11_1DDI_DESTROYVIDEODECODEROUTPUTVIEW
 ---
 
 # PFND3D11_1DDI_DESTROYVIDEODECODEROUTPUTVIEW callback function
@@ -50,13 +49,13 @@ Releases resources for the video decoder output view that were created through a
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hView*
 
@@ -65,3 +64,4 @@ A handle to the driver's private data for the video decoder output view. This ha
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideodecoderoutputview">CreateVideoDecoderOutputView</a>
+

@@ -3,12 +3,9 @@ UID: NE:dispmprt._DEBUG_LEVEL
 title: _DEBUG_LEVEL
 description: Specifies the debug level.
 tech.root: display
-ms.assetid: 87404085-816f-4ca3-abf7-ae5955b54a99
 ms.date: 04/04/2019
 keywords: ["DEBUG_LEVEL enumeration"]
 ms.keywords: _DEBUG_LEVEL, DEBUG_LEVEL,
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: dispmprt.h
 req.include-header: 
 req.target-type: 
@@ -34,8 +31,7 @@ api_location:
  - dispmprt.h
 api_name:
  - _DEBUG_LEVEL
-product:
- - Windows
+ - DEBUG_LEVEL
 dev_langs:
  - c++
 ---

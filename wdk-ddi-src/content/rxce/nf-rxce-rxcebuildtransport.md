@@ -4,7 +4,6 @@ title: RxCeBuildTransport function (rxce.h)
 description: RxCeBuildTransport binds an RDBSS transport object to a specified transport name.
 old-location: ifsk\rxcebuildtransport.htm
 tech.root: ifsk
-ms.assetid: 019cc9b7-13f7-4925-af98-5df0e8556e1c
 ms.date: 04/16/2018
 keywords: ["RxCeBuildTransport function"]
 ms.keywords: RxCeBuildTransport, RxCeBuildTransport function [Installable File System Drivers], ifsk.rxcebuildtransport, rxce/RxCeBuildTransport, rxref_8251916d-7a85-4e6d-8ca1-2deacf4a389a.xml
@@ -54,14 +53,14 @@ api_name:
 
 <p>On input, this parameter contains a pointer to an uninitialized RDBSS transport with which this transport name is to be associated. On output when this call is successful, the transport is associated with the specified transport name and the transport is properly initialized.</p>
 
-### -param pTransportName 
+### -param pTransportName [in]
 
-[in]
+
 A pointer to the Unicode binding string for the desired transport.
 
-### -param QualityOfService 
+### -param QualityOfService [in]
 
-[in]
+
 The quality of service desired from the transport.
 
 ## -returns

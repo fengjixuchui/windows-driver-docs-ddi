@@ -4,14 +4,13 @@ title: FsRtlDissectDbcs function (ntifs.h)
 description: Given an ANSI or double-byte character set (DBCS) pathname string, the FsRtlDissectDbcs routine returns two strings:\_one containing the first file name found in the string, the other containing the remaining unparsed portion of the pathname string.
 old-location: ifsk\fsrtldissectdbcs.htm
 tech.root: ifsk
-ms.assetid: c5c400af-9e59-4cf0-b66f-985fcdcbc75c
 ms.date: 04/16/2018
 keywords: ["FsRtlDissectDbcs function"]
 ms.keywords: FsRtlDissectDbcs, FsRtlDissectDbcs routine [Installable File System Drivers], fsrtlref_95d6ca19-1a11-4fc9-85a5-ea3cf307d2d0.xml, ifsk.fsrtldissectdbcs, ntifs/FsRtlDissectDbcs
 req.header: ntifs.h
 req.include-header: FltKernel.h, Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows 2000 and later versions of Windows operating systems.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -53,19 +52,19 @@ Given an ANSI or double-byte character set (DBCS) pathname string, the <b>FsRtlD
 
 ## -parameters
 
-### -param Path 
+### -param Path [in]
 
-[in]
+
 The pathname string to be parsed.
 
-### -param FirstName 
+### -param FirstName [out]
 
-[out]
+
 A pointer to the first file name in the pathname string.
 
-### -param RemainingName 
+### -param RemainingName [out]
 
-[out]
+
 A pointer to the remaining unparsed portion of the pathname string.
 
 ## -remarks
@@ -199,7 +198,7 @@ UNICODE_STRING RemainingComponent;
 
 /*
 Do not allocate storage for the Buffer members of CurrentComponent
-and RemainingComponent in that they will point into the previoulsy
+and RemainingComponent in that they will point into the previously
 allocated storage of FullPathName's Buffer member:
 */
 FsRtlDissectDbcs (FullPathName, &CurrentComponent, &RemainingComponent);
@@ -208,7 +207,7 @@ FsRtlDissectDbcs (FullPathName, &CurrentComponent, &RemainingComponent);
 .
 ```
 
-For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/index">Strings</a>.
+For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/_kernel/#run-time-library-rtl-routines">Run-Time Library (RTL) Routines</a>.
 
 ## -see-also
 

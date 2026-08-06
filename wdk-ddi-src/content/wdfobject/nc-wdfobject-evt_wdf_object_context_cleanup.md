@@ -4,7 +4,6 @@ title: EVT_WDF_OBJECT_CONTEXT_CLEANUP (wdfobject.h)
 description: A driver's EvtCleanupCallback event callback function removes the driver's references on an object so that the object can be deleted.
 old-location: wdf\evtcleanupcallback.htm
 tech.root: wdf
-ms.assetid: aba2efca-7d1f-4594-af65-13356f0e3f8b
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_OBJECT_CONTEXT_CLEANUP callback function"]
 ms.keywords: DFGenObjectRef_aef7bd25-42a4-41d2-9ba1-1b1113159657.xml, EVT_WDF_OBJECT_CONTEXT_CLEANUP, EVT_WDF_OBJECT_CONTEXT_CLEANUP callback, EvtCleanupCallback, EvtCleanupCallback callback function, kmdf.evtcleanupcallback, wdf.evtcleanupcallback, wdfobject/EvtCleanupCallback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfobject.h
 api_name:
- - EvtCleanupCallback
+ - EVT_WDF_OBJECT_CONTEXT_CLEANUP
 ---
 
 # EVT_WDF_OBJECT_CONTEXT_CLEANUP callback function
@@ -52,9 +51,9 @@ A driver's <i>EvtCleanupCallback</i> event callback function removes the driver'
 
 ## -parameters
 
-### -param Object 
+### -param Object [in]
 
-[in]
+
 A handle to a framework object.
 
 ## -remarks
@@ -65,7 +64,7 @@ The framework calls the callback function when either the framework or a driver 
 
 If the driver has called <a href="/windows-hardware/drivers/wdf/wdfobjectreference">WdfObjectReference</a> to increase the reference count of an object, the driver must provide an <i>EvtCleanupCallback</i> callback function that calls <a href="/windows-hardware/drivers/wdf/wdfobjectdereference">WdfObjectDereference</a>. This call ensures that the object's reference count is decremented to zero and, as a result, the framework can call the driver's <a href="/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy">EvtDestroyCallback</a> callback function and then delete the object.
 
-If a driver supplies both an <i>EvtCleanupCallback</i> callback function and an <a href="/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy">EvtDestroyCallback</a> callback function for a object, the framework calls the <i>EvtCleanupCallback</i> callback function first.
+If a driver supplies both an <i>EvtCleanupCallback</i> callback function and an <a href="/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy">EvtDestroyCallback</a> callback function for an object, the framework calls the <i>EvtCleanupCallback</i> callback function first.
 
 After the framework calls an object's <i>EvtCleanupCallback</i> callback function, the driver can access the object only from its <a href="/windows-hardware/drivers/ddi/wdfobject/nc-wdfobject-evt_wdf_object_context_destroy">EvtDestroyCallback</a> callback function. However, a driver should not  attempt to call methods on an object from its EvtDestroyCallback.
 
@@ -171,3 +170,4 @@ EVT_WDF_OBJECT_CONTEXT_CLEANUP
 
 
 <a href="/windows-hardware/drivers/ddi/wdfworkitem/nf-wdfworkitem-wdfworkitemflush">WdfWorkItemFlush</a>
+

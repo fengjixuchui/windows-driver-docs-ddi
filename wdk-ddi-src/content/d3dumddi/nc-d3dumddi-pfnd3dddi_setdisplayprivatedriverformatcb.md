@@ -4,7 +4,6 @@ title: PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB (d3dumddi.h)
 description: The pfnSetDisplayPrivateDriverFormatCb function changes the private-format attribute of a video present source.
 old-location: display\pfnsetdisplayprivatedriverformatcb.htm
 tech.root: display
-ms.assetid: 499e6de7-67cc-4834-bcec-4f3907b180f7
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB callback function"]
 ms.keywords: D3Druntime_Functions_36bd86e3-96bb-4c68-85a1-a678a54daed4.xml, PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB, PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB callback, d3dumddi/pfnSetDisplayPrivateDriverFormatCb, display.pfnsetdisplayprivatedriverformatcb, pfnSetDisplayPrivateDriverFormatCb, pfnSetDisplayPrivateDriverFormatCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnSetDisplayPrivateDriverFormatCb
-product:
- - Windows
+ - PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB
 ---
 
 # PFND3DDDI_SETDISPLAYPRIVATEDRIVERFORMATCB callback function
@@ -56,7 +53,7 @@ The <b>pfnSetDisplayPrivateDriverFormatCb</b> function changes the private-forma
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -113,3 +110,4 @@ The user-mode display driver can call <b>pfnSetDisplayPrivateDriverFormatCb</b> 
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_setdisplaymodecb">pfnSetDisplayModeCb</a>
+

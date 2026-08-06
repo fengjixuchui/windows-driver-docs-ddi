@@ -4,7 +4,6 @@ title: _CDROM_SIMPLE_OPC_INFO (ntddcdrm.h)
 description: The CDROM_SIMPLE_OPC_INFO structure is the only input for the IOCTL_CDROM_SEND_OPC_INFORMATION I/O control code.
 old-location: storage\cdrom_simple_opc_info.htm
 tech.root: storage
-ms.assetid: CE6D2C98-C4C3-4D76-B49E-1B9344B88666
 ms.date: 03/29/2018
 keywords: ["CDROM_SIMPLE_OPC_INFO structure"]
 ms.keywords: "*PCDROM_SIMPLE_OPC_INFO, CDROM_SIMPLE_OPC_INFO, CDROM_SIMPLE_OPC_INFO structure [Storage Devices], PCDROM_SIMPLE_OPC_INFO, PCDROM_SIMPLE_OPC_INFO structure pointer [Storage Devices], _CDROM_SIMPLE_OPC_INFO, ntddcdrm/CDROM_SIMPLE_OPC_INFO, ntddcdrm/PCDROM_SIMPLE_OPC_INFO, storage.cdrom_simple_opc_info"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddcdrm.h
 api_name:
+ - _CDROM_SIMPLE_OPC_INFO
+ - PCDROM_SIMPLE_OPC_INFO
  - CDROM_SIMPLE_OPC_INFO
 ---
 
@@ -81,3 +82,4 @@ The  <a href="/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_sen
 
 
 <a href="/windows-hardware/drivers/ddi/ntddcdrm/ni-ntddcdrm-ioctl_cdrom_send_opc_information">IOCTL_CDROM_SEND_OPC_INFORMATION</a>
+

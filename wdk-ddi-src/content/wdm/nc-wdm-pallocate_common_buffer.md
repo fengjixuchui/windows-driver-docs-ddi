@@ -4,7 +4,6 @@ title: PALLOCATE_COMMON_BUFFER (wdm.h)
 description: The AllocateCommonBuffer routine allocates memory and maps it so that it is simultaneously accessible from both the processor and a device for DMA operations.
 old-location: kernel\allocatecommonbuffer.htm
 tech.root: kernel
-ms.assetid: 4edaae35-8ac4-4a7a-949b-8a86b45ff391
 ms.date: 04/30/2018
 keywords: ["PALLOCATE_COMMON_BUFFER callback function"]
 ms.keywords: AllocateCommonBuffer, AllocateCommonBuffer callback function [Kernel-Mode Driver Architecture], PALLOCATE_COMMON_BUFFER, PALLOCATE_COMMON_BUFFER callback, kdma_0e4a27db-db3e-48db-81c2-d83a342a0cbc.xml, kernel.allocatecommonbuffer, wdm/AllocateCommonBuffer
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - AllocateCommonBuffer
+ - PALLOCATE_COMMON_BUFFER
 ---
 
 # PALLOCATE_COMMON_BUFFER callback function
@@ -50,24 +49,24 @@ The <b>AllocateCommonBuffer</b> routine allocates memory and maps it so that it 
 
 ## -parameters
 
-### -param DmaAdapter 
+### -param DmaAdapter [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_dma_adapter">DMA_ADAPTER</a> structure returned by <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter">IoGetDmaAdapter</a> that represents the bus-master adapter or DMA controller.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Specifies the number of bytes of memory to allocate.
 
-### -param LogicalAddress 
+### -param LogicalAddress [out]
 
-[out]
+
 Pointer to a variable that receives the logical address the device can use to access the allocated buffer. Use this address rather than calling <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-mmgetphysicaladdress">MmGetPhysicalAddress</a> because the system can take into account any platform-specific memory restrictions.
 
-### -param CacheEnabled 
+### -param CacheEnabled [in]
 
-[in]
+
 Specifies whether the allocated memory can be cached.
 
 This parameter is ignored. The operating system determines whether to enable cached memory in the common buffer that is to be allocated. That decision is based on the processor architecture and device bus. 
@@ -128,3 +127,4 @@ Drivers typically call <b>AllocateCommonBuffer</b> as part of device start-up, d
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iogetdmaadapter">IoGetDmaAdapter</a>
+

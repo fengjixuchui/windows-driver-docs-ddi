@@ -4,7 +4,6 @@ title: UcmConnectorTypeCAttach function (ucmmanager.h)
 description: Notifies the USB connector manager framework extension (UcmCx) when a partner connector is attached.
 old-location: buses\ucmconnectortypecattach.htm
 tech.root: usbref
-ms.assetid: D778E6B6-B245-41D5-B25B-1CF183146BA9
 ms.date: 05/07/2018
 keywords: ["UcmConnectorTypeCAttach function"]
 ms.keywords: UcmConnectorTypeCAttach, UcmConnectorTypeCAttach method [Buses], buses.ucmconnectortypecattach, ucmmanager/UcmConnectorTypeCAttach
@@ -51,14 +50,14 @@ Notifies the USB connector manager framework extension (UcmCx) when a partner co
 
 ## -parameters
 
-### -param Connector 
+### -param Connector [in]
 
-[in]
+
 Handle to the connector object that the client driver received in the previous call to <a href="/windows-hardware/drivers/ddi/ucmmanager/nf-ucmmanager-ucmconnectorcreate">UcmConnectorCreate</a>.
 
-### -param Params 
+### -param Params [in]
 
-[in]
+
 A pointer to a driver-allocated <a href="/windows-hardware/drivers/ddi/ucmmanager/ns-ucmmanager-_ucm_connector_typec_attach_params">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS</a> that has been initialized by  calling <a href="/windows-hardware/drivers/ddi/ucmmanager/nf-ucmmanager-ucm_connector_typec_attach_params_init">UCM_CONNECTOR_TYPEC_ATTACH_PARAMS_INIT</a>.
 
 ## -returns

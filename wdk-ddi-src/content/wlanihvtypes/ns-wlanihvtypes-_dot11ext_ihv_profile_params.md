@@ -1,10 +1,9 @@
 ---
 UID: NS:wlanihvtypes._DOT11EXT_IHV_PROFILE_PARAMS
 title: _DOT11EXT_IHV_PROFILE_PARAMS (wlanihvtypes.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_IHV_PROFILE_PARAMS structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11ext_ihv_profile_params.htm
 tech.root: netvista
-ms.assetid: 9bf4b27c-3cf0-45a0-9e56-b01ad1ba6b19
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_IHV_PROFILE_PARAMS structure"]
 ms.keywords: "*PDOT11EXT_IHV_PROFILE_PARAMS, DOT11EXT_IHV_PROFILE_PARAMS, DOT11EXT_IHV_PROFILE_PARAMS structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_3fe01c80-477b-4851-8b7e-4d4540cc22b6.xml, PDOT11EXT_IHV_PROFILE_PARAMS, PDOT11EXT_IHV_PROFILE_PARAMS structure pointer [Network Drivers Starting with Windows Vista], _DOT11EXT_IHV_PROFILE_PARAMS, netvista.dot11ext_ihv_profile_params, wlanihvtypes/DOT11EXT_IHV_PROFILE_PARAMS, wlanihvtypes/PDOT11EXT_IHV_PROFILE_PARAMS"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DOT11EXT_IHV_PROFILE_PARAMS, *PDOT11EXT_IHV_PROFILE_PARAMS
-req.product: Windows 10 or later.
 f1_keywords:
  - _DOT11EXT_IHV_PROFILE_PARAMS
  - wlanihvtypes/_DOT11EXT_IHV_PROFILE_PARAMS
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wlanihvtypes.h
 api_name:
+ - _DOT11EXT_IHV_PROFILE_PARAMS
+ - PDOT11EXT_IHV_PROFILE_PARAMS
  - DOT11EXT_IHV_PROFILE_PARAMS
 ---
 
@@ -143,3 +143,4 @@ Although the IHV handler function cannot access the entire network profile, the 
 
 <a href="/previous-versions/windows/hardware/wireless/ff553752(v=vs.85)">
    IDot11ExtUIProperty::Dot11ExtUIPropertyGetDisplayInfo</a>
+

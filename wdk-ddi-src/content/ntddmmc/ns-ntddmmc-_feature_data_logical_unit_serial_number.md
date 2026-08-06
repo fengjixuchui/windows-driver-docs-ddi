@@ -4,7 +4,6 @@ title: _FEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER (ntddmmc.h)
 description: The FEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER structure holds information about the Device Serial Number feature.
 old-location: storage\feature_data_logical_unit_serial_number.htm
 tech.root: storage
-ms.assetid: 74917f45-5a76-4112-ade2-992249500dc3
 ms.date: 03/29/2018
 keywords: ["FEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER structure"]
 ms.keywords: "*PFEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER, FEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER, FEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER structure [Storage Devices], PFEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER, PFEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER structure pointer [Storage Devices], _FEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER, ntddmmc/FEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER, ntddmmc/PFEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER, storage.feature_data_logical_unit_serial_number, structs-CD-ROM_c7f48548-00ff-49a8-93ac-2cab0e838e14.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddmmc.h
 api_name:
+ - _FEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER
+ - PFEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER
  - FEATURE_DATA_LOGICAL_UNIT_SERIAL_NUMBER
 ---
 
@@ -73,3 +74,4 @@ This structure holds data for the feature named "Device Serial Number" by the <i
 
 
 <a href="/windows-hardware/drivers/ddi/ntddmmc/ne-ntddmmc-_feature_number">FEATURE_NUMBER</a>
+

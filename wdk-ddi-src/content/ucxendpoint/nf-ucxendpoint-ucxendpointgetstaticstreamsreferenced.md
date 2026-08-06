@@ -4,7 +4,6 @@ title: UcxEndpointGetStaticStreamsReferenced function (ucxendpoint.h)
 description: Returns a referenced static streams object for the specified endpoint.
 old-location: buses\_ucxendpointgetstaticstreamsreferenced.htm
 tech.root: usbref
-ms.assetid: A9AB43A9-1409-4AA4-99DE-66D558F2303C
 ms.date: 05/07/2018
 keywords: ["UcxEndpointGetStaticStreamsReferenced function"]
 ms.keywords: UcxEndpointGetStaticStreamsReferenced, UcxEndpointGetStaticStreamsReferenced method [Buses], buses._ucxendpointgetstaticstreamsreferenced, ucxendpoint/UcxEndpointGetStaticStreamsReferenced
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ Returns a referenced static streams object for the specified endpoint.
 
 ## -parameters
 
-### -param Endpoint 
+### -param Endpoint [in]
 
-[in]
+
 A handle to the endpoint object for which the static streams object is requested. The client driver retrieved the handle in a previous call to <a href="/windows-hardware/drivers/ddi/ucxendpoint/nf-ucxendpoint-ucxendpointcreate">UcxEndpointCreate</a>.
 
-### -param Tag 
+### -param Tag [in]
 
-[in]
+
 A driver-defined value that the framework stores as an identification tag for the object reference.
 
 ## -returns

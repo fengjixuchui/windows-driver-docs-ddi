@@ -4,7 +4,6 @@ title: PFN_REPORT_SESSION_STATUS (netdispumdddi.h)
 description: Called by the user-mode display driver to report the status of the current Miracast connected session.The data type of this function is PFN_REPORT_SESSION_STATUS.
 old-location: display\reportsessionstatus.htm
 tech.root: display
-ms.assetid: a3e44e55-5c6a-4a79-8caa-3a3b9db6b456
 ms.date: 05/10/2018
 keywords: ["PFN_REPORT_SESSION_STATUS callback function"]
 ms.keywords: PFN_REPORT_SESSION_STATUS, PFN_REPORT_SESSION_STATUS callback, ReportSessionStatus, ReportSessionStatus callback function [Display Devices], display.reportsessionstatus, netdispumdddi/ReportSessionStatus
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Netdispumdddi.h
 api_name:
- - ReportSessionStatus
+ - PFN_REPORT_SESSION_STATUS
 ---
 
 # PFN_REPORT_SESSION_STATUS callback function
@@ -50,19 +49,19 @@ Called by the user-mode display driver to report the status of the current Mirac
 
 ## -parameters
 
-### -param hMiracastDeviceHandle 
+### -param hMiracastDeviceHandle [in]
 
-[in]
+
 A handle that represents a Miracast device. The Miracast user-mode driver previously obtained this handle as the <i>hMiracastDeviceHandle</i> parameter in a call to the <a href="/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_create_miracast_context">CreateMiracastContext</a> function.
 
-### -param MiracastStatus 
+### -param MiracastStatus [in]
 
-[in]
+
 The current status of the Miracast link, of type <a href="/windows-hardware/drivers/ddi/netdispumdddi/ne-netdispumdddi-miracast_status">MIRACAST_STATUS</a>.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 A status value the driver can provide that's logged for diagnostics purposes.
 
 ## -remarks
@@ -76,3 +75,4 @@ If the Miracast user-mode driver reports an error in the <i>MiracastStatus</i> p
 
 
 <a href="/windows-hardware/drivers/ddi/netdispumdddi/ne-netdispumdddi-miracast_status">MIRACAST_STATUS</a>
+

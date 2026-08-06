@@ -4,7 +4,6 @@ title: PPARALLEL_TRY_SELECT_ROUTINE (parallel.h)
 description: The PPARALLEL_TRY_SELECT_ROUTINE-typed callback routine selects an IEEE 1284.3 daisy chain device or an IEEE 1284 end-of-chain device that is attached to a parallel port. The system-supplied function driver for parallel ports supplies this routine.
 old-location: parports\pparallel_try_select_routine.htm
 tech.root: parports
-ms.assetid: e7ecc2ac-fb86-40fe-829b-ee5851c6ae5f
 ms.date: 02/15/2018
 keywords: ["PPARALLEL_TRY_SELECT_ROUTINE callback"]
 ms.keywords: "(*PPARALLEL_TRY_SELECT_ROUTINE), (*PPARALLEL_TRY_SELECT_ROUTINE) callback function [Parallel Ports], cisspd_ec7d6b68-7fbd-493e-9787-3e2f78327bdd.xml, parallel/(*PPARALLEL_TRY_SELECT_ROUTINE), parports.pparallel_try_select_routine"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - parallel.h
 api_name:
- - (*PPARALLEL_TRY_SELECT_ROUTINE)
+ - PPARALLEL_TRY_SELECT_ROUTINE
 ---
 
 # PPARALLEL_TRY_SELECT_ROUTINE callback
@@ -50,14 +49,14 @@ The <i>PPARALLEL_TRY_SELECT_ROUTINE</i>-typed callback routine selects an IEEE 1
 
 ## -parameters
 
-### -param TrySelectContext 
+### -param TrySelectContext [in]
 
-[in]
+
 Pointer to the device extension of a parallel port's functional device object (<a href="/windows-hardware/drivers/">FDO</a>).
 
-### -param TrySelectCommand 
+### -param TrySelectCommand [in]
 
-[in]
+
 Pointer to a <a href="..\parallel\ns-parallel-_parallel_1284_command.md">PARALLEL_1284_COMMAND</a> structure. The caller specifies the following members:
 
 
@@ -197,3 +196,4 @@ For more information, see <a href="/previous-versions/ff544793(v=vs.85)">Selecti
 
 
 <a href="..\parallel\nc-parallel-pparallel_deselect_routine.md">PPARALLEL_DESELECT_ROUTINE</a>
+

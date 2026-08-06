@@ -4,7 +4,6 @@ title: RtlRunOnceExecuteOnce function (ntddk.h)
 description: The RtlRunOnceExecuteOnce performs a one-time initialization.
 old-location: kernel\rtlrunonceexecuteonce.htm
 tech.root: kernel
-ms.assetid: 2769eb2c-33e2-4e3f-a1bf-1ebc9213b224
 ms.date: 04/30/2018
 keywords: ["RtlRunOnceExecuteOnce function"]
 ms.keywords: RtlRunOnceExecuteOnce, RtlRunOnceExecuteOnce function [Kernel-Mode Driver Architecture], k109_c1729bff-038f-4714-b422-1b97dd5a9c19.xml, kernel.rtlrunonceexecuteonce, ntddk/RtlRunOnceExecuteOnce
@@ -50,24 +49,24 @@ The <b>RtlRunOnceExecuteOnce</b> performs a one-time initialization.
 
 ## -parameters
 
-### -param RunOnce 
+### -param RunOnce [in, out]
 
-[in, out]
+
 A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">RTL_RUN_ONCE</a> one-time initialization structure.
 
-### -param InitFn 
+### -param InitFn [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ntddk/nc-ntddk-rtl_run_once_init_fn">RunOnceInitialization</a> routine.
 
-### -param Parameter 
+### -param Parameter [in, out]
 
-[in, out]
+
 The value to pass as the <i>Parameter</i> parameter to the <i>RunOnceInitialization</i> routine.
 
-### -param Context 
+### -param Context [out]
 
-[out]
+
 A pointer to a PVOID variable that receives the initialized data.
 
 ## -returns

@@ -4,7 +4,6 @@ title: _NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN (ntddndis.h)
 description: The NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN structure is used to specify the routing domain properties of a VM network adapter.
 old-location: netvista\ndis_switch_port_property_routing_domain.htm
 tech.root: netvista
-ms.assetid: 6E1DF4F3-9ED4-4E34-A768-1B5008D61B0C
 ms.date: 05/02/2018
 keywords: ["NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN structure"]
 ms.keywords: "*PNDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN, NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN, NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN, PNDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN, netvista.ndis_switch_port_property_routing_domain, ntddndis/NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN, ntddndis/PNDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN
+ - PNDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN
  - NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN</b> structure is used to specify
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN</b>  structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN</b>  structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The <b>Type</b> member of <b>Header</b> must be set to <b>NDIS_OBJECT_TYPE_DEFAULT</b>. To specify the version of the <b>NDIS_SWITCH_PORT_PROPERTY_ROUTING_DOMAIN</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
 
@@ -90,7 +91,7 @@ A <b>ULONG</b> value that specifies the number of <a href="/windows-hardware/dri
 
 #### FirstIsolationEntryOffset
 
-The offset, in bytes, from the beginning of the buffer pointed to by the <b>InformationBuffer</b> member of the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure to the first isolation entry.
+The offset, in bytes, from the beginning of the buffer pointed to by the <b>InformationBuffer</b> member of the <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure to the first isolation entry.
 
 ### -field FirstIsolationEntryOffset
 
@@ -100,11 +101,11 @@ The offset, in bytes, from the beginning of the buffer pointed to by the <b>Info
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 
@@ -117,3 +118,4 @@ The offset, in bytes, from the beginning of the buffer pointed to by the <b>Info
 
 
 <a href="/windows-hardware/drivers/network/ndis-switch-property-parameters-get-property">NDIS_SWITCH_PROPERTY_PARAMETERS_GET_PROPERTY</a>
+

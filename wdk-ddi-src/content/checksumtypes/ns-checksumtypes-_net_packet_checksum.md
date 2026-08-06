@@ -3,7 +3,6 @@ UID: NS:checksumtypes._NET_PACKET_CHECKSUM
 title: _NET_PACKET_CHECKSUM (checksumtypes.h)
 description: A NET_PACKET_CHECKSUM structure describes checksum information for a NET_PACKET.
 tech.root: netvista
-ms.assetid: 75363870-C58D-4677-A523-9728CB4A1BAC
 ms.date: 09/25/2019
 keywords: ["NET_PACKET_CHECKSUM structure"]
 ms.keywords: _NET_PACKET_CHECKSUM, NET_PACKET_CHECKSUM, *PNET_PACKET_CHECKSUM
@@ -13,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.29
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -28,13 +27,14 @@ f1_keywords:
  - checksumtypes/_NET_PACKET_CHECKSUM
  - NET_PACKET_CHECKSUM
  - checksumtypes/NET_PACKET_CHECKSUM
-topictype:
+topic_type:
  - APIRef
-apitype:
+api_type:
  - HeaderDef
-apilocation:
+api_location:
  - checksumtypes.h
-apiname:
+api_name:
+ - _NET_PACKET_CHECKSUM
  - NET_PACKET_CHECKSUM
 ---
 
@@ -74,3 +74,4 @@ For a receive queue, the client specifies flag values from the [**NET_PACKET_RX_
 ## -see-also
 
 [Packet descriptors and extensions](/windows-hardware/drivers/netcx/packet-descriptors-and-extensions)
+

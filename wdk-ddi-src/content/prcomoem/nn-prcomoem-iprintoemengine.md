@@ -1,15 +1,13 @@
 ---
 UID: NN:prcomoem.IPrintOemEngine
 title: IPrintOemEngine (prcomoem.h)
-description: 
-old-location: print\iprintoemengine.htm
+description: Defines the IPrintOemEngine interface.
 tech.root: print
-ms.assetid: DE86FA8C-2E27-4B39-B52D-6227AF56F399
-ms.date: 04/20/2018
+ms.date: 06/11/2021
 keywords: ["IPrintOemEngine interface"]
 ms.keywords: IPrintOemEngine, IPrintOemEngine interface [Print Devices], IPrintOemEngine interface [Print Devices],described, prcomoem/IPrintOemEngine, print.iprintoemengine
 req.header: prcomoem.h
-req.include-header: 
+req.include-header: Prcomoem.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -39,21 +37,14 @@ api_location:
  - Prcomoem.h
 api_name:
  - IPrintOemEngine
- - IPrintOemEngine.EnableDriver
- - IPrintOemEngine.DisableDriver
- - IPrintOemEngine.EnablePDEV
- - IPrintOemEngine.DisablePDEV
- - IPrintOemEngine.ResetPDEV
 ---
 
 # IPrintOemEngine interface
 
-
 ## -description
+
+Defines the **IPrintOemEngine** interface.
 
 ## -inheritance
 
-The <b xmlns:loc="https://microsoft.com/wdcml/l10n">IPrintOemEngine</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPrintOemEngine</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The **IPrintOemEngine** interface inherits from the [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface.

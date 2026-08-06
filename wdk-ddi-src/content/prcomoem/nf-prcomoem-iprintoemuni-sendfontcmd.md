@@ -4,7 +4,6 @@ title: IPrintOemUni::SendFontCmd (prcomoem.h)
 description: The IPrintOemUni::SendFontCmd method enables a rendering plug-in to modify a printer's font selection command and then send it to the printer.
 old-location: print\iprintoemuni_sendfontcmd.htm
 tech.root: print
-ms.assetid: b90a94d1-c6f3-483c-b5fc-edfee27094ab
 ms.date: 04/20/2018
 keywords: ["IPrintOemUni::SendFontCmd"]
 ms.keywords: IPrintOemUni interface [Print Devices],SendFontCmd method, IPrintOemUni.SendFontCmd, IPrintOemUni::SendFontCmd, SendFontCmd, SendFontCmd method [Print Devices], SendFontCmd method [Print Devices],IPrintOemUni interface, prcomoem/IPrintOemUni::SendFontCmd, print.iprintoemuni_sendfontcmd, print_unidrv-pscript_rendering_18926c40-665b-4ea9-9343-7939619d093a.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemUni.SendFontCmd
+ - IPrintOemUni::SendFontCmd
 ---
 
 # IPrintOemUni::SendFontCmd
@@ -105,3 +104,4 @@ For additional information see [Customized Font Management](/windows-hardware/dr
 [UNIFONTOBJ](../printoem/ns-printoem-_unifontobj.md)
 
 [UNIFONTOBJ_GetInfo](../printoem/nc-printoem-pfngetinfo.md)
+

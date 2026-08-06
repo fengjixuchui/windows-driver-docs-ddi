@@ -4,7 +4,6 @@ title: IPnpCallbackSelfManagedIo (wudfddi.h)
 description: The IPnpCallbackSelfManagedIo interface is a Plug and Play (PnP) and power management (PM) interface.
 old-location: wdf\ipnpcallbackselfmanagedio.htm
 tech.root: wdf
-ms.assetid: 34971df0-4abc-41a1-8d2f-6e36df1daf20
 ms.date: 02/26/2018
 keywords: ["IPnpCallbackSelfManagedIo interface"]
 ms.keywords: IPnpCallbackSelfManagedIo, IPnpCallbackSelfManagedIo interface, IPnpCallbackSelfManagedIo interface,described, UMDFDeviceObjectRef_0f139c45-68eb-4429-ac90-675d7eddea5a.xml, umdf.ipnpcallbackselfmanagedio, wdf.ipnpcallbackselfmanagedio, wudfddi/IPnpCallbackSelfManagedIo
@@ -52,9 +51,9 @@ The <b>IPnpCallbackSelfManagedIo</b> interface is a Plug and Play (PnP) and powe
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IPnpCallbackSelfManagedIo</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPnpCallbackSelfManagedIo</b> also has these types of members:
+The <b>IPnpCallbackSelfManagedIo</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPnpCallbackSelfManagedIo</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>
 
 ## -remarks

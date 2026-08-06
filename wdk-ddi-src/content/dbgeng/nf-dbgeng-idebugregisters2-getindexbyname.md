@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugRegisters2.GetIndexByName
 title: IDebugRegisters2::GetIndexByName (dbgeng.h)
-description: The GetIndexByName method returns the index of the named register.
+description: The GetIndexByName method returns the index of the named register. This method belongs to the IDebugRegisters2 interface.
 old-location: debugger\getindexbyname.htm
 tech.root: debugger
-ms.assetid: a012b235-ed50-4009-a7ee-01783f9e3597
 ms.date: 05/03/2018
 keywords: ["IDebugRegisters2::GetIndexByName"]
 ms.keywords: GetIndexByName, GetIndexByName method [Windows Debugging], GetIndexByName method [Windows Debugging],IDebugRegisters interface, GetIndexByName method [Windows Debugging],IDebugRegisters2 interface, IDebugRegisters interface [Windows Debugging],GetIndexByName method, IDebugRegisters2 interface [Windows Debugging],GetIndexByName method, IDebugRegisters2.GetIndexByName, IDebugRegisters2::GetIndexByName, IDebugRegisters::GetIndexByName, IDebugRegisters_5b85eaa4-3c90-47e0-9f7f-7f493617fa37.xml, dbgeng/IDebugRegisters2::GetIndexByName, dbgeng/IDebugRegisters::GetIndexByName, debugger.getindexbyname
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugRegisters.GetIndexByName
- - IDebugRegisters2.GetIndexByName
+ - IDebugRegisters2::GetIndexByName
 ---
 
 # IDebugRegisters2::GetIndexByName
@@ -51,14 +49,14 @@ The <b>GetIndexByName</b> method returns the index of the named register.
 
 ## -parameters
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 Specifies the name of the register whose index is requested.
 
-### -param Index 
+### -param Index [out]
 
-[out]
+
 Receives the index of the register.
 
 ## -returns
@@ -97,3 +95,4 @@ The register was not found.
 ## -remarks
 
 For an overview of the <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugregisters">IDebugRegisters</a> interface and other register-related methods, see <a href="/windows-hardware/drivers/debugger/registers">Registers</a>.
+

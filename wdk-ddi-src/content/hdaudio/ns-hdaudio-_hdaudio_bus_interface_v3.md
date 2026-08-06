@@ -1,13 +1,10 @@
 ---
 UID: NS:hdaudio._HDAUDIO_BUS_INTERFACE_V3
 title: _HDAUDIO_BUS_INTERFACE_V3
-description: 
+description: "Learn more about: _HDAUDIO_BUS_INTERFACE_V3 structure"
 tech.root: audio
-ms.assetid: a7bcda7e-4e39-4250-9154-6af32cdc1ecf
 ms.date: 12/19/2018
 keywords: ["HDAUDIO_BUS_INTERFACE_V3 structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _HDAUDIO_BUS_INTERFACE_V3, HDAUDIO_BUS_INTERFACE_V3, *PHDAUDIO_BUS_INTERFACE_V3,
 req.header: hdaudio.h
 req.include-header: hdaudio.h
@@ -39,8 +36,8 @@ api_location:
  - hdaudio.h
 api_name:
  - _HDAUDIO_BUS_INTERFACE_V3
-product:
- - Windows
+ - PHDAUDIO_BUS_INTERFACE_V3
+ - HDAUDIO_BUS_INTERFACE_V3
 ---
 
 # _HDAUDIO_BUS_INTERFACE_V3 structure
@@ -161,3 +158,4 @@ The names and definitions of the first five members of the HDAUDIO_BUS_INTERFACE
 [IRP_MN_QUERY_INTERFACE IOCTL](/windows-hardware/drivers/kernel/irp-mn-query-interface)
 
 [hdaudio.h](../hdaudio/index.md)
+

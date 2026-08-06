@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostConstant.EnumerateChildren
 title: IDebugHostConstant::EnumerateChildren (dbgmodel.h)
-description: The EnumerateChildren method returns an enumerator which will enumerate all children of a given symbol.
-ms.assetid: a70649c0-d246-4132-b526-b71bda410dbf
+description: "The IDebugHostConstant::EnumerateChildren method gets an enumerator capable of enumerating all children of a given symbol."
 ms.date: 09/20/2018
 keywords: ["IDebugHostConstant::EnumerateChildren"]
 ms.keywords: IDebugHostConstant::EnumerateChildren, EnumerateChildren, IDebugHostConstant.EnumerateChildren, IDebugHostConstant::EnumerateChildren, IDebugHostConstant.EnumerateChildren
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostConstant.EnumerateChildren
+ - IDebugHostConstant::EnumerateChildren
 ---
 
 # IDebugHostConstant::EnumerateChildren
@@ -71,7 +70,7 @@ This method returns HRESULT that indicates success or failure.
 ```cpp
 ComPtr<IDebugHostType> spType; /* get the type of an object */
 
-// Enumerate every field of this type.  Note thiat this *WILL NOT* enumerate 
+// Enumerate every field of this type.  Note that this *WILL NOT* enumerate 
 // fields of base classes!
 ComPtr<IDebugHostSymbolEnumerator> spEnum;
 if (SUCCEEDED(spType->EnumerateChildren(SymbolField, nullptr, &spEnum)))

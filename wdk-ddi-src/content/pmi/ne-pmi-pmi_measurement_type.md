@@ -1,10 +1,9 @@
 ---
-UID: NE:pmi.__unnamed_enum_1
+UID: NE:pmi.PMI_MEASUREMENT_TYPE
 title: PMI_MEASUREMENT_TYPE (pmi.h)
 description: The PMI_MEASUREMENT_TYPE enumeration defines the source of the PMI measurement data.
 old-location: powermeter\pmi_measurement_type.htm
 tech.root: powermeter
-ms.assetid: 7a075d95-3bc6-4869-bcd6-1bce6df43384
 ms.date: 05/08/2018
 keywords: ["PMI_MEASUREMENT_TYPE enumeration"]
 ms.keywords: PMI_MEASUREMENT_TYPE, PMI_MEASUREMENT_TYPE enumeration [Power Metering and Budgeting Devices], PmiMeasurementTypeInput, PmiMeasurementTypeMax, PmiMeasurementTypeOutput, PowerMeterRef_2156ee1f-16d6-4021-865e-ce6482a53f66.xml, pmi/PMI_MEASUREMENT_TYPE, pmi/PmiMeasurementTypeInput, pmi/PmiMeasurementTypeMax, pmi/PmiMeasurementTypeOutput, powermeter.pmi_measurement_type
@@ -79,3 +78,4 @@ PMI measurement data is returned through a query request of <a href="/windows-ha
 
 
 <a href="/windows-hardware/drivers/ddi/pmi/ns-pmi-_pmi_reported_capabilities">PMI_REPORTED_CAPABILITIES</a>
+

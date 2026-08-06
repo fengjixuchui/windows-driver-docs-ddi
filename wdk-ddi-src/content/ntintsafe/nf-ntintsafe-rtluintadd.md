@@ -4,7 +4,6 @@ title: RtlUIntAdd function (ntintsafe.h)
 description: Adds two values of type UINT.
 old-location: kernel\rtluintadd.htm
 tech.root: kernel
-ms.assetid: ABF392BD-7B05-417E-AFD8-4EE7E64F9FC2
 ms.date: 04/30/2018
 keywords: ["RtlUIntAdd function"]
 ms.keywords: RtlUIntAdd, RtlUIntAdd function [Kernel-Mode Driver Architecture], kernel.rtluintadd, ntintsafe/RtlUIntAdd
@@ -50,19 +49,19 @@ Adds two values of type <b>UINT</b>.
 
 ## -parameters
 
-### -param uAugend 
+### -param uAugend [in]
 
-[in]
+
 The first value in the equation.
 
-### -param uAddend 
+### -param uAddend [in]
 
-[in]
+
 The value to add to <i>uAugend</i>.
 
-### -param puResult 
+### -param puResult [out]
 
-[out]
+
 A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

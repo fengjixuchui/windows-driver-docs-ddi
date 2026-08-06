@@ -4,7 +4,6 @@ title: _ISCSI_ConnectionStaticInfo (iscsimgt.h)
 description: The ISCSI_ConnectionStaticInfo structure contains information about the characteristics of an established connection.
 old-location: storage\iscsi_connectionstaticinfo.htm
 tech.root: storage
-ms.assetid: 14d4464e-d4e8-446c-8822-0b16c984313c
 ms.date: 03/29/2018
 keywords: ["ISCSI_ConnectionStaticInfo structure"]
 ms.keywords: "*PISCSI_ConnectionStaticInfo, ISCSI_ConnectionStaticInfo, ISCSI_ConnectionStaticInfo structure [Storage Devices], PISCSI_ConnectionStaticInfo, PISCSI_ConnectionStaticInfo structure pointer [Storage Devices], _ISCSI_ConnectionStaticInfo, iscsimgt/ISCSI_ConnectionStaticInfo, iscsimgt/PISCSI_ConnectionStaticInfo, storage.iscsi_connectionstaticinfo, structs-iSCSI_ef0dc102-31e4-466e-b094-d4a6b6a01ce6.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsimgt.h
 api_name:
+ - _ISCSI_ConnectionStaticInfo
+ - PISCSI_ConnectionStaticInfo
  - ISCSI_ConnectionStaticInfo
 ---
 
@@ -228,3 +229,4 @@ The maximum size, in bytes, of the datagram that the transport supports.
 
 
 <a href="/windows-hardware/drivers/storage/logintotarget">LoginToTarget</a>
+

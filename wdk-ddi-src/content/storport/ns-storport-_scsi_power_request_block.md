@@ -1,10 +1,9 @@
 ---
 UID: NS:storport._SCSI_POWER_REQUEST_BLOCK
 title: _SCSI_POWER_REQUEST_BLOCK (storport.h)
-description: The SCSI_POWER_REQUEST_BLOCK structure is a special version of a SCSI_REQUEST_BLOCK that is used for power management requests.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
+description: The _SCSI_POWER_REQUEST_BLOCK structure (storport.h) contains information for SCSI power management requests.
 old-location: storage\scsi_power_request_block.htm
 tech.root: storage
-ms.assetid: 04981b68-db32-461b-b24b-8b2bf2e53f78
 ms.date: 03/29/2018
 keywords: ["SCSI_POWER_REQUEST_BLOCK structure"]
 ms.keywords: "*PSCSI_POWER_REQUEST_BLOCK, PSCSI_POWER_REQUEST_BLOCK, PSCSI_POWER_REQUEST_BLOCK structure pointer [Storage Devices], SCSI_POWER_REQUEST_BLOCK, SCSI_POWER_REQUEST_BLOCK structure [Storage Devices], _SCSI_POWER_REQUEST_BLOCK, storage.scsi_power_request_block, storport/PSCSI_POWER_REQUEST_BLOCK, storport/SCSI_POWER_REQUEST_BLOCK, structs-storport_de071b99-aa78-4c21-845e-f47b7d0297c0.xml"
@@ -42,10 +41,13 @@ api_type:
 api_location:
  - storport.h
 api_name:
+ - _SCSI_POWER_REQUEST_BLOCK
+ - PSCSI_POWER_REQUEST_BLOCK
  - SCSI_POWER_REQUEST_BLOCK
 ---
 
 # _SCSI_POWER_REQUEST_BLOCK structure (storport.h)
+
 
 ## -description
 
@@ -139,7 +141,7 @@ Reserved for system use.
 
 The Storport driver calls [**HwStorBuildIo**](nc-storport-hw_buildio.md) to pass SRBs to the miniport driver. **HwStorBuildIo** should check the **Function** member of the SRB to determine the type of the SRB. If the **Function** member is set to SRB_FUNCTION_POWER, the SRB is a structure of type **SCSI_POWER_REQUEST_BLOCK**.
 
-The Storport driver sends **SCSI_POWER_REQUEST_BLOCK** requests to a miniport driver to notify the miniport driver of Windows power events that affect storage devices that are connected to the adapter. In the case of a power up event, this request gives the miniport driver an opportunity to initialize itself. In the case of a hibernation or shutdown event, this request gives the miniport driver an opportunity to complete I/O requests and prepare for a power down. The miniport driver can use the value in the **PowerAction** member of the **SCSI_POWER_REQUEST_BLOCK** to determine what actions are required. After the miniport driver completes the **SCSI_POWER_REQUEST_BLOCK** request, the Storport driver calls [**HwScsiAdapterControl**](/previous-versions/windows/hardware/drivers/ff557274(v=vs.85)) with a control request of **ScsiStopAdapter** to power down the adapter. The miniport driver reinitialize while processing the SRB_FUNCTION_POWER request, or it can wait and reinitialize when the Storport driver calls [**HwStorAdapterControl**](nc-storport-hw_adapter_control.md) to perform a an **ScsiRestartAdapter** control request.
+The Storport driver sends **SCSI_POWER_REQUEST_BLOCK** requests to a miniport driver to notify the miniport driver of Windows power events that affect storage devices that are connected to the adapter. In the case of a power up event, this request gives the miniport driver an opportunity to initialize itself. In the case of a hibernation or shutdown event, this request gives the miniport driver an opportunity to complete I/O requests and prepare for a power down. The miniport driver can use the value in the **PowerAction** member of the **SCSI_POWER_REQUEST_BLOCK** to determine what actions are required. After the miniport driver completes the **SCSI_POWER_REQUEST_BLOCK** request, the Storport driver calls [**HwScsiAdapterControl**](/previous-versions/windows/hardware/drivers/ff557274(v=vs.85)) with a control request of **ScsiStopAdapter** to power down the adapter. The miniport driver reinitialize while processing the SRB_FUNCTION_POWER request, or it can wait and reinitialize when the Storport driver calls [**HwStorAdapterControl**](nc-storport-hw_adapter_control.md) to perform a **ScsiRestartAdapter** control request.
 
  When transitioning from the D0 power state to a lower-powered state (D1, D2, or D3) the Storport driver sends a **SCSI_POWER_REQUEST_BLOCK** request to the miniport driver before the underlying bus driver powers down the adapter.
 
@@ -157,3 +159,4 @@ The following conditions must exist before the Storport driver will send a **SCS
 [**SCSI_REQUEST_BLOCK**](../srb/ns-srb-_scsi_request_block.md)
 
 [**StorPortNotification**](nf-storport-storportnotification.md)
+

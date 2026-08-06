@@ -4,7 +4,6 @@ title: RtlInt8ToULongPtr function (ntintsafe.h)
 description: Converts a value of type INT8 to a value of type ULONG_PTR.
 old-location: kernel\rtlint8toulongptr.htm
 tech.root: kernel
-ms.assetid: C406C404-1A6D-4D83-9D71-BC2980C1A84D
 ms.date: 04/30/2018
 keywords: ["RtlInt8ToULongPtr function"]
 ms.keywords: RtlInt8ToULongPtr, RtlInt8ToULongPtr function [Kernel-Mode Driver Architecture], kernel.rtlint8toulongptr, ntintsafe/RtlInt8ToULongPtr
@@ -50,14 +49,14 @@ Converts a value of type <b>INT8</b> to a value of type <b>ULONG_PTR</b>.
 
 ## -parameters
 
-### -param i8Operand 
+### -param i8Operand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pulResult 
+### -param pulResult [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

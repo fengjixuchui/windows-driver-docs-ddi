@@ -4,7 +4,6 @@ title: EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY (ufxclient.h)
 description: The client driver's implementation to set charger information that it uses to enable charging over USB.
 old-location: buses\evt_ufx_device_proprietary_charger_set_property.htm
 tech.root: usbref
-ms.assetid: 7ED9D607-2F7A-4835-9D1E-FC33EF594974
 ms.date: 05/07/2018
 keywords: ["EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY callback function"]
 ms.keywords: EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY, EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY callback, EvtUfxDeviceProprietaryChargerSetProperty, EvtUfxDeviceProprietaryChargerSetProperty callback function [Buses], PFN_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY, PFN_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY callback function pointer [Buses], buses.evt_ufx_device_proprietary_charger_set_property, ufxclient/EvtUfxDeviceProprietaryChargerSetProperty
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ufxclient.h
 api_name:
- - PFN_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY
+ - EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY
 ---
 
 # EVT_UFX_DEVICE_PROPRIETARY_CHARGER_SET_PROPERTY callback function
@@ -50,12 +49,12 @@ The client driver's implementation to set charger information that it uses to en
 
 ## -parameters
 
-#### - UfxDevice [in]
+### -param unnamedParam1 [in]
 
 The handle to a  USB device object that the client driver received in a previous call to  the <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
 
 
-#### - WdfRequest [in]
+### -param unnamedParam2 [in]
 
 The handle framework request object that for an <a href="/windows-hardware/drivers/ddi/charging/ni-charging-ioctl_internal_configure_charger_property">IOCTL_INTERNAL_CONFIGURE_CHARGER_PROPERTY</a> request from the battery minidriver.
 
@@ -72,3 +71,4 @@ The handle framework request object that for an <a href="/windows-hardware/drive
 
 
 <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdeviceproprietarychargerdetectcomplete">UfxDeviceProprietaryChargerDetectComplete</a>
+

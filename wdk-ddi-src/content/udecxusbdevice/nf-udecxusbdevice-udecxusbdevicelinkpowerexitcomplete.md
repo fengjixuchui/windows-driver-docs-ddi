@@ -4,7 +4,6 @@ title: UdecxUsbDeviceLinkPowerExitComplete function (udecxusbdevice.h)
 description: Completes an asynchronous request for sending the device to a low power state.
 old-location: buses\udecxusbdevicelinkpowerexitcomplete.htm
 tech.root: usbref
-ms.assetid: EB41B75C-57E0-4E09-8A7A-2D6BB377ACE7
 ms.date: 05/07/2018
 keywords: ["UdecxUsbDeviceLinkPowerExitComplete function"]
 ms.keywords: UdecxUsbDeviceLinkPowerExitComplete, UdecxUsbDeviceLinkPowerExitComplete function [Buses], buses.udecxusbdevicelinkpowerexitcomplete, udecxusbdevice/UdecxUsbDeviceLinkPowerExitComplete
@@ -51,14 +50,14 @@ Completes an asynchronous request for sending the device to a low power state.
 
 ## -parameters
 
-### -param UdecxUsbDevice 
+### -param UdecxUsbDevice [in]
 
-[in]
+
 A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdevicecreate">UdecxUsbDeviceCreate</a>.
 
-### -param CompletionStatus 
+### -param CompletionStatus [in]
 
-[in]
+
 An appropriate <a href="/windows-hardware/drivers/kernel/ntstatus-values">NTSTATUS</a> error code that indicates the success or failure of the asynchronous operation.
 
 ## -remarks

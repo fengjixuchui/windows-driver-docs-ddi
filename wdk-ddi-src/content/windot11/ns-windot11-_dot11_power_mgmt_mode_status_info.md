@@ -4,7 +4,6 @@ title: _DOT11_POWER_MGMT_MODE_STATUS_INFO (windot11.h)
 description: The DOT11_POWER_MGMT_MODE_STATUS_INFO structure describes the power mode of the hardware.
 old-location: netvista\dot11_power_mgmt_mode_status_info.htm
 tech.root: netvista
-ms.assetid: A373EA34-A7CF-47B3-8194-438BE7F4FC9C
 ms.date: 02/16/2018
 keywords: ["DOT11_POWER_MGMT_MODE_STATUS_INFO structure"]
 ms.keywords: "*PDOT11_POWER_MGMT_MODE_STATUSINFO, DOT11_POWER_MGMT_MODE_STATUS_INFO, DOT11_POWER_MGMT_MODE_STATUS_INFO structure [Network Drivers Starting with Windows Vista], PDOT11_POWER_MGMT_MODE_STATUS_INFO, PDOT11_POWER_MGMT_MODE_STATUS_INFO structure pointer [Network Drivers Starting with Windows Vista], _DOT11_POWER_MGMT_MODE_STATUS_INFO, netvista.dot11_power_mgmt_mode_status_info, windot11/DOT11_POWER_MGMT_MODE_STATUS_INFO, windot11/PDOT11_POWER_MGMT_MODE_STATUS_INFO"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - Windot11.h
 api_name:
+ - _DOT11_POWER_MGMT_MODE_STATUS_INFO
+ - PDOT11_POWER_MGMT_MODE_STATUSINFO
  - DOT11_POWER_MGMT_MODE_STATUS_INFO
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_POWER_MGMT_MODE_STATUS_INFO structure
@@ -52,7 +51,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_POWER_MGMT_MODE_STATUS_INFO structure describes the power mode of the hardware.
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_POWER_MGMT_MODE_STATUS_INFO structure describes the power mode of the hardware.
 
 ## -struct-fields
 
@@ -128,3 +130,4 @@ typedef struct _DOT11_POWER_MGMT_MODE_STATUS_INFO {
 ## -remarks
 
 At each transition of the mode change, a device should remember the reason it made the last change.
+

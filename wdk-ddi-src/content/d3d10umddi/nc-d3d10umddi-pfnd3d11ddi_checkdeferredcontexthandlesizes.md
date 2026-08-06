@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_CHECKDEFERREDCONTEXTHANDLESIZES
 title: PFND3D11DDI_CHECKDEFERREDCONTEXTHANDLESIZES (d3d10umddi.h)
 description: The CheckDeferredContextHandleSizes function verifies the sizes of the driver-private memory spaces that hold the handle data of deferred context handles.
 old-location: display\checkdeferredcontexthandlesizes.htm
-ms.assetid: 0ddaec86-79e6-4d09-8403-6588b35f8b0f
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_CHECKDEFERREDCONTEXTHANDLESIZES callback function"]
 ms.keywords: CheckDeferredContextHandleSizes, CheckDeferredContextHandleSizes callback function [Display Devices], PFND3D11DDI_CHECKDEFERREDCONTEXTHANDLESIZES, PFND3D11DDI_CHECKDEFERREDCONTEXTHANDLESIZES callback, UserModeDisplayDriverDx11_Functions_f96ddf8f-1b3c-4840-b76c-2386dfb582f8.xml, d3d10umddi/CheckDeferredContextHandleSizes, display.checkdeferredcontexthandlesizes
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CheckDeferredContextHandleSizes
-product:
- - Windows
+ - PFND3D11DDI_CHECKDEFERREDCONTEXTHANDLESIZES
 ---
 
 # PFND3D11DDI_CHECKDEFERREDCONTEXTHANDLESIZES callback function
@@ -52,7 +49,7 @@ The <b>CheckDeferredContextHandleSizes</b> function verifies the sizes of the dr
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
@@ -62,7 +59,7 @@ A handle to the display device (graphics context).
 
 The size, in bytes, of the array pointed to by <i>pHandleSize</i>.
 
-### -param Arg3
+### -param unnamedParam3
 
 *pHandleSize* [out, optional]
 
@@ -100,3 +97,4 @@ The driver's <i>CheckDeferredContextHandleSizes</i> function cannot call the <a 
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

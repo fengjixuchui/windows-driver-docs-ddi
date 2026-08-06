@@ -2,7 +2,6 @@
 UID: NF:usbpmapi.UsbPm_Register
 title: UsbPm_Register function (usbpmapi.h)
 description: Registers the client driver with the Policy Manager to report hub arrival/removal and connector state changes.
-ms.assetid: 6560279e-9174-49ba-9a59-341baec7494a
 ms.date: 09/30/2018
 keywords: ["UsbPm_Register function"]
 ms.keywords: UsbPm_Register
@@ -48,13 +47,13 @@ Registers the client driver with the Policy Manager to report hub arrival/remova
 
 ## -parameters
 
-### -param ClientConfig
+### -param ClientConfig [In]
 
-[In] The pointer to a caller-supplied [**USBPM_CLIENT_CONFIG**](ns-usbpmapi-_usbpm_client_config.md) structure. Initialize the structure by calling macro [**USBPM_CLIENT_CONFIG_INIT**](nf-usbpmapi-usbpm_client_config_init.md).
+The pointer to a caller-supplied [**USBPM_CLIENT_CONFIG**](ns-usbpmapi-_usbpm_client_config.md) structure. Initialize the structure by calling macro [**USBPM_CLIENT_CONFIG_INIT**](nf-usbpmapi-usbpm_client_config_init.md).
 
-### -param ClientHandle
+### -param ClientHandle [Out]
 
-[Out] A pointer to a location that receives a handle to the registration operation.
+A pointer to a location that receives a handle to the registration operation.
 
 ## -returns
 

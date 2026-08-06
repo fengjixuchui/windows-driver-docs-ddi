@@ -4,7 +4,6 @@ title: KeInitializeDpc function (wdm.h)
 description: The KeInitializeDpc routine initializes a DPC object, and registers a CustomDpc routine for that object.
 old-location: kernel\keinitializedpc.htm
 tech.root: kernel
-ms.assetid: 5dd82086-d39c-4ebc-9e2a-73ef504f873c
 ms.date: 04/30/2018
 keywords: ["KeInitializeDpc function"]
 ms.keywords: KeInitializeDpc, KeInitializeDpc routine [Kernel-Mode Driver Architecture], k105_069c115c-3a05-442e-8fc4-56dcb635a473.xml, kernel.keinitializedpc, wdm/KeInitializeDpc
@@ -50,19 +49,19 @@ The <b>KeInitializeDpc</b> routine initializes a DPC object, and registers a <a 
 
 ## -parameters
 
-### -param Dpc 
+### -param Dpc [out]
 
-[out]
+
 Pointer to a <a href="/windows-hardware/drivers/kernel/eprocess">KDPC</a> structure that represents the DPC object to initialize. The caller must allocate storage for the structure from resident memory.
 
-### -param DeferredRoutine 
+### -param DeferredRoutine [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-kdeferred_routine">CustomDpc</a> routine to associate with the DPC.
 
-### -param DeferredContext 
+### -param DeferredContext [in, optional]
 
-[in, optional]
+
 Specifies the value to pass as the <i>DeferredContext</i> parameter to <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-kdeferred_routine">CustomDpc</a>.
 
 ## -remarks

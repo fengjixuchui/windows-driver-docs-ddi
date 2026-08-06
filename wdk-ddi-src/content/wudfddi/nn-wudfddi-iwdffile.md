@@ -4,7 +4,6 @@ title: IWDFFile (wudfddi.h)
 description: The IWDFFile interface exposes the file object that represents the HANDLE that is returned by the Microsoft Win32 CreateFile function.
 old-location: wdf\iwdffile.htm
 tech.root: wdf
-ms.assetid: bf8e5ab1-9a17-4eb5-8c54-34670ea27068
 ms.date: 02/26/2018
 keywords: ["IWDFFile interface"]
 ms.keywords: IWDFFile, IWDFFile interface, IWDFFile interface,described, UMDFFileObjectRef_41506c7e-3abb-4f41-ab23-a69114c3fdbd.xml, umdf.iwdffile, wdf.iwdffile, wudfddi/IWDFFile
@@ -52,7 +51,7 @@ The <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile">IWDFFile
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFFile</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a>. <b>IWDFFile</b> also has these types of members:
+The <b>IWDFFile</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a>. <b>IWDFFile</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>

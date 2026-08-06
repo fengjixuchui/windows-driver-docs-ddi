@@ -4,7 +4,6 @@ title: SpbTargetGetConnectionParameters function (spbcx.h)
 description: The SpbTargetGetConnectionParameters method retrieves the connection parameters for a target device on the bus.
 old-location: spb\spbtargetgetconnectionparameters.htm
 tech.root: SPB
-ms.assetid: 0692D8A3-CA43-4D27-9E8E-EB104DB1651F
 ms.date: 04/30/2018
 keywords: ["SpbTargetGetConnectionParameters function"]
 ms.keywords: SPB.spbtargetgetconnectionparameters, SpbTargetGetConnectionParameters, SpbTargetGetConnectionParameters method [Buses], spbcx/SpbTargetGetConnectionParameters
@@ -51,14 +50,14 @@ The <b>SpbTargetGetConnectionParameters</b> method retrieves the connection para
 
 ## -parameters
 
-### -param Target 
+### -param Target [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a> handle to the target device for which to retrieve the connection parameters.
 
-### -param ConnectionParameters 
+### -param ConnectionParameters [out]
 
-[out]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/spbcx/ns-spbcx-_spb_connection_parameters">SPB_CONNECTION_PARAMETERS</a> structure into which the method writes the connection parameters. The caller must previously have called the <a href="/windows-hardware/drivers/ddi/spbcx/nf-spbcx-spb_connection_parameters_init">SPB_CONNECTION_PARAMETERS_INIT</a> function to initialize this structure.
 
 ## -remarks

@@ -4,7 +4,6 @@ title: RtlIntPtrToUnicodeString macro (wdm.h)
 description: The RtlIntPtrToUnicodeString routine converts a specified ULONG_PTR value to a Unicode string that represents the value in a specified base.
 old-location: kernel\rtlintptrtounicodestring.htm
 tech.root: kernel
-ms.assetid: 9bcd278f-b6eb-4e88-8255-f2724bfca285
 ms.date: 04/30/2018
 keywords: ["RtlIntPtrToUnicodeString macro"]
 ms.keywords: RtlIntPtrToUnicodeString, RtlIntPtrToUnicodeString routine [Kernel-Mode Driver Architecture], k109_8ec9aafc-288e-4814-a22b-8b8e973689be.xml, kernel.rtlintptrtounicodestring, wdm/RtlIntPtrToUnicodeString
@@ -50,14 +49,14 @@ The <b>RtlIntPtrToUnicodeString</b> routine converts a specified ULONG_PTR value
 
 ## -parameters
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies the ULONG_PTR value to convert.
 
-### -param Base 
+### -param Base [in, optional]
 
-[in, optional]
+
 Specifies the base to use when converting <i>Value</i> to a string. The possible values are:
 
 <table>
@@ -107,9 +106,9 @@ Decimal
 </tr>
 </table>
 
-### -param String 
+### -param String [in, out]
 
-[in, out]
+
 Pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that receives the string representation of <i>Value</i>. The buffer specified by the <i>Buffer</i> of <i>String</i> must be large enough to hold the result.
 
 ## -remarks

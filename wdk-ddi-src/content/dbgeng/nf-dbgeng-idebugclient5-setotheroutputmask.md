@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient5.SetOtherOutputMask
 title: IDebugClient5::SetOtherOutputMask (dbgeng.h)
-description: The SetOtherOutputMask method sets the output mask for another client.
+description: The SetOtherOutputMask method sets the output mask for another client. This method belongs to the IDebugClient5 interface.
 old-location: debugger\setotheroutputmask.htm
 tech.root: debugger
-ms.assetid: 09e698cb-09f0-40e0-90ac-0a03c4e5c17b
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::SetOtherOutputMask"]
 ms.keywords: IDebugClient interface [Windows Debugging],SetOtherOutputMask method, IDebugClient2 interface [Windows Debugging],SetOtherOutputMask method, IDebugClient2::SetOtherOutputMask, IDebugClient3 interface [Windows Debugging],SetOtherOutputMask method, IDebugClient3::SetOtherOutputMask, IDebugClient4 interface [Windows Debugging],SetOtherOutputMask method, IDebugClient4::SetOtherOutputMask, IDebugClient5 interface [Windows Debugging],SetOtherOutputMask method, IDebugClient5.SetOtherOutputMask, IDebugClient5::SetOtherOutputMask, IDebugClient::SetOtherOutputMask, IDebugClient_73639f3d-f638-472e-9f30-e33de9321b29.xml, SetOtherOutputMask, SetOtherOutputMask method [Windows Debugging], SetOtherOutputMask method [Windows Debugging],IDebugClient interface, SetOtherOutputMask method [Windows Debugging],IDebugClient2 interface, SetOtherOutputMask method [Windows Debugging],IDebugClient3 interface, SetOtherOutputMask method [Windows Debugging],IDebugClient4 interface, SetOtherOutputMask method [Windows Debugging],IDebugClient5 interface, dbgeng/IDebugClient2::SetOtherOutputMask, dbgeng/IDebugClient3::SetOtherOutputMask, dbgeng/IDebugClient4::SetOtherOutputMask, dbgeng/IDebugClient5::SetOtherOutputMask, dbgeng/IDebugClient::SetOtherOutputMask, debugger.setotheroutputmask
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.SetOtherOutputMask
- - IDebugClient2.SetOtherOutputMask
- - IDebugClient3.SetOtherOutputMask
- - IDebugClient4.SetOtherOutputMask
- - IDebugClient5.SetOtherOutputMask
+ - IDebugClient5::SetOtherOutputMask
 ---
 
 # IDebugClient5::SetOtherOutputMask
@@ -54,14 +49,14 @@ The <b>SetOtherOutputMask</b> method sets the output mask for another client.
 
 ## -parameters
 
-### -param Client 
+### -param Client [in]
 
-[in]
+
 Specifies the client whose output mask will be set.
 
-### -param Mask 
+### -param Mask [in]
 
-[in]
+
 Specifies the new output mask for the client.  See <a href="/windows-hardware/drivers/debugger/debug-output-xxx">DEBUG_OUTPUT_XXX</a> for a description of the possible values for <i>Mask</i>.
 
 ## -returns
@@ -117,3 +112,4 @@ For an overview of output in the debugger engine, see <a href="/windows-hardware
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-setoutputmask">SetOutputMask</a>
+

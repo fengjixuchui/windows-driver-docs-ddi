@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11.DOT11_CIPHER_KEY_MAPPING_KEY_VALUE
 title: DOT11_CIPHER_KEY_MAPPING_KEY_VALUE (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_CIPHER_KEY_MAPPING_KEY_VALUE structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_cipher_key_mapping_key_value.htm
 tech.root: netvista
-ms.assetid: 0ab5239d-422e-483e-a633-4efab47311fc
 ms.date: 02/16/2018
 keywords: ["DOT11_CIPHER_KEY_MAPPING_KEY_VALUE structure"]
 ms.keywords: "*PDOT11_CIPHER_KEY_MAPPING_KEY_VALUE, DOT11_CIPHER_KEY_MAPPING_KEY_VALUE, DOT11_CIPHER_KEY_MAPPING_KEY_VALUE structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_3be84a7b-4b5b-49d1-8611-3217962483fe.xml, PDOT11_CIPHER_KEY_MAPPING_KEY_VALUE, PDOT11_CIPHER_KEY_MAPPING_KEY_VALUE structure pointer [Network Drivers Starting with Windows Vista], netvista.dot11_cipher_key_mapping_key_value, windot11/DOT11_CIPHER_KEY_MAPPING_KEY_VALUE, windot11/PDOT11_CIPHER_KEY_MAPPING_KEY_VALUE"
@@ -41,8 +40,7 @@ api_location:
  - windot11.h
 api_name:
  - DOT11_CIPHER_KEY_MAPPING_KEY_VALUE
-product:
- - Windows 10 or later.
+ - PDOT11_CIPHER_KEY_MAPPING_KEY_VALUE
 ---
 
 # DOT11_CIPHER_KEY_MAPPING_KEY_VALUE structure
@@ -50,7 +48,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_CIPHER_KEY_MAPPING_KEY_VALUE structure defines a key-mapping cipher key that will be added
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_CIPHER_KEY_MAPPING_KEY_VALUE structure defines a key-mapping cipher key that will be added
   to or deleted from the key tables on the 802.11 station. For more information about this cipher key type,
   see
   <a href="/windows-hardware/drivers/network/802-11-cipher-key-types">802.11 Cipher Key Types</a>.
@@ -226,3 +227,4 @@ If the
 
 
 <a href="..\windot11\ne-windot11-dot11_direction.md">DOT11_DIRECTION</a>
+

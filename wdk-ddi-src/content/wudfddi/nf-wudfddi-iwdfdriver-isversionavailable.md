@@ -4,7 +4,6 @@ title: IWDFDriver::IsVersionAvailable (wudfddi.h)
 description: The IsVersionAvailable method determines whether the specified version of the framework is available.
 old-location: wdf\iwdfdriver_isversionavailable.htm
 tech.root: wdf
-ms.assetid: 9048a568-3369-44eb-8fa8-361ce968a253
 ms.date: 02/26/2018
 keywords: ["IWDFDriver::IsVersionAvailable"]
 ms.keywords: IWDFDriver interface,IsVersionAvailable method, IWDFDriver.IsVersionAvailable, IWDFDriver::IsVersionAvailable, IsVersionAvailable, IsVersionAvailable method, IsVersionAvailable method,IWDFDriver interface, UMDFDriverObjectRef_6ad78413-a8c5-4a9f-953d-94bd4eaf3425.xml, umdf.iwdfdriver_isversionavailable, wdf.iwdfdriver_isversionavailable, wudfddi/IWDFDriver::IsVersionAvailable
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDriver.IsVersionAvailable
+ - IWDFDriver::IsVersionAvailable
 ---
 
 # IWDFDriver::IsVersionAvailable
@@ -52,9 +51,9 @@ The <b>IsVersionAvailable</b> method determines whether the specified version of
 
 ## -parameters
 
-### -param pMinimumVersion 
+### -param pMinimumVersion [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wudfddi_types/ns-wudfddi_types-umdf_version_data">UMDF_VERSION_DATA</a> structure that describes the minimum version of the framework that the driver supports.
 
 ## -returns
@@ -68,3 +67,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/wudfddi_types/ns-wudfddi_t
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi_types/ns-wudfddi_types-umdf_version_data">UMDF_VERSION_DATA</a>
+

@@ -4,7 +4,6 @@ title: PFN_START_MIRACAST_SESSION (netdispumdddi.h)
 description: Called by the operating system to start a Miracast connected session.
 old-location: display\startmiracastsession.htm
 tech.root: display
-ms.assetid: 2778d9d0-7f97-416f-a5ae-3754b17e8a29
 ms.date: 05/10/2018
 keywords: ["PFN_START_MIRACAST_SESSION callback function"]
 ms.keywords: PFN_START_MIRACAST_SESSION, PFN_START_MIRACAST_SESSION callback, StartMiracastSession, StartMiracastSession callback function [Display Devices], display.startmiracastsession, netdispumdddi/StartMiracastSession
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Netdispumdddi.h
 api_name:
- - StartMiracastSession
+ - PFN_START_MIRACAST_SESSION
 ---
 
 # PFN_START_MIRACAST_SESSION callback function
@@ -50,29 +49,29 @@ Called by the operating system to start a Miracast connected session.
 
 ## -parameters
 
-### -param pMiracastContext 
+### -param pMiracastContext [in]
 
-[in]
+
 A pointer to a context associated with a display adapter.
 
 The operating system obtained the context when it called the Miracast user-mode driver's <a href="/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_create_miracast_context">CreateMiracastContext</a> function.
 
-### -param MiracastRTSPSocket 
+### -param MiracastRTSPSocket [in]
 
-[in]
+
 The operating system-supplied network socket handle of the Real Time Streaming Protocol (RTSP). 
 
 <div class="alert"><b>Note</b>  The Miracast user-mode driver should not close this socket. When the <a href="/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_stop_miracast_session">StopMiracastSession</a> function is called, the operating system will close this socket.</div>
 <div> </div>
 
-### -param pWfdConnectionStats 
+### -param pWfdConnectionStats [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/netdispumdddi/ns-netdispumdddi-miracast_wfd_connection_stats">MIRACAST_WFD_CONNECTION_STATS</a> structure that indicates the Wi-Fi Direct connection statistics.
 
-### -param pSessionInfo 
+### -param pSessionInfo [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/netdispumdddi/ns-netdispumdddi-miracast_session_info">MIRACAST_SESSION_INFO</a> structure that the Miracast user-mode driver should complete after it has obtained the capabilities of the Miracast sink.
 
 ## -returns
@@ -115,3 +114,4 @@ The operating system guarantees that only one of the <a href="/windows-hardware/
 
 
 <a href="/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_stop_miracast_session">StopMiracastSession</a>
+

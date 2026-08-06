@@ -2,7 +2,6 @@
 UID: NF:sensorsutils.IsGUIDPresentInList
 title: IsGUIDPresentInList function (sensorsutils.h)
 description: This routine looks for a GUID in a list of GUIDs.
-ms.assetid: e6209d36-e01c-4922-9dfa-c3e41eb0285e
 ms.date: 08/08/2018
 keywords: ["IsGUIDPresentInList function"]
 tech.root: sensors
@@ -37,8 +36,6 @@ api_location:
  - sensorsutils.h
 api_name:
  - IsGUIDPresentInList
-product:
- - Windows
 ---
 
 # IsGUIDPresentInList function
@@ -50,17 +47,17 @@ This routine looks for a GUID in a list of GUIDs.
 
 ## -parameters
 
-### -param guidArray
+### -param guidArray [in]
 
-[in] GUID Array to search in.
+GUID Array to search in.
 
-### -param arrayLength
+### -param arrayLength [in]
 
-[in] Length of GUID Array to search in.
+Length of GUID Array to search in.
 
-### -param guidElem
+### -param guidElem [in]
 
-[in] GUID Element to search for.
+GUID Element to search for.
 
 ## -returns
 

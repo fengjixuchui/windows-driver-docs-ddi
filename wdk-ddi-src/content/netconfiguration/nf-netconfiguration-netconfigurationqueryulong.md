@@ -3,8 +3,7 @@ UID: NF:netconfiguration.NetConfigurationQueryUlong
 title: NetConfigurationQueryUlong function (netconfiguration.h)
 description: Retrieves the specified unsigned long word (REG_DWORD) data from the adapter configuration object and copies the data to a specified location.
 tech.root: netvista
-ms.assetid: c7ded93c-b025-4b23-b999-fe5d2ed0d75b
-ms.date: 02/07/2018
+ms.date: 03/30/2022
 keywords: ["NetConfigurationQueryUlong function"]
 ms.keywords: NetConfigurationQueryUlong
 req.header: netconfiguration.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.21
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: NetAdapterCxStub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -49,19 +48,19 @@ Retrieves the specified unsigned long word (REG_DWORD) data from the adapter con
 
 ## -parameters
 
-### -param Configuration
+### -param Configuration [_In_]
 
 Handle to a NETCONFIGURATION object that represents an opened registry key.
 
-### -param Flags
+### -param Flags [_In_]
 
 A valid bitwise OR of [NET_CONFIGURATION_QUERY_ULONG_FLAGS](ne-netconfiguration-_net_configuration_query_ulong_flags.md)-typed flags.
 
-### -param ValueName
+### -param ValueName [_In_]
 
 A pointer to a [**UNICODE_STRING**](/windows/win32/api/ntdef/ns-ntdef-_unicode_string) structure that contains a name for the ULONG value.
 
-### -param Value
+### -param Value [_Out_]
 
 A pointer to a location that receives the data that is assigned to the value that *ValueName* specifies.
 

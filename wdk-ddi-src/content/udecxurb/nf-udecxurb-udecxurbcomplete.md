@@ -4,7 +4,6 @@ title: UdecxUrbComplete function (udecxurb.h)
 description: Completes the URB request with a USB-specific completion status code.
 old-location: buses\udecxurbcomplete.htm
 tech.root: usbref
-ms.assetid: F0B014F3-AE40-466B-BD9A-0D01DF70DCFF
 ms.date: 05/07/2018
 keywords: ["UdecxUrbComplete function"]
 ms.keywords: UdecxUrbComplete, UdecxUrbComplete function [Buses], buses.udecxurbcomplete, udecxurb/UdecxUrbComplete
@@ -51,14 +50,14 @@ Completes the URB request with a USB-specific completion status code.
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object that contains the <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_urb">URB</a> for the transfer.
 
-### -param UsbdStatus 
+### -param UsbdStatus [in]
 
-[in]
+
 A <a href="/previous-versions/windows/hardware/drivers/ff539136(v=vs.85)">USBD_STATUS</a>-typed value that indicates the success or failure of the completed URB request.
 
 ## -see-also

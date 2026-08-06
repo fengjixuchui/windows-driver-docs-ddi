@@ -2,7 +2,6 @@
 UID: NC:usbpmapi.EVT_USBPM_EVENT_CALLBACK
 title: EVT_USBPM_EVENT_CALLBACK (usbpmapi.h)
 description: Sends notifications about hub arrival/removal and connector state changes.
-ms.assetid: 5b0fd114-b3ee-484e-9d4f-f8eb4b07d6ca
 ms.date: 09/30/2018
 keywords: ["EVT_USBPM_EVENT_CALLBACK callback function"]
 tech.root: usbref
@@ -47,9 +46,9 @@ Sends notifications about hub arrival/removal and connector state changes.
 
 ## -parameters
 
-### -param Params
+### -param Params [In]
 
-[In] A pointer to the caller-spupplied [**USBPM_EVENT_CALLBACK_PARAMS**](ns-usbpmapi-_usbpm_event_callback_params.md) structure that the client driver fills with event-specific data.
+A pointer to the caller-supplied [**USBPM_EVENT_CALLBACK_PARAMS**](ns-usbpmapi-_usbpm_event_callback_params.md) structure that the client driver fills with event-specific data.
 
 ## -prototype
 

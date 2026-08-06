@@ -4,7 +4,6 @@ title: IMiniportStreamAudioEngineNode2 (portcls.h)
 description: The IMiniportStreamAudioEngineNode2 interface allows an audio miniport driver to extend the capabilities of the IMiniportStreamAudioEngineNode interface.
 old-location: audio\iminiportstreamaudioenginenode2.htm
 tech.root: audio
-ms.assetid: 38888C17-31FC-47F4-A49B-A46A9DF962AF
 ms.date: 05/08/2018
 keywords: ["IMiniportStreamAudioEngineNode2 interface"]
 ms.keywords: IMiniportStreamAudioEngineNode2, IMiniportStreamAudioEngineNode2 interface [Audio Devices], IMiniportStreamAudioEngineNode2 interface [Audio Devices],described, audio.iminiportstreamaudioenginenode2, portcls/IMiniportStreamAudioEngineNode2
@@ -50,7 +49,4 @@ The <b>IMiniportStreamAudioEngineNode2</b> interface allows an audio miniport dr
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IMiniportStreamAudioEngineNode2</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IMiniportStreamAudioEngineNode2</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IMiniportStreamAudioEngineNode2</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IMiniportStreamAudioEngineNode2</b> also has these types of members:

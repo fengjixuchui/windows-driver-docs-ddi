@@ -4,7 +4,6 @@ title: _SYNTHDOWNLOAD (dmusprop.h)
 description: The SYNTHDOWNLOAD structure specifies a handle for downloaded DLS data. It also specifies whether the buffer containing the DLS data can be freed.
 old-location: audio\synthdownload.htm
 tech.root: audio
-ms.assetid: b6fd9c92-ac36-46ac-b996-d76afaf6b906
 ms.date: 05/08/2018
 keywords: ["SYNTHDOWNLOAD structure"]
 ms.keywords: "*PSYNTHDOWNLOAD, PSYNTHDOWNLOAD, PSYNTHDOWNLOAD structure pointer [Audio Devices], SYNTHDOWNLOAD, SYNTHDOWNLOAD structure [Audio Devices], _SYNTHDOWNLOAD, aud-prop_dbafbabb-05b5-4bf4-9791-e7c2eb78ed4f.xml, audio.synthdownload, dmusprop/PSYNTHDOWNLOAD, dmusprop/SYNTHDOWNLOAD"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dmusprop.h
 api_name:
+ - _SYNTHDOWNLOAD
+ - PSYNTHDOWNLOAD
  - SYNTHDOWNLOAD
 ---
 
@@ -75,3 +76,4 @@ If the miniport driver makes its own copy of the DLS data, it sets the <i>Free</
 
 
 <a href="/previous-versions/ff537398(v=vs.85)">KSPROPERTY_SYNTH_DLS_UNLOAD</a>
+

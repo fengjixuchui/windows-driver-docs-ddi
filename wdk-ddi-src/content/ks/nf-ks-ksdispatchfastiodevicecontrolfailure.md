@@ -4,7 +4,6 @@ title: KsDispatchFastIoDeviceControlFailure function (ks.h)
 description: The KsDispatchFastIoDeviceControlFailure function is used in a KSDISPATCH_TABLE.FastDeviceIoControl entry that are not handled. The function should always return FALSE.
 old-location: stream\ksdispatchfastiodevicecontrolfailure.htm
 tech.root: stream
-ms.assetid: 7fb83c8d-e815-46c6-8011-75b25a4c0dd7
 ms.date: 04/23/2018
 keywords: ["KsDispatchFastIoDeviceControlFailure function"]
 ms.keywords: KsDispatchFastIoDeviceControlFailure, KsDispatchFastIoDeviceControlFailure function [Streaming Media Devices], ks/KsDispatchFastIoDeviceControlFailure, ksfunc_f8510e75-1698-4ce9-acd8-d5db73a7c035.xml, stream.ksdispatchfastiodevicecontrolfailure
@@ -51,49 +50,49 @@ The <b>KsDispatchFastIoDeviceControlFailure</b> function is used in a KSDISPATCH
 
 ## -parameters
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 Not used.
 
-### -param Wait 
+### -param Wait [in]
 
-[in]
+
 Not used.
 
-### -param InputBuffer 
+### -param InputBuffer [in, optional]
 
-[in, optional]
+
 Not used.
 
-### -param InputBufferLength 
+### -param InputBufferLength [in]
 
-[in]
+
 Not used.
 
-### -param OutputBuffer 
+### -param OutputBuffer [out, optional]
 
-[out, optional]
+
 Not used.
 
-### -param OutputBufferLength 
+### -param OutputBufferLength [in]
 
-[in]
+
 Not used.
 
-### -param IoControlCode 
+### -param IoControlCode [in]
 
-[in]
+
 Not used.
 
-### -param IoStatus 
+### -param IoStatus [out]
 
-[out]
+
 Not used.
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Not used.
 
 ## -returns

@@ -1,11 +1,9 @@
 ---
 UID: NF:winsplp.DevQueryPrint
 title: DevQueryPrint function (winsplp.h)
-description: 
-old-location: print\devqueryprint.htm
+description: Describes the DevQueryPrint function.
 tech.root: print
-ms.assetid: B3135A43-A328-4103-AB75-A37F02322F70
-ms.date: 04/20/2018
+ms.date: 07/27/2022
 keywords: ["DevQueryPrint function"]
 ms.keywords: DevQueryPrint, DevQueryPrint function [Print Devices], print.devqueryprint, winsplp/DevQueryPrint
 req.header: winsplp.h
@@ -41,22 +39,24 @@ api_name:
  - DevQueryPrint
 ---
 
-# DevQueryPrint function
-
-
 ## -description
+
+Describes the **DevQueryPrint** function.
 
 ## -parameters
 
-### -param hPrinter 
+### -param hPrinter [in]
 
-[in]
+Defines the **HANDLE** parameter *hPrinter*.
 
-### -param pDevMode 
+### -param pDevMode [in]
 
-[in]
+Defines the **LPDEVMODE** parameter *pDevMode*.
 
-### -param pResID 
+### -param pResID [out]
 
-[out]
+Defines the **DWORD** parameter *pResID*.
 
+## -returns
+
+Returns a **BOOL** value.

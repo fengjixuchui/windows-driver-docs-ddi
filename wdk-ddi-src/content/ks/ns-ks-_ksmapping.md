@@ -4,7 +4,6 @@ title: _KSMAPPING (ks.h)
 description: The KSMAPPING structure is used to describe a single contiguous chunk of physical memory for use in scatter/gather DMA operations.
 old-location: stream\ksmapping.htm
 tech.root: stream
-ms.assetid: 9a5149dc-5506-4100-80fc-7cd17585d2af
 ms.date: 04/23/2018
 keywords: ["KSMAPPING structure"]
 ms.keywords: "*PKSMAPPING, KSMAPPING, KSMAPPING structure [Streaming Media Devices], PKSMAPPING, PKSMAPPING structure pointer [Streaming Media Devices], _KSMAPPING, avstruct_65f80fd5-14a6-431b-a1b6-e6c3d18302d3.xml, ks/KSMAPPING, ks/PKSMAPPING, stream.ksmapping"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - _KSMAPPING
+ - PKSMAPPING
  - KSMAPPING
 ---
 
@@ -77,3 +78,4 @@ In order for minidrivers to use this structure within the stream pointer offsets
 
 
 <a href="/windows-hardware/drivers/ddi/ks/nf-ks-ksdeviceregisteradapterobject">KsDeviceRegisterAdapterObject</a>
+

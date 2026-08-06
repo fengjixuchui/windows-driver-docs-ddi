@@ -4,7 +4,6 @@ title: IWDFIoRequest::Send (wudfddi.h)
 description: The Send method sends a request to the specified I/O target.
 old-location: wdf\iwdfiorequest_send.htm
 tech.root: wdf
-ms.assetid: f916b414-9cd9-4745-a021-07c810d0d68b
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequest::Send"]
 ms.keywords: IWDFIoRequest interface,Send method, IWDFIoRequest.Send, IWDFIoRequest::Send, Send, Send method, Send method,IWDFIoRequest interface, UMDFRequestObjectRef_f3a8e812-392d-478c-8234-8125bec14f1d.xml, umdf.iwdfiorequest_send, wdf.iwdfiorequest_send, wudfddi/IWDFIoRequest::Send
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequest.Send
+ - IWDFIoRequest::Send
 ---
 
 # IWDFIoRequest::Send
@@ -52,19 +51,19 @@ The <b>Send</b> method sends a request to the specified I/O target.
 
 ## -parameters
 
-### -param pIoTarget 
+### -param pIoTarget [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotarget">IWDFIoTarget</a> interface for the I/O target object, which typically represents a lower driver in the stack.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A valid bitwise OR of <a href="/windows-hardware/drivers/ddi/wdfrequest/ne-wdfrequest-_wdf_request_send_options_flags">WDF_REQUEST_SEND_OPTIONS_FLAGS</a>-typed flags.
 
-### -param Timeout 
+### -param Timeout [in]
 
-[in]
+
 The amount of time, in system time units (100-nanosecond intervals), that can elapse before the framework automatically cancels the I/O request.
 
 <ul>
@@ -148,7 +147,6 @@ The following code example forwards a request to a device's I/O target.
     }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-irequestcallbackrequestcompletion-oncompletion">IRequestCallbackRequestCompletion::OnCompletion</a>
@@ -168,3 +166,4 @@ The following code example forwards a request to a device's I/O target.
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_request_send_options_flags">WDF_REQUEST_SEND_OPTIONS_FLAGS (UMDF)</a>
+

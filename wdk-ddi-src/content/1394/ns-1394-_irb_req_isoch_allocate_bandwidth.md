@@ -4,7 +4,6 @@ title: _IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH (1394.h)
 description: This structure contains the fields necessary in order for the Bus driver to carry out an IsochAllocateBandwidth request.
 old-location: ieee\irb_req_isoch_allocate_bandwidth.htm
 tech.root: IEEE
-ms.assetid: 68118E69-5644-4FE4-A75B-CE0FC427BA06
 ms.date: 02/15/2018
 keywords: ["IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH structure"]
 ms.keywords: 1394/IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH, IEEE.irb_req_isoch_allocate_bandwidth, IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH, IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH structure [Buses], _IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH
  - IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH
 ---
 
@@ -119,3 +119,4 @@ Specifies the actual speed selected in allocating bandwidth. The value is one of
 ### -field nBandwidthUnitsRequired
 
 This is a pre-calculated value.
+

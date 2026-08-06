@@ -4,7 +4,6 @@ title: IPortableDeviceValues::SetIPortableDeviceValuesCollectionValue (portabled
 description: Adds a new IPortableDeviceValuesCollection value (type VT_UNKNOWN) or overwrites an existing one.
 old-location: wpddk\iportabledevicevalues_setiportabledevicevaluescollectionvalue.htm
 tech.root: wpd_dk
-ms.assetid: 750018fb-6f53-4c75-803b-421c73537446
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::SetIPortableDeviceValuesCollectionValue"]
 ms.keywords: IPortableDeviceValues interface,SetIPortableDeviceValuesCollectionValue method, IPortableDeviceValues.SetIPortableDeviceValuesCollectionValue, IPortableDeviceValues::SetIPortableDeviceValuesCollectionValue, IPortableDeviceValuesSetIPortableDeviceValuesCollectionValue, SetIPortableDeviceValuesCollectionValue, SetIPortableDeviceValuesCollectionValue method, SetIPortableDeviceValuesCollectionValue method,IPortableDeviceValues interface, portabledevicetypes/IPortableDeviceValues::SetIPortableDeviceValuesCollectionValue, wpddk.iportabledevicevalues_setiportabledevicevaluescollectionvalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.SetIPortableDeviceValuesCollectionValue
+ - IPortableDeviceValues::SetIPortableDeviceValuesCollectionValue
 ---
 
 # IPortableDeviceValues::SetIPortableDeviceValuesCollectionValue
@@ -51,14 +50,14 @@ Adds a new <b>IPortableDeviceValuesCollection</b> value (type VT_UNKNOWN) or ove
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> that specifies the item to create or overwrite.
 
-### -param pValue 
+### -param pValue [in]
 
-[in]
+
 Pointer to an <b>IPortableDeviceValuesCollection</b> interface that specifies the new value. The SDK copies a reference to the submitted interface and calls <b>AddRef</b> on it.
 
 ## -returns
@@ -94,3 +93,4 @@ If an existing value has the same key that is specified by the <i>key</i> parame
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-getiportabledevicevaluescollectionvalue">IPortableDeviceValues::GetIPortableDeviceValuesCollectionValue</a>
+

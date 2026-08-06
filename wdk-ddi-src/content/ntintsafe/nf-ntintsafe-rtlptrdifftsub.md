@@ -4,7 +4,6 @@ title: RtlPtrdiffTSub function (ntintsafe.h)
 description: Subtracts one value of type PTRDIFF_T from another.
 old-location: kernel\rtlptrdifftsub.htm
 tech.root: kernel
-ms.assetid: C87E3BD5-8CA7-443E-8CC3-F863CD4F321A
 ms.date: 04/30/2018
 keywords: ["RtlPtrdiffTSub function"]
 ms.keywords: RtlPtrdiffTSub, RtlPtrdiffTSub function [Kernel-Mode Driver Architecture], kernel.rtlptrdifftsub, ntintsafe/RtlPtrdiffTSub
@@ -50,19 +49,19 @@ Subtracts one value of type <b>PTRDIFF_T</b> from another.
 
 ## -parameters
 
-### -param Minuend 
+### -param Minuend [in]
 
-[in]
+
 The value from which <i>Subtrahend</i> is subtracted.
 
-### -param Subtrahend 
+### -param Subtrahend [in]
 
-[in]
+
 The value to subtract from <i>Minuend</i>.
 
-### -param pResult 
+### -param pResult [out]
 
-[out]
+
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

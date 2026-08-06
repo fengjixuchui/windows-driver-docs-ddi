@@ -4,7 +4,6 @@ title: ClfsCloseLogFileObject function (wdm.h)
 description: The ClfsCloseLogFileObject routine releases all references to a log file object.
 old-location: kernel\clfscloselogfileobject.htm
 tech.root: kernel
-ms.assetid: 0ebb82bd-b8f2-469b-90a9-5c1773f7b58a
 ms.date: 04/30/2018
 keywords: ["ClfsCloseLogFileObject function"]
 ms.keywords: ClfsCloseLogFileObject, ClfsCloseLogFileObject routine [Kernel-Mode Driver Architecture], Clfs_836288b2-fd9b-4855-acfd-ad12d7e25b19.xml, kernel.clfscloselogfileobject, wdm/ClfsCloseLogFileObject
@@ -51,9 +50,9 @@ The <b>ClfsCloseLogFileObject</b> routine releases all references to a log file 
 
 ## -parameters
 
-### -param plfoLog 
+### -param plfoLog [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">LOG_FILE_OBJECT</a> structure for which references will be released.The caller previously obtained this pointer by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfscreatelogfile">ClfsCreateLogFile</a>.
 
 ## -returns
@@ -62,7 +61,7 @@ A pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object"
 
 ## -remarks
 
-ClfsCloseLogFileObject releases all references, acquired by CLFS, to the specified log file object. Typically, the client will not have acquired any additional references to the log file object. However, if the client has obtained additional refereces, it is the client's responsibility to release them.
+ClfsCloseLogFileObject releases all references, acquired by CLFS, to the specified log file object. Typically, the client will not have acquired any additional references to the log file object. However, if the client has obtained additional references, it is the client's responsibility to release them.
 
 ClfsCloseLogFileObject causes the specified log file object's reference count to drop to zero, at which time the log file object is closed (that is, its memory is deallocated). The stream represented by the log file object might remain open, however, because there could be other log file objects that represent the same stream. The stream is closed after all log file objects that represent the stream are closed.
 

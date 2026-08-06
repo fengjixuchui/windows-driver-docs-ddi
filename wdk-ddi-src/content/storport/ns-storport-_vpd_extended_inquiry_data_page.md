@@ -1,9 +1,8 @@
 ---
 UID: NS:storport._VPD_EXTENDED_INQUIRY_DATA_PAGE
 title: _VPD_EXTENDED_INQUIRY_DATA_PAGE (storport.h)
-description: 
+description: "Learn more about: _VPD_EXTENDED_INQUIRY_DATA_PAGE structure (storport.h)"
 tech.root: storage
-ms.assetid: d5b25cbf-a20a-48fe-92b5-a54d0f1e5561
 ms.date: 10/19/2018
 keywords: ["VPD_EXTENDED_INQUIRY_DATA_PAGE structure"]
 ms.keywords: _VPD_EXTENDED_INQUIRY_DATA_PAGE, VPD_EXTENDED_INQUIRY_DATA_PAGE, *PVPD_EXTENDED_INQUIRY_DATA_PAGE,
@@ -36,6 +35,8 @@ api_location:
  - storport.h
 api_name:
  - _VPD_EXTENDED_INQUIRY_DATA_PAGE
+ - PVPD_EXTENDED_INQUIRY_DATA_PAGE
+ - VPD_EXTENDED_INQUIRY_DATA_PAGE
 ---
 
 # _VPD_EXTENDED_INQUIRY_DATA_PAGE structure (storport.h)

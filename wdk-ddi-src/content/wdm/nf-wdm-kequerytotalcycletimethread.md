@@ -4,7 +4,6 @@ title: KeQueryTotalCycleTimeThread function (wdm.h)
 description: The KeQueryTotalCycleTimeThread routine returns the accumulated cycle time for the specified thread.
 old-location: kernel\kequerytotalcycletimethread_.htm
 tech.root: kernel
-ms.assetid: EC3A5F02-3D04-466E-8EB4-4BDA9CE47886
 ms.date: 04/30/2018
 keywords: ["KeQueryTotalCycleTimeThread function"]
 ms.keywords: KeQueryTotalCycleTimeThread, KeQueryTotalCycleTimeThread , KeQueryTotalCycleTimeThread routine [Kernel-Mode Driver Architecture], kernel.kequerytotalcycletimethread_, wdm/KeQueryTotalCycleTimeThread
@@ -50,14 +49,14 @@ The <b>KeQueryTotalCycleTimeThread</b> routine returns the accumulated cycle tim
 
 ## -parameters
 
-### -param Thread 
+### -param Thread [in, out]
 
-[in, out]
+
 A pointer to a dispatcher object of type KTHREAD.
 
-### -param CycleTimeStamp 
+### -param CycleTimeStamp [out]
 
-[out]
+
 A pointer to the cycle counter value at the time of the query.
 
 ## -returns

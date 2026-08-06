@@ -3,11 +3,8 @@ UID: NS:dispmprt._DXGKARG_RESUMEVIRTUALGPU
 title: _DXGKARG_RESUMEVIRTUALGPU
 description: Resumes a virtual GPU.
 tech.root: display
-ms.assetid: 06e0c073-325b-4069-9202-836cfebf5f62
 ms.date: 04/04/2019
 keywords: ["DXGKARG_RESUMEVIRTUALGPU structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _DXGKARG_RESUMEVIRTUALGPU, DXGKARG_RESUMEVIRTUALGPU, *PDXGKARG_RESUMEVIRTUALGPU,
 req.header: dispmprt.h
 req.include-header: 
@@ -39,8 +36,8 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGKARG_RESUMEVIRTUALGPU
-product:
- - Windows
+ - PDXGKARG_RESUMEVIRTUALGPU
+ - DXGKARG_RESUMEVIRTUALGPU
 dev_langs:
  - c++
 ---

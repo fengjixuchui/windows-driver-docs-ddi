@@ -4,7 +4,6 @@ title: IWDTFTarget2 (wdtf.h)
 description: Defines operations and properties for a testable item.
 old-location: dtf\iwdtftarget2.htm
 tech.root: dtf
-ms.assetid: fc75c201-a3ff-44f7-ba09-8e3554b1cf27
 ms.date: 04/04/2018
 keywords: ["IWDTFTarget2 interface"]
 ms.keywords: IWDTFTarget2, IWDTFTarget2 interface [Windows Device Testing Framework], IWDTFTarget2 interface [Windows Device Testing Framework],described, Microsoft.WDTF.IWDTFTarget2, dtf.iwdtftarget2, wdtf/IWDTFTarget2
@@ -50,10 +49,10 @@ Defines operations and properties for a testable item.
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDTFTarget2</b> interface inherits from <b>ITracing</b>. <b>IWDTFTarget2</b> also has these types of members:
+The <b>IWDTFTarget2</b> interface inherits from <b>ITracing</b>. <b>IWDTFTarget2</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-<li><a href="https://docs.microsoft.com/">Properties</a></li>
+<li><a href="/">Methods</a></li>
+<li><a href="/">Properties</a></li>
 </ul>
 
 ## -remarks

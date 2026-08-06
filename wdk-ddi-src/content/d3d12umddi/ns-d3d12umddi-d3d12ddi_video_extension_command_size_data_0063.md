@@ -3,7 +3,6 @@ UID: NS:d3d12umddi.D3D12DDI_VIDEO_EXTENSION_COMMAND_SIZE_DATA_0063
 title: D3D12DDI_VIDEO_EXTENSION_COMMAND_SIZE_DATA_0063
 description: Queries the residency size information for a video extension command.
 tech.root: display
-ms.assetid: caf59d76-9a0e-4ac9-9b2a-f8ff32cab4da
 ms.date: 04/04/2019
 keywords: ["D3D12DDI_VIDEO_EXTENSION_COMMAND_SIZE_DATA_0063 structure"]
 ms.keywords: D3D12DDI_VIDEO_EXTENSION_COMMAND_SIZE_DATA_0063, D3D12DDI_VIDEO_EXTENSION_COMMAND_SIZE_DATA_0063,
@@ -46,30 +45,30 @@ Queries the residency size information for a video extension command.
 
 ## -struct-fields
 
-### -field NodeIndex
+### -field NodeIndex [in]
 
-[in] For single GPU operation, set this to zero. If there are multiple GPU nodes, set a bit to identify the node (the device's physical adapter) to which the command queue applies. Each bit in the mask corresponds to a single node. Only 1 bit may be set.
+For single GPU operation, set this to zero. If there are multiple GPU nodes, set a bit to identify the node (the device's physical adapter) to which the command queue applies. Each bit in the mask corresponds to a single node. Only 1 bit may be set.
 
-### -field CommandId
+### -field CommandId [in]
 
-[in] The unique identifier for the video extension command.
+The unique identifier for the video extension command.
 
-### -field pCreationParameters
+### -field pCreationParameters [in]
 
-[in] Pointer to the initialization parameters structure. Parameters for this structure must match the parameter enumeration for [D3D12DDI_VIDEO_EXTENSION_COMMAND_PARAMETER_STAGE_0063_INITIALIZATION](ne-d3d12umddi-d3d12ddi_video_extension_command_parameter_stage_0063.md).
+Pointer to the initialization parameters structure. Parameters for this structure must match the parameter enumeration for [D3D12DDI_VIDEO_EXTENSION_COMMAND_PARAMETER_STAGE_0063_INITIALIZATION](ne-d3d12umddi-d3d12ddi_video_extension_command_parameter_stage_0063.md).
 
-### -field CreationParametersSizeInBytes
+### -field CreationParametersSizeInBytes [in]
 
-[in] The size of the initialization parameters structure in bytes.
+The size of the initialization parameters structure in bytes.
 
-### -field MemoryPoolL0Size
+### -field MemoryPoolL0Size [out]
 
-[out] Indicates the command size in L0. L0 is the “closest” memory to the GPU. For discrete adapters, this is discrete graphics memory. For integrated adapters, this is typically the system memory size.
+Indicates the command size in L0. L0 is the “closest” memory to the GPU. For discrete adapters, this is discrete graphics memory. For integrated adapters, this is typically the system memory size.
 
-### -field MemoryPoolL1Size
+### -field MemoryPoolL1Size [out]
 
  
-[out] Indicates the command size in L1. L1 is the “next closest” memory for GPU. For discrete adapters, this is system memory. Integrated adapters do not typically have L1 and report zero size here.
+Indicates the command size in L1. L1 is the “next closest” memory for GPU. For discrete adapters, this is system memory. Integrated adapters do not typically have L1 and report zero size here.
 
 ## -remarks
 

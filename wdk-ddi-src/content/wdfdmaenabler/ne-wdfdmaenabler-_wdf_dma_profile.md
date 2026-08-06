@@ -4,7 +4,6 @@ title: _WDF_DMA_PROFILE (wdfdmaenabler.h)
 description: The WDF_DMA_PROFILE enumeration identifies the types of bus-master or system-mode DMA operations that devices can support.
 old-location: wdf\wdf_dma_profile.htm
 tech.root: wdf
-ms.assetid: a2672bca-5c2e-423d-9ba0-fad610170e88
 ms.date: 02/26/2018
 keywords: ["WDF_DMA_PROFILE enumeration"]
 ms.keywords: DFDmaObjectRef_24cd95b0-ec51-4af4-a507-04f9a91276cf.xml, WDF_DMA_PROFILE, WDF_DMA_PROFILE enumeration, WdfDmaProfileInvalid, WdfDmaProfilePacket, WdfDmaProfilePacket64, WdfDmaProfileScatterGather, WdfDmaProfileScatterGather64, WdfDmaProfileScatterGather64Duplex, WdfDmaProfileScatterGatherDuplex, WdfDmaProfileSystem, WdfDmaProfileSystemDuplex, _WDF_DMA_PROFILE, kmdf.wdf_dma_profile, wdf.wdf_dma_profile, wdfdmaenabler/WDF_DMA_PROFILE, wdfdmaenabler/WdfDmaProfileInvalid, wdfdmaenabler/WdfDmaProfilePacket, wdfdmaenabler/WdfDmaProfilePacket64, wdfdmaenabler/WdfDmaProfileScatterGather, wdfdmaenabler/WdfDmaProfileScatterGather64, wdfdmaenabler/WdfDmaProfileScatterGather64Duplex, wdfdmaenabler/WdfDmaProfileScatterGatherDuplex, wdfdmaenabler/WdfDmaProfileSystem, wdfdmaenabler/WdfDmaProfileSystemDuplex
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfdmaenabler.h
 api_name:
+ - _WDF_DMA_PROFILE
  - WDF_DMA_PROFILE
 ---
 
@@ -54,7 +54,7 @@ The <b>WDF_DMA_PROFILE</b> enumeration identifies the types of bus-master or sys
 
 ## -enum-fields
 
-### -field WdfDmaProfileInvalid
+### -field WdfDmaProfileInvalid:0
 
 For internal use only.
 
@@ -83,12 +83,12 @@ The device supports packet-based, scatter/gather DMA operations, using 32-bit ad
 The device supports packet-based, scatter/gather DMA operations, using 64-bit addressing. The device also supports duplex operation.
 
 
-#### - WdfDmaProfileSystem
+### -field WdfDmaProfileSystem
 
 The device supports system-mode DMA operations. This value is available in version 1.11 and later versions of KMDF running on Windows 8 or later versions of Windows.
 
 
-#### - WdfDmaProfileSystemDuplex
+### -field WdfDmaProfileSystemDuplex
 
 The device supports system-mode DMA operations. The device also supports duplex operation. This value is available in version 1.11 and later versions of KMDF running on Windows 8 or later versions of Windows.
 
@@ -103,3 +103,4 @@ Kernel-Mode Driver Framework (KMDF) miniport drivers such as NDIS miniport drive
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfdmaenabler/ns-wdfdmaenabler-_wdf_dma_enabler_config">WDF_DMA_ENABLER_CONFIG</a>
+

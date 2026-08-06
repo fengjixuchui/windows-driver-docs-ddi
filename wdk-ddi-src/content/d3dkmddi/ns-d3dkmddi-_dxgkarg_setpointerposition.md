@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGKARG_SETPOINTERPOSITION
 title: _DXGKARG_SETPOINTERPOSITION (d3dkmddi.h)
 description: The DXGKARG_SETPOINTERPOSITION structure describes where and how to display the mouse pointer.
 old-location: display\dxgkarg_setpointerposition.htm
-ms.assetid: a5670b3e-a96b-439c-ac1a-644611110700
 ms.date: 05/10/2018
 keywords: ["DXGKARG_SETPOINTERPOSITION structure"]
 ms.keywords: DXGKARG_SETPOINTERPOSITION, DXGKARG_SETPOINTERPOSITION structure [Display Devices], DmStructs_2a671f7f-7750-4edb-bf07-7e823ddd309f.xml, _DXGKARG_SETPOINTERPOSITION, d3dkmddi/DXGKARG_SETPOINTERPOSITION, display.dxgkarg_setpointerposition
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_SETPOINTERPOSITION
  - DXGKARG_SETPOINTERPOSITION
 ---
 
@@ -52,21 +52,21 @@ The DXGKARG_SETPOINTERPOSITION structure describes where and how to display the 
 
 ## -struct-fields
 
-### -field VidPnSourceId
+### -field VidPnSourceId [in]
 
-[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the mouse pointer is located on.
+The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the mouse pointer is located on.
 
-### -field X
+### -field X [in]
 
-[in] The column, in pixels, that the mouse pointer is located on from the top left.
+The column, in pixels, that the mouse pointer is located on from the top left.
 
-### -field Y
+### -field Y [in]
 
-[in] The row, in pixels, that the mouse pointer is located on from the top left.
+The row, in pixels, that the mouse pointer is located on from the top left.
 
-### -field Flags
+### -field Flags [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_setpointerpositionflags">DXGK_SETPOINTERPOSITIONFLAGS</a> structure that identifies, in bit-field flags, information about the mouse pointer.
+A <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_setpointerpositionflags">DXGK_SETPOINTERPOSITIONFLAGS</a> structure that identifies, in bit-field flags, information about the mouse pointer.
 
 ## -see-also
 
@@ -75,3 +75,4 @@ The DXGKARG_SETPOINTERPOSITION structure describes where and how to display the 
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_setpointerposition">DxgkDdiSetPointerPosition</a>
+

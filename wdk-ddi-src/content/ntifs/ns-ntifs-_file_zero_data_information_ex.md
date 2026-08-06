@@ -1,10 +1,9 @@
 ---
 UID: NS:ntifs._FILE_ZERO_DATA_INFORMATION_EX
 title: _FILE_ZERO_DATA_INFORMATION_EX (ntifs.h)
-description: Contains a range of a file to set to zeros.
+description: The _FILE_ZERO_DATA_INFORMATION_EX structure contains a range of a file to set to zeros. This structure is used by the FSCTL_SET_ZERO_DATA control code.
 old-location: ifsk\file_zero_data_information_ex.htm
 tech.root: ifsk
-ms.assetid: 429C644C-C784-4C0E-96C3-EC82698F6624
 ms.date: 04/16/2018
 keywords: ["FILE_ZERO_DATA_INFORMATION_EX structure"]
 ms.keywords: "*PFILE_ZERO_DATA_INFORMATION_EX, FILE_ZERO_DATA_INFORMATION_EX, FILE_ZERO_DATA_INFORMATION_EX structure [Installable File System Drivers], PFILE_ZERO_DATA_INFORMATION_EX, PFILE_ZERO_DATA_INFORMATION_EX structure pointer [Installable File System Drivers], _FILE_ZERO_DATA_INFORMATION_EX, ifsk.file_zero_data_information_ex, ntifs/FILE_ZERO_DATA_INFORMATION_EX, ntifs/PFILE_ZERO_DATA_INFORMATION_EX"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntifs.h
 api_name:
+ - _FILE_ZERO_DATA_INFORMATION_EX
+ - PFILE_ZERO_DATA_INFORMATION_EX
  - FILE_ZERO_DATA_INFORMATION_EX
 ---
 
@@ -89,3 +90,4 @@ The following flags are supported:
 
 
 <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfscontrolfile">FltFsControlFile</a>
+

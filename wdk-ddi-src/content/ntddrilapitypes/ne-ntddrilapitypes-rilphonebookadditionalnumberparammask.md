@@ -1,10 +1,9 @@
 ---
 UID: NE:ntddrilapitypes.RILPHONEBOOKADDITIONALNUMBERPARAMMASK
 title: RILPHONEBOOKADDITIONALNUMBERPARAMMASK (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this enumeration for internal use only. Don't use the RILPHONEBOOKADDITIONALNUMBERPARAMMASK enumeration in your code."
 old-location: netvista\rilphonebookadditionalnumberparammask.htm
 tech.root: netvista
-ms.assetid: e4cebb97-29e4-4979-9fdc-8120850d8a1e
 ms.date: 05/02/2018
 keywords: ["RILPHONEBOOKADDITIONALNUMBERPARAMMASK enumeration"]
 ms.keywords: RILPHONEBOOKADDITIONALNUMBERPARAMMASK, RILPHONEBOOKADDITIONALNUMBERPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_PBAN_ALL, RIL_PARAM_PBAN_NUMID, netvista.rilphonebookadditionalnumberparammask, ntddrilapitypes/RILPHONEBOOKADDITIONALNUMBERPARAMMASK, ntddrilapitypes/RIL_PARAM_PBAN_ALL, ntddrilapitypes/RIL_PARAM_PBAN_NUMID

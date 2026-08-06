@@ -1,10 +1,9 @@
 ---
 UID: NC:d3dumddi.PFND3DDDI_CHECKDIRECTFLIPSUPPORT
 title: PFND3DDDI_CHECKDIRECTFLIPSUPPORT (d3dumddi.h)
-description: Called by the Desktop Window Manager (DWM) to verify that the user-mode driver supports Direct Flip operations, in which video memory is seamlessly flipped between an application's managed primary allocations and the DWM's managed primary allocations.
+description: PFND3DDDI_CHECKDIRECTFLIPSUPPORT is called by the Desktop Window Manager to verify that the user-mode display driver supports Direct Flip operations.
 old-location: display\checkdirectflipsupport.htm
 tech.root: display
-ms.assetid: BB909041-0194-4828-ACA2-E3F6B1974DBB
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_CHECKDIRECTFLIPSUPPORT callback function"]
 ms.keywords: CheckDirectFlipSupport, CheckDirectFlipSupport callback function [Display Devices], PFND3DDDI_CHECKDIRECTFLIPSUPPORT, PFND3DDDI_CHECKDIRECTFLIPSUPPORT callback, d3dumddi/CheckDirectFlipSupport, display.checkdirectflipsupport
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - CheckDirectFlipSupport
-product:
- - Windows
+ - PFND3DDDI_CHECKDIRECTFLIPSUPPORT
 ---
 
 # PFND3DDDI_CHECKDIRECTFLIPSUPPORT callback function
@@ -56,7 +53,7 @@ Called by the Desktop Window Manager (DWM) to verify that the user-mode driver s
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -90,3 +87,4 @@ Because the DWM typically creates its own device using the highest possible Micr
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

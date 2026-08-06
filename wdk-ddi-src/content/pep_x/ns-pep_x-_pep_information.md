@@ -1,10 +1,9 @@
 ---
 UID: NS:pep_x._PEP_INFORMATION
 title: _PEP_INFORMATION (pep_x.h)
-description: The PEP_INFORMATION structure specifies the interface that the platform extension plug-in (PEP) uses to receive notifications from the Windows power management framework (PoFx).
+description: Learn how the PEP_INFORMATION structure specifies the interface that the platform extension plug-in (PEP) uses to receive notifications from the Windows power management framework (PoFx).
 old-location: kernel\pep_information.htm
 tech.root: kernel
-ms.assetid: 60221D44-79C0-4043-A4AF-1200C2F087F6
 ms.date: 04/30/2018
 keywords: ["PEP_INFORMATION structure"]
 ms.keywords: "*PPEP_INFORMATION, PEP_INFORMATION, PEP_INFORMATION structure [Kernel-Mode Driver Architecture], PPEP_INFORMATION, PPEP_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _PEP_INFORMATION, kernel.pep_information, pepfx/PEP_INFORMATION, pepfx/PPEP_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_INFORMATION
+ - PPEP_INFORMATION
  - PEP_INFORMATION
 ---
 
@@ -50,7 +51,7 @@ api_name:
 
 ## -description
 
-The <b>PEP_INFORMATION</b> structure specifies the interface that the platform extension plug-in (PEP) uses to receive notifications from the Windows <a href="/windows-hardware/drivers/ddi/index">power management framework</a> (PoFx).
+The <b>PEP_INFORMATION</b> structure specifies the interface that the platform extension plug-in (PEP) uses to receive notifications from the Windows <a href="/windows-hardware/drivers/ddi/_kernel/#device-power-management">power management framework</a> (PoFx).
 
 ## -struct-fields
 
@@ -99,3 +100,4 @@ The <i>PepInformation</i> parameter to the <a href="/windows-hardware/drivers/dd
 
 
 <a href="/windows-hardware/drivers/ddi/pepfx/nf-pepfx-pofxregisterpluginex">PoFxRegisterPluginEx</a>
+

@@ -4,7 +4,6 @@ title: IUnregisterSubdevice::UnregisterSubdevice (portcls.h)
 description: The UnregisterSubdevice method deletes the registration of a subdevice that was previously registered by a call to PcRegisterSubdevice.
 old-location: audio\iunregistersubdevice_unregistersubdevice.htm
 tech.root: audio
-ms.assetid: 042378f0-aa0f-49be-b881-86558ad33baf
 ms.date: 05/08/2018
 keywords: ["IUnregisterSubdevice::UnregisterSubdevice"]
 ms.keywords: IUnregisterSubdevice interface [Audio Devices],UnregisterSubdevice method, IUnregisterSubdevice.UnregisterSubdevice, IUnregisterSubdevice::UnregisterSubdevice, UnregisterSubdevice, UnregisterSubdevice method [Audio Devices], UnregisterSubdevice method [Audio Devices],IUnregisterSubdevice interface, audio.iunregistersubdevice_unregistersubdevice, audmp-routines_8fb24a5e-af25-42e0-a96e-2f4728f17cde.xml, portcls/IUnregisterSubdevice::UnregisterSubdevice
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IUnregisterSubdevice.UnregisterSubdevice
+ - IUnregisterSubdevice::UnregisterSubdevice
 ---
 
 # IUnregisterSubdevice::UnregisterSubdevice
@@ -50,14 +49,14 @@ The <b>UnregisterSubdevice</b> method deletes the registration of a subdevice th
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the device object for the adapter device. This parameter must point to a system structure of type <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a>.
 
-### -param Unknown 
+### -param Unknown [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iport">IPort</a> interface of the port driver object that is bound to the subdevice.
 
 ## -returns
@@ -83,3 +82,4 @@ For more information, see <a href="/windows-hardware/drivers/audio/dynamic-audio
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-pcregistersubdevice">PcRegisterSubdevice</a>
+

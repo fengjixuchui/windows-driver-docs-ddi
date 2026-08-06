@@ -4,7 +4,6 @@ title: ClosePort function (winsplp.h)
 description: A language or port monitor's ClosePort function closes a printer port.
 old-location: print\closeport.htm
 tech.root: print
-ms.assetid: 1d63f36d-4c62-40e9-b3c0-f6d847340b07
 ms.date: 02/02/2018
 keywords: ["ClosePort function"]
 ms.keywords: print.closeport, winsplp/ClosePort, spoolfnc_fdd98daa-d14c-4534-a8c6-0070ccbbc3fe.xml, ClosePort, ClosePort function [Print Devices]
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: NOTIFICATION_CONFIG_FLAGS
-req.product: Windows 10 or later.
 f1_keywords:
  - ClosePort
  - winsplp/ClosePort
@@ -51,9 +49,9 @@ A language or port monitor's <b>ClosePort</b> function closes a printer port.
 
 ## -parameters
 
-### -param hPort 
+### -param hPort [in]
 
-[in]
+
 Caller-supplied pointer to a port handle.
 
 ## -returns

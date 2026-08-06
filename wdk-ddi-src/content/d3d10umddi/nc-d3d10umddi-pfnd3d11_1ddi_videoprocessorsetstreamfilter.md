@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFILTER
 title: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFILTER (d3d10umddi.h)
 description: Enables or disables an image filter for an input stream on the video processor.
 old-location: display\videoprocessorsetstreamfilter.htm
-ms.assetid: e44e5e4a-20e1-4327-b64c-5806d1bb2ece
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFILTER callback function"]
 ms.keywords: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFILTER, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFILTER callback, d3d10umddi/pfnVideoProcessorSetStreamFilter, display.videoprocessorsetstreamfilter, pfnVideoProcessorSetStreamFilter, pfnVideoProcessorSetStreamFilter callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoProcessorSetStreamFilter
+ - PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFILTER
 ---
 
 # PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMFILTER callback function
@@ -50,37 +49,37 @@ Enables or disables an image filter for an input stream on the video processor.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hVideoProcessor* [in]
 
 A handle to the video processor object that was created through a call to the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a> function.
 
-### -param Arg3
+### -param unnamedParam3
 
 *StreamIndex* [in]
 
 The zero-based index of the input stream.
 
-### -param Arg4
+### -param unnamedParam4
 
 *Filter* [in]
 
 The filter, specified as a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d11_1ddi_video_processor_filter">D3D11_1DDI_VIDEO_PROCESSOR_FILTER</a> value.
 
-### -param Arg5
+### -param unnamedParam5
 
 *Enable* [in]
 
 If <b>TRUE</b>, the filter is enabled on the video processor.
 
-### -param Arg6
+### -param unnamedParam6
 
 *Level* [in]
 
@@ -98,3 +97,4 @@ The filter level. The meaning of this value is defined by the independent hardwa
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ne-d3d10umddi-d3d11_1ddi_video_processor_filter">D3D11_1DDI_VIDEO_PROCESSOR_FILTER</a>
+

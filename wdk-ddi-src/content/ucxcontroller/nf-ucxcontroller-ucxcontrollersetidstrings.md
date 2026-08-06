@@ -4,7 +4,6 @@ title: UcxControllerSetIdStrings function (ucxcontroller.h)
 description: Updates the identifier strings of a controller after the controller has been initialized.
 old-location: buses\ucxcontrollersetidstrings.htm
 tech.root: usbref
-ms.assetid: FC0F6C02-C53A-4F7E-B718-70788FA807F3
 ms.date: 05/07/2018
 keywords: ["UcxControllerSetIdStrings function"]
 ms.keywords: UcxControllerSetIdStrings, UcxControllerSetIdStrings function [Buses], buses.ucxcontrollersetidstrings, ucxcontroller/UcxControllerSetIdStrings
@@ -56,19 +55,19 @@ Updates the identifier strings
 
 <p> A handle to the UCX controller that the client driver received in a previous call to  the <a href="/previous-versions/windows/hardware/drivers/mt188033(v=vs.85)"><b>UcxControllerCreate</b></a> method.</p>
 
-### -param ManufacturerNameString 
+### -param ManufacturerNameString [in]
 
-[in]
+
 A string that contains the name of controller manufacturer.
 
-### -param ModelNameString 
+### -param ModelNameString [in]
 
-[in]
+
 A string that contains the name of device model.
 
-### -param ModelNumberString 
+### -param ModelNumberString [in]
 
-[in]
+
 A string that contains the revision number of the device model.
 
 ## -returns

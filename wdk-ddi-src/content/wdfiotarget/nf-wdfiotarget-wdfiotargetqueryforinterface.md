@@ -4,7 +4,6 @@ title: WdfIoTargetQueryForInterface function (wdfiotarget.h)
 description: The WdfIoTargetQueryForInterface method obtains access to the GUID-identified, driver-defined interface of a remote I/O target.
 old-location: wdf\wdfiotargetqueryforinterface.htm
 tech.root: wdf
-ms.assetid: 213d0ee8-96f1-4927-be87-1b504b3f3478
 ms.date: 02/26/2018
 keywords: ["WdfIoTargetQueryForInterface function"]
 ms.keywords: DFIOTargetRef_ed9f676e-903e-4a93-ad0a-80c428ed8230.xml, WdfIoTargetQueryForInterface, WdfIoTargetQueryForInterface method, kmdf.wdfiotargetqueryforinterface, wdf.wdfiotargetqueryforinterface, wdfiotarget/WdfIoTargetQueryForInterface
@@ -53,34 +52,34 @@ The <b>WdfIoTargetQueryForInterface</b> method obtains access to the GUID-identi
 
 ## -parameters
 
-### -param IoTarget 
+### -param IoTarget [in]
 
-[in]
+
 A handle to a remote I/O target object that was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfiotarget/nf-wdfiotarget-wdfiotargetcreate">WdfIoTargetCreate</a>.
 
-### -param InterfaceType 
+### -param InterfaceType [in]
 
-[in]
+
 A pointer to a GUID that identifies the interface.
 
-### -param Interface 
+### -param Interface [out]
 
-[out]
+
 A pointer to a driver-allocated structure that receives the requested interface. This structure is defined by the driver that exports the requested interface and must begin with an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface">INTERFACE</a> structure.
 
-### -param Size 
+### -param Size [in]
 
-[in]
+
 The size, in bytes, of the driver-allocated structure that <i>Interface</i> points to.
 
-### -param Version 
+### -param Version [in]
 
-[in]
+
 The version number of the requested interface. The driver that exports the requested interface defines the format of this value.
 
-### -param InterfaceSpecificData 
+### -param InterfaceSpecificData [in, optional]
 
-[in, optional]
+
 Additional interface-specific information. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

@@ -2,7 +2,6 @@
 UID: NS:vmbuskernelmodeclientlibapi._KMCL_SERVER_ONLY_METHODS
 title: _KMCL_SERVER_ONLY_METHODS (vmbuskernelmodeclientlibapi.h)
 description: The KMCL_SERVER_ONLY_METHODS structure contains function pointers for server-only functions for the VMBus Kernel Mode Client Library (KMCL) interface.
-ms.assetid: ef9df9ca-b6d0-4c8e-a482-7989bab40b40
 ms.date: 09/13/2018
 keywords: ["KMCL_SERVER_ONLY_METHODS structure"]
 ms.keywords: _KMCL_SERVER_ONLY_METHODS, KMCL_SERVER_ONLY_METHODS,
@@ -35,8 +34,7 @@ api_location:
  - vmbuskernelmodeclientlibapi.h
 api_name:
  - _KMCL_SERVER_ONLY_METHODS
-product:
- - Windows
+ - KMCL_SERVER_ONLY_METHODS
 ---
 
 # _KMCL_SERVER_ONLY_METHODS structure
@@ -140,3 +138,4 @@ For more information about driver-defined interfaces, see [Using Driver-Defined 
 [**WdfIoTargetQueryForInterface**](../wdfiotarget/nf-wdfiotarget-wdfiotargetqueryforinterface.md)
 
 [**KMCL_CLIENT_INTERFACE_V1**](ns-vmbuskernelmodeclientlibapi-_kmcl_client_interface_v1.md)
+

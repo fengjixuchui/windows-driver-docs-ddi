@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.IRawEnumerator.QueryInterface
 title: IRawEnumerator::QueryInterface (dbgmodel.h)
 description: Retrieves pointers to the supported interfaces on an object.
-ms.assetid: e98eeb95-89ff-4112-8562-8cf0d6f13050
 ms.date: 08/13/2018
 keywords: ["IRawEnumerator::QueryInterface"]
 ms.keywords: IRawEnumerator::QueryInterface, QueryInterface, IRawEnumerator.QueryInterface, IRawEnumerator::QueryInterface, IRawEnumerator.QueryInterface
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IRawEnumerator.QueryInterface
+ - IRawEnumerator::QueryInterface
 ---
 
 # IRawEnumerator::QueryInterface
@@ -69,3 +68,4 @@ Standard COM method.
 ## -see-also
 
 [IRawEnumerator interface](nn-dbgmodel-irawenumerator.md)
+

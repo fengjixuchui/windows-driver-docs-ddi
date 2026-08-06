@@ -1,10 +1,9 @@
 ---
 UID: NS:dbgeng._DEBUG_GET_TEXT_COMPLETIONS_OUT
 title: _DEBUG_GET_TEXT_COMPLETIONS_OUT (dbgeng.h)
-description: Defines information about text completions to get.
+description: The _DEBUG_GET_TEXT_COMPLETIONS_OUT structure defines information about the type of text completions to receive.
 old-location: debugger\debug_get_text_completions_out.htm
 tech.root: debugger
-ms.assetid: 09F3A720-C039-4C8D-84A4-8AF071E1FFB0
 ms.date: 05/03/2018
 keywords: ["DEBUG_GET_TEXT_COMPLETIONS_OUT structure"]
 ms.keywords: "*PDEBUG_GET_TEXT_COMPLETIONS_OUT, DEBUG_GET_TEXT_COMPLETIONS_IS_DOT_COMMAND, DEBUG_GET_TEXT_COMPLETIONS_IS_EXTENSION_COMMAND, DEBUG_GET_TEXT_COMPLETIONS_IS_SYMBOL, DEBUG_GET_TEXT_COMPLETIONS_OUT, DEBUG_GET_TEXT_COMPLETIONS_OUT structure [Windows Debugging], PDEBUG_GET_TEXT_COMPLETIONS_OUT, PDEBUG_GET_TEXT_COMPLETIONS_OUT structure pointer [Windows Debugging], _DEBUG_GET_TEXT_COMPLETIONS_OUT, dbgeng/DEBUG_GET_TEXT_COMPLETIONS_OUT, dbgeng/PDEBUG_GET_TEXT_COMPLETIONS_OUT, debugger.debug_get_text_completions_out"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - DbgEng.h
 api_name:
+ - _DEBUG_GET_TEXT_COMPLETIONS_OUT
+ - PDEBUG_GET_TEXT_COMPLETIONS_OUT
  - DEBUG_GET_TEXT_COMPLETIONS_OUT
 ---
 

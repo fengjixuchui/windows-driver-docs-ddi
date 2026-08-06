@@ -1,10 +1,9 @@
 ---
 UID: NF:ioaccess.WRITE_PORT_ULONG
 title: WRITE_PORT_ULONG function (ioaccess.h)
-description: The WRITE_PORT_ULONG routine writes a ULONG value to the specified port address.
+description: The WRITE_PORT_ULONG function (ioaccess.h) writes a ULONG value to the specified port address in resident, mapped device memory.
 old-location: kernel\write_port_ulong.htm
 tech.root: kernel
-ms.assetid: fe7c8a20-dadb-4c8d-b208-8fbbf8c719a6
 ms.date: 04/30/2018
 keywords: ["WRITE_PORT_ULONG function"]
 ms.keywords: WRITE_PORT_ULONG, WRITE_PORT_ULONG routine [Kernel-Mode Driver Architecture], k103_3cc5c915-f77f-4cec-af7c-bee345e2137a.xml, kernel.write_port_ulong, wdm/WRITE_PORT_ULONG
@@ -51,14 +50,14 @@ The <b>WRITE_PORT_ULONG</b> routine writes a ULONG value to the specified port a
 
 ## -parameters
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Pointer to the port, which must be a mapped memory range in I/O space.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 Specifies a ULONG value to be written to the port.
 
 ## -remarks

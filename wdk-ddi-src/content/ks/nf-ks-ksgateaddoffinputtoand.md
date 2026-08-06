@@ -4,7 +4,6 @@ title: KsGateAddOffInputToAnd function (ks.h)
 description: The KsGateAddOffInputToAnd function adds a new input in the OFF state to a given AND gate.
 old-location: stream\ksgateaddoffinputtoand.htm
 tech.root: stream
-ms.assetid: 53e03b1d-0995-43cf-945a-22834a9e8240
 ms.date: 04/23/2018
 keywords: ["KsGateAddOffInputToAnd function"]
 ms.keywords: KsGateAddOffInputToAnd, KsGateAddOffInputToAnd function [Streaming Media Devices], avfunc_52efe27b-d77a-490d-beba-3a05b3d5ed83.xml, ks/KsGateAddOffInputToAnd, stream.ksgateaddoffinputtoand
@@ -50,9 +49,9 @@ The<b> KsGateAddOffInputToAnd</b> function adds a new input in the OFF state to 
 
 ## -parameters
 
-### -param AndGate 
+### -param AndGate [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksgate">KSGATE</a> structure representing the AND gate to which to add a new OFF input.
 
 ## -remarks

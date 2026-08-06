@@ -2,10 +2,8 @@
 UID: NF:wiautil.wiauRegGetDwordA
 title: wiauRegGetDwordA function (wiautil.h)
 description: The wiauRegGetDword function gets a DWORD value from the DeviceData section of the registry.
-old-location: image\wiaureggetdword.htm
 tech.root: image
-ms.assetid: 936a3a49-ec36-421f-8554-c9ad37907a6d
-ms.date: 05/03/2018
+ms.date: 04/20/2022
 keywords: ["wiauRegGetDwordA function"]
 ms.keywords: image.wiaureggetdword, wiauFncs_a58ebb21-21ce-4815-9dd6-5a1906412a2f.xml, wiauRegGetDword, wiauRegGetDword function [Imaging Devices], wiauRegGetDwordA, wiauRegGetDwordW, wiautil/wiauRegGetDword
 req.header: wiautil.h
@@ -30,6 +28,8 @@ req.typenames:
 f1_keywords:
  - wiauRegGetDwordA
  - wiautil/wiauRegGetDwordA
+ - wiauRegGetDword
+ - wiautil/wiauRegGetDword
 topic_type:
  - APIRef
  - kbSyntax
@@ -38,34 +38,27 @@ api_type:
 api_location:
  - wiautil.h
 api_name:
+ - wiauRegGetDwordA
  - wiauRegGetDword
 ---
 
-# wiauRegGetDwordA function
-
-
 ## -description
 
-The <b>wiauRegGetDword</b> function gets a <b>DWORD</b> value from the <b>DeviceData</b> section of the registry.
+The **wiauRegGetDword** function gets a **DWORD** value from the **DeviceData** section of the registry.
 
 ## -parameters
 
-### -param hkKey 
+### -param hkKey [in]
 
-[in]
-Specifies the registry key handle. This parameter should be set to the value pointed to by the <i>phkeyDeviceData </i>parameter when <a href="/windows-hardware/drivers/ddi/wiautil/nf-wiautil-wiauregopendataw">wiauRegOpenData</a> returns.
+Specifies the registry key handle. This parameter should be set to the value pointed to by the *phkeyDeviceData*parameter when [wiauRegOpenData](./nf-wiautil-wiauregopendataw.md) returns.
 
-### -param pszValueName
-
-### -param pdwValue 
-
-[out]
-Pointer to a memory location that receives the returned DWORD value.
-
-
-#### - pwszValueName [in]
+### -param pszValueName [in]
 
 Points to the first byte of a Unicode string containing the name of the registry entry.
+
+### -param pdwValue [out]
+
+Pointer to a memory location that receives the returned DWORD value.
 
 ## -returns
 
@@ -73,8 +66,6 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/wiautil/nf-wiautil-wiaureggetstrw">wiauRegGetStr</a>
+[wiauRegGetStr](./nf-wiautil-wiaureggetstrw.md)
 
-
-
-<a href="/windows-hardware/drivers/ddi/wiautil/nf-wiautil-wiauregopendataw">wiauRegOpenData</a>
+[wiauRegOpenData](./nf-wiautil-wiauregopendataw.md)

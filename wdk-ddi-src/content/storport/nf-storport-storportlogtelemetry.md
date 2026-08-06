@@ -4,7 +4,6 @@ title: StorPortLogTelemetry function (storport.h)
 description: The StorPortLogTelemetry routine logs a miniport telemetry event to help diagnose or collect any useful information.
 old-location: storage\storportlogtelemetry.htm
 tech.root: storage
-ms.assetid: 3B32F31C-3850-43D4-9C6E-40D35B8AF4D4
 ms.date: 03/29/2018
 keywords: ["StorPortLogTelemetry function"]
 ms.keywords: StorPortLogTelemetry, StorPortLogTelemetry routine [Storage Devices], storage.storportlogtelemetry, storport/StorPortLogTelemetry
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 ms.custom: 19H1
@@ -53,19 +52,19 @@ The **StorPortLogTelemetry** routine logs a miniport telemetry event to help dia
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param StorAddress 
+### -param StorAddress [in, optional]
 
-[in, optional]
+
 The storage unit device address. This parameter is NULL for adapter devices.
 
-### -param Event 
+### -param Event [in]
 
-[in]
+
 Pointer to the STORPORT_TELEMETRY_EVENT structure that contains the telemetry data payload.
 
 ## -returns

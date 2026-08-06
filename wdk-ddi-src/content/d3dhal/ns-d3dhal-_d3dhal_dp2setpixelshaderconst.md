@@ -4,7 +4,6 @@ title: _D3DHAL_DP2SETPIXELSHADERCONST (d3dhal.h)
 description: DirectX 8.0 and later versions only. The D3DHAL_DP2SETPIXELSHADERCONST structure is used to set one or more of the pixel shader constant registers when the D3DDP2OP_SETPIXELSHADERCONST opcode is received by D3dDrawPrimitives2.
 old-location: display\d3dhal_dp2setpixelshaderconst.htm
 tech.root: display
-ms.assetid: 8431fee3-d8c9-4c31-aa74-f5ce55f7fdcd
 ms.date: 05/10/2018
 keywords: ["D3DHAL_DP2SETPIXELSHADERCONST structure"]
 ms.keywords: "*LPD3DHAL_DP2SETPIXELSHADERCONST, *LPD3DHAL_DP2SETPIXELSHADERCONSTB, *LPD3DHAL_DP2SETPIXELSHADERCONSTI, D3DHAL_DP2SETPIXELSHADERCONST, D3DHAL_DP2SETPIXELSHADERCONST structure [Display Devices], D3DHAL_DP2SETPIXELSHADERCONSTB, D3DHAL_DP2SETPIXELSHADERCONSTI, _D3DHAL_DP2SETPIXELSHADERCONST, d3dhal/D3DHAL_DP2SETPIXELSHADERCONST, d3dstrct_927a3360-7000-4cf0-99c7-f02407ae63eb.xml, display.d3dhal_dp2setpixelshaderconst"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dhal.h
 api_name:
+ - _D3DHAL_DP2SETPIXELSHADERCONST
  - D3DHAL_DP2SETPIXELSHADERCONST
 ---
 
@@ -84,3 +84,4 @@ D3DDP2OP_SETPIXELSHADERCONST
 
 
 <a href="/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb">D3dDrawPrimitives2</a>
+

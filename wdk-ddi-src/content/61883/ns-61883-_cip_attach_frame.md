@@ -4,7 +4,6 @@ title: _CIP_ATTACH_FRAME (61883.h)
 description: This structure is used in an attach frame request.
 old-location: ieee\cip_attach_frame.htm
 tech.root: IEEE
-ms.assetid: F7E283BB-B714-4CD4-AFF4-EFB62D82791D
 ms.date: 02/15/2018
 keywords: ["CIP_ATTACH_FRAME structure"]
 ms.keywords: "*PCIP_ATTACH_FRAME, 61883/CIP_ATTACH_FRAME, 61883/PCIP_ATTACH_FRAME, CIP_ATTACH_FRAME, CIP_ATTACH_FRAME structure [Buses], IEEE.cip_attach_frame, PCIP_ATTACH_FRAME, PCIP_ATTACH_FRAME structure pointer [Buses], _CIP_ATTACH_FRAME"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _CIP_ATTACH_FRAME
+ - PCIP_ATTACH_FRAME
  - CIP_ATTACH_FRAME
 ---
 
@@ -81,3 +82,4 @@ If the protocol driver is unable to allocate resources, it sets <b>Irp->IoStatus
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_av_61883_request">AV_61883_REQUEST</a>
+

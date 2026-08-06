@@ -4,7 +4,6 @@ title: _NDIS_WWAN_SMS_SEND_STATUS (ndiswwan.h)
 description: The NDIS_WWAN_SMS_SEND_STATUS structure represents the status of a sent SMS text message.
 old-location: netvista\ndis_wwan_sms_send_status.htm
 tech.root: netvista
-ms.assetid: 2664fed3-c1fb-4f84-b265-d1b0d8a0ca04
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_SMS_SEND_STATUS structure"]
 ms.keywords: "*PNDIS_WWAN_SMS_SEND_STATUS, NDIS_WWAN_SMS_SEND_STATUS, NDIS_WWAN_SMS_SEND_STATUS structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_SEND_STATUS, PNDIS_WWAN_SMS_SEND_STATUS structure pointer [Network Drivers Starting with Windows Vista], WwanRef_5ca36240-d372-4887-887f-8b2b209a5c8a.xml, _NDIS_WWAN_SMS_SEND_STATUS, ndiswwan/NDIS_WWAN_SMS_SEND_STATUS, ndiswwan/PNDIS_WWAN_SMS_SEND_STATUS, netvista.ndis_wwan_sms_send_status"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_SMS_SEND_STATUS
+ - PNDIS_WWAN_SMS_SEND_STATUS
  - NDIS_WWAN_SMS_SEND_STATUS
 ---
 
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_SMS_SEND_STATUS)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field uStatus
 
@@ -116,4 +117,5 @@ A reference number that is returned upon successful delivery of the SMS text mes
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
+

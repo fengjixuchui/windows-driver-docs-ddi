@@ -4,14 +4,13 @@ title: FsRtlResetLargeMcb function (ntifs.h)
 description: The FsRtlResetLargeMcb routine truncates a map control block (MCB) structure to contain zero mapping pairs. It does not shrink the mapping pairs array.
 old-location: ifsk\fsrtlresetlargemcb.htm
 tech.root: ifsk
-ms.assetid: 49134501-165a-4296-b4c6-3f1e7ae9d485
 ms.date: 04/16/2018
 keywords: ["FsRtlResetLargeMcb function"]
 ms.keywords: FsRtlResetLargeMcb, FsRtlResetLargeMcb routine [Installable File System Drivers], fsrtlref_947ccacb-eef2-44d8-9b73-1b8aa930cd03.xml, ifsk.fsrtlresetlargemcb, ntifs/FsRtlResetLargeMcb
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: This routine is available on Microsoft Windows XP and later.
+req.target-min-winverclnt: Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -53,14 +52,14 @@ The <b>FsRtlResetLargeMcb</b> routine truncates a map control block (MCB) struct
 
 ## -parameters
 
-### -param Mcb 
+### -param Mcb [in]
 
-[in]
+
 Pointer to the MCB structure to truncate.
 
-### -param SelfSynchronized 
+### -param SelfSynchronized [in]
 
-[in]
+
 Indicates whether the caller is already synchronized with respect to the MCB.
 
 ## -remarks

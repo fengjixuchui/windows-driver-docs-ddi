@@ -4,7 +4,6 @@ title: IKeywordDetectorOemAdapter::VerifyUserKeyword (keyworddetectoroemadapter.
 description: The VerifyUserKeyword method is used by the training user experience to verify that one instance of a spoken utterance, captured during training, matches a predefined keyword within some tolerance.
 old-location: audio\ikeyworddetectoroemadapter_verifyuserkeyword.htm
 tech.root: audio
-ms.assetid: AFF679B6-B389-4EA2-8834-9B1B47412B7D
 ms.date: 05/08/2018
 keywords: ["IKeywordDetectorOemAdapter::VerifyUserKeyword"]
 ms.keywords: IKeywordDetectorOemAdapter interface [Audio Devices],VerifyUserKeyword method, IKeywordDetectorOemAdapter.VerifyUserKeyword, IKeywordDetectorOemAdapter::VerifyUserKeyword, VerifyUserKeyword, VerifyUserKeyword method [Audio Devices], VerifyUserKeyword method [Audio Devices],IKeywordDetectorOemAdapter interface, audio.ikeyworddetectoroemadapter_verifyuserkeyword, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::VerifyUserKeyword
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - KeywordDetectorOemAdapter.h
 api_name:
- - IKeywordDetectorOemAdapter.VerifyUserKeyword
+ - IKeywordDetectorOemAdapter::VerifyUserKeyword
 ---
 
 # IKeywordDetectorOemAdapter::VerifyUserKeyword
@@ -50,29 +49,29 @@ The <b>VerifyUserKeyword</b> method is used by the training user experience  to 
 
 ## -parameters
 
-### -param ModelData 
+### -param ModelData [in]
 
-[in]
+
 A pointer to an <b>IStream</b> object bound to model data for a given stored model. On the initial call this will be empty.
 
-### -param KeywordId 
+### -param KeywordId [in]
 
-[in]
+
 The <a href="/windows-hardware/drivers/ddi/keyworddetectoroemadapter/ne-keyworddetectoroemadapter-__midl_ikeyworddetectoroemadapter_0002">KEYWORDID</a> in the  <i>UserRecording</i> parameter.
 
-### -param LangId 
+### -param LangId [in]
 
-[in]
+
 The <b>LANGID</b> of the spoken language in the <i>UserRecording</i> parameter.
 
-### -param KeywordEndBytePos 
+### -param KeywordEndBytePos [in]
 
-[in]
+
 Indicates the end of the keyword in the UserRecording.
 
-### -param UserRecording 
+### -param UserRecording [in]
 
-[in]
+
 A pointer to the buffer containing the raw data in the appropriate <a href="/windows/win32/api/mfobjects/nn-mfobjects-imfmediatype">IMFMediaType</a> format.
 
 The user recording must have the following attributes:
@@ -187,3 +186,4 @@ Note that audio is processed in a unique way for voice activation training. The 
 
 
 <a href="/windows-hardware/drivers/ddi/keyworddetectoroemadapter/ne-keyworddetectoroemadapter-__midl_ikeyworddetectoroemadapter_0002">KEYWORDID</a>
+

@@ -4,7 +4,6 @@ title: RtlCompareMemoryUlong function (ntifs.h)
 description: The RtlCompareMemoryUlong routine returns how many bytes in a block of memory match a specified pattern.
 old-location: ifsk\rtlcomparememoryulong.htm
 tech.root: ifsk
-ms.assetid: 78ff21da-be0f-4b57-9162-1052a6c12b5c
 ms.date: 04/16/2018
 keywords: ["RtlCompareMemoryUlong function"]
 ms.keywords: RtlCompareMemoryUlong, RtlCompareMemoryUlong routine [Installable File System Drivers], ifsk.rtlcomparememoryulong, ntifs/RtlCompareMemoryUlong, rtlref_a220e168-945b-46d1-9aa7-7750bdfc39bd.xml
@@ -51,19 +50,19 @@ The <b>RtlCompareMemoryUlong</b> routine returns how many bytes in a block of me
 
 ## -parameters
 
-### -param Source 
+### -param Source [in]
 
-[in]
+
 Pointer to a block of memory. Must be aligned on a ULONG boundary.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Number of bytes over which the comparison should be done. Must be a multiple of <b>sizeof(</b>ULONG<b>)</b>.
 
-### -param Pattern 
+### -param Pattern [in]
 
-[in]
+
 Pattern to be compared byte by byte, repeatedly, through the specified memory range.
 
 ## -returns
@@ -74,7 +73,7 @@ Pattern to be compared byte by byte, repeatedly, through the specified memory ra
 
 If the block of memory at <i>Source</i> is nonpaged, the caller can be running at any IRQL. Otherwise, callers of <b>RtlCompareMemoryUlong</b> must be running at IRQL < DISPATCH_LEVEL. 
 
-For more information about managing buffered data and initializing driver-allocated buffers, see <a href="/windows-hardware/drivers/ddi/index">Buffered Data and Buffer Initialization</a>.
+For more information about managing buffered data and initializing driver-allocated buffers, see <a href="/windows-hardware/drivers/ddi/_kernel/#buffered-data-and-buffer-initialization">Buffered Data and Buffer Initialization</a>.
 
 ## -see-also
 

@@ -2,7 +2,6 @@
 UID: NS:d3dkmddi._DXGKARG_SUBMITCOMMANDTOHWQUEUE
 title: _DXGKARG_SUBMITCOMMANDTOHWQUEUE (d3dkmddi.h)
 description: Arguments used to submit a command to the hardware queue.
-ms.assetid: 914e7a49-0336-4c99-850f-95defcc4218e
 ms.date: 10/19/2018
 keywords: ["DXGKARG_SUBMITCOMMANDTOHWQUEUE structure"]
 ms.keywords: _DXGKARG_SUBMITCOMMANDTOHWQUEUE, DXGKARG_SUBMITCOMMANDTOHWQUEUE,
@@ -34,8 +33,7 @@ api_location:
  - d3dkmddi.h
 api_name:
  - _DXGKARG_SUBMITCOMMANDTOHWQUEUE
-product:
- - Windows
+ - DXGKARG_SUBMITCOMMANDTOHWQUEUE
 ---
 
 # _DXGKARG_SUBMITCOMMANDTOHWQUEUE structure
@@ -47,9 +45,9 @@ Arguments used to submit a command to the hardware queue.
 
 ## -struct-fields
 
-### -field hHwQueue
+### -field hHwQueue [in]
 
-[in] Hardware queue being submitted to.
+Hardware queue being submitted to.
 
 ### -field HwQueueProgressFenceId
 

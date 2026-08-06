@@ -4,7 +4,6 @@ title: IAction (wdtf.h)
 description: The IAction interfaces are plug-ins that can control an instance of the IWDTFTarget2 interface.
 old-location: dtf\iaction.htm
 tech.root: dtf
-ms.assetid: 9bc709cb-1adb-4b70-b8cb-9168ccb7b259
 ms.date: 04/04/2018
 keywords: ["IAction interface"]
 ms.keywords: IAction, IAction interface [Windows Device Testing Framework], IAction interface [Windows Device Testing Framework],described, IAction_d82d1b27-acd4-43f6-b020-a9a9fa5dbe60.xml, Microsoft.WDTF.IAction, dtf.iaction, wdtf/IAction
@@ -39,7 +38,6 @@ api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
  - IAction
- - IAction.SetTarget
 ---
 
 # IAction interface
@@ -52,10 +50,8 @@ The <b>IAction</b> interfaces are plug-ins that can control an instance of the
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IAction</b> interface inherits from <a href="/windows-hardware/drivers/ddi/index">ITracing</a>. <b>IAction</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IAction</b> interface inherits from <a href="/windows-hardware/drivers/ddi/index">ITracing</a>. <b>IAction</b> also has these types of members:
+
 
 ## -remarks
 
@@ -80,3 +76,4 @@ For a listing of all action interfaces included in WDTF, see <a href="/windows-h
 
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nf-wdtf-iwdtftarget2-getinterface">IWDTFTarget2::GetInterface</a>
+

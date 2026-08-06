@@ -4,7 +4,6 @@ title: MmUnmapReservedMapping function (wdm.h)
 description: The MmUnmapReservedMapping routine unmaps a memory buffer that was mapped by the MmMapLockedPagesWithReservedMapping routine.
 old-location: kernel\mmunmapreservedmapping.htm
 tech.root: kernel
-ms.assetid: 5f2bb0ef-af54-48e7-a2f5-8c8877bedb4a
 ms.date: 04/30/2018
 keywords: ["MmUnmapReservedMapping function"]
 ms.keywords: MmUnmapReservedMapping, MmUnmapReservedMapping routine [Kernel-Mode Driver Architecture], k106_48bc7719-e11c-4c70-a976-c7fbecbff464.xml, kernel.mmunmapreservedmapping, wdm/MmUnmapReservedMapping
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,19 +49,19 @@ The <b>MmUnmapReservedMapping</b> routine unmaps a memory buffer that was mapped
 
 ## -parameters
 
-### -param BaseAddress 
+### -param BaseAddress [in]
 
-[in]
+
 Pointer to the beginning of the reserved virtual memory range. This must be an address returned by <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-mmmaplockedpageswithreservedmapping">MmMapLockedPagesWithReservedMapping</a>.
 
-### -param PoolTag 
+### -param PoolTag [in]
 
-[in]
+
 Specifies the pool tag for the reserved memory buffer. This must be identical to the value specified in the <i>PoolTag</i> parameter of the call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-mmallocatemappingaddress">MmAllocateMappingAddress</a> that initially reserved the buffer.
 
-### -param MemoryDescriptorList 
+### -param MemoryDescriptorList [in]
 
-[in]
+
 Pointer to the MDL that describes the physical memory mapping.
 
 ## -see-also

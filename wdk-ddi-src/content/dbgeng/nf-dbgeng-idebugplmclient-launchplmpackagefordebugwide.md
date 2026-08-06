@@ -4,7 +4,6 @@ title: IDebugPlmClient::LaunchPlmPackageForDebugWide (dbgeng.h)
 description: Launches a suspended Process Lifecycle Management (PLM) application.
 old-location: debugger\idebugplmclient_launchplmpackagefordebugwide.htm
 tech.root: debugger
-ms.assetid: DE11B4A5-5AE3-4369-AF6D-6CE34B9AAFAB
 ms.date: 05/03/2018
 keywords: ["IDebugPlmClient::LaunchPlmPackageForDebugWide"]
 ms.keywords: IDebugPlmClient interface [Windows Debugging],LaunchPlmPackageForDebugWide method, IDebugPlmClient.LaunchPlmPackageForDebugWide, IDebugPlmClient::LaunchPlmPackageForDebugWide, LaunchPlmPackageForDebugWide, LaunchPlmPackageForDebugWide method [Windows Debugging], LaunchPlmPackageForDebugWide method [Windows Debugging],IDebugPlmClient interface, dbgeng/IDebugPlmClient::LaunchPlmPackageForDebugWide, debugger.idebugplmclient_launchplmpackagefordebugwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugPlmClient.LaunchPlmPackageForDebugWide
+ - IDebugPlmClient::LaunchPlmPackageForDebugWide
 ---
 
 # IDebugPlmClient::LaunchPlmPackageForDebugWide
@@ -50,39 +49,39 @@ Launches a suspended Process Lifecycle Management (PLM) application.
 
 ## -parameters
 
-### -param Server 
+### -param Server [in]
 
-[in]
+
 The server of the application.
 
-### -param Timeout 
+### -param Timeout [in]
 
-[in]
+
 A time-out value.
 
-### -param PackageFullName 
+### -param PackageFullName [in]
 
-[in]
+
 A pointer to the package name.
 
-### -param AppName 
+### -param AppName [in]
 
-[in]
+
 A pointer to the application name.
 
-### -param Arguments 
+### -param Arguments [in, optional]
 
-[in, optional]
+
 A pointer an arguments string.
 
-### -param ProcessId 
+### -param ProcessId [out]
 
-[out]
+
 A pointer to a process ID output.
 
-### -param ThreadId 
+### -param ThreadId [out]
 
-[out]
+
 A pointer to a thread ID output.
 
 ## -returns
@@ -92,3 +91,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugplmclient">IDebugPlmClient</a>
+

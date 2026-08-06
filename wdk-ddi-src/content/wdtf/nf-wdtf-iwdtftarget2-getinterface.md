@@ -4,8 +4,7 @@ title: IWDTFTarget2::GetInterface (wdtf.h)
 description: Returns an action for the target.
 old-location: dtf\iwdtftarget2_getinterface.htm
 tech.root: dtf
-ms.assetid: dddd631e-7ccf-4554-9236-b567c5108fe2
-ms.date: 04/04/2018
+ms.date: 08/14/2023
 keywords: ["IWDTFTarget2::GetInterface"]
 ms.keywords: GetInterface, GetInterface method [Windows Device Testing Framework], GetInterface method [Windows Device Testing Framework],IWDTFTarget2 interface, IWDTFTarget2 interface [Windows Device Testing Framework],GetInterface method, IWDTFTarget2.GetInterface, IWDTFTarget2::GetInterface, Microsoft.WDTF.IWDTFTarget2.GetInterface, Microsoft::WDTF::IWDTFTarget2::GetInterface, dtf.iwdtftarget2_getinterface, wdtf/IWDTFTarget2::GetInterface
 req.header: wdtf.h
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFTarget2.GetInterface
+ - IWDTFTarget2::GetInterface
 ---
 
 # IWDTFTarget2::GetInterface
-
 
 ## -description
 
@@ -54,35 +52,15 @@ Returns an action for the target.
 
 ### -param Args
 
-### -param MonikerSuffix 
+### -param MonikerSuffix [in, optional]
 
-[in, optional]
-An optional moniker that defines more options about how 
-the interface should be instantiated. 
+An optional moniker that defines more options about how the interface should be instantiated.
 
-This parameter is not yet implemented. 
-Set <i>MonikerSuffix </i>to a <b>VARIANT</b> that 
-contains <b>VT_EMPTY</b>.
+This parameter is not yet implemented. Set <i>MonikerSuffix </i>to a <b>VARIANT</b> that contains <b>VT_EMPTY</b>.
 
-### -param ppInterface 
+### -param ppInterface [out, retval]
 
-[out, retval]
 The address of a variable that will receive the action.
-
-
-#### - MoreTargets [in, optional]
-
-Optional extra arguments that you can use to 
-define additional targets to attach to the returned interface. 
-
-This parameter is not 
-currently implemented. Set <i>MoreTargets</i> to a <b>VARIANT</b> 
-that contains <b>VT_EMPTY</b>.
-
-
-#### - ProgID [in]
-
-The WDTF ProgID of the requested interface.
 
 ## -returns
 
@@ -95,7 +73,7 @@ The <b>GetInterface</b> method is the most useful method in the WDTF object mode
 implementation of an action interface without caring about the specifics of the target.
 
 To write a WDTF scenario, you must understand both the syntax and the semantics of the 
-requested action interface. 
+requested action interface.
 
 For more information about the <b>GetInterface</b> method, 
 see <a href="/windows-hardware/drivers/wdtf/controlling-targets">Controlling Targets</a>.
@@ -106,3 +84,4 @@ see <a href="/windows-hardware/drivers/ddi/index">Action Interfaces</a>.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftarget2">IWDTFTarget2</a>
+

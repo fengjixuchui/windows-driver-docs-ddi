@@ -4,7 +4,6 @@ title: ExReleaseRundownProtectionEx function (wdm.h)
 description: The ExReleaseRundownProtectionEx routine releases run-down protection that the caller previously acquired by calling the ExAcquireRundownProtectionEx routine.
 old-location: kernel\exreleaserundownprotectionex.htm
 tech.root: kernel
-ms.assetid: 9CF77F14-93E5-4742-A01C-770BC814507C
 ms.date: 04/30/2018
 keywords: ["ExReleaseRundownProtectionEx function"]
 ms.keywords: ExReleaseRundownProtectionEx, ExReleaseRundownProtectionEx routine [Kernel-Mode Driver Architecture], kernel.exreleaserundownprotectionex, wdm/ExReleaseRundownProtectionEx
@@ -50,14 +49,14 @@ The <b>ExReleaseRundownProtectionEx</b> routine releases run-down protection tha
 
 ## -parameters
 
-### -param RunRef 
+### -param RunRef [in, out]
 
-[in, out]
+
 A pointer to an <a href="/windows-hardware/drivers/kernel/eprocess">EX_RUNDOWN_REF</a> structure that was initialized by a previous call to the  <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-exinitializerundownprotection">ExInitializeRundownProtection</a> routine. The run-down protection routines use this structure to track the run-down status of the associated shared object. This structure is opaque to drivers.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 The amount by which to decrement to the run-down instance count of the object. For more information, see Remarks.
 
 ## -remarks

@@ -1,10 +1,9 @@
 ---
 UID: NS:1394._ADDRESS_FIFO
 title: _ADDRESS_FIFO (1394.h)
-description: The ADDRESS_FIFO structure is an entry in a singly-linked list of MDLs used by the REQUEST_ALLOCATE_ADDRESS_RANGE IEEE 1394 bus request.
+description: The ADDRESS_FIFO structure is an entry in a singly-linked list of MDLs that the REQUEST_ALLOCATE_ADDRESS_RANGE IEEE 1394 bus request uses.
 old-location: ieee\address_fifo.htm
 tech.root: IEEE
-ms.assetid: df2b6438-271d-4ea2-a06b-49a83415ca7a
 ms.date: 02/15/2018
 keywords: ["ADDRESS_FIFO structure"]
 ms.keywords: "*PADDRESS_FIFO, 1394/ADDRESS_FIFO, 1394/PADDRESS_FIFO, 1394stct_bf7f3e1b-88a4-4c37-88ee-cf5d69595988.xml, ADDRESS_FIFO, ADDRESS_FIFO structure [Buses], IEEE.address_fifo, PADDRESS_FIFO, PADDRESS_FIFO structure pointer [Buses], _ADDRESS_FIFO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _ADDRESS_FIFO
+ - PADDRESS_FIFO
  - ADDRESS_FIFO
 ---
 
@@ -68,4 +69,5 @@ Specifies the MDL for the FIFO element described by this entry of the list.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537632">REQUEST_ALLOCATE_ADDRESS_RANGE</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ALLOCATE_ADDRESS_RANGE</a>
+

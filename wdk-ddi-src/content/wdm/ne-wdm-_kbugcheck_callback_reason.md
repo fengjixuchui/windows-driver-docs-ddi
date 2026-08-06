@@ -4,7 +4,6 @@ title: _KBUGCHECK_CALLBACK_REASON (wdm.h)
 description: The KBUGCHECK_CALLBACK_REASON enumeration type specifies the situations in which a bug-check callback executes.
 old-location: kernel\kbugcheck_callback_reason.htm
 tech.root: kernel
-ms.assetid: 08246843-9b6e-4694-8475-acb02fbdd82b
 ms.date: 05/06/2019
 keywords: ["KBUGCHECK_CALLBACK_REASON enumeration"]
 ms.keywords: KBUGCHECK_CALLBACK_REASON, KBUGCHECK_CALLBACK_REASON enumeration [Kernel-Mode Driver Architecture], KbCallbackAddPages, KbCallbackDumpIo, KbCallbackInvalid, KbCallbackReserved1, KbCallbackSecondaryDumpData, _KBUGCHECK_CALLBACK_REASON, kernel.kbugcheck_callback_reason, sysenum_e8373f57-7ba5-44ad-9ad9-4110710732ee.xml, wdm/KBUGCHECK_CALLBACK_REASON, wdm/KbCallbackAddPages, wdm/KbCallbackDumpIo, wdm/KbCallbackInvalid, wdm/KbCallbackReserved1, wdm/KbCallbackSecondaryDumpData
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _KBUGCHECK_CALLBACK_REASON
  - KBUGCHECK_CALLBACK_REASON
 ---
 
@@ -84,6 +84,14 @@ The callback function removes one or more pages of driver-supplied data from the
 
 Specifies that the callback is executed to add virtual memory ranges the driver wants to preserve in the carved minidump file. This enumeration value is supported starting in Windows 10, version 1809 and Windows Server 2019. For more information about this type of callback, see <a href="/windows-hardware/drivers/kernel/writing-a-bug-check-callback-routine#implementing-a-kbcallbacktriagedumpdata-callback-routine">Implementing a KbCallbackTriageDumpData Callback Routine</a>.
 
+### -field KbCallbackReserved2
+
+Reserved for system use. Do not use.
+
+### -field KbCallbackReserved3
+
+Reserved for system use. Do not use.
+
 ## -remarks
 
 A driver uses this enumeration to specify the type of [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](./nc-wdm-kbugcheck_reason_callback_routine.md) callback routine to register when it calls the [**KeRegisterBugCheckReasonCallback**](./nf-wdm-keregisterbugcheckreasoncallback.md) function.
@@ -97,3 +105,4 @@ For information about how this enumeration is used, see <a href="/windows-hardwa
 <a href="/windows-hardware/drivers/kernel/eprocess">KBUGCHECK_REASON_CALLBACK_RECORD</a>
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keregisterbugcheckreasoncallback">KeRegisterBugCheckReasonCallback</a>
+

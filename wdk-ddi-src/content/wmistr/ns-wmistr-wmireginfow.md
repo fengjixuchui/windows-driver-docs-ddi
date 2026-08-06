@@ -1,10 +1,9 @@
 ---
-UID: NS:wmistr.__unnamed_struct_2
+UID: NS:wmistr.WMIREGINFOW
 title: WMIREGINFOW (wmistr.h)
 description: The WMIREGINFO structure contains information provided by a driver to register or update its data blocks and event blocks.
 old-location: kernel\wmireginfo.htm
 tech.root: kernel
-ms.assetid: 7331b30f-f61c-445c-ac0f-07c887ae92d7
 ms.date: 04/30/2018
 keywords: ["WMIREGINFOW structure"]
 ms.keywords: "*PWMIREGINFOW, PWMIREGINFOW, PWMIREGINFOW structure pointer [Kernel-Mode Driver Architecture], WMIREGINFO, WMIREGINFOW, WMIREGINFOW structure [Kernel-Mode Driver Architecture], kernel.wmireginfo, kstruct_d_2c5c2f97-d385-4cd6-8b0f-c27d4b21ea11.xml, wmistr/PWMIREGINFOW, wmistr/WMIREGINFOW"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wmistr.h
 api_name:
+ - PWMIREGINFOW
  - WMIREGINFOW
 ---
 
@@ -99,3 +99,4 @@ A driver can use the same <b>WMIREGINFO</b> structure(s) to remove or update blo
 
 
 <a href="/windows-hardware/drivers/ddi/wmistr/ns-wmistr-wmiregguidw">WMIREGGUID</a>
+

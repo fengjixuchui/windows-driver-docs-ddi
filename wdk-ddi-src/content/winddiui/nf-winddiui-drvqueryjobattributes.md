@@ -4,7 +4,6 @@ title: DrvQueryJobAttributes function (winddiui.h)
 description: The DrvQueryJobAttributes function allows a printer interface DLL to specify support for such capabilities as printing multiple document pages on a physical page (N-up printing), printing multiple copies of each page, collating pages, and printing pages in reverse order.
 old-location: print\drvqueryjobattributes.htm
 tech.root: print
-ms.assetid: 71e07572-bb15-4838-94d1-e07a3305ab82
 ms.date: 06/25/2020
 keywords: ["DrvQueryJobAttributes function"]
 ms.keywords: DrvQueryJobAttributes, DrvQueryJobAttributes function [Print Devices], print.drvqueryjobattributes, print_interface-graphics_3fc2f9a4-bfe5-4323-a73e-6ac3ca9cf217.xml, winddiui/DrvQueryJobAttributes
@@ -50,19 +49,19 @@ The **DrvQueryJobAttributes** function allows a printer interface DLL to specify
 
 ## -parameters
 
-### -param hPrinter 
+### -param hPrinter [in]
 
-[in]
+
 Caller-supplied printer handle.
 
-### -param pDevMode 
+### -param pDevMode [in]
 
-[in]
+
 Caller-supplied pointer to a [DEVMODEW](/windows/win32/api/wingdi/ns-wingdi-devmodew) structure.
 
-### -param dwLevel 
+### -param dwLevel [in]
 
-[in]
+
 Caller-supplied value indicating the type of structure pointed to by *lpAttributeInfo*, as indicated in the following table.
 
 | *dwLevel* value | ColumStructure pointed to by *lpAttributeInfo* |
@@ -72,9 +71,9 @@ Caller-supplied value indicating the type of structure pointed to by *lpAttribut
 | 3 | [ATTRIBUTE_INFO_3](./ns-winddiui-_attribute_info_3.md) |
 | 4 | [ATTRIBUTE_INFO_4](./ns-winddiui-_attribute_info_4.md) |
 
-### -param lpAttributeInfo 
+### -param lpAttributeInfo [out]
 
-[out]
+
 Caller-supplied pointer to a structure identified by *dwLevel*.
 
 ## -returns

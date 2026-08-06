@@ -1,13 +1,11 @@
 ---
+description: "Learn more about: Driver test tools"
 UID: TP:devtest
 title: Driver test tools
 ms.assetid: df82015f-ea9d-3150-8041-fb2c5ed17afc
 ms.date: 09/18/2020
 keywords: ["Driver test tools"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 ---
 
 # Driver test tools

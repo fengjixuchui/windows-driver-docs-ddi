@@ -4,7 +4,6 @@ title: IPortClsPnp::UnregisterAdapterPnpManagement (portcls.h)
 description: The UnRegisterAdapterPowerManagement method unregisters the PnP management interface of the adapter from PortCls.
 old-location: audio\iportclspnp_unregisteradapterpnpmanagement.htm
 tech.root: audio
-ms.assetid: 7FAA5C88-2846-4C98-A44A-B53A1A7A953C
 ms.date: 05/08/2018
 keywords: ["IPortClsPnp::UnregisterAdapterPnpManagement"]
 ms.keywords: IPortClsPnp interface [Audio Devices],UnregisterAdapterPnpManagement method, IPortClsPnp.UnregisterAdapterPnpManagement, IPortClsPnp::UnregisterAdapterPnpManagement, UnregisterAdapterPnpManagement, UnregisterAdapterPnpManagement method [Audio Devices], UnregisterAdapterPnpManagement method [Audio Devices],IPortClsPnp interface, audio.iportclspnp_unregisteradapterpnpmanagement, portcls/IPortClsPnp::UnregisterAdapterPnpManagement
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IPortClsPnp.UnregisterAdapterPnpManagement
+ - IPortClsPnp::UnregisterAdapterPnpManagement
 ---
 
 # IPortClsPnp::UnregisterAdapterPnpManagement
@@ -50,9 +49,9 @@ The <code>UnRegisterAdapterPowerManagement</code> method unregisters the PnP man
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Specifies a pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter that the PnP management was registered with earlier using <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclspnp-registeradapterpnpmanagement">IPortClsPnp::RegisterAdapterPnpManagement</a>.
 
 ## -returns
@@ -70,3 +69,4 @@ For more information,  see <a href="/windows-hardware/drivers/audio/implement-pn
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclspnp-registeradapterpnpmanagement">IPortClsPnp::RegisterAdapterPnpManagement</a>
+

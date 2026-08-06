@@ -4,7 +4,6 @@ title: _DRIVE_LAYOUT_INFORMATION_EX (ntdddisk.h)
 description: The DRIVE_LAYOUT_INFORMATION_EX structure is used to report information about the driver layout.
 old-location: storage\drive_layout_information_ex.htm
 tech.root: storage
-ms.assetid: e077f9a6-1d94-4d17-9166-b23756df6cc8
 ms.date: 03/29/2018
 keywords: ["DRIVE_LAYOUT_INFORMATION_EX structure"]
 ms.keywords: "*PDRIVE_LAYOUT_INFORMATION_EX, DRIVE_LAYOUT_INFORMATION_EX, DRIVE_LAYOUT_INFORMATION_EX structure [Storage Devices], PDRIVE_LAYOUT_INFORMATION_EX, PDRIVE_LAYOUT_INFORMATION_EX structure pointer [Storage Devices], _DRIVE_LAYOUT_INFORMATION_EX, ntdddisk/DRIVE_LAYOUT_INFORMATION_EX, ntdddisk/PDRIVE_LAYOUT_INFORMATION_EX, storage.drive_layout_information_ex, structs-disk_e6755f07-50a7-48db-a39c-4485f3fb7b93.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntdddisk.h
 api_name:
+ - _DRIVE_LAYOUT_INFORMATION_EX
+ - PDRIVE_LAYOUT_INFORMATION_EX
  - DRIVE_LAYOUT_INFORMATION_EX
 ---
 
@@ -99,3 +100,4 @@ This structure is used for both reading and writing disk partition information. 
 
 
 <a href="/previous-versions/windows/hardware/drivers/ff563773(v=vs.85)">PARTITION_STYLE</a>
+

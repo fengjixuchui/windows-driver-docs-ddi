@@ -4,7 +4,6 @@ title: IWDFWorkItem (wudfddi.h)
 description: This interface exposes a work item object.
 old-location: wdf\iwdfworkitem.htm
 tech.root: wdf
-ms.assetid: F9EDA26E-92E0-4936-87B7-E1E2A02A9D96
 ms.date: 02/26/2018
 keywords: ["IWDFWorkItem interface"]
 ms.keywords: IWDFWorkItem, IWDFWorkItem interface, IWDFWorkItem interface,described, umdf.iwdfworkitem, wdf.iwdfworkitem, wudfddi/IWDFWorkItem
@@ -52,9 +51,9 @@ This interface exposes a work item object.
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFWorkItem</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a>. <b>IWDFWorkItem</b> also has these types of members:
+The <b>IWDFWorkItem</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfobject">IWDFObject</a>. <b>IWDFWorkItem</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>
 
 ## -see-also

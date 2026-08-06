@@ -4,7 +4,6 @@ title: RxFinalizeNetFcb function (rxprocs.h)
 description: RxFinalizeNetFCB finalizes the given FCB structure. The caller must have an exclusive lock on the NET_ROOT associated with FCB.
 old-location: ifsk\rxfinalizenetfcb.htm
 tech.root: ifsk
-ms.assetid: 1eed44e2-f9ed-45a1-a5fa-dbf6a9c7c703
 ms.date: 04/16/2018
 keywords: ["RxFinalizeNetFcb function"]
 ms.keywords: RxFinalizeNetFCB, RxFinalizeNetFcb, RxFinalizeNetFcb function [Installable File System Drivers], ifsk.rxfinalizenetfcb, rxprocs/RxFinalizeNetFcb, rxref_5aaa19aa-c75c-4978-b731-f3046e84217d.xml
@@ -50,26 +49,26 @@ api_name:
 
 ## -parameters
 
-### -param ThisFcb 
+### -param ThisFcb [out]
 
-[out]
+
 A pointer to the FCB structure to finalize.
 
-### -param RecursiveFinalize 
+### -param RecursiveFinalize [in]
 
-[in]
+
 The value indicating whether the finalization should be done recursively.
 
-### -param ForceFinalize 
+### -param ForceFinalize [in]
 
-[in]
+
 The value indicating whether the finalization should be forced, regardless of the reference count. 
 
 If this parameter is <b>FALSE</b>, then the <b>NodeReferenceCount</b> member of the FCB must be 1 for the FCB to be finalized.
 
-### -param ReferenceCount 
+### -param ReferenceCount [in]
 
-[in]
+
 The reference count on the FCB that will still allow forced finalization.
 
 ## -returns
@@ -86,7 +85,7 @@ This is handled in RDBSS by a delayed processing of the close request. There is 
 
 Before calling <b>RxFinalizeNetFCB</b>, a lock on the FCB structure must be acquired in exclusive mode. 
 
-If the <i>RecursiveFinalize </i>parameter is <b>FALSE</b>, then <b>RxFinalizeNetFCB</b> will fail if there are outstanding references to the FCB (the <b>OpenCount</b> or <b>CleanCount</b> members of the FCB structureare non zero).
+If the <i>RecursiveFinalize </i>parameter is <b>FALSE</b>, then <b>RxFinalizeNetFCB</b> will fail if there are outstanding references to the FCB (the <b>OpenCount</b> or <b>CleanCount</b> members of the FCB structure are non zero).
 
 If the <i>ForceFinalize </i>parameter is <b>TRUE</b>, <b>RxFinalizeNetFCB</b> causes the system to ASSERT on checked builds. 
 

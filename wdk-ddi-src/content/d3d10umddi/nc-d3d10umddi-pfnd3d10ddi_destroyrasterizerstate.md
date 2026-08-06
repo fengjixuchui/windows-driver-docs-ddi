@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d10umddi.PFND3D10DDI_DESTROYRASTERIZERSTATE
 title: PFND3D10DDI_DESTROYRASTERIZERSTATE (d3d10umddi.h)
-description: The DestroyRasterizerState function destroys the specified rasterizer state object. The rasterizer state object can be destoyed only if it is not currently bound to a display device.
+description: The DestroyRasterizerState function destroys the specified rasterizer state object. The rasterizer state object can be destroyed only if it is not currently bound to a display device.
 old-location: display\destroyrasterizerstate.htm
-ms.assetid: 7d730528-dc97-4490-a9fa-3d7916eef2e6
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_DESTROYRASTERIZERSTATE callback function"]
 ms.keywords: DestroyRasterizerState, DestroyRasterizerState callback function [Display Devices], PFND3D10DDI_DESTROYRASTERIZERSTATE, PFND3D10DDI_DESTROYRASTERIZERSTATE callback, UserModeDisplayDriverDx10_Functions_09ed2d7c-4191-4b5e-a18f-b42177106145.xml, d3d10umddi/DestroyRasterizerState, display.destroyrasterizerstate
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - DestroyRasterizerState
+ - PFND3D10DDI_DESTROYRASTERIZERSTATE
 ---
 
 # PFND3D10DDI_DESTROYRASTERIZERSTATE callback function
@@ -46,17 +45,17 @@ api_name:
 
 ## -description
 
-The <b>DestroyRasterizerState</b> function destroys the specified rasterizer state object. The rasterizer state object can be destoyed only if it is not currently bound to a display device.
+The <b>DestroyRasterizerState</b> function destroys the specified rasterizer state object. The rasterizer state object can be destroyed only if it is not currently bound to a display device.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hRasterizerState* [in]
 
@@ -77,3 +76,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

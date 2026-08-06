@@ -4,7 +4,6 @@ title: _WHEA_XPF_MS_CHECK (ntddk.h)
 description: The WHEA_XPF_MS_CHECK union describes microarchitecture-specific error information for an x86 or x64 processor.
 old-location: whea\whea_xpf_ms_check.htm
 tech.root: whea
-ms.assetid: aa446b31-ac53-4623-bacd-72ab72e94618
 ms.date: 02/20/2018
 keywords: ["WHEA_XPF_MS_CHECK structure"]
 ms.keywords: "*PWHEA_XPF_MS_CHECK, PWHEA_XPF_MS_CHECK, PWHEA_XPF_MS_CHECK union pointer [WHEA Drivers and Applications], WHEA_XPF_MS_CHECK, WHEA_XPF_MS_CHECK union [WHEA Drivers and Applications], _WHEA_XPF_MS_CHECK, ntddk/PWHEA_XPF_MS_CHECK, ntddk/WHEA_XPF_MS_CHECK, whea.whea_xpf_ms_check, whearef_ebbe0f28-499b-41ad-9e2b-c533c391c154.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_XPF_MS_CHECK
+ - PWHEA_XPF_MS_CHECK
  - WHEA_XPF_MS_CHECK
 ---
 
@@ -160,11 +161,6 @@ No error occurred.
 
 An unclassified error.
 
-
-#### - ReservedValid
-
-Reserved for system use.
-
 ## -remarks
 
 If the <b>CheckInfoId</b> member of a <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_xpf_procinfo">WHEA_XPF_PROCINFO</a> structure contains WHEA_MSCHECK_GUID, the <b>CheckInfo</b> member of the WHEA_XPF_PROCINFO structure contains a WHEA_XPF_MS_CHECK union.
@@ -172,3 +168,4 @@ If the <b>CheckInfoId</b> member of a <a href="/windows-hardware/drivers/ddi/ntd
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_xpf_procinfo">WHEA_XPF_PROCINFO</a>
+

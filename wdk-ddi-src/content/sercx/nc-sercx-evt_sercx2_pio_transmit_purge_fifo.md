@@ -4,7 +4,6 @@ title: EVT_SERCX2_PIO_TRANSMIT_PURGE_FIFO (sercx.h)
 description: The EvtSerCx2PioTransmitPurgeFifo event callback function is called by version 2 of the serial framework extension (SerCx2) to discard any bytes of unsent data that remain in the transmit FIFO in the serial controller.
 old-location: serports\evtsercx2piotransmitpurgefifo.htm
 tech.root: serports
-ms.assetid: 2BB02F84-01C1-432D-A4A9-6035F3ED32D7
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX2_PIO_TRANSMIT_PURGE_FIFO callback function"]
 ms.keywords: 2/EvtSerCx2PioTransmitPurgeFifo, EVT_SERCX2_PIO_TRANSMIT_PURGE_FIFO, EVT_SERCX2_PIO_TRANSMIT_PURGE_FIFO callback, EvtSerCx2PioTransmitPurgeFifo, EvtSerCx2PioTransmitPurgeFifo callback function [Serial Ports], serports.evtsercx2piotransmitpurgefifo
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
- - EvtSerCx2PioTransmitPurgeFifo
+ - EVT_SERCX2_PIO_TRANSMIT_PURGE_FIFO
 ---
 
 # EVT_SERCX2_PIO_TRANSMIT_PURGE_FIFO callback function
@@ -50,14 +49,14 @@ The <i>EvtSerCx2PioTransmitPurgeFifo</i> event callback function is called by ve
 
 ## -parameters
 
-### -param PioTransmit 
+### -param PioTransmit [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitcreate">SerCx2PioTransmitCreate</a> method to create this object.
 
-### -param BytesAlreadyTransmittedToHardware 
+### -param BytesAlreadyTransmittedToHardware [in]
 
-[in]
+
 The number of bytes that have already been loaded into the transmit FIFO during the current PIO-transmit transaction. This parameter is the sum of all the bytes transferred in previous calls to the <a href="/windows-hardware/drivers/ddi/sercx/nc-sercx-evt_sercx2_pio_transmit_write_buffer">EvtSerCx2PioTransmitWriteBuffer</a> event callback function that are part of this transaction.
 
 ## -remarks
@@ -125,3 +124,4 @@ The <b>EVT_SERCX2_PIO_TRANSMIT_PURGE_FIFO</b> function type is defined in the Se
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitpurgefifocomplete">SerCx2PioTransmitPurgeFifoComplete</a>
+

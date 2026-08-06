@@ -4,7 +4,6 @@ title: _WINBIO_BIR_HEADER (winbio_types.h)
 description: The WINBIO_BIR_HEADER structure contains the Common Biometric Exchange File Format (CBEFF) Patron Format A information that describes the rest of the BIR.
 old-location: biometric\winbio_bir_header.htm
 tech.root: biometric
-ms.assetid: 5053b027-61a9-463a-967c-9e9ff1673b1c
 ms.date: 02/20/2018
 keywords: ["WINBIO_BIR_HEADER structure"]
 ms.keywords: "*PWINBIO_BIR_HEADER, PWINBIO_BIR_HEADER, PWINBIO_BIR_HEADER structure pointer [Biometric Devices], WINBIO_BIR_HEADER, WINBIO_BIR_HEADER structure [Biometric Devices], _WINBIO_BIR_HEADER, biometric.winbio_bir_header, biometric_ref_1e5e4af7-36a5-414b-8c26-7a266c38272c.xml, winbio_types/PWINBIO_BIR_HEADER, winbio_types/WINBIO_BIR_HEADER"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - winbio_types.h
 api_name:
+ - _WINBIO_BIR_HEADER
  - WINBIO_BIR_HEADER
 ---
 
@@ -120,10 +120,11 @@ A structure of type <a href="/windows-hardware/drivers/ddi/winbio_types/ns-winbi
 
 ## -remarks
 
-You can find more information about the fields of the standard biometric header in the <a href="https://go.microsoft.com/fwlink/p/?linkid=133328">NISTIR 6529-A Specification</a>.
+You can find more information about the fields of the standard biometric header in the <a href="https://csrc.nist.gov/publications/detail/nistir/6529/a/final">NISTIR 6529-A Specification</a>.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/winbio_types/ns-winbio_types-_winbio_bir">WINBIO_BIR</a>
 
 <a href="/windows-hardware/drivers/ddi/winbio_types/ns-winbio_types-_winbio_bir_data">WINBIO_BIR_DATA</a>
+

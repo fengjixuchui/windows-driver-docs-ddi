@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_OUTPUTDUPLGETPOINTERSHAPEDATA
 title: PFND3DKMT_OUTPUTDUPLGETPOINTERSHAPEDATA (d3dkmthk.h)
 description: The PFND3DKMT_OUTPUTDUPLGETPOINTERSHAPEDATA callback function gets output duplicate pointer shape data.
-ms.assetid: 0c69e0f9-143e-4254-897f-a27a7562cda7
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_OUTPUTDUPLGETPOINTERSHAPEDATA callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The PFND3DKMT_OUTPUTDUPLGETPOINTERSHAPEDATA callback function gets output duplic
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_OUTPUTDUPL_GET_POINTER_SHAPE_DATA](ns-d3dkmthk-_d3dkmt_outputdupl_get_pointer_shape_data.md) structure.
 

@@ -4,12 +4,11 @@ title: D3DKMDT_VPPR_GET_OFFSET_ROTATION function (d3dkmdt.h)
 description: A helper function that extracts the offset angle from a given value of the D3DKMDT_VIDPN_PRESENT_PATH_ROTATION enumeration.
 old-location: display\d3dkmdt_vppr_get_offset_rotation.htm
 tech.root: display
-ms.assetid: EA7D2840-63B2-417A-933C-C1D360106264
 ms.date: 05/10/2018
 keywords: ["D3DKMDT_VPPR_GET_OFFSET_ROTATION function"]
 ms.keywords: D3DKMDT_VPPR_GET_OFFSET_ROTATION, D3DKMDT_VPPR_GET_OFFSET_ROTATION function [Display Devices], d3dkmdt/D3DKMDT_VPPR_GET_OFFSET_ROTATION, display.d3dkmdt_vppr_get_offset_rotation
 req.header: d3dkmdt.h
-req.include-header: D3dkmdt.h
+req.include-header:
 req.target-type: Desktop
 req.target-min-winverclnt: Windows 8.1,DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3_PATH_INDEPENDENT_ROTATION
 req.target-min-winversvr: Windows Server 2012 R2

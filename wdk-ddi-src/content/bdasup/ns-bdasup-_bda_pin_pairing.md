@@ -4,7 +4,6 @@ title: _BDA_PIN_PAIRING (bdasup.h)
 description: The BDA_PIN_PAIRING structure describes the topology between a pair of input and output pins.
 old-location: stream\bda_pin_pairing.htm
 tech.root: stream
-ms.assetid: 0d05455d-32ea-4f88-8752-7f5fe40b8b29
 ms.date: 04/23/2018
 keywords: ["BDA_PIN_PAIRING structure"]
 ms.keywords: "*PBDA_PIN_PAIRING, BDA_PIN_PAIRING, BDA_PIN_PAIRING structure [Streaming Media Devices], PBDA_PIN_PAIRING, PBDA_PIN_PAIRING structure pointer [Streaming Media Devices], _BDA_PIN_PAIRING, bdaref_b007d58d-86c0-4653-867a-78ef5be2f260.xml, bdasup/BDA_PIN_PAIRING, bdasup/PBDA_PIN_PAIRING, stream.bda_pin_pairing"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - bdasup.h
 api_name:
+ - _BDA_PIN_PAIRING
+ - PBDA_PIN_PAIRING
  - BDA_PIN_PAIRING
 ---
 
@@ -84,7 +85,7 @@ Number of joints in the <b>pTopologyJoints</b> array.
 
 ### -field pTopologyJoints
 
-Array of joint values. The value given to a joint corresponds to the index of an element in a array of template connections (KSTOPOLOGY_CONNECTION or BDA_TEMPLATE_CONNECTION array). A topology joint marks the point in the template topology where control of nodes switches from the input pin to the output pin. Those nodes that occur upstream of the topology joint are controlled through the input pin. Those nodes that occur downstream of the topology joint are controlled through the output pin.
+Array of joint values. The value given to a joint corresponds to the index of an element in an array of template connections (KSTOPOLOGY_CONNECTION or BDA_TEMPLATE_CONNECTION array). A topology joint marks the point in the template topology where control of nodes switches from the input pin to the output pin. Those nodes that occur upstream of the topology joint are controlled through the input pin. Those nodes that occur downstream of the topology joint are controlled through the output pin.
 
 ## -see-also
 
@@ -101,3 +102,4 @@ Array of joint values. The value given to a joint corresponds to the index of an
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-kstopology_connection">KSTOPOLOGY_CONNECTION</a>
+

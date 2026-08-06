@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient2.EndProcessServer
 title: IDebugClient2::EndProcessServer (dbgeng.h)
-description: The EndProcessServer method requests that a process server be shut down.
+description: The EndProcessServer method requests that a process server be shut down. This method belongs to the IDebugClient2 interface.
 old-location: debugger\endprocessserver.htm
 tech.root: debugger
-ms.assetid: 45421556-6781-4ec4-9ee1-783df99437ae
 ms.date: 05/03/2018
 keywords: ["IDebugClient2::EndProcessServer"]
 ms.keywords: EndProcessServer, EndProcessServer method [Windows Debugging], EndProcessServer method [Windows Debugging],IDebugClient2 interface, EndProcessServer method [Windows Debugging],IDebugClient3 interface, EndProcessServer method [Windows Debugging],IDebugClient4 interface, EndProcessServer method [Windows Debugging],IDebugClient5 interface, IDebugClient2 interface [Windows Debugging],EndProcessServer method, IDebugClient2.EndProcessServer, IDebugClient2::EndProcessServer, IDebugClient3 interface [Windows Debugging],EndProcessServer method, IDebugClient3::EndProcessServer, IDebugClient4 interface [Windows Debugging],EndProcessServer method, IDebugClient4::EndProcessServer, IDebugClient5 interface [Windows Debugging],EndProcessServer method, IDebugClient5::EndProcessServer, IDebugClient_a24a3c82-f966-424c-a739-a775b45cb600.xml, dbgeng/IDebugClient2::EndProcessServer, dbgeng/IDebugClient3::EndProcessServer, dbgeng/IDebugClient4::EndProcessServer, dbgeng/IDebugClient5::EndProcessServer, debugger.endprocessserver
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient2.EndProcessServer
- - IDebugClient3.EndProcessServer
- - IDebugClient4.EndProcessServer
- - IDebugClient5.EndProcessServer
+ - IDebugClient2::EndProcessServer
 ---
 
 # IDebugClient2::EndProcessServer
@@ -53,9 +49,9 @@ The <b>EndProcessServer</b> method requests that a process server be shut down.
 
 ## -parameters
 
-### -param Server 
+### -param Server [in]
 
-[in]
+
 Specifies the process server to shut down.  This handle must have been previously returned by <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-connectprocessserver">ConnectProcessServer</a>.
 
 ## -returns
@@ -115,3 +111,4 @@ For more information about process servers and remote debugging, see <a href="/w
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-waitforprocessserverend">WaitForProcessServerEnd</a>
+

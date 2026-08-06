@@ -4,7 +4,6 @@ title: DXGKDDI_GET_CHILD_CONTAINER_ID (dispmprt.h)
 description: Queries the container ID for the specified target. Implemented by Windows Display Driver Model (WDDM) 1.2 and later display miniport drivers.
 old-location: display\dxgkddigetchildcontainerid.htm
 tech.root: display
-ms.assetid: e7073fb3-0cb7-425e-9ffb-d7eaa963a70f
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_GET_CHILD_CONTAINER_ID callback function"]
 ms.keywords: DXGKDDI_GET_CHILD_CONTAINER_ID, DXGKDDI_GET_CHILD_CONTAINER_ID callback, DxgkDdiGetChildContainerId, DxgkDdiGetChildContainerId callback function [Display Devices], display.dxgkddigetchildcontainerid, dispmprt/DxgkDdiGetChildContainerId
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
- - DxgkDdiGetChildContainerId
+ - DXGKDDI_GET_CHILD_CONTAINER_ID
 ---
 
 # DXGKDDI_GET_CHILD_CONTAINER_ID callback function
@@ -50,19 +49,19 @@ api_name:
 
 ## -parameters
 
-### -param MiniportDeviceContext 
+### -param MiniportDeviceContext [in]
 
-[in]
+
 A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem.
 
-### -param ChildUid 
+### -param ChildUid [in]
 
-[in]
+
 A ULONG value that uniquely identifies the child device. The display miniport driver  previously provided this identifier when its  <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_child_relations">DxgkDdiQueryChildRelations</a> function was called.
 
-### -param ContainerId 
+### -param ContainerId [in, out]
 
-[in, out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_child_container_id">DXGK_CHILD_CONTAINER_ID</a> structure. For more information, see the Remarks section.
 
 ## -returns
@@ -102,3 +101,4 @@ For more information about Container IDs, see <a href="/windows/desktop/com/com-
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_device_descriptor">DxgkDdiQueryDeviceDescriptor</a>
+

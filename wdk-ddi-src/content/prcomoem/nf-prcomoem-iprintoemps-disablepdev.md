@@ -4,7 +4,6 @@ title: IPrintOemPS::DisablePDEV (prcomoem.h)
 description: The IPrintOemPS::DisablePDEV method allows a rendering plug-in for Pscript5 to delete the private PDEV structure that was allocated by its IPrintOemPS::EnablePDEV method.
 old-location: print\iprintoemps_disablepdev.htm
 tech.root: print
-ms.assetid: 131a3113-1d65-44e7-8752-bf4cdc20129d
 ms.date: 04/20/2018
 keywords: ["IPrintOemPS::DisablePDEV"]
 ms.keywords: DisablePDEV, DisablePDEV method [Print Devices], DisablePDEV method [Print Devices],IPrintOemPS interface, IPrintOemPS interface [Print Devices],DisablePDEV method, IPrintOemPS.DisablePDEV, IPrintOemPS::DisablePDEV, prcomoem/IPrintOemPS::DisablePDEV, print.iprintoemps_disablepdev, print_unidrv-pscript_rendering_7adde157-af87-49c1-80b0-e419c84a12a4.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Prcomoem.h
 api_name:
- - IPrintOemPS.DisablePDEV
+ - IPrintOemPS::DisablePDEV
 ---
 
 # IPrintOemPS::DisablePDEV
@@ -101,3 +100,4 @@ The method is not implemented.
 ## -remarks
 
 The <code>IPrintOemPS::DisablePDEV</code> method performs the same types of operations as the <a href="/windows/win32/api/winddi/nf-winddi-drvdisablepdev">DrvDisablePDEV</a> function that is exported by a printer graphics DLL. Its purpose is to allow a rendering plug-in to delete the private PDEV structure that is pointed to by the DEVOBJ structure's <b>pdevOEM</b> member. This PDEV structure is one that was allocated by the plug-in's <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemps-enablepdev">IPrintOemPS::EnablePDEV</a> method.
+

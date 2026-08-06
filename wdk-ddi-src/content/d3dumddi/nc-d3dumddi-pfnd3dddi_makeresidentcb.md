@@ -1,10 +1,9 @@
 ---
 UID: NC:d3dumddi.PFND3DDDI_MAKERESIDENTCB
 title: PFND3DDDI_MAKERESIDENTCB (d3dumddi.h)
-description: pfnMakeResidentCb is used to instruct the OS to add a resource to the device residency list and increment the residency reference count on this allocation.
+description: PFND3DDDI_MAKERESIDENTCB instructs the OS to add a resource to the device residency list and to increment the residency reference count on this allocation.
 old-location: display\pfnmakeresidentcb.htm
 tech.root: display
-ms.assetid: 8D65C3F7-3D07-4341-A989-A1438F821802
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_MAKERESIDENTCB callback function"]
 ms.keywords: PFND3DDDI_MAKERESIDENTCB, PFND3DDDI_MAKERESIDENTCB callback, d3dumddi/pfnMakeResidentCb, display.pfnmakeresidentcb, pfnMakeResidentCb, pfnMakeResidentCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnMakeResidentCb
-product:
- - Windows
+ - PFND3DDDI_MAKERESIDENTCB
 ---
 
 # PFND3DDDI_MAKERESIDENTCB callback function
@@ -56,7 +53,7 @@ product:
 
 A handle to the display device.
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in, out]
 
@@ -79,3 +76,4 @@ A pointer to a <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-d3ddd
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_evictcb">pfnEvictCb</a>
+

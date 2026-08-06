@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSystemObjects2.GetCurrentThreadHandle
 title: IDebugSystemObjects2::GetCurrentThreadHandle (dbgeng.h)
-description: The GetCurrentThreadHandle method returns the system handle for the current thread.
+description: The GetCurrentThreadHandle method returns the system handle for the current thread. This method belongs to the IDebugSystemObjects2 interface.
 old-location: debugger\getcurrentthreadhandle.htm
 tech.root: debugger
-ms.assetid: edbda821-8016-48db-a2f5-7f615428da0c
 ms.date: 05/03/2018
 keywords: ["IDebugSystemObjects2::GetCurrentThreadHandle"]
 ms.keywords: GetCurrentThreadHandle, GetCurrentThreadHandle method [Windows Debugging], GetCurrentThreadHandle method [Windows Debugging],IDebugSystemObjects interface, GetCurrentThreadHandle method [Windows Debugging],IDebugSystemObjects2 interface, GetCurrentThreadHandle method [Windows Debugging],IDebugSystemObjects3 interface, GetCurrentThreadHandle method [Windows Debugging],IDebugSystemObjects4 interface, IDebugSystemObjects interface [Windows Debugging],GetCurrentThreadHandle method, IDebugSystemObjects2 interface [Windows Debugging],GetCurrentThreadHandle method, IDebugSystemObjects2.GetCurrentThreadHandle, IDebugSystemObjects2::GetCurrentThreadHandle, IDebugSystemObjects3 interface [Windows Debugging],GetCurrentThreadHandle method, IDebugSystemObjects3::GetCurrentThreadHandle, IDebugSystemObjects4 interface [Windows Debugging],GetCurrentThreadHandle method, IDebugSystemObjects4::GetCurrentThreadHandle, IDebugSystemObjects::GetCurrentThreadHandle, IDebugSystemObjects_6c615962-bf20-4cdb-8bab-8afc142e8c65.xml, dbgeng/IDebugSystemObjects2::GetCurrentThreadHandle, dbgeng/IDebugSystemObjects3::GetCurrentThreadHandle, dbgeng/IDebugSystemObjects4::GetCurrentThreadHandle, dbgeng/IDebugSystemObjects::GetCurrentThreadHandle, debugger.getcurrentthreadhandle
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSystemObjects.GetCurrentThreadHandle
- - IDebugSystemObjects2.GetCurrentThreadHandle
- - IDebugSystemObjects3.GetCurrentThreadHandle
- - IDebugSystemObjects4.GetCurrentThreadHandle
+ - IDebugSystemObjects2::GetCurrentThreadHandle
 ---
 
 # IDebugSystemObjects2::GetCurrentThreadHandle
@@ -53,9 +49,9 @@ The <b>GetCurrentThreadHandle</b> method returns the system handle for the curre
 
 ## -parameters
 
-### -param Handle 
+### -param Handle [out]
 
-[out]
+
 Receives the current thread's system handle.
 
 ## -returns
@@ -85,3 +81,4 @@ The method was successful.
 In kernel-mode debugging, an artificial handle is created because the threads are virtual threads.
 
 For more information about threads, see <a href="/windows-hardware/drivers/debugger/threads-and-processes">Threads and Processes</a>.  For details on system handles, see <a href="/windows-hardware/drivers/">Handles</a>.
+

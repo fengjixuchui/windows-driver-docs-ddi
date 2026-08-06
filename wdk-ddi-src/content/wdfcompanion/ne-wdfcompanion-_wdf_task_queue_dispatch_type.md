@@ -1,10 +1,9 @@
 ---
 UID: NE:wdfcompanion._WDF_TASK_QUEUE_DISPATCH_TYPE
 title: _WDF_TASK_QUEUE_DISPATCH_TYPE (wdfcompanion.h)
-description: For internal use only.
+description: This WDF_TASK_QUEUE_DISPATCH_TYPE article is for internal use only.
 old-location: wdf\wdf_task_queue_dispatch_type.htm
 tech.root: wdf
-ms.assetid: 27cc4067-33de-4f2d-abad-05c73c875458
 ms.date: 02/26/2018
 keywords: ["WDF_TASK_QUEUE_DISPATCH_TYPE enumeration"]
 ms.keywords: WDF_TASK_QUEUE_DISPATCH_TYPE, WDF_TASK_QUEUE_DISPATCH_TYPE enumeration, WdfTaskQueueDispatchInvalid, WdfTaskQueueDispatchMax, WdfTaskQueueDispatchParallel, WdfTaskQueueDispatchSequential, _WDF_TASK_QUEUE_DISPATCH_TYPE, wdf.wdf_task_queue_dispatch_type, wdfcompanion/WDF_TASK_QUEUE_DISPATCH_TYPE, wdfcompanion/WdfTaskQueueDispatchInvalid, wdfcompanion/WdfTaskQueueDispatchMax, wdfcompanion/WdfTaskQueueDispatchParallel, wdfcompanion/WdfTaskQueueDispatchSequential
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - wdfcompanion.h
 api_name:
+ - _WDF_TASK_QUEUE_DISPATCH_TYPE
  - WDF_TASK_QUEUE_DISPATCH_TYPE
 ---
 
@@ -52,7 +52,7 @@ For internal use only.
 
 ## -enum-fields
 
-### -field WdfTaskQueueDispatchInvalid
+### -field WdfTaskQueueDispatchInvalid:0
 
 ### -field WdfTaskQueueDispatchSequential
 

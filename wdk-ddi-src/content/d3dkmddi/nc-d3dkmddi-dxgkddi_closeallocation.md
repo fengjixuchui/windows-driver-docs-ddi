@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_CLOSEALLOCATION
 title: DXGKDDI_CLOSEALLOCATION (d3dkmddi.h)
 description: The DxgkDdiCloseAllocation function unbinds device-specific allocations that the DxgkDdiOpenAllocation function created.
 old-location: display\dxgkddicloseallocation.htm
-ms.assetid: f9c195d7-debe-495e-a355-e176d06884f8
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_CLOSEALLOCATION callback function"]
 ms.keywords: DXGKDDI_CLOSEALLOCATION, DXGKDDI_CLOSEALLOCATION callback, DmFunctions_357920c4-694d-48f8-97ef-aa367e210a59.xml, DxgkDdiCloseAllocation, DxgkDdiCloseAllocation callback function [Display Devices], d3dkmddi/DxgkDdiCloseAllocation, display.dxgkddicloseallocation
 req.header: d3dkmddi.h
 req.include-header: 
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - DxgkDdiCloseAllocation
-product:
- - Windows
+ - DXGKDDI_CLOSEALLOCATION
 ---
 
 # DXGKDDI_CLOSEALLOCATION callback function
@@ -52,13 +49,13 @@ The <i>DxgkDdiCloseAllocation</i> function unbinds device-specific allocations t
 
 ## -parameters
 
-### -param hDevice
+### -param hDevice [in]
 
-[in] A handle to the graphics context device that allocations are unbound from. The display miniport driver's <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createdevice">DxgkDdiCreateDevice</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <b>hDevice</b> member of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_createdevice">DXGKARG_CREATEDEVICE</a> structure.
+A handle to the graphics context device that allocations are unbound from. The display miniport driver's <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createdevice">DxgkDdiCreateDevice</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <b>hDevice</b> member of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_createdevice">DXGKARG_CREATEDEVICE</a> structure.
 
-### -param pCloseAllocation
+### -param pCloseAllocation [in]
 
-[in] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_closeallocation">DXGKARG_CLOSEALLOCATION</a> structure that contains information about unbinding allocations.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgkarg_closeallocation">DXGKARG_CLOSEALLOCATION</a> structure that contains information about unbinding allocations.
 
 ## -returns
 
@@ -91,3 +88,4 @@ For a resource that contains multiple allocations, the DirectX graphics kernel s
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_openallocationinfo">DxgkDdiOpenAllocation</a>
+

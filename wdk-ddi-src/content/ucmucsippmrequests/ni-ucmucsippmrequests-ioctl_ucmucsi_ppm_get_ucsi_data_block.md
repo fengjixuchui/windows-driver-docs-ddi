@@ -2,8 +2,7 @@
 UID: NI:ucmucsippmrequests.IOCTL_UCMUCSI_PPM_GET_UCSI_DATA_BLOCK
 title: IOCTL_UCMUCSI_PPM_GET_UCSI_DATA_BLOCK (ucmucsippmrequests.h)
 tech.root: usbref
-description: 
-ms.assetid: 8572406b-0348-4b9b-bd82-6f3d88b733ed
+description: "Learn more about: IOCTL_UCMUCSI_PPM_GET_UCSI_DATA_BLOCK IOCTL"
 ms.date: 09/30/2018
 keywords: ["IOCTL_UCMUCSI_PPM_GET_UCSI_DATA_BLOCK IOCTL"]
 req.header: Ucmucsippmrequests.h
@@ -43,6 +42,8 @@ api_name:
 Gets a UCSI data block from the PPM firmware by using the supported transport.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

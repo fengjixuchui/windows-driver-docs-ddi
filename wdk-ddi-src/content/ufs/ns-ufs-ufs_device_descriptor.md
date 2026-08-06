@@ -1,11 +1,10 @@
 ---
-UID: NS:ufs.__unnamed_struct_0
+UID: NS:ufs.UFS_DEVICE_DESCRIPTOR
 title: UFS_DEVICE_DESCRIPTOR (ufs.h)
-description: UFS_DEVICE_DESCRIPTOR is the main descriptor for Universal Flash Storage (UFS) devices and should be the first descriptor retrieved as it specifies the device class and sub-class and the protocol (command set) to use to access this device and the maximum number of logical units contained within the device.
+description: UFS_DEVICE_DESCRIPTOR is the main descriptor for Universal Flash Storage (UFS) devices and should be the first descriptor retrieved as it specifies the device class and sub-class and the protocol (command set) to use to access this device and the maximum number of logical units (LUs) contained within the device.
 old-location: storage\ufs_device_descriptor.htm
 tech.root: storage
-ms.assetid: CD1F59DA-3D84-422B-A862-8F4C5E1AA515
-ms.date: 03/29/2018
+ms.date: 03/07/2024
 keywords: ["UFS_DEVICE_DESCRIPTOR structure"]
 ms.keywords: "*PUFS_DEVICE_DESCRIPTOR, PUFS_DEVICE_DESCRIPTOR, PUFS_DEVICE_DESCRIPTOR structure pointer [Storage Devices], UFS_DEVICE_DESCRIPTOR, UFS_DEVICE_DESCRIPTOR structure [Storage Devices], storage.ufs_device_descriptor, ufs/PUFS_DEVICE_DESCRIPTOR, ufs/UFS_DEVICE_DESCRIPTOR"
 req.header: ufs.h
@@ -40,16 +39,15 @@ api_type:
 api_location:
  - Ufs.h
 api_name:
+ - PUFS_DEVICE_DESCRIPTOR
  - UFS_DEVICE_DESCRIPTOR
 ---
 
 # UFS_DEVICE_DESCRIPTOR structure
 
-
 ## -description
 
-<b>UFS_DEVICE_DESCRIPTOR</b> is the main descriptor for Universal Flash Storage (UFS) devices and should be the first descriptor retrieved as it specifies the device class and sub-class and the protocol (command set) to use to access this device and the maximum number of logical
-units contained within the device.
+**UFS_DEVICE_DESCRIPTOR** is the main descriptor for Universal Flash Storage (UFS) devices and should be the first descriptor retrieved as it specifies the device class and sub-class and the protocol (command set) to use to access this device and the maximum number of logical units (LUs) contained within the device.
 
 ## -struct-fields
 
@@ -59,95 +57,49 @@ Specifies the length, in bytes, of this descriptor.
 
 ### -field bDescriptorIDN
 
-Specifies the type of the descriptor. This descriptor will have a value of <b>UFS_DESC_DEVICE_IDN</b>.
+Specifies the type of the descriptor. This descriptor will have a value of **UFS_DESC_DEVICE_IDN**.
 
 ### -field bDevice
 
 Specifies the device type.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>Device</td>
-</tr>
-<tr>
-<td>All other values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
+| Value | Description |
+|--|--|
+| 0x00 | Device |
+| All other values | Reserved for future use |
 
 ### -field bDeviceClass
 
 Specifies the device class.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>Mass Storage</td>
-</tr>
-<tr>
-<td>All other values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
+| Value | Description |
+|--|--|
+| 0x00 | Mass Storage |
+| All other values | Reserved for future use |
 
 ### -field bDeviceSubClass
 
 Specifies the UFS mass storage subclasses in a bit map as follows:
 
-<table>
-<tr>
-<th>Bit</th>
-<th>Value</th>
-</tr>
-<tr>
-<td>0</td>
-<td>Bootable / Non-Bootable</td>
-</tr>
-<tr>
-<td>1</td>
-<td>Embedded / Removable</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Reserved for JESD220-1 (UME)</td>
-</tr>
-<tr>
-<td>All other values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
+| Bit | Value |
+|--|--|
+| 0 | Bootable or Non-Bootable |
+| 1 | Embedded or Removable |
+| 2 | Reserved for JESD220-1 (UME) |
+| All other values | Reserved for future use |
 
 ### -field bProtocol
 
 Specifies the protocol support by the UFS device.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>SCSI</td>
-</tr>
-<tr>
-<td>All other values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
+| Value | Description |
+|--|--|
+| 0x00 | SCSI |
+| All other values | Reserved for future use |
 
 ### -field bNumberLU
 
-Specifies the number of Logical Units. This does not include the number of well known logical units.
+Specifies the number of logical units. This does not include the number of well known logical units.
 
 ### -field bNumberWLU
 
@@ -157,163 +109,76 @@ Specifies the number of well known logical units.
 
 Specifies if a device's boot feature is enabled.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>Boot feature disabled</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>Boot feature enabled</td>
-</tr>
-<tr>
-<td>All other values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
+| Value | Description |
+|--|--|
+| 0x00 | Boot feature disabled |
+| 0x01 | Boot feature enabled |
+| All other values | Reserved for future use |
 
 ### -field bDescrAccessEn
 
-Indicates whether the Device Descriptor can be
-read after the partial initialization phase of the
-boot sequence.
+Indicates whether the device descriptor can be read after the partial initialization phase of the boot sequence.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>Device Descriptor access disabled</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>Device Descriptor access enabled</td>
-</tr>
-<tr>
-<td>All other values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
+| Value | Description |
+|--|--|
+| 0x00 | Device Descriptor access disabled |
+| 0x01 | Device Descriptor access enabled |
+| All other values | Reserved for future use |
 
 ### -field bInitPowerMode
 
-<b>bInitPowerMode</b> defines the Power Mode
-after device initialization or hardware reset.
+**bInitPowerMode** defines the power mode after device initialization or hardware reset.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>UFS-Sleep mode</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>Active-mode</td>
-</tr>
-<tr>
-<td>All other values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
+| Value | Description |
+|--|--|
+| 0x00 | UFS-Sleep mode |
+| 0x01 | Active-mode |
+| All other values | Reserved for future use |
 
 ### -field bHighPriorityLUN
 
-<b>bHighPriorityLUN</b> defines the high priority
-logical unit.
+**bHighPriorityLUN** defines the high priority logical unit.
 
 ### -field bSecureRemovalType
 
 Specifies the secure removal type.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>Information removed by an erase of the
-physical memory</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>Information removed by overwriting the
-addressed locations with a single character
-followed by an erase.</td>
-</tr>
-<tr>
-<td>0x02</td>
-<td>Information removed by overwriting the
-addressed locations with a character, its
-complement, then a random character.</td>
-</tr>
-<tr>
-<td>0x03</td>
-<td>Information removed using a vendor
-define mechanism.</td>
-</tr>
-<tr>
-<td>All other values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
+| Value | Description |
+|--|--|
+| 0x00 | Information removed by an erase of the physical memory |
+| 0x01 | Information removed by overwriting the addressed locations with a single character followed by an erase |
+| 0x02 | Information removed by overwriting the addressed locations with a character, its complement, then a random character |
+| 0x03 | Information removed using a vendor defined mechanism. |
+| All other values | Reserved for future use |
 
 ### -field bSecurityLU
 
-Specifies if there is support for security LU's
+Specifies if there is support for security logical units.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Description</th>
-</tr>
-<tr>
-<td>0x00</td>
-<td>Not supported</td>
-</tr>
-<tr>
-<td>0x01</td>
-<td>Replay Protected Memory Block (RPMB)</td>
-</tr>
-<tr>
-<td>All other values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
+| Value | Description |
+|--|--|
+| 0x00 | Not supported |
+| 0x01 | Replay Protected Memory Block (RPMB) |
+| All other values | Reserved for future use |
 
 ### -field bBackgroundOpsTermLat
 
-<b>bBackgroundOpsTermLat</b> defines the maximum latency for starting data transmission when background
-operations are ongoing. The termination latency limit applies to two cases:
+**bBackgroundOpsTermLat** defines the maximum latency for starting data transmission when background operations are ongoing. The termination latency limit applies to two cases:
 
-<ul>
-<li>When the device receives a COMMAND UFS Protocol Information Units (UPIU) with a transfer request. The device shall start the data
-transfer and send a DATA IN UPIU or a RTT UPIU within the latency limit.</li>
-<li>When the device receives QUERY REQUEST UPIU to clear the <b>fBackgroundOpsEn</b> Flag. The device is
-expected to terminate background operations within the latency limit.</li>
-</ul>
+- When the device receives a COMMAND UFS Protocol Information Units (UPIU) with a transfer request. The device shall start the data transfer and send a DATA IN UPIU or a RTT UPIU within the latency limit.
+- When the device receives QUERY REQUEST UPIU to clear the **fBackgroundOpsEn** Flag. The device is expected to terminate background operations within the latency limit.
 
 ### -field bInitActiveICCLevel
 
-<b>bInitActiveICCLevel</b> defines the <b>bActiveICCLevel</b>
-value after power on or reset. The range of the value is from 0x00 to 0x0F.
+**bInitActiveICCLevel** defines the **bActiveICCLevel** value after power on or reset. The range of the value is from 0x00 to 0x0F.
 
-### -field wSpecVersion
+### -field wSpecVersion[2]
 
-Indicates the specification version in Binary Coded Decimal (BCD) format.
+Indicates the specification version in binary coded decimal (BCD) format.
 
-### -field wManufactureDate
+### -field wManufactureDate[2]
 
-Specifies the manufacturing date  in BCD format as 0xMMYY.
+Specifies the manufacturing date in BCD format as 0xMMYY.
 
 ### -field iManufacturerName
 
@@ -325,33 +190,29 @@ Contains an index value to the string which contains the product's name.
 
 ### -field iSerialNumberID
 
-Contains an index value to the string which contains the serial's number.
+Contains an index value to the string which contains the serial number.
 
 ### -field iOemID
 
 Contains an index value to the string which contains the OEM ID.
 
-### -field wManufacturerID
+### -field wManufacturerID[2]
 
-Specifies the Manufacturer ID of the device.
+Specifies the manufacturer ID of the device.
 
 ### -field bUD0BaseOffset
 
-Specifies the Offset of Unit Descriptor 0's configurable
-parameters within the Configuration
-Descriptor, <a href="/windows-hardware/drivers/ddi/ufs/ns-ufs-ufs_config_descriptor">UFS_CONFIG_DESCRIPTOR</a>.
+Specifies the offset of unit descriptor 0's configurable parameters within the configuration descriptor, **[UFS_CONFIG_DESCRIPTOR](ns-ufs-ufs_config_descriptor.md)**.
 
 ### -field bUDConfigPLength
 
-Total size of a <b>UFS_UNIT_CONFIG_DESCRIPTOR</b>'s
-parameters.
+Total size of a **UFS_UNIT_CONFIG_DESCRIPTOR**'s parameters.
 
 ### -field bDeviceRTTCap
 
-Specifies the maximum number of outstanding READY TO TRANSFER UPIU'S
-supported by device. The minimum value is 2.
+Specifies the maximum number of outstanding READY TO TRANSFER UPIU'S supported by device. The minimum value is 2.
 
-### -field wPeriodicRTCUpdate
+### -field wPeriodicRTCUpdate[2]
 
 Specifies the frequency and method of real-time clock updates. Bits 10 to 15 are reserved.
 
@@ -359,118 +220,90 @@ Specifies the frequency and method of real-time clock updates. Bits 10 to 15 are
 
 Specifies which features are supported on this device. A feature is supported if its related bit is set to 1.
 
-<table>
-<tr>
-<th>Bit</th>
-<th>Value</th>
-</tr>
-<tr>
-<td>0</td>
-<td>Field Firmware Update (FFU)</td>
-</tr>
-<tr>
-<td>1</td>
-<td>Production State Awarness (PSA)</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Device Life Span</td>
-</tr>
-<tr>
-<td>All other values</td>
-<td>Reserved for future use.</td>
-</tr>
-</table>
+| Bit | Value |
+|--|--|
+| 0 | Field Firmware Update (FFU) |
+| 1 | Production State Awareness (PSA) |
+| 2 | Device Life Span |
+| All other values | Reserved for future use |
 
 ### -field bFFUTimeout
 
-The maximum time, in seconds, that access
-to the device is limited or not possible through
-any ports associated due to execution of a
-WRITE BUFFER command.
+The maximum time, in seconds, to which access to the device is limited or not possible through any ports associated due to execution of a WRITE BUFFER command.
 
 ### -field bQueueDepth
 
-Specifies the queue depth. If this member is equal to 0, the device implements the per-LU
-queuing architecture.
+Specifies the queue depth. If this member is equal to 0, the device implements the per-LU queuing architecture.
 
-### -field wDeviceVersion
+### -field wDeviceVersion[2]
 
 Specifies the device version.
 
 ### -field bNumSecureWPArea
 
-Specifies the total number of
-Secure Write Protect Areas supported by the
-device. The value of this member is between <b>bNumberLU</b> and 32
+Specifies the total number of secure write protect areas supported by the device. The value of this member is between **bNumberLU** and 32.
 
-### -field dPSAMaxDataSize
+### -field dPSAMaxDataSize[4]
 
-Specifies the maximum
-amount of data that may be written during the
-pre-soldering phase of the PSA flow.
+Specifies the maximum amount of data that can be written during the pre-soldering phase of the PSA flow.
 
 ### -field dPSAStateTimeout
 
+This member corresponds to **bPSAStateTimeout** (29h) in the [JEDEC](https://www.jedec.org/) specification.
+
 ### -field iProductRevisionLevel
 
-Specifies the index to the string which contains the Product
-Revision Level.
+Specifies the index to the string which contains the product revision level.
 
-### -field Reserved
-
-Reserved for future use.
-
-### -field Reserved2
+### -field Reserved[5]
 
 Reserved for future use.
 
+### -field Reserved2[16]
 
-#### - bPSAStateTimeout
+Reserved for future use.
 
-Specifies the command
-maximum timeout for a change in <b>bPSAState</b>. The timeout value is calculated as follows (in microseconds):
+### -field wHPBVersion
 
-100 x 2 ^ <b>bPSAStateTimeout</b>
+Specifies the host performance booster version.
+
+### -field bHPBControl
+
+### -field Reserved3[12]
+
+Reserved for future use.
+
+### -field dExtendedUFSFeaturesSupport[4]
+
+**dExtendedUFSFeaturesSupport** is a bitmask indicating which extended features are supported.
+
+### -field bWriteBoosterBufferPreserveUserSpaceEn
+
+Setting **bWriteBoosterBufferPreserveUserSpaceEn** to 0x01 avoids the reduction of the total user space that can be configured during provisioning, but might result in lower performance. If **bWriteBoosterBufferPreserveUserSpaceEn** is set to 0x00, the write booster buffer reduces the total user space that can be configured during provisioning.
+
+### -field bWriteBoosterBufferType
+
+**bWriteBoosterBufferType** configures the the write booster buffer type. A value of 0x00 specifies logical unit dedicated buffer mode. A value of 0x01 specifies shared buffer mode.
+
+### -field dNumSharedWriteBoosterBufferAllocUnits[4]
+
+**dNumSharedWriteBoosterBufferAllocUnits** specifies the write booster buffer size for a shared write booster buffer configuration.
 
 ## -remarks
 
-If <b>bBootEnable</b> in the <b>UFS_DEVICE_DESCRIPTOR</b> is set to zero or if the Boot well known logical unit is not mapped to an enabled logical unit, then the Boot well known logical unit shall terminate.
+If **bBootEnable** in the **UFS_DEVICE_DESCRIPTOR** is set to zero or if the *Boot Well Known Logical Unit* is not mapped to an enabled logical unit, then the *Boot Well Known Logical Unit* shall terminate.
 
-<b>UFS_DEVICE_DESCRIPTOR</b> is read only, some of its parameters may be changed by changing the corresponding parameter in <a href="/windows-hardware/drivers/ddi/ufs/ns-ufs-ufs_unit_config_descriptor">UFS_UNIT_CONFIG_DESCRIPTOR</a>.
+**UFS_DEVICE_DESCRIPTOR** is read only, some of its parameters may be changed by changing the corresponding parameter in **[UFS_UNIT_CONFIG_DESCRIPTOR](ns-ufs-ufs_unit_config_descriptor.md)**.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ufs/ns-ufs-ufs_config_descriptor">UFS_CONFIG_DESCRIPTOR</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/ufs/ns-ufs-ufs_device_health_descriptor">UFS_DEVICE_HEALTH_DESCRIPTOR</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/ufs/ns-ufs-ufs_geometry_descriptor">UFS_GEOMETRY_DESCRIPTOR</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/ufs/ns-ufs-ufs_interconnect_descriptor">UFS_INTERCONNECT_DESCRIPTOR</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/ufs/ns-ufs-ufs_power_descriptor">UFS_POWER_DESCRIPTOR</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/ufs/ns-ufs-ufs_rpmb_unit_descriptor">UFS_RPMB_UNIT_DESCRIPTOR</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/ufs/ns-ufs-_ufs_string_descriptor">UFS_STRING_DESCRIPTOR</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/ufs/ns-ufs-ufs_unit_config_descriptor">UFS_UNIT_CONFIG_DESCRIPTOR</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/ufs/ns-ufs-ufs_unit_descriptor">UFS_UNIT_DESCRIPTOR</a>
+- **[UFS_CONFIG_DESCRIPTOR](ns-ufs-ufs_config_descriptor.md)**
+- **[UFS_DEVICE_HEALTH_DESCRIPTOR](ns-ufs-ufs_device_health_descriptor.md)**
+- **[UFS_GEOMETRY_DESCRIPTOR](ns-ufs-ufs_geometry_descriptor.md)**
+- **[UFS_INTERCONNECT_DESCRIPTOR](ns-ufs-ufs_interconnect_descriptor.md)**
+- **[UFS_POWER_DESCRIPTOR](ns-ufs-ufs_power_descriptor.md)**
+- **[UFS_RPMB_UNIT_DESCRIPTOR](ns-ufs-ufs_rpmb_unit_descriptor.md)**
+- **[UFS_STRING_DESCRIPTOR](ns-ufs-_ufs_string_descriptor.md)**
+- **[UFS_UNIT_CONFIG_DESCRIPTOR](ns-ufs-ufs_unit_config_descriptor.md)**
+- **[UFS_UNIT_DESCRIPTOR](ns-ufs-ufs_unit_descriptor.md)**
+- [Universal Flash Storage 4.0 specification](https://www.jedec.org/standards-documents/docs/jesd220f)

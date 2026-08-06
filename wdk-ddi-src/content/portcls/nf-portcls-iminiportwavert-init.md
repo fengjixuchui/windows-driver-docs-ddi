@@ -4,7 +4,6 @@ title: IMiniportWaveRT::Init (portcls.h)
 description: The Init method initializes the WaveRT miniport driver object.
 old-location: audio\iminiportwavert_init.htm
 tech.root: audio
-ms.assetid: f25be064-6ad4-42e8-87a5-188978d093fb
 ms.date: 05/08/2018
 keywords: ["IMiniportWaveRT::Init"]
 ms.keywords: IMiniportWaveRT interface [Audio Devices],Init method, IMiniportWaveRT.Init, IMiniportWaveRT::Init, Init, Init method [Audio Devices], Init method [Audio Devices],IMiniportWaveRT interface, audio.iminiportwavert_init, audmp-routines_3304baaf-f3bf-43f1-908b-5cf47b084ee1.xml, portcls/IMiniportWaveRT::Init
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Passive level.
+req.irql: PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWaveRT.Init
+ - IMiniportWaveRT::Init
 ---
 
 # IMiniportWaveRT::Init
@@ -50,19 +49,19 @@ The <code>Init</code> method initializes the <a href="/windows-hardware/drivers/
 
 ## -parameters
 
-### -param UnknownAdapter 
+### -param UnknownAdapter [in]
 
-[in]
+
 Pointer to the <b>IUnknown</b> interface of the adapter driver object whose miniport driver object is being initialized.
 
-### -param ResourceList 
+### -param ResourceList [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iresourcelist">IResourceList</a> interface of a resource-list object. This object specifies the list of hardware resources that the adapter driver has allocated to the miniport driver. The WaveRT port driver can examine the contents of the resource list, but it does not modify the list.
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavert">IPortWaveRT</a> interface of the WaveRT port driver. The caller specifies a valid, non-NULL pointer value for this parameter.
 
 ## -returns
@@ -80,3 +79,4 @@ For more information about the <i>ResourceList</i> parameter, see the <a href="/
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iportwavert">IPortWaveRT</a>
+

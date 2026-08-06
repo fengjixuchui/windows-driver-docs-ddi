@@ -4,7 +4,6 @@ title: RtlDWordPtrAdd function (ntintsafe.h)
 description: Adds two values of type DWORD_PTR.
 old-location: kernel\rtldwordptradd.htm
 tech.root: kernel
-ms.assetid: 8364FC5F-1FF4-415F-B83C-4A866C860522
 ms.date: 04/30/2018
 keywords: ["RtlDWordPtrAdd function"]
 ms.keywords: RtlDWordPtrAdd, RtlDWordPtrAdd function [Kernel-Mode Driver Architecture], kernel.rtldwordptradd, ntintsafe/RtlDWordPtrAdd
@@ -50,19 +49,19 @@ Adds two values of type <b>DWORD_PTR</b>.
 
 ## -parameters
 
-### -param dwAugend 
+### -param dwAugend [in]
 
-[in]
+
 The first value in the equation.
 
-### -param dwAddend 
+### -param dwAddend [in]
 
-[in]
+
 The value to add to <i>dwAugend</i>.
 
-### -param pdwResult 
+### -param pdwResult [out]
 
-[out]
+
 A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

@@ -1,9 +1,8 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT3
-title: _D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT3 (d3dkmthk.h)
-description: Check for multiplane overlay support.
-ms.assetid: 864fba9e-5cdf-440f-8177-33beed94030e
-ms.date: 10/19/2018
+title: D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT3 (d3dkmthk.h)
+description: Learn more about the D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT3 structure.
+ms.date: 10/05/2023
 keywords: ["D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT3 structure"]
 ms.keywords: _D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT3, D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT3,
 req.header: d3dkmthk.h
@@ -35,53 +34,51 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT3
+ - D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT3
 dev_langs:
  - c++
 ---
 
-# _D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT3 structure
-
+# D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT3 structure
 
 ## -description
 
-Check for multiplane overlay support.
+The **D3DKMT_CHECKMULTIPLANEOVERLAYSUPPORT3** structure is passed to [**D3DKMTCheckMultiPlaneOverlaySupport3**](nf-d3dkmthk-d3dkmtcheckmultiplaneoverlaysupport3.md) to check for multiplane overlay support.
 
 ## -struct-fields
 
 ### -field hAdapter
 
-A handle to the graphics adapter.
+[in] A handle to the graphics adapter.
 
 ### -field hDevice
 
-A handle to the device.
+[in] A handle to the device.
 
 ### -field PlaneCount
 
-The number of resources to pin.
+[in] The number of overlay plane pointers that **ppOverlayPlanes** points to.
 
 ### -field ppOverlayPlanes
 
-Array of pointers to overlay planes.
+[in] Array of pointers to [**D3DKMT_CHECK_MULTIPLANE_OVERLAY_PLANE3**](ns-d3dkmthk-_d3dkmt_check_multiplane_overlay_plane3.md) structures that describe the overlay planes.
 
 ### -field PostCompositionCount
 
-The number of resources to pin.
+[in] The number of pointers that **ppPostComposition** points to.
 
 ### -field ppPostComposition
 
-Array of pointers to overlay planes.
+[in] Array of pointers to [**D3DKMT_MULTIPLANE_OVERLAY_POST_COMPOSITION_WITH_SOURCE**](ns-d3dkmthk-_d3dkmt_multiplane_overlay_post_composition_with_source.md) structures.
 
 ### -field Supported
 
-Indicates support.
+[out] Boolean value that indicates support.
 
 ### -field ReturnInfo
 
- 
-The return info.
-
-## -remarks
+[out] A [**D3DKMT_CHECK_MULTIPLANE_OVERLAY_SUPPORT_RETURN_INFO**](ns-d3dkmthk-d3dkmt_check_multiplane_overlay_support_return_info.md) structure in which details are returned when **Supported** is FALSE.
 
 ## -see-also
 
+[**D3DKMTCheckMultiPlaneOverlaySupport3**](nf-d3dkmthk-d3dkmtcheckmultiplaneoverlaysupport3.md)

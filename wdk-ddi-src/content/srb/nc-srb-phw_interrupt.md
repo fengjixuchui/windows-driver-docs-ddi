@@ -4,7 +4,6 @@ title: PHW_INTERRUPT (srb.h)
 description: The PHW_INTERRUPT routine prototype declares the miniport driver's interrupt handler routine.
 old-location: storage\phw_interrupt.htm
 tech.root: storage
-ms.assetid: d61892c6-f6ca-4077-909e-a21076375e5a
 ms.date: 03/29/2018
 keywords: ["PHW_INTERRUPT callback"]
 ms.keywords: "(*PHW_INTERRUPT), (*PHW_INTERRUPT) callback function [Storage Devices], ide_minikr_d0fa2a3d-deef-45c5-9251-a3c30c7af434.xml, srb/(*PHW_INTERRUPT), storage.phw_interrupt"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product: Windows 10 or later.
 f1_keywords:
  - PHW_INTERRUPT
  - srb/PHW_INTERRUPT
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - srb.h
 api_name:
- - (*PHW_INTERRUPT)
+ - PHW_INTERRUPT
 ---
 
 # PHW_INTERRUPT callback (srb.h)
@@ -51,9 +49,9 @@ The PHW_INTERRUPT routine prototype declares the miniport driver's interrupt han
 
 ## -parameters
 
-### -param DeviceExtension 
+### -param DeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's per-HBA storage area.
 
 ## -returns
@@ -75,3 +73,4 @@ For more information about the miniport driver's interrupt handler routine that 
 
 
 <a href="/windows-hardware/drivers/ddi/storport/nc-storport-hw_interrupt">HwStorInterrupt</a>
+

@@ -3,7 +3,6 @@ UID: NF:eventdetectoroemadapter.IEventDetectorOemAdapter.VerifyUserEventData
 title: IEventDetectorOemAdapter::VerifyUserEventData
 description: Verifies the user recording for the given EVENTID.
 tech.root: audio
-ms.assetid: 7f4bf4e4-d635-4738-9ce3-45d55eda52ac
 ms.date: 02/25/2019
 keywords: ["IEventDetectorOemAdapter::VerifyUserEventData"]
 ms.keywords: IEventDetectorOemAdapter::VerifyUserEventData, VerifyUserEventData, IEventDetectorOemAdapter.VerifyUserEventData, IEventDetectorOemAdapter::VerifyUserEventData, IEventDetectorOemAdapter.VerifyUserEventData
@@ -36,9 +35,7 @@ api_type:
 api_location:
  - eventdetectoroemadapter.h
 api_name:
- - IEventDetectorOemAdapter.VerifyUserEventData
-product:
- - Windows
+ - IEventDetectorOemAdapter::VerifyUserEventData
 ---
 
 # IEventDetectorOemAdapter::VerifyUserEventData
@@ -90,3 +87,4 @@ This function is the part of the Event Detector OEM interface to be used for har
 - [eventdetectoroemadapter](../eventdetectoroemadapter/index.md)
 
 - [Audio](../_audio/index.md)
+

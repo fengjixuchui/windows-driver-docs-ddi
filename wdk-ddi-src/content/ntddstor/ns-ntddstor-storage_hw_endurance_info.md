@@ -3,7 +3,6 @@ UID: NS:ntddstor._STORAGE_HW_ENDURANCE_INFO
 title: STORAGE_HW_ENDURANCE_INFO
 description: A storage port driver uses the **STORAGE_HW_ENDURANCE_INFO** structure to report a device's endurance information.
 tech.root: storage
-ms.assetid: a2572a43-05b5-45c1-9c4e-c40281affb63
 ms.date: 03/13/2019
 keywords: ["STORAGE_HW_ENDURANCE_INFO structure"]
 ms.keywords: STORAGE_HW_ENDURANCE_INFO, STORAGE_HW_ENDURANCE_INFO, *PSTORAGE_HW_ENDURANCE_INFO,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddstor.h
 api_name:
+ - _STORAGE_HW_ENDURANCE_INFO
+ - PSTORAGE_HW_ENDURANCE_INFO
  - STORAGE_HW_ENDURANCE_INFO
-product:
- - Windows
 ---
 
 # STORAGE_HW_ENDURANCE_INFO structure

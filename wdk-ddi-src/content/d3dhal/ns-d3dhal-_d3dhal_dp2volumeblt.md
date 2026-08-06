@@ -4,7 +4,6 @@ title: _D3DHAL_DP2VOLUMEBLT (d3dhal.h)
 description: DirectX 8.0 and later versions only. The D3DHAL_DP2VOLUMEBLT structure is used for volume texture blts when D3dDrawPrimitives2 responds to the D3DDP2OP_VOLUMEBLT command token.
 old-location: display\d3dhal_dp2volumeblt.htm
 tech.root: display
-ms.assetid: 6c301643-1e1b-4b0c-8827-8eae988b1e9b
 ms.date: 05/10/2018
 keywords: ["D3DHAL_DP2VOLUMEBLT structure"]
 ms.keywords: "*LPD3DHAL_DP2VOLUMEBLT, D3DHAL_DP2VOLUMEBLT, D3DHAL_DP2VOLUMEBLT structure [Display Devices], LPD3DHAL_DP2VOLUMEBLT, LPD3DHAL_DP2VOLUMEBLT structure pointer [Display Devices], _D3DHAL_DP2VOLUMEBLT, d3dhal/D3DHAL_DP2VOLUMEBLT, d3dhal/LPD3DHAL_DP2VOLUMEBLT, d3dstrct_44b31cb6-2a36-4d2d-91a3-c59b07d8815b.xml, display.d3dhal_dp2volumeblt"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dhal.h
 api_name:
+ - _D3DHAL_DP2VOLUMEBLT
  - D3DHAL_DP2VOLUMEBLT
 ---
 
@@ -104,3 +104,4 @@ D3DDP2OP_VOLUMEBLT
 
 
 <a href="/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb">D3dDrawPrimitives2</a>
+

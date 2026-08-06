@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_ReadMsg
 title: RIL_ReadMsg function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_ReadMsg function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_readmsg.htm
 tech.root: netvista
-ms.assetid: a38c089b-a5f4-4fd2-ab94-ead53228c5e9
 ms.date: 05/02/2018
 keywords: ["RIL_ReadMsg function"]
 ms.keywords: RIL_ReadMsg, RIL_ReadMsg method [Network Drivers Starting with Windows Vista], netvista.ril_readmsg, rilapi/RIL_ReadMsg

@@ -4,7 +4,6 @@ title: RtlULongPtrAdd function (ntintsafe.h)
 description: Adds two values of type ULONG_PTR.
 old-location: kernel\rtlulongptradd.htm
 tech.root: kernel
-ms.assetid: 26A9A0B6-07A3-4D42-A5A1-C4CDD541A3FA
 ms.date: 04/30/2018
 keywords: ["RtlULongPtrAdd function"]
 ms.keywords: RtlULongPtrAdd, RtlULongPtrAdd function [Kernel-Mode Driver Architecture], kernel.rtlulongptradd, ntintsafe/RtlULongPtrAdd
@@ -50,19 +49,19 @@ Adds two values of type <b>ULONG_PTR</b>.
 
 ## -parameters
 
-### -param ulAugend 
+### -param ulAugend [in]
 
-[in]
+
 The first value in the equation.
 
-### -param ulAddend 
+### -param ulAddend [in]
 
-[in]
+
 The value to add to <i>ulAugend</i>.
 
-### -param pulResult 
+### -param pulResult [out]
 
-[out]
+
 A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

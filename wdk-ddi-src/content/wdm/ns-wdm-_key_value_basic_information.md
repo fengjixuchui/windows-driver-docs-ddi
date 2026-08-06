@@ -4,7 +4,6 @@ title: _KEY_VALUE_BASIC_INFORMATION (wdm.h)
 description: The KEY_VALUE_BASIC_INFORMATION structure defines a subset of the full information available for a value entry of a registry key.
 old-location: kernel\key_value_basic_information.htm
 tech.root: kernel
-ms.assetid: b3b14c21-3613-4f84-9e7d-368c4cc3fa9d
 ms.date: 04/30/2018
 keywords: ["KEY_VALUE_BASIC_INFORMATION structure"]
 ms.keywords: "*PKEY_VALUE_BASIC_INFORMATION, KEY_VALUE_BASIC_INFORMATION, KEY_VALUE_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], PKEY_VALUE_BASIC_INFORMATION, PKEY_VALUE_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _KEY_VALUE_BASIC_INFORMATION, kernel.key_value_basic_information, kstruct_c_ba44285c-18a4-4a35-a31b-c2a6573d7023.xml, wdm/KEY_VALUE_BASIC_INFORMATION, wdm/PKEY_VALUE_BASIC_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _KEY_VALUE_BASIC_INFORMATION
+ - PKEY_VALUE_BASIC_INFORMATION
  - KEY_VALUE_BASIC_INFORMATION
 ---
 
@@ -187,6 +188,26 @@ A list of hardware resources that a physical device is using, detected and writt
 
 </td>
 </tr>
+<tr>
+<td>
+REG_QWORD
+
+</td>
+<td>
+An 8-byte numerical value
+
+</td>
+</tr>
+<tr>
+<td>
+REG_QWORD_LITTLE_ENDIAN
+
+</td>
+<td>
+An 8-byte numerical value whose least significant byte is at the lowest address
+
+</td>
+</tr>
 </table>
 
 ### -field NameLength
@@ -220,3 +241,4 @@ A kernel-mode driver can obtain a <b>KEY_VALUE_BASIC_INFORMATION</b> that descri
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-zwqueryvaluekey">ZwQueryValueKey</a>
+

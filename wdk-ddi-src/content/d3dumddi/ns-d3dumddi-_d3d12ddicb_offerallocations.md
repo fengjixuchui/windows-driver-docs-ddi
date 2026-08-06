@@ -2,7 +2,6 @@
 UID: NS:d3dumddi._D3D12DDICB_OFFERALLOCATIONS
 title: _D3D12DDICB_OFFERALLOCATIONS (d3dumddi.h)
 description: The D3D12DDICB_OFFERALLOCATIONS structure is used to offer allocations.
-ms.assetid: 126b026e-1e18-4991-91f2-e25666ec72a2
 ms.date: 10/19/2018
 keywords: ["D3D12DDICB_OFFERALLOCATIONS structure"]
 ms.keywords: _D3D12DDICB_OFFERALLOCATIONS, D3D12DDICB_OFFERALLOCATIONS,
@@ -35,6 +34,7 @@ api_location:
  - d3dumddi.h
 api_name:
  - _D3D12DDICB_OFFERALLOCATIONS
+ - D3D12DDICB_OFFERALLOCATIONS
 dev_langs:
  - c++
 ---
@@ -48,13 +48,13 @@ The D3D12DDICB_OFFERALLOCATIONS structure is used to offer allocations.
 
 ## -struct-fields
 
-### -field NumAllocations
+### -field NumAllocations [in]
 
-[in] The number of allocations in the HandleList array.
+The number of allocations in the HandleList array.
 
-### -field HandleList
+### -field HandleList [in]
 
-[in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the allocations.
+An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the allocations.
 
 ### -field Priority
 

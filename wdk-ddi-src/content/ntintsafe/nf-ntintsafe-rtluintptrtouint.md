@@ -4,7 +4,6 @@ title: RtlUIntPtrToUInt function (ntintsafe.h)
 description: Converts a value of type UINT_PTR to a value of type UINT.
 old-location: kernel\rtluintptrtouint.htm
 tech.root: kernel
-ms.assetid: DA00BB09-7559-439A-935C-55A1304C6BBC
 ms.date: 04/30/2018
 keywords: ["RtlUIntPtrToUInt function"]
 ms.keywords: RtlUIntPtrToUInt, RtlUIntPtrToUInt function [Kernel-Mode Driver Architecture], kernel.rtluintptrtouint, ntintsafe/RtlUIntPtrToUInt
@@ -54,9 +53,9 @@ Converts a value of type <b>UINT_PTR</b> to a value of type <b>UINT</b>.
 
 <p>The value to be converted.</p>
 
-### -param puResult 
+### -param puResult [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

@@ -3,17 +3,16 @@ UID: NS:netadapter._NET_ADAPTER_POWER_OFFLOAD_NS_CAPABILITIES
 title: NET_ADAPTER_POWER_OFFLOAD_NS_CAPABILITIES (netadapter.h)
 description: The NET_ADAPTER_POWER_OFFLOAD_NS_CAPABILITIES structure describes a net adapter's capabilities for IPv6 Neighbor Solicitation (NS) low power protocol offload.
 tech.root: netvista
-ms.assetid: f740c2ac-25b0-4d04-a524-e5670b53e903
 ms.date: 10/22/2019
 keywords: ["NET_ADAPTER_POWER_OFFLOAD_NS_CAPABILITIES structure"]
 ms.keywords: NET_ADAPTER_POWER_OFFLOAD_NS_CAPABILITIES, NET_ADAPTER_POWER_OFFLOAD_NS_CAPABILITIES,
 req.header: netadapter.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - netadapter.h
 api_name:
+ - _NET_ADAPTER_POWER_OFFLOAD_NS_CAPABILITIES
  - NET_ADAPTER_POWER_OFFLOAD_NS_CAPABILITIES
-product:
- - Windows
 ---
 
 # NET_ADAPTER_POWER_OFFLOAD_NS_CAPABILITIES structure
@@ -74,3 +72,4 @@ Call [**NET_ADAPTER_POWER_OFFLOAD_NS_CAPABILITIES_INIT**](../netadapter/nf-netad
 [**NetAdapterPowerOffloadSetNsCapabilities**](../netadapter/nf-netadapter-netadapterpoweroffloadsetnscapabilities.md)
 
 [**NetAdapterStart**](../netadapter/nf-netadapter-netadapterstart.md)
+

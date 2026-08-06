@@ -1,10 +1,9 @@
 ---
 UID: NF:wiautil.wiauRegGetDwordW
 title: wiauRegGetDwordW function (wiautil.h)
-description: The wiauRegGetDword function gets a DWORD value from the DeviceData section of the registry.
+description: Learn how the wiauRegGetDword function gets a DWORD value from the DeviceData section of the registry.
 old-location: image\wiaureggetdword.htm
 tech.root: image
-ms.assetid: 936a3a49-ec36-421f-8554-c9ad37907a6d
 ms.date: 05/03/2018
 keywords: ["wiauRegGetDwordW function"]
 ms.keywords: image.wiaureggetdword, wiauFncs_a58ebb21-21ce-4815-9dd6-5a1906412a2f.xml, wiauRegGetDword, wiauRegGetDword function [Imaging Devices], wiauRegGetDwordA, wiauRegGetDwordW, wiautil/wiauRegGetDword
@@ -30,6 +29,8 @@ req.typenames:
 f1_keywords:
  - wiauRegGetDwordW
  - wiautil/wiauRegGetDwordW
+ - wiauRegGetDword
+ - wiautil/wiauRegGetDword
 topic_type:
  - APIRef
  - kbSyntax
@@ -38,6 +39,7 @@ api_type:
 api_location:
  - wiautil.h
 api_name:
+ - wiauRegGetDwordW
  - wiauRegGetDword
 ---
 
@@ -50,19 +52,19 @@ The <b>wiauRegGetDword</b> function gets a <b>DWORD</b> value from the <b>Device
 
 ## -parameters
 
-### -param hkKey 
+### -param hkKey [in]
 
-[in]
+
 Specifies the registry key handle. This parameter should be set to the value pointed to by the <i>phkeyDeviceData </i>parameter when <a href="/windows-hardware/drivers/ddi/wiautil/nf-wiautil-wiauregopendataw">wiauRegOpenData</a> returns.
 
 
-#### - pwszValueName [in]
+### -param pwszValueName [in]
 
 Points to the first byte of a Unicode string containing the name of the registry entry.
 
-### -param pdwValue 
+### -param pdwValue [out]
 
-[out]
+
 Pointer to a memory location that receives the returned DWORD value.
 
 ## -returns
@@ -76,3 +78,4 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 
 <a href="/windows-hardware/drivers/ddi/wiautil/nf-wiautil-wiauregopendataw">wiauRegOpenData</a>
+

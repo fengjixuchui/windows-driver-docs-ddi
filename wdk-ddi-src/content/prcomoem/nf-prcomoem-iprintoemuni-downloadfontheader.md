@@ -4,7 +4,6 @@ title: IPrintOemUni::DownloadFontHeader (prcomoem.h)
 description: The IPrintOemUni::DownloadFontHeader method allows a rendering plug-in for Unidrv to send a font's header information to a printer.
 old-location: print\iprintoemuni_downloadfontheader.htm
 tech.root: print
-ms.assetid: 3d660d04-2872-44e6-ab76-719f5262bdd8
 ms.date: 04/20/2018
 keywords: ["IPrintOemUni::DownloadFontHeader"]
 ms.keywords: DownloadFontHeader, DownloadFontHeader method [Print Devices], DownloadFontHeader method [Print Devices],IPrintOemUni interface, IPrintOemUni interface [Print Devices],DownloadFontHeader method, IPrintOemUni.DownloadFontHeader, IPrintOemUni::DownloadFontHeader, prcomoem/IPrintOemUni::DownloadFontHeader, print.iprintoemuni_downloadfontheader, print_unidrv-pscript_rendering_7ed24461-70a3-4446-9b3e-1fda13b0a29a.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemUni.DownloadFontHeader
+ - IPrintOemUni::DownloadFontHeader
 ---
 
 # IPrintOemUni::DownloadFontHeader
@@ -58,9 +57,9 @@ Caller-supplied pointer to a <a href="/windows-hardware/drivers/ddi/printoem/ns-
 
 Caller-supplied pointer to a <a href="/windows-hardware/drivers/ddi/printoem/ns-printoem-_unifontobj">UNIFONTOBJ</a> structure.
 
-### -param pdwResult 
+### -param pdwResult [out]
 
-[out]
+
 Receives a method-supplied value representing the amount of printer memory, in bytes, required to store the font header information. If the operation fails, the returned value should be zero.
 
 ## -returns
@@ -130,3 +129,4 @@ The <code>IPrintOemUni::DownloadFontHeader</code> method is optional. If a rende
 If you implement the <code>IPrintOemUni::DownloadFontHeader</code> method, you must also implement the <a href="/windows-hardware/drivers/ddi/prcomoem/nf-prcomoem-iprintoemuni-downloadcharglyph">IPrintOemUni::DownloadCharGlyph</a> method.
 
 For additional information see <a href="/windows-hardware/drivers/print/customized-font-management">Customized Font Management</a>.
+

@@ -4,7 +4,6 @@ title: IPnpCallback::OnD0Exit (wudfddi.h)
 description: The OnD0Exit method notifies a driver when a device exits the D0 power state so that the driver can perform necessary operations, such as disabling the device.
 old-location: wdf\ipnpcallback_ond0exit.htm
 tech.root: wdf
-ms.assetid: 39eedeca-269d-4966-be1f-7cc5c9228a5c
 ms.date: 02/26/2018
 keywords: ["IPnpCallback::OnD0Exit"]
 ms.keywords: IPnpCallback interface,OnD0Exit method, IPnpCallback.OnD0Exit, IPnpCallback::OnD0Exit, OnD0Exit, OnD0Exit method, OnD0Exit method,IPnpCallback interface, UMDFDeviceObjectRef_4c9ce2f7-92c8-4e0b-80fe-cfb06d1be83a.xml, umdf.ipnpcallback_ond0exit, wdf.ipnpcallback_ond0exit, wudfddi/IPnpCallback::OnD0Exit
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IPnpCallback.OnD0Exit
+ - IPnpCallback::OnD0Exit
 ---
 
 # IPnpCallback::OnD0Exit
@@ -52,14 +51,14 @@ The <b>OnD0Exit</b> method notifies a driver when a device exits the D0 power st
 
 ## -parameters
 
-### -param pWdfDevice 
+### -param pWdfDevice [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice">IWDFDevice</a> interface for the device object of the device that exits the D0 power state.
 
-### -param newState 
+### -param newState [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_power_device_state">WDF_POWER_DEVICE_STATE</a>-typed value that identifies the new power state that the device is set to after it exits the D0 power state.
 
 ## -returns
@@ -86,3 +85,4 @@ A driver registers the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi
 
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_power_device_state">WDF_POWER_DEVICE_STATE</a>
+

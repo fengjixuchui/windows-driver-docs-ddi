@@ -3,7 +3,6 @@ UID: NE:d3d12umddi.D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAGS_0020
 title: D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAGS_0020 (d3d12umddi.h)
 description: Defines the features that video processor supports.
 old-location: display\d3d12ddi_video_process_feature_support_flags.htm
-ms.assetid: 6DBF48B1-44C7-4C53-8488-F1217E6FAA1C
 ms.date: 04/16/2018
 keywords: ["D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAGS_0020 enumeration"]
 ms.keywords: D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAGS_0020, D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAGS_0020 enumeration [Display Devices], D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0020_ALPHA_BLENDING, D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0020_ALPHA_FILL, D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0020_FLIP, D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0020_LUMA_KEY, D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0020_PIXEL_ASPECT_RATIO, D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0020_ROTATION, D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0020_STEREO, D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0022_NONE, d3d12umddi/D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAGS_0020, d3d12umddi/D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0020_ALPHA_BLENDING, d3d12umddi/D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0020_ALPHA_FILL, d3d12umddi/D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0020_FLIP, d3d12umddi/D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0020_LUMA_KEY, d3d12umddi/D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0020_PIXEL_ASPECT_RATIO, d3d12umddi/D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0020_ROTATION, d3d12umddi/D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0020_STEREO, d3d12umddi/D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0022_NONE, display.d3d12ddi_video_process_feature_support_flags
@@ -60,7 +59,7 @@ The video processor can set alpha values on the output pixels. For more informat
 
 ### -field D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0020_LUMA_KEY
 
-The video processor can perform luma keying. Luma keying is configured by using the <b>LumaKey</b> member of the [D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS](ns-d3d12umddi-d3d12ddiarg_video_process_input_stream_arguments_0032.md) structure. For more information, see the [D3D12DDI_VIDEO_PROCESS_LUMA_KEY](ns-d3d12umddi-d3d12ddi_video_process_luma_key_0020.md) structure.
+The video processor can perform luma keying. Luma keying is configured by using the <b>LumaKey</b> member of the [D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS](ns-d3d12umddi-d3d12ddiarg_video_process_input_stream_arguments_0043.md) structure. For more information, see the [D3D12DDI_VIDEO_PROCESS_LUMA_KEY](ns-d3d12umddi-d3d12ddi_video_process_luma_key_0020.md) structure.
 
 ### -field D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0020_STEREO
 
@@ -76,15 +75,15 @@ The driver can flip the input data horizontally or vertically, together or separ
 
 ### -field D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0020_ALPHA_BLENDING
 
-Alpha blending and a planar alpha may be set in the <b>AlphaBlending</b> member of the [D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS](ns-d3d12umddi-d3d12ddiarg_video_process_input_stream_arguments_0032.md) structure. For more information, see the [D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING](ns-d3d12umddi-d3d12ddi_video_process_alpha_blending_0020.md) structure.
+Alpha blending and a planar alpha may be set in the <b>AlphaBlending</b> member of the [D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS](ns-d3d12umddi-d3d12ddiarg_video_process_input_stream_arguments_0043.md) structure. For more information, see the [D3D12DDI_VIDEO_PROCESS_ALPHA_BLENDING](ns-d3d12umddi-d3d12ddi_video_process_alpha_blending_0020.md) structure.
 
 ### -field D3D12DDI_VIDEO_PROCESS_FEATURE_SUPPORT_FLAG_0020_PIXEL_ASPECT_RATIO
 
-The driver supports changing the pixel aspect ratio. If the driver does not report this capability, the <b>SourceAspectRatio</b> and <b>DestinationAspectRatio</b> members of the [D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS](ns-d3d12umddi-d3d12ddiarg_video_process_input_stream_arguments_0032.md) structure must indicate a 1:1 aspect ratio.
+The driver supports changing the pixel aspect ratio. If the driver does not report this capability, the <b>SourceAspectRatio</b> and <b>DestinationAspectRatio</b> members of the [D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS](ns-d3d12umddi-d3d12ddiarg_video_process_input_stream_arguments_0043.md) structure must indicate a 1:1 aspect ratio.
 
 ## -see-also
 
-[D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS](ns-d3d12umddi-d3d12ddiarg_video_process_input_stream_arguments_0032.md)
+[D3D12DDIARG_VIDEO_PROCESS_INPUT_STREAM_ARGUMENTS](ns-d3d12umddi-d3d12ddiarg_video_process_input_stream_arguments_0043.md)
 
 
 

@@ -4,7 +4,6 @@ title: IDebugClient5::CreateProcess2Wide (dbgeng.h)
 description: The CreateProcess2Wide method executes the specified command to create a new process.
 old-location: debugger\createprocess2wide.htm
 tech.root: debugger
-ms.assetid: b032ca68-5ac5-4a19-84fe-92058905a1d7
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::CreateProcess2Wide"]
 ms.keywords: CreateProcess2Wide, CreateProcess2Wide method [Windows Debugging], CreateProcess2Wide method [Windows Debugging],IDebugClient5 interface, IDebugClient5 interface [Windows Debugging],CreateProcess2Wide method, IDebugClient5.CreateProcess2Wide, IDebugClient5::CreateProcess2Wide, dbgeng/IDebugClient5::CreateProcess2Wide, debugger.createprocess2wide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient5.CreateProcess2Wide
+ - IDebugClient5::CreateProcess2Wide
 ---
 
 # IDebugClient5::CreateProcess2Wide
@@ -50,34 +49,34 @@ The <b>CreateProcess2Wide</b> method executes the specified command to create a 
 
 ## -parameters
 
-### -param Server 
+### -param Server [in]
 
-[in]
+
 Specifies the process server that will be attached to the process.  If <i>Server</i> is zero, the engine will create the local process without using a process server.
 
-### -param CommandLine 
+### -param CommandLine [in]
 
-[in]
+
 Specifies the command line to execute to create the new process.
 
-### -param OptionsBuffer 
+### -param OptionsBuffer [in]
 
-[in]
+
 Specifies the process creation options.  <i>OptionsBuffer</i> is a pointer to a <a href="/windows-hardware/drivers/ddi/dbgeng/ns-dbgeng-_debug_create_process_options">DEBUG_CREATE_PROCESS_OPTIONS</a> structure.
 
-### -param OptionsBufferSize 
+### -param OptionsBufferSize [in]
 
-[in]
+
 Specifies the size of the buffer <i>OptionsBuffer</i>.  This should be set to <b>sizeof(DEBUG_CREATE_PROCESS_OPTIONS)</b>.
 
-### -param InitialDirectory 
+### -param InitialDirectory [in, optional]
 
-[in, optional]
+
 Specifies the starting directory for the process.  If <i>InitialDirectory</i> is <b>NULL</b>, the current directory for the process server is used.
 
-### -param Environment 
+### -param Environment [in, optional]
 
-[in, optional]
+
 Specifies an environment block for the new process.  An environment block consists of a null-terminated block of null-terminated strings.  Each string is of the form:
 
 
@@ -162,3 +161,4 @@ For more information about creating and attaching to live user-mode targets, see
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugclient5-terminatecurrentprocess">TerminateCurrentProcess</a>
+

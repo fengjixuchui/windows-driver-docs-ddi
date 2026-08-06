@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILMESSAGESTORAGEFULL
 title: RILMESSAGESTORAGEFULL (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILMESSAGESTORAGEFULL structure for internal use only."
 old-location: netvista\rilmessagestoragefull.htm
 tech.root: netvista
-ms.assetid: 3369feeb-cbb9-4938-8dfd-0160ba4fefdf
 ms.date: 05/02/2018
 keywords: ["RILMESSAGESTORAGEFULL structure"]
 ms.keywords: "*LPRILMESSAGESTORAGEFULL, RILMESSAGESTORAGEFULL, RILMESSAGESTORAGEFULL structure [Network Drivers Starting with Windows Vista], netvista.rilmessagestoragefull, ntddrilapitypes/RILMESSAGESTORAGEFULL"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILMESSAGESTORAGEFULL
+ - LPRILMESSAGESTORAGEFULL
 ---
 
 # RILMESSAGESTORAGEFULL structure (rilapitypes.h)

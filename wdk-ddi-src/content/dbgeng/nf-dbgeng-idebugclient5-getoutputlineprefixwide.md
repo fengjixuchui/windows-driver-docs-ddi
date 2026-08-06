@@ -4,7 +4,6 @@ title: IDebugClient5::GetOutputLinePrefixWide (dbgeng.h)
 description: Gets a Unicode character string prefix for output lines.
 old-location: debugger\idebugclient5_getoutputlineprefixwide.htm
 tech.root: debugger
-ms.assetid: 145A478E-826B-4E82-B358-6140D3A4063F
 ms.date: 05/03/2018
 keywords: ["IDebugClient5::GetOutputLinePrefixWide"]
 ms.keywords: GetOutputLinePrefixWide, GetOutputLinePrefixWide method [Windows Debugging], GetOutputLinePrefixWide method [Windows Debugging],IDebugClient5 interface, IDebugClient5 interface [Windows Debugging],GetOutputLinePrefixWide method, IDebugClient5.GetOutputLinePrefixWide, IDebugClient5::GetOutputLinePrefixWide, dbgeng/IDebugClient5::GetOutputLinePrefixWide, debugger.idebugclient5_getoutputlineprefixwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient5.GetOutputLinePrefixWide
+ - IDebugClient5::GetOutputLinePrefixWide
 ---
 
 # IDebugClient5::GetOutputLinePrefixWide
@@ -50,19 +49,19 @@ Gets a Unicode character string prefix for output lines.
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 The pointer to the buffer of the prefix.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 The length of the buffer.
 
-### -param PrefixSize 
+### -param PrefixSize [out, optional]
 
-[out, optional]
+
 A pointer to the length of the prefix.
 
 ## -returns
@@ -72,3 +71,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugclient5">IDebugClient5</a>
+

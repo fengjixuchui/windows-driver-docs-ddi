@@ -4,7 +4,6 @@ title: EVT_VMB_PACKET_COMPLETION_ROUTINE (vmbuskernelmodeclientlibapi.h)
 description: The EvtVmbPacketCompletionRoutine callback function is invoked when the transaction associated with a sent packet is complete.
 old-location: netvista\evt_vmb_packet_completion_routine.htm
 tech.root: netvista
-ms.assetid: DEE6FBD6-4807-4216-9010-F59C9E08076B
 ms.date: 05/02/2018
 keywords: ["EVT_VMB_PACKET_COMPLETION_ROUTINE callback function"]
 ms.keywords: EVT_VMB_PACKET_COMPLETION_ROUTINE, EVT_VMB_PACKET_COMPLETION_ROUTINE callback, EvtVmbPacketCompletionRoutine, EvtVmbPacketCompletionRoutine callback function [Network Drivers Starting with Windows Vista], PFN_VMB_PACKET_COMPLETION_ROUTINE, PFN_VMB_PACKET_COMPLETION_ROUTINE callback function pointer [Network Drivers Starting with Windows Vista], netvista.evt_vmb_packet_completion_routine, vmbuskernelmodeclientlibapi/EvtVmbPacketCompletionRoutine
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - VmbusKernelModeClientLibApi.h
 api_name:
- - PFN_VMB_PACKET_COMPLETION_ROUTINE
+ - EVT_VMB_PACKET_COMPLETION_ROUTINE
 ---
 
 # EVT_VMB_PACKET_COMPLETION_ROUTINE callback function
@@ -53,24 +52,24 @@ is complete.
 
 ## -parameters
 
-### -param Packet 
+### -param Packet [in]
 
-[in]
+
 The packet that is completed.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 A status code.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A buffer that contains the completion response from the opposite endpoint, if any.
 
-### -param BufferLength 
+### -param BufferLength [in]
 
-[in]
+
 Length of the <i>Buffer</i> parameter, in bytes.
 
 ## -remarks
@@ -88,3 +87,4 @@ If not, the outgoing packet was successfully placed into the ring buffer.
 
 
 <a href="/windows-hardware/drivers/ddi/vmbuskernelmodeclientlibapi/nf-vmbuskernelmodeclientlibapi-vmbpacketsetcompletionroutine">VmbPacketSetCompletionRoutine</a>
+

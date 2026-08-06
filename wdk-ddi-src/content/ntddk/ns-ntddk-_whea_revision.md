@@ -4,7 +4,6 @@ title: _WHEA_REVISION (ntddk.h)
 description: The WHEA_REVISION union describes the revision of the error record data structures.
 old-location: whea\whea_revision.htm
 tech.root: whea
-ms.assetid: 4258f223-353a-4b6e-a93c-5742e5c1668b
 ms.date: 02/20/2018
 keywords: ["WHEA_REVISION structure"]
 ms.keywords: "*PWHEA_REVISION, PWHEA_REVISION, PWHEA_REVISION union pointer [WHEA Drivers and Applications], WHEA_REVISION, WHEA_REVISION union [WHEA Drivers and Applications], _WHEA_REVISION, ntddk/PWHEA_REVISION, ntddk/WHEA_REVISION, whea.whea_revision, whearef_0572aecb-765a-4118-8df0-7b34922e79d9.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_REVISION
+ - PWHEA_REVISION
  - WHEA_REVISION
 ---
 
@@ -79,3 +80,4 @@ A WHEA_REVISION union is contained within the <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_error_record_section_descriptor">WHEA_ERROR_RECORD_SECTION_DESCRIPTOR</a>
+

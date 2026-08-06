@@ -4,7 +4,6 @@ title: _NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS (ndis.h)
 description: The NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS structure specifies shared memory provider characteristics.
 old-location: netvista\ndis_shared_memory_provider_characteristics.htm
 tech.root: netvista
-ms.assetid: 45001da1-5fe3-4383-8da7-31e3ee115c1f
 ms.date: 05/02/2018
 keywords: ["NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS structure"]
 ms.keywords: "*PNDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], PNDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, PNDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, ndis/NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, ndis/PNDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, ndis_shared_memory_ref_0cb54ab1-d469-4fa0-833a-eb17e1441e76.xml, netvista.ndis_shared_memory_provider_characteristics"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndis.h
 api_name:
+ - _NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS
+ - PNDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS
  - NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS
 ---
 
@@ -58,7 +59,7 @@ The NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS structure specifies shared memor
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      structure (NDIS_SHARED_MEMORY_PROVIDER_CHARACTERISTICS). The driver sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_SHARED_MEMORY_PROVIDER_CHARACTERISTICS, the 
@@ -96,7 +97,7 @@ To specify entry points for shared memory services, an NDIS driver initializes a
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -109,3 +110,4 @@ To specify entry points for shared memory services, an NDIS driver initializes a
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-free_shared_memory_handler">NetFreeSharedMemory</a>
+

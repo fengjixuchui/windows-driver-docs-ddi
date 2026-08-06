@@ -1,9 +1,8 @@
 ---
 UID: NF:dispmprt._Field_size_bytes_DXGK_
 title: _Field_size_bytes_DXGK_ macro
-description: Allows drivers to use the updated annotations.
+description: The (dispmprt.h) _Field_size_bytes_DXGK_ macro allows drivers to use the updated annotations to assist code analysis tools.
 tech.root: display
-ms.assetid: c77b775c-7027-44ea-a4d1-e48fc9faecb3
 ms.date: 04/04/2019
 keywords: ["Field_size_bytes_DXGK_ macro"]
 ms.keywords: _Field_size_bytes_DXGK_
@@ -37,8 +36,6 @@ api_location:
  - dispmprt.h
 api_name:
  - _Field_size_bytes_DXGK_
-product:
- - Windows
 dev_langs:
  - c++
 ---

@@ -1,11 +1,9 @@
 ---
-UID: NS:scsi.__unnamed_struct_13
+UID: NS:scsi.RT_PARAMETER_DATA
 title: RT_PARAMETER_DATA (scsi.h)
-description: The RT_PARAMETER_DATA structure contains the parameter data for the report timestamp command.
-old-location: storage\rt_parameter_data.htm
+description: The RT_PARAMETER_DATA structure (scsi.h) contains the parameter data for the report timestamp command.
 tech.root: storage
-ms.assetid: EB23D502-87E4-48B1-B1DC-0B215AB361C8
-ms.date: 03/29/2018
+ms.date: 09/20/2022
 keywords: ["RT_PARAMETER_DATA structure"]
 ms.keywords: "*PRT_PARAMETER_DATA, PRT_PARAMETER_DATA, PRT_PARAMETER_DATA structure pointer [Storage Devices], RT_PARAMETER_DATA, RT_PARAMETER_DATA structure [Storage Devices], scsi/PRT_PARAMETER_DATA, scsi/RT_PARAMETER_DATA, storage.rt_parameter_data"
 req.header: scsi.h
@@ -40,17 +38,13 @@ api_type:
 api_location:
  - scsi.h
 api_name:
+ - PRT_PARAMETER_DATA
  - RT_PARAMETER_DATA
 ---
 
-# RT_PARAMETER_DATA structure (scsi.h)
-
-
 ## -description
 
-<p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
-
-The <b>RT_PARAMETER_DATA</b> structure contains the parameter data for the report timestamp command.
+The **RT_PARAMETER_DATA** structure contains the parameter data for the report timestamp command.
 
 ## -struct-fields
 
@@ -62,67 +56,13 @@ Indicates the number of bytes that follow in the parameter data.
 
 Indicates the most recent event that initialized the returned device clock.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>0</dt>
-</dl>
-</td>
-<td width="60%">
-Device clock initialized to zero at power on or as the result of a hard reset.
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>1</dt>
-</dl>
-</td>
-<td width="60%">
-Reserved for future use.
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>2</dt>
-</dl>
-</td>
-<td width="60%">
-Device clock initialized by the SET TIMESTAMP command.
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt>3</dt>
-</dl>
-</td>
-<td width="60%">
-Device clock initialized by an unknown method.
-
-</td>
-</tr>
-<tr>
-<td width="40%"><a id=""></a><dl>
-<dt><b></b></dt>
-<dt>4 to 7</dt>
-</dl>
-</td>
-<td width="60%">
-Reserved for future use.
-
-</td>
-</tr>
-</table>
+| Value | Meaning |
+|--|--|
+| 0 | Device clock initialized to zero at power on or as the result of a hard reset. |
+| 1 | Reserved for future use. |
+| 2 | Device clock initialized by the SET TIMESTAMP command. |
+| 3 | Device clock initialized by an unknown method. |
+| 4 to 7 | Reserved for future use. |
 
 ### -field Reserved1
 
@@ -142,4 +82,5 @@ Reserved for future use.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/storport/ns-storport-st_parameter_data">ST_PARAMETER_DATA</a>
+[**ST_PARAMETER_DATA**](../storport/ns-storport-st_parameter_data.md)
+

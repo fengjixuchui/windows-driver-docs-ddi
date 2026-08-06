@@ -4,7 +4,6 @@ title: _PEP_WORK_IDLE_STATE (pep_x.h)
 description: The PEP_WORK_IDLE_STATE structure contains a request to transition a component to an Fx power state.
 old-location: kernel\pep_work_idle_state.htm
 tech.root: kernel
-ms.assetid: DD8C454D-D0F6-456B-B59A-2E4DF2D757B5
 ms.date: 04/30/2018
 keywords: ["PEP_WORK_IDLE_STATE structure"]
 ms.keywords: "*PPEP_WORK_IDLE_STATE, PEP_WORK_IDLE_STATE, PEP_WORK_IDLE_STATE structure [Kernel-Mode Driver Architecture], PPEP_WORK_IDLE_STATE, PPEP_WORK_IDLE_STATE structure pointer [Kernel-Mode Driver Architecture], _PEP_WORK_IDLE_STATE, kernel.pep_work_idle_state, pep_x/PEP_WORK_IDLE_STATE, pep_x/PPEP_WORK_IDLE_STATE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pep_x.h
 api_name:
+ - _PEP_WORK_IDLE_STATE
+ - PPEP_WORK_IDLE_STATE
  - PEP_WORK_IDLE_STATE
 ---
 
@@ -58,9 +59,9 @@ The <b>PEP_WORK_IDLE_STATE</b> structure contains a request to transition a comp
 
 A handle that represents the registration of the device with the Windows <a href="/windows-hardware/drivers/kernel/overview-of-the-power-management-framework">power management framework</a> (PoFx). A POHANDLE value that represents the registration of the device with PoFx. The platform extension plug-in (PEP) previously received this handle from PoFx during the <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_crashdump_device">PEP_DPM_REGISTER_DEVICE</a> notification that informed the PEP that the device's driver stack registered the device with PoFx.
 
-### -field Component
+### -field Component [in]
 
-[in] The index that identifies the component. This member is an index into the <b>Components</b> array in the <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_device_register_v2">PEP_DEVICE_REGISTER_V2</a> structure that the PEP previously supplied in response to the <b>PEP_DPM_REGISTER_DEVICE</b> notification for this device. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
+The index that identifies the component. This member is an index into the <b>Components</b> array in the <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_device_register_v2">PEP_DEVICE_REGISTER_V2</a> structure that the PEP previously supplied in response to the <b>PEP_DPM_REGISTER_DEVICE</b> notification for this device. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
 
 ### -field State
 
@@ -81,3 +82,4 @@ The <b>IdleState</b> member of the <a href="/windows-hardware/drivers/ddi/pepfx/
 
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_work_information">PEP_WORK_INFORMATION</a>
+

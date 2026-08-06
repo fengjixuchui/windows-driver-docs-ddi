@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugBreakpoint.SetCommand
 title: IDebugBreakpoint::SetCommand (dbgeng.h)
-description: The SetCommand method sets the command that is executed when a breakpoint is triggered.
+description: The SetCommand method sets the command that is executed when a breakpoint is triggered. This method belongs to the IDebugBreakpoint interface.
 old-location: debugger\setcommand.htm
 tech.root: debugger
-ms.assetid: 0c9db77e-6e5d-45cd-a52c-dcc3acf5cba0
 ms.date: 05/03/2018
 keywords: ["IDebugBreakpoint::SetCommand"]
 ms.keywords: ComOther_166ee15d-c9e1-466f-9337-a6d20e9355ee.xml, IDebugBreakpoint interface [Windows Debugging],SetCommand method, IDebugBreakpoint.SetCommand, IDebugBreakpoint2 interface [Windows Debugging],SetCommand method, IDebugBreakpoint2::SetCommand, IDebugBreakpoint::SetCommand, SetCommand, SetCommand method [Windows Debugging], SetCommand method [Windows Debugging],IDebugBreakpoint interface, SetCommand method [Windows Debugging],IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint2::SetCommand, dbgeng/IDebugBreakpoint::SetCommand, debugger.setcommand
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugBreakpoint.SetCommand
- - IDebugBreakpoint2.SetCommand
+ - IDebugBreakpoint::SetCommand
 ---
 
 # IDebugBreakpoint::SetCommand
@@ -51,9 +49,9 @@ The <b>SetCommand</b>  method sets the command that is executed when a breakpoin
 
 ## -parameters
 
-### -param Command 
+### -param Command [in]
 
-[in]
+
 The command string that is executed when the breakpoint is triggered.
 
 ## -returns
@@ -86,3 +84,4 @@ The command string is a list of debugger commands that are separated by semicolo
 If the command string includes an execution command such as <b>G (Go)</b>, this command should be the last command in the <i>Command</i> string.  If a command causes the target to resume execution, the rest of the command string is ignored.
 
 For more information about breakpoint properties, see <a href="/windows-hardware/drivers/debugger/controlling-breakpoint-flags-and-parameters">Controlling Breakpoint Flags and Parameters</a>.
+

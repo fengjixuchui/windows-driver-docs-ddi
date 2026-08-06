@@ -4,7 +4,6 @@ title: PI8042_SYNCH_READ_PORT (ntdd8042.h)
 description: The PI8042_SYNCH_READ_PORT-typed callback routine does a synchronized read from an i8042 port. I8042prt supplies this callback.
 old-location: hid\pi8042_synch_read_port.htm
 tech.root: hid
-ms.assetid: 970bb5ed-2ddd-4d91-a90f-3df3bb7fa3f9
 ms.date: 04/30/2018
 keywords: ["PI8042_SYNCH_READ_PORT callback function"]
 ms.keywords: PI8042_SYNCH_READ_PORT, PI8042_SYNCH_READ_PORT callback, SynchReadPort, SynchReadPort callback function [Human Input Devices], hid.pi8042_synch_read_port, i8042ref_be606020-f80b-4347-883d-71378e5fa59d.xml, ntdd8042/SynchReadPort
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ntdd8042.h
 api_name:
- - SynchReadPort
+ - PI8042_SYNCH_READ_PORT
 ---
 
 # PI8042_SYNCH_READ_PORT callback function
@@ -50,19 +49,19 @@ The PI8042_SYNCH_READ_PORT-typed callback routine does a synchronized read from 
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to a context supplied by I8042prt.
 
-### -param Value 
+### -param Value [out]
 
-[out]
+
 Pointer to the UCHAR value returned by the routine.
 
-### -param WaitForACK 
+### -param WaitForACK [in]
 
-[in]
+
 Not used.
 
 ## -returns
@@ -111,3 +110,4 @@ The routine polls the hardware until a read is returned by the hardware or an in
 
 
 <a href="/windows-hardware/drivers/ddi/ntdd8042/nc-ntdd8042-pi8042_synch_write_port">PI8042_SYNCH_WRITE_PORT</a>
+

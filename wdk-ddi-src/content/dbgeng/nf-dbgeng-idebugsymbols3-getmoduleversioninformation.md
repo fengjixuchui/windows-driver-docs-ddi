@@ -1,11 +1,10 @@
 ---
 UID: NF:dbgeng.IDebugSymbols3.GetModuleVersionInformation
 title: IDebugSymbols3::GetModuleVersionInformation (dbgeng.h)
-description: The GetModuleVersionInformation method returns version information for the specified module.
+description: The GetModuleVersionInformation method returns version information for the specified module. This method belongs to the IDebugSymbols3 interface.
 old-location: debugger\getmoduleversioninformation.htm
 tech.root: debugger
-ms.assetid: af655cd2-2e1f-4d78-aff3-3875106b50bc
-ms.date: 05/03/2018
+ms.date: 02/06/2022
 keywords: ["IDebugSymbols3::GetModuleVersionInformation"]
 ms.keywords: GetModuleVersionInformation, GetModuleVersionInformation method [Windows Debugging], GetModuleVersionInformation method [Windows Debugging],IDebugSymbols2 interface, GetModuleVersionInformation method [Windows Debugging],IDebugSymbols3 interface, IDebugSymbols2 interface [Windows Debugging],GetModuleVersionInformation method, IDebugSymbols2::GetModuleVersionInformation, IDebugSymbols3 interface [Windows Debugging],GetModuleVersionInformation method, IDebugSymbols3.GetModuleVersionInformation, IDebugSymbols3::GetModuleVersionInformation, IDebugSymbols_a325db82-91a3-48d9-b189-8971cd5eaf75.xml, dbgeng/IDebugSymbols2::GetModuleVersionInformation, dbgeng/IDebugSymbols3::GetModuleVersionInformation, debugger.getmoduleversioninformation
 req.header: dbgeng.h
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols2.GetModuleVersionInformation
- - IDebugSymbols3.GetModuleVersionInformation
+ - IDebugSymbols3::GetModuleVersionInformation
 ---
 
 # IDebugSymbols3::GetModuleVersionInformation
@@ -51,35 +49,35 @@ The <b>GetModuleVersionInformation</b>  method returns version information for t
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 Specifies the index of the module.  If it is set to DEBUG_ANY_ID, the <i>Base</i> parameter is used to specify the location of the module instead.
 
-### -param Base 
+### -param Base [in]
 
-[in]
+
 If <i>Index</i> is DEBUG_ANY_ID, specifies the location in the target's memory address space of the base of the module.  Otherwise it is ignored.
 
-### -param Item 
+### -param Item [in]
 
-[in]
+
 Specifies the version information being requested.  This string corresponds to the <i>lpSubBlock</i> parameter of the function <b>VerQueryValue</b>.  For details on the <b>VerQueryValue</b> function, see the Platform SDK.
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Receives the requested version information.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
-Specifies the size in characters of the buffer <i>Buffer</i>.
 
-### -param VerInfoSize 
+Specifies the size in characters of the buffer <i>Buffer</i>. This size includes the space for the '\0' terminating character.
 
-[out, optional]
-Receives the size in characters of the version information.  If <i>VerInfoSize</i> is <b>NULL</b>, this information is not returned.
+### -param VerInfoSize [out, optional]
+
+
+Receives the size in characters of the version information. This size includes the space for the '\0' terminating character. If <i>VerInfoSize</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
 
@@ -150,3 +148,4 @@ For more information about modules, see <a href="/windows-hardware/drivers/debug
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

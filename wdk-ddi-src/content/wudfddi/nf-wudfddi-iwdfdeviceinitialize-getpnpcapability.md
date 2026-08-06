@@ -4,7 +4,6 @@ title: IWDFDeviceInitialize::GetPnpCapability (wudfddi.h)
 description: The GetPnpCapability method determines the state of the specified Plug and Play (PnP) capability.
 old-location: wdf\iwdfdeviceinitialize_getpnpcapability.htm
 tech.root: wdf
-ms.assetid: 64f15528-e934-4bdd-a9f7-6790eef7c7c5
 ms.date: 02/26/2018
 keywords: ["IWDFDeviceInitialize::GetPnpCapability"]
 ms.keywords: GetPnpCapability, GetPnpCapability method, GetPnpCapability method,IWDFDeviceInitialize interface, IWDFDeviceInitialize interface,GetPnpCapability method, IWDFDeviceInitialize.GetPnpCapability, IWDFDeviceInitialize::GetPnpCapability, UMDFDeviceObjectRef_1b66d13c-336f-4542-9f44-740679953603.xml, umdf.iwdfdeviceinitialize_getpnpcapability, wdf.iwdfdeviceinitialize_getpnpcapability, wudfddi/IWDFDeviceInitialize::GetPnpCapability
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDeviceInitialize.GetPnpCapability
+ - IWDFDeviceInitialize::GetPnpCapability
 ---
 
 # IWDFDeviceInitialize::GetPnpCapability
@@ -52,9 +51,9 @@ The <b>GetPnpCapability</b> method determines the state of the specified  Plug a
 
 ## -parameters
 
-### -param Capability 
+### -param Capability [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_pnp_capability">WDF_PNP_CAPABILITY</a>-typed value that identifies the PnP capability to retrieve status about.
 
 ## -returns
@@ -112,3 +111,4 @@ The capability is set.
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_pnp_capability">WDF_PNP_CAPABILITY</a>
+

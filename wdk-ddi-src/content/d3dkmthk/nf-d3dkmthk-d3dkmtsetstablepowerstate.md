@@ -2,7 +2,6 @@
 UID: NF:d3dkmthk.D3DKMTSetStablePowerState
 title: D3DKMTSetStablePowerState function (d3dkmthk.h)
 description: Sets stable power state.
-ms.assetid: bad62bfe-7e61-4f2a-84e1-deb0105d36da
 ms.date: 10/19/2018
 keywords: ["D3DKMTSetStablePowerState function"]
 ms.keywords: D3DKMTSetStablePowerState
@@ -50,7 +49,7 @@ Sets stable power state.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_SETSTABLEPOWERSTATE](ns-d3dkmthk-_d3dkmt_setstablepowerstate.md) structure.
 

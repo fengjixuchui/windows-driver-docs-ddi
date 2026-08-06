@@ -4,7 +4,6 @@ title: _NDIS_WWAN_DEVICE_SERVICE_EVENT (ndiswwan.h)
 description: The NDIS_WWAN_DEVICE_SERVICE_EVENT structure describes unsolicited device service data that were not initiated by commands from Windows.
 old-location: netvista\ndis_wwan_device_service_event.htm
 tech.root: netvista
-ms.assetid: 43205AA6-2B1A-4D04-9AF8-E0EB53253F5B
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_DEVICE_SERVICE_EVENT structure"]
 ms.keywords: "*PNDIS_WWAN_DEVICE_SERVICE_EVENT, NDIS_WWAN_DEVICE_SERVICE_EVENT, NDIS_WWAN_DEVICE_SERVICE_EVENT structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_DEVICE_SERVICE_EVENT, PNDIS_WWAN_DEVICE_SERVICE_EVENT structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_DEVICE_SERVICE_EVENT, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_EVENT, ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_EVENT, netvista.ndis_wwan_device_service_event"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_DEVICE_SERVICE_EVENT
+ - PNDIS_WWAN_DEVICE_SERVICE_EVENT
  - NDIS_WWAN_DEVICE_SERVICE_EVENT
 ---
 
@@ -102,19 +103,13 @@ sizeof(NDIS_WWAN_DEVICE_SERVICE_EVENT)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field Event
-
- 
-
-
-
-
-#### - EventData
 
 The information from the event.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_device_service_event">WWAN_DEVICE_SERVICE_EVENT</a>
+

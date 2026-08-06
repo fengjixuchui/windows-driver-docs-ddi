@@ -4,7 +4,6 @@ title: PPARALLEL_DESELECT_ROUTINE (parallel.h)
 description: The PPARALLEL_DESELECT_ROUTINE-typed callback routine deselects either an IEEE 1284.3 daisy chain device or an IEEE 1284 end-of-chain device that is attached to a parallel port.
 old-location: parports\pparallel_deselect_routine.htm
 tech.root: parports
-ms.assetid: 91182ed5-e444-41a7-b6fc-f14d0407f089
 ms.date: 02/15/2018
 keywords: ["PPARALLEL_DESELECT_ROUTINE callback"]
 ms.keywords: "(*PPARALLEL_DESELECT_ROUTINE), (*PPARALLEL_DESELECT_ROUTINE) callback function [Parallel Ports], cisspd_e8bc6fa2-03e4-4845-bfd6-0ebaf573e1b2.xml, parallel/(*PPARALLEL_DESELECT_ROUTINE), parports.pparallel_deselect_routine"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - parallel.h
 api_name:
- - (*PPARALLEL_DESELECT_ROUTINE)
+ - PPARALLEL_DESELECT_ROUTINE
 ---
 
 # PPARALLEL_DESELECT_ROUTINE callback
@@ -50,14 +49,14 @@ The <i>PPARALLEL_DESELECT_ROUTINE</i>-typed callback routine deselects either an
 
 ## -parameters
 
-### -param DeselectContext 
+### -param DeselectContext [in]
 
-[in]
+
 Pointer to the device extension of a functional device object (<a href="/windows-hardware/drivers/">FDO</a>) that represents a parallel port.
 
-### -param DeselectCommand 
+### -param DeselectCommand [in]
 
-[in]
+
 Pointer to a PARALLEL_1284_COMMAND structure. The caller specifies the following members:
 
 
@@ -175,3 +174,4 @@ For more information, see <a href="/previous-versions/ff544793(v=vs.85)">Selecti
 
 
 <a href="..\parallel\ns-parallel-_parallel_pnp_information.md">PARALLEL_PNP_INFORMATION</a>
+

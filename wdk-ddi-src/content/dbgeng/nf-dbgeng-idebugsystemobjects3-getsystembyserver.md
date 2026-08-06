@@ -4,8 +4,7 @@ title: IDebugSystemObjects3::GetSystemByServer (dbgeng.h)
 description: Gets the system for a server.
 old-location: debugger\idebugsystemobjects3_getsystembyserver.htm
 tech.root: debugger
-ms.assetid: 693CB919-A1D1-4A82-ABE5-2362431A9B92
-ms.date: 05/03/2018
+ms.date: 07/26/2023
 keywords: ["IDebugSystemObjects3::GetSystemByServer"]
 ms.keywords: GetSystemByServer, GetSystemByServer method [Windows Debugging], GetSystemByServer method [Windows Debugging],IDebugSystemObjects3 interface, IDebugSystemObjects3 interface [Windows Debugging],GetSystemByServer method, IDebugSystemObjects3.GetSystemByServer, IDebugSystemObjects3::GetSystemByServer, dbgeng/IDebugSystemObjects3::GetSystemByServer, debugger.idebugsystemobjects3_getsystembyserver
 req.header: dbgeng.h
@@ -38,11 +37,10 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSystemObjects3.GetSystemByServer
+ - IDebugSystemObjects3::GetSystemByServer
 ---
 
 # IDebugSystemObjects3::GetSystemByServer
-
 
 ## -description
 
@@ -52,21 +50,11 @@ Gets the system for a server.
 
 ### -param Server
 
+A pointer to the returned server value.
+
 ### -param Id
 
-#### - Buffer [out]
-
-A pointer to an output buffer. 
-
-
-#### - BufferSize [in]
-
-The size of the buffer.
-
-
-#### - NameSize [out, optional]
-
-A pointer to the name size.
+Id
 
 ## -returns
 
@@ -97,3 +85,4 @@ The method was successful.
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects3">IDebugSystemObjects3</a>
+

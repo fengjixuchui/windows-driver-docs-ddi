@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_SETINPUTLAYOUT
 title: PFND3D10DDI_SETINPUTLAYOUT (d3d10umddi.h)
 description: The IaSetInputLayout function sets an input layout for the input assembler.
 old-location: display\iasetinputlayout.htm
-ms.assetid: 905e4e7f-5bc5-487f-8d82-4ebc2db66135
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_SETINPUTLAYOUT callback function"]
 ms.keywords: IaSetInputLayout, IaSetInputLayout callback function [Display Devices], PFND3D10DDI_SETINPUTLAYOUT, PFND3D10DDI_SETINPUTLAYOUT callback, UserModeDisplayDriverDx10_Functions_fbd365d3-26a5-49a8-b89c-c094d8e873d9.xml, d3d10umddi/IaSetInputLayout, display.iasetinputlayout
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - IaSetInputLayout
+ - PFND3D10DDI_SETINPUTLAYOUT
 ---
 
 # PFND3D10DDI_SETINPUTLAYOUT callback function
@@ -50,13 +49,13 @@ The <i>IaSetInputLayout</i> function sets an input layout for the input assemble
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hInputLayout* [in]
 
@@ -79,3 +78,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._WHEAP_DEFERRED_EVENT
 title: WHEAP_DEFERRED_EVENT
-description: 
-tech.root: 
-ms.assetid: 2412af5a-0dd6-4fe6-86f4-dcd298fbfd63
+description: "Learn more about: WHEAP_DEFERRED_EVENT structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEAP_DEFERRED_EVENT structure"]
 ms.keywords: WHEAP_DEFERRED_EVENT, WHEAP_DEFERRED_EVENT, *PWHEAP_DEFERRED_EVENT,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEAP_DEFERRED_EVENT
+ - PWHEAP_DEFERRED_EVENT
  - WHEAP_DEFERRED_EVENT
-product:
- - Windows
 ---
 
 # WHEAP_DEFERRED_EVENT structure

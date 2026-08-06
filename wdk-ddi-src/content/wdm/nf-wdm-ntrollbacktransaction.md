@@ -4,7 +4,6 @@ title: NtRollbackTransaction function (wdm.h)
 description: The ZwRollbackTransaction routine initiates a rollback operation for a specified transaction.
 old-location: kernel\zwrollbacktransaction.htm
 tech.root: kernel
-ms.assetid: 865349bd-400d-4acf-a2f7-33da128702be
 ms.date: 04/30/2018
 keywords: ["NtRollbackTransaction function"]
 ms.keywords: NtRollbackTransaction, ZwRollbackTransaction, ZwRollbackTransaction routine [Kernel-Mode Driver Architecture], kernel.zwrollbacktransaction, ktm_ref_c29e1cd7-ffe0-4dab-be7f-a50a1d430ae3.xml, wdm/NtRollbackTransaction, wdm/ZwRollbackTransaction
@@ -38,7 +37,6 @@ api_type:
 api_location:
  - NtosKrnl.exe
 api_name:
- - ZwRollbackTransaction
  - NtRollbackTransaction
 ---
 
@@ -51,14 +49,14 @@ The <b>ZwRollbackTransaction</b> routine initiates a rollback operation for a sp
 
 ## -parameters
 
-### -param TransactionHandle 
+### -param TransactionHandle [in]
 
-[in]
+
 A handle to a <a href="/windows-hardware/drivers/kernel/transaction-objects">transaction object</a> that was obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreatetransaction">ZwCreateTransaction</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopentransaction">ZwOpenTransaction</a>. The handle must have TRANSACTION_ROLLBACK access to the object.
 
-### -param Wait 
+### -param Wait [in]
 
-[in]
+
 A Boolean value that the caller sets to <b>TRUE</b> for synchronous operation or <b>FALSE</b> for asynchronous operation. If this parameter is set to <b>TRUE</b>, the call does not return until the rollback operation is complete.
 
 ## -returns
@@ -168,3 +166,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntqueryinformationtransaction">ZwQueryInformationTransaction</a>
+

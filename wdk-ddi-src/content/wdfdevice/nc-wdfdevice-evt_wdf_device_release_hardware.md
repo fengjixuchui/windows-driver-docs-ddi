@@ -4,7 +4,6 @@ title: EVT_WDF_DEVICE_RELEASE_HARDWARE (wdfdevice.h)
 description: A driver's EvtDeviceReleaseHardware event callback function performs operations that are needed when a device is no longer accessible.
 old-location: wdf\evtdevicereleasehardware.htm
 tech.root: wdf
-ms.assetid: b4c17e57-688c-4c76-892c-5c8abbf83f20
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DEVICE_RELEASE_HARDWARE callback function"]
 ms.keywords: DFDeviceObjectGeneralRef_aaaf477b-f2be-4b26-a607-cb057d976dc1.xml, EVT_WDF_DEVICE_RELEASE_HARDWARE, EVT_WDF_DEVICE_RELEASE_HARDWARE callback, EvtDeviceReleaseHardware, EvtDeviceReleaseHardware callback function, kmdf.evtdevicereleasehardware, wdf.evtdevicereleasehardware, wdfdevice/EvtDeviceReleaseHardware
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfdevice.h
 api_name:
- - EvtDeviceReleaseHardware
+ - EVT_WDF_DEVICE_RELEASE_HARDWARE
 ---
 
 # EVT_WDF_DEVICE_RELEASE_HARDWARE callback function
@@ -52,14 +51,14 @@ A driver's <i>EvtDeviceReleaseHardware</i> event callback function performs oper
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param ResourcesTranslated 
+### -param ResourcesTranslated [in]
 
-[in]
+
 A handle to a resource list object that identifies the translated hardware resources that the Plug and Play manager has assigned to the device.
 
 ## -returns
@@ -96,3 +95,4 @@ For more information about drivers that provide this callback function, see <a h
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdf_device_prepare_hardware">EvtDevicePrepareHardware</a>
+

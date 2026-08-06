@@ -4,7 +4,6 @@ title: UrsSetPoHandle function (ursdevice.h)
 description: Registers and deletes the client driver's registration with the power management framework (PoFx).
 old-location: buses\urssetpohandle.htm
 tech.root: usbref
-ms.assetid: 87B34452-DC2C-4FD4-B0F8-51EFAF2D4AA6
 ms.date: 05/07/2018
 keywords: ["UrsSetPoHandle function"]
 ms.keywords: UrsSetPoHandle, UrsSetPoHandle function [Buses], buses.urssetpohandle, ursdevice/UrsSetPoHandle
@@ -51,14 +50,14 @@ Registers and deletes the client driver's registration with the power management
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to the framework device object that the client driver retrieved in the previous call to <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate">WdfDeviceCreate</a>.
 
-### -param PoHandle 
+### -param PoHandle [in]
 
-[in]
+
 A handle that represents the registration of the device with PoFx. The client driver receives this handle from WDF in  <a href="/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdfdevice_wdm_post_po_fx_register_device">EvtDeviceWdmPostPoFxRegisterDevice</a>  and <a href="/windows-hardware/drivers/ddi/wdfdevice/nc-wdfdevice-evt_wdfdevice_wdm_pre_po_fx_unregister_device">EvtDeviceWdmPrePoFxUnregisterDevice</a> callback functions.
 
 ## -remarks

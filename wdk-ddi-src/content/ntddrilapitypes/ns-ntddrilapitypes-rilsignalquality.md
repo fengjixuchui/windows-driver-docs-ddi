@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILSIGNALQUALITY
 title: RILSIGNALQUALITY (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILSIGNALQUALITY structure for internal use only. Don't use the RILSIGNALQUALITY structure in your code."
 old-location: netvista\rilsignalquality.htm
 tech.root: netvista
-ms.assetid: b2edfcdb-28b9-4322-8bfb-4d5d2c2d1519
 ms.date: 05/02/2018
 keywords: ["RILSIGNALQUALITY structure"]
 ms.keywords: "*LPRILSIGNALQUALITY, RILSIGNALQUALITY, RILSIGNALQUALITY structure [Network Drivers Starting with Windows Vista], netvista.rilsignalquality, ntddrilapitypes/RILSIGNALQUALITY"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSIGNALQUALITY
+ - LPRILSIGNALQUALITY
 ---
 
 # RILSIGNALQUALITY structure (ntddrilapitypes.h)

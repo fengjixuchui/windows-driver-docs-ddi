@@ -4,7 +4,6 @@ title: _SERIAL_STATUS (ntddser.h)
 description: The SERIAL_STATUS structure contains status information about the serial port.
 old-location: serports\serial_status.htm
 tech.root: serports
-ms.assetid: F77EF32F-FAB6-4800-9241-5AAA9885DEF5
 ms.date: 04/23/2018
 keywords: ["SERIAL_STATUS structure"]
 ms.keywords: "*PSERIAL_STATUS, PSERIAL_STATUS, PSERIAL_STATUS structure pointer [Serial Ports], SERIAL_STATUS, SERIAL_STATUS structure [Serial Ports], _SERIAL_STATUS, ntddser/PSERIAL_STATUS, ntddser/SERIAL_STATUS, serports.serial_status"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddser.h
 api_name:
+ - _SERIAL_STATUS
+ - PSERIAL_STATUS
  - SERIAL_STATUS
 ---
 
@@ -153,3 +154,4 @@ This structure is used by the <a href="/windows-hardware/drivers/ddi/ntddser/ni-
 
 
 <a href="/windows-hardware/drivers/ddi/ntddser/ni-ntddser-ioctl_serial_immediate_char">IOCTL_SERIAL_IMMEDIATE_CHAR</a>
+

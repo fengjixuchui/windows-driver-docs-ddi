@@ -4,7 +4,6 @@ title: FltCommitFinalizeComplete function (fltkernel.h)
 description: The FltCommitFinalizeComplete routine acknowledges a TRANSACTION_NOTIFY_COMMIT_FINALIZE notification.
 old-location: ifsk\fltcommitfinalizecomplete.htm
 tech.root: ifsk
-ms.assetid: e1bfef9f-87c8-49e0-bbc4-6bc5ea103758
 ms.date: 04/16/2018
 keywords: ["FltCommitFinalizeComplete function"]
 ms.keywords: FltApiRef_a_to_d_f2b874db-f5fb-405b-a3a5-b5877c88548d.xml, FltCommitFinalizeComplete, FltCommitFinalizeComplete routine [Installable File System Drivers], fltkernel/FltCommitFinalizeComplete, ifsk.fltcommitfinalizecomplete
@@ -51,19 +50,19 @@ The <b>FltCommitFinalizeComplete</b> routine acknowledges a TRANSACTION_NOTIFY_C
 
 ## -parameters
 
-### -param Instance 
+### -param Instance [in]
 
-[in]
+
 Opaque pointer to an instance of a minifilter driver. This parameter is required and cannot be <b>NULL</b>.
 
-### -param Transaction 
+### -param Transaction [in]
 
-[in]
+
 Opaque pointer to the transaction the minifilter driver is currently enlisted in. This parameter is required and cannot be <b>NULL</b>.
 
-### -param TransactionContext 
+### -param TransactionContext [in, optional]
 
-[in, optional]
+
 Pointer to the minifilter driver's context for the transaction. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

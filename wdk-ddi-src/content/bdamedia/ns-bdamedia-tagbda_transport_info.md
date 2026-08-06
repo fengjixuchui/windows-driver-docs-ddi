@@ -4,7 +4,6 @@ title: tagBDA_TRANSPORT_INFO (bdamedia.h)
 description: The BDA_TRANSPORT_INFO structure describes formatting for a stream connection.
 old-location: stream\bda_transport_info.htm
 tech.root: stream
-ms.assetid: 995a1d2f-8e2b-426e-a08c-283124ce905e
 ms.date: 04/23/2018
 keywords: ["tagBDA_TRANSPORT_INFO structure"]
 ms.keywords: "*PBDA_TRANSPORT_INFO, BDA_TRANSPORT_INFO, BDA_TRANSPORT_INFO structure [Streaming Media Devices], PBDA_TRANSPORT_INFO, PBDA_TRANSPORT_INFO structure pointer [Streaming Media Devices], bdamedia/BDA_TRANSPORT_INFO, bdamedia/PBDA_TRANSPORT_INFO, bdaref_3ee17c26-da8b-4d04-87fc-6c9912de349d.xml, stream.bda_transport_info, tagBDA_TRANSPORT_INFO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - bdamedia.h
 api_name:
+ - tagBDA_TRANSPORT_INFO
+ - PBDA_TRANSPORT_INFO
  - BDA_TRANSPORT_INFO
 ---
 
@@ -87,3 +88,4 @@ Pins of filters specify the data ranges they support to enable stream connection
 
 
 <a href="/windows-hardware/drivers/ddi/bdamedia/ns-bdamedia-tagks_datarange_bda_transport">KS_DATARANGE_BDA_TRANSPORT</a>
+

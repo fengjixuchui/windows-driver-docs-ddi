@@ -4,7 +4,6 @@ title: IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue (wudfddi.h)
 description: A driver's OnIoCanceledOnQueue event callback function informs the driver that an I/O request was canceled while it was in an I/O queue.
 old-location: wdf\iqueuecallbackiocanceledonqueue_oniocanceledonqueue.htm
 tech.root: wdf
-ms.assetid: 901ff312-d1bb-46bf-b8e6-6abc47fa3c7f
 ms.date: 02/26/2018
 keywords: ["IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue"]
 ms.keywords: IQueueCallbackIoCanceledOnQueue interface,OnIoCanceledOnQueue method, IQueueCallbackIoCanceledOnQueue.OnIoCanceledOnQueue, IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue, OnIoCanceledOnQueue, OnIoCanceledOnQueue method, OnIoCanceledOnQueue method,IQueueCallbackIoCanceledOnQueue interface, UMDFQueueObjectRef_e80a1257-b51e-46f8-8e9f-0fff3b830587.xml, umdf.iqueuecallbackiocanceledonqueue_oniocanceledonqueue, wdf.iqueuecallbackiocanceledonqueue_oniocanceledonqueue, wudfddi/IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IQueueCallbackIoCanceledOnQueue.OnIoCanceledOnQueue
+ - IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue
 ---
 
 # IQueueCallbackIoCanceledOnQueue::OnIoCanceledOnQueue
@@ -52,14 +51,14 @@ A driver's <b>OnIoCanceledOnQueue</b> event callback function informs the driver
 
 ## -parameters
 
-### -param pWdfQueue 
+### -param pWdfQueue [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfioqueue">IWDFIoQueue</a> interface for the I/O queue that the I/O request was in when it was canceled.
 
-### -param pWdfRequest 
+### -param pWdfRequest [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest">IWDFIoRequest</a> interface for the I/O request.
 
 ## -remarks
@@ -87,3 +86,4 @@ For more information about the <b>OnIoCanceledOnQueue</b> callback function, see
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-forwardtoioqueue">IWDFIoRequest::ForwardToIoQueue</a>
+

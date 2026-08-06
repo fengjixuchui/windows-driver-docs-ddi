@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_ADAPTER_RESET
 title: DOT11EXTIHV_ADAPTER_RESET (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_ADAPTER_RESET callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvadapterreset.htm
 tech.root: netvista
-ms.assetid: c1e8cce7-6fa4-45d3-a8c8-9f2ef0a8e846
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_ADAPTER_RESET callback"]
 ms.keywords: DOT11EXTIHV_ADAPTER_RESET, Dot11ExtIhvAdapterReset, Dot11ExtIhvAdapterReset callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_1749484b-7d42-42c0-bae2-5de47406f26b.xml, netvista.dot11extihvadapterreset, wlanihv/Dot11ExtIhvAdapterReset
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_ADAPTER_RESET
  - wlanihv/DOT11EXTIHV_ADAPTER_RESET
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtIhvAdapterReset
+ - DOT11EXTIHV_ADAPTER_RESET
 ---
 
 # DOT11EXTIHV_ADAPTER_RESET callback
@@ -52,9 +50,9 @@ api_name:
 
 ## -parameters
 
-### -param hIhvExtAdapter 
+### -param hIhvExtAdapter [in, optional]
 
-[in, optional]
+
 The handle used by the IHV Extensions DLL to reference the WLAN adapter. This handle value was
      specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
@@ -110,3 +108,4 @@ For more information about the reset operation for WLAN adapters, see
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+

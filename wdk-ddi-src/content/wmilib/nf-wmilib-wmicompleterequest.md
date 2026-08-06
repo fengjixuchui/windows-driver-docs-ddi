@@ -4,7 +4,6 @@ title: WmiCompleteRequest function (wmilib.h)
 description: The WmiCompleteRequest routine indicates that a driver has finished processing a WMI request in a DpWmiXxx routine.
 old-location: kernel\wmicompleterequest.htm
 tech.root: kernel
-ms.assetid: c6377dcc-a83b-4766-b882-25d228a26efe
 ms.date: 04/30/2018
 keywords: ["WmiCompleteRequest function"]
 ms.keywords: WmiCompleteRequest, WmiCompleteRequest routine [Kernel-Mode Driver Architecture], k902_08bc200c-67e2-4806-b744-621f31ec6af3.xml, kernel.wmicompleterequest, wmilib/WmiCompleteRequest
@@ -51,29 +50,29 @@ The <b>WmiCompleteRequest</b> routine indicates that a driver has finished proce
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 A pointer to the driver's <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a>.
 
-### -param Irp 
+### -param Irp [in, out]
 
-[in, out]
+
 A pointer to the IRP.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 Specifies the status to return for the IRP.
 
-### -param BufferUsed 
+### -param BufferUsed [in]
 
-[in]
+
 Specifies the number of bytes needed in the buffer passed to the driver's <i>DpWmiXxx</i> routine. If the buffer is too small, the driver sets <i>Status</i> to STATUS_BUFFER_TOO_SMALL and sets <i>BufferUsed</i> to the number of bytes needed for the data to be returned. If the buffer passed is large enough, the driver sets <i>BufferUsed</i> to the number of bytes actually used.
 
-### -param PriorityBoost 
+### -param PriorityBoost [in]
 
-[in]
+
 Specifies a system-defined constant by which to increment the run-time priority of the original thread that requested the operation. WMI calls <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iocompleterequest">IoCompleteRequest</a> with <i>PriorityBoost</i> when it completes the IRP. See <b>IoCompleteRequest</b> for more information on <i>PriorityBoost</i>.
 
 ## -returns

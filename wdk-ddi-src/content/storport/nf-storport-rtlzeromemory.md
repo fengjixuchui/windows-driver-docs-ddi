@@ -1,10 +1,9 @@
 ---
 UID: NF:storport.RtlZeroMemory
 title: RtlZeroMemory macro (storport.h)
-description: The RtlZeroMemory routine fills a block of memory with zeros, given a pointer to the block and the length, in bytes, to be filled.
+description: The RtlZeroMemory macro (storport.h) fills a block of memory with zeros, given a pointer to the block and the length, in bytes, to be filled.
 old-location: kernel\rtlzeromemory.htm
 tech.root: kernel
-ms.assetid: e9e20d9c-0f2f-4ab1-a249-3e09bb6a7a22
 ms.date: 02/24/2018
 keywords: ["RtlZeroMemory macro"]
 ms.keywords: RtlZeroMemory, RtlZeroMemory routine [Kernel-Mode Driver Architecture], k109_63d9f0fb-d698-4707-9018-de2fa851a94b.xml, kernel.rtlzeromemory, wdm/RtlZeroMemory
@@ -24,10 +23,9 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: Any level (See Remarks section)
+req.irql: Any level (see Remarks section)
 targetos: Windows
 req.typenames: STOR_SPINLOCK
-req.product: Windows 10 or later.
 f1_keywords:
  - RtlZeroMemory
  - storport/RtlZeroMemory
@@ -51,14 +49,14 @@ The <b>RtlZeroMemory</b> routine fills a block of memory with zeros, given a poi
 
 ## -parameters
 
-### -param Destination 
+### -param Destination [out]
 
-[out]
+
 A pointer to the memory block to be filled with zeros.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 The number of bytes to fill with zeros.
 
 ## -syntax

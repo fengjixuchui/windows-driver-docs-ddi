@@ -4,7 +4,6 @@ title: IMiniportMidi::Service (portcls.h)
 description: The Service method notifies the miniport driver of a request for service.
 old-location: audio\iminiportmidi_service.htm
 tech.root: audio
-ms.assetid: 7ec2c54d-3974-43e9-9ef8-63393b2d02cd
 ms.date: 05/08/2018
 keywords: ["IMiniportMidi::Service"]
 ms.keywords: IMiniportMidi interface [Audio Devices],Service method, IMiniportMidi.Service, IMiniportMidi::Service, Service, Service method [Audio Devices], Service method [Audio Devices],IMiniportMidi interface, audio.iminiportmidi_service, audmp-routines_e37a9a63-eaeb-4827-b534-4d73dead44fb.xml, portcls/IMiniportMidi::Service
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportMidi.Service
+ - IMiniportMidi::Service
 ---
 
 # IMiniportMidi::Service
@@ -73,3 +72,4 @@ When the miniport driver's ISR calls the port driver's <a href="/windows-hardwar
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iservicesink">IServiceSink</a>
+

@@ -4,7 +4,6 @@ title: _DD_FREE_DEFERRED_AGP_DATA (d3dhal.h)
 description: DirectX 8.0 and later versions and NT-based operating systems only. DD_FREE_DEFERRED_AGP_DATA is the data structure pointed to by the lpvData field of DD_GETDRIVERINFODATA for D3DGDI2_TYPE_DEFER_AGP_FREES and D3DGDI2_TYPE_FREE_DEFERRED_AGP notifications.
 old-location: display\dd_free_deferred_agp_data.htm
 tech.root: display
-ms.assetid: 38830856-1f66-44d6-9501-9454a31571b7
 ms.date: 05/10/2018
 keywords: ["DD_FREE_DEFERRED_AGP_DATA structure"]
 ms.keywords: DD_FREE_DEFERRED_AGP_DATA, DD_FREE_DEFERRED_AGP_DATA structure [Display Devices], _DD_FREE_DEFERRED_AGP_DATA, d3dhal/DD_FREE_DEFERRED_AGP_DATA, d3dstrct_06ad77f0-33c0-4297-a713-d23f0684dbee.xml, display.dd_free_deferred_agp_data
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dhal.h
 api_name:
+ - _DD_FREE_DEFERRED_AGP_DATA
  - DD_FREE_DEFERRED_AGP_DATA
 ---
 
@@ -76,3 +76,4 @@ The driver receives a <b>GetDriverInfo2</b> call with D3DGDI2_TYPE_FREE_DEFERRED
 
 
 <a href="/windows/win32/api/ddrawint/ns-ddrawint-dd_getdriverinfodata">DD_GETDRIVERINFODATA</a>
+

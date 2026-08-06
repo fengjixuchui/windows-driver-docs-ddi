@@ -4,7 +4,6 @@ title: VideoPortReadPortBufferUshort function (video.h)
 description: The VideoPortReadPortBufferUshort function reads a number of USHORT values from a mapped I/O port and writes them into a buffer.
 old-location: display\videoportreadportbufferushort.htm
 tech.root: display
-ms.assetid: 3ad19dc0-f301-4367-b867-6bc714fd3d5e
 ms.date: 05/10/2018
 keywords: ["VideoPortReadPortBufferUshort function"]
 ms.keywords: VideoPortReadPortBufferUshort, VideoPortReadPortBufferUshort function [Display Devices], VideoPort_Functions_598e11ff-25be-4b55-a86f-130100ed0972.xml, display.videoportreadportbufferushort, video/VideoPortReadPortBufferUshort
@@ -54,9 +53,9 @@ The <b>VideoPortReadPortBufferUshort</b> function reads a number of USHORT value
 
 Pointer to the port. The given <i>Port</i> must be in a mapped I/O-space range returned by <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportgetdevicebase">VideoPortGetDeviceBase</a>.
 
-### -param Buffer 
+### -param Buffer [out]
 
-[out]
+
 Pointer to a buffer into which an array of USHORT values is written.
 
 ### -param Count

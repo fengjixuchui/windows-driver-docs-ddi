@@ -4,7 +4,6 @@ title: KsGateTerminateOr function (ks.h)
 description: The KsGateTerminateOr function deletes an existing OR gate and removes an input from any attached AND gate.
 old-location: stream\ksgateterminateor.htm
 tech.root: stream
-ms.assetid: 6d73ce17-1fbc-4d12-87f0-ac10889b85be
 ms.date: 04/23/2018
 keywords: ["KsGateTerminateOr function"]
 ms.keywords: KsGateTerminateOr, KsGateTerminateOr function [Streaming Media Devices], avfunc_b2bf57c5-4f08-456a-bbac-217531cf5bc3.xml, ks/KsGateTerminateOr, stream.ksgateterminateor
@@ -50,9 +49,9 @@ The<b> KsGateTerminateOr</b> function deletes an existing OR gate and removes an
 
 ## -parameters
 
-### -param OrGate 
+### -param OrGate [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksgate">KSGATE</a> structure that is the OR gate to delete. This gate must be at the beginning of a gate chain.
 
 ## -remarks

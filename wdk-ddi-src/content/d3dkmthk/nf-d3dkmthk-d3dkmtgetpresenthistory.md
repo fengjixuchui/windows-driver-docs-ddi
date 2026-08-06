@@ -3,14 +3,13 @@ UID: NF:d3dkmthk.D3DKMTGetPresentHistory
 title: D3DKMTGetPresentHistory function (d3dkmthk.h)
 description: The D3DKMTGetPresentHistory function retrieves copying history.
 old-location: display\d3dkmtgetpresenthistory.htm
-ms.assetid: e00af04e-4770-4505-a06c-c44405dcaab5
 ms.date: 05/10/2018
 keywords: ["D3DKMTGetPresentHistory function"]
 ms.keywords: D3DKMTGetPresentHistory, D3DKMTGetPresentHistory function [Display Devices], OpenGL_Functions_9070e169-207c-478d-8eab-b0bcfad65362.xml, d3dkmthk/D3DKMTGetPresentHistory, display.d3dkmtgetpresenthistory
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -53,7 +52,7 @@ The <b>D3DKMTGetPresentHistory</b> function retrieves copying history.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in, out]
 

@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddk._PCI_EXPRESS_DEVICE_STATUS_REGISTER
 title: _PCI_EXPRESS_DEVICE_STATUS_REGISTER (ntddk.h)
-description: The PCI_EXPRESS_DEVICE_STATUS_REGISTER structure describes a PCI Express (PCIe) device status register of a PCIe capability structure.
+description: The _PCI_EXPRESS_DEVICE_STATUS_REGISTER structure (ntddk.h) describes a PCI Express (PCIe) device status register of a PCIe capability structure.
 old-location: pci\pci_express_device_status_register.htm
 tech.root: PCI
-ms.assetid: a4c92364-59d4-442c-879b-fba770d8d612
 ms.date: 02/24/2018
 keywords: ["PCI_EXPRESS_DEVICE_STATUS_REGISTER structure"]
 ms.keywords: "*PPCI_EXPRESS_DEVICE_STATUS_REGISTER, PCI.pci_express_device_status_register, PCI_EXPRESS_DEVICE_STATUS_REGISTER, PCI_EXPRESS_DEVICE_STATUS_REGISTER union [Buses], PPCI_EXPRESS_DEVICE_STATUS_REGISTER, PPCI_EXPRESS_DEVICE_STATUS_REGISTER union pointer [Buses], _PCI_EXPRESS_DEVICE_STATUS_REGISTER, ntddk/PCI_EXPRESS_DEVICE_STATUS_REGISTER, ntddk/PPCI_EXPRESS_DEVICE_STATUS_REGISTER, pci_struct_90e0cf73-2c43-444d-bdaa-77fd00d483a7.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _PCI_EXPRESS_DEVICE_STATUS_REGISTER
+ - PPCI_EXPRESS_DEVICE_STATUS_REGISTER
  - PCI_EXPRESS_DEVICE_STATUS_REGISTER
 ---
 
@@ -61,37 +62,37 @@ The PCI_EXPRESS_DEVICE_STATUS_REGISTER structure describes a PCI Express (PCIe) 
 A USHORT representation of the contents of the PCI_EXPRESS_DEVICE_STATUS_REGISTER structure.
 
 
-#### - AuxPowerDetected
+### -field DUMMYSTRUCTNAME.AuxPowerDetected
 
 A single bit that indicates that AUX power has been detected.
 
 
-#### - CorrectableErrorDetected
+### -field DUMMYSTRUCTNAME.CorrectableErrorDetected
 
 A single bit that indicates that a correctable error has been detected.
 
 
-#### - FatalErrorDetected
+### -field DUMMYSTRUCTNAME.FatalErrorDetected
 
 A single bit that indicates that a non-fatal uncorrectable error has been detected.
 
 
-#### - NonFatalErrorDetected
+### -field DUMMYSTRUCTNAME.NonFatalErrorDetected
 
 A single bit that indicates that a non-fatal uncorrectable error has been detected.
 
 
-#### - Rsvd
+### -field DUMMYSTRUCTNAME.Rsvd
 
 Reserved.
 
 
-#### - TransactionsPending
+### -field DUMMYSTRUCTNAME.TransactionsPending
 
 A single bit that indicates that the device has issued non-posted requests that have not been completed. The device clears this bit when all outstanding non-posted requests have completed or have been terminated by the completion timeout mechanism.
 
 
-#### - UnsupportedRequestDetected
+### -field DUMMYSTRUCTNAME.UnsupportedRequestDetected
 
 A single bit that indicates that an unsupported request has been detected.
 
@@ -121,3 +122,4 @@ A PCI_EXPRESS_DEVICE_STATUS_REGISTER structure is contained in the <a href="/win
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_pci_express_capability">PCI_EXPRESS_CAPABILITY</a>
+

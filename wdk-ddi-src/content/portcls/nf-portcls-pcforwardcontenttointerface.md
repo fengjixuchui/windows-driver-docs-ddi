@@ -4,7 +4,6 @@ title: PcForwardContentToInterface function (portcls.h)
 description: The PcForwardContentToInterface function accepts a pointer to the COM interface of an object to which the caller intends to forward protected content.
 old-location: audio\pcforwardcontenttointerface.htm
 tech.root: audio
-ms.assetid: 5aa6aa90-ef41-467e-a096-5ab660b3f357
 ms.date: 05/08/2018
 keywords: ["PcForwardContentToInterface function"]
 ms.keywords: PcForwardContentToInterface, PcForwardContentToInterface function [Audio Devices], audio.pcforwardcontenttointerface, audpc-routines_1c3b8e8d-556e-4029-9e25-5a2e083dd17f.xml, portcls/PcForwardContentToInterface
@@ -51,19 +50,19 @@ The <b>PcForwardContentToInterface</b> function accepts a pointer to the COM int
 
 ## -parameters
 
-### -param ContentId 
+### -param ContentId [in]
 
-[in]
+
 Specifies the DRM content ID. This parameter identifies a protected KS audio stream.
 
-### -param pUnknown 
+### -param pUnknown [in]
 
-[in]
+
 Pointer to a COM interface that directly receives KS audio stream data for a KS audio filter.
 
-### -param NumMethods 
+### -param NumMethods [in]
 
-[in]
+
 Specifies the total number of methods in the COM interface that <i>pUnknown</i> points to, including all the methods in its base interfaces.
 
 ## -returns

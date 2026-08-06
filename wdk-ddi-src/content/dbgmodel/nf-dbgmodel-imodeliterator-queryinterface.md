@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IModelIterator.QueryInterface
 title: IModelIterator::QueryInterface (dbgmodel.h)
-description: Retrieves pointers to the supported interfaces on an object. This method calls IUnknown::AddRef on the pointer it returns.
-ms.assetid: 7689b08e-7cfa-4e76-a303-721dd06b0223
+description: "The IModelIterator::QueryInterface method retrieves pointers to the supported interfaces on an object."
 ms.date: 08/13/2018
 keywords: ["IModelIterator::QueryInterface"]
 ms.keywords: IModelIterator::QueryInterface, QueryInterface, IModelIterator.QueryInterface, IModelIterator::QueryInterface, IModelIterator.QueryInterface
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IModelIterator.QueryInterface
+ - IModelIterator::QueryInterface
 ---
 
 # IModelIterator::QueryInterface
@@ -69,3 +68,4 @@ Standard COM method.
 ## -see-also
 
 [IModelIterator interface](nn-dbgmodel-imodeliterator.md)
+

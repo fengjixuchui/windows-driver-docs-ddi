@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILGETOPERATORLISTPARAMS
 title: RILGETOPERATORLISTPARAMS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILGETOPERATORLISTPARAMS structure for internal use only."
 old-location: netvista\rilgetoperatorlistparams.htm
 tech.root: netvista
-ms.assetid: 75c8b3b3-4f33-465a-a35c-9d3056a2eb75
 ms.date: 05/02/2018
 keywords: ["RILGETOPERATORLISTPARAMS structure"]
 ms.keywords: "*LPRILGETOPERATORLISTPARAMS, RILGETOPERATORLISTPARAMS, RILGETOPERATORLISTPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilgetoperatorlistparams, ntddrilapitypes/RILGETOPERATORLISTPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILGETOPERATORLISTPARAMS
+ - LPRILGETOPERATORLISTPARAMS
 ---
 
 # RILGETOPERATORLISTPARAMS structure (rilapitypes.h)

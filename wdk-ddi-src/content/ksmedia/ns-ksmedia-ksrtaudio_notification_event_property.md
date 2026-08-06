@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_32
+UID: NS:ksmedia.KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY
 title: KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY (ksmedia.h)
 description: The KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY structure appends an event handle to a KSPROPERTY structure
 old-location: audio\ksrtaudio_notification_event_property.htm
 tech.root: audio
-ms.assetid: 364db984-1107-4381-ade3-413e238b9796
 ms.date: 05/08/2018
 keywords: ["KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY structure"]
 ms.keywords: "*PKSRTAUDIO_NOTIFICATION_EVENT_PROPERTY, KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY, KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY structure [Audio Devices], PKSRTAUDIO_NOTIFICATION_EVENT_PROPERTY, PKSRTAUDIO_NOTIFICATION_EVENT_PROPERTY structure pointer [Audio Devices], aud-prop_0c408e4a-d94e-4458-9b31-da185dc42747.xml, audio.ksrtaudio_notification_event_property, ksmedia/KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY, ksmedia/PKSRTAUDIO_NOTIFICATION_EVENT_PROPERTY"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSRTAUDIO_NOTIFICATION_EVENT_PROPERTY
  - KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY
 ---
 
@@ -48,7 +48,7 @@ api_name:
 
 ## -description
 
-The KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY structure appends an event handle to a <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure
+The KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY structure appends an event handle to a <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure
 
 ## -struct-fields
 
@@ -64,11 +64,11 @@ Specifies a user-mode event handle to be registered or unregistered for event no
 
 The KSPROPERTY_RTAUDIO_REGISTER_NOTIFICATION_EVENT and KSPROPERTY_RTAUDIO_UNREGISTER_NOTIFICATION_EVENT property requests use the KSRTAUDIO_NOTIFICATION_EVENT_PROPERTY structure to pass a user-mode event handle from the client to the driver.
 
-The <b>NotificationEvent</b> member is a user-mode event handle that, when registered, receives signals as buffer DMA progresses.  The notification cabability is only available upon a successful call to <a href="/windows-hardware/drivers/audio/ksproperty-rtaudio-buffer-with-notification">KSPROPERTY_RTAUDIO_BUFFER_WITH_NOTIFICATION</a>.
+The <b>NotificationEvent</b> member is a user-mode event handle that, when registered, receives signals as buffer DMA progresses.  The notification capability is only available upon a successful call to <a href="/windows-hardware/drivers/audio/ksproperty-rtaudio-buffer-with-notification">KSPROPERTY_RTAUDIO_BUFFER_WITH_NOTIFICATION</a>.
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -81,3 +81,4 @@ The <b>NotificationEvent</b> member is a user-mode event handle that, when regis
 
 
 <b>KSPROPERTY_RTAUDIO_UNREGISTER_NOTIFICATION_EVENT</b>
+

@@ -4,7 +4,6 @@ title: IWDFIoRequest::GetIoQueue (wudfddi.h)
 description: The GetIoQueue method retrieves the I/O queue object that is associated with an I/O request.
 old-location: wdf\iwdfiorequest_getioqueue.htm
 tech.root: wdf
-ms.assetid: 834d5ee3-b28b-4d75-b0b7-be1f36ace8aa
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequest::GetIoQueue"]
 ms.keywords: GetIoQueue, GetIoQueue method, GetIoQueue method,IWDFIoRequest interface, IWDFIoRequest interface,GetIoQueue method, IWDFIoRequest.GetIoQueue, IWDFIoRequest::GetIoQueue, UMDFRequestObjectRef_1e603d95-06ae-45a8-ab4d-3592d6e140bf.xml, umdf.iwdfiorequest_getioqueue, wdf.iwdfiorequest_getioqueue, wudfddi/IWDFIoRequest::GetIoQueue
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequest.GetIoQueue
+ - IWDFIoRequest::GetIoQueue
 ---
 
 # IWDFIoRequest::GetIoQueue
@@ -52,9 +51,9 @@ The <b>GetIoQueue</b> method retrieves the I/O queue object that is associated w
 
 ## -parameters
 
-### -param ppWdfIoQueue 
+### -param ppWdfIoQueue [out]
 
-[out]
+
 A pointer to a variable that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfioqueue">IWDFIoQueue</a> interface for the I/O queue object that the I/O request is associated with.
 
 ## -see-also
@@ -64,3 +63,4 @@ A pointer to a variable that receives a pointer to the <a href="/windows-hardwar
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest">IWDFIoRequest</a>
+

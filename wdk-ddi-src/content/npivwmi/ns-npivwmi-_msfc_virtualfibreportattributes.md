@@ -4,7 +4,6 @@ title: _MSFC_VirtualFibrePortAttributes (npivwmi.h)
 description: The MSFC_VirtualFibrePortAttributes structure contains attribute information for a virtual port.
 old-location: storage\msfc_virtualfibreportattributes.htm
 tech.root: storage
-ms.assetid: FD8D6063-E6DD-4EA6-9675-774C58C08B40
 ms.date: 03/29/2018
 keywords: ["MSFC_VirtualFibrePortAttributes structure"]
 ms.keywords: "*PMSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes, MSFC_VirtualFibrePortAttributes structure [Storage Devices], PMSFC_VirtualFibrePortAttributes, PMSFC_VirtualFibrePortAttributes structure pointer [Storage Devices], _MSFC_VirtualFibrePortAttributes, npivwmi/MSFC_VirtualFibrePortAttributes, npivwmi/PMSFC_VirtualFibrePortAttributes, storage.msfc_virtualfibreportattributes"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - npivwmi.h
 api_name:
+ - _MSFC_VirtualFibrePortAttributes
+ - PMSFC_VirtualFibrePortAttributes
  - MSFC_VirtualFibrePortAttributes
 ---
 
@@ -85,3 +86,4 @@ The world wide port name of the fabric.
 ## -see-also
 
 <a href="/windows-hardware/drivers/storage/msfc-virtualfibreportattributes-wmi-class">MSFC_VirtualFibrePortAttributes WMI Class</a>
+

@@ -4,7 +4,6 @@ title: RtlSetOwnerSecurityDescriptor function (ntifs.h)
 description: The RtlSetOwnerSecurityDescriptor routine sets the owner information of an absolute-format security descriptor. It replaces any owner information that is already present in the security descriptor.
 old-location: ifsk\rtlsetownersecuritydescriptor.htm
 tech.root: ifsk
-ms.assetid: 43392c57-8fe9-4219-9f00-ac73c83c3abc
 ms.date: 04/16/2018
 keywords: ["RtlSetOwnerSecurityDescriptor function"]
 ms.keywords: RtlSetOwnerSecurityDescriptor, RtlSetOwnerSecurityDescriptor routine [Installable File System Drivers], ifsk.rtlsetownersecuritydescriptor, ntifs/RtlSetOwnerSecurityDescriptor, rtlref_c8ec0e44-dadc-42ad-9947-2ecb5ec4aa57.xml
@@ -51,19 +50,19 @@ The <b>RtlSetOwnerSecurityDescriptor</b> routine sets the owner information of a
 
 ## -parameters
 
-### -param SecurityDescriptor 
+### -param SecurityDescriptor [in, out]
 
-[in, out]
+
 Pointer to the SECURITY_DESCRIPTOR structure whose owner is to be set. <b>RtlSetOwnerSecurityDescriptor</b> replaces any existing owner with the new owner.
 
-### -param Owner 
+### -param Owner [in, optional]
 
-[in, optional]
+
 Pointer to a security identifier (<a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_sid">SID</a>) structure for the security descriptor's new primary owner. This pointer, not the SID structure itself, is copied into the security descriptor. If this parameter is <b>NULL</b>, <b>RtlSetOwnerSecurityDescriptor</b> clears the security descriptor's owner information. This marks the security descriptor as having no owner.
 
-### -param OwnerDefaulted 
+### -param OwnerDefaulted [in, optional]
 
-[in, optional]
+
 Set to <b>TRUE</b> if the owner information is derived from a default mechanism. If this value is <b>TRUE</b>, it is default information. <b>RtlSetOwnerSecurityDescriptor</b> sets the SE_OWNER_DEFAULTED flag in the security descriptor's SECURITY_DESCRIPTOR_CONTROL field. If this parameter is <b>FALSE</b>, the SE_OWNER_DEFAULTED flag is cleared.
 
 ## -returns
@@ -112,7 +111,7 @@ The given security descriptor is not a valid absolute security descriptor.
 
 ## -remarks
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 

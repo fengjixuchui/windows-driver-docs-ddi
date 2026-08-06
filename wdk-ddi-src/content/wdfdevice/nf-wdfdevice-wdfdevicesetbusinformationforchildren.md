@@ -4,7 +4,6 @@ title: WdfDeviceSetBusInformationForChildren function (wdfdevice.h)
 description: The WdfDeviceSetBusInformationForChildren method sets information about a bus that a bus driver supports. This information is available to the bus's child devices.
 old-location: wdf\wdfdevicesetbusinformationforchildren.htm
 tech.root: wdf
-ms.assetid: ecfce692-7dac-4f55-8a8a-1f51c27cce41
 ms.date: 02/26/2018
 keywords: ["WdfDeviceSetBusInformationForChildren function"]
 ms.keywords: DFDeviceObjectGeneralRef_76b69a67-0e1e-41d6-be98-3d5f76433d97.xml, WdfDeviceSetBusInformationForChildren, WdfDeviceSetBusInformationForChildren method, kmdf.wdfdevicesetbusinformationforchildren, wdf.wdfdevicesetbusinformationforchildren, wdfdevice/WdfDeviceSetBusInformationForChildren
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfDeviceSetBusInformationForChildren</b> method sets information about a
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param BusInformation 
+### -param BusInformation [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_pnp_bus_information">PNP_BUS_INFORMATION</a> structure that describes the bus.
 
 ## -remarks

@@ -3,7 +3,6 @@ UID: NC:d3d12umddi.PFND3D12DDI_SET_PREDICATION
 title: PFND3D12DDI_SET_PREDICATION (d3d12umddi.h)
 description: The pfnSetPredication callback function denotes that subsequent video operations and resource manipulation commands are not actually performed if the resulting predicate data of the predicate is equal to the operation specified.
 old-location: display\pfnd3d12ddi_set_predication.htm
-ms.assetid: C5830688-4FC6-4D3F-82EB-15354B28C5F1
 ms.date: 05/10/2018
 keywords: ["PFND3D12DDI_SET_PREDICATION callback function"]
 ms.keywords: PFND3D12DDI_SET_PREDICATION, PFND3D12DDI_SET_PREDICATION callback, d3d12umddi/pfnSetPredication, display.pfnd3d12ddi_set_predication, pfnSetPredication, pfnSetPredication callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d12umddi.h
 api_name:
- - pfnSetPredication
+ - PFND3D12DDI_SET_PREDICATION
 ---
 
 # PFND3D12DDI_SET_PREDICATION callback function
@@ -50,21 +49,21 @@ The <i>pfnSetPredication</i> callback function denotes that subsequent video ope
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hCommandList*
 
 A handle to the driver's data for the command list. The driver uses this region of memory to store internal data structures that are related to its command list.
 
-### -param Arg2
+### -param unnamedParam2
 
 *hResource*
 
 The handle of a resource.
 
-### -param Arg3
+### -param unnamedParam3
 
-### -param Arg4
+### -param unnamedParam4
 
 *PredicationOp*
 
@@ -73,3 +72,4 @@ A predication operation. For more information, see the <a href="/windows-hardwar
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d12umddi/ne-d3d12umddi-d3d12ddi_predication_op">D3D12DDI_PREDICATION_OP</a>
+

@@ -2,7 +2,6 @@
 UID: NN:dbgmodel.IDataModelScriptDebug2
 title: IDataModelScriptDebug2 (dbgmodel.h)
 description: An optional interface on scripts (objects which implement IDataModelScript).
-ms.assetid: 29d61401-a385-4f5e-bda3-81ee79f5c5f8
 ms.date: 06/11/2019
 keywords: ["IDataModelScriptDebug2 interface"]
 req.header: dbgmodel.h
@@ -45,7 +44,7 @@ This version 2 of the interface supports all of the previous methods with identi
 
 ## -inheritance
 
-IDataModelScriptDebug2 interits from [IDataModelScriptDebug](nn-dbgmodel-idatamodelscriptdebug.md).
+IDataModelScriptDebug2 inherits from [IDataModelScriptDebug](nn-dbgmodel-idatamodelscriptdebug.md).
 
 ## -remarks
 

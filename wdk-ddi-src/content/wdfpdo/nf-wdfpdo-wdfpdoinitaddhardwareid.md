@@ -4,7 +4,6 @@ title: WdfPdoInitAddHardwareID function (wdfpdo.h)
 description: The WdfPdoInitAddHardwareID method adds a hardware ID to the list of hardware IDs for a child device.
 old-location: wdf\wdfpdoinitaddhardwareid.htm
 tech.root: wdf
-ms.assetid: 2b5c853d-8548-419e-bd41-be9e8364fb57
 ms.date: 02/26/2018
 keywords: ["WdfPdoInitAddHardwareID function"]
 ms.keywords: DFDeviceObjectFdoPdoRef_f06f24ea-f0f8-4ce7-8b70-725de7b5c970.xml, WdfPdoInitAddHardwareID, WdfPdoInitAddHardwareID method, kmdf.wdfpdoinitaddhardwareid, wdf.wdfpdoinitaddhardwareid, wdfpdo/WdfPdoInitAddHardwareID
@@ -53,14 +52,14 @@ The <b>WdfPdoInitAddHardwareID</b> method adds a hardware ID to the list of hard
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
-### -param HardwareID 
+### -param HardwareID [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a hardware ID string. The driver can allocate the string's buffer from paged pool.
 
 ## -returns

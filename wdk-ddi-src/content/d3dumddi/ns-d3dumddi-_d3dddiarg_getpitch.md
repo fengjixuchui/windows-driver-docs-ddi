@@ -4,7 +4,6 @@ title: _D3DDDIARG_GETPITCH (d3dumddi.h)
 description: The D3DDDIARG_GETPITCH structure describes an encrypted surface for which the GetPitch function retrieves the pitch.
 old-location: display\d3dddiarg_getpitch.htm
 tech.root: display
-ms.assetid: 59661cfe-4a1f-4805-9421-7f694e82f8d2
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_GETPITCH structure"]
 ms.keywords: D3DDDIARG_GETPITCH, D3DDDIARG_GETPITCH structure [Display Devices], UMDisplayDriver_param_Structs_02e95329-8eba-41a3-ae4e-d8830b47ada6.xml, _D3DDDIARG_GETPITCH, d3dumddi/D3DDDIARG_GETPITCH, display.d3dddiarg_getpitch
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_GETPITCH
  - D3DDDIARG_GETPITCH
 ---
 
@@ -52,22 +52,23 @@ The D3DDDIARG_GETPITCH structure describes an encrypted surface for which the <a
 
 ## -struct-fields
 
-### -field hCryptoSession
+### -field hCryptoSession [in]
 
-[in] A handle to the encryption session.
+A handle to the encryption session.
 
-### -field hResource
+### -field hResource [in]
 
-[in] A handle to the resource.
+A handle to the resource.
 
-### -field SubResourceIndex
+### -field SubResourceIndex [in]
 
-[in] The zero-based index into the resource, which the <b>hResource</b> handle specifies. This index indicates the encrypted surface.
+The zero-based index into the resource, which the <b>hResource</b> handle specifies. This index indicates the encrypted surface.
 
-### -field Pitch
+### -field Pitch [out]
 
-[out] The pitch, in bytes, of the encrypted surface. The user-mode display driver's <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getpitch">GetPitch</a> function returns this pitch value to the Direct3D runtime.
+The pitch, in bytes, of the encrypted surface. The user-mode display driver's <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getpitch">GetPitch</a> function returns this pitch value to the Direct3D runtime.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getpitch">GetPitch</a>
+

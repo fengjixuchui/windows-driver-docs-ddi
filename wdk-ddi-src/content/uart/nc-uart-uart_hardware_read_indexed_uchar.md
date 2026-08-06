@@ -2,8 +2,7 @@
 UID: NC:uart.UART_HARDWARE_READ_INDEXED_UCHAR
 title: UART_HARDWARE_READ_INDEXED_UCHAR (uart.h)
 description: Reads a byte from the port specified by index.
-tech.root: serports
-ms.assetid: 2553b85b-da83-4fd8-b6f0-5ab629af1fdd
+tech.root: uart
 ms.date: 10/19/2018
 keywords: ["UART_HARDWARE_READ_INDEXED_UCHAR callback function"]
 req.header: uart.h
@@ -46,9 +45,9 @@ Reads a byte from the specified port.
 
 ## -parameters
 
-### -param Port
+### -param Port [_In_]
 
-[_In_] A pointer to a [**_CPPORT**](ns-uart-_cpport.md) structure that was received during port initialization.
+A pointer to a [**_CPPORT**](ns-uart-_cpport.md) structure that was received during port initialization.
 
 ### -param Index
 
@@ -82,3 +81,4 @@ Register your implementation of this callback function by setting the appropriat
 
 ## -see-also
 
+[**uart.h**](index.md)

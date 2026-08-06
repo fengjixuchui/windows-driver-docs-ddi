@@ -4,7 +4,6 @@ title: IDebugControl4::SetSpecificFilterArgumentWide (dbgeng.h)
 description: The SetSpecificFilterArgumentWide method sets the value of filter argument for the specific filters that can have an argument.
 old-location: debugger\setspecificfilterargumentwide.htm
 tech.root: debugger
-ms.assetid: 416c4de2-f200-491a-a319-fb0a4fd86f86
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::SetSpecificFilterArgumentWide"]
 ms.keywords: IDebugControl4 interface [Windows Debugging],SetSpecificFilterArgumentWide method, IDebugControl4.SetSpecificFilterArgumentWide, IDebugControl4::SetSpecificFilterArgumentWide, SetSpecificFilterArgumentWide, SetSpecificFilterArgumentWide method [Windows Debugging], SetSpecificFilterArgumentWide method [Windows Debugging],IDebugControl4 interface, dbgeng/IDebugControl4::SetSpecificFilterArgumentWide, debugger.setspecificfilterargumentwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.SetSpecificFilterArgumentWide
+ - IDebugControl4::SetSpecificFilterArgumentWide
 ---
 
 # IDebugControl4::SetSpecificFilterArgumentWide
@@ -50,14 +49,14 @@ The <b>SetSpecificFilterArgumentWide</b>  method sets the value of filter argume
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 Specifies the index of the specific filter whose argument will be set.  <i>Index</i> must be the index of a specific filter that has an argument.
 
-### -param Argument 
+### -param Argument [in]
 
-[in]
+
 Specifies the argument for the specific filter.  The interpretation of this argument depends on the specific filter.
 
 ## -returns
@@ -108,3 +107,4 @@ For a list of specific filters that have argument and the interpretation of thos
 
 
 <a href="/windows-hardware/drivers/debugger/sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-">sx, sxd, sxe, sxi, sxn (Set Exceptions)</a>
+

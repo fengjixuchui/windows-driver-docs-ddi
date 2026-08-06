@@ -4,7 +4,6 @@ title: _D3DDDIARG_CREATEVIDEOPROCESSDEVICE (d3dumddi.h)
 description: The D3DDDIARG_CREATEVIDEOPROCESSDEVICE structure describes a Microsoft DirectX Video Acceleration (DirectX VA) video processing device to create.
 old-location: display\d3dddiarg_createvideoprocessdevice.htm
 tech.root: display
-ms.assetid: b875755c-9559-41ee-8a9b-1de05a2f1dab
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_CREATEVIDEOPROCESSDEVICE structure"]
 ms.keywords: D3DDDIARG_CREATEVIDEOPROCESSDEVICE, D3DDDIARG_CREATEVIDEOPROCESSDEVICE structure [Display Devices], UMDisplayDriver_param_Structs_b8b0d8fa-b750-440d-afa4-556ffb33074a.xml, _D3DDDIARG_CREATEVIDEOPROCESSDEVICE, d3dumddi/D3DDDIARG_CREATEVIDEOPROCESSDEVICE, display.d3dddiarg_createvideoprocessdevice
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_CREATEVIDEOPROCESSDEVICE
  - D3DDDIARG_CREATEVIDEOPROCESSDEVICE
 ---
 
@@ -52,25 +52,25 @@ The D3DDDIARG_CREATEVIDEOPROCESSDEVICE structure describes a Microsoft DirectX V
 
 ## -struct-fields
 
-### -field pVideoProcGuid
+### -field pVideoProcGuid [in]
 
-[in] A pointer to the GUID that represents a DirectX VA video processing device to create. The Microsoft Direct3D runtime can call the user-mode display driver's <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps">GetCaps</a> function to query for the video processing GUIDs that the driver supports.
+A pointer to the GUID that represents a DirectX VA video processing device to create. The Microsoft Direct3D runtime can call the user-mode display driver's <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps">GetCaps</a> function to query for the video processing GUIDs that the driver supports.
 
-### -field VideoDesc
+### -field VideoDesc [in]
 
-[in] The <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_videodesc">DXVADDI_VIDEODESC</a> structure for the video stream that the video processing device should process.
+The <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_videodesc">DXVADDI_VIDEODESC</a> structure for the video stream that the video processing device should process.
 
-### -field RenderTargetFormat
+### -field RenderTargetFormat [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the render target for the video processing device.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the render target for the video processing device.
 
-### -field MaxSubStreams
+### -field MaxSubStreams [in]
 
-[in] The maximum number of video substreams that can be sent to the video processing device. If this value is set to zero, the device never receives any video substreams.
+The maximum number of video substreams that can be sent to the video processing device. If this value is set to zero, the device never receives any video substreams.
 
-### -field hVideoProcess
+### -field hVideoProcess [in/out]
 
-[in/out] A handle to the video processing device. The user-mode display driver must set this handle to a value that the Microsoft Direct3D runtime can use to identify the video processing device in subsequent calls.
+A handle to the video processing device. The user-mode display driver must set this handle to a value that the Microsoft Direct3D runtime can use to identify the video processing device in subsequent calls.
 
 ## -see-also
 
@@ -79,3 +79,4 @@ The D3DDDIARG_CREATEVIDEOPROCESSDEVICE structure describes a Microsoft DirectX V
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_videodesc">DXVADDI_VIDEODESC</a>
+

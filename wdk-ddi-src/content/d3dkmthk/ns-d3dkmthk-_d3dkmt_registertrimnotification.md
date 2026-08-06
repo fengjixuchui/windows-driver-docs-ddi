@@ -3,7 +3,6 @@ UID: NS:d3dkmthk._D3DKMT_REGISTERTRIMNOTIFICATION
 title: _D3DKMT_REGISTERTRIMNOTIFICATION (d3dkmthk.h)
 description: D3DKMT_REGISTERTRIMNOTIFICATION is used with D3DKMTRegisterTrimNotification to register a callback for a kernel mode device for notifications from a graphics framework (such as OpenGL).
 old-location: display\d3dkmt_registertrimnotification.htm
-ms.assetid: CA5BC76B-539E-4FFF-8E02-C475D18588F6
 ms.date: 05/10/2018
 keywords: ["D3DKMT_REGISTERTRIMNOTIFICATION structure"]
 ms.keywords: D3DKMT_REGISTERTRIMNOTIFICATION, D3DKMT_REGISTERTRIMNOTIFICATION structure [Display Devices], _D3DKMT_REGISTERTRIMNOTIFICATION, d3dkmthk/D3DKMT_REGISTERTRIMNOTIFICATION, display.d3dkmt_registertrimnotification
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
+ - _D3DKMT_REGISTERTRIMNOTIFICATION
  - D3DKMT_REGISTERTRIMNOTIFICATION
 ---
 
@@ -52,25 +52,25 @@ api_name:
 
 ## -struct-fields
 
-### -field AdapterLuid
+### -field AdapterLuid [in]
 
-[in] Luid of the adapter which the device created.
+Luid of the adapter which the device created.
 
-### -field hDevice
+### -field hDevice [in]
 
-[in] Device to trim the residency list for.
+Device to trim the residency list for.
 
-### -field Callback
+### -field Callback [in]
 
-[in] Pointer to the callback function.
+Pointer to the callback function.
 
-### -field Context
+### -field Context [in]
 
-[in] Caller-supplied context for callback.
+Caller-supplied context for callback.
 
-### -field Handle
+### -field Handle [out]
 
-[out] Handle that will be used to unregister the callback with <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtunregistertrimnotification">D3DKMTUnregisterTrimNotification</a>.
+Handle that will be used to unregister the callback with <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtunregistertrimnotification">D3DKMTUnregisterTrimNotification</a>.
 
 ## -see-also
 
@@ -79,3 +79,4 @@ api_name:
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/nf-d3dkmthk-d3dkmtunregistertrimnotification">D3DKMTUnregisterTrimNotification</a>
+

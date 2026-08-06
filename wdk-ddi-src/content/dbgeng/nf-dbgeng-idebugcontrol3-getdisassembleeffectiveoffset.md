@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl3.GetDisassembleEffectiveOffset
 title: IDebugControl3::GetDisassembleEffectiveOffset (dbgeng.h)
-description: The GetDisassembleEffectiveOffset method returns the address of the last instruction disassembled using Disassemble.
+description: The GetDisassembleEffectiveOffset method returns the address of the last instruction disassembled using Disassemble. This method belongs to IDebugControl3.
 old-location: debugger\getdisassembleeffectiveoffset.htm
 tech.root: debugger
-ms.assetid: 07f652f2-d370-4f88-a7f0-f6946fd50c79
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::GetDisassembleEffectiveOffset"]
 ms.keywords: GetDisassembleEffectiveOffset, GetDisassembleEffectiveOffset method [Windows Debugging], GetDisassembleEffectiveOffset method [Windows Debugging],IDebugControl interface, GetDisassembleEffectiveOffset method [Windows Debugging],IDebugControl2 interface, GetDisassembleEffectiveOffset method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],GetDisassembleEffectiveOffset method, IDebugControl2 interface [Windows Debugging],GetDisassembleEffectiveOffset method, IDebugControl2::GetDisassembleEffectiveOffset, IDebugControl3 interface [Windows Debugging],GetDisassembleEffectiveOffset method, IDebugControl3.GetDisassembleEffectiveOffset, IDebugControl3::GetDisassembleEffectiveOffset, IDebugControl::GetDisassembleEffectiveOffset, IDebugControl_5593ec3a-31f4-4775-9356-49f1757323c0.xml, dbgeng/IDebugControl2::GetDisassembleEffectiveOffset, dbgeng/IDebugControl3::GetDisassembleEffectiveOffset, dbgeng/IDebugControl::GetDisassembleEffectiveOffset, debugger.getdisassembleeffectiveoffset
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.GetDisassembleEffectiveOffset
- - IDebugControl2.GetDisassembleEffectiveOffset
- - IDebugControl3.GetDisassembleEffectiveOffset
+ - IDebugControl3::GetDisassembleEffectiveOffset
 ---
 
 # IDebugControl3::GetDisassembleEffectiveOffset
@@ -52,9 +49,9 @@ The <b>GetDisassembleEffectiveOffset</b> method returns the address of the last 
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [out]
 
-[out]
+
 Receives the address in the target's memory of the effective offset from the last instruction disassembled.
 
 ## -returns
@@ -100,3 +97,4 @@ For more information about using assembly with the debugger engine API, see <a h
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
+

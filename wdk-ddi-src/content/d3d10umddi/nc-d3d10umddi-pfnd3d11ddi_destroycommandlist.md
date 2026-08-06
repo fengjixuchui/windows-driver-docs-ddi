@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_DESTROYCOMMANDLIST
 title: PFND3D11DDI_DESTROYCOMMANDLIST (d3d10umddi.h)
 description: The DestroyCommandList function destroys a command list.
 old-location: display\destroycommandlist.htm
-ms.assetid: 9f03c193-f017-4189-a082-908e28a2e9f7
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_DESTROYCOMMANDLIST callback function"]
 ms.keywords: DestroyCommandList, DestroyCommandList callback function [Display Devices], PFND3D11DDI_DESTROYCOMMANDLIST, PFND3D11DDI_DESTROYCOMMANDLIST callback, UserModeDisplayDriverDx11_Functions_cf01bd33-1921-4d56-a377-f8eda35a8d04.xml, d3d10umddi/DestroyCommandList, display.destroycommandlist
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - DestroyCommandList
+ - PFND3D11DDI_DESTROYCOMMANDLIST
 ---
 
 # PFND3D11DDI_DESTROYCOMMANDLIST callback function
@@ -50,13 +49,13 @@ The <b>DestroyCommandList</b> function destroys a command list.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hCommandList* [in]
 
@@ -95,3 +94,4 @@ For more information about <b>RecycleDestroyCommandList</b>, see <a href="/windo
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

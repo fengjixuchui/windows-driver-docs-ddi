@@ -4,7 +4,6 @@ title: WdfRequestSetUserModeDriverInitiatedIo function (wdfrequest.h)
 description: The WdfRequestSetUserModeDriverInitiatedIo method indicates to kernel-mode drivers that sit below the UMDF driver in the same device stack that a particular request should be treated as though it came from a UMDF driver.
 old-location: wdf\wdfrequestsetusermodedriverinitiatedio.htm
 tech.root: wdf
-ms.assetid: F477ABEA-5E29-4934-995C-D7FB1EF87A5B
 ms.date: 02/26/2018
 keywords: ["WdfRequestSetUserModeDriverInitiatedIo function"]
 ms.keywords: WdfRequestSetUserModeDriverInitiatedIo, WdfRequestSetUserModeDriverInitiatedIo method, wdf.wdfrequestsetusermodedriverinitiatedio, wdfrequest/WdfRequestSetUserModeDriverInitiatedIo
@@ -55,14 +54,14 @@ The <b>WdfRequestSetUserModeDriverInitiatedIo</b> method indicates to kernel-mod
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
-### -param IsUserModeDriverInitiated 
+### -param IsUserModeDriverInitiated [in]
 
-[in]
+
 A Boolean value that, if <b>TRUE</b>, indicates that the request should be treated as though it was initiated by a UMDF driver. If <b>FALSE</b>, this parameter indicates that the request should be treated as though it came from an application.
 
 ## -remarks

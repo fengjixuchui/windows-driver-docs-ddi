@@ -4,7 +4,6 @@ title: IDebugControl4::GetBreakpointByIndex2 (dbgeng.h)
 description: The GetBreakpointByIndex2 method returns the breakpoint located at the specified index.
 old-location: debugger\getbreakpointbyindex2.htm
 tech.root: debugger
-ms.assetid: 3487addb-e196-4295-95fc-0590802e766a
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::GetBreakpointByIndex2"]
 ms.keywords: GetBreakpointByIndex2, GetBreakpointByIndex2 method [Windows Debugging], GetBreakpointByIndex2 method [Windows Debugging],IDebugControl4 interface, IDebugControl4 interface [Windows Debugging],GetBreakpointByIndex2 method, IDebugControl4.GetBreakpointByIndex2, IDebugControl4::GetBreakpointByIndex2, dbgeng/IDebugControl4::GetBreakpointByIndex2, debugger.getbreakpointbyindex2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.GetBreakpointByIndex2
+ - IDebugControl4::GetBreakpointByIndex2
 ---
 
 # IDebugControl4::GetBreakpointByIndex2
@@ -50,14 +49,14 @@ The <b>GetBreakpointByIndex2</b>  method returns the breakpoint located at the s
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 Specifies the zero-based index of the breakpoint to return.  This is specific to the current process.  The value of <i>Index</i> should be between zero and the total number of breakpoints minus one. The total number of breakpoints can be determined by calling <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getnumberbreakpoints">GetNumberBreakpoints</a>.
 
-### -param Bp 
+### -param Bp [out]
 
-[out]
+
 Receives the returned breakpoint.
 
 ## -returns
@@ -104,3 +103,4 @@ The index and returned breakpoint are specific to the current process.  The same
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol4">IDebugControl4</a>
+

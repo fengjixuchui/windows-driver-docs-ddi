@@ -4,7 +4,6 @@ title: _KERNDATA (prntfont.h)
 description: The KERNDATA structure is used for describing printer kerning pairs.
 old-location: print\kerndata.htm
 tech.root: print
-ms.assetid: b3f68c08-7097-46e7-ad47-6e5e1f2cb8b2
 ms.date: 04/20/2018
 keywords: ["KERNDATA structure"]
 ms.keywords: "*PKERNDATA, KERNDATA, KERNDATA structure [Print Devices], PKERNDATA, PKERNDATA structure pointer [Print Devices], _KERNDATA, print.kerndata, print_unidrv-pscript_fonts_9ddb2b69-839c-496a-b252-691570ee03cb.xml, prntfont/KERNDATA, prntfont/PKERNDATA"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - prntfont.h
 api_name:
+ - _KERNDATA
+ - PKERNDATA
  - KERNDATA
 ---
 
@@ -77,3 +78,4 @@ A .ufm file's KERNDATA structures are accessed by a pointer in the file's <a hre
 
 
 <a href="/windows-hardware/drivers/ddi/prntfont/ns-prntfont-_unifm_hdr">UNIFM_HDR</a>
+

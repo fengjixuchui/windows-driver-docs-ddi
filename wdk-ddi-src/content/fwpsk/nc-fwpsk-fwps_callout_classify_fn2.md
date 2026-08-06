@@ -4,7 +4,6 @@ title: FWPS_CALLOUT_CLASSIFY_FN2 (fwpsk.h)
 description: The filter engine calls a callout's classifyFn2 callout function whenever there is data to be processed by the callout.Note  classifyFn2 is the specific version of classifyFn used in Windows 8 and later.
 old-location: netvista\classifyfn2.htm
 tech.root: netvista
-ms.assetid: de8220de-cf71-4718-876e-ef02c15fc948
 ms.date: 10/28/2019
 keywords: ["FWPS_CALLOUT_CLASSIFY_FN2 callback function"]
 ms.keywords: FWPS_CALLOUT_CLASSIFY_FN2, FWPS_CALLOUT_CLASSIFY_FN2 callback, classifyFn2, classifyFn2 callback function [Network Drivers Starting with Windows Vista], fwpsk/classifyFn2, netvista.classifyfn2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Fwpsk.h
 api_name:
- - classifyFn2
+ - FWPS_CALLOUT_CLASSIFY_FN2
 ---
 
 # FWPS_CALLOUT_CLASSIFY_FN2 callback function
@@ -52,55 +51,55 @@ The filter engine calls a callout's
 
 ## -parameters
 
-### -param inFixedValues 
+### -param inFixedValues [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_incoming_values0">FWPS_INCOMING_VALUES0</a> structure. This
      structure contains the values for each of the data fields in the layer being filtered.
 
-### -param inMetaValues 
+### -param inMetaValues [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_incoming_metadata_values0_">
      FWPS_INCOMING_METADATA_VALUES0</a> structure. This structure contains the values for each of the
      metadata fields in the layer being filtered.
 
-### -param layerData 
+### -param layerData [in, out, optional]
 
-[in, out, optional]
+
 A pointer to a structure that describes the raw data in the layer being filtered. This parameter
      might be NULL, depending on the layer being filtered and the conditions under which the 
      <i>classifyFn2</i> callout function is called. For the stream layer, this parameter points to an 
      <a href="/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_stream_callout_io_packet0_">
      FWPS_STREAM_CALLOUT_IO_PACKET0</a> structure. For all of the other layers, this parameter points to a 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a> structure if it is not
+     <a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a> structure if it is not
      NULL.
 
-### -param classifyContext 
+### -param classifyContext [in, optional]
 
-[in, optional]
+
 A pointer to context data associated with the callout driver by the filter engine.
 
-### -param filter 
+### -param filter [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_filter2">FWPS_FILTER2</a> structure. This structure
      describes the filter that specifies the callout for the filter's action.
 
-### -param flowContext 
+### -param flowContext [in]
 
-[in]
+
 A UINT64-typed variable that contains the context associated with the data flow. If no context is
      associated with the data flow, then this parameter is zero. If the callout is added to the filter engine
      at a filtering layer that does not support data flows, the 
      <i>classifyFn2</i> callout function should ignore this parameter.
 
-### -param classifyOut 
+### -param classifyOut [in, out]
 
-[in, out]
+
 A pointer to an 
      <a href="/windows/win32/api/fwpstypes/ns-fwpstypes-fwps_classify_out0">FWPS_CLASSIFY_OUT0</a> structure that
      receives any data that the 
@@ -192,7 +191,7 @@ This function is essentially identical to the previous version,
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_buffer_list">NET_BUFFER_LIST</a>
+<a href="/windows-hardware/drivers/ddi/nbl/ns-nbl-net_buffer_list">NET_BUFFER_LIST</a>
 
 
 
@@ -222,3 +221,4 @@ This function is essentially identical to the previous version,
 
 
 <a href="/windows-hardware/drivers/ddi/fwpsk/nc-fwpsk-fwps_callout_classify_fn1">classifyFn1</a>
+

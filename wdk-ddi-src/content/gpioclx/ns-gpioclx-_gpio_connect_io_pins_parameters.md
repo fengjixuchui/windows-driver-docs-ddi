@@ -4,7 +4,6 @@ title: _GPIO_CONNECT_IO_PINS_PARAMETERS (gpioclx.h)
 description: The GPIO_CONNECT_IO_PINS_PARAMETERS structure describes a logical connection to a set of general-purpose I/O (GPIO) pins and specifies whether to configure these pins as data inputs or outputs.
 old-location: gpio\gpio_connect_io_pins_parameters.htm
 tech.root: GPIO
-ms.assetid: C8A156F4-3150-4241-947E-B0A6927F2BFE
 ms.date: 02/15/2018
 keywords: ["GPIO_CONNECT_IO_PINS_PARAMETERS structure"]
 ms.keywords: "*PGPIO_CONNECT_IO_PINS_PARAMETERS, GPIO.gpio_connect_io_pins_parameters, GPIO_CONNECT_IO_PINS_PARAMETERS, GPIO_CONNECT_IO_PINS_PARAMETERS structure [Parallel Ports], PGPIO_CONNECT_IO_PINS_PARAMETERS, PGPIO_CONNECT_IO_PINS_PARAMETERS structure pointer [Parallel Ports], _GPIO_CONNECT_IO_PINS_PARAMETERS, gpioclx/GPIO_CONNECT_IO_PINS_PARAMETERS, gpioclx/PGPIO_CONNECT_IO_PINS_PARAMETERS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
+ - _GPIO_CONNECT_IO_PINS_PARAMETERS
+ - PGPIO_CONNECT_IO_PINS_PARAMETERS
  - GPIO_CONNECT_IO_PINS_PARAMETERS
 ---
 
@@ -125,3 +126,4 @@ The <i>ClientParameters</i> parameter to the <a href="/windows-hardware/drivers/
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_enable_interrupt_parameters">GPIO_PIN_PULL_CONFIGURATION_XXX</a>
+

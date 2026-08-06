@@ -4,7 +4,6 @@ title: PFND3DDDI_DRAWTRIPATCH (d3dumddi.h)
 description: The DrawTriPatch function draws a new or cached triangular patch or updates the specification of a previously defined patch.
 old-location: display\drawtripatch.htm
 tech.root: display
-ms.assetid: 98e5f2c5-2795-4226-b5c0-9498b37c22df
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DRAWTRIPATCH callback function"]
 ms.keywords: DrawTriPatch, DrawTriPatch callback function [Display Devices], PFND3DDDI_DRAWTRIPATCH, PFND3DDDI_DRAWTRIPATCH callback, UserModeDisplayDriver_Functions_a4fb7bb1-ec56-45a9-9cca-5be7bd9f4746.xml, d3dumddi/DrawTriPatch, display.drawtripatch
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - DrawTriPatch
+ - PFND3DDDI_DRAWTRIPATCH
 ---
 
 # PFND3DDDI_DRAWTRIPATCH callback function
@@ -50,24 +49,24 @@ The <b>DrawTriPatch</b> function draws a new or cached triangular patch or updat
 
 ## -parameters
 
-### -param hDevice 
+### -param hDevice [in]
 
-[in]
+
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_drawtripatch">D3DDDIARG_DRAWTRIPATCH</a> structure that describes the triangular patch to draw.
 
-### -param Arg3
+### -param unnamedParam3
 
 *pInfo* [in]
 
 Optional. A pointer to a D3DDDITRIPATCH_INFO structure that describes information about the triangular patch.
 
-### -param Arg4
+### -param unnamedParam4
 
 *pPatch* [in]
 
@@ -116,3 +115,4 @@ The driver receives notification to release cached patch information through the
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

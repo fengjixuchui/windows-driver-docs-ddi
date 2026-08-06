@@ -4,7 +4,6 @@ title: ExtExtension::HasUnnamedArg (engextcpp.h)
 description: The HasUnnamedArg method indicates whether a specified unnamed argument is present in the command line used to invoke the current extension command.
 old-location: debugger\hasunnamedarg.htm
 tech.root: debugger
-ms.assetid: 26917b2b-abbf-4d1b-b086-104390998a35
 ms.date: 05/03/2018
 keywords: ["ExtExtension::HasUnnamedArg"]
 ms.keywords: EngExtCpp_Ref_5d191b46-bac6-415e-8c02-732ce433f950.xml, ExtExtension class [Windows Debugging],HasUnnamedArg method, ExtExtension.HasUnnamedArg, ExtExtension::HasUnnamedArg, HasUnnamedArg, HasUnnamedArg method [Windows Debugging], HasUnnamedArg method [Windows Debugging],ExtExtension class, debugger.hasunnamedarg
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Engextcpp.hpp
 api_name:
- - ExtExtension.HasUnnamedArg
+ - ExtExtension::HasUnnamedArg
 ---
 
 # ExtExtension::HasUnnamedArg
@@ -50,9 +49,9 @@ The <b>HasUnnamedArg</b> method indicates whether a specified unnamed argument i
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 Specifies the index of the argument.  <i>Index</i> should be between zero and the number of unnamed arguments returned by <a href="/previous-versions/windows/hardware/previsioning-framework/ff548001(v=vs.85)">GetNumUnnamedArgs</a> minus one (unnamed arguments - 1).
 
 ## -returns
@@ -72,3 +71,4 @@ This method should only be called during the execution of an extension command p
 
 
 <a href="/previous-versions/windows/hardware/previsioning-framework/ff548001(v=vs.85)">GetNumUnnamedArgs</a>
+

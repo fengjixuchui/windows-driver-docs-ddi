@@ -4,7 +4,6 @@ title: _CHANNEL_CONFIG_PARAMETERS (bthddi.h)
 description: The CHANNEL_CONFIG_PARAMETERS structure contains configuration parameters for inbound and outbound directions of a L2CAP channel.
 old-location: bltooth\channel_config_parameters.htm
 tech.root: bltooth
-ms.assetid: c2201e3c-c680-4a22-adf5-5131fb138066
 ms.date: 04/27/2018
 keywords: ["CHANNEL_CONFIG_PARAMETERS structure"]
 ms.keywords: "*PCHANNEL_CONFIG_PARAMETERS, CHANNEL_CONFIG_PARAMETERS, CHANNEL_CONFIG_PARAMETERS structure [Bluetooth Devices], PCHANNEL_CONFIG_PARAMETERS, PCHANNEL_CONFIG_PARAMETERS structure pointer [Bluetooth Devices], _CHANNEL_CONFIG_PARAMETERS, bltooth.channel_config_parameters, bth_structs_c5360d7a-eb76-4b27-8507-8de862737a06.xml, bthddi/CHANNEL_CONFIG_PARAMETERS, bthddi/PCHANNEL_CONFIG_PARAMETERS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - bthddi.h
 api_name:
+ - _CHANNEL_CONFIG_PARAMETERS
+ - PCHANNEL_CONFIG_PARAMETERS
  - CHANNEL_CONFIG_PARAMETERS
 ---
 
@@ -137,3 +138,4 @@ The QoS settings for the specified channel direction.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/bthddi/ns-bthddi-_l2cap_config_option">L2CAP_CONFIG_OPTION</a>
+

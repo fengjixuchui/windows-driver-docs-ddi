@@ -2,7 +2,6 @@
 UID: NS:d3dkmthk._D3DKMT_QUERYVIDEOMEMORYINFO
 title: _D3DKMT_QUERYVIDEOMEMORYINFO (d3dkmthk.h)
 description: Used to query for video memory info.
-ms.assetid: 6ddd12f9-abd8-4e9a-b1e5-193956a5f9dd
 ms.date: 10/19/2018
 keywords: ["D3DKMT_QUERYVIDEOMEMORYINFO structure"]
 ms.keywords: _D3DKMT_QUERYVIDEOMEMORYINFO, D3DKMT_QUERYVIDEOMEMORYINFO,
@@ -35,6 +34,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_QUERYVIDEOMEMORYINFO
+ - D3DKMT_QUERYVIDEOMEMORYINFO
 dev_langs:
  - c++
 ---
@@ -48,38 +48,38 @@ Used to query for video memory info.
 
 ## -struct-fields
 
-### -field hProcess
+### -field hProcess [in, opt]
 
-[in, opt] A handle to the process.
+A handle to the process.
 
-### -field hAdapter
+### -field hAdapter [in]
 
-[in] A handle to the graphics adapter.
+A handle to the graphics adapter.
 
-### -field MemorySegmentGroup
+### -field MemorySegmentGroup [in]
 
-[in] The memory segment group to query.
+The memory segment group to query.
 
-### -field Budget
+### -field Budget [out]
 
-[out] The total memory the application may use.
+The total memory the application may use.
 
-### -field CurrentUsage
+### -field CurrentUsage [out]
 
-[out] The current memory usage of the device.
+The current memory usage of the device.
 
-### -field CurrentReservation
+### -field CurrentReservation [out]
 
-[out] The current reservation of the device.
+The current reservation of the device.
 
-### -field AvailableForReservation
+### -field AvailableForReservation [out]
 
-[out] The total that the device may reserve.
+The total that the device may reserve.
 
-### -field PhysicalAdapterIndex
+### -field PhysicalAdapterIndex [in]
 
  
-[in] The physical adapter index in the LDA (linked display adapter) chain.
+The physical adapter index in the LDA (linked display adapter) chain.
 
 ## -remarks
 

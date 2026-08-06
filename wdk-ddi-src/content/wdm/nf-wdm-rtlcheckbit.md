@@ -4,7 +4,6 @@ title: RtlCheckBit macro (wdm.h)
 description: The RtlCheckBit routine determines whether a particular bit in a given bitmap variable is clear or set.
 old-location: kernel\rtlcheckbit.htm
 tech.root: kernel
-ms.assetid: 2c9842de-a256-46ed-84b4-b8a595c01a62
 ms.date: 04/30/2018
 keywords: ["RtlCheckBit macro"]
 ms.keywords: RtlCheckBit, RtlCheckBit routine [Kernel-Mode Driver Architecture], k109_1f4676c1-d031-4a2c-8d74-afa9d3a0ed10.xml, kernel.rtlcheckbit, wdm/RtlCheckBit
@@ -50,15 +49,15 @@ The <b>RtlCheckBit</b> routine determines whether a particular bit in a given bi
 
 ## -parameters
 
-### -param BitMapHeader
+### -param BitMapHeader [in]
 
-[in]
 
-A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-### -param BitPosition
+A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-[in]
+### -param BitPosition [in]
+
+
 
 Specifies which bit to check. This is a zero-based value indicating the position of the bit to be tested.
 
@@ -72,7 +71,7 @@ Callers of <b>RtlCheckBit</b> must be running at IRQL <= APC_LEVEL if the memory
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a>
+<a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a>
 
 
 

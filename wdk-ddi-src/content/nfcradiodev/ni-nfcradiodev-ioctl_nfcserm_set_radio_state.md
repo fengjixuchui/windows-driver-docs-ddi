@@ -1,10 +1,9 @@
 ---
 UID: NI:nfcradiodev.IOCTL_NFCSERM_SET_RADIO_STATE
 title: IOCTL_NFCSERM_SET_RADIO_STATE (nfcradiodev.h)
-description: This IOCTL is used by the SE radio management application or service to query the current radio power state of the proximity device.
+description: The IOCTL_NFCSERM_SET_RADIO_STATE is used by the SE radio management application or service to set the current radio power state of the proximity device.
 old-location: nfpdrivers\ioctl_nfcserm_set_radio_state.htm
 tech.root: nfpdrivers
-ms.assetid: 721AE7FE-927C-4EBA-B33D-C5A5A986951C
 ms.date: 02/15/2018
 keywords: ["IOCTL_NFCSERM_SET_RADIO_STATE IOCTL"]
 ms.keywords: IOCTL_NFCSERM_SET_RADIO_STATE, IOCTL_NFCSERM_SET_RADIO_STATE control, IOCTL_NFCSERM_SET_RADIO_STATE control code [Near-Field Proximity Drivers], nfcradiodev/IOCTL_NFCSERM_SET_RADIO_STATE, nfpdrivers.ioctl_nfcserm_set_radio_state
@@ -46,9 +45,11 @@ api_name:
 
 ## -description
 
-This IOCTL is used by the SE radio management application or service to query the current radio power state of the proximity device.
+This IOCTL is used by the SE radio management application or service to set the current radio power state of the proximity device.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_union_9
+UID: NS:ks.KSPROPERTY_BOUNDS_LONG
 title: KSPROPERTY_BOUNDS_LONG (ks.h)
 description: The KSPROPERTY_BOUNDS_LONG structure defines the bounds for a 32-bit property.
 old-location: stream\ksproperty_bounds_long.htm
 tech.root: stream
-ms.assetid: 16804ff1-8531-48aa-baf6-b89ccfe25d07
 ms.date: 04/23/2018
 keywords: ["KSPROPERTY_BOUNDS_LONG structure"]
 ms.keywords: "*PKSPROPERTY_BOUNDS_LONG, KSPROPERTY_BOUNDS_LONG, KSPROPERTY_BOUNDS_LONG union [Streaming Media Devices], PKSPROPERTY_BOUNDS_LONG, PKSPROPERTY_BOUNDS_LONG union pointer [Streaming Media Devices], ks-struct_805e1a44-91bb-45be-a99d-174e98639d9e.xml, ks/KSPROPERTY_BOUNDS_LONG, ks/PKSPROPERTY_BOUNDS_LONG, stream.ksproperty_bounds_long"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSPROPERTY_BOUNDS_LONG
  - KSPROPERTY_BOUNDS_LONG
 ---
 
@@ -99,3 +99,4 @@ Also see related information in <a href="/windows-hardware/drivers/stream/ks-pro
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksproperty_values">KSPROPERTY_VALUES</a>
+

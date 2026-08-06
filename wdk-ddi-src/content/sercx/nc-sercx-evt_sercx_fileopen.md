@@ -4,7 +4,6 @@ title: EVT_SERCX_FILEOPEN (sercx.h)
 description: The EvtSerCxFileOpen event callback function notifies the serial controller driver that a client opened a file handle on the serial controller device and that a file object has been created to represent the device.
 old-location: serports\evtsercxfileopen.htm
 tech.root: serports
-ms.assetid: 90D08857-69E0-4DD9-9588-86900466E8DE
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX_FILEOPEN callback function"]
 ms.keywords: 1/EvtSerCxFileOpen, EVT_SERCX_FILEOPEN, EVT_SERCX_FILEOPEN callback, EvtSerCxFileOpen, EvtSerCxFileOpen callback function [Serial Ports], serports.evtsercxfileopen
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 1.0\Sercx.h
 api_name:
- - EvtSerCxFileOpen
+ - EVT_SERCX_FILEOPEN
 ---
 
 # EVT_SERCX_FILEOPEN callback function
@@ -50,9 +49,9 @@ The <i>EvtSerCxFileOpen</i> event callback function notifies the serial controll
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A WDFDEVICE handle to the framework device object that represents the serial controller.
 
 ## -returns
@@ -105,3 +104,4 @@ For more information about SDV requirements for function declarations, see <a hr
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercxinitialize">SerCxInitialize</a>
+

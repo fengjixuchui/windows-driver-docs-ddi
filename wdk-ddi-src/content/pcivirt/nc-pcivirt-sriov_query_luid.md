@@ -4,7 +4,6 @@ title: SRIOV_QUERY_LUID (pcivirt.h)
 description: Gets the local unique identifier of the SR-IOV device.
 old-location: pci\sriov_query_luid.htm
 tech.root: PCI
-ms.assetid: 9bb8e54f-b42a-4f61-a3f5-6972141c8f28
 ms.date: 02/24/2018
 keywords: ["SRIOV_QUERY_LUID callback"]
 ms.keywords: "*PSRIOV_QUERY_LUID, *PSRIOV_QUERY_LUID callback function pointer [Buses], PCI.sriov_query_luid, SRIOV_QUERY_LUID, SriovQueryLuid, SriovQueryLuid callback function [Buses], pcivirt/SriovQueryLuid"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Pcivirt.h
 api_name:
- - PSRIOV_QUERY_LUID
+ - SRIOV_QUERY_LUID
 ---
 
 # SRIOV_QUERY_LUID callback
@@ -50,14 +49,14 @@ Gets the local unique identifier of the SR-IOV device.
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to a driver-defined context.
 
-### -param Luid 
+### -param Luid [out]
 
-[out]
+
 A pointer to the local unique
 identifier of the SR_IOV device implementing the interface.
 
@@ -108,3 +107,4 @@ Virtualization_QueryLuid (
 
 
 ```
+

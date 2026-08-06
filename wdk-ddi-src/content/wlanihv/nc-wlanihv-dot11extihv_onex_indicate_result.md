@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXTIHV_ONEX_INDICATE_RESULT
 title: DOT11EXTIHV_ONEX_INDICATE_RESULT (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXTIHV_ONEX_INDICATE_RESULT callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extihvonexindicateresult.htm
 tech.root: netvista
-ms.assetid: bf865b33-6e44-4724-868d-73150cf5b589
 ms.date: 02/16/2018
 keywords: ["DOT11EXTIHV_ONEX_INDICATE_RESULT callback"]
 ms.keywords: DOT11EXTIHV_ONEX_INDICATE_RESULT, Dot11ExtIhvOneXIndicateResult, Dot11ExtIhvOneXIndicateResult callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_af60ece5-6f3a-4a5b-9207-0e3cf68a012b.xml, netvista.dot11extihvonexindicateresult, wlanihv/Dot11ExtIhvOneXIndicateResult
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXTIHV_ONEX_INDICATE_RESULT
  - wlanihv/DOT11EXTIHV_ONEX_INDICATE_RESULT
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtIhvOneXIndicateResult
+ - DOT11EXTIHV_ONEX_INDICATE_RESULT
 ---
 
 # DOT11EXTIHV_ONEX_INDICATE_RESULT callback
@@ -53,24 +51,24 @@ api_name:
 
 ## -parameters
 
-### -param hIhvExtAdapter 
+### -param hIhvExtAdapter [in, optional]
 
-[in, optional]
+
 The handle used by the IHV Extensions DLL to reference the wireless LAN (WLAN) adapter. This
      handle value was specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param msOneXResult 
+### -param msOneXResult [in]
 
-[in]
+
 The result of the 802.1X authentication operation specified through a
      <a href="..\wlanihv\ne-wlanihv-_dot11_msonex_result.md">DOT11_MSONEX_RESULT</a> enumeration
      value.
 
-### -param pDot11MsOneXResultParams 
+### -param pDot11MsOneXResultParams [in, optional]
 
-[in, optional]
+
 A pointer to a
      <a href="..\wlanihv\ns-wlanihv-_dot11_msonex_result_params.md">
      DOT11_MSONEX_RESULT_PARAMS</a> structure that contains result parameters.
@@ -124,11 +122,6 @@ For more information about using the 802.1X module for authentication, see
 
 
 
-<a href="..\wlanihv\nc-wlanihv-dot11extihv_onex_indicate_result.md">
-   Dot11ExtIhvOneXIndicateResult</a>
-
-
-
 <a href="..\wlanihv\nc-wlanihv-dot11ext_onex_start.md">Dot11ExtStartOneX</a>
 
 
@@ -138,3 +131,4 @@ For more information about using the 802.1X module for authentication, see
 
 
 <a href="..\wlanihv\ne-wlanihv-_dot11_msonex_result.md">DOT11_MSONEX_RESULT</a>
+

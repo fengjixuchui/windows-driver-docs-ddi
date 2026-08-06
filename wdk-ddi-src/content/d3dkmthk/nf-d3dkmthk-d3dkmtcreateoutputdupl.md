@@ -1,14 +1,13 @@
 ---
 UID: NF:d3dkmthk.D3DKMTCreateOutputDupl
 title: D3DKMTCreateOutputDupl function (d3dkmthk.h)
-description: Reserved for system use. Do not use in your driver.
-ms.assetid: 23e39e16-fffd-4687-a26b-6183fad6ba29
+description: "Microsoft reserves the D3DKMTCreateOutputDupl function for internal use only. Don't use this function in your driver."
 ms.date: 10/19/2018
 keywords: ["D3DKMTCreateOutputDupl function"]
 ms.keywords: D3DKMTCreateOutputDupl
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
-req.target-type: Univwrsal
+req.target-type: Universal
 req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: Windows Server 2012
 req.kmdf-ver: 
@@ -50,7 +49,7 @@ Reserved for system use. Do not use in your driver.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 ## -returns
 

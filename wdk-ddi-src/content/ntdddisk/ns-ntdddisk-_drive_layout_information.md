@@ -4,7 +4,6 @@ title: _DRIVE_LAYOUT_INFORMATION (ntdddisk.h)
 description: The DRIVE_LAYOUT_INFORMATION structure is obsolete and is provided only to support existing drivers.
 old-location: storage\drive_layout_information.htm
 tech.root: storage
-ms.assetid: 980cd307-9048-4054-be8e-967d15862a14
 ms.date: 03/29/2018
 keywords: ["DRIVE_LAYOUT_INFORMATION structure"]
 ms.keywords: "*PDRIVE_LAYOUT_INFORMATION, DRIVE_LAYOUT_INFORMATION, DRIVE_LAYOUT_INFORMATION structure [Storage Devices], PDRIVE_LAYOUT_INFORMATION, PDRIVE_LAYOUT_INFORMATION structure pointer [Storage Devices], _DRIVE_LAYOUT_INFORMATION, ntdddisk/DRIVE_LAYOUT_INFORMATION, ntdddisk/PDRIVE_LAYOUT_INFORMATION, storage.drive_layout_information, structs-disk_4b519d3d-0729-4390-a2e2-b5eb37738db1.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntdddisk.h
 api_name:
+ - _DRIVE_LAYOUT_INFORMATION
+ - PDRIVE_LAYOUT_INFORMATION
  - DRIVE_LAYOUT_INFORMATION
 ---
 
@@ -99,3 +100,4 @@ In Windows 2000 and later operating systems, disk drivers should use structures 
 
 
 <a href="/windows-hardware/drivers/ddi/ntddk/nf-ntddk-iowritepartitiontable">IoWritePartitionTable</a>
+

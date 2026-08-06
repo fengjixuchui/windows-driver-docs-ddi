@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols4.GetLineByInlineContextWide
 title: IDebugSymbols4::GetLineByInlineContextWide (dbgeng.h)
-description: Gets a line by inline context.
+description: The GetLineByInlineContextWide method gets a line by inline context. This method belongs to the IDebugSymbols4 interface.
 old-location: debugger\idebugsymbols4_getlinebyinlinecontextwide.htm
 tech.root: debugger
-ms.assetid: 5DCD8407-1C30-475F-9741-62DB9C86297B
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols4::GetLineByInlineContextWide"]
 ms.keywords: GetLineByInlineContextWide, GetLineByInlineContextWide method [Windows Debugging], GetLineByInlineContextWide method [Windows Debugging],IDebugSymbols4 interface, IDebugSymbols4 interface [Windows Debugging],GetLineByInlineContextWide method, IDebugSymbols4.GetLineByInlineContextWide, IDebugSymbols4::GetLineByInlineContextWide, dbgeng/IDebugSymbols4::GetLineByInlineContextWide, debugger.idebugsymbols4_getlinebyinlinecontextwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugSymbols4.GetLineByInlineContextWide
+ - IDebugSymbols4::GetLineByInlineContextWide
 ---
 
 # IDebugSymbols4::GetLineByInlineContextWide
@@ -50,39 +49,39 @@ Gets a line by inline context.
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 An offset for the line.
 
-### -param InlineContext 
+### -param InlineContext [in]
 
-[in]
+
 The inline context.
 
-### -param Line 
+### -param Line [out, optional]
 
-[out, optional]
+
 A pointer to the returned line.
 
-### -param FileBuffer 
+### -param FileBuffer [out]
 
-[out]
+
 A pointer to a buffer for a Unicode character string.
 
-### -param FileBufferSize 
+### -param FileBufferSize [in]
 
-[in]
+
 The size of the file buffer.
 
-### -param FileSize 
+### -param FileSize [out, optional]
 
-[out, optional]
+
 A pointer to the length of the file.
 
-### -param Displacement 
+### -param Displacement [out, optional]
 
-[out, optional]
+
 A pointer to the displacement value of the file.
 
 ## -returns
@@ -92,3 +91,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols4">IDebugSymbols4</a>
+

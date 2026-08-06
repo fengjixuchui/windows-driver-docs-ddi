@@ -4,7 +4,6 @@ title: IDebugControl4::OutputWide (dbgeng.h)
 description: The OutputWide method formats a string and send the result to output callbacks that have been registered with the engine's clients.
 old-location: debugger\outputwide.htm
 tech.root: debugger
-ms.assetid: d89ed38b-f2ab-495f-b7e6-7f58b9adc958
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::OutputWide"]
 ms.keywords: IDebugControl4 interface [Windows Debugging],OutputWide method, IDebugControl4.OutputWide, IDebugControl4::OutputWide, OutputWide, OutputWide method [Windows Debugging], OutputWide method [Windows Debugging],IDebugControl4 interface, dbgeng/IDebugControl4::OutputWide, debugger.outputwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.ControlledOutputWide
+ - IDebugControl4::OutputWide
 ---
 
 # IDebugControl4::OutputWide
@@ -50,14 +49,14 @@ The <b>OutputWide</b>  method formats a string and send the result to <a href="/
 
 ## -parameters
 
-### -param Mask 
+### -param Mask [in]
 
-[in]
+
 Specifies the output-type bit field.  See <a href="/windows-hardware/drivers/debugger/debug-output-xxx">DEBUG_OUTPUT_XXX</a> for possible values.
 
-### -param Format 
+### -param Format [in]
 
-[in]
+
 Specifies the format string, as in <b>printf</b>.  In general, conversion characters work exactly as in C. For the floating-point conversion characters the 64-bit argument is interpreted as a 32-bit floating-point number unless the <b>l</b>  modifier is used.
 
 The <b>%p</b> conversion character is supported, but it represents a pointer in a target's address space.  It cannot have any modifiers and it uses the debugger's internal address formatting.  The following additional conversion characters are supported.
@@ -233,9 +232,7 @@ String that contains the name of the specified symbol (and displacement, if any)
 </tr>
 </table>
 
-### -param param
-
-####### - ... [in]
+### -param ...
 
 Specifies additional parameters that contain values to be inserted into the output during formatting.
 
@@ -284,3 +281,4 @@ When generating very large output strings, it is possible to reach the limits of
 
 
 <a href="/windows-hardware/drivers/ddi/wdbgexts/nc-wdbgexts-pwindbg_output_routine">dprintf</a>
+

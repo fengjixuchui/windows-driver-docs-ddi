@@ -4,7 +4,6 @@ title: _IRB_REQ_SEND_PHY_CONFIGURATION_PACKET (1394.h)
 description: This structure contains the fields necessary to carry out a SendPhyConfigurationPacket request.
 old-location: ieee\irb_req_send_phy_configuration_packet.htm
 tech.root: IEEE
-ms.assetid: FCB87010-EA7D-495F-B58A-6E0322F9C846
 ms.date: 02/15/2018
 keywords: ["IRB_REQ_SEND_PHY_CONFIGURATION_PACKET structure"]
 ms.keywords: 1394/IRB_REQ_SEND_PHY_CONFIGURATION_PACKET, IEEE.irb_req_send_phy_configuration_packet, IRB_REQ_SEND_PHY_CONFIGURATION_PACKET, IRB_REQ_SEND_PHY_CONFIGURATION_PACKET structure [Buses], _IRB_REQ_SEND_PHY_CONFIGURATION_PACKET
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _IRB_REQ_SEND_PHY_CONFIGURATION_PACKET
  - IRB_REQ_SEND_PHY_CONFIGURATION_PACKET
 ---
 
@@ -55,8 +55,4 @@ This structure contains the fields necessary to carry out a SendPhyConfiguration
 ### -field PhyConfigurationPacket
 
 Points to the PHY_CONFIGURATION_PACKET structure.
-
-## -remarks
-
-The packet is sent to all nodes on the bus. See the <a href="https://go.microsoft.com/fwlink/p/?linkid=8729">IEEE 1394 Trade Association specification</a> website for a description of Phy packets.
 

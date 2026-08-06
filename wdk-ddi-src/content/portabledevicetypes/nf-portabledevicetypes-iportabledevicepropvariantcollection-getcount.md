@@ -4,7 +4,6 @@ title: IPortableDevicePropVariantCollection::GetCount (portabledevicetypes.h)
 description: Retrieves the number of items in this collection.
 old-location: wpddk\iportabledevicepropvariantcollection_getcount.htm
 tech.root: wpd_dk
-ms.assetid: a9eecbc4-c461-4c13-99e0-3132bd0f6b9c
 ms.date: 02/15/2018
 keywords: ["IPortableDevicePropVariantCollection::GetCount"]
 ms.keywords: GetCount, GetCount method, GetCount method,IPortableDevicePropVariantCollection interface, IPortableDevicePropVariantCollection interface,GetCount method, IPortableDevicePropVariantCollection.GetCount, IPortableDevicePropVariantCollection::GetCount, IPortableDevicePropVariantCollectionGetCount, portabledevicetypes/IPortableDevicePropVariantCollection::GetCount, wpddk.iportabledevicepropvariantcollection_getcount
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDevicePropVariantCollection.GetCount
+ - IPortableDevicePropVariantCollection::GetCount
 ---
 
 # IPortableDevicePropVariantCollection::GetCount
@@ -51,9 +50,9 @@ Retrieves the number of items in this collection.
 
 ## -parameters
 
-### -param pcElems 
+### -param pcElems [in]
 
-[in]
+
 Pointer to a <b>DWORD</b> that contains the number of items in the collection.
 
 ## -returns
@@ -96,3 +95,4 @@ None.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicepropvariantcollection">IPortableDevicePropVariantCollection Interface</a>
+

@@ -4,7 +4,6 @@ title: IMiniportAudioEngineNode::SetDeviceChannelVolume (portcls.h)
 description: Sets the volume level for a given channel of the audio device.
 old-location: audio\iminiportaudioenginenode_setdevicechannelvolume.htm
 tech.root: audio
-ms.assetid: 05DA619B-B36A-4E14-9F63-E12E90E0BDCD
 ms.date: 05/08/2018
 keywords: ["IMiniportAudioEngineNode::SetDeviceChannelVolume"]
 ms.keywords: IMiniportAudioEngineNode interface [Audio Devices],SetDeviceChannelVolume method, IMiniportAudioEngineNode.SetDeviceChannelVolume, IMiniportAudioEngineNode::SetDeviceChannelVolume, SetDeviceChannelVolume, SetDeviceChannelVolume method [Audio Devices], SetDeviceChannelVolume method [Audio Devices],IMiniportAudioEngineNode interface, audio.iminiportaudioenginenode_setdevicechannelvolume, portcls/IMiniportAudioEngineNode::SetDeviceChannelVolume
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IMiniportAudioEngineNode.SetDeviceChannelVolume
+ - IMiniportAudioEngineNode::SetDeviceChannelVolume
 ---
 
 # IMiniportAudioEngineNode::SetDeviceChannelVolume
@@ -50,19 +49,19 @@ Sets the volume level for a given channel of the audio device.
 
 ## -parameters
 
-### -param ulNodeId 
+### -param ulNodeId [in]
 
-[in]
+
 The ID for the node that represents the audio device.
 
-### -param ulChannel 
+### -param ulChannel [in]
 
-[in]
+
 The audio device channel.
 
-### -param lVolume 
+### -param lVolume [in]
 
-[in]
+
 The volume level to which the channel will be set.
 
 ## -returns
@@ -72,3 +71,4 @@ The volume level to which the channel will be set.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportaudioenginenode">IMiniportAudioEngineNode</a>
+

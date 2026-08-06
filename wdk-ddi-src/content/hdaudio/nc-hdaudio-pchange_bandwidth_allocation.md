@@ -4,7 +4,6 @@ title: PCHANGE_BANDWIDTH_ALLOCATION (hdaudio.h)
 description: The ChangeBandwidthAllocation routine changes a DMA engine's bandwidth allocation on the HD Audio Link.The function pointer type for a ChangeBandwidthAllocation routine is defined as follows.
 old-location: audio\changebandwidthallocation.htm
 tech.root: audio
-ms.assetid: 4dcf8fb6-71f5-4e11-a92a-0292c2a1515c
 ms.date: 05/08/2018
 keywords: ["PCHANGE_BANDWIDTH_ALLOCATION callback function"]
 ms.keywords: ChangeBandwidthAllocation, ChangeBandwidthAllocation callback function [Audio Devices], PCHANGE_BANDWIDTH_ALLOCATION, PCHANGE_BANDWIDTH_ALLOCATION callback, aud-prop2_3d85fecb-4617-404b-951b-7457f9e650cc.xml, audio.changebandwidthallocation, hdaudio/ChangeBandwidthAllocation
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - hdaudio.h
 api_name:
- - ChangeBandwidthAllocation
+ - PCHANGE_BANDWIDTH_ALLOCATION
 ---
 
 # PCHANGE_BANDWIDTH_ALLOCATION callback function
@@ -52,24 +51,24 @@ The function pointer type for a <code>ChangeBandwidthAllocation</code> routine i
 
 ## -parameters
 
-### -param _context 
+### -param _context [in]
 
-[in]
+
 Specifies the context value from the <b>Context</b> member of the <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface">HDAUDIO_BUS_INTERFACE</a><u>, </u><a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_v2">HDAUDIO_BUS_INTERFACE_V2</a>, or <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl">HDAUDIO_BUS_INTERFACE_BDL</a> structure.
 
-### -param Handle 
+### -param Handle [in]
 
-[in]
+
 Handle identifying the DMA engine. This handle value was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_capture_dma_engine">AllocateCaptureDmaEngine</a> or <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_render_dma_engine">AllocateRenderDmaEngine</a>.
 
-### -param StreamFormat 
+### -param StreamFormat [in]
 
-[in]
+
 Specifies the requested stream format. This parameter points to a caller-allocated structure of type <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_stream_format">HDAUDIO_STREAM_FORMAT</a> that specifies a data format for the stream.
 
-### -param ConverterFormat 
+### -param ConverterFormat [out]
 
-[out]
+
 Retrieves the converter format. This parameter points to a caller-allocated structure of type <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_converter_format">HDAUDIO_CONVERTER_FORMAT</a> into which the routine writes the encoded format. For more information, see the following Remarks section.
 
 ## -returns
@@ -210,3 +209,4 @@ In Windows Vista and later, a wave miniport driver calls this routine during exe
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportwavepcistream-setformat">IMiniportWavePciStream::SetFormat</a>
+

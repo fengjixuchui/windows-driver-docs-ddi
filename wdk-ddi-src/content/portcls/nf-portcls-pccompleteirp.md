@@ -4,7 +4,6 @@ title: PcCompleteIrp function (portcls.h)
 description: The PcCompleteIrp function completes an IRP that was previously marked as pending.
 old-location: audio\pccompleteirp.htm
 tech.root: audio
-ms.assetid: fa0b36bf-0628-4136-9ca7-1d20823969ff
 ms.date: 05/08/2018
 keywords: ["PcCompleteIrp function"]
 ms.keywords: PcCompleteIrp, PcCompleteIrp function [Audio Devices], audio.pccompleteirp, audpc-routines_f61145f8-9e55-4b2a-a3aa-37f7be4f4df3.xml, portcls/PcCompleteIrp
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Portcls.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,19 +50,19 @@ The <b>PcCompleteIrp</b> function completes an IRP that was previously marked as
 
 ## -parameters
 
-### -param pDeviceObject 
+### -param pDeviceObject [in]
 
-[in]
+
 Pointer to the device object for the device. This parameter must point to a system structure of type <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a>.
 
-### -param pIrp 
+### -param pIrp [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_irp">IRP</a> that is to be completed
 
-### -param ntStatus 
+### -param ntStatus [in]
 
-[in]
+
 Specifies the status of the completed IRP. See the list of NTSTATUS values defined in header file ntstatus.h.
 
 ## -returns

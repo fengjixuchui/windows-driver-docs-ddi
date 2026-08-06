@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_44
+UID: NS:ks.KSSTREAMALLOCATOR_STATUS
 title: KSSTREAMALLOCATOR_STATUS (ks.h)
 description: The KSSTREAMALLOCATOR_STATUS structure describes framing requirements and current number of allocated frames for a specific allocator.
 old-location: stream\ksstreamallocator_status.htm
 tech.root: stream
-ms.assetid: 95ef6c1e-c2b7-49ca-9aaf-caeb2dca7c3a
 ms.date: 04/23/2018
 keywords: ["KSSTREAMALLOCATOR_STATUS structure"]
 ms.keywords: "*PKSSTREAMALLOCATOR_STATUS, KSSTREAMALLOCATOR_STATUS, KSSTREAMALLOCATOR_STATUS structure [Streaming Media Devices], PKSSTREAMALLOCATOR_STATUS, PKSSTREAMALLOCATOR_STATUS structure pointer [Streaming Media Devices], ks-struct_e9071d70-ee9c-4ef9-828e-81d9abf6cc68.xml, ks/KSSTREAMALLOCATOR_STATUS, ks/PKSSTREAMALLOCATOR_STATUS, stream.ksstreamallocator_status"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
+ - PKSSTREAMALLOCATOR_STATUS
  - KSSTREAMALLOCATOR_STATUS
 ---
 
@@ -75,3 +75,4 @@ Clients can query allocator status by providing a KSSTREAMALLOCATOR_STATUS struc
 
 
 <a href="/windows-hardware/drivers/stream/ksproperty-streamallocator-status">KSPROPERTY_STREAMALLOCATOR_STATUS</a>
+

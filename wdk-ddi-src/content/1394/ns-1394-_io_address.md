@@ -4,7 +4,6 @@ title: _IO_ADDRESS (1394.h)
 description: The IO_ADDRESS structure specifies the 1394 64-bit destination address for read, write and lock operations.
 old-location: ieee\io_address.htm
 tech.root: IEEE
-ms.assetid: db703d46-d37f-442a-a543-ce9e9c5ea3cb
 ms.date: 02/15/2018
 keywords: ["IO_ADDRESS structure"]
 ms.keywords: "*PIO_ADDRESS, 1394/IO_ADDRESS, 1394/PIO_ADDRESS, 1394stct_1683915b-161d-4741-91b9-32f632b56e59.xml, IEEE.io_address, IO_ADDRESS, IO_ADDRESS structure [Buses], PIO_ADDRESS, PIO_ADDRESS structure pointer [Buses], _IO_ADDRESS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _IO_ADDRESS
+ - PIO_ADDRESS
  - IO_ADDRESS
 ---
 
@@ -72,16 +73,17 @@ Holds a structure of type <a href="/windows-hardware/drivers/ddi/1394/ns-1394-_a
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537633">REQUEST_ASYNC_LOCK</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ASYNC_LOCK</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537634">REQUEST_ASYNC_READ</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ASYNC_READ</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537636">REQUEST_ASYNC_WRITE</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ASYNC_WRITE</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537642">REQUEST_GET_CONFIGURATION_INFO</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_GET_CONFIGURATION_INFO</a>
+

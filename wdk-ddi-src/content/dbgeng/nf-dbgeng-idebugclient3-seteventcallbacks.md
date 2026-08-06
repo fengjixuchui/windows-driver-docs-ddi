@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugClient3.SetEventCallbacks
 title: IDebugClient3::SetEventCallbacks (dbgeng.h)
-description: The SetEventCallbacks method registers an event callbacks object with this client.
+description: The SetEventCallbacks method registers an event callbacks object with this client. This method belongs to the IDebugClient3 interface.
 old-location: debugger\seteventcallbacks.htm
 tech.root: debugger
-ms.assetid: c741777b-dfaf-42b0-9dd7-6678281b6359
 ms.date: 05/03/2018
 keywords: ["IDebugClient3::SetEventCallbacks"]
 ms.keywords: IDebugClient interface [Windows Debugging],SetEventCallbacks method, IDebugClient2 interface [Windows Debugging],SetEventCallbacks method, IDebugClient2::SetEventCallbacks, IDebugClient3 interface [Windows Debugging],SetEventCallbacks method, IDebugClient3.SetEventCallbacks, IDebugClient3::SetEventCallbacks, IDebugClient4 interface [Windows Debugging],SetEventCallbacks method, IDebugClient4::SetEventCallbacks, IDebugClient5 interface [Windows Debugging],SetEventCallbacks method, IDebugClient5::SetEventCallbacks, IDebugClient::SetEventCallbacks, IDebugClient_a234bf28-5dd1-4e92-ab72-aa8d9a3a282b.xml, SetEventCallbacks, SetEventCallbacks method [Windows Debugging], SetEventCallbacks method [Windows Debugging],IDebugClient interface, SetEventCallbacks method [Windows Debugging],IDebugClient2 interface, SetEventCallbacks method [Windows Debugging],IDebugClient3 interface, SetEventCallbacks method [Windows Debugging],IDebugClient4 interface, SetEventCallbacks method [Windows Debugging],IDebugClient5 interface, dbgeng/IDebugClient2::SetEventCallbacks, dbgeng/IDebugClient3::SetEventCallbacks, dbgeng/IDebugClient4::SetEventCallbacks, dbgeng/IDebugClient5::SetEventCallbacks, dbgeng/IDebugClient::SetEventCallbacks, debugger.seteventcallbacks
@@ -38,11 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugClient.SetEventCallbacks
- - IDebugClient2.SetEventCallbacks
- - IDebugClient3.SetEventCallbacks
- - IDebugClient4.SetEventCallbacks
- - IDebugClient5.SetEventCallbacks
+ - IDebugClient3::SetEventCallbacks
 ---
 
 # IDebugClient3::SetEventCallbacks
@@ -54,9 +49,9 @@ The <b>SetEventCallbacks</b> method registers an event callbacks object with thi
 
 ## -parameters
 
-### -param Callbacks 
+### -param Callbacks [in, optional]
 
-[in, optional]
+
 Specifies the interface pointer to the event callbacks object to register with this client.
 
 ## -returns
@@ -118,3 +113,4 @@ For more information about callbacks, see <a href="/windows-hardware/drivers/deb
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugeventcallbacks">IDebugEventCallbacks</a>
+

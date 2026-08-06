@@ -4,7 +4,6 @@ title: ClfsAlignReservedLog function (wdm.h)
 description: The ClfsAlignReservedLog routine calculates the size of the space that must be reserved for a specified set of records. The size calculation includes the space required for headers and the space required for sector alignment.
 old-location: kernel\clfsalignreservedlog.htm
 tech.root: kernel
-ms.assetid: b79f58bb-af94-4143-9e30-6f50d85cbb3d
 ms.date: 04/30/2018
 keywords: ["ClfsAlignReservedLog function"]
 ms.keywords: ClfsAlignReservedLog, ClfsAlignReservedLog routine [Kernel-Mode Driver Architecture], Clfs_68de31de-d1f9-4948-ab15-bf8678aebcf2.xml, kernel.clfsalignreservedlog, wdm/ClfsAlignReservedLog
@@ -51,24 +50,24 @@ The <b>ClfsAlignReservedLog</b> routine calculates the size of the space that mu
 
 ## -parameters
 
-### -param pvMarshalContext 
+### -param pvMarshalContext [in]
 
-[in]
+
 A pointer to an opaque context that represents a marshalling area associated with a CLFS stream. The caller previously obtained this pointer by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfscreatemarshallingarea">ClfsCreateMarshallingArea</a>.
 
-### -param cRecords 
+### -param cRecords [in]
 
-[in]
+
 The number of elements in the array pointed to by <i>rgcbReservation</i>.
 
-### -param rgcbReservation 
+### -param rgcbReservation [in]
 
-[in]
+
 A pointer to an array of LONGLONG-typed variables that supplies a list of record sizes (in bytes).
 
-### -param pcbAlignReservation 
+### -param pcbAlignReservation [out]
 
-[out]
+
 A pointer to a LONGLONG-typed variable that receives the size, in bytes, of the required reservation.
 
 ## -returns

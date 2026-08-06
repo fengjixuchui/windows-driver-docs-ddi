@@ -4,7 +4,6 @@ title: _WDFMEMORY_OFFSET (wudfddi_types.h)
 description: The WDFMEMORY_OFFSET structure describes the location and size of information that is accessed within a memory block.
 old-location: wdf\wdfmemory_offset_umdf.htm
 tech.root: wdf
-ms.assetid: 960710f7-15b1-4815-a33a-0e903d0a4193
 ms.date: 02/26/2018
 keywords: ["WDFMEMORY_OFFSET structure"]
 ms.keywords: "*PWDFMEMORY_OFFSET, PWDFMEMORY_OFFSET, PWDFMEMORY_OFFSET structure pointer, WDFMEMORY_OFFSET, WDFMEMORY_OFFSET structure, _WDFMEMORY_OFFSET, umdf.wdfmemory_offset, umdfstructs_919b5e02-39d3-4f06-867d-43133c008e85.xml, wdf.wdfmemory_offset_umdf, wudfddi_types/PWDFMEMORY_OFFSET, wudfddi_types/WDFMEMORY_OFFSET"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wudfddi_types.h
 api_name:
+ - _WDFMEMORY_OFFSET
+ - PWDFMEMORY_OFFSET
  - WDFMEMORY_OFFSET
 ---
 
@@ -72,3 +73,4 @@ A UMDF driver supplies a pointer to a <a href="/windows-hardware/drivers/ddi/wud
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfmemory-copyfrommemory">IWDFMemory::CopyFromMemory</a>
+

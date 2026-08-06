@@ -4,7 +4,6 @@ title: RtlIsLeftChild macro (ntddk.h)
 description: The RtlIsLeftChild routine determines whether a given splay link is the left child of a node in a splay link tree.
 old-location: ifsk\rtlisleftchild.htm
 tech.root: ifsk
-ms.assetid: 6ccdcc68-f03f-4972-91de-c8ab7f4389fb
 ms.date: 04/16/2018
 keywords: ["RtlIsLeftChild macro"]
 ms.keywords: RtlIsLeftChild, RtlIsLeftChild routine [Installable File System Drivers], ifsk.rtlisleftchild, ntddk/RtlIsLeftChild, rtlref_2692597e-5133-48f2-b978-c8ac5f2280fe.xml
@@ -50,9 +49,9 @@ The <b>RtlIsLeftChild</b> routine determines whether a given splay link is the l
 
 ## -parameters
 
-### -param Links 
+### -param Links [in]
 
-[in]
+
 Pointer to the node. The node must have been initialized by calling <b>RtlInitializeSplayLinks</b>.
 
 ## -remarks

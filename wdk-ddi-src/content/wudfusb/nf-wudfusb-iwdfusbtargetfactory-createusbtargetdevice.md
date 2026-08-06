@@ -4,7 +4,6 @@ title: IWDFUsbTargetFactory::CreateUsbTargetDevice (wudfusb.h)
 description: The CreateUsbTargetDevice method creates a USB device object that is also an I/O target.
 old-location: wdf\iwdfusbtargetfactory_createusbtargetdevice.htm
 tech.root: wdf
-ms.assetid: c5aeb5f4-be62-4418-981c-1dd4acdccf07
 ms.date: 02/26/2018
 keywords: ["IWDFUsbTargetFactory::CreateUsbTargetDevice"]
 ms.keywords: CreateUsbTargetDevice, CreateUsbTargetDevice method, CreateUsbTargetDevice method,IWDFUsbTargetFactory interface, IWDFUsbTargetFactory interface,CreateUsbTargetDevice method, IWDFUsbTargetFactory.CreateUsbTargetDevice, IWDFUsbTargetFactory::CreateUsbTargetDevice, UMDFDeviceObjectRef_fafba7c5-57d5-4b05-bc46-46807b94ec6d.xml, umdf.iwdfusbtargetfactory_createusbtargetdevice, wdf.iwdfusbtargetfactory_createusbtargetdevice, wudfusb/IWDFUsbTargetFactory::CreateUsbTargetDevice
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFUsbTargetFactory.CreateUsbTargetDevice
+ - IWDFUsbTargetFactory::CreateUsbTargetDevice
 ---
 
 # IWDFUsbTargetFactory::CreateUsbTargetDevice
@@ -52,9 +51,9 @@ The <b>CreateUsbTargetDevice</b> method creates a USB device object that is also
 
 ## -parameters
 
-### -param ppDevice 
+### -param ppDevice [out]
 
-[out]
+
 A pointer to a buffer that receives a pointer to the <a href="/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetdevice">IWDFUsbTargetDevice</a> interface for the USB target device object.
 
 ## -returns
@@ -200,7 +199,6 @@ CUmdfHidDevice::OnPrepareHardware(
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiotarget">IWDFIoTarget</a>
@@ -220,3 +218,4 @@ CUmdfHidDevice::OnPrepareHardware(
 
 
 <a href="/windows/win32/api/winusb/nf-winusb-winusb_initialize">WinUsb_Initialize</a>
+

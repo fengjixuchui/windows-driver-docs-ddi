@@ -3,12 +3,10 @@ UID: NI:usbprint.IOCTL_USBPRINT_GET_INTERFACE_TYPE
 title: IOCTL_USBPRINT_GET_INTERFACE_TYPE
 description: Get the protocol capabilities of the USB printer interface.
 tech.root: print
-ms.assetid: cec2122d-17b3-407c-b374-be475024afc2
 ms.date: 04/03/2019
 keywords: ["IOCTL_USBPRINT_GET_INTERFACE_TYPE IOCTL"]
-ms.custom: 19H1
 req.header: usbprint.h
-req.include-header: 
+req.include-header: Usbprint.h
 req.target-type: 
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -31,20 +29,17 @@ api_location:
  - usbprint.h
 api_name:
  - IOCTL_USBPRINT_GET_INTERFACE_TYPE
-product:
- - Windows
 ---
 
-# IOCTL_USBPRINT_GET_INTERFACE_TYPE IOCTL
-
 ### Major Code:  [IRP_MJ_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-device-control)
-
 
 ## -description
 
 Get the protocol capabilities of the USB printer interface.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 
@@ -62,6 +57,10 @@ Pointer to a DWORD
 
 sizeof(DWORD)
 
+### -in-out-buffer
+
+### -inout-buffer-length
+
 ### -status-block
 
 Irp->IoStatus.Status is set to STATUS_SUCCESS if the request is successful.
@@ -74,7 +73,7 @@ For more information, see [NTSTATUS Values](/windows-hardware/drivers/kernel/usi
 IOCTL_USBPRINT_GET_INTERFACE_TYPE returns one of the following values:
 
 | Defined constant | Value | Description |
-| --- | --- | --- |
+|--|--|--|
 | USB_PRINTER_INTERFACE_CLASSIC | 1 | Has only 7-1-2 alternate config |
 | USB_PRINTER_INTERFACE_IPP | 2 | Has only 7-1-4 alternate config |
 | USB_PRINTER_INTERFACE_DUAL | 3 | Has both 7-1-2 and 7-1-4 alternate configs |

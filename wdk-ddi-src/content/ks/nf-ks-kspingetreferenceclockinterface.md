@@ -4,7 +4,6 @@ title: KsPinGetReferenceClockInterface function (ks.h)
 description: The KsPinGetReferenceClockInterface function returns a COM style interface to the reference clock associated with Pin. This interface pointer will be an IKsReferenceClock interface.
 old-location: stream\kspingetreferenceclockinterface.htm
 tech.root: stream
-ms.assetid: 49c78b4e-aa3a-4c4b-8720-0302a537c84c
 ms.date: 04/23/2018
 keywords: ["KsPinGetReferenceClockInterface function"]
 ms.keywords: KsPinGetReferenceClockInterface, KsPinGetReferenceClockInterface function [Streaming Media Devices], avfunc_7434698b-f441-4d80-91db-8fa5d7d10c60.xml, ks/KsPinGetReferenceClockInterface, stream.kspingetreferenceclockinterface
@@ -51,14 +50,14 @@ The<b> KsPinGetReferenceClockInterface</b> function returns a COM style interfac
 
 ## -parameters
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a> structure for which to return the reference clock interface.
 
-### -param Interface 
+### -param Interface [out]
 
-[out]
+
 A pointer to a memory location that receives the address of an <a href="/windows-hardware/drivers/ddi/ks/nn-ks-iksreferenceclock">IKsReferenceClock</a> interface. This is a COM style interface with an associated reference count. Minidrivers must release the interface when finished with it.
 
 ## -returns

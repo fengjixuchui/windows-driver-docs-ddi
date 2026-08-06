@@ -4,7 +4,6 @@ title: WdfDeviceGetHardwareRegisterMappedAddress function (wdfdevice.h)
 description: A driver calls WdfDeviceGetHardwareRegisterMappedAddress to get the user-mode mapped address of the memory resource it mapped previously using WdfDeviceMapIoSpace.
 old-location: wdf\wdfdevicegethardwareregistermappedaddress.htm
 tech.root: wdf
-ms.assetid: 4D172D39-0D28-4950-B428-330D5B4D0654
 ms.date: 02/26/2018
 keywords: ["WdfDeviceGetHardwareRegisterMappedAddress function"]
 ms.keywords: WdfDeviceGetHardwareRegisterMappedAddress, WdfDeviceGetHardwareRegisterMappedAddress function, wdf.wdfdevicegethardwareregistermappedaddress, wdfdevice/WdfDeviceGetHardwareRegisterMappedAddress
@@ -52,14 +51,14 @@ A driver calls <b>WdfDeviceGetHardwareRegisterMappedAddress</b> to get the user-
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param PseudoBaseAddress 
+### -param PseudoBaseAddress [in]
 
-[in]
+
 The address of a location that receives a pointer to the pseudo base address.
 
 ## -returns

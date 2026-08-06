@@ -1,11 +1,10 @@
 ---
 UID: NC:wlanihv.DOT11EXT_ONEX_START
 title: DOT11EXT_ONEX_START (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_ONEX_START callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extstartonex.htm
 tech.root: netvista
-ms.assetid: d4117da4-349a-4143-b2a8-d4edf6c02e7b
-ms.date: 02/16/2018
+ms.date: 09/07/2022
 keywords: ["DOT11EXT_ONEX_START callback"]
 ms.keywords: DOT11EXT_ONEX_START, Dot11ExtStartOneX, Dot11ExtStartOneX callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_71199b82-64e0-4b96-89f0-e964dd959077.xml, netvista.dot11extstartonex, wlanihv/Dot11ExtStartOneX
 req.header: wlanihv.h
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_ONEX_START
  - wlanihv/DOT11EXT_ONEX_START
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtStartOneX
+ - DOT11EXT_ONEX_START
 ---
 
 # DOT11EXT_ONEX_START callback
@@ -54,17 +52,15 @@ api_name:
 
 ## -parameters
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the wireless LAN (WLAN) adapter. This handle
      value was specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param pEapAttributes
-
-#### - pEapAttribute [in, optional]
+### -param pEapAttributes [in, optional]
 
 A pointer to an EAP_ATTRIBUTES array structure that contains the EAP attributes returned by the
      authentication session. For more information about EAP_ATTRIBUTES, see the Microsoft Windows SDK
@@ -170,3 +166,4 @@ For more information about using the 802.1X module for authentication, see
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_onex_stop.md">Dot11ExtStopOneX</a>
+

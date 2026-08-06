@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._MCI_STATUS
 title: MCI_STATUS
-description: 
-tech.root: 
-ms.assetid: 468fe430-d8d6-4736-956a-7639abd9c12b
+description: "Learn more about: MCI_STATUS structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["MCI_STATUS structure"]
 ms.keywords: MCI_STATUS, MCI_STATUS, *PMCI_STATUS,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _MCI_STATUS
+ - PMCI_STATUS
  - MCI_STATUS
-product:
- - Windows
 ---
 
 # MCI_STATUS structure
@@ -50,31 +49,11 @@ Reserved for system use.
 
 ## -struct-fields
 
-### -field DUMMYSTRUCTNAME
+### -field CommonBits
 
-### -field DUMMYSTRUCTNAME.McaErrorCode
+### -field AmdBits
 
-### -field DUMMYSTRUCTNAME.ModelErrorCode
-
-### -field DUMMYSTRUCTNAME.OtherInformation
-
-### -field DUMMYSTRUCTNAME.ActionRequired
-
-### -field DUMMYSTRUCTNAME.Signalling
-
-### -field DUMMYSTRUCTNAME.ContextCorrupt
-
-### -field DUMMYSTRUCTNAME.AddressValid
-
-### -field DUMMYSTRUCTNAME.MiscValid
-
-### -field DUMMYSTRUCTNAME.ErrorEnabled
-
-### -field DUMMYSTRUCTNAME.UncorrectedError
-
-### -field DUMMYSTRUCTNAME.StatusOverFlow
-
-### -field DUMMYSTRUCTNAME.Valid
+### -field IntelBits
 
 ### -field QuadPart
 

@@ -4,7 +4,6 @@ title: _NDIS_SWITCH_NIC_STATUS_INDICATION (ndis.h)
 description: The NDIS_SWITCH_NIC_STATUS_INDICATION structure specifies the information that is required to forward or originate an NDIS status indication from an underlying physical network adapter.
 old-location: netvista\ndis_switch_nic_status_indication.htm
 tech.root: netvista
-ms.assetid: a3841a14-0876-47f4-a4dc-6231b76086ca
 ms.date: 05/02/2018
 keywords: ["NDIS_SWITCH_NIC_STATUS_INDICATION structure"]
 ms.keywords: "*PNDIS_SWITCH_NIC_STATUS_INDICATION, NDIS_SWITCH_NIC_STATUS_INDICATION, NDIS_SWITCH_NIC_STATUS_INDICATION structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_NIC_STATUS_INDICATION, PNDIS_SWITCH_NIC_STATUS_INDICATION structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_NIC_STATUS_INDICATION, ndis/NDIS_SWITCH_NIC_STATUS_INDICATION, ndis/PNDIS_SWITCH_NIC_STATUS_INDICATION, netvista.ndis_switch_nic_status_indication"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
+ - _NDIS_SWITCH_NIC_STATUS_INDICATION
+ - PNDIS_SWITCH_NIC_STATUS_INDICATION
  - NDIS_SWITCH_NIC_STATUS_INDICATION
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_SWITCH_NIC_STATUS_INDICATION</b> structure specifies the information
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_SWITCH_NIC_STATUS_INDICATION</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_SWITCH_NIC_STATUS_INDICATION</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_NIC_STATUS_INDICATION</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
 
@@ -124,7 +125,7 @@ For guidelines on how to issue NDIS status indications from underlying physical 
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -133,3 +134,4 @@ For guidelines on how to issue NDIS status indications from underlying physical 
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_switch_nic_status_indication">NDIS_SWITCH_NIC_STATUS_INDICATION</a>
+

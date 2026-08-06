@@ -4,7 +4,6 @@ title: StorPortReleaseSpinLock function (storport.h)
 description: The StorPortReleaseSpinLock routine releases a spinlock acquired by StorPortAcquireSpinLock.
 old-location: storage\storportreleasespinlock.htm
 tech.root: storage
-ms.assetid: ed91d41a-575d-4b26-a7e0-f3ce43db76b4
 ms.date: 03/29/2018
 keywords: ["StorPortReleaseSpinLock function"]
 ms.keywords: StorPortReleaseSpinLock, StorPortReleaseSpinLock routine [Storage Devices], storage.storportreleasespinlock, storport/StorPortReleaseSpinLock, storprt_5f3bd7a7-ffdd-4d7b-992b-70c2cea3acec.xml
@@ -54,9 +53,9 @@ The <b>StorPortReleaseSpinLock</b> routine releases a spinlock acquired by <a hr
 
 <p>Pointer to a per-adapter device extension.</p>
 
-### -param LockHandle 
+### -param LockHandle [in, out]
 
-[in, out]
+
 Pointer to a lock handle returned by <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportacquirespinlock">StorPortAcquireSpinLock</a>.
 
 ## -see-also

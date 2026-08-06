@@ -4,7 +4,6 @@ title: _PMI_EVENT (pmi.h)
 description: The PMI_EVENT structure contains information about a power metering and budgeting event that is signaled through the Power Meter Interface (PMI).
 old-location: powermeter\pmi_event.htm
 tech.root: powermeter
-ms.assetid: 51ae6247-c482-4f13-8699-df871ae346c0
 ms.date: 05/08/2018
 keywords: ["PMI_EVENT structure"]
 ms.keywords: "*PPMI_EVENT, PMI_EVENT, PMI_EVENT structure [Power Metering and Budgeting Devices], PPMI_EVENT, PPMI_EVENT structure pointer [Power Metering and Budgeting Devices], PowerMeterRef_8c4d0572-12b8-4e72-b52e-9aa74a22d0c1.xml, _PMI_EVENT, pmi/PMI_EVENT, pmi/PPMI_EVENT, powermeter.pmi_event"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pmi.h
 api_name:
+ - _PMI_EVENT
+ - PPMI_EVENT
  - PMI_EVENT
 ---
 
@@ -203,3 +204,4 @@ The <b>AssociatedIrp.SystemBuffer</b> member is set to the address of an initiat
 
 
 <a href="/windows-hardware/drivers/ddi/pmi/ne-pmi-pmi_event_type">PMI_EVENT_TYPE</a>
+

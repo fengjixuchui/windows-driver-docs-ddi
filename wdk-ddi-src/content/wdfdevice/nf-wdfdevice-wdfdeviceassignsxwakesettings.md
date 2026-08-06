@@ -4,7 +4,6 @@ title: WdfDeviceAssignSxWakeSettings function (wdfdevice.h)
 description: The WdfDeviceAssignSxWakeSettings method provides driver-supplied information about a device's ability to trigger a wake signal while both the device and the system are in a low-power state.
 old-location: wdf\wdfdeviceassignsxwakesettings.htm
 tech.root: wdf
-ms.assetid: af25d03f-32c5-4e2c-930f-1b905edc566b
 ms.date: 02/26/2018
 keywords: ["WdfDeviceAssignSxWakeSettings function"]
 ms.keywords: DFDeviceObjectGeneralRef_1a9b9467-862d-422a-9cf6-501d1ddefe5e.xml, WdfDeviceAssignSxWakeSettings, WdfDeviceAssignSxWakeSettings method, kmdf.wdfdeviceassignsxwakesettings, wdf.wdfdeviceassignsxwakesettings, wdfdevice/WdfDeviceAssignSxWakeSettings
@@ -55,14 +54,14 @@ The <b>WdfDeviceAssignSxWakeSettings</b> method provides driver-supplied informa
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Settings 
+### -param Settings [in]
 
-[in]
+
 A pointer to a caller-supplied <a href="/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_device_power_policy_wake_settings">WDF_DEVICE_POWER_POLICY_WAKE_SETTINGS</a> structure.
 
 ## -returns

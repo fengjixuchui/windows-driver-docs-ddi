@@ -4,7 +4,6 @@ title: RtlUnicodeStringCchCopyN function (ntstrsafe.h)
 description: The RtlUnicodeStringCchCopyN function copies a string from one UNICODE_STRING structure to another while limiting the size of the copied string.
 old-location: kernel\rtlunicodestringcchcopyn.htm
 tech.root: kernel
-ms.assetid: 8bf66149-c2d1-4a81-9c61-8504d2652877
 ms.date: 04/30/2018
 keywords: ["RtlUnicodeStringCchCopyN function"]
 ms.keywords: RtlUnicodeStringCchCopyN, RtlUnicodeStringCchCopyN function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringcchcopyn, ntstrsafe/RtlUnicodeStringCchCopyN, safestrings_3a628b71-7686-45ef-8217-6501cd3c3eed.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,19 +50,19 @@ The <b>RtlUnicodeStringCchCopyN</b> function copies a string from one <a href="/
 
 ## -parameters
 
-### -param DestinationString 
+### -param DestinationString [out]
 
-[out]
+
 A pointer to a <b>UNICODE_STRING</b> structure that receives the copied string. The string that the <i>SourceString</i> parameter's <b>UNICODE_STRING</b> structure points to is copied to the buffer that the <i>DestinationString</i> parameter's <b>UNICODE_STRING</b> structure points to. The maximum number of characters in the structure's string buffer is NTSTRSAFE_UNICODE_STRING_MAX_CCH.
 
-### -param SourceString 
+### -param SourceString [in]
 
-[in]
+
 A pointer to a <b>UNICODE_STRING</b> structure that contains the string to be copied. The maximum number of characters in the structure's string buffer is NTSTRSAFE_UNICODE_STRING_MAX_CCH.
 
-### -param cchToCopy 
+### -param cchToCopy [in]
 
-[in]
+
 The number of characters to be copied from the source to the destination.
 
 ## -returns

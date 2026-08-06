@@ -1,13 +1,12 @@
 ---
 UID: NC:wdm.PFREE_COMMON_BUFFER_FROM_VECTOR
-title: PFREE_COMMON_BUFFER_FROM_VECTOR
-description: 
-tech.root: 
-ms.assetid: 739dda10-91e5-4844-9468-0e9196b7e25d
-ms.date: 08/19/2019
+title: PFREE_COMMON_BUFFER_FROM_VECTOR (wdm.h)
+description: Describes the PFREE_COMMON_BUFFER_FROM_VECTOR callback function.
+tech.root: kernel
+ms.date: 01/12/2023
 keywords: ["PFREE_COMMON_BUFFER_FROM_VECTOR callback function"]
 req.header: wdm.h
-req.include-header: 
+req.include-header: Wdm.h
 req.target-type: 
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -24,7 +23,6 @@ req.namespace:
 req.assembly: 
 req.type-library: 
 targetos: Windows
-ms.custom: 19H1
 f1_keywords:
  - PFREE_COMMON_BUFFER_FROM_VECTOR
  - wdm/PFREE_COMMON_BUFFER_FROM_VECTOR
@@ -36,47 +34,26 @@ api_location:
  - wdm.h
 api_name:
  - PFREE_COMMON_BUFFER_FROM_VECTOR
-product:
- - Windows
 ---
-
-# PFREE_COMMON_BUFFER_FROM_VECTOR callback function
-
 
 ## -description
 
-Implemented by the client driver to ...
+Describes the PFREE_COMMON_BUFFER_FROM_VECTOR callback function.
 
 ## -parameters
 
-### -param DmaAdapter: 
+### -param DmaAdapter
 
-### -param Vector: 
+Defines the **PDMA_ADAPTER** parameter *DmaAdapter*.
 
-### -param Index: 
+### -param Vector
 
-## -prototype
+**PDMA_COMMON_BUFFER_VECTOR** parameter *Vector*.
 
-```
-//Declaration
+### -param Index
 
-PFREE_COMMON_BUFFER_FROM_VECTOR PfreeCommonBufferFromVector; 
-
-// Definition
-
-VOID PfreeCommonBufferFromVector 
-(
-	PDMA_ADAPTER DmaAdapter
-	PDMA_COMMON_BUFFER_VECTOR Vector
-	ULONG Index
-)
-{...}
-
-```
+Defines the **ULONG** parameter *Index*.
 
 ## -remarks
 
-Register your implementation of this callback function by setting the appropriate member of <!-- REPLACE ME --> and then calling <!-- REPLACE ME -->.
-
 ## -see-also
-

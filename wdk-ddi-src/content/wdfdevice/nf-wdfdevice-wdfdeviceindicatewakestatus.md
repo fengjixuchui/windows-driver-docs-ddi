@@ -4,7 +4,6 @@ title: WdfDeviceIndicateWakeStatus function (wdfdevice.h)
 description: The WdfDeviceIndicateWakeStatus method informs the framework that the calling bus driver has stopped waiting for a specified device to trigger a wake signal on the bus.
 old-location: wdf\wdfdeviceindicatewakestatus.htm
 tech.root: wdf
-ms.assetid: 6581a309-1a6d-4795-a55c-327215ea18ee
 ms.date: 02/26/2018
 keywords: ["WdfDeviceIndicateWakeStatus function"]
 ms.keywords: DFDeviceObjectGeneralRef_8b314bb3-74d4-4ef6-b1a0-f45fb498c468.xml, WdfDeviceIndicateWakeStatus, WdfDeviceIndicateWakeStatus method, kmdf.wdfdeviceindicatewakestatus, wdf.wdfdeviceindicatewakestatus, wdfdevice/WdfDeviceIndicateWakeStatus
@@ -53,14 +52,14 @@ The <b>WdfDeviceIndicateWakeStatus</b> method informs the framework that the cal
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param WaitWakeStatus 
+### -param WaitWakeStatus [in]
 
-[in]
+
 An NTSTATUS status value. If the device triggered a wake signal, the caller must set this value to STATUS_SUCCESS or another status value for which <a href="/windows-hardware/drivers/kernel/using-ntstatus-values">NT_SUCCESS</a>(<i>WaitWakeStatus</i>) equals <b>TRUE</b>. If the device did not trigger a wake signal or if an error was detected, the caller must provide a status value for which NT_SUCCESS(<i>WaitWakeStatus</i>) equals <b>FALSE</b>. For more information, see the following Remarks section.
 
 ## -returns

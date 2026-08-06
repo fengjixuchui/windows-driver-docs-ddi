@@ -4,7 +4,6 @@ title: _WWAN_PIN_FORMAT (wwan.h)
 description: The WWAN_PIN_FORMAT enumeration lists the different Personal Identification Number (PIN) formats that are supported by the MB device.
 old-location: netvista\wwan_pin_format.htm
 tech.root: netvista
-ms.assetid: ccc3934c-fed4-4f9d-ae2a-d5e96bdb1e46
 ms.date: 05/02/2018
 keywords: ["WWAN_PIN_FORMAT enumeration"]
 ms.keywords: "*PWWAN_PIN_FORMAT, PWWAN_PIN_FORMAT, PWWAN_PIN_FORMAT enumeration pointer [Network Drivers Starting with Windows Vista], WWAN_PIN_FORMAT, WWAN_PIN_FORMAT enumeration [Network Drivers Starting with Windows Vista], WwanPinFormatAlphaNumeric, WwanPinFormatMax, WwanPinFormatNumeric, WwanPinFormatUnknown, WwanRef_f3030aa5-70d9-46d6-85e1-dc112a5889ce.xml, _WWAN_PIN_FORMAT, netvista.wwan_pin_format, wwan/PWWAN_PIN_FORMAT, wwan/WWAN_PIN_FORMAT, wwan/WwanPinFormatAlphaNumeric, wwan/WwanPinFormatMax, wwan/WwanPinFormatNumeric, wwan/WwanPinFormatUnknown"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_PIN_FORMAT
+ - PWWAN_PIN_FORMAT
  - WWAN_PIN_FORMAT
 ---
 
@@ -75,3 +76,4 @@ The total number of supported PIN formats.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_pin_desc">WWAN_PIN_DESC</a>
+

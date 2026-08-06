@@ -4,7 +4,6 @@ title: RtlUnicodeStringValidateEx function (ntstrsafe.h)
 description: The RtlUnicodeStringValidateEx function validates the contents of a UNICODE_STRING structure.
 old-location: kernel\rtlunicodestringvalidateex.htm
 tech.root: kernel
-ms.assetid: 864935c4-28b8-4738-ac83-e51e6988248b
 ms.date: 04/30/2018
 keywords: ["RtlUnicodeStringValidateEx function"]
 ms.keywords: RtlUnicodeStringValidateEx, RtlUnicodeStringValidateEx function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringvalidateex, ntstrsafe/RtlUnicodeStringValidateEx, safestrings_dcb45919-f329-4637-b09b-f944ad034502.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,14 +50,14 @@ The <b>RtlUnicodeStringValidateEx</b> function validates the contents of a <a hr
 
 ## -parameters
 
-### -param SourceString 
+### -param SourceString [in]
 
-[in]
+
 Optional. A pointer to a <b>UNICODE_STRING</b> structure to be validated. This pointer can be <b>NULL</b>, but only if STRSAFE_IGNORE_NULLS is set in <i>dwFlags</i>.
 
-### -param dwFlags 
+### -param dwFlags [in]
 
-[in]
+
 The following flag is defined: 
 
 

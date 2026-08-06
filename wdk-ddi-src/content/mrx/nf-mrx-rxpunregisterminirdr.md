@@ -4,7 +4,6 @@ title: RxpUnregisterMinirdr function (mrx.h)
 description: RxpUnregisterMinirdr is called by a network mini-redirector driver to de-register the driver with RDBSS and remove the registration information from the internal RDBSS registration table.
 old-location: ifsk\rxpunregisterminirdr.htm
 tech.root: ifsk
-ms.assetid: 84155e3f-8090-4b0d-a101-25ecd126bc37
 ms.date: 04/16/2018
 keywords: ["RxpUnregisterMinirdr function"]
 ms.keywords: RxpUnregisterMinirdr, RxpUnregisterMinirdr function [Installable File System Drivers], ifsk.rxpunregisterminirdr, mrx/RxpUnregisterMinirdr, rxref_3d8dd57c-4753-47c7-afda-efbd54882c74.xml
@@ -50,9 +49,9 @@ api_name:
 
 ## -parameters
 
-### -param RxDeviceObject 
+### -param RxDeviceObject [in]
 
-[in]
+
 A pointer to the RDBSS device object for this network redirector.
 
 ## -remarks
@@ -77,11 +76,11 @@ Note that the inline routine, <a href="/windows-hardware/drivers/ddi/rxstruc/nf-
 
 
 
-<a href="/windows-hardware/drivers/ddi/mrx/nf-mrx-rxstartminirdr">RxStartMiniRdr</a>
+<a href="/windows-hardware/drivers/ddi/mrx/nf-mrx-rxstartminirdr">RxStartMinirdr</a>
 
 
 
-<a href="/windows-hardware/drivers/ddi/mrx/nf-mrx-rxstopminirdr">RxStopMiniRdr</a>
+<a href="/windows-hardware/drivers/ddi/mrx/nf-mrx-rxstopminirdr">RxStopMinirdr</a>
 
 
 

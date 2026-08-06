@@ -4,7 +4,6 @@ title: IoWMIRegistrationControl function (wdm.h)
 description: The IoWMIRegistrationControl routine registers or unregisters the caller as a WMI data provider for a specified device object.
 old-location: kernel\iowmiregistrationcontrol.htm
 tech.root: kernel
-ms.assetid: fe135118-1992-43c7-8492-81f9febd79b9
 ms.date: 04/30/2018
 keywords: ["IoWMIRegistrationControl function"]
 ms.keywords: IoWMIRegistrationControl, IoWMIRegistrationControl routine [Kernel-Mode Driver Architecture], k104_69efd10b-fb1a-4d66-939d-6ade4185605d.xml, kernel.iowmiregistrationcontrol, wdm/IoWMIRegistrationControl
@@ -50,14 +49,14 @@ The <b>IoWMIRegistrationControl</b> routine registers or unregisters the caller 
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 A pointer to a device object. This object is a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> system structure.
 
-### -param Action 
+### -param Action [in]
 
-[in]
+
 The action that WMI should take. The requested action is indicated by one of the following values.
 
 <table>

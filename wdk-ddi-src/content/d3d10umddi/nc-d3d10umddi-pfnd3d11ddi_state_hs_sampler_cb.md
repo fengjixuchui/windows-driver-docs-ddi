@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_STATE_HS_SAMPLER_CB
 title: PFND3D11DDI_STATE_HS_SAMPLER_CB (d3d10umddi.h)
 description: The pfnStateHsSamplerCb function causes the Microsoft Direct3D 11 runtime to refresh the hull shader sample state.
 old-location: display\pfnstatehssamplercb.htm
-ms.assetid: 95475c7a-874c-45e9-ab92-1c3983315446
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_STATE_HS_SAMPLER_CB callback function"]
 ms.keywords: PFND3D11DDI_STATE_HS_SAMPLER_CB, PFND3D11DDI_STATE_HS_SAMPLER_CB callback, d3d10umddi/pfnStateHsSamplerCb, d3d11state_functions_36ac0f95-b5df-45d2-bae7-38c2ea1986b7.xml, display.pfnstatehssamplercb, pfnStateHsSamplerCb, pfnStateHsSamplerCb callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - pfnStateHsSamplerCb
+ - PFND3D11DDI_STATE_HS_SAMPLER_CB
 ---
 
 # PFND3D11DDI_STATE_HS_SAMPLER_CB callback function
@@ -50,19 +49,19 @@ The <b>pfnStateHsSamplerCb</b> function causes the Microsoft Direct3D 11 runtime
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hRuntimeDevice* [in]
 
 A handle to a context for the core Direct3D runtime. This handle is supplied to the driver in a call to the driver's <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdevice">CreateDevice(D3D10)</a> function.
 
-### -param Arg2
+### -param unnamedParam2
 
 *Base* [in]
 
 The beginning sampler for which the runtime should refresh state.
 
-### -param Arg3
+### -param unnamedParam3
 
 *Count* [in]
 
@@ -75,3 +74,4 @@ The total number of samplers. The number can be -1, which specifies that the Dir
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11ddi_corelayer_devicecallbacks">D3D11DDI_CORELAYER_DEVICECALLBACKS</a>
+

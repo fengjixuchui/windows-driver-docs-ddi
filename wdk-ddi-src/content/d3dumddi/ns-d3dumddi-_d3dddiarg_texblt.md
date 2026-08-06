@@ -4,7 +4,6 @@ title: _D3DDDIARG_TEXBLT (d3dumddi.h)
 description: The D3DDDIARG_TEXBLT structure describes parameters for a texture bit-block transfer (bitblt) operation.
 old-location: display\d3dddiarg_texblt.htm
 tech.root: display
-ms.assetid: e236ac2e-24d7-45a4-aa88-b496c8d92764
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_TEXBLT structure"]
 ms.keywords: D3DDDIARG_TEXBLT, D3DDDIARG_TEXBLT structure [Display Devices], UMDisplayDriver_param_Structs_4a343a1e-c364-4261-9f86-e179e0fc2f7c.xml, _D3DDDIARG_TEXBLT, d3dumddi/D3DDDIARG_TEXBLT, display.d3dddiarg_texblt
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_TEXBLT
  - D3DDDIARG_TEXBLT
 ---
 
@@ -52,25 +52,25 @@ The D3DDDIARG_TEXBLT structure describes parameters for a texture bit-block tran
 
 ## -struct-fields
 
-### -field hDstResource
+### -field hDstResource [in]
 
-[in] A handle to the destination resource.
+A handle to the destination resource.
 
-### -field hSrcResource
+### -field hSrcResource [in]
 
-[in] A handle to the source resource.
+A handle to the source resource.
 
-### -field CubeMapFace
+### -field CubeMapFace [in]
 
-[in] The face of a cube map.
+The face of a cube map.
 
-### -field DstPoint
+### -field DstPoint [in]
 
-[in] A <a href="/windows/win32/api/windef/ns-windef-point">POINT</a> structure that describes the destination point where the source texture is copied.
+A <a href="/windows/win32/api/windef/ns-windef-point">POINT</a> structure that describes the destination point where the source texture is copied.
 
-### -field SrcRect
+### -field SrcRect [in]
 
-[in] A <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a> structure that describes the source texture to copy to the destination point.
+A <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a> structure that describes the source texture to copy to the destination point.
 
 ## -see-also
 
@@ -83,3 +83,4 @@ The D3DDDIARG_TEXBLT structure describes parameters for a texture bit-block tran
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_texblt">TexBlt</a>
+

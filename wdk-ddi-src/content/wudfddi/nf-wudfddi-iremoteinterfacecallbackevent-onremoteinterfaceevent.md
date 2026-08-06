@@ -4,7 +4,6 @@ title: IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent (wudfddi.h)
 description: A UMDF-based driver's OnRemoteInterfaceEvent event callback function handles device events that are associated with a device interface.
 old-location: wdf\iremoteinterfacecallbackevent_onremoteinterfaceevent.htm
 tech.root: wdf
-ms.assetid: 6cee6662-2eef-4caf-ab70-780748521ba9
 ms.date: 02/26/2018
 keywords: ["IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent"]
 ms.keywords: IRemoteInterfaceCallbackEvent interface,OnRemoteInterfaceEvent method, IRemoteInterfaceCallbackEvent.OnRemoteInterfaceEvent, IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent, OnRemoteInterfaceEvent, OnRemoteInterfaceEvent method, OnRemoteInterfaceEvent method,IRemoteInterfaceCallbackEvent interface, UMDFIoTargetObjectRef_4adfa540-b8f4-416f-b8c2-f0aec6e87619.xml, umdf.iremoteinterfacecallbackevent_onremoteinterfaceevent, wdf.iremoteinterfacecallbackevent_onremoteinterfaceevent, wudfddi/IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IRemoteInterfaceCallbackEvent.OnRemoteInterfaceEvent
+ - IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent
 ---
 
 # IRemoteInterfaceCallbackEvent::OnRemoteInterfaceEvent
@@ -52,29 +51,29 @@ A UMDF-based driver's <b>OnRemoteInterfaceEvent</b> event callback function hand
 
 ## -parameters
 
-### -param pWdfRemoteInterface 
+### -param pWdfRemoteInterface [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfremoteinterface">IWDFRemoteInterface</a> interface of a remote interface object that represents a device interface. The driver obtains this pointer when it calls <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice2-createremoteinterface">IWDFDevice2::CreateRemoteInterface</a>.
 
-### -param EventGuid 
+### -param EventGuid [in]
 
-[in]
-A GUID that identifies the event type. Event GUIDs are defined by the components that support such GUIDs. Some <a href="https://msdn.microsoft.com/C989D2D3-E8DE-4D64-86EE-3D3B3906390D">device interface classes</a> provide event GUIDs, and some driver provide custom events.
 
-### -param pbData 
+A GUID that identifies the event type. Event GUIDs are defined by the components that support such GUIDs. Some <a href="/windows-hardware/drivers/install/overview-of-device-interface-classes">device interface classes</a> provide event GUIDs, and some driver provide custom events.
 
-[in, optional]
+### -param pbData [in, optional]
+
+
 A pointer to a buffer that contains event-specific data. Typically, components that define event GUIDs also define event-specific structures for event buffers.
 
-### -param cbDataSize 
+### -param cbDataSize [in]
 
-[in]
+
 The size, in bytes, of the buffer that <i>pbData</i> points to.
 
-### -param NameBufferOffset 
+### -param NameBufferOffset [in]
 
-[in]
+
 An offset, in bytes, from the beginning of the buffer that <i>pbData</i> points to. Bytes from 0 to <i>NameBufferOffset</i>-1 of the buffer contain binary data. Bytes from <i>NameBufferOffset</i> to the end of the buffer contain Unicode string data.
 
 ## -remarks
@@ -96,3 +95,4 @@ For more information about a driver's <b>OnRemoteInterfaceEvent</b> event callba
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iremoteinterfacecallbackremoval-onremoteinterfaceremoval">IRemoteInterfaceCallbackRemoval::OnRemoteInterfaceRemoval</a>
+

@@ -3,14 +3,13 @@ UID: NF:d3dkmthk.D3DKMTUpdateOverlay
 title: D3DKMTUpdateOverlay function (d3dkmthk.h)
 description: The D3DKMTUpdateOverlay function modifies a kernel-mode overlay object.
 old-location: display\d3dkmtupdateoverlay.htm
-ms.assetid: bd8fc34a-60a3-4ae7-b13e-50d8b4342834
-ms.date: 05/10/2018
+ms.date: 03/02/2022
 keywords: ["D3DKMTUpdateOverlay function"]
 ms.keywords: D3DKMTUpdateOverlay, D3DKMTUpdateOverlay function [Display Devices], OpenGL_Functions_bddc75da-dc62-43cf-8ee7-ec9958198669.xml, d3dkmthk/D3DKMTUpdateOverlay, display.d3dkmtupdateoverlay
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -46,32 +45,29 @@ api_name:
 
 # D3DKMTUpdateOverlay function
 
-
 ## -description
 
-The <b>D3DKMTUpdateOverlay</b> function modifies a kernel-mode overlay object.
+The **D3DKMTUpdateOverlay** function modifies a kernel-mode overlay object.
 
 ## -parameters
 
-### -param D3DKMT_UPDATEOVERLAY
+### -param unnamedParam1 [in]
 
-*pData* [in]
-
-A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_updateoverlay">D3DKMT_UPDATEOVERLAY</a> structure that describes how to modify the overlay.
+A pointer to a [D3DKMT_UPDATEOVERLAY](ns-d3dkmthk-_d3dkmt_updateoverlay.md) structure that describes how to modify the overlay.
 
 ## -returns
 
-<b>D3DKMTUpdateOverlay</b> returns one of the following values:
+**D3DKMTUpdateOverlay** returns one of the following values:
 
-| **Return code** | **Description** | 
-|:--|:--|
-| **STATUS_SUCCESS** | The kernel-mode overlay object was successfully modified. | 
-| **STATUS_DEVICE_REMOVED** | The graphics adapter was stopped or the display device was reset. | 
-| **STATUS_INVALID_PARAMETER** | Parameters were validated and determined to be incorrect. | 
-| **STATUS_NO_MEMORY** | [D3DKMTUpdateOverlay]()  could not complete because of insufficient memory. | 
+| Return code | Description |
+|--|--|
+| STATUS_SUCCESS | The kernel-mode overlay object was successfully modified. |
+| STATUS_DEVICE_REMOVED | The graphics adapter was stopped or the display device was reset. |
+| STATUS_INVALID_PARAMETER | Parameters were validated and determined to be incorrect. |
+| STATUS_NO_MEMORY | **D3DKMTUpdateOverlay** could not complete because of insufficient memory. |
 
-This function might also return other NTSTATUS values.
+This function might also return other **NTSTATUS** values.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_updateoverlay">D3DKMT_UPDATEOVERLAY</a>
+[D3DKMT_UPDATEOVERLAY](ns-d3dkmthk-_d3dkmt_updateoverlay.md)

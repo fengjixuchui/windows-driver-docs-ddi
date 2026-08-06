@@ -2,7 +2,6 @@
 UID: NS:d3dkmthk._D3DKMT_SETSTABLEPOWERSTATE
 title: _D3DKMT_SETSTABLEPOWERSTATE (d3dkmthk.h)
 description: Used to set stable power state.
-ms.assetid: e636281e-c287-4ddc-b304-6edc4be92d8c
 ms.date: 10/19/2018
 keywords: ["D3DKMT_SETSTABLEPOWERSTATE structure"]
 ms.keywords: _D3DKMT_SETSTABLEPOWERSTATE, D3DKMT_SETSTABLEPOWERSTATE,
@@ -35,6 +34,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_SETSTABLEPOWERSTATE
+ - D3DKMT_SETSTABLEPOWERSTATE
 dev_langs:
  - c++
 ---
@@ -48,14 +48,14 @@ Used to set stable power state.
 
 ## -struct-fields
 
-### -field hAdapter
+### -field hAdapter [in]
 
-[in] The adapter to enable or disable stable power for.
+The adapter to enable or disable stable power for.
 
-### -field Enabled
+### -field Enabled [in]
 
  
-[in] Indicates whether or not stable power is being requested on or off.
+Indicates whether or not stable power is being requested on or off.
 
 ## -remarks
 

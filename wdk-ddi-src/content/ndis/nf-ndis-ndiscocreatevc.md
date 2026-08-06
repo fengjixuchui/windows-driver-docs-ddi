@@ -4,7 +4,6 @@ title: NdisCoCreateVc function (ndis.h)
 description: NdisCoCreateVc sets up a connection endpoint from which a client can make outgoing calls or on which a stand-alone call manager can dispatch incoming calls.
 old-location: netvista\ndiscocreatevc.htm
 tech.root: netvista
-ms.assetid: ae9175e5-c1fc-44ae-a7c9-921ac8483e33
 ms.date: 05/02/2018
 keywords: ["NdisCoCreateVc function"]
 ms.keywords: NdisCoCreateVc, NdisCoCreateVc function [Network Drivers Starting with Windows Vista], condis_protocol_ref_6b168c4f-016d-4fa8-911a-d89fd9de2829.xml, ndis/NdisCoCreateVc, netvista.ndiscocreatevc
@@ -52,16 +51,16 @@ api_name:
 
 ## -parameters
 
-### -param NdisBindingHandle 
+### -param NdisBindingHandle [in]
 
-[in]
+
 Specifies the handle returned by 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a> that identifies the
      target NIC or virtual adapter of the next-lower driver to which the caller is bound.
 
-### -param NdisAfHandle 
+### -param NdisAfHandle [in, optional]
 
-[in, optional]
+
 Specifies the handle returned by 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclopenaddressfamilyex">NdisClOpenAddressFamilyEx</a> if
      the caller is a client. A call manager sets this parameter to <b>NULL</b> if it is creating a VC for itself,
@@ -71,17 +70,17 @@ Specifies the handle returned by
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_reg_sap">
      ProtocolCmRegisterSap</a> function.
 
-### -param ProtocolVcContext 
+### -param ProtocolVcContext [in]
 
-[in]
+
 Specifies the handle to a caller-supplied resident context area in which the caller maintains
      state for this VC. NDIS passes this handle back to the VC creator in all subsequent calls concerning
      this endpoint if the call to 
      <b>NdisCoCreateVc</b> succeeds.
 
-### -param NdisVcHandle 
+### -param NdisVcHandle [in, out]
 
-[in, out]
+
 Pointer to a caller-supplied variable that must be initialized to <b>NULL</b> when 
      <b>NdisCoCreateVc</b> is called. On return from a successful call, this points to a variable that NDIS
      has set to its handle for the newly created VC. The caller must save this handle for subsequent calls to

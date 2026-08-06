@@ -1,9 +1,8 @@
 ---
 UID: NC:d3dkmthk.PFND3DKMT_OPENKEYEDMUTEX2
 title: PFND3DKMT_OPENKEYEDMUTEX2 (d3dkmthk.h)
-description: Opens a keyed mutex object that includes private data.
+description: The PFND3DKMT_OPENKEYEDMUTEX2 callback opens a keyed mutex object that includes private data. The function returns STATUS_SUCCESS if the object was opened.
 old-location: display\d3dkmtopenkeyedmutex2.htm
-ms.assetid: 33140445-e312-4495-990a-033a87598fa1
 ms.date: 05/10/2018
 keywords: ["PFND3DKMT_OPENKEYEDMUTEX2 callback function"]
 ms.keywords: D3DKMTOpenKeyedMutex2, D3DKMTOpenKeyedMutex2 callback function [Display Devices], PFND3DKMT_OPENKEYEDMUTEX2, PFND3DKMT_OPENKEYEDMUTEX2 callback, d3dkmthk/D3DKMTOpenKeyedMutex2, display.d3dkmtopenkeyedmutex2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
- - D3DKMTOpenKeyedMutex2
+ - PFND3DKMT_OPENKEYEDMUTEX2
 ---
 
 # PFND3DKMT_OPENKEYEDMUTEX2 callback function
@@ -50,11 +49,11 @@ Opens a keyed mutex object that includes private data.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in, out]
 
 *pData* 
 
-[in, out] A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_openkeyedmutex2">D3DKMT_OPENKEYEDMUTEX2</a> structure that describes a keyed mutex object that includes private data.
+A pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_openkeyedmutex2">D3DKMT_OPENKEYEDMUTEX2</a> structure that describes a keyed mutex object that includes private data.
 
 ## -returns
 
@@ -80,3 +79,4 @@ This function might also return other NTSTATUS values.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_openkeyedmutex2">D3DKMT_OPENKEYEDMUTEX2</a>
+

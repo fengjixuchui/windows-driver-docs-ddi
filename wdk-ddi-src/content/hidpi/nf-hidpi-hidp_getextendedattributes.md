@@ -4,7 +4,6 @@ title: HidP_GetExtendedAttributes function (hidpi.h)
 description: The HidP_GetExtendedAttributes routine returns the extended attributes of a HID control.
 old-location: hid\hidp_getextendedattributes.htm
 tech.root: hid
-ms.assetid: 97a8822f-ed0c-43ae-8b4e-08642558773d
 ms.date: 04/30/2018
 keywords: ["HidP_GetExtendedAttributes function"]
 ms.keywords: HidP_GetExtendedAttributes, HidP_GetExtendedAttributes routine [Human Input Devices], hid.hidp_getextendedattributes, hidfunc_2870ef44-8659-4c02-9fc6-659581684253.xml, hidpi/HidP_GetExtendedAttributes
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Hidparse.lib
 req.dll: 
-req.irql: <= DISPATCH_ LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,29 +50,29 @@ The <b>HidP_GetExtendedAttributes</b> routine returns the extended attributes of
 
 ## -parameters
 
-### -param ReportType 
+### -param ReportType [in]
 
-[in]
+
 Specifies a <a href="/windows-hardware/drivers/ddi/hidpi/ne-hidpi-_hidp_report_type">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of HID report associated with the HID control specified by <i>DataIndex</i>.
 
-### -param DataIndex 
+### -param DataIndex [in]
 
-[in]
+
 Specifies the <a href="/windows-hardware/drivers/hid/data-indices">data index</a> of the HID control.
 
-### -param PreparsedData 
+### -param PreparsedData [in]
 
-[in]
+
 Specifies the <a href="/windows-hardware/drivers/hid/preparsed-data">preparsed data</a> for the <a href="/windows-hardware/drivers/hid/top-level-collections">top-level collection</a> that contains the specified control.
 
-### -param Attributes 
+### -param Attributes [out]
 
-[out]
+
 Pointer to a caller-allocated buffer that the routine uses to return the extended attributes of the control specified by <i>DataIndex</i>.
 
-### -param LengthAttributes 
+### -param LengthAttributes [in, out]
 
-[in, out]
+
 Specifies the size, in bytes, of the <i>Attributes</i> buffer (which must be greater than or equal to sizeof(HIDP_EXTENDED_ATTRIBUTES).
 
 ## -returns

@@ -4,7 +4,6 @@ title: PFND3DDDI_ISSUEQUERY (d3dumddi.h)
 description: The IssueQuery function processes a query.
 old-location: display\issuequery.htm
 tech.root: display
-ms.assetid: e31b2b6a-3721-472a-8044-6516a8419ad3
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_ISSUEQUERY callback function"]
 ms.keywords: IssueQuery, IssueQuery callback function [Display Devices], PFND3DDDI_ISSUEQUERY, PFND3DDDI_ISSUEQUERY callback, UserModeDisplayDriver_Functions_59755967-2a97-4c5c-9210-c4e85cdcdd38.xml, d3dumddi/IssueQuery, display.issuequery
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - IssueQuery
-product:
- - Windows
+ - PFND3DDDI_ISSUEQUERY
 ---
 
 # PFND3DDDI_ISSUEQUERY callback function
@@ -56,7 +53,7 @@ The <i>IssueQuery</i> function processes a query.
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
@@ -96,3 +93,4 @@ If the call to <i>IssueQuery</i> requires the driver to return data, the driver 
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_rendercb">pfnRenderCb</a>
+

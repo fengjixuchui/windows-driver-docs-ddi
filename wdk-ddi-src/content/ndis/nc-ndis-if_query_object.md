@@ -4,7 +4,6 @@ title: IF_QUERY_OBJECT (ndis.h)
 description: The ProviderQueryObject function retrieves information about a network interface.
 old-location: netvista\providerqueryobject.htm
 tech.root: netvista
-ms.assetid: dea90ff0-7620-4364-90dc-2dc5d2e34ce1
 ms.date: 05/02/2018
 ms.keywords: IFP_QUERY_OBJECT, IFP_QUERY_OBJECT callback function
 req.header: ndis.h
@@ -37,9 +36,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - IFP_QUERY_OBJECT
-product:
- - Windows
+ - IF_QUERY_OBJECT
 ---
 
 # IF_QUERY_OBJECT callback function
@@ -52,31 +49,31 @@ The
 
 ## -parameters
 
-### -param ProviderIfContext 
+### -param ProviderIfContext [in]
 
-[in]
+
 A handle that identifies the interface provider's context area for the interface. The interface
      provider passed this handle to NDIS in a call to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisifregisterinterface">
      NdisIfRegisterInterface</a> function.
 
-### -param ObjectId 
+### -param ObjectId [in]
 
-[in]
+
 An identifier for the object that is the target of the query request. For a list of object
      identifiers (OIDs) that apply to interface providers, see 
      <a href="/windows-hardware/drivers/network/mapping-of-ndis-network-interfaces-to-ndis-oids">NDIS Network Interface
      OIDs</a>.
 
-### -param pOutputBufferLength 
+### -param pOutputBufferLength [in, out]
 
-[in, out]
+
 A pointer to an NDIS-supplied variable in which NDIS provides the length of the output buffer. 
      <i>ProviderQueryObject</i> writes the length of the data that it put in the output buffer.
 
-### -param pOutputBuffer 
+### -param pOutputBuffer [out]
 
-[out]
+
 A pointer to an NDIS-supplied output buffer in which 
      <i>ProviderQueryObject</i> writes the response to the query request.
 
@@ -149,3 +146,4 @@ NDIS calls
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisifregisterinterface">NdisIfRegisterInterface</a>
+

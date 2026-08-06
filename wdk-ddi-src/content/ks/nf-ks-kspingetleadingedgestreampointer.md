@@ -4,7 +4,6 @@ title: KsPinGetLeadingEdgeStreamPointer function (ks.h)
 description: The KsPinGetLeadingEdgeStreamPointer function acquires the leading edge stream pointer for the queue associated with the given pin.
 old-location: stream\kspingetleadingedgestreampointer.htm
 tech.root: stream
-ms.assetid: 05615730-dbeb-496a-b4a8-a16830b31586
 ms.date: 04/23/2018
 keywords: ["KsPinGetLeadingEdgeStreamPointer function"]
 ms.keywords: KsPinGetLeadingEdgeStreamPointer, KsPinGetLeadingEdgeStreamPointer function [Streaming Media Devices], avfunc_0eb1faec-c090-4647-8306-84cff42ddf9c.xml, ks/KsPinGetLeadingEdgeStreamPointer, stream.kspingetleadingedgestreampointer
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ks.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,14 +50,14 @@ The<b> KsPinGetLeadingEdgeStreamPointer</b> function acquires the leading edge s
 
 ## -parameters
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a> structure owning the queue for which the leading edge stream pointer should be acquired.
 
-### -param State 
+### -param State [in]
 
-[in]
+
 This parameter specifies how to acquire the leading edge stream pointer. Can be one of the following:
 
 

@@ -1,9 +1,8 @@
 ---
-UID: NE:uart.__unnamed_enum_0
+UID: NE:uart.UART_STATUS
 title: UART_STATUS (uart.h)
 description: Defines values for the status of a UART operation.
-tech.root: serports
-ms.assetid: 96750920-c761-499b-8ee9-39465e031d07
+tech.root: uart
 ms.date: 10/19/2018
 keywords: ["UART_STATUS enumeration"]
 ms.keywords: UART_STATUS, UART_STATUS, *PUART_STATUS,
@@ -30,6 +29,7 @@ api_type:
 api_location:
  - uart.h
 api_name:
+ - PUART_STATUS
  - UART_STATUS
 ---
 
@@ -62,3 +62,4 @@ The device is not ready.
 
 ## -see-also
 
+[**uart.h**](index.md)

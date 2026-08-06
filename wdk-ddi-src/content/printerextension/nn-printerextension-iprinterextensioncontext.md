@@ -2,17 +2,15 @@
 UID: NN:printerextension.IPrinterExtensionContext
 title: IPrinterExtensionContext (printerextension.h)
 description: Represents the context for the activation of a UWP device app for printers.
-old-location: print\iprinterextensioncontext_interface.htm
 tech.root: print
-ms.assetid: DD0B5E6F-8E16-48E1-967B-D188535E1320
-ms.date: 04/20/2018
+ms.date: 08/04/2022
 keywords: ["IPrinterExtensionContext interface"]
 ms.keywords: IPrinterExtensionContext, IPrinterExtensionContext interface [Print Devices], IPrinterExtensionContext interface [Print Devices],described, print.iprinterextensioncontext_interface, printerextension/IPrinterExtensionContext
 req.header: printerextension.h
-req.include-header: 
+req.include-header: Printerextension.h
 req.target-type: Windows
-req.target-min-winverclnt: Windows 8
-req.target-min-winversvr: Windows Server 2012
+req.target-min-winverclnt: Windows 8
+req.target-min-winversvr: Windows Server 2012
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 
@@ -41,29 +39,18 @@ api_name:
  - IPrinterExtensionContext
 ---
 
-# IPrinterExtensionContext interface
-
-
 ## -description
 
 Represents the context for the activation of a UWP device app for printers.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprinterextensioncontextcollection">IPrinterExtensionContextCollection</a>
+[IPrinterExtensionContextCollection](./nn-printerextension-iprinterextensioncontextcollection.md)
 
+[IPrinterExtensionContextCollection::Count](./nf-printerextension-iprinterextensioncontextcollection-get_count.md)
 
+[IPrinterExtensionContextCollection::GetAt](./nf-printerextension-iprinterextensioncontextcollection-getat.md)
 
-<a href="/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterextensioncontextcollection-get_count">IPrinterExtensionContextCollection::Count</a>
+[IPrinterExtensionEvent::OnPrinterQueuesEnumerated](./nf-printerextension-iprinterextensionevent-onprinterqueuesenumerated.md)
 
-
-
-<a href="/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterextensioncontextcollection-getat">IPrinterExtensionContextCollection::GetAt</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/printerextension/nf-printerextension-iprinterextensionevent-onprinterqueuesenumerated">IPrinterExtensionEvent::OnPrinterQueuesEnumerated</a>
-
-
-
-<a href="/windows-hardware/drivers/print/v4-driver-property-bags">V4 Printer Driver Property Bags</a>
+[V4 Printer Driver Property Bags](/windows-hardware/drivers/print/v4-driver-property-bags)

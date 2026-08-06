@@ -4,7 +4,6 @@ title: IWDFIoRequest::MarkCancelable (wudfddi.h)
 description: The MarkCancelable method enables the canceling of the I/O request.
 old-location: wdf\iwdfiorequest_markcancelable.htm
 tech.root: wdf
-ms.assetid: 73e323a4-d40e-4414-92b7-310bfb0f6457
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequest::MarkCancelable"]
 ms.keywords: IWDFIoRequest interface,MarkCancelable method, IWDFIoRequest.MarkCancelable, IWDFIoRequest::MarkCancelable, MarkCancelable, MarkCancelable method, MarkCancelable method,IWDFIoRequest interface, UMDFRequestObjectRef_c1304e95-724d-4ced-abc2-801b1606f43b.xml, umdf.iwdfiorequest_markcancelable, wdf.iwdfiorequest_markcancelable, wudfddi/IWDFIoRequest::MarkCancelable
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequest.MarkCancelable
+ - IWDFIoRequest::MarkCancelable
 ---
 
 # IWDFIoRequest::MarkCancelable
@@ -52,9 +51,9 @@ The <b>MarkCancelable</b> method enables the canceling of the I/O request.
 
 ## -parameters
 
-### -param pCancelCallback 
+### -param pCancelCallback [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-irequestcallbackcancel">IRequestCallbackCancel</a> interface whose method the framework calls after the I/O request is canceled.
 
 ## -remarks
@@ -103,7 +102,6 @@ The following code example sets up a request so that the framework can cancel it
     pWdfRequest->MarkCancelable(cancelCallback);
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iqueuecallbackdeviceiocontrol-ondeviceiocontrol">IQueueCallbackDeviceIoControl::OnDeviceIoControl</a>
@@ -139,3 +137,4 @@ The following code example sets up a request so that the framework can cancel it
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfiorequest-unmarkcancelable">IWDFIoRequest::UnmarkCancelable</a>
+

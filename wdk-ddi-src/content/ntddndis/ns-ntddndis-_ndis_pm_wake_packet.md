@@ -4,7 +4,6 @@ title: _NDIS_PM_WAKE_PACKET (ntddndis.h)
 description: The NDIS_PM_WAKE_PACKET structure describes a network packet (known as a wake packet) that caused the network adapter to generate a wake-up event.
 old-location: netvista\ndis_pm_wake_packet.htm
 tech.root: netvista
-ms.assetid: b3d7adcf-79cd-42f4-ada2-c57de6310020
 ms.date: 05/02/2018
 keywords: ["NDIS_PM_WAKE_PACKET structure"]
 ms.keywords: "*PNDIS_PM_WAKE_PACKET, NDIS_PM_WAKE_PACKET, NDIS_PM_WAKE_PACKET structure [Network Drivers Starting with Windows Vista], PNDIS_PM_WAKE_PACKET, PNDIS_PM_WAKE_PACKET structure pointer [Network Drivers Starting with Windows Vista], _NDIS_PM_WAKE_PACKET, netvista.ndis_pm_wake_packet, ntddndis/NDIS_PM_WAKE_PACKET, ntddndis/PNDIS_PM_WAKE_PACKET"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_PM_WAKE_PACKET
+ - PNDIS_PM_WAKE_PACKET
  - NDIS_PM_WAKE_PACKET
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_PM_WAKE_PACKET</b> structure describes a network packet (known as a 
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_PM_WAKE_PACKET</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_PM_WAKE_PACKET</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_PM_WAKE_PACKET</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
 
@@ -117,7 +118,7 @@ The <b>NDIS_PM_WAKE_PACKET</b> structure is used in the <a href="/windows-hardwa
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -134,3 +135,4 @@ The <b>NDIS_PM_WAKE_PACKET</b> structure is used in the <a href="/windows-hardwa
 
 
 <a href="/windows-hardware/drivers/network/oid-pm-add-wol-pattern">OID_PM_ADD_WOL_PATTERN</a>
+

@@ -4,7 +4,6 @@ title: KeInitializeTimerEx function (wdm.h)
 description: The KeInitializeTimerEx routine initializes an extended kernel timer object.
 old-location: kernel\keinitializetimerex.htm
 tech.root: kernel
-ms.assetid: 57ed4f33-6ce6-41ae-b424-147318ba7656
 ms.date: 04/30/2018
 keywords: ["KeInitializeTimerEx function"]
 ms.keywords: KeInitializeTimerEx, KeInitializeTimerEx routine [Kernel-Mode Driver Architecture], k105_62ca8d08-a87a-4cbd-80fa-18b646b8500d.xml, kernel.keinitializetimerex, wdm/KeInitializeTimerEx
@@ -50,14 +49,14 @@ The <b>KeInitializeTimerEx</b> routine initializes an extended kernel timer obje
 
 ## -parameters
 
-### -param Timer 
+### -param Timer [out]
 
-[out]
+
 Pointer to a timer object, for which the caller provides the storage.
 
-### -param Type 
+### -param Type [in]
 
-[in]
+
 Specifies the type of the timer object, either <b>NotificationTimer</b> or <b>SynchronizationTimer</b>.
 
 ## -remarks

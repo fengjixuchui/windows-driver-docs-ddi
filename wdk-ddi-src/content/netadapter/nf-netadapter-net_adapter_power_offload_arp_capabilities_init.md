@@ -3,8 +3,7 @@ UID: NF:netadapter.NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES_INIT
 title: NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES_INIT function (netadapter.h)
 description: The NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES_INIT function initializes a NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES structure.
 tech.root: netvista
-ms.assetid: c7a01b5d-7ad6-498e-bd6a-0d66eb9bd220
-ms.date: 10/22/2019
+ms.date: 03/30/2022
 keywords: ["NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES_INIT function"]
 ms.keywords: NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES_INIT
 req.header: netadapter.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -37,8 +36,6 @@ api_location:
  - netadapter.h
 api_name:
  - NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES_INIT
-product:
- - Windows
 ---
 
 # NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES_INIT function
@@ -50,17 +47,14 @@ The **NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES_INIT** function initializes a [
 
 ## -parameters
 
-### -param Capabilities
+### -param Capabilities [_Out_]
 
 A pointer to a client driver-allocated [**NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES**](../netadapter/ns-netadapter-_net_adapter_power_offload_arp_capabilities.md) structure.
 
-### -param MaximumOffloadCount
+### -param MaximumOffloadCount [_In_]
 
 The maximum number of ARP protocol offloads that the hardware supports.
 
-## -returns
-
-This function does not return a value.
 
 ## -remarks
 

@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_MAKERESIDENT
 title: PFND3DKMT_MAKERESIDENT (d3dkmthk.h)
 description: Pfnd3dkmtMakeresident adds a resource to the device residency list and increment the residency reference count on this allocation.
-ms.assetid: bbcacf12-0a1c-4945-b315-ff7024933ed3
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_MAKERESIDENT callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ Pfnd3dkmtMakeresident adds a resource to the device residency list and increment
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DDDI_MAKERESIDENT](../d3dukmdt/ns-d3dukmdt-d3dddi_makeresident.md) structure.
 

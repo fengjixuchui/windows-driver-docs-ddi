@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbolGroup.GetNumberSymbols
 title: IDebugSymbolGroup::GetNumberSymbols (dbgeng.h)
-description: The GetNumberSymbols method returns the number of symbols that are contained in a symbol group.
+description: The GetNumberSymbols method returns the number of symbols that are contained in a symbol group. This method belongs to the IDebugSymbolGroup interface.
 old-location: debugger\getnumbersymbols.htm
 tech.root: debugger
-ms.assetid: 5a202530-7146-472d-9560-580871cd56ec
 ms.date: 05/03/2018
 keywords: ["IDebugSymbolGroup::GetNumberSymbols"]
 ms.keywords: ComOther_e355317f-ba58-4d2a-a8f7-ad3cf4b17607.xml, GetNumberSymbols, GetNumberSymbols method [Windows Debugging], GetNumberSymbols method [Windows Debugging],IDebugSymbolGroup interface, GetNumberSymbols method [Windows Debugging],IDebugSymbolGroup2 interface, IDebugSymbolGroup interface [Windows Debugging],GetNumberSymbols method, IDebugSymbolGroup.GetNumberSymbols, IDebugSymbolGroup2 interface [Windows Debugging],GetNumberSymbols method, IDebugSymbolGroup2::GetNumberSymbols, IDebugSymbolGroup::GetNumberSymbols, dbgeng/IDebugSymbolGroup2::GetNumberSymbols, dbgeng/IDebugSymbolGroup::GetNumberSymbols, debugger.getnumbersymbols
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbolGroup.GetNumberSymbols
- - IDebugSymbolGroup2.GetNumberSymbols
+ - IDebugSymbolGroup::GetNumberSymbols
 ---
 
 # IDebugSymbolGroup::GetNumberSymbols
@@ -51,9 +49,9 @@ The <b>GetNumberSymbols</b> method returns the number of <a href="/windows-hardw
 
 ## -parameters
 
-### -param Number 
+### -param Number [out]
 
-[out]
+
 The number of symbols that are contained in this symbol group.
 
 ## -returns
@@ -84,3 +82,4 @@ This method can also return error values.  For more information, see <a href="/w
 Each symbol in a symbol group is identified by an <i>index</i>.  This index is a number between zero and the number that is returned to <i>Number</i> minus one.  Every time that a symbol is added or removed from the symbol group, the index of all of the symbols in the group might change.
 
 For more information about symbol groups, see <a href="/windows-hardware/drivers/debugger/scopes-and-symbol-groups">Scopes and Symbol Groups</a>.
+

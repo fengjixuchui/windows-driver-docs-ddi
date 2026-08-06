@@ -1,9 +1,8 @@
 ---
-UID: NE:systemrng.__unnamed_enum_0
+UID: NE:systemrng.ENTROPY_SOURCE_TYPE
 title: ENTROPY_SOURCE_TYPE (systemrng.h)
-description: 
-ms.assetid: c6c13e86-2973-4294-a531-aec524a07598
-ms.date: 10/19/2018
+description: "Learn more about: ENTROPY_SOURCE_TYPE enumeration"
+ms.date: 11/19/2020
 keywords: ["ENTROPY_SOURCE_TYPE enumeration"]
 ms.keywords: ENTROPY_SOURCE_TYPE, ENTROPY_SOURCE_TYPE,
 req.header: systemrng.h
@@ -18,6 +17,7 @@ req.max-support:
 req.typenames: ENTROPY_SOURCE_TYPE
 targetos: Windows
 ms.custom: RS5
+tech.root: treedrv
 f1_keywords:
  - ENTROPY_SOURCE_TYPE
  - systemrng/ENTROPY_SOURCE_TYPE
@@ -38,11 +38,11 @@ api_name:
 
 ## -enum-fields
 
-### -field ENTROPY_SOURCE_TYPE_HIGH_PUSH 
+### -field ENTROPY_SOURCE_TYPE_HIGH_PUSH
 
-### -field ENTROPY_SOURCE_TYPE_LOW_PUSH 
+### -field ENTROPY_SOURCE_TYPE_LOW_PUSH
 
-### -field ENTROPY_SOURCE_TYPE_HIGH_PULL 
+### -field ENTROPY_SOURCE_TYPE_HIGH_PULL
 
 ## -remarks
 

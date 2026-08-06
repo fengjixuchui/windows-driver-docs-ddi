@@ -4,7 +4,6 @@ title: tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER (ksmedia.h)
 description: This structure contains the header information for ROI capabilities.
 old-location: stream\kscamera_extendedprop_roi_configcapsheader.htm
 tech.root: stream
-ms.assetid: E915BF71-F29C-440B-9A56-50389AA8A9CF
 ms.date: 04/23/2018
 keywords: ["tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER structure"]
 ms.keywords: "*PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER, KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER, KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER structure [Streaming Media Devices], PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER, PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER structure pointer [Streaming Media Devices], ksmedia/KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER, ksmedia/PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER, stream.kscamera_extendedprop_roi_configcapsheader, tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ksmedia.h
 api_name:
+ - tagKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER
+ - PKSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER
  - KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPSHEADER
 ---
 
@@ -65,3 +66,4 @@ Contains the number of <b>KSCAMERA_EXTENDEDPROP_ROI_CONFIGCAPS</b> structures th
 ### -field Reserved
 
 Reserved for future use.
+

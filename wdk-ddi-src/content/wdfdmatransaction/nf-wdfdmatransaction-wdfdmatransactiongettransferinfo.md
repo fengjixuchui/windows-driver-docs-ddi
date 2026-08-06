@@ -4,7 +4,6 @@ title: WdfDmaTransactionGetTransferInfo function (wdfdmatransaction.h)
 description: The WdfDmaTransactionGetTransferInfo method returns the number of map registers and scatter/gather list entries required for an initialized DMA transaction.
 old-location: wdf\wdfdmatransactiongettransferinfo.htm
 tech.root: wdf
-ms.assetid: 9EE04529-D322-4498-B802-BB6A53FBC716
 ms.date: 02/26/2018
 keywords: ["WdfDmaTransactionGetTransferInfo function"]
 ms.keywords: WdfDmaTransactionGetTransferInfo, WdfDmaTransactionGetTransferInfo method, kmdf.wdfdmatransactiongettransferinfo, wdf.wdfdmatransactiongettransferinfo, wdfdmatransaction/WdfDmaTransactionGetTransferInfo
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,19 +52,19 @@ The <b>WdfDmaTransactionGetTransferInfo</b> method returns the number of map reg
 
 ## -parameters
 
-### -param DmaTransaction 
+### -param DmaTransaction [in]
 
-[in]
+
 A handle to an initialized DMA transaction object.
 
-### -param MapRegisterCount 
+### -param MapRegisterCount [out, optional]
 
-[out, optional]
+
 A caller-supplied location that, on return, contains the number of map registers required for the specified transaction. This parameter is optional and can be NULL.
 
-### -param ScatterGatherElementCount 
+### -param ScatterGatherElementCount [out, optional]
 
-[out, optional]
+
 A caller-supplied location that, on return, contains the number of scatter/gather elements required for the specified transaction. This parameter is optional and can be NULL.
 
 ## -remarks

@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILUICCRECORDSTATUS
 title: RILUICCRECORDSTATUS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILUICCRECORDSTATUS structure for internal use only. Don't use this structure in your code."
 old-location: netvista\riluiccrecordstatus_2.htm
 tech.root: netvista
-ms.assetid: 5f6ff5b1-cd13-4bf6-b4ef-e9b6f4fd54e0
 ms.date: 02/26/2018
 keywords: ["RILUICCRECORDSTATUS structure"]
 ms.keywords: "*LPRILUICCRECORDSTATUS, RILUICCRECORDSTATUS, RILUICCRECORDSTATUS structure [Network Drivers Starting with Windows Vista], netvista.riluiccrecordstatus_2, rilapitypes/RILUICCRECORDSTATUS"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: RILUICCRECORDSTATUS, *LPRILUICCRECORDSTATUS
-req.product: Windows 10 or later.
 f1_keywords:
  - RILUICCRECORDSTATUS
  - rilapitypes/RILUICCRECORDSTATUS
@@ -42,6 +40,7 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILUICCRECORDSTATUS
+ - LPRILUICCRECORDSTATUS
 ---
 
 # RILUICCRECORDSTATUS structure (rilapitypes.h)

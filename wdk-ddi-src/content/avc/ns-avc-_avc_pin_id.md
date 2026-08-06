@@ -4,7 +4,6 @@ title: _AVC_PIN_ID (avc.h)
 description: The AVC_PIN_ID structure describes a pin on a subunit.
 old-location: stream\avc_pin_id.htm
 tech.root: stream
-ms.assetid: 0341b1c4-a050-45f4-b9fc-b28b6a8af75d
 ms.date: 04/23/2018
 keywords: ["AVC_PIN_ID structure"]
 ms.keywords: "*PAVC_PIN_ID, AVC_PIN_ID, AVC_PIN_ID structure [Streaming Media Devices], PAVC_PIN_ID, PAVC_PIN_ID structure pointer [Streaming Media Devices], _AVC_PIN_ID, avc/AVC_PIN_ID, avc/PAVC_PIN_ID, avcref_28e8a7a5-a90b-4e1b-ad4c-1a1ccbc405c5.xml, stream.avc_pin_id"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - avc.h
 api_name:
+ - _AVC_PIN_ID
+ - PAVC_PIN_ID
  - AVC_PIN_ID
 ---
 
@@ -85,3 +86,4 @@ See <a href="/windows-hardware/drivers/stream/using-avc-sys">How to Use Avc.sys<
 
 
 <a href="/windows-hardware/drivers/ddi/avc/ns-avc-_avc_multifunc_irb">AVC_MULTIFUNC_IRB</a>
+

@@ -4,7 +4,6 @@ title: EVT_NFC_CX_DEVICE_IO_CONTROL (nfccx.h)
 description: Called by the NFC CX to send an unhandled IOCTL to the client driver.
 old-location: nfpdrivers\evtnfccxdeviceiocontrol_.htm
 tech.root: nfpdrivers
-ms.assetid: 45512F88-D4B8-4488-99EB-B47EE7443425
 ms.date: 02/15/2018
 keywords: ["EVT_NFC_CX_DEVICE_IO_CONTROL callback function"]
 ms.keywords: EVT_NFC_CX_DEVICE_IO_CONTROL, EVT_NFC_CX_DEVICE_IO_CONTROL callback, EvtNfcCxDeviceIoControl, EvtNfcCxDeviceIoControl callback function [Near-Field Proximity Drivers], nfccx/EvtNfcCxDeviceIoControl, nfpdrivers.evtnfccxdeviceiocontrol_
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - nfccx.h
 api_name:
- - EvtNfcCxDeviceIoControl
+ - EVT_NFC_CX_DEVICE_IO_CONTROL
 ---
 
 # EVT_NFC_CX_DEVICE_IO_CONTROL callback function
@@ -50,29 +49,29 @@ Called by the NFC CX to send an unhandled IOCTL to the client driver.
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
-### -param OutputBufferLength 
+### -param OutputBufferLength [in]
 
-[in]
+
 The length, in bytes, of the request's output buffer, if an output buffer is available.
 
-### -param InputBufferLength 
+### -param InputBufferLength [in]
 
-[in]
+
 The length, in bytes, of the request's input buffer, if an input buffer is available.
 
-### -param IoControlCode 
+### -param IoControlCode [in]
 
-[in]
+
 The driver-defined or system-defined I/O control code (<a href="/windows-hardware/drivers/ddi/wdbgexts/nc-wdbgexts-pwindbg_ioctl_routine">IOCTL</a>) that is associated with the request.
 
 ## -remarks
@@ -86,3 +85,4 @@ The client can complete the request either synchronously or asynchronously. The 
 
 
 <a href="/windows-hardware/drivers/nfc/">Near field communication (NFC) design guide</a>
+

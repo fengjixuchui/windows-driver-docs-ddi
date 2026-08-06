@@ -1,15 +1,13 @@
 ---
-UID: NS:gnssdriver.__unnamed_struct_2
+UID: NS:gnssdriver.GNSS_DEVICE_CAPABILITY
 title: GNSS_DEVICE_CAPABILITY (gnssdriver.h)
-description: This structure is used to determine the device capabilities of the underlying GNSS engine.
-old-location: gnss\gnss_device_capability.htm
+description: The GNSS_DEVICE_CAPABILITY structure is used to determine the device capabilities of the underlying GNSS engine.
 tech.root: gnss
-ms.assetid: F8FA91AC-9085-4C25-8798-CEB9ADB34320
-ms.date: 02/15/2018
+ms.date: 06/20/2022
 keywords: ["GNSS_DEVICE_CAPABILITY structure"]
 ms.keywords: "*PGNSS_DEVICE_CAPABILITY, GNSS_DEVICE_CAPABILITY, GNSS_DEVICE_CAPABILITY structure [Sensor Devices], PGNSS_DEVICE_CAPABILITY, PGNSS_DEVICE_CAPABILITY structure pointer [Sensor Devices], gnss.gnss_device_capability, gnssdriver/GNSS_DEVICE_CAPABILITY, gnssdriver/PGNSS_DEVICE_CAPABILITY"
 req.header: gnssdriver.h
-req.include-header: 
+req.include-header: Gnssdriver.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -40,15 +38,13 @@ api_type:
 api_location:
  - gnssdriver.h
 api_name:
+ - PGNSS_DEVICE_CAPABILITY
  - GNSS_DEVICE_CAPABILITY
 ---
 
-# GNSS_DEVICE_CAPABILITY structure
-
-
 ## -description
 
-This structure is used to determine the device capabilities of the underlying GNSS engine.
+The **GNSS_DEVICE_CAPABILITY** structure is used to determine the device capabilities of the underlying GNSS engine.
 
 ## -struct-fields
 
@@ -78,6 +74,8 @@ A value of FALSE indicates that the driver does not differentiate different HLOS
 
 ### -field RequireAGnssInjection
 
+Indicates whether the GNSS driver requires assistance data to be injected for faster TTFF.
+
 ### -field AgnssFormatSupported
 
 Specifies a bitmask containing the different AGNSS formats (GNSS_AGNSSFORMAT_*) that the driver can handle.
@@ -88,8 +86,8 @@ Specifies a bitmask containing the different AGNSS formats (GNSS_AGNSSFORMAT_*) 
 #define GNSS_AGNSSFORMAT_LTO        0x04
 #define GNSS_AGNSSFORMAT_XTRA3      0x08
 #define GNSS_AGNSSFORMAT_XTRA3_1    0x10
-#define GNSS_AGNSSFORMAT_XTRA3_2    0x20 // This value is currently in prerelease, and is subject to change.
-#define GNSS_AGNSSFORMAT_XTRA_INT   0x40 // This value is currently in prerelease, and is subject to change.
+#define GNSS_AGNSSFORMAT_XTRA3_2    0x20
+#define GNSS_AGNSSFORMAT_XTRA_INT   0x40
 ```
 
 The values 0x0080-0xFFFF are  reserved for extensibility.
@@ -185,7 +183,7 @@ Specifies the SUPL parameter.
 
 ### -field GnssBreadCrumbPayloadVersion
 
-Must be BREADCRUMBING_UNSUPPORTED or BREADCRUMBING_VERSION_<i>x</i>.
+Must be BREADCRUMBING_UNSUPPORTED or BREADCRUMBING_VERSION_*x*.
 
 ### -field MaxGnssBreadCrumbFixes
 
@@ -193,13 +191,7 @@ Must greater than or equal to MIN_BREADCRUMBS_SUPPORTED.
 
 ### -field Unused
 
-#### - RequireAgnssInjection
-
-Indicates whether the GNSS driver requires assistance data to be injected for faster TTFF.
-
-#### - Unused[496]
-
-Padding buffer.
+Padding buffer reserved for future use.
 
 ## -remarks
 

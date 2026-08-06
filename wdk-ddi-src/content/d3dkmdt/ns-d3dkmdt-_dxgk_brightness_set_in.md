@@ -1,8 +1,7 @@
 ---
 UID: NS:d3dkmdt._DXGK_BRIGHTNESS_SET_IN
 title: _DXGK_BRIGHTNESS_SET_IN (d3dkmdt.h)
-description: 
-ms.assetid: c19ab02a-7216-4a94-8d8c-832bdcf22c02
+description: "Learn more about: _DXGK_BRIGHTNESS_SET_IN structure"
 ms.date: 10/19/2018
 keywords: ["DXGK_BRIGHTNESS_SET_IN structure"]
 ms.keywords: _DXGK_BRIGHTNESS_SET_IN, *PDXGK_BRIGHTNESS_SET_IN, DXGK_BRIGHTNESS_SET_IN,
@@ -36,8 +35,8 @@ api_location:
  - d3dkmdt.h
 api_name:
  - _DXGK_BRIGHTNESS_SET_IN
-product:
- - Windows
+ - PDXGK_BRIGHTNESS_SET_IN
+ - DXGK_BRIGHTNESS_SET_IN
 ---
 
 # _DXGK_BRIGHTNESS_SET_IN structure

@@ -4,7 +4,6 @@ title: NDK_FN_SEND (ndkpi.h)
 description: The NdkSend (NDK_FN_SEND) function posts a send request on an NDK queue pair (QP).
 old-location: netvista\ndk_fn_send.htm
 tech.root: netvista
-ms.assetid: 6EDF95F1-AE00-4931-9B18-E316D56D57AF
 ms.date: 05/02/2018
 keywords: ["NDK_FN_SEND callback function"]
 ms.keywords: NDK_FN_SEND, NDK_FN_SEND callback, NDK_OP_FLAG_DEFER, NDK_OP_FLAG_INLINE, NDK_OP_FLAG_READ_FENCE, NDK_OP_FLAG_SEND_AND_SOLICIT_EVENT, NDK_OP_FLAG_SILENT_SUCCESS, NdkSend, NdkSend callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkSend, netvista.ndk_fn_send
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkSend
+ - NDK_FN_SEND
 ---
 
 # NDK_FN_SEND callback function
@@ -50,30 +49,30 @@ The <i>NdkSend</i> (<i>NDK_FN_SEND</i>) function posts a send request on an NDK 
 
 ## -parameters
 
-### -param pNdkQp 
+### -param pNdkQp [in]
 
-[in]
+
 A pointer to an NDK queue pair (QP) object
 (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_qp">NDK_QP</a>).
 
-### -param RequestContext 
+### -param RequestContext [in, optional]
 
-[in, optional]
+
 A context value to be returned in the <b>RequestContext</b> member of the <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_result">NDK_RESULT</a> structure for this request.
 
-### -param NDK_SGE
+### -param pSgl
 
 An array of SGE structures (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_sge">NDK_SGE</a>)  that represent the buffers holding the data to send.
 
-### -param nSge 
+### -param nSge [in]
 
-[in]
+
 The number of SGE structures in the array  that is specified in the <i>pSgl</i>
 parameter.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A bitwise OR of flags which specifies the operations that are allowed. The following flags are supported:
 
 <table>
@@ -220,3 +219,4 @@ An NDK consumer can use this flag when issuing multiple, related send requests. 
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_sge">NDK_SGE</a>
+

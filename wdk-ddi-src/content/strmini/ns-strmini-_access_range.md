@@ -1,11 +1,9 @@
 ---
 UID: NS:strmini._ACCESS_RANGE
-title: _ACCESS_RANGE (strmini.h)
-description: An ACCESS_RANGE describes a memory or I/O port range used by an HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
-old-location: storage\access_range.htm
+title: ACCESS_RANGE (strmini.h)
+description: Learn how an ACCESS_RANGE structure (strmini.h) describes a memory or I/O port range used by an HBA.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future.
 tech.root: storage
-ms.assetid: 6009d11b-4f44-4591-bcb8-66e0c42d5689
-ms.date: 08/26/2020
+ms.date: 01/04/2023
 keywords: ["ACCESS_RANGE structure"]
 ms.keywords: "*PACCESS_RANGE, ACCESS_RANGE, ACCESS_RANGE structure [Storage Devices], PACCESS_RANGE, PACCESS_RANGE structure pointer [Storage Devices], _ACCESS_RANGE, srb/ACCESS_RANGE, srb/PACCESS_RANGE, storage.access_range, structs-scsiport_353ffdeb-4d30-4df8-9422-ea3a9e662104.xml"
 req.header: strmini.h
@@ -27,7 +25,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: ACCESS_RANGE, *PACCESS_RANGE
-req.product: Windows 10 or later.
 f1_keywords:
  - _ACCESS_RANGE
  - strmini/_ACCESS_RANGE
@@ -43,18 +40,16 @@ api_type:
 api_location:
  - srb.h
 api_name:
+ - _ACCESS_RANGE
+ - PACCESS_RANGE
  - ACCESS_RANGE
 ---
-
-# _ACCESS_RANGE structure (strmini.h)
-
 
 ## -description
 
 An ACCESS_RANGE describes a memory or I/O port range used by an HBA.
 
-> [!NOTE]
-> The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](/windows-hardware/drivers/storage/storport-driver-overview) and [Storport miniport](/windows-hardware/drivers/storage/storport-miniport-drivers) driver models.
+The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the [Storport driver](/windows-hardware/drivers/storage/storport-driver-overview) and [Storport miniport](/windows-hardware/drivers/storage/storport-miniport-drivers) driver models.
 
 ## -struct-fields
 

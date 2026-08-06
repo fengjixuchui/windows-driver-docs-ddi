@@ -4,7 +4,6 @@ title: KsGetBusEnumPnpDeviceObject function (swenum.h)
 description: The KsGetBusEnumPnpDeviceObject function retrieves the Plug and Play device object attached to the given device object.
 old-location: stream\ksgetbusenumpnpdeviceobject.htm
 tech.root: stream
-ms.assetid: 8e81a294-9388-467d-8405-472fbe9fe827
 ms.date: 04/23/2018
 keywords: ["KsGetBusEnumPnpDeviceObject function"]
 ms.keywords: KsGetBusEnumPnpDeviceObject, KsGetBusEnumPnpDeviceObject function [Streaming Media Devices], ksfunc_246a7c6e-ef5a-4cf4-a05a-70a499a487cb.xml, stream.ksgetbusenumpnpdeviceobject, swenum/KsGetBusEnumPnpDeviceObject
@@ -53,14 +52,14 @@ The <b>KsGetBusEnumPnpDeviceObject</b> function retrieves the Plug and Play devi
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the device object from which to retrieve the Plug and Play device object.
 
-### -param PnpDeviceObject 
+### -param PnpDeviceObject [out]
 
-[out]
+
 Pointer to the device object to receive the Plug and Play device object pointer.
 
 ## -returns

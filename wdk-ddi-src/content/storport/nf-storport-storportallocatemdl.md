@@ -4,7 +4,6 @@ title: StorPortAllocateMdl function (storport.h)
 description: The StorPortAllocateMdl routine allocates an MDL to describe the given non-paged pool memory.
 old-location: storage\storportallocatemdl.htm
 tech.root: storage
-ms.assetid: 45450486-3264-4fc8-8051-f7c48997e3dd
 ms.date: 03/29/2018
 keywords: ["StorPortAllocateMdl function"]
 ms.keywords: StorPortAllocateMdl, StorPortAllocateMdl routine [Storage Devices], storage.storportallocatemdl, storport/StorPortAllocateMdl, storprt_d80c510f-4cc4-4687-ab5b-9b9b5cf399ce.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,24 +49,24 @@ The <b>StorPortAllocateMdl</b> routine allocates an MDL to describe the given no
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param BufferPointer 
+### -param BufferPointer [in]
 
-[in]
+
 A pointer to the base virtual address of the buffer that the MDL is to describe.
 
-### -param NumberOfBytes 
+### -param NumberOfBytes [in]
 
-[in]
+
 This parameter specifies the length, in bytes, of the buffer that the MDL is to describe.
 
-### -param Mdl 
+### -param Mdl [out]
 
-[out]
+
 A pointer to receive the allocated MDL.
 
 ## -returns

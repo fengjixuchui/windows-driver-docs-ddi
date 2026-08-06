@@ -1,9 +1,8 @@
 ---
 UID: NC:d3d10umddi.PFND3D11_1DDI_NEGOTIATECRYPTOSESSIONKEYESCHANGE
 title: PFND3D11_1DDI_NEGOTIATECRYPTOSESSIONKEYESCHANGE (d3d10umddi.h)
-description: Establishes a session key for a cryptographic session object.
+description: The PFND3D11_1DDI_NEGOTIATECRYPTOSESSIONKEYESCHANGE callback function establishes a session key for a cryptographic session object.
 old-location: display\negotiatecryptosessionkeyexchange.htm
-ms.assetid: a48dcbae-3236-4523-bc14-4be694da9a7b
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_NEGOTIATECRYPTOSESSIONKEYESCHANGE callback function"]
 ms.keywords: NegotiateCryptoSessionKeyExchange, NegotiateCryptoSessionKeyExchange callback function [Display Devices], PFND3D11_1DDI_NEGOTIATECRYPTOSESSIONKEYESCHANGE, PFND3D11_1DDI_NEGOTIATECRYPTOSESSIONKEYESCHANGE callback, d3d10umddi/NegotiateCryptoSessionKeyExchange, display.negotiatecryptosessionkeyexchange
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - NegotiateCryptoSessionKeyExchange
-product:
- - Windows
+ - PFND3D11_1DDI_NEGOTIATECRYPTOSESSIONKEYESCHANGE
 ---
 
 # PFND3D11_1DDI_NEGOTIATECRYPTOSESSIONKEYESCHANGE callback function
@@ -92,3 +89,4 @@ The key exchange for a cryptographic session is identical to the key exchange fo
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createcryptosession">CreateCryptoSession</a>
+

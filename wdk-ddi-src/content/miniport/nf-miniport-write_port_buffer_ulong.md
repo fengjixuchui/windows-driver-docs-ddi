@@ -1,10 +1,9 @@
 ---
 UID: NF:miniport.WRITE_PORT_BUFFER_ULONG
 title: WRITE_PORT_BUFFER_ULONG function (miniport.h)
-description: The WRITE_PORT_BUFFER_ULONG routine writes a number of ULONG values from a buffer to the specified port address.
+description: The WRITE_PORT_BUFFER_ULONG function (miniport.h) writes a number of ULONG values from a buffer to the specified port address.
 old-location: kernel\write_port_buffer_ulong.htm
 tech.root: kernel
-ms.assetid: 6f786456-344a-4fc3-bc13-8d4253f4039a
 ms.date: 04/30/2018
 keywords: ["WRITE_PORT_BUFFER_ULONG function"]
 ms.keywords: WRITE_PORT_BUFFER_ULONG, WRITE_PORT_BUFFER_ULONG routine [Kernel-Mode Driver Architecture], k103_821262d5-40d2-435b-965e-cf0a917736b3.xml, kernel.write_port_buffer_ulong, wdm/WRITE_PORT_BUFFER_ULONG
@@ -51,19 +50,19 @@ The <b>WRITE_PORT_BUFFER_ULONG</b> routine writes a number of ULONG values from 
 
 ## -parameters
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Pointer to the port, which must be a mapped memory range in I/O space.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to a buffer from which an array of ULONG values is to be written.
 
-### -param Count 
+### -param Count [in]
 
-[in]
+
 Specifies the number of ULONG values to be written to the port.
 
 ## -remarks

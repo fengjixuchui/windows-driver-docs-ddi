@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._WHEA_ERROR_RECORD_HEADER_FLAGS
 title: WHEA_ERROR_RECORD_HEADER_FLAGS
-description: 
-tech.root: 
-ms.assetid: 96520e0c-8a60-419a-97f2-f1fe71019570
+description: "Learn more about: WHEA_ERROR_RECORD_HEADER_FLAGS structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEA_ERROR_RECORD_HEADER_FLAGS structure"]
 ms.keywords: WHEA_ERROR_RECORD_HEADER_FLAGS, WHEA_ERROR_RECORD_HEADER_FLAGS, *PWHEA_ERROR_RECORD_HEADER_FLAGS,
@@ -36,9 +35,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_ERROR_RECORD_HEADER_FLAGS
+ - PWHEA_ERROR_RECORD_HEADER_FLAGS
  - WHEA_ERROR_RECORD_HEADER_FLAGS
-product:
- - Windows
 ---
 
 # WHEA_ERROR_RECORD_HEADER_FLAGS structure
@@ -75,6 +74,16 @@ Reserved for system use.
 ### -field AsULONG
 
 A ULONG representation of the contents of the WHEA_ERROR_RECORD_HEADER_FLAGS union.
+
+### -field DUMMYSTRUCTNAME.CriticalEvent
+
+### -field DUMMYSTRUCTNAME.PersistPfn
+
+### -field DUMMYSTRUCTNAME.SectionsTruncated
+
+### -field DUMMYSTRUCTNAME.RecoveryInProgress
+
+### -field DUMMYSTRUCTNAME.Throttle
 
 ## -remarks
 

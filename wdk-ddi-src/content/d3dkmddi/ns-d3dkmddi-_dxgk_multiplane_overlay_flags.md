@@ -1,10 +1,8 @@
 ---
 UID: NS:d3dkmddi._DXGK_MULTIPLANE_OVERLAY_FLAGS
-title: _DXGK_MULTIPLANE_OVERLAY_FLAGS (d3dkmddi.h)
-description: Identifies a flip operation to be performed on an overlay plane.
-old-location: display\dxgk_multiplane_overlay_flags.htm
-ms.assetid: 2592e308-1d34-464f-8301-9ece54b4d017
-ms.date: 05/10/2018
+title: DXGK_MULTIPLANE_OVERLAY_FLAGS (d3dkmddi.h)
+description: Learn more about the DXGK_MULTIPLANE_OVERLAY_FLAGS structure.
+ms.date: 05/20/2024
 keywords: ["DXGK_MULTIPLANE_OVERLAY_FLAGS structure"]
 ms.keywords: DXGK_MULTIPLANE_OVERLAY_FLAGS, DXGK_MULTIPLANE_OVERLAY_FLAGS structure [Display Devices], _DXGK_MULTIPLANE_OVERLAY_FLAGS, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_FLAGS, display.dxgk_multiplane_overlay_flags
 req.header: d3dkmddi.h
@@ -40,15 +38,15 @@ api_type:
 api_location:
  - D3dkmddi.h
 api_name:
+ - _DXGK_MULTIPLANE_OVERLAY_FLAGS
  - DXGK_MULTIPLANE_OVERLAY_FLAGS
 ---
 
-# _DXGK_MULTIPLANE_OVERLAY_FLAGS structure
-
+# DXGK_MULTIPLANE_OVERLAY_FLAGS structure
 
 ## -description
 
-Identifies a flip operation to be performed on an overlay plane.
+The **DXGK_MULTIPLANE_OVERLAY_FLAGS** structure defines flags that control the behavior of a multiplane overlay operation.
 
 ## -struct-fields
 
@@ -56,28 +54,26 @@ Identifies a flip operation to be performed on an overlay plane.
 
 The overlay plane should flip the data vertically, making it appear upside-down.
 
-Setting this member is equivalent to setting the first bit of the 32-bit <b>Value</b> member (0x00000001).
-
 ### -field HorizontalFlip
 
 The overlay plane should flip the data horizontally, making it appear as a right-to-left mirror image.
 
-Setting this member is equivalent to setting the second bit of the 32-bit <b>Value</b> member (0x00000002).
+### -field StaticCheck
+
+The overlay plane can be scanned out directly. **StaticCheck** is a capability query that doesn't affect the current presentation state. Added in Windows 11 (WDDM 3.0).
 
 ### -field Reserved
 
-This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 29 bits (0xFFFFFFF8) of the 32-bit <b>Value</b> member to zeros.
-
-This member is reserved and should be set to zero. Setting this member to zero is equivalent to setting the remaining 30 bits (0xFFFFFFFC) of the 32-bit <b>Value</b> member to zeros.
+This member is reserved and should be set to zero.
 
 ### -field Value
 
-A 32-bit value that identifies the type of flip operation to perform.
+Represents the collective value of the flags and can be used when the individual bits don't need to be accessed separately.
 
-*PanelFitterPostComposition*
+## -see-also
 
-Indicates that the plane is to be stretched using panel fitter hardware. 
-This should only be set for plane 0. 
+[**DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES**](ns-d3dkmddi-_dxgk_multiplane_overlay_attributes.md)
 
-Setting this member is equivalent to setting the third bit of the 32-bit <b>Value</b> member (0x00000004).
+[**DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES2**](ns-d3dkmddi-_dxgk_multiplane_overlay_attributes2.md)
 
+[**DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES3**](ns-d3dkmddi-_dxgk_multiplane_overlay_attributes3.md)

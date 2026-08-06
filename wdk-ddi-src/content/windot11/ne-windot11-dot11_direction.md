@@ -1,10 +1,9 @@
 ---
 UID: NE:windot11.DOT11_DIRECTION
 title: DOT11_DIRECTION (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_DIRECTION enumeration is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_direction.htm
 tech.root: netvista
-ms.assetid: 83a83af9-314a-49c1-b241-a0ef0716f83a
 ms.date: 02/16/2018
 keywords: ["DOT11_DIRECTION enumeration"]
 ms.keywords: "*PDOT11_DIRECTION, DOT11_DIRECTION, DOT11_DIRECTION enumeration [Network Drivers Starting with Windows Vista], DOT11_DIR_BOTH, DOT11_DIR_INBOUND, DOT11_DIR_OUTBOUND, Native_802.11_data_types_aef66faf-de2c-42f1-a213-ed12ea7ef583.xml, PDOT11_DIRECTION, PDOT11_DIRECTION enumeration pointer [Network Drivers Starting with Windows Vista], netvista.dot11_direction, windot11/DOT11_DIRECTION, windot11/DOT11_DIR_BOTH, windot11/DOT11_DIR_INBOUND, windot11/DOT11_DIR_OUTBOUND, windot11/PDOT11_DIRECTION"
@@ -41,8 +40,7 @@ api_location:
  - windot11.h
 api_name:
  - DOT11_DIRECTION
-product:
- - Windows 10 or later.
+ - PDOT11_DIRECTION
 ---
 
 # DOT11_DIRECTION enumeration
@@ -50,7 +48,10 @@ product:
 
 ## -description
 
-<div class="alert"><b>Important</b>  The <a href="/previous-versions/windows/hardware/wireless/ff560689(v=vs.85)">Native 802.11 Wireless LAN</a> interface is deprecated in Windows 10 and later. Please use the WLAN Device Driver Interface (WDI) instead. For more information about WDI, see <a href="/windows-hardware/drivers/network/wifi-universal-driver-model">WLAN Universal Windows driver model</a>.</div><div> </div>The DOT11_DIRECTION enumeration specifies whether the 802.11 station uses a cipher key to decrypt
+> [!Important]
+> [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the new Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest features. The WDI driver model is now in maintenance mode and will only receive high priority fixes.
+
+The DOT11_DIRECTION enumeration specifies whether the 802.11 station uses a cipher key to decrypt
   received packets and/or encrypt transmitted packets.
 
 ## -enum-fields
@@ -88,3 +89,4 @@ typedef enum DOT11_DIRECTION {
 
 <a href="..\windot11\ns-windot11-dot11_cipher_key_mapping_key_value.md">
    DOT11_CIPHER_KEY_MAPPING_KEY_VALUE</a>
+

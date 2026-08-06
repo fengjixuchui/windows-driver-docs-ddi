@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugDataSpaces3.SearchVirtual
 title: IDebugDataSpaces3::SearchVirtual (dbgeng.h)
-description: The SearchVirtual method searches the target's virtual memory for a specified pattern of bytes.
+description: The SearchVirtual method searches the target's virtual memory for a specified pattern of bytes. This method belongs to the IDebugDataSpaces3 interface.
 old-location: debugger\searchvirtual.htm
 tech.root: debugger
-ms.assetid: 1cb779de-fcbb-450d-9932-0cdaa9fbb1e9
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces3::SearchVirtual"]
 ms.keywords: IDebugDataSpaces interface [Windows Debugging],SearchVirtual method, IDebugDataSpaces2 interface [Windows Debugging],SearchVirtual method, IDebugDataSpaces2::SearchVirtual, IDebugDataSpaces3 interface [Windows Debugging],SearchVirtual method, IDebugDataSpaces3.SearchVirtual, IDebugDataSpaces3::SearchVirtual, IDebugDataSpaces4 interface [Windows Debugging],SearchVirtual method, IDebugDataSpaces4::SearchVirtual, IDebugDataSpaces::SearchVirtual, IDebugDataSpaces_9af5d620-f8df-430c-88ab-0d4f96844499.xml, SearchVirtual, SearchVirtual method [Windows Debugging], SearchVirtual method [Windows Debugging],IDebugDataSpaces interface, SearchVirtual method [Windows Debugging],IDebugDataSpaces2 interface, SearchVirtual method [Windows Debugging],IDebugDataSpaces3 interface, SearchVirtual method [Windows Debugging],IDebugDataSpaces4 interface, dbgeng/IDebugDataSpaces2::SearchVirtual, dbgeng/IDebugDataSpaces3::SearchVirtual, dbgeng/IDebugDataSpaces4::SearchVirtual, dbgeng/IDebugDataSpaces::SearchVirtual, debugger.searchvirtual
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugDataSpaces.SearchVirtual
- - IDebugDataSpaces2.SearchVirtual
- - IDebugDataSpaces3.SearchVirtual
- - IDebugDataSpaces4.SearchVirtual
+ - IDebugDataSpaces3::SearchVirtual
 ---
 
 # IDebugDataSpaces3::SearchVirtual
@@ -53,34 +49,34 @@ The <b>SearchVirtual</b> method searches the target's virtual memory for a speci
 
 ## -parameters
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the location in the target's virtual address space to start searching for the pattern.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Specifies how far to search for the pattern.  A successful match requires the entire pattern to be found before <i>Length</i> bytes have been examined.
 
-### -param Pattern 
+### -param Pattern [in]
 
-[in]
+
 Specifies the pattern to search for.
 
-### -param PatternSize 
+### -param PatternSize [in]
 
-[in]
+
 Specifies the size in bytes of the pattern.  This must be a multiple of the granularity of the pattern.
 
-### -param PatternGranularity 
+### -param PatternGranularity [in]
 
-[in]
+
 Specifies the granularity of the pattern.  For a successful match the pattern must occur a multiple of this value after the start location.
 
-### -param MatchOffset 
+### -param MatchOffset [out]
 
-[out]
+
 Receives the location in the target's virtual address space of the pattern, if it was found.
 
 ## -returns
@@ -147,3 +143,4 @@ For additional options, including the ability to restrict the search to writable
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugdataspaces4-searchvirtual2">SearchVirtual2</a>
+

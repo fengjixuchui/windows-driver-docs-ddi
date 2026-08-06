@@ -4,7 +4,6 @@ title: ZwOpenKeyTransacted function (wdm.h)
 description: The ZwOpenKeyTransacted routine opens an existing registry key and associates the key with a transaction.
 old-location: kernel\zwopenkeytransacted.htm
 tech.root: kernel
-ms.assetid: 9fd9aabd-3452-461d-b051-c3130b22ef5c
 ms.date: 04/30/2018
 keywords: ["ZwOpenKeyTransacted function"]
 ms.keywords: ZwOpenKeyTransacted, ZwOpenKeyTransacted routine [Kernel-Mode Driver Architecture], k111_e4192ee9-7dba-48d2-81be-38b33ff0b1d6.xml, kernel.zwopenkeytransacted, wdm/ZwOpenKeyTransacted
@@ -50,24 +49,24 @@ The <b>ZwOpenKeyTransacted</b> routine opens an existing registry key and associ
 
 ## -parameters
 
-### -param KeyHandle 
+### -param KeyHandle [out]
 
-[out]
+
 A pointer to a HANDLE variable into which the routine writes the handle to the key.
 
-### -param DesiredAccess 
+### -param DesiredAccess [in]
 
-[in]
+
 Specifies the type of access to the key that the caller requests. This parameter is an <a href="/windows-hardware/drivers/kernel/access-mask">ACCESS_MASK</a> value. For more information, see the description of the <i>DesiredAccess</i> parameter of the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-zwcreatekey">ZwCreateKey</a> routine.
 
-### -param ObjectAttributes 
+### -param ObjectAttributes [in]
 
-[in]
+
 A pointer to the object attributes of the key being opened. This parameter points to an <a href="/windows/win32/api/ntdef/ns-ntdef-_object_attributes">OBJECT_ATTRIBUTES</a> structure that must have been previously initialized by the <a href="/windows/win32/api/ntdef/nf-ntdef-initializeobjectattributes">InitializeObjectAttributes</a> routine. The caller must specify the name of the registry key as the <i>ObjectName</i> parameter in the call to <b>InitializeObjectAttributes</b>. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE attribute when it calls <b>InitializeObjectAttributes</b>.
 
-### -param TransactionHandle 
+### -param TransactionHandle [in]
 
-[in]
+
 A handle to a <a href="/windows-hardware/drivers/kernel/transaction-objects">transaction object</a>. To obtain this handle, you can call the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreatetransaction">ZwCreateTransaction</a> routine. Or, if you have a pointer to a transaction object, you can supply the pointer to the <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-obopenobjectbypointer">ObOpenObjectByPointer</a> routine to obtain the corresponding transaction handle.
 
 ## -returns

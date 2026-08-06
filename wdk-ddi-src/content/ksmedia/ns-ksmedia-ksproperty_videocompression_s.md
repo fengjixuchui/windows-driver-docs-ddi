@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_148
+UID: NS:ksmedia.KSPROPERTY_VIDEOCOMPRESSION_S
 title: KSPROPERTY_VIDEOCOMPRESSION_S (ksmedia.h)
 description: The KSPROPERTY_VIDEOCOMPRESSION_S structure describes a single KSPROPERTY_VIDEOCOMPRESSION_Xxx property of a specified stream.
 old-location: stream\ksproperty_videocompression_s.htm
 tech.root: stream
-ms.assetid: 0fc80a67-de81-4cdf-8c38-bbf78c62d017
 ms.date: 04/30/2019
 keywords: ["KSPROPERTY_VIDEOCOMPRESSION_S structure"]
 ms.keywords: "*PKSPROPERTY_VIDEOCOMPRESSION_S, KSPROPERTY_VIDEOCOMPRESSION_S, KSPROPERTY_VIDEOCOMPRESSION_S structure [Streaming Media Devices], PKSPROPERTY_VIDEOCOMPRESSION_S, PKSPROPERTY_VIDEOCOMPRESSION_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_VIDEOCOMPRESSION_S, ksmedia/PKSPROPERTY_VIDEOCOMPRESSION_S, stream.ksproperty_videocompression_s, vidcapstruct_c3680216-5804-48a0-beac-f1b8c24b9eb5.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_VIDEOCOMPRESSION_S
  - KSPROPERTY_VIDEOCOMPRESSION_S
 ---
 
@@ -54,7 +54,7 @@ The KSPROPERTY_VIDEOCOMPRESSION_S structure describes a single KSPROPERTY_VIDEOC
 
 ### -field Property
 
-Specifies an initialized <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+Specifies an initialized <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 ### -field StreamIndex
 
@@ -70,7 +70,7 @@ All KSPROPERTY_VIDEOCOMPRESSION properties that use this structure are read/writ
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -99,3 +99,4 @@ All KSPROPERTY_VIDEOCOMPRESSION properties that use this structure are read/writ
 
 
 <a href="/windows-hardware/drivers/stream/propsetid-vidcap-videocompression">PROPSETID_VIDCAP_VIDEOCOMPRESSION</a>
+

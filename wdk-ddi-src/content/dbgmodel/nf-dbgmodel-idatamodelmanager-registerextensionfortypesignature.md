@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelManager.RegisterExtensionForTypeSignature
 title: IDataModelManager::RegisterExtensionForTypeSignature (dbgmodel.h)
-description: The RegisterExtensionForTypeSignature method is similar to the RegisterModelForTypeSignature method with one key difference.
-ms.assetid: 13839ae7-45c0-4e31-b7b7-7d0cb6f890b7
+description: "The IDataModelManager::RegisterExtensionForTypeSignature method registers a data model for a given type signature as an extension."
 ms.date: 07/19/2018
 keywords: ["IDataModelManager::RegisterExtensionForTypeSignature"]
 ms.keywords: IDataModelManager::RegisterExtensionForTypeSignature, RegisterExtensionForTypeSignature, IDataModelManager.RegisterExtensionForTypeSignature, IDataModelManager::RegisterExtensionForTypeSignature, IDataModelManager.RegisterExtensionForTypeSignature
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager.RegisterExtensionForTypeSignature
+ - IDataModelManager::RegisterExtensionForTypeSignature
 ---
 
 # IDataModelManager::RegisterExtensionForTypeSignature

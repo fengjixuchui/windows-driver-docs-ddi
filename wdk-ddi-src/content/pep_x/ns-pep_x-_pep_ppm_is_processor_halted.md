@@ -1,10 +1,9 @@
 ---
 UID: NS:pep_x._PEP_PPM_IS_PROCESSOR_HALTED
 title: _PEP_PPM_IS_PROCESSOR_HALTED (pep_x.h)
-description: The PEP_PPM_IS_PROCESSOR_HALTED structure indicates whether the processor is currently halted in its selected idle state.
+description: Learn how the PEP_PPM_IS_PROCESSOR_HALTED structure indicates whether the processor is currently halted in its selected idle state.
 old-location: kernel\pep_ppm_is_processor_halted.htm
 tech.root: kernel
-ms.assetid: 284BAFE1-C632-428D-800C-60C538052C02
 ms.date: 04/30/2018
 keywords: ["PEP_PPM_IS_PROCESSOR_HALTED structure"]
 ms.keywords: "*PPEP_PPM_IS_PROCESSOR_HALTED, PEP_PPM_IS_PROCESSOR_HALTED, PEP_PPM_IS_PROCESSOR_HALTED structure [Kernel-Mode Driver Architecture], PPEP_PPM_IS_PROCESSOR_HALTED, PPEP_PPM_IS_PROCESSOR_HALTED structure pointer [Kernel-Mode Driver Architecture], _PEP_PPM_IS_PROCESSOR_HALTED, kernel.pep_ppm_is_processor_halted, pepfx/PEP_PPM_IS_PROCESSOR_HALTED, pepfx/PPEP_PPM_IS_PROCESSOR_HALTED"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_PPM_IS_PROCESSOR_HALTED
+ - PPEP_PPM_IS_PROCESSOR_HALTED
  - PEP_PPM_IS_PROCESSOR_HALTED
 ---
 
@@ -54,9 +55,9 @@ The <b>PEP_PPM_IS_PROCESSOR_HALTED</b> structure indicates whether the processor
 
 ## -struct-fields
 
-### -field Halted
+### -field Halted [out]
 
-[out] Whether the processor is halted. Set to <b>TRUE</b> if the processor is halted, or to <b>FALSE</b> if it is not halted.
+Whether the processor is halted. Set to <b>TRUE</b> if the processor is halted, or to <b>FALSE</b> if it is not halted.
 
 ## -remarks
 
@@ -65,3 +66,4 @@ This structure is used by the <a href="/windows-hardware/drivers/ddi/pepfx/ns-pe
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_ppm_is_processor_halted">PEP_NOTIFY_PPM_IS_PROCESSOR_HALTED</a>
+

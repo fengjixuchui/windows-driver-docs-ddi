@@ -4,7 +4,6 @@ title: _NDIS_RSS_PROFILE (ntddndis.h)
 description: This enumeration is not supported.
 old-location: netvista\ndis_rss_profile.htm
 tech.root: netvista
-ms.assetid: 41A58C2C-8A25-41AC-9CBE-59AB38603A73
 ms.date: 05/02/2018
 keywords: ["NDIS_RSS_PROFILE enumeration"]
 ms.keywords: "*PNDIS_RSS_PROFILE, NDIS_RSS_PROFILE, NDIS_RSS_PROFILE enumeration [Network Drivers Starting with Windows Vista], NdisRssProfileClosest, NdisRssProfileClosestStatic, NdisRssProfileConservative, NdisRssProfileMaximum, NdisRssProfileNuma, NdisRssProfileNumaStatic, _NDIS_RSS_PROFILE, netvista.ndis_rss_profile, ntddndis/NDIS_RSS_PROFILE, ntddndis/NdisRssProfileClosest, ntddndis/NdisRssProfileClosestStatic, ntddndis/NdisRssProfileConservative, ntddndis/NdisRssProfileMaximum, ntddndis/NdisRssProfileNuma, ntddndis/NdisRssProfileNumaStatic"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_RSS_PROFILE
+ - PNDIS_RSS_PROFILE
  - NDIS_RSS_PROFILE
 ---
 
@@ -96,3 +97,4 @@ NDIS network drivers use the <b>NDIS_RSS_PROFILE</b> enumeration type to set the
 
 
 <a href="/windows-hardware/drivers/network/standardized-inf-keywords-for-rss">Standardized INF Keywords for RSS</a>
+

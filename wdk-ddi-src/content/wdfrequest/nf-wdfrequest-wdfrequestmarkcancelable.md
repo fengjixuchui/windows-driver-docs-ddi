@@ -4,7 +4,6 @@ title: WdfRequestMarkCancelable function (wdfrequest.h)
 description: The WdfRequestMarkCancelable method enables cancellation of a specified I/O request.
 old-location: wdf\wdfrequestmarkcancelable.htm
 tech.root: wdf
-ms.assetid: 1bd1ec2a-8b07-4843-84b6-6b651453328c
 ms.date: 02/26/2018
 keywords: ["WdfRequestMarkCancelable function"]
 ms.keywords: DFRequestObjectRef_29a4ad0c-ce28-4f4b-b015-90b067feaeec.xml, WdfRequestMarkCancelable, WdfRequestMarkCancelable method, kmdf.wdfrequestmarkcancelable, wdf.wdfrequestmarkcancelable, wdfrequest/WdfRequestMarkCancelable
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfRequestMarkCancelable</b> method enables cancellation of a specified I
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
-### -param EvtRequestCancel 
+### -param EvtRequestCancel [in]
 
-[in]
+
 A pointer to a driver-defined <a href="/windows-hardware/drivers/ddi/wdfrequest/nc-wdfrequest-evt_wdf_request_cancel">EvtRequestCancel</a> callback function, which the framework calls if it cancels the I/O request.
 
 ## -remarks

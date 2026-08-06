@@ -3,7 +3,6 @@ UID: NS:wwan._WWAN_UICC_APP_LIST
 title: _WWAN_UICC_APP_LIST (wwan.h)
 description: The WWAN_UICC_APP_LIST structure describes a list of applications in a UICC and information about them.
 tech.root: netvista
-ms.assetid: 79DAD0BC-171D-4930-BF62-A3F2BEEC7C69
 ms.date: 04/08/2019
 keywords: ["WWAN_UICC_APP_LIST structure"]
 ms.keywords: _WWAN_UICC_APP_LIST, WWAN_UICC_APP_LIST, *PWWAN_UICC_APP_LIST,
@@ -37,6 +36,8 @@ api_location:
  - wwan.h
 api_name:
  - _WWAN_UICC_APP_LIST
+ - PWWAN_UICC_APP_LIST
+ - WWAN_UICC_APP_LIST
 ---
 
 # _WWAN_UICC_APP_LIST structure
@@ -79,3 +80,4 @@ This structure is used in the [**NDIS_WWAN_UICC_APP_LIST**](../ndiswwan/ns-ndisw
 [OID_WWAN_UICC_APP_LIST](/windows-hardware/drivers/network/oid-wwan-uicc-app-list)
 
 [**NDIS_WWAN_UICC_APP_LIST**](../ndiswwan/ns-ndiswwan-_ndis_wwan_uicc_app_list.md)
+

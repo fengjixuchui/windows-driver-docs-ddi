@@ -4,7 +4,6 @@ title: _SetLoadBalancePolicy_IN (iscsimgt.h)
 description: The SetLoadBalancePolicy_IN structure holds the input data for the SetLoadBalance method.
 old-location: storage\setloadbalancepolicy_in.htm
 tech.root: storage
-ms.assetid: e1895fed-a006-45f6-a38a-1767202cbf4f
 ms.date: 03/29/2018
 keywords: ["SetLoadBalancePolicy_IN structure"]
 ms.keywords: "*PSetLoadBalancePolicy_IN, PSetLoadBalancePolicy_IN, PSetLoadBalancePolicy_IN structure pointer [Storage Devices], SetLoadBalancePolicy_IN, SetLoadBalancePolicy_IN structure [Storage Devices], _SetLoadBalancePolicy_IN, iscsimgt/PSetLoadBalancePolicy_IN, iscsimgt/SetLoadBalancePolicy_IN, storage.setloadbalancepolicy_in, structs-iSCSI_d4d805d0-4c3c-4f5e-90ee-9c6bf881dfcf.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsimgt.h
 api_name:
+ - _SetLoadBalancePolicy_IN
+ - PSetLoadBalancePolicy_IN
  - SetLoadBalancePolicy_IN
 ---
 
@@ -65,3 +66,4 @@ You must implement this class.
 ## -see-also
 
 <a href="/windows-hardware/drivers/storage/msiscsi-lb-operations-wmi-class">MSiSCSI_LB_Operations WMI Class</a>
+

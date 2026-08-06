@@ -4,7 +4,6 @@ title: IWDFDevice::SetPnpState (wudfddi.h)
 description: The SetPnpState method turns on or off (or sets to the default state) the specified Plug and Play (PnP) property of a device.
 old-location: wdf\iwdfdevice_setpnpstate.htm
 tech.root: wdf
-ms.assetid: 3bd88ecd-7c7c-4ee9-8eb8-bc5653bd4ed0
 ms.date: 02/26/2018
 keywords: ["IWDFDevice::SetPnpState"]
 ms.keywords: IWDFDevice interface,SetPnpState method, IWDFDevice.SetPnpState, IWDFDevice::SetPnpState, SetPnpState, SetPnpState method, SetPnpState method,IWDFDevice interface, UMDFDeviceObjectRef_1efea639-31d7-4420-8b8a-c528597ceffb.xml, umdf.iwdfdevice_setpnpstate, wdf.iwdfdevice_setpnpstate, wudfddi/IWDFDevice::SetPnpState
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFDevice.SetPnpState
+ - IWDFDevice::SetPnpState
 ---
 
 # IWDFDevice::SetPnpState
@@ -52,14 +51,14 @@ The <b>SetPnpState</b> method turns on or off (or sets to the default state) the
 
 ## -parameters
 
-### -param State 
+### -param State [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_pnp_state">WDF_PNP_STATE</a>-typed value that identifies the PnP property to set.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 A WDF_TRI_STATE-typed value that identifies how to set the PnP property that <i>State</i> specifies. The following table shows the possible values for <i>Value</i>.
 
 <table>
@@ -147,7 +146,6 @@ CUmdfHidDevice::OnCompletion(
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice">IWDFDevice</a>
@@ -163,3 +161,4 @@ CUmdfHidDevice::OnCompletion(
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_pnp_state">WDF_PNP_STATE</a>
+

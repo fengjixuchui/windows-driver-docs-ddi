@@ -4,7 +4,6 @@ title: IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore (wudf
 description: The RetrieveUnifiedDevicePropertyStore method retrieves a unified property store interface.
 old-location: wdf\iwdfunifiedpropertystorefactory_retrieveunifieddevicepropertystore.htm
 tech.root: wdf
-ms.assetid: A54E56A6-9A6C-435D-83FD-84BB0E072C74
 ms.date: 02/26/2018
 keywords: ["IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore"]
 ms.keywords: IWDFUnifiedPropertyStoreFactory interface,RetrieveUnifiedDevicePropertyStore method, IWDFUnifiedPropertyStoreFactory.RetrieveUnifiedDevicePropertyStore, IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore, RetrieveUnifiedDevicePropertyStore, RetrieveUnifiedDevicePropertyStore method, RetrieveUnifiedDevicePropertyStore method,IWDFUnifiedPropertyStoreFactory interface, umdf.iwdfunifiedpropertystorefactory_retrieveunifieddevicepropertystore, wdf.iwdfunifiedpropertystorefactory_retrieveunifieddevicepropertystore, wudfddi/IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFUnifiedPropertyStoreFactory.RetrieveUnifiedDevicePropertyStore
+ - IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore
 ---
 
 # IWDFUnifiedPropertyStoreFactory::RetrieveUnifiedDevicePropertyStore
@@ -52,14 +51,14 @@ The <b>RetrieveUnifiedDevicePropertyStore</b> method retrieves a unified propert
 
 ## -parameters
 
-### -param RootSpecifier 
+### -param RootSpecifier [in]
 
-[in]
+
 The address of a driver-allocated <a href="/windows-hardware/drivers/ddi/wudfddi_types/ns-wudfddi_types-_wdf_property_store_root">WDF_PROPERTY_STORE_ROOT</a> structure. The driver fills in this structure to identify the unified property store that <b>RetrieveUnifiedDevicePropertyStore</b> retrieves.
 
-### -param PropertyStore 
+### -param PropertyStore [out]
 
-[out]
+
 The address of a location that receives a pointer to an <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfunifiedpropertystore">IWDFUnifiedPropertyStore</a> interface.
 
 ## -returns
@@ -162,7 +161,6 @@ exit:
 
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfunifiedpropertystore">IWDFUnifiedPropertyStore</a>
@@ -170,3 +168,4 @@ exit:
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfunifiedpropertystorefactory">IWDFUnifiedPropertyStoreFactory</a>
+

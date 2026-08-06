@@ -4,14 +4,13 @@ title: ECP_OPEN_PARAMETERS (ntifs.h)
 description: The ECP_OPEN_PARAMETERS structure allows a caller to specify the purpose of opening of a file without interfering with existing handles and/or oplocks on the file.
 old-location: ifsk\ecp_open_parameters.htm
 tech.root: ifsk
-ms.assetid: 1223C77A-EAEC-4FCF-B2CC-F1E2935AF5CB
-ms.date: 03/24/2020
+ms.date: 09/09/2021
 keywords: ["ECP_OPEN_PARAMETERS structure"]
 ms.keywords: "*PECP_OPEN_PARAMETERS, ECP_OPEN_PARAMETERS, ECP_OPEN_PARAMETERS structure [Installable File System Drivers], PECP_OPEN_PARAMETERS, PECP_OPEN_PARAMETERS structure pointer [Installable File System Drivers], _ECP_OPEN_PARAMETERS, ifsk.ecp_open_parameters, ntifs/ECP_OPEN_PARAMETERS, ntifs/PECP_OPEN_PARAMETERS"
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows 10, version 1709.
+req.target-min-winverclnt: Windows 10, version 1709.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,15 +41,16 @@ api_type:
 api_location:
  - ntifs.h
 api_name:
+ - _ECP_OPEN_PARAMETERS
+ - PECP_OPEN_PARAMETERS
  - ECP_OPEN_PARAMETERS
 ---
 
 # ECP_OPEN_PARAMETERS structure
 
-
 ## -description
 
-The ECP_OPEN_PARAMETERS structure allows a caller to specify the purpose of opening of a file without interfering with existing handles and/or opportunistic locks (oplocks) on the file.
+The **ECP_OPEN_PARAMETERS** structure contains the extra create parameters (ECP) context that allows a caller to specify the purpose of opening of a file without interfering with existing handles and/or opportunistic locks (oplocks) on the file.
 
 ## -struct-fields
 
@@ -77,6 +77,10 @@ Flags that specify the parameters or purpose for opening a file. *Flags* can be 
 ## -remarks
 
 The ECP_OPEN_PARAMETERS_FLAG_OPEN_FOR_READ and ECP_OPEN_PARAMETERS_FLAG_OPEN_FOR_WRITE flags allow read/write access to encrypted files without having to actually open such files for read/write access. These ECP flags allow a kernel-mode component to open for metadata-only access, thus not interfering with other access while still getting the encryption context setup in order to do read/writes. A filter can set these flags to avoid conflicts with locking. Setting up the encryption state for read/write operations is expensive and are not typically done when files aren't opened for read/write access.
+
+The system-defined GUID_ECP_OPEN_PARAMETERS value is used with this ECP context structure when calling ECP-related support routines such as [**FltAllocateExtraCreateParameter**](../fltkernel/nf-fltkernel-fltallocateextracreateparameter.md) and [**FsRtlRemoveExtraCreateParameter**](nf-ntifs-fsrtlremoveextracreateparameter.md).
+
+See [Introduction to extra create parameters](/windows-hardware/drivers/ifs/introduction-to-extra-create-parameters) for more information.
 
 ## -see-also
 

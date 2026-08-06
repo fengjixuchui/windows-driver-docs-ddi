@@ -1,11 +1,9 @@
 ---
 UID: NC:iddcx.PFN_IDDCXGETVERSION
 title: PFN_IDDCXGETVERSION
-description: PFN_IDDCXGETVERSION is a pointer to a system-implemented function that gets the IddCx (Indirect Display Driver Class eXtension) version.
-ms.date: 09/24/2020
-ms.topic: language-reference
+description: PFN_IDDCXGETVERSION is a pointer to an OS callback function that gets the IddCx (Indirect Display Driver Class eXtension) version.
+ms.date: 09/28/2020
 tech.root: display
-ms.assetid: 06986111-4609-40ca-942c-126941817e8d
 targetos: Windows
 req.assembly: 
 req.construct-type: function
@@ -41,19 +39,21 @@ dev_langs:
  - c++
 ---
 
+# PFN_IDDCXGETVERSION callback function
+
 ## -description
 
 **PFN_IDDCXGETVERSION** is a pointer to an OS callback function that gets the IddCx (Indirect Display Driver Class eXtension) version.
 
 ## -parameters
 
-### -param DriverGlobals
+### -param DriverGlobals [in]
 
-[in] Pointer to an [**IDD_DRIVER_GLOBALS**](/windows-hardware/drivers/ddi/iddcx/ns-iddcx-idd_driver_globals) structure containing system-defined per-driver data.
+Pointer to an [**IDD_DRIVER_GLOBALS**](./ns-iddcx-idd_driver_globals.md) structure containing system-defined per-driver data.
 
-### -param pOutArgs
+### -param pOutArgs [out]
 
-[out] Pointer to an [**IDARG_OUT_GETVERSION**](ns-iddcx-idarg_out_getversion.md) structure in which the driver will return the current IddCx version.
+Pointer to an [**IDARG_OUT_GETVERSION**](ns-iddcx-idarg_out_getversion.md) structure in which the driver will return the current IddCx version.
 
 ## -returns
 
@@ -61,7 +61,7 @@ dev_langs:
 
 ## -remarks
 
-IDDs should not directly call the function that **PFN_IDDCXGETVERSION** points to. Instead, the IDD should call [**IddCxGetVersion**](nf-iddcx-iddcxgetversion.md) to get the IddCx version.
+An indirect display driver (IDD) should not use this pointer to directly call the function that it points to. IDDs should instead call [**IddCxGetVersion**](nf-iddcx-iddcxgetversion.md).
 
 ## -see-also
 

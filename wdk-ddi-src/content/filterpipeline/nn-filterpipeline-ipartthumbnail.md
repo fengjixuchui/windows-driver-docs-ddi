@@ -2,10 +2,8 @@
 UID: NN:filterpipeline.IPartThumbnail
 title: IPartThumbnail (filterpipeline.h)
 description: The IPartThumbnail interface is an abstraction for thumbnails in an XPS document.
-old-location: print\ipartthumbnail.htm
 tech.root: print
-ms.assetid: 2a651a3b-1a5b-4186-9cab-38d9055b8944
-ms.date: 04/20/2018
+ms.date: 06/11/2021
 keywords: ["IPartThumbnail interface"]
 ms.keywords: IPartThumbnail, IPartThumbnail interface [Print Devices], IPartThumbnail interface [Print Devices],described, filterpipeline/IPartThumbnail, filterpipeline_56710e0f-b3df-44e6-85a5-bd155284531f.xml, print.ipartthumbnail
 req.header: filterpipeline.h
@@ -43,18 +41,14 @@ api_name:
 
 # IPartThumbnail interface
 
-
 ## -description
 
-The <b>IPartThumbnail</b> interface is an abstraction for thumbnails in an XPS document.
+The **IPartThumbnail** interface is an abstraction for thumbnails in an XPS document.
 
 ## -inheritance
 
-The <b xmlns:loc="https://microsoft.com/wdcml/l10n">IPartThumbnail</b> interface inherits from <a href="/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-ipartbase">IPartBase</a>. <b>IPartThumbnail</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The **IPartThumbnail** interface inherits from [IPartBase](./nn-filterpipeline-ipartbase.md).
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/filterpipeline/nn-filterpipeline-ipartbase">IPartBase</a>
+[IPartBase](./nn-filterpipeline-ipartbase.md)

@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelScriptDebugBreakpoint.AddRef
 title: IDataModelScriptDebugBreakpoint::AddRef (dbgmodel.h)
-description: Increments the reference count for an interface on an object. This method should be called for every new copy of a pointer to an interface on an object.
-ms.assetid: 583d4bc4-0d65-4af0-a5f9-79cbddb4de4f
+description: "The IDataModelScriptDebugBreakpoint::AddRef method increments the reference count for an interface on an object."
 ms.date: 09/21/2018
 keywords: ["IDataModelScriptDebugBreakpoint::AddRef"]
 ms.keywords: IDataModelScriptDebugBreakpoint::AddRef, AddRef, IDataModelScriptDebugBreakpoint.AddRef, IDataModelScriptDebugBreakpoint::AddRef, IDataModelScriptDebugBreakpoint.AddRef
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelScriptDebugBreakpoint.AddRef
+ - IDataModelScriptDebugBreakpoint::AddRef
 ---
 
 # IDataModelScriptDebugBreakpoint::AddRef
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IDataModelScriptDebugBreakpoint interface](nn-dbgmodel-idatamodelscriptdebugbreakpoint.md)
+

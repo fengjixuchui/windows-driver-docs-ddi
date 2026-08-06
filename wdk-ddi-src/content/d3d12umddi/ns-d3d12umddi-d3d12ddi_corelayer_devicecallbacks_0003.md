@@ -1,13 +1,10 @@
 ---
 UID: NS:d3d12umddi.D3D12DDI_CORELAYER_DEVICECALLBACKS_0003
 title: D3D12DDI_CORELAYER_DEVICECALLBACKS_0003
-description: Contains Microsoft Direct3D 12 runtime callback functions that the user-mode display driver can use.
+description: The D3D12DDI_CORELAYER_DEVICECALLBACKS_0003 structure contains Microsoft Direct3D 12 runtime callback functions that a user-mode display driver can use.
 tech.root: display
-ms.assetid: a8959163-9639-4c75-aeb1-5aabad140a42
 ms.date: 04/04/2019
 keywords: ["D3D12DDI_CORELAYER_DEVICECALLBACKS_0003 structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: D3D12DDI_CORELAYER_DEVICECALLBACKS_0003, D3D12DDI_CORELAYER_DEVICECALLBACKS_0003,
 req.header: d3d12umddi.h
 req.include-header: 
@@ -35,8 +32,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - D3D12DDI_CORELAYER_DEVICECALLBACKS_0003
-product:
- - Windows
 dev_langs:
  - c++
 ---

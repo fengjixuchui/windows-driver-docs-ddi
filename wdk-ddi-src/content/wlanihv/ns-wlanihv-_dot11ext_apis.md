@@ -1,10 +1,9 @@
 ---
 UID: NS:wlanihv._DOT11EXT_APIS
 title: _DOT11EXT_APIS (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_APIS structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11ext_apis.htm
 tech.root: netvista
-ms.assetid: d533acbb-eb3b-4c49-a057-9a99faaacfc1
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_APIS structure"]
 ms.keywords: "*PDOT11EXT_APIS, DOT11EXT_APIS, DOT11EXT_APIS structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_27860ed6-1413-4bc6-9cd0-fb4391dff322.xml, PDOT11EXT_APIS, PDOT11EXT_APIS structure pointer [Network Drivers Starting with Windows Vista], _DOT11EXT_APIS, netvista.dot11ext_apis, wlanihv/DOT11EXT_APIS, wlanihv/PDOT11EXT_APIS"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DOT11EXT_APIS, *PDOT11EXT_APIS
-req.product: Windows 10 or later.
 f1_keywords:
  - _DOT11EXT_APIS
  - wlanihv/_DOT11EXT_APIS
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
+ - _DOT11EXT_APIS
+ - PDOT11EXT_APIS
  - DOT11EXT_APIS
 ---
 
@@ -180,7 +180,7 @@ A pointer to the
 
 ### -field Dot11ExtProcessSecurityPacket
 
-#### - Dot11ExtProcessOneXPacket
+### -field Dot11ExtProcessOneXPacket
 
 A pointer to the
      <a href="..\wlanihv\nc-wlanihv-dot11ext_process_onex_packet.md">
@@ -332,3 +332,4 @@ All of the function pointers are required and will not be set to <b>NULL</b>.
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11ext_send_notification.md">Dot11ExtSendNotification</a>
+

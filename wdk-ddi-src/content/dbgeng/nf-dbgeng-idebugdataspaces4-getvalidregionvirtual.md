@@ -4,7 +4,6 @@ title: IDebugDataSpaces4::GetValidRegionVirtual (dbgeng.h)
 description: The GetValidRegionVirtual method locates the first valid region of memory in a specified memory range.
 old-location: debugger\getvalidregionvirtual.htm
 tech.root: debugger
-ms.assetid: b580c2ef-94f9-4738-bd00-0d5a4753f71a
 ms.date: 05/03/2018
 keywords: ["IDebugDataSpaces4::GetValidRegionVirtual"]
 ms.keywords: GetValidRegionVirtual, GetValidRegionVirtual method [Windows Debugging], GetValidRegionVirtual method [Windows Debugging],IDebugDataSpaces4 interface, IDebugDataSpaces4 interface [Windows Debugging],GetValidRegionVirtual method, IDebugDataSpaces4.GetValidRegionVirtual, IDebugDataSpaces4::GetValidRegionVirtual, IDebugDataSpaces_594749e6-fa97-49fb-aabe-643ac4415ed9.xml, dbgeng/IDebugDataSpaces4::GetValidRegionVirtual, debugger.getvalidregionvirtual
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugDataSpaces4.GetValidRegionVirtual
+ - IDebugDataSpaces4::GetValidRegionVirtual
 ---
 
 # IDebugDataSpaces4::GetValidRegionVirtual
@@ -50,24 +49,24 @@ The <b>GetValidRegionVirtual</b> method locates the first valid region of memory
 
 ## -parameters
 
-### -param Base 
+### -param Base [in]
 
-[in]
+
 Specifies the address of the beginning of the memory range to search for valid memory.
 
-### -param Size 
+### -param Size [in]
 
-[in]
+
 Specifies the size, in bytes, of the memory range to search.
 
-### -param ValidBase 
+### -param ValidBase [out]
 
-[out]
+
 Receives the address of the beginning of the found valid memory.
 
-### -param ValidSize 
+### -param ValidSize [out]
 
-[out]
+
 Receives the size, in bytes, of the valid memory.
 
 ## -returns
@@ -99,3 +98,4 @@ The method was successful.
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugdataspaces4">IDebugDataSpaces4</a>
+

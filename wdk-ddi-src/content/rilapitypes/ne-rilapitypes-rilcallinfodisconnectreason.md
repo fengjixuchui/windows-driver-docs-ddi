@@ -1,11 +1,10 @@
 ---
 UID: NE:rilapitypes.RILCALLINFODISCONNECTREASON
 title: RILCALLINFODISCONNECTREASON (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this enumeration in your code. Microsoft reserves the RILCALLINFODISCONNECTREASON enumeration for internal use only."
 old-location: netvista\rilcallinfodisconnectreason.htm
 tech.root: netvista
-ms.assetid: 2e339b56-9130-4459-8ccd-171f721ae83e
-ms.date: 05/02/2018
+ms.date: 09/07/2022
 keywords: ["RILCALLINFODISCONNECTREASON enumeration"]
 ms.keywords: RILCALLINFODISCONNECTREASON, RILCALLINFODISCONNECTREASON enumeration [Network Drivers Starting with Windows Vista], RIL_DISCREASON_BUSY, RIL_DISCREASON_CONGESTION, RIL_DISCREASON_EMERGENCYFAILOVER, RIL_DISCREASON_EMERGENCYONLY, RIL_DISCREASON_HANDOVER_MERGE, RIL_DISCREASON_MAX, RIL_DISCREASON_NETWORKERROR, RIL_DISCREASON_NOSERVICE, RIL_DISCREASON_OTHEREXECUTORBUSY, RIL_DISCREASON_RADIOFADE, netvista.rilcallinfodisconnectreason, ntddrilapitypes/RILCALLINFODISCONNECTREASON, ntddrilapitypes/RIL_DISCREASON_BUSY, ntddrilapitypes/RIL_DISCREASON_CONGESTION, ntddrilapitypes/RIL_DISCREASON_EMERGENCYFAILOVER, ntddrilapitypes/RIL_DISCREASON_EMERGENCYONLY, ntddrilapitypes/RIL_DISCREASON_HANDOVER_MERGE, ntddrilapitypes/RIL_DISCREASON_MAX, ntddrilapitypes/RIL_DISCREASON_NETWORKERROR, ntddrilapitypes/RIL_DISCREASON_NOSERVICE, ntddrilapitypes/RIL_DISCREASON_OTHEREXECUTORBUSY, ntddrilapitypes/RIL_DISCREASON_RADIOFADE
 req.header: rilapitypes.h
@@ -72,3 +71,14 @@ This topic supports the Windows driver infrastructure and is not intended to be 
 
 ### -field RIL_DISCREASON_MAX
 
+### -field RIL_DISCREASON_NORMAL
+
+### -field RIL_DISCREASON_MODEMINTERNAL
+
+### -field RIL_DISCREASON_HANDOVERFAILURE
+
+### -field RIL_DISCREASON_UEFAILURE
+
+### -field RIL_DISCREASON_OTHER
+
+### -field RIL_DISCREASON_PROTOCOLERROR

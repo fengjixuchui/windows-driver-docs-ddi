@@ -1,8 +1,7 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_CREATE_SHADER_0003
 title: PFND3D12DDI_CREATE_SHADER_0003 (d3d12umddi.h)
-description: Create shader.
-ms.assetid: 789087e8-bc98-4ccf-936e-cf880c89d176
+description: The PFND3D12DDI_CREATE_SHADER_0003 callback function creates a display device shader.
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CREATE_SHADER_0003 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CREATE_SHADER_0003
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,7 +48,7 @@ Create shader.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
@@ -59,19 +56,19 @@ A handle to the display device (graphics context).
 
 Pointer to the shader code.
 
-### -param Arg3
+### -param unnamedParam3
 
 A root signature handle.
 
-### -param Arg4
+### -param unnamedParam4
 
 A shader handle.
 
-### -param Arg5
+### -param unnamedParam5
 
 Pointer to a D3D12DDIARG_STAGE_IO_SIGNATURES structure.
 
-### -param Arg6
+### -param unnamedParam6
 
 Flags to create a shader.
 

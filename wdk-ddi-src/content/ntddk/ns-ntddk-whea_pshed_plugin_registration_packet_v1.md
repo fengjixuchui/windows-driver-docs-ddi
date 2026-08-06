@@ -1,9 +1,8 @@
 ---
 UID: NS:ntddk._WHEA_PSHED_PLUGIN_REGISTRATION_PACKET_V1
 title: WHEA_PSHED_PLUGIN_REGISTRATION_PACKET_V1
-description: 
-tech.root: 
-ms.assetid: 10337aa9-051e-4efe-8423-8b3287ec68d5
+description: "Learn more about: WHEA_PSHED_PLUGIN_REGISTRATION_PACKET_V1 structure"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEA_PSHED_PLUGIN_REGISTRATION_PACKET_V1 structure"]
 ms.keywords: WHEA_PSHED_PLUGIN_REGISTRATION_PACKET_V1, WHEA_PSHED_PLUGIN_REGISTRATION_PACKET_V1,
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_PSHED_PLUGIN_REGISTRATION_PACKET_V1
  - WHEA_PSHED_PLUGIN_REGISTRATION_PACKET_V1
-product:
- - Windows
 ---
 
 # WHEA_PSHED_PLUGIN_REGISTRATION_PACKET_V1 structure
@@ -45,6 +43,7 @@ product:
 ## -description
 
 Reserved for system use.
+The WHEA_PSHED_PLUGIN_REGISTRATION_PACKET_V1 structure describes the data required for registering a PSHED plug-in with the PSHED.
 
 ## -struct-fields
 
@@ -52,15 +51,27 @@ Reserved for system use.
 
 ### -field Version
 
+The version of the WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure. V1 PSHED plug-ins must set this member to WHEA_PLUGIN_REGISTRATION_PACKET_V1.
+
 ### -field Context
+
+A PSHED plug-in-supplied context area that is passed to the PSHED plug-in's callback functions.
 
 ### -field FunctionalAreaMask
 
+A bit-wise OR'ed combination of flags that specifies the functional areas in which the PSHED plug-in participates. Possible flags are:
+
 ### -field Reserved
+
+Reserved for system use. PSHED plug-ins should set this member to zero.
 
 ### -field Callbacks
 
+A <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_whea_pshed_plugin_callbacks">WHEA_PSHED_PLUGIN_CALLBACKS</a> structure that describes the callback functions for the PSHED plug-in.
+
 ## -remarks
+
+V1 plugins do not allow for unregistering. If you try to unregister, a bugcheck may occur.
 
 ## -see-also
 

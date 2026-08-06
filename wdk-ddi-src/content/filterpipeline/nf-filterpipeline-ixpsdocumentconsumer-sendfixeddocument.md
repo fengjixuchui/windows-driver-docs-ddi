@@ -4,7 +4,6 @@ title: IXpsDocumentConsumer::SendFixedDocument (filterpipeline.h)
 description: The SendFixedDocument method sends a fixed document object to the pipeline.
 old-location: print\ixpsdocumentconsumer_sendfixeddocument.htm
 tech.root: print
-ms.assetid: 917dd9c3-5552-43d0-b396-9ba236f53132
 ms.date: 04/20/2018
 keywords: ["IXpsDocumentConsumer::SendFixedDocument"]
 ms.keywords: IXpsDocumentConsumer interface [Print Devices],SendFixedDocument method, IXpsDocumentConsumer.SendFixedDocument, IXpsDocumentConsumer::SendFixedDocument, SendFixedDocument, SendFixedDocument method [Print Devices], SendFixedDocument method [Print Devices],IXpsDocumentConsumer interface, filterpipeline/IXpsDocumentConsumer::SendFixedDocument, filterpipeline_a6ecc63d-889e-4ae1-8031-16accffa9c2a.xml, print.ixpsdocumentconsumer_sendfixeddocument
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - filterpipeline.h
 api_name:
- - IXpsDocumentConsumer.SendFixedDocument
+ - IXpsDocumentConsumer::SendFixedDocument
 ---
 
 # IXpsDocumentConsumer::SendFixedDocument
@@ -50,9 +49,9 @@ The <code>SendFixedDocument</code> method sends a fixed document object to the p
 
 ## -parameters
 
-### -param pIFixedDocument 
+### -param pIFixedDocument [in]
 
-[in]
+
 A pointer to an XPS fixed document object.
 
 ## -returns

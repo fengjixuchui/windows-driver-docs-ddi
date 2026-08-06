@@ -4,7 +4,6 @@ title: WdfCmResourceListAppendDescriptor function (wdfresource.h)
 description: The WdfCmResourceListAppendDescriptor method adds a resource descriptor to the end of a specified resource list.
 old-location: wdf\wdfcmresourcelistappenddescriptor.htm
 tech.root: wdf
-ms.assetid: 1a0f8ea5-9b1f-4301-b96d-aa37b80b4ce2
 ms.date: 02/26/2018
 keywords: ["WdfCmResourceListAppendDescriptor function"]
 ms.keywords: DFResourceObjectRef_13d42471-baa5-4985-a5fa-70336f2be352.xml, WdfCmResourceListAppendDescriptor, WdfCmResourceListAppendDescriptor method, kmdf.wdfcmresourcelistappenddescriptor, wdf.wdfcmresourcelistappenddescriptor, wdfresource/WdfCmResourceListAppendDescriptor
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfCmResourceListAppendDescriptor</b> method adds a resource descriptor t
 
 ## -parameters
 
-### -param List 
+### -param List [in]
 
-[in]
+
 A handle to a framework resource-list object that represents a list of hardware resources for a device.
 
-### -param Descriptor 
+### -param Descriptor [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes a hardware resource.
 
 ## -returns

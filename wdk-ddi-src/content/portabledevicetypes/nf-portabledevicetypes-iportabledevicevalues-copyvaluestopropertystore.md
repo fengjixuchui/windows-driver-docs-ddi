@@ -4,7 +4,6 @@ title: IPortableDeviceValues::CopyValuesToPropertyStore (portabledevicetypes.h)
 description: Copies all the values from a collection into an IPropertyStore interface.
 old-location: wpddk\iportabledevicevalues_copyvaluestopropertystore.htm
 tech.root: wpd_dk
-ms.assetid: 46bf7f4e-f1cc-413d-bd3b-229399741eb9
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::CopyValuesToPropertyStore"]
 ms.keywords: CopyValuesToPropertyStore, CopyValuesToPropertyStore method, CopyValuesToPropertyStore method,IPortableDeviceValues interface, IPortableDeviceValues interface,CopyValuesToPropertyStore method, IPortableDeviceValues.CopyValuesToPropertyStore, IPortableDeviceValues::CopyValuesToPropertyStore, IPortableDeviceValuesCopyValuesToPropertyStore, portabledevicetypes/IPortableDeviceValues::CopyValuesToPropertyStore, wpddk.iportabledevicevalues_copyvaluestopropertystore
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.CopyValuesToPropertyStore
+ - IPortableDeviceValues::CopyValuesToPropertyStore
 ---
 
 # IPortableDeviceValues::CopyValuesToPropertyStore
@@ -51,9 +50,9 @@ Copies all the values from a collection into an <b>IPropertyStore</b> interface.
 
 ## -parameters
 
-### -param pStore 
+### -param pStore [in]
 
-[in]
+
 Pointer to a store object.
 
 ## -returns
@@ -85,3 +84,4 @@ Many external applications or components that communicate with your application,
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevalues">IPortableDeviceValues Interface</a>
+

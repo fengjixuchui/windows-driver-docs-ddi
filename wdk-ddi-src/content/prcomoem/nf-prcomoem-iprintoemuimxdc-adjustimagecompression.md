@@ -4,7 +4,6 @@ title: IPrintOemUIMXDC::AdjustImageCompression (prcomoem.h)
 description: The IPrintOemUIMXDC::AdjustImageCompression method allows an XPS filter pipeline driver to use UnidrvUI.dll or PS5UI.dll to support configuration of compression level for JPEG or PNG images.
 old-location: print\iprintoemuimxdc_adjustimagecompression.htm
 tech.root: print
-ms.assetid: d9606c9b-4a47-4e83-ad8a-ef82e2c70de3
 ms.date: 04/20/2018
 keywords: ["IPrintOemUIMXDC::AdjustImageCompression"]
 ms.keywords: AdjustImageCompression, AdjustImageCompression method [Print Devices], AdjustImageCompression method [Print Devices],IPrintOemUIMXDC interface, IPrintOemUIMXDC interface [Print Devices],AdjustImageCompression method, IPrintOemUIMXDC.AdjustImageCompression, IPrintOemUIMXDC::AdjustImageCompression, prcomoem/IPrintOemUIMXDC::AdjustImageCompression, print.iprintoemuimxdc_adjustimagecompression, print_unidrv-pscript_ui_a4a6182b-9471-473a-9c16-15f56dcddda5.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - prcomoem.h
 api_name:
- - IPrintOemUIMXDC.AdjustImageCompression
+ - IPrintOemUIMXDC::AdjustImageCompression
 ---
 
 # IPrintOemUIMXDC::AdjustImageCompression
@@ -154,3 +153,4 @@ Highest quality and largest file size
 The <i>pCompressionMode</i> parameter is IN OUT. All other parameters for this function are input only.
 
 If the plug-in cannot complete the operation, it should return an appropriate failure HRESULT, which causes the current print job to fail.
+

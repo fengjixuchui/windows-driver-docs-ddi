@@ -1,9 +1,8 @@
 ---
 UID: NS:d3dkmddi._DXGKARG_SUSPENDCONTEXT
-title: _DXGKARG_SUSPENDCONTEXT (d3dkmddi.h)
-description: Arguments used in the DxgkddiSuspendContext callback function.
-ms.assetid: 3ca4dc90-55b2-4b5d-8f58-0967e817a26d
-ms.date: 10/19/2018
+title: DXGKARG_SUSPENDCONTEXT (d3dkmddi.h)
+description: Learn more about the _DXGKARG_SUSPENDCONTEXT structure.
+ms.date: 04/08/2024
 keywords: ["DXGKARG_SUSPENDCONTEXT structure"]
 ms.keywords: _DXGKARG_SUSPENDCONTEXT, DXGKARG_SUSPENDCONTEXT,
 req.header: d3dkmddi.h
@@ -35,26 +34,26 @@ api_location:
  - d3dkmddi.h
 api_name:
  - _DXGKARG_SUSPENDCONTEXT
+ - DXGKARG_SUSPENDCONTEXT
 dev_langs:
  - c++
 ---
 
-# _DXGKARG_SUSPENDCONTEXT structure
-
+# DXGKARG_SUSPENDCONTEXT structure
 
 ## -description
 
-Arguments used in the [DxgkddiSuspendContext](nc-d3dkmddi-dxgkddi_suspendcontext.md) callback function.
+The **DXGKARG_SUSPENDCONTEXT** structure contains arguments used in the [**DxgkddiSuspendContext**](nc-d3dkmddi-dxgkddi_suspendcontext.md) callback function.
 
 ## -struct-fields
 
 ### -field hContext
 
-The hardware context to be preempted and marked as suspended. This type of preemption request does not have a grace period, and is expected to be honored by the GPU as soon as possible.
+[in] The hardware context to be preempted and marked as suspended. This type of preemption request does not have a grace period, and is expected to be honored by the GPU as soon as possible.
 
 ### -field contextSuspendFence
 
-A monotonically increasing per-context value that will be reported by the GPU context suspended interrupt once the preemption request is completed. Until the fence is signaled, the OS cannot assume GPU is suspended.
+[in] A monotonically increasing per-context value that will be reported by the GPU context suspended interrupt once the preemption request is completed. Until the fence is signaled, the OS cannot assume GPU is suspended.
 
 ## -remarks
 
@@ -62,3 +61,4 @@ The context suspend fence value is necessary to handle cases when the OS suspend
 
 ## -see-also
 
+[**DxgkddiSuspendContext**](nc-d3dkmddi-dxgkddi_suspendcontext.md)

@@ -4,7 +4,6 @@ title: UdecxUsbDeviceInitSetStateChangeCallbacks function (udecxusbdevice.h)
 description: Initializes a WDF-allocated structure with pointers to callback functions.
 old-location: buses\udecxusbdeviceinitsetstatechangecallbacks.htm
 tech.root: usbref
-ms.assetid: A4D0B6BC-56FD-4378-A8F9-0A306D3FF22F
 ms.date: 05/07/2018
 keywords: ["UdecxUsbDeviceInitSetStateChangeCallbacks function"]
 ms.keywords: UdecxUsbDeviceInitSetStateChangeCallbacks, UdecxUsbDeviceInitSetStateChangeCallbacks function [Buses], buses.udecxusbdeviceinitsetstatechangecallbacks, udecxusbdevice/UdecxUsbDeviceInitSetStateChangeCallbacks
@@ -51,14 +50,14 @@ Initializes a WDF-allocated structure with pointers to callback functions.
 
 ## -parameters
 
-### -param UdecxUsbDeviceInit 
+### -param UdecxUsbDeviceInit [in, out]
 
-[in, out]
+
 A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="/windows-hardware/drivers/ddi/udecxusbdevice/nf-udecxusbdevice-udecxusbdeviceinitallocate">UdecxUsbDeviceInitAllocate</a>.
 
-### -param Callbacks 
+### -param Callbacks [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/udecxusbdevice/ns-udecxusbdevice-_udecx_usb_device_state_change_callbacks">UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS</a> structure that contains pointers to callback functions implemented by the client driver.
 
 ## -see-also

@@ -4,7 +4,6 @@ title: _CMP_DELETE_PLUG (61883.h)
 description: This structure is used to delete a plug.Av61883_CreatePlug.
 old-location: ieee\cmp_delete_plug.htm
 tech.root: IEEE
-ms.assetid: 93F81B97-5C37-47BF-8867-0FBEFA8F6D3B
 ms.date: 02/15/2018
 keywords: ["CMP_DELETE_PLUG structure"]
 ms.keywords: "*PCMP_DELETE_PLUG, 61883/CMP_DELETE_PLUG, 61883/PCMP_DELETE_PLUG, CMP_DELETE_PLUG, CMP_DELETE_PLUG structure [Buses], IEEE.cmp_delete_plug, PCMP_DELETE_PLUG, PCMP_DELETE_PLUG structure pointer [Buses], _CMP_DELETE_PLUG"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _CMP_DELETE_PLUG
+ - PCMP_DELETE_PLUG
  - CMP_DELETE_PLUG
 ---
 
@@ -50,7 +51,7 @@ api_name:
 
 ## -description
 
-This structure is used to delete a plug.The request deletes a plug control register (iPCR or oPCR) that was created with <a href="https://msdn.microsoft.com/library/windows/hardware/ff536961">Av61883_CreatePlug</a>. A driver is responsible for deleting all of the plugs it has created before the system unloads the driver.
+This structure is used to delete a plug.The request deletes a plug control register (iPCR or oPCR) that was created with Av61883_CreatePlug. A driver is responsible for deleting all of the plugs it has created before the system unloads the driver.
 
 ## -struct-fields
 
@@ -65,3 +66,4 @@ If successful, the IEC-61883 protocol driver sets <b>Irp->IoStatus.Status </b>to
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_av_61883_request">AV_61883_REQUEST</a>
+

@@ -4,7 +4,6 @@ title: EVT_WDF_DEVICE_PROCESS_QUERY_INTERFACE_REQUEST (wdfqueryinterface.h)
 description: A driver's EvtDeviceProcessQueryInterfaceRequest event callback function examines another driver's request for access to a driver-defined interface, before the framework passes the interface to the requesting driver.
 old-location: wdf\evtdeviceprocessqueryinterfacerequest.htm
 tech.root: wdf
-ms.assetid: b56fef85-4058-4942-90c0-36646164cd3e
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DEVICE_PROCESS_QUERY_INTERFACE_REQUEST callback function"]
 ms.keywords: DFDeviceObjectDriverDefIntRef_e38de652-334f-4b7a-b455-22c0eea8d8fd.xml, EVT_WDF_DEVICE_PROCESS_QUERY_INTERFACE_REQUEST, EVT_WDF_DEVICE_PROCESS_QUERY_INTERFACE_REQUEST callback, EvtDeviceProcessQueryInterfaceRequest, EvtDeviceProcessQueryInterfaceRequest callback function, kmdf.evtdeviceprocessqueryinterfacerequest, wdf.evtdeviceprocessqueryinterfacerequest, wdfqueryinterface/EvtDeviceProcessQueryInterfaceRequest
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfQueryInterface.h
 api_name:
- - EvtDeviceProcessQueryInterfaceRequest
+ - EVT_WDF_DEVICE_PROCESS_QUERY_INTERFACE_REQUEST
 ---
 
 # EVT_WDF_DEVICE_PROCESS_QUERY_INTERFACE_REQUEST callback function
@@ -52,24 +51,24 @@ A driver's <i>EvtDeviceProcessQueryInterfaceRequest</i> event callback function 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param InterfaceType 
+### -param InterfaceType [in]
 
-[in]
+
 A pointer to the GUID that identifies the driver-defined interface.
 
-### -param ExposedInterface 
+### -param ExposedInterface [in, out]
 
-[in, out]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface">INTERFACE</a> structure that describes the driver-defined interface and was provided by the driver that is requesting access to the interface.
 
-### -param ExposedInterfaceSpecificData 
+### -param ExposedInterfaceSpecificData [in, out]
 
-[in, out]
+
 A pointer to additional, optional, driver-defined, interface-specific information. Framework-based drivers specify this value by providing a non-<b>NULL</b> <i>InterfaceSpecificData</i> parameter value when calling <a href="/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoqueryforinterface">WdfFdoQueryForInterface</a>.
 
 ## -returns
@@ -133,7 +132,9 @@ NTSTATUS
   {...}
 ```
 
-The <b>EVT_WDF_DEVICE_PROCESS_QUERY_INTERFACE_REQUEST</b> function type is defined in the WdfQueryInterface.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_WDF_DEVICE_PROCESS_QUERY_INTERFACE_REQUEST</b> function type in the header file are used. For more information about the requirements for function declarations, see <a href="/windows-hardware/drivers/devtest/declaring-functions-by-using-function-role-types-for-kmdf-drivers">Declaring Functions by Using Function Role Types for KMDF Drivers</a>. For information about _Use_decl_annotations_, see <a href="/visualstudio/code-quality/annotating-function-behavior?view=vs-2015">Annotating Function Behavior</a>.
+The <b>EVT_WDF_DEVICE_PROCESS_QUERY_INTERFACE_REQUEST</b> function type is defined in the WdfQueryInterface.h header file. To more accurately identify errors when you run the code analysis tools, be sure to add the _Use_decl_annotations_ annotation to your function definition. The _Use_decl_annotations_ annotation ensures that the annotations that are applied to the <b>EVT_WDF_DEVICE_PROCESS_QUERY_INTERFACE_REQUEST</b> function type in the header file are used.
+For more information about the requirements for function declarations, see <a href="/windows-hardware/drivers/devtest/declaring-functions-by-using-function-role-types-for-kmdf-drivers">Declaring Functions by Using Function Role Types for KMDF Drivers</a>.
+For information about _Use_decl_annotations_, see <a href="/cpp/code-quality/annotating-function-behavior">Annotating Function Behavior</a>.
 
 ## -see-also
 
@@ -150,3 +151,4 @@ The <b>EVT_WDF_DEVICE_PROCESS_QUERY_INTERFACE_REQUEST</b> function type is defin
 
 
 <a href="/windows-hardware/drivers/ddi/wdffdo/nf-wdffdo-wdffdoqueryforinterface">WdfFdoQueryForInterface</a>
+

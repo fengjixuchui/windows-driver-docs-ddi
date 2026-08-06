@@ -4,7 +4,6 @@ title: DXGKDDI_OPM_DESTROY_PROTECTED_OUTPUT (dispmprt.h)
 description: The DxgkDdiOPMDestroyProtectedOutput function destroys the given protected output object.
 old-location: display\dxgkddiopmdestroyprotectedoutput.htm
 tech.root: display
-ms.assetid: a03381ba-342e-409f-99ab-9790e1d74371
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_OPM_DESTROY_PROTECTED_OUTPUT callback function"]
 ms.keywords: DXGKDDI_OPM_DESTROY_PROTECTED_OUTPUT, DXGKDDI_OPM_DESTROY_PROTECTED_OUTPUT callback, Dm_Opm_functions_e744a9ff-d14b-4cef-aed6-4dba714dc695.xml, DxgkDdiOPMDestroyProtectedOutput, DxgkDdiOPMDestroyProtectedOutput callback function [Display Devices], display.dxgkddiopmdestroyprotectedoutput, dispmprt/DxgkDdiOPMDestroyProtectedOutput
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
- - DxgkDdiOPMDestroyProtectedOutput
+ - DXGKDDI_OPM_DESTROY_PROTECTED_OUTPUT
 ---
 
 # DXGKDDI_OPM_DESTROY_PROTECTED_OUTPUT callback function
@@ -50,14 +49,14 @@ The <i>DxgkDdiOPMDestroyProtectedOutput</i> function destroys the given protecte
 
 ## -parameters
 
-### -param MiniportDeviceContext 
+### -param MiniportDeviceContext [in]
 
-[in]
+
 A handle to a context block associated with a display adapter. Previously, the display miniport driver's <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function provided this handle to the DirectX graphics kernel subsystem.
 
-### -param ProtectedOutputHandle 
+### -param ProtectedOutputHandle [in]
 
-[in]
+
 The handle to a protected output object. The <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_create_protected_output">DxgkDdiOPMCreateProtectedOutput</a> function creates the protected output object and returns the handle to the object.
 
 ## -returns
@@ -80,3 +79,4 @@ The DirectX graphics kernel subsystem calls <i>DxgkDdiOPMDestroyProtectedOutput<
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_create_protected_output">DxgkDdiOPMCreateProtectedOutput</a>
+

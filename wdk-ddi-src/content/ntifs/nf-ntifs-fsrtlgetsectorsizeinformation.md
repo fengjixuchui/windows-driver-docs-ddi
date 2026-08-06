@@ -4,7 +4,6 @@ title: FsRtlGetSectorSizeInformation function (ntifs.h)
 description: The FsRtlGetSectorSizeInformation routine retrieves the physical and logical sector size information for a storage volume.
 old-location: ifsk\fsrtlgetsectorsizeinformation.htm
 tech.root: ifsk
-ms.assetid: 337E5450-8C90-48B7-B344-FB9420498D4F
 ms.date: 04/16/2018
 keywords: ["FsRtlGetSectorSizeInformation function"]
 ms.keywords: FsRtlGetSectorSizeInformation, FsRtlGetSectorSizeInformation routine [Installable File System Drivers], ifsk.fsrtlgetsectorsizeinformation, ntifs/FsRtlGetSectorSizeInformation
@@ -54,9 +53,9 @@ The <b>FsRtlGetSectorSizeInformation</b> routine retrieves the physical and logi
 
 <p>The target device object for a storage device.</p>
 
-### -param SectorSizeInfo 
+### -param SectorSizeInfo [out]
 
-[out]
+
 A pointer to a caller supplied <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_file_fs_sector_size_information">FILE_FS_SECTOR_SIZE_INFORMATION</a> structure.
 
 ## -returns

@@ -1,10 +1,9 @@
 ---
 UID: NF:portabledevicetypes.IPortableDeviceValuesCollection.GetCount
 title: IPortableDeviceValuesCollection::GetCount (portabledevicetypes.h)
-description: Retrieves the number of items in the collection.
+description: Learn how this method retrieves the number of items in the collection.
 old-location: wpddk\iportabledevicevaluescollection_getcount.htm
 tech.root: wpd_dk
-ms.assetid: e94a1a6a-8c2d-45ee-96cf-08566373e8f5
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValuesCollection::GetCount"]
 ms.keywords: GetCount, GetCount method, GetCount method,IPortableDeviceValuesCollection interface, IPortableDeviceValuesCollection interface,GetCount method, IPortableDeviceValuesCollection.GetCount, IPortableDeviceValuesCollection::GetCount, IPortableDeviceValuesCollectionGetCount, portabledevicetypes/IPortableDeviceValuesCollection::GetCount, wpddk.iportabledevicevaluescollection_getcount
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValuesCollection.GetCount
+ - IPortableDeviceValuesCollection::GetCount
 ---
 
 # IPortableDeviceValuesCollection::GetCount
@@ -51,9 +50,9 @@ Retrieves the number of items in the collection.
 
 ## -parameters
 
-### -param pcElems 
+### -param pcElems [in]
 
-[in]
+
 Pointer to a <b>DWORD</b> that contains the number of <b>IPortableDeviceValues</b> interfaces in the collection.
 
 ## -returns
@@ -96,3 +95,4 @@ None.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevaluescollection">IPortableDeviceValuesCollection Interface</a>
+

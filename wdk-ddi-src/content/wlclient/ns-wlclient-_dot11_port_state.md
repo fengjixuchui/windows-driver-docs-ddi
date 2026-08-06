@@ -1,10 +1,9 @@
 ---
 UID: NS:wlclient._DOT11_PORT_STATE
 title: _DOT11_PORT_STATE (wlclient.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_PORT_STATE structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_port_state.htm
 tech.root: netvista
-ms.assetid: 09d36c81-d480-48c6-8633-c79061420217
 ms.date: 02/16/2018
 keywords: ["DOT11_PORT_STATE structure"]
 ms.keywords: "*PDOT11_PORT_STATE, DOT11_PORT_STATE, DOT11_PORT_STATE structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_679b7f27-efba-43e8-9d20-7047c770b7db.xml, PDOT11_PORT_STATE, PDOT11_PORT_STATE structure pointer [Network Drivers Starting with Windows Vista], _DOT11_PORT_STATE, netvista.dot11_port_state, wlclient/DOT11_PORT_STATE, wlclient/PDOT11_PORT_STATE"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DOT11_PORT_STATE, *PDOT11_PORT_STATE
-req.product: Windows 10 or later.
 f1_keywords:
  - _DOT11_PORT_STATE
  - wlclient/_DOT11_PORT_STATE
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wlclient.h
 api_name:
+ - _DOT11_PORT_STATE
+ - PDOT11_PORT_STATE
  - DOT11_PORT_STATE
 ---
 
@@ -113,3 +113,4 @@ The operating system passes in the current port state of the security session th
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_perform_post_associate.md">
    Dot11ExtIhvPerformPostAssociate</a>
+

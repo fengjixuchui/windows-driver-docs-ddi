@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILUICCFILELOCKSTATUS
 title: RILUICCFILELOCKSTATUS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILUICCFILELOCKSTATUS structure for internal use only. Don't use this structure in your code."
 old-location: netvista\riluiccfilelockstatus_2.htm
 tech.root: netvista
-ms.assetid: a06cba0a-9ab6-4125-a506-5cc1d0c1055c
 ms.date: 02/26/2018
 keywords: ["RILUICCFILELOCKSTATUS structure"]
 ms.keywords: "*LPRILUICCFILELOCKSTATUS, RILUICCFILELOCKSTATUS, RILUICCFILELOCKSTATUS structure [Network Drivers Starting with Windows Vista], netvista.riluiccfilelockstatus_2, rilapitypes/RILUICCFILELOCKSTATUS"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: RILUICCFILELOCKSTATUS, *LPRILUICCFILELOCKSTATUS
-req.product: Windows 10 or later.
 f1_keywords:
  - RILUICCFILELOCKSTATUS
  - rilapitypes/RILUICCFILELOCKSTATUS
@@ -42,6 +40,7 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILUICCFILELOCKSTATUS
+ - LPRILUICCFILELOCKSTATUS
 ---
 
 # RILUICCFILELOCKSTATUS structure (rilapitypes.h)

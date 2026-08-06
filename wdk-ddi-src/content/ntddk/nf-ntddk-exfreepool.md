@@ -1,10 +1,9 @@
 ---
 UID: NF:ntddk.ExFreePool
 title: ExFreePool macro (ntddk.h)
-description: The ExFreePool routine deallocates a block of pool memory.
+description: The ExFreePool macro (ntddk.h) routine deallocates a specified block of pool memory that was previously allocated.
 old-location: kernel\exfreepool.htm
 tech.root: kernel
-ms.assetid: c26f9b28-396d-40de-bdc3-287fc3ac4113
 ms.date: 04/30/2018
 keywords: ["ExFreePool macro"]
 ms.keywords: ExFreePool, ExFreePool routine [Kernel-Mode Driver Architecture], k102_134b475a-f669-4f1e-8836-f41945d7230c.xml, kernel.exfreepool, wdm/ExFreePool

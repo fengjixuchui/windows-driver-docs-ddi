@@ -1,10 +1,8 @@
 ---
 UID: NF:wiamdef.WIAS_LWARNING
 title: WIAS_LWARNING macro (wiamdef.h)
-description: The WIAS_LWARNING macro is obsolete for Windows Vista. The WIAS_LWARNING macro writes a diagnostic WIA_WARNING message to the log file.
-old-location: image\wias_lwarning.htm
+description: The WIAS_LWARNING macro is obsolete, do not use.
 tech.root: image
-ms.assetid: 2959c470-1da7-4396-a591-7a356379f9de
 ms.date: 05/03/2018
 keywords: ["WIAS_LWARNING macro"]
 ms.keywords: IWiaLog_bac21803-be4c-4ce0-a241-b9380cb627ab.xml, WIAS_LWARNING, WIAS_LWARNING macro [Imaging Devices], image.wias_lwarning, wiamdef/WIAS_LWARNING
@@ -41,12 +39,10 @@ api_name:
  - WIAS_LWARNING
 ---
 
-# WIAS_LWARNING macro (wiamdef.h)
-
-
 ## -description
 
-The WIAS_LWARNING macro is obsolete. Do not use.
+> [!CAUTION]
+> The WIAS_LWARNING macro is obsolete. Do not use.
 
 The WIAS_LWARNING macro writes a diagnostic WIA_WARNING message to the log file.
 
@@ -54,7 +50,11 @@ The WIAS_LWARNING macro writes a diagnostic WIA_WARNING message to the log file.
 
 ### -param pILog
 
+Defines the **x** parameter *pILog*.
+
 ### -param ResID
+
+Defines the **y** parameter *ResID*.
 
 ### -param Args
 
@@ -68,7 +68,8 @@ The WIAS_LWARNING macro writes a diagnostic WIA_WARNING message to the log file.
 
 The following is an example of how the macro can be used:
 
-```cppWIAS_LWARNING(g_pIWiaLog, WIALOG_NO_RESOURCE_ID, ("MyClass::MyMethod, This is my text and my lValue = %d", lValue));
+```cpp
+WIAS_LWARNING(g_pIWiaLog, WIALOG_NO_RESOURCE_ID, ("MyClass::MyMethod, This is my text and my lValue = %d", lValue));
 ```
 
 Please note that it does not write to the new log file used in modern Windows operating systems.

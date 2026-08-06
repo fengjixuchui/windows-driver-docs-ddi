@@ -4,7 +4,6 @@ title: IDebugSymbols3::SetSymbolPathWide (dbgeng.h)
 description: The SetSymbolPathWide method sets the symbol path.
 old-location: debugger\setsymbolpathwide.htm
 tech.root: debugger
-ms.assetid: 44ee3342-3677-4eee-8ddf-d0a01e9bb309
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::SetSymbolPathWide"]
 ms.keywords: IDebugSymbols3 interface [Windows Debugging],SetSymbolPathWide method, IDebugSymbols3.SetSymbolPathWide, IDebugSymbols3::SetSymbolPathWide, SetSymbolPathWide, SetSymbolPathWide method [Windows Debugging], SetSymbolPathWide method [Windows Debugging],IDebugSymbols3 interface, dbgeng/IDebugSymbols3::SetSymbolPathWide, debugger.setsymbolpathwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols3.SetSymbolPathWide
+ - IDebugSymbols3::SetSymbolPathWide
 ---
 
 # IDebugSymbols3::SetSymbolPathWide
@@ -50,9 +49,9 @@ The <b>SetSymbolPathWide</b>  method sets the symbol path.
 
 ## -parameters
 
-### -param Path 
+### -param Path [in]
 
-[in]
+
 Specifies the new symbol path.  This is a string that contains symbol path elements separated by semicolons (;).  Each symbol path element can specify either a directory or a symbol server.
 
 ## -returns
@@ -92,3 +91,4 @@ For more information about manipulating the symbol path, see <a href="/windows-h
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

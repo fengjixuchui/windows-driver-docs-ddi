@@ -4,7 +4,6 @@ title: IOCTL_GNSS_LISTEN_AGNSS (gnssdriver.h)
 description: The IOCTL_GNSS_LISTEN_AGNSS control code is used by the GNSS adapter to start listening for AGNSS requests issued by the GNSS driver.
 old-location: gnss\ioctl_gnss_listen_agnss.htm
 tech.root: gnss
-ms.assetid: B065CDE1-BB6D-4209-881B-50743A38EDBE
 ms.date: 02/15/2018
 keywords: ["IOCTL_GNSS_LISTEN_AGNSS IOCTL"]
 ms.keywords: IOCTL_GNSS_LISTEN_AGNSS, IOCTL_GNSS_LISTEN_AGNSS control, IOCTL_GNSS_LISTEN_AGNSS control code [Sensor Devices], gnss.ioctl_gnss_listen_agnss, gnssdriver/IOCTL_GNSS_LISTEN_AGNSS
@@ -49,6 +48,8 @@ api_name:
 The <b>IOCTL_GNSS_LISTEN_AGNSS</b> control code is used by the GNSS adapter to start listening for AGNSS requests issued by the GNSS driver. This IOCTL effectively provides the GNSS driver with a pending I/O request, the asynchronous resolution of which notifies the adapter, through the overlapped structures GnssEvent member, that the driver requires an AGNSS injection. The GnssEvent member is a <a href="/windows-hardware/drivers/ddi/gnssdriver/ns-gnssdriver-gnss_event">GNSS_EVENT</a> structure. The GNSS adapter ensures that this request is always pending and will issue a new request as soon as the pending one is resolved. When the I/O request is resolved the GNSS adapter will issue a corresponding <a href="/windows-hardware/drivers/ddi/gnssdriver/ni-gnssdriver-ioctl_gnss_inject_agnss">IOCTL_GNSS_INJECT_AGNSS</a> with the appropriate injection data.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

@@ -1,10 +1,9 @@
 ---
 UID: NF:wdtfpnpaction.IWDTFPNPActions2.EDTCancelStopDevice
 title: IWDTFPNPActions2::EDTCancelStopDevice (wdtfpnpaction.h)
-description: Sends an IRP_MN_CANCEL_STOP_DEVICE event to the target device.
+description: Learn how the method sends an IRP_MN_CANCEL_STOP_DEVICE event to the target device.
 old-location: dtf\iwdtfpnpactions2_edtcancelstopdevice.htm
 tech.root: dtf
-ms.assetid: b0616c88-1304-4d39-b7bd-e7d1355a9de6
 ms.date: 04/04/2018
 keywords: ["IWDTFPNPActions2::EDTCancelStopDevice"]
 ms.keywords: EDTCancelStopDevice, EDTCancelStopDevice method [Windows Device Testing Framework], EDTCancelStopDevice method [Windows Device Testing Framework],IWDTFPNPActions2 interface, IWDTFPNPActions2 interface [Windows Device Testing Framework],EDTCancelStopDevice method, IWDTFPNPActions2.EDTCancelStopDevice, IWDTFPNPActions2::EDTCancelStopDevice, dtf.iwdtfpnpactions2_edtcancelstopdevice, wdtfpnpaction/IWDTFPNPActions2::EDTCancelStopDevice
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdtfpnpaction.h
 api_name:
- - IWDTFPNPActions2.EDTCancelStopDevice
+ - IWDTFPNPActions2::EDTCancelStopDevice
 ---
 
 # IWDTFPNPActions2::EDTCancelStopDevice
@@ -50,9 +49,9 @@ Sends an IRP_MN_CANCEL_STOP_DEVICE event to the target device.
 
 ## -parameters
 
-### -param pbSuccess 
+### -param pbSuccess [out, retval]
 
-[out, retval]
+
 True if the operation succeeds; otherwise, false.
 
 ## -returns
@@ -72,6 +71,3 @@ It is possible for the filter drivers that are loaded above the helper driver
 to fail the query IRP as well. In that case, the helper driver will indicate this condition 
 by setting EDTRS_QueryStopVetoed in ppResult.
 
-## -see-also
-
-<a href="/windows-hardware/drivers/ddi/index">IWDTFPNPActions2</a>

@@ -4,7 +4,6 @@ title: PoSetSystemState function (wdm.h)
 description: Drivers call the PoSetSystemState routine to indicate that the system is active.
 old-location: kernel\posetsystemstate.htm
 tech.root: kernel
-ms.assetid: b62db582-381a-457f-9755-d8667c7561af
 ms.date: 04/30/2018
 keywords: ["PoSetSystemState function"]
 ms.keywords: PoSetSystemState, PoSetSystemState routine [Kernel-Mode Driver Architecture], kernel.posetsystemstate, portn_f20a5d5b-d863-4ff7-8837-6a7e625271d7.xml, wdm/PoSetSystemState
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ Drivers call the <b>PoSetSystemState</b> routine to indicate that the system is 
 
 ## -parameters
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Indicates the system activity, as specified by a bitwise OR of one or more of the following values:
 
 

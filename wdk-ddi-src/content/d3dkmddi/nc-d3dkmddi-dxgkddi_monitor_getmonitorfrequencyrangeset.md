@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_MONITOR_GETMONITORFREQUENCYRANGESET
 title: DXGKDDI_MONITOR_GETMONITORFREQUENCYRANGESET (d3dkmddi.h)
 description: The pfnGetMonitorFrequencyRangeSet function returns a handle to the monitor frequency range set object that is associated with a specified monitor.
 old-location: display\dxgk_monitor_interface_pfngetmonitorfrequencyrangeset.htm
-ms.assetid: 78b80dbb-af1e-457c-854f-ff0404ab9808
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_MONITOR_GETMONITORFREQUENCYRANGESET callback function"]
 ms.keywords: DXGKDDI_MONITOR_GETMONITORFREQUENCYRANGESET, DXGKDDI_MONITOR_GETMONITORFREQUENCYRANGESET callback, VidPnFunctions_2088f146-59a2-49d1-9295-21a28d50e2d0.xml, d3dkmddi/pfnGetMonitorFrequencyRangeSet, display.dxgk_monitor_interface_pfngetmonitorfrequencyrangeset, pfnGetMonitorFrequencyRangeSet, pfnGetMonitorFrequencyRangeSet callback function [Display Devices]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - pfnGetMonitorFrequencyRangeSet
-product:
- - Windows
+ - DXGKDDI_MONITOR_GETMONITORFREQUENCYRANGESET
 ---
 
 # DXGKDDI_MONITOR_GETMONITORFREQUENCYRANGESET callback function
@@ -52,21 +49,21 @@ The <b>pfnGetMonitorFrequencyRangeSet</b> function returns a handle to the monit
 
 ## -parameters
 
-### -param hAdapter
+### -param hAdapter [in]
 
-[in] A handle that identifies a display adapter. The Microsoft DirectX graphics kernel subsystem previously provided this handle to the display miniport driver in the <i>DxgkInterface</i> parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device">DxgkDdiStartDevice</a> function.
+A handle that identifies a display adapter. The Microsoft DirectX graphics kernel subsystem previously provided this handle to the display miniport driver in the <i>DxgkInterface</i> parameter of the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device">DxgkDdiStartDevice</a> function.
 
-### -param VideoPresentTargetId
+### -param VideoPresentTargetId [in]
 
-[in] An integer that identifies one of the video present targets on the display adapter. The returned monitor frequency range set object describes the frequency ranges available on the monitor that is connected to this video present target.
+An integer that identifies one of the video present targets on the display adapter. The returned monitor frequency range set object describes the frequency ranges available on the monitor that is connected to this video present target.
 
-### -param phMonitorFrequencyRangeSet
+### -param phMonitorFrequencyRangeSet [out]
 
-[out] A pointer to a variable that receives a handle to the monitor frequency range set object.
+A pointer to a variable that receives a handle to the monitor frequency range set object.
 
-### -param ppMonitorFrequencyRangeSetInterface
+### -param ppMonitorFrequencyRangeSetInterface [out]
 
-[out] A pointer to a variable that receives a pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_monitorfrequencyrangeset_interface">DXGK_MONITORFREQUENCYRANGESET_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the monitor frequency range set object.
+A pointer to a variable that receives a pointer to a <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_monitorfrequencyrangeset_interface">DXGK_MONITORFREQUENCYRANGESET_INTERFACE</a> structure. The structure contains pointers to functions that the display miniport driver can call to inspect and alter the monitor frequency range set object.
 
 ## -returns
 
@@ -98,3 +95,4 @@ This function is also available in the <a href="/windows-hardware/drivers/ddi/d3
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_enumvidpncofuncmodality">DxgkDdiEnumVidPnCofuncModality</a>
+

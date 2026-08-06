@@ -1,17 +1,16 @@
 ---
 UID: NS:storport._VPD_THIRD_PARTY_COPY_PAGE
 title: _VPD_THIRD_PARTY_COPY_PAGE (storport.h)
-description: The VPD_THIRD_PARTY_COPY_PAGE structure defines the vital product data (VPD) page for offload data transfer operations.
+description: The _VPD_THIRD_PARTY_COPY_PAGE structure (storport.h) defines the vital product data (VPD) page for offload data transfer operations.
 old-location: storage\vpd_third_party_copy_page.htm
 tech.root: storage
-ms.assetid: E8D9E05C-26C3-474C-854F-9AD12C8834DF
 ms.date: 03/29/2018
 keywords: ["VPD_THIRD_PARTY_COPY_PAGE structure"]
 ms.keywords: "*PVPD_THIRD_PARTY_COPY_PAGE, PVPD_THIRD_PARTY_COPY_PAGE, PVPD_THIRD_PARTY_COPY_PAGE structure pointer [Storage Devices], VPD_THIRD_PARTY_COPY_PAGE, VPD_THIRD_PARTY_COPY_PAGE structure [Storage Devices], _VPD_THIRD_PARTY_COPY_PAGE, scsi/PVPD_THIRD_PARTY_COPY_PAGE, scsi/VPD_THIRD_PARTY_COPY_PAGE, storage.vpd_third_party_copy_page"
 req.header: storport.h
 req.include-header: Scsi.h, Minitape.h, Storport.h
 req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows 8.
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - scsi.h
 api_name:
+ - _VPD_THIRD_PARTY_COPY_PAGE
+ - PVPD_THIRD_PARTY_COPY_PAGE
  - VPD_THIRD_PARTY_COPY_PAGE
 ---
 
@@ -81,3 +82,4 @@ All multibyte values are in big endian format. Prior to evaluation, these values
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/scsi/ns-scsi-_windows_block_device_token_limits_descriptor">WINDOWS_BLOCK_DEVICE_TOKEN_LIMITS_DESCRIPTOR</a>
+

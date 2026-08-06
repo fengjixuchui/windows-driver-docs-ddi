@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl2.GetCurrentTimeDate
 title: IDebugControl2::GetCurrentTimeDate (dbgeng.h)
-description: The GetCurrentTimeDate method returns the time of the current target.
+description: The GetCurrentTimeDate method returns the time of the current target. This method belongs to the IDebugControl2 interface.
 old-location: debugger\getcurrenttimedate.htm
 tech.root: debugger
-ms.assetid: 2b3c5a9d-32a9-4c2a-9f99-694b652c5653
 ms.date: 05/03/2018
 keywords: ["IDebugControl2::GetCurrentTimeDate"]
 ms.keywords: GetCurrentTimeDate, GetCurrentTimeDate method [Windows Debugging], GetCurrentTimeDate method [Windows Debugging],IDebugControl2 interface, GetCurrentTimeDate method [Windows Debugging],IDebugControl3 interface, IDebugControl2 interface [Windows Debugging],GetCurrentTimeDate method, IDebugControl2.GetCurrentTimeDate, IDebugControl2::GetCurrentTimeDate, IDebugControl3 interface [Windows Debugging],GetCurrentTimeDate method, IDebugControl3::GetCurrentTimeDate, IDebugControl_166ad959-02b4-4b42-8acd-1456d224f9e7.xml, dbgeng/IDebugControl2::GetCurrentTimeDate, dbgeng/IDebugControl3::GetCurrentTimeDate, debugger.getcurrenttimedate
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl2.GetCurrentTimeDate
- - IDebugControl3.GetCurrentTimeDate
+ - IDebugControl2::GetCurrentTimeDate
 ---
 
 # IDebugControl2::GetCurrentTimeDate
@@ -51,9 +49,9 @@ The <b>GetCurrentTimeDate</b> method returns the time of the current target.
 
 ## -parameters
 
-### -param TimeDate 
+### -param TimeDate [out]
 
-[out]
+
 Receives the time and date.  This is the number of seconds since the beginning of 1970, or <b>0</b> if the current time could not be determined.
 
 ## -returns
@@ -95,3 +93,4 @@ For more information, see <a href="/windows-hardware/drivers/debugger/target-inf
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
+

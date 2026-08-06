@@ -1,17 +1,15 @@
 ---
 UID: NE:dispmprt._DXGK_CHILD_DEVICE_TYPE
-title: _DXGK_CHILD_DEVICE_TYPE (dispmprt.h)
-description: The DXGK_CHILD_DEVICE_TYPE enumeration is used to indicate the type of a child device of the display adapter.
-old-location: display\dxgk_child_device_type.htm
+title: DXGK_CHILD_DEVICE_TYPE (dispmprt.h)
+description: Learn more about the DXGK_CHILD_DEVICE_TYPE enumeration.
 tech.root: display
-ms.assetid: b16ba776-a6b2-46d0-9b6f-18ea17cf4fce
-ms.date: 05/10/2018
+ms.date: 05/20/2024
 keywords: ["DXGK_CHILD_DEVICE_TYPE enumeration"]
 ms.keywords: "*PDXGK_CHILD_DEVICE_TYPE, DXGK_CHILD_DEVICE_TYPE, DXGK_CHILD_DEVICE_TYPE enumeration [Display Devices], DmEnums_afd3654c-ffb4-49d6-ba59-235148e59d2c.xml, PDXGK_CHILD_DEVICE_TYPE, PDXGK_CHILD_DEVICE_TYPE enumeration pointer [Display Devices], TypeIntegratedDisplay, TypeOther, TypeUninitialized, TypeVideoOutput, _DXGK_CHILD_DEVICE_TYPE, display.dxgk_child_device_type, dispmprt/DXGK_CHILD_DEVICE_TYPE, dispmprt/PDXGK_CHILD_DEVICE_TYPE, dispmprt/TypeIntegratedDisplay, dispmprt/TypeOther, dispmprt/TypeUninitialized, dispmprt/TypeVideoOutput"
 req.header: dispmprt.h
 req.include-header: Dispmprt.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,21 +40,22 @@ api_type:
 api_location:
  - dispmprt.h
 api_name:
+ - _DXGK_CHILD_DEVICE_TYPE
+ - PDXGK_CHILD_DEVICE_TYPE
  - DXGK_CHILD_DEVICE_TYPE
 ---
 
-# _DXGK_CHILD_DEVICE_TYPE enumeration
-
+# DXGK_CHILD_DEVICE_TYPE enumeration
 
 ## -description
 
-The DXGK_CHILD_DEVICE_TYPE enumeration is used to indicate the type of a child device of the display adapter.
+The **DXGK_CHILD_DEVICE_TYPE** enumeration indicates the type of a child device of the display adapter.
 
 ## -enum-fields
 
 ### -field TypeUninitialized
 
-Indicates that a variable of type DXGK_CHILD_DEVICE_TYPE has not yet been assigned a meaningful value.
+Indicates that a variable of type **DXGK_CHILD_DEVICE_TYPE** has not yet been assigned a meaningful value.
 
 ### -field TypeVideoOutput
 
@@ -70,16 +69,18 @@ Indicates that the child device is not a video output. TV tuners, crossbar switc
 
 Type indicating that this target is permanently connected to an integrated display.
 
+### -field TypeLogicalGpu
+
+This value represents a logical GPU. In a system with multiple physical GPUs, a logical GPU could be a virtual representation of a single GPU or a combination of multiple GPUs working together as a single entity. (Examples include CrossFile and SLI technologies.)
+
 ## -remarks
 
-The <b>ChildDeviceType</b> member of a <a href="/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_child_descriptor">DXGK_CHILD_DESCRIPTOR</a> structure is a DXGK_CHILD_DEVICE_TYPE value.
+The **ChildDeviceType** member of a [**DXGK_CHILD_DESCRIPTOR**](ns-dispmprt-_dxgk_child_descriptor.md) structure is a **DXGK_CHILD_DEVICE_TYPE** value.
 
-For more information about child devices of display adapters, see <a href="/windows-hardware/drivers/display/child-devices-of-the-display-adapter">Child Devices of the Display Adapter</a> and <a href="/windows-hardware/drivers/display/enumerating-child-devices-of-a-display-adapter">Enumerating Child Devices of a Display Adapter</a>.
+For more information about child devices of display adapters, see [Child Devices of the Display Adapter](/windows-hardware/drivers/display/child-devices-of-the-display-adapter) and [Enumerating Child Devices of a Display Adapter](/windows-hardware/drivers/display/enumerating-child-devices-of-a-display-adapter).
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/dispmprt/ns-dispmprt-_dxgk_child_descriptor">DXGK_CHILD_DESCRIPTOR</a>
+[**DXGK_CHILD_DESCRIPTOR**](ns-dispmprt-_dxgk_child_descriptor.md)
 
-
-
-<a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_query_child_relations">DxgkDdiQueryChildRelations</a>
+[**DxgkDdiQueryChildRelations**](nc-dispmprt-dxgkddi_query_child_relations.md)

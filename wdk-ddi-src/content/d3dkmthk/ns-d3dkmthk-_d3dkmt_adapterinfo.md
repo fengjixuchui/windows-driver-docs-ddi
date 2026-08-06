@@ -1,10 +1,9 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_ADAPTERINFO
-title: _D3DKMT_ADAPTERINFO (d3dkmthk.h)
+title: D3DKMT_ADAPTERINFO (d3dkmthk.h)
 description: Supplies configuration information about a graphics adapter.
 old-location: display\d3dkmt_adapterinfo.htm
-ms.assetid: 4b780fb7-f6d4-4248-882c-d0cc96106724
-ms.date: 11/21/2018
+ms.date: 08/30/2022
 keywords: ["D3DKMT_ADAPTERINFO structure"]
 ms.keywords: D3DKMT_ADAPTERINFO, D3DKMT_ADAPTERINFO structure [Display Devices], _D3DKMT_ADAPTERINFO, d3dkmthk/D3DKMT_ADAPTERINFO, display.d3dkmt_adapterinfo
 req.header: d3dkmthk.h
@@ -40,30 +39,26 @@ api_type:
 api_location:
  - D3dkmthk.h
 api_name:
+ - _D3DKMT_ADAPTERINFO
  - D3DKMT_ADAPTERINFO
 ---
 
-# _D3DKMT_ADAPTERINFO structure
-
+# D3DKMT_ADAPTERINFO structure
 
 ## -description
 
-Supplies information about a adapter.
+Supplies information about an adapter.
 
 ## -struct-fields
 
 ### -field hAdapter
 
-*D3DKMT\_HANDLE* *hAdapter*
-
 A handle to the adapter.
 
 ### -field AdapterLuid
 
-*LUID AdapterLuid*
+A LUID value that uniquely identifies the adapter, typically until the operating system is rebooted. The LUID value changes whenever:
 
-A LUID value that uniquely identifies the adapter, typically until the operating system is rebooted.
-The LUID value changes whenever:
 - the system is rebooted
 - the adapter's driver is updated
 - the adapter is disabled
@@ -71,17 +66,12 @@ The LUID value changes whenever:
 
 ### -field NumOfSources
 
-*ULONG NumOfSources*
-
 The number of video present sources supported by the adapter.
 
-### -field bPresentMoveRegionsPreferred
+### -field bPrecisePresentRegionsPreferred
 
-*BOOL bPresentMoveRegionsPreferred*
-
-If <b>TRUE</b>, the adapter prefers move regions.
+If **TRUE**, the adapter prefers precise present regions.
 
 ## -see-also
 
-- [D3DKMT_ENUMADAPTERS2](ns-d3dkmthk-_d3dkmt_enumadapters2.md)
-
+[**D3DKMT_ENUMADAPTERS2**](ns-d3dkmthk-_d3dkmt_enumadapters2.md)

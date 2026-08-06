@@ -4,7 +4,6 @@ title: EVT_WDF_DEVICE_SHUTDOWN_NOTIFICATION (wdfcontrol.h)
 description: A driver's EvtDeviceShutdownNotification event callback function notifies the driver that the system is about to lose its power.
 old-location: wdf\evtdeviceshutdownnotification.htm
 tech.root: wdf
-ms.assetid: 365e669b-b4a1-432a-ab0c-9292a910256e
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DEVICE_SHUTDOWN_NOTIFICATION callback function"]
 ms.keywords: DFDeviceObjectControllerDevObjRef_d7dab025-aa6d-4f66-a0cb-3784b3bc7b1c.xml, EVT_WDF_DEVICE_SHUTDOWN_NOTIFICATION, EVT_WDF_DEVICE_SHUTDOWN_NOTIFICATION callback, EvtDeviceShutdownNotification, EvtDeviceShutdownNotification callback function, kmdf.evtdeviceshutdownnotification, wdf.evtdeviceshutdownnotification, wdfcontrol/EvtDeviceShutdownNotification
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WdfControl.h
 api_name:
- - EvtDeviceShutdownNotification
+ - EVT_WDF_DEVICE_SHUTDOWN_NOTIFICATION
 ---
 
 # EVT_WDF_DEVICE_SHUTDOWN_NOTIFICATION callback function
@@ -52,9 +51,9 @@ A driver's <i>EvtDeviceShutdownNotification</i> event callback function notifies
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object that the driver initialized by calling <a href="/windows-hardware/drivers/ddi/wdfcontrol/nf-wdfcontrol-wdfcontroldeviceinitallocate">WdfControlDeviceInitAllocate</a>.
 
 ## -remarks
@@ -72,3 +71,4 @@ For more information about control device objects and the <i>EvtDeviceShutdownNo
 
 
 <a href="/windows-hardware/drivers/ddi/wdfcontrol/nf-wdfcontrol-wdfcontroldeviceinitsetshutdownnotification">WdfControlDeviceInitSetShutdownNotification</a>
+

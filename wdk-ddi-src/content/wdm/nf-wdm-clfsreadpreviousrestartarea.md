@@ -4,7 +4,6 @@ title: ClfsReadPreviousRestartArea function (wdm.h)
 description: The ClfsReadPreviousRestartArea routine reads the previous restart record relative to the current record in a read context.
 old-location: kernel\clfsreadpreviousrestartarea.htm
 tech.root: kernel
-ms.assetid: 832da270-e1e1-41bf-a9cf-0b363c0d2d74
 ms.date: 04/30/2018
 keywords: ["ClfsReadPreviousRestartArea function"]
 ms.keywords: ClfsReadPreviousRestartArea, ClfsReadPreviousRestartArea routine [Kernel-Mode Driver Architecture], Clfs_884a8a2f-adbf-415b-968e-2f82c3f5d7fa.xml, kernel.clfsreadpreviousrestartarea, wdm/ClfsReadPreviousRestartArea
@@ -51,24 +50,24 @@ The <b>ClfsReadPreviousRestartArea</b> routine reads the previous restart record
 
 ## -parameters
 
-### -param pvReadContext 
+### -param pvReadContext [in]
 
-[in]
+
 A pointer to a read context obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfsreadrestartarea">ClfsReadRestartArea</a>.
 
-### -param ppvRestartBuffer 
+### -param ppvRestartBuffer [out]
 
-[out]
+
 A pointer to a variable that receives a pointer to the data buffer of the restart record that is read.
 
-### -param pcbRestartBuffer 
+### -param pcbRestartBuffer [out]
 
-[out]
-A pointer to a ULONG-typed variable that receives the size, in bytes, of the buffer pointed to by *<i>ppvRestartBuffer</i>. This is the length of the data buffer of the restart record that is read.
 
-### -param plsnRestart 
+A pointer to a ULONG-typed variable that receives the size, in bytes, of the buffer pointed to by **ppvRestartBuffer*. This is the length of the data buffer of the restart record that is read.
 
-[out]
+### -param plsnRestart [out]
+
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cls_lsn">CLFS_LSN</a> structure that receives the previous LSN of the restart record that was read.
 
 ## -returns

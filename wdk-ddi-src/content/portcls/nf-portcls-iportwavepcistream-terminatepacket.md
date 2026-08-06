@@ -4,7 +4,6 @@ title: IPortWavePciStream::TerminatePacket (portcls.h)
 description: The TerminatePacket method terminates the packet currently being mapped.
 old-location: audio\iportwavepcistream_terminatepacket.htm
 tech.root: audio
-ms.assetid: b85c37ff-b8f0-43df-bce2-f8a85ec050a7
 ms.date: 05/08/2018
 keywords: ["IPortWavePciStream::TerminatePacket"]
 ms.keywords: IPortWavePciStream interface [Audio Devices],TerminatePacket method, IPortWavePciStream.TerminatePacket, IPortWavePciStream::TerminatePacket, TerminatePacket, TerminatePacket method [Audio Devices], TerminatePacket method [Audio Devices],IPortWavePciStream interface, audio.iportwavepcistream_terminatepacket, audmp-routines_7991fb3b-ea9a-4c58-acd5-7563752f415e.xml, portcls/IPortWavePciStream::TerminatePacket
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IPortWavePciStream.TerminatePacket
+ - IPortWavePciStream::TerminatePacket
 ---
 
 # IPortWavePciStream::TerminatePacket

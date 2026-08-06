@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl2.SetEffectiveProcessorType
 title: IDebugControl2::SetEffectiveProcessorType (dbgeng.h)
-description: The SetEffectiveProcessorType method sets the effective processor type of the processor of the computer that is running the target.
+description: Learn about the SetEffectiveProcessorType method, which sets the effective processor type of the processor of the computer that is running the target.
 old-location: debugger\seteffectiveprocessortype.htm
 tech.root: debugger
-ms.assetid: 7c524181-c438-47ae-9180-1b0c623f24dc
 ms.date: 05/03/2018
 keywords: ["IDebugControl2::SetEffectiveProcessorType"]
 ms.keywords: IDebugControl interface [Windows Debugging],SetEffectiveProcessorType method, IDebugControl2 interface [Windows Debugging],SetEffectiveProcessorType method, IDebugControl2.SetEffectiveProcessorType, IDebugControl2::SetEffectiveProcessorType, IDebugControl3 interface [Windows Debugging],SetEffectiveProcessorType method, IDebugControl3::SetEffectiveProcessorType, IDebugControl::SetEffectiveProcessorType, IDebugControl_284f54f4-897e-4329-b588-5eae0c638179.xml, SetEffectiveProcessorType, SetEffectiveProcessorType method [Windows Debugging], SetEffectiveProcessorType method [Windows Debugging],IDebugControl interface, SetEffectiveProcessorType method [Windows Debugging],IDebugControl2 interface, SetEffectiveProcessorType method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::SetEffectiveProcessorType, dbgeng/IDebugControl3::SetEffectiveProcessorType, dbgeng/IDebugControl::SetEffectiveProcessorType, debugger.seteffectiveprocessortype
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.SetEffectiveProcessorType
- - IDebugControl2.SetEffectiveProcessorType
- - IDebugControl3.SetEffectiveProcessorType
+ - IDebugControl2::SetEffectiveProcessorType
 ---
 
 # IDebugControl2::SetEffectiveProcessorType
@@ -52,9 +49,9 @@ The <b>SetEffectiveProcessorType</b> method sets the effective processor type of
 
 ## -parameters
 
-### -param Type 
+### -param Type [in]
 
-[in]
+
 Specifies the type of the processor.  For possible values, see the <i>Type</i> parameter in <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-getactualprocessortype">GetActualProcessorType</a>.
 
 ## -returns
@@ -98,3 +95,4 @@ For more information, see <a href="/windows-hardware/drivers/debugger/target-inf
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
+

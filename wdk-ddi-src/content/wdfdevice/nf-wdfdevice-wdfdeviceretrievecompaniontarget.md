@@ -1,11 +1,10 @@
 ---
 UID: NF:wdfdevice.WdfDeviceRetrieveCompanionTarget
-title: WdfDeviceRetrieveCompanionTarget function (wdfdevice.h)
-description: For internal use only.
+title:  function (wdfdevice.h)
+description: This WdfDeviceRetrieveCompanionTarget function article is for internal use only.
 old-location: wdf\wdfdeviceretrievecompaniontarget.htm
 tech.root: wdf
-ms.assetid: 2ca34fb7-72c1-4253-ad5b-bc829a1ba540
-ms.date: 02/26/2018
+ms.date: 11/01/2021
 keywords: ["WdfDeviceRetrieveCompanionTarget function"]
 ms.keywords: WdfDeviceRetrieveCompanionTarget, WdfDeviceRetrieveCompanionTarget method, wdf.wdfdeviceretrievecompaniontarget, wdfdevice/WdfDeviceRetrieveCompanionTarget
 req.header: wdfdevice.h
@@ -50,11 +49,11 @@ For internal use only.
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
 
-### -param CompanionTarget 
 
-[out]
+### -param CompanionTarget [out]
+
+## -returns
 

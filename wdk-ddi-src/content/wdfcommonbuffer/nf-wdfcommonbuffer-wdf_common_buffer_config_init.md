@@ -4,7 +4,6 @@ title: WDF_COMMON_BUFFER_CONFIG_INIT function (wdfcommonbuffer.h)
 description: The WDF_COMMON_BUFFER_CONFIG_INIT function initializes a WDF_COMMON_BUFFER_CONFIG structure.
 old-location: wdf\wdf_common_buffer_config_init.htm
 tech.root: wdf
-ms.assetid: a678516a-159f-42bc-b135-489677452472
 ms.date: 02/26/2018
 keywords: ["WDF_COMMON_BUFFER_CONFIG_INIT function"]
 ms.keywords: DFCommonBufferObjectRef_23c5b41e-89ce-448c-86fa-3ae4e688b378.xml, WDF_COMMON_BUFFER_CONFIG_INIT, WDF_COMMON_BUFFER_CONFIG_INIT function, kmdf.wdf_common_buffer_config_init, wdf.wdf_common_buffer_config_init, wdfcommonbuffer/WDF_COMMON_BUFFER_CONFIG_INIT
@@ -52,14 +51,14 @@ The <b>WDF_COMMON_BUFFER_CONFIG_INIT</b> function initializes a <a href="/window
 
 ## -parameters
 
-### -param Config 
+### -param Config [out]
 
-[out]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdfcommonbuffer/ns-wdfcommonbuffer-_wdf_common_buffer_config">WDF_COMMON_BUFFER_CONFIG</a> structure.
 
-### -param AlignmentRequirement 
+### -param AlignmentRequirement [in]
 
-[in]
+
 A value for the <b>AlignmentRequirement</b> member of the <a href="/windows-hardware/drivers/ddi/wdfcommonbuffer/ns-wdfcommonbuffer-_wdf_common_buffer_config">WDF_COMMON_BUFFER_CONFIG</a> structure. This value specifies the alignment requirement for the common buffer that the structure describes.
 
 ## -remarks

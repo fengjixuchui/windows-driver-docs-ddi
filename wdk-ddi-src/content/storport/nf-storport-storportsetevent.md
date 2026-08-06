@@ -3,9 +3,7 @@ UID: NF:storport.StorPortSetEvent
 title: StorPortSetEvent function
 description: A miniport can call StorPortSetEvent to set an event object to the signaled state.
 tech.root: storage
-ms.assetid: 85d89cc8-a4b6-4f83-a3ba-2c64d28ca516
 ms.date: 03/24/2020
-ms.topic: function
 ms.keywords: StorPortSetEvent
 req.header: storport.h
 req.include-header: 
@@ -37,8 +35,6 @@ api_location:
  - Storport.dll
 api_name:
  - StorPortSetEvent
-product:
- - Windows
 ---
 
 # StorPortSetEvent function

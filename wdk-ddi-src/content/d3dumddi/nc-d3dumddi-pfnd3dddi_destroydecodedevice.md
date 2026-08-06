@@ -4,7 +4,6 @@ title: PFND3DDDI_DESTROYDECODEDEVICE (d3dumddi.h)
 description: The DestroyDecodeDevice function releases resources for a Microsoft DirectX Video Acceleration (VA) decode device.
 old-location: display\destroydecodedevice.htm
 tech.root: display
-ms.assetid: 3685e58b-8d67-4b01-a8a0-8a794d653637
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_DESTROYDECODEDEVICE callback function"]
 ms.keywords: DestroyDecodeDevice, DestroyDecodeDevice callback function [Display Devices], PFND3DDDI_DESTROYDECODEDEVICE, PFND3DDDI_DESTROYDECODEDEVICE callback, UserModeDisplayDriver_Functions_1a057944-edfe-4010-8726-9ac1deef11e6.xml, d3dumddi/DestroyDecodeDevice, display.destroydecodedevice
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - DestroyDecodeDevice
-product:
- - Windows
+ - PFND3DDDI_DESTROYDECODEDEVICE
 ---
 
 # PFND3DDDI_DESTROYDECODEDEVICE callback function
@@ -56,7 +53,7 @@ The <b>DestroyDecodeDevice</b> function releases resources for a Microsoft Direc
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hDecodeDevice* [in]
 
@@ -77,3 +74,4 @@ The <b>DestroyDecodeDevice</b> function notifies the driver to destroy the handl
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

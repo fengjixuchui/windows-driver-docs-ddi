@@ -4,7 +4,6 @@ title: ExSetResourceOwnerPointer function (wdm.h)
 description: The ExSetResourceOwnerPointer routine sets the owner thread pointer for an executive resource.
 old-location: kernel\exsetresourceownerpointer.htm
 tech.root: kernel
-ms.assetid: 985f811e-cf4f-4dbe-8ede-497ba4eceffd
 ms.date: 04/30/2018
 keywords: ["ExSetResourceOwnerPointer function"]
 ms.keywords: ExSetResourceOwnerPointer, ExSetResourceOwnerPointer routine [Kernel-Mode Driver Architecture], k102_1f5ed4f7-4252-4f50-9c40-06d6204d8b57.xml, kernel.exsetresourceownerpointer, wdm/ExSetResourceOwnerPointer
@@ -50,19 +49,19 @@ The <b>ExSetResourceOwnerPointer</b> routine sets the owner thread pointer for a
 
 ## -parameters
 
-### -param Resource 
+### -param Resource [in, out]
 
-[in, out]
+
 A pointer to an executive resource owned by the current thread.
 
-### -param OwnerPointer 
+### -param OwnerPointer [in]
 
-[in]
+
 A pointer to an owner thread pointer of type ERESOURCE_THREAD (for additional requirements, see the following Remarks section).
 
 ## -remarks
 
-<b>ExSetResourceOwnerPointer</b>, used in conjunction with <b>ExReleaseResourceForThreadLite</b>, provides a means for one thread (acting as an resource manager thread) to acquire and release resources for use by another thread (acting as a resource user thread).
+<b>ExSetResourceOwnerPointer</b>, used in conjunction with <b>ExReleaseResourceForThreadLite</b>, provides a means for one thread (acting as a resource manager thread) to acquire and release resources for use by another thread (acting as a resource user thread).
 
 After calling <b>ExSetResourceOwnerPointer</b> for a specific resource, the only other routine that can be called for that resource is <b>ExReleaseResourceForThreadLite</b>.
 

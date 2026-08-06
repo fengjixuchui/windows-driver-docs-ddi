@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_CREATECRYPTOSESSION
 title: PFND3D11_1DDI_CREATECRYPTOSESSION (d3d10umddi.h)
 description: Creates a cryptographic session to encrypt video content that is sent to the display miniport driver.
 old-location: display\createcryptosession1.htm
-ms.assetid: 3c31efc3-b844-4e51-947d-b48f36020766
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_CREATECRYPTOSESSION callback function"]
 ms.keywords: CreateCryptoSession, CreateCryptoSession callback function [Display Devices], PFND3D11_1DDI_CREATECRYPTOSESSION, PFND3D11_1DDI_CREATECRYPTOSESSION callback, d3d10umddi/CreateCryptoSession, display.createcryptosession1
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - CreateCryptoSession
-product:
- - Windows
+ - PFND3D11_1DDI_CREATECRYPTOSESSION
 ---
 
 # PFND3D11_1DDI_CREATECRYPTOSESSION callback function
@@ -105,3 +102,4 @@ If the <b>DecodeProfile</b> member of the <a href="/windows-hardware/drivers/ddi
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_negotiatecryptosessionkeyeschange">NegotiateCryptoSessionKeyExchange</a>
+

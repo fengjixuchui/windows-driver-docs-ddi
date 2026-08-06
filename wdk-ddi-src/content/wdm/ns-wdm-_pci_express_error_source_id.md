@@ -1,10 +1,9 @@
 ---
 UID: NS:wdm._PCI_EXPRESS_ERROR_SOURCE_ID
 title: _PCI_EXPRESS_ERROR_SOURCE_ID (wdm.h)
-description: The PCI_EXPRESS_ERROR_SOURCE_ID structure describes the identifiers of the first correctable error and the first uncorrectable error that are reported in the PCI Express (PCIe) root error status register.
+description: The _PCI_EXPRESS_ERROR_SOURCE_ID structure (wdm.h) describes the IDs of the first correctable and first uncorrectable error in the error status register.
 old-location: pci\pci_express_error_source_id.htm
 tech.root: PCI
-ms.assetid: 53efddbc-0e65-487c-b406-c7d093ca5667
 ms.date: 02/24/2018
 keywords: ["PCI_EXPRESS_ERROR_SOURCE_ID structure"]
 ms.keywords: "*PPCI_EXPRESS_ERROR_SOURCE_ID, PCI.pci_express_error_source_id, PCI_EXPRESS_ERROR_SOURCE_ID, PCI_EXPRESS_ERROR_SOURCE_ID union [Buses], PPCI_EXPRESS_ERROR_SOURCE_ID, PPCI_EXPRESS_ERROR_SOURCE_ID union pointer [Buses], _PCI_EXPRESS_ERROR_SOURCE_ID, pci_struct_f111f61b-46a0-450d-bbce-172f125a6903.xml, wdm/PCI_EXPRESS_ERROR_SOURCE_ID, wdm/PPCI_EXPRESS_ERROR_SOURCE_ID"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: PASSIVE_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: PCI_EXPRESS_ERROR_SOURCE_ID, *PPCI_EXPRESS_ERROR_SOURCE_ID
-req.product: Windows 10 or later.
 f1_keywords:
  - _PCI_EXPRESS_ERROR_SOURCE_ID
  - wdm/_PCI_EXPRESS_ERROR_SOURCE_ID
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _PCI_EXPRESS_ERROR_SOURCE_ID
+ - PPCI_EXPRESS_ERROR_SOURCE_ID
  - PCI_EXPRESS_ERROR_SOURCE_ID
 ---
 
@@ -62,32 +62,32 @@ The PCI_EXPRESS_ERROR_SOURCE_ID structure describes the identifiers of the first
 A ULONG representation of the contents of the PCI_EXPRESS_ERROR_SOURCE_ID structure.
 
 
-#### - CorrectableSourceIdBus
+### -field DUMMYSTRUCTNAME.CorrectableSourceIdBus
 
 The bus number of the requester that reported the first correctable error.
 
 
-#### - CorrectableSourceIdDev
+### -field DUMMYSTRUCTNAME.CorrectableSourceIdDev
 
 The device number of the requester that reported the first correctable error.
 
 
-#### - CorrectableSourceIdFun
+### -field DUMMYSTRUCTNAME.CorrectableSourceIdFun
 
 The function number of the requester that reported the first correctable error.
 
 
-#### - UncorrectableSourceIdBus
+### -field DUMMYSTRUCTNAME.UncorrectableSourceIdBus
 
 The bus number of the requester that reported the first uncorrectable error.
 
 
-#### - UncorrectableSourceIdDev
+### -field DUMMYSTRUCTNAME.UncorrectableSourceIdDev
 
 The device number of the requester that reported the first uncorrectable error.
 
 
-#### - UncorrectableSourceIdFun
+### -field DUMMYSTRUCTNAME.UncorrectableSourceIdFun
 
 The function number of the requester that reported the first uncorrectable error.
 
@@ -116,3 +116,4 @@ A PCI_EXPRESS_ERROR_SOURCE_ID structure is contained in the <a href="/windows-ha
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_pci_express_rootport_aer_capability">PCI_EXPRESS_ROOTPORT_AER_CAPABILITY</a>
+

@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_CREATEQUERY
 title: PFND3D10DDI_CREATEQUERY (d3d10umddi.h)
 description: The CreateQuery(D3D10) function creates a query.
 old-location: display\createquery_d3d10_.htm
-ms.assetid: abe6a82f-1613-4c74-9e81-01939db74bfd
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_CREATEQUERY callback function"]
 ms.keywords: CreateQuery, CreateQuery callback function [Display Devices], PFND3D10DDI_CREATEQUERY, PFND3D10DDI_CREATEQUERY callback, UserModeDisplayDriverDx10_Functions_faa26999-d692-40b4-81ef-99c730879b49.xml, d3d10umddi/CreateQuery, display.createquery_d3d10_
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CreateQuery
-product:
- - Windows
+ - PFND3D10DDI_CREATEQUERY
 ---
 
 # PFND3D10DDI_CREATEQUERY callback function
@@ -52,25 +49,25 @@ The <b>CreateQuery(D3D10)</b> function creates a query.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCreateQuery* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddiarg_createquery">D3D10DDIARG_CREATEQUERY</a> structure that describes the parameters that the user-mode display driver uses to create a query.
 
-### -param Arg3
+### -param unnamedParam3
 
 *hQuery* [in]
 
 A handle to the driver's private data for the query.
 
-### -param Arg4
+### -param unnamedParam4
 
 *hRTQuery* [in]
 
@@ -101,3 +98,4 @@ The driver might run out of memory or be unable to create queries because of the
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

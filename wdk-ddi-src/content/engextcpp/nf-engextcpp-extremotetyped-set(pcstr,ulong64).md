@@ -1,10 +1,9 @@
 ---
 UID: NF:engextcpp.ExtRemoteTyped.Set(PCSTR,ULONG64)
 title: ExtRemoteTyped::Set(PCSTR,ULONG64) (engextcpp.h)
-description: The Set method sets the typed data represented by the ExtRemoteTyped object.
+description: The Set(PCSTR,ULONG64) method sets the typed data represented by the ExtRemoteTyped object. This method does not return a value.
 old-location: debugger\extremotetyped_set_pcstr_ulong64.htm
 tech.root: debugger
-ms.assetid: acf789f7-781d-4078-90cc-79b0d2709696
 ms.date: 05/03/2018
 keywords: ["ExtRemoteTyped::Set(PCSTR,ULONG64)"]
 ms.keywords: ExtRemoteTyped class [Windows Debugging],Set method, ExtRemoteTyped.Set, ExtRemoteTyped.Set(PCSTR,ULONG64), ExtRemoteTyped::Set, ExtRemoteTyped::Set(PCSTR,ULONG64), Set, Set method [Windows Debugging], Set method [Windows Debugging],ExtRemoteTyped class, debugger.extremotetyped_set_pcstr_ulong64
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - engextcpp.hpp
 api_name:
- - ExtRemoteTyped.Set
+ - ExtRemoteTyped::Set
 ---
 
 # ExtRemoteTyped::Set(PCSTR,ULONG64)
@@ -51,17 +50,20 @@ The <b>Set</b> method sets the typed data represented by the <a href="/windows-h
 
 ## -parameters
 
-### -param Expr 
+### -param Expr [in]
 
-[in]
+
 An expression that evaluates to the desired symbol.  This expression is evaluated by the default expression evaluator.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies an additional parameter that can be used when evaluating the <i>Expr</i> expression.  This additional parameter is available in the expression as the <b>$extin</b> pseudo-register.  For example, to specify a process environment block (PEB) at a particular location, you could set <i>Expr</i> to the C++ expression <code>(ntdll!_PEB *)@$extin</code>. This casts the pseudo-register <b>$extin</b> to a pointer to a PEB. Then, set <i>Offset</i> to the location of the PEB instance.
 
-## -returns
+
+## -remarks
+
+### Returns
 
 This method does not return a value.
 
@@ -88,3 +90,4 @@ This method does not return a value.
 
 
 <a href="/windows-hardware/drivers/ddi/engextcpp/nf-engextcpp-extremotetypedlist-extremotetypedlist(extremotedata__pcstr_pcstr_ulong64_ulong_pulong64_bool)">ExtRemoteTypedList</a>
+

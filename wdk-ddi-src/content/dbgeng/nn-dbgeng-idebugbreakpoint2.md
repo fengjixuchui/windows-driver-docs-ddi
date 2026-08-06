@@ -4,7 +4,6 @@ title: IDebugBreakpoint2 (dbgeng.h)
 description: IDebugBreakpoint2 interface
 old-location: debugger\idebugbreakpoint2.htm
 tech.root: debugger
-ms.assetid: 097c10e1-fd83-4a3d-8193-873644370e35
 ms.date: 05/03/2018
 keywords: ["IDebugBreakpoint2 interface"]
 ms.keywords: IDebugBreakpoint2, IDebugBreakpoint2 interface [Windows Debugging], IDebugBreakpoint2 interface [Windows Debugging],described, dbgeng/IDebugBreakpoint2, debugger.idebugbreakpoint2
@@ -48,10 +47,8 @@ api_name:
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugBreakpoint2</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugbreakpoint">IDebugBreakpoint</a>. <b>IDebugBreakpoint2</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IDebugBreakpoint2</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugbreakpoint">IDebugBreakpoint</a>. <b>IDebugBreakpoint2</b> also has these types of members:
+
 
 ## -see-also
 

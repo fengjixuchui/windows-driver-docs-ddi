@@ -4,7 +4,6 @@ title: RtlULongPtrToUChar function (ntintsafe.h)
 description: Converts a value of type ULONG_PTR to a value of type UCHAR.
 old-location: kernel\rtlulongptrtouchar.htm
 tech.root: kernel
-ms.assetid: 074159BD-EF74-45F9-B7A5-47F9E01E32C6
 ms.date: 04/30/2018
 keywords: ["RtlULongPtrToUChar function"]
 ms.keywords: RtlULongPtrToUChar, RtlULongPtrToUChar function [Kernel-Mode Driver Architecture], kernel.rtlulongptrtouchar, ntintsafe/RtlULongPtrToUChar
@@ -50,14 +49,14 @@ Converts a value of type <b>ULONG_PTR</b> to a value of type <b>UCHAR</b>.
 
 ## -parameters
 
-### -param ulOperand 
+### -param ulOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param pch 
+### -param pch [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

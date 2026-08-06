@@ -4,7 +4,6 @@ title: SRIOV_QUERY_VF_LUID (pcivirt.h)
 description: Gets the local unique identifier of the PCI Express SR-IOV Virtual Function (VF).
 old-location: pci\sriov_query_vf_luid.htm
 tech.root: PCI
-ms.assetid: 17fe6e28-59ce-4678-8268-b49cef09a3db
 ms.date: 02/24/2018
 keywords: ["SRIOV_QUERY_VF_LUID callback"]
 ms.keywords: "*PSRIOV_QUERY_VF_LUID, *PSRIOV_QUERY_VF_LUID callback function pointer [Buses], PCI.sriov_query_vf_luid, SRIOV_QUERY_VF_LUID, SriovQueryVfLuid, SriovQueryVfLuid callback function [Buses], pcivirt/SriovQueryVfLuid"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - pcivirt.h
 api_name:
- - PSRIOV_QUERY_VF_LUID
+ - SRIOV_QUERY_VF_LUID
 ---
 
 # SRIOV_QUERY_VF_LUID callback
@@ -50,19 +49,19 @@ Gets the local unique identifier of the PCI Express SR-IOV Virtual Function (VF)
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to a driver-defined context.
 
-### -param VfIndex 
+### -param VfIndex [in]
 
-[in]
+
 A zero-based index of the VF that is being queried.
 
-### -param Luid 
+### -param Luid [out]
 
-[out]
+
 A pointer to the local unique
 identifier of the SR_IOV device implementing the interface.
 
@@ -114,3 +113,4 @@ Virtualization_QueryLuid (
 
 
 ```
+

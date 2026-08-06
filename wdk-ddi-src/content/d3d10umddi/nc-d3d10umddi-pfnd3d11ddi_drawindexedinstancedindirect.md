@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_DRAWINDEXEDINSTANCEDINDIRECT
 title: PFND3D11DDI_DRAWINDEXEDINSTANCEDINDIRECT (d3d10umddi.h)
 description: The DrawIndexedInstancedIndirect function draws particular instances of indexed primitives.
 old-location: display\drawindexedinstancedindirect.htm
-ms.assetid: 3debfb11-4de9-456b-a094-feb2f68e96a5
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_DRAWINDEXEDINSTANCEDINDIRECT callback function"]
 ms.keywords: DrawIndexedInstancedIndirect, DrawIndexedInstancedIndirect callback function [Display Devices], PFND3D11DDI_DRAWINDEXEDINSTANCEDINDIRECT, PFND3D11DDI_DRAWINDEXEDINSTANCEDINDIRECT callback, UserModeDisplayDriverDx11_Functions_18c492b3-4d4b-413c-82c3-7290af5aade6.xml, d3d10umddi/DrawIndexedInstancedIndirect, display.drawindexedinstancedindirect
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - DrawIndexedInstancedIndirect
+ - PFND3D11DDI_DRAWINDEXEDINSTANCEDINDIRECT
 ---
 
 # PFND3D11DDI_DRAWINDEXEDINSTANCEDINDIRECT callback function
@@ -50,13 +49,13 @@ The <b>DrawIndexedInstancedIndirect</b> function draws particular instances of i
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hBufferForArgs*
 
@@ -74,7 +73,7 @@ struct DrawIndexedInstancedIndirectArgs {
 
 For more information about these arguments, see the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_drawindexedinstanced">DrawIndexedInstanced</a> reference page.
 
-### -param Arg3
+### -param unnamedParam3
 
 *AlignedByteOffsetForArgs*
 
@@ -115,3 +114,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

@@ -2,8 +2,7 @@
 UID: NC:d3dkmthk.PFND3DKMT_DESTROYHWQUEUE
 title: PFND3DKMT_DESTROYHWQUEUE (d3dkmthk.h)
 description: Implemented by the client driver to destroy a hardware queue.
-ms.assetid: 4ac646f8-e8c2-4682-bbab-0e91a782e59a
-ms.date: 10/19/2018
+ms.date: 03/04/2022
 keywords: ["PFND3DKMT_DESTROYHWQUEUE callback function"]
 req.header: d3dkmthk.h
 req.include-header: 
@@ -35,48 +34,35 @@ api_location:
  - d3dkmthk.h
 api_name:
  - PFND3DKMT_DESTROYHWQUEUE
-product:
- - Windows
 ---
 
 # PFND3DKMT_DESTROYHWQUEUE callback function
-
 
 ## -description
 
 Implemented by the client driver to destroy a hardware queue.
 
+## -syntax
+
+```cpp
+PFND3DKMT_DESTROYHWQUEUE PfnD3dkmtDestroyHwQueue;
+
+NTSTATUS PfnD3dkmtDestroyHwQueue(
+    CONST D3DKMT_DESTROYHWQUEUE *unnamedParam1
+)
+{...}
+```
+
 ## -parameters
 
-### -param D3DKMT_DESTROYHWQUEUE *
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_DESTROYHWQUEUE](ns-d3dkmthk-_d3dkmt_destroyhwqueue.md) structure that contains the information needed to destroy a hardware queue.
 
 ## -returns
 
-Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate NTSTATUS Values error code.
-
-## -prototype
-
-```cpp
-//Declaration
-
-PFND3DKMT_DESTROYHWQUEUE Pfnd3dkmtDestroyhwqueue;
-
-// Definition
-
-NTSTATUS Pfnd3dkmtDestroyhwqueue
-(
-	CONST D3DKMT_DESTROYHWQUEUE *
-)
-{...}
-
-PFND3DKMT_DESTROYHWQUEUE
-
-
-```
+The method returns **STATUS_SUCCESS** if the operation succeeds. Otherwise, this method might return an appropriate **[NTSTATUS](/windows-hardware/drivers/kernel/ntstatus-values)** error code.
 
 ## -remarks
 
-Register your implementation of this callback function by setting the appropriate member of [D3DKMT_DESTROYHWQUEUE](ns-d3dkmthk-_d3dkmt_destroyhwqueue.md) and then calling PfnD3dkmtDestroyHwQueue.
-
+Register your implementation of this callback function by setting the appropriate member of [D3DKMT_DESTROYHWQUEUE](ns-d3dkmthk-_d3dkmt_destroyhwqueue.md) and then calling **PfnD3dkmtDestroyHwQueue**.

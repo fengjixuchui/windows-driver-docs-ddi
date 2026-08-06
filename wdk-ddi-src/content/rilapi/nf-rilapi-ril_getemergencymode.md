@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_GetEmergencyMode
 title: RIL_GetEmergencyMode function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_GetEmergencyMode function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_getemergencymode.htm
 tech.root: netvista
-ms.assetid: 3c95d10b-5db6-40d0-9caa-518235e81d6d
 ms.date: 05/02/2018
 keywords: ["RIL_GetEmergencyMode function"]
 ms.keywords: RIL_GetEmergencyMode, RIL_GetEmergencyMode method [Network Drivers Starting with Windows Vista], netvista.ril_getemergencymode, rilapi/RIL_GetEmergencyMode

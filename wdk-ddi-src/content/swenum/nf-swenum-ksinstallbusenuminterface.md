@@ -4,7 +4,6 @@ title: KsInstallBusEnumInterface function (swenum.h)
 description: The KsInstallBusEnumInterface function installs an interface to the demand-load bus enumerator object.
 old-location: stream\ksinstallbusenuminterface.htm
 tech.root: stream
-ms.assetid: d9703786-c46e-4466-a229-9ed0348cb45e
 ms.date: 04/23/2018
 keywords: ["KsInstallBusEnumInterface function"]
 ms.keywords: KsInstallBusEnumInterface, KsInstallBusEnumInterface function [Streaming Media Devices], ksfunc_6c26cb96-610b-4030-9f9b-ef878fdfe086.xml, stream.ksinstallbusenuminterface, swenum/KsInstallBusEnumInterface
@@ -53,9 +52,9 @@ The <b>KsInstallBusEnumInterface</b> function installs an interface to the deman
 
 ## -parameters
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Pointer to an IRP that contains a SWENUM_INSTALL_INTERFACE structure that specifies the demand-load bus enumerator object interface to install. For information about this structure, see the Remarks section below.
 
 ## -returns

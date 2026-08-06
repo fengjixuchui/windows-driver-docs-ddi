@@ -4,7 +4,6 @@ title: _DXVAHDDDI_SURFACE (d3dumddi.h)
 description: The DXVAHDDDI_SURFACE structure describes a surface.
 old-location: display\dxvahdddi_surface.htm
 tech.root: display
-ms.assetid: a0bfc9bf-777e-4da4-9414-856ec650375d
 ms.date: 05/10/2018
 keywords: ["DXVAHDDDI_SURFACE structure"]
 ms.keywords: DXVA2_Structs_8032b044-07e9-4bb7-9367-1c3283bbf145.xml, DXVAHDDDI_SURFACE, DXVAHDDDI_SURFACE structure [Display Devices], _DXVAHDDDI_SURFACE, d3dumddi/DXVAHDDDI_SURFACE, display.dxvahdddi_surface
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVAHDDDI_SURFACE
  - DXVAHDDDI_SURFACE
 ---
 
@@ -52,13 +52,13 @@ The DXVAHDDDI_SURFACE structure describes a surface.
 
 ## -struct-fields
 
-### -field hResource
+### -field hResource [in]
 
-[in] A handle to the resource that contains the surface.
+A handle to the resource that contains the surface.
 
-### -field SubResourceIndex
+### -field SubResourceIndex [in]
 
-[in] The zero-based index into the resource, which the handle in the <b>hResource</b> member specifies. The <b>SubResourceIndex</b> index indicates the surface.
+The zero-based index into the resource, which the handle in the <b>hResource</b> member specifies. The <b>SubResourceIndex</b> index indicates the surface.
 
 ## -remarks
 
@@ -75,3 +75,4 @@ DXVAHDDDI_SURFACE structures are used to describe surfaces in members of the <a 
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_dxvahd_videoprocessblthd">VideoProcessBltHD</a>
+

@@ -4,7 +4,6 @@ title: ISynthSinkDMus::SyncToMaster (dmusicks.h)
 description: The SyncToMaster method allows synchronization to the master clock in order to avoid drift.
 old-location: audio\isynthsinkdmus_synctomaster.htm
 tech.root: audio
-ms.assetid: 5009e4d8-5299-4eeb-a70d-5be87694b1d0
 ms.date: 05/08/2018
 keywords: ["ISynthSinkDMus::SyncToMaster"]
 ms.keywords: ISynthSinkDMus interface [Audio Devices],SyncToMaster method, ISynthSinkDMus.SyncToMaster, ISynthSinkDMus::SyncToMaster, SyncToMaster, SyncToMaster method [Audio Devices], SyncToMaster method [Audio Devices],ISynthSinkDMus interface, audio.isynthsinkdmus_synctomaster, audmp-routines_35d431eb-a92c-4e73-b75c-8a3a1f0451ce.xml, dmusicks/ISynthSinkDMus::SyncToMaster
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dmusicks.h
 api_name:
- - ISynthSinkDMus.SyncToMaster
+ - ISynthSinkDMus::SyncToMaster
 ---
 
 # ISynthSinkDMus::SyncToMaster
@@ -50,14 +49,14 @@ The <code>SyncToMaster</code> method allows synchronization to the master clock 
 
 ## -parameters
 
-### -param rfTime 
+### -param rfTime [in]
 
-[in]
+
 Specifies the reference time from the master clock. Reference time is measured in 100-nanosecond units.
 
-### -param fStart 
+### -param fStart [in]
 
-[in]
+
 Specifies whether the sample clock is to be reset to zero with this reference time. If <b>TRUE</b>, the sample clock must be reset to zero at time <i>rtTime</i>. If <b>FALSE</b>, the sample clock is not reset.
 
 ## -returns
@@ -77,3 +76,4 @@ Parameter <i>fStart</i> is <b>TRUE</b> during the first call to <code>SyncToMast
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ne-ks-ksstate">KSSTATE</a>
+

@@ -4,7 +4,6 @@ title: IDebugControl4::ControlledOutputWide (dbgeng.h)
 description: The ControlledOutputWide method formats a string and sends the result to output callbacks that were registered with some of the engine's clients.
 old-location: debugger\controlledoutputwide.htm
 tech.root: debugger
-ms.assetid: eb9a89b8-02de-4617-a2f8-f67509ab8987
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::ControlledOutputWide"]
 ms.keywords: ControlledOutputWide, ControlledOutputWide method [Windows Debugging], ControlledOutputWide method [Windows Debugging],IDebugControl4 interface, IDebugControl4 interface [Windows Debugging],ControlledOutputWide method, IDebugControl4.ControlledOutputWide, IDebugControl4::ControlledOutputWide, dbgeng/IDebugControl4::ControlledOutputWide, debugger.controlledoutputwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugControl4.ControlledOutputWide
+ - IDebugControl4::ControlledOutputWide
 ---
 
 # IDebugControl4::ControlledOutputWide
@@ -50,19 +49,19 @@ The <b>ControlledOutputWide</b>  method formats a string and sends the result to
 
 ## -parameters
 
-### -param OutputControl 
+### -param OutputControl [in]
 
-[in]
+
 Specifies an output control that determines which of the clients' output callbacks will receive the output.  For possible values, see <a href="/windows-hardware/drivers/debugger/debug-outctl-xxx">DEBUG_OUTCTL_XXX</a>.  For more information about output, see <a href="/windows-hardware/drivers/debugger/input-and-output">Input and Output</a>.
 
-### -param Mask 
+### -param Mask [in]
 
-[in]
+
 Specifies the output-type bit field.  See <a href="/windows-hardware/drivers/debugger/debug-output-xxx">DEBUG_OUTPUT_XXX</a> for possible values.
 
-### -param Format 
+### -param Format [in]
 
-[in]
+
 Specifies the format string, as in <b>printf</b>.  Typically, conversion characters work exactly as they do in C. For the floating-point conversion characters, the 64-bit argument is interpreted as a 32-bit floating-point number unless the <b>l</b>  modifier is used.
 
 The <b>%p</b> conversion character is supported, but it represents a pointer in a target's address space.  It might not have any modifiers and it uses the debugger's internal address formatting.  The following additional conversion characters are supported.
@@ -395,10 +394,7 @@ DML/NORMAL Y{l}: [d:\th\minkernel\kernelbase\debug.c @ 443]
 
 ```
 
-
-### -param param
-
-####### - ...
+### -param ...
 
 Specifies additional parameters that represent values to be inserted into the output during formatting.
 
@@ -447,3 +443,4 @@ When generating very large output strings, it is possible to reach the limits of
 
 
 <a href="/windows-hardware/drivers/ddi/wdbgexts/nc-wdbgexts-pwindbg_output_routine">dprintf</a>
+

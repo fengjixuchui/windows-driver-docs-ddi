@@ -1,10 +1,9 @@
 ---
 UID: NS:wlanihv._DOT11EXT_IHV_UI_REQUEST
 title: _DOT11EXT_IHV_UI_REQUEST (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_IHV_UI_REQUEST structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11ext_ihv_ui_request.htm
 tech.root: netvista
-ms.assetid: 028e3445-320a-41c8-9577-219f9fbabe40
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_IHV_UI_REQUEST structure"]
 ms.keywords: "*PDOT11EXT_IHV_UI_REQUEST, DOT11EXT_IHV_UI_REQUEST, DOT11EXT_IHV_UI_REQUEST structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_2d145576-2a7d-4fff-ae75-a99e27ebbb18.xml, PDOT11EXT_IHV_UI_REQUEST, PDOT11EXT_IHV_UI_REQUEST structure pointer [Network Drivers Starting with Windows Vista], _DOT11EXT_IHV_UI_REQUEST, netvista.dot11ext_ihv_ui_request, wlanihv/DOT11EXT_IHV_UI_REQUEST, wlanihv/PDOT11EXT_IHV_UI_REQUEST"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DOT11EXT_IHV_UI_REQUEST, *PDOT11EXT_IHV_UI_REQUEST
-req.product: Windows 10 or later.
 f1_keywords:
  - _DOT11EXT_IHV_UI_REQUEST
  - wlanihv/_DOT11EXT_IHV_UI_REQUEST
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
+ - _DOT11EXT_IHV_UI_REQUEST
+ - PDOT11EXT_IHV_UI_REQUEST
  - DOT11EXT_IHV_UI_REQUEST
 ---
 
@@ -119,3 +119,4 @@ For each UI request, the DLL must format a DOT11EXT_IHV_UI_REQUEST structure to 
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_query_ui_request.md">Dot11ExtIhvQueryUIRequest</a>
+

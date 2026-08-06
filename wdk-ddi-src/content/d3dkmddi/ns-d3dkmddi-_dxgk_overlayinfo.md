@@ -3,14 +3,13 @@ UID: NS:d3dkmddi._DXGK_OVERLAYINFO
 title: _DXGK_OVERLAYINFO (d3dkmddi.h)
 description: The DXGK_OVERLAYINFO structure describes parameters that are required to create or modify an overlay.
 old-location: display\dxgk_overlayinfo.htm
-ms.assetid: 7c2a7484-452f-4801-b650-3d8221740892
 ms.date: 05/10/2018
 keywords: ["DXGK_OVERLAYINFO structure"]
 ms.keywords: DXGK_OVERLAYINFO, DXGK_OVERLAYINFO structure [Display Devices], DmStructs_232178f2-9a25-40aa-8604-0414128c1a91.xml, _DXGK_OVERLAYINFO, d3dkmddi/DXGK_OVERLAYINFO, display.dxgk_overlayinfo
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_OVERLAYINFO
  - DXGK_OVERLAYINFO
 ---
 
@@ -52,33 +52,33 @@ The DXGK_OVERLAYINFO structure describes parameters that are required to create 
 
 ## -struct-fields
 
-### -field hAllocation
+### -field hAllocation [in]
 
-[in] A handle to the allocation to be displayed on the overlay.
+A handle to the allocation to be displayed on the overlay.
 
-### -field PhysicalAddress
+### -field PhysicalAddress [in]
 
-[in] The physical address, within the segment that <b>SegmentId</b> specifies, of the allocation to be displayed.
+The physical address, within the segment that <b>SegmentId</b> specifies, of the allocation to be displayed.
 
-### -field SegmentId
+### -field SegmentId [in]
 
-[in] The identifier of a segment in which the allocation is currently paged-in.
+The identifier of a segment in which the allocation is currently paged-in.
 
-### -field DstRect
+### -field DstRect [in]
 
-[in] A <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a> structure that contains the overlay destination rectangle, in device coordinates.
+A <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a> structure that contains the overlay destination rectangle, in device coordinates.
 
-### -field SrcRect
+### -field SrcRect [in]
 
-[in] A RECT structure that contains the overlay source rectangle, in device coordinates.
+A RECT structure that contains the overlay source rectangle, in device coordinates.
 
-### -field pPrivateDriverData
+### -field pPrivateDriverData [in]
 
-[in] A pointer to a block of private data that is passed from the user-mode display driver to the display miniport driver.
+A pointer to a block of private data that is passed from the user-mode display driver to the display miniport driver.
 
-### -field PrivateDriverDataSize
+### -field PrivateDriverDataSize [in]
 
-[in] The size, in bytes, of the block of private data that <b>pPrivateDriverData</b> points to.
+The size, in bytes, of the block of private data that <b>pPrivateDriverData</b> points to.
 
 ## -see-also
 
@@ -99,3 +99,4 @@ The DXGK_OVERLAYINFO structure describes parameters that are required to create 
 
 
 <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a>
+

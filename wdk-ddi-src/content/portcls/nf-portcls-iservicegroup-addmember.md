@@ -4,7 +4,6 @@ title: IServiceGroup::AddMember (portcls.h)
 description: The AddMember method adds a member to the service group.
 old-location: audio\iservicegroup_addmember.htm
 tech.root: audio
-ms.assetid: 1eddb631-db85-4243-89a4-a4ab042cee28
 ms.date: 05/08/2018
 keywords: ["IServiceGroup::AddMember"]
 ms.keywords: AddMember, AddMember method [Audio Devices], AddMember method [Audio Devices],IServiceGroup interface, IServiceGroup interface [Audio Devices],AddMember method, IServiceGroup.AddMember, IServiceGroup::AddMember, audio.iservicegroup_addmember, audmp-routines_0d318d56-28e9-4e42-84b3-1d0eb4110f71.xml, portcls/IServiceGroup::AddMember
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IServiceGroup.AddMember
+ - IServiceGroup::AddMember
 ---
 
 # IServiceGroup::AddMember
@@ -50,9 +49,9 @@ The <code>AddMember</code> method adds a member to the service group.
 
 ## -parameters
 
-### -param pServiceSink 
+### -param pServiceSink [in]
 
-[in]
+
 Pointer to the <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iservicesink">IServiceSink</a> interface of the new member of the service group
 
 ## -returns
@@ -70,3 +69,4 @@ The <code>AddMember</code> method calls <b>AddRef</b> on the <i>pServiceSink</i>
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iservicesink">IServiceSink</a>
+

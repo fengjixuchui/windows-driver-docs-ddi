@@ -1,15 +1,14 @@
 ---
 UID: NS:d3dkmdt._DXGK_NODEMETADATA_FLAGS
-title: _DXGK_NODEMETADATA_FLAGS (d3dkmdt.h)
-description: Defines node metadata flags for a context.
-ms.assetid: 1c350249-da27-4a7c-bf05-38ff484fcfc2
-ms.date: 10/19/2018
+title: DXGK_NODEMETADATA_FLAGS (d3dkmdt.h)
+description: Learn more about the DXGK_NODEMETADATA_FLAGS structure.
+ms.date: 06/17/2024
 keywords: ["DXGK_NODEMETADATA_FLAGS structure"]
 ms.keywords: _DXGK_NODEMETADATA_FLAGS, DXGK_NODEMETADATA_FLAGS,
 req.header: d3dkmdt.h
 req.include-header: 
 req.target-type: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 10 version 1703
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -35,34 +34,42 @@ api_location:
  - d3dkmdt.h
 api_name:
  - _DXGK_NODEMETADATA_FLAGS
+ - DXGK_NODEMETADATA_FLAGS
 dev_langs:
  - c++
 ---
 
-# _DXGK_NODEMETADATA_FLAGS structure
-
+# DXGK_NODEMETADATA_FLAGS structure
 
 ## -description
 
-Defines node metadata flags for a context.
+The **DXGK_NODEMETADATA_FLAGS** structure describes the capabilities of an engine on a GPU node.
 
 ## -struct-fields
 
 ### -field ContextSchedulingSupported
 
-Context-based scheduling model.
+The engine supports the context-based scheduling model.
 
 ### -field RingBufferFenceRelease
 
-Ring buffer fence release.
+The engine supports ring buffer fence release. Supported starting with Windows 10, version 1809.
 
 ### -field SupportTrackedWorkload
 
-Supports tracked workload.
+The engine supports tracked workloads. Available starting with Windows 10, version 1809.
+
+### -field UserModeSubmission
+
+The engine supports [user-mode work submission](/windows-hardware/drivers/display/user-mode-work-submission). Supported starting with Windows 11, version 24H2.
+
+### -field SupportBuildTestCommandBuffer
+
+The engine supports [kernel-mode testing](/windows-hardware/drivers/display/kernel-mode-testing-of-wddm-features). Supported starting with Windows 11, version 24H2.
 
 ### -field MaxInFlightHwQueueBuffers
 
-The maximum number of command buffers submitted by the hardware schedular, to the kernel mode driver. 0 indicates no limit.
+The maximum number of command buffers submitted by the hardware scheduler to the kernel-mode driver. A value of zero indicates no limit. Available starting with Windows 10, version 1809.
 
 ### -field Reserved
 
@@ -70,7 +77,12 @@ Reserved.
 
 ### -field Value
 
-## -remarks
+An alternative way to access the structure members.
 
 ## -see-also
 
+[**DXGK_NODEMETADATA**](ns-d3dkmdt-_dxgk_nodemetadata.md)
+
+[**DXGKARG_GETNODEMETADATA**](ns-d3dkmdt-_dxgk_nodemetadata.md)
+
+[**DxgkDdiGetNodeMetadata**](../d3dkmddi/nc-d3dkmddi-dxgkddi_getnodemetadata.md)

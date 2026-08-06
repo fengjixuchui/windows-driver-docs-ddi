@@ -1,10 +1,9 @@
 ---
 UID: NF:ntstrsafe.RtlStringCbCatW
 title: RtlStringCbCatW function (ntstrsafe.h)
-description: The RtlStringCbCatW and RtlStringCbCatA functions concatenate two byte-counted strings.
+description: Learn how the RtlStringCbCatW and RtlStringCbCatA functions concatenate two byte-counted strings.
 old-location: kernel\rtlstringcbcat.htm
 tech.root: kernel
-ms.assetid: 1034384f-6295-42ca-bf78-47c383417500
 ms.date: 04/30/2018
 keywords: ["RtlStringCbCatW function"]
 ms.keywords: RtlStringCbCat, RtlStringCbCatA, RtlStringCbCatW, RtlStringCbCatW function [Kernel-Mode Driver Architecture], kernel.rtlstringcbcat, ntstrsafe/RtlStringCbCatA, ntstrsafe/RtlStringCbCatW, safestrings_31bee145-512e-4daa-87c3-98abc5e88b2b.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -40,8 +39,6 @@ api_location:
  - Ntstrsafe.dll
 api_name:
  - RtlStringCbCatW
- - RtlStringCbCatA
- - RtlStringCbCatW
 ---
 
 # RtlStringCbCatW function
@@ -53,23 +50,23 @@ The <b>RtlStringCbCatW</b> and <b>RtlStringCbCatA</b> functions concatenate two 
 
 ## -parameters
 
-### -param pszDest 
+### -param pszDest [in, out]
 
-[in, out]
+
 A pointer to a buffer which, on input, contains a null-terminated string to which <i>pszSrc</i> will be concatenated. On output, this is the destination buffer that contains the entire resultant string. The string at <i>pszSrc</i> is added to the end of the string at <i>pszDest</i> and terminated with a null character.
 
-### -param cbDest 
+### -param cbDest [in]
 
-[in]
+
 The size of the destination buffer, in bytes. The destination buffer must be large enough to include the concatenated strings and the terminating null character. 
 
 For Unicode strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * sizeof(WCHAR).
 
 For ANSI strings, the maximum number of bytes is NTSTRSAFE_MAX_CCH * sizeof(char).
 
-### -param pszSrc 
+### -param pszSrc [in]
 
-[in]
+
 A pointer to a null-terminated string. This string will be concatenated to the end of the string that is contained in the buffer at <i>pszDest</i>.
 
 ## -returns
@@ -196,3 +193,4 @@ For more information about the safe string functions, see <a href="/windows-hard
 
 
 <a href="/windows-hardware/drivers/ddi/ntstrsafe/nf-ntstrsafe-rtlstringcchcatexa">RtlStringCchCatEx</a>
+

@@ -4,7 +4,6 @@ title: KsStreamPointerGetMdl function (ks.h)
 description: The KsStreamPointerGetMdl function returns the MDL associated with the frame referenced by StreamPointer.
 old-location: stream\ksstreampointergetmdl.htm
 tech.root: stream
-ms.assetid: 05d37fbd-9bdc-478a-8772-6f63d1363c1c
 ms.date: 04/23/2018
 keywords: ["KsStreamPointerGetMdl function"]
 ms.keywords: KsStreamPointerGetMdl, KsStreamPointerGetMdl function [Streaming Media Devices], avfunc_94dcd1e0-4882-4703-b69a-9ca8b21d30a0.xml, ks/KsStreamPointerGetMdl, stream.ksstreampointergetmdl
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ks.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,9 +50,9 @@ The<b> KsStreamPointerGetMdl </b>function returns the MDL associated with the fr
 
 ## -parameters
 
-### -param StreamPointer 
+### -param StreamPointer [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksstream_pointer">KSSTREAM_POINTER</a> structure that references the frame for which to return the associated MDL.
 
 ## -returns

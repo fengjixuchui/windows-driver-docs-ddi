@@ -4,7 +4,6 @@ title: IoCreateDisk function (ntddk.h)
 description: The IoCreateDisk routine initializes a raw disk by creating a new partition table.
 old-location: storage\iocreatedisk.htm
 tech.root: storage
-ms.assetid: 0ad85551-a8d2-4f7f-958b-fe23111de340
 ms.date: 03/29/2018
 keywords: ["IoCreateDisk function"]
 ms.keywords: IoCreateDisk, IoCreateDisk routine [Storage Devices], ntddk/IoCreateDisk, rtns-disk_5f69686f-f812-4ccc-8bc8-4caa70230d20.xml, storage.iocreatedisk
@@ -50,14 +49,14 @@ The <b>IoCreateDisk</b> routine initializes a raw disk by creating a new partiti
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Specifies the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_device_object">DEVICE_OBJECT</a> for the raw disk.
 
-### -param Disk 
+### -param Disk [in, optional]
 
-[in, optional]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/ntdddisk/ns-ntdddisk-_create_disk">CREATE_DISK</a> structure that specifies the type and parameters for the partition table. If <i>Disk</i> is <b>NULL</b>, the routine deletes the partition table on the disk.
 
 ## -returns

@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl3.ControlledOutputVaList
 title: IDebugControl3::ControlledOutputVaList (dbgeng.h)
-description: The ControlledOutputVaList method formats a string and sends the result to output callbacks that were registered with some of the engine's clients.
+description: The IDebugControl3::ControlledOutputVaList method formats a string and sends the result to output callbacks registered with some of the engine's clients.
 old-location: debugger\controlledoutputvalist.htm
 tech.root: debugger
-ms.assetid: 5fd3c915-77e0-4f81-9131-0eaf9d3493a3
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::ControlledOutputVaList"]
 ms.keywords: ControlledOutputVaList, ControlledOutputVaList method [Windows Debugging], ControlledOutputVaList method [Windows Debugging],IDebugControl interface, ControlledOutputVaList method [Windows Debugging],IDebugControl2 interface, ControlledOutputVaList method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],ControlledOutputVaList method, IDebugControl2 interface [Windows Debugging],ControlledOutputVaList method, IDebugControl2::ControlledOutputVaList, IDebugControl3 interface [Windows Debugging],ControlledOutputVaList method, IDebugControl3.ControlledOutputVaList, IDebugControl3::ControlledOutputVaList, IDebugControl::ControlledOutputVaList, IDebugControl_2ea55393-9577-4639-ac83-5cefb584ff3b.xml, dbgeng/IDebugControl2::ControlledOutputVaList, dbgeng/IDebugControl3::ControlledOutputVaList, dbgeng/IDebugControl::ControlledOutputVaList, debugger.controlledoutputvalist
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - Dbgeng.h
 api_name:
- - IDebugControl.ControlledOutputVaList
- - IDebugControl2.ControlledOutputVaList
- - IDebugControl3.ControlledOutputVaList
+ - IDebugControl3::ControlledOutputVaList
 ---
 
 # IDebugControl3::ControlledOutputVaList
@@ -52,19 +49,19 @@ The <b>ControlledOutputVaList</b>  method formats a string and sends the result 
 
 ## -parameters
 
-### -param OutputControl 
+### -param OutputControl [in]
 
-[in]
+
 Specifies an output control that determines which client's output callbacks will receive the output.  For possible values, see <a href="/windows-hardware/drivers/debugger/debug-outctl-xxx">DEBUG_OUTCTL_XXX</a>.  For more information about output, see <a href="/windows-hardware/drivers/debugger/input-and-output">Input and Output</a>.
 
-### -param Mask 
+### -param Mask [in]
 
-[in]
+
 Specifies the output-type bit field.  See <a href="/windows-hardware/drivers/debugger/debug-output-xxx">DEBUG_OUTPUT_XXX</a> for possible values.
 
-### -param Format 
+### -param Format [in]
 
-[in]
+
 Specifies the format string, as in <b>printf</b>.  Typically, conversion characters work exactly as they do in C. For the floating-point conversion characters, the 64-bit argument is interpreted as a 32-bit floating-point number unless the <b>l</b>  modifier is used.
 
 The <b>%p</b> conversion character is supported, but it represents a pointer in a target's address space.  It might not have any modifiers, and it uses the debugger's internal address formatting.  The following additional conversion characters are supported.
@@ -397,10 +394,9 @@ DML/NORMAL Y{l}: [d:\th\minkernel\kernelbase\debug.c @ 443]
 
 ```
 
+### -param Args [in]
 
-### -param Args 
 
-[in]
 Specifies additional parameters that represent values to be inserted into the output during formatting.  <i>Args</i> must be initialized using <b>va_start</b>.  This method does not call <b>va_end</b>.
 
 ## -returns
@@ -455,3 +451,4 @@ The macros <b>va_list</b>, <b>va_start</b>, and <b>va_end</b> are defined in Std
 
 
 <a href="/windows-hardware/drivers/ddi/wdbgexts/nc-wdbgexts-pwindbg_output_routine">dprintf</a>
+

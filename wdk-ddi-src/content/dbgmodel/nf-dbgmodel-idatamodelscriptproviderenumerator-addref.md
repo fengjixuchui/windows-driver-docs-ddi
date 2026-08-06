@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelScriptProviderEnumerator.AddRef
 title: IDataModelScriptProviderEnumerator::AddRef (dbgmodel.h)
-description: Increments the reference count for an interface on an object. This method should be called for every new copy of a pointer to an interface on an object.
-ms.assetid: 52ef3e23-8398-4043-a80d-2fceba1c73fb
+description: "The IDataModelScriptProviderEnumerator::AddRef method increments the reference count for an interface on an object."
 ms.date: 09/21/2018
 keywords: ["IDataModelScriptProviderEnumerator::AddRef"]
 ms.keywords: IDataModelScriptProviderEnumerator::AddRef, AddRef, IDataModelScriptProviderEnumerator.AddRef, IDataModelScriptProviderEnumerator::AddRef, IDataModelScriptProviderEnumerator.AddRef
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelScriptProviderEnumerator.AddRef
+ - IDataModelScriptProviderEnumerator::AddRef
 ---
 
 # IDataModelScriptProviderEnumerator::AddRef
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IDataModelScriptProviderEnumerator interface](nn-dbgmodel-idatamodelscriptproviderenumerator.md)
+

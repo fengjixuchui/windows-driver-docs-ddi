@@ -4,7 +4,6 @@ title: _DMA_ADAPTER_INFO_V1 (wdm.h)
 description: The DMA_ADAPTER_INFO_V1 structure describes the capabilities of the system DMA controller that is represented by an adapter object.
 old-location: kernel\dma_adapter_info_v1.htm
 tech.root: kernel
-ms.assetid: 5BB089B8-4384-450D-BC81-9D9D068CF4EB
 ms.date: 04/30/2018
 keywords: ["DMA_ADAPTER_INFO_V1 structure"]
 ms.keywords: "*PDMA_ADAPTER_INFO_V1, DMA_ADAPTER_INFO_V1, DMA_ADAPTER_INFO_V1 structure [Kernel-Mode Driver Architecture], PDMA_ADAPTER_INFO_V1, PDMA_ADAPTER_INFO_V1 structure pointer [Kernel-Mode Driver Architecture], _DMA_ADAPTER_INFO_V1, kernel.dma_adapter_info_v1, wdm/DMA_ADAPTER_INFO_V1, wdm/PDMA_ADAPTER_INFO_V1"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _DMA_ADAPTER_INFO_V1
+ - PDMA_ADAPTER_INFO_V1
  - DMA_ADAPTER_INFO_V1
 ---
 
@@ -87,3 +88,4 @@ A driver calls <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pget_dma_adapte
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pget_dma_adapter_info">GetDmaAdapterInfo</a>
+

@@ -4,7 +4,6 @@ title: KsFilterFactoryGetNextSiblingFilterFactory function (ks.h)
 description: The KsFilterFactoryGetNextSiblingFilterFactory function returns the next filter factory belonging to the parent device of FilterFactory.
 old-location: stream\ksfilterfactorygetnextsiblingfilterfactory.htm
 tech.root: stream
-ms.assetid: e397d36c-3f28-4a70-9b4a-f13be094d47b
 ms.date: 04/23/2018
 keywords: ["KsFilterFactoryGetNextSiblingFilterFactory function"]
 ms.keywords: KsFilterFactoryGetNextSiblingFilterFactory, KsFilterFactoryGetNextSiblingFilterFactory function [Streaming Media Devices], avfunc_b1bdc37b-de4a-4cfb-b1e9-1201225c29ab.xml, ks/KsFilterFactoryGetNextSiblingFilterFactory, stream.ksfilterfactorygetnextsiblingfilterfactory
@@ -50,9 +49,9 @@ The<b> KsFilterFactoryGetNextSiblingFilterFactory</b> function returns the next 
 
 ## -parameters
 
-### -param FilterFactory 
+### -param FilterFactory [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilterfactory">KSFILTERFACTORY</a> for which to return the next filter factory of its parent device.
 
 ## -returns

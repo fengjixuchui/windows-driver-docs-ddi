@@ -4,14 +4,13 @@ title: ZwSetEvent function (ntifs.h)
 description: The ZwSetEvent routine sets an event object to a Signaled state and attempts to satisfy as many waits as possible.
 old-location: kernel\zwsetevent.htm
 tech.root: kernel
-ms.assetid: f561fc3e-2233-4237-a88d-bd5a887a1e7a
 ms.date: 04/30/2018
 keywords: ["ZwSetEvent function"]
 ms.keywords: NtSetEvent, ZwSetEvent, ZwSetEvent routine [Kernel-Mode Driver Architecture], k111_e01bbbbf-29f9-4c0a-89a2-84cf927aeb47.xml, kernel.zwsetevent, ntifs/NtSetEvent, ntifs/ZwSetEvent
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows XP and later versions of Windows.
+req.target-min-winverclnt: Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - ZwSetEvent
- - NtSetEvent
 ---
 
 # ZwSetEvent function
@@ -51,14 +49,14 @@ The <b>ZwSetEvent</b> routine sets an event object to a Signaled state and attem
 
 ## -parameters
 
-### -param EventHandle 
+### -param EventHandle [in]
 
-[in]
+
 A handle to an event object.
 
-### -param PreviousState 
+### -param PreviousState [out, optional]
 
-[out, optional]
+
 An optional pointer to a variable where the previous state of the event object is stored on output.
 
 ## -returns
@@ -152,3 +150,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-zwwaitforsingleobject">ZwWaitForSingleObject</a>
+

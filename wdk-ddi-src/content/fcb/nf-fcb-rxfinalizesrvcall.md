@@ -4,7 +4,6 @@ title: RxFinalizeSrvCall function (fcb.h)
 description: RxFinalizeSrvCall finalizes the given SRV_CALL structure. The caller must have an exclusive lock on the netname table associated with the device object.
 old-location: ifsk\rxfinalizesrvcall.htm
 tech.root: ifsk
-ms.assetid: 293bb629-ac31-4ae3-bba3-b06812e9e6cb
 ms.date: 04/16/2018
 keywords: ["RxFinalizeSrvCall function"]
 ms.keywords: RxFinalizeSrvCall, RxFinalizeSrvCall function [Installable File System Drivers], fcb/RxFinalizeSrvCall, ifsk.rxfinalizesrvcall, rxref_0560ef8e-f9e2-47ba-b78b-c3298e66238e.xml
@@ -50,14 +49,14 @@ api_name:
 
 ## -parameters
 
-### -param ThisSrvCall 
+### -param ThisSrvCall [out]
 
-[out]
+
 A pointer to the SRV_CALL structure to finalize.
 
-### -param ForceFinalize 
+### -param ForceFinalize [in]
 
-[in]
+
 The value indicating whether the finalization should be forced, regardless of the reference count. 
 
 If <i>ForceFinalize</i> is <b>FALSE</b>, then the <b>NodeReferenceCount</b> member of the SRV_CALL structure pointed to by <i>ThisSrvCall</i> must be 1 for the SRV_CALL to be finalized.

@@ -4,7 +4,6 @@ title: IOCTL_1394_CLASS (1394.h)
 description: An IEEE 1394 driver uses the IRP_MJ_INTERNAL_DEVICE_CONTROL IRP, with IoControlCode IOCTL_1394_CLASS, to communicate with the bus driver. The driver has access to all operations provided by the IEEE 1394 bus and its host controller through this request.
 old-location: ieee\ioctl_1394_class.htm
 tech.root: IEEE
-ms.assetid: 88a5f5ab-e85b-4bd6-a2f5-bbcdc8c4f30c
 ms.date: 02/15/2018
 keywords: ["IOCTL_1394_CLASS IOCTL"]
 ms.keywords: 1394/IOCTL_1394_CLASS, 1394irp_fa8ee811-14ee-44a0-9a9c-b53a421497d4.xml, IEEE.ioctl_1394_class, IOCTL_1394_CLASS, IOCTL_1394_CLASS control, IOCTL_1394_CLASS control code [Buses]
@@ -50,6 +49,8 @@ An IEEE 1394 driver uses the <a href="/windows-hardware/drivers/kernel/irp-mj-in
 
 ## -ioctlparameters
 
+### -ioctl-major-code
+
 ### -input-buffer
 
 <b>Parameters->Others.Arguments1</b> points to an <b>IRB</b> structure. The <b>FunctionNumber</b> member of the IRB specifies the type of request. The <b>u</b> member of the IRB is a union that specifies the request-type-specific parameters of the request. The parameters and their meaning are documented with each request.
@@ -57,131 +58,131 @@ An IEEE 1394 driver uses the <a href="/windows-hardware/drivers/kernel/irp-mj-in
 Legal requests are as follows:
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537632">REQUEST_ALLOCATE_ADDRESS_RANGE</a>
+REQUEST_ALLOCATE_ADDRESS_RANGE
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537633">REQUEST_ASYNC_LOCK</a>
+REQUEST_ASYNC_LOCK
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537634">REQUEST_ASYNC_READ</a>
+REQUEST_ASYNC_READ
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537635">REQUEST_ASYNC_STREAM</a>
+REQUEST_ASYNC_STREAM
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537636">REQUEST_ASYNC_WRITE</a>
+REQUEST_ASYNC_WRITE
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537637">REQUEST_BUS_RESET</a>
+REQUEST_BUS_RESET
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537638">REQUEST_BUS_RESET_NOTIFICATION</a>
+REQUEST_BUS_RESET_NOTIFICATION
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537639">REQUEST_CONTROL</a>
+REQUEST_CONTROL
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537640">REQUEST_FREE_ADDRESS_RANGE</a>
+REQUEST_FREE_ADDRESS_RANGE
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537641">REQUEST_GET_ADDR_FROM_DEVICE_OBJECT</a>
+REQUEST_GET_ADDR_FROM_DEVICE_OBJECT
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537642">REQUEST_GET_CONFIGURATION_INFO</a>
+REQUEST_GET_CONFIGURATION_INFO
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537643">REQUEST_GET_GENERATION_COUNT</a>
+REQUEST_GET_GENERATION_COUNT
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a>
+REQUEST_GET_LOCAL_HOST_INFO
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537645">REQUEST_GET_SPEED_BETWEEN_DEVICES</a>
+REQUEST_GET_SPEED_BETWEEN_DEVICES
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537646">REQUEST_GET_SPEED_TOPOLOGY_MAPS</a>
+REQUEST_GET_SPEED_TOPOLOGY_MAPS
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537647">REQUEST_ISOCH_ALLOCATE_BANDWIDTH</a>
+REQUEST_ISOCH_ALLOCATE_BANDWIDTH
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537648">REQUEST_ISOCH_ALLOCATE_CHANNEL</a>
+REQUEST_ISOCH_ALLOCATE_CHANNEL
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537649">REQUEST_ISOCH_ALLOCATE_RESOURCES</a>
+REQUEST_ISOCH_ALLOCATE_RESOURCES
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537650">REQUEST_ISOCH_ATTACH_BUFFERS</a>
+REQUEST_ISOCH_ATTACH_BUFFERS
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537651">REQUEST_ISOCH_DETACH_BUFFERS</a>
+REQUEST_ISOCH_DETACH_BUFFERS
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537652">REQUEST_ISOCH_FREE_BANDWIDTH</a>
+REQUEST_ISOCH_FREE_BANDWIDTH
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537653">REQUEST_ISOCH_FREE_CHANNEL</a>
+REQUEST_ISOCH_FREE_CHANNEL
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537654">REQUEST_ISOCH_FREE_RESOURCES</a>
+REQUEST_ISOCH_FREE_RESOURCES
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537655">REQUEST_ISOCH_LISTEN</a>
+REQUEST_ISOCH_LISTEN
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537656">REQUEST_ISOCH_QUERY_CYCLE_TIME</a>
+REQUEST_ISOCH_QUERY_CYCLE_TIME
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537657">REQUEST_ISOCH_QUERY_RESOURCES</a>
+REQUEST_ISOCH_QUERY_RESOURCES
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537658">REQUEST_ISOCH_SET_CHANNEL_BANDWIDTH</a>
+REQUEST_ISOCH_SET_CHANNEL_BANDWIDTH
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537659">REQUEST_ISOCH_STOP</a>
+REQUEST_ISOCH_STOP
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537660">REQUEST_ISOCH_TALK</a>
+REQUEST_ISOCH_TALK
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537661">REQUEST_SEND_PHY_CONFIG_PACKET</a>
+REQUEST_SEND_PHY_CONFIG_PACKET
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537662">REQUEST_SET_DEVICE_XMIT_PROPERTIES</a>
+REQUEST_SET_DEVICE_XMIT_PROPERTIES
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537663">REQUEST_SET_LOCAL_HOST_PROPERTIES</a>
+REQUEST_SET_LOCAL_HOST_PROPERTIES
 
 ### -input-buffer-length
 
@@ -201,4 +202,4 @@ The information the bus driver returns in the I/O Status Block is documented bel
 
 ## -see-also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537241">IOCTL_IEEE1394_API_REQUEST</a>
+IOCTL_IEEE1394_API_REQUEST

@@ -4,7 +4,6 @@ title: IPortableDeviceValues::CopyValuesFromPropertyStore (portabledevicetypes.h
 description: Copies the contents of an IPropertyStore into the collection.
 old-location: wpddk\iportabledevicevalues_copyvaluesfrompropertystore.htm
 tech.root: wpd_dk
-ms.assetid: 2010802f-3803-46f9-9f19-11fd1f593fc8
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::CopyValuesFromPropertyStore"]
 ms.keywords: CopyValuesFromPropertyStore, CopyValuesFromPropertyStore method, CopyValuesFromPropertyStore method,IPortableDeviceValues interface, IPortableDeviceValues interface,CopyValuesFromPropertyStore method, IPortableDeviceValues.CopyValuesFromPropertyStore, IPortableDeviceValues::CopyValuesFromPropertyStore, IPortableDeviceValuesCopyValuesFromPropertyStore, portabledevicetypes/IPortableDeviceValues::CopyValuesFromPropertyStore, wpddk.iportabledevicevalues_copyvaluesfrompropertystore
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.CopyValuesFromPropertyStore
+ - IPortableDeviceValues::CopyValuesFromPropertyStore
 ---
 
 # IPortableDeviceValues::CopyValuesFromPropertyStore
@@ -51,9 +50,9 @@ Copies the contents of an <b>IPropertyStore</b> into the collection.
 
 ## -parameters
 
-### -param pStore 
+### -param pStore [in]
 
-[in]
+
 Pointer to an <b>IPropertyStore</b> to copy into the collection.
 
 ## -returns
@@ -91,3 +90,4 @@ Many external applications or components that communicate with your application,
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-copyvaluestopropertystore">IPortableDeviceValues::CopyValuesToPropertyStore</a>
+

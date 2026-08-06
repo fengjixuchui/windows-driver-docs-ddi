@@ -4,7 +4,6 @@ title: ClfsDeleteLogByPointer function (wdm.h)
 description: The ClfsDeleteLogByPointer routine marks a CLFS stream for deletion.
 old-location: kernel\clfsdeletelogbypointer.htm
 tech.root: kernel
-ms.assetid: da6e4133-a2ba-4f8c-9490-e1f9b453b6e2
 ms.date: 04/30/2018
 keywords: ["ClfsDeleteLogByPointer function"]
 ms.keywords: ClfsDeleteLogByPointer, ClfsDeleteLogByPointer routine [Kernel-Mode Driver Architecture], Clfs_d5571c5c-19a0-4113-8401-910721d76191.xml, kernel.clfsdeletelogbypointer, wdm/ClfsDeleteLogByPointer
@@ -51,9 +50,9 @@ The <b>ClfsDeleteLogByPointer</b> routine marks a CLFS stream for deletion.
 
 ## -parameters
 
-### -param plfoLog 
+### -param plfoLog [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_file_object">LOG_FILE_OBJECT</a> structure that represents an open instance of the stream to be deleted. The caller previously obtained this pointer by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfscreatelogfile">ClfsCreateLogFile</a>.
 
 ## -returns

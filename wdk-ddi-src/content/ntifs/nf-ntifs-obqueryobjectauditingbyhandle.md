@@ -1,11 +1,10 @@
 ---
 UID: NF:ntifs.ObQueryObjectAuditingByHandle
 title: ObQueryObjectAuditingByHandle function (ntifs.h)
-description: Reserved for system use.
+description: "Microsoft reserves the ObQueryObjectAuditingByHandle function for internal use only. Don't use this function in your code."
 old-location: ifsk\obqueryobjectauditingbyhandle.htm
 tech.root: ifsk
-ms.assetid: 7287b060-ab4c-48af-b5cd-67bae7bc1a73
-ms.date: 04/16/2018
+ms.date: 05/24/2022
 keywords: ["ObQueryObjectAuditingByHandle function"]
 ms.keywords: ObQueryObjectAuditingByHandle, ObQueryObjectAuditingByHandle function [Installable File System Drivers], ifsk.obqueryobjectauditingbyhandle, ntifs/ObQueryObjectAuditingByHandle, obref_1fb6339d-82a7-4c0f-bcaf-001886ebd898.xml
 req.header: ntifs.h
@@ -43,18 +42,20 @@ api_name:
 
 # ObQueryObjectAuditingByHandle function
 
-
 ## -description
 
-The <b>ObQueryObjectAuditingByHandle</b> routine is reserved for system use.
+The **ObQueryObjectAuditingByHandle** routine is reserved for system use.
 
 ## -parameters
 
 ### -param Handle
 
-<p>Reserved.</p>
+Reserved.
 
 ### -param GenerateOnClose
 
 Reserved.
 
+## -returns
+
+Reserved.

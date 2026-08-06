@@ -4,7 +4,6 @@ title: _HPMI_HINT_BOOL (hpmi.h)
 description: Boolean type value used to track availability of HPMI hint data.
 old-location: powermeter\hpmi_hint_bool.htm
 tech.root: powermeter
-ms.assetid: E056400C-A0FE-4740-945D-C529C8804DF3
 ms.date: 05/08/2018
 keywords: ["HPMI_HINT_BOOL enumeration"]
 ms.keywords: "*PHPMI_HINT_BOOL, HPMI_HINT_BOOL, HPMI_HINT_BOOL enumeration [Power Metering and Budgeting Devices], HpmiBoolFalse, HpmiBoolMax, HpmiBoolTrue, HpmiBoolUnavailable, _HPMI_HINT_BOOL, hpmi/HPMI_HINT_BOOL, hpmi/HpmiBoolFalse, hpmi/HpmiBoolMax, hpmi/HpmiBoolTrue, hpmi/HpmiBoolUnavailable, powermeter.hpmi_hint_bool"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hpmi.h
 api_name:
+ - _HPMI_HINT_BOOL
+ - PHPMI_HINT_BOOL
  - HPMI_HINT_BOOL
 ---
 
@@ -83,3 +84,4 @@ Value is not used.
 
 
 <a href="/windows-hardware/drivers/ddi/hpmi/index">hpmi.h</a>
+

@@ -4,7 +4,6 @@ title: IWDFUsbTargetPipe::Flush (wudfusb.h)
 description: The Flush method discards any data that WinUsb saved when the device returned more data than the client requested.
 old-location: wdf\iwdfusbtargetpipe_flush.htm
 tech.root: wdf
-ms.assetid: d8e5cbf7-62c7-458d-a527-2508a8a5d066
 ms.date: 02/26/2018
 keywords: ["IWDFUsbTargetPipe::Flush"]
 ms.keywords: Flush, Flush method, Flush method,IWDFUsbTargetPipe interface, IWDFUsbTargetPipe interface,Flush method, IWDFUsbTargetPipe.Flush, IWDFUsbTargetPipe::Flush, UMDFUSBref_5a569ab8-ccbd-47cc-93a6-8e61f366e6ee.xml, umdf.iwdfusbtargetpipe_flush, wdf.iwdfusbtargetpipe_flush, wudfusb/IWDFUsbTargetPipe::Flush
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFUsbTargetPipe.Flush
+ - IWDFUsbTargetPipe::Flush
 ---
 
 # IWDFUsbTargetPipe::Flush
@@ -109,3 +108,4 @@ For more information about how <b>Flush</b> works, see the <a href="/windows/win
 
 
 <a href="/windows/win32/api/winusb/nf-winusb-winusb_flushpipe">WinUsb_FlushPipe</a>
+

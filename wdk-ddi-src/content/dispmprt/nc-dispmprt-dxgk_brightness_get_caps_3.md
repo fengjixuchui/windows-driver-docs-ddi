@@ -2,7 +2,6 @@
 UID: NC:dispmprt.DXGK_BRIGHTNESS_GET_CAPS_3
 title: DXGK_BRIGHTNESS_GET_CAPS_3 (dispmprt.h)
 description: Implemented by the client driver to retrieve the brightness control capabilities of an integrated display panel.
-ms.assetid: 8611cbe1-4c56-4c39-b2a7-41c73262052b
 ms.date: 10/19/2018
 keywords: ["DXGK_BRIGHTNESS_GET_CAPS_3 callback function"]
 req.header: dispmprt.h
@@ -35,8 +34,6 @@ api_location:
  - dispmprt.h
 api_name:
  - DXGK_BRIGHTNESS_GET_CAPS_3
-product:
- - Windows
 ---
 
 # DXGK_BRIGHTNESS_GET_CAPS_3 callback function
@@ -48,17 +45,17 @@ Implemented by the client driver to retrieve the brightness control capabilities
 
 ## -parameters
 
-### -param Context
+### -param Context [in]
 
-[in] A handle to a context block that is associated with a display adapter.
+A handle to a context block that is associated with a display adapter.
 
-### -param ChildUid
+### -param ChildUid [in]
 
-[in] An integer that uniquely identifies the child device. The display miniport driver's [DxgkDdiQueryChildRelations](../dispmprt/nc-dispmprt-dxgkddi_query_child_relations.md) function previously provided this identifier to the display port driver.
+An integer that uniquely identifies the child device. The display miniport driver's [DxgkDdiQueryChildRelations](../dispmprt/nc-dispmprt-dxgkddi_query_child_relations.md) function previously provided this identifier to the display port driver.
 
-### -param pBrightnessCaps:
+### -param pBrightnessCaps: [out]
 
-[out] Pointer to a [DXGK_BRIGHTNESS_CAPS](../d3dkmdt/ns-d3dkmdt-_dxgk_brightness_caps.md) structure that represents the brightness control capabilities of the display panel.
+Pointer to a [DXGK_BRIGHTNESS_CAPS](../d3dkmdt/ns-d3dkmdt-_dxgk_brightness_caps.md) structure that represents the brightness control capabilities of the display panel.
 
 ## -returns
 

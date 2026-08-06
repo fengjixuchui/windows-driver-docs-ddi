@@ -4,7 +4,6 @@ title: IOCTL_HID_ENABLE_SECURE_READ (hidclass.h)
 description: The IOCTL_HID_ENABLE_SECURE_READ request enables a secure read for open files of a HID collection.
 old-location: hid\ioctl_hid_enable_secure_read.htm
 tech.root: hid
-ms.assetid: 9ec1c4e9-8c98-4772-8657-3392ff0827b5
 ms.date: 04/30/2018
 keywords: ["IOCTL_HID_ENABLE_SECURE_READ IOCTL"]
 ms.keywords: IOCTL_HID_ENABLE_SECURE_READ, IOCTL_HID_ENABLE_SECURE_READ control, IOCTL_HID_ENABLE_SECURE_READ control code [Human Input Devices], hid.ioctl_hid_enable_secure_read, hidclass/IOCTL_HID_ENABLE_SECURE_READ, hidioreq_2d4e5797-33fb-40dd-bf76-8d81a0d26826.xml
@@ -53,6 +52,8 @@ A client uses an <a href="/windows-hardware/drivers/ddi/hidclass/ni-hidclass-ioc
 For information about how to use enable and disable secure read requests to enforce a secure read for a collection, see <a href="/windows-hardware/drivers/hid/enforcing-a-secure-read-for-a-hid-collection">Enforcing a Secure Read For a HID Collection</a>.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

@@ -4,7 +4,6 @@ title: PCAM_CONFIGURE_ROUTINE_EX (usbcamdi.h)
 description: A camera minidriver's CamConfigureEx callback function configures the isochronous streaming interface.
 old-location: stream\camconfigureex.htm
 tech.root: stream
-ms.assetid: ec9fd207-4ed8-4bc9-b240-b5214e8c7f67
 ms.date: 04/23/2018
 keywords: ["PCAM_CONFIGURE_ROUTINE_EX callback function"]
 ms.keywords: CamConfigureEx, CamConfigureEx routine [Streaming Media Devices], PCAM_CONFIGURE_ROUTINE_EX, stream.camconfigureex, usbcamdi/CamConfigureEx, usbcmdpr_79d31303-32b2-493e-87b6-d6e1a9ad292d.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - usbcamdi.h
 api_name:
- - CamConfigureEx
+ - PCAM_CONFIGURE_ROUTINE_EX
 ---
 
 # PCAM_CONFIGURE_ROUTINE_EX callback function
@@ -113,3 +112,4 @@ This function is required.
 
 
 <a href="/windows-hardware/drivers/ddi/usbspec/ns-usbspec-_usb_device_descriptor">USB_DEVICE_DESCRIPTOR</a>
+

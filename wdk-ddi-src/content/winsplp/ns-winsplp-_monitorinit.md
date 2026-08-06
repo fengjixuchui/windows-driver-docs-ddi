@@ -4,7 +4,6 @@ title: _MONITORINIT (winsplp.h)
 description: The MONITORINIT structure is used as an input parameter to a print monitor's InitializePrintMonitor2 function.
 old-location: print\monitorinit.htm
 tech.root: print
-ms.assetid: 3445997f-a607-4071-b05e-c1a8d01892b2
 ms.date: 04/20/2018
 keywords: ["MONITORINIT structure"]
 ms.keywords: "*PMONITORINIT, MONITORINIT, MONITORINIT structure [Print Devices], PMONITORINIT, PMONITORINIT structure pointer [Print Devices], _MONITORINIT, print.monitorinit, spoolfnc_321f67a1-b279-4909-af99-d3e564bf3555.xml, winsplp/MONITORINIT, winsplp/PMONITORINIT"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - winsplp.h
 api_name:
+ - _MONITORINIT
+ - PMONITORINIT
  - MONITORINIT
 ---
 
@@ -85,3 +86,4 @@ Caller-supplied pointer to a string representing a server name.
 
 
 <a href="/windows-hardware/drivers/ddi/winsplp/ns-winsplp-_monitorreg">MONITORREG</a>
+

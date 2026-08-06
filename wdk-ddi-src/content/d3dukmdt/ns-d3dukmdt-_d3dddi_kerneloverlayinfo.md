@@ -4,7 +4,6 @@ title: _D3DDDI_KERNELOVERLAYINFO (d3dukmdt.h)
 description: The D3DDDI_KERNELOVERLAYINFO structure describes information for a kernel-mode overlay object.
 old-location: display\d3dddi_kerneloverlayinfo.htm
 tech.root: display
-ms.assetid: 0a9685f8-f201-4d1b-aef6-c4ac78100a80
 ms.date: 05/10/2018
 keywords: ["D3DDDI_KERNELOVERLAYINFO structure"]
 ms.keywords: D3DDDI_KERNELOVERLAYINFO, D3DDDI_KERNELOVERLAYINFO structure [Display Devices], D3D_other_Structs_ee8ebc87-60be-4b70-8428-4db20bcbdaa0.xml, _D3DDDI_KERNELOVERLAYINFO, d3dukmdt/D3DDDI_KERNELOVERLAYINFO, display.d3dddi_kerneloverlayinfo
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dukmdt.h
 api_name:
+ - _D3DDDI_KERNELOVERLAYINFO
  - D3DDDI_KERNELOVERLAYINFO
 ---
 
@@ -52,25 +52,25 @@ The D3DDDI_KERNELOVERLAYINFO structure describes information for a kernel-mode o
 
 ## -struct-fields
 
-### -field hAllocation
+### -field hAllocation [in]
 
-[in] A D3DKMT_HANDLE data type that represents a kernel-mode handle to the allocation to be displayed.
+A D3DKMT_HANDLE data type that represents a kernel-mode handle to the allocation to be displayed.
 
-### -field DstRect
+### -field DstRect [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddirect">D3DDDIRECT</a> structure that contains the overlay destination rectangle in device coordinates.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddirect">D3DDDIRECT</a> structure that contains the overlay destination rectangle in device coordinates.
 
-### -field SrcRect
+### -field SrcRect [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddirect">D3DDDIRECT</a> structure that contains the overlay source rectangle in device coordinates.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ns-d3dukmdt-_d3dddirect">D3DDDIRECT</a> structure that contains the overlay source rectangle in device coordinates.
 
-### -field pPrivateDriverData
+### -field pPrivateDriverData [in]
 
-[in] A pointer to a block of private data, which is passed from the user-mode display driver to the display miniport driver.
+A pointer to a block of private data, which is passed from the user-mode display driver to the display miniport driver.
 
-### -field PrivateDriverDataSize
+### -field PrivateDriverDataSize [in]
 
-[in] The size, in bytes, of the block of private data that is pointed to by <b>pPrivateDriverData</b>.
+The size, in bytes, of the block of private data that is pointed to by <b>pPrivateDriverData</b>.
 
 ## -see-also
 
@@ -83,3 +83,4 @@ The D3DDDI_KERNELOVERLAYINFO structure describes information for a kernel-mode o
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_updateoverlaycb">pfnUpdateOverlayCb</a>
+

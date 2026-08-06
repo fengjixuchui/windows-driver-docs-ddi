@@ -3,8 +3,7 @@ UID: NF:netadapter.NetAdapterSetDataPathCapabilities
 title: NetAdapterSetDataPathCapabilities function (netadapter.h)
 description: Sets the data path capabilities of the network adapter.
 tech.root: netvista
-ms.assetid: 00abe85f-5c61-4fc3-b863-ca31a5989376
-ms.date: 02/06/2018
+ms.date: 07/23/2025
 keywords: ["NetAdapterSetDataPathCapabilities function"]
 ms.keywords: NetAdapterSetDataPathCapabilities
 req.header: netadapter.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.25
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -50,15 +49,15 @@ Sets the data path capabilities of the network adapter.
 
 ## -parameters
 
-### -param Adapter
+### -param Adapter [_In_]
 
 The network adapter object that the client created in a prior call to [NetAdapterCreate](nf-netadapter-netadaptercreate.md).
 
-### -param TxCapabilities
+### -param TxCapabilities [_In_]
 
 A pointer to an allocated and initialized [NET_ADAPTER_TX_CAPABILITIES](ns-netadapter-_net_adapter_tx_capabilities.md) structure.
 
-### -param RxCapabilities
+### -param RxCapabilities [_In_]
 
 A pointer to an allocated and initialized [NET_ADAPTER_RX_CAPABILITIES](ns-netadapter-_net_adapter_rx_capabilities.md) structure.
 
@@ -66,7 +65,7 @@ A pointer to an allocated and initialized [NET_ADAPTER_RX_CAPABILITIES](ns-netad
 
 The client driver must call this function when starting a net adapter, before calling [**NetAdapterStart**](nf-netadapter-netadapterstart.md).
 
-This function, along with a few other set capability functions (see below), is the replacement for the [NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES](../ndis/ns-ndis-_ndis_miniport_adapter_general_attributes.md) union that a (non-WDF) client of Ndis.sys sets by calling [NdisMSetMiniportAttributes](../ndis/nf-ndis-ndismsetminiportattributes.md).
+This function, along with a few other set capability functions (see below), is the replacement for the [NDIS_MINIPORT_ADAPTER_GENERAL_ATTRIBUTES](../miniportgeneralattributes/ns-miniportgeneralattributes-ndis_miniport_adapter_general_attributes.md) union that a (non-WDF) client of Ndis.sys sets by calling [NdisMSetMiniportAttributes](../ndis/nf-ndis-ndismsetminiportattributes.md).
 
 ## -see-also
 

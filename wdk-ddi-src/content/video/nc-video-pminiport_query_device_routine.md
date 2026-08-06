@@ -4,7 +4,6 @@ title: PMINIPORT_QUERY_DEVICE_ROUTINE (video.h)
 description: HwVidQueryDeviceCallback uses the specified configuration data to configure its adapter, and, possibly, to fill in missing configuration information in the VIDEO_PORT_CONFIG_INFO structure.
 old-location: display\hwvidquerydevicecallback.htm
 tech.root: display
-ms.assetid: 81c3f484-427e-43b8-b7dd-12017533560b
 ms.date: 05/10/2018
 keywords: ["PMINIPORT_QUERY_DEVICE_ROUTINE callback function"]
 ms.keywords: HwVidQueryDeviceCallback, HwVidQueryDeviceCallback callback function [Display Devices], PMINIPORT_QUERY_DEVICE_ROUTINE, PMINIPORT_QUERY_DEVICE_ROUTINE callback, VideoMiniport_Functions_9da236b0-f97f-410d-a0e7-c65499d7db8b.xml, display.hwvidquerydevicecallback, video/HwVidQueryDeviceCallback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - video.h
 api_name:
- - HwVidQueryDeviceCallback
+ - PMINIPORT_QUERY_DEVICE_ROUTINE
 ---
 
 # PMINIPORT_QUERY_DEVICE_ROUTINE callback function
@@ -64,13 +63,13 @@ Specifies the type of configuration information that was requested, which is one
 
 <b>VpBusData</b>
 
-<b><b>VpCmosData</b></b>
+<b>VpCmosData</b>
 
-<b><b>VpControllerData</b></b>
+<b>VpControllerData</b>
 
-<b><b>VpMachineData</b></b>
+<b>VpMachineData</b>
 
-<b><b>VpMonitorData</b></b>
+<b>VpMonitorData</b>
 
 Miniport drivers of x86-type video adapters usually specify <b>VpBusData</b>, particularly for adapters on EISA buses. The <b>VpControllerData</b> and <b>VpMonitorData</b> values have meaning only on ARC-compliant platforms. The <b>VpCmosData</b> and <b>VpMachineData</b> values are seldom used.
 
@@ -137,3 +136,4 @@ If it cannot get bus-relative access ranges values by calling <b>VideoPortGetDev
 
 
 <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportverifyaccessranges">VideoPortVerifyAccessRanges</a>
+

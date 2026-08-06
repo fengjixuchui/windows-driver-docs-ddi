@@ -4,7 +4,6 @@ title: RtlUInt8Sub function (ntintsafe.h)
 description: The RtlUInt8Sub routine subtracts one value of type UINT8 from another.
 old-location: kernel\rtluint8sub.htm
 tech.root: kernel
-ms.assetid: D8BD24AA-64CF-42CB-8AD2-2B6C77D4B195
 ms.date: 04/30/2018
 keywords: ["RtlUInt8Sub function"]
 ms.keywords: RtlUInt8Sub, RtlUInt8Sub function [Kernel-Mode Driver Architecture], kernel.rtluint8sub, ntintsafe/RtlUInt8Sub
@@ -50,19 +49,19 @@ The <b>RtlUInt8Sub</b> routine subtracts one value of type <b>UINT8</b> from ano
 
 ## -parameters
 
-### -param u8Minuend 
+### -param u8Minuend [in]
 
-[in]
+
 The value from which <i>u8Subtrahend</i> is subtracted.
 
-### -param u8Subtrahend 
+### -param u8Subtrahend [in]
 
-[in]
+
 The value to subtract from <i>u8Minuend</i>.
 
-### -param pu8Result 
+### -param pu8Result [out]
 
-[out]
+
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.ZwRollbackComplete
 title: ZwRollbackComplete function (wdm.h)
-description: The ZwRollbackComplete routine notifies KTM that the calling resource manager has finished rolling back a transaction's data.
+description: Learn how the ZwRollbackComplete routine notifies KTM that the calling resource manager has finished rolling back a transaction's data.
 old-location: kernel\zwrollbackcomplete.htm
 tech.root: kernel
-ms.assetid: 4b6d6791-6c13-49ee-a588-a0ed514279b2
 ms.date: 04/30/2018
 keywords: ["ZwRollbackComplete function"]
 ms.keywords: NtRollbackComplete, ZwRollbackComplete, ZwRollbackComplete routine [Kernel-Mode Driver Architecture], kernel.zwrollbackcomplete, ktm_ref_0e759f02-d2c1-4759-a5bc-3c3ceca8186c.xml, wdm/NtRollbackComplete, wdm/ZwRollbackComplete
@@ -39,7 +38,6 @@ api_location:
  - NtosKrnl.exe
 api_name:
  - ZwRollbackComplete
- - NtRollbackComplete
 ---
 
 # ZwRollbackComplete function
@@ -51,14 +49,14 @@ The <b>ZwRollbackComplete</b> routine notifies KTM that the calling resource man
 
 ## -parameters
 
-### -param EnlistmentHandle 
+### -param EnlistmentHandle [in]
 
-[in]
+
 A handle to an <a href="/windows-hardware/drivers/kernel/enlistment-objects">enlistment object</a> that was obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment">ZwCreateEnlistment</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a>. The handle must have ENLISTMENT_SUBORDINATE_RIGHTS access to the object.
 
-### -param TmVirtualClock 
+### -param TmVirtualClock [in, optional]
 
-[in, optional]
+
 A pointer to a <a href="/windows-hardware/drivers/kernel/using-virtual-clock-values">virtual clock value</a>. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns
@@ -144,3 +142,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenenlistment">ZwOpenEnlistment</a>
+

@@ -4,7 +4,6 @@ title: _DEBUG_REGISTER_DESCRIPTION (dbgeng.h)
 description: The DEBUG_REGISTER_DESCRIPTION structure is returned by GetDescription to describe a processor's register.
 old-location: debugger\debug_register_description.htm
 tech.root: debugger
-ms.assetid: 92e7800d-4de6-498c-87f8-8690d7e8fc51
 ms.date: 05/03/2018
 keywords: ["DEBUG_REGISTER_DESCRIPTION structure"]
 ms.keywords: "*PDEBUG_REGISTER_DESCRIPTION, DEBUG_REGISTER_DESCRIPTION, DEBUG_REGISTER_DESCRIPTION structure [Windows Debugging], PDEBUG_REGISTER_DESCRIPTION, PDEBUG_REGISTER_DESCRIPTION structure pointer [Windows Debugging], Structures_a7dd005e-3383-4c58-8b01-fe2127d6bc20.xml, _DEBUG_REGISTER_DESCRIPTION, dbgeng/DEBUG_REGISTER_DESCRIPTION, dbgeng/PDEBUG_REGISTER_DESCRIPTION, debugger.debug_register_description"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - DbgEng.h
 api_name:
+ - _DEBUG_REGISTER_DESCRIPTION
+ - PDEBUG_REGISTER_DESCRIPTION
  - DEBUG_REGISTER_DESCRIPTION
 ---
 
@@ -87,3 +88,4 @@ Reserved for system use.
 If this register is a subregister, the value of the full register can be turned into the value of the sub-register by first shifting <b>SubregShift</b> bits to the right and then combining the result with <b>SubregMask</b> using the bitwise-AND operator.  The size of the sub-register (<b>SubregLength</b>) is the number of bits set in <b>SubregMask</b>.
 
 For general information about registers, see <a href="/windows-hardware/drivers/debugger/registers">Registers</a>.
+

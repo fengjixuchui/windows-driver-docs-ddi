@@ -1,9 +1,8 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_38
+UID: NS:ksmedia.INTERLEAVED_AUDIO_FORMAT_INFORMATION
 title: INTERLEAVED_AUDIO_FORMAT_INFORMATION
 description: The INTERLEAVED_AUDIO_FORMAT_INFORMATION structure specifies how loopback audio is interleaved with the microphone audio for KSPROPERTY_INTERLEAVEDAUDIO_FORMATINFORMATION.
 tech.root: audio
-ms.assetid: a4a61253-cf10-4dc2-990d-c975520023b0
 ms.date: 08/14/2020
 keywords: ["INTERLEAVED_AUDIO_FORMAT_INFORMATION structure"]
 ms.keywords: INTERLEAVED_AUDIO_FORMAT_INFORMATION, INTERLEAVED_AUDIO_FORMAT_INFORMATION,
@@ -82,3 +81,4 @@ The WAVEFORMATEXTENSIBLE returned by the driver reports the channel count as a s
 [KSPROPERTY_INTERLEAVEDAUDIO_FORMATINFORMATION](/windows-hardware/drivers/audio/ksproperty-interleavedaudio-formatinformation)
 
 [KSPROPERTY_INTERLEAVEDAUDIO Enumeration](./ne-ksmedia-ksproperty_interleavedaudio.md)
+

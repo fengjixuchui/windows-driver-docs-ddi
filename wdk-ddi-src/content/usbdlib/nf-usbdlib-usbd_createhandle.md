@@ -4,7 +4,6 @@ title: USBD_CreateHandle function (usbdlib.h)
 description: The USBD_CreateHandle routine is called by a WDM USB client driver to obtain a USBD handle. The routine registers the client driver with the underlying USB driver stack.
 old-location: buses\usbd_register.htm
 tech.root: usbref
-ms.assetid: 97757CBA-8291-40A3-B247-D41E7FEB1D7C
 ms.date: 06/24/2019
 keywords: ["USBD_CreateHandle function"]
 ms.keywords: USBD_CreateHandle, USBD_CreateHandle routine [Buses], buses.usbd_register, usbdlib/USBD_CreateHandle
@@ -55,29 +54,29 @@ The  <b>USBD_CreateHandle</b> routine is called by a WDM USB client driver to ob
 
 ## -parameters
 
-### -param DeviceObject 
+### -param DeviceObject [in]
 
-[in]
+
 Pointer to the device object for the client driver.
 
-### -param TargetDeviceObject 
+### -param TargetDeviceObject [in]
 
-[in]
+
 Pointer to the next lower device object in the device stack. The client driver receives a pointer to that device object in a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ioattachdevicetodevicestack">IoAttachDeviceToDeviceStack</a>.
 
-### -param USBDClientContractVersion 
+### -param USBDClientContractVersion [in]
 
-[in]
+
 The contract version that the client driver supports. <i>USBDClientContractVersion</i> must be  USBD_CLIENT_CONTRACT_VERSION_602. For more information, see Remarks.
 
-### -param PoolTag 
+### -param PoolTag [in]
 
-[in]
+
 The pool tag used for memory allocations.
 
-### -param USBDHandle 
+### -param USBDHandle [out]
 
-[out]
+
 Opaque handle that indicates that the client driver was registered with the USB driver stack. For more information, see Remarks.
 
 ## -returns

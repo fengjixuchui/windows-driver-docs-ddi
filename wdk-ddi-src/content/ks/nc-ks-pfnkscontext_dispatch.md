@@ -4,7 +4,6 @@ title: PFNKSCONTEXT_DISPATCH (ks.h)
 description: A streaming minidriver's KStrContextDispatch routine is called to process IRP_MJ_POWER IRPs.
 old-location: stream\kstrcontextdispatch.htm
 tech.root: stream
-ms.assetid: be96eb59-6128-41bd-ad31-38f0d1a4e656
 ms.date: 04/23/2018
 keywords: ["PFNKSCONTEXT_DISPATCH callback function"]
 ms.keywords: KStrContextDispatch, KStrContextDispatch routine [Streaming Media Devices], PFNKSCONTEXT_DISPATCH, ks/KStrContextDispatch, ksfunc_b607dd80-6da6-4364-9452-4c2e53c54343.xml, stream.kstrcontextdispatch
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - KStrContextDispatch
+ - PFNKSCONTEXT_DISPATCH
 ---
 
 # PFNKSCONTEXT_DISPATCH callback function
@@ -50,14 +49,14 @@ A streaming minidriver's <i>KStrContextDispatch</i> routine is called to process
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Specifies the user-supplied memory context to be passed as the <i>PowerContext</i> argument to the <a href="/windows-hardware/drivers/ddi/ks/nf-ks-kssetpowerdispatch">KsSetPowerDispatch</a> function.
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 Specifies the power IRP to be processed.
 
 ## -returns
@@ -73,3 +72,4 @@ To manipulate the list entry only, <i>KStrContextDispatch</i> can call<b> KsSetP
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ks/nf-ks-kssetpowerdispatch">KsSetPowerDispatch</a>
+

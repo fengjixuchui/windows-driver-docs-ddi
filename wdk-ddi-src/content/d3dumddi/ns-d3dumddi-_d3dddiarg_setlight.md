@@ -4,7 +4,6 @@ title: _D3DDDIARG_SETLIGHT (d3dumddi.h)
 description: The D3DDDIARG_SETLIGHT structure describes how to set light properties.
 old-location: display\d3dddiarg_setlight.htm
 tech.root: display
-ms.assetid: 91da1c7a-aff5-4ece-b18d-14bd41e95464
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_SETLIGHT structure"]
 ms.keywords: D3DDDIARG_SETLIGHT, D3DDDIARG_SETLIGHT structure [Display Devices], UMDisplayDriver_param_Structs_85eaa308-4edf-44ee-9235-e8637c10aa35.xml, _D3DDDIARG_SETLIGHT, d3dumddi/D3DDDIARG_SETLIGHT, display.d3dddiarg_setlight
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_SETLIGHT
  - D3DDDIARG_SETLIGHT
 ---
 
@@ -52,13 +52,13 @@ The D3DDDIARG_SETLIGHT structure describes how to set light properties.
 
 ## -struct-fields
 
-### -field Index
+### -field Index [in]
 
-[in] An index into an array of lights.
+An index into an array of lights.
 
-### -field DataType
+### -field DataType [in]
 
-[in] A valid bitwise OR of the following flags that indicate the type of light data:
+A valid bitwise OR of the following flags that indicate the type of light data:
 
 | **Value** | **Meaning** | 
 |:--|:--|
@@ -73,3 +73,4 @@ The D3DDDIARG_SETLIGHT structure describes how to set light properties.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_setlight">SetLight</a>
+

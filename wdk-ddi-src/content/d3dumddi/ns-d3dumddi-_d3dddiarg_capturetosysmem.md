@@ -4,7 +4,6 @@ title: _D3DDDIARG_CAPTURETOSYSMEM (d3dumddi.h)
 description: The D3DDDIARG_CAPTURETOSYSMEM structure describes the parameters of a bit-block transfer (bitblt) from a capture buffer to a video memory surface.
 old-location: display\d3dddiarg_capturetosysmem.htm
 tech.root: display
-ms.assetid: 8cf42c60-655a-4deb-9351-4a3505b49593
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_CAPTURETOSYSMEM structure"]
 ms.keywords: D3DDDIARG_CAPTURETOSYSMEM, D3DDDIARG_CAPTURETOSYSMEM structure [Display Devices], UMDisplayDriver_param_Structs_497b7e52-066f-4078-b673-0f9cd3b6f4c1.xml, _D3DDDIARG_CAPTURETOSYSMEM, d3dumddi/D3DDDIARG_CAPTURETOSYSMEM, display.d3dddiarg_capturetosysmem
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_CAPTURETOSYSMEM
  - D3DDDIARG_CAPTURETOSYSMEM
 ---
 
@@ -52,25 +52,25 @@ The D3DDDIARG_CAPTURETOSYSMEM structure describes the parameters of a bit-block 
 
 ## -struct-fields
 
-### -field hSrcResource
+### -field hSrcResource [in]
 
-[in] A handle to the source resource.
+A handle to the source resource.
 
-### -field SrcRect
+### -field SrcRect [in]
 
-[in] A <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a> structure for the source rectangle.
+A <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a> structure for the source rectangle.
 
-### -field hDstResource
+### -field hDstResource [in]
 
-[in] A handle to the destination resource.
+A handle to the destination resource.
 
-### -field DstSubResourceIndex
+### -field DstSubResourceIndex [in]
 
-[in] The index to the destination surface within the resource.
+The index to the destination surface within the resource.
 
-### -field DstRect
+### -field DstRect [in]
 
-[in] A <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a> structure for the destination rectangle.
+A <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a> structure for the destination rectangle.
 
 ## -remarks
 
@@ -87,3 +87,4 @@ Because the source resource that is specified by the <b>hSrcResource</b> member 
 
 
 <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a>
+

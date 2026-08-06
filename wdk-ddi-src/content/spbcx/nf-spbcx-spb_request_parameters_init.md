@@ -4,7 +4,6 @@ title: SPB_REQUEST_PARAMETERS_INIT function (spbcx.h)
 description: The SPB_REQUEST_PARAMETERS_INIT function initializes an SPB_REQUEST_PARAMETERS structure.
 old-location: spb\spb_request_parameters_init.htm
 tech.root: SPB
-ms.assetid: 65C3DF3D-812D-44ED-B471-2D29ADBC2BBA
 ms.date: 04/30/2018
 keywords: ["SPB_REQUEST_PARAMETERS_INIT function"]
 ms.keywords: SPB.spb_request_parameters_init, SPB_REQUEST_PARAMETERS_INIT, SPB_REQUEST_PARAMETERS_INIT function [Buses], spbcx/SPB_REQUEST_PARAMETERS_INIT
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any IRQL
+req.irql: Any level
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>SPB_REQUEST_PARAMETERS_INIT</b> function initializes an <a href="/previou
 
 ## -parameters
 
-### -param Parameters 
+### -param Parameters [out]
 
-[out]
+
 A pointer to the <b>SPB_REQUEST_PARAMETERS</b> structure that is to be initialized.
 
 ## -remarks

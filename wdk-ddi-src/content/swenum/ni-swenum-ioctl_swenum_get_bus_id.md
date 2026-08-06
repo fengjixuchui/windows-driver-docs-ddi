@@ -1,10 +1,9 @@
 ---
 UID: NI:swenum.IOCTL_SWENUM_GET_BUS_ID
 title: IOCTL_SWENUM_GET_BUS_ID (swenum.h)
-description: 
+description: "Learn more about: IOCTL_SWENUM_GET_BUS_ID IOCTL"
 old-location: stream\ioctl_swenum_get_bus_id.htm
 tech.root: stream
-ms.assetid: C9A83450-12D9-4ECC-BB9A-1226DCF74439
 ms.date: 04/23/2018
 keywords: ["IOCTL_SWENUM_GET_BUS_ID IOCTL"]
 ms.keywords: IOCTL_SWENUM_GET_BUS_ID, IOCTL_SWENUM_GET_BUS_ID control, IOCTL_SWENUM_GET_BUS_ID control code [Streaming Media Devices], stream.ioctl_swenum_get_bus_id, swenum/IOCTL_SWENUM_GET_BUS_ID
@@ -47,6 +46,8 @@ api_name:
 ## -description
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

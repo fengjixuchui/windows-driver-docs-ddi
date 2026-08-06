@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE
 title: _DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE (d3dkmddi.h)
 description: DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE is used as part of a page table update operation.
 old-location: display\dxgk_buildpagingbuffer_updatepagetable.htm
-ms.assetid: 734B2E28-75F8-49AE-AAAB-EB0C037C6432
 ms.date: 05/10/2018
 keywords: ["DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE structure"]
 ms.keywords: DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE, DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE structure [Display Devices], _DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE, d3dkmddi/DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE, display.dxgk_buildpagingbuffer_updatepagetable
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE
  - DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE
 ---
 
@@ -58,7 +58,7 @@ Level of a page table, which is updated.
 
 ### -field hAllocation
 
-Kernel mode driver handle of an allocation, which is mapped by the page table entries. The handle is returned by the kernel mode driver from <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation">DxgkDdiCreateAllocation</a>. The handle can be <b>NULL</b> for allocations, which do not have a kernel mode drver   handle (page tables, page directories, etc.).
+Kernel mode driver handle of an allocation, which is mapped by the page table entries. The handle is returned by the kernel mode driver from <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_createallocation">DxgkDdiCreateAllocation</a>. The handle can be <b>NULL</b> for allocations, which do not have a kernel mode driver   handle (page tables, page directories, etc.).
 
 ### -field PageTableAddress
 
@@ -109,3 +109,4 @@ The entries which need to be copied from the 64KB page tables. The index zero in
 ### -field FirstPteVirtualAddress
 
 The GPU virtual address that is mapped by the first updated page table entry.
+

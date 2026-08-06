@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILCAPSLOCKINGPWDLENGTH
 title: RILCAPSLOCKINGPWDLENGTH (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILCAPSLOCKINGPWDLENGTH structure for internal use only. Don't use the RILCAPSLOCKINGPWDLENGTH structure in your code."
 old-location: netvista\rilcapslockingpwdlength.htm
 tech.root: netvista
-ms.assetid: 99f21862-5cd6-4bf9-abde-d5d24332a147
 ms.date: 05/02/2018
 keywords: ["RILCAPSLOCKINGPWDLENGTH structure"]
 ms.keywords: "*LPRILCAPSLOCKINGPWDLENGTH, RILCAPSLOCKINGPWDLENGTH, RILCAPSLOCKINGPWDLENGTH structure [Network Drivers Starting with Windows Vista], netvista.rilcapslockingpwdlength, ntddrilapitypes/RILCAPSLOCKINGPWDLENGTH"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILCAPSLOCKINGPWDLENGTH
+ - LPRILCAPSLOCKINGPWDLENGTH
 ---
 
 # RILCAPSLOCKINGPWDLENGTH structure (ntddrilapitypes.h)

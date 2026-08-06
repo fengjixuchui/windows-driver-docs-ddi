@@ -2,9 +2,8 @@
 UID: NC:dispmprt.DXGKDDI_DSIRESET
 title: DXGKDDI_DSIRESET
 ms.date: 03/24/2020
-ms.topic: language-reference
 targetos: Windows
-description: 
+description: "Learn more about: DXGKDDI_DSIRESET callback function"
 tech.root: display
 req.assembly: 
 req.construct-type: function
@@ -47,17 +46,17 @@ dev_langs:
 
 ## -parameters
 
-### -param Context
+### -param Context [in]
 
-[in] <!-- ????? -->
+<!-- ????? -->
 
-### -param TargetId
+### -param TargetId [in]
 
-[in] Target identifier of the monitor.
+Target identifier of the monitor.
 
-### -param pArgs
+### -param pArgs [out]
 
-[out] Pointer to a [DXGI_DSI_CAPS](ns-dispmprt-dxgk_dsi_caps.md) structure.
+Pointer to a [DXGI_DSI_CAPS](ns-dispmprt-dxgk_dsi_caps.md) structure.
 
 ## -returns
 

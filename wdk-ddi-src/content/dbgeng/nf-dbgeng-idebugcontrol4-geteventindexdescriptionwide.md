@@ -4,7 +4,6 @@ title: IDebugControl4::GetEventIndexDescriptionWide (dbgeng.h)
 description: The GetEventIndexDescriptionWide method describes the specified event in a static list of events for the current target.
 old-location: debugger\geteventindexdescriptionwide.htm
 tech.root: debugger
-ms.assetid: 0153ee1d-93b3-497c-9fbf-e285c3730f72
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::GetEventIndexDescriptionWide"]
 ms.keywords: GetEventIndexDescriptionWide, GetEventIndexDescriptionWide method [Windows Debugging], GetEventIndexDescriptionWide method [Windows Debugging],IDebugControl4 interface, IDebugControl4 interface [Windows Debugging],GetEventIndexDescriptionWide method, IDebugControl4.GetEventIndexDescriptionWide, IDebugControl4::GetEventIndexDescriptionWide, dbgeng/IDebugControl4::GetEventIndexDescriptionWide, debugger.geteventindexdescriptionwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.GetEventIndexDescriptionWide
+ - IDebugControl4::GetEventIndexDescriptionWide
 ---
 
 # IDebugControl4::GetEventIndexDescriptionWide
@@ -50,29 +49,29 @@ The <b>GetEventIndexDescriptionWide</b> method describes the specified event in 
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 Specifies the index of the event whose description will be returned.
 
-### -param Which 
+### -param Which [in]
 
-[in]
+
 Specifies which piece of the event description to return.  Currently only DEBUG_EINDEX_NAME is supported; this returns the name of the event.
 
-### -param Buffer 
+### -param Buffer [in, optional]
 
-[in, optional]
+
 Receives the description of the event.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size, in characters, of the <i>Buffer </i>buffer.
 
-### -param DescSize 
+### -param DescSize [out, optional]
 
-[out, optional]
+
 Receives the size, in characters, of the description.  If <i>DescSize</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
@@ -112,3 +111,4 @@ The amount of descriptive information available for a particular target varies d
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol4">IDebugControl4</a>
+

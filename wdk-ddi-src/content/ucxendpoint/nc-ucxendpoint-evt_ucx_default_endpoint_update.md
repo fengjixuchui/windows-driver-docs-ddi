@@ -4,7 +4,6 @@ title: EVT_UCX_DEFAULT_ENDPOINT_UPDATE (ucxendpoint.h)
 description: The client driver's implementation that UCX calls with information about the default endpoint.
 old-location: buses\evt_ucx_default_endpoint_update.htm
 tech.root: usbref
-ms.assetid: 0a67ef0a-07ec-43d3-9a25-b28192677b35
 ms.date: 05/07/2018
 keywords: ["EVT_UCX_DEFAULT_ENDPOINT_UPDATE callback function"]
 ms.keywords: EVT_UCX_DEFAULT_ENDPOINT_UPDATE, EVT_UCX_DEFAULT_ENDPOINT_UPDATE callback, EvtUcxDefaultEndpointUpdate, EvtUcxDefaultEndpointUpdate callback function [Buses], PEVT_UCX_DEFAULT_ENDPOINT_UPDATE, PEVT_UCX_DEFAULT_ENDPOINT_UPDATE callback function pointer [Buses], buses.evt_ucx_default_endpoint_update, ucxendpoint/EvtUcxDefaultEndpointUpdate
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ucxendpoint.h
 api_name:
- - PEVT_UCX_DEFAULT_ENDPOINT_UPDATE
+ - EVT_UCX_DEFAULT_ENDPOINT_UPDATE
 ---
 
 # EVT_UCX_DEFAULT_ENDPOINT_UPDATE callback function
@@ -50,14 +49,14 @@ The client driver's implementation that UCX calls with information about the def
 
 ## -parameters
 
-### -param UcxController 
+### -param UcxController [in]
 
-[in]
+
  A handle to the UCX controller that the client driver received in a previous call to  the <a href="/previous-versions/windows/hardware/drivers/mt188033(v=vs.85)">UcxControllerCreate</a> method.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/ucxendpoint/ns-ucxendpoint-_default_endpoint_update">DEFAULT_ENDPOINT_UPDATE</a> structure that contains the handle to the default endpoint to be updated.
 
 ## -remarks
@@ -94,7 +93,6 @@ Endpoint_EvtUcxDefaultEndpointUpdate(
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ucxendpoint/nf-ucxendpoint-ucx_default_endpoint_event_callbacks_init">UCX_DEFAULT_ENDPOINT_EVENT_CALLBACKS_INIT</a>
@@ -102,3 +100,4 @@ Endpoint_EvtUcxDefaultEndpointUpdate(
 
 
 <a href="/windows-hardware/drivers/ddi/ucxendpoint/nf-ucxendpoint-ucxdefaultendpointinitseteventcallbacks">UcxDefaultEndpointInitSetEventCallbacks</a>
+

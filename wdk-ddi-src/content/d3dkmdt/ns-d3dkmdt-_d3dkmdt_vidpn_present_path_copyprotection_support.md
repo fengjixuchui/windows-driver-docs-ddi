@@ -4,14 +4,13 @@ title: _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT (d3dkmdt.h)
 description: The D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT structure is used to indicate the types of copy protection that are supported by a particular VidPN present path.
 old-location: display\d3dkmdt_vidpn_present_path_copyprotection_support.htm
 tech.root: display
-ms.assetid: 2b0c7428-bc88-461c-ab72-daccf02606da
 ms.date: 05/10/2018
 keywords: ["D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT structure"]
 ms.keywords: D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT, D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT structure [Display Devices], DmStructs_01eb8f42-1ba1-46e3-9b56-99952e5fedbe.xml, _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT, d3dkmdt/D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT, display.d3dkmdt_vidpn_present_path_copyprotection_support
 req.header: d3dkmdt.h
-req.include-header: D3dkmdt.h
+req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmdt.h
 api_name:
+ - _D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT
  - D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT
 ---
 
@@ -71,3 +71,4 @@ Reserved for future use.
 ## -remarks
 
 The <b>CopyProtectionSupport</b> member of the <a href="/windows-hardware/drivers/ddi/d3dkmdt/ns-d3dkmdt-_d3dkmdt_vidpn_present_path_copyprotection">D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION</a> structure is a D3DKMDT_VIDPN_PRESENT_PATH_COPYPROTECTION_SUPPORT structure.
+

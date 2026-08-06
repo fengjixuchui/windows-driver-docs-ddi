@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGK_BUILDPAGINGBUFFER_FLUSHTLB
 title: _DXGK_BUILDPAGINGBUFFER_FLUSHTLB (d3dkmddi.h)
 description: DXGK_BUILDPAGINGBUFFER_FLUSHTLB is used as part of a flush translation look-aside buffer (TLB) operation.
 old-location: display\dxgk_buildpagingbuffer_flushtlb.htm
-ms.assetid: 9FDE47A4-1784-41EB-9F60-76368D6DFEED
 ms.date: 05/10/2018
 keywords: ["DXGK_BUILDPAGINGBUFFER_FLUSHTLB structure"]
 ms.keywords: DXGK_BUILDPAGINGBUFFER_FLUSHTLB, DXGK_BUILDPAGINGBUFFER_FLUSHTLB structure [Display Devices], _DXGK_BUILDPAGINGBUFFER_FLUSHTLB, d3dkmddi/DXGK_BUILDPAGINGBUFFER_FLUSHTLB, display.dxgk_buildpagingbuffer_flushtlb
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGK_BUILDPAGINGBUFFER_FLUSHTLB
  - DXGK_BUILDPAGINGBUFFER_FLUSHTLB
 ---
 
@@ -67,3 +67,4 @@ The start of the affected GPU virtual address range.
 ### -field EndVirtualAddress
 
 The end of the affected GPU virtual address range. When both <b>StartVirtualAddress</b> and <b>EndVirtualAddress</b> are zero, the entire GPU virtual address range is affected.
+

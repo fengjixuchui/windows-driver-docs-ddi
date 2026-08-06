@@ -4,7 +4,6 @@ title: IXpsRasterizationFactory::CreateRasterizer (xpsrassvc.h)
 description: The CreateRasterize method creates an XPS rasterizer object.
 old-location: print\ixpsrasterizationfactory_createrasterizer.htm
 tech.root: print
-ms.assetid: 07d4f1ed-5dbe-47c1-96e8-dfe21e0c1d0d
 ms.date: 08/21/2020
 keywords: ["IXpsRasterizationFactory::CreateRasterizer"]
 ms.keywords: CreateRasterizer, CreateRasterizer method [Print Devices], CreateRasterizer method [Print Devices],IXpsRasterizationFactory interface, IXpsRasterizationFactory interface [Print Devices],CreateRasterizer method, IXpsRasterizationFactory.CreateRasterizer, IXpsRasterizationFactory::CreateRasterizer, print.ixpsrasterizationfactory_createrasterizer, print_xpsrast_5eddcd20-40a0-47da-8b1c-94d17902d783.xml, xpsrassvc/IXpsRasterizationFactory::CreateRasterizer
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - xpsrassvc.h
 api_name:
- - IXpsRasterizationFactory.CreateRasterizer
+ - IXpsRasterizationFactory::CreateRasterizer
 ---
 
 # IXpsRasterizationFactory::CreateRasterizer
@@ -50,33 +49,33 @@ The **CreateRasterize** method creates an XPS rasterizer object.
 
 ## -parameters
 
-### -param xpsPage
+### -param xpsPage [in, optional]
 
-[in, optional] Pointer to an **IXpsOMPage** object that represents the XPS fixed page to render. This object encapsulates a FixedPage section from an XPS document. For more information, see [IXpsOMPage](/windows/win32/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompage).
+Pointer to an **IXpsOMPage** object that represents the XPS fixed page to render. This object encapsulates a FixedPage section from an XPS document. For more information, see [IXpsOMPage](/windows/win32/api/xpsobjectmodel/nn-xpsobjectmodel-ixpsompage).
 
-### -param DPI
+### -param DPI [in]
 
-[in] Dots per inch in the rasterized output. This parameter applies to both the x and y dimensions of the output bitmap. The *DPI* value is the resolution of the device that is to print or display the XPS fixed page.
+Dots per inch in the rasterized output. This parameter applies to both the x and y dimensions of the output bitmap. The *DPI* value is the resolution of the device that is to print or display the XPS fixed page.
 
-### -param nonTextRenderingMode
+### -param nonTextRenderingMode [in]
 
-[in] Rendering mode for nontext items in the rasterized output. This parameter indicates whether to generate antialiased output. Set this parameter to one of the following [XPSRAS_RENDERING_MODE](./ne-xpsrassvc-__midl___midl_itf_xpsrassvc_0000_0001_0001.md) enumeration values:
-
-- XPSRAS_RENDERING_MODE_ANTIALIASED
-
-- XPSRAS_RENDERING_MODE_ALIASED
-
-### -param textRenderingMode
-
-[in] Rendering mode for text in the rasterized output. This parameter indicates whether to generate antialiased output. Set this parameter to one of the following XPSRAS_RENDERING_MODE enumeration values:
+Rendering mode for nontext items in the rasterized output. This parameter indicates whether to generate antialiased output. Set this parameter to one of the following [XPSRAS_RENDERING_MODE](./ne-xpsrassvc-__midl___midl_itf_xpsrassvc_0000_0001_0001.md) enumeration values:
 
 - XPSRAS_RENDERING_MODE_ANTIALIASED
 
 - XPSRAS_RENDERING_MODE_ALIASED
 
-### -param ppIXPSRasterizer
+### -param textRenderingMode [in]
 
-[out, optional] This parameter points to a location into which the method writes a pointer to the [IXpsRasterizer](./nn-xpsrassvc-ixpsrasterizer.md) interface of the newly created XPS rasterizer object. If the method fails, it writes **NULL** to this location and returns an error code.
+Rendering mode for text in the rasterized output. This parameter indicates whether to generate antialiased output. Set this parameter to one of the following XPSRAS_RENDERING_MODE enumeration values:
+
+- XPSRAS_RENDERING_MODE_ANTIALIASED
+
+- XPSRAS_RENDERING_MODE_ALIASED
+
+### -param ppIXPSRasterizer [out, optional]
+
+This parameter points to a location into which the method writes a pointer to the [IXpsRasterizer](./nn-xpsrassvc-ixpsrasterizer.md) interface of the newly created XPS rasterizer object. If the method fails, it writes **NULL** to this location and returns an error code.
 
 ## -returns
 
@@ -113,3 +112,4 @@ For a code example that calls the **CreateRasterizer** method, see the XPSRasFil
 [IXpsRasterizer::RasterizeRect](./nf-xpsrassvc-ixpsrasterizer-rasterizerect.md)
 
 [XPSRAS_RENDERING_MODE](./ne-xpsrassvc-__midl___midl_itf_xpsrassvc_0000_0001_0001.md)
+

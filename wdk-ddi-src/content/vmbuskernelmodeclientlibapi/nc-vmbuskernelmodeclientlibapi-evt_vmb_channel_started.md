@@ -4,7 +4,6 @@ title: EVT_VMB_CHANNEL_STARTED (vmbuskernelmodeclientlibapi.h)
 description: The EvtVmbChannelStarted callback function is invoked at either endpoint when a channel is fully configured but before any packets have been delivered. This occurs when the opposite endpoint opened the channel or reopened it after closing it.
 old-location: netvista\evt_vmb_channel_started.htm
 tech.root: netvista
-ms.assetid: C4F35016-3F93-4258-A42F-D692AF690020
 ms.date: 05/02/2018
 keywords: ["EVT_VMB_CHANNEL_STARTED callback function"]
 ms.keywords: EVT_VMB_CHANNEL_STARTED, EVT_VMB_CHANNEL_STARTED callback, EvtVmbChannelStarted, EvtVmbChannelStarted callback function [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_STARTED, PFN_VMB_CHANNEL_STARTED callback function pointer [Network Drivers Starting with Windows Vista], netvista.evt_vmb_channel_started, vmbuskernelmodeclientlibapi/EvtVmbChannelStarted
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - VmbusKernelModeClientLibApi.h
 api_name:
- - PFN_VMB_CHANNEL_STARTED
+ - EVT_VMB_CHANNEL_STARTED
 ---
 
 # EVT_VMB_CHANNEL_STARTED callback function
@@ -53,9 +52,9 @@ fully configured but before any packets have been delivered.  This occurs when t
 
 ## -parameters
 
-### -param Channel 
+### -param Channel [in]
 
-[in]
+
 The channel which is started.
 
 ## -remarks
@@ -98,3 +97,4 @@ Waiting for a sent packet to complete, such as by the <a href="/windows-hardware
 
 
 <a href="/windows-hardware/drivers/ddi/vmbuskernelmodeclientlibapi/nf-vmbuskernelmodeclientlibapi-vmbpacketsendwithexternalpfns">VmbPacketSendWithExternalPfns</a>
+

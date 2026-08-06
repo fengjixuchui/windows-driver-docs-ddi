@@ -4,7 +4,6 @@ title: IMiniportAudioEngineNode::GetEngineFormatSize (portcls.h)
 description: Gets the format type and the buffer size for the audio engine's audio data format.
 old-location: audio\iminiportaudioenginenode_getengineformatsize.htm
 tech.root: audio
-ms.assetid: 0874EC25-3ABE-410B-B5AC-E98020378D7E
 ms.date: 05/08/2018
 keywords: ["IMiniportAudioEngineNode::GetEngineFormatSize"]
 ms.keywords: GetEngineFormatSize, GetEngineFormatSize method [Audio Devices], GetEngineFormatSize method [Audio Devices],IMiniportAudioEngineNode interface, IMiniportAudioEngineNode interface [Audio Devices],GetEngineFormatSize method, IMiniportAudioEngineNode.GetEngineFormatSize, IMiniportAudioEngineNode::GetEngineFormatSize, audio.iminiportaudioenginenode_getengineformatsize, portcls/IMiniportAudioEngineNode::GetEngineFormatSize
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IMiniportAudioEngineNode.GetEngineFormatSize
+ - IMiniportAudioEngineNode::GetEngineFormatSize
 ---
 
 # IMiniportAudioEngineNode::GetEngineFormatSize
@@ -50,19 +49,19 @@ Gets the format type and the buffer size for the audio engine's audio data forma
 
 ## -parameters
 
-### -param ulNodeId 
+### -param ulNodeId [in]
 
-[in]
+
 The ID of the audio engine node.
 
-### -param formatType 
+### -param formatType [in]
 
-[in]
+
 An enum of type <a href="/windows-hardware/drivers/ddi/portcls/ne-portcls-eengineformattype">eEngineFormatType</a> that represents the audio data format type.
 
-### -param pulFormatSize 
+### -param pulFormatSize [out]
 
-[out]
+
 The data buffer size for the format type.
 
 ## -returns
@@ -76,3 +75,4 @@ The data buffer size for the format type.
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/ne-portcls-eengineformattype">eEngineFormatType</a>
+

@@ -4,7 +4,6 @@ title: IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition (portcls
 description: Returns stream presentation information.
 old-location: audio\iminiportwavertoutputstream_getoutputstreampresentationposition.htm
 tech.root: audio
-ms.assetid: 8E52A10E-5666-41B5-B342-491E5AF9DD38
 ms.date: 05/08/2018
 keywords: ["IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition"]
 ms.keywords: GetOutputStreamPresentationPosition, GetOutputStreamPresentationPosition method [Audio Devices], GetOutputStreamPresentationPosition method [Audio Devices],IMiniportWaveRTOutputStream interface, IMiniportWaveRTOutputStream interface [Audio Devices],GetOutputStreamPresentationPosition method, IMiniportWaveRTOutputStream.GetOutputStreamPresentationPosition, IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition, audio.iminiportwavertoutputstream_getoutputstreampresentationposition, portcls/IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Passive level
+req.irql: PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWaveRTOutputStream.GetOutputStreamPresentationPosition
+ - IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition
 ---
 
 # IMiniportWaveRTOutputStream::GetOutputStreamPresentationPosition
@@ -50,9 +49,9 @@ Returns stream presentation information.
 
 ## -parameters
 
-### -param pPresentationPosition 
+### -param pPresentationPosition [out]
 
-[out]
+
  pPresentationPosition returns a <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-ksaudio_presentation_position">KSAUDIO_PRESENTATION_POSITION</a> structure that represents a recent presentation position in the audio data stream. For more information, see <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-iminiportstreamaudioenginenode-getstreampresentationposition">IMiniportStreamAudioEngineNode::GetStreamPresentationPosition</a>.
 
 ## -returns
@@ -72,3 +71,4 @@ This does not mean that GetPacketCount and GetOutputStreamPresentationPosition, 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iminiportwavertoutputstream">IMiniportWaveRTOutputStream</a>
+

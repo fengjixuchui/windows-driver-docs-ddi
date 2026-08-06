@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGKARG_SETTARGETCONTENTTYPE
 title: _DXGKARG_SETTARGETCONTENTTYPE (d3dkmddi.h)
 description: Used to hold the arguments for DXGKDDI_SETTARGETCONTENTTYPE.
 old-location: display\dxgkarg_settargetcontenttype.htm
-ms.assetid: BD849954-97CC-4314-B375-22829B0CEE86
 ms.date: 05/10/2018
 keywords: ["DXGKARG_SETTARGETCONTENTTYPE structure"]
 ms.keywords: DXGKARG_SETTARGETCONTENTTYPE, DXGKARG_SETTARGETCONTENTTYPE structure [Display Devices], PDXGKARG_SETTARGETCONTENTTYPE, PDXGKARG_SETTARGETCONTENTTYPE structure pointer [Display Devices], _DXGKARG_SETTARGETCONTENTTYPE, d3dkmddi/DXGKARG_SETTARGETCONTENTTYPE, d3dkmddi/PDXGKARG_SETTARGETCONTENTTYPE, display.dxgkarg_settargetcontenttype
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_SETTARGETCONTENTTYPE
  - DXGKARG_SETTARGETCONTENTTYPE
 ---
 
@@ -59,3 +59,4 @@ The identifier of a display adapter's video present target.
 ### -field ContentType
 
 A D3DKMDT_VIDPN_PRESENT_PATH_CONTENT value indicating the type of content being presented on the target id for which the driver should optimize.
+

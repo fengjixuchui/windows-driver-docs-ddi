@@ -4,7 +4,6 @@ title: _DXVA_VideoDesc (dxva.h)
 description: The DXVA_VideoDesc structure is sent by the renderer to the driver to specify a description of the video stream on which the deinterlacing or frame-rate conversion operation is to be performed.
 old-location: display\dxva_videodesc.htm
 tech.root: display
-ms.assetid: 5623ed85-e78a-48f2-ab21-e6364da86b2a
 ms.date: 05/10/2018
 keywords: ["DXVA_VideoDesc structure"]
 ms.keywords: "*LPDXVA_VideoDesc, DXVA_VideoDesc, DXVA_VideoDesc structure [Display Devices], LPDXVA_VideoDesc, LPDXVA_VideoDesc structure pointer [Display Devices], _DXVA_VideoDesc, display.dxva_videodesc, dxva/DXVA_VideoDesc, dxva/LPDXVA_VideoDesc, dxvaref_1b9d87d3-06b4-4a61-9cb1-9752c55ef865.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dxva.h
 api_name:
+ - _DXVA_VideoDesc
+ - LPDXVA_VideoDesc
  - DXVA_VideoDesc
 ---
 
@@ -93,3 +94,4 @@ For examples showing structure member values for deinterlacing or converting dif
 
 
 <a href="/windows-hardware/drivers/ddi/dxva/ne-dxva-_dxva_sampleformat">DXVA_SampleFormat</a>
+

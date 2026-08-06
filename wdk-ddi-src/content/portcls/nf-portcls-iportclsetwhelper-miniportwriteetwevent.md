@@ -4,7 +4,6 @@ title: IPortClsEtwHelper::MiniportWriteEtwEvent (portcls.h)
 description: The MiniportWriteEtwEvent method is used by an audio miniport driver for providing the information about an Event Tracing for Windows (ETW) event.
 old-location: audio\iportclsetwhelper_miniportwriteetwevent.htm
 tech.root: audio
-ms.assetid: 7E0C1140-35AA-424F-8229-21B4F4E1EBDF
 ms.date: 05/08/2018
 keywords: ["IPortClsEtwHelper::MiniportWriteEtwEvent"]
 ms.keywords: IPortClsEtwHelper interface [Audio Devices],MiniportWriteEtwEvent method, IPortClsEtwHelper.MiniportWriteEtwEvent, IPortClsEtwHelper::MiniportWriteEtwEvent, MiniportWriteEtwEvent, MiniportWriteEtwEvent method [Audio Devices], MiniportWriteEtwEvent method [Audio Devices],IPortClsEtwHelper interface, audio.iportclsetwhelper_miniportwriteetwevent, portcls/IPortClsEtwHelper::MiniportWriteEtwEvent
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IPortClsEtwHelper.MiniportWriteEtwEvent
+ - IPortClsEtwHelper::MiniportWriteEtwEvent
 ---
 
 # IPortClsEtwHelper::MiniportWriteEtwEvent
@@ -50,29 +49,29 @@ The <code>MiniportWriteEtwEvent</code> method is used by an audio miniport drive
 
 ## -parameters
 
-### -param miniportEventType 
+### -param miniportEventType [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/ddi/portcls/ne-portcls-epcminiportengineevent">EPcMiniportEngineEvent</a> enumerated value that provides additional error information for reporting glitching errors.
 
-### -param pvData1 
+### -param pvData1 [in]
 
-[in]
+
 Data parameter.
 
-### -param pvData2 
+### -param pvData2 [in]
 
-[in]
+
 Data parameter.
 
-### -param ulData3 
+### -param ulData3 [in]
 
-[in]
+
 Data parameter.
 
-### -param ulData4 
+### -param ulData4 [in]
 
-[in]
+
 Data parameter.
 
 ## -returns
@@ -86,3 +85,4 @@ Data parameter.
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iportclsetwhelper">IPortClsEtwHelper</a>
+

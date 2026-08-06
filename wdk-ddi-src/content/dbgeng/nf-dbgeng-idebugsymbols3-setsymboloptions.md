@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols3.SetSymbolOptions
 title: IDebugSymbols3::SetSymbolOptions (dbgeng.h)
-description: The SetSymbolOptions method changes the engine's global symbol options.
+description: The SetSymbolOptions method changes the engine's global symbol options. This method belongs to the IDebugSymbols3 interface.
 old-location: debugger\setsymboloptions.htm
 tech.root: debugger
-ms.assetid: 06cfae40-eb32-4f9b-b7ad-266cb12f4a32
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols3::SetSymbolOptions"]
 ms.keywords: IDebugSymbols interface [Windows Debugging],SetSymbolOptions method, IDebugSymbols2 interface [Windows Debugging],SetSymbolOptions method, IDebugSymbols2::SetSymbolOptions, IDebugSymbols3 interface [Windows Debugging],SetSymbolOptions method, IDebugSymbols3.SetSymbolOptions, IDebugSymbols3::SetSymbolOptions, IDebugSymbols::SetSymbolOptions, IDebugSymbols_56cfcd8d-304b-4433-beab-2fc3e58a54a4.xml, SetSymbolOptions, SetSymbolOptions method [Windows Debugging], SetSymbolOptions method [Windows Debugging],IDebugSymbols interface, SetSymbolOptions method [Windows Debugging],IDebugSymbols2 interface, SetSymbolOptions method [Windows Debugging],IDebugSymbols3 interface, dbgeng/IDebugSymbols2::SetSymbolOptions, dbgeng/IDebugSymbols3::SetSymbolOptions, dbgeng/IDebugSymbols::SetSymbolOptions, debugger.setsymboloptions
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.SetSymbolOptions
- - IDebugSymbols2.SetSymbolOptions
- - IDebugSymbols3.SetSymbolOptions
+ - IDebugSymbols3::SetSymbolOptions
 ---
 
 # IDebugSymbols3::SetSymbolOptions
@@ -52,9 +49,9 @@ The <b>SetSymbolOptions</b> method changes the engine's global symbol options.
 
 ## -parameters
 
-### -param Options 
+### -param Options [in]
 
-[in]
+
 Specifies the new symbol options.  <i>Options</i> is a bit-set; it will replace the existing symbol options.  For a description of the bit flags, see <a href="/windows-hardware/drivers/debugger/symbol-options">Setting Symbol Options</a>.
 
 ## -returns
@@ -110,3 +107,4 @@ For more information about symbols, see <a href="/windows-hardware/drivers/debug
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-removesymboloptions">RemoveSymbolOptions</a>
+

@@ -1,8 +1,7 @@
 ---
 UID: NN:dbgmodel.IDebugHostType
 title: IDebugHostType (dbgmodel.h)
-description: An (IDebugHostSymbol derived) interface to a particular type.
-ms.assetid: f4fb5043-a364-45f6-9d87-43850ac0f140
+description: The IDebugHostType (dbgmodel.h) interface is an IDebugHostSymbol derived interface that provides access to a particular type.
 ms.date: 07/13/2018
 keywords: ["IDebugHostType interface"]
 req.header: dbgmodel.h
@@ -45,7 +44,7 @@ A given language/native type is described by the [IDebugHostType2](nn-dbgmodel-i
 
 ## -inheritance
 
-IDebugHostType interits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
+IDebugHostType inherits from [IDebugHostSymbol](nn-dbgmodel-idebughostsymbol.md).
 
 ## -remarks
 

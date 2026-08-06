@@ -4,7 +4,6 @@ title: IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup (wudfddi.h)
 description: The OnSelfManagedIoCleanup method releases memory for a device's self-managed I/O operations, after the device is removed.
 old-location: wdf\ipnpcallbackselfmanagedio_onselfmanagediocleanup.htm
 tech.root: wdf
-ms.assetid: 0890c352-8722-4108-9b76-60c81179b46b
 ms.date: 02/26/2018
 keywords: ["IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup"]
 ms.keywords: IPnpCallbackSelfManagedIo interface,OnSelfManagedIoCleanup method, IPnpCallbackSelfManagedIo.OnSelfManagedIoCleanup, IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup, OnSelfManagedIoCleanup, OnSelfManagedIoCleanup method, OnSelfManagedIoCleanup method,IPnpCallbackSelfManagedIo interface, UMDFDeviceObjectRef_32b2f920-2288-4d12-8ecd-a5ea61cc8ebd.xml, umdf.ipnpcallbackselfmanagedio_onselfmanagediocleanup, wdf.ipnpcallbackselfmanagedio_onselfmanagediocleanup, wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IPnpCallbackSelfManagedIo.OnSelfManagedIoCleanup
+ - IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup
 ---
 
 # IPnpCallbackSelfManagedIo::OnSelfManagedIoCleanup
@@ -52,9 +51,9 @@ The <b>OnSelfManagedIoCleanup</b> method releases memory for a device's self-man
 
 ## -parameters
 
-### -param pWdfDevice 
+### -param pWdfDevice [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice">IWDFDevice</a> interface for the device object of the device that the driver performs cleanup for.
 
 ## -remarks
@@ -72,3 +71,4 @@ A driver registers the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createdevice">IWDFDriver::CreateDevice</a>
+

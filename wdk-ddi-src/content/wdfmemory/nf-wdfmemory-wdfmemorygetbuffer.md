@@ -4,7 +4,6 @@ title: WdfMemoryGetBuffer function (wdfmemory.h)
 description: The WdfMemoryGetBuffer method returns a pointer to the buffer that is associated with a specified memory object.
 old-location: wdf\wdfmemorygetbuffer.htm
 tech.root: wdf
-ms.assetid: a5044eb5-d619-4adb-a00c-2d01e0311ade
 ms.date: 02/26/2018
 keywords: ["WdfMemoryGetBuffer function"]
 ms.keywords: DFMemoryObjectRef_6f8615ee-5e34-46c5-8c83-4b52433753aa.xml, WdfMemoryGetBuffer, WdfMemoryGetBuffer method, kmdf.wdfmemorygetbuffer, wdf.wdfmemorygetbuffer, wdfmemory/WdfMemoryGetBuffer
@@ -55,14 +54,14 @@ The <b>WdfMemoryGetBuffer</b> method returns a pointer to the buffer that is ass
 
 ## -parameters
 
-### -param Memory 
+### -param Memory [in]
 
-[in]
+
 A handle to a framework memory object.
 
-### -param BufferSize 
+### -param BufferSize [out, optional]
 
-[out, optional]
+
 A pointer to a location that receives the size, in bytes, of the memory buffer. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns

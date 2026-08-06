@@ -4,7 +4,6 @@ title: MINIPORT_CHECK_FOR_HANG (ndis.h)
 description: NDIS calls a miniport driver's MiniportCheckForHangEx function to check the operational state of the miniport adapter that represents a network interface card (NIC).
 old-location: netvista\miniportcheckforhangex.htm
 tech.root: netvista
-ms.assetid: ead0af85-0584-49de-82cc-8a059ebfdf4f
 ms.date: 05/02/2018
 keywords: ["MINIPORT_CHECK_FOR_HANG callback function"]
 ms.keywords: MINIPORT_CHECK_FOR_HANG, MINIPORT_CHECK_FOR_HANG callback, MiniportCheckForHangEx, MiniportCheckForHangEx callback function [Network Drivers Starting with Windows Vista], miniport_functions_ref_4dac5544-94b0-4be6-aa81-709bff9163a7.xml, ndis/MiniportCheckForHangEx, netvista.miniportcheckforhangex
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportCheckForHangEx
+ - MINIPORT_CHECK_FOR_HANG
 ---
 
 # MINIPORT_CHECK_FOR_HANG callback function
@@ -57,9 +56,9 @@ NDIS calls a miniport driver's
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 A handle to a context area that the miniport driver allocated in its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a> function.
      The miniport driver uses this context area to maintain state information for a miniport adapter.
@@ -153,3 +152,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismsetminiportattributes">NdisMSetMiniportAttributes</a>
+

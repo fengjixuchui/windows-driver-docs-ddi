@@ -4,7 +4,6 @@ title: WdfMemoryAssignBuffer function (wdfmemory.h)
 description: The WdfMemoryAssignBuffer method assigns a specified buffer to a memory object that a driver created by calling WdfMemoryCreatePreallocated.
 old-location: wdf\wdfmemoryassignbuffer.htm
 tech.root: wdf
-ms.assetid: f57fe6ac-87ad-4db8-a715-816885b87d68
 ms.date: 02/26/2018
 keywords: ["WdfMemoryAssignBuffer function"]
 ms.keywords: DFMemoryObjectRef_c2bf3437-5c1e-44d6-97ab-6ede16f7bc53.xml, WdfMemoryAssignBuffer, WdfMemoryAssignBuffer method, kmdf.wdfmemoryassignbuffer, wdf.wdfmemoryassignbuffer, wdfmemory/WdfMemoryAssignBuffer
@@ -55,19 +54,19 @@ The <b>WdfMemoryAssignBuffer</b> method assigns a specified buffer to a memory o
 
 ## -parameters
 
-### -param Memory 
+### -param Memory [in]
 
-[in]
+
 A handle to a framework memory object that was obtained by calling <a href="/windows-hardware/drivers/ddi/wdfmemory/nf-wdfmemory-wdfmemorycreatepreallocated">WdfMemoryCreatePreallocated</a>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 A pointer to a driver-supplied buffer.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 The nonzero size, in bytes, of the buffer that <i>Buffer</i> points to.
 
 ## -returns

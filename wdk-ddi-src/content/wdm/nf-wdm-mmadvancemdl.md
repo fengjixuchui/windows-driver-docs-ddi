@@ -4,7 +4,6 @@ title: MmAdvanceMdl function (wdm.h)
 description: The MmAdvanceMdl routine advances the beginning of an MDL's virtual memory range by the specified number of bytes.
 old-location: kernel\mmadvancemdl.htm
 tech.root: kernel
-ms.assetid: 93e84c80-d671-4f04-8532-6c374e1ae72b
 ms.date: 04/30/2018
 keywords: ["MmAdvanceMdl function"]
 ms.keywords: MmAdvanceMdl, MmAdvanceMdl routine [Kernel-Mode Driver Architecture], k106_14f78a97-f29c-4996-b8aa-94a04b62f11c.xml, kernel.mmadvancemdl, wdm/MmAdvanceMdl
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,14 +49,14 @@ The <b>MmAdvanceMdl</b> routine advances the beginning of an MDL's virtual memor
 
 ## -parameters
 
-### -param Mdl 
+### -param Mdl [in, out]
 
-[in, out]
+
 Specifies the MDL to advance.
 
-### -param NumberOfBytes 
+### -param NumberOfBytes [in]
 
-[in]
+
 Specifies the number of bytes to advance the beginning of the MDL.
 
 ## -returns

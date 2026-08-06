@@ -4,7 +4,6 @@ title: ExInterlockedInsertHeadList function (wdm.h)
 description: The ExInterlockedInsertHeadList routine atomically inserts an entry at the beginning of a doubly linked list of LIST_ENTRY structures.
 old-location: kernel\exinterlockedinsertheadlist.htm
 tech.root: kernel
-ms.assetid: 91640a96-abad-424e-b9bd-301dad2b6aac
 ms.date: 04/30/2018
 keywords: ["ExInterlockedInsertHeadList function"]
 ms.keywords: ExInterlockedInsertHeadList, ExInterlockedInsertHeadList routine [Kernel-Mode Driver Architecture], k102_35e48cb9-2d0b-42df-aee0-b391b0ade424.xml, kernel.exinterlockedinsertheadlist, wdm/ExInterlockedInsertHeadList
@@ -50,19 +49,19 @@ The <b>ExInterlockedInsertHeadList</b> routine atomically inserts an entry at th
 
 ## -parameters
 
-### -param ListHead 
+### -param ListHead [in, out]
 
-[in, out]
+
 A pointer to the <a href="/windows/win32/api/ntdef/ns-ntdef-list_entry">LIST_ENTRY</a> structure that serves as the list header.
 
-### -param ListEntry 
+### -param ListEntry [in, out]
 
-[in, out]
+
 A pointer to the <a href="/windows/win32/api/ntdef/ns-ntdef-list_entry">LIST_ENTRY</a> structure that represents the entry to be inserted into the list.
 
-### -param Lock 
+### -param Lock [in, out]
 
-[in, out]
+
 A pointer to a <b>KSPIN_LOCK</b> structure that serves as the spin lock used to synchronize access to the list. The storage for the spin lock must be resident and must have been initialized by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializespinlock">KeInitializeSpinLock</a>. You must use this spin lock only with the <b>ExInterlocked<i>Xxx</i>List</b> routines.
 
 ## -returns

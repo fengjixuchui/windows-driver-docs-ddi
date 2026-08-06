@@ -4,7 +4,6 @@ title: TAPE_EXTENSION_INIT_ROUTINE (minitape.h)
 description: ExtensionInit initializes an optional, driver-specific context area. This routine is called by TapeClassInitialize when the tape miniclass driver is loaded. This routine is optional.
 old-location: storage\tapeminiextensioninit.htm
 tech.root: storage
-ms.assetid: 4837b9c2-a3c1-4574-8f5b-4bf7c7d037a0
 ms.date: 03/29/2018
 keywords: ["TAPE_EXTENSION_INIT_ROUTINE callback function"]
 ms.keywords: "(*TAPE_EXTENSION_INIT_ROUTINE), (*TAPE_EXTENSION_INIT_ROUTINE) routine [Storage Devices], TAPE_EXTENSION_INIT_ROUTINE, minitape/(*TAPE_EXTENSION_INIT_ROUTINE), storage.tapeminiextensioninit, tapemini_858bcb61-472e-45c4-8438-060eb61f1c4a.xml"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - minitape.h
 api_name:
- - (*TAPE_EXTENSION_INIT_ROUTINE)
+ - TAPE_EXTENSION_INIT_ROUTINE
 ---
 
 # TAPE_EXTENSION_INIT_ROUTINE callback function
@@ -50,19 +49,19 @@ api_name:
 
 ## -parameters
 
-### -param MinitapeExtension 
+### -param MinitapeExtension [in]
 
-[in]
+
 Pointer to a buffer of the size requested by the tape miniclass driver when it initialized.
 
-### -param InquiryData 
+### -param InquiryData [in]
 
-[in]
+
 Pointer to the SCSI inquiry data for the tape device.
 
-### -param ModeCapabilitiesPage 
+### -param ModeCapabilitiesPage [in]
 
-[in]
+
 Pointer to a buffer that contains low-level information for the tape device. The format of this page is defined by the QIC 157 standard and is subject to change. This is <b>NULL</b> if the device does not support a mode capabilities page.
 
 ## -remarks
@@ -92,3 +91,4 @@ The tape class driver allocates the minitape extension and supplies it subsequen
 
 
 <a href="/windows-hardware/drivers/ddi/minitape/nc-minitape-tape_error_routine">TapeMiniTapeError</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILPOSITIONINFO_V1
 title: RILPOSITIONINFO_V1 (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILPOSITIONINFO_V1 structure for internal use only. Don't use the RILPOSITIONINFO_V1 structure in your code."
 old-location: netvista\rilpositioninfo_v1_2.htm
 tech.root: netvista
-ms.assetid: ff622111-e4c3-47eb-9509-dbe86d0d5acf
 ms.date: 05/02/2018
 keywords: ["RILPOSITIONINFO_V1 structure"]
 ms.keywords: "*LPRILPOSITIONINFO_V1, RILPOSITIONINFO_V1, RILPOSITIONINFO_V1 structure [Network Drivers Starting with Windows Vista], netvista.rilpositioninfo_v1_2, ntddrilapitypes/RILPOSITIONINFO_V1"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILPOSITIONINFO_V1
+ - LPRILPOSITIONINFO_V1
 ---
 
 # RILPOSITIONINFO_V1 structure (ntddrilapitypes.h)

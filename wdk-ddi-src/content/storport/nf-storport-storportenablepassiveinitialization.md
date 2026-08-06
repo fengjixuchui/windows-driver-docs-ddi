@@ -4,7 +4,6 @@ title: StorPortEnablePassiveInitialization function (storport.h)
 description: The StorPortEnablePassiveInitialization routine enables the miniport's HwStorPassiveInitializeRoutine callback routine to execute at PASSIVE_LEVEL during miniport initialization.
 old-location: storage\storportenablepassiveinitialization.htm
 tech.root: storage
-ms.assetid: 881253d2-b44d-4c41-ad72-b0143dc50803
 ms.date: 03/29/2018
 keywords: ["StorPortEnablePassiveInitialization function"]
 ms.keywords: StorPortEnablePassiveInitialization, StorPortEnablePassiveInitialization routine [Storage Devices], storage.storportenablepassiveinitialization, storport/StorPortEnablePassiveInitialization, storprt_faea18e4-c684-4010-aca4-177132c011c5.xml
@@ -50,14 +49,14 @@ The <b>StorPortEnablePassiveInitialization</b> routine enables  the miniport's <
 
 ## -parameters
 
-### -param DeviceExtension 
+### -param DeviceExtension [in]
 
-[in]
+
 Pointer to the per-adapter device extension.
 
-### -param HwPassiveInitializeRoutine 
+### -param HwPassiveInitializeRoutine [in]
 
-[in]
+
 Pointer to a callback routine that the port driver calls at PASSIVE_LEVEL to initialize the DPCs that the miniport driver will use. For a description of this callback routine, see [HwStorPassiveInitializeRoutine](./nc-storport-hw_passive_initialize_routine.md).
 
 ## -returns

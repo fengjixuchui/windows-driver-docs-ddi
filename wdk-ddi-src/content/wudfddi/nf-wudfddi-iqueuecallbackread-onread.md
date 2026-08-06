@@ -4,7 +4,6 @@ title: IQueueCallbackRead::OnRead (wudfddi.h)
 description: The OnRead method is called to handle a read request when an application reads information from a device through the Microsoft Win32 ReadFile or ReadFileEx function.
 old-location: wdf\iqueuecallbackread_onread.htm
 tech.root: wdf
-ms.assetid: e11a823d-0b08-42fd-b093-4c464c152afe
 ms.date: 02/26/2018
 keywords: ["IQueueCallbackRead::OnRead"]
 ms.keywords: IQueueCallbackRead interface,OnRead method, IQueueCallbackRead.OnRead, IQueueCallbackRead::OnRead, OnRead, OnRead method, OnRead method,IQueueCallbackRead interface, UMDFQueueObjectRef_56f5bb6c-4b65-4ab9-961a-278bfc6dbfe9.xml, umdf.iqueuecallbackread_onread, wdf.iqueuecallbackread_onread, wudfddi/IQueueCallbackRead::OnRead
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IQueueCallbackRead.OnRead
+ - IQueueCallbackRead::OnRead
 ---
 
 # IQueueCallbackRead::OnRead
@@ -52,19 +51,19 @@ The <b>OnRead</b> method is called to handle a read request when an application 
 
 ## -parameters
 
-### -param pWdfQueue 
+### -param pWdfQueue [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfioqueue">IWDFIoQueue</a> interface for the I/O queue object that the request arrives from.
 
-### -param pWdfRequest 
+### -param pWdfRequest [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfiorequest">IWDFIoRequest</a> interface that represents the framework request object.
 
-### -param NumOfBytesToRead 
+### -param NumOfBytesToRead [in]
 
-[in]
+
 The size, in bytes, of the read buffer for the request.
 
 ## -remarks
@@ -96,3 +95,4 @@ The driver can call the <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfdd
 
 
 <a href="/windows-hardware/drivers/ddi/wdfrequest/ne-wdfrequest-_wdf_request_type">WDF_REQUEST_TYPE</a>
+

@@ -4,7 +4,6 @@ title: _WWAN_SMS_CONFIGURATION (wwan.h)
 description: The WWAN_SMS_CONFIGURATION structure represents the SMS configuration of the MB device.
 old-location: netvista\wwan_sms_configuration.htm
 tech.root: netvista
-ms.assetid: 85075b9d-72a7-4f3e-8a25-888689f9d5e1
 ms.date: 05/02/2018
 keywords: ["WWAN_SMS_CONFIGURATION structure"]
 ms.keywords: "*PWWAN_SMS_CONFIGURATION, PWWAN_SMS_CONFIGURATION, PWWAN_SMS_CONFIGURATION structure pointer [Network Drivers Starting with Windows Vista], WWAN_SMS_CONFIGURATION, WWAN_SMS_CONFIGURATION structure [Network Drivers Starting with Windows Vista], WwanRef_d68f5af0-d14e-4b01-a77d-4d3fea6db828.xml, _WWAN_SMS_CONFIGURATION, netvista.wwan_sms_configuration, wwan/PWWAN_SMS_CONFIGURATION, wwan/WWAN_SMS_CONFIGURATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wwan.h
 api_name:
+ - _WWAN_SMS_CONFIGURATION
+ - PWWAN_SMS_CONFIGURATION
  - WWAN_SMS_CONFIGURATION
 ---
 
@@ -56,23 +57,16 @@ The WWAN_SMS_CONFIGURATION structure represents the SMS configuration of the MB 
 
 ### -field ScAddress
 
-A NULL-terminated string with a maximum length of 15 digits that represents the Service Center
+A NULL-terminated string with a maximum length of 20 digits that represents the Service Center
      (SC) address. This member is used by all text messages for sending and receiving. For PDU-style SMS
      messages, this information is used if it is not available in PDU data.
      
 
 The number can be in any of the following formats:
 
-<ul>
-<li>
-"+ <International Country Code> <SMS Service Center Number>\0"
+* "+ \0"
+* "\0"
 
-</li>
-<li>
-"<SMS Service Center Number>\0"
-
-</li>
-</ul>
 For set requests, the MB Service can set this member to <b>NULL</b>. In this case, a <b>NULL</b> indicates the
      miniport driver does not need to update the 
      <b>ScAddress</b> member and should not update this member thereafter.
@@ -103,3 +97,4 @@ Miniport drivers need to fill in this data structure only when processing
 
 
 <a href="/windows-hardware/drivers/ddi/wwan/ne-wwan-_wwan_sms_format">WWAN_SMS_FORMAT</a>
+

@@ -4,7 +4,6 @@ title: RxFsdPostRequest function (rxprocs.h)
 description: RxFsdPostRequest queues the I/O request packet (IRP) specified by an RX_CONTEXT structure to the worker queue for processing by the file system process (FSP).
 old-location: ifsk\rxfsdpostrequest.htm
 tech.root: ifsk
-ms.assetid: 0b1bc248-6b8e-498c-936d-64f6ff9fa183
 ms.date: 04/16/2018
 keywords: ["RxFsdPostRequest function"]
 ms.keywords: RxFsdPostRequest, RxFsdPostRequest function [Installable File System Drivers], ifsk.rxfsdpostrequest, rxprocs/RxFsdPostRequest, rxref_ceb83e58-1e5a-49d0-b281-50cd5067e09f.xml
@@ -50,9 +49,9 @@ api_name:
 
 ## -parameters
 
-### -param RxContext 
+### -param RxContext [in]
 
-[in]
+
 A pointer to the RX_CONTEXT containing the IRP to be queued to a worker thread.
 
 ## -returns
@@ -71,7 +70,7 @@ A pointer to the RX_CONTEXT containing the IRP to be queued to a worker thread.
 </dl>
 </td>
 <td width="60%">
-An asynchornous request was made and has been queued to a worker thread for later processing. The status of the request is pending.
+An asynchronous request was made and has been queued to a worker thread for later processing. The status of the request is pending.
 
 </td>
 </tr>

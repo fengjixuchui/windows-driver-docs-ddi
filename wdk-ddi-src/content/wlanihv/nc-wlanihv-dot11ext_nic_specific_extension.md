@@ -1,10 +1,9 @@
 ---
 UID: NC:wlanihv.DOT11EXT_NIC_SPECIFIC_EXTENSION
 title: DOT11EXT_NIC_SPECIFIC_EXTENSION (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_NIC_SPECIFIC_EXTENSION callback function is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11extnicspecificextension.htm
 tech.root: netvista
-ms.assetid: e588db31-d6d7-4b79-80f5-128c6d618ab6
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_NIC_SPECIFIC_EXTENSION callback"]
 ms.keywords: DOT11EXT_NIC_SPECIFIC_EXTENSION, Dot11ExtNicSpecificExtension, Dot11ExtNicSpecificExtension callback function [Network Drivers Starting with Windows Vista], Native_802.11_IHV_Ext_cab7d3ba-3192-4fb5-8827-f0c4b77bcb20.xml, netvista.dot11extnicspecificextension, wlanihv/Dot11ExtNicSpecificExtension
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
-req.product: Windows 10 or later.
 f1_keywords:
  - DOT11EXT_NIC_SPECIFIC_EXTENSION
  - wlanihv/DOT11EXT_NIC_SPECIFIC_EXTENSION
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
- - Dot11ExtNicSpecificExtension
+ - DOT11EXT_NIC_SPECIFIC_EXTENSION
 ---
 
 # DOT11EXT_NIC_SPECIFIC_EXTENSION callback
@@ -55,29 +53,29 @@ The IHV Extensions DLL calls the
 
 ## -parameters
 
-### -param hDot11SvcHandle 
+### -param hDot11SvcHandle [in, optional]
 
-[in, optional]
+
 The handle used by the operating system to reference the WLAN adapter. This handle value was
      specified through a previous call to the
      <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a> IHV
      Handler function.
 
-### -param dwInBufferSize 
+### -param dwInBufferSize [in]
 
-[in]
+
 The size, in bytes, of the caller-allocated data buffer referenced by the
      <i>pvInBuffer</i> parameter.
 
-### -param pvInBuffer 
+### -param pvInBuffer [in]
 
-[in]
+
 A pointer to a caller-allocated input buffer that contains the data required to perform the
      operation. The format of this data is defined by the IHV.
 
-### -param pdwOutBufferSize 
+### -param pdwOutBufferSize [in, out]
 
-[in, out]
+
 A pointer to a caller-allocated DWORD variable. When the
      <b>Dot11ExtNicSpecificExtension</b> function is called, the IHV Extensions DLL
      must set this variable to the size, in bytes, of the caller-allocated data buffer referenced by the
@@ -85,9 +83,9 @@ A pointer to a caller-allocated DWORD variable. When the
      actual number of bytes returned in the data buffer referenced by the
      <i>pvOutBuffer</i> parameter.
 
-### -param pvOutBuffer 
+### -param pvOutBuffer [out]
 
-[out]
+
 A pointer to a caller-allocated buffer that contains data returned from the Native 802.11 miniport
      driver for the specified request. The format of this data is defined by the IHV. This parameter can be
      <b>NULL</b> if data is not to be returned by the Native 802.11 miniport driver.
@@ -131,3 +129,4 @@ The
 
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_init_adapter.md">Dot11ExtIhvInitAdapter</a>
+

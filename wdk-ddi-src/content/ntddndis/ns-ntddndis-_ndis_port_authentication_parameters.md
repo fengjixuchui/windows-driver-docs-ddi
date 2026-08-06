@@ -4,7 +4,6 @@ title: _NDIS_PORT_AUTHENTICATION_PARAMETERS (ntddndis.h)
 description: The NDIS_PORT_AUTHENTICATION_PARAMETERS structure specifies the state parameters for an NDIS port.
 old-location: netvista\ndis_port_authentication_parameters.htm
 tech.root: netvista
-ms.assetid: 7c411d9e-1064-4278-9870-0546891d4743
 ms.date: 05/02/2018
 keywords: ["NDIS_PORT_AUTHENTICATION_PARAMETERS structure"]
 ms.keywords: "*PNDIS_PORT_AUTHENTICATION_PARAMETERS, NDIS_PORT_AUTHENTICATION_PARAMETERS, NDIS_PORT_AUTHENTICATION_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_PORT_AUTHENTICATION_PARAMETERS, PNDIS_PORT_AUTHENTICATION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_PORT_AUTHENTICATION_PARAMETERS, ndis_ports_ref_f78165f6-8166-4889-98e8-6c9f99fe0a0e.xml, netvista.ndis_port_authentication_parameters, ntddndis/NDIS_PORT_AUTHENTICATION_PARAMETERS, ntddndis/PNDIS_PORT_AUTHENTICATION_PARAMETERS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_PORT_AUTHENTICATION_PARAMETERS
+ - PNDIS_PORT_AUTHENTICATION_PARAMETERS
  - NDIS_PORT_AUTHENTICATION_PARAMETERS
 ---
 
@@ -58,7 +59,7 @@ The NDIS_PORT_AUTHENTICATION_PARAMETERS structure specifies the state parameters
 ### -field Header
 
 The 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_PORT_AUTHENTICATION_PARAMETERS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -202,9 +203,10 @@ The NDIS_PORT_AUTHENTICATION_PARAMETERS structure is used in
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="/windows-hardware/drivers/network/oid-gen-port-authentication-parameters">
    OID_GEN_PORT_AUTHENTICATION_PARAMETERS</a>
+

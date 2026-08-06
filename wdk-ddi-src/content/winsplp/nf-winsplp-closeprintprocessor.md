@@ -4,7 +4,6 @@ title: ClosePrintProcessor function (winsplp.h)
 description: A print processor's ClosePrintProcessor function completes the printing of a print job and makes the associated handle invalid.
 old-location: print\closeprintprocessor.htm
 tech.root: print
-ms.assetid: 3cf87a18-8b5a-40f2-9c0e-2b29167e283d
 ms.date: 04/20/2018
 keywords: ["ClosePrintProcessor function"]
 ms.keywords: ClosePrintProcessor, ClosePrintProcessor function [Print Devices], print.closeprintprocessor, spoolfnc_f2e791a0-bfae-463c-a7ac-0e9f941ebe51.xml, winsplp/ClosePrintProcessor
@@ -51,9 +50,9 @@ A print processor's <b>ClosePrintProcessor</b> function completes the printing o
 
 ## -parameters
 
-### -param hPrintProcessor 
+### -param hPrintProcessor [in, out]
 
-[in, out]
+
 Caller-supplied print processor handle. This is the handle returned by a previous call to <a href="/windows-hardware/drivers/ddi/winsplp/nf-winsplp-openprintprocessor">OpenPrintProcessor</a>.
 
 ## -returns

@@ -4,7 +4,6 @@ title: IRegistryKey::QueryKey (portcls.h)
 description: The QueryKey method retrieves information about a registry key, including the key name, key class, and the number of subkeys and their sizes.
 old-location: audio\iregistrykey_querykey.htm
 tech.root: audio
-ms.assetid: 1b2642da-1b04-49a8-942e-6eb93afd12f2
 ms.date: 05/08/2018
 keywords: ["IRegistryKey::QueryKey"]
 ms.keywords: IRegistryKey interface [Audio Devices],QueryKey method, IRegistryKey.QueryKey, IRegistryKey::QueryKey, QueryKey, QueryKey method [Audio Devices], QueryKey method [Audio Devices],IRegistryKey interface, audio.iregistrykey_querykey, audmp-routines_88fe19d0-095e-4f70-b8aa-a0c908600296.xml, portcls/IRegistryKey::QueryKey
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IRegistryKey.QueryKey
+ - IRegistryKey::QueryKey
 ---
 
 # IRegistryKey::QueryKey
@@ -50,9 +49,9 @@ The <code>QueryKey</code> method retrieves information about a registry key, inc
 
 ## -parameters
 
-### -param KeyInformationClass 
+### -param KeyInformationClass [in]
 
-[in]
+
 Specifies the type of information to be returned in the buffer. Set this parameter to one of the following KEY_INFORMATION_CLASS enumeration values:
 
 <ul>
@@ -70,19 +69,19 @@ Specifies the type of information to be returned in the buffer. Set this paramet
 </li>
 </ul>
 
-### -param KeyInformation 
+### -param KeyInformation [out]
 
-[out]
+
 Pointer to a caller-allocated buffer into which the method writes the requested data. The buffer holds a structure of type <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_basic_information">KEY_BASIC_INFORMATION</a>, <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_full_information">KEY_FULL_INFORMATION</a>, or <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_node_information">KEY_NODE_INFORMATION</a>, depending on the value of <i>KeyInformationClass</i>. The structure is followed by a string of Unicode characters whose size depends on the type of information being requested about the key and the length of the key's name or class string.
 
-### -param Length 
+### -param Length [in]
 
-[in]
+
 Size in bytes of the <i>KeyInformation</i> buffer, which the caller must set according to the given <i>KeyInformationClass</i>. To receive all the requested data, the buffer must be at least as large as the size of the requested data.
 
-### -param ResultLength 
+### -param ResultLength [out]
 
-[out]
+
 Output pointer for the length of the resulting data. This parameter points to a caller-allocated ULONG variable into which the method writes a count specifying the number of bytes actually written into the <i>KeyInformation</i> buffer. If the specified buffer length is too small to contain the information, however, the method instead outputs the required buffer size and returns STATUS_BUFFER_OVERFLOW or STATUS_BUFFER_TOO_SMALL. For more information, see the following Remarks section.
 
 ## -returns
@@ -109,7 +108,7 @@ Indicates that one of the parameters passed to the method is not valid.
 
 ## -remarks
 
-If the <i>KeyInformation</i> buffer is too small to hold the requested information, the method writes the required size to *<i>ResultLength</i> and returns a status code of either STATUS_BUFFER_OVERFLOW or STATUS_BUFFER_TOO_SMALL. The method returns STATUS_BUFFER_OVERFLOW if it succeeded in writing only part of the requested information to the buffer. The method returns STATUS_BUFFER_TOO_SMALL if it was unable to write any information to the buffer. The value written to *<i>ResultLength</i> indicates the minimum buffer size required to hold all the requested information.
+If the <i>KeyInformation</i> buffer is too small to hold the requested information, the method writes the required size to **ResultLength* and returns a status code of either STATUS_BUFFER_OVERFLOW or STATUS_BUFFER_TOO_SMALL. The method returns STATUS_BUFFER_OVERFLOW if it succeeded in writing only part of the requested information to the buffer. The method returns STATUS_BUFFER_TOO_SMALL if it was unable to write any information to the buffer. The value written to **ResultLength* indicates the minimum buffer size required to hold all the requested information.
 
 ## -see-also
 
@@ -130,3 +129,4 @@ If the <i>KeyInformation</i> buffer is too small to hold the requested informati
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-zwquerykey">ZwQueryKey</a>
+

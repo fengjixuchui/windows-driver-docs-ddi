@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILGETDRIVERVERSIONPARAMS
 title: RILGETDRIVERVERSIONPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: Microsoft reserves the RILGETDRIVERVERSIONPARAMS structure for internal use only. Don't use the RILGETDRIVERVERSIONPARAMS structure in your code.
 old-location: netvista\rilgetdriverversionparams.htm
 tech.root: netvista
-ms.assetid: 42167f2f-0bd5-452c-9b41-d18efac28a33
 ms.date: 05/02/2018
 keywords: ["RILGETDRIVERVERSIONPARAMS structure"]
 ms.keywords: "*LPRILGETDRIVERVERSIONPARAMS, RILGETDRIVERVERSIONPARAMS, RILGETDRIVERVERSIONPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilgetdriverversionparams, ntddrilapitypes/RILGETDRIVERVERSIONPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILGETDRIVERVERSIONPARAMS
+ - LPRILGETDRIVERVERSIONPARAMS
 ---
 
 # RILGETDRIVERVERSIONPARAMS structure (ntddrilapitypes.h)

@@ -3,17 +3,16 @@ UID: NS:netpoweroffload._NET_POWER_OFFLOAD_NS_PARAMETERS
 title: NET_POWER_OFFLOAD_NS_PARAMETERS (netpoweroffload.h)
 description: The NET_POWER_OFFLOAD_NS_PARAMETERS structure contains IPv6 NS low-power protocol offload parameters for a net adapter.
 tech.root: netvista
-ms.assetid: 4ebf3a7f-90b5-43dd-8c28-33319fdf0d59
 ms.date: 09/30/2019
 keywords: ["NET_POWER_OFFLOAD_NS_PARAMETERS structure"]
 ms.keywords: NET_POWER_OFFLOAD_NS_PARAMETERS, NET_POWER_OFFLOAD_NS_PARAMETERS,
 req.header: netpoweroffload.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: 
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - netpoweroffload.h
 api_name:
+ - _NET_POWER_OFFLOAD_NS_PARAMETERS
  - NET_POWER_OFFLOAD_NS_PARAMETERS
-product:
- - Windows
 ---
 
 # NET_POWER_OFFLOAD_NS_PARAMETERS structure
@@ -44,7 +42,7 @@ product:
 
 ## -description
 
-The **NET_POWER_OFFLOAD_NS_PARAMETERS** structure contains parameters for an IPv6 Neighbor Solitication (NS) low power protocol offload to a net adapter.
+The **NET_POWER_OFFLOAD_NS_PARAMETERS** structure contains parameters for an IPv6 Neighbor Solicitation (NS) low power protocol offload to a net adapter.
 
 ## -struct-fields
 
@@ -95,3 +93,4 @@ For more information about IPv6 NS and NA messages, see [RFC 4861](https://www.i
 [**NET_POWER_OFFLOAD_NS_PARAMETERS_INIT**](../netpoweroffload/nf-netpoweroffload-net_power_offload_ns_parameters_init.md)
 
 [**NetPowerOffloadGetNsParameters**](../netpoweroffload/nf-netpoweroffload-netpoweroffloadgetnsparameters.md)
+

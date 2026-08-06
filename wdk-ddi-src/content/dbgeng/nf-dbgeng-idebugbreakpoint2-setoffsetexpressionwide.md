@@ -4,7 +4,6 @@ title: IDebugBreakpoint2::SetOffsetExpressionWide (dbgeng.h)
 description: The SetOffsetExpressionWide methods set an expression string that evaluates to the location that triggers a breakpoint.
 old-location: debugger\setoffsetexpressionwide.htm
 tech.root: debugger
-ms.assetid: 1db89a5a-641b-4fca-bd60-217c9be8f19f
 ms.date: 05/03/2018
 keywords: ["IDebugBreakpoint2::SetOffsetExpressionWide"]
 ms.keywords: IDebugBreakpoint2 interface [Windows Debugging],SetOffsetExpressionWide method, IDebugBreakpoint2.SetOffsetExpressionWide, IDebugBreakpoint2::SetOffsetExpressionWide, SetOffsetExpressionWide, SetOffsetExpressionWide method [Windows Debugging], SetOffsetExpressionWide method [Windows Debugging],IDebugBreakpoint2 interface, dbgeng/IDebugBreakpoint2::SetOffsetExpressionWide, debugger.setoffsetexpressionwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugBreakpoint2.SetOffsetExpressionWide
+ - IDebugBreakpoint2::SetOffsetExpressionWide
 ---
 
 # IDebugBreakpoint2::SetOffsetExpressionWide
@@ -50,10 +49,10 @@ The <b>SetOffsetExpressionWide</b> methods set an expression string that evaluat
 
 ## -parameters
 
-### -param Expression 
+### -param Expression [in]
 
-[in]
-The expression string that evaluates to the location on the target that triggers the breakpoint.  If the engine scannot evaluate the expression (for example, if the expression contains a symbol that cannot be interpreted), the breakpoint is flagged as deferred. (For more information about deferred breakpoints, see <a href="/windows-hardware/drivers/debugger/controlling-breakpoint-flags-and-parameters">Controlling Breakpoint Flags and Parameters</a>.)  For more information about the expression syntax, see <a href="/windows-hardware/drivers/debugger/using-breakpoints2">Using Breakpoints</a>.
+
+The expression string that evaluates to the location on the target that triggers the breakpoint.  If the engine cannot evaluate the expression (for example, if the expression contains a symbol that cannot be interpreted), the breakpoint is flagged as deferred. (For more information about deferred breakpoints, see <a href="/windows-hardware/drivers/debugger/controlling-breakpoint-flags-and-parameters">Controlling Breakpoint Flags and Parameters</a>.)  For more information about the expression syntax, see <a href="/windows-hardware/drivers/debugger/using-breakpoints2">Using Breakpoints</a>.
 
 ## -returns
 
@@ -80,3 +79,4 @@ The method was successful.
 ## -remarks
 
 For more information about how to use breakpoints, see <a href="/windows-hardware/drivers/debugger/using-breakpoints2">Using Breakpoints</a>.
+

@@ -4,7 +4,6 @@ title: _WDI_TX_METADATA (dot11wdi.h)
 description: The WDI_TX_METADATA structure defines the TX metadata.
 old-location: netvista\wdi_tx_metadata.htm
 tech.root: netvista
-ms.assetid: 21833980-0098-43c2-822c-9d8292f7120a
 ms.date: 05/02/2018
 keywords: ["WDI_TX_METADATA structure"]
 ms.keywords: "*PWDI_TX_METADATA, PWDI_TX_METADATA, PWDI_TX_METADATA structure pointer [Network Drivers Starting with Windows Vista], WDI_TX_METADATA, WDI_TX_METADATA structure [Network Drivers Starting with Windows Vista], _WDI_TX_METADATA, dot11wdi/PWDI_TX_METADATA, dot11wdi/WDI_TX_METADATA, netvista.wdi_tx_metadata, netvista.wifi_tx_metadata"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - dot11wdi.h
 api_name:
+ - _WDI_TX_METADATA
+ - PWDI_TX_METADATA
  - WDI_TX_METADATA
 ---
 
@@ -49,6 +50,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The 
   WDI_TX_METADATA structure defines the TX metadata.
@@ -122,3 +126,4 @@ Reserved.
 
 
 <a href="/windows-hardware/drivers/ddi/dot11wdi/ns-dot11wdi-_wdi_txrx_target_capabilities">WDI_TXRX_CAPABILITIES</a>
+

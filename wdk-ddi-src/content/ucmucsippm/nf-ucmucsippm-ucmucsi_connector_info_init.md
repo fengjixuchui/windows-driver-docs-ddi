@@ -3,7 +3,6 @@ UID: NF:ucmucsippm.UCMUCSI_CONNECTOR_INFO_INIT
 title: UCMUCSI_CONNECTOR_INFO_INIT function (ucmucsippm.h)
 tech.root: usbref
 description: Initializes a UCMUCSI_CONNECTOR_INFO structure.
-ms.assetid: 59008f71-2e62-4cbe-9b47-0b2f081582b5
 ms.date: 09/30/2018
 keywords: ["UCMUCSI_CONNECTOR_INFO_INIT function"]
 ms.keywords: UCMUCSI_CONNECTOR_INFO_INIT
@@ -48,9 +47,9 @@ Initializes a [**UCMUCSI_CONNECTOR_INFO**](ns-ucmucsippm-_ucmucsi_connector_info
 
 ## -parameters
 
-### -param ConnectorInfo 
+### -param ConnectorInfo [out]
 
-[out]A pointer to a [**UCMUCSI_CONNECTOR_INFO**](ns-ucmucsippm-_ucmucsi_connector_info.md) structure to initialize.
+A pointer to a [**UCMUCSI_CONNECTOR_INFO**](ns-ucmucsippm-_ucmucsi_connector_info.md) structure to initialize.
 
 ## -remarks
 

@@ -4,7 +4,6 @@ title: _D3DDDI_SYNCHRONIZATIONOBJECTINFO (d3dukmdt.h)
 description: The D3DDDI_SYNCHRONIZATIONOBJECTINFO structure contains information about a synchronization object.
 old-location: display\d3dddi_synchronizationobjectinfo.htm
 tech.root: display
-ms.assetid: 786934f5-b0ec-4ee9-8bf0-f32b64295b96
 ms.date: 05/10/2018
 keywords: ["D3DDDI_SYNCHRONIZATIONOBJECTINFO structure"]
 ms.keywords: D3DDDI_SYNCHRONIZATIONOBJECTINFO, D3DDDI_SYNCHRONIZATIONOBJECTINFO structure [Display Devices], D3D_other_Structs_86538364-14f8-4e40-bf0e-2e9f836729b8.xml, _D3DDDI_SYNCHRONIZATIONOBJECTINFO, d3dukmdt/D3DDDI_SYNCHRONIZATIONOBJECTINFO, display.d3dddi_synchronizationobjectinfo
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dukmdt.h
 api_name:
+ - _D3DDDI_SYNCHRONIZATIONOBJECTINFO
  - D3DDDI_SYNCHRONIZATIONOBJECTINFO
 ---
 
@@ -52,9 +52,9 @@ The D3DDDI_SYNCHRONIZATIONOBJECTINFO structure contains information about a sync
 
 ## -struct-fields
 
-### -field Type
+### -field Type [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddi_synchronizationobject_type">D3DDDI_SYNCHRONIZATIONOBJECT_TYPE</a>-typed value that indicates the type of synchronization object.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddi_synchronizationobject_type">D3DDDI_SYNCHRONIZATIONOBJECT_TYPE</a>-typed value that indicates the type of synchronization object.
 
 ### -field SynchronizationMutex
 
@@ -91,3 +91,4 @@ An array of 32-bit values that are reserved for future use.
 
 
 <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddi_synchronizationobject_type">D3DDDI_SYNCHRONIZATIONOBJECT_TYPE</a>
+

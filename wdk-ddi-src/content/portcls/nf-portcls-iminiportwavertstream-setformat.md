@@ -3,7 +3,6 @@ UID: NF:portcls.IMiniportWaveRTStream.SetFormat
 title: IMiniportWaveRTStream::SetFormat (portcls.h)
 description: The SetFormat method sets the data format of the wave stream.
 tech.root: audio
-ms.assetid: b5ab8d1e-c92b-4182-99f5-c36e4e3940af
 ms.date: 09/29/2020
 keywords: ["IMiniportWaveRTStream::SetFormat"]
 ms.keywords: IMiniportWaveRTStream::SetFormat, SetFormat, IMiniportWaveRTStream.SetFormat, IMiniportWaveRTStream::SetFormat, IMiniportWaveRTStream.SetFormat
@@ -35,12 +34,11 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportWaveRTStream.SetFormat
-product:
- - Windows
+ - IMiniportWaveRTStream::SetFormat
 ---
 
 # IMiniportWaveRTStream::SetFormat
+
 
 ## -description
 
@@ -48,10 +46,10 @@ The SetFormat method sets the data format of the wave stream.
 
 ## -parameters
 
-### -param DataFormat
+### -param DataFormat [in]
 
-[in]
-Pointer to a [KSDATAFORMAT](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat) structure that describes the requested data format.
+
+Pointer to a [KSDATAFORMAT](../ks/ns-ks-ksdataformat.md) structure that describes the requested data format.
 
 ## -returns
 
@@ -70,4 +68,5 @@ None
 
 [IMiniPortWaveRTStream](nn-portcls-iminiportwavertstream.md)
 
-[KSDATAFORMAT](/windows-hardware/drivers/ddi/ks/ns-ks-ksdataformat)
+[KSDATAFORMAT](../ks/ns-ks-ksdataformat.md)
+

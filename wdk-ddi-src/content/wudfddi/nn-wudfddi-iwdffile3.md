@@ -4,7 +4,6 @@ title: IWDFFile3 (wudfddi.h)
 description: Drivers obtain the IWDFFile3 interface by calling IWDFFile::QueryInterface.
 old-location: wdf\iwdffile3.htm
 tech.root: wdf
-ms.assetid: 67F55A00-2DE4-4ECE-8DAF-BBCBB156454E
 ms.date: 02/26/2018
 keywords: ["IWDFFile3 interface"]
 ms.keywords: IWDFFile3, IWDFFile3 interface, IWDFFile3 interface,described, umdf.iwdffile3, wdf.iwdffile3, wudfddi/IWDFFile3
@@ -52,9 +51,9 @@ Drivers obtain the <b>IWDFFile3</b> interface by calling <b>IWDFFile::QueryInter
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IWDFFile3</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile2">IWDFFile2</a>. <b>IWDFFile3</b> also has these types of members:
+The <b>IWDFFile3</b> interface inherits from <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile2">IWDFFile2</a>. <b>IWDFFile3</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>
 
 ## -see-also

@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_155
+UID: NS:ksmedia.KSPROPERTY_DROPPEDFRAMES_CURRENT_S
 title: KSPROPERTY_DROPPEDFRAMES_CURRENT_S (ksmedia.h)
 description: The KSPROPERTY_DROPPEDFRAMES_CURRENT_S structure describes the dropped frame information from the minidriver.
 old-location: stream\ksproperty_droppedframes_current_s.htm
 tech.root: stream
-ms.assetid: 966af529-1725-4e80-9e67-cdb8666673f2
 ms.date: 04/30/2019
 keywords: ["KSPROPERTY_DROPPEDFRAMES_CURRENT_S structure"]
 ms.keywords: "*PKSPROPERTY_DROPPEDFRAMES_CURRENT_S, KSPROPERTY_DROPPEDFRAMES_CURRENT_S, KSPROPERTY_DROPPEDFRAMES_CURRENT_S structure [Streaming Media Devices], PKSPROPERTY_DROPPEDFRAMES_CURRENT_S, PKSPROPERTY_DROPPEDFRAMES_CURRENT_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_DROPPEDFRAMES_CURRENT_S, ksmedia/PKSPROPERTY_DROPPEDFRAMES_CURRENT_S, stream.ksproperty_droppedframes_current_s, vidcapstruct_ee78d2f2-c142-4d17-855d-7dc35589f271.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_DROPPEDFRAMES_CURRENT_S
  - KSPROPERTY_DROPPEDFRAMES_CURRENT_S
 ---
 
@@ -54,7 +54,7 @@ The KSPROPERTY_DROPPEDFRAMES_CURRENT_S structure describes the dropped frame inf
 
 ### -field Property
 
-Specifies an initialized <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+Specifies an initialized <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 ### -field PictureNumber
 
@@ -74,7 +74,7 @@ For more information about updating <b>PictureNumber</b> and <b>DropCount</b> se
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -83,3 +83,4 @@ For more information about updating <b>PictureNumber</b> and <b>DropCount</b> se
 
 
 <a href="/windows-hardware/drivers/stream/propsetid-vidcap-droppedframes">PROPSETID_VIDCAP_DROPPEDFRAMES</a>
+

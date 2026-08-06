@@ -1,10 +1,9 @@
 ---
 UID: NC:wdbgexts.PWINDBG_CHECK_VERSION
 title: PWINDBG_CHECK_VERSION (wdbgexts.h)
-description: The PWINDBG_CHECK_VERSION (CheckVersion) callback function verifies that the extension module version matches the debugger version, and outputs an warning message if there is a mismatch.
+description: The PWINDBG_CHECK_VERSION (CheckVersion) callback function verifies that the extension module version matches the debugger version, and outputs a warning message if there is a mismatch.
 old-location: debugger\checkversion.htm
 tech.root: debugger
-ms.assetid: 82e16423-7e23-4229-9ba6-b43970a1135a
 ms.date: 05/03/2018
 keywords: ["PWINDBG_CHECK_VERSION callback function"]
 ms.keywords: CheckVersion, CheckVersion callback function [Windows Debugging], PWINDBG_CHECK_VERSION, PWINDBG_CHECK_VERSION callback, WdbgExts_Callbacks_9f917023-190d-4047-a272-7e46de9b5afb.xml, debugger.checkversion, wdbgexts/CheckVersion
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wdbgexts.h
 api_name:
- - CheckVersion
+ - PWINDBG_CHECK_VERSION
 ---
 
 # PWINDBG_CHECK_VERSION callback function
@@ -46,9 +45,7 @@ api_name:
 
 ## -description
 
-The <i>PWINDBG_CHECK_VERSION</i>  (<b>CheckVersion</b>) callback function verifies that the extension module version matches the debugger version, and outputs an warning message if there is a mismatch.
-
-## -parameters
+The <i>PWINDBG_CHECK_VERSION</i>  (<b>CheckVersion</b>) callback function verifies that the extension module version matches the debugger version, and outputs a warning message if there is a mismatch.
 
 ## -returns
 
@@ -67,3 +64,4 @@ For more details, see <a href="/windows-hardware/drivers/debugger/using-wdbgexts
 The purpose of this function is to allow you to print out a version mismatch warning when the extension DLL is used. This is an optional feature, which should not be confused with the version number used  by <a href="/windows-hardware/drivers/ddi/wdbgexts/nc-wdbgexts-pwindbg_extension_api_version">ExtensionApiVersion</a>.
 
 If the <a href="/windows-hardware/drivers/debugger/-noversion--disable-version-checking-">.noversion</a> command is used, version checking is disabled and the debugger will not call <i>CheckVersion</i>.
+

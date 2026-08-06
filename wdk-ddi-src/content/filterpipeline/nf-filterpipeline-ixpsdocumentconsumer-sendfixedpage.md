@@ -4,7 +4,6 @@ title: IXpsDocumentConsumer::SendFixedPage (filterpipeline.h)
 description: The SendFixedPage method sends a fixed page of an XPS document to the pipeline.
 old-location: print\ixpsdocumentconsumer_sendfixedpage.htm
 tech.root: print
-ms.assetid: ef11161d-5e73-44a8-b802-e3706b78950e
 ms.date: 04/20/2018
 keywords: ["IXpsDocumentConsumer::SendFixedPage"]
 ms.keywords: IXpsDocumentConsumer interface [Print Devices],SendFixedPage method, IXpsDocumentConsumer.SendFixedPage, IXpsDocumentConsumer::SendFixedPage, SendFixedPage, SendFixedPage method [Print Devices], SendFixedPage method [Print Devices],IXpsDocumentConsumer interface, filterpipeline/IXpsDocumentConsumer::SendFixedPage, filterpipeline_fbf758b4-801f-4c68-879c-2820736e459e.xml, print.ixpsdocumentconsumer_sendfixedpage
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - filterpipeline.h
 api_name:
- - IXpsDocumentConsumer.SendFixedPage
+ - IXpsDocumentConsumer::SendFixedPage
 ---
 
 # IXpsDocumentConsumer::SendFixedPage
@@ -50,9 +49,9 @@ The <code>SendFixedPage</code> method sends a fixed page of an XPS document to t
 
 ## -parameters
 
-### -param pIFixedPage 
+### -param pIFixedPage [in]
 
-[in]
+
 A pointer to an XPS fixed page object.
 
 ## -returns

@@ -4,7 +4,6 @@ title: GPIO_CLIENT_QUERY_SET_CONTROLLER_INFORMATION (gpioclx.h)
 description: The CLIENT_QuerySetControllerInformation event callback function queries the general-purpose I/O (GPIO) controller driver for the specified set of attributes of the GPIO controller.
 old-location: gpio\client_querysetcontrollerinformation.htm
 tech.root: GPIO
-ms.assetid: 898AE09B-2C92-4229-9A86-901CDA98CFAA
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_QUERY_SET_CONTROLLER_INFORMATION callback function"]
 ms.keywords: CLIENT_QuerySetControllerInformation, CLIENT_QuerySetControllerInformation callback, CLIENT_QuerySetControllerInformation callback function [Parallel Ports], GPIO.client_querysetcontrollerinformation, GPIO_CLIENT_QUERY_SET_CONTROLLER_INFORMATION, gpioclx/CLIENT_QuerySetControllerInformation
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_QuerySetControllerInformation
+ - GPIO_CLIENT_QUERY_SET_CONTROLLER_INFORMATION
 ---
 
 # GPIO_CLIENT_QUERY_SET_CONTROLLER_INFORMATION callback function
@@ -50,19 +49,19 @@ The <i>CLIENT_QuerySetControllerInformation</i> event callback function queries 
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param InputBuffer 
+### -param InputBuffer [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_client_controller_query_set_information_input">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT</a> structure that describes the type of attributes that the caller is requesting.
 
-### -param OutputBuffer 
+### -param OutputBuffer [out, optional]
 
-[out, optional]
+
 An optional pointer to a <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_client_controller_query_set_information_output">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_OUTPUT</a> structure into which the function writes the values of the requested attributes.
 
 ## -returns
@@ -134,3 +133,4 @@ The GPIO_CLIENT_QUERY_SET_CONTROLLER_INFORMATION function type is defined in the
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/ne-gpioclx-_client_controller_query_set_request_type">CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE</a>
+

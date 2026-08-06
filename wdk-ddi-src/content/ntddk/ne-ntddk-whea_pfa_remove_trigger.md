@@ -1,9 +1,8 @@
 ---
 UID: NE:ntddk._WHEA_PFA_REMOVE_TRIGGER
 title: WHEA_PFA_REMOVE_TRIGGER
-description: 
-tech.root: 
-ms.assetid: 0f85285c-9db4-42ab-bb06-6c7f006864ee
+description: "Learn more about: WHEA_PFA_REMOVE_TRIGGER enumeration"
+tech.root: whea
 ms.date: 08/19/2019
 keywords: ["WHEA_PFA_REMOVE_TRIGGER enumeration"]
 ms.keywords: WHEA_PFA_REMOVE_TRIGGER, WHEA_PFA_REMOVE_TRIGGER, *PWHEA_PFA_REMOVE_TRIGGER,
@@ -33,9 +32,9 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _WHEA_PFA_REMOVE_TRIGGER
+ - PWHEA_PFA_REMOVE_TRIGGER
  - WHEA_PFA_REMOVE_TRIGGER
-product:
- - Windows
 ---
 
 # WHEA_PFA_REMOVE_TRIGGER enumeration

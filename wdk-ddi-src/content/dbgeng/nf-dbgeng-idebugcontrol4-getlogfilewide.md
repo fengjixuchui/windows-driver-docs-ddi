@@ -4,7 +4,6 @@ title: IDebugControl4::GetLogFileWide (dbgeng.h)
 description: The GetLogFileWide method returns the name of the currently open log file.
 old-location: debugger\getlogfilewide.htm
 tech.root: debugger
-ms.assetid: 2dd20552-747c-4eb8-aacd-7ee241d490d1
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::GetLogFileWide"]
 ms.keywords: GetLogFileWide, GetLogFileWide method [Windows Debugging], GetLogFileWide method [Windows Debugging],IDebugControl4 interface, IDebugControl4 interface [Windows Debugging],GetLogFileWide method, IDebugControl4.GetLogFileWide, IDebugControl4::GetLogFileWide, dbgeng/IDebugControl4::GetLogFileWide, debugger.getlogfilewide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.GetLogFileWide
+ - IDebugControl4::GetLogFileWide
 ---
 
 # IDebugControl4::GetLogFileWide
@@ -50,24 +49,24 @@ The <b>GetLogFileWide</b>  method returns the name of the currently open log fil
 
 ## -parameters
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Receives the name of the currently open log file.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size, in characters, of the <i>Buffer</i> buffer.
 
-### -param FileSize 
+### -param FileSize [out, optional]
 
-[out, optional]
+
 Receives the size, in characters, of the name of the log file.  If <i>FileSize</i> is <b>NULL</b>, this information is not returned.
 
-### -param Append 
+### -param Append [out]
 
-[out]
+
 Receives <b>TRUE</b> if log messages are appended to the log file, or <b>FALSE</b> if the contents of the log file were discarded when the file was opened.
 
 ## -returns
@@ -139,3 +138,4 @@ For more information about log files, see <a href="/windows-hardware/drivers/deb
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-openlogfile">OpenLogFile</a>
+

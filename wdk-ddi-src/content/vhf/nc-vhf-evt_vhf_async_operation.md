@@ -4,7 +4,6 @@ title: EVT_VHF_ASYNC_OPERATION (vhf.h)
 description: The HID source driver implements this event callback if it wants to support one of the four asynchronous operation to get and set HID reports.
 old-location: hid\evtvhfasyncoperation.htm
 tech.root: hid
-ms.assetid: C42174FE-202F-405D-840B-8613762F43AC
 ms.date: 04/30/2018
 keywords: ["EVT_VHF_ASYNC_OPERATION callback function"]
 ms.keywords: EVT_VHF_ASYNC_OPERATION, EVT_VHF_ASYNC_OPERATION callback, EvtVhfAsyncOperation, EvtVhfAsyncOperation callback function [Human Input Devices], hid.evtvhfasyncoperation, vhf/EvtVhfAsyncOperation
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - vhf.h
 api_name:
- - EvtVhfAsyncOperation
+ - EVT_VHF_ASYNC_OPERATION
 ---
 
 # EVT_VHF_ASYNC_OPERATION callback function
@@ -50,24 +49,24 @@ The HID source driver implements this event callback if it wants to support one 
 
 ## -parameters
 
-### -param VhfClientContext 
+### -param VhfClientContext [in]
 
-[in]
+
 An opaque pointer to a HID source driver-defined buffer that the driver passed in the <a href="/windows-hardware/drivers/ddi/vhf/ns-vhf-_vhf_config">VHF_CONFIG</a> structure supplied to <a href="/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfcreate">VhfCreate</a> to create the virtual HID device.
 
-### -param VhfOperationHandle 
+### -param VhfOperationHandle [in]
 
-[in]
+
 An opaque handle that uniquely identifies this asynchronous operation.
 
-### -param VhfOperationContext 
+### -param VhfOperationContext [in, optional]
 
-[in, optional]
+
 Pointer to a buffer that can be used by the HID source driver for servicing the operation. Size of the buffer is specified by the HID source driver in the <a href="/windows-hardware/drivers/ddi/vhf/ns-vhf-_vhf_config">VHF_CONFIG</a> structure supplied to <a href="/windows-hardware/drivers/ddi/vhf/nf-vhf-vhfcreate">VhfCreate</a>.
 
-### -param HidTransferPacket 
+### -param HidTransferPacket [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/hidclass/ns-hidclass-_hid_xfer_packet">HID_XFER_PACKET</a> structure. Contains information about a HID Report and is used by the HID source driver and the HID class/mini driver pair for I/O requests to get or set a report.
 
 ## -remarks
@@ -87,3 +86,4 @@ When the operation is complete, HID source calls <a href="/windows-hardware/driv
 ## -see-also
 
 <a href="/windows-hardware/drivers/hid/virtual-hid-framework--vhf-">Write a HID source driver by using Virtual HID Framework (VHF)</a>
+

@@ -4,7 +4,6 @@ title: SdpCreateNodeString function (sdplib.h)
 description: The Bluetooth SdpCreateNodeString function is used to allocate and initialize an SDP_NODE structure to a string type.
 old-location: bltooth\sdpcreatenodestring.htm
 tech.root: bltooth
-ms.assetid: 27611211-a782-4c62-8848-d9ca6e49b5f4
 ms.date: 04/27/2018
 keywords: ["SdpCreateNodeString function"]
 ms.keywords: SdpCreateNodeString, SdpCreateNodeString function [Bluetooth Devices], bltooth.sdpcreatenodestring, bth_funcs_509682f2-c3c7-4e27-aa1f-2a6bfaf351c1.xml, sdplib/SdpCreateNodeString
@@ -52,18 +51,18 @@ The Bluetooth
 
 ## -parameters
 
-### -param string 
+### -param string [in]
 
-[in]
+
 A pointer to the string value to initialize the SDP_NODE structure.
 
 ### -param stringLength
 
 <p>An unsigned long integer value that holds the length of the string.</p>
 
-### -param tag 
+### -param tag [in]
 
-[in]
+
 A profile driver defined tag to associate with the node.
 
 ## -returns

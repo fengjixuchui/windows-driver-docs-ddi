@@ -1,9 +1,9 @@
 ---
 UID: NE:d3d9types._D3DFOGMODE
 title: _D3DFOGMODE (d3d9types.h)
-description: 
-ms.assetid: 37898f4e-bace-4e15-818f-f8dba81f57fb
+description: "Learn more about: _D3DFOGMODE enumeration"
 ms.date: 10/19/2018
+tech.root: display
 keywords: ["D3DFOGMODE enumeration"]
 ms.keywords: _D3DFOGMODE, D3DFOGMODE,
 req.header: d3d9types.h
@@ -31,6 +31,7 @@ api_location:
  - d3d9types.h
 api_name:
  - _D3DFOGMODE
+ - D3DFOGMODE
 dev_langs:
  - c++
 ---

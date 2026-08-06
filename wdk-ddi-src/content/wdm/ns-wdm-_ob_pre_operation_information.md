@@ -4,7 +4,6 @@ title: _OB_PRE_OPERATION_INFORMATION (wdm.h)
 description: The OB_PRE_OPERATION_INFORMATION structure provides information about a process or thread handle operation to an ObjectPreCallback routine.
 old-location: kernel\ob_pre_operation_information.htm
 tech.root: kernel
-ms.assetid: 2fe0f1aa-cf9f-4b45-8c34-a6d810fd461a
 ms.date: 04/30/2018
 keywords: ["OB_PRE_OPERATION_INFORMATION structure"]
 ms.keywords: "*POB_PRE_OPERATION_INFORMATION, OB_PRE_OPERATION_INFORMATION, OB_PRE_OPERATION_INFORMATION structure [Kernel-Mode Driver Architecture], POB_PRE_OPERATION_INFORMATION, POB_PRE_OPERATION_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _OB_PRE_OPERATION_INFORMATION, kernel.ob_pre_operation_information, kstruct_c_36dbceed-ec59-4fe7-885f-93386ea7b3e9.xml, wdm/OB_PRE_OPERATION_INFORMATION, wdm/POB_PRE_OPERATION_INFORMATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _OB_PRE_OPERATION_INFORMATION
+ - POB_PRE_OPERATION_INFORMATION
  - OB_PRE_OPERATION_INFORMATION
 ---
 
@@ -111,3 +112,4 @@ A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_ob_pre_operat
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pob_pre_operation_callback">ObjectPreCallback</a>
+

@@ -4,7 +4,6 @@ title: PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE (ndis.h)
 description: The ProtocolClIncomingCallQoSChange function is used by connection-oriented clients on networks that support dynamic quality-of-service.
 old-location: netvista\protocolclincomingcallqoschange.htm
 tech.root: netvista
-ms.assetid: ca9953f4-35db-4acb-b0ea-887156b4f6ee
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE callback function"]
 ms.keywords: PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE, PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE callback, ProtocolClIncomingCallQoSChange, ProtocolClIncomingCallQoSChange callback function [Network Drivers Starting with Windows Vista], condis_client_ref_09f3fdc8-cdc0-4b49-82c2-bd5816c9d5a9.xml, ndis/ProtocolClIncomingCallQoSChange, netvista.protocolclincomingcallqoschange
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolClIncomingCallQoSChange
+ - PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE
 ---
 
 # PROTOCOL_CL_INCOMING_CALL_QOS_CHANGE callback function
@@ -56,15 +55,15 @@ The
 
 ## -parameters
 
-### -param ProtocolVcContext 
+### -param ProtocolVcContext [in]
 
-[in]
+
 Specifies the handle to the client's per-VC context area for the VC on which a request to modify
      the quality of service has come in over the network.
 
-### -param CallParameters 
+### -param CallParameters [in]
 
-[in]
+
 Pointer to a buffer, formatted as a 
      <a href="/previous-versions/windows/hardware/network/ff545384(v=vs.85)">CO_CALL_PARAMETERS</a> structure, that contains
      the new QoS specification.
@@ -116,3 +115,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cm_modify_qos_call">ProtocolCmModifyCallQoS</a>
+

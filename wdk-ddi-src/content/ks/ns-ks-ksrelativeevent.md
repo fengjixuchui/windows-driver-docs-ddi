@@ -1,10 +1,9 @@
 ---
-UID: NS:ks.__unnamed_struct_15
+UID: NS:ks.KSRELATIVEEVENT
 title: KSRELATIVEEVENT (ks.h)
 description: The KSPROPERTY_CONNECTION_STARTAT property is passed a KSRELATIVEEVENT structure.
 old-location: stream\ksrelativeevent.htm
 tech.root: stream
-ms.assetid: 4edb8b74-d5e5-49ee-85a7-9eb095f5a575
 ms.date: 04/23/2018
 keywords: ["KSRELATIVEEVENT structure"]
 ms.keywords: KSRELATIVEEVENT, KSRELATIVEEVENT , KSRELATIVEEVENT structure [Streaming Media Devices], ks-struct_d79f6a15-6e44-4d81-b4f1-c113cbc2ee79.xml, ks/KSRELATIVEEVENT, stream.ksrelativeevent
@@ -72,8 +71,9 @@ Reserved and set to zero.
 
 ### -field Event
 
-A <a href="/previous-versions/ff561744(v=vs.85)">KSEVENT</a> structure that contains the event to be used.
+A <a href="/windows-hardware/drivers/stream/ksevent-structure">KSEVENT</a> structure that contains the event to be used.
 
 ### -field EventData
 
 A <a href="/windows-hardware/drivers/ddi/ks/ns-ks-kseventdata">KSEVENTDATA</a> structure that specifies the header for the event-specific data. The header itself is not actually used except as a starting point to access the event-specific data, and must be initialized to zero.
+

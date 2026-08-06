@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILRFSTATE
 title: RILRFSTATE (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILRFSTATE structure for internal use only."
 old-location: netvista\rilrfstate.htm
 tech.root: netvista
-ms.assetid: 7eb78864-d20c-4993-8b33-63096bf971fa
 ms.date: 05/02/2018
 keywords: ["RILRFSTATE structure"]
 ms.keywords: "*LPRILRFSTATE, RILRFSTATE, RILRFSTATE structure [Network Drivers Starting with Windows Vista], netvista.rilrfstate, ntddrilapitypes/RILRFSTATE"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILRFSTATE
+ - LPRILRFSTATE
 ---
 
 # RILRFSTATE structure (rilapitypes.h)

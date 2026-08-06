@@ -1,10 +1,9 @@
 ---
 UID: NC:pep_x.POFXCALLBACKUPDATEPROCESSORIDLESTATE
 title: POFXCALLBACKUPDATEPROCESSORIDLESTATE (pep_x.h)
-description: The UpdateProcessorIdleState routine is called by the platform extension plug-in (PEP) to update the properties of the specified processor idle state.
+description: Learn how the UpdateProcessorIdleState routine is called by the platform extension plug-in (PEP) to update the properties of the specified processor idle state.
 old-location: kernel\updateprocessoridlestate.htm
 tech.root: kernel
-ms.assetid: 023A2637-A79A-4ADE-B54C-646CBDDF08B8
 ms.date: 04/30/2018
 keywords: ["POFXCALLBACKUPDATEPROCESSORIDLESTATE callback function"]
 ms.keywords: POFXCALLBACKUPDATEPROCESSORIDLESTATE, UpdateProcessorIdleState, UpdateProcessorIdleState routine [Kernel-Mode Driver Architecture], kernel.updateprocessoridlestate, pepfx/UpdateProcessorIdleState
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
- - UpdateProcessorIdleState
+ - POFXCALLBACKUPDATEPROCESSORIDLESTATE
 ---
 
 # POFXCALLBACKUPDATEPROCESSORIDLESTATE callback function (pep_x.h)
@@ -50,19 +49,19 @@ The <b>UpdateProcessorIdleState</b> routine is called by the platform extension 
 
 ## -parameters
 
-### -param ProcessorHandle 
+### -param ProcessorHandle [in]
 
-[in]
-A POHANDLE value that represents the registration of the processor (as a device) with the Windows <a href="/windows-hardware/drivers/ddi/index">power management framework</a> (PoFx). The PEP previously received this handle from PoFx during the <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_crashdump_device">PEP_DPM_REGISTER_DEVICE</a> notification that informed the PEP that the processor had been registered with PoFx.
 
-### -param ProcessorState 
+A POHANDLE value that represents the registration of the processor (as a device) with the Windows <a href="/windows-hardware/drivers/ddi/_kernel/#device-power-management">power management framework</a> (PoFx). The PEP previously received this handle from PoFx during the <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_register_crashdump_device">PEP_DPM_REGISTER_DEVICE</a> notification that informed the PEP that the processor had been registered with PoFx.
 
-[in]
+### -param ProcessorState [in]
+
+
 An index that identifies the processor idle state whose properties are to be updated. In response to a previous <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_ppm_query_idle_states_v2">PEP_NOTIFY_PPM_QUERY_IDLE_STATES_V2</a> notification, the PEP specified the number of supported processor idle states and the properties of these states. If the PEP specified N processor idle states, valid processor idle state indexes range from 0 to N-1.
 
-### -param Update 
+### -param Update [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_processor_idle_state_update">PEP_PROCESSOR_IDLE_STATE_UPDATE</a> structure that contains the updated properties of the processor idle state.
 
 ## -returns
@@ -115,3 +114,4 @@ The <b>UpdateProcessorIdleState</b> routine must be called at IRQL = PASSIVE_LEV
 
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_processor_idle_state_update">PEP_PROCESSOR_IDLE_STATE_UPDATE</a>
+

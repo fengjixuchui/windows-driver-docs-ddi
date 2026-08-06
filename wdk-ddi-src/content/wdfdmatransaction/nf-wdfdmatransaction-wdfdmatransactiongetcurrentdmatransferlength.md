@@ -4,7 +4,6 @@ title: WdfDmaTransactionGetCurrentDmaTransferLength function (wdfdmatransaction.
 description: The WdfDmaTransactionGetCurrentDmaTransferLength method returns the size of the current DMA transfer.
 old-location: wdf\wdfdmatransactiongetcurrentdmatransferlength.htm
 tech.root: wdf
-ms.assetid: 20a27ad7-0b27-494e-b761-fc3edf71e8c9
 ms.date: 02/26/2018
 keywords: ["WdfDmaTransactionGetCurrentDmaTransferLength function"]
 ms.keywords: DFDmaObjectRef_e0fc16e5-9adb-44c5-be53-5e7929ede3aa.xml, WdfDmaTransactionGetCurrentDmaTransferLength, WdfDmaTransactionGetCurrentDmaTransferLength method, kmdf.wdfdmatransactiongetcurrentdmatransferlength, wdf.wdfdmatransactiongetcurrentdmatransferlength, wdfdmatransaction/WdfDmaTransactionGetCurrentDmaTransferLength
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,9 +52,9 @@ The <b>WdfDmaTransactionGetCurrentDmaTransferLength</b> method returns the size 
 
 ## -parameters
 
-### -param DmaTransaction 
+### -param DmaTransaction [in]
 
-[in]
+
 A handle to a DMA transaction object that the driver obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfdmatransaction/nf-wdfdmatransaction-wdfdmatransactioncreate">WdfDmaTransactionCreate</a>.
 
 ## -returns

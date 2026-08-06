@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_CREATERENDERTARGETVIEW
 title: PFND3D10DDI_CREATERENDERTARGETVIEW (d3d10umddi.h)
 description: The CreateRenderTargetView function creates a render target view.
 old-location: display\createrendertargetview.htm
-ms.assetid: bf9fc732-5f9a-4fee-8ea0-19b140789463
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_CREATERENDERTARGETVIEW callback function"]
 ms.keywords: CreateRenderTargetView, CreateRenderTargetView callback function [Display Devices], PFND3D10DDI_CREATERENDERTARGETVIEW, PFND3D10DDI_CREATERENDERTARGETVIEW callback, UserModeDisplayDriverDx10_Functions_abef4fc8-0aac-40a9-9f45-de2160c347af.xml, d3d10umddi/CreateRenderTargetView, display.createrendertargetview
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CreateRenderTargetView
-product:
- - Windows
+ - PFND3D10DDI_CREATERENDERTARGETVIEW
 ---
 
 # PFND3D10DDI_CREATERENDERTARGETVIEW callback function
@@ -52,25 +49,25 @@ The <b>CreateRenderTargetView</b> function creates a render target view.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCreateRenderTargetView* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddiarg_createrendertargetview">D3D10DDIARG_CREATERENDERTARGETVIEW</a> structure that describes the parameters that the user-mode display driver uses to create a render target view.
 
-### -param Arg3
+### -param unnamedParam3
 
 *hRenderTargetView* [in]
 
 A handle to the driver's private data for the render target view.
 
-### -param Arg4
+### -param unnamedParam4
 
 *hRTRenderTargetView* [in]
 
@@ -101,3 +98,4 @@ The driver might run out of memory. Therefore, the driver can pass E_OUTOFMEMORY
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

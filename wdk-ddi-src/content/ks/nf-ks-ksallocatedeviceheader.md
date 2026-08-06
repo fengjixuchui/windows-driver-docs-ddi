@@ -4,7 +4,6 @@ title: KsAllocateDeviceHeader function (ks.h)
 description: The KsAllocateDeviceHeader function allocates and initializes the required device extension header.
 old-location: stream\ksallocatedeviceheader.htm
 tech.root: stream
-ms.assetid: 554f03bf-cacd-401b-aa34-fcfe1c31091e
 ms.date: 04/23/2018
 keywords: ["KsAllocateDeviceHeader function"]
 ms.keywords: KsAllocateDeviceHeader, KsAllocateDeviceHeader function [Streaming Media Devices], ks/KsAllocateDeviceHeader, ksfunc_715031de-7d7e-4e24-8e1c-072c7bc271fb.xml, stream.ksallocatedeviceheader
@@ -51,19 +50,19 @@ The **KsAllocateDeviceHeader** function allocates and initializes the required d
 
 ## -parameters
 
-### -param Header 
+### -param Header [out]
 
-[out]
+
 Points to the location in which to return a pointer to the initialized header.
 
-### -param ItemsCount 
+### -param ItemsCount [in]
 
-[in]
+
 Specifies the number of subitems in the *ItemsList*. This should be zero if an *ItemsList* is not passed.
 
-### -param ItemsList 
+### -param ItemsList [in, optional]
 
-[in, optional]
+
 Optional. Points to a KSOBJECT_CREATE_ITEM structure for each subitem. If there are no subitems, this value should be **NULL** and *ItemsCount* should be zero.
 
 ## -returns

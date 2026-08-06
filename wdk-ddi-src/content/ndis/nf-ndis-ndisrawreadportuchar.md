@@ -4,7 +4,6 @@ title: NdisRawReadPortUchar macro (ndis.h)
 description: NdisRawReadPortUchar reads a byte from a given I/O port on the NIC.
 old-location: netvista\ndisrawreadportuchar.htm
 tech.root: netvista
-ms.assetid: 5bda6d10-dd68-4385-b71c-8319e6ed0d4a
 ms.date: 05/02/2018
 keywords: ["NdisRawReadPortUchar macro"]
 ms.keywords: NdisRawReadPortUchar, NdisRawReadPortUchar macro [Network Drivers Starting with Windows Vista], miniport_port_raw_ref_e478dfdb-7037-4a9e-8da5-3bc38561094f.xml, ndis/NdisRawReadPortUchar, netvista.ndisrawreadportuchar
@@ -50,16 +49,16 @@ api_name:
 
 ## -parameters
 
-### -param Port 
+### -param Port [in]
 
-[in]
+
 Specifies the I/O port. This address falls in a range that was mapped during initialization with 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterioportrange">
      NdisMRegisterIoPortRange</a>.
 
-### -param Data 
+### -param Data [out]
 
-[out]
+
 Pointer to a caller-supplied variable in which this function returns a byte read in from the
      port.
 

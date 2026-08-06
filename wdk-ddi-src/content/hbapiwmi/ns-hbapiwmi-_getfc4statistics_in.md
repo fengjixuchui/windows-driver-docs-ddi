@@ -4,7 +4,6 @@ title: _GetFC4Statistics_IN (hbapiwmi.h)
 description: The GetFC4Statistics_IN structure is used to pass input parameter data to the GetFC4Statistics WMI method.
 old-location: storage\getfc4statistics_in.htm
 tech.root: storage
-ms.assetid: 10e3c823-97e3-47e9-8545-94cd186e5b59
 ms.date: 03/29/2018
 keywords: ["GetFC4Statistics_IN structure"]
 ms.keywords: "*PGetFC4Statistics_IN, GetFC4Statistics_IN, GetFC4Statistics_IN structure [Storage Devices], PGetFC4Statistics_IN, PGetFC4Statistics_IN structure pointer [Storage Devices], _GetFC4Statistics_IN, hbapiwmi/GetFC4Statistics_IN, hbapiwmi/PGetFC4Statistics_IN, storage.getfc4statistics_in, structs-Fibre_17ea3e0e-1cf9-4cf8-9128-1152e610847c.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - hbapiwmi.h
 api_name:
+ - _GetFC4Statistics_IN
+ - PGetFC4Statistics_IN
  - GetFC4Statistics_IN
 ---
 
@@ -73,3 +74,4 @@ For a definition of Nx_Port, see the T11 committee's specification for <i>Fibre 
 ## -see-also
 
 <a href="/windows-hardware/drivers/storage/getfc4statistics">GetFC4Statistics</a>
+

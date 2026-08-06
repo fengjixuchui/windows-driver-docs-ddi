@@ -1,8 +1,8 @@
 ---
 UID: NE:ufxbase._UFX_CLASS_FUNCTIONS
 title: _UFX_CLASS_FUNCTIONS (ufxbase.h)
-description: 
-ms.assetid: 0acaec8d-ed14-4acb-826b-8bd1552dadd6
+description: "Learn more about: _UFX_CLASS_FUNCTIONS enumeration"
+tech.root: usbref
 ms.date: 10/19/2018
 keywords: ["UFX_CLASS_FUNCTIONS enumeration"]
 ms.keywords: _UFX_CLASS_FUNCTIONS, UFX_CLASS_FUNCTIONS,
@@ -30,6 +30,7 @@ api_location:
  - ufxbase.h
 api_name:
  - _UFX_CLASS_FUNCTIONS
+ - UFX_CLASS_FUNCTIONS
 ---
 
 # _UFX_CLASS_FUNCTIONS enumeration

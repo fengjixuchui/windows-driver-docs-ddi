@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSystemObjects.GetNumberThreads
 title: IDebugSystemObjects::GetNumberThreads (dbgeng.h)
-description: The GetNumberThreads method returns the number of threads in the current process.
+description: The GetNumberThreads method returns the number of threads in the current process. This method belongs to the IDebugSystemObjects interface.
 old-location: debugger\getnumberthreads.htm
 tech.root: debugger
-ms.assetid: f56da2d0-4c4c-4302-a87b-c672dec25d9f
 ms.date: 05/03/2018
 keywords: ["IDebugSystemObjects::GetNumberThreads"]
 ms.keywords: GetNumberThreads, GetNumberThreads method [Windows Debugging], GetNumberThreads method [Windows Debugging],IDebugSystemObjects interface, GetNumberThreads method [Windows Debugging],IDebugSystemObjects2 interface, GetNumberThreads method [Windows Debugging],IDebugSystemObjects3 interface, GetNumberThreads method [Windows Debugging],IDebugSystemObjects4 interface, IDebugSystemObjects interface [Windows Debugging],GetNumberThreads method, IDebugSystemObjects.GetNumberThreads, IDebugSystemObjects2 interface [Windows Debugging],GetNumberThreads method, IDebugSystemObjects2::GetNumberThreads, IDebugSystemObjects3 interface [Windows Debugging],GetNumberThreads method, IDebugSystemObjects3::GetNumberThreads, IDebugSystemObjects4 interface [Windows Debugging],GetNumberThreads method, IDebugSystemObjects4::GetNumberThreads, IDebugSystemObjects::GetNumberThreads, IDebugSystemObjects_47d86764-4881-4178-97fa-d6c8732dbb1a.xml, dbgeng/IDebugSystemObjects2::GetNumberThreads, dbgeng/IDebugSystemObjects3::GetNumberThreads, dbgeng/IDebugSystemObjects4::GetNumberThreads, dbgeng/IDebugSystemObjects::GetNumberThreads, debugger.getnumberthreads
@@ -38,10 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSystemObjects.GetNumberThreads
- - IDebugSystemObjects2.GetNumberThreads
- - IDebugSystemObjects3.GetNumberThreads
- - IDebugSystemObjects4.GetNumberThreads
+ - IDebugSystemObjects::GetNumberThreads
 ---
 
 # IDebugSystemObjects::GetNumberThreads
@@ -53,9 +49,9 @@ The <b>GetNumberThreads</b> method returns the number of <a href="/windows-hardw
 
 ## -parameters
 
-### -param Number 
+### -param Number [out]
 
-[out]
+
 Receives the number of threads in the current process.
 
 ## -returns
@@ -87,3 +83,4 @@ In kernel-mode debugging, there is a virtual thread representing each processor.
 In user-mode debugging, the number of threads changes with the <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugeventcallbacks-createthread">IDebugEventCallbacks::CreateThread</a> and <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugeventcallbacks-exitthread">IDebugEventCallbacks::ExitThread</a> events.
 
 For more information about threads, see <a href="/windows-hardware/drivers/debugger/threads-and-processes">Threads and Processes</a>.
+

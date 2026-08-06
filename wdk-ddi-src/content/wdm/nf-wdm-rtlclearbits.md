@@ -4,7 +4,6 @@ title: RtlClearBits function (wdm.h)
 description: The RtlClearBits routine sets all bits in the specified range of bits in the bitmap to zero.
 old-location: kernel\rtlclearbits.htm
 tech.root: kernel
-ms.assetid: 2c332700-7778-4342-b99b-093142496624
 ms.date: 04/30/2018
 keywords: ["RtlClearBits function"]
 ms.keywords: RtlClearBits, RtlClearBits routine [Kernel-Mode Driver Architecture], k109_ee20da99-4d30-46dc-99c1-d3d8dfa92d08.xml, kernel.rtlclearbits, wdm/RtlClearBits
@@ -50,19 +49,19 @@ The <b>RtlClearBits</b> routine sets all bits in the specified range of bits in 
 
 ## -parameters
 
-### -param BitMapHeader 
+### -param BitMapHeader [in]
 
-[in]
-A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-### -param StartingIndex 
+A pointer to the <a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlinitializebitmap">RtlInitializeBitMap</a> routine.
 
-[in]
+### -param StartingIndex [in]
+
+
 The index of the first bit in the bit range that is to be cleared. If the bitmap contains N bits, the bits are numbered from 0 to N-1.
 
-### -param NumberToClear 
+### -param NumberToClear [in]
 
-[in]
+
 Specifies how many bits to clear. If the bitmap contains N bits, this parameter can be a value in the range 1 to (N - <i>StartingIndex</i>).
 
 ## -returns
@@ -79,7 +78,7 @@ Callers of <b>RtlClearBits</b> must be running at IRQL <= APC_LEVEL if the memor
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/kernel/eprocess">RTL_BITMAP</a>
+<a href="/windows-hardware/drivers/kernel/eprocess#rtl_bitmap">RTL_BITMAP</a>
 
 
 

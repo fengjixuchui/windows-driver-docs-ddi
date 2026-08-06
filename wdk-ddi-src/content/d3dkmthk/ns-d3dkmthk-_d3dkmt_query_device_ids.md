@@ -1,8 +1,7 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_QUERY_DEVICE_IDS
-title: _D3DKMT_QUERY_DEVICE_IDS (d3dkmthk.h)
+title: D3DKMT_QUERY_DEVICE_IDS (d3dkmthk.h)
 description: Used to query for device IDs.
-ms.assetid: 967c231d-1797-424b-94e7-947b7843babf
 ms.date: 10/19/2018
 keywords: ["D3DKMT_QUERY_DEVICE_IDS structure"]
 ms.keywords: _D3DKMT_QUERY_DEVICE_IDS, D3DKMT_QUERY_DEVICE_IDS,
@@ -35,29 +34,27 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_QUERY_DEVICE_IDS
+ - D3DKMT_QUERY_DEVICE_IDS
 dev_langs:
  - c++
 ---
 
-# _D3DKMT_QUERY_DEVICE_IDS structure
-
+# D3DKMT_QUERY_DEVICE_IDS structure
 
 ## -description
 
-Used to query for device IDs.
+The **D3DKMT_QUERY_DEVICE_IDS** structure is used to query for device IDs.
 
 ## -struct-fields
 
 ### -field PhysicalAdapterIndex
 
-The physical adapter index in the LDA (linked display adapter) chain.
+[in] The physical adapter index in the LDA (linked display adapter) chain.
 
 ### -field DeviceIds
 
- 
-The device IDs from the query.
-
-## -remarks
+[out] A [**D3DKMT_DEVICE_IDS**](ns-d3dkmthk-_d3dkmt_device_ids.md) structure that contains IDs associated with the device.
 
 ## -see-also
 
+[**D3DKMTQueryAdapterInfo**](nf-d3dkmthk-d3dkmtqueryadapterinfo.md)

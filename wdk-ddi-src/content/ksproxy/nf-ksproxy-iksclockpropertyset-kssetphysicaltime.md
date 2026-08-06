@@ -4,7 +4,6 @@ title: IKsClockPropertySet::KsSetPhysicalTime (ksproxy.h)
 description: The KsSetPhysicalTime method sets the physical time on the underlying clock.
 old-location: stream\iksclockpropertyset_kssetphysicaltime.htm
 tech.root: stream
-ms.assetid: 2f8eb011-1fe1-40f6-b833-50d3e853bffd
 ms.date: 04/23/2018
 keywords: ["IKsClockPropertySet::KsSetPhysicalTime"]
 ms.keywords: IKsClockPropertySet interface [Streaming Media Devices],KsSetPhysicalTime method, IKsClockPropertySet.KsSetPhysicalTime, IKsClockPropertySet::KsSetPhysicalTime, KsSetPhysicalTime, KsSetPhysicalTime method [Streaming Media Devices], KsSetPhysicalTime method [Streaming Media Devices],IKsClockPropertySet interface, ksproxy/IKsClockPropertySet::KsSetPhysicalTime, ksproxy_1cebc4eb-efb8-4ec6-97f4-e34fc978fb2f.xml, stream.iksclockpropertyset_kssetphysicaltime
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ksproxy.h
 api_name:
- - IKsClockPropertySet.KsSetPhysicalTime
+ - IKsClockPropertySet::KsSetPhysicalTime
 ---
 
 # IKsClockPropertySet::KsSetPhysicalTime
@@ -50,9 +49,9 @@ The <b>KsSetPhysicalTime</b> method sets the physical time on the underlying clo
 
 ## -parameters
 
-### -param Time 
+### -param Time [in]
 
-[in]
+
 Physical time to which to set the underlying clock.
 
 ## -returns
@@ -72,3 +71,4 @@ The proxy uses the <a href="/windows-hardware/drivers/stream/ksproperty-clock-ph
 
 
 <a href="/windows-hardware/drivers/stream/ksproperty-clock-physicaltime">KSPROPERTY_CLOCK_PHYSICALTIME</a>
+

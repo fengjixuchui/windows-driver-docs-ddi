@@ -4,7 +4,6 @@ title: UcxControllerCreate function (ucxcontroller.h)
 description: Creates a host controller object.
 old-location: buses\_ucxcontrollercreate.htm
 tech.root: usbref
-ms.assetid: 29A1697E-CC42-468B-B97A-A8182DA13EE9
 ms.date: 05/07/2018
 keywords: ["UcxControllerCreate function"]
 ms.keywords: UcxControllerCreate, UcxControllerCreate method [Buses], buses._ucxcontrollercreate, ucxcontroller/UcxControllerCreate
@@ -51,25 +50,25 @@ Creates a host controller object.
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to the framework device object that the client driver retrieved in the previous call to <a href="/windows-hardware/drivers/ddi/wdfdevice/nf-wdfdevice-wdfdevicecreate">WdfDeviceCreate</a>.
 
-### -param Config 
+### -param Config [in]
 
-[in]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/ucxcontroller/ns-ucxcontroller-_ucx_controller_config">UCX_CONTROLLER_CONFIG</a> structure that the client driver initialized by calling UCX_CONTROLLER_CONFIG_INIT. The structure contains configuration
         information required to create the object.
 
-### -param Attributes 
+### -param Attributes [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that specifies attributes for the controller object.
 
-### -param Controller 
+### -param Controller [out]
 
-[out]
+
 A pointer to a variable that receives a handle to the new controller object.
 
 ## -returns

@@ -1,11 +1,9 @@
 ---
 UID: NE:printerextension.tagPrintSchemaSelectionType
-title: tagPrintSchemaSelectionType (printerextension.h)
-description: The PrintSchemaSelectionType enumeration identifies how a Feature’s options should be selected. This property appears only in a PrintCapabilities document.
-old-location: print\printschemaselectiontype.htm
+title: PrintSchemaSelectionType (printerextension.h)
+description: The PrintSchemaSelectionType enumeration identifies how a Feature's options should be selected. This property appears only in a PrintCapabilities document.
 tech.root: print
-ms.assetid: 30BB7A95-512C-418B-B496-47832DD4C0BC
-ms.date: 04/20/2018
+ms.date: 08/01/2022
 keywords: ["tagPrintSchemaSelectionType enumeration"]
 ms.keywords: PrintSchemaSelectionType, PrintSchemaSelectionType enumeration [Print Devices], PrintSchemaSelectionType_PickMany, PrintSchemaSelectionType_PickOne, print.printschemaselectiontype, printerextension/PrintSchemaSelectionType, printerextension/PrintSchemaSelectionType_PickMany, printerextension/PrintSchemaSelectionType_PickOne, tagPrintSchemaSelectionType
 req.header: printerextension.h
@@ -40,15 +38,13 @@ api_type:
 api_location:
  - Printerextension.h
 api_name:
+ - tagPrintSchemaSelectionType
  - PrintSchemaSelectionType
 ---
 
-# tagPrintSchemaSelectionType enumeration
-
-
 ## -description
 
-The PrintSchemaSelectionType enumeration identifies how a Feature’s options should be selected. This property appears only in a PrintCapabilities document.
+The **PrintSchemaSelectionType** enumeration identifies how a feature's options should be selected. This property appears only in a **PrintCapabilities** document.
 
 ## -enum-fields
 
@@ -59,4 +55,3 @@ Select one.
 ### -field PrintSchemaSelectionType_PickMany
 
 Select many.
-

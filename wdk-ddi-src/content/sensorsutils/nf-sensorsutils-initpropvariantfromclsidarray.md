@@ -2,7 +2,6 @@
 UID: NF:sensorsutils.InitPropVariantFromCLSIDArray
 title: InitPropVariantFromCLSIDArray function (sensorsutils.h)
 description: This routine initializes a PROPVARIANT from a given array of GUIDs.
-ms.assetid: 6f80ab97-7c84-40f0-8067-e748e4f36bbe
 ms.date: 08/08/2018
 keywords: ["InitPropVariantFromCLSIDArray function"]
 tech.root: sensors
@@ -48,17 +47,17 @@ This routine initializes a PROPVARIANT from a given array of GUIDs. The routine 
 
 ## -parameters
 
-### -param members
+### -param members [in]
 
-[in] Array of GUIDs to initialize PROPVARIANT value.
+Array of GUIDs to initialize PROPVARIANT value.
 
-### -param size
+### -param size [in]
 
-[in] Size of array of GUIDs being sent in.
+Size of array of GUIDs being sent in.
 
-### -param ppropvar
+### -param ppropvar [out]
 
-[out] Pointer to a PROPVARIANT.
+Pointer to a PROPVARIANT.
 
 ## -returns
 

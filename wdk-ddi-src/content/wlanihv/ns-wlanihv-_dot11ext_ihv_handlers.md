@@ -1,10 +1,9 @@
 ---
 UID: NS:wlanihv._DOT11EXT_IHV_HANDLERS
 title: _DOT11EXT_IHV_HANDLERS (wlanihv.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11EXT_IHV_HANDLERS structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11ext_ihv_handlers.htm
 tech.root: netvista
-ms.assetid: 6dacd330-45f1-46f8-b2bf-2006c89f664f
 ms.date: 02/16/2018
 keywords: ["DOT11EXT_IHV_HANDLERS structure"]
 ms.keywords: "*PDOT11EXT_IHV_HANDLERS, DOT11EXT_IHV_HANDLERS, DOT11EXT_IHV_HANDLERS structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_e072dcd6-e41c-4c08-b958-9302f62f02c1.xml, PDOT11EXT_IHV_HANDLERS, PDOT11EXT_IHV_HANDLERS structure pointer [Network Drivers Starting with Windows Vista], _DOT11EXT_IHV_HANDLERS, netvista.dot11ext_ihv_handlers, wlanihv/DOT11EXT_IHV_HANDLERS, wlanihv/PDOT11EXT_IHV_HANDLERS"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: DOT11EXT_IHV_HANDLERS, *PDOT11EXT_IHV_HANDLERS
-req.product: Windows 10 or later.
 f1_keywords:
  - _DOT11EXT_IHV_HANDLERS
  - wlanihv/_DOT11EXT_IHV_HANDLERS
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wlanihv.h
 api_name:
+ - _DOT11EXT_IHV_HANDLERS
+ - PDOT11EXT_IHV_HANDLERS
  - DOT11EXT_IHV_HANDLERS
 ---
 
@@ -318,3 +318,4 @@ All of the function pointers are required and must not be set to <b>NULL</b>.
 
 <a href="..\wlanihv\nc-wlanihv-dot11extihv_send_packet_completion.md">
    Dot11ExtIhvSendPacketCompletion</a>
+

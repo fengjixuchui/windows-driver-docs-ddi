@@ -2,17 +2,15 @@
 UID: NF:printerextension.IPrintSchemaParameterDefinition.get_UnitType
 title: IPrintSchemaParameterDefinition::get_UnitType (printerextension.h)
 description: The UnitType property gets the unit type.
-old-location: print\_iprintschemaparameterdefinition_unittype.htm
 tech.root: print
-ms.assetid: 7ED1D02B-07DB-409B-AABF-4ED1D28B3C43
-ms.date: 04/20/2018
+ms.date: 08/03/2022
 keywords: ["IPrintSchemaParameterDefinition::get_UnitType"]
 ms.keywords: IPrintSchemaParameterDefinition interface [Print Devices],UnitType property, IPrintSchemaParameterDefinition.UnitType, IPrintSchemaParameterDefinition.get_UnitType, IPrintSchemaParameterDefinition::UnitType, IPrintSchemaParameterDefinition::get_UnitType, UnitType property [Print Devices], UnitType property [Print Devices],IPrintSchemaParameterDefinition interface, get_UnitType, print._iprintschemaparameterdefinition_unittype, printerextension/IPrintSchemaParameterDefinition::UnitType, printerextension/IPrintSchemaParameterDefinition::get_UnitType
 req.header: printerextension.h
 req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Windows 8.1
-req.target-min-winversvr: Windows Server 2012 R2
+req.target-min-winverclnt: Windows 8.1
+req.target-min-winversvr: Windows Server 2012 R2
 req.kmdf-ver: 
 req.umdf-ver: 
 req.ddi-compliance: 
@@ -38,21 +36,25 @@ api_type:
 api_location:
  - Printerextension.h
 api_name:
- - IPrintSchemaParameterDefinition.UnitType
- - IPrintSchemaParameterDefinition.get_UnitType
+ - IPrintSchemaParameterDefinition::get_UnitType
 ---
-
-# IPrintSchemaParameterDefinition::get_UnitType
-
 
 ## -description
 
-The <b>UnitType</b> property gets the unit type.
+The **UnitType** property gets the unit type.
 
 This property is read-only.
 
 ## -parameters
 
+### -param pbstrUnitType
+
+Defines the **BSTR** parameter *pbstrUnitType*.
+
+## -returns
+
+Returns an **HRESULT** value. If the property call was not successful, it returns the appropriate **HRESULT** error code.
+
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/printerextension/nn-printerextension-iprintschemaparameterdefinition">IPrintSchemaParameterDefinition</a>
+[IPrintSchemaParameterDefinition](./nn-printerextension-iprintschemaparameterdefinition.md)

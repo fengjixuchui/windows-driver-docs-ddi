@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostModule2.GetVersion
 title: IDebugHostModule2::GetVersion (dbgmodel.h)
-description: The GetVersion method returns version information about the module (assuming that such information can successfully be read out of the headers).
-ms.assetid: a4cfe0b4-ac39-4b19-9f3a-e008075b7923
+description: "The IDebugHostModule2::GetVersion method, when called on a module, gets module version information from the module headers."
 ms.date: 09/18/2018
 keywords: ["IDebugHostModule2::GetVersion"]
 ms.keywords: IDebugHostModule2::GetVersion, GetVersion, IDebugHostModule2.GetVersion, IDebugHostModule2::GetVersion, IDebugHostModule2.GetVersion
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostModule2.GetVersion
+ - IDebugHostModule2::GetVersion
 ---
 
 # IDebugHostModule2::GetVersion
@@ -65,7 +64,7 @@ This method returns HRESULT which indicates success or failure.
 **Sample Code**
 
 ```cpp
-ComPtr<IDebugHostModule> spModule; /* get a module (see FindModuleByName) */
+ComPtr<IDebugHostModule2> spModule; /* get a module (see FindModuleByName) */
 
 ULONG64 fileVersion;
 ULONG64 productVersion;

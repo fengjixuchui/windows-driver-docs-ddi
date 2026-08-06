@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddstor._DEVICE_STORAGE_RANGE_ATTRIBUTES
 title: DEVICE_STORAGE_RANGE_ATTRIBUTES
-description: 
+description: "Learn more about: DEVICE_STORAGE_RANGE_ATTRIBUTES structure"
 tech.root: storage
-ms.assetid: bde6dbc5-b518-47ed-990c-9bcbf0c0d803
-ms.date: 08/23/2019
+ms.date: 08/18/2022
 keywords: ["DEVICE_STORAGE_RANGE_ATTRIBUTES structure"]
 ms.keywords: DEVICE_STORAGE_RANGE_ATTRIBUTES, DEVICE_STORAGE_RANGE_ATTRIBUTES, *PDEVICE_STORAGE_RANGE_ATTRIBUTES,
 req.header: ntddstor.h
@@ -28,9 +27,9 @@ api_type:
 api_location:
  - ntddstor.h
 api_name:
+ - _DEVICE_STORAGE_RANGE_ATTRIBUTES
+ - PDEVICE_STORAGE_RANGE_ATTRIBUTES
  - DEVICE_STORAGE_RANGE_ATTRIBUTES
-product:
- - Windows
 f1_keywords:
  - _DEVICE_STORAGE_RANGE_ATTRIBUTES
  - ntddstor/_DEVICE_STORAGE_RANGE_ATTRIBUTES
@@ -42,10 +41,9 @@ f1_keywords:
 
 # DEVICE_STORAGE_RANGE_ATTRIBUTES structure
 
-
 ## -description
 
-The DEVICE_STORAGE_RANGE_ATTRIBUTES structure contains the media error status for a logical block range.
+The **DEVICE_STORAGE_RANGE_ATTRIBUTES** structure contains the media error status for a logical block range.
 
 ## -struct-fields
 
@@ -53,11 +51,15 @@ The DEVICE_STORAGE_RANGE_ATTRIBUTES structure contains the media error status fo
 
 Length of the logical block range, in bytes, that the error status in *IsRangeBad* applies to.
 
-### -field AllFlags
+### -field DUMMYUNIONNAME
+
+### -field DUMMYUNIONNAME.AllFlags
 
 Do not use.
 
-### -field IsRangeBad
+### -field DUMMYUNIONNAME.DUMMYSTRUCTNAME
+
+### -field DUMMYUNIONNAME.DUMMYSTRUCTNAME.IsRangeBad
 
 Indicates whether the logical block range contains a media error. Set to 1 when the logical block range contains an error; otherwise, set to 0.
 

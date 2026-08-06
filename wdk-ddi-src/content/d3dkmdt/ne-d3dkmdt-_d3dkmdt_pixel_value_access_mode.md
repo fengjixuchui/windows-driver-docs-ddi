@@ -4,14 +4,13 @@ title: _D3DKMDT_PIXEL_VALUE_ACCESS_MODE (d3dkmdt.h)
 description: The D3DKMDT_PIXEL_VALUE_ACCESS_MODE enumeration is used to indicate the way color values or palette indices are stored in the primary surface of a video present source.
 old-location: display\d3dkmdt_pixel_value_access_mode.htm
 tech.root: display
-ms.assetid: da4074ac-309d-46b9-b630-79d73ed73f36
 ms.date: 05/10/2018
 keywords: ["D3DKMDT_PIXEL_VALUE_ACCESS_MODE enumeration"]
 ms.keywords: D3DKMDT_PIXEL_VALUE_ACCESS_MODE, D3DKMDT_PIXEL_VALUE_ACCESS_MODE enumeration [Display Devices], D3DKMDT_PVAM_DIRECT, D3DKMDT_PVAM_PRESETPALETTE, D3DKMDT_PVAM_SETTABLEPALETTE, D3DKMDT_PVAM_UNINITIALIZED, DmEnums_ac8b4715-9a7c-4698-8f57-e6125f90f75b.xml, _D3DKMDT_PIXEL_VALUE_ACCESS_MODE, d3dkmdt/D3DKMDT_PIXEL_VALUE_ACCESS_MODE, d3dkmdt/D3DKMDT_PVAM_DIRECT, d3dkmdt/D3DKMDT_PVAM_PRESETPALETTE, d3dkmdt/D3DKMDT_PVAM_SETTABLEPALETTE, d3dkmdt/D3DKMDT_PVAM_UNINITIALIZED, display.d3dkmdt_pixel_value_access_mode
 req.header: d3dkmdt.h
-req.include-header: D3dkmdt.h
+req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmdt.h
 api_name:
+ - _D3DKMDT_PIXEL_VALUE_ACCESS_MODE
  - D3DKMDT_PIXEL_VALUE_ACCESS_MODE
 ---
 
@@ -75,3 +75,4 @@ The <b>Format.Graphics</b> member of the <a href="/windows-hardware/drivers/ddi/
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/index">VidPn Source Mode Set Interface</a>
+

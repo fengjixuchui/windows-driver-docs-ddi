@@ -4,7 +4,6 @@ title: _NDK_QP_DISPATCH (ndkpi.h)
 description: The NDK_QP_DISPATCH structure specifies dispatch function entry points for the NDK queue pair (QP) object.
 old-location: netvista\ndk_qp_dispatch.htm
 tech.root: netvista
-ms.assetid: C2B50C94-693A-48A2-8458-5722F652C933
 ms.date: 05/02/2018
 keywords: ["NDK_QP_DISPATCH structure"]
 ms.keywords: NDK_QP_DISPATCH, NDK_QP_DISPATCH structure [Network Drivers Starting with Windows Vista], _NDK_QP_DISPATCH, ndkpi/NDK_QP_DISPATCH, netvista.ndk_qp_dispatch
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
+ - _NDK_QP_DISPATCH
  - NDK_QP_DISPATCH
 ---
 
@@ -145,3 +145,4 @@ The <b>NDK_QP_DISPATCH</b> structure is used in the <a href="/windows-hardware/d
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_qp">NDK_QP</a>
+

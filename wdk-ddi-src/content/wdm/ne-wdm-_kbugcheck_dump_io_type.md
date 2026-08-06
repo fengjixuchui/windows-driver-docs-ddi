@@ -4,7 +4,6 @@ title: _KBUGCHECK_DUMP_IO_TYPE (wdm.h)
 description: The KBUGCHECK_DUMP_IO_TYPE enumeration type identifies the type of a section of data within a crash dump file.
 old-location: kernel\kbugcheck_dump_io_type.htm
 tech.root: kernel
-ms.assetid: 928be338-a588-4535-8395-229ec6f3ecb7
 ms.date: 05/02/2019
 keywords: ["KBUGCHECK_DUMP_IO_TYPE enumeration"]
 ms.keywords: KBUGCHECK_DUMP_IO_TYPE, KBUGCHECK_DUMP_IO_TYPE enumeration [Kernel-Mode Driver Architecture], KbDumpIoBody, KbDumpIoComplete, KbDumpIoHeader, KbDumpIoInvalid, KbDumpIoSecondaryData, _KBUGCHECK_DUMP_IO_TYPE, kernel.kbugcheck_dump_io_type, sysenum_e6f9d577-edd8-43f0-9cc5-33b88e5237aa.xml, wdm/KBUGCHECK_DUMP_IO_TYPE, wdm/KbDumpIoBody, wdm/KbDumpIoComplete, wdm/KbDumpIoHeader, wdm/KbDumpIoInvalid, wdm/KbDumpIoSecondaryData
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _KBUGCHECK_DUMP_IO_TYPE
  - KBUGCHECK_DUMP_IO_TYPE
 ---
 
@@ -83,3 +83,4 @@ Specifies that the crash dump data has been completely written.
 <a href="/windows-hardware/drivers/kernel/writing-a-bug-check-callback-routine">Writing a Bug Check Callback Routine</a>
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_kbugcheck_dump_io">KBUGCHECK_DUMP_IO</a>
+

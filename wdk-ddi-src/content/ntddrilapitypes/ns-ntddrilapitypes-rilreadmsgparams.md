@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILREADMSGPARAMS
 title: RILREADMSGPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILREADMSGPARAMS structure for internal use only. Don't use the RILREADMSGPARAMS structure in your code."
 old-location: netvista\rilreadmsgparams.htm
 tech.root: netvista
-ms.assetid: feeabcd2-659f-4a87-abdd-cfbf89589c48
 ms.date: 05/02/2018
 keywords: ["RILREADMSGPARAMS structure"]
 ms.keywords: "*LPRILREADMSGPARAMS, RILREADMSGPARAMS, RILREADMSGPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilreadmsgparams, ntddrilapitypes/RILREADMSGPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILREADMSGPARAMS
+ - LPRILREADMSGPARAMS
 ---
 
 # RILREADMSGPARAMS structure (ntddrilapitypes.h)

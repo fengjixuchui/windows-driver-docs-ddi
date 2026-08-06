@@ -4,7 +4,6 @@ title: IWDTFDeviceDepot2::QuerySingle (wdtf.h)
 description: Returns a single target device from the DeviceDepot.
 old-location: dtf\iwdtfdevicedepot2_querysingle.htm
 tech.root: dtf
-ms.assetid: 5e471ede-3607-4d4d-a3f0-5396cc62c6c5
 ms.date: 04/04/2018
 keywords: ["IWDTFDeviceDepot2::QuerySingle"]
 ms.keywords: IWDTFDeviceDepot2 interface [Windows Device Testing Framework],QuerySingle method, IWDTFDeviceDepot2.QuerySingle, IWDTFDeviceDepot2::QuerySingle, Microsoft.WDTF.IWDTFDeviceDepot2.QuerySingle, Microsoft::WDTF::IWDTFDeviceDepot2::QuerySingle, QuerySingle, QuerySingle method [Windows Device Testing Framework], QuerySingle method [Windows Device Testing Framework],IWDTFDeviceDepot2 interface, dtf.iwdtfdevicedepot2_querysingle, wdtf/IWDTFDeviceDepot2::QuerySingle
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFDeviceDepot2.QuerySingle
+ - IWDTFDeviceDepot2::QuerySingle
 ---
 
 # IWDTFDeviceDepot2::QuerySingle
@@ -50,14 +49,14 @@ Returns a single target device from the DeviceDepot.
 
 ## -parameters
 
-### -param SDEL 
+### -param SDEL [in]
 
-[in]
+
 The SDEL query string.
 
-### -param ppTarget 
+### -param ppTarget [out, retval]
 
-[out, retval]
+
 The requested device.
 
 ## -returns
@@ -67,3 +66,4 @@ If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtfdevicedepot2">IWDTFDeviceDepot2</a>
+

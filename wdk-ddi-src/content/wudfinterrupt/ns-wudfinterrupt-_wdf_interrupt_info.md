@@ -1,10 +1,9 @@
 ---
 UID: NS:wudfinterrupt._WDF_INTERRUPT_INFO
 title: _WDF_INTERRUPT_INFO (wudfinterrupt.h)
-description: The WDF_INTERRUPT_INFO structure contains information about a device's interrupt resource.
+description: Learn how the WDF_INTERRUPT_INFO structure contains information about a device's interrupt resource.
 old-location: wdf\wdf_interrupt_info_umdf.htm
 tech.root: wdf
-ms.assetid: 37B997D1-6F5D-4685-BF46-2C33685C157F
 ms.date: 02/26/2018
 keywords: ["WDF_INTERRUPT_INFO structure"]
 ms.keywords: "*PWDF_INTERRUPT_INFO, PWDF_INTERRUPT_INFO, PWDF_INTERRUPT_INFO structure pointer, WDF_INTERRUPT_INFO, WDF_INTERRUPT_INFO structure, _WDF_INTERRUPT_INFO, umdf.wdf_interrupt_info, wdf.wdf_interrupt_info_umdf, wudfinterrupt/PWDF_INTERRUPT_INFO, wudfinterrupt/WDF_INTERRUPT_INFO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wudfinterrupt.h
 api_name:
+ - _WDF_INTERRUPT_INFO
+ - PWDF_INTERRUPT_INFO
  - WDF_INTERRUPT_INFO
 ---
 
@@ -128,3 +129,4 @@ The <a href="/windows-hardware/drivers/ddi/wudfinterrupt/ns-wudfinterrupt-_wdf_i
 
 
 <a href="/windows-hardware/drivers/ddi/wudfinterrupt/ne-wudfinterrupt-_wdf_interrupt_polarity">WDF_INTERRUPT_POLARITY</a>
+

@@ -1,12 +1,9 @@
 ---
 UID: NS:d3dkmthk._D3DKMT_CREATEHWQUEUE
-title: _D3DKMT_CREATEHWQUEUE (d3dkmthk.h)
-description: Structure passed to PFND3DKMT_CREATEHWQUEUE when creating a new hardware queue.
-old-location: display\d3dkmt_createhwqueue.htm
-ms.assetid: DBD99353-4798-4540-89DB-EA08521B276E
-ms.date: 03/24/2020
+title: D3DKMT_CREATEHWQUEUE (d3dkmthk.h)
+description: Learn more about the D3DKMT_CREATEHWQUEUE structure.
+ms.date: 03/21/2024
 keywords: ["D3DKMT_CREATEHWQUEUE structure"]
-ms.keywords: D3DKMT_CREATEHWQUEUE, D3DKMT_CREATEHWQUEUE structure [Display Devices], _D3DKMT_CREATEHWQUEUE, d3dkmthk/D3DKMT_CREATEHWQUEUE, display.d3dkmt_createhwqueue
 req.header: d3dkmthk.h
 req.include-header: 
 req.target-type: Windows
@@ -40,49 +37,49 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_CREATEHWQUEUE
  - D3DKMT_CREATEHWQUEUE
 ---
 
-# _D3DKMT_CREATEHWQUEUE structure
-
+# D3DKMT_CREATEHWQUEUE structure
 
 ## -description
 
-Structure passed to [**PFND3DKMT_CREATEHWQUEUE**](nc-d3dkmthk-pfnd3dkmt_createhwqueue.md) when creating a new hardware queue.
+**D3DKMT_CREATEHWQUEUE** is the structure passed to [**D3DKMTCreateHwQueue**](nf-d3dkmthk-d3dkmtcreatehwqueue.md) and [**PFND3DKMT_CREATEHWQUEUE**](nc-d3dkmthk-pfnd3dkmt_createhwqueue.md) when creating a new hardware queue.
 
 ## -struct-fields
 
 ### -field hHwContext
 
-Handle to the hardware context that the queue belongs to.
+[in] Handle to the hardware context that the queue belongs to.
 
 ### -field Flags
 
-A bit field of [**D3DDDI_CREATEHWQUEUEFLAGS**](..\d3dukmdt\ns-d3dukmdt-_d3dddi_createhwqueueflags.md) values specifying the hardware queue creation flags.
+[in] A bit field of [**D3DDDI_CREATEHWQUEUEFLAGS**](..\d3dukmdt\ns-d3dukmdt-_d3dddi_createhwqueueflags.md) values specifying the hardware queue creation flags.
 
 ### -field PrivateDriverDataSize
 
-Size of private driver data.
+[in] Size of private driver data, in bytes.
 
 ### -field pPrivateDriverData
 
-Private driver data.
+[in/out] Pointer to the private driver data.
 
 ### -field hHwQueue
 
-Handle to the hardware queue object to submit work to.
+[out] Handle to the created hardware queue object to submit work to.
 
 ### -field hHwQueueProgressFence
 
-Handle to the monitored fence object used to monitor the queue progress.
+[out] Handle to the monitored fence object used to monitor the queue progress.
 
 ### -field HwQueueProgressFenceCPUVirtualAddress
 
-Read-only mapping of the queue progress fence value for the CPU.
+[out] Read-only mapping of the queue progress fence value for the CPU.
 
 ### -field HwQueueProgressFenceGPUVirtualAddress
 
-Read/write mapping of the queue progress fence value for the GPU.
+[out] Read/write mapping of the queue progress fence value for the GPU.
 
 ## -see-also
 

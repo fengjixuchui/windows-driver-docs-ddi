@@ -3,7 +3,6 @@ UID: NF:ring.NetRingGetPacketAtIndex
 title: NetRingGetPacketAtIndex function (ring.h)
 description: The NetRingGetPacketAtIndex function retrieves a packet from a net ring.
 tech.root: netvista
-ms.assetid: ed780394-3234-4900-a008-b856e188ce2b
 ms.date: 09/25/2019
 keywords: ["NetRingGetPacketAtIndex function"]
 ms.keywords: NetRingGetPacketAtIndex
@@ -13,7 +12,7 @@ req.target-type:
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -37,8 +36,6 @@ api_location:
  - ring.h
 api_name:
  - NetRingGetPacketAtIndex
-product:
- - Windows
 ---
 
 # NetRingGetPacketAtIndex function

@@ -4,7 +4,6 @@ title: KsCopyObjectBagItems function (ks.h)
 description: The KsCopyObjectBagItems function copies all items from one object bag into another.
 old-location: stream\kscopyobjectbagitems.htm
 tech.root: stream
-ms.assetid: 5b3ee4f1-5c5a-413f-b927-96293cc87e98
 ms.date: 04/23/2018
 keywords: ["KsCopyObjectBagItems function"]
 ms.keywords: KsCopyObjectBagItems, KsCopyObjectBagItems function [Streaming Media Devices], avfunc_26fe6218-6e9e-4a1a-93c6-f8f2ca10abbb.xml, ks/KsCopyObjectBagItems, stream.kscopyobjectbagitems
@@ -51,14 +50,14 @@ The<b> KsCopyObjectBagItems </b>function copies all items from one object bag in
 
 ## -parameters
 
-### -param ObjectBagDestination 
+### -param ObjectBagDestination [in]
 
-[in]
+
 The KSOBJECT_BAG (equivalent to type PVOID) into which to copy items.
 
-### -param ObjectBagSource 
+### -param ObjectBagSource [in]
 
-[in]
+
 The KSOBJECT_BAG from which items are copied to <i>ObjectBagDestination.</i>
 
 ## -returns

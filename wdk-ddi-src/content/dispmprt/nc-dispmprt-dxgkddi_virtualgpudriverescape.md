@@ -3,7 +3,6 @@ UID: NC:dispmprt.DXGKDDI_VIRTUALGPUDRIVERESCAPE
 title: DXGKDDI_VIRTUALGPUDRIVERESCAPE
 description: This function passes information between a user mode emulation DLL and the kernel mode driver.
 tech.root: display
-ms.assetid: ce03171f-a413-409d-8a8e-b80bd7592025
 ms.date: 04/04/2019
 keywords: ["DXGKDDI_VIRTUALGPUDRIVERESCAPE callback function"]
 req.header: dispmprt.h
@@ -36,8 +35,6 @@ api_location:
  - dispmprt.h
 api_name:
  - DXGKDDI_VIRTUALGPUDRIVERESCAPE
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,13 +48,13 @@ This function passes information between a user mode emulation DLL and the kerne
 
 ## -parameters
 
-### -param Context
+### -param Context [in]
 
-[in] The miniport context that is returned by the driver in the [DXGKDDI_GPU_PARTITION_INTERFACE](ns-dispmprt-_dxgkddi_gpu_partition_interface.md) structure.
+The miniport context that is returned by the driver in the [DXGKDDI_GPU_PARTITION_INTERFACE](ns-dispmprt-_dxgkddi_gpu_partition_interface.md) structure.
 
-### -param pArgs
+### -param pArgs [in, out]
 
-[in, out] A pointer to a DXGK_VIRTUALGPUDRIVERESCAPE structure.
+A pointer to a DXGK_VIRTUALGPUDRIVERESCAPE structure.
 
 ## -returns
 

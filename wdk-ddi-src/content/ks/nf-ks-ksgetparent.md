@@ -4,7 +4,6 @@ title: KsGetParent function (ks.h)
 description: The KsGetParent function acquires the parent of the given object.
 old-location: stream\ksgetparent.htm
 tech.root: stream
-ms.assetid: d7804745-295f-491a-80f4-84441598bbf4
 ms.date: 04/23/2018
 keywords: ["KsGetParent function"]
 ms.keywords: KsGetParent, KsGetParent function [Streaming Media Devices], avfunc_da3c1932-98b1-4f29-8b5a-4663077759e9.xml, ks/KsGetParent, stream.ksgetparent
@@ -51,9 +50,9 @@ The<b> KsGetParent</b> function acquires the parent of the given object.
 
 ## -parameters
 
-### -param Object 
+### -param Object [in]
 
-[in]
+
 A pointer to the AVStream object for which to find the parent. Must be a pointer to one of the following types: <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksdevice">KSDEVICE</a>, <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilterfactory">KSFILTERFACTORY</a>, <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter">KSFILTER</a>, or <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a>. Callers must manually typecast the object to a PVOID.
 
 ## -returns

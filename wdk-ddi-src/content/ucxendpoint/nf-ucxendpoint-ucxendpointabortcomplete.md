@@ -4,7 +4,6 @@ title: UcxEndpointAbortComplete function (ucxendpoint.h)
 description: Notifies UCX that a transfer abort operation has been completed on the specified endpoint object.
 old-location: buses\_ucxendpointabortcomplete.htm
 tech.root: usbref
-ms.assetid: 754BCC74-1EC2-429E-A711-E8958665A5A8
 ms.date: 05/07/2018
 keywords: ["UcxEndpointAbortComplete function"]
 ms.keywords: UcxEndpointAbortComplete, UcxEndpointAbortComplete method [Buses], buses._ucxendpointabortcomplete, ucxendpoint/UcxEndpointAbortComplete
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ Notifies UCX that a transfer abort operation has been completed  on the specifie
 
 ## -parameters
 
-### -param Endpoint 
+### -param Endpoint [in]
 
-[in]
+
 A handle to the endpoint object. The client driver retrieved the handle in a previous call to <a href="/windows-hardware/drivers/ddi/ucxendpoint/nf-ucxendpoint-ucxendpointcreate">UcxEndpointCreate</a>.
 
 ## -see-also

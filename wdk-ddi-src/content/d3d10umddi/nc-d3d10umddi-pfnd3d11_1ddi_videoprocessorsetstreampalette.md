@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMPALETTE
 title: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMPALETTE (d3d10umddi.h)
 description: Sets the color-palette entries for an input stream on the video processor.
 old-location: display\videoprocessorsetstreampalette.htm
-ms.assetid: a655baef-4f99-45a1-ac78-5f54d2f4f1ab
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMPALETTE callback function"]
 ms.keywords: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMPALETTE, PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMPALETTE callback, d3d10umddi/pfnVideoProcessorSetStreamPalette, display.videoprocessorsetstreampalette, pfnVideoProcessorSetStreamPalette, pfnVideoProcessorSetStreamPalette callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnVideoProcessorSetStreamPalette
-product:
- - Windows
+ - PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMPALETTE
 ---
 
 # PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMPALETTE callback function
@@ -52,31 +49,31 @@ Sets the color-palette entries for an input stream on the video processor.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hVideoProcessor* [in]
 
 A handle to the video processor object that was created through a call to the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor">CreateVideoProcessor</a> function.
 
-### -param Arg3
+### -param unnamedParam3
 
 *StreamIndex* [in]
 
 The zero-based index of the input stream.
 
-### -param Arg4
+### -param unnamedParam4
 
 *Count* [in]
 
 The number of elements in the array that is referenced by the <i>pEntries</i> parameter.
 
-### -param Arg5
+### -param unnamedParam5
 
 *pEntries* [in]
 
@@ -109,3 +106,4 @@ If the driver does not report the <b>D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS_ALP
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorcaps">GetVideoProcessorCaps</a>
+

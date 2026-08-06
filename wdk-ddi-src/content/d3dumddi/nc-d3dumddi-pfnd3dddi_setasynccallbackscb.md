@@ -4,7 +4,6 @@ title: PFND3DDDI_SETASYNCCALLBACKSCB (d3dumddi.h)
 description: The pfnSetAsyncCallbacksCb function notifies the Microsoft Direct3D runtime whether the runtime will start or stop receiving calls to the runtime's callback functions from a worker thread.
 old-location: display\pfnsetasynccallbackscb.htm
 tech.root: display
-ms.assetid: 7f046e5a-e8a2-4e39-ae31-d37afc03f21f
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_SETASYNCCALLBACKSCB callback function"]
 ms.keywords: D3Druntime_Functions_9bd5f5b7-2108-4cf6-a2d3-fbf6d2437956.xml, PFND3DDDI_SETASYNCCALLBACKSCB, PFND3DDDI_SETASYNCCALLBACKSCB callback, d3dumddi/pfnSetAsyncCallbacksCb, display.pfnsetasynccallbackscb, pfnSetAsyncCallbacksCb, pfnSetAsyncCallbacksCb callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - pfnSetAsyncCallbacksCb
-product:
- - Windows
+ - PFND3DDDI_SETASYNCCALLBACKSCB
 ---
 
 # PFND3DDDI_SETASYNCCALLBACKSCB callback function
@@ -116,3 +113,4 @@ Drivers can call the runtime's callback functions only from a worker thread if t
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_unlockasync">UnlockAsync</a>
+

@@ -4,7 +4,6 @@ title: RtlUnicodeToOemN function (ntifs.h)
 description: The RtlUnicodeToOemN routine translates a given Unicode string to an OEM string, using the current system OEM code page.
 old-location: ifsk\rtlunicodetooemn.htm
 tech.root: ifsk
-ms.assetid: bb9ec3d9-89cd-4c56-8020-f8f97c2ce69b
 ms.date: 04/16/2018
 keywords: ["RtlUnicodeToOemN function"]
 ms.keywords: RtlUnicodeToOemN, RtlUnicodeToOemN routine [Installable File System Drivers], ifsk.rtlunicodetooemn, ntifs/RtlUnicodeToOemN, rtlref_f78dd2e1-13f7-4622-ac13-9207c040b782.xml
@@ -50,29 +49,29 @@ The <b>RtlUnicodeToOemN</b> routine translates a given Unicode string to an OEM 
 
 ## -parameters
 
-### -param OemString 
+### -param OemString [out]
 
-[out]
+
 Pointer to a caller-allocated buffer to receive the translated string.
 
-### -param MaxBytesInOemString 
+### -param MaxBytesInOemString [in]
 
-[in]
+
 Maximum number of bytes to be written to <i>OemString</i>.
 
-### -param BytesInOemString 
+### -param BytesInOemString [out, optional]
 
-[out, optional]
+
 Pointer to a caller-allocated variable that receives the number of bytes in the translated string. This parameter can be <b>NULL</b>.
 
-### -param UnicodeString 
+### -param UnicodeString [in]
 
-[in]
+
 Pointer to the Unicode source string to be translated.
 
-### -param BytesInUnicodeString 
+### -param BytesInUnicodeString [in]
 
-[in]
+
 Size, in bytes, of the string at <i>UnicodeString</i>.
 
 ## -returns
@@ -87,7 +86,7 @@ For the return value STATUS_SUCCESS, the value at <i>BytesInOemString</i>, if an
 
 <b>RtlUnicodeToOemN</b> does not modify the source string. It returns a null-terminated OEM string if the given <i>BytesInUnicodeString</i> included a NULL terminator and if the given <i>MaxBytesInOemString</i> did not cause truncation. 
 
-For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/index">Strings</a>.
+For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/_kernel/#run-time-library-rtl-routines">Run-Time Library (RTL) Routines</a>.
 
 ## -see-also
 

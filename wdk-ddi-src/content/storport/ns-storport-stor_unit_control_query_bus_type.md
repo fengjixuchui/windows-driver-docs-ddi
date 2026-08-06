@@ -1,11 +1,9 @@
 ---
 UID: NS:storport._STOR_UNIT_CONTROL_QUERY_BUS_TYPE
 title: STOR_UNIT_CONTROL_QUERY_BUS_TYPE
-description: The STOR_UNIT_CONTROL_QUERY_BUS_TYPE structure is a parameter to a miniport driver for ScsiUnitQueryBusType, which the miniport can use to specify the device bus type.
+description: STOR_UNIT_CONTROL_QUERY_BUS_TYPE is the structure pointed to by the Parameters parameter when a miniport's HwStorUnitControl routine is called with a ControlType of ScsiUnitQueryBusType.
 tech.root: storage
-ms.assetid: a4118e48-cf4c-456d-b191-032eafbcab0c
-ms.date: 03/24/2020
-ms.topic: struct
+ms.date: 05/13/2021
 ms.keywords: STOR_UNIT_CONTROL_QUERY_BUS_TYPE, STOR_UNIT_CONTROL_QUERY_BUS_TYPE, *PSTOR_UNIT_CONTROL_QUERY_BUS_TYPE,
 req.header: storport.h
 req.include-header: 
@@ -28,9 +26,9 @@ api_type:
 api_location:
  - storport.h
 api_name:
+ - _STOR_UNIT_CONTROL_QUERY_BUS_TYPE
+ - PSTOR_UNIT_CONTROL_QUERY_BUS_TYPE
  - STOR_UNIT_CONTROL_QUERY_BUS_TYPE
-product:
- - Windows
 f1_keywords:
  - _STOR_UNIT_CONTROL_QUERY_BUS_TYPE
  - storport/_STOR_UNIT_CONTROL_QUERY_BUS_TYPE
@@ -42,10 +40,9 @@ f1_keywords:
 
 # STOR_UNIT_CONTROL_QUERY_BUS_TYPE structure
 
-
 ## -description
 
-The **STOR_UNIT_CONTROL_QUERY_BUS_TYPE** structure is a parameter to a miniport driver for ScsiUnitQueryBusType, which the miniport can use to specify the device bus type.
+**STOR_UNIT_CONTROL_QUERY_BUS_TYPE** is the structure pointed to by the **Parameters** parameter when a miniport's [**HwStorUnitControl**](nc-storport-hw_unit_control.md) routine is called with a **ControlType** of **ScsiUnitQueryBusType**.
 
 ## -struct-fields
 
@@ -55,14 +52,14 @@ Pointer to a [**STOR_ADDRESS**](../scsi/ns-scsi-_stor_address.md) structure that
 
 ### -field BusType
 
-The bus type specified by the miniport for the unit. This value must be one of the enum values defined in [**STORAGE_BUS_TYPE**](/windows/win32/api/winioctl/ne-winioctl-storage_bus_type).
+The bus type specified by the miniport for the unit. This value must be one of the enum values defined in [**STORAGE_BUS_TYPE**](../ntddstor/ne-ntddstor-storage_bus_type.md).
 
 ## -remarks
 
-ScsiUnitQueryBusType is optional. A miniport can use it to specify a device bus type if the device and controller have different bus types.
+A miniport can use it to specify a device bus type if the device and controller have different bus types.
 
 ## -see-also
 
 [**STOR_ADDRESS**](../scsi/ns-scsi-_stor_address.md)
 
-[**STORAGE_BUS_TYPE**](/windows/win32/api/winioctl/ne-winioctl-storage_bus_type)
+[**STORAGE_BUS_TYPE**](../ntddstor/ne-ntddstor-storage_bus_type.md)

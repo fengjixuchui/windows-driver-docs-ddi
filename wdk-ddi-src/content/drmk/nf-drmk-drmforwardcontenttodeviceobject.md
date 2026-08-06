@@ -4,7 +4,6 @@ title: DrmForwardContentToDeviceObject function (drmk.h)
 description: The DrmForwardContentToDeviceObject function accepts a device object representing a device to which the caller intends to forward protected content.
 old-location: audio\drmforwardcontenttodeviceobject.htm
 tech.root: audio
-ms.assetid: 1ce67fb6-190e-4de2-9877-f06cd08cf424
 ms.date: 05/08/2018
 keywords: ["DrmForwardContentToDeviceObject function"]
 ms.keywords: DrmForwardContentToDeviceObject, DrmForwardContentToDeviceObject function [Audio Devices], aud-prop2_45870b55-07dc-48bf-a8ff-8005a7791dc1.xml, audio.drmforwardcontenttodeviceobject, drmk/DrmForwardContentToDeviceObject
@@ -51,19 +50,19 @@ The <code>DrmForwardContentToDeviceObject</code> function accepts a device objec
 
 ## -parameters
 
-### -param ContentId 
+### -param ContentId [in]
 
-[in]
+
 Specifies the DRM content ID. This parameter identifies a protected KS audio stream.
 
-### -param Reserved 
+### -param Reserved [in, optional]
 
-[in, optional]
+
 Reserved for future use. Set to <b>NULL</b>.
 
-### -param DrmForward 
+### -param DrmForward [in]
 
-[in]
+
 Pointer to a <a href="/windows-hardware/drivers/ddi/drmk/ns-drmk-tagdrmforward">DRMFORWARD</a> structure specifying a device object and file object that identify the target device and a KS audio pin on that device, respectively. The structure also contains the context value that the <a href="/previous-versions/ff537351(v=vs.85)">KSPROPERTY_DRMAUDIOSTREAM_CONTENTID</a>set-property request passes to the device.
 
 ## -returns

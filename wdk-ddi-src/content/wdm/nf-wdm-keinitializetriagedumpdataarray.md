@@ -2,8 +2,7 @@
 UID: NF:wdm.KeInitializeTriageDumpDataArray
 title: KeInitializeTriageDumpDataArray function
 description: Initializes a triage dump data block array.
-tech.root: 
-ms.assetid: eb868410-a956-4de4-8efc-607c2892709f
+tech.root: devtest
 ms.date: 10/19/2018
 keywords: ["KeInitializeTriageDumpDataArray function"]
 ms.keywords: KeInitializeTriageDumpDataArray
@@ -32,13 +31,11 @@ f1_keywords:
 topic_type:
  - apiref
 api_type:
- - apiref
+ - DllExport
 api_location:
  - wdm.h
 api_name:
  - KeInitializeTriageDumpDataArray
-product:
- - Windows
 ---
 
 # KeInitializeTriageDumpDataArray function
@@ -52,7 +49,7 @@ The **KeInitializeTriageDumpDataArray** function initializes a triage dump data 
 
 ### -param KtriageDumpDataArray
 
- A pointer to a [**KTRIAGE_DUMP_DATA_ARRAY**](ns-wdm-_ktriage_dump_data_array.md) structure that is the data block array. It is assumed that the caller has already obtained exclusive write to _KtriageDumpDataArray_.
+ A pointer to a [**KTRIAGE_DUMP_DATA_ARRAY**](ns-wdm-_ktriage_dump_data_array.md) structure that is the data block array. It is assumed that the caller has already obtained exclusive write to _KtriageDumpDataArray_.  The array must be allocated from non-paged memory.
 
 ### -param Size
 
@@ -66,6 +63,6 @@ This function returns NTSTATUS.
 
 ## -see-also
 
-[**KeInitializeTriageDumpDataArray**]()
+[*KeAddTriageDumpDataBlock*](./nf-wdm-keaddtriagedumpdatablock.md)
 
 [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](./nc-wdm-kbugcheck_reason_callback_routine.md)

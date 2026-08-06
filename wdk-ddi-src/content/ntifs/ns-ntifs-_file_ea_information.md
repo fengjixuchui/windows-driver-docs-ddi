@@ -4,14 +4,13 @@ title: _FILE_EA_INFORMATION (ntifs.h)
 description: The FILE_EA_INFORMATION structure is used to query for the size of the extended attributes (EA) for a file.
 old-location: kernel\file_ea_information.htm
 tech.root: kernel
-ms.assetid: 1b27f26f-c98d-4979-b60e-0ed5965f637c
 ms.date: 04/30/2018
 keywords: ["FILE_EA_INFORMATION structure"]
 ms.keywords: "*PFILE_EA_INFORMATION, FILE_EA_INFORMATION, FILE_EA_INFORMATION structure [Kernel-Mode Driver Architecture], PFILE_EA_INFORMATION, PFILE_EA_INFORMATION structure pointer [Kernel-Mode Driver Architecture], _FILE_EA_INFORMATION, kernel.file_ea_information, kstruct_b_f78f051a-aa8f-4611-a699-1f706ac74f1f.xml, ntifs/FILE_EA_INFORMATION, ntifs/PFILE_EA_INFORMATION"
 req.header: ntifs.h
 req.include-header: Ntifs.h, Fltkernel.h
 req.target-type: Windows
-req.target-min-winverclnt: Supported in Windows XP and later versions of Windows.
+req.target-min-winverclnt: Windows XP
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntifs.h
 api_name:
+ - _FILE_EA_INFORMATION
+ - PFILE_EA_INFORMATION
  - FILE_EA_INFORMATION
 ---
 
@@ -67,3 +68,4 @@ An extended attribute is a piece of application-specific metadata that an applic
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryinformationfile">ZwQueryInformationFile</a>
+

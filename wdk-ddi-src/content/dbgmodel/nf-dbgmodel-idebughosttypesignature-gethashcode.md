@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.IDebugHostTypeSignature.GetHashCode
 title: IDebugHostTypeSignature::GetHashCode (dbgmodel.h)
 description: The GetHashCode method returns a 32-bit hash code for the type signature.
-ms.assetid: ba7abda8-02c8-4487-b192-3e674679a278
 ms.date: 09/10/2018
 keywords: ["IDebugHostTypeSignature::GetHashCode"]
 ms.keywords: IDebugHostTypeSignature::GetHashCode, GetHashCode, IDebugHostTypeSignature.GetHashCode, IDebugHostTypeSignature::GetHashCode, IDebugHostTypeSignature.GetHashCode
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostTypeSignature.GetHashCode
+ - IDebugHostTypeSignature::GetHashCode
 ---
 
 # IDebugHostTypeSignature::GetHashCode

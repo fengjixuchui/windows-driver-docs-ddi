@@ -3,7 +3,6 @@ UID: NF:d3dkmthk.D3DKMTOutputDuplPresentToHwQueue
 title: D3DKMTOutputDuplPresentToHwQueue function
 description: The D3DKMTOutputDuplPresentToHwQueue function outputs the duplicate handle of a hardware queue.
 tech.root: display
-ms.assetid: abea8c16-a9c8-49ea-8809-4589b9d2eaa8
 ms.date: 04/04/2019
 keywords: ["D3DKMTOutputDuplPresentToHwQueue function"]
 ms.keywords: D3DKMTOutputDuplPresentToHwQueue
@@ -37,8 +36,6 @@ api_location:
  - Gdi32.dll
 api_name:
  - D3DKMTOutputDuplPresentToHwQueue
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -52,9 +49,9 @@ The D3DKMTOutputDuplPresentToHwQueue function outputs the duplicate handle of a 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in]
 
-[in] Pointer to a D3DKMT_OUTPUTDUPLPRESENTTOHWQUEUE structure.
+Pointer to a D3DKMT_OUTPUTDUPLPRESENTTOHWQUEUE structure.
 
 ## -returns
 

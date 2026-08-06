@@ -3,7 +3,6 @@ UID: NF:portcls.IDmaChannelSlave.WaitForTC
 title: IDmaChannelSlave::WaitForTC (portcls.h)
 description: The WaitForTC method waits for the DMA-transfer terminal count to complete, or it times out if the time-out interval expires.
 tech.root: audio
-ms.assetid: 9e022d50-5bdd-4eb9-a6b4-86c93eca8527
 ms.date: 10/30/2018
 keywords: ["IDmaChannelSlave::WaitForTC"]
 ms.keywords: IDmaChannelSlave::WaitForTC, WaitForTC, IDmaChannelSlave.WaitForTC, IDmaChannelSlave::WaitForTC, IDmaChannelSlave.WaitForTC
@@ -16,7 +15,7 @@ req.kmdf-ver:
 req.umdf-ver: 
 req.lib: 
 req.dll: 
-req.irql: PASSIVE_LEVEL (See Remarks section.)
+req.irql: PASSIVE_LEVEL (see Remarks section)
 req.ddi-compliance: 
 req.unicode-ansi: 
 req.idl: 
@@ -35,9 +34,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IDmaChannelSlave.WaitForTC
-product:
- - Windows
+ - IDmaChannelSlave::WaitForTC
 ---
 
 # IDmaChannelSlave::WaitForTC
@@ -73,3 +70,4 @@ Because this method simply waits until the DMA transfer either completes or time
 ## -see-also
 
 [IDmaChannelSlave interface](nn-portcls-idmachannelslave.md)
+

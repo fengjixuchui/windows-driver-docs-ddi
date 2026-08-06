@@ -1,11 +1,10 @@
 ---
 UID: NF:dbgeng.IDebugControl.GetStackTrace
 title: IDebugControl::GetStackTrace (dbgeng.h)
-description: The GetStackTrace method returns the frames at the top of the specified call stack.
+description: Learn how the GetStackTrace method returns the frames at the top of the specified call stack.
 old-location: debugger\getstacktrace.htm
 tech.root: debugger
-ms.assetid: 2d07e6a3-b560-4d9b-aece-0368d5929867
-ms.date: 05/03/2018
+ms.date: 08/15/2023
 keywords: ["IDebugControl::GetStackTrace"]
 ms.keywords: GetStackTrace, GetStackTrace method [Windows Debugging], GetStackTrace method [Windows Debugging],IDebugControl interface, GetStackTrace method [Windows Debugging],IDebugControl2 interface, GetStackTrace method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],GetStackTrace method, IDebugControl.GetStackTrace, IDebugControl2 interface [Windows Debugging],GetStackTrace method, IDebugControl2::GetStackTrace, IDebugControl3 interface [Windows Debugging],GetStackTrace method, IDebugControl3::GetStackTrace, IDebugControl::GetStackTrace, IDebugControl_ef51127a-c022-4e3d-bb63-55553daea893.xml, dbgeng/IDebugControl2::GetStackTrace, dbgeng/IDebugControl3::GetStackTrace, dbgeng/IDebugControl::GetStackTrace, debugger.getstacktrace
 req.header: dbgeng.h
@@ -38,13 +37,10 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.GetStackTrace
- - IDebugControl2.GetStackTrace
- - IDebugControl3.GetStackTrace
+ - IDebugControl::GetStackTrace
 ---
 
 # IDebugControl::GetStackTrace
-
 
 ## -description
 
@@ -52,37 +48,29 @@ The <b>GetStackTrace</b> method returns the frames at the top of the specified c
 
 ## -parameters
 
-### -param FrameOffset 
+### -param FrameOffset [in]
 
-[in]
 Specifies the location of the stack frame at the top of the stack.  If <i>FrameOffset</i> is set to zero, the current frame pointer is used instead.
 
-### -param StackOffset 
+### -param StackOffset [in]
 
-[in]
 Specifies the location of the current stack.  If <i>StackOffset</i> is set to zero, the current stack pointer is used instead.
 
-### -param InstructionOffset 
+### -param InstructionOffset [in]
 
-[in]
 Specifies the location of the instruction of interest for the function that is represented by the stack frame at the top of the stack.  If <i>InstructionOffset</i> is set to zero, the current instruction is used instead.
 
-### -param Frames 
+### -param Frames [out, writes]
 
-[out]
 Receives the stack frames.  The number of elements this array holds is <i>FrameSize</i>.
 
-### -param FramesSize
-
-### -param FramesFilled 
-
-[out, optional]
-Receives the number of frames that were placed in the array <i>Frames</i>.  If <i>FramesFilled</i> is <b>NULL</b>, this information is not returned.
-
-
-#### - FrameSize [in]
+### -param FramesSize [in]
 
 Specifies the number of items in the <i>Frames</i> array.
+
+### -param FramesFilled [out, optional]
+
+Receives the number of frames that were placed in the array <i>Frames</i>.  If <i>FramesFilled</i> is <b>NULL</b>, this information is not returned.
 
 ## -returns
 
@@ -125,38 +113,21 @@ The stack trace returned to <i>Frames</i> can be printed using <a href="/windows
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol4-getcontextstacktrace">GetContextStackTrace</a>
 
-
-
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugregisters2-getframeoffset2">GetFrameOffset2</a>
-
-
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugregisters2-getinstructionoffset2">GetInstructionOffset2</a>
 
-
-
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugregisters2-getstackoffset2">GetStackOffset2</a>
-
-
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol">IDebugControl</a>
 
-
-
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol2">IDebugControl2</a>
-
-
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
 
-
-
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-outputstacktrace">OutputStackTrace</a>
-
-
 
 <a href="/windows-hardware/drivers/ddi/wdbgexts/nc-wdbgexts-pwindbg_stacktrace_routine">StackTrace</a>
 
-
-
 <a href="/windows-hardware/drivers/debugger/k--kb--kc--kd--kp--kp--kv--display-stack-backtrace-">k, kb, kc, kd, kp, kP, kv (Display Stack Backtrace)</a>
+

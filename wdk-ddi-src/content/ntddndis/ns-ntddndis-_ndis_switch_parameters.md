@@ -4,7 +4,6 @@ title: _NDIS_SWITCH_PARAMETERS (ntddndis.h)
 description: The NDIS_SWITCH_PARAMETERS structure contains the configuration data for a Hyper-V extensible switch.
 old-location: netvista\ndis_switch_parameters.htm
 tech.root: netvista
-ms.assetid: 766e042a-3f21-4f57-a780-83f92bef0a6c
 ms.date: 05/02/2018
 keywords: ["NDIS_SWITCH_PARAMETERS structure"]
 ms.keywords: "*PNDIS_SWITCH_PARAMETERS, NDIS_SWITCH_PARAMETERS, NDIS_SWITCH_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_PARAMETERS, PNDIS_SWITCH_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PARAMETERS, netvista.ndis_switch_parameters, ntddndis/NDIS_SWITCH_PARAMETERS, ntddndis/PNDIS_SWITCH_PARAMETERS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_SWITCH_PARAMETERS
+ - PNDIS_SWITCH_PARAMETERS
  - NDIS_SWITCH_PARAMETERS
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_SWITCH_PARAMETERS</b> structure contains the configuration data for 
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_SWITCH_PARAMETERS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_SWITCH_PARAMETERS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_PARAMETERS</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
 
@@ -90,7 +91,7 @@ A UINT32 value that specifies the number of ports configured on the extensible s
 
 ### -field IsActive
 
-A BOOLEAN that if TRUE indicates that the Hyper-V extensible switch activation has finished and it is safe to query for other switch configuration such as enumerating ports, NICs, and properties. If FALSE, the extension must wait for the <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event">NetEventSwitchActivate</a> PNP event to be issued before querying for switch configuration.
+A BOOLEAN that if TRUE indicates that the Hyper-V extensible switch activation has finished and it is safe to query for other switch configuration such as enumerating ports, NICs, and properties. If FALSE, the extension must wait for the <a href="/windows-hardware/drivers/ddi/netpnp/ns-netpnp-_net_pnp_event">NetEventSwitchActivate</a> PNP event to be issued before querying for switch configuration.
 
 ## -remarks
 
@@ -154,11 +155,11 @@ This structure is also passed in the <i>vSwitch</i> parameter of the following c
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_pnp_event">NetEventSwitchActivate</a>
+<a href="/windows-hardware/drivers/ddi/netpnp/ns-netpnp-_net_pnp_event">NetEventSwitchActivate</a>
 
 
 
@@ -167,3 +168,4 @@ This structure is also passed in the <i>vSwitch</i> parameter of the following c
 
 
 <a href="/windows/win32/api/ifdef/ns-ifdef-if_counted_string_lh">_STRING</a>
+

@@ -4,7 +4,6 @@ title: GPIO_CLX_AcquireInterruptLock function (gpioclx.h)
 description: The GPIO_CLX_AcquireInterruptLock method acquires an interrupt lock on a bank of pins in the general-purpose I/O (GPIO) controller.
 old-location: gpio\gpio_clx_acquireinterruptlock.htm
 tech.root: GPIO
-ms.assetid: E0332415-1028-489B-AA81-DF8AEE0A28E8
 ms.date: 02/15/2018
 keywords: ["GPIO_CLX_AcquireInterruptLock function"]
 ms.keywords: GPIO.gpio_clx_acquireinterruptlock, GPIO_CLX_AcquireInterruptLock, GPIO_CLX_AcquireInterruptLock method [Parallel Ports], gpioclx/GPIO_CLX_AcquireInterruptLock
@@ -51,14 +50,14 @@ The <b>GPIO_CLX_AcquireInterruptLock</b> method acquires an interrupt lock on a 
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>. The GPIO framework extension (GpioClx) passes this pointer value as a parameter to the callback functions that are implemented by the GPIO controller driver.
 
-### -param BankId 
+### -param BankId [in]
 
-[in]
+
 The identifier for this bank of GPIO pins. If N is the number of banks in the GPIO controller, <b>BankId</b> is an integer in the range 0 to N–1.
 
 ## -remarks

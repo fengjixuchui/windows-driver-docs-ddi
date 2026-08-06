@@ -2,7 +2,6 @@
 UID: NF:d3dkmthk.D3DKMTChangeVideoMemoryReservation
 title: D3DKMTChangeVideoMemoryReservation function (d3dkmthk.h)
 description: Changes video memory reservation.
-ms.assetid: 973e9070-c41d-40a4-a24d-13af3976baa9
 ms.date: 10/19/2018
 keywords: ["D3DKMTChangeVideoMemoryReservation function"]
 ms.keywords: D3DKMTChangeVideoMemoryReservation
@@ -50,7 +49,7 @@ Changes video memory reservation.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_CHANGEVIDEOMEMORYRESERVATION](ns-d3dkmthk-_d3dkmt_changevideommemoryreservation.md) structure.
 

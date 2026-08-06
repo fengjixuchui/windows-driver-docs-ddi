@@ -1,10 +1,8 @@
 ---
 UID: NF:ntifs.SeSetSecurityDescriptorInfo
 title: SeSetSecurityDescriptorInfo function (ntifs.h)
-description: The SeSetSecurityDescriptorInfo routine sets an object's security descriptor.
-old-location: ifsk\sesetsecuritydescriptorinfo.htm
+description: Learn more about the SeSetSecurityDescriptorInfo function.
 tech.root: ifsk
-ms.assetid: d6f02142-1cd8-4f09-b106-d963bf080495
 ms.date: 04/16/2018
 keywords: ["SeSetSecurityDescriptorInfo function"]
 ms.keywords: SeSetSecurityDescriptorInfo, SeSetSecurityDescriptorInfo routine [Installable File System Drivers], ifsk.sesetsecuritydescriptorinfo, ntifs/SeSetSecurityDescriptorInfo, seref_061b8609-a537-4ccb-aa60-50a46b08e97f.xml
@@ -43,204 +41,96 @@ api_name:
 
 # SeSetSecurityDescriptorInfo function
 
-
 ## -description
 
-The <b>SeSetSecurityDescriptorInfo</b> routine sets an object's security descriptor.
+The **SeSetSecurityDescriptorInfo** routine sets an object's security descriptor.
 
 ## -parameters
 
-### -param Object 
+### -param Object [in, optional]
 
-[in, optional]
 Pointer to the object whose security descriptor is to be set. This is used to update security quota information.
 
-### -param SecurityInformation 
+### -param SecurityInformation [in]
 
-[in]
-Pointer to a bitmask specifying which security information is to be applied to the object. Can be a combination of one or more of the following values. 
+Pointer to a bitmask specifying which security information is to be applied to the object. Can be a combination of one or more of the following values.
 
-<table>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-</tr>
-<tr>
-<td>
-DACL_SECURITY_INFORMATION
-
-</td>
-<td>
-Indicates the discretionary access control list (DACL) of the object is being set. Requires WRITE_DAC access. 
-
-</td>
-</tr>
-<tr>
-<td>
-GROUP_SECURITY_INFORMATION
-
-</td>
-<td>
-Indicates the primary group identifier of the object is being set. Requires WRITE_OWNER access. 
-
-</td>
-</tr>
-<tr>
-<td>
-OWNER_SECURITY_INFORMATION
-
-</td>
-<td>
-Indicates the owner identifier of the object is being set. Requires WRITE_OWNER access. 
-
-</td>
-</tr>
-<tr>
-<td>
-SACL_SECURITY_INFORMATION
-
-</td>
-<td>
-Indicates the system ACL (SACL) of the object is being set. Requires ACCESS_SYSTEM_SECURITY access. 
-
-</td>
-</tr>
-</table>
+| Value | Meaning |
+| ----- | ------- |
+| DACL_SECURITY_INFORMATION | Indicates the discretionary access control list (DACL) of the object is being set. Requires WRITE_DAC access. |
+| GROUP_SECURITY_INFORMATION | Indicates the primary group identifier of the object is being set. Requires WRITE_OWNER access. |
+| OWNER_SECURITY_INFORMATION | Indicates the owner identifier of the object is being set. Requires WRITE_OWNER access. |
+| SACL_SECURITY_INFORMATION | Indicates the system ACL (SACL) of the object is being set. Requires ACCESS_SYSTEM_SECURITY access. |
 
 ### -param ModificationDescriptor
 
-<p>The input security descriptor to be applied to the object. The caller of this routine is expected to probe and capture the passed security descriptor before calling <b>SeSetSecurityDescriptorInfo</b>, and to release it afterward.</p>
+The input security descriptor to be applied to the object. The caller of this routine is expected to probe and capture the passed security descriptor before calling **SeSetSecurityDescriptorInfo**, and to release it afterward.
 
-### -param ObjectsSecurityDescriptor 
+### -param ObjectsSecurityDescriptor [in, out]
 
-[in, out]
 Pointer to a pointer to the object's security descriptor. The security descriptor must be in self-relative format. The caller is responsible for freeing this structure when it is no longer needed.
 
-### -param PoolType 
+### -param PoolType [in]
 
-[in]
-Specifies the pool type to use when allocating a new security descriptor, which can be one of the following: 
+Specifies the pool type to use when allocating a new security descriptor, which can be one of the following:
 
-<ul>
-<li><b>NonPagedPool</b></li>
-<li><b>PagedPool</b></li>
-<li><b>NonPagedPoolCacheAligned</b></li>
-<li><b>PagedPoolCacheAligned</b></li>
-</ul>
-Usually, a caller specifies <b>PagedPool</b>, or else <b>NonPagedPool</b> if the buffer will be accessed at IRQL >= DISPATCH_LEVEL or in an arbitrary thread context. 
+* **NonPagedPool**
+* **PagedPool**
+* **NonPagedPoolCacheAligned**
+* **PagedPoolCacheAligned**
 
-<div class="alert"><b>Note</b>    The <b>NonPagedPoolMustSucceed</b> and <b>NonPagedPoolCacheAlignedMustS</b> pool types are obsolete and should no longer be used. </div>
-<div> </div>
+Usually, a caller specifies **PagedPool**, or else **NonPagedPool** if the buffer will be accessed at IRQL >= DISPATCH_LEVEL or in an arbitrary thread context.
 
-### -param GenericMapping 
+The **NonPagedPoolMustSucceed** and **NonPagedPoolCacheAlignedMustS** pool types are obsolete and should no longer be used.
 
-[in]
+### -param GenericMapping [in]
+
 Pointer to a GENERIC_MAPPING structure that specifies the mapping of generic to specific and standard access types for the object being accessed. This mapping structure is expected to be safe to access (that is, captured if necessary) prior to be passed to this routine.
 
 ## -returns
 
-<table>
-<tr>
-<th>Return code</th>
-<th>Description</th>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>STATUS_SUCCESS</b></dt>
-</dl>
-</td>
-<td width="60%">
-The object's security descriptor was successfully modified.
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>STATUS_BAD_DESCRIPTOR_FORMAT</b></dt>
-</dl>
-</td>
-<td width="60%">
-The provided object's security descriptor was not in self-relative format.
-
-</td>
-</tr>
-<tr>
-<td width="40%">
-<dl>
-<dt><b>STATUS_NO_SECURITY_ON_OBJECT</b></dt>
-</dl>
-</td>
-<td width="60%">
-The object does not have a security descriptor.
-
-</td>
-</tr>
-</table>
+| Return code | Description |
+| ----------- | ----------- |
+| STATUS_SUCCESS | The object's security descriptor was successfully modified. |
+| STATUS_BAD_DESCRIPTOR_FORMAT | The provided object's security descriptor was not in self-relative format. |
+| STATUS_NO_SECURITY_ON_OBJECT | The object does not have a security descriptor.
 
 ## -remarks
 
-<b>SeSetSecurityDescriptorInfo</b> modifies an object's existing security descriptor. If the object does not have a security descriptor, the call to <b>SeSetSecurityDescriptorInfo</b> will fail.
+**SeSetSecurityDescriptorInfo** modifies an object's existing security descriptor. If the object does not have a security descriptor, the call to **SeSetSecurityDescriptorInfo** will fail.
 
-To specify whether the object supports automatic inheritance of access control entries (ACE), use <b>SeSetSecurityDescriptorInfoEx</b>.
+To specify whether the object supports automatic inheritance of access control entries (ACE), use **SeSetSecurityDescriptorInfoEx**.
 
 A security descriptor can be in absolute or self-relative form. In self-relative form, all members of the structure are located contiguously in memory. In absolute form, the structure only contains pointers to the members.
 
-For more information about security and access control, see the documentation on these topics in the Microsoft Windows SDK.
+For more information about security and access control, see [Windows security model for driver developers](/windows-hardware/drivers/driversecurity/windows-security-model) and the documentation on these topics in the Windows SDK.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ifs/ace">ACE</a>
+[**ACE**](/windows-hardware/drivers/ifs/ace)
 
+[**ACL**](../wdm/ns-wdm-_acl.md)
 
+[**GENERIC_MAPPING**](../wdm/ns-wdm-_generic_mapping.md)
 
-<a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_acl">ACL</a>
+[**RtlCreateSecurityDescriptor**](../wdm/nf-wdm-rtlcreatesecuritydescriptor.md)
 
+[**RtlCreateSecurityDescriptorRelative**](nf-ntifs-rtlcreatesecuritydescriptorrelative.md)
 
+[**RtlLengthSecurityDescriptor**](../wdm/nf-wdm-rtllengthsecuritydescriptor.md)
 
-<a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_generic_mapping">GENERIC_MAPPING</a>
+[**RtlSetDaclSecurityDescriptor**](../wdm/nf-wdm-rtlsetdaclsecuritydescriptor.md)
 
+[**RtlSetOwnerSecurityDescriptor**](nf-ntifs-rtlsetownersecuritydescriptor.md)
 
+[**RtlValidSecurityDescriptor**](../wdm/nf-wdm-rtlvalidsecuritydescriptor.md)
 
-<a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlcreatesecuritydescriptor">RtlCreateSecurityDescriptor</a>
+[**SECURITY_DESCRIPTOR**](ns-ntifs-_security_descriptor.md)
 
+[**SECURITY_INFORMATION**](/windows-hardware/drivers/ifs/security-information)
 
+[**SeQuerySecurityDescriptorInfo**](nf-ntifs-sequerysecuritydescriptorinfo.md)
 
-<a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlcreatesecuritydescriptorrelative">RtlCreateSecurityDescriptorRelative</a>
+[**SeSetAccessStateGenericMapping**](nf-ntifs-sesetaccessstategenericmapping.md)
 
-
-
-<a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtllengthsecuritydescriptor">RtlLengthSecurityDescriptor</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlsetdaclsecuritydescriptor">RtlSetDaclSecurityDescriptor</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlsetownersecuritydescriptor">RtlSetOwnerSecurityDescriptor</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-rtlvalidsecuritydescriptor">RtlValidSecurityDescriptor</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_security_descriptor">SECURITY_DESCRIPTOR</a>
-
-
-
-<a href="/windows-hardware/drivers/ifs/security-information">SECURITY_INFORMATION</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-sequerysecuritydescriptorinfo">SeQuerySecurityDescriptorInfo</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-sesetaccessstategenericmapping">SeSetAccessStateGenericMapping</a>
-
-
-
-<a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-sesetsecuritydescriptorinfoex">SeSetSecurityDescriptorInfoEx</a>
+[**SeSetSecurityDescriptorInfoEx**](nf-ntifs-sesetsecuritydescriptorinfoex.md)

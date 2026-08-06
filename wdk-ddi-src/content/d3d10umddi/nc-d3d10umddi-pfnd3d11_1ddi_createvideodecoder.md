@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_CREATEVIDEODECODER
 title: PFND3D11_1DDI_CREATEVIDEODECODER (d3d10umddi.h)
 description: Creates a video decoder object.
 old-location: display\createvideodecoder.htm
-ms.assetid: 41254f99-1806-428c-8bf3-7e736dbeec84
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_CREATEVIDEODECODER callback function"]
 ms.keywords: CreateVideoDecoder, CreateVideoDecoder callback function [Display Devices], PFND3D11_1DDI_CREATEVIDEODECODER, PFND3D11_1DDI_CREATEVIDEODECODER callback, d3d10umddi/CreateVideoDecoder, display.createvideodecoder
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - CreateVideoDecoder
-product:
- - Windows
+ - PFND3D11_1DDI_CREATEVIDEODECODER
 ---
 
 # PFND3D11_1DDI_CREATEVIDEODECODER callback function
@@ -52,25 +49,25 @@ Creates a video decoder object.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCreateData* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddiarg_createvideodecoder">D3D11_1DDIARG_CREATEVIDEODECODER</a> structure. This structure specifies the attributes of the video decoder object to be created.
 
-### -param Arg3
+### -param unnamedParam3
 
 *hDecode* [in]
 
 A handle to the driver's private data for the video decoder object.
 
-### -param Arg4
+### -param unnamedParam4
 
 *hRTDecode* [in]
 
@@ -109,3 +106,4 @@ The driver must keep track of the handle to the display device that was used to 
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_videodecoderbeginframe">VideoDecoderBeginFrame</a>
+

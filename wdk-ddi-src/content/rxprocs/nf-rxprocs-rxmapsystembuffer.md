@@ -4,7 +4,6 @@ title: RxMapSystemBuffer function (rxprocs.h)
 description: RxMapSystemBuffer returns the system buffer address from the IRP.
 old-location: ifsk\rxmapsystembuffer.htm
 tech.root: ifsk
-ms.assetid: dc549e51-2f25-45b5-925f-3481294e0b35
 ms.date: 04/16/2018
 keywords: ["RxMapSystemBuffer function"]
 ms.keywords: RxMapSystemBuffer, RxMapSystemBuffer function [Installable File System Drivers], ifsk.rxmapsystembuffer, rxprocs/RxMapSystemBuffer, rxref_b9222b0a-25ca-4ad4-95b9-b9651c625a39.xml
@@ -50,14 +49,14 @@ api_name:
 
 ## -parameters
 
-### -param RxContext 
+### -param RxContext [in]
 
-[in]
+
 A pointer to the RX_CONTEXT structure for this request.
 
-### -param Irp 
+### -param Irp [in]
 
-[in]
+
 A pointer to the IRP for this request.
 
 ## -returns
@@ -72,7 +71,7 @@ On retail builds, <b>RxMapSystemBuffer</b> will call <b>MmGetSystemAddressForMdl
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/kernel/mm-bad-pointer">MmGetSystemAddressForMdlSafe</a>
+[MmGetSystemAddressForMdlSafe](../wdm/nf-wdm-mmgetsystemaddressformdlsafe.md)
 
 
 

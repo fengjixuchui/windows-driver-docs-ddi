@@ -4,7 +4,6 @@ title: NDK_FN_SEND_AND_INVALIDATE (ndkpi.h)
 description: The NdkSendAndInvalidate (NDK_FN_SEND_AND_INVALIDATE) function posts a send request on an NDK queue pair (QP) and supplies a token to be invalidated at the remote peer upon receive completion.
 old-location: netvista\ndk_fn_send_and_invalidate.htm
 tech.root: netvista
-ms.assetid: 7E344DFA-159A-4084-905A-0A0F9F102051
 ms.date: 05/02/2018
 keywords: ["NDK_FN_SEND_AND_INVALIDATE callback function"]
 ms.keywords: NDK_FN_SEND_AND_INVALIDATE, NDK_FN_SEND_AND_INVALIDATE callback, NDK_FN_SEND_AND_INVALIDATE callback function [Network Drivers Starting with Windows Vista], NDK_OP_FLAG_DEFER, NDK_OP_FLAG_INLINE, NDK_OP_FLAG_READ_FENCE, NDK_OP_FLAG_SEND_AND_SOLICIT_EVENT, NDK_OP_FLAG_SILENT_SUCCESS, ndkpi/NDK_FN_SEND_AND_INVALIDATE, netvista.ndk_fn_send_and_invalidate
@@ -50,30 +49,30 @@ The <i>NdkSendAndInvalidate</i> (<i>NDK_FN_SEND_AND_INVALIDATE</i>) function pos
 
 ## -parameters
 
-### -param pNdkQp 
+### -param pNdkQp [in]
 
-[in]
+
 A pointer to an NDK queue pair (QP) object
 (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_qp">NDK_QP</a>).
 
-### -param RequestContext 
+### -param RequestContext [in, optional]
 
-[in, optional]
+
 A context value to be returned in the <b>RequestContext</b> member of the <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_result_ex">NDK_RESULT_EX</a> structure for this request.
 
-### -param NDK_SGE
+### -param pSgl
 
 An array of SGE (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_sge">NDK_SGE</a>)  structures that represent the buffers holding the data to send.
 
-### -param nSge 
+### -param nSge [in]
 
-[in]
+
 The number of SGE structures in the array  that is specified in the <i>pSgl</i>
 parameter.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A bitwise OR of flags that specify the operations that are allowed. The following flags are supported:
 
 <table>
@@ -140,9 +139,9 @@ Indicates to the NDK provider that it may defer indicating the request to hardwa
 </tr>
 </table>
 
-### -param RemoteToken 
+### -param RemoteToken [in]
 
-[in]
+
 The remote token to be invalidated at the peer upon receive completion. The NDK provider at the receiving peer must abort the connection, as specified by lower layer transport rules, if an invalid token was specified by the sending peer.
 
 ## -returns

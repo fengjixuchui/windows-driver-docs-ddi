@@ -1,10 +1,9 @@
 ---
-UID: NS:gnssdriver.__unnamed_struct_15
+UID: NS:gnssdriver.GNSS_FIXDATA
 title: GNSS_FIXDATA (gnssdriver.h)
-description: This structure defines the specific data elements associated with a GNSS fix returned from the driver.
+description: The GNSS_FIXDATA structure defines the specific data elements associated with a GNSS fix returned from the driver.
 old-location: gnss\gnss_fixdata.htm
 tech.root: gnss
-ms.assetid: 2939F01A-2F1C-4434-BAE1-59F1F320BD44
 ms.date: 02/15/2018
 keywords: ["GNSS_FIXDATA structure"]
 ms.keywords: "*PGNSS_FIXDATA, GNSS_FIXDATA, GNSS_FIXDATA structure [Sensor Devices], PGNSS_FIXDATA, PGNSS_FIXDATA structure pointer [Sensor Devices], gnss.gnss_fixdata, gnssdriver/GNSS_FIXDATA, gnssdriver/PGNSS_FIXDATA"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - gnssdriver.h
 api_name:
+ - PGNSS_FIXDATA
  - GNSS_FIXDATA
 ---
 
@@ -48,7 +48,7 @@ api_name:
 
 ## -description
 
-This structure defines the specific data elements associated with a GNSS fix returned from the driver.
+The **GNSS_FIXDATA** structure defines the specific data elements associated with a GNSS fix returned from the driver.
 
 ## -struct-fields
 

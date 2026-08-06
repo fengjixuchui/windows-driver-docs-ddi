@@ -4,7 +4,6 @@ title: PINT10_ALLOCATE_BUFFER (video.h)
 description: The Int10AllocateBuffer function can be used to allocate a single 4 KB block of memory in the context of another thread. After the block of memory has been allocated, it must be freed before another block of memory can be allocated.
 old-location: display\int10allocatebuffer.htm
 tech.root: display
-ms.assetid: 2e6c8000-13e3-46fb-81be-18428fec2b21
 ms.date: 05/10/2018
 keywords: ["PINT10_ALLOCATE_BUFFER callback function"]
 ms.keywords: Int10AllocateBuffer, Int10AllocateBuffer callback function [Display Devices], PINT10_ALLOCATE_BUFFER, PINT10_ALLOCATE_BUFFER callback, VideoPort_Functions_9e19d07d-46a9-46ee-97db-6548202ff14f.xml, display.int10allocatebuffer, video/Int10AllocateBuffer
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - video.h
 api_name:
- - Int10AllocateBuffer
+ - PINT10_ALLOCATE_BUFFER
 ---
 
 # PINT10_ALLOCATE_BUFFER callback function
@@ -50,24 +49,24 @@ The <i>Int10AllocateBuffer</i> function can be used to allocate a single 4 KB bl
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Pointer to a video port driver-defined context for the interface. This should be the same as the value in the <b>Context</b> member of the <a href="/windows-hardware/drivers/ddi/video/ns-video-_video_port_int10_interface">VIDEO_PORT_INT10_INTERFACE</a> structure after <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportqueryservices">VideoPortQueryServices</a> returns.
 
-### -param Seg 
+### -param Seg [out]
 
-[out]
+
 Pointer to a memory location that will receive the segment address of the allocated memory buffer.
 
-### -param Off 
+### -param Off [out]
 
-[out]
-Pointer to a memory location that will receive the offset within the segment specified by *<i>Seg</i>, of the allocated memory buffer.
 
-### -param Length 
+Pointer to a memory location that will receive the offset within the segment specified by **Seg*, of the allocated memory buffer.
 
-[in, out]
+### -param Length [in, out]
+
+
 Pointer to a memory location that contains the length, in bytes, of the requested memory buffer, which can be as large as 4096. When the function returns, this memory location will contain the value 4096, whether the memory was actually allocated.
 
 ## -returns
@@ -81,3 +80,4 @@ The video port implements this function, which can be accessed through a pointer
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/video/ns-video-_video_port_int10_interface">VIDEO_PORT_INT10_INTERFACE</a>
+

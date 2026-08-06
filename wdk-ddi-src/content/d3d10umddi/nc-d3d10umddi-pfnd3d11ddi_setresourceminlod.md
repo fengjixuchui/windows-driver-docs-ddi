@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_SETRESOURCEMINLOD
 title: PFND3D11DDI_SETRESOURCEMINLOD (d3d10umddi.h)
 description: The SetResourceMinLOD function sets the minimum level of detail (LOD) for a resource.
 old-location: display\setresourceminlod.htm
-ms.assetid: a54b2fa7-c0c2-42b7-ae89-7984282d4af4
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_SETRESOURCEMINLOD callback function"]
 ms.keywords: PFND3D11DDI_SETRESOURCEMINLOD, PFND3D11DDI_SETRESOURCEMINLOD callback, SetResourceMinLOD, SetResourceMinLOD callback function [Display Devices], UserModeDisplayDriverDx11_Functions_3c56a9a6-a13e-4377-a997-e84af3ff12ef.xml, d3d10umddi/SetResourceMinLOD, display.setresourceminlod
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - SetResourceMinLOD
+ - PFND3D11DDI_SETRESOURCEMINLOD
 ---
 
 # PFND3D11DDI_SETRESOURCEMINLOD callback function
@@ -50,19 +49,19 @@ The <i>SetResourceMinLOD</i> function sets the minimum level of detail (LOD) for
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hResource* [in]
 
 A handle to the driver's private data for the resource.
 
-### -param Arg3
+### -param unnamedParam3
 
 *MinLOD* [in]
 
@@ -85,3 +84,4 @@ The Direct3D runtime calls the driver's <i>SetResourceMinLOD</i> function to set
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

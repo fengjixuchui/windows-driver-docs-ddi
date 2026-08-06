@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_RECYCLECOMMANDLIST
 title: PFND3D11DDI_RECYCLECOMMANDLIST (d3d10umddi.h)
 description: The RecycleCommandList function recycles a command list.
 old-location: display\recyclecommandlist.htm
-ms.assetid: 4cff7f3d-ba13-4389-bafc-edffc0697ce9
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_RECYCLECOMMANDLIST callback function"]
 ms.keywords: PFND3D11DDI_RECYCLECOMMANDLIST, PFND3D11DDI_RECYCLECOMMANDLIST callback, RecycleCommandList, RecycleCommandList callback function [Display Devices], UserModeDisplayDriverDx11_Functions_a917a4c2-4226-46e8-a696-8c51b2960bda.xml, d3d10umddi/RecycleCommandList, display.recyclecommandlist
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - RecycleCommandList
+ - PFND3D11DDI_RECYCLECOMMANDLIST
 ---
 
 # PFND3D11DDI_RECYCLECOMMANDLIST callback function
@@ -50,13 +49,13 @@ The <i>RecycleCommandList</i> function recycles a command list.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hCommandList* [in]
 
@@ -89,3 +88,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

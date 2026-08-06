@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_CREATESCHEDULINGGROUP_0050
 title: PFND3D12DDI_CREATESCHEDULINGGROUP_0050 (d3d12umddi.h)
 description: Creates a scheduling group.
-ms.assetid: 12fc579c-7722-475d-9e6a-0f4633d98dcc
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CREATESCHEDULINGGROUP_0050 callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CREATESCHEDULINGGROUP_0050
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,19 +48,19 @@ Creates a scheduling group.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 Pointer to a [D3D12DDIARG_CREATESCHEDULINGGROUP_0050](ns-d3d12umddi-d3d12ddiarg_createschedulinggroup_0050.md) structure that contains arguments to create a scheduling group.
 
-### -param Arg3
+### -param unnamedParam3
 
 A D3D12DDI_HRTSCHEDULINGGROUP_0050 runtime handle type that represents the contexts associated with a hardware scheduling group.
 
-### -param Arg4
+### -param unnamedParam4
 
 ## -returns
 

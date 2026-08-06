@@ -4,7 +4,6 @@ title: tagKSCAMERA_METADATA_ITEMHEADER (ksmedia.h)
 description: This structure contains the metadata header information that is filled by the camera driver.
 old-location: stream\kscamera_metadata_itemheader.htm
 tech.root: stream
-ms.assetid: B4AC04D7-9F98-41F1-A38D-927F3F3A7699
 ms.date: 04/23/2018
 keywords: ["tagKSCAMERA_METADATA_ITEMHEADER structure"]
 ms.keywords: "*PKSCAMERA_METADATA_ITEMHEADER, KSCAMERA_METADATA_ITEMHEADER, KSCAMERA_METADATA_ITEMHEADER structure [Streaming Media Devices], PKSCAMERA_METADATA_ITEMHEADER, PKSCAMERA_METADATA_ITEMHEADER structure pointer [Streaming Media Devices], ksmedia/KSCAMERA_METADATA_ITEMHEADER, ksmedia/PKSCAMERA_METADATA_ITEMHEADER, stream.kscamera_metadata_itemheader, tagKSCAMERA_METADATA_ITEMHEADER"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - tagKSCAMERA_METADATA_ITEMHEADER
+ - PKSCAMERA_METADATA_ITEMHEADER
  - KSCAMERA_METADATA_ITEMHEADER
 ---
 
@@ -65,3 +66,4 @@ Set to <b>sizeof(KSCAMERA_METADATA_ITEMHEADER)</b> + the size of the metadata pa
 ## -remarks
 
 This structure along with the metadata payload that follows must be 8-byte aligned.
+

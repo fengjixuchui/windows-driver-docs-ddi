@@ -1,10 +1,9 @@
 ---
 UID: NF:ntifs.IoQueueThreadIrp
 title: IoQueueThreadIrp function (ntifs.h)
-description: Reserved for system use.
+description: "Microsoft reserves the IoQueueThreadIrp function for internal use only. Don't use this function in your code."
 old-location: ifsk\ioqueuethreadirp.htm
 tech.root: ifsk
-ms.assetid: 165eaae5-ce68-462e-902c-64120fba91c5
 ms.date: 04/16/2018
 keywords: ["IoQueueThreadIrp function"]
 ms.keywords: IoQueueThreadIrp, IoQueueThreadIrp function [Installable File System Drivers], ifsk.ioqueuethreadirp, ioref_e5906bb2-1a02-4405-92b6-64848786b3f0.xml, ntifs/IoQueueThreadIrp

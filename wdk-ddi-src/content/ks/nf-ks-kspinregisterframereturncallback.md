@@ -4,7 +4,6 @@ title: KsPinRegisterFrameReturnCallback function (ks.h)
 description: The KsPinRegisterFrameReturnCallback function registers a frame return callback with AVStream for a given pin.
 old-location: stream\kspinregisterframereturncallback.htm
 tech.root: stream
-ms.assetid: 480f33e7-6fe6-40a1-9e1b-351378b7e003
 ms.date: 04/23/2018
 keywords: ["KsPinRegisterFrameReturnCallback function"]
 ms.keywords: KsPinRegisterFrameReturnCallback, KsPinRegisterFrameReturnCallback function [Streaming Media Devices], avfunc_16d1d4cd-f3ae-4cc0-b903-1db1f5b40a6f.xml, ks/KsPinRegisterFrameReturnCallback, stream.kspinregisterframereturncallback
@@ -51,14 +50,14 @@ The<b> KsPinRegisterFrameReturnCallback </b>function registers a frame return ca
 
 ## -parameters
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 A pointer to the AVStream <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_kspin">KSPIN</a> structure that you want to place into injection mode by registering a frame return callback.
 
-### -param FrameReturn 
+### -param FrameReturn [in]
 
-[in]
+
 This parameter supplies the address of a minidriver-provided <a href="/windows-hardware/drivers/ddi/ks/nc-ks-pfnkspinframereturn">AVStrMiniFrameReturn</a> routine.
 
 ## -remarks

@@ -4,7 +4,6 @@ title: _NDIS_WWAN_SUPPORTED_DEVICE_SERVICES (ndiswwan.h)
 description: The NDIS_WWAN_SUPPORTED_DEVICE_SERVICES structure describes a list of supported device services.
 old-location: netvista\ndis_wwan_supported_device_services.htm
 tech.root: netvista
-ms.assetid: C94C4426-A487-422D-B84E-B29C2AD7BF0C
 ms.date: 05/02/2018
 keywords: ["NDIS_WWAN_SUPPORTED_DEVICE_SERVICES structure"]
 ms.keywords: "*PNDIS_WWAN_SUPPORTED_DEVICE_SERVICES, NDIS_WWAN_SUPPORTED_DEVICE_SERVICES, NDIS_WWAN_SUPPORTED_DEVICE_SERVICES structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SUPPORTED_DEVICE_SERVICES, PNDIS_WWAN_SUPPORTED_DEVICE_SERVICES structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_SUPPORTED_DEVICE_SERVICES, ndiswwan/NDIS_WWAN_SUPPORTED_DEVICE_SERVICES, ndiswwan/PNDIS_WWAN_SUPPORTED_DEVICE_SERVICES, netvista.ndis_wwan_supported_device_services"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndiswwan.h
 api_name:
+ - _NDIS_WWAN_SUPPORTED_DEVICE_SERVICES
+ - PNDIS_WWAN_SUPPORTED_DEVICE_SERVICES
  - NDIS_WWAN_SUPPORTED_DEVICE_SERVICES
 ---
 
@@ -102,7 +103,7 @@ sizeof(NDIS_WWAN_SUPPORTED_DEVICE_SERVICES)
  
 
 For more information about these members, see 
-     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>.
+     <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>.
 
 ### -field uStatus
 
@@ -110,8 +111,9 @@ The status of the device services query operation.
 
 ### -field DeviceServices
 
-This member points to the list of the <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_supported_device_services">WWAN_SUPPORTED_DEVICE_SERVICES</a> structure that represents the list of supported device services and information about themby using the WWAN_LIST_HEADER structure
+This member points to the list of the <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_supported_device_services">WWAN_SUPPORTED_DEVICE_SERVICES</a> structure that represents the list of supported device services and information about them by using the WWAN_LIST_HEADER structure
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wwan/ns-wwan-_wwan_supported_device_services">WWAN_SUPPORTED_DEVICE_SERVICES</a>
+

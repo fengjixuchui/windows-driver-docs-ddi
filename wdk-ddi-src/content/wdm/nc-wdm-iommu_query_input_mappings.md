@@ -1,12 +1,12 @@
 ---
 UID: NC:wdm.IOMMU_QUERY_INPUT_MAPPINGS
 title: IOMMU_QUERY_INPUT_MAPPINGS (wdm.h)
-description: Attempts to find input mapping IDs which are valid for the given device and populate the provied buffer with those IDs.
-ms.assetid: 5664ad95-31b2-4457-9aab-ecf3768eec69
-ms.date: 10/19/2018
+description: Attempts to find input mapping IDs which are valid for the given device and populate the provided buffer with those IDs.
+tech.root: kernel
+ms.date: 01/19/2023
 keywords: ["IOMMU_QUERY_INPUT_MAPPINGS callback function"]
 req.header: wdm.h
-req.include-header: 
+req.include-header: Wdm.h
 req.target-type: 
 req.target-min-winverclnt: Windows 10, version 1803
 req.target-min-winversvr: 
@@ -36,63 +36,37 @@ api_name:
  - IOMMU_QUERY_INPUT_MAPPINGS
 ---
 
-# IOMMU_QUERY_INPUT_MAPPINGS callback function
-
-
 ## -description
 
-Attempts to find input mapping IDs which are valid for the given device and populate the provied buffer with those IDs.
+Attempts to find input mapping IDs which are valid for the given device and populate the provided buffer with those IDs.
 
 ## -parameters
 
-### -param PhysicalDeviceObject
+### -param PhysicalDeviceObject [_In_]
 
-[_In_] A pointer to the physical device object (PDO) in the device stack.
+A pointer to the physical device object (PDO) in the device stack.
 
-### -param Buffer
+### -param Buffer [_Inout_]
 
-[_Inout_] A pointer to the buffer of the type [**INPUT_MAPPING_ELEMENT**](ns-wdm-_input_mapping_element.md) that is populated with the input mapping IDs.
+A pointer to the buffer of the type [**INPUT_MAPPING_ELEMENT**](ns-wdm-_input_mapping_element.md) that is populated with the input mapping IDs.
 
-### -param BufferLength
+### -param BufferLength [_In_]
 
-[_In_] The length of the buffer pointed to by _Buffer_.
+The length of the buffer pointed to by _Buffer_.
 
-### -param ReturnLength: 
+### -param ReturnLength: [_Out_opt]
 
-[_Out_opt] Optional. A pointer to store the amount of data written (or data that would be written if a buffer of sufficient size was provided).
+Optional. A pointer to store the amount of data written (or data that would be written if a buffer of sufficient size was provided).
 
 ## -returns
 
-Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate NTSTATUS Values error code. For more information, see [NTSTATUS Values](/windows-hardware/drivers/kernel/ntstatus-values). Possible values include:
+Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate NTSTATUS values error code. For more information, see [NTSTATUS Values](/windows-hardware/drivers/kernel/ntstatus-values). Possible values include:
 
-| Error code              | Description                                  |
-| ----------------------- | -------------------------------------------- |
+| Error code | Description |
+|---|---|
 | STATUS_BUFFER_TOO_SMALL | The provided buffer is of insufficient size. |
-| STATUS_UNSUCCESSFUL     | The request cannot be satisfied.             |
-| STATUS_SUCCESS          | The buffer has been populated correctly.     |
-
-## -prototype
-
-```cpp
-//Declaration
-
-IOMMU_QUERY_INPUT_MAPPINGS IommuQueryInputMappings; 
-
-// Definition
-
-NTSTATUS IommuQueryInputMappings 
-(
-	PDEVICE_OBJECT PhysicalDeviceObject
-	PINPUT_MAPPING_ELEMENT Buffer
-	ULONG BufferLength
-	PULONG ReturnLength
-)
-{...}
-
-IOMMU_QUERY_INPUT_MAPPINGS *PIOMMU_QUERY_INPUT_MAPPINGS
-
-
-```
+| STATUS_UNSUCCESSFUL | The request cannot be satisfied. |
+| STATUS_SUCCESS | The buffer has been populated correctly. |
 
 ## -remarks
 

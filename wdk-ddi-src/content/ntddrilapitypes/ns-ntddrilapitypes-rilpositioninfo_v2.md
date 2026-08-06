@@ -4,8 +4,7 @@ title: RILPOSITIONINFO_V2 (ntddrilapitypes.h)
 description: This structure represents the RILPOSITIONINFO_V2.
 old-location: netvista\rilpositioninfo_v2.htm
 tech.root: netvista
-ms.assetid: 881e85a2-4ba2-4940-94c0-61a2d335e52a
-ms.date: 02/16/2018
+ms.date: 01/26/2025
 keywords: ["RILPOSITIONINFO_V2 structure"]
 ms.keywords: "*LPRILPOSITIONINFO, *LPRILPOSITIONINFO_V2, RILPOSITIONINFO, RILPOSITIONINFO_V2, RILPOSITIONINFO_V2 structure [Network Drivers Starting with Windows Vista], netvista.rilpositioninfo_v2, rilapitypes/RILPOSITIONINFO_V2"
 req.header: ntddrilapitypes.h
@@ -41,10 +40,10 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILPOSITIONINFO_V2
+ - LPRILPOSITIONINFO_V2
 ---
 
 # RILPOSITIONINFO_V2 structure (ntddrilapitypes.h)
-
 
 ## -description
 
@@ -80,7 +79,7 @@ LTE serving cell information, a <a href="..\rilapitypes\ns-rilapitypes-rilpositi
 
 The number of GSM network measurement reports in <b>rgNMR</b>.
 
-### -field rgNMR
+### -field rgNMR\[15\]
 
 GSM network measurement reports, an array of <a href="..\rilapitypes\ns-rilapitypes-rilgsmnmr.md">RILGSMNMR</a> structs.
 
@@ -88,19 +87,23 @@ GSM network measurement reports, an array of <a href="..\rilapitypes\ns-rilapity
 
 The number of entries in the UMTS measured results list <b>ruMRL</b>.
 
-### -field ruMRL
+### -field ruMRL\[15\]
+
+UMTS measured results list, an array of <a href="..\rilapitypes\ns-rilapitypes-rilumtsmrl.md">RILUMTSMRL</a> structs.
 
 ### -field dwCntTDSCDMAMRL
 
 The number of entries in the TD-SCDMA measured results list <b>rtMRL</b>. This field is not present in RILPOSITIONINFO_V1.
 
-### -field rtMRL
+### -field rtMRL\[15\]
+
+TD-SCDMA measured results list, an array of <a href="..\rilapitypes\ns-rilapitypes-riltdscdmamrl.md">RILTDSCDMAMRL</a> structs. This field is not present in RILPOSITIONINFO_V1.
 
 ### -field dwCntEUTRAMRL
 
 The number of entries in the EUTRAN (LTE) measured results list <b>reMRL</b>.
 
-### -field reMRL
+### -field reMRL\[15\]
 
 E-UTRAN (LTE) measured results list, an array of <a href="..\rilapitypes\ns-rilapitypes-rileutramrl.md">RILEUTRAMRL</a> structs.
 
@@ -108,19 +111,9 @@ E-UTRAN (LTE) measured results list, an array of <a href="..\rilapitypes\ns-rila
 
 The number of entries in the cdma2000 measured results list <b>rc2kMRL</b>.
 
-### -field rc2kMRL
+### -field rc2kMRL\[12\]
 
 The cdma2000 measured results list, an array of <a href="..\rilapitypes\ns-rilapitypes-rilc2kmrl.md">RILC2KMRL</a> structs.
-
-
-#### - RILTDSCDMAMRL
-
-TD-SCDMA measured results list, an array of <a href="..\rilapitypes\ns-rilapitypes-riltdscdmamrl.md">RILTDSCDMAMRL</a> structs. This field is not present in RILPOSITIONINFO_V1.
-
-
-#### - RILUMTSMRL
-
-UMTS measured results list, an array of <a href="..\rilapitypes\ns-rilapitypes-rilumtsmrl.md">RILUMTSMRL</a> structs.
 
 ## -syntax
 
@@ -133,18 +126,19 @@ struct RILPOSITIONINFO_V2 {
   RILPOSITIONINFOTDSCDMA stTDSCDMAServingCellInfo;
   RILPOSITIONINFOLTE     stLTEServingCellInfo;
   DWORD                  dwCntGSMNMR;
-  RILGSMNMR              rgNMR[MAX_GSMPOS_COUNT_OF_NMR];
+  RILGSMNMR              rgNMR[15];
   DWORD                  dwCntUMTSMRL;
-  ruMRL                  RILUMTSMRL[MAX_UMTSPOS_COUNT_OF_MRL];
+  RILUMTSMRL             ruMRL[15];
   DWORD                  dwCntTDSCDMAMRL;
-  rtMRL                  RILTDSCDMAMRL[MAX_TDSCDMAPOS_COUNT_OF_MRL];
+  RILTDSCDMAMRL          rtMRL[15];
   DWORD                  dwCntEUTRAMRL;
-  RILEUTRAMRL            reMRL[MAX_EUTRAPOS_COUNT_OF_MRL];
+  RILEUTRAMRL            reMRL[15];
   DWORD                  dwCntC2KMRL;
-  RILC2KMRL              rc2kMRL[MAX_C2KPOS_COUNT_OF_MRL];
+  RILC2KMRL              rc2kMRL[12];
 };
 ```
 
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/cellular/dn946511(v=vs.85)">Cellular COM structures</a>
+

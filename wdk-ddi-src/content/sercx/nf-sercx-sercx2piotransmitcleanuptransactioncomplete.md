@@ -4,7 +4,6 @@ title: SerCx2PioTransmitCleanupTransactionComplete function (sercx.h)
 description: The SerCx2PioTransmitCleanupTransactionComplete method notifies version 2 of the serial framework extension (SerCx2) that serial controller driver has finished cleaning up the serial controller's hardware state after a PIO-transmit transaction.
 old-location: serports\sercx2piotransmitcleanuptransactioncomplete.htm
 tech.root: serports
-ms.assetid: 44ADAAB7-E0EE-4908-A0D8-366EC1C3AC2E
 ms.date: 04/23/2018
 keywords: ["SerCx2PioTransmitCleanupTransactionComplete function"]
 ms.keywords: 2/SerCx2PioTransmitCleanupTransactionComplete, SerCx2PioTransmitCleanupTransactionComplete, SerCx2PioTransmitCleanupTransactionComplete method [Serial Ports], serports.sercx2piotransmitcleanuptransactioncomplete
@@ -50,9 +49,9 @@ The <b>SerCx2PioTransmitCleanupTransactionComplete</b> method notifies version 2
 
 ## -parameters
 
-### -param PioTransmit 
+### -param PioTransmit [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIOTRANSMIT</a> handle to a PIO-transmit object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2piotransmitcreate">SerCx2PioTransmitCreate</a> method to create this object.
 
 ## -remarks

@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IModelKeyReference2.GetKeyName
 title: IModelKeyReference2::GetKeyName (dbgmodel.h)
-description: The GetKeyName method returns the name of the key to which this key reference is a handle.
-ms.assetid: bfb61278-8eac-47e5-9900-aed8b31370c5
+description: "The IModelKeyReference2::GetKeyName method, when called on a key reference, gets the name of the underlying key."
 ms.date: 08/14/2018
 keywords: ["IModelKeyReference2::GetKeyName"]
 ms.keywords: IModelKeyReference2::GetKeyName, GetKeyName, IModelKeyReference2.GetKeyName, IModelKeyReference2::GetKeyName, IModelKeyReference2.GetKeyName
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IModelKeyReference2.GetKeyName
+ - IModelKeyReference2::GetKeyName
 ---
 
 # IModelKeyReference2::GetKeyName

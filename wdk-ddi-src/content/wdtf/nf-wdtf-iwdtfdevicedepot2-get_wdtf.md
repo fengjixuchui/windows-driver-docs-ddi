@@ -1,10 +1,9 @@
 ---
 UID: NF:wdtf.IWDTFDeviceDepot2.get_WDTF
 title: IWDTFDeviceDepot2::get_WDTF (wdtf.h)
-description: Gets the main WDTF aggregation object.
+description: Learn how this property gets the main WDTF aggregation object.
 old-location: dtf\iwdtfdevicedepot2_wdtf.htm
 tech.root: dtf
-ms.assetid: 911e5f2b-bd8c-42e6-8272-a447e723e814
 ms.date: 04/04/2018
 keywords: ["IWDTFDeviceDepot2::get_WDTF"]
 ms.keywords: IWDTFDeviceDepot2 interface [Windows Device Testing Framework],WDTF property, IWDTFDeviceDepot2.WDTF, IWDTFDeviceDepot2.get_WDTF, IWDTFDeviceDepot2::WDTF, IWDTFDeviceDepot2::get_WDTF, Microsoft.WDTF.IWDTFDeviceDepot2.WDTF, Microsoft::WDTF::IWDTFDeviceDepot2::WDTF, WDTF property [Windows Device Testing Framework], WDTF property [Windows Device Testing Framework],IWDTFDeviceDepot2 interface, dtf.iwdtfdevicedepot2_wdtf, get_WDTF, wdtf/IWDTFDeviceDepot2::WDTF, wdtf/IWDTFDeviceDepot2::get_WDTF
@@ -38,12 +37,10 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFDeviceDepot2.WDTF
- - IWDTFDeviceDepot2.get_WDTF
+ - IWDTFDeviceDepot2::get_WDTF
 ---
 
 # IWDTFDeviceDepot2::get_WDTF
-
 
 ## -description
 
@@ -53,6 +50,10 @@ This property is read-only.
 
 ## -parameters
 
+### -param ppWDTF
+
+## -returns
+
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtf2">IWDTF2</a>
@@ -60,3 +61,4 @@ This property is read-only.
 
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtfdevicedepot2">IWDTFDeviceDepot2</a>
+

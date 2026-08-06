@@ -4,7 +4,6 @@ title: SearchMemory function (wdbgexts.h)
 description: The SearchMemory function searches the target's virtual memory for a specified pattern of bytes.
 old-location: debugger\searchmemory.htm
 tech.root: debugger
-ms.assetid: 7e07c47e-803b-44fa-9d0f-aa86475246d2
 ms.date: 05/03/2018
 keywords: ["SearchMemory function"]
 ms.keywords: SearchMemory, SearchMemory function [Windows Debugging], WdbgExts_Ref_4eb909e5-edfd-487c-851c-812b15274c66.xml, debugger.searchmemory, wdbgexts/SearchMemory
@@ -43,7 +42,6 @@ api_name:
 
 # SearchMemory function
 
-
 ## -description
 
 The <b>SearchMemory</b> function searches the target's virtual memory for a specified pattern of bytes.
@@ -69,4 +67,3 @@ Specifies the pattern to search for.
 ### -param FoundAddress
 
 Receives the location of the pattern, found in the target's virtual memory.  If the pattern was not found, the value in <i>FoundAddress</i> is unchanged by this function.
-

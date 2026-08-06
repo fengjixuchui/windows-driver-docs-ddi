@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILSENDSUPSERVICEDATARESPONSEPARAMS
 title: RILSENDSUPSERVICEDATARESPONSEPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILSENDSUPSERVICEDATARESPONSEPARAMS structure in your code."
 old-location: netvista\rilsendsupservicedataresponseparams.htm
 tech.root: netvista
-ms.assetid: a339c4fc-87e9-485e-914e-a26e8fac527e
 ms.date: 05/02/2018
 keywords: ["RILSENDSUPSERVICEDATARESPONSEPARAMS structure"]
 ms.keywords: "*LPRILSENDSUPSERVICEDATARESPONSEPARAMS, RILSENDSUPSERVICEDATARESPONSEPARAMS, RILSENDSUPSERVICEDATARESPONSEPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsendsupservicedataresponseparams, ntddrilapitypes/RILSENDSUPSERVICEDATARESPONSEPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSENDSUPSERVICEDATARESPONSEPARAMS
+ - LPRILSENDSUPSERVICEDATARESPONSEPARAMS
 ---
 
 # RILSENDSUPSERVICEDATARESPONSEPARAMS structure (ntddrilapitypes.h)

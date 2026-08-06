@@ -4,7 +4,6 @@ title: GPIO_CLIENT_UNMASK_INTERRUPT (gpioclx.h)
 description: The CLIENT_UnmaskInterrupt event callback function unmasks the interrupt on a general-purpose I/O (GPIO) pin that is configured as an interrupt input.
 old-location: gpio\client_unmaskinterrupt.htm
 tech.root: GPIO
-ms.assetid: 7A97B3B2-2B7B-4661-8C0D-C2234F796EA8
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_UNMASK_INTERRUPT callback function"]
 ms.keywords: CLIENT_UnmaskInterrupt, CLIENT_UnmaskInterrupt callback, CLIENT_UnmaskInterrupt callback function [Parallel Ports], GPIO.client_unmaskinterrupt, GPIO_CLIENT_UNMASK_INTERRUPT, gpioclx/CLIENT_UnmaskInterrupt
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_UnmaskInterrupt
+ - GPIO_CLIENT_UNMASK_INTERRUPT
 ---
 
 # GPIO_CLIENT_UNMASK_INTERRUPT callback function
@@ -50,14 +49,14 @@ The <i>CLIENT_UnmaskInterrupt</i> event callback function unmasks the interrupt 
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param InterruptParameters 
+### -param InterruptParameters [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_enable_interrupt_parameters">GPIO_ENABLE_INTERRUPT_PARAMETERS</a> structure that specifies a GPIO pin and describes the interrupt attributes of this pin.
 
 ## -returns
@@ -112,3 +111,4 @@ The GPIO_CLIENT_UNMASK_INTERRUPT function type is defined in the Gpioclx.h heade
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/ns-gpioclx-_gpio_enable_interrupt_parameters">GPIO_ENABLE_INTERRUPT_PARAMETERS</a>
+

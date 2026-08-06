@@ -2,8 +2,7 @@
 UID: NC:uart.UART_RX_READY
 title: UART_RX_READY (uart.h)
 description: Determines whether there is data pending in the UART hardware.
-tech.root: serports
-ms.assetid: c0c52445-f45a-4032-9fee-af6206d77809
+tech.root: uart
 ms.date: 10/19/2018
 keywords: ["UART_RX_READY callback function"]
 req.header: uart.h
@@ -46,9 +45,9 @@ Determines whether there is data pending in the UART hardware.
 
 ## -parameters
 
-### -param Port
+### -param Port [_Inout_]
 
-[_Inout_] A pointer to a [**_CPPORT**](ns-uart-_cpport.md) structure that contains the  address of the port object that describes the UART hardware.
+A pointer to a [**_CPPORT**](ns-uart-_cpport.md) structure that contains the  address of the port object that describes the UART hardware.
 
 ## -returns
 
@@ -83,3 +82,4 @@ Register your implementation of this callback function by setting the appropriat
 
 [**UART_STATUS**](ne-uart-uart_status.md)
 
+[**uart.h**](index.md)

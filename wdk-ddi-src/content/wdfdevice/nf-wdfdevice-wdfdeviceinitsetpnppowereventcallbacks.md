@@ -4,7 +4,6 @@ title: WdfDeviceInitSetPnpPowerEventCallbacks function (wdfdevice.h)
 description: The WdfDeviceInitSetPnpPowerEventCallbacks method registers a driver's Plug and Play and power management event callback functions.
 old-location: wdf\wdfdeviceinitsetpnppowereventcallbacks.htm
 tech.root: wdf
-ms.assetid: ace53515-0e8a-487d-abf7-caaa09478ed5
 ms.date: 02/26/2018
 keywords: ["WdfDeviceInitSetPnpPowerEventCallbacks function"]
 ms.keywords: DFDeviceObjectGeneralRef_6a2f152e-b1ee-492e-a986-9c1ea925ff24.xml, WdfDeviceInitSetPnpPowerEventCallbacks, WdfDeviceInitSetPnpPowerEventCallbacks method, kmdf.wdfdeviceinitsetpnppowereventcallbacks, wdf.wdfdeviceinitsetpnppowereventcallbacks, wdfdevice/WdfDeviceInitSetPnpPowerEventCallbacks
@@ -55,14 +54,14 @@ The <b>WdfDeviceInitSetPnpPowerEventCallbacks</b> method registers a driver's Pl
 
 ## -parameters
 
-### -param DeviceInit 
+### -param DeviceInit [in]
 
-[in]
+
 A caller-supplied pointer to a <a href="/windows-hardware/drivers/wdf/wdfdevice_init">WDFDEVICE_INIT</a> structure.
 
-### -param PnpPowerEventCallbacks 
+### -param PnpPowerEventCallbacks [in]
 
-[in]
+
 A pointer to a caller-initialized <a href="/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_pnppower_event_callbacks">WDF_PNPPOWER_EVENT_CALLBACKS</a> structure.
 
 ## -remarks

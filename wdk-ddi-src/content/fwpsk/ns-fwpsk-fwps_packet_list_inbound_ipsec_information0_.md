@@ -4,7 +4,6 @@ title: FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0_ (fwpsk.h)
 description: The FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0 structure defines IPsec information associated with inbound packet data.Note  FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0 is a specific version of FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION.
 old-location: netvista\fwps_packet_list_inbound_ipsec_information0.htm
 tech.root: netvista
-ms.assetid: ac5994a7-411c-47f2-ba1d-2d49c727de8d
 ms.date: 05/02/2018
 keywords: ["FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0_ structure"]
 ms.keywords: FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0, FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0 structure [Network Drivers Starting with Windows Vista], FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0_, fwpsk/FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0, netvista.fwps_packet_list_inbound_ipsec_information0, wfp_ref_3_struct_3_fwps_P-Z_3acc4a2d-78ef-418a-ab15-a9e306110baf.xml
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - fwpsk.h
 api_name:
+ - FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0_
  - FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0
 ---
 
@@ -93,3 +93,4 @@ An FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0 structure is included as a member
 
 <a href="/windows-hardware/drivers/ddi/fwpsk/ns-fwpsk-fwps_packet_list_ipsec_information0_">
    FWPS_PACKET_LIST_IPSEC_INFORMATION0</a>
+

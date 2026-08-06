@@ -1,10 +1,9 @@
 ---
 UID: NC:wdm.PINTERFACE_DEREFERENCE
 title: PINTERFACE_DEREFERENCE (wdm.h)
-description: The InterfaceDereference routine decrements the reference count on a driver-defined interface.
+description: The PINTERFACE_DEREFERENCE callback function (wdm.h) decrements the reference count on a driver-defined interface.
 old-location: kernel\interfacedereference.htm
 tech.root: kernel
-ms.assetid: ed23d7fb-0fff-4c04-9291-90e7323f3e6f
 ms.date: 04/30/2018
 keywords: ["PINTERFACE_DEREFERENCE callback function"]
 ms.keywords: InterfaceDereference, InterfaceDereference routine [Kernel-Mode Driver Architecture], PINTERFACE_DEREFERENCE, drvr_interface_96e41fd1-22ff-48d9-85ae-94b735ba67bf.xml, kernel.interfacedereference, wdm/InterfaceDereference
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
- - InterfaceDereference
+ - PINTERFACE_DEREFERENCE
 ---
 
 # PINTERFACE_DEREFERENCE callback function (wdm.h)
@@ -50,9 +49,9 @@ The <i>InterfaceDereference</i> routine decrements the reference count on a driv
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_interface">INTERFACE</a> structure for the interface.
 
 Note that the <i>InterfaceDereference</i> routine is a per interface contract, so there are no general IRQL requirements for calling it.
@@ -74,3 +73,4 @@ The driver that imports the interface is responsible for calling the <i>Interfac
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-pinterface_reference">InterfaceReference</a>
+

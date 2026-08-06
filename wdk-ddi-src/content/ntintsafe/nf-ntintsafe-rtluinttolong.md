@@ -4,7 +4,6 @@ title: RtlUIntToLong function (ntintsafe.h)
 description: Converts a value of type UINT to a value of type LONG.
 old-location: kernel\rtluinttolong.htm
 tech.root: kernel
-ms.assetid: 9C388D02-003B-4B0E-B2ED-E311AE750601
 ms.date: 04/30/2018
 keywords: ["RtlUIntToLong function"]
 ms.keywords: RtlUIntToLong, RtlUIntToLong function [Kernel-Mode Driver Architecture], kernel.rtluinttolong, ntintsafe/RtlUIntToLong
@@ -50,14 +49,14 @@ Converts a value of type <b>UINT</b> to a value of type <b>LONG</b>.
 
 ## -parameters
 
-### -param uOperand 
+### -param uOperand [in]
 
-[in]
+
 The value to be converted.
 
-### -param plResult 
+### -param plResult [out]
 
-[out]
+
 A pointer to the converted value. In the case where the conversion causes a truncation of the original value, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

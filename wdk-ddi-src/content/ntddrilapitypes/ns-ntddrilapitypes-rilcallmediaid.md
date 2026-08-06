@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILCALLMEDIAID
 title: RILCALLMEDIAID (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILCALLMEDIAID structure for internal use only. Don't use the RILCALLMEDIAID structure in your code."
 old-location: netvista\rilcallmediaid.htm
 tech.root: netvista
-ms.assetid: de55805d-d5fe-47ea-832d-536d8a7ee257
 ms.date: 05/02/2018
 keywords: ["RILCALLMEDIAID structure"]
 ms.keywords: "*LPRILCALLMEDIAID, RILCALLMEDIAID, RILCALLMEDIAID structure [Network Drivers Starting with Windows Vista], netvista.rilcallmediaid, ntddrilapitypes/RILCALLMEDIAID"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILCALLMEDIAID
+ - LPRILCALLMEDIAID
 ---
 
 # RILCALLMEDIAID structure (ntddrilapitypes.h)

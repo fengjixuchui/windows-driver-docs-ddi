@@ -4,7 +4,6 @@ title: RtlUnicodeToMultiByteN function (ntifs.h)
 description: The RtlUnicodeToMultiByteN routine translates the specified Unicode string into a new character string, using the current system ANSI code page (ACP). The translated string is not necessarily from a multibyte character set.
 old-location: ifsk\rtlunicodetomultibyten.htm
 tech.root: ifsk
-ms.assetid: e50199d2-948d-4572-8688-89d92961f85b
 ms.date: 04/16/2018
 keywords: ["RtlUnicodeToMultiByteN function"]
 ms.keywords: RtlUnicodeToMultiByteN, RtlUnicodeToMultiByteN routine [Installable File System Drivers], ifsk.rtlunicodetomultibyten, ntifs/RtlUnicodeToMultiByteN, rtlref_233ec1ac-8ecc-4261-8f17-11485d03ec50.xml
@@ -50,29 +49,29 @@ The <b>RtlUnicodeToMultiByteN</b> routine translates the specified Unicode strin
 
 ## -parameters
 
-### -param MultiByteString 
+### -param MultiByteString [out]
 
-[out]
+
 Pointer to a caller-allocated buffer to receive the translated string. <i>MultiByteString </i>buffer must not overlap with <i>UnicodeString </i>buffer.
 
-### -param MaxBytesInMultiByteString 
+### -param MaxBytesInMultiByteString [in]
 
-[in]
+
 Maximum number of bytes to be written to <i>MultiByteString</i>. If this value causes the translated string to be truncated, <b>RtlUnicodeToMultiByteN</b> does not return an error status.
 
-### -param BytesInMultiByteString 
+### -param BytesInMultiByteString [out, optional]
 
-[out, optional]
+
 Pointer to a caller-allocated variable that receives the length, in bytes, of the translated string. This parameter is optional and can be <b>NULL</b>.
 
-### -param UnicodeString 
+### -param UnicodeString [in]
 
-[in]
+
 Pointer to the Unicode source string to be translated.
 
-### -param BytesInUnicodeString 
+### -param BytesInUnicodeString [in]
 
-[in]
+
 Size, in bytes, of the string at <i>UnicodeString</i>.
 
 ## -returns
@@ -89,7 +88,7 @@ This routine does not modify the source string. It returns a null-terminated mul
 
 Like <b>RtlUnicodeToMultiByteSize</b>, <b>RtlUnicodeToMultiByteN</b> supports only precomposed Unicode characters that are mapped to the current system ANSI code page installed at system boot. 
 
-For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/index">Strings</a>.
+For information about other string-handling routines, see <a href="/windows-hardware/drivers/ddi/_kernel/#run-time-library-rtl-routines">Run-Time Library (RTL) Routines</a>.
 
 ## -see-also
 

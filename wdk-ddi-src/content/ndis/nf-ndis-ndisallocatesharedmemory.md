@@ -4,7 +4,6 @@ title: NdisAllocateSharedMemory function (ndis.h)
 description: The NdisAllocateSharedMemory function allocates shared memory from a shared memory provider.
 old-location: netvista\ndisallocatesharedmemory.htm
 tech.root: netvista
-ms.assetid: 1e4919df-7897-44c3-876f-0f1acfe6d5af
 ms.date: 05/02/2018
 keywords: ["NdisAllocateSharedMemory function"]
 ms.keywords: NdisAllocateSharedMemory, NdisAllocateSharedMemory function [Network Drivers Starting with Windows Vista], ndis/NdisAllocateSharedMemory, ndis_shared_memory_ref_252ce78e-6920-4825-9537-c1ddd2f9f900.xml, netvista.ndisallocatesharedmemory
@@ -52,9 +51,9 @@ The
 
 ## -parameters
 
-### -param NdisHandle 
+### -param NdisHandle [in]
 
-[in]
+
 An NDIS driver or instance handle that was obtained during caller initialization. For example, a
      miniport driver can use the NDIS handle that it obtained from the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver">
@@ -70,17 +69,17 @@ An NDIS driver or instance handle that was obtained during caller initialization
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a>
 
-### -param SharedMemoryParameters 
+### -param SharedMemoryParameters [in]
 
-[in]
+
 A pointer to an 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_shared_memory_parameters">
      NDIS_SHARED_MEMORY_PARAMETERS</a> structure that defines the requested attributes for the shared
      memory.
 
-### -param pAllocationHandle 
+### -param pAllocationHandle [in, out]
 
-[in, out]
+
 A pointer to a location for a handle that identifies the shared memory that was allocated. The
      handle is available when the function returns or it is <b>NULL</b> if the function fails. The caller must use
      this handle to free the shared memory that was allocated successfully.

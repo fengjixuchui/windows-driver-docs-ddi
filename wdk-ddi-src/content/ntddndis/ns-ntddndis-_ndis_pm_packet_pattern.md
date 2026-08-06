@@ -4,7 +4,6 @@ title: _NDIS_PM_PACKET_PATTERN (ntddndis.h)
 description: The NDIS_PM_PACKET_PATTERN structure specifies a wake-up pattern, which, when detected by a network adapter that has pattern-match enabled, causes the network adapter to signal a power-management wake-up event.
 old-location: netvista\ndis_pm_packet_pattern.htm
 tech.root: netvista
-ms.assetid: dfda0b5f-06fc-4e94-b14c-6bd32c2c138a
 ms.date: 05/02/2018
 keywords: ["NDIS_PM_PACKET_PATTERN structure"]
 ms.keywords: "*PNDIS_PM_PACKET_PATTERN, 212pnpoid_bfc58374-2745-4c29-a2ac-b7ef864aa710.xml, NDIS_PM_PACKET_PATTERN, NDIS_PM_PACKET_PATTERN structure [Network Drivers Starting with Windows Vista], PNDIS_PM_PACKET_PATTERN, PNDIS_PM_PACKET_PATTERN structure pointer [Network Drivers Starting with Windows Vista], _NDIS_PM_PACKET_PATTERN, netvista.ndis_pm_packet_pattern, ntddndis/NDIS_PM_PACKET_PATTERN, ntddndis/PNDIS_PM_PACKET_PATTERN"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_PM_PACKET_PATTERN
+ - PNDIS_PM_PACKET_PATTERN
  - NDIS_PM_PACKET_PATTERN
 ---
 
@@ -86,7 +87,7 @@ These flags are reserved.
 
 NDIS_PM_PACKET_PATTERN is supplied in the 
     <i>InformationBuffer</i> of the 
-    <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure for following
+    <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure for following
     OIDs:
 
 <ul>
@@ -124,7 +125,7 @@ A protocol uses this OID to request a list of the wake-up patterns currently set
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 
@@ -137,3 +138,4 @@ A protocol uses this OID to request a list of the wake-up patterns currently set
 
 
 <a href="/windows-hardware/drivers/network/oid-pnp-wake-up-pattern-list">OID_PNP_WAKE_UP_PATTERN_LIST</a>
+

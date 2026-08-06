@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_STATE_VS_CONSTBUF_CB
 title: PFND3D10DDI_STATE_VS_CONSTBUF_CB (d3d10umddi.h)
 description: The pfnStateVsConstBufCb function causes the Microsoft Direct3D 10 runtime to refresh the vertex shader stage's bound constant buffers.
 old-location: display\pfnstatevsconstbufcb.htm
-ms.assetid: 43aa7188-d6aa-4890-8eac-1342a984005b
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_STATE_VS_CONSTBUF_CB callback function"]
 ms.keywords: PFND3D10DDI_STATE_VS_CONSTBUF_CB, PFND3D10DDI_STATE_VS_CONSTBUF_CB callback, d3d10state_functions_e0f1c7e6-7f55-462a-b723-011f6bf30906.xml, d3d10umddi/pfnStateVsConstBufCb, display.pfnstatevsconstbufcb, pfnStateVsConstBufCb, pfnStateVsConstBufCb callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - pfnStateVsConstBufCb
+ - PFND3D10DDI_STATE_VS_CONSTBUF_CB
 ---
 
 # PFND3D10DDI_STATE_VS_CONSTBUF_CB callback function
@@ -50,19 +49,19 @@ The <b>pfnStateVsConstBufCb</b> function causes the Microsoft Direct3D 10 runtim
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hRuntimeDevice* [in]
 
 A handle to a context for the core Direct3D 10 runtime. This handle is supplied to the driver in a call to the driver's <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_createdevice">CreateDevice(D3D10)</a> function.
 
-### -param Arg2
+### -param unnamedParam2
 
 *Count* [in]
 
 The total number of buffers to refresh. The number can be -1, which specifies that the Direct3D runtime will use its high watermarks to substitute an optimal value (which is typically less than the maximum valid value for <i>Count</i>). However, no non-NULL binding exists in a slot larger than the optimal <i>Count</i> value.
 
-### -param Arg3
+### -param unnamedParam3
 
 *Base* [in]
 
@@ -83,3 +82,4 @@ The <i>Base</i> and <i>Count</i> parameters that the driver passes to the <b>pfn
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_setconstantbuffers">VsSetConstantBuffers</a>
+

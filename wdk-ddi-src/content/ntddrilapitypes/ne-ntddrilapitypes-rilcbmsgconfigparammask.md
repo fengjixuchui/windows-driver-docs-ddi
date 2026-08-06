@@ -1,10 +1,9 @@
 ---
 UID: NE:ntddrilapitypes.RILCBMSGCONFIGPARAMMASK
 title: RILCBMSGCONFIGPARAMMASK (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILCBMSGCONFIGPARAMMASK enumeration for internal use only. Don't use the RILCBMSGCONFIGPARAMMASK enumeration in your code."
 old-location: netvista\rilcbmsgconfigparammask.htm
 tech.root: netvista
-ms.assetid: 86bbc3ef-c76c-4abd-bfcb-56c804c12b1f
 ms.date: 05/02/2018
 keywords: ["RILCBMSGCONFIGPARAMMASK enumeration"]
 ms.keywords: RILCBMSGCONFIGPARAMMASK, RILCBMSGCONFIGPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_CBMC_ALL, RIL_PARAM_CBMC_CDMAINFO, RIL_PARAM_CBMC_CDMASIZE, RIL_PARAM_CBMC_GWLINFO, netvista.rilcbmsgconfigparammask, ntddrilapitypes/RILCBMSGCONFIGPARAMMASK, ntddrilapitypes/RIL_PARAM_CBMC_ALL, ntddrilapitypes/RIL_PARAM_CBMC_CDMAINFO, ntddrilapitypes/RIL_PARAM_CBMC_CDMASIZE, ntddrilapitypes/RIL_PARAM_CBMC_GWLINFO

@@ -4,7 +4,6 @@ title: IQueueCallbackIoResume (wudfddi.h)
 description: The IQueueCallbackIoResume interface contains a method that resumes the processing of an I/O request from a queue.
 old-location: wdf\iqueuecallbackioresume.htm
 tech.root: wdf
-ms.assetid: 3f27f104-7a06-4f81-9605-2a47c7de7e01
 ms.date: 02/26/2018
 keywords: ["IQueueCallbackIoResume interface"]
 ms.keywords: IQueueCallbackIoResume, IQueueCallbackIoResume interface, IQueueCallbackIoResume interface,described, UMDFQueueObjectRef_3ee832e4-15ba-4c39-bb77-38ebbc91983d.xml, umdf.iqueuecallbackioresume, wdf.iqueuecallbackioresume, wudfddi/IQueueCallbackIoResume
@@ -54,7 +53,7 @@ A driver registers the <b>IQueueCallbackIoResume</b> interface when the driver c
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IQueueCallbackIoResume</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IQueueCallbackIoResume</b> also has these types of members:
+The <b>IQueueCallbackIoResume</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IQueueCallbackIoResume</b> also has these types of members:
 <ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
+<li>Methods</li>
 </ul>

@@ -4,7 +4,6 @@ title: WdfRegistryQueryValue function (wdfregistry.h)
 description: The WdfRegistryQueryValue method retrieves the data that is currently assigned to a specified registry value.
 old-location: wdf\wdfregistryqueryvalue.htm
 tech.root: wdf
-ms.assetid: 1d61e35a-64c6-42e0-b20d-969ded8b9750
 ms.date: 02/26/2018
 keywords: ["WdfRegistryQueryValue function"]
 ms.keywords: DFRegKeyObjectRef_703acb47-ac90-4715-a290-122d4ee3449e.xml, WdfRegistryQueryValue, WdfRegistryQueryValue method, kmdf.wdfregistryqueryvalue, wdf.wdfregistryqueryvalue, wdfregistry/WdfRegistryQueryValue
@@ -55,34 +54,34 @@ The <b>WdfRegistryQueryValue</b> method retrieves the data that is currently ass
 
 ## -parameters
 
-### -param Key 
+### -param Key [in]
 
-[in]
+
 A handle to a registry-key object that represents an opened registry key.
 
-### -param ValueName 
+### -param ValueName [in]
 
-[in]
+
 A pointer to a <a href="/windows/win32/api/ntdef/ns-ntdef-_unicode_string">UNICODE_STRING</a> structure that contains a value name.
 
-### -param ValueLength 
+### -param ValueLength [in]
 
-[in]
+
 The length, in bytes, of the buffer that <i>Value</i> points to.
 
-### -param Value 
+### -param Value [out, optional]
 
-[out, optional]
+
 A pointer to a driver-allocated buffer that receives the registry value's data. If this pointer is <b>NULL</b>, <b>WdfRegistryQueryValue</b> retrieves the data length but not the data.
 
-### -param ValueLengthQueried 
+### -param ValueLengthQueried [out, optional]
 
-[out, optional]
+
 A pointer to a location that receives the registry value's data length. This pointer is optional and can be <b>NULL</b>.
 
-### -param ValueType 
+### -param ValueType [out, optional]
 
-[out, optional]
+
 A pointer to a location that receives the registry value's data type. For a list of data type values, see the <b>Type</b> member of <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_key_value_basic_information">KEY_VALUE_BASIC_INFORMATION</a>. This pointer is optional and can be <b>NULL</b>.
 
 ## -returns

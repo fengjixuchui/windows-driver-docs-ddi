@@ -4,7 +4,6 @@ title: PFLT_TRANSACTION_NOTIFICATION_CALLBACK (fltkernel.h)
 description: A minifilter driver can register a routine of type PFLT_TRANSACTION_NOTIFICATION_CALLBACK as its TransactionNotificationCallback routine.
 old-location: ifsk\pflt_transaction_notification_callback.htm
 tech.root: ifsk
-ms.assetid: ed441ca2-ca98-4c8c-9c2f-4258c535ebac
 ms.date: 04/16/2018
 keywords: ["PFLT_TRANSACTION_NOTIFICATION_CALLBACK callback function"]
 ms.keywords: FltCallbacks_e4045561-4dc3-44eb-b5c6-086e767f9c22.xml, PFLT_TRANSACTION_NOTIFICATION_CALLBACK, TransactionNotificationCallback, TransactionNotificationCallback routine [Installable File System Drivers], fltkernel/TransactionNotificationCallback, ifsk.pflt_transaction_notification_callback
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - fltkernel.h
 api_name:
- - TransactionNotificationCallback
+ - PFLT_TRANSACTION_NOTIFICATION_CALLBACK
 ---
 
 # PFLT_TRANSACTION_NOTIFICATION_CALLBACK callback function
@@ -50,19 +49,19 @@ A minifilter driver can register a routine of type PFLT_TRANSACTION_NOTIFICATION
 
 ## -parameters
 
-### -param FltObjects 
+### -param FltObjects [in]
 
-[in]
+
 Pointer to an <a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_related_objects">FLT_RELATED_OBJECTS</a> structure that contains opaque pointers for the objects related to the current operation.
 
-### -param TransactionContext 
+### -param TransactionContext [in]
 
-[in]
+
 Pointer to the minifilter driver's transaction context.
 
-### -param NotificationMask 
+### -param NotificationMask [in]
 
-[in]
+
 Specifies the type of notifications that the filter manager is sending to the minifilter driver, as one of the following values. 
 
 <table>
@@ -207,3 +206,4 @@ If the minifilter driver returns STATUS_PENDING from this callback routine, it m
 
 
 <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltrollbackcomplete">FltRollbackComplete</a>
+

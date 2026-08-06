@@ -4,7 +4,6 @@ title: IWDFPropertyStoreFactory::RetrieveDevicePropertyStore (wudfddi.h)
 description: The RetrieveDevicePropertyStore method retrieves a property store interface that drivers can use to access the registry.
 old-location: wdf\iwdfpropertystorefactory_retrievedevicepropertystore.htm
 tech.root: wdf
-ms.assetid: 23a4c968-b1d1-48f4-9ea9-b97c4b5b4208
 ms.date: 02/26/2018
 keywords: ["IWDFPropertyStoreFactory::RetrieveDevicePropertyStore"]
 ms.keywords: IWDFPropertyStoreFactory interface,RetrieveDevicePropertyStore method, IWDFPropertyStoreFactory.RetrieveDevicePropertyStore, IWDFPropertyStoreFactory::RetrieveDevicePropertyStore, RetrieveDevicePropertyStore, RetrieveDevicePropertyStore method, RetrieveDevicePropertyStore method,IWDFPropertyStoreFactory interface, UMDFDeviceObjectRef_79101c30-a5ab-44cf-8fa0-52394d1cce32.xml, umdf.iwdfpropertystorefactory_retrievedevicepropertystore, wdf.iwdfpropertystorefactory_retrievedevicepropertystore, wudfddi/IWDFPropertyStoreFactory::RetrieveDevicePropertyStore
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFPropertyStoreFactory.RetrieveDevicePropertyStore
+ - IWDFPropertyStoreFactory::RetrieveDevicePropertyStore
 ---
 
 # IWDFPropertyStoreFactory::RetrieveDevicePropertyStore
@@ -52,34 +51,34 @@ The <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice-retriev
 
 ## -parameters
 
-### -param RootSpecifier 
+### -param RootSpecifier [in]
 
-[in]
+
 The address of a driver-allocated <a href="/windows-hardware/drivers/ddi/wudfddi_types/ns-wudfddi_types-_wdf_property_store_root">WDF_PROPERTY_STORE_ROOT</a> structure. The driver fills in this structure to identify the property store that <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice-retrievedevicepropertystore">RetrieveDevicePropertyStore</a> retrieves.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_property_store_retrieve_flags">WDF_PROPERTY_STORE_RETRIEVE_FLAGS</a>-typed flag that specifies whether UMDF should create a specified registry entry if it does not exist, and whether the new entry should be deleted when Windows restarts.
 
-### -param DesiredAccess 
+### -param DesiredAccess [in]
 
-[in]
+
 A REGSAM-typed bit mask that specifies the types of access to the registry that you want your driver to have. The REGSAM type is defined in Winreg.h, and is described in the Windows SDK at <a href="/windows/win32/shell/messages">REGSAM</a>. The bit mask must not specify GENERIC_WRITE, KEY_CREATE_SUB_KEY, or WRITE_DAC access. (Although the driver cannot specify KEY_CREATE_SUB_KEY, its call to <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice-retrievedevicepropertystore">RetrieveDevicePropertyStore</a> can create a subkey.)
 
-### -param SubkeyPath 
+### -param SubkeyPath [in]
 
-[in]
+
 A pointer to a caller-supplied character string that represents the name of a subkey located under the registry key that the <i>RootSpecifier</i> parameter specifies. This parameter is optional and can be <b>NULL</b>. See more information in Remarks.
 
-### -param PropertyStore 
+### -param PropertyStore [out]
 
-[out]
+
 The address of a location that receives a pointer to an <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfnamedpropertystore2">IWDFNamedPropertyStore2</a> interface. The driver uses this interface to access values in the registry.
 
-### -param Disposition 
+### -param Disposition [out]
 
-[out]
+
 The address of a location that receives a <a href="/windows-hardware/drivers/ddi/wudfddi_types/ne-wudfddi_types-_wdf_property_store_disposition">WDF_PROPERTY_STORE_DISPOSITION</a>-typed value.
 
 ## -returns
@@ -193,7 +192,6 @@ Exit:
 ...
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdevice-retrievedevicepropertystore">IWDFDevice::RetrieveDevicePropertyStore</a>
@@ -205,3 +203,4 @@ Exit:
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfpropertystorefactory">IWDFPropertyStoreFactory</a>
+

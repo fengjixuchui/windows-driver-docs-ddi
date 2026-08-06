@@ -4,7 +4,6 @@ title: IWDFUsbTargetDevice::GetNumInterfaces (wudfusb.h)
 description: The GetNumInterfaces method retrieves the number of USB interfaces for the USB device.
 old-location: wdf\iwdfusbtargetdevice_getnuminterfaces.htm
 tech.root: wdf
-ms.assetid: 4da2f2b0-f2ad-465d-b63e-f11406d4c210
 ms.date: 02/26/2018
 keywords: ["IWDFUsbTargetDevice::GetNumInterfaces"]
 ms.keywords: GetNumInterfaces, GetNumInterfaces method, GetNumInterfaces method,IWDFUsbTargetDevice interface, IWDFUsbTargetDevice interface,GetNumInterfaces method, IWDFUsbTargetDevice.GetNumInterfaces, IWDFUsbTargetDevice::GetNumInterfaces, UMDFUSBref_43f488a1-350d-473a-aa10-d88983ea39f7.xml, umdf.iwdfusbtargetdevice_getnuminterfaces, wdf.iwdfusbtargetdevice_getnuminterfaces, wudfusb/IWDFUsbTargetDevice::GetNumInterfaces
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFUsbTargetDevice.GetNumInterfaces
+ - IWDFUsbTargetDevice::GetNumInterfaces
 ---
 
 # IWDFUsbTargetDevice::GetNumInterfaces
@@ -68,7 +67,6 @@ The following code example retrieves the number of USB interfaces for the USB de
     UCHAR NumInterfaces = pIUsbTargetDevice->GetNumInterfaces();
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbinterface">IWDFUsbInterface</a>
@@ -76,3 +74,4 @@ The following code example retrieves the number of USB interfaces for the USB de
 
 
 <a href="/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetdevice">IWDFUsbTargetDevice</a>
+

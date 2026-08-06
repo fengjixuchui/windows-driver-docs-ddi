@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGKARG_GETROOTPAGETABLESIZE
 title: _DXGKARG_GETROOTPAGETABLESIZE (d3dkmddi.h)
 description: DXGKARG_GETROOTPAGETABLESIZE is used with DxgkDdiGetRootPageTableSize.
 old-location: display\dxgkarg_getrootpagetablesize.htm
-ms.assetid: 31CB33F9-87E8-419D-AF35-E7F731661DD5
 ms.date: 05/10/2018
 keywords: ["DXGKARG_GETROOTPAGETABLESIZE structure"]
 ms.keywords: "*INOUT_PDXGKARG_GETROOTPAGETABLESIZE, DXGKARG_GETROOTPAGETABLESIZE, DXGKARG_GETROOTPAGETABLESIZE structure [Display Devices], _DXGKARG_GETROOTPAGETABLESIZE, d3dkmddi/DXGKARG_GETROOTPAGETABLESIZE, display.dxgkarg_getrootpagetablesize"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
+ - _DXGKARG_GETROOTPAGETABLESIZE
  - DXGKARG_GETROOTPAGETABLESIZE
 ---
 
@@ -52,9 +52,9 @@ api_name:
 
 ## -struct-fields
 
-### -field NumberOfPte
+### -field NumberOfPte [in]
 
-[in] A pointer to the number of page table entries which are required to be in the root page table.
+A pointer to the number of page table entries which are required to be in the root page table.
 
 [out] The actual number of page table entries in the page table with the returned size.
 
@@ -65,3 +65,4 @@ Physical adapter index (zero for non-linked display adapter configurations).
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_getrootpagetablesize">DxgkDdiGetRootPageTableSize</a>
+

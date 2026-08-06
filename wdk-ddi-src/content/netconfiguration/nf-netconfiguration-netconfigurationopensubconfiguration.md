@@ -3,8 +3,7 @@ UID: NF:netconfiguration.NetConfigurationOpenSubConfiguration
 title: NetConfigurationOpenSubConfiguration function (netconfiguration.h)
 description: Opens a sub configuration of a specified adapter configuration object.
 tech.root: netvista
-ms.assetid: e825d2f8-b8ad-4488-a68e-73d1d6b849bb
-ms.date: 02/07/2018
+ms.date: 03/30/2022
 keywords: ["NetConfigurationOpenSubConfiguration function"]
 ms.keywords: NetConfigurationOpenSubConfiguration
 req.header: netconfiguration.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.21
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: NetAdapterCxStub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -49,19 +48,19 @@ Opens a sub configuration of a specified adapter configuration object.
 
 ## -parameters
 
-### -param Configuration
+### -param Configuration [_In_]
 
 A handle to an adapter configuration object opened in a prior call to [NetAdapterOpenConfiguration](../netadapter/nf-netadapter-netadapteropenconfiguration.md) or **NetConfigurationOpenSubConfiguration**.
 
-### -param SubConfigurationName
+### -param SubConfigurationName [_In_]
 
 A pointer to a string specifying the name of the sub configuration to open.
 
-### -param SubConfigurationAttributes
+### -param SubConfigurationAttributes [_In_opt_]
 
 A pointer to a [WDF_OBJECT_ATTRIBUTES](../wdfobject/ns-wdfobject-_wdf_object_attributes.md) structure that contains driver-supplied attributes for the new configuration object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param SubConfiguration
+### -param SubConfiguration [_Out_]
 
 A pointer to a location that receives a handle to the new sub configuration object.
 
@@ -78,6 +77,4 @@ The client driver closes the sub configuration by calling [NetConfigurationClose
 ## -see-also
 
 [NetAdapterOpenConfiguration](../netadapter/nf-netadapter-netadapteropenconfiguration.md)
-
-[NetConfigurationOpenSubConfiguration](nf-netconfiguration-netconfigurationopensubconfiguration.md)
 

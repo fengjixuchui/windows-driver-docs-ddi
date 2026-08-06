@@ -4,7 +4,6 @@ title: SRIOV_GET_RESOURCE_FOR_BAR (pcivirt.h)
 description: Gets the translated resource for a specific Base Address Register (BAR).
 old-location: pci\sriov_get_resource_for_bar.htm
 tech.root: PCI
-ms.assetid: b52bafee-d541-4396-be0a-06956d07fb2b
 ms.date: 02/24/2018
 keywords: ["SRIOV_GET_RESOURCE_FOR_BAR callback"]
 ms.keywords: "*PSRIOV_GET_RESOURCE_FOR_BAR, *PSRIOV_GET_RESOURCE_FOR_BAR callback function pointer [Buses], PCI.sriov_get_resource_for_bar, SRIOV_GET_RESOURCE_FOR_BAR, SriovGetResourceForBar, SriovGetResourceForBar callback function [Buses], pcivirt/SriovGetResourceForBar"
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - pcivirt.h
 api_name:
- - PSRIOV_GET_RESOURCE_FOR_BAR
+ - SRIOV_GET_RESOURCE_FOR_BAR
 ---
 
 # SRIOV_GET_RESOURCE_FOR_BAR callback
@@ -50,24 +49,24 @@ Gets the translated resource for a specific Base Address Register (BAR)
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to a driver-defined context.
 
-### -param VfIndex 
+### -param VfIndex [in]
 
-[in]
+
 A zero-based index of the VF that is being queried.
 
-### -param BarIndex 
+### -param BarIndex [in]
 
-[in]
+
 The index of the BAR (between 0 and 5).
 
-### -param Resource 
+### -param Resource [out]
 
-[out]
+
 
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_cm_partial_resource_descriptor">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that is filled with the translated hardware resources for the specified BAR.
@@ -151,3 +150,4 @@ Virtualization_GetResourceForBar(
 
 
 ```
+

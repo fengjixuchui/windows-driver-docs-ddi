@@ -4,7 +4,6 @@ title: NtOpenEnlistment function (wdm.h)
 description: The ZwOpenEnlistment routine obtains a handle to an existing enlistment object.
 old-location: kernel\zwopenenlistment.htm
 tech.root: kernel
-ms.assetid: b70d524f-2341-4b19-9c4a-f5095cb7f412
 ms.date: 04/30/2018
 keywords: ["NtOpenEnlistment function"]
 ms.keywords: NtOpenEnlistment, ZwOpenEnlistment, ZwOpenEnlistment routine [Kernel-Mode Driver Architecture], kernel.zwopenenlistment, ktm_ref_cc7719f5-a9a2-42be-9961-01f910f864bc.xml, wdm/NtOpenEnlistment, wdm/ZwOpenEnlistment
@@ -38,7 +37,6 @@ api_type:
 api_location:
  - NtosKrnl.exe
 api_name:
- - ZwOpenEnlistment
  - NtOpenEnlistment
 ---
 
@@ -51,29 +49,29 @@ The <b>ZwOpenEnlistment</b> routine obtains a handle to an existing <a href="/wi
 
 ## -parameters
 
-### -param EnlistmentHandle 
+### -param EnlistmentHandle [out]
 
-[out]
+
 A pointer to a caller-allocated variable that receives a handle to an enlistment object if the call to <b>ZwOpenEnlistment</b> succeeds.
 
-### -param DesiredAccess 
+### -param DesiredAccess [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/kernel/access-mask">ACCESS_MASK</a>-typed value that specifies the requested access to the enlistment object. For more information about how to specify this parameter, see the <i>DesiredAccess</i> parameter of <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateenlistment">ZwCreateEnlistment</a>. This parameter cannot be zero.
 
-### -param ResourceManagerHandle 
+### -param ResourceManagerHandle [in]
 
-[in]
+
 A handle to a resource manager object that was obtained by a previous call to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntcreateresourcemanager">ZwCreateResourceManager</a> or <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntopenresourcemanager">ZwOpenResourceManager</a>.
 
-### -param EnlistmentGuid 
+### -param EnlistmentGuid [in]
 
-[in]
+
 A pointer to a GUID that identifies the enlistment. For more information, see the following Remarks section.
 
-### -param ObjectAttributes 
+### -param ObjectAttributes [in, optional]
 
-[in, optional]
+
 A pointer to an <a href="/windows/win32/api/ntdef/ns-ntdef-_object_attributes">OBJECT_ATTRIBUTES</a> structure that specifies the object's attributes. Use the <a href="/windows/win32/api/ntdef/nf-ntdef-initializeobjectattributes">InitializeObjectAttributes</a> routine to initialize this structure, but specify only that routine's <i>InitializedAttributes</i> and <i>Attributes</i> parameters. If the caller is not running in a system thread context, it must set the OBJ_KERNEL_HANDLE flag in the <i>Attributes</i> parameter. This parameter is optional and can be <b>NULL</b>.
 
 ## -returns
@@ -196,3 +194,4 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ntsetinformationenlistment">ZwSetInformationEnlistment</a>
+

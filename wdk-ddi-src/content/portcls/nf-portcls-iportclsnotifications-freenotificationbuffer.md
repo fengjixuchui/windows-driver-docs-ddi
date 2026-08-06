@@ -4,7 +4,6 @@ title: IPortClsNotifications::FreeNotificationBuffer (portcls.h)
 description: Frees a previously allocated IPortClsNotifications buffer. The buffer is used in sending notifications, to allow for communications between audio modules and UWP apps.
 old-location: audio\iportclsnotifications_freenotification.htm
 tech.root: audio
-ms.assetid: 93EC2651-3C52-4810-9F7A-A81BC7DA20AF
 ms.date: 05/08/2018
 keywords: ["IPortClsNotifications::FreeNotificationBuffer"]
 ms.keywords: FreeNotificationBuffer, FreeNotificationBuffer method [Audio Devices], FreeNotificationBuffer method [Audio Devices],IPortClsNotifications interface, IPortClsNotifications interface [Audio Devices],FreeNotificationBuffer method, IPortClsNotifications.FreeNotificationBuffer, IPortClsNotifications::FreeNotificationBuffer, audio.iportclsnotifications_freenotification, portcls/IPortClsNotifications::FreeNotificationBuffer
@@ -39,7 +38,7 @@ api_location:
  - Portcls.lib
  - Portcls.dll
 api_name:
- - IPortClsNotifications.FreeNotificationBuffer
+ - IPortClsNotifications::FreeNotificationBuffer
 ---
 
 # IPortClsNotifications::FreeNotificationBuffer
@@ -53,11 +52,12 @@ For more information about audio modules, see <a href="/windows-hardware/drivers
 
 ## -parameters
 
-### -param NotificationBuffer 
+### -param NotificationBuffer [in]
 
-[in]
+
 The address of the notification buffer returned in the <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-iportclsnotifications-allocnotificationbuffer">IPortClsNotifications::AllocNotificationBuffer</a> call.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/nn-portcls-iportclsnotifications">IPortClsNotifications</a>
+

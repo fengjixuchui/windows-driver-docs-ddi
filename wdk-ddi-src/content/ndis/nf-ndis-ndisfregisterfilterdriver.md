@@ -4,7 +4,6 @@ title: NdisFRegisterFilterDriver function (ndis.h)
 description: A filter driver calls the NdisFRegisterFilterDriver function to register its FilterXxx functions with NDIS.
 old-location: netvista\ndisfregisterfilterdriver.htm
 tech.root: netvista
-ms.assetid: 14381de2-36d9-4ec8-9d4e-7af3e6d8ecf3
 ms.date: 05/02/2018
 keywords: ["NdisFRegisterFilterDriver function"]
 ms.keywords: NdisFRegisterFilterDriver, NdisFRegisterFilterDriver function [Network Drivers Starting with Windows Vista], filter_ndis_functions_ref_a772ecb2-0cba-439e-82f1-928c3b40f3fd.xml, ndis/NdisFRegisterFilterDriver, netvista.ndisfregisterfilterdriver
@@ -54,18 +53,18 @@ A filter driver calls the
 
 ## -parameters
 
-### -param DriverObject 
+### -param DriverObject [in]
 
-[in]
+
 A pointer to an opaque driver object that the filter driver received in its 
      <a href="/windows-hardware/drivers/storage/driverentry-of-ide-controller-minidriver">DriverEntry</a> routine at the 
      <i>Argument1</i> parameter. (For more information, see 
      <a href="/windows-hardware/drivers/network/initializing-a-filter-driver">DriverEntry of NDIS Filter
      Drivers</a>.)
 
-### -param FilterDriverContext 
+### -param FilterDriverContext [in]
 
-[in]
+
 A handle to a driver-allocated context area where the driver maintains state and configuration
      information.
 
@@ -77,9 +76,9 @@ A pointer to an
      its 
      <i>FilterXxx</i> function entry points.
 
-### -param NdisFilterDriverHandle 
+### -param NdisFilterDriverHandle [out]
 
-[out]
+
 A pointer to a handle variable. If the call to 
      <b>
     NdisFRegisterFilterDriver</b> succeeds, NDIS fills this variable with a filter driver handle. The

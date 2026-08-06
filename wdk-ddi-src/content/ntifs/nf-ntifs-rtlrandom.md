@@ -4,14 +4,13 @@ title: RtlRandom function (ntifs.h)
 description: The RtlRandom routine returns a random number that was generated from a given seed value.
 old-location: ifsk\rtlrandom.htm
 tech.root: ifsk
-ms.assetid: f3975ad7-8eb8-4f46-8024-6a1decc21c77
 ms.date: 04/16/2018
 keywords: ["RtlRandom function"]
 ms.keywords: RtlRandom, RtlRandom routine [Installable File System Drivers], ifsk.rtlrandom, ntifs/RtlRandom, rtlref_c9c196b4-7335-4320-ae7f-7c565b6f73e6.xml
 req.header: ntifs.h
 req.include-header: Ntifs.h, Fltkernel.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Microsoft Windows 2000 and later.
+req.target-min-winverclnt: Windows 2000
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,9 +49,9 @@ The <b>RtlRandom</b> routine returns a random number that was generated from a g
 
 ## -parameters
 
-### -param Seed 
+### -param Seed [in, out]
 
-[in, out]
+
 Unsigned long value from which to generate a random number.
 
 ## -returns

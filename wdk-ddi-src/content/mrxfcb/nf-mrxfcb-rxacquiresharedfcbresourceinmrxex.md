@@ -4,7 +4,6 @@ title: RxAcquireSharedFcbResourceInMRxEx function (mrxfcb.h)
 description: RxAcquireSharedFcbResourceInMRxEx acquires the FCB resource for a network mini-redirector driver in shared mode.
 old-location: ifsk\rxacquiresharedfcbresourceinmrxex.htm
 tech.root: ifsk
-ms.assetid: bf8390db-7e42-4860-8cf6-df3459f16cea
 ms.date: 04/16/2018
 keywords: ["RxAcquireSharedFcbResourceInMRxEx function"]
 ms.keywords: RxAcquireSharedFcbResourceInMRxEx, RxAcquireSharedFcbResourceInMRxEx routine [Installable File System Drivers], ifsk.rxacquiresharedfcbresourceinmrxex, mrxfcb/RxAcquireSharedFcbResourceInMRxEx, rxref_2b8fc5d6-96e5-45a0-897a-f55964e6cc8a.xml
@@ -50,9 +49,9 @@ api_name:
 
 ## -parameters
 
-### -param pRxContext 
+### -param pRxContext [in]
 
-[in]
+
 A pointer to the RX_CONTEXT. This parameter supplies the context of the operation for special treatment by internal RDBSS tracking if this feature is enabled.
 
 ### -param Fcb

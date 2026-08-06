@@ -1,8 +1,7 @@
 ---
 UID: NE:d3d12umddi.D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_TYPE
 title: D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_TYPE (d3d12umddi.h)
-description: Declares the type of resource access to begin a Render Pass.
-ms.assetid: 3bb314ce-a25c-4f6a-a3a4-8e7d890ac572
+description: The call to begin a render pass uses the D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_TYPE enumeration to specify the type of resource access.
 ms.date: 10/19/2018
 keywords: ["D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_TYPE enumeration"]
 ms.keywords: D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_TYPE, D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_TYPE,
@@ -30,8 +29,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - D3D12DDI_RENDER_PASS_BEGINNING_ACCESS_TYPE
-product:
- - Windows
 dev_langs:
  - c++
 ---

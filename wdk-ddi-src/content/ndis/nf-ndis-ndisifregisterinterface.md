@@ -4,7 +4,6 @@ title: NdisIfRegisterInterface function (ndis.h)
 description: The NdisIfRegisterInterface function registers an NDIS network interface.
 old-location: netvista\ndisifregisterinterface.htm
 tech.root: netvista
-ms.assetid: d0b0ada7-afb1-4cb7-ada6-7c5c7abe7d19
 ms.date: 05/02/2018
 keywords: ["NdisIfRegisterInterface function"]
 ms.keywords: NdisIfRegisterInterface, NdisIfRegisterInterface function [Network Drivers Starting with Windows Vista], ndis/NdisIfRegisterInterface, net_if_functions_ref_baca325c-667d-4472-9c91-dbc8fd41d033.xml, netvista.ndisifregisterinterface
@@ -52,17 +51,17 @@ The
 
 ## -parameters
 
-### -param NdisProviderHandle 
+### -param NdisProviderHandle [in]
 
-[in]
+
 A handle that identifies the network interface provider that is registering the interface. The
      caller obtained this handle from a previous call to the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisifregisterprovider">
      NdisIfRegisterProvider</a> function.
 
-### -param NetLuid 
+### -param NetLuid [in]
 
-[in]
+
 The caller-supplied 
      <a href="/windows/win32/api/ifdef/ns-ifdef-net_luid_lh">NET_LUID</a> value that is associated with the
      interface. The interface provider used the 
@@ -71,16 +70,16 @@ The caller-supplied
      the computer restarts and provide the same NET_LUID value each time it registers a particular
      interface.
 
-### -param ProviderIfContext 
+### -param ProviderIfContext [in]
 
-[in]
+
 A handle to a caller-allocated context area that is associated with the interface. NDIS passes
      this handle to the callback functions that the caller registered with 
      <b>NdisIfRegisterProvider</b>.
 
-### -param pIfInfo 
+### -param pIfInfo [in]
 
-[in]
+
 A pointer to a caller-allocated 
      <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_net_if_information">NET_IF_INFORMATION</a> structure that
      provides information about the interface. This structure contains information that remains constant

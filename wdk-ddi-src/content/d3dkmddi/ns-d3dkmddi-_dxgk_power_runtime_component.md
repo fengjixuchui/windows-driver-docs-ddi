@@ -3,7 +3,6 @@ UID: NS:d3dkmddi._DXGK_POWER_RUNTIME_COMPONENT
 title: _DXGK_POWER_RUNTIME_COMPONENT (d3dkmddi.h)
 description: Describes information about a power component such as a graphics processing engine, a display device, or a block of memory
 old-location: display\dxgk_power_runtime_component.htm
-ms.assetid: ed7e6fc4-651d-4dc3-9c90-cca3c5f0eb67
 ms.date: 05/10/2018
 keywords: ["DXGK_POWER_RUNTIME_COMPONENT structure"]
 ms.keywords: DXGK_POWER_RUNTIME_COMPONENT, DXGK_POWER_RUNTIME_COMPONENT structure [Display Devices], _DXGK_POWER_RUNTIME_COMPONENT, d3dkmddi/DXGK_POWER_RUNTIME_COMPONENT, display.dxgk_power_runtime_component
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmddi.h
 api_name:
+ - _DXGK_POWER_RUNTIME_COMPONENT
  - DXGK_POWER_RUNTIME_COMPONENT
 ---
 
@@ -102,3 +102,4 @@ Multiple power components should not be mapped to the same engine (node), to the
 [DXGK_POWER_COMPONENT_MAPPING](./ns-d3dkmddi-_dxgk_power_component_mapping.md)
 
 [DXGK_POWER_RUNTIME_STATE](./ns-d3dkmddi-_dxgk_power_runtime_state.md)
+

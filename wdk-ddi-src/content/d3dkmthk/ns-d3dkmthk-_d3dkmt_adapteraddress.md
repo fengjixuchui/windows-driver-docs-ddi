@@ -3,14 +3,13 @@ UID: NS:d3dkmthk._D3DKMT_ADAPTERADDRESS
 title: _D3DKMT_ADAPTERADDRESS (d3dkmthk.h)
 description: The D3DKMT_ADAPTERADDRESS structure describes the physical location of the graphics adapter.
 old-location: display\d3dkmt_adapteraddress.htm
-ms.assetid: 70f45ca2-4be6-4e74-b2e8-55ef7a43192f
 ms.date: 05/10/2018
 keywords: ["D3DKMT_ADAPTERADDRESS structure"]
 ms.keywords: D3DKMT_ADAPTERADDRESS, D3DKMT_ADAPTERADDRESS structure [Display Devices], OpenGL_Structs_98b1caf8-46c4-4f78-896c-031e8f3f61d0.xml, _D3DKMT_ADAPTERADDRESS, d3dkmthk/D3DKMT_ADAPTERADDRESS, display.d3dkmt_adapteraddress
 req.header: d3dkmthk.h
 req.include-header: D3dkmthk.h
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmthk.h
 api_name:
+ - _D3DKMT_ADAPTERADDRESS
  - D3DKMT_ADAPTERADDRESS
 ---
 
@@ -52,17 +52,17 @@ The D3DKMT_ADAPTERADDRESS structure describes the physical location of the graph
 
 ## -struct-fields
 
-### -field BusNumber
+### -field BusNumber [out]
 
-[out] The number of the bus that the graphics adapter's physical device is located on.
+The number of the bus that the graphics adapter's physical device is located on.
 
-### -field DeviceNumber
+### -field DeviceNumber [out]
 
-[out] The index of the graphics adapter's physical device on the bus.
+The index of the graphics adapter's physical device on the bus.
 
-### -field FunctionNumber
+### -field FunctionNumber [out]
 
-[out] The function number of the graphics adapter on the physical device.
+The function number of the graphics adapter on the physical device.
 
 ## -see-also
 
@@ -71,3 +71,4 @@ The D3DKMT_ADAPTERADDRESS structure describes the physical location of the graph
 
 
 <a href="/windows-hardware/drivers/ddi/d3dkmthk/ns-d3dkmthk-_d3dkmt_queryadapterinfo">D3DKMT_QUERYADAPTERINFO</a>
+

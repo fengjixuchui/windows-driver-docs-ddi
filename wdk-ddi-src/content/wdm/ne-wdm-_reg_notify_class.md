@@ -4,7 +4,6 @@ title: _REG_NOTIFY_CLASS (wdm.h)
 description: The REG_NOTIFY_CLASS enumeration type specifies the type of registry operation that the configuration manager is passing to a RegistryCallback routine.
 old-location: kernel\reg_notify_class.htm
 tech.root: kernel
-ms.assetid: 2ec47d47-1de3-43af-9a71-7fa366ba2d1a
 ms.date: 04/30/2018
 keywords: ["REG_NOTIFY_CLASS enumeration"]
 ms.keywords: MaxRegNtNotifyClass, REG_NOTIFY_CLASS, REG_NOTIFY_CLASS enumeration [Kernel-Mode Driver Architecture], RegNtCallbackObjectContextCleanup, RegNtDeleteKey, RegNtDeleteValueKey, RegNtEnumerateKey, RegNtEnumerateValueKey, RegNtKeyHandleClose, RegNtPostCreateKey, RegNtPostCreateKeyEx, RegNtPostDeleteKey, RegNtPostDeleteValueKey, RegNtPostEnumerateKey, RegNtPostEnumerateValueKey, RegNtPostFlushKey, RegNtPostKeyHandleClose, RegNtPostLoadKey, RegNtPostOpenKey, RegNtPostOpenKeyEx, RegNtPostQueryKey, RegNtPostQueryKeyName, RegNtPostQueryKeySecurity, RegNtPostQueryMultipleValueKey, RegNtPostQueryValueKey, RegNtPostRenameKey, RegNtPostReplaceKey, RegNtPostRestoreKey, RegNtPostSaveKey, RegNtPostSetInformationKey, RegNtPostSetKeySecurity, RegNtPostSetValueKey, RegNtPostUnLoadKey, RegNtPreCreateKey, RegNtPreCreateKeyEx, RegNtPreDeleteKey, RegNtPreDeleteValueKey, RegNtPreEnumerateKey, RegNtPreEnumerateValueKey, RegNtPreFlushKey, RegNtPreKeyHandleClose, RegNtPreLoadKey, RegNtPreOpenKey, RegNtPreOpenKeyEx, RegNtPreQueryKey, RegNtPreQueryKeyName, RegNtPreQueryKeySecurity, RegNtPreQueryMultipleValueKey, RegNtPreQueryValueKey, RegNtPreRenameKey, RegNtPreReplaceKey, RegNtPreRestoreKey, RegNtPreSaveKey, RegNtPreSetInformationKey, RegNtPreSetKeySecurity, RegNtPreSetValueKey, RegNtPreUnLoadKey, RegNtQueryKey, RegNtQueryMultipleValueKey, RegNtQueryValueKey, RegNtRenameKey, RegNtSetInformationKey, RegNtSetValueKey, _REG_NOTIFY_CLASS, kernel.reg_notify_class, sysenum_b6fa1e3a-74d4-4925-b7c9-60d905c48f50.xml, wdm/MaxRegNtNotifyClass, wdm/REG_NOTIFY_CLASS, wdm/RegNtCallbackObjectContextCleanup, wdm/RegNtDeleteKey, wdm/RegNtDeleteValueKey, wdm/RegNtEnumerateKey, wdm/RegNtEnumerateValueKey, wdm/RegNtKeyHandleClose, wdm/RegNtPostCreateKey, wdm/RegNtPostCreateKeyEx, wdm/RegNtPostDeleteKey, wdm/RegNtPostDeleteValueKey, wdm/RegNtPostEnumerateKey, wdm/RegNtPostEnumerateValueKey, wdm/RegNtPostFlushKey, wdm/RegNtPostKeyHandleClose, wdm/RegNtPostLoadKey, wdm/RegNtPostOpenKey, wdm/RegNtPostOpenKeyEx, wdm/RegNtPostQueryKey, wdm/RegNtPostQueryKeyName, wdm/RegNtPostQueryKeySecurity, wdm/RegNtPostQueryMultipleValueKey, wdm/RegNtPostQueryValueKey, wdm/RegNtPostRenameKey, wdm/RegNtPostReplaceKey, wdm/RegNtPostRestoreKey, wdm/RegNtPostSaveKey, wdm/RegNtPostSetInformationKey, wdm/RegNtPostSetKeySecurity, wdm/RegNtPostSetValueKey, wdm/RegNtPostUnLoadKey, wdm/RegNtPreCreateKey, wdm/RegNtPreCreateKeyEx, wdm/RegNtPreDeleteKey, wdm/RegNtPreDeleteValueKey, wdm/RegNtPreEnumerateKey, wdm/RegNtPreEnumerateValueKey, wdm/RegNtPreFlushKey, wdm/RegNtPreKeyHandleClose, wdm/RegNtPreLoadKey, wdm/RegNtPreOpenKey, wdm/RegNtPreOpenKeyEx, wdm/RegNtPreQueryKey, wdm/RegNtPreQueryKeyName, wdm/RegNtPreQueryKeySecurity, wdm/RegNtPreQueryMultipleValueKey, wdm/RegNtPreQueryValueKey, wdm/RegNtPreRenameKey, wdm/RegNtPreReplaceKey, wdm/RegNtPreRestoreKey, wdm/RegNtPreSaveKey, wdm/RegNtPreSetInformationKey, wdm/RegNtPreSetKeySecurity, wdm/RegNtPreSetValueKey, wdm/RegNtPreUnLoadKey, wdm/RegNtQueryKey, wdm/RegNtQueryMultipleValueKey, wdm/RegNtQueryValueKey, wdm/RegNtRenameKey, wdm/RegNtSetInformationKey, wdm/RegNtSetValueKey
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _REG_NOTIFY_CLASS
  - REG_NOTIFY_CLASS
 ---
 
@@ -134,19 +134,19 @@ Specifies that a thread is attempting to query multiple value entries for a key.
 
 ### -field RegNtPreCreateKey
 
-Specifies that a thread is attempting to create a key. This value indicates a pre-notification call to <i>RegistryCallback</i>. Use this value on Windows XP and later versions of the Windows operating system.
+Specifies that a thread is attempting to create a key. This value indicates a pre-notification call to <i>RegistryCallback</i>. Use this value only on Windows XP.
 
 ### -field RegNtPostCreateKey
 
-Specifies that a thread has successfully created a key. This value indicates a post-notification call to <i>RegistryCallback</i>. Use this value on Windows XP and later versions of the Windows operating system.
+Specifies that a thread has successfully created a key. This value indicates a post-notification call to <i>RegistryCallback</i>. Use this value only on Windows XP.
 
 ### -field RegNtPreOpenKey
 
-Specifies that a thread is attempting to open an existing key. This value indicates a pre-notification call to <i>RegistryCallback</i>. Use this value on Windows XP and later versions of the Windows operating system.
+Specifies that a thread is attempting to open an existing key. This value indicates a pre-notification call to <i>RegistryCallback</i>. Use this value only on Windows XP.
 
 ### -field RegNtPostOpenKey
 
-Specifies that a thread has successfully opened an existing key. This value indicates a post-notification call to <i>RegistryCallback</i>. Use this value on Windows XP and later versions of the Windows operating system.
+Specifies that a thread has successfully opened an existing key. This value indicates a post-notification call to <i>RegistryCallback</i>. Use this value only on Windows XP.
 
 ### -field RegNtKeyHandleClose
 
@@ -292,6 +292,14 @@ Specifies that a thread is attempting to obtain the full path of a registry key.
 
 Specifies that a thread has attempted to obtain the full path of a registry key. Use this value on Windows 10 and later versions of the Windows operating system.
 
+### -field RegNtPreSaveMergedKey
+
+Specifies that a thread is attempting to save a merged view of two registry subtrees to a file. Use this value on Windows 10 and later versions of the Windows operating system.
+
+### -field RegNtPostSaveMergedKey
+
+Specifies that a thread has attempted to save a merged view of two registry subtrees to a file. Use this value on Windows 10 and later versions of the Windows operating system.
+
 ### -field MaxRegNtNotifyClass
 
 Specifies the maximum value in this enumeration type.
@@ -307,3 +315,5 @@ When the configuration manager calls a driver's <i>RegistryCallback</i> routine,
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-ex_callback_function">RegistryCallback</a>
+
+

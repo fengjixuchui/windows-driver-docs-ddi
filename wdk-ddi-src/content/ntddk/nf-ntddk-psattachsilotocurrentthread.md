@@ -4,7 +4,6 @@ title: PsAttachSiloToCurrentThread function (ntddk.h)
 description: This routine places a thread temporarily into the specified Silo.
 old-location: kernel\psattachsilotocurrentthread.htm
 tech.root: kernel
-ms.assetid: 1C66E50F-3BD7-4038-9FDF-2F2B712D9B5E
 ms.date: 04/30/2018
 keywords: ["PsAttachSiloToCurrentThread function"]
 ms.keywords: PsAttachSiloToCurrentThread, PsAttachSiloToCurrentThread routine [Kernel-Mode Driver Architecture], kernel.psattachsilotocurrentthread, ntddk/PsAttachSiloToCurrentThread
@@ -50,9 +49,9 @@ This routine places a thread temporarily into the specified <i>Silo</i>.
 
 ## -parameters
 
-### -param Silo 
+### -param Silo [in]
 
-[in]
+
 The silo that the thread is to impersonate. The caller must hold a  reference to the silo throughout the duration of the impersonation.
 
 ## -returns

@@ -4,7 +4,6 @@ title: MINIPORT_CO_OID_REQUEST (ndis.h)
 description: The MiniportCoOidRequest function handles an OID request to query or set information in CoNDIS miniport driver.Note  You must declare the function by using the MINIPORT_CO_OID_REQUEST type.
 old-location: netvista\miniportcooidrequest.htm
 tech.root: netvista
-ms.assetid: 903bcdc5-9d42-4067-a054-057edc95ccf7
 ms.date: 05/02/2018
 keywords: ["MINIPORT_CO_OID_REQUEST callback function"]
 ms.keywords: MINIPORT_CO_OID_REQUEST, MINIPORT_CO_OID_REQUEST callback, MiniportCoOidRequest, MiniportCoOidRequest callback function [Network Drivers Starting with Windows Vista], condis_request_ref_fff124d4-8671-441b-817f-30b4275dca68.xml, ndis/MiniportCoOidRequest, netvista.miniportcooidrequest
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportCoOidRequest
+ - MINIPORT_CO_OID_REQUEST
 ---
 
 # MINIPORT_CO_OID_REQUEST callback function
@@ -54,14 +53,14 @@ The
 
 ## -parameters
 
-### -param MiniportAdapterContext 
+### -param MiniportAdapterContext [in]
 
-[in]
+
 A handle to a context area that the miniport driver allocated in its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">MiniportInitializeEx</a> function.
      The miniport driver uses this context area to maintain state information for a miniport adapter.
 
-### -param OPTIONAL
+### -param MiniportVcContext [in]
 
 A handle to a miniport driver-allocated context area in which the miniport driver maintains its
      per-virtual connection (VC) state. The miniport driver supplied this handle to NDIS from its 
@@ -72,7 +71,7 @@ A handle to a miniport driver-allocated context area in which the miniport drive
 ### -param NdisRequest
 
 A pointer to an 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure that contains
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure that contains
      both the buffer and the request packet for the miniport driver to handle. Depending on the request, the
      driver returns requested information in the structure that this parameter points to.
 
@@ -155,7 +154,7 @@ The buffer that the
 <td width="60%">
 The value that was specified in the 
        <b>InformationBufferLength</b> member of the 
-       <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure at 
+       <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure at 
        <i>OidRequest</i> is incorrect for the specified OID_<i>XXX</i> code.
 
 </td>
@@ -306,7 +305,7 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 
@@ -319,3 +318,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndissetoptionalhandlers">NdisSetOptionalHandlers</a>
+

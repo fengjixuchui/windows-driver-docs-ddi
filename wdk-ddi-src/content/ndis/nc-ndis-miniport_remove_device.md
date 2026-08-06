@@ -4,7 +4,6 @@ title: MINIPORT_REMOVE_DEVICE (ndis.h)
 description: The MiniportRemoveDevice function releases resources that the MiniportAddDevice function allocated.
 old-location: netvista\miniportremovedevice.htm
 tech.root: netvista
-ms.assetid: 24dd887b-575f-4790-bb53-7c3fb825bd61
 ms.date: 05/02/2018
 keywords: ["MINIPORT_REMOVE_DEVICE callback function"]
 ms.keywords: MINIPORT_REMOVE_DEVICE, MINIPORT_REMOVE_DEVICE callback, MiniportRemoveDevice, MiniportRemoveDevice callback function [Network Drivers Starting with Windows Vista], ndis/MiniportRemoveDevice, ndis_msix_ref_daeef188-96e7-4917-b37f-2af8ba18eda9.xml, netvista.miniportremovedevice
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - MiniportRemoveDevice
+ - MINIPORT_REMOVE_DEVICE
 ---
 
 # MINIPORT_REMOVE_DEVICE callback function
@@ -55,9 +54,9 @@ The
 
 ## -parameters
 
-### -param MiniportAddDeviceContext 
+### -param MiniportAddDeviceContext [in]
 
-[in]
+
 A handle for a driver-allocated context area that the miniport driver registered with NDIS in the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_add_device">MiniportAddDevice</a> function.
 
@@ -122,3 +121,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_miniport_pnp_characteristics">
    NDIS_MINIPORT_PNP_CHARACTERISTICS</a>
+

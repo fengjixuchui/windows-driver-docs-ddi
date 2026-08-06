@@ -4,7 +4,6 @@ title: FltFastIoMdlReadComplete function (fltkernel.h)
 description: The FltFastIoMdlReadComplete routine completes the read operation that the FltFastIoMdlRead routine initiated.
 old-location: ifsk\fltfastiomdlreadcomplete.htm
 tech.root: ifsk
-ms.assetid: 6F5E808C-9E35-4BE8-AE67-FDD354D6FD0E
 ms.date: 04/16/2018
 keywords: ["FltFastIoMdlReadComplete function"]
 ms.keywords: FltFastIoMdlReadComplete, FsRtlMdlReadCompleteDev, FsRtlMdlReadCompleteDev routine [Installable File System Drivers], fltkernel/FsRtlMdlReadCompleteDev, ifsk.fltfastiomdlreadcomplete
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - NtosKrnl.exe
 api_name:
- - FsRtlMdlReadCompleteDev
+ - FltFastIoMdlReadComplete
 ---
 
 # FltFastIoMdlReadComplete function
@@ -54,14 +53,14 @@ The <b>FltFastIoMdlReadComplete</b> routine completes the read operation that th
 
 Opaque instance pointer for the caller. This parameter is required and cannot be <b>NULL</b>.
 
-### -param FileObject 
+### -param FileObject [in]
 
-[in]
+
 A pointer to the file object.
 
-### -param MdlChain 
+### -param MdlChain [in]
 
-[in]
+
 A pointer to a linked list of memory descriptor lists (MDLs) that the <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfastiomdlread">FltFastIoMdlRead</a> routine allocated.
 
 ## -returns
@@ -75,3 +74,4 @@ The <b>FltFastIoMdlReadComplete</b> routine unlocks the pages in cache memory th
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltfastiomdlread">FltFastIoMdlRead</a>
+

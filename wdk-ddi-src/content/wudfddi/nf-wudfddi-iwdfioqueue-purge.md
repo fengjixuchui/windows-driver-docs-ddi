@@ -4,7 +4,6 @@ title: IWDFIoQueue::Purge (wudfddi.h)
 description: The Purge method directs the framework to reject new incoming I/O requests and to cancel all outstanding requests.
 old-location: wdf\iwdfioqueue_purge.htm
 tech.root: wdf
-ms.assetid: c7863713-850f-4516-aec5-9e851c36cf52
 ms.date: 02/26/2018
 keywords: ["IWDFIoQueue::Purge"]
 ms.keywords: IWDFIoQueue interface,Purge method, IWDFIoQueue.Purge, IWDFIoQueue::Purge, Purge, Purge method, Purge method,IWDFIoQueue interface, UMDFQueueObjectRef_5d2113b9-d2e3-4a27-af75-60f4bf7bddbf.xml, umdf.iwdfioqueue_purge, wdf.iwdfioqueue_purge, wudfddi/IWDFIoQueue::Purge
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoQueue.Purge
+ - IWDFIoQueue::Purge
 ---
 
 # IWDFIoQueue::Purge
@@ -52,9 +51,9 @@ The <b>Purge</b> method directs the framework to reject new incoming I/O request
 
 ## -parameters
 
-### -param pPurgeComplete 
+### -param pPurgeComplete [in, optional]
 
-[in, optional]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iqueuecallbackstatechange">IQueueCallbackStateChange</a> interface whose method the framework calls to deliver queue state to the driver. The framework calls the method after all requests are canceled. This parameter is optional and can be <b>NULL</b>.
 
 ## -remarks
@@ -109,7 +108,6 @@ CUmdfHidFile::OnCleanupFile(
 }
 ```
 
-
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iqueuecallbackstatechange">IQueueCallbackStateChange</a>
@@ -129,3 +127,4 @@ CUmdfHidFile::OnCleanupFile(
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfioqueue-stop">IWDFIoQueue::Stop</a>
+

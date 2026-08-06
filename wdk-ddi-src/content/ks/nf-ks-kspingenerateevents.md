@@ -4,7 +4,6 @@ title: KsPinGenerateEvents function (ks.h)
 description: The KsPinGenerateEvents function generates events of an indicated type that are present in Pin's event list.
 old-location: stream\kspingenerateevents.htm
 tech.root: stream
-ms.assetid: c2137849-aff0-4bf7-abab-b92e17aaef70
 ms.date: 04/23/2018
 keywords: ["KsPinGenerateEvents function"]
 ms.keywords: KsPinGenerateEvents, KsPinGenerateEvents function [Streaming Media Devices], avfunc_4bc7a2d8-139f-4f6e-b69c-46e05d8302e3.xml, ks/KsPinGenerateEvents, stream.kspingenerateevents
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ks.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL (See Remarks)
+req.irql: <= DISPATCH_LEVEL (See Remarks)
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,35 +50,35 @@ The **KsPinGenerateEvents** function generates events of an indicated type that 
 
 ## -parameters
 
-### -param Pin 
+### -param Pin [in]
 
-[in]
+
 A pointer to the [KSPIN](./ns-ks-_kspin.md) structure on which to generate events.
 
-### -param EventSet 
+### -param EventSet [in, optional]
 
-[in, optional]
+
 A pointer to the event set GUID to match to determine which events to generate. If this parameter is **NULL**, set GUID is not taken into account for determining matching events.
 
-### -param EventId 
+### -param EventId [in]
 
-[in]
+
 The event ID to match to determine which events to generate.
 
-### -param DataSize 
+### -param DataSize [in]
 
-[in]
+
 The size in bytes of the data with which to generate the data event.
 
-### -param Data 
+### -param Data [in, optional]
 
-[in, optional]
+
 A pointer to a data buffer. Specify if generating a data event.
 
-### -param CallBack 
+### -param CallBack [in, optional]
 
-[in, optional]
-A pointer to a caller-specified function that is called to determine whether a given event should be generated. If **NULL**, no callback verification is performed to determine whether an event should be generated (only *EventSet *and *EventId* are used). Prototype as follows:
+
+A pointer to a caller-specified function that is called to determine whether a given event should be generated. If **NULL**, no callback verification is performed to determine whether an event should be generated (only *EventSet* and *EventId* are used). Prototype as follows:
 
 ```cpp
 BOOLEAN CallBack
@@ -89,9 +88,9 @@ BOOLEAN CallBack
 
 **KsPinGenerateEvents** passes the *CallBackContext* parameter unchanged as the *Context* parameter for the callback. The callback function returns **TRUE** if *EventEntry* should be generated. Otherwise, it returns **FALSE**.
 
-### -param CallBackContext 
+### -param CallBackContext [in, optional]
 
-[in, optional]
+
 A pointer to a caller-specified context that is passed to the callback function *CallBack*.
 
 ## -remarks
@@ -102,11 +101,11 @@ This is an inline function call to [KsGenerateEvents](./nf-ks-ksgenerateevents.m
 
 An event is generated if the following three conditions hold:
 
-* The event is present in *Pin's *event list and *EventId *matches the event's ID.
+* The event is present in *Pin's *event list and *EventId* matches the event's ID.
 
 * *EventSet* either matches the event's set GUID or is **NULL**.
 
-* *CallBack *is either **NULL** or authorizes the match.
+* *CallBack* is either **NULL** or authorizes the match.
 
 For more information, see [Event Handling in AVStream](/windows-hardware/drivers/stream/event-handling-in-avstream) and [KS Events](/windows-hardware/drivers/stream/ks-events).
 

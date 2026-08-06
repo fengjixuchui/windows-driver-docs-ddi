@@ -4,7 +4,6 @@ title: wiasGetItemType function (wiamdef.h)
 description: The wiasGetItemType function indicates the item type.
 old-location: image\wiasgetitemtype.htm
 tech.root: image
-ms.assetid: 9659d669-ccf3-423a-9c81-12232a978d07
 ms.date: 05/03/2018
 keywords: ["wiasGetItemType function"]
 ms.keywords: image.wiasgetitemtype, wiamdef/wiasGetItemType, wiasFncs_634f945c-e60b-4668-b1a7-19b398a86e7c.xml, wiasGetItemType, wiasGetItemType function [Imaging Devices]
@@ -50,9 +49,9 @@ The **wiasGetItemType** function indicates the item type.
 
 ## -parameters
 
-### -param pWiasContext 
+### -param pWiasContext [in]
 
-[in]
+
 Pointer to a WIA item context.
 
 ### -param plType

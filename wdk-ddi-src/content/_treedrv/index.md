@@ -1,13 +1,10 @@
 ---
+description: "Learn more about: Trusted Execution Environment (TrEE) drivers"
 UID: TP:treedrv
 title: Trusted Execution Environment (TrEE) drivers
-ms.assetid: c3c001ab-a544-3e0a-8295-8f229b100d1e
-ms.date: 07/11/2018
+ms.date: 03/02/2023
 keywords: ["Trusted Execution Environment (TrEE) drivers"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 ---
 
 # Trusted Execution Environment (TrEE) drivers

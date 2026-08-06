@@ -1,10 +1,9 @@
 ---
 UID: NF:pep_x.PEP_ACPI_INITIALIZE_IOPORT_RESOURCE
 title: PEP_ACPI_INITIALIZE_IOPORT_RESOURCE function (pep_x.h)
-description: The PEP_ACPI_INITIALIZE_IOPORT_RESOURCE function initializes a platform extension plug-in's (PEP) PEP_ACPI_IO_MEMORY_RESOURCE structure.
+description: Learn how the PEP_ACPI_INITIALIZE_IOPORT_RESOURCE function initializes a platform extension plug-in's (PEP) PEP_ACPI_IO_MEMORY_RESOURCE structure.
 old-location: kernel\pep_acpi_initialize_ioport_resource.htm
 tech.root: kernel
-ms.assetid: E7F9F8EF-3FDC-41D9-BB89-9EB93ED1A504
 ms.date: 04/30/2018
 keywords: ["PEP_ACPI_INITIALIZE_IOPORT_RESOURCE function"]
 ms.keywords: PEP_ACPI_INITIALIZE_IOPORT_RESOURCE, PEP_ACPI_INITIALIZE_IOPORT_RESOURCE function [Kernel-Mode Driver Architecture], kernel.pep_acpi_initialize_ioport_resource, pepfx/PEP_ACPI_INITIALIZE_IOPORT_RESOURCE
@@ -50,36 +49,36 @@ The <b>PEP_ACPI_INITIALIZE_IOPORT_RESOURCE</b> function initializes a platform e
 
 ## -parameters
 
-### -param Decode 
+### -param Decode [in]
 
-[in]
+
 Specifies how to decode the resource address. If bit 0 is a 1, this indicates that the logical device decodes 16-bit addresses. If bit 0 is 0, this indicates that the logical device only decodes the first 10 bits of the address.
 
 Bits 1 to 7 of this parameter are reserved and must be set to zero.
 
-### -param MinimumAddress 
+### -param MinimumAddress [in]
 
-[in]
+
 Specifies the minimum acceptable starting address for the IO range.
 
-### -param MaximumAddress 
+### -param MaximumAddress [in]
 
-[in]
+
 Specifies the maximum acceptable starting address for the IO range.
 
-### -param Alignment 
+### -param Alignment [in]
 
-[in]
+
 Specifies the alignment granularity for the IO address assigned.
 
-### -param PortLength 
+### -param PortLength [in]
 
-[in]
+
 Specifies the number of bytes in the IO range.
 
-### -param Resource 
+### -param Resource [out]
 
-[out]
+
 A pointer to the resource. The structure behind the pointer is of type <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_acpi_io_memory_resource">PEP_ACPI_IO_MEMORY_RESOURCE</a>.
 
 ## -see-also

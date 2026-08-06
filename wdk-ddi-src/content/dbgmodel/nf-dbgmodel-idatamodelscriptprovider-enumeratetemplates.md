@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.IDataModelScriptProvider.EnumerateTemplates
 title: IDataModelScriptProvider::EnumerateTemplates (dbgmodel.h)
 description: The EnumerateTemplates method returns an enumerator which is capable of enumerating the variety of templates that are provided by the script provider.
-ms.assetid: 9d814794-0a1a-4de8-8f2c-3cb2f3d48b76
 ms.date: 08/20/2018
 keywords: ["IDataModelScriptProvider::EnumerateTemplates"]
 ms.keywords: IDataModelScriptProvider::EnumerateTemplates, EnumerateTemplates, IDataModelScriptProvider.EnumerateTemplates, IDataModelScriptProvider::EnumerateTemplates, IDataModelScriptProvider.EnumerateTemplates
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelScriptProvider.EnumerateTemplates
+ - IDataModelScriptProvider::EnumerateTemplates
 ---
 
 # IDataModelScriptProvider::EnumerateTemplates

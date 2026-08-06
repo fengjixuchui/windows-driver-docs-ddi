@@ -4,7 +4,6 @@ title: IPortableDeviceValues::SetStringValue (portabledevicetypes.h)
 description: Adds a new string value (type VT_LPWSTR) or overwrites an existing one.
 old-location: wpddk\iportabledevicevalues_setstringvalue.htm
 tech.root: wpd_dk
-ms.assetid: ee477e82-124e-46ca-8aef-02357f67bb8f
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::SetStringValue"]
 ms.keywords: IPortableDeviceValues interface,SetStringValue method, IPortableDeviceValues.SetStringValue, IPortableDeviceValues::SetStringValue, IPortableDeviceValuesSetStringValue, SetStringValue, SetStringValue method, SetStringValue method,IPortableDeviceValues interface, portabledevicetypes/IPortableDeviceValues::SetStringValue, wpddk.iportabledevicevalues_setstringvalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.SetStringValue
+ - IPortableDeviceValues::SetStringValue
 ---
 
 # IPortableDeviceValues::SetStringValue
@@ -51,14 +50,14 @@ Adds a new string value (type VT_LPWSTR) or overwrites an existing one.
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> that specifies the item to create or overwrite.
 
-### -param Value 
+### -param Value [in]
 
-[in]
+
 A <b>LPCWSTR</b> that specifies the new value. The string is copied, so the caller can release the memory allocated for this value after calling this method.
 
 ## -returns
@@ -94,3 +93,4 @@ Any existing key memory will be released appropriately.
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-getstringvalue">IPortableDeviceValues::GetStringValue</a>
+

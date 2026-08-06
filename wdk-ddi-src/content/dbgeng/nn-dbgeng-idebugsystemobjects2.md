@@ -4,7 +4,6 @@ title: IDebugSystemObjects2 (dbgeng.h)
 description: IDebugSystemObjects2 interface
 old-location: debugger\idebugsystemobjects2.htm
 tech.root: debugger
-ms.assetid: 9e354357-590b-45cf-bace-5b431f408422
 ms.date: 05/03/2018
 keywords: ["IDebugSystemObjects2 interface"]
 ms.keywords: IDebugSystemObjects2, IDebugSystemObjects2 interface [Windows Debugging], IDebugSystemObjects2 interface [Windows Debugging],described, dbgeng/IDebugSystemObjects2, debugger.idebugsystemobjects2
@@ -48,10 +47,8 @@ api_name:
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugSystemObjects2</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects">IDebugSystemObjects</a>. <b>IDebugSystemObjects2</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IDebugSystemObjects2</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects">IDebugSystemObjects</a>. <b>IDebugSystemObjects2</b> also has these types of members:
+
 
 ## -see-also
 

@@ -1,11 +1,9 @@
 ---
 UID: NE:dxgiddi.DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS
 title: DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS (dxgiddi.h)
-description: Identifies a flip operation to be performed on an overlay plane.
-old-location: display\dxgi_ddi_multiplane_overlay_flags.htm
+description: Learn more about DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS enumeration.
 tech.root: display
-ms.assetid: 74245a8b-1b52-4336-a744-1aedaca0eef5
-ms.date: 04/16/2018
+ms.date: 05/21/2024
 keywords: ["DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS enumeration"]
 ms.keywords: DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS, DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS enumeration [Display Devices], DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP, DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP, DXGI_MULTIPLANE_OVERLAY_FLAG_FULLSCREEN_POST_COMPOSITION, display.dxgi_ddi_multiplane_overlay_flags, dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS, dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP, dxgiddi/DXGI_DDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP, dxgiddi/DXGI_MULTIPLANE_OVERLAY_FLAG_FULLSCREEN_POST_COMPOSITION
 req.header: dxgiddi.h
@@ -49,7 +47,7 @@ dev_langs:
 
 ## -description
 
-Identifies a flip operation to be performed on an overlay plane.
+The **DXGI_DDI_MULTIPLANE_OVERLAY_FLAGS** enumeration defines a set of flags that describe the characteristics and behaviors of a multiplane overlay.
 
 ## -enum-fields
 
@@ -75,3 +73,6 @@ The runtime may request the driver to temporarily disable the transformation dur
 
 A transformation occurs when contents are transferred from the application surface to a shadow surface in preparation for a flip operation. For more information, see [PFND3DWDDM2_6DDI_PREPARE_SCANOUT_TRANSFORMATION](../d3d10umddi/nc-d3d10umddi-pfnd3dwddm2_6ddi_prepare_scanout_transformation.md) and [PFND3DWDDM2_6DDI_QUERY_SCANOUT_CAPS](../d3d10umddi/nc-d3d10umddi-pfnd3dwddm2_6ddi_query_scanout_caps.md).
 
+### -field
+
+When set, this flag indicates that the overlay should not be presented as part of the normal rendering process.

@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILOPENUICCLOGICALCHANNELPARAMS
 title: RILOPENUICCLOGICALCHANNELPARAMS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves this structure for internal use only. Don't use the RILOPENUICCLOGICALCHANNELPARAMS structure in your code."
 old-location: netvista\rilopenuicclogicalchannelparams.htm
 tech.root: netvista
-ms.assetid: 4bc3a16b-dc9e-4c15-9083-75ac4608def5
 ms.date: 05/02/2018
 keywords: ["RILOPENUICCLOGICALCHANNELPARAMS structure"]
 ms.keywords: "*LPRILOPENUICCLOGICALCHANNELPARAMS, RILOPENUICCLOGICALCHANNELPARAMS, RILOPENUICCLOGICALCHANNELPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilopenuicclogicalchannelparams, ntddrilapitypes/RILOPENUICCLOGICALCHANNELPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILOPENUICCLOGICALCHANNELPARAMS
+ - LPRILOPENUICCLOGICALCHANNELPARAMS
 ---
 
 # RILOPENUICCLOGICALCHANNELPARAMS structure (ntddrilapitypes.h)

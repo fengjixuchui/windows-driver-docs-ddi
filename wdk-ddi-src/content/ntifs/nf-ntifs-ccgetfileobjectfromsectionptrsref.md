@@ -4,14 +4,13 @@ title: CcGetFileObjectFromSectionPtrsRef function (ntifs.h)
 description: When passed a pointer to a SECTION_OBJECT_POINTERS structure for a cached file, the CcGetFileObjectFromSectionPtrsRef routine returns a pointer to the file object that the cache manager is using for the cached file.
 old-location: ifsk\ccgetfileobjectfromsectionptrsref.htm
 tech.root: ifsk
-ms.assetid: 8afbd8df-95fc-453f-a1d8-400a993c286a
 ms.date: 04/16/2018
 keywords: ["CcGetFileObjectFromSectionPtrsRef function"]
 ms.keywords: CcGetFileObjectFromSectionPtrsRef, CcGetFileObjectFromSectionPtrsRef routine [Installable File System Drivers], ccref_e38ddec7-5501-40b4-a2a3-0a13c1c0fb4d.xml, ifsk.ccgetfileobjectfromsectionptrsref, ntifs/CcGetFileObjectFromSectionPtrsRef
 req.header: ntifs.h
 req.include-header: Ntifs.h, Fltkernel.h
 req.target-type: Universal
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating system.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,9 +49,9 @@ When passed a pointer to a SECTION_OBJECT_POINTERS structure for a cached file, 
 
 ## -parameters
 
-### -param SectionObjectPointer 
+### -param SectionObjectPointer [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_section_object_pointers">SECTION_OBJECT_POINTERS</a> structure that is associated with the cached file.
 
 ## -returns

@@ -4,7 +4,6 @@ title: _NDIS_NDK_LOCAL_ENDPOINT_ENTRY (ntddndis.h)
 description: The NDIS_NDK_LOCAL_ENDPOINT_ENTRY structure specifies an ND local endpoint entry for an ND local endpoint on a miniport adapter.
 old-location: netvista\ndis_ndk_local_endpoint_entry.htm
 tech.root: netvista
-ms.assetid: 83B88D3D-8FBF-4DC1-8A73-FAB306281F36
 ms.date: 05/02/2018
 keywords: ["NDIS_NDK_LOCAL_ENDPOINT_ENTRY structure"]
 ms.keywords: NDIS_NDK_LOCAL_ENDPOINT_ENTRY, NDIS_NDK_LOCAL_ENDPOINT_ENTRY structure [Network Drivers Starting with Windows Vista], _NDIS_NDK_LOCAL_ENDPOINT_ENTRY, netvista.ndis_ndk_local_endpoint_entry, ntddndis/NDIS_NDK_LOCAL_ENDPOINT_ENTRY
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ntddndis.h
 api_name:
+ - _NDIS_NDK_LOCAL_ENDPOINT_ENTRY
  - NDIS_NDK_LOCAL_ENDPOINT_ENTRY
 ---
 
@@ -75,3 +75,4 @@ The NDIS_NDK_LOCAL_ENDPOINT_ENTRY structure is used in the <a href="/windows-har
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_ndk_local_endpoints">NDIS_NDK_LOCAL_ENDPOINTS</a>
+

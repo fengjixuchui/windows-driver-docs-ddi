@@ -2,7 +2,6 @@
 UID: NS:d3dkmthk._D3DKMT_GETVERTICALBLANKEVENT
 title: _D3DKMT_GETVERTICALBLANKEVENT (d3dkmthk.h)
 description: Used to get vertical blank events.
-ms.assetid: 938531c9-d8e4-47fb-81f6-7c5448ff3fb4
 ms.date: 10/19/2018
 keywords: ["D3DKMT_GETVERTICALBLANKEVENT structure"]
 ms.keywords: _D3DKMT_GETVERTICALBLANKEVENT, D3DKMT_GETVERTICALBLANKEVENT,
@@ -35,6 +34,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_GETVERTICALBLANKEVENT
+ - D3DKMT_GETVERTICALBLANKEVENT
 dev_langs:
  - c++
 ---
@@ -48,22 +48,22 @@ Used to get vertical blank events.
 
 ## -struct-fields
 
-### -field hAdapter
+### -field hAdapter [in]
 
-[in] A handle to the graphics adapter.
+A handle to the graphics adapter.
 
-### -field hDevice
+### -field hDevice [in]
 
-[in] A handle to the device.
+A handle to the device.
 
-### -field VidPnSourceId
+### -field VidPnSourceId [in]
 
-[in] The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the monitor is connected to.
+The zero-based identification number of the video present source in a path of a video present network (VidPN) topology that the monitor is connected to.
 
-### -field phEvent
+### -field phEvent [in, out]
 
  
-[in, out] Pointer to an event handle.
+Pointer to an event handle.
 
 ## -remarks
 

@@ -4,7 +4,6 @@ title: NDK_FN_GET_CQ_RESULTS (ndkpi.h)
 description: The NdkGetCqResults (NDK_FN_GET_CQ_RESULTS) function removes completions from an NDK completion queue (CQ) object.
 old-location: netvista\ndk_fn_get_cq_results.htm
 tech.root: netvista
-ms.assetid: CDCDCF99-4A81-43FE-8A3D-0726699905BB
 ms.date: 05/02/2018
 keywords: ["NDK_FN_GET_CQ_RESULTS callback function"]
 ms.keywords: NDK_FN_GET_CQ_RESULTS, NDK_FN_GET_CQ_RESULTS callback, NdkGetCqResults, NdkGetCqResults callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkGetCqResults, netvista.ndk_fn_get_cq_results
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ndkpi.h
 api_name:
- - NdkGetCqResults
+ - NDK_FN_GET_CQ_RESULTS
 ---
 
 # NDK_FN_GET_CQ_RESULTS callback function
@@ -50,9 +49,9 @@ The <i>NdkGetCqResults</i> (<i>NDK_FN_GET_CQ_RESULTS</i>) function removes compl
 
 ## -parameters
 
-### -param pNdkCq 
+### -param pNdkCq [in]
 
-[in]
+
 A pointer to an NDK completion queue (CQ) object  (<a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_cq">NDK_CQ</a>).
 
 ### -param Results
@@ -60,9 +59,9 @@ A pointer to an NDK completion queue (CQ) object  (<a href="/windows-hardware/dr
 []
 An array of <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_result">NDK_RESULT</a> structures that will be filled with completion results that were removed from the CQ.
 
-### -param nResults 
+### -param nResults [in]
 
-[in]
+
 The size, in elements, of the <i>Results</i> array. That is, the maximum number of completions to remove from the CQ.
 
 ## -returns
@@ -90,3 +89,4 @@ Zero means there were no completions in the CQ.
 
 
 <a href="/windows-hardware/drivers/ddi/ndkpi/ns-ndkpi-_ndk_result">NDK_RESULT</a>
+

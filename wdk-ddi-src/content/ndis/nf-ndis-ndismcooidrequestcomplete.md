@@ -1,10 +1,9 @@
 ---
 UID: NF:ndis.NdisMCoOidRequestComplete
 title: NdisMCoOidRequestComplete function (ndis.h)
-description: The NdisMCoOidRequestComplete function returns the final status of an OID requestthat a miniport driver's MiniportCoOidRequest function returned NDIS_STATUS_PENDING for.
+description: The NdisMCoOidRequestComplete function returns the final status of an OID request that a miniport driver's MiniportCoOidRequest function returned NDIS_STATUS_PENDING for.
 old-location: netvista\ndismcooidrequestcomplete.htm
 tech.root: netvista
-ms.assetid: 18242351-3dec-40df-b112-2335253903d2
 ms.date: 05/02/2018
 keywords: ["NdisMCoOidRequestComplete function"]
 ms.keywords: NdisMCoOidRequestComplete, NdisMCoOidRequestComplete function [Network Drivers Starting with Windows Vista], condis_request_ref_516edd5f-ceae-4330-87b1-48a3a383e736.xml, ndis/NdisMCoOidRequestComplete, netvista.ndismcooidrequestcomplete
@@ -48,16 +47,16 @@ api_name:
 ## -description
 
 The 
-  <b>NdisMCoOidRequestComplete</b> function returns the final status of an OID requestthat a miniport driver's
+  <b>NdisMCoOidRequestComplete</b> function returns the final status of an OID request that a miniport driver's
   
   <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_oid_request">MiniportCoOidRequest</a> function
   returned NDIS_STATUS_PENDING for.
 
 ## -parameters
 
-### -param MiniportAdapterHandle 
+### -param MiniportAdapterHandle [in]
 
-[in]
+
 A miniport adapter handle that NDIS passed to the 
      <i>MiniportAdapterHandle</i> parameter of the 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_initialize">
@@ -76,14 +75,14 @@ A handle that identifies the virtual connection (VC). The miniport driver obtain
 ### -param Request
 
 A pointer to a buffer that is formatted as an 
-     <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a> structure. The miniport
+     <a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a> structure. The miniport
      driver obtained this pointer as an input parameter to its 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-miniport_co_oid_request">
      MiniportCoOidRequest</a> function.
 
-### -param Status 
+### -param Status [in]
 
-[in]
+
 The final status of the request operation, either NDIS_STATUS_SUCCESS,
      NDIS_STATUS_REQUEST_ABORTED, or any driver-determined NDIS_STATUS_<i>XXX</i> value 
      <u>except</u> NDIS_STATUS_PENDING.
@@ -115,7 +114,7 @@ A call to
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_oid_request">NDIS_OID_REQUEST</a>
+<a href="/windows-hardware/drivers/ddi/oidrequest/ns-oidrequest-ndis_oid_request">NDIS_OID_REQUEST</a>
 
 
 

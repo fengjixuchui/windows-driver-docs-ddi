@@ -3,7 +3,6 @@ UID: NE:ntddvdeo._OUTPUT_WIRE_COLOR_SPACE_TYPE
 title: OUTPUT_WIRE_COLOR_SPACE_TYPE
 description: Output wire color space type.
 tech.root: display
-ms.assetid: 9dbddd1f-ca06-43f1-853b-43fc7a6290b1
 ms.date: 04/04/2019
 keywords: ["OUTPUT_WIRE_COLOR_SPACE_TYPE enumeration"]
 ms.keywords: OUTPUT_WIRE_COLOR_SPACE_TYPE, OUTPUT_WIRE_COLOR_SPACE_TYPE,
@@ -31,6 +30,7 @@ api_type:
 api_location:
  - ntddvdeo.h
 api_name:
+ - _OUTPUT_WIRE_COLOR_SPACE_TYPE
  - OUTPUT_WIRE_COLOR_SPACE_TYPE
 dev_langs:
  - c++

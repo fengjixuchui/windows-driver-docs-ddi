@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_62
+UID: NS:ksmedia.KSNODEPROPERTY
 title: KSNODEPROPERTY (ksmedia.h)
 description: The KSNODEPROPERTY structure specifies a node and a property of that node.
 old-location: audio\ksnodeproperty.htm
 tech.root: audio
-ms.assetid: bbcf7597-217a-499b-b0f2-deef1e85becc
 ms.date: 04/30/2019
 keywords: ["KSNODEPROPERTY structure"]
 ms.keywords: "*PKSNODEPROPERTY, KSNODEPROPERTY, KSNODEPROPERTY structure [Audio Devices], PKSNODEPROPERTY, PKSNODEPROPERTY structure pointer [Audio Devices], aud-prop_7d1e6907-77f6-445d-ba5d-b94037b234f3.xml, audio.ksnodeproperty, ksmedia/KSNODEPROPERTY, ksmedia/PKSNODEPROPERTY"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSNODEPROPERTY
  - KSNODEPROPERTY
 ---
 
@@ -54,7 +54,7 @@ The KSNODEPROPERTY structure specifies a node and a property of that node.
 
 ### -field Property
 
-Specifies the property to get or set. This member is a structure of type <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>.
+Specifies the property to get or set. This member is a structure of type <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>.
 
 ### -field NodeId
 
@@ -72,8 +72,9 @@ See the discussion of the KSNODEPROPERTY structure in <a href="/windows-hardware
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ns-ks-ksp_node">KSP_NODE</a>
+

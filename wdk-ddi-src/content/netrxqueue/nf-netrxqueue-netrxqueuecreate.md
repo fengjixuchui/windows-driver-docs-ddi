@@ -3,8 +3,7 @@ UID: NF:netrxqueue.NetRxQueueCreate
 title: NetRxQueueCreate function (netrxqueue.h)
 description: Creates a net receive queue object.
 tech.root: netvista
-ms.assetid: 2f5e886c-10c8-42bf-83d3-1902ef628b5a
-ms.date: 11/12/2018
+ms.date: 04/01/2022
 keywords: ["NetRxQueueCreate function"]
 ms.keywords: NetRxQueueCreate
 req.header: netrxqueue.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
 req.kmdf-ver: 1.27
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: NetAdapterCxStub.lib
 req.dll: 
 req.irql: PASSIVE_LEVEL
@@ -49,19 +48,19 @@ Creates a net receive queue object.
 
 ## -parameters
 
-### -param NetRxQueueInit
+### -param NetRxQueueInit [_Inout_]
 
 A pointer to the NETRXQUEUE_INIT structure that the client driver received in its *[EVT_NET_ADAPTER_CREATE_RXQUEUE](../netadapter/nc-netadapter-evt_net_adapter_create_rxqueue.md)* callback function.
 
-### -param RxQueueAttributes
+### -param RxQueueAttributes [_In_opt_]
 
 A pointer to caller-allocated and initialized [**WDF_OBJECT_ATTRIBUTES**](../wdfobject/ns-wdfobject-_wdf_object_attributes.md) structure. This parameter is optional and can be **WDF_NO_OBJECT_ATTRIBUTES**. However, if the client driver supplies this parameter, the **ParentObject** field must be **NULL**.
 
-### -param Configuration
+### -param Configuration [_In_]
 
 A pointer to a caller-allocated [**NET_PACKET_QUEUE_CONFIG**](../netpacketqueue/ns-netpacketqueue-_net_packet_queue_config.md) structure.
 
-### -param RxQueue
+### -param PacketQueue [_Out_]
 
 A pointer to a location that receives a handle to the new net receive queue object.
 

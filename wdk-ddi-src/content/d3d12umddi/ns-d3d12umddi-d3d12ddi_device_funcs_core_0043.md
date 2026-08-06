@@ -1,8 +1,7 @@
 ---
 UID: NS:d3d12umddi.D3D12DDI_DEVICE_FUNCS_CORE_0043
 title: D3D12DDI_DEVICE_FUNCS_CORE_0043 (d3d12umddi.h)
-description: Core device functions.
-ms.assetid: 5e7bb4ce-834d-4026-9936-51faa7935fbf
+description: The D3D12DDI_DEVICE_FUNCS_CORE_0043 structure contains core device functions for user-mode display drivers.
 ms.date: 10/19/2018
 keywords: ["D3D12DDI_DEVICE_FUNCS_CORE_0043 structure"]
 ms.keywords: D3D12DDI_DEVICE_FUNCS_CORE_0043, D3D12DDI_DEVICE_FUNCS_CORE_0043,
@@ -32,8 +31,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - D3D12DDI_DEVICE_FUNCS_CORE_0043
-product:
- - Windows
 ---
 
 # D3D12DDI_DEVICE_FUNCS_CORE_0043 structure

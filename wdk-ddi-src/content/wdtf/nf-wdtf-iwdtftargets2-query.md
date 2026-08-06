@@ -4,7 +4,6 @@ title: IWDTFTargets2::Query (wdtf.h)
 description: Returns a subset of the items in the collection.
 old-location: dtf\iwdtftargets2_query.htm
 tech.root: dtf
-ms.assetid: 0f3537f0-903d-405a-bbe4-5cfbe7817ea1
 ms.date: 04/04/2018
 keywords: ["IWDTFTargets2::Query"]
 ms.keywords: IWDTFTargets2 interface [Windows Device Testing Framework],Query method, IWDTFTargets2.Query, IWDTFTargets2::Query, Microsoft.WDTF.IWDTFTargets2.Query, Microsoft::WDTF::IWDTFTargets2::Query, Query, Query method [Windows Device Testing Framework], Query method [Windows Device Testing Framework],IWDTFTargets2 interface, dtf.iwdtftargets2_query, wdtf/IWDTFTargets2::Query
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WDTF.Interop.metadata_dll.dll
 api_name:
- - IWDTFTargets2.Query
+ - IWDTFTargets2::Query
 ---
 
 # IWDTFTargets2::Query
@@ -50,14 +49,14 @@ Returns a subset of the items in the collection.
 
 ## -parameters
 
-### -param SDEL 
+### -param SDEL [in]
 
-[in]
+
 The SDEL query string.
 
-### -param ppTargets 
+### -param ppTargets [out, retval]
 
-[out, retval]
+
 The collection of items.
 
 ## -returns
@@ -79,3 +78,4 @@ interface.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdtf/nn-wdtf-iwdtftargets2">IWDTFTargets2</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NE:rilapitypes.RILGEOLOCATIONREQUESTACCURACY
 title: RILGEOLOCATIONREQUESTACCURACY (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this enumeration in your code. Microsoft reserves the RILGEOLOCATIONREQUESTACCURACY enumeration for internal use only. "
 old-location: netvista\rilgeolocationrequestaccuracy.htm
 tech.root: netvista
-ms.assetid: e1e6ca44-a027-4800-9932-617f3bb4679d
 ms.date: 05/02/2018
 keywords: ["RILGEOLOCATIONREQUESTACCURACY enumeration"]
 ms.keywords: RILGEOLOCATIONREQUESTACCURACY, RILGEOLOCATIONREQUESTACCURACY enumeration [Network Drivers Starting with Windows Vista], RIL_LOCACCURACY_DEFAULT, netvista.rilgeolocationrequestaccuracy, ntddrilapitypes/RILGEOLOCATIONREQUESTACCURACY, ntddrilapitypes/RIL_LOCACCURACY_DEFAULT

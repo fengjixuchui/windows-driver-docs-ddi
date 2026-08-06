@@ -4,7 +4,6 @@ title: _NDIS_NIC_SWITCH_PARAMETERS (ntddndis.h)
 description: The NDIS_NIC_SWITCH_PARAMETERS structure specifies the configuration parameters of a network adapter switch on the network adapter.
 old-location: netvista\ndis_nic_switch_parameters.htm
 tech.root: netvista
-ms.assetid: BC43A7DF-51B4-4571-86C5-12B332B13084
 ms.date: 05/02/2018
 keywords: ["NDIS_NIC_SWITCH_PARAMETERS structure"]
 ms.keywords: "*PNDIS_NIC_SWITCH_PARAMETERS, NDIS_NIC_SWITCH_PARAMETERS, NDIS_NIC_SWITCH_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_NIC_SWITCH_PARAMETERS, PNDIS_NIC_SWITCH_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_NIC_SWITCH_PARAMETERS, netvista.ndis_nic_switch_parameters, ntddndis/NDIS_NIC_SWITCH_PARAMETERS, ntddndis/PNDIS_NIC_SWITCH_PARAMETERS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_NIC_SWITCH_PARAMETERS
+ - PNDIS_NIC_SWITCH_PARAMETERS
  - NDIS_NIC_SWITCH_PARAMETERS
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_NIC_SWITCH_PARAMETERS</b> structure specifies the configuration para
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_NIC_SWITCH_PARAMETERS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_NIC_SWITCH_PARAMETERS</b> structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_NIC_SWITCH_PARAMETERS</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
 
@@ -106,7 +107,7 @@ An NDIS_NIC_SWITCH_ID value that contains a switch identifier. The switch identi
 
 ### -field SwitchFriendlyName
 
-An NDIS_NIC_SWITCH_FRIENDLY_NAME value that contains a description for the switch.
+An NDIS_NIC_SWITCH_FRIENDLYNAME value that contains a description for the switch.
 
 ### -field NumVFs
 
@@ -141,7 +142,7 @@ For more information about the SR-IOV interface, see 	<a href="/windows-hardware
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -158,3 +159,4 @@ For more information about the SR-IOV interface, see 	<a href="/windows-hardware
 
 
 <a href="/windows-hardware/drivers/network/oid-nic-switch-parameters">OID_NIC_SWITCH_PARAMETERS</a>
+

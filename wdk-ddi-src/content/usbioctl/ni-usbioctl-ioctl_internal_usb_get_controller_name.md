@@ -4,7 +4,6 @@ title: IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME (usbioctl.h)
 description: The IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME I/O request queries the bus driver for the device name of the USB host controller.
 old-location: buses\ioctl_internal_usb_get_controller_name.htm
 tech.root: usbref
-ms.assetid: 52390982-febe-4d6d-b53a-160fb281b099
 ms.date: 05/07/2018
 keywords: ["IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME IOCTL"]
 ms.keywords: IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME, IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME control, IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME control code [Buses], buses.ioctl_internal_usb_get_controller_name, usbioctl/IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME, usbirp_36fbf149-8f7d-46ac-9ef3-017cbb000e1c.xml
@@ -51,6 +50,10 @@ The <b>IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME</b> I/O request queries the bus dr
 <b>IOCTL_INTERNAL_USB_GET_CONTROLLER_NAME</b> is a kernel-mode I/O control request. This request targets the USB hub PDO. This request must be sent at an IRQL of PASSIVE_LEVEL.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
+
+[IRP_MJ_INTERNAL_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
 ### -input-buffer
 

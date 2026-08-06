@@ -4,7 +4,6 @@ title: IDebugSystemObjects4 (dbgeng.h)
 description: IDebugSystemObjects4 interface
 old-location: debugger\idebugsystemobjects4.htm
 tech.root: debugger
-ms.assetid: 075143eb-03c4-41b2-b419-4618ed103843
 ms.date: 05/03/2018
 keywords: ["IDebugSystemObjects4 interface"]
 ms.keywords: IDebugSystemObjects4, IDebugSystemObjects4 interface [Windows Debugging], IDebugSystemObjects4 interface [Windows Debugging],described, dbgeng/IDebugSystemObjects4, debugger.idebugsystemobjects4
@@ -39,7 +38,6 @@ api_location:
  - dbgeng.h
 api_name:
  - IDebugSystemObjects4
- - IDebugSystemObjects4.GetCurrentSystemServerNameWide
 ---
 
 # IDebugSystemObjects4 interface
@@ -49,10 +47,8 @@ api_name:
 
 ## -inheritance
 
-The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugSystemObjects4</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects3">IDebugSystemObjects3</a>. <b>IDebugSystemObjects4</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The <b>IDebugSystemObjects4</b> interface inherits from <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects3">IDebugSystemObjects3</a>. <b>IDebugSystemObjects4</b> also has these types of members:
+
 
 ## -see-also
 
@@ -65,3 +61,4 @@ The <b xmlns:loc="http://microsoft.com/wdcml/l10n">IDebugSystemObjects4</b> inte
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsystemobjects3">IDebugSystemObjects3</a>
+

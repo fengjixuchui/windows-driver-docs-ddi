@@ -1,10 +1,9 @@
 ---
 UID: NS:wdm._PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK
 title: _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK (wdm.h)
-description: The PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK structure describes a PCI Express (PCIe) secondary uncorrectable error mask register of a PCIe advanced error reporting capability structure.
+description: The _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK structure (wdm.h) describes a PCI Express (PCIe) secondary uncorrectable error mask register.
 old-location: pci\pci_express_sec_uncorrectable_error_mask.htm
 tech.root: PCI
-ms.assetid: 99387bcc-301d-4406-bcff-fb5569c88c90
 ms.date: 02/24/2018
 keywords: ["PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK structure"]
 ms.keywords: "*PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PCI.pci_express_sec_uncorrectable_error_mask, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK union [Buses], PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK union pointer [Buses], _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, pci_struct_80f14fae-7c43-4a78-bdb7-211abd0e43fd.xml, wdm/PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, wdm/PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: PASSIVE_LEVEL (see Remarks section)
 targetos: Windows
 req.typenames: PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK, *PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK
-req.product: Windows 10 or later.
 f1_keywords:
  - _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK
  - wdm/_PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK
@@ -43,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK
+ - PPCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK
  - PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK
 ---
 
@@ -62,77 +62,77 @@ The PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK structure describes a PCI Express (
 A ULONG representation of the contents of the PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK structure.
 
 
-#### - DelayedTransactionDiscardTimerExpired
+### -field DUMMYSTRUCTNAME.DelayedTransactionDiscardTimerExpired
 
 A single bit that indicates that the reporting of the expiration of the delayed transaction discard timer is masked.
 
 
-#### - InternalBridgeError
+### -field DUMMYSTRUCTNAME.InternalBridgeError
 
 A single bit that indicates that the reporting of internal bridge errors is masked.
 
 
-#### - MasterAbortOnSplitCompletion
+### -field DUMMYSTRUCTNAME.MasterAbortOnSplitCompletion
 
 A single bit that indicates that the reporting of master aborts on split completion is masked.
 
 
-#### - PERRAsserted
+### -field DUMMYSTRUCTNAME.PERRAsserted
 
 A single bit that indicates that the reporting of PERR# assertions is masked.
 
 
-#### - ReceivedMasterAbort
+### -field DUMMYSTRUCTNAME.ReceivedMasterAbort
 
 A single bit that indicates that the reporting of master aborts is masked.
 
 
-#### - ReceivedTargetAbort
+### -field DUMMYSTRUCTNAME.ReceivedTargetAbort
 
 A single bit that indicates that the reporting of target aborts is masked.
 
 
-#### - Reserved
+### -field DUMMYSTRUCTNAME.Reserved
 
 Reserved for system use.
 
 
-#### - RsvdZ
+### -field DUMMYSTRUCTNAME.RsvdZ
 
 Reserved for system use.
 
 
-#### - SERRAsserted
+### -field DUMMYSTRUCTNAME.SERRAsserted
 
 A single bit that indicates that the reporting of SERR# assertions is masked.
 
 
-#### - TargetAbortOnSplitCompletion
+### -field DUMMYSTRUCTNAME.TargetAbortOnSplitCompletion
 
 A single bit that indicates that the reporting of target aborts on split completion is masked.
 
 
-#### - UncorrectableAddressError
+### -field DUMMYSTRUCTNAME.UncorrectableAddressError
 
 A single bit that indicates that the reporting of uncorrectable address errors is masked.
 
 
-#### - UncorrectableAttributeError
+### -field DUMMYSTRUCTNAME.UncorrectableAttributeError
 
 A single bit that indicates that the reporting of uncorrectable attribute errors is masked.
 
 
-#### - UncorrectableDataError
+### -field DUMMYSTRUCTNAME.UncorrectableDataError
 
 A single bit that indicates that the reporting of uncorrectable data errors is masked.
 
 
-#### - UncorrectableSplitCompletion
+### -field DUMMYSTRUCTNAME.UncorrectableSplitCompletion
 
 A single bit that indicates that the reporting of uncorrectable split completion message data errors is masked.
 
 
-#### - UnexpectedSplitCompletionError
+### -field DUMMYSTRUCTNAME.UnexpectedSplitCompletionError
 
 A single bit that indicates that the reporting of unexpected split completion errors is masked.
 
@@ -170,3 +170,4 @@ A PCI_EXPRESS_SEC_UNCORRECTABLE_ERROR_MASK structure is contained in the <a href
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_pci_express_bridge_aer_capability">PCI_EXPRESS_BRIDGE_AER_CAPABILITY</a>
+

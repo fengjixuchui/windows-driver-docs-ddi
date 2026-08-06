@@ -3,7 +3,6 @@ UID: NS:ndiswwan._NDIS_WWAN_LTE_ATTACH_CONTEXTS
 title: _NDIS_WWAN_LTE_ATTACH_CONTEXTS (ndiswwan.h)
 description: The NDIS_WWAN_LTE_ATTACH_CONTEXTS structure describes default LTE attach contexts for the inserted SIM's provider (MCC/MNC pair).
 tech.root: netvista
-ms.assetid: 103cf958-1c1c-44ff-bc93-ce69bbe43b20
 ms.date: 08/22/2018
 keywords: ["NDIS_WWAN_LTE_ATTACH_CONTEXTS structure"]
 ms.keywords: _NDIS_WWAN_LTE_ATTACH_CONTEXTS, NDIS_WWAN_LTE_ATTACH_CONTEXTS, *PNDIS_WWAN_LTE_ATTACH_CONTEXTS,
@@ -37,8 +36,8 @@ api_location:
  - ndiswwan.h
 api_name:
  - _NDIS_WWAN_LTE_ATTACH_CONTEXTS
-product:
- - Windows
+ - PNDIS_WWAN_LTE_ATTACH_CONTEXTS
+ - NDIS_WWAN_LTE_ATTACH_CONTEXTS
 ---
 
 # _NDIS_WWAN_LTE_ATTACH_CONTEXTS structure
@@ -60,7 +59,7 @@ The header with type, revision, and size information about the **NDIS_WWAN_LTE_A
 | Revision | NDIS_WWAN_LTE_ATTACH_CONTEXTS_REVISION_1 |
 | Size | sizeof(NDIS_WWAN_LTE_ATTACH_CONTEXTS) |
 
-For more information about these members, see [**NDIS_OBJECT_HEADER**](../ntddndis/ns-ntddndis-_ndis_object_header.md).
+For more information about these members, see [**NDIS_OBJECT_HEADER**](../objectheader/ns-objectheader-ndis_object_header.md).
 
 ### -field uStatus
 
@@ -92,4 +91,5 @@ This structure is used in the [NDIS_STATUS_WWAN_LTE_ATTACH_CONFIG](/windows-hard
 
 [**WWAN_LTE_ATTACH_CONFIG**](../wwan/ns-wwan-_wwan_lte_attach_config.md)
 
-[**NDIS_OBJECT_HEADER**](../ntddndis/ns-ntddndis-_ndis_object_header.md)
+[**NDIS_OBJECT_HEADER**](../objectheader/ns-objectheader-ndis_object_header.md)
+

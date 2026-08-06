@@ -1,10 +1,9 @@
 ---
 UID: NE:rilapitypes.RILCALLINFOFLAGS
 title: RILCALLINFOFLAGS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this enumeration in your code. Microsoft reserves the RILCALLINFOFLAGS enumeration for internal use only."
 old-location: netvista\rilcallinfoflags.htm
 tech.root: netvista
-ms.assetid: c4edec8f-a001-491b-a3e6-03d19ac94f18
 ms.date: 05/02/2018
 keywords: ["RILCALLINFOFLAGS enumeration"]
 ms.keywords: RILCALLINFOFLAGS, RILCALLINFOFLAGS enumeration [Network Drivers Starting with Windows Vista], RILCALLINFO_FLAG_ALIENCALL, RILCALLINFO_FLAG_EMERGENCYCALL, netvista.rilcallinfoflags, ntddrilapitypes/RILCALLINFOFLAGS, ntddrilapitypes/RILCALLINFO_FLAG_ALIENCALL, ntddrilapitypes/RILCALLINFO_FLAG_EMERGENCYCALL

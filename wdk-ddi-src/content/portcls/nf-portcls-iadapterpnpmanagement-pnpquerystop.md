@@ -3,7 +3,6 @@ UID: NF:portcls.IAdapterPnpManagement.PnpQueryStop
 title: IAdapterPnpManagement::PnpQueryStop (portcls.h)
 description: PnpQueryStop provides a notification when PnpQueryStop is invoked by portcls just before succeeding the QueryStop IRP.
 tech.root: audio
-ms.assetid: ddc729dd-71fe-4341-ba7e-ee05e9f91291
 ms.date: 10/31/2018
 keywords: ["IAdapterPnpManagement::PnpQueryStop"]
 ms.keywords: IAdapterPnpManagement::PnpQueryStop, PnpQueryStop, IAdapterPnpManagement.PnpQueryStop, IAdapterPnpManagement::PnpQueryStop, IAdapterPnpManagement.PnpQueryStop
@@ -35,9 +34,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IAdapterPnpManagement.PnpQueryStop
-product:
- - Windows
+ - IAdapterPnpManagement::PnpQueryStop
 ---
 
 # IAdapterPnpManagement::PnpQueryStop
@@ -59,3 +56,4 @@ For more information, see [Implement PnP Rebalance for PortCls Audio Drivers](/w
 ## -see-also
 
 [IAdapterPnpManagement](nn-portcls-iadapterpnpmanagement.md)
+

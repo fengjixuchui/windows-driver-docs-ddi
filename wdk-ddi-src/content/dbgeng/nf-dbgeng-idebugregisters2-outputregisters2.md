@@ -4,7 +4,6 @@ title: IDebugRegisters2::OutputRegisters2 (dbgeng.h)
 description: The OutputRegisters2 method formats and outputs the target's registers.
 old-location: debugger\outputregisters2.htm
 tech.root: debugger
-ms.assetid: 444f7264-6072-4ee2-b3fd-030affa502b7
 ms.date: 05/03/2018
 keywords: ["IDebugRegisters2::OutputRegisters2"]
 ms.keywords: IDebugRegisters2 interface [Windows Debugging],OutputRegisters2 method, IDebugRegisters2.OutputRegisters2, IDebugRegisters2::OutputRegisters2, IDebugRegisters_ecc2b40a-622b-4f1f-867b-2eb6b575559d.xml, OutputRegisters2, OutputRegisters2 method [Windows Debugging], OutputRegisters2 method [Windows Debugging],IDebugRegisters2 interface, dbgeng/IDebugRegisters2::OutputRegisters2, debugger.outputregisters2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugRegisters2.OutputRegisters2
+ - IDebugRegisters2::OutputRegisters2
 ---
 
 # IDebugRegisters2::OutputRegisters2
@@ -50,14 +49,14 @@ The <b>OutputRegisters2</b> method formats and outputs the target's <a href="/wi
 
 ## -parameters
 
-### -param OutputControl 
+### -param OutputControl [in]
 
-[in]
+
 Specifies which clients should be sent the output of the formatted registers.  See <a href="/windows-hardware/drivers/debugger/debug-outctl-xxx">DEBUG_OUTCTL_XXX</a> for possible values.
 
-### -param Source 
+### -param Source [in]
 
-[in]
+
 Specifies the register source to query.
 
 The possible values are listed in the following table.
@@ -101,9 +100,9 @@ Fetch register information from the current scope's register context.
 </tr>
 </table>
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies which register sets to print.  This can either be DEBUG_REGISTERS_DEFAULT to print commonly used registers, DEBUG_REGISTERS_ALL to print all of the register sets, or a combination of the values listed in the following table.
 
 <table>
@@ -180,3 +179,4 @@ For an overview of the <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-i
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugregisters2-outputregisters">OutputRegisters</a>
+

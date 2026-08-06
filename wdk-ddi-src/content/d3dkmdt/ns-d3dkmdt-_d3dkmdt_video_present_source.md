@@ -4,14 +4,13 @@ title: _D3DKMDT_VIDEO_PRESENT_SOURCE (d3dkmdt.h)
 description: The D3DKMDT_VIDEO_PRESENT_SOURCE structure contains the unique identifier of a video present source.
 old-location: display\d3dkmdt_video_present_source.htm
 tech.root: display
-ms.assetid: 907df90c-dfea-40bf-9d08-5f5d87571ed8
 ms.date: 05/10/2018
 keywords: ["D3DKMDT_VIDEO_PRESENT_SOURCE structure"]
 ms.keywords: D3DKMDT_VIDEO_PRESENT_SOURCE, D3DKMDT_VIDEO_PRESENT_SOURCE structure [Display Devices], DmStructs_16a61d68-9479-420e-b936-a1a0506ce8c3.xml, _D3DKMDT_VIDEO_PRESENT_SOURCE, d3dkmdt/D3DKMDT_VIDEO_PRESENT_SOURCE, display.d3dkmdt_video_present_source
 req.header: d3dkmdt.h
-req.include-header: D3dkmdt.h
+req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmdt.h
 api_name:
+ - _D3DKMDT_VIDEO_PRESENT_SOURCE
  - D3DKMDT_VIDEO_PRESENT_SOURCE
 ---
 
@@ -79,3 +79,4 @@ For more information about video present sources, see <a href="/windows-hardware
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_start_device">DxgkDdiStartDevice</a>
+

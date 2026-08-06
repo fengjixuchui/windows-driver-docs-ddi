@@ -4,7 +4,6 @@ title: ExtExtension::HasCharArg (engextcpp.h)
 description: The HasCharArg method indicates whether a specified single-character named argument is present in the command line used to invoke the current extension command.
 old-location: debugger\haschararg.htm
 tech.root: debugger
-ms.assetid: 24d9a231-2c04-43da-aa20-9e10f7633532
 ms.date: 05/03/2018
 keywords: ["ExtExtension::HasCharArg"]
 ms.keywords: EngExtCpp_Ref_1ef6d849-e279-4705-b0fe-8147fbd7daf8.xml, ExtExtension class [Windows Debugging],HasCharArg method, ExtExtension.HasCharArg, ExtExtension::HasCharArg, HasCharArg, HasCharArg method [Windows Debugging], HasCharArg method [Windows Debugging],ExtExtension class, debugger.haschararg
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Engextcpp.hpp
 api_name:
- - ExtExtension.HasCharArg
+ - ExtExtension::HasCharArg
 ---
 
 # ExtExtension::HasCharArg
@@ -50,9 +49,9 @@ The <b>HasCharArg</b> method indicates whether a specified single-character name
 
 ## -parameters
 
-### -param Name 
+### -param Name [in]
 
-[in]
+
 Specifies the name of the argument.
 
 ## -returns
@@ -76,3 +75,4 @@ This method should only be called during the execution of an extension command p
 
 
 <a href="/previous-versions/windows/hardware/previsioning-framework/ff549721(v=vs.85)">HasArg</a>
+

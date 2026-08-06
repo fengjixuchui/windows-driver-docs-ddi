@@ -4,7 +4,6 @@ title: VideoPortWritePortBufferUlong function (video.h)
 description: The VideoPortWritePortBufferUlong function writes a number of ULONG values to a mapped I/O port.
 old-location: display\videoportwriteportbufferulong.htm
 tech.root: display
-ms.assetid: 7b892bea-a21a-4bf3-863a-d56d919538aa
 ms.date: 05/10/2018
 keywords: ["VideoPortWritePortBufferUlong function"]
 ms.keywords: VideoPortWritePortBufferUlong, VideoPortWritePortBufferUlong function [Display Devices], VideoPort_Functions_f8e5a168-7d9d-4478-b3e9-00053456506f.xml, display.videoportwriteportbufferulong, video/VideoPortWritePortBufferUlong
@@ -54,9 +53,9 @@ The <b>VideoPortWritePortBufferUlong</b> function writes a number of ULONG value
 
 Pointer to the port. The given <i>Port</i> must be in a mapped I/O-space range returned by <a href="/windows-hardware/drivers/ddi/video/nf-video-videoportgetdevicebase">VideoPortGetDeviceBase</a>.
 
-### -param Buffer 
+### -param Buffer [in]
 
-[in]
+
 Pointer to a buffer containing the ULONG values to be written.
 
 ### -param Count

@@ -4,7 +4,6 @@ title: _DXVAHDDDI_COLOR_YCbCrA (d3dumddi.h)
 description: The DXVAHDDDI_COLOR_YCbCrA structure describes color in YCbCr terms.
 old-location: display\dxvahdddi_color_ycbcra.htm
 tech.root: display
-ms.assetid: e2a624e9-599e-4325-820b-945b3e649323
 ms.date: 05/10/2018
 keywords: ["DXVAHDDDI_COLOR_YCbCrA structure"]
 ms.keywords: DXVA2_Structs_28a4ec5c-f8e6-414b-ac91-846e3b0fdbf8.xml, DXVAHDDDI_COLOR_YCbCrA, DXVAHDDDI_COLOR_YCbCrA structure [Display Devices], _DXVAHDDDI_COLOR_YCbCrA, d3dumddi/DXVAHDDDI_COLOR_YCbCrA, display.dxvahdddi_color_ycbcra
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVAHDDDI_COLOR_YCbCrA
  - DXVAHDDDI_COLOR_YCbCrA
 ---
 
@@ -52,21 +52,21 @@ The DXVAHDDDI_COLOR_YCbCrA structure describes color in YCbCr terms.
 
 ## -struct-fields
 
-### -field Y
+### -field Y [in]
 
-[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the luma component of the YCbCr color.
+A FLOAT value in the 0.0 to 1.0 range that is used to describe the luma component of the YCbCr color.
 
-### -field Cb
+### -field Cb [in]
 
-[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the blue chroma component of the YCbCr color.
+A FLOAT value in the 0.0 to 1.0 range that is used to describe the blue chroma component of the YCbCr color.
 
-### -field Cr
+### -field Cr [in]
 
-[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the red chroma component of the YCbCr color.
+A FLOAT value in the 0.0 to 1.0 range that is used to describe the red chroma component of the YCbCr color.
 
-### -field A
+### -field A [in]
 
-[in] A FLOAT value in the 0.0 to 1.0 range that is used to describe the alpha component (that is, the transparency level) of the YCbCr color.
+A FLOAT value in the 0.0 to 1.0 range that is used to describe the alpha component (that is, the transparency level) of the YCbCr color.
 
 ## -remarks
 
@@ -77,3 +77,4 @@ A DXVAHDDDI_COLOR_YCbCrA structure is specified in the <b>YCbCr</b> member of th
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvahdddi_color">DXVAHDDDI_COLOR</a>
+

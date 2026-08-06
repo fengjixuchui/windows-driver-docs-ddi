@@ -3,7 +3,6 @@ UID: NS:ndiswwan._NDIS_WWAN_PIN_APP
 title: _NDIS_WWAN_PIN_APP (ndiswwan.h)
 description: The NDIS_WWAN_PIN_APP structure specifies the target application ID for a UICC application whose PIN is being queried.
 tech.root: netvista
-ms.assetid: 9E401F36-21E5-482D-A8A6-952046911E20
 ms.date: 04/10/2019
 keywords: ["NDIS_WWAN_PIN_APP structure"]
 ms.keywords: _NDIS_WWAN_PIN_APP, NDIS_WWAN_PIN_APP, *PNDIS_WWAN_PIN_APP,
@@ -37,6 +36,8 @@ api_location:
  - ndiswwan.h
 api_name:
  - _NDIS_WWAN_PIN_APP
+ - PNDIS_WWAN_PIN_APP
+ - NDIS_WWAN_PIN_APP
 ---
 
 # _NDIS_WWAN_PIN_APP structure
@@ -58,7 +59,7 @@ The header with type, revision, and size information about the **NDIS_WWAN_PIN_A
 | Revision | NDIS_WWAN_PIN_APP_REVISION_1 |
 | Size | sizeof(NDIS_WWAN_PIN_APP) |
 
-For more information about these members, see [**NDIS_OBJECT_HEADER**](../ntddndis/ns-ntddndis-_ndis_object_header.md).
+For more information about these members, see [**NDIS_OBJECT_HEADER**](../objectheader/ns-objectheader-ndis_object_header.md).
 
 ### -field PinApp
 
@@ -75,3 +76,4 @@ This structure is used in the payload of an [OID_WWAN_PIN_EX2](/windows-hardware
 [OID_WWAN_PIN_EX2](/windows-hardware/drivers/network/oid-wwan-pin-ex2)
 
 [**WWAN_PIN_APP**](../wwan/ns-wwan-_wwan_pin_app.md)
+

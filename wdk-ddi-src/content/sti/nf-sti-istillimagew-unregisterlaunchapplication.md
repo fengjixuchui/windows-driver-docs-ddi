@@ -4,7 +4,6 @@ title: IStillImageW::UnregisterLaunchApplication (sti.h)
 description: The IStillImage::UnregisterLaunchApplication method removes an application from the still image event monitor's list of push-model aware applications.
 old-location: image\istillimage_unregisterlaunchapplication.htm
 tech.root: image
-ms.assetid: cf57265a-d343-4e49-9635-6a4663c9a3a5
 ms.date: 05/03/2018
 keywords: ["IStillImageW::UnregisterLaunchApplication"]
 ms.keywords: IStillImageW interface [Imaging Devices],UnregisterLaunchApplication method, IStillImageW.UnregisterLaunchApplication, IStillImageW::UnregisterLaunchApplication, UnregisterLaunchApplication, UnregisterLaunchApplication method [Imaging Devices], UnregisterLaunchApplication method [Imaging Devices],IStillImageW interface, image.istillimage_unregisterlaunchapplication, sti/IStillImageW::UnregisterLaunchApplication, stifnc_7e477efa-efa3-445d-bd68-a23f87cee5de.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - sti.h
 api_name:
- - IStillImageW.UnregisterLaunchApplication
+ - IStillImageW::UnregisterLaunchApplication
 ---
 
 # IStillImageW::UnregisterLaunchApplication
@@ -50,9 +49,9 @@ The <b>IStillImage::UnregisterLaunchApplication</b> method removes an applicatio
 
 ## -parameters
 
-### -param pwszAppName 
+### -param pwszAppName [in]
 
-[in]
+
 Caller-supplied pointer to the application's "short name".
 
 ## -returns
@@ -72,3 +71,4 @@ Before calling <b>IStillImage::UnRegisterLaunchApplication</b>, clients of the <
 
 
 <a href="/windows-hardware/drivers/ddi/_image/index">IStillImageW</a>
+

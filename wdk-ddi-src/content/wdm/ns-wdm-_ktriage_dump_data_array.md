@@ -1,9 +1,9 @@
 ---
 UID: NS:wdm._KTRIAGE_DUMP_DATA_ARRAY
 title: _KTRIAGE_DUMP_DATA_ARRAY (wdm.h)
-description: 
-ms.assetid: 07dbd4cb-0840-4802-a595-a9e08cab4918
+description: "Learn more about: _KTRIAGE_DUMP_DATA_ARRAY structure"
 ms.date: 10/19/2018
+tech.root: devtest
 keywords: ["KTRIAGE_DUMP_DATA_ARRAY structure"]
 ms.keywords: _KTRIAGE_DUMP_DATA_ARRAY, PKTRIAGE_DUMP_DATA_ARRAY, KTRIAGE_DUMP_DATA_ARRAY,
 req.header: wdm.h
@@ -35,6 +35,8 @@ api_location:
  - wdm.h
 api_name:
  - _KTRIAGE_DUMP_DATA_ARRAY
+ - PKTRIAGE_DUMP_DATA_ARRAY
+ - KTRIAGE_DUMP_DATA_ARRAY
 ---
 
 # _KTRIAGE_DUMP_DATA_ARRAY structure
@@ -54,7 +56,9 @@ A pointer to a [**LIST_ENTRY**](/windows/win32/api/ntdef/ns-ntdef-list_entry) st
 
 ### -field NumBlocksTotal
 
-### -field VirtMemSize
+### -field DataSize
+
+### -field MaxDataSize
 
 ### -field ComponentNameBufferLength
 
@@ -64,8 +68,9 @@ A pointer to a [**LIST_ENTRY**](/windows/win32/api/ntdef/ns-ntdef-list_entry) st
 
 ## -remarks
 
-A driver provides a pointer to a structure of this type when it calls the [**KeAddTriageDumpDataBlock**](./nf-wdm-keaddtriagedumpdatablock.md) function.
+A driver initializes this structure by calling [**KeInitializeTriageDumpDataArray**](./nf-wdm-keinitializetriagedumpdataarray.md) function. A driver provides a pointer to a structure of this type when it calls the [**KeAddTriageDumpDataBlock**](./nf-wdm-keaddtriagedumpdatablock.md) function.
 
 ## -see-also
 
 [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](./nc-wdm-kbugcheck_reason_callback_routine.md)
+

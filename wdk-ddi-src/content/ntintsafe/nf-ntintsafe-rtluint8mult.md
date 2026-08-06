@@ -4,7 +4,6 @@ title: RtlUInt8Mult function (ntintsafe.h)
 description: Multiplies one value of type UINT8 by another.
 old-location: kernel\rtluint8mult.htm
 tech.root: kernel
-ms.assetid: 3F9E47F5-1DE3-4949-BE92-8C8F571BFD3D
 ms.date: 04/30/2018
 keywords: ["RtlUInt8Mult function"]
 ms.keywords: RtlUInt8Mult, RtlUInt8Mult function [Kernel-Mode Driver Architecture], kernel.rtluint8mult, ntintsafe/RtlUInt8Mult
@@ -50,19 +49,19 @@ Multiplies one value of type <b>UINT8</b> by another.
 
 ## -parameters
 
-### -param u8Multiplicand 
+### -param u8Multiplicand [in]
 
-[in]
+
 The value to be multiplied by <i>u8Multiplier</i>.
 
-### -param u8Multiplier 
+### -param u8Multiplier [in]
 
-[in]
+
 The value by which to multiply <i>u8Multiplicand</i>.
 
-### -param pu8Result 
+### -param pu8Result [out]
 
-[out]
+
 A pointer to the result. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

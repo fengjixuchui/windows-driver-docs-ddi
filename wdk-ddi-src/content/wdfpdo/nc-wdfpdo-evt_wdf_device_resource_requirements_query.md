@@ -4,7 +4,6 @@ title: EVT_WDF_DEVICE_RESOURCE_REQUIREMENTS_QUERY (wdfpdo.h)
 description: A bus driver's EvtDeviceResourceRequirementsQuery event callback function creates a resource requirements list that represents the device's required hardware resources.
 old-location: wdf\evtdeviceresourcerequirementsquery.htm
 tech.root: wdf
-ms.assetid: bacd7e7c-9f71-4dda-98ed-a8d813360943
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DEVICE_RESOURCE_REQUIREMENTS_QUERY callback function"]
 ms.keywords: DFDeviceObjectFdoPdoRef_7b6a59e4-0131-45fc-9a9b-f9e2c39660a6.xml, EVT_WDF_DEVICE_RESOURCE_REQUIREMENTS_QUERY, EVT_WDF_DEVICE_RESOURCE_REQUIREMENTS_QUERY callback, EvtDeviceResourceRequirementsQuery, EvtDeviceResourceRequirementsQuery callback function, kmdf.evtdeviceresourcerequirementsquery, wdf.evtdeviceresourcerequirementsquery, wdfpdo/EvtDeviceResourceRequirementsQuery
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfpdo.h
 api_name:
- - EvtDeviceResourceRequirementsQuery
+ - EVT_WDF_DEVICE_RESOURCE_REQUIREMENTS_QUERY
 ---
 
 # EVT_WDF_DEVICE_RESOURCE_REQUIREMENTS_QUERY callback function
@@ -52,14 +51,14 @@ A bus driver's <i>EvtDeviceResourceRequirementsQuery</i> event callback function
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param IoResourceRequirementsList 
+### -param IoResourceRequirementsList [in]
 
-[in]
+
 A handle to a framework resource-requirements-list object that represents an empty resource requirements list.
 
 ## -returns
@@ -89,3 +88,4 @@ To <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iosetdevicepropertydata">se
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfpdo/nc-wdfpdo-evt_wdf_device_resources_query">EvtDeviceResourcesQuery</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILUICCSUBSCRIBERNUMBERS
 title: RILUICCSUBSCRIBERNUMBERS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILUICCSUBSCRIBERNUMBERS structure for internal use only. Don't use this structure in your code."
 old-location: netvista\riluiccsubscribernumbers_2.htm
 tech.root: netvista
-ms.assetid: e1a097b5-ce13-4070-a6f6-4b461ac086de
 ms.date: 02/26/2018
 keywords: ["RILUICCSUBSCRIBERNUMBERS structure"]
 ms.keywords: "*LPRILUICCSUBSCRIBERNUMBERS, RILUICCSUBSCRIBERNUMBERS, RILUICCSUBSCRIBERNUMBERS structure [Network Drivers Starting with Windows Vista], netvista.riluiccsubscribernumbers_2, rilapitypes/RILUICCSUBSCRIBERNUMBERS"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: RILUICCSUBSCRIBERNUMBERS, *LPRILUICCSUBSCRIBERNUMBERS
-req.product: Windows 10 or later.
 f1_keywords:
  - RILUICCSUBSCRIBERNUMBERS
  - rilapitypes/RILUICCSUBSCRIBERNUMBERS
@@ -42,6 +40,7 @@ api_location:
  - rilapitypes.h
 api_name:
  - RILUICCSUBSCRIBERNUMBERS
+ - LPRILUICCSUBSCRIBERNUMBERS
 ---
 
 # RILUICCSUBSCRIBERNUMBERS structure (rilapitypes.h)

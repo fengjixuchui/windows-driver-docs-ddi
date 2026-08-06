@@ -4,7 +4,6 @@ title: FltReuseCallbackData function (fltkernel.h)
 description: The FltReuseCallbackData routine reinitializes a callback data structure so that it can be reused.
 old-location: ifsk\fltreusecallbackdata.htm
 tech.root: ifsk
-ms.assetid: c8671ba7-6128-4f0f-b5b1-32ce35e31168
 ms.date: 04/16/2018
 keywords: ["FltReuseCallbackData function"]
 ms.keywords: FltApiRef_p_to_z_a412f56d-8cee-40de-93fb-1c007fe87c3c.xml, FltReuseCallbackData, FltReuseCallbackData routine [Installable File System Drivers], fltkernel/FltReuseCallbackData, ifsk.fltreusecallbackdata
@@ -50,9 +49,9 @@ The <b>FltReuseCallbackData</b> routine reinitializes a callback data structure 
 
 ## -parameters
 
-### -param CallbackData 
+### -param CallbackData [in, out]
 
-[in, out]
+
 Pointer to the callback data (<a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data">FLT_CALLBACK_DATA</a>) structure to be reused. This structure must have been allocated by a previous call to <a href="/windows-hardware/drivers/ddi/fltkernel/nf-fltkernel-fltallocatecallbackdata">FltAllocateCallbackData</a>. This parameter is required and cannot be <b>NULL</b>.
 
 ## -returns

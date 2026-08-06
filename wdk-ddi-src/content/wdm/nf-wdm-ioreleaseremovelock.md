@@ -4,7 +4,6 @@ title: IoReleaseRemoveLock macro (wdm.h)
 description: The IoReleaseRemoveLock routine releases a remove lock acquired with a previous call to IoAcquireRemoveLock.
 old-location: kernel\ioreleaseremovelock.htm
 tech.root: kernel
-ms.assetid: 75cf8262-8cb4-428e-b18e-b80121c6390e
 ms.date: 04/30/2018
 keywords: ["IoReleaseRemoveLock macro"]
 ms.keywords: IoReleaseRemoveLock, IoReleaseRemoveLock routine [Kernel-Mode Driver Architecture], k104_7ac4aba4-0219-4ad2-81bf-028ec989e1f2.xml, kernel.ioreleaseremovelock, wdm/IoReleaseRemoveLock
@@ -50,14 +49,14 @@ The <b>IoReleaseRemoveLock</b> routine releases a remove lock acquired with a pr
 
 ## -parameters
 
-### -param RemoveLock 
+### -param RemoveLock [in]
 
-[in]
+
 Pointer to an <b>IO_REMOVE_LOCK</b> structure that the caller passed to a previous call to <b>IoAcquireRemoveLock</b>.
 
-### -param Tag 
+### -param Tag [in]
 
-[in]
+
 Pointer to a caller-supplied tag that was passed to a previous call to <b>IoAcquireRemoveLock</b>. 
 
 If a driver specified a <i>Tag</i> when it acquired the lock, the driver must specify the same <i>Tag</i> when releasing the lock. 

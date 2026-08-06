@@ -4,7 +4,6 @@ title: IDebugControl4::SetEventFilterCommandWide (dbgeng.h)
 description: The SetEventFilterCommandWide method sets a debugger command for the engine to execute when a specified event occurs.
 old-location: debugger\seteventfiltercommandwide.htm
 tech.root: debugger
-ms.assetid: e0e14c8b-0b11-482f-93e2-31c522235110
 ms.date: 05/03/2018
 keywords: ["IDebugControl4::SetEventFilterCommandWide"]
 ms.keywords: IDebugControl4 interface [Windows Debugging],SetEventFilterCommandWide method, IDebugControl4.SetEventFilterCommandWide, IDebugControl4::SetEventFilterCommandWide, SetEventFilterCommandWide, SetEventFilterCommandWide method [Windows Debugging], SetEventFilterCommandWide method [Windows Debugging],IDebugControl4 interface, dbgeng/IDebugControl4::SetEventFilterCommandWide, debugger.seteventfiltercommandwide
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl4.SetEventFilterCommandWide
+ - IDebugControl4::SetEventFilterCommandWide
 ---
 
 # IDebugControl4::SetEventFilterCommandWide
@@ -50,14 +49,14 @@ The <b>SetEventFilterCommandWide</b>  method sets a debugger command for the eng
 
 ## -parameters
 
-### -param Index 
+### -param Index [in]
 
-[in]
+
 Specifies the index of the event filter.  <i>Index</i> can take any value between zero and one less than the total number of event filters returned by <b>GetNumberEventFilters</b> (inclusive).  For more information about the index of the filters, see Index and Exception Code.
 
-### -param Command 
+### -param Command [in]
 
-[in]
+
 Specifies the debugger command for the engine to execute when the event occurs.
 
 ## -returns
@@ -101,3 +100,4 @@ For more information about event filters, see <a href="/windows-hardware/drivers
 
 
 <a href="/windows-hardware/drivers/debugger/sx--sxd--sxe--sxi--sxn--sxr--sx---set-exceptions-">sx, sxd, sxe, sxi, sxn (Set Exceptions)</a>
+

@@ -1,10 +1,9 @@
 ---
 UID: NE:ntddrilapitypes.RILRADIOSTATEITEMFLAG
 title: RILRADIOSTATEITEMFLAG (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILRADIOSTATEITEMFLAG enumeration for internal use only. Don't use the RILRADIOSTATEITEMFLAG enumeration in your code."
 old-location: netvista\rilradiostateitemflag.htm
 tech.root: netvista
-ms.assetid: dcbd0b16-4960-4cc1-b76b-6d971ba6a192
 ms.date: 05/02/2018
 keywords: ["RILRADIOSTATEITEMFLAG enumeration"]
 ms.keywords: RILRADIOSTATEITEMFLAG, RILRADIOSTATEITEMFLAG enumeration [Network Drivers Starting with Windows Vista], RIL_RADIOSTATE_ITEMFLAG_USE_BYTEARRAY, RIL_RADIOSTATE_ITEMFLAG_USE_INTARRAY, RIL_RADIOSTATE_ITEMFLAG_USE_MAX, RIL_RADIOSTATE_ITEMFLAG_USE_UINTARRAY, RIL_RADIOSTATE_ITEMFLAG_USE_UINTVAL, RIL_RADIOSTATE_ITEMFLAG_USE_WSZVAL, netvista.rilradiostateitemflag, ntddrilapitypes/RILRADIOSTATEITEMFLAG, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_BYTEARRAY, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_INTARRAY, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_MAX, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_UINTARRAY, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_UINTVAL, ntddrilapitypes/RIL_RADIOSTATE_ITEMFLAG_USE_WSZVAL

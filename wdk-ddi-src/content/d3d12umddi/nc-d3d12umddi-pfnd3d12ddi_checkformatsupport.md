@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_CHECKFORMATSUPPORT
 title: PFND3D12DDI_CHECKFORMATSUPPORT (d3d12umddi.h)
 description: Implemented by the client driver to check the format support.
-ms.assetid: b05a2e1a-5839-4a5e-83c5-67bfd41287b0
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_CHECKFORMATSUPPORT callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CHECKFORMATSUPPORT
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -50,15 +47,15 @@ Implemented by the client driver to check the format support.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 A DXGI_FORMAT.
 
-### -param Arg3
+### -param unnamedParam3
 
 Pointer to a UINT.
 

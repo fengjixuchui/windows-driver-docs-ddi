@@ -4,7 +4,6 @@ title: StorPortPutScatterGatherList function (storport.h)
 description: The StorPortPutScatterGatherList routine releases any resources associated with a scatter/gather list that was previously created by a call to the StorPortBuildScatterGatherList routine.
 old-location: storage\storportputscattergatherlist.htm
 tech.root: storage
-ms.assetid: 0b380597-09dc-414f-b2c6-f541d35540da
 ms.date: 03/29/2018
 keywords: ["StorPortPutScatterGatherList function"]
 ms.keywords: StorPortPutScatterGatherList, StorPortPutScatterGatherList routine [Storage Devices], storage.storportputscattergatherlist, storport/StorPortPutScatterGatherList, storprt_d8e74add-b512-4584-aa56-d9337ad3d7a9.xml
@@ -50,19 +49,19 @@ The <b>StorPortPutScatterGatherList</b> routine releases any resources associate
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 A pointer to the hardware device extension for the host bus adapter (HBA).
 
-### -param ScatterGatherList 
+### -param ScatterGatherList [in]
 
-[in]
+
 A pointer to a buffer that contains a scatter/gather list that was previously created by a call to the <a href="/windows-hardware/drivers/ddi/storport/nf-storport-storportbuildscattergatherlist">StorPortBuildScatterGatherList</a> routine.
 
-### -param WriteToDevice 
+### -param WriteToDevice [in]
 
-[in]
+
 A value that indicates the direction of the DMA transfer that has completed. A value of <b>TRUE</b> indicates a transfer from the data buffer to the device, and <b>FALSE</b> indicates a transfer from the device to the data buffer.
 
 ## -returns

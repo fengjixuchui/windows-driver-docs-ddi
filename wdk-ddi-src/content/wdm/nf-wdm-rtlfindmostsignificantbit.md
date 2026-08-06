@@ -4,7 +4,6 @@ title: RtlFindMostSignificantBit function (wdm.h)
 description: The RtlFindMostSignificantBit routine returns the zero-based position of the most significant nonzero bit in its parameter.
 old-location: kernel\rtlfindmostsignificantbit.htm
 tech.root: kernel
-ms.assetid: 372a155f-e270-49ab-a5ab-9b933b29ed74
 ms.date: 04/30/2018
 keywords: ["RtlFindMostSignificantBit function"]
 ms.keywords: RtlFindMostSignificantBit, RtlFindMostSignificantBit routine [Kernel-Mode Driver Architecture], k109_c8dcb9dd-ec2c-4b0c-92f2-167dcee10a96.xml, kernel.rtlfindmostsignificantbit, wdm/RtlFindMostSignificantBit
@@ -50,9 +49,9 @@ The <b>RtlFindMostSignificantBit</b> routine returns the zero-based position of 
 
 ## -parameters
 
-### -param Set 
+### -param Set [in]
 
-[in]
+
 The 64-bit value to be searched for its most significant nonzero bit.
 
 ## -returns

@@ -1,10 +1,9 @@
 ---
 UID: NF:miniport.InterlockedExchangePointer
 title: InterlockedExchangePointer function (miniport.h)
-description: The InterlockedExchangePointer routine performs an atomic operation that sets a pointer to a new value.
+description: The InterlockedExchangePointer function (miniport.h) performs an atomic operation that sets a pointer to a new value.
 old-location: kernel\interlockedexchangepointer.htm
 tech.root: kernel
-ms.assetid: 8c39a62d-0c05-4d26-b104-90c436e821cb
 ms.date: 04/30/2018
 keywords: ["InterlockedExchangePointer function"]
 ms.keywords: InterlockedExchangePointer, InterlockedExchangePointer routine [Kernel-Mode Driver Architecture], k102_4959af35-65d8-4768-94f7-a2dad0a2db46.xml, kernel.interlockedexchangepointer, wdm/InterlockedExchangePointer
@@ -50,19 +49,19 @@ The <b>InterlockedExchangePointer</b> routine performs an atomic operation that 
 
 ## -parameters
 
-### -param Target 
+### -param Target [in, out]
 
-[in, out]
-A pointer to a PVOID value. The routine sets (*<i>Target</i>) to <i>Value</i>.
 
-### -param Value 
+A pointer to a PVOID value. The routine sets (**Target*) to <i>Value</i>.
 
-[in, optional]
-Specifies the PVOID value to set (*<i>Target</i>) to.
+### -param Value [in, optional]
+
+
+Specifies the PVOID value to set (**Target*) to.
 
 ## -returns
 
-<b>InterlockedExchangePointer</b> returns the original value of the pointer at *<i>Target</i> (that is, the value of this pointer at entry to the routine).
+<b>InterlockedExchangePointer</b> returns the original value of the pointer at **Target* (that is, the value of this pointer at entry to the routine).
 
 ## -remarks
 

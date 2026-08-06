@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILSENDFLASHPARAMS
 title: RILSENDFLASHPARAMS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILSENDFLASHPARAMS structure for internal use only."
 old-location: netvista\rilsendflashparams.htm
 tech.root: netvista
-ms.assetid: e45b8f47-4e46-4265-9c56-055e753eb6e6
 ms.date: 05/02/2018
 keywords: ["RILSENDFLASHPARAMS structure"]
 ms.keywords: "*LPRILSENDFLASHPARAMS, RILSENDFLASHPARAMS, RILSENDFLASHPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsendflashparams, ntddrilapitypes/RILSENDFLASHPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILSENDFLASHPARAMS
+ - LPRILSENDFLASHPARAMS
 ---
 
 # RILSENDFLASHPARAMS structure (rilapitypes.h)

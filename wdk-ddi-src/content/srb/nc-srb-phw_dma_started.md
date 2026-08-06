@@ -4,7 +4,6 @@ title: PHW_DMA_STARTED (srb.h)
 description: The PHW_DMA_STARTED routine prototype declares a SCSI miniport driver routine that starts DMA for subordinate DMA device.
 old-location: storage\phw_dma_started.htm
 tech.root: storage
-ms.assetid: 2f989c46-e90e-45e1-a520-98b05ff78e73
 ms.date: 03/29/2018
 keywords: ["PHW_DMA_STARTED callback"]
 ms.keywords: "(*PHW_DMA_STARTED), (*PHW_DMA_STARTED) callback function [Storage Devices], ide_minikr_2e265b69-67af-449a-bfef-67fbd6694cba.xml, srb/(*PHW_DMA_STARTED), storage.phw_dma_started"
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: SPB_CONTROLLER_CONFIG, *PSPB_CONTROLLER_CONFIG
-req.product: Windows 10 or later.
 f1_keywords:
  - PHW_DMA_STARTED
  - srb/PHW_DMA_STARTED
@@ -39,7 +37,7 @@ api_type:
 api_location:
  - srb.h
 api_name:
- - (*PHW_DMA_STARTED)
+ - PHW_DMA_STARTED
 ---
 
 # PHW_DMA_STARTED callback
@@ -51,9 +49,9 @@ The PHW_DMA_STARTED routine prototype declares a SCSI miniport driver routine th
 
 ## -parameters
 
-### -param DeviceExtension 
+### -param DeviceExtension [in]
 
-[in]
+
 Pointer to the miniport driver's per-HBA storage area.
 
 ## -remarks
@@ -65,3 +63,4 @@ Miniport drivers that work with the StorPort driver do not support adapters that
 ## -see-also
 
 <a href="/previous-versions/windows/hardware/drivers/ff557291(v=vs.85)">HwScsiDmaStarted</a>
+

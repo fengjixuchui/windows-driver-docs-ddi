@@ -3,7 +3,6 @@ UID: NE:wditypes._WDI_FTM_RESPONSE_STATUS
 title: WDI_FTM_RESPONSE_STATUS
 description: The WDI_FTM_RESPONSE_STATUS defines the response status for a Fine Timing Measurement (FTM) request.
 tech.root: netvista
-ms.assetid: 47bf0b97-57e3-4f9d-8787-8ff6dfe6075f
 ms.date: 02/13/2019
 keywords: ["WDI_FTM_RESPONSE_STATUS enumeration"]
 ms.keywords: WDI_FTM_RESPONSE_STATUS, WDI_FTM_RESPONSE_STATUS,
@@ -30,6 +29,7 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_FTM_RESPONSE_STATUS
  - WDI_FTM_RESPONSE_STATUS
 ---
 
@@ -37,6 +37,9 @@ api_name:
 
 
 ## -description
+
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
 
 The **WDI_FTM_RESPONSE_STATUS** defines the response status for a Fine Timing Measurement (FTM) request.
 
@@ -85,3 +88,4 @@ This enumeration is a value in the [WDI_TLV_FTM_RESPONSE](/windows-hardware/driv
 [NDIS_STATUS_WDI_INDICATION_REQUEST_FTM_COMPLETE](/windows-hardware/drivers/network/ndis-status-wdi-indication-request-ftm-complete)
 
 [OID_WDI_TASK_REQUEST_FTM](/windows-hardware/drivers/network/oid-wdi-task-request-ftm)
+

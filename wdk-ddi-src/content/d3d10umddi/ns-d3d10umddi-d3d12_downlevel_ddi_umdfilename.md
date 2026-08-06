@@ -1,13 +1,10 @@
 ---
 UID: NS:d3d10umddi.D3D12_DOWNLEVEL_DDI_UMDFILENAME
 title: D3D12_DOWNLEVEL_DDI_UMDFILENAME
-description: 
+description: "Learn more about: D3D12_DOWNLEVEL_DDI_UMDFILENAME structure"
 tech.root: display
-ms.assetid: 127b2cb2-7877-4bb9-9aa3-6c9e7d5d4e4b
 ms.date: 04/04/2019
 keywords: ["D3D12_DOWNLEVEL_DDI_UMDFILENAME structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: D3D12_DOWNLEVEL_DDI_UMDFILENAME, D3D12_DOWNLEVEL_DDI_UMDFILENAME,
 req.header: d3d10umddi.h
 req.include-header: 
@@ -35,8 +32,6 @@ api_location:
  - d3d10umddi.h
 api_name:
  - D3D12_DOWNLEVEL_DDI_UMDFILENAME
-product:
- - Windows
 ---
 
 # D3D12_DOWNLEVEL_DDI_UMDFILENAME structure

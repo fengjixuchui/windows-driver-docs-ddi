@@ -4,7 +4,6 @@ title: IAdapterPowerManagement3::D3ExitLatencyChanged (portcls.h)
 description: PortCls calls the D3ExitLatencyChanged method while the device is in sleep (D3) power state, to provide a new exit latency value.
 old-location: audio\iadapterpowermanagement3_d3exitlatencychanged.htm
 tech.root: audio
-ms.assetid: B62920AB-39B2-4A04-AFB9-9C935A273F9A
 ms.date: 05/08/2018
 keywords: ["IAdapterPowerManagement3::D3ExitLatencyChanged"]
 ms.keywords: D3ExitLatencyChanged, D3ExitLatencyChanged method [Audio Devices], D3ExitLatencyChanged method [Audio Devices],IAdapterPowerManagement3 interface, IAdapterPowerManagement3 interface [Audio Devices],D3ExitLatencyChanged method, IAdapterPowerManagement3.D3ExitLatencyChanged, IAdapterPowerManagement3::D3ExitLatencyChanged, audio.iadapterpowermanagement3_d3exitlatencychanged, portcls/IAdapterPowerManagement3::D3ExitLatencyChanged
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IAdapterPowerManagement3.D3ExitLatencyChanged
+ - IAdapterPowerManagement3::D3ExitLatencyChanged
 ---
 
 # IAdapterPowerManagement3::D3ExitLatencyChanged
@@ -50,9 +49,9 @@ PortCls calls the D3ExitLatencyChanged method while the device is in sleep (D3) 
 
 ## -parameters
 
-### -param NewD3ExitLatency 
+### -param NewD3ExitLatency [in]
 
-[in]
+
 The  <a href="/windows-hardware/drivers/ddi/portcls/ne-portcls-_pc_exit_latency">PC_EXIT_LATENCY</a> enumerated value that Portcls has determined for the device.
 
 ## -returns
@@ -94,3 +93,4 @@ The following table shows the possible values for <i>NewD3ExitLatency</i>.
 
 
 <a href="/previous-versions/windows/hardware/drivers/jj200332(v=vs.85)">PowerChangeState3</a>
+

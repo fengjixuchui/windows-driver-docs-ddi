@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.KeQueryActiveProcessors
 title: KeQueryActiveProcessors function (wdm.h)
-description: The KeQueryActiveProcessors routine returns a bitmask of the currently active processors.
+description: Learn how the KeQueryActiveProcessors routine returns a bitmask of the currently active processors.
 old-location: kernel\kequeryactiveprocessors.htm
 tech.root: kernel
-ms.assetid: 3a7e50e9-0aeb-46e8-a1d2-7267df4921ad
 ms.date: 04/30/2018
 keywords: ["KeQueryActiveProcessors function"]
 ms.keywords: KeQueryActiveProcessors, KeQueryActiveProcessors routine [Kernel-Mode Driver Architecture], k105_963f6993-c875-4939-89ce-7abf2e7a9c22.xml, kernel.kequeryactiveprocessors, wdm/KeQueryActiveProcessors

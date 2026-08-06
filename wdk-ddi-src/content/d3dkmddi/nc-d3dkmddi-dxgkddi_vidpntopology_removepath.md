@@ -3,14 +3,13 @@ UID: NC:d3dkmddi.DXGKDDI_VIDPNTOPOLOGY_REMOVEPATH
 title: DXGKDDI_VIDPNTOPOLOGY_REMOVEPATH (d3dkmddi.h)
 description: The pfnRemovePath function removes a video present path to a specified VidPN topology object.
 old-location: display\dxgk_vidpntopology_interface_pfnremovepath.htm
-ms.assetid: 463973e0-c443-417a-86ff-0b78773d40cc
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_VIDPNTOPOLOGY_REMOVEPATH callback function"]
 ms.keywords: DXGKDDI_VIDPNTOPOLOGY_REMOVEPATH, DXGKDDI_VIDPNTOPOLOGY_REMOVEPATH callback, VidPnFunctions_0a43b9cf-d4c2-4d6f-acc7-7988038c56e5.xml, d3dkmddi/pfnRemovePath, display.dxgk_vidpntopology_interface_pfnremovepath, pfnRemovePath, pfnRemovePath callback function [Display Devices]
 req.header: d3dkmddi.h
 req.include-header: D3dkmddi.h
 req.target-type: Desktop
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3dkmddi.h
 api_name:
- - pfnRemovePath
-product:
- - Windows
+ - DXGKDDI_VIDPNTOPOLOGY_REMOVEPATH
 ---
 
 # DXGKDDI_VIDPNTOPOLOGY_REMOVEPATH callback function
@@ -52,17 +49,17 @@ The <b>pfnRemovePath</b> function removes a video present path to a specified Vi
 
 ## -parameters
 
-### -param hVidPnTopology
+### -param hVidPnTopology [in]
 
-[in] A handle to a VidPN topology object. The display miniport driver previously obtained this handle by calling the <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_gettopology">pfnGetTopology</a> function of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpn_interface">DXGK_VIDPN_INTERFACE</a> interface.
+A handle to a VidPN topology object. The display miniport driver previously obtained this handle by calling the <a href="/windows-hardware/drivers/ddi/d3dkmddi/nc-d3dkmddi-dxgkddi_vidpn_gettopology">pfnGetTopology</a> function of the <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_vidpn_interface">DXGK_VIDPN_INTERFACE</a> interface.
 
-### -param VidPnSourceId
+### -param VidPnSourceId [in]
 
-[in] An integer that identifies a VidPN source path.
+An integer that identifies a VidPN source path.
 
-### -param VidPnTargetId
+### -param VidPnTargetId [in]
 
-[in] An integer that identifies a VidPN target path.
+An integer that identifies a VidPN target path.
 
 ## -returns
 
@@ -79,3 +76,4 @@ The <b>pfnRemovePath</b> function returns one of the following values.
 ## -remarks
 
 The D3DKMDT_HVIDPNTOPOLOGY data type is defined in<i> D3dkmdt.h</i>.
+

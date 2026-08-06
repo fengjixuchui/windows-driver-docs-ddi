@@ -1,9 +1,8 @@
 ---
 UID: NF:d3dkmthk.D3DKMTAcquireKeyedMutex2
 title: D3DKMTAcquireKeyedMutex2 function (d3dkmthk.h)
-description: Acquires a keyed mutex object that includes private data.
+description: The D3DKMTAcquireKeyedMutex2 function acquires a keyed mutex object that includes private data.
 old-location: display\d3dkmtacquirekeyedmutex2.htm
-ms.assetid: 94ebfeb6-2035-4dd6-bbc9-ba82939b51ec
 ms.date: 05/10/2018
 keywords: ["D3DKMTAcquireKeyedMutex2 function"]
 ms.keywords: D3DKMTAcquireKeyedMutex2, D3DKMTAcquireKeyedMutex2 callback function [Display Devices], PFND3DKMT_ACQUIREKEYEDMUTEX2, PFND3DKMT_ACQUIREKEYEDMUTEX2 callback, d3dkmthk/D3DKMTAcquireKeyedMutex2, display.d3dkmtacquirekeyedmutex2
@@ -50,7 +49,7 @@ Acquires a keyed mutex object that includes private data.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *pData* [in, out]
 

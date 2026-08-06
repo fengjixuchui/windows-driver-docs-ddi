@@ -1,10 +1,8 @@
 ---
 UID: NS:d3d12umddi.D3D12DDI_VIDEO_SIZE_RANGE_0032
 title: D3D12DDI_VIDEO_SIZE_RANGE_0032 (d3d12umddi.h)
-description: Video size range.
-old-location: display\d3d12ddi-video-size-range-0032.htm
-ms.assetid: a4781fea-4efc-442d-8503-12be17afa9b1
-ms.date: 04/16/2018
+description: Learn more about the D3D12DDI_VIDEO_SIZE_RANGE_0032 structure.
+ms.date: 12/12/2023
 keywords: ["D3D12DDI_VIDEO_SIZE_RANGE_0032 structure"]
 ms.keywords: D3D12DDI_VIDEO_SIZE_RANGE_0032, D3D12DDI_VIDEO_SIZE_RANGE_0032 structure [Display Devices], d3d12umddi/D3D12DDI_VIDEO_SIZE_RANGE_0032, display.d3d12ddi-video-size-range-0032
 req.header: d3d12umddi.h
@@ -43,10 +41,9 @@ api_name:
 
 # D3D12DDI_VIDEO_SIZE_RANGE_0032 structure
 
-
 ## -description
 
-Describes a supported range of output sizes for a scaler.
+The **D3D12DDI_VIDEO_SIZE_RANGE_0032** structure describes a supported range of output sizes for a scaler.
 
 ## -struct-fields
 
@@ -74,5 +71,4 @@ When scaling is not supported, the Min and Max sizes should both be set to the i
 
 ## -see-also
 
-[D3D12DDI_VIDEO_SCALE_SUPPORT_0032 structure](ns-d3d12umddi-d3d12ddi_video_scale_support_0032.md)
-
+[**D3D12DDI_VIDEO_SCALE_SUPPORT_0032**](ns-d3d12umddi-d3d12ddi_video_scale_support_0032.md)

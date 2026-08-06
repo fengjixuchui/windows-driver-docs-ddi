@@ -4,7 +4,6 @@ title: PFN_WSK_CONTROL_CLIENT (wsk.h)
 description: The WskControlClient function performs control operations on a WSK client object.
 old-location: netvista\wskcontrolclient.htm
 tech.root: netvista
-ms.assetid: dad13c60-3511-4641-9182-71a1ce032a69
 ms.date: 05/02/2018
 keywords: ["PFN_WSK_CONTROL_CLIENT callback function"]
 ms.keywords: PFN_WSK_CONTROL_CLIENT, PFN_WSK_CONTROL_CLIENT callback, WskControlClient, WskControlClient callback function [Network Drivers Starting with Windows Vista], netvista.wskcontrolclient, wsk/WskControlClient, wskref_11f754a6-78c0-44ca-8dbc-75521ed659b7.xml
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wsk.h
 api_name:
- - WskControlClient
+ - PFN_WSK_CONTROL_CLIENT
 ---
 
 # PFN_WSK_CONTROL_CLIENT callback function
@@ -50,14 +49,14 @@ The <b>WskControlClient</b> function performs control operations on a WSK client
 
 ## -parameters
 
-### -param Client 
+### -param Client [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/network/wsk-client">WSK_CLIENT</a> structure that was returned through the  <i>WskProviderNpi</i> parameter of the <a href="/windows-hardware/drivers/ddi/wsk/nf-wsk-wskcaptureprovidernpi"> WskCaptureProviderNPI</a> function.
 
-### -param ControlCode 
+### -param ControlCode [in]
 
-[in]
+
 The control operation that is being performed. A WSK application can specify one of the following control codes:
 
 
@@ -102,29 +101,29 @@ Map combinations of address family, socket type, and protocol to device names of
 
 Control whether the WSK subsystem will divert network I/O to <a href="/previous-versions/windows/hardware/network/ff565094(v=vs.85)">TDI</a> transports.
 
-### -param InputSize 
+### -param InputSize [in]
 
-[in]
+
 The number of bytes of data in the buffer that is pointed to by the <i>InputBuffer</i> parameter.
 
-### -param InputBuffer 
+### -param InputBuffer [in, optional]
 
-[in, optional]
+
 A caller-allocated buffer that supplies any input data that is required to perform the specified control operation. If no input data is required for the specified control operation, the WSK application should set this parameter to <b>NULL</b> and set the <i>InputSize</i> parameter to zero.
 
-### -param OutputSize 
+### -param OutputSize [in]
 
-[in]
+
 The size, in bytes, of the buffer that is pointed to by the <i>OutputBuffer</i> parameter.
 
-### -param OutputBuffer 
+### -param OutputBuffer [out, optional]
 
-[out, optional]
+
 A caller-allocated buffer that receives any output data that is returned by the specified control operation. If no output data is returned by the specified control operation, the WSK application should set this parameter to <b>NULL</b> and set the <i>OutputSize</i> parameter to zero.
 
-### -param OutputSizeReturned 
+### -param OutputSizeReturned [out, optional]
 
-[out, optional]
+
 A pointer to a ULONG-typed variable that receives the number of bytes of data that is returned in the buffer that is pointed to by the <i>OutputBuffer</i> parameter. A WSK application should set this pointer to <b>NULL</b> except when all of the following are true:
      
 
@@ -143,9 +142,9 @@ The number of bytes of output data that is returned by the operation that is bei
 </li>
 </ul>
 
-### -param Irp 
+### -param Irp [in, out]
 
-[in, out]
+
 A pointer to a caller-allocated IRP that the WSK subsystem uses to complete the control operation asynchronously. For more information about using IRPs with WSK functions, see <a href="/windows-hardware/drivers/network/using-irps-with-winsock-kernel-functions">Using IRPs with Winsock Kernel Functions</a>.
      
 
@@ -194,3 +193,4 @@ If the <b>WskControlClient</b> function returns STATUS_PENDING, any buffers that
 
 
 <a href="/windows-hardware/drivers/ddi/wsk/nf-wsk-wskcaptureprovidernpi">WskCaptureProviderNPI</a>
+

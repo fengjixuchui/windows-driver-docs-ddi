@@ -4,7 +4,6 @@ title: NDIS_PD_ALLOCATE_COUNTER (ndis.h)
 description: The PacketDirect (PD) platform calls a PD-capable miniport driver's NdisPDAllocateCounter function to allocate a counter object.
 old-location: netvista\ndispdallocatecounter.htm
 tech.root: netvista
-ms.assetid: 86AA537D-952F-4A7A-ACA4-24B8C1AE932A
 ms.date: 05/02/2018
 keywords: ["NDIS_PD_ALLOCATE_COUNTER callback function"]
 ms.keywords: NDIS_PD_ALLOCATE_COUNTER, NDIS_PD_ALLOCATE_COUNTER callback, NdisPDAllocateCounter, NdisPDAllocateCounter callback function [Network Drivers Starting with Windows Vista], ndis/NdisPDAllocateCounter, netvista.ndispdallocatecounter
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - NdisPDAllocateCounter
+ - NDIS_PD_ALLOCATE_COUNTER
 ---
 
 # NDIS_PD_ALLOCATE_COUNTER callback function
@@ -67,19 +66,19 @@ Filter counters are used for tracking filter match activity.
 
 ## -parameters
 
-### -param ProviderHandle 
+### -param ProviderHandle [in]
 
-[in]
+
 A provider handle that identifies the PD-capable miniport driver's provider object.
 
-### -param CounterParameters 
+### -param CounterParameters [in]
 
-[in]
+
 An <a href="/windows-hardware/drivers/ddi/ndis/ns-ndis-_ndis_pd_counter_parameters">NDIS_PD_COUNTER_PARAMETERS</a> structure that specifies information such as the counter type.
 
-### -param CounterHandle 
+### -param CounterHandle [out]
 
-[out]
+
 A pointer to a driver-allocated counter handle variable. If the counter allocation succeeds, the miniport driver returns a handle to the newly allocated counter in this variable.
 
 ## -returns
@@ -154,3 +153,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-ndis_pd_free_counter">NdisPDFreeCounter</a>
+

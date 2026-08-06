@@ -4,7 +4,6 @@ title: PFREE_CONTIGUOUS_DMA_BUFFER (hdaudio.h)
 description: The FreeContiguousDmaBuffer routine frees a DMA buffer and buffer descriptor list (BDL) that were allocated by a call to AllocateContiguousDmaBuffer.The function pointer type for a FreeContiguousDmaBuffer routine is defined as follows.
 old-location: audio\freecontiguousdmabuffer.htm
 tech.root: audio
-ms.assetid: 7aaf98cc-8a94-44e6-9fef-76e00db17405
 ms.date: 05/08/2018
 keywords: ["PFREE_CONTIGUOUS_DMA_BUFFER callback function"]
 ms.keywords: FreeContiguousDmaBuffer, FreeContiguousDmaBuffer callback function [Audio Devices], PFREE_CONTIGUOUS_DMA_BUFFER, PFREE_CONTIGUOUS_DMA_BUFFER callback, aud-prop2_66797c8c-c8ac-443e-9515-1269a14a87a0.xml, audio.freecontiguousdmabuffer, hdaudio/FreeContiguousDmaBuffer
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - hdaudio.h
 api_name:
- - FreeContiguousDmaBuffer
+ - PFREE_CONTIGUOUS_DMA_BUFFER
 ---
 
 # PFREE_CONTIGUOUS_DMA_BUFFER callback function
@@ -52,14 +51,14 @@ The function pointer type for a <code>FreeContiguousDmaBuffer</code> routine is 
 
 ## -parameters
 
-### -param _context 
+### -param _context [in]
 
-[in]
+
 Specifies the context value from the <b>Context</b> member of the <a href="/windows-hardware/drivers/ddi/hdaudio/ns-hdaudio-_hdaudio_bus_interface_bdl">HDAUDIO_BUS_INTERFACE_BDL</a> structure.
 
-### -param Handle 
+### -param Handle [in]
 
-[in]
+
 Handle identifying the DMA engine. This handle value was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_capture_dma_engine">AllocateCaptureDmaEngine</a> or <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-pallocate_render_dma_engine">AllocateRenderDmaEngine</a>.
 
 ## -returns
@@ -150,3 +149,4 @@ The stream is in a state other than reset.
 
 
 <a href="/windows-hardware/drivers/ddi/hdaudio/nc-hdaudio-psetup_dma_engine_with_bdl">SetupDmaEngineWithBdl</a>
+

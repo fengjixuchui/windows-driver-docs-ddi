@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl.GetTextMacro
 title: IDebugControl::GetTextMacro (dbgeng.h)
-description: The GetTextMacro method returns the value of a fixed-name alias.
+description: Learn how the GetTextMacro method returns the value of a fixed-name alias. Includes parameters, returns, and remarks.
 old-location: debugger\gettextmacro.htm
 tech.root: debugger
-ms.assetid: 980bcf7b-8e4a-4516-ab71-af60a1d8e99c
 ms.date: 05/03/2018
 keywords: ["IDebugControl::GetTextMacro"]
 ms.keywords: GetTextMacro, GetTextMacro method [Windows Debugging], GetTextMacro method [Windows Debugging],IDebugControl interface, GetTextMacro method [Windows Debugging],IDebugControl2 interface, GetTextMacro method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],GetTextMacro method, IDebugControl.GetTextMacro, IDebugControl2 interface [Windows Debugging],GetTextMacro method, IDebugControl2::GetTextMacro, IDebugControl3 interface [Windows Debugging],GetTextMacro method, IDebugControl3::GetTextMacro, IDebugControl::GetTextMacro, IDebugControl_b6408c67-fb45-4a11-94b4-24099f406a8a.xml, dbgeng/IDebugControl2::GetTextMacro, dbgeng/IDebugControl3::GetTextMacro, dbgeng/IDebugControl::GetTextMacro, debugger.gettextmacro
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.GetTextMacro
- - IDebugControl2.GetTextMacro
- - IDebugControl3.GetTextMacro
+ - IDebugControl::GetTextMacro
 ---
 
 # IDebugControl::GetTextMacro
@@ -52,24 +49,24 @@ The <b>GetTextMacro</b> method returns the value of a fixed-name alias.
 
 ## -parameters
 
-### -param Slot 
+### -param Slot [in]
 
-[in]
+
 Specifies the number of the fixed-name alias.  <i>Slot</i> can take the values 0, 1, ..., 9, that represent the fixed-name aliases <b>$u0</b>, <b>$u1</b>, ..., <b>$u9</b>.
 
-### -param Buffer 
+### -param Buffer [out, optional]
 
-[out, optional]
+
 Receives the value of the alias specified by <i>Slot</i>.  If <i>Buffer</i> is <b>NULL</b>, this information is not returned.
 
-### -param BufferSize 
+### -param BufferSize [in]
 
-[in]
+
 Specifies the size, in characters, of the <i>Buffer</i> buffer.
 
-### -param MacroSize 
+### -param MacroSize [out, optional]
 
-[out, optional]
+
 Receives the size, in characters, of the value of the alias.
 
 ## -returns
@@ -127,3 +124,4 @@ For an overview of aliases used by the <a href="/windows-hardware/drivers/debugg
 
 
 <a href="/windows-hardware/drivers/debugger/r--registers-">r (Registers)</a>
+

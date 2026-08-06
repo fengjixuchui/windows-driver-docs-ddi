@@ -4,7 +4,6 @@ title: _DXVADDI_VALUERANGE (d3dumddi.h)
 description: The DXVADDI_VALUERANGE structure describes values of a property (such as, the value spread and default value).
 old-location: display\dxvaddi_valuerange.htm
 tech.root: display
-ms.assetid: c3013da9-8db4-4346-9be8-77b2c6de3f59
 ms.date: 05/10/2018
 keywords: ["DXVADDI_VALUERANGE structure"]
 ms.keywords: DXVA2_Structs_37c2cd52-30c3-4e99-918f-6a538547bdd2.xml, DXVADDI_VALUERANGE, DXVADDI_VALUERANGE structure [Display Devices], _DXVADDI_VALUERANGE, d3dumddi/DXVADDI_VALUERANGE, display.dxvaddi_valuerange
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVADDI_VALUERANGE
  - DXVADDI_VALUERANGE
 ---
 
@@ -52,21 +52,21 @@ The DXVADDI_VALUERANGE structure describes values of a property (such as, the va
 
 ## -struct-fields
 
-### -field MinValue
+### -field MinValue [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the minimum value that is allowed for a given property.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the minimum value that is allowed for a given property.
 
-### -field MaxValue
+### -field MaxValue [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the maximum value that is allowed for a given property.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the maximum value that is allowed for a given property.
 
-### -field DefaultValue
+### -field DefaultValue [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the default value for a given property.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the default value for a given property.
 
-### -field StepSize
+### -field StepSize [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the step size increment for a given property.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the step size increment for a given property.
 
 ## -see-also
 
@@ -87,3 +87,4 @@ The DXVADDI_VALUERANGE structure describes values of a property (such as, the va
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps">GetCaps</a>
+

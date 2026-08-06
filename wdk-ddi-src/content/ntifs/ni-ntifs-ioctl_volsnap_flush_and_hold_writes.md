@@ -4,7 +4,6 @@ title: IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES (ntifs.h)
 description: The IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES control code is sent to force a flush of a file system before a volume shadow copy occurs.
 old-location: ifsk\ioctl_volsnap_flush_and_hold_writes.htm
 tech.root: ifsk
-ms.assetid: c9189ca4-8b0e-470b-b027-f629ed243534
 ms.date: 04/16/2018
 keywords: ["IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES IOCTL"]
 ms.keywords: IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES, IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES control, IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES control code [Installable File System Drivers], ifsk.ioctl_volsnap_flush_and_hold_writes, ioctl_ref_f21aed38-5d6d-4b8c-ac8a-6cd1738a3de7.xml, ntifs/IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES
@@ -51,6 +50,8 @@ The <b>IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES</b> control code is sent to force a f
 When a file system such as NTFS receives IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES, the file system should flush the volume to disk, forcing the disk structures of the file system into a consistent and up-to-date state. The file system should lock the file system in a read-only mountable state, blocking any new file system changes to prevent any cached disk pages from becoming dirty. Once the file system has put the file system in such a state, it must pass the IRP with the IOCTL_VOLSNAP_FLUSH_AND_HOLD_WRITES IOCTL down the stack to the next driver while continuing to keep the file system in such a read-only mountable state until the drivers below complete the IRP. When the IRP completes or is canceled, the file system then re-enables I/O on the volume and returns.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

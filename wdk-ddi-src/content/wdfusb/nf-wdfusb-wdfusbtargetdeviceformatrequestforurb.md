@@ -1,10 +1,9 @@
 ---
 UID: NF:wdfusb.WdfUsbTargetDeviceFormatRequestForUrb
 title: WdfUsbTargetDeviceFormatRequestForUrb function (wdfusb.h)
-description: The WdfUsbTargetDeviceFormatRequestForUrb method builds an USB request for a specified USB device, using request parameters that are described by a URB, but it does not send the request.
+description: The WdfUsbTargetDeviceFormatRequestForUrb method builds a USB request for a specified USB device, using request parameters that are described by a URB, but it does not send the request.
 old-location: wdf\wdfusbtargetdeviceformatrequestforurb.htm
 tech.root: wdf
-ms.assetid: 886120f0-da2a-4a00-b440-ce1274c516d4
 ms.date: 02/26/2018
 keywords: ["WdfUsbTargetDeviceFormatRequestForUrb function"]
 ms.keywords: DFUsbRef_c7b76463-570c-4f0d-b4d5-37ef192ba30f.xml, WdfUsbTargetDeviceFormatRequestForUrb, WdfUsbTargetDeviceFormatRequestForUrb method, kmdf.wdfusbtargetdeviceformatrequestforurb, wdf.wdfusbtargetdeviceformatrequestforurb, wdfusb/WdfUsbTargetDeviceFormatRequestForUrb
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -49,30 +48,30 @@ api_name:
 
 <p class="CCE_Message">[Applies to KMDF only]</p>
 
-The <b>WdfUsbTargetDeviceFormatRequestForUrb</b> method builds an USB request for a specified USB device, using request parameters that are described by a <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_urb">URB</a>, but it does not send the request.
+The <b>WdfUsbTargetDeviceFormatRequestForUrb</b> method builds a USB request for a specified USB device, using request parameters that are described by a <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_urb">URB</a>, but it does not send the request.
 
 ## -parameters
 
-### -param UsbDevice 
+### -param UsbDevice [in]
 
-[in]
+
 A handle to a USB device object that was obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a>.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object. For more information, see the following Remarks section.
 
-### -param UrbMemory 
+### -param UrbMemory [in]
 
-[in]
+
 A handle to a framework memory object that contains a <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_urb">URB</a> structure or one of the structure's union members. (All of the URB structure's union members contain the <a href="/windows-hardware/drivers/ddi/usb/ns-usb-_urb_header">_URB_HEADER</a> structure.) 
 
 If the driver previously called <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreatewithparameters">WdfUsbTargetDeviceCreateWithParameters</a> to create <i>UsbDevice</i>, the driver must use <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateurb">WdfUsbTargetDeviceCreateUrb</a> or <a href="/windows-hardware/drivers/ddi/wdfusb/nf-wdfusb-wdfusbtargetdevicecreateisochurb">WdfUsbTargetDeviceCreateIsochUrb</a> to create the URB contained in this memory object. Otherwise, a bug check occurs.
 
-### -param UrbMemoryOffset 
+### -param UrbMemoryOffset [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfmemory/ns-wdfmemory-_wdfmemory_offset">WDFMEMORY_OFFSET</a> structure that supplies optional byte offset and length values. The framework uses these values to determine the beginning address of the URB within the memory that <i>UrbMemory</i> specifies. If this pointer is <b>NULL</b>, the URB is located at the beginning of the <i>UrbMemory</i> memory.
 
 ## -returns

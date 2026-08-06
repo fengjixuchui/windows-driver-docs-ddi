@@ -3,17 +3,16 @@ UID: NS:netadapter._NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES
 title: NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES (netadapter.h)
 description: The NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES structure describes a net adapter's capabilities for IPv4 ARP low power protocol offload.
 tech.root: netvista
-ms.assetid: ec844b92-7cff-4b99-82cc-afa5ff022b7b
 ms.date: 10/21/2019
 keywords: ["NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES structure"]
 ms.keywords: NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES, NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES,
 req.header: netadapter.h
-req.include-header: netadaptercx.h 
+req.include-header: netadaptercx.h
 req.target-type: 
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.ddi-compliance: 
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - netadapter.h
 api_name:
+ - _NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES
  - NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES
-product:
- - Windows
 ---
 
 # NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES structure
@@ -74,3 +72,4 @@ Call [**NET_ADAPTER_POWER_OFFLOAD_ARP_CAPABILITIES_INIT**](../netadapter/nf-neta
 [**NetAdapterPowerOffloadSetArpCapabilities**](../netadapter/nf-netadapter-netadapterpoweroffloadsetarpcapabilities.md)
 
 [**NetAdapterStart**](../netadapter/nf-netadapter-netadapterstart.md)
+

@@ -4,7 +4,6 @@ title: _DISK_PARTITION_INFO (ntdddisk.h)
 description: The DISK_PARTITION_INFO structure is used to report information about the disk's partition table.
 old-location: storage\disk_partition_info.htm
 tech.root: storage
-ms.assetid: 14df0604-39cd-4743-a051-894d63f4417c
 ms.date: 03/29/2018
 keywords: ["DISK_PARTITION_INFO structure"]
 ms.keywords: "*PDISK_PARTITION_INFO, DISK_PARTITION_INFO, DISK_PARTITION_INFO structure [Storage Devices], PDISK_PARTITION_INFO, PDISK_PARTITION_INFO structure pointer [Storage Devices], _DISK_PARTITION_INFO, ntdddisk/DISK_PARTITION_INFO, ntdddisk/PDISK_PARTITION_INFO, storage.disk_partition_info, structs-disk_307cbbb9-2940-4a87-b6b7-04e588811b8e.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntdddisk.h
 api_name:
+ - _DISK_PARTITION_INFO
+ - PDISK_PARTITION_INFO
  - DISK_PARTITION_INFO
 ---
 
@@ -91,3 +92,4 @@ Specifies the GUID that uniquely identifies the disk. The <b>Gpt</b> member of t
 
 
 <a href="/previous-versions/windows/hardware/drivers/ff563773(v=vs.85)">PARTITION_STYLE</a>
+

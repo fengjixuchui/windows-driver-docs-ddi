@@ -4,7 +4,6 @@ title: _DXVADDI_PROCAMPVALUES (d3dumddi.h)
 description: The DXVADDI_PROCAMPVALUES structure describes the ProcAmp control adjustment values.
 old-location: display\dxvaddi_procampvalues.htm
 tech.root: display
-ms.assetid: bce6931d-af45-42aa-9be2-ded07f98c300
 ms.date: 05/10/2018
 keywords: ["DXVADDI_PROCAMPVALUES structure"]
 ms.keywords: DXVA2_Structs_b731e88e-8f64-4199-9f75-9b5cba380aa8.xml, DXVADDI_PROCAMPVALUES, DXVADDI_PROCAMPVALUES structure [Display Devices], _DXVADDI_PROCAMPVALUES, d3dumddi/DXVADDI_PROCAMPVALUES, display.dxvaddi_procampvalues
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVADDI_PROCAMPVALUES
  - DXVADDI_PROCAMPVALUES
 ---
 
@@ -52,22 +52,23 @@ The DXVADDI_PROCAMPVALUES structure describes the ProcAmp control adjustment val
 
 ## -struct-fields
 
-### -field Brightness
+### -field Brightness [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the brightness of the output image, as it is written to the destination surface.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the brightness of the output image, as it is written to the destination surface.
 
-### -field Contrast
+### -field Contrast [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the contrast of the output image, as it is written to the destination surface.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the contrast of the output image, as it is written to the destination surface.
 
-### -field Hue
+### -field Hue [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the hue of the output image, as it is written to the destination surface.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the hue of the output image, as it is written to the destination surface.
 
-### -field Saturation
+### -field Saturation [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the saturation of the output image, as it is written to the destination surface.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_fixed32">DXVADDI_FIXED32</a> structure that specifies the saturation of the output image, as it is written to the destination surface.
 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_videoprocessblt">D3DDDIARG_VIDEOPROCESSBLT</a>
+

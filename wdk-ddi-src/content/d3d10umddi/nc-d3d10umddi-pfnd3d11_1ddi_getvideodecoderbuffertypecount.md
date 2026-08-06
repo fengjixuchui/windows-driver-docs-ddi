@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_GETVIDEODECODERBUFFERTYPECOUNT
 title: PFND3D11_1DDI_GETVIDEODECODERBUFFERTYPECOUNT (d3d10umddi.h)
 description: Queries the number of buffer types that the display miniport driver requires to perform a specified decode operation.
 old-location: display\getvideodecoderbuffertypecount.htm
-ms.assetid: 3528ac03-55cf-4e02-ae42-69b736684147
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_GETVIDEODECODERBUFFERTYPECOUNT callback function"]
 ms.keywords: PFND3D11_1DDI_GETVIDEODECODERBUFFERTYPECOUNT, PFND3D11_1DDI_GETVIDEODECODERBUFFERTYPECOUNT callback, d3d10umddi/pfnGetVideoDecoderBufferTypeCount, display.getvideodecoderbuffertypecount, pfnGetVideoDecoderBufferTypeCount, pfnGetVideoDecoderBufferTypeCount callback function [Display Devices]
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnGetVideoDecoderBufferTypeCount
+ - PFND3D11_1DDI_GETVIDEODECODERBUFFERTYPECOUNT
 ---
 
 # PFND3D11_1DDI_GETVIDEODECODERBUFFERTYPECOUNT callback function
@@ -50,19 +49,19 @@ Queries the number of buffer types that the display miniport driver requires to 
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pDecodeDesc* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_video_decoder_desc">D3D11_1DDI_VIDEO_DECODER_DESC</a> structure that specifies the video decoder operation.
 
-### -param Arg3
+### -param unnamedParam3
 
 *pBufferTypeCount* [out]
 
@@ -75,3 +74,4 @@ The Microsoft Direct3D runtime verifies that the <i>pDecodeDesc</i>  parameter d
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddi_video_decoder_desc">D3D11_1DDI_VIDEO_DECODER_DESC</a>
+

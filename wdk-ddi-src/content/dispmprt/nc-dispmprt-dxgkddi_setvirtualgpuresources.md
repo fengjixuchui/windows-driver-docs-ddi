@@ -3,7 +3,6 @@ UID: NC:dispmprt.DXGKDDI_SETVIRTUALGPURESOURCES
 title: DXGKDDI_SETVIRTUALGPURESOURCES
 description: This function assigns physical resources capabilities to a virtual GPU.
 tech.root: display
-ms.assetid: fd5896b3-0db1-497d-a984-5e05a293626d
 ms.date: 04/04/2019
 keywords: ["DXGKDDI_SETVIRTUALGPURESOURCES callback function"]
 req.header: dispmprt.h
@@ -36,8 +35,6 @@ api_location:
  - dispmprt.h
 api_name:
  - DXGKDDI_SETVIRTUALGPURESOURCES
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,13 +48,13 @@ This function assigns physical resources capabilities to a virtual GPU. The func
 
 ## -parameters
 
-### -param Context
+### -param Context [in]
 
-[in] The miniport context that is returned by the driver in the [DXGKDDI_GPU_PARTITION_INTERFACE](ns-dispmprt-_dxgkddi_gpu_partition_interface.md) structure.
+The miniport context that is returned by the driver in the [DXGKDDI_GPU_PARTITION_INTERFACE](ns-dispmprt-_dxgkddi_gpu_partition_interface.md) structure.
 
-### -param pArgs
+### -param pArgs [in]
 
-[in] A pointer to a DXGKARG_SETVIRTUALGPURESOURCES structure.
+A pointer to a DXGKARG_SETVIRTUALGPURESOURCES structure.
 
 ## -returns
 

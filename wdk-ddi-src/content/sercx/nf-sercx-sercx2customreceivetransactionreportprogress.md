@@ -4,7 +4,6 @@ title: SerCx2CustomReceiveTransactionReportProgress function (sercx.h)
 description: The SerCx2CustomReceiveTransactionReportProgress method reports whether progress is being made toward completing the current custom-receive transaction.
 old-location: serports\sercx2customreceivetransactionreportprogress.htm
 tech.root: serports
-ms.assetid: FBC776FE-1056-4D3B-BECB-124FC41DD68F
 ms.date: 04/23/2018
 keywords: ["SerCx2CustomReceiveTransactionReportProgress function"]
 ms.keywords: 2/SerCx2CustomReceiveTransactionReportProgress, SerCx2CustomReceiveTransactionReportProgress, SerCx2CustomReceiveTransactionReportProgress method [Serial Ports], serports.sercx2customreceivetransactionreportprogress
@@ -54,9 +53,9 @@ The <b>SerCx2CustomReceiveTransactionReportProgress</b> method reports whether p
 
 <p>A <a href="/windows-hardware/drivers/serports/sercx2-object-handles"><b>SERCX2CUSTOMRECEIVETRANSACTION</b></a> handle to a custom-receive object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2customreceivetransactioncreate"><b>SerCx2CustomReceiveTransactionCreate</b></a> method to create this object.</p>
 
-### -param Progress 
+### -param Progress [in]
 
-[in]
+
 Whether progress is being made toward completing the custom-receive transaction. Set this parameter to one of the following enumeration constants:
 
 <ul>

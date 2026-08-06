@@ -4,7 +4,6 @@ title: RtlInsertAsRightChild function (ntddk.h)
 description: The RtlInsertAsRightChild routine inserts a given splay link into the tree as the right child of a given node in that tree.
 old-location: ifsk\rtlinsertasrightchild.htm
 tech.root: ifsk
-ms.assetid: eaeff5fe-a678-44e5-a78d-ef4816708878
 ms.date: 04/16/2018
 keywords: ["RtlInsertAsRightChild function"]
 ms.keywords: RtlInsertAsRightChild, RtlInsertAsRightChild routine [Installable File System Drivers], ifsk.rtlinsertasrightchild, ntddk/RtlInsertAsRightChild, rtlref_e16d0af2-9299-4fda-96ad-75a39f3e505f.xml
@@ -50,14 +49,14 @@ The <b>RtlInsertAsRightChild</b> routine inserts a given splay link into the tre
 
 ## -parameters
 
-### -param ParentLinks 
+### -param ParentLinks [in]
 
-[in]
+
 Pointer to the node in the tree at which <i>ChildLinks</i> should be inserted as the right child.
 
-### -param ChildLinks 
+### -param ChildLinks [in]
 
-[in]
+
 Pointer to the splay link node to be inserted into the tree. The node must have been initialized by calling <b>RtlInitializeSplayLinks</b>.
 
 ## -remarks

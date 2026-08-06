@@ -4,7 +4,6 @@ title: EVT_UDECX_USB_ENDPOINT_RESET (udecxusbendpoint.h)
 description: The USB device emulation class extension (UdeCx) invokes this callback function to reset an endpoint of the virtual USB device.
 old-location: buses\evt_udecx_usb_endpoint_reset.htm
 tech.root: usbref
-ms.assetid: 4220509B-A378-47F4-8E71-0290EDED89EB
 ms.date: 05/07/2018
 keywords: ["EVT_UDECX_USB_ENDPOINT_RESET callback function"]
 ms.keywords: EVT_UDECX_USB_ENDPOINT_RESET, EVT_UDECX_USB_ENDPOINT_RESET callback, EvtUsbEndpointReset, EvtUsbEndpointReset callback function [Buses], buses.evt_udecx_usb_endpoint_reset, udecxusbendpoint/EvtUsbEndpointReset
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - UdecxUsbEndpoint.h
 api_name:
- - EvtUsbEndpointReset
+ - EVT_UDECX_USB_ENDPOINT_RESET
 ---
 
 # EVT_UDECX_USB_ENDPOINT_RESET callback function
@@ -50,14 +49,14 @@ The USB device emulation class extension (UdeCx) invokes this callback function 
 
 ## -parameters
 
-### -param UdecxUsbEndpoint 
+### -param UdecxUsbEndpoint [in]
 
-[in]
+
 A handle to a UDE endpoint object that represents the endpoint to reset. The client driver retrieved this pointer in the previous call to <a href="/windows-hardware/drivers/ddi/udecxusbendpoint/nf-udecxusbendpoint-udecxusbendpointcreate">UdecxUsbEndpointCreate</a>.
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object that represents the request to reset the endpoint.
 
 ## -remarks
@@ -81,3 +80,4 @@ The reset request clears the error condition in the endpoint that causes failed 
 
 
 <a href="/windows-hardware/drivers/usbcon/">Write a UDE client driver</a>
+

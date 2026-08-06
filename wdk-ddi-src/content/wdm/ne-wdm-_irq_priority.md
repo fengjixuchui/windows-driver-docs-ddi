@@ -1,10 +1,9 @@
 ---
 UID: NE:wdm._IRQ_PRIORITY
 title: _IRQ_PRIORITY (wdm.h)
-description: The IRQ_PRIORITY enumeration type indicates the priority the system should give to servicing a device's interrupts.
+description: The _IRQ_PRIORITY enumeration (wdm.h) type indicates the priority the system should give to servicing a device's interrupts.
 old-location: kernel\irq_priority.htm
 tech.root: kernel
-ms.assetid: 1dee65e7-27fb-4665-82e2-d7cb3c223f87
 ms.date: 04/30/2018
 keywords: ["IRQ_PRIORITY enumeration"]
 ms.keywords: "*PIRQ_PRIORITY, IRQ_PRIORITY, IRQ_PRIORITY enumeration [Kernel-Mode Driver Architecture], IrqPriorityHigh, IrqPriorityLow, IrqPriorityNormal, IrqPriorityUndefined, PIRQ_PRIORITY, PIRQ_PRIORITY enumeration pointer [Kernel-Mode Driver Architecture], _IRQ_PRIORITY, kernel.irq_priority, sysenum_a5a51a77-ee9c-4e74-9ee4-b097eb361c18.xml, wdm/IRQ_PRIORITY, wdm/IrqPriorityHigh, wdm/IrqPriorityLow, wdm/IrqPriorityNormal, wdm/IrqPriorityUndefined, wdm/PIRQ_PRIORITY"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdm.h
 api_name:
+ - _IRQ_PRIORITY
+ - PIRQ_PRIORITY
  - IRQ_PRIORITY
 ---
 
@@ -60,7 +61,7 @@ Specifies that the device does not require any particular priority for its inter
 
 ### -field IrqPriorityLow
 
-Specifies that the device's interrupts are of low priority. This setting is appropiate for devices that can tolerate higher-than-normal latency.
+Specifies that the device's interrupts are of low priority. This setting is appropriate for devices that can tolerate higher-than-normal latency.
 
 ### -field IrqPriorityNormal
 
@@ -77,3 +78,4 @@ The system uses <b>IRQ_PRIORITY</b> to assign IRQLs for devices. For example, it
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_resource_descriptor">IO_RESOURCE_DESCRIPTOR</a>
+

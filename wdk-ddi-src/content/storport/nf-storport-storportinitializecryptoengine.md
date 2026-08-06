@@ -1,17 +1,16 @@
 ---
 UID: NF:storport.StorPortInitializeCryptoEngine
 title: StorPortInitializeCryptoEngine function (storport.h)
-description: Reserved for system use.
+description: "Microsoft reserves the StorPortInitializeCryptoEngine function for internal use only. Don't use this function in your code."
 old-location: storage\storportinitializecryptoengine.htm
 tech.root: storage
-ms.assetid: 49F4EEA1-BFA6-4A91-8306-E25569C679A6
 ms.date: 03/29/2018
 keywords: ["StorPortInitializeCryptoEngine function"]
 ms.keywords: StorPortInitializeCryptoEngine, StorPortInitializeCryptoEngine routine [Storage Devices], storage.storportinitializecryptoengine, storport/StorPortInitializeCryptoEngine
 req.header: storport.h
 req.include-header: 
 req.target-type: Universal
-req.target-min-winverclnt: 
+req.target-min-winverclnt: Windows 8
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -43,7 +42,6 @@ api_name:
 
 # StorPortInitializeCryptoEngine function
 
-
 ## -description
 
 Reserved for system use.
@@ -52,13 +50,12 @@ Reserved for system use.
 
 ### -param HwDeviceExtension
 
-<p>Reserved for system use.</p>
+Reserved for system use.
 
 ### -param CryptoCapabilitiesData
 
-Reserved.
+Reserved for system use.
 
 ## -returns
 
 Reserved for system use.
-

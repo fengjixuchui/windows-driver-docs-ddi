@@ -4,7 +4,6 @@ title: WdfDmaTransactionCancel function (wdfdmatransaction.h)
 description: The WdfDmaTransactionCancel method attempts to cancel a DMA transaction that is waiting for the allocation of map registers.
 old-location: wdf\wdfdmatransactioncancel.htm
 tech.root: wdf
-ms.assetid: A0EB188E-D5C7-4C7B-A462-2C3792825FD8
 ms.date: 02/26/2018
 keywords: ["WdfDmaTransactionCancel function"]
 ms.keywords: WdfDmaTransactionCancel, WdfDmaTransactionCancel method, kmdf.wdfdmatransactioncancel, wdf.wdfdmatransactioncancel, wdfdmatransaction/WdfDmaTransactionCancel
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,9 +52,9 @@ The <b>WdfDmaTransactionCancel</b> method attempts to cancel a DMA transaction t
 
 ## -parameters
 
-### -param DmaTransaction 
+### -param DmaTransaction [in]
 
-[in]
+
 A handle to the DMA transaction object that represents the transaction that is being canceled. This transaction must have already been initialized by the driver.
 
 ## -returns

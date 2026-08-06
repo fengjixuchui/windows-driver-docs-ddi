@@ -4,7 +4,6 @@ title: _DXVAHDDDI_CUSTOM_RATE_DATA (d3dumddi.h)
 description: The DXVAHDDDI_CUSTOM_RATE_DATA structure describes the video content that a decode device processes.
 old-location: display\dxvahdddi_custom_rate_data.htm
 tech.root: display
-ms.assetid: 828c4c42-a74f-4737-b850-5c8299e5afd6
 ms.date: 05/10/2018
 keywords: ["DXVAHDDDI_CUSTOM_RATE_DATA structure"]
 ms.keywords: DXVA2_Structs_98dcb947-954a-4e8d-adea-3451814e89f9.xml, DXVAHDDDI_CUSTOM_RATE_DATA, DXVAHDDDI_CUSTOM_RATE_DATA structure [Display Devices], _DXVAHDDDI_CUSTOM_RATE_DATA, d3dumddi/DXVAHDDDI_CUSTOM_RATE_DATA, display.dxvahdddi_custom_rate_data
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVAHDDDI_CUSTOM_RATE_DATA
  - DXVAHDDDI_CUSTOM_RATE_DATA
 ---
 
@@ -56,17 +56,17 @@ The DXVAHDDDI_CUSTOM_RATE_DATA structure describes the video content that a deco
 
       [in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvahdddi_rational">DXVAHDDDI_RATIONAL</a> structure that specifies a fractional value that represents the input and output frame rate.
 
-### -field OutputFrames
+### -field OutputFrames [in]
 
-[in] The number of frames that the driver outputs.
+The number of frames that the driver outputs.
 
-### -field InputInterlaced
+### -field InputInterlaced [in]
 
-[in] A Boolean value that specifies whether the input stream is progressive (frame) or interlaced (field).
+A Boolean value that specifies whether the input stream is progressive (frame) or interlaced (field).
 
-### -field InputFramesOrFields
+### -field InputFramesOrFields [in]
 
-[in] The number of the input frames or fields.
+The number of the input frames or fields.
 
 ## -remarks
 
@@ -75,3 +75,4 @@ The driver can expose custom rates for the frame rate conversion or the inverse 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvahdddi_rational">DXVAHDDDI_RATIONAL</a>
+

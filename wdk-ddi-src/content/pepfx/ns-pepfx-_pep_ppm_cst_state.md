@@ -4,7 +4,6 @@ title: _PEP_PPM_CST_STATE (pepfx.h)
 description: The PEP_PPM_CST_STATE structure specifies the properties of a C state (ACPI processor power state).
 old-location: kernel\pep_ppm_cst_state.htm
 tech.root: kernel
-ms.assetid: AF001441-4031-4E29-B459-1597BFCAEF4C
 ms.date: 04/30/2018
 keywords: ["PEP_PPM_CST_STATE structure"]
 ms.keywords: "*PPEP_PPM_CST_STATE, PEP_PPM_CST_STATE, PEP_PPM_CST_STATE structure [Kernel-Mode Driver Architecture], PPEP_PPM_CST_STATE, PPEP_PPM_CST_STATE structure pointer [Kernel-Mode Driver Architecture], _PEP_PPM_CST_STATE, kernel.pep_ppm_cst_state, pepfx/PEP_PPM_CST_STATE, pepfx/PPEP_PPM_CST_STATE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_PPM_CST_STATE
+ - PPEP_PPM_CST_STATE
  - PEP_PPM_CST_STATE
 ---
 
@@ -161,3 +162,4 @@ The values in the <b>PEP_PPM_CST_STATE</b> structure are obtained from the param
 
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_ppm_cst_states">PEP_PPM_CST_STATES</a>
+

@@ -1,11 +1,10 @@
 ---
 UID: NF:ntifs.RtlUnicodeToCustomCPN
 title: RtlUnicodeToCustomCPN function (ntifs.h)
-description: Reserved for system use.
+description: "Microsoft reserves the RtlUnicodeToCustomCPN function for internal use only. Don't use this function in your code."
 old-location: ifsk\rtlunicodetocustomcpn.htm
 tech.root: ifsk
-ms.assetid: db4335c1-b6c9-4afd-b30f-95b736be696b
-ms.date: 04/16/2018
+ms.date: 05/24/2022
 keywords: ["RtlUnicodeToCustomCPN function"]
 ms.keywords: RtlUnicodeToCustomCPN, RtlUnicodeToCustomCPN function [Installable File System Drivers], ifsk.rtlunicodetocustomcpn, ntifs/RtlUnicodeToCustomCPN, rtlref_0c9942bd-a950-4d59-8fc7-58c41cfe78d4.xml
 req.header: ntifs.h
@@ -43,16 +42,15 @@ api_name:
 
 # RtlUnicodeToCustomCPN function
 
-
 ## -description
 
-The <b>RtlUnicodeToCustomCPN</b> routine is reserved for system use. See <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlunicodetomultibyten">RtlUnicodeToMultiByteN</a> and <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-rtlunicodetooemn">RtlUnicodeToOemN</a>.
+The **RtlUnicodeToCustomCPN** routine is reserved for system use. See [**RtlUnicodeToMultiByteN**](nf-ntifs-rtlunicodetomultibyten.md) and [**RtlUnicodeToOemN**](nf-ntifs-rtlunicodetooemn.md).
 
 ## -parameters
 
 ### -param CustomCP
 
-<p>Reserved.</p>
+Reserved.
 
 ### -param CustomCPString
 
@@ -71,5 +69,9 @@ Reserved.
 Reserved.
 
 ### -param BytesInUnicodeString
+
+Reserved.
+
+## -returns
 
 Reserved.

@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11DDI_DRAWINSTANCEDINDIRECT
 title: PFND3D11DDI_DRAWINSTANCEDINDIRECT (d3d10umddi.h)
 description: The DrawInstancedIndirect function draws particular instances of non-indexed primitives.
 old-location: display\drawinstancedindirect.htm
-ms.assetid: 99520dae-3934-496f-80bf-e5b306554415
 ms.date: 05/10/2018
 keywords: ["PFND3D11DDI_DRAWINSTANCEDINDIRECT callback function"]
 ms.keywords: DrawInstancedIndirect, DrawInstancedIndirect callback function [Display Devices], PFND3D11DDI_DRAWINSTANCEDINDIRECT, PFND3D11DDI_DRAWINSTANCEDINDIRECT callback, UserModeDisplayDriverDx11_Functions_40c5a4c2-55dd-4ec1-ae2e-99fbe6ce11a9.xml, d3d10umddi/DrawInstancedIndirect, display.drawinstancedindirect
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - DrawInstancedIndirect
+ - PFND3D11DDI_DRAWINSTANCEDINDIRECT
 ---
 
 # PFND3D11DDI_DRAWINSTANCEDINDIRECT callback function
@@ -50,13 +49,13 @@ The <b>DrawInstancedIndirect</b> function draws particular instances of non-inde
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hBufferForArgs* [in]
 
@@ -73,7 +72,7 @@ struct DrawInstancedIndirectArgs {
 
 For more information about these arguments, see the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_drawinstanced">DrawInstanced</a> reference page.
 
-### -param Arg3
+### -param unnamedParam3
 
 *AlignedByteOffsetForArgs* [in]
 
@@ -110,3 +109,4 @@ The driver should not encounter any error, except for D3DDDIERR_DEVICEREMOVED. T
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

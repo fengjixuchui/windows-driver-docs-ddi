@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_CREATEDEPTHSTENCILVIEW
 title: PFND3D10DDI_CREATEDEPTHSTENCILVIEW (d3d10umddi.h)
 description: The CreateDepthStencilView function creates a depth stencil view.
 old-location: display\createdepthstencilview.htm
-ms.assetid: 1a1c28f0-8343-4255-8055-d31eb643b7d5
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_CREATEDEPTHSTENCILVIEW callback function"]
 ms.keywords: CreateDepthStencilView, CreateDepthStencilView callback function [Display Devices], PFND3D10DDI_CREATEDEPTHSTENCILVIEW, PFND3D10DDI_CREATEDEPTHSTENCILVIEW callback, UserModeDisplayDriverDx10_Functions_299a6bcd-ba94-4568-a4fc-d89c84742c45.xml, d3d10umddi/CreateDepthStencilView, display.createdepthstencilview
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - CreateDepthStencilView
-product:
- - Windows
+ - PFND3D10DDI_CREATEDEPTHSTENCILVIEW
 ---
 
 # PFND3D10DDI_CREATEDEPTHSTENCILVIEW callback function
@@ -52,25 +49,25 @@ The <b>CreateDepthStencilView</b> function creates a depth stencil view.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pCreateDepthStencilView* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d10ddiarg_createdepthstencilview">D3D10DDIARG_CREATEDEPTHSTENCILVIEW</a> structure that describes the parameters that the user-mode display driver uses to create a depth stencil view.
 
-### -param Arg3
+### -param unnamedParam3
 
 *hDepthStencilView* [in]
 
 A handle to the driver's private data for the depth stencil view.
 
-### -param Arg4
+### -param unnamedParam4
 
 *hRTDepthStencilView* [in]
 
@@ -101,3 +98,4 @@ The driver might run out of memory. Therefore, the driver can pass E_OUTOFMEMORY
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

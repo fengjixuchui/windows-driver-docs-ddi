@@ -1,10 +1,9 @@
 ---
 UID: NS:windot11._DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS
 title: _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS (windot11.h)
-description: Important  The Native 802.11 Wireless LAN interface is deprecated in Windows 10 and later.
+description: The DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS structure is part of the Native 802.11 Wireless LAN interface, which is deprecated for Windows 10 and later.
 old-location: netvista\dot11_incoming_assoc_completion_parameters.htm
 tech.root: netvista
-ms.assetid: 8f3cfe07-5026-40fb-b832-da5ae048843e
 ms.date: 02/16/2018
 keywords: ["DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS structure"]
 ms.keywords: "*PDOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS, DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS, DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS structure [Network Drivers Starting with Windows Vista], Native_802.11_data_types_fac44c06-59c5-4fd3-a8ec-335d9e9c6f7d.xml, PDOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS, PDOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS, netvista.dot11_incoming_assoc_completion_parameters, windot11/DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS, windot11/PDOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS"
@@ -42,9 +41,9 @@ api_type:
 api_location:
  - windot11.h
 api_name:
+ - _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS
+ - PDOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS
  - DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS
-product:
- - Windows 10 or later.
 ---
 
 # _DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS structure
@@ -60,7 +59,7 @@ The DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS structure specifies the results o
 
 ### -field Header
 
-The type, revision, and size of the DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS structure. This member is formatted as an <a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the members of <b>Header</b> to the following values:
 
@@ -76,7 +75,7 @@ This member must be set to DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS_REVISION_1
 
 This member must be set to <b>sizeof</b>(DOT11_INCOMING_ASSOC_COMPLETION_PARAMETERS).
 
-For more information about these members, see <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+For more information about these members, see <a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
 
 ### -field PeerMacAddr
 
@@ -150,7 +149,7 @@ The multicast cipher algorithm that the 802.11 station resolved with the AP or p
 
 The offset of the list of PHY identifiers (IDs) that the 802.11 station uses to send or receive packets on the BSS network connection. Each entry is a ULONG value.
 
-The Extensible Station (ExtSTA) <a href="/windows-hardware/drivers/network/oid-dot11-active-phy-list">msDot11ActivePhyList</a> MIB objec also references the active PHY list.
+The Extensible Station (ExtSTA) <a href="/windows-hardware/drivers/network/oid-dot11-active-phy-list">msDot11ActivePhyList</a> MIB object also references the active PHY list.
 
 Entries in the active PHY list can be one of the following values:
 
@@ -272,4 +271,5 @@ The NDIS_STATUS_DOT11_INCOMING_ASSOC_COMPLETION status indication marks the end 
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="..\objectheader\ns-objectheader-ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+

@@ -4,7 +4,6 @@ title: _DXVADDI_DECODEINPUT (d3dumddi.h)
 description: The DXVADDI_DECODEINPUT structure describes a render target format that is supported by a Microsoft DirectX Video Acceleration (DirectX VA) decode type.
 old-location: display\dxvaddi_decodeinput.htm
 tech.root: display
-ms.assetid: 6f62ce8d-058b-4838-bc7a-fae84c1b5111
 ms.date: 05/10/2018
 keywords: ["DXVADDI_DECODEINPUT structure"]
 ms.keywords: DXVA2_Structs_9b88e486-0ea5-4fc3-bac9-1f7fcc2f5492.xml, DXVADDI_DECODEINPUT, DXVADDI_DECODEINPUT structure [Display Devices], _DXVADDI_DECODEINPUT, d3dumddi/DXVADDI_DECODEINPUT, display.dxvaddi_decodeinput
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVADDI_DECODEINPUT
  - DXVADDI_DECODEINPUT
 ---
 
@@ -52,13 +52,13 @@ The DXVADDI_DECODEINPUT structure describes a render target format that is suppo
 
 ## -struct-fields
 
-### -field pGuid
+### -field pGuid [in]
 
-[in] A pointer to the GUID that represents the DirectX VA decode type.
+A pointer to the GUID that represents the DirectX VA decode type.
 
-### -field VideoDesc
+### -field VideoDesc [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_videodesc">DXVADDI_VIDEODESC</a> structure for the render target that is supported by the decode type that <b>pGuid</b> points to.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_videodesc">DXVADDI_VIDEODESC</a> structure for the render target that is supported by the decode type that <b>pGuid</b> points to.
 
 ## -remarks
 
@@ -83,3 +83,4 @@ A pointer to the DXVADDI_DECODEINPUT structure is specified in the <b>pInfo</b> 
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps">GetCaps</a>
+

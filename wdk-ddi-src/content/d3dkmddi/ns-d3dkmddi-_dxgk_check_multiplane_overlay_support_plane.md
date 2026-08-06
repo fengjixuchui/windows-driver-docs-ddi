@@ -1,9 +1,8 @@
 ---
 UID: NS:d3dkmddi._DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE
 title: _DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE (d3dkmddi.h)
-description: Specifies the support attributes that the hardware provides for multiplane overlays.
+description: The DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE structure specifies the support attributes that the hardware provides for multiplane overlays.
 old-location: display\dxgk_check_multiplane_overlay_support_plane.htm
-ms.assetid: 28CC4BE1-D4C1-4D22-885B-D50BE5AD6EE6
 ms.date: 05/10/2018
 keywords: ["DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE structure"]
 ms.keywords: DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE, DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE structure [Display Devices], _DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE, d3dkmddi/DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE, display.dxgk_check_multiplane_overlay_support_plane
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dkmddi.h
 api_name:
+ - _DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE
  - DXGK_CHECK_MULTIPLANE_OVERLAY_SUPPORT_PLANE
 ---
 
@@ -52,13 +52,13 @@ Specifies the support attributes that the hardware provides for multiplane overl
 
 ## -struct-fields
 
-### -field hAllocation
+### -field hAllocation [out]
 
-[out] A handle to the allocation. The display miniport driver must set this member to a value that it can use to refer to its private tracking structure for the allocation.
+A handle to the allocation. The display miniport driver must set this member to a value that it can use to refer to its private tracking structure for the allocation.
 
-### -field VidPnSourceId
+### -field VidPnSourceId [in]
 
-[in] The zero-based video present network (VidPN) source identification number of the input for which the support levels are queried.
+The zero-based video present network (VidPN) source identification number of the input for which the support levels are queried.
 
 ### -field PlaneAttributes
 
@@ -67,3 +67,4 @@ A <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_multiplane_o
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3dkmddi/ns-d3dkmddi-_dxgk_multiplane_overlay_attributes">DXGK_MULTIPLANE_OVERLAY_ATTRIBUTES</a>
+

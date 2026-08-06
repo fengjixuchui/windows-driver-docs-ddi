@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILUICCFILES
 title: RILUICCFILES (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILUICCFILES structure for internal use only."
 old-location: netvista\riluiccfiles.htm
 tech.root: netvista
-ms.assetid: a29f2ff6-1c15-4313-b3a5-73fb8d40d2d7
 ms.date: 05/02/2018
 keywords: ["RILUICCFILES structure"]
 ms.keywords: "*LPRILUICCFILES, RILUICCFILES, RILUICCFILES structure [Network Drivers Starting with Windows Vista], netvista.riluiccfiles, ntddrilapitypes/RILUICCFILES"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILUICCFILES
+ - LPRILUICCFILES
 ---
 
 # RILUICCFILES structure (rilapitypes.h)

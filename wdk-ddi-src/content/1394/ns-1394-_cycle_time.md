@@ -4,7 +4,6 @@ title: _CYCLE_TIME (1394.h)
 description: The CYCLE_TIME structure contains the IEEE 1394 isochronous cycle time.
 old-location: ieee\cycle_time.htm
 tech.root: IEEE
-ms.assetid: dcb19338-3848-4f90-876c-357f92fb2637
 ms.date: 02/15/2018
 keywords: ["CYCLE_TIME structure"]
 ms.keywords: "*PCYCLE_TIME, 1394/CYCLE_TIME, 1394/PCYCLE_TIME, 1394stct_c6b1a6fa-b259-488d-a4a9-e4dace0fcf3d.xml, CYCLE_TIME, CYCLE_TIME structure [Buses], IEEE.cycle_time, PCYCLE_TIME, PCYCLE_TIME structure pointer [Buses], _CYCLE_TIME"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 1394.h
 api_name:
+ - _CYCLE_TIME
+ - PCYCLE_TIME
  - CYCLE_TIME
 ---
 
@@ -76,16 +77,17 @@ The layout of this structure matches that of the CYCLE_TIME register in the <i>I
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537649">REQUEST_ISOCH_ALLOCATE_RESOURCES</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ISOCH_ALLOCATE_RESOURCES</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537655">REQUEST_ISOCH_LISTEN</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ISOCH_LISTEN</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537656">REQUEST_ISOCH_QUERY_CYCLE_TIME</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ISOCH_QUERY_CYCLE_TIME</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537660">REQUEST_ISOCH_TALK</a>
+<a href="/windows-hardware/drivers/ddi/1394/ni-1394-ioctl_1394_class">REQUEST_ISOCH_TALK</a>
+

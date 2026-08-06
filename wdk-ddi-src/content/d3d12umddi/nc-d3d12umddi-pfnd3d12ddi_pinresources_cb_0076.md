@@ -2,8 +2,7 @@
 UID: NC:d3d12umddi.PFND3D12DDI_PINRESOURCES_CB_0076
 title: PFND3D12DDI_PINRESOURCES_CB_0076 (d3d12umddi.h)
 description: Marks the resource as not movable and not eligible to be paged out.
-ms.assetid: 1a0ae369-b524-430c-8d27-71a8dd0b9eb8
-ms.date: 03/24/2020
+ms.date: 05/24/2022
 keywords: ["PFND3D12DDI_PINRESOURCES_CB_0076 callback function"]
 req.header: d3d12umddi.h
 req.include-header: 
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_PINRESOURCES_CB_0076
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -54,7 +51,7 @@ Marks the resource as not movable and not eligible to be paged out.
 
 Handle that identifies the display device.
 
-### -param Arg
+### -param unnamedParam2
 
 A [**D3D12DDICB_PIN_RESOURCES_0076**](ns-d3d12umddi-d3d12ddicb_pinresources_0076.md) structure that provides the list of resources to pin.
 

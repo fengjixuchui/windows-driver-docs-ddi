@@ -4,7 +4,6 @@ title: _REQUEST_REMOTE_WAKE_NOTIFICATION (usbdlib.h)
 description: The purpose of the REQUEST_REMOTE_WAKE_NOTIFICATION structure is to specify input parameters for the IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION I/O control request.
 old-location: buses\usbdevice_remote_wake_notification.htm
 tech.root: usbref
-ms.assetid: 229B22AC-8252-4D94-BDB5-F1132BF4AE4C
 ms.date: 05/07/2018
 keywords: ["REQUEST_REMOTE_WAKE_NOTIFICATION structure"]
 ms.keywords: "*PREQUEST_REMOTE_WAKE_NOTIFICATION, PREQUEST_REMOTE_WAKE_NOTIFICATION, PREQUEST_REMOTE_WAKE_NOTIFICATION structure pointer [Buses], REQUEST_REMOTE_WAKE_NOTIFICATION, REQUEST_REMOTE_WAKE_NOTIFICATION structure [Buses], _REQUEST_REMOTE_WAKE_NOTIFICATION, buses.usbdevice_remote_wake_notification, usbdlib/PREQUEST_REMOTE_WAKE_NOTIFICATION, usbdlib/REQUEST_REMOTE_WAKE_NOTIFICATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Usbdlib.h
 api_name:
+ - _REQUEST_REMOTE_WAKE_NOTIFICATION
+ - PREQUEST_REMOTE_WAKE_NOTIFICATION
  - REQUEST_REMOTE_WAKE_NOTIFICATION
 ---
 
@@ -81,3 +82,4 @@ Specifies the device-defined index identifier of the interface with which the fu
 
 
 <a href="/windows-hardware/drivers/ddi/usbioctl/ni-usbioctl-ioctl_internal_usb_request_remote_wake_notification">IOCTL_INTERNAL_USB_REQUEST_REMOTE_WAKE_NOTIFICATION</a>
+

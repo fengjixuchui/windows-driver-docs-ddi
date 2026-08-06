@@ -3,8 +3,7 @@ UID: NF:netwakesource.NET_WAKE_SOURCE_BITMAP_PARAMETERS_INIT
 title: NET_WAKE_SOURCE_BITMAP_PARAMETERS_INIT function (netwakesource.h)
 description: The NET_WAKE_SOURCE_BITMAP_PARAMETERS_INIT function initializes a NET_WAKE_SOURCE_BITMAP_PARAMETERS structure.
 tech.root: netvista
-ms.assetid: 514ad478-31fd-455b-a793-cacec1c241cb
-ms.date: 10/07/2019
+ms.date: 04/01/2022
 keywords: ["NET_WAKE_SOURCE_BITMAP_PARAMETERS_INIT function"]
 ms.keywords: NET_WAKE_SOURCE_BITMAP_PARAMETERS_INIT
 req.header: netwakesource.h
@@ -13,7 +12,7 @@ req.target-type: Universal
 req.target-min-winverclnt: Windows 10, version 2004
 req.target-min-winversvr: 
 req.kmdf-ver: 
-req.umdf-ver: 
+req.umdf-ver: 2.33 
 req.lib: 
 req.dll: 
 req.irql: Any level as long as target memory is resident
@@ -37,8 +36,6 @@ api_location:
  - netwakesource.h
 api_name:
  - NET_WAKE_SOURCE_BITMAP_PARAMETERS_INIT
-product:
- - Windows
 ---
 
 # NET_WAKE_SOURCE_BITMAP_PARAMETERS_INIT function
@@ -50,13 +47,10 @@ The **NET_WAKE_SOURCE_BITMAP_PARAMETERS_INIT** function initializes a [**NET_WAK
 
 ## -parameters
 
-### -param Parameters
+### -param Parameters [_Out_]
 
 A pointer to a driver-allocated [**NET_WAKE_SOURCE_BITMAP_PARAMETERS**](../netwakesource/ns-netwakesource-_net_wake_source_bitmap_parameters.md) structure.
 
-## -returns
-
-This function does not return a value.
 
 ## -remarks
 

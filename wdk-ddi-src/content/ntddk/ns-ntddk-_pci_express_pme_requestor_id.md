@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddk._PCI_EXPRESS_PME_REQUESTOR_ID
 title: _PCI_EXPRESS_PME_REQUESTOR_ID (ntddk.h)
-description: The PCI_EXPRESS_PME_REQUESTOR_ID structure describes the identifier of the requester of a power management event (PME).
+description: The _PCI_EXPRESS_PME_REQUESTOR_ID structure (ntddk.h) describes the identifier of the requester of a power management event (PME).
 old-location: pci\pci_express_pme_requestor_id.htm
 tech.root: PCI
-ms.assetid: 2305ffbd-22c8-4f63-bbe4-fd297bf98e39
 ms.date: 02/24/2018
 keywords: ["PCI_EXPRESS_PME_REQUESTOR_ID structure"]
 ms.keywords: "*PPCI_EXPRESS_PME_REQUESTOR_ID, PCI.pci_express_pme_requestor_id, PCI_EXPRESS_PME_REQUESTOR_ID, PCI_EXPRESS_PME_REQUESTOR_ID union [Buses], PPCI_EXPRESS_PME_REQUESTOR_ID, PPCI_EXPRESS_PME_REQUESTOR_ID union pointer [Buses], _PCI_EXPRESS_PME_REQUESTOR_ID, ntddk/PCI_EXPRESS_PME_REQUESTOR_ID, ntddk/PPCI_EXPRESS_PME_REQUESTOR_ID, pci_struct_0cb11d1f-7426-42fc-9d77-373516a492ae.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddk.h
 api_name:
+ - _PCI_EXPRESS_PME_REQUESTOR_ID
+ - PPCI_EXPRESS_PME_REQUESTOR_ID
  - PCI_EXPRESS_PME_REQUESTOR_ID
 ---
 
@@ -61,17 +62,17 @@ The PCI_EXPRESS_PME_REQUESTOR_ID structure describes the identifier of the reque
 A USHORT representation of the contents of the PCI_EXPRESS_PME_REQUESTOR_ID structure.
 
 
-#### - BusNumber
+### -field DUMMYSTRUCTNAME.BusNumber
 
 The bus number of the requester.
 
 
-#### - DeviceNumber
+### -field DUMMYSTRUCTNAME.DeviceNumber
 
 The device number of the requester.
 
 
-#### - FunctionNumber
+### -field DUMMYSTRUCTNAME.FunctionNumber
 
 The function number of the requester.
 
@@ -97,3 +98,4 @@ A PCI_EXPRESS_PME_REQUESTOR_ID structure is contained in the <b>PMERequestorId</
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ntddk/ns-ntddk-_pci_express_root_status_register">PCI_EXPRESS_ROOT_STATUS_REGISTER</a>
+

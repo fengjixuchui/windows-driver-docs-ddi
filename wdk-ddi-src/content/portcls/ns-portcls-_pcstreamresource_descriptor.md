@@ -4,7 +4,6 @@ title: _PCSTREAMRESOURCE_DESCRIPTOR (portcls.h)
 description: PCSTREAMRESOURCE_DESCRIPTOR defines the stream resource. Use PCSTREAMRESOURCE_DESCRIPTOR_INIT to correctly initialize this structure.
 old-location: audio\pcstreamresource_descriptor.htm
 tech.root: audio
-ms.assetid: 978D06FC-B5CC-409C-BE5D-CA4B53005D8C
 ms.date: 05/08/2018
 keywords: ["PCSTREAMRESOURCE_DESCRIPTOR structure"]
 ms.keywords: "*PPCSTREAMRESOURCE_DESCRIPTOR, PCSTREAMRESOURCE_DESCRIPTOR, PCSTREAMRESOURCE_DESCRIPTOR structure [Audio Devices], PPCSTREAMRESOURCE_DESCRIPTOR, PPCSTREAMRESOURCE_DESCRIPTOR structure pointer [Audio Devices], _PCSTREAMRESOURCE_DESCRIPTOR, audio.pcstreamresource_descriptor, portcls/PCSTREAMRESOURCE_DESCRIPTOR, portcls/PPCSTREAMRESOURCE_DESCRIPTOR"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
+ - _PCSTREAMRESOURCE_DESCRIPTOR
+ - PPCSTREAMRESOURCE_DESCRIPTOR
  - PCSTREAMRESOURCE_DESCRIPTOR
 ---
 
@@ -93,3 +94,4 @@ Stream resources are any resources used by the audio driver to process audio str
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portcls/ne-portcls-_pcstreamresourcetype">PcStreamResourceType</a>
+

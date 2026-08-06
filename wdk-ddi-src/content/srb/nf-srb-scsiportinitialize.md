@@ -4,7 +4,6 @@ title: ScsiPortInitialize function (srb.h)
 description: For a non-Plug and Play miniport driver, the ScsiPortInitialize routine sets up the PORT_CONFIGURATION_INFORMATION structure and calls the miniport driver's HwScsiFindAdapter routine.
 old-location: storage\scsiportinitialize.htm
 tech.root: storage
-ms.assetid: f6adca68-e016-4725-bd8e-691c71d1d471
 ms.date: 03/29/2018
 keywords: ["ScsiPortInitialize function"]
 ms.keywords: ScsiPortInitialize, ScsiPortInitialize routine [Storage Devices], scsiprt_62fb91f9-a420-4156-9a1e-b58b65067a8b.xml, srb/ScsiPortInitialize, storage.scsiportinitialize
@@ -52,24 +51,24 @@ For a non-Plug and Play miniport driver, the <b>ScsiPortInitialize</b> routine s
 
 ## -parameters
 
-### -param Argument1 
+### -param Argument1 [in]
 
-[in]
+
 Pointer to the driver object that the operating system passed to the miniport driver in the first argument of its <b>DriverEntry</b> routine.
 
-### -param Argument2 
+### -param Argument2 [in]
 
-[in]
+
 Pointer to some context information that the operating system passed to the miniport driver in the second argument of its <b>DriverEntry</b>.
 
-### -param HwInitializationData 
+### -param HwInitializationData [in]
 
-[in]
+
 Pointer to the initialization and configuration information supplied by <b>DriverEntry</b>.
 
-### -param HwContext 
+### -param HwContext [in]
 
-[in]
+
 Specifies the address of a context value to be passed to the miniport driver's <a href="/previous-versions/windows/hardware/drivers/ff557300(v=vs.85)">HwScsiFindAdapter</a> routine. Only legacy miniport drivers that scan the bus for HBAs rather than receiving configuration information from the port driver can use this parameter to store state between calls to <i>HwScsiFindAdapter</i>.
 
 ## -returns

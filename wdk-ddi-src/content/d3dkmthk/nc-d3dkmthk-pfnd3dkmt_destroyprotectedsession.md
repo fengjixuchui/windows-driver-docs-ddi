@@ -2,8 +2,7 @@
 UID: NC:d3dkmthk.PFND3DKMT_DESTROYPROTECTEDSESSION
 title: PFND3DKMT_DESTROYPROTECTEDSESSION (d3dkmthk.h)
 description: Implemented by the client driver to destroy a protected session.
-ms.assetid: a5e0bcd2-aa9e-450a-9f72-038c90dafc36
-ms.date: 10/19/2018
+ms.date: 03/04/2022
 keywords: ["PFND3DKMT_DESTROYPROTECTEDSESSION callback function"]
 req.header: d3dkmthk.h
 req.include-header: 
@@ -35,48 +34,35 @@ api_location:
  - d3dkmthk.h
 api_name:
  - PFND3DKMT_DESTROYPROTECTEDSESSION
-product:
- - Windows
 ---
 
 # PFND3DKMT_DESTROYPROTECTEDSESSION callback function
-
 
 ## -description
 
 Implemented by the client driver to destroy a protected session.
 
+## -syntax
+
+```cpp
+PFND3DKMT_DESTROYPROTECTEDSESSION PfnD3dkmtDestroyProtectedSession;
+
+NTSTATUS PfnD3dkmtDestroyProtectedSession(
+    D3DKMT_DESTROYPROTECTEDSESSION *unnamedParam1
+)
+{...}
+```
+
 ## -parameters
 
-### -param D3DKMT_DESTROYPROTECTEDSESSION *
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_DESTROYPROTECTEDSESSION](ns-d3dkmthk-_d3dkmt_destroyprotectedsession.md) structure that contains the information needed to destroy a protected session.
 
 ## -returns
 
-Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate NTSTATUS Values error code.
-
-## -prototype
-
-```cpp
-//Declaration
-
-PFND3DKMT_DESTROYPROTECTEDSESSION Pfnd3dkmtDestroyprotectedsession;
-
-// Definition
-
-NTSTATUS Pfnd3dkmtDestroyprotectedsession
-(
-	D3DKMT_DESTROYPROTECTEDSESSION *
-)
-{...}
-
-PFND3DKMT_DESTROYPROTECTEDSESSION
-
-
-```
+The method returns **STATUS_SUCCESS** if the operation succeeds. Otherwise, this method might return an appropriate **[NTSTATUS](/windows-hardware/drivers/kernel/ntstatus-values)** error code.
 
 ## -remarks
 
-Register your implementation of this callback function by setting the appropriate member of [D3DKMT_DESTROYPROTECTEDSESSION](ns-d3dkmthk-_d3dkmt_destroyprotectedsession.md) and then calling <!-- REPLACE ME -->.
-
+Register your implementation of this callback function by setting the appropriate member of [D3DKMT_DESTROYPROTECTEDSESSION](ns-d3dkmthk-_d3dkmt_destroyprotectedsession.md) and then calling **PfnD3dkmtDestroyProtectedSession**.

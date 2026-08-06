@@ -4,7 +4,6 @@ title: _CMP_MONITOR_INFO (61883.h)
 description: The CMP_MONITOR_INFO structure is used in conjunction with the Av61883_MonitorPlugs request to allow a driver to monitor access to local oPCR and iPCR plugs.
 old-location: ieee\cmp_monitor_info.htm
 tech.root: IEEE
-ms.assetid: 258bcd6f-0536-48d3-a06a-10277f8bef87
 ms.date: 02/15/2018
 keywords: ["CMP_MONITOR_INFO structure"]
 ms.keywords: "*PCMP_MONITOR_INFO, 61883/CMP_MONITOR_INFO, 61883/PCMP_MONITOR_INFO, 61883_structures_0064b5eb-7b9a-4f96-9e56-f3190d2fd7a3.xml, CMP_MONITOR_INFO, CMP_MONITOR_INFO structure [Buses], IEEE.cmp_monitor_info, PCMP_MONITOR_INFO, PCMP_MONITOR_INFO structure pointer [Buses], _CMP_MONITOR_INFO"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _CMP_MONITOR_INFO
+ - PCMP_MONITOR_INFO
  - CMP_MONITOR_INFO
 ---
 
@@ -50,7 +51,7 @@ api_name:
 
 ## -description
 
-The CMP_MONITOR_INFO structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536987">Av61883_MonitorPlugs</a> request to allow a driver to monitor access to local oPCR and iPCR plugs.
+The CMP_MONITOR_INFO structure is used in conjunction with the Av61883_MonitorPlugs request to allow a driver to monitor access to local oPCR and iPCR plugs.
 
 ## -struct-fields
 
@@ -72,9 +73,9 @@ The current contents of the plug.
 
 ### -field Context
 
-Points to a caller-defined context that was registered with <a href="https://msdn.microsoft.com/library/windows/hardware/ff536987">Av61883_MonitorPlugs</a>.
+Points to a caller-defined context that was registered with Av61883_MonitorPlugs.
 
 ## -see-also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536987">Av61883_MonitorPlugs</a>
+<a href="/windows-hardware/drivers/ddi/61883/ns-61883-_av_61883_request">AV_61883_REQUEST structure</a>
 

@@ -4,7 +4,6 @@ title: IMiniportMidiStream::SetState (portcls.h)
 description: The SetState method sets the stream's transport state to a new state value.
 old-location: audio\iminiportmidistream_setstate.htm
 tech.root: audio
-ms.assetid: ee78013c-7660-4017-97ec-eff9068b707a
 ms.date: 05/08/2018
 keywords: ["IMiniportMidiStream::SetState"]
 ms.keywords: IMiniportMidiStream interface [Audio Devices],SetState method, IMiniportMidiStream.SetState, IMiniportMidiStream::SetState, SetState, SetState method [Audio Devices], SetState method [Audio Devices],IMiniportMidiStream interface, audio.iminiportmidistream_setstate, audmp-routines_23f064df-faef-4c45-a58e-c5e3e1d7d7a5.xml, portcls/IMiniportMidiStream::SetState
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - portcls.h
 api_name:
- - IMiniportMidiStream.SetState
+ - IMiniportMidiStream::SetState
 ---
 
 # IMiniportMidiStream::SetState
@@ -50,9 +49,9 @@ The <code>SetState</code> method sets the stream's transport state to a new stat
 
 ## -parameters
 
-### -param State 
+### -param State [in]
 
-[in]
+
 Specifies the new state that the stream is to be set to. This parameter is a <a href="/windows-hardware/drivers/ddi/ks/ne-ks-ksstate">KSSTATE</a> enumeration value. For more information, see the following Remarks section.
 
 ## -returns
@@ -119,3 +118,4 @@ RUN -> PAUSE -> ACQUIRE -> STOP
 
 
 <a href="/windows-hardware/drivers/ddi/ks/ne-ks-ksstate">KSSTATE</a>
+

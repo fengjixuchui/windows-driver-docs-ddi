@@ -4,8 +4,7 @@ title: WdfInterruptGetInfo function (wdfinterrupt.h)
 description: The WdfInterruptGetInfo method retrieves information about a specified interrupt.
 old-location: wdf\wdfinterruptgetinfo.htm
 tech.root: wdf
-ms.assetid: 11f086af-bda7-4dab-8c4b-0db2e89588d1
-ms.date: 02/26/2018
+ms.date: 01/26/2022
 keywords: ["WdfInterruptGetInfo function"]
 ms.keywords: DFInterruptObjectRef_eb163aa0-1ba3-491d-b215-85c8773dcfc9.xml, WdfInterruptGetInfo, WdfInterruptGetInfo method, kmdf.wdfinterruptgetinfo, wdf.wdfinterruptgetinfo, wdfinterrupt/WdfInterruptGetInfo
 req.header: wdfinterrupt.h
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (KMDF); WUDFx02000.dll (UMDF)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -55,14 +54,14 @@ The <b>WdfInterruptGetInfo</b> method retrieves information about a specified in
 
 ## -parameters
 
-### -param Interrupt 
+### -param Interrupt [in]
 
-[in]
+
 A handle to the interrupt object.
 
-### -param Info 
+### -param Info [in, out]
 
-[out]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfinterrupt/ns-wdfinterrupt-_wdf_interrupt_info">WDF_INTERRUPT_INFO</a> structure that has been initialized by calling <a href="/windows-hardware/drivers/ddi/wdfinterrupt/nf-wdfinterrupt-wdf_interrupt_info_init">WDF_INTERRUPT_INFO_INIT</a>.
 
 ## -remarks

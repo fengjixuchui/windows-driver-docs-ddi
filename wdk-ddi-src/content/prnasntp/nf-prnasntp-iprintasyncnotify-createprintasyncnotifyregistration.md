@@ -1,15 +1,13 @@
 ---
 UID: NF:prnasntp.IPrintAsyncNotify.CreatePrintAsyncNotifyRegistration
 title: IPrintAsyncNotify::CreatePrintAsyncNotifyRegistration (prnasntp.h)
-description: 
-old-location: print\iprintasyncnotify_createprintasyncnotifyregistration.htm
+description: Defines the IPrintAsyncNotify::CreatePrintAsyncNotifyRegistration method.
 tech.root: print
-ms.assetid: 845FA810-0286-4FA9-9BD4-A160989C581A
-ms.date: 04/20/2018
+ms.date: 07/26/2022
 keywords: ["IPrintAsyncNotify::CreatePrintAsyncNotifyRegistration"]
 ms.keywords: CreatePrintAsyncNotifyRegistration, CreatePrintAsyncNotifyRegistration method [Print Devices], CreatePrintAsyncNotifyRegistration method [Print Devices],IPrintAsyncNotify interface, IPrintAsyncNotify interface [Print Devices],CreatePrintAsyncNotifyRegistration method, IPrintAsyncNotify.CreatePrintAsyncNotifyRegistration, IPrintAsyncNotify::CreatePrintAsyncNotifyRegistration, print.iprintasyncnotify_createprintasyncnotifyregistration, prnasntp/IPrintAsyncNotify::CreatePrintAsyncNotifyRegistration
 req.header: prnasntp.h
-req.include-header: 
+req.include-header: Prnasntp.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -38,36 +36,39 @@ api_type:
 api_location:
  - Prnasntp.h
 api_name:
- - IPrintAsyncNotify.CreatePrintAsyncNotifyRegistration
+ - IPrintAsyncNotify::CreatePrintAsyncNotifyRegistration
 ---
-
-# IPrintAsyncNotify::CreatePrintAsyncNotifyRegistration
-
 
 ## -description
 
+Defines the **IPrintAsyncNotify::CreatePrintAsyncNotifyRegistration** method.
+
 ## -parameters
 
-## -param
+### -param unnamedParam1
 
-#### - filter [in]
+Defines the **PrintAsyncNotificationType** parameter *unnamedParam1*.
 
+### -param unnamedParam2
 
-#### - pCallback [in]
+Defines the **PrintAsyncNotifyUserFilter** parameter *unnamedParam2*.
 
+### -param unnamedParam3
 
-#### - pStyle [in]
+Defines the **PrintAsyncNotifyConversationStyle** parameter *unnamedParam3*.
 
+### -param unnamedParam4
 
-#### - pType [in]
+Defines the **IPrintAsyncNotifyCallback** parameter *unnamedParam4*.
 
+### -param unnamedParam5
 
-#### - ppRegistration [out]
+Defines the **IPrintAsyncNotifyRegistration** parameter *unnamedParam5*.
 
 ## -returns
 
-If this method succeeds, it returns <b xmlns:loc="https://microsoft.com/wdcml/l10n">S_OK</b>. Otherwise, it returns an <b xmlns:loc="https://microsoft.com/wdcml/l10n">HRESULT</b> error code.
+If this method succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/prnasntp/nn-prnasntp-iprintasyncnotify">IPrintAsyncNotify</a>
+[IPrintAsyncNotify](./nn-prnasntp-iprintasyncnotify.md)

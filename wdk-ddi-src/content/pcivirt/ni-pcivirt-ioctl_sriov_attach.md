@@ -4,7 +4,6 @@ title: IOCTL_SRIOV_ATTACH (pcivirt.h)
 description: The request indicates that the virtualization stack wants to register for Plug and Play events received by the SR-IOV device.
 old-location: pci\ioctl-sriov-attach.htm
 tech.root: PCI
-ms.assetid: c1129d60-eeb0-4c90-b181-365f3379d89e
 ms.date: 02/24/2018
 keywords: ["IOCTL_SRIOV_ATTACH IOCTL"]
 ms.keywords: IOCTL_SRIOV_ATTACH, IOCTL_SRIOV_ATTACH control code [Buses], PCI.ioctl-sriov-attach, pcivirt/IOCTL_SRIOV_ATTACH
@@ -55,6 +54,8 @@ api_name:
 The  request indicates that the virtualization stack wants to register for Plug and Play events received by the SR-IOV device.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 
@@ -119,7 +120,7 @@ In this example handling of the IOCTL_SRIOV_ATTACH request, the PF driver mainta
         // Block until it is safe for the VSP to attach.  Don't
         // bother with pending this IRP since this is always a sent as
         // a synchronous kernel-mode IRP and the caller would block
-        // the thread anyway.  May need to repeat the wait since since
+        // the thread anyway.  May need to repeat the wait since
         // waiting for the safe-to-attach event must not be done while
         // holding the state lock.
         //

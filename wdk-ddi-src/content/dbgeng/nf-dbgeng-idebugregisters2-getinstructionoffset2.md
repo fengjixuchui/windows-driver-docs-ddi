@@ -4,7 +4,6 @@ title: IDebugRegisters2::GetInstructionOffset2 (dbgeng.h)
 description: The GetInstructionOffset2 method returns the location of the current thread's current instruction.
 old-location: debugger\getinstructionoffset2.htm
 tech.root: debugger
-ms.assetid: c5757dbb-16bf-46f9-836f-5a94089bbb1e
 ms.date: 05/03/2018
 keywords: ["IDebugRegisters2::GetInstructionOffset2"]
 ms.keywords: GetInstructionOffset2, GetInstructionOffset2 method [Windows Debugging], GetInstructionOffset2 method [Windows Debugging],IDebugRegisters2 interface, IDebugRegisters2 interface [Windows Debugging],GetInstructionOffset2 method, IDebugRegisters2.GetInstructionOffset2, IDebugRegisters2::GetInstructionOffset2, IDebugRegisters_92189e99-c8f6-4422-8421-62fe194a05b6.xml, dbgeng/IDebugRegisters2::GetInstructionOffset2, debugger.getinstructionoffset2
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugRegisters2.GetInstructionOffset2
+ - IDebugRegisters2::GetInstructionOffset2
 ---
 
 # IDebugRegisters2::GetInstructionOffset2
@@ -50,9 +49,9 @@ The <b>GetInstructionOffset2</b> method returns the location of the current thre
 
 ## -parameters
 
-### -param Source 
+### -param Source [in]
 
-[in]
+
 Specifies the register source to query.
 
 The possible values are listed in the following table.
@@ -96,9 +95,9 @@ Fetch register information from the current scope's register context.
 </tr>
 </table>
 
-### -param Offset 
+### -param Offset [out]
 
-[out]
+
 Receives the location in the process's virtual address space of the current instruction of the current thread.
 
 ## -returns
@@ -138,3 +137,4 @@ For an overview of the <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-i
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugregisters2">IDebugRegisters2</a>
+

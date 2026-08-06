@@ -4,7 +4,6 @@ title: PAGP_COMMIT_PHYSICAL (videoagp.h)
 description: The AgpCommitPhysical function maps system (physical) memory to the specified range of AGP-decodable physical addresses.
 old-location: display\agpcommitphysical.htm
 tech.root: display
-ms.assetid: 3c3a6936-7435-4a42-99e6-2c048613af23
 ms.date: 05/10/2018
 keywords: ["PAGP_COMMIT_PHYSICAL callback function"]
 ms.keywords: AgpCommitPhysical, AgpCommitPhysical callback function [Display Devices], PAGP_COMMIT_PHYSICAL, PAGP_COMMIT_PHYSICAL callback, VideoPort_Functions_11f78058-194b-4407-b98b-1ae7cd0028f7.xml, display.agpcommitphysical, videoagp/AgpCommitPhysical
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - videoagp.h
 api_name:
- - AgpCommitPhysical
+ - PAGP_COMMIT_PHYSICAL
 ---
 
 # PAGP_COMMIT_PHYSICAL callback function
@@ -50,24 +49,24 @@ The <b>AgpCommitPhysical</b> function maps system (physical) memory to the speci
 
 ## -parameters
 
-### -param HwDeviceExtension 
+### -param HwDeviceExtension [in]
 
-[in]
+
 Pointer to the device extension of the miniport driver.
 
-### -param PhysicalReserveContext 
+### -param PhysicalReserveContext [in]
 
-[in]
+
 Identifies a reserved physical address range. The context handle is obtained from <a href="/windows-hardware/drivers/ddi/videoagp/nc-videoagp-pagp_reserve_physical">AgpReservePhysical</a>.
 
-### -param Pages 
+### -param Pages [in]
 
-[in]
+
 Specifies the number of pages of system memory to commit.
 
-### -param Offset 
+### -param Offset [in]
 
-[in]
+
 Specifies the page offset at which to commit the pages. The offset is applied to the reserved physical address range associated with <b>PhysicalReserveContext</b>.
 
 ## -returns
@@ -97,3 +96,4 @@ When a video miniport driver calls <b>AgpCommitPhysical</b>, a portion of the ph
 
 
 <a href="/windows-hardware/drivers/ddi/videoagp/nc-videoagp-pagp_reserve_virtual">AgpReserveVirtual</a>
+

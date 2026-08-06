@@ -4,7 +4,6 @@ title: IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered (wudfddi.h)
 description: A driver's OnWakeFromS0Triggered event callback function informs the driver that its device, which had previously entered a low-power device state while the system power state remained at S0, might have triggered a wake signal.
 old-location: wdf\ipowerpolicycallbackwakefroms0_onwakefroms0triggered.htm
 tech.root: wdf
-ms.assetid: ebcd31f9-79cd-4c43-8cac-231ff97f269e
 ms.date: 02/26/2018
 keywords: ["IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered"]
 ms.keywords: IPowerPolicyCallbackWakeFromS0 interface,OnWakeFromS0Triggered method, IPowerPolicyCallbackWakeFromS0.OnWakeFromS0Triggered, IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered, OnWakeFromS0Triggered, OnWakeFromS0Triggered method, OnWakeFromS0Triggered method,IPowerPolicyCallbackWakeFromS0 interface, UMDFDeviceObjectRef_52f89758-227c-4849-83ac-30826d2d36d0.xml, umdf.ipowerpolicycallbackwakefroms0_onwakefroms0triggered, wdf.ipowerpolicycallbackwakefroms0_onwakefroms0triggered, wudfddi/IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IPowerPolicyCallbackWakeFromS0.OnWakeFromS0Triggered
+ - IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered
 ---
 
 # IPowerPolicyCallbackWakeFromS0::OnWakeFromS0Triggered
@@ -52,9 +51,9 @@ A driver's <b>OnWakeFromS0Triggered</b> event callback function informs the driv
 
 ## -parameters
 
-### -param pWdfDevice 
+### -param pWdfDevice [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice">IWDFDevice</a> interface of the device object that represents one of the driver's devices.
 
 ## -remarks
@@ -78,3 +77,4 @@ For more information about this callback function, see <a href="/windows-hardwar
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-ipowerpolicycallbackwakefroms0-ondisarmwakefroms0">IPowerPolicyCallbackWakeFromS0::OnDisarmWakeFromS0</a>
+

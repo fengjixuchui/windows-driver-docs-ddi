@@ -4,7 +4,6 @@ title: _NPI_CLIENT_CHARACTERISTICS (netioddk.h)
 description: The NPI_CLIENT_CHARACTERISTICS structure defines the characteristics of a client module.
 old-location: netvista\npi_client_characteristics.htm
 tech.root: netvista
-ms.assetid: 03d73a80-0860-4ec7-8eb1-5954f64b6026
 ms.date: 05/02/2018
 keywords: ["NPI_CLIENT_CHARACTERISTICS structure"]
 ms.keywords: NPI_CLIENT_CHARACTERISTICS, NPI_CLIENT_CHARACTERISTICS structure [Network Drivers Starting with Windows Vista], PNPI_CLIENT_CHARACTERISTICS, PNPI_CLIENT_CHARACTERISTICS structure pointer [Network Drivers Starting with Windows Vista], _NPI_CLIENT_CHARACTERISTICS, netioddk/NPI_CLIENT_CHARACTERISTICS, netioddk/PNPI_CLIENT_CHARACTERISTICS, netvista.npi_client_characteristics, nmrref_01bb300c-5e76-40e3-9358-a01e991ceecf.xml
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - netioddk.h
 api_name:
+ - _NPI_CLIENT_CHARACTERISTICS
  - NPI_CLIENT_CHARACTERISTICS
 ---
 
@@ -121,3 +121,4 @@ A client module must make sure that this structure remains valid and resident in
 
 
 <a href="/windows-hardware/drivers/ddi/netioddk/nf-netioddk-nmrregisterclient">NmrRegisterClient</a>
+

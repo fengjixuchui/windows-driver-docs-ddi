@@ -4,7 +4,6 @@ title: RtlUnicodeStringCbCatStringN function (ntstrsafe.h)
 description: The RtlUnicodeStringCbCatStringN function concatenates two strings when the destination string is contained in a UNICODE_STRING structure, while limiting the size of the appended string.
 old-location: kernel\rtlunicodestringcbcatstringn.htm
 tech.root: kernel
-ms.assetid: bc2139d2-9d59-4d19-a4b5-ce0a993a9846
 ms.date: 04/30/2018
 keywords: ["RtlUnicodeStringCbCatStringN function"]
 ms.keywords: RtlUnicodeStringCbCatStringN, RtlUnicodeStringCbCatStringN function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringcbcatstringn, ntstrsafe/RtlUnicodeStringCbCatStringN, safestrings_54ef3816-fbca-461c-b250-4c0fca04c2ed.xml
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Ntstrsafe.lib
 req.dll: 
-req.irql: PASSIVE_LEVEL
+req.irql: Any if strings being manipulated are always resident in memory, otherwise PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,19 +50,19 @@ The <b>RtlUnicodeStringCbCatStringN </b>function concatenates two strings when t
 
 ## -parameters
 
-### -param DestinationString 
+### -param DestinationString [in, out]
 
-[in, out]
+
 A pointer to a <b>UNICODE_STRING</b> structure. This structure includes a buffer that, on input, contains a destination string to which the source string will be concatenated. On output, this buffer is the destination buffer that contains the entire resultant string. The source string (excluding the terminating null) is added to the end of the destination string. The maximum number of bytes in the structure's string buffer is NTSTRSAFE_UNICODE_STRING_MAX_CCH * sizeof(WCHAR).
 
-### -param pszSrc 
+### -param pszSrc [in]
 
-[in]
+
 A caller-supplied pointer to a null-terminated string. This string will be concatenated to the end of the destination string that is contained in the <b>UNICODE_STRING</b> structure that <i>DestinationString</i> points to.
 
-### -param cbToAppend 
+### -param cbToAppend [in]
 
-[in]
+
 The maximum number of bytes to append to the string that the <i>DestinationString</i> parameter describes.
 
 ## -returns

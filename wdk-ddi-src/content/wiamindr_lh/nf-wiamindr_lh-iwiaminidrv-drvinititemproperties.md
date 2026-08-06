@@ -2,10 +2,8 @@
 UID: NF:wiamindr_lh.IWiaMiniDrv.drvInitItemProperties
 title: IWiaMiniDrv::drvInitItemProperties (wiamindr_lh.h)
 description: The IWiaMiniDrv::drvInitItemProperties method initializes WIA driver item properties for each item in an application item tree.
-old-location: image\iwiaminidrv_drvinititemproperties.htm
 tech.root: image
-ms.assetid: 06dce5c0-f893-47c7-bee9-1b7f61137ba0
-ms.date: 05/03/2018
+ms.date: 07/21/2022
 keywords: ["IWiaMiniDrv::drvInitItemProperties"]
 ms.keywords: IWiaMiniDrv interface [Imaging Devices],drvInitItemProperties method, IWiaMiniDrv.drvInitItemProperties, IWiaMiniDrv::drvInitItemProperties, MiniDrv_88720847-db1d-475a-b8c4-62fdb376953a.xml, drvInitItemProperties, drvInitItemProperties method [Imaging Devices], drvInitItemProperties method [Imaging Devices],IWiaMiniDrv interface, image.iwiaminidrv_drvinititemproperties, wiamindr_lh/IWiaMiniDrv::drvInitItemProperties
 req.header: wiamindr_lh.h
@@ -38,11 +36,8 @@ api_type:
 api_location:
  - wiamindr_lh.h
 api_name:
- - IWiaMiniDrv.drvInitItemProperties
+ - IWiaMiniDrv::drvInitItemProperties
 ---
-
-# IWiaMiniDrv::drvInitItemProperties
-
 
 ## -description
 
@@ -52,37 +47,25 @@ The **IWiaMiniDrv::drvInitItemProperties** method initializes WIA driver item pr
 
 ### -param __MIDL__IWiaMiniDrv0013
 
-lFlags [in]
+*lFlags* [in]
 
-- Is reserved. Set to zero.
+Reserved. Set to zero.
 
 ### -param __MIDL__IWiaMiniDrv0014
 
-pWiasContext [in]
-
-- Pointer to a WIA item context.
-
-### -param __MIDL__IWiaMiniDrv0015
-
-plDevErrVal [out]
-
-- Points to a memory location that will receive a status code for this method. If this method returns S_OK, the value stored will be zero. Otherwise, a minidriver-specific error code will be stored at the location pointed to by this parameter.
-
-#### - lFlags [in]
-
-Is reserved. Set to zero.
-
-#### - pWiasContext [in]
+*pWiasContext* [in]
 
 Pointer to a WIA item context.
 
-#### - plDevErrVal [out]
+### -param __MIDL__IWiaMiniDrv0015
 
-Points to a memory location that will receive a status code for this method. If this method returns S_OK, the value stored will be zero. Otherwise, a minidriver-specific error code will be stored at the location pointed to by this parameter.
+*plDevErrVal* [out]
+
+Points to a memory location that will receive a status code for this method. If this method returns **S_OK**, the value stored will be zero. Otherwise, a minidriver-specific error code will be stored at the location pointed to by this parameter.
 
 ## -returns
 
-On success, the method should return S_OK and clear the device error value pointed to by *plDevErrVal*. If the method fails, it should return a standard COM error code and place a minidriver-specific error code value in the memory pointed to by *plDevErrVal*.
+On success, the method should return **S_OK** and clear the device error value pointed to by *plDevErrVal*. If the method fails, it should return a standard COM error code and place a minidriver-specific error code value in the memory pointed to by *plDevErrVal*.
 
 The value pointed to by *plDevErrVal* can be converted to a string by calling [IWiaMiniDrv::drvGetDeviceErrorStr](./nf-wiamindr_lh-iwiaminidrv-drvgetdeviceerrorstr.md).
 

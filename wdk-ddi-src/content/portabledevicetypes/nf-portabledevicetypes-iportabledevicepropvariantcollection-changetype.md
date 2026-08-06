@@ -4,7 +4,6 @@ title: IPortableDevicePropVariantCollection::ChangeType (portabledevicetypes.h)
 description: Converts all items in the collection to the specified VARTYPE.
 old-location: wpddk\iportabledevicepropvariantcollection_changetype.htm
 tech.root: wpd_dk
-ms.assetid: d8e6091e-92ca-49c7-8ee6-502e1567b609
 ms.date: 02/15/2018
 keywords: ["IPortableDevicePropVariantCollection::ChangeType"]
 ms.keywords: ChangeType, ChangeType method, ChangeType method,IPortableDevicePropVariantCollection interface, IPortableDevicePropVariantCollection interface,ChangeType method, IPortableDevicePropVariantCollection.ChangeType, IPortableDevicePropVariantCollection::ChangeType, IPortableDevicePropVariantCollectionChangeType, portabledevicetypes/IPortableDevicePropVariantCollection::ChangeType, wpddk.iportabledevicepropvariantcollection_changetype
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDevicePropVariantCollection.ChangeType
+ - IPortableDevicePropVariantCollection::ChangeType
 ---
 
 # IPortableDevicePropVariantCollection::ChangeType
@@ -51,9 +50,9 @@ Converts all items in the collection to the specified <b>VARTYPE</b>.
 
 ## -parameters
 
-### -param vt 
+### -param vt [in]
 
-[in]
+
 Specifies the <b>VARTYPE</b> to which you want to convert all items in the collection.
 
 ## -returns
@@ -85,3 +84,4 @@ If this method fails, the collection may be left in an intermediate state, with 
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicepropvariantcollection">IPortableDevicePropVariantCollection Interface</a>
+

@@ -4,7 +4,6 @@ title: DXGKDDI_MIRACAST_HANDLE_IO_CONTROL (dispmprt.h)
 description: Called by the operating system to request that the display miniport driver process a synchronous I/O control request in response to a user-mode display driver call to the MiracastIoControl function.
 old-location: display\dxgkddimiracastiocontrol.htm
 tech.root: display
-ms.assetid: 83E817C3-A30D-4597-A490-C4FB93A78FCE
 ms.date: 05/10/2018
 keywords: ["DXGKDDI_MIRACAST_HANDLE_IO_CONTROL callback function"]
 ms.keywords: DXGKDDI_MIRACAST_HANDLE_IO_CONTROL, DXGKDDI_MIRACAST_HANDLE_IO_CONTROL callback, DxgkDdiMiracastIoControl, DxgkDdiMiracastIoControl callback function [Display Devices], display.dxgkddimiracastiocontrol, dispmprt/DxgkDdiMiracastIoControl
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Dispmprt.h
 api_name:
- - DxgkDdiMiracastIoControl
+ - DXGKDDI_MIRACAST_HANDLE_IO_CONTROL
 ---
 
 # DXGKDDI_MIRACAST_HANDLE_IO_CONTROL callback function
@@ -50,45 +49,45 @@ Called by the operating system to request that the display miniport driver proce
 
 ## -parameters
 
-### -param DriverContext 
+### -param DriverContext [in]
 
-[in]
+
 A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_add_device">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.
 
-### -param MiracastContext 
+### -param MiracastContext [in]
 
-[in]
+
 The Miracast device context, supplied by the operating system. This context was provided by the display miniport driver in a call to the <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_miracast_create_context">DxgkDdiMiracastCreateContext</a> function.
 
-### -param InputBufferSize 
+### -param InputBufferSize [in]
 
-[in]
+
 Supplied by the operating system as the size, in bytes, of the input buffer pointed to by <i>pInputBuffer</i>. This value originated as the user-mode <a href="/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_miracast_io_control">MiracastIoControl</a> function's <i>InputBufferSize</i> parameter.
 
-### -param pInputBuffer 
+### -param pInputBuffer [in]
 
-[in]
+
 Supplied by the operating system as a pointer to the input buffer. This value originated as the user-mode <a href="/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_miracast_io_control">MiracastIoControl</a> function's <i>InputBufferSize</i> parameter.
 
 <i>InputBufferSize</i> specifies the size of the buffer.
 
-### -param OutputBufferSize 
+### -param OutputBufferSize [in]
 
-[in]
+
 Supplied by the operating system as the size, in bytes, of the output buffer pointed to by <i>pOutputBuffer</i>.
 
 This value originated as the user-mode <a href="/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_miracast_io_control">MiracastIoControl</a> function's <i>OutputBufferSize</i> parameter.
 
-### -param pOutputBuffer 
+### -param pOutputBuffer [out]
 
-[out]
+
 Supplied by the operating system as a pointer to the output buffer. This value originated as the user-mode <a href="/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_miracast_io_control">MiracastIoControl</a> function's <i>pOutputBuffer</i> parameter.
 
 <i>OutBufferSize</i> specifies the size of the buffer.
 
-### -param BytesReturned 
+### -param BytesReturned [out]
 
-[out]
+
 Supplied by the operating system as a pointer to a buffer that holds a <b>ULONG</b>-type value that is the number of bytes that the display miniport driver returned in the buffer pointed to by <i>pOutputBuffer</i>.
 
 ## -returns
@@ -130,3 +129,4 @@ The threading and synchronization level for this function is set by how the user
 
 
 <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-probeforwrite">ProbeForWrite</a>
+

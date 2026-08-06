@@ -4,7 +4,6 @@ title: DrmGetContentRights function (drmk.h)
 description: The DrmGetContentRights function retrieves the DRM content rights assigned to a DRM content ID.
 old-location: audio\drmgetcontentrights.htm
 tech.root: audio
-ms.assetid: 706a5749-e288-4275-84fc-e500a848d541
 ms.date: 05/08/2018
 keywords: ["DrmGetContentRights function"]
 ms.keywords: DrmGetContentRights, DrmGetContentRights function [Audio Devices], aud-prop2_9f836831-bb65-45d1-8701-4aaa77999b81.xml, audio.drmgetcontentrights, drmk/DrmGetContentRights
@@ -51,14 +50,14 @@ The <code>DrmGetContentRights</code> function retrieves the DRM content rights a
 
 ## -parameters
 
-### -param ContentId 
+### -param ContentId [in]
 
-[in]
+
 Specifies the DRM content ID. This parameter identifies a KS audio stream.
 
-### -param DrmRights 
+### -param DrmRights [out]
 
-[out]
+
 Specifies the DRM content rights that are assigned to the stream that is identified by <i>ContentId</i>. This parameter is a pointer to a <a href="/windows-hardware/drivers/ddi/drmk/ns-drmk-tagdrmrights">DRMRIGHTS</a> structure.
 
 ## -returns

@@ -4,7 +4,6 @@ title: NdisMRegisterScatterGatherDma function (ndis.h)
 description: Bus master miniport drivers call the NdisMRegisterScatterGatherDma function from MiniportInitializeEx to initialize a scatter/gather DMA channel.
 old-location: netvista\ndismregisterscattergatherdma.htm
 tech.root: netvista
-ms.assetid: 90ce64a2-9140-4b5f-88aa-b4f01a3d0c6f
 ms.date: 05/02/2018
 keywords: ["NdisMRegisterScatterGatherDma function"]
 ms.keywords: NdisMRegisterScatterGatherDma, NdisMRegisterScatterGatherDma function [Network Drivers Starting with Windows Vista], ndis/NdisMRegisterScatterGatherDma, ndis_sgdma_ref_4c89dae9-d6bc-44a5-9b8b-8efcb69ecc75.xml, netvista.ndismregisterscattergatherdma
@@ -62,15 +61,15 @@ Bus master miniport drivers call the
 
 ## -parameters
 
-### -param MiniportAdapterHandle 
+### -param MiniportAdapterHandle [in]
 
-[in]
+
 The miniport handle that NDIS passed to 
      <i>MiniportInitializeEx</i>.
 
-### -param DmaDescription 
+### -param DmaDescription [in, out]
 
-[in, out]
+
 A pointer to an NDIS_SG_DMA_DESCRIPTION structure. This structure describes the scatter/gather DMA
      properties of the miniport driver. The structure is defined as follows:
      
@@ -97,7 +96,7 @@ This structure includes the following members:
 #### Header
 
 The 
-       <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
+       <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure for the
        NDIS_SG_DMA_DESCRIPTION structure. Set the 
        <b>Type</b> member of the structure that 
        <b>Header</b> specifies to NDIS_OBJECT_TYPE_SG_DMA_DESCRIPTION, the 
@@ -154,9 +153,9 @@ The size, in bytes, of the memory that is required to hold a scatter/gather list
        <b>NdisMRegisterScatterGatherDma</b>. Miniport drivers should use this size to preallocate memory for
        each scatter/gather list.
 
-### -param NdisMiniportDmaHandle 
+### -param NdisMiniportDmaHandle [out]
 
-[out]
+
 A pointer to a variable that the caller supplies and that NDIS fills with a handle. The handle
      identifies a context area that NDIS uses to manage this DMA resource. The miniport driver passes this
      handle to NDIS in subsequent calls to NDIS that involve this DMA resource.
@@ -294,7 +293,7 @@ Miniport drivers call the
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 

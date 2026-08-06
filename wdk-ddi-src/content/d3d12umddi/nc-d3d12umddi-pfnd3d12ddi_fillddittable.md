@@ -1,14 +1,13 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_FILLDDITTABLE
 title: PFND3D12DDI_FILLDDITTABLE (d3d12umddi.h)
-description: Implemented by the client driver to retrieve the D3D12DDI_DEVICE_FUNCS_VIDEO structure.
-ms.assetid: af03fe9b-c950-4045-9234-0e8700262854
-ms.date: 10/19/2018
+description: Learn more about the PFND3D12DDI_FILLDDITTABLE function.
+ms.date: 09/29/2022
 keywords: ["PFND3D12DDI_FILLDDITTABLE callback function"]
 req.header: d3d12umddi.h
 req.include-header: 
 req.target-type: 
-req.target-min-winverclnt: 
+req.target-min-winverclnt:
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -36,69 +35,48 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_FILLDDITTABLE
-product:
- - Windows
 dev_langs:
  - c++
 ---
 
 # PFND3D12DDI_FILLDDITTABLE callback function
 
-
 ## -description
 
-Implemented by the client driver to retrieve the [D3D12DDI_DEVICE_FUNCS_VIDEO](ns-d3d12umddi-d3d12ddi_device_funcs_video_0033.md) structure.
+The **PFND3D12DDI_FILLDDITTABLE** callback function retrieves a list of function pointers implemented by the user-mode driver.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1 [in]
 
-Adapter handle.
+**hAdapter** is the handle to the graphics adapter object.
 
-### -param Arg2
+### -param unnamedParam2 [in]
 
-Table type.
+**tableType** is a [**D3D12DDI_TABLE_TYPE**](ne-d3d12umddi-d3d12ddi_table_type.md) value that indicates the type of function pointers to retrieve.
 
-### -param Arg3
+### -param unnamedParam3 [in/out]
 
-Void.
+**pTable** is a pointer to the returned table of callback functions that define the queried implementation.
 
-### -param Arg4
+### -param unnamedParam4 [in]
 
-Size of the table.
+**tableSize** is the size of the table pointed to by **pTable**, in bytes.
 
-### -param Arg5
+### -param unnamedParam5 [in]
 
-### -param Arg6
+**tableNum** is the table index.
 
-Table handle.
+### -param unnamedParam6 [in, optional]
+
+**hHandle** is a D3D12DDI_HRTTABLE handle.
 
 ## -returns
 
-Returns an HRESULT value.
+Returns an [**HRESULT**](/windows-hardware/drivers/debugger/hresult-values) value.
 
-## -prototype
+## -see-also
 
-```cpp
-//Declaration
+[**D3DDDI_ADAPTERFUNCS**](../d3dumddi/ns-d3dumddi-_d3dddi_adapterfuncs.md)
 
-PFND3D12DDI_FILLDDITTABLE Pfnd3d12ddiFillddittable;
-
-// Definition
-
-HRESULT Pfnd3d12ddiFillddittable
-(
-	 D3D12DDI_HADAPTER
-	 D3D12DDI_TABLE_TYPE
-	VOID *
-	 SIZE_T
-	 UINT
-	 D3D12DDI_HRTTABLE
-)
-{...}
-
-PFND3D12DDI_FILLDDITTABLE
-
-
-```
-
+[**D3D12DDI_TABLE_TYPE**](ne-d3d12umddi-d3d12ddi_table_type.md)

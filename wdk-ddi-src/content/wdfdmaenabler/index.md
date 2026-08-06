@@ -1,17 +1,17 @@
 ---
+description: "Learn more about: Wdfdmaenabler.h header"
 UID: NA:wdfdmaenabler
 title: Wdfdmaenabler.h header
 ms.assetid: f289b573-9c47-3cb2-8c3c-5761a2743379
 ms.date: 05/09/2018
 keywords: ["Wdfdmaenabler.h header"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 tech.root: wdf
 f1_keywords:
  - wdfdmaenabler
  - wdfdmaenabler/wdfdmaenabler
+api_name:
+ - wdfdmaenabler
 ---
 
 # Wdfdmaenabler.h header

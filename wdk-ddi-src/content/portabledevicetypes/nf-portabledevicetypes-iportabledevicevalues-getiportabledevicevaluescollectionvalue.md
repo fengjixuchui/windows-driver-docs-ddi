@@ -4,7 +4,6 @@ title: IPortableDeviceValues::GetIPortableDeviceValuesCollectionValue (portabled
 description: Retrieves an IPortableDeviceValuesCollection (type VT_UNKNOWN) value specified by a key.
 old-location: wpddk\iportabledevicevalues_getiportabledevicevaluescollectionvalue.htm
 tech.root: wpd_dk
-ms.assetid: 2cd07079-51f2-40dc-ab84-e6a83de6a6a1
 ms.date: 02/15/2018
 keywords: ["IPortableDeviceValues::GetIPortableDeviceValuesCollectionValue"]
 ms.keywords: GetIPortableDeviceValuesCollectionValue, GetIPortableDeviceValuesCollectionValue method, GetIPortableDeviceValuesCollectionValue method,IPortableDeviceValues interface, IPortableDeviceValues interface,GetIPortableDeviceValuesCollectionValue method, IPortableDeviceValues.GetIPortableDeviceValuesCollectionValue, IPortableDeviceValues::GetIPortableDeviceValuesCollectionValue, IPortableDeviceValuesGetIPortableDeviceValuesCollectionValue, portabledevicetypes/IPortableDeviceValues::GetIPortableDeviceValuesCollectionValue, wpddk.iportabledevicevalues_getiportabledevicevaluescollectionvalue
@@ -39,7 +38,7 @@ api_type:
 api_location:
  - PortableDeviceTypes.h
 api_name:
- - IPortableDeviceValues.GetIPortableDeviceValuesCollectionValue
+ - IPortableDeviceValues::GetIPortableDeviceValuesCollectionValue
 ---
 
 # IPortableDeviceValues::GetIPortableDeviceValuesCollectionValue
@@ -51,14 +50,14 @@ Retrieves an <b>IPortableDeviceValuesCollection</b> (type VT_UNKNOWN) value spec
 
 ## -parameters
 
-### -param key 
+### -param key [in]
 
-[in]
+
 A <b>REFPROPERTYKEY</b> key that specifies the item to retrieve.
 
-### -param ppValue 
+### -param ppValue [out]
 
-[out]
+
 Address of a variable that receives a pointer to the retrieved <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nn-portabledevicetypes-iportabledevicevaluescollection">IPortableDeviceValuesCollection</a> interface. The caller is responsible for calling <b>Release</b> on the retrieved interface.
 
 ## -returns
@@ -116,3 +115,4 @@ None.
 
 
 <a href="/windows-hardware/drivers/ddi/portabledevicetypes/nf-portabledevicetypes-iportabledevicevalues-setiportabledevicevaluescollectionvalue">SetIPortableDeviceValuesCollectionValue</a>
+

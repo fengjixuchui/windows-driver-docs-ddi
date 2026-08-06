@@ -4,7 +4,6 @@ title: IWDFIoQueue::Start (wudfddi.h)
 description: The Start method enables an I/O queue to start receiving new I/O requests and delivering them to a driver.
 old-location: wdf\iwdfioqueue_start.htm
 tech.root: wdf
-ms.assetid: 3e7d8dd5-4336-472e-a71f-8abb946af8be
 ms.date: 02/26/2018
 keywords: ["IWDFIoQueue::Start"]
 ms.keywords: IWDFIoQueue interface,Start method, IWDFIoQueue.Start, IWDFIoQueue::Start, Start, Start method, Start method,IWDFIoQueue interface, UMDFQueueObjectRef_d53b70a8-b022-4e2c-aa3d-d29aac4695ad.xml, umdf.iwdfioqueue_start, wdf.iwdfioqueue_start, wudfddi/IWDFIoQueue::Start
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoQueue.Start
+ - IWDFIoQueue::Start
 ---
 
 # IWDFIoQueue::Start
@@ -53,3 +52,4 @@ The <b>Start</b> method enables an I/O queue to start receiving new I/O requests
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfioqueue">IWDFIoQueue</a>
+

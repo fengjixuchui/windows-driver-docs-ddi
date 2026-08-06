@@ -4,7 +4,6 @@ title: IOCTL_VIDEO_SET_CURRENT_MODE (ntddvdeo.h)
 description: Sets the adapter to the specified operating mode.
 old-location: display\ioctl_video_set_current_mode.htm
 tech.root: display
-ms.assetid: 7dd77e55-01d7-4e10-8134-813fe0c1fc6c
 ms.date: 05/10/2018
 keywords: ["IOCTL_VIDEO_SET_CURRENT_MODE IOCTL"]
 ms.keywords: IOCTL_VIDEO_SET_CURRENT_MODE, IOCTL_VIDEO_SET_CURRENT_MODE control, IOCTL_VIDEO_SET_CURRENT_MODE control code [Display Devices], Video_IOCTLs_df8e3e45-0a72-427b-b47f-49bc936d53a5.xml, display.ioctl_video_set_current_mode, ntddvdeo/IOCTL_VIDEO_SET_CURRENT_MODE
@@ -49,6 +48,8 @@ api_name:
 Sets the adapter to the specified operating mode. Miniport drivers are required to support this nonmodal request because it resets the current mode. The miniport driver must also consider the two high order flags which are used to additionally control the mode set operation. See <a href="/windows-hardware/drivers/ddi/ntddvdeo/ns-ntddvdeo-_video_mode">VIDEO_MODE</a> for further information.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

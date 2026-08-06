@@ -1,10 +1,9 @@
 ---
-UID: NE:netdispumdddi.__unnamed_enum_2
+UID: NE:netdispumdddi.MIRACAST_STATISTIC_TYPE
 title: MIRACAST_STATISTIC_TYPE (netdispumdddi.h)
 description: Specifies types of Miracast statistics data that the user-mode display driver generates.
 old-location: display\miracast_statistic_type.htm
 tech.root: display
-ms.assetid: 1062e816-f10d-42eb-b0b5-4596b7b543f9
 ms.date: 05/10/2018
 keywords: ["MIRACAST_STATISTIC_TYPE enumeration"]
 ms.keywords: MIRACAST_STATISTIC_TYPE, MIRACAST_STATISTIC_TYPE enumeration [Display Devices], MIRACAST_STATISTIC_TYPE_CHUNK_PROCESSING_COMPLETE, MIRACAST_STATISTIC_TYPE_CHUNK_SENT, MIRACAST_STATISTIC_TYPE_EVENT, MIRACAST_STATISTIC_TYPE_FORCE_UINT32, display.miracast_statistic_type, netdispumdddi/MIRACAST_STATISTIC_TYPE, netdispumdddi/MIRACAST_STATISTIC_TYPE_CHUNK_PROCESSING_COMPLETE, netdispumdddi/MIRACAST_STATISTIC_TYPE_CHUNK_SENT, netdispumdddi/MIRACAST_STATISTIC_TYPE_EVENT, netdispumdddi/MIRACAST_STATISTIC_TYPE_FORCE_UINT32
@@ -73,3 +72,4 @@ For more info on how the driver uses these enumeration values with reporting cal
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/netdispumdddi/nc-netdispumdddi-pfn_report_statistic">ReportStatistic</a>
+

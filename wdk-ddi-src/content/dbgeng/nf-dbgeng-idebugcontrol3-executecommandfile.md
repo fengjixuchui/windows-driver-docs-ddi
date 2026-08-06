@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl3.ExecuteCommandFile
 title: IDebugControl3::ExecuteCommandFile (dbgeng.h)
-description: The ExecuteCommandFile method opens the specified file and executes the debugger commands that are contained within.
+description: The ExecuteCommandFile method opens the specified file and executes the debugger commands that are contained within. This method belongs to IDebugControl3.
 old-location: debugger\executecommandfile.htm
 tech.root: debugger
-ms.assetid: 6b8f53d7-361c-40a3-b93c-39e653bd9032
 ms.date: 05/03/2018
 keywords: ["IDebugControl3::ExecuteCommandFile"]
 ms.keywords: ExecuteCommandFile, ExecuteCommandFile method [Windows Debugging], ExecuteCommandFile method [Windows Debugging],IDebugControl interface, ExecuteCommandFile method [Windows Debugging],IDebugControl2 interface, ExecuteCommandFile method [Windows Debugging],IDebugControl3 interface, IDebugControl interface [Windows Debugging],ExecuteCommandFile method, IDebugControl2 interface [Windows Debugging],ExecuteCommandFile method, IDebugControl2::ExecuteCommandFile, IDebugControl3 interface [Windows Debugging],ExecuteCommandFile method, IDebugControl3.ExecuteCommandFile, IDebugControl3::ExecuteCommandFile, IDebugControl::ExecuteCommandFile, IDebugControl_61c4589a-321e-4574-8565-87bdc7b36a73.xml, dbgeng/IDebugControl2::ExecuteCommandFile, dbgeng/IDebugControl3::ExecuteCommandFile, dbgeng/IDebugControl::ExecuteCommandFile, debugger.executecommandfile
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.ExecuteCommandFile
- - IDebugControl2.ExecuteCommandFile
- - IDebugControl3.ExecuteCommandFile
+ - IDebugControl3::ExecuteCommandFile
 ---
 
 # IDebugControl3::ExecuteCommandFile
@@ -52,19 +49,19 @@ The <b>ExecuteCommandFile</b>  method opens the specified file and executes the 
 
 ## -parameters
 
-### -param OutputControl 
+### -param OutputControl [in]
 
-[in]
+
 Specifies where to send the output of the command.  For possible values, see <a href="/windows-hardware/drivers/debugger/debug-outctl-xxx">DEBUG_OUTCTL_XXX</a>.  For more information about output, see <a href="/windows-hardware/drivers/debugger/input-and-output">Input and Output</a>.
 
-### -param CommandFile 
+### -param CommandFile [in]
 
-[in]
+
 Specifies the name of the file that contains the commands to execute.  This file is opened for reading and its contents are interpreted as if they had been typed into the debugger console.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies execution options for the command.  The default options are to log the command but not to send it to the output.  For details about the values that <i>Flags</i> can take, see <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugcontrol3-execute">Execute</a>.
 
 ## -returns
@@ -108,3 +105,4 @@ This method reads the specified file and execute the commands one line at a time
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugcontrol3">IDebugControl3</a>
+

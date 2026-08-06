@@ -4,7 +4,6 @@ title: _FEATURE_DATA_PROFILE_LIST (ntddmmc.h)
 description: The FEATURE_DATA_PROFILE_LIST structure contains the data for a profile list descriptor.
 old-location: storage\feature_data_profile_list.htm
 tech.root: storage
-ms.assetid: 77b8c789-0f3d-43b5-95ff-15d93b67cbe3
 ms.date: 03/29/2018
 keywords: ["FEATURE_DATA_PROFILE_LIST structure"]
 ms.keywords: "*PFEATURE_DATA_PROFILE_LIST, FEATURE_DATA_PROFILE_LIST, FEATURE_DATA_PROFILE_LIST structure [Storage Devices], PFEATURE_DATA_PROFILE_LIST, PFEATURE_DATA_PROFILE_LIST structure pointer [Storage Devices], _FEATURE_DATA_PROFILE_LIST, ntddmmc/FEATURE_DATA_PROFILE_LIST, ntddmmc/PFEATURE_DATA_PROFILE_LIST, storage.feature_data_profile_list, structs-CD-ROM_fae1990f-a605-4281-a8e6-e8e08431493d.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntddmmc.h
 api_name:
+ - _FEATURE_DATA_PROFILE_LIST
+ - PFEATURE_DATA_PROFILE_LIST
  - FEATURE_DATA_PROFILE_LIST
 ---
 
@@ -77,3 +78,4 @@ This structure holds data for the feature named "Profile List" by the <i>MMC-3 <
 
 
 <a href="/windows-hardware/drivers/ddi/ntddmmc/ne-ntddmmc-_feature_profile_type">FEATURE_PROFILE_TYPE</a>
+

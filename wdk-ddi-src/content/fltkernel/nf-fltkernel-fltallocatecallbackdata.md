@@ -4,7 +4,6 @@ title: FltAllocateCallbackData function (fltkernel.h)
 description: FltAllocateCallbackData allocates a callback data structure that a minifilter driver can use to initiate an I/O request.
 old-location: ifsk\fltallocatecallbackdata.htm
 tech.root: ifsk
-ms.assetid: a2afb8b8-b0e2-4d22-9d93-33ba2b2f8933
 ms.date: 04/16/2018
 keywords: ["FltAllocateCallbackData function"]
 ms.keywords: FltAllocateCallbackData, FltAllocateCallbackData routine [Installable File System Drivers], FltApiRef_a_to_d_74309bb1-841a-41a6-bd3e-71ed710bc727.xml, fltkernel/FltAllocateCallbackData, ifsk.fltallocatecallbackdata
@@ -51,19 +50,19 @@ api_name:
 
 ## -parameters
 
-### -param Instance 
+### -param Instance [in]
 
-[in]
+
 Opaque instance pointer for the minifilter driver instance that is initiating the I/O operation. This parameter is required and cannot be <b>NULL</b>.
 
-### -param FileObject 
+### -param FileObject [in, optional]
 
-[in, optional]
+
 File object pointer to be used in the I/O operation. This parameter is optional and can be <b>NULL</b>.
 
-### -param RetNewCallbackData 
+### -param RetNewCallbackData [out]
 
-[out]
+
 Pointer to a caller-allocated variable that receives the address of the newly allocated callback data (<a href="/windows-hardware/drivers/ddi/fltkernel/ns-fltkernel-_flt_callback_data">FLT_CALLBACK_DATA</a>) structure.
 
 ## -returns

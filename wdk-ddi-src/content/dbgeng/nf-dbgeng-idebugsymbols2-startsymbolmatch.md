@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols2.StartSymbolMatch
 title: IDebugSymbols2::StartSymbolMatch (dbgeng.h)
-description: The StartSymbolMatch method initializes a search for symbols whose names match a given pattern.
+description: The StartSymbolMatch method initializes a search for symbols whose names match a given pattern. This method belongs to the IDebugSymbols2 interface.
 old-location: debugger\startsymbolmatch.htm
 tech.root: debugger
-ms.assetid: 465b13a7-59e0-47f8-9e33-82043a23f146
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols2::StartSymbolMatch"]
 ms.keywords: IDebugSymbols interface [Windows Debugging],StartSymbolMatch method, IDebugSymbols2 interface [Windows Debugging],StartSymbolMatch method, IDebugSymbols2.StartSymbolMatch, IDebugSymbols2::StartSymbolMatch, IDebugSymbols3 interface [Windows Debugging],StartSymbolMatch method, IDebugSymbols3::StartSymbolMatch, IDebugSymbols::StartSymbolMatch, IDebugSymbols_4b000f13-0dc1-4a2c-8de3-3bf5384172c3.xml, StartSymbolMatch, StartSymbolMatch method [Windows Debugging], StartSymbolMatch method [Windows Debugging],IDebugSymbols interface, StartSymbolMatch method [Windows Debugging],IDebugSymbols2 interface, StartSymbolMatch method [Windows Debugging],IDebugSymbols3 interface, dbgeng/IDebugSymbols2::StartSymbolMatch, dbgeng/IDebugSymbols3::StartSymbolMatch, dbgeng/IDebugSymbols::StartSymbolMatch, debugger.startsymbolmatch
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.StartSymbolMatch
- - IDebugSymbols2.StartSymbolMatch
- - IDebugSymbols3.StartSymbolMatch
+ - IDebugSymbols2::StartSymbolMatch
 ---
 
 # IDebugSymbols2::StartSymbolMatch
@@ -52,14 +49,14 @@ The <b>StartSymbolMatch</b> method initializes a search for symbols whose names 
 
 ## -parameters
 
-### -param Pattern 
+### -param Pattern [in]
 
-[in]
+
 Specifies the pattern for which to search.  The search will return all symbols whose names match this pattern.  For details of the syntax of the pattern, see <a href="/windows-hardware/drivers/debugger/symbol-syntax-and-symbol-matching">Symbol Syntax and Symbol Matching</a> and <a href="/windows-hardware/drivers/debugger/string-wildcard-syntax">String Wildcard Syntax</a>.
 
-### -param Handle 
+### -param Handle [out]
 
-[out]
+
 Receives the handle identifying the search.  This handle can be passed to <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-getnextsymbolmatch">GetNextSymbolMatch</a> and <a href="/windows-hardware/drivers/ddi/dbgeng/nf-dbgeng-idebugsymbols3-endsymbolmatch">EndSymbolMatch</a>.
 
 ## -returns
@@ -120,3 +117,4 @@ For more information about symbols, see <a href="/windows-hardware/drivers/debug
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

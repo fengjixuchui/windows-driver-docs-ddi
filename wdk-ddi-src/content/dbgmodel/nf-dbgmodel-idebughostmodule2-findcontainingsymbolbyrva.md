@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDebugHostModule2.FindContainingSymbolByRVA
 title: IDebugHostModule2::FindContainingSymbolByRVA (dbgmodel.h)
-description: The FindSymbolByRVA method will find a single matching symbol at the given relative virtual address within the module.
-ms.assetid: 1c0fb339-0086-4ab4-987f-d6fc673c37cf
+description: "The IDebugHostModule2::FindContainingSymbolByRVA method, when called on a module, retrieves a symbol at a given relative virtual address within the module."
 ms.date: 09/18/2018
 keywords: ["IDebugHostModule2::FindContainingSymbolByRVA"]
 ms.keywords: IDebugHostModule2::FindContainingSymbolByRVA, FindContainingSymbolByRVA, IDebugHostModule2.FindContainingSymbolByRVA, IDebugHostModule2::FindContainingSymbolByRVA, IDebugHostModule2.FindContainingSymbolByRVA
@@ -36,11 +35,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDebugHostModule2.FindContainingSymbolByRVA
+ - IDebugHostModule2::FindContainingSymbolByRVA
 ---
 
 # IDebugHostModule2::FindContainingSymbolByRVA
-
 
 ## -description
 
@@ -56,27 +54,16 @@ The relative virtual address (offset) within the module for which to locate a ma
 
 The found symbol will be returned here.
 
+### -param offset
+
+The offset value.
+
 ## -returns
 
 This method returns HRESULT which indicates success or failure.
 
 ## -remarks
 
-**Sample Code**
-
-```cpp
-ComPtr<IDebugHostModule> spModule;
-
-// Find the symbol which is at 0x100000 within the module
-ComPtr<IDebugHostSymbol> spSymbol;
-if (SUCCEEDED(spModule->FindSymbolByRVA(0x100000, &spSymbol)))
-{
-    // spSymbol contains the symbol which is at RVA 0x100000 within the
-    // module.  Note that it may be any kind of symbol
-}
-```
-
 ## -see-also
 
 [IDebugHostModule2 interface](nn-dbgmodel-idebughostmodule2.md)
-

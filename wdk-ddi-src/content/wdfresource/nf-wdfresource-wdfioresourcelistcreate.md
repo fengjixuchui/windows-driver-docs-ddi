@@ -4,7 +4,6 @@ title: WdfIoResourceListCreate function (wdfresource.h)
 description: The WdfIoResourceListCreate method creates an empty logical configuration, which can be populated and added to a resource requirements list.
 old-location: wdf\wdfioresourcelistcreate.htm
 tech.root: wdf
-ms.assetid: aaf3d22d-da54-4478-9bf8-aad4b943788a
 ms.date: 02/26/2018
 keywords: ["WdfIoResourceListCreate function"]
 ms.keywords: DFResourceObjectRef_7130ba6a-fc24-4785-9fa3-c8fd159f63fb.xml, WdfIoResourceListCreate, WdfIoResourceListCreate method, kmdf.wdfioresourcelistcreate, wdf.wdfioresourcelistcreate, wdfresource/WdfIoResourceListCreate
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,19 +52,19 @@ The <b>WdfIoResourceListCreate</b> method creates an empty <a href="/windows-har
 
 ## -parameters
 
-### -param RequirementsList 
+### -param RequirementsList [in]
 
-[in]
+
 A handle to a framework resource-requirements-list object that represents a device's resource requirements list.
 
-### -param Attributes 
+### -param Attributes [in, optional]
 
-[in, optional]
+
 A pointer to a caller-allocated <a href="/windows-hardware/drivers/ddi/wdfobject/ns-wdfobject-_wdf_object_attributes">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the new object. (The structure's <b>ParentObject</b> member must be <b>NULL</b>.) This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
-### -param ResourceList 
+### -param ResourceList [out]
 
-[out]
+
 A handle to a framework resource-range-list object that represents the new logical configuration.
 
 ## -returns

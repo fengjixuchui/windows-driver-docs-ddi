@@ -4,7 +4,6 @@ title: EVT_UFX_DEVICE_CONTROLLER_RESET (ufxclient.h)
 description: The client driver's implementation to reset the function controller to its initial state.
 old-location: buses\evt_ufx_device_controller_reset.htm
 tech.root: usbref
-ms.assetid: 37CE6358-68F8-49E2-8B3E-126D5D135ADF
 ms.date: 05/07/2018
 keywords: ["EVT_UFX_DEVICE_CONTROLLER_RESET callback function"]
 ms.keywords: EVT_UFX_DEVICE_CONTROLLER_RESET, EVT_UFX_DEVICE_CONTROLLER_RESET callback, EvtUfxDeviceControllerReset, EvtUfxDeviceControllerReset callback function [Buses], PFN_UFX_DEVICE_CONTROLLER_RESET, PFN_UFX_DEVICE_CONTROLLER_RESET callback function pointer [Buses], buses.evt_ufx_device_controller_reset, ufxclient/EvtUfxDeviceControllerReset
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ufxclient.h
 api_name:
- - PFN_UFX_DEVICE_CONTROLLER_RESET
+ - EVT_UFX_DEVICE_CONTROLLER_RESET
 ---
 
 # EVT_UFX_DEVICE_CONTROLLER_RESET callback function
@@ -50,12 +49,11 @@ The client driver's implementation to reset the function controller to its initi
 
 ## -parameters
 
-#### - UfxDevice [in]
+### -param unnamedParam1 [in]
 
-The handle to a  USB device object that the client driver received in a previous call to  the <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
+The handle to a USB device object that the client driver received in a previous call to  the <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdevicecreate">UfxDeviceCreate</a>.
 
-
-#### - UfxHardwareFailureContext [in, optional]
+### -param unnamedParam2 [in, optional]
 
 A pointer to a variable-length UFX_HARDWARE_FAILURE_CONTEXT structure allocated by the client driver.
 
@@ -72,3 +70,4 @@ The client driver indicates completion of this event by calling the <a href="/wi
 
 
 <a href="/windows-hardware/drivers/ddi/ufxclient/nf-ufxclient-ufxdeviceeventcomplete">UfxDeviceEventComplete</a>
+

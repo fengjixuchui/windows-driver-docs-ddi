@@ -4,7 +4,6 @@ title: _WDF_POWER_POLICY_EVENT_CALLBACKS (wdfdevice.h)
 description: The WDF_POWER_POLICY_EVENT_CALLBACKS structure contains pointers to a driver's power policy event callback functions.
 old-location: wdf\wdf_power_policy_event_callbacks.htm
 tech.root: wdf
-ms.assetid: 6932c938-e477-4a18-9ada-bb3864c6a6f1
 ms.date: 02/26/2018
 keywords: ["WDF_POWER_POLICY_EVENT_CALLBACKS structure"]
 ms.keywords: "*PWDF_POWER_POLICY_EVENT_CALLBACKS, DFDeviceObjectGeneralRef_d4970639-86cb-4b83-8ac8-a7662ebca017.xml, PWDF_POWER_POLICY_EVENT_CALLBACKS, PWDF_POWER_POLICY_EVENT_CALLBACKS structure pointer, WDF_POWER_POLICY_EVENT_CALLBACKS, WDF_POWER_POLICY_EVENT_CALLBACKS structure, _WDF_POWER_POLICY_EVENT_CALLBACKS, kmdf.wdf_power_policy_event_callbacks, wdf.wdf_power_policy_event_callbacks, wdfdevice/PWDF_POWER_POLICY_EVENT_CALLBACKS, wdfdevice/WDF_POWER_POLICY_EVENT_CALLBACKS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wdfdevice.h
 api_name:
+ - _WDF_POWER_POLICY_EVENT_CALLBACKS
+ - PWDF_POWER_POLICY_EVENT_CALLBACKS
  - WDF_POWER_POLICY_EVENT_CALLBACKS
 ---
 
@@ -97,3 +98,4 @@ Your driver should initialize its <b>WDF_POWER_POLICY_EVENT_CALLBACKS</b> struct
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdfdevice/ns-wdfdevice-_wdf_pnppower_event_callbacks">WDF_PNPPOWER_EVENT_CALLBACKS</a>
+

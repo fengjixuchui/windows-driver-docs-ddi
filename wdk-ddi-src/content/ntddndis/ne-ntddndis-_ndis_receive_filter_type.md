@@ -4,7 +4,6 @@ title: _NDIS_RECEIVE_FILTER_TYPE (ntddndis.h)
 description: The NDIS_RECEIVE_FILTER_TYPE enumeration identifies the receive filter types that the miniport driver supports.
 old-location: netvista\ndis_receive_filter_type.htm
 tech.root: netvista
-ms.assetid: 2810be51-4b38-4462-9c16-67a9f28da5c9
 ms.date: 05/02/2018
 keywords: ["NDIS_RECEIVE_FILTER_TYPE enumeration"]
 ms.keywords: "*PNDIS_RECEIVE_FILTER_TYPE, NDIS_RECEIVE_FILTER_TYPE, NDIS_RECEIVE_FILTER_TYPE enumeration [Network Drivers Starting with Windows Vista], NdisReceiveFilterTypeMaximum, NdisReceiveFilterTypePacketCoalescing, NdisReceiveFilterTypeUndefined, NdisReceiveFilterTypeVMQueue, PNDIS_RECEIVE_FILTER_TYPE, PNDIS_RECEIVE_FILTER_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_FILTER_TYPE, netvista.ndis_receive_filter_type, ntddndis/NDIS_RECEIVE_FILTER_TYPE, ntddndis/NdisReceiveFilterTypeMaximum, ntddndis/NdisReceiveFilterTypePacketCoalescing, ntddndis/NdisReceiveFilterTypeUndefined, ntddndis/NdisReceiveFilterTypeVMQueue, ntddndis/PNDIS_RECEIVE_FILTER_TYPE, virtual_machine_queue_ref_8965d6c0-b700-46cd-9386-0e2cdc5da4c9.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_RECEIVE_FILTER_TYPE
+ - PNDIS_RECEIVE_FILTER_TYPE
  - NDIS_RECEIVE_FILTER_TYPE
 ---
 
@@ -78,7 +79,7 @@ The NDIS_RECEIVE_FILTER_TYPE enumeration is used in the
     <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters">
     NDIS_RECEIVE_FILTER_PARAMETERS</a> structure.
 
-For more information about VMQ, see <a href="/windows-hardware/drivers/network/virtual-machine-queue--vmq-">Virtual Machine Queue (VMQ)</a>.
+For more information about VMQ, see <a href="/windows-hardware/drivers/network/virtual-machine-queue-architecture">Virtual Machine Queue (VMQ)</a>.
 
 For more information about SR-IOV, see <a href="/windows-hardware/drivers/network/single-root-i-o-virtualization--sr-iov-">Single Root I/O Virtualization (SR-IOV)</a>.
 
@@ -88,3 +89,4 @@ For more information about packet coalescing, see <a href="/windows-hardware/dri
 
 <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_receive_filter_parameters">
    NDIS_RECEIVE_FILTER_PARAMETERS</a>
+

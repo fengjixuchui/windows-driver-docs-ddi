@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILLOCATIONINFO
 title: RILLOCATIONINFO (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILLOCATIONINFO structure for internal use only. Don't use the RILLOCATIONINFO structure in your code."
 old-location: netvista\rillocationinfo.htm
 tech.root: netvista
-ms.assetid: 56d35556-1e1b-422f-acbf-f52708fbf7bf
 ms.date: 05/02/2018
 keywords: ["RILLOCATIONINFO structure"]
 ms.keywords: "*LPRILLOCATIONINFO, RILLOCATIONINFO, RILLOCATIONINFO structure [Network Drivers Starting with Windows Vista], netvista.rillocationinfo, ntddrilapitypes/RILLOCATIONINFO"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILLOCATIONINFO
+ - LPRILLOCATIONINFO
 ---
 
 # RILLOCATIONINFO structure (ntddrilapitypes.h)

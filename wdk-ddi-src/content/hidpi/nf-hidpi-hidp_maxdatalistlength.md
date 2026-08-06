@@ -4,7 +4,6 @@ title: HidP_MaxDataListLength function (hidpi.h)
 description: The HidP_MaxDataListLength routine returns the maximum number of HIDP_DATA structures that HidP_GetData can return for a specified type of HID report and a specified top-level collection.
 old-location: hid\hidp_maxdatalistlength.htm
 tech.root: hid
-ms.assetid: 525a44a5-4271-4079-917e-48eb679cb96d
 ms.date: 04/30/2018
 keywords: ["HidP_MaxDataListLength function"]
 ms.keywords: HidP_MaxDataListLength, HidP_MaxDataListLength routine [Human Input Devices], hid.hidp_maxdatalistlength, hidfunc_2c103c6f-6177-47b3-9d52-9e15c97d758d.xml, hidpi/HidP_MaxDataListLength
@@ -51,14 +50,14 @@ The <b>HidP_MaxDataListLength</b> routine returns the maximum number of <a href=
 
 ## -parameters
 
-### -param ReportType 
+### -param ReportType [in]
 
-[in]
+
 Specifies a <a href="/windows-hardware/drivers/ddi/hidpi/ne-hidpi-_hidp_report_type">HIDP_REPORT_TYPE</a> enumerator value that indicates the report type.
 
-### -param PreparsedData 
+### -param PreparsedData [in]
 
-[in]
+
 Pointer to a top-level collection's <a href="/windows-hardware/drivers/hid/preparsed-data">preparsed data</a>.
 
 ## -returns

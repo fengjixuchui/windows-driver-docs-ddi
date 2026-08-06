@@ -4,7 +4,6 @@ title: EVT_SERCX2_PIO_RECEIVE_CLEANUP_TRANSACTION (sercx.h)
 description: The EvtSerCx2PioReceiveCleanupTransaction event callback function is called by version 2 of the serial framework extension (SerCx2) to clean up the serial controller's hardware state after a PIO-receive transaction ends.
 old-location: serports\evtsercx2pioreceivecleanuptransaction.htm
 tech.root: serports
-ms.assetid: 2CFCF5D9-23F8-4571-972A-0BE48EB2D046
 ms.date: 04/23/2018
 keywords: ["EVT_SERCX2_PIO_RECEIVE_CLEANUP_TRANSACTION callback function"]
 ms.keywords: 2/EvtSerCx2PioReceiveCleanupTransaction, EVT_SERCX2_PIO_RECEIVE_CLEANUP_TRANSACTION, EVT_SERCX2_PIO_RECEIVE_CLEANUP_TRANSACTION callback, EvtSerCx2PioReceiveCleanupTransaction, EvtSerCx2PioReceiveCleanupTransaction callback function [Serial Ports], serports.evtsercx2pioreceivecleanuptransaction
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - 2.0\Sercx.h
 api_name:
- - EvtSerCx2PioReceiveCleanupTransaction
+ - EVT_SERCX2_PIO_RECEIVE_CLEANUP_TRANSACTION
 ---
 
 # EVT_SERCX2_PIO_RECEIVE_CLEANUP_TRANSACTION callback function
@@ -50,9 +49,9 @@ The <i>EvtSerCx2PioReceiveCleanupTransaction</i> event callback function is call
 
 ## -parameters
 
-### -param PioReceive 
+### -param PioReceive [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2PIORECEIVE</a> handle to a PIO-receive object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2pioreceivecreate">SerCx2PioReceiveCreate</a> method to create this object.
 
 ## -remarks
@@ -102,3 +101,4 @@ The <b>EVT_SERCX2_PIO_RECEIVE_CLEANUP_TRANSACTION</b> function type is defined i
 
 
 <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2pioreceivecreate">SerCx2PioReceiveCreate</a>
+

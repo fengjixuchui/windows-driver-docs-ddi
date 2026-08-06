@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILMSGSERVICEINFO
 title: RILMSGSERVICEINFO (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILMSGSERVICEINFO structure for internal use only."
 old-location: netvista\rilmsgserviceinfo.htm
 tech.root: netvista
-ms.assetid: 21b1c6ef-b8f3-4230-bc3f-7ac19c6cb2d1
 ms.date: 05/02/2018
 keywords: ["RILMSGSERVICEINFO structure"]
 ms.keywords: "*LPRILMSGSERVICEINFO, RILMSGSERVICEINFO, RILMSGSERVICEINFO structure [Network Drivers Starting with Windows Vista], netvista.rilmsgserviceinfo, ntddrilapitypes/RILMSGSERVICEINFO"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILMSGSERVICEINFO
+ - LPRILMSGSERVICEINFO
 ---
 
 # RILMSGSERVICEINFO structure (rilapitypes.h)

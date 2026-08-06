@@ -4,7 +4,6 @@ title: IOCTL_DISK_GROW_PARTITION (ntdddisk.h)
 description: Increases the size of an existing partition.
 old-location: storage\ioctl_disk_grow_partition.htm
 tech.root: storage
-ms.assetid: 984e9e7a-c135-4a6a-973d-b8597d9f8fed
 ms.date: 03/29/2018
 keywords: ["IOCTL_DISK_GROW_PARTITION IOCTL"]
 ms.keywords: IOCTL_DISK_GROW_PARTITION, IOCTL_DISK_GROW_PARTITION control, IOCTL_DISK_GROW_PARTITION control code [Storage Devices], k307_f3c07ac5-6895-46f9-85ad-7706661164a1.xml, ntdddisk/IOCTL_DISK_GROW_PARTITION, storage.ioctl_disk_grow_partition
@@ -49,6 +48,8 @@ api_name:
 Increases the size of an existing partition. It is used in conjunction with <a href="/windows-hardware/drivers/ddi/ntdddisk/ni-ntdddisk-ioctl_disk_update_drive_size">IOCTL_DISK_UPDATE_DRIVE_SIZE</a> to extend a disk, so that it will contain a new free space area, and then to extend an existing partition on the disk into the newly attached free space. It takes a <a href="/windows-hardware/drivers/ddi/ntdddisk/ns-ntdddisk-_disk_grow_partition">DISK_GROW_PARTITION</a> structure as the only parameter. For this operation to work, the space after the specified partition must be free. A partition cannot be extended over another existing partition.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

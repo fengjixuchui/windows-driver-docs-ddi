@@ -4,7 +4,6 @@ title: IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure (wud
 description: A driver's OnReaderFailure event callback function informs the driver that a continuous reader has reported an error while processing a read request.
 old-location: wdf\iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfailure.htm
 tech.root: wdf
-ms.assetid: ad91208e-e57a-4b80-b1a1-13b9f7eb1119
 ms.date: 02/26/2018
 keywords: ["IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure"]
 ms.keywords: IUsbTargetPipeContinuousReaderCallbackReadersFailed interface,OnReaderFailure method, IUsbTargetPipeContinuousReaderCallbackReadersFailed.OnReaderFailure, IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure, OnReaderFailure, OnReaderFailure method, OnReaderFailure method,IUsbTargetPipeContinuousReaderCallbackReadersFailed interface, UMDFUSBref_01c8b9de-ab85-4cc6-abec-238dcda2b1e8.xml, umdf.iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfailure, wdf.iusbtargetpipecontinuousreadercallbackreadersfailed_onreaderfailure, wudfusb/IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - wudfusb.h
 api_name:
- - IUsbTargetPipeContinuousReaderCallbackReadersFailed.OnReaderFailure
+ - IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure
 ---
 
 # IUsbTargetPipeContinuousReaderCallbackReadersFailed::OnReaderFailure
@@ -52,14 +51,14 @@ A driver's <b>OnReaderFailure</b> event callback function informs the driver tha
 
 ## -parameters
 
-### -param pPipe 
+### -param pPipe [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iwdfusbtargetpipe">IWDFUsbTargetPipe</a> interface for the USB pipe on which the driver has enabled a continuous reader.
 
-### -param hrStatus 
+### -param hrStatus [in]
 
-[in]
+
 The HRESULT-typed status value that the USB pipe's I/O target returned.
 
 ## -returns
@@ -89,3 +88,4 @@ For more information about the <b>OnReaderFailure</b> callback function and USB 
 
 
 <a href="/windows-hardware/drivers/ddi/wudfusb/nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed">IUsbTargetPipeContinuousReaderCallbackReadersFailed</a>
+

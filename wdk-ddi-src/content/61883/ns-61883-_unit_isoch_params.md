@@ -4,7 +4,6 @@ title: _UNIT_ISOCH_PARAMS (61883.h)
 description: The UNIT_ISOCH_PARAMS structure is used to get or set the parameters that the IEC-61883 protocol driver uses when capturing or transmitting isochronous packets.
 old-location: ieee\unit_isoch_params.htm
 tech.root: IEEE
-ms.assetid: 1c661a35-8209-49c5-9987-b4b6e9e710b4
 ms.date: 02/15/2018
 keywords: ["UNIT_ISOCH_PARAMS structure"]
 ms.keywords: "*PUNIT_ISOCH_PARAMS, 61883/PUNIT_ISOCH_PARAMS, 61883/UNIT_ISOCH_PARAMS, 61883_structures_eece3eb1-516b-40a8-9529-e4a3d8832f02.xml, IEEE.unit_isoch_params, PUNIT_ISOCH_PARAMS, PUNIT_ISOCH_PARAMS structure pointer [Buses], UNIT_ISOCH_PARAMS, UNIT_ISOCH_PARAMS structure [Buses], _UNIT_ISOCH_PARAMS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _UNIT_ISOCH_PARAMS
+ - PUNIT_ISOCH_PARAMS
  - UNIT_ISOCH_PARAMS
 ---
 
@@ -72,7 +73,7 @@ The number of descriptors used for transmitting isochronous data.
 
 ## -remarks
 
-The UNIT_ISOCH_PARAMS structure can be used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff537002">Av61883_SetUnitInfo</a> to set the number of isochronous packets and descriptors used while transmitting or receiving data. Before setting isochronous parameters, a driver should send an <a href="/previous-versions/ff536983(v=vs.85)">Av61883_GetUnitInfo</a> request to retrieve the current isochronous parameters and then make any necessary modifications with <b>Av61883_SetUnitInfo</b>.
+The UNIT_ISOCH_PARAMS structure can be used with Av61883_SetUnitInfo to set the number of isochronous packets and descriptors used while transmitting or receiving data. Before setting isochronous parameters, a driver should send an <a href="/previous-versions/ff536983(v=vs.85)">Av61883_GetUnitInfo</a> request to retrieve the current isochronous parameters and then make any necessary modifications with <b>Av61883_SetUnitInfo</b>.
 
 ## -see-also
 
@@ -80,4 +81,5 @@ The UNIT_ISOCH_PARAMS structure can be used with <a href="https://msdn.microsoft
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537002">Av61883_SetUnitInfo</a>
+<a href="/windows-hardware/drivers/ddi/61883/ns-61883-_av_61883_request">AV_61883_REQUEST structure</a>
+

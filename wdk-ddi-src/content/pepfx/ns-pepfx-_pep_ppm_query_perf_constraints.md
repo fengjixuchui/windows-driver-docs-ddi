@@ -4,7 +4,6 @@ title: _PEP_PPM_QUERY_PERF_CONSTRAINTS (pepfx.h)
 description: The PEP_PPM_PERF_CONSTRAINTS structure describes the performance limits to apply to the processor.
 old-location: kernel\pep_ppm_perf_constraints.htm
 tech.root: kernel
-ms.assetid: 29B823A2-C645-4DA3-A3BE-4A3ED6A9799F
 ms.date: 04/30/2018
 keywords: ["PEP_PPM_QUERY_PERF_CONSTRAINTS structure"]
 ms.keywords: "*PPEP_PPM_PERF_CONSTRAINTS, PEP_PPM_PERF_CONSTRAINTS, PEP_PPM_PERF_CONSTRAINTS structure [Kernel-Mode Driver Architecture], PERFORMANCE_LIMIT_DOMAIN_DEPENDENCY, PERFORMANCE_LIMIT_POWER, PERFORMANCE_LIMIT_THERMAL, PPEP_PPM_PERF_CONSTRAINTS, PPEP_PPM_PERF_CONSTRAINTS structure pointer [Kernel-Mode Driver Architecture], _PEP_PPM_QUERY_PERF_CONSTRAINTS, kernel.pep_ppm_perf_constraints, pepfx/PEP_PPM_PERF_CONSTRAINTS, pepfx/PPEP_PPM_PERF_CONSTRAINTS"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pepfx.h
 api_name:
+ - _PEP_PPM_QUERY_PERF_CONSTRAINTS
+ - PPEP_PPM_PERF_CONSTRAINTS
  - PEP_PPM_PERF_CONSTRAINTS
 ---
 
@@ -54,13 +55,13 @@ The <b>PEP_PPM_PERF_CONSTRAINTS</b> structure describes the performance limits t
 
 ## -struct-fields
 
-### -field GuaranteedPerformanceLimit
+### -field GuaranteedPerformanceLimit [out]
 
-[out] The guaranteed performance threshold in platform-specific units. If nonzero, this value specifies the maximum sustained performance level of the processor, taking into account all known external constraints (power budgeting, thermal constraints, power source, and so on). All processors are expected to be able to simultaneously sustain their guaranteed performance levels. For more information, see <a href="/windows-hardware/drivers/kernel/platform-performance-thresholds">Platform Performance Thresholds</a>.
+The guaranteed performance threshold in platform-specific units. If nonzero, this value specifies the maximum sustained performance level of the processor, taking into account all known external constraints (power budgeting, thermal constraints, power source, and so on). All processors are expected to be able to simultaneously sustain their guaranteed performance levels. For more information, see <a href="/windows-hardware/drivers/kernel/platform-performance-thresholds">Platform Performance Thresholds</a>.
 
-### -field LimitReasons
+### -field LimitReasons [out]
 
-[out] The reasons for which the processor's performance can be limited. Set this member to zero or to the bitwise-OR of one or more of the following values:
+The reasons for which the processor's performance can be limited. Set this member to zero or to the bitwise-OR of one or more of the following values:
 
 <table>
 <tr>
@@ -111,3 +112,4 @@ The <b>GuaranteedPerformanceLimit</b> member value is specified in platform-spec
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_ppm_query_perf_constraints">PEP_NOTIFY_PPM_PERF_CONSTRAINTS</a>
+

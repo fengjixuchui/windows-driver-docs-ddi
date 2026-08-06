@@ -4,7 +4,6 @@ title: PROTOCOL_CO_AF_REGISTER_NOTIFY (ndis.h)
 description: The ProtocolCoAfRegisterNotify function is used by connection-oriented NDIS clients.
 old-location: netvista\protocolcoafregisternotify.htm
 tech.root: netvista
-ms.assetid: 272d99da-ef08-4ebd-90e7-74e99410b3f5
 ms.date: 05/02/2018
 keywords: ["PROTOCOL_CO_AF_REGISTER_NOTIFY callback function"]
 ms.keywords: PROTOCOL_CO_AF_REGISTER_NOTIFY, PROTOCOL_CO_AF_REGISTER_NOTIFY callback, ProtocolCoAfRegisterNotify, ProtocolCoAfRegisterNotify callback function [Network Drivers Starting with Windows Vista], condis_protocol_ref_aa4ed4ae-7fa9-4f92-9103-824fbe719739.xml, ndis/ProtocolCoAfRegisterNotify, netvista.protocolcoafregisternotify
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Ndis.h
 api_name:
- - ProtocolCoAfRegisterNotify
+ - PROTOCOL_CO_AF_REGISTER_NOTIFY
 ---
 
 # PROTOCOL_CO_AF_REGISTER_NOTIFY callback function
@@ -56,18 +55,18 @@ The
 
 ## -parameters
 
-### -param ProtocolBindingContext 
+### -param ProtocolBindingContext [in]
 
-[in]
+
 Specifies the handle to the client-allocated context area in which the client protocol maintains
      per-binding run-time state. The client's 
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_bind_adapter_ex">ProtocolBindAdapterEx</a> function
      supplied this handle when it called 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisopenadapterex">NdisOpenAdapterEx</a>.
 
-### -param AddressFamily 
+### -param AddressFamily [in]
 
-[in]
+
 Pointer to a buffer describing the signaling-protocol support provided by a call manager that just
      registered these services with NDIS by calling 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscmregisteraddressfamilyex">
@@ -191,3 +190,4 @@ For information about  _Use_decl_annotations_, see <a href="/visualstudio/code-q
 
 
 <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_cl_open_af_complete_ex">ProtocolClOpenAfCompleteEx</a>
+

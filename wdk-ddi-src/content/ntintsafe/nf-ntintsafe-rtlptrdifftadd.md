@@ -4,7 +4,6 @@ title: RtlPtrdiffTAdd function (ntintsafe.h)
 description: Adds two values of type PTRDIFF_T.
 old-location: kernel\rtlptrdifftadd.htm
 tech.root: kernel
-ms.assetid: 3B4C0CF0-8153-446E-A834-C1FE28651718
 ms.date: 04/30/2018
 keywords: ["RtlPtrdiffTAdd function"]
 ms.keywords: RtlPtrdiffTAdd, RtlPtrdiffTAdd function [Kernel-Mode Driver Architecture], kernel.rtlptrdifftadd, ntintsafe/RtlPtrdiffTAdd
@@ -50,19 +49,19 @@ Adds two values of type <b>PTRDIFF_T</b>.
 
 ## -parameters
 
-### -param Augend 
+### -param Augend [in]
 
-[in]
+
 The first value in the equation.
 
-### -param Addend 
+### -param Addend [in]
 
-[in]
+
 The value to add to <i>Augend</i>.
 
-### -param pResult 
+### -param pResult [out]
 
-[out]
+
 A pointer to the sum. If the operation results in a value that overflows or underflows the capacity of the type, the function returns STATUS_INTEGER_OVERFLOW and this parameter is not valid.
 
 ## -returns

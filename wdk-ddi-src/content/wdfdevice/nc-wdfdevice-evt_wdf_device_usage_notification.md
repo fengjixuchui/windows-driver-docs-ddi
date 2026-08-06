@@ -4,7 +4,6 @@ title: EVT_WDF_DEVICE_USAGE_NOTIFICATION (wdfdevice.h)
 description: A driver's EvtDeviceUsageNotification event callback function informs the driver when a device is being used for special files.
 old-location: wdf\evtdeviceusagenotification.htm
 tech.root: wdf
-ms.assetid: b6b7dd80-fd91-4194-8288-4d703983a798
 ms.date: 02/26/2018
 keywords: ["EVT_WDF_DEVICE_USAGE_NOTIFICATION callback function"]
 ms.keywords: DFDeviceObjectGeneralRef_bbf01697-e3d0-4711-aa7f-c53bfd205ea7.xml, EVT_WDF_DEVICE_USAGE_NOTIFICATION, EVT_WDF_DEVICE_USAGE_NOTIFICATION callback, EvtDeviceUsageNotification, EvtDeviceUsageNotification callback function, kmdf.evtdeviceusagenotification, wdf.evtdeviceusagenotification, wdfdevice/EvtDeviceUsageNotification
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wdfdevice.h
 api_name:
- - EvtDeviceUsageNotification
+ - EVT_WDF_DEVICE_USAGE_NOTIFICATION
 ---
 
 # EVT_WDF_DEVICE_USAGE_NOTIFICATION callback function
@@ -52,19 +51,19 @@ A driver's <i>EvtDeviceUsageNotification</i> event callback function informs the
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
-### -param NotificationType 
+### -param NotificationType [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_special_file_type">WDF_SPECIAL_FILE_TYPE</a>-typed value that identifies the type of special file that the system is storing on the specified device.
 
-### -param IsInNotificationPath 
+### -param IsInNotificationPath [in]
 
-[in]
+
 A Boolean value which, if <b>TRUE</b>, indicates that the system has starting using the special file and, if <b>FALSE</b>, indicate that the system as finished using the special file.
 
 ## -remarks
@@ -74,3 +73,4 @@ To register an <i>EvtDeviceUsageNotification</i> callback function, a driver mus
 Your driver must provide an <i>EvtDeviceUsageNotification</i> callback function only if must provide driver-specific handling of special files. 
 
 For more information about special files, see <a href="/windows-hardware/drivers/wdf/supporting-special-files">Supporting Special Files</a>.
+

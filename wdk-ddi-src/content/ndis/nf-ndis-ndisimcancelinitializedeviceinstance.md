@@ -4,7 +4,6 @@ title: NdisIMCancelInitializeDeviceInstance function (ndis.h)
 description: The NdisIMCancelInitializeDeviceInstance function cancels a preceding call to the NdisIMInitializeDeviceInstanceEx function.
 old-location: netvista\ndisimcancelinitializedeviceinstance.htm
 tech.root: netvista
-ms.assetid: 809ffee1-b087-4bf0-ba8a-1ac0b2d02f2f
 ms.date: 05/02/2018
 keywords: ["NdisIMCancelInitializeDeviceInstance function"]
 ms.keywords: NdisIMCancelInitializeDeviceInstance, NdisIMCancelInitializeDeviceInstance function [Network Drivers Starting with Windows Vista], intermediate_ref_4cdce462-8c79-46ad-aa3e-68a0f9b72ef1.xml, ndis/NdisIMCancelInitializeDeviceInstance, netvista.ndisimcancelinitializedeviceinstance
@@ -54,17 +53,17 @@ The
 
 ## -parameters
 
-### -param DriverHandle 
+### -param DriverHandle [in]
 
-[in]
+
 The miniport driver handle that the 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndismregisterminiportdriver">
      NdisMRegisterMiniportDriver</a> function returned at the 
      <i>NdisMiniportDriverHandle</i> parameter.
 
-### -param DeviceInstance 
+### -param DeviceInstance [in]
 
-[in]
+
 A pointer to an NDIS_STRING type that describes a caller-initialized counted string in the
      system-default character set. The string contains the name of the registry key in which the driver
      stores information about a virtual miniport and, possibly, binding-specific information. For Microsoft

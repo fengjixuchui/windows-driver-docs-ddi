@@ -2,9 +2,7 @@
 UID: NN:bidispl.IBidiSpl
 title: IBidiSpl (bidispl.h)
 description: The IBidiSpl interface allows an application or other objects to send a single bidi request or a list of bidi requests.
-old-location: print\ibidispl.htm
 tech.root: print
-ms.assetid: 7e4a30b2-ac3a-475a-b818-455cdb7a91bf
 ms.date: 04/20/2018
 keywords: ["IBidiSpl interface"]
 ms.keywords: IBidiSpl, IBidiSpl interface [Print Devices], IBidiSpl interface [Print Devices],described, _win32_IBidiSpl, bidispl/IBidiSpl, gdi.ibidispl, print.ibidispl
@@ -40,9 +38,6 @@ api_location:
 api_name:
  - IBidiSpl
 ---
-
-# IBidiSpl interface
-
 
 ## -description
 

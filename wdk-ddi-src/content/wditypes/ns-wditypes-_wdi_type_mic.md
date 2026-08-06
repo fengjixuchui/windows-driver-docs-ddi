@@ -4,7 +4,6 @@ title: _WDI_TYPE_MIC (wditypes.h)
 description: The WDI_TYPE_MIC structure defines the MIC (802.11r).
 old-location: netvista\wdi_type_mic.htm
 tech.root: netvista
-ms.assetid: A21EEC35-98F2-4B68-A851-1C45D7F55194
 ms.date: 05/02/2018
 keywords: ["WDI_TYPE_MIC structure"]
 ms.keywords: "*PWDI_TYPE_MIC, PWDI_TYPE_MIC, PWDI_TYPE_MIC structure pointer [Network Drivers Starting with Windows Vista], WDI_TYPE_MIC, WDI_TYPE_MIC structure [Network Drivers Starting with Windows Vista], _WDI_TYPE_MIC, netvista.wdi_type_mic, wditypes/PWDI_TYPE_MIC, wditypes/WDI_TYPE_MIC"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - wditypes.hpp
 api_name:
+ - _WDI_TYPE_MIC
+ - PWDI_TYPE_MIC
  - WDI_TYPE_MIC
 ---
 
@@ -50,7 +51,10 @@ api_name:
 
 ## -description
 
-The WDI_TYPE_MIC structure defines the MIC (802.11r).
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
+
+The **WDI_TYPE_MIC** structure defines the MIC (802.11r).
 
 ## -struct-fields
 

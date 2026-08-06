@@ -3,11 +3,8 @@ UID: NS:dispmprt._DXGK_VIRTUALGPUCAPABILITY
 title: _DXGK_VIRTUALGPUCAPABILITY
 description: Contains information about the virtual GPU capability.
 tech.root: display
-ms.assetid: 660eb862-90b5-4b23-abc5-b520202f3a71
 ms.date: 04/04/2019
 keywords: ["DXGK_VIRTUALGPUCAPABILITY structure"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 ms.keywords: _DXGK_VIRTUALGPUCAPABILITY, DXGK_VIRTUALGPUCAPABILITY, *PDXGK_VIRTUALGPUCAPABILITY,
 req.header: dispmprt.h
 req.include-header: 
@@ -39,8 +36,8 @@ api_location:
  - dispmprt.h
 api_name:
  - _DXGK_VIRTUALGPUCAPABILITY
-product:
- - Windows
+ - PDXGK_VIRTUALGPUCAPABILITY
+ - DXGK_VIRTUALGPUCAPABILITY
 dev_langs:
  - c++
 ---

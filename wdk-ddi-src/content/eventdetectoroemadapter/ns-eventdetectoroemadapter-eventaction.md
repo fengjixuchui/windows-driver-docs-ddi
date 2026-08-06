@@ -3,7 +3,6 @@ UID: NS:eventdetectoroemadapter.__MIDL___MIDL_itf_eventdetectoroemadapter_0000_0
 title: EVENTACTION
 description: Structure used to provide detail from ParseDetectionResults.
 tech.root: audio
-ms.assetid: 399761eb-8c8e-47a8-b150-de42cde0e0aa
 ms.date: 04/10/2019
 keywords: ["EVENTACTION structure"]
 ms.keywords: EVENTACTION, EVENTACTION,
@@ -34,9 +33,8 @@ api_type:
 api_location:
  - eventdetectoroemadapter.h
 api_name:
+ - __MIDL___MIDL_itf_eventdetectoroemadapter_0000_0000_0008
  - EVENTACTION
-product:
- - Windows
 ---
 
 # EVENTACTION structure
@@ -78,3 +76,4 @@ This structure is the part of the Event Detector OEM interface to be used for ha
 - [eventdetectoroemadapter](../eventdetectoroemadapter/index.md)
 
 - [Audio](../_audio/index.md)
+

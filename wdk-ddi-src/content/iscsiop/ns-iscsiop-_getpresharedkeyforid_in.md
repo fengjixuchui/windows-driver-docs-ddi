@@ -4,7 +4,6 @@ title: _GetPresharedKeyForId_IN (iscsiop.h)
 description: The GetPresharedKeyForId_IN structure holds the input data for the GetPresharedKeyForId method.
 old-location: storage\getpresharedkeyforid_in.htm
 tech.root: storage
-ms.assetid: 4b3d3c5d-c34c-4ed8-bf62-1d885442ee1e
 ms.date: 03/29/2018
 keywords: ["GetPresharedKeyForId_IN structure"]
 ms.keywords: "*PGetPresharedKeyForId_IN, GetPresharedKeyForId_IN, GetPresharedKeyForId_IN structure [Storage Devices], PGetPresharedKeyForId_IN, PGetPresharedKeyForId_IN structure pointer [Storage Devices], _GetPresharedKeyForId_IN, iscsiop/GetPresharedKeyForId_IN, iscsiop/PGetPresharedKeyForId_IN, storage.getpresharedkeyforid_in, structs-iSCSI_2bdada81-7b98-40cd-bc44-e23e53118c60.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - iscsiop.h
 api_name:
+ - _GetPresharedKeyForId_IN
+ - PGetPresharedKeyForId_IN
  - GetPresharedKeyForId_IN
 ---
 
@@ -132,3 +133,4 @@ You must implement this method if the initiator supports IKE.
 
 
 <a href="/windows-hardware/drivers/storage/msiscsi-securityconfigoperations-wmi-class">MSiSCSI_SecurityConfigOperations WMI Class</a>
+

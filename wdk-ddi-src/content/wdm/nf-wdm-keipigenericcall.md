@@ -4,7 +4,6 @@ title: KeIpiGenericCall function (wdm.h)
 description: The KeIpiGenericCall routine causes the specified routine to run on all processors simultaneously.
 old-location: kernel\keipigenericcall.htm
 tech.root: kernel
-ms.assetid: 11424e94-d279-4003-a97c-a46d1a75e8e5
 ms.date: 04/30/2018
 keywords: ["KeIpiGenericCall function"]
 ms.keywords: KeIpiGenericCall, KeIpiGenericCall routine [Kernel-Mode Driver Architecture], k105_f819c564-ecbc-4d28-aa64-6936c8ad3542.xml, kernel.keipigenericcall, wdm/KeIpiGenericCall
@@ -50,14 +49,14 @@ The <b>KeIpiGenericCall</b> routine causes the specified routine to run on all p
 
 ## -parameters
 
-### -param BroadcastFunction 
+### -param BroadcastFunction [in]
 
-[in]
+
 Pointer to an <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-kipi_broadcast_worker">IpiGenericCall</a> routine. This routine is run on every processor simultaneously.
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 Specifies the value to pass to <i>IpiGenericCall</i> when it is called.
 
 ## -returns

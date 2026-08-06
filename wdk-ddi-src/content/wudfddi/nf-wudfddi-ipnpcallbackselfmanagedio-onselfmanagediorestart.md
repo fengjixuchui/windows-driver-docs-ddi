@@ -4,7 +4,6 @@ title: IPnpCallbackSelfManagedIo::OnSelfManagedIoRestart (wudfddi.h)
 description: The OnSelfManagedIoRestart method restarts a device's self-managed I/O operations.
 old-location: wdf\ipnpcallbackselfmanagedio_onselfmanagediorestart.htm
 tech.root: wdf
-ms.assetid: dccc4be0-0724-44b6-8476-276b46acee6a
 ms.date: 02/26/2018
 keywords: ["IPnpCallbackSelfManagedIo::OnSelfManagedIoRestart"]
 ms.keywords: IPnpCallbackSelfManagedIo interface,OnSelfManagedIoRestart method, IPnpCallbackSelfManagedIo.OnSelfManagedIoRestart, IPnpCallbackSelfManagedIo::OnSelfManagedIoRestart, OnSelfManagedIoRestart, OnSelfManagedIoRestart method, OnSelfManagedIoRestart method,IPnpCallbackSelfManagedIo interface, UMDFDeviceObjectRef_c570a334-c420-443d-8844-b4ff2bf35f47.xml, umdf.ipnpcallbackselfmanagedio_onselfmanagediorestart, wdf.ipnpcallbackselfmanagedio_onselfmanagediorestart, wudfddi/IPnpCallbackSelfManagedIo::OnSelfManagedIoRestart
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Wudfddi.h
 api_name:
- - IPnpCallbackSelfManagedIo.OnSelfManagedIoRestart
+ - IPnpCallbackSelfManagedIo::OnSelfManagedIoRestart
 ---
 
 # IPnpCallbackSelfManagedIo::OnSelfManagedIoRestart
@@ -52,9 +51,9 @@ The <b>OnSelfManagedIoRestart</b> method restarts a device's self-managed I/O op
 
 ## -parameters
 
-### -param pWdfDevice 
+### -param pWdfDevice [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdfdevice">IWDFDevice</a> interface for the device object of the device for which the self-managed I/O operations are restarted.
 
 ## -returns
@@ -81,3 +80,4 @@ A driver registers the <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi
 
 
 <a href="/windows-hardware/drivers/ddi/wudfddi/nf-wudfddi-iwdfdriver-createdevice">IWDFDriver::CreateDevice</a>
+

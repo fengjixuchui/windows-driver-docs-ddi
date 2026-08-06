@@ -4,7 +4,6 @@ title: _DXVADDI_VIDEOPROCESSORINPUT (d3dumddi.h)
 description: The DXVADDI_VIDEOPROCESSORINPUT structure describes a video stream that is processed by a video processing device type.
 old-location: display\dxvaddi_videoprocessorinput.htm
 tech.root: display
-ms.assetid: 539d32a5-4566-4b8e-b9de-da8d5be3c2f2
 ms.date: 05/10/2018
 keywords: ["DXVADDI_VIDEOPROCESSORINPUT structure"]
 ms.keywords: DXVA2_Structs_87cc7918-2fb5-4b73-a62c-ab9a3817c154.xml, DXVADDI_VIDEOPROCESSORINPUT, DXVADDI_VIDEOPROCESSORINPUT structure [Display Devices], _DXVADDI_VIDEOPROCESSORINPUT, d3dumddi/DXVADDI_VIDEOPROCESSORINPUT, display.dxvaddi_videoprocessorinput
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVADDI_VIDEOPROCESSORINPUT
  - DXVADDI_VIDEOPROCESSORINPUT
 ---
 
@@ -52,17 +52,17 @@ The DXVADDI_VIDEOPROCESSORINPUT structure describes a video stream that is proce
 
 ## -struct-fields
 
-### -field pVideoProcGuid
+### -field pVideoProcGuid [in]
 
-[in] A pointer to a GUID that represents the video processing device type.
+A pointer to a GUID that represents the video processing device type.
 
-### -field VideoDesc
+### -field VideoDesc [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_videodesc">DXVADDI_VIDEODESC</a> structure that describes the video stream.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_dxvaddi_videodesc">DXVADDI_VIDEODESC</a> structure that describes the video stream.
 
-### -field RenderTargetFormat
+### -field RenderTargetFormat [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the render target for the video processing device.
+A <a href="/windows-hardware/drivers/ddi/d3dukmdt/ne-d3dukmdt-_d3dddiformat">D3DDDIFORMAT</a>-typed value that indicates the pixel format of the render target for the video processing device.
 
 ## -remarks
 
@@ -91,3 +91,4 @@ When the D3DDDICAPS_GETVIDEOPROCESSORRTFORMATCOUNT, D3DDDICAPS_GETVIDEOPROCESSOR
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_getcaps">GetCaps</a>
+

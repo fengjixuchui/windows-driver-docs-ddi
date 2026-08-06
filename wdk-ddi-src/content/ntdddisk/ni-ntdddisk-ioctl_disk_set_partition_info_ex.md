@@ -1,10 +1,9 @@
 ---
 UID: NI:ntdddisk.IOCTL_DISK_SET_PARTITION_INFO_EX
 title: IOCTL_DISK_SET_PARTITION_INFO_EX (ntdddisk.h)
-description: Changes the partition type of the specified disk partition. (Floppy drivers need not handle this request.).
+description: The IOCTL_DISK_SET_PARTITION_INFO_EX IOCTL changes the partition type of the specified disk partition and returns the status of the operation.
 old-location: storage\ioctl_disk_set_partition_info_ex.htm
 tech.root: storage
-ms.assetid: 80558175-4d34-4011-a5b3-b6475b5e0d15
 ms.date: 03/29/2018
 keywords: ["IOCTL_DISK_SET_PARTITION_INFO_EX IOCTL"]
 ms.keywords: IOCTL_DISK_SET_PARTITION_INFO_EX, IOCTL_DISK_SET_PARTITION_INFO_EX control, IOCTL_DISK_SET_PARTITION_INFO_EX control code [Storage Devices], k307_5fc1358c-2216-41c9-a934-9a5cbed9a6fc.xml, ntdddisk/IOCTL_DISK_SET_PARTITION_INFO_EX, storage.ioctl_disk_set_partition_info_ex
@@ -49,6 +48,8 @@ api_name:
 Changes the partition type of the specified disk partition. (Floppy drivers need not handle this request.)
 
 ## -ioctlparameters
+
+### -ioctl-major-code
 
 ### -input-buffer
 

@@ -4,7 +4,6 @@ title: IDebugFAEntryTags::GetProperties (extsfns.h)
 description: The GetProperties method gets the name or description (or both) of a tag in a DebugFailureAnalysisTags object.
 old-location: debugger\idebugfaentrytags_getproperties.htm
 tech.root: debugger
-ms.assetid: 140EAE7D-E349-4096-8578-6CF011C1FBA7
 ms.date: 05/03/2018
 keywords: ["IDebugFAEntryTags::GetProperties"]
 ms.keywords: GetProperties, GetProperties method [Windows Debugging], GetProperties method [Windows Debugging],IDebugFAEntryTags interface, IDebugFAEntryTags interface [Windows Debugging],GetProperties method, IDebugFAEntryTags.GetProperties, IDebugFAEntryTags::GetProperties, debugger.idebugfaentrytags_getproperties, extsfns/IDebugFAEntryTags::GetProperties
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - extsfns.h
 api_name:
- - IDebugFAEntryTags.GetProperties
+ - IDebugFAEntryTags::GetProperties
 ---
 
 # IDebugFAEntryTags::GetProperties
@@ -54,35 +53,35 @@ The <b>GetProperties</b> method gets the name or description (or both) of a tag 
 
 A value in the <a href="/windows-hardware/drivers/debugger/writing-an-analysis-extension-to-extend--analyze">FA_TAG</a> enumeration. This method gets the name or description (or both) of this tag.
 
-### -param Name 
+### -param Name [out]
 
-[out]
+
 A pointer to a buffer that receives a null-terminated string that is the name of the tag. If <i>NameSize</i> is less than the length of the tag's name, this method copies only <i>NameSize</i> bytes, including the <b>NULL</b> terminator, to this buffer.
 
-### -param NameSize 
+### -param NameSize [in, out]
 
-[in, out]
+
 On input, this parameter, specifies the size, in bytes, of the buffer pointed to by <i>Name</i>. On output, this parameter receives the size, in bytes, of the name of the tag. If the tag has no name, this parameter receives a value of 0.
 
 <div class="alert"><b>Note</b>  If <i>Name</i> is NULL, this parameter receives no information. You should either set both <i>Name</i> and <i>NameSize</i> to non-NULL values or set them both to <b>NULL</b>.</div>
 <div> </div>
 
-### -param Description 
+### -param Description [out]
 
-[out]
+
 A pointer to a buffer that receives a null-terminated string that is the description of the tag. If <i>DescSize</i> is less than the length of the tag's description, this method copies only <i>DescSize</i> bytes, including the <b>NULL</b> terminator, to this buffer.
 
-### -param DescSize 
+### -param DescSize [in, out]
 
-[in, out]
+
 On input, this parameter, specifies the size, in bytes, of the buffer pointed to by <i>Description</i>. On output, this parameter receives the size, in bytes, of the description of the tag. If the tag has no description, this parameter receives a value of 0.
 
 <div class="alert"><b>Note</b>  If <i>Description</i> is NULL, this parameter receives no information. You should either set both <i>Description</i> and <i>DescSize</i> to non-NULL values or set them both to <b>NULL</b>.</div>
 <div> </div>
 
-### -param Flags 
+### -param Flags [out]
 
-[out]
+
 Reserved. Set this parameter to NULL.
 
 ## -returns
@@ -148,3 +147,4 @@ The caller passed at least one invalid parameter.
 
 
 <a href="/windows-hardware/drivers/ddi/extsfns/nc-extsfns-ext_analysis_plugin">_EFN_Analyze</a>
+

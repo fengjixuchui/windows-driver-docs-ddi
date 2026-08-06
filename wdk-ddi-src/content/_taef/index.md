@@ -1,13 +1,11 @@
 ---
+description: "Learn more about: TAEF"
 UID: TP:taef
-title: Taef
+title: Taef overview
 ms.assetid: ef670235-d405-36a8-9c8a-e30620411b6d
-ms.date: 05/09/2018
+ms.date: 12/20/2023
 keywords: ["Taef"]
 ms.keywords: 
-ms.prod: windows-hardware
-ms.technology: windows-devices
-ms.topic: portal
 ---
 
 # TAEF
@@ -18,6 +16,5 @@ Overview of the Test Authoring and Execution Framework (TAEF) technology.
 
 The TAEF technology is associated with these headers.
 
-wexlogtrace.h
-wextestclass.h
-
+- [wexlogtrace.h](../wexlogtrace/index.md)
+- [wextestclass.h](../wextestclass/index.md)

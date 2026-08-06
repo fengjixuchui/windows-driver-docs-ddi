@@ -1,10 +1,9 @@
 ---
 UID: NS:storport._STOR_POFX_COMPONENT_IDLE_STATE
 title: _STOR_POFX_COMPONENT_IDLE_STATE (storport.h)
-description: The STOR_POFX_COMPONENT_IDLE_STATE structure specifies the attributes of an functional power state (F-state) of a component in a storage device.
+description: The STOR_POFX_COMPONENT_IDLE_STATE structure specifies the attributes of a functional power state (F-state) of a component in a storage device.
 old-location: storage\stor_pofx_component_idle_state.htm
 tech.root: storage
-ms.assetid: 2600405F-AE07-4284-84AD-D19EEE2058BF
 ms.date: 03/29/2018
 keywords: ["STOR_POFX_COMPONENT_IDLE_STATE structure"]
 ms.keywords: "*PSTOR_POFX_COMPONENT_IDLE_STATE, PSTOR_POFX_COMPONENT_IDLE_STATE, PSTOR_POFX_COMPONENT_IDLE_STATE structure pointer [Storage Devices], STOR_POFX_COMPONENT_IDLE_STATE, STOR_POFX_COMPONENT_IDLE_STATE structure [Storage Devices], _STOR_POFX_COMPONENT_IDLE_STATE, storage.stor_pofx_component_idle_state, storport/PSTOR_POFX_COMPONENT_IDLE_STATE, storport/STOR_POFX_COMPONENT_IDLE_STATE"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Storport.h
 api_name:
+ - _STOR_POFX_COMPONENT_IDLE_STATE
+ - PSTOR_POFX_COMPONENT_IDLE_STATE
  - STOR_POFX_COMPONENT_IDLE_STATE
 ---
 
@@ -50,7 +51,7 @@ api_name:
 
 ## -description
 
-The <b>STOR_POFX_COMPONENT_IDLE_STATE</b> structure specifies the attributes of an functional power state (F-state) of a component in a storage device.
+The <b>STOR_POFX_COMPONENT_IDLE_STATE</b> structure specifies the attributes of a functional power state (F-state) of a component in a storage device.
 
 ## -struct-fields
 
@@ -83,3 +84,4 @@ When the miniport driver registers a device with the Storport power management f
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/storport/ns-storport-_stor_pofx_component">STOR_POFX_COMPONENT</a>
+

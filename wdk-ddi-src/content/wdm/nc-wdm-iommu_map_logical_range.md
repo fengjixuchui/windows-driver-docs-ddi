@@ -2,11 +2,11 @@
 UID: NC:wdm.IOMMU_MAP_LOGICAL_RANGE
 title: IOMMU_MAP_LOGICAL_RANGE (wdm.h)
 description: Maps a range of pages into the address space of a domain.
-ms.assetid: 670390f9-15c9-4fa2-bba2-227a6bd7c803
-ms.date: 10/19/2018
+tech.root: kernel
+ms.date: 01/19/2023
 keywords: ["IOMMU_MAP_LOGICAL_RANGE callback function"]
 req.header: wdm.h
-req.include-header: 
+req.include-header: Wdm.h
 req.target-type: 
 req.target-min-winverclnt: Windows 10, version 1803
 req.target-min-winversvr: 
@@ -36,57 +36,31 @@ api_name:
  - IOMMU_MAP_LOGICAL_RANGE
 ---
 
-# IOMMU_MAP_LOGICAL_RANGE callback function
-
-
 ## -description
 
 Maps a range of pages into the address space of the specified domain.
 
 ## -parameters
 
-### -param Domain
+### -param Domain [_In_]
 
-[_In_] A pointer to the handle to the domain.
+A pointer to the handle to the domain.
 
-### -param Permissions
+### -param Permissions [_In_]
 
-[_In_] A ULONG variable that specifies the permissions with which to map the pages.
+A ULONG variable that specifies the permissions with which to map the pages.
 
-### -param Mdl
+### -param Mdl [_In_]
 
-[_In_] A pointer to the MDL to map. The provided MDL must specify a whole number of page.
+A pointer to the MDL to map. The provided MDL must specify a whole number of page.
 
-### -param LogicalAddress
+### -param LogicalAddress [_In_]
 
-[_In_] The logical address at which mapping begins. The address must be page aligned.
+The logical address at which mapping begins. The address must be page aligned.
 
 ## -returns
 
-Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate NTSTATUS Values error code. For more information, see [NTSTATUS Values](/windows-hardware/drivers/kernel/ntstatus-values).
-
-## -prototype
-
-```cpp
-//Declaration
-
-IOMMU_MAP_LOGICAL_RANGE IommuMapLogicalRange; 
-
-// Definition
-
-NTSTATUS IommuMapLogicalRange 
-(
-	PIOMMU_DMA_DOMAIN Domain
-	ULONG Permissions
-	PMDL Mdl
-	ULONGLONG LogicalAddress
-)
-{...}
-
-IOMMU_MAP_LOGICAL_RANGE *PIOMMU_MAP_LOGICAL_RANGE
-
-
-```
+Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate NTSTATUS values error code. For more information, see [NTSTATUS Values](/windows-hardware/drivers/kernel/ntstatus-values).
 
 ## -remarks
 

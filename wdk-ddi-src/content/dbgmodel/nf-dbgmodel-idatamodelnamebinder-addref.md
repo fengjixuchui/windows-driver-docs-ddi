@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.IDataModelNameBinder.AddRef
 title: IDataModelNameBinder::AddRef (dbgmodel.h)
-description: Increments the reference count for an interface on an object. This method should be called for every new copy of a pointer to an interface on an object.
-ms.assetid: ce08a583-95f5-49b0-aa01-e509e844a7c9
+description: "The IDataModelNameBinder::AddRef method increments the reference count for an interface on an object."
 ms.date: 09/21/2018
 keywords: ["IDataModelNameBinder::AddRef"]
 ms.keywords: IDataModelNameBinder::AddRef, AddRef, IDataModelNameBinder.AddRef, IDataModelNameBinder::AddRef, IDataModelNameBinder.AddRef
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelNameBinder.AddRef
+ - IDataModelNameBinder::AddRef
 ---
 
 # IDataModelNameBinder::AddRef
@@ -57,3 +56,4 @@ This method returns ULONG.
 ## -see-also
 
 [IDataModelNameBinder interface](nn-dbgmodel-idatamodelnamebinder.md)
+

@@ -1,8 +1,7 @@
 ---
 UID: NF:dbgmodel.Location.Location
 title: Location function (dbgmodel.h)
-description: Copy constructs a location.
-ms.assetid: e50b6f55-a47e-4fbc-b7f1-041cbccf9ea5
+description: The Location function (dbgmodel.h) copy constructs a new Location. A C-COM access structure that defines the location for an object.
 ms.date: 09/28/2018
 keywords: ["Location function"]
 ms.keywords: Location
@@ -36,11 +35,10 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - Location
+ - Location::Location
 ---
 
 # Location function (dbgmodel.h)
-
 
 ## -description
 
@@ -48,16 +46,13 @@ Copy constructs a location.
 
 Default constructs an equivalent nullptr.
 
-## -returns
-
-This function is a constructor and does not return value.
-
 ## -remarks
 
-Defines the location for an object.  This particular variant of Location is the C-COM access struct.
-Note that a location only has meaning in conjunction with a host context.  It is a location within
-a context.  When performing an operation on the location (reading bytes, writing bytes, etc...), 
-a valid host context must be supplied.
+Defines the location for an object.  This particular variant of Location is the C-COM access struct. Note that a location only has meaning in conjunction with a host context.  It is a location within a context.  When performing an operation on the location (reading bytes, writing bytes, etc...), a valid host context must be supplied.
+
+### Returns
+
+This function is a constructor and does not return value.
 
 ## -see-also
 

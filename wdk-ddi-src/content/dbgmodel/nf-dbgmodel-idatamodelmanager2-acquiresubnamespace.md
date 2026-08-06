@@ -2,7 +2,6 @@
 UID: NF:dbgmodel.IDataModelManager2.AcquireSubNamespace
 title: IDataModelManager2::AcquireSubNamespace (dbgmodel.h)
 description: The AcquireSubNamespace method helps in the construction of something which might more traditionally look like a language namespace than a new object in a dynamic language.
-ms.assetid: 2cb6ec25-f9aa-419f-80f5-845a327ea7c2
 ms.date: 08/21/2018
 keywords: ["IDataModelManager2::AcquireSubNamespace"]
 ms.keywords: IDataModelManager2::AcquireSubNamespace, AcquireSubNamespace, IDataModelManager2.AcquireSubNamespace, IDataModelManager2::AcquireSubNamespace, IDataModelManager2.AcquireSubNamespace
@@ -36,7 +35,7 @@ api_type:
 api_location:
  - dbgmodel.h
 api_name:
- - IDataModelManager2.AcquireSubNamespace
+ - IDataModelManager2::AcquireSubNamespace
 ---
 
 # IDataModelManager2::AcquireSubNamespace

@@ -1,9 +1,8 @@
 ---
 UID: NE:d3d10umddi.D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE
 title: D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE (d3d10umddi.h)
-description: Indicates the luminance range of YUV data.
+description: The D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE enumeration indicates the luminance range of YUV color encoding system data.
 old-location: display\d3d11_1ddi_video_processor_nominal_range.htm
-ms.assetid: E8D77D49-9E7C-45B3-850C-1E814B44464B
 ms.date: 05/10/2018
 keywords: ["D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE enumeration"]
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE, D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE enumeration [Display Devices], D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_0_255, D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_16_235, D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_UNDEFINED, DXVAHDDDI_NOMINAL_RANGE, DXVAHDDDI_NOMINAL_RANGE enumeration [Display Devices], d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_0_255, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_16_235, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE_UNDEFINED, display.d3d11_1ddi_video_processor_nominal_range
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - DXVAHDDDI_NOMINAL_RANGE
+ - D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE
 ---
 
 # D3D11_1DDI_VIDEO_PROCESSOR_NOMINAL_RANGE enumeration
@@ -65,3 +64,4 @@ The <i>full luminance range</i>, or <i>extended range</i>, of 0 to 255, inclusiv
 ## -remarks
 
 For more information on luminance range, see <a href="/windows-hardware/drivers/display/yuv-format-ranges">YUV format ranges in Windows 8.1</a>.
+

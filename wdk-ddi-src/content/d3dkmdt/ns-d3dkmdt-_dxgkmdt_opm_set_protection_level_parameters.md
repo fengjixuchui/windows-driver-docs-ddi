@@ -4,14 +4,13 @@ title: _DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS (d3dkmdt.h)
 description: The DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS structure contains parameters to set the protection level of a protected output in a call to the DxgkDdiOPMConfigureProtectedOutput function.
 old-location: display\dxgkmdt_opm_set_protection_level_parameters.htm
 tech.root: display
-ms.assetid: e5b35b0d-c7ad-4a67-8552-13df4c9c2b84
 ms.date: 05/10/2018
 keywords: ["DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS structure"]
 ms.keywords: DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS, DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS structure [Display Devices], DmStructs_9d43af01-039a-4f68-8583-b42ae54a5bbe.xml, _DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS, d3dkmdt/DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS, display.dxgkmdt_opm_set_protection_level_parameters
 req.header: d3dkmdt.h
-req.include-header: D3dkmdt.h
+req.include-header: 
 req.target-type: Windows
-req.target-min-winverclnt: Available in Windows Vista and later versions of the Windows operating systems.
+req.target-min-winverclnt: Windows Vista
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dkmdt.h
 api_name:
+ - _DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS
  - DXGKMDT_OPM_SET_PROTECTION_LEVEL_PARAMETERS
 ---
 
@@ -117,3 +117,4 @@ Reserved. Must be set to zero.
 
 
 <a href="/windows-hardware/drivers/ddi/dispmprt/nc-dispmprt-dxgkddi_opm_configure_protected_output">DxgkDdiOPMConfigureProtectedOutput</a>
+

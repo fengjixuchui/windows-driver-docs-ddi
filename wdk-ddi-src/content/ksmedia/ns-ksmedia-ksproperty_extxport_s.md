@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_137
+UID: NS:ksmedia.KSPROPERTY_EXTXPORT_S
 title: KSPROPERTY_EXTXPORT_S (ksmedia.h)
 description: The KSPROPERTY_EXTXPORT_S structure describes an external transport and its capabilities.
 old-location: stream\ksproperty_extxport_s.htm
 tech.root: stream
-ms.assetid: 01132969-b459-4110-a067-fda6c7ee5510
 ms.date: 04/30/2019
 keywords: ["KSPROPERTY_EXTXPORT_S structure"]
 ms.keywords: "*PKSPROPERTY_EXTXPORT_S, KSPROPERTY_EXTXPORT_S, KSPROPERTY_EXTXPORT_S structure [Streaming Media Devices], PKSPROPERTY_EXTXPORT_S, PKSPROPERTY_EXTXPORT_S structure pointer [Streaming Media Devices], ksmedia/KSPROPERTY_EXTXPORT_S, ksmedia/PKSPROPERTY_EXTXPORT_S, stream.ksproperty_extxport_s, vidcapstruct_9cd12be8-0378-481b-80e3-81b3decc1823.xml"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - PKSPROPERTY_EXTXPORT_S
  - KSPROPERTY_EXTXPORT_S
 ---
 
@@ -54,7 +54,7 @@ The KSPROPERTY_EXTXPORT_S structure describes an external transport and its capa
 
 ### -field Property
 
-Specifies an initialized <a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
+Specifies an initialized <a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a> structure that describes the property set, property ID, and request type.
 
 ### -field u
 
@@ -122,7 +122,7 @@ Any ED_TRANSCAP_Xxx or ED_TRANSBASIC_Xxx tokens are defined in <i>xprtdefs.h</i>
 
 ## -see-also
 
-<a href="/previous-versions/ff564262(v=vs.85)">KSPROPERTY</a>
+<a href="/windows-hardware/drivers/stream/ksproperty-structure">KSPROPERTY</a>
 
 
 
@@ -135,3 +135,4 @@ Any ED_TRANSCAP_Xxx or ED_TRANSBASIC_Xxx tokens are defined in <i>xprtdefs.h</i>
 
 
 <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-transport_state">TRANSPORT_STATE</a>
+

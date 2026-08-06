@@ -2,7 +2,6 @@
 UID: NC:d3dkmthk.PFND3DKMT_SETQUEUEDLIMIT
 title: PFND3DKMT_SETQUEUEDLIMIT (d3dkmthk.h)
 description: The PFND3DKMT_SETQUEUEDLIMIT callback function sets or retrieves the limit for the number of operations of the given type that can be queued for the given device.
-ms.assetid: 80cfb48c-cc5e-4186-9643-b147d1228701
 ms.date: 10/19/2018
 keywords: ["PFND3DKMT_SETQUEUEDLIMIT callback function"]
 req.header: d3dkmthk.h
@@ -49,7 +48,7 @@ The PFND3DKMT_SETQUEUEDLIMIT callback function sets or retrieves the limit for t
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DKMT_SETQUEUEDLIMIT](ns-d3dkmthk-_d3dkmt_setqueuedlimit.md) structure.
 

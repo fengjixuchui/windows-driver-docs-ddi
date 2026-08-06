@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_GetUiccRecordStatus
 title: RIL_GetUiccRecordStatus function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_GetUiccRecordStatus function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_getuiccrecordstatus.htm
 tech.root: netvista
-ms.assetid: f4834b37-7269-47e3-9af4-81d17fa79179
 ms.date: 05/02/2018
 keywords: ["RIL_GetUiccRecordStatus function"]
 ms.keywords: RIL_GetUiccRecordStatus, RIL_GetUiccRecordStatus method [Network Drivers Starting with Windows Vista], netvista.ril_getuiccrecordstatus, rilapi/RIL_GetUiccRecordStatus

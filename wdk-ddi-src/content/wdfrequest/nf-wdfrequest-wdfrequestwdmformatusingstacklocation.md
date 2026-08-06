@@ -4,7 +4,6 @@ title: WdfRequestWdmFormatUsingStackLocation function (wdfrequest.h)
 description: The WdfRequestWdmFormatUsingStackLocation method formats an I/O request by copying the contents of a specified WDM I/O stack location structure to the next stack location in the request.
 old-location: wdf\wdfrequestwdmformatusingstacklocation.htm
 tech.root: wdf
-ms.assetid: 9ee3d748-f9aa-43d6-b472-7b55d2034fc7
 ms.date: 02/26/2018
 keywords: ["WdfRequestWdmFormatUsingStackLocation function"]
 ms.keywords: DFRequestObjectRef_a210a31a-e3a5-4bbd-af19-5be5f7651757.xml, WdfRequestWdmFormatUsingStackLocation, WdfRequestWdmFormatUsingStackLocation method, kmdf.wdfrequestwdmformatusingstacklocation, wdf.wdfrequestwdmformatusingstacklocation, wdfrequest/WdfRequestWdmFormatUsingStackLocation
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: Wdf01000.sys (see Framework Library Versioning.)
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -53,14 +52,14 @@ The <b>WdfRequestWdmFormatUsingStackLocation</b> method formats an I/O request b
 
 ## -parameters
 
-### -param Request 
+### -param Request [in]
 
-[in]
+
 A handle to a framework request object.
 
-### -param Stack 
+### -param Stack [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_stack_location">IO_STACK_LOCATION</a> structure that contains driver-supplied information.
 
 ## -remarks

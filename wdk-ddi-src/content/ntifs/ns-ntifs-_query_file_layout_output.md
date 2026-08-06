@@ -4,7 +4,6 @@ title: _QUERY_FILE_LAYOUT_OUTPUT (ntifs.h)
 description: The QUERY_FILE_LAYOUT_OUTPUT structure serves as a header for the file layout entries that are returned from a FSCTL_QUERY_FILE_LAYOUT request.
 old-location: ifsk\query_file_layout_output.htm
 tech.root: ifsk
-ms.assetid: 204893BE-8B89-4BE4-BEDB-BF28DBAAACE9
 ms.date: 04/16/2018
 keywords: ["QUERY_FILE_LAYOUT_OUTPUT structure"]
 ms.keywords: "*PQUERY_FILE_LAYOUT_OUTPUT, PQUERY_FILE_LAYOUT_OUTPUT, PQUERY_FILE_LAYOUT_OUTPUT structure pointer [Installable File System Drivers], QUERY_FILE_LAYOUT_OUTPUT, QUERY_FILE_LAYOUT_OUTPUT structure [Installable File System Drivers], QUERY_FILE_LAYOUT_SINGLE_INSTANCED, _QUERY_FILE_LAYOUT_OUTPUT, ifsk.query_file_layout_output, ntifs/PQUERY_FILE_LAYOUT_OUTPUT, ntifs/QUERY_FILE_LAYOUT_OUTPUT"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntifs.h
 api_name:
+ - _QUERY_FILE_LAYOUT_OUTPUT
+ - PQUERY_FILE_LAYOUT_OUTPUT
  - QUERY_FILE_LAYOUT_OUTPUT
 ---
 
@@ -126,3 +127,4 @@ When multiple entries of the same type exist for a single <b>FILE_LAYOUT_ENTRY</
 
 
 <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_query_file_layout_input">QUERY_FILE_LAYOUT_INPUT</a>
+

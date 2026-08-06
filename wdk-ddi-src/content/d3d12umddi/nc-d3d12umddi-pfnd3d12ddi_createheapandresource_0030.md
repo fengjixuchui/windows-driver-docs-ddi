@@ -1,10 +1,9 @@
 ---
 UID: NC:d3d12umddi.PFND3D12DDI_CREATEHEAPANDRESOURCE_0030
 title: PFND3D12DDI_CREATEHEAPANDRESOURCE_0030 (d3d12umddi.h)
-description: Used to simultaneously create a heap and resource.
+description: The PFND3D12DDI_CREATEHEAPANDRESOURCE_0030 callback function simultaneously creates a heap and resource.
 old-location: display\pfnd3d12ddi_createheapandresource_0030.htm
-ms.assetid: A6D597AA-C72A-46A5-91E8-22B225B380F2
-ms.date: 05/10/2018
+ms.date: 02/24/2023
 keywords: ["PFND3D12DDI_CREATEHEAPANDRESOURCE_0030 callback function"]
 ms.keywords: PFND3D12DDI_CREATEHEAPANDRESOURCE_0030, PFND3D12DDI_CREATEHEAPANDRESOURCE_0030 callback, PFND3D12DDI_CREATEHEAPANDRESOURCE_0030 callback function [Display Devices], d3d12umddi/PFND3D12DDI_CREATEHEAPANDRESOURCE_0030, display.pfnd3d12ddi_createheapandresource_0030
 req.header: d3d12umddi.h
@@ -43,50 +42,48 @@ api_name:
 
 # PFND3D12DDI_CREATEHEAPANDRESOURCE_0030 callback function
 
-
 ## -description
 
-Used to simultaneously create a heap and resource.
+A user-mode display driver's **PFND3D12DDI_CREATEHEAPANDRESOURCE_0030** function simultaneously creates a heap and resource.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
-A handle to the display device (graphics context).
+A **D3D12DDI_HDEVICE** handle to the display device (graphics context).
 
-### -param D3D12DDIARG_CREATEHEAP_0001
+### -param unnamedParam2
 
-Arguments used to create a heap.
+A [**D3D12DDIARG_CREATEHEAP_0001**](ns-d3d12umddi-d3d12ddiarg_createheap_0001.md) structure with arguments used to create a heap.
 
-### -param Arg2
+### -param unnamedParam3
 
-Used to create a heap.
+A **D3D12DDI_HHEAP** handle to a heap.
 
-### -param Arg3
+### -param unnamedParam4
 
-Used to create a resource.
+The **D3D12DDI_HRTRESOURCE** handle of the resource for the driver to use when it calls back into the runtime.
 
-### -param Arg4
+### -param unnamedParam5
 
-*d3d12ddiarg_createresource_0003* [in, optional]
+Pointer to a [**D3D12DDIARG_CREATERESOURCE_0003**](ns-d3d12umddi-d3d12ddiarg_createresource_0003.md) structure containing the arguments used to create a resource.
 
-Arguments used to create a resource.
+### -param unnamedParam6
 
-### -param Arg5
+Pointer to a [**D3D12DDI_CLEAR_VALUES**](ns-d3d12umddi-d3d12ddi_clear_values.md) structure with values used to optimize clear operations for the resource.
 
-*d3d12ddi_clear_values* [in, optional]
+### -param unnamedParam7
 
-Used to clear the values of the resource.
+A **D3D12DDI_HPROTECTEDRESOURCESESSION_0030** handle to the protected resource session to use for the resource being created. Zero indicates unprotected resources. See the [Protected Resources Specification](https://microsoft.github.io/DirectX-Specs/d3d/ProtectedResources.html) for more information.
 
-### -param Arg6
+### -param unnamedParam8
 
-The protected resource session.
-
-### -param Arg7
-
-The hardware resource.
+The **D3D12DDI_HRESOURCE** handle to the hardware resource.
 
 ## -returns
 
-Returns STATUS_SUCCESS if completed successfully.
+If this callback function succeeds, it returns **S_OK**. Otherwise, it returns an **HRESULT** error code.
 
+## -see-also
+
+[**D3D12DDI_CLEAR_VALUES**](ns-d3d12umddi-d3d12ddi_clear_values.md)

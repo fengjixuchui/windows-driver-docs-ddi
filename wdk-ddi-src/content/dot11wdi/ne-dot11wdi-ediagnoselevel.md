@@ -1,10 +1,9 @@
 ---
-UID: NE:dot11wdi.__unnamed_enum_0
+UID: NE:dot11wdi.eDiagnoseLevel
 title: eDiagnoseLevel (dot11wdi.h)
 description: The eDiagnoseLevel enumeration defines the diagnosis levels for adapter hang diagnosis.
 old-location: netvista\wdiediagnoselevel.htm
 tech.root: netvista
-ms.assetid: C19C250D-3C8D-4855-A8B3-82E139CE09BB
 ms.date: 05/02/2018
 keywords: ["eDiagnoseLevel enumeration"]
 ms.keywords: DiagnoseLevelDriverStateDump, DiagnoseLevelFirmwareImageDump, DiagnoseLevelHardwareRegisters, DiagnoseLevelNone, dot11wdi/DiagnoseLevelDriverStateDump, dot11wdi/DiagnoseLevelFirmwareImageDump, dot11wdi/DiagnoseLevelHardwareRegisters, dot11wdi/DiagnoseLevelNone, dot11wdi/eDiagnoseLevel, eDiagnoseLevel, eDiagnoseLevel enumeration [Network Drivers Starting with Windows Vista], netvista.wdiediagnoselevel
@@ -46,6 +45,9 @@ api_name:
 
 ## -description
 
+> [!IMPORTANT]
+> This topic is part of the [WDI driver model](/windows-hardware/drivers/network/wdi-miniport-driver-design-guide) released in Windows 10. The WDI driver model is in maintenance mode and will only receive high priority fixes. [WiFiCx](/windows-hardware/drivers/netcx/wifi-wdf-class-extension-wificx) is the Wi-Fi driver model released in Windows 11. We recommend that you use WiFiCx to take advantage of the latest  features.
+
 The eDiagnoseLevel enumeration defines the diagnosis levels for adapter hang diagnosis.
 
 ## -enum-fields
@@ -69,3 +71,4 @@ Dump the driver state, full firmware image, and hardware registers. The driver s
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/dot11wdi/nc-dot11wdi-miniport_wdi_adapter_hang_diagnose">MiniportWdiAdapterHangDiagnose</a>
+

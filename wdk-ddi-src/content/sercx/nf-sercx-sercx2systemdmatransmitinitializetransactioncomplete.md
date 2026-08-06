@@ -4,7 +4,6 @@ title: SerCx2SystemDmaTransmitInitializeTransactionComplete function (sercx.h)
 description: The SerCx2SystemDmaTransmitInitializeTransactionComplete method notifies version 2 of the serial framework extension (SerCx2) that the serial controller driver has finished initializing the serial controller hardware in preparation for a new system-DMA-transmit transaction.
 old-location: serports\sercx2systemdmatransmitinitializetransactioncomplete.htm
 tech.root: serports
-ms.assetid: B5FDD4A4-2E43-4EAD-A475-A91C60A2E925
 ms.date: 04/23/2018
 keywords: ["SerCx2SystemDmaTransmitInitializeTransactionComplete function"]
 ms.keywords: 2/SerCx2SystemDmaTransmitInitializeTransactionComplete, SerCx2SystemDmaTransmitInitializeTransactionComplete, SerCx2SystemDmaTransmitInitializeTransactionComplete method [Serial Ports], serports.sercx2systemdmatransmitinitializetransactioncomplete
@@ -50,14 +49,14 @@ The <b>SerCx2SystemDmaTransmitInitializeTransactionComplete</b> method notifies 
 
 ## -parameters
 
-### -param SystemDmaTransmit 
+### -param SystemDmaTransmit [in]
 
-[in]
+
 A <a href="/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMATRANSMIT</a> handle to a system-DMA-transmit object. The serial controller driver previously called the <a href="/windows-hardware/drivers/ddi/sercx/nf-sercx-sercx2systemdmatransmitcreate">SerCx2SystemDmaTransmitCreate</a> method to create this object.
 
-### -param InitSuccess 
+### -param InitSuccess [in]
 
-[in]
+
 Whether the initialization was successful. If <b>TRUE</b>, the initialization succeeded. If <b>FALSE</b>, the initialization failed.
 
 ## -remarks

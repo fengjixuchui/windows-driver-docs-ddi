@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_CALCPRIVATEAUTHENTICATEDCHANNELSIZE
 title: PFND3D11_1DDI_CALCPRIVATEAUTHENTICATEDCHANNELSIZE (d3d10umddi.h)
 description: Returns the number of bytes that the driver requires to store private data for the authenticated channel state.
 old-location: display\calcprivateauthenticatedchannelsize.htm
-ms.assetid: f22dee75-a7e3-4ad4-a0d1-584adff3230e
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_CALCPRIVATEAUTHENTICATEDCHANNELSIZE callback function"]
 ms.keywords: CalcPrivateAuthenticatedChannelSize, CalcPrivateAuthenticatedChannelSize callback function [Display Devices], PFND3D11_1DDI_CALCPRIVATEAUTHENTICATEDCHANNELSIZE, PFND3D11_1DDI_CALCPRIVATEAUTHENTICATEDCHANNELSIZE callback, d3d10umddi/CalcPrivateAuthenticatedChannelSize, display.calcprivateauthenticatedchannelsize
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - CalcPrivateAuthenticatedChannelSize
+ - PFND3D11_1DDI_CALCPRIVATEAUTHENTICATEDCHANNELSIZE
 ---
 
 # PFND3D11_1DDI_CALCPRIVATEAUTHENTICATEDCHANNELSIZE callback function
@@ -50,14 +49,14 @@ Returns the number of bytes that the driver requires to store private data for t
 
 ## -parameters
 
-### -param hDevice 
+### -param hDevice [in]
 
-[in]
+
 A handle to the display device (graphics context).
 
-### -param pCreateData 
+### -param pCreateData [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddiarg_createauthenticatedchannel">D3D11_1DDIARG_CREATEAUTHENTICATEDCHANNEL</a> structure that describes the authenticated channel.
 
 ## -returns
@@ -71,3 +70,4 @@ This function is not expected to fail.
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-d3d11_1ddiarg_createauthenticatedchannel">D3D11_1DDIARG_CREATEAUTHENTICATEDCHANNEL</a>
+

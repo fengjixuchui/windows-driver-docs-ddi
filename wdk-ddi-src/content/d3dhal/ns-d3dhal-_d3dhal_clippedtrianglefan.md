@@ -1,10 +1,9 @@
 ---
 UID: NS:d3dhal._D3DHAL_CLIPPEDTRIANGLEFAN
 title: _D3DHAL_CLIPPEDTRIANGLEFAN (d3dhal.h)
-description: DirectX 8.0 and later versions only.
+description: The D3DHAL_CLIPPEDTRIANGLEFAN structure is used by the D3dDrawPrimitives2 callback function to render clipped triangle fans.
 old-location: display\d3dhal_clippedtrianglefan.htm
 tech.root: display
-ms.assetid: c169c483-ffad-470c-9adb-397e275341e3
 ms.date: 05/10/2018
 keywords: ["D3DHAL_CLIPPEDTRIANGLEFAN structure"]
 ms.keywords: "*LPD3DHAL_CLIPPEDTRIANGLEFAN, D3DHAL_CLIPPEDTRIANGLEFAN, D3DHAL_CLIPPEDTRIANGLEFAN structure [Display Devices], LPD3DHAL_CLIPPEDTRIANGLEFAN, LPD3DHAL_CLIPPEDTRIANGLEFAN structure pointer [Display Devices], _D3DHAL_CLIPPEDTRIANGLEFAN, d3dhal/D3DHAL_CLIPPEDTRIANGLEFAN, d3dhal/LPD3DHAL_CLIPPEDTRIANGLEFAN, d3dstrct_443edf3e-a245-41c3-ba98-2ee9634363b9.xml, display.d3dhal_clippedtrianglefan"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dhal.h
 api_name:
+ - _D3DHAL_CLIPPEDTRIANGLEFAN
  - D3DHAL_CLIPPEDTRIANGLEFAN
 ---
 
@@ -78,3 +78,4 @@ D3DDP2OP_CLIPPEDTRIANGLEFAN
 
 
 <a href="/windows-hardware/drivers/ddi/d3dhal/nc-d3dhal-lpd3dhal_drawprimitives2cb">D3dDrawPrimitives2</a>
+

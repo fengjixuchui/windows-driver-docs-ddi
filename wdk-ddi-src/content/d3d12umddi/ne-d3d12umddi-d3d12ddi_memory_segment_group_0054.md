@@ -1,14 +1,11 @@
 ---
 UID: NE:d3d12umddi.D3D12DDI_MEMORY_SEGMENT_GROUP_0054
 title: D3D12DDI_MEMORY_SEGMENT_GROUP_0054
-description: Memory segment group types.
+description: The D3D12DDI_MEMORY_SEGMENT_GROUP_0054 enumeration contains local and non-local memory segment group types.
 tech.root: display
-ms.assetid: 39ab502e-f391-4ed4-be4d-711fa3a9adcd
 ms.date: 04/04/2019
 keywords: ["D3D12DDI_MEMORY_SEGMENT_GROUP_0054 enumeration"]
 ms.keywords: D3D12DDI_MEMORY_SEGMENT_GROUP_0054, D3D12DDI_MEMORY_SEGMENT_GROUP_0054,
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: d3d12umddi.h
 req.include-header: 
 req.target-type: 
@@ -32,8 +29,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - D3D12DDI_MEMORY_SEGMENT_GROUP_0054
-product:
- - Windows
 dev_langs:
  - c++
 ---

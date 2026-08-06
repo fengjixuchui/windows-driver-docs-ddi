@@ -4,7 +4,6 @@ title: wiasQueueEvent function (wiamdef.h)
 description: The wiasQueueEvent function informs the service that the device generated an event.
 old-location: image\wiasqueueevent.htm
 tech.root: image
-ms.assetid: 1ea82b64-e0e0-445b-8200-70cd6920d29b
 ms.date: 05/03/2018
 keywords: ["wiasQueueEvent function"]
 ms.keywords: image.wiasqueueevent, wiamdef/wiasQueueEvent, wiasFncs_a853cdf1-8d80-4bb6-9c41-c7190e9e9202.xml, wiasQueueEvent, wiasQueueEvent function [Imaging Devices]
@@ -50,19 +49,19 @@ The **wiasQueueEvent** function informs the service that the device generated an
 
 ## -parameters
 
-### -param bstrDeviceId 
+### -param bstrDeviceId [in]
 
-[in]
+
 Specifies the device ID. This is the value passed to the minidriver in the call to the [IWiaMiniDrv::drvInitializeWia](../wiamindr_lh/nf-wiamindr_lh-iwiaminidrv-drvinitializewia.md) method.
 
-### -param pEventGUID 
+### -param pEventGUID [in]
 
-[in]
+
 Pointer to a buffer that contains the GUID for the event.
 
-### -param bstrFullItemName 
+### -param bstrFullItemName [in, optional]
 
-[in, optional]
+
 Specifies the full item name, including path information.
 
 ## -returns

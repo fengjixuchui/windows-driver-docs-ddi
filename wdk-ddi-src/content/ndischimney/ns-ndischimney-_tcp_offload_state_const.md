@@ -4,7 +4,6 @@ title: _TCP_OFFLOAD_STATE_CONST (ndischimney.h)
 description: The TCP_OFFLOAD_STATE_CONST structure contains the constant variables of a TCP connection state object.
 old-location: netvista\tcp_offload_state_const.htm
 tech.root: netvista
-ms.assetid: 3e80f963-a494-475a-a246-abe5674dbcb6
 ms.date: 05/02/2018
 keywords: ["TCP_OFFLOAD_STATE_CONST structure"]
 ms.keywords: "*PTCP_OFFLOAD_STATE_CONST, PTCP_OFFLOAD_STATE_CONST, PTCP_OFFLOAD_STATE_CONST structure pointer [Network Drivers Starting with Windows Vista], TCP_OFFLOAD_STATE_CONST, TCP_OFFLOAD_STATE_CONST structure [Network Drivers Starting with Windows Vista], _TCP_OFFLOAD_STATE_CONST, ndischimney/PTCP_OFFLOAD_STATE_CONST, ndischimney/TCP_OFFLOAD_STATE_CONST, netvista.tcp_offload_state_const, tcp_chim_struct_d6f90719-24f7-49d1-9253-5d5db776f192.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ndischimney.h
 api_name:
+ - _TCP_OFFLOAD_STATE_CONST
+ - PTCP_OFFLOAD_STATE_CONST
  - TCP_OFFLOAD_STATE_CONST
 ---
 
@@ -140,7 +141,7 @@ The value of each TCP constant variable does not change during the life of a TCP
 When passed to an offload target, a TCP_OFFLOAD_STATE_CONST structure is associated with an 
     <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_ndis_miniport_offload_block_list">
     NDIS_MINIPORT_OFFLOAD_BLOCK_LIST</a> structure, which contains a header that is formatted as an 
-    <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure. The 
+    <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure. The 
     <b>Revision</b> member of the NDIS_OBJECT_HEADER structure, in this case, specifies the revision number of
     the TCP_OFFLOAD_STATE_CONST structure.
 
@@ -150,7 +151,7 @@ When passed to an offload target, a TCP_OFFLOAD_STATE_CONST structure is associa
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -163,3 +164,4 @@ When passed to an offload target, a TCP_OFFLOAD_STATE_CONST structure is associa
 
 
 <a href="/windows-hardware/drivers/ddi/ndischimney/ns-ndischimney-_tcp_offload_state_delegated">TCP_OFFLOAD_STATE_DELEGATED</a>
+

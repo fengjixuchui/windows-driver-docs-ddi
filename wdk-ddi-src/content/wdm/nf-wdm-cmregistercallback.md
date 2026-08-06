@@ -4,7 +4,6 @@ title: CmRegisterCallback function (wdm.h)
 description: The CmRegisterCallback routine is obsolete for Windows Vista and later operating system versions. Use CmRegisterCallbackEx instead.The CmRegisterCallback routine registers a RegistryCallback routine.
 old-location: kernel\cmregistercallback.htm
 tech.root: kernel
-ms.assetid: 1c7d1f90-f34b-4a93-bce2-581abe7cdc39
 ms.date: 04/30/2018
 keywords: ["CmRegisterCallback function"]
 ms.keywords: CmRegisterCallback, CmRegisterCallback routine [Kernel-Mode Driver Architecture], ConfigMgrRef_ec214e13-1342-48b5-9a31-8c6c9da57cd6.xml, kernel.cmregistercallback, wdm/CmRegisterCallback
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -52,19 +51,19 @@ The <b>CmRegisterCallback</b> routine registers a <a href="/windows-hardware/dri
 
 ## -parameters
 
-### -param Function 
+### -param Function [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-ex_callback_function">RegistryCallback</a> routine to register.
 
-### -param Context 
+### -param Context [in, optional]
 
-[in, optional]
+
 A driver-defined value that the configuration manager will pass as the <i>CallbackContext</i> parameter to the <i>RegistryCallback</i> routine
 
-### -param Cookie 
+### -param Cookie [out]
 
-[out]
+
 A pointer to a LARGE_INTEGER variable that receives the value that identifies the callback routine. When you unregister the callback routine, pass this value as the <i>Cookie</i> parameter to <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-cmunregistercallback">CmUnRegisterCallback</a>.
 
 ## -returns

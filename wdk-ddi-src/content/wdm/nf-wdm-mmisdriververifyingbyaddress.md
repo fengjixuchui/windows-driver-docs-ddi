@@ -4,7 +4,6 @@ title: MmIsDriverVerifyingByAddress function (wdm.h)
 description: The MmIsDriverVerifyingByAddress routine checks whether the kernel-mode driver that is identified by the specified image address is being verified or calls a driver that is being verified by Driver Verifier.
 old-location: kernel\mmisdriververifyingbyaddress.htm
 tech.root: kernel
-ms.assetid: ccc20b5b-0f16-422d-8900-03b57f08b1bc
 ms.date: 04/30/2018
 keywords: ["MmIsDriverVerifyingByAddress function"]
 ms.keywords: MmIsDriverVerifyingByAddress, MmIsDriverVerifyingByAddress routine [Kernel-Mode Driver Architecture], k106_37d22f13-de6a-4423-b148-9a7481570aaf.xml, kernel.mmisdriververifyingbyaddress, wdm/MmIsDriverVerifyingByAddress
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: NtosKrnl.lib
 req.dll: NtosKrnl.exe
-req.irql: <=APC_LEVEL
+req.irql: <= APC_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -50,9 +49,9 @@ The <b>MmIsDriverVerifyingByAddress</b> routine checks whether the kernel-mode  
 
 ## -parameters
 
-### -param AddressWithinSection 
+### -param AddressWithinSection [in]
 
-[in]
+
 A pointer to the virtual address within the driver image. <b>MmIsDriverVerifyingByAddress</b> uses this address to determine which driver to check.
 
 ## -returns

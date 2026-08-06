@@ -4,7 +4,6 @@ title: _PORT_DATA_1 (tcpxcv.h)
 description: The XcvData function uses a PORT_DATA_1 structure when it adds a port or configures an existing port.
 old-location: print\port_data_1.htm
 tech.root: print
-ms.assetid: 6d2165a7-ee21-4f7d-a03c-f9bed87a3c7a
 ms.date: 04/20/2018
 keywords: ["PORT_DATA_1 structure"]
 ms.keywords: "*PPORT_DATA_1, PORT_DATA_1, PORT_DATA_1 structure [Print Devices], PPORT_DATA_1, PPORT_DATA_1 structure pointer [Print Devices], _PORT_DATA_1, print.port_data_1, spoolfnc_6fd52423-d2f1-4c6c-bf42-63000c5d0e66.xml, tcpxcv/PORT_DATA_1, tcpxcv/PPORT_DATA_1"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - tcpxcv.h
 api_name:
+ - _PORT_DATA_1
+ - PPORT_DATA_1
  - PORT_DATA_1
 ---
 
@@ -119,3 +120,4 @@ See <a href="/windows-hardware/drivers/print/tcpmon-xcv-interface">TCPMON Xcv In
 ## -see-also
 
 <a href="/previous-versions/ff564255(v=vs.85)">XcvData</a>
+

@@ -4,7 +4,6 @@ title: _NDIS_SWITCH_PORT_PROPERTY_ISOLATION (ntddndis.h)
 description: The NDIS_SWITCH_PORT_PROPERTY_ISOLATION structure is used to specify the isolation properties for a VM network adapter's port.
 old-location: netvista\ndis_switch_port_property_isolation.htm
 tech.root: netvista
-ms.assetid: 142AF97B-601E-44FB-8548-90CB152B8760
 ms.date: 05/02/2018
 keywords: ["NDIS_SWITCH_PORT_PROPERTY_ISOLATION structure"]
 ms.keywords: "*PNDIS_SWITCH_PORT_PROPERTY_ISOLATION, NDIS_SWITCH_PORT_PROPERTY_ISOLATION, NDIS_SWITCH_PORT_PROPERTY_ISOLATION structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_PORT_PROPERTY_ISOLATION, PNDIS_SWITCH_PORT_PROPERTY_ISOLATION structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PORT_PROPERTY_ISOLATION, netvista.ndis_switch_port_property_isolation, ntddndis/NDIS_SWITCH_PORT_PROPERTY_ISOLATION, ntddndis/PNDIS_SWITCH_PORT_PROPERTY_ISOLATION"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Ntddndis.h
 api_name:
+ - _NDIS_SWITCH_PORT_PROPERTY_ISOLATION
+ - PNDIS_SWITCH_PORT_PROPERTY_ISOLATION
  - NDIS_SWITCH_PORT_PROPERTY_ISOLATION
 ---
 
@@ -56,7 +57,7 @@ The <b>NDIS_SWITCH_PORT_PROPERTY_ISOLATION</b> structure is used to specify the 
 
 ### -field Header
 
-The type, revision, and size of the <b>NDIS_SWITCH_PORT_PROPERTY_ISOLATION</b>  structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_SWITCH_PORT_PROPERTY_ISOLATION</b>  structure. This member is formatted as an <a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a> structure.
 
 The <b>Type</b> member of <b>Header</b> must be set to <b>NDIS_OBJECT_TYPE_DEFAULT</b>. To specify the version of the <b>NDIS_SWITCH_PORT_PROPERTY_ISOLATION</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
 
@@ -96,4 +97,5 @@ The default isolation ID that is applied to tagged packets if the <b>AllowUntagg
 
 
 
-<a href="/windows-hardware/drivers/ddi/ntddndis/ns-ntddndis-_ndis_object_header">NDIS_OBJECT_HEADER</a>
+<a href="/windows-hardware/drivers/ddi/objectheader/ns-objectheader-ndis_object_header">NDIS_OBJECT_HEADER</a>
+

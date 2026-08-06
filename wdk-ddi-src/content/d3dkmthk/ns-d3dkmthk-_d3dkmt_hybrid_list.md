@@ -2,7 +2,6 @@
 UID: NS:d3dkmthk._D3DKMT_HYBRID_LIST
 title: _D3DKMT_HYBRID_LIST (d3dkmthk.h)
 description: Describes the Direct 3D kernel mode hybrid list.
-ms.assetid: 15dea116-bc45-4ef9-a78a-9ab7f9a0842c
 ms.date: 10/19/2018
 keywords: ["D3DKMT_HYBRID_LIST structure"]
 ms.keywords: _D3DKMT_HYBRID_LIST, D3DKMT_HYBRID_LIST,
@@ -35,6 +34,7 @@ api_location:
  - d3dkmthk.h
 api_name:
  - _D3DKMT_HYBRID_LIST
+ - D3DKMT_HYBRID_LIST
 dev_langs:
  - c++
 ---
@@ -52,9 +52,9 @@ Describes the Direct 3D kernel mode hybrid list.
 
 The GPU preference query state.
 
-### -field AdapterLuid
+### -field AdapterLuid [in,opt]
 
-[in,opt] Adapter LUID to per-adapter DList state. Optional, if *bUserPreferenceQuery* is true. 
+Adapter LUID to per-adapter DList state. Optional, if *bUserPreferenceQuery* is true. 
 
 For more info about DList, see *Setting up the dList DLL* in [Hybrid system DDI](/windows-hardware/drivers/display/hybrid-system-ddi).
 
@@ -68,3 +68,4 @@ Indicates whether the structure is referring to user GPU preference, or per-adap
 ## -remarks
 
 ## -see-also
+

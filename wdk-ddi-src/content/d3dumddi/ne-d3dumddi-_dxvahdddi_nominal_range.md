@@ -1,10 +1,9 @@
 ---
 UID: NE:d3dumddi._DXVAHDDDI_NOMINAL_RANGE
 title: _DXVAHDDDI_NOMINAL_RANGE (d3dumddi.h)
-description: Indicates the luminance range of YUV data.
+description: The DXVAHDDDI_NOMINAL_RANGE enumeration indicates the luminance range of YUV color encoding system data.
 old-location: display\dxvahdddi_nominal_range.htm
 tech.root: display
-ms.assetid: 952BE36C-0F53-47C3-9C95-E6ECAB9D36D1
 ms.date: 05/10/2018
 keywords: ["DXVAHDDDI_NOMINAL_RANGE enumeration"]
 ms.keywords: DXVAHDDDI_NOMINAL_RANGE, DXVAHDDDI_NOMINAL_RANGE enumeration [Display Devices], DXVAHDDDI_NOMINAL_RANGE_0_255, DXVAHDDDI_NOMINAL_RANGE_16_235, DXVAHDDDI_NOMINAL_RANGE_UNDEFINED, _DXVAHDDDI_NOMINAL_RANGE, d3dumddi/DXVAHDDDI_NOMINAL_RANGE, d3dumddi/DXVAHDDDI_NOMINAL_RANGE_0_255, d3dumddi/DXVAHDDDI_NOMINAL_RANGE_16_235, d3dumddi/DXVAHDDDI_NOMINAL_RANGE_UNDEFINED, display.dxvahdddi_nominal_range
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dumddi.h
 api_name:
+ - _DXVAHDDDI_NOMINAL_RANGE
  - DXVAHDDDI_NOMINAL_RANGE
 ---
 
@@ -67,3 +67,4 @@ The <i>full luminance range</i>, or <i>extended range</i>, of 0 to 255, inclusiv
 ## -remarks
 
 For more information on luminance range, see <a href="/windows-hardware/drivers/display/yuv-format-ranges">YUV format ranges in Windows 8.1</a>.
+

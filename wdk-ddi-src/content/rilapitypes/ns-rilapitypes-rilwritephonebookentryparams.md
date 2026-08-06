@@ -1,10 +1,9 @@
 ---
 UID: NS:rilapitypes.RILWRITEPHONEBOOKENTRYPARAMS
 title: RILWRITEPHONEBOOKENTRYPARAMS (rilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Don't use this structure in your code. Microsoft reserves the RILWRITEPHONEBOOKENTRYPARAMS structure for internal use only."
 old-location: netvista\rilwritephonebookentryparams.htm
 tech.root: netvista
-ms.assetid: 56d13074-4d7e-474e-8c4a-d319f38ecc97
 ms.date: 05/02/2018
 keywords: ["RILWRITEPHONEBOOKENTRYPARAMS structure"]
 ms.keywords: "*LPRILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS, RILWRITEPHONEBOOKENTRYPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilwritephonebookentryparams, ntddrilapitypes/RILWRITEPHONEBOOKENTRYPARAMS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILWRITEPHONEBOOKENTRYPARAMS
+ - LPRILWRITEPHONEBOOKENTRYPARAMS
 ---
 
 # RILWRITEPHONEBOOKENTRYPARAMS structure (rilapitypes.h)

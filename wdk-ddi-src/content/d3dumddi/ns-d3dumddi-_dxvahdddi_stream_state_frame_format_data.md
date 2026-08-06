@@ -4,7 +4,6 @@ title: _DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA (d3dumddi.h)
 description: The DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA structure describes data that specifies the frame format of the input.
 old-location: display\dxvahdddi_stream_state_frame_format_data.htm
 tech.root: display
-ms.assetid: e04e21e7-6d13-4705-8cc9-cc1b00bf04e4
 ms.date: 05/10/2018
 keywords: ["DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA structure"]
 ms.keywords: DXVA2_Structs_5dd1d1dc-aadc-4772-888e-f16eac3dd935.xml, DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA, DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA structure [Display Devices], _DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA, d3dumddi/DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA, display.dxvahdddi_stream_state_frame_format_data
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA
  - DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA
 ---
 
@@ -52,9 +52,9 @@ The DXVAHDDDI_STREAM_STATE_FRAME_FORMAT_DATA structure describes data that speci
 
 ## -struct-fields
 
-### -field FrameFormat
+### -field FrameFormat [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvahdddi_frame_format">DXVAHDDDI_FRAME_FORMAT</a>-typed value that indicates the frame format of the input stream. The default value is DXVAHDDDI_FRAME_FORMAT_PROGRESSIVE, which indicates progressive format.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ne-d3dumddi-_dxvahdddi_frame_format">DXVAHDDDI_FRAME_FORMAT</a>-typed value that indicates the frame format of the input stream. The default value is DXVAHDDDI_FRAME_FORMAT_PROGRESSIVE, which indicates progressive format.
 
 ## -remarks
 
@@ -83,3 +83,4 @@ The driver also might not set the DXVAHDDDI_INPUT_FORMAT_CAPS_PALETTE_INTERLACED
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_dxvahd_setvideoprocessstreamstate">SetVideoProcessStreamState</a>
+

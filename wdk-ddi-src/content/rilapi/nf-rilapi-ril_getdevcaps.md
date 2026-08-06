@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_GetDevCaps
 title: RIL_GetDevCaps function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_GetDevCaps function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_getdevcaps.htm
 tech.root: netvista
-ms.assetid: eb239b03-7e46-4091-adff-86ed95a06704
 ms.date: 05/02/2018
 keywords: ["RIL_GetDevCaps function"]
 ms.keywords: RIL_GetDevCaps, RIL_GetDevCaps method [Network Drivers Starting with Windows Vista], netvista.ril_getdevcaps, rilapi/RIL_GetDevCaps

@@ -4,7 +4,6 @@ title: DUMP_READ (ntdddump.h)
 description: The Dump_Read callback routine is called after the read from the dump port driver. The filter driver can access the dump data during the call to this routine.
 old-location: storage\dump_read.htm
 tech.root: storage
-ms.assetid: 5F95D38C-8E11-49D4-82C4-718BD846A834
 ms.date: 03/29/2018
 keywords: ["DUMP_READ callback function"]
 ms.keywords: Dump_Read, Dump_Read routine [Storage Devices], PDUMP_READ, ntdddump/Dump_Read, storage.dump_read
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ntdddump.h
 api_name:
- - Dump_Read
+ - DUMP_READ
 ---
 
 # DUMP_READ callback function
@@ -50,19 +49,19 @@ The <i>Dump_Read</i> callback routine is called after the read from the dump por
 
 ## -parameters
 
-### -param FilterExtension 
+### -param FilterExtension [in]
 
-[in]
+
 A pointer to a <a href="/windows-hardware/drivers/ddi/ntdddump/ns-ntdddump-_filter_extension">FILTER_EXTENSION</a> structure.
 
-### -param DiskByteOffset 
+### -param DiskByteOffset [in]
 
-[in]
+
 The value, in bytes, relative to the source partition for the crash dump or hibernation. Filter drivers should not modify this field.
 
-### -param Mdl 
+### -param Mdl [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_mdl">MDL</a> structure that describes the data buffer containing the dump data. Filter drivers should not modify this field.
 
 ## -returns
@@ -82,3 +81,4 @@ Filter drivers can modify the contents of the data buffer contained in <b>Mdl</b
 
 
 <a href="/windows-hardware/drivers/ddi/ntdddump/ns-ntdddump-_filter_extension">FILTER_EXTENSION</a>
+

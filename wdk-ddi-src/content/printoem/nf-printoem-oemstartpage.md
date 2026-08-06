@@ -2,10 +2,8 @@
 UID: NF:printoem.OEMStartPage
 title: OEMStartPage function (printoem.h)
 description: The OEMStartPage function is called by GDI when it is ready to start sending the contents of a physical page to the driver for rendering.
-old-location: print\oemstartpage.htm
 tech.root: print
-ms.assetid: 86cee994-2dfe-4eaf-906b-ce6d9051399e
-ms.date: 04/20/2018
+ms.date: 08/11/2022
 keywords: ["OEMStartPage function"]
 ms.keywords: OEMStartPage, OEMStartPage function [Print Devices], print.oemstartpage, print_unidrv-pscript_rendering_df5731ee-40be-45e1-8dbb-b7893ec27622.xml, printoem/OEMStartPage
 req.header: printoem.h
@@ -41,14 +39,16 @@ api_name:
  - OEMStartPage
 ---
 
-# OEMStartPage function
-
-
 ## -description
 
-The <code>OEMStartPage</code> function is called by GDI when it is ready to start sending the contents of a physical page to the driver for rendering.
+The **OEMStartPage** function is called by GDI when it is ready to start sending the contents of a physical page to the driver for rendering.
 
 ## -parameters
 
 ### -param pso
 
+Defines the **SURFOBJ** parameter *pso*.
+
+## -returns
+
+Returns a **BOOL** value.

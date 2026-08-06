@@ -4,7 +4,6 @@ title: IKsReferenceClock::GetCorrelatedTime (ks.h)
 description: The IKsReferenceClock::GetCorrelatedTime method queries the associated reference clock for current stream time and acquires the correlated system time.
 old-location: stream\iksreferenceclock_getcorrelatedtime.htm
 tech.root: stream
-ms.assetid: 3f4a47bb-460e-4ca0-9aee-4bcfdb88dd30
 ms.date: 04/23/2018
 keywords: ["IKsReferenceClock::GetCorrelatedTime"]
 ms.keywords: GetCorrelatedTime, GetCorrelatedTime method [Streaming Media Devices], GetCorrelatedTime method [Streaming Media Devices],IKsReferenceClock interface, IKsReferenceClock interface [Streaming Media Devices],GetCorrelatedTime method, IKsReferenceClock.GetCorrelatedTime, IKsReferenceClock::GetCorrelatedTime, avintfc_9bb8180e-a8e6-4b89-a615-0516470a7dd8.xml, ks/IKsReferenceClock::GetCorrelatedTime, stream.iksreferenceclock_getcorrelatedtime
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - ks.h
 api_name:
- - IKsReferenceClock.GetCorrelatedTime
+ - IKsReferenceClock::GetCorrelatedTime
 ---
 
 # IKsReferenceClock::GetCorrelatedTime
@@ -50,9 +49,9 @@ The <b>IKsReferenceClock::GetCorrelatedTime</b> method queries the associated re
 
 ## -parameters
 
-### -param SystemTime 
+### -param SystemTime [out]
 
-[out]
+
 A pointer to a LONGLONG-typed variable that receives the current system time in 100 nanosecond units.
 
 ## -returns
@@ -74,3 +73,4 @@ AVStream uses the <a href="/windows-hardware/drivers/stream/ksproperty-clock-cor
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/ks/nf-ks-kspingetreferenceclockinterface">KsPinGetReferenceClockInterface</a>
+

@@ -1,11 +1,10 @@
 ---
 UID: NF:rilapi.RIL_AvoidCDMASystem
 title: RIL_AvoidCDMASystem function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_AvoidCDMASystem function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_avoidcdmasystem.htm
 tech.root: netvista
-ms.assetid: 03b445ca-a2af-4d84-bb2e-fea9f5800e20
-ms.date: 05/02/2018
+ms.date: 09/07/2022
 keywords: ["RIL_AvoidCDMASystem function"]
 ms.keywords: RIL_AvoidCDMASystem, RIL_AvoidCDMASystem method [Network Drivers Starting with Windows Vista], netvista.ril_avoidcdmasystem, rilapi/RIL_AvoidCDMASystem
 req.header: rilapi.h
@@ -56,7 +55,7 @@ This topic supports the Windows driver infrastructure and is not intended to be 
 
 ### -param dwExecutor
 
-### -param requestType
+### -param unnamedParam4
 
 ## -returns
 

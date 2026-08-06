@@ -1,10 +1,9 @@
 ---
-UID: NS:ksmedia.__unnamed_struct_126
+UID: NS:ksmedia.KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER
 title: KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER (ksmedia.h)
-description: This structure contains the header information for a per-frame settings item.
+description: The KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER structure contains the header information for a per-frame settings item.
 old-location: stream\kscamera_perframesetting_cap_item_header.htm
 tech.root: stream
-ms.assetid: 6E68CACB-4E0E-41E4-BAB6-0B7ECEFA92F6
 ms.date: 04/30/2019
 keywords: ["KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER structure"]
 ms.keywords: "*PKSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER, KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER, KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER structure [Streaming Media Devices], PKSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER, PKSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER structure pointer [Streaming Media Devices], ksmedia/KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER, ksmedia/PKSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER, stream.kscamera_perframesetting_cap_item_header"
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - Ksmedia.h
 api_name:
+ - PKSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER
  - KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER
 ---
 
@@ -63,3 +63,4 @@ The <a href="/windows-hardware/drivers/ddi/ksmedia/ne-ksmedia-kscamera_perframes
 ### -field Flags
 
 This contains the supported capability flags.
+

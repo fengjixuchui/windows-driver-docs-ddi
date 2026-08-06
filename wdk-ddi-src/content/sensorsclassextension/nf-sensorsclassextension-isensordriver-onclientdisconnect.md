@@ -4,7 +4,6 @@ title: ISensorDriver::OnClientDisconnect (sensorsclassextension.h)
 description: The ISensorDriver::OnClientDisconnect method notifies the sensor driver that a client application has disconnected.
 old-location: sensors\isensordriver_onclientdisconnect.htm
 tech.root: sensors
-ms.assetid: 9484610b-4cbd-4c4e-9e60-ef052702325c
 ms.date: 05/03/2018
 keywords: ["ISensorDriver::OnClientDisconnect"]
 ms.keywords: ISensorDriver interface [Sensor Devices],OnClientDisconnect method, ISensorDriver.OnClientDisconnect, ISensorDriver::OnClientDisconnect, OnClientDisconnect, OnClientDisconnect method [Sensor Devices], OnClientDisconnect method [Sensor Devices],ISensorDriver interface, Sensor_IFaces_f5f91a04-84b3-4302-9c26-845281651ed9.xml, sensors.isensordriver_onclientdisconnect, sensorsclassextension/ISensorDriver::OnClientDisconnect
@@ -39,7 +38,7 @@ api_location:
  - SensorsClassExtension.lib
  - SensorsClassExtension.dll
 api_name:
- - ISensorDriver.OnClientDisconnect
+ - ISensorDriver::OnClientDisconnect
 ---
 
 # ISensorDriver::OnClientDisconnect
@@ -51,14 +50,14 @@ The <b>ISensorDriver::OnClientDisconnect</b> method notifies the sensor driver t
 
 ## -parameters
 
-### -param pClientFile 
+### -param pClientFile [in]
 
-[in]
+
 Pointer to an <a href="/windows-hardware/drivers/ddi/wudfddi/nn-wudfddi-iwdffile">IWDFFile</a> interface that represents the file object for the client that disconnected.
 
-### -param pwszSensorID 
+### -param pwszSensorID [in]
 
-[in]
+
 <b>LPWSTR</b> that contains the ID for the sensor from which the client application is disconnecting.
 
 ## -returns
@@ -153,3 +152,4 @@ HRESULT CSensorDdi:: OnClientDisconnect(
 
 
 <a href="/windows-hardware/drivers/ddi/sensorsclassextension/nf-sensorsclassextension-isensordriver-onclientconnect">ISensorDriver::OnClientConnect</a>
+

@@ -4,7 +4,6 @@ title: PFND3DDDI_UPDATEPALETTE (d3dumddi.h)
 description: The UpdatePalette function updates a texture palette.
 old-location: display\updatepalette.htm
 tech.root: display
-ms.assetid: 7c22e0c9-cc24-4398-88b7-c91855cbc731
 ms.date: 05/10/2018
 keywords: ["PFND3DDDI_UPDATEPALETTE callback function"]
 ms.keywords: PFND3DDDI_UPDATEPALETTE, PFND3DDDI_UPDATEPALETTE callback, UpdatePalette, UpdatePalette callback function [Display Devices], UserModeDisplayDriver_Functions_d3b21e65-68dc-44d9-b5b3-96f37588965e.xml, d3dumddi/UpdatePalette, display.updatepalette
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
- - UpdatePalette
+ - PFND3DDDI_UPDATEPALETTE
 ---
 
 # PFND3DDDI_UPDATEPALETTE callback function
@@ -50,18 +49,18 @@ The <i>UpdatePalette</i> function updates a texture palette.
 
 ## -parameters
 
-### -param hDevice 
+### -param hDevice [in]
 
-[in]
+
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *pData* [in]
 
 A pointer to a <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddiarg_updatepalette">D3DDDIARG_UPDATEPALETTE</a> structure that describes parameters for the palette-update operation.
 
-### -param Arg3
+### -param unnamedParam3
 
 *pPaletteData* [in]
 
@@ -99,3 +98,4 @@ The <b>NumEntries</b> member specifies the number of entries in the array at <i>
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_devicefuncs">D3DDDI_DEVICEFUNCS</a>
+

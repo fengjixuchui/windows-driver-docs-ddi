@@ -4,7 +4,6 @@ title: _PEP_WORK_DEVICE_POWER (pep_x.h)
 description: The PEP_WORK_DEVICE_POWER structure describes the new power requirements for the specified device.
 old-location: kernel\pep_work_device_power.htm
 tech.root: kernel
-ms.assetid: 5B39DFE1-3830-4650-9BB9-A03A040F1015
 ms.date: 04/30/2018
 keywords: ["PEP_WORK_DEVICE_POWER structure"]
 ms.keywords: "*PPEP_WORK_DEVICE_POWER, PEP_WORK_DEVICE_POWER, PEP_WORK_DEVICE_POWER structure [Kernel-Mode Driver Architecture], PPEP_WORK_DEVICE_POWER, PPEP_WORK_DEVICE_POWER structure pointer [Kernel-Mode Driver Architecture], _PEP_WORK_DEVICE_POWER, kernel.pep_work_device_power, pep_x/PEP_WORK_DEVICE_POWER, pep_x/PPEP_WORK_DEVICE_POWER"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - pep_x.h
 api_name:
+ - _PEP_WORK_DEVICE_POWER
+ - PPEP_WORK_DEVICE_POWER
  - PEP_WORK_DEVICE_POWER
 ---
 
@@ -73,3 +74,4 @@ The <b>DevicePower</b> member of the <a href="/windows-hardware/drivers/ddi/pepf
 
 
 <a href="/windows-hardware/drivers/ddi/pepfx/ns-pepfx-_pep_work_information">PEP_WORK_INFORMATION</a>
+

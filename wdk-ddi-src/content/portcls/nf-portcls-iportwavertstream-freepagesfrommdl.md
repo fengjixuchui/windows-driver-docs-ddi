@@ -4,7 +4,6 @@ title: IPortWaveRTStream::FreePagesFromMdl (portcls.h)
 description: The FreePagesFromMdl method frees a memory descriptor list (MDL).
 old-location: audio\iportwavertstream_freepagesfrommdl.htm
 tech.root: audio
-ms.assetid: 8839c0ab-08c5-4cc7-a526-aa1ebe2fde15
 ms.date: 05/08/2018
 keywords: ["IPortWaveRTStream::FreePagesFromMdl"]
 ms.keywords: FreePagesFromMdl, FreePagesFromMdl method [Audio Devices], FreePagesFromMdl method [Audio Devices],IPortWaveRTStream interface, IPortWaveRTStream interface [Audio Devices],FreePagesFromMdl method, IPortWaveRTStream.FreePagesFromMdl, IPortWaveRTStream::FreePagesFromMdl, audio.iportwavertstream_freepagesfrommdl, audmp-routines_7e3477c5-08b8-4e7c-bfb9-36945bf765c4.xml, portcls/IPortWaveRTStream::FreePagesFromMdl
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Passive level.
+req.irql: PASSIVE_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Portcls.h
 api_name:
- - IPortWaveRTStream.FreePagesFromMdl
+ - IPortWaveRTStream::FreePagesFromMdl
 ---
 
 # IPortWaveRTStream::FreePagesFromMdl
@@ -50,9 +49,9 @@ The <code>FreePagesFromMdl</code> method frees a memory descriptor list (<a href
 
 ## -parameters
 
-### -param MemoryDescriptorList 
+### -param MemoryDescriptorList [in]
 
-[in]
+
 Pointer to the MDL.
 
 ## -remarks
@@ -72,3 +71,4 @@ The miniport driver must call this method to free an MDL that was previously all
 
 
 <a href="/windows-hardware/drivers/ddi/portcls/nf-portcls-iportwavertstream-allocatepagesformdl">IPortWaveRTStream::AllocatePagesForMdl</a>
+

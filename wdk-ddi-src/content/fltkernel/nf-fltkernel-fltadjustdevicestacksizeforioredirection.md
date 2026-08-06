@@ -4,7 +4,6 @@ title: FltAdjustDeviceStackSizeForIoRedirection function (fltkernel.h)
 description: The FltAdjustDeviceStackSizeForIoRedirection routine increases the size of the source device stack to allow a minifilter to redirect I/O from a specified source instance to a specified target instance when the target stack is deeper than the source stack.
 old-location: ifsk\fltadjustdevicestacksizeforioredirection.htm
 tech.root: ifsk
-ms.assetid: 48ca0f39-e870-4f9b-92d5-1226972bf2d5
 ms.date: 04/16/2018
 keywords: ["FltAdjustDeviceStackSizeForIoRedirection function"]
 ms.keywords: FltAdjustDeviceStackSizeForIoRedirection, FltAdjustDeviceStackSizeForIoRedirection routine [Installable File System Drivers], fltkernel/FltAdjustDeviceStackSizeForIoRedirection, ifsk.fltadjustdevicestacksizeforioredirection
@@ -24,7 +23,7 @@ req.assembly:
 req.type-library: 
 req.lib: FltMgr.lib
 req.dll: 
-req.irql: <=DISPATCH_LEVEL
+req.irql: <= DISPATCH_LEVEL
 targetos: Windows
 req.typenames: 
 f1_keywords:
@@ -51,19 +50,19 @@ The <b>FltAdjustDeviceStackSizeForIoRedirection</b> routine increases the size o
 
 ## -parameters
 
-### -param SourceInstance 
+### -param SourceInstance [in]
 
-[in]
+
 The filter instance on the source device stack.
 
-### -param TargetInstance 
+### -param TargetInstance [in]
 
-[in]
+
 The filter instance on the target device stack.
 
-### -param SourceDeviceStackSizeModified 
+### -param SourceDeviceStackSizeModified [out, optional]
 
-[out, optional]
+
 This optional parameter has a value of <b>TRUE</b> if the <b>FltAdjustDeviceStackSizeForIoRedirection</b> routine modified the size of the source device stack, <b>FALSE</b> otherwise.
 
 ## -returns

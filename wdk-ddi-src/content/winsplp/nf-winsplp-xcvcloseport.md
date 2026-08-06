@@ -4,7 +4,6 @@ title: XcvClosePort function (winsplp.h)
 description: A port monitor server DLL's XcvClosePort function closes a printer port that was opened by XcvOpenPort.
 old-location: print\xcvcloseport.htm
 tech.root: print
-ms.assetid: 8dfeb2d5-e75e-4e5b-b209-cb23133136f7
 ms.date: 02/02/2018
 keywords: ["XcvClosePort function"]
 ms.keywords: XcvClosePort, winsplp/XcvClosePort, print.xcvcloseport, spoolfnc_5d0750d1-1f50-4e09-8c91-1362b2037265.xml, XcvClosePort function [Print Devices]
@@ -27,7 +26,6 @@ req.dll:
 req.irql: 
 targetos: Windows
 req.typenames: NOTIFICATION_CONFIG_FLAGS
-req.product: Windows 10 or later.
 f1_keywords:
  - XcvClosePort
  - winsplp/XcvClosePort
@@ -51,9 +49,9 @@ A port monitor server DLL's <code>XcvClosePort</code> function closes a printer 
 
 ## -parameters
 
-### -param hXcv 
+### -param hXcv [in]
 
-[in]
+
 Caller-supplied printer handle obtained by calling <b>OpenPrinter</b> (described in the Microsoft Windows SDK documentation). This handle is created and returned by <a href="..\winsplp\nf-winsplp-xcvopenport.md">XcvOpenPort</a>.
 
 ## -returns

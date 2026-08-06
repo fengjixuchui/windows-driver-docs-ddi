@@ -4,7 +4,6 @@ title: IoReportInterruptActive function (wdm.h)
 description: The IoReportInterruptActive routine informs the operating system that a registered interrupt service routine (ISR) is active and ready to handle interrupt requests.
 old-location: kernel\ioreportinterruptactive.htm
 tech.root: kernel
-ms.assetid: 41C3AC04-14AF-4C37-9557-F9FF494F234B
 ms.date: 04/30/2018
 keywords: ["IoReportInterruptActive function"]
 ms.keywords: IoReportInterruptActive, IoReportInterruptActive routine [Kernel-Mode Driver Architecture], kernel.ioreportinterruptactive, wdm/IoReportInterruptActive
@@ -50,9 +49,9 @@ The <b>IoReportInterruptActive</b> routine informs the operating system that a r
 
 ## -parameters
 
-### -param Parameters 
+### -param Parameters [in]
 
-[in]
+
 A pointer to an <a href="/windows-hardware/drivers/ddi/wdm/ns-wdm-_io_report_interrupt_active_state_parameters">IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS</a> structure that contains the connection context associated with the interrupt. The caller received this context from the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex">IoConnectInterruptEx</a> call that registered the ISR.
 
 ## -remarks
@@ -61,7 +60,7 @@ The <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-ioconnectinterruptex">IoCo
 
 An ISR that is in the active state can be disconnected or made inactive. To disconnect the ISR and delete its registration, call the <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iodisconnectinterruptex">IoDisconnectInterruptEx</a> routine. To make the ISR inactive without changing its registration, call <b>IoReportInterruptInactive</b>.
 
-The <b>IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS</b> structure must contain a valid connection contect obtained from an <b>IoConnectInterruptEx</b> call. 
+The <b>IO_REPORT_INTERRUPT_ACTIVE_STATE_PARAMETERS</b> structure must contain a valid connection contact obtained from an <b>IoConnectInterruptEx</b> call. 
 
 For more information about <b>IoReportInterruptActive</b>, see <a href="/windows-hardware/drivers/kernel/making-an-isr-active-or-inactive">Making an ISR Active or Inactive</a>.
 

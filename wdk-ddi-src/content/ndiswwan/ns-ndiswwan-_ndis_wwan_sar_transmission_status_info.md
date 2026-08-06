@@ -3,7 +3,6 @@ UID: NS:ndiswwan._NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO
 title: _NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO (ndiswwan.h)
 description: The NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO structure describes a mobile broadband (MBB) modem's Specific Absorption Rate (SAR) transmission status.
 tech.root: netvista
-ms.assetid: 7b1c6aac-9aa3-4971-ae48-bbdb7e0cb506
 ms.date: 08/20/2018
 keywords: ["NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO structure"]
 ms.keywords: _NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO, NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO, *PNDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO,
@@ -37,6 +36,8 @@ api_location:
  - ndiswwan.h
 api_name:
  - _NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO
+ - PNDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO
+ - NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO
 ---
 
 # _NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO structure
@@ -58,7 +59,7 @@ The header with type, revision, and size information about the **NDIS_WWAN_SAR_T
 | Revision | NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO_REVISION_1 |
 | Size | sizeof(NDIS_WWAN_SAR_TRANSMISSION_STATUS_INFO) |
 
-For more information about these members, see [**NDIS_OBJECT_HEADER**](../ntddndis/ns-ntddndis-_ndis_object_header.md).
+For more information about these members, see [**NDIS_OBJECT_HEADER**](../objectheader/ns-objectheader-ndis_object_header.md).
 
 ### -field uStatus
 
@@ -88,3 +89,4 @@ This structure is used in the [NDIS_STATUS_WWAN_SAR_TRANSMISSION_STATUS](/window
 [NDIS_STATUS_WWAN_SAR_TRANSMISSION_STATUS](/windows-hardware/drivers/network/ndis-status-wwan-sar-transmission-status)
 
 [**WWAN_SAR_TRANSMISSION_STATUS_INFO**](../wwan/ns-wwan-_wwan_sar_transmission_status_info.md)
+

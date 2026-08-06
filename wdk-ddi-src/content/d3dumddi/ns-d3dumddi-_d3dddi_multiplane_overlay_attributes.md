@@ -1,10 +1,9 @@
 ---
 UID: NS:d3dumddi._D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES
 title: _D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES (d3dumddi.h)
-description: Used by the user-mode display driver to specify overlay plane attributes.
+description: The _D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES structure contains information that is used by the user-mode display driver to specify overlay plane attributes.
 old-location: display\d3dddi_multiplane_overlay_attributes.htm
 tech.root: display
-ms.assetid: 6f758785-5d7f-4d63-82c7-93ced5de3da4
 ms.date: 05/10/2018
 keywords: ["D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES structure"]
 ms.keywords: D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES, D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES structure [Display Devices], _D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES, display.d3dddi_multiplane_overlay_attributes
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - D3dumddi.h
 api_name:
+ - _D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES
  - D3DDDI_MULTIPLANE_OVERLAY_ATTRIBUTES
 ---
 
@@ -138,3 +138,4 @@ Specifies the overlay plane's stretch quality, given as a value from the <a href
 
 
 <a href="/windows/win32/api/windef/ns-windef-rect">RECT</a>
+

@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_GETCAPTUREHANDLE
 title: PFND3D11_1DDI_GETCAPTUREHANDLE (d3d10umddi.h)
 description: Returns the handle for a specified resource that was allocated by the driver. This function also returns the size and location of specified data within the resource.
 old-location: display\getcapturehandle.htm
-ms.assetid: b1ca7cf0-fe63-452f-8360-fdba05875719
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_GETCAPTUREHANDLE callback function"]
 ms.keywords: GetCaptureHandle, GetCaptureHandle callback function [Display Devices], PFND3D11_1DDI_GETCAPTUREHANDLE, PFND3D11_1DDI_GETCAPTUREHANDLE callback, d3d10umddi/GetCaptureHandle, display.getcapturehandle
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - GetCaptureHandle
-product:
- - Windows
+ - PFND3D11_1DDI_GETCAPTUREHANDLE
 ---
 
 # PFND3D11_1DDI_GETCAPTUREHANDLE callback function
@@ -70,3 +67,4 @@ Before the Microsoft Direct3D runtime calls the <i>GetCaptureHandle</i> function
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/ns-d3d10umddi-_d3d11_1ddi_getcapturehandledata">D3D11_1DDI_GETCAPTUREHANDLEDATA</a>
+

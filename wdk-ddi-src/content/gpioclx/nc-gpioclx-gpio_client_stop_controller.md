@@ -4,7 +4,6 @@ title: GPIO_CLIENT_STOP_CONTROLLER (gpioclx.h)
 description: The CLIENT_StopController event callback function performs operations that are needed to prepare the general-purpose I/O (GPIO) controller device to exit the D0 power state.
 old-location: gpio\client_stopcontroller.htm
 tech.root: GPIO
-ms.assetid: 4B1A33AC-E341-478E-8C1E-94F4473A191C
 ms.date: 02/15/2018
 keywords: ["GPIO_CLIENT_STOP_CONTROLLER callback function"]
 ms.keywords: CLIENT_StopController, CLIENT_StopController callback, CLIENT_StopController callback function [Parallel Ports], GPIO.client_stopcontroller, GPIO_CLIENT_STOP_CONTROLLER, gpioclx/CLIENT_StopController
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - Gpioclx.h
 api_name:
- - CLIENT_StopController
+ - GPIO_CLIENT_STOP_CONTROLLER
 ---
 
 # GPIO_CLIENT_STOP_CONTROLLER callback function
@@ -50,19 +49,19 @@ The <i>CLIENT_StopController</i> event callback function performs operations tha
 
 ## -parameters
 
-### -param Context 
+### -param Context [in]
 
-[in]
+
 A pointer to the GPIO controller driver's <a href="/windows-hardware/drivers/gpio/gpio-device-contexts">device context</a>.
 
-### -param SaveContext 
+### -param SaveContext [in]
 
-[in]
+
 Whether the client driver should save the current hardware context of the GPIO controller device. If TRUE, the hardware context should be saved. If FALSE, the hardware context should not be saved. For more information, see Remarks.
 
-### -param TargetState 
+### -param TargetState [in]
 
-[in]
+
 The target device power state. This parameter is a <a href="/windows-hardware/drivers/ddi/wdfdevice/ne-wdfdevice-_wdf_power_device_state">WDF_POWER_DEVICE_STATE</a> enumeration value that specifies the low-power state that the device is to enter when it exits the D0 power state. The GPIO controller driver can use this information to determine how to configure the controller device before it leaves D0.
 
 ## -returns
@@ -117,3 +116,4 @@ The GPIO_CLIENT_STOP_CONTROLLER function type is defined in the Gpioclx.h header
 
 
 <a href="/windows-hardware/drivers/ddi/gpioclx/nf-gpioclx-gpio_clx_registerclient">GPIO_CLX_RegisterClient</a>
+

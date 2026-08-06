@@ -4,7 +4,6 @@ title: WdfWorkItemGetParentObject function (wdfworkitem.h)
 description: The WdfWorkItemGetParentObject method returns the framework object that a specified work item is associated with.
 old-location: wdf\wdfworkitemgetparentobject.htm
 tech.root: wdf
-ms.assetid: 6ebb1955-1ffc-4869-84c8-69d672ac782e
 ms.date: 02/26/2018
 keywords: ["WdfWorkItemGetParentObject function"]
 ms.keywords: DFWorkItemObjectRef_d01f85c6-ab9e-413a-8352-49db7ae053d0.xml, WdfWorkItemGetParentObject, WdfWorkItemGetParentObject method, kmdf.wdfworkitemgetparentobject, wdf.wdfworkitemgetparentobject, wdfworkitem/WdfWorkItemGetParentObject
@@ -55,9 +54,9 @@ The <b>WdfWorkItemGetParentObject</b> method returns the framework object that a
 
 ## -parameters
 
-### -param WorkItem 
+### -param WorkItem [in]
 
-[in]
+
 A handle to a framework work-item object that is obtained from a previous call to <a href="/windows-hardware/drivers/ddi/wdfworkitem/nf-wdfworkitem-wdfworkitemcreate">WdfWorkItemCreate</a>.
 
 ## -returns

@@ -4,7 +4,6 @@ title: IWDFIoRequest::GetCreateParameters (wudfddi.h)
 description: The GetCreateParameters method retrieves the request parameters for a create-type request.
 old-location: wdf\iwdfiorequest_getcreateparameters.htm
 tech.root: wdf
-ms.assetid: 1bc6eed2-c6bd-448f-8f78-630cca4cd29a
 ms.date: 02/26/2018
 keywords: ["IWDFIoRequest::GetCreateParameters"]
 ms.keywords: GetCreateParameters, GetCreateParameters method, GetCreateParameters method,IWDFIoRequest interface, IWDFIoRequest interface,GetCreateParameters method, IWDFIoRequest.GetCreateParameters, IWDFIoRequest::GetCreateParameters, UMDFRequestObjectRef_ac352dd9-a9e0-4741-abfe-92482dd25112.xml, umdf.iwdfiorequest_getcreateparameters, wdf.iwdfiorequest_getcreateparameters, wudfddi/IWDFIoRequest::GetCreateParameters
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - WUDFx.dll
 api_name:
- - IWDFIoRequest.GetCreateParameters
+ - IWDFIoRequest::GetCreateParameters
 ---
 
 # IWDFIoRequest::GetCreateParameters
@@ -52,9 +51,9 @@ The <b>GetCreateParameters</b> method retrieves the request parameters for a cre
 
 ## -parameters
 
-### -param pOptions 
+### -param pOptions [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives a bitmask of flags that specify the options that are applied when creating or opening the file that is associated with the request and the action to be taken if the file already exists.
 
 The high 8 bits of this parameter correspond to the <i>CreateDisposition</i> parameter of the kernel-mode <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile">ZwCreateFile</a> function. These 8 bits specify the action to be taken, depending on whether the file already exists. Note that these disposition values differ from the values that are used in the <i>dwCreationDisposition</i> parameter of the Win32 <b>CreateFile</b> function.
@@ -63,16 +62,16 @@ The low 24 bits of this parameter correspond to the <i>CreateOptions</i> paramet
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information.
 
-### -param pFileAttributes 
+### -param pFileAttributes [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives a bitmask of attribute flags that is applied when creating or opening the file that is associated with the request. Explicitly specified attributes are applied only when the file is created, superseded, or, in some situations, overwritten. By default, the single FILE_ATTRIBUTE_NORMAL flag is specified. However, this flag can be overridden by any other flag or by a bitwise OR combination of compatible flags. The bitmask of attribute flags corresponds to the <i>FileAttributes</i> parameter of <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile">ZwCreateFile</a>.
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information.
 
-### -param pShareAccess 
+### -param pShareAccess [out, optional]
 
-[out, optional]
+
 A pointer to a variable that receives a bitmask of flags that specify the share access rights that are requested for the file that is associated with the request. If the received bitmask is zero, exclusive access is being requested. For more information about share access, see the description of the <i>ShareAccess</i> parameter of <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile">ZwCreateFile</a>.
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information.
@@ -88,3 +87,4 @@ Although the driver can optionally specify <b>NULL</b> for each of the <i>pOptio
 
 
 <a href="/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntcreatefile">ZwCreateFile</a>
+

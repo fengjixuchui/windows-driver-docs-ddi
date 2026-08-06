@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_DevSpecific
 title: RIL_DevSpecific function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_DevSpecific function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_devspecific.htm
 tech.root: netvista
-ms.assetid: 2472582a-bade-4dfd-af67-c7c0626160bd
 ms.date: 05/02/2018
 keywords: ["RIL_DevSpecific function"]
 ms.keywords: RIL_DevSpecific, RIL_DevSpecific method [Network Drivers Starting with Windows Vista], netvista.ril_devspecific, rilapi/RIL_DevSpecific

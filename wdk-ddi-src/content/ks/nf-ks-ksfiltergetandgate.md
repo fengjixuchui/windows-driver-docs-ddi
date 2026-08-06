@@ -4,7 +4,6 @@ title: KsFilterGetAndGate function (ks.h)
 description: The KsFilterGetAndGate function returns Filter's AND gate.
 old-location: stream\ksfiltergetandgate.htm
 tech.root: stream
-ms.assetid: b5f7c4ed-0596-4e88-b987-fd454e4b4971
 ms.date: 04/23/2018
 keywords: ["KsFilterGetAndGate function"]
 ms.keywords: KsFilterGetAndGate, KsFilterGetAndGate function [Streaming Media Devices], avfunc_58886874-f3f3-4e2d-a69c-e85260dcc702.xml, ks/KsFilterGetAndGate, stream.ksfiltergetandgate
@@ -51,9 +50,9 @@ The<b> KsFilterGetAndGate </b>function returns <i>Filter</i>'s AND gate.
 
 ## -parameters
 
-### -param Filter 
+### -param Filter [in]
 
-[in]
+
 A pointer to the <a href="/windows-hardware/drivers/ddi/ks/ns-ks-_ksfilter">KSFILTER</a> structure for which to acquire the corresponding AND gate.
 
 ## -returns

@@ -2,7 +2,7 @@
 UID: NF:wdm.KeAddTriageDumpDataBlock
 title: KeAddTriageDumpDataBlock function (wdm.h)
 description: Adds a triage dump data block to a triage dump data block array.
-ms.assetid: 18c54115-6df7-48c9-bcd5-1dfde7591fe5
+tech.root: kernel
 ms.date: 10/19/2018
 keywords: ["KeAddTriageDumpDataBlock function"]
 ms.keywords: KeAddTriageDumpDataBlock
@@ -47,17 +47,17 @@ Adds a triage dump data block to a triage dump data block array.
 
 ## -parameters
 
-### -param KtriageDumpDataArray
+### -param KtriageDumpDataArray [_Inout_]
 
-[_Inout_] A pointer to a [**KTRIAGE_DUMP_DATA_ARRAY**](ns-wdm-_ktriage_dump_data_array.md) structure that is the data block array. It is assumed that the caller has already obtained exclusive write to _KtriageDumpDataArray_.
+A pointer to a [**KTRIAGE_DUMP_DATA_ARRAY**](ns-wdm-_ktriage_dump_data_array.md) structure that is the data block array. It is assumed that the caller has already obtained exclusive write to _KtriageDumpDataArray_.
 
 ### -param Address
 
  [_In_] A ULONG_PTR that is the starting address of the data block.
 
-### -param Size
+### -param Size [_In_]
 
-[_In_] The size of the data block, in bytes.
+The size of the data block, in bytes.
 
 ## -returns
 
@@ -65,8 +65,8 @@ Returns STATUS_SUCCESS if the data block was successfully added. Otherwise retur
 
 ## -remarks
 
-## -see-also
+The array must have already been initialized by calling [**KeInitializeTriageDumpDataArray**](./nf-wdm-keinitializetriagedumpdataarray.md).
 
-[*KeInitializeTriageDumpDataArray***](./nf-wdm-keinitializetriagedumpdataarray.md)
+## -see-also
 
 [*KBUGCHECK_REASON_CALLBACK_ROUTINE*](./nc-wdm-kbugcheck_reason_callback_routine.md)

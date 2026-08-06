@@ -4,7 +4,6 @@ title: ClfsDeleteMarshallingArea function (wdm.h)
 description: The ClfsDeleteMarshallingArea routine deletes a marshalling area.
 old-location: kernel\clfsdeletemarshallingarea.htm
 tech.root: kernel
-ms.assetid: 8aa7aec3-85d7-40a2-a63d-bee8c5ce1ff9
 ms.date: 04/30/2018
 keywords: ["ClfsDeleteMarshallingArea function"]
 ms.keywords: ClfsDeleteMarshallingArea, ClfsDeleteMarshallingArea routine [Kernel-Mode Driver Architecture], Clfs_a015edd3-4625-4b24-995f-75217a711528.xml, kernel.clfsdeletemarshallingarea, wdm/ClfsDeleteMarshallingArea
@@ -51,9 +50,9 @@ The <b>ClfsDeleteMarshallingArea</b> routine deletes a marshalling area.
 
 ## -parameters
 
-### -param pvMarshalContext 
+### -param pvMarshalContext [in]
 
-[in]
+
 A pointer to an opaque context that represents a marshalling area. The caller previously obtained this pointer by calling <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-clfscreatemarshallingarea">ClfsCreateMarshallingArea</a>.
 
 ## -returns

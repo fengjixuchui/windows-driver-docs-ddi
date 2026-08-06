@@ -2,11 +2,11 @@
 UID: NC:wdm.IOMMU_DOMAIN_DETACH_DEVICE
 title: IOMMU_DOMAIN_DETACH_DEVICE (wdm.h)
 description: Detaches a device from an existing domain.
-ms.assetid: 57f3e503-dd8d-487c-87b7-a0f9f0b126dc
-ms.date: 10/19/2018
+tech.root: kernel
+ms.date: 01/19/2023
 keywords: ["IOMMU_DOMAIN_DETACH_DEVICE callback function"]
 req.header: wdm.h
-req.include-header: 
+req.include-header: Wdm.h
 req.target-type: 
 req.target-min-winverclnt: Windows 10, version 1803
 req.target-min-winversvr: 
@@ -36,60 +36,36 @@ api_name:
  - IOMMU_DOMAIN_DETACH_DEVICE
 ---
 
-# IOMMU_DOMAIN_DETACH_DEVICE callback function
-
-
 ## -description
 
 Detaches a device from an existing domain.
 
 ## -parameters
 
-### -param Domain
+### -param Domain [_In_]
 
-[_In_] A pointer to the handle to the domain.
+A pointer to the handle to the domain.
 
-### -param PhysicalDeviceObject
+### -param PhysicalDeviceObject [_In_]
 
-[_In_] A pointer the physical device object (PDO) in the device stack of the device.
+A pointer the physical device object (PDO) in the device stack of the device.
 
-### -param InputMappingId
+### -param InputMappingId [_In_]
 
-[_In_] The input mapping for the device's desired stream.
+The input mapping for the device's desired stream.
 
 ## -returns
 
 Return STATUS_SUCCESS if the operation succeeds. Otherwise, return an appropriate NTSTATUS Values error code. For more information, see [NTSTATUS Values](/windows-hardware/drivers/kernel/ntstatus-values).
 
-## -prototype
-
-```cpp
-//Declaration
-
-IOMMU_DOMAIN_DETACH_DEVICE IommuDomainDetachDevice; 
-
-// Definition
-
-NTSTATUS IommuDomainDetachDevice 
-(
-	PIOMMU_DMA_DOMAIN Domain
-	PDEVICE_OBJECT PhysicalDeviceObject
-	ULONG InputMappingId
-)
-{...}
-
-IOMMU_DOMAIN_DETACH_DEVICE *PIOMMU_DOMAIN_DETACH_DEVICE
-
-
-```
-
 ## -remarks
 
 It is driver's responsibility to ensure that this function is not called concurrently with IOMMU_DOMAIN_ATTACH_DEVICE or IOMMU_SET_DEVICE_FAULT_REPORTING calls on the same device.
 
-
 InputMappingId is used only for ACPI-enumerated devices on ARM64. For all other cases, this value must be zero.
 
 If multiple devices are simultaneously attached using the _MappingCount_ value specified in the [_IOMMU_DOMAIN_ATTACH_DEVICE_](nc-wdm-iommu_domain_attach_device.md) call, then those devices can only be detached as a group by specifying an _InputMappingId_ value that is equal to the _InputMappingIdBase_ value of [_IOMMU_DOMAIN_ATTACH_DEVICE_] used when attaching.
+
+This is deprecated. Consider using [**IOMMU_DOMAIN_DETACH_DEVICE_EX**](nc-wdm-iommu_domain_detach_device_ex.md) and [**DMA_IOMMU_INTERFACE_EX**](ns-wdm-dma_iommu_interface_ex.md).
 
 ## -see-also

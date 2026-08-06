@@ -4,7 +4,6 @@ title: IoSetShareAccess function (wdm.h)
 description: The IoSetShareAccess routine sets the access rights for sharing the given file object.
 old-location: kernel\iosetshareaccess.htm
 tech.root: kernel
-ms.assetid: a686ea04-8a6b-4c4b-be06-73a75c4fc87d
 ms.date: 04/30/2018
 keywords: ["IoSetShareAccess function"]
 ms.keywords: IoSetShareAccess, IoSetShareAccess routine [Kernel-Mode Driver Architecture], k104_c7e9d7db-409a-4385-963b-61b5c96c1ffa.xml, kernel.iosetshareaccess, wdm/IoSetShareAccess
@@ -50,14 +49,14 @@ The <b>IoSetShareAccess</b> routine sets the access rights for sharing the given
 
 ## -parameters
 
-### -param DesiredAccess 
+### -param DesiredAccess [in]
 
-[in]
+
 Specifies an <a href="/windows-hardware/drivers/kernel/access-mask">ACCESS_MASK</a> value that represents the type of access requested for the <i>FileObject</i>. See <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-iocreatefile">IoCreateFile</a> for a complete list of system-defined <i>DesiredAccess </i>flags.
 
-### -param DesiredShareAccess 
+### -param DesiredShareAccess [in]
 
-[in]
+
 Specifies the type of share access to be set for the file object. This value can be zero, or any combination of the following:
 
 FILE_SHARE_READ
@@ -66,14 +65,14 @@ FILE_SHARE_WRITE
 
 FILE_SHARE_DELETE
 
-### -param FileObject 
+### -param FileObject [in, out]
 
-[in, out]
+
 Pointer to the file object whose share access is being set or reset.
 
-### -param ShareAccess 
+### -param ShareAccess [out]
 
-[out]
+
 Pointer to the SHARE_ACCESS structure associated with <i>FileObject</i>. Drivers should treat this structure as opaque.
 
 ## -remarks

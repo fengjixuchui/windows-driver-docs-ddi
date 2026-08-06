@@ -2,7 +2,6 @@
 UID: NF:d3dkmthk.D3DKMTUpdateAllocationProperty
 title: D3DKMTUpdateAllocationProperty function (d3dkmthk.h)
 description: Updates allocation property of a context.
-ms.assetid: 598aaa26-150f-470d-aa48-76af546e98e1
 ms.date: 10/19/2018
 keywords: ["D3DKMTUpdateAllocationProperty function"]
 ms.keywords: D3DKMTUpdateAllocationProperty
@@ -50,7 +49,7 @@ Updates allocation property of a context.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 Pointer to a [D3DDDI_UPDATEALLOCPROPERTY](../d3dukmdt/ns-d3dukmdt-d3dddi_updateallocproperty.md) structure.
 

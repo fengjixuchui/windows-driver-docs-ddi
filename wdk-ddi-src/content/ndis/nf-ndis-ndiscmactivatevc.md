@@ -4,7 +4,6 @@ title: NdisCmActivateVc function (ndis.h)
 description: NdisCmActivateVc passes CM-supplied call parameters, including media parameters, for a particular VC down to the underlying miniport driver.
 old-location: netvista\ndiscmactivatevc.htm
 tech.root: netvista
-ms.assetid: 9091426c-3174-4367-b7c7-5684877efe9c
 ms.date: 05/02/2018
 keywords: ["NdisCmActivateVc function"]
 ms.keywords: NdisCmActivateVc, NdisCmActivateVc function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_425eba15-2cda-4e36-b88d-59978501ecbf.xml, ndis/NdisCmActivateVc, netvista.ndiscmactivatevc
@@ -52,9 +51,9 @@ api_name:
 
 ## -parameters
 
-### -param NdisVcHandle 
+### -param NdisVcHandle [in]
 
-[in]
+
 Specifies the handle identifying the VC on which to set call parameters. The call manager either
      obtained this handle from 
      <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndiscocreatevc">NdisCoCreateVc</a> for an incoming call or as
@@ -62,9 +61,9 @@ Specifies the handle identifying the VC on which to set call parameters. The cal
      <a href="/windows-hardware/drivers/ddi/ndis/nc-ndis-protocol_co_create_vc">ProtocolCoCreateVc</a> function for a
      client-initiated outgoing call.
 
-### -param CallParameters 
+### -param CallParameters [in, out]
 
-[in, out]
+
 Pointer to a CM-allocated resident buffer, formatted as a structure of type 
      <a href="/previous-versions/windows/hardware/network/ff545384(v=vs.85)">CO_CALL_PARAMETERS</a>, containing all the
      media-specific parameters that the underlying miniport driver uses for VC activation.
@@ -130,7 +129,7 @@ For a client-initiated outgoing call, a stand-alone CM usually calls
 
 In the process of setting up an outgoing call and while any VC remains activated, the client can
     request changes to the call parameters for that VC, for example, by calling 
-    <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclmodifycallqos">NdisClModifyCallQos</a>. After verifying
+    <a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclmodifycallqos">NdisClModifyCallQoS</a>. After verifying
     the validity of the given call parameters for any such a request, the stand-alone call manager must call 
     <b>NdisCmActivateVc</b> to pass the modified call parameters down to the underlying miniport driver.
 
@@ -153,7 +152,7 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
 
 
 
-<a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclmodifycallqos">NdisClModifyCallQos</a>
+<a href="/windows-hardware/drivers/ddi/ndis/nf-ndis-ndisclmodifycallqos">NdisClModifyCallQoS</a>
 
 
 

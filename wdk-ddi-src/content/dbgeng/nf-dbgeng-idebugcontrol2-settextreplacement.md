@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl2.SetTextReplacement
 title: IDebugControl2::SetTextReplacement (dbgeng.h)
-description: The SetTextReplacement method sets the value of a user-named alias.
+description: The SetTextReplacement method sets the value of a user-named alias. This method belongs to the IDebugControl2 interface.
 old-location: debugger\settextreplacement.htm
 tech.root: debugger
-ms.assetid: 00c82e73-5649-403b-9f07-81bdd2f6c756
 ms.date: 05/03/2018
 keywords: ["IDebugControl2::SetTextReplacement"]
 ms.keywords: IDebugControl2 interface [Windows Debugging],SetTextReplacement method, IDebugControl2.SetTextReplacement, IDebugControl2::SetTextReplacement, IDebugControl3 interface [Windows Debugging],SetTextReplacement method, IDebugControl3::SetTextReplacement, IDebugControl_b53cd6ec-4cc4-45b2-96a0-b830bc7f8ca9.xml, SetTextReplacement, SetTextReplacement method [Windows Debugging], SetTextReplacement method [Windows Debugging],IDebugControl2 interface, SetTextReplacement method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::SetTextReplacement, dbgeng/IDebugControl3::SetTextReplacement, debugger.settextreplacement
@@ -38,8 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl2.SetTextReplacement
- - IDebugControl3.SetTextReplacement
+ - IDebugControl2::SetTextReplacement
 ---
 
 # IDebugControl2::SetTextReplacement
@@ -51,14 +49,14 @@ The <b>SetTextReplacement</b>  method sets the value of a user-named alias.
 
 ## -parameters
 
-### -param SrcText 
+### -param SrcText [in]
 
-[in]
+
 Specifies the name of the user-named alias.  The <a href="/windows-hardware/drivers/debugger/introduction">debugger engine</a> makes a copy of this string.  If <i>SrcText</i> is the same as the name of an automatic alias, the automatic alias is hidden by the new user-named alias.
 
-### -param DstText 
+### -param DstText [in, optional]
 
-[in, optional]
+
 Specifies the value of the user-named alias.  The debugger engine makes a copy of this string.  If <i>DstText</i> is <b>NULL</b>, the user-named alias is removed.
 
 ## -returns
@@ -124,3 +122,4 @@ For an overview of aliases used by the <a href="/windows-hardware/drivers/debugg
 
 
 <a href="/windows-hardware/drivers/debugger/as--as--set-alias-">as, aS (Set Alias)</a>
+

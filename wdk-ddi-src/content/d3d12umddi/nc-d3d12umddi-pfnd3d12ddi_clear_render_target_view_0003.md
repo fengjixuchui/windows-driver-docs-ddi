@@ -3,11 +3,8 @@ UID: NC:d3d12umddi.PFND3D12DDI_CLEAR_RENDER_TARGET_VIEW_0003
 title: PFND3D12DDI_CLEAR_RENDER_TARGET_VIEW_0003 (d3d12umddi.h)
 description: The pfnClearRenderTargetView function clears the specified render-target view by setting it to a constant value.
 tech.root: display
-ms.assetid: 8d82a8a1-13c6-4526-816d-b95c598429b3
 ms.date: 11/28/2018
 keywords: ["PFND3D12DDI_CLEAR_RENDER_TARGET_VIEW_0003 callback function"]
-ms.prod: windows-hardware
-ms.technology: windows-devices
 req.header: d3d12umddi.h
 req.include-header: 
 req.target-type: 
@@ -37,8 +34,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_CLEAR_RENDER_TARGET_VIEW_0003
-product:
- - Windows
 ---
 
 # PFND3D12DDI_CLEAR_RENDER_TARGET_VIEW_0003 callback function
@@ -50,7 +45,7 @@ The pfnClearRenderTargetView function clears the specified render-target view by
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to the driver's data for the command list. The driver uses this region of memory to store internal data structures that are related to its command list.
 

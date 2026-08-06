@@ -4,7 +4,6 @@ title: _SPLCLIENT_INFO_1 (winsplp.h)
 description: The SPLCLIENT_INFO_1 structure is used as input to the GenerateCopyFilePaths function that is exported by Point and Print DLLs.
 old-location: print\splclient_info_1.htm
 tech.root: print
-ms.assetid: a9659f77-e84b-471a-a778-a4628d89ce19
 ms.date: 04/20/2018
 keywords: ["SPLCLIENT_INFO_1 structure"]
 ms.keywords: "*LPSPLCLIENT_INFO_1, *PSPLCLIENT_INFO_1, LPSPLCLIENT_INFO_1, LPSPLCLIENT_INFO_1 structure pointer [Print Devices], PSPLCLIENT_INFO_1, PSPLCLIENT_INFO_1 structure pointer [Print Devices], SPLCLIENT_INFO_1, SPLCLIENT_INFO_1 structure [Print Devices], _SPLCLIENT_INFO_1, poprfnc_45237404-33da-4fb0-9405-05c930c5445b.xml, print.splclient_info_1, winsplp/LPSPLCLIENT_INFO_1, winsplp/PSPLCLIENT_INFO_1, winsplp/SPLCLIENT_INFO_1"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - winsplp.h
 api_name:
+ - _SPLCLIENT_INFO_1
+ - PSPLCLIENT_INFO_1
  - SPLCLIENT_INFO_1
 ---
 
@@ -85,3 +86,4 @@ The client's processor architecture, as returned by the Window SDK <b>GetSystemI
 ## -remarks
 
 Values for all structure members are supplied by the print spooler before the spooler calls <a href="/windows-hardware/drivers/ddi/winsplp/nf-winsplp-generatecopyfilepaths">GenerateCopyFilePaths</a>.
+

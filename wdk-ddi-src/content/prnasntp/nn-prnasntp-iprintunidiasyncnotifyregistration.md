@@ -2,14 +2,12 @@
 UID: NN:prnasntp.IPrintUnidiAsyncNotifyRegistration
 title: IPrintUnidiAsyncNotifyRegistration (prnasntp.h)
 description: Provides information on IPrintUnidiAsyncNotifyRegistration constructs.
-old-location: print\iprintunidiasyncnotifyregistration.htm
 tech.root: print
-ms.assetid: A1CC714A-CDD5-494F-8157-9D95DF738CBE
-ms.date: 04/20/2018
+ms.date: 06/12/2021
 keywords: ["IPrintUnidiAsyncNotifyRegistration interface"]
 ms.keywords: IPrintUnidiAsyncNotifyRegistration, IPrintUnidiAsyncNotifyRegistration interface [Print Devices], IPrintUnidiAsyncNotifyRegistration interface [Print Devices],described, print.iprintunidiasyncnotifyregistration, prnasntp/IPrintUnidiAsyncNotifyRegistration
 req.header: prnasntp.h
-req.include-header: 
+req.include-header: Prnasntp.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -43,14 +41,10 @@ api_name:
 
 # IPrintUnidiAsyncNotifyRegistration interface
 
-
 ## -description
 
- Provides information on <b>IPrintUnidiAsyncNotifyRegistration</b> constructs.
+ Provides information on **IPrintUnidiAsyncNotifyRegistration** constructs.
 
 ## -inheritance
 
-The <b xmlns:loc="https://microsoft.com/wdcml/l10n">IPrintUnidiAsyncNotifyRegistration</b> interface inherits from the <a href="/windows/win32/api/unknwn/nn-unknwn-iunknown">IUnknown</a> interface. <b>IPrintUnidiAsyncNotifyRegistration</b> also has these types of members:
-<ul>
-<li><a href="https://docs.microsoft.com/">Methods</a></li>
-</ul>
+The **IPrintUnidiAsyncNotifyRegistration** interface inherits from the [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) interface.

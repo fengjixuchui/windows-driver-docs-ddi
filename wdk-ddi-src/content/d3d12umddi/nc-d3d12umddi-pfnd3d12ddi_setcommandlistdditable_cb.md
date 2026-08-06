@@ -2,7 +2,6 @@
 UID: NC:d3d12umddi.PFND3D12DDI_SETCOMMANDLISTDDITABLE_CB
 title: PFND3D12DDI_SETCOMMANDLISTDDITABLE_CB (d3d12umddi.h)
 description: Sets the command list table.
-ms.assetid: d1480f13-37d6-465c-b468-bf7a32bf0523
 ms.date: 10/19/2018
 keywords: ["PFND3D12DDI_SETCOMMANDLISTDDITABLE_CB callback function"]
 req.header: d3d12umddi.h
@@ -36,8 +35,6 @@ api_location:
  - d3d12umddi.h
 api_name:
  - PFND3D12DDI_SETCOMMANDLISTDDITABLE_CB
-product:
- - Windows
 dev_langs:
  - c++
 ---
@@ -51,11 +48,11 @@ Sets the command list table.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 A handle to a command list.
 
-### -param Arg2
+### -param unnamedParam2
 
 A handle to a table.
 

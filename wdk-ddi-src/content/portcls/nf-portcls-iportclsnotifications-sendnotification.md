@@ -4,7 +4,6 @@ title: IPortClsNotifications::SendNotification (portcls.h)
 description: Sends a notification to the listening UWP apps, to allow for communications between audio modules and UWP apps.
 old-location: audio\iportclsnotifications_sendnotification.htm
 tech.root: audio
-ms.assetid: 0683C30D-0AAD-4859-BA30-908FA747CC35
 ms.date: 05/08/2018
 keywords: ["IPortClsNotifications::SendNotification"]
 ms.keywords: IPortClsNotifications interface [Audio Devices],SendNotification method, IPortClsNotifications.SendNotification, IPortClsNotifications::SendNotification, SendNotification, SendNotification method [Audio Devices], SendNotification method [Audio Devices],IPortClsNotifications interface, audio.iportclsnotifications_sendnotification, portcls/IPortClsNotifications::SendNotification
@@ -39,11 +38,10 @@ api_location:
  - Portcls.lib
  - Portcls.dll
 api_name:
- - IPortClsNotifications.SendNotification
+ - IPortClsNotifications::SendNotification
 ---
 
 # IPortClsNotifications::SendNotification
-
 
 ## -description
 
@@ -51,14 +49,11 @@ Sends a notification to the listening UWP apps, to allow for communications betw
 
 ## -parameters
 
-### -param NotificationId 
+### -param NotificationId [in]
 
-[in]
 KSNOTIFICATIONID_AudioModule
 
-### -param NotificationBuffer
-
-#### - PPCNOTIFICATION* [in]
+### -param NotificationBuffer [in]
 
 Pointer to a <a href="/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcnotification_buffer">PCNOTIFICATION_BUFFER</a> structure to send to the listening audio module UWP clients.
 
@@ -67,8 +62,6 @@ Pointer to a <a href="/windows-hardware/drivers/ddi/portcls/ns-portcls-_pcnotifi
 Pointer to the PCNOTIFICATION structure to send to Audio Module clients.
 
 The expected format of the payload is a <a href="/windows-hardware/drivers/ddi/ksmedia/ns-ksmedia-_ksaudiomodule_notification">KSAUDIOMODULE_NOTIFICATION</a> structure. The miniport driver can optionally send additional information immediately following the <b>KSAUDIOMODULE_NOTIFICATION</b> structure that will be untouched and sent to the Audio Module clients.
-
-
 
 For more information about audio modules, see <a href="/windows-hardware/drivers/audio/implementing-audio-module-communication">Implementing Audio Module Discovery</a>.
 

@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D10DDI_RESOURCEUNMAP
 title: PFND3D10DDI_RESOURCEUNMAP (d3d10umddi.h)
 description: The ResourceUnmap function unmaps a subresource of a resource.
 old-location: display\resourceunmap.htm
-ms.assetid: fb2b714e-232d-40b2-88ad-ee8dcd70a057
 ms.date: 05/10/2018
 keywords: ["PFND3D10DDI_RESOURCEUNMAP callback function"]
 ms.keywords: PFND3D10DDI_RESOURCEUNMAP, PFND3D10DDI_RESOURCEUNMAP callback, ResourceUnmap, ResourceUnmap callback function [Display Devices], UserModeDisplayDriverDx10_Functions_473ebdfc-f365-4194-9d52-6338e19ca0d5.xml, d3d10umddi/ResourceUnmap, display.resourceunmap
@@ -38,7 +37,7 @@ api_type:
 api_location:
  - d3d10umddi.h
 api_name:
- - ResourceUnmap
+ - PFND3D10DDI_RESOURCEUNMAP
 ---
 
 # PFND3D10DDI_RESOURCEUNMAP callback function
@@ -50,19 +49,19 @@ The <i>ResourceUnmap</i> function unmaps a subresource of a resource.
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hResource* [in]
 
 A handle to the resource to unmap.
 
-### -param Arg3
+### -param unnamedParam3
 
 *Subresource* [in]
 
@@ -86,3 +85,4 @@ For Windows Display Driver Model (WDDM) 1.3 and later drivers, the Microsoft Dir
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d10ddi_seterror_cb">pfnSetErrorCb</a>
+

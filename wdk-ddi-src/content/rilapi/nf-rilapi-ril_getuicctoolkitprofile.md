@@ -1,10 +1,9 @@
 ---
 UID: NF:rilapi.RIL_GetUiccToolkitProfile
 title: RIL_GetUiccToolkitProfile function (rilapi.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RIL_GetUiccToolkitProfile function for internal use only. Don't use this function in your code."
 old-location: netvista\ril_getuicctoolkitprofile.htm
 tech.root: netvista
-ms.assetid: 5d2f79ba-0fdb-4743-938d-d99b135c68bb
 ms.date: 05/02/2018
 keywords: ["RIL_GetUiccToolkitProfile function"]
 ms.keywords: RIL_GetUiccToolkitProfile, RIL_GetUiccToolkitProfile method [Network Drivers Starting with Windows Vista], netvista.ril_getuicctoolkitprofile, rilapi/RIL_GetUiccToolkitProfile

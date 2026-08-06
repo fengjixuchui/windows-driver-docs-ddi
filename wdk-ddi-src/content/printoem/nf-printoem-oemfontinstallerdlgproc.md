@@ -1,11 +1,9 @@
 ---
 UID: NF:printoem.OEMFontInstallerDlgProc
 title: OEMFontInstallerDlgProc function (printoem.h)
-description: OEMFontInstallerDlgProc function
-old-location: print\oemfontinstallerdlgproc.htm
+description: Describes the OEMFontInstallerDlgProc function.
 tech.root: print
-ms.assetid: 6007723b-c7db-42da-bc50-328e19f80448
-ms.date: 04/20/2018
+ms.date: 08/09/2022
 keywords: ["OEMFontInstallerDlgProc function"]
 ms.keywords: OEMFontInstallerDlgProc, OEMFontInstallerDlgProc function [Print Devices], print.oemfontinstallerdlgproc, print_obsoletefunctions_63eb736f-a9cd-4caf-823e-87b927d09c7a.xml, printoem/OEMFontInstallerDlgProc
 req.header: printoem.h
@@ -41,18 +39,28 @@ api_name:
  - OEMFontInstallerDlgProc
 ---
 
-# OEMFontInstallerDlgProc function
-
-
 ## -description
+
+Describes the **OEMFontInstallerDlgProc** function.
 
 ## -parameters
 
 ### -param hWnd
 
+Defines the **HWND** parameter *hWnd*.
+
 ### -param usMsg
+
+Defines the **UINT** parameter *usMsg*.
 
 ### -param wParam
 
+Defines the **WPARAM** parameter *wParam*.
+
 ### -param lParam
 
+Defines the **LPARAM** parameter *lParam*.
+
+## -returns
+
+Returns an **INT_PTR** value.

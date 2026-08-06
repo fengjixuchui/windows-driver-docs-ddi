@@ -4,7 +4,6 @@ title: _D3DDDIARG_SETOVERLAYCOLORCONTROLS (d3dumddi.h)
 description: The D3DDDIARG_SETOVERLAYCOLORCONTROLS structure describes the parameters for changing an overlay's color-control settings.
 old-location: display\d3dddiarg_setoverlaycolorcontrols.htm
 tech.root: display
-ms.assetid: c8f04d2e-4c8c-4d1e-92e8-0f8722dbee5a
 ms.date: 05/10/2018
 keywords: ["D3DDDIARG_SETOVERLAYCOLORCONTROLS structure"]
 ms.keywords: D3DDDIARG_SETOVERLAYCOLORCONTROLS, D3DDDIARG_SETOVERLAYCOLORCONTROLS structure [Display Devices], UMDisplayDriver_param_Structs_f6504b3e-8129-4936-add8-5bbf6ba8ee54.xml, _D3DDDIARG_SETOVERLAYCOLORCONTROLS, d3dumddi/D3DDDIARG_SETOVERLAYCOLORCONTROLS, display.d3dddiarg_setoverlaycolorcontrols
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - d3dumddi.h
 api_name:
+ - _D3DDDIARG_SETOVERLAYCOLORCONTROLS
  - D3DDDIARG_SETOVERLAYCOLORCONTROLS
 ---
 
@@ -52,17 +52,17 @@ The D3DDDIARG_SETOVERLAYCOLORCONTROLS structure describes the parameters for cha
 
 ## -struct-fields
 
-### -field hOverlay
+### -field hOverlay [in]
 
-[in] A handle to the overlay that <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_setoverlaycolorcontrols">SetOverlayColorControls</a> changes color-control settings for.
+A handle to the overlay that <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_setoverlaycolorcontrols">SetOverlayColorControls</a> changes color-control settings for.
 
-### -field hResource
+### -field hResource [in]
 
-[in] A handle to the resource that is associated with the overlay that <b>hOverlay</b> specifies.
+A handle to the resource that is associated with the overlay that <b>hOverlay</b> specifies.
 
-### -field ColorControls
+### -field ColorControls [in]
 
-[in] A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_overlaycolorcontrols">D3DDDI_OVERLAYCOLORCONTROLS</a> structure that contains color-control settings.
+A <a href="/windows-hardware/drivers/ddi/d3dumddi/ns-d3dumddi-_d3dddi_overlaycolorcontrols">D3DDDI_OVERLAYCOLORCONTROLS</a> structure that contains color-control settings.
 
 ## -see-also
 
@@ -71,3 +71,4 @@ The D3DDDIARG_SETOVERLAYCOLORCONTROLS structure describes the parameters for cha
 
 
 <a href="/windows-hardware/drivers/ddi/d3dumddi/nc-d3dumddi-pfnd3dddi_setoverlaycolorcontrols">SetOverlayColorControls</a>
+

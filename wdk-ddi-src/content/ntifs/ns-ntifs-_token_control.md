@@ -4,7 +4,6 @@ title: _TOKEN_CONTROL (ntifs.h)
 description: The TOKEN_CONTROL structure contains information that identifies an access token.
 old-location: ifsk\token_control.htm
 tech.root: ifsk
-ms.assetid: 3e0d41f4-4918-4768-a341-25d27f0a8af0
 ms.date: 04/16/2018
 keywords: ["TOKEN_CONTROL structure"]
 ms.keywords: "*PTOKEN_CONTROL, PTOKEN_CONTROL, PTOKEN_CONTROL structure pointer [Installable File System Drivers], TOKEN_CONTROL, TOKEN_CONTROL structure [Installable File System Drivers], _TOKEN_CONTROL, ifsk.token_control, ntifs/PTOKEN_CONTROL, ntifs/TOKEN_CONTROL, securitystructures_26958d39-4a12-4979-b0cc-7a880e3d2384.xml"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - ntifs.h
 api_name:
+ - _TOKEN_CONTROL
+ - PTOKEN_CONTROL
  - TOKEN_CONTROL
 ---
 
@@ -117,3 +118,4 @@ Specifies a <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_token_source"
 
 
 <a href="/windows-hardware/drivers/ddi/ntifs/ns-ntifs-_token_user">TOKEN_USER</a>
+

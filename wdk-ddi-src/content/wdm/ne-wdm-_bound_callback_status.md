@@ -4,7 +4,6 @@ title: _BOUND_CALLBACK_STATUS (wdm.h)
 description: The BOUND_CALLBACK_STATUS enumeration indicates how a user-mode bounds exception was processed by the BoundCallback function.
 old-location: kernel\bound_callback_status.htm
 tech.root: kernel
-ms.assetid: 874FB2E1-7A2F-4C91-BA72-D67DA2EE84E1
 ms.date: 04/30/2018
 keywords: ["BOUND_CALLBACK_STATUS enumeration"]
 ms.keywords: "*PBOUND_CALLBACK_STATUS, BOUND_CALLBACK_STATUS, BOUND_CALLBACK_STATUS enumeration [Kernel-Mode Driver Architecture], BoundExceptionContinueSearch, BoundExceptionError, BoundExceptionHandled, BoundExceptionMaximum, _BOUND_CALLBACK_STATUS, kernel.bound_callback_status, wdm/BOUND_CALLBACK_STATUS, wdm/BoundExceptionContinueSearch, wdm/BoundExceptionError, wdm/BoundExceptionHandled, wdm/BoundExceptionMaximum"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - Wdm.h
 api_name:
+ - _BOUND_CALLBACK_STATUS
+ - PBOUND_CALLBACK_STATUS
  - BOUND_CALLBACK_STATUS
 ---
 
@@ -77,3 +78,4 @@ The return value of the <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-bound_
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/wdm/nc-wdm-bound_callback">BoundCallback</a>
+

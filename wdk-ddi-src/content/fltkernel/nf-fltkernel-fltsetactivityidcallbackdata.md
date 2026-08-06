@@ -1,10 +1,9 @@
 ---
 UID: NF:fltkernel.FltSetActivityIdCallbackData
 title: FltSetActivityIdCallbackData function (fltkernel.h)
-description: The FltSetActivityIdCallbackData routine sets the a activity ID for an IRP in a minifilter's callback data.
+description: The FltSetActivityIdCallbackData routine sets the activity ID for an IRP in a minifilter's callback data.
 old-location: ifsk\fltsetactivityidcallbackdata.htm
 tech.root: ifsk
-ms.assetid: D7CA9DAB-E350-42D5-A008-5CC12D5313D3
 ms.date: 04/16/2018
 keywords: ["FltSetActivityIdCallbackData function"]
 ms.keywords: FltSetActivityIdCallbackData, FltSetActivityIdCallbackData routine [Installable File System Drivers], fltkernel/FltSetActivityIdCallbackData, ifsk.fltsetactivityidcallbackdata
@@ -46,19 +45,19 @@ api_name:
 
 ## -description
 
-The <b>FltSetActivityIdCallbackData</b> routine sets the a activity ID for an IRP in a minifilter's callback data.
+The <b>FltSetActivityIdCallbackData</b> routine sets the activity ID for an IRP in a minifilter's callback data.
 
 ## -parameters
 
-### -param CallbackData 
+### -param CallbackData [in, out]
 
-[in, out]
+
 A pointer to the callback data containing the request with an associated activity ID.
 
-### -param Guid 
+### -param Guid [in, optional]
 
-[in, optional]
-A optional pointer to the <b>GUID</b> structure receiving the activity ID. if <i>Guid</i> is <b>NULL</b>, the system will attempt to assign an ETW activity ID for the request.
+
+An optional pointer to the <b>GUID</b> structure receiving the activity ID. if <i>Guid</i> is <b>NULL</b>, the system will attempt to assign an ETW activity ID for the request.
 
 ## -returns
 

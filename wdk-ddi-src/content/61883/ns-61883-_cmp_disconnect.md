@@ -4,7 +4,6 @@ title: _CMP_DISCONNECT (61883.h)
 description: This structure is used to break a connection.
 old-location: ieee\cmp_disconnect.htm
 tech.root: IEEE
-ms.assetid: 7EAE617D-EFF9-4F77-9B9C-5985B864B310
 ms.date: 02/15/2018
 keywords: ["CMP_DISCONNECT structure"]
 ms.keywords: "*PCMP_DISCONNECT, 61883/CMP_DISCONNECT, 61883/PCMP_DISCONNECT, CMP_DISCONNECT, CMP_DISCONNECT structure [Buses], IEEE.cmp_disconnect, PCMP_DISCONNECT, PCMP_DISCONNECT structure pointer [Buses], _CMP_DISCONNECT"
@@ -42,6 +41,8 @@ api_type:
 api_location:
  - 61883.h
 api_name:
+ - _CMP_DISCONNECT
+ - PCMP_DISCONNECT
  - CMP_DISCONNECT
 ---
 
@@ -67,3 +68,4 @@ If an incorrect parameter is passed in, the protocol driver sets <b>Irp->IoStatu
 ## -see-also
 
 <a href="/windows-hardware/drivers/ddi/61883/ns-61883-_av_61883_request">AV_61883_REQUEST</a>
+

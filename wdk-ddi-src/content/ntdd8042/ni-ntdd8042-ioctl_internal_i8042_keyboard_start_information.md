@@ -4,7 +4,6 @@ title: IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION (ntdd8042.h)
 description: The IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION request passes a pointer to a keyboard interrupt object.
 old-location: hid\ioctl_internal_i8042_keyboard_start_information.htm
 tech.root: hid
-ms.assetid: a589b1e1-7462-4de7-83df-c3d55fa01b76
 ms.date: 04/30/2018
 keywords: ["IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION IOCTL"]
 ms.keywords: IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION, IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION control, IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION control code [Human Input Devices], hid.ioctl_internal_i8042_keyboard_start_information, i8042ref_d5599642-48b8-4b77-b4bb-6e0d7596045d.xml, ntdd8042/IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION
@@ -49,6 +48,10 @@ api_name:
 The IOCTL_INTERNAL_I8042_KEYBOARD_START_INFORMATION request passes a pointer to a keyboard interrupt object. I8042prt sends this request synchronously to the top of the device stack after the keyboard interrupt object is created. Upper-level filter drivers that need to synchronize their callback operation with the I8042prt keyboard ISR can use the pointer to the keyboard interrupt object.
 
 ## -ioctlparameters
+
+### -ioctl-major-code
+
+[IRP_MJ_INTERNAL_DEVICE_CONTROL](/windows-hardware/drivers/kernel/irp-mj-internal-device-control)
 
 ### -input-buffer
 

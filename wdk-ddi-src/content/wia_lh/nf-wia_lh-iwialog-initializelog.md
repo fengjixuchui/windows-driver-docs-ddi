@@ -1,11 +1,9 @@
 ---
 UID: NF:wia_lh.IWiaLog.InitializeLog
 title: IWiaLog::InitializeLog (wia_lh.h)
-description: Note that the IWiaLog interface is obsolete and is no longer supported. Instead, use the Diagnostic Log Macros.The IWiaLog::InitializeLog method initializes the lWiaLog interface.
-old-location: image\iwialog_initializelog.htm
+description: The IWiaLog::InitializeLog (wia_lh.h) method is obsolete and is no longer supported. Use the Diagnostic Log Macros instead.
 tech.root: image
-ms.assetid: ef637329-a291-445b-8ac7-6e55d5d7931e
-ms.date: 05/03/2018
+ms.date: 11/09/2022
 keywords: ["IWiaLog::InitializeLog"]
 ms.keywords: IWiaLog interface [Imaging Devices],InitializeLog method, IWiaLog.InitializeLog, IWiaLog::InitializeLog, IWiaLog_17cc24cb-d8dd-4f7c-b5d4-6720621b6534.xml, InitializeLog, InitializeLog method [Imaging Devices], InitializeLog method [Imaging Devices],IWiaLog interface, image.iwialog_initializelog, wia_lh/IWiaLog::InitializeLog
 req.header: wia_lh.h
@@ -38,23 +36,19 @@ api_type:
 api_location:
  - wia_lh.h
 api_name:
- - IWiaLog.InitializeLog
+ - IWiaLog::InitializeLog
 ---
-
-# IWiaLog::InitializeLog
-
 
 ## -description
 
-Note that the **IWiaLog** interface is obsolete and is no longer supported. Instead, use the [Diagnostic Log Macros](../_image/index.md).
+The **IWiaLog::InitializeLog** method is obsolete and is no longer supported. Use the [**Diagnostic Log Macros**](/windows-hardware/drivers/image/wia-diagnostic-log-macros) instead.
 
 The **IWiaLog::InitializeLog** method initializes the **lWiaLog** interface.
 
 ## -parameters
 
-### -param hInstance 
+### -param hInstance [in]
 
-[in]
 Specifies the module handle. This parameter indicates which module is calling the method.
 
 ## -returns
@@ -63,4 +57,4 @@ If the method succeeds, it returns S_OK. If the method fails, it returns a stand
 
 ## -remarks
 
-The minidriver should call [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) or [CoCreateInstanceEx](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstanceex) to obtain the [IWiaLog](/windows/win32/api/wia_xp/nn-wia_xp-iwialog) interface.
+The minidriver should call [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) or [CoCreateInstanceEx](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstanceex) to obtain the [**IWiaLog**](/windows/win32/api/wia_xp/nn-wia_xp-iwialog) interface.

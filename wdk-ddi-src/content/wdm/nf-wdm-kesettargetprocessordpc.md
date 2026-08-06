@@ -1,10 +1,9 @@
 ---
 UID: NF:wdm.KeSetTargetProcessorDpc
 title: KeSetTargetProcessorDpc function (wdm.h)
-description: The KeSetTargetProcessorDpc routine specifies the processor that a DPC routine will be run on.
+description: Learn how the KeSetTargetProcessorDpc routine specifies the processor that a DPC routine will be run on.
 old-location: kernel\kesettargetprocessordpc.htm
 tech.root: kernel
-ms.assetid: 9fd86250-a495-4628-a07b-f5c44df69c0e
 ms.date: 04/30/2018
 keywords: ["KeSetTargetProcessorDpc function"]
 ms.keywords: KeSetTargetProcessorDpc, KeSetTargetProcessorDpc routine [Kernel-Mode Driver Architecture], k105_a7931e50-ba41-47a0-9056-e9479ac46808.xml, kernel.kesettargetprocessordpc, wdm/KeSetTargetProcessorDpc
@@ -50,14 +49,14 @@ The <b>KeSetTargetProcessorDpc</b> routine specifies the processor that a DPC ro
 
 ## -parameters
 
-### -param Dpc 
+### -param Dpc [in, out]
 
-[in, out]
+
 Pointer to the caller's DPC object, which <a href="/windows-hardware/drivers/ddi/wdm/nf-wdm-keinitializedpc">KeInitializeDpc</a> already initialized.
 
-### -param Number 
+### -param Number [in]
 
-[in]
+
 Specifies the zero-based number of the target processor on which the DPC should be queued and executed.
 
 ## -remarks

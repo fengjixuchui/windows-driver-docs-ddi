@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugControl.OutputCurrentState
 title: IDebugControl::OutputCurrentState (dbgeng.h)
-description: The OutputCurrentState method prints the current state of the current target to the debugger console.
+description: Learn how the OutputCurrentState method prints the current state of the current target to the debugger console.
 old-location: debugger\outputcurrentstate.htm
 tech.root: debugger
-ms.assetid: 3d176438-5551-48a4-b757-81c14d84c075
 ms.date: 05/03/2018
 keywords: ["IDebugControl::OutputCurrentState"]
 ms.keywords: IDebugControl interface [Windows Debugging],OutputCurrentState method, IDebugControl.OutputCurrentState, IDebugControl2 interface [Windows Debugging],OutputCurrentState method, IDebugControl2::OutputCurrentState, IDebugControl3 interface [Windows Debugging],OutputCurrentState method, IDebugControl3::OutputCurrentState, IDebugControl::OutputCurrentState, IDebugControl_1a038e3b-1bf3-47d0-8e40-b2ebc3506308.xml, OutputCurrentState, OutputCurrentState method [Windows Debugging], OutputCurrentState method [Windows Debugging],IDebugControl interface, OutputCurrentState method [Windows Debugging],IDebugControl2 interface, OutputCurrentState method [Windows Debugging],IDebugControl3 interface, dbgeng/IDebugControl2::OutputCurrentState, dbgeng/IDebugControl3::OutputCurrentState, dbgeng/IDebugControl::OutputCurrentState, debugger.outputcurrentstate
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugControl.OutputCurrentState
- - IDebugControl2.OutputCurrentState
- - IDebugControl3.OutputCurrentState
+ - IDebugControl::OutputCurrentState
 ---
 
 # IDebugControl::OutputCurrentState
@@ -52,14 +49,14 @@ The <b>OutputCurrentState</b> method prints the current state of the current tar
 
 ## -parameters
 
-### -param OutputControl 
+### -param OutputControl [in]
 
-[in]
+
 Specifies which clients to send the output to.  For possible values see <a href="/windows-hardware/drivers/debugger/debug-outctl-xxx">DEBUG_OUTCTL_XXX</a>.
 
-### -param Flags 
+### -param Flags [in]
 
-[in]
+
 Specifies the bit set that determines the information to print to the debugger console.  <i>Flags</i> can be any combination of values from the following table.
 
 <table>
@@ -141,3 +138,4 @@ Setting the flags contained in <i>Flags</i> merely allows the information to be 
 This is the same status information that is printed when breaking into the debugger.
 
 For more information, see <a href="/windows-hardware/drivers/debugger/target-information">Target Information</a>.
+

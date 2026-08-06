@@ -1,10 +1,9 @@
 ---
 UID: NS:ntddrilapitypes.RILHIDEIDSETTINGS
 title: RILHIDEIDSETTINGS (ntddrilapitypes.h)
-description: This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
+description: "Microsoft reserves the RILHIDEIDSETTINGS structure for internal use only. Don't use the RILHIDEIDSETTINGS structure in your code."
 old-location: netvista\rilhideidsettings.htm
 tech.root: netvista
-ms.assetid: 11ca7db9-8e84-4d55-9ea9-7e2ecfa563e0
 ms.date: 05/02/2018
 keywords: ["RILHIDEIDSETTINGS structure"]
 ms.keywords: "*LPRILHIDEIDSETTINGS, RILHIDEIDSETTINGS, RILHIDEIDSETTINGS structure [Network Drivers Starting with Windows Vista], netvista.rilhideidsettings, ntddrilapitypes/RILHIDEIDSETTINGS"
@@ -41,6 +40,7 @@ api_location:
  - ntddrilapitypes.h
 api_name:
  - RILHIDEIDSETTINGS
+ - LPRILHIDEIDSETTINGS
 ---
 
 # RILHIDEIDSETTINGS structure (ntddrilapitypes.h)

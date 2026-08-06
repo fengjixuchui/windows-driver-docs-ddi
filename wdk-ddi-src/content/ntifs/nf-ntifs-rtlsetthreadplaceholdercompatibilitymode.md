@@ -4,14 +4,13 @@ title: RtlSetThreadPlaceholderCompatibilityMode function (ntifs.h)
 description: RtlSetThreadPlaceholderCompatibilityMode sets the placeholder compatibility mode for the current thread.
 old-location: ifsk\rtlsetthreadplaceholdercompatibilitymode.htm
 tech.root: ifsk
-ms.assetid: 0EA209B7-20B9-418F-AD29-83520ED27DAB
 ms.date: 04/16/2018
 keywords: ["RtlSetThreadPlaceholderCompatibilityMode function"]
 ms.keywords: RtlSetThreadPlaceholderCompatibilityMode, RtlSetThreadPlaceholderCompatibilityMode routine [Installable File System Drivers], ifsk.rtlsetthreadplaceholdercompatibilitymode, ntifs/RtlSetThreadPlaceholderCompatibilityMode
 req.header: ntifs.h
 req.include-header: Ntifs.h
 req.target-type: Windows
-req.target-min-winverclnt: Available starting with Windows 10, version 1709.
+req.target-min-winverclnt: Windows 10, version 1709.
 req.target-min-winversvr: 
 req.kmdf-ver: 
 req.umdf-ver: 
@@ -50,9 +49,9 @@ api_name:
 
 ## -parameters
 
-### -param Mode 
+### -param Mode [in]
 
-[in]
+
 Specifies the placeholder compatibility mode to set.
 
 ## -returns

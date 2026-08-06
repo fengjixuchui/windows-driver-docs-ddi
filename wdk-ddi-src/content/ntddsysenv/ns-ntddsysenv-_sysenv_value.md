@@ -4,8 +4,7 @@ title: _SYSENV_VALUE (ntddsysenv.h)
 description: Stores the value of a system environment variable using SysEnv device. This structure is used in the IOCTL_SYSENV_GET_VARIABLE request.
 old-location: kernel\sysenv_value.htm
 tech.root: kernel
-ms.assetid: 4F79D820-29D4-4D38-A09C-8A5E968C1479
-ms.date: 04/30/2018
+ms.date: 08/04/2022
 keywords: ["SYSENV_VALUE structure"]
 ms.keywords: "*PSYSENV_VALUE, PSYSENV_VALUE, PSYSENV_VALUE structure pointer [Kernel-Mode Driver Architecture], SYSENV_VALUE, SYSENV_VALUE structure [Kernel-Mode Driver Architecture], _SYSENV_VALUE, kernel.sysenv_value, ntddsysenv/PSYSENV_VALUE, ntddsysenv/SYSENV_VALUE"
 req.header: ntddsysenv.h
@@ -42,16 +41,16 @@ api_type:
 api_location:
  - Ntddsysenv.h
 api_name:
+ - _SYSENV_VALUE
+ - PSYSENV_VALUE
  - SYSENV_VALUE
 ---
 
 # _SYSENV_VALUE structure
 
-
 ## -description
 
-Stores the value of a system environment variable using
-    SysEnv device. This structure is used in the <a href="/windows-hardware/drivers/ddi/ntddsysenv/ni-ntddsysenv-ioctl_sysenv_get_variable">IOCTL_SYSENV_GET_VARIABLE</a> request.
+Stores the value of a system environment variable using SysEnv device. This structure is used in the [IOCTL_SYSENV_GET_VARIABLE](./ni-ntddsysenv-ioctl_sysenv_get_variable.md) request.
 
 ## -struct-fields
 
@@ -63,17 +62,10 @@ Attributes of the system environment variable.
 
 The length of the value of the system environment variable.
 
-### -field ValueData
-
- 
-
-
-
-
-#### - UCHAR
+### -field ValueData[ANYSIZE_ARRAY]
 
 The value of the system environment variable.
 
 ## -see-also
 
-<a href="/windows-hardware/drivers/ddi/ntddsysenv/ni-ntddsysenv-ioctl_sysenv_get_variable">IOCTL_SYSENV_GET_VARIABLE</a>
+- [IOCTL_SYSENV_GET_VARIABLE](./ni-ntddsysenv-ioctl_sysenv_get_variable.md)

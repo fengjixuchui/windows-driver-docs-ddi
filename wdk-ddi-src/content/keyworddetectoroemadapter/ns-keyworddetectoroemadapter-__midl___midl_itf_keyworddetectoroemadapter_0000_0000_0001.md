@@ -1,10 +1,9 @@
 ---
 UID: NS:keyworddetectoroemadapter.__MIDL___MIDL_itf_keyworddetectoroemadapter_0000_0000_0001
 title: __MIDL___MIDL_itf_keyworddetectoroemadapter_0000_0000_0001 (keyworddetectoroemadapter.h)
-description: The SOUNDDETECTOR_PATTERNHEADER structure specifies the pattern header for the sound detector in the KSPROPERTY_SOUNDDETECTOR_PATTERNS property.
+description: The SOUNDDETECTOR_PATTERNHEADER structure (keyworddetectoroemadapter.h) specifies the pattern header for the sound detector.
 old-location: audio\sounddetector_patternheader.htm
 tech.root: audio
-ms.assetid: 43172627-2A05-44AD-8B39-8FC384F9F44E
 ms.date: 05/08/2018
 keywords: ["_MIDL___MIDL_itf_keyworddetectoroemadapter_0000_0000_0001 structure"]
 ms.keywords: SOUNDDETECTOR_PATTERNHEADER, SOUNDDETECTOR_PATTERNHEADER structure [Audio Devices], __MIDL___MIDL_itf_keyworddetectoroemadapter_0000_0000_0001, audio.sounddetector_patternheader, ksmedia/SOUNDDETECTOR_PATTERNHEADER
@@ -40,6 +39,7 @@ api_type:
 api_location:
  - ksmedia.h
 api_name:
+ - __MIDL___MIDL_itf_keyworddetectoroemadapter_0000_0000_0001
  - SOUNDDETECTOR_PATTERNHEADER
 ---
 
@@ -63,3 +63,4 @@ The keyword pattern format, expressed as a GUID.
 ## -see-also
 
 <a href="/windows-hardware/drivers/audio/ksproperty-sounddetector-patterns">KSPROPERTY_SOUNDDETECTOR_PATTERNS</a>
+

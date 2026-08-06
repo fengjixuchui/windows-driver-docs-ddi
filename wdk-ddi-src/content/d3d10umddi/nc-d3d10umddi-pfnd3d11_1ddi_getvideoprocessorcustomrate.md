@@ -3,7 +3,6 @@ UID: NC:d3d10umddi.PFND3D11_1DDI_GETVIDEOPROCESSORCUSTOMRATE
 title: PFND3D11_1DDI_GETVIDEOPROCESSORCUSTOMRATE (d3d10umddi.h)
 description: Queries a custom frame rate that is associated with a rate conversion capability group.
 old-location: display\getvideoprocessorcustomrate.htm
-ms.assetid: 49aec00a-8d63-4ec9-966a-0826354fbbe0
 ms.date: 05/10/2018
 keywords: ["PFND3D11_1DDI_GETVIDEOPROCESSORCUSTOMRATE callback function"]
 ms.keywords: PFND3D11_1DDI_GETVIDEOPROCESSORCUSTOMRATE, PFND3D11_1DDI_GETVIDEOPROCESSORCUSTOMRATE callback, d3d10umddi/pfnGetVideoProcessorCustomRate, display.getvideoprocessorcustomrate, pfnGetVideoProcessorCustomRate, pfnGetVideoProcessorCustomRate callback function [Display Devices]
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - D3d10umddi.h
 api_name:
- - pfnGetVideoProcessorCustomRate
-product:
- - Windows
+ - PFND3D11_1DDI_GETVIDEOPROCESSORCUSTOMRATE
 ---
 
 # PFND3D11_1DDI_GETVIDEOPROCESSORCUSTOMRATE callback function
@@ -52,31 +49,31 @@ Queries a custom frame rate that is associated with a rate conversion capability
 
 ## -parameters
 
-### -param Arg1
+### -param unnamedParam1
 
 *hDevice* [in]
 
 A handle to the display device (graphics context).
 
-### -param Arg2
+### -param unnamedParam2
 
 *hProcessorEnum* [in]
 
 A handle to a video processor enumeration object that was created through a call to the <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessorenum">CreateVideoProcessorEnum</a> function.
 
-### -param Arg3
+### -param unnamedParam3
 
 *CustomRateIndex* [in]
 
 The zero-based index of the custom rate to query. For more information, see the Remarks section.
 
-### -param Arg4
+### -param unnamedParam4
 
 *RateConversionIndex* [in]
 
 The zero-based index of the frame-rate conversion capability group. For more information, see the Remarks section.
 
-### -param Arg5
+### -param unnamedParam5
 
 *pRate* [out]
 
@@ -103,3 +100,4 @@ The display miniport driver returns the maximum number of custom rates that it s
 
 
 <a href="/windows-hardware/drivers/ddi/d3d10umddi/nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorrateconversioncaps">GetVideoProcessorRateConversionCaps</a>
+

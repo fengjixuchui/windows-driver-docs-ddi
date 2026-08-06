@@ -1,10 +1,9 @@
 ---
 UID: NF:dbgeng.IDebugSymbols2.SetSourcePath
 title: IDebugSymbols2::SetSourcePath (dbgeng.h)
-description: The SetSourcePath method sets the source path.
+description: The SetSourcePath method sets the source path. This method belongs to the IDebugSymbols2 interface.
 old-location: debugger\setsourcepath.htm
 tech.root: debugger
-ms.assetid: 00b5927e-4b95-4528-bc09-da90db8a7716
 ms.date: 05/03/2018
 keywords: ["IDebugSymbols2::SetSourcePath"]
 ms.keywords: IDebugSymbols interface [Windows Debugging],SetSourcePath method, IDebugSymbols2 interface [Windows Debugging],SetSourcePath method, IDebugSymbols2.SetSourcePath, IDebugSymbols2::SetSourcePath, IDebugSymbols3 interface [Windows Debugging],SetSourcePath method, IDebugSymbols3::SetSourcePath, IDebugSymbols::SetSourcePath, IDebugSymbols_d592ec7c-56f9-46b2-9627-d79e8fdba5c4.xml, SetSourcePath, SetSourcePath method [Windows Debugging], SetSourcePath method [Windows Debugging],IDebugSymbols interface, SetSourcePath method [Windows Debugging],IDebugSymbols2 interface, SetSourcePath method [Windows Debugging],IDebugSymbols3 interface, dbgeng/IDebugSymbols2::SetSourcePath, dbgeng/IDebugSymbols3::SetSourcePath, dbgeng/IDebugSymbols::SetSourcePath, debugger.setsourcepath
@@ -38,9 +37,7 @@ api_type:
 api_location:
  - dbgeng.h
 api_name:
- - IDebugSymbols.SetSourcePath
- - IDebugSymbols2.SetSourcePath
- - IDebugSymbols3.SetSourcePath
+ - IDebugSymbols2::SetSourcePath
 ---
 
 # IDebugSymbols2::SetSourcePath
@@ -52,9 +49,9 @@ The <b>SetSourcePath</b>  method sets the source path.
 
 ## -parameters
 
-### -param Path 
+### -param Path [in]
 
-[in]
+
 Specifies the new source path.  This is a string that contains source path elements separated by semicolons (<b>;</b>).  Each source path element can specify either a directory or a source server.
 
 ## -returns
@@ -104,3 +101,4 @@ For more information about manipulating the source path, see <a href="/windows-h
 
 
 <a href="/windows-hardware/drivers/ddi/dbgeng/nn-dbgeng-idebugsymbols3">IDebugSymbols3</a>
+

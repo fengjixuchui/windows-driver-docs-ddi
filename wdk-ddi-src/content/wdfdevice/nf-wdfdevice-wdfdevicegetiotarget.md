@@ -4,7 +4,6 @@ title: WdfDeviceGetIoTarget function (wdfdevice.h)
 description: The WdfDeviceGetIoTarget method returns a handle to a function or filter driver's local I/O target, for a specified device.
 old-location: wdf\wdfdevicegetiotarget.htm
 tech.root: wdf
-ms.assetid: a0749324-8b4e-4b82-8c51-b1b8883d521e
 ms.date: 02/26/2018
 keywords: ["WdfDeviceGetIoTarget function"]
 ms.keywords: DFDeviceObjectGeneralRef_df48e631-f54d-4985-bc74-05c220b735f5.xml, WdfDeviceGetIoTarget, WdfDeviceGetIoTarget method, kmdf.wdfdevicegetiotarget, wdf.wdfdevicegetiotarget, wdfdevice/WdfDeviceGetIoTarget
@@ -55,9 +54,9 @@ The <b>WdfDeviceGetIoTarget</b> method returns a handle to a function or filter 
 
 ## -parameters
 
-### -param Device 
+### -param Device [in]
 
-[in]
+
 A handle to a framework device object.
 
 ## -returns
